@@ -325,9 +325,9 @@
       "title": "3. Selitä suojamaadoitus",
       "optional": true,
       "prompt": "Pesukoneen sisällä vaihejohtimen eriste on kulunut, ja johdin koskettaa koneen metallirunkoa. Selitä, miten suojamaadoitus ja sulake suojaavat konetta koskettavaa ihmistä. Miksi suojausluokan II laitteessa ei tarvita maadoitusta?",
-      "model": "Pesukone on suojausluokan I laite, joten sen metallirunko on kytketty keltavihreällä suojamaadoitusjohtimella maahan. Kun vaihejohdin koskettaa runkoa, virta pääsee kulkemaan suojamaadoitusjohdinta pitkin, jonka resistanssi on hyvin pieni. Silloin vikavirta on suuri, paljon suurempi kuin sulakkeen nimellisvirta, ja sulake katkaisee virran nopeasti. Ilman maadoitusta runko jäisi jännitteiseksi, ja virta kulkisi runkoon koskevan ihmisen kautta maahan. Suojausluokan II laitteessa ei ole kosketeltavia johtavia osia, joihin vika voisi tuoda jännitteen, koska kaksinkertainen tai vahvistettu eristys erottaa jännitteiset osat käyttäjästä.",
+      "model": "Pesukone on suojausluokan I laite, joten sen metallirunko on kytketty keltavihreään suojamaadoitusjohtimeen eli suojajohtimeen. Kun vaihejohdin koskettaa runkoa, vikavirta pääsee kulkemaan suojajohdinta pitkin takaisin sähkönsyöttöön, ja tämän reitin resistanssi on hyvin pieni. Silloin vikavirta on suuri, paljon suurempi kuin sulakkeen nimellisvirta, ja sulake katkaisee virran nopeasti. Ilman maadoitusta runko jäisi jännitteiseksi, ja virta kulkisi runkoon koskevan ihmisen kautta maahan. Suojausluokan II laitteessa ei ole kosketeltavia johtavia osia, joihin vika voisi tuoda jännitteen, koska kaksinkertainen tai vahvistettu eristys erottaa jännitteiset osat käyttäjästä.",
       "criteria": [
-        "Vastaus kertoo, että suojamaadoitusjohdin yhdistää rungon maahan ja vikavirta kulkee sitä pitkin.",
+        "Vastaus kertoo, että suojamaadoitusjohdin yhdistää rungon suojajohtimeen ja vikavirta kulkee sitä pitkin takaisin sähkönsyöttöön.",
         "Vastaus selittää, että vikavirta on suuri, joten sulake katkaisee virran.",
         "Vastaus kertoo, mitä tapahtuisi ilman maadoitusta: virta kulkisi ihmisen kautta.",
         "Vastaus perustelee luokan II laitteen turvallisuuden kaksinkertaisella tai vahvistetulla eristyksellä."

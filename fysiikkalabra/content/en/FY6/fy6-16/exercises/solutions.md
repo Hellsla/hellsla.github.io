@@ -9,14 +9,14 @@
 **Reasonableness:** Two thirds of the battery is about $\tfrac{2}{3} \cdot 64\,\text{kWh} \approx 43\,\text{kWh}$, and $65\,\%$ is a little less than two thirds. The result is smaller than the whole battery, as it should be.
 
 ## fy6-16-L1-02
-**Given:** voltage $U = 230\,\text{V}$, charging current $I = 10\,\text{A}$
-**Find:** charging power $P$ in kilowatts
-**Principle:** A socket uses one phase, so the power is voltage times current, like the power of any single-phase device. The mains voltage $230\,\text{V}$ is the effective value of an alternating voltage, so it is used in the calculation like a direct voltage.
+**Given:** voltage $U = 230\,\text{V}$, charging current $I = 8.0\,\text{A}$
+**Find:** charging power $P$ taken from the grid in kilowatts
+**Principle:** A socket uses one phase, so the power is voltage times current, like the power of any single-phase device. The mains voltage $230\,\text{V}$ is the effective value of an alternating voltage. The power factor of the charging equipment is assumed to be approximately one, so the power is calculated as with a direct voltage.
 **Formula:** $P = UI$
 **Conversions:** The result in watts is converted to kilowatts: $1\,\text{W} = 0.001\,\text{kW}$.
-**Substitution:** $P = 230\,\text{V} \cdot 10\,\text{A} = 2300\,\text{W} = 2.3\,\text{kW}$
-**Answer:** $2.3\,\text{kW}$, two significant figures like the current $10\,\text{A}$.
-**Reasonableness:** The power is of the same order of magnitude as the power of a kettle, but charging takes hours. A $40\,\text{kWh}$ charge would take more than $17\,\text{h}$ at this power, so charging from a socket suits mainly emergencies or a cottage.
+**Substitution:** $P = 230\,\text{V} \cdot 8.0\,\text{A} = 1840\,\text{W} \approx 1.8\,\text{kW}$
+**Answer:** $1.8\,\text{kW}$, two significant figures like the current $8.0\,\text{A}$.
+**Reasonableness:** The power is of the same order of magnitude as the power of a kettle, but charging takes hours. A $40\,\text{kWh}$ charge would take more than $21\,\text{h}$ at this power, so charging from a socket suits mainly occasional use, such as at a cottage. From an ordinary socket, charging is done with a current of at most $8\,\text{A}$, and the socket must be in good condition, because a large current for a long time heats the connections.
 
 ## fy6-16-L1-03
 **Given:** power $P = 11\,\text{kW}$, three phases, phase voltage $U = 230\,\text{V}$

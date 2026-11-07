@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 8cd606ab836e275a
+CONTENT-HASH: 2d27b5a5e0730863
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] fy6-2-theory-1280-2: the breadboard photo sits beside the Yleismittarin virheraja heading, although it illustrates the parallel voltmeter connection in the Ydinajatus text above. The probes are small at 1280; acceptable.
+- none
 
 ## Checked
-batch delta review: opened fy6-2-theory-1280 captures holding the new unit-photo (floats right, 20 rem wide, no clipping or overflow, figure beside it intact, credit line present, alt text and caption natural Finnish, any quantity in the caption set as LaTeX with its unit) plus the surrounding figures and formulas.
+- Word-level diff since origin/main of the fi-easy fy6-2 lesson files and neighbouring text; decimal convention (comma, Finnish), number+unit in LaTeX, \cdot, no bold in task statements, no lesson ids; wording compared with the Finnish intent for the brief's items.

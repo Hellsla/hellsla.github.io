@@ -106,7 +106,7 @@
     {
       "id": "fy6-14-L1-08",
       "level": 1,
-      "text": "Laskimen aurinkokennon pinta-ala on $12\\,\\text{cm}^2$. Kirkkaassa auringonvalossa valon voimakkuus kennolla on $1000\\,\\text{W/m}^2$. Tällöin kennon jännite on $2{,}0\\,\\text{V}$ ja virta $100\\,\\text{mA}$. Mikä on kennon hyötysuhde? Vastaa prosentteina.",
+      "text": "Laskimen aurinkokennon pinta-ala on $12\\,\\text{cm}^2$. Kirkkaassa auringonvalossa irradianssi kennolla on $1000\\,\\text{W/m}^2$. Tällöin kennon jännite on $2{,}0\\,\\text{V}$ ja virta $100\\,\\text{mA}$. Mikä on kennon hyötysuhde? Vastaa prosentteina.",
       "kind": [
         "reasoning"
       ],
@@ -136,7 +136,7 @@
       "id": "fy6-14-L2-03",
       "level": 2,
       "core": true,
-      "text": "Omakotitalon katolla olevan aurinkopaneelin pinta-ala on $1{,}6\\,\\text{m}^2$. Kun valon voimakkuus on $800\\,\\text{W/m}^2$, paneeli antaa sähkötehon $260\\,\\text{W}$. Mikä on paneelin hyötysuhde? Vastaa prosentteina.",
+      "text": "Omakotitalon katolla olevan aurinkopaneelin pinta-ala on $1{,}6\\,\\text{m}^2$. Kun irradianssi on $800\\,\\text{W/m}^2$, paneeli antaa sähkötehon $260\\,\\text{W}$. Mikä on paneelin hyötysuhde? Vastaa prosentteina.",
       "answer": 20.3125,
       "unit": "%",
       "tolerance": 0.02

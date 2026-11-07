@@ -5088,7 +5088,7 @@
   },
   {
     "term": "LED",
-    "definition": "Hohtodiodi eli diodi, joka lähettää valoa, kun virta kulkee sen läpi päästösuuntaan. Valon väri riippuu puolijohdemateriaalista; LEDin kanssa kytketään sarjaan etuvastus, joka rajoittaa virran.",
+    "definition": "Hohtodiodi eli diodi, joka lähettää valoa, kun virta kulkee sen läpi päästösuuntaan. Valon väri riippuu puolijohdemateriaalista; LEDin virtaa on rajoitettava, yksinkertaisessa piirissä sarjaan kytketyllä etuvastuksella.",
     "lessons": [
       "fy6-14"
     ],
@@ -5151,7 +5151,7 @@
   },
   {
     "term": "aurinkokenno",
-    "definition": "Puolijohdekomponentti, joka tuottaa valossa tasavirtaa ja toimii tasajännitelähteenä. Sen oikosulkuvirta on suoraan verrannollinen valon voimakkuuteen, ja aurinkopaneelissa on monta kennoa sarjassa.",
+    "definition": "Puolijohdekomponentti, joka tuottaa valossa tasavirtaa ja toimii tasajännitelähteenä. Sen oikosulkuvirta on suoraan verrannollinen kennolle tulevan säteilyn irradianssiin, ja aurinkopaneelissa on monta kennoa sarjassa.",
     "lessons": [
       "fy6-14"
     ],
@@ -5163,7 +5163,7 @@
   },
   {
     "term": "tyhjäkäyntijännite",
-    "definition": "Jännitelähteen, kuten aurinkokennon, napojen välinen jännite, kun siitä ei oteta virtaa. Aurinkokennolla se muuttuu valon voimakkuuden mukana vain vähän.",
+    "definition": "Jännitelähteen, kuten aurinkokennon, napojen välinen jännite, kun siitä ei oteta virtaa. Aurinkokennolla se muuttuu irradianssin mukana vain vähän.",
     "lessons": [
       "fy6-14"
     ],

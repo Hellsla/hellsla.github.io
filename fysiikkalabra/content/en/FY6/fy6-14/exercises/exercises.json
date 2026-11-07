@@ -106,7 +106,7 @@
     {
       "id": "fy6-14-L1-08",
       "level": 1,
-      "text": "The area of the solar cell of a calculator is $12\\,\\text{cm}^2$. In bright sunlight the light intensity at the cell is $1000\\,\\text{W/m}^2$. Then the voltage of the cell is $2.0\\,\\text{V}$ and the current $100\\,\\text{mA}$. What is the efficiency of the cell? Give the answer as a percentage.",
+      "text": "The area of the solar cell of a calculator is $12\\,\\text{cm}^2$. In bright sunlight the irradiance at the cell is $1000\\,\\text{W/m}^2$. Then the voltage of the cell is $2.0\\,\\text{V}$ and the current $100\\,\\text{mA}$. What is the efficiency of the cell? Give the answer as a percentage.",
       "kind": [
         "reasoning"
       ],
@@ -136,7 +136,7 @@
       "id": "fy6-14-L2-03",
       "level": 2,
       "core": true,
-      "text": "The area of a solar panel on the roof of a detached house is $1.6\\,\\text{m}^2$. When the light intensity is $800\\,\\text{W/m}^2$, the panel gives an electric power of $260\\,\\text{W}$. What is the efficiency of the panel? Give the answer as a percentage.",
+      "text": "The area of a solar panel on the roof of a detached house is $1.6\\,\\text{m}^2$. When the irradiance is $800\\,\\text{W/m}^2$, the panel gives an electric power of $260\\,\\text{W}$. What is the efficiency of the panel? Give the answer as a percentage.",
       "answer": 20.3125,
       "unit": "%",
       "tolerance": 0.02

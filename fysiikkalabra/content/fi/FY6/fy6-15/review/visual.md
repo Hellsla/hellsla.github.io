@@ -1,11 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 350146b65da505bf
+CONTENT-HASH: a362da4bacf76398
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-- (none)
+- none
 
 ## Polish
-- [Minor] fy6-15 kuvateksti (RCD) — "Keltaisesta TEST-painikkeesta suojan toiminta kokeillaan" on kömpelö — "Keltaisella TEST-painikkeella suojan toiminta kokeillaan säännöllisesti"; "ero on 30 mA" -> "ero on vähintään 30 mA".
+- none
 
 ## Checked
-batch delta review: photo file(s) opened and compared with alt text; rendered fy6-15 at 1280 px (float right, 320 px wide, no clipping, beside its paragraph) and 390 px (full-width block, no horizontal overflow); caption physics, Finnish and LaTeX units read; changed typography checked in the capture.
+- TN-system fault-current wording (protective conductor, back to the supply, fuse/MCB, RCD, TN caveat), lesson-person/layperson paragraph, P = UI model note, summary bullets; aria-label of figure maadoitus matches figures.py and the drawing (arrow i_arrow goes upward from the casing to the top, i.e. towards the supply).
+- Source-only delta review (no screenshots needed: figure changes are aria-label texts only); Finnish language, maths typography (LaTeX, \cdot, decimal comma, number+unit LaTeX) and no lesson ids shown to students.
+- Round 3: layman-work paragraph and summary bullet read in Finnish; 'maallikko' used consistently (also in the exit ticket), all examples are on the Tukes list, work done de-energised, fluent and consistent with the brief.
+- Round 4: "yksivaiheisen" added to the extension-cord and supply-cord examples (lesson and exit ticket) and the summary bullet reworded; grammar and flow fine, terms consistent.

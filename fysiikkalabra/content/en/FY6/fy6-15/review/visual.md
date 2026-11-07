@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 568b75cca14de38a
+CONTENT-HASH: 707724903355c33d
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- 'connected to the earthing and to the conductor coming from the grid along which the current returns to the supply' is heavy; split into two sentences.
 
 ## Checked
-- batch delta review: opened the source image(s) and 1280/390 px renders of the photo(s): residual-current-device.webp (four-pole, yellow TEST, black lever, 'I_dn = 0,03A' marking legible; caption 30 mA correct) and high-voltage-sign.webp (yellow triangle, lightning arrow, matches alt). Alt matches the visible content, captions physically correct and tied to the chapter, units in LaTeX, photo floats right at 1280 (no clipping, scrollWidth = viewport) and stacks above the caption at 390.
+- Word-level diff since origin/main of the en fy6-15 lesson files and neighbouring text; decimal convention (point), number+unit in LaTeX, \cdot, no bold in task statements, no lesson ids; wording compared with the Finnish intent for the brief's items. figures.json aria texts: all lesson aria-labels equal the figures.json entries; wording (irradiance / back to the supply, fault arrow upwards) matches the lesson text; plain units in aria are acceptable. No screenshots (aria only).
+- Round 3 (git diff HEAD~2): All examples (fuse, lamp, resetting breaker/RCD, extension cord, appliance power cord and plug, light fitting with lighting connector, de-energised) are on the Tukes list; term layperson used consistently. Polish: the summary bullet still says 'fixed electrical installations belong mainly to professionals' while the body now says actual installation work only by professionals; align the wording. 'ceiling light' is narrower than the Tukes 'interior luminaire'; 'light fitting' would match. No Blocking.
+- Round 4 (uncommitted diff): summary bullet now aligned with the body (round-3 polish resolved); en 'light fitting' applied; 'single-phase' added to the extension-cord and supply-cord examples in lesson and exit ticket, matching the Tukes list. No new issues, no Blocking.

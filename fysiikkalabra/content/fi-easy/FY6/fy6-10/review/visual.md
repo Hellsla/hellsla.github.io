@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 1798aebb6bdbcc91
+CONTENT-HASH: 4c8a617f47644757
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-batch delta review: opened the image file(s) and rendered preview/fi-easy/fy6-10.html at 1280 px (photo floats right, 320 px wide, credit line shown, no clipping) and 390 px (full column width, no horizontal overflow); Photos balloon-hair and balloons-repel: both alts match the images (red balloon above hair; two yellow balloons in front of a green chalkboard); captions correct.
+- Word-level diff since origin/main of the fi-easy fy6-10 lesson files and neighbouring text; decimal convention (comma, Finnish), number+unit in LaTeX, \cdot, no bold in task statements, no lesson ids; wording compared with the Finnish intent for the brief's items.

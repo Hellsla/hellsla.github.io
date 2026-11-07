@@ -70,9 +70,9 @@
 **Järkevyys:** Yhdelle LEDille vastus olisi $7{,}0\,\text{V} : 0{,}020\,\text{A} = 350\,\Omega$. Toinen LED vie vielä $2{,}0\,\text{V}$ lisää, joten vastukselle jää vähemmän jännitettä ja vastus on pienempi.
 
 ## fy6-14-L2-03
-**Annettu:** pinta-ala $A = 1{,}6\,\text{m}^2$, valon voimakkuus $G = 800\,\text{W/m}^2$, sähköteho $P = 260\,\text{W}$
+**Annettu:** pinta-ala $A = 1{,}6\,\text{m}^2$, irradianssi $G = 800\,\text{W/m}^2$, sähköteho $P = 260\,\text{W}$
 **Kysytty:** hyötysuhde $\eta$ prosentteina
-**Periaate:** Hyötysuhde on hyödyllinen teho jaettuna käytetyllä teholla. Paneeli ottaa vastaan valon tehon. Se on valon voimakkuus kertaa pinta-ala. Hyödyllinen teho on paneelin antama sähköteho.
+**Periaate:** Hyötysuhde on hyödyllinen teho jaettuna käytetyllä teholla. Paneeli ottaa vastaan valon tehon. Se on irradianssi kertaa pinta-ala. Hyödyllinen teho on paneelin antama sähköteho.
 **Kaava:** $\eta = \dfrac{P}{GA}$
 **Muunnokset:** Ei tarvita: $\tfrac{\text{W}}{\text{m}^2} \cdot \text{m}^2 = \text{W}$. Lopuksi suhdeluku muutetaan prosenteiksi kertomalla sadalla.
 **Sijoitus:** $\eta = \dfrac{260\,\text{W}}{800\,\tfrac{\text{W}}{\text{m}^2} \cdot 1{,}6\,\text{m}^2} = \dfrac{260\,\text{W}}{1280\,\text{W}} = 0{,}203 = 20{,}3\,\%$
@@ -130,9 +130,9 @@
 **Mallivastaus:** Etuvastus tarvitaan, koska LEDin virta kasvaa jyrkästi, kun LEDin jännite kasvaa vähänkin. Vastus ottaa pariston ylimääräisen jännitteen itselleen ja pitää virran sopivana. Muut vaihtoehdot ovat vääriä: vastus ei lisää virtaa, ei muuta jännitteen lajia eikä estä virtaa väärään suuntaan.
 
 ## fy6-14-L1-08
-**Annettu:** pinta-ala $A = 12\,\text{cm}^2$, valon voimakkuus $G = 1000\,\text{W/m}^2$, jännite $U = 2{,}0\,\text{V}$, virta $I = 100\,\text{mA}$
+**Annettu:** pinta-ala $A = 12\,\text{cm}^2$, irradianssi $G = 1000\,\text{W/m}^2$, jännite $U = 2{,}0\,\text{V}$, virta $I = 100\,\text{mA}$
 **Kysytty:** hyötysuhde $\eta$ prosentteina
-**Periaate:** Hyötysuhde kertoo, kuinka suuri osa valon tehosta muuttuu sähköksi. Se on kennon sähköteho jaettuna kennolle tulevan valon teholla. Sähköteho on jännite kertaa virta. Valon teho on valon voimakkuus kertaa pinta-ala.
+**Periaate:** Hyötysuhde kertoo, kuinka suuri osa valon tehosta muuttuu sähköksi. Se on kennon sähköteho jaettuna kennolle tulevan valon teholla. Sähköteho on jännite kertaa virta. Valon teho on irradianssi kertaa pinta-ala.
 **Kaava:** $P = UI$ ja $\eta = \dfrac{P}{GA}$
 **Muunnokset:** $A = 12\,\text{cm}^2 = 12 \cdot 10^{-4}\,\text{m}^2 = 0{,}0012\,\text{m}^2$ ja $I = 100\,\text{mA} = 0{,}100\,\text{A}$
 **Sijoitus:** $P = 2{,}0\,\text{V} \cdot 0{,}100\,\text{A} = 0{,}20\,\text{W}$ ja $\eta = \dfrac{0{,}20\,\text{W}}{1000\,\tfrac{\text{W}}{\text{m}^2} \cdot 0{,}0012\,\text{m}^2} = \dfrac{0{,}20\,\text{W}}{1{,}2\,\text{W}} = 0{,}167 = 16{,}7\,\%$

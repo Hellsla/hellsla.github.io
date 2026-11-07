@@ -340,24 +340,24 @@
       "stage": "tarkista",
       "type": "choice",
       "title": "1. Concept",
-      "prompt": "A lamp is two metres from the battery. When the switch is closed, the lamp lights at once, although the free electrons move along the wire less than a millimetre per second. Why?",
+      "prompt": "A lamp is two metres from the battery. When the switch is closed, the lamp lights practically at once, although the free electrons move along the wire less than a millimetre per second. Why?",
       "choices": [
         {
-          "text": "The wire is full of free electrons, which start to move everywhere at the same time.",
+          "text": "The wire is already full of free electrons, which start moving throughout the circuit almost immediately.",
           "correct": true,
-          "feedback": "Correct. When the circuit is closed, an electric field is established in the whole wire at nearly the speed of light. The electrons in the filament start to move at the same moment as those next to the battery, so the lamp lights at once."
+          "feedback": "Correct. When the circuit is closed, an electromagnetic disturbance propagates along the wire very quickly but at a finite speed. The electrons of the filament itself start to move almost immediately, and the lamp does not have to wait for electrons coming from the battery. When the wires are only a few metres long, the delay is so small that the lamp appears to light at once."
         },
         {
           "text": "The electrons travel from the battery to the lamp at nearly the speed of light when the circuit is closed.",
-          "feedback": "Individual electrons move slowly. At nearly the speed of light an electric field is established that sets all the free electrons of the wire moving at the same time, including those in the lamp."
+          "feedback": "Individual electrons move slowly. An electromagnetic effect propagates very quickly but at a finite speed and sets the free electrons of the wire moving throughout the circuit, including in the lamp."
         },
         {
           "text": "The battery has stored electrons ready in the wire near the lamp.",
-          "feedback": "A battery does not store electrons in the wire. The metal of the wire always has free electrons, and a closed circuit sets them all moving at the same time."
+          "feedback": "A battery does not store electrons in the wire. The metal of the wire always has free electrons, and when the circuit is closed, they start to move throughout the circuit almost immediately."
         },
         {
           "text": "The filament of the lamp already glows before current passes through it.",
-          "feedback": "The filament glows only when current passes through it. The lamp lights at once because all the free electrons of the wire start to move at the same time, including those in the filament."
+          "feedback": "The filament glows only when current passes through it. The lamp lights almost at once because the free electrons of the wire start to move throughout the circuit almost immediately, including in the filament."
         }
       ]
     },

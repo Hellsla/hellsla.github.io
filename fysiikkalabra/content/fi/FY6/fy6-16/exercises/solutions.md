@@ -9,14 +9,14 @@
 **Järkevyys:** Kaksi kolmasosaa akusta on noin $\tfrac{2}{3} \cdot 64\,\text{kWh} \approx 43\,\text{kWh}$, ja $65\,\%$ on vähän alle kahden kolmasosan. Tulos on pienempi kuin koko akku, kuten pitää.
 
 ## fy6-16-L1-02
-**Annettu:** jännite $U = 230\,\text{V}$, latausvirta $I = 10\,\text{A}$
-**Kysytty:** latausteho $P$ kilowatteina
-**Periaate:** Pistorasia käyttää yhtä vaihetta, joten teho on jännite kertaa virta kuten minkä tahansa yksivaiheisen laitteen teho. Verkkojännite $230\,\text{V}$ on vaihtojännitteen tehollinen arvo, joten sillä lasketaan kuten tasajännitteellä.
+**Annettu:** jännite $U = 230\,\text{V}$, latausvirta $I = 8{,}0\,\text{A}$
+**Kysytty:** verkosta otettu latausteho $P$ kilowatteina
+**Periaate:** Pistorasia käyttää yhtä vaihetta, joten teho on jännite kertaa virta kuten minkä tahansa yksivaiheisen laitteen teho. Verkkojännite $230\,\text{V}$ on vaihtojännitteen tehollinen arvo. Latauslaitteen tehokerroin oletetaan likimain yhdeksi, joten teho lasketaan kuten tasajännitteellä.
 **Kaava:** $P = UI$
 **Muunnokset:** Tulos watteina muunnetaan kilowateiksi: $1\,\text{W} = 0{,}001\,\text{kW}$.
-**Sijoitus:** $P = 230\,\text{V} \cdot 10\,\text{A} = 2300\,\text{W} = 2{,}3\,\text{kW}$
-**Vastaus:** $2{,}3\,\text{kW}$, kaksi merkitsevää numeroa kuten virrassa $10\,\text{A}$.
-**Järkevyys:** Teho on samaa suuruusluokkaa kuin vedenkeittimen teho, mutta lataus kestää tunteja. $40\,\text{kWh}$:n lataukseen kuluisi tällä teholla yli $17\,\text{h}$, joten pistorasialataus sopii lähinnä hätätilanteisiin tai mökille.
+**Sijoitus:** $P = 230\,\text{V} \cdot 8{,}0\,\text{A} = 1840\,\text{W} \approx 1{,}8\,\text{kW}$
+**Vastaus:** $1{,}8\,\text{kW}$, kaksi merkitsevää numeroa kuten virrassa $8{,}0\,\text{A}$.
+**Järkevyys:** Teho on samaa suuruusluokkaa kuin vedenkeittimen teho, mutta lataus kestää tunteja. $40\,\text{kWh}$:n lataukseen kuluisi tällä teholla yli $21\,\text{h}$, joten pistorasialataus sopii lähinnä satunnaiseen käyttöön, kuten mökille. Tavallisesta pistorasiasta ladataan enintään $8\,\text{A}$:n virralla, ja pistorasian on oltava hyväkuntoinen, koska pitkä suuri virta lämmittää liitoksia.
 
 ## fy6-16-L1-03
 **Annettu:** teho $P = 11\,\text{kW}$, kolme vaihetta, vaihejännite $U = 230\,\text{V}$

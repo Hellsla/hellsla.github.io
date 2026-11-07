@@ -45,11 +45,11 @@
       "id": "fy6-15-L1-06",
       "level": 1,
       "core": true,
-      "text": "The metal frame of a washing machine is connected to the ground with a protective earth conductor. Which statement about the purpose of protective earthing is correct?",
+      "text": "The metal frame of a washing machine is connected to the protective earth conductor. Which statement about the purpose of protective earthing is correct?",
       "kind": [
         "concept"
       ],
-      "answer": "It leads the fault current to the ground, so the fuse or the residual current device cuts off the current.",
+      "answer": "It gives the fault current a low-resistance path back to the supply, so the fuse or the residual current device cuts off the current.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
@@ -58,13 +58,13 @@
           "feedback": "Earthing does not affect the normal electricity consumption of the device: in normal use no current flows in the earth conductor at all. It comes into use only when a fault occurs."
         },
         {
-          "text": "It leads the fault current to the ground, so the fuse or the residual current device cuts off the current.",
+          "text": "It gives the fault current a low-resistance path back to the supply, so the fuse or the residual current device cuts off the current.",
           "correct": true,
-          "feedback": "Correct: when the live conductor touches the frame because of a fault, the earth conductor carries a large fault current to the ground. The current grows so large that the protective device cuts it off, and the frame does not stay live."
+          "feedback": "Correct: when the live conductor touches the frame because of a fault, a large fault current flows along the protective conductor back to the supply. The current grows so large that the protective device cuts it off, and the frame does not stay live."
         },
         {
           "text": "It insulates the frame from the ground, so a fault cannot let current flow in the frame.",
-          "feedback": "Earthing does the opposite: it connects the frame to the ground with a conductor. If the frame were insulated, the fault current could not get away and the frame could stay live."
+          "feedback": "Earthing does the opposite: it connects the frame to the protective conductor. If the frame were insulated, the fault current would have no path of its own and the frame could stay live."
         },
         {
           "text": "It keeps the frame live all the time, so a fault is noticed before the device breaks.",
@@ -84,7 +84,7 @@
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "The metal frame of the device is connected to an earth conductor, so the fault current flows along the conductor to the ground.",
+          "text": "The metal frame of the device is connected to the protective earth conductor, so the fault current flows along it back to the supply.",
           "feedback": "This describes class I, whose metal frame is protectively earthed. A class II device has no protective earthing but double or reinforced insulation."
         },
         {

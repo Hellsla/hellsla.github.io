@@ -1,11 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 9da1d0b525b85e9d
+CONTENT-HASH: 777c0cc7243a90cb
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-- (none)
+- none
 
 ## Polish
-- (ei huomautettavaa)
+- none
 
 ## Checked
-batch delta review: photo file(s) opened and compared with alt text; rendered fy6-10 at 1280 px (float right, 320 px wide, no clipping, beside its paragraph) and 390 px (full-width block, no horizontal overflow); caption physics, Finnish and LaTeX units read; changed typography checked in the capture.
+- Coulomb's law paragraph: exact for point charges, spherical symmetry, nearby conducting spheres; wording fluent, constant LaTeX unchanged.
+- Source-only delta review (no screenshots needed: figure changes are aria-label texts only); Finnish language, maths typography (LaTeX, \cdot, decimal comma, number+unit LaTeX) and no lesson ids shown to students.

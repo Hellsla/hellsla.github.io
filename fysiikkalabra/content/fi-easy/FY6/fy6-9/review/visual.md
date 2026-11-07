@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: fb18baf26040b846
+CONTENT-HASH: 7175c5ba2fa9ab75
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] fy6-9 ev-battery-cells: the cell labels read '60Ah Dummy Bolt', so these are demonstration cells. Caption says 'Sähköauton akun kennoja'; consider 'Sähköauton akun kennojen mallikappaleita' (for science: check the source text).
+- none
 
 ## Checked
-batch delta review: opened the image file(s) and rendered preview/fi-easy/fy6-9.html at 1280 px (photo floats right, 320 px wide, credit line shown, no clipping) and 390 px (full column width, no horizontal overflow); Photo ev-battery-cells: alt matches; calculation $3{,}7\,\text{V}\cdot 60\,\text{Ah}\approx 220\,\text{Wh}$ correct and in LaTeX.
+- Word-level diff since origin/main of the fi-easy fy6-9 lesson files and neighbouring text; decimal convention (comma, Finnish), number+unit in LaTeX, \cdot, no bold in task statements, no lesson ids; wording compared with the Finnish intent for the brief's items.

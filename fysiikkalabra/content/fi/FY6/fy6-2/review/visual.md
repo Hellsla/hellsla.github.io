@@ -1,10 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 324f8c8e1ab4cf75
+CONTENT-HASH: 1f98286bb0445e33
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] Photo shows probes on a breadboard but the connection the caption describes (probes in parallel with a component) is hard to see at 320 px; acceptable as illustration.
+- none
 
 ## Checked
-batch delta review: rendered the new figure.unit-photo at 390 px and 1280 px from the built page (own captures, plus fig-row-1280 to confirm the existing figures survived); photo loads, no horizontal overflow, caption and credit line legible, alt text matches the image, LaTeX in captions renders ($6{,}3\,\text{V}$, $656\,\text{nm}$, $n = 3$) with units upright; no clipping.
+- Multimeter terminal sentences (meter-specific wording, check the meter's own markings), ammeter never across source terminals, school labs use safe low-voltage sources: fluent Finnish, consistent voice, units LaTeX.
+- Source-only delta review (no screenshots needed: figure changes are aria-label texts only); Finnish language, maths typography (LaTeX, \cdot, decimal comma, number+unit LaTeX) and no lesson ids shown to students.

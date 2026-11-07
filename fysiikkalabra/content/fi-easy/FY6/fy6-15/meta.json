@@ -31,7 +31,7 @@
     },
     {
       "term": "maadoitus",
-      "explain": "Maadoitus yhdistää laitteen metallirungon maahan johtimella. Jos vika tuo rungolle jännitteen, suuri vikavirta kulkee maahan ja sulake katkaisee virran."
+      "explain": "Maadoitus yhdistää laitteen metallirungon suojajohtimeen. Jos vika tuo rungolle jännitteen, suuri vikavirta kulkee suojajohdinta pitkin ja sulake katkaisee virran."
     },
     {
       "term": "suojausluokitus",

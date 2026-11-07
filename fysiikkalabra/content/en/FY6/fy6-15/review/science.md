@@ -1,21 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 13c7836cee33b3d3
+CONTENT-HASH: 707724903355c33d
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-- Delta 45327c18: figures.json maps "v" to "E". Both figures now show I_E: the fault current along PE in the earthing figure, and the current through the person with I_L − I_N = I_E in the RCD figure. This is physically correct: both are earth-fault currents, and the text calls both "fault current". I_E no longer clashes with I_f, the fuse's rated current, which was my earlier notation concern about I_f. The RCD alt text now names I_E.
-- The earthing figure's alt text says "fault current" without the symbol. This is harmless.
-- The numbers in lesson.md, inquiry.json, exit-ticket.json, exercises.json and solutions.md were compared by script with the Finnish and are identical (multisets match).
-- The prose was read against the Finnish for the safety statements, and each one survives:
-  - fuse vs person (protects only together with protective earthing);
-  - RCD principle, the 30 mA limit, and the L–N contact it misses;
-  - colours only in new installations, and never trusting a colour;
-  - class III at 50 V AC or 120 V DC;
-  - the shoe conditions and "shoes must not be regarded as protection";
-  - IEC 60479-1 thresholds with the caveats;
-  - step voltage (short steps, feet together) and 112;
-  - the Tukes register and the layperson list.
-- The worked example (19.6 A, about 20 A, trips only if the load continues long enough) and the misconception text match the Finnish.
+- Protective earth: frame connected to the protective conductor; fault current returns along it to the supply; fuse/MCB trips; RCD can also trip; TN-system caveat; distribution-board sentence (PE bonded to earthing and the incoming conductor) — all = fi and correct for TN.
+- Fuse-myth paragraph and summary bullet: 'frame fault … back to the supply'. Remaining 'to the ground' uses are the touch current through a person and fallen-line step voltage, which are correct.
+- Laypeople: fixed installations mainly for professionals; only specifically permitted minor jobs and only if they can do them safely; the earlier light-fitting item removed (= fi). Exit ticket says the same.
+- P = UI paragraph conditioned on in-phase/power factor ≈ 1; 2300 W and 3680 W recomputed. maadoitus aria-label text only.
+- Diff since origin/main compared sentence by sentence with the Finnish source change; content hash checked at start and end.
+- Round 3 (git diff HEAD~2, layman paragraph and summary bullet): matches the fi change and the Tukes page the teacher pasted. Actual installation work only by registered professionals; laypersons only permitted minor jobs, only if they can do them safely; work always de-energised. Every example is on the Tukes list: fuse, lamp, resetting a tripped MCB or RCD, repairing an extension cord, replacing an appliance's broken single-phase cord and plug, luminaire with a connector block. Term: layperson.
+- Round 4 (uncommitted diff): the extension cord is now single-phase in the body and in the exit ticket, matching the Tukes list. "Light fitting with a lighting connector block" fits the Tukes interior-luminaire item. The summary bullet now says "actual electrical installation work belongs to electrical professionals", the same as the body. Both round-3 Polish items are resolved. The exit ticket example (a new wall socket for professionals) is correct.

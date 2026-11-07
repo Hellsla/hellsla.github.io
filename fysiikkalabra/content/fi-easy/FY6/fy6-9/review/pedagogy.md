@@ -1,13 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: be69f72bfd449b19
+CONTENT-HASH: 7175c5ba2fa9ab75
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- (Minor) Solutions and exercise texts are close to the Finnish (about 15 of 121 solution lines and 7 of 105 exercise lines differ); acceptable since the arithmetic text is short, but more per-step simplification would help a weak reader.
+- none
 
 ## Checked
-- Lesson is genuinely simplified: mean sentence length about 10 words vs 15 in the Finnish, key terms explained, same structure, nothing dropped.
-- Goals and key concepts complete; paristo explained as single-use, akku as rechargeable.
-- Re-review after the concept-review commit: howto wording (electrical energy transformed into internal energy), efficiency paragraph (often below 100 %, charging always, R and R_s), L3-03 sisäenergiaksi, matching the Finnish; no numbers changed; $ counts equal.
+- Diff since origin/main for fy6-9 lesson (fi-easy) read against the teacher's brief items that touch it; the changed text says what the brief intends, is consistent between lesson, inquiry, exercises, solutions and feedback, and introduces no new misconception.
+- Standing rules in the changed lines: LaTeX maths and units, decimal comma, no bold in task statements, no lesson ids shown.
+- NOTES.md §12: same physics as the Finnish; new terms (kytkentämuutos, irradianssi, tehokerroin, vaihe-ero, pätöteho, mitoitettu, vakiovirtalähde etc.) are explained in the sentence where first used; whole natural sentences, one action per sentence in instructions.

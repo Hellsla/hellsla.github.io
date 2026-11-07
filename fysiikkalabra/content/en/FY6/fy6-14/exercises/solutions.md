@@ -70,9 +70,9 @@
 **Reasonableness:** For one LED the resistor would be $7.0\,\text{V} : 0.020\,\text{A} = 350\,\Omega$. The second LED takes $2.0\,\text{V}$ more, so less voltage is left for the resistor and the resistor is smaller.
 
 ## fy6-14-L2-03
-**Given:** area $A = 1.6\,\text{m}^2$, light intensity $G = 800\,\text{W/m}^2$, electric power $P = 260\,\text{W}$
+**Given:** area $A = 1.6\,\text{m}^2$, irradiance $G = 800\,\text{W/m}^2$, electric power $P = 260\,\text{W}$
 **Find:** the efficiency $\eta$ as a percentage
-**Principle:** Efficiency is the useful power divided by the power taken in. The panel receives the power of the light, which is the light intensity times the area, and the useful power is the electric power given by the panel.
+**Principle:** Efficiency is the useful power divided by the power taken in. The panel receives the power of the light, which is the irradiance times the area, and the useful power is the electric power given by the panel.
 **Formula:** $\eta = \dfrac{P}{GA}$
 **Conversions:** None needed: $\tfrac{\text{W}}{\text{m}^2} \cdot \text{m}^2 = \text{W}$. Finally the ratio is changed to a percentage by multiplying by a hundred.
 **Substitution:** $\eta = \dfrac{260\,\text{W}}{800\,\tfrac{\text{W}}{\text{m}^2} \cdot 1.6\,\text{m}^2} = \dfrac{260\,\text{W}}{1280\,\text{W}} = 0.203 = 20.3\,\%$
@@ -130,9 +130,9 @@
 **Model answer:** The series resistor is needed because the current of the LED grows steeply even when the voltage of the LED grows only a little. The resistor takes the extra voltage of the battery for itself and keeps the current suitable. The other options are wrong: the resistor does not increase the current, does not change the type of the voltage, and does not prevent current from flowing in the wrong direction.
 
 ## fy6-14-L1-08
-**Given:** area $A = 12\,\text{cm}^2$, light intensity $G = 1000\,\text{W/m}^2$, voltage $U = 2.0\,\text{V}$, current $I = 100\,\text{mA}$
+**Given:** area $A = 12\,\text{cm}^2$, irradiance $G = 1000\,\text{W/m}^2$, voltage $U = 2.0\,\text{V}$, current $I = 100\,\text{mA}$
 **Find:** the efficiency $\eta$ as a percentage
-**Principle:** The efficiency is the electric power of the cell divided by the power of the light falling on the cell. The electric power is the voltage times the current, and the power of the light is the light intensity times the area.
+**Principle:** The efficiency is the electric power of the cell divided by the power of the light falling on the cell. The electric power is the voltage times the current, and the power of the light is the irradiance times the area.
 **Formula:** $P = UI$ and $\eta = \dfrac{P}{GA}$
 **Conversions:** $A = 12\,\text{cm}^2 = 12 \cdot 10^{-4}\,\text{m}^2 = 0.0012\,\text{m}^2$ and $I = 100\,\text{mA} = 0.100\,\text{A}$
 **Substitution:** $P = 2.0\,\text{V} \cdot 0.100\,\text{A} = 0.20\,\text{W}$ and $\eta = \dfrac{0.20\,\text{W}}{1000\,\tfrac{\text{W}}{\text{m}^2} \cdot 0.0012\,\text{m}^2} = \dfrac{0.20\,\text{W}}{1.2\,\text{W}} = 0.167 = 16.7\,\%$

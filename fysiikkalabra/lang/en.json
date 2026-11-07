@@ -2037,7 +2037,7 @@
       "esto": "reverse direction",
       "jannite": "Voltage of the source $U = {{U}}\\,\\text{V}$",
       "vastus": "Series resistor $R = {{R}}\\,\\Omega$",
-      "valo": "Light intensity $G = {{G}}\\,\\text{W/m}^2$",
+      "valo": "Irradiance $G = {{G}}\\,\\text{W/m}^2$",
       "kuorma": "Load resistance $R = {{R}}\\,\\Omega$",
       "selite": "Purple arrow: direction of the electric current. Orange rectangle: power of the solar cell.",
       "lukemat-led": "<strong>Current $I = {{I}}\\,\\text{mA}$</strong><br>Voltage of the diode $U_\\text{D} = {{UD}}\\,\\text{V}$, voltage of the resistor $U_R = {{UR}}\\,\\text{V}$<br>Power of the diode $P_\\text{D} = {{PD}}\\,\\text{mW}$",

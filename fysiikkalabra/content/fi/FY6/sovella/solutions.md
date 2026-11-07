@@ -274,15 +274,15 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 **Järkevyys:** Keskiteho on $\dfrac{6{,}86\,\text{J}}{1{,}0 \cdot 10^{-3}\,\text{s}} \approx 6{,}9\,\text{kW}$ ja virta $26\,\text{A}$: nämä ovat paljon suurempia kuin pieni paristo voisi antaa näin lyhyessä pulssissa. Siksi energia varastoidaan ensin kondensaattoriin, joka luovuttaa sen nopeasti.
 
 ### d)
-**Kysytty:** onko kondensaattorissa vaaraa pariston irrottamisen jälkeen, miten se puretaan turvallisesti ja kuinka suuri virta kulkisi kehon läpi
+**Kysytty:** miksi kondensaattori voi olla vaarallinen pariston irrottamisen jälkeen, kuinka suuri virta kulkisi laskennallisesti kehon läpi ja miksi huolto kuuluu ammattilaiselle
 **Periaate:** Kondensaattorin levyillä on varaukset $+Q$ ja $-Q$, ja energia on varastoitunut levyjen väliseen sähkökenttään. Jännite ei katoa, kun lataava paristo irrotetaan. Vaara riippuu varastoituneesta energiasta ja jännitteestä, ei paristosta. Virran suuruus kehon läpi saadaan jännitteestä ja resistanssista.
 **Mallivastaus:** *Vaara.* Kondensaattori on pariston irrottamisen jälkeen edelleen $300\,\text{V}$:ssa, ja siinä on noin $15\,\text{J}$. Laite ei saa jännitettä pienestä paristosta, vaan kondensaattorista, joka voi purkautua korjaajan kehon kautta.
 
-*Virta.* Jos kehon resistanssi on $1{,}0\,\text{k}\Omega$, virta olisi aluksi $I = \dfrac{U}{R} = \dfrac{300\,\text{V}}{1{,}0 \cdot 10^{3}\,\Omega} = 0{,}30\,\text{A}$. Se on moninkertainen verrattuna muutamaan kymmeneen milliampeeriin, jotka voivat jo olla vaarallisia. Virta pienenee kondensaattorin purkautuessa, mutta alun virta riittää vaaralliseen sähköiskuun.
+*Virta.* Lasketaan idealisoitu arvio kuvitellussa kosketustilanteessa. Jos kehon resistanssi on $1{,}0\,\text{k}\Omega$, virta olisi aluksi $I = \dfrac{U}{R} = \dfrac{300\,\text{V}}{1{,}0 \cdot 10^{3}\,\Omega} = 0{,}30\,\text{A}$. Se on moninkertainen verrattuna muutamaan kymmeneen milliampeeriin, jotka voivat jo olla vaarallisia. Virta pienenee kondensaattorin purkautuessa, mutta alun virta riittää vaaralliseen sähköiskuun.
 
-*Turvallinen purku* (vain ymmärtämiseksi: älä yritä purkaa kondensaattoria itse). Kondensaattorin napojen väliin kytketään eristetyillä työkaluilla sopiva vastus, esimerkiksi $10\,\text{k}\Omega$. Alkuvirta on silloin $\dfrac{300\,\text{V}}{10\,\text{k}\Omega} = 30\,\text{mA}$, ja kondensaattorin energia siirtyy vastuksen sisäenergiaksi ja siitä lämpönä ympäristöön. Vastuksen teho on aluksi $\dfrac{(300\,\text{V})^2}{10\,\text{k}\Omega} = 9\,\text{W}$, joten vastuksen tehonkeston on oltava sen mukainen. Napoja ei oikosulkuteta ruuvimeisselillä, koska silloin virta on hyvin suuri ja syntyy kipinä. Lopuksi jännite varmistetaan mittarilla.
+*Huolto kuuluu ammattilaiselle.* Turvallinen huolto edellyttää, että kondensaattorin varattu energia poistetaan hallitusti ja jännitteettömyys varmistetaan luotettavasti ennen kuin laitteen sisäosiin kosketaan. Tämä vaatii perehtymistä laitteeseen sekä oikeat välineet ja menettelyt, joten huoltoa ei saa yrittää ilman asianmukaista pätevyyttä.
 
-*Johtopäätös.* Laitetta ei saa avata heti. Vaara johtuu kondensaattorin varastoimasta energiasta ja jännitteestä eikä pariston koosta. Kehon resistanssi vaihtelee esimerkiksi ihon kosteuden mukaan, joten laskettu virta on suuruusluokka-arvio.
+*Johtopäätös.* Laitetta ei saa avata heti. Vaara johtuu kondensaattorin varastoimasta energiasta ja jännitteestä eikä pariston koosta. Laskettu virta on idealisoitu suuruusluokka-arvio eikä kuvaus todellisesta sähköiskusta: kehon resistanssi vaihtelee esimerkiksi ihon kosteuden mukaan, ja virta pienenee kondensaattorin purkautuessa.
 
 ### Hyväksytään myös
 - a-kohdassa energian saa laskea myös kaavalla $E = \dfrac{1}{2} Q U$, missä $Q = C U = 0{,}099\,\text{C}$.
@@ -294,4 +294,4 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 - Energian laskemisessa unohdetaan jännitteen neliöinti, tai salamaan siirtynyt energia lasketaan kaavasta $\tfrac{1}{2} C (\Delta U)^2$.
 - Virta lasketaan jakamalla energia ajalla, jolloin saadaan teho.
 - Todetaan, että kondensaattori on vaaraton, koska laitteessa on vain pieni paristo.
-- Kondensaattori puretaan oikosulkemalla se metallityökalulla.
+- Laskettua kehon virtaa pidetään tarkkana arvona, vaikka se on idealisoitu suuruusluokka-arvio.

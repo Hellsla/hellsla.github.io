@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: fda526cf9260aee6
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: a0647c9f50afeb25
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- New task L1-09 (ordering by current): prompt, options, feedback and model solution carry the same teaching as the reviewed Finnish; feedback of each wrong option names its misconception without giving the answer away.
-- English: decimal point, natural English, course terms consistent.
-- Instructions say what to do in which order; the task is answerable without the lesson text beyond what the packet lists; workload unchanged.
-- Model solution keeps every step (Find, Principle, Model answer, reasonableness) and the explanation of why each wrong option fails.
-- No fixes were needed.
+- Diff since origin/main for fy6-15 exercises (en) read against the teacher's brief items that touch it; the changed text says what the brief intends, is consistent between lesson, inquiry, exercises, solutions and feedback, and introduces no new misconception.
+- Standing rules in the changed lines: LaTeX maths and units, decimal point, no bold in task statements, no lesson ids shown.
+- Check question, answer, options, feedback and model answer all say the fault current returns along the protective conductor to the supply; laypeople answer lists permitted minor jobs with the 'only if able to do safely' condition.

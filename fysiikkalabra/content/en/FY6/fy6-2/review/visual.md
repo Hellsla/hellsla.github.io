@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: fc7c368b6c117297
+CONTENT-HASH: ca8401bb91b5326f
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy6-2 probes photo — caption is about measuring voltage in parallel, but the photo sits after the wrong-connection figure and beside the error-limit table, a section away from the voltmeter paragraph — optionally move it beside "A voltmeter is connected in parallel".
+- none
 
 ## Checked
-batch delta review: opened the 390 px theory captures (stage-selita, whole sequence) and the 1280 theory captures around each new unit-photo; photo is sharp, caption and its $...$ maths render, credit line present, alt text informative, no clipping or horizontal overflow, surrounding figures and formulas intact.
+- Word-level diff since origin/main of the en fy6-2 lesson files and neighbouring text; decimal convention (point), number+unit in LaTeX, \cdot, no bold in task statements, no lesson ids; wording compared with the Finnish intent for the brief's items.

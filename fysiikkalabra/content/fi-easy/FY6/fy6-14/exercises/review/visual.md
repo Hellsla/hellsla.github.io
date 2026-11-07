@@ -1,16 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: b600ad4b0b99295c
-Mode: delta (new YO-skill task fy6-14-L2-08, type 1 two-stage reasoning choice)
+CONTENT-HASH: 3b30a01720987360
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] fy6-14-L2-08 — the circuit (three parallel branches, diode directions) is in words only; the "anodi eli pluspuoli" glosses help, but a small schematic would let the student check the sides at a glance. Optional.
-- [Minor] fy6-14-L2-08 feedback of the correct first-stage option is only "Oikein: vain LED A palaa."; the wrong options explain more, so a clause on the branches would match.
+- inquiry.json calc: '..., Tässä $I_\text{L}$' capital after comma (pre-existing, touched line); use 'tässä' or full stop.
 
 ## Checked
-- fy6-14-open-exercises-L2-1280-8.png (task text with the three branch paragraphs, stage-1 options and feedback, "Valitse vaihtoehto") and -9.png (stage-2 reasons with feedback, answer chip, Kysytty, Periaate, Mallivastaus through the end): options whole rows, feedback inside the card, voltages with decimal comma and thin spaces, case endings (LEDin, plusnavan) fluent and the plain-language glosses (anodi eli pluspuoli, estosuunta) used consistently; nothing clipped.
-
-## Scores
-illustrations n/a (4) · typography 5 · Finnish (selkeä) 5 · accessibility 4
+- Word-level diff since origin/main of the fi-easy fy6-14 exercises files and neighbouring text; decimal convention (comma, Finnish), number+unit in LaTeX, \cdot, no bold in task statements, no lesson ids; wording compared with the Finnish intent for the brief's items.

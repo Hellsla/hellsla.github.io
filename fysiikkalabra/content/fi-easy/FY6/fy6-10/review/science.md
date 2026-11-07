@@ -1,13 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 89c6eca643d2df88
+CONTENT-HASH: 4c8a617f47644757
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- "pallosymmetrisesti eli tasaisesti joka suuntaan": the gloss fits a uniform sphere; spherical symmetry also allows a density that varies with r. Acceptable at this level (C).
 
 ## Checked
-- Every number, unit and formula in lesson.md, inquiry.json, exit-ticket.json and figures.json matches the Finnish reference (compared programmatically: all numeric tokens and all 114 LaTeX expressions identical; decimal comma kept in fi-easy).
-- Coulomb's law, Q = ne, I = Q : t, k = 8,988·10⁹ and the worked example result 2,397·10⁻⁴ N unchanged; seven worked-example stages in both languages.
-- Experiment, prediction and feedback readings (3,99 / 0,999 / 0,250 mN, 2,00 mN) match the model; physics terms correct (force and reaction force, induction, polarised, elementary charge).
+- Coulomb: tarkka pistevarauksille; pallosymmetrinen varaus ↔ keskipisteen pistevaraus; lähellä olevat johtavat pallot: pintavaraus jakautuu uudelleen (= fi).
+- Diff since origin/main compared sentence by sentence with the Finnish source change; content hash checked at start and end.

@@ -45,11 +45,11 @@
       "id": "fy6-15-L1-06",
       "level": 1,
       "core": true,
-      "text": "Pesukoneen metallirunko on liitetty suojamaadoitusjohtimella maahan. Mikä väite suojamaadoituksen tehtävästä on oikein?",
+      "text": "Pesukoneen metallirunko on liitetty suojamaadoitusjohtimeen. Mikä väite suojamaadoituksen tehtävästä on oikein?",
       "kind": [
         "concept"
       ],
-      "answer": "Se ohjaa vikavirran maahan, jolloin sulake tai vikavirtasuoja katkaisee virran.",
+      "answer": "Se antaa vikavirralle pienen resistanssin reitin takaisin sähkönsyöttöön, jolloin sulake tai vikavirtasuoja katkaisee virran.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
@@ -58,13 +58,13 @@
           "feedback": "Maadoitus ei muuta laitteen sähkönkulutusta. Kun laite toimii normaalisti, maadoitusjohtimessa ei kulje virtaa lainkaan. Johdin tulee käyttöön vasta, kun laitteessa on vika."
         },
         {
-          "text": "Se ohjaa vikavirran maahan, jolloin sulake tai vikavirtasuoja katkaisee virran.",
+          "text": "Se antaa vikavirralle pienen resistanssin reitin takaisin sähkönsyöttöön, jolloin sulake tai vikavirtasuoja katkaisee virran.",
           "correct": true,
-          "feedback": "Oikein: kun vaihejohdin koskettaa vian takia runkoa, maadoitusjohdin vie suuren vikavirran maahan. Virta kasvaa niin suureksi, että suojalaite katkaisee sen. Runko ei jää jännitteiseksi."
+          "feedback": "Oikein: kun vaihejohdin koskettaa vian takia runkoa, suuri vikavirta kulkee suojajohdinta pitkin takaisin sähkönsyöttöön. Virta kasvaa niin suureksi, että suojalaite katkaisee sen. Runko ei jää jännitteiseksi."
         },
         {
           "text": "Se eristää rungon maasta, jolloin vika ei voi päästää virtaa kulkemaan rungossa.",
-          "feedback": "Maadoitus tekee päinvastoin: se yhdistää rungon maahan johtimella. Jos runko olisi eristetty maasta, vikavirta ei pääsisi pois. Silloin runko voisi jäädä jännitteiseksi."
+          "feedback": "Maadoitus tekee päinvastoin: se yhdistää rungon suojajohtimeen. Jos runko olisi eristetty, vikavirralla ei olisi omaa reittiä. Silloin runko voisi jäädä jännitteiseksi."
         },
         {
           "text": "Se pitää rungon aina jännitteisenä, jolloin vika huomataan ennen kuin laite hajoaa.",
@@ -84,7 +84,7 @@
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Laitteen metallirunko on liitetty maadoitusjohtimeen, joten vikavirta kulkee johdinta pitkin maahan.",
+          "text": "Laitteen metallirunko on liitetty suojamaadoitusjohtimeen, joten vikavirta kulkee sitä pitkin takaisin sähkönsyöttöön.",
           "feedback": "Tämä kuvaa luokkaa I, jonka metallirunko on suojamaadoitettu. Luokan II laitteessa ei ole suojamaadoitusta. Siinä on kaksinkertainen tai vahvistettu eristys."
         },
         {

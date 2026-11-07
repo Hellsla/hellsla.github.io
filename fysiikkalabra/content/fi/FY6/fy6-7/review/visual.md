@@ -1,11 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 9cff64eed35dd3fb
+CONTENT-HASH: 177a7d99989cf3ad
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-- (none)
+- none
 
 ## Polish
-- [Minor] fy6-7 alt — "alla vaakasuora pyörivä levy": kuvassa näkyy levyn ikkuna ja nuoli, ei koko levyä — "alla ikkuna, josta näkyy pyörivä levy".
+- none
 
 ## Checked
-batch delta review: photo file(s) opened and compared with alt text; rendered fy6-7 at 1280 px (float right, 320 px wide, no clipping, beside its paragraph) and 390 px (full-width block, no horizontal overflow); caption physics, Finnish and LaTeX units read; changed typography checked in the capture.
+- P = UI paragraph: in-phase current and voltage / power factor about one, active power depends on the phase difference; LaTeX, decimal comma, colon division kept.
+- Source-only delta review (no screenshots needed: figure changes are aria-label texts only); Finnish language, maths typography (LaTeX, \cdot, decimal comma, number+unit LaTeX) and no lesson ids shown to students.

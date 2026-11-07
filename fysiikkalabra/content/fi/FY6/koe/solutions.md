@@ -278,7 +278,7 @@
 ### b)
 **Annettu:** $C = 0{,}47\,\text{F}$, $U_1 = 4{,}5\,\text{V}$, $U_2 = 2{,}0\,\text{V}$, $P = 15\,\text{mW}$
 **Kysytty:** seisontavalon saama energia $W_\text{käyt}$ ja paloaika $t$
-**Periaate:** Valo sammuu, kun jännite on laskenut $2{,}0\,\text{V}$:iin, joten kondensaattoriin jää silloin energiaa. Valo käyttää vain energioiden erotuksen. Teho on vakio, joten paloaika on käytetty energia jaettuna teholla.
+**Periaate:** Valo sammuu, kun jännite on laskenut $2{,}0\,\text{V}$:iin, joten kondensaattoriin jää silloin energiaa. Valo käyttää vain energioiden erotuksen. Ohjauselektroniikka pitää tehon vakiona, joten paloaika on käytetty energia jaettuna teholla.
 **Kaava:** $W_\text{käyt} = \tfrac{1}{2}C\left(U_1^2 - U_2^2\right)$ ja $t = \dfrac{W_\text{käyt}}{P}$
 **Muunnokset:** $15\,\text{mW} = 0{,}015\,\text{W}$
 **Sijoitus:** Kondensaattoriin jää $\tfrac{1}{2} \cdot 0{,}47\,\text{F} \cdot (2{,}0\,\text{V})^2 \approx 0{,}94\,\text{J}$, joten $W_\text{käyt} \approx 4{,}76\,\text{J} - 0{,}94\,\text{J} \approx 3{,}8\,\text{J}$ ja $t = \dfrac{3{,}82\,\text{J}}{0{,}015\,\text{W}} \approx 255\,\text{s}$
@@ -309,7 +309,7 @@
 - Energiaksi lasketaan $QU$ tai $CU^2$ ilman kerrointa $\tfrac{1}{2}$.
 - Paloaika lasketaan koko energiasta, vaikka valo sammuu jo $2{,}0\,\text{V}$:n jännitteellä.
 - Energioiden erotuksen sijaan lasketaan jännitteiden erotuksen energia $\tfrac{1}{2}C(U_1 - U_2)^2$.
-- Kohdassa c virta lasketaan Ohmin lailla vakioresistanssista, vaikka valo ottaa vakiotehon.
+- Kohdassa c virta lasketaan Ohmin lailla vakioresistanssista, vaikka ohjauselektroniikka pitää valon tehon vakiona.
 
 ### Hyväksytään myös
 - Kohdassa c selitys ilman jännitteen muutosnopeuden lukuarvoja, kun virtojen ja jännitteen pienenemisen yhteys perustellaan.
@@ -425,7 +425,7 @@ Vaaka-akselille merkitään $r^{-2}\ (\text{m}^{-2})$ ja pystyakselille $F\ (\te
 
 ### e)
 **Kysytty:** lyhimmän etäisyyden ero mallista prosentteina, voiko se johtua epävarmuudesta, fysikaalinen selitys ja Coulombin lain käyttöehto
-**Periaate:** Coulombin laki pätee pistevarauksille ja tasaisesti varatuille palloille. Johteessa varaukset pääsevät liikkumaan, ja toisen varatun kappaleen voima siirtää niitä.
+**Periaate:** Coulombin laki pätee täsmällisesti pistevarauksille, ja pallosymmetrisesti varattu pallo vaikuttaa ulkopuolelleen kuin keskipisteeseen sijoitettu pistevaraus. Johteessa varaukset pääsevät liikkumaan, ja toisen varatun kappaleen voima siirtää niitä.
 **Mallivastaus:** Suoran mukaan voima etäisyydellä $3{,}0\,\text{cm}$ olisi $5{,}6 \cdot 10^{-6} \cdot 1111\,\text{N} \approx 6{,}2\,\text{mN}$, mutta mitattu on $5{,}5\,\text{mN}$, noin $12\,\%$ pienempi. Ero on suurempi kuin etäisyyden epävarmuuden vaikutus, noin $7\,\%$, ja se on samansuuntainen myös $4{,}0\,\text{cm}$:n mittauksessa, joten se on todellinen ilmiö. Pallot ovat johteita: samanmerkkiset varaukset hylkivät toisiaan, joten kummankin pallon varaus siirtyy pallon kauimmaiselle puolelle. Varausten keskimääräinen etäisyys on silloin suurempi kuin keskipisteiden etäisyys $r$, ja voima on pienempi kuin Coulombin lain ennuste. Vaikutus on sitä suurempi, mitä lähempänä pallot ovat toisiaan, kun pallon säde on $1{,}0\,\text{cm}$. Coulombin lakia voi käyttää näihin palloihin, kun etäisyys on monta kertaa pallon säde, tämän mittauksen mukaan noin $r \ge 5\,\text{cm}$.
 
 ### Yleisiä virheitä
@@ -475,12 +475,14 @@ Vaaka-akselille merkitään $r^{-2}\ (\text{m}^{-2})$ ja pystyakselille $F\ (\te
 
 ### d)
 **Annettu:** $E = 51{,}2\,\text{V}$, $R_\text{s} = 8{,}0\,\text{m}\Omega$, sulake $125\,\text{A}$, suojajänniteraja $120\,\text{V}$
-**Kysytty:** oikosulkuvirta $I_\text{k}$, oikosulun vaarat ja onko napojen koskettaminen vaarallista
-**Periaate:** Jakoavain koskettaa akuston omia napoja, ja sen resistanssi on hyvin pieni, joten oikosulussa virtaa rajoittaa vain akuston sisäinen resistanssi. Kaapeli ja sulake eivät ole oikosulkupiirissä, koska oikosulku tapahtuu ennen sulaketta. Kehon läpi kulkeva virta riippuu kosketusjännitteestä.
+**Kysytty:** oikosulkuvirta $I_\text{k}$, oikosulun vaarat ja miksi nimellisjännitteen vertaaminen suojajänniterajaan ei yksin riitä turvallisuuden arviointiin
+**Periaate:** Jakoavain yhdistää akuston navat, ja sen resistanssi on hyvin pieni, joten oikosulussa virtaa rajoittaa vain akuston sisäinen resistanssi. Kaapeli ja sulake eivät ole oikosulkupiirissä, koska oikosulku tapahtuu ennen sulaketta. Akuston vaarallisuutta ei voi päätellä pelkästä jännitteestä, koska akustoon on varastoitunut suuri energia, jonka oikosulku vapauttaa hetkessä.
 **Kaava:** $I_\text{k} = \dfrac{E}{R_\text{s}}$
 **Muunnokset:** $8{,}0\,\text{m}\Omega = 0{,}0080\,\Omega$
 **Sijoitus:** $I_\text{k} = \dfrac{51{,}2\,\text{V}}{0{,}0080\,\Omega} = 6400\,\text{A}$
-**Vastaus:** Oikosulkuvirta voi olla noin $6\,\text{kA}$, noin $50$ kertaa sulakkeen nimellisvirta. Lämmöksi muuttuu satoja kilowatteja, joten jakoavain ja navat kuumenevat hetkessä hehkuviksi: syntyy valokaari, sulaa metallia roiskuu, ja palovammojen ja tulipalon vaara on suuri. Siksi sulake asennetaan aivan akuston navan viereen ja akuston lähellä käytetään eristettyjä työkaluja. Napojen koskettaminen paljain käsin kuivissa oloissa ei tavallisesti ole vaarallista, koska jännite, noin $51\,\text{V}$ ja täyteen ladattuna noin $58\,\text{V}$, on alle tasajännitteen suojajänniterajan $120\,\text{V}$, eikä se aja kehon suuren resistanssin läpi vaarallista virtaa. Vaara on oikosulkuvirta, ei kosketusjännite.
+**Vastaus:** Oikosulkuvirta voi olla noin $6\,\text{kA}$, noin $50$ kertaa sulakkeen nimellisvirta. Lämmöksi muuttuu satoja kilowatteja, joten jakoavain ja navat kuumenevat hetkessä hehkuviksi: syntyy valokaari, sulaa metallia roiskuu, ja palovammojen ja tulipalon vaara on suuri. Siksi sulake asennetaan aivan akuston navan viereen ja akuston lähellä käytetään eristettyjä työkaluja.
+
+Nimellisjännitteen vertaaminen suojajänniterajaan ei yksin riitä. Akuston jännite, noin $51\,\text{V}$ ja täyteen ladattuna noin $58\,\text{V}$, on alle tasajännitteen suojajänniterajan $120\,\text{V}$, mutta raja ei tarkoita, että akuston paljaisiin napoihin olisi turvallista koskea. Sähköiskun riski riippuu muun muassa kosketusolosuhteista, kuten ihon kosteudesta, ja virtatiestä kehon läpi. Lisäksi akustoon on varastoitunut noin $10\,\text{kWh}$ energiaa, ja jo yksi oikosulkeva työkalu tai koru voi vapauttaa sen valokaarena ja lämpönä. Siksi akuston paljaita johtavia osia ei käsitellä ilman asianmukaisia suojauksia ja osaamista, ja akustoon liittyvissä töissä noudatetaan valmistajan ohjeita ja sähköturvallisuusmenettelyjä.
 **Järkevyys:** Arvio on yläraja, koska jakoavaimen ja liitoskohtien resistanssi pienentää virtaa. Jos mukana olisi kaapelin $4{,}0\,\text{m}\Omega$, virta olisi silti noin $4\,\text{kA}$.
 
 ### e)
@@ -498,7 +500,7 @@ Vaaka-akselille merkitään $r^{-2}\ (\text{m}^{-2})$ ja pystyakselille $F\ (\te
 - Vaihtosuuntaajan hyötysuhteella kerrotaan eikä jaeta.
 - Sisäisiksi resistansseiksi otetaan vain yhden kennon resistanssi.
 - Milliohmeja ei muunneta ohmeiksi.
-- Kohdassa d akuston kosketusjännitettä pidetään verkkojännitteen veroisena vaarana tai oikosulkua vaarattomana pienen jännitteen vuoksi.
+- Kohdassa d päätellään pelkästä suojajänniterajasta, että akuston paljaisiin napoihin on turvallista koskea, tai oikosulkua pidetään vaarattomana pienen jännitteen vuoksi.
 
 ### Hyväksytään myös
 - Kohdassa c virran tarkempi arvio, noin $100\,\text{A}$, kun napajännitteen pieneneminen otetaan huomioon.

@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 1f46e7478f93fd99
+CONTENT-HASH: a362da4bacf76398
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- inquiry.json:177 (johtopaatos prompt) — "miksi sama sulake ei suojaa ihmistä?" still uses the absolute wording. The model answer qualifies it correctly; the prompt could read "ei huomaa ihmisen kautta kulkevaa virtaa".
+- none
 
 ## Checked
-- Delta 45327c18: the earthing figure's fault-current label changes from I_vika to I_v (figures.py, lesson.md:310), the same symbol as in the RCD figure (lesson.md:394–395). This is physically consistent: the text and glossary call both currents vikavirta (the current that reaches earth through the fault). The arrow, its direction along PE and the "sulake laukeaa" text are unchanged.
-- Since my round-2 PASS (8a49e138), the only other content change is the solutions wording on heat leaving a coiled cord (energy transferred as heat), which is correct.
-- The round-1 safety fixes stand. The fuse protects a person only together with protective earthing. The RCD compares the L and N currents and misses an L–N contact. Colours apply to new installations, and a colour never shows that a conductor is dead. The shoe conditions are stated and shoes are no protection. Replacing a fuse with a larger one is forbidden. The Tukes and layperson limits are correct.
-- The body-current thresholds 0,5 / 10 / 30 / >50 mA agree with IEC 60479-1 and with the vaikutukset figure.
-- The numbers were verified in round 2 and are unchanged; this change touches only a figure label.
-- The fy6-16 cross-check is resolved: fy6-16 now calls IP54 a kotelointiluokka (IP-luokka).
+- Suojamaadoitus (lesson, summary, inquiry explain model and criterion, figure maadoitus aria-label and figures.py): in the TN system the fault current returns through the protective conductor to the supply; fuse or MCB trips; RCD may also trip; scope stated as the TN system. Correct; the person-to-earth path without PE is also right (returns via the supply earthing).
+- Maallikon sähkötyöt (lesson, summary, exit ticket): fixed installations for professionals; laypeople only specifically permitted minor work and only if they can do it safely; examples within Tukes's list; uncertain cases to a professional.
+- P = UI condition (in-phase / power factor ≈ 1, active power depends on phase in general); 230 · 10 = 2300 W, 230 · 16 = 3680 W recomputed.
+- Lint: no physics warnings.
+- Round 3 (hash 17a65fd2157d29ea): layman paragraph and summary bullet checked against the Tukes list the teacher pasted; FAIL because "yksivaiheisen" was missing from the cord examples.
+- Round 4 (git diff HEAD, hash a362da4bacf76398): lesson.md:461 now says "yksivaiheisen jatkojohdon korjaaminen, sähkölaitteen rikkoutuneen yksivaiheisen liitäntäjohdon ja pistotulpan vaihtaminen"; the exit ticket says "korjata yksivaiheisen jatkojohdon"; the summary bullet (line 578) says "varsinaiset sähköasennustyöt kuuluvat sähköalan ammattilaisille", matching the paragraph. Every example is now on the Tukes list with its condition; Blocking resolved.

@@ -1,13 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 13d90eca6d3c65f1
+CONTENT-HASH: 4e7c178af2d7ca44
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- Delta (inquiry.json hint of the Coulomb graph task): "read exactly" -> "read accurately"; wording only, no number or symbol changed.
-- Hint is consistent with the task: the point (3.0 cm; 9.0 mN) is on a grid crossing and q = r*sqrt(F/k) = 0.030*sqrt(9.0e-3/8.988e9) = 30 nC, unchanged.
-- No physics, number or option touched; my earlier PASS stands for the rest.
+- Coulomb's law: exact for point charges; outside a spherically symmetric charge the field equals that of a central point charge (shell theorem, correct); nearby conducting spheres redistribute surface charge so the centre-point model is no longer accurate (= fi).
+- Diff since origin/main compared sentence by sentence with the Finnish source change; content hash checked at start and end.

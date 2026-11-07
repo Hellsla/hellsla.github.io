@@ -139,10 +139,10 @@ def ominaiskayra():
 # --- Ydinajatus: the solar panel's (U, I) curve at two light levels -------------------------------------------------
 def kenno():
     f = new("fy614-kenno", 360, "Kuvaaja mittakaavassa, laskettu luvun aurinkopaneelimallilla: pienen aurinkopaneelin virta I "
-            "milliampeereina sen jännitteen U funktiona voltteina kahdella valon voimakkuudella. Kun valon voimakkuus G on "
+            "milliampeereina sen jännitteen U funktiona voltteina kahdella irradianssilla. Kun irradianssi G on "
             "1000 W/m², käyrä alkaa pystyakselilta oikosulkuvirrasta I_k = 200 mA, pysyy lähes vaakasuorana noin neljään "
-            "volttiin asti ja laskee sitten jyrkästi vaaka-akselille tyhjäkäyntijännitteeseen U_t = 6,0 V. Kun valon "
-            "voimakkuus on 500 W/m², oikosulkuvirta on puolet eli 100 mA, mutta tyhjäkäyntijännite on 5,7 V, vain vähän "
+            "volttiin asti ja laskee sitten jyrkästi vaaka-akselille tyhjäkäyntijännitteeseen U_t = 6,0 V. Kun irradianssi "
+            "on 500 W/m², oikosulkuvirta on puolet eli 100 mA, mutta tyhjäkäyntijännite on 5,7 V, vain vähän "
             "pienempi. Ruudukon välit ovat 1 V ja 50 mA.")
     ax = Axes(f, (96, 300), (476, 60), x=(0, 7), y=(0, 250), xticks=[1, 2, 3, 4, 5, 6, 7], yticks=[50, 100, 150, 200, 250],
               xlabel=r"U\ (\text{V})", ylabel=r"I\ (\text{mA})")
@@ -190,7 +190,7 @@ def etuvastus():
 # --- Kaava: the power of the panel and its maximum ---------------------------------------------------------------------
 def teho():
     f = new("fy614-teho", 470, "Kaksi kuvaajaa mittakaavassa yhteisellä jänniteakselilla, laskettu luvun "
-            "aurinkopaneelimallilla, kun valon voimakkuus on 1000 W/m². Ylempi: paneelin virta I milliampeereina jännitteen U "
+            "aurinkopaneelimallilla, kun irradianssi on 1000 W/m². Ylempi: paneelin virta I milliampeereina jännitteen U "
             "funktiona, käyrä 200 mA:sta 6,0 volttiin. Kohdassa 5,0 V ja 184 mA on piste, ja sen ja origon väliin jäävä "
             "suorakulmio on sävytetty oranssiksi: sen pinta-ala on teho P = U I. Alempi: teho P watteina jännitteen funktiona. "
             "Teho on nolla oikosulussa ja tyhjäkäynnissä ja suurin, noin 0,92 W, kun jännite on noin 5,0 V. Katkoviiva "
@@ -229,7 +229,7 @@ def ex_led():
 
 def ex_kenno():
     f = new("fy614-exkenno", 340, "Kuvaaja mittakaavassa: aurinkopaneelin virta I milliampeereina sen jännitteen U "
-            "funktiona voltteina, kun valon voimakkuus pysyy samana. Ruudukon välit ovat 1 V ja 50 mA. Käyrä alkaa "
+            "funktiona voltteina, kun irradianssi pysyy samana. Ruudukon välit ovat 1 V ja 50 mA. Käyrä alkaa "
             "pystyakselilta 200 milliampeerista, pysyy lähes vaakasuorana noin neljään volttiin asti, taipuu alas noin viiden "
             "voltin kohdalla ja laskee jyrkästi vaaka-akselille kuuteen volttiin.")
     ax = Axes(f, (96, 290), (476, 62), x=(0, 7), y=(0, 250), xticks=[1, 2, 3, 4, 5, 6, 7], yticks=[50, 100, 150, 200, 250],

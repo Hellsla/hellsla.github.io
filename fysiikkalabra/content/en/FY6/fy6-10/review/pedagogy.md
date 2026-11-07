@@ -1,13 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 13d90eca6d3c65f1
+CONTENT-HASH: 4e7c178af2d7ca44
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- Delta: transfer-task hint 1 "read exactly" -> "read accurately". Better: a value read from a grid is never exact, and the task has tolerance 0.03, so "accurately" matches what the student can do.
-- Hints 2 and 3 are unchanged and still give the point, the equal-charge form and the solved q; the progressive hint ladder is intact, the answer is not disclosed earlier.
-- No number, symbol, option or feedback logic changed.
+- Diff since origin/main for fy6-10 lesson (en) read against the teacher's brief items that touch it; the changed text says what the brief intends, is consistent between lesson, inquiry, exercises, solutions and feedback, and introduces no new misconception.
+- Standing rules in the changed lines: LaTeX maths and units, decimal point, no bold in task statements, no lesson ids shown.

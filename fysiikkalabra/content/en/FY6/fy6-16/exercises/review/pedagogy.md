@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: beb9fc402961afe8
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 38935656dc0691fb
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- New task L2-08 (magnitude of charging time): prompt, options, feedback and model solution carry the same teaching as the reviewed Finnish; feedback of each wrong option names its misconception without giving the answer away.
-- English: decimal point, natural English, course terms consistent.
-- Instructions say what to do in which order; the task is answerable without the lesson text beyond what the packet lists; workload unchanged.
-- Model solution keeps every step (Find, Principle, Model answer, reasonableness) and the explanation of why each wrong option fails.
-- No fixes were needed.
+- Diff since origin/main for fy6-16 exercises (en) read against the teacher's brief items that touch it; the changed text says what the brief intends, is consistent between lesson, inquiry, exercises, solutions and feedback, and introduces no new misconception.
+- Standing rules in the changed lines: LaTeX maths and units, decimal point, no bold in task statements, no lesson ids shown.
+- L1-02: 8,0 A x 230 V = 1840 W = 1,8 kW, 2 s.f. like the current; 'more than 21 h' for 40 kWh checks out (21,7 h). L3-02: (16/10)^2 = 2,56, i.e. +156 %, unchanged; framing as an appropriately dimensioned EV charging cable is clear.

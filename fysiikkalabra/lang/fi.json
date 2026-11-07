@@ -2037,7 +2037,7 @@
       "esto": "estosuunta",
       "jannite": "Lähteen jännite $U = {{U}}\\,\\text{V}$",
       "vastus": "Etuvastus $R = {{R}}\\,\\Omega$",
-      "valo": "Valon voimakkuus $G = {{G}}\\,\\text{W/m}^2$",
+      "valo": "Irradianssi $G = {{G}}\\,\\text{W/m}^2$",
       "kuorma": "Kuormitusvastus $R = {{R}}\\,\\Omega$",
       "selite": "Violetti nuoli: sähkövirran suunta. Oranssi suorakulmio: aurinkokennon teho.",
       "lukemat-led": "<strong>Virta $I = {{I}}\\,\\text{mA}$</strong><br>Diodin jännite $U_\\text{D} = {{UD}}\\,\\text{V}$, vastuksen jännite $U_R = {{UR}}\\,\\text{V}$<br>Diodin teho $P_\\text{D} = {{PD}}\\,\\text{mW}$",

@@ -1,10 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 875a2259874cf175
+CONTENT-HASH: ca8401bb91b5326f
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-
+- Fine as is. The wording 'The red lead is connected to the jack V mA ... and in the jack 10 A' (en) mixes 'to' and 'in'.
 
 ## Checked
-- Delta re-review (internal energy wording; error limit rounded to one significant figure, two if the first digit is 1): structure unchanged, nothing dropped. The Δx notation note and the same-p-and-n condition are present and read naturally (natural textbook English). The rounding rule in the Result step is explained in full in a clear sentence.
+- Diff since origin/main for fy6-2 lesson (en) read against the teacher's brief items that touch it; the changed text says what the brief intends, is consistent between lesson, inquiry, exercises, solutions and feedback, and introduces no new misconception.
+- Standing rules in the changed lines: LaTeX maths and units, decimal point, no bold in task statements, no lesson ids shown.

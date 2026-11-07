@@ -1,18 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: b57c3875fe94cbd2
-Mode: delta (en lesson wording change in inquiry.json)
-Round 2
+CONTENT-HASH: 1710a811d00a2f16
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- (Minor) Fixed: 'last percents' -> 'last few percent'; 'burns' -> 'stays on' (L1-04, solution and reasonableness); figure label 'stored in the battery'.
+- none
 
 ## Checked
-- Same structure as the Finnish, nothing dropped (stages, predictions, feedback, steps, exit ticket).
-- Natural textbook English; learning goals all begin 'In this lesson, you will learn to' + verb.
-- No Finnish left in en names, units, values or labels of experiments (stage ids and glossary keys are intentionally Finnish).
-- Re-review after the lang-key change (sims.fy6-9.ulat_lab / ulat_eq): the sim canvas now shows U_ch (en); values and formulas unchanged.
-- Re-review after the concept-review commit: howto wording (electrical energy transformed into internal energy), efficiency paragraph (often below 100 %, charging always, R and R_s), L3-03 sisäenergiaksi, matching the Finnish; no numbers changed; $ counts equal.
-- Delta re-review: simulation parameter name R now 'charger and wire resistance' (was 'resistance of charger and wires'). Natural, concise English; matches the Finnish 'laturin ja johtojen resistanssi'; the lesson text still says 'the resistance R of the charger and wires', so the term is recognisable to the student; no pedagogical change.
+- Diff since origin/main for fy6-9 lesson (en) read against the teacher's brief items that touch it; the changed text says what the brief intends, is consistent between lesson, inquiry, exercises, solutions and feedback, and introduces no new misconception.
+- Standing rules in the changed lines: LaTeX maths and units, decimal point, no bold in task statements, no lesson ids shown.

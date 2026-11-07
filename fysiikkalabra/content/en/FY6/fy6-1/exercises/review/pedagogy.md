@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: b895fc7f1ff12796
+CONTENT-HASH: 3e46100d85dbce5c
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-
-## Fixed
-- L1-09 text: "Reason which statements" changed to "Decide which statements" (natural English).
+- none
 
 ## Polish
+- none
 
 ## Checked
-- New task fy6-1-L1-09 is a YO-skill form task at the same level and kind as in fi; situation first, question last, clear instruction.
-- Distractors and feedback are misconception-based and repair the error (same as fi); no answer disclosed in the task text.
-- Model answer is complete and follows step by step as in fi.
-- Natural English at upper-secondary reading level.
+- Diff since origin/main for fy6-1 exercises (en) read against the teacher's brief items that touch it; the changed text says what the brief intends, is consistent between lesson, inquiry, exercises, solutions and feedback, and introduces no new misconception.
+- Standing rules in the changed lines: LaTeX maths and units, decimal point, no bold in task statements, no lesson ids shown.
+- Feedback wording 'almost immediately' / 'lähes heti' used consistently; the distinction between slow electrons and fast propagation is clear.
