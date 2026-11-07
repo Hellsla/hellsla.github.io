@@ -51,8 +51,12 @@ a[href*="kasitetakomo"],a[href*="takomo"],#credits,.unit-credits{display:none!im
 /* a table prints flat: no scroll-cue shadows at its edges (they printed as grey bands), nothing hidden by scrolling */
 table{background:#fff!important;overflow:visible!important}
 /* a box never splits over two pages (a box taller than a page still breaks, there is no other way) */
-blockquote,.katex-display,.notice,table,.eq-chain,.example-task,.intro-aside,.kc,details.opt,.worked .step,.fig,.fig-row,
+blockquote,.katex-display,.notice,table,.eq-chain,.example-task,.intro-aside,.kc,details.opt,.worked .step,.fig,
 figure,.book-qr{break-inside:avoid}
+/* a heading stays with the text after it */
+main h2,main h3,main h4,.theory-h,.example-label,.step-label{break-after:avoid}
+/* a box taller than about half a page may break (print_book.py marks it): moved whole it left a page nearly empty */
+.book-may-break{break-inside:auto!important}
 .intro-row{flex-direction:column!important}svg{max-width:100%;height:auto}img{max-width:100%}
 .book-qr{display:flex;gap:4mm;align-items:center;margin:0 0 5mm;padding:2.5mm 3mm;border:1px solid #bbb;border-radius:2mm;break-inside:avoid}
 .book-qr svg{width:21mm;height:21mm;flex:none}.book-qr p{margin:0;font-size:8.5pt!important;line-height:1.35}
@@ -93,6 +97,13 @@ def render_chapter(page, f, url, label):
     page.add_style_tag(content=BOOK_CSS)
     box = (f'<div class="book-qr">{qr_svg(url)}<p>{html.escape(label)}:<br>'
            f'<span class="u">{html.escape(url.replace("https://", ""))}</span></p></div>')
+    # measure in the printed column width: a kept-whole box taller than ~45 % of the page body may break instead
+    page.emulate_media(media="print")
+    page.set_viewport_size({"width": round(120 * 96 / 25.4), "height": 900})
+    page.evaluate("""() => { const limit = 0.45 * 182 * 96 / 25.4;
+      for (const el of document.querySelectorAll('main *'))
+        if (getComputedStyle(el).breakInside === 'avoid' && el.getBoundingClientRect().height > limit)
+          el.classList.add('book-may-break'); }""")
     page.evaluate("(b) => { const h = document.querySelector('main h1'); "
                   "const q = h.closest('.intro-head')?.querySelector('blockquote') || h; q.insertAdjacentHTML('afterend', b); }", box)
     return title, page.pdf(format="A5", print_background=True, prefer_css_page_size=True)
