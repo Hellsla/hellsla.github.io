@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 49b4c48945408be1
+CONTENT-HASH: 0a2a30dd5eee9d4f
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] "Vuoden 2014 Chevrolet Spark" voi lukea "vuoden autoksi"; selkeämpi "Vuosimallin 2014 Chevrolet Spark". Sisäänpainunut kylki ei näy kuvassa selvästi.
+- none
 
 ## Checked
-- batch delta review: opened shots 1280/360 (crash test) at 360 and 1280 px; photo loads, no clipping or overflow, credit line present, alt and caption natural Finnish, no plain number+unit.
+- Light delta review: diff read; changed passages opened at 360-390 px (fy4-11-stage-selita-390-2, -3): new heading 'Sama liikemäärän muutos, eri törmäysaika' and longer paragraph read well, no formula wraps.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5
