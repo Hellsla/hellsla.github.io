@@ -1,9 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: f2c08e3126eb44f3
+CONTENT-HASH: fb2e6c19d308e982
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-batch delta review: Ydinajatus rewording ("Fysiikan väitteitä arvioidaan havaintojen ja mittausten avulla", methods reported so others can check results and often repeat the measurements) replaces the overstated "väite pätee vasta, kun..." and "kuka tahansa voi toistaa"; correct, and consistent with the falsifiability sentence that follows.
+- Hypothesis (s=vt, s:t falsifies if falling clearly), research-question example fixed (kulkuaika vs matka), 'muutettava/mitattava muuttuja' terms, 0,05 s*... 4,9 % 'juuri ja juuri' within limit; correct.

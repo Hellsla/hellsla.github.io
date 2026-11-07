@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 14228fc14bde79ec
+CONTENT-HASH: 772da5217571230b
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- 360 px:ssä vasara ja höyhen ovat pieniä; niitä voisi suurentaa, sillä ne ovat kuvan aihe.
-- Aria-label puhuu haaleista välikuvista, mutta keskimmäinen vasara on lähes täysin peittävä; selvempi läpikuultavuus yhtenäistäisi.
-- Kuumoduuli on pelkkä laatikko; pieni yksityiskohta (folio, tikkaat) nostaisi tasoa muuhun kuvaan nähden.
+- Kuvassa A ja B erotetaan katkoviivalla eikä pelkällä värillä; harkitse maininta kuvauksessa.
 
 ## Checked
-batch delta review: uusi tekstitön avauskuva (data-fig="hero") Miksi-kysymyksen alla, kaappaukset 1200 ja 360 px sekä SVG. Astronautti Kuun pinnalla, kuumoduuli ja Maa taivaalla, vasara ja höyhen kolmessa vaiheessa aina samalla korkeudella ja kasvavin välimatkoin (70 px, sitten 120 px): oikea tilanne ja oikea fysiikka. Aria-label vastaa kuvaa, ei tekstiä, värit figuuripaletista.
+- lesson.md, inquiry.json, figures.py (nopeus siniseksi, B-suora katkoviivalla)
+- Arvioitu: muutosten vaikutus oppimispolkuun, palautteen korjaavuus (ei ennenaikaista vastauksen paljastamista), termien johdonmukaisuus, suomen luettavuus.

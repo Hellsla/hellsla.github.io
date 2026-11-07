@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 610e1dfc142402cf
+CONTENT-HASH: 703ae5847715501a
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] top-390/top-1280 — the title formula is set in KaTeX serif at a slightly larger optical size than the heading font; reads clearly and is a consequence of the project-wide all-LaTeX rule, so nothing to change.
+- none
 
 ## Checked
-batch delta review: opened fy1-7-top-390 (and top-1280 for fy2-5, fy3-6); the title formula renders as KaTeX (no red source), on one block with the heading, nothing clipped, no overflow, breadcrumb legible; the rest of the lesson is unchanged by the diff.
+- lesson.md, inquiry.json, exit-ticket.json, figures.py diff vs origin/main; text edits only (aligned block, units in $...$, \approx); no figure change. No captures opened (diff judged from source; not rendered).

@@ -1,18 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: e49c387515a0461e
-Mode: delta (new task L2-08, translation against reviewed fi)
-Round 2
+CONTENT-HASH: 3e6abde419223023
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
 
 ## Blocking
-(none)
-
-## Fixed
-(none needed)
+- none
 
 ## Polish
-(none)
+- Ei huomautettavaa.
 
 ## Checked
-- Task text is natural plain Finnish: situation and data first, question as its own sentence, prompt separate; items as separate paragraphs.
-- Solution has conversions one per line, then densities, then the order and reasoning; followable step by step.
-- fi-easy: short sentences, split closing remarks per NOTES.md section 12; no Finnish in en.
+- Pedagogy role, fi-easy: diff since origin/main of content/fi-easy/FY1/fy1-7/exercises/exercises.json, exercises/solutions.md, lessons/FY1/fy1-7/answers.py. Judged: learning path unchanged, feedback still repairs the misconception, no answer disclosed early, difficult words explained (NOTES §12), same physics as the Finnish fix.

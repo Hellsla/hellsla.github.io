@@ -1,18 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 039bbf04c7489009
-Mode: full (translation review against the reviewed Finnish set; new task L2-08)
-Round 2
+CONTENT-HASH: 0c51717ed8e7897c
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
 
 ## Blocking
-(none)
-
-## Fixed
-(none needed)
+- none
 
 ## Polish
-(none)
+- Ei huomautettavaa.
 
 ## Checked
-- L2-08 keeps the YO-skill form of fi: data table plus a single-best-conclusion multiple choice, no hint, no answer given away in the text.
-- Each distractor targets a real misconception (difference as proof, "no effect" proved, over-precise average) and its feedback repairs it as in fi.
-- Language level suits the course (fi-easy): short sentences, terms consistent with the rest of the set; Solution has Given/Find/Principle/Model answer as in fi.
+- Pedagogy role, fi-easy: diff since origin/main of content/fi-easy/FY1/fy1-3/exercises/exercises.json, exercises/solutions.md, lessons/FY1/fy1-3/answers.py. Judged: learning path unchanged, feedback still repairs the misconception, no answer disclosed early, difficult words explained (NOTES §12), same physics as the Finnish fix.

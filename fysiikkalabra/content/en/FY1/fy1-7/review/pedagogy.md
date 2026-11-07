@@ -1,7 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: d80d02f15be216a3
+CONTENT-HASH: 73788ee47a96da85
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+
 ## Blocking
+- none
+
 ## Polish
-- At 360 px the pointer and scale arc are tiny; they carry no information the text needs, so this is acceptable.
+- inquiry.json: "viscosity" may be a new word for some learners; it is glossed by the earlier "thickness", so acceptable.
+
 ## Checked
-batch delta review: hero captures 1200 and 360 px; the pointer is now fixed to the beam and turns with it (tip swings opposite the iron-side drop, physically right), drawn in iron grey; the tilt towards the iron cube, the equal cubes and the measuring cylinder still match the Miksi question and the unchanged aria-label.
+- lesson.md, inquiry.json, exit-ticket.json, figures.json, figures.py (and sim.js for fy1-5) diffs vs origin/main; wording, learner-facing feedback, notation, consistency with the Finnish fix. Changed passages read clearly for a 16-19-year-old, no new misconception or misleading feedback introduced.

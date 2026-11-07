@@ -1,19 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 9efa159d933410d1
-Mode: full (translation review against the reviewed Finnish set; new task fy1-6-L2-08)
-Round 2
+CONTENT-HASH: 064ca5aebc6ae5b8
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
 
 ## Blocking
-(none)
-
-## Fixed
-(none needed)
+- none
 
 ## Polish
-(none)
+- Ei huomautettavaa. Valoporttitehtävän 'ajallisesti puolivälissä... nopeus on yhtä suuri kuin keskinopeus' on perusteltu ja selkeä.
 
 ## Checked
-- fy1-6-L2-08 keeps the Finnish form: situation first, question last as its own sentence; two-stage (answer, then reason) with the same reason_prompt, no hint added or removed.
-- Each wrong choice and wrong reason has feedback naming its own misconception (mass-proportional speed, g read as speed, heavier pulled harder, lighter easier to start); the correct ones explain why.
-- Solution follows Find, Principle, Model answer; the principle is explained, not just named, and a student can follow it.
-- Easy Finnish per NOTES.md §12: short sentences, one idea each, 'kumoavat toisensa eli poistavat toisensa' glosses the key verb, the reason 2.0 s has two significant figures is stated; same physics and numbers as fi.
+- Pedagogy role, fi-easy: diff since origin/main of content/fi-easy/FY1/fy1-6/exercises/exercises.json, exercises/solutions.md, lessons/FY1/fy1-6/answers.py. Judged: learning path unchanged, feedback still repairs the misconception, no answer disclosed early, difficult words explained (NOTES §12), same physics as the Finnish fix.

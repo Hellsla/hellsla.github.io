@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 31abe1b0112d5fff
+CONTENT-HASH: e18b0f31d580983a
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- Unit symbols moved into math ($142{,}9\,\text{AU}$:n) consistently; no issues.
 
 ## Checked
-- batch delta review: "Luvun tärkeät käsitteet" panel captured from preview/fi-easy/fy1-2.html at 390 and 1280 px (the review/shots set has no capture of it) and opened — between the opening and stage 1, term bold over its explanation at 390 px, two-column at 1280 px, no clipping, no horizontal overflow, no KaTeX error; the edited lesson.md/inquiry.json sentences read in their diff (prose only, no new maths); top-390 opened in a montage (read-aloud "Kuuntele" button under the title, layout intact); fy1-2 contact-1/2 and intro-1280 opened at full size (edited prompt and SI paragraph rendered).
+- lesson.md, inquiry.json, figures.json, exit-ticket.json, figures.py diff vs origin/main; no captures, SVG not rendered

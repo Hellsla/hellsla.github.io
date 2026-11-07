@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 18f2780582100755
+CONTENT-HASH: 3fe489dcb602a583
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
+- Aikavälien merkintä 0–12 s on selkeämpi.
 
 ## Checked
-- L2-08 now avoids the unprepared sign convention: feedback A and the solution say the line must fall because position decreases, and steepness is the speed.
-- Solution gives the 6,0 s return time, the 10 s arrival and the speed from steepness; every distractor is explained (A direction, B v-t axis, D distance vs position).
-- Figure descriptions give grid and values; distractor figures do not reveal the answer.
-- Level 2, situation first and question last; rest of set unchanged since PASS.
+- exercises.json, solutions.md
+- Arvioitu: muutosten vaikutus oppimispolkuun, palautteen korjaavuus (ei ennenaikaista vastauksen paljastamista), termien johdonmukaisuus, suomen luettavuus.

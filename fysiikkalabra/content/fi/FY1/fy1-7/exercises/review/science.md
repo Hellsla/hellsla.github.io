@@ -1,16 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: f7cdc3d203132d99
+CONTENT-HASH: c1cdec646524732d
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-- Round 2: L2-08 reformatted (paragraphs, one calculation per line); task text, `order`, `answer` and the physics are unchanged in substance.
-- L2-08 densities recomputed: ρ_A = 2,7, ρ_B = 0,90, ρ_C = 9,0, ρ_D = 1,2 g/cm³; order B, D, A, C correct; conversions 0,40 dm³ = 400 cm³, 100 ml = 100 cm³ right.
-- Round-1 polish items resolved: rounding sentence now says two significant figures as the least precise data; "muut uppoaisivat" fixed.
-- L2-08 float/sink remark (solid, average density vs water 1,00 g/cm³) and mass-order contrast (C heaviest, D lightest) correct.
-- All 18 numeric answers recomputed in one script with my own formulas; all within tolerance (L2-05 2,705 g/cm³; L2-06 920 kg/m³, intercept 85,0 g; L3-03 71,05 m; L3-05 39,9 cm³).
-- Rest of solutions.md and answers.py unchanged since round 1 (diffed).
-- Notation ρ, m, V with subscripts A–D consistent with the lesson; scope inside FY1.
-- Content hash identical at start and end.
+- exercises.json (oil 0,92, viskositeetti, erikokoiset), solutions.md (95 g, 4,0·10^2 cm^3, 1,8·10^3 kg, 9,20·10^2 kg/m^3, unit substitutions, 2,0 kg ethanol, 8,9·10^3 kg/m^3, 0,197 kg/2,50·10^-4 m^3 and 1650 without the bottle, aluminium/copper 3,32, lead 55 g vs 56,5 g, liquid 0,92 g/cm^3 with m0 = 85 g and check at 60 cm^3). Every changed number recomputed; physics guardrails 1–7 applied to the changed passages only.

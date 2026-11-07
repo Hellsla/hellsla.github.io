@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 7e0acb0700aa8bf7
+CONTENT-HASH: 4cca527928e2f41d
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- Ydinajatus: "It describes the uncertainty of the measurement result, an estimate of..." is circular; write "It is an estimate of how large the measurement error can be. It does not usually mean...".
-- Add to the LIGO caption one clause on why such a detector needs reliable repeated measurements.
+- none
 
 ## Checked
-batch delta review (en): uncertainty wording consistent with later sections; both photos have alt text and captions tied to measurement accuracy; no task or solution contradicts the change.
+- lesson.md, inquiry.json, exit-ticket.json, figures.json, figures.py (and sim.js for fy1-5) diffs vs origin/main; wording, learner-facing feedback, notation, consistency with the Finnish fix. Changed passages read clearly for a 16-19-year-old, no new misconception or misleading feedback introduced.

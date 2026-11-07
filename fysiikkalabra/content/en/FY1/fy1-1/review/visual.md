@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: bf65c9e3527e76b5
+CONTENT-HASH: 3aa00aef52592794
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] Photo sits after the observable-universe paragraph and floats right at 1280 px beside the "Fundamental interactions" text; a tall deep field image (220 px wide), fine.
+- lesson: the star/planet sentence no longer defines a star ("The energy of a Sun-like star is released in fusion reactions..."); optionally add one clause saying a star is a body that radiates its own energy.
+- cosmic-address figure: the longer English label "Earth and Moon" now ends close to the dashed orbit ellipse (about 275 px); acceptable, shorter than before the box shift.
+- for fi: "Aurinkokunnan planeettojen alue" is long next to 10^13 m in the Finnish figure; check at 390 px.
 
 ## Checked
-batch delta review: built page opened in Chromium at 360, 768 and 1280 px, photo (webb deep field (alt, caption, credit)) captured with its surrounding text and caption; image loads (WebP), no horizontal overflow, floats right beside text at 1280 and stands in the column at 360/768, caption short and factual, credit under the caption, credits list at page end, alt text describes the picture; fig-1 captures and the unchanged figures not affected.
+- diff of lesson.md, inquiry.json, exit-ticket.json, figures.json, figures.py, sims (fy1-1); figure changes judged from the lesson.md SVG rendered locally with KaTeX (no stale shots used); rendered scale-axis, matter-ladder, cosmic-address

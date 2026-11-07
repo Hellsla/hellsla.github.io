@@ -1,7 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 52cdf4d2a2b56eb0
+CONTENT-HASH: 703ae5847715501a
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+
 ## Blocking
+- none
+
 ## Polish
-- At 360 px the pointer and scale arc are tiny; they carry no information the text needs, so this is acceptable.
+- Mittapullo korvattu mittalasilla; johdonmukainen.
+
 ## Checked
-batch delta review: hero captures 1200 and 360 px; the pointer is now fixed to the beam and turns with it (tip swings opposite the iron-side drop, physically right), drawn in iron grey; the tilt towards the iron cube, the equal cubes and the measuring cylinder still match the Miksi question and the unchanged aria-label.
+- lesson.md, inquiry.json, exit-ticket.json
+- Arvioitu: muutosten vaikutus oppimispolkuun, palautteen korjaavuus (ei ennenaikaista vastauksen paljastamista), termien johdonmukaisuus, suomen luettavuus.

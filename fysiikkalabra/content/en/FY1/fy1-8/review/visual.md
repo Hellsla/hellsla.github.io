@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: cd46f235b9a9ee5c
+CONTENT-HASH: 0c7463bee6880e70
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- batch delta review: opened the captures of the changed passages (theory-1280 / example-390), source diff read; no figure changed; text-only edits render cleanly, no clipping, no horizontal overflow, no inline formula wrapped.
+- diff of lesson.md, inquiry.json, exit-ticket.json, figures.json, figures.py, sims (fy1-8); figure changes judged from the lesson.md SVG rendered locally with KaTeX (no stale shots used)

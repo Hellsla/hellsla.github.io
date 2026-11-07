@@ -1,11 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: f7cdc3d203132d99
+CONTENT-HASH: c1cdec646524732d
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
+- Muutama 'pullon massa' -sana saattaa jäädä ratkaisuihin (esim. tiheystehtävän Järkevyys); korvaa halutessasi mittalasilla.
 
 ## Checked
-- L2-08 text now ends with the question as its own sentence; the items are separate paragraphs, readable at 360 px.
-- Solution gives each conversion and each density on its own line, adds symbols with subscripts and the note that the order is found by calculation, not by guessing the material.
-- Values and order B, D, A, C unchanged and correct; no other change in the diff.
+- exercises.json, solutions.md
+- Arvioitu: muutosten vaikutus oppimispolkuun, palautteen korjaavuus (ei ennenaikaista vastauksen paljastamista), termien johdonmukaisuus, suomen luettavuus.

@@ -1,18 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 9372bf9798376f36
-Mode: full (translation review against the reviewed Finnish set)
-Round 2
+CONTENT-HASH: ec3033d2695b3618
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
 
 ## Blocking
-(none)
-
-## Fixed
-- none needed
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- L1-09 keeps the Finnish pedagogy: the stem does not name the formula, each distractor targets one unit error (product, inverse, squared time) and its feedback names it; the correct feedback does not just restate the answer.
-- Level 1, kind (concept, reasoning) and core flags identical to fi; no hint or answer leak added.
-- Language is natural and uses the lesson terms.
+- exercises.json, solutions.md and answers.py diffs vs origin/main; wording of tasks and feedback, solution structure, significant figures, consistency with the Finnish fix. Changed passages read clearly for a 16-19-year-old, no new misconception or misleading feedback introduced.

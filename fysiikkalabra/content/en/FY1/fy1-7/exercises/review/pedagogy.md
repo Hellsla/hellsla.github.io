@@ -1,18 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: feeb2becb9e04fe2
-Mode: delta (new task L2-08, translation against reviewed fi)
-Round 2
+CONTENT-HASH: d302cb2338c362fa
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
 
 ## Blocking
-(none)
-
-## Fixed
-(none needed)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- Task text is natural English: situation and data first, question as its own sentence, prompt separate; items as separate paragraphs; decimal point used.
-- Solution has conversions one per line, then densities, then the order and reasoning; followable step by step.
-- No Finnish left in the L2-08 strings.
+- exercises.json, solutions.md and answers.py diffs vs origin/main; wording of tasks and feedback, solution structure, significant figures, consistency with the Finnish fix. Changed passages read clearly for a 16-19-year-old, no new misconception or misleading feedback introduced.

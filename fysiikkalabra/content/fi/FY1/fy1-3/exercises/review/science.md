@@ -1,18 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 1a41d04fd9a53a26
-
-Full review, round 2. Only L2-08 changed since round 1; I recomputed every answer again.
+CONTENT-HASH: 9436846cd0f7b485
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- solutions.md:140 (L1-08) — Carried over: "joten työntömitta on tarkempi väline" infers accuracy from resolution alone. — Limit the claim to reading uncertainty.
-- solutions.md:163 (L2-06) — Carried over: "eli siinä on systemaattinen virhe" should say *todennäköisesti*, as line 164 does.
+- none
 
 ## Checked
-- Round-1 Blocking is fixed (exercises.json:307, solutions.md:201). Option 4 now says "kymmenen heilahduksen aika 14,300 s". The Mallivastaus gives 14,3 s ± 0,2 s for ten swings and the period as about 1,43 s ± 0,02 s; 0,2/10 = 0,02 s is right.
-- The round-1 Polish items in L2-08 are done. The uncertainty is now "käsin otetun ajan epävarmuus Δt = 0,2 s", the stem marks 14,30 s and 14,36 s as calculator means of ten swings, the text says "kuulan massan", and the typo is fixed.
-- The added remark in option 4's feedback (unrounded means are kept for the comparison, the result is rounded for reporting) is right and removes the inconsistency.
-- L2-08 still has exactly one correct option. The difference 0,06 s and the half-ranges 0,20 s and 0,15 s are right, and "cannot be shown, not proof of equality" follows the guardrail.
-- All 19 numeric answers were recomputed with my own formulas and agree with exercises.json and answers.py within tolerance.
-- The hash was the same at the start and the end.
+- exercises.json (virhearvio wording, reaction-delay task, mass-vs-time conclusion feedback, paper stack), solutions.md (+0,3 cm, tape: mean 1,01067 m → 10,67 mm, half-range 1,5 mm → 10,7 mm ± 1,5 mm, consistent with answer 10.67 ± 0.04; unit substitutions; 2 µm; 5,43 ± 0,04 cm; turntable 1,820 ± 0,015 s; N = 14 → 0,95 %; outlier case 19,84/8 = 2,48 → 2,5 ± 0,3 s, shift 0,07 s ≈ 2,3 × 0,03 s). Every changed number recomputed; physics guardrails 1–7 applied to the changed passages only.

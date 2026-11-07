@@ -1,18 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: b092bb5587c87c57
-Mode: full (translation review against the reviewed Finnish set; new task fy1-5-L2-08)
-Round 2
+CONTENT-HASH: 768d1a5bee752e06
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
 
 ## Blocking
-(none)
-
-## Fixed
-(none needed: L2-08 already matched fi in every number and was clearer than fi: shorter sentences)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- L2-08 compared with content/fi: same id, level, kinds, answer "C", exactly one correct option (pick-back); texts, feedback, solution numbers (6.0 m, 4.0 s, 1.0 m/s, 6.0 s, 10 s, 12 m) identical.
-- Re-derived: return 6.0 m / 1.0 m/s = 6.0 s, arrival at 4.0 s + 6.0 s = 10 s; only graph C (6 m flat to 4 s, then down to 0 m at 10 s) fits; A rises to 12 m, B is (t, v), D is distance from 0 to 6 m.
-- All four pick-* figure descriptions in figures.json translated and match the fi captions (points, grid 1 s / 2 m / 0.25 m/s); check_i18n.py: nothing for fy1-5; build.py fy1-5 succeeds.
+- Interval notation 0-12 s, Voyager round trip 'Oletetaan', slope/speed wording (negative velocity when position decreases), 30x steepness bullet figures; correct.

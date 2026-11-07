@@ -1,19 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 97ba35b47f1bb414
+CONTENT-HASH: 975ef43c994fb059
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
 
 ## Blocking
-(none left)
-
-## Fixed
-- inquiry.json:11 — wrong English chapter title in the prior-knowledge list (see science.md).
-
-## Polish
 - none
 
+## Polish
+- lesson.md: "In air, air holds back the fall of a light, wide object the most" (summary bullet) repeats "air"; consider "In air a light, wide object is held back the most".
+
 ## Checked
-- Teaching sequence identical to the reviewed Finnish: hook, review of s = vt, two predictions revealed after the experiments, three experiments, fitted-line example data, conclusion, return to predictions, find-the-error, new situation, three levels, exit ticket.
-- English is natural and level-appropriate; sentences short and clear; instructions in imperative (*Press Drop*, *Choose the Environment*); sim labels (Drop, Moment t, Environment) agree with the prose.
-- Learn objectives now read as completions of "You can ..." and are parallel; the removed sentence about optional levels in the three-level intro agrees with the Finnish.
-- Hints go from a nudge to the formula to the substitution; mistake feedback names the actual error without giving the answer.
-- Reasonableness checks and significant-figure remarks kept as in the Finnish.
-- Misconception (heavy falls faster, g as a speed) addressed in lesson, find-the-error and level 2 of concept choices.
+- lesson.md, inquiry.json, exit-ticket.json, figures.json, figures.py (and sim.js for fy1-5) diffs vs origin/main; wording, learner-facing feedback, notation, consistency with the Finnish fix. Changed passages read clearly for a 16-19-year-old, no new misconception or misleading feedback introduced.

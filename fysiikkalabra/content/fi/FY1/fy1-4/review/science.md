@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: f654d8f87ac2b1a9
-
-Delta review over the audit's PASS (4ef41bcb63136457): new choice check-c2 (how to draw a fit, from the exit ticket), titles renumbered, exit ticket down to two and "Lopuksi kaksi".
+CONTENT-HASH: 4343001430ae156e
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
 
 ## Blocking
-(none)
+- none
+
 ## Polish
-(none)
+- none
+
 ## Checked
-- check-c2: one correct option (line through the middle of the points, points on both sides); broken line, line through the first two points, "always through the origin" are wrong.
-- Feedbacks follow the fits guardrail: the fit need not hit any point; the origin needs a physical reason (direct proportionality), otherwise b ≠ 0; two points carry their own errors.
-- Exit ticket: two remain (k = 6,0 m / 4,0 s = 1,5 m/s, b = 2,0 m unchanged); text "kaksi".
+- lesson.md (model supported only on measured range, curvature description, slope unit, kettle intercept as model start temperature), inquiry.json (broken-line slopes, intercept = empty glass, extrapolation 78,5 − 20·0,79 ≈ 63 g, residual-direction hint, 15 km/h graph task, plant 20 vrk, hiking task wording), exit-ticket.json (fitted line meets y-axis at b = 80 g). Every changed number recomputed; physics guardrails 1–7 applied to the changed passages only.

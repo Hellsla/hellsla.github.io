@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 020d1124a0777895
+CONTENT-HASH: b100e0e92a7b7c45
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- batch delta review: opening paragraph (Fysiikka on kokeellinen tiede ...); built page and scripts/screenshot.py fy1-8 (captures current), changed passages opened at 390 px (i-390-0): clean wrapping, KaTeX renders, no inline formula wraps, no clipping, no horizontal scroll. Diff read; the rest of the lesson unchanged.
+- lesson.md, inquiry.json, exit-ticket.json, figures.py diff vs origin/main; text edits only; no figure change. No captures opened (diff judged from source; not rendered).

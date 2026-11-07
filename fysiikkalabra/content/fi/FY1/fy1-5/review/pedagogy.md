@@ -1,11 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 35583b6e7a209852
+CONTENT-HASH: 9590540acbc4a3d7
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
+- Nopeuden väri on nyt yhtenäinen kuvissa ja simulaatiossa; väri ei ole ainoa tieto.
 
 ## Checked
-- Delta (lesson.md): (t, s) kirjoitettu matematiikkatilaan neljässä kohdassa (Suoraan verrannollisuus, Nopeus kuvaajasta, Tiivistelmä); merkintä on yhtenäinen muun tekstin kanssa eikä muuta sisältöä.
-- Lineaarinen malli: "kun nopeus muuttuu tarkasteltavana aikana vain vähän" on suomeksi sujuvampi kuin aiempi "tarkasteltuun aikaan nähden" ja 17-vuotiaalle selkeämpi; merkitys ennallaan, ei uusia lukuja tai symboleja.
-- Ei vaikutusta oppimispolkuun, ennusteisiin, kokeisiin, esimerkkiin tai tehtäviin; aiemmat Polish-huomiot (hero-kuvan puomi ja välit) koskevat kuvaa, jota diff ei muuttanut.
+- lesson.md, inquiry.json, figures.py, sim.js (nopeusnuoli siniseksi kuten muissa kuvissa)
+- Arvioitu: muutosten vaikutus oppimispolkuun, palautteen korjaavuus (ei ennenaikaista vastauksen paljastamista), termien johdonmukaisuus, suomen luettavuus.

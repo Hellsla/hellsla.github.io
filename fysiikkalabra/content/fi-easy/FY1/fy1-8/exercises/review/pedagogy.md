@@ -1,15 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 0714f54cbaa54000
+CONTENT-HASH: cb6e685b9070cfdb
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- fy1-8 tehtävä 'Kuinka moninkertainen käsiajanoton epävarmuus on ... erotukseen verrattuna?' on S2-lukijalle raskas; 'Kuinka monta kertaa suurempi ... on kuin keskiarvojen erotus?' olisi selkeämpi.
+- solutions.md (Järkevyys, jäähtyminen): 'Lukemien tarkkuuden perusteella se on noin 0,1 K' -- 'se' viittaa epäselvästi; kirjoita 'lukeman epävarmuus on noin 0,1 K'.
 
 ## Checked
-- L1-09: situation first, question last as its own sentence; a level-1 concept/experiment task of five short statements, each with its own feedback that repairs the misconception.
-- Distractors keep fi's misconception targets (uncontrolled angle, one run enough because of clock resolution, failure equals no effect).
-- Solution explains the principle and judges each statement in order; can be followed by a student who could not solve it.
-- Selkosuomi per NOTES.md §12: short sentences, one idea each, 'vakioida eli pitää samana' explains the term, same physics as fi.
-- Layout of a true/false task unchanged from fi; short statements read on a 360 px screen.
+- Pedagogy role, fi-easy: diff since origin/main of content/fi-easy/FY1/fy1-8/exercises/exercises.json, exercises/solutions.md, lessons/FY1/fy1-8/answers.py. Judged: learning path unchanged, feedback still repairs the misconception, no answer disclosed early, difficult words explained (NOTES §12), same physics as the Finnish fix.

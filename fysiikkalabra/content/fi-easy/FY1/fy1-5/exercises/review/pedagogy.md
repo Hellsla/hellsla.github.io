@@ -1,16 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: b092bb5587c87c57
-Mode: full (translation review against the reviewed Finnish set; new task fy1-5-L2-08)
-Round 2
+CONTENT-HASH: 768d1a5bee752e06
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- Ei huomautettavaa.
 
 ## Checked
-- L2-08 keeps the YO-type graph choice (Kuvaajan valinta): same four figure options, each distractor with its own misconception (rising line, (t, v) instead of (t, s), distance instead of position) and feedback that repairs it without naming the right letter in the wrong options.
-- Language: selkosuomi, short sentences, one idea per sentence; same physics as fi.
-- Level 2, kind tags graph and concept, and task order identical to fi; the solution has Find, Principle, Model answer and Reading the graph like the other tasks.
-- Figure descriptions give a reader who cannot see the graph the same data as the picture and do not reveal the answer.
+- Pedagogy role, fi-easy: diff since origin/main of content/fi-easy/FY1/fy1-5/exercises/exercises.json, exercises/solutions.md, lessons/FY1/fy1-5/answers.py. Judged: learning path unchanged, feedback still repairs the misconception, no answer disclosed early, difficult words explained (NOTES §12), same physics as the Finnish fix.

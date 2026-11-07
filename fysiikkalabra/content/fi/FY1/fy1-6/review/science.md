@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 75cb60ff6e1650d8
-
-Round 2: check-c2 prompt now "Levosta pudotetun, vapaasti putoavan pallon"; exit question replaced by a Moon question. The round-1 blocking item is fixed.
+CONTENT-HASH: 772da5217571230b
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
 
 ## Blocking
-(none)
+- none
+
 ## Polish
-- inquiry.json:493 — "Matkakin kasvaa joka sekunti" is trivially true; the point is that the distance fallen in each second grows ("Joka sekunnin aikana kuljettu matka kasvaa"); in the first second it is about 4,9 m, not 9,81 m.
+- lesson.md "ilma jarruttaa eniten kevyen ja leveän kappaleen putoamista" — right as an effect on the motion (small mass per area); level C, no change needed.
+
 ## Checked
-- check-c2: start from rest now stated, so v = g t in the feedbacks holds: 9,81 · 3,0 = 29,43 ≈ 29,4 m/s, 2 · 9,81 = 19,62 ≈ 19,6 m/s; exactly one correct option.
-- New exit question: from rest stated; Moon 1,62 · 3,0 = 4,86 ≈ 4,9 m/s, Earth 9,81 · 3,0 = 29,43 ≈ 29 m/s, ratio 9,81/1,62 = 6,06 ≈ 6,1; v ∝ g at fixed t right; g_Moon = 1,62 m/s² correct.
-- Count 1 matches "Lopuksi yksi".
+- lesson.md (Moon question, slope from two distant points, Δv = gΔt for a downward-moving body not starting at rest, 9,81 → 15 m/s at 1,5 s, v = gt valid only when drag can be neglected, 1 m/s = 3,6 km/h), inquiry.json (contribution, unit/quantity feedback, constant Δv per second, mass absent from v = gt, vacuum acceleration g, g = 4,9/0,50 = 9,8 m/s^2), figures.py (velocity arrows recoloured, B dashed; alt text). Every changed number recomputed; physics guardrails 1–7 applied to the changed passages only.

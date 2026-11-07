@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 934c0f16039888c9
+CONTENT-HASH: e18b0f31d580983a
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- meta.json key_concepts "merkitsevä numero" — "Lukuarvon numero, joka kertoo, kuinka tarkasti suure tunnetaan" is vague — "Mittaustuloksen numero, johon voi luottaa. Merkitsevien numeroiden määrä kertoo tuloksen tarkkuuden."
+- Ei huomautettavaa. 'Kuun keskietäisyydestä ... ei näe, onko tarkkuus sata, kymmenen vai yksi kilometri' toimii selkeänä.
 
 ## Checked
-batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.
+- Pedagogy role, fi-easy: diff since origin/main of content/fi-easy/FY1/fy1-2/lesson.md, inquiry.json, exit-ticket.json, figures.json; lessons/FY1/fy1-2/figures.py. Judged: learning path unchanged, feedback still repairs the misconception, no answer disclosed early, difficult words explained (NOTES §12), same physics as the Finnish fix.

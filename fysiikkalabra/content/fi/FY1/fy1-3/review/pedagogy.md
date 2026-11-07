@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: bf819a37c4fc8d14
+CONTENT-HASH: 2369acb3ae0c6322
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- Ydinajatus: "Se kuvaa ... eli arviota siitä, kuinka suuri mittausvirhe voi olla. Se ei yleensä..." has two "Se" in a row; the second could name the subject ("Epävarmuus ei yleensä...").
-- The LIGO photo sits after the repeatability paragraph; its caption could say in one clause why a detector of that size needs trustworthy repeated measurements.
+- Yhtenäinen termi virhearvio kaikkialla; ei muuta huomautettavaa.
 
 ## Checked
-batch delta review (fi): uncertainty wording now says the estimate is not an absolute bound, consistent with the later sections; both photos have useful alt texts and captions that connect to measurement accuracy; no task or solution contradicts the change.
+- lesson.md, inquiry.json, figures.py (virhearvio yhteen kirjoitettuna, aika-akseli)
+- Arvioitu: muutosten vaikutus oppimispolkuun, palautteen korjaavuus (ei ennenaikaista vastauksen paljastamista), termien johdonmukaisuus, suomen luettavuus.

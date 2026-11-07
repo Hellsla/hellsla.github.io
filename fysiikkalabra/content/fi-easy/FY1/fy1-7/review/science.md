@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: beea801f93a32cad
+CONTENT-HASH: a1190e072a3d246b
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
 - none
 
 ## Checked
-- batch delta review, round 3 (diff f83714cd..b8a6e1bb): tiheys key concept 'ei riipu kappaleen koosta' correct; no other content changed.
+- Wording only (mittalasi, erikokoinen, 'leikkauskohta'), 'mittausepavarmuuden rajoissa' added; sig-fig reason for 8,96 g/cm3 (20,0 and 179,2) correct; unit-sum bullet (g with m3 read as kg/m3 -> number 1000x too large) correct; water-displacement 'lukemien erotus' correct.

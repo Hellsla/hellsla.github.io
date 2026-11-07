@@ -1,19 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 1376c48c80de3eac
-Mode: full (translation review against the reviewed Finnish set)
-Round 2
+CONTENT-HASH: 504b03b343c2fadf
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
 
 ## Blocking
-(none)
-
-## Fixed
-- none needed
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- New task L1-09 (YO-skill form, which expression can be a speed) compared with content/fi: same four choices, same correct option (12 km / 3.0 h, unit km/h), same distractors (km·h, h/km, km/h^2) with feedback of the same physics; numbers identical (decimal comma).
-- Solution L1-09: units alone decide; same reasoning and same four cases as the Finnish.
-- Whole set re-compared with fi by script: ids, answers, tolerances, kinds, correct flags and every number identical (only translated display units differ).
-- check_i18n.py: nothing for fy1-2; build.py fy1-2 run.
+- Heilurin small-angle assumption added (correct, T independent of m, dimensional analysis intact); gram/kilogram, derived-unit feedback; N formula now a/D with a in km (consistent with 4,498e9 km / 3474 km = 1,295e6); light-travel estimates (145 AU: 20 h, 40 h round trip) recomputed.

@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: f2c08e3126eb44f3
+CONTENT-HASH: fb2e6c19d308e982
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- Numbers given units ($0{,}50\,\text{m/s}$); no issues.
 
 ## Checked
-- batch delta review: opened the captures of the changed passages (theory-1280 / example-390), source diff read; no figure changed; text-only edits render cleanly, no clipping, no horizontal overflow, no inline formula wrapped.
+- lesson.md, inquiry.json, figures.json, exit-ticket.json, figures.py diff vs origin/main; no captures, SVG not rendered

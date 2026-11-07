@@ -1,16 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 9cfa5cdd244942ed
-Mode: full (translation review against the reviewed Finnish set; new task fy1-5-L2-08)
-Round 2
+CONTENT-HASH: 07a6184fff7386c1
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- L2-08 keeps the YO-type graph choice (Kuvaajan valinta): same four figure options, each distractor with its own misconception (rising line, (t, v) instead of (t, s), distance instead of position) and feedback that repairs it without naming the right letter in the wrong options.
-- Language: natural plain English, decimal point, consistent term "speed" with the lesson.
-- Level 2, kind tags graph and concept, and task order identical to fi; the solution has Find, Principle, Model answer and Reading the graph like the other tasks.
-- Figure descriptions give a reader who cannot see the graph the same data as the picture and do not reveal the answer.
+- exercises.json, solutions.md and answers.py diffs vs origin/main; wording of tasks and feedback, solution structure, significant figures, consistency with the Finnish fix. Changed passages read clearly for a 16-19-year-old, no new misconception or misleading feedback introduced.

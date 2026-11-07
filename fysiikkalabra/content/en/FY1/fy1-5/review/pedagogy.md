@@ -1,8 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 2d70734eb2328747
+CONTENT-HASH: 0d40c14d4544312a
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-Translation review: English is natural and keeps the teaching sequence (key idea, proportionality, model, formula, graph, units, staged example, misconception, summary, inquiry). Units and symbols as in the Finnish; no Finnish left in text or experiment names. check_i18n 0 errors for en.
+- lesson.md, inquiry.json, exit-ticket.json, figures.json, figures.py (and sim.js for fy1-5) diffs vs origin/main; wording, learner-facing feedback, notation, consistency with the Finnish fix. Changed passages read clearly for a 16-19-year-old, no new misconception or misleading feedback introduced.

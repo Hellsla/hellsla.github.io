@@ -1,15 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 59df1664b8ed5631
+CONTENT-HASH: 6e088868424da153
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- L1-09: situation first, question last as its own sentence; a level-1 concept/experiment task of five short statements, each with its own feedback that repairs the misconception.
-- Distractors keep fi's misconception targets (uncontrolled angle, one run enough because of clock resolution, failure equals no effect).
-- Solution explains the principle and judges each statement in order; can be followed by a student who could not solve it.
-- English reads naturally (independent/dependent/controlled, hand-held stopwatch, uncertainty); no Finnish left.
-- Layout of a true/false task unchanged from fi; short statements read on a 360 px screen.
+- exercises.json, solutions.md and answers.py diffs vs origin/main; wording of tasks and feedback, solution structure, significant figures, consistency with the Finnish fix. Changed passages read clearly for a 16-19-year-old, no new misconception or misleading feedback introduced.

@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 827d4b9c758f6798
+CONTENT-HASH: 772da5217571230b
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] top-390/top-1280 — the title formula is set in KaTeX serif at a slightly larger optical size than the heading font; reads clearly and is a consequence of the project-wide all-LaTeX rule, so nothing to change.
+- figures.py: velocity arrows/labels and both (t,v) lines now blue (COLD), consistent with the velocity-is-blue rule. two_planets: B line dashed ('12 7') to tell it from A
 
 ## Checked
-batch delta review: opened fy1-6-top-390 (and top-1280 for fy2-5, fy3-6); the title formula renders as KaTeX (no red source), on one block with the heading, nothing clipped, no overflow, breadcrumb legible; the rest of the lesson is unchanged by the diff.
+- lesson.md, inquiry.json, exit-ticket.json, figures.py diff vs origin/main; figures.py: velocity arrows/labels and both (t,v) lines now blue (COLD), consistent with the velocity-is-blue rule. two_planets: B line dashed ('12 7') to tell it from A; polish: the alt text does not say that B is dashed, and A/B are told apart only by the end labels and the dash (fine at 390 px, labels at line ends are unambiguous). Judged from figures.py and the regenerated lesson.md SVG, not rendered. No captures opened (diff judged from source; not rendered).

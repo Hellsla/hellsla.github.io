@@ -1,9 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 7f59e0e2f3d10af7
+CONTENT-HASH: 60df86b54c7def57
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-batch delta review: Ydinajatus now defines mittausepävarmuus as an estimate of how large the measurement error may be and says it is generally not the largest possible difference from the true value (guardrails: Measurement and data); mittausvirhe kept as the signed difference $x - x_\text{oikea}$; new caliper photo caption (reads to fractions of a millimetre, the instrument's precision affects the uncertainty) is correct and consistent with the rest of the lesson.
+- Pure terminology (virhearvio), 'vaimentaa' instead of 'kumoaa' for averaging vs random error, reference value wording; no numeric change; physics right.

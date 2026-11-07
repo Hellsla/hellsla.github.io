@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 3b1d65f1f5470788
+CONTENT-HASH: 0d40c14d4544312a
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
 
 ## Blocking
-
+- none
 
 ## Polish
-
+- none
 
 ## Checked
-- batch delta review: opened fy1-5-1280-0, fy1-5-360-0; photo loads, no clipping or horizontal overflow, credit line under the caption, alt text and caption natural English and consistent with the picture and the paragraph, no number with a unit in the new text.
+- diff of lesson.md, inquiry.json, exit-ticket.json, figures.json, figures.py, sims (fy1-5); figure changes judged from the lesson.md SVG rendered locally with KaTeX (no stale shots used); rendered motion (velocity arrow now blue, readable on white); sim.js syntax ok

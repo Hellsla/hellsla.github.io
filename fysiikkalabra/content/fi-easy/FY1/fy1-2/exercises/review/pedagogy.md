@@ -1,18 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 1376c48c80de3eac
-Mode: full (translation review against the reviewed Finnish set)
-Round 2
+CONTENT-HASH: 504b03b343c2fadf
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
 
 ## Blocking
-(none)
-
-## Fixed
-- none needed
+- none
 
 ## Polish
-(none)
+- Ei huomautettavaa. 'johdannaisyksikkö' on selitetty lauseessa (saadaan perusyksiköistä tulona ja osamääränä).
 
 ## Checked
-- L1-09 keeps the Finnish pedagogy: the stem does not name the formula, each distractor targets one unit error (product, inverse, squared time) and its feedback names it; the correct feedback does not just restate the answer.
-- Level 1, kind (concept, reasoning) and core flags identical to fi; no hint or answer leak added.
-- Clear Finnish per NOTES.md §12: short sentences, same physics as fi.
+- Pedagogy role, fi-easy: diff since origin/main of content/fi-easy/FY1/fy1-2/exercises/exercises.json, exercises/solutions.md, lessons/FY1/fy1-2/answers.py. Judged: learning path unchanged, feedback still repairs the misconception, no answer disclosed early, difficult words explained (NOTES §12), same physics as the Finnish fix.

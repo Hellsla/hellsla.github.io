@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 5d119893d96edc43
+CONTENT-HASH: 97b8d8648935b953
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
 - none
 
 ## Checked
-- batch delta review: key_concepts, reworded sentences, photo captions, objective-form and level-policy edits, chapter-reference titles judged against the guardrails and the lesson text; restyled figure lines are styling only.
+- Velocity colour changed to blue in figures.py (COLD); 'Maa vetaa raskaampaa palloa voimakkaammin' (true, cancels with inertia); acceleration wording; 29,43 m/s = 106 km/h; correct.
