@@ -268,7 +268,7 @@ Taulukon arvot ovat huoneenlämpötilassa. Jään arvo on $0\,{}^\circ\text{C}$:
 
 Säännöllisen kappaleen tilavuuden voi laskea mitoista. Kuution tilavuus on $a^3$. Suorakulmaisen särmiön tilavuus on pohjan pinta-ala kertaa korkeus. Epäsäännöllisen kappaleen tilavuus mitataan vedensiirtymällä. Upota kappale kokonaan mittalasissa olevaan veteen. Kappaleen tilavuus on mittalasin lukemien erotus $V = V_2 - V_1$.
 
-<svg data-fig="displacement" viewBox="0 0 600 372" role="img" aria-label="Periaatekuva tilavuuden mittaamisesta vedensiirtymällä. Vasemmassa mittalasissa vesi yltää merkkiin 40 ml. Kun kivi upotetaan, vesi nousee oikeassa mittalasissa merkkiin 70 ml. Kiven tilavuus on tilavuuksien erotus, 30 ml eli 30 cm³." style="max-width:100%;font-size:24px">
+<svg data-fig="displacement" viewBox="0 0 600 372" role="img" aria-label="Periaatekuva tilavuuden mittaamisesta vedensiirtymällä. Vasemmassa mittalasissa vesi yltää merkkiin 40 ml. Kun kivi upotetaan, vesi nousee oikeassa mittalasissa merkkiin 70 ml. Kiven tilavuus on lukemien erotus, 30 ml eli 30 cm³." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy17-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient></defs>
   <rect x="85" y="34" width="70" height="290" fill="#eef5f9"/>
   <rect x="87" y="212" width="66" height="110" fill="url(#fy17-water)"/>
@@ -310,13 +310,13 @@ Säännöllisen kappaleen tilavuuden voi laskea mitoista. Kuution tilavuus on $a
   <line x1="155" y1="212" x2="440" y2="212" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <line x1="415" y1="128" x2="440" y2="128" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <path d="M448,128 H456 V212 H448" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-linejoin="round"/>
-  <foreignObject x="466" y="139.5" width="60" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$\Delta V$</div></foreignObject>
+  <foreignObject x="466" y="139.5" width="130" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$V = V_2 - V_1$</div></foreignObject>
   <foreignObject x="466" y="171.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$= 30\,\text{ml}$</div></foreignObject>
   <foreignObject x="35" y="331.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$V_1 = 40\,\text{ml}$</div></foreignObject>
   <foreignObject x="295" y="331.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$V_2 = 70\,\text{ml}$</div></foreignObject>
 </svg>
 
-Mittalasin lukemassa on epävarmuutta. Sitä tulee esimerkiksi asteikon ja nestepinnan kaarevuuden lukemisesta. Kahden lukeman erotus on pienempi luku kuin lukemat itse. Erotukseen tulee kuitenkin kummankin lukeman epävarmuus. Siksi erotuksessa voi olla vähemmän merkitseviä numeroita kuin kummassakaan lukemassa. Tämä rajoittaa tiheyden tarkkuutta.
+Mittalasin lukemassa on epävarmuutta. Sitä tulee esimerkiksi siitä, että asteikko luetaan kaarevan nestepinnan kohdalta. Kahden lukeman erotus on pienempi luku kuin lukemat itse. Erotukseen tulee kuitenkin kummankin lukeman epävarmuus. Siksi erotuksessa voi olla vähemmän merkitseviä numeroita kuin kummassakaan lukemassa. Tämä rajoittaa tiheyden tarkkuutta.
 
 ### Astian massa mittauksessa
 
@@ -368,7 +368,7 @@ m &= \rho a^2 L \\
 
 <!-- vaihe -->
 
-**Järkevyys.** Palkin tilavuus on $1{,}92\,\text{dm}^3$ eli noin kaksi litraa. Saman tilavuuden vesi olisi noin $1{,}9\,\text{kg}$. Rauta on noin 7,9 kertaa vettä tiheämpää. Arvio on siis $7{,}9 \cdot 1{,}9\,\text{kg} \approx 15\,\text{kg}$. Tulos täsmää.
+**Järkevyys.** Palkin tilavuus on $1{,}92\,\text{dm}^3$ eli noin kaksi litraa. Saman tilavuuden veden massa olisi noin $1{,}9\,\text{kg}$. Rauta on noin $7{,}9$ kertaa niin tiheää kuin vesi. Arvio on siis $7{,}9 \cdot 1{,}9\,\text{kg} \approx 15\,\text{kg}$. Tulos täsmää.
 
 ## Yleinen virhekäsitys
 
@@ -376,7 +376,7 @@ Moni ajattelee, että suurempi kappale on tiheämpi, koska se on raskaampi. Isom
 
 Toinen virhe on sekoittaa yksiköt. Ajattele, että massa on grammoina mutta tilavuus kuutiometreinä. Jos luet tuloksen yksikössä $\text{kg/m}^3$, lukuarvo on tuhat kertaa liian suuri. Muunna ensin kaikki yhteen yksikköjärjestelmään. Käytä joko $\text{kg}$ ja $\text{m}^3$ tai $\text{g}$ ja $\text{cm}^3$.
 
-Kolmas virhe on ajatella, että tyhjän astian massa kuuluu nesteeseen. Vähennä se kokonaismassasta, ennen kuin lasket tiheyden.
+Kolmas virhe on unohtaa tyhjän astian massa. Jos punnitset vain kerran, vähennä astian massa kokonaismassasta ennen kuin lasket tiheyden. Jos käytät kuvaajaa, lue tiheys suoran kulmakertoimesta.
 
 ## Tiivistelmä
 

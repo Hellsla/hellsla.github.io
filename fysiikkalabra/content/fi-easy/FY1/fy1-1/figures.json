@@ -40,7 +40,7 @@
  "sumu": "sumu",
  "galaksi": "galaksi",
  "kuvakkeet eivät ole mittakaavassa": "kuvakkeet eivät ole mittakaavassa",
- "Kaaviokuva, ei mittakaavassa, neljä paneelia. Gravitaatio: Maa kiertää Aurinkoa, ja voima osoittaa Maasta kohti Aurinkoa. Sähkömagneettinen vuorovaikutus: positiivinen ydin ja negatiivinen elektroni vetävät toisiaan. Vahva vuorovaikutus: protonit ja neutronit pysyvät ytimessä, ja protonin sisällä on kolme kvarkkia. Heikko vuorovaikutus: beetahajoamisessa neutroni muuttuu protoniksi, ja syntyy elektroni ja antineutriino.": "Kaaviokuva, ei mittakaavassa, neljä paneelia. Gravitaatio: Maa kiertää Aurinkoa, ja voima osoittaa Maasta kohti Aurinkoa. Sähkömagneettinen vuorovaikutus: positiivinen ydin ja negatiivinen elektroni vetävät toisiaan. Vahva vuorovaikutus: protonit ja neutronit pysyvät ytimessä, ja protonin sisällä on kolme kvarkkia. Heikko vuorovaikutus: beetahajoamisessa neutroni muuttuu protoniksi. Samalla syntyy elektroni ja antineutriino.",
+ "Kaaviokuva, ei mittakaavassa, neljä paneelia. Gravitaatio: Maa kiertää Aurinkoa, ja voima osoittaa Maasta kohti Aurinkoa. Sähkömagneettinen vuorovaikutus: positiivinen ydin ja negatiivinen elektroni vetävät toisiaan. Vahva vuorovaikutus: protonit ja neutronit pysyvät ytimessä, ja protonin sisällä on kolme kvarkkia. Heikko vuorovaikutus: beetamiinushajoamisessa neutroni muuttuu protoniksi, ja syntyy elektroni ja antineutriino.": "Kaaviokuva, ei mittakaavassa, neljä paneelia. Gravitaatio: Maa kiertää Aurinkoa, ja voima osoittaa Maasta kohti Aurinkoa. Sähkömagneettinen vuorovaikutus: positiivinen ydin ja negatiivinen elektroni vetävät toisiaan. Vahva vuorovaikutus: protonit ja neutronit pysyvät ytimessä, ja protonin sisällä on kolme kvarkkia. Heikko vuorovaikutus: beetamiinushajoamisessa neutroni muuttuu protoniksi. Samalla syntyy elektroni ja antineutriino.",
  "gravitaatio": "gravitaatio",
  "sähkömagneettinen": "sähkömagneettinen",
  "vahva": "vahva",
@@ -49,7 +49,7 @@
  "elektroni": "elektroni",
  "atomi pysyy koossa": "atomi pysyy koossa",
  "ydin pysyy koossa": "ydin pysyy koossa",
- "beetahajoaminen": "beetahajoaminen",
+ "-hajoaminen": "-hajoaminen",
  "Kaavakuva: koon d kymmenpotenssiakseli, jolla on kaksi nimettyä kohdetta. Akseli kulkee arvosta 10 potenssiin −12 metriä arvoon 10 potenssiin 2 metriä, ja jokaisen kymmenpotenssin kohdalla on pystyviiva. Numerot on merkitty joka toisen viivan kohdalle (−12, −10, −8, …, 2). Kohteet ovat vetyatomi ja muurahainen, kumpikin viivan kohdalla, ja askelten väli on mittakaavassa.": "Kaavakuva: koon d kymmenpotenssiakseli, jolla on kaksi nimettyä kohdetta. Akseli kulkee arvosta 10 potenssiin −12 metriä arvoon 10 potenssiin 2 metriä. Jokaisen kymmenpotenssin kohdalla on pystyviiva. Numerot on merkitty joka toisen viivan kohdalle (−12, −10, −8, …, 2). Kohteet ovat vetyatomi ja muurahainen. Kumpikin on viivan kohdalla. Askelten väli on mittakaavassa.",
  "muurahainen": "muurahainen"
 }

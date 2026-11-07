@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 2f4ee739ed45e9bf
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-3 diff since the round-2 commit only)
+CONTENT-HASH: 734ea9a4523590e2
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
@@ -9,5 +9,4 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-3 diff since the ro
 - none
 
 ## Checked
-- git diff edb368de4 of the part's files (fi fy1-7 lesson): hero alt text (figures.py, figures.json, rendered aria-label) no longer names the metals, matches the Finnish fix in en and fi-easy; hook text, table note about temperature/wood (units LaTeX), second section title, density-estimate note in inquiry.
-- source diff only (text, alt text, numbers); no figure geometry or layout changed, so no new captures were opened
+- Rendered the displacement figure (fi/en/fi-easy share figures.py): new label V = V_2 - V_1 (w=130) with separate '= 30 ml' line fits, no overlap with bracket or cylinder, KaTeX renders; text diff (V = V_2 - V_1 consistent with V_1/V_2 labels, $g\,t$, Kármán wording, iceberg alt) read for notation and language.

@@ -91,7 +91,7 @@ Fysiikan kohteiden koot ovat valtavan erilaisia: protoni on noin $1{,}7\cdot10^{
 
 ### Suuruusluokka kertoo karkean koon
 
-**Suuruusluokka** on se kymmenpotenssi, joka on kymmenpotenssien akselilla lähinnä lukua. Luvun $a\cdot10^{n}$ suuruusluokka on $10^{n}$, kun $a$ on alle noin 3, ja $10^{n+1}$, kun $a$ on yli noin 3. Ihmisen pituus $1{,}7\,\text{m}$ on suuruusluokkaa $10^{0}\,\text{m}$, mutta Mount Everestin korkeus $8{,}8\cdot10^{3}\,\text{m}$ on suuruusluokkaa $10^{4}\,\text{m}$.
+**Suuruusluokka** on se kymmenpotenssi, joka on kymmenpotenssien akselilla lähinnä lukua. Luvun $a\cdot10^{n}$ suuruusluokka on $10^{n}$, kun $a<\sqrt{10}\approx3{,}16$, ja $10^{n+1}$, kun $a>\sqrt{10}$. Raja $\sqrt{10}$ on kymmenpotenssien akselilla kohtien $10^{n}$ ja $10^{n+1}$ puolivälissä. Ihmisen pituus $1{,}7\,\text{m}$ on suuruusluokkaa $10^{0}\,\text{m}$, mutta Mount Everestin korkeus $8{,}8\cdot10^{3}\,\text{m}$ on suuruusluokkaa $10^{4}\,\text{m}$.
 
 Kohteiden koot ovat pyöristettyjä arvoja: ihmiset, muurahaiset ja galaksit eivät ole kaikki samankokoisia. Siksi vertailuun riittää usein suuruusluokka, ja luvuista kannattaa kysyä, kuinka tarkkoja ne ovat.
 
@@ -109,17 +109,17 @@ Kymmenpotenssien avulla suhteen voi arvioida myös päässä. Jokainen askel kym
 
 <svg data-fig="ladder" viewBox="0 0 600 372" role="img" aria-label="Kaaviokuva, ei mittakaavassa: kuusi pylvästä, joissa koko kymmenkertaistuu jokaisella askeleella. Ensimmäinen on 10 potenssiin −15 metriä, protoni, ja viimeinen 10 potenssiin −10 metriä, vetyatomi. Askelia on viisi, joten vetyatomi on noin 10 potenssiin 5 eli satatuhatta kertaa protonia suurempi." style="max-width:100%;font-size:24px">
   <rect x="24" y="206" width="48" height="30" rx="3" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
-  <foreignObject x="3" y="169.5" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10^{-15}$</div></foreignObject>
+  <foreignObject x="0" y="169.5" width="96" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10^{-15}\,\text{m}$</div></foreignObject>
   <rect x="124" y="178" width="48" height="58" rx="3" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
-  <foreignObject x="103" y="141.5" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10^{-14}$</div></foreignObject>
+  <foreignObject x="100" y="141.5" width="96" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10^{-14}\,\text{m}$</div></foreignObject>
   <rect x="224" y="150" width="48" height="86" rx="3" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
-  <foreignObject x="203" y="113.5" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10^{-13}$</div></foreignObject>
+  <foreignObject x="200" y="113.5" width="96" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10^{-13}\,\text{m}$</div></foreignObject>
   <rect x="324" y="122" width="48" height="114" rx="3" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
-  <foreignObject x="303" y="85.5" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10^{-12}$</div></foreignObject>
+  <foreignObject x="300" y="85.5" width="96" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10^{-12}\,\text{m}$</div></foreignObject>
   <rect x="424" y="94" width="48" height="142" rx="3" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
-  <foreignObject x="403" y="57.5" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10^{-11}$</div></foreignObject>
+  <foreignObject x="400" y="57.5" width="96" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10^{-11}\,\text{m}$</div></foreignObject>
   <rect x="524" y="66" width="48" height="170" rx="3" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
-  <foreignObject x="503" y="29.5" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10^{-10}$</div></foreignObject>
+  <foreignObject x="500" y="29.5" width="96" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10^{-10}\,\text{m}$</div></foreignObject>
   <line x1="78" y1="222" x2="110" y2="222" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
   <path d="M118,222 L109,226 L109,218 Z" fill="#6b7480" stroke-linejoin="round"/>
   <foreignObject x="70" y="245.5" width="56" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\cdot 10$</div></foreignObject>
@@ -339,9 +339,9 @@ Rakenteet pysyvät koossa ja muuttuvat **vuorovaikutusten** takia. Kaikki tunnet
 - **Gravitaatio** vaikuttaa kaikkien kappaleiden välillä, joilla on massa, ja se on aina vetävä. Se pitää Kuun Maan ympärillä ja planeetat radoillaan tähtiensä ympärillä, ja se kokoaa kaasupilvistä tähtiä ja galakseja.
 - **Sähkömagneettinen vuorovaikutus** vaikuttaa sähköisesti varattujen hiukkasten välillä: erimerkkiset varaukset vetävät ja samanmerkkiset hylkivät toisiaan. Se pitää elektronit atomissa ytimen ympärillä, sitoo atomit molekyyleiksi ja aiheuttaa sähköiset ja magneettiset ilmiöt, kuten hangatun ilmapallon kyvyn vetää paperisilppuja.
 - **Vahva vuorovaikutus** sitoo kvarkit protoneiksi ja neutroneiksi. Sen jäännösvaikutus pitää protonit ja neutronit yhdessä ytimessä, vaikka protonit hylkivät toisiaan sähköisesti. Se ulottuu vain ytimen kokoiselle etäisyydelle, noin $10^{-15}\,\text{m}$.
-- **Heikko vuorovaikutus** aiheuttaa eräitä radioaktiivisia hajoamisia. Esimerkiksi **beetahajoamisessa** ytimen neutroni muuttuu protoniksi, ja ytimestä lähtee elektroni ja hiukkanen nimeltä antineutriino. Heikko vuorovaikutus on mukana myös Auringon energiantuotannossa.
+- **Heikko vuorovaikutus** aiheuttaa eräitä radioaktiivisia hajoamisia. Esimerkiksi **beetamiinushajoamisessa** ($\beta^{-}$-hajoamisessa) ytimen neutroni muuttuu protoniksi, ja ytimestä lähtee elektroni ja hiukkanen nimeltä antineutriino. Heikko vuorovaikutus on mukana myös Auringon energiantuotannossa.
 
-<svg data-fig="interactions" viewBox="0 0 600 420" role="img" aria-label="Kaaviokuva, ei mittakaavassa, neljä paneelia. Gravitaatio: Maa kiertää Aurinkoa, ja voima osoittaa Maasta kohti Aurinkoa. Sähkömagneettinen vuorovaikutus: positiivinen ydin ja negatiivinen elektroni vetävät toisiaan. Vahva vuorovaikutus: protonit ja neutronit pysyvät ytimessä, ja protonin sisällä on kolme kvarkkia. Heikko vuorovaikutus: beetahajoamisessa neutroni muuttuu protoniksi, ja syntyy elektroni ja antineutriino." style="max-width:100%;font-size:24px">
+<svg data-fig="interactions" viewBox="0 0 600 420" role="img" aria-label="Kaaviokuva, ei mittakaavassa, neljä paneelia. Gravitaatio: Maa kiertää Aurinkoa, ja voima osoittaa Maasta kohti Aurinkoa. Sähkömagneettinen vuorovaikutus: positiivinen ydin ja negatiivinen elektroni vetävät toisiaan. Vahva vuorovaikutus: protonit ja neutronit pysyvät ytimessä, ja protonin sisällä on kolme kvarkkia. Heikko vuorovaikutus: beetamiinushajoamisessa neutroni muuttuu protoniksi, ja syntyy elektroni ja antineutriino." style="max-width:100%;font-size:24px">
   <rect x="12" y="12" width="282" height="196" rx="8" fill="#ffffff" stroke="#e3dccb" stroke-width="2"/>
   <foreignObject x="26" y="19.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\text{gravitaatio}$</div></foreignObject>
   <rect x="306" y="12" width="282" height="196" rx="8" fill="#ffffff" stroke="#e3dccb" stroke-width="2"/>
@@ -400,7 +400,7 @@ Rakenteet pysyvät koossa ja muuttuvat **vuorovaikutusten** takia. Kaikki tunnet
   <foreignObject x="560" y="261.5" width="34" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{e}^-$</div></foreignObject>
   <line x1="482" y1="336" x2="528" y2="364" stroke="#6b7480" stroke-width="2" stroke-dasharray="4 3"/>
   <foreignObject x="531" y="355.5" width="30" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\bar{\nu}$</div></foreignObject>
-  <foreignObject x="349.5" y="383.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{beetahajoaminen}$</div></foreignObject>
+  <foreignObject x="362" y="383.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\beta^{-}\text{-hajoaminen}$</div></foreignObject>
 </svg>
 
 ### Mittakaava ratkaisee, mikä vuorovaikutus hallitsee

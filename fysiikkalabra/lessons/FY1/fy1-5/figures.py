@@ -67,11 +67,11 @@ def graph():
     ax = Axes(f, (96, 300), (440, 60), x=(0, 5), y=(0, 25), xticks=[1, 2, 3, 4, 5], yticks=[10, 20],
               xlabel=r"t\ (\text{s})", ylabel=r"s\ (\text{m})")
     ax.line([(0, 0), (5, 15)], COLD, 3)
-    ax.line([(0, 5), (5, 20)], HEAT, 3)
+    ax.line([(0, 5), (5, 20)], INK, 3)
     # the starting position of the upper line: a tick and ring on the s axis
     f.line(ax.X(0) - 7, ax.Y(5), ax.X(0), ax.Y(5), INK, 2)
     f.tex(ax.X(0) - 12, ax.Y(5), r"s_0", "end")
-    ax.point(0, 5, HEAT)
+    ax.point(0, 5, INK)
     # slope triangle on the lower line between t = 2 s and t = 4 s, right angle below the line
     f.line(ax.X(2), ax.Y(6), ax.X(4), ax.Y(6), MUTED, 1.5, "6 5")
     f.line(ax.X(4), ax.Y(6), ax.X(4), ax.Y(12), MUTED, 1.5, "6 5")
@@ -79,7 +79,7 @@ def graph():
     f.tex(ax.X(3), ax.Y(6) + 24, r"\Delta t = 2\,\text{s}", "middle", w=130)
     f.tex(ax.X(4) + 12, ax.Y(9), r"\Delta s = 6\,\text{m}", "start", w=130, bg=True)
     f.tex(ax.X(5) + 8, ax.Y(15), r"s = vt", "start", COLD, w=80)
-    f.tex(ax.X(5) + 8, ax.Y(20), r"s = s_0 + vt", "start", HEAT, w=140)
+    f.tex(ax.X(5) + 8, ax.Y(20), r"s = s_0 + vt", "start", INK, w=140)
     return f.svg()
 
 

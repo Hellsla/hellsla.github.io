@@ -1,12 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: bd0d2d79608aaaee
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+CONTENT-HASH: 38db144aeccae4ef
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- Järkevyys for 2,5 m/s (9 km/h): "kävelijälle hyvin reipas vauhti" is generous (9 km/h is race-walking pace); "hidas hölkkä" alone would suffice. Not an error.
 
 ## Checked
-- exercises.json, solutions.md, answers.py diff. L3-01: (150-119.0)/0.0088602 = 3498.8 d -> 3.50e3 d (3500), date June 2028 correct (2028-06-04); 1 AU ~ 113 d; extra negative-velocity remark on option B correct; Delta t / epsilon notation fine.
+- Δs = vt now used where the distance travelled is asked (5,5 · 20 = 110 m; 360/45 = 8,0 m/s; 15 · 14 = 210 m; 4500/10 = 450 s; 343 · 5,0 = 1,7 km): dropping the unstated "s0 = 0" assumption is correct, since Δs = vt needs no starting point
+- average speed = change in position / length of interval: correct for this forward-only cyclist and consistent with the solution
+- oppilas → opiskelija; L2 kärry reword keeps data (7,0 m at 2,0 s, 21 m at 6,0 s)
+- answers.py unchanged; en and fi-easy match the fi fixes
+- en: same changes as fi, meaning preserved

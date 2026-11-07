@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 2f4ee739ed45e9bf
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-3 diff since the round-2 commit only)
+CONTENT-HASH: 734ea9a4523590e2
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
@@ -9,4 +9,4 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-3 diff since the ro
 - none
 
 ## Checked
-- inquiry.json (hook no longer names metals; two-row slope caveat; stone task states 1 ml reading precision; check-c2 title), figures.py hero alt, lesson.md table note. Hook now leaves the metals open, so the prediction is not given away.
+- Diff only: figure label V = V_2 - V_1 (V_1, V_2 are labelled in the same figure; w widened, no overlap risk by source), 'lukemien erotus' in alt text, 'satoja tonneja' (675 000 kg = hundreds of tonnes, correct), worked-example reasonableness wording, third-mistake rewrite (single weighing vs graph slope, consistent in fi/en/fi-easy), iceberg alt text. Translations match the Finnish fixes.

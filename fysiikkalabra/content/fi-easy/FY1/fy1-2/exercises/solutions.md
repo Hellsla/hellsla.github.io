@@ -32,7 +32,7 @@
 **Annettu:** kuva, jossa alumiinitanko on viivaimen vieressä ja tangon päät ovat viivaimen asteikon kohdalla
 **Kysytty:** tangon pituus $l$ millimetreinä
 **Periaate:** Tanko ei ala viivaimen nollakohdasta. Siksi pituus ei ole oikean pään lukema. Pituus on päiden lukemien erotus. Suure ei muutu, kun yksikkö vaihdetaan. Senttimetrin paikalle kirjoitetaan sen arvo millimetreinä.
-**Kuvaajan lukeminen:** Vasen pää on kohdassa $x_1 = 2{,}0\,\text{cm}$ (kaksi pitkää viivaa nollasta). Oikea pää on kohdassa $x_2 = 13{,}6\,\text{cm}$ (kolmetoista pitkää viivaa ja kuusi millimetriviivaa sen jälkeen). Kumpikin pää osuu millimetriviivan kohdalle. Siksi lukemat saadaan millimetrin tarkkuudella.
+**Kuvan lukeminen:** Vasen pää on kohdassa $x_1 = 2{,}0\,\text{cm}$ (kaksi pitkää viivaa nollasta). Oikea pää on kohdassa $x_2 = 13{,}6\,\text{cm}$ (kolmetoista pitkää viivaa ja kuusi millimetriviivaa sen jälkeen). Kumpikin pää osuu millimetriviivan kohdalle. Siksi lukemat saadaan millimetrin tarkkuudella.
 **Kaava:** $l = x_2 - x_1$
 **Muunnokset:** Yksi senttimetri on kymmenen millimetriä, joten senttimetrin paikalle kirjoitetaan $10\,\text{mm}$.
 **Sijoitus:** $l = 13{,}6\,\text{cm} - 2{,}0\,\text{cm} = 11{,}6\,\text{cm} = 11{,}6\cdot10\,\text{mm} = 116\,\text{mm}$
@@ -47,7 +47,7 @@
 **Muunnokset:** Ei tarvita: molemmat halkaisijat ovat kilometreinä ja yksiköt supistuvat.
 **Sijoitus:** $N = \dfrac{1{,}392\cdot10^{6}\,\text{km}}{3474\,\text{km}}\cdot 1\,\text{px} = 400{,}69\,\text{px}$
 **Vastaus:** $400{,}7\,\text{px}$, neljä merkitsevää numeroa kuten lähtöarvoissa $1{,}392\cdot10^{6}\,\text{km}$ ja $3474\,\text{km}$.
-**Järkevyys:** Karkeasti $\dfrac{1{,}4\cdot10^{6}}{3{,}5\cdot10^{3}} = 0{,}4\cdot10^{3} = 400$. Aurinko on halkaisijaltaan noin 400 Kuuta, mikä sopii siihen, että se on paljon Kuuta suurempi.
+**Järkevyys:** Karkeasti $\dfrac{1{,}4\cdot10^{6}}{3{,}5\cdot10^{3}} = 0{,}4\cdot10^{3} = 400$. Auringon halkaisija on noin 400 Kuun halkaisijaa, mikä sopii siihen, että se on paljon Kuuta suurempi.
 
 ## fy1-2-L1-06
 **Kysytty:** mikä annetuista yksiköistä on SI-järjestelmän perusyksikkö.
@@ -112,7 +112,7 @@
 **Muunnokset:** $1\,\text{vrk} = 24\cdot 3600\,\text{s} = 86\,400\,\text{s}$. Lopuksi $1\,\text{milj. km} = 10^{6}\,\text{km}$.
 **Sijoitus:** $s = 15{,}341\,\dfrac{\text{km}}{\text{s}}\cdot 86\,400\,\text{s} = 1\,325\,462\,\text{km} = 1{,}3255\cdot10^{6}\,\text{km}$
 **Vastaus:** $1{,}3255$ milj. km, viisi merkitsevää numeroa kuten nopeudessa $15{,}341\,\text{km/s}$; vuorokauden pituus on tarkka.
-**Järkevyys:** Pyöristetyillä luvuilla $15\,\text{km/s}\cdot 9\cdot10^{4}\,\text{s} = 1{,}35\cdot10^{6}\,\text{km}$. Vuorokaudessa luotain kulkee reilun miljoonan kilometrin. Se on noin kolme kertaa Maan ja Kuun etäisyys.
+**Järkevyys:** Pyöristetyillä luvuilla $15\,\text{km/s}\cdot 9\cdot10^{4}\,\text{s} = 1{,}35\cdot10^{6}\,\text{km}$. Vuorokaudessa luotain kulkee reilun miljoonan kilometrin. Se on noin kolme ja puoli kertaa Maan ja Kuun etäisyys.
 
 ## fy1-2-L2-05
 **Annettu:** taulukosta nopeudet: pikalaiva $38{,}0$ solmua, juna $66{,}0\,\text{km/h}$, pyöräilijä $9{,}0\,\text{m/s}$ ja kalastusvene $12{,}0$ solmua; $1\,\text{solmu} = 1{,}852\,\text{km/h}$
@@ -185,11 +185,11 @@
 **Järkevyys:** Heilurin pituus on nelinkertainen ja jaksonaika kaksinkertainen, koska $\sqrt{4} = 2$. Metrin heilurin jakso on noin kaksi sekuntia, mikä sopii seinäkellon heiluriin.
 
 ## fy1-2-L3-05
-**Annettu:** taulukosta laite A: $E_\text{A} = 0{,}65\,\text{kWh}$, $P_\text{A} = 85{,}0\,\text{W}$; laite B: $E_\text{B} = 2{,}20\,\text{MJ}$, $P_\text{B} = 0{,}100\,\text{kW}$; $1\,\text{W} = 1\,\text{J/s}$
-**Kysytty:** kumpi laite toimii kauemmin ja kuinka monta tuntia kauemmin
-**Periaate:** Lukuarvoja $0{,}65$ ja $2{,}20$ ei voi verrata, koska yksiköt $\text{kWh}$ ja $\text{MJ}$ ovat eri suuria. Laite toimii ajan $t = \tfrac{E}{P}$, kunnes varastoitu energia on kulunut. Energia ja teho muunnetaan siksi yksiköihin J ja W.
+**Annettu:** taulukosta virtalähde A: $E_\text{A} = 0{,}65\,\text{kWh}$, $P_\text{A} = 85{,}0\,\text{W}$; virtalähde B: $E_\text{B} = 2{,}20\,\text{MJ}$, $P_\text{B} = 0{,}100\,\text{kW}$; $1\,\text{W} = 1\,\text{J/s}$
+**Kysytty:** kumpi virtalähde toimii kauemmin ja kuinka monta tuntia kauemmin
+**Periaate:** Lukuarvoja $0{,}65$ ja $2{,}20$ ei voi verrata, koska yksiköt $\text{kWh}$ ja $\text{MJ}$ ovat eri suuria. Virtalähde toimii ajan $t = \tfrac{E}{P}$, kunnes varastoitu energia on kulunut. Energia ja teho muunnetaan siksi yksiköihin J ja W.
 **Kaava:** $t = \dfrac{E}{P}$
 **Muunnokset:** Kilowattitunnin paikalle kirjoitetaan $1000\,\text{W}\cdot3600\,\text{s}$, eli $1\,\text{kWh} = 3{,}6\,\text{MJ}$. $E_\text{A} = 0{,}65\cdot1000\,\text{W}\cdot3600\,\text{s} = 2{,}34\cdot10^{6}\,\text{J}$, $E_\text{B} = 2{,}20\cdot10^{6}\,\text{J}$ ja $P_\text{B} = 0{,}100\cdot1000\,\text{W} = 100\,\text{W}$. Sekunnit muunnetaan tunneiksi, $1\,\text{h} = 3600\,\text{s}$.
 **Sijoitus:** $t_\text{A} = \dfrac{2{,}34\cdot10^{6}\,\text{J}}{85{,}0\,\text{W}} = 2{,}753\cdot10^{4}\,\text{s} = 7{,}647\,\text{h}$ ja $t_\text{B} = \dfrac{2{,}20\cdot10^{6}\,\text{J}}{100\,\text{W}} = 2{,}20\cdot10^{4}\,\text{s} = 6{,}111\,\text{h}$. Erotus $7{,}647\,\text{h} - 6{,}111\,\text{h} = 1{,}54\,\text{h} \approx 1{,}5\,\text{h}$
-**Vastaus:** laite A toimii kauemmin, noin $1{,}5\,\text{h}$, kaksi merkitsevää numeroa kuten energiassa $0{,}65\,\text{kWh}$. Laitteen B energia on vain $0{,}61\,\text{kWh}$, ja sen teho on suurempi. Väite ei siis ole oikein.
-**Järkevyys:** Laitteen A energia $650\,\text{Wh}$ jaettuna tehon $85\,\text{W}$ arviolla $90\,\text{W}$ antaa noin $7\,\text{h}$. Laitteen B energia on $2{,}2:3{,}6 = 0{,}61\,\text{kWh}$, ja $610\,\text{Wh} : 100\,\text{W}$ on noin $6\,\text{h}$.
+**Vastaus:** virtalähde A toimii kauemmin, noin $1{,}5\,\text{h}$, kaksi merkitsevää numeroa kuten energiassa $0{,}65\,\text{kWh}$. Virtalähteen B energia on vain $0{,}61\,\text{kWh}$, ja sen teho on suurempi. Väite ei siis ole oikein.
+**Järkevyys:** Virtalähteen A energia $650\,\text{Wh}$ jaettuna tehon $85\,\text{W}$ arviolla $90\,\text{W}$ antaa noin $7\,\text{h}$. Virtalähteen B energia on $2{,}2:3{,}6 = 0{,}61\,\text{kWh}$, ja $610\,\text{Wh} : 100\,\text{W}$ on noin $6\,\text{h}$.

@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: c21f036fe7209f89
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+CONTENT-HASH: f60c54c8378a5724
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- none beyond wording; checked units/decimal comma/\,\text notation in all changed lines ($2{,}4\,\text{t}$, $1{,}8\,\text{t}$ etc. correct).
 
 ## Checked
-- Diff since edb368de4 of: exercises.json, solutions.md, answers.py. 0.500/0.420 m/s, difference d, t2−t1 notation consistent; no plain-text units. Judged from the diff and source only; no captures opened (light mode).
+- Exercise and solution diff read for notation (decimal comma, thin-space units, \text) and readable language; no figures changed.

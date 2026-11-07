@@ -36,7 +36,7 @@
 **Conversions:** Not needed: the density is in $\text{kg/m}^3$ and the volume in $\text{m}^3$, so the mass comes out in kilograms.
 **Substitution:** $m = 2400\,\tfrac{\text{kg}}{\text{m}^3} \cdot 0.75\,\text{m}^3 = 1800\,\text{kg}$
 **Answer:** $1.8 \cdot 10^3\,\text{kg}$, two significant figures like the volume $0.75\,\text{m}^3$.
-**Reasonableness:** A cubic metre of water has a mass of $1000\,\text{kg}$ and concrete is about 2.4 times as dense, so $0.75\,\text{m}^3$ has a mass of about $0.75 \cdot 2400\,\text{kg} \approx 1800\,\text{kg}$: over a tonne, as you would expect of a concrete slab.
+**Reasonableness:** A cubic metre of water has a mass of $1000\,\text{kg}$ and concrete is about $2.4$ times as dense as water, so $1\,\text{m}^3$ of concrete is about $2.4\,\text{t}$. The slab is three quarters of a cubic metre, so its mass is about $1.8\,\text{t}$: over a tonne, as you would expect of a concrete slab.
 
 ## fy1-7-L1-05
 **Given:** mass of the block of ice $m = 36.8\,\text{kg}$ and volume $V = 0.0400\,\text{m}^3$
@@ -56,7 +56,7 @@
 **Conversions:** The density is in $\text{kg/m}^3$, so the dimensions are converted to metres: $10.0\,\text{cm} = 10.0 \cdot 0.01\,\text{m} = 0.100\,\text{m}$, $5.0\,\text{cm} = 5.0 \cdot 0.01\,\text{m} = 0.050\,\text{m}$ and $2.0\,\text{cm} = 2.0 \cdot 0.01\,\text{m} = 0.020\,\text{m}$.
 **Substitution:** $m = 19\,300\,\tfrac{\text{kg}}{\text{m}^3} \cdot 0.100\,\text{m} \cdot 0.050\,\text{m} \cdot 0.020\,\text{m} = 19\,300\,\tfrac{\text{kg}}{\text{m}^3} \cdot 1.0 \cdot 10^{-4}\,\text{m}^3 = 1.93\,\text{kg}$
 **Answer:** $1.9\,\text{kg}$, two significant figures, because the dimensions $5.0\,\text{cm}$ and $2.0\,\text{cm}$ are known to two figures.
-**Reasonableness:** The volume of the ingot is $100\,\text{cm}^3$, and the same volume of water would be $100\,\text{g}$. Gold is about 19 times as dense, so $19 \cdot 100\,\text{g} \approx 1.9\,\text{kg}$.
+**Reasonableness:** The volume of the ingot is $100\,\text{cm}^3$, and the same volume of water would have a mass of $100\,\text{g}$. Gold is about 19 times as dense, so $19 \cdot 100\,\text{g} \approx 1.9\,\text{kg}$.
 
 ## fy1-7-L2-02
 **Given:** volume of the ethanol $V = 2.5\,\text{dm}^3$ and density $\rho = 790\,\tfrac{\text{kg}}{\text{m}^3}$
@@ -98,7 +98,7 @@ $$\frac{V_\text{Al}}{V_\text{Cu}} = \frac{\rho_\text{Cu}}{\rho_\text{Al}}$$
 **Conversions:** Not needed: the densities are in the same unit and the mass $m$ cancels.
 **Substitution:** $\dfrac{V_\text{Al}}{V_\text{Cu}} = \dfrac{8960\,\tfrac{\text{kg}}{\text{m}^3}}{2700\,\tfrac{\text{kg}}{\text{m}^3}} = 3.32$
 **Answer:** $3.32$ times, three significant figures, because the densities in the table are given to three significant figures ($8.96\,\text{g/cm}^3$ and $2.70\,\text{g/cm}^3$).
-**Reasonableness:** Aluminium is less dense, so more volume of it is needed to get the same mass. With rounded numbers $3 \cdot 2700 = 8100$ and $4 \cdot 2700 = 10\,800$, so the ratio $8960 : 2700$ is between three and four, closer to three, like $3.32$.
+**Reasonableness:** Aluminium is less dense, so a greater volume of it is needed to get the same mass. Multiplying by whole numbers, $3 \cdot 2700 = 8100$ and $4 \cdot 2700 = 10\,800$, so the ratio $8960 : 2700$ is between three and four, closer to three, like $3.32$.
 
 ## fy1-7-L3-02
 **Given:** aluminium $V_1 = 100\,\text{cm}^3$, $\rho_1 = 2.70\,\tfrac{\text{g}}{\text{cm}^3}$ and iron $V_2 = 50\,\text{cm}^3$, $\rho_2 = 7.87\,\tfrac{\text{g}}{\text{cm}^3}$; the volumes add up
@@ -152,7 +152,7 @@ $$L = \frac{V}{A} = \frac{m}{\rho\,\pi r^2}$$
 **Conversions:** Not needed: the mass is in grams and the volume in cubic centimetres, like the requested unit $\text{g/cm}^3$.
 **Substitution:** $\rho = \dfrac{135\,\text{g} - 0\,\text{g}}{50.0\,\text{cm}^3 - 0\,\text{cm}^3} = 2.70\,\tfrac{\text{g}}{\text{cm}^3}$
 **Answer:** $2.7\,\tfrac{\text{g}}{\text{cm}^3}$, two significant figures, because the line is fitted by eye. A fit by eye varies, so about $2.62\text{–}2.78\,\text{g/cm}^3$ is a good answer. In the table the density of aluminium is $2.70\,\text{g/cm}^3$, so the substance is aluminium.
-**Reasonableness:** The line passes through the origin, as it should, because an object with a volume of zero has a mass of zero. Check: $27.3\,\text{g} : 10.0\,\text{cm}^3 = 2.73\,\tfrac{\text{g}}{\text{cm}^3}$ and $135.4\,\text{g} : 50.0\,\text{cm}^3 = 2.71\,\tfrac{\text{g}}{\text{cm}^3}$, so every point gives almost the same value.
+**Reasonableness:** The line was forced through the origin, so check instead that the points lie on both sides of the line. They do: two points are below the line and three above it. Check: $27.3\,\text{g} : 10.0\,\text{cm}^3 = 2.73\,\tfrac{\text{g}}{\text{cm}^3}$ and $135.4\,\text{g} : 50.0\,\text{cm}^3 = 2.71\,\tfrac{\text{g}}{\text{cm}^3}$, so every point gives almost the same value.
 
 ## fy1-7-L2-06
 **Given:** the measurement points $(V;\ m_\text{tot})$ in the table: $(20.0\,\text{cm}^3;\ 103.6\,\text{g})$, $(40.0\,\text{cm}^3;\ 121.2\,\text{g})$, $(60.0\,\text{cm}^3;\ 140.5\,\text{g})$, $(80.0\,\text{cm}^3;\ 158.9\,\text{g})$ and $(100.0\,\text{cm}^3;\ 176.8\,\text{g})$

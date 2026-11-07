@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 84947dbee0c76ca6
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+CONTENT-HASH: 1cdda49c2175b0d8
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
@@ -9,4 +9,5 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368
 - none
 
 ## Checked
-- exercises.json, solutions.md, answers.py diff: Unit wording ($20\,s$ etc.), extra feedback on the (t,v) distractor, Voyager 3500 d (3498,8) with 1 AU caveat (about 110 d), notation Δt for uncertainty. Recomputed and consistent.
+- exercises diff: units to \text, Δs = vt for distance tasks (s_0 dropped from Given, consistent with lesson), 'opiskelija', 'lukumäärään', Reasonableness unit-bearing products, 'Maa vetää sitä heikommin', Mars wording; numbers and answers unchanged, answers.py untouched.
+- Language fi: matches the Finnish fixes; fi-easy stays plain Finnish.

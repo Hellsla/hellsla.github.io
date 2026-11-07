@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 8e9f0b247c03065b
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+CONTENT-HASH: 78a3e394be6ece37
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
@@ -9,4 +9,4 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368
 - none
 
 ## Checked
-- exercises.json, solutions.md, answers.py diff: Percent task 0,500/0,420 (16 %), reaction-time remark in the ball task (k = 3,75), slope notation (s2-s1):(t2-t1), cooling-rate notation. Consistent.
+- Diff only: 'heilahdusaika' key wording, reordered car problem, cooling-rate assumption now explicit ('sama ja pysyy vakiona'), 'koordinaatit voi lukea hilaviivojen kohdalta' in the graph solution; all fair to the student and answers unchanged.

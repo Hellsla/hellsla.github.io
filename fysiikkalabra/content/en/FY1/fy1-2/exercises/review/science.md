@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: bf1ac684a0b58cd2
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+CONTENT-HASH: 6aaf52e4097358d5
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
@@ -9,4 +9,7 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368
 - none
 
 ## Checked
-- exercises.json, solutions.md, answers.py diff. L3-05: 1.536 h -> 1.5 h (0.65 kWh has two figures), tolerance covers 1.54; 384 400 km exact whole-number convention consistent with the lesson.md sentence.
+- 15 km/s * 9e4 s = 1,35e6 km = 3,5 * 3,84e5 km: 'kolmen ja puolen Maa-Kuu-etäisyyden' correct.
+- 'Laite' -> 'virtalähde' in the energy task and its solution: consistent with the task text (power banks feeding a device at the table power); t = E/P recomputed: A 0,65 kWh/85,0 W = 7,65 h, B 2,20 MJ/100 W = 6,11 h, difference 1,5 h; answer unchanged.
+- Sun/Moon: 1,4e6/3,5e3 = 400 Moon diameters, wording now compares diameters correctly; 'Kuvan lukeminen' label and table header text are cosmetic.
+- The en text says the same as the Finnish fix.

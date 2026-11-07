@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 34b61e38bb1fe753
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+CONTENT-HASH: 230907cc3cdb0470
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
 
 ## Polish
-- ei huomautettavaa
+- none beyond wording; checked units/decimal comma/\,\text notation in all changed lines ($2{,}4\,\text{t}$, $1{,}8\,\text{t}$ etc. correct).
 
 ## Checked
-- fy1-7 exercises.json, solutions.md, answers.py (diff edb368de4 jälkeen)
-- Tarkkuuslauseet (tarkat tilavuudet/massat), 4,42 g/cm^3 ja tiheysjärjestys sujuvia.
+- Exercise and solution diff read for notation (decimal comma, thin-space units, \text) and readable language; no figures changed.

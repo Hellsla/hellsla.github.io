@@ -1,13 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 544b7ae791e33883
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+CONTENT-HASH: b66beeda439758ca
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
 
 ## Polish
-- none that affect correctness
+- none
 
 ## Checked
-- diff since edb368de4 (lesson.md, inquiry.json, exit-ticket.json, figures/sim/answers): sim.js velocity arrow colour only (VEL blue), exit ratio 9,81/1,62 = 6,06, 'toiseen' reading, lesson-answers.py key
-- numbers recomputed independently in Python; physics guardrails 1-7 on the changed passages
+- title, meta, exit ticket, inquiry and lang sims.fy1-6: $v = gt$ → $v = g\,t$ only (no remaining `gt`); 1,62 · 3,0 and 9,81 · 2,0 = 19,6 m/s unchanged
+- Muunnokset sentence split (m/s because g is in m/s²): correct
+- translations carry the same notation change
+- fi-easy: same changes as fi, meaning preserved

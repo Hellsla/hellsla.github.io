@@ -279,7 +279,7 @@
 </svg>
 
 ## Ydinajatus
-**Mittaus** tarkoittaa suureen arvon määrittämistä. Arvoa verrataan yksikköön. Mittaustulos on lukuarvo ja yksikkö, esimerkiksi $2{,}43\,\text{s}$. Tulos poikkeaa yleensä vähän suureen oikeasta arvosta. Mittarin lukeminen, mittaustapa ja olosuhteet tuovat tulokseen poikkeaman. Tuloksen ja oikean arvon erotus $x - x_\text{oikea}$ on **mittausvirhe**. Jokaiseen mittaustulokseen liittyy epävarmuutta, myös taitavan mittaajan tulokseen. Oikeaa arvoa ei yleensä tunneta. Siksi ei tunneta myöskään mittausvirhettä tai sen suuruutta. Siksi tuloksen mukana ilmoitetaan **mittausepävarmuus**. Se kuvaa mittaustulokseen liittyvää epävarmuutta. Se on arvio siitä, kuinka suuri mittausvirhe voi olla. Se ei yleensä tarkoita suurinta mahdollista eroa oikeaan arvoon.
+**Mittaus** tarkoittaa suureen arvon määrittämistä. Arvoa verrataan yksikköön. Mittaustulos on lukuarvo ja yksikkö, esimerkiksi $2{,}43\,\text{s}$. Tulos poikkeaa yleensä vähän suureen oikeasta arvosta. Mittarin lukeminen, mittaustapa ja olosuhteet tuovat tulokseen poikkeaman. Tuloksen ja oikean arvon erotus $x - x_\text{oikea}$ on **mittausvirhe**. Jokaiseen mittaustulokseen liittyy epävarmuutta, myös taitavan mittaajan tulokseen. Oikeaa arvoa ei yleensä tunneta. Siksi ei tunneta myöskään mittausvirhettä tai sen suuruutta. Siksi tuloksen mukana ilmoitetaan **mittausepävarmuus**. Se on arvio siitä, kuinka suuri mittausvirhe voi olla. Se ei yleensä tarkoita suurinta mahdollista eroa oikeaan arvoon.
 
 Virheet jaetaan kolmeen lajiin: karkeaan virheeseen, satunnaisvirheeseen ja systemaattiseen virheeseen. Lajit eroavat toisistaan siinä, miten ne käyttäytyvät, kun mittaus toistetaan.
 
@@ -413,7 +413,7 @@ missä $\Delta x$ on virhearvio, $x_\text{max}$ suurin ja $x_\text{min}$ pienin 
 
 Vaihteluvälin puolikas on yksinkertainen arvio tulosten hajonnasta. Se ei ole yleinen tapa määrittää mittausepävarmuutta. Se ei paljasta systemaattista virhettä. Systemaattinen virhe siirtää kaikkia tuloksia samaan suuntaan. Jos kaikki tulokset ovat samat, hajontaa ei näy. Epävarmuus ei silti ole nolla. Silloin arvioidaan lukeman epävarmuus, kuten alla.
 
-Virhearvio pyöristetään yhteen merkitsevään numeroon. Jos sen ensimmäinen numero on 1, virhearvio pyöristetään kahteen merkitsevään numeroon. Tulos pyöristetään samaan desimaaliin: $3{,}18 \pm 0{,}12\,\text{s}$ eikä $3{,}1817 \pm 0{,}12\,\text{s}$. Näin tuloksessa ei ole numeroita, jotka virhe jo sotkee.
+Virhearvio pyöristetään yhteen merkitsevään numeroon. Jos sen ensimmäinen numero on 1, virhearvio pyöristetään kahteen merkitsevään numeroon. Tulos pyöristetään samaan desimaaliin: $3{,}18\,\text{s} \pm 0{,}12\,\text{s}$ eikä $3{,}1817\,\text{s} \pm 0{,}12\,\text{s}$. Näin tuloksessa ei ole numeroita, joihin ei voi luottaa epävarmuuden takia.
 
 Joskus mittaus tehdään vain kerran, ja arvo luetaan asteikolta. Yksinkertaisessa tilanteessa lukeman epävarmuudeksi voi arvioida esimerkiksi puolet pienimmästä asteikkovälistä $d$:
 ```latex
@@ -535,7 +535,7 @@ Oppilas mittaa kuulan vierimisajan rampilla käsikellolla kuusi kertaa. Hän saa
 </svg>
 
 ## Yleinen virhekäsitys
-Moni ajattelee, että tarkka laite tai paljon toistoja takaavat oikean tuloksen. Toistot pienentävät satunnaisvirhettä mutta eivät systemaattista virhettä. Hyvä toistettavuus ei kerro oikeellisuudesta. Toinen virhekäsitys on pitää kaikkea virhettä huolimattomuutena. Huolimattomuudesta syntyy karkea virhe. Se etsitään, ja se jätetään pois vain perustellusta ja kirjatusta syystä. Satunnaisvirhe ja systemaattinen virhe kuuluvat kuitenkin myös taitavan mittaajan tulokseen. Siksi ne arvioidaan ja ilmoitetaan. Kolmas virhekäsitys on laskea keskiarvo luvuista, jotka ovat eri yksiköissä. Tulokset pitää muuntaa ensin samaan yksikköön.
+Moni ajattelee, että tarkka laite tai paljon toistoja takaavat oikean tuloksen. Tarkkakin laite voi olla väärin säädetty. Silloin sen lukemat ovat tiiviisti ryhmässä mutta väärässä paikassa. Toistot pienentävät satunnaisvirhettä mutta eivät systemaattista virhettä. Hyvä toistettavuus ei kerro oikeellisuudesta. Toinen virhekäsitys on pitää kaikkea virhettä huolimattomuutena. Huolimattomuudesta syntyy karkea virhe. Se etsitään, ja se jätetään pois vain perustellusta ja kirjatusta syystä. Satunnaisvirhe ja systemaattinen virhe kuuluvat kuitenkin myös taitavan mittaajan tulokseen. Siksi ne arvioidaan ja ilmoitetaan. Kolmas virhekäsitys on laskea keskiarvo luvuista, jotka ovat eri yksiköissä. Tulokset pitää muuntaa ensin samaan yksikköön.
 
 ## Tiivistelmä
 - Mittausvirhe on tuloksen ja oikean arvon erotus $x - x_\text{oikea}$. Jokaiseen mittaustulokseen liittyy epävarmuutta. Virhettä ei yleensä tunneta. Sen mahdollinen suuruus arvioidaan mittausepävarmuutena, ja se ilmoitetaan tuloksen mukana.

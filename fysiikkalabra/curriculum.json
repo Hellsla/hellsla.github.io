@@ -140,7 +140,7 @@
       },
       {
         "id": "fy1-6",
-        "title": "Putoamiskiihtyvyys: $v = gt$",
+        "title": "Putoamiskiihtyvyys: $v = g\\,t$",
         "goals": [
           "Temaattinen tarkastelu: putoamiskiihtyvyyttä voidaan käsitellä (t,v)-kuvaajan lineaarisena mallina v = gt",
           "Kokeellisesti: eri massaisten kappaleiden putoamisliike"

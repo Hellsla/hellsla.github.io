@@ -1,4 +1,4 @@
-# Acceleration of free fall: $v = gt$
+# Acceleration of free fall: $v = g\,t$
 
 > **Why** did a hammer and a feather hit the Moon's surface together when the astronaut dropped them at the same time, even though on Earth a feather drifts slowly down?
 

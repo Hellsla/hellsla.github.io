@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 5f14b6e77e1df132
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+CONTENT-HASH: 56fe6daaa90aa28f
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
@@ -9,5 +9,5 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368
 - none
 
 ## Checked
-- units in LaTeX in prompts, d0 119,0 AU item (answer 3500), feedback on v-graph, Δt notation in solutions, answers.py.
-- No captures opened (light mode, judged from the diff). Fi-easy: sentences stay short and plain, notation and units in LaTeX with decimal comma, changes match the Finnish fix.
+- solutions.md: s -> \Delta s for travelled distance, dropped s_0 = 0 clauses, oppilas -> opiskelija where changed; notation consistent with lesson
+- Changes mirror the Finnish fix in fi-easy; no notation, unit or decimal-comma error introduced.

@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 7e281292c53d6b9f
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-3 diff since the round-2 commit only)
+CONTENT-HASH: 7f32c937f097b93c
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- none beyond wording; checked units/decimal comma/\,\text notation in all changed lines ($2{,}4\,\text{t}$, $1{,}8\,\text{t}$ etc. correct).
 
 ## Checked
-- git diff edb368de4 of the part's files (en fy1-7 exercises): no visual change in this part beyond answer 4.42 and the solution wording on exact values (units in LaTeX, fractions kept as before).
-- no layout-relevant change; exercises.json answer 4.4 to 4.42 and solutions.md wording only
+- Exercise and solution diff read for notation (decimal comma, thin-space units, \text) and readable language; no figures changed.

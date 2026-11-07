@@ -36,7 +36,7 @@
     {
       "id": "fy1-6-L1-05",
       "level": 1,
-      "text": "On Mars the acceleration of free fall is $3.71\\,\\text{m/s}^2$. An object falls on Mars from rest for $6.0\\,\\text{s}$ without air resistance. What is the speed of the object?",
+      "text": "On Mars the acceleration of free fall is $3.71\\,\\text{m/s}^2$. An object falls on Mars from rest for $6.0\\,\\text{s}$, and air resistance is ignored. What is the speed of the object?",
       "answer": 22.26,
       "unit": "m/s",
       "tolerance": 0.02
@@ -320,7 +320,7 @@
         },
         {
           "text": "The lighter ball is easier to set in motion, so its speed grows faster.",
-          "feedback": "It is true that a lighter object is easier to set in motion, but in free fall it is also pulled less. The overall effect cancels, and the acceleration is the same $g$."
+          "feedback": "It is true that a lighter object is easier to set in motion, but in free fall the Earth also pulls it more weakly. The overall effect cancels, and the acceleration is the same $g$."
         }
       ]
     }

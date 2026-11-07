@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 8e9f0b247c03065b
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+CONTENT-HASH: 78a3e394be6ece37
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
 
 ## Polish
-- ei huomautettavaa
+- none beyond wording; checked units/decimal comma/\,\text notation in all changed lines ($2{,}4\,\text{t}$, $1{,}8\,\text{t}$ etc. correct).
 
 ## Checked
-- fy1-8 exercises.json, solutions.md, answers.py (diff edb368de4 jälkeen)
-- 0,500/0,420 m/s -> 16 %, (s2 - s1)/(t2 - t1) -merkinnät, d ja erotus-kaavat ovat luettavia ja johdonmukaisia.
+- Exercise and solution diff read for notation (decimal comma, thin-space units, \text) and readable language; no figures changed.

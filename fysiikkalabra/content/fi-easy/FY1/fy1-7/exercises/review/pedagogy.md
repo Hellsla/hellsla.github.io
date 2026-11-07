@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: d231a9d1d2b474fc
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-3 diff since the round-2 commit only)
+CONTENT-HASH: 0d9fe729bcb84228
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
@@ -9,4 +9,4 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-3 diff since the ro
 - none
 
 ## Checked
-- exercises.json, solutions.md, answers.py: same sig-fig fix as Finnish; clear and consistent.
+- Diff only: 'luvun tiheystaulukko' added where the table is needed (helps), sinker/line wording, units 'ilmoitettu', reasonableness checks rewritten (concrete 1 m3 -> 0.75 m3 staged); graph-task check 'two points below, three above' verified against data (least-squares slope 2.705: 3 above, 2 below).

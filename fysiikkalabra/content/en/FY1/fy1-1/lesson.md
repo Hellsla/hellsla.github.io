@@ -91,7 +91,7 @@ The objects of physics come in hugely different sizes: a proton is about $1.7\cd
 
 ### Order of magnitude tells the rough size
 
-The **order of magnitude** is the power of ten that is closest to the number on the axis of powers of ten. The order of magnitude of $a\cdot10^{n}$ is $10^{n}$ when $a$ is less than about 3, and $10^{n+1}$ when $a$ is more than about 3. A person's height $1.7\,\text{m}$ is of the order $10^{0}\,\text{m}$, but the height of Mount Everest, $8.8\cdot10^{3}\,\text{m}$, is of the order $10^{4}\,\text{m}$.
+The **order of magnitude** is the power of ten that is closest to the number on the axis of powers of ten. The order of magnitude of $a\cdot10^{n}$ is $10^{n}$ when $a<\sqrt{10}\approx3.16$, and $10^{n+1}$ when $a>\sqrt{10}$. The limit $\sqrt{10}$ lies halfway between the points $10^{n}$ and $10^{n+1}$ on the axis of powers of ten. A person's height $1.7\,\text{m}$ is of the order $10^{0}\,\text{m}$, but the height of Mount Everest, $8.8\cdot10^{3}\,\text{m}$, is of the order $10^{4}\,\text{m}$.
 
 The sizes of objects are rounded values: people, ants and galaxies are not all the same size. That is why the order of magnitude is often enough for a comparison, and it is worth asking how accurate the numbers are.
 
@@ -109,17 +109,17 @@ Powers of ten let you estimate the ratio in your head. Each step from one power 
 
 <svg data-fig="ladder" viewBox="0 0 600 372" role="img" aria-label="Schematic diagram, not to scale: six bars in which the size becomes ten times larger at every step. The first is 10 to the power −15 metres, the proton, and the last 10 to the power −10 metres, the hydrogen atom. There are five steps, so the hydrogen atom is about 10 to the power 5, that is, a hundred thousand times larger than the proton." style="max-width:100%;font-size:24px">
   <rect x="24" y="206" width="48" height="30" rx="3" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
-  <foreignObject x="3" y="169.5" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10^{-15}$</div></foreignObject>
+  <foreignObject x="0" y="169.5" width="96" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10^{-15}\,\text{m}$</div></foreignObject>
   <rect x="124" y="178" width="48" height="58" rx="3" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
-  <foreignObject x="103" y="141.5" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10^{-14}$</div></foreignObject>
+  <foreignObject x="100" y="141.5" width="96" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10^{-14}\,\text{m}$</div></foreignObject>
   <rect x="224" y="150" width="48" height="86" rx="3" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
-  <foreignObject x="203" y="113.5" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10^{-13}$</div></foreignObject>
+  <foreignObject x="200" y="113.5" width="96" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10^{-13}\,\text{m}$</div></foreignObject>
   <rect x="324" y="122" width="48" height="114" rx="3" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
-  <foreignObject x="303" y="85.5" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10^{-12}$</div></foreignObject>
+  <foreignObject x="300" y="85.5" width="96" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10^{-12}\,\text{m}$</div></foreignObject>
   <rect x="424" y="94" width="48" height="142" rx="3" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
-  <foreignObject x="403" y="57.5" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10^{-11}$</div></foreignObject>
+  <foreignObject x="400" y="57.5" width="96" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10^{-11}\,\text{m}$</div></foreignObject>
   <rect x="524" y="66" width="48" height="170" rx="3" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
-  <foreignObject x="503" y="29.5" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10^{-10}$</div></foreignObject>
+  <foreignObject x="500" y="29.5" width="96" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10^{-10}\,\text{m}$</div></foreignObject>
   <line x1="78" y1="222" x2="110" y2="222" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
   <path d="M118,222 L109,226 L109,218 Z" fill="#6b7480" stroke-linejoin="round"/>
   <foreignObject x="70" y="245.5" width="56" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\cdot 10$</div></foreignObject>
@@ -339,9 +339,9 @@ Structures stay together and change because of **interactions**. All known inter
 - **Gravity** acts between all objects that have mass, and it is always attractive. It keeps the Moon around Earth and the planets in their orbits around their stars, and it gathers clouds of gas into stars and galaxies.
 - **The electromagnetic interaction** acts between electrically charged particles: opposite charges attract and like charges repel each other. It keeps the electrons around the nucleus in an atom, binds atoms into molecules and causes electric and magnetic phenomena, such as the ability of a rubbed balloon to attract bits of paper.
 - **The strong interaction** binds quarks into protons and neutrons. Its residual effect holds protons and neutrons together in a nucleus, even though the protons repel each other electrically. It reaches only a distance the size of a nucleus, about $10^{-15}\,\text{m}$.
-- **The weak interaction** causes some radioactive decays. For example, in **beta decay** a neutron in the nucleus changes into a proton, and an electron and a particle called an antineutrino leave the nucleus. The weak interaction is also involved in the Sun's energy production.
+- **The weak interaction** causes some radioactive decays. For example, in **beta-minus decay** ($\beta^{-}$ decay) a neutron in the nucleus changes into a proton, and an electron and a particle called an antineutrino leave the nucleus. The weak interaction is also involved in the Sun's energy production.
 
-<svg data-fig="interactions" viewBox="0 0 600 420" role="img" aria-label="Schematic diagram, not to scale, four panels. Gravity: Earth orbits the Sun, and the force points from Earth towards the Sun. Electromagnetic interaction: a positive nucleus and a negative electron attract each other. Strong interaction: protons and neutrons stay in the nucleus, and there are three quarks inside a proton. Weak interaction: in beta decay a neutron changes into a proton, and an electron and an antineutrino are produced." style="max-width:100%;font-size:24px">
+<svg data-fig="interactions" viewBox="0 0 600 420" role="img" aria-label="Schematic diagram, not to scale, four panels. Gravity: Earth orbits the Sun, and the force points from Earth towards the Sun. Electromagnetic interaction: a positive nucleus and a negative electron attract each other. Strong interaction: protons and neutrons stay in the nucleus, and there are three quarks inside a proton. Weak interaction: in beta-minus decay a neutron changes into a proton, and an electron and an antineutrino are produced." style="max-width:100%;font-size:24px">
   <rect x="12" y="12" width="282" height="196" rx="8" fill="#ffffff" stroke="#e3dccb" stroke-width="2"/>
   <foreignObject x="26" y="19.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\text{gravity}$</div></foreignObject>
   <rect x="306" y="12" width="282" height="196" rx="8" fill="#ffffff" stroke="#e3dccb" stroke-width="2"/>
@@ -400,7 +400,7 @@ Structures stay together and change because of **interactions**. All known inter
   <foreignObject x="560" y="261.5" width="34" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{e}^-$</div></foreignObject>
   <line x1="482" y1="336" x2="528" y2="364" stroke="#6b7480" stroke-width="2" stroke-dasharray="4 3"/>
   <foreignObject x="531" y="355.5" width="30" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\bar{\nu}$</div></foreignObject>
-  <foreignObject x="387" y="383.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{beta decay}$</div></foreignObject>
+  <foreignObject x="399.5" y="383.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\beta^{-}\text{ decay}$</div></foreignObject>
 </svg>
 
 ### Scale decides which interaction dominates

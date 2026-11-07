@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 9367757b0bad6ac3
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+CONTENT-HASH: f5d92ee6b70e1813
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
@@ -9,4 +9,5 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368
 - none
 
 ## Checked
-- lesson.md (figure move only, SVG unchanged), inquiry.json, lesson-answers.py diffs. Worked-example plot moved from before the example to the final stage, after Reasonableness: the figure no longer shows the result before the student has worked it out (staging improved). inq-check2 key 2.08 vs shown 2 %: fine.
+- Uncertainty definition now 'is an estimate' (no circularity); units added to the 3.18 s +- 0.12 s example; 'cannot be trusted because of the uncertainty' clearer than 'error blurs'; new sentence that a precise instrument can be badly adjusted strengthens the precision/accuracy contrast; repeatability definition; slider name '*Toistoja*-liukusäädin' matches the sim label. fi-easy stays simple Finnish.
+- Language version en judged from the word-level diff against origin/main; the fi, en and fi-easy changes correspond.

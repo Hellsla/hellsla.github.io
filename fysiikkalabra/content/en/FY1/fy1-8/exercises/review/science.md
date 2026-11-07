@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: c21f036fe7209f89
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+CONTENT-HASH: f60c54c8378a5724
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
@@ -9,4 +9,5 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368
 - none
 
 ## Checked
-- exercises.json, solutions.md, answers.py diff. |0.500-0.420|/0.500 = 16 %; 3.75 = 0.15/0.04 ratio; reaction-time caveat in the discussion task is sound physics; Delta-t notation clash resolved (d, t_end - t_start).
+- Cooling task: new premise 'initial rate about the same in all containers and constant' gives r = 6,0 K / 3,0 min = 2,0 K/min, fall ≥ 1,0 K / 0,050 = 20 K, t = 10 min (answer 10, unchanged); the solution's reasonableness already says real cooling slows and 10 min is a lower bound, consistent with the stated assumption.
+- Pendulum research question 'vaikuttaa heilahdusaikaan' and the 3,0 m at 1,5 m/s task reordering: no change to physics or answers.

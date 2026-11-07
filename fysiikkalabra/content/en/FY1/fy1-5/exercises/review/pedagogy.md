@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: bd0d2d79608aaaee
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+CONTENT-HASH: 38db144aeccae4ef
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
@@ -9,4 +9,5 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368
 - none
 
 ## Checked
-- exercises.json, solutions.md, answers.py diffs. Units in $...$; Voyager time task 3500 d (June 2028) with the JPL comparison; the added feedback that a negative velocity makes graph B wrong even as a velocity graph repairs the misconception; Delta t renamed for uncertainty.
+- exercises diff: units to \text, Δs = vt for distance tasks (s_0 dropped from Given, consistent with lesson), 'opiskelija', 'lukumäärään', Reasonableness unit-bearing products, 'Maa vetää sitä heikommin', Mars wording; numbers and answers unchanged, answers.py untouched.
+- Language en: matches the Finnish fixes; fi-easy stays plain Finnish.

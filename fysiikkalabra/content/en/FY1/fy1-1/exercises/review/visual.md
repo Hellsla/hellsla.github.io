@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 95ae6f4ee2245e81
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+CONTENT-HASH: cf120d397890d248
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
@@ -9,4 +9,4 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368
 - none
 
 ## Checked
-- Diff since edb368de4 of: exercises.json L3-05, solutions.md, answers.py. 142.5 AU and Sun/Earth distinction clearly worded; exact 10 min note fine. Judged from the diff and source only; no captures opened (light mode).
+- Word-diff of exercises and answers.py: units added in fy1-3 (g/cm^3, s) and fy1-2 wording (virtalähde/power bank, Kuvan/figure) are correct LaTeX/plain text as appropriate; table header "Yksikkö" now plain text, fine. No figure change.

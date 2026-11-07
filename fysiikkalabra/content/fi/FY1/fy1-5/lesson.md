@@ -281,10 +281,10 @@ missä $\Delta s$ on paikan muutos (m) ja $\Delta t$ sen aikaväli (s). Suora le
   <foreignObject x="472" y="285.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$t\ (\text{s})$</div></foreignObject>
   <foreignObject x="86" y="3.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$s\ (\text{m})$</div></foreignObject>
   <polyline points="96,300 440,156" fill="none" stroke="#1971c2" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <polyline points="96,252 440,108" fill="none" stroke="#e8590c" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="96,252 440,108" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
   <line x1="89" y1="252" x2="96" y2="252" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <foreignObject x="51" y="237.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$s_0$</div></foreignObject>
-  <circle cx="96" cy="252" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="96" cy="252" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <line x1="233.5" y1="242.5" x2="371" y2="242.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <line x1="371" y1="242.5" x2="371" y2="185" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <circle cx="233.5" cy="242.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
@@ -292,7 +292,7 @@ missä $\Delta s$ on paikan muutos (m) ja $\Delta t$ sen aikaväli (s). Suora le
   <foreignObject x="237.5" y="252" width="130" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\Delta t = 2\,\text{s}$</div></foreignObject>
   <foreignObject x="383" y="199" width="130" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\Delta s = 6\,\text{m}$</span></div></foreignObject>
   <foreignObject x="448" y="141.5" width="80" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$s = vt$</div></foreignObject>
-  <foreignObject x="448" y="93.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$s = s_0 + vt$</div></foreignObject>
+  <foreignObject x="448" y="93.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$s = s_0 + vt$</div></foreignObject>
 </svg>
 
 ### Yksiköt
@@ -342,7 +342,7 @@ s &= s_0 + v t \\
 **Järkevyys.** Nopeus $15\,\text{km/s}$ vie vuodessa noin $15\,\text{km/s} \cdot 3{,}16 \cdot 10^{7}\,\text{s} \approx 4{,}7 \cdot 10^{8}\,\text{km} \approx 3{,}2\,\text{AU}$, joten 8 vuodessa luotain etenee noin $26\,\text{AU}$ ja $119{,}0\,\text{AU} + 26\,\text{AU} \approx 145\,\text{AU}$. Sama malli antaa 15. helmikuuta 2026 etäisyydeksi Auringosta $142{,}6\,\text{AU}$. NASA/JPL:n Voyager-tilannesivu ilmoitti helmikuussa 2026 luotaimen etäisyydeksi Maasta $143{,}05\,\text{AU}$. Maa kiertää Aurinkoa, joten luotaimen etäisyys Maasta poikkeaa sen etäisyydestä Auringosta vuoden mittaan jopa noin $1\,\text{AU}$. Ero $0{,}5\,\text{AU}$ on tätä pienempi: malli ja havainto täsmäävät noin $1\,\text{AU}$:n tarkkuudella, ja tarkemmin tämä vertailu ei mallia testaa. Se on alle prosentti etäisyydestä, joten vakionopeusmalli sopii muutaman vuoden ennusteisiin.
 
 ## Yleinen virhekäsitys
-Moni ajattelee, että tasaisessa liikkeessä paikka kaksinkertaistuu, kun aika kaksinkertaistuu. Näin käy vain, jos liike alkaa nollakohdasta. Kun kärry on alussa kohdassa $s_0 = 6\,\text{m}$ ja etenee nopeudella $2{,}0\,\text{m/s}$, se on hetkellä $2{,}0\,\text{s}$ paikassa $10\,\text{m}$ ja hetkellä $4{,}0\,\text{s}$ paikassa $14\,\text{m}$, ei $20\,\text{m}$:ssä. Matka sen sijaan kaksinkertaistuu: $4\,\text{m}$ muuttuu $8\,\text{m}$:ksi. Toinen virhe on lukea nopeudeksi paikan arvo eikä paikan muutos aikaa kohti: nopeus on $\Delta s : \Delta t$, ei $s : t$, kun $s_0 \neq 0$.
+Moni ajattelee, että tasaisessa liikkeessä paikka kaksinkertaistuu, kun aika kaksinkertaistuu. Näin käy vain, jos liike alkaa nollakohdasta. Kun kärry on alussa kohdassa $s_0 = 6\,\text{m}$ ja etenee nopeudella $2{,}0\,\text{m/s}$, se on hetkellä $2{,}0\,\text{s}$ paikassa $10\,\text{m}$ ja hetkellä $4{,}0\,\text{s}$ paikassa $14\,\text{m}$, ei $20\,\text{m}$:ssä. Matka sen sijaan kaksinkertaistuu: $4{,}0\,\text{m}$ muuttuu $8{,}0\,\text{m}$:ksi. Toinen virhe on laskea nopeus paikan ja ajan osamääränä $s : t$ eikä paikan muutoksen ja aikavälin osamääränä: nopeus on $\Delta s : \Delta t$, ei $s : t$, kun $s_0 \neq 0$.
 
 ## Tiivistelmä
 - Tasaisessa liikkeessä nopeus on vakio, ja kappale kulkee yhtä pitkissä ajoissa yhtä pitkät matkat: $s = s_0 + vt$.

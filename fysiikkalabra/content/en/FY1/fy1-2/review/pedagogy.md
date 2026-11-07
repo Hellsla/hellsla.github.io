@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 3d04085ff61812ac
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-3 diff since the round-2 commit only)
+CONTENT-HASH: 6d1679b80c1fc06e
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- 'sekuntia valon matka-aikaa kuluu yhdessä katselusekunnissa' is a little clumsy Finnish but understandable.
 
 ## Checked
-- Same diff files in en; values and wording match the Finnish fix (119.0 AU, 142.2 AU, 19.7 h, ratio 142, sig-fig sentence).
+- Wording of the sim's 'seconds of light travel time per viewing second' (clearer than 'animation seconds'); 'noin' before the 1 px limit; \tfrac{s}{c} in feedback; 'close to this estimate' replaces 'same order of magnitude' (more accurate for the checked result); 'calculated for four days'; Karman label; speed label. No change to prediction/commit flow or inquiry mechanics.
+- Language version en judged from the word-level diff against origin/main; the fi, en and fi-easy changes correspond.

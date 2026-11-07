@@ -158,7 +158,7 @@ If the measurement results are plotted in a coordinate system with volume on the
 
 Every pure substance has its own density in a given state of matter and at a given temperature and pressure, so density is like a fingerprint of the substance: once the mass and volume of an object have been measured, the calculated density can be compared with table values. The conclusion is not certain. Measurement results always contain uncertainty (chapter *Measuring and the reliability of a measurement*), and some substances have almost the same density, so the result only tells you which substances the object may be made of.
 
-<figure class="unit-photo"><img src="pics/fy1/blue-iceberg.webp" alt="A pale blue iceberg with an odd shape floats on grey water under a cloudy sky."><figcaption>An iceberg in a glacier lagoon in Iceland. Ice floats in water because its density is smaller than that of water.</figcaption></figure>
+<figure class="unit-photo"><img src="pics/fy1/blue-iceberg.webp" alt="A pale blue iceberg with an odd shape floats on grey water under a partly cloudy sky."><figcaption>An iceberg in a glacier lagoon in Iceland. Ice floats in water because its density is smaller than that of water.</figcaption></figure>
 
 ## Formula: Density
 
@@ -268,7 +268,7 @@ The values in the table are at room temperature, the value for ice at $0\,{}^\ci
 
 The volume of a regular object is calculated from its dimensions: the volume of a cube is $a^3$ and the volume of a rectangular block is the area of the base times the height. The volume of an irregular object is measured by displacement of water: the object is fully submerged in the water in a measuring cylinder, and its volume is the difference of the cylinder readings, $V = V_2 - V_1$.
 
-<svg data-fig="displacement" viewBox="0 0 600 372" role="img" aria-label="Schematic figure of measuring volume by displacement of water. In the left measuring cylinder the water reaches the 40 ml mark. When a stone is lowered in, the water rises in the right measuring cylinder to the 70 ml mark. The volume of the stone is the difference of the volumes, 30 ml, that is, 30 cm³." style="max-width:100%;font-size:24px">
+<svg data-fig="displacement" viewBox="0 0 600 372" role="img" aria-label="Schematic figure of measuring volume by displacement of water. In the left measuring cylinder the water reaches the 40 ml mark. When a stone is lowered in, the water rises in the right measuring cylinder to the 70 ml mark. The volume of the stone is the difference of the readings, 30 ml, that is, 30 cm³." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy17-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient></defs>
   <rect x="85" y="34" width="70" height="290" fill="#eef5f9"/>
   <rect x="87" y="212" width="66" height="110" fill="url(#fy17-water)"/>
@@ -310,13 +310,13 @@ The volume of a regular object is calculated from its dimensions: the volume of 
   <line x1="155" y1="212" x2="440" y2="212" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <line x1="415" y1="128" x2="440" y2="128" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <path d="M448,128 H456 V212 H448" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-linejoin="round"/>
-  <foreignObject x="466" y="139.5" width="60" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$\Delta V$</div></foreignObject>
+  <foreignObject x="466" y="139.5" width="130" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$V = V_2 - V_1$</div></foreignObject>
   <foreignObject x="466" y="171.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$= 30\,\text{ml}$</div></foreignObject>
   <foreignObject x="35" y="331.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$V_1 = 40\,\text{ml}$</div></foreignObject>
   <foreignObject x="295" y="331.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$V_2 = 70\,\text{ml}$</div></foreignObject>
 </svg>
 
-A reading of a measuring cylinder contains uncertainty, for example from reading the scale and the curvature of the liquid surface. The difference of two readings is a smaller number than the readings themselves, but it includes the uncertainty of both readings, so the difference may have fewer significant figures than either reading. This limits the accuracy of the density.
+A reading of a measuring cylinder contains uncertainty, for example because the scale is read at a curved liquid surface. The difference of two readings is a smaller number than the readings themselves, but it includes the uncertainty of both readings, so the difference may have fewer significant figures than either reading. This limits the accuracy of the density.
 
 ### The mass of a container in a measurement
 
@@ -368,7 +368,7 @@ m &= \rho a^2 L \\
 
 <!-- vaihe -->
 
-**Reasonableness.** The volume of the beam is $1.92\,\text{dm}^3$, about two litres, and the same volume of water would have a mass of about $1.9\,\text{kg}$. Iron is about 7.9 times as dense as water, so the estimate is $7.9 \cdot 1.9\,\text{kg} \approx 15\,\text{kg}$. The result matches.
+**Reasonableness.** The volume of the beam is $1.92\,\text{dm}^3$, about two litres, and the same volume of water would have a mass of about $1.9\,\text{kg}$. Iron is about $7.9$ times as dense as water, so the estimate is $7.9 \cdot 1.9\,\text{kg} \approx 15\,\text{kg}$. The result matches.
 
 ## Common misconception
 
@@ -376,7 +376,7 @@ Many people think that a bigger object is denser because it is heavier. A bigger
 
 Another mistake is to mix up units. If the mass is in grams but the volume in cubic metres and the result is read in $\text{kg/m}^3$, the number is a thousand times too large. First convert everything to one system of units: either $\text{kg}$ and $\text{m}^3$ or $\text{g}$ and $\text{cm}^3$.
 
-A third mistake is to think that the mass of an empty container belongs to the liquid. It must be subtracted from the total mass before the density is calculated.
+A third mistake is to forget the mass of the empty container. From a single weighing it is subtracted before the density is calculated; from a graph the density is read from the slope.
 
 ## Summary
 

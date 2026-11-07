@@ -1,13 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 8fe1982305035989
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+CONTENT-HASH: 7df5b94dcfb37116
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- fy1-5 figure: the two lines are told apart by colour and the end labels; the alt text does not name colours, so nothing to change.
 
 ## Checked
-- lesson.md model/interpolation sentences, worked example 20 °C / 60 °C / 0 min exact values, inquiry.json prompt and graph text.
-- No captures opened (light mode, judged from the diff). Fi-easy: sentences stay short and plain, notation and units in LaTeX with decimal comma, changes match the Finnish fix.
+- lesson.md (table header units \text, one wording), inquiry.json (feedback wording, units in \text{}); no figures.py change
+- Changes mirror the Finnish fix in fi-easy; no notation, unit or decimal-comma error introduced.

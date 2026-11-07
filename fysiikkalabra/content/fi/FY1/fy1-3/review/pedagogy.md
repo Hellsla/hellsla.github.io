@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 54f5f1ae106f642a
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+CONTENT-HASH: cfa35f6889715ef5
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
 
 ## Polish
-- The example figure now sits after the last stage (Järkevyys) instead of before the stages; it works as a result figure and gives nothing away early. Fine.
+- none
 
 ## Checked
-- Lesson diff: inquiry.json answer 2,08, lesson.md (example figure moved to end of the staged example, text unchanged), lesson-answers.py.
+- Uncertainty definition now 'is an estimate' (no circularity); units added to the 3.18 s +- 0.12 s example; 'cannot be trusted because of the uncertainty' clearer than 'error blurs'; new sentence that a precise instrument can be badly adjusted strengthens the precision/accuracy contrast; repeatability definition; slider name '*Toistoja*-liukusäädin' matches the sim label. fi-easy stays simple Finnish.
+- Language version fi judged from the word-level diff against origin/main; the fi, en and fi-easy changes correspond.

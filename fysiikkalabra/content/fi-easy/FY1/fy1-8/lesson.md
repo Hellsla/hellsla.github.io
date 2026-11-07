@@ -293,7 +293,7 @@ Suunnitelma vastaa ennen mittausta näihin kysymyksiin:
 - Montako toistoa kustakin arvosta tehdään?
 - Mitä pidetään vakiona?
 
-Kokeile ensin esikokeella. Esikoe kertoo, onko mittaus ylipäätään mahdollinen. Se antaa myös karkean arvion tuloksesta.
+Kokeile suunnitelmaa ensin esikokeella. Esikoe kertoo, onko mittaus ylipäätään mahdollinen. Se antaa myös karkean arvion tuloksesta.
 
 Valitse mittausalue niin, että mitattava suure on selvästi suurempi kuin mittauksen epävarmuus (ks. kohta *Suhteellinen epävarmuus ja mittausalueen valinta*). Valitse useita arvoja ja pidä niiden välit yhtä suurina. Yksi tai kaksi pistettä ei näytä, onko riippuvuus suora.
 
@@ -323,7 +323,7 @@ Kirjaa lukemat sellaisenaan. Silloin kirjaus pysyy objektiivisena eli ei muutu o
 4. pohdinta: virhelähteet ja se, mitä seuraavalla kerralla tehtäisiin toisin
 5. johtopäätös: vastaus tutkimuskysymykseen ja se, tukevatko tulokset hypoteesia.
 
-Johtopäätös on vain niin vahva kuin aineisto. Jos mittaukset osuvat epävarmuuden sisällä ennusteeseen, hypoteesi on saanut tukea. Sitä ei silti ole todistettu.
+Johtopäätös on vain niin vahva kuin aineisto. Jos mittaukset vastaavat ennustetta epävarmuuden rajoissa, hypoteesi on saanut tukea. Sitä ei silti ole todistettu.
 
 ## Kaava: Suhteellinen epävarmuus ja mittausalueen valinta
 Käsin mitatun ajan epävarmuus $\Delta t$ johtuu pääosin reaktioajasta. Se on lähes sama lyhyessä ja pitkässä mittauksessa. Siksi mittauksen laatua kuvaa **suhteellinen epävarmuus**. Se tarkoittaa epävarmuutta suhteessa mitattuun arvoon. Suhteellinen epävarmuus saa olla enintään $\varepsilon_\text{max}$. Silloin mitattavan ajan pitää olla vähintään
@@ -383,7 +383,7 @@ missä $\varepsilon$ on suhteellinen epävarmuus (ilmoitetaan usein prosentteina
 Tarvittava matka saadaan tasaisen liikkeen mallista $s = vt$. Jos mittaus tehdään usealla matkalla, mittauspisteisiin sovitetaan suora (luku *Graafinen esitys ja suoran sovittaminen*). Aika $t$ on vaaka-akselilla ja matka $s$ pystyakselilla. Silloin suoran kulmakerroin on nopeus $v$. Lyhin kelvollinen matka on se, jolla suhteellinen epävarmuus vielä pysyy valitussa rajassa $\varepsilon_\text{max}$. Lyhyemmällä matkalla suhteellinen epävarmuus ylittää tämän rajan. Silloin tulos on liian epätarkka.
 
 ## Esimerkki
-Oppilaat tutkivat leluauton liikettä. Esikokeessa auton nopeus on noin $0{,}42\,\text{m/s}$. Aika mitataan käsikellolla. Ajanoton epävarmuus on $\Delta t = 0{,}2\,\text{s}$. Mittauksen suhteellinen epävarmuus saa olla enintään $5{,}0\,\%$. Kuinka pitkä matka auton pitää vähintään kulkea?
+Oppilaat tutkivat leluauton liikettä. Esikokeessa auton nopeus on noin $0{,}42\,\text{m/s}$. Aika mitataan käsikellolla. Ajanoton epävarmuus on $\Delta t = 0{,}2\,\text{s}$. Ajanmittauksen suhteellinen epävarmuus saa olla enintään $5{,}0\,\%$. Kuinka pitkä matka auton pitää vähintään kulkea?
 
 <!-- vaihe -->
 

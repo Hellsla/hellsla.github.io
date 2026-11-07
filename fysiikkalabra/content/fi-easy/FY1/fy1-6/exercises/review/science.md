@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 064ca5aebc6ae5b8
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 36fadfc94d9365f2
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
@@ -9,4 +9,9 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since 
 - none
 
 ## Checked
-- Light-gate wording now exact (time midpoint -> v equals mean velocity, true for constant a); recomputed 2,00/9,81=0,204 s, 4,50/9,81=0,459 s, diff 0,255 s; ratio 1,0 explained by v=gt; air drag wording; correct.
+- L1 Mars: "ilmanvastus jätetään huomiotta" states the model condition; 3,71 · 6,0 = 22 m/s unchanged
+- L2-08 reason feedback "Maa myös vetää sitä heikommin": correct (weight ∝ m, inertia ∝ m, a = g); the correct option and other feedback unchanged
+- planet B: readings at grid crossings; removal of the 3 % sentence leaves the tolerance in exercises.json unchanged
+- hammer/feather Kysytty now allows "same time": correct, not leading
+- Kaava lines: duplicate formula removed, no content change; answers.py unchanged
+- fi-easy: same changes as fi, meaning preserved

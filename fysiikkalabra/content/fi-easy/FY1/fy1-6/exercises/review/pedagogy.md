@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 064ca5aebc6ae5b8
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 36fadfc94d9365f2
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
 
 ## Polish
-- Ei huomautettavaa. Valoporttitehtävän 'ajallisesti puolivälissä... nopeus on yhtä suuri kuin keskinopeus' on perusteltu ja selkeä.
+- none
 
 ## Checked
-- Pedagogy role, fi-easy: diff since origin/main of content/fi-easy/FY1/fy1-6/exercises/exercises.json, exercises/solutions.md, lessons/FY1/fy1-6/answers.py. Judged: learning path unchanged, feedback still repairs the misconception, no answer disclosed early, difficult words explained (NOTES §12), same physics as the Finnish fix.
+- exercises diff: Mars wording 'ilmanvastus jätetään huomiotta', feedback 'Maa vetää sitä heikommin' (context Earth, correct), 'Kaava' lines no longer repeat the formula, grid-reading note rewritten ('ruudukon risteyksissä, joten ne ovat tarkkoja'); answers and levels unchanged.
+- Language fi-easy: matches the Finnish fixes; fi-easy stays plain Finnish.

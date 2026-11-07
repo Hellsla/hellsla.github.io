@@ -1,13 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 1bd8250b92e55c2c
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+CONTENT-HASH: 615bdc9d60ae766e
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
 
 ## Polish
-- L3-03: a zero error of 0,6 mm in a calliper is on the large side but plausible with dirt between the jaws, as the text says.
+- none
 
 ## Checked
-- diff exercises.json, solutions.md, answers.py (L1-02 new numbers, L3-03 new readings).
-- Recomputed L1-02: 36,4 g − 0,9 g = 35,5 g (key 35.5). L3-03: Σ = 40,30 cm, mean 8,06 cm, Δx_sys = 0,06 cm (key 0.06); half-range 0,025 ≈ 0,03 cm ≈ half of 0,06; corrected 7,98–8,03 cm. All right.
+- Pendulum: 0,2 s/(13*1,5 s) = 1,03 % > 1 %, 0,2/(14*1,5) = 0,95 %, single swing 13,3 % ~ 13 %: units added, numbers right, '~' is right where '=' was not.
+- Ruler vs calliper: 0,5 mm : 0,005 mm = 100; new reason (same half-interval rule, so the ratio is exact) is correct and replaces a misplaced sig-fig remark.
+- Stopwatch delays: error is one third of the starting delay, so 'cancel for the most part' is more accurate than 'almost completely'.
+- Scale offset task text and density values with units: data and answers unchanged.

@@ -247,7 +247,7 @@
           "feedback": "Molemmat yksiköt kelpaavat, kunhan ne ovat johdonmukaiset: $2700\\,\\text{kg/m}^3 = 2{,}70\\,\\text{g/cm}^3$. Virhe syntyy vasta, kun tiheyden ja tilavuuden yksiköt ovat eri järjestelmistä."
         },
         {
-          "text": "Laskussa ei ole virhettä. Palan massa on todella tuhansia kiloja.",
+          "text": "Laskussa ei ole virhettä. Palan massa on todella satoja tonneja.",
           "feedback": "Arvioi tulos. Tilavuus $250\\,\\text{cm}^3$ on neljännes litraa, joten pala on kämmenen kokoinen. Vettä sen verran olisi $250\\,\\text{g}$. Alumiini on 2,7-kertaisen tiheää, joten massa on noin $0{,}7\\,\\text{kg}$."
         }
       ]
@@ -379,7 +379,7 @@
         "Mainitsen mittausepävarmuuden: tulos poikkeaa taulukkoarvosta hieman, ja tilavuuden mittaus rajoittaa tarkkuutta.",
         "Mainitsen, että eri aineilla voi olla lähes sama tiheys, tai että pala voi olla seos."
       ],
-      "model": "Tiheys $\\rho = m : V$ on aineen ominaisuus. Saman aineen suuri ja pieni pala antavat saman tuloksen. Siksi mitattua tiheyttä voi verrata taulukkoarvoihin. Tulos $8{,}9\\,\\text{g/cm}^3$ on hyvin lähellä kuparin arvoa $8{,}96\\,\\text{g/cm}^3$, joten kupari on todennäköinen. Päätelmä ei ole varma. Mittaustuloksissa on aina epävarmuutta, erityisesti tilavuudessa. Lisäksi muiden aineiden tai seosten tiheys voi olla lähellä samaa arvoa. Varmuutta lisäävät toiset mittaukset, kuten väri tai magneettisuus."
+      "model": "Tiheys $\\rho = m : V$ on aineen ominaisuus. Saman aineen suuri ja pieni pala antavat saman tuloksen. Siksi mitattua tiheyttä voi verrata taulukkoarvoihin. Tulos $8{,}9\\,\\text{g/cm}^3$ on hyvin lähellä kuparin arvoa $8{,}96\\,\\text{g/cm}^3$, joten kupari on todennäköinen. Päätelmä ei ole varma. Mittaustuloksissa on aina epävarmuutta, erityisesti tilavuudessa. Lisäksi muiden aineiden tai seosten tiheys voi olla lähellä samaa arvoa. Varmuutta lisäävät muut havainnot, kuten väri tai magneettisuus. Esimerkiksi nikkelin tiheys ($8{,}91\\,\\text{g/cm}^3$) on lähes sama kuin kuparin tiheys. Nikkeli on kuitenkin magneettinen, eli magneetti vetää sitä puoleensa."
     },
     {
       "id": "lahtolippu",

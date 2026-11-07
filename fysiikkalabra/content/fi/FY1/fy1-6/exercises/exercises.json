@@ -36,7 +36,7 @@
     {
       "id": "fy1-6-L1-05",
       "level": 1,
-      "text": "Marsissa putoamiskiihtyvyys on $3{,}71\\,\\text{m/s}^2$. Kappale putoaa Marsissa levosta $6{,}0\\,\\text{s}$ ilman ilmanvastusta. Mikä on kappaleen nopeus?",
+      "text": "Marsissa putoamiskiihtyvyys on $3{,}71\\,\\text{m/s}^2$. Kappale putoaa Marsissa levosta $6{,}0\\,\\text{s}$, ja ilmanvastus jätetään huomiotta. Mikä on kappaleen nopeus?",
       "answer": 22.26,
       "unit": "m/s",
       "tolerance": 0.02
@@ -320,7 +320,7 @@
         },
         {
           "text": "Kevyempi pallo on helpompi saada liikkeelle, joten sen nopeus kasvaa nopeammin.",
-          "feedback": "Kevyemmän kappaleen liikkeelle saaminen on kyllä helpompaa, mutta vapaassa pudotuksessa siihen vaikuttaa myös vähemmän vetoa. Kokonaisvaikutus kumoutuu, ja kiihtyvyys on sama $g$."
+          "feedback": "Kevyemmän kappaleen liikkeelle saaminen on kyllä helpompaa, mutta vapaassa pudotuksessa Maa myös vetää sitä heikommin. Kokonaisvaikutus kumoutuu, ja kiihtyvyys on sama $g$."
         }
       ]
     }

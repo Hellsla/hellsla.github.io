@@ -105,7 +105,7 @@
     {
       "id": "fy1-7-L1-08",
       "level": 1,
-      "text": "The volume of a lead sinker for a fishing hook is $5.00\\,\\text{cm}^3$. The density of lead is $11.3\\,\\text{g/cm}^3$. What is the mass of the sinker? Give your answer in grams.",
+      "text": "The volume of a lead sinker for a fishing line is $5.00\\,\\text{cm}^3$. The density of lead is $11.3\\,\\text{g/cm}^3$. What is the mass of the sinker? Give your answer in grams.",
       "kind": [
         "model"
       ],
@@ -152,7 +152,7 @@
       "id": "fy1-7-L2-05",
       "level": 2,
       "core": true,
-      "text": "Objects of different sizes were made of a uniform metal, and the volume and mass of each were measured. Draw a $(V,m)$ graph of the measurement points and fit a straight line through the origin to the points. What is the density of the substance in $\\text{g/cm}^3$? Which substance is it? Use the table from the lesson.",
+      "text": "Objects of different sizes were made of a uniform metal, and the volume and mass of each were measured. Draw a $(V,m)$ graph of the measurement points and fit a straight line through the origin to the points. What is the density of the substance in $\\text{g/cm}^3$? Which substance is it? Use the density table of the chapter.",
       "kind": [
         "data",
         "graph"
@@ -248,7 +248,7 @@
     {
       "id": "fy1-7-L2-08",
       "level": 2,
-      "text": "The masses and volumes of four unknown solid objects have been measured in different units.\n\nObject A: mass $135\\,\\text{g}$, volume $50\\,\\text{cm}^3$\n\nObject B: mass $0.36\\,\\text{kg}$, volume $0.40\\,\\text{dm}^3$\n\nObject C: mass $4.5\\,\\text{kg}$, volume $500\\,\\text{cm}^3$\n\nObject D: mass $120\\,\\text{g}$, volume $100\\,\\text{ml}$\n\nIn which order are the objects by density, from smallest to largest?",
+      "text": "The masses and volumes of four unknown solid objects are given in different units.\n\nObject A: mass $135\\,\\text{g}$, volume $50\\,\\text{cm}^3$\n\nObject B: mass $0.36\\,\\text{kg}$, volume $0.40\\,\\text{dm}^3$\n\nObject C: mass $4.5\\,\\text{kg}$, volume $500\\,\\text{cm}^3$\n\nObject D: mass $120\\,\\text{g}$, volume $100\\,\\text{ml}$\n\nIn which order are the objects by density, from smallest to largest?",
       "kind": [
         "model",
         "reasoning"
@@ -285,7 +285,7 @@
     {
       "id": "fy1-7-L3-02",
       "level": 3,
-      "text": "An object is made by casting together $100\\,\\text{cm}^3$ of aluminium and $50\\,\\text{cm}^3$ of iron. The volumes are assumed to add up. What is the average density of the object? Give your answer in $\\text{g/cm}^3$.",
+      "text": "An object is made by casting together $100\\,\\text{cm}^3$ of aluminium and $50\\,\\text{cm}^3$ of iron. The volumes are assumed to add up. What is the average density of the object? Use the density table of the chapter. Give your answer in $\\text{g/cm}^3$.",
       "answer": 4.42,
       "unit": "g/cm³",
       "tolerance": 0.02
@@ -293,7 +293,7 @@
     {
       "id": "fy1-7-L3-03",
       "level": 3,
-      "text": "A round copper wire has a diameter of $1.0\\,\\text{mm}$ and a mass of $0.50\\,\\text{kg}$. How long is the wire? The cross-section of the wire is a circle with area $\\pi r^2$, and the volume of the wire is the area times the length.",
+      "text": "A round copper wire has a diameter of $1.0\\,\\text{mm}$ and a mass of $0.50\\,\\text{kg}$. How long is the wire? The cross-section of the wire is a circle with area $\\pi r^2$, and the volume of the wire is the area times the length. Use the density table of the chapter.",
       "answer": 71,
       "unit": "m",
       "tolerance": 0.02
@@ -314,7 +314,7 @@
     {
       "id": "fy1-7-L3-05",
       "level": 3,
-      "text": "An alloy object is cast from copper and aluminium. Its volume is $100\\,\\text{cm}^3$ and its mass is $520\\,\\text{g}$. The volumes are assumed to add up. How many cubic centimetres of copper does the object contain? Use the densities in the table from the lesson. Also justify which metal there is more of by volume and which by mass.",
+      "text": "An alloy object is cast from copper and aluminium. Its volume is $100\\,\\text{cm}^3$ and its mass is $520\\,\\text{g}$. The volumes are assumed to add up. How many cubic centimetres of copper does the object contain? Use the densities in the density table of the chapter. Also justify which metal there is more of by volume and which by mass.",
       "kind": [
         "model",
         "reasoning"

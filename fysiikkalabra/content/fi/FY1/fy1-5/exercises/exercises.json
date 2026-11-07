@@ -38,7 +38,7 @@
     {
       "id": "fy1-5-L1-05",
       "level": 1,
-      "text": "Tasaisesti liikkuvan kärryn paikka lähtöpisteestä mitattuna on hetkellä $2{,}0\\,\\text{s}$ kohdassa $7{,}0\\,\\text{m}$ ja hetkellä $6{,}0\\,\\text{s}$ kohdassa $21\\,\\text{m}$. Laske kärryn nopeus paikan muutoksen ja aikavälin avulla.",
+      "text": "Tasaisesti liikkuva kärry on hetkellä $2{,}0\\,\\text{s}$ kohdassa $7{,}0\\,\\text{m}$ lähtöpisteestä mitattuna ja hetkellä $6{,}0\\,\\text{s}$ kohdassa $21\\,\\text{m}$. Laske kärryn nopeus paikan muutoksen ja aikavälin avulla.",
       "answer": 3.5,
       "unit": "m/s",
       "tolerance": 0.02
@@ -180,7 +180,7 @@
       "id": "fy1-5-L2-06",
       "level": 2,
       "core": true,
-      "text": "Kärry liikkuu tasaisesti radalla. Se on alussa kohdassa $s_0 = 8{,}0\\,\\text{m}$, ja hetkellä $2{,}0\\,\\text{s}$ se on kohdassa $11\\,\\text{m}$. Oppilas päättelee: ”Kun aika kolminkertaistuu $6{,}0\\,\\text{s}$:iin, paikka kolminkertaistuu, joten kärry on silloin kohdassa $33\\,\\text{m}$.” Etsi oppilaan virhe ja laske kärryn oikea paikka hetkellä $6{,}0\\,\\text{s}$.",
+      "text": "Kärry liikkuu tasaisesti radalla. Se on alussa kohdassa $s_0 = 8{,}0\\,\\text{m}$, ja hetkellä $2{,}0\\,\\text{s}$ se on kohdassa $11\\,\\text{m}$. Opiskelija päättelee: ”Kun aika kolminkertaistuu $6{,}0\\,\\text{s}$:iin, paikka kolminkertaistuu, joten kärry on silloin kohdassa $33\\,\\text{m}$.” Etsi opiskelijan virhe ja laske kärryn oikea paikka hetkellä $6{,}0\\,\\text{s}$.",
       "kind": [
         "error",
         "model"
@@ -265,7 +265,7 @@
     {
       "id": "fy1-5-L3-04",
       "level": 3,
-      "text": "Pyöräilijän paikka $s$ radan alusta mitattiin videoanalyysillä ajan $t$ funktiona. Piirrä pisteistä kuvaaja.\n\nPyöräilijän nopeus muuttuu kesken matkan, joten liikettä ei voi mallintaa yhdellä suoralla. Etsi taulukosta hetki, jolloin nopeus muuttuu, ja mallinna liike kahtena tasaisena osana.\n\nLaske mallin avulla pyöräilijän keskinopeus aikavälillä $5{,}0\\text{–}35\\,\\text{s}$, kun keskinopeus on aikavälillä kuljettu matka jaettuna aikavälin pituudella. Hetkeä $35\\,\\text{s}$ ei ole taulukossa. Miksi keskinopeus ei ole osien nopeuksien keskiarvo?",
+      "text": "Pyöräilijän paikka $s$ radan alusta mitattiin videoanalyysillä ajan $t$ funktiona. Piirrä pisteistä kuvaaja.\n\nPyöräilijän nopeus muuttuu kesken matkan, joten liikettä ei voi mallintaa yhdellä suoralla. Etsi taulukosta hetki, jolloin nopeus muuttuu, ja mallinna liike kahtena tasaisena osana.\n\nLaske mallin avulla pyöräilijän keskinopeus aikavälillä $5{,}0\\text{–}35\\,\\text{s}$, kun keskinopeus on paikan muutos jaettuna aikavälin pituudella. Hetkeä $35\\,\\text{s}$ ei ole taulukossa. Miksi keskinopeus ei ole osien nopeuksien keskiarvo?",
       "kind": [
         "data",
         "graph",

@@ -24,10 +24,10 @@
   "note": "main button Käynnistä first, then Alusta; DOM order canvas, controls, readout"
  },
  {
-  "expr": "(() => { const L=document.querySelectorAll('#sim-root label'); const t=[...L].map(x=>simText(x)); return L.length===4 && /^Alkupaikka \\$s_0 = 0\\\\,\\\\text\\{m\\}\\$/.test(t[0]) && /^Nopeus \\$v = 2\\{,\\}0\\\\,\\\\text\\{m\\/s\\}\\$/.test(t[1]) && /^Hetki \\$t = 0\\{,\\}0\\\\,\\\\text\\{s\\}\\$/.test(t[2]) && t[3].startsWith('Nopeus (toisto)') ? 1 : 0 })()",
+  "expr": "(() => { const L=document.querySelectorAll('#sim-root label'); const t=[...L].map(x=>simText(x)); return L.length===4 && /^Alkupaikka \\$s_0 = 0\\\\,\\\\text\\{m\\}\\$/.test(t[0]) && /^Nopeus \\$v = 2\\{,\\}0\\\\,\\\\text\\{m\\/s\\}\\$/.test(t[1]) && /^Hetki \\$t = 0\\{,\\}0\\\\,\\\\text\\{s\\}\\$/.test(t[2]) && t[3].startsWith('Toistonopeus') ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
-  "note": "four labelled controls with units: Alkupaikka s_0 (m), Nopeus v (m/s), Hetki t (s), Nopeus (toisto)"
+  "note": "four labelled controls with units: Alkupaikka s_0 (m), Nopeus v (m/s), Hetki t (s), Toistonopeus"
  },
  {
   "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",

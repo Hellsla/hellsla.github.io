@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 1a715cec255674d5
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the koe/sovella copy-edit diff only)
+CONTENT-HASH: aa068083a3ebaaa4
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
@@ -9,6 +9,4 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the koe/sovella copy-edit
 - none
 
 ## Checked
-- Diff of content/en/FY1/sovella (solutions.md, tasks.json) read; no figures regenerated, so no captures opened (source-level visual judgement only).
-- Changed maths: $8\,\text{s}$ with thin space and upright unit, $1{,}6\,\text{s}$ and $7{,}8\,\text{m}$ unchanged in form; decimal comma/point correct for the language; no layout-relevant change (no figures, alt texts, tables or headings touched).
-- Wording edits (rampin/ramppia alas, grammar fixes) read fluently; fi-easy sentences stay short.
+- Opened s1.png (fy1-s1 fi render): 'ramppi' label sits above the ramp points between the 0,32 m guide and the 0,4 s point, v-formula in the lower right clear of the data and the t = 2,0 s guide, axes legible; en/fi-easy use the same coordinates with shorter/equal-width labels (diff of foreignObject positions read). Model-answer wording diffs read.

@@ -1,13 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: a3b1d3812f9b2755
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 7133008c696a5110
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
 
 ## Polish
-- lesson.md (Planckin pituus): 'kvanttigravitaation vaikutukset' on selittämätön vaikea sana (NOTES §12 kohta 3). Lisää esim. '(kvanttigravitaatio on teoria, joka yhdistää kvanttifysiikan ja painovoiman)' tai sano 'nykyiset teoriat eivät enää toimi'.
-- lesson.md: 'tässä kokonaisluku, koska $(-35+27)/2=-4$' (tehtävä 1-8 malli) on hieman töksähtävä; riittäisi 'tulos on kokonaisluku: $(-35+27)/2=-4$'.
+- fi-easy: the sqrt(10) sentence is slightly heavy for the easy level but the earlier 'noin 3' is kept in spirit (3,16) and the example 170 stays; acceptable.
 
 ## Checked
-- Pedagogy role, fi-easy: diff since origin/main of content/fi-easy/FY1/fy1-1/lesson.md, inquiry.json, exit-ticket.json, figures.json; lessons/FY1/fy1-1/figures.py. Judged: learning path unchanged, feedback still repairs the misconception, no answer disclosed early, difficult words explained (NOTES §12), same physics as the Finnish fix.
+- Suuruusluokka rule a<sqrt(10)~3.16 with 'halfway on the power-of-ten axis' (correct: log midpoint) and consistent across fi/en/fi-easy; beta-minus naming and beta^- label in feedback, glossary, figure and alt text; axis labels with unit m (width 96, no overlap); 'Toistonopeus'/'Replay speed', v=g\,t, Karman-line label; no learning-path change.
+- Language version fi-easy judged from the word-level diff against origin/main; the fi, en and fi-easy changes correspond.

@@ -281,10 +281,10 @@ where $\Delta s$ is the change in position (m) and $\Delta t$ is its time interv
   <foreignObject x="472" y="285.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$t\ (\text{s})$</div></foreignObject>
   <foreignObject x="86" y="3.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$s\ (\text{m})$</div></foreignObject>
   <polyline points="96,300 440,156" fill="none" stroke="#1971c2" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <polyline points="96,252 440,108" fill="none" stroke="#e8590c" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="96,252 440,108" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
   <line x1="89" y1="252" x2="96" y2="252" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <foreignObject x="51" y="237.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$s_0$</div></foreignObject>
-  <circle cx="96" cy="252" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="96" cy="252" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <line x1="233.5" y1="242.5" x2="371" y2="242.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <line x1="371" y1="242.5" x2="371" y2="185" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <circle cx="233.5" cy="242.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
@@ -292,7 +292,7 @@ where $\Delta s$ is the change in position (m) and $\Delta t$ is its time interv
   <foreignObject x="237.5" y="252" width="130" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\Delta t = 2\,\text{s}$</div></foreignObject>
   <foreignObject x="383" y="199" width="130" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\Delta s = 6\,\text{m}$</span></div></foreignObject>
   <foreignObject x="448" y="141.5" width="80" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$s = vt$</div></foreignObject>
-  <foreignObject x="448" y="93.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$s = s_0 + vt$</div></foreignObject>
+  <foreignObject x="448" y="93.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$s = s_0 + vt$</div></foreignObject>
 </svg>
 
 ### Units
@@ -342,7 +342,7 @@ s &= s_0 + v t \\
 **Reasonableness.** A speed of $15\,\text{km/s}$ covers in a year about $15\,\text{km/s} \cdot 3.16 \cdot 10^{7}\,\text{s} \approx 4.7 \cdot 10^{8}\,\text{km} \approx 3.2\,\text{AU}$, so in 8 years the probe advances about $26\,\text{AU}$ and $119.0\,\text{AU} + 26\,\text{AU} \approx 145\,\text{AU}$. For 15 February 2026 the same model gives a distance from the Sun of $142.6\,\text{AU}$. The NASA/JPL Voyager mission status page gave the probe's distance from the Earth in February 2026 as $143.05\,\text{AU}$. The Earth orbits the Sun, so the probe's distance from the Earth differs from its distance from the Sun by up to about $1\,\text{AU}$ over the year. The difference of $0.5\,\text{AU}$ is smaller than this: the model and the observation agree to within about $1\,\text{AU}$, and this comparison cannot test the model more precisely. That is less than one percent of the distance, so the constant-speed model suits predictions over a few years.
 
 ## Common misconception
-Many people think that in uniform motion the position doubles when the time doubles. This happens only if the motion starts from the zero point. When a trolley starts at $s_0 = 6\,\text{m}$ and moves at $2.0\,\text{m/s}$, it is at $10\,\text{m}$ at $2.0\,\text{s}$ and at $14\,\text{m}$ at $4.0\,\text{s}$, not at $20\,\text{m}$. The distance, however, does double: $4\,\text{m}$ becomes $8\,\text{m}$. Another mistake is to read the value of the position as the speed instead of the change in position per unit of time: the speed is $\Delta s : \Delta t$, not $s : t$, when $s_0 \neq 0$.
+Many people think that in uniform motion the position doubles when the time doubles. This happens only if the motion starts from the zero point. When a trolley starts at $s_0 = 6\,\text{m}$ and moves at $2.0\,\text{m/s}$, it is at $10\,\text{m}$ at $2.0\,\text{s}$ and at $14\,\text{m}$ at $4.0\,\text{s}$, not at $20\,\text{m}$. The distance, however, does double: $4.0\,\text{m}$ becomes $8.0\,\text{m}$. Another mistake is to calculate the speed as the quotient of position and time $s : t$ instead of the quotient of the change in position and the time interval: the speed is $\Delta s : \Delta t$, not $s : t$, when $s_0 \neq 0$.
 
 ## Summary
 - In uniform motion the speed is constant, and the object travels equal distances in equal intervals of time: $s = s_0 + vt$.

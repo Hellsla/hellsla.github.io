@@ -265,7 +265,7 @@
     {
       "id": "fy1-5-L3-04",
       "level": 3,
-      "text": "The position $s$ of a cyclist from the start of the track was measured by video analysis as a function of time $t$. Draw a graph of the points.\n\nThe cyclist's speed changes partway, so the motion cannot be modelled with a single straight line. Find in the table the moment when the speed changes, and model the motion as two uniform parts.\n\nUse the model to calculate the cyclist's average speed in the interval $5.0\\text{–}35\\,\\text{s}$, where the average speed is the distance travelled in the interval divided by the length of the interval. The moment $35\\,\\text{s}$ is not in the table. Why is the average speed not the mean of the speeds of the parts?",
+      "text": "The position $s$ of a cyclist from the start of the track was measured by video analysis as a function of time $t$. Draw a graph of the points.\n\nThe cyclist's speed changes partway, so the motion cannot be modelled with a single straight line. Find in the table the moment when the speed changes, and model the motion as two uniform parts.\n\nUse the model to calculate the cyclist's average speed in the interval $5.0\\text{–}35\\,\\text{s}$, where the average speed is the change in position divided by the length of the interval. The moment $35\\,\\text{s}$ is not in the table. Why is the average speed not the mean of the speeds of the parts?",
       "kind": [
         "data",
         "graph",

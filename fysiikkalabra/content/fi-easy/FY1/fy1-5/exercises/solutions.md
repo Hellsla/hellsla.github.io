@@ -1,18 +1,18 @@
 ## fy1-5-L1-01
-**Annettu:** nopeus $v = 5{,}5\,\text{m/s}$, aika $t = 20\,\text{s}$; liike alkaa nollakohdasta, joten $s_0 = 0$
-**Kysytty:** kuljettu matka $s$ metreinä
+**Annettu:** nopeus $v = 5{,}5\,\text{m/s}$, aika $t = 20\,\text{s}$
+**Kysytty:** kuljettu matka $\Delta s$ metreinä
 **Periaate:** Nopeus on vakio. Siksi liike on tasaista. Matka on suoraan verrannollinen aikaan.
-**Kaava:** $s = s_0 + vt$, ja koska $s_0 = 0$, $s = vt$
+**Kaava:** $\Delta s = vt$
 **Muunnokset:** Ei tarvita. Nopeus on yksikössä m/s ja aika sekunteina. Siksi tulo on metreinä.
-**Sijoitus:** $s = 5{,}5\,\tfrac{\text{m}}{\text{s}} \cdot 20\,\text{s} = 110\,\text{m}$
+**Sijoitus:** $\Delta s = 5{,}5\,\tfrac{\text{m}}{\text{s}} \cdot 20\,\text{s} = 110\,\text{m}$
 **Vastaus:** $110\,\text{m}$, kaksi merkitsevää numeroa kuten nopeudessa $5{,}5\,\text{m/s}$.
 **Järkevyys:** Kappale kulkee noin $5\,\text{m}$ sekunnissa. Kahdessakymmenessä sekunnissa se on noin $5 \cdot 20 = 100\,\text{m}$. Myös yksikkö on oikea: $\tfrac{\text{m}}{\text{s}} \cdot \text{s} = \text{m}$ on matkan yksikkö.
 
 ## fy1-5-L1-02
-**Annettu:** matka $s = 360\,\text{m}$, aika $t = 45\,\text{s}$; liike on tasaista ja alkaa nollakohdasta
+**Annettu:** matka $\Delta s = 360\,\text{m}$, aika $t = 45\,\text{s}$; liike on tasaista
 **Kysytty:** nopeus $v$ yksikössä m/s
 **Periaate:** Tasaisessa liikkeessä nopeus on kuljettu matka jaettuna ajalla. Aika on se aika, joka matkaan kului.
-**Kaava:** $s = vt$, josta $v = \dfrac{s}{t}$
+**Kaava:** $\Delta s = vt$, josta $v = \dfrac{\Delta s}{t}$
 **Muunnokset:** Ei tarvita: matka on metreinä ja aika sekunteina.
 **Sijoitus:** $v = \dfrac{360\,\text{m}}{45\,\text{s}} = 8{,}0\,\tfrac{\text{m}}{\text{s}}$
 **Vastaus:** $8{,}0\,\text{m/s}$, kaksi merkitsevää numeroa kuten ajassa $45\,\text{s}$.
@@ -27,7 +27,7 @@
 **Muunnokset:** Ei tarvita. Matka on metreinä ja aika sekunteina.
 **Sijoitus:** $v = \dfrac{20\,\text{m} - 0\,\text{m}}{8\,\text{s} - 0\,\text{s}} = 2{,}5\,\dfrac{\text{m}}{\text{s}}$ ja $t = \dfrac{150\,\text{m}}{2{,}5\,\frac{\text{m}}{\text{s}}} = 60\,\text{s}$
 **Vastaus:** $60\,\text{s}$ eli yksi minuutti. Nopeus on luettu kahdella merkitsevällä numerolla. Siksi vastaus on annettu samalla tarkkuudella.
-**Järkevyys:** Nopeus $2{,}5\,\text{m/s}$ on noin $9\,\text{km/h}$. Se on reipas kävely tai hidas hölkkä. Kuvaajassa $10\,\text{s}$ vie $25\,\text{m}$. Matka $150\,\text{m}$ on kuusi kertaa pidempi, joten se vie kuusi kertaa pidemmän ajan, $60\,\text{s}$.
+**Järkevyys:** Nopeus $2{,}5\,\text{m/s}$ on noin $9\,\text{km/h}$. Se on hidas hölkkä. Kävelijälle se on hyvin reipas vauhti. Kuvaajassa $10\,\text{s}$ vie $25\,\text{m}$. Matka $150\,\text{m}$ on kuusi kertaa pidempi, joten se vie kuusi kertaa pidemmän ajan, $60\,\text{s}$.
 
 ## fy1-5-L1-04
 **Annettu:** $s_1 = 18\,\text{m}$ ajassa $t_1 = 4{,}0\,\text{s}$; kysytty aika $t_2 = 10\,\text{s}$; liike alkaa lähtöpisteestä, joten $s_0 = 0$
@@ -50,21 +50,21 @@
 **Järkevyys:** Osamäärät $7{,}0\,\text{m} : 2{,}0\,\text{s}$ ja $21\,\text{m} : 6{,}0\,\text{s}$ ovat kumpikin $3{,}5\,\text{m/s}$. Siksi paikka on verrannollinen aikaan, ja alkupaikka on nolla. Nopeus $3{,}5\,\text{m/s}$ on noin $13\,\text{km/h}$. Se on hidasta pyöräilyä.
 
 ## fy1-5-L2-01
-**Annettu:** nopeus $v = 54\,\text{km/h}$, aika $t = 14\,\text{s}$; liike alkaa nollakohdasta
-**Kysytty:** matka $s$ metreinä
-**Periaate:** Auto ajaa vakionopeudella. Siksi liike on tasaista ja $s = vt$. Nopeuden ja ajan yksiköiden täytyy sopia yhteen.
-**Kaava:** $s = vt$
+**Annettu:** nopeus $v = 54\,\text{km/h}$, aika $t = 14\,\text{s}$
+**Kysytty:** matka $\Delta s$ metreinä
+**Periaate:** Auto ajaa vakionopeudella. Siksi liike on tasaista ja $\Delta s = vt$. Nopeuden ja ajan yksiköiden täytyy sopia yhteen.
+**Kaava:** $\Delta s = vt$
 **Muunnokset:** sijoitetaan $1\,\text{km} = 1000\,\text{m}$ ja $1\,\text{h} = 3600\,\text{s}$: $v = 54\,\text{km/h} = \dfrac{54\cdot1000\,\text{m}}{3600\,\text{s}} = 15\,\text{m/s}$.
-**Sijoitus:** $s = 15\,\tfrac{\text{m}}{\text{s}} \cdot 14\,\text{s} = 210\,\text{m}$
+**Sijoitus:** $\Delta s = 15\,\tfrac{\text{m}}{\text{s}} \cdot 14\,\text{s} = 210\,\text{m}$
 **Vastaus:** $210\,\text{m}$, kaksi merkitsevää numeroa kuten nopeudessa $54\,\text{km/h}$ ja ajassa $14\,\text{s}$.
 **Järkevyys:** Nopeus $54\,\text{km/h}$ on $0{,}9\,\text{km}$ minuutissa. Aika $14\,\text{s}$ on noin $0{,}23\,\text{min}$. Siksi matka on noin $0{,}9 \cdot 0{,}23\,\text{km} \approx 0{,}21\,\text{km} = 210\,\text{m}$.
 
 ## fy1-5-L2-02
-**Annettu:** nopeus $v = 36\,\text{km/h}$, matka $s = 4{,}5\,\text{km}$; liike on tasaista ja alkaa nollakohdasta
+**Annettu:** nopeus $v = 36\,\text{km/h}$, matka $\Delta s = 4{,}5\,\text{km}$; liike on tasaista
 **Kysytty:** aika $t$ sekunteina
 **Periaate:** Linja-auto ajaa vakionopeudella. Siksi matka on verrannollinen aikaan. Aika on matka jaettuna nopeudella.
-**Kaava:** $s = vt$, josta $t = \dfrac{s}{v}$
-**Muunnokset:** $v = 36\,\text{km/h} = \dfrac{36\cdot1000\,\text{m}}{3600\,\text{s}} = 10\,\text{m/s}$ ja $s = 4{,}5\,\text{km} = 4500\,\text{m}$.
+**Kaava:** $\Delta s = vt$, josta $t = \dfrac{\Delta s}{v}$
+**Muunnokset:** $v = 36\,\text{km/h} = \dfrac{36\cdot1000\,\text{m}}{3600\,\text{s}} = 10\,\text{m/s}$ ja $\Delta s = 4{,}5\,\text{km} = 4500\,\text{m}$.
 **Sijoitus:** $t = \dfrac{4500\,\text{m}}{10\,\tfrac{\text{m}}{\text{s}}} = 450\,\text{s}$
 **Vastaus:** $450\,\text{s}$, kaksi merkitsevää numeroa kuten tiedoissa $36\,\text{km/h}$ ja $4{,}5\,\text{km}$.
 **Järkevyys:** Lasketaan kilometreinä ja tunteina: $4{,}5\,\text{km} : 36\,\text{km/h} = 0{,}125\,\text{h} = 7{,}5\,\text{min} = 450\,\text{s}$. Tulos on sama.
@@ -81,11 +81,11 @@
 
 ## fy1-5-L2-04
 **Annettu:** aika $t = 5{,}0\,\text{s}$, äänen nopeus $v = 343\,\text{m/s}$; valon kulkuaika jätetään huomiotta
-**Kysytty:** salaman etäisyys $s$ kilometreinä
-**Periaate:** Ääni etenee vakionopeudella. Siksi sen kulkema matka on $s = vt$. Valo saapuu käytännössä heti. Siksi jyrähdyksen viive on se aika, jonka ääni kulkee koko matkan.
-**Kaava:** $s = vt$
+**Kysytty:** salaman etäisyys $\Delta s$ kilometreinä
+**Periaate:** Ääni etenee vakionopeudella. Siksi sen kulkema matka on $\Delta s = vt$. Valo saapuu käytännössä heti. Siksi jyrähdyksen viive on se aika, jonka ääni kulkee koko matkan.
+**Kaava:** $\Delta s = vt$
 **Muunnokset:** Matka lasketaan metreinä, ja lopuksi $1\,\text{km} = 1000\,\text{m}$.
-**Sijoitus:** $s = 343\,\tfrac{\text{m}}{\text{s}} \cdot 5{,}0\,\text{s} = 1715\,\text{m} = 1{,}7\,\text{km}$
+**Sijoitus:** $\Delta s = 343\,\tfrac{\text{m}}{\text{s}} \cdot 5{,}0\,\text{s} = 1715\,\text{m} = 1{,}7\,\text{km}$
 **Vastaus:** $1{,}7\,\text{km}$, kaksi merkitsevää numeroa kuten ajassa $5{,}0\,\text{s}$.
 **Järkevyys:** Peukalosääntö (helppo nyrkkisääntö): kolme sekuntia vastaa noin kilometriä. Siksi viisi sekuntia vastaa noin $1{,}7\,\text{km}$. Valo kulkisi tämän matkan ajassa $1715\,\text{m} : (3{,}0 \cdot 10^{8}\,\text{m/s}) \approx 6\,\mu\text{s}$. Se on hyvin pieni aika viiveeseen $5{,}0\,\text{s}$ verrattuna.
 
@@ -157,14 +157,14 @@
 **Järkevyys:** Nopeus $1{,}4\,\text{m/s}$ on noin $5\,\text{km/h}$. Se on tavallinen kävelyvauhti. Ennuste on selvästi suurempi kuin viimeinen mittaus $8{,}3\,\text{m}$. Niin pitääkin olla, koska $12\,\text{s}$ on yli kaksi kertaa niin pitkä aika kuin mittausalue.
 
 ## fy1-5-L2-06
-**Annettu:** alkupaikka $s_0 = 8{,}0\,\text{m}$, paikka $s_1 = 11\,\text{m}$ hetkellä $t_1 = 2{,}0\,\text{s}$; oppilaan päätelmä on $s = 33\,\text{m}$ hetkellä $t_2 = 6{,}0\,\text{s}$
-**Kysytty:** oppilaan virhe ja oikea paikka $s$ hetkellä $6{,}0\,\text{s}$ metreinä
-**Periaate:** Tasaisessa liikkeessä vain kuljettu matka $\Delta s = vt$ on suoraan verrannollinen aikaan. Paikka $s = s_0 + vt$ on verrannollinen aikaan vain, kun $s_0 = 0$. Oppilas sekoitti paikan ja matkan. Hän kolminkertaisti paikan, vaikka olisi pitänyt kolminkertaistaa matka.
+**Annettu:** alkupaikka $s_0 = 8{,}0\,\text{m}$, paikka $s_1 = 11\,\text{m}$ hetkellä $t_1 = 2{,}0\,\text{s}$; opiskelijan päätelmä on $s = 33\,\text{m}$ hetkellä $t_2 = 6{,}0\,\text{s}$
+**Kysytty:** opiskelijan virhe ja oikea paikka $s$ hetkellä $6{,}0\,\text{s}$ metreinä
+**Periaate:** Tasaisessa liikkeessä vain kuljettu matka $\Delta s = vt$ on suoraan verrannollinen aikaan. Paikka $s = s_0 + vt$ on verrannollinen aikaan vain, kun $s_0 = 0$. Opiskelija sekoitti paikan ja matkan. Hän kolminkertaisti paikan, vaikka olisi pitänyt kolminkertaistaa matka.
 **Kaava:** $v = \dfrac{\Delta s}{\Delta t}$ ja $s = s_0 + vt$
 **Muunnokset:** Ei tarvita. Paikat ovat metreinä ja ajat sekunteina.
 **Sijoitus:** $v = \dfrac{11\,\text{m} - 8{,}0\,\text{m}}{2{,}0\,\text{s}} = 1{,}5\,\tfrac{\text{m}}{\text{s}}$ ja $s = 8{,}0\,\text{m} + 1{,}5\,\tfrac{\text{m}}{\text{s}} \cdot 6{,}0\,\text{s} = 8{,}0\,\text{m} + 9{,}0\,\text{m} = 17\,\text{m}$
 **Vastaus:** Kärry on kohdassa $17\,\text{m}$, ei kohdassa $33\,\text{m}$. Virhe on se, että paikka kolminkertaistettiin. Alkupaikka $s_0 = 8{,}0\,\text{m}$ ei ole nolla. Siksi vain matka kolminkertaistuu ($3{,}0\,\text{m} \to 9{,}0\,\text{m}$), ja alkupaikka pitää lisätä siihen.
-**Järkevyys:** Matka kolminkertaistui: $3{,}0\,\text{m} \cdot 3 = 9{,}0\,\text{m}$. Oppilaan vastaus $33\,\text{m}$ vaatisi, että kärry kulkee $25\,\text{m}$ kuudessa sekunnissa. Silloin nopeus olisi $4{,}2\,\text{m/s}$. Annetuista tiedoista nopeus on kuitenkin $1{,}5\,\text{m/s}$.
+**Järkevyys:** Matka kolminkertaistui: $3{,}0\,\text{m} \cdot 3 = 9{,}0\,\text{m}$. Opiskelijan vastaus $33\,\text{m}$ vaatisi, että kärry kulkee $25\,\text{m}$ kuudessa sekunnissa. Silloin nopeus olisi $4{,}2\,\text{m/s}$. Annetuista tiedoista nopeus on kuitenkin $1{,}5\,\text{m/s}$.
 
 ## fy1-5-L2-07
 **Annettu:** nopeus noin $v = 0{,}80\,\text{m/s}$, ajanoton epävarmuus $\Delta t = 0{,}2\,\text{s}$ (sama kaikilla ajoilla; tässä $\Delta t$ on epävarmuus, ei aikaväli), suhteellisen epävarmuuden raja $2{,}0\,\%$
@@ -179,7 +179,7 @@
 ## fy1-5-L3-04
 **Annettu:** taulukon mittauspisteet $(t;\ s)$: $(0\,\text{s};\ 0\,\text{m})$, $(5{,}0\,\text{s};\ 15\,\text{m})$, $(10\,\text{s};\ 30\,\text{m})$, $(15\,\text{s};\ 35\,\text{m})$, $(20\,\text{s};\ 40\,\text{m})$, $(30\,\text{s};\ 50\,\text{m})$ ja $(40\,\text{s};\ 60\,\text{m})$
 **Kysytty:** keskinopeus $v_\text{ka}$ aikavälillä $5{,}0\text{–}35\,\text{s}$ ja syy, miksi se ei ole osien nopeuksien keskiarvo
-**Periaate:** Kuvaajassa pisteet ovat kahdella suoralla osalla. Osien kulmakertoimet ovat eri suuret, joten yksi suora ei sovi koko liikkeeseen. Liike mallinnetaan paloittain. Kummallakin osalla on oma tasainen nopeutensa. Hetken $35\,\text{s}$ paikka lasketaan jälkimmäisen osan mallista. Keskinopeus on kuljettu matka jaettuna ajalla.
+**Periaate:** Kuvaajassa pisteet ovat kahdella suoralla osalla. Osien kulmakertoimet ovat eri suuret, joten yksi suora ei sovi koko liikkeeseen. Liike mallinnetaan paloittain. Kummallakin osalla on oma tasainen nopeutensa. Hetken $35\,\text{s}$ paikka lasketaan jälkimmäisen osan mallista. Keskinopeus on paikan muutos jaettuna aikavälin pituudella.
 **Kuvaajan lukeminen:** Pisteet aikavälillä $0\text{–}10\,\text{s}$ ovat samalla jyrkällä suoralla. Hetkestä $10\,\text{s}$ alkaen suora on loivempi. Pisteet $(10\,\text{s};\ 30\,\text{m})$, $(20\,\text{s};\ 40\,\text{m})$ ja $(40\,\text{s};\ 60\,\text{m})$ ovat samalla loivalla suoralla. Nopeus muuttuu siis hetkellä $t = 10\,\text{s}$.
 **Kaava:** osan nopeus $v = \dfrac{\Delta s}{\Delta t}$, paikka loivalla osalla $s = s_{10} + v_2 (t - 10\,\text{s})$ ja keskinopeus $v_\text{ka} = \dfrac{s(35\,\text{s}) - s(5{,}0\,\text{s})}{35\,\text{s} - 5{,}0\,\text{s}}$
 **Muunnokset:** Ei tarvita. Paikat ovat metreinä ja ajat sekunteina.

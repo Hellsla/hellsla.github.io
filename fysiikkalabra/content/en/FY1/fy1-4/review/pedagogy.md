@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: a49ccdab79639a3d
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+CONTENT-HASH: cefe1060a1ac8c88
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- The 16 g clause in the liquid-slope feedback is a long sentence; acceptable.
 
 ## Checked
-- lesson.md, inquiry.json diffs. Prompt now says the trolley was pushed off at t=0 and moved steadily, so the model choice is answerable; 'clock started late' context in the cyclist task makes the nonzero intercept meaningful; zero decimals in the worked example fit the exact data; interpolation/extrapolation and physical/graphical/mathematical model wording added to theory in plain language.
+- fy1-4 diff: Ilmoitin/Ilmoitin-style wording, 'sovitetaan eikä yhdistetä murtoviivaksi', 0,79 -> 0,80 g/ml with 20 ml x 0,80 = 16 g (matches Experiment 2 slope k=0.8 and 78,5-16 = 62,5 ~ 63 g), \text units, 'kärryn tasaista liikettä'. Misconception feedback still repairs, no answer disclosed earlier.
+- Language en: matches the Finnish fixes; fi-easy stays plain Finnish.

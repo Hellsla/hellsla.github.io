@@ -284,9 +284,9 @@ Jos kaksi muuttujaa muuttuu yhtä aikaa, esimerkiksi matka ja paristot, tuloksen
 </svg>
 
 ### Suunnittelu ennen mittausta
-Taustatietoa ilmiöstä ja menetelmistä hankitaan ennen suunnittelua lähdekriittisesti: arvioi, kuka tiedon on tuottanut ja miksi, miten se perustellaan, onko se ajantasaista ja tukevatko muut lähteet sitä. Suunnitelma vastaa ennen mittausta kysymyksiin: mitä mitataan ja millä välineellä, mitkä arvot muutettavalle muuttujalle valitaan ja kuinka monta, montako toistoa kustakin arvosta tehdään ja mitä pidetään vakiona. Kokeile ensin esikokeella. Se kertoo, onko mittaus ylipäätään mahdollinen, ja antaa karkean arvion tuloksesta.
+Taustatietoa ilmiöstä ja menetelmistä hankitaan ennen suunnittelua lähdekriittisesti: arvioi, kuka tiedon on tuottanut ja miksi, miten se perustellaan, onko se ajantasaista ja tukevatko muut lähteet sitä. Suunnitelma vastaa ennen mittausta kysymyksiin: mitä mitataan ja millä välineellä, mitkä arvot muutettavalle muuttujalle valitaan ja kuinka monta, montako toistoa kustakin arvosta tehdään ja mitä pidetään vakiona. Kokeile suunnitelmaa ensin esikokeella. Se kertoo, onko mittaus ylipäätään mahdollinen, ja antaa karkean arvion tuloksesta.
 
-Valitse mittausalue niin, että mitattava suure on selvästi suurempi kuin mittauksen epävarmuus (ks. kohta *Suhteellinen epävarmuus ja mittausalueen valinta*). Valitse arvoja tasavälein ja useita, koska yksi tai kaksi pistettä ei näytä, onko riippuvuus suora.
+Valitse mittausalue niin, että mitattava suure on selvästi suurempi kuin mittauksen epävarmuus (ks. kohta *Suhteellinen epävarmuus ja mittausalueen valinta*). Valitse useita arvoja tasavälein, koska yhdestä tai kahdesta pisteestä ei näe, ovatko pisteet suoralla.
 
 ### Mittauspöytäkirja
 **Mittauspöytäkirja** on kirjaus, joka tehdään kokeen aikana, ei muistista jälkikäteen. Siihen kirjataan tutkimuskysymys, päivämäärä, välineet ja niiden tarkkuus, vakioidut asiat, mittaukset taulukkona yksiköineen sekä havainnot, esimerkiksi "auto kääntyi sivuun".
@@ -308,10 +308,10 @@ Kirjaa lukemat sellaisenaan, jotta kirjaus pysyy objektiivisena eikä muutu omie
 4. pohdinta: virhelähteet ja se, mitä seuraavalla kerralla tehtäisiin toisin
 5. johtopäätös: vastaus tutkimuskysymykseen ja se, tukevatko tulokset hypoteesia.
 
-Johtopäätös on vain niin vahva kuin aineisto. Jos mittaukset osuvat epävarmuuden sisällä ennusteeseen, hypoteesi on saanut tukea, mutta sitä ei ole todistettu.
+Johtopäätös on vain niin vahva kuin aineisto. Jos mittaukset vastaavat ennustetta epävarmuuden rajoissa, hypoteesi on saanut tukea, mutta sitä ei ole todistettu.
 
 ## Kaava: Suhteellinen epävarmuus ja mittausalueen valinta
-Käsin mitatun ajan epävarmuus $\Delta t$ johtuu pääosin reaktioajasta, ja se on lähes sama lyhyessä ja pitkässä mittauksessa. Mittauksen laatua kuvaa siksi **suhteellinen epävarmuus**, epävarmuus suhteessa mitattuun arvoon. Jotta se pysyy enintään arvossa $\varepsilon_\text{max}$, mitattavan ajan pitää olla vähintään
+Käsin mitatun ajan epävarmuus $\Delta t$ johtuu pääosin reaktioajasta, ja se on lähes sama lyhyessä ja pitkässä mittauksessa. Mittauksen laatua kuvaa siksi **suhteellinen epävarmuus**, epävarmuus suhteessa mitattuun arvoon. Jotta se ei ylitä arvoa $\varepsilon_\text{max}$, mitattavan ajan pitää olla vähintään
 ```latex
 \begin{aligned}
 \varepsilon &= \frac{\Delta t}{t} \\
@@ -368,7 +368,7 @@ missä $\varepsilon$ on suhteellinen epävarmuus (ilmoitetaan usein prosentteina
 Tarvittava matka saadaan tasaisen liikkeen mallista $s = vt$. Jos mittaus tehdään usealla matkalla, mittauspisteisiin sovitetaan suora (luku *Graafinen esitys ja suoran sovittaminen*). Kun $t$ on vaaka-akselilla ja $s$ pystyakselilla, suoran kulmakerroin on nopeus $v$. Lyhin kelvollinen matka on se, jolla suhteellinen epävarmuus vielä pysyy valitussa rajassa $\varepsilon_\text{max}$. Sitä lyhyemmällä matkalla suhteellinen epävarmuus ylittää tämän rajan, ja tulos on liian epätarkka.
 
 ## Esimerkki
-Oppilaat tutkivat leluauton liikettä. Esikokeessa auton nopeus on noin $0{,}42\,\text{m/s}$. Aika mitataan käsikellolla, ja ajanoton epävarmuus on $\Delta t = 0{,}2\,\text{s}$. Mittauksen suhteellinen epävarmuus halutaan enintään $5{,}0\,\%$. Kuinka pitkä matka auton pitää vähintään kulkea?
+Oppilaat tutkivat leluauton liikettä. Esikokeessa auton nopeus on noin $0{,}42\,\text{m/s}$. Aika mitataan käsikellolla, ja ajanoton epävarmuus on $\Delta t = 0{,}2\,\text{s}$. Ajanmittauksen suhteellinen epävarmuus halutaan enintään $5{,}0\,\%$. Kuinka pitkä matka auton pitää vähintään kulkea?
 
 <!-- vaihe -->
 

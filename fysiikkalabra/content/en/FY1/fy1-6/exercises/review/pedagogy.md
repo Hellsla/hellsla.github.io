@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 4a40e8df2377921f
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 3e9eeb5830f9cef2
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
@@ -9,4 +9,5 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since 
 - none
 
 ## Checked
-- exercises.json, solutions.md and answers.py diffs vs origin/main; wording of tasks and feedback, solution structure, significant figures, consistency with the Finnish fix. Changed passages read clearly for a 16-19-year-old, no new misconception or misleading feedback introduced.
+- exercises diff: Mars wording 'ilmanvastus jätetään huomiotta', feedback 'Maa vetää sitä heikommin' (context Earth, correct), 'Kaava' lines no longer repeat the formula, grid-reading note rewritten ('ruudukon risteyksissä, joten ne ovat tarkkoja'); answers and levels unchanged.
+- Language en: matches the Finnish fixes; fi-easy stays plain Finnish.

@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 4a40e8df2377921f
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
+CONTENT-HASH: 3e9eeb5830f9cef2
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
@@ -9,4 +9,5 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since 
 - none
 
 ## Checked
-- diff of exercises.json, solutions.md, answers.py (fy1-6); notation (units in LaTeX, en dash ranges, fractions, substitution chains) read from source; no figures in this part
+- solutions.md: Kaava lines merged into one sentence, g\,t spacing, Kysytty rewording; exercises.json Mars/air-resistance wording
+- Changes mirror the Finnish fix in en; no notation, unit or decimal-comma error introduced.

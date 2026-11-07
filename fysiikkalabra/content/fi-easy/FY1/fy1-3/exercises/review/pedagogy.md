@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 1d524cde5c7b4567
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+CONTENT-HASH: 332b414ea5cbb49e
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
@@ -9,4 +9,5 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368
 - none
 
 ## Checked
-- exercises.json, solutions.md, answers.py (new numbers 36,4 - 0,9 = 35,5 g; calliper data 8,04..8,09 cm, error 0,06 cm; arithmetic and the 0,025 cm vs 0,06 cm reasoning rechecked).
+- Scale-zero task still states 'tyhjänä' so the tare is clear; units added to densities and to the percent-uncertainty calculations; 'suurelta osin' is a more honest wording than 'lähes kokonaan'; 100x answer reasoning (uncertainty = half reading interval, 0.5 mm : 0.005 mm) is correct and teaches why the ratio is exact. Translations match.
+- Language version fi-easy judged from the word-level diff against origin/main; the fi, en and fi-easy changes correspond.

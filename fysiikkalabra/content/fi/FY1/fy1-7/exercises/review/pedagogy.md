@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 34b61e38bb1fe753
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+CONTENT-HASH: 230907cc3cdb0470
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
@@ -9,4 +9,4 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368
 - none
 
 ## Checked
-- exercises.json, solutions.md, answers.py diff: Sig-figure justifications and alloy answer 4,42 g/cm3 (volumes exact); recomputed correct.
+- Diff only: 'luvun tiheystaulukko' added where the table is needed (helps), sinker/line wording, units 'ilmoitettu', reasonableness checks rewritten (concrete 1 m3 -> 0.75 m3 staged); graph-task check 'two points below, three above' verified against data (least-squares slope 2.705: 3 above, 2 below).

@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: c21f036fe7209f89
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+CONTENT-HASH: f60c54c8378a5724
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
@@ -9,4 +9,4 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368
 - none
 
 ## Checked
-- exercises.json, solutions.md, answers.py diffs. 0.500/0.420 m/s with 16 % answer; Delta notation replaced by differences; heavy-ball task notes reaction time may differ between series.
+- Diff only: 'heilahdusaika' key wording, reordered car problem, cooling-rate assumption now explicit ('sama ja pysyy vakiona'), 'koordinaatit voi lukea hilaviivojen kohdalta' in the graph solution; all fair to the student and answers unchanged.

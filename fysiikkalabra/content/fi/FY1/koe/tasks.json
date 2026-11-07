@@ -917,7 +917,7 @@
       {
        "key": "graph_read",
        "points": 1,
-       "detail": "Kulmakerroin suoran kaukaisesta pisteestä, esimerkiksi $\\tfrac{51\\,\\text{mm}}{500}$."
+       "detail": "Kulmakerroin origosta ja kaukana siitä olevasta suoran pisteestä, esimerkiksi $\\tfrac{51\\,\\text{mm}}{500}$."
       },
       {
        "key": "units_precision",

@@ -197,7 +197,7 @@
         "columns": [
           "Vehicle",
           "$v$",
-          "$\\text{Unit}$"
+          "Unit"
         ],
         "rows": [
           [
@@ -318,7 +318,7 @@
     {
       "id": "fy1-2-L3-05",
       "level": 3,
-      "text": "A manufacturer gives the specifications of two portable power banks in different units. Both are fully charged, and each powers a device whose power is the operating power in the table.\n\nThe operating time is $t = \\dfrac{E}{P}$, and for power $1\\,\\text{W} = 1\\,\\text{J/s}$. For units of energy $1\\,\\text{kWh} = 3.6\\,\\text{MJ}$.\n\nYour friend claims that device B lasts longer because the numerical value of its energy, $2.20$, is larger than the value $0.65$ of device A.\n\nHow many hours longer does the longer-lasting device run? Justify. Is the claim correct?",
+      "text": "A manufacturer gives the specifications of two portable power banks in different units. Both are fully charged, and each powers a device whose power is the operating power in the table.\n\nThe operating time is $t = \\dfrac{E}{P}$, and for power $1\\,\\text{W} = 1\\,\\text{J/s}$. For units of energy $1\\,\\text{kWh} = 3.6\\,\\text{MJ}$.\n\nYour friend claims that power bank B lasts longer because the numerical value of its energy, $2.20$, is larger than the value $0.65$ of power bank A.\n\nHow many hours longer does the longer-lasting power bank run? Justify. Is the claim correct?",
       "kind": [
         "data",
         "reasoning"
@@ -329,7 +329,7 @@
       "data": {
         "caption": "Specifications given by the manufacturer",
         "columns": [
-          "Device",
+          "Power bank",
           "$E$",
           "Unit",
           "$P$",

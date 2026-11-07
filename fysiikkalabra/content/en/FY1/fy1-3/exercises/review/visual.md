@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 7d2e25570024b2be
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+CONTENT-HASH: 57cb24b04f0d6f08
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
@@ -9,4 +9,4 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368
 - none
 
 ## Checked
-- Diff since edb368de4 of: exercises.json, solutions.md, answers.py. new values 0.9/36.4/35.5 g and 8.04–8.09 cm consistent through task, solution and key; sig-fig statement updated. Judged from the diff and source only; no captures opened (light mode).
+- Word-diff of exercises and answers.py: units added in fy1-3 (g/cm^3, s) and fy1-2 wording (virtalähde/power bank, Kuvan/figure) are correct LaTeX/plain text as appropriate; table header "Yksikkö" now plain text, fine. No figure change.

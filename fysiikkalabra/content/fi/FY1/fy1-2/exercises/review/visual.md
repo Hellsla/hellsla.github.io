@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 536d455eb8f2210b
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+CONTENT-HASH: 7e70ffd352f0aeae
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
 
 ## Polish
-- ei huomautettavaa
+- none
 
 ## Checked
-- fy1-2 exercises.json, solutions.md, answers.py (diff edb368de4 jälkeen)
-- Loppunollien tarkkuuslause (384 400 km tarkka), vastaus 1,5 h; selkeä.
+- Word-diff of exercises and answers.py: units added in fy1-3 (g/cm^3, s) and fy1-2 wording (virtalähde/power bank, Kuvan/figure) are correct LaTeX/plain text as appropriate; table header "Yksikkö" now plain text, fine. No figure change.

@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 1bd8250b92e55c2c
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+CONTENT-HASH: 615bdc9d60ae766e
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
 
 ## Polish
-- Calliper data now give a one-figure answer 0,06 cm; fine, and the 'zero error / dirt' explanation is plausible.
+- none
 
 ## Checked
-- exercises.json, solutions.md, answers.py diff: Zero-offset task (36,4 - 0,9 = 35,5 g) and calliper task (mean 8,06, error 0,06 cm, random error 0,025, 'puolet'); numbers and reasoning recomputed and consistent.
+- Scale-zero task still states 'tyhjänä' so the tare is clear; units added to densities and to the percent-uncertainty calculations; 'suurelta osin' is a more honest wording than 'lähes kokonaan'; 100x answer reasoning (uncertainty = half reading interval, 0.5 mm : 0.005 mm) is correct and teaches why the ratio is exact. Translations match.
+- Language version fi judged from the word-level diff against origin/main; the fi, en and fi-easy changes correspond.

@@ -975,7 +975,7 @@
   "note": "avaruuden raja: its size label"
  },
  {
-  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{avaruuden raja}$\") ? 1 : 0",
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{sovittu avaruuden raja (Kármánin raja)}$\") ? 1 : 0",
   "expected": 1,
   "tol": 0,
   "note": "avaruuden raja: its name label"

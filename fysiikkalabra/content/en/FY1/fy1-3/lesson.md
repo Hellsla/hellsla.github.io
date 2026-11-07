@@ -279,7 +279,7 @@
 </svg>
 
 ## Key idea
-A **measurement** means determining the value of a quantity by comparing it with a unit. A measurement result is a numerical value and a unit, for example $2.43\,\text{s}$. The result usually differs a little from the true value of the quantity, because reading the instrument, the method of measuring and the conditions all add a deviation to it. The difference $x - x_\text{true}$ between the result and the true value is the **measurement error**. Every measurement result has some uncertainty, even one made by a skilled measurer. The true value is usually not known, so neither is the measurement error or its size. Therefore the **measurement uncertainty** is stated together with the result. It describes the uncertainty of the measurement result, an estimate of how large the measurement error can be. It does not usually mean an absolute largest possible deviation from the true value.
+A **measurement** means determining the value of a quantity by comparing it with a unit. A measurement result is a numerical value and a unit, for example $2.43\,\text{s}$. The result usually differs a little from the true value of the quantity, because reading the instrument, the method of measuring and the conditions all add a deviation to it. The difference $x - x_\text{true}$ between the result and the true value is the **measurement error**. Every measurement result has some uncertainty, even one made by a skilled measurer. The true value is usually not known, so neither is the measurement error or its size. Therefore the **measurement uncertainty** is stated together with the result. It is an estimate of how large the measurement error can be. It does not usually mean an absolute largest possible deviation from the true value.
 
 Errors are divided into three kinds: gross error, random error and systematic error. You can tell them apart by how they behave when the measurement is repeated.
 
@@ -413,7 +413,7 @@ where $\Delta x$ is the error estimate, $x_\text{max}$ is the largest and $x_\te
 
 Half of the range is a simple estimate of the scatter of the results, not a general method for finding the measurement uncertainty. It does not reveal a systematic error, which shifts all results in the same direction. If all the results are the same, no scatter shows, but the uncertainty is still not zero: then the reading uncertainty is estimated, as below.
 
-The error estimate is rounded to one significant figure, or to two if the first figure is 1. The result is rounded to the same decimal place: $3.18 \pm 0.12\,\text{s}$ and not $3.1817 \pm 0.12\,\text{s}$. This way the result has no figures that the error already blurs.
+The error estimate is rounded to one significant figure, or to two if the first figure is 1. The result is rounded to the same decimal place: $3.18\,\text{s} \pm 0.12\,\text{s}$ and not $3.1817\,\text{s} \pm 0.12\,\text{s}$. This way the result has no figures that cannot be trusted because of the uncertainty.
 
 When the measurement is made only once and the value is read from a scale, in a simple situation the uncertainty of the reading can be estimated, for example, as half of the smallest scale division $d$:
 ```latex
@@ -535,7 +535,7 @@ A student measures the rolling time of a ball on a ramp with a hand stopwatch si
 </svg>
 
 ## Common misconception
-Many people think that a precise instrument or many repeats guarantee a correct result. Repeats reduce random error but not systematic error, and good repeatability tells nothing about accuracy. Another misconception is to regard all error as carelessness. Carelessness causes a gross error, which is looked for and left out only for a justified and recorded reason, but random and systematic error belong to the result of a skilled measurer too, and that is why they are estimated and stated. A third is to calculate a mean of numbers that are in different units: the results are converted to the same unit first.
+Many people think that a precise instrument or many repeats guarantee a correct result. Even a precise instrument can be badly adjusted, and then its readings are in a tight group but in the wrong place. Repeats reduce random error but not systematic error, and good repeatability tells nothing about accuracy. Another misconception is to regard all error as carelessness. Carelessness causes a gross error, which is looked for and left out only for a justified and recorded reason, but random and systematic error belong to the result of a skilled measurer too, and that is why they are estimated and stated. A third is to calculate a mean of numbers that are in different units: the results are converted to the same unit first.
 
 ## Summary
 - A measurement error is the difference between the result and the true value, $x - x_\text{true}$. Every measurement result has some uncertainty. The error is usually not known, but its possible size is estimated as the measurement uncertainty and stated together with the result.

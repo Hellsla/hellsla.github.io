@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 1bd8250b92e55c2c
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+CONTENT-HASH: 615bdc9d60ae766e
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
 
 ## Polish
-- ei huomautettavaa
+- none
 
 ## Checked
-- fy1-3 exercises.json, solutions.md, answers.py (diff edb368de4 jälkeen)
-- Uudet lukemat (0,9 g; 36,4 g; 8,04…8,09 cm), summa 40,30 cm, 0,06 cm ja selitys systemaattisesta virheestä sopivat yhteen ja ovat luettavia.
+- Word-diff of exercises and answers.py: units added in fy1-3 (g/cm^3, s) and fy1-2 wording (virtalähde/power bank, Kuvan/figure) are correct LaTeX/plain text as appropriate; table header "Yksikkö" now plain text, fine. No figure change.

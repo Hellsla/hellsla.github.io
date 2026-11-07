@@ -32,7 +32,7 @@
 **Given:** a picture in which an aluminium rod is next to a ruler and the ends of the rod are at the scale of the ruler
 **Find:** the length $l$ of the rod in millimetres
 **Principle:** The rod does not start at the zero mark of the ruler, so the length is not the reading at the right end but the difference between the readings at the two ends. A quantity does not change when the unit is changed, so in place of the centimetre we write its value in millimetres.
-**Reading the graph:** The left end is at $x_1 = 2.0\,\text{cm}$ (two long marks from zero). The right end is at $x_2 = 13.6\,\text{cm}$ (thirteen long marks and six millimetre marks after that). Both ends fall on a millimetre mark, so the readings are taken to the nearest millimetre.
+**Reading the figure:** The left end is at $x_1 = 2.0\,\text{cm}$ (two long marks from zero). The right end is at $x_2 = 13.6\,\text{cm}$ (thirteen long marks and six millimetre marks after that). Both ends fall on a millimetre mark, so the readings are taken to the nearest millimetre.
 **Formula:** $l = x_2 - x_1$
 **Conversions:** One centimetre is ten millimetres, so in place of the centimetre we write $10\,\text{mm}$.
 **Substitution:** $l = 13.6\,\text{cm} - 2.0\,\text{cm} = 11.6\,\text{cm} = 11.6\cdot10\,\text{mm} = 116\,\text{mm}$
@@ -47,7 +47,7 @@
 **Conversions:** Not needed: both diameters are in kilometres and the units cancel.
 **Substitution:** $N = \dfrac{1.392\cdot10^{6}\,\text{km}}{3474\,\text{km}}\cdot 1\,\text{px} = 400.69\,\text{px}$
 **Answer:** $400.7\,\text{px}$, four significant figures like the initial values $1.392\cdot10^{6}\,\text{km}$ and $3474\,\text{km}$.
-**Reasonableness:** Roughly $\dfrac{1.4\cdot10^{6}}{3.5\cdot10^{3}} = 0.4\cdot10^{3} = 400$. The diameter of the Sun is about 400 Moons, which fits the fact that it is much larger than the Moon.
+**Reasonableness:** Roughly $\dfrac{1.4\cdot10^{6}}{3.5\cdot10^{3}} = 0.4\cdot10^{3} = 400$. The diameter of the Sun is about 400 Moon diameters, which fits the fact that it is much larger than the Moon.
 
 ## fy1-2-L1-06
 **Find:** which of the given units is a base unit of the SI system.
@@ -112,7 +112,7 @@
 **Conversions:** $1\,\text{day} = 24\cdot 3600\,\text{s} = 86\,400\,\text{s}$. Finally $1\,\text{million km} = 10^{6}\,\text{km}$.
 **Substitution:** $s = 15.341\,\dfrac{\text{km}}{\text{s}}\cdot 86\,400\,\text{s} = 1\,325\,462\,\text{km} = 1.3255\cdot10^{6}\,\text{km}$
 **Answer:** $1.3255$ million km, five significant figures like the speed $15.341\,\text{km/s}$; the length of a day is exact.
-**Reasonableness:** With rounded numbers $15\,\text{km/s}\cdot 9\cdot10^{4}\,\text{s} = 1.35\cdot10^{6}\,\text{km}$. In a day the probe travels a little over a million kilometres, about three times the distance from the Earth to the Moon.
+**Reasonableness:** With rounded numbers $15\,\text{km/s}\cdot 9\cdot10^{4}\,\text{s} = 1.35\cdot10^{6}\,\text{km}$. In a day the probe travels a little over a million kilometres, about three and a half times the distance from the Earth to the Moon.
 
 ## fy1-2-L2-05
 **Given:** from the table the speeds: fast ferry $38.0$ knots, train $66.0\,\text{km/h}$, cyclist $9.0\,\text{m/s}$ and fishing boat $12.0$ knots; $1\,\text{knot} = 1.852\,\text{km/h}$
@@ -185,11 +185,11 @@
 **Reasonableness:** The length of the pendulum is four times as great and the period twice as great, because $\sqrt{4} = 2$. The period of a one-metre pendulum is about two seconds, which fits the pendulum of a wall clock.
 
 ## fy1-2-L3-05
-**Given:** from the table device A: $E_\text{A} = 0.65\,\text{kWh}$, $P_\text{A} = 85.0\,\text{W}$; device B: $E_\text{B} = 2.20\,\text{MJ}$, $P_\text{B} = 0.100\,\text{kW}$; $1\,\text{W} = 1\,\text{J/s}$
-**Find:** which device runs longer and by how many hours
-**Principle:** The numerical values $0.65$ and $2.20$ cannot be compared, because the units $\text{kWh}$ and $\text{MJ}$ are of different sizes. A device runs for the time $t = \tfrac{E}{P}$ until the stored energy has been used up. Energy and power are therefore converted to the units J and W.
+**Given:** from the table power bank A: $E_\text{A} = 0.65\,\text{kWh}$, $P_\text{A} = 85.0\,\text{W}$; power bank B: $E_\text{B} = 2.20\,\text{MJ}$, $P_\text{B} = 0.100\,\text{kW}$; $1\,\text{W} = 1\,\text{J/s}$
+**Find:** which power bank runs longer and by how many hours
+**Principle:** The numerical values $0.65$ and $2.20$ cannot be compared, because the units $\text{kWh}$ and $\text{MJ}$ are of different sizes. A power bank runs for the time $t = \tfrac{E}{P}$ until the stored energy has been used up. Energy and power are therefore converted to the units J and W.
 **Formula:** $t = \dfrac{E}{P}$
 **Conversions:** In place of the kilowatt-hour we write $1000\,\text{W}\cdot3600\,\text{s}$, that is $1\,\text{kWh} = 3.6\,\text{MJ}$. $E_\text{A} = 0.65\cdot1000\,\text{W}\cdot3600\,\text{s} = 2.34\cdot10^{6}\,\text{J}$, $E_\text{B} = 2.20\cdot10^{6}\,\text{J}$ and $P_\text{B} = 0.100\cdot1000\,\text{W} = 100\,\text{W}$. Seconds are converted to hours, $1\,\text{h} = 3600\,\text{s}$.
 **Substitution:** $t_\text{A} = \dfrac{2.34\cdot10^{6}\,\text{J}}{85.0\,\text{W}} = 2.753\cdot10^{4}\,\text{s} = 7.647\,\text{h}$ and $t_\text{B} = \dfrac{2.20\cdot10^{6}\,\text{J}}{100\,\text{W}} = 2.20\cdot10^{4}\,\text{s} = 6.111\,\text{h}$. The difference is $7.647\,\text{h} - 6.111\,\text{h} = 1.54\,\text{h} \approx 1.5\,\text{h}$
-**Answer:** device A runs longer, about $1.5\,\text{h}$, two significant figures like the energy $0.65\,\text{kWh}$. The energy of device B is only $0.61\,\text{kWh}$, and its power is greater. So the claim is not correct.
-**Reasonableness:** The energy of device A, $650\,\text{Wh}$, divided by an estimate of $90\,\text{W}$ for the power $85\,\text{W}$ gives about $7\,\text{h}$. The energy of device B is $2.2:3.6 = 0.61\,\text{kWh}$, and $610\,\text{Wh} : 100\,\text{W}$ is about $6\,\text{h}$.
+**Answer:** power bank A runs longer, about $1.5\,\text{h}$, two significant figures like the energy $0.65\,\text{kWh}$. The energy of power bank B is only $0.61\,\text{kWh}$, and its power is greater. So the claim is not correct.
+**Reasonableness:** The energy of power bank A, $650\,\text{Wh}$, divided by an estimate of $90\,\text{W}$ for the power $85\,\text{W}$ gives about $7\,\text{h}$. The energy of power bank B is $2.2:3.6 = 0.61\,\text{kWh}$, and $610\,\text{Wh} : 100\,\text{W}$ is about $6\,\text{h}$.

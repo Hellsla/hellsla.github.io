@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: a49ccdab79639a3d
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+CONTENT-HASH: cefe1060a1ac8c88
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] Mixed precision in the worked example (0 min and 20 °C next to 5.0 min); intended per the exact-integer rule.
+- fy1-5 figure: the two lines are told apart by colour and the end labels; the alt text does not name colours, so nothing to change.
 
 ## Checked
-- Diff since edb368de4 of: lesson.md, inquiry.json. interpolation/extrapolation and model-type sentence read well; exact data written as 20 °C, 0 min with units in LaTeX. Judged from the diff and source only; no captures opened (light mode).
+- lesson.md (table header units \text, one wording), inquiry.json (feedback wording, units in \text{}); no figures.py change
+- Changes mirror the Finnish fix in en; no notation, unit or decimal-comma error introduced.

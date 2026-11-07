@@ -97,7 +97,7 @@
 **Muunnokset:** Molemmat viiveet ovat sekunteina, joten muunnoksia ei tarvita.
 **Sijoitus:** $\Delta t_\text{sys} = 0{,}12\,\text{s} - 0{,}18\,\text{s} = -0{,}06\,\text{s}$
 **Vastaus:** $-0{,}06\,\text{s}$. Siinä on kaksi desimaalia, kuten viiveissä. Miinus kertoo, että lukema on liian lyhyt.
-**Järkevyys:** Aloitusviive on suurempi kuin lopetusviive, joten lukema jää lyhyeksi ja etumerkki on negatiivinen. Viiveet kumoavat toisensa lähes kokonaan. Virhe on vain kolmasosa aloitusviiveestä. Jos lukema olisi $3{,}44\,\text{s}$, oikea aika olisi $3{,}50\,\text{s}$.
+**Järkevyys:** Aloitusviive on suurempi kuin lopetusviive, joten lukema jää lyhyeksi ja etumerkki on negatiivinen. Viiveet kumoavat toisensa suurelta osin. Virhe on vain kolmasosa aloitusviiveestä. Jos lukema olisi $3{,}44\,\text{s}$, oikea aika olisi $3{,}50\,\text{s}$.
 
 ## fy1-3-L3-02
 **Annettu:** arkkien lukumäärä $n = 250$, pienin asteikkoväli $d = 1{,}0\,\text{mm}$
@@ -141,7 +141,7 @@
 **Kaava:** $\Delta x = \dfrac{d}{2}$ kummallekin välineelle, ja vertailu on suhde $\Delta x_\text{v} : \Delta x_\text{t}$
 **Muunnokset:** Molemmat välit ovat millimetreinä, joten muunnoksia ei tarvita.
 **Sijoitus:** $\Delta x_\text{v} = \dfrac{1{,}0\,\text{mm}}{2} = 0{,}5\,\text{mm}$ ja $\Delta x_\text{t} = \dfrac{0{,}01\,\text{mm}}{2} = 0{,}005\,\text{mm}$, joten $0{,}5\,\text{mm} : 0{,}005\,\text{mm} = 100$
-**Vastaus:** $100$ kertaa pienempi, yksi merkitsevä numero kuten askeleessa $0{,}01\,\text{mm}$. Työntömitan lukemisepävarmuus on sadasosa viivaimen epävarmuudesta.
+**Vastaus:** $100$ kertaa pienempi. Suhde on tarkka, koska molemmat epävarmuudet on arvioitu samalla säännöllä: puolet lukemavälistä. Työntömitan lukemisepävarmuus on sadasosa viivaimen epävarmuudesta.
 **Järkevyys:** Suhde on sama kuin lukemavälien suhde $1{,}0\,\text{mm} : 0{,}01\,\text{mm} = 100$, koska puolittaminen supistuu pois. Viivaimella paksuus luetaan puolen millimetrin tarkkuudella ja työntömitalla puolen sadasosamillimetrin tarkkuudella. Tämä vastaa arkikokemusta siitä, että työntömitta on tarkempi.
 
 ## fy1-3-L2-05
@@ -171,8 +171,8 @@
 **Kaava:** $\Delta T = \dfrac{\Delta t}{N}$ ja vaatimus $\dfrac{\Delta T}{T} \le 0{,}01$, joten $\dfrac{\Delta t}{N \cdot T} \le 0{,}01$, josta $N \ge \dfrac{\Delta t}{0{,}01 \cdot T}$
 **Muunnokset:** Ei tarvita. Kaikki ajat ovat sekunteina, ja $1\,\% = 0{,}01$.
 **Sijoitus:** $N \ge \dfrac{0{,}2\,\text{s}}{0{,}01 \cdot 1{,}5\,\text{s}} = 13{,}33\ldots$
-**Vastaus:** Heilahduksia täytyy mitata vähintään $14$, koska $N$ on kokonaisluku ja $13$ ei riitä ($0{,}2 : (13 \cdot 1{,}5) = 1{,}03\,\%$).
-**Järkevyys:** Tarkistus: $N = 14$ antaa $\Delta T = 0{,}2\,\text{s} : 14 \approx 0{,}0143\,\text{s}$ ja $0{,}0143\,\text{s} : 1{,}5\,\text{s} \approx 0{,}95\,\%$, joten vaatimus täyttyy. Yhden heilahduksen mittaus antaisi epävarmuudeksi $0{,}2 : 1{,}5 = 13\,\%$.
+**Vastaus:** Heilahduksia täytyy mitata vähintään $14$, koska $N$ on kokonaisluku ja $13$ ei riitä ($0{,}2\,\text{s} : (13 \cdot 1{,}5\,\text{s}) \approx 1{,}03\,\%$).
+**Järkevyys:** Tarkistus: $N = 14$ antaa $\Delta T = 0{,}2\,\text{s} : 14 \approx 0{,}0143\,\text{s}$ ja $0{,}0143\,\text{s} : 1{,}5\,\text{s} \approx 0{,}95\,\%$, joten vaatimus täyttyy. Yhden heilahduksen mittaus antaisi epävarmuudeksi $0{,}2\,\text{s} : 1{,}5\,\text{s} \approx 13\,\%$.
 **Mallivastaus:** Reaktioajan virhe ei kasva ajan pituuden mukana. Se on suunnilleen sama alussa ja lopussa. Pitkä mittaus jaetaan monelle heilahdukselle, jolloin yhteen heilahdukseen tuleva osuus pienenee. Toistaminen pienentää myös satunnaisvirhettä keskiarvon avulla.
 
 ## fy1-3-L3-04
