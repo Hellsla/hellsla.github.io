@@ -26,5 +26,33 @@
   "pages": 96,
   "bytes": 2362034,
   "date": "2026-11-07"
+ },
+ "FY3-en": {
+  "course": "FY3",
+  "lang": "en",
+  "pages": 204,
+  "bytes": 4619534,
+  "date": "2026-11-07"
+ },
+ "FY3-fi": {
+  "course": "FY3",
+  "lang": "fi",
+  "pages": 200,
+  "bytes": 4593112,
+  "date": "2026-11-07"
+ },
+ "FY4-en": {
+  "course": "FY4",
+  "lang": "en",
+  "pages": 204,
+  "bytes": 4052615,
+  "date": "2026-11-07"
+ },
+ "FY4-fi": {
+  "course": "FY4",
+  "lang": "fi",
+  "pages": 200,
+  "bytes": 4000077,
+  "date": "2026-11-07"
  }
 }
