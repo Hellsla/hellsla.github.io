@@ -467,7 +467,7 @@ Ulkoilmakonsertissa desibelimittari näyttää $96\,\text{dB}$, kun se on $10\,\
 
 <!-- vaihe -->
 
-**Tulos.** Intensiteetti on noin $4{,}0 \cdot 10^{-3}\,\text{W/m}^2$. Kaiutintornin ääniteho on noin $5{,}0\,\text{W}$. Tulokset ilmoitetaan kahdella merkitsevällä numerolla, koska taso $96\,\text{dB}$ on annettu kokonaisina desibeleinä. Jo $1\,\text{dB}$:n ero tasossa muuttaisi intensiteettiä ja tehoa noin neljänneksellä. Tarkkuutta rajoittaa siis taso. Merkinnästä $10\,\text{m}$ ei näe, kuinka tarkasti etäisyys on mitattu. Siksi oletetaan, että se on vähintään yhtä tarkka kuin taso.
+**Tulos.** Intensiteetti on noin $4{,}0 \cdot 10^{-3}\,\text{W/m}^2$. Kaiutintornin ääniteho on noin $5{,}0\,\text{W}$. Tulokset ilmoitetaan kahdella merkitsevällä numerolla, koska taso $96\,\text{dB}$ on annettu kokonaisina desibeleinä. Jo $1\,\text{dB}$:n ero tasossa muuttaisi intensiteettiä ja tehoa noin neljänneksellä. Tarkkuutta rajoittaa siis taso. Etäisyys $10\,\text{m}$ on annettu kokonaislukuna. Siksi sitä pidetään tarkkana arvona.
 
 <!-- vaihe -->
 

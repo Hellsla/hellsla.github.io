@@ -467,7 +467,7 @@ At an open-air concert a decibel meter reads $96\,\text{dB}$ at a distance of $1
 
 <!-- vaihe -->
 
-**Answer.** The intensity is about $4.0 \cdot 10^{-3}\,\text{W/m}^2$ and the sound power of the loudspeaker tower about $5.0\,\text{W}$. The results are given to two significant figures, because the level $96\,\text{dB}$ is given in whole decibels: a difference of just $1\,\text{dB}$ in the level would change the intensity and the power by about a quarter. So the level limits the precision. The notation $10\,\text{m}$ does not show how precisely the distance was measured, so it is assumed to be at least as precise as the level.
+**Answer.** The intensity is about $4.0 \cdot 10^{-3}\,\text{W/m}^2$ and the sound power of the loudspeaker tower about $5.0\,\text{W}$. The results are given to two significant figures, because the level $96\,\text{dB}$ is given in whole decibels: a difference of just $1\,\text{dB}$ in the level would change the intensity and the power by about a quarter. So the level limits the precision. The distance $10\,\text{m}$ is given as a whole number in the task data, so it is treated as an exact value.
 
 <!-- vaihe -->
 
