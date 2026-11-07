@@ -46,7 +46,17 @@ main h1{font-size:17pt!important;line-height:1.2!important}main h2{font-size:13p
 #ennusta,#tutki,#sim,#tarkista,#exercises,nav,.chapter-nav,details.sim-box,details.fold,details.hint,details.answer,
 details.solution,.solution,.pad,.pad-open,button,.stage-no,.skip-link,
 .activity:not(.act-theory):not(.act-hook),details.opt:has(.activity:not(.act-theory):not(.act-hook)),
-a[href*="kasitetakomo"],a[href*="takomo"]{display:none!important}
+a[href*="kasitetakomo"],a[href*="takomo"],#credits,.unit-credits{display:none!important}
+/* the photo credits list at the end of a chapter is left out: every photo's caption names its author and licence */
+/* a table prints flat: no scroll-cue shadows at its edges (they printed as grey bands), nothing hidden by scrolling */
+table{background:#fff!important;overflow:visible!important}
+/* a box never splits over two pages (a box taller than a page still breaks, there is no other way) */
+blockquote,.katex-display,.notice,table,.eq-chain,.example-task,.intro-aside,.kc,details.opt,.worked .step,.fig,
+figure,.book-qr{break-inside:avoid}
+/* a heading stays with the text after it */
+main h2,main h3,main h4,.theory-h,.example-label,.step-label{break-after:avoid}
+/* a box taller than about half a page may break (print_book.py marks it): moved whole it left a page nearly empty */
+.book-may-break{break-inside:auto!important}
 .intro-row{flex-direction:column!important}svg{max-width:100%;height:auto}img{max-width:100%}
 .book-qr{display:flex;gap:4mm;align-items:center;margin:0 0 5mm;padding:2.5mm 3mm;border:1px solid #bbb;border-radius:2mm;break-inside:avoid}
 .book-qr svg{width:21mm;height:21mm;flex:none}.book-qr p{margin:0;font-size:8.5pt!important;line-height:1.35}
@@ -80,42 +90,90 @@ def page_url(lang, name):
 def render_chapter(page, f, url, label):
     page.goto(f.as_uri(), wait_until="networkidle")
     page.evaluate("() => window.dispatchEvent(new Event('beforeprint'))")
-    title = page.evaluate("() => document.querySelector('main h1')?.textContent.trim() || document.title")
+    # the title as HTML: a formula in it stays KaTeX (rule 1); the MathML copy is dropped so it is not printed twice
+    title = page.evaluate("() => { const h = document.querySelector('main h1'); if (!h) return document.title; "
+                          "const c = h.cloneNode(true); c.querySelectorAll('.katex-mathml').forEach((m) => m.remove()); "
+                          "return c.innerHTML.trim(); }")
     page.add_style_tag(content=BOOK_CSS)
     box = (f'<div class="book-qr">{qr_svg(url)}<p>{html.escape(label)}:<br>'
            f'<span class="u">{html.escape(url.replace("https://", ""))}</span></p></div>')
+    # measure in the printed column width: a kept-whole box taller than ~45 % of the page body may break instead
+    page.emulate_media(media="print")
+    page.set_viewport_size({"width": round(120 * 96 / 25.4), "height": 900})
+    page.evaluate("""() => { const limit = 0.45 * 182 * 96 / 25.4;
+      for (const el of document.querySelectorAll('main *'))
+        if (getComputedStyle(el).breakInside === 'avoid' && el.getBoundingClientRect().height > limit)
+          el.classList.add('book-may-break'); }""")
     page.evaluate("(b) => { const h = document.querySelector('main h1'); "
                   "const q = h.closest('.intro-head')?.querySelector('blockquote') || h; q.insertAdjacentHTML('afterend', b); }", box)
     return title, page.pdf(format="A5", print_background=True, prefer_css_page_size=True)
 
 
-FRONT_CSS = """@page{size:A5;margin:16mm 15mm}body{font-family:Inter,'Segoe UI',Arial,sans-serif;color:#1d2a2a}
-.cover{height:170mm;display:flex;flex-direction:column;justify-content:space-between}
-.brand{font:700 13pt Georgia,serif;letter-spacing:.04em;color:#235e5a}.code{font:700 34pt Georgia,serif;margin:30mm 0 2mm}
-h1{font:600 19pt/1.25 Georgia,serif;margin:0}.note{font-size:9pt;color:#555}.qr{display:flex;gap:4mm;align-items:center;font-size:8.5pt}
-.qr svg{width:24mm;height:24mm}.blank{break-before:page;height:1mm}
-h2{font:700 15pt Georgia,serif;margin:0 0 6mm;break-before:page}ol{list-style:none;padding:0;margin:0;font-size:10pt}
-li{display:flex;gap:2mm;margin:0 0 2.6mm;line-height:1.3}li .n{flex:none;width:7mm;color:#235e5a;font-weight:700}
-li .t{flex:1}li .p{flex:none;width:8mm;text-align:right}"""
+FONTS = SITE / "vendor/fonts"
+BRAND = SITE / "brand"
+SITE_HOME = "https://ruukkilab.fi/"
+# the covers in the site's colours, kept light for a school printer (teacher 2026-11-07): cream paper with the
+# Ruukkilabra wordmark (its subtitle is part of the logo), the course in forest green over a thin green and copper
+# rule, the school's logo in black; the back cover has the site's address with a QR code. Covers have no margins.
+FRONT_CSS = """
+@font-face{font-family:"Fraunces";font-weight:100 900;src:url(%(fraunces)s) format("woff2")}
+@font-face{font-family:"Plus Jakarta Sans";font-weight:200 800;src:url(%(jakarta)s) format("woff2")}
+@page{size:A5;margin:16mm 15mm}@page cover{margin:0}
+html,body{margin:0}body{font-family:"Plus Jakarta Sans",Arial,sans-serif;color:#14171e;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.cover{page:cover;box-sizing:border-box;width:148mm;height:209.5mm;display:flex;flex-direction:column;background:#f7f3ec;
+  padding:22mm 16mm 16mm;overflow:hidden}
+.logo{display:block;width:92mm;height:auto}
+.rule{height:1.6mm;margin:30mm 0 9mm;background:linear-gradient(to right,#1a4b2e 0 72%%,#d76a10 72%% 100%%);width:40mm}
+.code{font:700 40pt/1 "Fraunces",Georgia,serif;color:#1a4b2e}
+h1{font:600 20pt/1.22 "Fraunces",Georgia,serif;margin:4mm 0 0;max-width:112mm;color:#14532d}
+.foot{margin-top:auto;display:flex;align-items:flex-end;justify-content:space-between;gap:6mm}
+.school{width:54mm;height:auto}
+.back{break-before:page;justify-content:space-between;align-items:center;text-align:center}
+.back .symbol{width:30mm;height:auto;margin-top:10mm}
+.back .note{font-size:9pt;color:#474c5b;margin:6mm 0 0;max-width:90mm;line-height:1.45}
+.qr{display:flex;flex-direction:column;align-items:center;gap:3mm;font:700 14pt "Plus Jakarta Sans",sans-serif;color:#1a4b2e}
+.qr svg{width:30mm;height:30mm}
+.blank{break-before:page;height:1mm}
+h2{font:700 15pt "Fraunces",Georgia,serif;color:#14532d;margin:0 0 6mm;break-before:page}
+ol{list-style:none;padding:0;margin:0;font-size:10pt}
+li{display:flex;gap:2mm;margin:0 0 2.6mm;line-height:1.3}li .n{flex:none;width:7mm;color:#14532d;font-weight:700}
+li .t{flex:1}li .p{flex:none;width:8mm;text-align:right}""" % {
+    "fraunces": (FONTS / "fraunces-latin-wght-normal.woff2").as_uri(),
+    "jakarta": (FONTS / "plus-jakarta-sans-latin-wght-normal.woff2").as_uri()}
+
+
+def _doc(lang, body):
+    return (f'<!doctype html><html lang="{lang[:2]}"><meta charset="utf-8">'
+            f'<link rel="stylesheet" href="{(SITE / "vendor/katex/katex.min.css").as_uri()}"><style>{FRONT_CSS}</style>'
+            f'<body>{body}</body></html>')
 
 
 def front_html(course, lang, course_title, toc, toc_start):
     t = TEXT[lang]
-    url = page_url(lang, f"{course}.html")
-    rows = "".join(f'<li><span class="n">{i}</span><span class="t">{html.escape(title)}</span>'
+    logo = BRAND / ("ruukkilabra-logo-en.svg" if lang == "en" else "ruukkilabra-logo-fi.svg")
+    rows = "".join(f'<li><span class="n">{i}</span><span class="t">{title}</span>'
                    f'<span class="p">{p}</span></li>' for i, (title, p) in enumerate(toc, 1))
-    return (f'<!doctype html><html lang="{lang[:2]}"><meta charset="utf-8"><style>{FRONT_CSS}</style><body>'
-            f'<div class="cover"><div><div class="brand">Ruukkilabra</div><div class="code">{course}</div>'
-            f'<h1>{html.escape(course_title)}</h1></div><div><div class="qr">{qr_svg(url)}<div>{t["course_qr"]}:<br>'
-            f'{html.escape(url.replace("https://", ""))}</div></div><p class="note">{t["note"]}</p></div></div>'
-            f'<div class="blank"></div><h2>{t["toc"]}</h2><ol>{rows}</ol></body></html>')
+    return _doc(lang, f'<div class="cover"><img class="logo" src="{logo.as_uri()}" alt="Ruukkilabra">'
+                      f'<div class="rule"></div><div class="code">{course}</div><h1>{html.escape(course_title)}</h1>'
+                      f'<div class="foot"><img class="school" src="{(BRAND / "kiviruukin-lukio-rivi-musta.svg").as_uri()}" '
+                      f'alt="Kiviruukin lukio"></div></div>'
+                      f'<div class="blank"></div><h2>{t["toc"]}</h2><ol>{rows}</ol>')
 
 
-def number_pages(reader, skip):
-    """Stamps the page number at the foot of every page from index `skip` on."""
+def back_html(lang):
+    t = TEXT[lang]
+    return _doc(lang, f'<div class="cover back"><div><img class="symbol" src="{(BRAND / "ruukkilabra-symboli.svg").as_uri()}" '
+                      f'alt=""><p class="note">{t["note"]}</p></div>'
+                      f'<div class="qr">{qr_svg(SITE_HOME)}ruukkilab.fi</div>'
+                      f'<img class="school" src="{(BRAND / "kiviruukin-lukio-rivi-musta.svg").as_uri()}" alt="Kiviruukin lukio">'
+                      f'</div>')
+
+
+def number_pages(reader, skip, stop):
+    """Stamps the page number at the foot of the pages from index `skip` up to `stop`."""
     out = PdfWriter()
     for i, pg in enumerate(reader.pages):
-        if i >= skip:
+        if skip <= i < stop:
             buf = io.BytesIO()
             w, h = float(pg.mediabox.width), float(pg.mediabox.height)
             c = canvas.Canvas(buf, pagesize=(w, h))
@@ -178,19 +236,33 @@ def main():
             for title, r in rendered:
                 toc.append((title, p))
                 p += len(r.pages)
-            page.set_content(front_html(course, a.lang, course_title, toc, front_n))
+            front_file = out / f".{course}-{a.lang}-front.html"   # a file, so the page may load KaTeX's file:// CSS
+            front_file.write_text(front_html(course, a.lang, course_title, toc, front_n), encoding="utf-8")
+            page.goto(front_file.as_uri(), wait_until="networkidle")
+            front_file.unlink()
             front = PdfReader(io.BytesIO(page.pdf(format="A5", prefer_css_page_size=True)))
             if len(front.pages) == front_n:
                 break
             front_n = len(front.pages)
+        back_file = out / f".{course}-{a.lang}-back.html"
+        back_file.write_text(back_html(a.lang), encoding="utf-8")
+        page.goto(back_file.as_uri(), wait_until="networkidle")
+        back_file.unlink()
+        back = PdfReader(io.BytesIO(page.pdf(format="A5", prefer_css_page_size=True)))
         b.close()
     book = PdfWriter()
     for r in [front] + [r for _, r in rendered]:
         for pg in r.pages:
             book.add_page(pg)
+    content = len(book.pages)
+    # blank pages before the back cover, so the back cover is the last page of a folded booklet (pages = 4k)
+    w, h = float(book.pages[0].mediabox.width), float(book.pages[0].mediabox.height)
+    for _ in range(-(content + 1) % 4):
+        book.add_blank_page(width=w, height=h)
+    book.add_page(back.pages[0])
     buf = io.BytesIO()
     book.write(buf)
-    numbered = number_pages(PdfReader(buf), skip=2)
+    numbered = number_pages(PdfReader(buf), skip=2, stop=content)
     a5 = out / f"{course}-{a.lang}-A5.pdf"
     with open(a5, "wb") as fh:
         numbered.write(fh)
