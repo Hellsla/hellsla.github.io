@@ -686,7 +686,7 @@
       {
        "key": "conclusion",
        "points": 1,
-       "detail": "Tunnistaa, että hukkalämmön hyödyntäminen voi pienentää lämmitysjärjestelmän päästöjä, mutta datakeskuksen koko elinkaaren päästöt eivät välttämättä ole nolla edes silloin, kun käyttösähkö on hyvin vähäpäästöistä."
+       "detail": "Päättelee perustellusti, että väite on liioiteltu. Kumpi tahansa perustelu riittää: käyttösähkön tuotanto aiheuttaa päästöjä, ellei sähkö ole päästötöntä, tai hukkalämmön hyödyntäminen voi pienentää lämmitysjärjestelmän päästöjä, mutta datakeskuksen koko elinkaaren päästöt eivät välttämättä ole nolla edes silloin, kun käyttösähkö on hyvin vähäpäästöistä."
       }
      ]
     }
