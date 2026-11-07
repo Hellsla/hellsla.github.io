@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: b5c59918824d6c16
+CONTENT-HASH: c78dad593ca07feb
 Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
@@ -13,3 +13,4 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction 
 - Diff since origin/main for fy6-14 lesson (fi-easy) read against the teacher's brief items that touch it; the changed text says what the brief intends, is consistent between lesson, inquiry, exercises, solutions and feedback, and introduces no new misconception.
 - Standing rules in the changed lines: LaTeX maths and units, decimal comma, no bold in task statements, no lesson ids shown.
 - NOTES.md §12: same physics as the Finnish; new terms (kytkentämuutos, irradianssi, tehokerroin, vaihe-ero, pätöteho, mitoitettu, vakiovirtalähde etc.) are explained in the sentence where first used; whole natural sentences, one action per sentence in instructions.
+- Round 2 (31612ad07 delta): Same fix in fi-easy ("LED ei rajoita virtaansa näin. Sen vuoksi ..."); the comma/capital issue in calc is untouched and remains Polish. No new Blocking.
