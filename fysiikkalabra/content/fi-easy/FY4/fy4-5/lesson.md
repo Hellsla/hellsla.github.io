@@ -437,11 +437,11 @@ Pulkkaa, jonka massa on $12\,\text{kg}$, vedetään vaakasuoralla lumella narull
 
 <!-- vaihe -->
 
-**Tulos.** Kiihtyvyys on $a \approx 3{,}0\,\text{m/s}^2$ ja tukivoima $N \approx 72\,\text{N}$. Vastaukset annetaan kahdella merkitsevällä numerolla. Massassa $12\,\text{kg}$ on kaksi merkitsevää numeroa. Myös voimien $80\,\text{N}$ ja $30\,\text{N}$ tulkitaan olevan annettu kahden merkitsevän numeron tarkkuudella.
+**Tulos.** Kiihtyvyys on $a \approx 2{,}96\,\text{m/s}^2$ ja tukivoima $N \approx 71{,}8\,\text{N}$. Lähtötietojen kokonaisluvut $12\,\text{kg}$, $80\,\text{N}$, $30\,\text{N}$ ja $35^\circ$ tulkitaan tarkoiksi arvoiksi. Tarkkuutta rajaa siis putoamiskiihtyvyys $9{,}81\,\text{m/s}^2$. Siksi tulokset annetaan kolmella merkitsevällä numerolla.
 
 <!-- vaihe -->
 
-**Järkevyys.** Pulkan paino on $mg \approx 118\,\text{N}$. Tukivoima $72\,\text{N}$ on sitä pienempi. Syy on, että narun pystykomponentti $T_y \approx 46\,\text{N}$ kannattelee osan painosta. Summa täsmää: $72\,\text{N} + 46\,\text{N} \approx 118\,\text{N}$. Ilman kitkaa kiihtyvyys olisi $65{,}5\,\text{N} : 12\,\text{kg} \approx 5{,}5\,\text{m/s}^2$. Kitka siis pienentää kiihtyvyyttä, kuten pitääkin.
+**Järkevyys.** Pulkan paino on $mg \approx 118\,\text{N}$. Tukivoima $71{,}8\,\text{N}$ on sitä pienempi. Syy on, että narun pystykomponentti $T_y \approx 45{,}9\,\text{N}$ kannattelee osan painosta. Summa täsmää: $71{,}8\,\text{N} + 45{,}9\,\text{N} \approx 118\,\text{N}$. Ilman kitkaa kiihtyvyys olisi $65{,}5\,\text{N} : 12\,\text{kg} \approx 5{,}5\,\text{m/s}^2$. Kitka siis pienentää kiihtyvyyttä, kuten pitääkin.
 
 ## Yleinen virhekäsitys
 Liikkuvaan kappaleeseen ei tarvitse vaikuttaa voimaa liikkeen suuntaan. Liukuvaan laatikkoon vaikuttavat vain paino, tukivoima ja kitka. "Liikkeen voimaa" ei ole, koska mikään kappale ei aiheuta sitä.

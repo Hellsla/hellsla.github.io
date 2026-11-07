@@ -472,7 +472,7 @@ x &= x_1 + v\,t \\
 
 <!-- vaihe -->
 
-**Tulos.** Nopeus on $v = 2{,}5\,\text{m/s}$. Paikka hetkellä $60\,\text{s}$ on $x = 170\,\text{m}$ eli $1{,}7 \cdot 10^2\,\text{m}$. Nopeudessa on kaksi merkitsevää numeroa, koska kuvaajasta luetut arvot tunnetaan noin kahden merkitsevän numeron tarkkuudella. Aikavälin $40\,\text{s}$ loppunolla on siis tässä merkitsevä. Paikassa tulo $2{,}5\,\text{m/s} \cdot 60\,\text{s} = 150\,\text{m}$ on myös kahdella numerolla. Siksi summa $20\,\text{m} + 150\,\text{m}$ tunnetaan vain kymmenien metrien tarkkuudella: $x = 1{,}7 \cdot 10^2\,\text{m}$.
+**Tulos.** Nopeus on $v = 2{,}5\,\text{m/s}$. Paikka hetkellä $60\,\text{s}$ on $x = 170\,\text{m}$. Kuvaajasta luetut kokonaisluvut $0\,\text{s}$, $40\,\text{s}$, $20\,\text{m}$ ja $120\,\text{m}$ tulkitaan tarkoiksi arvoiksi. Siksi tuloksia ei tarvitse pyöristää. Ne ovat tämän mallin tarkkoja arvoja.
 
 <!-- vaihe -->
 

@@ -472,7 +472,7 @@ x &= x_1 + v\,t \\
 
 <!-- vaihe -->
 
-**Result.** The velocity is $v = 2.5\,\text{m/s}$ and the position at the moment $60\,\text{s}$ is $x = 170\,\text{m}$ or $1.7 \cdot 10^2\,\text{m}$. The velocity has two significant figures, because the values read from the graph are known to about two significant figures: the final zero of the time interval $40\,\text{s}$ is significant here. In the position, the product $2.5\,\text{m/s} \cdot 60\,\text{s} = 150\,\text{m}$ also has two figures, so the sum $20\,\text{m} + 150\,\text{m}$ is known only to the accuracy of tens of metres: $x = 1.7 \cdot 10^2\,\text{m}$.
+**Result.** The velocity is $v = 2.5\,\text{m/s}$ and the position at the moment $60\,\text{s}$ is $x = 170\,\text{m}$. The whole numbers read from the graph, $0\,\text{s}$, $40\,\text{s}$, $20\,\text{m}$ and $120\,\text{m}$, are taken as exact values, so the results need no rounding: they are exact values of this model.
 
 <!-- vaihe -->
 

@@ -599,7 +599,7 @@ Rakennusnosturi nostaa betonielementtiä, jonka massa on $480\,\text{kg}$. Köyd
 
 <!-- vaihe -->
 
-**Tulos.** Kiihtyvyys on $a \approx 1{,}02\,\text{m/s}^2$ ylöspäin. Siinä on kolme merkitsevää numeroa kuten jännitysvoimassa $5{,}20\,\text{kN}$. Massan $480\,\text{kg}$ loppunolla tulkitaan tässä merkitseväksi; jos massa tunnettaisiin vain kahden numeron tarkkuudella, tulos pyöristettäisiin muotoon $1{,}0\,\text{m/s}^2$.
+**Tulos.** Kiihtyvyys on $a \approx 1{,}02\,\text{m/s}^2$ ylöspäin. Siinä on kolme merkitsevää numeroa kuten jännitysvoimassa $5{,}20\,\text{kN}$ ja putoamiskiihtyvyydessä $9{,}81\,\text{m/s}^2$. Kokonaisluku $480\,\text{kg}$ tulkitaan tarkaksi arvoksi, joten se ei rajoita tarkkuutta.
 
 <!-- vaihe -->
 

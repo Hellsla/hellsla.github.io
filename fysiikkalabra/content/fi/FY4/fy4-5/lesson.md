@@ -435,11 +435,11 @@ Pulkkaa, jonka massa on $12\,\text{kg}$, vedetään vaakasuoralla lumella narull
 
 <!-- vaihe -->
 
-**Tulos.** Kiihtyvyys on $a \approx 3{,}0\,\text{m/s}^2$ ja tukivoima $N \approx 72\,\text{N}$, kahden merkitsevän numeron tarkkuudella kuten massa $12\,\text{kg}$. Myös voimat $80\,\text{N}$ ja $30\,\text{N}$ tulkitaan kahden merkitsevän numeron tarkkuudella annetuiksi.
+**Tulos.** Kiihtyvyys on $a \approx 2{,}96\,\text{m/s}^2$ ja tukivoima $N \approx 71{,}8\,\text{N}$. Lähtötietojen kokonaisluvut $12\,\text{kg}$, $80\,\text{N}$, $30\,\text{N}$ ja $35^\circ$ tulkitaan tarkoiksi arvoiksi, joten tarkkuuden rajaa putoamiskiihtyvyys $9{,}81\,\text{m/s}^2$: tulokset annetaan kolmella merkitsevällä numerolla.
 
 <!-- vaihe -->
 
-**Järkevyys.** Pulkan paino on $mg \approx 118\,\text{N}$. Tukivoima $72\,\text{N}$ on sitä pienempi, koska narun pystykomponentti $T_y \approx 46\,\text{N}$ kannattelee osan painosta, ja $72\,\text{N} + 46\,\text{N} \approx 118\,\text{N}$. Ilman kitkaa kiihtyvyys olisi $65{,}5\,\text{N} : 12\,\text{kg} \approx 5{,}5\,\text{m/s}^2$, joten kitka pienentää sitä, kuten pitääkin.
+**Järkevyys.** Pulkan paino on $mg \approx 118\,\text{N}$. Tukivoima $71{,}8\,\text{N}$ on sitä pienempi, koska narun pystykomponentti $T_y \approx 45{,}9\,\text{N}$ kannattelee osan painosta, ja $71{,}8\,\text{N} + 45{,}9\,\text{N} \approx 118\,\text{N}$. Ilman kitkaa kiihtyvyys olisi $65{,}5\,\text{N} : 12\,\text{kg} \approx 5{,}5\,\text{m/s}^2$, joten kitka pienentää sitä, kuten pitääkin.
 
 ## Yleinen virhekäsitys
 Liikkuvaan kappaleeseen ei tarvitse vaikuttaa voimaa liikkeen suuntaan. Liukuvaan laatikkoon vaikuttavat vain paino, tukivoima ja kitka, eikä "liikkeen voimaa" ole: ei ole mitään kappaletta, joka sitä aiheuttaisi. Toinen yleinen virhe on pitää tukivoimaa aina yhtä suurena kuin paino. Tukivoima on juuri niin suuri, kuin tilanne vaatii: vinossa vedossa se on painoa pienempi, vinossa työnnössä suurempi ja ylöspäin kiihtyvässä hississä suurempi. Kolmas virhe on piirtää komponentit voimiksi voiman lisäksi, jolloin sama voima tulee laskuun kahteen kertaan.

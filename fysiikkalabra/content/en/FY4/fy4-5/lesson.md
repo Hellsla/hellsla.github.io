@@ -435,11 +435,11 @@ A sled of mass $12\,\text{kg}$ is pulled on horizontal snow by a rope that makes
 
 <!-- vaihe -->
 
-**Result.** The acceleration is $a \approx 3.0\,\text{m/s}^2$ and the normal force is $N \approx 72\,\text{N}$, given with two significant figures like the mass $12\,\text{kg}$. The forces $80\,\text{N}$ and $30\,\text{N}$ are also taken to be given to two significant figures.
+**Result.** The acceleration is $a \approx 2.96\,\text{m/s}^2$ and the normal force is $N \approx 71.8\,\text{N}$. The whole numbers of the data, $12\,\text{kg}$, $80\,\text{N}$, $30\,\text{N}$ and $35^\circ$, are taken as exact values, so the precision is limited by the free-fall acceleration $9.81\,\text{m/s}^2$: the results are given with three significant figures.
 
 <!-- vaihe -->
 
-**Reasonableness.** The weight of the sled is $mg \approx 118\,\text{N}$. The normal force $72\,\text{N}$ is smaller, because the vertical component of the rope force, $T_y \approx 46\,\text{N}$, supports part of the weight, and $72\,\text{N} + 46\,\text{N} \approx 118\,\text{N}$. Without friction the acceleration would be $65.5\,\text{N} : 12\,\text{kg} \approx 5.5\,\text{m/s}^2$, so friction reduces it, as it should.
+**Reasonableness.** The weight of the sled is $mg \approx 118\,\text{N}$. The normal force $71.8\,\text{N}$ is smaller, because the vertical component of the rope force, $T_y \approx 45.9\,\text{N}$, supports part of the weight, and $71.8\,\text{N} + 45.9\,\text{N} \approx 118\,\text{N}$. Without friction the acceleration would be $65.5\,\text{N} : 12\,\text{kg} \approx 5.5\,\text{m/s}^2$, so friction reduces it, as it should.
 
 ## Common misconception
 A moving object does not need a force in the direction of its motion. Only the weight, the normal force and friction act on a sliding box, and there is no "force of motion": there is no object that would cause it. Another common mistake is to think that the normal force is always equal to the weight. The normal force is exactly as large as the situation requires: in an oblique pull it is smaller than the weight, and in an oblique push or in an elevator accelerating upward it is larger. A third mistake is to draw the components as forces in addition to the force itself, which puts the same force into the calculation twice.

@@ -599,7 +599,7 @@ A construction crane lifts a concrete slab of mass $480\,\text{kg}$. The tension
 
 <!-- vaihe -->
 
-**Result.** The acceleration is $a \approx 1.02\,\text{m/s}^2$ upward. It has three significant figures, like the tension $5.20\,\text{kN}$. The final zero of the mass $480\,\text{kg}$ is taken as significant here; if the mass were known only to two figures, the result would be rounded to $1.0\,\text{m/s}^2$.
+**Result.** The acceleration is $a \approx 1.02\,\text{m/s}^2$ upward. It has three significant figures, like the tension $5.20\,\text{kN}$ and the free-fall acceleration $9.81\,\text{m/s}^2$. The whole number $480\,\text{kg}$ is taken as an exact value, so it does not limit the precision.
 
 <!-- vaihe -->
 
