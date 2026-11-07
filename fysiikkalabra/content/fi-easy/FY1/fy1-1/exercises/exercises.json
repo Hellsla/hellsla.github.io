@@ -46,7 +46,7 @@
     {
       "id": "fy1-1-L1-06",
       "level": 1,
-      "text": "Fysiikassa havainto ja malli ovat eri asioita. Esimerkiksi havainto on, että pudotettu kivi osuu maahan nopeammin kuin pudotettu höyhen. Mikä seuraavista erottaa fysikaalisen mallin pelkästä havainnosta?",
+      "text": "Fysiikassa havainto ja malli ovat eri asioita. Esimerkiksi havainto on tämä: kivi ja höyhen pudotetaan ilmassa samalta korkeudelta yhtä aikaa, ja kivi osuu maahan ennen höyhentä. Mikä seuraavista erottaa fysikaalisen mallin pelkästä havainnosta?",
       "kind": [
         "concept"
       ],
@@ -65,7 +65,7 @@
         },
         {
           "text": "Malli on teoria, jota ei voi enää muuttaa sen jälkeen, kun sen on kerran todettu toimivan.",
-          "feedback": "Malli ei ole muuttumaton. Se on voimassa vain oloissa, joissa sitä on testattu. Jos uusi mittaus poikkeaa ennusteesta, mallia korjataan tai sen voimassaolo rajataan. Esimerkiksi putoamismalli ilman ilmanvastusta kuvaa kiveä mutta ei höyhentä."
+          "feedback": "Malli ei ole muuttumaton. Kokeilla ja mittauksilla selvitetään, missä oloissa malli pätee. Jos uusi mittaus poikkeaa ennusteesta, mallia korjataan tai sen voimassaolo rajataan. Esimerkiksi putoamismalli ilman ilmanvastusta kuvaa kiveä mutta ei höyhentä."
         },
         {
           "text": "Malli on ilmiön täydellinen kuvaus, ja jos mittaus poikkeaa siitä, mittaus on aina virheellinen.",
@@ -87,7 +87,7 @@
     {
       "id": "fy1-1-L1-08",
       "level": 1,
-      "text": "Hiekanjyvän halkaisijan suuruusluokka on $10^{-3}\\,\\text{m}$. Viruksen halkaisijan suuruusluokka on $10^{-7}\\,\\text{m}$. Suuruusluokka on lähin kymmenpotenssi. Kuinka monta kertaa suurempi hiekanjyvä on viruksesta suuruusluokkien perusteella?",
+      "text": "Hiekanjyvän halkaisijan suuruusluokka on $10^{-3}\\,\\text{m}$. Viruksen halkaisijan suuruusluokka on $10^{-7}\\,\\text{m}$. Suuruusluokka on lähin kymmenpotenssi. Kuinka monta kertaa suurempi hiekanjyvä on virusta suuruusluokkien perusteella?",
       "kind": [
         "model"
       ],
@@ -98,7 +98,7 @@
     {
       "id": "fy1-1-L1-09",
       "level": 1,
-      "text": "Auringonpimennyksessä Kuu peittää Auringon täsmälleen. Siksi Aurinko ja Kuu näyttävät taivaalla yhtä suurilta. Kuun etäisyys Maasta on $3{,}84\\cdot10^{8}\\,\\text{m}$. Kuun halkaisija on $3{,}47\\cdot10^{6}\\,\\text{m}$ ja Auringon halkaisija $1{,}39\\cdot10^{9}\\,\\text{m}$.\n\nKohde näyttää yhtä suurelta, kun sen etäisyys on yhtä monta kertaa Kuun etäisyys kuin sen halkaisija on Kuun halkaisija. Mikä arvo on järkevä arvio Maan etäisyydelle Auringosta?",
+      "text": "Oletetaan pimennys, jossa Kuu peittää Auringon juuri ja juuri kokonaan. Silloin Aurinko ja Kuu näyttävät taivaalla suunnilleen yhtä suurilta. Kuun etäisyys Maasta on $3{,}84\\cdot10^{8}\\,\\text{m}$. Kuun halkaisija on $3{,}47\\cdot10^{6}\\,\\text{m}$ ja Auringon halkaisija $1{,}39\\cdot10^{9}\\,\\text{m}$.\n\nKohde näyttää yhtä suurelta, kun sen etäisyys on yhtä monta kertaa Kuun etäisyys kuin sen halkaisija on Kuun halkaisija. Mikä arvo on järkevä arvio Maan etäisyydelle Auringosta?",
       "kind": [
         "concept",
         "model"
@@ -122,7 +122,7 @@
         },
         {
           "text": "Noin $1{,}5\\cdot10^{13}\\,\\text{m}$",
-          "feedback": "Tämä on noin $39\\,000$ kertaa Kuun etäisyys, vaikka Auringon halkaisija on vain noin $400$ kertaa Kuun halkaisija. Niin kaukana Aurinko näyttäisi noin sata kertaa Kuuta pienemmältä. Silloin Kuu ei peittäisi sitä."
+          "feedback": "Tämä on noin $39\\,000$ kertaa Kuun etäisyys, vaikka Auringon halkaisija on vain noin $400$ kertaa Kuun halkaisija. Niin kaukana Auringon näennäinen halkaisija olisi noin sadasosa Kuun näennäisestä halkaisijasta. Näennäinen halkaisija tarkoittaa sitä, kuinka suurelta kohde näyttää taivaalla. Silloin Kuu peittäisi Auringon helposti kokonaan. Oletus suunnilleen yhtä suurista näennäisistä halkaisijoista ei siis täyttyisi."
         }
       ]
     }
@@ -164,7 +164,7 @@
     {
       "id": "fy1-1-L2-05",
       "level": 2,
-      "text": "Taulukossa on planeettojen keskimääräinen etäisyys $r$ Auringosta tähtitieteellisinä yksikköinä. Yksi tähtitieteellinen yksikkö on $1\\,\\text{AU}$ eli Maan etäisyys Auringosta.\n\nAurinkokunnan pienoismalli piirretään käytävälle. Neptunus on mallissa $2{,}0\\,\\text{m}$ päässä Auringosta, ja kaikki etäisyydet pienenevät samalla kertoimella.\n\nKuinka kaukana Auringosta Jupiter on pienoismallissa? Anna vastaus senttimetreinä. Mikä planeetta on pienoismallissa lähimpänä käytävän kohtaa, joka on $1{,}0\\,\\text{m}$ päässä Auringosta?",
+      "text": "Taulukossa on planeettojen keskimääräinen etäisyys $r$ Auringosta tähtitieteellisinä yksikköinä. Yksi tähtitieteellinen yksikkö on $1\\,\\text{AU}$. Se on suunnilleen Maan keskimääräinen etäisyys Auringosta.\n\nAurinkokunnan pienoismalli piirretään käytävälle. Neptunus on mallissa $2{,}0\\,\\text{m}$ päässä Auringosta, ja kaikki etäisyydet pienenevät samalla kertoimella.\n\nKuinka kaukana Auringosta Jupiter on pienoismallissa? Anna vastaus senttimetreinä. Mikä planeetta on pienoismallissa lähimpänä käytävän kohtaa, joka on $1{,}0\\,\\text{m}$ päässä Auringosta?",
       "kind": [
         "data",
         "model"
@@ -218,7 +218,7 @@
       "id": "fy1-1-L2-06",
       "level": 2,
       "core": true,
-      "text": "Taulukossa on neljän kohteen halkaisija $d = a\\cdot10^{n}\\,\\text{m}$ kymmenpotenssimuodossa. Määritä kunkin kohteen suuruusluokka. Laske sitten, montako suuruusluokkaa on ihmisen ja Linnunradan välillä. Perustele, miksi Linnunradan suuruusluokka ei ole $10^{20}$, vaikka sen eksponentti on $20$.",
+      "text": "Taulukossa on neljän kohteen koko $d = a\\cdot10^{n}\\,\\text{m}$ kymmenpotenssimuodossa. Määritä kunkin kohteen suuruusluokka. Laske sitten, montako suuruusluokkaa on ihmisen ja Linnunradan välillä. Perustele, miksi Linnunradan suuruusluokka ei ole $10^{20}$, vaikka sen eksponentti on $20$.",
       "kind": [
         "data",
         "reasoning"
@@ -227,7 +227,7 @@
       "unit": "suuruusluokkaa",
       "tolerance": 0.02,
       "data": {
-        "caption": "Kohteiden halkaisijat $d = a\\cdot10^{n}\\,\\text{m}$",
+        "caption": "Kohteiden koot $d = a\\cdot10^{n}\\,\\text{m}$",
         "columns": [
           "Kohde",
           "$a$",
@@ -344,13 +344,13 @@
     {
       "id": "fy1-1-L3-05",
       "level": 3,
-      "text": "Voyager 2 ylitti heliopaussin 5. marraskuuta 2018 etäisyydellä $d_0 = 119{,}7\\,\\text{AU}$ Auringosta. Sen nopeus Aurinkoon nähden on $v = 15{,}341\\,\\text{km/s}$. Tasaisen liikkeen malli on $d = d_0 + vt$.\n\nOppilas laski mallin ennusteen helmikuulle 2026. Heliopaussin ylityksestä on silloin kulunut $t = 7{,}25\\,\\text{a}$. Oppilaan ratkaisu: ”Matka on $s = vt = 15{,}341\\,\\text{km/s}\\cdot7{,}25 = 111{,}2\\,\\text{km}$. Etäisyys on $d = 119{,}7\\,\\text{AU} + 111{,}2\\,\\text{km} \\approx 119{,}7\\,\\text{AU}$. Voyager olisi siis lähes samassa paikassa kuin 2018, joten malli on väärä.”\n\nKäytä arvoja $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$ ja $1\\,\\text{a} = 3{,}156\\cdot10^{7}\\,\\text{s}$. Mittaus antoi helmikuussa 2026 arvon $143{,}05\\,\\text{AU}$.\n\nEtsi oppilaan virhe. Laske mallin oikea ennuste etäisyydelle $d$ tähtitieteellisinä yksikköinä. Selitä, miksi mittaus tukee mallia mutta ei todista, että Voyager liikkuu samalla nopeudella aina.",
+      "text": "Voyager 2 ylitti heliopaussin 5. marraskuuta 2018 etäisyydellä $d_0 = 119{,}0\\,\\text{AU}$ Auringosta (Burlaga ym. 2019, Nature Astronomy). Sen nopeus Aurinkoon nähden oli silloin $v = 15{,}341\\,\\text{km/s}$. Tasaisen liikkeen mallissa tämä nopeus pysyy samana: $d = d_0 + vt$.\n\nOppilas laski mallin ennusteen helmikuulle 2026. Heliopaussin ylityksestä on silloin kulunut $t = 7{,}25\\,\\text{a}$. Oppilaan ratkaisu: ”Matka on $s = vt = 15{,}341\\,\\text{km/s}\\cdot7{,}25 = 111{,}2\\,\\text{km}$. Etäisyys on $d = 119{,}0\\,\\text{AU} + 111{,}2\\,\\text{km} \\approx 119{,}0\\,\\text{AU}$. Voyager olisi siis lähes samassa paikassa kuin 2018, joten malli on väärä.”\n\nKäytä arvoja $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$ ja $1\\,\\text{a} = 3{,}156\\cdot10^{7}\\,\\text{s}$. NASA/JPL:n lennonseurannan mukaan Voyager 2 oli helmikuussa 2026 etäisyydellä $143{,}05\\,\\text{AU}$ Maasta. Maa kiertää Aurinkoa. Siksi luotaimen etäisyys Maasta voi poiketa sen etäisyydestä Auringosta noin $1\\,\\text{AU}$.\n\nEtsi oppilaan virhe. Laske mallin oikea ennuste etäisyydelle $d$ tähtitieteellisinä yksikköinä. Kuinka tarkasti ennustetta ja havaintoa voi näillä tiedoilla verrata? Selitä, miksi havainto tukee mallia mutta ei todista, että Voyager liikkuu samalla nopeudella aina.",
       "kind": [
         "error",
         "model",
         "reasoning"
       ],
-      "answer": 143.2,
+      "answer": 142.5,
       "unit": "AU",
       "tolerance": 0.02
     }

@@ -1,11 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: d21e3de3f3e15ea0
+CONTENT-HASH: 47933f68f26e6279
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-3 diff since the round-2 commit only)
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] Photo sits unfloated in the column at 1280 px (a figure row follows, so the house rule keeps it inline) and leaves the right side empty; acceptable, no change asked.
+- none
 
 ## Checked
-- batch delta review: opened fy1-2-1280-0.png and fy1-2-360-0.png (photo floated or inline in the column, no clipping or horizontal overflow, credit line present); alt text and caption read against the picture and the neighbouring paragraph; no number with a unit in the new caption or alt text.
+- git diff edb368de4 of the part's files (fi fy1-2 lesson): Voyager 2 d0 119,0 AU, 142,2 AU / 19,7 h feedback, source_note, table, calc text, significant-figure paragraph of lesson.md, sim.js D0 constant (no layout change); numbers in LaTeX with thin-space units, decimal comma/point per language consistent between feedback, model and reflection text.
+- source diff only (text, alt text, numbers); no figure geometry or layout changed, so no new captures were opened

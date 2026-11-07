@@ -1,20 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 0714f54cbaa54000
-Mode: delta (new YO-skill task and re-split task stems)
-Round 1
+CONTENT-HASH: 5b9d5a30105fc9a2
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- Captures in review/shots opened at full size: the new task L1-09 (five true/false statements; open-exercises-1280-8 and -9), in fi-easy.
-- The new task renders in the house layout: numbers and units as maths, options as whole rows, feedback opens inside the card, solution block (Find/Principle/Model answer) without clipping or overflow.
-- Opened: fy1-8 L3-04 solution (open-exercises-L3-1280-5). Judged from the diff only: the re-split stems of L2-05, L2-07, L3-02, L3-04 and L3-05 (paragraph breaks only, no wording or figure change).
-- Language: the new text is natural, plain Finnish with decimal comma, 'alle 0,2 s:n' style endings and glossary-consistent terms.
-- No figures in the changed part; figures unchanged.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+- 0,500/0,420 item, (s2-s1)/(t2-t1) notation, reaction-time sentence, solutions.md remarks.
+- No captures opened (light mode, judged from the diff). Fi-easy: sentences stay short and plain, notation and units in LaTeX with decimal comma, changes match the Finnish fix.

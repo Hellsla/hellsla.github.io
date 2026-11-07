@@ -1,16 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 4392cc6a514de0b2
-Mode: full (translation review against the reviewed Finnish set, teacher procedure 2026-10-28)
-Round 2
+CONTENT-HASH: 95ae6f4ee2245e81
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- L1-09: situation first, the question last as its own sentence; the rule ("as many times the distance... as the diameter") is given, so it is a level 1 modelling choice with no trap; natural English.
-- Distractor feedback names each error (Sun too close, factor 4 instead of 400, kilometres versus metres, too far) and repairs it with the apparent-size consequence, as in the Finnish.
-- Solution can be followed step by step: principle explained, ratio, product, why each other option fails, light-travel reasonableness check.
-- Rest of the set unchanged from the previous round; no fixes needed.
+- exercises.json, solutions.md, answers.py diffs. Voyager 2 task and solution use 119.0 AU and 142.5 AU; model answer on the observation (143.05 AU is from Earth, difference about 0.6 AU, below the roughly 1 AU orbital offset) is a good lesson in what a comparison can show; exact 10 min note.

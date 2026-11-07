@@ -4,7 +4,7 @@
       "id": "fy1-5-L1-01",
       "level": 1,
       "core": true,
-      "text": "A cyclist rides uniformly at $5.5\\,\\text{m/s}$. How far does the cyclist travel in 20 seconds?",
+      "text": "A cyclist rides uniformly at $5.5\\,\\text{m/s}$. How far does the cyclist travel in $20\\,\\text{s}$?",
       "answer": 110,
       "unit": "m",
       "tolerance": 0.02
@@ -76,7 +76,7 @@
     {
       "id": "fy1-5-L1-07",
       "level": 1,
-      "text": "In the $(t, v)$ graph, the speed of a uniformly moving trolley is a horizontal line at $v = 0.80\\,\\text{m/s}$ during the interval $0\\,\\text{s} - 12\\,\\text{s}$. The area of the rectangle between the line and the $t$-axis corresponds to the distance travelled. How far does the trolley travel during this time?",
+      "text": "The $(t, v)$ graph of a uniformly moving trolley is a horizontal line at $v = 0.80\\,\\text{m/s}$ during the interval $0\\text{–}12\\,\\text{s}$. The area of the rectangle between the line and the $t$-axis corresponds to the distance travelled. How far does the trolley travel during this time?",
       "kind": [
         "model"
       ],
@@ -100,7 +100,7 @@
     {
       "id": "fy1-5-L2-01",
       "level": 2,
-      "text": "A car drives at a constant speed of $54\\,\\text{km/h}$. How far does it travel in 14 seconds? Give the answer in metres.",
+      "text": "A car drives at a constant speed of $54\\,\\text{km/h}$. How far does it travel in $14\\,\\text{s}$? Give the answer in metres.",
       "answer": 210,
       "unit": "m",
       "tolerance": 0.02
@@ -116,7 +116,7 @@
     {
       "id": "fy1-5-L2-03",
       "level": 2,
-      "text": "A hiker is at a point $1.5\\,\\text{km}$ from a cabin. The hiker walks along a straight path away from the cabin, uniformly at $1.5\\,\\text{m/s}$. How far from the cabin is the hiker after 10 minutes? Give the answer in kilometres.",
+      "text": "A hiker is at a point $1.5\\,\\text{km}$ from a cabin. The hiker walks along a straight path away from the cabin, uniformly at $1.5\\,\\text{m/s}$. How far from the cabin is the hiker after $10\\,\\text{min}$? Give the answer in kilometres.",
       "answer": 2.4,
       "unit": "km",
       "tolerance": 0.02
@@ -221,7 +221,7 @@
         {
           "text": "Graph B",
           "figure": "fy1-5/pick-vt",
-          "feedback": "This is a $(t, v)$ graph: the vertical axis shows the speed $v$, not the position $s$. In it, standing still is $v = 0$ and steady walking is a horizontal line, but in a position graph a horizontal line means staying in place. You cannot see from this graph where the walker is, nor that she is at $6.0\\,\\text{m}$ at the start."
+          "feedback": "This is a $(t, v)$ graph: the vertical axis shows the speed $v$, not the position $s$. In it, standing still is $v = 0$ and steady walking is a horizontal line, but in a position graph a horizontal line means staying in place. You cannot see from this graph where the walker is, nor that she is at $6.0\\,\\text{m}$ at the start. Even as a velocity graph B would not be right: the position decreases on the way back, so the velocity $v = \\Delta s : \\Delta t = -1.0\\,\\text{m/s}$ is negative."
         },
         {
           "text": "Graph C",
@@ -241,15 +241,15 @@
     {
       "id": "fy1-5-L3-01",
       "level": 3,
-      "text": "The Voyager 2 probe crossed the heliopause on 5 November 2018 at a distance of $119.7\\,\\text{AU}$ from the Sun (NASA/JPL), and its speed relative to the Sun is $15.341\\,\\text{km/s}$ (JPL). Assume the speed is constant.\n\nHow many days after the heliopause crossing is the probe, according to the model, $150\\,\\text{AU}$ from the Sun? Use the values $1\\,\\text{AU} = 149\\,597\\,870.7\\,\\text{km}$ and $1\\,\\text{day} = 86\\,400\\,\\text{s}$. The result is a model value.",
-      "answer": 3420,
+      "text": "The Voyager 2 probe crossed the heliopause on 5 November 2018 at a distance of $119.0\\,\\text{AU}$ from the Sun (Burlaga et al. 2019), and its speed relative to the Sun was then $15.341\\,\\text{km/s}$ (NASA/JPL). Assume the speed is constant.\n\nHow many days after the heliopause crossing is the probe, according to the model, $150\\,\\text{AU}$ from the Sun? Use the values $1\\,\\text{AU} = 149\\,597\\,870.7\\,\\text{km}$ and $1\\,\\text{day} = 86\\,400\\,\\text{s}$. The result is a model value.",
+      "answer": 3500,
       "unit": "days",
       "tolerance": 0.02
     },
     {
       "id": "fy1-5-L3-02",
       "level": 3,
-      "text": "According to the model, Voyager 2 is at a distance of $150\\,\\text{AU}$ from the Earth. A radio signal travels in vacuum uniformly at $299\\,792\\,458\\,\\text{m/s}$.\n\nHow many hours pass from the moment a command leaves the Earth to the moment the reply of the probe reaches the Earth? The motion of the probe and its processing time for the reply are ignored. Use the value $1\\,\\text{AU} = 149\\,597\\,870.7\\,\\text{km}$. Justify why the motion can be ignored.",
+      "text": "Assume that Voyager 2 is at a distance of $150\\,\\text{AU}$ from the Earth. A radio signal travels in vacuum uniformly at $299\\,792\\,458\\,\\text{m/s}$.\n\nHow many hours pass from the moment a command leaves the Earth to the moment the reply of the probe reaches the Earth? The motion of the probe and its processing time for the reply are ignored. Use the value $1\\,\\text{AU} = 149\\,597\\,870.7\\,\\text{km}$. Justify why the motion can be ignored.",
       "answer": 41.6,
       "unit": "h",
       "tolerance": 0.02
@@ -265,7 +265,7 @@
     {
       "id": "fy1-5-L3-04",
       "level": 3,
-      "text": "The position $s$ of a cyclist from the start of the track was measured by video analysis as a function of time $t$. Draw a graph of the points.\n\nThe cyclist's speed changes partway, so the motion cannot be modelled with a single straight line. Find in the table the moment when the speed changes, and model the motion as two uniform parts.\n\nUse the model to calculate the cyclist's average speed in the interval $5.0\\,\\text{s} - 35\\,\\text{s}$, where the average speed is the distance travelled in the interval divided by the length of the interval. The moment $35\\,\\text{s}$ is not in the table. Why is the average speed not the mean of the speeds of the parts?",
+      "text": "The position $s$ of a cyclist from the start of the track was measured by video analysis as a function of time $t$. Draw a graph of the points.\n\nThe cyclist's speed changes partway, so the motion cannot be modelled with a single straight line. Find in the table the moment when the speed changes, and model the motion as two uniform parts.\n\nUse the model to calculate the cyclist's average speed in the interval $5.0\\text{–}35\\,\\text{s}$, where the average speed is the distance travelled in the interval divided by the length of the interval. The moment $35\\,\\text{s}$ is not in the table. Why is the average speed not the mean of the speeds of the parts?",
       "kind": [
         "data",
         "graph",

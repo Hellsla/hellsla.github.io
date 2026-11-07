@@ -1,8 +1,8 @@
 # Tiheys: $m = \rho V$
 
-> **Miksi** kaksi samankokoista metallikuutiota voi tuntua kädessä aivan eri painoisilta? Miten voit päätellä tuntemattoman kappaleen aineen pelkän vaa'an ja mittalasin avulla?
+> **Miksi** kaksi samankokoista metallikuutiota voi tuntua kädessä aivan eripainoisilta? Miten voit päätellä tuntemattoman kappaleen aineen pelkän vaa'an ja mittalasin avulla?
 
-<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: laboratorion pöydällä on vaaka. Vaa&#x27;an kupeissa on kaksi samankokoista metallikuutiota. Toinen on vaalea alumiinikuutio, toinen tumma rautakuutio. Vaaka kallistuu rautakuution puolelle. Vieressä on mittalasi, jossa on vettä." class="fig-hero" style="max-width:100%;font-size:24px">
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: laboratorion pöydällä on vaaka. Vaa&#x27;an kupeissa on kaksi samankokoista metallikuutiota. Toinen kuutio on vaalea, toinen tumma. Vaaka kallistuu tumman kuution puolelle. Vieressä on mittalasi, jossa on vettä." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy17h-win" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#d0e6fb"/></linearGradient><linearGradient id="fy17h-foot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6c757d"/><stop offset="1" stop-color="#1f2933"/></linearGradient><linearGradient id="fy17h-pillar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a96a3"/><stop offset="0.3" stop-color="#ffffff"/><stop offset="0.65" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient><linearGradient id="fy17h-pan263" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a96a3"/><stop offset="0.3" stop-color="#ffffff"/><stop offset="0.65" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient><linearGradient id="fy17h-pan816" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a96a3"/><stop offset="0.3" stop-color="#ffffff"/><stop offset="0.65" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient><linearGradient id="fy17h-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient></defs>
   <rect x="0" y="0" width="1200" height="430" fill="#ffffff"/>
   <line x1="0" y1="0" x2="0" y2="430" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
@@ -103,7 +103,7 @@
 
 ## Ydinajatus
 
-Kappaleen massa $m$ kertoo, kuinka paljon ainetta kappaleessa on. Massan yksikkö on kilogramma. Tilavuus $V$ kertoo, kuinka suuren tilan kappale vie. Tilavuuden SI-yksikkö on kuutiometri ($\text{m}^3$). Kaksi samankokoista kappaletta voivat olla eri painoisia, jos ne ovat eri ainetta. Kymmenen kuutiosenttimetrin mäntykuutio on kevyt. Alumiinikuutio on selvästi raskaampi. Rautakuutio on raskain.
+Kappaleen massa $m$ kertoo, kuinka paljon ainetta kappaleessa on. Massan yksikkö on kilogramma. Tilavuus $V$ kertoo, kuinka suuren tilan kappale vie. Tilavuuden SI-yksikkö on kuutiometri ($\text{m}^3$). Kaksi samankokoista kappaletta voivat olla eripainoisia, jos ne ovat eri ainetta. Kymmenen kuutiosenttimetrin mäntykuutio on kevyt. Alumiinikuutio on selvästi raskaampi. Rautakuutio on raskain.
 
 <svg data-fig="cubes" viewBox="0 0 600 372" role="img" aria-label="Kaavakuva: kolme yhtä suurta kuutiota ovat mäntyä, alumiinia ja rautaa. Jokaisen kuution tilavuus on 10 cm³. Kuutiot ovat samankokoiset, mutta niiden massat ovat 5,0 g, 27 g ja 79 g. Vaakapylväät kuvaavat massaa, ja niiden pituudet ovat mittakaavassa. Rautakuution pylväs on yli kymmenen kertaa niin pitkä kuin mäntykuution pylväs." style="max-width:100%;font-size:24px">
   <defs><pattern id="fy17-grain" width="14" height="12" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1.3" fill="#a97a35"/><circle cx="10" cy="8" r="1" fill="#a97a35"/></pattern><linearGradient id="fy17-pine" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
@@ -150,13 +150,13 @@ Ero syntyy siitä, kuinka tiiviisti ainetta on tilavuuden sisällä. Tätä kuva
 
 ### Massa on suoraan verrannollinen tilavuuteen
 
-Mittaa saman aineen eri kokoisia paloja. Huomaat säännön: kaksinkertainen tilavuus antaa kaksinkertaisen massan. Puolet tilavuudesta antaa puolet massasta. Massa on siis **suoraan verrannollinen** tilavuuteen. Se tarkoittaa, että suhde $m : V$ pysyy samana. Tämä vakio suhde on aineen tiheys.
+Mittaa saman aineen erikokoisia paloja. Huomaat säännön: kaksinkertainen tilavuus antaa kaksinkertaisen massan. Puolet tilavuudesta antaa puolet massasta. Massa on siis **suoraan verrannollinen** tilavuuteen. Se tarkoittaa, että suhde $m : V$ pysyy samana. Tämä vakio suhde on aineen tiheys.
 
 Piirrä mittaustulokset koordinaatistoon. Vaaka-akselilla on tilavuus ja pystyakselilla massa. Pisteet ovat mittausepävarmuuden rajoissa suoralla, joka kulkee origon kautta (luku *Graafinen esitys ja suoran sovittaminen*). Suoran kulmakerroin on tiheys.
 
 ### Tiheys kertoo, mistä aineesta on kyse
 
-Jokaisella puhtaalla aineella on tietyssä olomuodossa ja lämpötilassa oma tiheytensä. Tiheys on siis kuin aineen sormenjälki. Mittaa ensin kappaleen massa ja tilavuus. Sitten voit verrata laskettua tiheyttä taulukkoarvoihin. Päättely ei ole varma. Mittauksissa on aina virhettä (luku *Mittaaminen ja mittauksen luotettavuus*). Lisäksi joillakin aineilla on lähes sama tiheys. Tulos kertoo siis vain, mitä aineita kappale voi olla.
+Jokaisella puhtaalla aineella on tietyssä olomuodossa, lämpötilassa ja paineessa oma tiheytensä. Tiheys on siis kuin aineen sormenjälki. Mittaa ensin kappaleen massa ja tilavuus. Sitten voit verrata laskettua tiheyttä taulukkoarvoihin. Päättely ei ole varma. Mittaustuloksissa on aina epävarmuutta (luku *Mittaaminen ja mittauksen luotettavuus*). Lisäksi joillakin aineilla on lähes sama tiheys. Tulos kertoo siis vain, mitä aineita kappale voi olla.
 
 <figure class="unit-photo"><img src="pics/fy1/blue-iceberg.webp" alt="Vaaleansininen jäävuori kelluu vedessä."><figcaption>Jäävuori järvellä Islannissa. Jää kelluu, koska sen tiheys on pienempi kuin veden tiheys.</figcaption></figure>
 
@@ -172,7 +172,7 @@ V &= \frac{m}{\rho}
 \end{aligned}
 ```
 
-Tässä $\rho$ on tiheys (SI-yksikkö $\text{kg/m}^3$), $m$ massa (kg) ja $V$ tilavuus ($\text{m}^3$). Muoto $m = \rho V$ on suoran verrannollisuuden malli $y = kx$. Massa $m$ on $y$, tilavuus $V$ on $x$ ja tiheys $\rho$ on kulmakerroin $k$.
+Tässä $\rho$ on tiheys (SI-yksikkö $\text{kg/m}^3$), $m$ massa (kg) ja $V$ tilavuus ($\text{m}^3$). Muoto $m = \rho V$ on suoraan verrannollisuuden malli $y = kx$. Massa $m$ on $y$, tilavuus $V$ on $x$ ja tiheys $\rho$ on kulmakerroin $k$.
 
 <svg data-fig="graph" viewBox="0 0 600 372" role="img" aria-label="Kuvaaja mittakaavassa: massa tilavuuden funktiona kolmelle aineelle. Jokainen aine antaa suoran, joka kulkee origon kautta. Veden tiheys on 1,00 g/cm³, alumiinin 2,70 g/cm³ ja raudan 7,87 g/cm³. Mitä suurempi tiheys on, sitä jyrkempi suora on. Raudan suoralle on piirretty kulmakerrointa osoittava kolmio. Siinä tilavuus kasvaa 20 cm³ ja massa noin 157 g." style="max-width:100%;font-size:24px">
   <line x1="165" y1="316" x2="165" y2="72" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -237,7 +237,7 @@ Tässä $\rho$ on tiheys (SI-yksikkö $\text{kg/m}^3$), $m$ massa (kg) ja $V$ ti
   <foreignObject x="115.5" y="104" width="110" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\rho = \dfrac{\Delta m}{\Delta V}$</div></foreignObject>
 </svg>
 
-Kuvassa jokaisen aineen pisteet ovat omalla suoralla. Mitä jyrkempi suora on, sitä suurempi on tiheys. Voit lukea tiheyden kuvaajasta. Lue suoralta kaksi kaukana toisistaan olevaa pistettä. Laske sitten $\rho = \Delta m : \Delta V$. Tämä tulos on tarkempi kuin yhden pisteen suhde $m : V$, koska se käyttää koko suoraa.
+Kuvassa jokaisen aineen pisteet ovat omalla suoralla. Mitä jyrkempi suora on, sitä suurempi on tiheys. Voit lukea tiheyden kuvaajasta. Lue suoralta kaksi kaukana toisistaan olevaa pistettä. Laske sitten $\rho = \Delta m : \Delta V$. Tämä tulos on luotettavampi kuin yhden mittauspisteen suhde $m : V$, koska suora on sovitettu kaikkiin mittauspisteisiin.
 
 ### Yksiköt
 
@@ -262,9 +262,11 @@ Pidä laskussa kaikki suureet samassa yksikköjärjestelmässä. Tilavuuden muun
 | lyijy | 11 300 | 11,3 |
 | kulta | 19 300 | 19,3 |
 
+Taulukon arvot ovat huoneenlämpötilassa. Jään arvo on $0\,{}^\circ\text{C}$:ssa. Puun tiheys vaihtelee sen mukaan, kuinka kosteaa puu on ja millaista se on. Männyn arvo on siksi tyypillinen arvo.
+
 ### Tilavuuden mittaaminen
 
-Säännöllisen kappaleen tilavuuden voi laskea mitoista. Kuution tilavuus on $a^3$. Suorakulmaisen särmiön tilavuus on pohjan pinta-ala kertaa korkeus. Epäsäännöllisen kappaleen tilavuus mitataan vedensiirtymällä. Upota kappale mittalasiin. Tilavuus on veden pinnan nousu $V = V_2 - V_1$.
+Säännöllisen kappaleen tilavuuden voi laskea mitoista. Kuution tilavuus on $a^3$. Suorakulmaisen särmiön tilavuus on pohjan pinta-ala kertaa korkeus. Epäsäännöllisen kappaleen tilavuus mitataan vedensiirtymällä. Upota kappale kokonaan mittalasissa olevaan veteen. Kappaleen tilavuus on mittalasin lukemien erotus $V = V_2 - V_1$.
 
 <svg data-fig="displacement" viewBox="0 0 600 372" role="img" aria-label="Periaatekuva tilavuuden mittaamisesta vedensiirtymällä. Vasemmassa mittalasissa vesi yltää merkkiin 40 ml. Kun kivi upotetaan, vesi nousee oikeassa mittalasissa merkkiin 70 ml. Kiven tilavuus on tilavuuksien erotus, 30 ml eli 30 cm³." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy17-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient></defs>
@@ -318,11 +320,11 @@ Mittalasin lukemassa on epävarmuutta. Sitä tulee esimerkiksi asteikon ja neste
 
 ### Astian massa mittauksessa
 
-Joskus nestettä mitataan astiassa. Vaaka näyttää silloin astian ja nesteen yhteismassan. Mittauspisteet eivät kulje origon kautta, koska tyhjänkin astian massa $m_0$ on mukana. Kokonaismassa noudattaa lineaarista mallia $m_\text{yht} = \rho V + m_0$. Tiheys on silti suoran kulmakerroin. Vakio $m_0$ on suoran ja pystyakselin leikkauspiste, eli tyhjän astian massa. Kokonaismassa ei ole suoraan verrannollinen tilavuuteen, mutta nesteen oma massa on.
+Joskus nestettä mitataan astiassa. Vaaka näyttää silloin astian ja nesteen yhteismassan. Mittauspisteisiin sovitettu suora ei kulje origon kautta, koska tyhjänkin astian massa $m_0$ on mukana. Kokonaismassa noudattaa lineaarista mallia $m_\text{yht} = \rho V + m_0$. Tiheys on silti suoran kulmakerroin. Vakiotermi $m_0$ on suoran ja pystyakselin leikkauskohta eli tyhjän astian massa. Kokonaismassa ei ole suoraan verrannollinen tilavuuteen, mutta nesteen oma massa on.
 
 ## Esimerkki
 
-Massiivisen rautapalkin pituus on $1{,}20\,\text{m}$. Sen poikkileikkaus on neliö, jonka sivu on 4,0 cm. Mikä on palkin massa?
+Massiivisen rautapalkin pituus on $1{,}20\,\text{m}$. Sen poikkileikkaus on neliö, jonka sivu on $4{,}0\,\text{cm}$. Mikä on palkin massa?
 
 <!-- vaihe -->
 
@@ -345,7 +347,7 @@ Massiivisen rautapalkin pituus on $1{,}20\,\text{m}$. Sen poikkileikkaus on neli
 
 <!-- vaihe -->
 
-**Yksikkömuunnokset.** Tiheys on yksikössä $\text{kg/m}^3$, joten pituudet muunnetaan metreiksi: $a = 4{,}0\,\text{cm} = 0{,}040\,\text{m}$. Pituus on jo metreinä. Massa saadaan silloin suoraan kilogrammoina.
+**Yksikkömuunnokset.** Tiheys on yksikössä $\text{kg/m}^3$, joten pituudet muunnetaan metreiksi: $a = 4{,}0\,\text{cm} = 4{,}0 \cdot 0{,}01\,\text{m} = 0{,}040\,\text{m}$. Pituus on jo metreinä. Massa saadaan silloin suoraan kilogrammoina.
 
 <!-- vaihe -->
 
@@ -356,13 +358,13 @@ Massiivisen rautapalkin pituus on $1{,}20\,\text{m}$. Sen poikkileikkaus on neli
 m &= \rho a^2 L \\
 &= 7870\,\tfrac{\text{kg}}{\text{m}^3} \cdot (0{,}040\,\text{m})^2 \cdot 1{,}20\,\text{m} \\
 &= 7870\,\tfrac{\text{kg}}{\text{m}^3} \cdot 1{,}92 \cdot 10^{-3}\,\text{m}^3 \\
-&= 15{,}11\,\text{kg}
+&\approx 15{,}11\,\text{kg}
 \end{aligned}
 ```
 
 <!-- vaihe -->
 
-**Tulos.** Palkin massa on noin $15\,\text{kg}$. Tulos ilmoitetaan kahdella merkitsevällä numerolla, koska sivu $4{,}0\,\text{cm}$ tunnetaan kahden numeron tarkkuudella. Taulukon tiheys $7870\,\text{kg/m}^3$ olisi tarkempi.
+**Tulos.** Palkin massa on noin $15\,\text{kg}$. Tulos ilmoitetaan kahdella merkitsevällä numerolla, koska sivu $4{,}0\,\text{cm}$ tunnetaan kahden merkitsevän numeron tarkkuudella. Pituus $1{,}20\,\text{m}$ ja taulukon tiheys $7870\,\text{kg/m}^3$ tunnetaan tarkemmin.
 
 <!-- vaihe -->
 
@@ -370,15 +372,15 @@ m &= \rho a^2 L \\
 
 ## Yleinen virhekäsitys
 
-Moni ajattelee, että suurempi kappale on tiheämpi, koska se on raskaampi. Isompi rautapala on kyllä raskaampi kuin pieni. Niiden tiheys on kuitenkin sama. Massa ja tilavuus kasvavat yhdessä, joten suhde $m : V$ ei muutu. Tiheys on aineen ominaisuus, ei kappaleen koon.
+Moni ajattelee, että suurempi kappale on tiheämpi, koska se on raskaampi. Isompi rautapala on kyllä raskaampi kuin pieni. Niiden tiheys on kuitenkin sama. Massa ja tilavuus kasvavat yhdessä, joten suhde $m : V$ ei muutu. Tiheys on aineen ominaisuus. Se ei riipu kappaleen koosta.
 
-Toinen virhe on sekoittaa yksiköt. Jos massa on grammoina ja tilavuus kuutiometreinä, tulos on tuhat kertaa liian suuri tai pieni. Muunna ensin kaikki yhteen yksikköjärjestelmään. Käytä joko $\text{kg}$ ja $\text{m}^3$ tai $\text{g}$ ja $\text{cm}^3$.
+Toinen virhe on sekoittaa yksiköt. Ajattele, että massa on grammoina mutta tilavuus kuutiometreinä. Jos luet tuloksen yksikössä $\text{kg/m}^3$, lukuarvo on tuhat kertaa liian suuri. Muunna ensin kaikki yhteen yksikköjärjestelmään. Käytä joko $\text{kg}$ ja $\text{m}^3$ tai $\text{g}$ ja $\text{cm}^3$.
 
 Kolmas virhe on ajatella, että tyhjän astian massa kuuluu nesteeseen. Vähennä se kokonaismassasta, ennen kuin lasket tiheyden.
 
 ## Tiivistelmä
 
-- Tiheys on massa tilavuutta kohti: $\rho = m : V$, SI-yksikkö $\text{kg/m}^3$. Vesi 1000 $\text{kg/m}^3$, alumiini 2700 $\text{kg/m}^3$, rauta 7870 $\text{kg/m}^3$.
+- Tiheys on massa tilavuutta kohti: $\rho = m : V$, SI-yksikkö $\text{kg/m}^3$. Vesi $1000\,\text{kg/m}^3$, alumiini $2700\,\text{kg/m}^3$, rauta $7870\,\text{kg/m}^3$.
 - Saman aineen massa on suoraan verrannollinen tilavuuteen: $m = \rho V$. Kuvaajassa $m(V)$ on origon kautta kulkeva suora, jonka kulmakerroin on tiheys.
 - Ratkaise kaavasta tarvitsemasi suure: $\rho = m : V$, $m = \rho V$ tai $V = m : \rho$. Pidä yksiköt samassa järjestelmässä: $1\,\text{g/cm}^3 = 1000\,\text{kg/m}^3$.
 - Epäsäännöllisen kappaleen tilavuus mitataan vedensiirtymällä $V = V_2 - V_1$. Astian massa pitää vähentää. Muuten se näkyy suoran vakiotermissä $m_0$.

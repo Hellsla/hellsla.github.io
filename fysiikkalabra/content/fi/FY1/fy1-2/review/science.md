@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: ac597b2b7b79c1f5
+CONTENT-HASH: 47933f68f26e6279
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 + round-3 diff since edb368de4 only)
 
 ## Blocking
+- none
 
 ## Polish
-- inquiry.json:83 — the new title "Ennuste 2: kauempana oleva luotain" is physically neutral: it states no factor and does not give away the answer. But the prompt talks only about distances of 10^7 km and 10^9 km, not about a probe, and 10^9 km is far nearer than Voyager 2 (about 2·10^10 km). — Consider "Ennuste 2: sata kertaa pidempi matka" or "Ennuste 2: valon kulkuaika kauemmas".
-- exit-ticket.json:8 — the answers "4200 m" and "500 µm" lose the significant figures of 4,2 km and 0,50 mm. — Write 4,2·10³ m and 5,0·10² µm, or add a note on this.
-- lesson.md:502 — the text calls AU "Maan ja Auringon keskimääräinen etäisyys" and also an exact defined value (fine as C). — Saying "nykyään sovittu tarkaksi arvoksi" would remove the small tension between the two.
-- inquiry.json:188 — the text says "sen tarkkuus on lähtötietojen tarkkuus". The constant-speed assumption also limits it. — Consider "ja sitä rajoittavat lähtötiedot ja vakionopeusoletus".
-- sim.js (the slider label) — at d = 0 km (Alusta, Aurinko), the label shows "d = 10^{6,00} km" because n is clamped to N_MIN, while the readout says d = 0 km. — Show "< 10^6" when d < 10^6 km.
+- none
 
 ## Checked
-- Delta since f86bfd82: only the title at inquiry.json:83 changed. pedagogy.md is not a lesson file. The round-1 blocking item is fixed: the title no longer states the distractor's tenfold premise.
-- Ennuste 2: 10^9 : 10^7 = 100. The correct option, 3300 s, matches the koe-1 value 3340 s. Every distractor (66 s, 330 s, 33 000 s) is wrong, and its feedback is right.
-- Round 1 still holds for the unchanged content: every recomputed number (Voyager 2 model, 8,32 min per AU, Neptune, transfer, Mercury, Saturn, area), the koe-1 values from simState.tLight, the isolated experiments, the sim's scale and model with its limits, the scale-list magnitudes, the significant-figure rules, the figures, and the FY1 scope.
-- Hash checked at the start and at the end: ac597b2b7b79c1f5.
+- git diff edb368de4 of lesson.md, inquiry.json, sim.js and tests/sims/fy1-2.json (fig/exit/meta unchanged).
+- Round-2 FAIL resolved: calc, model, source_note and sim D0_AU now all say d0 = 119,0 AU (Burlaga et al. 2019); sim test expectations recomputed.
+- Recomputed d = 119,0 AU + v(t - t0), v = 15,341 km/s: 1.1.2026 142,16 AU, 2,127e10 km, 19,71 h, ratio 142 to 8,32 min; table 2018/2022/2026/2030 = 119,0/131,9/144,9/157,8 AU, 1,78/1,97/2,17/2,36e10 km, 16,5/18,3/20,1/21,9 h; Feb 2026 142,4-142,6 AU vs JPL 143,05 AU from Earth: agreement within ~1 AU is stated correctly.
+- Solar deceleration GM/r^2 ~ 4e-7 m/s^2 over 7,2 a gives ~0,09 km/s: "about 0,1 km/s" correct; the 1 h, 1 week (1212 AU) feedbacks still right; test trip from 10^10,32 km: s = 4,15e8 km, t = 1384 s, jump x = 6,679e6 px all match.
+- lesson.md: new sentence that whole-number data ending in zeros (e.g. 10 min) are exact unless stated is a valid book convention, consistent with the 1000 conversion-factor sentence.

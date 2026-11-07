@@ -1,18 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 039bbf04c7489009
-Mode: full (translation review against the reviewed Finnish set; new task L2-08)
-Round 2
+CONTENT-HASH: 1d524cde5c7b4567
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
-(none)
-
-## Fixed
-(none needed)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- L2-08 keeps the YO-skill form of fi: data table plus a single-best-conclusion multiple choice, no hint, no answer given away in the text.
-- Each distractor targets a real misconception (difference as proof, "no effect" proved, over-precise average) and its feedback repairs it as in fi.
-- Language level suits the course (fi-easy): short sentences, terms consistent with the rest of the set; Solution has Given/Find/Principle/Model answer as in fi.
+- exercises.json, solutions.md, answers.py (new numbers 36,4 - 0,9 = 35,5 g; calliper data 8,04..8,09 cm, error 0,06 cm; arithmetic and the 0,025 cm vs 0,06 cm reasoning rechecked).

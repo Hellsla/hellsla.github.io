@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 7f59e0e2f3d10af7
+CONTENT-HASH: c93916da7159938e
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- Two sentences in a row begin "Siksi" ("Siksi ei tunneta ... Siksi tuloksen mukana ilmoitetaan") and three begin "Se"; vary: "Tämän vuoksi tuloksen mukana ilmoitetaan mittausepävarmuus. Mittausepävarmuus on arvio siitä, ...".
+- none
 
 ## Checked
-batch delta review (fi-easy, NOTES 12): uncertainty is not an absolute maximum, explained in short sentences; the caliper photo caption links to accuracy; alt texts plain; no task depends on the old wording.
+- inquiry.json (answer 2,08), lesson-answers.py, lesson.md (example-plot figure moved after the worked example: the result no longer shows before the student's steps; body unchanged).

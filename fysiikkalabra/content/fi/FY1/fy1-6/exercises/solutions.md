@@ -6,7 +6,7 @@
 **Muunnokset:** Aika on sekunteina ja $g$ yksikössä $\text{m/s}^2$, joten tulos tulee suoraan yksikössä $\text{m/s}$. Muunnoksia ei tarvita.
 **Sijoitus:** $v = 9{,}81\,\text{m/s}^2 \cdot 3{,}0\,\text{s} = 29{,}43\,\text{m/s}$
 **Vastaus:** $29\,\text{m/s}$, kaksi merkitsevää numeroa kuten ajassa $3{,}0\,\text{s}$.
-**Järkevyys:** Nopeus kasvaa noin $10\,\text{m/s}$ sekunnissa, joten kolmessa sekunnissa se on noin $3 \cdot 10\,\text{m/s} = 30\,\text{m/s}$, mikä vastaa tulosta. Lisäksi $29\,\text{m/s} \approx 106\,\text{km/h}$ on maantienopeus, mikä on järkevä tulos kolmen sekunnin vapaalle pudotukselle.
+**Järkevyys:** Nopeus kasvaa noin $10\,\text{m/s}$ sekunnissa, joten kolmessa sekunnissa se on noin $3 \cdot 10\,\text{m/s} = 30\,\text{m/s}$, mikä vastaa tulosta. Lisäksi $29{,}43\,\text{m/s} \approx 106\,\text{km/h}$ on maantienopeus, mikä on järkevä tulos kolmen sekunnin vapaalle pudotukselle.
 
 ## fy1-6-L1-02
 **Annettu:** omena lähtee levosta, $t = 0{,}80\,\text{s}$, $g = 9{,}81\,\text{m/s}^2$
@@ -16,7 +16,7 @@
 **Muunnokset:** Aika on annettu sekunteina, joten muunnoksia ei tarvita.
 **Sijoitus:** $v = 9{,}81\,\text{m/s}^2 \cdot 0{,}80\,\text{s} = 7{,}848\,\text{m/s}$
 **Vastaus:** $7{,}8\,\text{m/s}$, kaksi merkitsevää numeroa kuten ajassa $0{,}80\,\text{s}$.
-**Järkevyys:** Alle sekunnissa nopeus ehtii kasvaa alle $9{,}81\,\text{m/s}$, ja $0{,}80 \cdot 9{,}81 \approx 8$ antaa saman suuruusluokan. Nopeus $7{,}8\,\text{m/s} \approx 28\,\text{km/h}$ on järkevä alle sekunnin pudotuksen jälkeen: se on hölkkää nopeampi mutta ei vielä autojen vauhtia.
+**Järkevyys:** Alle sekunnissa nopeus ehtii kasvaa alle $9{,}81\,\text{m/s}$, ja $0{,}80 \cdot 9{,}81 \approx 8$ antaa lähes saman arvon. Nopeus $7{,}8\,\text{m/s} \approx 28\,\text{km/h}$ on järkevä alle sekunnin pudotuksen jälkeen: se on hölkkää nopeampi mutta ei vielä autojen vauhtia.
 
 ## fy1-6-L1-03
 **Annettu:** kivi lähtee levosta, $t = 4{,}0\,\text{s}$, Kuun putoamiskiihtyvyys $g_\text{Kuu} = 1{,}62\,\text{m/s}^2$ (tehtävänannosta)
@@ -37,7 +37,7 @@
 **Muunnokset:** Nopeudet ovat yksikössä $\text{m/s}$ ja ajat sekunteina, joten tulos tulee yksikössä $\text{m/s}^2$. Muunnoksia ei tarvita.
 **Sijoitus:** $g = \dfrac{49\,\text{m/s} - 0\,\text{m/s}}{5{,}0\,\text{s} - 0\,\text{s}} = \dfrac{49\,\text{m/s}}{5{,}0\,\text{s}} = 9{,}8\,\text{m/s}^2$
 **Vastaus:** $9{,}8\,\text{m/s}^2$, kaksi merkitsevää numeroa kuten luvuissa $49\,\text{m/s}$ ja $5{,}0\,\text{s}$.
-**Järkevyys:** Tulos on lähellä Maan arvoa $9{,}81\,\text{m/s}^2$, joten kuvaaja kuuluu Maassa putoavalle kappaleelle. Kulmakerroin on positiivinen, koska nopeus kasvaa ajan myötä.
+**Järkevyys:** Tulos on lähellä Maan arvoa $9{,}81\,\text{m/s}^2$, joten se sopii Maan pinnalla vapaasti putoavalle kappaleelle. Kulmakerroin on positiivinen, koska nopeus kasvaa ajan myötä.
 
 ## fy1-6-L1-05
 **Annettu:** kappale lähtee levosta, $t = 6{,}0\,\text{s}$, Marsin putoamiskiihtyvyys $g_\text{Mars} = 3{,}71\,\text{m/s}^2$ (tehtävänannosta)
@@ -68,7 +68,7 @@
 **Muunnokset:** Ei tarvita: nopeudet ovat yksikössä $\text{m/s}$ ja ajat sekunteina.
 **Sijoitus:** $g_\text{B} = \dfrac{40\,\text{m/s}}{5{,}0\,\text{s}} = 8{,}0\,\text{m/s}^2$ ja $t_\text{B} = \dfrac{20\,\text{m/s}}{8{,}0\,\text{m/s}^2} = 2{,}5\,\text{s}$
 **Vastaus:** $2{,}5\,\text{s}$, kaksi merkitsevää numeroa kuten luetuissa arvoissa ja ajassa $5{,}0\,\text{s}$.
-**Järkevyys:** Planeetan B kiihtyvyys $8{,}0\,\text{m/s}^2$ on kaksi kertaa A:n kiihtyvyys $\dfrac{20\,\text{m/s}}{5{,}0\,\text{s}} = 4{,}0\,\text{m/s}^2$, joten B:llä sama nopeus saavutetaan puolessa ajassa: $\tfrac{5{,}0\,\text{s}}{2} = 2{,}5\,\text{s}$. Kuvaajassa B:n suora ylittää $20\,\text{m/s}$ kohdan ajan $2$ ja $3\,\text{s}$ välillä, kuten pitääkin.
+**Järkevyys:** Planeetan B kiihtyvyys $8{,}0\,\text{m/s}^2$ on kaksi kertaa A:n kiihtyvyys $\dfrac{20\,\text{m/s}}{5{,}0\,\text{s}} = 4{,}0\,\text{m/s}^2$, joten B:llä sama nopeus saavutetaan puolessa ajassa: $\tfrac{5{,}0\,\text{s}}{2} = 2{,}5\,\text{s}$. Kuvaajassa B:n suora ylittää nopeuden $20\,\text{m/s}$ hetkien $2\,\text{s}$ ja $3\,\text{s}$ välillä, kuten pitääkin.
 
 ## fy1-6-L2-03
 **Annettu:** nopeus alussa $v_1 = 12{,}0\,\text{m/s}$, aikaväli $\Delta t = 1{,}50\,\text{s}$, $g = 9{,}81\,\text{m/s}^2$, ei ilmanvastusta
@@ -97,13 +97,13 @@
 **Kaava:** $v_1 = g\,t$ ja $v_2 = g\,t$, joten $\dfrac{v_2}{v_1} = \dfrac{g\,t}{g\,t}$
 **Muunnokset:** Ajat ovat sekunteina, ja massoja ei tarvita laskussa. Muunnoksia ei tarvita.
 **Sijoitus:** $v_1 = v_2 = 9{,}81\,\text{m/s}^2 \cdot 1{,}5\,\text{s} = 14{,}715\,\text{m/s}$, joten $\dfrac{v_2}{v_1} = \dfrac{14{,}715\,\text{m/s}}{14{,}715\,\text{m/s}} = 1{,}0$
-**Vastaus:** $1{,}0$, kaksi merkitsevää numeroa kuten ajassa $1{,}5\,\text{s}$. Suhde on tarkalleen yksi, koska massa supistuu pois.
+**Vastaus:** $1{,}0$ eli nopeudet ovat yhtä suuret. Suhde on tarkalleen yksi, koska kummankin pallon nopeus on $g\,t$ eikä massa esiinny kaavassa. Siksi tulos ei riipu ajan $1{,}5\,\text{s}$ tarkkuudesta.
 **Järkevyys:** Jos raskaampi putoaisi nopeammin, massan pitäisi näkyä kaavassa, mutta kaavassa $v = g\,t$ ei ole massaa. Tämä vastaa Kuussa tehtyä vasara–höyhen-koetta, jossa kappaleet osuivat maahan yhtä aikaa.
 
 ## fy1-6-L3-02
 **Annettu:** planeetalla ei ole ilmakehää, kivi lähtee levosta, $v_1 = 14{,}8\,\text{m/s}$ hetkellä $t_1 = 4{,}0\,\text{s}$, haluttu nopeus $v_2 = 30{,}0\,\text{m/s}$
 **Kysytty:** aika $t_2$ yksikössä $\text{s}$, jolloin nopeus on $30{,}0\,\text{m/s}$
-**Periaate:** Ilmakehän puuttuessa kivi on vapaassa pudotuksessa, joten nopeus on suoraan verrannollinen aikaan: $v = g\,t$. Planeetan $g$ ei tunneta, joten se ratkaistaan ensin annetusta mittauksesta ja sitten käytetään aikaa varten.
+**Periaate:** Ilmakehän puuttuessa kivi on vapaassa pudotuksessa, joten nopeus on suoraan verrannollinen aikaan: $v = g\,t$. Planeetan $g$:tä ei tunneta, joten se ratkaistaan ensin annetusta mittauksesta, ja sen avulla lasketaan sitten kysytty aika.
 **Kaava:** $g = \dfrac{v_1}{t_1}$ ja $t_2 = \dfrac{v_2}{g}$, joten $t_2 = \dfrac{v_2\,t_1}{v_1}$
 **Muunnokset:** Nopeudet ovat yksikössä $\text{m/s}$ ja ajat sekunteina, joten muunnoksia ei tarvita.
 **Sijoitus:** $g = \dfrac{14{,}8\,\text{m/s}}{4{,}0\,\text{s}} = 3{,}70\,\text{m/s}^2$ ja $t_2 = \dfrac{30{,}0\,\text{m/s}}{3{,}70\,\text{m/s}^2} = 8{,}108\,\text{s}$
@@ -136,7 +136,7 @@
 **Kysytty:** nopeuden kasvu sekunnissa yksikössä $\text{km/h}$
 **Periaate:** Putoamiskiihtyvyys kertoo nopeuden kasvun sekunnissa. Se ilmoitetaan toisessa yksikössä muuntamalla nopeus $\text{m/s}$ yksiköksi $\text{km/h}$.
 **Kaava:** $\Delta v = g\,\Delta t$. Kaava on jo ratkaistu kysytyn suureen suhteen.
-**Muunnokset:** Kun $\Delta t = 1\,\text{s}$, nopeus kasvaa $g$:n verran. Tunnissa ($3600\,\text{s}$) kertyy $3600\,\text{m} = 3{,}6\,\text{km}$, joten $1\,\text{m/s} = 3{,}6\,\text{km/h}$.
+**Muunnokset:** Kun $\Delta t = 1\,\text{s}$, nopeus kasvaa $g$:n verran. Nopeudella $1\,\text{m/s}$ kuljetaan tunnissa ($3600\,\text{s}$) $3600\,\text{m} = 3{,}6\,\text{km}$, joten $1\,\text{m/s} = 3{,}6\,\text{km/h}$.
 **Sijoitus:** $\Delta v = 9{,}81\,\text{m/s}^2 \cdot 1\,\text{s} = 9{,}81 \cdot 1\,\text{m/s} = 9{,}81 \cdot 3{,}6\,\text{km/h} = 35{,}316\,\text{km/h}$
 **Vastaus:** $35{,}3\,\text{km/h}$ sekunnissa, kolme merkitsevää numeroa kuten luvussa $9{,}81$.
 **Järkevyys:** Nopeus kasvaa noin $10\,\text{m/s}$ sekunnissa ja $10 \cdot 3{,}6 = 36\,\text{km/h}$, mikä vastaa tulosta. Kolmessa sekunnissa nopeus olisi jo noin $106\,\text{km/h}$.
@@ -149,7 +149,7 @@
 **Kaava:** $g = \dfrac{\Delta v}{\Delta t} = \dfrac{v_2 - v_1}{t_2 - t_1}$
 **Muunnokset:** Ei tarvita: nopeus on yksikössä $\text{m/s}$ ja aika yksikössä $\text{s}$.
 **Sijoitus:** $g = \dfrac{5{,}85\,\text{m/s} - 0\,\text{m/s}}{0{,}60\,\text{s} - 0\,\text{s}} = 9{,}75\,\text{m/s}^2$
-**Vastaus:** $g \approx 9{,}8\,\text{m/s}^2$, kaksi merkitsevää numeroa, koska suora sovitetaan silmämääräisesti. Silmämääräinen sovitus vaihtelee, joten noin $9{,}3\text{–}10{,}2\,\text{m/s}^2$ on hyvä vastaus. Tulos $9{,}75\,\text{m/s}^2$ on $0{,}6\,\%$ taulukkoarvoa $9{,}81\,\text{m/s}^2$ pienempi eli poikkeaa alle prosentin, joten mittaus tukee mallia $v = g\,t$ ja sen hajonta on satunnaista.
+**Vastaus:** $g \approx 9{,}8\,\text{m/s}^2$, kaksi merkitsevää numeroa, koska suora sovitetaan silmämääräisesti. Silmämääräinen sovitus vaihtelee, joten noin $9{,}3\text{–}10{,}2\,\text{m/s}^2$ on hyvä vastaus. Tulos $9{,}75\,\text{m/s}^2$ on $0{,}6\,\%$ taulukkoarvoa $9{,}81\,\text{m/s}^2$ pienempi eli poikkeaa alle prosentin, joten mittaus tukee mallia $v = g\,t$. Pisteitä jää suoran molemmille puolille, mikä sopii satunnaiseen hajontaan.
 **Järkevyys:** Suoran mukaan nopeus hetkellä $0{,}30\,\text{s}$ on $9{,}75 \cdot 0{,}30 \approx 2{,}9\,\text{m/s}$, mikä vastaa taulukon kolmatta riviä. Kulmakerroin on lähellä tunnettua arvoa $9{,}81\,\text{m/s}^2$.
 
 ## fy1-6-L2-06
@@ -171,7 +171,7 @@
 **Muunnokset:** $L = 5{,}0\,\text{cm} = 0{,}050\,\text{m}$, koska $1\,\text{cm} = 0{,}01\,\text{m}$. $\Delta t_\text{valo,1} = 25{,}0\,\text{ms} = 0{,}0250\,\text{s}$ ja $\Delta t_\text{valo,2} = 11{,}1\,\text{ms} = 0{,}0111\,\text{s}$, koska $1\,\text{ms} = 0{,}001\,\text{s}$.
 **Sijoitus:** $v_1 = \dfrac{0{,}050\,\text{m}}{0{,}0250\,\text{s}} = 2{,}00\,\text{m/s}$ ja $v_2 = \dfrac{0{,}050\,\text{m}}{0{,}0111\,\text{s}} = 4{,}50\,\text{m/s}$. Sitten $g = \dfrac{4{,}50\,\text{m/s} - 2{,}00\,\text{m/s}}{0{,}575\,\text{s} - 0{,}320\,\text{s}} = \dfrac{2{,}50\,\text{m/s}}{0{,}255\,\text{s}} = 9{,}8\,\text{m/s}^2$
 **Vastaus:** $g \approx 9{,}8\,\text{m/s}^2$, kaksi merkitsevää numeroa, koska kappaleen pituus $L = 5{,}0\,\text{cm}$ on annettu kahdella numerolla ja rajoittaa tulosta. Kahden portin kautta saatu $g$ ei vaadi tietoa pudotushetkestä: nopeudet saadaan kappaleen pituudesta ja valon katkeamisajasta, ja kiihtyvyys aikaerosta $t_2 - t_1$.
-**Järkevyys:** Tulos on lähellä tunnettua arvoa $9{,}81\,\text{m/s}^2$. Nopeus $2{,}00\,\text{m/s}$ vaatii vain noin $0{,}20\,\text{s}$ putoamista, vaikka kello näyttää $0{,}320\,\text{s}$: kello on käynnistetty ennen pudotusta, mikä ei haittaa aikaeroa. Nopeus $2{,}0\,\text{m/s}$ vastaa pudotusaikaa $\dfrac{2{,}0}{9{,}8} \approx 0{,}20\,\text{s}$ ja nopeus $4{,}5\,\text{m/s}$ aikaa $0{,}46\,\text{s}$, ja niiden ero on $0{,}25\,\text{s}$ kuten kellon aikaerokin.
+**Järkevyys:** Tulos on lähellä tunnettua arvoa $9{,}81\,\text{m/s}^2$. Nopeus $2{,}00\,\text{m/s}$ vaatii vain noin $0{,}20\,\text{s}$ putoamista, vaikka kello näyttää $0{,}320\,\text{s}$: kello on käynnistetty ennen pudotusta, mikä ei haittaa aikaeroa. Nopeus $2{,}00\,\text{m/s}$ vastaa pudotusaikaa $\dfrac{2{,}00\,\text{m/s}}{9{,}81\,\text{m/s}^2} \approx 0{,}204\,\text{s}$ ja nopeus $4{,}50\,\text{m/s}$ aikaa $0{,}459\,\text{s}$, ja niiden ero $0{,}255\,\text{s}$ on sama kuin kellon aikaero.
 
 ## fy1-6-L3-04
 **Annettu:** pallon ja suodatinpaperin nopeudet taulukossa hetkinä $0{,}05\,\text{s}$–$0{,}60\,\text{s}$, paperin nopeus hetkellä $0{,}40\,\text{s}$ on $1{,}49\,\text{m/s}$, $g = 9{,}81\,\text{m/s}^2$
@@ -182,7 +182,7 @@
 **Muunnokset:** Ei tarvita: nopeudet ovat yksikössä $\text{m/s}$ ja ajat yksikössä $\text{s}$.
 **Sijoitus:** $v_\text{malli} = 9{,}81\,\text{m/s}^2 \cdot 0{,}40\,\text{s} = 3{,}924\,\text{m/s}$. Erotus on $3{,}924\,\text{m/s} - 1{,}49\,\text{m/s} = 2{,}434\,\text{m/s}$, joten
 $$\begin{aligned} \text{vaje} &= \dfrac{2{,}434\,\text{m/s}}{3{,}924\,\text{m/s}} \cdot 100\,\% \\ &= 62{,}0\,\% \end{aligned}$$
-**Vastaus:** Suodatinpaperin nopeus on hetkellä $0{,}40\,\text{s}$ noin $62\,\%$ pienempi kuin mallin antama. Malli lakkaa pätemästä paperille noin hetkellä $0{,}10\,\text{s}$, jolloin poikkeama ylittää $5\,\%$ ja kasvaa siitä eteenpäin, koska ilmanvastus kasvaa nopeuden ja kappaleen leveyden mukana. Palloon ilmanvastus vaikuttaa vähän, joten malli pätee sille koko mitatulla välillä.
+**Vastaus:** Suodatinpaperin nopeus on hetkellä $0{,}40\,\text{s}$ noin $62\,\%$ pienempi kuin mallin antama. Malli lakkaa pätemästä paperille noin hetkellä $0{,}10\,\text{s}$, jolloin poikkeama ylittää $5\,\%$ ja kasvaa siitä eteenpäin, koska ilmanvastus kasvaa nopeuden kasvaessa. Palloon ilmanvastus vaikuttaa vähän, joten malli pätee sille koko mitatulla välillä.
 **Järkevyys:** Pallon nopeus $3{,}93\,\text{m/s}$ vastaa mallia $3{,}924\,\text{m/s}$. Paperin pienempi nopeus sopii kevyelle ja leveälle kappaleelle ilmassa.
 
 ## fy1-6-L3-05
@@ -198,4 +198,4 @@ $$\begin{aligned} \text{vaje} &= \dfrac{2{,}434\,\text{m/s}}{3{,}924\,\text{m/s}
 ## fy1-6-L2-08
 **Kysytty:** kevyemmän pallon nopeus $v$ hetkellä $2{,}0\,\text{s}$ ja syy, miksi se on sellainen.
 **Periaate:** Tyhjiössä ei ole ilmanvastusta, joten molemmat pallot ovat vapaassa pudotuksessa ja lähtevät levosta. Silloin nopeus on $v = g\,t$, ja putoamiskiihtyvyys $g = 9{,}81\,\text{m/s}^2$ on sama kaikille kappaleille massasta riippumatta.
-**Mallivastaus:** Kevyemmän pallon nopeus on sama kuin raskaamman eli $19{,}6\,\text{m/s}$, koska $v = g\,t = 9{,}81\,\text{m/s}^2 \cdot 2{,}0\,\text{s} = 19{,}62\,\text{m/s}$ ei sisällä massaa. Perustelu on, että $g$ on sama kaikille kappaleille ilman ilmanvastusta. Massan kasvattaminen lisää sekä vetoa maata kohti että liikkeelle saamisen vaikeutta, ja nämä kumoavat toisensa. Tulos $19{,}6\,\text{m/s}$ on kahden merkitsevän numeron aikaan $2{,}0\,\text{s}$ sopiva pyöristys.
+**Mallivastaus:** Kevyemmän pallon nopeus on sama kuin raskaamman eli $19{,}6\,\text{m/s}$, koska $v = g\,t = 9{,}81\,\text{m/s}^2 \cdot 2{,}0\,\text{s} = 19{,}62\,\text{m/s}$ ei sisällä massaa. Perustelu on, että $g$ on sama kaikille kappaleille ilman ilmanvastusta. Massan kasvattaminen lisää sekä Maan vetoa palloon että liikkeelle saamisen vaikeutta, ja nämä kumoavat toisensa. Tulos on sama kuin tehtävässä annettu raskaamman pallon nopeus $19{,}6\,\text{m/s}$.

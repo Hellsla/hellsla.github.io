@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: cd46f235b9a9ee5c
+CONTENT-HASH: b0ba3657e5d92a73
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- [Minor] figures.py figure: no capture opened; blue/grey change judged from the code diff only.
 
 ## Checked
-- batch delta review: opened the captures of the changed passages (theory-1280 / example-390), source diff read; no figure changed; text-only edits render cleanly, no clipping, no horizontal overflow, no inline formula wrapped.
+- Diff since edb368de4 of: lesson.md, inquiry.json, figures.py (velocity arrow and v label blue, s bracket grey). velocity blue per convention; the s bracket no longer shares the velocity colour. Judged from the diff and source only; no captures opened (light mode).

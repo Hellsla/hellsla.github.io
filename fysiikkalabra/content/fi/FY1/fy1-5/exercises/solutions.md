@@ -42,7 +42,7 @@
 ## fy1-5-L1-05
 **Annettu:** hetkellä $t_1 = 2{,}0\,\text{s}$ paikka $s_1 = 7{,}0\,\text{m}$ ja hetkellä $t_2 = 6{,}0\,\text{s}$ paikka $s_2 = 21\,\text{m}$; liike on tasaista
 **Kysytty:** nopeus $v$ yksikössä m/s
-**Periaate:** Tasaisessa liikkeessä nopeus on vakio, joten se on paikan muutos jaettuna aikavälillä. Alkupaikalla ei ole väliä, koska se supistuu erotuksessa pois.
+**Periaate:** Tasaisessa liikkeessä nopeus on vakio, joten se on paikan muutos jaettuna aikavälillä. Alkupaikalla ei ole väliä, koska se kumoutuu erotuksessa.
 **Kaava:** $v = \dfrac{\Delta s}{\Delta t} = \dfrac{s_2 - s_1}{t_2 - t_1}$
 **Muunnokset:** Ei tarvita: paikat ovat metreinä ja ajat sekunteina.
 **Sijoitus:** $v = \dfrac{21\,\text{m} - 7{,}0\,\text{m}}{6{,}0\,\text{s} - 2{,}0\,\text{s}} = \dfrac{14\,\text{m}}{4{,}0\,\text{s}} = 3{,}5\,\tfrac{\text{m}}{\text{s}}$
@@ -90,14 +90,14 @@
 **Järkevyys:** Peukalosääntö: kolme sekuntia vastaa noin kilometriä, joten viisi sekuntia vastaa noin $1{,}7\,\text{km}$. Valo kulkisi tämän matkan ajassa $1715\,\text{m} : (3{,}0 \cdot 10^{8}\,\text{m/s}) \approx 6\,\mu\text{s}$, mikä on mitätön viiveeseen $5{,}0\,\text{s}$ verrattuna.
 
 ## fy1-5-L3-01
-**Annettu:** $s_0 = 119{,}7\,\text{AU}$ hetkellä $t = 0$ (5. marraskuuta 2018), $v = 15{,}341\,\text{km/s}$, $s = 150\,\text{AU}$, $1\,\text{AU} = 149\,597\,870{,}7\,\text{km}$, $1\,\text{vrk} = 86\,400\,\text{s}$
+**Annettu:** $s_0 = 119{,}0\,\text{AU}$ hetkellä $t = 0$ (5. marraskuuta 2018), $v = 15{,}341\,\text{km/s}$, $s = 150\,\text{AU}$, $1\,\text{AU} = 149\,597\,870{,}7\,\text{km}$, $1\,\text{vrk} = 86\,400\,\text{s}$
 **Kysytty:** aika $t$ vuorokausina, kun luotain on etäisyydellä $150\,\text{AU}$
 **Periaate:** Nopeus oletetaan vakioksi, joten tasaisen liikkeen malli $s = s_0 + vt$ pätee. Tulos on mallin arvo, koska Auringon vetovoima hidastaa luotainta hieman ja todellinen aika on siksi vähän pidempi.
 **Kaava:** $s = s_0 + vt$, josta $t = \dfrac{s - s_0}{v}$
-**Muunnokset:** Nopeus tähtitieteellisiksi yksiköiksi vuorokaudessa: $v = 15{,}341\,\tfrac{\text{km}}{\text{s}} \cdot 86\,400\,\tfrac{\text{s}}{\text{vrk}} = 1\,325\,462\,\tfrac{\text{km}}{\text{vrk}}$, ja $\dfrac{1\,325\,462\,\text{km/vrk}}{149\,597\,870{,}7\,\text{km/AU}} = 0{,}0088602\,\tfrac{\text{AU}}{\text{vrk}}$.
-**Sijoitus:** $t = \dfrac{150\,\text{AU} - 119{,}7\,\text{AU}}{0{,}0088602\,\text{AU/vrk}} = \dfrac{30{,}3\,\text{AU}}{0{,}0088602\,\text{AU/vrk}} = 3419{,}8\,\text{vrk}$
-**Vastaus:** $3420\,\text{vrk}$, kolme merkitsevää numeroa, kun $150\,\text{AU}$ tulkitaan kolmen numeron tarkkuudella ja erotus on $30{,}3\,\text{AU}$.
-**Järkevyys:** Vauhti on noin $3{,}2\,\text{AU}$ vuodessa, joten $30{,}3\,\text{AU}$ vie noin $30{,}3 : 3{,}2 \approx 9{,}5$ vuotta. Tulos $3420\,\text{vrk} \approx 9{,}4$ vuotta sopii tähän ja ajoittuu maaliskuuhun 2028. Malli poikkeaa JPL:n arvosta noin 0,2 AU, mikä vastaa noin 20 vuorokauden virhettä ajankohdassa.
+**Muunnokset:** Nopeus tähtitieteellisiksi yksiköiksi vuorokaudessa sijoittamalla $1\,\text{km} = \tfrac{1}{149\,597\,870{,}7}\,\text{AU}$ ja $1\,\text{s} = \tfrac{1}{86\,400}\,\text{vrk}$: $v = 15{,}341\,\tfrac{\text{km}}{\text{s}} = \dfrac{15{,}341 \cdot \tfrac{1}{149\,597\,870{,}7}\,\text{AU}}{\tfrac{1}{86\,400}\,\text{vrk}} = 0{,}0088602\,\tfrac{\text{AU}}{\text{vrk}}$.
+**Sijoitus:** $t = \dfrac{150\,\text{AU} - 119{,}0\,\text{AU}}{0{,}0088602\,\text{AU/vrk}} = \dfrac{31{,}0\,\text{AU}}{0{,}0088602\,\text{AU/vrk}} = 3498{,}8\,\text{vrk}$
+**Vastaus:** $3{,}50 \cdot 10^{3}\,\text{vrk}$ eli noin $3500\,\text{vrk}$, kolme merkitsevää numeroa: $150\,\text{AU}$ on tarkka raja-arvo, ja erotus $31{,}0\,\text{AU}$ on kolmen numeron tarkkuudella.
+**Järkevyys:** Vauhti on noin $3{,}2\,\text{AU}$ vuodessa, joten $31{,}0\,\text{AU}$ vie noin $31{,}0 : 3{,}2 \approx 9{,}7$ vuotta. Tulos $3500\,\text{vrk} \approx 9{,}6$ vuotta sopii tähän ja ajoittuu kesäkuuhun 2028. Malli ja havainto täsmäävät noin $1\,\text{AU}$:n tarkkuudella (ks. esimerkki), ja $1\,\text{AU}$ vastaa noin $110\,\text{vrk}$:n eroa ajankohdassa, joten ajankohta on suuntaa antava.
 
 ## fy1-5-L3-02
 **Annettu:** etäisyys $d = 150\,\text{AU}$, signaalin nopeus $c = 299\,792\,458\,\text{m/s}$, $1\,\text{AU} = 149\,597\,870{,}7\,\text{km}$
@@ -106,7 +106,7 @@
 **Kaava:** $2d = ct$, josta $t = \dfrac{2d}{c}$
 **Muunnokset:** $d = 150 \cdot 149\,597\,870{,}7\,\text{km} = 2{,}2440 \cdot 10^{10}\,\text{km} = 2{,}2440 \cdot 10^{13}\,\text{m}$. Lopuksi $1\,\text{h} = 3600\,\text{s}$.
 **Sijoitus:** $t = \dfrac{2 \cdot 2{,}2440 \cdot 10^{13}\,\text{m}}{299\,792\,458\,\text{m/s}} = 1{,}497 \cdot 10^{5}\,\text{s} = \dfrac{1{,}497 \cdot 10^{5}\,\text{s}}{3600\,\text{s/h}} = 41{,}58\,\text{h}$
-**Vastaus:** $41{,}6\,\text{h}$, kolme merkitsevää numeroa, kun etäisyys $150\,\text{AU}$ tulkitaan kolmen numeron tarkkuudella.
+**Vastaus:** $41{,}6\,\text{h}$. Annetut arvot ovat tarkkoja (oletettu etäisyys $150\,\text{AU}$ sekä määritelmän mukaiset valon nopeus ja $1\,\text{AU}$), joten tarkkuus valitaan: kolme merkitsevää numeroa riittää.
 **Järkevyys:** Valo kulkee yhden AU:n noin $499\,\text{s} \approx 8{,}3\,\text{min}$, joten $150\,\text{AU}$ vie noin $150 \cdot 8{,}3\,\text{min} \approx 1250\,\text{min} \approx 20{,}8\,\text{h}$ ja edestakaisin $41{,}6\,\text{h}$. Yli vuorokauden viive on järkevä, koska luotain on kymmeniä miljardeja kilometrejä päässä.
 
 ## fy1-5-L3-03
@@ -125,7 +125,7 @@
 **Mallivastaus:** Kulmakerroin kertoo kävelijän nopeuden. Mitä jyrkempi suora on, sitä suurempi nopeus on. Se ei ole alkupaikka (leikkauskohta) eikä kokonaismatka (pelkkä $\Delta s$), ja osamäärä $s : t$ on nopeus vain, kun suora kulkee origon kautta.
 
 ## fy1-5-L1-07
-**Annettu:** nopeus $v = 0{,}80\,\text{m/s}$ vakiona aikavälillä $0\,\text{s} - 12\,\text{s}$, joten aikaväli on $t = 12\,\text{s}$
+**Annettu:** nopeus $v = 0{,}80\,\text{m/s}$ vakiona aikavälillä $0\text{–}12\,\text{s}$, joten aikaväli on $t = 12\,\text{s}$
 **Kysytty:** kuljettu matka $\Delta s$ metreinä
 **Periaate:** $(t, v)$-kuvaajassa vaakasuora viiva on suorakulmion yläreuna. Suorakulmion korkeus on nopeus $v$ ja leveys aika $t$, joten sen pinta-ala $vt$ on tasaisessa liikkeessä kuljettu matka.
 **Kuvaajan lukeminen:** Korkeus on $v = 0{,}80\,\text{m/s}$ ja leveys $t = 12\,\text{s} - 0\,\text{s} = 12\,\text{s}$.
@@ -153,7 +153,7 @@
 **Kaava:** $v = \dfrac{\Delta s}{\Delta t}$ ja $s = s_0 + vt$
 **Muunnokset:** Ei tarvita: paikat ovat metreinä ja ajat sekunteina.
 **Sijoitus:** $v = \dfrac{8{,}2\,\text{m} - 1{,}2\,\text{m}}{5{,}0\,\text{s} - 0\,\text{s}} = 1{,}4\,\tfrac{\text{m}}{\text{s}}$ ja $s = 1{,}2\,\text{m} + 1{,}4\,\tfrac{\text{m}}{\text{s}} \cdot 12\,\text{s} = 1{,}2\,\text{m} + 16{,}8\,\text{m} = 18\,\text{m}$
-**Vastaus:** noin $18\,\text{m}$, kaksi merkitsevää numeroa. Silmämääräinen sovitus vaihtelee, joten noin $17{,}3\text{–}18{,}7\,\text{m}$ on hyvä vastaus. Ennuste on mallin arvo, ei mittaus: hetki $12\,\text{s}$ on mitatun alueen $0\,\text{s} - 5\,\text{s}$ ulkopuolella, ja se on oikein vain, jos kävelijä jatkaa samalla nopeudella. Tämä on oletus, jota mittaus ei ole tarkistanut.
+**Vastaus:** noin $18\,\text{m}$, kaksi merkitsevää numeroa. Silmämääräinen sovitus vaihtelee, joten noin $17{,}3\text{–}18{,}7\,\text{m}$ on hyvä vastaus. Ennuste on mallin arvo, ei mittaus: hetki $12\,\text{s}$ on mitatun alueen $0\text{–}5\,\text{s}$ ulkopuolella, ja se on oikein vain, jos kävelijä jatkaa samalla nopeudella. Tämä on oletus, jota mittaus ei ole tarkistanut.
 **Järkevyys:** Nopeus $1{,}4\,\text{m/s}$ on noin $5\,\text{km/h}$, tavallinen kävelyvauhti. Ennuste ylittää viimeisen mittauksen $8{,}3\,\text{m}$ selvästi, kuten pitääkin, koska $12\,\text{s}$ on yli kaksi kertaa niin pitkä aika kuin mittausalue.
 
 ## fy1-5-L2-06
@@ -167,10 +167,10 @@
 **Järkevyys:** Matka kolminkertaistui: $3{,}0\,\text{m} \cdot 3 = 9{,}0\,\text{m}$. Oppilaan vastaus $33\,\text{m}$ vaatisi kärryltä matkan $25\,\text{m}$ kuudessa sekunnissa eli nopeuden $4{,}2\,\text{m/s}$, mikä on eri nopeus kuin annetuista tiedoista saatu $1{,}5\,\text{m/s}$.
 
 ## fy1-5-L2-07
-**Annettu:** nopeus noin $v = 0{,}80\,\text{m/s}$, ajanoton epävarmuus $u_t = 0{,}2\,\text{s}$ (sama kaikilla ajoilla), suhteellisen epävarmuuden raja $2{,}0\,\%$
+**Annettu:** nopeus noin $v = 0{,}80\,\text{m/s}$, ajanoton epävarmuus $\Delta t = 0{,}2\,\text{s}$ (sama kaikilla ajoilla; tässä $\Delta t$ on epävarmuus, ei aikaväli), suhteellisen epävarmuuden raja $2{,}0\,\%$
 **Kysytty:** pienin matka $s$ metreinä
-**Periaate:** Ajan suhteellinen epävarmuus on $u_t : t$. Koska $u_t$ on vakio, suhteellinen epävarmuus pienenee, kun mitattu aika kasvaa. Raja antaa pienimmän ajan, ja tasaisessa liikkeessä matka on nopeus kertaa aika.
-**Kaava:** $\dfrac{u_t}{t} \le 0{,}020$, josta $t \ge \dfrac{u_t}{0{,}020}$, ja $s = vt$
+**Periaate:** Ajan suhteellinen epävarmuus on $\varepsilon = \Delta t : t$. Koska $\Delta t$ on vakio, suhteellinen epävarmuus pienenee, kun mitattu aika kasvaa. Raja antaa pienimmän ajan, ja tasaisessa liikkeessä matka on nopeus kertaa aika.
+**Kaava:** $\varepsilon = \dfrac{\Delta t}{t} \le 0{,}020$, josta $t \ge \dfrac{\Delta t}{0{,}020}$, ja $s = vt$
 **Muunnokset:** Ei tarvita: ajat ovat sekunteina ja nopeus m/s. Prosentti on $2{,}0\,\% = 0{,}020$.
 **Sijoitus:** $t \ge \dfrac{0{,}2\,\text{s}}{0{,}020} = 10\,\text{s}$ ja $s = 0{,}80\,\tfrac{\text{m}}{\text{s}} \cdot 10\,\text{s} = 8{,}0\,\text{m}$
 **Vastaus:** Auton on kuljettava vähintään $8{,}0\,\text{m}$. Pitkä matka parantaa mittausta, koska se kestää kauemmin ja ajanoton epävarmuus $0{,}2\,\text{s}$ on silloin pienempi osa koko ajasta. Lyhyellä matkalla, esimerkiksi $1{,}0\,\text{m}$ ($t = 1{,}25\,\text{s}$), suhteellinen epävarmuus olisi $16\,\%$.
@@ -178,9 +178,9 @@
 
 ## fy1-5-L3-04
 **Annettu:** taulukon mittauspisteet $(t;\ s)$: $(0\,\text{s};\ 0\,\text{m})$, $(5{,}0\,\text{s};\ 15\,\text{m})$, $(10\,\text{s};\ 30\,\text{m})$, $(15\,\text{s};\ 35\,\text{m})$, $(20\,\text{s};\ 40\,\text{m})$, $(30\,\text{s};\ 50\,\text{m})$ ja $(40\,\text{s};\ 60\,\text{m})$
-**Kysytty:** keskinopeus $v_\text{ka}$ aikavälillä $5{,}0\,\text{s} - 35\,\text{s}$ ja syy, miksi se ei ole osien nopeuksien keskiarvo
+**Kysytty:** keskinopeus $v_\text{ka}$ aikavälillä $5{,}0\text{–}35\,\text{s}$ ja syy, miksi se ei ole osien nopeuksien keskiarvo
 **Periaate:** Kuvaajassa pisteet asettuvat kahdelle suoralle osalle, joiden kulmakertoimet ovat eri suuret, joten yksi suora ei sovi koko liikkeeseen. Liike mallinnetaan paloittain: kummallakin osalla on oma tasainen nopeutensa, ja hetken $35\,\text{s}$ paikka lasketaan jälkimmäisen osan mallista. Keskinopeus on kuljettu matka jaettuna ajalla.
-**Kuvaajan lukeminen:** Pisteet $0\,\text{s} - 10\,\text{s}$ ovat samalla jyrkällä suoralla. Hetkestä $10\,\text{s}$ alkaen suora on loivempi, ja pisteet $(10\,\text{s};\ 30\,\text{m})$, $(20\,\text{s};\ 40\,\text{m})$ ja $(40\,\text{s};\ 60\,\text{m})$ ovat samalla loivalla suoralla. Nopeus muuttuu siis hetkellä $t = 10\,\text{s}$.
+**Kuvaajan lukeminen:** Pisteet aikavälillä $0\text{–}10\,\text{s}$ ovat samalla jyrkällä suoralla. Hetkestä $10\,\text{s}$ alkaen suora on loivempi, ja pisteet $(10\,\text{s};\ 30\,\text{m})$, $(20\,\text{s};\ 40\,\text{m})$ ja $(40\,\text{s};\ 60\,\text{m})$ ovat samalla loivalla suoralla. Nopeus muuttuu siis hetkellä $t = 10\,\text{s}$.
 **Kaava:** osan nopeus $v = \dfrac{\Delta s}{\Delta t}$, paikka loivalla osalla $s = s_{10} + v_2 (t - 10\,\text{s})$ ja keskinopeus $v_\text{ka} = \dfrac{s(35\,\text{s}) - s(5{,}0\,\text{s})}{35\,\text{s} - 5{,}0\,\text{s}}$
 **Muunnokset:** Ei tarvita: paikat ovat metreinä ja ajat sekunteina.
 **Sijoitus:** Osa 1: $v_1 = \dfrac{30\,\text{m} - 0\,\text{m}}{10\,\text{s} - 0\,\text{s}} = 3{,}0\,\tfrac{\text{m}}{\text{s}}$. Osa 2: $v_2 = \dfrac{60\,\text{m} - 30\,\text{m}}{40\,\text{s} - 10\,\text{s}} = 1{,}0\,\tfrac{\text{m}}{\text{s}}$. Paikka hetkellä $35\,\text{s}$: $s = 30\,\text{m} + 1{,}0\,\tfrac{\text{m}}{\text{s}} \cdot 25\,\text{s} = 55\,\text{m}$. Keskinopeus: $v_\text{ka} = \dfrac{55\,\text{m} - 15\,\text{m}}{35\,\text{s} - 5{,}0\,\text{s}} = \dfrac{40\,\text{m}}{30\,\text{s}} = 1{,}33\,\tfrac{\text{m}}{\text{s}}$.
@@ -195,11 +195,11 @@
 **Kaava:** $v = \dfrac{\Delta s}{\Delta t}$; piirroksessa pituus on mitta-arvo kertaa mittakaava
 **Muunnokset:** Ei tarvita nopeuden laskussa. Piirroksessa $\Delta s = 3{,}0 \cdot 1{,}0\,\text{cm} = 3{,}0\,\text{cm}$ ja $\Delta t = 0{,}010 \cdot 10\,\text{cm} = 0{,}10\,\text{cm}$.
 **Sijoitus:** $v = \dfrac{3{,}0\,\text{m}}{0{,}010\,\text{s}} = 300\,\tfrac{\text{m}}{\text{s}}$. Viiva nousee yhdessä kuvausvälissä $3{,}0\,\text{cm}$ ja etenee vaakasuunnassa vain $0{,}10\,\text{cm}$, eli $1{,}0\,\text{mm}$.
-**Vastaus:** $300\,\text{m/s}$, kaksi merkitsevää numeroa kuten paikkojen erotuksessa $3{,}0\,\text{m}$. Viiva nousee $3{,}0\,\text{cm}$ ja etenee $0{,}10\,\text{cm}$, joten se on noin $30$ kertaa jyrkempi kuin se on leveä ja näyttää lähes pystysuoralta. Se ei silti ole pystysuora: kuvausvälillä kuluu aina aikaa $\Delta t > 0$, ja luoti on jokaisella hetkellä täsmälleen yhdessä paikassa. Pystysuora viiva vaatisi, että luoti olisi samalla hetkellä kahdessa paikassa eli nopeus olisi ääretön.
+**Vastaus:** $300\,\text{m/s}$, kaksi merkitsevää numeroa kuten paikkojen erotuksessa $3{,}0\,\text{m}$. Viiva nousee $3{,}0\,\text{cm}$ ja etenee $0{,}10\,\text{cm}$, joten se nousee noin $30$ kertaa niin paljon kuin etenee vaakasuunnassa ja näyttää lähes pystysuoralta. Se ei silti ole pystysuora: kuvausvälillä kuluu aina aikaa $\Delta t > 0$, ja luoti on jokaisella hetkellä täsmälleen yhdessä paikassa. Pystysuora viiva vaatisi, että luoti olisi samalla hetkellä kahdessa paikassa eli nopeus olisi ääretön.
 **Järkevyys:** Nopeus $300\,\text{m/s}$ on samaa suuruusluokkaa kuin äänen nopeus $343\,\text{m/s}$ ja sopii nopealle luodille. Tarkistus: $300\,\text{m/s} \cdot 0{,}010\,\text{s} = 3{,}0\,\text{m}$, sama kuin taulukossa. Pysähtynyt kappale piirtyisi vaakasuorana viivana, koska $\Delta s = 0$.
 
 ## fy1-5-L2-08
 **Kysytty:** mikä neljästä kuvaajasta esittää kävelijän paikkaa $s$ ajan $t$ funktiona, kun hän seisoo ensin kohdassa $6{,}0\,\text{m}$ ja kävelee sitten tasaisesti vauhdilla $1{,}0\,\text{m/s}$ takaisin lähtöpisteeseen.
-**Periaate:** $(t, s)$-kuvaajan korkeus on paikka ja kulmakerroin $\Delta s : \Delta t$ on nopeus. Kun kappale on paikallaan, $\Delta s = 0$ ja viiva on vaakasuora. Tasaisessa liikkeessä viiva on suora; jos paikka kasvaa, suora nousee, ja jos paikka pienenee, suora laskee. Nopeus (vauhti) on suoran jyrkkyys.
+**Periaate:** $(t, s)$-kuvaajan korkeus on paikka ja kulmakerroin $\Delta s : \Delta t$ on nopeus. Kun kappale on paikallaan, $\Delta s = 0$ ja viiva on vaakasuora. Tasaisessa liikkeessä viiva on suora; jos paikka kasvaa, suora nousee, ja jos paikka pienenee, suora laskee. Suoran jyrkkyys kertoo vauhdin eli nopeuden suuruuden. Kun paikka pienenee, kulmakerroin eli nopeus on negatiivinen.
 **Mallivastaus:** Oikea on kuvaaja C. Aluksi paikka on koko ajan $s = 6{,}0\,\text{m}$, joten viiva on vaakasuora tällä korkeudella. Paluumatka $6{,}0\,\text{m}$ kestää $\Delta t = 6{,}0\,\text{m} : 1{,}0\,\text{m/s} = 6{,}0\,\text{s}$, joten kävelijä on lähtöpisteessä hetkellä $4{,}0\,\text{s} + 6{,}0\,\text{s} = 10\,\text{s}$. Paikka pienenee, joten suora laskee, ja sen jyrkkyys vastaa vauhtia $6{,}0\,\text{m} : 6{,}0\,\text{s} = 1{,}0\,\text{m/s}$. Kuvaajassa A suora nousee, eli paikka kasvaisi ja kävelijä menisi poispäin. Kuvaaja B on $(t, v)$-kuvaaja, jossa on nopeus eikä paikka. Kuvaaja D esittää kuljettua matkaa $\Delta s$, joka alkaa nollasta, vaikka kävelijän paikka on alussa $6{,}0\,\text{m}$.
-**Kuvaajan lukeminen:** Kuvaajista luetaan, mistä paikasta viiva alkaa hetkellä $t = 0$, onko se aikavälillä $0\,\text{s} - 4{,}0\,\text{s}$ vaakasuora ja nouseeko vai laskeeko se sen jälkeen. Lisäksi tarkistetaan pystyakselin suure: kuvaajassa B se on nopeus $v$. Vain kuvaajassa C viiva alkaa kohdasta $6{,}0\,\text{m}$, pysyy siinä hetkeen $4{,}0\,\text{s}$ ja laskee sitten pisteeseen $(10\,\text{s};\ 0\,\text{m})$.
+**Kuvaajan lukeminen:** Kuvaajista luetaan, mistä paikasta viiva alkaa hetkellä $t = 0$, onko se aikavälillä $0\text{–}4{,}0\,\text{s}$ vaakasuora ja nouseeko vai laskeeko se sen jälkeen. Lisäksi tarkistetaan pystyakselin suure: kuvaajassa B se on nopeus $v$. Vain kuvaajassa C viiva alkaa kohdasta $6{,}0\,\text{m}$, pysyy siinä hetkeen $4{,}0\,\text{s}$ ja laskee sitten pisteeseen $(10\,\text{s};\ 0\,\text{m})$.

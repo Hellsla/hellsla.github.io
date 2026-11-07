@@ -162,7 +162,7 @@
             "feedback": "Laskit eksponentit yhteen. Suuruusluokkien ero on eksponenttien erotus: $-10 - (-15) = -10 + 15 = 5$."
           }
         ],
-        "solution": "**Annettu:** taulukosta vetyatomin rivillä $n_\\text{atomi} = -10$ ja protonin eli vetyatomin ytimen rivillä $n_\\text{protoni} = -15$\n\n**Kysytty:** suuruusluokkien ero eli kymmenpotenssin askelten määrä atomin ja sen ytimen välillä\n\n**Periaate:** Eksponentti $n$ kertoo, missä kymmenpotenssissa koko on. Jokainen askel kymmenpotenssista seuraavaan on kymmenkertainen koko. Askelten määrä on eksponenttien erotus, suuremmasta pienempi.\n\n**Kaava:** $\\text{askelia} = n_\\text{atomi} - n_\\text{protoni}$\n\n**Muunnokset:** Ei tarvita. Eksponentit ovat yksiköttömiä lukuja.\n\n**Sijoitus:** $\\text{askelia} = -10 - (-15) = -10 + 15 = 5$\n\n**Vastaus:** $5$ suuruusluokkaa; luku on kokonaisluku, koska $n$ on pyöristetty kokonaiseksi kymmenpotenssiksi.\n\n**Järkevyys:** Viisi askelta tarkoittaa noin $10^{5}$ eli satatuhatkertaista kokoa. Tarkka suhde on $1{,}1\\cdot10^{-10}\\,\\text{m} : 1{,}7\\cdot10^{-15}\\,\\text{m} \\approx 6{,}5\\cdot10^{4}$, joka on lähellä sitä. Ero on paljon pienempi kuin atomin ja ihmisen kymmenen suuruusluokkaa."
+        "solution": "**Annettu:** taulukosta vetyatomin rivillä $n_\\text{atomi} = -10$ ja protonin eli vetyatomin ytimen rivillä $n_\\text{protoni} = -15$\n\n**Kysytty:** suuruusluokkien ero eli kymmenpotenssin askelten määrä atomin ja sen ytimen välillä\n\n**Periaate:** Eksponentti $n$ kertoo, missä kymmenpotenssissa koko on. Jokainen askel kymmenpotenssista seuraavaan on kymmenkertainen koko. Askelten määrä on eksponenttien erotus, suuremmasta pienempi.\n\n**Kaava:** $\\text{askelia} = n_\\text{atomi} - n_\\text{protoni}$\n\n**Muunnokset:** Ei tarvita. Eksponentit ovat yksiköttömiä lukuja.\n\n**Sijoitus:** $\\text{askelia} = -10 - (-15) = -10 + 15 = 5$\n\n**Vastaus:** $5$ suuruusluokkaa; luku on kokonaisluku, koska taulukon suuruusluokkien eksponentit $n$ ovat kokonaislukuja.\n\n**Järkevyys:** Viisi askelta tarkoittaa noin $10^{5}$ eli satatuhatkertaista kokoa. Tarkka suhde on $1{,}1\\cdot10^{-10}\\,\\text{m} : 1{,}7\\cdot10^{-15}\\,\\text{m} \\approx 6{,}5\\cdot10^{4}$, joka on lähellä sitä. Ero on paljon pienempi kuin atomin ja ihmisen kymmenen suuruusluokkaa."
       }
     },
     {
@@ -252,7 +252,7 @@
             "feedback": "Otit keskiarvon kokoina metreinä. Se antaa suunnilleen maailmankaikkeuden koon puolikkaan. Suuruusluokilla keskikohta lasketaan eksponenttien keskiarvona."
           }
         ],
-        "solution": "**Annettu:** taulukosta Planckin pituuden rivillä $n_\\text{min} = -35$ ja maailmankaikkeuden rivillä $n_\\text{max} = 27$\n\n**Kysytty:** puolivälin eksponentti $n_\\text{keski}$\n\n**Periaate:** Koot ovat monessa eri kymmenpotenssissa, joten \"puolivälissä\" tarkoittaa yhtä monta suuruusluokkaa kummastakin päästä. Se on eksponenttien keskiarvo, ei kokojen keskiarvo metreinä.\n\n**Kaava:** $n_\\text{keski} = \\dfrac{n_\\text{min} + n_\\text{max}}{2}$\n\n**Muunnokset:** Ei tarvita. Eksponentit ovat yksiköttömiä lukuja.\n\n**Sijoitus:** $n_\\text{keski} = \\dfrac{-35 + 27}{2} = \\dfrac{-8}{2} = -4$\n\n**Vastaus:** $-4$ eli koko noin $10^{-4}\\,\\text{m}$; kokonaisluku, koska eksponentit ovat kokonaislukuja. Kun zoomaat tähän, simulaation lähin kohde on hius, jonka $n = -4$: laskettu puoliväli ja simulaation kohde täsmäävät.\n\n**Järkevyys:** Keskikohdasta on Planckin pituuteen $-4 - (-35) = 31$ suuruusluokkaa ja maailmankaikkeuteen $27 - (-4) = 31$ suuruusluokkaa, joten väli on symmetrinen. Koko $10^{-4}\\,\\text{m}$ on kymmenesosamillimetri, noin hiuksen paksuus."
+        "solution": "**Annettu:** taulukosta Planckin pituuden rivillä $n_\\text{min} = -35$ ja maailmankaikkeuden rivillä $n_\\text{max} = 27$\n\n**Kysytty:** puolivälin eksponentti $n_\\text{keski}$\n\n**Periaate:** Koot ovat monessa eri kymmenpotenssissa, joten \"puolivälissä\" tarkoittaa yhtä monta suuruusluokkaa kummastakin päästä. Se on eksponenttien keskiarvo, ei kokojen keskiarvo metreinä.\n\n**Kaava:** $n_\\text{keski} = \\dfrac{n_\\text{min} + n_\\text{max}}{2}$\n\n**Muunnokset:** Ei tarvita. Eksponentit ovat yksiköttömiä lukuja.\n\n**Sijoitus:** $n_\\text{keski} = \\dfrac{-35 + 27}{2} = \\dfrac{-8}{2} = -4$\n\n**Vastaus:** $-4$ eli koko noin $10^{-4}\\,\\text{m}$; tässä kokonaisluku, koska $(-35+27)/2=-4$. Kun zoomaat tähän, simulaation lähin kohde on hius, jonka $n = -4$: laskettu puoliväli ja simulaation kohde täsmäävät.\n\n**Järkevyys:** Keskikohdasta on Planckin pituuteen $-4 - (-35) = 31$ suuruusluokkaa ja maailmankaikkeuteen $27 - (-4) = 31$ suuruusluokkaa, joten väli on symmetrinen. Koko $10^{-4}\\,\\text{m}$ on kymmenesosamillimetri, noin hiuksen paksuus."
       },
       "optional": true
     },
@@ -261,7 +261,7 @@
       "stage": "tutki",
       "type": "interpret",
       "title": "Miten koot on saatu selville?",
-      "text": "Mikään simulaation koko ei ole yhden mittanauhan tulos. Jokainen koko on päätelty mittauksista ja mallista. Menetelmä vaihtelee mittakaavan mukaan.\n\n- **Protoni**, $1{,}7\\cdot10^{-15}\\,\\text{m}$: elektronien sironta protoneista ja atomien energiatasojen mittaus.\n- **Virus**, $1{,}0\\cdot10^{-7}\\,\\text{m}$: elektronimikroskooppi.\n- **Maa**, $1{,}27\\cdot10^{7}\\,\\text{m}$: geodeettiset mittaukset ja satelliitit.\n- **Maan radan säde (1 AU)**, $1{,}5\\cdot10^{11}\\,\\text{m}$: tutkamittaus planeetoista ja luotaimista.\n- **Lähin tähti**, $4{,}0\\cdot10^{16}\\,\\text{m}$: tähden näennäinen siirtyminen, kun Maa kiertää Aurinkoa (paralaksi).\n- **Maailmankaikkeus**, $8{,}8\\cdot10^{26}\\,\\text{m}$: galaksien havainnot ja laajenemisen malli.",
+      "text": "Mikään simulaation koko ei ole yhden mittanauhan tulos. Jokainen koko on päätelty mittauksista ja mallista. Menetelmä vaihtelee mittakaavan mukaan.\n\n- **Protoni**, $1{,}7\\cdot10^{-15}\\,\\text{m}$: elektronien sironta protoneista ja atomien energiatasojen mittaus.\n- **Virus**, $1{,}0\\cdot10^{-7}\\,\\text{m}$: elektronimikroskooppi.\n- **Maa**, $1{,}27\\cdot10^{7}\\,\\text{m}$: geodeettiset mittaukset ja satelliitit.\n- **Maan radan säde (1 AU)**, $1{,}5\\cdot10^{11}\\,\\text{m}$: tutkamittaus planeetoista ja luotaimista.\n- **Lähin tähti**, $4{,}0\\cdot10^{16}\\,\\text{m}$: tähden näennäinen siirtyminen, kun Maa kiertää Aurinkoa (paralaksi).\n- **Havaittava maailmankaikkeus**, $8{,}8\\cdot10^{26}\\,\\text{m}$: galaksien havainnot ja laajenemisen malli.",
       "question": {
         "type": "choice",
         "prompt": "Protonia ei voi nähdä edes tehokkaalla mikroskoopilla. Mistä sen koko siis tiedetään?",
@@ -272,12 +272,12 @@
           },
           {
             "text": "Kokeissa on ammuttu hiukkasia protoneihin ja mitattu, miten ne siroavat. Mallista lasketaan, minkä kokoinen protonin on oltava, jotta sironta näyttää tällaiselta.",
-            "feedback": "Oikein. Koko on mittausten ja mallin yhteistulos. Mittaus kertoo, kuinka hiukkaset poikkeavat. Malli kertoo, mitä poikkeama merkitsee koosta. Siksi mallin tarkentuminen voi muuttaa kokoa.",
+            "feedback": "Oikein. Koko on mittausten ja mallin yhteistulos. Mittaus kertoo, kuinka hiukkaset poikkeavat. Malli kertoo, mitä poikkeama merkitsee koosta. Siksi tarkempi malli voi muuttaa arviota protonin koosta. Arvio on tehty mittauksista.",
             "correct": true
           },
           {
             "text": "Fyysikot ovat sopineet koon äänestämällä, koska sitä ei voi mitata.",
-            "feedback": "Fysiikassa koon ratkaisee mittaus, ei äänestys. Kokeet toistetaan eri laboratorioissa. Tulokset hyväksytään vasta, kun menetelmät antavat saman tuloksen."
+            "feedback": "Fysiikassa koon ratkaisee mittaus, ei äänestys. Kokeet toistetaan eri laboratorioissa. Eri menetelmien tuloksia verrataan toisiinsa. Vertailussa otetaan huomioon tulosten epävarmuus."
           },
           {
             "text": "Koko lasketaan pelkästään teoriasta, eikä siihen tarvita mittauksia.",
@@ -332,7 +332,7 @@
         },
         {
           "text": "Planeetta.",
-          "feedback": "Planeetan massa on paljon pienempi kuin tähden. Suurimmankin planeetan, Jupiterin, massa on vain noin tuhannesosa Auringon massasta. Kohteen massa on suurempi kuin Auringon, joten se ei voi olla planeetta."
+          "feedback": "Planeetan massa on paljon pienempi kuin tähden. Aurinkokunnan massiivisimman planeetan, Jupiterin, massa on vain noin tuhannesosa Auringon massasta. Kohteen massa on suurempi kuin Auringon, joten se ei voi olla planeetta."
         },
         {
           "text": "Neutronitähti.",

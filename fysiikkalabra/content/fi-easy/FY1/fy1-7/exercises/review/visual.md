@@ -1,18 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: e49c387515a0461e
-Mode: delta, Round 1 (new task fy1-7-L2-08, solutions.md)
+CONTENT-HASH: d231a9d1d2b474fc
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-3 diff since the round-2 commit only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] fy1-7-L2-08 — "Järjestä kappaleet tiheyden mukaan pienimmästä suurimpaan." repeats the question sentence above it; drop one.
-- [Minor] fy1-7-L2-08 — the ordering rows carry a bare "-" select with no visible word for what it picks (järjestysnumero); accessible name not inspectable from a capture.
+- none
 
 ## Checked
-- Captures opened: fy1-7-open-exercises-L2-1280-9 (7-15 solution end, 7-16 task with units) and -10 (ordering rows, solution with conversions and densities).
-- Only the unanswered state was captured; the state after pressing Vastaa was not seen.
-- Not checked from captures: the exercises are captured only at 1280 px, so the new task at 390 px was not seen; the other edited tasks (situation/question paragraph splits) were judged from the diff only unless named above.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+- git diff edb368de4 of the part's files (fi-easy fy1-7 exercises): no visual change in this part beyond answer 4.42 and the solution wording on exact values (units in LaTeX, fractions kept as before).
+- no layout-relevant change; exercises.json answer 4.4 to 4.42 and solutions.md wording only

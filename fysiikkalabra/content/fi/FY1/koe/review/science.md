@@ -1,18 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 4a08579575d5056c
+CONTENT-HASH: b843e0bd094c59bd
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the koe/sovella copy-edit diff only)
 
 ## Blocking
-None. Round-1 item fixed: fy1-k3 c now asks the student to compare relative uncertainties. The criterion and the model answer give the right mechanism: a larger v_E both lengthens the lead (≈ 6 %) and lowers the closing speed v_A − v_E (≈ 7 %), and the two add to ≈ 13–14 % (±0,3 km of 2,1 km). The false "lähes samoista nopeuksista" sentence is gone.
+- none
 
 ## Polish
-- fy1-k3 c: the solution says "≈ 15 %"; 0,3/2,1 ≈ 14 %. The closing clause "lisäksi Aaron kulkema matka kasvaa saman ajan mukana" reads like a third effect. It is not one: s = v_A(t − t₀) only carries over the time's relative change. Consider dropping "lisäksi".
-- fy1-k4 a criterion 1: "todennäköiseksi karkeaksi virheeksi" would follow the outlier guardrail more closely.
-- fy1-k4 b: half the range is a scatter estimate chosen for the task, not the uncertainty of the mean.
+- fy1-k3 e): exact half-range of the extremes (1,80 and 2,35 km) is 13 % of the centre, matching the first-order 6 % + 7 %; the "noin 15 %" comes only from rounding to 2,1 ± 0,3 km (0,3/2,1 = 14 %). The new wording says this; optional: "noin 14 %".
+- fy1-k7 e): 784 kg/m³ · 2/102 = 16 kg/m³; "noin 20 kg/m³" is a rounded-up bound, fine for rounding to tens.
 
 ## Checked
-Delta from round 1. Hash 4a08579575d5056c at start and end.
-- Osa 1 reordering: c (sähkövirta, index 0), g (overlap, index 0) and the unchanged items each still have exactly one correct option at the stored index. Each Perustelu argues by content, not position.
-- fy1-k7 b/c: the task now gives the reading uncertainty of 1 mm and asks whether the line goes through the origin. The physical reason (0 sheets → 0 mm) and the residuals (≤ 0,6 mm, inside 1 mm) were recomputed with an origin fit: 0,1020 mm/sheet, 102 µm, ±1 mm/500 = 2 µm, 784 kg/m³. The criteria ask only for what is given.
-- fy1-k5 b ("selvästi") and fy1-k6 c (pinta-ala alternative accepted, no force language required) were polished as suggested.
-- Recomputed: k3 642,9 s, 2057 m, extremes 1800 m and 2354 m, 6,25 % + 7,14 % = 13,4 %.
-- Rubric sums: k3 4 + 6 + 5, k7 4 + 6 + 5 + 5. Total 20 + 4 × 15 + 2 × 20 = 120 offered, maximum 70. `answers.py` output is unchanged and agrees.
+- k1 a) distractor explanation for 10²: physically right (nucleus 10^-15–10^-14 m vs atom 10^-10 m); task stem now asks for the ratio of diameters, answer key 10⁵ unchanged.
+- k1 c) volume defined via length: correct derived-quantity chain.
+- k3 e) recomputed: v_E = 3,0 → t-t0 = 300 s, s = 1,80 km; v_E = 3,4 → 392 s, s = 2,35 km; s = v_A(t - t0) ∝ catch-up time, so relative uncertainties equal. Correct.
+- k4 c) 0,1/1,4 = 7 %, 0,2/1,4 = 14 %: the "7–14 %" is right (old "jopa 10 %" was wrong).
+- k5 a) "käyttömetallien" qualifier and "kummankin lukeman" (two readings, ΔV = 1,0 ml): consistent with solution.
+- k6 c) air resistance reduces the rate of speed increase most for light, wide bodies: correct causality.
+- k7 d) d1 = d/N through origin, Δd1 = Δd/N = 2 µm; e) 80 g/m² exact per teacher decision V11, precision limited by the 2 % thickness uncertainty; answer 780 kg/m³ and rubric (784, ≈780) consistent.
+- k2 d) "karkea arvio" in solution and rubric agree; figure aria-labels (figures.py and svg) match, numbers unchanged.

@@ -65,7 +65,7 @@
         },
         {
           "text": "Gram ($\\text{g}$), used to measure mass.",
-          "feedback": "The gram is not a base unit of its own but a part of the kilogram formed with a prefix, $1\\,\\text{g} = 10^{-3}\\,\\text{kg}$. The SI base unit of mass is the kilogram."
+          "feedback": "The gram is not an SI base unit but a thousandth of the kilogram, $1\\,\\text{g} = 10^{-3}\\,\\text{kg}$. The SI base unit of mass is the kilogram, even though the prefixes are attached to the gram: a kilogram is a thousand grams."
         },
         {
           "text": "Litre ($\\textsf{l}$), used to measure volume.",
@@ -282,7 +282,7 @@
     {
       "id": "fy1-2-L3-01",
       "level": 3,
-      "text": "A light-year is the distance light travels in one year. Use the values $c = 2.998\\cdot10^{5}\\,\\text{km/s}$, $1\\,\\text{a} = 3.156\\cdot10^{7}\\,\\text{s}$ and $1\\,\\text{AU} = 1.496\\cdot10^{8}\\,\\text{km}$. How many astronomical units is one light-year?",
+      "text": "A light-year is the distance light travels in a vacuum in one year. Use the values $c = 2.998\\cdot10^{5}\\,\\text{km/s}$, $1\\,\\text{a} = 3.156\\cdot10^{7}\\,\\text{s}$ and $1\\,\\text{AU} = 1.496\\cdot10^{8}\\,\\text{km}$. How many astronomical units is one light-year?",
       "answer": 63250,
       "unit": "AU",
       "tolerance": 0.02
@@ -306,7 +306,7 @@
     {
       "id": "fy1-2-L3-04",
       "level": 3,
-      "text": "The period $T$ of a pendulum, that is the time of one full swing, can depend only on the length $L$ of the pendulum, the acceleration of free fall $g$ and the mass $m$ of the pendulum.\n\nAssume that $T = k\\,L^{a}g^{b}m^{c}$, where $k$ is a number without a unit. Use the units to deduce the exponents $a$, $b$ and $c$.\n\nWith a length of $0.250\\,\\text{m}$ the period was measured to be $1.00\\,\\text{s}$. How long is the period in the same place when the length is $1.00\\,\\text{m}$?",
+      "text": "The period $T$ of a pendulum is the time of one full swing. Assume that the swings are small. Then the period can depend only on the length $L$ of the pendulum, the acceleration of free fall $g$ and the mass $m$ of the pendulum.\n\nAssume that $T = k\\,L^{a}g^{b}m^{c}$, where $k$ is a number without a unit. Use the units to deduce the exponents $a$, $b$ and $c$.\n\nWith a length of $0.250\\,\\text{m}$ the period was measured to be $1.00\\,\\text{s}$. How long is the period in the same place when the length is $1.00\\,\\text{m}$?",
       "kind": [
         "reasoning",
         "model"
@@ -323,7 +323,7 @@
         "data",
         "reasoning"
       ],
-      "answer": 1.54,
+      "answer": 1.5,
       "unit": "h",
       "tolerance": 0.03,
       "data": {

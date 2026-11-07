@@ -1,19 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 039bbf04c7489009
-Mode: full (translation review against the reviewed Finnish set; new task L2-08)
-Round 2
+CONTENT-HASH: 1d524cde5c7b4567
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
-(none)
-
-## Fixed
-(none needed)
+- none
 
 ## Polish
-(none)
+- none that affect correctness
 
 ## Checked
-- fy1-3-L2-08 compared with content/fi: id, level, kind, tolerance, data table (10 cells), the four choices (one correct, same as fi), feedback and solutions.md carry identical numbers and the same physics (clearer Finnish per NOTES.md §12 (short sentences, 'epävarmuus eli mittauksen mahdollinen virhe' glossed), same physics).
-- Recomputed: light 71.5/5 = 14.30 s, heavy 71.8/5 = 14.36 s, difference 0.06 s = one third of 0.2 s; half-ranges 0.2 s and 0.15 s; 14.3 s ± 0.2 s, one swing 1.43 s ± 0.02 s; all correct.
-- Conclusion "data do not show an effect" is correctly distinguished from "no effect"; over-precise 14.300 s distractor feedback is right.
-- check_i18n.py shows nothing for fy1-3; build.py fy1-3 succeeds; older exercises unchanged.
+- diff since edb368de4 (exercises.json, solutions.md, answers.py): zero-reading task 36,4 - 0,9 = 35,5 g; calliper systematic error mean 8,06 cm - 8,00 = 0,06 cm (recomputed, random-error 0,025 cm, shifted readings 7,98-8,03 cm), answers.py
+- numbers recomputed independently in Python

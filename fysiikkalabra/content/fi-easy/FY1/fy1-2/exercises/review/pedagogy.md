@@ -1,18 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 1376c48c80de3eac
-Mode: full (translation review against the reviewed Finnish set)
-Round 2
+CONTENT-HASH: 5f4f2426ee24d0b6
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
-(none)
-
-## Fixed
-- none needed
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- L1-09 keeps the Finnish pedagogy: the stem does not name the formula, each distractor targets one unit error (product, inverse, squared time) and its feedback names it; the correct feedback does not just restate the answer.
-- Level 1, kind (concept, reasoning) and core flags identical to fi; no hint or answer leak added.
-- Clear Finnish per NOTES.md §12: short sentences, same physics as fi.
+- exercises.json, solutions.md, answers.py (384 400 km exact so 384,4 Mm; 1,5 h two figures; Voyager helper values).

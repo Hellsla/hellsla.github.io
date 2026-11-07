@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 14228fc14bde79ec
+CONTENT-HASH: 8df0fe9533bdd32b
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
+- none
 
 ## Polish
-- 360 px:ssä vasara ja höyhen ovat pieniä; niitä voisi suurentaa, sillä ne ovat kuvan aihe.
-- Aria-label puhuu haaleista välikuvista, mutta keskimmäinen vasara on lähes täysin peittävä; selvempi läpikuultavuus yhtenäistäisi.
-- Kuumoduuli on pelkkä laatikko; pieni yksityiskohta (folio, tikkaat) nostaisi tasoa muuhun kuvaan nähden.
+- Ball B is also blue and the velocity arrows are blue; they are told apart by position and the arrow, but a student may link blue arrow to ball B. Colour meaning is kept consistent with the book's velocity colour, so acceptable.
 
 ## Checked
-batch delta review: uusi tekstitön avauskuva (data-fig="hero") Miksi-kysymyksen alla, kaappaukset 1200 ja 360 px sekä SVG. Astronautti Kuun pinnalla, kuumoduuli ja Maa taivaalla, vasara ja höyhen kolmessa vaiheessa aina samalla korkeudella ja kasvavin välimatkoin (70 px, sitten 120 px): oikea tilanne ja oikea fysiikka. Aria-label vastaa kuvaa, ei tekstiä, värit figuuripaletista.
+- Lesson diff: sim.js (both velocity arrows now blue), exit-ticket 6,06, lesson.md wording of m/s2, lesson-answers.py. 9,81/1,62 = 6,056 -> 6,06 correct.

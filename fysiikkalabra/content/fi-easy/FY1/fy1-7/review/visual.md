@@ -1,10 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: beea801f93a32cad
+CONTENT-HASH: 4bf62d81fbbd81e3
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-3 diff since the round-2 commit only)
 
 ## Blocking
+- none
 
 ## Polish
-
+- none
 
 ## Checked
-Round 2 delta: scratchpad kc/r2-fy1-7-390.png and kc/r2-fy1-7-1280.png (section cut from rebuilt preview/fi-easy/fy1-7.html; sheets r2sheet390.png, r2sheet1280.png). Changed text read in the diff f83714cd..b8a6e1bb and seen in the capture: fluent, plain, physics unchanged. Stacked at 390 px, two columns at 1280 px, no overflow, no KaTeX errors, nothing clipped.
+- git diff edb368de4 of the part's files (fi-easy fy1-7 lesson): hero alt text (figures.py, figures.json, rendered aria-label) no longer names the metals, matches the Finnish fix in en and fi-easy; hook text, table note about temperature/wood (units LaTeX), second section title, density-estimate note in inquiry.
+- source diff only (text, alt text, numbers); no figure geometry or layout changed, so no new captures were opened

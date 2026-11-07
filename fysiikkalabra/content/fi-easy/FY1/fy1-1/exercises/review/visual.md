@@ -1,17 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: ec2ad2139960c54b
-Mode: delta, Round 1 (new task fy1-1-L1-09, solutions.md)
+CONTENT-HASH: cb47a9d26200af48
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- Captures opened: fy1-1-open-exercises-1280-9 and -10 (L1-09: task end, four options, feedback with decimal comma and unit in LaTeX, Annettu/Kysytty/Periaate/Mallivastaus/Järkevyys blocks).
-- Read the Finnish text from exercises.json and solutions.md as well: plain sentences, glossary terms (suuruusluokka), consistent address, "Kumpikaan" correctly refers to the two remaining values.
-- Not checked from captures: the exercises are captured only at 1280 px, so the new task at 390 px was not seen; the other edited tasks (situation/question paragraph splits) were judged from the diff only unless named above.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+- exercises.json Voyager item (119,0 AU, answer 142,5), solutions.md exactness remarks, answers.py.
+- No captures opened (light mode, judged from the diff). Fi-easy: sentences stay short and plain, notation and units in LaTeX with decimal comma, changes match the Finnish fix.

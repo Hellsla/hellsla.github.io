@@ -488,7 +488,7 @@ A unit is chosen so that the numerical value is easy to read. In the chapter *Ph
 For example, the diameter of a hydrogen atom is $0.11\,\text{nm}$ and that of a proton $1.7\,\text{fm}$. A unit does not change the size, only the way of writing it. The astronomical unit and the light-year are not SI units, but they are defined in metres, so you can always convert them to metres.
 
 ### Significant figures
-The **significant figures** of a numerical value tell how precisely the quantity is known. Starting from the first digit that is not zero, all digits, including trailing zeros, are significant: $0.0250\,\text{m}$ has three significant figures and $3.0\,\text{m}$ has two. Scientific notation makes the precision visible: $3.00\cdot10^{8}$ has three significant figures and $3\cdot10^{8}$ has one. The trailing zeros of a whole number are unclear: from $384\,400$ you cannot see whether the precision is a hundred kilometres or one kilometre. Show the precision in scientific notation, for example $3.844\cdot10^{5}$ (four significant figures).
+The **significant figures** of a numerical value tell how precisely the quantity is known. Starting from the first digit that is not zero, all digits, including the trailing zeros of a decimal number, are significant: $0.0250\,\text{m}$ has three significant figures and $3.0\,\text{m}$ has two. Scientific notation makes the precision visible: $3.00\cdot10^{8}$ has three significant figures and $3\cdot10^{8}$ has one. The trailing zeros of a whole number are unclear: from the Moon's mean distance $384\,400\,\text{km}$ you cannot see whether the precision is a hundred, ten or one kilometre. Show the precision in scientific notation, for example $3.844\cdot10^{5}\,\text{km}$ (four significant figures). In the tasks of this book a value given as a whole number ending in zeros, such as $10\,\text{min}$, is exact unless stated otherwise.
 
 The result of a multiplication or division is given with as many significant figures as the least precise factor has. Rounding is done only at the end, and exact numbers such as the conversion factor $1000$ have no limiting effect. For example, $1.85\,\text{m}\cdot0.92\,\text{m} = 1.702\,\text{m}^2$ is rounded to $1.7\,\text{m}^2$.
 
@@ -501,7 +501,7 @@ When you change a unit, the quantity does not change, only the way of writing it
 
 In the other direction $1\,\text{m} = 0.001\,\text{km}$, so $350\,\text{m} = 350\cdot0.001\,\text{km} = 0.35\,\text{km}$. Always check the result by reasoning: in a smaller unit the numerical value is greater, because more of the small units are needed. For area, the unit is a product of two lengths, so $1\,\text{km}^2 = 1000\,\text{m}\cdot1000\,\text{m} = 10^{6}\,\text{m}^2$.
 
-In astronomy the kilometre is too small a unit. The **astronomical unit** $\text{AU}$ is the mean distance between the Earth and the Sun: $1\,\text{AU} = 149\,597\,870.7\,\text{km} \approx 1.496\cdot10^{8}\,\text{km}$. The light-year is also a unit of length, not of time: it is the distance light travels in a year, about $9.46\cdot10^{12}\,\text{km}$.
+In astronomy the kilometre is too small a unit. The **astronomical unit** $\text{AU}$ is an agreed unit of length that is close to the mean distance between the Earth and the Sun: $1\,\text{AU} = 149\,597\,870.7\,\text{km} \approx 1.496\cdot10^{8}\,\text{km}$. The light-year is also a unit of length, not of time: it is the distance light travels in a vacuum in a year, about $9.46\cdot10^{12}\,\text{km}$.
 
 A distance can also be given as the time light needs to travel it. Light travels in a vacuum at a constant speed $c$, so the distance it covers is speed times time, $s = ct$. The travel time is obtained by solving this formula for time:
 
@@ -564,7 +564,7 @@ t = \frac{s}{c}
 <!-- vaihe -->
 
 **Unit conversions.** The distance is converted to kilometres by writing $1.496\cdot10^{8}\,\text{km}$ in place of $\text{AU}$: $s = 30.1\,\text{AU} = 30.1\cdot1.496\cdot10^{8}\,\text{km} = 4.503\cdot10^{9}\,\text{km}$.
-The travel time comes out in seconds, because $\text{km}$ cancels. It is converted to hours because $1\,\text{h} = 3600\,\text{s}$.
+The travel time comes out in seconds, because $\text{km}$ cancels. The time is asked in hours, so the seconds are converted to hours: $1\,\text{h} = 3600\,\text{s}$.
 
 <!-- vaihe -->
 
@@ -584,7 +584,7 @@ t &= \frac{s}{c} \\
 
 <!-- vaihe -->
 
-**Reasonableness.** Light travels one AU in $8.3\,\text{min}$, so $30$ AU is about $30\cdot 8.3\,\text{min} = 250\,\text{min} \approx 4.2\,\text{h}$. This agrees with the result, and the distance is of the order of billions of kilometres, as suits an outer planet.
+**Reasonableness.** Light travels one AU in $8.3\,\text{min}$, so $30\,\text{AU}$ takes light about $30\cdot 8.3\,\text{min} \approx 250\,\text{min} \approx 4.2\,\text{h}$. This agrees with the result, and the distance is of the order of billions of kilometres, as suits an outer planet.
 
 ## Common misconception
 The numerical value and the unit belong together. When the unit changes, the numerical value changes inversely: a larger unit means a smaller numerical value, and the quantity itself stays the same.
@@ -598,5 +598,5 @@ The light-year is not a unit of time, even though the name contains the word yea
 - In the SI system the base units are, for example, the metre, the kilogram and the second, and the other units are derived from them.
 - A prefix is a power of ten: kilo $10^{3}$, mega $10^{6}$, giga $10^{9}$, milli $10^{-3}$, micro $10^{-6}$.
 - In a unit conversion, the old unit is replaced by its value in the new unit, for example $4.2\,\text{km} = 4.2\cdot1000\,\text{m}$. For a square unit the conversion is done twice: $1\,\text{km}^2 = 10^{6}\,\text{m}^2$.
-- The result is given with as many significant figures as the least precise factor has.
+- The result of a multiplication or division is given with as many significant figures as the least precise factor has.
 - The travel time of light is $t = \tfrac{s}{c}$. Light travels one AU in about $8.3\,\text{min}$.

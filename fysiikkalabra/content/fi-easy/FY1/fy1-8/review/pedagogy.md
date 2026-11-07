@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: f2c08e3126eb44f3
+CONTENT-HASH: 530cc5a1ca475aac
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- "Fysiikan väitteitä arvioidaan havaintojen ja mittausten avulla": "arvioidaan" is abstract; "tutkitaan ja testataan" is easier. Optional.
+- none
 
 ## Checked
-batch delta review (fi-easy, NOTES 12): intro rewritten in short whole sentences and now matches the Finnish; physics unchanged; 'tutkimus' defined in the sentence.
+- inquiry.json (slope as (s2-s1):(t2-t1)), lesson.md (source criticism sentence, objectivity, result paragraph), figures.py (velocity arrow blue, distance line neutral grey: colour carries meaning).

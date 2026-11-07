@@ -1,14 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: ac597b2b7b79c1f5
+CONTENT-HASH: 47933f68f26e6279
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-3 diff since the round-2 commit only)
 
 ## Blocking
+- none
 
 ## Polish
-- inquiry.json:83 — otsikko "kauempana oleva luotain" ei vastaa kysymystä, joka puhuu vain matkasta ($10^{9}\,\text{km}$), ei luotaimesta; kirjoita esim. "Ennuste 2: sata kertaa pidempi matka" tai "Ennuste 2: valon kulkuaika kauemmas". Huom. "kymmenkertainen" oli ennen virheellinen (matka on satakertainen), joten muutos korjaa oikean asian eikä paljasta vastausta.
-- Edellisen kierroksen Polish-kohdat (AU-lause, mm→µm-esimerkki, ennusteen 33 s, Neptunus-toisto, merkitsevät numerot tutkimusvaiheessa) ovat ennallaan eivätkä estä.
+- lesson.md: "loppunolliin päättyvä arvo" is ungrammatical Finnish; better "nollaan päättyvä" or "loppunollilla päättyvä" (same in fi-easy).
 
 ## Checked
-- Diff on yksi otsikon vaihto; ei lukuja, symboleja eikä vastausta paljastavaa sisältöä.
-- Uusi otsikko ei kerro tulosta (ei aikaa, ei kerrointa); ennustekysymys ja vaihtoehdot ennallaan.
-- Otsikko pysyy mielekkäänä, kun ennuste avataan uudelleen kokeen jälkeen.
-- Hash tarkistettu alussa ja lopussa: ac597b2b7b79c1f5.
+- git diff edb368de4: inquiry.json (feedbacks 142,2 AU / 19,7 h / 142-kertainen, model, calc d0 119,0, source_note, table, Burlaga comparison feedback and explain model/criteria all consistent), lesson.md sig-fig sentence, sim.js D0, tests/sims/fy1-2.json. Comparison feedback is honest about 1 AU accuracy.

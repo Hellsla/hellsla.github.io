@@ -244,7 +244,7 @@
     {
       "id": "fy1-6-L2-07",
       "level": 2,
-      "text": "Students measure the acceleration of free fall with two light gates placed one below the other vertically. The speed of an object $5.0\\,\\text{cm}$ long, dropped from rest, is obtained at each gate from the length of the object and the time $\\Delta t_\\text{light}$ for which the light is blocked.\n\nThe moment of the drop is not known accurately, but a clock measures the moments $t$ when the blocking of the light is halfway, that is, when the middle of the object is at the gate.\n\nCalculate the acceleration of free fall from the measurements in the table. Explain why $g$ can be obtained from the speeds at the two gates even though the moment of the drop is not known.",
+      "text": "Students measure the acceleration of free fall with two light gates placed one below the other vertically. The speed of an object $5.0\\,\\text{cm}$ long, dropped from rest, is obtained at each gate from the length of the object and the time $\\Delta t_\\text{light}$ for which the light is blocked.\n\nThe moment of the drop is not known accurately, but a clock measures the moments $t$ when the blocking of the light is halfway in time. At that moment the speed of the object equals its average speed during the blocking.\n\nCalculate the acceleration of free fall from the measurements in the table. Explain why $g$ can be obtained from the speeds at the two gates even though the moment of the drop is not known.",
       "kind": [
         "data",
         "model"
@@ -311,7 +311,7 @@
         },
         {
           "text": "The heavier ball is pulled harder towards the Earth, so its speed grows faster.",
-          "feedback": "This is a common misconception: the heavier ball is also harder to set in motion, and these two effects cancel each other. The acceleration of free fall $g$ is the same for all objects."
+          "feedback": "This is a common misconception. The Earth does pull the heavier ball harder, but the heavier ball is also harder to set in motion, and these two effects cancel each other. The acceleration of free fall $g$ is the same for all objects."
         },
         {
           "text": "The acceleration of free fall $g$ is the same for all objects without air resistance, so the speed $v = g\\,t$ does not depend on mass.",

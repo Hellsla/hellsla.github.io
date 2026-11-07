@@ -1,17 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 1b08d793dcc1fb99
+CONTENT-HASH: 8e9f0b247c03065b
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
+- none
 
 ## Polish
-- exercises.json fy1-8-L1-09 statement 4 — "ero alle 0,2 s ei osoita vaikutusta" treats one reading's uncertainty as the uncertainty of a difference of two times (which is larger, up to 0,4 s) and of single runs; reword to "alle ajanoton epävarmuuden" or "kun kummallakin massalla on useita toistoja, keskiarvojen ero on pienempi kuin hajonta" so a careful student is not marked wrong for being careful.
-- exercises.json fy1-8-L1-09 statement 3 — "kello näyttää sadasosasekunteja" is not given in the task text; add to the task "kello näyttää sadasosasekunnin tarkkuudella" so the distractor can be judged from the text.
-- exercises.json fy1-8-L1-09 — five statements with a slightly subtle number (0,2 s) is on the heavy side for Level 1; consider trimming to four statements.
-- solutions.md fy1-8-L1-09 — has no Annettu line (unlike other solutions); add the given facts for consistency.
+- none
 
 ## Checked
-- New true/false task: two true, three false; each false statement carries a real misconception (changing the angle, one run is enough, a refuted hypothesis is a failure); each feedback is specific.
-- Task covers the slot goals (variable control, repetition, uncertainty, interpreting a null result); no equation needed.
-- Situation first, instruction last; everyday toy-car context.
-- Answer string "1 tosi, 2 epätosi, ..." matches the statements.
-- Rest of set unchanged since PASS; Finnish reads correctly.
+- exercises.json, solutions.md, answers.py diff: Percent task 0,500/0,420 (16 %), reaction-time remark in the ball task (k = 3,75), slope notation (s2-s1):(t2-t1), cooling-rate notation. Consistent.

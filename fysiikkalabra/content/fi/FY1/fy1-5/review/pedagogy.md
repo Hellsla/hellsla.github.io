@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 35583b6e7a209852
+CONTENT-HASH: 7f6d335106248272
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
+- none
 
 ## Polish
+- Unit-conversion line '15,341 · 1/149 597 870,7 AU : (1/86 400 vrk)' is a little heavy for the stage but is a clear substitution of units.
 
 ## Checked
-- Delta (lesson.md): (t, s) kirjoitettu matematiikkatilaan neljässä kohdassa (Suoraan verrannollisuus, Nopeus kuvaajasta, Tiivistelmä); merkintä on yhtenäinen muun tekstin kanssa eikä muuta sisältöä.
-- Lineaarinen malli: "kun nopeus muuttuu tarkasteltavana aikana vain vähän" on suomeksi sujuvampi kuin aiempi "tarkasteltuun aikaan nähden" ja 17-vuotiaalle selkeämpi; merkitys ennallaan, ei uusia lukuja tai symboleja.
-- Ei vaikutusta oppimispolkuun, ennusteisiin, kokeisiin, esimerkkiin tai tehtäviin; aiemmat Polish-huomiot (hero-kuvan puomi ja välit) koskevat kuvaa, jota diff ei muuttanut.
+- Lesson diff: inquiry.json and lesson.md Voyager example (d0 119,0 AU, 144,9 AU, 142,6 AU Feb, Sun vs Earth distance). Arithmetic checked (3,2 AU/yr, 25,89 AU, 2922 d).

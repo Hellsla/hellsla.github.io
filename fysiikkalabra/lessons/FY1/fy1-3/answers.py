@@ -25,7 +25,7 @@ a = {}
 a["fy1-3-L1-01"] = mean([0.52, 0.48, 0.55, 0.49])                  # mean = 2,04 s / 4 = 0,51 s
 a["fy1-3-L1-02"] = 20.3 - 20.0                                     # error = result − true = 20,3 cm − 20,0 cm = +0,3 cm
 a["fy1-3-L1-03"] = half([12.4, 12.9, 12.6, 12.2, 12.7])            # read off figure fy1-3/pendulum-dots: (12,9 s − 12,2 s) / 2 = 0,35 s
-a["fy1-3-L1-04"] = 48.7 - 1.2                                      # zero correction: m = 48,7 g − 1,2 g = 47,5 g
+a["fy1-3-L1-04"] = 36.4 - 0.9                                      # zero correction: m = 36,4 g − 0,9 g = 35,5 g (not the numbers of figure zero-scale)
 a["fy1-3-L1-05"] = 1.0 / 2                                         # reading uncertainty estimated as half the smallest division = 1 mm / 2 = 0,5 mm
 # Level 2: conversion, two steps or a rearrangement
 t6 = [1.84, 1.91, 1.78, 1.88, 1.96, 1.82]
@@ -37,7 +37,7 @@ a["fy1-3-L2-04"] = half([5.2, 5.6, 5.4, 5.3, 5.5]) / half([5.40, 5.43, 5.41, 5.4
 # Level 3: reasoning and combining ideas
 a["fy1-3-L3-01"] = -0.18 + 0.12                                    # reading = true − start delay + stop delay: error = −0,18 s + 0,12 s = −0,06 s
 a["fy1-3-L3-02"] = 0.5 / 250 * 1000                                # one sheet: 0,5 mm / 250 = 0,002 mm = 2,0 µm
-a["fy1-3-L3-03"] = mean([8.24, 8.27, 8.25, 8.29, 8.25]) - 8.00    # systematic error = mean − true = 8,26 cm − 8,00 cm = 0,26 cm
+a["fy1-3-L3-03"] = mean([8.04, 8.07, 8.05, 8.09, 8.05]) - 8.00    # systematic error = mean − true = 8,06 cm − 8,00 cm = 0,06 cm (a plausible calliper zero error)
 # Exercise bank additions (teacher 2026-11-04): L1-06 is multiple choice (no number); L2-08 too
 w = [5.41, 5.47, 5.39, 5.44, 5.43]                                 # block width (cm): mean 5,428 cm, half-range 0,04 cm (one figure) -> mean to hundredths
 a["fy1-3-L1-07"] = round(mean(w), 2)                               # 27,14 cm / 5 = 5,428 cm -> 5,43 cm (± 0,04 cm)

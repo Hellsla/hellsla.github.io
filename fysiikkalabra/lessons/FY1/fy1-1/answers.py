@@ -36,8 +36,8 @@ sheets = [(50, 5.0), (100, 10.5), (150, 15.0), (200, 20.5), (250, 25.5), (300, 3
 a["fy1-1-L2-07"] = round(sum(n * h for n, h in sheets) / sum(n * n for n, _ in sheets), 3)   # line through the origin: k = Σ N h / Σ N² = 23175 / 227500 = 0,1019 mm per sheet -> 0,102 (tolerance 0,05: 0,097…0,107)
 # Level 3
 drop = 4 / 3 * math.pi * (1.0e-3) ** 3               # raindrop d = 2,0 mm: V = (4/3) π r³ = 4,19·10⁻⁹ m³
-rain = 5.0e-3 * 6.0e3 * (10 / 60)                    # 5,0 mm/h on 6,0·10³ m² for 10 min: 5,0·10⁻³ m · 6,0·10³ m² · (1/6) = 5,0 m³
+rain = 5.0e-3 * 6.0e3 * (10 / 60)                    # 5,0 mm/h on 6,0·10³ m² for 10 min (exact chosen duration): 5,0·10⁻³ m · 6,0·10³ m² · (1/6) = 5,0 m³
 a["fy1-1-L3-04"] = round(rain / drop / 1e9, 2)       # drops: 5,0 m³ / 4,19·10⁻⁹ m³ = 1,19·10⁹ -> 1,19 billion (milliard)
 v_voy = 15.341; AU_km = 1.496e8; yr = 3.156e7        # Voyager 2: 15,341 km/s, 1 AU = 1,496·10⁸ km (as in the task), 1 a = 3,156·10⁷ s
-a["fy1-1-L3-05"] = round(119.7 + v_voy * 7.25 * yr / AU_km, 1)   # model d = d0 + v t: 15,341 km/s · 7,25 a = 3,510·10⁹ km = 23,46 AU -> 119,7 + 23,46 = 143,16 -> 143,2 AU
+a["fy1-1-L3-05"] = round(119.0 + v_voy * 7.25 * yr / AU_km, 1)   # model d = d0 + v t (d0 = 119,0 AU at the heliopause crossing, Burlaga et al. 2019): 15,341 km/s · 7,25 a = 3,510·10⁹ km = 23,46 AU -> 119,0 + 23,46 = 142,46 -> 142,5 AU
 print(json.dumps(a))

@@ -1,10 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 827d4b9c758f6798
+CONTENT-HASH: 8df0fe9533bdd32b
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] top-390/top-1280 — the title formula is set in KaTeX serif at a slightly larger optical size than the heading font; reads clearly and is a consequence of the project-wide all-LaTeX rule, so nothing to change.
+- [Minor] sim.js — pallo B ja sen nopeusnuoli ovat lähes samaa sinistä, ja pallo A:n nuoli on sininen vaikka pallo on oranssi; ehkä selitteeseen rivi 'sininen nuoli = nopeus' jos sitä ei ole.
 
 ## Checked
-batch delta review: opened fy1-6-top-390 (and top-1280 for fy2-5, fy3-6); the title formula renders as KaTeX (no red source), on one block with the heading, nothing clipped, no overflow, breadcrumb legible; the rest of the lesson is unchanged by the diff.
+- fy1-6 sim.js (COL/VEL, arrow-kutsu), lesson.md, exit-ticket.json (6,06); kuvien osalta lähdekoodi/SVG (ei kuvakaappauksia, kevyt katselmointi)
+- Nopeusnuolet ovat sim.js:ssä nyt nopeuden sinisiä (VEL #1971c2), pallot erotetaan toisistaan sijainnillaan ja pallon, jälkipisteiden, kuvaajan ja selitteen värillä (A oranssi, B sininen); koodista ei näy vaaraa, että pallon B tunnusväri ja nopeuden väri sekoittuisivat pahasti: B-pallo (38,110,214) ja nuoli (25,113,194) ovat lähes samaa sinistä, mutta nuolet ovat aina pallon vieressä ja selite kertoo asian. 'metriä sekunnissa toiseen' on selkeä ja luonteva.

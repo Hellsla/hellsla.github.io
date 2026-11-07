@@ -2,7 +2,7 @@
 
 > **Why** can two metal cubes of the same size feel completely different in weight in your hand, and how can you work out what an unknown object is made of using only a balance and a measuring cylinder?
 
-<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: a balance on a laboratory bench with two metal cubes of the same size in its pans, a light aluminium one and a dark iron one. The balance tips towards the iron cube. Beside it is a measuring cylinder with water." class="fig-hero" style="max-width:100%;font-size:24px">
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: a balance on a laboratory bench with two metal cubes of the same size in its pans, a light one and a dark one. The balance tips towards the dark cube. Beside it is a measuring cylinder with water." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy17h-win" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#d0e6fb"/></linearGradient><linearGradient id="fy17h-foot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6c757d"/><stop offset="1" stop-color="#1f2933"/></linearGradient><linearGradient id="fy17h-pillar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a96a3"/><stop offset="0.3" stop-color="#ffffff"/><stop offset="0.65" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient><linearGradient id="fy17h-pan263" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a96a3"/><stop offset="0.3" stop-color="#ffffff"/><stop offset="0.65" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient><linearGradient id="fy17h-pan816" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a96a3"/><stop offset="0.3" stop-color="#ffffff"/><stop offset="0.65" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient><linearGradient id="fy17h-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient></defs>
   <rect x="0" y="0" width="1200" height="430" fill="#ffffff"/>
   <line x1="0" y1="0" x2="0" y2="430" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
@@ -156,13 +156,13 @@ If the measurement results are plotted in a coordinate system with volume on the
 
 ### Density tells you what the substance is
 
-Every pure substance has its own density in a given state of matter and at a given temperature, so density is like a fingerprint of the substance: once the mass and volume of an object have been measured, the calculated density can be compared with table values. The conclusion is not certain. Measurements always contain error (chapter *Measuring and the reliability of a measurement*), and some substances have almost the same density, so the result only tells you which substances the object may be made of.
+Every pure substance has its own density in a given state of matter and at a given temperature and pressure, so density is like a fingerprint of the substance: once the mass and volume of an object have been measured, the calculated density can be compared with table values. The conclusion is not certain. Measurement results always contain uncertainty (chapter *Measuring and the reliability of a measurement*), and some substances have almost the same density, so the result only tells you which substances the object may be made of.
 
 <figure class="unit-photo"><img src="pics/fy1/blue-iceberg.webp" alt="A pale blue iceberg with an odd shape floats on grey water under a cloudy sky."><figcaption>An iceberg in a glacier lagoon in Iceland. Ice floats in water because its density is smaller than that of water.</figcaption></figure>
 
 ## Formula: Density
 
-The density of a substance is the ratio of mass to volume. Solving this ratio for mass and for volume gives two other forms:
+The density of a substance is the ratio of mass to volume. Solving this equation for mass and for volume gives two other forms:
 
 ```latex
 \begin{aligned}
@@ -237,7 +237,7 @@ where $\rho$ is the density (SI unit $\text{kg/m}^3$), $m$ the mass (kg) and $V$
   <foreignObject x="115.5" y="104" width="110" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\rho = \dfrac{\Delta m}{\Delta V}$</div></foreignObject>
 </svg>
 
-In the figure, the points of each substance lie on their own line. The steeper the line, the greater the density. You can get the density from a graph by reading two points far apart on the line and calculating $\rho = \Delta m : \Delta V$. The result obtained this way is more accurate than the ratio $m : V$ of a single point, because it uses the whole line.
+In the figure, the points of each substance lie on their own line. The steeper the line, the greater the density. You can get the density from a graph by reading two points far apart on the line and calculating $\rho = \Delta m : \Delta V$. The result obtained this way is more reliable than the ratio $m : V$ of a single measurement point, because the line has been fitted to all the measurement points.
 
 ### Units
 
@@ -262,9 +262,11 @@ In a calculation, keep all quantities in the same system of units. The volume co
 | lead | 11 300 | 11.3 |
 | gold | 19 300 | 19.3 |
 
+The values in the table are at room temperature, the value for ice at $0\,{}^\circ\text{C}$. The density of wood varies with its moisture and quality, so the value for pine is a typical value.
+
 ### Measuring volume
 
-The volume of a regular object is calculated from its dimensions: the volume of a cube is $a^3$ and the volume of a rectangular block is the area of the base times the height. The volume of an irregular object is measured by displacement of water: the object is lowered into a measuring cylinder, and the volume is the rise of the water level, $V = V_2 - V_1$.
+The volume of a regular object is calculated from its dimensions: the volume of a cube is $a^3$ and the volume of a rectangular block is the area of the base times the height. The volume of an irregular object is measured by displacement of water: the object is fully submerged in the water in a measuring cylinder, and its volume is the difference of the cylinder readings, $V = V_2 - V_1$.
 
 <svg data-fig="displacement" viewBox="0 0 600 372" role="img" aria-label="Schematic figure of measuring volume by displacement of water. In the left measuring cylinder the water reaches the 40 ml mark. When a stone is lowered in, the water rises in the right measuring cylinder to the 70 ml mark. The volume of the stone is the difference of the volumes, 30 ml, that is, 30 cm³." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy17-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient></defs>
@@ -318,11 +320,11 @@ A reading of a measuring cylinder contains uncertainty, for example from reading
 
 ### The mass of a container in a measurement
 
-If a liquid is measured in a container and the balance shows the total mass of the container and the liquid, the measurement points do not pass through the origin: the mass $m_0$ of the empty container is included. The total mass follows a linear model $m_\text{tot} = \rho V + m_0$. The density is still the slope of the line, and the constant $m_0$ is the point where the line crosses the vertical axis, that is, the mass of the empty container. The total mass is not directly proportional to volume, but the mass of the liquid itself is.
+If a liquid is measured in a container and the balance shows the total mass of the container and the liquid, the line fitted to the measurement points does not pass through the origin: the mass $m_0$ of the empty container is included. The total mass follows a linear model $m_\text{tot} = \rho V + m_0$. The density is still the slope of the line, and the constant term $m_0$ is the intercept of the line on the vertical axis, that is, the mass of the empty container. The total mass is not directly proportional to volume, but the mass of the liquid itself is.
 
 ## Worked example
 
-A solid iron beam is $1.20\,\text{m}$ long, and its cross-section is a square with a side of 4.0 cm. What is the mass of the beam?
+A solid iron beam is $1.20\,\text{m}$ long, and its cross-section is a square with a side of $4.0\,\text{cm}$. What is the mass of the beam?
 
 <!-- vaihe -->
 
@@ -345,7 +347,7 @@ A solid iron beam is $1.20\,\text{m}$ long, and its cross-section is a square wi
 
 <!-- vaihe -->
 
-**Unit conversions.** The density is in $\text{kg/m}^3$, so the lengths are converted to metres: $a = 4.0\,\text{cm} = 0.040\,\text{m}$. The length is already in metres, and the mass comes out directly in kilograms.
+**Unit conversions.** The density is in $\text{kg/m}^3$, so the lengths are converted to metres: $a = 4.0\,\text{cm} = 4.0 \cdot 0.01\,\text{m} = 0.040\,\text{m}$. The length is already in metres, and the mass comes out directly in kilograms.
 
 <!-- vaihe -->
 
@@ -356,13 +358,13 @@ A solid iron beam is $1.20\,\text{m}$ long, and its cross-section is a square wi
 m &= \rho a^2 L \\
 &= 7870\,\tfrac{\text{kg}}{\text{m}^3} \cdot (0.040\,\text{m})^2 \cdot 1.20\,\text{m} \\
 &= 7870\,\tfrac{\text{kg}}{\text{m}^3} \cdot 1.92 \cdot 10^{-3}\,\text{m}^3 \\
-&= 15.11\,\text{kg}
+&\approx 15.11\,\text{kg}
 \end{aligned}
 ```
 
 <!-- vaihe -->
 
-**Result.** The mass of the beam is about $15\,\text{kg}$. The result is given with two significant figures, because the side $4.0\,\text{cm}$ is known to two figures; the table density $7870\,\text{kg/m}^3$ would be more precise.
+**Result.** The mass of the beam is about $15\,\text{kg}$. The result is given with two significant figures, because the side $4.0\,\text{cm}$ is known to two significant figures; the length $1.20\,\text{m}$ and the table density $7870\,\text{kg/m}^3$ are known more precisely.
 
 <!-- vaihe -->
 
@@ -372,13 +374,13 @@ m &= \rho a^2 L \\
 
 Many people think that a bigger object is denser because it is heavier. A bigger piece of iron is indeed heavier than a small one, but their density is the same: mass and volume grow together so that the ratio $m : V$ does not change. Density is a property of the substance, not of the size of the object.
 
-Another mistake is to mix up units. If the mass is in grams and the volume in cubic metres, the result is a thousand times too large or too small. First convert everything to one system of units: either $\text{kg}$ and $\text{m}^3$ or $\text{g}$ and $\text{cm}^3$.
+Another mistake is to mix up units. If the mass is in grams but the volume in cubic metres and the result is read in $\text{kg/m}^3$, the number is a thousand times too large. First convert everything to one system of units: either $\text{kg}$ and $\text{m}^3$ or $\text{g}$ and $\text{cm}^3$.
 
 A third mistake is to think that the mass of an empty container belongs to the liquid. It must be subtracted from the total mass before the density is calculated.
 
 ## Summary
 
-- Density is mass per unit of volume: $\rho = m : V$, SI unit $\text{kg/m}^3$. Water 1000 $\text{kg/m}^3$, aluminium 2700 $\text{kg/m}^3$, iron 7870 $\text{kg/m}^3$.
+- Density is mass per unit of volume: $\rho = m : V$, SI unit $\text{kg/m}^3$. Water $1000\,\text{kg/m}^3$, aluminium $2700\,\text{kg/m}^3$, iron $7870\,\text{kg/m}^3$.
 - The mass of a given substance is directly proportional to volume: $m = \rho V$. In a graph, $m(V)$ is a straight line through the origin whose slope is the density.
 - Solve the formula for the quantity you need: $\rho = m : V$, $m = \rho V$ or $V = m : \rho$. Keep the units in one system: $1\,\text{g/cm}^3 = 1000\,\text{kg/m}^3$.
 - The volume of an irregular object is measured by displacement of water, $V = V_2 - V_1$. The mass of a container must be subtracted, or it shows up as the constant term $m_0$ of the line.

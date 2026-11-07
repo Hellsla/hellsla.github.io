@@ -1,8 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 2d70734eb2328747
+CONTENT-HASH: f9fb7857e33c9c3c
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-Translation review against the reviewed Finnish source: lesson.md, inquiry.json, exit-ticket.json, figures.json. Same physics, formulas, numbers and answers; every prediction, experiment and choice has the same correct option and numbers as the Finnish (JSON structure and number sets compared by script, no differences). Worked example, rounding and JPL comparison identical. Fixed: meta.json glossary terms left in Finnish (nopeus, paikka, matka) are now speed, position, distance.
+- inquiry.json, lesson.md diff, Voyager d0 = 119.0 AU. Recomputed: 5 Nov 2026 -> 144.89 AU (2922 d); 15 Feb 2026 (2659 d) -> 142.56 AU from the Sun vs JPL 143.05 AU from Earth: 0.5 AU, within the ~1 AU offset, stated as such; unit conversion by substitution correct (0.0088602 AU/day).

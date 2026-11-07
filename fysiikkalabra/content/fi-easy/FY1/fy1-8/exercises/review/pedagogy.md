@@ -1,15 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 0714f54cbaa54000
+CONTENT-HASH: 5b9d5a30105fc9a2
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- L1-09: situation first, question last as its own sentence; a level-1 concept/experiment task of five short statements, each with its own feedback that repairs the misconception.
-- Distractors keep fi's misconception targets (uncontrolled angle, one run enough because of clock resolution, failure equals no effect).
-- Solution explains the principle and judges each statement in order; can be followed by a student who could not solve it.
-- Selkosuomi per NOTES.md §12: short sentences, one idea each, 'vakioida eli pitää samana' explains the term, same physics as fi.
-- Layout of a true/false task unchanged from fi; short statements read on a 360 px screen.
+- exercises.json, solutions.md, answers.py (0,500/0,420 m/s -> 16 %; (s2-s1):(t2-t1) notation; handheld-timing note; rate formula with t_loppu - t_alku).

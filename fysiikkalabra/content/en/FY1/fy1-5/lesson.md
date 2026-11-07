@@ -173,7 +173,7 @@
 ## Key idea
 Uniform motion is motion along a straight line at constant speed: in equal intervals of time, the object travels equal distances. Speed tells you how far the object travels in one second, so its unit is metres per second (m/s). If a trolley moves two metres every second, its speed is $2\,\text{m/s}$.
 
-<svg data-fig="motion" viewBox="0 0 600 330" role="img" aria-label="Motion diagram in which the same trolley is drawn at five consecutive seconds on the grid: 0 s, 1 s, 2 s, 3 s and 4 s. The gaps between the trolleys are equal, and under each gap there is an equally long bracket Δs: in uniform motion an object travels equal distances in equal intervals of time. The gaps are drawn to scale, and the trolleys are the same size." style="max-width:100%;font-size:24px">
+<svg data-fig="motion" viewBox="0 0 600 330" role="img" aria-label="Motion diagram in which the same trolley is drawn at five consecutive instants: 0 s, 1 s, 2 s, 3 s and 4 s. The gaps between the trolleys are equal, and under each gap there is an equally long bracket Δs: in uniform motion an object travels equal distances in equal intervals of time. The gaps are drawn to scale, and the trolleys are the same size." style="max-width:100%;font-size:24px">
   <line x1="24" y1="150" x2="576" y2="150" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <rect x="42" y="114" width="56" height="22" rx="4" fill="#d0e6fb" stroke="#1f2933" stroke-width="2.5"/>
   <rect x="57" y="98" width="26" height="16" rx="3" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
@@ -215,9 +215,9 @@ Uniform motion is motion along a straight line at constant speed: in equal inter
   <circle cx="546" cy="142" r="3" fill="#ffffff"/>
   <line x1="530" y1="150" x2="530" y2="162" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <foreignObject x="500" y="171.5" width="60" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$4\,\text{s}$</div></foreignObject>
-  <line x1="76" y1="70" x2="123" y2="70" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M136,70 L122,76.5 L122,63.5 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <foreignObject x="96" y="31.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$v$</div></foreignObject>
+  <line x1="76" y1="70" x2="123" y2="70" stroke="#1971c2" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M136,70 L122,76.5 L122,63.5 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <foreignObject x="96" y="31.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$v$</div></foreignObject>
   <path d="M70,212 V224 H185 V212" fill="none" stroke="#6b7480" stroke-width="2.5" stroke-linejoin="round"/>
   <foreignObject x="111" y="235.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\Delta s$</div></foreignObject>
   <path d="M185,212 V224 H300 V212" fill="none" stroke="#6b7480" stroke-width="2.5" stroke-linejoin="round"/>
@@ -242,14 +242,14 @@ Suppose that at the start of the observation ($t = 0$) an object is at position 
 ```latex
 s = s_0 + v t
 ```
-where $s$ is the position (m) measured from the chosen zero point, $s_0$ the initial position (m), $v$ the speed (m/s) and $t$ the time from the start (s). The distance travelled by the object is $\Delta s = s - s_0 = vt$. In this chapter the object moves in one direction, so the speed is positive.
+where $s$ is the position (m) measured from the chosen zero point, $s_0$ the initial position (m), $v$ the speed (m/s) and $t$ the time from the start (s). The distance travelled by the object is $\Delta s = s - s_0 = vt$. In the examples of this chapter the object moves in the positive direction, so the velocity is positive.
 
 ### Speed from a graph
 The $(t, s)$ graph is a straight line, and the slope of the line is the speed:
 ```latex
 v = \frac{\Delta s}{\Delta t}
 ```
-where $\Delta s$ is the change in position (m) and $\Delta t$ is its time interval (s). The line crosses the $s$-axis at the initial position $s_0$. If $s_0 = 0$, the position is directly proportional to time: $s = vt$. If $s_0 \neq 0$, the line is equally steep but shifted up or down. Then only the distance $\Delta s$, not the position $s$, is directly proportional to time.
+where $\Delta s$ is the change in position (m) and $\Delta t$ is its time interval (s). The line crosses the $s$-axis at the initial position $s_0$. If $s_0 = 0$, the position is directly proportional to time: $s = vt$. If $s_0 \neq 0$, the line is as steep as the line through the origin at the same speed, but shifted up or down. Then only the distance $\Delta s$, not the position $s$, is directly proportional to time.
 
 <svg data-fig="graph" viewBox="0 0 600 360" role="img" aria-label="Graph drawn to scale: two uniform motions at a speed of 3 m/s are shown as straight lines in a (t, s) coordinate system. The lower line passes through the origin (initial position 0), and the upper line starts from the position s₀ = 5 m and is parallel to the lower line. A slope triangle is drawn on the lower line: in 2 s the position increases by 6 m, so the slope is 3 m/s, which is the speed." style="max-width:100%;font-size:24px">
   <line x1="165" y1="300" x2="165" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -296,18 +296,18 @@ where $\Delta s$ is the change in position (m) and $\Delta t$ is its time interv
 </svg>
 
 ### Units
-Always convert to compatible units (usually SI units) before substituting: substitute the value of the unit in its place. For example $1\,\text{km} = 1000\,\text{m}$ and $1\,\text{h} = 3600\,\text{s}$, so $72\,\text{km/h} = \dfrac{72\cdot1000\,\text{m}}{3600\,\text{s}} = 20\,\text{m/s}$. In the same way $1\,\text{min} = 60\,\text{s}$. In astronomy, long distances are given in astronomical units: $1\,\text{AU} = 149\,597\,870.7\,\text{km}$ is roughly the mean distance between the Earth and the Sun.
+Always convert to compatible units (usually SI units) before substituting: substitute the value of the unit in its place. For example $1\,\text{km} = 1000\,\text{m}$ and $1\,\text{h} = 3600\,\text{s}$, so $72\,\text{km/h} = \tfrac{72\cdot1000\,\text{m}}{3600\,\text{s}} = 20\,\text{m/s}$. In the same way $1\,\text{min} = 60\,\text{s}$. Distances on the scale of the Solar System are often given in astronomical units: $1\,\text{AU} = 149\,597\,870.7\,\text{km}$ is roughly the mean distance between the Earth and the Sun.
 
 ## Worked example
-Voyager 2 crossed the heliopause on 5 November 2018 at a distance of $s_0 = 119.7\,\text{AU}$ from the Sun (NASA/JPL). The speed of the probe relative to the Sun is $v = 15.341\,\text{km/s}$ (JPL Voyager mission status). Assume the speed is constant. According to the model, how far from the Sun is the probe on 5 November 2026?
+Voyager 2 crossed the heliopause on 5 November 2018 at a distance of $s_0 = 119.0\,\text{AU}$ from the Sun (Burlaga et al. 2019, Nature Astronomy). The speed of the probe relative to the Sun at the crossing was $v = 15.341\,\text{km/s}$ (NASA/JPL). Assume the speed is constant. According to the model, how far from the Sun is the probe on 5 November 2026?
 
 <!-- vaihe -->
 
-**Given and find.** $s_0 = 119.7\,\text{AU}$ at time $t = 0$ (5 November 2018), $v = 15.341\,\text{km/s}$ and $1\,\text{AU} = 149\,597\,870.7\,\text{km}$. The time interval from 5 November 2018 to 5 November 2026 is 8 years, including the leap days of 2020 and 2024: $8 \cdot 365 + 2 = 2922$ days. The quantity to find is the distance $s$ from the Sun.
+**Given and find.** $s_0 = 119.0\,\text{AU}$ at time $t = 0$ (5 November 2018), $v = 15.341\,\text{km/s}$ and $1\,\text{AU} = 149\,597\,870.7\,\text{km}$. The time interval from 5 November 2018 to 5 November 2026 is 8 years, including the leap days of 2020 and 2024: $8 \cdot 365 + 2 = 2922$ days. The quantity to find is the distance $s$ from the Sun.
 
 <!-- vaihe -->
 
-**Principle.** When the speed is assumed constant, the probe moves uniformly and its position follows the linear model. The result is a model value, not a measurement: the Sun's gravity slows the probe slightly.
+**Principle.** When the speed is assumed constant, the probe moves uniformly and its position follows the linear model. The result is a model value, not a measurement: the Sun's gravity slows the probe slightly, by only about $0.1\,\text{km/s}$ over 2018–2026, which is negligible here.
 
 <!-- vaihe -->
 
@@ -318,7 +318,7 @@ s = s_0 + v t
 
 <!-- vaihe -->
 
-**Unit conversions.** The time is already in days, $t = 2922\,\text{days}$, so the speed is converted to AU/day: $v = 15.341\,\tfrac{\text{km}}{\text{s}} \cdot 86\,400\,\tfrac{\text{s}}{\text{day}} = 1\,325\,462\,\tfrac{\text{km}}{\text{day}}$, and dividing by $149\,597\,870.7\,\text{km/AU}$ gives $v = 0.0088602\,\tfrac{\text{AU}}{\text{day}}$.
+**Unit conversions.** The time is already in days, $t = 2922\,\text{days}$, so the speed is converted to AU/day. In place of the units we substitute $1\,\text{km} = \tfrac{1}{149\,597\,870.7}\,\text{AU}$ and $1\,\text{s} = \tfrac{1}{86\,400}\,\text{day}$: $v = 15.341\,\tfrac{\text{km}}{\text{s}} = 15.341 \cdot \tfrac{1}{149\,597\,870.7}\,\text{AU} : \left(\tfrac{1}{86\,400}\,\text{day}\right) = 0.0088602\,\tfrac{\text{AU}}{\text{day}}$.
 
 <!-- vaihe -->
 
@@ -326,20 +326,20 @@ s = s_0 + v t
 ```latex
 \begin{aligned}
 s &= s_0 + v t \\
-&= 119.7\,\text{AU} \\
+&= 119.0\,\text{AU} \\
 &\quad + 0.0088602\,\tfrac{\text{AU}}{\text{day}} \cdot 2922\,\text{days} \\
-&= 119.7\,\text{AU} + 25.89\,\text{AU} \\
-&= 145.59\,\text{AU}
+&= 119.0\,\text{AU} + 25.89\,\text{AU} \\
+&= 144.89\,\text{AU}
 \end{aligned}
 ```
 
 <!-- vaihe -->
 
-**Result.** According to the model, the probe is $s \approx 145.6\,\text{AU}$ from the Sun, about $2.18 \cdot 10^{10}\,\text{km}$. The initial distance is given to the nearest tenth, so the result is rounded to the nearest tenth.
+**Result.** According to the model, the probe is $s \approx 144.9\,\text{AU}$ from the Sun, about $2.17 \cdot 10^{10}\,\text{km}$. The initial distance is given to the nearest tenth, so the result is rounded to the nearest tenth.
 
 <!-- vaihe -->
 
-**Reasonableness.** A speed of $15\,\text{km/s}$ covers in a year about $15\,\text{km/s} \cdot 3.16 \cdot 10^{7}\,\text{s} \approx 4.7 \cdot 10^{8}\,\text{km} \approx 3.2\,\text{AU}$, so in 8 years the probe advances about 26 AU and $119.7 + 26 \approx 146\,\text{AU}$. For 15 February 2026 the same model gives $143.3\,\text{AU}$, and JPL reports $143.05\,\text{AU}$ for February 2026. The difference is about $0.2\,\text{AU}$, less than $0.2\,\%$ of the distance, so the constant-speed model works well here. The difference is partly because the Sun's gravity slows the probe very slightly and the initial distance is given only to the nearest tenth. So the model is accurate to a fraction of a percent.
+**Reasonableness.** A speed of $15\,\text{km/s}$ covers in a year about $15\,\text{km/s} \cdot 3.16 \cdot 10^{7}\,\text{s} \approx 4.7 \cdot 10^{8}\,\text{km} \approx 3.2\,\text{AU}$, so in 8 years the probe advances about $26\,\text{AU}$ and $119.0\,\text{AU} + 26\,\text{AU} \approx 145\,\text{AU}$. For 15 February 2026 the same model gives a distance from the Sun of $142.6\,\text{AU}$. The NASA/JPL Voyager mission status page gave the probe's distance from the Earth in February 2026 as $143.05\,\text{AU}$. The Earth orbits the Sun, so the probe's distance from the Earth differs from its distance from the Sun by up to about $1\,\text{AU}$ over the year. The difference of $0.5\,\text{AU}$ is smaller than this: the model and the observation agree to within about $1\,\text{AU}$, and this comparison cannot test the model more precisely. That is less than one percent of the distance, so the constant-speed model suits predictions over a few years.
 
 ## Common misconception
 Many people think that in uniform motion the position doubles when the time doubles. This happens only if the motion starts from the zero point. When a trolley starts at $s_0 = 6\,\text{m}$ and moves at $2.0\,\text{m/s}$, it is at $10\,\text{m}$ at $2.0\,\text{s}$ and at $14\,\text{m}$ at $4.0\,\text{s}$, not at $20\,\text{m}$. The distance, however, does double: $4\,\text{m}$ becomes $8\,\text{m}$. Another mistake is to read the value of the position as the speed instead of the change in position per unit of time: the speed is $\Delta s : \Delta t$, not $s : t$, when $s_0 \neq 0$.

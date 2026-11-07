@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "contribution": "Linear model and direct proportionality in motion: the slope of the $(t, s)$ graph is the speed, the distance (not the position) is directly proportional to time, and the equation $s = s_0 + vt$ works as a calculation tool, for example for the distance of the Voyager 2 probe (a model value, source NASA/JPL).",
+  "contribution": "Linear model and direct proportionality in motion: the slope of the $(t, s)$ graph is the speed, the distance (not the position) is directly proportional to time, and the equation $s = s_0 + vt$ works as a calculation tool, for example for the distance of the Voyager 2 probe (a model value, sources Burlaga et al. 2019 and NASA/JPL).",
   "learn": [
     "calculate the distance, time or speed in uniform motion with the formula $s = s_0 + vt$.",
     "read the speed and the initial position from a $(t, s)$ graph.",
@@ -15,7 +15,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "The Voyager 2 probe left the Earth in 1977. In November 2018 it crossed the heliopause, the boundary beyond which the Sun's solar wind no longer dominates space. According to NASA's JPL, the probe was then 119.7 AU from the Sun, and it is still moving away at a speed of $15.341\\,\\text{km/s}$. The astronomical unit AU is roughly the distance between the Earth and the Sun. You cannot hold a ruler next to the probe, but you can still give its distance for any day.",
+      "text": "The Voyager 2 probe left the Earth in 1977. In November 2018 it crossed the heliopause, the boundary beyond which the Sun's solar wind no longer dominates space. According to the measurements, the probe was then $119.0\\,\\text{AU}$ from the Sun (Burlaga et al. 2019), and it was moving away at a speed of $15.341\\,\\text{km/s}$ (NASA/JPL). The astronomical unit AU is roughly the distance between the Earth and the Sun. You cannot hold a ruler next to the probe, but you can still give its distance for any day.",
       "question": "What information do you need to calculate the distance of the probe from the Sun, say a year from now, and what do you assume about its speed?"
     },
     {
@@ -27,7 +27,7 @@
       "choices": [
         {
           "text": "The point where the line crosses the $s$-axis.",
-          "feedback": "That is the starting point of the line, not the slope (chapter *Graphing and fitting a straight line*). The slope tells you how steep the line is: by how many units $s$ changes when $t$ increases by one."
+          "feedback": "That is where the line crosses the $s$-axis, the constant term, not the slope (chapter *Graphing and fitting a straight line*). The slope tells you how steep the line is: by how many units $s$ changes when $t$ increases by one."
         },
         {
           "text": "How much the position changes per unit of time.",
@@ -101,7 +101,7 @@
       "type": "sim",
       "text": "A trolley moves along a straight track at constant speed. Change the initial position and the speed, start the motion or drag the moment, and see how the $(t, s)$ graph is drawn.",
       "howto": "Set the initial position $s_0$ and the speed $v$ with the sliders; the time returns to zero. *Start* plays the motion, *Pause* stops it and *Reset* returns to the beginning. You can also drag the *Moment* slider. On the track, the orange vertical lines are the positions of the trolley at whole seconds, the green flag is the initial position and the arrow shows the speed. A straight line is drawn in the graph up to the moment you have reached. When you have reached the moment $6\\,\\text{s}$, a slope triangle appears in the graph. *Speed (replay)* changes only the pace of the replay.",
-      "model": "The trolley moves along a straight track at constant speed: no friction and no acceleration, and the full speed is reached right at the start. The positions on the track and the values in the graph are values calculated by the model, not measurements. The trolley moves in one direction only, so the speed is positive.",
+      "model": "The trolley moves along a straight track at constant speed: no friction and no acceleration, and the full speed is reached right at the start. The positions on the track and the values in the graph are values calculated by the model, not measurements. The trolley moves in the positive direction only, so the velocity is positive.",
       "calc": "The position is $s = s_0 + vt$ and the distance travelled is $\\Delta s = s - s_0 = vt$. The slope triangle in the graph goes from the moment $t = 2\\,\\text{s}$ to the moment $t = 6\\,\\text{s}$, so $\\Delta t = 4.0\\,\\text{s}$, and the slope $\\Delta s : \\Delta t$ is the speed $v$."
     },
     {
@@ -224,7 +224,7 @@
         "koe-2"
       ],
       "prompt": "Write, based on your tables: when is the position directly proportional to time, and when only the distance? What does the quotient $\\Delta s : t$ tell you about the motion?",
-      "model": "In experiment 1 the initial position was zero, and the quotient of position and time $s : t$ was $2.0\\,\\text{m/s}$ in every row, which is the speed: the position was directly proportional to time. In experiment 2 the initial position was $6.0\\,\\text{m}$. The quotient of the position changed, for example $10 : 2.0 = 5.0\\,\\text{m/s}$ and $14 : 4.0 = 3.5\\,\\text{m/s}$, but the quotient of the distance $\\Delta s : t$ was $2.0\\,\\text{m/s}$ in every row. So the distance travelled is always directly proportional to time, and the position only when the initial position is zero. The quotient $\\Delta s : t$ is the speed. The values are values calculated by the model: the model assumes constant speed and no friction.",
+      "model": "In experiment 1 the initial position was zero, and the quotient of position and time $s : t$ was $2.0\\,\\text{m/s}$ in every row, which is the speed: the position was directly proportional to time. In experiment 2 the initial position was $6.0\\,\\text{m}$. The quotient of the position changed, for example $10\\,\\text{m} : 2.0\\,\\text{s} = 5.0\\,\\text{m/s}$ and $14\\,\\text{m} : 4.0\\,\\text{s} = 3.5\\,\\text{m/s}$, but the quotient of the distance $\\Delta s : t$ was $2.0\\,\\text{m/s}$ in every row. So the distance travelled is always directly proportional to time, and the position only when the initial position is zero. The quotient $\\Delta s : t$ is the speed. The values are values calculated by the model: the model assumes constant speed and no friction.",
       "criteria": [
         "I said that the position is proportional to time only when the initial position is zero.",
         "I used the numbers in the table to compare the quotients $s : t$ and $\\Delta s : t$.",
@@ -271,7 +271,7 @@
         {
           "text": "The position is not directly proportional to time, because the initial position is not zero. The correct result is $s = 5.0\\,\\text{m} + 3.0\\,\\text{m/s} \\cdot 6.0\\,\\text{s} = 23\\,\\text{m}$.",
           "correct": true,
-          "feedback": "Correct. Only the distance $\\Delta s = vt$ triples ($6.0\\,\\text{m}$ becomes $18\\,\\text{m}$), and the initial position is added once: $5.0 + 18 = 23\\,\\text{m}$. The error could have been noticed by reasoning: the trolley cannot be more than $30\\,\\text{m}$ away, because in $6.0\\,\\text{s}$ it travels only $18\\,\\text{m}$."
+          "feedback": "Correct. Only the distance $\\Delta s = vt$ triples ($6.0\\,\\text{m}$ becomes $18\\,\\text{m}$), and the initial position is added once: $5.0\\,\\text{m} + 18\\,\\text{m} = 23\\,\\text{m}$. The error could have been noticed by reasoning: the trolley cannot be at $33\\,\\text{m}$, because it starts at $5.0\\,\\text{m}$ and in $6.0\\,\\text{s}$ it travels only $18\\,\\text{m}$."
         },
         {
           "text": "The speed should be converted to kilometres per hour before substituting.",
@@ -283,7 +283,7 @@
         },
         {
           "text": "There is no error in the calculation, because in uniform motion the position and the time are proportional.",
-          "feedback": "When the initial position is not zero, the distance is proportional to time, but the position is not. Check by substituting $t = 6.0\\,\\text{s}$ directly: $5.0 + 3.0 \\cdot 6.0 = 23\\,\\text{m}$, not $33\\,\\text{m}$."
+          "feedback": "When the initial position is not zero, the distance is proportional to time, but the position is not. Check by substituting $t = 6.0\\,\\text{s}$ directly: $5.0\\,\\text{m} + 3.0\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot 6.0\\,\\text{s} = 23\\,\\text{m}$, not $33\\,\\text{m}$."
         }
       ]
     },
@@ -394,14 +394,14 @@
       "stage": "tarkista",
       "type": "explain",
       "title": "4. Explain and evaluate the model",
-      "prompt": "Explain why the distance of the Voyager 2 probe from the Sun can be calculated with a linear model, and why the calculated value is a model value and not a measurement.",
+      "prompt": "Explain why the distance of the Voyager 2 probe from the Sun can be calculated with a linear model, and why the calculated value is a model value and not a measurement. Finally, compare the model with the JPL value for February 2026, $143.05\\,\\text{AU}$, which is the probe's distance from the Earth.",
       "criteria": [
         "I wrote the equation $s = s_0 + vt$ and named its quantities.",
         "I said that the model assumes the speed is constant.",
         "I justified why the value is a model value: the speed is not exactly constant, because the Sun's gravity slows the probe.",
-        "I compared the model with the JPL value."
+        "I compared the model with the JPL value and judged how precisely the comparison can test the model."
       ],
-      "model": "The speed of the probe is almost constant, so its distance from the Sun grows by the same amount every second: $s = s_0 + vt$, where $s_0 = 119.7\\,\\text{AU}$ at the moment of the heliopause crossing on 5 November 2018 and $v = 15.341\\,\\text{km/s}$. With this model the distance on 5 November 2026 is about $145.6\\,\\text{AU}$. The value is a model value, because the speed is not exactly constant: the Sun's gravity slows the probe slightly. For 15 February 2026 the model gives $143.3\\,\\text{AU}$, while JPL reports $143.05\\,\\text{AU}$ for February 2026. The difference is about $0.2\\,\\text{AU}$. The difference is partly because the Sun's gravity slows the probe slightly and the initial distance is given only to the nearest tenth. The model is accurate to a fraction of a percent, so it is good for studying a few years.",
+      "model": "The speed of the probe is almost constant, so its distance from the Sun grows by the same amount every second: $s = s_0 + vt$, where $s_0 = 119.0\\,\\text{AU}$ at the moment of the heliopause crossing on 5 November 2018 and $v = 15.341\\,\\text{km/s}$. With this model the distance on 5 November 2026 is about $144.9\\,\\text{AU}$. The value is a model value, because the speed is not exactly constant: the Sun's gravity slows the probe slightly. For 15 February 2026 the model gives a distance from the Sun of $142.6\\,\\text{AU}$. JPL gave the probe's distance from the Earth in February 2026 as $143.05\\,\\text{AU}$. The probe's distance from the Earth differs from its distance from the Sun by up to about $1\\,\\text{AU}$ over the year, because the Earth orbits the Sun. So the model and the observation agree to within about $1\\,\\text{AU}$, which is less than one percent of the distance. This comparison cannot test the model more precisely, but the model suits a study of a few years.",
       "optional": true
     },
     {

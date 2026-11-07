@@ -85,12 +85,12 @@
       "choices": [
         {
           "text": "The oil stays on top of the water, because the density of the oil is smaller than that of water.",
-          "feedback": "Correct: the same volume of oil has less mass than water ($0.92$ times as much), so the oil is lighter and rises on top of the water. It is the densities of the substances that are compared, not the sizes of the objects.",
+          "feedback": "Correct: the same volume of oil has less mass than water ($0.92$ times as much), so the oil rises on top of the water. It is the densities of the substances that are compared, not the sizes of the objects.",
           "correct": true
         },
         {
           "text": "The oil sinks to the bottom of the glass, because the oil is thicker.",
-          "feedback": "Thickness, that is, how runny the liquid is, does not decide. What matters is the density: the density of the oil is smaller than that of water, so the oil does not sink."
+          "feedback": "Thickness, that is, viscosity, does not decide. What matters is the density: the density of the oil is smaller than that of water, so the oil does not sink."
         },
         {
           "text": "The oil and water mix evenly, because both are liquids.",
@@ -286,7 +286,7 @@
       "id": "fy1-7-L3-02",
       "level": 3,
       "text": "An object is made by casting together $100\\,\\text{cm}^3$ of aluminium and $50\\,\\text{cm}^3$ of iron. The volumes are assumed to add up. What is the average density of the object? Give your answer in $\\text{g/cm}^3$.",
-      "answer": 4.4,
+      "answer": 4.42,
       "unit": "g/cm³",
       "tolerance": 0.02
     },

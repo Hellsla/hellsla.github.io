@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 455343c6a19fd7cd
+CONTENT-HASH: 8fe1982305035989
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.
+- inquiry.json (cart pushed then uniform; cyclist clock started late: explains the non-zero intercept), lesson.md (physical/graphical/mathematical model, interpolation/extrapolation, exact zeros 20 / 60 in the worked example).

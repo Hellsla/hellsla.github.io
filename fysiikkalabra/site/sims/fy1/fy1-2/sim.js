@@ -6,15 +6,16 @@
 // one line from the Sun, diameters are equatorial (NASA planetary fact sheets); only the distance along the strip is real.
 // Light: c = 299 792,458 km/s = 86,3 px/s. "Matkusta valon nopeudella" sends a light pulse from the view's centre; the clock runs
 // in simulated time (dt·speed), so the 1-, 100- and 10 000-fold paces change only the pace: the elapsed time at a given point is the same.
-// Voyager 2 (model values, source: model): d = d0 + v (t - t0) with d0 = 119,7 AU on 2018-11-05 (heliopause crossing, NASA/JPL)
-// and v = 15,341 km/s (JPL Voyager mission status); 1 AU = 149 597 870,7 km. The marker is drawn larger than the probe (a pin).
+// Voyager 2 (model values, source: model): d = d0 + v (t - t0) with d0 = 119,0 AU from the Sun on 2018-11-05 (heliopause crossing,
+// Burlaga et al. 2019, Nature Astronomy 3, 1007-1012) and v = 15,341 km/s relative to the Sun at the crossing (NASA/JPL), kept
+// constant (the Sun's pull slows it by only about 0,1 km/s over 2018-2026); 1 AU = 149 597 870,7 km. The marker is drawn larger than the probe (a pin).
 // Every canvas text is a LaTeX string drawn through lab(), which pushes its ink box to simState.labels. p5.js 1.9 instance mode.
 new p5((p) => {
   const W = 600, H = 400, CX = 300, AY = 190;                              // canvas size, view centre column, the strip's axis row
   const MOON_KM = 3474, AU_KM = 149597870.7, C_KMS = 299792.458;           // km per px, km per AU, light speed (km/s)
   const CPX = C_KMS / MOON_KM;                                             // light speed in px per simulated second (86,3)
   const N_MIN = 6, N_MAX = 11, XMAX = 1e11 / MOON_KM;                      // slider d = 10^n km; the strip ends at 10^11 km
-  const D0_AU = 119.7, V_KMS = 15.341, T0 = Date.UTC(2018, 10, 5);         // Voyager 2 model: d0, v, t0
+  const D0_AU = 119.0, V_KMS = 15.341, T0 = Date.UTC(2018, 10, 5);         // Voyager 2 model: d0, v, t0
   const DATE_MIN = '2018-11-05', DATE_MAX = '2100-12-31';
   const BODIES = [                                                         // semi-major axis (AU), equatorial diameter (km), colour for the bar
     { id: 'aurinko', a: 0, D: 1392000, col: [255, 200, 70] },

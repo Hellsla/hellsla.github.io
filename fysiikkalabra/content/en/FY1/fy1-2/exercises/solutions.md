@@ -15,8 +15,8 @@
 **Formula:** $1\,\text{km} = 10^{-3}\,\text{Mm}$
 **Conversions:** A megametre is a thousand kilometres, so a kilometre is a thousandth of a megametre. In place of the kilometre we write $10^{-3}\,\text{Mm}$.
 **Substitution:** $s = 384\,400\,\text{km} = 384\,400\cdot 10^{-3}\,\text{Mm} = 384.4\,\text{Mm}$
-**Answer:** $384.4\,\text{Mm}$, four significant figures. The trailing zeros of the whole number $384\,400$ are unclear, so the number is interpreted as precise to a hundred kilometres, $3.844\cdot10^{5}\,\text{km}$, and $1\,\text{km} = 10^{-3}\,\text{Mm}$ is exact.
-**Reasonableness:** A megametre is a thousand kilometres, and 384 400 is about 400 thousand, so the result is about 400 Mm. The power of ten of the distance lies between $10^{8}\,\text{m} = 100\,\text{Mm}$ and $10^{9}\,\text{m} = 1000\,\text{Mm}$, as it should.
+**Answer:** $384.4\,\text{Mm}$. In the tasks of this book the value $384\,400\,\text{km}$, given as a whole number ending in zeros, is exact, and $1\,\text{km} = 10^{-3}\,\text{Mm}$ is exact, so the numerical value is only divided by a thousand and the result is not rounded.
+**Reasonableness:** A megametre is a thousand kilometres, and $384\,400\,\text{km}$ is about $400\,000\,\text{km}$, so the result is about $400\,\text{Mm}$. The distance lies between the powers of ten $10^{8}\,\text{m} = 100\,\text{Mm}$ and $10^{9}\,\text{m} = 1000\,\text{Mm}$, as it should.
 
 ## fy1-2-L1-03
 **Given:** length $l = 1.85\,\text{m}$ (three significant figures), width $w = 0.92\,\text{m}$ (two significant figures)
@@ -32,11 +32,11 @@
 **Given:** a picture in which an aluminium rod is next to a ruler and the ends of the rod are at the scale of the ruler
 **Find:** the length $l$ of the rod in millimetres
 **Principle:** The rod does not start at the zero mark of the ruler, so the length is not the reading at the right end but the difference between the readings at the two ends. A quantity does not change when the unit is changed, so in place of the centimetre we write its value in millimetres.
-**Reading the graph:** The left end is at $x_1 = 2.0\,\text{cm}$ (two long marks from zero). The right end is at $x_2 = 13.6\,\text{cm}$ (thirteen long marks and six millimetre marks after that). The reading is exact to the millimetre marks.
+**Reading the graph:** The left end is at $x_1 = 2.0\,\text{cm}$ (two long marks from zero). The right end is at $x_2 = 13.6\,\text{cm}$ (thirteen long marks and six millimetre marks after that). Both ends fall on a millimetre mark, so the readings are taken to the nearest millimetre.
 **Formula:** $l = x_2 - x_1$
 **Conversions:** One centimetre is ten millimetres, so in place of the centimetre we write $10\,\text{mm}$.
 **Substitution:** $l = 13.6\,\text{cm} - 2.0\,\text{cm} = 11.6\,\text{cm} = 11.6\cdot10\,\text{mm} = 116\,\text{mm}$
-**Answer:** $116\,\text{mm}$, three significant figures like the readings, which were taken to the precision of a millimetre.
+**Answer:** $116\,\text{mm}$, three significant figures, because both readings were taken to the nearest millimetre and so their difference is also known to the nearest millimetre.
 **Reasonableness:** A millimetre is a smaller unit than a centimetre, so the numerical value must become ten times larger: from 11.6 to 116. The rod is about ten centimetres long, as can be seen in the picture.
 
 ## fy1-2-L1-05
@@ -51,8 +51,8 @@
 
 ## fy1-2-L1-06
 **Find:** which of the given units is a base unit of the SI system.
-**Principle:** The SI system has seven base units: metre, kilogram, second, ampere, kelvin, mole and candela. The base units are agreed in the SI system, and other units are derived from them as products and quotients, for example $1\,\text{N} = 1\,\text{kg}\cdot\text{m/s}^2$. A prefix does not make a new unit but forms a part or a multiple of a base unit.
-**Model answer:** The kilogram is the SI base unit of mass. The newton is the unit of force, and it is derived from base units as a product and a quotient, $\text{kg}\cdot\text{m/s}^2$, so it is a derived unit. The gram is a thousandth of a kilogram, $1\,\text{g} = 10^{-3}\,\text{kg}$, that is, a part of the kilogram formed with a prefix and not a derived unit. The litre is not an SI unit, and the SI unit of volume, $\text{m}^3$, is derived from the metre: $\text{m}\cdot\text{m}\cdot\text{m}$.
+**Principle:** The SI system has seven base units: metre, kilogram, second, ampere, kelvin, mole and candela. The base units are agreed in the SI system, and other units are derived from them as products and quotients, for example $1\,\text{N} = 1\,\text{kg}\cdot\text{m/s}^2$. A prefix does not make a new unit but forms a part or a multiple of a unit.
+**Model answer:** The kilogram is the SI base unit of mass. The newton is the unit of force, and it is derived from base units as a product and a quotient, $\text{kg}\cdot\text{m/s}^2$, so it is a derived unit. The gram is a thousandth of a kilogram, $1\,\text{g} = 10^{-3}\,\text{kg}$, that is, a decimal part of the kilogram and not a base unit; the prefixes are attached to the gram, so a kilogram is a thousand grams. The litre is not an SI unit, and the SI unit of volume, $\text{m}^3$, is derived from the metre: $\text{m}\cdot\text{m}\cdot\text{m}$.
 
 ## fy1-2-L1-07
 **Given:** speed $v = 18\,\text{km/h}$
@@ -98,7 +98,7 @@
 **Given:** area $A = 2.4\,\text{km}^2$; $1\,\text{ha} = 10\,000\,\text{m}^2$
 **Find:** the area $A$ in hectares
 **Principle:** In place of a unit we write its value in another unit. The unit of area is a product of two lengths, so $1\,\text{km}^2 = 1000\,\text{m}\cdot1000\,\text{m} = 10^{6}\,\text{m}^2$, not $1000\,\text{m}^2$. After that we calculate how many hectares fit in that number of square metres.
-**Formula:** $1\,\text{km}^2 = 10^{6}\,\text{m}^2$ and $1\,\text{ha} = 10^{4}\,\text{m}^2$, so $1\,\text{km}^2 = 10^{6} : 10^{4}\,\text{ha} = 100\,\text{ha}$
+**Formula:** $1\,\text{km}^2 = 10^{6}\,\text{m}^2$ and $1\,\text{ha} = 10^{4}\,\text{m}^2$, so $1\,\text{km}^2 = (10^{6} : 10^{4})\,\text{ha} = 100\,\text{ha}$
 **Conversions:** In place of the square kilometre we write $100\,\text{ha}$.
 **Substitution:** $A = 2.4\,\text{km}^2 = 2.4\cdot100\,\text{ha} = 240\,\text{ha}$
 **Answer:** $240\,\text{ha}$, written as $2.4\cdot10^{2}\,\text{ha}$, two significant figures like the initial value $2.4\,\text{km}^2$.
@@ -127,12 +127,12 @@
 ## fy1-2-L2-06
 **Given:** from the table the masses of five apples $152.4$, $147.9$, $160.8$, $155.3$ and $158.1$; the unit $\text{kg}$ in the column heading
 **Find:** the error in the table and the mean mass of an apple $m_{\text{mean}}$ in kilograms
-**Principle:** A measurement result is always judged for reasonableness. An apple would not weigh $150\,\text{kg}$, so the unit in the heading is wrong: the numerical values were measured in grams. The mean is the sum of the masses divided by the number of masses, and the unit is corrected by substitution.
+**Principle:** A measurement result is always judged for reasonableness. An apple cannot have a mass of $150\,\text{kg}$, so the unit in the heading is wrong: the numerical values were measured in grams. The mean is the sum of the masses divided by the number of masses, and the unit is corrected by substitution.
 **Formula:** $m_{\text{mean}} = \dfrac{m_1 + m_2 + m_3 + m_4 + m_5}{5}$
 **Conversions:** The correct heading is $m\,(\text{g})$. In place of the gram we write its value in kilograms, $1\,\text{g} = 10^{-3}\,\text{kg}$.
 **Substitution:** The sum of the masses is $152.4\,\text{g} + 147.9\,\text{g} + 160.8\,\text{g} + 155.3\,\text{g} + 158.1\,\text{g} = 774.5\,\text{g}$, so $m_{\text{mean}} = \dfrac{774.5\,\text{g}}{5} = 154.9\,\text{g} = 154.9\cdot10^{-3}\,\text{kg} = 0.1549\,\text{kg}$
 **Answer:** $0.1549\,\text{kg}$, four significant figures like the weighings, which are given to a tenth of a gram. The number of apples is an exact number.
-**Reasonableness:** An apple weighs about $150\,\text{g}$, that is about $0.15\,\text{kg}$, and the values are close to each other. The mean $154.9\,\text{g}$ lies between $147.9$ and $160.8$, as a mean should.
+**Reasonableness:** The mass of an apple is usually about $150\,\text{g}$, that is about $0.15\,\text{kg}$, and the values are close to each other. The mean $154.9\,\text{g}$ lies between $147.9$ and $160.8$, as a mean should.
 
 ## fy1-2-L2-07
 **Given:** flow rate $q = 0.20\,\textsf{l}/\text{s}$ and volume of the bucket $V = 12\,\textsf{l}$; the student's result $t = qV = 2.4$ seconds
@@ -147,7 +147,7 @@
 ## fy1-2-L3-01
 **Given:** $c = 2.998\cdot10^{5}\,\text{km/s}$, $1\,\text{a} = 3.156\cdot10^{7}\,\text{s}$, $1\,\text{AU} = 1.496\cdot10^{8}\,\text{km}$
 **Find:** the length of one light-year $L$ in astronomical units
-**Principle:** The light-year is a unit of length, not of time: it is the distance light travels in a year. Light travels at a constant speed, so the given formula $s = ct$ gives the distance in kilometres, and then the distance is divided by the length of an AU.
+**Principle:** The light-year is a unit of length, not of time: it is the distance light travels in a vacuum in a year. Light travels at a constant speed, so the given formula $s = ct$ gives the distance in kilometres, and then the distance is divided by the length of an AU.
 **Formula:** $L = c\,t$
 **Conversions:** $t = 1\,\text{a} = 3.156\cdot10^{7}\,\text{s}$ is already in seconds. In astronomical units the distance is obtained by calculating how many AU ($1.496\cdot10^{8}\,\text{km}$) fit in it.
 **Substitution:** $L = 2.998\cdot10^{5}\,\dfrac{\text{km}}{\text{s}}\cdot 3.156\cdot10^{7}\,\text{s} = 9.462\cdot10^{12}\,\text{km}$ and $9.462\cdot10^{12}\,\text{km} : 1.496\cdot10^{8}\,\text{km} = 6.325\cdot10^{4}$, so $L = 6.325\cdot10^{4}\,\text{AU}$
@@ -158,11 +158,11 @@
 **Given:** screen width $W = 1920\,\text{px}$ (exact number); diameter of the Moon $D = 3474\,\text{km} = 1\,\text{px}$; distance $a = 30.07\,\text{AU}$; $1\,\text{AU} = 1.496\cdot10^{8}\,\text{km}$
 **Find:** the number of screens $N$
 **Principle:** The picture is drawn to scale, so kilometres become pixels when divided by the diameter of the Moon. The number of screens is the number of pixels divided by the width of one screen.
-**Formula:** $N = \dfrac{a\cdot 1\,\text{AU}}{D}\cdot\dfrac{1\,\text{px}}{W}$
-**Conversions:** The distance in kilometres: $30.07\cdot 1.496\cdot10^{8}\,\text{km} = 4.498\cdot10^{9}\,\text{km}$. Every $3474\,\text{km}$ is one pixel, so the number of pixels is $4.498\cdot10^{9}\,\text{km} : 3474\,\text{km} = 1.295\cdot10^{6}$.
+**Formula:** $N = \dfrac{a}{D}\cdot\dfrac{1\,\text{px}}{W}$
+**Conversions:** The distance in kilometres: $a = 30.07\,\text{AU} = 30.07\cdot 1.496\cdot10^{8}\,\text{km} = 4.498\cdot10^{9}\,\text{km}$. Every $3474\,\text{km}$ is one pixel, so the number of pixels is $4.498\cdot10^{9}\,\text{km} : 3474\,\text{km} = 1.295\cdot10^{6}$.
 **Substitution:** $N = \dfrac{1.295\cdot10^{6}\,\text{px}}{1920\,\text{px}} = 674.4$
 **Answer:** $674.4$ screen widths, four significant figures like the data $30.07\,\text{AU}$, $1.496\cdot10^{8}\,\text{km}$ and $3474\,\text{km}$; the screen width $1920\,\text{px}$ is an exact number and does not limit the precision.
-**Reasonableness:** Neptune is about 1.3 million pixels away, and 1.3 million divided by two thousand is about 650. The result is of the same order of magnitude, so the distance cannot be scrolled through in the picture at a glance.
+**Reasonableness:** Neptune is about 1.3 million pixels away, and 1.3 million divided by two thousand is about 650. The result is of the same order of magnitude. So the distance cannot be seen in the picture at a glance: it has to be scrolled through hundreds of screen widths.
 
 ## fy1-2-L3-03
 **Given:** distance $d = 145\,\text{AU}$, $1\,\text{AU} = 1.496\cdot10^{8}\,\text{km}$, $c = 2.998\cdot10^{5}\,\text{km/s}$; the command arrives and the confirmation returns immediately
@@ -172,7 +172,7 @@
 **Conversions:** $d = 145\cdot 1.496\cdot10^{8}\,\text{km} = 2.169\cdot10^{10}\,\text{km}$. Finally $1\,\text{h} = 3600\,\text{s}$.
 **Substitution:** $t = \dfrac{2\cdot 2.169\cdot10^{10}\,\text{km}}{2.998\cdot10^{5}\,\text{km/s}} = 1.447\cdot10^{5}\,\text{s}$. The number of hours is $1.447\cdot10^{5}\,\text{s} : 3600\,\text{s} = 40.2$, so $t = 40.2\,\text{h}$
 **Answer:** $40.2\,\text{h}$, three significant figures like the distance $145\,\text{AU}$.
-**Reasonableness:** In one direction light takes about $145\cdot 8.3\,\text{min} = 1200\,\text{min} = 20\,\text{h}$, so there and back is about 40 hours. The reply therefore arrives after more than a day.
+**Reasonableness:** In one direction light takes about $145\cdot 8.3\,\text{min} \approx 1200\,\text{min} = 20\,\text{h}$, so there and back is about 40 hours. The reply therefore arrives after more than a day.
 
 ## fy1-2-L3-04
 **Given:** $T = k\,L^{a}g^{b}m^{c}$, where $k$ has no unit; $L_1 = 0.250\,\text{m}$, $T_1 = 1.00\,\text{s}$, $L_2 = 1.00\,\text{m}$
@@ -190,6 +190,6 @@
 **Principle:** The numerical values $0.65$ and $2.20$ cannot be compared, because the units $\text{kWh}$ and $\text{MJ}$ are of different sizes. A device runs for the time $t = \tfrac{E}{P}$ until the stored energy has been used up. Energy and power are therefore converted to the units J and W.
 **Formula:** $t = \dfrac{E}{P}$
 **Conversions:** In place of the kilowatt-hour we write $1000\,\text{W}\cdot3600\,\text{s}$, that is $1\,\text{kWh} = 3.6\,\text{MJ}$. $E_\text{A} = 0.65\cdot1000\,\text{W}\cdot3600\,\text{s} = 2.34\cdot10^{6}\,\text{J}$, $E_\text{B} = 2.20\cdot10^{6}\,\text{J}$ and $P_\text{B} = 0.100\cdot1000\,\text{W} = 100\,\text{W}$. Seconds are converted to hours, $1\,\text{h} = 3600\,\text{s}$.
-**Substitution:** $t_\text{A} = \dfrac{2.34\cdot10^{6}\,\text{J}}{85.0\,\text{W}} = 2.753\cdot10^{4}\,\text{s} = 7.647\,\text{h}$ and $t_\text{B} = \dfrac{2.20\cdot10^{6}\,\text{J}}{100\,\text{W}} = 2.20\cdot10^{4}\,\text{s} = 6.111\,\text{h}$. The difference is $7.647\,\text{h} - 6.111\,\text{h} = 1.54\,\text{h}$
+**Substitution:** $t_\text{A} = \dfrac{2.34\cdot10^{6}\,\text{J}}{85.0\,\text{W}} = 2.753\cdot10^{4}\,\text{s} = 7.647\,\text{h}$ and $t_\text{B} = \dfrac{2.20\cdot10^{6}\,\text{J}}{100\,\text{W}} = 2.20\cdot10^{4}\,\text{s} = 6.111\,\text{h}$. The difference is $7.647\,\text{h} - 6.111\,\text{h} = 1.54\,\text{h} \approx 1.5\,\text{h}$
 **Answer:** device A runs longer, about $1.5\,\text{h}$, two significant figures like the energy $0.65\,\text{kWh}$. The energy of device B is only $0.61\,\text{kWh}$, and its power is greater. So the claim is not correct.
 **Reasonableness:** The energy of device A, $650\,\text{Wh}$, divided by an estimate of $90\,\text{W}$ for the power $85\,\text{W}$ gives about $7\,\text{h}$. The energy of device B is $2.2:3.6 = 0.61\,\text{kWh}$, and $610\,\text{Wh} : 100\,\text{W}$ is about $6\,\text{h}$.

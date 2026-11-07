@@ -6,7 +6,7 @@
 **Conversions:** The time is in seconds and $g$ in $\text{m/s}^2$, so the result comes directly in $\text{m/s}$. No conversions are needed.
 **Substitution:** $v = 9.81\,\text{m/s}^2 \cdot 3.0\,\text{s} = 29.43\,\text{m/s}$
 **Answer:** $29\,\text{m/s}$, two significant figures as in the time $3.0\,\text{s}$.
-**Reasonableness:** The speed increases by about $10\,\text{m/s}$ every second, so in three seconds it is about $3 \cdot 10\,\text{m/s} = 30\,\text{m/s}$, which matches the result. In addition, $29\,\text{m/s} \approx 106\,\text{km/h}$ is a motorway speed, which is a reasonable result for a three-second free fall.
+**Reasonableness:** The speed increases by about $10\,\text{m/s}$ every second, so in three seconds it is about $3 \cdot 10\,\text{m/s} = 30\,\text{m/s}$, which matches the result. In addition, $29.43\,\text{m/s} \approx 106\,\text{km/h}$ is a motorway speed, which is a reasonable result for a three-second free fall.
 
 ## fy1-6-L1-02
 **Given:** the apple starts from rest, $t = 0.80\,\text{s}$, $g = 9.81\,\text{m/s}^2$
@@ -16,7 +16,7 @@
 **Conversions:** The time is given in seconds, so no conversions are needed.
 **Substitution:** $v = 9.81\,\text{m/s}^2 \cdot 0.80\,\text{s} = 7.848\,\text{m/s}$
 **Answer:** $7.8\,\text{m/s}$, two significant figures as in the time $0.80\,\text{s}$.
-**Reasonableness:** In less than a second the speed has time to increase by less than $9.81\,\text{m/s}$, and $0.80 \cdot 9.81 \approx 8$ gives the same order of magnitude. A speed of $7.8\,\text{m/s} \approx 28\,\text{km/h}$ is reasonable after a fall of less than a second: it is faster than jogging but not yet the speed of cars.
+**Reasonableness:** In less than a second the speed has time to increase by less than $9.81\,\text{m/s}$, and $0.80 \cdot 9.81 \approx 8$ gives almost the same value. A speed of $7.8\,\text{m/s} \approx 28\,\text{km/h}$ is reasonable after a fall of less than a second: it is faster than jogging but not yet the speed of cars.
 
 ## fy1-6-L1-03
 **Given:** the stone starts from rest, $t = 4.0\,\text{s}$, acceleration of free fall on the Moon $g_\text{Moon} = 1.62\,\text{m/s}^2$ (from the exercise)
@@ -37,7 +37,7 @@
 **Conversions:** The speeds are in $\text{m/s}$ and the times in seconds, so the result comes in $\text{m/s}^2$. No conversions are needed.
 **Substitution:** $g = \dfrac{49\,\text{m/s} - 0\,\text{m/s}}{5.0\,\text{s} - 0\,\text{s}} = \dfrac{49\,\text{m/s}}{5.0\,\text{s}} = 9.8\,\text{m/s}^2$
 **Answer:** $9.8\,\text{m/s}^2$, two significant figures as in the numbers $49\,\text{m/s}$ and $5.0\,\text{s}$.
-**Reasonableness:** The result is close to the value for Earth, $9.81\,\text{m/s}^2$, so the graph belongs to an object falling on Earth. The slope is positive, because the speed increases with time.
+**Reasonableness:** The result is close to the value for Earth, $9.81\,\text{m/s}^2$, so it fits an object falling freely at the surface of the Earth. The slope is positive, because the speed increases with time.
 
 ## fy1-6-L1-05
 **Given:** the object starts from rest, $t = 6.0\,\text{s}$, acceleration of free fall on Mars $g_\text{Mars} = 3.71\,\text{m/s}^2$ (from the exercise)
@@ -68,7 +68,7 @@
 **Conversions:** Not needed: the speeds are in $\text{m/s}$ and the times in seconds.
 **Substitution:** $g_\text{B} = \dfrac{40\,\text{m/s}}{5.0\,\text{s}} = 8.0\,\text{m/s}^2$ and $t_\text{B} = \dfrac{20\,\text{m/s}}{8.0\,\text{m/s}^2} = 2.5\,\text{s}$
 **Answer:** $2.5\,\text{s}$, two significant figures as in the read values and in the time $5.0\,\text{s}$.
-**Reasonableness:** The acceleration of planet B, $8.0\,\text{m/s}^2$, is twice that of A, $\dfrac{20\,\text{m/s}}{5.0\,\text{s}} = 4.0\,\text{m/s}^2$, so B reaches the same speed in half the time: $\tfrac{5.0\,\text{s}}{2} = 2.5\,\text{s}$. In the graph the line of B passes the $20\,\text{m/s}$ level between $2$ and $3\,\text{s}$, as it should.
+**Reasonableness:** The acceleration of planet B, $8.0\,\text{m/s}^2$, is twice that of A, $\dfrac{20\,\text{m/s}}{5.0\,\text{s}} = 4.0\,\text{m/s}^2$, so B reaches the same speed in half the time: $\tfrac{5.0\,\text{s}}{2} = 2.5\,\text{s}$. In the graph the line of B passes the $20\,\text{m/s}$ level between the moments $2\,\text{s}$ and $3\,\text{s}$, as it should.
 
 ## fy1-6-L2-03
 **Given:** initial speed $v_1 = 12.0\,\text{m/s}$, time interval $\Delta t = 1.50\,\text{s}$, $g = 9.81\,\text{m/s}^2$, no air resistance
@@ -97,7 +97,7 @@
 **Formula:** $v_1 = g\,t$ and $v_2 = g\,t$, so $\dfrac{v_2}{v_1} = \dfrac{g\,t}{g\,t}$
 **Conversions:** The times are in seconds, and the masses are not needed in the calculation. No conversions are needed.
 **Substitution:** $v_1 = v_2 = 9.81\,\text{m/s}^2 \cdot 1.5\,\text{s} = 14.715\,\text{m/s}$, so $\dfrac{v_2}{v_1} = \dfrac{14.715\,\text{m/s}}{14.715\,\text{m/s}} = 1.0$
-**Answer:** $1.0$, two significant figures as in the time $1.5\,\text{s}$. The ratio is exactly one, because the mass cancels out.
+**Answer:** $1.0$, that is, the speeds are equal. The ratio is exactly one, because the speed of each ball is $g\,t$ and the mass does not appear in the formula. So the result does not depend on the precision of the time $1.5\,\text{s}$.
 **Reasonableness:** If the heavier ball fell faster, mass would have to appear in the formula, but the formula $v = g\,t$ has no mass. This matches the hammer and feather experiment on the Moon, where the objects hit the ground at the same time.
 
 ## fy1-6-L3-02
@@ -136,7 +136,7 @@
 **Find:** the increase in speed per second in $\text{km/h}$
 **Principle:** The acceleration of free fall tells the increase in speed per second. It is expressed in another unit by converting the speed from $\text{m/s}$ to $\text{km/h}$.
 **Formula:** $\Delta v = g\,\Delta t$. The formula is already solved for the quantity we want.
-**Conversions:** When $\Delta t = 1\,\text{s}$, the speed increases by the amount $g$. In an hour ($3600\,\text{s}$) $3600\,\text{m} = 3.6\,\text{km}$ accumulates, so $1\,\text{m/s} = 3.6\,\text{km/h}$.
+**Conversions:** When $\Delta t = 1\,\text{s}$, the speed increases by the amount $g$. At a speed of $1\,\text{m/s}$ an object travels $3600\,\text{m} = 3.6\,\text{km}$ in an hour ($3600\,\text{s}$), so $1\,\text{m/s} = 3.6\,\text{km/h}$.
 **Substitution:** $\Delta v = 9.81\,\text{m/s}^2 \cdot 1\,\text{s} = 9.81 \cdot 1\,\text{m/s} = 9.81 \cdot 3.6\,\text{km/h} = 35.316\,\text{km/h}$
 **Answer:** $35.3\,\text{km/h}$ per second, three significant figures as in the number $9.81$.
 **Reasonableness:** The speed increases by about $10\,\text{m/s}$ every second and $10 \cdot 3.6 = 36\,\text{km/h}$, which matches the result. In three seconds the speed would already be about $106\,\text{km/h}$.
@@ -149,7 +149,7 @@
 **Formula:** $g = \dfrac{\Delta v}{\Delta t} = \dfrac{v_2 - v_1}{t_2 - t_1}$
 **Conversions:** Not needed: the speed is in $\text{m/s}$ and the time in $\text{s}$.
 **Substitution:** $g = \dfrac{5.85\,\text{m/s} - 0\,\text{m/s}}{0.60\,\text{s} - 0\,\text{s}} = 9.75\,\text{m/s}^2$
-**Answer:** $g \approx 9.8\,\text{m/s}^2$, two significant figures, because the line is fitted by eye. A fit by eye varies, so about $9.3\text{–}10.2\,\text{m/s}^2$ is a good answer. The result $9.75\,\text{m/s}^2$ is $0.6\,\%$ smaller than the table value $9.81\,\text{m/s}^2$, that is, it deviates by less than one percent, so the measurement supports the model $v = g\,t$ and its scatter is random.
+**Answer:** $g \approx 9.8\,\text{m/s}^2$, two significant figures, because the line is fitted by eye. A fit by eye varies, so about $9.3\text{–}10.2\,\text{m/s}^2$ is a good answer. The result $9.75\,\text{m/s}^2$ is $0.6\,\%$ smaller than the table value $9.81\,\text{m/s}^2$, that is, it deviates by less than one percent, so the measurement supports the model $v = g\,t$. Points lie on both sides of the line, which fits random scatter.
 **Reasonableness:** According to the line, the speed at the moment $0.30\,\text{s}$ is $9.75 \cdot 0.30 \approx 2.9\,\text{m/s}$, which matches the third row of the table. The slope is close to the known value $9.81\,\text{m/s}^2$.
 
 ## fy1-6-L2-06
@@ -171,7 +171,7 @@
 **Conversions:** $L = 5.0\,\text{cm} = 0.050\,\text{m}$, because $1\,\text{cm} = 0.01\,\text{m}$. $\Delta t_\text{light,1} = 25.0\,\text{ms} = 0.0250\,\text{s}$ and $\Delta t_\text{light,2} = 11.1\,\text{ms} = 0.0111\,\text{s}$, because $1\,\text{ms} = 0.001\,\text{s}$.
 **Substitution:** $v_1 = \dfrac{0.050\,\text{m}}{0.0250\,\text{s}} = 2.00\,\text{m/s}$ and $v_2 = \dfrac{0.050\,\text{m}}{0.0111\,\text{s}} = 4.50\,\text{m/s}$. Then $g = \dfrac{4.50\,\text{m/s} - 2.00\,\text{m/s}}{0.575\,\text{s} - 0.320\,\text{s}} = \dfrac{2.50\,\text{m/s}}{0.255\,\text{s}} = 9.8\,\text{m/s}^2$
 **Answer:** $g \approx 9.8\,\text{m/s}^2$, two significant figures, because the length of the object $L = 5.0\,\text{cm}$ is given with two figures and limits the result. The $g$ obtained with two gates does not require knowing the moment of the drop: the speeds are obtained from the length of the object and the time for which the light is blocked, and the acceleration from the time difference $t_2 - t_1$.
-**Reasonableness:** The result is close to the known value $9.81\,\text{m/s}^2$. The speed $2.00\,\text{m/s}$ requires a fall of only about $0.20\,\text{s}$, although the clock shows $0.320\,\text{s}$: the clock was started before the drop, which does not matter for the time difference. The speed $2.0\,\text{m/s}$ corresponds to a falling time of $\dfrac{2.0}{9.8} \approx 0.20\,\text{s}$ and the speed $4.5\,\text{m/s}$ to a time of $0.46\,\text{s}$, and their difference is $0.25\,\text{s}$, like the time difference of the clock.
+**Reasonableness:** The result is close to the known value $9.81\,\text{m/s}^2$. The speed $2.00\,\text{m/s}$ requires a fall of only about $0.20\,\text{s}$, although the clock shows $0.320\,\text{s}$: the clock was started before the drop, which does not matter for the time difference. The speed $2.00\,\text{m/s}$ corresponds to a falling time of $\dfrac{2.00\,\text{m/s}}{9.81\,\text{m/s}^2} \approx 0.204\,\text{s}$ and the speed $4.50\,\text{m/s}$ to a time of $0.459\,\text{s}$, and their difference $0.255\,\text{s}$ is the same as the time difference of the clock.
 
 ## fy1-6-L3-04
 **Given:** the speeds of the ball and the filter paper are in the table at the moments $0.05\,\text{s}$–$0.60\,\text{s}$, the speed of the paper at the moment $0.40\,\text{s}$ is $1.49\,\text{m/s}$, $g = 9.81\,\text{m/s}^2$
@@ -182,7 +182,7 @@
 **Conversions:** Not needed: the speeds are in $\text{m/s}$ and the times in $\text{s}$.
 **Substitution:** $v_\text{model} = 9.81\,\text{m/s}^2 \cdot 0.40\,\text{s} = 3.924\,\text{m/s}$. The difference is $3.924\,\text{m/s} - 1.49\,\text{m/s} = 2.434\,\text{m/s}$, so
 $$\begin{aligned} \text{shortfall} &= \dfrac{2.434\,\text{m/s}}{3.924\,\text{m/s}} \cdot 100\,\% \\ &= 62.0\,\% \end{aligned}$$
-**Answer:** At the moment $0.40\,\text{s}$ the speed of the filter paper is about $62\,\%$ smaller than the one given by the model. The model stops being valid for the paper at about the moment $0.10\,\text{s}$, when the deviation exceeds $5\,\%$ and grows from there on, because air resistance grows with the speed and the width of the object. Air resistance affects the ball little, so the model is valid for it over the whole measured interval.
+**Answer:** At the moment $0.40\,\text{s}$ the speed of the filter paper is about $62\,\%$ smaller than the one given by the model. The model stops being valid for the paper at about the moment $0.10\,\text{s}$, when the deviation exceeds $5\,\%$ and grows from there on, because air resistance grows as the speed grows. Air resistance affects the ball little, so the model is valid for it over the whole measured interval.
 **Reasonableness:** The speed of the ball $3.93\,\text{m/s}$ matches the model $3.924\,\text{m/s}$. The smaller speed of the paper fits a light and wide object in air.
 
 ## fy1-6-L3-05
@@ -198,4 +198,4 @@ $$\begin{aligned} \text{shortfall} &= \dfrac{2.434\,\text{m/s}}{3.924\,\text{m/s
 ## fy1-6-L2-08
 **Find:** the speed $v$ of the lighter ball at the moment $2.0\,\text{s}$ and the reason why it is what it is.
 **Principle:** There is no air resistance in a vacuum, so both balls are in free fall and start from rest. Then the speed is $v = g\,t$, and the acceleration of free fall $g = 9.81\,\text{m/s}^2$ is the same for all objects regardless of mass.
-**Model answer:** The speed of the lighter ball is the same as that of the heavier one, $19.6\,\text{m/s}$, because $v = g\,t = 9.81\,\text{m/s}^2 \cdot 2.0\,\text{s} = 19.62\,\text{m/s}$ does not contain the mass. The reason is that $g$ is the same for all objects without air resistance. Increasing the mass increases both the pull towards the Earth and the difficulty of setting the object in motion, and these cancel each other. The result $19.6\,\text{m/s}$ is a suitable rounding to two significant figures for the time $2.0\,\text{s}$.
+**Model answer:** The speed of the lighter ball is the same as that of the heavier one, $19.6\,\text{m/s}$, because $v = g\,t = 9.81\,\text{m/s}^2 \cdot 2.0\,\text{s} = 19.62\,\text{m/s}$ does not contain the mass. The reason is that $g$ is the same for all objects without air resistance. Increasing the mass increases both the pull towards the Earth and the difficulty of setting the object in motion, and these cancel each other. The result is the same as the speed of the heavier ball given in the task, $19.6\,\text{m/s}$.

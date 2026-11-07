@@ -1,7 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: d80d02f15be216a3
+CONTENT-HASH: dacadcdcabc7d37b
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-3 diff since the round-2 commit only)
+
 ## Blocking
+- none
+
 ## Polish
-- At 360 px the pointer and scale arc are tiny; they carry no information the text needs, so this is acceptable.
+- none
+
 ## Checked
-batch delta review: hero captures 1200 and 360 px; the pointer is now fixed to the beam and turns with it (tip swings opposite the iron-side drop, physically right), drawn in iron grey; the tilt towards the iron cube, the equal cubes and the measuring cylinder still match the Miksi question and the unchanged aria-label.
+- inquiry.json, figures.json/figures.py hero alt, lesson.md note; match the Finnish fix.

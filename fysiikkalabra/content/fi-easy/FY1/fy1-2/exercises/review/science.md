@@ -1,19 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 1376c48c80de3eac
-Mode: full (translation review against the reviewed Finnish set)
-Round 2
+CONTENT-HASH: 5f4f2426ee24d0b6
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
-(none)
-
-## Fixed
-- none needed
+- none
 
 ## Polish
-(none)
+- none that affect correctness
 
 ## Checked
-- New task L1-09 (YO-skill form, which expression can be a speed) compared with content/fi: same four choices, same correct option (12 km / 3.0 h, unit km/h), same distractors (km·h, h/km, km/h^2) with feedback of the same physics; numbers identical (decimal comma).
-- Solution L1-09: units alone decide; same reasoning and same four cases as the Finnish.
-- Whole set re-compared with fi by script: ids, answers, tolerances, kinds, correct flags and every number identical (only translated display units differ).
-- check_i18n.py: nothing for fy1-2; build.py fy1-2 run.
+- diff since edb368de4 (exercises.json, solutions.md, answers.py): L3-05 answer 1,5 h (1,536 h; tolerance range in answers.py checked), exact 384 400 km wording, answers.py Voyager table (2018-2030, Feb 2026)
+- numbers recomputed independently in Python

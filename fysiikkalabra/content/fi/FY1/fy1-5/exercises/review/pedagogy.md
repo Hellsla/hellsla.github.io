@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 18f2780582100755
+CONTENT-HASH: 84947dbee0c76ca6
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-- L2-08 now avoids the unprepared sign convention: feedback A and the solution say the line must fall because position decreases, and steepness is the speed.
-- Solution gives the 6,0 s return time, the 10 s arrival and the speed from steepness; every distractor is explained (A direction, B v-t axis, D distance vs position).
-- Figure descriptions give grid and values; distractor figures do not reveal the answer.
-- Level 2, situation first and question last; rest of set unchanged since PASS.
+- exercises.json, solutions.md, answers.py diff: Unit wording ($20\,s$ etc.), extra feedback on the (t,v) distractor, Voyager 3500 d (3498,8) with 1 AU caveat (about 110 d), notation Δt for uncertainty. Recomputed and consistent.

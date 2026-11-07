@@ -37,7 +37,7 @@
 **Conversions:** Not needed: both diameters are in metres, so the units cancel and $k$ is just a number.
 **Substitution:** $k = \dfrac{3.5\cdot10^{-10}\,\text{m}}{1.4\cdot10^{-14}\,\text{m}} = 2.5\cdot10^{4}$
 **Answer:** $25\,000$ times, that is $2.5\cdot10^{4}$; two significant figures like the given diameters.
-**Reasonableness:** The orders of magnitude are $10^{-10}\,\text{m}$ and $10^{-14}\,\text{m}$. There are four steps of powers of ten between them, so the ratio should be about $10^{4}$, and $2.5\cdot10^{4}$ is close to that. The lead nucleus is large, because it has over 200 protons and neutrons, so the difference from the atom is smaller than for hydrogen ($6.5\cdot10^{4}$).
+**Reasonableness:** The ratio of the diameters is $\dfrac{3.5}{1.4}\cdot10^{-10-(-14)}=2.5\cdot10^{4}$. So the diameter of the atom is tens of thousands of times the diameter of the nucleus, which is a reasonable result. The lead nucleus is large, because it has over 200 protons and neutrons, so the difference from the atom is smaller than for hydrogen ($6.5\cdot10^{4}$).
 
 ## fy1-1-L1-05
 **Given:** the thickness of a hair $d_\text{hair} = 7.0\cdot10^{-5}\,\text{m}$ and the diameter of a red blood cell $d_\text{cell} = 7.5\cdot10^{-6}\,\text{m}$
@@ -121,7 +121,7 @@
 
 ## fy1-1-L1-06
 **Find:** what separates a physical model from a mere observation.
-**Principle:** An observation tells what happened in a single situation. A model is a simplified description of a phenomenon, and predictions can be deduced from it even for situations that have not been studied yet. Because physics relies on experiments, a prediction is tested with a measurement, and a model holds only in the conditions in which it has been tested.
+**Principle:** An observation tells what happened in a single situation. A model is a simplified description of a phenomenon, and predictions can be deduced from it even for situations that have not been studied yet. Because physics relies on experiments, a prediction is tested with a measurement, and the reliability of a model has been confirmed in the conditions in which it has been tested. In new conditions the reliability of a prediction has to be assessed.
 **Model answer:** A prediction for a new situation can be deduced from a model, and the prediction can be tested by a measurement. A model is a simplified description, and an experiment or measurement decides whether it holds. The fall of a stone and a feather is an observation. A model in which air resistance is left out predicts the fall of objects, and it holds only when air resistance is small. A model is not a repeated observation, an unchangeable theory or the whole truth: if a careful measurement differs from the prediction, the model is corrected or its range of validity is limited.
 
 ## fy1-1-L1-07
@@ -141,7 +141,7 @@
 **Formula:** $k = \dfrac{10^{n_\text{sand}}}{10^{n_\text{virus}}} = 10^{\,n_\text{sand} - n_\text{virus}}$
 **Conversions:** Not needed: the sizes are in the same unit, so the ratio is a pure number.
 **Substitution:** $k = \dfrac{10^{-3}\,\text{m}}{10^{-7}\,\text{m}} = 10^{-3-(-7)} = 10^{4} = 10\,000$
-**Answer:** $10\,000$, that is $10^{4}$; the grain of sand is ten thousand times the size of the virus, and the number is exact because the orders of magnitude are whole powers of ten. The difference in orders of magnitude is four steps, but the difference in size is a factor of ten thousand, not four.
+**Answer:** $10\,000$, that is $10^{4}$; based on the orders of magnitude, the diameter of the grain of sand is about ten thousand times the diameter of the virus. The ratio of the given orders of magnitude is exactly $10^{4}$, but it does not determine the ratio of the real diameters exactly. The difference in orders of magnitude is four steps, but the difference in size is a factor of ten thousand, not four.
 **Reasonableness:** If the virus were enlarged to the size of a millimetre, the grain of sand would be $10^{4}\cdot1\,\text{mm} = 10\,000\,\text{mm} = 10\,\text{m}$, the size of a house. The grain of sand is clearly much larger than the virus.
 
 ## fy1-1-L2-05
@@ -183,23 +183,23 @@
 **Formula:** $V_\text{rain} = h\,A$, $V_\text{drop} = \dfrac{4}{3}\pi r^{3}$ and $N = \dfrac{V_\text{rain}}{V_\text{drop}}$
 **Conversions:** $h = 5.0\,\text{mm/h}\cdot(10 : 60)\,\text{h} = 0.833\,\text{mm} = 8.33\cdot10^{-4}\,\text{m}$ and $r = 2.0\,\text{mm} : 2 = 1.0\cdot10^{-3}\,\text{m}$.
 **Substitution:** $V_\text{rain} = 8.33\cdot10^{-4}\,\text{m}\cdot6.0\cdot10^{3}\,\text{m}^2 = 5.0\,\text{m}^3$ and $V_\text{drop} = \dfrac{4}{3}\pi\left(1.0\cdot10^{-3}\,\text{m}\right)^{3} = 4.19\cdot10^{-9}\,\text{m}^3$, so $N = \dfrac{5.0\,\text{m}^3}{4.19\cdot10^{-9}\,\text{m}^3} = 1.19\cdot10^{9}$
-**Answer:** about $1.2$ billion drops, two significant figures like all the given values ($1.19$ fits in the field). If the intensity of the rain, the duration or the area is $20\,\%$ too large, $N$ increases by $20\,\%$. If the diameter of the drop is $20\,\%$ too large, the volume of the drop increases by the factor $1.2^{3} = 1.73$ and $N$ decreases by about $42\,\%$. The size of the drop matters most because the volume depends on the third power of the diameter.
+**Answer:** about $1.2$ billion drops, two significant figures like the measured given values ($1.19$ fits in the field). The duration $10\,\text{min}$ is an exact, chosen time span, so it does not limit the precision. If the intensity of the rain, the duration or the area is $20\,\%$ too large, $N$ increases by $20\,\%$. If the diameter of the drop is $20\,\%$ too large, the volume of the drop increases by the factor $1.2^{3} = 1.73$ and $N$ decreases by about $42\,\%$. The size of the drop matters most because the volume depends on the third power of the diameter.
 **Reasonableness:** Every square metre gets $1.19\cdot10^{9} : 6.0\cdot10^{3} \approx 2\cdot10^{5}$ drops, that is about $20$ drops per square centimetre in ten minutes, which is a reasonable number. The order of magnitude $10^{9}$ does not change even if a single assumption is off by twenty per cent or so.
 
 ## fy1-1-L3-05
-**Given:** $d_0 = 119.7\,\text{AU}$, $v = 15.341\,\text{km/s}$, $t = 7.25\,\text{a}$, $1\,\text{AU} = 1.496\cdot10^{8}\,\text{km}$, $1\,\text{a} = 3.156\cdot10^{7}\,\text{s}$ and the measured $143.05\,\text{AU}$
+**Given:** $d_0 = 119.0\,\text{AU}$, $v = 15.341\,\text{km/s}$, $t = 7.25\,\text{a}$, $1\,\text{AU} = 1.496\cdot10^{8}\,\text{km}$, $1\,\text{a} = 3.156\cdot10^{7}\,\text{s}$ and the observation $143.05\,\text{AU}$ from the Earth (JPL, February 2026)
 **Find:** the student's error, the prediction of the model $d$ in AU and what the measurement tells about the model
 **Principle:** The distance of Voyager is modelled as uniform motion, $d = d_0 + vt$, because the speed changes very little over this interval. In sums and products the units of the quantities must match.
-**Formula:** $s = vt$ and $d = d_0 + \dfrac{s}{1\,\text{AU}}$
+**Formula:** $s = vt$ and $d = d_0 + s$. Before the numerical values are added, both distances are expressed in AU.
 **Conversions:** $t = 7.25\,\text{a} = 7.25\cdot3.156\cdot10^{7}\,\text{s} = 2.288\cdot10^{8}\,\text{s}$.
-**Substitution:** $s = 15.341\,\text{km/s}\cdot2.288\cdot10^{8}\,\text{s} = 3.510\cdot10^{9}\,\text{km} = \dfrac{3.510\cdot10^{9}\,\text{km}}{1.496\cdot10^{8}\,\text{km/AU}} = 23.46\,\text{AU}$ and $d = 119.7\,\text{AU} + 23.46\,\text{AU} = 143.16\,\text{AU}$
-**Answer:** $143.2\,\text{AU}$, one decimal like the initial distance $119.7\,\text{AU}$, which is the least precise number in the sum. The student multiplied the speed in $\text{km/s}$ by years instead of seconds, so the result was not a distance, and in addition added kilometres and astronomical units. The model was not wrong.
-**Model answer on the measurement:** The measurement $143.05\,\text{AU}$ differs from the prediction by only about $0.1\,\text{AU}$, so the prediction passed the test and the measurement supports the model. One match does not, however, prove the model for all situations: the speed may change slowly, and the model holds only near the measured interval.
+**Substitution:** $s = 15.341\,\text{km/s}\cdot2.288\cdot10^{8}\,\text{s} = 3.510\cdot10^{9}\,\text{km} = \dfrac{3.510\cdot10^{9}\,\text{km}}{1.496\cdot10^{8}\,\text{km/AU}} = 23.46\,\text{AU}$ and $d = 119.0\,\text{AU} + 23.46\,\text{AU} = 142.46\,\text{AU}$
+**Answer:** $142.5\,\text{AU}$, one decimal like the initial distance $119.0\,\text{AU}$, which is the least precise number in the sum. The student multiplied the speed in $\text{km/s}$ by years instead of seconds, so the result was not a distance, and in addition added kilometres and astronomical units. The model was not wrong.
+**Model answer on the measurement:** The prediction $142.5\,\text{AU}$ is the distance from the Sun, the observation $143.05\,\text{AU}$ that from the Earth. The difference, about $0.6\,\text{AU}$, is below the roughly $1\,\text{AU}$ by which these distances can differ because of the Earth's orbital motion. So the model and the observation agree as closely as the comparison allows, and the observation supports the model. It does not, however, prove the model for all situations: the speed may change slowly, and the model holds only near the interval considered.
 **Reasonableness:** In a year Voyager travels $15.341\,\text{km/s}\cdot3.156\cdot10^{7}\,\text{s} = 4.84\cdot10^{8}\,\text{km} = 3.2\,\text{AU}$, and in seven and a quarter years about $23\,\text{AU}$. The result agrees.
 
 ## fy1-1-L1-09
 **Given:** distance of the Moon $3.84\cdot10^{8}\,\text{m}$, diameter of the Moon $3.47\cdot10^{6}\,\text{m}$, diameter of the Sun $1.39\cdot10^{9}\,\text{m}$; in an eclipse the Sun and the Moon look equally large.
 **Find:** the distance of the Earth from the Sun $d_\text{A}$, chosen from four options that differ in order of magnitude.
-**Principle:** An object looks equally large when its distance is as many times the distance of the Moon as its diameter is times the diameter of the Moon. In an eclipse the Sun and the Moon look equally large, so the ratio of the distances is the same as the ratio of the diameters.
+**Principle:** An object looks equally large when its distance is as many times the distance of the Moon as its diameter is times the diameter of the Moon. In the eclipse assumed in the task the Sun and the Moon look approximately equally large, so the ratio of the distances is approximately the same as the ratio of the diameters.
 **Model answer:** The ratio of the diameters is $\dfrac{1.39\cdot10^{9}\,\text{m}}{3.47\cdot10^{6}\,\text{m}}\approx400$, so $d_\text{A}\approx400\cdot3.84\cdot10^{8}\,\text{m}\approx1.5\cdot10^{11}\,\text{m}$. This is the correct answer. The value $1.5\cdot10^{8}\,\text{m}$ is less than half the distance of the Moon, so the Sun would be closer than the Moon. The value $1.5\cdot10^{9}\,\text{m}$ is only about $4$ times the distance of the Moon, and the value $1.5\cdot10^{13}\,\text{m}$ about $39\,000$ times; neither matches the factor $400$.
 **Reasonableness:** Light travels the distance $1.5\cdot10^{11}\,\text{m} : 3.0\cdot10^{8}\,\text{m/s} = 5.0\cdot10^{2}\,\text{s}$, that is about $8\,\text{min}$, which is the well-known travel time of sunlight.

@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: beea801f93a32cad
+CONTENT-HASH: 4bf62d81fbbd81e3
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-3 diff since the round-2 commit only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-Round 2 delta (b8a6e1bb): tiheys concept now grammatical.
+- inquiry.json, figures.json/figures.py hero alt, lesson.md note; match the Finnish fix, short sentences.

@@ -1,20 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 9efa159d933410d1
-Mode: delta (new YO-skill task and re-split task stems)
-Round 1
+CONTENT-HASH: 064ca5aebc6ae5b8
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the copy-edit diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- Exercise and solution wording changes read as clear Finnish; notation (units in math, decimal commas) intact. No issues.
 
 ## Checked
-- Captures in review/shots opened at full size: the new task L2-08 (vacuum chamber, answer plus reason; open-exercises-L2-1280-10, -11, -12), in fi-easy.
-- The new task renders in the house layout: numbers and units as maths, options as whole rows, feedback opens inside the card, solution block (Find/Principle/Model answer) without clipping or overflow.
-- Opened: fy1-6 L3-04 solution and L3-05 stem (open-exercises-L3-1280-5, -10 for neighbours); split stem reads cleanly. Judged from the diff only: the stems of L2-06, L2-07 and the stem of L3-04 (paragraph breaks only, no figures).
-- Language: the new text is natural, plain Finnish with decimal comma, 'alle 0,2 s:n' style endings and glossary-consistent terms.
-- No figures in the changed part; figures unchanged.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+- exercises.json, solutions.md, answers.py diff vs origin/main

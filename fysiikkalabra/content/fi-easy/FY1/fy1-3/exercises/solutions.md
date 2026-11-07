@@ -15,8 +15,8 @@
 **Kaava:** Mittausvirhe on tuloksen ja oikean arvon erotus: $\text{mittausvirhe} = x - x_\text{oikea}$
 **Muunnokset:** Molemmat pituudet ovat senttimetreinä, joten muunnoksia ei tarvita.
 **Sijoitus:** $x - x_\text{oikea} = 20{,}3\,\text{cm} - 20{,}0\,\text{cm} = +0{,}3\,\text{cm}$
-**Vastaus:** $0{,}3\,\text{cm}$, eli tulos on liian suuri. Erotus tunnetaan vain yhden desimaalin tarkkuudella. Molemmat pituudet on nimittäin annettu yhdellä desimaalilla.
-**Järkevyys:** Tulos $20{,}3\,\text{cm}$ on suurempi kuin oikea arvo $20{,}0\,\text{cm}$, joten virheen pitää olla positiivinen. Suhteessa pituuteen virhe on $\dfrac{0{,}3\,\text{cm}}{20{,}0\,\text{cm}} \approx 1{,}5\,\%$. Se on mittanauhalle suuri virhe, sillä nauha on tavallisesti tarkka noin millimetrin. Syy on siis todennäköisesti systemaattinen, esimerkiksi kulunut nauhan alkupää tai väärä nollakohta.
+**Vastaus:** $+0{,}3\,\text{cm}$, eli tulos on liian suuri. Erotus tunnetaan vain yhden desimaalin tarkkuudella. Molemmat pituudet on nimittäin annettu yhdellä desimaalilla.
+**Järkevyys:** Tulos $20{,}3\,\text{cm}$ on suurempi kuin oikea arvo $20{,}0\,\text{cm}$, joten virheen pitää olla positiivinen. Suhteessa pituuteen virhe on $\dfrac{0{,}3\,\text{cm}}{20{,}0\,\text{cm}} \approx 1{,}5\,\%$. Se on mittanauhalle suuri virhe, sillä nauhalla päästään tavallisesti noin millimetrin tarkkuuteen. Syy on siis todennäköisesti systemaattinen, esimerkiksi kulunut nauhan alkupää tai väärä nollakohta.
 
 ## fy1-3-L1-03
 **Annettu:** kuvan viisi tulosta aika-akselilla; pienin tulos $t_\text{min} = 12{,}2\,\text{s}$ ja suurin $t_\text{max} = 12{,}9\,\text{s}$
@@ -30,14 +30,14 @@
 **Järkevyys:** Kuvassa pisteiden ääripäiden väli on seitsemän ruutua eli $0{,}7\,\text{s}$. Sen puolikas on pienempi kuin vaihteluväli, kuten pitää. Vaihteluvälin keskikohta on $12{,}55\,\text{s}$. Tulos $12{,}55\,\text{s} \pm 0{,}35\,\text{s}$ antaa juuri välin $12{,}2\,\text{s}$–$12{,}9\,\text{s}$. Kaikki pisteet osuvat tälle välille.
 
 ## fy1-3-L1-04
-**Annettu:** vaa'an lukema tyhjänä (nollalukema) $m_0 = 1{,}2\,\text{g}$, lukema kappaleen kanssa $m_\text{lukema} = 48{,}7\,\text{g}$
+**Annettu:** vaa'an lukema tyhjänä (nollalukema) $m_0 = 0{,}9\,\text{g}$, lukema kappaleen kanssa $m_\text{lukema} = 36{,}4\,\text{g}$
 **Kysytty:** kappaleen massa $m$ yksikössä $\text{g}$
-**Periaate:** Vaaka lisää jokaiseen lukemaan saman määrän $1{,}2\,\text{g}$, koska se näyttää sen jo tyhjänä. Tämä on systemaattinen virhe. Se korjataan vähentämällä nollalukema lukemasta.
+**Periaate:** Vaaka lisää jokaiseen lukemaan saman määrän $0{,}9\,\text{g}$, koska se näyttää sen jo tyhjänä. Tämä on systemaattinen virhe. Se korjataan vähentämällä nollalukema lukemasta.
 **Kaava:** $m = m_\text{lukema} - m_0$
 **Muunnokset:** Molemmat lukemat ovat grammoina, joten muunnoksia ei tarvita.
-**Sijoitus:** $m = 48{,}7\,\text{g} - 1{,}2\,\text{g} = 47{,}5\,\text{g}$
-**Vastaus:** $47{,}5\,\text{g}$. Siinä on kolme merkitsevää numeroa, ja molemmat lukemat tunnetaan yhden desimaalin tarkkuudella.
-**Järkevyys:** Vaaka näyttää liikaa, joten oikean massan täytyy olla pienempi kuin lukema, ja $47{,}5\,\text{g} < 48{,}7\,\text{g}$. Tarkistus: $47{,}5\,\text{g} + 1{,}2\,\text{g} = 48{,}7\,\text{g}$.
+**Sijoitus:** $m = 36{,}4\,\text{g} - 0{,}9\,\text{g} = 35{,}5\,\text{g}$
+**Vastaus:** $35{,}5\,\text{g}$. Siinä on kolme merkitsevää numeroa, ja molemmat lukemat tunnetaan yhden desimaalin tarkkuudella.
+**Järkevyys:** Vaaka näyttää liikaa, joten oikean massan täytyy olla pienempi kuin lukema, ja $35{,}5\,\text{g} < 36{,}4\,\text{g}$. Tarkistus: $35{,}5\,\text{g} + 0{,}9\,\text{g} = 36{,}4\,\text{g}$.
 
 ## fy1-3-L1-05
 **Annettu:** pienin asteikkoväli $d = 1{,}0\,\text{mm}$
@@ -46,7 +46,7 @@
 **Kaava:** $\Delta x = \dfrac{d}{2}$
 **Muunnokset:** Asteikkoväli on jo millimetreinä, joten muunnoksia ei tarvita.
 **Sijoitus:** $\Delta x = \dfrac{1{,}0\,\text{mm}}{2} = 0{,}5\,\text{mm}$
-**Vastaus:** $0{,}5\,\text{mm}$. Virhe-arvio on karkea arvio, joten se ilmoitetaan yhdellä merkitsevällä numerolla.
+**Vastaus:** $0{,}5\,\text{mm}$. Virhearvio on karkea arvio, joten se ilmoitetaan yhdellä merkitsevällä numerolla.
 **Järkevyys:** Jos viivaimelta luetaan $23{,}0\,\text{mm}$, lukeman perusteella pituus on arviolta välillä $22{,}5\,\text{mm}$–$23{,}5\,\text{mm}$. Tämä väli on yhden asteikkovälin eli $1{,}0\,\text{mm}$ levyinen. Lukeman epävarmuus on siis pienempi kuin asteikkoväli. Mittauksen kokonaisepävarmuus voi kuitenkin olla tätä suurempi.
 
 ## fy1-3-L2-01
@@ -64,17 +64,17 @@
 **Kysytty:** nauhan keskimääräinen virhe $\Delta L_\text{sys}$ yksikössä $\text{mm}$
 **Periaate:** Sauva on koko ajan yhtä pitkä. Kulunut alkupää lisää jokaiseen lukemaan saman määrän. Tämä on systemaattinen virhe. Lukemat vaihtelevat hieman satunnaisvirheen takia. Siksi virhe arvioidaan lukemien keskiarvon ja oikean arvon erotuksena.
 **Kaava:** $\bar{L} = \dfrac{L_1 + L_2 + L_3}{3}$ ja $\Delta L_\text{sys} = \bar{L} - L_0$
-**Muunnokset:** Tulos tulee metreinä, ja $1\,\text{m} = 1000\,\text{mm}$, joten se kerrotaan tuhannella.
-**Sijoitus:** Summa on $1{,}012\,\text{m} + 1{,}009\,\text{m} + 1{,}011\,\text{m} = 3{,}032\,\text{m}$, joten $\bar{L} = \dfrac{3{,}032\,\text{m}}{3} = 1{,}01067\,\text{m}$ ja $\Delta L_\text{sys} = 1{,}01067\,\text{m} - 1{,}000\,\text{m} = 0{,}01067\,\text{m} = 10{,}67\,\text{mm}$
-**Vastaus:** noin $11\,\text{mm}$ (laskimen arvo $10{,}67\,\text{mm}$). Lukemat vaihtelevat noin $\pm 1{,}5\,\text{mm}$. Keskiarvoa ei siis kannata ilmoittaa millimetriä tarkemmin.
-**Järkevyys:** Jokainen lukema on $9\,\text{mm}$–$12\,\text{mm}$ liian suuri, joten keskiarvo $11\,\text{mm}$ on näiden välissä. Nauha näyttää noin $1\,\%$ liikaa. Virheen etumerkki on positiivinen, koska lukemat ylittävät oikean arvon.
+**Muunnokset:** Tulos tulee metreinä. Koska $1\,\text{m} = 1000\,\text{mm}$, metrin paikalle kirjoitetaan $1000\,\text{mm}$.
+**Sijoitus:** Summa on $1{,}012\,\text{m} + 1{,}009\,\text{m} + 1{,}011\,\text{m} = 3{,}032\,\text{m}$, joten $\bar{L} = \dfrac{3{,}032\,\text{m}}{3} = 1{,}01067\,\text{m}$ ja $\Delta L_\text{sys} = 1{,}01067\,\text{m} - 1{,}000\,\text{m} = 0{,}01067\,\text{m}$ eli $\Delta L_\text{sys} = 0{,}01067 \cdot 1000\,\text{mm} = 10{,}67\,\text{mm}$
+**Vastaus:** $10{,}7\,\text{mm}$ (laskimen arvo $10{,}67\,\text{mm}$). Lukemien vaihteluvälin puolikas on $1{,}5\,\text{mm}$. Sen ensimmäinen numero on 1, joten se ilmoitetaan kahdella numerolla. Tulos ilmoitetaan siksi millimetrin kymmenesosina: $10{,}7\,\text{mm} \pm 1{,}5\,\text{mm}$.
+**Järkevyys:** Jokainen lukema on $9\,\text{mm}$–$12\,\text{mm}$ liian suuri, joten tulos $10{,}7\,\text{mm}$ on näiden välissä. Nauha näyttää noin $1\,\%$ liikaa. Virheen etumerkki on positiivinen, koska lukemat ylittävät oikean arvon.
 
 ## fy1-3-L2-03
 **Annettu:** $L_1 = 12{,}4\,\text{cm}$, $L_2 = 0{,}125\,\text{m}$, $L_3 = 123\,\text{mm}$
 **Kysytty:** keskiarvo $\bar{L}$ yksikössä $\text{cm}$
 **Periaate:** Keskiarvon voi laskea vain luvuista, jotka ovat samassa yksikössä. Eri yksiköissä olevia lukuja ei voi laskea yhteen. Muunnetaan siksi kaikki tulokset ensin senttimetreiksi.
 **Kaava:** $\bar{L} = \dfrac{L_1 + L_2 + L_3}{3}$
-**Muunnokset:** $0{,}125\,\text{m} = 12{,}5\,\text{cm}$, koska $1\,\text{m} = 100\,\text{cm}$, ja $123\,\text{mm} = 12{,}3\,\text{cm}$, koska $10\,\text{mm} = 1\,\text{cm}$.
+**Muunnokset:** Metrin paikalle kirjoitetaan $100\,\text{cm}$ ja millimetrin paikalle $0{,}1\,\text{cm}$: $0{,}125 \cdot 100\,\text{cm} = 12{,}5\,\text{cm}$ ja $123 \cdot 0{,}1\,\text{cm} = 12{,}3\,\text{cm}$.
 **Sijoitus:** Summa on $12{,}4\,\text{cm} + 12{,}5\,\text{cm} + 12{,}3\,\text{cm} = 37{,}2\,\text{cm}$, joten $\bar{L} = \dfrac{37{,}2\,\text{cm}}{3} = 12{,}4\,\text{cm}$
 **Vastaus:** $12{,}4\,\text{cm}$. Siinä on kolme merkitsevää numeroa, kuten mittaustuloksissa.
 **Järkevyys:** Keskiarvo on pienimmän $12{,}3\,\text{cm}$ ja suurimman $12{,}5\,\text{cm}$ tuloksen välissä. Jos lukuja ei olisi muunnettu, summa $12{,}4 + 0{,}125 + 123$ antaisi järjettömän keskiarvon $45{,}2$. Muunnos on siis välttämätön.
@@ -101,23 +101,23 @@
 
 ## fy1-3-L3-02
 **Annettu:** arkkien lukumäärä $n = 250$, pienin asteikkoväli $d = 1{,}0\,\text{mm}$
-**Kysytty:** yhden arkin paksuuden virhe-arvio $\Delta h_1$ yksikössä $\mu\text{m}$
-**Periaate:** Pinon paksuus on $n$ yhtä paksun arkin summa, $h = n h_1$. Pinon paksuudessa on lukemisvirhe. Arkkien lukumäärä on tarkka. Siksi yhden arkin paksuuden virhe on pinon virhe jaettuna luvulla $n$.
+**Kysytty:** yhden arkin paksuuden virhearvio $\Delta h_1$ yksikössä $\mu\text{m}$
+**Periaate:** Pinon paksuus on $n$ yhtä paksun arkin summa, $h = n h_1$. Pinon paksuuden lukemassa on epävarmuus. Arkkien lukumäärä on tarkka. Siksi yhden arkin paksuuden epävarmuus on pinon epävarmuus jaettuna luvulla $n$.
 **Kaava:** $\Delta h = \dfrac{d}{2}$ ja $\Delta h_1 = \dfrac{\Delta h}{n}$, joten $\Delta h_1 = \dfrac{d}{2n}$
-**Muunnokset:** Tulos tulee millimetreinä, ja $1\,\text{mm} = 1000\,\mu\text{m}$, joten se kerrotaan tuhannella.
-**Sijoitus:** $\Delta h_1 = \dfrac{1{,}0\,\text{mm}}{2 \cdot 250} = \dfrac{0{,}5\,\text{mm}}{250} = 0{,}0020\,\text{mm} = 2{,}0\,\mu\text{m}$
-**Vastaus:** $2\,\mu\text{m}$. Siinä on yksi merkitsevä numero, koska virhe-arvio pyöristetään yhteen merkitsevään numeroon. Arkkien lukumäärä on tarkka luku.
+**Muunnokset:** Tulos tulee millimetreinä. Koska $1\,\text{mm} = 1000\,\mu\text{m}$, millimetrin paikalle kirjoitetaan $1000\,\mu\text{m}$.
+**Sijoitus:** $\Delta h_1 = \dfrac{1{,}0\,\text{mm}}{2 \cdot 250} = \dfrac{0{,}5\,\text{mm}}{250} = 0{,}0020\,\text{mm}$ eli $\Delta h_1 = 0{,}0020 \cdot 1000\,\mu\text{m} = 2{,}0\,\mu\text{m}$
+**Vastaus:** $2\,\mu\text{m}$. Siinä on yksi merkitsevä numero, koska virhearvio pyöristetään yhteen merkitsevään numeroon. Arkkien lukumäärä on tarkka luku.
 **Järkevyys:** Tavallisen kopiopaperin paksuus on noin $0{,}1\,\text{mm} = 100\,\mu\text{m}$, joten suhteellinen epävarmuus on noin $2\,\%$. Yhden arkin mittaaminen suoraan viivaimella antaisi epävarmuudeksi $0{,}5\,\text{mm}$. Se on noin $500\,\%$ arkin paksuudesta. Pinon mittaaminen pienentää siis suhteellisen epävarmuuden 250-osaan.
 
 ## fy1-3-L3-03
-**Annettu:** oikea arvo $x_\text{oikea} = 8{,}00\,\text{cm}$; lukemat $8{,}24$, $8{,}27$, $8{,}25$, $8{,}29$ ja $8{,}25\,\text{cm}$; $n = 5$
+**Annettu:** oikea arvo $x_\text{oikea} = 8{,}00\,\text{cm}$; lukemat $8{,}04$, $8{,}07$, $8{,}05$, $8{,}09$ ja $8{,}05\,\text{cm}$; $n = 5$
 **Kysytty:** systemaattisen virheen arvio $\Delta x_\text{sys}$ yksikössä $\text{cm}$
 **Periaate:** Lukemat ovat tiiviisti toistensa lähellä, mutta kaikki ovat selvästi oikean arvon yläpuolella. Keskiarvo pienentää satunnaisvirhettä. Siksi sen ero oikeaan arvoon kuvaa jäljelle jäänyttä systemaattista virhettä.
 **Kaava:** $\bar{x} = \dfrac{x_1 + \dots + x_5}{n}$ ja $\Delta x_\text{sys} = \bar{x} - x_\text{oikea}$
 **Muunnokset:** Kaikki pituudet ovat senttimetreinä, joten muunnoksia ei tarvita.
-**Sijoitus:** Summa on $8{,}24\,\text{cm} + 8{,}27\,\text{cm} + 8{,}25\,\text{cm} + 8{,}29\,\text{cm} + 8{,}25\,\text{cm} = 41{,}30\,\text{cm}$, joten $\bar{x} = \dfrac{41{,}30\,\text{cm}}{5} = 8{,}26\,\text{cm}$ ja $\Delta x_\text{sys} = 8{,}26\,\text{cm} - 8{,}00\,\text{cm} = 0{,}26\,\text{cm}$
-**Vastaus:** $0{,}26\,\text{cm}$. Siinä on kaksi merkitsevää numeroa, ja erotus on kahden desimaalin tarkkuudella.
-**Järkevyys:** Satunnaisvirheen arvio $\dfrac{8{,}29\,\text{cm} - 8{,}24\,\text{cm}}{2} = 0{,}025\,\text{cm} \approx 0{,}03\,\text{cm}$ on noin kymmenesosa systemaattisesta virheestä. Virheen ratkaisee siis systemaattinen osa, esimerkiksi väärä nollakohta. Jos kaikista lukemista vähennetään $0{,}26\,\text{cm}$, ne ovat $7{,}98\,\text{cm}$–$8{,}03\,\text{cm}$ eli lähellä oikeaa arvoa.
+**Sijoitus:** Summa on $8{,}04\,\text{cm} + 8{,}07\,\text{cm} + 8{,}05\,\text{cm} + 8{,}09\,\text{cm} + 8{,}05\,\text{cm} = 40{,}30\,\text{cm}$, joten $\bar{x} = \dfrac{40{,}30\,\text{cm}}{5} = 8{,}06\,\text{cm}$ ja $\Delta x_\text{sys} = 8{,}06\,\text{cm} - 8{,}00\,\text{cm} = 0{,}06\,\text{cm}$
+**Vastaus:** $0{,}06\,\text{cm}$. Siinä on yksi merkitsevä numero, ja erotus on kahden desimaalin tarkkuudella.
+**Järkevyys:** Satunnaisvirheen arvio $\dfrac{8{,}09\,\text{cm} - 8{,}04\,\text{cm}}{2} = 0{,}025\,\text{cm} \approx 0{,}03\,\text{cm}$ on noin puolet systemaattisesta virheestä. Kaikki lukemat ovat silti oikean arvon yläpuolella. Niissä on siis systemaattinen virhe. Syy voi olla esimerkiksi työntömitan väärä nollakohta tai lika leukojen välissä. Virhe $0{,}6\,\text{mm}$ on työntömitalle uskottava. Jos kaikista lukemista vähennetään $0{,}06\,\text{cm}$, ne ovat $7{,}98\,\text{cm}$–$8{,}03\,\text{cm}$ eli lähellä oikeaa arvoa.
 
 ## fy1-3-L1-06
 **Kysytty:** mikä tilanteista on systemaattinen virhe.
@@ -126,13 +126,13 @@
 
 ## fy1-3-L1-07
 **Annettu:** $x_1 = 5{,}41\,\text{cm}$, $x_2 = 5{,}47\,\text{cm}$, $x_3 = 5{,}39\,\text{cm}$, $x_4 = 5{,}44\,\text{cm}$, $x_5 = 5{,}43\,\text{cm}$; $n = 5$
-**Kysytty:** keskiarvo $\bar{x}$ yksikössä $\text{cm}$, pyöristettynä virhe-arvion $\Delta x$ tarkkuuteen
-**Periaate:** Tulos ilmoitetaan muodossa $\bar{x} \pm \Delta x$. Virhe-arvio pyöristetään yhteen merkitsevään numeroon (kahteen, jos ensimmäinen numero on 1). Keskiarvo pyöristetään samaan desimaaliin, koska numerot virhe-arvion desimaalin jälkeen ovat jo epävarmoja.
+**Kysytty:** keskiarvo $\bar{x}$ yksikössä $\text{cm}$, pyöristettynä virhearvion $\Delta x$ tarkkuuteen
+**Periaate:** Tulos ilmoitetaan muodossa $\bar{x} \pm \Delta x$. Virhearvio pyöristetään yhteen merkitsevään numeroon (kahteen, jos ensimmäinen numero on 1). Keskiarvo pyöristetään samaan desimaaliin, koska numerot virhearvion desimaalin jälkeen ovat jo epävarmoja.
 **Kaava:** $\bar{x} = \dfrac{x_1 + x_2 + x_3 + x_4 + x_5}{n}$ ja $\Delta x = \dfrac{x_\text{max} - x_\text{min}}{2}$
 **Muunnokset:** Kaikki pituudet ovat senttimetreinä, joten muunnoksia ei tarvita.
 **Sijoitus:** Tulosten summa on $5{,}41\,\text{cm} + 5{,}47\,\text{cm} + 5{,}39\,\text{cm} + 5{,}44\,\text{cm} + 5{,}43\,\text{cm} = 27{,}14\,\text{cm}$, joten $\bar{x} = \dfrac{27{,}14\,\text{cm}}{5} = 5{,}428\,\text{cm}$ ja $\Delta x = \dfrac{5{,}47\,\text{cm} - 5{,}39\,\text{cm}}{2} = 0{,}04\,\text{cm}$
-**Vastaus:** $5{,}43\,\text{cm}$, sillä virhe-arvio $0{,}04\,\text{cm}$ on yhden numeron luku sadasosien kohdalla (ensimmäinen numero ei ole 1). Tulos on $5{,}43\,\text{cm} \pm 0{,}04\,\text{cm}$.
-**Järkevyys:** Väli $5{,}43\,\text{cm} \pm 0{,}04\,\text{cm}$ eli $5{,}39\,\text{cm}$–$5{,}47\,\text{cm}$ kattaa kaikki viisi tulosta. Tulos $5{,}428\,\text{cm}$ olisi liian tarkka. Se antaisi ymmärtää, että leveys tunnetaan tuhannesosien tarkkuudella, vaikka virhe-arvio on sadasosia.
+**Vastaus:** $5{,}43\,\text{cm}$, sillä virhearvio $0{,}04\,\text{cm}$ on yhden numeron luku sadasosien kohdalla (ensimmäinen numero ei ole 1). Tulos on $5{,}43\,\text{cm} \pm 0{,}04\,\text{cm}$.
+**Järkevyys:** Väli $5{,}43\,\text{cm} \pm 0{,}04\,\text{cm}$ eli $5{,}39\,\text{cm}$–$5{,}47\,\text{cm}$ kattaa kaikki viisi tulosta. Tulos $5{,}428\,\text{cm}$ olisi liian tarkka. Se antaisi ymmärtää, että leveys tunnetaan senttimetrin tuhannesosan tarkkuudella. Virhearvio on kuitenkin senttimetrin sadasosien suuruinen.
 
 ## fy1-3-L1-08
 **Annettu:** viivaimen pienin asteikkoväli $d_\text{v} = 1{,}0\,\text{mm}$, työntömitan näytön pienin askel $d_\text{t} = 0{,}01\,\text{mm}$
@@ -142,17 +142,17 @@
 **Muunnokset:** Molemmat välit ovat millimetreinä, joten muunnoksia ei tarvita.
 **Sijoitus:** $\Delta x_\text{v} = \dfrac{1{,}0\,\text{mm}}{2} = 0{,}5\,\text{mm}$ ja $\Delta x_\text{t} = \dfrac{0{,}01\,\text{mm}}{2} = 0{,}005\,\text{mm}$, joten $0{,}5\,\text{mm} : 0{,}005\,\text{mm} = 100$
 **Vastaus:** $100$ kertaa pienempi, yksi merkitsevä numero kuten askeleessa $0{,}01\,\text{mm}$. Työntömitan lukemisepävarmuus on sadasosa viivaimen epävarmuudesta.
-**Järkevyys:** Suhde on sama kuin lukemavälien suhde $1{,}0\,\text{mm} : 0{,}01\,\text{mm} = 100$, koska puolittaminen supistuu pois. Viivaimella leveys luetaan puolen millimetrin tarkkuudella ja työntömitalla sadasosamillimetrin tarkkuudella. Tämä vastaa arkikokemusta siitä, että työntömitta on tarkempi.
+**Järkevyys:** Suhde on sama kuin lukemavälien suhde $1{,}0\,\text{mm} : 0{,}01\,\text{mm} = 100$, koska puolittaminen supistuu pois. Viivaimella paksuus luetaan puolen millimetrin tarkkuudella ja työntömitalla puolen sadasosamillimetrin tarkkuudella. Tämä vastaa arkikokemusta siitä, että työntömitta on tarkempi.
 
 ## fy1-3-L2-05
 **Annettu:** taulukon kahdeksan aikaa $t_{10}$ (10 kierrosta): $18{,}12\,\text{s}$, $18{,}31\,\text{s}$, $18{,}05\,\text{s}$, $18{,}27\,\text{s}$, $18{,}19\,\text{s}$, $18{,}35\,\text{s}$, $18{,}10\,\text{s}$ ja $18{,}22\,\text{s}$; $n = 8$
-**Kysytty:** yhden kierroksen ajan keskiarvo $\bar{T}$ yksikössä $\text{s}$
-**Periaate:** Käsin otetussa ajassa on satunnaisvirhe. Tulokseksi otetaan siksi keskiarvo ja virhe-arvioksi vaihteluvälin puolikas. Kymmenen kierroksen ajasta saadaan yhden kierroksen aika jakamalla sekä keskiarvo että virhe-arvio tarkalla luvulla $10$.
+**Kysytty:** yhden kierroksen ajan keskiarvo $\bar{T}$ ja sen virhearvio $\Delta T$ yksikössä $\text{s}$
+**Periaate:** Käsin otetussa ajassa on satunnaisvirhe. Tulokseksi otetaan siksi keskiarvo ja virhearvioksi vaihteluvälin puolikas. Kymmenen kierroksen ajasta saadaan yhden kierroksen aika jakamalla sekä keskiarvo että virhearvio tarkalla luvulla $10$.
 **Kaava:** $\bar{t}_{10} = \dfrac{t_1 + \dots + t_8}{n}$, $\;\Delta t_{10} = \dfrac{t_\text{max} - t_\text{min}}{2}$, $\;\bar{T} = \dfrac{\bar{t}_{10}}{10}$ ja $\Delta T = \dfrac{\Delta t_{10}}{10}$
 **Muunnokset:** Ei tarvita. Kaikki ajat ovat sekunteina.
 **Sijoitus:** Summa on $145{,}61\,\text{s}$, joten $\bar{t}_{10} = \dfrac{145{,}61\,\text{s}}{8} = 18{,}20125\,\text{s}$ ja $\Delta t_{10} = \dfrac{18{,}35\,\text{s} - 18{,}05\,\text{s}}{2} = 0{,}15\,\text{s}$. Siis $\bar{T} = \dfrac{18{,}20125\,\text{s}}{10} = 1{,}820125\,\text{s}$ ja $\Delta T = \dfrac{0{,}15\,\text{s}}{10} = 0{,}015\,\text{s}$.
-**Vastaus:** $\bar{T} = 1{,}820\,\text{s}$ eli $1{,}82\,\text{s}$. Virhe-arvio $0{,}015\,\text{s}$ on kahden numeron luku, koska ensimmäinen numero on 1. Tulos pyöristetään siksi tuhannesosiin: $T = 1{,}820\,\text{s} \pm 0{,}015\,\text{s}$.
-**Järkevyys:** Tavallinen levysoittimen nopeus on $33{,}33$ kierrosta minuutissa, jolloin yksi kierros kestää $60\,\text{s} : 33{,}33 = 1{,}800\,\text{s}$. Mitattu $1{,}820\,\text{s} \pm 0{,}015\,\text{s}$ on suuruusluokaltaan oikea, mutta $1{,}800\,\text{s}$ jää juuri sen välin ulkopuolelle. Levysoitin voi siis pyöriä hieman hitaasti, tai ajanotossa voi olla pieni systemaattinen virhe. Kymmenen kierroksen mittaus pienentää reaktioajan suhteellista osuutta: virhe-arvio $0{,}15\,\text{s}$ on vain noin $0{,}8\,\%$ ajasta $18{,}2\,\text{s}$.
+**Vastaus:** Virhearvio $0{,}015\,\text{s}$ on kahden numeron luku, koska ensimmäinen numero on 1. Tulos pyöristetään siksi tuhannesosiin: $T = 1{,}820\,\text{s} \pm 0{,}015\,\text{s}$.
+**Järkevyys:** Tavallinen levysoittimen nopeus on $33{,}33$ kierrosta minuutissa, jolloin yksi kierros kestää $60\,\text{s} : 33{,}33 = 1{,}800\,\text{s}$. Mitattu $1{,}820\,\text{s} \pm 0{,}015\,\text{s}$ on suuruusluokaltaan oikea, mutta $1{,}800\,\text{s}$ jää juuri sen välin ulkopuolelle. Levysoitin voi siis pyöriä hieman hitaasti, tai ajanotossa voi olla pieni systemaattinen virhe. Kymmenen kierroksen mittaus pienentää reaktioajan suhteellista osuutta: virhearvio $0{,}15\,\text{s}$ on vain noin $0{,}8\,\%$ ajasta $18{,}2\,\text{s}$.
 
 ## fy1-3-L2-06
 **Annettu:** tunnettu tilavuus $V_\text{oikea} = 50{,}0\,\text{ml}$; ryhmän A tulokset $50{,}9\,\text{ml}$, $51{,}1\,\text{ml}$, $50{,}8\,\text{ml}$, $51{,}0\,\text{ml}$, $50{,}9\,\text{ml}$ ja ryhmän B tulokset $49{,}4\,\text{ml}$, $50{,}5\,\text{ml}$, $49{,}8\,\text{ml}$, $50{,}3\,\text{ml}$, $50{,}1\,\text{ml}$
@@ -161,7 +161,7 @@
 **Kaava:** $\bar{V} = \dfrac{V_1 + \dots + V_5}{n}$, $\;\Delta V = \dfrac{V_\text{max} - V_\text{min}}{2}$ ja poikkeama $\bar{V}_\text{A} - V_\text{oikea}$
 **Muunnokset:** Ei tarvita. Kaikki tilavuudet ovat millilitroina.
 **Sijoitus:** $\bar{V}_\text{A} = \dfrac{254{,}7\,\text{ml}}{5} = 50{,}94\,\text{ml}$, joten poikkeama on $50{,}94\,\text{ml} - 50{,}0\,\text{ml} = 0{,}94\,\text{ml}$. Lisäksi $\Delta V_\text{A} = \dfrac{51{,}1\,\text{ml} - 50{,}8\,\text{ml}}{2} = 0{,}15\,\text{ml}$ ja $\Delta V_\text{B} = \dfrac{50{,}5\,\text{ml} - 49{,}4\,\text{ml}}{2} = 0{,}55\,\text{ml}$; $\bar{V}_\text{B} = 50{,}02\,\text{ml}$.
-**Vastaus:** $+0{,}94\,\text{ml}$. Lukemat ovat kolmen merkitsevän numeron lukuja. Virhe-arvio $\Delta V_\text{A} = 0{,}15\,\text{ml}$ on sadasosien tarkkuudella, joten myös poikkeama ilmoitetaan sadasosina. Sarja A on toistettavampi ($0{,}15\,\text{ml} < 0{,}55\,\text{ml}$), mutta sen tulokset ovat kaikki yli $50\,\text{ml}$. Siinä on siis systemaattinen virhe. Sarjan B keskiarvo on lähempänä oikeaa arvoa, vaikka hajonta on suurempi.
+**Vastaus:** $+0{,}94\,\text{ml}$. Lukemat ovat kolmen merkitsevän numeron lukuja. Virhearvio $\Delta V_\text{A} = 0{,}15\,\text{ml}$ on sadasosien tarkkuudella, joten myös poikkeama ilmoitetaan sadasosina. Sarja A on toistettavampi ($0{,}15\,\text{ml} < 0{,}55\,\text{ml}$), mutta sen tulokset ovat kaikki yli $50\,\text{ml}$. Siinä on siis systemaattinen virhe. Sarjan B keskiarvo on lähempänä oikeaa arvoa, vaikka hajonta on suurempi.
 **Järkevyys:** Kaikki A:n tulokset ovat samalla puolella oikeaa arvoa. Poikkeama $0{,}94\,\text{ml}$ on moninkertainen hajontaan $\Delta V_\text{A} = 0{,}15\,\text{ml}$ verrattuna, joten poikkeama ei todennäköisesti ole satunnaista. Hyvä toistettavuus ei siis takaa oikeaa tulosta.
 
 ## fy1-3-L2-07
@@ -172,7 +172,7 @@
 **Muunnokset:** Ei tarvita. Kaikki ajat ovat sekunteina, ja $1\,\% = 0{,}01$.
 **Sijoitus:** $N \ge \dfrac{0{,}2\,\text{s}}{0{,}01 \cdot 1{,}5\,\text{s}} = 13{,}33\ldots$
 **Vastaus:** Heilahduksia täytyy mitata vähintään $14$, koska $N$ on kokonaisluku ja $13$ ei riitä ($0{,}2 : (13 \cdot 1{,}5) = 1{,}03\,\%$).
-**Järkevyys:** Tarkistus: $N = 14$ antaa $\Delta T = 0{,}2\,\text{s} : 14 = 0{,}014\,\text{s}$ ja $0{,}014\,\text{s} : 1{,}5\,\text{s} = 0{,}95\,\%$, joten vaatimus täyttyy. Yhden heilahduksen mittaus antaisi epävarmuudeksi $0{,}2 : 1{,}5 = 13\,\%$.
+**Järkevyys:** Tarkistus: $N = 14$ antaa $\Delta T = 0{,}2\,\text{s} : 14 \approx 0{,}0143\,\text{s}$ ja $0{,}0143\,\text{s} : 1{,}5\,\text{s} \approx 0{,}95\,\%$, joten vaatimus täyttyy. Yhden heilahduksen mittaus antaisi epävarmuudeksi $0{,}2 : 1{,}5 = 13\,\%$.
 **Mallivastaus:** Reaktioajan virhe ei kasva ajan pituuden mukana. Se on suunnilleen sama alussa ja lopussa. Pitkä mittaus jaetaan monelle heilahdukselle, jolloin yhteen heilahdukseen tuleva osuus pienenee. Toistaminen pienentää myös satunnaisvirhettä keskiarvon avulla.
 
 ## fy1-3-L3-04
@@ -182,8 +182,8 @@
 **Kaava:** $\bar{t} = \dfrac{t_1 + \dots + t_n}{n}$, missä $n = 7$ jäljelle jäävää tulosta
 **Muunnokset:** Ei tarvita. Kaikki ajat ovat sekunteina.
 **Sijoitus:** Tulosten summa on $2{,}41\,\text{s} + 2{,}38\,\text{s} + 2{,}44\,\text{s} + 2{,}40\,\text{s} + 2{,}43\,\text{s} + 2{,}39\,\text{s} + 2{,}42\,\text{s} = 16{,}87\,\text{s}$, joten $\bar{t} = \dfrac{16{,}87\,\text{s}}{7} = 2{,}41\,\text{s}$
-**Vastaus:** Tuloksen saa jättää pois, koska päiväkirjan merkintä antaa syyn ja poisjättö kirjataan. Keskiarvo on $2{,}41\,\text{s}$, kolme merkitsevää numeroa kuten mittauksissa. Vaihteluvälin puolikas on $(2{,}44\,\text{s} - 2{,}38\,\text{s}) : 2 = 0{,}03\,\text{s}$. Jos syytä ei olisi löytynyt, tulos pysyisi aineistossa. Keskiarvo olisi silloin $19{,}84\,\text{s} : 8 = 2{,}48\,\text{s}$ ja vaihteluvälin puolikas $(2{,}97\,\text{s} - 2{,}38\,\text{s}) : 2 = 0{,}30\,\text{s}$, kymmenkertainen. Tulos ilmoitettaisiin tällä epävarmuudella, poikkeama mainittaisiin ja mittaus kannattaisi toistaa.
-**Järkevyys:** Poikkeavan tuloksen kanssa keskiarvo siirtyy $0{,}07\,\text{s}$ eli yli kaksi kertaa vaihteluvälin puolikkaan $0{,}03\,\text{s}$. Poisjättö perustuu kirjattuun syyhyn eikä poikkeaman suuruuteen $2{,}97\,\text{s} - 2{,}41\,\text{s} = 0{,}56\,\text{s}$. Päiväkirjan merkinnän perusteella tulos on karkea virhe.
+**Vastaus:** Tuloksen saa jättää pois, koska päiväkirjan merkintä antaa syyn ja poisjättö kirjataan. Keskiarvo on $2{,}41\,\text{s}$, kolme merkitsevää numeroa kuten mittauksissa. Vaihteluvälin puolikas on $(2{,}44\,\text{s} - 2{,}38\,\text{s}) : 2 = 0{,}03\,\text{s}$. Jos syytä ei olisi löytynyt, tulos pysyisi aineistossa. Keskiarvo olisi silloin $19{,}84\,\text{s} : 8 = 2{,}48\,\text{s}$ ja vaihteluvälin puolikas $(2{,}97\,\text{s} - 2{,}38\,\text{s}) : 2 \approx 0{,}3\,\text{s}$, kymmenkertainen. Tulos ilmoitettaisiin tällä epävarmuudella, $t = 2{,}5\,\text{s} \pm 0{,}3\,\text{s}$, poikkeama mainittaisiin ja mittaus kannattaisi toistaa.
+**Järkevyys:** Poikkeavan tuloksen kanssa keskiarvo siirtyy $0{,}07\,\text{s}$ eli yli kaksi kertaa vaihteluvälin puolikkaan $0{,}03\,\text{s}$ verran. Poisjättö perustuu kirjattuun syyhyn eikä poikkeaman suuruuteen $2{,}97\,\text{s} - 2{,}41\,\text{s} = 0{,}56\,\text{s}$. Päiväkirjan merkinnän perusteella tulos on karkea virhe.
 
 ## fy1-3-L3-05
 **Annettu:** $\rho_\text{A} = 2{,}74\,\text{g/cm}^3$, $\Delta\rho_\text{A} = 0{,}05\,\text{g/cm}^3$; $\rho_\text{B} = 2{,}60\,\text{g/cm}^3$, $\Delta\rho_\text{B} = 0{,}05\,\text{g/cm}^3$; oppilaan päätelmä: ero on noin $5\,\%$, joten tulokset ovat sopusoinnussa

@@ -1,9 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 7f59e0e2f3d10af7
+CONTENT-HASH: c93916da7159938e
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
+- none
 
 ## Polish
+- none that affect correctness
 
 ## Checked
-batch delta review: Ydinajatus now defines mittausepävarmuus as an estimate of how large the measurement error may be and says it is generally not the largest possible difference from the true value (guardrails: Measurement and data); mittausvirhe kept as the signed difference $x - x_\text{oikea}$; new caliper photo caption (reads to fractions of a millimetre, the instrument's precision affects the uncertainty) is correct and consistent with the rest of the lesson.
+- diff since edb368de4 (lesson.md, inquiry.json, exit-ticket.json, figures/sim/answers): inq-check2 answer 2,08 % (0,05/2,40 recomputed); lesson.md diff is the regenerated SVG only (no figures.py change)
+- numbers recomputed independently in Python; physics guardrails 1-7 on the changed passages

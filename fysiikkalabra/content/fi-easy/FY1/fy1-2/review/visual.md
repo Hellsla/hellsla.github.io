@@ -1,5 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 31abe1b0112d5fff
+CONTENT-HASH: 5f1df957828d01c9
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-3 diff since the round-2 commit only)
 
 ## Blocking
 - none
@@ -8,4 +9,5 @@ CONTENT-HASH: 31abe1b0112d5fff
 - none
 
 ## Checked
-- batch delta review: "Luvun tärkeät käsitteet" panel captured from preview/fi-easy/fy1-2.html at 390 and 1280 px (the review/shots set has no capture of it) and opened — between the opening and stage 1, term bold over its explanation at 390 px, two-column at 1280 px, no clipping, no horizontal overflow, no KaTeX error; the edited lesson.md/inquiry.json sentences read in their diff (prose only, no new maths); top-390 opened in a montage (read-aloud "Kuuntele" button under the title, layout intact); fy1-2 contact-1/2 and intro-1280 opened at full size (edited prompt and SI paragraph rendered).
+- git diff edb368de4 of the part's files (fi-easy fy1-2 lesson): Voyager 2 d0 119,0 AU, 142,2 AU / 19,7 h feedback, source_note, table, calc text, significant-figure paragraph of lesson.md, sim.js D0 constant (no layout change); numbers in LaTeX with thin-space units, decimal comma/point per language consistent between feedback, model and reflection text.
+- source diff only (text, alt text, numbers); no figure geometry or layout changed, so no new captures were opened

@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 7e0acb0700aa8bf7
+CONTENT-HASH: 9367757b0bad6ac3
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- Ydinajatus: "It describes the uncertainty of the measurement result, an estimate of..." is circular; write "It is an estimate of how large the measurement error can be. It does not usually mean...".
-- Add to the LIGO caption one clause on why such a detector needs reliable repeated measurements.
+- none
 
 ## Checked
-batch delta review (en): uncertainty wording consistent with later sections; both photos have alt text and captions tied to measurement accuracy; no task or solution contradicts the change.
+- lesson.md (figure move only, SVG unchanged), inquiry.json, lesson-answers.py diffs. Worked-example plot moved from before the example to the final stage, after Reasonableness: the figure no longer shows the result before the student has worked it out (staging improved). inq-check2 key 2.08 vs shown 2 %: fine.

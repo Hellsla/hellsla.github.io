@@ -1,11 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 5d119893d96edc43
+CONTENT-HASH: 544b7ae791e33883
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
-(none)
-
-## Polish
 - none
 
+## Polish
+- none that affect correctness
+
 ## Checked
-- batch delta review: key_concepts, reworded sentences, photo captions, objective-form and level-policy edits, chapter-reference titles judged against the guardrails and the lesson text; restyled figure lines are styling only.
+- diff since edb368de4 (lesson.md, inquiry.json, exit-ticket.json, figures/sim/answers): sim.js velocity arrow colour only (VEL blue), exit ratio 9,81/1,62 = 6,06, 'toiseen' reading, lesson-answers.py key
+- numbers recomputed independently in Python; physics guardrails 1-7 on the changed passages

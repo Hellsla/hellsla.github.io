@@ -105,7 +105,7 @@
     {
       "id": "fy1-8-L1-08",
       "level": 1,
-      "text": "The writer of a lab report is thinking about which section each sentence belongs to. Which of the following sentences belongs in the results section of the report and not in the discussion?",
+      "text": "The writer of a lab report is thinking about which section each sentence belongs to. Which of the following sentences belongs in the results of the report and not in the discussion or the conclusion?",
       "kind": [
         "concept"
       ],
@@ -115,7 +115,7 @@
       "choices": [
         {
           "text": "The mean of the five measurements was $12.4\\,\\text{s}$ and half of the range was $0.2\\,\\text{s}$.",
-          "feedback": "Correct: the results present the measured and calculated values as they are, for example a table, a mean and an uncertainty. Interpretation is left to the discussion.",
+          "feedback": "Correct: the results present the measured and calculated values as they are, for example a table, a mean and an uncertainty. Interpretation is left to the discussion and the conclusion.",
           "correct": true
         },
         {
@@ -124,7 +124,7 @@
         },
         {
           "text": "The hypothesis is supported by the results.",
-          "feedback": "A conclusion about whether the results support the hypothesis is an interpretation of the results. It belongs in the discussion."
+          "feedback": "A stand on whether the results support the hypothesis is an interpretation of the results. It belongs in the conclusion."
         },
         {
           "text": "In future the measurement should be made with a photogate.",
@@ -201,7 +201,7 @@
     {
       "id": "fy1-8-L2-04",
       "level": 2,
-      "text": "According to the hypothesis the speed of the car is $0.50\\,\\text{m/s}$, but in the experiment the speed is measured as $0.42\\,\\text{m/s}$. By how many percent does the measured value differ from the value predicted by the hypothesis?",
+      "text": "According to the hypothesis the speed of the car is $0.500\\,\\text{m/s}$, but in the experiment the speed is measured as $0.420\\,\\text{m/s}$. By how many percent does the measured value differ from the value predicted by the hypothesis?",
       "answer": 16,
       "unit": "%",
       "tolerance": 0.02
@@ -348,7 +348,7 @@
     {
       "id": "fy1-8-L3-03",
       "level": 3,
-      "text": "60 minutes have been set aside for an investigation. Assembling and testing the equipment takes 12 minutes, and the measurement is made at six different distances. Each measurement repeat takes 2.0 minutes, including returning to the start and recording. How many repeats can be done for each distance, when the number of repeats is the same at every distance?",
+      "text": "A time of $60\\,\\text{min}$ has been set aside for an investigation. Assembling and testing the equipment takes $12\\,\\text{min}$, and the measurement is made at six different distances. Each measurement repeat takes $2.0\\,\\text{min}$, including returning to the start and recording. How many repeats can be done for each distance, when the number of repeats is the same at every distance?",
       "answer": 4.0,
       "unit": "repeats",
       "tolerance": 0.02
@@ -356,7 +356,7 @@
     {
       "id": "fy1-8-L3-04",
       "level": 3,
-      "text": "A student investigated whether the mass of a ball affects the rolling time (compare the measurements of the light and heavy ball). The results of five repeats are the means $\\bar{t}_{50} = 3.12\\,\\text{s} \\pm 0.04\\,\\text{s}$ and $\\bar{t}_{200} = 3.08\\,\\text{s} \\pm 0.04\\,\\text{s}$ (the uncertainty is half of the range). The uncertainty of timing with a hand stopwatch was estimated at $0.15\\,\\text{s}$ for a single measurement.\n\nThe discussion says: “The experiment went well. The mean of the heavy ball is smaller, so the hypothesis was correct. There were few errors.”\n\nHow many times the difference of the means is the hand-timing uncertainty $0.15\\,\\text{s}$? Use this and the intervals of the results to justify which claims of the discussion the data supports and which it does not, and write two better sentences for the discussion.",
+      "text": "A student investigated whether the mass of a ball affects the rolling time (compare the measurements of the light and heavy ball). The results of five repeats are the means $\\bar{t}_{50} = 3.12\\,\\text{s} \\pm 0.04\\,\\text{s}$ and $\\bar{t}_{200} = 3.08\\,\\text{s} \\pm 0.04\\,\\text{s}$ (the uncertainty is half of the range). The student's hypothesis was that the heavy ball rolls down the slope faster. The uncertainty of timing with a hand stopwatch was estimated at $0.15\\,\\text{s}$ for a single measurement. The estimate includes the reaction time, which can differ between measurement series, for example with a different timer or on a different occasion, so it does not fully show in the spread of five consecutive repeats.\n\nThe discussion says: “The experiment went well. The mean of the heavy ball is smaller, so the hypothesis was correct. There were few errors.”\n\nHow many times larger than the difference of the means is the hand-timing uncertainty $0.15\\,\\text{s}$? Use this and the intervals of the results to justify which claims of the discussion the data supports and which it does not, and write two better sentences for the discussion.",
       "kind": [
         "data",
         "reasoning",
@@ -389,7 +389,7 @@
     {
       "id": "fy1-8-L3-05",
       "level": 3,
-      "text": "A student plans an investigation for the question “Does the cooling rate of water depend on the material of the container?” He pours the same number of decilitres of $80\\,{}^\\circ\\text{C}$ water into three containers of the same size (glass, metal, plastic) and reads the temperature every minute. The independent (manipulated) variable is the material of the container and the dependent variable is the fall in temperature.\n\nThe temperatures of the glass container in a preliminary experiment are in the table. Estimate the initial cooling rate from the change during the first three minutes of the table. The uncertainty of the fall in temperature $\\Delta T_\\text{fall}$ is estimated at $1.0\\,\\text{K}$, and the relative uncertainty of the fall is wanted to be at most $5.0\\,\\%$. Assume that even in the container that cools most slowly the initial rate is about the same as in the glass container.\n\nHow long must the measurement period be planned to be at least? Also name three variables to be controlled, with reasons, and tell how the cooling curves of the three containers are compared.",
+      "text": "A student plans an investigation for the question “Does the cooling rate of water depend on the material of the container?” He pours the same number of decilitres of $80\\,{}^\\circ\\text{C}$ water into three containers of the same size (glass, metal, plastic) and reads the temperature every minute. The independent (manipulated) variable is the material of the container and the dependent variable is the fall in temperature.\n\nThe temperatures of the glass container in a preliminary experiment are in the table. Estimate the initial cooling rate from the change during the first three minutes of the table. The uncertainty of the fall in temperature is estimated at $\\Delta T_\\text{fall} = 1.0\\,\\text{K}$, and the relative uncertainty of the fall is wanted to be at most $5.0\\,\\%$. Assume that even in the container that cools most slowly the initial rate is about the same as in the glass container.\n\nHow long must the measurement period be planned to be at least? Also name three variables to be controlled, with reasons, and tell how the cooling curves of the three containers are compared.",
       "kind": [
         "data",
         "model",

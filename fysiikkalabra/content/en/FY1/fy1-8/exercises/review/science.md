@@ -1,17 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 59df1664b8ed5631
+CONTENT-HASH: c21f036fe7209f89
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- New task fy1-8-L1-09 (true/false, five statements) compared with reviewed fi: id, level, kind, answer string (1 T, 2 F, 3 F, 4 T, 5 F), unit, tolerance and every statement's true flag identical.
-- Numbers identical to fi: masses 0, 50, 100 g and uncertainty 0.2 s (decimal point).
-- Physics unchanged: fair test (one changed, one measured, rest controlled), repeat for spread, a difference below the uncertainty cannot be demonstrated but does not prove no effect, a refuted hypothesis is still a result.
-- Feedback of all five statements keeps fi's diagnostic point (resolution is not uncertainty; failed investigation is one with no conclusion).
-- solutions.md L1-09 matches fi statement by statement; principle and model answer give the same verdicts.
-- Earlier tasks unchanged (carried from the previous passed review).
-- check_i18n.py: nothing for fy1-8; build.py fy1-8 succeeds.
+- exercises.json, solutions.md, answers.py diff. |0.500-0.420|/0.500 = 16 %; 3.75 = 0.15/0.04 ratio; reaction-time caveat in the discussion task is sound physics; Delta-t notation clash resolved (d, t_end - t_start).

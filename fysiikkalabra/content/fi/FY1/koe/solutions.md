@@ -1,13 +1,13 @@
 ## fy1-k1
 
 ### a)
-**Perustelu:** Atomin halkaisija on noin $10^{-10}\,\text{m}$ ja ytimen noin $10^{-15}$–$10^{-14}\,\text{m}$, joten atomi on noin $10^{4}$–$10^{5}$ kertaa ytimensä kokoinen. Lähin vaihtoehto on $10^{5}$. Vaihtoehto $10^{2}$ syntyy, jos atomia ja ydintä pitää lähes samankokoisina; todellisuudessa atomi on lähes tyhjää tilaa.
+**Perustelu:** Atomin halkaisija on noin $10^{-10}\,\text{m}$ ja ytimen noin $10^{-15}$–$10^{-14}\,\text{m}$, joten atomi on noin $10^{4}$–$10^{5}$ kertaa ytimensä kokoinen. Lähin vaihtoehto on $10^{5}$. Vaihtoehto $10^{2}$ syntyy, jos ytimen ajattelee täyttävän huomattavan osan atomista; todellisuudessa atomi on lähes tyhjää tilaa.
 
 ### b)
 **Perustelu:** Elektroni on negatiivisesti ja ydin positiivisesti varattu, ja sähkömagneettinen vuorovaikutus vetää niitä toisiaan kohti. Vahva vuorovaikutus sitoo protoneja ja neutroneja ytimessä, mutta se ei vaikuta elektroneihin. Gravitaatio on näin pienillä massoilla merkityksettömän heikko.
 
 ### c)
-**Perustelu:** SI-järjestelmän seitsemän perussuuretta ovat pituus, massa, aika, sähkövirta, lämpötila, ainemäärä ja valovoima. Nopeus, tiheys ja pinta-ala ovat johdannaissuureita, jotka määritellään perussuureiden avulla, esimerkiksi tiheys massan ja tilavuuden avulla.
+**Perustelu:** SI-järjestelmän seitsemän perussuuretta ovat pituus, massa, aika, sähkövirta, lämpötila, ainemäärä ja valovoima. Nopeus, tiheys ja pinta-ala ovat johdannaissuureita, jotka määritellään perussuureiden avulla, esimerkiksi tiheys massan ja tilavuuden avulla, ja tilavuus puolestaan pituuden avulla.
 
 ### d)
 **Perustelu:** Tulo $\rho V$ on massa, joten $\dfrac{m}{\rho V}$ on yksikötön luku. Lausekkeen $\dfrac{m\,s}{\rho V t}$ yksikkö on siis sama kuin osamäärän $\dfrac{s}{t}$ eli $\text{m/s}$. Muiden yksiköt ovat $\dfrac{\rho V}{m\,t}$: $\tfrac{1}{\text{s}}$, $\dfrac{\rho\,s}{m\,t}$: $\tfrac{1}{\text{m}^2 \cdot \text{s}}$ ja $\dfrac{m\,t}{\rho V s}$: $\tfrac{\text{s}}{\text{m}}$.
@@ -42,7 +42,7 @@
 **Kysytty:** mittaustulosten $(t, L)$-kuvaaja ja siihen sovitettu suora
 **Kuvaaja:** Vaaka-akselilla on aika $t\ (\text{min})$ ja pystyakselilla pituus $L\ (\text{cm})$, molemmilla tasavälinen asteikko. Jokainen mittaus on oma pisteensä.
 
-<svg data-fig="fy1-k2-graph" viewBox="0 0 600 420" role="img" aria-label="Kuvaaja: kynttilän pituus L senttimetreinä ajan t funktiona minuutteina. Kuusi mittauspistettä 15,0 senttimetristä 9,1 senttimetriin asettuvat laskevalle suoralle. Suoralta on luettu pisteet (0 min; 15,0 cm) ja (51 min; 9,0 cm)." style="max-width:100%;font-size:24px">
+<svg data-fig="fy1-k2-graph" viewBox="0 0 600 420" role="img" aria-label="Kuvaaja: kynttilän pituus L senttimetreinä ajan t funktiona minuutteina. Kuusi mittauspistettä 15,0 senttimetristä 9,1 senttimetriin asettuu laskevalle suoralle. Suoralta on luettu pisteet (0 min; 15,0 cm) ja (51 min; 9,0 cm)." style="max-width:100%;font-size:24px">
   <line x1="145" y1="370" x2="145" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="210" y1="370" x2="210" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="275" y1="370" x2="275" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -118,7 +118,7 @@
 ### d)
 **Kysytty:** c-kohdan ennusteen luotettavuus
 **Periaate:** Malli on testattu vain mittausvälillä $0$–$50\,\text{min}$. Sen ulkopuolelle jatkaminen eli ekstrapolointi olettaa, että olosuhteet pysyvät samoina.
-**Mallivastaus:** Ennuste ulottuu yli kaksi kertaa mittausaikaa pidemmälle, joten mittaukset eivät osoita mallin pätevän siellä. Palamisnopeus voi muuttua: kynttilän alaosa voi olla paksumpi tai ohuempi, sydämen pituus ja liekin koko vaihtelevat, ja jos ikkuna avataan, veto nopeuttaa palamista. Ennuste on siksi suuruusluokka-arvio, ehkä kymmenien minuuttien tarkkuudella, mutta ei minuutin tarkka.
+**Mallivastaus:** Ennuste ulottuu yli kaksi kertaa mittausaikaa pidemmälle, joten mittaukset eivät osoita mallin pätevän siellä. Palamisnopeus voi muuttua: kynttilän alaosa voi olla paksumpi tai ohuempi, sydämen pituus ja liekin koko vaihtelevat, ja jos ikkuna avataan, veto nopeuttaa palamista. Ennuste on siksi karkea arvio, ehkä kymmenien minuuttien tarkkuudella, mutta ei minuutin tarkka.
 
 ### Yleisiä virheitä
 - Kulmakerroin lasketaan kahdesta vierekkäisestä mittauspisteestä, jolloin yhden pisteen virhe vaikuttaa paljon.
@@ -200,7 +200,7 @@
 **Kysytty:** kohtaamispaikan epävarmuus ja syy sen suuruuteen
 **Periaate:** Lasketaan kohtaamispaikka Elinan nopeuden ääriarvoilla $3{,}0\,\text{m/s}$ ja $3{,}4\,\text{m/s}$ samalla tavalla kuin b-kohdassa.
 **Mallivastaus:** Kun $v_\text{E} = 3{,}0\,\text{m/s}$, Elinalla on $900\,\text{m}$:n etumatka ja ero kuroutuu umpeen nopeudella $3{,}0\,\text{m/s}$: aikaa kuluu $300\,\text{s}$, ja paikka on $6{,}0\,\tfrac{\text{m}}{\text{s}} \cdot 300\,\text{s} = 1{,}8\,\text{km}$. Kun $v_\text{E} = 3{,}4\,\text{m/s}$, etumatka on $1020\,\text{m}$ ja erotusnopeus $2{,}6\,\text{m/s}$: aikaa kuluu noin $390\,\text{s}$, ja paikka on noin $2{,}4\,\text{km}$. Kohtaamispaikka on siis $s \approx (2{,}1 \pm 0{,}3)\,\text{km}$.
-Elinan nopeuden suhteellinen epävarmuus on $\tfrac{0{,}2}{3{,}2} \approx 6\,\%$, mutta kohtaamispaikan $\tfrac{0{,}3}{2{,}1} \approx 15\,\%$, eli yli kaksinkertainen. Syy on se, että Elinan nopeus vaikuttaa kohtaamiseen kahdella tavalla samaan suuntaan: suurempi nopeus pidentää hänen etumatkaansa (noin $6\,\%$) ja samalla pienentää erotusnopeutta $v_\text{A} - v_\text{E}$, jolla Aaro kuroo etumatkaa umpeen (noin $7\,\%$). Kun molemmat vaikutukset kasvattavat saavuttamiseen kuluvaa aikaa, niiden suhteelliset epävarmuudet summautuvat, ja lisäksi Aaron kulkema matka kasvaa saman ajan mukana.
+Elinan nopeuden suhteellinen epävarmuus on $\tfrac{0{,}2}{3{,}2} \approx 6\,\%$, mutta kohtaamispaikan $\tfrac{0{,}3}{2{,}1} \approx 15\,\%$, eli yli kaksinkertainen. Syy on se, että Elinan nopeus vaikuttaa kohtaamiseen kahdella tavalla samaan suuntaan: suurempi nopeus pidentää hänen etumatkaansa (noin $6\,\%$) ja samalla pienentää erotusnopeutta $v_\text{A} - v_\text{E}$, jolla Aaro kuroo etumatkaa umpeen (noin $7\,\%$). Kun molemmat vaikutukset kasvattavat saavuttamiseen kuluvaa aikaa, niiden suhteelliset epävarmuudet summautuvat: $6\,\% + 7\,\% \approx 13\,\%$. Kohtaamispaikka $s = v_\text{A}(t - t_0)$ on suoraan verrannollinen tähän aikaan, joten sen suhteellinen epävarmuus on yhtä suuri, pyöristetyistä ääriarvoista laskettuna noin $15\,\%$.
 
 ### Yleisiä virheitä
 - Aaron paikaksi kirjoitetaan $s_\text{A} = v_\text{A}t$, jolloin Aaro lähtisi samaan aikaan.
@@ -231,7 +231,7 @@ Elinan nopeuden suhteellinen epävarmuus on $\tfrac{0{,}2}{3{,}2} \approx 6\,\%$
 ### c)
 **Kysytty:** miksi mitataan kymmenen heilahduksen kesto
 **Periaate:** Käsin otetun ajan suurin virhelähde on reaktioaika kellon käynnistyksessä ja pysäytyksessä.
-**Mallivastaus:** Reaktioajan vaihtelu, noin $0{,}1$–$0{,}2\,\text{s}$, on suunnilleen yhtä suuri mitattiinpa yksi tai kymmenen heilahdusta. Yhden heilahduksen $1{,}4\,\text{s}$:n ajasta se olisi jopa $10\,\%$. Kun mitataan kymmenen heilahdusta ja jaetaan kymmenellä, sama virhe jakautuu kymmenelle heilahdukselle, ja virhe yhtä heilahdusta kohti on vain kymmenesosa. Suhteellinen epävarmuus pienenee siis kymmenesosaan.
+**Mallivastaus:** Reaktioajan vaihtelu, noin $0{,}1$–$0{,}2\,\text{s}$, on suunnilleen yhtä suuri mitattiinpa yksi tai kymmenen heilahdusta. Yhden heilahduksen $1{,}4\,\text{s}$:n ajasta se olisi $7$–$14\,\%$. Kun mitataan kymmenen heilahdusta ja jaetaan kymmenellä, sama virhe jakautuu kymmenelle heilahdukselle, ja virhe yhtä heilahdusta kohti on vain kymmenesosa. Suhteellinen epävarmuus pienenee siis kymmenesosaan.
 
 ### d)
 **Kysytty:** virheen laji ja paljastuuko se toistamalla
@@ -253,7 +253,7 @@ Elinan nopeuden suhteellinen epävarmuus on $\tfrac{0{,}2}{3{,}2} \approx 6\,\%$
 **Muunnokset:** $1\,\text{ml} = 1\,\text{cm}^3$, joten $V = 62{,}5\,\text{cm}^3 - 50{,}0\,\text{cm}^3 = 12{,}5\,\text{cm}^3$.
 **Sijoitus:** $\rho = \dfrac{96\,\text{g}}{12{,}5\,\text{cm}^3} \approx 7{,}68\,\tfrac{\text{g}}{\text{cm}^3}$
 **Vastaus:** $\rho \approx 7{,}7\,\text{g/cm}^3$. Kaksi merkitsevää numeroa, koska massa $96\,\text{g}$ on annettu kahdella.
-**Järkevyys:** Metallien tiheydet ovat muutamasta grammasta noin kahteenkymmeneen grammaan kuutiosenttimetrissä, ja tulos on tavallisten rakennemetallien luokkaa.
+**Järkevyys:** Tavallisten käyttömetallien tiheydet ovat muutamasta grammasta noin kahteenkymmeneen grammaan kuutiosenttimetrissä, ja tulos on tavallisten rakennemetallien luokkaa.
 
 ### b)
 **Kysytty:** todennäköisin metalli
@@ -361,7 +361,7 @@ Elinan nopeuden suhteellinen epävarmuus on $\tfrac{0{,}2}{3{,}2} \approx 6\,\%$
 
 ### c)
 **Kysytty:** miksi suodattimen kuvaaja on erilainen
-**Periaate:** Malli $v = gt$ pätee vain, kun ilmanvastus on merkityksetön. Kevyt ja leveä kappale hidastuu ilmassa eniten.
+**Periaate:** Malli $v = gt$ pätee vain, kun ilmanvastus on merkityksetön. Ilmanvastus vaikuttaa eniten kevyeen ja leveään kappaleeseen: sen nopeuden kasvu hidastuu eniten.
 **Mallivastaus:** Ero johtuu ilmanvastuksesta. Suodatin on kevyt ja leveä, joten ilmanvastus on sille suuri verrattuna sen painoon, kun taas pallolle se on pieni. Alussa nopeus on pieni, ilmanvastus on pieni, ja molemmat kiihtyvät lähes samoin: ensimmäiset pisteet ovat lähes samat. Nopeuden kasvaessa ilmanvastus kasvaa, joten suodattimen nopeuden kasvu hidastuu. Lopulta sen nopeus pysyy lähes vakiona, noin $1{,}5\,\text{m/s}$. Siksi malli $v = gt$ ei kuvaa suodattimen liikettä.
 
 ### d)
@@ -391,7 +391,7 @@ Elinan nopeuden suhteellinen epävarmuus on $\tfrac{0{,}2}{3{,}2} \approx 6\,\%$
 **Kysytty:** $(N, d)$-kuvaaja ja siihen sovitettu suora
 **Kuvaaja:** Vaaka-akselilla on arkkimäärä $N$ ja pystyakselilla pinon paksuus $d\ (\text{mm})$. Arkkimäärä on lukumäärä, joten sillä ei ole yksikköä.
 
-<svg data-fig="fy1-k7-graph" viewBox="0 0 600 420" role="img" aria-label="Kuvaaja: arkkipinon paksuus d millimetreinä arkkimäärän N funktiona. Viisi pistettä sadasta viiteensataan arkkiin ovat origon kautta kulkevalla suoralla; suoralta on luettu piste (500; 51 mm)." style="max-width:100%;font-size:24px">
+<svg data-fig="fy1-k7-graph" viewBox="0 0 600 420" role="img" aria-label="Kuvaaja: arkkipinon paksuus d millimetreinä arkkimäärän N funktiona. Viisi pistettä sadasta viiteensataan arkkiin on origon kautta kulkevalla suoralla; suoralta on luettu piste (500; 51 mm)." style="max-width:100%;font-size:24px">
   <line x1="156.5" y1="370" x2="156.5" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="232.5" y1="370" x2="232.5" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="309" y1="370" x2="309" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -453,7 +453,7 @@ Elinan nopeuden suhteellinen epävarmuus on $\tfrac{0{,}2}{3{,}2} \approx 6\,\%$
 **Kysytty:** yhden arkin paksuus mikrometreinä ja sen epävarmuus
 **Periaate:** Suoran kulmakerroin on paksuuden lisäys arkkia kohti. Pinon paksuuden epävarmuus jakautuu kaikille arkeille.
 **Kuvaajan lukeminen:** Suoralta luetaan origo ja piste $(500;\ 51\,\text{mm})$.
-**Kaava:** $d_1 = \dfrac{\Delta d}{\Delta N}$ ja $\Delta d_1 = \dfrac{\Delta d}{N}$
+**Kaava:** $d_1 = \dfrac{d - 0}{N - 0} = \dfrac{d}{N}$ ja $\Delta d_1 = \dfrac{\Delta d}{N}$, kun $\Delta d$ on lukeman epävarmuus
 **Muunnokset:** $1\,\text{mm} = 1000\,\mu\text{m}$
 **Sijoitus:** $d_1 = \dfrac{51\,\text{mm} - 0\,\text{mm}}{500 - 0} = 0{,}102\,\text{mm} = 0{,}102 \cdot 1000\,\mu\text{m} = 102\,\mu\text{m}$ ja $\Delta d_1 = \dfrac{1\,\text{mm}}{500} = 0{,}002\,\text{mm} = 2\,\mu\text{m}$
 **Vastaus:** Yhden arkin paksuus on $d_1 = (102 \pm 2)\,\mu\text{m}$, kun annettu lukeman epävarmuus $1\,\text{mm}$ jaetaan $500$ arkilla.
@@ -466,7 +466,7 @@ Elinan nopeuden suhteellinen epävarmuus on $\tfrac{0{,}2}{3{,}2} \approx 6\,\%$
 **Kaava:** $\rho = \dfrac{m}{V}$, kun $V = A \cdot d_1$
 **Muunnokset:** $80\,\text{g} = 0{,}080\,\text{kg}$ ja $102\,\mu\text{m} = 102 \cdot 10^{-6}\,\text{m} = 1{,}02 \cdot 10^{-4}\,\text{m}$
 **Sijoitus:** $V = 1\,\text{m}^2 \cdot 1{,}02 \cdot 10^{-4}\,\text{m} = 1{,}02 \cdot 10^{-4}\,\text{m}^3$ ja $\rho = \dfrac{0{,}080\,\text{kg}}{1{,}02 \cdot 10^{-4}\,\text{m}^3} \approx 784\,\tfrac{\text{kg}}{\text{m}^3}$
-**Vastaus:** $\rho \approx 780\,\text{kg/m}^3$, kaksi merkitsevää numeroa, koska neliömassa $80\,\text{g/m}^2$ on annettu kahdella. Paperin tiheys on noin $80\,\%$ veden tiheydestä $1000\,\text{kg/m}^3$.
+**Vastaus:** $\rho \approx 780\,\text{kg/m}^3$. Pakkauksen neliömassa $80\,\text{g/m}^2$ on tarkka arvo, joten tarkkuutta rajoittaa arkin paksuus: sen noin $2\,\%$:n epävarmuus tekee tiheyteen noin $20\,\text{kg/m}^3$:n epävarmuuden, ja tulos pyöristetään kymmeniin. Paperin tiheys on noin $80\,\%$ veden tiheydestä $1000\,\text{kg/m}^3$.
 **Järkevyys:** Paperin kuidut ovat itse vettä tiheämpiä, mutta niiden välissä on ilmaa, joten paperin tiheys on pienempi kuin veden. Tulos on puun tiheyden luokkaa, mikä sopii, koska paperi tehdään puukuiduista.
 
 ### Yleisiä virheitä

@@ -1,15 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: efc0b513fd88dfa9
+CONTENT-HASH: 3d04085ff61812ac
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-3 diff since the round-2 commit only)
 
 ## Blocking
-(none)
-
-## Fixed
-- none needed
+- none
 
 ## Polish
 - none
 
 ## Checked
-- Delta review 2026-10-31 (en): hero aria-label and figure label read naturally, no Finnish left, learn items complete the prefix sentence, teaching sequence unchanged from the Finnish.
-- Delta review 2026-10-31 (prediction 2 title only): title "Prediction 2: a probe farther away" matches the reviewed Finnish "kauempana oleva luotain" (the lesson text introduces Voyager 2, a probe); no premise about the distance stated, prompt numbers (10^7 km, 33 s, 10^9 km) unchanged. check_i18n en: 0 errors.
+- Same diff files in en; values and wording match the Finnish fix (119.0 AU, 142.2 AU, 19.7 h, ratio 142, sig-fig sentence).

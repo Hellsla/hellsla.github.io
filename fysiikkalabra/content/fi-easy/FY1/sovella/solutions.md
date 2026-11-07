@@ -81,7 +81,7 @@
 ### d)
 **Kysytty:** arvio ekstrapoloinnista (suoran jatkamisesta mittausvälin ulkopuolelle) ja selitys suoran vakiotermille
 **Periaate:** Malli on testattu vain sillä välillä, jolla mitattiin. Sovitetun suoran vakiotermi on suoran ja $s$-akselin leikkauskohta.
-**Mallivastaus:** Päätelmä ei ole luotettava. Suora on testattu vain välillä $0{,}4\text{–}2{,}0\,\text{s}$ eli $1{,}6\,\text{s}$:n ajalta. Päätelmä jatkaa suoraa yli kuusi kertaa pidemmälle. Todellisuudessa vierimisvastus hidastaa palloa vähitellen. Lisäksi $7{,}8\,\text{m}$:n matkalla pallo luultavasti osuu seinään tai huonekaluun. Tasaisen liikkeen mallia voi siis käyttää pidemmälle ajalle vasta, kun se on testattu pidemmällä mittauksella.
+**Mallivastaus:** Päätelmä ei ole luotettava. Suora on testattu vain välillä $0{,}4\text{–}2{,}0\,\text{s}$ eli $1{,}6\,\text{s}$:n ajalta. Päätelmä jatkaa suoraa $8\,\text{s}$ mittausten ulkopuolelle. Se on viisi kertaa niin pitkä aika kuin mittausväli. Todellisuudessa vierimisvastus hidastaa palloa vähitellen. Lisäksi $7{,}8\,\text{m}$:n matkalla pallo luultavasti osuu seinään tai huonekaluun. Tasaisen liikkeen mallia voi siis käyttää pidemmälle ajalle vasta, kun se on testattu pidemmällä mittauksella.
 Sovitetun suoran vakiotermi on noin $s_0 = -0{,}16\,\text{m}$. Se ei ole pallon paikka hetkellä $0\,\text{s}$, sillä pallo lähti kohdasta $s = 0$. Rampilla pallo kulki aluksi hitaammin kuin lattialla. Jos pallo olisi liikkunut koko ajan lattianopeudella $0{,}80\,\text{m/s}$, se olisi ehtinyt pidemmälle. Siksi lattialiikettä kuvaava suora on siirtynyt alaspäin. Se leikkaa $s$-akselin origon alapuolella.
 
 ### Yleisiä virheitä
@@ -101,7 +101,7 @@ Sovitetun suoran vakiotermi on noin $s_0 = -0{,}16\,\text{m}$. Se ei ole pallon 
 3. *Tulokset on ilmoitettu liian tarkasti.* Sekuntikellosovellus näyttää tuhannesosasekunteja. Ihmisen reaktioaika vaihtelee kuitenkin noin $0{,}1\text{–}0{,}2\,\text{s}$. Korjaus: ajat ilmoitetaan sadasosasekunnin tarkkuudella ja epävarmuus arvioidaan toistojen vaihtelusta.
 4. *Epävarmuutta ei ole arvioitu.* Ero $0{,}33\,\text{s}$ voi olla kokonaan mittausvirhettä. Korjaus: epävarmuus arvioidaan toistoista ja eroa verrataan siihen.
 5. *Johtopäätös yleistää liikaa.* Yhdestä rampista ja kahdesta kuulasta ei voi päätellä mitään kaikista kappaleista. Korjaus: päätelmä rajataan tutkittuihin oloihin.
-6. *Tutkimuskysymys on epätarkka.* Siinä ei kerrota, mitä "nopeammin" tarkoittaa ja mitä mitataan. Korjaus: "Riippuuko kuulan vierimisaika rampin alas sen massasta, kun kuulat ovat samankokoisia ja umpinaisia?"
+6. *Tutkimuskysymys on epätarkka.* Siinä ei kerrota, mitä "nopeammin" tarkoittaa ja mitä mitataan. Korjaus: "Riippuuko kuulan vierimisaika ramppia alas sen massasta, kun kuulat ovat samankokoisia ja umpinaisia?"
 
 ### b)
 **Annettu:** teräskuulan ajat $2{,}31$; $2{,}45$; $2{,}38$; $2{,}29$; $2{,}42\,\text{s}$ ja muovikuulan ajat $2{,}40$; $2{,}33$; $2{,}47$; $2{,}36$; $2{,}44\,\text{s}$

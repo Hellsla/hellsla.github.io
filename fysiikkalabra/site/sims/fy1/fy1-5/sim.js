@@ -9,6 +9,7 @@
 // Every canvas text goes through lab(), which pushes its ink box to simState.labels. p5.js 1.9 instance mode, 600×400.
 new p5((p) => {
   const T = 10, SMAX = 60;                                               // run time (s), visible track and graph range (m)
+  const VEL = [25, 113, 194];                                            // blue = velocity (the velocity arrow), as in every figure
   const COL = [232, 118, 28];                                            // orange = the cart, in the track, the arrow and the graph
   const LANE = { y: 40, h: 40, x0: 36, x1: 496 };                        // road
   const RULER_Y = 116;
@@ -112,9 +113,9 @@ new p5((p) => {
   }
   function arrow(x1, y1, x2, y2) {
     p.stroke(255, 255, 255, 220); p.strokeWeight(6); p.line(x1, y1, x2, y2);
-    p.stroke(...COL); p.strokeWeight(3.5); p.line(x1, y1, x2, y2);
+    p.stroke(...VEL); p.strokeWeight(3.5); p.line(x1, y1, x2, y2);
     const a = Math.atan2(y2 - y1, x2 - x1), L = 8;
-    p.fill(...COL); p.stroke(255, 255, 255, 220); p.strokeWeight(1.5);
+    p.fill(...VEL); p.stroke(255, 255, 255, 220); p.strokeWeight(1.5);
     p.triangle(x2 + 3 * Math.cos(a), y2 + 3 * Math.sin(a), x2 - L * Math.cos(a - 0.5), y2 - L * Math.sin(a - 0.5), x2 - L * Math.cos(a + 0.5), y2 - L * Math.sin(a + 0.5));
   }
 

@@ -1,8 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 2d70734eb2328747
+CONTENT-HASH: f9fb7857e33c9c3c
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-Translation review: English is natural and keeps the teaching sequence (key idea, proportionality, model, formula, graph, units, staged example, misconception, summary, inquiry). Units and symbols as in the Finnish; no Finnish left in text or experiment names. check_i18n 0 errors for en.
+- lesson.md, inquiry.json diffs. Voyager 2 source and comparison (143.05 AU from Earth vs 142.6 AU from Sun, agreement to about 1 AU) taught honestly; explain task now asks the student to judge how precisely the comparison tests the model, with an observable criterion; worked example unit substitution is easy to follow.

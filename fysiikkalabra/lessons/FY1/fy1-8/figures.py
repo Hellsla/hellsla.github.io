@@ -79,14 +79,14 @@ def setup():
     f.rect(108, 148, 36, 18, "#eef5f9", INK, 2.5, 5)
     for wx in (110, 144):
         f.circle(wx, 191, 9, INK, WHITE, 2)
-    f.arrow(176, 160, 250, 160, INK, 3, 14)
-    f.tex(264, 160, "v", "start")
+    f.arrow(176, 160, 250, 160, COLD, 3, 14)                 # velocity is always blue
+    f.tex(264, 160, "v", "start", color=COLD)
     # bracket for the distance
     xe = x0 + per * 2.0
-    f.line(x0, 268, xe, 268, COLD, 2.5)
-    f.line(x0, 258, x0, 278, COLD, 2.5)
-    f.line(xe, 258, xe, 278, COLD, 2.5)
-    f.tex((x0 + xe) / 2, 300, r"s = 2{,}00\,\text{m}", "middle", color=COLD)
+    f.line(x0, 268, xe, 268, MUTED, 2.5)                       # neutral grey: blue is kept for the velocity
+    f.line(x0, 258, x0, 278, MUTED, 2.5)
+    f.line(xe, 258, xe, 278, MUTED, 2.5)
+    f.tex((x0 + xe) / 2, 300, r"s = 2{,}00\,\text{m}", "middle")
     return f.svg()
 
 

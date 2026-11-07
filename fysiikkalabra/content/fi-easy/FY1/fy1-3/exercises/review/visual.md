@@ -1,18 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 039bbf04c7489009
-Mode: delta, Round 1 (new task fy1-3-L2-08, solutions.md, answers.py)
+CONTENT-HASH: 1d524cde5c7b4567
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] solutions.md fy1-3-L2-08 Mallivastaus — one block of about 170 words with four ideas and two inline fractions; split into the difference, the conclusion, the two rejected claims and the precision.
-- [Minor] same — straight quotes "raskas heilahtaa hitaammin" and "massa ei vaikuta"; Finnish uses ”…” (both marks alike).
+- none
 
 ## Checked
-- Captures opened: fy1-3-open-exercises-L2-1280-10 (3-15 end, 3-16 task, table with decimal comma, options, correct feedback) and -11 (solution blocks).
-- The text is simple and concrete (epävarmuus eli mittauksen mahdollinen virhe explained where it appears; "Ne ovat kymmenen heilahduksen aikoja" says what the averages are).
-- Not checked from captures: the exercises are captured only at 1280 px, so the new task at 390 px was not seen; the other edited tasks (situation/question paragraph splits) were judged from the diff only unless named above.
-
-## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+- zero-offset item 35,5 g, steel rod item 0,06 cm and its Järkevyys text, answers.py.
+- No captures opened (light mode, judged from the diff). Fi-easy: sentences stay short and plain, notation and units in LaTeX with decimal comma, changes match the Finnish fix.

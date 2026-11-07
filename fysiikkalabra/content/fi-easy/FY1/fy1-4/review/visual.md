@@ -1,10 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 455343c6a19fd7cd
+CONTENT-HASH: 8fe1982305035989
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
+- none
 
 ## Polish
-
+- none
 
 ## Checked
-batch delta review: scratchpad kc/fy1-4-390.png and kc/fy1-4-1280.png (the new section cut from the built page, preview/fi-easy/fy1-4.html): stacked at 390 px, two columns at 1280 px, no raw maths, no overflow, no clipping; the diff text read for wording (the packet's own captures show no figure change, so only sheets of the new section were opened).
+- lesson.md model/interpolation sentences, worked example 20 °C / 60 °C / 0 min exact values, inquiry.json prompt and graph text.
+- No captures opened (light mode, judged from the diff). Fi-easy: sentences stay short and plain, notation and units in LaTeX with decimal comma, changes match the Finnish fix.

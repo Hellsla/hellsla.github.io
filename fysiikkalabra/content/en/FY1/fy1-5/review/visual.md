@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 3b1d65f1f5470788
+CONTENT-HASH: f9fb7857e33c9c3c
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
-
+- none
 
 ## Polish
-
+- none
 
 ## Checked
-- batch delta review: opened fy1-5-1280-0, fy1-5-360-0; photo loads, no clipping or horizontal overflow, credit line under the caption, alt text and caption natural English and consistent with the picture and the paragraph, no number with a unit in the new text.
+- Diff since edb368de4 of: lesson.md, inquiry.json. unit-substitution line (1 km = 1/149 597 870.7 AU) is clear and typographically consistent; comparison paragraph clearly says Sun distance vs Earth distance. Judged from the diff and source only; no captures opened (light mode).

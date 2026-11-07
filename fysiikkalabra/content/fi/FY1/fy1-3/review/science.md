@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: bf819a37c4fc8d14
+CONTENT-HASH: 54f5f1ae106f642a
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
-
-None.
+- none
 
 ## Polish
-
-None.
+- none
 
 ## Checked
-
-batch delta review: the new Ydinajatus sentences define mittausepävarmuus as an estimate of how large the error may be and say it is not usually an absolute maximum deviation, as the guardrails require; mittausvirhe (signed difference) is kept apart. Caliper caption: reading to fractions of a millimetre is right for a vernier/digital caliper, and resolution as one source of uncertainty is correct. LIGO caption: km-long arms (4 km) and length changes far below a nucleus (~10⁻¹⁸ m against ~10⁻¹⁵ m) are correct. No number, option or feedback changed.
+- diff inquiry.json (check-2 key 2.08), lesson-answers.py, lesson.md (the example-plot SVG moved unchanged into the worked example; figures.py unchanged).
+- Recomputed check-2: mean 12,00 s : 5 = 2,40 s, half-range 0,05 s → 2,083 %. A relative tolerance of 0,05 accepts the shown answer 2 % and 2,1 %. Mistake 4,2 % (0,10 : 2,40) still right.

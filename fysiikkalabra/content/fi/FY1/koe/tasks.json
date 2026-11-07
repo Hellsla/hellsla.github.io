@@ -38,7 +38,7 @@
      "id": "a",
      "kind": "choice",
      "points": 2,
-     "text": "Atomin halkaisija on monta kertaa sen ytimen halkaisija. Mikä on oikea suuruusluokka?",
+     "text": "Atomin halkaisija on monta kertaa niin suuri kuin sen ytimen halkaisija. Mikä on näiden halkaisijoiden suhteen suuruusluokka?",
      "options": [
       "noin $10$ kertaa",
       "noin $10^{2}$ kertaa",
@@ -297,7 +297,7 @@
       {
        "key": "conclusion",
        "points": 1,
-       "detail": "Ennuste on suuruusluokka-arvio, ehkä kymmenien minuuttien tarkkuudella."
+       "detail": "Ennuste on karkea arvio, ehkä kymmenien minuuttien tarkkuudella."
       }
      ]
     }
@@ -560,7 +560,7 @@
    "id": "fy1-k5",
    "title": "Mistä ruuvit on tehty?",
    "source": "example",
-   "text": "Opiskelija haluaa selvittää, mistä metallista samanlaiset ruuvit on tehty. Kahdenkymmenen ruuvin yhteismassa on $96\\,\\text{g}$. Mittalasissa on vettä $50{,}0\\,\\text{ml}$, ja kun ruuvit upotetaan veteen, pinta nousee lukemaan $62{,}5\\,\\text{ml}$. Kunkin mittalasin lukeman epävarmuus on $0{,}5\\,\\text{ml}$.\n\n| aine | $\\rho\\ (\\text{g/cm}^3)$ |\n|---|---|\n| alumiini | $2{,}70$ |\n| teräs | $7{,}85$ |\n| messinki | $8{,}5$ |\n| kupari | $8{,}96$ |",
+   "text": "Opiskelija haluaa selvittää, mistä metallista samanlaiset ruuvit on tehty. Kahdenkymmenen ruuvin yhteismassa on $96\\,\\text{g}$. Mittalasissa on vettä $50{,}0\\,\\text{ml}$, ja kun ruuvit upotetaan veteen, pinta nousee lukemaan $62{,}5\\,\\text{ml}$. Mittalasin kummankin lukeman epävarmuus on $0{,}5\\,\\text{ml}$.\n\n| aine | $\\rho\\ (\\text{g/cm}^3)$ |\n|---|---|\n| alumiini | $2{,}70$ |\n| teräs | $7{,}85$ |\n| messinki | $8{,}5$ |\n| kupari | $8{,}96$ |",
    "parts": [
     {
      "id": "a",

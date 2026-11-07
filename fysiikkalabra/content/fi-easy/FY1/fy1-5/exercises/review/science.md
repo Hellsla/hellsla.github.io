@@ -1,18 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: b092bb5587c87c57
-Mode: full (translation review against the reviewed Finnish set; new task fy1-5-L2-08)
-Round 2
+CONTENT-HASH: 5f14b6e77e1df132
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
-(none)
-
-## Fixed
-(none needed: L2-08 already matched fi in every number and was clearer than fi: shorter sentences)
+- none
 
 ## Polish
-(none)
+- none that affect correctness
 
 ## Checked
-- L2-08 compared with content/fi: same id, level, kinds, answer "C", exactly one correct option (pick-back); texts, feedback, solution numbers (6.0 m, 4.0 s, 1.0 m/s, 6.0 s, 10 s, 12 m) identical.
-- Re-derived: return 6.0 m / 1.0 m/s = 6.0 s, arrival at 4.0 s + 6.0 s = 10 s; only graph C (6 m flat to 4 s, then down to 0 m at 10 s) fits; A rises to 12 m, B is (t, v), D is distance from 0 to 6 m.
-- All four pick-* figure descriptions in figures.json translated and match the fi captions (points, grid 1 s / 2 m / 0.25 m/s); check_i18n.py: nothing for fy1-5; build.py fy1-5 succeeds.
+- diff since edb368de4 (exercises.json, solutions.md, answers.py): Voyager task 150 AU: (150-119,0)/0,0088602 = 3498,8 d -> 3500 d (recomputed, date June 2028), model vs JPL 1 AU remark, 41,6 h sig-fig wording, uncertainty notation Delta t, option B feedback, answers.py
+- numbers recomputed independently in Python

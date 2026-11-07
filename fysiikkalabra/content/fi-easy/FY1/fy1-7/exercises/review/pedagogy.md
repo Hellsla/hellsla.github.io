@@ -1,18 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: e49c387515a0461e
-Mode: delta (new task L2-08, translation against reviewed fi)
-Round 2
+CONTENT-HASH: d231a9d1d2b474fc
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-3 diff since the round-2 commit only)
 
 ## Blocking
-(none)
-
-## Fixed
-(none needed)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- Task text is natural plain Finnish: situation and data first, question as its own sentence, prompt separate; items as separate paragraphs.
-- Solution has conversions one per line, then densities, then the order and reasoning; followable step by step.
-- fi-easy: short sentences, split closing remarks per NOTES.md section 12; no Finnish in en.
+- exercises.json, solutions.md, answers.py: same sig-fig fix as Finnish; clear and consistent.

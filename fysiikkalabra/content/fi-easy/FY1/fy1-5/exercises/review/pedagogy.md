@@ -1,16 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: b092bb5587c87c57
-Mode: full (translation review against the reviewed Finnish set; new task fy1-5-L2-08)
-Round 2
+CONTENT-HASH: 5f14b6e77e1df132
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- Unit substitution written as a fraction of fractions (AU : (1/86400 vrk)) is a little heavy for fi-easy; acceptable.
 
 ## Checked
-- L2-08 keeps the YO-type graph choice (Kuvaajan valinta): same four figure options, each distractor with its own misconception (rising line, (t, v) instead of (t, s), distance instead of position) and feedback that repairs it without naming the right letter in the wrong options.
-- Language: selkosuomi, short sentences, one idea per sentence; same physics as fi.
-- Level 2, kind tags graph and concept, and task order identical to fi; the solution has Find, Principle, Model answer and Reading the graph like the other tasks.
-- Figure descriptions give a reader who cannot see the graph the same data as the picture and do not reveal the answer.
+- exercises.json, solutions.md, answers.py (units in math mode; extra feedback that negative velocity rules out option B; Voyager 3500 d, June 2028, 31,0 AU / 0,0088602 = 3499 d; unit-substitution step).

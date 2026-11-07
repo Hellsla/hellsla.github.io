@@ -21,7 +21,7 @@ T2 = [0, 10, 20, 30, 40, 50]; L2 = [15.0, 13.9, 12.6, 11.5, 10.4, 9.1]
 
 def candle():
     f = Fig("fy1-k2-graph", 420, "Kuvaaja: kynttilän pituus L senttimetreinä ajan t funktiona minuutteina. Kuusi mittauspistettä 15,0 senttimetristä "
-            "9,1 senttimetriin asettuvat laskevalle suoralle. Suoralta on luettu pisteet (0 min; 15,0 cm) ja (51 min; 9,0 cm).")
+            "9,1 senttimetriin asettuu laskevalle suoralle. Suoralta on luettu pisteet (0 min; 15,0 cm) ja (51 min; 9,0 cm).")
     ax = Axes(f, (80, 370), (470, 70), x=(0, 60), y=(0, 16), xticks=[0, 10, 20, 30, 40, 50, 60], yticks=[0, 4, 8, 12, 16],
               xlabel=r"t\ (\text{min})", ylabel=r"L\ (\text{cm})")
     ax.line([(0, 15.0), (58, 15.0 - 6.0 / 51 * 58)], INK, 3)
@@ -73,7 +73,7 @@ N7 = [100, 200, 300, 400, 500]; D7 = [10, 21, 30, 41, 51]
 
 def paper():
     f = Fig("fy1-k7-graph", 420, "Kuvaaja: arkkipinon paksuus d millimetreinä arkkimäärän N funktiona. Viisi pistettä sadasta viiteensataan arkkiin "
-            "ovat origon kautta kulkevalla suoralla; suoralta on luettu piste (500; 51 mm).")
+            "on origon kautta kulkevalla suoralla; suoralta on luettu piste (500; 51 mm).")
     ax = Axes(f, (80, 370), (500, 70), x=(0, 550), y=(0, 70), xticks=[0, 100, 200, 300, 400, 500], yticks=[0, 10, 20, 30, 40, 50, 60, 70],
               xlabel=r"N", ylabel=r"d\ (\text{mm})")
     ax.line([(0, 0), (540, 51 / 500 * 540)], INK, 3)

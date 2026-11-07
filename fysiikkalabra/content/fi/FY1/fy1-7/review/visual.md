@@ -1,10 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 610e1dfc142402cf
+CONTENT-HASH: 2f4ee739ed45e9bf
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-3 diff since the round-2 commit only)
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] top-390/top-1280 — the title formula is set in KaTeX serif at a slightly larger optical size than the heading font; reads clearly and is a consequence of the project-wide all-LaTeX rule, so nothing to change.
+- none
 
 ## Checked
-batch delta review: opened fy1-7-top-390 (and top-1280 for fy2-5, fy3-6); the title formula renders as KaTeX (no red source), on one block with the heading, nothing clipped, no overflow, breadcrumb legible; the rest of the lesson is unchanged by the diff.
+- git diff edb368de4 of the part's files (fi fy1-7 lesson): hero alt text (figures.py, figures.json, rendered aria-label) no longer names the metals, matches the Finnish fix in en and fi-easy; hook text, table note about temperature/wood (units LaTeX), second section title, density-estimate note in inquiry.
+- source diff only (text, alt text, numbers); no figure geometry or layout changed, so no new captures were opened

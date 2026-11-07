@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 086a9e4f0d92d6a0
+CONTENT-HASH: eec42dc6115fb05b
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
+- none
 
 ## Polish
-- Viivain on suoran rinnalla eikä sen kohdalla; viivaimen reuna suoran alla kertoisi selvemmin, että suora on vedetty sillä.
+- The model-types sentence is dense (fysikaalinen, graafinen, matemaattinen, kvantitatiivinen in one sentence); acceptable, could be split.
 
 ## Checked
-batch delta review: uusi tekstitön avauskuva (data-fig="hero") Miksi-kysymyksen alla, kaappaukset 1200 ja 360 px sekä SVG. Ruutupaperi, mittauspisteet virhepalkkeineen hieman suoran molemmin puolin, yksi sovitettu suora, viivain, kynä, kumi ja laskin: kysymyksen tilanne täsmälleen. Hyvä, siisti yksityiskohtaisuus; luettava 360 px:ssä. Aria-label vastaa kuvaa, ei tekstiä, värit figuuripaletista.
+- Lesson diff: inquiry.json (cart 'tönäistiin ... liikkui tasaisesti' justifies the line through origin), lesson.md (model types, interpolation/extrapolation, example data written as exact 0 min / 20 °C / 60 °C).

@@ -1,11 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: f2c08e3126eb44f3
+CONTENT-HASH: 530cc5a1ca475aac
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- batch delta review: opened the captures of the changed passages (theory-1280 / example-390), source diff read; no figure changed; text-only edits render cleanly, no clipping, no horizontal overflow, no inline formula wrapped.
+- figures.py velocity arrow blue and s dimension grey, lesson.md s-min result wording, source-criticism sentence, objective-recording sentence, (s2-s1):(t2-t1) notation, inquiry.json.
+- No captures opened (light mode, judged from the diff). Fi-easy: sentences stay short and plain, notation and units in LaTeX with decimal comma, changes match the Finnish fix.

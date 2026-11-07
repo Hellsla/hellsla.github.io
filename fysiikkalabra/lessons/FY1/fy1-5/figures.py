@@ -41,7 +41,7 @@ def cart(f, cx, cy):
 
 
 def motion():
-    f = Fig("fy15-motion", 330, "Liikekuva, jossa sama kärry on piirretty viiden peräkkäisen sekunnin kohdalle ruudulle 0 s, 1 s, 2 s, 3 s ja 4 s. "
+    f = Fig("fy15-motion", 330, "Liikekuva, jossa sama kärry on piirretty viidelle peräkkäiselle hetkelle 0 s, 1 s, 2 s, 3 s ja 4 s. "
             "Kärryjen välit ovat yhtä pitkät, ja jokaisen välin alla on yhtä pitkä sulku Δs: tasaisessa liikkeessä kappale kulkee yhtä pitkissä "
             "ajoissa yhtä pitkät matkat. Välit on piirretty mittakaavassa, kärryt ovat samankokoisia.")
     ground = 150
@@ -51,8 +51,8 @@ def motion():
         cart(f, x, ground)
         f.line(x, ground, x, ground + 12, INK, 2)
         f.tex(x, ground + 36, r"t = 0\,\text{s}" if i == 0 else rf"{i}\,\text{{s}}", "middle", w=100 if i == 0 else 60)
-    f.arrow(xs[0] + 6, 70, xs[0] + 66, 70, INK, 3, 14)
-    f.tex(xs[0] + 36, 46, "v", "middle")
+    f.arrow(xs[0] + 6, 70, xs[0] + 66, 70, COLD, 3, 14)                  # velocity is blue (NOTES.md §3)
+    f.tex(xs[0] + 36, 46, "v", "middle", COLD)
     for a, b in zip(xs, xs[1:]):
         f.path(f"M{a},{ground + 62} V{ground + 74} H{b} V{ground + 62}", stroke=MUTED, w=2.5)
         f.tex((a + b) / 2, ground + 100, r"\Delta s", "middle")

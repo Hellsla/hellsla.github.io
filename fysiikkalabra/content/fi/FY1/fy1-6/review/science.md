@@ -1,13 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 75cb60ff6e1650d8
-
-Round 2: check-c2 prompt now "Levosta pudotetun, vapaasti putoavan pallon"; exit question replaced by a Moon question. The round-1 blocking item is fixed.
+CONTENT-HASH: 8df0fe9533bdd32b
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
-(none)
+- none
+
 ## Polish
-- inquiry.json:493 — "Matkakin kasvaa joka sekunti" is trivially true; the point is that the distance fallen in each second grows ("Joka sekunnin aikana kuljettu matka kasvaa"); in the first second it is about 4,9 m, not 9,81 m.
+- none
+
 ## Checked
-- check-c2: start from rest now stated, so v = g t in the feedbacks holds: 9,81 · 3,0 = 29,43 ≈ 29,4 m/s, 2 · 9,81 = 19,62 ≈ 19,6 m/s; exactly one correct option.
-- New exit question: from rest stated; Moon 1,62 · 3,0 = 4,86 ≈ 4,9 m/s, Earth 9,81 · 3,0 = 29,43 ≈ 29 m/s, ratio 9,81/1,62 = 6,06 ≈ 6,1; v ∝ g at fixed t right; g_Moon = 1,62 m/s² correct.
-- Count 1 matches "Lopuksi yksi".
+- diff sim.js (velocity arrows VEL blue; colours only, physics unchanged), exit-ticket.json, lesson.md ("metriä sekunnissa toiseen"), inquiry.json (fit line colour), lesson-answers.py.
+- Recomputed: 9,81 : 1,62 = 6,056 → 6,06 (three figures, as in g); 1,62·3,0 = 4,9 m/s and 9,81·3,0 = 29 m/s unchanged.

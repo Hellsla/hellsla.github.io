@@ -1,11 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 7ab121a011b07a5f
+CONTENT-HASH: 7f6d335106248272
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] lesson.md/inquiry.json — lehden nimi 'Nature Astronomy' on roomalaisella, fy1-2:n lähdemerkinnässä kursiivilla — yhtenäistä kursiiviksi (*Nature Astronomy*).
 
 ## Checked
-- batch delta review: opened fy1-5-1280-0.png and fy1-5-360-0.png (photo floated or inline in the column, no clipping or horizontal overflow, credit line present); alt text and caption read against the picture and the neighbouring paragraph; no number with a unit in the new caption or alt text.
+- fy1-5 lesson.md, inquiry.json; kuvien osalta lähdekoodi/SVG (ei kuvakaappauksia, kevyt katselmointi)
+- Voyager 2 -esimerkki: 119,0 AU, 144,89 AU ja yksikkömuunnos sijoittamalla 1 km = 1/149 597 870,7 AU ja 1 s = 1/86 400 vrk ovat luettavia; vertailu JPL:n etäisyyteen Maasta selitetty.

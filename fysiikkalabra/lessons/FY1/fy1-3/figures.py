@@ -69,7 +69,7 @@ def _axis(f, X, ya, lo, hi, ticks, title=r"t\ (\text{s})", ext=24):
 
 
 def error_types():
-    f = Fig("fy13-err", 400, "Kaavakuva samasta mittauksesta kahdella tavalla, aikaakseli mittakaavassa. Ylhäällä on satunnaisvirhe: "
+    f = Fig("fy13-err", 400, "Kaavakuva samasta mittauksesta kahdella tavalla, aika-akseli mittakaavassa. Ylhäällä on satunnaisvirhe: "
             "kymmenen tulosta hajaantuu oikean arvon 2,40 s molemmin puolin, ja keskiarvo 2,41 s on lähellä oikeaa arvoa. "
             "Alhaalla on systemaattinen virhe: kymmenen tulosta on tiiviissä ryhmässä, mutta ryhmä on kokonaan oikean arvon "
             "oikealla puolella ja keskiarvo 2,59 s on noin 0,19 s liian suuri.")

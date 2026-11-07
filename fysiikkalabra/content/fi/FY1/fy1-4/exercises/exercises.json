@@ -20,7 +20,7 @@
     {
       "id": "fy1-4-L1-03",
       "level": 1,
-      "text": "Nurmikon pituutta $h$ seurattiin vuorokausien $t$ funktiona, ja sovitettu suora on $h = 0{,}60\\,\\tfrac{\\text{cm}}{\\text{vrk}} \\cdot t + 4{,}0\\,\\text{cm}$. Monenako vuorokautena mittauksen alusta nurmikko on $10\\,\\text{cm}$ pitkä? Anna vastaus vuorokausina.",
+      "text": "Nurmikon pituutta $h$ seurattiin vuorokausien $t$ funktiona, ja sovitettu suora on $h = 0{,}60\\,\\tfrac{\\text{cm}}{\\text{vrk}} \\cdot t + 4{,}0\\,\\text{cm}$. Kuinka monen vuorokauden kuluttua mittauksen alusta nurmikko on $10\\,\\text{cm}$ pitkä? Anna vastaus vuorokausina.",
       "answer": 10,
       "unit": "vrk",
       "tolerance": 0.02
@@ -44,7 +44,7 @@
     {
       "id": "fy1-4-L1-06",
       "level": 1,
-      "text": "Kokeessa saatiin kuusi mittauspistettä, jotka asettuvat likimain suoralle mutta hajoavat sen ympärille mittausepävarmuuden vuoksi. Mikä seuraavista kuvaa oikein, miten pisteisiin sovitetaan suora?",
+      "text": "Kokeessa saatiin kuusi mittauspistettä, jotka asettuvat likimain suoralle mutta ovat hajallaan sen ympärillä mittausepävarmuuden vuoksi. Mikä seuraavista kuvaa oikein, miten pisteisiin sovitetaan suora?",
       "kind": [
         "concept"
       ],
@@ -63,7 +63,7 @@
         },
         {
           "text": "Suora piirretään ensimmäisen ja viimeisen pisteen kautta, koska ne rajaavat mittausalueen.",
-          "feedback": "Yksittäisessä pisteessä on yhtä paljon hajontaa kuin muissakin. Jos suora sidotaan kahteen päätepisteeseen, niiden virhe siirtyy koko suoraan, vaikka muut pisteet kertovat suoran paikasta yhtä paljon."
+          "feedback": "Yksittäisessä pisteessä on yhtä lailla mittausepävarmuutta kuin muissakin. Jos suora sidotaan kahteen päätepisteeseen, niiden virhe siirtyy koko suoraan, vaikka muut pisteet kertovat suoran paikasta yhtä paljon."
         },
         {
           "text": "Pisteet yhdistetään murtoviivaksi, koska jokainen mittaus on yhtä tärkeä.",
@@ -75,7 +75,7 @@
       "id": "fy1-4-L1-07",
       "level": 1,
       "core": true,
-      "text": "Saman metallin eri kokoisten kappaleiden massa $m$ grammoina mitattiin tilavuuden $V$ funktiona kuutiosenttimetreinä. Mittauspisteisiin sovitettu suora kulkee origon kautta, ja sen kulmakerroin on $7{,}9$. Mitä kulmakerroin kertoo?",
+      "text": "Saman metallin erikokoisten kappaleiden massa $m$ grammoina mitattiin tilavuuden $V$ funktiona kuutiosenttimetreinä. Mittauspisteisiin sovitettu suora kulkee origon kautta, ja sen kulmakerroin on $7{,}9$. Mitä kulmakerroin kertoo?",
       "kind": [
         "concept"
       ],
@@ -98,7 +98,7 @@
         },
         {
           "text": "Kulmakerroin on pelkkä luku ilman yksikköä, koska se kertoo vain suoran jyrkkyyden.",
-          "feedback": "Kulmakertoimella on yksikkö, jos suureilla on yksiköt. Se on jakolaskun $\\Delta y : \\Delta x$ tulos, ja siitä saa juuri fysikaalisen merkityksen, esimerkiksi tiheyden."
+          "feedback": "Kulmakertoimella on yksikkö, kun akselien suureilla on eri yksiköt. Se on jakolaskun $\\Delta y : \\Delta x$ tulos, ja siitä saa juuri fysikaalisen merkityksen, esimerkiksi tiheyden."
         }
       ]
     },
@@ -152,7 +152,7 @@
     {
       "id": "fy1-4-L2-05",
       "level": 2,
-      "text": "Teräsjousesta ripustettiin eri massoja ja mitattiin jousen venymä $x$ kuorman massan $m$ funktiona. Piirrä mittauspisteistä kuvaaja, sovita pisteisiin suora ja määritä sen kulmakerroin. Kuinka monta millimetriä jousi venyy yhtä lisägrammaa kohti? Anna vastaus yksikössä mm/g.",
+      "text": "Teräsjouseen ripustettiin erimassaisia punnuksia ja mitattiin jousen venymä $x$ kuorman massan $m$ funktiona. Piirrä mittauspisteistä kuvaaja, sovita pisteisiin suora ja määritä sen kulmakerroin. Kuinka monta millimetriä jousi venyy yhtä lisägrammaa kohti? Anna vastaus yksikössä mm/g.",
       "kind": [
         "data",
         "graph"
@@ -244,7 +244,7 @@
     {
       "id": "fy1-4-L2-07",
       "level": 2,
-      "text": "Kahdesta tasalaatuisesta metallista, A:sta ja B:stä, valmistettiin kummastakin eri tilavuuksisia saman aineen kappaleita, ja jokaisen massa punnittiin.\n\nPiirrä kummankin aineen mittauspisteistä kuvaaja samaan koordinaatistoon ja sovita kumpaankin oma suora. Kuinka monta kertaa suurempi on B:n suoran kulmakerroin kuin A:n? Mitä kulmakerroin tässä kuvaajassa tarkoittaa, ja kumpi aine on tiheämpi?",
+      "text": "Kahdesta tasalaatuisesta metallista, A:sta ja B:stä, valmistettiin kummastakin useita eritilavuuksisia kappaleita, ja jokaisen kappaleen massa punnittiin.\n\nPiirrä kummankin aineen mittauspisteistä kuvaaja samaan koordinaatistoon ja sovita kumpaankin oma suora. Kuinka monta kertaa suurempi on B:n suoran kulmakerroin kuin A:n? Mitä kulmakerroin tässä kuvaajassa tarkoittaa, ja kumpi aine on tiheämpi?",
       "kind": [
         "data",
         "graph",
@@ -301,7 +301,7 @@
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Rivi 1: Sovitetulta suoralta luetaan kaksi kaukana toisistaan olevaa pistettä $(2{,}0\\,\\text{min};\\ 5{,}0\\,\\textsf{l})$ ja $(10{,}0\\,\\text{min};\\ 17{,}0\\,\\textsf{l})$.",
+          "text": "Rivi 1: Sovitetulta suoralta luetaan pisteet $(2{,}0\\,\\text{min};\\ 5{,}0\\,\\textsf{l})$ ja $(10{,}0\\,\\text{min};\\ 17{,}0\\,\\textsf{l})$.",
           "feedback": "Rivi 1 on oikein. Pisteet luetaan sovitetulta suoralta eikä mittauspisteistä, ja ne ovat kaukana toisistaan, jolloin lukemavirhe vaikuttaa kulmakertoimeen vähän. Virhe on jossakin toisessa rivissä."
         },
         {
@@ -310,7 +310,7 @@
         },
         {
           "text": "Rivi 3: $\\Delta t = 10{,}0\\,\\text{min} - 2{,}0\\,\\text{min} = 12{,}0\\,\\text{min}$",
-          "feedback": "Tämä rivi on virheellinen: erotus on $10{,}0\\,\\text{min} - 2{,}0\\,\\text{min} = 8{,}0\\,\\text{min}$. Luku $12{,}0$ syntyy, kun aikoja ei vähennetä vaan lasketaan yhteen ($10{,}0 + 2{,}0$), tai kun ajan muutokseen kopioidaan tilavuuden muutoksen luku. Kulmakertoimen nimittäjässä on aina saman kahden pisteen $x$-arvojen erotus.",
+          "feedback": "Tämä rivi on virheellinen: erotus on $10{,}0\\,\\text{min} - 2{,}0\\,\\text{min} = 8{,}0\\,\\text{min}$. Luku $12{,}0$ syntyy, kun aikoja ei vähennetä vaan lasketaan yhteen ($10{,}0 + 2{,}0$), tai kun ajan muutokseen kopioidaan tilavuuden muutoksen luku. Kulmakertoimen nimittäjässä on aina samojen kahden pisteen $x$-arvojen erotus.",
           "correct": true
         },
         {
@@ -328,7 +328,7 @@
     {
       "id": "fy1-4-L3-01",
       "level": 3,
-      "text": "Oppilas mittasi kärryn paikkaa $s$ ajan $t$ funktiona, mutta käynnisti sekuntikellon vasta sitten, kun kärry oli jo kulkenut radan alusta.\n\nMittauspisteisiin sovitettu suora on $s = 0{,}85\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot t + 0{,}40\\,\\text{m}$, missä $s$ mitataan radan alusta.\n\nMikä aika sekuntikellon mukaan vastaa hetkeä, jolloin kärry oli radan alussa ($s = 0$)? Anna vastaus etumerkkeineen sekunteina ja perustele etumerkki.",
+      "text": "Oppilas mittasi kärryn paikkaa $s$ ajan $t$ funktiona, mutta käynnisti sekuntikellon vasta sitten, kun kärry oli jo lähtenyt radan alusta. Oletetaan, että kärry liikkui samalla tasaisella nopeudella jo ennen kellon käynnistämistä.\n\nMittauspisteisiin sovitettu suora on $s = 0{,}85\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot t + 0{,}40\\,\\text{m}$, missä $s$ mitataan radan alusta.\n\nMikä aika sekuntikellon mukaan vastaa hetkeä, jolloin kärry oli radan alussa ($s = 0$)? Anna vastaus etumerkkeineen sekunteina ja perustele etumerkki.",
       "answer": -0.47,
       "unit": "s",
       "tolerance": 0.02

@@ -217,12 +217,12 @@ Physics is an experimental science. Physical claims are judged by observations a
 <figure class="unit-photo"><img src="pics/fy1/ligo-scientists-laser-room.webp" alt="Two researchers in protective suits stand in a white clean room by a laser setup and look at it thoughtfully."><figcaption>Researchers examine the laser setup of the LIGO gravitational-wave detector in a clean room at Hanford, USA, in 2019.</figcaption></figure>
 
 ### Research question and hypothesis
-A research question is a question that a measurement can answer: "How does the distance travelled by a toy car depend on time?" The question "Which car is best?" is no good, because it cannot be measured.
+A research question is a question that a measurement can answer: "How does the travel time of a toy car depend on the length of the run?" The question "Which car is best?" is no good, because it cannot be measured.
 
-A **hypothesis** is a reasoned, testable prediction that answers the question. For example: "If the car moves at constant speed, the distance travelled is directly proportional to time, $s = vt$." A hypothesis must lead to something measurable that could turn out to be wrong. The prediction "the car goes somehow" is not a hypothesis, because no measurement can disprove it.
+A **hypothesis** is a reasoned, testable prediction that answers the research question. For example: "The car moves along the track at constant speed, so the distance it travels is directly proportional to time, $s = vt$." A hypothesis must lead to something measurable that could turn out to be wrong. The prediction "the car goes somehow" is not a hypothesis, because no measurement can disprove it.
 
 ### Variables
-A **variable** is a quantity whose value can vary in an investigation. In an experiment you change one variable, measure another and keep everything else the same:
+A **variable** is a quantity or other factor that can vary in an investigation. In an experiment you change one variable, measure another and keep everything else the same:
 
 - **independent variable**: the experimenter chooses its values, here the distance $s$
 - **dependent variable**: its value is read from an instrument, here the time $t$
@@ -274,24 +274,24 @@ If two variables change at the same time, for example the distance and the batte
   <rect x="108" y="148" width="36" height="18" rx="5" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
   <circle cx="110" cy="191" r="9" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <circle cx="144" cy="191" r="9" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <line x1="176" y1="160" x2="237" y2="160" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M250,160 L236,166.5 L236,153.5 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <foreignObject x="264" y="145.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$v$</div></foreignObject>
-  <line x1="72" y1="268" x2="372" y2="268" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="72" y1="258" x2="72" y2="278" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="372" y1="258" x2="372" y2="278" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
-  <foreignObject x="168" y="285.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$s = 2.00\,\text{m}$</div></foreignObject>
+  <line x1="176" y1="160" x2="237" y2="160" stroke="#1971c2" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M250,160 L236,166.5 L236,153.5 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <foreignObject x="264" y="145.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$v$</div></foreignObject>
+  <line x1="72" y1="268" x2="372" y2="268" stroke="#6b7480" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="72" y1="258" x2="72" y2="278" stroke="#6b7480" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="372" y1="258" x2="372" y2="278" stroke="#6b7480" stroke-width="2.5" stroke-linecap="butt"/>
+  <foreignObject x="168" y="285.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$s = 2.00\,\text{m}$</div></foreignObject>
 </svg>
 
 ### Planning before measuring
-Before measuring, the plan answers these questions: what is measured and with which instrument, which values are chosen for the independent variable and how many, how many repeats are made for each value, and what is kept constant. Try it out first with a trial run. It tells you whether the measurement is possible at all, and it gives a rough estimate of the result.
+Background information on the phenomenon and the methods is gathered before planning, with source criticism: judge who produced the information and why, how it is justified, whether it is up to date and whether other sources support it. Before measuring, the plan answers these questions: what is measured and with which instrument, which values are chosen for the independent variable and how many, how many repeats are made for each value, and what is kept constant. Try it out first with a trial run. It tells you whether the measurement is possible at all, and it gives a rough estimate of the result.
 
 Choose the measuring range so that the quantity being measured is clearly larger than the uncertainty of the measurement (see the section *Relative uncertainty and choosing the measuring range*). Choose several values at equal intervals, because one or two points do not show whether the dependence is a straight line.
 
 ### Lab record
 A **lab record** is a log made during the experiment, not from memory afterwards. It contains the research question, the date, the equipment and its accuracy, the controlled variables, the measurements as a table with units, and observations, for example "the car veered sideways".
 
-Record the readings as they are. Do not quietly delete or correct a measurement that looks odd: mark it and write down what happened. A short example:
+Record the readings as they are, so that the record stays objective and is not shaped by your own expectations. Do not quietly delete or correct a measurement that looks odd: mark it and write down what happened. A short example:
 
 | $s\ (\text{m})$ | $t_1\ (\text{s})$ | $t_2\ (\text{s})$ | $t_3\ (\text{s})$ | note |
 |---|---|---|---|---|
@@ -407,7 +407,7 @@ s_\text{min} &= v\, t_\text{min} \\
 
 <!-- vaihe -->
 
-**Result.** The distance must be at least $1.7\,\text{m}$. The result is rounded to two significant figures like the speed $0.42\,\text{m/s}$; the uncertainty $0.2\,\text{s}$ is given with one figure, and it gives only an estimate of the shortest time.
+**Result.** The distance must be at least $1.7\,\text{m}$. This is a design estimate whose precision is limited by the one-figure uncertainty $0.2\,\text{s}$. The minimum distance of a design estimate is therefore given to practical precision, here two figures like the speed $0.42\,\text{m/s}$, and rounded up so that the limit is surely met.
 
 <!-- vaihe -->
 

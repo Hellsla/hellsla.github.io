@@ -217,12 +217,12 @@ Fysiikka on kokeellinen tiede. Fysikaalisia väitteitä arvioidaan havaintojen j
 <figure class="unit-photo"><img src="pics/fy1/ligo-scientists-laser-room.webp" alt="Kaksi suojapukuista tutkijaa seisoo valkoisessa puhdastilassa laserlaitteiston äärellä ja katsoo sitä mietteliäänä."><figcaption>Tutkijat tarkastelevat LIGO-gravitaatioaaltoilmaisimen laserlaitteistoa puhdastilassa Hanfordissa Yhdysvalloissa vuonna 2019.</figcaption></figure>
 
 ### Tutkimuskysymys ja hypoteesi
-Tutkimuskysymys on kysymys, johon mittaus voi vastata: "Miten leluauton kulkema matka riippuu ajasta?" Kysymys "Mikä auto on paras?" ei kelpaa, koska sitä ei voi mitata.
+Tutkimuskysymys on kysymys, johon mittaus voi vastata: "Miten leluauton kulkuaika riippuu ajomatkan pituudesta?" Kysymys "Mikä auto on paras?" ei kelpaa, koska sitä ei voi mitata.
 
-**Hypoteesi** on perusteltu ja testattava ennuste kysymykseen. Esimerkiksi: "Jos auto liikkuu vakionopeudella, kulkema matka on suoraan verrannollinen aikaan, $s = vt$." Hypoteesista pitää seurata jotain mitattavaa, joka voi osoittautua vääräksi. Ennuste "auto kulkee jotenkin" ei ole hypoteesi, koska mikään mittaus ei kumoa sitä.
+**Hypoteesi** on perusteltu ja testattava ennuste, joka vastaa tutkimuskysymykseen. Esimerkiksi: "Auto liikkuu radalla vakionopeudella, joten sen kulkema matka on suoraan verrannollinen aikaan, $s = vt$." Hypoteesista pitää seurata jotain mitattavaa, joka voi osoittautua vääräksi. Ennuste "auto kulkee jotenkin" ei ole hypoteesi, koska mikään mittaus ei kumoa sitä.
 
 ### Muuttujat
-**Muuttuja** on suure, jonka arvo voi vaihdella tutkimuksessa. Kokeessa muutetaan yhtä muuttujaa, mitataan toista ja pidetään kaikki muut samoina:
+**Muuttuja** on suure tai muu tekijä, joka voi vaihdella tutkimuksessa. Kokeessa muutetaan yhtä muuttujaa, mitataan toista ja pidetään kaikki muut samoina:
 
 - **muutettava muuttuja**: kokeen tekijä valitsee sen arvot, tässä matka $s$
 - **mitattava muuttuja**: sen arvo luetaan mittarista, tässä aika $t$
@@ -274,24 +274,24 @@ Jos kaksi muuttujaa muuttuu yhtä aikaa, esimerkiksi matka ja paristot, tuloksen
   <rect x="108" y="148" width="36" height="18" rx="5" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
   <circle cx="110" cy="191" r="9" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <circle cx="144" cy="191" r="9" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <line x1="176" y1="160" x2="237" y2="160" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M250,160 L236,166.5 L236,153.5 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <foreignObject x="264" y="145.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$v$</div></foreignObject>
-  <line x1="72" y1="268" x2="372" y2="268" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="72" y1="258" x2="72" y2="278" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="372" y1="258" x2="372" y2="278" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
-  <foreignObject x="168" y="285.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$s = 2{,}00\,\text{m}$</div></foreignObject>
+  <line x1="176" y1="160" x2="237" y2="160" stroke="#1971c2" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M250,160 L236,166.5 L236,153.5 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <foreignObject x="264" y="145.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$v$</div></foreignObject>
+  <line x1="72" y1="268" x2="372" y2="268" stroke="#6b7480" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="72" y1="258" x2="72" y2="278" stroke="#6b7480" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="372" y1="258" x2="372" y2="278" stroke="#6b7480" stroke-width="2.5" stroke-linecap="butt"/>
+  <foreignObject x="168" y="285.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$s = 2{,}00\,\text{m}$</div></foreignObject>
 </svg>
 
 ### Suunnittelu ennen mittausta
-Suunnitelma vastaa ennen mittausta kysymyksiin: mitä mitataan ja millä välineellä, mitkä arvot muutettavalle muuttujalle valitaan ja kuinka monta, montako toistoa kustakin arvosta tehdään ja mitä pidetään vakiona. Kokeile ensin esikokeella. Se kertoo, onko mittaus ylipäätään mahdollinen, ja antaa karkean arvion tuloksesta.
+Taustatietoa ilmiöstä ja menetelmistä hankitaan ennen suunnittelua lähdekriittisesti: arvioi, kuka tiedon on tuottanut ja miksi, miten se perustellaan, onko se ajantasaista ja tukevatko muut lähteet sitä. Suunnitelma vastaa ennen mittausta kysymyksiin: mitä mitataan ja millä välineellä, mitkä arvot muutettavalle muuttujalle valitaan ja kuinka monta, montako toistoa kustakin arvosta tehdään ja mitä pidetään vakiona. Kokeile ensin esikokeella. Se kertoo, onko mittaus ylipäätään mahdollinen, ja antaa karkean arvion tuloksesta.
 
 Valitse mittausalue niin, että mitattava suure on selvästi suurempi kuin mittauksen epävarmuus (ks. kohta *Suhteellinen epävarmuus ja mittausalueen valinta*). Valitse arvoja tasavälein ja useita, koska yksi tai kaksi pistettä ei näytä, onko riippuvuus suora.
 
 ### Mittauspöytäkirja
 **Mittauspöytäkirja** on kirjaus, joka tehdään kokeen aikana, ei muistista jälkikäteen. Siihen kirjataan tutkimuskysymys, päivämäärä, välineet ja niiden tarkkuus, vakioidut asiat, mittaukset taulukkona yksiköineen sekä havainnot, esimerkiksi "auto kääntyi sivuun".
 
-Kirjaa lukemat sellaisenaan. Älä poista tai korjaa hiljaa mittausta, joka näyttää oudolta: merkitse se ja kirjaa, mitä silloin tapahtui. Lyhyt esimerkki:
+Kirjaa lukemat sellaisenaan, jotta kirjaus pysyy objektiivisena eikä muutu omien odotusten mukaiseksi. Älä poista tai korjaa hiljaa mittausta, joka näyttää oudolta: merkitse se ja kirjaa, mitä silloin tapahtui. Lyhyt esimerkki:
 
 | $s\ (\text{m})$ | $t_1\ (\text{s})$ | $t_2\ (\text{s})$ | $t_3\ (\text{s})$ | huomio |
 |---|---|---|---|---|
@@ -407,11 +407,11 @@ s_\text{min} &= v\, t_\text{min} \\
 
 <!-- vaihe -->
 
-**Tulos.** Matkan pitää olla vähintään $1{,}7\,\text{m}$. Tulos pyöristetään kahteen merkitsevään numeroon kuten nopeus $0{,}42\,\text{m/s}$; epävarmuus $0{,}2\,\text{s}$ on annettu yhdellä numerolla, ja se antaa vain arvion lyhimmästä ajasta.
+**Tulos.** Matkan pitää olla vähintään $1{,}7\,\text{m}$. Tämä on suunnitteluarvio, jonka tarkkuutta rajoittaa yhden numeron epävarmuus $0{,}2\,\text{s}$. Suunnitteluarvion vähimmäismatka ilmoitetaan siksi käytännön tarkkuudella, tässä kahdella numerolla kuten nopeus $0{,}42\,\text{m/s}$, ja pyöristetään ylöspäin, jotta raja varmasti täyttyy.
 
 <!-- vaihe -->
 
-**Järkevyys.** Matkalla $1{,}7\,\text{m}$ auton kulkuaika on noin $1{,}7\,\text{m} : 0{,}42\,\text{m/s} \approx 4{,}05\,\text{s}$, jolloin $\varepsilon = 0{,}2\,\text{s} : 4{,}05\,\text{s} \approx 4{,}9\,\%$ eli tasan rajan sisällä. Matkalla $0{,}50\,\text{m}$ aika olisi vain $1{,}2\,\text{s}$ ja epävarmuus noin $17\,\%$, ja siksi lyhyt matka oli huono valinta.
+**Järkevyys.** Matkalla $1{,}7\,\text{m}$ auton kulkuaika on noin $1{,}7\,\text{m} : 0{,}42\,\text{m/s} \approx 4{,}05\,\text{s}$, jolloin $\varepsilon = 0{,}2\,\text{s} : 4{,}05\,\text{s} \approx 4{,}9\,\%$ eli juuri ja juuri rajan sisällä. Matkalla $0{,}50\,\text{m}$ aika olisi vain $1{,}2\,\text{s}$ ja epävarmuus noin $17\,\%$, ja siksi lyhyt matka olisi huono valinta.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että tutkimus on epäonnistunut, jos mittaus ei tue hypoteesia. Näin ei ole: jos mittaus kumoaa hypoteesin, tutkija tietää jotakin, mitä hän ei aiemmin tiennyt. Epäonnistunut tutkimus on sellainen, josta ei voi päätellä mitään, koska muuttujia ei ole hallittu tai mittaukset ovat liian epävarmoja.

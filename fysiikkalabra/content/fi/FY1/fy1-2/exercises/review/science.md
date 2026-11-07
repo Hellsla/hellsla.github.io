@@ -1,16 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: d91dc312a9901fe7
+CONTENT-HASH: 536d455eb8f2210b
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
+- none
 
 ## Polish
-- content/fi/FY1/fy1-2/exercises/exercises.json:68 (L1-06) — Carried over: "kilogrammasta etuliitteellä muodostettu osa" does not hold, because the gram itself carries no prefix. — Write: "Gramma on kilogramman tuhannesosa; massan etuliitteet liitetään grammaan."
-- content/fi/FY1/fy1-2/exercises/solutions.md:54 (L1-06) — Carried over: "muodostaa perusyksikön osan tai monikerran", but prefixes apply to every SI unit (kN, MJ). — Write "yksikön".
-- content/fi/FY1/fy1-2/exercises/exercises.json:119 (L1-09) — The stem defines the symbols s and t, but the options use only numbers with units, so the symbols are not needed. — Optional: drop "s" and "t", or write the options as s/t, s·t and so on.
+- L1-02: "384 400 km on … tarkka arvo" follows the teacher's convention, but a measured mean distance is not exact. "käsitellään tarkkana" would be better.
 
 ## Checked
-- The hash was d91dc312a9901fe7 at the start and at the end.
-- L1-09 (new, type 7): exactly one option, 12 km / 3,0 h, has the unit km/h. The others are km·h, h/km (time per distance, the inverse of speed, as the feedback says correctly) and km/h² (the acceleration type; acceptable in FY1, where v = gt is taught). Every feedback names the real unit, and the Mallivastaus gives the same reasons.
-- All 18 numeric answers recomputed with my own formulas match exercises.json and answers.py. These include L2-05 (the ship at 19,55 m/s is the fastest), L3-01 (63 247 AU), L3-03 (40,20 h), L3-04 (2,00 s) and L3-05 (7,647 h − 6,111 h = 1,536 h).
-- The L1-04 figure ends at 2,0 cm and 13,6 cm, which gives 116 mm.
-- The other tasks are unchanged and were PASS before.
+- diff exercises.json, solutions.md, answers.py (L1-02 rounding reason, L3-05).
+- Recomputed L3-05: t_A = 2,34·10⁶ J : 85,0 W = 7,647 h, t_B = 6,111 h, difference 1,536 h → 1,5 h (key 1.5, tolerance 0,03 covers 1,455–1,545).

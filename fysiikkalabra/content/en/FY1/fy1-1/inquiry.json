@@ -162,7 +162,7 @@
             "feedback": "You added the exponents. The difference of orders of magnitude is the difference of the exponents: $-10 - (-15) = -10 + 15 = 5$."
           }
         ],
-        "solution": "**Given:** from the table, in the row of the hydrogen atom $n_\\text{atom} = -10$ and in the row of the proton, that is, the nucleus of the hydrogen atom, $n_\\text{proton} = -15$\n\n**Find:** the difference of the orders of magnitude, that is, the number of steps of powers of ten between the atom and its nucleus\n\n**Principle:** The exponent $n$ tells which power of ten the size is in. Each step from one power of ten to the next is a tenfold size, and the number of steps is the difference of the exponents, the smaller subtracted from the larger.\n\n**Formula:** $\\text{steps} = n_\\text{atom} - n_\\text{proton}$\n\n**Conversions:** Not needed: the exponents are numbers without a unit.\n\n**Substitution:** $\\text{steps} = -10 - (-15) = -10 + 15 = 5$\n\n**Answer:** $5$ orders of magnitude; the number is an integer, because $n$ is rounded to a whole power of ten.\n\n**Reasonableness:** Five steps mean about $10^{5}$, that is, a hundred-thousandfold size. The exact ratio is $1.1\\cdot10^{-10}\\,\\text{m} : 1.7\\cdot10^{-15}\\,\\text{m} \\approx 6.5\\cdot10^{4}$, which is close to that. The difference is much smaller than the ten orders of magnitude between an atom and a person."
+        "solution": "**Given:** from the table, in the row of the hydrogen atom $n_\\text{atom} = -10$ and in the row of the proton, that is, the nucleus of the hydrogen atom, $n_\\text{proton} = -15$\n\n**Find:** the difference of the orders of magnitude, that is, the number of steps of powers of ten between the atom and its nucleus\n\n**Principle:** The exponent $n$ tells which power of ten the size is in. Each step from one power of ten to the next is a tenfold size, and the number of steps is the difference of the exponents, the smaller subtracted from the larger.\n\n**Formula:** $\\text{steps} = n_\\text{atom} - n_\\text{proton}$\n\n**Conversions:** Not needed: the exponents are numbers without a unit.\n\n**Substitution:** $\\text{steps} = -10 - (-15) = -10 + 15 = 5$\n\n**Answer:** $5$ orders of magnitude; the number is an integer, because the exponents $n$ of the orders of magnitude in the table are integers.\n\n**Reasonableness:** Five steps mean about $10^{5}$, that is, a hundred-thousandfold size. The exact ratio is $1.1\\cdot10^{-10}\\,\\text{m} : 1.7\\cdot10^{-15}\\,\\text{m} \\approx 6.5\\cdot10^{4}$, which is close to that. The difference is much smaller than the ten orders of magnitude between an atom and a person."
       }
     },
     {
@@ -252,7 +252,7 @@
             "feedback": "You took the mean of the sizes in metres, which gives roughly half the size of the universe. With orders of magnitude, the midpoint is calculated as the mean of the exponents."
           }
         ],
-        "solution": "**Given:** from the table, in the row of the Planck length $n_\\text{min} = -35$ and in the row of the universe $n_\\text{max} = 27$\n\n**Find:** the exponent of the midpoint $n_\\text{mid}$\n\n**Principle:** The sizes are in many different powers of ten, so \"in the middle\" means the same number of orders of magnitude from each end. It is the mean of the exponents, not the mean of the sizes in metres.\n\n**Formula:** $n_\\text{mid} = \\dfrac{n_\\text{min} + n_\\text{max}}{2}$\n\n**Conversions:** Not needed: the exponents are numbers without a unit.\n\n**Substitution:** $n_\\text{mid} = \\dfrac{-35 + 27}{2} = \\dfrac{-8}{2} = -4$\n\n**Answer:** $-4$, that is, a size of about $10^{-4}\\,\\text{m}$; an integer, because the exponents are integers. When you zoom here, the nearest object in the simulation is a hair, whose $n = -4$: the calculated midpoint and the object in the simulation agree.\n\n**Reasonableness:** From the midpoint to the Planck length it is $-4 - (-35) = 31$ orders of magnitude and to the universe $27 - (-4) = 31$ orders of magnitude, so the gap is symmetric. The size $10^{-4}\\,\\text{m}$ is a tenth of a millimetre, about the thickness of a hair."
+        "solution": "**Given:** from the table, in the row of the Planck length $n_\\text{min} = -35$ and in the row of the universe $n_\\text{max} = 27$\n\n**Find:** the exponent of the midpoint $n_\\text{mid}$\n\n**Principle:** The sizes are in many different powers of ten, so \"in the middle\" means the same number of orders of magnitude from each end. It is the mean of the exponents, not the mean of the sizes in metres.\n\n**Formula:** $n_\\text{mid} = \\dfrac{n_\\text{min} + n_\\text{max}}{2}$\n\n**Conversions:** Not needed: the exponents are numbers without a unit.\n\n**Substitution:** $n_\\text{mid} = \\dfrac{-35 + 27}{2} = \\dfrac{-8}{2} = -4$\n\n**Answer:** $-4$, that is, a size of about $10^{-4}\\,\\text{m}$; here an integer, because $(-35+27)/2=-4$. When you zoom here, the nearest object in the simulation is a hair, whose $n = -4$: the calculated midpoint and the object in the simulation agree.\n\n**Reasonableness:** From the midpoint to the Planck length it is $-4 - (-35) = 31$ orders of magnitude and to the universe $27 - (-4) = 31$ orders of magnitude, so the gap is symmetric. The size $10^{-4}\\,\\text{m}$ is a tenth of a millimetre, about the thickness of a hair."
       },
       "optional": true
     },
@@ -261,7 +261,7 @@
       "stage": "tutki",
       "type": "interpret",
       "title": "How were the sizes found out?",
-      "text": "No size in the simulation is the result of a single tape measure. Every size has been inferred from measurements and a model, and the method varies with the scale.\n\n- **Proton**, $1.7\\cdot10^{-15}\\,\\text{m}$: scattering of electrons from protons and measuring the energy levels of atoms.\n- **Virus**, $1.0\\cdot10^{-7}\\,\\text{m}$: the electron microscope.\n- **Earth**, $1.27\\cdot10^{7}\\,\\text{m}$: geodetic measurements and satellites.\n- **Radius of Earth's orbit (1 AU)**, $1.5\\cdot10^{11}\\,\\text{m}$: radar measurements of planets and probes.\n- **Nearest star**, $4.0\\cdot10^{16}\\,\\text{m}$: the apparent shift of the star as Earth orbits the Sun (parallax).\n- **Universe**, $8.8\\cdot10^{26}\\,\\text{m}$: observations of galaxies and a model of expansion.",
+      "text": "No size in the simulation is the result of a single tape measure. Every size has been inferred from measurements and a model, and the method varies with the scale.\n\n- **Proton**, $1.7\\cdot10^{-15}\\,\\text{m}$: scattering of electrons from protons and measuring the energy levels of atoms.\n- **Virus**, $1.0\\cdot10^{-7}\\,\\text{m}$: the electron microscope.\n- **Earth**, $1.27\\cdot10^{7}\\,\\text{m}$: geodetic measurements and satellites.\n- **Radius of Earth's orbit (1 AU)**, $1.5\\cdot10^{11}\\,\\text{m}$: radar measurements of planets and probes.\n- **Nearest star**, $4.0\\cdot10^{16}\\,\\text{m}$: the apparent shift of the star as Earth orbits the Sun (parallax).\n- **Observable universe**, $8.8\\cdot10^{26}\\,\\text{m}$: observations of galaxies and a model of expansion.",
       "question": {
         "type": "choice",
         "prompt": "A proton cannot be seen even with a powerful microscope. How, then, is its size known?",
@@ -272,12 +272,12 @@
           },
           {
             "text": "In experiments, particles have been fired at protons and the way they scatter has been measured. From a model one calculates what size the proton must be for the scattering to look like this.",
-            "feedback": "Correct. The size is the combined result of measurements and a model: the measurement tells how the particles are deflected, and the model tells what the deflection means for the size. That is why refining the model can change the size.",
+            "feedback": "Correct. The size is the combined result of measurements and a model: the measurement tells how the particles are deflected, and the model tells what the deflection means for the size. That is why refining the model can change the estimate of the proton's size inferred from the measurements.",
             "correct": true
           },
           {
             "text": "Physicists have agreed on the size by voting, because it cannot be measured.",
-            "feedback": "In physics, measurement decides the size, not a vote. Experiments are repeated in different laboratories, and results are accepted only when the methods give the same result."
+            "feedback": "In physics, measurement decides the size, not a vote. Experiments are repeated in different laboratories, and the agreement of the results of different methods is assessed taking their uncertainties into account."
           },
           {
             "text": "The size is calculated from theory alone, and no measurements are needed.",
@@ -332,7 +332,7 @@
         },
         {
           "text": "A planet.",
-          "feedback": "The mass of a planet is much smaller than that of a star: even the largest planet, Jupiter, has only about a thousandth of the mass of the Sun. The mass of the object is greater than that of the Sun, so it cannot be a planet."
+          "feedback": "The mass of a planet is much smaller than that of a star: the most massive planet of the Solar System, Jupiter, has only about a thousandth of the mass of the Sun. The mass of the object is greater than that of the Sun, so it cannot be a planet."
         },
         {
           "text": "A neutron star.",

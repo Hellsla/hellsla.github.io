@@ -1,19 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 97ba35b47f1bb414
+CONTENT-HASH: f7309186c3b74fca
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
-(none left)
-
-## Fixed
-- inquiry.json:11 — wrong English chapter title in the prior-knowledge list (see science.md).
-
-## Polish
 - none
 
+## Polish
+- Sim: orange = A and blue = B on ball, trail, graph and legend, but both velocity arrows are blue, so the arrow next to ball A is the same blue as ball B. Colour is not alone (position carries it), so not blocking; consider a one-line legend entry 'blue arrow = velocity' so students do not read it as ball B.
+
 ## Checked
-- Teaching sequence identical to the reviewed Finnish: hook, review of s = vt, two predictions revealed after the experiments, three experiments, fitted-line example data, conclusion, return to predictions, find-the-error, new situation, three levels, exit ticket.
-- English is natural and level-appropriate; sentences short and clear; instructions in imperative (*Press Drop*, *Choose the Environment*); sim labels (Drop, Moment t, Environment) agree with the prose.
-- Learn objectives now read as completions of "You can ..." and are parallel; the removed sentence about optional levels in the three-level intro agrees with the Finnish.
-- Hints go from a nudge to the formula to the substitution; mistake feedback names the actual error without giving the answer.
-- Reasonableness checks and significant-figure remarks kept as in the Finnish.
-- Misconception (heavy falls faster, g as a speed) addressed in lesson, find-the-error and level 2 of concept choices.
+- lesson.md, inquiry.json, exit-ticket.json, lesson-answers.py, assets/sims/fy1/fy1-6/sim.js diffs. Both velocity arrows are now one blue (book colour for velocity), distinguished by position beside ball A or B; exit ticket ratio 6.06; 'squared' read-aloud added.

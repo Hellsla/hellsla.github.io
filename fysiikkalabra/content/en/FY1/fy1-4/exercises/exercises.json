@@ -20,7 +20,7 @@
     {
       "id": "fy1-4-L1-03",
       "level": 1,
-      "text": "The height $h$ of a lawn was followed as a function of days $t$, and the fitted line is $h = 0.60\\,\\tfrac{\\text{cm}}{\\text{day}} \\cdot t + 4.0\\,\\text{cm}$. On which day from the start of the measurements is the lawn $10\\,\\text{cm}$ tall? Give the answer in days.",
+      "text": "The height $h$ of a lawn was followed as a function of days $t$, and the fitted line is $h = 0.60\\,\\tfrac{\\text{cm}}{\\text{day}} \\cdot t + 4.0\\,\\text{cm}$. How many days after the start of the measurements is the lawn $10\\,\\text{cm}$ tall? Give the answer in days.",
       "answer": 10,
       "unit": "days",
       "tolerance": 0.02
@@ -63,7 +63,7 @@
         },
         {
           "text": "The line is drawn through the first and the last point, because they mark the limits of the measured range.",
-          "feedback": "A single point has as much scatter as any other. If the line is tied to two end points, their error is carried over to the whole line, although the other points tell you about the position of the line just as much."
+          "feedback": "A single point has as much measurement uncertainty as any other. If the line is tied to two end points, their error is carried over to the whole line, although the other points tell you about the position of the line just as much."
         },
         {
           "text": "The points are joined into a broken line, because every measurement is equally important.",
@@ -98,7 +98,7 @@
         },
         {
           "text": "The slope is just a number without a unit, because it only tells you how steep the line is.",
-          "feedback": "The slope has a unit if the quantities have units. It is the result of the division $\\Delta y : \\Delta x$, and it gets its physical meaning from the unit, for example density."
+          "feedback": "The slope has a unit when the quantities on the axes have different units. It is the result of the division $\\Delta y : \\Delta x$, and it gets its physical meaning from the unit, for example density."
         }
       ]
     },
@@ -301,7 +301,7 @@
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Line 1: Two points far from each other are read from the fitted line: $(2.0\\,\\text{min};\\ 5.0\\,\\textsf{l})$ and $(10.0\\,\\text{min};\\ 17.0\\,\\textsf{l})$.",
+          "text": "Line 1: The points $(2.0\\,\\text{min};\\ 5.0\\,\\textsf{l})$ and $(10.0\\,\\text{min};\\ 17.0\\,\\textsf{l})$ are read from the fitted line.",
           "feedback": "Line 1 is correct. The points are read from the fitted line and not from the data points, and they are far apart, so a reading error affects the slope little. The error is on another line."
         },
         {
@@ -328,7 +328,7 @@
     {
       "id": "fy1-4-L3-01",
       "level": 3,
-      "text": "A student measured the position $s$ of a trolley as a function of time $t$, but started the stopwatch only when the trolley had already travelled some distance from the start of the track.\n\nThe line fitted to the data points is $s = 0.85\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot t + 0.40\\,\\text{m}$, where $s$ is measured from the start of the track.\n\nWhat time on the stopwatch corresponds to the moment when the trolley was at the start of the track ($s = 0$)? Give the answer in seconds with its sign and justify the sign.",
+      "text": "A student measured the position $s$ of a trolley as a function of time $t$, but started the stopwatch only when the trolley had already travelled some distance from the start of the track. Assume that the trolley moved at the same steady speed already before the stopwatch was started.\n\nThe line fitted to the data points is $s = 0.85\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot t + 0.40\\,\\text{m}$, where $s$ is measured from the start of the track.\n\nWhat time on the stopwatch corresponds to the moment when the trolley was at the start of the track ($s = 0$)? Give the answer in seconds with its sign and justify the sign.",
       "answer": -0.47,
       "unit": "s",
       "tolerance": 0.02

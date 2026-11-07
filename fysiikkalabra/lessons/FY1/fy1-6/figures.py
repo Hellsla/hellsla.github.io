@@ -12,7 +12,7 @@ def hero():
     """The chapter's opening illustration: on the airless Moon a hammer and a feather fall side by side, level at every moment."""
     f = H.hero("fy16-hero", "Kuvitus: astronautti Kuun harmaalla pinnalla mustaa taivasta vasten, taustalla kuumoduuli ja taivaalla Maa. "
                "Astronautti on pudottanut vasaran ja höyhenen samaan aikaan; haaleat välikuvat näyttävät, että ne ovat joka hetki samalla "
-               "korkeudella ja että niiden välimatkat kasvavat putoamisen aikana.")
+               "korkeudella ja että peräkkäisten välikuvien välit kasvavat putoamisen aikana.")
     H.space(f, seed=6, count=80)
     H.earth(f, "fy16h", 1060, 110, 62)
     f.path("M0,440 Q600,380 1200,450 V600 H0 Z", grad(f, "fy16h-ground", ALUMINIUM, METAL_EDGE))
@@ -84,10 +84,10 @@ def free_fall():
         f.tex(112, y, fi(t), "middle")
         _ball(f, f"fy16-b{t}", cx, y, 11, ALUMINIUM, IRON)
         if t:
-            f.arrow(cx, y + 14, cx, y + 14 + v * k, HEAT, 4, 12)
-            f.tex(cx + 24, y + 14 + v * k / 2, rf"v = {fi(v, 2 if t == 1 else 1)}\,\text{{m/s}}", "start", HEAT)
+            f.arrow(cx, y + 14, cx, y + 14 + v * k, COLD, 4, 12)
+            f.tex(cx + 24, y + 14 + v * k / 2, rf"v = {fi(v, 2 if t == 1 else 1)}\,\text{{m/s}}", "start", COLD)
         else:
-            f.tex(cx + 24, y, r"v = 0", "start", HEAT)
+            f.tex(cx + 24, y, r"v = 0", "start", COLD)
     # scale bar: 10 m of fall
     f.line(556, 156, 556, 156 + ppm * 10, INK, 2.5)
     f.line(548, 156, 564, 156, INK, 2); f.line(548, 156 + ppm * 10, 564, 156 + ppm * 10, INK, 2)
@@ -129,9 +129,9 @@ def same_fall():
         _ball(f, f"fy16-l{t}", xl, y, 10, ALUMINIUM, IRON)
         _ball(f, f"fy16-h{t}", xr, y, 16, ALUMINIUM, IRON)
         if t:
-            f.arrow(xl, y + 13, xl, y + 13 + v * k, HEAT, 4, 12)
-            f.arrow(xr, y + 19, xr, y + 19 + v * k, HEAT, 4, 12)
-    f.tex(xr + 38, y0 + ppm * 0.5 * G * 4 + 40, r"\text{sama nopeus}", "start", HEAT)
+            f.arrow(xl, y + 13, xl, y + 13 + v * k, COLD, 4, 12)
+            f.arrow(xr, y + 19, xr, y + 19 + v * k, COLD, 4, 12)
+    f.tex(xr + 38, y0 + ppm * 0.5 * G * 4 + 40, r"\text{sama nopeus}", "start", COLD)
     return f.svg()
 
 
@@ -143,9 +143,9 @@ def two_planets():
     ax = Axes(f, (96, 300), (470, 60), x=(0, 6), y=(0, 40), xticks=[1, 2, 3, 4, 5, 6], yticks=[5, 10, 15, 20, 25, 30, 35, 40],
               xlabel=r"t\ (\text{s})", ylabel=r"v\ (\text{m/s})", yfmt=lambda v: fi(v) if v % 10 == 0 else "")
     ax.line([(0, 0), (6, 24)], COLD, 3.5)
-    ax.line([(0, 0), (5, 40)], HEAT, 3.5)
+    ax.line([(0, 0), (5, 40)], COLD, 3.5, "12 7")     # both lines are velocities, so both blue; B dashed to tell them apart
     f.tex(ax.X(6) + 8, ax.Y(24), r"\text{A}", "start", COLD)
-    f.tex(ax.X(5) + 8, ax.Y(40) - 14, r"\text{B}", "start", HEAT)
+    f.tex(ax.X(5) + 8, ax.Y(40) - 14, r"\text{B}", "start", COLD)
     return f.svg()
 
 

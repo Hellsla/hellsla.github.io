@@ -1,17 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 8dee2b011f7eb733
+CONTENT-HASH: a49ccdab79639a3d
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
-(none)
-
-## Fixed
-(none needed in the lesson texts)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- Translation review against the reviewed Finnish source (teacher procedure 2026-10-28), pedagogy role: lesson.md (419 lines, same structure and section order as content/fi), inquiry.json, exit-ticket.json, figures.json (figure descriptions and aria-labels) and meta.json.
-- Every number, equation, unit and significant-figure statement matches the Finnish (digit sequences compared line by line; only decimal comma -> point differs); worked example (kettle: k = 8.0 degC/min, b = 20 degC, t = 2.5 min), the five-step solution layout, both exit-ticket answers and the inquiry feedback values (d, 0.12 m, 61 g, 15 km/h, plant task) are unchanged.
-- Teaching sequence unchanged: hook, recap of errors, two predictions, simulation experiments 1-3, conclusion, find-the-error, read-the-slope, new situation.
-- Natural English; no Finnish words in the text, units or figure labels (Ydinajatus/Kaava/Esimerkki in inquiry.json are structural section keys identical in all languages; ennuste/koe/aineisto are ids). check_i18n 0 errors.
+- lesson.md, inquiry.json diffs. Prompt now says the trolley was pushed off at t=0 and moved steadily, so the model choice is answerable; 'clock started late' context in the cyclist task makes the nonzero intercept meaningful; zero decimals in the worked example fit the exact data; interpolation/extrapolation and physical/graphical/mathematical model wording added to theory in plain language.

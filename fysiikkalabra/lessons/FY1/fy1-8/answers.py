@@ -17,7 +17,7 @@ a["fy1-8-L2-01"] = (max(t) - min(t)) / 2 / (sum(t) / len(t)) * 100   # half-rang
 t_run = 3.0 / 1.5                                         # t = s / v = 3,0 m / 1,5 m/s = 2,0 s
 a["fy1-8-L2-02"] = 0.2 / t_run * 100                      # eps = 0,2 s / 2,0 s = 10 %
 a["fy1-8-L2-03"] = (342 - 90) / (8.0 - 2.0) / 100         # slope = 252 cm / 6,0 s = 42 cm/s = 0,42 m/s
-a["fy1-8-L2-04"] = abs(0.50 - 0.42) / 0.50 * 100          # |0,50 - 0,42| m/s / 0,50 m/s = 0,16 -> 16 %
+a["fy1-8-L2-04"] = abs(0.500 - 0.420) / 0.500 * 100       # |0,500 - 0,420| m/s / 0,500 m/s = 0,080 / 0,500 = 0,16 -> 16 %
 # Level 3: reasoning or an unfamiliar context
 a["fy1-8-L3-01"] = (0.463 - 0.397) / 2                    # uncertainty of the slope = half the gap of the steepest and shallowest line = 0,033 m/s
 r1 = (80.0 - 68.0) / 5.0                                  # first 5 min: 12,0 K / 5,0 min = 2,4 K/min

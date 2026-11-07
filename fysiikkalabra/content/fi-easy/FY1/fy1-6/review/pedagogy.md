@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 5d119893d96edc43
+CONTENT-HASH: 544b7ae791e33883
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.
+- sim.js (velocity arrows blue, ball identity colours kept for balls/graph), exit-ticket.json (6,06), inquiry.json, lesson.md (reading of m/s^2), lesson-answers.py.

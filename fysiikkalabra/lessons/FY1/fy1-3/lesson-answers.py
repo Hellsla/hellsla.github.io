@@ -28,7 +28,7 @@ a["inq-siirto-ilman-korjausta"] = mean(coins) / 5                  # mistake: ze
 a["inq-siirto-ei-jakoa"] = mean(coins) - 0.8                       # mistake: five coins, not one = 27,2 g
 a["inq-siirto-korjaus-per-kolikko"] = mean(coins) / 5 - 0.8        # mistake: zero error subtracted from one coin = 4,8 g
 t5 = [2.36, 2.41, 2.38, 2.46, 2.39]
-a["inq-check2"] = half(t5) / mean(t5) * 100                        # relative error = 0,05 s / 2,40 s = 2,1 %
+a["inq-check2"] = half(t5) / mean(t5) * 100                        # relative error = 0,05 s / 2,40 s = 2,08 % (key: the exact value; shown answer 2 %)
 ex = [3.12, 3.25, 3.07, 3.31, 3.19, 3.15]
 a["inq-example-mean"] = mean(ex)                                   # worked example: mean = 19,09 s / 6 = 3,18 s
 a["inq-example-half"] = half(ex)                                   # half-range = (3,31 s − 3,07 s) / 2 = 0,12 s

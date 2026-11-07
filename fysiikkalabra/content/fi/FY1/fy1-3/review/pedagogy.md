@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: bf819a37c4fc8d14
+CONTENT-HASH: 54f5f1ae106f642a
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- Ydinajatus: "Se kuvaa ... eli arviota siitä, kuinka suuri mittausvirhe voi olla. Se ei yleensä..." has two "Se" in a row; the second could name the subject ("Epävarmuus ei yleensä...").
-- The LIGO photo sits after the repeatability paragraph; its caption could say in one clause why a detector of that size needs trustworthy repeated measurements.
+- The example figure now sits after the last stage (Järkevyys) instead of before the stages; it works as a result figure and gives nothing away early. Fine.
 
 ## Checked
-batch delta review (fi): uncertainty wording now says the estimate is not an absolute bound, consistent with the later sections; both photos have useful alt texts and captions that connect to measurement accuracy; no task or solution contradicts the change.
+- Lesson diff: inquiry.json answer 2,08, lesson.md (example figure moved to end of the staged example, text unchanged), lesson-answers.py.

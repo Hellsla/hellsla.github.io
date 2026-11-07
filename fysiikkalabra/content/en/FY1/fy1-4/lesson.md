@@ -221,9 +221,9 @@ In real data sets the data points do not usually lie exactly on one straight lin
 A good fit is close to all the points and does not lean towards any single point. There are roughly as many points on each side of the line, and the deviations above and below cancel each other. The line does not have to pass through any point. If one point is clearly further away than the others, it is worth finding out why, and you do not drop the point automatically.
 
 ### Linear model
-If the points lie roughly along a straight line, the relationship between the quantities is described by a linear model, whose equation is the equation of a straight line. The slope tells you how much the vertical quantity changes when the horizontal quantity increases by one unit, and the constant term tells you the value of the vertical quantity when the horizontal quantity is zero.
+If the points lie roughly along a straight line, the relationship between the quantities is described by a linear model, whose equation is the equation of a straight line. The slope tells you how much the vertical quantity changes when the horizontal quantity increases by one unit, and the constant term tells you the value of the vertical quantity when the horizontal quantity is zero. A linear model is a physical model, a simplified description of a phenomenon based on measurements: the graph is its graphical model and the equation of the line its mathematical model, and because the equation gives numerical values, the model is quantitative.
 
-When the constant term is zero, the line passes through the origin and the quantities are directly proportional: doubling $x$ doubles $y$. The measurements show that the model holds only in the range that was measured. If the line is extended beyond the measured range, you assume that the relationship stays the same, and the result is only an estimate. If the points curve systematically around the line, for example all the points are above the line at the ends and below it in the middle, the linear model does not fit.
+When the constant term is zero, the line passes through the origin and the quantities are directly proportional: doubling $x$ doubles $y$. The measurements support the model only in the range that was measured, so estimating a value between the measured points (interpolation) is justified. If the line is extended beyond the measured range (extrapolation), you assume that the relationship stays the same, and the result is only an estimate. If the points curve systematically around the line, for example the points at the ends are above the line and the points in the middle below it, the linear model does not fit.
 
 ## Formula: Equation of a straight line
 The graph of a linear model is a straight line with the equation
@@ -358,7 +358,7 @@ Fit a straight line to the data points, find its equation $T = kt + b$ and use i
 
 <!-- vaihe -->
 
-**Given and find.** The graph has six data points, and the fitted line has been drawn through the middle of the set. Two points far apart are read from the line: $A = (t_1;\ T_1) = (0.0\,\text{min};\ 20.0\,{}^\circ\text{C})$ and $B = (t_2;\ T_2) = (5.0\,\text{min};\ 60.0\,{}^\circ\text{C})$. We need the slope $k$, the constant term $b$ and the time $t$ at which $T = 40\,{}^\circ\text{C}$.
+**Given and find.** The graph has six data points, and the fitted line has been drawn through the middle of the set. Two points far apart are read from the line: $A = (t_1;\ T_1) = (0\,\text{min};\ 20\,{}^\circ\text{C})$ and $B = (t_2;\ T_2) = (5.0\,\text{min};\ 60\,{}^\circ\text{C})$. We need the slope $k$, the constant term $b$ and the time $t$ at which $T = 40\,{}^\circ\text{C}$.
 
 <!-- vaihe -->
 
@@ -385,13 +385,13 @@ Fit a straight line to the data points, find its equation $T = kt + b$ and use i
 ```latex
 \begin{aligned}
 k &= \frac{T_2 - T_1}{t_2 - t_1} \\
-&= \frac{60.0\,{}^\circ\text{C} - 20.0\,{}^\circ\text{C}}{5.0\,\text{min} - 0.0\,\text{min}} \\
+&= \frac{60\,{}^\circ\text{C} - 20\,{}^\circ\text{C}}{5.0\,\text{min} - 0\,\text{min}} \\
 &= 8.0\,\tfrac{{}^\circ\text{C}}{\text{min}} \\[6pt]
 b &= T_1 - k t_1 \\
-&= 20.0\,{}^\circ\text{C} - 8.0\,\tfrac{{}^\circ\text{C}}{\text{min}} \cdot 0.0\,\text{min} \\
-&= 20.0\,{}^\circ\text{C} \\[6pt]
+&= 20\,{}^\circ\text{C} - 8.0\,\tfrac{{}^\circ\text{C}}{\text{min}} \cdot 0\,\text{min} \\
+&= 20\,{}^\circ\text{C} \\[6pt]
 t &= \frac{T - b}{k} \\
-&= \frac{40\,{}^\circ\text{C} - 20.0\,{}^\circ\text{C}}{8.0\,\tfrac{{}^\circ\text{C}}{\text{min}}} \\
+&= \frac{40\,{}^\circ\text{C} - 20\,{}^\circ\text{C}}{8.0\,\tfrac{{}^\circ\text{C}}{\text{min}}} \\
 &= 2.5\,\text{min}
 \end{aligned}
 ```
@@ -402,7 +402,7 @@ t &= \frac{T - b}{k} \\
 
 <!-- vaihe -->
 
-**Reasonableness.** The constant term $20\,{}^\circ\text{C}$ is the temperature of the water before heating, that is, room temperature, and the slope $8.0\,\tfrac{{}^\circ\text{C}}{\text{min}}$ tells you how fast the water warms up. In the table, $40\,{}^\circ\text{C}$ is passed between the third and fourth measurements, since $T$ is $36.5\,{}^\circ\text{C}$ at two minutes and $43.8\,{}^\circ\text{C}$ at three minutes, so $2.5\,\text{min}$ is in the right interval. The points deviate from the line by at most about one degree.
+**Reasonableness.** The constant term $20\,{}^\circ\text{C}$ is the temperature of the water at the start of heating according to the model, and it is about room temperature. The slope $8.0\,\tfrac{{}^\circ\text{C}}{\text{min}}$ tells you how fast the water warms up. In the table, $40\,{}^\circ\text{C}$ is passed between the third and fourth measurements, since $T$ is $36.5\,{}^\circ\text{C}$ at two minutes and $43.8\,{}^\circ\text{C}$ at three minutes, so $2.5\,\text{min}$ is in the right interval. The points deviate from the line by at most about one degree.
 
 ## Common misconception
 Many students join the data points with a line, or force the line to pass through one of the data points, even though that point, too, has measurement uncertainty. The line is fitted to the whole set of points; it may pass through some point, but it does not have to.

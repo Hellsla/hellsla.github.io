@@ -1,11 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: bf819a37c4fc8d14
+CONTENT-HASH: 54f5f1ae106f642a
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] Ydinajatus — three consecutive sentences begin with "Se" and "Se kuvaa mittaustulokseen liittyvää epävarmuutta" nearly repeats its subject — fix: "Se on arvio siitä, kuinka suuri mittausvirhe voi olla; se ei yleensä tarkoita ehdotonta suurinta mahdollista poikkeamaa oikeasta arvosta."
+- ei huomautettavaa
 
 ## Checked
-- batch delta review: Ydinajatus (mittausepävarmuus, three new sentences); built page and scripts/screenshot.py fy1-3 (captures current), changed passages opened at 390 px (h-390-0): clean wrapping, KaTeX renders, no inline formula wraps, no clipping, no horizontal scroll. Diff read; the rest of the lesson unchanged.
+- fy1-3 lesson.md (kuvan siirto), inquiry.json (answer 2.08), lesson-answers.py; kuvien osalta lähdekoodi/SVG (ei kuvakaappauksia, kevyt katselmointi)
+- Esimerkkikuvaaja (example-plot) siirtyi esimerkin loppuun; kuva ja sen LaTeX-nimiöt ovat ennallaan, sijoittelu esimerkin lopussa sopii (kuva vahvistaa tuloksen 3,18 s ± 0,12 s).

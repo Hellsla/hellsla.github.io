@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: dba615eb79613518
+CONTENT-HASH: dacadcdcabc7d37b
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 + round-3 diff since edb368de4 only)
 
 ## Blocking
-(none left; list what you fixed under Fixed)
-
-## Fixed
-- figures.json (first figure description) — "Formula figure:" for Finnish "Kaavakuva" (a schematic of three cubes, not a formula) → "Schematic figure:"; figure redrawn into lesson.md with figures.py.
-
-## Polish
 - none
 
+## Polish
+- tulkinta solution: the least-squares slope with free intercept is 8,962 g/cm3 (8,96 as stated); a fit forced through the origin gives 8,966 (8,97). Correct as written; no change needed.
+
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): lesson.md prose (key idea, proportionality, identification by density, formula section, units, density table, displacement, container mass, worked example steps, misconceptions, summary), inquiry.json (contribution, goals, prior knowledge, all activities, options, feedback, hints, mistakes, solution strings, model answers, criteria), exit-ticket.json, meta.json and figures.json. Physics meaning, direction of comparisons (steeper/less steep, greater/smaller density), intercept vs slope, decimal points, \cdot, chapter titles from content/en/courses.json all match. check_i18n en: 0 errors.
-- Update 2026-10-28 14:00: re-checked the newly checked text fields (experiment intro, source_note, column names, word units, string answers); fy1-7 has none of these in this lesson, check_i18n shows no fy1-7 error.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked lesson (wording fixes, measurement-uncertainty phrasing, inquiry prior/prompt, new check-c2 choice item with feedback, renumbered titles, exit ticket trimmed to 2 questions, new cylinders-read figure texts); physics, decimals, correct choice and feedback match the new Finnish.
+- git diff edb368de4 of lesson.md, inquiry.json, figures.py (and figures.json for en/fi-easy).
+- Hook and hero alt no longer name the metals ("vaalea ja tumma", heavier = dark cube): consistent with the hook, no physics claim lost.
+- Density table note (room temperature, ice at 0 C, pine typical): correct.
+- Stone task: 187 g / 70 cm3 = 2671 -> 2,7e3 kg/m3; 1 ml reading resolution now stated, so 2 s.f. of the 70 ml difference is justified and agrees with the fy1-2 exact-integer convention.
+- check-c2 retitled "Kaksi rautakuutiota": title only, options unchanged. The en text and figures.json alt match the Finnish fix.

@@ -4,7 +4,7 @@
     "a": "$\\rho = \\dfrac{m}{V} = \\dfrac{108\\,\\text{g}}{40\\,\\text{cm}^3} = 2.7\\,\\tfrac{\\text{g}}{\\text{cm}^3}$."
   },
   {
-    "q": "The volume of a water bottle is $1.5\\,\\text{dm}^3$. What is the mass of the water ($\\rho = 1000\\,\\text{kg/m}^3$)? Which conversion is needed?",
+    "q": "A water bottle contains $1.5\\,\\text{dm}^3$ of water. What is the mass of the water ($\\rho = 1000\\,\\text{kg/m}^3$)? Which conversion is needed?",
     "a": "The volume is converted to cubic metres: $1.5\\,\\text{dm}^3 = 1.5 \\cdot 10^{-3}\\,\\text{m}^3$. Then $m = \\rho V = 1000\\,\\tfrac{\\text{kg}}{\\text{m}^3} \\cdot 1.5 \\cdot 10^{-3}\\,\\text{m}^3 = 1.5\\,\\text{kg}$."
   }
 ]

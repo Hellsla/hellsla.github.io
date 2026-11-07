@@ -1,7 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 52cdf4d2a2b56eb0
+CONTENT-HASH: 2f4ee739ed45e9bf
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-3 diff since the round-2 commit only)
+
 ## Blocking
+- none
+
 ## Polish
-- At 360 px the pointer and scale arc are tiny; they carry no information the text needs, so this is acceptable.
+- none
+
 ## Checked
-batch delta review: hero captures 1200 and 360 px; the pointer is now fixed to the beam and turns with it (tip swings opposite the iron-side drop, physically right), drawn in iron grey; the tilt towards the iron cube, the equal cubes and the measuring cylinder still match the Miksi question and the unchanged aria-label.
+- inquiry.json (hook no longer names metals; two-row slope caveat; stone task states 1 ml reading precision; check-c2 title), figures.py hero alt, lesson.md table note. Hook now leaves the metals open, so the prediction is not given away.
