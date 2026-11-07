@@ -274,15 +274,15 @@ The scale of the vertical axis starts at $3.6\,\text{V}$ so that the small decre
 **Reasonableness:** The average power is $\dfrac{6.86\,\text{J}}{1.0 \cdot 10^{-3}\,\text{s}} \approx 6.9\,\text{kW}$ and the current $26\,\text{A}$: these are much larger than a small battery could supply in such a short pulse. That is why the energy is first stored in the capacitor, which releases it quickly.
 
 ### d)
-**Find:** whether there is any danger in the capacitor after the battery is removed, how it is discharged safely and how large a current would flow through the body
+**Find:** why the capacitor can be dangerous after the battery is removed, how large a current would by calculation flow through the body, and why servicing belongs to a professional
 **Principle:** The plates of a capacitor carry the charges $+Q$ and $-Q$, and the energy is stored in the electric field between the plates. The voltage does not disappear when the battery that charges it is removed. The danger depends on the stored energy and the voltage, not on the battery. The size of the current through the body is obtained from the voltage and the resistance.
 **Model answer:** *Danger.* After the battery is removed, the capacitor is still at $300\,\text{V}$ and holds about $15\,\text{J}$. The device does not get its voltage from the small battery but from the capacitor, which can discharge through the body of the repairer.
 
-*Current.* If the resistance of the body is $1.0\,\text{k}\Omega$, the initial current would be $I = \dfrac{U}{R} = \dfrac{300\,\text{V}}{1.0 \cdot 10^{3}\,\Omega} = 0.30\,\text{A}$. This is many times the few tens of milliamperes that can already be dangerous. The current decreases as the capacitor discharges, but the initial current is enough for a dangerous electric shock.
+*Current.* Let us calculate an idealised estimate in an imagined contact situation. If the resistance of the body is $1.0\,\text{k}\Omega$, the initial current would be $I = \dfrac{U}{R} = \dfrac{300\,\text{V}}{1.0 \cdot 10^{3}\,\Omega} = 0.30\,\text{A}$. This is many times the few tens of milliamperes that can already be dangerous. The current decreases as the capacitor discharges, but the initial current is enough for a dangerous electric shock.
 
-*Safe discharge* (only for understanding: do not try to discharge a capacitor yourself). A suitable resistor, for example $10\,\text{k}\Omega$, is connected between the terminals of the capacitor with insulated tools. The initial current is then $\dfrac{300\,\text{V}}{10\,\text{k}\Omega} = 30\,\text{mA}$, and the energy of the capacitor is transferred to the internal energy of the resistor and from there as heat to the surroundings. At first the power of the resistor is $\dfrac{(300\,\text{V})^2}{10\,\text{k}\Omega} = 9\,\text{W}$, so the power rating of the resistor must be suitable. The terminals are not short-circuited with a screwdriver, because the current is then very large and a spark is produced. Finally the voltage is checked with a meter.
+*Servicing belongs to a professional.* Safe servicing requires that the stored energy of the capacitor is removed in a controlled way and the absence of voltage is reliably verified before the internal parts of the device are touched. This requires familiarity with the device and the right equipment and procedures, so servicing must not be attempted without appropriate qualifications.
 
-*Conclusion.* The device must not be opened right away. The danger comes from the energy and voltage stored in the capacitor, not from the size of the battery. The resistance of the body varies, for example with the moisture of the skin, so the calculated current is an order-of-magnitude estimate.
+*Conclusion.* The device must not be opened right away. The danger comes from the energy and voltage stored in the capacitor, not from the size of the battery. The calculated current is an idealised order-of-magnitude estimate and not a description of a real electric shock: the resistance of the body varies, for example with the moisture of the skin, and the current decreases as the capacitor discharges.
 
 ### Hyväksytään myös
 - In part a the energy may also be calculated with the formula $E = \dfrac{1}{2} Q U$, where $Q = C U = 0.099\,\text{C}$.
@@ -294,4 +294,4 @@ The scale of the vertical axis starts at $3.6\,\text{V}$ so that the small decre
 - In calculating the energy the squaring of the voltage is forgotten, or the energy transferred to the flash is calculated with the formula $\tfrac{1}{2} C (\Delta U)^2$.
 - The current is calculated by dividing the energy by the time, which gives the power.
 - It is stated that the capacitor is harmless because the device has only a small battery.
-- The capacitor is discharged by short-circuiting it with a metal tool.
+- The calculated current through the body is treated as an exact value, although it is an idealised order-of-magnitude estimate.

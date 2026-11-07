@@ -392,7 +392,7 @@ where $t$ is the charging time ($\text{h}$) and $P$ the power taken from the gri
   <foreignObject x="349" y="234.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{charge}\ 99\,\%$</span></div></foreignObject>
 </svg>
 
-The power of a single-phase device is $P = UI$. The power of a three-phase device that draws the same current from each phase conductor is
+This chapter assumes that the current and voltage of the charging equipment are in phase, that is, the power factor is approximately one. Then the power of a single-phase device is $P = UI$. In an evenly loaded three-phase system, where the device draws the same current from each phase conductor, the total power in this model is
 ```latex
 P = 3UI
 ```

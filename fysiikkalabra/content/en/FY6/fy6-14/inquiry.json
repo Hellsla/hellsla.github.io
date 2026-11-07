@@ -109,9 +109,9 @@
       "stage": "tutki",
       "type": "sim",
       "text": "Choose the LED circuit or the solar cell. Change the voltage, the resistor, the component and the direction, or the light and the load, and follow the operating point on the graph.",
-      "howto": "The *Circuit* menu selects the LED circuit or the solar cell. In the LED circuit you set the *voltage of the source* $U$ and the *series resistor* $R$ with sliders, and the *component* and the *connection* (forward or reverse direction) from menus. In the circuit diagram the triangle of the diode points in the direction in which the current can flow, and the LED glows the brighter, the greater the current. The graph shows the characteristic curve of the component, and the purple dot is the operating point. For the solar cell you set the *light intensity* $G$ and the *load resistance* $R$. The graph shows the $(U, I)$ curve of the panel, and the area of the orange rectangle is the power $P = UI$; the faint curve shows the full light $1000\\,\\text{W/m}^2$ for comparison.",
-      "model": "In the forward direction the current of a diode grows exponentially with the voltage: the current is $10\\,\\text{mA}$ when the voltage of a silicon diode is $0.70\\,\\text{V}$, of a red LED $1.90\\,\\text{V}$ and of a blue LED $2.90\\,\\text{V}$. In the reverse direction the current is zero: the small leakage current is ignored, and the breakdown in the reverse direction is not modelled, although a real LED often withstands only about $5\\,\\text{V}$ in the reverse direction. The greatest recommended current of the LEDs is $20\\,\\text{mA}$. The source and the wires are ideal. The solar panel has ten silicon cells in series, and its area is $60\\,\\text{cm}^2$. When $G = 1000\\,\\text{W/m}^2$, the short-circuit current is $200\\,\\text{mA}$ and the open-circuit voltage $6.0\\,\\text{V}$. The short-circuit current is directly proportional to the light intensity, and the temperature of the cells stays the same. The numbers are values calculated by the model, not measurements.",
-      "calc": "In the LED circuit the source, the resistor and the diode are in series, so by Kirchhoff's voltage law $U = U_R + U_\\text{D}$ and by Ohm's law $U_R = RI$. The current of the diode is\n\n$$I = I_\\text{s} \\left(e^{U_\\text{D}/m} - 1\\right)$$\n\nwhere $m$ is a constant of the component ($0.040$–$0.060\\,\\text{V}$) and $I_\\text{s}$ a very small current chosen so that the current is $10\\,\\text{mA}$ at the threshold voltage of the component. The operating point is the voltage of the diode for which $U_\\text{D} + RI = U$; the program finds it by the bisection method. The power of the diode is $P_\\text{D} = U_\\text{D} I$. The current of the solar panel is $I = I_\\text{L} - I_0 \\left(e^{U/m} - 1\\right)$, where $I_\\text{L}$ is the current produced by the light, directly proportional to the light intensity, and $m = 0.40\\,\\text{V}$. With a load $R$ the operating point is the voltage for which this current is $\\tfrac{U}{R}$. The power is $P = UI$."
+      "howto": "The *Circuit* menu selects the LED circuit or the solar cell. In the LED circuit you set the *voltage of the source* $U$ and the *series resistor* $R$ with sliders, and the *component* and the *connection* (forward or reverse direction) from menus. In the circuit diagram the triangle of the diode points in the direction in which the current can flow, and the LED glows the brighter, the greater the current. The graph shows the characteristic curve of the component, and the purple dot is the operating point. For the solar cell you set the *irradiance* $G$ and the *load resistance* $R$. The graph shows the $(U, I)$ curve of the panel, and the area of the orange rectangle is the power $P = UI$; the faint curve shows the full light $1000\\,\\text{W/m}^2$ for comparison.",
+      "model": "In the forward direction the current of a diode grows exponentially with the voltage: the current is $10\\,\\text{mA}$ when the voltage of a silicon diode is $0.70\\,\\text{V}$, of a red LED $1.90\\,\\text{V}$ and of a blue LED $2.90\\,\\text{V}$. In the reverse direction the current is zero: the small leakage current is ignored, and the breakdown in the reverse direction is not modelled, although a real LED often withstands only about $5\\,\\text{V}$ in the reverse direction. The greatest recommended current of the LEDs is $20\\,\\text{mA}$. The source and the wires are ideal. The solar panel has ten silicon cells in series, and its area is $60\\,\\text{cm}^2$. When $G = 1000\\,\\text{W/m}^2$, the short-circuit current is $200\\,\\text{mA}$ and the open-circuit voltage $6.0\\,\\text{V}$. The short-circuit current is directly proportional to the irradiance, and the temperature of the cells stays the same. The numbers are values calculated by the model, not measurements.",
+      "calc": "In the LED circuit the source, the resistor and the diode are in series, so by Kirchhoff's voltage law $U = U_R + U_\\text{D}$ and by Ohm's law $U_R = RI$. The current of the diode is\n\n$$I = I_\\text{s} \\left(e^{U_\\text{D}/m} - 1\\right)$$\n\nwhere $m$ is a constant of the component ($0.040$–$0.060\\,\\text{V}$) and $I_\\text{s}$ a very small current chosen so that the current is $10\\,\\text{mA}$ at the threshold voltage of the component. The operating point is the voltage of the diode for which $U_\\text{D} + RI = U$; the program finds it by the bisection method. The power of the diode is $P_\\text{D} = U_\\text{D} I$. The current of the solar panel is $I = I_\\text{L} - I_0 \\left(e^{U/m} - 1\\right)$, where $I_\\text{L}$ is the current produced by the light, directly proportional to the irradiance, and $m = 0.40\\,\\text{V}$. With a load $R$ the operating point is the voltage for which this current is $\\tfrac{U}{R}$. The power is $P = UI$."
     },
     {
       "id": "koe-1",
@@ -139,7 +139,7 @@
         "R": "series resistor",
         "komponentti": "component",
         "suunta": "connection",
-        "G": "light intensity",
+        "G": "irradiance",
         "Rk": "load resistance"
       },
       "units": {
@@ -205,7 +205,7 @@
         "R": "series resistor",
         "komponentti": "component",
         "suunta": "connection",
-        "G": "light intensity",
+        "G": "irradiance",
         "Rk": "load resistance"
       },
       "units": {
@@ -250,7 +250,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 3: the power of a solar panel as a function of the load",
-      "intro": "Test prediction 2. The circuit is a solar cell, and the light intensity stays at $1000\\,\\text{W/m}^2$. Change only the load resistance and record the voltage, the current and the power with at least five resistances, for example $0$, $10$, $20$, $30$, $50$, $100$ and $300\\,\\Omega$. Finally find the resistance with which the power is greatest.",
+      "intro": "Test prediction 2. The circuit is a solar cell, and the irradiance stays at $1000\\,\\text{W/m}^2$. Change only the load resistance and record the voltage, the current and the power with at least five resistances, for example $0$, $10$, $20$, $30$, $50$, $100$ and $300\\,\\Omega$. Finally find the resistance with which the power is greatest.",
       "initial": {
         "piiri": "kenno",
         "G": 1000,
@@ -267,7 +267,7 @@
         "R": "series resistor",
         "komponentti": "component",
         "suunta": "connection",
-        "G": "light intensity",
+        "G": "irradiance",
         "Rk": "load resistance"
       },
       "units": {
@@ -334,7 +334,7 @@
         "R": "series resistor",
         "komponentti": "component",
         "suunta": "connection",
-        "G": "light intensity",
+        "G": "irradiance",
         "Rk": "load resistance"
       },
       "units": {
@@ -374,9 +374,9 @@
       "id": "koe-5",
       "stage": "tutki",
       "type": "experiment",
-      "title": "Experiment 5: light intensity",
+      "title": "Experiment 5: irradiance",
       "optional": true,
-      "intro": "The circuit is a solar cell, and the load resistance is $50\\,\\Omega$. Change only the light intensity and record the short-circuit current and the open-circuit voltage shown in the readings, and the power of the panel. Which depends more on the light?",
+      "intro": "The circuit is a solar cell, and the load resistance is $50\\,\\Omega$. Change only the irradiance and record the short-circuit current and the open-circuit voltage shown in the readings, and the power of the panel. Which depends more on the light?",
       "initial": {
         "piiri": "kenno",
         "Rk": 50,
@@ -393,7 +393,7 @@
         "R": "series resistor",
         "komponentti": "component",
         "suunta": "connection",
-        "G": "light intensity",
+        "G": "irradiance",
         "Rk": "load resistance"
       },
       "units": {
@@ -467,7 +467,7 @@
       "type": "reflect",
       "title": "Return to your predictions",
       "optional": true,
-      "prompt": "Compare your predictions with the values of the model in the experiments and with the formula $R = \\tfrac{U - U_\\text{D}}{I}$. Then return to the opening question: why does an LED light up only when connected one way round, and why does it need a resistor?",
+      "prompt": "Compare your predictions with the values of the model in the experiments and with the formula $R = \\tfrac{U - U_\\text{D}}{I}$. Then return to the opening question: why does an LED light up only when connected one way round, why must its current be limited, and how does a series resistor do it?",
       "predictions": [
         "ennuste-1",
         "ennuste-2"
@@ -599,11 +599,11 @@
       "title": "3. Explain the series resistor",
       "optional": true,
       "prompt": "A friend connects a red LED straight to a $4.5\\,\\text{V}$ battery, because “even a light bulb does not need a resistor”. The LED flashes and goes out for good. Explain what happened and why a light bulb withstands the same connection.",
-      "model": "The voltage of the LED in the forward direction is about $2\\,\\text{V}$, and above that a small increase in voltage increases the current very much. Without a series resistor almost the whole voltage of the battery was across the LED, and only the internal resistance of the battery and the wires limited the current. If their resistance is about $1\\,\\Omega$, the current is of the order of $(4.5\\,\\text{V} - 2.0\\,\\text{V}) : 1\\,\\Omega \\approx 2.5\\,\\text{A}$, over a hundred times the recommended $20\\,\\text{mA}$ of the LED. The LED overheated and broke. The filament of a light bulb obeys Ohm's law approximately, and its resistance grows as the filament heats up, so the bulb limits its own current. With an LED a series resistor is therefore needed, which takes the extra voltage and determines the current.",
+      "model": "The voltage of the LED in the forward direction is about $2\\,\\text{V}$, and above that a small increase in voltage increases the current very much. Without a series resistor almost the whole voltage of the battery was across the LED, and only the internal resistance of the battery and the wires limited the current. If their resistance is about $1\\,\\Omega$, the current is of the order of $(4.5\\,\\text{V} - 2.0\\,\\text{V}) : 1\\,\\Omega \\approx 2.5\\,\\text{A}$, over a hundred times the recommended $20\\,\\text{mA}$ of the LED. The LED overheated and broke. The filament of a light bulb obeys Ohm's law approximately, and its resistance grows as the filament heats up, so the bulb limits its own current. The current of an LED must therefore be limited. In a simple circuit connected to a battery this is done with a series resistor connected in series, which takes the extra voltage and determines the current.",
       "criteria": [
         "The answer states that the voltage of the LED stays almost constant and a small increase in voltage increases the current a lot.",
         "The answer states that without a series resistor only the internal resistance of the battery and the wires limited the current, so the current became too large and the LED overheated.",
-        "The answer states that the resistance of the bulb limits the current, and concludes that a resistor in series is needed with an LED."
+        "The answer states that the resistance of the bulb limits the current, and concludes that the current of an LED must be limited, in this circuit with a series resistor connected in series."
       ]
     },
     {

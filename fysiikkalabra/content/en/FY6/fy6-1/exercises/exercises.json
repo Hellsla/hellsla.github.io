@@ -68,7 +68,7 @@
         },
         {
           "text": "The electrons travel from the negative terminal to the lamp at the speed of light, so the lamp lights up only after they have arrived.",
-          "feedback": "The wire is already full of free electrons, and they start to move everywhere in the circuit at the same time. The electrons do not travel at the speed of light but advance slowly, and the lamp lights up immediately when the switch closes."
+          "feedback": "The wire is already full of free electrons. The change caused by switching propagates through the circuit very quickly, so they start to move throughout the circuit almost immediately. The electrons themselves do not travel at the speed of light but advance slowly, and the lamp lights up almost immediately when the switch closes."
         }
       ]
     },
@@ -141,7 +141,7 @@
         {
           "text": "The lamp lights up only after the electrons that left the battery have reached the lamp.",
           "true": false,
-          "feedback": "False: the wire is already full of free electrons. When the circuit is closed, they start to move everywhere in the circuit at the same time, also in the filament, so the lamp lights up at once even though the electrons advance slowly."
+          "feedback": "False: the wire is already full of free electrons. When the circuit is closed, the change caused by switching propagates very quickly, and the electrons start to move throughout the circuit almost immediately, also in the filament. Therefore the lamp lights up almost at once even though the electrons advance slowly."
         },
         {
           "text": "The lamp receives $3.0\\,\\text{J}$ of energy from the battery in one minute.",

@@ -394,11 +394,11 @@ missä $t$ on latausaika ($\text{h}$) ja $P$ verkosta otettu teho ($\text{kW}$).
   <foreignObject x="349" y="234.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{varaus}\ 99\,\%$</span></div></foreignObject>
 </svg>
 
-Yksivaiheisen laitteen teho on $P = UI$. Kolmivaiheisen laitteen teho on
+Luvussa oletetaan, että latauslaitteen virta ja jännite ovat samanvaiheiset eli muuttuvat samaan tahtiin. Tällöin tehokerroin on likimain yksi. Silloin yksivaiheisen laitteen teho on $P = UI$. Kolmivaihejärjestelmä voi olla tasaisesti kuormitettu. Se tarkoittaa, että laite ottaa jokaisesta vaihejohtimesta saman virran. Tässä mallissa kokonaisteho on
 ```latex
 P = 3UI
 ```
-kun laite ottaa jokaisesta vaihejohtimesta saman virran. Tässä $U = 230\,\text{V}$ on vaihejohtimen ja nollajohtimen välinen jännite ja $I$ yhden vaihejohtimen virta ($\text{A}$).
+Tässä $U = 230\,\text{V}$ on vaihejohtimen ja nollajohtimen välinen jännite ja $I$ yhden vaihejohtimen virta ($\text{A}$).
 
 Johtoon tuleva lämpenemisteho saadaan Joulen laista ja johtimen resistanssista $R = \rho l : A$ (luku *Resistanssi ja Ohmin laki*). Kuparin pituudeksi otetaan meno- ja paluujohdin yhteensä:
 ```latex

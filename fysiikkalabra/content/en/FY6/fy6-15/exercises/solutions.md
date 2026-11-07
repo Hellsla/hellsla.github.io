@@ -50,8 +50,8 @@
 
 ## fy6-15-L1-06
 **Find:** which statement about the purpose of protective earthing is correct
-**Principle:** Protective earthing connects the metal frame of a device to the ground with a conductor. If the live conductor touches the frame because of a fault, a large fault current flows along this conductor and the fuse or the residual current device cuts off the current, so the frame does not stay live.
-**Model answer:** The correct statement is the one according to which earthing leads the fault current along the conductor to the ground, so the fuse or the residual current device cuts off the current. The statement about reduced electricity consumption is wrong, because in normal use no current flows in the earth conductor. The statement about insulating the frame from the ground is wrong, because earthing connects the frame to the ground and does not insulate it. The statement about the frame being live all the time is wrong, because the purpose of earthing is to prevent the frame from staying live.
+**Principle:** Protective earthing connects the metal frame of a device to the protective conductor. If the live conductor touches the frame because of a fault, a large fault current flows along the protective conductor back to the supply and the fuse or the residual current device cuts off the current, so the frame does not stay live.
+**Model answer:** The correct statement is the one according to which earthing gives the fault current a low-resistance path back to the supply, so the fuse or the residual current device cuts off the current. The statement about reduced electricity consumption is wrong, because in normal use no current flows in the earth conductor. The statement about insulating the frame from the ground is wrong, because earthing connects the frame to the protective conductor and does not insulate it. The statement about the frame being live all the time is wrong, because the purpose of earthing is to prevent the frame from staying live.
 
 ## fy6-15-L1-07
 **Find:** which statement about a class II device is correct

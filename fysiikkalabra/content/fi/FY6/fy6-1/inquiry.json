@@ -343,7 +343,7 @@
       "prompt": "Lamppu on kahden metrin päässä paristosta. Kun kytkin suljetaan, lamppu syttyy käytännössä heti, vaikka vapaat elektronit etenevät johdossa alle millimetrin sekunnissa. Miksi?",
       "choices": [
         {
-          "text": "Johto on valmiiksi täynnä vapaita elektroneja, ja kytkentämuutos panee ne nopeasti liikkeelle koko piirissä.",
+          "text": "Johto on valmiiksi täynnä vapaita elektroneja, jotka lähtevät liikkeelle koko piirissä lähes heti.",
           "correct": true,
           "feedback": "Oikein. Kun piiri suljetaan, sähkömagneettinen häiriö etenee johdossa hyvin nopeasti mutta rajallisella nopeudella. Hehkulangan omat elektronit lähtevät liikkeelle lähes heti, eikä lampun tarvitse odottaa pariston luota tulevia elektroneja. Lyhyessä piirissä viive on niin pieni, että lamppu näyttää syttyvän heti."
         },

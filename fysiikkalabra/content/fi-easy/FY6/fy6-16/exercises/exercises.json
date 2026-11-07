@@ -11,10 +11,10 @@
     {
       "id": "fy6-16-L1-02",
       "level": 1,
-      "text": "Sähköautoa ladataan mökillä tavallisesta pistorasiasta. Latauskaapeli rajoittaa virran $10\\,\\text{A}$:iin. Jännite on $230\\,\\text{V}$. Kuinka suuri on latausteho? Vastaa kilowatteina.",
-      "answer": 2.3,
+      "text": "Sähköautoa ladataan mökillä hyväkuntoisesta tavallisesta pistorasiasta. Auton latauskaapeli rajoittaa latausvirran $8{,}0\\,\\text{A}$:iin. Jännite on $230\\,\\text{V}$. Kuinka suuri on verkosta otettu latausteho? Vastaa kilowatteina.",
+      "answer": 1.84,
       "unit": "kW",
-      "tolerance": 0.02
+      "tolerance": 0.03
     },
     {
       "id": "fy6-16-L1-03",
@@ -270,7 +270,7 @@
     {
       "id": "fy6-16-L3-02",
       "level": 3,
-      "text": "Auton latausvirta kasvatetaan $10\\,\\text{A}$:sta $16\\,\\text{A}$:iin samassa kaapelissa. Oleta, että kaapelin resistanssi pysyy samana. Kuinka monta prosenttia kaapeliin tuleva lämpenemisteho kasvaa?",
+      "text": "Tarkastellaan kaapelia, joka on tarkoitettu sähköauton lataamiseen ja asianmukaisesti mitoitettu. Mitoitettu tarkoittaa, että kaapeli on valittu kestämään latausvirta. Latausvirta kasvatetaan $10\\,\\text{A}$:sta $16\\,\\text{A}$:iin samassa kaapelissa. Oleta, että kaapelin resistanssi pysyy samana. Kuinka monta prosenttia kaapeliin tuleva lämpenemisteho kasvaa?",
       "answer": 156.0,
       "unit": "%",
       "tolerance": 0.02

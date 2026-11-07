@@ -68,7 +68,7 @@
         },
         {
           "text": "Elektronit kulkevat miinusnavasta valon nopeudella lamppuun, joten lamppu syttyy vasta niiden saavuttua.",
-          "feedback": "Johto on jo valmiiksi täynnä vapaita elektroneja. Ne alkavat liikkua kaikkialla piirissä yhtä aikaa. Elektronit eivät kulje valon nopeudella vaan etenevät hitaasti. Lamppu syttyy heti, kun kytkin sulkeutuu."
+          "feedback": "Johto on jo valmiiksi täynnä vapaita elektroneja. Kytkentämuutos etenee piirissä hyvin nopeasti, joten elektronit lähtevät liikkeelle koko piirissä lähes heti. Elektronit itse eivät kulje valon nopeudella vaan etenevät hitaasti. Lamppu syttyy lähes heti, kun kytkin sulkeutuu."
         }
       ]
     },
@@ -141,7 +141,7 @@
         {
           "text": "Lamppu syttyy vasta, kun paristosta lähteneet elektronit ovat ehtineet lamppuun.",
           "true": false,
-          "feedback": "Epätosi: johto on valmiiksi täynnä vapaita elektroneja. Kun piiri suljetaan, ne alkavat liikkua kaikkialla piirissä yhtä aikaa, myös hehkulangassa. Siksi lamppu syttyy heti, vaikka elektronit etenevät hitaasti."
+          "feedback": "Epätosi: johto on valmiiksi täynnä vapaita elektroneja. Kun piiri suljetaan, kytkentämuutos etenee hyvin nopeasti. Elektronit lähtevät liikkeelle koko piirissä lähes heti, myös hehkulangassa. Siksi lamppu syttyy lähes heti, vaikka elektronit etenevät hitaasti."
         },
         {
           "text": "Lamppu saa paristolta yhdessä minuutissa energiaa $3{,}0\\,\\text{J}$.",

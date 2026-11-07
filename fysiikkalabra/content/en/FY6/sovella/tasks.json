@@ -473,11 +473,20 @@
           "kind": "calc",
           "points": 4,
           "text": "How much energy was transferred to the flash? What fraction of the stored energy is this, and why is the fraction larger than the decrease in voltage?",
-          "answer": {
-            "value": 6.86,
-            "unit": "J",
-            "tolerance": 0.03
-          },
+          "answer": [
+            {
+              "name": "E",
+              "value": 6.86,
+              "unit": "J",
+              "tolerance": 0.03
+            },
+            {
+              "name": "share",
+              "value": 46.2,
+              "unit": "%",
+              "tolerance": 0.03
+            }
+          ],
           "criteria": [
             {
               "text": "Concludes that the energy transferred to the flash is the change in the energy of the capacitor: the energies are calculated separately before and after, not from the change in voltage $\\Delta U$ alone.",
@@ -533,7 +542,7 @@
           "id": "d",
           "kind": "word",
           "points": 4,
-          "text": "A repairer removes the battery from the flash unit and opens the unit right after that. Evaluate whether there is any danger in the capacitor, and describe how a capacitor is discharged safely. Also assess the danger by calculating the current if the resistance of a human body is about $1.0\\,\\text{k}\\Omega$.",
+          "text": "A repairer removes the battery from the flash unit and opens the unit right after that. Explain why the capacitor can still be dangerous. Estimate by calculation the size of the current through the body in an imagined contact situation in which the resistance of a human body is about $1.0\\,\\text{k}\\Omega$. Why do the safe servicing of the device and making sure that the capacitor is de-energised belong to a professional trained for the task?",
           "criteria": [
             {
               "text": "Knows that the capacitor keeps its charge and energy when the battery is removed: it is still at $300\\,\\text{V}$ and holds about $15\\,\\text{J}$, even though the device is supplied by a small battery.",
@@ -541,19 +550,19 @@
               "points": 1
             },
             {
-              "text": "Calculates the current through the body: $I = \\dfrac{U}{R} = \\dfrac{300\\,\\text{V}}{1.0 \\cdot 10^{3}\\,\\Omega} = 0.30\\,\\text{A}$, which is many times the few tens of milliamperes that can already be dangerous.",
+              "text": "Calculates an idealised estimate of the current through the body: $I = \\dfrac{U}{R} = \\dfrac{300\\,\\text{V}}{1.0 \\cdot 10^{3}\\,\\Omega} = 0.30\\,\\text{A}$, which is many times the few tens of milliamperes that can already be dangerous.",
               "tag": "math",
               "points": 1
             },
             {
-              "text": "Describes a safe discharge: a suitable resistor, for example $10\\,\\text{k}\\Omega$, is connected between the terminals with insulated tools, so that the energy is transferred to the internal energy of the resistor and further as heat to the surroundings; the initial current is $\\dfrac{300\\,\\text{V}}{10\\,\\text{k}\\Omega} = 30\\,\\text{mA}$. The terminals are not short-circuited, and the voltage is checked with a meter. At the start the resistor must withstand about $\\dfrac{(300\\,\\text{V})^2}{10\\,\\text{k}\\Omega} = 9\\,\\text{W}$, so its power rating must be chosen accordingly. The description is meant for understanding: do not try to discharge it yourself.",
+              "text": "Justifies that safe servicing requires the stored energy of the capacitor to be removed in a controlled way and the absence of voltage to be reliably verified, and that servicing must not be attempted without appropriate qualifications and equipment.",
               "tag": "concept",
               "points": 1
             },
             {
               "key": "conclusion",
               "points": 1,
-              "detail": "Concludes that the device must not be opened right away: the danger comes from the stored energy and voltage, not from the size of the battery. The resistance of the body varies (for example, moist skin), so the estimate is an order of magnitude."
+              "detail": "Concludes that the device must not be opened right away: the danger comes from the stored energy and voltage, not from the size of the battery. The calculated current is an idealised order-of-magnitude estimate and not a description of a real electric shock, because the resistance of the body varies, for example with the moisture of the skin."
             }
           ]
         }

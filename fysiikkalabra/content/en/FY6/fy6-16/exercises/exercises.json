@@ -11,10 +11,10 @@
     {
       "id": "fy6-16-L1-02",
       "level": 1,
-      "text": "An electric car is charged at a cottage from an ordinary socket with a charging cable that limits the current to $10\\,\\text{A}$. The voltage is $230\\,\\text{V}$. How large is the charging power? Answer in kilowatts.",
-      "answer": 2.3,
+      "text": "An electric car is charged at a cottage from an ordinary socket in good condition with the car's charging cable, which limits the charging current to $8.0\\,\\text{A}$. The voltage is $230\\,\\text{V}$. How large is the charging power taken from the grid? Answer in kilowatts.",
+      "answer": 1.84,
       "unit": "kW",
-      "tolerance": 0.02
+      "tolerance": 0.03
     },
     {
       "id": "fy6-16-L1-03",
@@ -270,7 +270,7 @@
     {
       "id": "fy6-16-L3-02",
       "level": 3,
-      "text": "The charging current of a car is increased from $10\\,\\text{A}$ to $16\\,\\text{A}$ in the same cable. Assume that the resistance of the cable stays the same. By how many percent does the heating power dissipated in the cable increase?",
+      "text": "Consider an appropriately dimensioned EV charging cable. The charging current is increased from $10\\,\\text{A}$ to $16\\,\\text{A}$ in the same cable. Assume that the resistance of the cable stays the same. By how many percent does the heating power dissipated in the cable increase?",
       "answer": 156.0,
       "unit": "%",
       "tolerance": 0.02
