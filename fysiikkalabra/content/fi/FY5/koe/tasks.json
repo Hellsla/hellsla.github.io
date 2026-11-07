@@ -982,8 +982,8 @@
    "id": "fy5-k7",
    "title": "Järjestyksenvalvoja konsertissa",
    "source": "example",
-   "source_note": "Tilanne ja mittaustulokset on laadittu esimerkiksi. Ylempi toiminta-arvo $85\\,\\text{dB}$ on työmelua koskevasta valtioneuvoston asetuksesta (85/2006); asetuksen raja-arvo korvalla suojainten kanssa on $87\\,\\text{dB}$, joten tehtävän arvio on varovainen. Tulppien vaimennuksen $10\\,\\text{dB}$:n vähennys on tehtävän oletus; käytössä mitattu vaimennus jää yleisesti valmistajan arvoa pienemmäksi.",
-   "text": "Kesäfestivaalin järjestyksenvalvoja työskentelee lavan edessä $10\\,\\text{m}$:n päässä kaiutintornista. Hänen kohdallaan mitattu keskimääräinen melutaso on $103\\,\\text{dB}$, ja hänen vuoronsa lavan edessä kestää $4{,}0\\,\\text{h}$. Muun työpäivän hän on hiljaisessa paikassa, jonka melua ei tarvitse ottaa huomioon.\n\nMelutasot ovat A-painotettuja, ja niitä käsitellään äänen intensiteettitasoina. Työmelun ylempi toiminta-arvo on $85\\,\\text{dB}$: sen tasoista melua saa kuulla $8\\,\\text{h}$ päivässä, ja sallittu aika puolittuu jokaista $3\\,\\text{dB}$:n nousua kohti. Puolittuminen pätee jatkuvasti myös askelten osille, ja tehtävässä samaa sääntöä käytetään korvalle tulevaan tasoon kuulonsuojainten alla. Päivän melualtistuksen annos on $100\\,\\%$, kun se vastaa tasoa $85\\,\\text{dB}$ kahdeksan tunnin ajan.\n\nJärjestyksenvalvojalla on vaahtomuovitulpat, joiden vaimennus on valmistajan mukaan $22\\,\\text{dB}$. Oletetaan, että tulppien todellinen vaimennus käytössä on $10\\,\\text{dB}$ pienempi, koska tulppia ei usein aseteta korvakäytävään kunnolla.",
+   "source_note": "Tilanne ja mittaustulokset on laadittu esimerkiksi. Toiminta-arvot ovat työmelua koskevasta valtioneuvoston asetuksesta (85/2006): alempi toiminta-arvo on $80\\,\\text{dB(A)}$ ja ylempi $85\\,\\text{dB(A)}$, ja altistuksen raja-arvo $87\\,\\text{dB(A)}$ koskee korvalle tulevaa melua kuulonsuojainten vaimennus huomioon ottaen. Toiminta-arvot eivät ole turvallisia altistusrajoja vaan tasoja, joilla työnantajan velvoitteet alkavat. Tulppien vaimennuksen $10\\,\\text{dB}$:n vähennys on tehtävän oletus; käytössä mitattu vaimennus jää yleisesti valmistajan arvoa pienemmäksi.",
+   "text": "Kesäfestivaalin järjestyksenvalvoja työskentelee lavan edessä $10\\,\\text{m}$:n päässä kaiutintornista. Hänen kohdallaan mitattu keskimääräinen melutaso on $103\\,\\text{dB}$, ja hänen vuoronsa lavan edessä kestää $4{,}0\\,\\text{h}$. Muun työpäivän hän on hiljaisessa paikassa, jonka melua ei tarvitse ottaa huomioon.\n\nMelutasot ovat melumittarilla mitattuja A-painotettuja äänenpainetasoja. Tehtävässä ne oletetaan vapaan äänikentän tasoiksi, joten niitä käsitellään äänen intensiteettitasoina. Työmelun ylempi toiminta-arvo on $85\\,\\text{dB}$. Tehtävässä vertailuaika tarkoittaa laskennallista aikaa, jossa korvaan kertyy sama energia-annos kuin kahdeksassa tunnissa tasolla $85\\,\\text{dB}$. Vertailuaika puolittuu jokaista $3\\,\\text{dB}$:n nousua kohti. Puolittuminen pätee jatkuvasti myös askelten osille, ja tehtävässä samaa sääntöä käytetään korvalle tulevaan tasoon kuulonsuojainten alla. Päivän melualtistuksen annos on $100\\,\\%$, kun se vastaa tasoa $85\\,\\text{dB}$ kahdeksan tunnin ajan. Tätä vertailuannosta pienempikään annos ei takaa kuulon turvallisuutta.\n\nJärjestyksenvalvojalla on vaahtomuovitulpat, joiden vaimennus on valmistajan mukaan $22\\,\\text{dB}$. Oletetaan, että tulppien todellinen vaimennus käytössä on $10\\,\\text{dB}$ pienempi, koska tulppia ei usein aseteta korvakäytävään kunnolla.",
    "parts": [
     {
      "id": "a",
@@ -1026,7 +1026,7 @@
      "id": "b",
      "kind": "calc",
      "points": 4,
-     "text": "Kuinka kauan järjestyksenvalvoja saisi päivittäin olla lavan edessä ilman kuulonsuojaimia? Riittävätkö tulpat neljän tunnin vuoroon, kun otetaan huomioon niiden todellinen vaimennus?",
+     "text": "Kuinka pitkässä ajassa järjestyksenvalvojalle kertyisi lavan edessä ilman kuulonsuojaimia vertailuannos? Jääkö neljän tunnin vuoron annos tulppien kanssa vertailuannoksen alle, kun otetaan huomioon niiden todellinen vaimennus?",
      "answer": [
       {
        "name": "ilman",
@@ -1043,7 +1043,7 @@
      ],
      "criteria": [
       {
-       "text": "Laskee $3\\,\\text{dB}$:n askelten määrän: $103\\,\\text{dB}$ on kuusi askelta toiminta-arvon yläpuolella, joten sallittu aika puolittuu kuusi kertaa.",
+       "text": "Laskee $3\\,\\text{dB}$:n askelten määrän: $103\\,\\text{dB}$ on kuusi askelta toiminta-arvon yläpuolella, joten vertailuaika puolittuu kuusi kertaa.",
        "tag": "transfer",
        "points": 1
       },
@@ -1053,14 +1053,14 @@
        "detail": "$t = 8\\,\\text{h} : 2^6 = 0{,}125\\,\\text{h} = 7{,}5\\,\\text{min}$."
       },
       {
-       "text": "Todellinen vaimennus $12\\,\\text{dB}$ antaa korvalle tason $91\\,\\text{dB}$, jolla sallittu aika on $2{,}0\\,\\text{h}$.",
+       "text": "Todellinen vaimennus $12\\,\\text{dB}$ antaa korvalle tason $91\\,\\text{dB}$, jolla vertailuaika on $2{,}0\\,\\text{h}$.",
        "tag": "math",
        "points": 1
       },
       {
        "key": "conclusion",
        "points": 1,
-       "detail": "Tulpat eivät riitä: neljän tunnin vuoro on kaksi kertaa sallittu aika."
+       "detail": "Annos ei jää vertailuannoksen alle: neljän tunnin vuoro on kaksi kertaa vertailuaika, joten tulpat eivät riitä."
       }
      ]
     },
@@ -1068,7 +1068,7 @@
      "id": "c",
      "kind": "calc",
      "points": 4,
-     "text": "Järjestäjä siirtää vartiopaikan $25\\,\\text{m}$:n päähän kaiutintornista. Kuinka suuri melutaso uudella paikalla on? Riittävätkö tulpat nyt neljän tunnin vuoroon? Pidä kaiutintornia pistemäisenä lähteenä ja jätä heijastukset huomiotta.",
+     "text": "Järjestäjä siirtää vartiopaikan $25\\,\\text{m}$:n päähän kaiutintornista. Kuinka suuri melutaso uudella paikalla on? Jääkö neljän tunnin vuoron annos tulppien kanssa nyt vertailuannoksen alle? Pidä kaiutintornia pistemäisenä lähteenä ja jätä heijastukset huomiotta.",
      "answer": {
       "value": 95.0,
       "unit": "dB",
@@ -1086,14 +1086,14 @@
        "detail": "$L \\approx 95\\,\\text{dB}$."
       },
       {
-       "text": "Tulppien kanssa korvalle tulee $83\\,\\text{dB}$, jolla sallittu aika on noin $13\\,\\text{h}$; tai: neljän tunnin raja on $88\\,\\text{dB}$.",
+       "text": "Tulppien kanssa korvalle tulee $83\\,\\text{dB}$, jolla vertailuaika on noin $13\\,\\text{h}$; tai: neljän tunnin vertailutaso on $88\\,\\text{dB}$.",
        "tag": "math",
        "points": 1
       },
       {
        "key": "conclusion",
        "points": 1,
-       "detail": "Tulpat riittävät, kun niitä pidetään koko vuoron ajan."
+       "detail": "Annos jää vertailuannoksen alle, kun tulppia pidetään koko vuoron ajan."
       }
      ]
     },
@@ -1101,7 +1101,7 @@
      "id": "d",
      "kind": "calc",
      "points": 4,
-     "text": "Uudellakin paikalla järjestyksenvalvoja ottaa tulpat pois $15$ minuutiksi joka tunti puhuakseen radiopuhelimeen. Kuinka monta prosenttia vuoron melualtistus on sallitusta annoksesta?",
+     "text": "Uudellakin paikalla järjestyksenvalvoja ottaa tulpat pois $15$ minuutiksi joka tunti puhuakseen radiopuhelimeen. Kuinka monta prosenttia vuoron melualtistus on vertailuannoksesta?",
      "answer": {
       "value": 150,
       "unit": "%",
@@ -1109,14 +1109,14 @@
      },
      "criteria": [
       {
-       "text": "Laskee annoksen kunkin jakson altistusajan ja sen tason sallitun ajan suhteiden summana.",
+       "text": "Laskee annoksen kunkin jakson altistusajan ja sen tason vertailuajan suhteiden summana.",
        "tag": "transfer",
        "points": 1
       },
       {
        "key": "calculation",
        "points": 1,
-       "detail": "Tasolla $95\\,\\text{dB}$ sallittu aika on noin $48\\,\\text{min}$, joten yksi tunti ilman tulppia antaa noin $126\\,\\%$."
+       "detail": "Tasolla $95\\,\\text{dB}$ vertailuaika on noin $48\\,\\text{min}$, joten yksi tunti ilman tulppia antaa noin $126\\,\\%$."
       },
       {
        "text": "Kolme tuntia tulppien kanssa antaa $3{,}0\\,\\text{h} : 12{,}7\\,\\text{h} \\approx 24\\,\\%$.",
@@ -1126,7 +1126,7 @@
       {
        "key": "units_precision",
        "points": 1,
-       "detail": "Annos on noin $150\\,\\%$ eli yli sallitun."
+       "detail": "Annos on noin $150\\,\\%$ eli yli vertailuannoksen."
       }
      ]
     },
@@ -1144,7 +1144,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "Korvalle tulee $78\\,\\text{dB}$, sallittu aika on noin $40\\,\\text{h}$ ja annos noin $10\\,\\%$."
+       "detail": "Korvalle tulee $78\\,\\text{dB}$, vertailuaika on noin $40\\,\\text{h}$ ja annos noin $10\\,\\%$."
       },
       {
        "key": "conclusion",

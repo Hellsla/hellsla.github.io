@@ -215,13 +215,13 @@ A small sound source that radiates evenly in all directions is a point source. W
   <foreignObject x="42" y="311.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$0$</div></foreignObject>
 </svg>
 
-<figure class="unit-photo"><img src="pics/fy5/sound-level-meter-park.webp" alt="People sit on benches under trees in a park. A red digital display on a post reads 62 dB."><figcaption>A noise display in the People's Park in Chengdu, China. The display shows the sound intensity level in decibels. $62\,\text{dB}$ is about the level of normal conversation.</figcaption></figure>
+<figure class="unit-photo"><img src="pics/fy5/sound-level-meter-park.webp" alt="People sit on benches under trees in a park. A red digital display on a post reads 62 dB."><figcaption>A noise display in the People's Park in Chengdu, China. The display shows the sound level in decibels. Such meters usually show the A-weighted sound pressure level, which outdoors in a free sound field is numerically about the same as the sound intensity level. $62\,\text{dB}$ is about the level of normal conversation.</figcaption></figure>
 
 ### Threshold of hearing and threshold of pain
-The human ear is astonishingly sensitive. The weakest sound that a young person with normal hearing can distinguish at a frequency of about $1000\,\text{Hz}$ has an intensity of about $I_0 = 1.0 \cdot 10^{-12}\,\text{W/m}^2$. This is called the **threshold of hearing**. The threshold of hearing is not silence but the weakest audible sound, and it is different at different frequencies. The loudest sounds begin to feel painful when the intensity is about $1\,\text{W/m}^2$. This threshold of pain is a trillion, that is $10^{12}$, times the threshold of hearing. Such a wide range is hard to present on an ordinary scale.
+The human ear is astonishingly sensitive. The weakest sound that a young person with normal hearing can distinguish at a frequency of about $1000\,\text{Hz}$ has an intensity of about $I_0 = 1.0 \cdot 10^{-12}\,\text{W/m}^2$. This is called the **threshold of hearing**. The threshold of hearing is not silence but the weakest audible sound, and it is different at different frequencies. The loudest sounds begin to feel painful when the intensity is about $1\,\text{W/m}^2$. This threshold of pain is a trillion, that is $10^{12}$, times the threshold of hearing. Both thresholds vary from person to person and with frequency, so these values are agreed approximate values, not constants of nature. Such a wide range is hard to present on an ordinary scale.
 
 ### The decibel scale
-That is why the loudness of a sound is described by the **sound intensity level** $L$, which compares the intensity with the threshold of hearing by means of a logarithm. The unit of the level is the **decibel** ($\text{dB}$). At the threshold of hearing the level is $0\,\text{dB}$, at the threshold of pain $120\,\text{dB}$. The scale is logarithmic: every time the intensity increases tenfold, $10\,\text{dB}$ is added to the level. A conversation, about $60\,\text{dB}$, is therefore not half of the threshold of pain but a millionth of its intensity. The ear also senses loudness roughly logarithmically: an increase of about $10\,\text{dB}$ sounds roughly twice as loud, even though the intensity increases tenfold.
+That is why the loudness of a sound is described by the **sound intensity level** $L$, which compares the intensity with the threshold of hearing by means of a logarithm. The unit of the level is the **decibel** ($\text{dB}$). At the threshold of hearing the level is about $0\,\text{dB}$, at the threshold of pain about $120\,\text{dB}$. The scale is logarithmic: every time the intensity increases tenfold, $10\,\text{dB}$ is added to the level. A conversation, about $60\,\text{dB}$, is therefore not half of the threshold of pain but a millionth of its intensity. The ear also senses loudness roughly logarithmically: an increase of about $10\,\text{dB}$ sounds roughly twice as loud, even though the intensity increases tenfold.
 
 <svg data-fig="asteikko" viewBox="0 0 600 396" role="img" aria-label="Schematic figure: the scale of the sound intensity level as a vertical bar that darkens from bottom to top. At the bottom 0 dB, that is an intensity of 10 to the power minus 12 watts per square metre, the threshold of hearing. For every 20 decibels the intensity is a hundred times greater: 20 dB whisper, 40 dB quiet room, 60 dB conversation, 80 dB busy street, 100 dB chainsaw and at the top 120 dB, that is 1 watt per square metre, the threshold of pain. The example sounds are typical orders of magnitude." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy515-bar" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#ffc078" stop-opacity="0.35"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
@@ -265,7 +265,10 @@ That is why the loudness of a sound is described by the **sound intensity level*
   <foreignObject x="400" y="53.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$1$</div></foreignObject>
 </svg>
 
-The ear is not equally sensitive to all frequencies: low and very high sounds seem quieter at the same intensity than sounds of about $1000$–$4000\,\text{Hz}$. Sound level meters therefore weight the frequencies according to the sensitivity of the ear, and such a weighted reading is written $\text{dB(A)}$. In this chapter we calculate unweighted sound intensity levels. The effects of noise and the protection of hearing are covered in the chapter *Noise, acoustics and sound reproduction*.
+The ear is not equally sensitive to all frequencies: low and very high sounds seem quieter at the same intensity than sounds of about $1000$–$4000\,\text{Hz}$. Sound level meters therefore weight the frequencies according to the sensitivity of the ear, and such a weighted reading is written $\text{dB(A)}$. Ordinary sound level meters often show the A-weighted sound pressure level. In this chapter we calculate unweighted sound intensity levels.
+
+### What a meter measures
+The microphone of a meter does not measure intensity but sound pressure, the variation of air pressure. From it the **sound pressure level** is calculated, which compares the sound pressure with the reference pressure $p_0 = 20\,\mu\text{Pa}$, whereas the sound intensity level compares the intensity with the reference intensity $I_0$. The levels are related, but they are not the same quantity. In a freely travelling sound wave, for example outdoors far from reflecting surfaces, their numerical values are about the same with these reference values. In a reverberant room reflected waves travel in many directions: they increase the sound pressure, but their energy flows partly cancel, so the levels can differ. The calculations of this chapter assume an ideal sound field: sound travels freely without reflections, and the meter reading is treated as the sound intensity level. The effects of noise and the protection of hearing are covered in the chapter *Noise, acoustics and sound reproduction*.
 
 ## Formula: Sound intensity level
 
@@ -285,7 +288,7 @@ The sound intensity level in decibels is
 ```latex
 L = 10\,\text{dB} \cdot \lg \frac{I}{I_0}
 ```
-where $L$ is the sound intensity level ($\text{dB}$), $I$ the intensity and $I_0 = 1.0 \cdot 10^{-12}\,\text{W/m}^2$ the threshold of hearing. The notation $\lg$ is the base-ten logarithm: $\lg x$ tells you to what power $10$ must be raised to get $x$. For example $\lg 1000 = 3$, because $10^3 = 1000$, and $\lg 1 = 0$, so $I = I_0$ gives the level $0\,\text{dB}$.
+where $L$ is the sound intensity level ($\text{dB}$), $I$ the intensity and $I_0 = 1.0 \cdot 10^{-12}\,\text{W/m}^2$ the agreed reference intensity, which corresponds approximately to the threshold of hearing. The notation $\lg$ is the base-ten logarithm: $\lg x$ tells you to what power $10$ must be raised to get $x$. For example $\lg 1000 = 3$, because $10^3 = 1000$, and $\lg 1 = 0$, so $I = I_0$ gives the level $0\,\text{dB}$.
 
 ### Intensity from a known level
 When the level is known, the intensity is solved in two steps. First the equation is divided on both sides by $10\,\text{dB}$. Then the definition of the logarithm is used: if $\lg x = y$, then $x = 10^y$. Finally we multiply by $I_0$:
@@ -417,11 +420,11 @@ When two independent sound sources, for example two machines or two players, are
 </svg>
 
 ## Worked example
-At an open-air concert a decibel meter reads $96\,\text{dB}$ at a distance of $10\,\text{m}$ from a loudspeaker tower. What is the intensity of the sound at the meter, and what is the sound power of the loudspeaker tower? Assume that the tower radiates like a point source evenly in all directions and the sound is neither reflected nor absorbed.
+At an open-air concert a decibel meter reads $96\,\text{dB}$ at a distance of $10\,\text{m}$ from a loudspeaker tower. What is the intensity of the sound at the meter, and what is the sound power of the loudspeaker tower? Assume that the tower radiates like a point source evenly in all directions and the sound is neither reflected nor absorbed, so the meter reading can be treated as the sound intensity level.
 
 <!-- vaihe -->
 
-**Given and asked.** The sound intensity level is $L = 96\,\text{dB}$, the distance $r = 10\,\text{m}$ and the threshold of hearing $I_0 = 1.0 \cdot 10^{-12}\,\text{W/m}^2$. We are asked for the intensity $I$ and the sound power $P$ of the source.
+**Given and asked.** The meter reading, which in a free sound field is the sound intensity level, is $L = 96\,\text{dB}$, the distance $r = 10\,\text{m}$ and the threshold of hearing $I_0 = 1.0 \cdot 10^{-12}\,\text{W/m}^2$. We are asked for the intensity $I$ and the sound power $P$ of the source.
 
 <!-- vaihe -->
 
@@ -464,7 +467,7 @@ At an open-air concert a decibel meter reads $96\,\text{dB}$ at a distance of $1
 
 <!-- vaihe -->
 
-**Answer.** The intensity is about $4.0 \cdot 10^{-3}\,\text{W/m}^2$ and the sound power of the loudspeaker tower about $5.0\,\text{W}$. The results are given to two significant figures, because the level $96\,\text{dB}$ and the distance $10\,\text{m}$ are given to two figures; a difference of just $1\,\text{dB}$ in the level would change the power by about a quarter.
+**Answer.** The intensity is about $4.0 \cdot 10^{-3}\,\text{W/m}^2$ and the sound power of the loudspeaker tower about $5.0\,\text{W}$. The results are given to two significant figures, because the level $96\,\text{dB}$ is given in whole decibels: a difference of just $1\,\text{dB}$ in the level would change the intensity and the power by about a quarter. So the level limits the precision. The notation $10\,\text{m}$ does not show how precisely the distance was measured, so it is assumed to be at least as precise as the level.
 
 <!-- vaihe -->
 
@@ -477,7 +480,8 @@ Another mistake is to think that a double decibel reading means a double sound. 
 
 ## Summary
 - Intensity is power per unit area: $I = \tfrac{P}{A}$, unit $\text{W/m}^2$. For a point source without reflections $I = \tfrac{P}{4\pi r^2}$: twice the distance gives a quarter of the intensity.
-- The threshold of hearing $I_0 = 1.0 \cdot 10^{-12}\,\text{W/m}^2$ is the weakest audible sound, and the threshold of pain is about $1\,\text{W/m}^2$.
+- The reference intensity $I_0 = 1.0 \cdot 10^{-12}\,\text{W/m}^2$ corresponds approximately to the threshold of hearing, the weakest audible sound, and the threshold of pain is about $1\,\text{W/m}^2$. The thresholds are agreed approximate values that vary with the person and the frequency.
+- A sound level meter measures the sound pressure level (often $\text{dB(A)}$). In a freely travelling wave it is numerically about the same as the sound intensity level, in a reverberant room not necessarily.
 - The sound intensity level is $L = 10\,\text{dB} \cdot \lg \tfrac{I}{I_0}$. Doubling the intensity raises the level by about $3\,\text{dB}$, a tenfold intensity by $10\,\text{dB}$.
 - Intensity from the level: $I = I_0 \cdot 10^{\,L/(10\,\text{dB})}$.
 - The intensities of independent sources are added, the decibels are not.

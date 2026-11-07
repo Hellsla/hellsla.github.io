@@ -20,7 +20,7 @@
     {
       "id": "fy5-15-L1-03",
       "level": 1,
-      "text": "Moottoripyörän ohittaessa jalankulkijan desibelimittari näyttää $95\\,\\text{dB}$. Kuinka suuri on äänen intensiteetti mittarin kohdalla? Anna vastaus yksikössä $\\text{W/m}^2$.",
+      "text": "Moottoripyörän ohittaessa jalankulkijan desibelimittari näyttää $95\\,\\text{dB}$. Ääni etenee ulkona vapaasti, joten lukemaa voi käsitellä intensiteettitasona. Kuinka suuri on äänen intensiteetti mittarin kohdalla? Anna vastaus yksikössä $\\text{W/m}^2$.",
       "answer": 0.0032,
       "unit": "W/m²",
       "tolerance": 0.02

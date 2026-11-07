@@ -1,10 +1,10 @@
 ## fy5-16-L1-01
 **Given:** noise level $L = 91\,\text{dB}$; reference $L_0 = 85\,\text{dB}$ and $t_0 = 8\,\text{h}$
-**Find:** the permitted daily time $t_\text{perm}$ in hours
+**Find:** the daily reference time $t_\text{ref}$ in hours
 **Principle:** Noise exposure is calculated as an average of energy: every rise of $3\,\text{dB}$ doubles the intensity, so the same dose is reached in half the time.
-**Formula:** $t_\text{perm} = \dfrac{t_0}{2^{\,n}}$, where $n = \dfrac{L - L_0}{3\,\text{dB}}$
+**Formula:** $t_\text{ref} = \dfrac{t_0}{2^{\,n}}$, where $n = \dfrac{L - L_0}{3\,\text{dB}}$
 **Conversions:** Not needed: the levels are in decibels and the time comes out in hours.
-**Substitution:** $n = \dfrac{91\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = 2$, $t_\text{perm} = \dfrac{8\,\text{h}}{2^2} = 2.0\,\text{h}$
+**Substitution:** $n = \dfrac{91\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = 2$, $t_\text{ref} = \dfrac{8\,\text{h}}{2^2} = 2.0\,\text{h}$
 **Answer:** $2.0\,\text{h}$. The levels are whole decibels and the rule is an estimate, so two significant figures are enough.
 **Reasonableness:** Two halvings: $8\,\text{h} \to 4\,\text{h} \to 2\,\text{h}$. The intensity is four times as great, and $4 \cdot 2\,\text{h} = 8\,\text{h}$, so the dose is the same as in the reference.
 
@@ -36,7 +36,7 @@
 **Conversions:** Not needed.
 **Substitution:** $L = 106\,\text{dB} - 23\,\text{dB} = 83\,\text{dB}$
 **Answer:** $83\,\text{dB}$, in whole decibels like the given values.
-**Reasonableness:** The level stays below the upper action value $85\,\text{dB}$, so the protectors are enough for the whole working day if they are well fitted and worn all the time. Without protectors the permitted time would be about $4\,\text{min}$.
+**Reasonableness:** The level stays below the upper action value $85\,\text{dB}$, so the dose of the upper action value is not reached during the working day if the protectors are well fitted and worn all the time. The level is still above the lower action value $80\,\text{dB}$, and staying below the reference dose does not guarantee safe hearing. Without protectors the reference time would be about $4\,\text{min}$.
 
 ## fy5-16-L1-05
 **Find:** whether each measure belongs to the source, the path or the ear
@@ -45,23 +45,23 @@
 
 ## fy5-16-L2-01
 **Given:** two identical machines, each $L_1 = 85\,\text{dB}$; reference $L_0 = 85\,\text{dB}$ and $t_0 = 8\,\text{h}$
-**Find:** the permitted daily time $t_\text{perm}$ in hours
-**Principle:** The intensities of two equally strong sources add, so the intensity doubles and the level rises by about $3\,\text{dB}$. Then every $3\,\text{dB}$ above the action value halves the permitted time.
-**Formula:** $L = L_1 + 3\,\text{dB}$ and $t_\text{perm} = \dfrac{t_0}{2^{\,n}}$, where $n = \dfrac{L - L_0}{3\,\text{dB}}$
+**Find:** the daily reference time $t_\text{ref}$ in hours
+**Principle:** The intensities of two equally strong sources add, so the intensity doubles and the level rises by about $3\,\text{dB}$. Then every $3\,\text{dB}$ above the action value halves the reference time.
+**Formula:** $L = L_1 + 3\,\text{dB}$ and $t_\text{ref} = \dfrac{t_0}{2^{\,n}}$, where $n = \dfrac{L - L_0}{3\,\text{dB}}$
 **Conversions:** Not needed.
-**Substitution:** $L = 85\,\text{dB} + 3\,\text{dB} = 88\,\text{dB}$, $n = \dfrac{88\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = 1$, $t_\text{perm} = \dfrac{8\,\text{h}}{2^1} = 4.0\,\text{h}$
+**Substitution:** $L = 85\,\text{dB} + 3\,\text{dB} = 88\,\text{dB}$, $n = \dfrac{88\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = 1$, $t_\text{ref} = \dfrac{8\,\text{h}}{2^1} = 4.0\,\text{h}$
 **Answer:** $4.0\,\text{h}$. The rule is an estimate, so two significant figures are enough.
 **Reasonableness:** The second machine brings as much energy again, so the total energy builds up twice as fast and the dose is reached in half the time. The result is consistent: $2 \cdot 4\,\text{h} = 8\,\text{h}$.
 
 ## fy5-16-L2-02
 **Given:** level at the ear $L = 94\,\text{dB}$, listening time $t = 1.5\,\text{h}$; reference $L_0 = 85\,\text{dB}$ and $t_0 = 8\,\text{h}$
 **Find:** the dose as a percentage of the reference dose
-**Principle:** First calculate the permitted time at a level of $94\,\text{dB}$: in that time exactly the reference dose builds up. The share of the dose is the ratio of the listening time to the permitted time, because the level is the same all the time.
-**Formula:** $t_\text{perm} = \dfrac{t_0}{2^{\,n}}$, where $n = \dfrac{L - L_0}{3\,\text{dB}}$, and share $= \dfrac{t}{t_\text{perm}} \cdot 100\,\%$
+**Principle:** First calculate the reference time at a level of $94\,\text{dB}$: in that time exactly the reference dose builds up. The share of the dose is the ratio of the listening time to the reference time, because the level is the same all the time.
+**Formula:** $t_\text{ref} = \dfrac{t_0}{2^{\,n}}$, where $n = \dfrac{L - L_0}{3\,\text{dB}}$, and share $= \dfrac{t}{t_\text{ref}} \cdot 100\,\%$
 **Conversions:** Not needed: the times are in hours, and the unit cancels.
-**Substitution:** $n = \dfrac{94\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = 3$, $t_\text{perm} = \dfrac{8\,\text{h}}{2^3} = 1.0\,\text{h}$, share $= \dfrac{1.5\,\text{h}}{1.0\,\text{h}} \cdot 100\,\% = 150\,\%$
+**Substitution:** $n = \dfrac{94\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = 3$, $t_\text{ref} = \dfrac{8\,\text{h}}{2^3} = 1.0\,\text{h}$, share $= \dfrac{1.5\,\text{h}}{1.0\,\text{h}} \cdot 100\,\% = 150\,\%$
 **Answer:** $150\,\%$, two significant figures as in the time $1.5\,\text{h}$.
-**Reasonableness:** The listening time is longer than the permitted time, so the dose exceeds the reference, that is, more than $100\,\%$ is expected. If the sound were lowered by $3\,\text{dB}$, the dose would be halved to $75\,\%$.
+**Reasonableness:** The listening time is longer than the reference time, so the dose exceeds the reference, that is, more than $100\,\%$ is expected. If the sound were lowered by $3\,\text{dB}$, the dose would be halved to $75\,\%$.
 
 ## fy5-16-L2-03
 **Given:** $L_1 = 78\,\text{dB}$ at a distance $r_1 = 2.0\,\text{m}$, desired level $L_2 = 60\,\text{dB}$; point source in an open space
@@ -94,16 +94,16 @@ $85\,\text{dB} - 79\,\text{dB} = 6\,\text{dB}$
 
 $79\,\text{dB} - 74\,\text{dB} = 5\,\text{dB}$
 
-All the differences are close to the expected $6.0\,\text{dB}$, and the largest deviation, $1\,\text{dB}$, is smaller than the uncertainty of the difference, $2\,\text{dB}$. So even the smaller drop in the last interval does not show that the sound is damped more slowly farther away. The level does not halve: half of $91\,\text{dB}$ would be about $46\,\text{dB}$, while $85\,\text{dB}$ was measured. At the distance $4.0\,\text{m}$ the reading is $85\,\text{dB}$, but because of the uncertainty the real level can be $84$–$86\,\text{dB}$, so the upper action value may be exceeded, and the measurement does not show working for $8\,\text{h}$ to be safe.
+All the differences are close to the expected $6.0\,\text{dB}$, and the largest deviation, $1\,\text{dB}$, is smaller than the uncertainty of the difference, $2\,\text{dB}$. So even the smaller drop in the last interval does not show that the sound is damped more slowly farther away. The level does not halve: half of $91\,\text{dB}$ would be about $46\,\text{dB}$, while $85\,\text{dB}$ was measured. At the distance $4.0\,\text{m}$ the reading is $85\,\text{dB}$, but because of the uncertainty the real level can be $84$–$86\,\text{dB}$, so the upper action value may be exceeded. Nor is the action value a safety limit, so the measurement does not show working for $8\,\text{h}$ to be safe.
 
 ## fy5-16-L3-01
 **Given:** $t_1 = 4.0\,\text{h}$ at a level $L_1 = 88\,\text{dB}$, $t_2 = 4.0\,\text{h}$ at a level $L_2 = 82\,\text{dB}$; reference $L_0 = 85\,\text{dB}$ and $t_0 = 8\,\text{h}$
 **Find:** the day's dose as a percentage of the reference dose
-**Principle:** The dose is the energy accumulated in the ear, so the shares of the different periods are added. The share of each period is the ratio of its duration to the permitted time at that level.
+**Principle:** The dose is the energy accumulated in the ear, so the shares of the different periods are added. The share of each period is the ratio of its duration to the reference time at that level.
 **Formula:** $t_{\text{perm},i} = \dfrac{t_0}{2^{\,n_i}}$, where $n_i = \dfrac{L_i - L_0}{3\,\text{dB}}$, and dose $= \left(\dfrac{t_1}{t_{\text{perm},1}} + \dfrac{t_2}{t_{\text{perm},2}}\right) \cdot 100\,\%$
 **Conversions:** Not needed: the times are in hours, and the unit cancels.
 **Substitution:** $n_1 = 1$, so $t_{\text{perm},1} = 8\,\text{h} : 2 = 4.0\,\text{h}$. $n_2 = \dfrac{82\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = -1$, so $t_{\text{perm},2} = 8\,\text{h} \cdot 2 = 16\,\text{h}$. Dose $= \left(\dfrac{4.0\,\text{h}}{4.0\,\text{h}} + \dfrac{4.0\,\text{h}}{16\,\text{h}}\right) \cdot 100\,\% = (1 + 0.25) \cdot 100\,\% = 125\,\%$
-**Answer:** $125\,\%$. The times are given to two figures, so the result is an estimate, about $1.3$ times the dose. The upper action value is exceeded, so protectors must be used.
+**Answer:** $125\,\%$. The times are given to two figures, so the result is an estimate, about $1.3$ times the dose. The daily exposure exceeds the upper action value, so hearing protectors must be used and the noise must be reduced.
 **Reasonableness:** The $4\,\text{h}$ at the loading dock alone fill the whole dose, so the result must be over $100\,\%$. The share of the packing room is small, because there the intensity is only a quarter of the intensity at the dock.
 
 ## fy5-16-L3-02
@@ -181,26 +181,26 @@ The wavelengths are $\lambda_{125} = \dfrac{343\,\text{m/s}}{125\,\text{Hz}} = 2
 
 ## fy5-16-L2-07
 **Given:** level at the workstation $L = 109\,\text{dB}$; reference $L_0 = 85\,\text{dB}$ and $t_0 = 8\,\text{h}$; the student's result $1.0\,\text{h}$
-**Find:** a) what is wrong in the student's reasoning; b) the correct permitted time $t_\text{perm}$ in minutes
-**Principle:** Every $3\,\text{dB}$ above the action value halves the permitted time, so the time is divided by two for each step of $3\,\text{dB}$. The steps multiply: the time is divided by the number $2^{\,n}$, not by the number $n$.
-**Formula:** $n = \dfrac{L - L_0}{3\,\text{dB}}$ and $t_\text{perm} = \dfrac{t_0}{2^{\,n}}$
+**Find:** a) what is wrong in the student's reasoning; b) the correct reference time $t_\text{ref}$ in minutes
+**Principle:** Every $3\,\text{dB}$ above the action value halves the reference time, so the time is divided by two for each step of $3\,\text{dB}$. The steps multiply: the time is divided by the number $2^{\,n}$, not by the number $n$.
+**Formula:** $n = \dfrac{L - L_0}{3\,\text{dB}}$ and $t_\text{ref} = \dfrac{t_0}{2^{\,n}}$
 **Conversions:** $1\,\text{h} = 60\,\text{min}$.
 **Substitution:**
 $$\begin{aligned}
 n &= \frac{109\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} \\
 &= 8 \\
-t_\text{perm} &= \frac{8\,\text{h}}{2^{\,8}} \\
+t_\text{ref} &= \frac{8\,\text{h}}{2^{\,8}} \\
 &= \frac{480\,\text{min}}{256} \\
 &= 1.875\,\text{min} \\
 &\approx 1.9\,\text{min}
 \end{aligned}$$
-**Answer:** a) The student calculated the number of steps $n = 8$ correctly but divided the time by $8$. Every step halves the remaining time, so the time is divided by two eight times, that is, altogether by $256$. b) The permitted time is about $1.9\,\text{min}$, just under two minutes.
+**Answer:** a) The student calculated the number of steps $n = 8$ correctly but divided the time by $8$. Every step halves the remaining time, so the time is divided by two eight times, that is, altogether by $256$. b) The reference time is about $1.9\,\text{min}$, just under two minutes.
 **Reasonableness:** The student's result of $1.0\,\text{h}$, that is $60\,\text{min}$, is $32$ times the correct one. In the student's way every additional step would shorten the time less and less, although the energy grows in the same ratio at every step. Check by halving: three halvings take the time $8\,\text{h} \to 1\,\text{h}$, and five more take it $60\,\text{min} \to 1.875\,\text{min}$, eight halvings in all.
 
 ## fy5-16-L3-04
 **Given:** sawing $L_1 = 97\,\text{dB}$, $t_1 = 1.0\,\text{h}$; planing $L_2 = 91\,\text{dB}$, $t_2 = 2.0\,\text{h}$; assembly $L_3 = 85\,\text{dB}$, $t_3 = 3.0\,\text{h}$; reference $L_0 = 85\,\text{dB}$ and $t_0 = 8\,\text{h}$
 **Find:** a) the day's dose as a percentage; b) the smallest attenuation $\Delta L$ of the hearing protectors; c) whether enclosing the saw is enough
-**Principle:** The dose is the energy accumulated in the ear, so the shares of the stages are added. The share is the ratio of the duration to the permitted time at that level. A hearing protector lowers the intensity of all stages by the same factor, so the dose is divided by the number $2^{\,\Delta L / (3\,\text{dB})}$.
+**Principle:** The dose is the energy accumulated in the ear, so the shares of the stages are added. The share is the ratio of the duration to the reference time at that level. A hearing protector lowers the intensity of all stages by the same factor, so the dose is divided by the number $2^{\,\Delta L / (3\,\text{dB})}$.
 **Formula:** $t_{\text{perm},i} = \dfrac{t_0}{2^{\,n_i}}$, where $n_i = \dfrac{L_i - L_0}{3\,\text{dB}}$; dose $D = \sum \dfrac{t_i}{t_{\text{perm},i}}$; condition $\dfrac{D}{2^{\,\Delta L / (3\,\text{dB})}} \le 1$
 **Conversions:** Not needed: the times are in hours, and the unit cancels.
 **Substitution:**
@@ -222,9 +222,9 @@ Part c: the enclosure lowers the level of sawing to $87\,\text{dB}$, whereby $n_
 
 ## fy5-16-L3-05
 **Given:** $L_1 = 112\,\text{dB}$ at a distance $r_1 = 2.0\,\text{m}$, listener at a distance $r_2 = 8.0\,\text{m}$; attenuation of the earplugs $\Delta L = 8\,\text{dB}$; duration of the concert $t = 3.0\,\text{h}$; reference $L_0 = 85\,\text{dB}$ and $t_0 = 8\,\text{h}$
-**Find:** a) the level without earplugs; b) the permitted time with earplugs; c) the dose as a percentage and whether moving to a distance of $16\,\text{m}$ is enough
-**Principle:** The level of a point source falls by $6\,\text{dB}$ every time the distance doubles. The earplugs lower the level reaching the ear by their attenuation, and the permitted time follows from the rule in which every $3\,\text{dB}$ above the action value halves the time. The dose is the ratio of the listening time to the permitted time.
-**Formula:** $L_2 = L_1 - k \cdot 6\,\text{dB}$, where $2^{\,k} = \dfrac{r_2}{r_1}$; $L = L_2 - \Delta L$; $t_\text{perm} = \dfrac{t_0}{2^{\,n}}$, where $n = \dfrac{L - L_0}{3\,\text{dB}}$
+**Find:** a) the level without earplugs; b) the reference time with earplugs; c) the dose as a percentage and whether it stays below the reference dose at a distance of $16\,\text{m}$
+**Principle:** The level of a point source falls by $6\,\text{dB}$ every time the distance doubles. The earplugs lower the level reaching the ear by their attenuation, and the reference time follows from the rule in which every $3\,\text{dB}$ above the action value halves the time. The dose is the ratio of the listening time to the reference time.
+**Formula:** $L_2 = L_1 - k \cdot 6\,\text{dB}$, where $2^{\,k} = \dfrac{r_2}{r_1}$; $L = L_2 - \Delta L$; $t_\text{ref} = \dfrac{t_0}{2^{\,n}}$, where $n = \dfrac{L - L_0}{3\,\text{dB}}$
 **Conversions:** Not needed: $r_2 : r_1 = 8.0\,\text{m} : 2.0\,\text{m} = 4$, so $k = 2$.
 **Substitution:**
 Part a: $L_2 = 112\,\text{dB} - 2 \cdot 6\,\text{dB} = 100\,\text{dB}$.
@@ -232,9 +232,9 @@ Part b: with the earplugs the level is $L = 100\,\text{dB} - 8\,\text{dB} = 92\,
 $$\begin{aligned}
 n &= \frac{92\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} \\
 &= 2.33 \\
-t_\text{perm} &= \frac{8\,\text{h}}{2^{\,2.33}} \\
+t_\text{ref} &= \frac{8\,\text{h}}{2^{\,2.33}} \\
 &= 1.59\,\text{h}
 \end{aligned}$$
-Part c: the dose is $\dfrac{3.0\,\text{h}}{1.59\,\text{h}} = 1.89$, that is, $190\,\%$. At a distance of $16\,\text{m}$ the level is $100\,\text{dB} - 6\,\text{dB} = 94\,\text{dB}$ and with the earplugs in the ears $86\,\text{dB}$. Then $n = \dfrac{1}{3}$, $t_\text{perm} = \dfrac{8\,\text{h}}{2^{1/3}} = 6.35\,\text{h}$ and the dose is $\dfrac{3.0\,\text{h}}{6.35\,\text{h}} = 0.47$, that is, $47\,\%$.
-**Answer:** a) $100\,\text{dB}$. b) $1.6\,\text{h}$, two significant figures as in the attenuation and the duration. c) Standing still at a distance of $8.0\,\text{m}$ the dose is $190\,\%$, which is too much. If the listener keeps the earplugs in also at a distance of $16\,\text{m}$, moving is enough, because the dose falls to about $47\,\%$.
-**Reasonableness:** Without the earplugs the permitted time would be only $8\,\text{h} : 2^5 = 0.25\,\text{h}$, so the attenuation of $8\,\text{dB}$ lengthens it about sixfold, and $1.59\,\text{h} : 0.25\,\text{h} = 6.3 \approx 2^{8/3} = 6.35$.
+Part c: the dose is $\dfrac{3.0\,\text{h}}{1.59\,\text{h}} = 1.89$, that is, $190\,\%$. At a distance of $16\,\text{m}$ the level is $100\,\text{dB} - 6\,\text{dB} = 94\,\text{dB}$ and with the earplugs in the ears $86\,\text{dB}$. Then $n = \dfrac{1}{3}$, $t_\text{ref} = \dfrac{8\,\text{h}}{2^{1/3}} = 6.35\,\text{h}$ and the dose is $\dfrac{3.0\,\text{h}}{6.35\,\text{h}} = 0.47$, that is, $47\,\%$.
+**Answer:** a) $100\,\text{dB}$. b) $1.6\,\text{h}$, two significant figures as in the attenuation and the duration. c) Standing still at a distance of $8.0\,\text{m}$ the dose is $190\,\%$ of the reference dose. If the listener keeps the earplugs in also at a distance of $16\,\text{m}$, the dose falls to about $47\,\%$, below the reference dose. That does not guarantee safe hearing, but it reduces the strain clearly.
+**Reasonableness:** Without the earplugs the reference time would be only $8\,\text{h} : 2^5 = 0.25\,\text{h}$, so the attenuation of $8\,\text{dB}$ lengthens it about sixfold, and $1.59\,\text{h} : 0.25\,\text{h} = 6.3 \approx 2^{8/3} = 6.35$.

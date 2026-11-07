@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "contribution": "Luku soveltaa desibelejä terveyteen ja tekniikkaan: melualtistuksen annos ($3\\,\\text{dB}$:n nousu puolittaa sallitun ajan, työmelun toiminta-arvot asetuksesta 85/2006), melun torjunta lähteessä, kulkutiellä ja korvalla, tilan akustiikka ja jälkikaiunta, vastamelu heikentävänä interferenssinä sekä kaiuttimen ja mikrofonin energianmuunnos.",
+  "contribution": "Luku soveltaa desibelejä terveyteen ja tekniikkaan: melualtistuksen annos ($3\\,\\text{dB}$:n nousu puolittaa vertailuajan, työmelun toiminta-arvot asetuksesta 85/2006), melun torjunta lähteessä, kulkutiellä ja korvalla, tilan akustiikka ja jälkikaiunta, vastamelu heikentävänä interferenssinä sekä kaiuttimen ja mikrofonin energianmuunnos.",
   "learn": [
-    "arvioimaan melun haittoja ja laskemaan sallitun altistusajan melutasosta.",
+    "arvioimaan melun haittoja ja laskemaan melutasosta vertailuajan, jossa ylempää toiminta-arvoa vastaava annos kertyy.",
     "vertailemaan melun torjuntakeinoja lähteessä, kulkutiellä ja korvalla.",
     "selittämään jälkikaiunnan, vastamelun sekä kaiuttimen ja mikrofonin toimintaperiaatteen."
   ],
@@ -55,7 +55,7 @@
         "after": "teoria-1",
         "pending": "Palaute avautuu, kun Teoriatiivistelmän ensimmäinen osa on näkyvissä. Vertaa sitä ennen ennustettasi Tutki-vaiheen taulukkoon."
       },
-      "prompt": "Työmelun ylempi toiminta-arvo vastaa kahdeksan tunnin altistusta melutasolle $85\\,\\text{dB}$. Kuinka kauan suunnilleen saa olla melutasossa $94\\,\\text{dB}$, jotta korvaan kertyy sama äänienergian annos?",
+      "prompt": "Työmelun ylempi toiminta-arvo vastaa kahdeksan tunnin altistusta melutasolle $85\\,\\text{dB}$. Kuinka kauan suunnilleen kestää, että melutasossa $94\\,\\text{dB}$ korvaan kertyy sama äänienergian annos?",
       "choices": [
         {
           "text": "Noin $7\\,\\text{h}$, koska $94\\,\\text{dB}$ on vain noin $10\\,\\%$ enemmän kuin $85\\,\\text{dB}$.",
@@ -117,7 +117,7 @@
       "text": "Taulukossa on melutasoja $L$ ja niitä vastaavat päivittäiset ajat, jotka tuovat korvaan saman äänienergian kuin $8\\,\\text{h}$ tasolla $85\\,\\text{dB}$. Viimeinen sarake kertoo, montako kertaa suurempi intensiteetti on kuin tasolla $85\\,\\text{dB}$.\n\n| $L$ (dB) | aika | intensiteetti |\n|---|---|---|\n| $85$ | $8\\,\\text{h}$ | $1$-kertainen |\n| $88$ | $4\\,\\text{h}$ | $2$-kertainen |\n| $91$ | $2\\,\\text{h}$ | $4$-kertainen |\n| $94$ | $1\\,\\text{h}$ | $8$-kertainen |\n| $97$ | $30\\,\\text{min}$ | $16$-kertainen |\n\nTarkastele, miten aika muuttuu, kun taso kasvaa $3\\,\\text{dB}$, ja mitä intensiteetin ja ajan tulolle tapahtuu.",
       "question": {
         "type": "numeric",
-        "prompt": "Jatka taulukon sääntöä: kuinka monta minuuttia saa olla tasolla $103\\,\\text{dB}$? Vastaa minuutteina.",
+        "prompt": "Jatka taulukon sääntöä: kuinka monessa minuutissa sama annos kertyy tasolla $103\\,\\text{dB}$? Vastaa minuutteina.",
         "answer": 7.5,
         "unit": "min",
         "tolerance": 0.02,
@@ -136,7 +136,7 @@
             "feedback": "Puolitit ajan kerran liikaa. Tasosta $97\\,\\text{dB}$ tasoon $103\\,\\text{dB}$ on kaksi askelta, joten aika puolittuu kahdesti: $30\\,\\text{min}$, sitten $15\\,\\text{min}$ ja lopulta $7{,}5\\,\\text{min}$."
           }
         ],
-        "solution": "**Annettu:** taulukon sääntö: $t_0 = 8\\,\\text{h}$ tasolla $L_0 = 85\\,\\text{dB}$, ja jokainen $3\\,\\text{dB}$:n nousu puolittaa ajan; taso $L = 103\\,\\text{dB}$.\n\n**Kysytty:** sallittu aika $t_\\text{sall}$ minuutteina.\n\n**Periaate:** Taulukossa intensiteetti kaksinkertaistuu ja aika puolittuu jokaisella $3\\,\\text{dB}$:n askeleella, joten intensiteetin ja ajan tulo eli korvaan tuleva energia pysyy samana. Sama sääntö jatkuu suuremmille tasoille.\n\n**Kaava:** $t_\\text{sall} = \\dfrac{t_0}{2^{\\,n}}$, missä $n = \\dfrac{L - L_0}{3\\,\\text{dB}}$\n\n**Muunnokset:** Vastaus pyydetään minuutteina: $t_0 = 8\\,\\text{h} = 8 \\cdot 60\\,\\text{min} = 480\\,\\text{min}$.\n\n**Sijoitus:** $n = \\dfrac{103\\,\\text{dB} - 85\\,\\text{dB}}{3\\,\\text{dB}} = 6$ ja $t_\\text{sall} = \\dfrac{480\\,\\text{min}}{2^6} = \\dfrac{480\\,\\text{min}}{64} = 7{,}5\\,\\text{min}$\n\n**Vastaus:** $7{,}5\\,\\text{min}$. Sääntö on nyrkkisääntö, joten kaksi merkitsevää numeroa riittää.\n\n**Järkevyys:** Taulukon viimeisestä rivistä ($97\\,\\text{dB}$, $30\\,\\text{min}$) päästään kahdella puolituksella: $30\\,\\text{min}$, sitten $15\\,\\text{min}$ ja lopulta $7{,}5\\,\\text{min}$. Intensiteetti on $64$-kertainen, ja $64 \\cdot 7{,}5\\,\\text{min} = 480\\,\\text{min} = 8\\,\\text{h}$, joten annos on sama."
+        "solution": "**Annettu:** taulukon sääntö: $t_0 = 8\\,\\text{h}$ tasolla $L_0 = 85\\,\\text{dB}$, ja jokainen $3\\,\\text{dB}$:n nousu puolittaa ajan; taso $L = 103\\,\\text{dB}$.\n\n**Kysytty:** vertailuaika $t_\\text{v}$ minuutteina.\n\n**Periaate:** Taulukossa intensiteetti kaksinkertaistuu ja aika puolittuu jokaisella $3\\,\\text{dB}$:n askeleella, joten intensiteetin ja ajan tulo eli korvaan tuleva energia pysyy samana. Sama sääntö jatkuu suuremmille tasoille.\n\n**Kaava:** $t_\\text{v} = \\dfrac{t_0}{2^{\\,n}}$, missä $n = \\dfrac{L - L_0}{3\\,\\text{dB}}$\n\n**Muunnokset:** Vastaus pyydetään minuutteina: $t_0 = 8\\,\\text{h} = 8 \\cdot 60\\,\\text{min} = 480\\,\\text{min}$.\n\n**Sijoitus:** $n = \\dfrac{103\\,\\text{dB} - 85\\,\\text{dB}}{3\\,\\text{dB}} = 6$ ja $t_\\text{v} = \\dfrac{480\\,\\text{min}}{2^6} = \\dfrac{480\\,\\text{min}}{64} = 7{,}5\\,\\text{min}$\n\n**Vastaus:** $7{,}5\\,\\text{min}$. Sääntö on nyrkkisääntö, joten kaksi merkitsevää numeroa riittää.\n\n**Järkevyys:** Taulukon viimeisestä rivistä ($97\\,\\text{dB}$, $30\\,\\text{min}$) päästään kahdella puolituksella: $30\\,\\text{min}$, sitten $15\\,\\text{min}$ ja lopulta $7{,}5\\,\\text{min}$. Intensiteetti on $64$-kertainen, ja $64 \\cdot 7{,}5\\,\\text{min} = 480\\,\\text{min} = 8\\,\\text{h}$, joten annos on sama."
       }
     },
     {
@@ -175,7 +175,7 @@
       "stage": "tutki",
       "type": "explain",
       "title": "Johtopäätös: mitä taulukot kertovat?",
-      "prompt": "Kirjoita taulukoiden perusteella: miten sallittu aika muuttuu, kun melutaso nousee $3\\,\\text{dB}$, ja miksi? Mitä luokan mittaus kertoo siitä, miksi kovapintainen tila on meluisa?",
+      "prompt": "Kirjoita taulukoiden perusteella: miten vertailuaika muuttuu, kun melutaso nousee $3\\,\\text{dB}$, ja miksi? Mitä luokan mittaus kertoo siitä, miksi kovapintainen tila on meluisa?",
       "model": "Kun taso nousee $3\\,\\text{dB}$, intensiteetti kaksinkertaistuu ja aika puolittuu, joten intensiteetin ja ajan tulo eli korvaan tuleva energia pysyy samana. Siksi jo tasolla $94\\,\\text{dB}$ sama annos kertyy tunnissa. Luokassa taso pieneni $8\\,\\text{m}$:n matkalla vain $7\\,\\text{dB}$, kun kentällä se pieneni $18\\,\\text{dB}$. Kovat pinnat heijastavat ääntä, ja heijastunut ääni täyttää huoneen, joten kaukanakaan lähteestä ei ole hiljaista. Luvut ovat nyrkkisäännön laskemia arvoja ja keksittyä esimerkkiaineistoa, eivät todellisia mittauksia.",
       "criteria": [
         "Sanon, että $3\\,\\text{dB}$:n nousu kaksinkertaistaa intensiteetin ja puolittaa ajan.",
@@ -269,19 +269,19 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Sovella uuteen tilanteeseen",
-      "prompt": "Kesätyöntekijä avustaa, kun toinen sahaa lautoja sirkkelillä ulkona. Sirkkelin melutaso on $1{,}0\\,\\text{m}$:n etäisyydellä $100\\,\\text{dB}$, ja avustaja seisoo $4{,}0\\,\\text{m}$:n päässä sirkkelistä. Oleta sirkkeli pistemäiseksi lähteeksi avoimessa tilassa. Kuinka monta tuntia päivässä avustaja saa olla tässä melussa ilman kuulonsuojaimia, kun vertailukohtana on ylempi toiminta-arvo? Vastaa tunteina.",
+      "prompt": "Kesätyöntekijä avustaa, kun toinen sahaa lautoja sirkkelillä ulkona. Sirkkelin melutaso on $1{,}0\\,\\text{m}$:n etäisyydellä $100\\,\\text{dB}$, ja avustaja seisoo $4{,}0\\,\\text{m}$:n päässä sirkkelistä. Oleta sirkkeli pistemäiseksi lähteeksi avoimessa tilassa. Kuinka monessa tunnissa avustajalle kertyy tässä melussa ilman kuulonsuojaimia ylempää toiminta-arvoa vastaava päivän annos ($8\\,\\text{h}$ tasolla $85\\,\\text{dB}$)? Vastaa tunteina.",
       "answer": 4.0,
       "unit": "h",
       "tolerance": 0.02,
       "hints": [
         "Laske ensin taso avustajan kohdalla. Montako kertaa etäisyys kaksinkertaistuu, kun $1{,}0\\,\\text{m}$ muuttuu $4{,}0\\,\\text{m}$:ksi?",
-        "Jokainen kaksinkertaistuminen laskee tasoa $6\\,\\text{dB}$: $L = 100\\,\\text{dB} - 2 \\cdot 6\\,\\text{dB}$. Käytä sitten kaavaa $t_\\text{sall} = t_0 / 2^{\\,n}$.",
-        "Avustajan kohdalla $L = 88\\,\\text{dB}$, joten $n = 1$ ja $t_\\text{sall} = 8\\,\\text{h} : 2$."
+        "Jokainen kaksinkertaistuminen laskee tasoa $6\\,\\text{dB}$: $L = 100\\,\\text{dB} - 2 \\cdot 6\\,\\text{dB}$. Käytä sitten kaavaa $t_\\text{v} = t_0 / 2^{\\,n}$.",
+        "Avustajan kohdalla $L = 88\\,\\text{dB}$, joten $n = 1$ ja $t_\\text{v} = 8\\,\\text{h} : 2$."
       ],
       "mistakes": [
         {
           "value": 0.25,
-          "feedback": "Tämä on sallittu aika sirkkelin vieressä tasolla $100\\,\\text{dB}$. Avustaja on kauempana, joten laske ensin taso hänen kohdallaan: etäisyys kaksinkertaistuu kahdesti."
+          "feedback": "Tämä on vertailuaika sirkkelin vieressä tasolla $100\\,\\text{dB}$. Avustaja on kauempana, joten laske ensin taso hänen kohdallaan: etäisyys kaksinkertaistuu kahdesti."
         },
         {
           "value": 1.0,
@@ -292,7 +292,7 @@
           "feedback": "Vähensit tasoa $18\\,\\text{dB}$ eli kolmen kaksinkertaistumisen verran. Kun etäisyys kasvaa $1{,}0\\,\\text{m}$:stä $4{,}0\\,\\text{m}$:iin, se vain kaksi kaksinkertaistumista, joten taso on $88\\,\\text{dB}$."
         }
       ],
-      "solution": "**Annettu:** $L_1 = 100\\,\\text{dB}$ etäisyydellä $r_1 = 1{,}0\\,\\text{m}$, avustajan etäisyys $r_2 = 4{,}0\\,\\text{m}$; vertailu $L_0 = 85\\,\\text{dB}$ ja $t_0 = 8\\,\\text{h}$; pistemäinen lähde avoimessa tilassa.\n\n**Kysytty:** avustajan sallittu päivittäinen aika $t_\\text{sall}$ tunteina.\n\n**Periaate:** Avoimessa tilassa pistemäisen lähteen intensiteetti pienenee neljäsosaan aina, kun etäisyys kaksinkertaistuu, joten taso laskee $6\\,\\text{dB}$ (luku *Intensiteetti ja desibeliasteikko*). Avustajan tasosta saadaan sallittu aika annossäännöllä, jossa jokainen $3\\,\\text{dB}$ puolittaa ajan.\n\n**Kaava:** $L_2 = L_1 - k \\cdot 6\\,\\text{dB}$, missä $2^{\\,k} = \\dfrac{r_2}{r_1}$, ja $t_\\text{sall} = \\dfrac{t_0}{2^{\\,n}}$, missä $n = \\dfrac{L_2 - L_0}{3\\,\\text{dB}}$\n\n**Muunnokset:** Ei tarvita: etäisyydet ovat metreinä, joten niiden suhde on yksikötön, ja aika saadaan suoraan tunteina.\n\n**Sijoitus:** $2^{\\,k} = 4{,}0\\,\\text{m} : 1{,}0\\,\\text{m} = 4$, joten $k = 2$ ja $L_2 = 100\\,\\text{dB} - 2 \\cdot 6\\,\\text{dB} = 88\\,\\text{dB}$. Sitten $n = \\dfrac{88\\,\\text{dB} - 85\\,\\text{dB}}{3\\,\\text{dB}} = 1$ ja $t_\\text{sall} = \\dfrac{8\\,\\text{h}}{2^1} = 4{,}0\\,\\text{h}$\n\n**Vastaus:** $4{,}0\\,\\text{h}$, kaksi merkitsevää numeroa kuten etäisyyksissä $1{,}0\\,\\text{m}$ ja $4{,}0\\,\\text{m}$.\n\n**Järkevyys:** Sirkkelin vieressä tasolla $100\\,\\text{dB}$ aika olisi vain $15\\,\\text{min}$. Avustajan kohdalla intensiteetti on $16$-kertaisesti pienempi, joten aika on $16 \\cdot 15\\,\\text{min} = 240\\,\\text{min} = 4\\,\\text{h}$. Työpäivä on kuitenkin pidempi, joten avustajankin kannattaa käyttää suojaimia."
+      "solution": "**Annettu:** $L_1 = 100\\,\\text{dB}$ etäisyydellä $r_1 = 1{,}0\\,\\text{m}$, avustajan etäisyys $r_2 = 4{,}0\\,\\text{m}$; vertailu $L_0 = 85\\,\\text{dB}$ ja $t_0 = 8\\,\\text{h}$; pistemäinen lähde avoimessa tilassa.\n\n**Kysytty:** avustajan päivittäinen vertailuaika $t_\\text{v}$ tunteina.\n\n**Periaate:** Avoimessa tilassa pistemäisen lähteen intensiteetti pienenee neljäsosaan aina, kun etäisyys kaksinkertaistuu, joten taso laskee $6\\,\\text{dB}$ (luku *Intensiteetti ja desibeliasteikko*). Avustajan tasosta saadaan vertailuaika annossäännöllä, jossa jokainen $3\\,\\text{dB}$ puolittaa ajan.\n\n**Kaava:** $L_2 = L_1 - k \\cdot 6\\,\\text{dB}$, missä $2^{\\,k} = \\dfrac{r_2}{r_1}$, ja $t_\\text{v} = \\dfrac{t_0}{2^{\\,n}}$, missä $n = \\dfrac{L_2 - L_0}{3\\,\\text{dB}}$\n\n**Muunnokset:** Ei tarvita: etäisyydet ovat metreinä, joten niiden suhde on yksikötön, ja aika saadaan suoraan tunteina.\n\n**Sijoitus:** $2^{\\,k} = 4{,}0\\,\\text{m} : 1{,}0\\,\\text{m} = 4$, joten $k = 2$ ja $L_2 = 100\\,\\text{dB} - 2 \\cdot 6\\,\\text{dB} = 88\\,\\text{dB}$. Sitten $n = \\dfrac{88\\,\\text{dB} - 85\\,\\text{dB}}{3\\,\\text{dB}} = 1$ ja $t_\\text{v} = \\dfrac{8\\,\\text{h}}{2^1} = 4{,}0\\,\\text{h}$\n\n**Vastaus:** $4{,}0\\,\\text{h}$, kaksi merkitsevää numeroa kuten etäisyyksissä $1{,}0\\,\\text{m}$ ja $4{,}0\\,\\text{m}$.\n\n**Järkevyys:** Sirkkelin vieressä tasolla $100\\,\\text{dB}$ aika olisi vain $15\\,\\text{min}$. Avustajan kohdalla intensiteetti on $16$-kertaisesti pienempi, joten aika on $16 \\cdot 15\\,\\text{min} = 240\\,\\text{min} = 4\\,\\text{h}$. Työpäivä on kuitenkin pidempi, joten avustajankin kannattaa käyttää suojaimia."
     },
     {
       "id": "harjoitukset",
@@ -338,7 +338,7 @@
       "hints": [
         "Mikä taso korvaan pääsee tulppien läpi?",
         "Korvalla $L = 106\\,\\text{dB} - 15\\,\\text{dB}$. Montako $3\\,\\text{dB}$:n askelta se on tason $85\\,\\text{dB}$ yläpuolella?",
-        "$L = 91\\,\\text{dB}$, joten $n = 2$ ja $t_\\text{sall} = 8\\,\\text{h} : 2^2$."
+        "$L = 91\\,\\text{dB}$, joten $n = 2$ ja $t_\\text{v} = 8\\,\\text{h} : 2^2$."
       ],
       "mistakes": [
         {
@@ -350,7 +350,7 @@
           "feedback": "Aika $4\\,\\text{h}$ vastaa tasoa $88\\,\\text{dB}$. Tulppien läpi korvaan pääsee $106\\,\\text{dB} - 15\\,\\text{dB} = 91\\,\\text{dB}$, joka on kaksi askelta toiminta-arvon yläpuolella."
         }
       ],
-      "solution": "**Annettu:** melutaso $L_\\text{m} = 106\\,\\text{dB}$, tulppien vaimennus $\\Delta L = 15\\,\\text{dB}$; vertailu $L_0 = 85\\,\\text{dB}$ ja $t_0 = 8\\,\\text{h}$.\n\n**Kysytty:** sallittu aika $t_\\text{sall}$ tunteina.\n\n**Periaate:** Tulpat vähentävät korvaan pääsevää tasoa vaimennuksensa verran. Annos riippuu korvalle tulevasta tasosta, ja jokainen $3\\,\\text{dB}$ sen yli, mikä vastaa ylempää toiminta-arvoa, puolittaa sallitun ajan.\n\n**Kaava:** $L = L_\\text{m} - \\Delta L$ ja $t_\\text{sall} = \\dfrac{t_0}{2^{\\,n}}$, missä $n = \\dfrac{L - L_0}{3\\,\\text{dB}}$\n\n**Muunnokset:** Ei tarvita: tasot ovat desibeleinä ja aika saadaan tunteina.\n\n**Sijoitus:** $L = 106\\,\\text{dB} - 15\\,\\text{dB} = 91\\,\\text{dB}$, $n = \\dfrac{91\\,\\text{dB} - 85\\,\\text{dB}}{3\\,\\text{dB}} = 2$ ja $t_\\text{sall} = \\dfrac{8\\,\\text{h}}{2^2} = 2{,}0\\,\\text{h}$\n\n**Vastaus:** $2{,}0\\,\\text{h}$; tasot ovat kokonaisia desibelejä ja sääntö on arvio, joten kaksi merkitsevää numeroa riittää.\n\n**Järkevyys:** Ilman tulppia aika olisi $8\\,\\text{h} : 2^7 \\approx 0{,}063\\,\\text{h}$ eli noin $4\\,\\text{min}$. Vaimennus $15\\,\\text{dB}$ on viisi askelta, joten aika kasvaa $2^5 = 32$-kertaiseksi: $32 \\cdot 3{,}75\\,\\text{min} = 120\\,\\text{min} = 2\\,\\text{h}$."
+      "solution": "**Annettu:** melutaso $L_\\text{m} = 106\\,\\text{dB}$, tulppien vaimennus $\\Delta L = 15\\,\\text{dB}$; vertailu $L_0 = 85\\,\\text{dB}$ ja $t_0 = 8\\,\\text{h}$.\n\n**Kysytty:** vertailuaika $t_\\text{v}$ tunteina.\n\n**Periaate:** Tulpat vähentävät korvaan pääsevää tasoa vaimennuksensa verran. Annos riippuu korvalle tulevasta tasosta, ja jokainen $3\\,\\text{dB}$ sen yli, mikä vastaa ylempää toiminta-arvoa, puolittaa vertailuajan.\n\n**Kaava:** $L = L_\\text{m} - \\Delta L$ ja $t_\\text{v} = \\dfrac{t_0}{2^{\\,n}}$, missä $n = \\dfrac{L - L_0}{3\\,\\text{dB}}$\n\n**Muunnokset:** Ei tarvita: tasot ovat desibeleinä ja aika saadaan tunteina.\n\n**Sijoitus:** $L = 106\\,\\text{dB} - 15\\,\\text{dB} = 91\\,\\text{dB}$, $n = \\dfrac{91\\,\\text{dB} - 85\\,\\text{dB}}{3\\,\\text{dB}} = 2$ ja $t_\\text{v} = \\dfrac{8\\,\\text{h}}{2^2} = 2{,}0\\,\\text{h}$\n\n**Vastaus:** $2{,}0\\,\\text{h}$; tasot ovat kokonaisia desibelejä ja sääntö on arvio, joten kaksi merkitsevää numeroa riittää.\n\n**Järkevyys:** Ilman tulppia aika olisi $8\\,\\text{h} : 2^7 \\approx 0{,}063\\,\\text{h}$ eli noin $4\\,\\text{min}$. Vaimennus $15\\,\\text{dB}$ on viisi askelta, joten aika kasvaa $2^5 = 32$-kertaiseksi: $32 \\cdot 3{,}75\\,\\text{min} = 120\\,\\text{min} = 2\\,\\text{h}$."
     },
     {
       "id": "tarkistus-3",

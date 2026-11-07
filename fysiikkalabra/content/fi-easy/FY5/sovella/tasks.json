@@ -6,14 +6,14 @@
       "title": "Torninosturi",
       "source": "example",
       "source_note": "Nosturin mitat ja massat on keksitty. Ne ovat kuitenkin samaa kokoluokkaa kuin pienessä rakennustyömaan torninosturissa.",
-      "text": "Rakennustyömaan torninosturin vaakasuora puomi on tornin huipulla. Puomi voi kääntyä tornin pystysuoran akselin ympäri. Kuorma roikkuu vaijerissa vaunusta, jota voi ajaa puomia pitkin. Tornin toisella puolella puomi jatkuu vastapuomina. Vastapuomin päässä on betoninen vastapaino.\n\nNosturin tiedot:\n\n- puomin massa vastapuomeineen on $4{,}0\\,\\text{t}$, ja sen painopiste on $12\\,\\text{m}$ tornin akselista kuorman puolella\n- vastapainon massa on $9{,}0\\,\\text{t}$, ja sen painopiste on $10\\,\\text{m}$ tornin akselista toisella puolella\n- vaunun suurin etäisyys tornin akselista on $40\\,\\text{m}$\n- valmistajan mukaan painojen kokonaismomentti tornin akselin suhteen saa olla kumpaan suuntaan tahansa enintään $600\\,\\text{kNm}$.\n\nVaunun ja vaijerin massoja ei tarvitse ottaa huomioon.",
+      "text": "Rakennustyömaan torninosturin vaakasuora puomi on tornin huipulla. Puomi voi kääntyä tornin pystysuoran akselin ympäri. Kuorma roikkuu vaijerissa vaunusta, jota voi ajaa puomia pitkin. Tornin toisella puolella puomi jatkuu vastapuomina. Vastapuomin päässä on betoninen vastapaino.\n\nNosturin tiedot:\n\n- puomin massa vastapuomeineen on $4{,}0\\,\\text{t}$, ja sen painopiste on $12\\,\\text{m}$ tornin akselista kuorman puolella\n- vastapainon massa on $9{,}0\\,\\text{t}$, ja sen painopiste on $10\\,\\text{m}$ tornin akselista toisella puolella\n- vaunun suurin etäisyys tornin akselista on $40\\,\\text{m}$\n- tehtävän nosturimallissa painojen kokonaismomentti momenttiakselin A suhteen saa olla kumpaan suuntaan tahansa enintään $600\\,\\text{kNm}$.\n\nPuomi kääntyy tornin pystysuoran akselin ympäri. Painojen momentit lasketaan kuitenkin vaakasuoran momenttiakselin A suhteen. Akseli A kulkee tornin kohdalla puomin korkeudella. Se on kohtisuorassa puomin pystytasoa vastaan, joten kuvassa se näkyy pisteenä. Vaunun ja vaijerin massoja ei tarvitse ottaa huomioon.\n\nMomenttiraja on tätä tehtävää varten keksitty ideaalinen malli. Ideaalinen malli on yksinkertaistettu kuvaus todellisuudesta. Oikean torninosturin turvallinen kuormitus luetaan valmistajan kuormakaaviosta. Sen mitoituksessa otetaan huomioon myös esimerkiksi tuuli, kuorman heilunta, rakenteiden lujuus ja tornin perustus.",
       "figure": "fy5-sovella/fy5-s1-crane",
       "parts": [
         {
           "id": "a",
           "kind": "calc",
           "points": 3,
-          "text": "Nosturilla nostetaan $2{,}0\\,\\text{t}$:n betonielementti. Kuinka kauas tornin akselista vaunu pitää ajaa, jotta painojen kokonaismomentti tornin akselin suhteen on nolla?",
+          "text": "Nosturilla nostetaan $2{,}0\\,\\text{t}$:n betonielementti. Kuinka kauas tornin akselista vaunu pitää ajaa, jotta painojen kokonaismomentti momenttiakselin A suhteen on nolla?",
           "answer": {
             "value": 21,
             "unit": "m",
@@ -21,7 +21,7 @@
           },
           "criteria": [
             {
-              "text": "Valitsee kiertoakseliksi tornin akselin. Ottaa huomioon kaikki kolme painoa: kuorman, puomin painon sen painopisteessä ja vastapainon. Jokaisen momentti on oikeaan kiertosuuntaan.",
+              "text": "Laskee momentit vaakasuoran momenttiakselin A suhteen. Silloin painojen varret ovat vaakasuoria etäisyyksiä tornin akselista. Ottaa huomioon kaikki kolme painoa: kuorman, puomin painon sen painopisteessä ja vastapainon. Jokaisen momentti on oikeaan kiertosuuntaan.",
               "tag": "transfer",
               "points": 1
             },
@@ -89,7 +89,7 @@
             {
               "key": "conclusion",
               "points": 1,
-              "detail": "Ehdotus ei käy sellaisenaan. Vastapaino mitoitetaan niin, ettei raja ylity tyhjällä eikä täysin kuormatulla nosturilla."
+              "detail": "Ehdotus ei käy sellaisenaan. Tehtävän mallissa vastapaino mitoitetaan niin, ettei raja ylity tyhjällä eikä täysin kuormatulla nosturilla."
             }
           ]
         },
@@ -232,7 +232,7 @@
           "id": "c",
           "kind": "calc",
           "points": 3,
-          "text": "Jupiter pyörähtää akselinsa ympäri kerran $9{,}93\\,\\text{h}$:ssa. Luotain halutaan kiertämään päiväntasaajan yläpuolella niin, että se pysyy koko ajan saman pilvimuodostelman yläpuolella. Kuinka kaukana Jupiterin keskipisteestä luotaimen rata on?",
+          "text": "Jupiter pyörähtää akselinsa ympäri kerran $9{,}93\\,\\text{h}$:ssa. Jupiter ei ole kiinteä kappale. Sen pilvivyöhykkeet kiertävät hieman eri tahdissa. Oletetaan, että tarkasteltava päiväntasaajan pilvimuodostelma kiertää Jupiterin akselin ympäri juuri tällä $9{,}93\\,\\text{h}$:n jaksolla. Luotain halutaan kiertämään päiväntasaajan yläpuolella ympyrärataa niin, että se pysyy koko ajan tämän pilvimuodostelman yläpuolella. Kuinka kaukana Jupiterin keskipisteestä luotaimen rata on?",
           "answer": {
             "value": 160000,
             "unit": "km",
@@ -386,27 +386,27 @@
           "id": "d",
           "kind": "calc",
           "points": 3,
-          "text": "Jouseen ripustetaan $250\\,\\text{g}$:n punnus, ja se pannaan värähtelemään $5{,}0\\,\\text{cm}$:n amplitudilla. Kuinka suuri on punnuksen suurin nopeus?",
+          "text": "Jouseen ripustetaan $250\\,\\text{g}$:n punnus, ja se pannaan värähtelemään $5{,}0\\,\\text{cm}$:n amplitudilla. Oleta samoin kuin c-kohdassa, että jousen oma massa lisää värähtelevää massaa kolmanneksella jousen massasta. Kuinka suuri on punnuksen suurin nopeus?",
           "answer": {
-            "value": 0.446,
+            "value": 0.433,
             "unit": "m/s",
             "tolerance": 0.03
           },
           "criteria": [
             {
-              "text": "Käyttää värähtelyn energiaa. Ääriasennossa energia $\\tfrac{1}{2}kA^2$ on kokonaan jousen potentiaalienergiaa. Tasapainoasemassa se on kokonaan liike-energiaa.",
+              "text": "Käyttää värähtelyn energiaa. Ääriasennossa energia $\\tfrac{1}{2}kA^2$ on kokonaan jousen potentiaalienergiaa. Tasapainoasemassa se on kokonaan liike-energiaa. Värähtelevä massa on $m_\\text{eff} = m + \\tfrac{1}{3}m_\\text{j}$.",
               "tag": "transfer",
               "points": 1
             },
             {
               "key": "equation",
               "points": 1,
-              "detail": "$\\tfrac{1}{2}mv_\\text{max}^2 = \\tfrac{1}{2}kA^2$, josta $v_\\text{max} = A\\sqrt{\\dfrac{k}{m}}$"
+              "detail": "$\\tfrac{1}{2}m_\\text{eff}v_\\text{max}^2 = \\tfrac{1}{2}kA^2$, josta $v_\\text{max} = A\\sqrt{\\dfrac{k}{m_\\text{eff}}}$"
             },
             {
               "key": "units_precision",
               "points": 1,
-              "detail": "$v_\\text{max} \\approx 0{,}45\\,\\text{m/s}$"
+              "detail": "$v_\\text{max} \\approx 0{,}43\\,\\text{m/s}$"
             }
           ]
         }
@@ -520,7 +520,7 @@
           "id": "d",
           "kind": "calc",
           "points": 4,
-          "text": "Pillien edessä $4{,}0\\,\\text{m}$:n etäisyydellä mitattiin urkujen soidessa täysillä intensiteettitasoksi $88\\,\\text{dB}$. Urkuri istuu $2{,}0\\,\\text{m}$:n päässä pilleistä ja harjoittelee kolme tuntia päivässä. Arvioi urkurin sallittu päivittäinen altistusaika. Oleta, että urut säteilevät äänen tasaisesti joka suuntaan yhdestä pisteestä ja soivat koko harjoituksen ajan yhtä voimakkaasti. Riittääkö sallittu aika?",
+          "text": "Pillien edessä $4{,}0\\,\\text{m}$:n etäisyydellä mitattiin urkujen soidessa täysillä melumittarilla äänitasoksi $88\\,\\text{dB}$. Urkuri istuu $2{,}0\\,\\text{m}$:n päässä pilleistä ja harjoittelee kolme tuntia päivässä. Oleta, että urut säteilevät äänen tasaisesti joka suuntaan yhdestä pisteestä. Oleta myös, että ääni etenee vapaasti ilman heijastuksia. Silloin äänitasoa voi käsitellä intensiteettitasona. Urut soivat koko harjoituksen ajan yhtä voimakkaasti. Arvioi, kuinka pitkässä ajassa urkurille kertyy sama energia-annos kuin kahdeksassa tunnissa työmelun ylemmän toiminta-arvon $85\\,\\text{dB}$ tasolla. Jääkö kolmen tunnin harjoituksen annos tätä vertailuannosta pienemmäksi?",
           "answer": {
             "value": 1.0,
             "unit": "h",
@@ -535,17 +535,17 @@
             {
               "key": "equation",
               "points": 1,
-              "detail": "$n = \\dfrac{L - 85\\,\\text{dB}}{3\\,\\text{dB}}$ ja $t_\\text{sall} = \\dfrac{8\\,\\text{h}}{2^{\\,n}}$"
+              "detail": "$n = \\dfrac{L - 85\\,\\text{dB}}{3\\,\\text{dB}}$ ja $t_\\text{v} = \\dfrac{8\\,\\text{h}}{2^{\\,n}}$"
             },
             {
               "key": "units_precision",
               "points": 1,
-              "detail": "$t_\\text{sall} \\approx 1\\,\\text{h}$"
+              "detail": "$t_\\text{v} \\approx 1\\,\\text{h}$"
             },
             {
               "key": "conclusion",
               "points": 1,
-              "detail": "Aika ei riitä. Kolmen tunnin harjoitus on noin kolminkertainen sallittuun aikaan nähden. Urkurin kannattaa käyttää kuulonsuojaimia tai harjoitella hiljaisemmin."
+              "detail": "Annos ei jää pienemmäksi. Kolmen tunnin harjoitus on noin kolminkertainen vertailuaikaan nähden, joten annos on noin kolminkertainen vertailuannokseen nähden. Urkurin kannattaa käyttää kuulonsuojaimia tai harjoitella hiljaisemmin."
             }
           ]
         },
@@ -566,7 +566,7 @@
               "detail": "Kirkon seinät ja holvit heijastavat ääntä. Siksi osa $4{,}0\\,\\text{m}$:n tasosta on kaikua, joka ei voimistu lähemmäs mentäessä. Harjoituksessa soitetaan myös harvoin koko ajan täysillä. Kumpikin tekee arviosta todennäköisesti liian suuren."
             },
             {
-              "text": "Ehdottaa mittausta: melumittarilla mitataan A-painotettu taso urkurin korvan kohdalta koko harjoituksen ajalta. Tason keskiarvoa verrataan toiminta-arvoon.",
+              "text": "Ehdottaa mittausta: melumittarilla mitataan A-painotettu taso urkurin korvan kohdalta koko harjoituksen ajalta. Mittauksesta lasketaan päivän melualtistus, ja sitä verrataan toiminta-arvoihin.",
               "tag": "experiment",
               "points": 1
             }

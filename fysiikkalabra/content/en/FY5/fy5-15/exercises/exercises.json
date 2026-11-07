@@ -20,7 +20,7 @@
     {
       "id": "fy5-15-L1-03",
       "level": 1,
-      "text": "As a motorcycle passes a pedestrian, a sound level meter reads $95\\,\\text{dB}$. What is the intensity of the sound at the meter? Give the answer in $\\text{W/m}^2$.",
+      "text": "As a motorcycle passes a pedestrian, a sound level meter reads $95\\,\\text{dB}$. The sound travels freely outdoors, so the reading can be treated as the sound intensity level. What is the intensity of the sound at the meter? Give the answer in $\\text{W/m}^2$.",
       "answer": 0.0032,
       "unit": "W/m²",
       "tolerance": 0.02

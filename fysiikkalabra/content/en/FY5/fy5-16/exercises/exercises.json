@@ -4,7 +4,7 @@
       "id": "fy5-16-L1-01",
       "level": 1,
       "core": true,
-      "text": "On a building site the noise level of a hammer drill at the user's ear is $91\\,\\text{dB}$. For how many hours a day may the user use the tool without hearing protectors, when the reference is the upper action value, $8\\,\\text{h}$ at a level of $85\\,\\text{dB}$? Answer in hours.",
+      "text": "On a building site the noise level of a hammer drill at the user's ear is $91\\,\\text{dB}$. Using the tool without hearing protectors, in how many hours does the user receive the same energy dose as in the exposure that corresponds to the upper action value, $8\\,\\text{h}$ at a level of $85\\,\\text{dB}$? Answer in hours.",
       "answer": 2.0,
       "unit": "h",
       "tolerance": 0.02
@@ -116,7 +116,7 @@
       "id": "fy5-16-L2-01",
       "level": 2,
       "core": true,
-      "text": "A factory hall has two identical machines. Each alone produces a level of $85\\,\\text{dB}$ at the worker's position. For how many hours a day may the worker stay in the hall without hearing protectors when both machines are running? The reference is the upper action value. Answer in hours.",
+      "text": "A factory hall has two identical machines. Each alone produces a level of $85\\,\\text{dB}$ at the worker's position. In how many hours does a worker in the hall without hearing protectors receive the daily energy dose that corresponds to the upper action value ($8\\,\\text{h}$ at a level of $85\\,\\text{dB}$) when both machines are running? Answer in hours.",
       "answer": 4.0,
       "unit": "h",
       "tolerance": 0.02
@@ -241,7 +241,7 @@
         "error",
         "reasoning"
       ],
-      "text": "At a workstation in a machine shop the noise level is $109\\,\\text{dB}$. A student calculates the permitted daily exposure time from the upper action value ($8\\,\\text{h}$ at a level of $85\\,\\text{dB}$) like this: “The level exceeds the action value by $24\\,\\text{dB}$, and every additional $3\\,\\text{dB}$ divides the time: $24\\,\\text{dB} : 3\\,\\text{dB} = 8$, so the permitted time is $8\\,\\text{h} : 8 = 1.0\\,\\text{h}$.”\n\na) Explain what is wrong in the student's reasoning.\n\nb) Calculate the correct permitted exposure time in minutes.\n\nWrite the result of part b) in the answer box.",
+      "text": "At a workstation in a machine shop the noise level is $109\\,\\text{dB}$. A student calculates the daily reference time from the upper action value ($8\\,\\text{h}$ at a level of $85\\,\\text{dB}$) like this: “The level exceeds the action value by $24\\,\\text{dB}$, and every additional $3\\,\\text{dB}$ divides the time: $24\\,\\text{dB} : 3\\,\\text{dB} = 8$, so the reference time is $8\\,\\text{h} : 8 = 1.0\\,\\text{h}$.”\n\na) Explain what is wrong in the student's reasoning.\n\nb) Calculate the correct reference time in minutes.\n\nWrite the result of part b) in the answer box.",
       "answer": 1.9,
       "unit": "min",
       "tolerance": 0.02
@@ -298,7 +298,7 @@
         },
         {
           "text": "At the distance $4.0\\,\\text{m}$ the level does not exceed $85\\,\\text{dB}$, so one can work there safely for $8\\,\\text{h}$.",
-          "feedback": "Because of the uncertainty the real level can be $84$–$86\\,\\text{dB}$, so the upper action value may be exceeded. In addition, the formula for the permitted time is an estimate, not a guarantee of safety for hearing."
+          "feedback": "Because of the uncertainty the real level can be $84$–$86\\,\\text{dB}$, so the upper action value may be exceeded. In addition, the upper action value is not a safety limit: staying below the reference dose does not guarantee safe hearing, and the lower action value $80\\,\\text{dB}$ is exceeded already."
         }
       ]
     }
@@ -373,7 +373,7 @@
         "model",
         "reasoning"
       ],
-      "text": "At an outdoor festival one loudspeaker stack produces a level of $112\\,\\text{dB}$ at a distance of $2.0\\,\\text{m}$. Treat the stack as a point source in an open space without reflections: the level falls by $6\\,\\text{dB}$ every time the distance doubles. A listener stands still at a distance of $8.0\\,\\text{m}$.\n\nThe listener has foam earplugs that do not fit tightly: their attenuation is in practice only $8\\,\\text{dB}$ at all levels.\n\na) What is the noise level at the listener's position without earplugs?\n\nb) For how many hours may the listener stay there with the earplugs, when the reference is the upper action value ($8\\,\\text{h}$ at a level of $85\\,\\text{dB}$)?\n\nc) The concert lasts $3.0\\,\\text{h}$. What percentage of the reference dose is the dose, and is it enough for the listener to move to a distance of $16\\,\\text{m}$ and keep the earplugs in there? Justify by calculation.\n\nWrite the result of part b) in the answer box.",
+      "text": "At an outdoor festival one loudspeaker stack produces a level of $112\\,\\text{dB}$ at a distance of $2.0\\,\\text{m}$. Treat the stack as a point source in an open space without reflections: the level falls by $6\\,\\text{dB}$ every time the distance doubles. A listener stands still at a distance of $8.0\\,\\text{m}$.\n\nThe listener has foam earplugs that do not fit tightly: their attenuation is in practice only $8\\,\\text{dB}$ at all levels.\n\na) What is the noise level at the listener's position without earplugs?\n\nb) In how many hours does the listener, standing there with the earplugs, receive the energy dose that corresponds to the upper action value ($8\\,\\text{h}$ at a level of $85\\,\\text{dB}$)?\n\nc) The concert lasts $3.0\\,\\text{h}$. What percentage of the reference dose is the dose, and does the dose stay below the reference dose if the listener moves to a distance of $16\\,\\text{m}$ and keeps the earplugs in there? Justify by calculation.\n\nWrite the result of part b) in the answer box.",
       "answer": 1.6,
       "unit": "h",
       "tolerance": 0.03

@@ -1,7 +1,7 @@
 [
   {
     "q": "Melutaso nousee $85\\,\\text{dB}$:stä $95\\,\\text{dB}$:iin. Montako kertaa suurempi intensiteetti on? Kuinka pitkässä ajassa kertyy sama annos kuin $8\\,\\text{h}$:ssa tasolla $85\\,\\text{dB}$?",
-    "a": "Nousu $10\\,\\text{dB}$ vastaa kymmenkertaista intensiteettiä (luku *Intensiteetti ja desibeliasteikko*). Sama energia kertyy kymmenesosassa ajasta: $480\\,\\text{min} : 10 = 48\\,\\text{min}$. Nyrkkisääntö $t_\\text{sall} = t_0 / 2^{\\,n}$ antaa saman: $n = 10/3$ ja $t_\\text{sall} \\approx 48\\,\\text{min}$."
+    "a": "Nousu $10\\,\\text{dB}$ vastaa kymmenkertaista intensiteettiä (luku *Intensiteetti ja desibeliasteikko*). Sama energia kertyy kymmenesosassa ajasta: $480\\,\\text{min} : 10 = 48\\,\\text{min}$. Nyrkkisääntö $t_\\text{v} = t_0 / 2^{\\,n}$ antaa saman: $n = 10/3$ ja $t_\\text{v} \\approx 48\\,\\text{min}$."
   },
   {
     "q": "Konsertin jälkeen korvat soivat, mutta aamulla soiminen on poissa. Tarkoittaako se, ettei kuulo vaurioitunut?",

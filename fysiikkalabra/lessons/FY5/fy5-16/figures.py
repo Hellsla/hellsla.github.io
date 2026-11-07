@@ -41,8 +41,8 @@ def scale():
 
 
 def exposure():
-    """Kaava: allowed daily exposure time against the level, 85 ... 100 dB in 3 dB steps (bars to scale)."""
-    f = Fig("fy516-exposure", 340, "Pylväskuvaaja mittakaavassa: sallittu päivittäinen altistusaika t tunteina melutason L funktiona. "
+    """Kaava: the daily reference time (the time in which the dose of the upper action value accumulates) against the level, 85 ... 100 dB in 3 dB steps (bars to scale)."""
+    f = Fig("fy516-exposure", 340, "Pylväskuvaaja mittakaavassa: päivittäinen vertailuaika t tunteina melutason L funktiona. "
             "Melutasolla 85 dB aika on 8 tuntia, 88 dB 4 tuntia, 91 dB 2 tuntia, 94 dB 1 tunti, 97 dB 0,5 tuntia ja 100 dB "
             "0,25 tuntia. Jokainen kolmen desibelin nousu puolittaa pylvään korkeuden.")
     ax = Axes(f, (96, 300), (470, 56), x=(82, 101), y=(0, 9), xticks=[85, 88, 91, 94, 97, 100], yticks=[2, 4, 6, 8],
