@@ -161,12 +161,12 @@ o_\text{C} &= 4.0\,\text{MW} : 12\,\text{MW} = 0.33
 
 ## fy2-6-L2-07
 **Given:** emission factors coal $820\,\text{g/kWh}$ and wind power $12\,\text{g/kWh}$, the city's electricity $E = 2.0\,\text{TWh}$ per year
-**Find:** the amount of carbon dioxide saved from the life-cycle emissions that belong to one year's electricity production, in millions of tonnes, when coal is replaced by wind power; the best choice
+**Find:** the emission saved, in carbon dioxide equivalent, from the life-cycle emissions that belong to one year's electricity production, in millions of tonnes, when coal is replaced by wind power; the best choice
 **Principle:** The emission is the emission factor multiplied by the energy produced. The saving is the difference between the emissions of coal and wind power, because the energy is the same in both.
 **Formula:** $\Delta m = (k_\text{coal} - k_\text{wind})\, E$
 **Conversions:** $2.0\,\text{TWh} = 2.0 \cdot 10^{9}\,\text{kWh}$. Finally grams into tonnes: $1.616 \cdot 10^{12}\,\text{g} = 1.616 \cdot 10^{12} : 10^{6}\,\text{t} = 1.616 \cdot 10^{6}\,\text{t}$.
 **Substitution:** $\Delta m = (820\,\text{g/kWh} - 12\,\text{g/kWh}) \cdot 2.0 \cdot 10^{9}\,\text{kWh} = 808\,\text{g/kWh} \cdot 2.0 \cdot 10^{9}\,\text{kWh} = 1.616 \cdot 10^{12}\,\text{g} = 1.616 \cdot 10^{6}\,\text{t}$
-**Answer:** About $1.6$ million tonnes of carbon dioxide per year, two significant figures like the energy $2.0\,\text{TWh}$. On the basis of emissions and lifetime the best choice is nuclear power: its emission factor $12\,\text{g/kWh}$ is the smallest (as small as that of wind power) and its lifetime $60\,\text{a}$ is the longest. The table does not tell the controllability of power, the costs, the weather dependence, the land use or the waste, all of which affect the choice. For example, wind power and solar power are weather-dependent and need regulating power.
+**Answer:** About $1.6$ million tonnes of carbon dioxide equivalent per year, two significant figures like the energy $2.0\,\text{TWh}$. On the basis of emissions and lifetime the best choice is nuclear power: its emission factor $12\,\text{g/kWh}$ is the smallest (as small as that of wind power) and its lifetime $60\,\text{a}$ is the longest. The table does not tell the controllability of power, the costs, the weather dependence, the land use or the waste, all of which affect the choice. For example, wind power and solar power are weather-dependent and need regulating power.
 **Reasonableness:** The emissions of coal are $820 : 12 \approx 68$ times the emissions of wind power, so almost the whole emission of coal, $820\,\text{g/kWh} \cdot 2.0 \cdot 10^{9}\,\text{kWh} = 1.64 \cdot 10^{6}\,\text{t}$, is saved, and $1.616 : 1.64 = 0.99$.
 
 ## fy2-6-L3-01
@@ -223,7 +223,7 @@ P_\text{Su} &= 8.4 - 3.5 - 5.4 = -0.5
 
 ## fy2-6-L3-05
 **Given:** wind farm $P_\text{rated} = 100\,\text{MW}$, average power $33\,\%$, $K = 120$ million euros, lifetime $25\,\text{a}$, $12\,\text{g/kWh}$; nuclear power plant $1200\,\text{MW}$, $90\,\%$, $K = 6000$ million euros, $60\,\text{a}$, $12\,\text{g/kWh}$; year $8760\,\text{h}$
-**Find:** a) the annual energies; b) the construction cost per megawatt-hour produced, the wind farm in the box; c) the amount of carbon dioxide from the life-cycle emissions that belongs to one year's production; d) a justified comparison
+**Find:** a) the annual energies; b) the construction cost per megawatt-hour produced, the wind farm in the box; c) the emission in carbon dioxide equivalent from the life-cycle emissions that belongs to one year's production; d) a justified comparison
 **Principle:** The annual energy is the average power multiplied by the length of a year, and the average power is a share of the rated power. The energy over the lifetime is the annual energy multiplied by the lifetime. The cost per energy is the construction cost divided by the energy over the lifetime. The emission is the emission factor multiplied by the energy.
 **Formula:** $E_\text{y} = o\, P_\text{rated}\, t$, $E_\text{tot} = E_\text{y} \cdot a$ and $k = \dfrac{K}{E_\text{tot}}$
 **Conversions:** $120\,\text{million euros} = 120 \cdot 10^{6}\,\text{euros}$ and $6000\,\text{million euros} = 6000 \cdot 10^{6}\,\text{euros}$. For emissions $1\,\text{MWh} = 1000\,\text{kWh}$ and $1\,\text{t} = 10^{6}\,\text{g}$.

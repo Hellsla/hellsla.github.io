@@ -16,7 +16,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "Two lamps are lit in a room, an incandescent lamp and an LED lamp, and they shine equally brightly. The incandescent lamp takes a power of $60\\,\\text{W}$ from the electricity grid, the LED lamp only $10\\,\\text{W}$. When you touch the lamps after they have been on for a moment, the incandescent lamp is burning hot and the LED lamp is only lukewarm.",
+      "text": "Two lamps are lit in a room, an incandescent lamp and an LED lamp, and they give out the same amount of visible light. The incandescent lamp takes a power of $60\\,\\text{W}$ from the electricity grid, the LED lamp only $10\\,\\text{W}$. When you touch the lamps after they have been on for a moment, the incandescent lamp is burning hot and the LED lamp is only lukewarm.",
       "question": "Where does the electrical energy taken by the incandescent lamp go, and how can you measure how good a device is?"
     },
     {

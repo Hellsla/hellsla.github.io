@@ -80,20 +80,20 @@
       "type": "choice",
       "title": "Ennuste 2: suklaa ja polttopuu",
       "justify": true,
-      "prompt": "Suklaalevyn pakkauksessa lukee: energia $2200\\,\\text{kJ}$ sadassa grammassa. Sata grammaa ilmakuivaa polttopuuta poltetaan. Kumpi sisältää enemmän kemiallista energiaa?",
+      "prompt": "Suklaan ravintoarvomerkinnässä energiaa on $2200\\,\\text{kJ}$ sadassa grammassa. Ilmakuivan polttopuun lämpöarvo on $15\\,\\text{MJ/kg}$. Kumpi luku on suurempi, kun molemmat ilmoitetaan energiana yhtä kilogrammaa kohti? Miksi lukuja ei silti pidä ajatella täsmälleen samaksi suureeksi?",
       "choices": [
         {
-          "text": "Polttopuu, koska se on polttoainetta ja suklaa on vain ravintoa.",
-          "feedback": "Ruokakin on kemiallisen energian varasto. Sata grammaa puuta vapauttaa palaessaan noin $15\\,\\text{MJ/kg} \\cdot 0{,}100\\,\\text{kg} = 1{,}5\\,\\text{MJ} = 1500\\,\\text{kJ}$. Se on vähemmän kuin suklaan $2200\\,\\text{kJ}$."
+          "text": "Polttopuun luku on suurempi, koska puu on polttoainetta ja suklaa vain ravintoa.",
+          "feedback": "Ruokakin on kemiallisen energian varasto. Muuta suklaan luku samaan yksikköön: $2200\\,\\text{kJ} = 2{,}2\\,\\text{MJ}$ ja $100\\,\\text{g} = 0{,}100\\,\\text{kg}$. Silloin luku on $2{,}2\\,\\text{MJ} : 0{,}100\\,\\text{kg} = 22\\,\\text{MJ/kg}$. Se on suurempi kuin puun $15\\,\\text{MJ/kg}$."
         },
         {
-          "text": "Suklaa.",
-          "feedback": "Oikein. Suklaan $2200\\,\\text{kJ}$ sadassa grammassa on $22\\,\\text{MJ/kg}$. Se on enemmän kuin puun $1500\\,\\text{kJ}$ sadassa grammassa eli $15\\,\\text{MJ/kg}$. Molemmat luvut ovat energiaa massayksikköä kohti. Pakkausmerkintä kertoo kuitenkin energian, jonka elimistö pystyy hyödyntämään. Jos suklaa palaisi, siitä vapautuisi vielä hieman enemmän energiaa. Suklaa voittaa vertailun silloinkin.",
+          "text": "Suklaan luku on suurempi, mutta ravintoarvomerkintä ja lämpöarvo kertovat eri asiasta.",
+          "feedback": "Oikein. Suklaan $2200\\,\\text{kJ}$ sadassa grammassa on $22\\,\\text{MJ/kg}$. Se on suurempi kuin puun lämpöarvo $15\\,\\text{MJ/kg}$. Molemmat luvut ovat energiaa yhtä kilogrammaa kohti. Niiden merkitys on kuitenkin eri. Ravintoarvomerkintä kertoo energian, jonka elimistö pystyy käyttämään. Lämpöarvo kertoo energian, joka vapautuu, kun aine palaa.",
           "correct": true
         },
         {
-          "text": "Niitä ei voi verrata, koska toinen on ruokaa ja toinen polttoainetta.",
-          "feedback": "Molemmissa energia on kemiallista, ja sen määrä mitataan joulena. Kun kummastakin otetaan sata grammaa, energiat voi verrata suoraan: suklaassa $2200\\,\\text{kJ}$ ja puussa $1500\\,\\text{kJ}$."
+          "text": "Suklaan luku on suurempi. Koska luvut ovat samaa suuretta, suklaa olisi myös parempi polttoaine kuin puu.",
+          "feedback": "Suklaan $22\\,\\text{MJ/kg}$ on suurempi kuin puun $15\\,\\text{MJ/kg}$. Sama yksikkö ei kuitenkaan tarkoita, että luvut ovat samaa suuretta. Ravintoarvomerkintä kertoo energian, jonka elimistö pystyy käyttämään. Lämpöarvo kertoo energian, joka vapautuu palamisessa. Polttoaineita verrataan lämpöarvoilla."
         }
       ]
     },

@@ -11,7 +11,7 @@
 ## fy2-7-L1-02
 **Given:** energy sent into the district heating network $E_\text{sent} = 360\,\text{MWh}$; the share of the loss is read from the figure
 **Find:** the loss $E_\text{loss}$ in megawatt-hours
-**Principle:** Energy does not disappear. The part of the sent energy that does not arrive turns into heat in the surroundings on the way, that is, it is transmission loss. The share of the loss is taken of the sent energy, so the loss is the share times the sent energy.
+**Principle:** Energy does not disappear. The part of the sent energy that does not arrive is transferred as heat to the surroundings on the way, that is, it is transmission loss. The share of the loss is taken of the sent energy, so the loss is the share times the sent energy.
 **Reading the graph:** The lower energy flow in the figure is the district heating network. At its branch that curves downward it says $9\,\%$ (loss), and at the branch that continues to the end it says $91\,\%$ (arrives); together they are the $100\,\%$ of the sent flow. So the share of the loss is $9\,\% = 0.09$. The upper flow is the electricity grid and is not needed.
 **Formula:** $E_\text{loss} = 0.09 \cdot E_\text{sent}$
 **Conversions:** Percentage to decimal number: $9\,\% = 9 \cdot 0.01 = 0.09$. The energy stays in megawatt-hours.
@@ -98,7 +98,7 @@ Electricity grid: $E_\text{loss} = 0.040 \cdot 1000\,\text{MWh}$, so $E_\text{lo
 
 District heating network: $E_\text{loss} = 0.090 \cdot 300\,\text{MWh}$, so $E_\text{loss} = 27\,\text{MWh}$
 
-The loss of the electricity grid, $40\,\text{MWh}$, is larger than that of the district heating network, $27\,\text{MWh}$, even though the loss percentage of the district heating network is more than double. The lost energy turns into heat in the surroundings; it does not disappear.
+The loss of the electricity grid, $40\,\text{MWh}$, is larger than that of the district heating network, $27\,\text{MWh}$, even though the loss percentage of the district heating network is more than double. The lost energy is transferred as heat to the surroundings: in the electricity grid it has first been converted into internal energy in the wires, in the district heating network it passes from the hot water through the pipes. Energy does not disappear.
 
 ## fy2-7-L3-01
 **Given:** energy needed at the destination $E_\text{arrived} = 600\,\text{MWh}$; loss before $9.0\,\%$ and after $6.0\,\%$ of the sent energy
@@ -177,8 +177,8 @@ The loss of the electricity grid, $40\,\text{MWh}$, is larger than that of the d
 
 ## fy2-7-L2-07
 **Find:** which answer corrects the claim “electricity travels at the speed of light, so there are no losses”.
-**Principle:** The transmission loss occurs when current heats the conductors and part of the electrical energy is converted into heat in the surroundings. The loss does not depend on how fast the energy is transferred. Energy also does not disappear but is converted into a form that is useless to the user.
-**Model answer:** The claim is wrong, because speed does not tell about losses. The current heats the conductor, and this heat does not reach the user, so less energy arrives than is sent. The loss is not the disappearance of energy but its conversion into heat. About $4\,\%$ of the sent energy is lost in the electricity grid, and that is why a high voltage, which reduces the current, reduces the loss.
+**Principle:** The transmission loss occurs when current heats the conductors: part of the electrical energy is converted into internal energy of the conductors, which is transferred as heat to the surroundings. The loss does not depend on how fast the energy is transferred. Energy also does not disappear but is converted into a form that is useless to the user.
+**Model answer:** The claim is wrong, because speed does not tell about losses. The current heats the conductor, and this heat does not reach the user, so less energy arrives than is sent. The loss is not the disappearance of energy: electrical energy is converted into internal energy of the conductor, which is transferred as heat to the surroundings. About $4\,\%$ of the sent energy is lost in the electricity grid, and that is why a high voltage, which reduces the current, reduces the loss.
 
 ## fy2-7-L3-04
 **Given:** from the table, the loss powers: external walls $2.4\,\text{kW}$, upper floor $1.5\,\text{kW}$, windows $1.8\,\text{kW}$; reductions $50\,\%$, $60\,\%$ and $40\,\%$; loss of the district heating network $9.0\,\%$ of the sent energy; time $t = 5000\,\text{h}$

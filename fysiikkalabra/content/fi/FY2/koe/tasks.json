@@ -402,22 +402,22 @@
      "id": "c",
      "kind": "word",
      "points": 5,
-     "text": "Pellettejä poltettaessa vapautuu polttoaineen energiaa kohti noin puolitoista kertaa niin paljon hiilidioksidia kuin öljyä poltettaessa (IPCC:n oletuspäästökertoimet: puu noin $112\\,\\text{g/MJ}$, kevyt polttoöljy noin $74\\,\\text{g/MJ}$). Miksi pellettilämmitystä silti pidetään ilmaston kannalta parempana? Arvioi myös, mitä perustelu edellyttää.",
+     "text": "Pellettien palamisessa vapautuu annettujen arvojen mukaan enemmän hiilidioksidia energiayksikköä kohti kuin polttoöljyn palamisessa (IPCC:n oletuspäästökertoimet: puu noin $112\\,\\text{g/MJ}$, kevyt polttoöljy noin $74\\,\\text{g/MJ}$). Millä edellytyksillä pellettilämmitys voi silti olla ilmaston kannalta öljylämmitystä parempi vaihtoehto? Pohdi hiilen alkuperää, metsien kasvua ja tarkastelujakson merkitystä.",
      "criteria": [
       {
-       "text": "Pellettien hiili on peräisin ilmakehästä lähivuosikymmeninä kasvaneesta puusta, öljyn hiili miljoonia vuosia maassa olleesta fossiilisesta varastosta.",
+       "text": "Erottaa hiilen alkuperän: pellettien hiili on peräisin ilmakehästä lähivuosikymmeninä kasvaneesta puusta, öljyn hiili miljoonia vuosia maassa olleesta fossiilisesta varastosta.",
        "tag": "concept",
        "points": 2
       },
       {
-       "text": "Fossiilisen polttoaineen käyttö lisää ilmakehän hiilidioksidia pysyvästi, puun kasvu taas sitoo hiiltä takaisin.",
+       "text": "Kertoo, että etu edellyttää metsän kasvua: puun hiili voi sitoutua takaisin vain, jos hakatun tilalle kasvaa uutta puuta eikä metsän hiilivarasto pienene; fossiilisen hiilen vapauttaminen lisää ilmakehän hiilidioksidia pysyvästi.",
        "tag": "concept",
        "points": 1
       },
       {
        "key": "assumptions",
        "points": 2,
-       "detail": "Perustelu edellyttää, että hakattu metsä kasvaa takaisin, ja sitoutuminen kestää vuosikymmeniä: lyhyellä aikavälillä ilmakehän hiilidioksidi lisääntyy."
+       "detail": "Pohtii tarkastelujaksoa: sitoutuminen kestää vuosikymmeniä, joten lyhyellä aikavälillä pellettien poltto lisää ilmakehän hiilidioksidia enemmän kuin öljyn; etu voi syntyä vasta pitkällä aikavälillä. Johtopäätös voi olla kumpi tahansa, kun se on perusteltu, eikä puun uusiutuvuutta pidetä automaattisena ilmastohyötynä."
       }
      ]
     }
@@ -686,7 +686,7 @@
       {
        "key": "conclusion",
        "points": 1,
-       "detail": "Väite pitää paikkansa vain, jos sähkö tuotetaan päästöttömästi; muuten se on liioiteltu."
+       "detail": "Tunnistaa, että hukkalämmön hyödyntäminen voi pienentää lämmitysjärjestelmän päästöjä, mutta datakeskuksen koko elinkaaren päästöt eivät välttämättä ole nolla edes silloin, kun käyttösähkö on hyvin vähäpäästöistä."
       }
      ]
     }
@@ -708,7 +708,7 @@
    "title": "Sähköä talvipäivänä",
    "source": "example",
    "source_note": "Tuntiluvut on laadittu esimerkiksi suomalaisen sähköjärjestelmän mittakaavasta, eivätkä ne ole yhden päivän tilastoja. Kapasiteetit ja osuudet ovat pyöristettyjä suuruusluokka-arvioita vuoden 2025 tilanteesta.",
-   "text": "Taulukossa on Suomen sähkönkulutus ja tuotanto tuotantotavoittain kolmena hetkenä samana talvipäivänä. Kulutuksen ja tuotannon erotus tuodaan naapurimaista tai, jos tuotanto on suurempi, viedään niihin. Tehot ovat megawatteina $(\\text{MW})$.\n\n| | klo $3$ | klo $9$ | klo $18$ |\n|---|---|---|---|\n| kulutus | $10\\,200$ | $12\\,800$ | $13\\,500$ |\n| ydinvoima | $4400$ | $4400$ | $4400$ |\n| tuulivoima | $5600$ | $2100$ | $900$ |\n| vesivoima | $1300$ | $2600$ | $2900$ |\n| muu tuotanto | $2400$ | $3200$ | $3400$ |\n\nSuomessa on tuulivoimaa noin $9000\\,\\text{MW}$ ja ydinvoimaa noin $4400\\,\\text{MW}$. Tuulivoimalat tuottavat vuodessa keskimäärin noin $30\\,\\%$ siitä energiasta, jonka ne tuottaisivat koko ajan täydellä teholla, ja ydinvoimalat noin $90\\,\\%$.",
+   "text": "Taulukossa on kuvitteellinen, Suomen sähköjärjestelmää havainnollistava esimerkkiaineisto. Se esittää sähkönkulutuksen ja eri tuotantotapojen sähkötehot kolmena hetkenä talvipäivänä. Luvut eivät ole todellisia mittaustuloksia. Kulutuksen ja tuotannon erotus tuodaan naapurimaista tai, jos tuotanto on suurempi, viedään niihin. Tehot ovat megawatteina $(\\text{MW})$.\n\n| | klo $3$ | klo $9$ | klo $18$ |\n|---|---|---|---|\n| kulutus | $10\\,200$ | $12\\,800$ | $13\\,500$ |\n| ydinvoima | $4400$ | $4400$ | $4400$ |\n| tuulivoima | $5600$ | $2100$ | $900$ |\n| vesivoima | $1300$ | $2600$ | $2900$ |\n| muu tuotanto | $2400$ | $3200$ | $3400$ |\n\nSuomessa on tuulivoimaa noin $9000\\,\\text{MW}$ ja ydinvoimaa noin $4400\\,\\text{MW}$. Tuulivoimalat tuottavat vuodessa keskimäärin noin $30\\,\\%$ siitä energiasta, jonka ne tuottaisivat koko ajan täydellä teholla, ja ydinvoimalat noin $90\\,\\%$.",
    "parts": [
     {
      "id": "a",
@@ -756,11 +756,20 @@
      "kind": "calc",
      "points": 4,
      "text": "Tuulivoiman keskiteho oli koko vuorokauden aikana $2900\\,\\text{MW}$. Kuinka paljon energiaa tuulivoimalat tuottivat vuorokaudessa? Kuinka monen omakotitalon vuoden lämmöntarve ($15\\,000\\,\\text{kWh}$) se on?",
-     "answer": {
-      "value": 69.6,
-      "unit": "GWh",
-      "tolerance": 0.02
-     },
+     "answer": [
+      {
+       "name": "E",
+       "value": 69.6,
+       "unit": "GWh",
+       "tolerance": 0.02
+      },
+      {
+       "name": "homes",
+       "value": 4640,
+       "unit": "",
+       "tolerance": 0.02
+      }
+     ],
      "criteria": [
       {
        "key": "equation",
@@ -917,11 +926,20 @@
      "kind": "calc",
      "points": 5,
      "text": "Kuinka paljon ravintoenergiaa tunnin polkeminen kuluttaa? Kuinka monta banaania se vastaa?",
-     "answer": {
-      "value": 2.16,
-      "unit": "MJ",
-      "tolerance": 0.02
-     },
+     "answer": [
+      {
+       "name": "E",
+       "value": 2.16,
+       "unit": "MJ",
+       "tolerance": 0.02
+      },
+      {
+       "name": "bananas",
+       "value": 4.8,
+       "unit": "",
+       "tolerance": 0.05
+      }
+     ],
      "criteria": [
       {
        "key": "equation",
@@ -948,7 +966,7 @@
      "id": "c",
      "kind": "calc",
      "points": 5,
-     "text": "Sähköpyörän moottori pyörittää pyörää ilman pyöräilijän apua niin, että hyödyksi saatu teho on sama $150\\,\\text{W}$. Kuinka kauan täysi akku riittää?",
+     "text": "Tarkastellaan yksinkertaistettua mallia moottorilla kulkevasta sähköpyörästä. Pyöräilijä ei tässä mallissa tuota lainkaan poljintehoa, vaan sähkömoottori antaa pyörän liikkumiseen saman $150\\,\\text{W}$:n hyötytehon. Kuinka kauan täysi akku riittää?",
      "answer": {
       "value": 2.67,
       "unit": "h",

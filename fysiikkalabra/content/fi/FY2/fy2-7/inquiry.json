@@ -258,7 +258,7 @@
     },
     {
      "text": "Energia ei vähene matkalla lainkaan, koska energia ei koskaan katoa.",
-     "feedback": "Energia ei katoa, mutta osa siitä muuttuu lämmöksi ympäristöön. Käyttäjälle perille tuleva energia on lähtevää pienempi, ja erotus on häviö."
+     "feedback": "Energia ei katoa, mutta osa siitä siirtyy matkalla lämpönä ympäristöön. Käyttäjälle perille tuleva energia on lähtevää pienempi, ja erotus on häviö."
     },
     {
      "text": "Laskussa ei ole virhettä, koska häviö on pieni.",
@@ -332,17 +332,17 @@
    "prompt": "Sähköverkossa häviää $4\\,\\%$ verkkoon syötetystä sähköenergiasta, eikä tämä osa tule käyttäjille asti. Mitä tälle energialle tapahtuu?",
    "choices": [
     {
-     "text": "Se muuttuu matkalla lämmöksi, joka siirtyy ympäröivään ilmaan.",
+     "text": "Se muuttuu johtimissa sisäenergiaksi, joka siirtyy lämpönä ympäröivään ilmaan.",
      "correct": true,
-     "feedback": "Oikein. Sähkövirta lämmittää johtimia, ja lämpö siirtyy ympäristöön. Energia ei katoa: syötetty energia on perille tulevan energian ja ympäristöön siirtyneen lämmön summa."
+     "feedback": "Oikein. Sähkövirta lämmittää johtimia: osa sähköenergiasta muuttuu niiden sisäenergiaksi, joka siirtyy lämpönä ympäristöön. Energia ei katoa: syötetty energia on perille tulevan energian ja ympäristöön siirtyneen lämmön summa."
     },
     {
      "text": "Se katoaa matkalla, koska sitä ei saada perille asti.",
-     "feedback": "Energia ei katoa. Häviö tarkoittaa, että osa energiasta muuttuu matkalla lämmöksi, joka siirtyy ympäristöön, eikä sitä siksi voi käyttää pistorasiassa. Perille tuleva energia ja lämpö ovat yhteensä yhtä suuret kuin syötetty energia."
+     "feedback": "Energia ei katoa. Häviö tarkoittaa, että osa sähköenergiasta muuttuu johtimissa sisäenergiaksi, joka siirtyy lämpönä ympäristöön, eikä sitä siksi voi käyttää pistorasiassa. Perille tuleva energia ja lämpö ovat yhteensä yhtä suuret kuin syötetty energia."
     },
     {
      "text": "Se jää johtimiin varastoon ja palaa verkkoon myöhemmin.",
-     "feedback": "Johtimet eivät varastoi sähköenergiaa. Häviöksi laskettu energia muuttuu johtimissa lämmöksi, joka siirtyy ympäröivään ilmaan, eikä sitä saada takaisin sähköksi."
+     "feedback": "Johtimet eivät varastoi sähköenergiaa. Häviöksi laskettu energia muuttuu johtimissa sisäenergiaksi, joka siirtyy lämpönä ympäröivään ilmaan, eikä sitä saada takaisin sähköksi."
     },
     {
      "text": "Se palaa voimalaitokselle käyttämättä jääneenä sähkönä.",

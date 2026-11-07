@@ -16,7 +16,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "Huoneessa palaa kaksi lamppua: hehkulamppu ja ledilamppu. Ne valaisevat yhtä kirkkaasti. Hehkulamppu ottaa sähköverkosta tehon $60\\,\\text{W}$. Ledilamppu ottaa vain $10\\,\\text{W}$. Kosketat lamppuja hetken palamisen jälkeen. Hehkulamppu on polttavan kuuma. Ledilamppu on vain haalea.",
+      "text": "Huoneessa palaa kaksi lamppua: hehkulamppu ja ledilamppu. Ne antavat yhtä paljon näkyvää valoa. Hehkulamppu ottaa sähköverkosta tehon $60\\,\\text{W}$. Ledilamppu ottaa vain $10\\,\\text{W}$. Kosketat lamppuja hetken palamisen jälkeen. Hehkulamppu on polttavan kuuma. Ledilamppu on vain haalea.",
       "question": "Mihin hehkulampun ottama sähköenergia menee? Miten laitteen hyvyyttä voi mitata?"
     },
     {

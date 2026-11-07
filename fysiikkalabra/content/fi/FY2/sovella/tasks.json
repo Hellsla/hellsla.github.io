@@ -5,8 +5,8 @@
       "id": "fy2-s1",
       "title": "Kaupunki luopuu hiilivoimasta",
       "source": "example",
-      "source_note": "Kaupunki, sen sähkönkulutus, voimaloiden tehot, käyttöasteet ja vuodenaikojen osuudet ovat keksittyjä esimerkkiarvoja, joiden suuruusluokka vastaa suomalaisia voimaloita. Päästökertoimet ovat todellisia: IPCC:n viides arviointiraportti (AR5, 2014), työryhmä III, liite III, elinkaaren päästöjen mediaanit pyöristettyinä.",
-      "text": "Esimerkkikaupungin vanha kivihiilivoimala suljetaan. Kaupunginvaltuusto pyytää sinulta suositusta siitä, miten kaupungin sähkö tuotetaan jatkossa. Kaupunki on kytketty valtakunnan sähköverkkoon, joten se voi myös ostaa ja myydä sähköä.\n\n**Kaupungin sähkön tarve (esimerkki)**\n\n- Vuosikulutus $E = 380\\,\\text{GWh}$. Tähän asti hiilivoimala on tuottanut koko tämän määrän.\n- Suurin tehon tarve $P_\\text{huippu} = 80\\,\\text{MW}$ on tyynenä pakkasiltana tammikuussa.\n- Vuodessa on $8760\\,\\text{h}$, ja talvikuukausissa joulu–helmikuu on $90$ vuorokautta.\n\n**Vaihtoehdot, yksi yksikkö kerrallaan (teho ja käyttöaste esimerkkiarvoja, päästökerroin IPCC AR5, 2014)**\n\nKäyttöaste $k$ on voimalan vuoden keskiteho jaettuna sen nimellisteholla $P_\\text{n}$. Säädettävälle voimalalle se on tyypillinen arvo: voimala voi käydä tarvittaessa enemmän tai vähemmän.\n\n| Voimala | $P_\\text{n}\\ (\\text{MW})$ | $k$ | $e\\ (\\tfrac{\\text{g}}{\\text{kWh}})$ |\n|---|---|---|---|\n| Maakaasu | $50$ | $0{,}60$ | $490$ |\n| Biomassa (hake) | $40$ | $0{,}70$ | $230$ |\n| Tuuli (maalla) | $5{,}0$ | $0{,}32$ | $11$ |\n| Aurinko (puisto) | $10$ | $0{,}11$ | $48$ |\n| Pieni ydinvoimala | $60$ | $0{,}90$ | $12$ |\n| Vesivoima (osuus) | $20$ | $0{,}50$ | $24$ |\n| Nykyinen hiilivoimala | $90$ | | $820$ |\n\nTaulukon $e$ on elinkaaren päästökerroin grammoina hiilidioksidiekvivalenttia kilowattituntia kohti. Siinä ovat mukana voimalan rakentaminen ja polttoaineen tuotanto ja kuljetus. Biomassan luvussa polton hiilidioksidi on laskettu nollaksi, koska uusi kasvu sitoo sen takaisin vuosikymmenten kuluessa.\n\n**Tuotantotapojen ominaisuuksia (esimerkki)**\n\n- *Maakaasu:* tehoa voi säätää nopeasti ylös ja alas. Kaasu tuodaan putkella tai laivalla, joten saatavuus ja hinta riippuvat tuonnista.\n- *Biomassa:* tehoa voi säätää, mutta hitaammin kuin kaasuvoimalan. Haketta kuljetetaan rekoilla noin $30$ rekkakuormaa vuorokaudessa täydellä teholla, ja metsää hakataan sen tuottamiseen.\n- *Tuulivoima:* tuotanto riippuu säästä. Tuotantoa voi rajoittaa, mutta ei lisätä. Tyynellä pakkasjaksolla tuulivoimaloiden yhteisteho voi olla useita päiviä alle $5\\,\\%$ nimellistehosta. Voimalat näkyvät ja kuuluvat, ja niiden alue vie maata.\n- *Aurinkovoima:* tuotanto riippuu vuorokaudenajasta, vuodenajasta ja pilvisyydestä. Pimeänä talvi-iltana tuotanto on nolla. Puisto vie peltoa tai metsää noin $15\\,\\text{ha}$ jokaista nimellistehon kymmentä megawattia kohti.\n- *Pieni ydinvoimala:* käy yleensä tasaisesti lähes nimellisteholla, ja tehoa voi myös laskea. Tällaisia voimaloita ei vielä ole Suomessa käytössä; luvitus ja rakentaminen kestävät arviolta yli kymmenen vuotta. Käytetty polttoaine on radioaktiivista jätettä, joka on loppusijoitettava.\n- *Vesivoima:* tehoa voi säätää nopeasti, mutta vuoden energia riippuu sademäärästä ja vaihtelee vuodesta toiseen noin $\\pm 20\\,\\%$. Alueen rakentamattomat kosket ovat suojeltuja, joten kaupunki voi vain ostaa osuuden olemassa olevasta voimalasta.\n\n**Osuus vuoden energiasta eri vuodenaikoina (esimerkki)**: kaupungin kulutus sekä tuuli- ja aurinkovoiman tuotanto\n\n| Kuukaudet | Kulutus | Tuuli | Aurinko |\n|---|---|---|---|\n| joulu–helmi | $31\\,\\%$ | $32\\,\\%$ | $4\\,\\%$ |\n| maalis–touko | $25\\,\\%$ | $23\\,\\%$ | $34\\,\\%$ |\n| kesä–elo | $19\\,\\%$ | $17\\,\\%$ | $45\\,\\%$ |\n| syys–marras | $25\\,\\%$ | $28\\,\\%$ | $17\\,\\%$ |",
+      "source_note": "Kaupunki, sen sähkönkulutus, voimaloiden tehot, käyttöasteet ja vuodenaikojen osuudet ovat keksittyjä esimerkkiarvoja, joiden suuruusluokka vastaa suomalaisia voimaloita. Päästökertoimet ovat todellisia: IPCC:n viides arviointiraportti (AR5, 2014), työryhmä III, liite III, elinkaaren päästöjen mediaanit pyöristettyinä. Biomassan kerroin on IPCC:n tiettyjä biomassan tuotantoketjuja koskevan elinkaarivertailun mediaani, ei kaiken metsähakkeesta tuotetun sähkön yleispätevä kerroin.",
+      "text": "Esimerkkikaupungin vanha kivihiilivoimala suljetaan. Kaupunginvaltuusto pyytää sinulta suositusta siitä, miten kaupungin sähkö tuotetaan jatkossa. Kaupunki on kytketty valtakunnan sähköverkkoon, joten se voi myös ostaa ja myydä sähköä.\n\n**Kaupungin sähkön tarve (esimerkki)**\n\n- Vuosikulutus $E = 380\\,\\text{GWh}$. Tähän asti hiilivoimala on tuottanut koko tämän määrän.\n- Suurin tehon tarve $P_\\text{huippu} = 80\\,\\text{MW}$ on tyynenä pakkasiltana tammikuussa.\n- Vuodessa on $8760\\,\\text{h}$, ja talvikuukausissa joulu–helmikuu on $90$ vuorokautta.\n\n**Vaihtoehdot, yksi yksikkö kerrallaan (teho ja käyttöaste esimerkkiarvoja, päästökerroin IPCC AR5, 2014)**\n\nKäyttöaste $k$ on voimalan vuoden keskiteho jaettuna sen nimellisteholla $P_\\text{n}$. Säädettävälle voimalalle se on tyypillinen arvo: voimala voi käydä tarvittaessa enemmän tai vähemmän.\n\n| Voimala | $P_\\text{n}\\ (\\text{MW})$ | $k$ | $e\\ (\\tfrac{\\text{g}}{\\text{kWh}})$ |\n|---|---|---|---|\n| Maakaasu | $50$ | $0{,}60$ | $490$ |\n| Biomassa (hake) | $40$ | $0{,}70$ | $230$ |\n| Tuuli (maalla) | $5{,}0$ | $0{,}32$ | $11$ |\n| Aurinko (puisto) | $10$ | $0{,}11$ | $48$ |\n| Pieni ydinvoimala | $60$ | $0{,}90$ | $12$ |\n| Vesivoima (osuus) | $20$ | $0{,}50$ | $24$ |\n| Nykyinen hiilivoimala | $90$ | | $820$ |\n\nTaulukon $e$ on elinkaaren päästökerroin grammoina hiilidioksidiekvivalenttia kilowattituntia kohti. Siinä ovat mukana voimalan rakentaminen ja polttoaineen tuotanto ja kuljetus. Biomassavaihtoehdolle käytetään tässä laskentaharjoituksessa päästökerrointa $230\\,\\text{g/kWh}$. Luku perustuu IPCC:n tiettyjä biomassan tuotantoketjuja koskevaan elinkaarivertailuun, jossa polton hiilidioksidi on laskettu nollaksi, koska uusi kasvu sitoo hiiltä takaisin. Tämä on laskentaoletus, ei väite siitä, ettei biomassan poltossa vapautuisi hiilidioksidia. Metsähakkeen todellinen elinkaaripäästökerroin voi poiketa tästä merkittävästi: se riippuu biomassan alkuperästä, hiilivarastojen muutoksista ja siitä, kuinka nopeasti hiili sitoutuu takaisin kasvillisuuteen.\n\n**Tuotantotapojen ominaisuuksia (esimerkki)**\n\n- *Maakaasu:* tehoa voi säätää nopeasti ylös ja alas. Kaasu tuodaan putkella tai laivalla, joten saatavuus ja hinta riippuvat tuonnista.\n- *Biomassa:* tehoa voi säätää, mutta hitaammin kuin kaasuvoimalan. Haketta kuljetetaan rekoilla noin $30$ rekkakuormaa vuorokaudessa täydellä teholla, ja metsää hakataan sen tuottamiseen.\n- *Tuulivoima:* tuotanto riippuu säästä. Tuotantoa voi rajoittaa, mutta ei lisätä. Tyynellä pakkasjaksolla tuulivoimaloiden yhteisteho voi olla useita päiviä alle $5\\,\\%$ nimellistehosta. Voimalat näkyvät ja kuuluvat, ja niiden alue vie maata.\n- *Aurinkovoima:* tuotanto riippuu vuorokaudenajasta, vuodenajasta ja pilvisyydestä. Pimeänä talvi-iltana tuotanto on nolla. Puisto vie peltoa tai metsää noin $15\\,\\text{ha}$ jokaista nimellistehon kymmentä megawattia kohti.\n- *Pieni ydinvoimala:* käy yleensä tasaisesti lähes nimellisteholla, ja tehoa voi myös laskea. Tällaisia voimaloita ei vielä ole Suomessa käytössä; luvitus ja rakentaminen kestävät arviolta yli kymmenen vuotta. Käytetty polttoaine on radioaktiivista jätettä, joka on loppusijoitettava.\n- *Vesivoima:* tehoa voi säätää nopeasti, mutta vuoden energia riippuu sademäärästä ja vaihtelee vuodesta toiseen noin $\\pm 20\\,\\%$. Alueen rakentamattomat kosket ovat suojeltuja, joten kaupunki voi vain ostaa osuuden olemassa olevasta voimalasta.\n\n**Osuus vuoden energiasta eri vuodenaikoina (esimerkki)**: kaupungin kulutus sekä tuuli- ja aurinkovoiman tuotanto\n\n| Kuukaudet | Kulutus | Tuuli | Aurinko |\n|---|---|---|---|\n| joulu–helmi | $31\\,\\%$ | $32\\,\\%$ | $4\\,\\%$ |\n| maalis–touko | $25\\,\\%$ | $23\\,\\%$ | $34\\,\\%$ |\n| kesä–elo | $19\\,\\%$ | $17\\,\\%$ | $45\\,\\%$ |\n| syys–marras | $25\\,\\%$ | $28\\,\\%$ | $17\\,\\%$ |",
       "parts": [
         {
           "id": "a",
@@ -41,11 +41,38 @@
           "kind": "calc",
           "points": 3,
           "text": "Laske kaupungin sähköntuotannon vuotuinen päästö, jos koko vuosikulutus tuotetaan kivihiilellä, maakaasulla tai tuulivoimalla. Kuinka monta prosenttia päästö pienenee kummassakin vaihtoehdossa kivihiileen verrattuna?",
-          "answer": {
-            "value": 186200,
-            "unit": "t",
-            "tolerance": 0.03
-          },
+          "answer": [
+            {
+              "name": "coal",
+              "value": 311600,
+              "unit": "t",
+              "tolerance": 0.03
+            },
+            {
+              "name": "gas",
+              "value": 186200,
+              "unit": "t",
+              "tolerance": 0.03
+            },
+            {
+              "name": "wind",
+              "value": 4180,
+              "unit": "t",
+              "tolerance": 0.03
+            },
+            {
+              "name": "cutgas",
+              "value": 40.2,
+              "unit": "%",
+              "tolerance": 0.02
+            },
+            {
+              "name": "cutwind",
+              "value": 98.7,
+              "unit": "%",
+              "tolerance": 0.01
+            }
+          ],
           "criteria": [
             {
               "key": "equation",
@@ -91,7 +118,7 @@
               "detail": "Tuulivoimaloiden keskiteho talvella $\\approx 58\\,\\text{MW}$ ja kaupungin keskimääräinen tarve $\\approx 55\\,\\text{MW}$."
             },
             {
-              "text": "Päättelee, että talven energia riittää keskimäärin, mutta tyynenä pakkasiltana tuulivoimaloiden teho voi olla vain noin $7\\,\\text{MW}$, kun tarve on $80\\,\\text{MW}$.",
+              "text": "Päättelee, että talven energia riittää keskimäärin, mutta tyynenä pakkasiltana tuulivoimaloiden yhteisteho voi jäädä alle $7\\,\\text{MW}$:n, kun tarve on $80\\,\\text{MW}$, joten muualta tarvitaan yli $73\\,\\text{MW}$.",
               "tag": "concept",
               "points": 1
             }

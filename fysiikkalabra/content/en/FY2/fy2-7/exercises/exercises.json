@@ -64,7 +64,7 @@
         },
         {
           "text": "For the same power, a smaller current is enough, so the conductors heat up less and the loss becomes smaller.",
-          "feedback": "Correct: when the voltage is high, the same power is transmitted with a smaller current. A smaller current heats the conductors less, so less electrical energy is converted into heat in the transmission.",
+          "feedback": "Correct: when the voltage is high, the same power is transmitted with a smaller current. A smaller current heats the conductors less, so less electrical energy is converted into internal energy of the conductors and on into heat in the surroundings.",
           "correct": true
         },
         {
@@ -218,7 +218,7 @@
       "choices": [
         {
           "text": "The claim is correct, because energy that travels quickly does not have time to change into anything else on the way.",
-          "feedback": "The cause of the loss is not the duration of the transfer. When current flows in a conductor, the conductor heats up and part of the electrical energy is converted into heat, even though the transfer is fast."
+          "feedback": "The cause of the loss is not the duration of the transfer. When current flows in a conductor, the conductor heats up: part of the electrical energy is converted into internal energy of the conductor and transferred as heat to the surroundings, even though the transfer is fast."
         },
         {
           "text": "Electricity travels slowly in the wire, so a large part of the electrical energy has time to break down on the way.",
@@ -226,7 +226,7 @@
         },
         {
           "text": "Part of the energy disappears completely on the way, even though electricity travels quickly in the wire.",
-          "feedback": "Energy does not disappear. The lost energy is converted into heat in the surroundings, but the user cannot make use of it."
+          "feedback": "Energy does not disappear. The lost energy is transferred as heat to the surroundings, but the user cannot make use of it."
         },
         {
           "text": "Electricity travels quickly, but the current heats the conductor and part of the energy is converted into heat.",

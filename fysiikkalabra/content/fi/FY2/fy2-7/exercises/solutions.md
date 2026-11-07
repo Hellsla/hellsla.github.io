@@ -11,7 +11,7 @@
 ## fy2-7-L1-02
 **Annettu:** kaukolämpöverkkoon lähtevä energia $E_\text{lähtö} = 360\,\text{MWh}$; häviön osuus luetaan kuvasta
 **Kysytty:** häviö $E_\text{häviö}$ megawattitunteina
-**Periaate:** Energia ei katoa. Se osa lähtevästä energiasta, joka ei tule perille, muuttuu matkalla lämmöksi ympäristöön eli on siirtohäviötä. Häviön osuus lasketaan lähtevästä energiasta, joten häviö on osuus kertaa lähtevä energia.
+**Periaate:** Energia ei katoa. Se osa lähtevästä energiasta, joka ei tule perille, siirtyy matkalla lämpönä ympäristöön eli on siirtohäviötä. Häviön osuus lasketaan lähtevästä energiasta, joten häviö on osuus kertaa lähtevä energia.
 **Kuvaajan lukeminen:** Kuvan alempi energiavirta on kaukolämpöverkko. Sen alas kaartuvan häviöhaaran kohdalla lukee $9\,\%$ ja perille jatkuvan haaran kohdalla $91\,\%$, ja yhteensä ne ovat lähtevän virran $100\,\%$. Häviön osuus on siis $9\,\% = 0{,}09$. Ylempi virta on sähköverkko, eikä sitä tarvita.
 **Kaava:** $E_\text{häviö} = 0{,}09 \cdot E_\text{lähtö}$
 **Muunnokset:** Prosentit desimaaliluvuksi: $9\,\% = 9 \cdot 0{,}01 = 0{,}09$. Energia pysyy megawattitunteina.
@@ -98,7 +98,7 @@ Sähköverkko: $E_\text{häviö} = 0{,}040 \cdot 1000\,\text{MWh}$, eli $E_\text
 
 Kaukolämpöverkko: $E_\text{häviö} = 0{,}090 \cdot 300\,\text{MWh}$, eli $E_\text{häviö} = 27\,\text{MWh}$
 
-Sähköverkon häviö $40\,\text{MWh}$ on suurempi kuin kaukolämpöverkon $27\,\text{MWh}$, vaikka kaukolämpöverkon häviöprosentti on yli kaksinkertainen. Häviävä energia muuttuu lämmöksi ympäristöön, ei katoa.
+Sähköverkon häviö $40\,\text{MWh}$ on suurempi kuin kaukolämpöverkon $27\,\text{MWh}$, vaikka kaukolämpöverkon häviöprosentti on yli kaksinkertainen. Häviävä energia siirtyy lämpönä ympäristöön: sähköverkossa se on ensin muuttunut johtimissa sisäenergiaksi, kaukolämpöverkossa se siirtyy kuumasta vedestä putkien läpi. Energia ei katoa.
 
 ## fy2-7-L3-01
 **Annettu:** tarvittu energia perillä $E_\text{perille} = 600\,\text{MWh}$; häviö ennen $9{,}0\,\%$ ja jälkeen $6{,}0\,\%$ lähtevästä energiasta
@@ -178,8 +178,8 @@ Sähköverkon häviö $40\,\text{MWh}$ on suurempi kuin kaukolämpöverkon $27\,
 
 ## fy2-7-L2-07
 **Kysytty:** mikä vastaus korjaa väitteen ”sähkö kulkee valon nopeudella, joten häviöitä ei ole”.
-**Periaate:** Siirtohäviö syntyy, kun virta lämmittää johtimia ja osa sähköenergiasta muuttuu lämmöksi ympäristöön. Häviö ei riipu siitä, kuinka nopeasti energia siirtyy. Energia ei myöskään katoa, vaan muuttuu käyttäjälle hyödyttömään muotoon.
-**Mallivastaus:** Väite on virheellinen, koska nopeus ei kerro häviöistä. Virta lämmittää johdinta, ja tämä lämpö ei tule käyttäjälle asti, joten perille tulee vähemmän energiaa kuin lähtee. Häviö ei ole energian katoamista vaan muuttumista lämmöksi. Sähköverkossa häviää noin $4\,\%$ lähtevästä energiasta, ja siksi korkea jännite, joka pienentää virtaa, vähentää häviötä.
+**Periaate:** Siirtohäviö syntyy, kun virta lämmittää johtimia: osa sähköenergiasta muuttuu johtimien sisäenergiaksi, joka siirtyy lämpönä ympäristöön. Häviö ei riipu siitä, kuinka nopeasti energia siirtyy. Energia ei myöskään katoa, vaan muuttuu käyttäjälle hyödyttömään muotoon.
+**Mallivastaus:** Väite on virheellinen, koska nopeus ei kerro häviöistä. Virta lämmittää johdinta, ja tämä lämpö ei tule käyttäjälle asti, joten perille tulee vähemmän energiaa kuin lähtee. Häviö ei ole energian katoamista: sähköenergiaa muuttuu johtimen sisäenergiaksi, joka siirtyy lämpönä ympäristöön. Sähköverkossa häviää noin $4\,\%$ lähtevästä energiasta, ja siksi korkea jännite, joka pienentää virtaa, vähentää häviötä.
 
 ## fy2-7-L3-04
 **Annettu:** taulukosta häviötehot: ulkoseinät $2{,}4\,\text{kW}$, yläpohja $1{,}5\,\text{kW}$, ikkunat $1{,}8\,\text{kW}$; vähennykset $50\,\%$, $60\,\%$ ja $40\,\%$; kaukolämpöverkon häviö $9{,}0\,\%$ lähtevästä energiasta; aika $t = 5000\,\text{h}$

@@ -58,7 +58,8 @@ cut_bio2 = 1 - m_bio_all / m_coal
 P_gap_calm = P_peak - P_calm
 
 out = {"fy2-s1-a": N, "fy2-s1-E1": round(E1, 3), "fy2-s1-N-exact": round(N_exact, 2),
-       "fy2-s1-b": round(m_gas), "fy2-s1-m-coal": round(m_coal), "fy2-s1-m-wind": round(m_wind),
+       "fy2-s1-b-coal": round(m_coal), "fy2-s1-b-gas": round(m_gas), "fy2-s1-b-wind": round(m_wind),
+       "fy2-s1-b-cutgas": round(100 * cut_gas, 1), "fy2-s1-b-cutwind": round(100 * cut_wind, 1), "fy2-s1-m-coal": round(m_coal), "fy2-s1-m-wind": round(m_wind),
        "fy2-s1-cut-gas": round(cut_gas, 3), "fy2-s1-cut-wind": round(cut_wind, 3),
        "fy2-s1-c": round(P_farm_winter, 1), "fy2-s1-E-farm": round(E_farm, 1), "fy2-s1-E-farm-winter": round(share_winter["wind"] * E_farm, 1),
        "fy2-s1-E-city-winter": round(share_winter["city"] * E_city, 1), "fy2-s1-P-city-winter": round(P_city_winter, 1), "fy2-s1-P-calm": round(P_calm, 1),

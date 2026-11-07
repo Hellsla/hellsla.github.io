@@ -543,7 +543,7 @@ E_\text{heat} &= E_\text{start} - E_\text{motion} \\
 
 <!-- vaihe -->
 
-**Result.** The thermal energy produced is $340\,\text{kJ}$. The result is rounded to two significant figures, because the initial energy $0.45\,\text{MJ}$ and the motion $110\,\text{kJ}$ are given with two figures.
+**Result.** The thermal energy produced is $340\,\text{kJ}$. The result is rounded to two significant figures, because the initial energy $0.45\,\text{MJ}$ is given with two significant figures. The $110\,\text{kJ}$ given as a whole number is taken as exact, so the precision is limited by the initial energy.
 
 <!-- vaihe -->
 
