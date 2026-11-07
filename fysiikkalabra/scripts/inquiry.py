@@ -814,7 +814,7 @@ def render(folder, inquiry, parts, md):
             badge = (f'<p class="source" data-source="{src}"><strong>{T("inquiry.source_" + src)}</strong>' + (f' · {inline(md, a["source_note"])}' if a.get("source_note") else "") + '</p>') if src else ""
             content = f'<div class="interpret">{badge}<div class="representation">{md(a["text"])}{fig_of(a)}</div>{question_html(a["question"], md, lid, aid) if a.get("question") else ""}</div>'
         elif t == "theory":
-            content = "".join(f'<div class="theory-core">{parts["sections"][s]}</div>' if s == "Ydinajatus" else parts["sections"][s] for s in a["sections"])   # the key idea marked by a green line (teacher 2026-11-07)
+            content = "".join(parts["sections"][s] for s in a["sections"])
             if aid in shown and "Esimerkki" in a["sections"]:   # the box itself says "Esimerkki 1: <name>"; no heading above it (teacher 2026-11-06)
                 ex = parts["sections"]["Esimerkki"]
                 if '<p class="example-label">' in ex:
