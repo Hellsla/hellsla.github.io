@@ -1,6 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: ea1fcb0f7268868f
+CONTENT-HASH: a81048a6915a3228
 Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+Round: 3
 
 ## Blocking
 - none
@@ -9,6 +10,5 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction 
 - none
 
 ## Checked
-- Diff `git diff origin/main...HEAD` of lesson.md, inquiry.json, exit-ticket.json (en); content hash recomputed and equal to the brief's.
-- inquiry.json ennuste-2: $2200\,\text{kJ} : 0{,}100\,\text{kg} = 22\,\text{MJ/kg} > 15\,\text{MJ/kg}$ recomputed. Exactly one correct option (larger, but nutrition energy = energy usable by the body vs heating value = energy released in combustion); both distractors wrong for the stated reason and their feedback correct (same unit does not make the same quantity; fuels compared by heating values). Removed claim about burning chocolate is no loss.
-- English changes match the fi source in substance (CO2 equivalent, internal energy vs heat, accounting assumption).
+- Round-3 diff `git diff HEAD~1` (commit a84956a90) of this unit's files (en), judged in context; content hash recomputed and equal to the new hash.
+- inquiry.json ennuste-2: "Can the two numbers be compared as the same physical quantity?" is a neutral question, consistent with fi; the options and feedback still fit it; the numbers are unchanged (22 MJ/kg > 15 MJ/kg).

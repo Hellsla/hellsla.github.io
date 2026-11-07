@@ -1,7 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 194f4fa1e6a46f5a
+CONTENT-HASH: f92ba6741b53a98f
 Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
-Round: 2
+Round: 3
 
 ## Blocking
 - none
@@ -10,5 +10,5 @@ Round: 2
 - none
 
 ## Checked
-- git diff HEAD~1 (commit 29f864da6) of the unit's files (fi), judged in context; round-1 findings for this unit.
-- solutions.md fy2-k5-d model answer: the repeated closing 'Väite on siis liioiteltu' removed (the answer already opens with it). Criteria untouched in this round; my round-1 Polish on the k5-d conclusion criterion stays optional.
+- git diff HEAD~1 (commit a84956a90) of the unit's files (fi), judged in context.
+- tasks.json fy2-k5-d conclusion criterion: the point is now for a justified conclusion that the claim is exaggerated, with either reason accepted (emissions from producing the electricity, or the life-cycle emissions of the equipment and building even when the electricity is low-emission). It no longer repeats criterion 2 and is fair to both well-justified routes, so my round-1 Polish is resolved. Observable; the solutions.md model answer still covers both reasons.

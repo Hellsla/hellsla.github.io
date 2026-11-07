@@ -80,7 +80,7 @@
       "type": "choice",
       "title": "Ennuste 2: suklaa ja polttopuu",
       "justify": true,
-      "prompt": "Suklaan ravintoarvomerkinnän energiasisältö on $2200\\,\\text{kJ}$ sadassa grammassa, ja ilmakuivan polttopuun lämpöarvo on $15\\,\\text{MJ/kg}$. Kumpi ilmoitetuista massakohtaisista energialuvuista on suurempi? Miksi lukuja ei kuitenkaan pidä tulkita täsmälleen samaksi fysikaaliseksi suureeksi?",
+      "prompt": "Suklaan ravintoarvomerkinnän energiasisältö on $2200\\,\\text{kJ}$ sadassa grammassa, ja ilmakuivan polttopuun lämpöarvo on $15\\,\\text{MJ/kg}$. Kumpi ilmoitetuista massakohtaisista energialuvuista on suurempi? Voiko lukuja verrata keskenään samana fysikaalisena suureena?",
       "choices": [
         {
           "text": "Polttopuun luku on suurempi, koska puu on polttoainetta ja suklaa vain ravintoa.",

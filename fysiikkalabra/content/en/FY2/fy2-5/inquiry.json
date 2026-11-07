@@ -80,7 +80,7 @@
       "type": "choice",
       "title": "Prediction 2: chocolate and firewood",
       "justify": true,
-      "prompt": "The nutrition label of a chocolate bar gives an energy content of $2200\\,\\text{kJ}$ per hundred grams, and the heating value of air-dried firewood is $15\\,\\text{MJ/kg}$. Which of the stated energy values per unit of mass is larger? Why should the two numbers still not be read as exactly the same physical quantity?",
+      "prompt": "The nutrition label of a chocolate bar gives an energy content of $2200\\,\\text{kJ}$ per hundred grams, and the heating value of air-dried firewood is $15\\,\\text{MJ/kg}$. Which of the stated energy values per unit of mass is larger? Can the two numbers be compared as the same physical quantity?",
       "choices": [
         {
           "text": "The firewood's value is larger, because wood is a fuel and chocolate is only food.",
