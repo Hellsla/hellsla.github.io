@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 73ab16bc8998b4dc
+CONTENT-HASH: 2ca590df4c5da7cb
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-Read the English page against the Finnish for order, hooks, predictions, experiments, worked example, misconception and exit ticket: all present, same sequence, same level of language for 16-19-year-olds.
-Figure descriptions and labels are English and match what the figures draw.
-Fixed the Finnish option labels in the experiment tables (see science report), which a student would have seen.
-No overflow in the rendered en page at 360 px.
-Delta: column name 'initial state' reads naturally for 16-19 year olds and matches its values; the removed 'levels' sentence matches the Finnish; new fences sit under the Free-body diagram step as in the Finnish.
+- Kevyt delta-katselmointi (opettaja 2026-11-07): diff origin/main -muutokset arvioitu ja niiden johdonmukaisuus tavoitteiden, yhteenvedon ja ratkaisujen kanssa.
+- Tulos-kohdan tarkkuusperustelu (5,20 kN, 9,81) on johdonmukainen. Uusi Järkevyys-perustelu (tasaisella nopeudella nouseva elementti antaisi painon unohtaen ~9,8 m/s²) on opettava vastaesimerkki ja selittää miksi paino kuuluu mukaan.
+- Kokonaisluvut tehtävätiedoissa tulkitaan tarkoiksi (opettajan sääntö); teksti sanoo tämän käyttöpaikalla. Muutos ei paljasta vastausta ennen toimintaa eikä vaikuta palautteeseen, ennusteisiin tai kokeisiin.
+- Muu sisältö ennallaan (aiemmin hyväksytty). ESCALATE-tarvetta ei ole.

@@ -1,15 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: d3cb9c05c11ebf1a
+CONTENT-HASH: 4ae8996762a31242
 
 ## Blocking
 
 ## Polish
-- inquiry.json, ennuste 2, oikea vaihtoehto — "C on koko ajan $20\,\text{m}$ A:n edellä positiiviseen suuntaan" on selvä, mutta "A:n edellä" ja "positiiviseen suuntaan" voisi yhdistää: "C on koko ajan $20\,\text{m}$ A:ta positiivisemmassa paikassa". Ei välttämätön.
 
 ## Checked
-- Oikean vaihtoehdon uusi sanamuoto: "edellä positiiviseen suuntaan" sitoo "edellä"-käsitteen akselin suuntaan; poistaa epäselvyyden (x-akselilla negatiiviseen suuntaan ajava kärry voisi olla "edellä" toisin päin). Vastausta ei paljasteta ennen sitoutumista; palaute ja numerot (20 m, 20 m, erotus 20 m) ennallaan.
-- Koe 2:n intro "positiiviseen suuntaan katsottuna": sama täsmennys, ohje ja alkutila ennallaan; ennuste ja koe vastaavat toisiaan, kokeen voi yhä kumota ennusteen.
-- Ratkaisut B ja D: poistettu simulaation "mallin arvot" -perustelu merkitsevistä numeroista; jäljelle jäävä perustelu (annetut luvut kahdella numerolla) riittää, askeleet, numerot ja vastaukset ennallaan.
-- Muutokset ovat sanamuotoa ilman lukuja tai symboleja; delta-arvio kattaa ne, ESCALATE-tarvetta ei ole.
-- Hash alussa 577b7e654c5622bd (sama kuin paketissa).
-- Vastaus-rivien korjaus ("kaksi merkitsevää numeroa, koska luvut …", kaksi kohtaa) tarkistettu: lause on nyt sujuva, sisältö ennallaan; hash päivitetty d3cb9c05c11ebf1a.
+- Kevyt delta-katselmointi (opettaja 2026-11-07): diff origin/main -muutokset arvioitu ja niiden johdonmukaisuus tavoitteiden, yhteenvedon ja ratkaisujen kanssa.
+- Kulmakertoimen kuvaus erottaa nyt vauhdin (itseisarvo) ja suunnan (etumerkki); yhtenevä sanaston ja nopeus/vauhti-erottelun kanssa. Tulos-kohta: kokonaisluvut tarkkoja, ei pyöristystä; johdonmukainen opettajan säännön kanssa, ei jää ristiriitaa yhteenvedon kanssa.
+- Kokonaisluvut tehtävätiedoissa tulkitaan tarkoiksi (opettajan sääntö); teksti sanoo tämän käyttöpaikalla. Muutos ei paljasta vastausta ennen toimintaa eikä vaikuta palautteeseen, ennusteisiin tai kokeisiin.
+- Muu sisältö ennallaan (aiemmin hyväksytty). ESCALATE-tarvetta ei ole.

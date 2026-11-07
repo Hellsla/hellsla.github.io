@@ -1,19 +1,16 @@
-VERDICT: PASS
-CONTENT-HASH: 78c0faf56737d1db
-
-Delta review: since the last PASS the diff is one ```voimakuvio block (solutions.md, fy4-s1 c-step "Voimakuvio:"), the only "Voimakuvio:" step in the file apart from the b-step's hand-made figure. Nothing else changed, so the earlier judgement of the three tasks, rubrics and variety stands.
+VERDICT: FAIL
+CONTENT-HASH: 0c4025cd06de669d
+Mode: delta (s2 d, s3 b)
 
 ## Blocking
-None.
+- sovella/tasks.json:298 (s2 d, key conclusion) — one point now needs two things: choosing the larger estimate and stating that the numbers are not safe maximum speeds and that real design needs margins, load analysis and measurements. The part text only asks "Arvioi kummankin ohjaajan mallia. Kumman arvion mukaan jarru kannattaa mitoittaa?", so the second half is a point for something not asked (a student who answers the question correctly is stuck at 3/4). Also solutions.md "Mitoitus" says neither number is a safe maximum while the question asks which to size by. — Either add to the part text "Mitä luvut eivät kerro jarrun todellisesta mitoituksesta?" (and keep the point), or reduce the criterion to the choice plus reason and leave the caveat to "assumptions".
 
 ## Polish
-- The to-scale diagram at 4,0° (390 px render) is hard to read. G_y lies on top of G and G_x is a stub under the weight arrow, so the dashed components do not show that "G_x is larger than friction"; the G_x label sits at the body's right edge, away from its arrow. Friction (21 N) is drawn longer than scale (alt text says so) but the rest of the figure then looks as if friction ≈ G_x. The b-step's exaggerated model figure teaches the same point better. Consider dropping `komponentit G` from this block, or saying in one sentence that the 4° slope makes the components short and the picture is to scale.
-- The block uses only wax A's friction (21 N), but c) asks for both A and B. Add "(voide A)" to the sentence, or leave friction unlabelled by value; the page shows no numbers, so this is only a wording matter for a reader of the source.
-- The c-step now shows a second diagram right after the first ("b-kohdan kuvio"); the sentence could say "samassa mitoituksessa kuin b-kohdassa, nyt mittakaavassa" so the student sees why it is drawn again.
+- s3 b (tasks.json:379) — fixed well: "mallin mukaan ... noin 49 km/h" replaces the unfounded braking inference. Detail says "selvästi yli 40" for 49 km/h; fine.
+- solutions.md "Hyväksytään myös" s2 d now consistent with the new criterion; update it together with the fix.
 
 ## Checked
-- practice.py check OK; fbdspec.py check: every Voimakuvio step drawn.
-- Spec physics: G = 72 kg·9,81 = 706 N; N = G cos 4° = 704,6 N; friction = G sin 4° − m·0,39 = 21,2 N up the slope; a down the slope, forces sum that way.
-- Diagram comes before any equation in the step; accessible text alternative present and honest about scale.
-- Does not give away the task: it sits in the solution, after the student's own drawing in b).
-- Rendered the preview at 390 px; the figure fits and is legible apart from the points above.
+- Diff only (s2 d solution and rubric, s3 b answer and rubric); text read.
+- s3 b: the conclusion now follows from the calculation (14 m/s, 49 km/h) and no longer claims what the data cannot show.
+- s2 d solution paragraph "Mitoitus" is a good learning step in itself (model limits), only the rubric/prompt alignment is open.
+- Other tasks untouched and passed earlier.

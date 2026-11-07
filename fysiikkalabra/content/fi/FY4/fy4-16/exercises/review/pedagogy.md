@@ -1,13 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 2c3869fa773cda9b
+CONTENT-HASH: 5b15c962b735aa86
+Mode: delta (fy4-16-L3-04 Järkevyys rewritten)
 
 ## Blocking
 
 ## Polish
-- "korkeudelta h kentän yläpuolelta" in the stem could read "kentän tasosta mitattuna" (optional, from round 1).
+- solutions.md (L3-04 Järkevyys, last sentences) — the lesson of the check is implied, not stated: with a smaller friction coefficient the 5,0 m margin to the fence would be lost. — Add "ja 5,0 m:n turvaväli aitaan voisi kadota" so the student sees why it matters.
 
 ## Checked
-- Round 3, text only; no render.
-- Solution typo "lähtökorkeusvaikuttaa" fixed; "todennäköisesti" restored in the correct feedback; correct feedback now 244 characters, no longer the longest (259–264).
-- Options 98–130 characters, correct not longest or uniquely worded; "pelkän taulukon perusteella" in the stem; 2Δx criterion consistent with 0,7 m, 20,6 m and 19,2 m.
-- Hash at start 2c3869fa773cda9b, at end 2c3869fa773cda9b.
+- Diff only; text read.
+- The removed "friction rises at the bend, so the result is on the safe side" claim contradicted the task (bend ignored); the new text says 16,3 m holds only under the task assumptions and lists what varies (temperature, ice, snow, sled bottom).
+- A student can follow it: the energy bookkeeping (0,95 + 3,00 = 3,95 m), the stopping distance and tan 14,0° > μ₁ are intact; the model-limit remark is an honest reasonableness step, not extra load.
+- Answer (16 m, 7,7 m/s) and task text unchanged; consistent with the task statement's assumptions.

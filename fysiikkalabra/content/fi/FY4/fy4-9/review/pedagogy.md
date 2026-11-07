@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: c474b60ee95b8098
+CONTENT-HASH: 7615210948db8704
 
 ## Blocking
-- none
 
 ## Polish
-- lesson.md "Vastaus alun kysymykseen" — "keskimääräinen kokonaisvoima ... alustan keskimääräinen voima" is dense for a 16-year-old; a short gloss helps: "kokonaisvoima eli alustan voima miinus paino".
-- lesson.md "Yleinen virhekäsitys" — now says "pienempi keskimääräinen kokonaisvoima" but not that the platform force falls too, unlike the answer text and the model answer; add "ja myös alustan voima".
+- Kappale vaihtaa suuruuden ja komponentin kesken kappaleen; yksi virke 'kaava antaa suuruuden' on riittävä merkki.
 
 ## Checked
-- batch delta review: the mat explanation (same impulse, longer time, smaller average net force and smaller platform force, so lower injury risk) is physically right and reads clearly; lesson.md "Vastaus alun kysymykseen", the Yleinen virhekäsitys and the explain model answer in inquiry.json agree in terms and logic (the model answer still ties to the criterion that the mat does not reduce the impulse); the exercises intro now carries no level-policy sentence, consistent with the other lessons.
+- Light delta review (teacher 2026-11-07): judged `git diff origin/main` of fy4-9 fi.
+- Etumerkillinen pinta-ala ja F_ka,x-komponentti selitetään puskuriesimerkillä; suuruuden ja komponentin ero on selvä lukiolaiselle. Tiivistelmä vastaa tekstiä.
+- Consistency with summary, goals and inquiry feedback: no contradictions; untouched content passed earlier reviews.
+- Hash at start and end 7615210948db8704.

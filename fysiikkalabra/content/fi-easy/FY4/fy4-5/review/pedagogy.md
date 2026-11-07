@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 1fe0666fb51e7d2e
+CONTENT-HASH: 96142a8465153f10
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.
-- Delta (figures.json): the new pick-* figure descriptions are alt text for exercise figures; they describe the picture without revealing which option is correct, same level and register as the existing descriptions (plain Finnish, one idea per sentence); lesson text, stages, hints and exit ticket unchanged.
+- Kevyt delta-katselmointi (opettaja 2026-11-07): diff origin/main -muutokset arvioitu ja niiden johdonmukaisuus tavoitteiden, yhteenvedon ja ratkaisujen kanssa.
+- Kiihtyvyys 2,96 m/s² ja tukivoima 71,8 N: luvut täsmäävät (118 = 71,8 + 45,9) ja tarkkuusperustelu on seurattavissa. Vanhoja arvoja (3,0; 72; 46) ei jäänyt tehtäviin, inquiryyn eikä muihin kohtiin.
+- Kokonaisluvut tehtävätiedoissa tulkitaan tarkoiksi (opettajan sääntö); teksti sanoo tämän käyttöpaikalla. Muutos ei paljasta vastausta ennen toimintaa eikä vaikuta palautteeseen, ennusteisiin tai kokeisiin.
+- Muu sisältö ennallaan (aiemmin hyväksytty). ESCALATE-tarvetta ei ole.
