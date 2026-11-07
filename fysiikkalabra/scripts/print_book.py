@@ -100,56 +100,69 @@ def render_chapter(page, f, url, label):
 
 FONTS = SITE / "vendor/fonts"
 BRAND = SITE / "brand"
-# the cover in the site's colours (teacher 2026-11-07): cream paper, the Ruukkilabra wordmark, (its subtitle is part of the logo), a forest-green panel with
-# the course in white and the school's white logo; the cover page has no margins so its colours reach the edges
+SITE_HOME = "https://ruukkilab.fi/"
+# the covers in the site's colours, kept light for a school printer (teacher 2026-11-07): cream paper with the
+# Ruukkilabra wordmark (its subtitle is part of the logo), the course in forest green over a thin green and copper
+# rule, the school's logo in black; the back cover has the site's address with a QR code. Covers have no margins.
 FRONT_CSS = """
 @font-face{font-family:"Fraunces";font-weight:100 900;src:url(%(fraunces)s) format("woff2")}
 @font-face{font-family:"Plus Jakarta Sans";font-weight:200 800;src:url(%(jakarta)s) format("woff2")}
 @page{size:A5;margin:16mm 15mm}@page cover{margin:0}
 html,body{margin:0}body{font-family:"Plus Jakarta Sans",Arial,sans-serif;color:#14171e;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-.cover{page:cover;width:148mm;height:209.5mm;display:flex;flex-direction:column;background:#f7f3ec;overflow:hidden}
-.cover-top{flex:none;padding:20mm 16mm 14mm}.cover-top img{display:block;width:96mm;height:auto}
-.cover-band{flex:1;display:flex;flex-direction:column;justify-content:space-between;background:#1a4b2e;color:#fff;padding:16mm 16mm 13mm;
-  border-top:2.2mm solid #d76a10}
-.code{font:700 40pt/1 "Fraunces",Georgia,serif;letter-spacing:.01em}
-h1{font:600 20pt/1.22 "Fraunces",Georgia,serif;margin:4mm 0 0;max-width:110mm}
-.cover-foot{display:flex;align-items:flex-end;justify-content:space-between;gap:6mm}
-.qr{display:flex;gap:3mm;align-items:center;font-size:7.5pt;line-height:1.4;color:#e7efe9}
-.qr svg{width:20mm;height:20mm;background:#fff;padding:1mm;border-radius:1mm;flex:none}
-.school{width:34mm;height:auto;flex:none}
+.cover{page:cover;box-sizing:border-box;width:148mm;height:209.5mm;display:flex;flex-direction:column;background:#f7f3ec;
+  padding:22mm 16mm 16mm;overflow:hidden}
+.logo{display:block;width:92mm;height:auto}
+.rule{height:1.6mm;margin:30mm 0 9mm;background:linear-gradient(to right,#1a4b2e 0 72%%,#d76a10 72%% 100%%);width:40mm}
+.code{font:700 40pt/1 "Fraunces",Georgia,serif;color:#1a4b2e}
+h1{font:600 20pt/1.22 "Fraunces",Georgia,serif;margin:4mm 0 0;max-width:112mm;color:#14532d}
+.foot{margin-top:auto;display:flex;align-items:flex-end;justify-content:space-between;gap:6mm}
+.school{width:54mm;height:auto}
+.back{break-before:page;justify-content:space-between;align-items:center;text-align:center}
+.back .symbol{width:30mm;height:auto;margin-top:10mm}
+.back .note{font-size:9pt;color:#474c5b;margin:6mm 0 0;max-width:90mm;line-height:1.45}
+.qr{display:flex;flex-direction:column;align-items:center;gap:3mm;font:700 14pt "Plus Jakarta Sans",sans-serif;color:#1a4b2e}
+.qr svg{width:30mm;height:30mm}
 .blank{break-before:page;height:1mm}
 h2{font:700 15pt "Fraunces",Georgia,serif;color:#14532d;margin:0 0 6mm;break-before:page}
 ol{list-style:none;padding:0;margin:0;font-size:10pt}
 li{display:flex;gap:2mm;margin:0 0 2.6mm;line-height:1.3}li .n{flex:none;width:7mm;color:#14532d;font-weight:700}
-li .t{flex:1}li .p{flex:none;width:8mm;text-align:right}
-.note{font-size:8pt;color:#474c5b;margin-top:8mm}""" % {
+li .t{flex:1}li .p{flex:none;width:8mm;text-align:right}""" % {
     "fraunces": (FONTS / "fraunces-latin-wght-normal.woff2").as_uri(),
     "jakarta": (FONTS / "plus-jakarta-sans-latin-wght-normal.woff2").as_uri()}
 
 
+def _doc(lang, body):
+    return (f'<!doctype html><html lang="{lang[:2]}"><meta charset="utf-8">'
+            f'<link rel="stylesheet" href="{(SITE / "vendor/katex/katex.min.css").as_uri()}"><style>{FRONT_CSS}</style>'
+            f'<body>{body}</body></html>')
+
+
 def front_html(course, lang, course_title, toc, toc_start):
     t = TEXT[lang]
-    url = page_url(lang, f"{course}.html")
     logo = BRAND / ("ruukkilabra-logo-en.svg" if lang == "en" else "ruukkilabra-logo-fi.svg")
-    school = BRAND / "kiviruukin-lukio-oikea-valkoinen.svg"
     rows = "".join(f'<li><span class="n">{i}</span><span class="t">{title}</span>'
                    f'<span class="p">{p}</span></li>' for i, (title, p) in enumerate(toc, 1))
-    return (f'<!doctype html><html lang="{lang[:2]}"><meta charset="utf-8">'
-            f'<link rel="stylesheet" href="{(SITE / "vendor/katex/katex.min.css").as_uri()}"><style>{FRONT_CSS}</style><body>'
-            f'<div class="cover"><div class="cover-top"><img src="{logo.as_uri()}" alt="Ruukkilabra">'
-            '</div>'
-            f'<div class="cover-band"><div><div class="code">{course}</div><h1>{html.escape(course_title)}</h1></div>'
-            f'<div class="cover-foot"><div class="qr">{qr_svg(url)}<div>{t["course_qr"]}:<br>'
-            f'{html.escape(url.replace("https://", ""))}</div></div>'
-            f'<img class="school" src="{school.as_uri()}" alt="Kiviruukin lukio"></div></div></div>'
-            f'<div class="blank"></div><h2>{t["toc"]}</h2><ol>{rows}</ol><p class="note">{t["note"]}</p></body></html>')
+    return _doc(lang, f'<div class="cover"><img class="logo" src="{logo.as_uri()}" alt="Ruukkilabra">'
+                      f'<div class="rule"></div><div class="code">{course}</div><h1>{html.escape(course_title)}</h1>'
+                      f'<div class="foot"><img class="school" src="{(BRAND / "kiviruukin-lukio-rivi-musta.svg").as_uri()}" '
+                      f'alt="Kiviruukin lukio"></div></div>'
+                      f'<div class="blank"></div><h2>{t["toc"]}</h2><ol>{rows}</ol>')
 
 
-def number_pages(reader, skip):
-    """Stamps the page number at the foot of every page from index `skip` on."""
+def back_html(lang):
+    t = TEXT[lang]
+    return _doc(lang, f'<div class="cover back"><div><img class="symbol" src="{(BRAND / "ruukkilabra-symboli.svg").as_uri()}" '
+                      f'alt=""><p class="note">{t["note"]}</p></div>'
+                      f'<div class="qr">{qr_svg(SITE_HOME)}ruukkilab.fi</div>'
+                      f'<img class="school" src="{(BRAND / "kiviruukin-lukio-rivi-musta.svg").as_uri()}" alt="Kiviruukin lukio">'
+                      f'</div>')
+
+
+def number_pages(reader, skip, stop):
+    """Stamps the page number at the foot of the pages from index `skip` up to `stop`."""
     out = PdfWriter()
     for i, pg in enumerate(reader.pages):
-        if i >= skip:
+        if skip <= i < stop:
             buf = io.BytesIO()
             w, h = float(pg.mediabox.width), float(pg.mediabox.height)
             c = canvas.Canvas(buf, pagesize=(w, h))
@@ -220,14 +233,25 @@ def main():
             if len(front.pages) == front_n:
                 break
             front_n = len(front.pages)
+        back_file = out / f".{course}-{a.lang}-back.html"
+        back_file.write_text(back_html(a.lang), encoding="utf-8")
+        page.goto(back_file.as_uri(), wait_until="networkidle")
+        back_file.unlink()
+        back = PdfReader(io.BytesIO(page.pdf(format="A5", prefer_css_page_size=True)))
         b.close()
     book = PdfWriter()
     for r in [front] + [r for _, r in rendered]:
         for pg in r.pages:
             book.add_page(pg)
+    content = len(book.pages)
+    # blank pages before the back cover, so the back cover is the last page of a folded booklet (pages = 4k)
+    w, h = float(book.pages[0].mediabox.width), float(book.pages[0].mediabox.height)
+    for _ in range(-(content + 1) % 4):
+        book.add_blank_page(width=w, height=h)
+    book.add_page(back.pages[0])
     buf = io.BytesIO()
     book.write(buf)
-    numbered = number_pages(PdfReader(buf), skip=2)
+    numbered = number_pages(PdfReader(buf), skip=2, stop=content)
     a5 = out / f"{course}-{a.lang}-A5.pdf"
     with open(a5, "wb") as fh:
         numbered.write(fh)
