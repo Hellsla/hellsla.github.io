@@ -1,5 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 06e06c46c1cb3c38
+CONTENT-HASH: d5830c49a5122d07
+Mode: light (teacher 2026-11-07, "kevyt katselmointi"): the round-2 polish diff (git diff HEAD~1, commit 29f864da6) only
+Round: 2
 
 ## Blocking
 - none
@@ -8,4 +10,5 @@ CONTENT-HASH: 06e06c46c1cb3c38
 - none
 
 ## Checked
-- batch delta review: opened fy2-3-1280-0.png and fy2-3-360-0.png (photo floated or inline in the column, no clipping or horizontal overflow, credit line present); alt text and caption read against the picture and the neighbouring paragraph; no number with a unit in the new caption or alt text.
+- lesson.md: the duplicate sentence "Niiden osamäärä on aikavälin keskiteho." removed; the paragraph still reads fluently and the keskiteho idea stays in the next sentence.
+- Round-1 changes are not re-reviewed (they passed in round 1). No captures opened (diff judged from source).

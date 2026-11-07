@@ -85,21 +85,21 @@
       "prompt": "The same amount of electricity is produced with coal, natural gas, biomass or wind power. Which of these has the largest life-cycle emissions per kilowatt-hour produced, and which the smallest?",
       "choices": [
         {
-          "text": "Largest with coal and smallest with wind power, because a wind turbine does not burn anything.",
+          "text": "Largest with coal and smallest with wind power, because no fuel is burned when a wind turbine runs.",
           "correct": true,
-          "feedback": "Correct. Burning a carbon-containing fuel releases carbon dioxide for every kilowatt-hour produced, and the energy of coal comes mostly from the burning of carbon. Natural gas contains a lot of hydrogen as well as carbon, and hydrogen burns into water, so its emission is smaller. A wind turbine does not burn anything. In the next step you see from the table how large the differences are."
+          "feedback": "Correct. According to the IPCC life-cycle comparison, coal electricity has the largest life-cycle emissions and wind power the smallest. The energy of coal comes mostly from the burning of carbon, and natural gas contains a lot of hydrogen as well as carbon, and hydrogen burns into water, so its emission is smaller. No fuel is burned when a wind turbine runs, but building the turbine and producing its materials cause life-cycle emissions. The emissions of biomass depend for example on the raw material and on changes in carbon stocks. In the next step you see from the table how large the differences are."
         },
         {
           "text": "Largest with biomass and smallest with wind power, because wood contains more carbon than coal.",
-          "feedback": "Coal contains more carbon per unit mass than wood. The carbon of biomass was also bound into plants only recently, and new growth binds it back, so the emission of biomass is smaller than that of fossil fuels but not zero. Check the order from the table in the next step."
+          "feedback": "Coal contains more carbon per unit mass than wood, and in the comparison data coal electricity has the largest life-cycle emissions. The emissions of biomass are not zero, and they depend for example on the raw material, on changes in carbon stocks and on how quickly the carbon is bound back. Check the order from the table in the next step."
         },
         {
           "text": "Largest with natural gas and smallest with biomass, because gas leaks easily and wood grows back.",
-          "feedback": "Gas leaks increase the emissions of natural gas, but coal produces even more carbon dioxide for the same energy, because its energy comes mostly from the burning of carbon. The emissions of biomass are not the smallest: growing, harvesting and transport cause emissions, and a wind turbine does not burn anything."
+          "feedback": "Gas leaks increase the emissions of natural gas, but coal produces even more carbon dioxide for the same energy, because its energy comes mostly from the burning of carbon. The emissions of biomass are not the smallest: growing, harvesting and transport cause emissions, and the renewability of wood does not by itself make the life-cycle emissions small. No fuel is burned when a wind turbine runs, so its life-cycle emissions come mainly from building the turbine and from its materials."
         },
         {
           "text": "About equal for all of them, because each produces the same amount of electrical energy.",
-          "feedback": "The same energy does not mean the same emissions. The emission depends on whether carbon dioxide is released from burning for every kilowatt-hour produced, as with coal and natural gas, or not, as with wind power, which does not burn anything."
+          "feedback": "The same energy does not mean the same emissions. The emission depends on whether carbon dioxide is released from burning for every kilowatt-hour produced, as with coal and natural gas, or not, as with wind power, which burns no fuel when it runs; its life-cycle emissions come mainly from building the turbine."
         }
       ]
     },
@@ -327,7 +327,7 @@
           },
           {
             "text": "Neither, because the emission factor of biomass counts only burning, and transport is left out of the life cycle completely.",
-            "feedback": "The life-cycle emission factor includes all stages: growing, harvesting, transport and the power plant. For biomass it is exactly the carbon dioxide from burning that is counted as zero, so the share of transport shows in the factor."
+            "feedback": "The life-cycle emission factor includes all stages: growing, harvesting, transport and the power plant. For biomass it is exactly the carbon dioxide from burning that is set to zero as an accounting assumption, so the share of transport shows in the factor."
           },
           {
             "text": "The distant region, because then the municipality's own forests are spared and the municipality's land use stays small.",
@@ -426,15 +426,15 @@
         {
           "text": "Emissions are produced: the carbon dioxide from burning stays in the air for decades, and harvesting and transport add to it.",
           "correct": true,
-          "feedback": "Correct. The carbon dioxide from burning stays in the atmosphere until new growth binds it back over decades, and growing, harvesting and transporting cause emissions of their own. According to the IPCC life-cycle assessment, the emission factor of biomass electricity is about $230\\,\\text{g/kWh}$."
+          "feedback": "Correct. The carbon dioxide from burning stays in the atmosphere until new growth binds it back over decades, which requires that the forest really grows back. In addition, growing, harvesting and transporting cause emissions of their own. In the IPCC life-cycle comparison, the median emission factor of biomass electricity is about $230\\,\\text{g/kWh}$, and there too the carbon dioxide from burning is zero as an accounting assumption."
         },
         {
           "text": "No emissions are produced at all, because wood is a renewable fuel and the forest always grows back.",
-          "feedback": "Renewable does not mean emission-free. The carbon dioxide from burning stays in the atmosphere until new growth binds it back over decades, and growing, harvesting and transporting cause emissions of their own."
+          "feedback": "Renewable does not mean emission-free. The carbon dioxide from burning stays in the atmosphere until new growth binds it back over decades, which requires that the forest really grows back. In addition, growing, harvesting and transporting cause emissions of their own."
         },
         {
           "text": "The effect is exactly the same as with coal, because carbon dioxide is produced when either one burns.",
-          "feedback": "Carbon dioxide is released from both, but the carbon of coal has been underground for millions of years, so burning it adds carbon dioxide to the atmosphere. The carbon of wood was bound only during the last decades, and new growth binds it back. The life-cycle emission factor is about $820\\,\\text{g/kWh}$ for coal and about $230\\,\\text{g/kWh}$ for biomass."
+          "feedback": "Carbon dioxide is released from both, but the carbon of coal has been underground for millions of years, so burning it adds carbon dioxide to the atmosphere. The carbon of wood was bound only during the last decades, and new growth can bind it back if the forest grows again. The life-cycle emission factor is about $820\\,\\text{g/kWh}$ for coal and about $230\\,\\text{g/kWh}$ for biomass."
         }
       ]
     },

@@ -1,19 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 845d6f3cd3798b31
-
-Round 2. Both Major findings of round 1 are fixed.
+CONTENT-HASH: da4ba59f593fc976
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] tasks.json fy2-s2 Vastauspohja — "Tarkasteluraja" (item 5) appears before c) explains it. Add "(mitä luku sisältää)", as the intro does for "rajaus".
+- none
 
 ## Checked
-- Heading at 360 and 390 px: "Kaksi lähdettä samasta kysymyksestä" wraps on three lines with "14 pistettä" inside (right edge 344/374 px). The page is exactly as wide as the viewport.
-- Vastauspohja is now a numbered list of six items at 360 and 390 px: readable, nothing clipped. The lead-in is short sentences in the order of the work.
-- check_layout fi-easy FY2-sovella OK at 360 and 390. Own captures of preview/fi-easy/FY2-sovella.html.
-- Inline formulas in fy2-s2: none wraps and none overflows. The stacked g/kWh fraction is intentional (teacher's rule).
-
-## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 5
+- Diff of sovella/tasks.json, sovella/solutions.md, lessons/FY2/sovella/answers.py (Selkeä suomi), changed passages with surrounding paragraph.
+- solutions.md a: $P < 0{,}05 \cdot 28 \cdot 5{,}0\,\text{MW} = 7\,\text{MW}$ and $P > 80\,\text{MW} - 7\,\text{MW} = 73\,\text{MW}$: inequality signs, \cdot, thin spaces correct; "alle $7\,\text{MW}$:n" inflection correct.
+- tasks.json source_note and biomass paragraph (accounting assumption, IPCC AR5 WGIII Annex III, forest chips may differ): grammar correct, $230\,\text{g/kWh}$ in LaTeX; criterion text for a); part b answer list (five values) is data only, no presentation change; counterargument and option lines in solutions.md.
+- No captures opened (diff judged from source).

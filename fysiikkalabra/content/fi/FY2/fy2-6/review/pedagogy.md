@@ -1,11 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 30276a519b285c66
+CONTENT-HASH: 5321c759d58b694c
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- Vesivoimalan pato lukee rakennuksena, jolla on sininen katto; padon takana näkyvä tekojärvi ja alapuolinen kuohu tekisivät siitä tunnistettavan.
-- Kolmen tuulivoimalan lavat menevät päällekkäin keskellä; turbiinien porrastus väljemmin selkeyttäisi 360 px:ssä.
+- none
 
 ## Checked
-batch delta review: uusi tekstitön avauskuva (data-fig="hero") Miksi-kysymyksen alla, kaappaukset 1200 ja 360 px sekä SVG. Suomalainen maisema: ydinvoimala rannalla, vesivoimala joella, kolme tuulivoimalaa, savupiipullinen polttoainevoimala ja kaupunki, kaikki samaan verkkoon: yhtäaikaisuus, josta kysymys kysyy. Runsas mutta jäsennelty. Aria-label vastaa kuvaa, ei tekstiä, värit figuuripaletista.
+- git diff origin/main...HEAD of the unit's files (fi); pedagogy of the changed passages in context only; FY2 text level.
+- lesson.md: 8760 h for an ordinary 365-day year, 8784 h for a leap year, and the stated convention for the chapter's examples; 1598 kW = 1,598 MW (the old '1,598·1000 kW' was confusing). Both are clearer for the student.

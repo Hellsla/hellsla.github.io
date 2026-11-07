@@ -301,7 +301,7 @@ Power tells you how quickly a power plant produces energy. When the power is con
 ```latex
 E = P \cdot t
 ```
-where $E$ is the energy produced, $P$ is the power of the plant and $t$ is time. When the power is in kilowatts and the time in hours, the energy is in kilowatt-hours. A year has $t = 8760\,\text{h}$. Large amounts of energy are often given in gigawatt-hours and terawatt-hours: $1\,\text{GWh} = 10^{6}\,\text{kWh}$ and $1\,\text{TWh} = 10^{9}\,\text{kWh}$.
+where $E$ is the energy produced, $P$ is the power of the plant and $t$ is time. When the power is in kilowatts and the time in hours, the energy is in kilowatt-hours. An ordinary year of $365$ days has $t = 8760\,\text{h}$. A leap year has $8784\,\text{h}$. The worked calculations of this chapter use the length of an ordinary year unless stated otherwise. Large amounts of energy are often given in gigawatt-hours and terawatt-hours: $1\,\text{GWh} = 10^{6}\,\text{kWh}$ and $1\,\text{TWh} = 10^{9}\,\text{kWh}$.
 
 ### Rated power and average power
 The rated power of a power plant is the highest power at which it can operate. A wind turbine does not produce at rated power all year, because the wind varies. The average power is the energy produced during the year divided by the number of hours in the year. The average power divided by the rated power tells you what fraction of the rated power is used on average.
@@ -389,7 +389,7 @@ P_\text{avg} &= E : t \\
 
 <!-- vaihe -->
 
-**Result.** The average power is $1598\,\text{kW} = 1.598 \cdot 1000\,\text{kW} \approx 1.6\,\text{MW}$, which is $32\,\%$ of the rated power, two significant figures like the energy $14\,\text{GWh}$.
+**Result.** The average power is $1598\,\text{kW} = 1.598\,\text{MW} \approx 1.6\,\text{MW}$, which is $32\,\%$ of the rated power, two significant figures like the energy $14\,\text{GWh}$.
 
 <!-- vaihe -->
 

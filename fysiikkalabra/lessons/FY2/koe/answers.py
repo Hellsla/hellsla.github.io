@@ -37,12 +37,12 @@ prod = {"03": (4400, 5600, 1300, 2400), "09": (4400, 2100, 2600, 3200), "18": (4
 use = {"03": 10200, "09": 12800, "18": 13500}
 for k, p in prod.items(): out[f"k6-net-import-{k}"] = use[k] - sum(p)
 out["fy2-k6-a-03"] = round(100 * 5600 / sum(prod["03"]), 1); out["fy2-k6-a-18"] = round(100 * 900 / sum(prod["18"]), 1)
-out["fy2-k6-b"] = round(2900 * 24 / 1000, 1)  # GWh
-out["k6-b-homes"] = round(2900 * 24 * 1000 / 15000)
+out["fy2-k6-b-E"] = round(2900 * 24 / 1000, 1)  # GWh
+out["fy2-k6-b-homes"] = round(2900 * 24 * 1000 / 15000)
 out["fy2-k6-d-wind"] = round(9000 * 0.30 * 8760 / 1e6, 1); out["fy2-k6-d-nuc"] = round(4400 * 0.90 * 8760 / 1e6, 1)   # TWh
 # fy2-k7: cyclist and e-bike
 Pm, t7, eta7, banana = 150.0, 3600.0, 0.25, 0.45e6
 E_food = Pm * t7 / eta7
-out["fy2-k7-b"] = round(E_food / 1e6, 2); out["k7-b-bananas"] = round(E_food / banana, 1)
+out["fy2-k7-b-E"] = round(E_food / 1e6, 2); out["fy2-k7-b-bananas"] = round(E_food / banana, 1)
 out["fy2-k7-c"] = round(500 * 0.80 / 150, 2)
 print(json.dumps(out))

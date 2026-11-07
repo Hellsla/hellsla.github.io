@@ -1,19 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: a8fbefe90565d098
-Mode: full
-Round: 2
+CONTENT-HASH: e76526cc5ac51eed
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
-
-## Fixed
-- exercises.json L2-08 reasons — first distractor was shortened against fi, leaving the correct reason longest by a margin (88 vs 110/108/98); restored "mitattuna", now 98 like fi, so lengths are fi-like.
+- none
 
 ## Polish
-- (none)
+- none
 
 ## Checked
-- New task L2-08 vs reviewed fi: id, kind, answer, tolerance, choices, reasons, correct flags identical; numbers 1000/300 MWh, 4,0/9,0 %, 40/27 MWh equal.
-- Selkosuomi per NOTES.md section 12: short sentences, feedback split into two sentences, no new terms; same physics as fi.
-- Length cue: reasons 98/110/108/98 characters (same as fi), no cue to the correct one; solutions L2-08 numerically equal fi.
-- Reasons are plausible misconceptions (percentage only, distance, speed); feedback repairs rather than restates; level 2 workload fits.
+- git diff origin/main...HEAD of the unit's files (fi-easy); pedagogy of the changed passages in context only; FY2 text level.
+- exercises.json feedbacks and solutions.md: loss mechanism wording as in the lesson (internal energy of wires, heat to surroundings; district heating through pipes). Feedback still explains why the distractor is wrong.
+- S2: 'sisäenergia' is a glossary term explained in the lesson; feedback sentences short.
+- S2 (NOTES.md §12): the changed sentences are short, connected, natural Finnish; physics terms kept.

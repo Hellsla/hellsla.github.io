@@ -1,11 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 93fd144d12a170e1
+CONTENT-HASH: 9d8b17256dc3de88
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- Eristekerros on hiekan sävyä rakeineen ja muistuttaa ympäröivää maata; erottuvampi eriste (tasainen vaalea vaahto ilman rakeita) näyttäisi 'paksun eristeen' selvemmin.
-- Voimalinjat eivät johda taloon; johto talolle sitoisi 230 V:n pistorasian kuvaan.
+- none
 
 ## Checked
-batch delta review: uusi tekstitön avauskuva (data-fig="hero") Miksi-kysymyksen alla, kaappaukset 1200 ja 360 px sekä SVG. Voimalinjat pylväineen kauas ja maan läpi leikattu näkymä kaukolämpöputkiin (meno punainen, paluu sininen) paksussa eristeessä taloon: kysymyksen molemmat puolet samassa kuvassa. Aria-label vastaa kuvaa, ei tekstiä, värit figuuripaletista.
+- git diff origin/main...HEAD of the unit's files (fi); pedagogy of the changed passages in context only; FY2 text level.
+- lesson.md: 'energy is moved in many ways; this chapter treats two' replaces the false 'in Finland it happens in two ways'.
+- Loss mechanism now distinguishes the grid (electrical energy -> internal energy of wires -> heat to surroundings) from district heating (energy passes as heat from hot water through the pipes); repeated consistently in theory, misconception section, summary, inquiry options/feedback and exit ticket. Correct option and distractor feedback in inquiry.json still repair the 'energy disappears / wires store energy' misconceptions.
+- Internal energy is a FY2 glossary term; level appropriate.

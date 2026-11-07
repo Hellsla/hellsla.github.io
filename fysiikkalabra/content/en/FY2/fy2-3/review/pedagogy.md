@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: ed6f842cf8a1ed44
+CONTENT-HASH: 8b7d7cb8f1d3b7cf
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+Round: 2
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- Translation delta against the Finnish: hero aria-label is faithful and natural, the exit-ticket answer keeps the teaching sequence (convert W to kW, then multiply by time) and is easier to follow than before, inquiry labels are plain English. Teaching sequence of the lesson unchanged from the Finnish.
+- git diff HEAD~1 (commit 29f864da6) of the unit's files (en), judged in context; round-1 findings for this unit.
+- lesson.md: duplicated average-power sentence removed; the following sentence still states it.

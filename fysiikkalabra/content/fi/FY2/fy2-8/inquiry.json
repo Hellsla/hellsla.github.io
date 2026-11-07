@@ -85,21 +85,21 @@
       "prompt": "Tuotetaan sama määrä sähköä kivihiilellä, maakaasulla, biomassalla tai tuulivoimalla. Millä näistä elinkaaren päästöt tuotettua kilowattituntia kohti ovat suurimmat ja millä pienimmät?",
       "choices": [
         {
-          "text": "Suurimmat kivihiilellä ja pienimmät tuulivoimalla, koska tuulivoimala ei polta mitään.",
+          "text": "Suurimmat kivihiilellä ja pienimmät tuulivoimalla, koska tuulivoimalassa ei polteta polttoainetta.",
           "correct": true,
-          "feedback": "Oikein. Hiilipitoisen polttoaineen polttaminen vapauttaa hiilidioksidia jokaista tuotettua kilowattituntia kohti, ja kivihiilen energia tulee suurimmaksi osaksi hiilen palamisesta. Maakaasussa on hiilen lisäksi paljon vetyä, joka palaa vedeksi, joten sen päästö on pienempi. Tuulivoimala ei polta mitään. Seuraavassa vaiheessa näet taulukosta, kuinka suuria erot ovat."
+          "feedback": "Oikein. IPCC:n elinkaarivertailun mukaan kivihiilisähkön elinkaaripäästöt ovat suurimmat ja tuulivoiman pienimmät. Kivihiilen energia tulee suurimmaksi osaksi hiilen palamisesta, ja maakaasussa on hiilen lisäksi paljon vetyä, joka palaa vedeksi, joten sen päästö on pienempi. Tuulivoiman käytössä ei polteta polttoainetta, mutta voimalan rakentamisesta ja materiaalien tuotannosta syntyy elinkaaripäästöjä. Biomassan päästöt riippuvat esimerkiksi raaka-aineesta ja hiilivarastojen muutoksista. Seuraavassa vaiheessa näet taulukosta, kuinka suuria erot ovat."
         },
         {
           "text": "Suurimmat biomassalla ja pienimmät tuulivoimalla, koska puussa on enemmän hiiltä kuin kivihiilessä.",
-          "feedback": "Kivihiilessä on hiiltä massaa kohti enemmän kuin puussa. Biomassan hiili on lisäksi sitoutunut kasveihin vasta äskettäin, ja uusi kasvu sitoo sen takaisin, joten biomassan päästö on fossiilisia polttoaineita pienempi mutta ei nolla. Tarkista järjestys seuraavan vaiheen taulukosta."
+          "feedback": "Kivihiilessä on hiiltä massaa kohti enemmän kuin puussa, ja vertailuaineistossa kivihiilisähkön elinkaaripäästöt ovat suurimmat. Biomassan päästöt eivät ole nolla, ja ne riippuvat esimerkiksi raaka-aineesta, hiilivarastojen muutoksista ja siitä, kuinka nopeasti hiili sitoutuu takaisin. Tarkista järjestys seuraavan vaiheen taulukosta."
         },
         {
           "text": "Suurimmat maakaasulla ja pienimmät biomassalla, koska kaasu karkaa helposti ja puu kasvaa uudelleen.",
-          "feedback": "Kaasuvuodot lisäävät maakaasun päästöjä, mutta kivihiili tuottaa samaa energiaa kohti vielä enemmän hiilidioksidia, koska sen energia tulee suurimmaksi osaksi hiilen palamisesta. Biomassan päästöt eivät ole pienimmät: viljely, korjuu ja kuljetus aiheuttavat päästöjä, ja tuulivoimala ei polta mitään."
+          "feedback": "Kaasuvuodot lisäävät maakaasun päästöjä, mutta kivihiili tuottaa samaa energiaa kohti vielä enemmän hiilidioksidia, koska sen energia tulee suurimmaksi osaksi hiilen palamisesta. Biomassan päästöt eivät ole pienimmät: viljely, korjuu ja kuljetus aiheuttavat päästöjä, eikä puun uusiutuvuus yksin pienennä elinkaaripäästöjä. Tuulivoiman käytössä ei polteta polttoainetta, joten sen elinkaaripäästöt syntyvät lähinnä voimalan rakentamisesta ja materiaaleista."
         },
         {
           "text": "Kaikilla suunnilleen yhtä suuret, koska jokaisella tuotetaan sama määrä sähköenergiaa.",
-          "feedback": "Sama energia ei tarkoita samoja päästöjä. Päästö riippuu siitä, vapautuuko jokaista tuotettua kilowattituntia kohti hiilidioksidia polttamisesta, kuten kivihiilellä ja maakaasulla, vai ei, kuten tuulivoimalla, joka ei polta mitään."
+          "feedback": "Sama energia ei tarkoita samoja päästöjä. Päästö riippuu siitä, vapautuuko jokaista tuotettua kilowattituntia kohti hiilidioksidia polttamisesta, kuten kivihiilellä ja maakaasulla, vai ei, kuten tuulivoimalla, jonka käytössä ei polteta polttoainetta; sen elinkaaripäästöt syntyvät lähinnä voimalan rakentamisesta."
         }
       ]
     },
@@ -327,7 +327,7 @@
           },
           {
             "text": "Ei kummallakaan, koska biomassan päästökertoimeen lasketaan vain polttaminen, ja kuljetukset jätetään elinkaaresta kokonaan pois.",
-            "feedback": "Elinkaaren päästökerroin sisältää kaikki vaiheet: viljelyn, korjuun, kuljetukset ja voimalan. Biomassalla nimenomaan polton hiilidioksidi on laskettu nollaksi, joten kuljetusten osuus näkyy kertoimessa."
+            "feedback": "Elinkaaren päästökerroin sisältää kaikki vaiheet: viljelyn, korjuun, kuljetukset ja voimalan. Biomassalla nimenomaan polton hiilidioksidi on laskentaoletuksena merkitty nollaksi, joten kuljetusten osuus näkyy kertoimessa."
           },
           {
             "text": "Kaukainen maakunta, koska silloin kunnan omat metsät säästyvät ja kunnan maankäyttö pysyy pienenä.",
@@ -426,15 +426,15 @@
         {
           "text": "Päästöjä syntyy: polton hiilidioksidi on ilmassa vuosikymmeniä, ja korjuu ja kuljetus lisäävät niitä.",
           "correct": true,
-          "feedback": "Oikein. Polton hiilidioksidi on ilmakehässä, kunnes uusi kasvu vuosikymmenten kuluessa sitoo sen takaisin, ja viljely, korjuu ja kuljetus aiheuttavat omia päästöjä. IPCC:n elinkaariarvion mukaan biomassasähkön päästökerroin on noin $230\\,\\text{g/kWh}$."
+          "feedback": "Oikein. Polton hiilidioksidi on ilmakehässä, kunnes uusi kasvu vuosikymmenten kuluessa sitoo sen takaisin, mikä edellyttää, että metsä todella kasvaa uudelleen. Lisäksi viljely, korjuu ja kuljetus aiheuttavat omia päästöjä. IPCC:n elinkaarivertailussa biomassasähkön päästökertoimen mediaani on noin $230\\,\\text{g/kWh}$, ja siinäkin polton hiilidioksidi on laskentaoletuksena nolla."
         },
         {
           "text": "Päästöjä ei synny lainkaan, koska puu on uusiutuva polttoaine ja metsä kasvaa aina uudelleen.",
-          "feedback": "Uusiutuva ei tarkoita päästötöntä. Polton hiilidioksidi on ilmakehässä, kunnes uusi kasvu vuosikymmenten kuluessa sitoo sen takaisin, ja viljely, korjuu ja kuljetus aiheuttavat omia päästöjä."
+          "feedback": "Uusiutuva ei tarkoita päästötöntä. Polton hiilidioksidi on ilmakehässä, kunnes uusi kasvu vuosikymmenten kuluessa sitoo sen takaisin, mikä edellyttää, että metsä todella kasvaa uudelleen. Lisäksi viljely, korjuu ja kuljetus aiheuttavat omia päästöjä."
         },
         {
           "text": "Vaikutus on täsmälleen sama kuin kivihiilellä, koska kummankin palaessa syntyy hiilidioksidia.",
-          "feedback": "Kummastakin vapautuu hiilidioksidia, mutta kivihiilen hiili on ollut maan alla miljoonia vuosia, joten sen polttaminen lisää ilmakehän hiilidioksidia. Puun hiili on sitoutunut vasta vuosikymmenten aikana, ja uusi kasvu sitoo sen takaisin. Elinkaaren päästökerroin on kivihiilellä noin $820\\,\\text{g/kWh}$ ja biomassalla noin $230\\,\\text{g/kWh}$."
+          "feedback": "Kummastakin vapautuu hiilidioksidia, mutta kivihiilen hiili on ollut maan alla miljoonia vuosia, joten sen polttaminen lisää ilmakehän hiilidioksidia. Puun hiili on sitoutunut vasta vuosikymmenten aikana, ja uusi kasvu voi sitoa sen takaisin, jos metsä kasvaa uudelleen. Elinkaaren päästökerroin on kivihiilellä noin $820\\,\\text{g/kWh}$ ja biomassalla noin $230\\,\\text{g/kWh}$."
         }
       ]
     },

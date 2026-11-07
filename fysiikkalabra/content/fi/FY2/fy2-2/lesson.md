@@ -543,7 +543,7 @@ E_\text{lämpö} &= E_\text{alussa} - E_\text{liike} \\
 
 <!-- vaihe -->
 
-**Tulos.** Lämpöenergiaksi muuttuu $340\,\text{kJ}$. Tulos on pyöristetty kahden merkitsevän numeron tarkkuuteen, koska alkuenergia $0{,}45\,\text{MJ}$ ja liike $110\,\text{kJ}$ on annettu kahdella numerolla.
+**Tulos.** Lämpöenergiaksi muuttuu $340\,\text{kJ}$. Tulos on pyöristetty kahden merkitsevän numeron tarkkuuteen, koska alkuenergia $0{,}45\,\text{MJ}$ on annettu kahdella merkitsevällä numerolla. Kokonaislukuna annettu $110\,\text{kJ}$ tulkitaan tarkaksi arvoksi, joten tarkkuutta rajoittaa alkuenergia.
 
 <!-- vaihe -->
 

@@ -5,8 +5,8 @@
       "id": "fy2-s1",
       "title": "A city gives up coal power",
       "source": "example",
-      "source_note": "The city, its electricity consumption, the plants' powers, capacity factors and seasonal shares are invented example values whose order of magnitude matches Finnish power plants. The emission factors are real: the IPCC Fifth Assessment Report (AR5, 2014), Working Group III, Annex III, life-cycle emission medians, rounded.",
-      "text": "The old coal-fired power plant of an example city is being closed. The city council asks you for a recommendation on how the city's electricity should be produced in the future. The city is connected to the national electricity grid, so it can also buy and sell electricity.\n\n**The city's electricity demand (example)**\n\n- Annual consumption $E = 380\\,\\text{GWh}$. Until now the coal plant has produced all of it.\n- The highest power demand $P_\\text{peak} = 80\\,\\text{MW}$ occurs on a calm, frosty evening in January.\n- A year has $8760\\,\\text{h}$, and the winter months December–February have $90$ days.\n\n**The options, one unit at a time (power and capacity factor are example values, emission factor from IPCC AR5, 2014)**\n\nThe capacity factor $k$ is the plant's average power over a year divided by its rated power $P_\\text{n}$. For a controllable plant it is a typical value: the plant can run more or less when needed.\n\n| Power plant | $P_\\text{n}\\ (\\text{MW})$ | $k$ | $e\\ (\\tfrac{\\text{g}}{\\text{kWh}})$ |\n|---|---|---|---|\n| Natural gas | $50$ | $0.60$ | $490$ |\n| Biomass (wood chips) | $40$ | $0.70$ | $230$ |\n| Wind (onshore) | $5.0$ | $0.32$ | $11$ |\n| Solar (park) | $10$ | $0.11$ | $48$ |\n| Small nuclear | $60$ | $0.90$ | $12$ |\n| Hydro (share) | $20$ | $0.50$ | $24$ |\n| Existing coal plant | $90$ | | $820$ |\n\nIn the table, $e$ is the life-cycle emission factor in grams of carbon dioxide equivalent per kilowatt-hour. It includes the construction of the plant and the production and transport of the fuel. In the figure for biomass, the carbon dioxide from burning is counted as zero, because new growth binds it back over decades.\n\n**Properties of the production methods (example)**\n\n- *Natural gas:* the power can be adjusted quickly up and down. Gas is brought in by pipeline or ship, so availability and price depend on imports.\n- *Biomass:* the power can be adjusted, but more slowly than in a gas plant. Wood chips are transported by lorry, about $30$ lorry loads per day at full power, and forest is felled to produce them.\n- *Wind power:* production depends on the weather. Production can be curtailed but not increased. During a calm, frosty spell the combined output of the wind turbines can be below $5\\,\\%$ of the rated power for several days. The turbines can be seen and heard, and their area takes up land.\n- *Solar power:* production depends on the time of day, the season and cloud cover. On a dark winter evening production is zero. The park takes up about $15\\,\\text{ha}$ of field or forest for every ten megawatts of rated power.\n- *Small nuclear power plant:* usually runs steadily at almost rated power, and the power can also be reduced. Such plants are not yet in use in Finland; licensing and construction are estimated to take more than ten years. Spent fuel is radioactive waste that must be disposed of permanently.\n- *Hydropower:* the power can be adjusted quickly, but the energy of a year depends on rainfall and varies from year to year by about $\\pm 20\\,\\%$. The region's undeveloped rapids are protected, so the city can only buy a share of an existing plant.\n\n**Share of the annual energy in different seasons (example)**: the city's consumption and the production of wind and solar power\n\n| Months | Demand | Wind | Solar |\n|---|---|---|---|\n| Dec–Feb | $31\\,\\%$ | $32\\,\\%$ | $4\\,\\%$ |\n| Mar–May | $25\\,\\%$ | $23\\,\\%$ | $34\\,\\%$ |\n| Jun–Aug | $19\\,\\%$ | $17\\,\\%$ | $45\\,\\%$ |\n| Sep–Nov | $25\\,\\%$ | $28\\,\\%$ | $17\\,\\%$ |",
+      "source_note": "The city, its electricity consumption, the plants' powers, capacity factors and seasonal shares are invented example values whose order of magnitude matches Finnish power plants. The emission factors are real: the IPCC Fifth Assessment Report (AR5, 2014), Working Group III, Annex III, life-cycle emission medians, rounded. The biomass factor is the median of the IPCC's life-cycle comparison of certain biomass supply chains, not a universal factor for all electricity produced from forest wood chips.",
+      "text": "The old coal-fired power plant of an example city is being closed. The city council asks you for a recommendation on how the city's electricity should be produced in the future. The city is connected to the national electricity grid, so it can also buy and sell electricity.\n\n**The city's electricity demand (example)**\n\n- Annual consumption $E = 380\\,\\text{GWh}$. Until now the coal plant has produced all of it.\n- The highest power demand $P_\\text{peak} = 80\\,\\text{MW}$ occurs on a calm, frosty evening in January.\n- A year has $8760\\,\\text{h}$, and the winter months December–February have $90$ days.\n\n**The options, one unit at a time (power and capacity factor are example values, emission factor from IPCC AR5, 2014)**\n\nThe capacity factor $k$ is the plant's average power over a year divided by its rated power $P_\\text{n}$. For a controllable plant it is a typical value: the plant can run more or less when needed.\n\n| Power plant | $P_\\text{n}\\ (\\text{MW})$ | $k$ | $e\\ (\\tfrac{\\text{g}}{\\text{kWh}})$ |\n|---|---|---|---|\n| Natural gas | $50$ | $0.60$ | $490$ |\n| Biomass (wood chips) | $40$ | $0.70$ | $230$ |\n| Wind (onshore) | $5.0$ | $0.32$ | $11$ |\n| Solar (park) | $10$ | $0.11$ | $48$ |\n| Small nuclear | $60$ | $0.90$ | $12$ |\n| Hydro (share) | $20$ | $0.50$ | $24$ |\n| Existing coal plant | $90$ | | $820$ |\n\nIn the table, $e$ is the life-cycle emission factor in grams of carbon dioxide equivalent per kilowatt-hour. It includes the construction of the plant and the production and transport of the fuel.\n\nFor the biomass option this calculation exercise uses the emission factor $230\\,\\text{g/kWh}$. The value is based on the IPCC's life-cycle comparison of certain biomass supply chains, in which the carbon dioxide from burning is counted as zero because new growth binds carbon back. This is an accounting assumption, not a claim that burning biomass releases no carbon dioxide. The real life-cycle emission factor of forest wood chips can differ considerably from this: it depends on where the biomass comes from, on changes in carbon stocks and on how quickly the carbon is bound back into vegetation.\n\n**Properties of the production methods (example)**\n\n- *Natural gas:* the power can be adjusted quickly up and down. Gas is brought in by pipeline or ship, so availability and price depend on imports.\n- *Biomass:* the power can be adjusted, but more slowly than in a gas plant. Wood chips are transported by lorry, about $30$ lorry loads per day at full power, and forest is felled to produce them.\n- *Wind power:* production depends on the weather. Production can be curtailed but not increased. During a calm, frosty spell the combined output of the wind turbines can be below $5\\,\\%$ of the rated power for several days. The turbines can be seen and heard, and their area takes up land.\n- *Solar power:* production depends on the time of day, the season and cloud cover. On a dark winter evening production is zero. The park takes up about $15\\,\\text{ha}$ of field or forest for every ten megawatts of rated power.\n- *Small nuclear power plant:* usually runs steadily at almost rated power, and the power can also be reduced. Such plants are not yet in use in Finland; licensing and construction are estimated to take more than ten years. Spent fuel is radioactive waste that must be disposed of permanently.\n- *Hydropower:* the power can be adjusted quickly, but the energy of a year depends on rainfall and varies from year to year by about $\\pm 20\\,\\%$. The region's undeveloped rapids are protected, so the city can only buy a share of an existing plant.\n\n**Share of the annual energy in different seasons (example)**: the city's consumption and the production of wind and solar power\n\n| Months | Demand | Wind | Solar |\n|---|---|---|---|\n| Dec–Feb | $31\\,\\%$ | $32\\,\\%$ | $4\\,\\%$ |\n| Mar–May | $25\\,\\%$ | $23\\,\\%$ | $34\\,\\%$ |\n| Jun–Aug | $19\\,\\%$ | $17\\,\\%$ | $45\\,\\%$ |\n| Sep–Nov | $25\\,\\%$ | $28\\,\\%$ | $17\\,\\%$ |",
       "parts": [
         {
           "id": "a",
@@ -41,11 +41,38 @@
           "kind": "calc",
           "points": 3,
           "text": "Calculate the annual emission of the city's electricity production if the whole annual consumption is produced with coal, natural gas or wind power. By what percentage does the emission decrease in each alternative compared with coal?",
-          "answer": {
-            "value": 186200,
-            "unit": "t",
-            "tolerance": 0.03
-          },
+          "answer": [
+            {
+              "name": "coal",
+              "value": 311600,
+              "unit": "t",
+              "tolerance": 0.03
+            },
+            {
+              "name": "gas",
+              "value": 186200,
+              "unit": "t",
+              "tolerance": 0.03
+            },
+            {
+              "name": "wind",
+              "value": 4180,
+              "unit": "t",
+              "tolerance": 0.03
+            },
+            {
+              "name": "cutgas",
+              "value": 40.2,
+              "unit": "%",
+              "tolerance": 0.02
+            },
+            {
+              "name": "cutwind",
+              "value": 98.7,
+              "unit": "%",
+              "tolerance": 0.01
+            }
+          ],
           "criteria": [
             {
               "key": "equation",
@@ -91,7 +118,7 @@
               "detail": "The average power of the wind turbines in winter $\\approx 58\\,\\text{MW}$ and the city's average demand $\\approx 55\\,\\text{MW}$."
             },
             {
-              "text": "Concludes that the winter energy is enough on average, but on a calm, frosty evening the output of the wind turbines can be only about $7\\,\\text{MW}$ when the demand is $80\\,\\text{MW}$.",
+              "text": "Concludes that the winter energy is enough on average, but on a calm, frosty evening the combined output of the wind turbines can fall below $7\\,\\text{MW}$ when the demand is $80\\,\\text{MW}$, so more than $73\\,\\text{MW}$ is needed from elsewhere.",
               "tag": "concept",
               "points": 1
             }

@@ -161,12 +161,12 @@ o_\text{C} &= 4{,}0\,\text{MW} : 12\,\text{MW} = 0{,}33
 
 ## fy2-6-L2-07
 **Annettu:** päästökertoimet kivihiili $820\,\text{g/kWh}$ ja tuulivoima $12\,\text{g/kWh}$, kaupungin sähkö $E = 2{,}0\,\text{TWh}$ vuodessa
-**Kysytty:** elinkaaren päästöistä vuoden sähköntuotannolle kuuluva säästyvä hiilidioksidimäärä miljoonina tonneina, kun kivihiili korvataan tuulivoimalla; paras valinta
+**Kysytty:** elinkaaren päästöistä vuoden sähköntuotannolle kuuluva säästyvä päästö miljoonina tonneina hiilidioksidiekvivalenttia, kun kivihiili korvataan tuulivoimalla; paras valinta
 **Periaate:** Päästö on päästökerroin kerrottuna tuotetulla energialla. Säästö on kivihiilen ja tuulivoiman päästöjen erotus, koska energia on molemmissa sama.
 **Kaava:** $\Delta m = (k_\text{hiili} - k_\text{tuuli})\, E$
 **Muunnokset:** $2{,}0\,\text{TWh} = 2{,}0 \cdot 10^{9}\,\text{kWh}$. Lopuksi grammat tonneiksi: $1{,}616 \cdot 10^{12}\,\text{g} = 1{,}616 \cdot 10^{12} : 10^{6}\,\text{t} = 1{,}616 \cdot 10^{6}\,\text{t}$.
 **Sijoitus:** $\Delta m = (820\,\text{g/kWh} - 12\,\text{g/kWh}) \cdot 2{,}0 \cdot 10^{9}\,\text{kWh} = 808\,\text{g/kWh} \cdot 2{,}0 \cdot 10^{9}\,\text{kWh} = 1{,}616 \cdot 10^{12}\,\text{g} = 1{,}616 \cdot 10^{6}\,\text{t}$
-**Vastaus:** Noin $1{,}6$ miljoonaa tonnia hiilidioksidia vuodessa, kaksi merkitsevää numeroa kuten energiassa $2{,}0\,\text{TWh}$. Päästöjen ja käyttöiän perusteella paras valinta on ydinvoima: sen päästökerroin $12\,\text{g/kWh}$ on pienin (yhtä pieni kuin tuulivoimalla) ja käyttöikä $60\,\text{a}$ on pisin. Taulukko ei kerro tehon säädettävyyttä, kustannuksia, sääriippuvuutta, maankäyttöä eikä jätteitä, jotka kaikki vaikuttavat valintaan. Esimerkiksi tuulivoima ja aurinkosähkö ovat sääriippuvaisia ja tarvitsevat säätövoimaa.
+**Vastaus:** Noin $1{,}6$ miljoonaa tonnia hiilidioksidiekvivalenttia vuodessa, kaksi merkitsevää numeroa kuten energiassa $2{,}0\,\text{TWh}$. Päästöjen ja käyttöiän perusteella paras valinta on ydinvoima: sen päästökerroin $12\,\text{g/kWh}$ on pienin (yhtä pieni kuin tuulivoimalla) ja käyttöikä $60\,\text{a}$ on pisin. Taulukko ei kerro tehon säädettävyyttä, kustannuksia, sääriippuvuutta, maankäyttöä eikä jätteitä, jotka kaikki vaikuttavat valintaan. Esimerkiksi tuulivoima ja aurinkosähkö ovat sääriippuvaisia ja tarvitsevat säätövoimaa.
 **Järkevyys:** Kivihiilen päästöt ovat $820 : 12 \approx 68$ kertaa tuulivoiman päästöt, joten lähes koko kivihiilen päästö $820\,\text{g/kWh} \cdot 2{,}0 \cdot 10^{9}\,\text{kWh} = 1{,}64 \cdot 10^{6}\,\text{t}$ säästyy, ja $1{,}616 : 1{,}64 = 0{,}99$.
 
 ## fy2-6-L3-01
@@ -223,7 +223,7 @@ P_\text{su} &= 8{,}4 - 3{,}5 - 5{,}4 = -0{,}5
 
 ## fy2-6-L3-05
 **Annettu:** tuulipuisto $P_\text{nim} = 100\,\text{MW}$, keskiteho $33\,\%$, $K = 120$ milj. euroa, käyttöikä $25\,\text{a}$, $12\,\text{g/kWh}$; ydinvoimala $1200\,\text{MW}$, $90\,\%$, $K = 6000$ milj. euroa, $60\,\text{a}$, $12\,\text{g/kWh}$; vuosi $8760\,\text{h}$
-**Kysytty:** a) vuosienergiat; b) rakennuskustannus tuotettua megawattituntia kohti, tuulipuisto laatikkoon; c) elinkaaren päästöistä vuoden tuotannolle kuuluva hiilidioksidimäärä; d) perusteltu vertailu
+**Kysytty:** a) vuosienergiat; b) rakennuskustannus tuotettua megawattituntia kohti, tuulipuisto laatikkoon; c) elinkaaren päästöistä vuoden tuotannolle kuuluva päästö hiilidioksidiekvivalentteina; d) perusteltu vertailu
 **Periaate:** Vuosienergia on keskiteho kerrottuna vuoden pituudella, ja keskiteho on osuus nimellistehosta. Energia koko käyttöiältä on vuosienergia kerrottuna käyttöiällä. Kustannus energiaa kohti on rakennuskustannus jaettuna käyttöiän energialla. Päästö on päästökerroin kerrottuna energialla.
 **Kaava:** $E_\text{v} = o\, P_\text{nim}\, t$, $E_\text{kok} = E_\text{v} \cdot a$ ja $k = \dfrac{K}{E_\text{kok}}$
 **Muunnokset:** $120\,\text{milj. euroa} = 120 \cdot 10^{6}\,\text{euroa}$ ja $6000\,\text{milj. euroa} = 6000 \cdot 10^{6}\,\text{euroa}$. Päästöissä $1\,\text{MWh} = 1000\,\text{kWh}$ ja $1\,\text{t} = 10^{6}\,\text{g}$.

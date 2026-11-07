@@ -80,20 +80,20 @@
       "type": "choice",
       "title": "Prediction 2: chocolate and firewood",
       "justify": true,
-      "prompt": "The packaging of a chocolate bar says: energy $2200\\,\\text{kJ}$ per hundred grams. A hundred grams of air-dried firewood is burnt. Which one contains more chemical energy?",
+      "prompt": "The nutrition label of a chocolate bar gives an energy content of $2200\\,\\text{kJ}$ per hundred grams, and the heating value of air-dried firewood is $15\\,\\text{MJ/kg}$. Which of the stated energy values per unit of mass is larger? Why should the two numbers still not be read as exactly the same physical quantity?",
       "choices": [
         {
-          "text": "The firewood, because it is a fuel and chocolate is only food.",
-          "feedback": "Food is also a store of chemical energy. A hundred grams of wood releases about $15\\,\\text{MJ/kg} \\cdot 0.100\\,\\text{kg} = 1.5\\,\\text{MJ} = 1500\\,\\text{kJ}$ when it burns, which is less than the $2200\\,\\text{kJ}$ of the chocolate."
+          "text": "The firewood's value is larger, because wood is a fuel and chocolate is only food.",
+          "feedback": "Food is also a store of chemical energy. Convert the chocolate's value to the same unit: $2200\\,\\text{kJ} = 2.2\\,\\text{MJ}$ and $100\\,\\text{g} = 0.100\\,\\text{kg}$, so the value is $2.2\\,\\text{MJ} : 0.100\\,\\text{kg} = 22\\,\\text{MJ/kg}$. That is larger than the $15\\,\\text{MJ/kg}$ of wood."
         },
         {
-          "text": "The chocolate.",
-          "feedback": "Correct. The $2200\\,\\text{kJ}$ per hundred grams of chocolate is $22\\,\\text{MJ/kg}$, and that is more than the $1500\\,\\text{kJ}$ per hundred grams, or $15\\,\\text{MJ/kg}$, of wood. Both numbers are energy per unit of mass, but the label gives the energy the body can use. If chocolate were burned, slightly more energy would be released, so chocolate wins the comparison in that case too.",
+          "text": "The chocolate's value is larger, but the nutrition label and the heating value describe different things.",
+          "feedback": "Correct. The $2200\\,\\text{kJ}$ per hundred grams of chocolate is $22\\,\\text{MJ/kg}$, which is larger than the heating value of wood, $15\\,\\text{MJ/kg}$. Both numbers are energy per unit of mass, but their physical meaning differs: the nutrition label gives the energy the body can use, while the heating value gives the energy released in burning.",
           "correct": true
         },
         {
-          "text": "They cannot be compared, because one is food and the other is a fuel.",
-          "feedback": "In both, the energy is chemical, and its amount is measured in joules. When you take a hundred grams of each, the energies can be compared directly: $2200\\,\\text{kJ}$ in chocolate, $1500\\,\\text{kJ}$ in wood."
+          "text": "The chocolate's value is larger, and because the numbers are the same quantity, chocolate would also be a better fuel than wood.",
+          "feedback": "The chocolate's $22\\,\\text{MJ/kg}$ is indeed larger than the wood's $15\\,\\text{MJ/kg}$, but the same unit does not make the numbers the same quantity. The nutrition label gives the energy the body can use, the heating value the energy released in burning. Fuels are compared by their heating values."
         }
       ]
     },

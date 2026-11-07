@@ -101,14 +101,17 @@
 **Järkevyys:** Massojen suhde $\tfrac{4480}{1690} \approx 2{,}7$ on lähellä lämpöarvojen suhdetta $2{,}5$, kuten pitääkin.
 
 ### c)
-**Kysytty:** miksi pellettilämmitystä pidetään ilmastolle parempana ja mitä perustelu edellyttää
-**Periaate:** Ilmastovaikutus riippuu siitä, lisääkö poltto ilmakehän hiilidioksidia pysyvästi.
-**Mallivastaus:** Pellettien hiili on peräisin puusta, joka on sitonut sen ilmakehän hiilidioksidista lähivuosikymmeninä. Kun metsä kasvaa takaisin, se sitoo hiilen uudelleen, joten hiili kiertää ilmakehän ja kasvillisuuden välillä. Öljyn hiili taas on ollut miljoonia vuosia maan alla, ja sen poltto lisää ilmakehän hiilidioksidia pysyvästi. Perustelu edellyttää, että hakattu metsä todella kasvaa takaisin; sitoutuminen kestää vuosikymmeniä, joten lyhyellä aikavälillä puun poltto lisää ilmakehän hiilidioksidia. Pellettilämmitys on siis ilmastolle parempi pitkällä aikavälillä, mutta ei päästötön. (Lisäksi pellettien valmistus ja kuljetus vaativat energiaa.)
+**Kysytty:** millä edellytyksillä pellettilämmitys voi olla ilmaston kannalta öljylämmitystä parempi
+**Periaate:** Ilmastovaikutus riippuu siitä, lisääkö poltto ilmakehän hiilidioksidia pysyvästi vai sitoutuuko hiili takaisin, ja siitä, millä aikavälillä asiaa tarkastellaan.
+**Mallivastaus:** Pellettien hiili on peräisin puusta, joka on sitonut sen ilmakehän hiilidioksidista lähivuosikymmeninä. Öljyn hiili taas on ollut miljoonia vuosia maan alla, ja sen poltto lisää ilmakehän hiilidioksidia pysyvästi. Pellettilämmitys voi olla ilmaston kannalta parempi vain, jos hakatun puun tilalle kasvaa uutta puuta ja metsän hiilivarasto ei pienene, esimerkiksi jos pelletit tehdään sahauksen sivutuotteista eikä metsää hakata niitä varten lisää. Tarkastelujakso ratkaisee: koska poltossa vapautuu energiaa kohti enemmän hiilidioksidia kuin öljystä ja sitoutuminen kestää vuosikymmeniä, lyhyellä aikavälillä pellettien poltto lisää ilmakehän hiilidioksidia enemmän kuin öljyn. Etu voi syntyä vasta pitkällä aikavälillä. Puun uusiutuvuus ei siis takaa ilmastohyötyä automaattisesti, eikä pellettilämmitys ole päästötöntä; lisäksi pellettien valmistus ja kuljetus vaativat energiaa.
 
 ### Yleisiä virheitä
 - Hyötysuhteella kerrotaan, kun pitäisi jakaa, jolloin polttoainetta näyttää tarvittavan vähemmän kuin lämpöä.
 - Kilowattitunnit ja megajoulet jaetaan keskenään muuntamatta.
-- Pellettejä väitetään päästöttömiksi ilman perustelua.
+- Pellettejä väitetään päästöttömiksi tai puun uusiutuvuuden katsotaan takaavan ilmastohyödyn ilman perustelua.
+
+### Hyväksytään myös
+- c-kohdassa johtopäätös, että pellettilämmitys ei tarkastellulla aikavälillä ole öljylämmitystä parempi, kun se perustellaan hiilen sitoutumisen hitaudella tai metsän hiilivaraston pienenemisellä.
 
 ## fy2-k4
 
@@ -233,7 +236,7 @@
 ### d)
 **Kysytty:** arvio väitteestä
 **Periaate:** Päästöt syntyvät energian tuotannossa. Hukkalämmön käyttö korvaa muuta lämmöntuotantoa.
-**Mallivastaus:** Väite on liioiteltu. Datakeskuksen päästöt riippuvat siitä, miten sen käyttämä sähkö tuotetaan: fossiilisilla polttoaineilla tuotettu sähkö aiheuttaa päästöjä, käytettiinpä hukkalämpö tai ei. Hukkalämmön talteenotto vähentää päästöjä, koska kaukolämpöä tarvitsee tuottaa muualla vähemmän, mutta se ei poista sähköntuotannon päästöjä. Väite pitäisi paikkansa vain, jos sähkö tuotettaisiin päästöttömästi.
+**Mallivastaus:** Väite on liioiteltu. Datakeskuksen päästöt riippuvat siitä, miten sen käyttämä sähkö tuotetaan: fossiilisilla polttoaineilla tuotettu sähkö aiheuttaa päästöjä, käytettiinpä hukkalämpö tai ei. Hukkalämmön talteenotto voi pienentää lämmitysjärjestelmän päästöjä, koska kaukolämpöä tarvitsee tuottaa muualla vähemmän, mutta se ei poista sähköntuotannon päästöjä. Datakeskuksen koko elinkaaren päästöt eivät välttämättä ole nolla edes silloin, kun käyttösähkö on hyvin vähäpäästöistä, sillä myös palvelinten ja muiden laitteiden valmistus sekä rakennuksen rakentaminen aiheuttavat päästöjä.
 
 ### Yleisiä virheitä
 - Megawatit ja megawattitunnit sekoitetaan.
@@ -305,12 +308,12 @@
 ### c)
 **Annettu:** akku $500\,\text{Wh}$, $\eta = 0{,}80$, $P = 150\,\text{W}$
 **Kysytty:** aika $t$, jonka akku riittää
-**Periaate:** Moottori ja voimansiirto muuttavat akun energiasta $80\,\%$ pyörää liikuttavaksi hyötyenergiaksi. Aika saadaan hyödyksi saadusta energiasta ja tehosta.
+**Periaate:** Yksinkertaistetussa mallissa pyöräilijä ei polje, vaan koko $150\,\text{W}$:n hyötyteho tulee moottorista. Moottori ja voimansiirto muuttavat akun energiasta $80\,\%$ pyörää liikuttavaksi hyötyenergiaksi. Aika saadaan hyödyksi saadusta energiasta ja tehosta.
 **Kaava:** $t = \dfrac{\eta E}{P}$
 **Muunnokset:** $0{,}67\,\text{h} = 0{,}67 \cdot 60\,\text{min} \approx 40\,\text{min}$
 **Sijoitus:** $\eta E = 0{,}80 \cdot 500\,\text{Wh} = 400\,\text{Wh}$ ja $t = \dfrac{400\,\text{Wh}}{150\,\text{W}} \approx 2{,}67\,\text{h}$
 **Vastaus:** Akku riittää noin $2{,}7\,\text{h}$ eli noin $2\,\text{h}\ 40\,\text{min}$.
-**Järkevyys:** Täysi akku sisältää vähemmän energiaa ($1{,}8\,\text{MJ}$) kuin tunnin polkemisen ravintoenergia ($2{,}2\,\text{MJ}$), mutta moottori käyttää sen paljon paremmalla hyötysuhteella, joten se jaksaa pidempään. Todellisuudessa pyöräilijä polkee itsekin, joten akku riittää vielä pidempään.
+**Järkevyys:** Täysi akku sisältää vähemmän energiaa ($1{,}8\,\text{MJ}$) kuin tunnin polkemisen ravintoenergia ($2{,}2\,\text{MJ}$), mutta moottori käyttää sen paljon paremmalla hyötysuhteella, joten se jaksaa pidempään. Tavallinen sähköavusteinen pyörä vain avustaa polkemista, joten siinä pyöräilijä polkee itsekin ja akku riittää vielä pidempään.
 
 ### d)
 **Kysytty:** kumpi on energian kannalta tehokkaampi ja mitä pelkkä hyötysuhdevertailu ohittaa

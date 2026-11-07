@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: d0f5a3698663685e
+CONTENT-HASH: 88d00a44a2018fd5
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-
+- none
 
 ## Checked
-batch delta review: scratchpad kc/fy2-4-390.png and kc/fy2-4-1280.png (the new section cut from the built page, preview/fi-easy/fy2-4.html): stacked at 390 px, two columns at 1280 px, no raw maths, no overflow, no clipping; the diff text read for wording (the packet's own captures show no figure change, so only sheets of the new section were opened).
+- Diff of lesson.md, inquiry.json, exit-ticket.json (Selkeä suomi), changed passages with surrounding paragraph.
+- Hero question, hook text and the new simplified-model paragraph (visible radiation vs luminous flux): no new formulas, numbers $60\,\text{W}$, $10\,\text{W}$ unchanged in LaTeX, short paragraph, natural Selkeä suomi.
+- No captures opened (diff judged from source).

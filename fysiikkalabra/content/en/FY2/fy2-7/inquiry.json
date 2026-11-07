@@ -258,7 +258,7 @@
         },
         {
           "text": "The energy does not decrease on the way at all, because energy never disappears.",
-          "feedback": "Energy does not disappear, but some of it turns into heat in the surroundings. The energy that arrives at the user is smaller than the sent energy, and the difference is the loss."
+          "feedback": "Energy does not disappear, but some of it is transferred as heat to the surroundings on the way. The energy that arrives at the user is smaller than the sent energy, and the difference is the loss."
         },
         {
           "text": "There is no error in the calculation, because the loss is small.",
@@ -332,17 +332,17 @@
       "prompt": "In the electricity grid $4\\,\\%$ of the electrical energy fed into the grid is lost and does not reach the users. What happens to this energy?",
       "choices": [
         {
-          "text": "On the way it turns into heat, which is transferred to the surrounding air.",
+          "text": "It is converted into internal energy in the wires, which is transferred as heat to the surrounding air.",
           "correct": true,
           "feedback": "Correct. The electric current heats the wires, and the heat is transferred to the surroundings. Energy does not disappear: the energy fed in is the sum of the energy that arrives and the heat transferred to the surroundings."
         },
         {
           "text": "It disappears on the way, because it cannot be delivered all the way.",
-          "feedback": "Energy does not disappear. Loss means that some of the energy turns into heat on the way and is transferred to the surroundings, so it cannot be used at the socket. The energy that arrives and the heat together equal the energy fed in."
+          "feedback": "Energy does not disappear. Loss means that some of the electrical energy is converted into internal energy in the wires and transferred as heat to the surroundings, so it cannot be used at the socket. The energy that arrives and the heat together equal the energy fed in."
         },
         {
           "text": "It stays stored in the wires and returns to the grid later.",
-          "feedback": "Wires do not store electrical energy. The energy counted as loss turns into heat in the wires and is transferred to the surrounding air, and it cannot be turned back into electricity."
+          "feedback": "Wires do not store electrical energy. The energy counted as loss is converted into internal energy in the wires and transferred as heat to the surrounding air, and it cannot be turned back into electricity."
         },
         {
           "text": "It returns to the power plant as unused electricity.",

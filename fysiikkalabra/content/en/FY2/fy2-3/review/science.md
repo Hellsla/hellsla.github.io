@@ -1,11 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: ed6f842cf8a1ed44
+CONTENT-HASH: 8b7d7cb8f1d3b7cf
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+Round: 2
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28), delta: hero illustration aria-label and figures.json entry, inquiry.json value labels (hair dryer, kettle, lamp), exit-ticket answer with the power conversion split into its own sentence. Physics, numbers (E = Pt, 8760 h, 5.0 W vs 2000 W, 44 kWh vs 37 kWh), units and LaTeX identical to the Finnish; decimal point; no Finnish left in visible text.
+- Round-2 diff `git diff HEAD~1` (commit 29f864da6) of this unit's files (en fy2-3), judged in context; content hash recomputed and equal to the new hash.
+- lesson.md: removed "Their quotient is the average power over the interval." The average-power meaning is still stated in the following sentences; consistent with fi.
+- No changed numbers other than those noted; no physics regression against the round-1 review.

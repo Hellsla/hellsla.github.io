@@ -64,7 +64,7 @@
     },
     {
      "text": "Samaan tehoon riittää pienempi virta, joten johtimet lämpenevät vähemmän ja häviö pienenee.",
-     "feedback": "Oikein: kun jännite on korkea, sama teho siirtyy pienemmällä virralla. Pienempi virta lämmittää johtimia vähemmän, joten siirrossa muuttuu vähemmän sähköenergiaa lämmöksi.",
+     "feedback": "Oikein: kun jännite on korkea, sama teho siirtyy pienemmällä virralla. Pienempi virta lämmittää johtimia vähemmän, joten siirrossa muuttuu vähemmän sähköenergiaa johtimien sisäenergiaksi, joka siirtyy lämpönä ympäristöön.",
      "correct": true
     },
     {
@@ -218,7 +218,7 @@
    "choices": [
     {
      "text": "Väite on oikein, koska nopeasti siirtyvä energia ei ehdi muuttua matkalla miksikään muuksi.",
-     "feedback": "Häviön syy ei ole siirtymisen kesto. Kun virta kulkee johtimessa, johdin lämpenee ja osa sähköenergiasta muuttuu lämmöksi, vaikka siirtyminen on nopeaa."
+     "feedback": "Häviön syy ei ole siirtymisen kesto. Kun virta kulkee johtimessa, johdin lämpenee: osa sähköenergiasta muuttuu johtimen sisäenergiaksi ja siirtyy lämpönä ympäristöön, vaikka siirtyminen on nopeaa."
     },
     {
      "text": "Sähkö kulkee johdossa hitaasti, joten matkalla ehtii hajota suuri osa sähköenergiasta.",
@@ -226,7 +226,7 @@
     },
     {
      "text": "Osa energiasta katoaa matkalla kokonaan olemattomiin, vaikka sähkö kulkee nopeasti johdossa.",
-     "feedback": "Energia ei katoa. Häviöenergia muuttuu lämmöksi ympäristöön, mutta käyttäjä ei saa sitä hyötyyn."
+     "feedback": "Energia ei katoa. Häviöenergia siirtyy lämpönä ympäristöön, mutta käyttäjä ei saa sitä hyötyyn."
     },
     {
      "text": "Sähkö kulkee nopeasti, mutta virta lämmittää johdinta ja osa energiasta muuttuu lämmöksi.",

@@ -299,7 +299,7 @@ Teho kertoo, kuinka nopeasti voimala tuottaa energiaa. Kun teho on vakio, tuotet
 ```latex
 E = P \cdot t
 ```
-missä $E$ on tuotettu energia, $P$ voimalan teho ja $t$ aika. Kun teho on kilowatteina ja aika tunteina, energia on kilowattitunteina. Vuodessa on $t = 8760\,\text{h}$. Suuret energiat ilmoitetaan usein gigawatti- ja teravattitunteina: $1\,\text{GWh} = 10^{6}\,\text{kWh}$ ja $1\,\text{TWh} = 10^{9}\,\text{kWh}$.
+missä $E$ on tuotettu energia, $P$ voimalan teho ja $t$ aika. Kun teho on kilowatteina ja aika tunteina, energia on kilowattitunteina. Tavallisessa $365$ vuorokauden vuodessa on $t = 8760\,\text{h}$. Karkausvuodessa on $8784\,\text{h}$. Tämän luvun esimerkkilaskuissa käytetään tavallisen vuoden pituutta, ellei muuta ilmoiteta. Suuret energiat ilmoitetaan usein gigawatti- ja teravattitunteina: $1\,\text{GWh} = 10^{6}\,\text{kWh}$ ja $1\,\text{TWh} = 10^{9}\,\text{kWh}$.
 
 ### Nimellisteho ja keskiteho
 Voimalan nimellisteho on suurin teho, jolla se voi toimia. Tuulivoimala ei tuota nimellisteholla koko vuotta, koska tuuli vaihtelee. Keskiteho on vuoden aikana tuotettu energia jaettuna vuoden tuntimäärällä. Keskiteho jaettuna nimellisteholla kertoo, kuinka suuri osa nimellistehosta on keskimäärin käytössä.
@@ -387,7 +387,7 @@ P_\text{ka} &= E : t \\
 
 <!-- vaihe -->
 
-**Tulos.** Keskiteho on $1598\,\text{kW} = 1{,}598 \cdot 1000\,\text{kW} \approx 1{,}6\,\text{MW}$ eli $32\,\%$ nimellistehosta, kaksi merkitsevää numeroa kuten energiassa $14\,\text{GWh}$.
+**Tulos.** Keskiteho on $1598\,\text{kW} = 1{,}598\,\text{MW} \approx 1{,}6\,\text{MW}$ eli $32\,\%$ nimellistehosta, kaksi merkitsevää numeroa kuten energiassa $14\,\text{GWh}$.
 
 <!-- vaihe -->
 

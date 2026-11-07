@@ -1,19 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: a8fbefe90565d098
-Mode: full
-Round: 2
+CONTENT-HASH: e76526cc5ac51eed
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
-
-## Fixed
-- exercises.json L2-08 reasons — first distractor was shortened against fi, leaving the correct reason longest by a margin (88 vs 110/108/98); restored "mitattuna", now 98 like fi, so lengths are fi-like.
+- none
 
 ## Polish
-- (none)
+- none
 
 ## Checked
-- New task L2-08 vs reviewed fi: id, kind, answer, tolerance, choices, reasons, correct flags identical; numbers 1000/300 MWh, 4,0/9,0 %, 40/27 MWh equal.
-- Selkosuomi per NOTES.md section 12: short sentences, feedback split into two sentences, no new terms; same physics as fi.
-- Length cue: reasons 98/110/108/98 characters (same as fi), no cue to the correct one; solutions L2-08 numerically equal fi.
-- check_i18n: nothing for fy2-7; build.py fy2-7 succeeds.
+- Diff `git diff origin/main...HEAD` of exercises/exercises.json, exercises/solutions.md (fi-easy); content hash recomputed and equal to the brief's.
+- exercises.json/solutions.md: loss wording (internal energy in wires, then heat to surroundings; district heating through pipes) consistent with the lesson; the $40\,\text{MWh}$ vs $27\,\text{MWh}$ comparison unchanged and correct. No changed numbers.
+- Selkeä suomi changes carry the same physics as fi.

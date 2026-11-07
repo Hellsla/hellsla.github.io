@@ -1,11 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 685fd2f3a944bb18
+CONTENT-HASH: ea1fcb0f7268868f
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-
+- none
 
 ## Polish
-
+- none
 
 ## Checked
-- batch delta review: opened fy2-5-1280-0, fy2-5-1280-1, fy2-5-360-0, fy2-5-360-1; photo loads, no clipping or horizontal overflow, credit line under the caption, alt text and caption natural English and consistent with the picture and the paragraph, no number with a unit in the new text. Other photo(s) on the page are untouched and only seen for layout.
+- Diff of lesson.md, inquiry.json, exit-ticket.json (English), changed passages with surrounding paragraph.
+- Ennuste 2 prompt, three choices and feedbacks: $22\,\text{MJ/kg}$, $15\,\text{MJ/kg}$, $2.2\,\text{MJ} : 0.100\,\text{kg}$ typeset with colon for division, thin spaces, correct decimal separator; no bold in the prompt.
+- Distractor wording is parallel and grammatical; nutrition-label vs heating-value distinction stated clearly.
+- No captures opened (diff judged from source).

@@ -282,7 +282,7 @@
 
 ## Ydinajatus
 
-Energiaa tuotetaan usein kaukana siitä, missä sitä käytetään: voimalaitos on kaupungin ulkopuolella, mutta lämmitin ja pistorasia ovat kotona. Energia täytyy siis siirtää käyttäjälle. Suomessa se tapahtuu kahdella tavalla: **sähköenergiana** sähköverkossa ja **lämpöenergiana** kaukolämpöverkon vesiputkissa.
+Energiaa tuotetaan usein kaukana siitä, missä sitä käytetään: voimalaitos on kaupungin ulkopuolella, mutta lämmitin ja pistorasia ovat kotona. Energia täytyy siis siirtää käyttäjälle. Energiaa voidaan siirtää paikasta toiseen monella tavalla. Tässä luvussa tarkastellaan kahta yhteiskunnan energiaverkkojen kannalta tärkeää tapaa: **sähköenergian** siirtämistä sähköverkossa ja **lämpöenergian** siirtämistä kaukolämpöverkon vesiputkissa.
 
 ### Sähköverkko
 
@@ -390,7 +390,7 @@ Muuntaja nostaa jännitteen voimalaitoksella ja laskee sen takaisin käyttäjän
 
 ### Siirtohäviö
 
-Kummassakin verkossa osa energiasta muuttuu matkalla lämmöksi ympäristöön eikä tule perille. Tätä kutsutaan **siirtohäviöksi**. Energia ei katoa (luku *Energialajit ja energian säilyminen*), mutta häviö on käyttäjälle hyödytöntä.
+Sähköverkossa osa sähköenergiasta muuttuu johtimissa ja muissa laitteissa sisäenergiaksi, joka siirtyy lämpönä ympäristöön. Kaukolämpöverkossa puolestaan kuumasta vedestä siirtyy energiaa lämpönä putkiston ja eristeiden läpi ympäristöön. Molemmissa tapauksissa käyttäjälle saadaan vähemmän energiaa kuin verkkoon syötetään. Tätä kutsutaan **siirtohäviöksi**. Energia ei katoa (luku *Energialajit ja energian säilyminen*), mutta häviö on käyttäjälle hyödytöntä.
 
 Suomessa sähköverkon häviöt olivat vuonna 2024 noin $4\,\%$ sähkön kulutuksesta, kun kulutus oli noin $83\,\text{TWh}$ (Energiateollisuus, Sähkövuosi 2024). Tässä luvussa kulutusta käytetään sähköverkon lähtevänä energiana, joten $4\,\%$ on osuus siitä. Kaukolämmön verkkoon hankittiin vuonna 2024 noin $36\,\text{TWh}$ ja asiakkaille käytettiin noin $32{,}7\,\text{TWh}$, joten noin $9\,\%$ jäi matkalle (Energiateollisuus, Kaukolämpötilasto 2024; osuus on laskettu erotuksesta, joten se on arvio). Kaukolämmön häviö on suhteessa suurempi, koska kuuma vesi on ympäristöä selvästi lämpimämpää: mitä suurempi lämpötilaero ympäristöön on, sitä enemmän lämpöä karkaa, ja lämpöä pääsee eristeen läpi koko putkiston pituudella.
 
@@ -442,7 +442,7 @@ E_\text{häviö} &= E_\text{lähtö} - E_\text{perille} \\
 \end{aligned}
 ```
 
-missä $E_\text{lähtö}$ on verkkoon syötetty energia, $E_\text{perille}$ käyttäjälle asti tullut energia, $E_\text{häviö}$ matkalla lämmöksi muuttunut energia ja $\eta$ siirron hyötysuhde. Hyötysuhde annetaan prosentteina tai desimaalilukuna.
+missä $E_\text{lähtö}$ on verkkoon syötetty energia, $E_\text{perille}$ käyttäjälle asti tullut energia, $E_\text{häviö}$ matkalla lämpönä ympäristöön siirtynyt energia ja $\eta$ siirron hyötysuhde. Hyötysuhde annetaan prosentteina tai desimaalilukuna.
 
 <svg data-fig="sankey" viewBox="0 0 600 330" role="img" aria-label="Energiavirtakuva mittakaavassa. Ylhäällä sähköverkko: lähtevästä energiasta 96 % tulee perille ja 4 % häviää. Alhaalla kaukolämpöverkko: 91 % tulee perille ja 9 % häviää. Virran leveys on verrannollinen energiaan; lähtevän energian leveys on molemmissa sama." style="max-width:100%;font-size:24px">
   <foreignObject x="12" y="17.5" width="200" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{sähkö}$</div></foreignObject>
@@ -521,7 +521,7 @@ E_\text{häviö} &= E_\text{lähtö} - E_\text{perille} \\
 
 ## Yleinen virhekäsitys
 
-Moni ajattelee, että siirtohäviössä energia katoaa. Energia ei katoa: se muuttuu lämmöksi, joka lämmittää johtimia, putkia ja niiden ympäristöä, eikä käyttäjä saa sitä hyötyyn.
+Moni ajattelee, että siirtohäviössä energia katoaa. Energia ei katoa. Sähköverkossa osa sähköenergiasta muuttuu johtimissa sisäenergiaksi, ja kaukolämpöverkossa kuumasta vedestä siirtyy energiaa putkien läpi. Kummassakin tapauksessa energia siirtyy lopulta lämpönä ympäristöön, eikä käyttäjä saa sitä hyötyyn.
 
 Toinen virhe on laskea häviöprosentti perille tulevasta energiasta. Prosentti kuuluu laskea lähtevästä energiasta: jos häviö on $9{,}0\,\%$ ja perille tulee $245\,\text{MWh}$, lähtevä energia ei ole $245\,\text{MWh} + 0{,}090 \cdot 245\,\text{MWh}$ vaan $245\,\text{MWh} : 0{,}910$.
 
@@ -530,6 +530,6 @@ Kolmas virhe on ajatella, että häviö vähennetään yksikkönä prosentista: 
 ## Tiivistelmä
 
 - Sähköenergia siirretään sähköverkossa, pitkät matkat korkealla jännitteellä, koska silloin virta on pieni ja johtimien lämpenemisestä aiheutuva häviö vähäinen. Muuntajat nostavat ja laskevat jännitettä.
-- Lämpöenergia siirretään kaukolämpöverkossa kuumana vetenä eristetyissä putkissa. Suomessa sähköverkon häviöt olivat noin $4\,\%$ ja kaukolämpöverkon noin $9\,\%$ (Energiateollisuus, 2024).
+- Lämpöenergia siirretään kaukolämpöverkossa kuumana vetenä eristetyissä putkissa. Siirtohäviössä sähköenergiaa muuttuu johtimissa sisäenergiaksi, ja kuumasta vedestä siirtyy energiaa putkien läpi; molemmissa energia siirtyy lämpönä ympäristöön. Suomessa sähköverkon häviöt olivat noin $4\,\%$ ja kaukolämpöverkon noin $9\,\%$ (Energiateollisuus, 2024).
 - Siirtohäviö $E_\text{häviö} = E_\text{lähtö} - E_\text{perille}$ ja siirron hyötysuhde $\eta = E_\text{perille} : E_\text{lähtö}$. Häviöprosentti lasketaan lähtevästä energiasta.
 - Varastot (akku, pumppuvoimala, lämpövarasto) siirtävät energiaa ajassa, mutta niissäkin osa energiasta muuttuu lämmöksi.

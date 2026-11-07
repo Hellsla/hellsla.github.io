@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: a2a7138531676b3a
+CONTENT-HASH: 5321c759d58b694c
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-batch delta review (alt/caption revision after reviewer findings): rebuilt page opened at 360 and 1280 px; photo(s) load, no horizontal overflow, float right at 1280 and in the column at 360, credit under caption, revised alt text and caption read naturally in fi and match the picture.
+- Diff of lesson.md, inquiry.json, exit-ticket.json (Finnish), changed passages with surrounding paragraph.
+- Year length sentence ($365$ days, $8760\,\text{h}$, $8784\,\text{h}$) and Result step $1598\,\text{kW} = 1{,}598\,\text{MW} \approx 1{,}6\,\text{MW}$: LaTeX, thin spaces, decimal separator correct.
+- No captures opened (diff judged from source).

@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: fa0fb23fca92af8d
+CONTENT-HASH: 3a567565910709a1
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
-
-## Fixed
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-Translation of lesson.md, inquiry.json, exit-ticket.json, meta.json and figures.json against the reviewed Finnish: numbers, units, LaTeX, table values (Statistics Finland 2024 figures, 79.9 TWh total), worked example (1598 kW, 32 %), model answers, choice feedback and correct options identical in physics; rated vs average power, base load, controllability and renewable statements correct; no Finnish left in text, units or figure labels.
+- Diff `git diff origin/main...HEAD` of lesson.md, inquiry.json, exit-ticket.json (en); content hash recomputed and equal to the brief's.
+- lesson.md: ordinary year $365\cdot24 = 8760\,\text{h}$, leap year $366\cdot24 = 8784\,\text{h}$ recomputed; worked example $14\,\text{GWh} : 8760\,\text{h} = 1598\,\text{kW} = 1{,}598\,\text{MW} \approx 1{,}6\,\text{MW}$, $1{,}598 : 5{,}0 = 32\,\%$ recomputed; unit conversion now correct.
+- English changes match the fi source in substance (CO2 equivalent, internal energy vs heat, accounting assumption).

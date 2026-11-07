@@ -282,7 +282,7 @@
 
 ## Key idea
 
-Energy is often produced far from where it is used: the power plant is outside the city, but the heater and the wall socket are at home. So the energy has to be transferred to the user. In Finland this happens in two ways: as **electrical energy** in the electricity grid and as **thermal energy** in the water pipes of the district heating network.
+Energy is often produced far from where it is used: the power plant is outside the city, but the heater and the wall socket are at home. So the energy has to be transferred to the user. Energy can be transferred from place to place in many ways. This chapter looks at two ways that are important for society's energy networks: transferring **electrical energy** in the electricity grid and transferring **thermal energy** in the water pipes of the district heating network.
 
 ### The electricity grid
 
@@ -392,7 +392,7 @@ A transformer raises the voltage at the power plant and lowers it again close to
 
 ### Transmission loss
 
-In both networks some of the energy turns into heat in the surroundings on the way and does not arrive. This is called **transmission loss**. The energy does not disappear (chapter *Forms of energy and conservation of energy*), but the loss is useless to the user.
+In the electricity grid some of the electrical energy is converted into internal energy in the wires and other equipment, and this is transferred as heat to the surroundings. In the district heating network, energy is transferred as heat from the hot water through the pipes and insulation to the surroundings. In both cases the users get less energy than is fed into the network. This is called **transmission loss**. The energy does not disappear (chapter *Forms of energy and conservation of energy*), but the loss is useless to the user.
 
 In Finland the losses of the electricity grid in 2024 were about $4\,\%$ of electricity consumption, when consumption was about $83\,\text{TWh}$ (Finnish Energy, Sähkövuosi 2024). In this chapter consumption is used as the energy sent into the electricity grid, so $4\,\%$ is a share of it. About $36\,\text{TWh}$ was supplied to the district heating network in 2024 and about $32.7\,\text{TWh}$ was used by customers, so about $9\,\%$ was left on the way (Finnish Energy, Kaukolämpötilasto 2024; the share is calculated from the difference, so it is an estimate). The loss of district heating is relatively larger because hot water is clearly warmer than its surroundings: the greater the temperature difference to the surroundings, the more heat escapes, and heat gets through the insulation along the whole length of the pipework.
 
@@ -443,7 +443,7 @@ E_\text{loss} &= E_\text{sent} - E_\text{arrived} \\
 \end{aligned}
 ```
 
-where $E_\text{sent}$ is the energy fed into the network, $E_\text{arrived}$ the energy that reached the user, $E_\text{loss}$ the energy that turned into heat on the way and $\eta$ the efficiency of the transfer. Efficiency is given as a percentage or as a decimal number.
+where $E_\text{sent}$ is the energy fed into the network, $E_\text{arrived}$ the energy that reached the user, $E_\text{loss}$ the energy transferred as heat to the surroundings on the way and $\eta$ the efficiency of the transfer. Efficiency is given as a percentage or as a decimal number.
 
 <svg data-fig="sankey" viewBox="0 0 600 330" role="img" aria-label="Energy flow diagram to scale. At the top the electricity grid: of the sent energy 96 % arrives and 4 % is lost. At the bottom the district heating network: 91 % arrives and 9 % is lost. The width of a stream is proportional to the energy; the width of the sent energy is the same in both." style="max-width:100%;font-size:24px">
   <foreignObject x="12" y="17.5" width="200" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{electricity}$</div></foreignObject>
@@ -522,7 +522,7 @@ E_\text{loss} &= E_\text{sent} - E_\text{arrived} \\
 
 ## Common misconception
 
-Many people think that energy disappears in transmission loss. Energy does not disappear: it turns into heat, which warms the wires, the pipes and their surroundings, and the user gets no benefit from it.
+Many people think that energy disappears in transmission loss. Energy does not disappear. In the electricity grid some of the electrical energy is converted into internal energy in the wires, and in the district heating network energy passes from the hot water through the pipes. In both cases the energy is finally transferred as heat to the surroundings, and the user gets no benefit from it.
 
 Another mistake is to take the loss percentage of the energy that arrives. The percentage must be taken of the sent energy: if the loss is $9.0\,\%$ and $245\,\text{MWh}$ arrives, the sent energy is not $245\,\text{MWh} + 0.090 \cdot 245\,\text{MWh}$ but $245\,\text{MWh} : 0.910$.
 
@@ -531,6 +531,6 @@ A third mistake is to think that the loss is subtracted from the percentage as a
 ## Summary
 
 - Electrical energy is transferred in the electricity grid, long distances at high voltage, because then the current is small and the loss caused by heating of the wires is small. Transformers raise and lower the voltage.
-- Thermal energy is transferred in the district heating network as hot water in insulated pipes. In Finland the losses were about $4\,\%$ in the electricity grid and about $9\,\%$ in the district heating network (Finnish Energy, 2024).
+- Thermal energy is transferred in the district heating network as hot water in insulated pipes. In transmission loss, electrical energy is converted into internal energy in the wires, and energy passes from the hot water through the pipes; in both, the energy is transferred as heat to the surroundings. In Finland the losses were about $4\,\%$ in the electricity grid and about $9\,\%$ in the district heating network (Finnish Energy, 2024).
 - Transmission loss $E_\text{loss} = E_\text{sent} - E_\text{arrived}$ and efficiency of the transfer $\eta = E_\text{arrived} : E_\text{sent}$. The loss percentage is taken of the sent energy.
 - Stores (battery, pumped-storage plant, heat store) transfer energy in time, but in them too some of the energy turns into heat.

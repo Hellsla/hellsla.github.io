@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: a413c5dafb46d11c
+CONTENT-HASH: 94cfb94728086217
+Mode: light (teacher 2026-11-07, "kevyt katselmointi"): the round-2 polish diff (git diff HEAD~1, commit 29f864da6) only
+Round: 2
 
 ## Blocking
+- none
 
 ## Polish
-
+- none
 
 ## Checked
-batch delta review: scratchpad kc/fy2-7-390.png and kc/fy2-7-1280.png (the new section cut from the built page, preview/fi-easy/fy2-7.html): stacked at 390 px, two columns at 1280 px, no raw maths, no overflow, no clipping; the diff text read for wording (the packet's own captures show no figure change, so only sheets of the new section were opened).
+- lesson.md Siirtohäviö: "Sisäenergia on aineen hiukkasten liikkeen ja niiden välisten vuorovaikutusten energiaa. Sen kasvu näkyy johtimen lämpenemisenä." is grammatical and short enough for S2 learners. It also resolves my round-1 science note about the missing potential energy.
+- Round-1 changes are not re-reviewed (they passed in round 1). No captures opened (diff judged from source).

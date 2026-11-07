@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: bacb4dd371d60001
+CONTENT-HASH: 39a737c8fb70f7e1
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+Round: 2
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.
+- git diff HEAD~1 (commit 29f864da6) of the unit's files (fi-easy), judged in context; round-1 findings for this unit.
+- lesson.md: duplicated keskiteho sentence removed; the next sentence still says it. S2 text stays short and connected.

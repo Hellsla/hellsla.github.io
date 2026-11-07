@@ -265,7 +265,7 @@
       "answer": 1.6,
       "unit": "milj. t",
       "tolerance": 0.02,
-      "text": "Taulukossa on esimerkkilukuina (esimerkkiaineisto) neljän tuotantotavan elinkaaripäästöt eli koko elinkaaren aikana syntyvä hiilidioksidimäärä tuotettua sähkön kilowattituntia kohti sekä voimalan käyttöikä. Esimerkkikaupunki käyttää sähköä $2{,}0\\,\\text{TWh}$ vuodessa.\n\na) Kuinka monta miljoonaa tonnia hiilidioksidia vuodessa säästyisi elinkaaren päästöistä vuoden sähköntuotannolle kuuluvana osuutena, jos kaupungin sähkö tuotettaisiin kivihiilen sijasta tuulivoimalla? Käytä päästökertoimia ja muunna $1\\,\\text{t} = 10^{6}\\,\\text{g}$.\n\nb) Mikä tuotantotapa olisi päästöjen ja käyttöiän perusteella paras valinta? Mitä taulukko ei kerro, vaikka valinta pitäisi tehdä?",
+      "text": "Taulukossa on neljän sähköntuotantotavan päästökertoimet esimerkkiaineistona sekä voimalan käyttöikä. Päästökertoimet kuvaavat koko elinkaaren kasvihuonekaasupäästöjä hiilidioksidiekvivalentteina tuotettua sähkön kilowattituntia kohti. Esimerkkikaupunki käyttää sähköä $2{,}0\\,\\text{TWh}$ vuodessa.\n\na) Kuinka monta miljoonaa tonnia hiilidioksidiekvivalenttia vuodessa säästyisi elinkaaren päästöistä vuoden sähköntuotannolle kuuluvana osuutena, jos kaupungin sähkö tuotettaisiin kivihiilen sijasta tuulivoimalla? Käytä päästökertoimia ja muunna $1\\,\\text{t} = 10^{6}\\,\\text{g}$.\n\nb) Mikä tuotantotapa olisi päästöjen ja käyttöiän perusteella paras valinta? Mitä taulukko ei kerro, vaikka valinta pitäisi tehdä?",
       "data": {
         "caption": "Tuotantotapojen elinkaaripäästöt ja käyttöikä",
         "columns": [
@@ -392,7 +392,7 @@
       "answer": 17,
       "unit": "€/MWh",
       "tolerance": 0.03,
-      "text": "Kunta vertailee kahta tapaa tuottaa sähköä. Taulukossa on esimerkkilukuina (esimerkkiaineisto, ei oikeiden hankkeiden tietoja) tuulipuiston ja ydinvoimalan tiedot. Oletetaan, että voimala tuottaa koko käyttöikänsä vuosittain yhtä paljon energiaa kuin ensimmäisenä vuonna, ja että kustannus on vain rakennuskustannus. Vuodessa on $8760\\,\\text{h}$.\n\na) Laske kummankin voimalan vuosienergia megawattitunteina.\n\nb) Laske rakennuskustannus tuotettua megawattituntia kohti koko käyttöiän ajalta. Vastaa laatikkoon tuulipuiston arvo euroina megawattituntia kohti.\n\nc) Laske kummankin voimalan elinkaaren päästöistä vuoden tuotannolle kuuluva hiilidioksidimäärä tonneina, kun $1\\,\\text{t} = 10^{6}\\,\\text{g}$.\n\nd) Vertaa tuotantotapoja päästöjen, kustannuksen ja säädettävyyden perusteella ja anna perusteltu suositus.",
+      "text": "Kunta vertailee kahta tapaa tuottaa sähköä. Taulukossa on esimerkkilukuina (esimerkkiaineisto, ei oikeiden hankkeiden tietoja) tuulipuiston ja ydinvoimalan tiedot. Oletetaan, että voimala tuottaa koko käyttöikänsä vuosittain yhtä paljon energiaa kuin ensimmäisenä vuonna, ja että kustannus on vain rakennuskustannus. Vuodessa on $8760\\,\\text{h}$.\n\na) Laske kummankin voimalan vuosienergia megawattitunteina.\n\nb) Laske rakennuskustannus tuotettua megawattituntia kohti koko käyttöiän ajalta. Vastaa laatikkoon tuulipuiston arvo euroina megawattituntia kohti.\n\nc) Laske kummankin voimalan elinkaaren päästöistä vuoden tuotannolle kuuluva osuus tonneina hiilidioksidiekvivalenttia, kun $1\\,\\text{t} = 10^{6}\\,\\text{g}$.\n\nd) Vertaa tuotantotapoja päästöjen, kustannuksen ja säädettävyyden perusteella ja anna perusteltu suositus.",
       "data": {
         "caption": "Tuulipuiston ja ydinvoimalan vertailu",
         "columns": [

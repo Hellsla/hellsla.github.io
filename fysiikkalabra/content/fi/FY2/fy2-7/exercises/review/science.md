@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: c5d377ec0ca6ef49
-
-Round 3 (round 2: PASS; round 1: FAIL, 1 Blocking). New YO-skill task L2-08; since round 2 only two lines of its solution changed (commit 4ab4e1a5d, layout for a phone).
+CONTENT-HASH: d1be3d5c2b9e2503
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+Round: 2
 
 ## Blocking
+- none
 
 ## Polish
-- exercises.json L2-08, correct reason "…sähköverkkoon lähtee paljon enemmän energiaa…" and the correct choice's feedback "pienempikin osuus on energiana suurempi" (carried from round 2). "Much more energy" decides only because the energy ratio (1000 : 300 = 3,3) is larger than the share ratio (9,0 : 4,0 = 2,3). This is C at FY2 level, since the solution shows 40 MWh against 27 MWh. Optional: "…niin paljon enemmän, että osuus kertaa energia on suurempi".
+- none
 
 ## Checked
-- Round-3 change (solutions.md L2-08 Mallivastaus): each chain is now split into "$E_\text{häviö} = 0{,}040 \cdot 1000\,\text{MWh}$, eli $E_\text{häviö} = 40\,\text{MWh}$" and the same for $0{,}090 \cdot 300\,\text{MWh} = 27\,\text{MWh}$. The numbers, symbol and units are unchanged and correct, and the formula still stands before the substitution.
-- `git diff` from the round-2 commit 9fd1b2088 to HEAD: in fy2-7's exercises and answers.py nothing changed apart from these two lines and the review files.
-- Recomputed L2-08: 0,040 · 1000 MWh = 40 MWh and 0,090 · 300 MWh = 27 MWh, so the answer is Sähköverkossa.
-- Ran answers.py against exercises.json in one script: all 18 numeric answers are within tolerance.
-- Round-2 checks still hold: exactly one correct choice and one correct reason; every wrong option and its feedback are right; round-1 Blocking and Polish are resolved.
-- Hash unchanged at the start and the end (c5d377ec0ca6ef49).
+- Round-2 diff `git diff HEAD~1` (commit 29f864da6) of this unit's files (fi fy2-7 exercises), judged in context; content hash recomputed and equal to the new hash.
+- exercises.json feedback: "sähköenergiaa johtimien sisäenergiaksi, joka siirtyy lämpönä ympäristöön". This is the correct internal energy -> heat-in-transfer mechanism, consistent with the lesson.
+- No changed numbers other than those noted; no physics regression against the round-1 review.

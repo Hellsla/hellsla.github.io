@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 0d565ba6ef9f6c32
+CONTENT-HASH: 8b7d7cb8f1d3b7cf
+Mode: light (teacher 2026-11-07, "kevyt katselmointi"): the round-2 polish diff (git diff HEAD~1, commit 29f864da6) only
+Round: 2
 
 ## Blocking
-
+- none
 
 ## Polish
-
+- none
 
 ## Checked
-- batch delta review: opened fy2-3-1280-0, fy2-3-360-0; photo loads, no clipping or horizontal overflow, credit line under the caption, alt text and caption natural English and consistent with the picture and the paragraph, no number with a unit in the new text.
+- lesson.md: the duplicate "Their quotient is the average power over the interval." removed; paragraph reads correctly.
+- Round-1 changes are not re-reviewed (they passed in round 1). No captures opened (diff judged from source).

@@ -1,6 +1,6 @@
 [
   {
     "q": "Why is long-distance electricity transmission done at high voltage?",
-    "a": "The same power is transferred at high voltage with a smaller electric current. The larger the current, the more the wire heats up, so at high voltage the loss that turns into heat is small."
+    "a": "The same power is transferred at high voltage with a smaller electric current. The larger the current, the more the wire heats up, so at high voltage the loss, converted into internal energy in the wires and transferred as heat to the surroundings, is small."
   }
 ]

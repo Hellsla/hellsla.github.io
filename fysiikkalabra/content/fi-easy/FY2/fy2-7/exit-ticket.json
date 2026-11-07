@@ -1,6 +1,6 @@
 [
   {
     "q": "Miksi pitkä sähkönsiirto tehdään korkealla jännitteellä?",
-    "a": "Sama teho siirtyy korkealla jännitteellä pienemmällä sähkövirralla. Mitä suurempi virta on, sitä enemmän johdin lämpenee. Siksi korkealla jännitteellä lämmöksi muuttuva häviö on pieni."
+    "a": "Sama teho siirtyy korkealla jännitteellä pienemmällä sähkövirralla. Mitä suurempi virta on, sitä enemmän johdin lämpenee. Siksi korkealla jännitteellä häviö on pieni. Häviössä sähköenergiaa muuttuu johtimissa sisäenergiaksi, joka siirtyy lämpönä ympäristöön."
   }
 ]

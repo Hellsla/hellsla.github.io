@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 3deec891b7917418
+CONTENT-HASH: ea1fcb0f7268868f
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- Translation review against the reviewed Finnish (2026-10-29, after the option rebalance 01da3ae6): lesson.md opening question; choices of the energy-conversion check, the fuel table, the mass table and the concept check; new checks 2 (43 vs 15 MJ/kg, 1.0 kg vs 4.0 kg, 60 MJ vs 43 MJ, E = Hm) and 3 (22 MJ/kg food label vs 15 MJ/kg firewood); renumbered checks 4 and 5; exit ticket with the single E = Hm question. Physics, numbers, units, LaTeX, correct options and per-option feedback match the Finnish; figures labelled in the language. Natural textbook English, decimal point in text and LaTeX.
+- Diff `git diff origin/main...HEAD` of lesson.md, inquiry.json, exit-ticket.json (en); content hash recomputed and equal to the brief's.
+- inquiry.json ennuste-2: $2200\,\text{kJ} : 0{,}100\,\text{kg} = 22\,\text{MJ/kg} > 15\,\text{MJ/kg}$ recomputed. Exactly one correct option (larger, but nutrition energy = energy usable by the body vs heating value = energy released in combustion); both distractors wrong for the stated reason and their feedback correct (same unit does not make the same quantity; fuels compared by heating values). Removed claim about burning chocolate is no loss.
+- English changes match the fi source in substance (CO2 equivalent, internal energy vs heat, accounting assumption).
