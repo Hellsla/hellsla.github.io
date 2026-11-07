@@ -866,7 +866,7 @@ li.is-done .ex-done{color:var(--accent-deep)}
 .pm-graph{margin:.7rem 0 0}.pm-graph>summary{cursor:pointer;min-height:40px;display:flex;align-items:center;font:600 var(--fs-ui) var(--sans);color:var(--accent-deep)}
 .pm-chart{margin:.3rem 0 0;overflow:hidden}.pm-svg{display:block;max-width:100%;height:auto}
 .pm-grid{stroke:var(--line-2)}.pm-axis{stroke:var(--fig-muted)}.pm-total{stroke:var(--given);stroke-dasharray:4 4}
-.pm-tick{font:13px var(--sans);fill:var(--ink-2)}.pm-tick-total{fill:var(--accent-deep);font-weight:700}
+.pm-tick{font:13px var(--sans);fill:var(--ink-2)}.pm-tick-total{fill:var(--accent-deep);font-weight:700}.pm-goal{stroke:var(--given);stroke-width:2}.pm-tick-goal{fill:var(--given);font-weight:700}
 .pm-line{fill:none;stroke:var(--accent);stroke-width:2.5;stroke-linejoin:round}.pm-dot{fill:var(--accent)}
 .pm-note,.pm-empty{margin:.7rem 0 0;font-size:var(--fs-small);color:var(--ink-2)}
 /* Oma itsearvio beside Oma eteneminen (teacher 2026-11-07, templates/omaarvio.js): the skills fingerprint, a column per

@@ -299,12 +299,19 @@
   function courseWork() {
     const WFORMAT = 'ruukkilabra-tyo', WVERSION = 1, CODE = COURSE.course, PRE = CODE.toLowerCase() + '-';
     const KEY_RE = new RegExp('(^|[:/])' + CODE.toLowerCase() + '-[a-z0-9]', 'i');
-    const ownKey = (k) => /^(fl:|ruukkilabra:)/.test(k) && k !== 'ruukkilabra:tehty' && !k.startsWith('ruukkilabra:palautus:') && KEY_RE.test(k);
+    // the module page's counter (tehty.js): a solution's first save and the checked tasks, one map for every module in
+    // the browser; the file carries this module's part, and opening it adds what this browser does not have yet
+    const MAPS = ['ruukkilabra:ratkaistu', 'ruukkilabra:tarkistettu'];
+    const plain = (k) => /^(fl:|ruukkilabra:)/.test(k) && k !== 'ruukkilabra:tehty' && !k.startsWith('ruukkilabra:palautus:') && KEY_RE.test(k);
+    const ownKey = (k) => MAPS.includes(k) || plain(k);
+    const readMap = (k) => { try { const v = JSON.parse(localStorage.getItem(k) || '{}'); return v && typeof v === 'object' && !Array.isArray(v) ? v : {}; } catch (e) { return {}; } };
     const ownRec = (r) => r && typeof r.id === 'string' && r.id.toLowerCase().startsWith(PRE);
     const WKEY = 'ruukkilabra:palautus:' + CODE;
     const readLocal = () => {
       const out = {};
-      try { for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i); if (ownKey(k)) out[k] = localStorage.getItem(k); } } catch (e) { /* no storage */ }
+      try { for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i); if (plain(k)) out[k] = localStorage.getItem(k); } } catch (e) { /* no storage */ }
+      MAPS.forEach((k) => { const m = readMap(k), ids = Object.keys(m).filter((id) => id.toLowerCase().startsWith(PRE)).sort();
+        if (ids.length) out[k] = JSON.stringify(Object.fromEntries(ids.map((id) => [id, m[id]]))); });
       const sorted = {}; Object.keys(out).sort().forEach((k) => { sorted[k] = out[k]; });
       return sorted;
     };
@@ -390,13 +397,19 @@
       let have = {};
       try { localStorage.length; have = readLocal(); } catch (e) { throw fail(S('open_failed')); }
       const diffS = sols.filter((r) => mine.has(r.id) && mine.get(r.id).html !== r.html);
-      const diffL = local.filter((k) => k in have && have[k] !== st.local[k]);
+      const diffL = local.filter((k) => !MAPS.includes(k) && k in have && have[k] !== st.local[k]);
       const newer = diffS.filter((r) => (mine.get(r.id).updated || '') > (r.updated || '')).length;
       const replace = diffS.length + diffL.length > 0 && window.confirm(S('conflict', { n: diffS.length + diffL.length, newer }));
       const putS = sols.filter((r) => !mine.has(r.id) || (replace && mine.get(r.id).html !== r.html));
-      const putL = local.filter((k) => !(k in have) || (replace && have[k] !== st.local[k]));
+      const putL = local.filter((k) => !MAPS.includes(k) && (!(k in have) || (replace && have[k] !== st.local[k])));
       try { if (putS.length) await window.flPadStore.putAll(putS); } catch (e) { throw fail(S('open_failed')); }
       try { putL.forEach((k) => localStorage.setItem(k, st.local[k])); } catch (e) { throw fail(S('open_failed')); }
+      local.filter((k) => MAPS.includes(k)).forEach((k) => {   // added to this browser's map; an entry it has stays
+        let add = {}; try { add = JSON.parse(st.local[k]) || {}; } catch (e) { /* nothing to add */ }
+        const m = readMap(k); let n = 0;
+        Object.keys(add).forEach((id) => { if (id.toLowerCase().startsWith(PRE) && !(id in m)) { m[id] = add[id]; n++; } });
+        if (n) try { localStorage.setItem(k, JSON.stringify(m)); } catch (e) { /* the count misses them here */ }
+      });
       const p = d.progress;
       if (p && Array.isArray(p.done) && Array.isArray(p.history)) window.flPadStore.mergeDone({ v: 1, done: Object.fromEntries(p.done.filter((x) => Array.isArray(x) && x.length === 2)), log: p.history }, replace);
       return { n: putS.length, m: putL.length };

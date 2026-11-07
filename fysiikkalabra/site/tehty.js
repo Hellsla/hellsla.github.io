@@ -161,9 +161,12 @@
   const sv = (tag, attrs, text) => { const e = document.createElementNS(SVGNS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); if (text != null) e.textContent = text; return e; };
   const dayKey = (d) => d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
   const DAY = 864e5;
+  // the goal line (teacher 2026-11-07): 90 tasks in a 2 op module, 45 in a 1 op one (#fl-course goal); the axis still
+  // runs up to every task of the module, so the student sees there are more
+  const GOAL = EVERY && Number(C.goal) > 0 && Number(C.goal) < A.tasks.length ? Number(C.goal) : 0;
   const chart = (host, times, total) => {
     host.textContent = '';
-    if (!times.length) { host.append(el('p', 'pm-empty', S('progress_empty'))); return; }
+    if (!times.length) { host.append(el('p', 'pm-empty', S(EVERY ? 'progress_empty_all' : 'progress_empty'))); return; }
     const per = new Map();
     times.map((t) => new Date(t)).sort((a, b) => a - b).forEach((d) => { const k = dayKey(d); per.set(k, (per.get(k) || 0) + 1); });
     const days = [...per.keys()].map((k) => new Date(k + 'T00:00:00'));
@@ -173,13 +176,16 @@
     const W = Math.max(280, Math.round(host.clientWidth || 600)), H = 230, L = 40, R = 14, T = 14, B = 30;
     lastW = W;
     const x = (d) => L + (W - L - R) * (d - d0) / (d1 - d0), y = (n) => T + (H - T - B) * (1 - n / total);
-    const svg = sv('svg', { width: W, height: H, viewBox: `0 0 ${W} ${H}`, role: 'img', class: 'pm-svg', 'aria-label': S('progress_chart', { n: times.length, total }) });
-    const step = total <= 10 ? 1 : total <= 25 ? 5 : total <= 60 ? 10 : 20;
+    const svg = sv('svg', { width: W, height: H, viewBox: `0 0 ${W} ${H}`, role: 'img', class: 'pm-svg', 'aria-label': GOAL ? S('progress_chart_all', { n: times.length, total, goal: GOAL }) : S('progress_chart', { n: times.length, total }) });
+    const px = (H - T - B) / total, step = [1, 2, 5, 10, 20, 25, 50, 100, 200].find((k) => k * px >= 22) || 500;   // labels at least 22 px apart
+    const near = (a, b) => Math.abs(a - b) * px < 16;
     for (let v = 0; v <= total; v += step) {
-      if (total - v < step / 2 && v !== total && v) continue;
+      if (v && ((v !== total && near(v, total)) || (GOAL && near(v, GOAL)))) continue;
       svg.append(sv('line', { x1: L, x2: W - R, y1: y(v), y2: y(v), class: 'pm-grid' }), sv('text', { x: L - 6, y: y(v) + 4, 'text-anchor': 'end', class: 'pm-tick' }, String(v)));
     }
     svg.append(sv('line', { x1: L, x2: W - R, y1: y(total), y2: y(total), class: 'pm-total' }), sv('text', { x: L - 6, y: y(total) + 4, 'text-anchor': 'end', class: 'pm-tick pm-tick-total' }, String(total)));
+    if (GOAL) svg.append(sv('line', { x1: L, x2: W - R, y1: y(GOAL), y2: y(GOAL), class: 'pm-goal' }), sv('text', { x: L - 6, y: y(GOAL) + 4, 'text-anchor': 'end', class: 'pm-tick pm-tick-goal' }, String(GOAL)),
+      sv('text', { x: W - R - 4, y: y(GOAL) + 17, 'text-anchor': 'end', class: 'pm-tick pm-tick-goal' }, S('progress_goal', { goal: GOAL })));
     const span = Math.round((d1 - d0) / DAY), every = Math.max(1, Math.ceil(span / Math.max(1, Math.floor((W - L - R) / 64))));
     const fmt = (d) => d.toLocaleDateString(LANG, { day: 'numeric', month: 'numeric' });
     for (let i = 0; i <= span; i += every) { const d = new Date(d0.getTime() + i * DAY); svg.append(sv('text', { x: x(d), y: H - 10, 'text-anchor': 'middle', class: 'pm-tick' }, fmt(d))); }
@@ -199,7 +205,7 @@
     if (lessonCount) lessonCount.textContent = S('done_lesson', { n: items.filter((li) => li.id in st.done).length, total: items.length });
     if (mod) {
       const done = A.tasks.filter((id) => typeof st.done[id] === 'string'), total = A.tasks.length;
-      mod.querySelector('.pm-count').textContent = S('progress_count', { n: done.length, total });
+      mod.querySelector('.pm-count').textContent = GOAL ? S('progress_count_goal', { n: done.length, total, goal: GOAL }) : S('progress_count', { n: done.length, total });
       const bar = mod.querySelector('.pm-bar');
       bar.setAttribute('aria-valuemax', String(total)); bar.setAttribute('aria-valuenow', String(done.length));
       bar.setAttribute('aria-label', S('progress_count', { n: done.length, total }));
