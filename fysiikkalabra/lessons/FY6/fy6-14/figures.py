@@ -141,8 +141,8 @@ def kenno():
     f = new("fy614-kenno", 360, "Kuvaaja mittakaavassa, laskettu luvun aurinkopaneelimallilla: pienen aurinkopaneelin virta I "
             "milliampeereina sen jännitteen U funktiona voltteina kahdella irradianssilla. Kun irradianssi G on "
             "1000 W/m², käyrä alkaa pystyakselilta oikosulkuvirrasta I_k = 200 mA, pysyy lähes vaakasuorana noin neljään "
-            "volttiin asti ja laskee sitten jyrkästi vaaka-akselille tyhjäkäyntijännitteeseen U_t = 6,0 V. Kun valon "
-            "voimakkuus on 500 W/m², oikosulkuvirta on puolet eli 100 mA, mutta tyhjäkäyntijännite on 5,7 V, vain vähän "
+            "volttiin asti ja laskee sitten jyrkästi vaaka-akselille tyhjäkäyntijännitteeseen U_t = 6,0 V. Kun irradianssi "
+            "on 500 W/m², oikosulkuvirta on puolet eli 100 mA, mutta tyhjäkäyntijännite on 5,7 V, vain vähän "
             "pienempi. Ruudukon välit ovat 1 V ja 50 mA.")
     ax = Axes(f, (96, 300), (476, 60), x=(0, 7), y=(0, 250), xticks=[1, 2, 3, 4, 5, 6, 7], yticks=[50, 100, 150, 200, 250],
               xlabel=r"U\ (\text{V})", ylabel=r"I\ (\text{mA})")
