@@ -1,16 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 9c3f8d30bda60b25
-Mode: translation
+CONTENT-HASH: f6bbf18073f2f0aa
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- Change since the last pass: only the four new option-figure descriptions in figures.json; the lesson page itself is as approved.
-- Each description gives a reader who cannot see the figure the same data (type of spectrum, line positions, scale) without saying which picture is right; a screen-reader user can do the task.
-- The four descriptions have parallel structure, so the options are comparable.
-- English descriptions are natural and keep the same numbers as fi.
-- Hash 9c3f8d30bda60b25 at start and end.
+- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.

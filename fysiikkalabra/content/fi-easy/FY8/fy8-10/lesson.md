@@ -281,7 +281,7 @@ Kuvaajasta näkee, milloin ydinreaktio vapauttaa energiaa. Jos syntyvät ytimet 
 ```latex
 Q = (m_\text{alku} - m_\text{loppu})\,c^2
 ```
-Tässä $m_\text{alku}$ on lähtöaineiden massojen summa ja $m_\text{loppu}$ on syntyvien hiukkasten massojen summa. Kun $Q > 0$, energiaa vapautuu. Se muuttuu syntyvien hiukkasten liike-energiaksi ja gammasäteilyksi. Kun $Q < 0$, reaktio tarvitsee energiaa. Atomimassoja voi käyttää, kun elektroneja on reaktion kummallakin puolella yhtä monta. Näin on alfahajoamisessa, beeta miinus -hajoamisessa ja useimmissa ydinreaktioissa. Beeta miinus -hajoamisessa syntyvän elektronin massaa ei lisätä erikseen, koska tytäratomin atomimassaan sisältyy jo yksi elektroni enemmän. Esimerkiksi uraani-238:n alfahajoamisessa ${}^{238}_{92}\text{U} \to {}^{234}_{90}\text{Th} + {}^{4}_{2}\text{He}$ massa pienenee $0{,}004583\,\text{u}$. Siksi $Q = 0{,}004583 \cdot 931{,}5\,\text{MeV} \approx 4{,}27\,\text{MeV}$.
+Tässä $m_\text{alku}$ on lähtöaineiden massojen summa ja $m_\text{loppu}$ on syntyvien hiukkasten massojen summa. Kun $Q > 0$, energiaa vapautuu. Se muuttuu syntyvien hiukkasten liike-energiaksi ja gammasäteilyksi. Kun $Q < 0$, reaktio tarvitsee energiaa. Kaavaan lasketaan kummallakin puolella kaikkien hiukkasten massat. Taulukoiden atomimassoihin sisältyvät myös atomien elektronit. Alfahajoamisessa ja useimmissa ydinreaktioissa elektroneja on kummallakin puolella yhtä monta. Silloin atomimassat voi sijoittaa kaavaan suoraan. Esimerkiksi uraani-238:n alfahajoamisessa ${}^{238}_{92}\text{U} \to {}^{234}_{90}\text{Th} + {}^{4}_{2}\text{He}$ massa pienenee $0{,}004583\,\text{u}$. Siksi $Q = 0{,}004583 \cdot 931{,}5\,\text{MeV} \approx 4{,}27\,\text{MeV}$.
 
 <svg data-fig="reaktio" viewBox="0 0 600 350" role="img" aria-label="Pylväskuva. Pystyakseli on mittakaavassa mutta katkaistu: se alkaa arvosta 238,040 u eikä nollasta. Vasen pylväs on uraani-238-atomin massa, 238,050787 u. Oikea pylväs on alfahajoamisessa syntyvien torium-234- ja helium-4-atomien yhteinen massa, 238,046204 u. Ero 0,004583 u on merkitty punaisella hakasulkeella. Se vastaa reaktioenergiaa Q = 4,27 MeV." style="max-width:100%;font-size:24px">
   <line x1="130" y1="212" x2="560" y2="212" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -314,6 +314,17 @@ Tässä $m_\text{alku}$ on lähtöaineiden massojen summa ja $m_\text{loppu}$ on
   <foreignObject x="437" y="126" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$0{,}004583\,\text{u}$</span></div></foreignObject>
   <foreignObject x="437" y="160" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$Q = 4{,}27\,\text{MeV}$</span></div></foreignObject>
 </svg>
+
+### Atomimassat beetahajoamisessa
+Beetahajoamisessa ytimen varausluku muuttuu. Siksi lähtöatomissa ja tytäratomissa on eri määrä elektroneja. Jos käytetään ydinmassoja, mukaan lasketaan syntyvän elektronin tai positronin massa. Neutraalien atomien massoja merkitään $M$. Niitä käytettäessä laskutapa riippuu hajoamislajista. Beeta miinus -hajoamisessa tytärytimessä on yksi protoni enemmän. Siksi tytäratomissa on yksi elektroni enemmän kuin lähtöatomissa. Tämä ylimääräinen elektroni vastaa massaltaan syntyvää beetahiukkasta. Elektronin massaa ei siis lisätä erikseen:
+```latex
+Q(\beta^-) = [M(\text{X}) - M(\text{Y})]\,c^2
+```
+Tässä $M(\text{X})$ on lähtöatomin massa ja $M(\text{Y})$ tytäratomin massa. Beeta plus -hajoamisessa tytäratomissa on yksi elektroni vähemmän kuin lähtöatomissa. Lisäksi syntyy positroni, jonka massa on sama kuin elektronin. Siksi kahden elektronin massa vähennetään:
+```latex
+Q(\beta^+) = [M(\text{X}) - M(\text{Y}) - 2m_e]\,c^2
+```
+Tässä $m_e = 0{,}000549\,\text{u}$ on elektronin massa. Malli jättää huomiotta atomin elektronien sidosenergiat. Ne ovat tällä tarkkuudella niin pieniä, ettei niillä ole merkitystä.
 
 ## Esimerkki
 Laske helium-4-ytimen ${}^{4}_{2}\text{He}$ sidosenergia ja sidosenergia nukleonia kohti. Käytä atomimassoja $m({}^{4}\text{He}) = 4{,}002603\,\text{u}$, $m_\text{H} = 1{,}007825\,\text{u}$ ja $m_\text{n} = 1{,}008665\,\text{u}$ (AME2020). Käytä myös arvoa $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$.
@@ -370,4 +381,4 @@ Toinen virhe on ajatella, että massa säilyy ydinreaktiossa kuten kemiassa. Ydi
 - Ydin on kevyempi kuin sen erilliset nukleonit. Massavaje on $\Delta m = Z\,m_\text{H} + N\,m_\text{n} - m_\text{atomi}$.
 - Sidosenergia $E_\text{B} = \Delta m\,c^2$ tarvitaan ytimen hajottamiseen nukleoneiksi, ja se vapautuu ytimen muodostuessa. Kun sijoitetaan $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$, energia tulee megaelektronivoltteina.
 - Sidosenergia nukleonia kohti on suurin, noin $8{,}8\,\text{MeV}$, raudan ja nikkelin kohdalla. Fuusio ja fissio vapauttavat energiaa, koska ne siirtävät nukleoneja tiiviimmin sidottuihin ytimiin.
-- Reaktioenergia on $Q = (m_\text{alku} - m_\text{loppu})\,c^2$. Massa ei säily ydinreaktiossa, vaikka massaluku ja varausluku säilyvät.
+- Reaktioenergia on $Q = (m_\text{alku} - m_\text{loppu})\,c^2$. Massa ei säily ydinreaktiossa, vaikka massaluku ja varausluku säilyvät. Atomimassoilla beeta miinus -hajoamisessa $Q(\beta^-) = [M(\text{X}) - M(\text{Y})]\,c^2$. Beeta plus -hajoamisessa vähennetään lisäksi $2m_e$.

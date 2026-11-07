@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 61e32af565d25d46
+CONTENT-HASH: b4cfec96f0c9a587
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] fy8-12 hfir-refueling photo — it stands before the heading "Läpäisykyky" (end of the previous subsection) although its caption is about shielding, which that subsection explains — move it after the heading's first paragraph if the build allows.
+- none
 
 ## Checked
-batch delta review: opened hfir-refueling.webp and dosimeter-chernobyl.webp, rendered both photos at 390 and 1280 px (float right at 1280, full width at 390, no clipping, no horizontal overflow). Alt texts match what is visible (blue-lit reactor pool from above; hand holding a yellow meter). Captions: Cherenkov light and shielding by water correct, plain Finnish; Geiger tube sentence fine. Photo credit lines present.
+- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.

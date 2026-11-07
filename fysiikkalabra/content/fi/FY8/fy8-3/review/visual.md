@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: b76bde3632dbb714
+CONTENT-HASH: 099e7d8288103ff0
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] Orion photo is portrait (224 px wide) and at 1280 px sits in the side column beside the next heading, leaving a gap beside the Bohr-model paragraph it follows; layout acceptable.
-- [Minor] for science: the discharge tube's blue ends versus pink centre; caption attributes the light to hydrogen lines only.
+- none
 
 ## Checked
-batch delta review: rendered the new figure.unit-photo at 390 px and 1280 px from the built page (own captures, plus fig-row-1280 to confirm the existing figures survived); photo loads, no horizontal overflow, caption and credit line legible, alt text matches the image, LaTeX in captions renders ($6{,}3\,\text{V}$, $656\,\text{nm}$, $n = 3$) with units upright; no clipping.
+- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.

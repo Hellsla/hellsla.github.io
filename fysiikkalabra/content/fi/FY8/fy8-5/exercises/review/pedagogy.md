@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 9eb9faed238b0eb0
+CONTENT-HASH: 1cb309cfd128f002
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- solutions.md fy8-5-L1-09 — the "Energiat" lines no longer name the subshell (B, D, A, C); fine, but add the n beside each tile letter once, e.g. "tila D (2p, n = 2)", so the student sees which part of the name decides.
+- none
 
 ## Checked
-- Round 2: state E is now "5p-tila", so the unprepared node-count rule (n - 1) is gone; the trap left is the one the brief prepares (letters do not change energy in hydrogen, 3d below 4s).
-- Order B, D, A, C, E, energies -13,6 / -3,40 / -1,51 / -0,850 / -0,544 eV verified; the sign trap is explained in the solution.
-- Method: text only (diff and packet); no renders opened.
+- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.

@@ -1,6 +1,6 @@
 # Ionising radiation and the body
 
-> **Why** does a sheet of paper stop alpha radiation while gamma radiation passes through the whole human body, and why is a substance that emits alpha radiation nevertheless the most dangerous one when it gets inside the body?
+> **Why** does a sheet of paper stop alpha radiation while gamma radiation passes through the whole human body, and why is a substance that emits alpha radiation nevertheless especially harmful when it gets inside the body?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: a table in a school physics laboratory. On the left is a shield built of lead bricks, with a small radiation source in its side. Violet and blue particles and orange wavy lines leave the source towards the right. In their way are three plates in a holder: paper, aluminium and lead; the violet particles stop at the paper, the blue ones at the aluminium, and the orange waves continue. On the right a Geiger–Müller tube is fixed to a stand, its cable leads to a counter, and the counter&#x27;s display shows spikes representing pulses." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy812h-table" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
@@ -327,12 +327,16 @@ Humans cannot sense ionising radiation, so it is detected with an instrument. Th
 
 <figure class="unit-photo"><img src="pics/fy8/dosimeter-chernobyl.webp" alt="A hand holds a yellow pocket-sized radiation meter on a knee; the photo is a close-up with a blurred background."><figcaption>A radiation meter in the Chernobyl area. A pocket meter like this usually contains a Geiger–Müller tube, which counts ionising events and converts their number into a dose rate.</figcaption></figure>
 
-Every ionising event triggers a similar avalanche, so the pulse is equally large regardless of the type and energy of the radiation. A GM counter therefore counts events but does not tell what radiation it detects. The type of radiation can be deduced with barriers: if the pulse count drops to the background level behind a sheet of paper, the radiation is alpha radiation. The counter always counts also **background radiation**, which comes from the ground, building materials, radon in the air and space. A GM tube detects only a small fraction of gamma photons, because most of them pass through the thin gas without interacting. The energy of radiation is measured, for example, with scintillation detectors, and the radiation a person receives is monitored with dosimeters.
+Every ionising event triggers a similar avalanche, so the pulse is equally large regardless of the type and energy of the radiation. A GM counter therefore counts events but does not tell what radiation it detects. The counter always also counts **background radiation**, which comes from the ground, building materials, radon in the air and space. The background is measured separately without the source and subtracted from the result. The pulse count varies randomly, so the measurements to be compared must be long enough.
+
+The type of radiation can be estimated with barriers. A strong drop in the pulse count caused by a sheet of paper suggests alpha radiation, when a suitable thin-window counter and a known measurement setup are used. The pulse count alone does not prove the type of radiation for certain, however, because the response of the counter also depends on the energy of the particles, the distance of the source and the window of the detector. A GM tube detects only a small fraction of gamma photons, because most of them pass through the thin gas without interacting. The energy of radiation is measured, for example, with scintillation detectors, and the radiation a person receives is monitored with dosimeters. Sealed radiation sources at school are handled only under the supervision of the teacher, with tongs, and they are returned to storage immediately after the measurement.
 
 ### Radiation in the body
 The biological effects of radiation begin with physics: ionisation breaks chemical bonds. Radiation can ionise the DNA of a cell directly (direct effect). More often it ionises water molecules, because a cell is mostly water. This produces highly reactive radicals, such as hydroxyl radicals, which damage the DNA (indirect effect). The cell repairs most of the damage. However, damage that is not repaired or is repaired wrongly can kill the cell or change its genome, and a change in the genome can lead to cancer after years.
 
 The most harmful case for the body is when many ionisations occur within a short distance. The dense track of an alpha particle can break both strands of the DNA close together, and a cell repairs such damage poorly. Outside the body alpha radiation is almost harmless, because it does not pass through the dead outer layer of the skin. When inhaled, swallowed or entering a wound, an alpha emitter gives up all its energy in a few cell layers of living tissue. In Finland the most important such source is indoor radon, whose decay products remain in the lungs. Gamma radiation, on the other hand, passes through the body, so even an external gamma source irradiates the internal organs.
+
+The type of radiation alone does not decide how dangerous a radioactive substance is, however. The total risk also depends on the activity of the substance and the energy of the radiation, on how much of the substance enters the body, in which organ it accumulates and how quickly it is removed, and on the half-life of the radionuclide. That is why internal radiation sources cannot be ranked by danger on the basis of the type of radiation alone.
 
 The effect of radiation on the body is described by the **absorbed dose**, which tells how much of the energy of radiation has been transferred to a kilogram of tissue. A large dose in a short time kills so many cells that the function of the tissue is disturbed. Small doses increase the risk of cancer. Doses, their units and protection from radiation are covered in the chapter *Radiation dose and radiation safety in Finland*.
 
@@ -413,6 +417,17 @@ Source: calculated from the attenuation coefficients of the NIST XCOM database f
 
 The equation applies only to photon radiation. Alpha and beta particles lose their energy gradually in every ionisation, so they have a range: after a certain thickness none of them gets through.
 
+### Three interactions of a photon in matter
+A gamma or X-ray photon does not lose its energy gradually; it leaves the beam in a single interaction. There are three main interactions. The first two have been met in earlier chapters of FY8, and pair production is returned to in the chapter *The Standard Model: elementary particles and interactions*. Each produces a fast electron, in pair production also a positron, and only that particle ionises its surroundings.
+
+| Interaction | What happens | When most likely |
+| --- | --- | --- |
+| Photoelectric absorption | The photon gives all its energy to an electron of an atom and disappears (chapter *The photoelectric effect and the photon*). | low energies and high atomic number |
+| Compton scattering | The photon gives part of its energy to an electron and continues with lower energy in a new direction (the Compton effect, chapter *Light and electrons as waves and particles*). | medium energies, especially in light materials |
+| Pair production | Near a nucleus the photon turns into an electron and a positron. The energy must be at least $2m_ec^2 = 1.022\,\text{MeV}$ (chapter *The Standard Model: elementary particles and interactions*). | high energies and high atomic number |
+
+The probability of photoelectric absorption falls steeply as the photon energy grows and grows strongly with the atomic number of the element. In water and soft tissue it is the most common interaction only at energies below about $0.03\,\text{MeV}$, in lead up to about $0.5\,\text{MeV}$. Compton scattering is the most common in water over a wide range of about $0.03$–$25\,\text{MeV}$, in lead only in the range of about $0.5$–$5\,\text{MeV}$. At higher energies pair production is the most common. That is why lead attenuates X-rays especially effectively, and bone stands out from soft tissue in an X-ray image (chapter *Radiation in medicine and technology*).
+
 ## Worked example
 A caesium-137 source is kept in a lead shield. The half-value thickness of lead for the gamma radiation of caesium-137 is $5.5\,\text{mm}$. How thick a layer of lead attenuates the intensity of the gamma radiation to $5.0\,\%$?
 
@@ -466,4 +481,5 @@ Another mistake is to think that two half-value thicknesses stop all the gamma r
 - Ionisation transfers the energy of radiation to matter; in air an ion pair takes on average $34\,\text{eV}$, so the number of ion pairs is $n_\text{i} = \tfrac{E}{W}$.
 - Alpha radiation ionises most densely and stops in paper, beta radiation stops in a few millimetres of aluminium, and gamma radiation is attenuated in lead and concrete: $I = I_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$.
 - A GM tube counts ionising events with the help of electron avalanches, but it cannot distinguish the types of radiation. Background radiation is always included in a measurement.
-- Radiation damages cells by ionising DNA directly and through the radicals of water. An alpha emitter is most dangerous inside the body, because it gives up its energy within a few cells.
+- A photon interacts with matter by photoelectric absorption (low energies, high atomic number), Compton scattering (medium energies) or pair production (above $1.022\,\text{MeV}$, high energies).
+- Radiation damages cells by ionising DNA directly and through the radicals of water. An alpha emitter is especially harmful inside the body, because it gives up its energy within a few cells. The total risk also depends on the amount of the substance, where it accumulates and how it is removed from the body.

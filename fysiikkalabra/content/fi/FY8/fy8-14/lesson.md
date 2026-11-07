@@ -175,7 +175,7 @@
 
 ### Röntgenkuva ja tietokonetomografia
 
-Röntgenkuva on varjokuva. Säteily kulkee potilaan läpi ilmaisimeen, ja jokainen kudoskerros vaimentaa siitä osan. Luu vaimentaa röntgensäteilyä paljon enemmän kuin pehmytkudos, koska se on tiheämpää ja sen kalsiumatomeissa on paljon elektroneja: noin $60\,\text{keV}$:n säteilylle pehmytkudoksen puoliintumispaksuus on noin $3{,}4\,\text{cm}$, luun vain noin $1{,}1\,\text{cm}$. Luun taakse osuu siksi vähemmän säteilyä, ja luu näkyy kuvassa vaaleana. Keuhkojen ilma päästää säteilyn läpi lähes vaimentamatta, joten keuhkot näkyvät tummina. Kuvan **kontrasti** eli kirkkausero syntyy siis siitä, että eri kudokset vaimentavat säteilyä eri tavalla.
+Röntgenkuva on varjokuva. Säteily kulkee potilaan läpi ilmaisimeen, ja jokainen kudoskerros vaimentaa siitä osan. Luu vaimentaa röntgensäteilyä paljon enemmän kuin pehmytkudos, koska se on tiheämpää ja sisältää kalsiumia, jonka järjestysluku $20$ on paljon suurempi kuin pehmytkudoksen vedyn, hiilen ja hapen. Röntgenkuvauksen energioilla valosähköisen absorption todennäköisyys kasvaa voimakkaasti järjestysluvun mukana (luku *Ionisoiva säteily ja elimistö*), joten ero riippuu myös säteilyn energiasta: noin $60\,\text{keV}$:n säteilylle pehmytkudoksen puoliintumispaksuus on noin $3{,}4\,\text{cm}$, luun vain noin $1{,}1\,\text{cm}$. Luun taakse osuu siksi vähemmän säteilyä, ja luu näkyy kuvassa vaaleana. Keuhkojen ilma päästää säteilyn läpi lähes vaimentamatta, joten keuhkot näkyvät tummina. Kuvan **kontrasti** eli kirkkausero syntyy siis siitä, että eri kudokset vaimentavat säteilyä eri tavalla.
 
 Tietokonetomografiassa (TT) röntgenputki ja ilmaisimet kiertävät potilaan ympäri. Laite mittaa vaimenemisen tuhansista suunnista, ja tietokone laskee niistä, kuinka paljon kukin pieni tilavuusalkio vaimentaa. Tuloksena on poikkileikkauskuva, jossa näkyvät myös toistensa takana olevat elimet. TT-tutkimuksen annos on kuitenkin monikymmenkertainen tavalliseen röntgenkuvaan verrattuna.
 
@@ -188,7 +188,7 @@ Tietokonetomografiassa (TT) röntgenputki ja ilmaisimet kiertävät potilaan ymp
 | luuston isotooppikuvaus | noin $3\,\text{mSv}$ |
 | PET-kuvaus | noin $6\,\text{mSv}$ |
 
-Lähde: tyypilliset suuruusluokat STUKin terveydenhuollon säteilyaltistusta koskevista julkaisuista ja ICRP:n julkaisusta 128 (2015); yksittäisen tutkimuksen annos riippuu laitteesta ja potilaasta. Vertailun vuoksi suomalainen saa luonnon säteilystä keskimäärin noin $5{,}1\,\text{mSv}$ vuodessa (luku *Säteilyannos ja säteilyturvallisuus Suomessa*).
+Lähde: tyypilliset suuruusluokat STUKin terveydenhuollon säteilyaltistusta koskevista julkaisuista ja ICRP:n julkaisusta 128 (2015); yksittäisen tutkimuksen annos riippuu laitteesta, kuvausprotokollasta ja potilaasta. Vertailun vuoksi suomalainen saa luonnon säteilystä keskimäärin noin $5{,}1\,\text{mSv}$ vuodessa (luku *Säteilyannos ja säteilyturvallisuus Suomessa*).
 
 <figure class="unit-photo"><img src="pics/fy8/pet-ct-scanner.webp" alt="Sairaalan kuvaushuone: vaaleanvihreä rengasmainen laite, jonka aukkoa kohti osoittaa valkoisella liinalla peitetty potilaspöytä."><figcaption>PET-TT-laite Bronissa Ranskassa. Renkaan sisällä on PET-kuvauksen ilmaisinrengas ja tietokonetomografian röntgenputki ilmaisimineen. Potilas liukuu pöydän mukana renkaan läpi.</figcaption></figure>
 
@@ -200,7 +200,7 @@ Yleisin merkkiaineen nuklidi on teknetium-$99\text{m}$. Se lähettää lähes pe
 
 ### PET: kaksi fotonia vastakkaisiin suuntiin
 
-PET-kuvauksen eli positroniemissiotomografian merkkiaineena on yleensä fluori-18 sokerin kaltaisessa yhdisteessä (FDG). Syöpäsolut käyttävät paljon sokeria, joten merkkiainetta kertyy niihin tavallista enemmän. Fluori-18 hajoaa $\beta^+$-hajoamisella, ja sen puoliintumisaika on $110\,\text{min}$. Hajoamisessa syntyvä positroni kulkee kudoksessa noin millimetrin ja kohtaa elektronin. Ne annihiloituvat: molempien massa muuttuu kahdeksi fotoniksi, joiden energia on $511\,\text{keV}$ ja jotka lähtevät vastakkaisiin suuntiin.
+PET-kuvauksen eli positroniemissiotomografian merkkiaineena on yleensä fluori-18 sokerin kaltaisessa yhdisteessä (FDG). Syöpäsolut käyttävät paljon sokeria, joten merkkiainetta kertyy niihin tavallista enemmän. Merkkiaine ei kuitenkaan ole syöpäsoluille täysin spesifinen: sitä kertyy myös esimerkiksi tulehduskudokseen ja aivoihin, joten kirkas kohta PET-kuvassa ei yksin osoita syöpää. Fluori-18 hajoaa $\beta^+$-hajoamisella, ja sen puoliintumisaika on $110\,\text{min}$. Hajoamisessa syntyvä positroni kulkee kudoksessa noin millimetrin ja kohtaa elektronin. Ne annihiloituvat: molempien massa muuttuu kahdeksi fotoniksi, joiden energia on $511\,\text{keV}$ ja jotka lähtevät lähes vastakkaisiin suuntiin, koska hiukkasten kokonaisliikemäärä on pieni.
 
 <svg data-fig="pet" viewBox="0 0 600 380" role="img" aria-label="Kaavakuva, ei mittakaavassa: PET-kuvaus. Vasemmalla potilaan poikkileikkaus ilmaisinrenkaan keskellä. Kehon sisällä fluori-18-ydin lähettää positronin, joka kulkee lyhyen matkan ja kohtaa elektronin. Kohtaamispisteestä lähtee kaksi fotonia vastakkaisiin suuntiin, ja ne osuvat renkaan kahteen ilmaisimeen, jotka on väritetty oransseiksi. Ilmaisimien välille on piirretty katkoviivajana, jolla annihilaation täytyy olla. Oikealla suurennos: positroni ja elektroni kohtaavat, ja syntyy kaksi 511 kiloelektronivoltin fotonia, jotka lähtevät 180 asteen kulmassa toisiinsa nähden." style="max-width:100%;font-size:24px">
   <path d="M332,179 L330.5,198.5 L344,200.5 L346,179 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
@@ -278,11 +278,11 @@ PET-kuvauksen eli positroniemissiotomografian merkkiaineena on yleensä fluori-1
   <foreignObject x="420" y="303.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{lähde janalla}$</div></foreignObject>
 </svg>
 
-Potilasta ympäröi ilmaisinrengas. Kun kaksi vastakkaista ilmaisinta havaitsee fotonin muutaman nanosekunnin sisällä toisistaan eli **koinsidenssissa**, laite päättelee, että fotonit syntyivät samassa annihilaatiossa jossain näiden ilmaisimien välisellä janalla. Jos fotonien saapumisaikojen eroa ei mitata, yksi jana ei kerro, missä kohdassa janaa lähde on. Nykyaikaiset PET-laitteet mittaavat myös tämän aikaeron (lentoaika-PET) noin $0{,}3\,\text{ns}$:n tarkkuudella. Valo kulkee nanosekunnissa noin $30\,\text{cm}$, joten aikaero rajaa lähteen janalla muutaman senttimetrin matkalle. Varsinainen kuva syntyy silti vasta monista janoista: kun janoja kertyy miljoonia, ne leikkaavat tiheimmin siellä, missä merkkiainetta on eniten, ja tietokone laskee niistä kuvan. Lyhyen puoliintumisajan vuoksi fluori-18 valmistetaan hiukkaskiihdyttimellä, syklotronilla, lähellä kuvauspaikkaa, esimerkiksi Turun PET-keskuksessa.
+Potilasta ympäröi ilmaisinrengas. Kun kaksi vastakkaista ilmaisinta havaitsee fotonin muutaman nanosekunnin sisällä toisistaan eli **koinsidenssissa**, laite päättelee, että fotonit syntyivät samassa annihilaatiossa jossain näiden ilmaisimien välisellä janalla. Jos fotonien saapumisaikojen eroa ei mitata, yksi jana ei kerro, missä kohdassa janaa lähde on. Nykyaikaiset PET-laitteet mittaavat myös tämän aikaeron (lentoaika-PET) noin $0{,}3\,\text{ns}$:n tarkkuudella. Valo kulkee nanosekunnissa noin $30\,\text{cm}$, joten aikaero rajaa lähteen janalla muutaman senttimetrin matkalle. Koska positroni kulkee ennen annihilaatiota, jana kertoo annihilaation paikan eikä aivan hajoamispaikkaa. Varsinainen kuva syntyy vasta monista janoista: kun janoja kertyy miljoonia, ne leikkaavat tiheimmin siellä, missä merkkiainetta on eniten, ja tietokone laskee niistä kuvan. Lyhyen puoliintumisajan vuoksi fluori-18 valmistetaan hiukkaskiihdyttimellä, syklotronilla, lähellä kuvauspaikkaa, esimerkiksi Turun PET-keskuksessa.
 
 ### Sädehoito: suuri annos kasvaimeen, pieni terveelle kudokselle
 
-**Sädehoito** on syövän hoitoa ionisoivalla säteilyllä: suuri annos vaurioittaa syöpäsolujen DNA:ta niin paljon, että solut kuolevat. Tavallisimmin säteily tulee kehon ulkopuolelta lineaarikiihdyttimestä, joka kiihdyttää elektronit miljooniin elektronivoltteihin ja jarruttaa ne röntgensäteilyksi. Säteily kulkee aina myös terveen kudoksen läpi. Siksi kasvainta säteilytetään useasta suunnasta: keilat leikkaavat vain kasvaimen kohdalla, joten kasvain saa kaikkien keilojen annoksen mutta terve kudos kunkin keilan varrella vain yhden keilan annoksen. Hoito suunnitellaan TT-kuvan avulla.
+**Sädehoito** on syövän hoitoa ionisoivalla säteilyllä: suuri annos vaurioittaa syöpäsolujen DNA:ta niin paljon, että solut kuolevat. Tavallisimmin säteily tulee kehon ulkopuolelta lineaarikiihdyttimestä, joka kiihdyttää elektronit miljooniin elektronivoltteihin ja jarruttaa ne röntgensäteilyksi. Säteily kulkee aina myös terveen kudoksen läpi. Siksi kasvainta säteilytetään useasta suunnasta: keilat leikkaavat kasvaimen kohdalla, joten kasvain saa kaikkien keilojen annoksen, kun terve kudos keilojen varrella saa vain osan kokonaisannoksesta. Hoito suunnitellaan TT-kuvan avulla.
 
 <svg data-fig="sadehoito" viewBox="0 0 600 360" role="img" aria-label="Kaavakuva, ei mittakaavassa: sädehoito viidestä suunnasta. Potilaan poikkileikkauksen keskellä on kasvain. Viisi säteilykeilaa tulee kehon ulkopuolelta eri suunnista, ja jokainen kulkee kasvaimen kautta kehon läpi. Keilat leikkaavat vain kasvaimen kohdalla, joten kasvain saa viiden keilan annoksen, 5 kertaa 0,40 graytä eli 2,0 graytä. Terve kudos keilan varrella saa vain yhden keilan annoksen, noin 0,40 graytä." style="max-width:100%;font-size:24px">
   <ellipse cx="250" cy="184" rx="168" ry="112" fill="#f2a69c" stroke="#1f2933" stroke-width="2.5"/>
@@ -306,6 +306,8 @@ Potilasta ympäröi ilmaisinrengas. Kun kaksi vastakkaista ilmaisinta havaitsee 
   <foreignObject x="452" y="25.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{keila}$</div></foreignObject>
   <line x1="446" y1="48" x2="330" y2="72" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
 </svg>
+
+Kuvan malli on yksinkertaistettu. Todellisessa hoidossa annos jakautuu kolmiulotteisesti, keilan annos muuttuu syvyyden mukana ja sironnut säteily osuu myös keilojen ulkopuolelle, joten terve kudos saa aina jonkin verran säteilyä. Hoitosuunnitelma optimoidaan niin, että kasvain saa riittävän annoksen ja terveen kudoksen, erityisesti herkkien elinten, annos pysyy mahdollisimman pienenä.
 
 Hoito jaetaan yleensä moneen osaan: tyypillisesti kasvain saa $2\,\text{Gy}$ kerrallaan arkipäivisin, yhteensä esimerkiksi $60\,\text{Gy}$ noin kuuden viikon aikana. Terveet solut korjaavat vaurioitaan hoitokertojen välillä paremmin kuin syöpäsolut. Säteilylähde voidaan myös viedä kasvaimen sisään tai viereen, tai potilas voi niellä merkkiaineen tapaan kertyvää lääkettä, kuten kilpirauhassyövän hoidossa käytettävää jodi-131:tä.
 
@@ -437,7 +439,7 @@ missä $I_0$ on säteeseen tulevan säteilyn intensiteetti, $I$ kerrosten läpi 
 
 ### Annihilaatiofotonin energia
 
-Kun positroni ja elektroni annihiloituvat lähes levossa, niiden yhteinen massa $2m_e$ muuttuu kokonaan fotonien energiaksi (luku *Massavaje ja ytimen sidosenergia*). Alussa liikemäärä on lähes nolla, joten fotoneja syntyy kaksi, ne lähtevät vastakkaisiin suuntiin ja niillä on sama energia:
+Kun positroni ja elektroni annihiloituvat lähes levossa, niiden yhteinen massa $2m_e$ muuttuu kokonaan fotonien energiaksi (luku *Massavaje ja ytimen sidosenergia*). Alussa liikemäärä on lähes nolla, joten fotoneja syntyy kaksi, ne lähtevät lähes vastakkaisiin suuntiin ja niillä on likimain sama energia:
 
 ```latex
 E_\gamma = m_e c^2
@@ -521,7 +523,7 @@ Toinen virhe on ajatella, että säteilysuojelu tarkoittaa mahdollisimman pient�
 - Röntgensäteily syntyy, kun nopeat elektronit jarruttavat anodissa tai irrottavat elektroneja sen atomien sisäkuorilta; jännite $U$ antaa fotonille enintään energian $eU$.
 - Röntgenkuvan ja TT-kuvan kontrasti syntyy siitä, että luu vaimentaa säteilyä enemmän kuin pehmytkudos; kerrosten läpi pääsevät osuudet kerrotaan: $I = I_0 \cdot \left(\tfrac{1}{2}\right)^{n_\text{kudos}} \cdot \left(\tfrac{1}{2}\right)^{n_\text{luu}}$, missä $n = d : d_{1/2}$.
 - Merkkiaine kertyy tutkittavaan elimeen; teknetium-$99\text{m}$ lähettää $140\,\text{keV}$:n gammasäteilyä, ja sen puoliintumisaika on $6{,}01\,\text{h}$.
-- PET: positroni ja elektroni annihiloituvat kahdeksi vastakkaiseksi fotoniksi, joiden energia on $E_\gamma = m_e c^2 = 511\,\text{keV}$; koinsidenssi antaa janan, ja monien janojen leikkauskohdat paljastavat merkkiaineen paikan.
+- PET: positroni ja elektroni annihiloituvat kahdeksi lähes vastakkaiseksi fotoniksi, joiden energia on $E_\gamma = m_e c^2 = 511\,\text{keV}$; koinsidenssi antaa janan, ja monien janojen leikkauskohdat paljastavat merkkiaineen paikan.
 - Sädehoidossa kasvainta säteilytetään useasta suunnasta ja moneen osaan jaettuna, jotta kasvain saa suuren annoksen ja terve kudos pienen.
 - Säteilyä käytetään myös sterilointiin, paksuusmittareihin, savuilmaisimiin ja radiohiiliajoitukseen.
 - Säteilyn käytön periaatteet ovat oikeutus, optimointi ja annosrajat; henkilökunta suojautuu ajalla, etäisyydellä ja suojalla.

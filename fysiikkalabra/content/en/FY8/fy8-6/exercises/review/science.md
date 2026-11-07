@@ -1,17 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 51bae049ed0db575
-Mode: translation
+CONTENT-HASH: f795aba8700674c1
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- fy8-6-L2-08 (en) compared with reviewed fi: same data, same options, same correct option, same answer.
-- Recomputed independently: h = e k = 6.376e-34 J s, dh = e dk = 0.336e-34, difference 0.25e-34 < dh so agrees; my own least-squares fit of the table gives k = 3.976e-15, dk = 0.21e-15, intercept -0.074 V; red LED line value 1.82 V.
-- solutions.md L2-08: principle, symbolic step, substitution, rounding and reasonableness agree with fi; answers.py note agrees.
-- English decimal point used, wording natural English.
-- check_i18n shows nothing for fy8-6; build.py fy8-6 succeeds. No translation edit was needed.
-- Hash 51bae049ed0db575 at start and end.
+- Word-level diff since origin/main of this part checked for physics: values, units and significant figures, definitions (gamma decay, beta atomic masses, Hubble time, w_R and effective dose scope, conservation of B and L, photon interactions, ITER and Onkalo facts), worked solutions recomputed where numbers changed; formulas identical across languages (check_i18n).

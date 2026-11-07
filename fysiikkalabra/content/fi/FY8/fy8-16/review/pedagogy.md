@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 36602805dfdc3f5a
+CONTENT-HASH: 9d446cdca4056fff
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- Aiemmat huomautukset (Ydinajatuksen laajuus, ennusteen 1 etäisyysmittausten nimeäminen, vihjeen 3 paljastavuus, poistumislipukkeen kömpelöt ilmaisut) ovat ennallaan eivätkä estä.
+- none
 
 ## Checked
-- Delta: oppituntitiedostot eivät ole muuttuneet edellisen PASSin jälkeen (hash sama, diff tyhjä); aiempi täysi arvio pätee.
-- Hash alussa ja lopussa sama.
+- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.

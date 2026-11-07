@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 53dcedb9affe67c8
+CONTENT-HASH: 37514d449f22d53d
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+
 ## Blocking
-(none)
+- none
+
 ## Polish
-- lesson.md worked example Substitution — the decimal commas are fixed (1.602, 1.22, 3.00, 6.515); good.
-- lesson.md and inquiry.json solutions — division still written with a colon (`1240 V nm : 630 nm`) — use `/` or `\frac{}`.
-- figure `vyot` at 390 px — "conduction band" label overlapped by the energy axis; move it.
-- inquiry.json `koe-2` hint 3 — nearly gives the quotient; ask for the step instead.
-- inquiry.json `aineisto` — add one line for schools without Graphical Analysis (spreadsheet fit gives the same slope).
+- none
+
 ## Checked
-- Delta: only the decimal-comma to decimal-point fix in the worked example; arithmetic unchanged and correct (6.515e-34 J s).
-- Rest of the lesson as approved in round 1; hash 53dcedb9affe67c8 matches.
+- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.

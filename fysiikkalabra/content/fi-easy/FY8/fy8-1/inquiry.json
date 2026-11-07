@@ -16,8 +16,8 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "Sinkkilevy on kiinnitetty elektroskooppiin ja varattu negatiiviseksi. Elektroskooppi on mittari, jonka lehdet erkanevat toisistaan, kun siinä on varausta. Nyt lehdet ovat erillään. Levyä valaistaan pienellä ultraviolettilampulla. Lehdet painuvat alas sekunneissa, koska levy menettää elektroneja. Sitten saman levyn eteen tuodaan kirkas punainen lamppu. Se säteilee monta kertaa enemmän valotehoa. Lehdet pysyvät silti erillään, vaikka valaistusta jatkettaisiin tunnin.",
-      "question": "Miksi heikko ultraviolettivalo irrottaa elektroneja, mutta voimakas punainen valo ei? Mitä tämä kertoo valon energiasta?"
+      "text": "Sinkkilevy on kiinnitetty elektroskooppiin ja varattu negatiiviseksi. Elektroskooppi on mittari, jonka lehdet erkanevat toisistaan, kun siinä on varausta. Nyt lehdet ovat erillään. Opettaja valaisee levyä suojatussa laitteistossa pienellä lampulla. Lamppu lähettää lyhytaaltoista ultraviolettisäteilyä (UV-C). Lehdet painuvat alas sekunneissa, koska levy menettää elektroneja. Sitten saman levyn eteen tuodaan kirkas punainen lamppu. Se säteilee monta kertaa enemmän valotehoa. Lehdet pysyvät silti erillään, vaikka valaistusta jatkettaisiin tunnin.",
+      "question": "Miksi heikko UV-C-säteily irrottaa elektroneja, mutta voimakas punainen valo ei? Mitä tämä kertoo valon energiasta?"
     },
     {
       "id": "kertaus",
@@ -306,7 +306,7 @@
       "type": "reflect",
       "title": "Palaa ennusteisiisi",
       "optional": true,
-      "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin ja yhtälöön $hf = W + E_\\text{k,max}$. Palaa sitten alun kysymykseen: miksi heikko ultraviolettivalo purkaa sinkkilevyn varauksen, mutta kirkas punainen valo ei?",
+      "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin ja yhtälöön $hf = W + E_\\text{k,max}$. Palaa sitten alun kysymykseen: miksi heikko UV-C-säteily purkaa sinkkilevyn varauksen, mutta kirkas punainen valo ei?",
       "predictions": [
         "ennuste-1",
         "ennuste-2"

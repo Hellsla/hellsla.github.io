@@ -1,14 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: e184c50282f64f63
+CONTENT-HASH: f1aa00156e15f160
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
 - none
 
 ## Polish
-- inquiry `reaktiot` — the reaction table wraps inside cells at 390 px, arrows split (stage-tutki-390-2).
-- `tarkistus-3` criteria: one observable criterion for each idea would assess better.
+- A short note on sphalerons (B and L not separately conserved at extreme energies) could be added later as enrichment.
 
 ## Checked
-- Delta judged in context: Aino's correct option now names the reason (no lighter baryon exists) and matches its feedback; still reveals nothing before the student commits, and the other options are unchanged.
-- "annihiloitua eli tuhota toisensa" is natural, short Selkeä suomi; the following sentence says energy becomes photons, so the learning path is intact.
-- Rest as approved in round 1; no structure, figure or workload change.
+- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.

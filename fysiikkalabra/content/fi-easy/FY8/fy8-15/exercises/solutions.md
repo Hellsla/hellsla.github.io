@@ -155,7 +155,7 @@ Kyllä-rivejä on yhteensä $N = 5$ kappaletta.
 **Muunnokset:** Ei tarvita, koska luvuilla ei ole yksikköä.
 **Sijoitus:** (1) $L$: $0 = 0 + 1 - 1$, sallittu. (2) kaikki luvut $0$ molemmin puolin, sallittu. (3) $L$: $0 \ne 0 + 1$, kielletty. (4) $q$: $+1 - 1 = 0$, $B$: $1 = 1$ ja $L$: $0 + 1 = 0 + 1$, sallittu. (5) $q$: $+1 + 0 = 1 \ne 2$, kielletty. (6) $q$: $-1 = -1$ ja $L$: $0 = 1 - 1$, sallittu. (7) $B$: $1 + 1 = 2 \ne 0$, kielletty. Kiellettyjä on $N = 3$.
 **Vastaus:** $3$ reaktiota (3, 5 ja 7). Tulos on tarkka kokonaisluku.
-**Järkevyys:** Jokainen kielletty reaktio rikkoo eri lakia: reaktio 3 leptolukua, reaktio 5 varausta ja reaktio 7 baryolukua. Sallittuja on $7 - 3 = 4$. Reaktio 1 on neutronin beetahajoaminen ja reaktio 2 protonin ja antiprotonin annihilaatio. Ne tunnetaan.
+**Järkevyys:** Jokainen kielletty reaktio rikkoo eri lakia: reaktio 3 leptolukua, reaktio 5 varausta ja reaktio 7 baryolukua. Säilymislakien puolesta sallittuja on $7 - 3 = 4$. Säilymislait ovat välttämättömiä ehtoja, ja reaktion pitää lisäksi olla energian puolesta mahdollinen. Reaktio 1 on neutronin beetahajoaminen ja reaktio 2 protonin ja antiprotonin annihilaatio. Ne tunnetaan.
 
 ## fy8-15-L2-07
 **Kysytty:** mikä opiskelijan väitteessä ”vapaa neutroni on hajoamaton, koska se on perushiukkanen” on virheellistä.
@@ -185,7 +185,7 @@ Kyllä-rivejä on yhteensä $N = 5$ kappaletta.
 ## fy8-15-L3-03
 **Annettu:** reaktio $\bar{\nu}_e + p \to n + X$; taulukosta $\bar{\nu}_e$: $q = 0$, $B = 0$, $L = -1$; $p$: $q = +1$, $B = 1$, $L = 0$; $n$: $q = 0$, $B = 1$, $L = 0$
 **Kysytty:** hiukkasen $X$ leptoniluku $L_X$
-**Periaate:** Varaus, baryoniluku ja leptoniluku säilyvät kaikissa hiukkasreaktioissa. Hiukkasen $X$ luvut saadaan siis alkutilan ja lopputilan erotuksesta. Ne kertovat myös, mikä hiukkanen $X$ on.
+**Periaate:** Varaus säilyy aina. Tavallisissa hiukkasreaktioissa säilyvät myös baryoniluku ja kokonaisleptoniluku. Hiukkasen $X$ luvut saadaan siis alkutilan ja lopputilan erotuksesta. Ne kertovat myös, mikä hiukkanen $X$ on.
 **Kaava:** $L_{\bar{\nu}} + L_p = L_n + L_X$, josta $L_X = L_{\bar{\nu}} + L_p - L_n$
 **Muunnokset:** Ei tarvita, koska luvut ovat yksiköttömiä.
 **Sijoitus:** $L_X = -1 + 0 - 0 = -1$; samoin $q_X = 0 + 1 - 0 = +1$ ja $B_X = 0 + 1 - 1 = 0$
@@ -205,7 +205,7 @@ Kyllä-rivejä on yhteensä $N = 5$ kappaletta.
 ## fy8-15-L3-05
 **Annettu:** taulukosta $\pi^-$: $d\,\bar{u}$, $p$: $u\,u\,d$, $\Lambda^0$: $u\,d\,s$, $K^0$: $d\,\bar{s}$, $m_{K} = 497{,}611\,\tfrac{\text{MeV}}{c^2}$, $m_\pi = 139{,}570\,\tfrac{\text{MeV}}{c^2}$ ($\pi^+$ ja $\pi^-$ ovat yhtä painavia)
 **Kysytty:** a) säilymislakien ja kvarkkilajien nettomäärien tarkistus; b) hajoamisessa $K^0 \to \pi^+ + \pi^-$ vapautuva energia $Q$ megaelektronivoltteina; c) selitys kuvan jäljille
-**Periaate:** Reaktio on mahdollinen, kun varaus ja baryoniluku säilyvät ja jokaisen kvarkkilajin nettomäärä on sama alussa ja lopussa (antikvarkki vähentää nettomäärää yhdellä). Hajoamisessa vapautuva energia on massojen erotus kerrottuna $c^2$:lla, koska massat ovat yksikössä $\tfrac{\text{MeV}}{c^2}$.
+**Periaate:** Törmäyksessä hiukkaset syntyvät vahvan vuorovaikutuksen kautta. Se säilyttää jokaisen kvarkkilajin nettomäärän. Reaktio voi siis tapahtua vain, jos varaus ja baryoniluku säilyvät ja jokaisen kvarkkilajin nettomäärä on sama alussa ja lopussa (antikvarkki vähentää nettomäärää yhdellä). Ehdot ovat välttämättömiä. Lisäksi törmäyksessä on oltava riittävästi energiaa. Hajoamisessa vapautuva energia on massojen erotus kerrottuna $c^2$:lla, koska massat ovat yksikössä $\tfrac{\text{MeV}}{c^2}$.
 **Kaava:** $Q = (m_K - m_{\pi^+} - m_{\pi^-})\,c^2$, josta $Q = (m_K - 2\,m_\pi)\,c^2$
 **Muunnokset:** Ei tarvita: $c^2$ supistuu, ja energia saadaan megaelektronivoltteina.
 **Sijoitus:**
@@ -216,4 +216,4 @@ Kvarkkien nettomäärät lopussa: $u$: $1 + 0 = 1$, $d$: $1 + 1 = 2$, $s$: $1 - 
 b) $Q = (497{,}611 - 2 \cdot 139{,}570)\,\tfrac{\text{MeV}}{c^2} \cdot c^2 = (497{,}611 - 279{,}140)\,\text{MeV} = 218{,}471\,\text{MeV}$
 c) Varauksettomat hiukkaset $\Lambda^0$ ja $K^0$ eivät ionisoi kammion nestettä, joten ne eivät jätä jälkeä. Ne jättävät jäljen vasta, kun ne hajoavat varatuiksi hiukkasiksi V:n kärjessä. Varaus säilyy, joten hajoamisessa syntyvien hiukkasten varaukset ovat vastakkaiset ($+1$ ja $-1$). Magneettikenttä taivuttaa ne vastakkaisiin suuntiin.
 **Vastaus:** $218{,}471\,\text{MeV}$; vähennyksessä on tuhannesosat, joten tulos annetaan tuhannesosan tarkkuudella. Reaktio $\pi^- + p \to \Lambda^0 + K^0$ säilyttää kaiken tarkistetun. Jäljettömyys ja haarojen vastakkainen kaareutuminen selittyvät varauksella.
-**Järkevyys:** Pyöristettynä $498 - 280 = 218$, lähellä tulosta. Energia on positiivinen, joten hajoaminen on mahdollinen. Se on noin $44\,\%$ kaonin lepoenergiasta, koska $218{,}5 : 497{,}6 = 0{,}439$. Tulos on suurempi kuin lambdan hajoamisen $37{,}8\,\text{MeV}$, koska pionit ovat kevyitä kaoniin verrattuna. Itse törmäyksessä $Q = (139{,}570 + 938{,}272 - 1115{,}683 - 497{,}611)\,\text{MeV} = -535{,}452\,\text{MeV}$. Pionin liike-energia siis maksaa uusien hiukkasten massan.
+**Järkevyys:** Pyöristettynä $498 - 280 = 218$, lähellä tulosta. Energia on positiivinen, joten hajoaminen on energian puolesta mahdollinen. Se on noin $44\,\%$ kaonin lepoenergiasta, koska $218{,}5 : 497{,}6 = 0{,}439$. Tulos on suurempi kuin lambdan hajoamisen $37{,}8\,\text{MeV}$, koska pionit ovat kevyitä kaoniin verrattuna. Itse törmäyksessä $Q = (139{,}570 + 938{,}272 - 1115{,}683 - 497{,}611)\,\text{MeV} = -535{,}452\,\text{MeV}$. Pionin liike-energia siis maksaa uusien hiukkasten massan.

@@ -41,7 +41,7 @@
 ## fy8-6-L1-05
 **Annettu:** sovitetun suoran kulmakerroin $k = 4{,}10 \cdot 10^{-15}\,\text{V}\,\text{s}$, alkeisvaraus $e = 1{,}602 \cdot 10^{-19}\,\text{C}$
 **Kysytty:** Planckin vakio $h$ yksikössä $\text{J}\,\text{s}$
-**Periaate:** Kynnysjännitteellä elektronin saama energia on likimain fotonin energia, $eU_\text{k} = hf$. Siksi kynnysjännite on taajuuden suhteen suora $U_\text{k} = \tfrac{h}{e} f$. Suoran kulmakerroin on $\tfrac{h}{e}$.
+**Periaate:** Kynnysjännitteellä elektronin saama energia on likimain fotonin energia, $eU_\text{k} \approx hf$. Siksi kynnysjännite on taajuuden suhteen likimain suora $U_\text{k} \approx \tfrac{h}{e} f$. Suoran kulmakerroin on mallissa noin $\tfrac{h}{e}$.
 **Kaava:** $k = \dfrac{h}{e}$, joten $h = ek$
 **Muunnokset:** Niitä ei tarvita: $\text{C} \cdot \text{V}\,\text{s} = \text{J}\,\text{s}$, koska $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$.
 **Sijoitus:** $h = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 4{,}10 \cdot 10^{-15}\,\text{V}\,\text{s} = 6{,}568 \cdot 10^{-34}\,\text{J}\,\text{s}$
@@ -91,7 +91,7 @@
 ## fy8-6-L3-01
 **Annettu:** neljän LEDin huippuaallonpituudet ja kynnysjännitteet: $625\,\text{nm}$ ja $1{,}86\,\text{V}$, $590\,\text{nm}$ ja $1{,}97\,\text{V}$, $520\,\text{nm}$ ja $2{,}27\,\text{V}$, $465\,\text{nm}$ ja $2{,}55\,\text{V}$; $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $e = 1{,}602 \cdot 10^{-19}\,\text{C}$
 **Kysytty:** Planckin vakio $h$ yksikössä $\text{J}\,\text{s}$
-**Periaate:** Kynnysjännitteellä $eU_\text{k} \approx hf$. Siksi pisteet $(f, U_\text{k})$ ovat likimain suoralla, jonka kulmakerroin on $\tfrac{h}{e}$. Mittausepävarmuuden vuoksi pisteet eivät yleensä ole täsmälleen samalla suoralla. Suora sovitetaan siis kaikkiin pisteisiin. Lähes sama poikkeama kaikilla LEDeillä siirtää suoraa, mutta ei muuta kulmakerrointa.
+**Periaate:** Kynnysjännitteellä $eU_\text{k} \approx hf$. Siksi pisteet $(f, U_\text{k})$ ovat likimain suoralla, jonka kulmakerroin on mallissa noin $\tfrac{h}{e}$. Mittausepävarmuuden vuoksi pisteet eivät yleensä ole täsmälleen samalla suoralla. Suora sovitetaan siis kaikkiin pisteisiin. Jos poikkeama on lähes sama kaikilla LEDeillä, se siirtää lähinnä suoraa. Kulmakerroin ei silloin juuri muutu.
 **Kuvaajan lukeminen:** Taajuudet lasketaan, ja suora sovitetaan Graphical Analysis Prossa valinnoilla **Käyrän sovitus** ja **Lineaarinen**. Tulosruudussa on $m = 4{,}212 \cdot 10^{-15}\,\tfrac{\text{V}}{\text{Hz}}$ ja $b = -0{,}164\,\text{V}$.
 **Kaava:** $f = \dfrac{c}{\lambda}$ ja $k = \dfrac{h}{e}$, joten $h = ek$
 **Muunnokset:** aallonpituudet metreiksi, esimerkiksi $625\,\text{nm} = 625 \cdot 10^{-9}\,\text{m}$; $\tfrac{\text{V}}{\text{Hz}} = \text{V}\,\text{s}$
@@ -179,7 +179,7 @@
 
 ## fy8-6-L2-08
 **Kysytty:** mikä johtopäätös viiden LEDin aineistosta on perusteltu.
-**Periaate:** Kynnysjännitteellä elektronin saama energia on likimain yhtä suuri kuin fotonin energia, $eU_\text{k} \approx hf$, joten kuvaajan $(f, U_\text{k})$ kulmakerroin on $k = \tfrac{h}{e}$ ja Planckin vakio on $h = ek$. Kulmakertoimen epävarmuus siirtyy Planckin vakioon samalla kertoimella eli samalla tavalla kerrottuna, $\Delta h = e\,\Delta k$. Tulos on sopusoinnussa eli sopii yhteen hyväksytyn arvon kanssa, jos hyväksytty arvo on lukujen $h - \Delta h$ ja $h + \Delta h$ välillä.
+**Periaate:** Kynnysjännitteellä elektronin saama energia on likimain yhtä suuri kuin fotonin energia, $eU_\text{k} \approx hf$, joten kuvaajan $(f, U_\text{k})$ kulmakerroin on mallissa $k \approx \tfrac{h}{e}$ ja Planckin vakion arvio on $h \approx ek$. Kulmakertoimen epävarmuus siirtyy Planckin vakioon samalla kertoimella eli samalla tavalla kerrottuna, $\Delta h = e\,\Delta k$. Tulos on sopusoinnussa eli sopii yhteen hyväksytyn arvon kanssa, jos hyväksytty arvo on lukujen $h - \Delta h$ ja $h + \Delta h$ välillä.
 **Mallivastaus:** Planckin vakio ja sen epävarmuus:
 
 $$\begin{aligned}
@@ -216,12 +216,12 @@ $$\begin{aligned}
 
 ja mitattu $1{,}85\,\text{V}$ poikkeaa siitä vähemmän kuin mittausepävarmuus $0{,}05\,\text{V}$.
 
-Muut johtopäätökset eivät ole perusteltuja. Suoran ei tarvitse kulkea origon kautta. Mitattu kynnysjännite eroaa arvosta $\tfrac{hf}{e}$ suunnilleen yhtä paljon kaikilla LEDeillä. Tämä ero siirtää suoraa, mutta se ei muuta kulmakerrointa. Systemaattista virhettä ei voi päätellä, koska ero $0{,}25 \cdot 10^{-34}\,\text{J}\,\text{s}$ on epävarmuuden $0{,}34 \cdot 10^{-34}\,\text{J}\,\text{s}$ sisällä. Eroa ei myöskään voi verrata suoraan kulmakertoimen epävarmuuteen $\Delta k$, koska sillä on eri yksikkö. Vertailu tehdään Planckin vakion epävarmuuteen $\Delta h = e\,\Delta k$.
+Muut johtopäätökset eivät ole perusteltuja. Suoran ei tarvitse kulkea origon kautta. Mitattu kynnysjännite eroaa arvosta $\tfrac{hf}{e}$. Kun ero on suunnilleen sama kaikilla LEDeillä, se siirtää lähinnä suoraa. Kulmakerroin ei silloin juuri muutu. Systemaattista virhettä ei voi päätellä, koska ero $0{,}25 \cdot 10^{-34}\,\text{J}\,\text{s}$ on epävarmuuden $0{,}34 \cdot 10^{-34}\,\text{J}\,\text{s}$ sisällä. Eroa ei myöskään voi verrata suoraan kulmakertoimen epävarmuuteen $\Delta k$, koska sillä on eri yksikkö. Vertailu tehdään Planckin vakion epävarmuuteen $\Delta h = e\,\Delta k$.
 
 ## fy8-6-L3-04
 **Annettu:** viiden LEDin aallonpituudet ja mitatut jännitteet taulukosta, nollapistevirhe $+0{,}05\,\text{V}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $e = 1{,}602 \cdot 10^{-19}\,\text{C}$, hyväksytty $h_0 = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$
 **Kysytty:** Planckin vakio $h$ suoran kulmakertoimesta yksikössä $\text{J}\,\text{s}$, sekä korjauksen vaikutus suoraan ja yhden LEDin tulokseen
-**Periaate:** Kynnysjännitteellä $eU_\text{k} \approx hf$. Siksi $U_\text{k}$ on taajuuden suhteen suora, jonka kulmakerroin on $\tfrac{h}{e}$. Mittarin nollapistevirhe lisää jokaiseen jännitteeseen saman vakion $0{,}05\,\text{V}$. Vakion lisääminen siirtää suoraa ylöspäin mutta ei muuta sen kulmakerrointa. Virhe näkyy siis leikkauskohdassa.
+**Periaate:** Kynnysjännitteellä $eU_\text{k} \approx hf$. Siksi $U_\text{k}$ on taajuuden suhteen likimain suora, jonka kulmakerroin on mallissa noin $\tfrac{h}{e}$. Mittarin nollapistevirhe lisää jokaiseen jännitteeseen saman vakion $0{,}05\,\text{V}$. Vakion lisääminen siirtää suoraa ylöspäin mutta ei muuta sen kulmakerrointa. Virhe näkyy siis leikkauskohdassa.
 **Kuvaajan lukeminen:** Taajuudet ovat $4{,}759$, $5{,}081$, $5{,}260$, $5{,}710$ ja $6{,}447$ yksikössä $10^{14}\,\text{Hz}$. Kun suora sovitetaan kaikkiin viiteen mitattuun pisteeseen, kulmakerroin on $m = 4{,}208 \cdot 10^{-15}\,\text{V}\,\text{s}$ ja leikkauskohta $b = -0{,}062\,\text{V}$. Korjatut jännitteet ovat $U = U_\text{mitattu} - 0{,}05\,\text{V}$. Niiden sovitus antaa saman kulmakertoimen $4{,}208 \cdot 10^{-15}\,\text{V}\,\text{s}$ ja leikkauskohdan $-0{,}112\,\text{V}$.
 **Kaava:** $f = \dfrac{c}{\lambda}$, $k = \dfrac{h}{e}$, joten $h = ek$. Yhden LEDin kaava on $h = \dfrac{eU_\text{k}\lambda}{c}$.
 **Muunnokset:** $\lambda = 630 \cdot 10^{-9}\,\text{m}$ jne.; $\tfrac{\text{V}}{\text{Hz}} = \text{V}\,\text{s}$ ja $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$
@@ -230,7 +230,7 @@ Muut johtopäätökset eivät ole perusteltuja. Suoran ei tarvitse kulkea origon
 
 Perustelu kulmakertoimelle: nollapistevirhe on vakio, joten kulmakerroin ei riipu siitä. Suoran antama $h$ on sama ennen korjausta ja sen jälkeen. Yhden LEDin $h$ sen sijaan muuttuu. Nollapistevirhe $0{,}05\,\text{V}$ on noin $2{,}6\,\%$ jännitteestä $1{,}93\,\text{V}$, ja punaisen LEDin tulos muuttuu saman verran.
 
-Korjattukin yhden LEDin arvo on $4{,}5\,\%$ liian pieni. Syy on se, että mitattu kynnysjännite on yleensä hieman pienempi kuin $\tfrac{hf}{e}$. Korjattu leikkauskohta $-0{,}112\,\text{V}$ osoittaa tämän noin $0{,}1\,\text{V}$:n eron. Suora poistaa tämän eron vaikutuksen kulmakertoimesta. Siksi Planckin vakio määritetään kulmakertoimesta eikä yhdestä LEDistä.
+Korjattukin yhden LEDin arvo on $4{,}5\,\%$ liian pieni. Syy on se, että mitattu kynnysjännite on yleensä hieman pienempi kuin $\tfrac{hf}{e}$. Korjattu leikkauskohta $-0{,}112\,\text{V}$ osoittaa tämän noin $0{,}1\,\text{V}$:n eron. Kun ero on lähes sama kaikilla LEDeillä, suoran sovitus poistaa suurimman osan sen vaikutuksesta kulmakertoimeen. Siksi Planckin vakio määritetään kulmakertoimesta eikä yhdestä LEDistä.
 **Järkevyys:** Kauimmaisista pisteistä $(2{,}64\,\text{V} - 1{,}93\,\text{V}) : (6{,}447 \cdot 10^{14}\,\text{Hz} - 4{,}759 \cdot 10^{14}\,\text{Hz}) = 4{,}21 \cdot 10^{-15}\,\text{V}\,\text{s}$. Se on sama kuin sovituksen kulmakerroin. Korjattu leikkauskohta $-0{,}11\,\text{V}$ on samaa suuruusluokkaa kuin luvussa mainittu ero noin $0{,}1\,\text{V}$.
 
 ## fy8-6-L3-05

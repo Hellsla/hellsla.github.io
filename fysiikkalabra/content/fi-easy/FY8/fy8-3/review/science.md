@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: e65229901a3e00fa
+CONTENT-HASH: 7cf00fb14ee5fdf8
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-batch delta review: added meta.json key_concepts (Luvun tärkeät käsitteet) checked term by term against the lesson's own definitions, summary and the physics guardrails; no number, formula or choice changed. Terms: perustila, viritystila, ionisaatioenergia (from the ground state) and Bohrin malli (historical, right energies for hydrogen, orbits not real) agree with the lesson and its misconception section.
+- Word-level diff since origin/main of this part checked for physics: values, units and significant figures, definitions (gamma decay, beta atomic masses, Hubble time, w_R and effective dose scope, conservation of B and L, photon interactions, ITER and Onkalo facts), worked solutions recomputed where numbers changed; formulas identical across languages (check_i18n).

@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 2e9a0fdb210a1299
+CONTENT-HASH: bce70f1717c48c57
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- Aiemmat huomautukset (reaktiotaulukon rivitys, Higgs/CERN-kappaleen pituus) ennallaan, eivät estä.
+- A short note on sphalerons (B and L not separately conserved at extreme energies) could be added later as enrichment.
 
 ## Checked
-- Delta: taulukko on luettelo (vuorovaikutus: välittäjä, kohde); sisältö sama, lyhyet rivit toimivat puhelimella, kantamavirke selkeä.
-- stage-selita-390-3 ja -4: luettelo mahtuu 390 px:ään, ei leikkautumista; edellinen Polish-huomio korjattu.
-- Kohdehiukkaset (kvarkit, varatut hiukkaset, kaikki) lukeutuvat nyt kokonaan; sanasto kohdallaan.
-- Muu oppitunti ennallaan edelliseen PASSiin nähden.
+- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.

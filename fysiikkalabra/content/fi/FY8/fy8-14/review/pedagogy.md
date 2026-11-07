@@ -1,15 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 93b09f7b2b9b0175
+CONTENT-HASH: af23b31364a69e77
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- Readings table in exp-koe-1-390-2 still hides the third column at 390 px; add a scroll cue.
-- Earlier Polish stands: workload is above an hour (mark industry section or siirto optional); L3 demand light (see exercises report); worked example unshown step $(1/2)^a:(1/2)^b=2^{b-a}$.
-- Figure labels now fully visible at 390 px, so the figures can be read without the description.
+- none
 
 ## Checked
-- Packet (lesson, inquiry, sim spec) read; delta: figure labels, experiment panel, sim legend.
-- Captures: fig-4 (luu), fig-10 (säätö).
-- Re-review after change: radiotherapy figure labels shifted 12 px left, still fully visible and readable; hash unchanged between start and end.
+- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.

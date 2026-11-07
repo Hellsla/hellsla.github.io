@@ -167,7 +167,7 @@ $$\begin{aligned}
 
 2 tosi: stimuloitu fotoni saa saapuvan fotonin energian, suunnan ja vaiheen, joten laservalon aallot ovat samassa tahdissa.
 
-3 epätosi: kahdella tasolla pumppausvalo aiheuttaa ylätilan atomeissa stimuloitua emissiota yhtä todennäköisesti kuin virittää perustilan atomeja, joten ylätilaan saadaan enintään puolet atomeista. Populaatioinversio tehdään pumppaamalla aineeseen, jossa on ainakin kolme tasoa ja pitkäikäinen ylempi lasertaso.
+3 epätosi: kahden tason mallissa pumppausvalo aiheuttaa ylätilan atomeissa stimuloitua emissiota yhtä todennäköisesti kuin virittää perustilan atomeja, joten ylätilaan saadaan enintään puolet atomeista. Atomi- ja ionilasereissa populaatioinversio tehdään pumppaamalla aineeseen, jossa on kolme tai neljä tasoa ja pitkäikäinen ylempi lasertaso.
 
 4 epätosi: piste A on pienempi, joten sen energiarako on suurempi ja fotonin energia suurempi. Piste A lähettää siis lyhyemmän aallonpituuden valoa kuin piste B.
 

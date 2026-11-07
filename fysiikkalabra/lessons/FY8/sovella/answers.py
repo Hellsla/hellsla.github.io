@@ -41,7 +41,9 @@ out.update({"fy8-s2-dm": round(dm, 6), "fy8-s2-a": round(Q_MeV, 3), "fy8-s2-QJ":
             "fy8-s2-N": float(f"{N:.4g}"), "fy8-s2-mnuc": float(f"{m_Pu * u_kg:.5g}"), "fy8-s2-b": round(m238, 3),
             "fy8-s2-fracPu": round(frac_Pu, 4), "fy8-s2-mPu": round(m_Pu_fuel, 3), "fy8-s2-share": round(m238 / m_Pu_fuel, 3),
             "fy8-s2-d": round(P14), "fy8-s2-d-factor": round(0.5 ** (14 / 87.7), 4), "fy8-s2-d-el": round(Pel * 0.5 ** (14 / 87.7), 1),
-            "fy8-s2-Po-1a": round(0.5 ** (365.25 / 138), 4), "fy8-s2-ratioU": float(f"{ratio_U:.3g}")})
+            "fy8-s2-Po-1a": round(0.5 ** (365.25 / 138), 4), "fy8-s2-ratioU": float(f"{ratio_U:.3g}"),
+            "fy8-s2-b-m": round(m238, 3), "fy8-s2-b-share": round(100 * m238 / m_Pu_fuel, 1),   # b) both asked values
+            "fy8-s2-d-P": round(P14), "fy8-s2-d-Pel": round(Pel * 0.5 ** (14 / 87.7), 1)})            # d) thermal and electric power
 # e) 10 Bq of Pu-238 kept in the lungs (1,2 kg) for a year; w_R = 20 (alpha), w_T = 0,12 (lungs)
 E_lung = 10 * year * Q_J
 D_lung = E_lung / 1.2

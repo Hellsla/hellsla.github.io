@@ -1,6 +1,6 @@
 # Valosähköinen ilmiö ja fotoni
 
-> **Miksi** heikkokin ultraviolettivalo irrottaa elektroneja sinkkilevystä, mutta kirkaskaan punainen valo ei irrota yhtäkään?
+> **Miksi** heikkokin lyhytaaltoinen ultraviolettivalo irrottaa elektroneja sinkkilevystä, mutta kirkaskaan punainen valo ei irrota yhtäkään?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: laboratorion pöydällä on kaksi lasikupuista elektroskooppia. Niiden päällä on kiiltävä sinkkilevy. Vasemman elektroskoopin yllä pieni ultraviolettilamppu loistaa violettina. Levystä lentää pieniä sinisiä elektroneja, ja elektroskoopin lehdet riippuvat alhaalla. Oikean elektroskoopin yllä suuri punainen lamppu loistaa kirkkaasti. Elektroneja ei kuitenkaan irtoa, ja elektroskoopin lehdet ovat yhä erillään." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy81h-table" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy81h-zinc" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a96a3"/><stop offset="0.3" stop-color="#ffffff"/><stop offset="0.65" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient><radialGradient id="fy81h-uvglow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#b9a5f5"/><stop offset="0.55" stop-color="#7048e8" stop-opacity="0.8"/><stop offset="1" stop-color="#7048e8" stop-opacity="0"/></radialGradient><radialGradient id="fy81h-redglow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ffb3a8"/><stop offset="0.55" stop-color="#db0000" stop-opacity="0.8"/><stop offset="1" stop-color="#db0000" stop-opacity="0"/></radialGradient></defs>
@@ -77,7 +77,7 @@
 ## Ydinajatus
 
 ### Valo irrottaa elektroneja metallista
-Sinkkilevy on varattu negatiiviseksi. Kun levyä valaistaan ultraviolettivalolla, levy menettää varauksensa nopeasti. Valo irrottaa levyn pinnasta elektroneja. Ilmiötä sanotaan **valosähköiseksi ilmiöksi**. Metallissa on paljon elektroneja, jotka liikkuvat vapaasti metallin sisällä. Ne eivät kuitenkaan pääse itsestään ulos metallin pinnan läpi. Pienintä energiaa, jolla elektroni saadaan irti metallista, sanotaan **irrotustyöksi** $W$. Irrotustyö riippuu metallista. Natriumilla se on noin $2{,}3\,\text{eV}$ ja sinkillä noin $4{,}3\,\text{eV}$. Yksikkö elektronivoltti selitetään tämän luvun lopussa.
+Sinkkilevy on varattu negatiiviseksi. Kun levyä valaistaan riittävän lyhytaaltoisella ultraviolettisäteilyllä, levy menettää varauksensa nopeasti. Säteily irrottaa levyn pinnasta elektroneja. Ilmiötä sanotaan **valosähköiseksi ilmiöksi**. Metallissa on paljon elektroneja, jotka liikkuvat vapaasti metallin sisällä. Ne eivät kuitenkaan pääse itsestään ulos metallin pinnan läpi. Pienintä energiaa, jolla elektroni saadaan irti metallista, sanotaan **irrotustyöksi** $W$. Irrotustyö riippuu metallista. Natriumilla se on noin $2{,}3\,\text{eV}$ ja sinkillä noin $4{,}3\,\text{eV}$. Yksikkö elektronivoltti selitetään tämän luvun lopussa.
 
 <svg data-fig="ilmio" viewBox="0 0 600 340" role="img" aria-label="Kaavakuva, ei mittakaavassa: vaakasuora sinkkilevy on kuvan alareunassa. Vasemmalla levyyn osuu neljä punaisen valon fotonia. Aallonpituus on 650 nanometriä. Fotonit ovat aaltoviivanuolia, joissa on merkintä hf. Levystä ei irtoa yhtään elektronia. Oikealla levyyn osuu vain kaksi ultraviolettivalon fotonia. Aallonpituus on 254 nanometriä. Kummankin osumakohdasta lähtee sininen elektroni e miinus. Elektronilla on nopeusnuoli v, jonka päällä on viiva. Nuoli osoittaa ylös ja oikealle. Pystysuora katkoviiva erottaa tilanteet." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy81-zinc" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a96a3"/><stop offset="0.3" stop-color="#ffffff"/><stop offset="0.65" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient></defs>
@@ -256,6 +256,11 @@ Tässä $hf$ on fotonin energia, $W$ on metallin irrotustyö ja $E_\text{k,max}$
 
 Yhtälö voidaan kirjoittaa muotoon $E_\text{k,max} = hf - W$. Tämä on suoran yhtälö. Suurin liike-energia kasvaa tasaisesti taajuuden mukana. Suoran kulmakerroin on Planckin vakio $h$ kaikille metalleille. Eri metallien suorat ovat siksi yhdensuuntaiset. Ne alkavat vaaka-akselilta kunkin metallin rajataajuudelta. Robert Millikan mittasi tällaisia suoria vuonna 1916. Hän sai suorien kulmakertoimesta Planckin vakion. Valon intensiteetti ei esiinny yhtälössä lainkaan.
 
+### Sinkki tarvitsee lyhytaaltoista ultraviolettia
+Rajataajuutta vastaa **raja-aallonpituus** $\lambda_0 = hc : W$. Sitä pidempiaaltoinen säteily ei irrota elektroneja. Sinkistä irtoaa elektroneja vain, jos fotonin energia on suurempi kuin sinkin irrotustyö. Irrotustyö on $4{,}31\,\text{eV}$, joten raja-aallonpituus on $\lambda_0 \approx 1240\,\text{eV}\,\text{nm} : 4{,}31\,\text{eV} \approx 288\,\text{nm}$. Tavallinen $365\,\text{nm}$:n UV-A-lamppu ei siksi riitä. Lyhytaaltoisempi säteily, esimerkiksi $254\,\text{nm}$:n UV-C, voi irrottaa elektroneja. Koe onnistuu parhaiten, kun sinkkipinta on juuri hiottu. Pinnan oksidikerros ja lika heikentävät ilmiötä.
+
+UV-C-säteily vaurioittaa silmiä ja ihoa jo lyhyessä ajassa. Koulussa koetta ei tehdä suojaamattomalla UV-C-lampulla. Opettaja voi näyttää kokeen suojatulla laitteistolla. Muuten ilmiötä tutkitaan simulaatiolla ja valmiilla mittausaineistolla.
+
 ## Esimerkki
 Violetti laserosoitin lähettää valoa, jonka aallonpituus on $405\,\text{nm}$. Valo osuu natriumpintaan, jonka irrotustyö on $2{,}28\,\text{eV}$. Kuinka suuri on irtoavien elektronien suurin liike-energia elektronivoltteina?
 
@@ -307,7 +312,7 @@ Moni ajattelee, että kirkkaampi valo antaa elektroneille enemmän energiaa, kos
 Toinen virhe on ajatella, että fotoni on pieni valon ”pallo”, jolla on tietty paikka ja koko. Sen mukaan valo olisi joko aalto tai hiukkasjoukko. Valosähköisessä ilmiössä valon energian siirtyminen näkyy kvantteina. Valon interferenssi eli aaltojen yhteisvaikutus selittyy kuitenkin aaltomallilla. Valon kaksoisluonteeseen palataan luvussa *Valo ja elektroni aaltoina ja hiukkasina*.
 
 ## Tiivistelmä
-- Valosähköisessä ilmiössä valo irrottaa elektroneja metallin pinnasta. Pienin energia, joka irrottamiseen tarvitaan, on metallin irrotustyö $W$.
+- Valosähköisessä ilmiössä valo irrottaa elektroneja metallin pinnasta. Pienin energia, joka irrottamiseen tarvitaan, on metallin irrotustyö $W$. Sinkki tarvitsee ultraviolettisäteilyä, jonka aallonpituus on alle noin $288\,\text{nm}$.
 - Valon energia on kvantittunut fotoneiksi. Fotonin energia on $E = hf = \tfrac{hc}{\lambda}$, ja tässä $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$.
 - Yksi fotoni luovuttaa energiansa yhdelle elektronille: $hf = W + E_\text{k,max}$. Elektroneja irtoaa vain, kun $hf \geq W$ eli $f \geq f_0 = \tfrac{W}{h}$.
 - Valon intensiteetti määrää irtoavien elektronien määrän. Taajuus määrää niiden suurimman liike-energian.

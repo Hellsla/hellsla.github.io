@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 75b8ca0cb3a5bf15
+CONTENT-HASH: f1aa00156e15f160
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] cms-detector alt — "ihmisiä oranssit kypärät päässä" reads clumsily; "Edessä on ihmisiä, joilla on oranssit kypärät."
-- [Minor] atlas-detector at 1280 px — the portrait photo (836×1600) is shown narrow (about 110 px wide) beside a wide caption; acceptable, but a little small to read the structure.
+- none
 
 ## Checked
-batch delta review: opened cms-detector.webp and atlas-detector.webp, rendered both at 390 and 1280 px (float right, no clipping, no overflow; the two photos do not collide). Alts match the images. ATLAS caption: $46\,\text{m}$ and $25\,\text{m}$ correct and in LaTeX; 2007 under construction plausible.
+- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.

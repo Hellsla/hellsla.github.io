@@ -1,6 +1,6 @@
 # Ionisoiva säteily ja elimistö
 
-> **Miksi** paperiarkki pysäyttää alfasäteilyn mutta gammasäteily läpäisee koko ihmisen kehon, ja miksi silti juuri alfasäteilyä lähettävä aine on vaarallisin, kun se joutuu elimistön sisään?
+> **Miksi** paperiarkki pysäyttää alfasäteilyn mutta gammasäteily läpäisee koko ihmisen kehon, ja miksi alfasäteilyä lähettävä aine on silti erityisen haitallista, kun sitä joutuu elimistön sisään?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: koulun fysiikan laboratorion pöytä. Vasemmalla lyijytiilistä kasattu suoja, jonka kyljessä on pieni säteilylähde. Lähteestä lähtee oikealle violetteja ja sinisiä hiukkasia ja oransseja aaltoviivoja. Niiden tiellä on telineessä kolme levyä: paperi, alumiini ja lyijy; violetit hiukkaset pysähtyvät paperiin, siniset alumiiniin, ja oranssit aallot jatkavat. Oikealla telineeseen kiinnitetty Geigerin ja Müllerin putki, jonka johto menee laskuriin, ja laskurin näytössä on pulsseja kuvaavia piikkejä." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy812h-table" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
@@ -327,12 +327,16 @@ Ihminen ei aisti ionisoivaa säteilyä, joten se havaitaan mittalaitteella. Tava
 
 <figure class="unit-photo"><img src="pics/fy8/dosimeter-chernobyl.webp" alt="Käsi pitää keltaista taskukokoista säteilymittaria polven päällä; kuva on otettu läheltä, ja tausta on sumea."><figcaption>Säteilymittari Tšernobylin alueella. Tällaisessa taskumittarissa on yleensä Geigerin ja Müllerin putki, joka laskee ionisoivia tapahtumia ja muuntaa niiden määrän annosnopeudeksi.</figcaption></figure>
 
-Jokainen ionisoiva tapahtuma laukaisee samanlaisen vyöryn, joten pulssi on yhtä suuri riippumatta säteilyn lajista ja energiasta. GM-mittari siis laskee tapahtumia mutta ei kerro, mitä säteilyä se havaitsee. Säteilylajin voi päätellä esteiden avulla: jos pulssimäärä putoaa taustan tasolle paperiarkin taakse, säteily on alfasäteilyä. Mittari laskee aina myös **taustasäteilyä**, jota tulee maaperästä, rakennusmateriaaleista, ilman radonista ja avaruudesta. Gammafotoneista GM-putki havaitsee vain pienen osan, koska useimmat kulkevat ohuen kaasun läpi vuorovaikuttamatta. Säteilyn energiaa mittaavat esimerkiksi tuikeilmaisimet, ja henkilön saamaa säteilyä seurataan annosmittareilla.
+Jokainen ionisoiva tapahtuma laukaisee samanlaisen vyöryn, joten pulssi on yhtä suuri riippumatta säteilyn lajista ja energiasta. GM-mittari siis laskee tapahtumia mutta ei kerro, mitä säteilyä se havaitsee. Mittari laskee aina myös **taustasäteilyä**, jota tulee maaperästä, rakennusmateriaaleista, ilman radonista ja avaruudesta. Tausta mitataan erikseen ilman lähdettä ja vähennetään tuloksesta. Pulssimäärä vaihtelee satunnaisesti, joten vertailtavien mittausten on oltava riittävän pitkiä.
+
+Säteilylajia voi arvioida esteiden avulla. Paperiarkin aiheuttama voimakas pulssimäärän väheneminen viittaa alfasäteilyyn, kun käytetään tarkoitukseen sopivaa ohutikkunaista mittaria ja tunnettua mittausjärjestelyä. Pelkkä pulssimäärä ei kuitenkaan yksin osoita säteilylajia varmasti, sillä mittarin vaste riippuu myös hiukkasten energiasta, lähteen etäisyydestä ja ilmaisimen ikkunasta. Gammafotoneista GM-putki havaitsee vain pienen osan, koska useimmat kulkevat ohuen kaasun läpi vuorovaikuttamatta. Säteilyn energiaa mittaavat esimerkiksi tuikeilmaisimet, ja henkilön saamaa säteilyä seurataan annosmittareilla. Koulun suljettuja säteilylähteitä käsitellään vain opettajan valvonnassa pihdeillä, ja ne palautetaan säilytykseen heti mittauksen jälkeen.
 
 ### Säteily elimistössä
 Säteilyn biologiset vaikutukset alkavat fysiikasta: ionisaatio katkaisee kemiallisia sidoksia. Säteily voi ionisoida suoraan solun DNA:ta (suora vaikutus). Useammin se ionisoi vesimolekyylejä, koska solu on enimmäkseen vettä. Silloin syntyy hyvin reaktiivisia radikaaleja, kuten hydroksyyliradikaaleja, jotka vaurioittavat DNA:ta (epäsuora vaikutus). Solu korjaa suurimman osan vaurioista. Korjaamaton tai väärin korjattu vaurio voi kuitenkin tappaa solun tai muuttaa sen perimää, ja perimän muutos voi vuosien kuluttua johtaa syöpään.
 
 Elimistölle haitallisinta on, kun paljon ionisaatioita osuu lyhyelle matkalle. Alfahiukkasen tiheä rata voi katkaista DNA:n molemmat juosteet lähekkäin, ja sellaista vauriota solu korjaa huonosti. Kehon ulkopuolella alfasäteily on lähes vaaratonta, koska se ei läpäise ihon kuollutta pintakerrosta. Hengitettynä, nieltynä tai haavaan joutuneena alfasäteilijä luovuttaa kaiken energiansa elävän kudoksen muutamaan solukerrokseen. Suomessa tärkein tällainen lähde on sisäilman radon, jonka hajoamistuotteet jäävät keuhkoihin. Gammasäteily taas läpäisee kehon, joten ulkoinenkin gammalähde säteilyttää sisäelimiä.
+
+Säteilylaji ei kuitenkaan yksin ratkaise, kuinka vaarallinen radioaktiivinen aine on. Kokonaisriski riippuu myös aineen aktiivisuudesta ja säteilyn energiasta, siitä, kuinka paljon ainetta elimistöön joutuu, mihin elimeen se kertyy ja kuinka nopeasti se poistuu, sekä radionuklidin puoliintumisajasta. Siksi sisäisiä säteilylähteitä ei voi asettaa vaarallisuusjärjestykseen pelkän säteilylajin perusteella.
 
 Säteilyn vaikutusta elimistöön kuvataan **absorboituneella annoksella**, joka kertoo, kuinka paljon säteilyn energiaa on siirtynyt kilogrammaan kudosta. Suuri annos lyhyessä ajassa tappaa niin paljon soluja, että kudoksen toiminta häiriintyy. Pienet annokset lisäävät syövän riskiä. Annoksia, niiden yksiköitä ja säteilyltä suojautumista käsitellään luvussa *Säteilyannos ja säteilyturvallisuus Suomessa*.
 
@@ -413,6 +417,17 @@ Lähde: laskettu NIST XCOM -tietokannan vaimennuskertoimista kapealle säteelle,
 
 Yhtälö koskee vain fotonisäteilyä. Alfa- ja beetahiukkaset menettävät energiaansa vähitellen jokaisessa ionisaatiossa, joten niillä on kantama: tietyn paksuuden jälkeen yksikään ei pääse läpi.
 
+### Fotonin kolme vuorovaikutusta aineessa
+Gamma- tai röntgenfotoni ei menetä energiaansa vähitellen, vaan se poistuu säteestä yksittäisessä vuorovaikutuksessa. Tärkeimpiä vuorovaikutuksia on kolme. Kaksi ensimmäistä on kohdattu FY8:n aiemmissa luvuissa, ja parinmuodostukseen palataan luvussa *Standardimalli: perushiukkaset ja vuorovaikutukset*. Kussakin syntyy nopea elektroni, parinmuodostuksessa myös positroni, ja vasta nämä varatut hiukkaset ionisoivat ympäristöään.
+
+| Vuorovaikutus | Mitä tapahtuu | Milloin todennäköisin |
+| --- | --- | --- |
+| Valosähköinen absorptio | Fotoni luovuttaa koko energiansa atomin elektronille ja häviää (luku *Valosähköinen ilmiö ja fotoni*). | pienet energiat ja suuri järjestysluku |
+| Comptonin sironta | Fotoni luovuttaa osan energiastaan elektronille ja jatkaa pienempienergisenä uuteen suuntaan (Comptonin ilmiö, luku *Valo ja elektroni aaltoina ja hiukkasina*). | keskisuuret energiat, erityisesti kevyissä aineissa |
+| Parinmuodostus | Fotoni muuttuu ytimen lähellä elektroniksi ja positroniksi. Energian on oltava vähintään $2m_ec^2 = 1{,}022\,\text{MeV}$ (luku *Standardimalli: perushiukkaset ja vuorovaikutukset*). | suuret energiat ja suuri järjestysluku |
+
+Valosähköisen absorption todennäköisyys pienenee jyrkästi fotonin energian kasvaessa ja kasvaa voimakkaasti alkuaineen järjestysluvun mukana. Vedessä ja pehmytkudoksessa se on yleisin vuorovaikutus vain alle noin $0{,}03\,\text{MeV}$:n energioilla, lyijyssä noin $0{,}5\,\text{MeV}$:iin asti. Comptonin sironta on vedessä yleisin laajalla välillä noin $0{,}03$–$25\,\text{MeV}$, lyijyssä vain välillä noin $0{,}5$–$5\,\text{MeV}$. Suuremmilla energioilla yleisin on parinmuodostus. Siksi lyijy vaimentaa röntgensäteilyä erityisen tehokkaasti, ja luu erottuu röntgenkuvassa pehmytkudoksesta (luku *Säteily lääketieteessä ja teknologiassa*).
+
 ## Esimerkki
 Cesium-137-lähdettä säilytetään lyijysuojassa. Lyijyn puoliintumispaksuus cesium-137:n gammasäteilylle on $5{,}5\,\text{mm}$. Kuinka paksu lyijykerros vaimentaa gammasäteilyn intensiteetin $5{,}0\,\%$:iin?
 
@@ -465,5 +480,6 @@ Toinen virhe on ajatella, että kaksi puoliintumispaksuutta pysäyttää kaiken 
 - Säteily on ionisoivaa, kun sen hiukkanen tai fotoni pystyy irrottamaan atomista elektronin. Fotonille ratkaisee energia $E = hf$: näkyvä valo ei ionisoi, röntgen- ja gammasäteily ionisoivat.
 - Ionisaatio siirtää säteilyn energiaa aineeseen; ilmassa ionipari vie keskimäärin $34\,\text{eV}$, joten ioniparien määrä on $n_\text{i} = \tfrac{E}{W}$.
 - Alfasäteily ionisoi tiheimmin ja pysähtyy paperiin, beetasäteily pysähtyy muutamaan millimetriin alumiinia, ja gammasäteily vaimenee lyijyssä ja betonissa: $I = I_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$.
+- Fotoni vuorovaikuttaa aineen kanssa valosähköisellä absorptiolla (pienet energiat, suuri järjestysluku), Comptonin sironnalla (keskisuuret energiat) tai parinmuodostuksella (yli $1{,}022\,\text{MeV}$, suuret energiat).
 - GM-putki laskee ionisoivia tapahtumia elektronivyöryjen avulla, mutta se ei erota säteilylajeja. Mittaukseen sisältyy aina taustasäteily.
-- Säteily vaurioittaa soluja ionisoimalla DNA:ta suoraan ja veden radikaalien kautta. Alfasäteilijä on vaarallisin elimistön sisällä, koska se luovuttaa energiansa muutaman solun matkalle.
+- Säteily vaurioittaa soluja ionisoimalla DNA:ta suoraan ja veden radikaalien kautta. Alfasäteilijä on erityisen haitallinen elimistön sisällä, koska se luovuttaa energiansa muutaman solun matkalle. Kokonaisriski riippuu myös aineen määrästä, kertymispaikasta ja poistumisesta elimistöstä.

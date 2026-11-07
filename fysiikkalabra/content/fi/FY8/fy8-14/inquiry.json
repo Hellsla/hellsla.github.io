@@ -57,7 +57,7 @@
         {
           "text": "Annihilaatio tapahtui jossain ilmaisimien välisellä janalla, mutta yksi havainto ei kerro, missä kohdassa janaa.",
           "correct": true,
-          "feedback": "Simulaatio tukee tätä: jokaisesta koinsidenssista piirtyy jana kahden ilmaisimen välille, ja janat kulkevat koko kehon poikki. Fotonit lähtevät vastakkaisiin suuntiin, joten lähde on janalla. Kun saapumisaikojen eroa ei mitata, kuten mallissa, yksi havainto ei paljasta kohtaa janalla. Paikka selviää vasta monen janan leikkauskohdista."
+          "feedback": "Simulaatio tukee tätä: jokaisesta koinsidenssista piirtyy jana kahden ilmaisimen välille, ja janat kulkevat koko kehon poikki. Fotonit lähtevät lähes vastakkaisiin suuntiin, joten lähde on janalla tai aivan sen vieressä. Kun saapumisaikojen eroa ei mitata, kuten mallissa, yksi havainto ei paljasta kohtaa janalla. Paikka selviää vasta monen janan leikkauskohdista."
         },
         {
           "text": "Annihilaatio tapahtui tarkalleen ilmaisimien välisen janan keskipisteessä, koska fotonit saapuivat yhtä aikaa.",

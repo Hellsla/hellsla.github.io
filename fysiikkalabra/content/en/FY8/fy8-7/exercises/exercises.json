@@ -133,9 +133,9 @@
           "feedback": "True: a photon produced in stimulated emission has the energy, direction and phase of the incoming photon, so the waves stay in step. The phases of photons produced spontaneously are random."
         },
         {
-          "text": "In a two-level material more atoms can be brought to the upper level than to the lower level when there is enough pumping light.",
+          "text": "In a model with two separate levels more atoms can be brought to the upper level than to the lower level when there is enough pumping light.",
           "true": false,
-          "feedback": "False: here it is thought that the strength of the pumping alone decides. With two levels the pumping light causes stimulated emission in atoms of the upper state as probably as it excites atoms of the ground state, so at most half of the atoms can be brought to the upper state. That is why a laser material has at least three levels."
+          "feedback": "False: here it is thought that the strength of the pumping alone decides. In the two-level model the pumping light causes stimulated emission in atoms of the upper state as probably as it excites atoms of the ground state, so at most half of the atoms can be brought to the upper state. That is why many atomic and ion lasers use three or four levels."
         },
         {
           "text": "Quantum dot A emits light of a longer wavelength than quantum dot B made of the same material.",
@@ -171,7 +171,8 @@
     {
       "id": "fy8-7-L2-03",
       "level": 2,
-      "text": "A quantum dot with a diameter of $6.0\\,\\text{nm}$ emits light with the wavelength $620\\,\\text{nm}$. The photon energy of a smaller quantum dot made of the same material is $0.35\\,\\text{eV}$ greater. Calculate the wavelength of the light of the smaller dot in nanometres ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "core": false,
+      "text": "Enrichment task.\n\nA quantum dot with a diameter of $6.0\\,\\text{nm}$ emits light with the wavelength $620\\,\\text{nm}$. The photon energy of a smaller quantum dot made of the same material is $0.35\\,\\text{eV}$ greater. Calculate the wavelength of the light of the smaller dot in nanometres ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$).",
       "answer": 528,
       "unit": "nm",
       "tolerance": 0.02
@@ -187,12 +188,12 @@
     {
       "id": "fy8-7-L2-05",
       "level": 2,
-      "core": true,
+      "core": false,
       "kind": [
         "data",
         "reasoning"
       ],
-      "text": "Example data: the diameter $d$ of quantum dots made of the same semiconductor has been measured with an electron microscope, and the wavelength $\\lambda$ of the light they emit with a spectrometer. The table has the results for five dots.\n\nAssume that the energy of the photon is equal to the energy gap of the dot.\n\na) Calculate the energy of the photon of each dot in electronvolts ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$).\n\nb) On the basis of the table, deduce how the energy gap depends on the size of the dot. Is the energy gap directly proportional to the size of the dot?\n\nc) How much greater is the energy gap of the smallest dot than that of the largest dot?\n\nEnter the result of part c) in the answer box.",
+      "text": "Enrichment task.\n\nExample data: the diameter $d$ of quantum dots made of the same semiconductor has been measured with an electron microscope, and the wavelength $\\lambda$ of the light they emit with a spectrometer. The table has the results for five dots.\n\nAssume that the energy of the photon is equal to the energy gap of the dot.\n\na) Calculate the energy of the photon of each dot in electronvolts ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$).\n\nb) On the basis of the table, deduce how the energy gap depends on the size of the dot. Is the energy gap directly proportional to the size of the dot?\n\nc) How much greater is the energy gap of the smallest dot than that of the largest dot?\n\nEnter the result of part c) in the answer box.",
       "answer": 0.54,
       "unit": "eV",
       "tolerance": 0.04,
@@ -271,6 +272,7 @@
     {
       "id": "fy8-7-L2-07",
       "level": 2,
+      "core": true,
       "text": "A student claims: “After stimulated emission in a laser there are two photons, although before there was only one. So the laser increases the energy of the light out of nothing.” What is wrong in the student’s reasoning?",
       "kind": [
         "error",

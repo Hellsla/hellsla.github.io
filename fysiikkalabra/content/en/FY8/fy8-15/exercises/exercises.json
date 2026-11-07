@@ -75,6 +75,7 @@
     {
       "id": "fy8-15-L1-07",
       "level": 1,
+      "core": true,
       "text": "The positron $e^+$ is the antiparticle of the electron $e^-$. Which of the following is true of the positron?",
       "kind": [
         "concept"
@@ -105,6 +106,7 @@
     {
       "id": "fy8-15-L1-08",
       "level": 1,
+      "core": true,
       "text": "The kaon $K^+$ is a meson made of a $u$ quark and an $\\bar{s}$ antiquark. Calculate its charge as a multiple of the elementary charge $e$. Quark charges: $u$ ($+\\tfrac{2}{3}e$), $d$ and $s$ ($-\\tfrac{1}{3}e$); the charge of an antiquark is opposite.",
       "kind": [
         "concept"
@@ -238,12 +240,12 @@
     {
       "id": "fy8-15-L2-06",
       "level": 2,
-      "core": true,
+      "core": false,
       "kind": [
         "data",
         "reasoning"
       ],
-      "text": "The seven reactions in the table involve real particles, but not all of the reactions are possible (example data). Charge, baryon number and lepton number are conserved in all observed reactions. The lepton number of a neutrino $\\nu$ is $+1$ and that of an antineutrino $\\bar{\\nu}$ is $-1$.\n\nEnergy need not be considered. In how many reactions is one of the three conservation laws violated?",
+      "text": "Extension task.\n\nThe seven reactions in the table involve real particles, but not all of the reactions are possible (example data). Charge, baryon number and lepton number are conserved in all observed reactions. The lepton number of a neutrino $\\nu$ is $+1$ and that of an antineutrino $\\bar{\\nu}$ is $-1$.\n\nEnergy need not be considered. In how many reactions is one of the three conservation laws violated?",
       "answer": 3,
       "unit": "",
       "tolerance": 0.02,
@@ -322,7 +324,8 @@
     {
       "id": "fy8-15-L3-01",
       "level": 3,
-      "text": "The omega baryon $\\Omega^-$ is made of three $s$ quarks, and its mass is $1672.45\\,\\tfrac{\\text{MeV}}{c^2}$. Three reactions are proposed for its decay: (1) $\\Omega^- \\to K^- + \\pi^0$, (2) $\\Omega^- \\to \\Sigma^0 + K^-$ and (3) $\\Omega^- \\to \\Lambda^0 + K^-$.\n\nThe particles: $\\Lambda^0 = u\\,d\\,s$ ($1115.683\\,\\tfrac{\\text{MeV}}{c^2}$), $\\Sigma^0 = u\\,d\\,s$ ($1192.642\\,\\tfrac{\\text{MeV}}{c^2}$), the meson $K^- = s\\,\\bar{u}$ ($493.677\\,\\tfrac{\\text{MeV}}{c^2}$) and the uncharged meson $\\pi^0$ ($134.977\\,\\tfrac{\\text{MeV}}{c^2}$) (Particle Data Group 2024).\n\nUsing the charge, the baryon number and the energy, deduce which of the reactions is possible, and calculate the energy released in it in megaelectronvolts. Quark charges: $u$ ($+\\tfrac{2}{3}e$), $d$ and $s$ ($-\\tfrac{1}{3}e$).",
+      "core": false,
+      "text": "Extension task.\n\nThe omega baryon $\\Omega^-$ is made of three $s$ quarks, and its mass is $1672.45\\,\\tfrac{\\text{MeV}}{c^2}$. Three reactions are proposed for its decay: (1) $\\Omega^- \\to K^- + \\pi^0$, (2) $\\Omega^- \\to \\Sigma^0 + K^-$ and (3) $\\Omega^- \\to \\Lambda^0 + K^-$.\n\nThe particles: $\\Lambda^0 = u\\,d\\,s$ ($1115.683\\,\\tfrac{\\text{MeV}}{c^2}$), $\\Sigma^0 = u\\,d\\,s$ ($1192.642\\,\\tfrac{\\text{MeV}}{c^2}$), the meson $K^- = s\\,\\bar{u}$ ($493.677\\,\\tfrac{\\text{MeV}}{c^2}$) and the uncharged meson $\\pi^0$ ($134.977\\,\\tfrac{\\text{MeV}}{c^2}$) (Particle Data Group 2024).\n\nUsing the charge, the baryon number and the energy, deduce which of the reactions is possible, and calculate the energy released in it in megaelectronvolts. Quark charges: $u$ ($+\\tfrac{2}{3}e$), $d$ and $s$ ($-\\tfrac{1}{3}e$).",
       "answer": 63.09,
       "unit": "MeV",
       "tolerance": 0.005
@@ -338,7 +341,8 @@
     {
       "id": "fy8-15-L3-03",
       "level": 3,
-      "text": "Antineutrinos were first observed in 1956 next to a nuclear reactor by the reaction $\\bar{\\nu}_e + p \\to n + X$. Deduce from the conservation of charge, baryon number and lepton number which particle $X$ is. What is the lepton number $L$ of the particle $X$?",
+      "core": false,
+      "text": "Extension task.\n\nAntineutrinos were first observed in 1956 next to a nuclear reactor by the reaction $\\bar{\\nu}_e + p \\to n + X$. Deduce from the conservation of charge, baryon number and lepton number which particle $X$ is. What is the lepton number $L$ of the particle $X$?",
       "answer": -1,
       "unit": "",
       "tolerance": 0.02
@@ -387,12 +391,13 @@
     {
       "id": "fy8-15-L3-05",
       "level": 3,
+      "core": false,
       "kind": [
         "data",
         "experiment",
         "model"
       ],
-      "text": "In a bubble chamber picture (an imaginary measurement, described in words) a negative pion $\\pi^-$ hits a hydrogen nucleus, that is a proton $p$. No track leaves the collision point.\n\nA little further away, at two different places, a V-shaped pair of tracks starts: at place 1 the pair is a proton and a negative pion, at place 2 a positive and a negative pion. In both pairs the tracks curve in opposite directions in the magnetic field of the chamber.\n\nThe researcher’s interpretation is that the collision produced two uncharged particles, $\\Lambda^0$ and $K^0$, which decayed at the tips of the V.\n\nThe quark composition and the masses of the particles are in the table.\n\na) Show that the reaction $\\pi^- + p \\to \\Lambda^0 + K^0$ conserves charge and baryon number and that the net numbers of the $u$, $d$ and $s$ quarks are the same on both sides of the reaction. An antiquark reduces the net number by one.\n\nb) Calculate the energy released when $K^0$ decays by the reaction $K^0 \\to \\pi^+ + \\pi^-$. Answer in megaelectronvolts.\n\nc) Explain why no track leaves the collision point and why the arms of the V curve in opposite directions.\n\nThe answer box takes the result of part b).",
+      "text": "Extension task.\n\nIn a bubble chamber picture (an imaginary measurement, described in words) a negative pion $\\pi^-$ hits a hydrogen nucleus, that is a proton $p$. No track leaves the collision point.\n\nA little further away, at two different places, a V-shaped pair of tracks starts: at place 1 the pair is a proton and a negative pion, at place 2 a positive and a negative pion. In both pairs the tracks curve in opposite directions in the magnetic field of the chamber.\n\nThe researcher’s interpretation is that the collision produced two uncharged particles, $\\Lambda^0$ and $K^0$, which decayed at the tips of the V.\n\nThe quark composition and the masses of the particles are in the table.\n\na) Show that the reaction $\\pi^- + p \\to \\Lambda^0 + K^0$ conserves charge and baryon number and that the net numbers of the $u$, $d$ and $s$ quarks are the same on both sides of the reaction. An antiquark reduces the net number by one.\n\nb) Calculate the energy released when $K^0$ decays by the reaction $K^0 \\to \\pi^+ + \\pi^-$. Answer in megaelectronvolts.\n\nc) Explain why no track leaves the collision point and why the arms of the V curve in opposite directions.\n\nThe answer box takes the result of part b).",
       "answer": 218.5,
       "unit": "MeV",
       "tolerance": 0.005,

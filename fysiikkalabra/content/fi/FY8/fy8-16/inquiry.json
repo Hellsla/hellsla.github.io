@@ -1,9 +1,9 @@
 {
   "version": 1,
-  "contribution": "Kosmologia kvanttifysiikan ja ydinfysiikan sovelluksena: galaksien punasiirtymä $z = \\tfrac{\\Delta\\lambda}{\\lambda_0}$ vedyn tutuista spektriviivoista, pienen punasiirtymän nopeus $v = cz$, Hubblen ja Lemaîtren laki $v = H_0\\,d$, jonka opiskelija sovittaa itse simulaation galakseihin, iän arvio $\\tfrac{1}{H_0}$, kosminen taustasäteily atomien synnyn seurauksena, alkuräjähdyksen ytimet ja heliumin osuus fuusiosta, tähtien alkuaineet sidosenergiakäyrän avulla sekä pimeä aine ja pimeä energia avoimina kysymyksinä.",
+  "contribution": "Kosmologia kvanttifysiikan ja ydinfysiikan sovelluksena: galaksien punasiirtymä $z = \\tfrac{\\Delta\\lambda}{\\lambda_0}$ vedyn tutuista spektriviivoista, pienen punasiirtymän nopeus $v = cz$, Hubblen ja Lemaîtren laki $v = H_0\\,d$, jonka opiskelija sovittaa itse simulaation galakseihin, syventävänä iän arvio $\\tfrac{1}{H_0}$, kosminen taustasäteily atomien synnyn seurauksena, alkuräjähdyksen ytimet ja heliumin osuus fuusiosta, tähtien alkuaineet sidosenergiakäyrän avulla sekä pimeä aine ja pimeä energia avoimina kysymyksinä.",
   "learn": [
     "laskemaan galaksin punasiirtymän, etääntymisnopeuden ja etäisyyden Hubblen ja Lemaîtren lailla.",
-    "arvioimaan maailmankaikkeuden iän Hubblen vakiosta ja selittämään, mitä taustasäteily kertoo varhaisesta maailmankaikkeudesta.",
+    "selittämään, mitä galaksien punasiirtymä ja kosminen taustasäteily kertovat varhaisesta maailmankaikkeudesta.",
     "selittämään, missä vaiheissa vety, helium ja raskaammat alkuaineet syntyivät."
   ],
   "prior": [
@@ -195,12 +195,12 @@
       "after": [
         "koe-1"
       ],
-      "prompt": "Kirjoita taulukkosi ja kuvaajan perusteella: Miten galaksin nopeus riippuu sen etäisyydestä? Miksi pisteet eivät ole täsmälleen suoralla? Mitä sovittamasi suoran kulmakerroin $H_0$ ja aika $\\tfrac{1}{H_0}$ kertovat maailmankaikkeudesta?",
-      "model": "Mallin arvoina nopeus kasvaa suoraan verrannollisesti etäisyyteen: galaksi 2 ($45\\,\\text{Mpc}$) loittonee $2840\\,\\text{km/s}$, galaksi 4 ($110\\,\\text{Mpc}$) $7560\\,\\text{km/s}$ ja galaksi 8 ($275\\,\\text{Mpc}$) $19\\,030\\,\\text{km/s}$. Pisteet ovat lähellä origon kautta kulkevaa suoraa $v = H_0\\,d$, jonka kulmakerroin on noin $70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$. Pisteet poikkeavat suorasta muutamia satoja kilometrejä sekunnissa, koska galakseilla on myös omaa liikettään; kaukaisilla galakseilla se on pieni verrattuna laajenemisnopeuteen. Suhteellisuus tarkoittaa, että kaikki etäisyydet kasvavat samassa suhteessa eli avaruus laajenee. Jos laajenemisnopeus olisi pysynyt samana, kaikki galaksit olisivat olleet samassa paikassa ajan $\\tfrac{1}{H_0} \\approx 14$ miljardia vuotta sitten.",
+      "prompt": "Kirjoita taulukkosi ja kuvaajan perusteella: Miten galaksin nopeus riippuu sen etäisyydestä? Miksi pisteet eivät ole täsmälleen suoralla? Mitä sovittamasi suoran kulmakerroin $H_0$ kertoo maailmankaikkeudesta?",
+      "model": "Mallin arvoina nopeus kasvaa suoraan verrannollisesti etäisyyteen: galaksi 2 ($45\\,\\text{Mpc}$) loittonee $2840\\,\\text{km/s}$, galaksi 4 ($110\\,\\text{Mpc}$) $7560\\,\\text{km/s}$ ja galaksi 8 ($275\\,\\text{Mpc}$) $19\\,030\\,\\text{km/s}$. Pisteet ovat lähellä origon kautta kulkevaa suoraa $v = H_0\\,d$, jonka kulmakerroin on noin $70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$. Pisteet poikkeavat suorasta muutamia satoja kilometrejä sekunnissa, koska galakseilla on myös omaa liikettään; kaukaisilla galakseilla se on pieni verrattuna laajenemisnopeuteen. Suhteellisuus tarkoittaa, että kaikki etäisyydet kasvavat samassa suhteessa eli avaruus laajenee. Syventävä lisähuomio: jos laajenemisnopeus olisi pysynyt samana, kaikki galaksit olisivat olleet samassa paikassa ajan $\\tfrac{1}{H_0} \\approx 14$ miljardia vuotta sitten.",
       "criteria": [
         "Kuvaan mallin arvoilla, että nopeus on suoraan verrannollinen etäisyyteen ja pisteet ovat lähellä origon kautta kulkevaa suoraa.",
         "Selitän pisteiden hajonnan galaksien omalla liikkeellä.",
-        "Annan sovitukseni kulmakertoimen yksikön kanssa ja tulkitsen ajan $\\tfrac{1}{H_0}$ maailmankaikkeuden iän arvioksi.",
+        "Annan sovitukseni kulmakertoimen yksikön kanssa.",
         "Kutsun simulaation lukuja mallin arvoiksi enkä omiksi mittauksiksi."
       ]
     },
@@ -237,7 +237,7 @@
       "id": "virhe",
       "stage": "sovella",
       "type": "choice",
-      "title": "Etsi virhe",
+      "title": "Syventävä: etsi virhe",
       "optional": true,
       "prompt": "Opiskelija arvioi maailmankaikkeuden iän, kun $H_0 = 70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$. Hän sijoittaa $1\\,\\text{Mpc} = 3{,}086 \\cdot 10^{22}\\,\\text{m}$ ja kirjoittaa\n\n$$\\begin{aligned} &t = \\frac{1}{H_0} = \\frac{3{,}086 \\cdot 10^{22}}{70}\\,\\text{s} \\\\ &= 4{,}4 \\cdot 10^{20}\\,\\text{s} \\\\ &\\approx 1{,}4 \\cdot 10^{13}\\,\\text{a} \\end{aligned}$$\n\nTulos on tuhat kertaa liian suuri. Missä on virhe?",
       "choices": [
@@ -310,7 +310,7 @@
         },
         {
           "text": "Säteily menettää energiaa törmäillessään matkalla galaksien välisiin kaasupilviin.",
-          "feedback": "Maailmankaikkeus muuttui läpinäkyväksi juuri silloin, kun atomit syntyivät, joten säteily on kulkenut lähes törmäilemättä. Aallonpituudet ovat kasvaneet, koska avaruus laajenee ja venyttää niitä."
+          "feedback": "Kun atomit syntyivät, vapaita elektroneja, joista fotonit olivat sironneet, jäi hyvin vähän. Siksi säteily on kulkenut sen jälkeen lähes törmäilemättä. Aallonpituudet ovat kasvaneet, koska avaruus laajenee ja venyttää niitä."
         },
         {
           "text": "Säteilyä lähettää nyt kylmä pöly, joka on jäähtynyt lähelle absoluuttista nollapistettä.",

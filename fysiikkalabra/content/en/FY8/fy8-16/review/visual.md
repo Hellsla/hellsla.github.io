@@ -1,9 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: c24c2893c80418f6
+CONTENT-HASH: ca56c2669ef19f3d
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-- batch delta review: hubble-deep-field photo opened; alt matches (black sky, small galaxies of various colours); caption correct and tied to redshift and expansion; floats beside the Redshift section at 1280 px, 390 px float none, no overflow.
+- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.

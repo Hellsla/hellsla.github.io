@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 2e9a0fdb210a1299
+CONTENT-HASH: bce70f1717c48c57
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- lesson.md Tiivistelmä ("Antihiukkasella on sama massa ja vastakkainen varaus") — omits opposite B and L that the theory states — add "sekä vastakkaiset baryoni- ja leptoniluvut".
+- A short note on sphalerons (B and L not separately conserved at extreme energies) could be added later as enrichment.
 
 ## Checked
-- Interaction bullet list: gluon/quarks, photon/charged particles, W+ W- Z0/quarks and leptons, graviton (hypothetical)/all; same content as the table, physics right.
-- Ranges (unlimited EM and gravity, strong ~1e-15 m, weak ~1e-18 m, orders of magnitude) and the gravity/electric ratio ~1e36 right.
-- Q = 0,782 MeV, pair threshold 1,022 MeV, 2 x 511 keV, m_mu/m_e = 207, proton stability argument right; graviton said once as unobserved.
-- Rest of lesson unchanged since the last PASS.
+- Word-level diff since origin/main of this part checked for physics: values, units and significant figures, definitions (gamma decay, beta atomic masses, Hubble time, w_R and effective dose scope, conservation of B and L, photon interactions, ITER and Onkalo facts), worked solutions recomputed where numbers changed; formulas identical across languages (check_i18n).

@@ -1,16 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: a62399de6badd7f8
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 959b5037fa5f1543
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- fy8-12-L3-06 solution is long (about 280 words); acceptable for a level 3 data task. Interaction shares are rounded estimates from NIST XCOM attenuation coefficients.
 
 ## Checked
-- fy8-12-L1-09: Level 1 ordering task needing d/d_half for five shields; no shield wins on thickness or material alone (lead is not best), so the task tests the concept; the ordering has a prompt line. fi-easy explains half-value thickness inside the task text.
-- Level and kind identical to fi; a mixture of levels per the rubric remains.
-- fi-easy keeps the same numbers and physics as fi; sentences shorter and plainer (NOTES.md §12).
-- Solution is followable step by step and mirrors fi.
+- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.

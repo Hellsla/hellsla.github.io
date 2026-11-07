@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 597fba53fb1259de
+CONTENT-HASH: 6af98f1726791313
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] atlas-detector is a tall portrait photo, only 117 px wide in its 320 px box, so details are small; a lighter crop would read better.
-- [Minor] The ATLAS photo, placed after the LHC paragraph, floats beside the 'Conservation laws' formula section, away from the CERN text; consider placing it before the LHC paragraph.
+- none
 
 ## Checked
-- batch delta review: cms-detector and atlas-detector photos opened; alts match (cables and plates, visitors in orange helmets; tall hall with curved structures, blue cylinder); captions correct ($46\,\text{m}$, $25\,\text{m}$ in LaTeX); no overflow at 1280 or 390 px.
+- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.

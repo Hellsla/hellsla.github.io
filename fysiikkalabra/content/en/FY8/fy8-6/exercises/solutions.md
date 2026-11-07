@@ -41,7 +41,7 @@
 ## fy8-6-L1-05
 **Given:** slope of the fitted line $k = 4.10 \cdot 10^{-15}\,\text{V}\,\text{s}$, elementary charge $e = 1.602 \cdot 10^{-19}\,\text{C}$
 **Asked:** the Planck constant $h$ in the unit $\text{J}\,\text{s}$
-**Principle:** At the threshold voltage the energy received by an electron is approximately the energy of a photon, $eU_\text{k} = hf$. So the threshold voltage is a line with respect to the frequency, $U_\text{k} = \tfrac{h}{e} f$, whose slope is $\tfrac{h}{e}$.
+**Principle:** At the threshold voltage the energy received by an electron is approximately the energy of a photon, $eU_\text{k} \approx hf$. So the threshold voltage is approximately a line with respect to the frequency, $U_\text{k} \approx \tfrac{h}{e} f$, whose slope in the model is about $\tfrac{h}{e}$.
 **Formula:** $k = \dfrac{h}{e}$, so $h = ek$
 **Conversions:** None are needed: $\text{C} \cdot \text{V}\,\text{s} = \text{J}\,\text{s}$, because $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$.
 **Substitution:** $h = 1.602 \cdot 10^{-19}\,\text{C} \cdot 4.10 \cdot 10^{-15}\,\text{V}\,\text{s} = 6.568 \cdot 10^{-34}\,\text{J}\,\text{s}$
@@ -91,7 +91,7 @@
 ## fy8-6-L3-01
 **Given:** the peak wavelengths and threshold voltages of four LEDs: $625\,\text{nm}$ and $1.86\,\text{V}$, $590\,\text{nm}$ and $1.97\,\text{V}$, $520\,\text{nm}$ and $2.27\,\text{V}$, $465\,\text{nm}$ and $2.55\,\text{V}$; $c = 2.998 \cdot 10^8\,\text{m/s}$, $e = 1.602 \cdot 10^{-19}\,\text{C}$
 **Asked:** the Planck constant $h$ in the unit $\text{J}\,\text{s}$
-**Principle:** At the threshold voltage $eU_\text{k} \approx hf$, so the points $(f, U_\text{k})$ are approximately on a line whose slope is $\tfrac{h}{e}$. The points are usually not exactly on the same line because of measurement uncertainty, so the line is fitted to all the points. An almost equal deviation for all the LEDs shifts the line but does not change the slope.
+**Principle:** At the threshold voltage $eU_\text{k} \approx hf$, so the points $(f, U_\text{k})$ are approximately on a line whose slope in the model is about $\tfrac{h}{e}$. The points are usually not exactly on the same line because of measurement uncertainty, so the line is fitted to all the points. If the deviation is almost the same for all the LEDs, it mainly shifts the line and hardly changes the slope.
 **Reading the graph:** When the frequencies are calculated and the line is fitted in Graphical Analysis Pro with the choices **Curve Fit** and **Linear**, the result box shows $m = 4.212 \cdot 10^{-15}\,\tfrac{\text{V}}{\text{Hz}}$ and $b = -0.164\,\text{V}$.
 **Formula:** $f = \dfrac{c}{\lambda}$ and $k = \dfrac{h}{e}$, so $h = ek$
 **Conversions:** wavelengths to metres, for example $625\,\text{nm} = 625 \cdot 10^{-9}\,\text{m}$; $\tfrac{\text{V}}{\text{Hz}} = \text{V}\,\text{s}$
@@ -179,7 +179,7 @@
 
 ## fy8-6-L2-08
 **Find:** which conclusion from the data of the five LEDs is justified.
-**Principle:** At the threshold voltage the energy gained by an electron is approximately the energy of a photon, $eU_\text{k} \approx hf$, so the slope of the graph $(f, U_\text{k})$ is $k = \tfrac{h}{e}$ and the Planck constant is $h = ek$. The uncertainty of the slope transfers to the Planck constant with the same factor, $\Delta h = e\,\Delta k$. The result agrees with the accepted value if the accepted value is between $h - \Delta h$ and $h + \Delta h$.
+**Principle:** At the threshold voltage the energy gained by an electron is approximately the energy of a photon, $eU_\text{k} \approx hf$, so in the model the slope of the graph $(f, U_\text{k})$ is $k \approx \tfrac{h}{e}$ and the estimate of the Planck constant is $h \approx ek$. The uncertainty of the slope transfers to the Planck constant with the same factor, $\Delta h = e\,\Delta k$. The result agrees with the accepted value if the accepted value is between $h - \Delta h$ and $h + \Delta h$.
 **Model answer:** The Planck constant and its uncertainty:
 
 $$\begin{aligned}
@@ -216,12 +216,12 @@ $$\begin{aligned}
 
 and the measured $1.85\,\text{V}$ differs from it by less than the measurement uncertainty $0.05\,\text{V}$.
 
-The other conclusions are not justified. The line does not have to pass through the origin, because the measured threshold voltage differs from the value $\tfrac{hf}{e}$ by about the same amount for all LEDs; the difference shifts the line but does not change the slope. A systematic error cannot be concluded, because the difference $0.25 \cdot 10^{-34}\,\text{J}\,\text{s}$ is within the uncertainty $0.34 \cdot 10^{-34}\,\text{J}\,\text{s}$. Nor can the difference be compared directly with the uncertainty $\Delta k$ of the slope, because it has a different unit; the comparison is made with the uncertainty of the Planck constant, $\Delta h = e\,\Delta k$.
+The other conclusions are not justified. The line does not have to pass through the origin, because the measured threshold voltage differs from the value $\tfrac{hf}{e}$; when the difference is about the same for all LEDs, it mainly shifts the line and hardly changes the slope. A systematic error cannot be concluded, because the difference $0.25 \cdot 10^{-34}\,\text{J}\,\text{s}$ is within the uncertainty $0.34 \cdot 10^{-34}\,\text{J}\,\text{s}$. Nor can the difference be compared directly with the uncertainty $\Delta k$ of the slope, because it has a different unit; the comparison is made with the uncertainty of the Planck constant, $\Delta h = e\,\Delta k$.
 
 ## fy8-6-L3-04
 **Given:** the wavelengths and measured voltages of five LEDs from the table, zero-point error $+0.05\,\text{V}$, $c = 2.998 \cdot 10^8\,\text{m/s}$, $e = 1.602 \cdot 10^{-19}\,\text{C}$, accepted $h_0 = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$
 **Find:** the Planck constant $h$ from the slope of the line in the unit $\text{J}\,\text{s}$, and the effect of the correction on the line and on the result of a single LED
-**Principle:** At the threshold voltage $eU_\text{k} \approx hf$, so $U_\text{k}$ is a straight line with respect to the frequency, with the slope $\tfrac{h}{e}$. The zero-point error of the meter adds the same constant $0.05\,\text{V}$ to every voltage. Adding a constant shifts the line upwards but does not change its slope, so the error shows in the intercept.
+**Principle:** At the threshold voltage $eU_\text{k} \approx hf$, so $U_\text{k}$ is approximately a straight line with respect to the frequency, with the slope about $\tfrac{h}{e}$ in the model. The zero-point error of the meter adds the same constant $0.05\,\text{V}$ to every voltage. Adding a constant shifts the line upwards but does not change its slope, so the error shows in the intercept.
 **Reading the graph:** The frequencies are $4.759$, $5.081$, $5.260$, $5.710$ and $6.447$ in the unit $10^{14}\,\text{Hz}$. A fit to all five measured points gives the slope $m = 4.208 \cdot 10^{-15}\,\text{V}\,\text{s}$ and the intercept $b = -0.062\,\text{V}$. A fit to the corrected voltages $U = U_\text{measured} - 0.05\,\text{V}$ gives the same slope $4.208 \cdot 10^{-15}\,\text{V}\,\text{s}$ and the intercept $-0.112\,\text{V}$.
 **Formula:** $f = \dfrac{c}{\lambda}$, $k = \dfrac{h}{e}$, so $h = ek$. The formula for a single LED is $h = \dfrac{eU_\text{k}\lambda}{c}$.
 **Conversions:** $\lambda = 630 \cdot 10^{-9}\,\text{m}$ etc.; $\tfrac{\text{V}}{\text{Hz}} = \text{V}\,\text{s}$ and $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$
@@ -230,7 +230,7 @@ The other conclusions are not justified. The line does not have to pass through 
 
 Justification for the slope: the zero-point error is a constant, so the slope does not depend on it, and the $h$ given by the line is the same before and after the correction. The $h$ of a single LED, on the other hand, changes: the zero-point error $0.05\,\text{V}$ is about $2.6\,\%$ of the voltage $1.93\,\text{V}$, and the result for the red LED changes by the same amount.
 
-Even the corrected value of a single LED is $4.5\,\%$ too small, because the measured threshold voltage is usually slightly smaller than $\tfrac{hf}{e}$; the corrected intercept $-0.112\,\text{V}$ shows this difference of about $0.1\,\text{V}$. The line removes the effect of this difference from the slope, so the Planck constant is determined from the slope and not from a single LED.
+Even the corrected value of a single LED is $4.5\,\%$ too small, because the measured threshold voltage is usually slightly smaller than $\tfrac{hf}{e}$; the corrected intercept $-0.112\,\text{V}$ shows this difference of about $0.1\,\text{V}$. When the difference is almost the same for all the LEDs, fitting the line removes most of its effect on the slope, so the Planck constant is determined from the slope and not from a single LED.
 **Reasonableness:** From the outermost points $(2.64\,\text{V} - 1.93\,\text{V}) : (6.447 \cdot 10^{14}\,\text{Hz} - 4.759 \cdot 10^{14}\,\text{Hz}) = 4.21 \cdot 10^{-15}\,\text{V}\,\text{s}$, the same as the slope of the fit. The corrected intercept $-0.11\,\text{V}$ is of the same order of magnitude as the difference of about $0.1\,\text{V}$ mentioned in the chapter.
 
 ## fy8-6-L3-05

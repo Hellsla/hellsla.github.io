@@ -184,11 +184,20 @@
      "kind": "calc",
      "points": 4,
      "text": "Kuinka monta kilogrammaa plutonium-238:aa generaattorissa on oltava, jotta sen lämpöteho on $2000\\,\\text{W}$? Kuinka suuri osa generaattorin plutoniumista on silloin plutonium-238:aa? Oletetaan, että hajoamisen koko energia muuttuu generaattorissa lämmöksi.",
-     "answer": {
-      "value": 3.5,
-      "unit": "kg",
-      "tolerance": 0.03
-     },
+     "answer": [
+      {
+       "name": "m",
+       "value": 3.5,
+       "unit": "kg",
+       "tolerance": 0.03
+      },
+      {
+       "name": "share",
+       "value": 83,
+       "unit": "%",
+       "tolerance": 0.03
+      }
+     ],
      "criteria": [
       {
        "text": "Perustelee, että aktiivisuus on teho jaettuna yhden hajoamisen energialla, $A = \\dfrac{P}{Q} \\approx 2{,}2 \\cdot 10^{15}\\,\\text{Bq}$, kun $Q$ on muunnettu jouleiksi.",
@@ -245,11 +254,20 @@
      "kind": "calc",
      "points": 4,
      "text": "Kuinka suuri on generaattorin lämpöteho $14$ vuotta laukaisun jälkeen? Kuinka suuri sähköteho olisi, jos generaattorin hyötysuhde pysyisi samana? NASA:n mukaan todellinen sähköteho on pienentynyt nopeammin. Mistä se voi johtua?",
-     "answer": {
-      "value": 1790,
-      "unit": "W",
-      "tolerance": 0.01
-     },
+     "answer": [
+      {
+       "name": "P",
+       "value": 1790,
+       "unit": "W",
+       "tolerance": 0.01
+      },
+      {
+       "name": "Pel",
+       "value": 98,
+       "unit": "W",
+       "tolerance": 0.02
+      }
+     ],
      "criteria": [
       {
        "text": "Perustelee, että lämpöteho on verrannollinen aktiivisuuteen ja siten hajoamattomien ytimien määrään, joten se pienenee hajoamislain mukaan: $P = P_0 \\left(\\tfrac{1}{2}\\right)^{t / T_{1/2}}$.",
@@ -277,7 +295,7 @@
      "id": "e",
      "kind": "calc",
      "points": 4,
-     "text": "Plutonium-238 on vaarallisinta, jos sitä joutuu elimistöön. Oletetaan, että laukaisuonnettomuudessa ihmisen keuhkoihin jäisi plutoniumdioksidipölyä, jonka aktiivisuus on $10\\,\\text{Bq}$, ja että pöly pysyisi keuhkoissa koko vuoden. Keuhkojen massa on $1{,}2\\,\\text{kg}$, alfasäteilyn painotuskerroin on $20$ ja keuhkojen kudoksen painotuskerroin $0{,}12$. Kuinka suuri efektiivinen annos tästä aiheutuisi vuodessa? Vertaa tulosta suomalaisen keskimääräiseen vuosiannokseen $5{,}9\\,\\text{mSv}$.",
+     "text": "Plutonium-238:n alfasäteily on erityisen haitallista, jos ainetta joutuu elimistöön. Oletetaan, että laukaisuonnettomuudessa ihmisen keuhkoihin jäisi plutoniumdioksidipölyä, jonka aktiivisuus on $10\\,\\text{Bq}$, ja että pöly pysyisi keuhkoissa koko vuoden. Keuhkojen massa on $1{,}2\\,\\text{kg}$, alfasäteilyn painotuskerroin on $20$ ja keuhkojen kudoksen painotuskerroin $0{,}12$. Kuinka suuri efektiivinen annos tästä aiheutuisi vuodessa? Vertaa tulosta suomalaisen keskimääräiseen vuosiannokseen $5{,}9\\,\\text{mSv}$.",
      "answer": {
       "value": 0.57,
       "unit": "mSv",
@@ -319,7 +337,7 @@
    "title": "Koulun cesiumlähde",
    "source": "example",
    "source_note": "Pulssimäärät on laskettu mallista ja niihin on lisätty satunnaisvaihtelua mittauksen tapaan; ne eivät ole oikean mittauksen tuloksia. Ulkoilman taustasäteilyn annosnopeus: STUK (2026).",
-   "text": "Lukion fysiikan luokassa on suljettu cesium-137-säteilylähde. Opiskelijat asettivat lähteen GM-putken eteen ja laskivat pulssit $1{,}0\\,\\text{min}$:n ajan eri etäisyyksillä $r$. Etäisyys mitattiin lähteestä putken ikkunaan millimetriasteikolla. Ennen mittausta he mittasivat taustasäteilyä ilman lähdettä ja saivat $112$ pulssia $5{,}0\\,\\text{min}$:ssa.\n\n| $r\\ (\\text{cm})$ | pulsseja $1{,}0\\,\\text{min}$:ssa |\n|---|---|\n| $2{,}0$ | $3048$ |\n| $3{,}0$ | $1806$ |\n| $4{,}0$ | $1172$ |\n| $5{,}0$ | $790$ |\n| $6{,}0$ | $617$ |\n| $8{,}0$ | $405$ |\n| $10{,}0$ | $256$ |\n| $14{,}0$ | $152$ |\n| $20{,}0$ | $94$ |\n\nRadioaktiivinen hajoaminen on satunnaista. Kun pulsseja lasketaan $N$, niiden määrän satunnaisvaihtelu on noin $\\sqrt{N}$.",
+   "text": "Lukion fysiikan luokassa on suljettu cesium-137-säteilylähde. Opiskelijat asettivat lähteen opettajan valvonnassa pihdeillä GM-putken eteen ja laskivat pulssit $1{,}0\\,\\text{min}$:n ajan eri etäisyyksillä $r$. Etäisyys mitattiin lähteestä putken ikkunaan millimetriasteikolla. Ennen mittausta he mittasivat taustasäteilyä ilman lähdettä ja saivat $112$ pulssia $5{,}0\\,\\text{min}$:ssa.\n\n| $r\\ (\\text{cm})$ | pulsseja $1{,}0\\,\\text{min}$:ssa |\n|---|---|\n| $2{,}0$ | $3048$ |\n| $3{,}0$ | $1806$ |\n| $4{,}0$ | $1172$ |\n| $5{,}0$ | $790$ |\n| $6{,}0$ | $617$ |\n| $8{,}0$ | $405$ |\n| $10{,}0$ | $256$ |\n| $14{,}0$ | $152$ |\n| $20{,}0$ | $94$ |\n\nRadioaktiivinen hajoaminen on satunnaista. Kun pulsseja lasketaan $N$, niiden määrän satunnaisvaihtelu on noin $\\sqrt{N}$.",
    "parts": [
     {
      "id": "a",

@@ -57,7 +57,7 @@
         {
           "text": "The annihilation happened somewhere on the line segment between the detectors, but a single detection does not tell where on the segment.",
           "correct": true,
-          "feedback": "The simulation supports this: every coincidence draws a line segment between two detectors, and the segments cross the whole body. The photons leave in opposite directions, so the source is on the segment. When the difference in arrival times is not measured, as in the model, a single detection does not reveal the place on the segment. The place becomes clear only from the intersections of many segments."
+          "feedback": "The simulation supports this: every coincidence draws a line segment between two detectors, and the segments cross the whole body. The photons leave in nearly opposite directions, so the source is on the segment or very close to it. When the difference in arrival times is not measured, as in the model, a single detection does not reveal the place on the segment. The place becomes clear only from the intersections of many segments."
         },
         {
           "text": "The annihilation happened exactly at the midpoint of the segment between the detectors, because the photons arrived at the same time.",

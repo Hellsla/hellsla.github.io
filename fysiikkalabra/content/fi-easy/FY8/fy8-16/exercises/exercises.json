@@ -104,7 +104,7 @@
         },
         {
           "text": "Se on säteilyä, joka vapautui atomien syntyessä, ja laajeneminen on venyttänyt sen mikroaalloiksi.",
-          "feedback": "Oikein. Noin $380\\,000$ vuotta alkuräjähdyksen jälkeen atomit syntyivät ja maailmankaikkeus muuttui läpinäkyväksi. Silloin vapautunut säteily tulee joka suunnasta. Laajeneminen on venyttänyt sen aallonpituuden mikroaalloiksi.",
+          "feedback": "Oikein. Noin $380\\,000$ vuotta alkuräjähdyksen jälkeen atomit syntyivät. Fotoneja sirottavat vapaat elektronit lähes hävisivät, ja maailmankaikkeus muuttui läpinäkyväksi. Silloin vapautunut säteily tulee joka suunnasta. Laajeneminen on venyttänyt sen aallonpituuden mikroaalloiksi.",
           "correct": true
         },
         {
@@ -118,6 +118,7 @@
     {
       "id": "fy8-16-L2-01",
       "level": 2,
+      "core": true,
       "text": "Vedyn $\\text{H}\\alpha$-viivan aallonpituus laboratoriossa on $656{,}3\\,\\text{nm}$. Galaksin spektrissä viiva näkyy aallonpituudella $671{,}0\\,\\text{nm}$. Hubblen vakio on $H_0 = 70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$ ja valon nopeus $c = 2{,}998 \\cdot 10^{5}\\,\\text{km/s}$. Kuinka kaukana galaksi on? Anna vastaus megaparsekeina.",
       "answer": 95.9,
       "unit": "Mpc",
@@ -126,8 +127,8 @@
     {
       "id": "fy8-16-L2-02",
       "level": 2,
-      "core": true,
-      "text": "Planck-satelliitin taustasäteilymittauksista saatu Hubblen vakion arvo on $H_0 = 67{,}4\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$. Arvioi maailmankaikkeuden ikä. Oleta, että laajenemisnopeus on pysynyt samana. Käytä $1\\,\\text{Mpc} = 3{,}086 \\cdot 10^{19}\\,\\text{km}$ ja $1\\,\\text{a} = 3{,}156 \\cdot 10^{7}\\,\\text{s}$. Anna vastaus yksikössä $10^{9}\\,\\text{a}$ eli miljardeina vuosina.",
+      "core": false,
+      "text": "Syventävä tehtävä.\n\nPlanck-satelliitin taustasäteilymittauksista saatu Hubblen vakion arvo on $H_0 = 67{,}4\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$. Arvioi maailmankaikkeuden ikä. Oleta, että laajenemisnopeus on pysynyt samana. Käytä $1\\,\\text{Mpc} = 3{,}086 \\cdot 10^{19}\\,\\text{km}$ ja $1\\,\\text{a} = 3{,}156 \\cdot 10^{7}\\,\\text{s}$. Anna vastaus yksikössä $10^{9}\\,\\text{a}$ eli miljardeina vuosina.",
       "answer": 14.51,
       "unit": "10⁹ a",
       "tolerance": 0.02

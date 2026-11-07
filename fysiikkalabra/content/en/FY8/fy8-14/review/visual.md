@@ -1,9 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: d0815709bc82414d
+CONTENT-HASH: 1ce5bb8ad3c9c515
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-- batch delta review: pet-ct-scanner and linear-accelerator photos opened; alts match (pale green ring and table with white sheet; pale blue room with treatment head over couch); captions correct and tied to PET and radiotherapy; the portrait PET-CT photo is narrow (168 px) but unclipped; fine at 1280 and 390 px.
+- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.

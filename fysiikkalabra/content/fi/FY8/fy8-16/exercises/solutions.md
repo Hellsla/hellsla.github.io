@@ -135,7 +135,7 @@
 
 ## fy8-16-L1-08
 **Kysytty:** mistä kosmisen taustasäteilyn lähes tasainen säteily joka suunnasta on peräisin.
-**Periaate:** Noin $380\,000$ vuotta alkuräjähdyksen jälkeen atomit syntyivät ja maailmankaikkeus muuttui läpinäkyväksi, jolloin säteily pääsi kulkemaan vapaasti. Se tulee joka suunnasta, koska kuuma ja tiheä maailmankaikkeus oli kaikkialla samanlainen. Laajeneminen on sittemmin venyttänyt sen aallonpituudet noin $1100$-kertaisiksi, joten nyt säteily on mikroaaltoja, joiden lämpötila on $2{,}725\,\text{K}$.
+**Periaate:** Noin $380\,000$ vuotta alkuräjähdyksen jälkeen protonit ja elektronit muodostivat atomeja. Fotonit eivät enää sironneet jatkuvasti vapaista elektroneista, joten maailmankaikkeus muuttui läpinäkyväksi ja säteily pääsi kulkemaan vapaasti. Se tulee joka suunnasta, koska kuuma ja tiheä maailmankaikkeus oli kaikkialla samanlainen. Laajeneminen on sittemmin venyttänyt sen aallonpituudet noin $1100$-kertaisiksi, joten nyt säteily on mikroaaltoja, joiden lämpötila on $2{,}725\,\text{K}$.
 **Mallivastaus:** Taustasäteily on säteilyä, joka vapautui atomien syntyessä, ja avaruuden laajeneminen on venyttänyt sen mikroaalloiksi. Se ei ole tähtien ja galaksien valoa, koska ne ovat vain tietyissä suunnissa ja syntyivät vasta taustasäteilyn vapautumisen jälkeen. Se ei myöskään ole pimeän aineen säteilyä, koska pimeä aine ei säteile. Supernovat eivät selitä sitä, koska ne ovat yksittäisiä tapahtumia eivätkä tuota lähes täsmälleen samanlaista säteilyä joka suunnasta.
 
 ## fy8-16-L2-05

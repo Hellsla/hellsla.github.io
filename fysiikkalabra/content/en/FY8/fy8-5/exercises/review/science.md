@@ -1,17 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: cba4f71f0f3aefc0
-Mode: translation
+CONTENT-HASH: ddbe8e2dcd6bbc03
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- fy8-5-L1-09 (en) compared with reviewed fi: same data, same options, same correct option, same answer.
-- Recomputed independently: ordering: E_n = -13.6/n^2 gives B -13.6, D -3.40, A -1.51, C -0.850, E -0.544 eV; energy depends on n only, so order B, D, A, C, E.
-- solutions.md L1-09: principle, symbolic step, substitution, rounding and reasonableness agree with fi; answers.py note agrees.
-- English decimal point used, wording natural English.
-- check_i18n shows nothing for fy8-5; build.py fy8-5 succeeds. No translation edit was needed.
-- Hash cba4f71f0f3aefc0 at start and end.
+- Word-level diff since origin/main of this part checked for physics: values, units and significant figures, definitions (gamma decay, beta atomic masses, Hubble time, w_R and effective dose scope, conservation of B and L, photon interactions, ITER and Onkalo facts), worked solutions recomputed where numbers changed; formulas identical across languages (check_i18n).

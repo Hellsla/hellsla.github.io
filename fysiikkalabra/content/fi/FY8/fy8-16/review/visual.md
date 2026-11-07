@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 3802b9468375e741
+CONTENT-HASH: 9d446cdca4056fff
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] 'yli $13$ miljardia vuotta' on yksikkö sanoina; voisi olla $13\,\text{mrd. vuotta}$ -tyyppinen, mutta ok kuvatekstissä.
+- none
 
 ## Checked
-batch delta review: rendered preview/fy8-16.html at 1280 px and opened the 1 added photo(s) with caption; image files read where alt text needed verification; floats right of the text (x 744-1064 px), no clipping or horizontal overflow at 1280 or 390 px; alt text matches image, captions physically correct and tied to the chapter, LaTeX for numbers with units.
+- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.

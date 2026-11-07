@@ -16,8 +16,8 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "A zinc plate is attached to an electroscope and charged negative, so the leaves of the electroscope are apart. When the plate is illuminated with a small ultraviolet lamp, the leaves drop within seconds: the plate loses electrons. When a bright red lamp that radiates many times more light power is placed in front of the same plate, the leaves stay apart even if the illumination continues for an hour.",
-      "question": "Why does weak ultraviolet light release electrons while strong red light does not, and what does this tell us about the energy of light?"
+      "text": "A zinc plate is attached to an electroscope and charged negative, so the leaves of the electroscope are apart. When the teacher illuminates the plate in shielded apparatus with a small lamp that emits short-wavelength ultraviolet radiation (UV-C), the leaves drop within seconds: the plate loses electrons. When a bright red lamp that radiates many times more light power is placed in front of the same plate, the leaves stay apart even if the illumination continues for an hour.",
+      "question": "Why does weak UV-C radiation release electrons while strong red light does not, and what does this tell us about the energy of light?"
     },
     {
       "id": "kertaus",
@@ -306,7 +306,7 @@
       "type": "reflect",
       "title": "Return to your predictions",
       "optional": true,
-      "prompt": "Compare your predictions with the values of the model in the experiments and with the equation $hf = W + E_\\text{k,max}$. Then return to the opening question: why does weak ultraviolet light discharge a zinc plate while bright red light does not?",
+      "prompt": "Compare your predictions with the values of the model in the experiments and with the equation $hf = W + E_\\text{k,max}$. Then return to the opening question: why does weak UV-C radiation discharge a zinc plate while bright red light does not?",
       "predictions": [
         "ennuste-1",
         "ennuste-2"

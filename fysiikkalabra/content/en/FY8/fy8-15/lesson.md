@@ -323,7 +323,7 @@ The LHC is an underground ring $27\,\text{km}$ long on the border of Switzerland
 ## Formula: Conservation laws in particle reactions
 
 ### Charge, baryon number and lepton number
-Three quantities are conserved in all observed particle reactions and decays. They are added up on each side of the reaction. The **charge** is conserved:
+Particle reactions and decays are examined with the help of three numbers. The numbers are added up on each side of the reaction. The **charge** is conserved in all known phenomena:
 ```latex
 q_\text{initial} = q_\text{final}
 ```
@@ -331,15 +331,15 @@ where $q$ is the sum of the charges of the particles as multiples of the element
 ```latex
 B = \frac{n_\text{q} - n_{\bar{\text{q}}}}{3}
 ```
-where $n_\text{q}$ is the number of quarks and $n_{\bar{\text{q}}}$ the number of antiquarks. So $B$ is $1$ for a baryon, $-1$ for an antibaryon and $0$ for a meson. The baryon number is conserved:
+where $n_\text{q}$ is the number of quarks and $n_{\bar{\text{q}}}$ the number of antiquarks. So $B$ is $1$ for a baryon, $-1$ for an antibaryon and $0$ for a meson. In the ordinary reactions of the Standard Model the baryon number is conserved:
 ```latex
 B_\text{initial} = B_\text{final}
 ```
-The **lepton number** $L$ is $+1$ for a lepton, $-1$ for an antilepton and $0$ for other particles. The lepton number is conserved:
+The **lepton number** $L$ is $+1$ for a lepton, $-1$ for an antilepton and $0$ for other particles. In ordinary reactions the total lepton number is conserved:
 ```latex
 L_\text{initial} = L_\text{final}
 ```
-More precisely, the lepton number of each generation is conserved separately, but for the tasks in this chapter the common $L$ is enough.
+In the ordinary particle reactions examined in this chapter, the conservation of the total lepton number is used. The electron, muon and tau lepton numbers are not, however, conserved separately in all phenomena: in neutrino oscillations the type of a neutrino can change, for example from a muon neutrino to a tau neutrino. The conservation of the baryon number and of the total lepton number are rules that hold extremely well in experiments, and the tasks of this chapter use them as a model. Unlike the conservation of charge, they are not regarded as absolute laws of nature: in some theories that extend the Standard Model they could be violated.
 
 The table gives the numbers for the particles of this chapter: the proton $p$, neutron $n$, antiproton $\bar{p}$, electron $e^-$, muon $\mu^-$, positron $e^+$, neutrino $\nu$, antineutrino $\bar{\nu}$, the pions and the photon $\gamma$.
 
@@ -362,7 +362,9 @@ A particle can decay on its own only into lighter particles. The energy released
 ```latex
 Q = (m_\text{initial} - m_\text{final})\,c^2
 ```
-where $m_\text{initial}$ is the mass of the decaying particle and $m_\text{final}$ is the sum of the masses of the particles produced (chapter *Mass defect and nuclear binding energy*). The decay is possible only when $Q > 0$ and all three numbers are conserved. The masses of particles are given in the unit $\tfrac{\text{MeV}}{c^2}$, so $c^2$ cancels and $Q$ comes out directly in megaelectronvolts. The proton is the lightest baryon. Because the baryon number is conserved, the decay products of the proton would have to include a baryon, and there is no baryon lighter than the proton. This is why the proton has not been seen to decay: according to experiments, its lifetime is over $10^{34}$ years.
+where $m_\text{initial}$ is the mass of the decaying particle and $m_\text{final}$ is the sum of the masses of the particles produced (chapter *Mass defect and nuclear binding energy*). The decay can happen only when $Q > 0$ and all three numbers are conserved. These are necessary but not always sufficient conditions: the reaction must also be mediated by some interaction, and other conservation laws can still prevent it. The masses of particles are given in the unit $\tfrac{\text{MeV}}{c^2}$, so $c^2$ cancels and $Q$ comes out directly in megaelectronvolts.
+
+The proton is the lightest baryon. In the ordinary low-energy reactions of the Standard Model the baryon number is conserved, so the proton cannot decay into lighter particles through these reactions: the decay products would have to include a baryon, and there is no baryon lighter than the proton. In some theories that extend the Standard Model the decay of the proton could, however, be possible, and that is why it is searched for experimentally. The decay of the proton has not been observed. For example, for the decay $p \to e^+ + \pi^0$ experiments give a lower limit of over $10^{34}$ years for the lifetime.
 
 ### Beta decay at the quark level
 In beta minus decay a neutron turns into a proton. At the quark level, one $d$ quark of the neutron turns into a $u$ quark through the mediator particle $W^-$ of the weak interaction:
@@ -421,7 +423,7 @@ A free neutron decays by the reaction $n \to p + e^- + \bar{\nu}_e$. Show that t
 
 <!-- vaihe -->
 
-**Principle.** The decay is possible if the charge, the baryon number and the lepton number are conserved and the mass of the particles produced is smaller than that of the neutron. The energy corresponding to the mass difference is released as the kinetic energy of the particles produced.
+**Principle.** The decay can happen only if the charge, the baryon number and the lepton number are conserved and the mass of the particles produced is smaller than that of the neutron. The energy corresponding to the mass difference is released as the kinetic energy of the particles produced.
 
 <!-- vaihe -->
 
@@ -459,7 +461,7 @@ A free neutron decays by the reaction $n \to p + e^- + \bar{\nu}_e$. Show that t
 
 <!-- vaihe -->
 
-**Result.** The charge, the baryon number and the lepton number are conserved, so the decay is possible. It releases $0.782\,\text{MeV}$ of energy, three significant figures, because the masses are given to the precision of a thousandth of $\tfrac{\text{MeV}}{c^2}$.
+**Result.** The charge, the baryon number and the lepton number are conserved and energy is released, so the conservation laws allow the decay, and it is also observed. It releases $0.782\,\text{MeV}$ of energy, three significant figures, because the masses are given to the precision of a thousandth of $\tfrac{\text{MeV}}{c^2}$.
 
 <!-- vaihe -->
 
@@ -476,5 +478,5 @@ Another mistake is to think that antimatter has negative mass or is somehow "opp
 - The fundamental interactions and their mediators: strong (gluon), electromagnetic (photon), weak ($W^\pm$, $Z^0$) and gravitational (the hypothetical graviton).
 - The Higgs field gives mass to the $W$ and $Z$ bosons, the quarks and the charged leptons. Its quantum, the Higgs boson, was discovered at CERN in 2012.
 - An antiparticle has the same mass and the opposite charge. A particle and an antiparticle can annihilate into radiation.
-- In a particle reaction the charge, the baryon number and the lepton number are conserved, and a decay requires $Q = (m_\text{initial} - m_\text{final})\,c^2 > 0$.
+- The charge is always conserved. In ordinary particle reactions the baryon number and the total lepton number are also conserved. A decay further requires $Q = (m_\text{initial} - m_\text{final})\,c^2 > 0$. The conditions are necessary, not always sufficient.
 - In beta minus decay $d \to u + W^-$ and $W^- \to e^- + \bar{\nu}_e$.

@@ -1,16 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 1da98b2a01318779
+CONTENT-HASH: 6af98f1726791313
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
 - none
 
 ## Polish
-- inquiry.json `ennuste-1` — the answer is one line of arithmetic from the proton and neutron charges; the real prediction is weak, but `kvarkit` then lets the student deduce it from Delta++ — acceptable; keep the feedback naming the evidence.
-- inquiry.json `reaktiot` — the reaction table wraps inside its cells at 390 px; the arrows split mid-reaction (stage-tutki-390-2). Widen the first column or scroll the table.
-- Lesson has no worked check of a reaction being forbidden except the exit ticket and `virhe` (optional); a short forbidden-reaction line in the example would help.
-- `tarkistus-3` explain criteria 2 accepts either of two ideas; one observable criterion each would assess better.
+- A short note on sphalerons (B and L not separately conserved at extreme energies) could be added later as enrichment.
 
 ## Checked
-- Packet read in full (lesson, inquiry, exercises, exit ticket); path from hook to conclusion follows the prerequisites (beta decay, E=mc^2); hook is answered only after commitment; workload one lesson.
-- Captures: contact-1, contact-2, fig 5, 7, 9, 13 (390 px), example-390-1, stage-tarkista-390-1. Figures needed, legible, descriptions match.
-- Finnish not applicable (en).
+- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.

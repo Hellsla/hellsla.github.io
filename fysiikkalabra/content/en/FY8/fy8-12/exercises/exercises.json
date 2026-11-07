@@ -432,6 +432,87 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy8-12-L3-06",
+      "level": 3,
+      "text": "The table gives the approximate shares of the three interactions of a photon in water and in lead at different photon energies. Water also represents soft tissue. The atomic number of lead is $82$; water contains hydrogen ($Z = 1$) and oxygen ($Z = 8$).\n\nConsider four situations: (1) a $50\\,\\text{keV}$ photon of a dental X-ray in the patient's cheek, (2) the same photon in the radiographer's lead apron, (3) a $662\\,\\text{keV}$ gamma photon of caesium-137 in a water tank in a laboratory and (4) a $20\\,\\text{MeV}$ photon of a radiotherapy machine in the lead shield of the machine.\n\na) Use the data to deduce the most likely interaction in each situation and justify your choice.\n\nb) Explain why photoelectric absorption at the same energy is much more likely in lead than in water, and why a lead apron therefore protects well against X-rays.\n\nc) Why does pair production not appear in the table at the energy $1.0\\,\\text{MeV}$? Calculate how much kinetic energy the electron and the positron receive in total when a $5.0\\,\\text{MeV}$ photon produces a pair near a nucleus. The energy received by the nucleus is ignored, and the rest energy of the electron is $m_ec^2 = 0.511\\,\\text{MeV}$.\n\nEnter the kinetic energy of part c) in megaelectronvolts in the box.",
+      "kind": [
+        "data",
+        "reasoning",
+        "model"
+      ],
+      "answer": 3.978,
+      "unit": "MeV",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Approximate shares of the interactions in per cent (rounded; orders of magnitude from the attenuation coefficients of the NIST XCOM database, coherent scattering left out)",
+        "columns": [
+          "$E\\,(\\text{MeV})$",
+          "Water: photoelectric",
+          "Water: Compton",
+          "Water: pair",
+          "Lead: photoelectric",
+          "Lead: Compton",
+          "Lead: pair"
+        ],
+        "rows": [
+          [
+            "0.05",
+            "16",
+            "84",
+            "0",
+            "99",
+            "1",
+            "0"
+          ],
+          [
+            "0.1",
+            "2",
+            "98",
+            "0",
+            "98",
+            "2",
+            "0"
+          ],
+          [
+            "0.5",
+            "0",
+            "100",
+            "0",
+            "55",
+            "45",
+            "0"
+          ],
+          [
+            "1.0",
+            "0",
+            "100",
+            "0",
+            "27",
+            "73",
+            "0"
+          ],
+          [
+            "5.0",
+            "0",
+            "91",
+            "9",
+            "6",
+            "47",
+            "47"
+          ],
+          [
+            "20",
+            "0",
+            "56",
+            "44",
+            "0",
+            "12",
+            "88"
+          ]
+        ]
+      }
     }
   ]
 }

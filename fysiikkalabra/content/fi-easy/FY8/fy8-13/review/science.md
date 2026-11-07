@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 4124867e5d7571f6
+CONTENT-HASH: 10f9ed8b56b4a356
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- batch delta review (scope: the diff only, by the teacher's ruling): glossary explain of "efektiivinen annos" now "Sillä arvioidaan pienten annosten syöpäriskiä keskimääräiselle ihmiselle" — right by ICRP 103 (radiation-protection quantity for stochastic risk at low doses, sex- and age-averaged reference person), replaces the overclaim "kuvaa koko kehon syöpäriskiä", and matches lesson.md:471 (tarkoitettu pienille annoksille; suuret kerta-annokset grayna) and :625 (ei takaa samaa riskiä jokaiselle); hash equal at start and end.
+- Word-level diff since origin/main of this part checked for physics: values, units and significant figures, definitions (gamma decay, beta atomic masses, Hubble time, w_R and effective dose scope, conservation of B and L, photon interactions, ITER and Onkalo facts), worked solutions recomputed where numbers changed; formulas identical across languages (check_i18n).

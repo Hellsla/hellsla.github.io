@@ -432,6 +432,87 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy8-12-L3-06",
+      "level": 3,
+      "text": "Taulukossa on fotonin kolmen vuorovaikutuksen likimääräiset osuudet vedessä ja lyijyssä eri fotonienergioilla. Vesi kuvaa myös pehmytkudosta. Lyijyn järjestysluku on $82$. Vedessä on vetyä ($Z = 1$) ja happea ($Z = 8$).\n\nTarkastellaan neljää tilannetta.\n\n(1) Hammasröntgenkuvauksen $50\\,\\text{keV}$:n fotoni on potilaan poskessa.\n\n(2) Sama fotoni on röntgenhoitajan lyijyesiliinassa.\n\n(3) Cesium-137:n $662\\,\\text{keV}$:n gammafotoni on laboratorion vesisäiliössä.\n\n(4) Sädehoitolaitteen $20\\,\\text{MeV}$:n fotoni on laitteen lyijysuojassa.\n\na) Päättele aineiston avulla, mikä vuorovaikutus on kussakin tilanteessa todennäköisin. Perustele valintasi.\n\nb) Selitä, miksi valosähköinen absorptio on samalla energialla lyijyssä paljon todennäköisempi kuin vedessä. Selitä myös, miksi lyijyesiliina siksi suojaa hyvin röntgensäteilyltä.\n\nc) Miksi taulukossa ei ole parinmuodostusta energialla $1{,}0\\,\\text{MeV}$? Laske, kuinka paljon liike-energiaa elektroni ja positroni saavat yhteensä, kun $5{,}0\\,\\text{MeV}$:n fotoni muodostaa parin ytimen lähellä. Ytimen saamaa energiaa ei oteta huomioon. Elektronin lepoenergia on $m_ec^2 = 0{,}511\\,\\text{MeV}$.\n\nVastaa laatikkoon kohdan c) liike-energia megaelektronivoltteina.",
+      "kind": [
+        "data",
+        "reasoning",
+        "model"
+      ],
+      "answer": 3.978,
+      "unit": "MeV",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Vuorovaikutusten likimääräiset osuudet prosentteina (pyöristetty; suuruusluokat NIST XCOM -tietokannan vaimennuskertoimista, koherentti sironta jätetty pois)",
+        "columns": [
+          "$E\\,(\\text{MeV})$",
+          "Vesi: valosähköinen",
+          "Vesi: Compton",
+          "Vesi: pari",
+          "Lyijy: valosähköinen",
+          "Lyijy: Compton",
+          "Lyijy: pari"
+        ],
+        "rows": [
+          [
+            "0.05",
+            "16",
+            "84",
+            "0",
+            "99",
+            "1",
+            "0"
+          ],
+          [
+            "0.1",
+            "2",
+            "98",
+            "0",
+            "98",
+            "2",
+            "0"
+          ],
+          [
+            "0.5",
+            "0",
+            "100",
+            "0",
+            "55",
+            "45",
+            "0"
+          ],
+          [
+            "1.0",
+            "0",
+            "100",
+            "0",
+            "27",
+            "73",
+            "0"
+          ],
+          [
+            "5.0",
+            "0",
+            "91",
+            "9",
+            "6",
+            "47",
+            "47"
+          ],
+          [
+            "20",
+            "0",
+            "56",
+            "44",
+            "0",
+            "12",
+            "88"
+          ]
+        ]
+      }
     }
   ]
 }

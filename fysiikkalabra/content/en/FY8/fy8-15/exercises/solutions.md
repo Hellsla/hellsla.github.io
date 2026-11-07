@@ -155,7 +155,7 @@ The number of yes rows is $N = 5$.
 **Conversions:** Not needed, because the numbers have no units.
 **Substitution:** (1) $L$: $0 = 0 + 1 - 1$, allowed. (2) all numbers $0$ on both sides, allowed. (3) $L$: $0 \ne 0 + 1$, forbidden. (4) $q$: $+1 - 1 = 0$, $B$: $1 = 1$ and $L$: $0 + 1 = 0 + 1$, allowed. (5) $q$: $+1 + 0 = 1 \ne 2$, forbidden. (6) $q$: $-1 = -1$ and $L$: $0 = 1 - 1$, allowed. (7) $B$: $1 + 1 = 2 \ne 0$, forbidden. The number of forbidden reactions is $N = 3$.
 **Answer:** $3$ reactions (3, 5 and 7). The result is an exact whole number.
-**Reasonableness:** Each forbidden reaction violates a different law: reaction 3 the lepton number, reaction 5 the charge and reaction 7 the baryon number. There are $7 - 3 = 4$ allowed ones. Reaction 1 is the beta decay of the neutron and reaction 2 the annihilation of a proton and an antiproton, which are known.
+**Reasonableness:** Each forbidden reaction violates a different law: reaction 3 the lepton number, reaction 5 the charge and reaction 7 the baryon number. There are $7 - 3 = 4$ allowed by the conservation laws; the conservation laws are necessary conditions, and the reaction must also be possible as far as energy is concerned. Reaction 1 is the beta decay of the neutron and reaction 2 the annihilation of a proton and an antiproton, which are known.
 
 ## fy8-15-L2-07
 **Asked:** what is wrong in the student’s claim “a free neutron is stable, because it is an elementary particle”.
@@ -185,7 +185,7 @@ The number of yes rows is $N = 5$.
 ## fy8-15-L3-03
 **Given:** the reaction $\bar{\nu}_e + p \to n + X$; from the table $\bar{\nu}_e$: $q = 0$, $B = 0$, $L = -1$; $p$: $q = +1$, $B = 1$, $L = 0$; $n$: $q = 0$, $B = 1$, $L = 0$
 **Asked:** the lepton number $L_X$ of the particle $X$
-**Principle:** The charge, the baryon number and the lepton number are conserved in all particle reactions, so the numbers of the particle $X$ follow from the difference between the initial and final states. They also tell which particle $X$ is.
+**Principle:** The charge is always conserved, and in ordinary particle reactions the baryon number and the total lepton number are also conserved, so the numbers of the particle $X$ follow from the difference between the initial and final states. They also tell which particle $X$ is.
 **Formula:** $L_{\bar{\nu}} + L_p = L_n + L_X$, so $L_X = L_{\bar{\nu}} + L_p - L_n$
 **Conversions:** Not needed, because the numbers have no units.
 **Substitution:** $L_X = -1 + 0 - 0 = -1$; in the same way $q_X = 0 + 1 - 0 = +1$ and $B_X = 0 + 1 - 1 = 0$
@@ -205,7 +205,7 @@ The number of yes rows is $N = 5$.
 ## fy8-15-L3-05
 **Given:** from the table $\pi^-$: $d\,\bar{u}$, $p$: $u\,u\,d$, $\Lambda^0$: $u\,d\,s$, $K^0$: $d\,\bar{s}$, $m_{K} = 497.611\,\tfrac{\text{MeV}}{c^2}$, $m_\pi = 139.570\,\tfrac{\text{MeV}}{c^2}$ ($\pi^+$ and $\pi^-$ have equal masses)
 **Asked:** a) checking the conservation laws and the net number of each quark type; b) the energy $Q$ released in the decay $K^0 \to \pi^+ + \pi^-$ in megaelectronvolts; c) an explanation of the tracks in the picture
-**Principle:** A reaction is possible when charge and baryon number are conserved and the net number of each quark type is the same at the start and at the end (an antiquark reduces the net number by one). The energy released in a decay is the difference of the masses multiplied by $c^2$, because the masses are in the unit $\tfrac{\text{MeV}}{c^2}$.
+**Principle:** In the collision the particles are produced through the strong interaction, which conserves the net number of each quark type. The reaction can therefore happen only if charge and baryon number are conserved and the net number of each quark type is the same at the start and at the end (an antiquark reduces the net number by one). The conditions are necessary, and in addition the collision must have enough energy. The energy released in a decay is the difference of the masses multiplied by $c^2$, because the masses are in the unit $\tfrac{\text{MeV}}{c^2}$.
 **Formula:** $Q = (m_K - m_{\pi^+} - m_{\pi^-})\,c^2$, so $Q = (m_K - 2\,m_\pi)\,c^2$
 **Conversions:** Not needed: $c^2$ cancels, and the energy comes out in megaelectronvolts.
 **Substitution:**
@@ -216,4 +216,4 @@ Net numbers of quarks at the end: $u$: $1 + 0 = 1$, $d$: $1 + 1 = 2$, $s$: $1 - 
 b) $Q = (497.611 - 2 \cdot 139.570)\,\tfrac{\text{MeV}}{c^2} \cdot c^2 = (497.611 - 279.140)\,\text{MeV} = 218.471\,\text{MeV}$
 c) The uncharged particles $\Lambda^0$ and $K^0$ do not ionise the liquid of the chamber, so they leave no track. They leave a track only when they decay into charged particles at the tip of the V. Charge is conserved, so the particles produced in the decay have opposite charges ($+1$ and $-1$), and the magnetic field bends them in opposite directions.
 **Answer:** $218.471\,\text{MeV}$; the subtraction has thousandths, so the result is given to the precision of a thousandth. The reaction $\pi^- + p \to \Lambda^0 + K^0$ conserves everything that was checked, and the absence of a track and the opposite curving of the arms are explained by charge.
-**Reasonableness:** Rounded, $498 - 280 = 218$, close to the result. The energy is positive, so the decay is possible, and it is about $44\,\%$ of the rest energy of the kaon, since $218.5 : 497.6 = 0.439$. The result is greater than the $37.8\,\text{MeV}$ of the decay of the lambda, because the pions are light compared with the kaon. In the collision itself $Q = (139.570 + 938.272 - 1115.683 - 497.611)\,\text{MeV} = -535.452\,\text{MeV}$, so the kinetic energy of the pion pays for the mass of the new particles.
+**Reasonableness:** Rounded, $498 - 280 = 218$, close to the result. The energy is positive, so the decay is possible as far as energy is concerned, and it is about $44\,\%$ of the rest energy of the kaon, since $218.5 : 497.6 = 0.439$. The result is greater than the $37.8\,\text{MeV}$ of the decay of the lambda, because the pions are light compared with the kaon. In the collision itself $Q = (139.570 + 938.272 - 1115.683 - 497.611)\,\text{MeV} = -535.452\,\text{MeV}$, so the kinetic energy of the pion pays for the mass of the new particles.

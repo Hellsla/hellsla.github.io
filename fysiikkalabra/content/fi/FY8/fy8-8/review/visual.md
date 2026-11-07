@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: d5c6e5105c20f0c2
+CONTENT-HASH: 92142ed475bf6ab8
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] Valokuvien järjestys (beeta, alfa) on päinvastainen kuin tekstin (alfa, beeta, gamma); vaihda järjestys, niin kuvat seuraavat tekstiä.
-- [Minor] Beetakuvan alt: jäljet lähtevät 'vasemmasta yläkulmasta'; tarkemmin 'ylhäällä vasemmalla olevasta ohuesta putkesta'.
+- none
 
 ## Checked
-batch delta review: rendered preview/fy8-8.html at 1280 px and opened the 2 added photo(s) with caption; image files read where alt text needed verification; floats right of the text (x 744-1064 px), no clipping or horizontal overflow at 1280 or 390 px; alt text matches image, captions physically correct and tied to the chapter, LaTeX for numbers with units.
+- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.

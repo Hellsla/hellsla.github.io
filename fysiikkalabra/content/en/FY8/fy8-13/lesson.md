@@ -375,7 +375,7 @@ The equivalent dose of an organ or tissue $\text{T}$ takes the type of radiation
 ```latex
 H_\text{T} = w_\text{R} D_\text{T}
 ```
-where $H_\text{T}$ is the equivalent dose of the tissue ($\text{Sv}$), $w_\text{R}$ the radiation weighting factor (a pure number) and $D_\text{T}$ the absorbed dose of the tissue ($\text{Gy}$). The weighting factor tells how many times more a type of radiation damages cells than gamma radiation at the same absorbed dose. The factor for neutrons depends on their energy.
+where $H_\text{T}$ is the equivalent dose of the tissue ($\text{Sv}$), $w_\text{R}$ the radiation weighting factor (a pure number) and $D_\text{T}$ the absorbed dose of the tissue ($\text{Gy}$). The weighting factor is a rounded value agreed on in radiation protection. It describes how much more harmful a type of radiation is than gamma radiation at the same absorbed dose, but it is not an exact measured ratio of the damage in every cell. The factor for neutrons depends on their energy.
 
 | Type of radiation | $w_\text{R}$ |
 | --- | --- |
@@ -468,7 +468,7 @@ The tissue weighting factors are:
 - $0.04$ each: bladder, oesophagus, liver and thyroid
 - $0.01$ each: bone surface, brain, salivary glands and skin
 
-The weighting factors are from the 2007 recommendation of the International Commission on Radiological Protection (ICRP), and they are also the basis of Finnish radiation legislation. The tissue factors add up to $1$, so when the whole body receives the same equivalent dose, the effective dose is equal to it. The effective dose is meant for small doses. The immediate effects of large single doses, such as radiation sickness, are assessed with the absorbed dose in grays.
+The weighting factors are from the 2007 recommendation of the International Commission on Radiological Protection (ICRP), and they are also the basis of Finnish radiation legislation. The tissue factors add up to $1$, so when the whole body receives the same equivalent dose, the effective dose is equal to it. The effective dose is a radiation protection quantity calculated for an agreed average person and meant for small doses. It is used to compare exposures and to monitor dose limits, but it is not an exact risk estimate for an individual person, and it is not used to plan radiotherapy. The immediate effects of large single doses, such as radiation sickness, are assessed with the absorbed dose in grays.
 
 ### Dose rate and time
 A radiation meter usually shows the **dose rate** $\dot{H}$, that is, the dose per unit time, for example in the unit $\mu\text{Sv/h}$. When the dose rate stays constant, the dose accumulated in time $t$ is
@@ -619,7 +619,7 @@ H_\text{E} = w_\text{T} w_\text{R} \frac{E}{m}
 
 <!-- vaihe -->
 
-**Reasonableness.** The absorbed dose is only about $1.7\,\text{mGy}$, but the factor $20$ of alpha radiation raises the equivalent dose of the lungs to about $33\,\text{mSv}$, and the factor $0.12$ reduces it to the effective dose, which describes the radiation detriment to the whole body. The result is of the same order of magnitude as the average radon dose of a Finn, about $4\,\text{mSv}$ per year. The example dealt with the weighting of the dose; in the next task the dose is reduced with time, distance and shielding.
+**Reasonableness.** The absorbed dose is only about $1.7\,\text{mGy}$, but the factor $20$ of alpha radiation raises the equivalent dose of the lungs to about $33\,\text{mSv}$, and the factor $0.12$ reduces it to the effective dose, which describes the radiation detriment to the whole body. The even distribution is a rough model assumption: in reality the alpha particles are absorbed in a thin cell layer on the surface of the airways. The result is of the same order of magnitude as the average radon dose of a Finn, about $4\,\text{mSv}$ per year. The example dealt with the weighting of the dose; in the next task the dose is reduced with time, distance and shielding.
 
 ## Common misconception
 Many people think that natural radiation is harmless and only radiation produced by humans is dangerous. The body, however, does not distinguish whether an alpha particle comes from the radon in a cellar or from a laboratory source: the origin of the radiation does not in itself decide how dangerous it is. The effective dose is used to compare exposures and to estimate radiation detriment, but the same effective dose does not guarantee exactly the same individual risk. The largest dose of a Finn comes from natural radon, and therefore measuring and fixing radon is the most effective way to reduce one's own radiation dose.

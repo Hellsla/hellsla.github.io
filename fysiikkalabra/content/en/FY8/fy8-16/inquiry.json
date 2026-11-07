@@ -3,7 +3,7 @@
   "contribution": "Cosmology as an application of quantum physics and nuclear physics: the redshift of galaxies $z = \\tfrac{\\Delta\\lambda}{\\lambda_0}$ from the familiar spectral lines of hydrogen, the speed at small redshift $v = cz$, the Hubble–Lemaître law $v = H_0\\,d$, which the student fits to the galaxies of the simulation, the estimate of the age $\\tfrac{1}{H_0}$, the cosmic background radiation as a consequence of the formation of atoms, the nuclei of the Big Bang and the helium fraction from fusion, the elements of stars through the binding energy curve, and dark matter and dark energy as open questions.",
   "learn": [
     "calculate the redshift, the recession speed and the distance of a galaxy with the Hubble–Lemaître law.",
-    "estimate the age of the universe from the Hubble constant and explain what the background radiation tells about the early universe.",
+    "explain what the redshift of galaxies and the cosmic background radiation tell about the early universe.",
     "explain at which stages hydrogen, helium and the heavier elements formed."
   ],
   "prior": [
@@ -195,12 +195,12 @@
       "after": [
         "koe-1"
       ],
-      "prompt": "Write, based on your table and the graph: How does the speed of a galaxy depend on its distance? Why are the points not exactly on a line? What do the slope $H_0$ of your fitted line and the time $\\tfrac{1}{H_0}$ tell about the universe?",
-      "model": "In the values of the model the speed grows in direct proportion to the distance: galaxy 2 ($45\\,\\text{Mpc}$) recedes at $2840\\,\\text{km/s}$, galaxy 4 ($110\\,\\text{Mpc}$) at $7560\\,\\text{km/s}$ and galaxy 8 ($275\\,\\text{Mpc}$) at $19\\,030\\,\\text{km/s}$. The points are close to the line $v = H_0\\,d$ through the origin, whose slope is about $70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$. The points deviate from the line by a few hundred kilometres per second, because the galaxies also have motion of their own; for distant galaxies it is small compared with the speed of the expansion. Proportionality means that all distances grow in the same proportion, that is, space is expanding. If the speed of the expansion had stayed the same, all the galaxies would have been in the same place a time $\\tfrac{1}{H_0} \\approx 14$ billion years ago.",
+      "prompt": "Write, based on your table and the graph: How does the speed of a galaxy depend on its distance? Why are the points not exactly on a line? What does the slope $H_0$ of your fitted line tell about the universe?",
+      "model": "In the values of the model the speed grows in direct proportion to the distance: galaxy 2 ($45\\,\\text{Mpc}$) recedes at $2840\\,\\text{km/s}$, galaxy 4 ($110\\,\\text{Mpc}$) at $7560\\,\\text{km/s}$ and galaxy 8 ($275\\,\\text{Mpc}$) at $19\\,030\\,\\text{km/s}$. The points are close to the line $v = H_0\\,d$ through the origin, whose slope is about $70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$. The points deviate from the line by a few hundred kilometres per second, because the galaxies also have motion of their own; for distant galaxies it is small compared with the speed of the expansion. Proportionality means that all distances grow in the same proportion, that is, space is expanding. Extension note: if the speed of the expansion had stayed the same, all the galaxies would have been in the same place a time $\\tfrac{1}{H_0} \\approx 14$ billion years ago.",
       "criteria": [
         "I show with the values of the model that the speed is directly proportional to the distance and the points are close to a line through the origin.",
         "I explain the scatter of the points by the own motion of the galaxies.",
-        "I give the slope of my fit with its unit and interpret the time $\\tfrac{1}{H_0}$ as an estimate of the age of the universe.",
+        "I give the slope of my fit with its unit.",
         "I call the numbers of the simulation values of the model and not my own measurements."
       ]
     },
@@ -237,7 +237,7 @@
       "id": "virhe",
       "stage": "sovella",
       "type": "choice",
-      "title": "Find the error",
+      "title": "Extension: find the error",
       "optional": true,
       "prompt": "A student estimates the age of the universe when $H_0 = 70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$. She substitutes $1\\,\\text{Mpc} = 3.086 \\cdot 10^{22}\\,\\text{m}$ and writes\n\n$$\\begin{aligned} &t = \\frac{1}{H_0} = \\frac{3.086 \\cdot 10^{22}}{70}\\,\\text{s} \\\\ &= 4.4 \\cdot 10^{20}\\,\\text{s} \\\\ &\\approx 1.4 \\cdot 10^{13}\\,\\text{a} \\end{aligned}$$\n\nThe result is a thousand times too large. Where is the error?",
       "choices": [
@@ -310,7 +310,7 @@
         },
         {
           "text": "The radiation loses energy as it collides on the way with gas clouds between the galaxies.",
-          "feedback": "The universe became transparent just when atoms formed, so the radiation has travelled almost without collisions. The wavelengths have grown because space expands and stretches them."
+          "feedback": "When atoms formed, very few free electrons were left for the photons to scatter from. So the radiation has travelled almost without collisions since then. The wavelengths have grown because space expands and stretches them."
         },
         {
           "text": "The radiation is now emitted by cold dust that has cooled close to absolute zero.",

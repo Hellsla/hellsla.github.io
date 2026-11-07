@@ -16,8 +16,8 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "Sinkkilevy on kiinnitetty elektroskooppiin ja varattu negatiiviseksi, joten elektroskoopin lehdet ovat erillään. Kun levyä valaistaan pienellä ultraviolettilampulla, lehdet painuvat alas sekunneissa: levy menettää elektroneja. Kun saman levyn eteen tuodaan kirkas punainen lamppu, joka säteilee monta kertaa enemmän valotehoa, lehdet pysyvät erillään, vaikka valaistusta jatkettaisiin tunnin.",
-      "question": "Miksi heikko ultraviolettivalo irrottaa elektroneja, mutta voimakas punainen valo ei, ja mitä tämä kertoo valon energiasta?"
+      "text": "Sinkkilevy on kiinnitetty elektroskooppiin ja varattu negatiiviseksi, joten elektroskoopin lehdet ovat erillään. Kun opettaja valaisee levyä suojatussa laitteistossa pienellä lyhytaaltoista ultraviolettisäteilyä (UV-C) lähettävällä lampulla, lehdet painuvat alas sekunneissa: levy menettää elektroneja. Kun saman levyn eteen tuodaan kirkas punainen lamppu, joka säteilee monta kertaa enemmän valotehoa, lehdet pysyvät erillään, vaikka valaistusta jatkettaisiin tunnin.",
+      "question": "Miksi heikko UV-C-säteily irrottaa elektroneja, mutta voimakas punainen valo ei, ja mitä tämä kertoo valon energiasta?"
     },
     {
       "id": "kertaus",
@@ -306,7 +306,7 @@
       "type": "reflect",
       "title": "Palaa ennusteisiisi",
       "optional": true,
-      "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin ja yhtälöön $hf = W + E_\\text{k,max}$. Palaa sitten alun kysymykseen: miksi heikko ultraviolettivalo purkaa sinkkilevyn varauksen, mutta kirkas punainen valo ei?",
+      "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin ja yhtälöön $hf = W + E_\\text{k,max}$. Palaa sitten alun kysymykseen: miksi heikko UV-C-säteily purkaa sinkkilevyn varauksen, mutta kirkas punainen valo ei?",
       "predictions": [
         "ennuste-1",
         "ennuste-2"

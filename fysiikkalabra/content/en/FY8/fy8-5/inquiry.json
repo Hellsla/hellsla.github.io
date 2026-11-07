@@ -251,7 +251,7 @@
       "id": "virhe",
       "stage": "sovella",
       "type": "choice",
-      "title": "Find the error",
+      "title": "Extension: find the error",
       "optional": true,
       "prompt": "A student calculates how many electrons fit in the shell $n = 3$: \"The shell has three subshells, $3\\text{s}$, $3\\text{p}$ and $3\\text{d}$, that is three orbitals. Two electrons fit in each, so $6$ electrons fit in the shell.\" Where is the error?",
       "choices": [

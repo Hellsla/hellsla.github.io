@@ -281,7 +281,7 @@ In a **nuclear reaction** nuclei change: a nucleus decays, or another nucleus or
 ```latex
 Q = (m_\text{initial} - m_\text{final})\,c^2
 ```
-where $m_\text{initial}$ is the sum of the masses of the starting materials and $m_\text{final}$ the sum of the masses of the particles formed. When $Q > 0$, energy is released as the kinetic energy of the particles formed and as gamma radiation; when $Q < 0$, the reaction needs energy. Atomic masses can be used when the number of electrons is the same on both sides, as in alpha decay, beta minus decay and most nuclear reactions. The mass of the electron formed in beta minus decay is not added separately, because the atomic mass of the daughter atom already includes one more electron. For example, in the alpha decay of uranium-238, ${}^{238}_{92}\text{U} \to {}^{234}_{90}\text{Th} + {}^{4}_{2}\text{He}$, the mass decreases by $0.004583\,\text{u}$, so $Q = 0.004583 \cdot 931.5\,\text{MeV} \approx 4.27\,\text{MeV}$.
+where $m_\text{initial}$ is the sum of the masses of the starting materials and $m_\text{final}$ the sum of the masses of the particles formed. When $Q > 0$, energy is released as the kinetic energy of the particles formed and as gamma radiation; when $Q < 0$, the reaction needs energy. The formula counts the masses of all the particles on both sides. The atomic masses in tables also include the electrons of the atoms. In alpha decay and most nuclear reactions there are equally many electrons on both sides, so atomic masses can be put into the formula directly. For example, in the alpha decay of uranium-238, ${}^{238}_{92}\text{U} \to {}^{234}_{90}\text{Th} + {}^{4}_{2}\text{He}$, the mass decreases by $0.004583\,\text{u}$, so $Q = 0.004583 \cdot 931.5\,\text{MeV} \approx 4.27\,\text{MeV}$.
 
 <svg data-fig="reaktio" viewBox="0 0 600 350" role="img" aria-label="Bar chart, the vertical axis to scale but broken: it starts at the value 238.040 u, not at zero. The left bar is the mass of a uranium-238 atom, 238.050787 u. The right bar is the combined mass of the thorium-234 and helium-4 atoms formed in alpha decay, 238.046204 u. The difference 0.004583 u is marked with a red bracket, and it corresponds to the reaction energy Q = 4.27 MeV." style="max-width:100%;font-size:24px">
   <line x1="130" y1="212" x2="560" y2="212" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -314,6 +314,17 @@ where $m_\text{initial}$ is the sum of the masses of the starting materials and 
   <foreignObject x="437" y="126" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$0.004583\,\text{u}$</span></div></foreignObject>
   <foreignObject x="437" y="160" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$Q = 4.27\,\text{MeV}$</span></div></foreignObject>
 </svg>
+
+### Atomic masses in beta decay
+In beta decay the charge number of the nucleus changes, so the initial and daughter atoms have different numbers of electrons. If nuclear masses are used, the mass of the electron or positron formed is included. With the masses $M$ of neutral atoms the bookkeeping depends on the type of decay. In beta minus decay the daughter nucleus has one more proton, so the daughter atom has one more electron than the initial atom. This extra electron matches the mass of the beta particle formed, so the mass of the electron is not added separately:
+```latex
+Q(\beta^-) = [M(\text{X}) - M(\text{Y})]\,c^2
+```
+where $M(\text{X})$ is the mass of the initial atom and $M(\text{Y})$ the mass of the daughter atom. In beta plus decay the daughter atom has one electron fewer than the initial atom, and in addition a positron is formed, whose mass is the same as that of an electron. That is why the mass of two electrons is subtracted:
+```latex
+Q(\beta^+) = [M(\text{X}) - M(\text{Y}) - 2m_e]\,c^2
+```
+where $m_e = 0.000549\,\text{u}$ is the mass of the electron. The model ignores the binding energies of the electrons of the atom, which are negligibly small at this precision.
 
 ## Worked example
 Calculate the binding energy and the binding energy per nucleon of the helium-4 nucleus ${}^{4}_{2}\text{He}$. Use the atomic masses $m({}^{4}\text{He}) = 4.002603\,\text{u}$, $m_\text{H} = 1.007825\,\text{u}$ and $m_\text{n} = 1.008665\,\text{u}$ (AME2020) and $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$.
@@ -377,4 +388,4 @@ Another mistake is to think that mass is conserved in a nuclear reaction as in c
 - A nucleus is lighter than its separate nucleons. The mass defect is $\Delta m = Z\,m_\text{H} + N\,m_\text{n} - m_\text{atom}$.
 - The binding energy $E_\text{B} = \Delta m\,c^2$ is needed to break a nucleus into nucleons, and it is released when a nucleus forms. Putting in $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$ gives the energy in megaelectronvolts.
 - The binding energy per nucleon is highest, about $8.8\,\text{MeV}$, for iron and nickel; fusion and fission release energy because they move nucleons into more tightly bound nuclei.
-- The reaction energy is $Q = (m_\text{initial} - m_\text{final})\,c^2$: mass is not conserved in a nuclear reaction, although the mass number and the charge number are.
+- The reaction energy is $Q = (m_\text{initial} - m_\text{final})\,c^2$: mass is not conserved in a nuclear reaction, although the mass number and the charge number are. With atomic masses, in beta minus decay $Q(\beta^-) = [M(\text{X}) - M(\text{Y})]\,c^2$, and in beta plus decay $2m_e$ is also subtracted.

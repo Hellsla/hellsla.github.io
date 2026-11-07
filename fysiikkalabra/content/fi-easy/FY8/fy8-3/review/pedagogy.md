@@ -1,9 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: e65229901a3e00fa
+CONTENT-HASH: 7cf00fb14ee5fdf8
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+
 ## Blocking
+- none
 
 ## Polish
-- meta.json key_concepts "Bohrin malli": "mutta ratoja ei ole" is a bit blunter than the lesson ("Elektronin rataa ei voi havaita, eikä sitä ole nykyisessä atomimallissa"); "mutta nykyisessä mallissa ratoja ei ole" would match it.
+- none
 
 ## Checked
-batch delta review: added meta.json key_concepts ("Luvun tärkeät käsitteet") read against lesson.md: each term is one the lesson bolds and uses, each explanation matches the lesson's own definition (often word for word), is physically correct and short S2 Finnish; nothing disclosed beyond the lesson.
+- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.

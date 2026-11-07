@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 88ab53208ac8bbe2
+CONTENT-HASH: 027bb179dbb0e0ef
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] linear-accelerator caption — "Se tekee voimakasta röntgensäteilyä" is fine; "Terve kudos saa vähemmän säteilyä" would read more precisely as "Terve kudos saa pienemmän annoksen" (term used in the chapter).
+- none
 
 ## Checked
-batch delta review: opened pet-ct-scanner.webp and linear-accelerator.webp, rendered both at 390 and 1280 px (float right, no clipping, no overflow). Alt texts match (hospital room with ring and patient table; blue treatment room with white machine and couch). Captions physically correct (PET detectors plus X-ray tube in PET-CT; rotating linac, several directions) and plain Finnish.
+- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.

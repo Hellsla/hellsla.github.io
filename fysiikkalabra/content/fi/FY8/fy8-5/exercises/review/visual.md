@@ -1,16 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 9eb9faed238b0eb0
-ROUND: 2
+CONTENT-HASH: 1cb309cfd128f002
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] exercises.json fy8-5-L1-09 — the ordering selects are labelled only "Sija"; the prompt states the direction, so fine.
+- none
 
 ## Checked
-- Round 1 polish resolved: state E is now "5p-tila", the energy labels are shortened to "(tila B)" etc.; no line wraps alone at 390 px.
-- Own 390 and 1280 px renders of fy8-5-L1-09 with answer and solution open (r2 captures, read as 2x tiles): the five state cards, the E_n = -13,6 eV / n^2 = ... lines (each fits the card), the closing paragraph (3d vs 4s, 5p vs 4s, |E| reversal) all readable; no clipping, no page overflow (measured). Units and state symbols in LaTeX.
-
-## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.

@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: c7f17da67b461a87
+CONTENT-HASH: 336593f28b1d9da8
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- lesson en: diff is one line break in the hc derivation; learning path, staging and exercises unchanged from the passed version.
+- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.

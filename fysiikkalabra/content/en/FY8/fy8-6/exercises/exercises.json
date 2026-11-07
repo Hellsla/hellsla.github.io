@@ -334,7 +334,7 @@
       "choices": [
         {
           "text": "The measurement has failed, because the fitted line does not pass through the origin but crosses the axis below zero.",
-          "feedback": "The line does not have to pass through the origin. The measured threshold voltage differs from the value $\\tfrac{hf}{e}$ by about the same amount for all LEDs, and this difference shifts the line without changing the slope $\\tfrac{h}{e}$."
+          "feedback": "The line does not have to pass through the origin. The measured threshold voltage differs from the value $\\tfrac{hf}{e}$ and when the difference is about the same for all LEDs, it shifts the line while hardly changing the slope."
         },
         {
           "text": "There is a systematic error in the measurement, because the Planck constant of the group is smaller than the accepted value and the difference is not zero.",

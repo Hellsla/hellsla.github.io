@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 95be813b1c35dabe
+CONTENT-HASH: bbebc74dd0fcffbb
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] Neon-signs photo (second) teaches little of the section's point (continuous vs line spectrum) and is narrower than its caption at 390 px; consider dropping or keep as context.
-- [Minor] Mineral photo crops at the right edge of the 320 px column at 390 px but nothing essential is lost.
+- none
 
 ## Checked
-batch delta review: rendered the new figure.unit-photo at 390 px and 1280 px from the built page (own captures, plus fig-row-1280 to confirm the existing figures survived); photo loads, no horizontal overflow, caption and credit line legible, alt text matches the image, LaTeX in captions renders ($6{,}3\,\text{V}$, $656\,\text{nm}$, $n = 3$) with units upright; no clipping.
+- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.

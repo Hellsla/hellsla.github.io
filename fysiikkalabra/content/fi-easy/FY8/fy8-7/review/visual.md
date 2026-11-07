@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 767ec660c17b7bea
+CONTENT-HASH: 713a11e75112cd7e
+Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] fy8-7 He-Ne-kuva — kuvassa on suljettu laatikko eikä näkyvää putkea; kuvateksti puhuu putken päistä. Kirjoita "laitteen sisällä on putki, jonka päissä on peilit".
-- [Minor] fy8-7 RGB-laserkuva — alt-teksti mainitsee "pimeässä"; lisää "vasemmalle kulkevat" tai vastaava suunta.
+- none
 
 ## Checked
-batch delta review: opened the source images in assets/pics/fy8 and rendered fy8-7: 2 photos (He-Ne laser, RGB laser beams) at 1280 and 390 px; alt text matches what is visible, captions physically correct and in plain Finnish, units in LaTeX; figure.unit-photo floats right at 1280 px (x 744, width 320), full width at 390 px, no overflow or clipping.
+- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.
