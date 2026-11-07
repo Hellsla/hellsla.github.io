@@ -11,7 +11,7 @@ RHO = 1.7e-8       # copper (ohm m)
 a = {}
 # Level 1: one formula, values given
 a["fy6-16-L1-01"] = (0.80 - 0.15) * 64                    # 15 % -> 80 % of 64 kWh: 0,65 · 64 kWh = 41,6 kWh into the battery
-a["fy6-16-L1-02"] = U * 10 / 1000                         # charging cable 10 A on 230 V: P = U I = 2300 W = 2,3 kW
+a["fy6-16-L1-02"] = U * 8.0 / 1000                        # charging cable 8,0 A on 230 V (Tukes: at most 8 A from a socket): P = U I = 1840 W = 1,8 kW
 a["fy6-16-L1-03"] = 11000 / (3 * U)                       # 11 kW three-phase: I = P : (3 U) = 11000 W : 690 V = 15,9 A
 a["fy6-16-L1-04"] = 45 * 0.14                             # 45 kWh from the grid at 14 snt/kWh = 0,14 EUR/kWh: 6,30 EUR
 a["fy6-16-L1-05"] = 44 / 50 * 100                         # 44 kWh into the battery of 50 kWh taken: eta = 0,88 = 88 %

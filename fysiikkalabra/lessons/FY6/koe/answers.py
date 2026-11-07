@@ -59,7 +59,8 @@ out["fy6-k3-a-I"] = round(I3, 5)
 UR3, R3 = 2.98, 220.0
 dU3 = 0.005 * UR3 + 2 * 0.01; dR3 = 0.05 * R3
 I3m = UR3 / R3
-out["fy6-k3-b"] = round(I3m, 6)
+out["fy6-k3-b-I"] = round(I3m, 6)
+out["fy6-k3-b-dI"] = round(I3m * (dU3 / UR3 + 0.05), 6)                 # uncertainty of the current (relative ones added)
 out["k3-b"] = {"dU": round(dU3, 4), "rel_U": round(100 * dU3 / UR3, 2), "rel_R": 5.0, "rel_I": round(100 * (dU3 / UR3 + 0.05), 2),
                "dI_mA": round(1000 * I3m * (dU3 / UR3 + 0.05), 2), "I_min_mA": round(1000 * (UR3 - dU3) / (R3 + dR3), 2),
                "I_max_mA": round(1000 * (UR3 + dU3) / (R3 - dR3), 2)}
@@ -94,7 +95,8 @@ C5, U5, Umin, P5 = 0.47, 4.5, 2.0, 15e-3
 out["fy6-k5-a-Q"] = round(C5 * U5, 3)
 out["fy6-k5-a-W"] = round(0.5 * C5 * U5 ** 2, 3)
 Wuse = 0.5 * C5 * (U5 ** 2 - Umin ** 2)
-out["fy6-k5-b"] = round(Wuse / P5, 0)
+out["fy6-k5-b-W"] = round(Wuse, 3)
+out["fy6-k5-b-t"] = round(Wuse / P5, 0)
 out["k5-b"] = {"W_left": round(0.5 * C5 * Umin ** 2, 3), "W_use": round(Wuse, 3), "min": round(Wuse / P5 / 60, 2),
                "wrong_all": round(0.5 * C5 * U5 ** 2 / P5, 0)}
 out["fy6-k5-c-start"] = round(P5 / U5, 5)

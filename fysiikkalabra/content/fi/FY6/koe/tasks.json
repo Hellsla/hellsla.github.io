@@ -384,11 +384,20 @@
      "kind": "calc",
      "points": 4,
      "text": "Opiskelija tarkistaa virran mittaamalla $220\\,\\Omega$:n etuvastuksen jännitteen yleismittarilla. Lukema on $2{,}98\\,\\text{V}$ alueella $20\\,\\text{V}$, jonka resoluutio on $0{,}01\\,\\text{V}$ ja virheraja $\\pm(0{,}5\\,\\% + 2\\ \\text{numeroa})$. Vastuksen resistanssin toleranssi on $\\pm 5\\,\\%$. Käytä mittarin virherajaa ja vastuksen toleranssia epävarmuuksina. Määritä LEDin virta ja sen epävarmuus. Kumpi epävarmuus vaikuttaa tulokseen enemmän?",
-     "answer": {
-      "value": 0.01355,
-      "unit": "A",
-      "tolerance": 0.02
-     },
+     "answer": [
+      {
+       "name": "I",
+       "value": 0.01355,
+       "unit": "A",
+       "tolerance": 0.02
+      },
+      {
+       "name": "dI",
+       "value": 0.00084,
+       "unit": "A",
+       "tolerance": 0.1
+      }
+     ],
      "criteria": [
       {
        "key": "calculation",
@@ -653,7 +662,7 @@
    "title": "Polkupyörän seisontavalo",
    "source": "example",
    "source_note": "Kondensaattorin ja valon arvot on laadittu esimerkiksi; ne ovat tyypillisiä seisontavaloille.",
-   "text": "Polkupyörän takavalossa on seisontavalo, joka palaa vielä, kun pyörä on pysähtynyt liikennevaloihin. Ajon aikana napadynamon jännite tasasuunnataan diodeilla, ja se lataa kondensaattorin, jonka kapasitanssi on $0{,}47\\,\\text{F}$, jännitteeseen $4{,}5\\,\\text{V}$. Valmistajan mukaan kondensaattorin suurin sallittu jännite on $5{,}5\\,\\text{V}$. Kun pyörä pysähtyy, punainen LED saa energiansa kondensaattorista. Oletetaan, että valo ottaa kondensaattorista vakiotehon $15\\,\\text{mW}$, kunnes kondensaattorin jännite on laskenut $2{,}0\\,\\text{V}$:iin ja valo sammuu.",
+   "text": "Polkupyörän takavalossa on seisontavalo, joka palaa vielä, kun pyörä on pysähtynyt liikennevaloihin. Ajon aikana napadynamon jännite tasasuunnataan diodeilla, ja se lataa kondensaattorin, jonka kapasitanssi on $0{,}47\\,\\text{F}$, jännitteeseen $4{,}5\\,\\text{V}$. Valmistajan mukaan kondensaattorin suurin sallittu jännite on $5{,}5\\,\\text{V}$. Kun pyörä pysähtyy, punainen LED saa energiansa kondensaattorista. Seisontavalossa on ohjauselektroniikka, joka pitää valon kondensaattorista ottaman tehon vakiona $15\\,\\text{mW}$:ssa, kunnes kondensaattorin jännite on laskenut $2{,}0\\,\\text{V}$:iin. Sen jälkeen valo sammuu.",
    "parts": [
     {
      "id": "a",
@@ -696,11 +705,20 @@
      "kind": "calc",
      "points": 4,
      "text": "Kuinka paljon energiaa seisontavalo saa kondensaattorista, ja kuinka kauan se palaa?",
-     "answer": {
-      "value": 255,
-      "unit": "s",
-      "tolerance": 0.04
-     },
+     "answer": [
+      {
+       "name": "W",
+       "value": 3.82,
+       "unit": "J",
+       "tolerance": 0.03
+      },
+      {
+       "name": "t",
+       "value": 255,
+       "unit": "s",
+       "tolerance": 0.04
+      }
+     ],
      "criteria": [
       {
        "text": "Ottaa huomioon, että valo käyttää vain jännitteiden $4{,}5\\,\\text{V}$ ja $2{,}0\\,\\text{V}$ välisen energian, koska kondensaattoriin jää sammumishetkellä energiaa $\\tfrac{1}{2}CU_2^2$.",
@@ -947,7 +965,7 @@
       {
        "key": "assumptions",
        "points": 1,
-       "detail": "Coulombin laki pätee pistevarauksille ja tasaisesti varatuille palloille; tässä kokeessa se kelpaa, kun $r$ on monta kertaa pallon säde, noin $r \\ge 5\\,\\text{cm}$."
+       "detail": "Coulombin laki pätee täsmällisesti pistevarauksille ja pallosymmetrisesti varatuille palloille; lähellä toisiaan johtavien pallojen varausjakaumat muuttuvat, joten tässä kokeessa pistevarausmalli kelpaa, kun $r$ on monta kertaa pallon säde, noin $r \\ge 5\\,\\text{cm}$."
       }
      ]
     }
@@ -1088,7 +1106,7 @@
      "id": "d",
      "kind": "calc",
      "points": 4,
-     "text": "Asentajalta putoaa jakoavain niin, että se koskettaa yhtä aikaa akuston omia napoja ja oikosulkee ne ennen sulaketta. Arvioi oikosulkuvirta. Mitä vaaraa oikosulusta on? Tasajännitteen suojajänniteraja on $120\\,\\text{V}$. Onko akuston napojen koskettaminen paljain käsin vaarallista? Perustele.",
+     "text": "Asentajalta putoaa jakoavain niin, että se yhdistää akuston navat ennen sulaketta. Arvioi oikosulkuvirta ja sen aiheuttamat vaarat. Akuston nimellisjännite on noin $51\\,\\text{V}$, ja tasajännitteen suojajänniteraja on $120\\,\\text{V}$. Miksi nimellisjännitteen vertaaminen suojajänniterajaan ei yksin riitä arvioimaan akuston käsittelyn turvallisuutta?",
      "answer": {
       "value": 6400,
       "unit": "A",
@@ -1106,12 +1124,12 @@
        "detail": "$I_\\text{k} \\approx 6\\,\\text{kA}$."
       },
       {
-       "text": "Oikosulkuvirta kuumentaa jakoavaimen ja kennot hyvin nopeasti: valokaaren, palovammojen ja tulipalon vaara. Siksi sulake on aivan akuston navan vieressä ja työkalut on eristetty.",
+       "text": "Oikosulkuvirta kuumentaa jakoavaimen ja navat hetkessä: valokaaren, palovammojen, sulan metallin roiskeiden ja tulipalon vaara. Siksi sulake on aivan akuston navan vieressä ja akuston lähellä käytetään eristettyjä työkaluja.",
        "tag": "concept",
        "points": 1
       },
       {
-       "text": "Akuston jännite, noin $51\\,\\text{V}$, on alle $120\\,\\text{V}$:n, joten kosketus kuivissa oloissa ei tavallisesti aiheuta vaarallista kehon virtaa: vaara on oikosulkuvirta, ei kosketusjännite.",
+       "text": "Perustelee, että suojajänniteraja ei tarkoita, että akuston paljaisiin napoihin olisi turvallista koskea: sähköiskun riski riippuu muun muassa kosketusolosuhteista ja virtatiestä, ja suuren energiamäärän akustossa oikosulku on erityisen vaarallinen. Paljaita johtavia osia käsitellään vain asianmukaisin suojauksin ja osaamisella valmistajan ohjeiden ja sähköturvallisuusmenettelyjen mukaan.",
        "tag": "transfer",
        "points": 1
       }
@@ -1164,7 +1182,7 @@
        "detail": "$51{,}2\\,\\text{V}$:n akusto on parempi: pienempi virta, pienemmät häviöt ja ohuempi kaapeli samalla teholla."
       },
       {
-       "text": "Jännitteen noustessa yli $120\\,\\text{V}$:n tasajännitteen kosketus muuttuu vaaralliseksi, joten tarvitaan parempi eristys ja suojaus.",
+       "text": "Jännitteen noustessa yli tasajännitteen suojajänniterajan $120\\,\\text{V}$ sähköiskun vaara kasvaa, joten tarvitaan parempi eristys ja kosketussuojaus.",
        "tag": "concept",
        "points": 1
       }

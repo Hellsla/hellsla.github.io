@@ -340,24 +340,24 @@
       "stage": "tarkista",
       "type": "choice",
       "title": "1. Käsite",
-      "prompt": "Lamppu on kahden metrin päässä paristosta. Kun kytkin suljetaan, lamppu syttyy heti, vaikka vapaat elektronit etenevät johdossa alle millimetrin sekunnissa. Miksi?",
+      "prompt": "Lamppu on kahden metrin päässä paristosta. Kun kytkin suljetaan, lamppu syttyy käytännössä heti, vaikka vapaat elektronit etenevät johdossa alle millimetrin sekunnissa. Miksi?",
       "choices": [
         {
-          "text": "Johto on täynnä vapaita elektroneja, jotka alkavat liikkua kaikkialla yhtä aikaa.",
+          "text": "Johto on valmiiksi täynnä vapaita elektroneja, ja kytkentämuutos panee ne nopeasti liikkeelle koko piirissä.",
           "correct": true,
-          "feedback": "Oikein. Kun piiri suljetaan, sähkökenttä syntyy koko johtoon lähes valon nopeudella. Hehkulangassa olevat elektronit alkavat liikkua samalla hetkellä kuin pariston vieressä olevat, joten lamppu syttyy heti."
+          "feedback": "Oikein. Kun piiri suljetaan, sähkömagneettinen häiriö etenee johdossa hyvin nopeasti mutta rajallisella nopeudella. Hehkulangan omat elektronit lähtevät liikkeelle lähes heti, eikä lampun tarvitse odottaa pariston luota tulevia elektroneja. Lyhyessä piirissä viive on niin pieni, että lamppu näyttää syttyvän heti."
         },
         {
           "text": "Elektronit kulkevat paristosta lamppuun lähes valon nopeudella, kun piiri suljetaan.",
-          "feedback": "Yksittäiset elektronit etenevät hitaasti. Lähes valon nopeudella syntyy sähkökenttä, joka panee kaikki johdon vapaat elektronit liikkeelle yhtä aikaa, myös lampussa olevat."
+          "feedback": "Yksittäiset elektronit etenevät hitaasti. Hyvin nopeasti mutta rajallisella nopeudella etenee sähkömagneettinen vaikutus, joka panee johdon vapaat elektronit liikkeelle koko piirissä, myös lampussa."
         },
         {
           "text": "Paristo on varastoinut elektroneja valmiiksi johtoon lampun lähelle.",
-          "feedback": "Paristo ei varastoi elektroneja johtoon. Johdon metallissa on aina vapaita elektroneja, ja suljettu piiri panee ne kaikki liikkumaan yhtä aikaa."
+          "feedback": "Paristo ei varastoi elektroneja johtoon. Johdon metallissa on aina vapaita elektroneja, ja kun piiri suljetaan, ne lähtevät liikkeelle koko piirissä lähes heti."
         },
         {
           "text": "Lampun hehkulanka hehkuu jo ennen kuin virta kulkee sen läpi.",
-          "feedback": "Hehkulanka hehkuu vain, kun sen läpi kulkee virta. Lamppu syttyy heti, koska kaikki johdon vapaat elektronit alkavat liikkua yhtä aikaa, myös hehkulangassa."
+          "feedback": "Hehkulanka hehkuu vain, kun sen läpi kulkee virta. Lamppu syttyy lähes heti, koska johdon vapaat elektronit lähtevät liikkeelle koko piirissä lähes heti, myös hehkulangassa."
         }
       ]
     },

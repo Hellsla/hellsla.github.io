@@ -50,8 +50,8 @@
 
 ## fy6-15-L1-06
 **Kysytty:** mikä väite suojamaadoituksen tehtävästä on oikein
-**Periaate:** Suojamaadoitus yhdistää laitteen metallirungon maahan johtimella. Jos vaihejohdin koskettaa vian takia runkoa, suuri vikavirta kulkee tätä johdinta pitkin ja sulake tai vikavirtasuoja katkaisee virran, jolloin runko ei jää jännitteiseksi.
-**Mallivastaus:** Oikea väite on se, jonka mukaan maadoitus ohjaa vikavirran johdinta pitkin maahan, jolloin sulake tai vikavirtasuoja katkaisee virran. Väite sähkönkulutuksen pienenemisestä on väärä, koska normaalikäytössä maadoitusjohtimessa ei kulje virtaa. Väite rungon eristämisestä maasta on väärä, koska maadoitus yhdistää rungon maahan, ei eristä sitä. Väite rungon jatkuvasta jännitteisyydestä on väärä, koska maadoituksen tarkoitus on estää runkoa jäämästä jännitteiseksi.
+**Periaate:** Suojamaadoitus yhdistää laitteen metallirungon suojajohtimeen. Jos vaihejohdin koskettaa vian takia runkoa, suuri vikavirta kulkee suojajohdinta pitkin takaisin sähkönsyöttöön ja sulake tai vikavirtasuoja katkaisee virran, jolloin runko ei jää jännitteiseksi.
+**Mallivastaus:** Oikea väite on se, jonka mukaan maadoitus antaa vikavirralle pienen resistanssin reitin takaisin sähkönsyöttöön, jolloin sulake tai vikavirtasuoja katkaisee virran. Väite sähkönkulutuksen pienenemisestä on väärä, koska normaalikäytössä maadoitusjohtimessa ei kulje virtaa. Väite rungon eristämisestä maasta on väärä, koska maadoitus yhdistää rungon suojajohtimeen, ei eristä sitä. Väite rungon jatkuvasta jännitteisyydestä on väärä, koska maadoituksen tarkoitus on estää runkoa jäämästä jännitteiseksi.
 
 ## fy6-15-L1-07
 **Kysytty:** mikä väite suojausluokan II laitteesta on oikein

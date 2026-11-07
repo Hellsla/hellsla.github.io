@@ -189,7 +189,7 @@ def maadoitus():
             "mikä on merkitty kipinällä ja sanalla vika. Ihminen seisoo maassa ja koskettaa kädellään laitteen runkoa. "
             "Vasemmalla, ilman maadoitusta, violetti katkoviiva ja nuoli näyttävät virran I kulkevan rungosta ihmisen käden ja "
             "kehon kautta jalkoihin ja maahan. Oikealla runkoon on kytketty keltavihreä suojamaadoitusjohdin, ja violetti "
-            "nuoli näyttää vikavirran kulkevan sitä pitkin; teksti: sulake laukeaa. Ihmisen kautta kulkee vain pieni virta, kunnes sulake katkaisee virran.")
+            "nuoli näyttää vikavirran kulkevan sitä pitkin ylöspäin takaisin kohti sähkönsyöttöä; teksti: sulake laukeaa. Ihmisen kautta kulkee vain pieni virta, kunnes sulake katkaisee virran.")
     f.tex(150, 24, r"\text{ei maadoitusta}", "middle", w=200)
     f.tex(450, 24, r"\text{suojamaadoitettu}", "middle", w=220)
     _fault_panel(f, 0, False)

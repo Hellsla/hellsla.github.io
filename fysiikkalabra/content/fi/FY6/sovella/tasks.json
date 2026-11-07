@@ -473,11 +473,20 @@
           "kind": "calc",
           "points": 4,
           "text": "Kuinka suuri energia siirtyi salamaan? Kuinka suuri osa varastoidusta energiasta tämä on, ja miksi osuus on suurempi kuin jännitteen pieneneminen?",
-          "answer": {
-            "value": 6.86,
-            "unit": "J",
-            "tolerance": 0.03
-          },
+          "answer": [
+            {
+              "name": "E",
+              "value": 6.86,
+              "unit": "J",
+              "tolerance": 0.03
+            },
+            {
+              "name": "share",
+              "value": 46.2,
+              "unit": "%",
+              "tolerance": 0.03
+            }
+          ],
           "criteria": [
             {
               "text": "Päättelee, että salamaan siirtynyt energia on kondensaattorin energian muutos: energiat lasketaan erikseen ennen ja jälkeen eikä jännitteen muutoksella $\\Delta U$ yksin.",
@@ -533,7 +542,7 @@
           "id": "d",
           "kind": "word",
           "points": 4,
-          "text": "Korjaaja irrottaa salamalaitteesta pariston ja avaa laitteen heti sen jälkeen. Arvioi, onko kondensaattorissa vaaraa, ja kuvaile, miten kondensaattori puretaan turvallisesti. Arvioi vaaraa myös laskemalla virta, jos ihmisen kehon resistanssi on noin $1{,}0\\,\\text{k}\\Omega$.",
+          "text": "Korjaaja irrottaa salamalaitteesta pariston ja avaa laitteen heti sen jälkeen. Selitä, miksi kondensaattori voi olla edelleen vaarallinen. Arvioi laskennallisesti kehon läpi kulkevan virran suuruus kuvitteellisessa kosketustilanteessa, jossa ihmisen kehon resistanssi on noin $1{,}0\\,\\text{k}\\Omega$. Miksi laitteen turvallinen huolto ja kondensaattorin jännitteettömyyden varmistaminen kuuluvat tehtävään perehtyneelle ammattilaiselle?",
           "criteria": [
             {
               "text": "Tietää, että kondensaattori säilyttää varauksensa ja energiansa, kun paristo irrotetaan: se on edelleen $300\\,\\text{V}$:ssa ja siinä on noin $15\\,\\text{J}$, vaikka laitetta syöttää pieni paristo.",
@@ -541,19 +550,19 @@
               "points": 1
             },
             {
-              "text": "Laskee virran kehon läpi: $I = \\dfrac{U}{R} = \\dfrac{300\\,\\text{V}}{1{,}0 \\cdot 10^{3}\\,\\Omega} = 0{,}30\\,\\text{A}$, mikä on moninkertainen verrattuna muutamaan kymmeneen milliampeeriin, jotka voivat jo olla vaarallisia.",
+              "text": "Laskee idealisoidun arvion virrasta kehon läpi: $I = \\dfrac{U}{R} = \\dfrac{300\\,\\text{V}}{1{,}0 \\cdot 10^{3}\\,\\Omega} = 0{,}30\\,\\text{A}$, mikä on moninkertainen verrattuna muutamaan kymmeneen milliampeeriin, jotka voivat jo olla vaarallisia.",
               "tag": "math",
               "points": 1
             },
             {
-              "text": "Kuvaa turvallisen purkamisen: napojen väliin kytketään eristetyillä työkaluilla sopiva vastus, esimerkiksi $10\\,\\text{k}\\Omega$, jolloin energia siirtyy vastuksen sisäenergiaksi ja edelleen lämpönä ympäristöön; alkuvirta on $\\dfrac{300\\,\\text{V}}{10\\,\\text{k}\\Omega} = 30\\,\\text{mA}$. Napoja ei oikosulkuteta, ja jännite varmistetaan mittarilla. Vastuksen on kestettävä alussa noin $\\dfrac{(300\\,\\text{V})^2}{10\\,\\text{k}\\Omega} = 9\\,\\text{W}$, joten sen tehonkesto on valittava sen mukaan. Kuvaus on tarkoitettu ymmärtämiseen: älä yritä purkaa itse.",
+              "text": "Perustelee, että turvallinen huolto edellyttää kondensaattorin varatun energian hallittua poistamista ja jännitteettömyyden luotettavaa varmistamista, eikä huoltoa saa yrittää ilman asianmukaista pätevyyttä ja välineitä.",
               "tag": "concept",
               "points": 1
             },
             {
               "key": "conclusion",
               "points": 1,
-              "detail": "Päättelee, että laitetta ei saa avata heti: vaara johtuu varastoituneesta energiasta ja jännitteestä eikä pariston koosta. Kehon resistanssi vaihtelee (esimerkiksi kostea iho), joten arvio on suuruusluokka."
+              "detail": "Päättelee, että laitetta ei saa avata heti: vaara johtuu varastoituneesta energiasta ja jännitteestä eikä pariston koosta. Laskettu virta on idealisoitu suuruusluokka-arvio eikä kuvaus todellisesta sähköiskusta, koska kehon resistanssi vaihtelee esimerkiksi ihon kosteuden mukaan."
             }
           ]
         }

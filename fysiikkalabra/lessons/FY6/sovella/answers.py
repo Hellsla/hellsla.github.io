@@ -81,7 +81,7 @@ C4, U4a, U4b, t4 = 330e-6, 300.0, 220.0, 1.0e-3
 Ea, Eb = 0.5 * C4 * U4a ** 2, 0.5 * C4 * U4b ** 2
 dE = Ea - Eb
 dQ = C4 * (U4a - U4b)
-out.update({"fy6-s4-a": round(Ea, 3), "fy6-s4-b": round(dE, 3), "fy6-s4-b-Eb": round(Eb, 3), "fy6-s4-b-share": round(dE / Ea, 4),
+out.update({"fy6-s4-a": round(Ea, 3), "fy6-s4-b-E": round(dE, 3), "fy6-s4-b-Eb": round(Eb, 3), "fy6-s4-b-share": round(100 * dE / Ea, 2),
             "fy6-s4-c": round(dQ / t4, 3), "fy6-s4-c-dQ": round(dQ * 1e3, 3), "fy6-s4-c-P": round(dE / t4, 1),
-            "fy6-s4-Qa": round(C4 * U4a, 4), "fy6-s4-d-I": round(U4a / 1000.0, 3), "fy6-s4-d-Ires": round(U4a / 10e3 * 1e3, 3)})
+            "fy6-s4-Qa": round(C4 * U4a, 4), "fy6-s4-d-I": round(U4a / 1000.0, 3)})
 print(json.dumps(out))
