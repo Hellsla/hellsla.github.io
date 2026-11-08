@@ -72,7 +72,9 @@
     remove: (id) => run('readwrite', (s) => s.delete(id)).then((r) => { first(id, false); changed({ id }); return r; }),
     clear: () => run('readwrite', (s) => s.clear()).then((r) => { first(null, false); changed({ all: true }); return r; }),
     // every intact record; damaged ones are counted, not returned
-    all: () => run('readonly', (s) => s.getAll()).then((rs) => ({ solutions: rs.filter(valid).map(clean), damaged: rs.filter((r) => !valid(r)).length })),
+    // all(prefix): only the records whose id starts with it (a module, "fy3-"), read by key range so a module page
+    // does not load every module's solutions and pictures (teacher 2026-11-08: FY1-FY8 in one browser)
+    all: (prefix) => run('readonly', (s) => (prefix ? s.getAll(IDBKeyRange.bound(prefix, prefix + '\uffff')) : s.getAll())).then((rs) => ({ solutions: rs.filter(valid).map(clean), damaged: rs.filter((r) => !valid(r)).length })),
     backup: () => api.all().then(({ solutions }) => JSON.stringify(Object.assign({ format: FORMAT, version: VERSION, exported: new Date().toISOString(), solutions }, readDone() ? { progress: readDone() } : {}), null, 1)),
     // a backup file's text -> the records it holds, checked before anything is written; then all are written in one
     // transaction (all or nothing). A newer version than this page knows is refused rather than half read.

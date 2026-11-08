@@ -321,7 +321,7 @@
       if (window.flPads) { try { await window.flPads.flush(); } catch (e) { throw fail(S('flush')); } }
       try { await loadStore(); } catch (e) { throw fail(S('store')); }
       let all;
-      try { all = await window.flPadStore.all(); } catch (e) { throw fail(S('no_storage')); }
+      try { all = await window.flPadStore.all(PRE); } catch (e) { throw fail(S('no_storage')); }
       const sols = all.solutions.filter(ownRec).sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
       const byId = new Map(sols.map((r) => [r.id, r]));
       const local = readLocal();
@@ -393,7 +393,7 @@
       if (sols.length !== st.solutions.length || local.length !== Object.keys(st.local).length) throw fail(S('broken'));
       try { await loadStore(); } catch (e) { throw fail(S('open_failed')); }
       let mine;
-      try { mine = new Map((await window.flPadStore.all()).solutions.map((r) => [r.id, r])); } catch (e) { throw fail(S('open_failed')); }
+      try { mine = new Map((await window.flPadStore.all(PRE)).solutions.map((r) => [r.id, r])); } catch (e) { throw fail(S('open_failed')); }
       let have = {};
       try { localStorage.length; have = readLocal(); } catch (e) { throw fail(S('open_failed')); }
       const diffS = sols.filter((r) => mine.has(r.id) && mine.get(r.id).html !== r.html);

@@ -63,6 +63,8 @@ with sync_playwright() as p:
     q.goto(BASE + "fy3-1.html"); q.evaluate(OPEN); q.evaluate(PADSTORE)
     t1 = q.evaluate("document.querySelector('#exercises li[id]').id")
     q.evaluate("(id) => window.flPadStore.put(id, 'Oma ratkaisu', 'fy3-1.html')", t1)
+    only = q.evaluate("() => window.flPadStore.put('fy1-1-L1-01', 'Toinen moduuli', 'fy1-1.html').then(() => window.flPadStore.all('fy3-')).then((r) => r.solutions.map((x) => x.id)).finally(() => window.flPadStore.remove('fy1-1-L1-01'))")
+    expect("a module page reads only its own module's solutions (key range, teacher 2026-11-08: FY1-FY8 in one browser)", t1 in only and all(i.startswith("fy3-") for i in only), only)
     first = q.evaluate("JSON.parse(localStorage.getItem('ruukkilabra:ratkaistu') || '{}')")
     expect("a solution's first save is remembered (and kept on a later save)", isinstance(first.get(t1), str) and q.evaluate("(id) => window.flPadStore.put(id, 'Muutettu', 'fy3-1.html').then(() => JSON.parse(localStorage.getItem('ruukkilabra:ratkaistu'))[id])", t1) == first[t1])
     # an answer-only task counts once every Tarkista of it has been checked, right or wrong ("Tee molemmat", 2026-11-07)

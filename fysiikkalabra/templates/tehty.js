@@ -84,7 +84,7 @@
   const FIRST = 'ruukkilabra:ratkaistu';
   const reconcile = () => {
     if (EVERY) {
-      loadStore().then(() => window.flPadStore.all()).then(({ solutions }) => {
+      loadStore().then(() => window.flPadStore.all(String(C.course || '').toLowerCase() + '-')).then(({ solutions }) => {
         let first = {}; try { first = JSON.parse(localStorage.getItem(FIRST) || '{}') || {}; } catch (e) { /* none */ }
         const now = new Date().toISOString(), out = {};
         solutions.forEach((r) => { if (ALL.has(r.id) && isSolution(r.html)) out[r.id] = typeof first[r.id] === 'string' ? first[r.id] : r.updated || now; });
@@ -97,7 +97,7 @@
     }
     const st = read(), mine = Object.keys(st.done).filter((id) => ALL.has(id));
     if (!mine.length) return;
-    loadStore().then(() => window.flPadStore.all()).then(({ solutions }) => {
+    loadStore().then(() => window.flPadStore.all(String(C.course || '').toLowerCase() + '-')).then(({ solutions }) => {
       const has = new Set(solutions.filter((r) => isSolution(r.html)).map((r) => r.id));
       mine.filter((id) => !has.has(id)).forEach(drop);
       render();
