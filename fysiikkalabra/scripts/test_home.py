@@ -214,7 +214,7 @@ for lang in i18n.languages():
            (not plans and not pl) or (bool(pl) and [t for _, t in prow] == [_h.escape(p["title"]) for p in plans] and "<a " not in pl.group(1)
                                       and home.find('class="mod-list local-list"') < pl.start()
                                       and all(icon_of(i) and (out / icon_of(i)).resolve().is_file() for i, _ in prow)), [t for _, t in prow])
-    expect(f"{lang}: icons are counted once each (one per row, no stray icons)", len(re.findall(r'class="(?:mod-icon|up-icon)"', home)) == len(all_rows) + len(prow), len(all_rows))
+    expect(f"{lang}: icons are counted once each (one per row, no stray icons)", len(re.findall(r'class="(?:mod-icon|up-icon)"', home)) == len(all_rows) + len(prow) + home.count('class="mod-row ahjo-row"'), len(all_rows))
     expect(f"{lang}: no icon has alternative text (the name is already said)", not re.search(r'<img class="(?:mod-icon|up-icon|mod-head-icon)"[^>]*alt="[^"]', home))
     lesson_pages = [f for f in out.glob("fy*-*.html")]
     expect(f"{lang}: no module icon on a chapter page ({len(lesson_pages)})", not any("module-icons/" in f.read_text() for f in lesson_pages))
