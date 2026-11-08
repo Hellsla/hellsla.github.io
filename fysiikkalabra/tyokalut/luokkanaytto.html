@@ -357,7 +357,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
           <button id="toolbarBtn" title="Näytä erikoismerkit ja kaavapainikkeet">Merkit</button>
           <button id="addImageBtn" title="Lisää kuva (tai liitä Ctrl+V)">Kuva</button>
           <button id="penBtn" title="Kynä: piirrä näytölle (P)">✎ Kynä</button>
-          <input id="imageInput" type="file" accept="image/*" multiple hidden>
+          <input id="imageInput" aria-label="Lisää kuva" type="file" accept="image/*" multiple hidden>
           <button id="textSmaller" title="Pienennä tekstiä">A−</button>
           <button id="textLarger" title="Suurenna tekstiä">A+</button>
           <button id="clearText">Tyhjennä</button>
@@ -442,7 +442,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
     <form method="dialog">
       <h2 id="uiTitle"></h2>
       <p id="uiText"></p>
-      <input id="uiInput" type="text" autocomplete="off" spellcheck="false">
+      <input id="uiInput" aria-labelledby="uiTitle uiText" type="text" autocomplete="off" spellcheck="false">
       <div class="ui-actions">
         <button type="button" id="uiCancel">Peruuta</button>
         <button type="submit" class="ui-ok" id="uiOk" value="ok">OK</button>
