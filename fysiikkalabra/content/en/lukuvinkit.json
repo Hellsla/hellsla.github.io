@@ -1,6 +1,6 @@
 {
   "_note": "English texts of the Lukuvinkit page; titles, authors, links, courses and the loan marks come from content/fi/lukuvinkit.json in the same order (scripts/reading_tips.py).",
-  "title": "Reading tips",
+  "title": "Book tips",
   "subtitle": "Physics beyond the textbook",
   "description": "Fourteen books on physics beyond the textbook: its history, everyday phenomena, thought experiments and some rather unusual questions.",
   "intro": [

@@ -478,11 +478,10 @@ PRIVACY = "tietosuoja.html"   # Tietosuoja (teacher 2026-11-04): no student data
 
 
 def front_chrome(html):
-    """The front page's own header and footer (teacher 2026-11-03): Näin opiskelet beside Moduulit and Lukuvinkit and
-    Sivustosta after them (2026-11-04); its footer is only Ruukkilabra and Tietosuoja like every page's (2026-11-04). No Moduulit link in its header:
-    the front page is the module list (teacher 2026-11-04)."""
+    """The front page's own header and footer (teacher 2026-11-03): no Moduulit link in its header, as the front page is
+    the module list (teacher 2026-11-04), and Sivustosta after Vihkot (2026-11-04); its footer is only Ruukkilabra and
+    Tietosuoja like every page's (2026-11-04). Näin opiskelet is in every page's header (templates, teacher 2026-11-08)."""
     html = re.sub(r'<a class="nav-modules" [^>]*>[^<]*</a>', "", html, count=1)
-    html = html.replace('<a class="nav-reading"', f'<a class="nav-study" href="{STUDY_PAGE}">{esc(T("site.study"))}</a><a class="nav-reading"', 1)
     html = html.replace(f'{esc(T("site.booklets"))}</a>', f'{esc(T("site.booklets"))}</a><a class="nav-about" href="{ABOUT}">{esc(T("site.about"))}</a>', 1)   # Sivustosta in the header too (teacher 2026-11-04)
     return html
 
@@ -490,15 +489,64 @@ def front_chrome(html):
 STUDY_ID = "nain-opiskelet"
 STUDY_PAGE = STUDY_ID + ".html"   # a page of its own (teacher 2026-11-04: Lukuvinkit only the books, Näin opiskelet only the study tips)
 
+# Line icons of the study guide (teacher 2026-11-08): 24 x 24, drawn with the text colour, never the only carrier of a meaning.
+STUDY_ICONS = {
+    "draw": "M4 20l1-4.2L15.6 5.2a2.1 2.1 0 0 1 3 3L8.2 19zM13.6 7.2l3 3",
+    "theory": "M12 6.5C9.5 4.8 6.5 4.6 3.5 5.5v13c3-.9 6-.7 8.5 1 2.5-1.7 5.5-1.9 8.5-1v-13c-3-.9-6-.7-8.5 1zM12 6.5v13",
+    "hint": "M9.5 18h5M10.5 21h3M12 3a6 6 0 0 0-3.6 10.8c.7.6 1.1 1.3 1.1 2.1h5c0-.8.4-1.5 1.1-2.1A6 6 0 0 0 12 3z",
+    "talk": "M4 4.5h10a1 1 0 0 1 1 1V11a1 1 0 0 1-1 1H8.5L5 15v-3H4a1 1 0 0 1-1-1V5.5a1 1 0 0 1 1-1zM18 8.5h2a1 1 0 0 1 1 1V15a1 1 0 0 1-1 1h-1v3l-3.5-3H11a1 1 0 0 1-1-1v-1",
+    "retry": "M19.5 12.5a7.5 7.5 0 1 1-2.2-5.8M19.5 3.5v4.8h-4.8",
+    "graph": "M4 3.5v16.5h16.5M7 16.5c2.5 0 3.5-8.5 6.5-8.5s3 5 6 5",
+    "explain": "M5 4.5h14a1 1 0 0 1 1 1v9.5a1 1 0 0 1-1 1h-7.5L7 19.5V16H5a1 1 0 0 1-1-1V5.5a1 1 0 0 1 1-1zM8 8.5h8M8 12h5",
+    "calc": "M6.5 3h11a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM8.5 6.5h7v3h-7zM9 13.5h.01M12 13.5h.01M15 13.5h.01M9 17h.01M12 17h.01M15 17h.01",
+    "together": "M9 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15.5 5.2a3 3 0 0 1 0 5.6M17 14.3c2.3.6 4 2.8 4 5.7",
+    "review": "M5 5h14a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zM4 9.5h16M8 3v4M16 3v4M8 13.5h.01M12 13.5h.01M16 13.5h.01M8 17h.01M12 17h.01",
+}
+STUDY_WAYS = ["draw", "theory", "hint", "talk"]                  # lang guide.ways in this order
+STUDY_TIPS = ["graph", "explain", "calc", "together", "review"]   # lang guide.tips in this order
+# Each getting-started step shows the stages of a chapter it means, numbered as in a lesson's stage bar (Pohdinta 1 ...
+# Itsearvio 7, the exercises sixth): the guide speaks the lessons' own words (inquiry.stage_*, lesson.exercises).
+STUDY_STEP_STAGES = [[1, 2, 3], [4], [5], [6]]
+
+
+def study_icon(name, cls="study-icon"):
+    return (f'<svg class="{cls}" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">'
+            f'<path d="{STUDY_ICONS[name]}"/></svg>')
+
 
 def study_guide():
-    """Näin opiskelet Ruukkilabrassa (moved from the front page 2026-11-03; its own page nain-opiskelet.html, teacher 2026-11-04): the six
-    stages with the names the lessons use (lang inquiry.stage_*), where to start, more tips behind a disclosure."""
-    stages = "".join(f'<li><strong>{T("inquiry.stage_" + k)}</strong><span>{T("site.home_path_" + k)}</span></li>' for k in inquiry.STAGE_IDS)
-    return (f'<section class="path" id="{STUDY_ID}" aria-labelledby="h-path"><h1 id="h-path">{T("site.home_path")}</h1>'
-            f'<p class="section-lead">{T("site.home_start_lead")}</p><ol class="path-steps">{stages}</ol>'
-            f'<details class="more-tips"><summary>{T("site.home_start_more")}</summary><ul>'
-            + "".join(f"<li>{esc(x)}</li>" for x in T("site.home_start_items")) + '</ul></details></section>')
+    """Näin opit fysiikkaa, nain-opiskelet.html (teacher 2026-11-08, "Näin opiskelet -sivun uudistaminen"; its own page
+    since 2026-11-04): three parts. Näin pääset alkuun: four numbered steps, each with the chapter stages it means as
+    the lesson's stage chips. Jäikö tehtävä jumiin?: a problem-solving map, the question, four ways out side by side
+    (HTML cards, so the text reflows) joined by quiet SVG lines to Yritä uudelleen itse; below 50rem the same map is a
+    vertical rail, the lines' SVGs hidden. The ways are a <ul>: no order, help may be asked at once. Viisi vinkkiä:
+    five short tips with line icons. Then the closing line and a link to the front page's module list."""
+    g = lambda k: T("guide." + k)
+    names = [T("inquiry.stage_" + k) for k in inquiry.STAGE_IDS[:5]] + [T("lesson.exercises")]
+    def chips(nums):
+        return (f'<p class="study-where"><span class="visually-hidden">{esc(g("where"))}: </span>'
+                + "".join(f'<span class="study-chip"><span class="study-chip-no" aria-hidden="true">{n}</span>{esc(names[n - 1])}</span>' for n in nums) + '</p>')
+    steps = "".join(f'<li><h3>{esc(s["title"])}</h3><p>{esc(s["text"])}</p>{chips(nums)}</li>'
+                    for s, nums in zip(g("steps"), STUDY_STEP_STAGES))
+    ways = "".join(f'<li>{study_icon(k)}<h3>{esc(w["title"])}</h3><p>{esc(w["text"])}</p></li>' for k, w in zip(STUDY_WAYS, g("ways")))
+    tips = "".join(f'<li>{study_icon(k)}<div><h3>{esc(t["title"])}</h3><p>{esc(t["text"])}</p></div></li>' for k, t in zip(STUDY_TIPS, g("tips")))
+    # the map's lines in a 400 x 40 box stretched over the row of four cards (preserveAspectRatio none, so the strokes
+    # keep their width): from the question's centre to each card's centre, and from each card back to the retry card
+    xs = [50, 150, 250, 350]
+    fan = "".join(f'<path d="M200 0C200 22 {x} 18 {x} 40"/>' for x in xs)
+    join = "".join(f'<path d="M{x} 0C{x} 22 200 18 200 40"/>' for x in xs)
+    lines = lambda d, cls: f'<svg class="stuck-lines {cls}" viewBox="0 0 400 40" preserveAspectRatio="none" aria-hidden="true" focusable="false">{d}</svg>'
+    return (f'<section class="study-intro" id="{STUDY_ID}" aria-labelledby="h-study"><h1 id="h-study">{esc(g("title"))}</h1><p class="lead">{esc(g("lead"))}</p></section>'
+            f'<section class="study-sec" id="alkuun" aria-labelledby="h-start"><h2 id="h-start">{esc(g("start_h"))}</h2>'
+            f'<ol class="study-steps">{steps}</ol></section>'
+            f'<section class="study-sec stuck" id="jumissa" aria-labelledby="h-stuck"><h2 id="h-stuck">{esc(g("stuck_h"))}</h2>'
+            f'<p class="section-lead">{esc(g("stuck_lead"))} {esc(g("stuck_note"))}</p>'
+            f'<div class="stuck-map"><p class="stuck-q">{esc(g("stuck_question"))}</p>{lines(fan, "fan")}'
+            f'<ul class="stuck-ways">{ways}</ul>{lines(join, "join")}'
+            f'<div class="stuck-retry">{study_icon("retry")}<h3>{esc(g("retry_title"))}</h3><p>{esc(g("retry_text"))}</p></div></div></section>'
+            f'<section class="study-sec" id="vinkit" aria-labelledby="h-tips"><h2 id="h-tips">{esc(g("tips_h"))}</h2>'
+            f'<ul class="study-tips">{tips}</ul></section>'
+            f'<section class="study-end"><p>{esc(g("closing"))}</p><a class="study-cta" href="index.html#moduulit">{esc(g("cta"))}<span aria-hidden="true">→</span></a></section>')
 
 
 def page(title, body, crumbs, name, description, main_class="reading", full_title=None):
@@ -1296,9 +1344,11 @@ def build_language(lang):
     (out / booklets.PAGE).write_text(page(T("site.booklets"), booklets.body(T, lang, bk_titles, lambda c: module_icons.img(c, 40)),
                                           f'<a href="index.html">{T("site.name")}</a> › {esc(T("site.booklets"))}', booklets.PAGE,
                                           T("booklets.lead"), main_class="reading booklets-page"))
-    # Näin opiskelet (teacher 2026-11-04): the study guide alone, apart from the books of Lukuvinkit
-    (out / STUDY_PAGE).write_text(page(T("site.study"), study_guide(), f'<a href="index.html">{T("site.name")}</a> › {esc(T("site.study"))}',
-                                       STUDY_PAGE, T("site.home_start_lead"), main_class="reading study-page"))
+    # Näin opiskelet (teacher 2026-11-04, renewed 2026-11-08): the study guide alone, apart from the books of Kirjavinkit;
+    # its header link says it is the page shown
+    (out / STUDY_PAGE).write_text(page(T("guide.title"), study_guide(), f'<a href="index.html">{T("site.name")}</a> › {esc(T("site.study"))}',
+                                       STUDY_PAGE, T("guide.description"), main_class="reading study-page")
+                                  .replace('<a class="nav-study" href=', '<a class="nav-study" aria-current="page" href=', 1))
     # Sivustosta (teacher 2026-11-04): the teacher's own text, content/<lang>/tietoa.md (the Finnish where a language has
     # none). No page of the site links to the teacher's portfolio (teacher 2026-11-04: students should not find it)
     about_md = next((f for f in (ROOT / "content" / lang / "tietoa.md", ROOT / "content" / i18n.SOURCE / "tietoa.md") if f.is_file()), None)
