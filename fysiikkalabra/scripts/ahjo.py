@@ -26,8 +26,16 @@ Fields of ahjo.json (texts in the file's language):
                                                                     where it is published, never copied
                              {id, category, title, text, status, courses, subjects?}
                                                                     an Ahjo guide "ahjo-<name>": "planned" is listed as
-                                                                    coming and has no page; "ready" needs its text in
-                                                                    content/<lang>/ahjo/<id>.md and becomes <id>.html
+                                                                    coming and has no page; "draft" and "ready" need
+                                                                    their text in content/<lang>/ahjo/<id>.md and become
+                                                                    <id>.html. "draft" (teacher 2026-11-08) is a written
+                                                                    guide nobody has yet tried on Ahjo's own devices: the
+                                                                    page and every list mark it "Luonnos", and only the
+                                                                    teacher sets "ready". A guide's text has the twelve
+                                                                    sections of ui.guide_sections as its ## headings, in
+                                                                    that order (one structure for every guide, after
+                                                                    SparkFun's experiment guide and Prusa's project
+                                                                    template; docs: the benchmark report)
                              {safety: true, category, courses}     the safety section
                            courses: course codes that use the resource (a module, a local or a planned course);
                            subjects: other subjects it suits, as plain words (not courses)
@@ -77,7 +85,8 @@ def mark_svg():
             '<svg x="5" y="5" width="38" height="38" viewBox="153 9 636 636">' + "".join(paths[:3]) + '</svg></svg>\n')
 PAGE, BANK, SAFETY = "ahjo.html", "ahjo-materiaalit.html", "ahjo-turvallisuus.html"
 EQUIPMENT_STATUSES = ("tuleva", "kaytossa")
-RES_STATUSES = ("planned", "ready")
+RES_STATUSES = ("planned", "draft", "ready")
+PAGED = ("draft", "ready")        # a guide with its own page
 SAFETY_STATUSES = ("valmisteilla", "hyvaksytty")
 # Not part of Ahjo (teacher 2026-11-08): never in its equipment, guides, tasks or texts
 FORBIDDEN = re.compile(r"laser|cnc|jyrsin|mill(ing)? machine", re.I)
@@ -189,7 +198,21 @@ def validate(lessons, investigations, guides, planned_codes, local_codes, module
                 if not rid.startswith("ahjo-") or not re.fullmatch(r"[a-z0-9-]+", rid): errs.append(f"{name}: {rid}: an Ahjo guide's id is ahjo-<lowercase-name>")
                 if r.get("status") not in RES_STATUSES: errs.append(f"{name}: {rid}: status must be one of {RES_STATUSES}")
                 if not r.get("title") or not r.get("text"): errs.append(f"{name}: {rid}: no title or text")
-                if r.get("status") == "ready" and not guide_file(rid, i18n.SOURCE): errs.append(f"{name}: {rid}: ready but content/fi/ahjo/{rid}.md is missing")
+                if r.get("status") in PAGED:
+                    lang = "fi" if f == SOURCE else f.parent.name
+                    g = guide_file(rid, lang)
+                    if not g: errs.append(f"{name}: {rid}: {r['status']} but content/fi/ahjo/{rid}.md is missing"); continue
+                    if g.parent.parent.name != lang: continue     # falls back to the Finnish text
+                    heads = re.findall(r"^## (.+?)\s*$", g.read_text(), re.M)
+                    if heads != d["ui"]["guide_sections"]:
+                        errs.append(f"{g.relative_to(ROOT)}: its ## headings must be the twelve guide sections in order: {d['ui']['guide_sections']}, not {heads}")
+                    if FORBIDDEN.search(g.read_text()): errs.append(f"{g.relative_to(ROOT)}: names equipment Ahjo will not have ({FORBIDDEN.search(g.read_text()).group(0)})")
+                    names = FIG_REF.findall(g.read_text()); mod = figure_module(rid) if names else None
+                    for fig in names:
+                        if not mod or fig not in mod.FIGURES: errs.append(f"{g.relative_to(ROOT)}: no figure {fig!r} in lessons/ahjo/{rid}/figures.py"); continue
+                        if lang != i18n.SOURCE:
+                            miss = draw(rid, fig, lang, mod)[1]
+                            if miss: errs.append(f"{g.relative_to(ROOT)}: figure {fig}: no translation in {rid}.figures.json for {miss}")
         if d["equipment_status"] not in EQUIPMENT_STATUSES: errs.append(f"{name}: equipment_status must be one of {EQUIPMENT_STATUSES}")
         for g in d["equipment"]:
             for it in g["items"]:
@@ -260,8 +283,9 @@ def resolve(d, ref):
             e.update(title=u["safety_page_title"], kind=u["kind_safety"], href=SAFETY, text=u["safety_page_lead"], ready=done,
                      badge=None if done else u["safety_status_valmisteilla"])
         else:
-            ready = r["status"] == "ready"
-            e.update(title=r["title"], kind=u["kind_ahjo"], href=f'{r["id"]}.html' if ready else None, text=r["text"], ready=ready)
+            ready, draft = r["status"] == "ready", r["status"] == "draft"
+            e.update(title=r["title"], kind=u["kind_ahjo"], href=f'{r["id"]}.html' if ready or draft else None, text=r["text"], ready=ready,
+                     draft=draft, badge=u["res_draft"] if draft else None)
         out.append((r["category"], e))
     return out
 
@@ -293,8 +317,10 @@ def start_body(d, planned, local, modules, ref):
     cats = []
     for c in d["categories"]:
         mine = [e for cat, e in res if cat == c["id"]]
-        ready, coming = sum(e["ready"] for e in mine), sum(not e["ready"] for e in mine)
-        n = " · ".join(([count(u, "bank_ready", ready)] if ready else []) + ([count(u, "bank_coming", coming)] if coming else [])) or u["bank_none"]
+        ready, draft = sum(e["ready"] for e in mine), sum(bool(e.get("draft")) for e in mine)
+        coming = len(mine) - ready - draft
+        n = " · ".join(([count(u, "bank_ready", ready)] if ready else []) + ([count(u, "bank_draft", draft)] if draft else [])
+                       + ([count(u, "bank_coming", coming)] if coming else [])) or u["bank_none"]
         cats.append(f'<li><a href="{BANK}#{c["id"]}">{icon(c["icon"])}<span class="ahjo-cat-t">{esc(c["title"])}</span>'
                     f'<span class="ahjo-cat-n">{esc(n)}</span></a></li>')
     bank = (f'<section class="ahjo-sec" id="materiaalipankki" aria-labelledby="h-ahjo-bank"><h2 id="h-ahjo-bank">{esc(u["bank_h"])}</h2>'
@@ -339,9 +365,10 @@ def course_body(d, c, planned, local, modules, ref):
     if c.get("lessons"):
         out += (f'<section class="ahjo-sec" id="oppitunnit" aria-labelledby="h-{k}-lessons"><h2 id="h-{k}-lessons">{esc(u["course_lessons"].replace("{n}", str(len(c["lessons"]))))}</h2>{note}'
                 + lessons_list(u, c) + '</section>')
-    mine = [e for _, e in resolve(d, ref) if c["code"] in e["courses"] and e["ready"]]
+    mine = [e for _, e in resolve(d, ref) if c["code"] in e["courses"] and e["href"] and (e["ready"] or e.get("draft"))]
     rows = "".join(f'<li><a href="{e["href"]}"><span class="ahjo-res-t">{esc(e["title"])}</span></a> <span class="ahjo-res-k">{esc(e["kind"])}</span>'
-                   f'<span class="ahjo-res-x">{esc(e["text"])}</span></li>' for e in mine)
+                   + (f' <span class="ahjo-badge planned">{esc(e["badge"])}</span>' if e.get("draft") else "")
+                   + f'<span class="ahjo-res-x">{esc(e["text"])}</span></li>' for e in mine)
     out += (f'<section class="ahjo-sec" id="materiaalit" aria-labelledby="h-{k}-materials"><h2 id="h-{k}-materials">{esc(u["course_materials_h"])}</h2>'
             f'<p class="ahjo-sec-lead">{esc(u["course_materials_lead"])}</p>'
             + (f'<ul class="ahjo-course-res">{rows}</ul>' if rows else f'<p>{esc(u["course_materials_none"])}</p>')
@@ -382,7 +409,7 @@ def bank_body(d, planned, local, modules, ref):
     u = d["ui"]; names = lambda c: course_name(c, planned, local, modules)
     res = resolve(d, ref); secs = []
     for c in d["categories"]:
-        mine = sorted((e for cat, e in res if cat == c["id"]), key=lambda e: not e["ready"])
+        mine = sorted((e for cat, e in res if cat == c["id"]), key=lambda e: (not e["ready"], not e.get("draft")))
         items = []
         for e in mine:
             title = (f'<a href="{e["href"]}">{esc(e["title"])}</a>' if e["href"] else f'<span>{esc(e["title"])}</span>')
@@ -391,7 +418,7 @@ def bank_body(d, planned, local, modules, ref):
             meta = []
             if e["courses"]: meta.append(f'<span class="ahjo-meta-l">{esc(u["res_used_by"])}:</span> {chips(e["courses"], names)}')
             if e["subjects"]: meta.append(f'<span class="ahjo-meta-l">{esc(u["res_subjects"])}:</span> {esc(", ".join(e["subjects"]))}')
-            items.append(f'<li class="ahjo-res{"" if e["ready"] else " coming"}"><p class="ahjo-res-head"><span class="ahjo-res-title">{title}</span>{lang_tag}'
+            items.append(f'<li class="ahjo-res{"" if e["ready"] or e.get("draft") else " coming"}"><p class="ahjo-res-head"><span class="ahjo-res-title">{title}</span>{lang_tag}'
                          f' <span class="ahjo-kind">{esc(e["kind"])}</span>' + (f' <span class="ahjo-badge planned">{esc(badge)}</span>' if badge else "") + '</p>'
                          f'<p class="ahjo-res-text">{esc(e["text"])}</p>' + "".join(f'<p class="ahjo-res-meta">{m}</p>' for m in meta) + '</li>')
         body = f'<ul class="ahjo-res-list">{"".join(items)}</ul>' if items else f'<p class="ahjo-empty">{esc(u["bank_none"])}</p>'
@@ -418,9 +445,54 @@ def safety_body(d, lang, render_md):
             + f'<ol class="ahjo-safety">{"".join(items)}</ol>')
 
 
+# --- a guide's figures: lessons/ahjo/<id>/figures.py (scripts/figlib.py), drawn when the page is built -----------------
+FIG_REF = re.compile(r'<svg data-fig="([A-Za-z0-9_-]+)"></svg>')   # an empty placeholder in a guide's markdown
+
+
+def figure_module(gid):
+    import importlib.util
+    f = ROOT / "lessons" / "ahjo" / gid / "figures.py"
+    if not f.is_file(): return None
+    spec = importlib.util.spec_from_file_location(f"ahjo_figures_{gid.replace('-', '_')}", f)
+    mod = importlib.util.module_from_spec(spec); spec.loader.exec_module(mod)
+    return mod
+
+
+def figure_texts(gid, lang):
+    """{Finnish text: translation} of a guide's figures in `lang` (content/<lang>/ahjo/<id>.figures.json), or None."""
+    f = ROOT / "content" / lang / "ahjo" / f"{gid}.figures.json"
+    return json.loads(f.read_text()) if lang != i18n.SOURCE and f.is_file() else None
+
+
+def draw(gid, name, lang, mod=None):
+    """(svg, Finnish texts drawn without a translation) of one figure of a guide, in `lang`."""
+    import figlib
+    mod = mod or figure_module(gid); texts = figure_texts(gid, lang)
+    if texts is not None: figlib.set_language(texts, i18n.T(lang)("format.decimal"))
+    try: return mod.FIGURES[name](), list(figlib.MISSING)
+    finally:
+        if texts is not None: figlib.set_language({}, ",")
+
+
+def guide_md(gid, lang):
+    """A guide's markdown with each `<svg data-fig="name"></svg>` as a token paragraph; (text, {token: name})."""
+    figs = {}
+    def sub(m):
+        tok = f"AHJOFIGTOKEN{len(figs)}X"; figs[tok] = m.group(1); return f"\n\n{tok}\n\n"
+    return FIG_REF.sub(sub, guide_file(gid, lang).read_text()), figs
+
+
 def guide_body(d, gid, lang, render_md):
-    r = next(r for r in d["resources"] if r.get("id") == gid)
-    return hero(d, r["title"], r["text"], BANK) + f'<article class="ahjo-guide">{render_md(guide_file(gid, lang).read_text())}</article>'
+    """An Ahjo guide's page: a draft says so first, in a note nobody can miss; then the twelve sections, with the
+    figures drawn in the page's language."""
+    r = next(r for r in d["resources"] if r.get("id") == gid); u = d["ui"]
+    note = (f'<p class="ahjo-draft" role="note">{icon("notebook")}<span><strong>{esc(u["res_draft"])}.</strong> {esc(u["guide_draft_note"])}</span></p>'
+            if r["status"] == "draft" else "")
+    text, figs = guide_md(gid, lang); body = render_md(text)
+    mod = figure_module(gid) if figs else None
+    for tok, name in figs.items():
+        body = re.sub(rf"(?:<p>)?{tok}(?:</p>)?", lambda m, name=name: f'<div class="fig ahjo-fig">{draw(gid, name, lang, mod)[0]}</div>', body)
+    return hero(d, r["title"], r["text"], BANK) + note + f'<article class="ahjo-guide">{body}</article>'
 
 
 def front_page_planned(planned, d):
@@ -429,7 +501,7 @@ def front_page_planned(planned, d):
     return [p for p in planned if p.get("icon") not in codes]
 
 
-def ready_guides(d): return [r["id"] for r in d["resources"] if r.get("id") and r.get("status") == "ready"]
+def ready_guides(d): return [r["id"] for r in d["resources"] if r.get("id") and r.get("status") in PAGED]   # every guide with a page, drafts too
 
 
 if __name__ == "__main__":

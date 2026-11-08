@@ -1,4 +1,5 @@
-"""Ahjo Makerspace pages (teacher 2026-11-08, scripts/ahjo.py) in the built site/: the three pages and the two course pages (Ahjo 1, Ahjo 2) in every language,
+"""Ahjo Makerspace pages (teacher 2026-11-08, scripts/ahjo.py) in the built site/: the three pages, the two course pages (Ahjo 1, Ahjo 2) and
+every guide with a page (a draft marked "Luonnos" first, the twelve sections, its figures drawn) in every language,
 the original logo on each, every internal link resolving to a built file or an anchor on it, no equipment the school will
 not have, the safety page marked as a draft until a topic is approved, the front page's row, and in a browser no
 sideways scroll at 360, 768 and 1280 px and a keyboard path through the section's navigation.
@@ -19,7 +20,8 @@ def expect(name, ok, got=None):
 for lang in i18n.languages():
     out = SITE if lang == i18n.SOURCE else SITE / lang
     d = ahjo.load(lang)
-    for name in (ahjo.PAGE, ahjo.BANK, ahjo.SAFETY) + tuple(ahjo.course_page(c["code"]) for c in d["courses"]):
+    guides = ahjo.ready_guides(d)
+    for name in (ahjo.PAGE, ahjo.BANK, ahjo.SAFETY) + tuple(ahjo.course_page(c["code"]) for c in d["courses"]) + tuple(f"{g}.html" for g in guides):
         f = out / name
         expect(f"{lang} {name}: built", f.is_file())
         if not f.is_file(): continue
@@ -38,6 +40,18 @@ for lang in i18n.languages():
             target = (out / path).resolve() if path else f
             if not target.is_file() or (frag and f'id="{frag}"' not in target.read_text()): bad.append(href)
         expect(f"{lang} {name}: every link resolves to a built page (and its anchor)", not bad, bad)
+    bank = (out / ahjo.BANK).read_text() if (out / ahjo.BANK).is_file() else ""
+    for g in guides:
+        r = next(r for r in d["resources"] if r.get("id") == g)
+        f = out / f"{g}.html"; html = f.read_text() if f.is_file() else ""
+        art = re.search(r'<article class="ahjo-guide">(.*?)</article>', html, re.S)
+        heads = [re.sub(r"<[^>]+>", "", h) for h in re.findall(r"<h2[^>]*>(.*?)</h2>", art.group(1))] if art else []
+        expect(f"{lang} {g}: the twelve guide sections in order", heads == d["ui"]["guide_sections"], heads)
+        expect(f"{lang} {g}: a draft says so before the guide, and the bank links it with its badge",
+               r["status"] != "draft" or (html.find('class="ahjo-draft"') != -1 and html.find('class="ahjo-draft"') < html.find('class="ahjo-guide"')
+                                         and re.search(rf'href="{g}\.html".*?{re.escape(ahjo.esc(d["ui"]["res_draft"]))}', bank, re.S) is not None))
+        placeholders = len(ahjo.FIG_REF.findall(ahjo.guide_file(g, lang).read_text()))
+        expect(f"{lang} {g}: every figure drawn ({placeholders})", art is not None and art.group(1).count('class="fig ahjo-fig"><svg') == placeholders and not ahjo.FIG_REF.search(art.group(1)))
     safety = (out / ahjo.SAFETY).read_text() if (out / ahjo.SAFETY).is_file() else ""
     approved = any(s.get("status") == "hyvaksytty" for s in d["safety"])
     expect(f"{lang}: the safety page is marked as a draft while nothing is approved", approved or ('class="ahjo-draft"' in safety and ahjo.esc(d["ui"]["safety_draft_note"].split(".")[0]) in safety))
@@ -70,12 +84,13 @@ time.sleep(1)
 try:
     with sync_playwright() as p:
         b = p.chromium.launch(**({"executable_path": os.environ["CHROMIUM_PATH"]} if os.environ.get("CHROMIUM_PATH") else {}))
-        for name in ("ahjo.html", "ahjo-1.html", "ahjo-2.html", "ahjo-materiaalit.html", "ahjo-turvallisuus.html", "en/ahjo.html", "en/ahjo-1.html"):
+        gpages = [f"{g}.html" for g in ahjo.ready_guides(ahjo.load())]
+        for name in ["ahjo.html", "ahjo-1.html", "ahjo-2.html", "ahjo-materiaalit.html", "ahjo-turvallisuus.html", "en/ahjo.html", "en/ahjo-1.html"] + gpages + ["en/" + g for g in gpages]:
             for w in (360, 768, 1280):
                 pg = b.new_page(viewport={"width": w, "height": 900}); pg.goto(f"http://localhost:{port}/{name}")
                 ov = pg.evaluate("document.documentElement.scrollWidth - innerWidth")
                 expect(f"{name} @ {w}: no sideways scroll", ov <= 0, ov)
-                small = pg.evaluate("""[...document.querySelectorAll('main a')].filter(a => { const r = a.getBoundingClientRect();
+                small = pg.evaluate("""[...document.querySelectorAll('main a')].filter(a => { if (a.closest('.ahjo-guide p, .ahjo-guide li, .ahjo-guide td')) return false; const r = a.getBoundingClientRect();
                     return r.width > 0 && r.height < 24; }).map(a => a.textContent.trim()).slice(0, 5)""")
                 expect(f"{name} @ {w}: links are at least 24 px high", not small, small)
                 pg.close()

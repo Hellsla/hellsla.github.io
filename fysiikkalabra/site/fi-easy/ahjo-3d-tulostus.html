@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>3D-tulostuksen aloitusohje — Ruukkilabra</title>
+<meta name="description" content="Mallista tulosteeksi: viipalointi, tulostus ja jälkikäsittely.">
+<link rel="canonical" href="https://ruukkilab.fi/fi-easy/ahjo-3d-tulostus.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ruukkilabra">
+<meta property="og:locale" content="fi_FI">
+<meta property="og:title" content="3D-tulostuksen aloitusohje">
+<meta property="og:description" content="Mallista tulosteeksi: viipalointi, tulostus ja jälkikäsittely.">
+<meta property="og:url" content="https://ruukkilab.fi/fi-easy/ahjo-3d-tulostus.html">
+<meta name="theme-color" content="#f7f3ec">
+<link rel="icon" href="../brand/ahjo-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="../brand/ahjo-makerspace-merkki.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../brand/ahjo-180.png">
+<link rel="stylesheet" href="../vendor/katex/katex.min.css">
+<link rel="stylesheet" href="../site.css?v=776130e8">
+</head><body>
+<div class="page">
+<header class="top">
+  <a class="brand" href="index.html" aria-label="Ruukkilabra, etusivu"><img class="brand-mark" src="../brand/ruukkilabra-symboli.svg" alt="" width="40" height="40"><span class="brand-name">Ruukkilabra<small>Lukion fysiikka</small></span></a>
+  <nav aria-label="Päävalikko"><a class="nav-modules" href="index.html#moduulit">Moduulit</a><a class="nav-study" href="nain-opiskelet.html">Näin opiskelet</a><a class="nav-reading" href="lukuvinkit.html">Kirjavinkit</a><a class="nav-booklets" href="vihkot.html">Vihkot</a><details class="lang-menu"><summary><span class="visually-hidden">Kieli: </span><span class="lang-current">Selkeä suomi</span></summary><ul class="lang-list" aria-label="Valitse kieli"><li><a class="lang" href="../ahjo-3d-tulostus.html" hreflang="fi" lang="fi">Suomi</a></li><li><a class="lang" href="../en/ahjo-3d-tulostus.html" hreflang="en" lang="en">English</a></li></ul></details></nav>
+</header>
+<nav class="crumbs" aria-label="Polku"><a href="index.html">Ruukkilabra</a> › <a href="ahjo.html">Ahjo Makerspace</a> › <a href="ahjo-materiaalit.html">Materiaalipankki</a> › 3D-tulostuksen aloitusohje</nav>
+<main class="reading ahjo-page"><header class="ahjo-hero"><img class="ahjo-logo" src="../brand/ahjo-makerspace-logo.svg" alt="Ahjo – Kiviruukin Makerspace" width="88" height="88"><div class="ahjo-hero-text"><p class="ahjo-eyebrow">Kiviruukin lukion makerspace</p><h1>3D-tulostuksen aloitusohje</h1><p class="ahjo-lead">Mallista tulosteeksi: viipalointi, tulostus ja jälkikäsittely.</p></div></header><nav class="ahjo-nav" aria-label="Ahjo Makerspace"><ul><li><a href="ahjo.html">Ahjo</a></li><li><a href="ahjo.html#opintojaksot">Opintojaksot</a></li><li><a href="ahjo-materiaalit.html" aria-current="page">Materiaalipankki</a></li><li><a href="ahjo.html#laitteisto">Laitteisto</a></li><li><a href="ahjo-turvallisuus.html">Turvallisuus</a></li></ul></nav><p class="ahjo-draft" role="note"><svg class="ahjo-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M6 3h11a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H6zM9 3v18M12 8h3.5M12 12h3.5"/></svg><span><strong>Luonnos.</strong> Tätä ohjetta ei ole vielä kokeiltu Ahjon omilla laitteilla. Laitemallit, asetukset ja ajat tarkentuvat, kun laitteet on hankittu. Noudata aina opettajan antamia ohjeita ja laitekohtaista perehdytystä.</span></p><article class="ahjo-guide"><h2>Haaste</h2>
+<p>Tulosta mallisi niin, että ensimmäinen kerros tarttuu alustaan, kappale kestää käytön ja tiedät, mitä tuloste maksoi. Kun osaat valita tulostusasennon ja tarkistaa ensimmäisen kerroksen, suurin osa epäonnistuneista tulosteista jää syntymättä.</p>
+<p>Esimerkkinä tulostetaan <a href="ahjo-3d-mallinnus.html">3D-mallinnuksen alkeissa</a> suunniteltu pidike. Valmistelu kestää noin 30 minuuttia. Itse tulostus kestää kappaleen koosta riippuen puolesta tunnista useaan tuntiin.</p>
+<h2>Oppimistavoitteet</h2>
+<p>Työn jälkeen osaat</p>
+<ul>
+<li>viedä mallin viipalointiohjelmaan ja tarkistaa sen mittakaavan</li>
+<li>valita tulostusasennon niin, että kappale kestää kuormituksen</li>
+<li>valita kerroskorkeuden, täytön ja tukirakenteet ja perustella valintasi</li>
+<li>tarkkailla ensimmäistä kerrosta ja keskeyttää tulostuksen, jos se epäonnistuu</li>
+<li>laskea tulosteen materiaalikustannuksen ja testata sen lujuuden.</li>
+</ul>
+<h2>Lähtötaso ja ennakkotaidot</h2>
+<p>Sinulla on valmis malli STL- tai 3MF-muodossa. Olet käynyt opettajan perehdytyksen siihen tulostimeen, jota käytät. Ilman perehdytystä tulostinta ei käytetä.</p>
+<h2>Laitteet ja materiaalit</h2>
+<p>Ahjon tulostimet ovat vasta hankinnassa. Ohje on kirjoitettu tavalliselle FDM-tulostimelle, joka tulostaa sulatetusta muovilangasta kerros kerrallaan. Laitekohtaiset asetukset tarkentuvat, kun tulostimet on hankittu.</p>
+<table>
+<thead>
+<tr>
+<th>Tarvike</th>
+<th>Määrä</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3D-tulostin, jolla saat tulostaa</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Vii­pa­loin­tioh­jel­ma Pru­saS­li­cer</td>
+<td>1</td>
+</tr>
+<tr>
+<td>PLA-tu­los­tus­lan­ka</td>
+<td>noin $10\,\text{g}$</td>
+</tr>
+<tr>
+<td>Lasta tu­los­teen ir­rot­ta­mi­seen</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Työn­tö­mit­ta</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Pun­nuk­set ja koukku lu­juus­tes­tiin</td>
+<td>1 sarja</td>
+</tr>
+<tr>
+<td>Suo­ja­la­sit lu­juus­tes­tiin</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h2>Turvallisuus ja perehdytys</h2>
+<p>Ahjon 3D-tulostuksen turvallisuusohje on valmisteilla: katso aihe <a href="ahjo-turvallisuus.html#3d-tulostus">3D-tulostuksen turvallisuus</a>. Ennen kuin se on hyväksytty, noudata opettajan perehdytystä ja ainakin näitä varotoimia:</p>
+<ul>
+<li>Suutin on käytön aikana noin $200\,{}^\circ\text{C}$ ja alusta noin $60\,{}^\circ\text{C}$. Älä koske kumpaankaan, ja odota, että alusta jäähtyy ennen kuin irrotat tulosteen.</li>
+<li>Älä kurota tulostimeen sen liikkuessa. Hiukset kiinni ja korut pois.</li>
+<li>Sulava muovi vapauttaa ilmaan pienhiukkasia. Tulosta vain tilassa, jonka ilmanvaihto on kunnossa, äläkä istu koko tulostusta tulostimen vieressä.</li>
+<li>Irrota tuloste lastalla itsestäsi poispäin.</li>
+<li>Lujuustestissä katkeava kappale voi sinkoutua. Käytä suojalaseja, äläkä seiso punnusten alla.</li>
+</ul>
+<h2>Työvaiheet</h2>
+<ol>
+<li>Avaa viipalointiohjelma PrusaSlicer ja valitse siitä oikea tulostin ja materiaali (PLA).</li>
+<li>Tuo malli ohjelmaan. Tarkista mitat: jos pidike näyttää sata kertaa liian pieneltä tai suurelta, malli on tallennettu väärässä yksikössä.</li>
+<li>Valitse tulostusasento. Tulostettu kappale on lujin, kun kuormitus kulkee kerrosten suuntaisesti, ja heikoin, kun kuormitus yrittää repiä kerroksia irti toisistaan. Aseta pidike kyljelleen niin, että U-muotoinen poikkileikkaus on alustan suuntainen. Silloin haarat kestävät taivutusta. Kuva alla näyttää eron.</li>
+<li>Valitse kerroskorkeus $0{,}2\,\text{mm}$ ja täyttö $20\,\%$. Ohuempi kerros tekee pinnasta sileämmän, mutta tulostus kestää kauemmin. Suurempi täyttö tekee kappaleesta lujemman ja painavamman.</li>
+<li>Tarkista, tarvitaanko tukirakenteita. Jos jokin osa kappaleesta on tyhjän päällä tai sen kaltevuus on yli noin $45^\circ$ pystysuorasta, se tarvitsee tuen. Kyljellään oleva pidike ei tarvitse tukia.</li>
+<li>Viipaloi malli. Kirjaa muistiin ohjelman arvioimat tulostusaika ja massa.</li>
+<li>Esikatsele kerrokset. Selaa kerroksia alusta alkaen ja tarkista, että ensimmäinen kerros koskettaa alustaa koko kappaleen alalta.</li>
+<li>Varmista, että alusta on puhdas, ja aloita tulostus opettajan ohjeen mukaan.</li>
+<li>Seuraa ensimmäistä kerrosta alusta loppuun. Vertaa sitä alla olevaan kuvaan. Jos lanka ei tartu tai suutin raapii alustaa, keskeytä tulostus heti ja kerro opettajalle.</li>
+<li>Kun tulostus on valmis, odota, että alusta jäähtyy. Irrota tuloste ja poista mahdolliset reunukset tai tuet varovasti.</li>
+</ol>
+<h2>Kuvat ja esimerkkikoodi</h2>
+<p>Sama palkki kahdessa tulostusasennossa. Ohuet viivat ovat tulostuskerroksia, ja punainen nuoli on palkkiin vaikuttava voima.</p>
+<div class="fig ahjo-fig"><svg viewBox="0 0 600 310" role="img" aria-label="Kaaviokuva kahdessa osassa, ei mittakaavassa. Kummassakin vasemmalla on seinä, josta lähtee vaakasuora tulostettu palkki, ja palkin vapaaseen päähän vaikuttaa alaspäin punainen voima F. Ohuet viivat näyttävät tulostuskerrokset. Vasemmalla palkki on tulostettu makuulleen, joten kerrokset kulkevat palkin suuntaisesti: tämä on vahva suunta. Oikealla palkki on tulostettu pystyyn, joten kerrokset ovat poikittain palkkiin nähden, ja seinän vieressä kahden kerroksen väliin on auennut halkeama: tämä on heikko suunta." style="max-width:100%;font-size:24px">
+  <rect x="22" y="56" width="20" height="196" fill="#c9c2b2"/>
+  <line x1="22" y1="76" x2="34" y2="64" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="22" y1="92" x2="34" y2="80" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="22" y1="108" x2="34" y2="96" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="22" y1="124" x2="34" y2="112" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="22" y1="140" x2="34" y2="128" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="22" y1="156" x2="34" y2="144" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="22" y1="172" x2="34" y2="160" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="22" y1="188" x2="34" y2="176" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="22" y1="204" x2="34" y2="192" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="22" y1="220" x2="34" y2="208" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="22" y1="236" x2="34" y2="224" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="22" y1="252" x2="34" y2="240" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <rect x="42" y="132" width="210" height="40" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
+  <line x1="42" y1="140" x2="252" y2="140" stroke="#1971c2" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="42" y1="148" x2="252" y2="148" stroke="#1971c2" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="42" y1="156" x2="252" y2="156" stroke="#1971c2" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="42" y1="164" x2="252" y2="164" stroke="#1971c2" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="238" y1="178" x2="238" y2="231" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M238,246 L231,230 L245,230 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="250" y="207.5" width="30" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$\overline{F}$</div></foreignObject>
+  <foreignObject x="83" y="273" width="134" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$\text{vahva suunta}$</div></foreignObject>
+  <foreignObject x="52" y="90.5" width="196" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:19px;color:#6b7480">$\text{kerrokset pitkittäin}$</div></foreignObject>
+  <line x1="300" y1="30" x2="300" y2="296" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 6"/>
+  <rect x="322" y="56" width="20" height="196" fill="#c9c2b2"/>
+  <line x1="322" y1="76" x2="334" y2="64" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="322" y1="92" x2="334" y2="80" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="322" y1="108" x2="334" y2="96" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="322" y1="124" x2="334" y2="112" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="322" y1="140" x2="334" y2="128" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="322" y1="156" x2="334" y2="144" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="322" y1="172" x2="334" y2="160" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="322" y1="188" x2="334" y2="176" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="322" y1="204" x2="334" y2="192" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="322" y1="220" x2="334" y2="208" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="322" y1="236" x2="334" y2="224" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="322" y1="252" x2="334" y2="240" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <rect x="342" y="132" width="210" height="40" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
+  <line x1="350" y1="132" x2="350" y2="172" stroke="#1971c2" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="358" y1="132" x2="358" y2="172" stroke="#1971c2" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="366" y1="132" x2="366" y2="172" stroke="#1971c2" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="374" y1="132" x2="374" y2="172" stroke="#1971c2" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="382" y1="132" x2="382" y2="172" stroke="#1971c2" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="390" y1="132" x2="390" y2="172" stroke="#1971c2" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="398" y1="132" x2="398" y2="172" stroke="#1971c2" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="406" y1="132" x2="406" y2="172" stroke="#1971c2" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="414" y1="132" x2="414" y2="172" stroke="#1971c2" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="422" y1="132" x2="422" y2="172" stroke="#1971c2" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="430" y1="132" x2="430" y2="172" stroke="#1971c2" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="438" y1="132" x2="438" y2="172" stroke="#1971c2" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="446" y1="132" x2="446" y2="172" stroke="#1971c2" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="454" y1="132" x2="454" y2="172" stroke="#1971c2" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="462" y1="132" x2="462" y2="172" stroke="#1971c2" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="470" y1="132" x2="470" y2="172" stroke="#1971c2" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="478" y1="132" x2="478" y2="172" stroke="#1971c2" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="486" y1="132" x2="486" y2="172" stroke="#1971c2" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="494" y1="132" x2="494" y2="172" stroke="#1971c2" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="502" y1="132" x2="502" y2="172" stroke="#1971c2" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="510" y1="132" x2="510" y2="172" stroke="#1971c2" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="518" y1="132" x2="518" y2="172" stroke="#1971c2" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="526" y1="132" x2="526" y2="172" stroke="#1971c2" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="534" y1="132" x2="534" y2="172" stroke="#1971c2" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="542" y1="132" x2="542" y2="172" stroke="#1971c2" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="550" y1="132" x2="550" y2="172" stroke="#1971c2" stroke-width="1" stroke-linecap="butt"/>
+  <path d="M350,132 l3,8 l-4,8 l5,8 l-3,7" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <line x1="538" y1="178" x2="538" y2="231" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M538,246 L531,230 L545,230 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="550" y="207.5" width="30" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$\overline{F}$</div></foreignObject>
+  <foreignObject x="377.5" y="273" width="145" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$\text{heikko suunta}$</div></foreignObject>
+  <foreignObject x="352" y="90.5" width="196" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:19px;color:#6b7480">$\text{kerrokset poikittain}$</div></foreignObject>
+</svg></div>
+<p>Ensimmäinen kerros leikkauskuvana kolmella suuttimen korkeudella. Hyvässä ensimmäisessä kerroksessa langat ovat hieman litistyneitä ja koskettavat toisiaan.</p>
+<div class="fig ahjo-fig"><svg viewBox="0 0 600 300" role="img" aria-label="Kolme leikkauskuvaa vierekkäin, ei mittakaavassa. Kussakin on harmaa tulostusalusta, sen yläpuolella suutin ja alustalla oransseja tulostuslangan poikkileikkauksia. Vasemmalla suutin on liian korkealla: langat ovat pyöreitä, niiden välissä on rakoja, ja ne ovat tuskin kiinni alustassa. Keskellä suutin on sopivalla korkeudella: langat ovat hieman litistyneitä ja koskettavat toisiaan, ja pinta on tasainen. Oikealla suutin on liian matalalla: langat ovat ohuiksi litistyneitä, ja niiden reunoille on pursunut harjanteita." style="max-width:100%;font-size:24px">
+  <rect x="10" y="204" width="180" height="18" fill="#adb5bd" stroke="#8a96a3" stroke-width="1.5"/>
+  <path d="M124,102 L176,102 L176,132 L158,166 L142,166 L124,132 Z" fill="#c4ccd4" stroke="#8a96a3" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="28" cy="194" r="10" fill="#e8590c" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="62" cy="194" r="10" fill="#e8590c" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="96" cy="194" r="10" fill="#e8590c" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="130" cy="194" r="10" fill="#e8590c" stroke="#1f2933" stroke-width="1.5"/>
+  <foreignObject x="36" y="241.5" width="128" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:21px">$\text{liian korkea}$</div></foreignObject>
+  <rect x="210" y="204" width="180" height="18" fill="#adb5bd" stroke="#8a96a3" stroke-width="1.5"/>
+  <path d="M324,128 L376,128 L376,158 L358,192 L342,192 L324,158 Z" fill="#c4ccd4" stroke="#8a96a3" stroke-width="2" stroke-linejoin="round"/>
+  <ellipse cx="228" cy="197" rx="14" ry="7" fill="#e8590c" stroke="#1f2933" stroke-width="1.5"/>
+  <ellipse cx="255" cy="197" rx="14" ry="7" fill="#e8590c" stroke="#1f2933" stroke-width="1.5"/>
+  <ellipse cx="282" cy="197" rx="14" ry="7" fill="#e8590c" stroke="#1f2933" stroke-width="1.5"/>
+  <ellipse cx="309" cy="197" rx="14" ry="7" fill="#e8590c" stroke="#1f2933" stroke-width="1.5"/>
+  <foreignObject x="263" y="241.5" width="74" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:21px">$\text{sopiva}$</div></foreignObject>
+  <rect x="410" y="204" width="180" height="18" fill="#adb5bd" stroke="#8a96a3" stroke-width="1.5"/>
+  <path d="M524,135 L576,135 L576,165 L558,199 L542,199 L524,165 Z" fill="#c4ccd4" stroke="#8a96a3" stroke-width="2" stroke-linejoin="round"/>
+  <ellipse cx="428" cy="200.5" rx="15" ry="3.5" fill="#e8590c" stroke="#1f2933" stroke-width="1.5"/>
+  <ellipse cx="442" cy="195" rx="4" ry="4" fill="#e8590c" stroke="#1f2933" stroke-width="1.5"/>
+  <ellipse cx="456" cy="200.5" rx="15" ry="3.5" fill="#e8590c" stroke="#1f2933" stroke-width="1.5"/>
+  <ellipse cx="470" cy="195" rx="4" ry="4" fill="#e8590c" stroke="#1f2933" stroke-width="1.5"/>
+  <ellipse cx="484" cy="200.5" rx="15" ry="3.5" fill="#e8590c" stroke="#1f2933" stroke-width="1.5"/>
+  <ellipse cx="498" cy="195" rx="4" ry="4" fill="#e8590c" stroke="#1f2933" stroke-width="1.5"/>
+  <ellipse cx="512" cy="200.5" rx="15" ry="3.5" fill="#e8590c" stroke="#1f2933" stroke-width="1.5"/>
+  <ellipse cx="526" cy="195" rx="4" ry="4" fill="#e8590c" stroke="#1f2933" stroke-width="1.5"/>
+  <foreignObject x="436" y="241.5" width="128" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:21px">$\text{liian matala}$</div></foreignObject>
+  <line x1="200" y1="30" x2="200" y2="280" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 6"/>
+  <line x1="400" y1="30" x2="400" y2="280" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 6"/>
+</svg></div>
+<h2>Testaa ja mittaa</h2>
+<ul>
+<li>Laske materiaalikustannus. Jos viipalointiohjelma arvioi massaksi $m = 5\,\text{g}$ ja lanka maksaa $25\,\text{€}$ kilolta eli $0{,}025\,\text{€/g}$, materiaali maksaa $5\,\text{g} \cdot 0{,}025\,\text{€/g} \approx 0{,}13\,\text{€}$. Laske sama omalle tulosteellesi.</li>
+<li>Punnitse tuloste ja vertaa massaa ohjelman arvioon.</li>
+<li>Lujuustesti: tulosta kaksi samanlaista suoraa palkkia, toinen makuulleen ja toinen pystyyn. Kiinnitä palkin toinen pää ja ripusta toiseen päähän punnuksia vähitellen lisäten, kunnes palkki taipuu selvästi tai katkeaa. Kirjaa suurin massa, jonka kumpikin kesti. Laske vastaava paino $G = mg$. Esimerkiksi $2{,}0\,\text{kg}$:n massaan kohdistuva paino on $G = 2{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 20\,\text{N}$. Painosta kerrotaan luvussa <a href="fy4-6.html">Paino, kitka ja kalteva taso</a>.</li>
+</ul>
+<h2>Jos jokin ei toimi</h2>
+<table>
+<thead>
+<tr>
+<th>Oire</th>
+<th>To­den­nä­köi­nen syy</th>
+<th>Korjaus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lanka ei tartu alustaan</td>
+<td>Suutin on liian kor­keal­la tai alusta on ras­vai­nen</td>
+<td>Pysäytä tulostus. Pyydä opet­ta­jaa sää­tä­mään en­sim­mäi­sen ker­rok­sen korkeus, ja puhdista alusta.</td>
+</tr>
+<tr>
+<td>Suutin raapii ja lanka on ohut ja uur­tei­nen</td>
+<td>Suutin on liian ma­ta­lal­la</td>
+<td>Pysäytä tulostus ja pyydä opet­ta­jaa sää­tä­mään korkeus.</td>
+</tr>
+<tr>
+<td>Kap­pa­leen kulmat nousevat irti</td>
+<td>Kappale kutistuu jääh­tyes­sään</td>
+<td>Lisää reunus (brim) ja vältä vetoa tu­los­ti­men ym­pä­ril­lä.</td>
+</tr>
+<tr>
+<td>Ilmaan tu­los­tu­va osa roikkuu</td>
+<td>Tu­ki­ra­ken­ne puuttuu</td>
+<td>Lisää tuet tai käännä kap­pa­let­ta.</td>
+</tr>
+<tr>
+<td>Tu­los­tees­sa on rihmoja</td>
+<td>Suutin vuotaa siir­ty­mis­sä</td>
+<td>Pienet rihmat voi poistaa jäl­ki­kä­sit­te­lys­sä. Jos niitä on paljon, kerro opet­ta­jal­le.</td>
+</tr>
+<tr>
+<td>Tulostin pysähtyy kesken</td>
+<td>Lanka loppui tai juuttui</td>
+<td>Älä yritä avata tu­los­tin­ta itse. Kerro opet­ta­jal­le.</td>
+</tr>
+</tbody>
+</table>
+<h2>Jatkotehtävä</h2>
+<ol>
+<li>Täytön vaikutus. Tulosta sama palkki täytöillä $10\,\%$, $20\,\%$ ja $40\,\%$. Tee lujuustesti ja piirrä kuvaaja, jossa on suurin kestetty massa täytön funktiona. Onko riippuvuus lineaarinen?</li>
+<li>Ajan ja laadun vaihtokauppa. Viipaloi sama malli kerroskorkeuksilla $0{,}1\,\text{mm}$, $0{,}2\,\text{mm}$ ja $0{,}3\,\text{mm}$, ja kirjaa tulostusajat. Milloin hitaampi tulostus kannattaa?</li>
+<li>Kestävä valinta. Selvitä, mitä Ahjossa tehdään epäonnistuneille tulosteille. Laske, paljonko materiaalia luokkasi epäonnistuneisiin tulosteisiin kuluu jakson aikana.</li>
+</ol>
+<h2>Dokumentoi</h2>
+<p>Kirjaa projektipäiväkirjaan</p>
+<ul>
+<li>valitsemasi tulostusasento, kerroskorkeus, täyttö ja tukirakenteet sekä perustelut niille</li>
+<li>ohjelman arvioima ja punnittu massa, tulostusaika ja materiaalikustannus</li>
+<li>valokuva ensimmäisestä kerroksesta ja valmiista tulosteesta</li>
+<li>lujuustestin tulokset taulukkona</li>
+<li>jos tulostus epäonnistui: kuva, todennäköinen syy ja mitä muutit. Hyvin dokumentoitu epäonnistuminen on arvokas tulos.</li>
+</ul>
+<h2>Opettajalle: valmistelu</h2>
+<ul>
+<li>Tämä on luonnos: Ahjon tulostimia ei ole vielä valittu, eikä ohjetta ole kokeiltu niillä. Viipalointiin käytetään PrusaSliceria. Täydennä tulostinkohtaiset profiilit ja asetukset sekä tulostusjonon käytäntö, kun laitteet on hankittu.</li>
+<li>Ohjeen turvallisuuskohdat ovat yleisiä varotoimia. Ne eivät korvaa koulun hyväksymää 3D-tulostuksen turvallisuusohjetta, joka on vielä valmisteilla.</li>
+<li>Tarkista ilmanvaihto tulostinten sijoituspaikassa ja se, voiko tulostimen jättää käymään valvomatta.</li>
+<li>Tulosta lujuustestin palkit valmiiksi, jos tulostusaikaa on vähän. Varaa punnukset, joiden yhteismassa on vähintään $3\,\text{kg}$.</li>
+<li>Lujuustesti ja kustannuslaskelma yhdistävät työn fysiikkaan (paino, luku <a href="fy4-6.html">Paino, kitka ja kalteva taso</a>) ja yrittäjyyteen (tuotteen hinta Ahjo 2 -projekteissa).</li>
+<li>Ohjeen rakenne on saanut vaikutteita Prusan opetusmateriaalien projektipohjasta. Teksti ja kuvat on tehty Ruukkilabraan.</li>
+</ul></article></main>
+<footer class="bottom"><span>Ruukkilabra</span><a href="tyokalut.html">Työkalut</a><a href="tietosuoja.html">Tietosuoja</a><span class="copyright">© 2026 Lauri Hellsten</span></footer>
+</div>
+<script src="../vendor/katex/katex.min.js"></script><script src="../vendor/katex/contrib/auto-render.min.js" onload="renderMathInElement(document.querySelector('main'),{delimiters:[{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+</body></html>
