@@ -321,12 +321,13 @@ def nav(d, current):
             + '</ul></nav>')
 
 
-def hero(d, title, lead, current, big=False, extra="", title_icon=""):
-    """The section's own banner: the original logo (large on the start page), the school's line, the heading."""
-    size = 168 if big else 88
+def hero(d, title, lead, current, big=False, extra="", logo=None):
+    """The section's own banner: the original logo (large on the start page), the school's line, the heading. A course
+    page passes its own logo (the course icon, large) and shows Ahjo's logo in its shared section (teacher 2026-11-08)."""
+    size = 168 if big else 124
     return (f'<header class="ahjo-hero{" ahjo-hero-big" if big else ""}">'
-            f'<img class="ahjo-logo" src="{LOGO_SRC}" alt="{esc(d["ui"]["logo_alt"])}" width="{size}" height="{size}">'
-            f'<div class="ahjo-hero-text"><p class="ahjo-eyebrow">{esc(d["eyebrow"])}</p><h1{' class="ahjo-h1-icon"' if title_icon else ''}>{title_icon}{esc(title)}</h1>'
+            + (logo or f'<img class="ahjo-logo" src="{LOGO_SRC}" alt="{esc(d["ui"]["logo_alt"])}" width="{size}" height="{size}">') +
+            f'<div class="ahjo-hero-text"><p class="ahjo-eyebrow">{esc(d["eyebrow"])}</p><h1>{esc(title)}</h1>'
             f'<p class="ahjo-lead">{esc(lead)}</p>{extra}</div></header>' + nav(d, current))
 
 
@@ -456,16 +457,17 @@ def course_body(d, c, planned, local, modules, ref):
     """Ahjo 1 or Ahjo 2 on its own page (teacher 2026-11-08): the licence (Ahjo 1), contents, goals, the 16 lessons with
     their pictures, and links to Ahjo's shared materials, which stay in the bank (linked, never copied)."""
     u = d["ui"]; title, text, _ = course_info(c["code"], planned, local); k = c["code"].lower()
-    ic = f'<img src="module-icons/{k}.svg" alt="" width="56" height="56" aria-hidden="true">' if (ROOT / "assets/shared/module-icons" / f"{k}.svg").is_file() else ""
-    out = hero(d, title, c["subtitle"], PAGE + "#opintojaksot", extra=f'<p class="ahjo-opening">{esc(text)}</p>', title_icon=ic)
+    # the course's own logo large in the banner; Ahjo's logo heads the shared section below (teacher 2026-11-08)
+    out = hero(d, title, c["subtitle"], PAGE + "#opintojaksot", big=True, extra=f'<p class="ahjo-opening">{esc(text)}</p>',
+               logo=f'<img class="ahjo-logo ahjo-course-logo" src="module-icons/{k}.svg" alt="" width="168" height="168">')
     eq = "#laitteisto"
-    tiles = [(PAGE, f'<img class="ahjo-shared-mark" src="{MARK_SRC}" alt="" width="40" height="40" aria-hidden="true">', d["title"], u["shared_home"]),
-             (BANK, icon("box", "ahjo-icon ahjo-shared-icon"), u["bank_h"], u["shared_bank"]),
+    tiles = [(BANK, icon("box", "ahjo-icon ahjo-shared-icon"), u["bank_h"], u["shared_bank"]),
              (PROJECTS, icon("cube", "ahjo-icon ahjo-shared-icon"), u["projects_h"], u["projects_teaser"]),
              (PAGE + eq, icon("tools", "ahjo-icon ahjo-shared-icon"), u["equipment_h_" + d["equipment_status"]], u["shared_equipment"]),
              (SAFETY, icon("shield", "ahjo-icon ahjo-shared-icon"), u["safety_h"], u["shared_safety"])]
-    out += (f'<section class="ahjo-sec ahjo-shared" aria-labelledby="h-{k}-shared"><h2 id="h-{k}-shared">{esc(u["shared_h"])}</h2>'
-            f'<p class="ahjo-sec-lead">{esc(u["shared_lead"])}</p><ul class="ahjo-shared-list">'
+    out += (f'<section class="ahjo-sec ahjo-shared" aria-labelledby="h-{k}-shared"><div class="ahjo-shared-head">'
+            f'<a class="ahjo-shared-home" href="{PAGE}"><img class="ahjo-logo ahjo-shared-logo" src="{LOGO_SRC}" alt="{esc(u["logo_alt"])}" width="104" height="104"></a>'
+            f'<div><h2 id="h-{k}-shared">{esc(u["shared_h"])}</h2><p class="ahjo-sec-lead">{esc(u["shared_lead"])}</p></div></div><ul class="ahjo-shared-list">'
             + "".join(f'<li><a href="{h}">{ic}<span class="ahjo-shared-t">{esc(t)}</span><span class="ahjo-shared-x">{esc(x)}</span></a></li>' for h, ic, t, x in tiles)
             + '</ul></section>')
     if c.get("license"):
