@@ -3166,6 +3166,7 @@
     "examples_h": "Esimerkkejä",
     "shot_opiskelija": "Opiskelijan moduulisivu kuuden viikon jälkeen: tehdyt tehtävät päivä päivältä ja oma itsearvio luvuittain.",
     "shot_opettaja-kooste": "Arviointisivun kooste: 30 keksittyä opiskelijaa kuuden viikon ajalta, tehdyt tehtävät, pisteet ja itsearvio.",
+    "shot_opettaja-sormenjalki": "Koko ryhmän osaamisen sormenjälki: jokaisen opiskelijan itsearvio luvun tavoitteista väite väitteeltä, teemoittain ja luvuittain (keksityt opiskelijat).",
     "shot_opettaja-arviointi": "Arviointi tehtävä kerrallaan: tehtävänanto, opiskelijan vastaus ja pisteet 0–1 nuolinäppäimillä."
   },
   "guide": {

@@ -741,7 +741,7 @@ function rlOverview() {
     var self = (c.self || []).length ? { items: c.self, students: subs.map(function (s) { return { email: s.email, levels: rlLatest_(s, c.id).self }; }) } : null;
     return { id: c.id, number: c.number, title: c.title, submissions: subs.length, tasks: tasks, self: self };
   });
-  return { course: RL_COURSE.id, group: RL_CONFIG.GROUP || '', maxPoints: RL_CONFIG.MAX_POINTS, students: m.students.length, chapters: chapters,
+  return { course: RL_COURSE.id, group: RL_CONFIG.GROUP || '', maxPoints: RL_CONFIG.MAX_POINTS, students: m.students.length, chapters: chapters, themes: RL_COURSE.themes || [],
            summary: rlSummary_(m), problems: m.problems };
 }
 // Jonossa vain opiskelijat, joiden jossakin palautuksessa tehtävään on ratkaisu (opettaja 6.11.2026: tyhjiä ei näytetä);

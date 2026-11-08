@@ -3,7 +3,7 @@
    remembered in this browser; Finnish by default). Every text the page writes (texts, titles, aria-labels, alts,
    confirmations, the CSV's header row) passes tr(): known Finnish pieces -> English, the rest (names, numbers, dates)
    as they are. The task statements, model answers, the students' answers and the chapters' goals are not touched:
-   they are the course's own Finnish texts (the chapters' English names come from RL_COURSES title_en).
+   they are the course's own Finnish texts (the chapters' and themes' English names come from RL_COURSES title_en).
    Changing the language reloads the page; the points and imports are kept in the browser. */
 (function () {
   'use strict';
@@ -60,6 +60,8 @@
     'Pohdinta': 'Think about it', 'Ennusta': 'Predict', 'Tutki': 'Investigate', 'Käsitetehtävä': 'Concept task',
     'Laskutehtävä': 'Calculation task', 'Selitystehtävä': 'Explanation task', 'Ennuste': 'Prediction', 'Johtopäätös': 'Conclusion',
     'Koe': 'Experiment', 'Lisätutkimus': 'Further investigation', 'Teoria': 'Theory', 'Esimerkit': 'Examples', 'Esimerkki': 'Example',
+    
+    ', väite ': ', statement ',
     'Ei vastattu': 'Not answered', 'Väittämä': 'Statement', 'Ei vielä': 'Not yet',
     'oppitunnin tehtävä, ei pisteitä': "lesson's task, no points", 'Vain arvioimattomat (': 'Ungraded only (', ' ratkaisua)': ' solutions)',
     'Kaikki tämän tehtävän ratkaisut on arvioitu.': 'All solutions to this task are graded.',
@@ -174,6 +176,7 @@
   try {
     Object.keys(window.RL_COURSES || {}).forEach(function (c) {
       (RL_COURSES[c].chapters || []).forEach(function (ch) { if (ch.title_en) TITLES[ch.title] = ch.title_en; });
+      (RL_COURSES[c].themes || []).forEach(function (th) { if (th.title_en) TITLES[th.title] = th.title_en; });   // the group fingerprint's themes
     });
   } catch (e) {}
   var TITLE_RE = Object.keys(TITLES).length ? new RegExp(Object.keys(TITLES).sort(function (a, b) { return b.length - a.length; }).map(esc).join('|'), 'g') : null;
