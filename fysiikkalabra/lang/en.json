@@ -3166,7 +3166,7 @@
     "examples_h": "Examples",
     "shot_opiskelija": "A student's module page after six weeks: the tasks done day by day and the student's own self-assessment chapter by chapter (Finnish view).",
     "shot_opettaja-kooste": "The grading page's summary: 30 made-up students over six weeks, the tasks done, the points and the self-assessment.",
-    "shot_opettaja-sormenjalki": "The whole group's skills fingerprint: each student's self-assessment of the chapter's goals, statement by statement, by theme and chapter (made-up students).",
+    "shot_opettaja-sormenjalki": "Group's learning fingerprint: each student's self-assessment of the chapter's goals, statement by statement, by theme and chapter (made-up students).",
     "shot_opettaja-arviointi": "Grading one task at a time: the task, the student's answer and the points 0–1 with the arrow keys."
   },
   "guide": {

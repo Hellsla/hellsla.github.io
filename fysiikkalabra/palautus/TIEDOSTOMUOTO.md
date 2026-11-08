@@ -81,7 +81,7 @@ tiedoston `version` on 2 ja siinä on lisäksi
 - `history`: jokainen tason muutos aikaleimoineen (UTC), enintään 50 uusinta.
 - `content_sha256` lasketaan versiossa 2 merkkijonosta `JSON.stringify({answers: <kuten yllä>, selfassessment: <items>})`,
   joten muuttunut itsearvio antaa uuden palautuksen.
-- Tuonti hyväksyy versiot 1 ja 2. Arviointisivun *Osaamisen sormenjälki* näyttää ryhmän uusimpien palautusten tasot väreinä: rivit kohteita luvuittain, sarakkeissa opiskelijat, valkoinen = ei vastattu, harmaa = en ole vielä harjoitellut.
+- Tuonti hyväksyy versiot 1 ja 2. Arviointisivun *Ryhmän sormenjälki* näyttää ryhmän uusimpien palautusten tasot väreinä: rivit kohteita luvuittain, sarakkeissa opiskelijat, valkoinen = ei vastattu, harmaa = en ole vielä harjoitellut.
 
 ## Versio 3: kaikki vastaukset ja tavoitearvioiden kooste (6.11.2026)
 

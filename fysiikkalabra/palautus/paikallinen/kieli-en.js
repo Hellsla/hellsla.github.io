@@ -29,7 +29,7 @@
     'RuukkiLabra · arviointi': 'RuukkiLabra · grading', 'Päivitä': 'Refresh', 'Ladataan…': 'Loading…', 'Luvut': 'Chapters',
     'Ensimmäinen luku': 'First chapter', 'Viimeinen luku': 'Last chapter', 'Kooste': 'Summary', 'Piilota nimet': 'Hide names',
     'Näytä nimet': 'Show names', 'Ei palautuksia.': 'No submissions.', 'Ryhmä yhteensä': 'Group in total',
-    'Osaamisen sormenjälki': 'Skills fingerprint', 'Tehtävät': 'Tasks', 'Vain arvioimattomat': 'Ungraded only',
+    'Ryhmän sormenjälki': "Group's learning fingerprint", 'Tehtävät': 'Tasks', 'Vain arvioimattomat': 'Ungraded only',
     'Tarkistettavat ja hylätyt palautukset': 'Submissions to check and rejected submissions', 'Tila': 'Status', 'Luku': 'Chapter',
     'Opiskelija': 'Student', 'Palautusaika': 'Submitted', 'Tunniste': 'ID', 'Syy': 'Reason', 'Päätös': 'Decision',
     '← Tehtävälista': '← Task list', 'Palautusversio': 'Submission version', 'Tehtävänanto': 'Task',
