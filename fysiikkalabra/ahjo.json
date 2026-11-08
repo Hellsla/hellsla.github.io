@@ -138,6 +138,7 @@
     "challenge_min": "{n} min",
     "challenge_lesson": "Ahjo 1, tunti {n}",
     "challenge_materials": "Tarvitset",
+    "challenge_guide": "Työohje",
     "challenge_induction": "Vaatii laiteperehdytyksen",
     "lesson_challenge": "Valinnainen lisähaaste",
     "lesson_final": "Miniprojektin vaihtoehdot",
@@ -845,6 +846,36 @@
         "AHJO1",
         "AHJO2",
         "KILPAROBO"
+      ]
+    },
+    {
+      "id": "ahjo-valokortti",
+      "category": "elektroniikka",
+      "title": "Valokortti paperipiirillä",
+      "text": "Kortti, jonka LED syttyy kuparinauhasta ja nappiparistosta tehdyllä paperipiirillä.",
+      "status": "draft",
+      "courses": [
+        "AHJO1"
+      ]
+    },
+    {
+      "id": "ahjo-savelma",
+      "category": "elektroniikka",
+      "title": "Summerin sävelmä",
+      "text": "Arduino soittaa melodian passiivisella pietsosummerilla, ja sävelten taajuudet lasketaan kaavalla.",
+      "status": "draft",
+      "courses": [
+        "AHJO1"
+      ]
+    },
+    {
+      "id": "ahjo-harjarobotti",
+      "category": "robotiikka",
+      "title": "Harjarobotti",
+      "text": "Hammasharjan päästä ja värinämoottorista tehty robotti, jonka nopeus mitataan.",
+      "status": "draft",
+      "courses": [
+        "AHJO1"
       ]
     },
     {
@@ -1698,6 +1729,7 @@
       "title": "Valokortti paperipiirillä",
       "minutes": 30,
       "lesson": 1,
+      "guide": "ahjo-valokortti",
       "make": "Kortti, jossa LED syttyy, kun taitat kulman kiinni.",
       "subjects": [
         "kuvataide"
@@ -1712,7 +1744,7 @@
       "levels": {
         "try": "Liimaa kuparinauhasta kaksi rataa kortille, laita LED ja paristo niiden väliin ja taita kulma kytkimeksi.",
         "modify": "Piirrä tai leikkaa kortin kanteen kuva, jonka läpi valo näkyy.",
-        "challenge": "Lisää toinen LED rinnan. Selitä, miksi molemmat palavat yhtä kirkkaasti."
+        "challenge": "Lisää toinen LED rinnan ja vertaa kirkkautta yhden LEDin korttiin."
       }
     },
     {
@@ -1826,6 +1858,7 @@
       "title": "Summerin sävelmä",
       "minutes": 30,
       "lesson": 9,
+      "guide": "ahjo-savelma",
       "make": "Arduino soittaa pietsosummerilla tutun tai oman sävelmän.",
       "subjects": [
         "musiikki",
@@ -1833,11 +1866,11 @@
       ],
       "materials": [
         "Arduino Uno",
-        "pietsosummeri",
+        "passiivinen pietsosummeri",
         "johtoja"
       ],
       "levels": {
-        "try": "Kytke summeri pinniin 8 ja soita yksi sävel komennolla tone(8, 440, 500).",
+        "try": "Kytke passiivinen summeri pinniin 8 ja soita yksi sävel komennolla tone(8, 440, 500).",
         "modify": "Kirjoita kahdeksan sävelen melodia ja muuta tempoa.",
         "challenge": "Laske asteikon taajuudet kaavalla $f = 440\\,\\text{Hz} \\cdot 2^{n/12}$ ja soita duuriasteikko."
       }
@@ -1891,6 +1924,7 @@
       "title": "Harjarobotti",
       "minutes": 30,
       "lesson": 11,
+      "guide": "ahjo-harjarobotti",
       "make": "Hammasharjan päästä ja värinämoottorista tehty pieni robotti.",
       "subjects": [
         "muotoilu",

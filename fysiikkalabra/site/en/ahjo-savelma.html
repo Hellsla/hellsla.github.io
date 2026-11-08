@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A buzzer tune — Ruukkilabra</title>
+<meta name="description" content="The Arduino plays a melody on a passive piezo buzzer, and the frequencies of the notes are worked out with a formula.">
+<link rel="canonical" href="https://ruukkilab.fi/en/ahjo-savelma.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ruukkilabra">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="A buzzer tune">
+<meta property="og:description" content="The Arduino plays a melody on a passive piezo buzzer, and the frequencies of the notes are worked out with a formula.">
+<meta property="og:url" content="https://ruukkilab.fi/en/ahjo-savelma.html">
+<meta name="theme-color" content="#f7f3ec">
+<link rel="icon" href="../brand/ahjo-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="../brand/ahjo-makerspace-merkki.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../brand/ahjo-180.png">
+<link rel="stylesheet" href="../vendor/katex/katex.min.css">
+<link rel="stylesheet" href="../site.css?v=ffec1a1f">
+</head><body>
+<div class="page">
+<header class="top">
+  <a class="brand" href="index.html" aria-label="Ruukkilabra, home page"><img class="brand-mark" src="../brand/ruukkilabra-symboli-kiviruukki.svg" alt="" width="40" height="40"><span class="brand-name">Ruukkilabra<small>Upper secondary physics</small></span></a>
+  <nav aria-label="Main menu"><a class="nav-modules" href="index.html#moduulit">Modules</a><a class="nav-study" href="nain-opiskelet.html">How to study</a><a class="nav-reading" href="lukuvinkit.html">Book tips</a><a class="nav-booklets" href="vihkot.html">Booklets</a><details class="lang-menu"><summary><span class="visually-hidden">Language: </span><span class="lang-current">English</span></summary><ul class="lang-list" aria-label="Choose a language"><li><a class="lang" href="../ahjo-savelma.html" hreflang="fi" lang="fi">Suomi</a></li><li><a class="lang" href="../fi-easy/ahjo-savelma.html" hreflang="fi" lang="fi">Selkeä suomi</a></li></ul></details></nav>
+</header>
+<nav class="crumbs" aria-label="Path"><a href="index.html">Ruukkilabra</a> › <a href="ahjo.html">Ahjo Makerspace</a> › <a href="ahjo-materiaalit.html">Resource bank</a> › A buzzer tune</nav>
+<main class="reading ahjo-page"><header class="ahjo-hero"><img class="ahjo-logo" src="../brand/ahjo-makerspace-logo.svg" alt="Ahjo – Kiviruukin Makerspace" width="124" height="124"><div class="ahjo-hero-text"><p class="ahjo-eyebrow">Kiviruukin lukio&#x27;s makerspace</p><h1>A buzzer tune</h1><p class="ahjo-lead">The Arduino plays a melody on a passive piezo buzzer, and the frequencies of the notes are worked out with a formula.</p></div></header><nav class="ahjo-nav" aria-label="Ahjo Makerspace"><ul><li><a href="ahjo.html">Ahjo</a></li><li><a href="ahjo.html#opintojaksot">Courses</a></li><li><a href="ahjo-materiaalit.html" aria-current="page">Resource bank</a></li><li><a href="ahjo-projektit.html">Projects</a></li><li><a href="ahjo.html#laitteisto">Equipment</a></li><li><a href="ahjo-turvallisuus.html">Safety</a></li></ul></nav><p class="ahjo-draft" role="note"><svg class="ahjo-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M6 3h11a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H6zM9 3v18M12 8h3.5M12 12h3.5"/></svg><span><strong>Draft.</strong> This guide has not yet been tried on Ahjo&#x27;s own devices. Device models, settings and times will be confirmed once the devices have been acquired. Always follow your teacher&#x27;s instructions and the device-specific induction.</span></p><article class="ahjo-guide"><section class="ahjo-quick" aria-labelledby="pikastartti"><h2 id="pikastartti">Quick start</h2>
+<p>You get the Arduino playing a tune in about ten minutes, and you do not have to write any code yourself. Your teacher has installed the Arduino IDE and saved a ready-made program. Always make connections with the USB cable unplugged.</p>
+<ol>
+<li>Connect the plus leg or the red wire of the piezo buzzer to the Arduino's pin 8 and the other leg to a GND pin.</li>
+<li>Plug in the USB cable and open your teacher's ready-made program or copy the example code below.</li>
+<li>Choose Arduino Uno as the board and the right port, and press Upload.</li>
+<li>The buzzer plays the beginning of the folk song Ukko Nooa.</li>
+</ol>
+<h3>Try</h3>
+<p>Make the buzzer play with the ready-made program.</p>
+<h3>Modify</h3>
+<p>Change the notes and their lengths and make your own melody, jingle or alarm sound. Change the tempo.</p>
+<h3>Challenge yourself</h3>
+<p>Work out the frequencies of a major scale with the formula and play the scale. The instructions are below in the Learn more part.</p>
+</section><div class="ahjo-more-band"><h2 id="opi-lisaa">Learn more</h2><p>This part goes through the work thoroughly: why it works, the exact steps, measurements and solving problems.</p></div><h2>Challenge</h2>
+<p>Program the Arduino to play a tune of your own. A piezo buzzer vibrates in time with the changing voltage of the pin, and you hear the frequency of the vibration as pitch. When you know how frequency and pitch are related, you can work out the frequency of any note.</p>
+<p>The work takes about 30 minutes. You can spend as long as you like composing your own melody.</p>
+<h2>Learning goals</h2>
+<p>After the work you can</p>
+<ul>
+<li>connect a buzzer to an Arduino and play a note with the <code>tone()</code> command</li>
+<li>store a melody in arrays and play it in a loop</li>
+<li>explain how frequency and pitch are related</li>
+<li>work out the frequency of a note with the formula of equal temperament.</li>
+</ul>
+<h2>Starting level and prior skills</h2>
+<p>You have done <a href="ahjo-arduino.html">First steps with Arduino</a> or you know how to upload a program to an Arduino. Sound and frequency are explained in the chapter <a href="fy5-14.html">Sound as a wave: pitch, timbre and the Doppler effect</a>.</p>
+<h2>Equipment and materials</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Quantity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Arduino Uno and USB cable</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Passive piezo buzzer</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Jumper wires (male–male) or a breadboard</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Computer with the Arduino IDE</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>Use a passive buzzer. An active buzzer only plays its own fixed sound and does not follow the frequency of the <code>tone()</code> command. You can often recognise a passive buzzer by the circuit board visible underneath it, and it only clicks when you connect it straight to $5\,\text{V}$.</p>
+<h2>Safety and induction</h2>
+<p>Ahjo's safety instructions are still being prepared. See the topic <a href="ahjo-turvallisuus.html#elektroniikka">Soldering and electronics work</a> and follow your teacher's induction.</p>
+<ul>
+<li>Make and change connections only when the USB cable is unplugged.</li>
+<li>Close to the ear the sound of a buzzer is loud. Keep the buzzer on the table and do not put it next to your ear.</li>
+<li>Agree with your group when to play. Ten buzzers at once make a harsh soundscape.</li>
+</ul>
+<h2>Steps</h2>
+<ol>
+<li>Unplug the USB cable. Connect the plus leg or the red wire of the buzzer to pin 8 and the other leg to a GND pin. If the buzzer has no marking, you can connect it either way round.</li>
+<li>Check the connection against the drawing and then plug in the USB cable.</li>
+<li>Open the Arduino IDE and type or copy the program below.</li>
+<li>Choose Arduino Uno as the board and the right port, and upload the program with the Upload button. The buzzer plays the melody, pauses for two seconds and starts again.</li>
+<li>Change the value of the constant <code>TEMPO</code> and upload the program again. What happens?</li>
+<li>Change the arrays <code>melodia</code> and <code>kestot</code> and make your own melody. Both arrays must contain the same number of numbers, and the constant <code>N</code> must be that same number.</li>
+</ol>
+<h2>Diagrams and example code</h2>
+<p>Circuit diagram: the buzzer is between pin 8 and ground.</p>
+<div class="fig ahjo-fig"><svg viewBox="0 0 600 300" role="img" aria-label="Circuit diagram, not to scale. On the left is the Arduino board drawn as a box with two connections on its right edge: digital pin D8 above and ground GND below. From pin D8 a wire leads to the plus connection of the piezo buzzer. The buzzer is drawn as a box with a half circle, from whose curved side sound waves spread. The other connection of the buzzer returns to the Arduino&#x27;s GND connection." style="max-width:100%;font-size:24px">
+  <rect x="30" y="46" width="160" height="208" rx="12" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="66" y="61" width="88" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$\text{Arduino}$</div></foreignObject>
+  <rect x="182" y="102" width="16" height="16" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="141" y="97" width="31" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$\text{D8}$</div></foreignObject>
+  <rect x="182" y="206" width="16" height="16" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="130" y="201" width="42" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$\text{GND}$</div></foreignObject>
+  <polyline points="198,110 420,110 420,140" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="420,188 420,214 198,214" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="394" y="140" width="52" height="48" rx="3" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <path d="M446,140 A24,24 0 0 1 446,188" fill="#ffffff" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M468.0,140.0 A40,40 0 0 1 468.0,188.0" fill="none" stroke="#6b7480" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M476.8,130.4 A56,56 0 0 1 476.8,197.6" fill="none" stroke="#6b7480" stroke-width="2.5" stroke-linejoin="round"/>
+  <foreignObject x="386" y="109.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$+$</div></foreignObject>
+  <foreignObject x="303" y="151" width="77" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$\text{buzzer}$</div></foreignObject>
+</svg></div>
+<p>The example program plays the beginning of the Finnish folk song Ukko Nooa. The frequencies are rounded to whole hertz. The names in the code are Finnish: <code>SUMMERI</code> is the buzzer, <code>melodia</code> the melody and <code>kestot</code> the lengths.</p>
+<pre><code class="language-cpp">// A tune on a piezo buzzer: pin 8 -&gt; buzzer -&gt; GND
+const int SUMMERI = 8;   // the pin the buzzer is connected to
+const int TEMPO = 350;   // the length of one beat in milliseconds
+
+// frequencies of the notes in hertz (C4 = 262, D4 = 294, E4 = 330, F4 = 349)
+int melodia[] = {262, 262, 262, 330, 294, 294, 294, 349, 330, 330, 294, 294, 262};
+int kestot[]  = {1,   1,   1,   1,   1,   1,   1,   1,   1,   1,   1,   1,   2};  // in beats
+const int N = 13;        // the number of notes
+
+void setup() {
+}
+
+void loop() {
+  for (int i = 0; i &lt; N; i++) {
+    int ms = kestot[i] * TEMPO;
+    tone(SUMMERI, melodia[i], ms * 9 / 10);  // the note sounds for 90 % of the time, so the notes stay apart
+    delay(ms);                               // wait until the note has sounded
+  }
+  noTone(SUMMERI);
+  delay(2000);                               // a pause before the next round
+}
+</code></pre>
+<p><code>tone(pin, frequency, duration)</code> makes the voltage of the pin alternate between $0\,\text{V}$ and $5\,\text{V}$ at the given frequency. The command does not wait for the note to end, so a <code>delay()</code> is needed after it.</p>
+<h2>Test and measure</h2>
+<ul>
+<li>How it works: when the voltage of the pin alternates, the piezoelectric disc of the buzzer bends back and forth at the same frequency. The disc makes the air vibrate, and the ear hears the vibration as sound. The higher the frequency, the higher the pitch.</li>
+<li>A note one octave higher has twice the frequency. Play $262\,\text{Hz}$ and $523\,\text{Hz}$ one after the other and listen whether they sound like the same note at different heights.</li>
+<li>Challenge yourself: in equal temperament the octave is divided into twelve equal semitones. The frequency of a note that is $n$ semitones above the note A4 is</li>
+</ul>
+<p>$$f = 440\,\text{Hz} \cdot 2^{n/12}.$$</p>
+<p>For example, C4 is 9 semitones below A4, so $f = 440\,\text{Hz} \cdot 2^{-9/12} \approx 262\,\text{Hz}$. The steps of a major scale are whole, whole, half, whole, whole, whole and half, that is 2, 2, 1, 2, 2, 2 and 1 semitones. Work out the frequencies of the C major scale from C4 to C5 and play the scale.</p>
+<h2>If something does not work</h2>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Likely cause</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No sound</td>
+<td>The wire is in the wrong pin</td>
+<td>Check that the wire is in pin 8.</td>
+</tr>
+<tr>
+<td>No sound</td>
+<td>The program did not upload</td>
+<td>Check the board and the port in the Tools menu and upload again.</td>
+</tr>
+<tr>
+<td>Only one and the same sound</td>
+<td>The buzzer is active</td>
+<td>Change to a passive buzzer.</td>
+</tr>
+<tr>
+<td>The sound is very quiet</td>
+<td>The buzzer is connected the wrong way round or is broken</td>
+<td>Turn the buzzer round. If the sound does not get louder, change the buzzer.</td>
+</tr>
+<tr>
+<td>The program does not compile</td>
+<td>The arrays have different numbers of values or a semicolon is missing</td>
+<td>Count the values in the arrays and check the line in the error message.</td>
+</tr>
+<tr>
+<td>The melody is muddled</td>
+<td><code>N</code> does not match the length of the arrays</td>
+<td>Set <code>N</code> to the number of values in the arrays.</td>
+</tr>
+</tbody>
+</table>
+<h2>Extension</h2>
+<ol>
+<li>A calculated scale. Calculate the frequencies in the program: <code>440.0 * pow(2.0, n / 12.0)</code>. Play all 13 notes from C4 to C5 with a loop.</li>
+<li>A button instrument. Connect two push buttons to pins 2 and 3 as in the extension of <a href="ahjo-arduino.html">First steps with Arduino</a> and make an instrument in which each button plays a different note.</li>
+<li>A light theremin. Read the value of a light-dependent resistor from an analogue pin and turn it into a frequency with the <code>map()</code> command. The pitch changes when you move your hand over the sensor. This suits lesson 10.</li>
+</ol>
+<h2>Document your work</h2>
+<p>Record in your project diary</p>
+<ul>
+<li>a photo of the connection and your own circuit diagram</li>
+<li>the arrays of your melody and a short recording or video</li>
+<li>one thing that did not work at first, and how you fixed it</li>
+<li>if you did the challenge, the frequencies you worked out as a table.</li>
+</ul>
+<h2>For the teacher: preparation</h2>
+<ul>
+<li>This is a draft: the guide has not been tried on Ahjo's own devices. Test the program and the buzzer before the lesson.</li>
+<li>Get passive piezo buzzers. Active buzzers do not follow the frequency of the <code>tone()</code> command. Mark the passive ones if both kinds are in the same box.</li>
+<li>Save the example program on the school computers in advance, so that the quick start works without typing.</li>
+<li>The work suits lesson 9 of Ahjo 1 as an alternative task or an extra challenge. It links the work with music and the physics chapter <a href="fy5-14.html">Sound as a wave: pitch, timbre and the Doppler effect</a>.</li>
+<li>The folk song Ukko Nooa is free to use. The text, figure and code of the guide were written for Ruukkilabra.</li>
+</ul></article></main>
+<footer class="bottom"><span>Ruukkilabra</span><a href="tyokalut.html">Tools</a><a href="tietosuoja.html">Privacy</a><span class="copyright">© 2026 Lauri Hellsten</span></footer>
+</div>
+<script src="../vendor/katex/katex.min.js"></script><script src="../vendor/katex/contrib/auto-render.min.js" onload="renderMathInElement(document.querySelector('main'),{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+</body></html>

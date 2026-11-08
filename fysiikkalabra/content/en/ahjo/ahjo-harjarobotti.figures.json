@@ -1,0 +1,9 @@
+{
+ "Piirros harjarobotista sivulta, ei mittakaavassa. Pöydän päällä on hammasharjan pää, jonka harjakset ovat vinossa: harjasten kärjet ovat taaempana kuin niiden tyvet. Harjan selässä on edessä eli oikealla värinämoottori, jonka akselin päässä on puolikkaan kiekon muotoinen epäkeskopaino. Moottorin takana on nappiparisto plusnapa ylöspäin. Moottorin toinen johto kulkee pariston alle ja toinen pariston päälle. Oikealle osoittava nuoli näyttää liikesuunnan.": "Drawing of the bristle robot from the side, not to scale. On the table is a toothbrush head with slanting bristles: the tips of the bristles are further back than their roots. On the back of the brush, at the front, that is on the right, is a vibration motor with a half-disc-shaped off-centre weight on the end of its shaft. Behind the motor is the coin cell with its plus side up. One of the motor's leads runs under the cell and the other onto its top. An arrow pointing right shows the direction of motion.",
+ "pöytä": "table",
+ "harjakset": "bristles",
+ "värinämoottori": "vibration motor",
+ "epäkeskopaino": "off-centre weight",
+ "nappiparisto, + ylöspäin": "coin cell, + up",
+ "liikesuunta": "direction of motion"
+}

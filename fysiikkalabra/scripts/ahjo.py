@@ -216,7 +216,7 @@ def validate(lessons, investigations, guides, planned_codes, local_codes, module
                        [r.get("ref") or r.get("id") or "safety" for r in d["resources"]], [g["id"] for g in d["equipment"]],
                        [len(g["items"]) for g in d["equipment"]], [(len(c.get("goals", [])), len(c.get("lessons", [])), [(l.get("guides", []), bool(l.get("milestone")), bool(l.get("start")), sorted(l.get("levels", {})), bool(l.get("output_plus")), bool(l.get("final"))) for l in c.get("lessons", [])], len(c.get("deepening", [])), (c["start"]["minutes"], len(c["start"]["materials"]), len(c["start"]["steps"])) if c.get("start") else None, len(c["final"]["options"]) if c.get("final") else None, [x["minutes"] for x in c["snacks"]["items"]] if c.get("snacks") else None, bool(c.get("flex"))) for c in d["courses"]], [s["id"] for s in d["safety"]], [l["course"] for l in d["links"]], sorted(d["ui"]),
                        [(p["id"], p["status"], p["level"], p["lessons"], p["courses"], [i["url"] for i in p["inspiration"]], len(p["skills"]), len(p["materials"]), len(p["subjects"])) for p in d.get("projects", [])],
-                       [(x["id"], x["minutes"], x["lesson"], bool(x.get("induction")), len(x["subjects"]), len(x["materials"]), sorted(x["levels"])) for x in d.get("challenges", [])])
+                       [(x["id"], x["minutes"], x["lesson"], bool(x.get("induction")), len(x["subjects"]), len(x["materials"]), sorted(x["levels"]), x.get("guide")) for x in d.get("challenges", [])])
     files = [SOURCE] + sorted((ROOT / "content").glob("*/ahjo.json"))
     for f in files:
         name = f.relative_to(ROOT)
@@ -315,6 +315,7 @@ def validate(lessons, investigations, guides, planned_codes, local_codes, module
             if not (isinstance(x.get("minutes"), int) and 15 <= x["minutes"] <= 45): errs.append(f"{name}: challenge {cid}: 15–45 minutes (teacher 2026-11-08)")
             if not (isinstance(x.get("lesson"), int) and 1 <= x["lesson"] <= 16): errs.append(f"{name}: challenge {cid}: the Ahjo 1 lesson it goes with, 1–16")
             if sorted(x.get("levels", {})) != ["challenge", "modify", "try"] or not all(x["levels"].values()): errs.append(f"{name}: challenge {cid}: the three levels try, modify, challenge")
+            if x.get("guide") and not any(r.get("id") == x["guide"] and r.get("status") in PAGED for r in d["resources"]): errs.append(f"{name}: challenge {cid}: its guide {x['guide']} is not a written guide in resources")
         pids = [p.get("id") for p in d.get("projects", [])]
         if len(set(pids)) != len(pids): errs.append(f"{name}: repeated project ids")
         for p in d.get("projects", []):
@@ -650,7 +651,9 @@ def challenges_section(d):
         cards.append(f'<article class="ahjo-proj ahjo-chal" id="{x["id"]}" aria-labelledby="h-chal-{x["id"]}"><div class="ahjo-proj-head"><h3 id="h-chal-{x["id"]}">{esc(x["title"])}</h3></div>'
                      f'<p class="ahjo-proj-sum">{esc(x["make"])}</p><p class="ahjo-proj-meta">{meta}</p>'
                      f'<p class="ahjo-res-meta"><span class="ahjo-meta-l">{esc(u["challenge_materials"])}:</span> {esc(", ".join(x["materials"]))}</p>'
-                     f'<ul class="ahjo-levels ahjo-chal-levels">{levels}</ul></article>')
+                     f'<ul class="ahjo-levels ahjo-chal-levels">{levels}</ul>'
+                     + (f'<p class="ahjo-chal-guide"><a href="{x["guide"]}.html">{esc(u["challenge_guide"])} →</a></p>' if x.get("guide") else "")
+                     + '</article>')
     return (f'<section class="ahjo-sec" id="pienet-haasteet" aria-labelledby="h-challenges"><h2 id="h-challenges">{esc(u["challenges_h"])}'
             f' <span class="ahjo-count">{len(xs)}</span></h2><p class="ahjo-sec-lead">{esc(u["challenges_lead"])}</p>'
             f'<div class="ahjo-chal-grid">{"".join(cards)}</div></section>')

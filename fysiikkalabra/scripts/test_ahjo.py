@@ -55,6 +55,9 @@ for lang in i18n.languages():
     chal = re.findall(r'<article class="ahjo-proj ahjo-chal" id="([^"]+)".*?</article>', bank, re.S)
     expect(f"{lang}: the bank shows every small challenge once (10–15, teacher 2026-11-08), each with its three levels", 10 <= len(chal) <= 15
            and sorted(chal) == sorted(x["id"] for x in d.get("challenges", [])) and bank.count('class="ahjo-levels ahjo-chal-levels"') == len(chal), chal)
+    guided = [x for x in d.get("challenges", []) if x.get("guide")]
+    expect(f"{lang}: the three small challenges with a full guide (teacher 2026-11-08) link to it from their card", len(guided) == 3
+           and all(re.search(rf'id="{x["id"]}".*?class="ahjo-chal-guide"><a href="{x["guide"]}.html"', bank, re.S) and (out / f'{x["guide"]}.html').is_file() for x in guided), [x["id"] for x in guided])
     a1 = (out / ahjo.course_page("AHJO1")).read_text() if (out / ahjo.course_page("AHJO1")).is_file() else ""
     expect(f"{lang}: each small challenge is linked from its Ahjo 1 lesson", all(re.search(rf'<li id="tunti-{x["lesson"]}">.*?href="{ahjo.BANK}#{x["id"]}"', a1, re.S) for x in d.get("challenges", [])))
     for g in guides:

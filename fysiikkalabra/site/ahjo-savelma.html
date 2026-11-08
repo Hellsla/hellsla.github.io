@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Summerin sävelmä — Ruukkilabra</title>
+<meta name="description" content="Arduino soittaa melodian passiivisella pietsosummerilla, ja sävelten taajuudet lasketaan kaavalla.">
+<link rel="canonical" href="https://ruukkilab.fi/ahjo-savelma.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ruukkilabra">
+<meta property="og:locale" content="fi_FI">
+<meta property="og:title" content="Summerin sävelmä">
+<meta property="og:description" content="Arduino soittaa melodian passiivisella pietsosummerilla, ja sävelten taajuudet lasketaan kaavalla.">
+<meta property="og:url" content="https://ruukkilab.fi/ahjo-savelma.html">
+<meta name="theme-color" content="#f7f3ec">
+<link rel="icon" href="brand/ahjo-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="brand/ahjo-makerspace-merkki.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="brand/ahjo-180.png">
+<link rel="stylesheet" href="vendor/katex/katex.min.css">
+<link rel="stylesheet" href="site.css?v=ffec1a1f">
+</head><body>
+<div class="page">
+<header class="top">
+  <a class="brand" href="index.html" aria-label="Ruukkilabra, etusivu"><img class="brand-mark" src="brand/ruukkilabra-symboli-kiviruukki.svg" alt="" width="40" height="40"><span class="brand-name">Ruukkilabra<small>Lukion fysiikka</small></span></a>
+  <nav aria-label="Päävalikko"><a class="nav-modules" href="index.html#moduulit">Moduulit</a><a class="nav-study" href="nain-opiskelet.html">Näin opiskelet</a><a class="nav-reading" href="lukuvinkit.html">Kirjavinkit</a><a class="nav-booklets" href="vihkot.html">Vihkot</a><details class="lang-menu"><summary><span class="visually-hidden">Kieli: </span><span class="lang-current">Suomi</span></summary><ul class="lang-list" aria-label="Valitse kieli"><li><a class="lang" href="en/ahjo-savelma.html" hreflang="en" lang="en">English</a></li><li><a class="lang" href="fi-easy/ahjo-savelma.html" hreflang="fi" lang="fi">Selkeä suomi</a></li></ul></details></nav>
+</header>
+<nav class="crumbs" aria-label="Polku"><a href="index.html">Ruukkilabra</a> › <a href="ahjo.html">Ahjo Makerspace</a> › <a href="ahjo-materiaalit.html">Materiaalipankki</a> › Summerin sävelmä</nav>
+<main class="reading ahjo-page"><header class="ahjo-hero"><img class="ahjo-logo" src="brand/ahjo-makerspace-logo.svg" alt="Ahjo – Kiviruukin Makerspace" width="124" height="124"><div class="ahjo-hero-text"><p class="ahjo-eyebrow">Kiviruukin lukion makerspace</p><h1>Summerin sävelmä</h1><p class="ahjo-lead">Arduino soittaa melodian passiivisella pietsosummerilla, ja sävelten taajuudet lasketaan kaavalla.</p></div></header><nav class="ahjo-nav" aria-label="Ahjo Makerspace"><ul><li><a href="ahjo.html">Ahjo</a></li><li><a href="ahjo.html#opintojaksot">Opintojaksot</a></li><li><a href="ahjo-materiaalit.html" aria-current="page">Materiaalipankki</a></li><li><a href="ahjo-projektit.html">Projektit</a></li><li><a href="ahjo.html#laitteisto">Laitteisto</a></li><li><a href="ahjo-turvallisuus.html">Turvallisuus</a></li></ul></nav><p class="ahjo-draft" role="note"><svg class="ahjo-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M6 3h11a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H6zM9 3v18M12 8h3.5M12 12h3.5"/></svg><span><strong>Luonnos.</strong> Tätä ohjetta ei ole vielä kokeiltu Ahjon omilla laitteilla. Laitemallit, asetukset ja ajat tarkentuvat, kun laitteet on hankittu. Noudata aina opettajan antamia ohjeita ja laitekohtaista perehdytystä.</span></p><article class="ahjo-guide"><section class="ahjo-quick" aria-labelledby="pikastartti"><h2 id="pikastartti">Pikastartti</h2>
+<p>Saat Arduinon soittamaan sävelmän noin kymmenessä minuutissa, eikä sinun tarvitse kirjoittaa koodia itse. Opettaja on asentanut Arduino IDE:n ja tallentanut valmiin ohjelman. Tee kytkennät aina USB-johto irrotettuna.</p>
+<ol>
+<li>Kytke pietsosummerin plusjalka tai punainen johto Arduinon pinniin 8 ja toinen jalka GND-pinniin.</li>
+<li>Kytke USB-johto ja avaa opettajan valmis ohjelma tai kopioi alla oleva esimerkkikoodi.</li>
+<li>Valitse levyksi Arduino Uno ja oikea portti, ja paina Upload.</li>
+<li>Summeri soittaa Ukko Nooan alun.</li>
+</ol>
+<h3>Kokeile</h3>
+<p>Saa summeri soittamaan valmiilla ohjelmalla.</p>
+<h3>Muokkaa</h3>
+<p>Vaihda sävelet ja niiden kestot ja tee oma melodia, tunnari tai hälytysääni. Muuta tempoa.</p>
+<h3>Haasta itsesi</h3>
+<p>Laske duuriasteikon taajuudet kaavalla ja soita asteikko. Ohje on alla Opi lisää -osassa.</p>
+</section><div class="ahjo-more-band"><h2 id="opi-lisaa">Opi lisää</h2><p>Tässä osassa työ tehdään perusteellisesti: miksi se toimii, tarkat työvaiheet, mittaukset ja ongelmien ratkaisu.</p></div><h2>Haaste</h2>
+<p>Ohjelmoi Arduino soittamaan oma sävelmä. Pietsosummeri värähtelee samassa tahdissa kuin pinnin jännite vaihtelee, ja värähtelyn taajuus kuuluu äänenkorkeutena. Kun tiedät, miten taajuus ja äänenkorkeus liittyvät toisiinsa, voit laskea minkä tahansa sävelen taajuuden.</p>
+<p>Työ kestää noin 30 minuuttia. Oman melodian säveltämiseen voi käyttää niin paljon aikaa kuin haluaa.</p>
+<h2>Oppimistavoitteet</h2>
+<p>Työn jälkeen osaat</p>
+<ul>
+<li>kytkeä summerin Arduinoon ja soittaa sävelen komennolla <code>tone()</code></li>
+<li>tallentaa melodian taulukoihin ja soittaa sen silmukassa</li>
+<li>selittää, miten taajuus ja äänenkorkeus liittyvät toisiinsa</li>
+<li>laskea sävelen taajuuden tasavireisen viritysjärjestelmän kaavalla.</li>
+</ul>
+<h2>Lähtötaso ja ennakkotaidot</h2>
+<p>Olet tehnyt <a href="ahjo-arduino.html">Arduinon ensiaskeleet</a> tai osaat ladata ohjelman Arduinoon. Äänestä ja taajuudesta kerrotaan luvussa <a href="fy5-14.html">Ääni aaltona: korkeus, sointiväri ja Dopplerin ilmiö</a>.</p>
+<h2>Laitteet ja materiaalit</h2>
+<table>
+<thead>
+<tr>
+<th>Tarvike</th>
+<th>Määrä</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Arduino Uno ja USB-kaapeli</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Pas­sii­vi­nen piet­so­sum­me­ri</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Kyt­ken­tä­joh­ti­mia (uros–uros) tai koe­kyt­ken­tä­le­vy</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Tie­to­ko­ne, jossa on Arduino IDE</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>Käytä passiivista summeria. Aktiivinen summeri soittaa vain omaa kiinteää ääntään eikä noudata <code>tone()</code>-komennon taajuutta. Passiivisen summerin tunnistaa usein siitä, että sen alapuolelta näkyy piirilevy, ja se vain naksahtaa, kun sen kytkee suoraan $5\,\text{V}$:n jännitteeseen.</p>
+<h2>Turvallisuus ja perehdytys</h2>
+<p>Ahjon turvallisuusohjeet ovat vielä valmisteilla. Katso aihe <a href="ahjo-turvallisuus.html#elektroniikka">Juottaminen ja elektroniikkatyöskentely</a>, ja noudata opettajan antamaa perehdytystä.</p>
+<ul>
+<li>Tee ja muuta kytkentöjä vain, kun USB-kaapeli on irti.</li>
+<li>Summerin ääni on lähellä korvaa voimakas. Pidä summeri pöydällä äläkä vie sitä korvan viereen.</li>
+<li>Sovi ryhmän kanssa, milloin soitetaan. Kymmenen summeria yhtä aikaa on rankka äänimaisema.</li>
+</ul>
+<h2>Työvaiheet</h2>
+<ol>
+<li>Kytke USB-kaapeli irti. Kytke summerin plusjalka tai punainen johto pinniin 8 ja toinen jalka GND-pinniin. Jos summerissa ei ole merkintää, sen voi kytkeä kumpin päin tahansa.</li>
+<li>Tarkista kytkentä kuvasta ja kytke sitten USB-kaapeli.</li>
+<li>Avaa Arduino IDE ja kirjoita tai kopioi alla oleva ohjelma.</li>
+<li>Valitse levyksi Arduino Uno ja oikea portti, ja lataa ohjelma painikkeella Upload. Summeri soittaa melodian, pitää kahden sekunnin tauon ja aloittaa alusta.</li>
+<li>Muuta vakion <code>TEMPO</code> arvoa ja lataa ohjelma uudelleen. Mitä tapahtuu?</li>
+<li>Muuta taulukoita <code>melodia</code> ja <code>kestot</code> ja tee oma melodia. Kummassakin taulukossa pitää olla yhtä monta lukua, ja vakion <code>N</code> pitää olla sama luku.</li>
+</ol>
+<h2>Kuvat ja esimerkkikoodi</h2>
+<p>Kytkentäkaavio: summeri on pinnin 8 ja maan välissä.</p>
+<div class="fig ahjo-fig"><svg viewBox="0 0 600 300" role="img" aria-label="Kytkentäkaavio, ei mittakaavassa. Vasemmalla on Arduino-levy laatikkona, jonka oikeassa reunassa on kaksi liitäntää: ylempänä digitaalipinni D8 ja alempana maa GND. Pinnistä D8 johdin vie pietsosummerin plusliitäntään. Summeri on piirretty laatikkona, jonka kyljessä on puoliympyrä, ja sen kaarevalta puolelta lähtee ääniaaltoja. Summerin toinen liitäntä palaa Arduinon GND-liitäntään." style="max-width:100%;font-size:24px">
+  <rect x="30" y="46" width="160" height="208" rx="12" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="66" y="61" width="88" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$\text{Arduino}$</div></foreignObject>
+  <rect x="182" y="102" width="16" height="16" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="141" y="97" width="31" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$\text{D8}$</div></foreignObject>
+  <rect x="182" y="206" width="16" height="16" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="130" y="201" width="42" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$\text{GND}$</div></foreignObject>
+  <polyline points="198,110 420,110 420,140" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="420,188 420,214 198,214" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="394" y="140" width="52" height="48" rx="3" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <path d="M446,140 A24,24 0 0 1 446,188" fill="#ffffff" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M468.0,140.0 A40,40 0 0 1 468.0,188.0" fill="none" stroke="#6b7480" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M476.8,130.4 A56,56 0 0 1 476.8,197.6" fill="none" stroke="#6b7480" stroke-width="2.5" stroke-linejoin="round"/>
+  <foreignObject x="386" y="109.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$+$</div></foreignObject>
+  <foreignObject x="292" y="151" width="88" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$\text{summeri}$</div></foreignObject>
+</svg></div>
+<p>Esimerkkiohjelma soittaa kansanlaulun Ukko Nooa alun. Taajuudet on pyöristetty kokonaisiksi hertseiksi.</p>
+<pre><code class="language-cpp">// Sävelmä pietsosummerilla: pinni 8 -&gt; summeri -&gt; GND
+const int SUMMERI = 8;   // pinni, johon summeri on kytketty
+const int TEMPO = 350;   // yhden iskun kesto millisekunteina
+
+// sävelten taajuudet hertseinä (C4 = 262, D4 = 294, E4 = 330, F4 = 349)
+int melodia[] = {262, 262, 262, 330, 294, 294, 294, 349, 330, 330, 294, 294, 262};
+int kestot[]  = {1,   1,   1,   1,   1,   1,   1,   1,   1,   1,   1,   1,   2};  // iskuina
+const int N = 13;        // sävelten määrä
+
+void setup() {
+}
+
+void loop() {
+  for (int i = 0; i &lt; N; i++) {
+    int ms = kestot[i] * TEMPO;
+    tone(SUMMERI, melodia[i], ms * 9 / 10);  // sävel soi 90 % ajasta, jotta sävelet erottuvat
+    delay(ms);                               // odotetaan, kunnes sävel on soinut
+  }
+  noTone(SUMMERI);
+  delay(2000);                               // tauko ennen uutta kierrosta
+}
+</code></pre>
+<p><code>tone(pinni, taajuus, kesto)</code> saa pinnin jännitteen vaihtelemaan $0\,\text{V}$:n ja $5\,\text{V}$:n välillä annetulla taajuudella. Komento ei odota sävelen loppumista, joten perään tarvitaan <code>delay()</code>.</p>
+<h2>Testaa ja mittaa</h2>
+<ul>
+<li>Toimintaperiaate: kun pinnin jännite vaihtelee, summerin pietsosähköinen levy taipuu edestakaisin samalla taajuudella. Levy saa ilman värähtelemään, ja korva kuulee värähtelyn äänenä. Mitä suurempi taajuus, sitä korkeampi ääni.</li>
+<li>Oktaavin päässä oleva sävel on taajuudeltaan kaksinkertainen. Soita $262\,\text{Hz}$ ja $523\,\text{Hz}$ peräkkäin ja kuuntele, kuulostavatko ne samalta säveleltä eri korkeudella.</li>
+<li>Haasta itsesi: tasavireisessä viritysjärjestelmässä oktaavi jakautuu kahteentoista yhtä suureen puolisävelaskeleeseen. Sävelen, joka on $n$ puolisävelaskelta A4-sävelen yläpuolella, taajuus on</li>
+</ul>
+<p>$$f = 440\,\text{Hz} \cdot 2^{n/12}.$$</p>
+<p>Esimerkiksi C4 on 9 puolisävelaskelta A4:n alapuolella, joten $f = 440\,\text{Hz} \cdot 2^{-9/12} \approx 262\,\text{Hz}$. Duuriasteikon askeleet ovat koko, koko, puoli, koko, koko, koko ja puoli, eli 2, 2, 1, 2, 2, 2 ja 1 puolisävelaskelta. Laske C-duuriasteikon taajuudet C4:stä C5:een ja soita asteikko.</p>
+<h2>Jos jokin ei toimi</h2>
+<table>
+<thead>
+<tr>
+<th>Oire</th>
+<th>To­den­nä­köi­nen syy</th>
+<th>Korjaus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ääntä ei kuulu</td>
+<td>Johto on väärässä pinnissä</td>
+<td>Tarkista, että johto on pinnissä 8.</td>
+</tr>
+<tr>
+<td>Ääntä ei kuulu</td>
+<td>Ohjelma ei la­tau­tu­nut</td>
+<td>Tarkista levy ja portti Tools-va­li­kos­ta ja lataa uu­del­leen.</td>
+</tr>
+<tr>
+<td>Kuuluu vain yksi sama ääni</td>
+<td>Summeri on ak­tii­vi­nen</td>
+<td>Vaihda pas­sii­vi­seen sum­me­riin.</td>
+</tr>
+<tr>
+<td>Ääni on hyvin hil­jai­nen</td>
+<td>Summeri on kytketty väärin päin tai se on rikki</td>
+<td>Käännä summeri. Jos ääni ei voimistu, vaihda summeri.</td>
+</tr>
+<tr>
+<td>Ohjelma ei käänny</td>
+<td>Tau­lu­kois­sa on eri määrä lukuja tai puo­li­pis­te puuttuu</td>
+<td>Laske tau­lu­koi­den luvut ja tarkista vir­heil­moi­tuk­sen rivi.</td>
+</tr>
+<tr>
+<td>Melodia on sekava</td>
+<td><code>N</code> ei vastaa tau­lu­koi­den pituutta</td>
+<td>Muuta <code>N</code> samaksi kuin tau­lu­koi­den lukujen määrä.</td>
+</tr>
+</tbody>
+</table>
+<h2>Jatkotehtävä</h2>
+<ol>
+<li>Laskettu asteikko. Laske taajuudet ohjelmassa: <code>440.0 * pow(2.0, n / 12.0)</code>. Soita silmukalla kaikki 13 säveltä C4:stä C5:een.</li>
+<li>Painikesoitin. Kytke kaksi painonappia pinneihin 2 ja 3 kuten <a href="ahjo-arduino.html">Arduinon ensiaskeleiden</a> jatkotehtävässä ja tee soitin, jossa kumpikin nappi soittaa eri sävelen.</li>
+<li>Valotheremin. Lue valovastuksen lukema analogiapinnistä ja muuta se taajuudeksi komennolla <code>map()</code>. Äänenkorkeus muuttuu, kun liikutat kättä anturin päällä. Tämä sopii tunnille 10.</li>
+</ol>
+<h2>Dokumentoi</h2>
+<p>Kirjaa projektipäiväkirjaan</p>
+<ul>
+<li>valokuva kytkennästä ja oma kytkentäkaavio</li>
+<li>melodiasi taulukot ja lyhyt äänite tai video</li>
+<li>yksi asia, joka ei aluksi toiminut, ja miten korjasit sen</li>
+<li>jos teit haasteen, laskemasi taajuudet taulukkona.</li>
+</ul>
+<h2>Opettajalle: valmistelu</h2>
+<ul>
+<li>Tämä on luonnos: ohjetta ei ole kokeiltu Ahjon omilla laitteilla. Testaa ohjelma ja summeri ennen tuntia.</li>
+<li>Hanki passiivisia pietsosummereita. Aktiiviset summerit eivät noudata <code>tone()</code>-komennon taajuutta. Merkitse passiiviset, jos samassa laatikossa on molempia.</li>
+<li>Tallenna esimerkkiohjelma valmiiksi koulun koneille, jotta pikastartti onnistuu ilman kirjoittamista.</li>
+<li>Työ sopii Ahjo 1:n tunnille 9 vaihtoehtoiseksi tehtäväksi tai lisähaasteeksi. Se yhdistää työn musiikkiin ja fysiikan lukuun <a href="fy5-14.html">Ääni aaltona: korkeus, sointiväri ja Dopplerin ilmiö</a>.</li>
+<li>Kansanlaulu Ukko Nooa on vapaasti käytettävissä. Ohjeen teksti, kuva ja koodi on kirjoitettu Ruukkilabraan.</li>
+</ul></article></main>
+<footer class="bottom"><span>Ruukkilabra</span><a href="tyokalut.html">Työkalut</a><a href="tietosuoja.html">Tietosuoja</a><span class="copyright">© 2026 Lauri Hellsten</span></footer>
+</div>
+<script src="vendor/katex/katex.min.js"></script><script src="vendor/katex/contrib/auto-render.min.js" onload="renderMathInElement(document.querySelector('main'),{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+</body></html>
