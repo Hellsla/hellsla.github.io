@@ -871,8 +871,9 @@ li.is-done .ex-done{color:var(--accent-deep)}
 .pm-note,.pm-empty{margin:.7rem 0 0;font-size:var(--fs-small);color:var(--ink-2)}
 /* Oma itsearvio beside Oma eteneminen (teacher 2026-11-07, templates/omaarvio.js): the skills fingerprint, a column per
    chapter and a row per statement in the Itsearvio scale's colours; an unassessed cell is an empty outline */
-.my-wrap{margin:0 0 1rem}.my-wrap>summary{display:inline-flex;align-items:center;gap:.4rem;min-height:44px;padding:.45rem 1.1rem;border:1.5px solid var(--accent-deep);border-radius:999px;font:600 var(--fs-ui) var(--sans);color:var(--accent-deep);cursor:pointer;list-style:none}
-.my-wrap[open]>summary{margin-bottom:1rem}
+.my-top{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem;margin:0 0 1rem}.my-top .work-tools{margin:0}.my-top:not(:has(>:not([hidden]))){display:none}
+.my-wrap{margin:0 0 1rem}.my-wrap>summary{display:none}.my-toggle{background:none;display:inline-flex;align-items:center;gap:.4rem;min-height:44px;padding:.45rem 1.1rem;border:1.5px solid var(--accent-deep);border-radius:999px;font:600 var(--fs-ui) var(--sans);color:var(--accent-deep);cursor:pointer;list-style:none}
+.my-toggle[hidden]{display:none}.my-toggle::before{content:"▸";display:inline-block;width:1.2em;flex:none}.my-toggle[aria-expanded="true"]::before{content:"▾"}
 .my-row{display:grid;gap:1rem;margin:0 0 1.8rem;align-items:start}.my-row>.my-progress{margin:0}
 @media (min-width:60rem){.my-row{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .my-selfmap{padding:var(--card-pad);background:var(--surface);border:1px solid var(--line);border-radius:var(--card-radius)}
