@@ -134,11 +134,12 @@ An example of an entry in which an attempt failed:
 --- Lesson 6, 14 Feb ---
 Goal: the watering pump starts when the soil is dry.
 Done: Aino connected the pump to the MOSFET module, Eetu wrote the code.
-Decision: threshold 520, because dry soil gave readings of 540-560
-and freshly watered soil 300-340 (3 repetitions, see table 2).
+Decision: the pump starts when the reading rises above 520, because
+dry soil gave readings of 540-560 and freshly watered soil 300-340
+(3 repetitions, see table 2). So dry soil gives the larger reading.
 Problem: the pump switched on and off every second. Cause: the reading
-wavered on both sides of the threshold. Change: start below 520,
-stop only above 560 (hysteresis).
+wavered on both sides of the threshold. Change: start when the reading
+rises above 520, stop only when it falls below 400 (hysteresis).
 Next step: test the change overnight and record the readings.
 ```
 
