@@ -95,7 +95,20 @@ for lang in i18n.languages():
                (c["code"] != "AHJO2" or st is not None) and (not st or ('id="aloitushaaste"' in cp and cp.find('id="aloitushaaste"') < cp.find('id="oppitunnit"')
                and all(ahjo.esc(x) in cp for x in st["steps"]) and ol is not None and re.search(r'<li id="tunti-1">.*?href="#aloitushaaste"', ol.group(1), re.S) is not None
                and not re.search(r'<li id="tunti-2">.*?href="#aloitushaaste"', ol.group(1), re.S))))
-        expect(f"{lang} {c['code']}: every lesson says what it produces", not c.get("lessons") or (ol and ol.group(1).count('class="ahjo-lesson-e ahjo-lesson-o"') == 16))
+        expect(f"{lang} {c['code']}: every lesson says what it produces", not c.get("lessons") or (ol and ol.group(1).count('class="ahjo-lesson-e ahjo-lesson-o') == 16))
+        expect(f"{lang} {c['code']}: every lesson with levels shows what you made at the basic level and, separately, the optional challenge's output (teacher 2026-11-08)",
+               ol is not None and ol.group(1).count('class="ahjo-done-row ahjo-done-plus"') == len(hands) and ol.group(1).count('class="ahjo-level-n"') == 3 * len(hands)
+               and (not hands or ('type="A"' in cp and ahjo.esc(d["ui"]["approach_note"]) in cp)))
+        sn = c.get("snacks")
+        expect(f"{lang} {c['code']}: the optional maker snacks follow the lessons, and the flexible rhythm is said with the lessons (Ahjo 2, teacher 2026-11-08)",
+               (c["code"] != "AHJO2" or (sn and c.get("flex"))) and (not sn or ('id="maker-valipalat"' in cp and cp.find('id="oppitunnit"') < cp.find('id="maker-valipalat"')
+               and all(ahjo.esc(x["title"]) in cp for x in sn["items"]))) and (not c.get("flex") or ahjo.esc(c["flex"]) in cp))
+        fin = c.get("final")
+        expect(f"{lang} {c['code']}: the mini project options come after the lessons and lesson 14 links them (teacher 2026-11-08)",
+               not fin or ('id="miniprojekti"' in cp and cp.find('id="oppitunnit"') < cp.find('id="miniprojekti"') and all(ahjo.esc(t) in cp for t, _ in fin["options"])
+                           and re.search(r'<li id="tunti-14">.*?href="#miniprojekti"', ol.group(1), re.S) is not None))
+        expect(f"{lang} {c['code']}: the licence tells the makerspace skills, the safety induction and each device's own induction apart, and says the equipment is still being prepared",
+               not c.get("license") or (all(ahjo.esc(t) in cp for t, _ in d["ui"]["license_parts"]) and ahjo.esc(d["ui"]["license_status"]) in cp))
         hand = [l["milestone"] for l in c.get("lessons", []) if l.get("milestone")]
         expect(f"{lang} {c['code']}: the hand-ins ({len(hand)}) are marked on their lessons", ol is not None and all(ahjo.esc(h) in ol.group(1) for h in hand) and (c["code"] != "AHJO2" or len(hand) == 5))
         expect(f"{lang} {c['code']}: the optional deepening is its own section, not in the 16 lessons", bool(c.get("deepening")) == ('id="syventavat"' in cp)
