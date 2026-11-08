@@ -291,8 +291,10 @@ def course_plan(u, c):
                 f'<ul>' + "".join(f'<li>{esc(g)}</li>' for g in c["goals"]) + '</ul></details>')
     if c.get("lessons"):
         out += (f'<details class="ahjo-plan"><summary>{esc(u["course_lessons"].replace("{n}", str(len(c["lessons"]))))}</summary><ol class="ahjo-lessons">'
-                + "".join(f'<li><span class="ahjo-lesson-t">{esc(l["title"])}</span> <span class="ahjo-lesson-x">{esc(l["text"])}</span>'
-                           + (f'<span class="ahjo-lesson-e"><span class="ahjo-meta-l">{esc(u["lesson_example"])}:</span> {esc(l["example"])}</span>' if l.get("example") else "") + '</li>' for l in c["lessons"])
+                + "".join(f'<li><div class="ahjo-lesson"><span class="ahjo-lesson-art">{art(c["code"].lower() + "-" + str(i))}</span><span class="ahjo-lesson-b">'
+                           f'<span class="ahjo-lesson-t">{esc(l["title"])}</span> <span class="ahjo-lesson-x">{esc(l["text"])}</span>'
+                           + (f'<span class="ahjo-lesson-e"><span class="ahjo-meta-l">{esc(u["lesson_example"])}:</span> {esc(l["example"])}</span>' if l.get("example") else "")
+                           + '</span></div></li>' for i, l in enumerate(c["lessons"], 1))
                 + '</ol></details>')
     return out
 

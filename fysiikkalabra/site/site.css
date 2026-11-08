@@ -1528,6 +1528,11 @@ main.ahjo-page{max-width:68rem;font-family:var(--ahjo-text)}
 .ahjo-lesson-e{display:block;margin:.15rem 0 .1rem;padding-left:.6rem;border-left:3px solid var(--kr-pink);color:var(--ink)}
 /* the section's illustrations (scripts/ahjo_art.py, teacher 2026-11-08): one atop each course card, one beside each bank topic */
 .ahjo-art{display:block;width:100%;height:auto}
+/* a picture for each lesson (teacher 2026-11-08 "Haluan kuvat tunneille"): small at the left of the lesson's text */
+.ahjo-lessons li{margin:.55rem 0}
+.ahjo-lesson{display:flow-root}
+.ahjo-lesson-art{float:left;width:112px;margin:.15rem .75rem .3rem 0;border-radius:8px;overflow:hidden}.ahjo-lesson-b{display:block;overflow:hidden}
+@media (max-width:480px){.ahjo-lesson-art{float:none;display:block;width:132px;margin:.1rem 0 .4rem}}
 .ahjo-course-art{margin:-.35rem -.5rem .8rem}
 .ahjo-cat-top{display:grid;grid-template-columns:minmax(0,1fr);gap:.25rem 1.5rem;align-items:center}
 .ahjo-cat-top h2{display:flex;align-items:center;gap:.6rem;margin:0 0 .35rem;font-size:1.5rem;font-weight:900;line-height:1.2}
