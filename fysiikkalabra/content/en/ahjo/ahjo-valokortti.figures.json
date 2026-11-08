@@ -1,0 +1,10 @@
+{
+ "Piirros avatun kortin toisesta sisäpuoliskosta, ei mittakaavassa. Kortille on liimattu kaksi oranssia kuparinauharataa. Miinusrata alkaa oikeasta alakulmasta pariston alta, kulkee vasemmalle ja nousee ylös LEDin lyhyen jalan eli katodin kohdalle. Plusrata alkaa LEDin pitkän jalan eli anodin kohdalta, kulkee alas ja oikealle kortin oikeaan alakulmaan, joka on rajattu katkoviivalla taitettavaksi kulmaksi. Nappiparisto on miinusradan päässä plusnapa ylöspäin. Kaareva nuoli näyttää, että kun kulma taitetaan katkoviivaa pitkin, plusradan pää osuu pariston yläpintaan ja piiri sulkeutuu. Radat eivät kosketa toisiaan.": "Drawing of one inside half of the opened card, not to scale. Two orange tracks of copper tape are stuck on the card. The minus track starts from under the cell near the bottom right corner, runs left and rises to the LED's short leg, the cathode. The plus track starts from the LED's long leg, the anode, runs down and right into the bottom right corner of the card, which is marked with a dashed line as the corner that folds. The coin cell is on the end of the minus track with its plus side up. A curved arrow shows that when the corner is folded along the dashed line, the end of the plus track lands on the top of the cell and the circuit closes. The tracks do not touch each other.",
+ "LED": "LED",
+ "pitkä jalka": "long leg",
+ "lyhyt jalka": "short leg",
+ "nappiparisto, + ylöspäin": "coin cell, + up",
+ "miinusrata": "minus track",
+ "plusrata": "plus track",
+ "taitettava kulma": "corner that folds"
+}

@@ -137,6 +137,7 @@
     "challenge_min": "{n} min",
     "challenge_lesson": "Ahjo 1, lesson {n}",
     "challenge_materials": "You need",
+    "challenge_guide": "Step-by-step guide",
     "challenge_induction": "Needs the device induction",
     "lesson_challenge": "Optional extra challenge",
     "lesson_final": "Mini project options",
@@ -844,6 +845,36 @@
         "AHJO1",
         "AHJO2",
         "KILPAROBO"
+      ]
+    },
+    {
+      "id": "ahjo-valokortti",
+      "category": "elektroniikka",
+      "title": "A light-up paper circuit card",
+      "text": "A card whose LED lights through a paper circuit of copper tape and a coin cell.",
+      "status": "draft",
+      "courses": [
+        "AHJO1"
+      ]
+    },
+    {
+      "id": "ahjo-savelma",
+      "category": "elektroniikka",
+      "title": "A buzzer tune",
+      "text": "The Arduino plays a melody on a passive piezo buzzer, and the frequencies of the notes are worked out with a formula.",
+      "status": "draft",
+      "courses": [
+        "AHJO1"
+      ]
+    },
+    {
+      "id": "ahjo-harjarobotti",
+      "category": "robotiikka",
+      "title": "A bristle robot",
+      "text": "A robot made from a toothbrush head and a vibration motor, whose speed you measure.",
+      "status": "draft",
+      "courses": [
+        "AHJO1"
       ]
     },
     {
@@ -1697,6 +1728,7 @@
       "title": "A light-up paper circuit card",
       "minutes": 30,
       "lesson": 1,
+      "guide": "ahjo-valokortti",
       "make": "A card whose LED lights when you fold a corner shut.",
       "subjects": [
         "visual arts"
@@ -1711,7 +1743,7 @@
       "levels": {
         "try": "Stick two tracks of copper tape on the card, put the LED and the coin cell between them and fold a corner into a switch.",
         "modify": "Draw or cut a picture on the cover that the light shines through.",
-        "challenge": "Add a second LED in parallel. Explain why both shine equally brightly."
+        "challenge": "Add a second LED in parallel and compare the brightness with a one-LED card."
       }
     },
     {
@@ -1825,6 +1857,7 @@
       "title": "A buzzer tune",
       "minutes": 30,
       "lesson": 9,
+      "guide": "ahjo-savelma",
       "make": "The Arduino plays a familiar tune or your own on a piezo buzzer.",
       "subjects": [
         "music",
@@ -1832,11 +1865,11 @@
       ],
       "materials": [
         "Arduino Uno",
-        "piezo buzzer",
+        "passive piezo buzzer",
         "wires"
       ],
       "levels": {
-        "try": "Connect the buzzer to pin 8 and play one note with tone(8, 440, 500).",
+        "try": "Connect a passive buzzer to pin 8 and play one note with tone(8, 440, 500).",
         "modify": "Write an eight-note melody and change the tempo.",
         "challenge": "Work out the frequencies of a scale with $f = 440\\,\\text{Hz} \\cdot 2^{n/12}$ and play a major scale."
       }
@@ -1890,6 +1923,7 @@
       "title": "A bristle robot",
       "minutes": 30,
       "lesson": 11,
+      "guide": "ahjo-harjarobotti",
       "make": "A small robot made from a toothbrush head and a vibration motor.",
       "subjects": [
         "design",
