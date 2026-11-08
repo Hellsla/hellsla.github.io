@@ -352,6 +352,15 @@ def course_body(d, c, planned, local, modules, ref):
     their pictures, and links to Ahjo's shared materials, which stay in the bank (linked, never copied)."""
     u = d["ui"]; title, text, _ = course_info(c["code"], planned, local); k = c["code"].lower()
     out = hero(d, title, c["subtitle"], PAGE + "#opintojaksot", extra=f'<p class="ahjo-opening">{esc(text)}</p>')
+    eq = "#laitteisto"
+    tiles = [(PAGE, f'<img class="ahjo-shared-mark" src="{MARK_SRC}" alt="" width="40" height="40" aria-hidden="true">', d["title"], u["shared_home"]),
+             (BANK, icon("box", "ahjo-icon ahjo-shared-icon"), u["bank_h"], u["shared_bank"]),
+             (PAGE + eq, icon("tools", "ahjo-icon ahjo-shared-icon"), u["equipment_h_" + d["equipment_status"]], u["shared_equipment"]),
+             (SAFETY, icon("shield", "ahjo-icon ahjo-shared-icon"), u["safety_h"], u["shared_safety"])]
+    out += (f'<section class="ahjo-sec ahjo-shared" aria-labelledby="h-{k}-shared"><h2 id="h-{k}-shared">{esc(u["shared_h"])}</h2>'
+            f'<p class="ahjo-sec-lead">{esc(u["shared_lead"])}</p><ul class="ahjo-shared-list">'
+            + "".join(f'<li><a href="{h}">{ic}<span class="ahjo-shared-t">{esc(t)}</span><span class="ahjo-shared-x">{esc(x)}</span></a></li>' for h, ic, t, x in tiles)
+            + '</ul></section>')
     if c.get("license"):
         out += (f'<section class="ahjo-sec ahjo-safety-teaser ahjo-license" aria-labelledby="h-{k}-license">{icon("shield", "ahjo-icon ahjo-icon-big")}'
                 f'<div><h2 id="h-{k}-license">{esc(u["license_h"])}</h2><p>{esc(u["license_text"])}</p></div></section>')
