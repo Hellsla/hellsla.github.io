@@ -99,6 +99,10 @@ for lang in i18n.languages():
         expect(f"{lang} {c['code']}: every lesson with levels shows what you made at the basic level and, separately, the optional challenge's output (teacher 2026-11-08)",
                ol is not None and ol.group(1).count('class="ahjo-done-row ahjo-done-plus"') == len(hands) and ol.group(1).count('class="ahjo-level-n"') == 3 * len(hands)
                and (not hands or ('type="A"' in cp and ahjo.esc(d["ui"]["approach_note"]) in cp)))
+        sn = c.get("snacks")
+        expect(f"{lang} {c['code']}: the optional maker snacks follow the lessons, and the flexible rhythm is said with the lessons (Ahjo 2, teacher 2026-11-08)",
+               (c["code"] != "AHJO2" or (sn and c.get("flex"))) and (not sn or ('id="maker-valipalat"' in cp and cp.find('id="oppitunnit"') < cp.find('id="maker-valipalat"')
+               and all(ahjo.esc(x["title"]) in cp for x in sn["items"]))) and (not c.get("flex") or ahjo.esc(c["flex"]) in cp))
         fin = c.get("final")
         expect(f"{lang} {c['code']}: the mini project options come after the lessons and lesson 14 links them (teacher 2026-11-08)",
                not fin or ('id="miniprojekti"' in cp and cp.find('id="oppitunnit"') < cp.find('id="miniprojekti"') and all(ahjo.esc(t) in cp for t, _ in fin["options"])

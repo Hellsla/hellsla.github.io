@@ -125,6 +125,8 @@
     "course_start_h": "Opening challenge",
     "course_start_lesson": "Ahjo 2, lesson 1",
     "course_start_after": "What you take from it",
+    "snack_min": "{n} min",
+    "flex_h": "Your own rhythm",
     "lesson_output": "Output",
     "lesson_done": "What did you make?",
     "lesson_done_base": "Basic level",
@@ -638,9 +640,9 @@
         },
         {
           "title": "Design, materials and methods",
-          "text": "A dimensioned drawing, a 3D model and a justified choice of material.",
-          "example": "Make a dimensioned drawing and a 3D model from which another group could build the same part. Compare at least two materials by strength, cost, making time and recyclability.",
-          "output": "Drawing, model and choice of material.",
+          "text": "A plan from which someone else could build the same thing, and a justified choice of material.",
+          "example": "Choose a way of designing and documenting that suits your project: a dimensioned drawing, a 3D model, a circuit diagram, a textile pattern, a flow chart or another justified way. Make it clear enough for another group to build the same part. Compare at least two materials by strength, price, production time and recyclability.",
+          "output": "A plan that suits the project (for example a dimensioned drawing, a 3D model or a circuit diagram) and the choice of material.",
           "guides": [
             "ahjo-3d-mallinnus"
           ],
@@ -683,9 +685,9 @@
         },
         {
           "title": "Improvement 2",
-          "text": "A part that measurably improves how it works.",
-          "example": "Add a sensor, a controller, or a printed or sewn part that measurably improves how it works. Measure the effect.",
-          "output": "A measured improvement.",
+          "text": "An improvement whose effect shows in the measurements.",
+          "example": "Choose one improvement based on the test results and measure its effect. It can be a new part or sensor, but just as well a simpler structure, a different material or a better program.",
+          "output": "A measured improvement and the reason for it.",
           "guides": []
         },
         {
@@ -725,6 +727,33 @@
           "milestone": "Hand-in 5: summary and video"
         }
       ],
+      "flex": "Projects differ. The hand-ins and milestones are the same for everyone, but the rhythm of building and testing can be agreed with the teacher. For example, a long building stage can carry on into the next lesson while the test plan is written alongside it.",
+      "snacks": {
+        "title": "Maker snacks",
+        "text": "Optional 10–15 minute experiments for the middle of the project work, lessons 8–12. The teacher can bring them out when the work is stuck or a group needs a new idea. Nothing is handed in, and your own project stays the main thing.",
+        "items": [
+          {
+            "title": "A prototype from an odd material",
+            "minutes": 15,
+            "text": "Make a model of the most important part of your project from a material you have not used yet: foil, straws, clothes pegs, fabric or modelling clay. What did the new material reveal about your solution?"
+          },
+          {
+            "title": "Mechanism try-out",
+            "minutes": 15,
+            "text": "Build one mechanism from cardboard that you have not tried yet: a lever, a cam, a hinge or a crank. Could it work in your project?"
+          },
+          {
+            "title": "The ten-object challenge",
+            "minutes": 10,
+            "text": "The group gets a bag of random materials and in ten minutes builds from them a solution to one part of the project's problem."
+          },
+          {
+            "title": "Paper user interface",
+            "minutes": 15,
+            "text": "Draw your device's buttons, display or instructions on paper and let someone from another group try them. You act as the device and react to the presses. Where do they hesitate?"
+          }
+        ]
+      },
       "plan_status": "draft"
     }
   ],
