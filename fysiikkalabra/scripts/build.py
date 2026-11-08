@@ -28,7 +28,7 @@ stay in their lesson folders and keep their <id>-sim.js URLs.
 """
 import hashlib, json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status, published_exercises, WorkTree
-import answers_shown, booklets, cardgrid, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, svgids, units
+import answers_shown, assigned, booklets, cardgrid, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, svgids, units
 from i18n import t as T
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
@@ -47,7 +47,7 @@ if SITE.name == "site.tmp":
 else:
     SITE.mkdir(exist_ok=True)                         # preview/ is shared by agents building at the same time, so it is never wiped
 TPL = ROOT / "templates"
-for f in ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js"): shutil.copy(TPL / f, SITE / f)
+for f in ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js"): shutil.copy(TPL / f, SITE / f)
 card_files = concept_cards.publish(SITE)   # site/kortit/<module>.json, read by Käsitetakomo (scripts/concept_cards.py)
 # p5 + KaTeX, no CDN needed. The read-aloud model and onnxruntime-web are not part of the site (teacher 2026-11-04,
 # UI fix 3): they are in the repository Hellsla/ruukkilabra-models, copied into the published site's models/ folder
@@ -129,6 +129,92 @@ def submission_script(lang, lesson_id):
     if not submits(lang, lesson_id): return ""
     ret = f' data-return="{FORMS_PAGE}"' if FORMS else ""
     return f'<script src="palautus.js" data-chapter="{lesson_id}"{ret}></script>'
+
+
+# Annetut tehtävät (teacher 2026-11-07, FY3 first): the teacher's assigned exercises of a module, by their ids in
+# annetut.json (scripts/assigned.py). The pages mark them and templates/tehty.js keeps the student's "Tehty" ticks.
+ASSIGNED = assigned.load()
+ASSIGNED_IDS = assigned.flat(ASSIGNED)
+
+
+GOAL_PER_OP = 45   # the progress graph's goal line (teacher 2026-11-07): 90 tasks in a 2 op module, 45 in a 1 op one
+COURSE_FILE = {f"FY{i}" for i in range(1, 9)}   # one work file per module (teacher 2026-11-07): FY1-FY8; FY9 keeps the chapter file
+
+
+def self_goals(course, lid, lang):
+    """The chapter's verbal self-assessment statements (Itsearvio's tavoite-1, -2, …) as plain text, for the module page's
+    Oma itsearvio (templates/omaarvio.js): the same ones inquiry.sa_goals_html shows."""
+    extra = inquiry.self_statements(lid, lang)
+    if extra: return [inquiry.plain(x) for x in extra]
+    inq = inquiry.load(courses.ROOT / "content" / ("fi" if lang == "fi-easy" else lang) / course / lid) or {}
+    if inq.get("self_extra"): return [inquiry.plain(x) for x in inq["self_extra"]]
+    return [inquiry.plain(T("inquiry.sa_goal_prefix") + " " + x) for x in inq.get("learn") or []]
+
+
+def course_block(course, lang):
+    """The module's chapters and their exercise ids (#fl-course) for palautus.js's one work file per module (Tallenna
+    työ tiedostoon, Avaa tallennettu työ, Palauta), with the assigned tasks for tehty.js (and the script when there are
+    any). Empty outside FY1-FY8 or a language without submissions."""
+    if course not in COURSE_FILE or lang not in SUBMISSION_LANGS: return ""
+    chs = []
+    for n, l in enumerate(curriculum[course].get("lessons", []), 1):
+        ex = assigned.exercises(course, l["id"])   # the ids are the same in every language
+        if ex: chs.append({"id": l["id"], "n": n, "tasks": [e["id"] for items in ex.values() for e in items]})
+        goals = self_goals(course, l["id"], lang)
+        if goals and chs and chs[-1]["id"] == l["id"]: chs[-1]["goals"] = goals
+    given = [i for ids in ASSIGNED.get(course, {}).values() for i in ids]
+    data = {"course": course, "chapters": chs, "assigned": given, "goal": GOAL_PER_OP * curriculum[course].get("op", 2)}
+    return ('<script id="fl-course" type="application/json">' + json.dumps(data, separators=(",", ":")) + "</script>"
+            + ('<script src="tehty.js"></script>' if given else ""))
+
+
+def progress_view(themes, given, block):
+    """Näytä edistyminen (teacher 2026-11-07): Oma eteneminen (counter, bar, graph; tehty.js) and Oma itsearvio (the
+    verbal statements and the fingerprint under the themes; omaarvio.js) behind one button, shown by the scripts. With
+    assigned tasks (FY3) the counter is over them and their Tehty marks; otherwise over every task of the module, a
+    task with a saved solution counting as done (FY1-FY9, no marks on the tasks)."""
+    strings = {k: v for k, v in T("js").items() if k.startswith(("done_", "progress_", "palautus_", "work_", "selfmap_"))}
+    strings.update({k: v for k, v in T("inquiry").items() if k in ("sa_a", "sa_b", "sa_c", "sa_d", "sa_x", "sa_x_short")})
+    prog = (f'<section class="my-progress" id="oma-eteneminen" hidden><h2>{T("js.progress_title")}</h2>'
+            '<p class="pm-count" aria-live="polite"></p><div class="pm-bar" role="progressbar" aria-valuemin="0"><span></span></div>'
+            f'<details class="pm-graph"><summary>{T("js.progress_graph")}</summary><div class="pm-chart"></div></details>'
+            f'<p class="pm-note">{T("js.progress_note" if given else "js.progress_note_all")}</p></section>')
+    mine = (f'<section class="my-selfmap" id="oma-itsearvio" data-themes="{esc(json.dumps(themes, ensure_ascii=False))}" hidden><h2>{T("js.selfmap_title")}</h2>'
+            '<p class="sm-count" aria-live="polite"></p><div class="sm-map"></div><ul class="sm-legend"></ul></section>')
+    return (f'<details class="my-wrap" hidden><summary>{T("js.progress_show")}</summary><div class="my-row">' + prog + mine + '</div></details>'
+            '<script id="fl-strings" type="application/json">' + json.dumps({"js": strings}, ensure_ascii=False).replace("</", "<\\/") + "</script>"
+            + block + ("" if given else '<script src="tehty.js"></script>') + '<script src="omaarvio.js"></script>')
+
+
+def progress_section(course, lang, mod=None):
+    """The module page's own part (teacher 2026-11-07), after the heading, before the chapters: progress_view and the
+    buttons Tallenna työ tiedostoon and Avaa tallennettu työ (palautus.js)."""
+    block = course_block(course, lang)
+    if not block: return ""
+    ret = f' data-return="{FORMS_PAGE}"' if FORMS else ""
+    themes = [{"t": th["title"], "first": th["first"]} for th in (mod or {}).get("themes", [])]
+    view = progress_view(themes, bool(ASSIGNED.get(course)), block)
+    return view.replace('<script id="fl-strings"', '<div class="work-tools" id="oma-tyo" hidden></div><script id="fl-strings"', 1) + f'<script src="palautus.js" data-course="{course}"{ret}></script>'
+
+
+def local_progress(code, c, lang):
+    """Näytä edistyminen on a local course's page (FY9, teacher 2026-11-07): its units' review tasks (sovella/tasks.json)
+    and statements, the course's chapters as the themes. No work file: FY9 keeps its chapter files (palautus.js)."""
+    if not c.get("chapters") or code != "FY9": return ""
+    chs, themes, n = [], [], 0
+    for ch in c["chapters"]:
+        for k, u in enumerate(ch.get("units", [])):
+            n += 1
+            f = next((courses.ROOT / "content" / l / "units" / u["id"] / "sovella" / "tasks.json" for l in dict.fromkeys([lang, "fi"])
+                      if (courses.ROOT / "content" / l / "units" / u["id"] / "sovella" / "tasks.json").is_file()), None)
+            tasks = [t["id"] for t in json.loads(f.read_text()).get("tasks", [])] if f else []
+            goals = inquiry.self_statements(u["id"], lang)
+            if not tasks and not goals: continue
+            if k == 0 or not themes or themes[-1]["t"] != ch["title"]: themes.append({"t": ch["title"], "first": u["id"]})
+            chs.append({"id": u["id"], "n": n, "tasks": tasks, **({"goals": [inquiry.plain(x) for x in goals]} if goals else {})})
+    if not chs: return ""
+    block = '<script id="fl-course" type="application/json">' + json.dumps({"course": code, "chapters": chs, "assigned": [], "goal": GOAL_PER_OP * c.get("op", 2)}, separators=(",", ":")) + "</script>"
+    return progress_view(themes, False, block)
 
 
 def forms_title(): return T("site.returns_title", period=FORMS["period"], year=FORMS["year"])
@@ -515,11 +601,14 @@ def exercise_html(e, solution_html, read=None, core=False, num=None):
     fig = figcat.figure_html(e["figure"], T.lang, read) if e.get("figure") else ""   # a figure by its id (scripts/figcat.py)
     fig = (data_table(e["data"]) if e.get("data") else "") + fig + (exercise_choice(e) if e.get("choices") or e.get("statements") or e.get("order") else "")
     tag = f'<span class="ex-core">{T("lesson.core_exercise")}</span>' if core else ""
+    given = e["id"] in ASSIGNED_IDS   # an assigned task (annetut.json, teacher 2026-11-07): "Annettu" beside its number, a green left edge
+    if given: tag = f'<span class="ex-core ex-given">{T("lesson.assigned_exercise")}</span>' + tag
     text = e["text"]
     ext = T("lesson.extension_exercise") + "."   # "Syventävä tehtävä." at the start of a task's text: a tag, never a core task (teacher 2026-11-07, LOPS 2019)
     if text.startswith(ext): text, tag = text[len(ext):].lstrip(), tag + f'<span class="ex-core ex-ext">{T("lesson.extension_exercise")}</span>'
     written = "" if numeric else ' data-written="1"'   # a written task opens its answer once the student has written in the editor (lesson.js part 8; the tick "Olen tehnyt ratkaisun" removed, teacher 2026-11-06)
-    return (f'<li id="{e["id"]}"{" class=" + chr(34) + "core" + chr(34) if core else ""}{written}' + (f' data-num="{num}">' + number_label(num) if num else ">") + f'{tag}{exercise_text(nbsp_units(text), f"{e['id']}-q")}{fig}{check}'
+    cls = " ".join(c for c, on in (("core", core), ("assigned", given)) if on)
+    return (f'<li id="{e["id"]}"{" class=" + chr(34) + cls + chr(34) if cls else ""}{written}' + (f' data-num="{num}">' + number_label(num) if num else ">") + f'{tag}{exercise_text(nbsp_units(text), f"{e['id']}-q")}{fig}{check}'
             f'<details class="answer"><summary>{T("lesson.answer")}</summary><p>{ans}</p></details>{sol}</li>')
 
 
@@ -872,7 +961,7 @@ def build_language(lang):
                 .replace("{{title}}", esc(meta["title"])).replace("{{course}}", meta["course"]).replace("{{notice}}", notice(meta["state"]))
                 .replace("{{strings}}", strings_block(skey)).replace("{{back_to_course}}", esc(T("site.back_to_course", course=meta["course"])))
                 .replace("{{toc}}", toc).replace("{{main}}", main)
-                .replace("{{scripts}}", ('<script src="inquiry.js"></script>' if inq else "") + submission_script(lang, meta["id"]))
+                .replace("{{scripts}}", ('<script src="inquiry.js"></script>' if inq else "") + (course_block(meta["course"], lang) if submits(lang, meta["id"]) else "") + submission_script(lang, meta["id"]))
                 .replace("{{description}}", esc(description_of(meta, lesson_md))).replace("{{url}}", URL + name)
                 .replace("{{languages}}", languages_nav(name)))
         (out / name).write_text(rebase(html))
@@ -968,6 +1057,7 @@ def build_language(lang):
         body = (notes + f'<div class="mod-head">{module_icons.img(code, 56, "mod-head-icon")}<div><span class="eyebrow">{code} · {credits}</span><h1>{esc(mod["title"])}</h1></div></div>'
                 f'<p class="lead">{esc(T("site.module_question." + code))}</p>'
                 f'<p class="mod-status">{main_label}{(" · " + extra_label) if extra_label else ""}</p>'
+                + progress_section(code, lang, mod)
                 + f'<h2>{T("site.course_lessons")}</h2>{items}<div class="mod-more">'
                 + concept_cards.module_section(code, T, lang, chapter_titles(code, built_ids))   # Kertauspakkasi: the student's deck of the module (teacher 2026-11-03); order deck, exam, Haastetehtävät (teacher 2026-11-05)
                 + (f'<section><h2>{T("exam.title")}</h2><p>{T("exam.course_lead")}</p><ul class="lessons practice-link"><li class="live">'
@@ -1055,9 +1145,11 @@ def build_language(lang):
             ul = lang if lang in ls else units.lang_of(u) if units.lang_of(u) in ls else None
             if ul and units.load(u, ul)["course"] == code: cu.append((u, ul, os.path.relpath(OUTS[ul] / f"{u}.html", out).replace(os.sep, "/")))
         local_rows += home_row(code, c["title"], c["subtitle"])
-        (out / f"{code}.html").write_text(page(f"{code} {c['title']}", local_courses.page_body(code, c, T, chapters, {f"{i}.html" for i in built_ids},
-                                                                                                  [(i, d) for i, d in inv_built.items() if code in d["courses"]],
-                                                                                                  guides.course_section(T, published, lang) if code == "FY10" else "", cu)
+        body = local_courses.page_body(code, c, T, chapters, {f"{i}.html" for i in built_ids}, [(i, d) for i, d in inv_built.items() if code in d["courses"]],
+                                       guides.course_section(T, published, lang) if code == "FY10" else "", cu)
+        prog = local_progress(code, c, lang)                 # Näytä edistyminen before the course's first section (FY9)
+        if prog and "<h2" in body: body = body.replace("<h2", prog + "<h2", 1)
+        (out / f"{code}.html").write_text(page(f"{code} {c['title']}", body
                                                 + '<script src="invfilter.js"></script>',
                                                 f'<a href="index.html">{T("site.name")}</a> › {code}', f"{code}.html", c["description"], main_class="reading module-page local-course"))
     mixer_built = []                             # the YO-sekoitin (scripts/mixer.py): every language, when a local course asks for it
@@ -1162,7 +1254,7 @@ link_languages()
 i18n.set_lang(i18n.SOURCE)
 # Cache busting (teacher 2026-11-03: a page fetched just after a deploy showed new HTML with yesterday's cached site.css):
 # every link to a shared stylesheet or script carries ?v=<first 8 hex of its SHA-256>, so a changed file is a new URL.
-SHARED = ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js")
+SHARED = ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js")
 _ver = {f: hashlib.sha256((SITE / f).read_bytes()).hexdigest()[:8] for f in SHARED if (SITE / f).is_file()}
 _ref = re.compile(r'((?:href|src)="(?:\.\./)*)(' + "|".join(re.escape(f) for f in _ver) + r')(?:\?v=[0-9a-f]*)?"')
 for _page in SITE.rglob("*.html"):
@@ -1170,7 +1262,7 @@ for _page in SITE.rglob("*.html"):
     _old = _page.read_text(); _new = _ref.sub(lambda m: f'{m[1]}{m[2]}?v={_ver[m[2]]}"', _old)
     if _new != _old: _page.write_text(_new)
 if SITE.name == "site.tmp":                      # check the render, then swap it in; the old site comes back if the swap fails
-    expected += ["site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js"] + card_files + assets
+    expected += ["site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js"] + card_files + assets
     broken = [n for n in expected if not (SITE / n).is_file() or (SITE / n).stat().st_size == 0]
     if broken or not (SITE / "vendor").is_dir(): sys.exit(f"build check failed, site/ left unchanged: missing or empty {broken or ['vendor/']}")
     old = ROOT / "site.old"

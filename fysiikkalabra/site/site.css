@@ -509,7 +509,9 @@ form.check output[data-state=close]{color:#7a5a00;font-weight:600}form.check out
 .return-course h2{margin:1.6rem 0 .6rem}.return-course.is-empty h2{color:var(--ink-2)}.return-forms{display:flex;flex-wrap:wrap;gap:.75rem;margin:0 0 1rem}.return-forms .return-none{display:inline-flex;align-items:center;min-height:48px;padding:0 1.5rem;border-radius:999px;background:var(--line-2);color:var(--ink-2);font:600 1rem var(--sans)}
 .return-forms .return-form{display:inline-flex;align-items:center;min-height:48px;padding:0 1.5rem;border-radius:999px;background:var(--accent-deep);color:#fff;font:700 1.125rem var(--sans);text-decoration:none}
 .return-forms .return-form:hover{background:var(--accent)}.return-forms .return-form:focus-visible{outline:3px solid var(--copper);outline-offset:3px}
-@media print{.palautus,.palautus-btn,.palautus-link{display:none!important}}
+/* the module page's work file (teacher 2026-11-07): Tallenna työ tiedostoon, Avaa tallennettu työ (palautus.js) */
+.work-tools{max-width:var(--measure);margin:0 0 1.6rem}.work-row{display:flex;flex-wrap:wrap;gap:.6rem}.work-row .palautus-btn{margin:0}.work-tools .palautus-status:empty{display:none}
+@media print{.palautus,.palautus-btn,.palautus-link,.work-tools{display:none!important}}
 @media print{.pad-img-bar,.pad-img-handle,.pad-open,.pad-tools,.pad-note,.pad-save,.pad-saved,.pad .rich-text-editor-toolbar-root{display:none!important}}
 
 /* print: the lesson as a handout. lesson.js opens every collapsed block while printing. */
@@ -841,7 +843,54 @@ fieldset.choice[data-state="no"] .practice-hint,.numeric:has(output[data-state="
 .ex-path{max-width:calc(var(--measure) + 3rem);margin:0 0 1rem;font-size:var(--fs-ui);line-height:1.5;color:var(--ink-2)}
 .level-lead{margin:.2rem 0 .6rem;font-size:var(--fs-ui);color:var(--ink-2)}
 .ex-core{display:inline-block;margin:0 .5rem .25rem 0;padding:.05rem .55rem;border-radius:999px;background:var(--accent-soft);border:1px solid var(--accent);color:var(--accent-deep);font-size:.8125rem;font-weight:700;vertical-align:.1em}
-.ex-core.ex-ext{background:transparent;border-style:dashed}.act-core{margin:0 0 .35rem}.act-core .ex-core{margin:0}
+.ex-core.ex-ext{background:transparent;border-style:dashed}
+/* Annetut tehtävät (teacher 2026-11-07, templates/tehty.js): an assigned exercise has a quiet green left edge and the tag
+   "Annettu" beside its number (an outline, no tinted background); "Tehty" sits at the right end of the head row, before
+   "Avaa isoksi". The module page's Oma eteneminen: the counter, a bar and the graph by date. Colours from the theme's
+   variables (the site has no dark theme yet; these follow it when one comes). */
+:root{--given:#2f8a4f}
+details.level>ol>li.assigned{border-left:3px solid var(--given);padding-left:.6rem;margin-left:calc(-.6rem - 3px)}   /* the edge in the margin: the task keeps its full width */
+.ex-core.ex-given{background:transparent;border-color:var(--given);color:var(--accent-deep)}
+#exercises .ex-head:has(>.ex-done){position:relative;padding-right:8.75rem}.ex-head>.ex-done{position:absolute;top:0;right:3.1rem;margin:0}   /* beside Avaa isoksi, never on a row of its own */
+.ex-done{display:inline-flex;align-items:center;gap:.4rem;min-height:40px;padding:0 .25rem;font:600 var(--fs-ui) var(--sans);color:var(--ink-2);cursor:pointer;white-space:nowrap}
+.ex-done input{width:22px;height:22px;margin:0;accent-color:var(--given);cursor:pointer}
+.ex-done input:disabled{cursor:progress}
+li.is-done .ex-done{color:var(--accent-deep)}
+.ex-done-msg{margin:.1rem 0 .5rem;font-size:var(--fs-small);color:var(--ink-2)}.ex-done-msg[data-state=no]{color:#a61b1b}
+.done-count{margin:.3rem 0 .9rem;font:600 var(--fs-ui) var(--sans);color:var(--ink-2)}
+.my-progress{max-width:var(--measure);margin:0 0 1.8rem;padding:var(--card-pad);background:var(--surface);border:1px solid var(--line);border-radius:var(--card-radius)}
+.my-progress>h2{margin:0 0 .35rem}
+.pm-count{margin:0 0 .5rem;font:700 var(--fs-body) var(--sans);font-variant-numeric:tabular-nums}
+.pm-bar{height:10px;border-radius:999px;background:var(--line-2);overflow:hidden}
+.pm-bar>span{display:block;height:100%;width:0;background:var(--given);transition:width .3s}
+.pm-graph{margin:.7rem 0 0}.pm-graph>summary{cursor:pointer;min-height:40px;display:flex;align-items:center;font:600 var(--fs-ui) var(--sans);color:var(--accent-deep)}
+.pm-chart{margin:.3rem 0 0;overflow:hidden}.pm-svg{display:block;max-width:100%;height:auto}
+.pm-grid{stroke:var(--line-2)}.pm-axis{stroke:var(--fig-muted)}.pm-total{stroke:var(--given);stroke-dasharray:4 4}
+.pm-tick{font:13px var(--sans);fill:var(--ink-2)}.pm-tick-total{fill:var(--accent-deep);font-weight:700}.pm-goal{stroke:var(--given);stroke-width:2}.pm-tick-goal{fill:var(--given);font-weight:700}
+.pm-line{fill:none;stroke:var(--accent);stroke-width:2.5;stroke-linejoin:round}.pm-dot{fill:var(--accent)}
+.pm-note,.pm-empty{margin:.7rem 0 0;font-size:var(--fs-small);color:var(--ink-2)}
+/* Oma itsearvio beside Oma eteneminen (teacher 2026-11-07, templates/omaarvio.js): the skills fingerprint, a column per
+   chapter and a row per statement in the Itsearvio scale's colours; an unassessed cell is an empty outline */
+.my-wrap{margin:0 0 1rem}.my-wrap>summary{display:inline-flex;align-items:center;gap:.4rem;min-height:44px;padding:.45rem 1.1rem;border:1.5px solid var(--accent-deep);border-radius:999px;font:600 var(--fs-ui) var(--sans);color:var(--accent-deep);cursor:pointer;list-style:none}
+.my-wrap[open]>summary{margin-bottom:1rem}
+.my-row{display:grid;gap:1rem;margin:0 0 1.8rem;align-items:start}.my-row>.my-progress{margin:0}
+@media (min-width:60rem){.my-row{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.my-selfmap{padding:var(--card-pad);background:var(--surface);border:1px solid var(--line);border-radius:var(--card-radius)}
+.my-selfmap>h2{margin:0 0 .35rem}.sm-count{margin:0 0 .7rem;font:700 var(--fs-body) var(--sans);font-variant-numeric:tabular-nums}
+.sm-grid{display:grid;grid-template-columns:1.1rem repeat(var(--cols),minmax(0,2.6rem));gap:3px;align-items:center}
+.sm-themes{display:grid;grid-template-columns:1.1rem repeat(var(--cols),minmax(0,2.6rem));column-gap:3px;margin:0 0 3px}
+.sm-theme{display:flex;align-items:flex-end;min-width:0;height:calc(2.3em + 5px);padding:0 2px 3px;border-bottom:2px solid var(--accent);font:700 10px/1.15 var(--sans);letter-spacing:.03em;text-transform:uppercase;color:var(--accent-deep);overflow:hidden}
+.sm-stair .sm-theme{height:auto;overflow:visible;padding-top:2px}.sm-stair .sm-theme>span{white-space:nowrap}.sm-stair .sm-theme.sm-end{justify-content:flex-end}
+.sm-col,.sm-row{white-space:nowrap;font:600 11px/1 var(--sans);color:var(--ink-2);text-align:center;font-variant-numeric:tabular-nums}
+.sm-cell{display:block;aspect-ratio:1;min-height:12px;border-radius:3px;background:transparent;box-shadow:inset 0 0 0 1px var(--line)}
+.sm-cell.sm-gap{box-shadow:none}
+.sm-cell[data-level=a]{background:var(--sa-a);box-shadow:none}.sm-cell[data-level=b]{background:var(--sa-b);box-shadow:none}
+.sm-cell[data-level=c]{background:var(--sa-c);box-shadow:none}.sm-cell[data-level=d]{background:var(--sa-d);box-shadow:none}
+.sm-cell[data-level=x]{background:var(--sa-x);box-shadow:none}
+.sm-legend{list-style:none;margin:.9rem 0 0;padding:0;display:grid;gap:.3rem;font-size:var(--fs-small);color:var(--ink-2)}
+.sm-legend li{display:flex;align-items:center;gap:.5rem}.sm-legend .sm-cell{width:14px;min-height:14px;flex:none}
+@media print{.ex-done,.ex-done-msg,.done-count,.my-progress,.my-selfmap{display:none!important}}
+.act-core{margin:0 0 .35rem}.act-core .ex-core{margin:0}
 /* Kokeelliset tutkimukset (teacher 2026-10-30, scripts/investigations.py): the lesson page's reading column; the goals
    and levels, the working-mode choice (radios; guidance blocks of other modes are hidden by investigation.js), the
    prerequisites by kind with their level, just-in-time help links, guidance blocks as tinted panels, teacher guidance
@@ -1217,7 +1266,7 @@ html #exercises .ex-focus .pad .rich-text-editor-toolbar-root>div,html.tasks-spl
    grey "not yet" apart from the scale (teacher: no letters, no separate key). Under every task (a statement that
    fits its kind) and goal one row of radio buttons (44 px targets) and the chosen level's text under it.
    inquiry.py sa_fieldset, inquiry.js part 8. */
-.sa-rate{--sa-a:#1a4d2e;--sa-b:#5f9460;--sa-c:#d6a744;--sa-d:#c0583b;--sa-x:#d9d4c6}
+.sa-rate,.my-selfmap{--sa-a:#1a4d2e;--sa-b:#5f9460;--sa-c:#d6a744;--sa-d:#c0583b;--sa-x:#d9d4c6}
 .sa-opts [data-level=a]{--sa:var(--sa-a);--sa-on:#fff}.sa-opts [data-level=b]{--sa:var(--sa-b);--sa-on:#fff}
 .sa-opts [data-level=c]{--sa:var(--sa-c);--sa-on:#14171e}.sa-opts [data-level=d]{--sa:var(--sa-d);--sa-on:#fff}
 .sa-opts [data-level=x]{--sa:var(--sa-x);--sa-on:#14171e}

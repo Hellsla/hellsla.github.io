@@ -120,3 +120,41 @@ Nykyinen `palautus.js` tekee aina version 3. Erot versioon 2:
 ## Uusi versio
 Muutos, jota versio 1 ei ymmärrä, nostaa `version`-numeroa. Skripti hylkää tuntemattoman uudemman version
 syyllä *uudempi kuin tämä skripti tuntee*, eikä lue sitä puoliksi.
+
+## Opintojakson työtiedosto `Ruukkilabra_<FY>_<pvm>_<aika>.json` (ruukkilabra-tyo, versio 1, 7.11.2026)
+
+Moduuleissa FY1–FY8 opiskelijalla on yksi työ opintojaksoa kohti. Sama tiedosto on opiskelijan varmuuskopio ja
+opettajalle palautettava työ. Sen tekevät kaikki tallennuspainikkeet samalla tavalla: luvun *Tallenna työ tiedostoon*
+ja *Palauta*, moduulisivun *Tallenna työ tiedostoon* ja editorin *Tallennetut ratkaisut* -vienti. Moduulisivun
+*Avaa tallennettu työ* ja editorin tuonti avaavat sen (`templates/palautus.js`, "Work file").
+
+```json
+{ "format": "ruukkilabra-tyo", "version": 1, "course": "FY3", "lang": "fi", "created": "2026-11-07T12:30:25.000Z",
+  "submission_id": "32 heksamerkkiä", "content_sha256": "64 heksamerkkiä",
+  "chapters": [ { "chapter": "fy3-1", "answers": [ { "task": "fy3-1-L1-06", "status": "answered",
+       "content": [ { "type": "text", "text": "…" }, { "type": "math", "latex": "G=mg", "png": "…", "w": 58, "h": 15 },
+                    { "type": "image", "mime": "image/png", "w": 640, "h": 320, "ref": 0 } ],
+       "responses": [ { "type": "number", "value": "39" } ] } ],
+     "selfassessment": { "goals": [ { "id": "tavoite-1", "text": "", "level": "b" } ] } } ],
+  "progress": { "course": "FY3", "assigned": ["fy3-1-L1-06", "…"], "done": [["fy3-1-L1-06", "2026-11-05T10:12:00.000Z"]],
+                "history": [["fy3-1-L1-06", "2026-11-05T10:12:00.000Z", 1]] },
+  "store": { "local": { "<localStorage-avain>": "<arvo>" }, "solutions": [ { "id", "html", "page", "updated" } ] } }
+```
+
+- `created` ja tiedostonimi: tallennusaika, uusi jokaisella tallennuksella. `progress.done`: Tehty-merkinnät ja niiden
+  valmistumisajat, jotka säilyvät tallennuksessa ja avauksessa; uusi merkintä saa uuden ajan. `history`: merkinnät (1)
+  ja niiden poistot (0). Ne ovat opiskelijan omaa etenemisgraafia varten. `progress` on `null`, jos moduulissa ei ole
+  annettuja tehtäviä.
+- `store`: kaikki, mitä selain pitää tästä moduulista (ratkaisueditorin tietueet, joiden tunniste alkaa `fy3-`, ja
+  moduulin sivujen localStorage-avaimet: vastaukset, valinnat, selitykset, taulukot, itsearviot). Avaus kirjoittaa ne
+  takaisin. Ensin tarkistetaan tiedoston muoto, versio, moduuli, tarkistussumma ja jokainen tietue. Mitään ei kirjoiteta,
+  jos jokin ei täsmää. Selaimesta puuttuvat tiedot lisätään. Jos sama kohta on molemmissa eri sisältöisenä, opiskelijalta
+  kysytään kerran: tiedosto korvaa (OK) tai selaimen tiedot säilyvät ja vain puuttuvat lisätään (Peruuta). Kysymys
+  kertoo, montako selaimen tiedoista on uudempia.
+- `chapters`: opettajan näkymä. Mukana ovat vain luvut, joissa on jotakin. Kuvan data on vain `store.solutions`-tietueen
+  HTML:ssä, ja kohteen `ref` kertoo, monesko PNG- tai JPEG-kuva se on. Opettajan skripti hakee kuvan sieltä.
+- `content_sha256` = SHA-256 merkkijonosta `JSON.stringify({ chapters, progress, store })`.
+- Arviointi (`Code.gs` `rlValidateWork_`): jokainen luku tarkistetaan kuten luvun palautus (versio 3) ja kirjataan
+  omalle rivilleen (avain `<lomakkeen rivi>#<luku>`). Taulukkoon ja arviointinäkymään tulevat vain Tehty-merkinnät
+  (`Eteneminen`: `<annettuja>|<tehtävä>,…`). Valmistumisaikoja ja etenemisgraafia ei näytetä eikä käytetä arviointiin.
+  Vanhat luvun tiedostot (`ruukkilabra-palautus`, versiot 1–4) kelpaavat edelleen.

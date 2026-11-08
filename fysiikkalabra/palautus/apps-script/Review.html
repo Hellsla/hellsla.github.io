@@ -58,6 +58,7 @@
   #summary td { padding: 12px 10px; font-size: 18px; vertical-align: middle; }
   #summary td.n .v { font-weight: 600; } #summary td.n .of { color: #8a918c; }
   #summary tr.none td { color: var(--ink2); }
+
   .meter { display: block; height: 8px; margin-top: 4px; background: #ece8dc; border-radius: 99px; overflow: hidden; min-width: 90px; }
   .meter > span { display: block; height: 100%; background: var(--accent); border-radius: 99px; }
   .meter.pts > span { background: #b45309; }
@@ -233,7 +234,8 @@
     var scope = ov.chapters.filter(function (c) { return c.submissions > 0 && inRange(c); });
     var nTasks = scope.reduce(function (n, c) { return n + c.tasks.filter(function (t) { return !t.lesson; }).length; }, 0), max = nTasks * ov.maxPoints;
     var rows = ov.summary.map(function (s) {
-      var r = { name: s.email, answered: 0, unchecked: 0, points: 0, returned: 0, self: -1 }, sum = 0, n = 0;
+      // annetut tehtävät (opettaja 7.11.2026): koko opintojakson Tehty-merkinnät uusimmasta palautuksesta, jossa ne ovat
+      var r = { name: s.email, answered: 0, unchecked: 0, points: 0, returned: 0, self: -1, given: s.progress ? s.progress.done.length : -1, progress: s.progress }, sum = 0, n = 0;
       scope.forEach(function (c) { var x = s.chapters[c.id]; if (x) { r.answered += x.answered; r.unchecked += x.unchecked; r.points += x.points; r.returned++; } });
       // itsearvion keskiarvo (opettaja 6.11.2026): pakolliset kohdat, a = 4 … d = 1; Ei vielä ja tyhjät eivät mukana
       scope.forEach(function (c) {
@@ -249,7 +251,7 @@
     var head = $('summary').querySelector('thead'), body = $('summary').querySelector('tbody');
     head.textContent = ''; body.textContent = '';
     var hr = el('tr');
-    [['name', 'Opiskelija', ''], ['answered', 'Tehty', 'n'], ['unchecked', 'Tarkistamatta', 'n'], ['points', 'Pisteet', 'n'], ['self', 'Itsearvio', 'n']].forEach(function (h) {
+    [['name', 'Opiskelija', ''], ['answered', 'Tehty', 'n'], ['unchecked', 'Tarkistamatta', 'n'], ['points', 'Pisteet', 'n'], ['self', 'Itsearvio', 'n'], ['given', 'Annetut', 'n']].forEach(function (h) {
       var th = el('th', h[2]), b = el('button', 'sort', h[1] + ' ' + (key === h[0] ? (dir > 0 ? '▲' : '▼') : '⇅'));
       b.type = 'button'; b.setAttribute('data-key', h[0]);
       th.setAttribute('aria-sort', key === h[0] ? (dir > 0 ? 'ascending' : 'descending') : 'none');
@@ -271,13 +273,21 @@
       return td;
     };
     var pct = function (v, of) { return of > 0 ? Math.round(100 * v / of) + ' %' : '–'; };
+    // Annetut: Tehty-merkinnät / annetut tehtävät (opettaja 7.11.2026: ei valmistumisaikoja eikä etenemisgraafia)
+    var givenCell = function (r) {
+      var td = el('td', 'n');
+      if (!r.progress) { td.append(el('span', 'muted', '–')); td.title = 'Ei Tehty-merkintöjä (vanha palautus tai moduulissa ei annettuja tehtäviä)'; return td; }
+      var of = r.progress.total;
+      td.append(el('span', 'v', String(r.given)), el('span', 'of', ' / ' + of), meter(r.given, of, '', 'Annetut tehty ' + pct(r.given, of)));
+      return td;
+    };
     rows.forEach(function (r) {
       var tr = el('tr'); if (!r.returned) { tr.className = 'none'; tr.title = 'Ei palautusta tästä luvusta'; }
       var part = function (v, of, bar) { var td = el('td', 'n'); td.append(el('span', 'v', v)); if (of !== undefined) td.append(el('span', 'of', ' / ' + of)); if (bar) td.append(bar); return td; };
       tr.append(el('td', null, S.hide ? 'Opiskelija ' + (rows.indexOf(r) + 1) : r.name),
         part(String(r.answered), nTasks, meter(r.answered, nTasks, '', 'Tehty ' + pct(r.answered, nTasks))),
         part(String(r.unchecked)),
-        part(num(r.points), num(max), meter(r.points, max, 'pts', 'Pisteet ' + pct(r.points, max))), selfCell(r.self));
+        part(num(r.points), num(max), meter(r.points, max, 'pts', 'Pisteet ' + pct(r.points, max))), selfCell(r.self), givenCell(r));
       body.append(tr);
     });
     var gc = $('groupChart'); gc.textContent = '';
@@ -422,9 +432,10 @@
     a.content.forEach(function (it) {
       if (it.type === 'text') p.append(el('span', 't', it.text));
       else if (it.type === 'math') {
-        if (!tex && typeof it.png === 'string' && B64.test(it.png)) {
-          var m = el('img', 'math'); m.alt = it.latex; m.title = it.latex; m.src = 'data:image/png;base64,' + it.png;
-          m.style.width = Math.round(it.w * 1.25) + 'px'; m.style.height = Math.round(it.h * 1.25) + 'px'; p.append(m);
+        var pic = typeof it.png === 'string' && B64.test(it.png) ? 'data:image/png;base64,' + it.png : typeof it.svg === 'string' && B64.test(it.svg) ? 'data:image/svg+xml;base64,' + it.svg : '';
+        if (!tex && pic) {
+          var m = el('img', 'math'); m.alt = it.latex; m.title = it.latex; m.src = pic;
+          if (it.w > 0 && it.h > 0) { m.style.width = Math.round(it.w * 1.25) + 'px'; m.style.height = Math.round(it.h * 1.25) + 'px'; } p.append(m);
         } else p.append(el('code', 'math', it.latex));
       } else if (it.type === 'image' && (it.mime === 'image/png' || it.mime === 'image/jpeg') && B64.test(it.data)) {
         var i = el('img', 'shot'); i.alt = 'Opiskelijan kuva (' + it.w + ' × ' + it.h + ' px), suurenna napsauttamalla'; i.src = 'data:' + it.mime + ';base64,' + it.data;

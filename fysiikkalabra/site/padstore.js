@@ -3,7 +3,11 @@
    One record per task, keyed by the task's stable id (the exercise's <li id>, e.g. "fy3-3-L1-01", or a Sovella task's
    section id, e.g. "fy3-s1"): { id, html, page, updated }. `html` is the editor's own answer HTML, so text, line
    breaks, formulas (images with their LaTeX in alt) and pasted pictures come back as they were.
-   Backup file: { format: "ruukkilabra-ratkaisut", version: 1, exported, solutions: [record, ...] }.
+   Backup file: { format: "ruukkilabra-ratkaisut", version: 1, exported, solutions: [record, ...], progress? }.
+   `progress` (teacher 2026-11-07) is the "Tehty" ticks of the assigned tasks (tehty.js, localStorage ruukkilabra:tehty,
+   { v: 1, done: { id: ISO time }, log: [[id, ISO time, 1 | 0], ...] }); a restore merges it with this browser's.
+   A record removed (an emptied editor, Poista ratkaisu, Poista kaikki) or restored dispatches "fl:pad-change" on
+   document, { id, html? } or { all: true }, so tehty.js takes the tick off a task whose solution is gone.
    Every call returns a promise; a failure rejects with an Error whose `code` is "unavailable", "quota", "corrupt",
    "format" or "failed", so the page can say what went wrong instead of claiming success. */
 (() => {
@@ -27,8 +31,34 @@
     tx.onabort = tx.onerror = () => no(fail(codeOf(tx.error || (req && req.error)), tx.error || (req && req.error)));
   }));
   const valid = (r) => r && typeof r === 'object' && typeof r.id === 'string' && r.id && typeof r.html === 'string';
+  const changed = (detail) => { try { document.dispatchEvent(new CustomEvent('fl:pad-change', { detail })); } catch (e) { /* no listener */ } };
+  const DONE = 'ruukkilabra:tehty';
+  const doneOf = (v) => (v && v.v === 1 && v.done && typeof v.done === 'object' && !Array.isArray(v.done) ? v : null);
+  const readDone = () => { try { return doneOf(JSON.parse(localStorage.getItem(DONE))); } catch (e) { return null; } };
+  // a backup's ticks into this browser's: a tick kept where this browser has none, the log merged by time
+  // (replace: the backup's ticks win where both have one, teacher's work file "OK: korvaa")
+  const mergeDone = (p, replace) => {
+    const inp = doneOf(p);
+    if (!inp) return;
+    const own = readDone() || { v: 1, done: {}, log: [] };
+    const iso = (t) => typeof t === 'string' && !isNaN(Date.parse(t));
+    Object.keys(inp.done).forEach((id) => { if (typeof id === 'string' && iso(inp.done[id]) && (replace || !(id in own.done))) own.done[id] = inp.done[id]; });
+    const seen = new Set((own.log || []).map((x) => x.join('|')));
+    (Array.isArray(inp.log) ? inp.log : []).forEach((x) => { if (Array.isArray(x) && x.length === 3 && iso(x[1]) && !seen.has(x.join('|'))) { own.log.push([String(x[0]), x[1], x[2] ? 1 : 0]); seen.add(x.join('|')); } });
+    own.log.sort((a, b) => (a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : 0));
+    try { localStorage.setItem(DONE, JSON.stringify(own)); } catch (e) { /* ticks stay as they were */ }
+  };
   const clean = (r) => ({ id: r.id, html: r.html, page: typeof r.page === 'string' ? r.page : '', updated: typeof r.updated === 'string' ? r.updated : '' });
 
+  // the time of each solution's first save (teacher 2026-11-07: the module page's graph, tehty.js): set once, gone with the solution
+  const FIRST = 'ruukkilabra:ratkaistu';
+  const first = (id, on) => {
+    try {
+      const m = id === null ? {} : JSON.parse(localStorage.getItem(FIRST) || '{}') || {};
+      if (on && !m[id]) m[id] = new Date().toISOString(); else if (!on && id !== null) delete m[id]; else if (on) return;
+      localStorage.setItem(FIRST, JSON.stringify(m));
+    } catch (e) { /* the graph then uses the last save */ }
+  };
   const api = {
     // the saved html of one task, '' when there is none; a damaged record rejects with code "corrupt"
     get: (id) => run('readonly', (s) => s.get(id)).then((r) => {
@@ -38,12 +68,12 @@
     }),
     // an empty answer removes the record, so "delete everything" and an emptied editor leave nothing behind
     put: (id, html, page) => (html ? run('readwrite', (s) => s.put({ id, html, page: page || '', updated: new Date().toISOString() }))
-                                   : run('readwrite', (s) => s.delete(id))),
-    remove: (id) => run('readwrite', (s) => s.delete(id)),
-    clear: () => run('readwrite', (s) => s.clear()),
+                                   : run('readwrite', (s) => s.delete(id))).then((r) => { first(id, !!html); changed({ id, html: html || '' }); return r; }),
+    remove: (id) => run('readwrite', (s) => s.delete(id)).then((r) => { first(id, false); changed({ id }); return r; }),
+    clear: () => run('readwrite', (s) => s.clear()).then((r) => { first(null, false); changed({ all: true }); return r; }),
     // every intact record; damaged ones are counted, not returned
     all: () => run('readonly', (s) => s.getAll()).then((rs) => ({ solutions: rs.filter(valid).map(clean), damaged: rs.filter((r) => !valid(r)).length })),
-    backup: () => api.all().then(({ solutions }) => JSON.stringify({ format: FORMAT, version: VERSION, exported: new Date().toISOString(), solutions }, null, 1)),
+    backup: () => api.all().then(({ solutions }) => JSON.stringify(Object.assign({ format: FORMAT, version: VERSION, exported: new Date().toISOString(), solutions }, readDone() ? { progress: readDone() } : {}), null, 1)),
     // a backup file's text -> the records it holds, checked before anything is written; then all are written in one
     // transaction (all or nothing). A newer version than this page knows is refused rather than half read.
     restore: (text) => {
@@ -51,8 +81,11 @@
       try { data = JSON.parse(text); } catch (e) { return Promise.reject(fail('format', e)); }
       if (!data || data.format !== FORMAT || typeof data.version !== 'number' || data.version > VERSION || !Array.isArray(data.solutions)) return Promise.reject(fail('format'));
       const rs = data.solutions.filter(valid).map(clean);
-      return run('readwrite', (s) => { rs.forEach((r) => s.put(r)); return null; }).then(() => ({ restored: rs, skipped: data.solutions.length - rs.length }));
+      return run('readwrite', (s) => { rs.forEach((r) => s.put(r)); return null; }).then(() => { mergeDone(data.progress); changed({ all: true }); return { restored: rs, skipped: data.solutions.length - rs.length }; });
     },
+    // records written in one transaction, all or nothing (the work file, palautus.js)
+    putAll: (rs) => { const ok = rs.filter(valid).map(clean); return run('readwrite', (s) => { ok.forEach((r) => s.put(r)); return null; }).then(() => { changed({ all: true }); return ok.length; }); },
+    mergeDone, readDone,
     FORMAT, VERSION,
   };
   window.flPadStore = api;

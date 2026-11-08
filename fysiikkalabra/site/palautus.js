@@ -35,6 +35,8 @@
    level: "a" | "b" | "c" | "d" | "x" | null } ] }, every goal of the chapter, null = not answered, "x" = "En ole vielä
    harjoitellut". The tasks' own self-assessments and the history of changes stay on this device and are not in the file.
    content_sha256 = SHA-256 of JSON.stringify({ answers: <answers, formula PNGs left out>, selfassessment: <goals> }).
+   One work file per module (teacher 2026-11-07; FY1-FY8, build.py course_block): see "Work file" below. On those pages
+   the chapter file above is no longer downloaded by a button; it stays for FY9 and as window.flChapterFile (tests).
    The list of tasks is window.flSubmissionTasks (scripts/palautus_tasks.py reads the same list for the grading page). */
 (() => {
   const ME = document.currentScript;
@@ -58,10 +60,12 @@
   const LIMITS = { file: 9000000, image: 2000000, side: 5000, images: 40, text: 20000, latex: 4000, items: 400, mathPng: 200000 };
   const STORE_KEY = 'ruukkilabra:palautus:' + CHAPTER;
   const sec = document.getElementById('exercises');
-  if (!CHAPTER || !sec) return;
+  const ON_CHAPTER = !!(CHAPTER && sec);
+  const COURSE = (() => { try { return JSON.parse(document.getElementById('fl-course').textContent); } catch (e) { return null; } })();
+  if (!ON_CHAPTER && !COURSE) return;
   // an exercise (li > p.task) and a review task of FY9 (div.practice-task, practice.py; teacher 2026-11-06), the ones
   // lesson.js part 6 gives a solution editor: a task with only choices has none
-  const edTasks = [...sec.querySelectorAll('li[id], div.practice-task[id]')].filter((t) => (t.matches('li') ? t.querySelector(':scope > .task')
+  const edTasks = !ON_CHAPTER ? [] : [...sec.querySelectorAll('li[id], div.practice-task[id]')].filter((t) => (t.matches('li') ? t.querySelector(':scope > .task')
     : !t.querySelector(':scope > ol.parts') || t.querySelector(':scope > ol.parts > li:not(:has(.choices))')));
   // the answer controls of the page (teacher 2026-11-06 evening: numbers, choices, written answers, also of Itsearvio's
   // tasks). Not answers: the self-assessment scales (sa-rate, rubric points), the "Olen tehnyt ratkaisun" ticks and the
@@ -72,7 +76,7 @@
   const own = (t, sel) => [...t.querySelectorAll(sel)].filter((x) => hostOf(x) === t && !x.closest('.pad, .pad-saved, .rich-text-editor, .sa-rate, .rubric, .palautus') && !(x.matches('textarea') && (x.readOnly || x.closest('.justify'))));
   const lessonTasks = [...document.querySelectorAll('.activity[id]')].filter((a) => !a.closest('#exercises') && !a.matches('.act-exercises, .act-selfgoals') && own(a, CONTROLS).length);
   const isEd = new Set(edTasks);
-  const tasks = [...new Set([...edTasks, ...lessonTasks, ...[...sec.querySelectorAll('li[id], div.practice-task[id]')].filter((t) => own(t, CONTROLS).length)])]
+  const tasks = !ON_CHAPTER ? [] : [...new Set([...edTasks, ...lessonTasks, ...[...sec.querySelectorAll('li[id], div.practice-task[id]')].filter((t) => own(t, CONTROLS).length)])]
     .filter((t) => isEd.has(t) || own(t, CONTROLS).length)
     .sort((a, b) => (a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING ? -1 : 1));
   // a lesson task's id in the file is "<chapter>:<activity id>" ("fy3-1:reflect"): the activity ids repeat from chapter
@@ -80,15 +84,15 @@
   const taskId = (t) => (t.closest('#exercises') ? t.id : CHAPTER + ':' + t.id);
   window.flSubmissionTasks = () => tasks.slice();
   window.flSubmissionTaskId = taskId;
-  if (!tasks.length) return;
+  if (!tasks.length && !COURSE) return;
   const numOf = (li) => li.dataset.num || (li.querySelector(':scope > h3, :scope h3') || {}).textContent?.trim() || li.id;
   const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
   const say = (node, text, state) => { node.textContent = text; if (state) node.dataset.state = state; else delete node.dataset.state; };
   const fail = (text) => { const e = new Error(text); e.user = true; return e; };
   // Texts: lang/<lang>.json js.palautus_<key> (build.py strings_block), Finnish as the fallback.
   const L10N = (() => { try { return JSON.parse(document.getElementById('fl-strings').textContent).js || {}; } catch (e) { return {}; } })();
-  const FI = {"download": "Lataa kaikki ratkaisut", "return": "Palauta", "busy": "Tallennetaan ja kootaan ratkaisuja…", "done_link": "Palauta ladattu tiedosto Palauta-napista oman ryhmäsi lomakkeella.", "done_forms": "Palauta ladattu tiedosto opettajan Google Forms -lomakkeella.", "failed": "Tiedostoa ei voitu koota. Lataa sivu uudelleen ja yritä uudelleen.", "task": "Tehtävä {{n}}", "store": "Tallennettuja ratkaisuja ei voitu lukea. Lataa sivu uudelleen.", "flush": "Kaikkia avoimia ratkaisuja ei saatu tallennettua, joten tiedostoa ei ladattu. Katso virheilmoitus ratkaisun alta ja yritä uudelleen.", "corrupt": "{{where}}: tallennettu ratkaisu on vioittunut. Kirjoita ratkaisu uudelleen.", "no_storage": "Tallennettuja ratkaisuja ei voitu lukea (selain ei salli tallennusta). Tiedostoa ei ladattu.", "img_type": "{{where}}: ratkaisussa on kuva, jonka muoto ei kelpaa (vain PNG ja JPEG). Poista se ja liitä kuva uudelleen.", "img_web": "{{where}}: ratkaisussa on verkkosivulta liitetty kuva, jota ei voi palauttaa. Poista se ja liitä kuvakaappaus.", "img_read": "{{where}}: kuvaa ei voitu lukea. Poista kuva ja liitä se uudelleen.", "img_big": "{{where}}: kuva on liian suuri ({{mb}} Mt, enintään {{max}} Mt). Rajaa kuvakaappaus pienemmäksi ja liitä se uudelleen.", "img_broken": "{{where}}: kuva on vioittunut. Poista se ja liitä kuva uudelleen.", "img_side": "{{where}}: kuva on liian suuri (yli {{n}} pikseliä leveä tai korkea).", "latex_long": "{{where}}: kaava on liian pitkä (yli {{n}} merkkiä).", "items": "{{where}}: ratkaisussa on liian monta osaa.", "text_long": "{{where}}: ratkaisun teksti on liian pitkä (yli {{n}} merkkiä).", "images": "Ratkaisuissa on {{n}} kuvaa, enintään {{max}}. Poista osa kuvista.", "file_big": "Tiedostosta tulisi liian suuri ({{mb}} Mt, enintään {{max}} Mt). Rajaa tai poista kuvia."};
-  const S = (k, v) => (typeof L10N['palautus_' + k] === 'string' ? L10N['palautus_' + k] : FI[k]).replace(/\{\{(\w+)\}\}/g, (m, n) => (v && n in v ? String(v[n]) : m));
+  const FI = {"download": "Lataa kaikki ratkaisut", "return": "Palauta", "busy": "Tallennetaan ja kootaan ratkaisuja…", "done_link": "Palauta ladattu tiedosto Palauta-napista oman ryhmäsi lomakkeella.", "done_forms": "Palauta ladattu tiedosto opettajan Google Forms -lomakkeella.", "failed": "Tiedostoa ei voitu koota. Lataa sivu uudelleen ja yritä uudelleen.", "task": "Tehtävä {{n}}", "store": "Tallennettuja ratkaisuja ei voitu lukea. Lataa sivu uudelleen.", "flush": "Kaikkia avoimia ratkaisuja ei saatu tallennettua, joten tiedostoa ei ladattu. Katso virheilmoitus ratkaisun alta ja yritä uudelleen.", "corrupt": "{{where}}: tallennettu ratkaisu on vioittunut. Kirjoita ratkaisu uudelleen.", "no_storage": "Tallennettuja ratkaisuja ei voitu lukea (selain ei salli tallennusta). Tiedostoa ei ladattu.", "img_type": "{{where}}: ratkaisussa on kuva, jonka muoto ei kelpaa (vain PNG ja JPEG). Poista se ja liitä kuva uudelleen.", "img_web": "{{where}}: ratkaisussa on verkkosivulta liitetty kuva, jota ei voi palauttaa. Poista se ja liitä kuvakaappaus.", "img_read": "{{where}}: kuvaa ei voitu lukea. Poista kuva ja liitä se uudelleen.", "img_big": "{{where}}: kuva on liian suuri ({{mb}} Mt, enintään {{max}} Mt). Rajaa kuvakaappaus pienemmäksi ja liitä se uudelleen.", "img_broken": "{{where}}: kuva on vioittunut. Poista se ja liitä kuva uudelleen.", "img_side": "{{where}}: kuva on liian suuri (yli {{n}} pikseliä leveä tai korkea).", "latex_long": "{{where}}: kaava on liian pitkä (yli {{n}} merkkiä).", "items": "{{where}}: ratkaisussa on liian monta osaa.", "text_long": "{{where}}: ratkaisun teksti on liian pitkä (yli {{n}} merkkiä).", "images": "Ratkaisuissa on {{n}} kuvaa, enintään {{max}}. Poista osa kuvista.", "file_big": "Tiedostosta tulisi liian suuri ({{mb}} Mt, enintään {{max}} Mt). Rajaa tai poista kuvia.", "progress": "Tiedostossa ovat myös annettujen tehtävien Tehty-merkinnät ja niiden ajat."};
+  const S = (k, v) => (typeof L10N['palautus_' + k] === 'string' ? L10N['palautus_' + k] : FI[k] || '').replace(/\{\{(\w+)\}\}/g, (m, n) => (v && n in v ? String(v[n]) : m));
   const LANG = (document.documentElement.lang || 'fi').slice(0, 2);
   const bytesOfB64 = (b64) => Math.floor(b64.length * 3 / 4) - (b64.endsWith('==') ? 2 : b64.endsWith('=') ? 1 : 0);
 
@@ -240,6 +244,10 @@
     return { text, id, same, sha, answers };
   };
 
+  window.flChapterFile = ON_CHAPTER && tasks.length ? () => build().then((r) => { remember({ sha: r.sha, id: r.id }); return r.text; }) : null;
+  const RETURN = ME && ME.dataset.return;
+  if (COURSE) { courseWork(); return; }
+
   // Only the button at the top of Tehtävät (teacher 2026-11-05: "eikä pitkää ohjetta, pelkästään Lataa kaikki ratkaisut"),
   // in the heading row before "Avaa tehtävät teorian viereen" (teacher 2026-11-05); a short line under the row after the
   // download, or the reason when it could not be made.
@@ -249,7 +257,6 @@
   box.append(status);
   const head = sec.querySelector(':scope > .split-head') || sec.querySelector(':scope > h2');   // lesson.js part 9 wraps the heading
   // "Palauta" (teacher 2026-11-06): to the page of the groups' Forms links, when build.py palautukset.json names them
-  const RETURN = ME && ME.dataset.return;
   const go = RETURN ? el('a', 'pad-btn palautus-btn palautus-link', S('return')) : null;
   if (go) go.href = RETURN;
   const btns = go ? [btn, go] : [btn];
@@ -274,4 +281,182 @@
     } finally { busy = false; btn.disabled = false; }
   });
 
+
+  /* Work file (teacher 2026-11-07, "yksi työ opintojaksoa kohti"): the whole module in one file, the same from every
+     chapter's Tehtävät (Tallenna työ tiedostoon, Palauta) and from the module page (Tallenna työ tiedostoon, Avaa
+     tallennettu työ). Nothing leaves this browser until the student attaches the file to the group's form.
+       { format: "ruukkilabra-tyo", version: 1, course, lang, created: ISO time, submission_id: 32 hex, content_sha256,
+         chapters: [ { chapter, answers: [ { task, status: "answered", content: [item], responses: [{ type: "number", value }] } ],
+                       selfassessment: { goals: [ { id: "tavoite-<n>", text: "", level } ] } } ],   (chapters with work only)
+         progress: tehty.js progress (course, assigned, done [[id, ISO]], history [[id, ISO, 1|0]]) | null,
+         store: { local: { key: value }, solutions: [padstore record] } }
+     `store` is what this browser keeps of the module (padstore.js records whose id starts "fy3-", localStorage keys of
+     the module's pages: answers, choices, explanations, tables, self-assessment), so "Avaa tallennettu työ" brings back
+     exactly that. `chapters` is the teacher's view (palautus/apps-script): the editor's solutions as items (a picture's
+     data stays in store.solutions, the item has its place `ref`; a formula is its LaTeX and PNG), the typed numbers and the goals'
+     levels. content_sha256 = SHA-256 of JSON.stringify({ chapters, progress, store }). The name is
+     Ruukkilabra_<COURSE>_<date>_<time>.json, a new time every save; the ticks keep their own times. */
+  function courseWork() {
+    const WFORMAT = 'ruukkilabra-tyo', WVERSION = 1, CODE = COURSE.course, PRE = CODE.toLowerCase() + '-';
+    const KEY_RE = new RegExp('(^|[:/])' + CODE.toLowerCase() + '-[a-z0-9]', 'i');
+    // the module page's counter (tehty.js): a solution's first save and the checked tasks, one map for every module in
+    // the browser; the file carries this module's part, and opening it adds what this browser does not have yet
+    const MAPS = ['ruukkilabra:ratkaistu', 'ruukkilabra:tarkistettu'];
+    const plain = (k) => /^(fl:|ruukkilabra:)/.test(k) && k !== 'ruukkilabra:tehty' && !k.startsWith('ruukkilabra:palautus:') && KEY_RE.test(k);
+    const ownKey = (k) => MAPS.includes(k) || plain(k);
+    const readMap = (k) => { try { const v = JSON.parse(localStorage.getItem(k) || '{}'); return v && typeof v === 'object' && !Array.isArray(v) ? v : {}; } catch (e) { return {}; } };
+    const ownRec = (r) => r && typeof r.id === 'string' && r.id.toLowerCase().startsWith(PRE);
+    const WKEY = 'ruukkilabra:palautus:' + CODE;
+    const readLocal = () => {
+      const out = {};
+      try { for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i); if (plain(k)) out[k] = localStorage.getItem(k); } } catch (e) { /* no storage */ }
+      MAPS.forEach((k) => { const m = readMap(k), ids = Object.keys(m).filter((id) => id.toLowerCase().startsWith(PRE)).sort();
+        if (ids.length) out[k] = JSON.stringify(Object.fromEntries(ids.map((id) => [id, m[id]]))); });
+      const sorted = {}; Object.keys(out).sort().forEach((k) => { sorted[k] = out[k]; });
+      return sorted;
+    };
+    const pad2 = (n) => String(n).padStart(2, '0');
+    const fileName = (d) => `Ruukkilabra_${CODE}_${d.getFullYear()}-${pad2(d.getMonth() + 1)}-${pad2(d.getDate())}_${pad2(d.getHours())}${pad2(d.getMinutes())}${pad2(d.getSeconds())}.json`;
+    const make = async () => {
+      if (window.flPads) { try { await window.flPads.flush(); } catch (e) { throw fail(S('flush')); } }
+      try { await loadStore(); } catch (e) { throw fail(S('store')); }
+      let all;
+      try { all = await window.flPadStore.all(); } catch (e) { throw fail(S('no_storage')); }
+      const sols = all.solutions.filter(ownRec).sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
+      const byId = new Map(sols.map((r) => [r.id, r]));
+      const local = readLocal();
+      const numbers = {};
+      Object.keys(local).filter((k) => k.startsWith('ruukkilabra:vastaukset:')).forEach((k) => {
+        try { const v = JSON.parse(local[k]); Object.keys((v && v.items) || {}).forEach((ik) => { const m = /^(.+):num\d+$/.exec(ik), val = v.items[ik];
+          if (m && typeof val === 'string' && val.trim()) (numbers[m[1]] = numbers[m[1]] || []).push(val.trim().slice(0, 100)); }); } catch (e) { /* damaged: left out */ }
+      });
+      const chapters = [];
+      let images = 0;
+      for (const ch of COURSE.chapters) {
+        const answers = [];
+        for (let i = 0; i < ch.tasks.length; i++) {
+          const id = ch.tasks[i], r = byId.get(id), where = S('task', { n: ch.n + '-' + (i + 1) });
+          const content = r ? await contentOf(r.html, where) : [];
+          // a picture and a MathJax formula are in the file once, in store.solutions; here only their place (ref, sref).
+          // A formula drawn on Abitti's server (/math.svg?latex=) has no SVG in the file: its PNG stays.
+          const own = r ? [...new DOMParser().parseFromString('<div>' + r.html + '</div>', 'text/html').querySelectorAll('img')].map((m) => m.getAttribute('src') || '')
+            .filter((s) => /^data:image\/svg\+xml/.test(s) || /\/math\.svg\?latex=/.test(s)).map((s) => /^data:image\/svg\+xml;base64,/.test(s)) : [];
+          let k = 0, f = 0, svgs = 0;
+          content.forEach((it) => {
+            if (it.type === 'image') { delete it.data; it.ref = k++; images++; }
+            else if (it.type === 'math' && own[f++]) { delete it.png; it.sref = svgs++; }
+          });
+          const responses = (numbers[id] || []).map((value) => ({ type: 'number', value }));
+          if (content.length || responses.length) answers.push({ task: id, status: 'answered', content, responses });
+        }
+        let goals = [];
+        try { const v = JSON.parse(local['ruukkilabra:itsearvio:' + ch.id] || 'null');
+          if (v && v.items) goals = Object.keys(v.items).filter((g) => /^tavoite-\d+$/.test(g) && v.items[g] && SA_LEVEL.test(v.items[g].level))
+            .sort((a, b) => parseInt(a.slice(8), 10) - parseInt(b.slice(8), 10)).map((g) => ({ id: g, text: '', level: v.items[g].level })); } catch (e) { /* none */ }
+        if (answers.length || goals.length) chapters.push({ chapter: ch.id, answers, selfassessment: { goals } });
+      }
+      if (images > LIMITS.images * 8) throw fail(S('images', { n: images, max: LIMITS.images * 8 }));
+      const progress = window.flDone ? window.flDone.progress() : null;
+      const body = { chapters, progress, store: { local, solutions: sols } };
+      const sha = await sha256(JSON.stringify(body));
+      let prev = null; try { prev = JSON.parse(localStorage.getItem(WKEY) || 'null'); } catch (e) { /* a new id */ }
+      const id = prev && prev.sha === sha && /^[0-9a-f]{32}$/.test(prev.id || '') ? prev.id : newId();
+      const now = new Date();
+      const text = JSON.stringify(Object.assign({ format: WFORMAT, version: WVERSION, course: CODE, lang: LANG, created: now.toISOString(), submission_id: id, content_sha256: sha }, body));
+      const size = new TextEncoder().encode(text).length;
+      if (size > LIMITS.file) throw fail(S('file_big', { mb: (size / 1e6).toFixed(1).replace('.', ','), max: LIMITS.file / 1e6 }));
+      try { localStorage.setItem(WKEY, JSON.stringify({ sha, id })); } catch (e) { /* the next save gets a new id */ }
+      return { text, name: fileName(now), mb: Math.max(0.1, size / 1e6).toFixed(1).replace('.', LANG === 'en' ? '.' : ',') };
+    };
+    const save = async () => {
+      const r = await make();
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(new Blob([r.text], { type: 'application/json' }));
+      a.download = r.name; document.body.append(a); a.click(); a.remove();
+      setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+      return r;
+    };
+    // Avaa tallennettu työ: the file is checked whole (format, version, module, checksum, every record) before anything
+    // is written. What this browser does not have is added; where both differ, one question: the file replaces them
+    // (OK) or this browser's stay and only the missing come from the file (Cancel). Then the page is reloaded.
+    const open = async (text) => {
+      let d;
+      try { d = JSON.parse(text); } catch (e) { throw fail(S('broken')); }
+      if (!d || d.format !== WFORMAT || typeof d.version !== 'number') throw fail(S('broken'));
+      if (d.version > WVERSION) throw fail(S('newer'));
+      if (d.course !== CODE) throw fail(S('wrong_course', { c: String(d.course).slice(0, 10) }));
+      const st = d.store;
+      if (!st || typeof st !== 'object' || !Array.isArray(st.solutions) || !st.local || typeof st.local !== 'object' || Array.isArray(st.local)) throw fail(S('broken'));
+      if (await sha256(JSON.stringify({ chapters: d.chapters, progress: d.progress, store: d.store })) !== d.content_sha256) throw fail(S('broken'));
+      const sols = st.solutions.filter((r) => ownRec(r) && typeof r.html === 'string');
+      const local = Object.keys(st.local).filter((k) => ownKey(k) && typeof st.local[k] === 'string');
+      if (sols.length !== st.solutions.length || local.length !== Object.keys(st.local).length) throw fail(S('broken'));
+      try { await loadStore(); } catch (e) { throw fail(S('open_failed')); }
+      let mine;
+      try { mine = new Map((await window.flPadStore.all()).solutions.map((r) => [r.id, r])); } catch (e) { throw fail(S('open_failed')); }
+      let have = {};
+      try { localStorage.length; have = readLocal(); } catch (e) { throw fail(S('open_failed')); }
+      const diffS = sols.filter((r) => mine.has(r.id) && mine.get(r.id).html !== r.html);
+      const diffL = local.filter((k) => !MAPS.includes(k) && k in have && have[k] !== st.local[k]);
+      const newer = diffS.filter((r) => (mine.get(r.id).updated || '') > (r.updated || '')).length;
+      const replace = diffS.length + diffL.length > 0 && window.confirm(S('conflict', { n: diffS.length + diffL.length, newer }));
+      const putS = sols.filter((r) => !mine.has(r.id) || (replace && mine.get(r.id).html !== r.html));
+      const putL = local.filter((k) => !MAPS.includes(k) && (!(k in have) || (replace && have[k] !== st.local[k])));
+      try { if (putS.length) await window.flPadStore.putAll(putS); } catch (e) { throw fail(S('open_failed')); }
+      try { putL.forEach((k) => localStorage.setItem(k, st.local[k])); } catch (e) { throw fail(S('open_failed')); }
+      local.filter((k) => MAPS.includes(k)).forEach((k) => {   // added to this browser's map; an entry it has stays
+        let add = {}; try { add = JSON.parse(st.local[k]) || {}; } catch (e) { /* nothing to add */ }
+        const m = readMap(k); let n = 0;
+        Object.keys(add).forEach((id) => { if (id.toLowerCase().startsWith(PRE) && !(id in m)) { m[id] = add[id]; n++; } });
+        if (n) try { localStorage.setItem(k, JSON.stringify(m)); } catch (e) { /* the count misses them here */ }
+      });
+      const p = d.progress;
+      if (p && Array.isArray(p.done) && Array.isArray(p.history)) window.flPadStore.mergeDone({ v: 1, done: Object.fromEntries(p.done.filter((x) => Array.isArray(x) && x.length === 2)), log: p.history }, replace);
+      return { n: putS.length, m: putL.length };
+    };
+    window.flWork = { make, save, open };
+
+    const saveBtn = el('button', 'pad-btn palautus-btn', S('save')); saveBtn.type = 'button';
+    const status = el('p', 'pad-status palautus-status'); status.setAttribute('aria-live', 'polite');
+    let busy = false;
+    const run = async (b, work) => {
+      if (busy) return; busy = true; b.disabled = true; say(status, S('busy'));
+      try { await work(); } catch (e) { say(status, e && e.user ? e.message : S('failed'), 'no'); } finally { busy = false; b.disabled = false; }
+    };
+    saveBtn.addEventListener('click', () => run(saveBtn, async () => { const r = await save(); say(status, S('saved', { name: r.name, mb: r.mb }), 'ok'); }));
+    // a message carried over the reload after Avaa tallennettu työ
+    try { const m = sessionStorage.getItem('ruukkilabra:avattu'); if (m) { sessionStorage.removeItem('ruukkilabra:avattu'); setTimeout(() => say(status, m, 'ok'), 0); } } catch (e) { /* none */ }
+    if (ON_CHAPTER) {
+      // Tehtävät's heading row: Tallenna työ tiedostoon, Palauta (the file first, then the group's form), Avaa tehtävät teorian viereen
+      const box = el('div', 'palautus'); box.append(status);
+      const btns = [saveBtn];
+      if (RETURN) {
+        const go = el('button', 'pad-btn palautus-btn palautus-link', S('return')); go.type = 'button';
+        go.addEventListener('click', () => run(go, async () => { await save(); say(status, S('done_link'), 'ok'); setTimeout(() => { location.href = RETURN; }, 700); }));
+        btns.push(go);
+      }
+      const head = sec.querySelector(':scope > .split-head') || sec.querySelector(':scope > h2');
+      if (head && head.matches('.split-head')) { const t = head.querySelector(':scope > .split-toggle'); if (t) t.before(...btns); else head.append(...btns); }
+      else box.prepend(...btns);
+      if (head) head.after(box); else sec.prepend(box);
+    } else {
+      const host = document.getElementById('oma-tyo');
+      if (!host) return;
+      const openBtn = el('button', 'pad-btn palautus-btn', S('open')); openBtn.type = 'button';
+      const file = el('input'); file.type = 'file'; file.accept = 'application/json,.json'; file.hidden = true;
+      openBtn.addEventListener('click', () => file.click());
+      file.addEventListener('change', () => {
+        const f = file.files && file.files[0]; file.value = '';
+        if (!f) return;
+        run(openBtn, async () => {
+          const r = await open(await f.text());
+          const m = r.n || r.m ? S('opened', { n: r.n, m: r.m }) : S('nothing');
+          try { sessionStorage.setItem('ruukkilabra:avattu', m); } catch (e) { /* the page says nothing after the reload */ }
+          location.reload();
+        });
+      });
+      const row = el('div', 'work-row'); row.append(saveBtn, openBtn, file);
+      host.append(row, status); host.hidden = false;
+    }
+  }
 })();

@@ -53,7 +53,7 @@ for lang in i18n.languages():
         h = f.read_text()
         m = re.search(r'id="exercises"(.*?)(?=<section|<div class="stage|</main>)', h, re.S)
         if not m or "<li" not in m.group(1): continue
-        items = re.findall(r'<li id="[^"]+"[^>]*>(?:<span class="ex-num"><span class="visually-hidden">[^<]*</span>[^<]*</span>)?(?:<span class="ex-core">[^<]*</span>)?(?:<span class="ex-core ex-ext">[^<]*</span>)?<p class="task"', m.group(1))   # the running number "6-3" first (build.py number_label)
+        items = re.findall(r'<li id="[^"]+"[^>]*>(?:<span class="ex-num"><span class="visually-hidden">[^<]*</span>[^<]*</span>)?(?:<span class="ex-core[^"]*">[^<]*</span>)*<p class="task"', m.group(1))   # the running number "6-3" first (build.py number_label)
         tasks = m.group(1).count('class="task"')
         if tasks: pages.setdefault(lang, []).append(f.relative_to(SITE).as_posix())
         if len(items) != tasks:
@@ -266,18 +266,25 @@ with sync_playwright() as pw:
         a.locator(".pad-saved > summary").click(); a.locator(".pad-saved button").nth(0).click()
     backup = pathlib.Path(dl.value.path()).read_text()
     data = __import__("json").loads(backup)
-    expect(f"{page}: the backup file is versioned and holds both solutions", data.get("format") == "ruukkilabra-ratkaisut" and data.get("version") == 1
-           and sorted(r["id"] for r in data["solutions"]) == sorted(ids), {k: data.get(k) for k in ("format", "version")})
+    # on a module's page (FY1-FY8) the backup is the module's work file (palautus.js flWork, teacher 2026-11-07, test_tehty.py)
+    sols = data["store"]["solutions"] if data.get("format") == "ruukkilabra-tyo" else data.get("solutions", [])
+    expect(f"{page}: the backup file is versioned and holds both solutions", data.get("format") in ("ruukkilabra-tyo", "ruukkilabra-ratkaisut") and data.get("version") == 1
+           and sorted(r["id"] for r in sols) == sorted(ids), {k: data.get(k) for k in ("format", "version")})
+    work = data.get("format") == "ruukkilabra-tyo"
     a.locator(".pad-saved button").nth(2).click(); pg.wait_for_timeout(500)   # Poista kaikki (the dialog is accepted)
     expect(f"{page}: Poista kaikki empties the open editors", a.locator(".rich-text-editor").inner_text().strip() == "" and bb.locator(".rich-text-editor").inner_text().strip() == "")
     visit(); a = editor(0)
     expect(f"{page}: after Poista kaikki nothing comes back", a.locator(".rich-text-editor").inner_text().strip() == "")
     tmp = ROOT / "preview" / "writepad-backup.json"; tmp.parent.mkdir(exist_ok=True); tmp.write_text(backup)
-    a.locator(".pad-saved > summary").click(); a.locator(".pad-saved input[type=file]").set_input_files(str(tmp)); pg.wait_for_timeout(600)
+    a.locator(".pad-saved > summary").click()
+    if work:   # the work file is opened whole and the page reloads (palautus.js open)
+        with pg.expect_navigation(): a.locator(".pad-saved input[type=file]").set_input_files(str(tmp))
+        pg.evaluate("document.querySelectorAll('#exercises details.level').forEach(d => { d.open = true; })"); a = editor(0); a.locator(".pad-saved > summary").click()
+    else: a.locator(".pad-saved input[type=file]").set_input_files(str(tmp)); pg.wait_for_timeout(600)
     expect(f"{page}: importing the backup brings the open editor's solution back", "Muisti A" in a.locator(".rich-text-editor").inner_text(), a.locator(".pad-status").inner_text())
     bad = ROOT / "preview" / "writepad-bad.json"; bad.write_text('{"format": "something else"}')
     a.locator(".pad-saved input[type=file]").set_input_files(str(bad)); pg.wait_for_timeout(300)
-    expect(f"{page}: a file that is not a backup is refused with a message", a.locator(".pad-status").inner_text() == T("js.pad_import_failed"))
+    expect(f"{page}: a file that is not a backup is refused with a message", a.locator(".pad-status").inner_text() == T("js.palautus_broken" if work else "js.pad_import_failed"), a.locator(".pad-status").inner_text())
     visit(); bb = editor(1)
     expect(f"{page}: after reloading, the imported solutions of other exercises are there too", "Muisti B" in bb.locator(".rich-text-editor").inner_text())
     a = editor(0); a.locator(".pad-delete").click(); pg.wait_for_timeout(400)

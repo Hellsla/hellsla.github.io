@@ -44,15 +44,15 @@ var RL_CONFIG = {
 
 // Samat rajat kuin RuukkiLabran palautus.js:ssä (LIMITS). Formsin tiedostokoon raja asetetaan 10 Mt:ksi.
 var RL_LIMITS = { file: 9000000, image: 2000000, side: 5000, images: 40, text: 20000, latex: 4000, items: 400, mathPng: 200000 };
-var RL_FORMAT = 'ruukkilabra-palautus', RL_VERSION = 3;   // 2: + itsearvio (selfassessment), 3: kaikki vastaukset + tavoitearvioiden kooste (opettaja 6.11.2026)
+var RL_FORMAT = 'ruukkilabra-palautus', RL_VERSION = 4;   // 2: + itsearvio (selfassessment), 3: kaikki vastaukset + tavoitearvioiden kooste (opettaja 6.11.2026), 4: + annettujen tehtävien eteneminen (7.11.2026)
 var RL_SA_LEVELS = ['a', 'b', 'c', 'd', 'x'];   // väriasteikko vihreästä punertavaan + Ei vielä (inquiry.py SA_LEVELS)
 var RL_STATUS = { OK: 'Hyväksytty', DUP: 'Kaksoiskappale', CHECK: 'Tarkistettava', BAD: 'Virheellinen', READ: 'Lukuvirhe' };
 var RL_DECISION = { ACCEPT: 'Hyväksy', REJECT: 'Hylkää' };
 var RL_SUB_HEAD = ['Avain', 'Palautusaika', 'Sähköposti', 'Palautustunniste', 'Tila', 'Syy', 'Opettajan päätös',
   'Vastattuja', 'Vastatut tehtävät', 'Tyhjiä', 'Tiedosto', 'Koko (t)', 'Sisällön SHA-256', 'Tuotu', 'Lomakkeen rivi', 'Luku',
-  'Tehtävien tiivisteet', 'Itsearvio'];
+  'Tehtävien tiivisteet', 'Itsearvio', 'Eteneminen'];
 var RL_SCORE_HEAD = ['Avain', 'Sähköposti', 'Palautustunniste', 'Tehtävä', 'Tehtävän numero', 'Pisteet', 'Tallennettu', 'Luku'];
-var RL_C = { key: 0, time: 1, email: 2, sub: 3, status: 4, reason: 5, decision: 6, nAnswered: 7, answered: 8, nEmpty: 9, file: 10, size: 11, sha: 12, imported: 13, row: 14, chapter: 15, hashes: 16, self: 17 };
+var RL_C = { key: 0, time: 1, email: 2, sub: 3, status: 4, reason: 5, decision: 6, nAnswered: 7, answered: 8, nEmpty: 9, file: 10, size: 11, sha: 12, imported: 13, row: 14, chapter: 15, hashes: 16, self: 17, progress: 18 };
 var RL_S = { key: 0, email: 1, sub: 2, task: 3, number: 4, points: 5, saved: 6, chapter: 7 };
 
 /* ---------- valikko ---------- */
@@ -192,7 +192,7 @@ function rlCheckItem_(it, where, deep) {
     return { type: 'text', text: it.text };
   }
   if (it.type === 'math') {
-    only(['type', 'latex', 'png', 'w', 'h']);
+    only(['type', 'latex', 'png', 'svg', 'w', 'h']);
     if (typeof it.latex !== 'string' || !it.latex.trim() || it.latex.length > RL_LIMITS.latex) throw rlError_(where + ': virheellinen kaava');
     var out = { type: 'math', latex: it.latex };
     if (it.png !== undefined) {
@@ -202,6 +202,13 @@ function rlCheckItem_(it, where, deep) {
         if (!mi || mi.mime !== 'image/png') throw rlError_(where + ': kaavakuva ei ole PNG-kuva');
       } else if (typeof it.png !== 'string' || it.png.length > RL_LIMITS.mathPng * 1.4) throw rlError_(where + ': kaavakuva on liian suuri');
       out.png = it.png; out.w = it.w; out.h = it.h;
+    }
+    // svg: työtiedostossa kaava on vain kerran, editorin MathJax-SVG:nä (palautus.js sref; 7.11.2026), PNG:tä ei ole
+    if (it.svg !== undefined) {
+      if (typeof it.svg !== 'string' || !/^[A-Za-z0-9+\/=]+$/.test(it.svg) || it.svg.length > RL_LIMITS.mathPng * 1.4) throw rlError_(where + ': kaavakuva on virheellinen');
+      if (deep && !/^\s*(<\?xml[^>]*>\s*)?<svg[\s>]/.test(Utilities.base64Decode(it.svg.slice(0, 200)).map(function (c) { return String.fromCharCode(c & 255); }).join(''))) throw rlError_(where + ': kaavakuva ei ole SVG-kuva');
+      if (it.w !== undefined && !(it.w > 0 && it.w <= 3000 && it.h > 0 && it.h <= 1000)) throw rlError_(where + ': kaavakuvan koko on virheellinen');
+      out.svg = it.svg; if (it.w !== undefined) { out.w = it.w; out.h = it.h; }
     }
     return out;
   }
@@ -273,18 +280,20 @@ function rlCheckResponse_(r, where) {
  * Tarkistaa tiedoston tekstin. Palauttaa { data, answered: [id], empty: [id], sha } tai heittää virheen, jonka viesti
  * kertoo syyn opettajalle. deep = kuvadata puretaan ja tarkistetaan tavuista (tuonnissa aina).
  */
-function rlValidate_(text, deep) {
+function rlValidate_(text, deep, work) {
   var data;
-  try { data = JSON.parse(text); } catch (e) { throw rlError_('tiedosto ei ole JSON-tiedosto'); }
+  if (work) data = text;   // yksi luku opintojakson työtiedostosta (rlValidateWork_)
+  else try { data = JSON.parse(text); } catch (e) { throw rlError_('tiedosto ei ole JSON-tiedosto'); }
   if (!data || typeof data !== 'object' || Array.isArray(data)) throw rlError_('tiedoston rakenne on virheellinen');
+  if (!work && data.format === RL_WORK_FORMAT) return rlValidateWork_(data, deep);
   if (data.format !== RL_FORMAT) throw rlError_('tiedosto ei ole RuukkiLabran palautustiedosto');
   if (typeof data.version !== 'number') throw rlError_('tiedostomuodon versio puuttuu');
   if (data.version > RL_VERSION) throw rlError_('tiedostomuodon versio ' + data.version + ' on uudempi kuin tämä skripti tuntee');
-  if (data.version !== 1 && data.version !== 2 && data.version !== 3) throw rlError_('tuntematon tiedostomuodon versio');
-  var v3 = data.version === 3;
+  if (data.version !== 1 && data.version !== 2 && data.version !== 3 && data.version !== 4) throw rlError_('tuntematon tiedostomuodon versio');
+  var v3 = data.version >= 3;   // versio 4 = versio 3 + eteneminen (progress)
   if (typeof data.chapter !== 'string' || !rlChapters_()[data.chapter]) throw rlError_('tiedosto on toiselta opintojaksolta tai tuntemattomasta luvusta (' + String(data.chapter).slice(0, 20) + ')');
   if (typeof data.submission_id !== 'string' || !/^[0-9a-f]{32}$/.test(data.submission_id)) throw rlError_('palautustunniste puuttuu tai on virheellinen');
-  if (typeof data.content_sha256 !== 'string' || !/^[0-9a-f]{64}$/.test(data.content_sha256)) throw rlError_('tarkistussumma puuttuu');
+  if (!work && (typeof data.content_sha256 !== 'string' || !/^[0-9a-f]{64}$/.test(data.content_sha256))) throw rlError_('tarkistussumma puuttuu');
   if (!Array.isArray(data.answers)) throw rlError_('vastaukset puuttuvat');
   var tasks = rlTasks_(data.chapter), seen = Object.create(null), answered = [], empty = [], images = 0, canon = [], hashes = [];
   for (var i = 0; i < data.answers.length; i++) {
@@ -316,15 +325,120 @@ function rlValidate_(text, deep) {
     (a.status === 'answered' ? answered : empty).push(a.task);
   }
   // vanhemmissa versioissa (1, 2) on vain editorilliset tehtävät, joten oppitunnin tehtävät eivät puutu niistä
-  for (var id in tasks) if (!seen[id] && (v3 || !tasks[id].lesson)) throw rlError_('tehtävä ' + tasks[id].number + ' puuttuu tiedostosta');
+  for (var id in tasks) if (!work && !seen[id] && (v3 || !tasks[id].lesson)) throw rlError_('tehtävä ' + tasks[id].number + ' puuttuu tiedostosta');
   if (images > RL_LIMITS.images) throw rlError_('kuvia on liikaa (' + images + ')');
   var self = data.version === 2 ? rlCheckSelf_(data.selfassessment, data.chapter) : v3 ? rlCheckGoals_(data.selfassessment, data.chapter) : null;
-  var sha = rlSha_(data.version === 2 ? JSON.stringify({ answers: canon, selfassessment: self }) : v3 ? JSON.stringify({ answers: canon, selfassessment: self }) : JSON.stringify(canon));
-  if (sha !== data.content_sha256) throw rlError_('tarkistussumma ei täsmää: tiedostoa on muutettu tai se on vioittunut');
+  var progress = data.version === 4 ? rlCheckProgress_(data.progress) : null;
+  if (data.version !== 4 && data.progress !== undefined) throw rlError_('etenemistiedot kuuluvat vain versioon 4');
+  var sha = rlSha_(progress ? JSON.stringify({ answers: canon, selfassessment: self, progress: progress })
+    : data.version === 2 || v3 ? JSON.stringify({ answers: canon, selfassessment: self }) : JSON.stringify(canon));
+  if (!work && sha !== data.content_sha256) throw rlError_('tarkistussumma ei täsmää: tiedostoa on muutettu tai se on vioittunut');
+  if (work) for (var tid in tasks) if (!seen[tid]) empty.push(tid);   // työtiedostossa on vain tehtävät, joissa on jotakin
   // taulukkoon vain tavoitearviot (opettaja 6.11.2026): version 2 tehtäväkohtaiset arviot ja historiat jäävät pois
   var known = rlGoalIds_(data.chapter);
   var levels = (self || []).filter(function (x) { return x.level && known[x.id]; }).map(function (x) { return { id: x.id, level: x.level }; });
-  return { data: data, chapter: data.chapter, answered: answered, empty: empty, sha: sha, hashes: hashes.join(','), self: levels };
+  return { data: data, chapter: data.chapter, answered: answered, empty: empty, sha: sha, hashes: hashes.join(','), self: levels, progress: progress };
+}
+// Eteneminen (versio 4, opettaja 7.11.2026): koko opintojakson annetut tehtävät, niistä tehdyiksi merkityt aikoineen ja
+// merkintöjen historia (1 = merkitty, 0 = merkintä poistettu). Tuntematon tehtävä, kenttä tai aika hylkää tiedoston.
+var RL_PROGRESS_MAX = { assigned: 300, history: 3000 };
+function rlCheckProgress_(p) {
+  var bad = function (what) { return rlError_('etenemistiedot: ' + what); };
+  if (!p || typeof p !== 'object' || Array.isArray(p)) throw bad('puuttuvat');
+  Object.keys(p).forEach(function (k) { if (['course', 'assigned', 'done', 'history'].indexOf(k) < 0) throw bad('tuntematon kenttä "' + String(k).slice(0, 30) + '"'); });
+  if (p.course !== RL_COURSE.id) throw bad('toiselta opintojaksolta (' + String(p.course).slice(0, 10) + ')');
+  if (!Array.isArray(p.assigned) || !p.assigned.length || p.assigned.length > RL_PROGRESS_MAX.assigned) throw bad('annetut tehtävät puuttuvat');
+  var known = Object.create(null), set = Object.create(null);
+  RL_COURSE.chapters.forEach(function (c) { c.tasks.forEach(function (t) { if (!t.lesson) known[t.id] = true; }); });
+  p.assigned.forEach(function (id) { if (typeof id !== 'string' || !known[id] || set[id]) throw bad('tuntematon tai toistuva tehtävä ' + String(id).slice(0, 40)); set[id] = true; });
+  var iso = function (t) { return typeof t === 'string' && /^\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d(\.\d{1,3})?Z$/.test(t) && !isNaN(Date.parse(t)); };
+  if (!Array.isArray(p.done) || p.done.length > p.assigned.length) throw bad('virheelliset merkinnät');
+  var seen = Object.create(null);
+  var done = p.done.map(function (x) {
+    if (!Array.isArray(x) || x.length !== 2 || !set[x[0]] || seen[x[0]] || !iso(x[1])) throw bad('virheellinen merkintä');
+    seen[x[0]] = true; return [x[0], x[1]];
+  });
+  if (!Array.isArray(p.history) || p.history.length > RL_PROGRESS_MAX.history) throw bad('virheellinen historia');
+  var history = p.history.map(function (x) {
+    if (!Array.isArray(x) || x.length !== 3 || !set[x[0]] || !iso(x[1]) || (x[2] !== 0 && x[2] !== 1)) throw bad('virheellinen historian rivi');
+    return [x[0], x[1], x[2]];
+  });
+  return { course: p.course, assigned: p.assigned.slice(), done: done, history: history };
+}
+// Opintojakson työtiedosto (opettaja 7.11.2026, templates/palautus.js "Work file"): kaikki luvut yhdessä tiedostossa,
+// lisäksi eteneminen ja opiskelijan selaimen tallennetut tiedot (store), joista kuvat haetaan. Jokainen luku tarkistetaan
+// kuten luvun palautus (versio 3), ja tuonti kirjaa sen omalle rivilleen.
+var RL_WORK_FORMAT = 'ruukkilabra-tyo', RL_WORK_VERSION = 1;
+function rlValidateWork_(data, deep) {
+  if (typeof data.version !== 'number') throw rlError_('tiedostomuodon versio puuttuu');
+  if (data.version > RL_WORK_VERSION) throw rlError_('työtiedoston versio ' + data.version + ' on uudempi kuin tämä skripti tuntee');
+  if (data.course !== RL_COURSE.id) throw rlError_('tiedosto on toiselta opintojaksolta (' + String(data.course).slice(0, 10) + ')');
+  if (typeof data.submission_id !== 'string' || !/^[0-9a-f]{32}$/.test(data.submission_id)) throw rlError_('palautustunniste puuttuu tai on virheellinen');
+  if (typeof data.content_sha256 !== 'string' || !/^[0-9a-f]{64}$/.test(data.content_sha256)) throw rlError_('tarkistussumma puuttuu');
+  var st = data.store;
+  if (!st || typeof st !== 'object' || !Array.isArray(st.solutions) || !st.local || typeof st.local !== 'object' || Array.isArray(st.local) || !Array.isArray(data.chapters) || data.chapters.length > 60) throw rlError_('työtiedoston rakenne on virheellinen');
+  if (rlSha_(JSON.stringify({ chapters: data.chapters, progress: data.progress, store: data.store })) !== data.content_sha256) throw rlError_('tarkistussumma ei täsmää: tiedostoa on muutettu tai se on vioittunut');
+  var html = Object.create(null);
+  st.solutions.forEach(function (r) { if (r && typeof r.id === 'string' && typeof r.html === 'string') html[r.id] = r.html; });
+  // k:s PNG- tai JPEG-kuva ratkaisun HTML:ssä (kaavat ovat SVG-kuvia, eivät mukana)
+  var picture = function (task, k, where) {
+    var tags = String(html[task] || '').match(/<img\b[^>]*>/gi) || [], n = 0;
+    for (var i = 0; i < tags.length; i++) {
+      var m = /\ssrc="data:(image\/(?:png|jpeg));base64,([A-Za-z0-9+\/=]+)"/.exec(tags[i]);
+      if (m && n++ === k) return { mime: m[1], data: m[2] };
+    }
+    throw rlError_(where + ': kuvaa ei löydy tiedostosta');
+  };
+  // k:s kaava (MathJax-SVG) ratkaisun HTML:ssä: työtiedoston kaava on vain siellä (sref), ei PNG:nä luvun vastauksissa
+  var formula = function (task, k, where) {
+    var tags = String(html[task] || '').match(/<img\b[^>]*>/gi) || [], n = 0;
+    for (var i = 0; i < tags.length; i++) {
+      var m = /\ssrc="data:image\/svg\+xml;base64,([A-Za-z0-9+\/=]+)"/.exec(tags[i]);
+      if (m && n++ === k) return m[1];
+    }
+    throw rlError_(where + ': kaavaa ei löydy tiedostosta');
+  };
+  var progress = data.progress === null || data.progress === undefined ? null : rlCheckProgress_(data.progress);
+  var seen = Object.create(null), parts = [], images = 0;
+  data.chapters.forEach(function (c, i) {
+    if (!c || typeof c !== 'object' || typeof c.chapter !== 'string' || !rlChapters_()[c.chapter]) throw rlError_('luku ' + (i + 1) + ' on tuntematon');
+    if (seen[c.chapter]) throw rlError_('luku ' + c.chapter + ' on tiedostossa kahdesti');
+    seen[c.chapter] = true;
+    var known = rlGoalIds_(c.chapter), sa = c.selfassessment;
+    if (!sa || !Array.isArray(sa.goals) || !Array.isArray(c.answers)) throw rlError_('luvun ' + c.chapter + ' rakenne on virheellinen');
+    var answers = c.answers.map(function (a) {
+      if (!a || typeof a !== 'object' || !Array.isArray(a.content)) return a;
+      var t = rlTasks_(c.chapter)[a.task], where = 'tehtävä ' + (t ? t.number : String(a.task).slice(0, 40));
+      return { task: a.task, status: a.status, responses: a.responses, content: a.content.map(function (it) {
+        if (it && it.type === 'math' && it.sref !== undefined) {
+          if (typeof it.sref !== 'number' || it.sref % 1 || it.sref < 0) throw rlError_(where + ': virheellinen kaava');
+          var fm = { type: 'math', latex: it.latex, svg: formula(a.task, it.sref, where) };
+          if (it.w !== undefined) { fm.w = it.w; fm.h = it.h; }
+          return fm;
+        }
+        if (!it || it.type !== 'image' || it.ref === undefined) return it;
+        if (typeof it.ref !== 'number' || it.ref % 1 || it.ref < 0) throw rlError_(where + ': virheellinen kuva');
+        images++;
+        var pic = picture(a.task, it.ref, where), o = { type: 'image', mime: pic.mime, data: pic.data, w: it.w, h: it.h };
+        if (it.dw !== undefined) o.dw = it.dw;
+        return o;
+      }) };
+    });
+    var goals = sa.goals.filter(function (g) { return g && known[g.id]; });
+    var v = rlValidate_({ format: RL_FORMAT, version: 3, chapter: c.chapter, submission_id: data.submission_id, answers: answers, selfassessment: { goals: goals } }, deep, true);
+    parts.push({ chapter: c.chapter, answered: v.answered, empty: v.empty, sha: v.sha, hashes: v.hashes, self: v.self, data: v.data });
+  });
+  if (images > RL_LIMITS.images * 8) throw rlError_('kuvia on liikaa (' + images + ')');
+  if (!parts.length) throw rlError_('tiedostossa ei ole yhtään ratkaisua');
+  return { work: true, data: data, parts: parts, progress: progress };
+}
+// Taulukkoon vain Tehty-merkinnät: "<annettuja>|<tehtävä>,<tehtävä>,...". Valmistumisajat ja historia jäävät
+// tiedostoon opiskelijan omaa etenemisgraafia varten; arviointi ei näytä eikä käytä niitä (opettaja 7.11.2026).
+function rlProgressCell_(p) { return p ? p.assigned.length + '|' + p.done.map(function (x) { return x[0]; }).join(',') : ''; }
+function rlProgressParse_(text) {
+  var m = /^(\d{1,3})\|(.*)$/.exec(rlText_(text));
+  if (!m) return null;
+  return { total: Number(m[1]), done: m[2] ? m[2].split(',').filter(function (x) { return /^[a-z0-9-]{1,40}$/.test(x); }) : [] };
 }
 // Itsearvio (versio 2): kohteet sivun järjestyksessä, taso ja sen historia. Tuntematon kohde, taso tai aika hylkää tiedoston.
 function rlCheckSelf_(sa, chapterId) {
@@ -432,7 +546,7 @@ function rlInFolder_(file) {
 }
 // Lukee ja tarkistaa yhden palautuksen. Palauttaa { status, reason, ... }; ei kirjoita mitään.
 function rlProcess_(resp) {
-  var out = { status: RL_STATUS.BAD, reason: '', sub: '', answered: [], empty: [], size: '', sha: '', chapter: '', hashes: '', self: '' };
+  var out = { status: RL_STATUS.BAD, reason: '', sub: '', answered: [], empty: [], size: '', sha: '', chapter: '', hashes: '', self: '', progress: '' };
   if (!resp.time) { out.reason = 'palautusaika puuttuu'; return out; }
   if (RL_CONFIG.IDENTITY === 'name') { if (!resp.email) { out.reason = 'palauttajan nimi puuttuu tiedoston nimestä'; return out; } }
   else if (!resp.email || resp.email.indexOf('@') < 1) { out.reason = 'vahvistettu sähköpostiosoite puuttuu (ota sähköpostien kerääminen käyttöön lomakkeessa)'; return out; }
@@ -450,7 +564,13 @@ function rlProcess_(resp) {
   } catch (e) { out.status = RL_STATUS.READ; out.reason = 'tiedostoa ei voitu lukea'; return out; }
   try {
     var v = rlValidate_(text, true);
-    out.status = RL_STATUS.OK; out.sub = v.data.submission_id; out.answered = v.answered; out.empty = v.empty; out.sha = v.sha; out.chapter = v.chapter; out.hashes = v.hashes; out.self = rlSelfCell_(v.self);
+    if (v.work) {
+      out.status = RL_STATUS.OK;
+      out.parts = v.parts.map(function (q) { return { status: RL_STATUS.OK, reason: '', sub: v.data.submission_id, answered: q.answered, empty: q.empty, size: out.size, sha: q.sha,
+        chapter: q.chapter, hashes: q.hashes, self: rlSelfCell_(q.self), progress: rlProgressCell_(v.progress) }; });
+      return out;
+    }
+    out.status = RL_STATUS.OK; out.sub = v.data.submission_id; out.answered = v.answered; out.empty = v.empty; out.sha = v.sha; out.chapter = v.chapter; out.hashes = v.hashes; out.self = rlSelfCell_(v.self); out.progress = rlProgressCell_(v.progress);
   } catch (e) { out.reason = rlUserMessage_(e); }
   return out;
 }
@@ -471,7 +591,11 @@ function rlImport_() {
       var resp = responses[i], at = byKey[resp.key];
       if (at !== undefined && (at >= rows.length || rows[at][RL_C.status] !== RL_STATUS.READ)) continue;   // jo tuotu: uudelleenajo ei kirjaa toista kertaa
       if (Date.now() - started > 270000) { unfinished = true; break; }   // Apps Scriptin 6 minuutin raja
-      var p = rlProcess_(resp), reason = p.reason;
+      var pr = rlProcess_(resp), parts = pr.parts || [pr];
+      // opintojakson työtiedosto (7.11.2026): yksi rivi kutakin tiedoston lukua kohti; ensimmäinen saa lomakkeen rivin avaimen
+      for (var j = 0; j < parts.length; j++) {
+      var p = parts[j], reason = p.reason, rkey = j === 0 ? resp.key : resp.key + '#' + p.chapter;
+      if (j > 0) at = byKey[rkey];
       if (p.status === RL_STATUS.OK) {
         // kaksoiskappaleet ja sama tunniste eri opiskelijoilla saman luvun aiemmissa riveissä (Formsin palautusajan järjestyksessä)
         for (var k = 0; k < rows.length; k++) {
@@ -490,11 +614,12 @@ function rlImport_() {
           }
         }
       }
-      var row = [resp.key, resp.time || '', resp.email, p.sub, p.status, reason, '', p.answered.length, p.answered.join(','), p.empty.length,
-        resp.ids.length ? 'https://drive.google.com/open?id=' + resp.ids[0] : '', p.size, p.sha, new Date(), resp.row, p.chapter, p.hashes, p.self].map(rlCell_);
+      var row = [rkey, resp.time || '', resp.email, p.sub, p.status, reason, '', p.answered.length, p.answered.join(','), p.empty.length,
+        resp.ids.length ? 'https://drive.google.com/open?id=' + resp.ids[0] : '', p.size, p.sha, new Date(), resp.row, p.chapter, p.hashes, p.self, p.progress].map(rlCell_);
       counts[p.status]++;
       if (at !== undefined) { row[RL_C.decision] = rows[at][RL_C.decision]; rows[at] = row; touched[at] = true; retried++; }
-      else { byKey[resp.key] = rows.length; rows.push(row); added.push(rows.length - 1); }
+      else { byKey[rkey] = rows.length; rows.push(row); added.push(rows.length - 1); }
+      }
     }
     // kirjoitus: muuttuneet vanhat rivit paikoilleen, uudet loppuun (sarake Opettajan päätös säilyy)
     for (var t in touched) {
@@ -532,8 +657,14 @@ function rlModel_() {
     // käsittelytilan lista: kaikki muut kuin tavalliset hyväksytyt, myös ne, joista opettaja on tehnyt päätöksen (voi perua)
     if (r[RL_C.status] !== RL_STATUS.OK || rlText_(r[RL_C.decision]) !== '') problems.push({ status: r[RL_C.status], reason: rlText_(r[RL_C.reason]), email: email,
       time: time ? rlFmt_(time) : '', decision: rlText_(r[RL_C.decision]), sub: rlText_(r[RL_C.sub]).slice(0, 8), key: rlText_(r[RL_C.key]), chapter: ch ? rlChapterName_(ch) : '' });
+    // eteneminen: opiskelijan uusin palautus, jossa se on (mikä luku tahansa; myös luku, joka oli sama kuin aiemmin)
+    var pr = time && ch && (rlAccepted_(r) || (r[RL_C.status] === RL_STATUS.DUP && rlText_(r[RL_C.decision]) !== RL_DECISION.REJECT)) ? rlProgressParse_(r[RL_C.progress]) : null;
+    if (pr) {
+      var sp = students[email] || (students[email] = { email: email, chapters: Object.create(null), first: time.getTime(), progress: null, progressMs: -1 });
+      if (time.getTime() >= sp.progressMs) { sp.progress = pr; sp.progressMs = time.getTime(); }
+    }
     if (!rlAccepted_(r) || !time || !ch) return;
-    var s = students[email] || (students[email] = { email: email, chapters: Object.create(null), first: time.getTime() });
+    var s = students[email] || (students[email] = { email: email, chapters: Object.create(null), first: time.getTime(), progress: null, progressMs: -1 });
     s.first = Math.min(s.first, time.getTime());
     (s.chapters[ch.id] || (s.chapters[ch.id] = [])).push({ fileId: rlText_(r[RL_C.file]).replace(/^.*[?&]id=/, ''), sub: rlText_(r[RL_C.sub]), timeMs: time.getTime(), time: rlFmt_(time),
       answered: rlText_(r[RL_C.answered]).split(',').filter(String), sha: rlText_(r[RL_C.sha]), hashes: rlHashes_(rlText_(r[RL_C.hashes])), self: rlSelfParse_(r[RL_C.self]) });
@@ -579,7 +710,7 @@ function rlSummary_(m) {
       per[c.id] = { points: rlRound_(sum), scored: n, tasks: nt, answered: a, unchecked: u };
       total += sum; scored += n; tasks += nt; answered += a; unchecked += u;
     });
-    return { email: s.email, chapters: per, total: rlRound_(total), scored: scored, tasks: tasks, answered: answered, unchecked: unchecked };
+    return { email: s.email, chapters: per, total: rlRound_(total), scored: scored, tasks: tasks, answered: answered, unchecked: unchecked, progress: s.progress };
   }).sort(function (a, b) { return a.email.localeCompare(b.email, 'fi'); });
 }
 
@@ -638,6 +769,7 @@ function rlAnswer(req) {
   if (!rlInFolder_(file) || file.getSize() > RL_LIMITS.file) throw rlError_('Palautustiedosto ei ole enää palautuskansiossa tai se on muuttunut.');
   var v;
   try { v = rlValidate_(file.getBlob().getDataAsString('UTF-8'), false); } catch (e) { throw rlError_('Palautustiedosto ei kelpaa enää: ' + rlUserMessage_(e)); }
+  if (v.work) { var part = v.parts.filter(function (q) { return q.chapter === info.chapter.id; })[0]; v = part ? { chapter: part.chapter, sha: part.sha, data: part.data } : { chapter: '' }; }
   if (v.chapter !== info.chapter.id || v.data.submission_id !== version.sub || v.sha !== version.sha) throw rlError_('Palautustiedosto on muuttunut tuonnin jälkeen.');
   var a = v.data.answers.filter(function (x) { return x.task === req.task; })[0];
   var where = 'tehtävä ' + info.task.number;
@@ -691,10 +823,10 @@ function rlSetDecision(req) {
 function rlScoresCsv() {
   var m = rlModel_(), chapters = RL_COURSE.chapters;
   var q = function (v) { v = v === null || v === undefined ? '' : String(v); if (/^[=+\-@\t\r]/.test(v)) v = "'" + v; return /[;"\n\r]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; };
-  var lines = [['Opiskelija'].concat(chapters.map(function (c) { return rlChapterName_(c) + ' (max ' + rlScored_(c).length * RL_CONFIG.MAX_POINTS + ')'; }), ['Yhteensä', 'Palautettuja lukuja', 'Tehty', 'Tarkistamatta']).map(q).join(';')];
+  var lines = [['Opiskelija'].concat(chapters.map(function (c) { return rlChapterName_(c) + ' (max ' + rlScored_(c).length * RL_CONFIG.MAX_POINTS + ')'; }), ['Yhteensä', 'Palautettuja lukuja', 'Tehty', 'Tarkistamatta', 'Annetut tehty']).map(q).join(';')];
   rlSummary_(m).forEach(function (s) {
     var cells = chapters.map(function (c) { return s.chapters[c.id] ? rlNum_(s.chapters[c.id].points) : ''; });
-    lines.push([s.email].concat(cells, [rlNum_(s.total), Object.keys(s.chapters).length, s.answered, s.unchecked]).map(q).join(';'));
+    lines.push([s.email].concat(cells, [rlNum_(s.total), Object.keys(s.chapters).length, s.answered, s.unchecked, s.progress ? s.progress.done.length + '/' + s.progress.total : '']).map(q).join(';'));
   });
   return '﻿' + lines.join('\r\n') + '\r\n';
 }
