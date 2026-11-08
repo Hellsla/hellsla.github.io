@@ -1640,3 +1640,4 @@ main.kr-theme{font-family:"Work Sans",var(--sans)}
 .local-quote figcaption{margin:.5rem 0 0 1.2rem;font-weight:700;color:var(--ink)}
 .kr-theme .lead{font-family:"Work Sans",var(--sans)}
 @media (min-width:44rem){.local-photo:not(.wide) img{aspect-ratio:4/3;object-fit:cover}}
+.mod-head-plain{width:4rem;height:4rem}@media (max-width:30rem){.mod-head-plain{width:3.25rem;height:3.25rem}}

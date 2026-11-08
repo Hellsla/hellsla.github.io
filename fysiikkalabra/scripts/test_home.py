@@ -163,7 +163,7 @@ for lang in i18n.languages():
             expect(f"{lang} {code}: the row has its subtitle as the question", f'title="{_h.escape(local[code]["subtitle"])}"' in r, r[:300])
             pg = (out / f"{code}.html").read_text() if (out / f"{code}.html").is_file() else ""
             expect(f"{lang} {code}: the page exists, says it is school-specific and what is planned",
-                   bool(pg) and 'class="notice local-kind"' in pg and (('class="notice local-status"' not in pg) if local[code]["status"] == "ready" else ('class="notice local-status"' in pg and T("site.local_status_" + local[code]["status"]) in pg)))
+                   bool(pg) and ('class="notice local-kind"' in pg) == local[code].get("kind_note", True) and (('class="notice local-status"' not in pg) if local[code]["status"] == "ready" else ('class="notice local-status"' in pg and T("site.local_status_" + local[code]["status"]) in pg)))
             prep = re.search(r'<ul class="local-prepare">(.*?)</ul>', pg, re.S)
             hrefs = re.findall(r'href="([^"]+)"', prep.group(1)) if prep else []
             expect(f"{lang} {code}: chapters to prepare with link only published pages ({len(hrefs)})", all((out / h).is_file() for h in hrefs), hrefs)
@@ -204,7 +204,9 @@ for lang in i18n.languages():
                and src.endswith(f"module-icons/{code.lower()}.svg") and (out / src).resolve().is_file(), (src, r[:160]))
         page_html = (out / f"{code}.html").read_text()
         psrc = icon_of(page_html[page_html.find("<main"):])
-        expect(f"{lang} {code}: the module page shows the same icon beside its title", psrc == src and page_html.find("mod-head-icon") < page_html.find("<h1"), psrc)
+        plain = (local_courses.load(lang).get(code) or {}).get("theme") == "kiviruukki"   # the picture inline without its tile (teacher 2026-11-08)
+        expect(f"{lang} {code}: the module page shows the same icon beside its title", (psrc == src or plain and '<svg class="mod-head-icon mod-head-plain"' in page_html and 'rx="12"' not in page_html[page_html.find('class="mod-head-icon'):page_html.find("<h1")])
+               and page_html.find("mod-head-icon") < page_html.find("<h1"), psrc)
     # the school's planned courses (teacher 2026-11-04): after the school's own courses, greyed out, icon + name + one
     # sentence, never a link (no content yet)
     plans = ahjo.front_page_planned(local_courses.planned(lang), ahjo.load(lang))   # Ahjo 1 and 2 only on the Ahjo page (2026-11-08)

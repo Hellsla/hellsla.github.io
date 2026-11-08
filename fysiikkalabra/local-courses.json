@@ -413,6 +413,7 @@
     "status": "building",
     "description": "Opintojaksolla suunnitellaan, rakennetaan ja ohjelmoidaan robotteja ryhmissä ja osallistutaan robotiikkakilpailuihin. Opintojakson materiaalia julkaistaan tälle sivulle sitä mukaa kuin se valmistuu.",
     "theme": "kiviruukki",
+    "kind_note": false,
     "photos_heading": "Kuvia Otarobo\u00a02026\u00a0-kilpailusta",
     "photos": [
       {
