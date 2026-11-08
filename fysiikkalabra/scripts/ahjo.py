@@ -214,7 +214,7 @@ def validate(lessons, investigations, guides, planned_codes, local_codes, module
     src = load()
     shape = lambda d: ([c["code"] for c in d["courses"]], [c["id"] for c in d["categories"]],
                        [r.get("ref") or r.get("id") or "safety" for r in d["resources"]], [g["id"] for g in d["equipment"]],
-                       [len(g["items"]) for g in d["equipment"]], [(len(c.get("goals", [])), len(c.get("lessons", [])), [(l.get("guides", []), bool(l.get("milestone")), bool(l.get("start")), sorted(l.get("levels", {})), bool(l.get("output_plus")), bool(l.get("final"))) for l in c.get("lessons", [])], len(c.get("deepening", [])), (c["start"]["minutes"], len(c["start"]["materials"]), len(c["start"]["steps"])) if c.get("start") else None, len(c["final"]["options"]) if c.get("final") else None) for c in d["courses"]], [s["id"] for s in d["safety"]], [l["course"] for l in d["links"]], sorted(d["ui"]),
+                       [len(g["items"]) for g in d["equipment"]], [(len(c.get("goals", [])), len(c.get("lessons", [])), [(l.get("guides", []), bool(l.get("milestone")), bool(l.get("start")), sorted(l.get("levels", {})), bool(l.get("output_plus")), bool(l.get("final"))) for l in c.get("lessons", [])], len(c.get("deepening", [])), (c["start"]["minutes"], len(c["start"]["materials"]), len(c["start"]["steps"])) if c.get("start") else None, len(c["final"]["options"]) if c.get("final") else None, [x["minutes"] for x in c["snacks"]["items"]] if c.get("snacks") else None, bool(c.get("flex"))) for c in d["courses"]], [s["id"] for s in d["safety"]], [l["course"] for l in d["links"]], sorted(d["ui"]),
                        [(p["id"], p["status"], p["level"], p["lessons"], p["courses"], [i["url"] for i in p["inspiration"]], len(p["skills"]), len(p["materials"]), len(p["subjects"])) for p in d.get("projects", [])],
                        [(x["id"], x["minutes"], x["lesson"], bool(x.get("induction")), len(x["subjects"]), len(x["materials"]), sorted(x["levels"])) for x in d.get("challenges", [])])
     files = [SOURCE] + sorted((ROOT / "content").glob("*/ahjo.json"))
@@ -258,6 +258,9 @@ def validate(lessons, investigations, guides, planned_codes, local_codes, module
             if fin and not (fin.get("title") and fin.get("text") and fin.get("own") and 3 <= len(fin.get("options", [])) <= 5 and all(len(o) == 2 and all(o) for o in fin["options"])):
                 errs.append(f"{name}: {c['code']}: the mini project has a title, a text, 3–5 options (title, text) and the own-idea note (teacher 2026-11-08)")
             if fin and sum(1 for l in c["lessons"] if l.get("final")) != 1: errs.append(f"{name}: {c['code']}: one lesson links the mini project options")
+            sn = c.get("snacks")
+            if sn and not (sn.get("title") and sn.get("text") and 3 <= len(sn.get("items", [])) <= 4 and all(x.get("title") and x.get("text") and 10 <= x.get("minutes", 0) <= 15 for x in sn["items"])):
+                errs.append(f"{name}: {c['code']}: the maker snacks have a title, a text and 3–4 items of 10–15 minutes (teacher 2026-11-08)")
             st = c.get("start")
             if st and not (st.get("title") and st.get("text") and st.get("after") and st.get("materials") and 3 <= len(st.get("steps", [])) <= 6 and 15 <= st.get("minutes", 0) <= 45):
                 errs.append(f"{name}: {c['code']}: the opening challenge needs a title, a text, 15–45 minutes, materials, 3–6 steps and what you take from it (teacher 2026-11-08)")
@@ -500,6 +503,16 @@ def final_section(c, k):
             + f'</ul><p class="ahjo-plan-note">{esc(f["own"])}</p></section>')
 
 
+def snacks_section(u, c, k):
+    """Ahjo 2's maker snacks (teacher 2026-11-08): optional 10–15 minute experiments for the middle of the project, no hand-ins."""
+    sn = c.get("snacks")
+    if not sn: return ""
+    return (f'<section class="ahjo-sec" id="maker-valipalat" aria-labelledby="h-{k}-snacks"><h2 id="h-{k}-snacks">{esc(sn["title"])}</h2>'
+            f'<p class="ahjo-sec-lead">{esc(sn["text"])}</p><ul class="ahjo-approach ahjo-snacks">'
+            + "".join(f'<li><span class="ahjo-approach-t">{esc(x["title"])}</span> <span class="ahjo-chip">{esc(u["snack_min"].replace("{n}", str(x["minutes"])))}</span> {esc(x["text"])}</li>' for x in sn["items"])
+            + '</ul></section>')
+
+
 def deepening_section(u, c, k):
     if not c.get("deepening"): return ""
     return (f'<section class="ahjo-sec" id="syventavat" aria-labelledby="h-{k}-deep"><h2 id="h-{k}-deep">{esc(u["deepening_h"])}</h2>'
@@ -554,7 +567,8 @@ def course_body(d, c, planned, local, modules, ref):
                 f'<p><span class="ahjo-meta-l">{esc(u["course_start_after"])}:</span> {esc(st["after"])}</p></section>')
     if c.get("lessons"):
         out += (f'<section class="ahjo-sec" id="oppitunnit" aria-labelledby="h-{k}-lessons"><h2 id="h-{k}-lessons">{esc(u["course_lessons"].replace("{n}", str(len(c["lessons"]))))}</h2>{note}'
-                + lessons_list(d, c, ref) + '</section>' + final_section(c, k) + deepening_section(u, c, k))
+                + (f'<p class="ahjo-plan-note ahjo-flex"><span class="ahjo-meta-l">{esc(u["flex_h"])}:</span> {esc(c["flex"])}</p>' if c.get("flex") else "")
+                + lessons_list(d, c, ref) + '</section>' + final_section(c, k) + snacks_section(u, c, k) + deepening_section(u, c, k))
     mine = [e for _, e in resolve(d, ref) if c["code"] in e["courses"] and e["href"] and (e["ready"] or e.get("draft"))]
     rows = "".join(f'<li><a href="{e["href"]}"><span class="ahjo-res-t">{esc(e["title"])}</span></a> <span class="ahjo-res-k">{esc(e["kind"])}</span>'
                    + (f' <span class="ahjo-badge planned">{esc(e["badge"])}</span>' if e.get("draft") else "")

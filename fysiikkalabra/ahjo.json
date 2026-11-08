@@ -126,6 +126,8 @@
     "course_start_h": "Aloitushaaste",
     "course_start_lesson": "Ahjo 2, tunti 1",
     "course_start_after": "Mitä tästä jää käteen",
+    "snack_min": "{n} min",
+    "flex_h": "Oma rytmi",
     "lesson_output": "Tuotos",
     "lesson_done": "Mitä sait aikaan?",
     "lesson_done_base": "Perustaso",
@@ -639,9 +641,9 @@
         },
         {
           "title": "Suunnittelu, materiaalit ja menetelmät",
-          "text": "Mittapiirros, 3D-malli ja perusteltu materiaalin valinta.",
-          "example": "Tee mittapiirros ja 3D-malli, joista toinen ryhmä voisi rakentaa saman osan. Vertaa vähintään kahta materiaalia lujuuden, hinnan, valmistusajan ja kierrätettävyyden perusteella.",
-          "output": "Mittapiirros, malli ja materiaalivalinta.",
+          "text": "Suunnitelma, jonka avulla toinen voisi rakentaa saman, ja perusteltu materiaalin valinta.",
+          "example": "Valitse projektiisi sopiva suunnittelu- ja dokumentointitapa: mittapiirros, 3D-malli, kytkentäkaavio, tekstiilikaava, toimintakaavio tai muu perusteltu tapa. Tee siitä niin selkeä, että toinen ryhmä voisi rakentaa saman osan. Vertaa vähintään kahta materiaalia lujuuden, hinnan, valmistusajan ja kierrätettävyyden perusteella.",
+          "output": "Projektiin sopiva suunnitelma (esimerkiksi mittapiirros, 3D-malli tai kytkentäkaavio) ja materiaalivalinta.",
           "guides": [
             "ahjo-3d-mallinnus"
           ],
@@ -684,9 +686,9 @@
         },
         {
           "title": "Parantaminen 2",
-          "text": "Osa, joka parantaa toimintaa mitattavasti.",
-          "example": "Lisää ratkaisuun anturi, ohjain, tulostettu tai ommeltu osa, joka parantaa toimintaa mitattavasti. Mittaa vaikutus.",
-          "output": "Mitattu parannus.",
+          "text": "Parannus, jonka vaikutus näkyy mittauksissa.",
+          "example": "Valitse testitulosten perusteella yksi parannus ja mittaa sen vaikutus. Parannus voi olla uusi osa tai anturi, mutta yhtä hyvin rakenteen yksinkertaistaminen, materiaalin vaihtaminen tai ohjelman parantaminen.",
+          "output": "Mitattu parannus ja sen perustelu.",
           "guides": []
         },
         {
@@ -726,6 +728,33 @@
           "milestone": "Palautus 5: kooste ja video"
         }
       ],
+      "flex": "Projektit ovat erilaisia. Palautukset ja välitavoitteet ovat kaikille samat, mutta rakentamisen ja testauksen rytmin voi sopia opettajan kanssa. Esimerkiksi pitkä rakennusvaihe voi jatkua seuraavalle tunnille, kun testisuunnitelmaa tehdään sen rinnalla.",
+      "snacks": {
+        "title": "Maker-välipalat",
+        "text": "Vapaaehtoisia 10–15 minuutin kokeiluja projektityön keskivaiheille, tunneille 8–12. Opettaja voi ottaa niitä esiin, kun työ jumittaa tai ryhmä kaipaa uutta ideaa. Niistä ei palauteta mitään, ja oma projekti pysyy pääasiana.",
+        "items": [
+          {
+            "title": "Prototyyppi oudosta materiaalista",
+            "minutes": 15,
+            "text": "Tee projektisi tärkeimmästä osasta malli materiaalista, jota et ole vielä käyttänyt: foliosta, pilleistä, pyykkipojista, kankaasta tai muovailuvahasta. Mitä uusi materiaali paljasti ratkaisustasi?"
+          },
+          {
+            "title": "Mekanismikokeilu",
+            "minutes": 15,
+            "text": "Rakenna pahvista yksi mekanismi, jota et ole vielä kokeillut: vipu, nokka, sarana tai kampi. Voisiko se toimia projektissasi?"
+          },
+          {
+            "title": "Kymmenen esineen haaste",
+            "minutes": 10,
+            "text": "Ryhmä saa pussillisen satunnaisia tarvikkeita ja rakentaa niistä kymmenessä minuutissa ratkaisun yhteen projektin osaongelmaan."
+          },
+          {
+            "title": "Paperikäyttöliittymä",
+            "minutes": 15,
+            "text": "Piirrä laitteesi painikkeet, näyttö tai ohjeet paperille ja anna toisen ryhmän jäsenen kokeilla niitä. Sinä toimit laitteena ja reagoit painalluksiin. Missä kohdassa hän epäröi?"
+          }
+        ]
+      },
       "plan_status": "draft"
     }
   ],
