@@ -14,7 +14,7 @@ Fields of ahjo.json (texts in the file's language):
   title, eyebrow, lead, opening, description   the start page's heading and its lines
   ui                       the section's interface texts; a count is {"one", "other"} with {n}
   courses                  [{code, subtitle, topics, goals?, lessons?, plan_status?}] (goals complete "Opintojaksolla
-                           opit"; lessons: 16 x {title, text}; plan_status "draft" until the teacher approves): Ahjo 1 and Ahjo 2. Their name and one-line description come
+                           opit"; lessons: 16 x {title, text, example?}; plan_status "draft" until the teacher approves): Ahjo 1 and Ahjo 2. Their name and one-line description come
                            from local-courses.json ("_planned" by icon code, or the course itself once it is a real
                            local course with its own page, which is then linked): one source, never written twice
   categories               [{id, icon, title, text}]: the bank's main categories, in order (ICONS names the icon)
@@ -283,7 +283,8 @@ def course_plan(u, c):
                 f'<ul>' + "".join(f'<li>{esc(g)}</li>' for g in c["goals"]) + '</ul></details>')
     if c.get("lessons"):
         out += (f'<details class="ahjo-plan"><summary>{esc(u["course_lessons"].replace("{n}", str(len(c["lessons"]))))}</summary><ol class="ahjo-lessons">'
-                + "".join(f'<li><span class="ahjo-lesson-t">{esc(l["title"])}</span> <span class="ahjo-lesson-x">{esc(l["text"])}</span></li>' for l in c["lessons"])
+                + "".join(f'<li><span class="ahjo-lesson-t">{esc(l["title"])}</span> <span class="ahjo-lesson-x">{esc(l["text"])}</span>'
+                           + (f'<span class="ahjo-lesson-e"><span class="ahjo-meta-l">{esc(u["lesson_example"])}:</span> {esc(l["example"])}</span>' if l.get("example") else "") + '</li>' for l in c["lessons"])
                 + '</ol></details>')
     return out
 

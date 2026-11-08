@@ -64,7 +64,8 @@
     "plan_draft": "Draft: the goals and the lesson outline await the teacher's approval.",
     "course_goals": "Goals",
     "course_goals_lead": "In this course, you will learn to",
-    "course_lessons": "{n} lessons"
+    "course_lessons": "{n} lessons",
+    "lesson_example": "Example"
   },
   "courses": [
     {
@@ -88,67 +89,83 @@
       "lessons": [
         {
           "title": "Welcome to Ahjo",
-          "text": "The space, the equipment and how we work; the rules and the induction."
+          "text": "The space, the equipment and how we work; the rules and the induction.",
+          "example": "An Ahjo tour: guess what each machine does and think of what you would like to build."
         },
         {
           "title": "Working safely",
-          "text": "Hand and power tools, protective equipment and an orderly workstation."
+          "text": "Hand and power tools, protective equipment and an orderly workstation.",
+          "example": "Make Ahjo's safety poster together, with rules the students justify themselves."
         },
         {
           "title": "Basics of 3D modelling",
-          "text": "Basic shapes, joining and cutting in a modelling program."
+          "text": "Basic shapes, joining and cutting in a modelling program.",
+          "example": "Model your own key ring or name tag and print it at the end of the lesson."
         },
         {
           "title": "A model to measure",
-          "text": "Dimensions, tolerances and fitting parts together."
+          "text": "Dimensions, tolerances and fitting parts together.",
+          "example": "A phone stand or cable holder that fits your own phone to the millimetre."
         },
         {
           "title": "From model to print",
-          "text": "Slicing, print settings and using the printer."
+          "text": "Slicing, print settings and using the printer.",
+          "example": "How fast and light can you print a bridge that carries a drink can?"
         },
         {
           "title": "Judging a print and 3D scanning",
-          "text": "Print defects and how to fix them; scanning an object into a model."
+          "text": "Print defects and how to fix them; scanning an object into a model.",
+          "example": "Scan a stone, a fruit or your own face and print a miniature of it."
         },
         {
           "title": "Circuits and components",
-          "text": "Power source, resistor, LED and breadboard."
+          "text": "Power source, resistor, LED and breadboard.",
+          "example": "Light an LED with a lemon battery and find out how many lemons it takes."
         },
         {
           "title": "Measuring with a multimeter",
-          "text": "Measuring voltage, current and resistance connected the right way."
+          "text": "Measuring voltage, current and resistance connected the right way.",
+          "example": "Find a broken lead or a flat battery by measuring: Ahjo's electrical detective."
         },
         {
           "title": "A first Arduino program",
-          "text": "The programming environment, digital outputs and a blinking LED."
+          "text": "The programming environment, digital outputs and a blinking LED.",
+          "example": "Traffic lights or a Morse message a classmate tries to decode."
         },
         {
           "title": "Sensors and inputs",
-          "text": "Button, light and distance sensors; conditions and loops."
+          "text": "Button, light and distance sensors; conditions and loops.",
+          "example": "A night light that turns on in the dark, or a parking sensor that beeps faster and faster."
         },
         {
           "title": "Motors and actuators",
-          "text": "Servo and DC motor; power supply and control."
+          "text": "Servo and DC motor; power supply and control.",
+          "example": "A waving cat, a pointer, or a small fan that starts when it gets warm."
         },
         {
           "title": "Soldering",
-          "text": "Using a soldering station and soldering a small circuit."
+          "text": "Using a soldering station and soldering a small circuit.",
+          "example": "Solder your own blinking badge or a small sound circuit to take home."
         },
         {
           "title": "Building a robot",
-          "text": "The structure of a robotics kit, drive train and sensors."
+          "text": "The structure of a robotics kit, drive train and sensors.",
+          "example": "Build a robot that carries a ping-pong ball from one end of the table to the other."
         },
         {
           "title": "Programming a robot",
-          "text": "Movement, sensor control and solving a task with a program."
+          "text": "Movement, sensor control and solving a task with a program.",
+          "example": "A line-following robot and a class race on a track."
         },
         {
           "title": "Mini project",
-          "text": "A small device of your own with the methods learned: design and build."
+          "text": "A small device of your own with the methods learned: design and build.",
+          "example": "Solve a small everyday problem at school: a doorbell, a plant-watering reminder or a classroom noise meter."
         },
         {
           "title": "Presentation and self-assessment",
-          "text": "Presenting and documenting the mini project and assessing your own learning."
+          "text": "Presenting and documenting the mini project and assessing your own learning.",
+          "example": "A fair: everyone presents their device in a minute and the others try it."
         }
       ],
       "plan_status": "draft"
@@ -174,67 +191,83 @@
       "lessons": [
         {
           "title": "Starting the project",
-          "text": "How Ahjo 2 runs, teams and finding a project topic."
+          "text": "How Ahjo 2 runs, teams and finding a project topic.",
+          "example": "Look at young inventors' solutions and collect problems from your own school life."
         },
         {
           "title": "Defining the problem",
-          "text": "Whose problem, what need, and how success is recognised."
+          "text": "Whose problem, what need, and how success is recognised.",
+          "example": "Interview a user: what makes the PE lesson, canteen or bike park awkward?"
         },
         {
           "title": "Ideation",
-          "text": "Ideation methods and producing several possible solutions."
+          "text": "Ideation methods and producing several possible solutions.",
+          "example": "A six-minute sketch round: six ideas for the same problem."
         },
         {
           "title": "Judging and choosing ideas",
-          "text": "Criteria, comparison and a justified choice."
+          "text": "Criteria, comparison and a justified choice.",
+          "example": "Score the ideas: impact, feasibility and how exciting they are."
         },
         {
           "title": "Project plan",
-          "text": "Goals, roles, schedule, materials and risks."
+          "text": "Goals, roles, schedule, materials and risks.",
+          "example": "Make a one-page plan and timeline of the project and update it every lesson."
         },
         {
           "title": "Design",
-          "text": "Sketches, dimensioned drawings and digital models."
+          "text": "Sketches, dimensioned drawings and digital models.",
+          "example": "Cardboard first: build the idea from cardboard and tape before the computer model."
         },
         {
           "title": "Materials and methods",
-          "text": "Choosing suitable materials, equipment and ways of making."
+          "text": "Choosing suitable materials, equipment and ways of making.",
+          "example": "Compare: what does the same part need when 3D printed, cut from vinyl or sewn?"
         },
         {
           "title": "A first prototype",
-          "text": "A quick, simple model to try out the idea."
+          "text": "A quick, simple model to try out the idea.",
+          "example": "A one-lesson prototype: what is the smallest version that lets you try the idea?"
         },
         {
           "title": "Testing the prototype",
-          "text": "A test plan, measuring and recording observations."
+          "text": "A test plan, measuring and recording observations.",
+          "example": "A stress test: drop it, load it, or let someone use it without instructions."
         },
         {
           "title": "Feedback and improvement",
-          "text": "Feedback from users and the group; planning changes."
+          "text": "Feedback from users and the group; planning changes.",
+          "example": "A feedback café: groups rotate and leave each other \"keep, change, try\" notes."
         },
         {
           "title": "Building 1",
-          "text": "Making the parts of the solution according to the plan."
+          "text": "Making the parts of the solution according to the plan.",
+          "example": "Split the building into parts so that everyone learns a new machine."
         },
         {
           "title": "Building 2",
-          "text": "Assembling the parts; electronics, programming or finishing as needed."
+          "text": "Assembling the parts; electronics, programming or finishing as needed.",
+          "example": "Add a sensor, light, sound or printed fabric part that makes it clearer for the user."
         },
         {
           "title": "Final testing",
-          "text": "Does the solution work: tests, measurements and comparison with the goals."
+          "text": "Does the solution work: tests, measurements and comparison with the goals.",
+          "example": "Measure before and after: how much does the solution really help?"
         },
         {
           "title": "Finishing",
-          "text": "Last fixes, appearance and usability."
+          "text": "Last fixes, appearance and usability.",
+          "example": "A finish that makes it look like a product: a sticker, logo or case with the vinyl cutter and 3D printer."
         },
         {
           "title": "Documentation",
-          "text": "The project's stages, decisions and results into a portfolio."
+          "text": "The project's stages, decisions and results into a portfolio.",
+          "example": "Shoot a short video or make an illustrated portfolio from which someone else could build it."
         },
         {
           "title": "Presentation and assessment",
-          "text": "Presenting the project and assessing your own and the group's work."
+          "text": "Presenting the project and assessing your own and the group's work.",
+          "example": "A project exhibition in the school lobby or for visitors."
         }
       ],
       "plan_status": "draft"

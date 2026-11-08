@@ -1525,3 +1525,4 @@ main.ahjo-page{max-width:68rem;font-family:var(--ahjo-text)}
 .ahjo-lessons li{margin:.25rem 0}.ahjo-lessons li::marker{color:var(--kr-navy);font-weight:700}
 .ahjo-lesson-t{font-weight:700;color:var(--kr-navy)}.ahjo-lesson-x{color:var(--ink-2)}
 .ahjo-courses{align-items:start}
+.ahjo-lesson-e{display:block;margin:.15rem 0 .1rem;padding-left:.6rem;border-left:3px solid var(--kr-pink);color:var(--ink)}
