@@ -157,10 +157,12 @@
     wrap.addEventListener('toggle', () => tg.setAttribute('aria-expanded', String(wrap.open)));
   };
   if (mod) { mod.hidden = false; showWrap(mod.closest('details')); }
-  const graph = mod && mod.querySelector('details.pm-graph');
-  if (graph) graph.addEventListener('toggle', () => { if (graph.open) render(); });
+  // the graph shows at once when Näytä edistyminen opens (teacher 2026-11-08: no separate Etenemisgraafi button)
+  const graph = mod && mod.querySelector('.pm-graph'), view = mod && mod.closest('details');
+  const shown = () => !!graph && (!view || view.open);
+  if (view) view.addEventListener('toggle', () => { if (view.open) render(); });
   let lastW = 0;
-  window.addEventListener('resize', () => { const c = graph && graph.open && graph.querySelector('.pm-chart'); if (c && Math.abs(c.clientWidth - lastW) > 8) render(); });
+  window.addEventListener('resize', () => { const c = shown() && graph.querySelector('.pm-chart'); if (c && Math.abs(c.clientWidth - lastW) > 8) render(); });
 
   // The graph (the student's own; the teacher's view shows only the Tehty marks, never the times or a graph): the date across, the done tasks
   // up to the module's total, a step for each day with ticks, from the first tick's day to today.
@@ -220,7 +222,7 @@
       bar.setAttribute('aria-valuemax', String(total)); bar.setAttribute('aria-valuenow', String(done.length));
       bar.setAttribute('aria-label', S('progress_count', { n: done.length, total }));
       bar.firstElementChild.style.width = (total ? 100 * done.length / total : 0) + '%';
-      if (graph && graph.open) chart(graph.querySelector('.pm-chart'), done.map((id) => st.done[id]), total);
+      if (shown()) chart(graph.querySelector('.pm-chart'), done.map((id) => st.done[id]), total);
     }
   };
   window.flProgressChart = chart;
