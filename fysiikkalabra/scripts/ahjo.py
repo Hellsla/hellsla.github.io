@@ -268,8 +268,11 @@ def validate(lessons, investigations, guides, planned_codes, local_codes, module
                     if not g: errs.append(f"{name}: {rid}: {r['status']} but content/fi/ahjo/{rid}.md is missing"); continue
                     if g.parent.parent.name != lang: continue     # falls back to the Finnish text
                     heads = re.findall(r"^## (.+?)\s*$", g.read_text(), re.M)
-                    if heads != d["ui"]["guide_sections"]:
-                        errs.append(f"{g.relative_to(ROOT)}: its ## headings must be the twelve guide sections in order: {d['ui']['guide_sections']}, not {heads}")
+                    if heads != [d["ui"]["guide_quick"]] + d["ui"]["guide_sections"]:
+                        errs.append(f"{g.relative_to(ROOT)}: its ## headings must be the quick start and the twelve guide sections in order: {[d['ui']['guide_quick']] + d['ui']['guide_sections']}, not {heads}")
+                    quick = g.read_text().split("\n## ", 2)[0] if g.read_text().startswith("## ") else ""
+                    if re.findall(r"^### (.+?)\s*$", quick, re.M) != d["ui"]["lesson_levels"]:
+                        errs.append(f"{g.relative_to(ROOT)}: the quick start ends with the three levels {d['ui']['lesson_levels']} as ### headings (teacher 2026-11-08)")
                     if FORBIDDEN.search(g.read_text()): errs.append(f"{g.relative_to(ROOT)}: names equipment Ahjo will not have ({FORBIDDEN.search(g.read_text()).group(0)})")
                     names = FIG_REF.findall(g.read_text()); mod = figure_module(rid) if names else None
                     for fig in names:
@@ -657,8 +660,9 @@ def guide_md(gid, lang):
 
 
 def guide_body(d, gid, lang, render_md):
-    """An Ahjo guide's page: a draft says so first, in a note nobody can miss; then the twelve sections, with the
-    figures drawn in the page's language."""
+    """An Ahjo guide's page: a draft says so first, in a note nobody can miss; then the quick start (a first success in
+    about ten minutes, then try, modify, challenge yourself) and Learn more, the twelve sections, with the figures drawn
+    in the page's language (teacher 2026-11-08)."""
     r = next(r for r in d["resources"] if r.get("id") == gid); u = d["ui"]
     note = (f'<p class="ahjo-draft" role="note">{icon("notebook")}<span><strong>{esc(u["res_draft"])}.</strong> {esc(u["guide_draft_note"])}</span></p>'
             if r["status"] == "draft" else "")
@@ -666,6 +670,10 @@ def guide_body(d, gid, lang, render_md):
     mod = figure_module(gid) if figs else None
     for tok, name in figs.items():
         body = re.sub(rf"(?:<p>)?{tok}(?:</p>)?", lambda m, name=name: f'<div class="fig ahjo-fig">{draw(gid, name, lang, mod)[0]}</div>', body)
+    cut = body.find("<h2", body.find("<h2") + 1)               # the quick start is the first section; Learn more is the rest
+    if cut > 0:
+        body = (f'<section class="ahjo-quick" aria-labelledby="pikastartti">{body[:cut].replace("<h2>", '<h2 id="pikastartti">', 1)}</section>'
+                f'<div class="ahjo-more-band"><h2 id="opi-lisaa">{esc(u["guide_more"])}</h2><p>{esc(u["guide_more_lead"])}</p></div>{body[cut:]}')
     return hero(d, r["title"], r["text"], BANK) + note + f'<article class="ahjo-guide">{body}</article>'
 
 

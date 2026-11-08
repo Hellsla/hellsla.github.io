@@ -1539,7 +1539,9 @@ main.ahjo-page{max-width:68rem;font-family:var(--ahjo-text)}
 /* a picture for each lesson (teacher 2026-11-08 "Haluan kuvat tunneille"): small at the left of the lesson's text */
 .ahjo-lessons li{margin:.55rem 0}
 .ahjo-lesson{display:flow-root}
-.ahjo-lesson-o{border-left-color:var(--kr-navy)}.ahjo-lesson-s{background:var(--kr-pink-soft);border-radius:0 6px 6px 0;padding:.15rem .6rem}
+.ahjo-lesson-o{border-left-color:var(--kr-navy)}.ahjo-quick{margin:0 0 1.5rem;padding:.2rem 1.1rem .6rem;border:2px solid var(--kr-pink);border-radius:12px;background:var(--kr-pink-soft)}
+.ahjo-quick h2{border-top:0;margin:.7rem 0 .4rem;padding-top:0}.ahjo-quick h3{margin-top:1rem}.ahjo-quick code{background:#fff}.ahjo-more-band h2{border-top:0;margin:.5rem 0 .2rem;padding-top:0}.ahjo-more-band+h2{border-top:0;margin-top:1rem;padding-top:0}.ahjo-more-band{margin:1.5rem 0 .5rem;padding:.4rem 0 .2rem;border-top:3px solid var(--kr-navy)}.ahjo-more-band p{margin:.2rem 0 0;color:var(--ink-2)}
+.ahjo-lesson-s{background:var(--kr-pink-soft);border-radius:0 6px 6px 0;padding:.15rem .6rem}
 .ahjo-make{display:block;margin:.2rem 0 .15rem;font-weight:700;color:var(--kr-navy)}.ahjo-make .ahjo-meta-l{color:var(--kr-pink-dark,#b0306b)}
 .ahjo-levels{display:block;margin:.2rem 0 .15rem;padding-left:.6rem}.ahjo-level{display:grid;grid-template-columns:9.5rem 1fr;column-gap:.4rem;margin:.15rem 0}
 .ahjo-level-l{font-weight:700;color:var(--kr-navy)}.ahjo-level-l::before{content:'';display:inline-block;width:.55rem;height:.55rem;margin-right:.35rem;border-radius:50%;background:var(--kr-pink);vertical-align:.05em}

@@ -110,6 +110,9 @@
       "other": "{n} drafts"
     },
     "guide_draft_note": "This guide has not yet been tried on Ahjo's own devices. Device models, settings and times will be confirmed once the devices have been acquired. Always follow your teacher's instructions and the device-specific induction.",
+    "guide_quick": "Quick start",
+    "guide_more": "Learn more",
+    "guide_more_lead": "This part goes through the work thoroughly: why it works, the exact steps, measurements and solving problems.",
     "guide_sections": [
       "Challenge",
       "Learning goals",

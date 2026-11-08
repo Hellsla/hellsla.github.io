@@ -1,3 +1,24 @@
+## Pikastartti
+
+Teet ensimmäisen merkinnän viidessä minuutissa. Hyvä päiväkirja syntyy pienistä merkinnöistä, jotka kirjoitetaan heti tunnin aikana.
+
+1. Avaa ryhmän yhteinen dokumentti tai ruutuvihko.
+2. Kirjoita päivämäärä ja yksi lause siitä, mitä teitte tänään.
+3. Ota kuva työstäsi ja kirjoita sille kuvateksti: mitä kuvassa näkyy ja miksi otit sen.
+4. Kirjoita yksi lause seuraavasta askeleesta.
+
+### Kokeile
+
+Tee kolmen rivin merkintä: päivämäärä, mitä teitte ja seuraava askel.
+
+### Muokkaa
+
+Käytä omaa tapaasi, kuten luonnosta, lyhyttä videota tai sarjakuvaa, kunhan päivämäärä ja seuraava askel löytyvät.
+
+### Haasta itsesi
+
+Kirjaa yksi päätös ja sen perustelu sekä yksi mittaus taulukkona yksiköineen. Arviointikriteerit ovat alla Opi lisää -osassa.
+
 ## Haaste
 
 Kirjoita projektistasi päiväkirjaa niin, että toinen opiskelija voisi jatkaa projektia pelkän päiväkirjan perusteella. Hyvä päiväkirja ei ole siisti loppuraportti. Siihen kirjataan työn aikana, mitä päätit, miksi päätit niin, mitä kokeilit ja mitä siitä seurasi.

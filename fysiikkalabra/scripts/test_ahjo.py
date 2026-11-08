@@ -57,7 +57,10 @@ for lang in i18n.languages():
         f = out / f"{g}.html"; html = f.read_text() if f.is_file() else ""
         art = re.search(r'<article class="ahjo-guide">(.*?)</article>', html, re.S)
         heads = [re.sub(r"<[^>]+>", "", h) for h in re.findall(r"<h2[^>]*>(.*?)</h2>", art.group(1))] if art else []
-        expect(f"{lang} {g}: the twelve guide sections in order", heads == d["ui"]["guide_sections"], heads)
+        expect(f"{lang} {g}: the quick start, Learn more and the twelve guide sections in order", heads == [d["ui"]["guide_quick"], d["ui"]["guide_more"]] + d["ui"]["guide_sections"], heads)
+        quick = re.search(r'<section class="ahjo-quick".*?</section>', art.group(1), re.S) if art else None
+        expect(f"{lang} {g}: the quick start comes first, with try, modify and challenge yourself", quick is not None and art.group(1).startswith('<section class="ahjo-quick"')
+               and [re.sub(r"<[^>]+>", "", h) for h in re.findall(r"<h3[^>]*>(.*?)</h3>", quick.group(0))] == d["ui"]["lesson_levels"])
         expect(f"{lang} {g}: a draft says so before the guide, and the bank links it with its badge",
                r["status"] != "draft" or (html.find('class="ahjo-draft"') != -1 and html.find('class="ahjo-draft"') < html.find('class="ahjo-guide"')
                                          and re.search(rf'href="{g}\.html".*?{re.escape(ahjo.esc(d["ui"]["res_draft"]))}', bank, re.S) is not None))
