@@ -95,6 +95,13 @@
     ],
     "lesson_output": "Output",
     "lesson_guides": "Guides",
+    "challenges_h": "Small challenges",
+    "challenges_lead": "Challenges of 15–45 minutes to do alongside Ahjo 1's lessons. Each has three levels: Try, Modify and Challenge yourself. They include visual arts, music, design and crafts too.",
+    "challenge_min": "{n} min",
+    "challenge_lesson": "Ahjo 1, lesson {n}",
+    "challenge_materials": "You need",
+    "challenge_induction": "Needs the device induction",
+    "lesson_challenge": "Small challenge",
     "deepening_h": "Optional deepening",
     "deepening_lead": "Optional extra work for those who get further or want to go deeper. It is not part of the outline everyone follows.",
     "course_page_open": "Open the course page",
@@ -1536,6 +1543,268 @@
           "url": "https://www.teachengineering.org/activities/cub-2825-creative-engineering-electric-vehicle-design"
         }
       ]
+    }
+  ],
+  "challenges": [
+    {
+      "id": "paperivalopiiri",
+      "title": "A light-up paper circuit card",
+      "minutes": 30,
+      "lesson": 1,
+      "make": "A card whose LED lights when you fold a corner shut.",
+      "subjects": [
+        "visual arts"
+      ],
+      "materials": [
+        "card",
+        "copper tape",
+        "3 V coin cell",
+        "LED",
+        "tape"
+      ],
+      "levels": {
+        "try": "Stick two tracks of copper tape on the card, put the LED and the coin cell between them and fold a corner into a switch.",
+        "modify": "Draw or cut a picture on the cover that the light shines through.",
+        "challenge": "Add a second LED in parallel. Explain why both shine equally brightly."
+      }
+    },
+    {
+      "id": "leimasin",
+      "title": "Your own stamp",
+      "minutes": 30,
+      "lesson": 3,
+      "make": "A stamp modelled in Tinkercad with your own pattern or initials.",
+      "subjects": [
+        "visual arts",
+        "design"
+      ],
+      "materials": [
+        "computer with Tinkercad",
+        "stamp ink (after printing)"
+      ],
+      "levels": {
+        "try": "Model a $30\\,\\text{mm}$ disc with a raised pattern or letters on it.",
+        "modify": "Make your own pattern or logo and add a handle to the stamp.",
+        "challenge": "Remember to mirror the letters. Explain why the stamp's print is a mirror image."
+      }
+    },
+    {
+      "id": "paperisilta",
+      "title": "A paper bridge",
+      "minutes": 30,
+      "lesson": 4,
+      "make": "A bridge folded from one A4 sheet that spans a $20\\,\\text{cm}$ gap.",
+      "subjects": [
+        "design",
+        "physics"
+      ],
+      "materials": [
+        "A4 paper",
+        "two stacks of books",
+        "coins or weights",
+        "scales"
+      ],
+      "levels": {
+        "try": "Fold a bridge from the sheet and add coins on it until it gives way.",
+        "modify": "Try another shape, such as a concertina, a tube or an arch, and compare the results.",
+        "challenge": "Weigh the largest load the bridge held and work out how many times its own mass it carried."
+      }
+    },
+    {
+      "id": "arvaa-ja-punnitse",
+      "title": "Guess and weigh",
+      "minutes": 15,
+      "lesson": 6,
+      "make": "Your own estimate of a print's mass, checked on the scales.",
+      "subjects": [
+        "mathematics",
+        "physics"
+      ],
+      "materials": [
+        "finished prints",
+        "PrusaSlicer",
+        "scales reading to $0.1\\,\\text{g}$"
+      ],
+      "levels": {
+        "try": "Guess the mass of three prints before weighing them, and write the guesses down.",
+        "modify": "Compare your guess with the slicer's estimate and the reading on the scales.",
+        "challenge": "Work out the material cost of a print from the mass and price of the spool."
+      }
+    },
+    {
+      "id": "ommeltu-piiri",
+      "title": "A sewn light-up badge",
+      "minutes": 45,
+      "lesson": 7,
+      "make": "A felt badge whose LED lights through a circuit sewn with conductive thread.",
+      "subjects": [
+        "crafts",
+        "visual arts"
+      ],
+      "materials": [
+        "felt",
+        "conductive thread",
+        "coin cell and holder",
+        "LED",
+        "needle"
+      ],
+      "levels": {
+        "try": "Sew the battery holder and the LED onto the felt so that the plus and minus tracks do not touch.",
+        "modify": "Design the badge's shape and pattern yourself and make the LED part of the pattern.",
+        "challenge": "Measure the thread's resistance with a multimeter and estimate how long a thread still works."
+      }
+    },
+    {
+      "id": "mittausjuliste",
+      "title": "A measurement poster",
+      "minutes": 30,
+      "lesson": 8,
+      "make": "An infographic of the class's battery measurements.",
+      "subjects": [
+        "visual arts",
+        "mathematics"
+      ],
+      "materials": [
+        "the class's measurements",
+        "paper and pens or a spreadsheet"
+      ],
+      "levels": {
+        "try": "Collect the class's battery measurements in one table with units.",
+        "modify": "Make a poster of the results in which the picture tells the result without long text.",
+        "challenge": "Work out the mean and the range and mark them on the poster."
+      }
+    },
+    {
+      "id": "savelma",
+      "title": "A buzzer tune",
+      "minutes": 30,
+      "lesson": 9,
+      "make": "The Arduino plays a familiar tune or your own on a piezo buzzer.",
+      "subjects": [
+        "music",
+        "physics"
+      ],
+      "materials": [
+        "Arduino Uno",
+        "piezo buzzer",
+        "wires"
+      ],
+      "levels": {
+        "try": "Connect the buzzer to pin 8 and play one note with tone(8, 440, 500).",
+        "modify": "Write an eight-note melody and change the tempo.",
+        "challenge": "Work out the frequencies of a scale with $f = 440\\,\\text{Hz} \\cdot 2^{n/12}$ and play a major scale."
+      }
+    },
+    {
+      "id": "morsetin",
+      "title": "A Morse sender",
+      "minutes": 30,
+      "lesson": 10,
+      "make": "A button that sends a message as light and sound.",
+      "subjects": [
+        "languages",
+        "history"
+      ],
+      "materials": [
+        "Arduino Uno",
+        "push button",
+        "LED and resistor",
+        "piezo buzzer"
+      ],
+      "levels": {
+        "try": "Build a button that lights the LED and sounds the buzzer when pressed.",
+        "modify": "Send your partner a short message in Morse code and let them decode it.",
+        "challenge": "Program the Arduino to tell a short press from a long one and print them in the serial monitor."
+      }
+    },
+    {
+      "id": "lampomittari",
+      "title": "A calibrated thermometer",
+      "minutes": 45,
+      "lesson": 10,
+      "make": "A thermometer whose reading you can trust.",
+      "subjects": [
+        "physics",
+        "chemistry"
+      ],
+      "materials": [
+        "Arduino Uno",
+        "temperature sensor from the starter kit",
+        "iced water and warm water",
+        "reference thermometer"
+      ],
+      "levels": {
+        "try": "Read the sensor's raw values in the serial monitor.",
+        "modify": "Show the temperature with LEDs or sound so that you can read it without looking at a screen.",
+        "challenge": "Calibrate the sensor at two points with iced and warm water, and estimate the uncertainty of the measurement."
+      }
+    },
+    {
+      "id": "harjarobotti",
+      "title": "A bristle robot",
+      "minutes": 30,
+      "lesson": 11,
+      "make": "A small robot made from a toothbrush head and a vibration motor.",
+      "subjects": [
+        "design",
+        "physics"
+      ],
+      "materials": [
+        "toothbrush head",
+        "vibration motor",
+        "coin cell",
+        "double-sided tape"
+      ],
+      "levels": {
+        "try": "Fix the motor and the battery onto the brush head and set the robot going.",
+        "modify": "Give the robot its own look and build it a track or an arena.",
+        "challenge": "Measure the robot's speed with three repetitions and find out how the angle of the bristles affects it."
+      }
+    },
+    {
+      "id": "pahviautomaatti",
+      "title": "A cardboard automaton",
+      "minutes": 45,
+      "lesson": 12,
+      "make": "A cardboard figure that moves when you turn a crank.",
+      "subjects": [
+        "visual arts",
+        "design",
+        "physics"
+      ],
+      "materials": [
+        "cardboard",
+        "skewers",
+        "hot glue",
+        "scissors"
+      ],
+      "levels": {
+        "try": "Build a box with an axle through it. Fix an off-centre disc on the axle that lifts the figure.",
+        "modify": "Design the figure and its movement, for example a jump, a nod or a wave.",
+        "challenge": "Change the disc to an oval or a polygon and draw how the figure's height changes during one turn."
+      }
+    },
+    {
+      "id": "tarra",
+      "title": "A logo sticker for your project",
+      "minutes": 45,
+      "lesson": 14,
+      "induction": true,
+      "make": "Your own logo cut as a sticker on the vinyl cutter.",
+      "subjects": [
+        "visual arts",
+        "entrepreneurship"
+      ],
+      "materials": [
+        "vinyl cutter (after the device induction)",
+        "sticker vinyl",
+        "transfer tape"
+      ],
+      "levels": {
+        "try": "Draw a simple one-colour logo for your mini project.",
+        "modify": "Adjust the logo so that it still works small and cut.",
+        "challenge": "Compare two sizes and find the smallest detail the cutter still cuts cleanly."
+      }
     }
   ],
   "links": [

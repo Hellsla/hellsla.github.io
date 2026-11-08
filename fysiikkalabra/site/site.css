@@ -1584,6 +1584,9 @@ main.ahjo-page{max-width:68rem;font-family:var(--ahjo-text)}
 /* the project bank (scripts/ahjo.py projects_body): one card per topic, a proposal until the teacher approves it */
 .ahjo-count{font-size:var(--fs-ui);font-weight:600;color:var(--ink-2);margin-left:.35rem;white-space:nowrap}
 .ahjo-proj-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:1rem}
+.ahjo-chal-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:1rem}@media (min-width:960px){.ahjo-chal-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.ahjo-chal{border-top-color:var(--kr-navy)}.ahjo-chal-levels{list-style:none;margin:.5rem 0 0;padding:0;font-size:var(--fs-ui)}
+.ahjo-chip-link{min-height:24px;display:inline-flex;align-items:center;text-decoration:none}.ahjo-chip-link:hover{text-decoration:underline}
 @media (min-width:60rem){.ahjo-proj-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .ahjo-proj{padding:1rem 1.15rem;border:1px solid var(--line);border-top:4px solid var(--kr-pink);border-radius:var(--card-radius);background:var(--paper,#fff);max-width:44rem;min-width:0}
 .ahjo-proj.approved{border-top-color:var(--kr-navy)}

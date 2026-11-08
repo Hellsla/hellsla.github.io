@@ -52,6 +52,11 @@ for lang in i18n.languages():
            all(re.search(rf'id="{p["id"]}".*?ahjo-badge.*?{re.escape(ahjo.esc(d["ui"]["proj_success"]))}.*?rel="external noopener".*?ahjo-ext', pr, re.S) for p in d["projects"]))
     expect(f"{lang}: the project page says the cards are proposals", ahjo.esc(d["ui"]["projects_note"]) in pr)
     bank = (out / ahjo.BANK).read_text() if (out / ahjo.BANK).is_file() else ""
+    chal = re.findall(r'<article class="ahjo-proj ahjo-chal" id="([^"]+)".*?</article>', bank, re.S)
+    expect(f"{lang}: the bank shows every small challenge once (10–15, teacher 2026-11-08), each with its three levels", 10 <= len(chal) <= 15
+           and sorted(chal) == sorted(x["id"] for x in d.get("challenges", [])) and bank.count('class="ahjo-levels ahjo-chal-levels"') == len(chal), chal)
+    a1 = (out / ahjo.course_page("AHJO1")).read_text() if (out / ahjo.course_page("AHJO1")).is_file() else ""
+    expect(f"{lang}: each small challenge is linked from its Ahjo 1 lesson", all(re.search(rf'<li id="tunti-{x["lesson"]}">.*?href="{ahjo.BANK}#{x["id"]}"', a1, re.S) for x in d.get("challenges", [])))
     for g in guides:
         r = next(r for r in d["resources"] if r.get("id") == g)
         f = out / f"{g}.html"; html = f.read_text() if f.is_file() else ""
@@ -78,7 +83,7 @@ for lang in i18n.languages():
         expect(f"{lang} {c['code']}: the start page's card links its own course page", card is not None and f'href="{ahjo.course_page(c["code"])}"' in card.group(0))
         cp = (out / ahjo.course_page(c["code"])).read_text() if (out / ahjo.course_page(c["code"])).is_file() else ""
         ol = re.search(r'<ol class="ahjo-lessons">(.*?)</ol>', cp, re.S)
-        n = len(re.findall(r"<li>", ol.group(1))) if ol else 0
+        n = len(re.findall(r"<li[ >]", ol.group(1))) if ol else 0
         expect(f"{lang} {c['code']}: the course page has the goals and {n} lessons, each with its picture",
                not c.get("lessons") or (n == len(c["lessons"]) == 16 and ol.group(1).count('class="ahjo-art"') == 16 and 'id="tavoitteet"' in cp))
         hands = [l for l in c.get("lessons", []) if l.get("levels")]
