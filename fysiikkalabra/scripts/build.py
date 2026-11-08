@@ -475,11 +475,19 @@ def planned_row(p):
             f'<span class="mod-q" title="{q}">{q}</span></span></div></li>')
 
 
-def ahjo_row(d):
-    """The front page's row of Ahjo Makerspace: the logo's mark as its icon (ahjo.mark_svg), the name and one line, the whole row a link."""
-    q = esc(d["ui"]["front_line"])
-    return (f'<li><a class="mod-row ahjo-row" href="{ahjo.PAGE}"><img class="mod-icon" src="{ahjo.MARK_SRC}" alt="" width="40" height="40" aria-hidden="true">'
-            f'<span class="mod-text"><span class="mod-name"><span class="mod-title">{esc(d["title"])}</span></span>'
+def ahjo_row(d, planned):
+    """The front page's Ahjo rows: Ahjo 1 and Ahjo 2, each to its own course page, which opens with Ahjo's shared pages
+    (teacher 2026-11-08: "tässä pitäisi olla Ahjo 1 ja Ahjo 2"; the shared pages first on the course pages)."""
+    return "".join(ahjo_course_row(c, planned) for c in d["courses"])
+
+
+def ahjo_course_row(c, planned):
+    """Ahjo 1 and Ahjo 2 under Ahjo's row (teacher 2026-11-08 "tässä pitäisi olla Ahjo 1 ja Ahjo 2"): each links its own
+    course page; the name from the course registry, the subtitle from ahjo.json, the icon from module-icons/."""
+    p = next((p for p in planned if p.get("icon") == c["code"]), {"title": c["code"], "text": ""})
+    q = esc(p["text"])
+    return (f'<li><a class="mod-row ahjo-row ahjo-course-row" href="{ahjo.course_page(c["code"])}"><img class="mod-icon" src="module-icons/{c["code"].lower()}.svg" alt="" width="40" height="40" aria-hidden="true">'
+            f'<span class="mod-text"><span class="mod-name"><span class="mod-code">{esc(p["title"])}</span> <span class="mod-title">{esc(c["subtitle"])}</span></span>'
             f'<span class="mod-q" title="{q}">{q}</span></span><span class="mod-go" aria-hidden="true">→</span></a></li>')
 
 
@@ -1343,7 +1351,7 @@ def build_language(lang):
            f'<ul class="mod-list local-list">{local_rows}</ul>' if local_rows else "")
         # after a gap, the school's planned courses, greyed out and unlinked (teacher 2026-11-04: no content yet)
         # Ahjo Makerspace (teacher 2026-11-08): the school's makerspace, one row with its original logo before the planned courses
-        + (f'<ul class="mod-list ahjo-list">{ahjo_row(ahjo_data)}</ul>' if ahjo_data else "")
+        + (f'<ul class="mod-list ahjo-list">{ahjo_row(ahjo_data, local_courses.planned(lang))}</ul>' if ahjo_data else "")
         + (f'<ul class="mod-list plan-list" aria-label="{esc(T("site.planned_courses"))}">{plan_rows}</ul>' if plan_rows else "")
         + '</div></div></section>')
     (out / "index.html").write_text(front_chrome(page(T("site.home_title"), home, "", "index.html", T("site.home_description"), main_class="home",

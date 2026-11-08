@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="95 105 1058 1058" role="img" aria-labelledby="title desc">
+  <title id="title">Ruukkilabra – ahjo ja valoprisma Kiviruukin lukion väreissä</title>
+  <desc id="desc">Vihreän ahjon päällä kolmionmuotoinen prisma. Vasemmalta tuleva valonsäde taittuu prismassa yhtenäiseksi oranssin, keltaisen ja vihreän sävyiseksi viuhkaksi. Ahjossa kuparinvärinen kaariovi.</desc>
+  <defs>
+    <clipPath id="spectrum-edge">
+      <path d="M691 385 1098 261 C1122 253 1149 268 1149 294 L1149 556 C1149 587 1133 605 1106 603 L773 501 Z"/>
+    </clipPath>
+  </defs>
+  <!-- Five spectrum bands share exact boundaries: there are no white gaps. -->
+  <g id="valoviuhka" clip-path="url(#spectrum-edge)">
+    <path d="M726 410 1151 320 1151 614 760 513 Z" fill="#012169"/>
+    <path id="oranssi" d="M686 384 1151 254 1151 321 720 402 Z" fill="#FCA5C7"/>
+    <path id="keltainen" d="M720 402 1151 321 1151 393 738 421 Z" fill="#FDD0E1"/>
+    <path id="kellanvihrea" d="M738 421 1151 393 1151 472 754 444 Z" fill="#9AA6CF"/>
+    <path id="vihrea" d="M754 444 1151 472 1151 531 771 466 Z" fill="#4D63A8"/>
+    <path id="tumma-vihrea" d="M771 466 1151 531 1151 607 787 507 Z" fill="#012169"/>
+  </g>
+  <!-- Incoming ray intentionally sits lower, with original diagonal direction retained. -->
+  <path id="tuleva-sade" d="M113 573 420 477" fill="none" stroke="#012169" stroke-width="33" stroke-linecap="round"/>
+  <!-- Prism is one clear geometric outline, placed above both rays. -->
+  <path id="prisma" d="M560 209 C572 184 601 184 614 209 L855 616 C869 639 853 657 829 657 H345 C323 657 311 636 325 615 Z M588 249 378 615 H798 Z" fill="#012169" fill-rule="evenodd"/>
+  <!-- Main anvil/forge silhouette, preserving the Ahjo proportions. -->
+  <path id="ahjo" d="M190 680 H1058 C1076 680 1087 693 1087 708 C1087 758 1040 813 985 852 C941 885 919 912 919 963 V1057 C919 1072 906 1082 892 1082 H777 C762 1082 751 1071 751 1057 V937 C751 863 691 803 619 803 C545 803 487 864 487 939 V1057 C487 1072 476 1082 461 1082 H349 C333 1082 325 1071 325 1057 V961 C325 915 307 885 262 852 C204 810 161 758 161 708 C161 693 173 680 190 680 Z" fill="#012169"/>
+  <!-- Copper door is separate and editable; cream/transparent border remains visible. -->
+  <path id="kupariovi" d="M511 1082 V945 C511 879 558 830 620 830 C683 830 729 880 729 945 V1082 Z" fill="#FCA5C7"/>
+</svg>

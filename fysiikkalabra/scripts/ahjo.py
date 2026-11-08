@@ -72,9 +72,28 @@ MARK_SRC = "brand/ahjo-makerspace-merkki.svg"
 TAB_ICONS = {"brand/ruukkilabra-32.png": "brand/ahjo-32.png", "brand/ruukkilabra-symboli.svg": MARK_SRC, "brand/ruukkilabra-180.png": "brand/ahjo-180.png"}
 
 
+SITE_MARK = ROOT / "assets/shared/brand/ruukkilabra-symboli.svg"
+SITE_MARK_KR = ROOT / "assets/shared/brand/ruukkilabra-symboli-kiviruukki.svg"
+SITE_MARK_KR_SRC = "brand/ruukkilabra-symboli-kiviruukki.svg"
+KIVIRUUKKI_COLOURS = {"#1A4B2E": "#012169", "#D76A10": "#FCA5C7", "#FFC914": "#FDD0E1", "#B5D92D": "#9AA6CF",
+                      "#44AF4D": "#4D63A8", "#B85F2A": "#FCA5C7"}   # Ruukkilabra's colours -> navy, pink and their tints
+
+
+def site_mark_kiviruukki():
+    """Ruukkilabra's symbol in Kiviruukin lukio's colours for the Ahjo pages' header (teacher 2026-11-08): the same shapes,
+    only the fills changed (green -> navy, the spectrum -> pink and navy tints, the copper door -> pink)."""
+    s = SITE_MARK.read_text()
+    for a, b in KIVIRUUKKI_COLOURS.items():
+        assert a in s, a
+        s = s.replace(a, b)
+    return s.replace("Ruukkilabra – ahjo ja valoprisma", "Ruukkilabra – ahjo ja valoprisma Kiviruukin lukion väreissä")
+
+
 def tab_icons(html):
-    """An Ahjo page's browser tab and home screen icon is Ahjo's mark, not Ruukkilabra's (teacher 2026-11-08). The PNGs
+    """An Ahjo page's browser tab and home screen icon is Ahjo's mark, not Ruukkilabra's, and the header shows Ruukkilabra's
+    symbol in Kiviruukin lukio's colours (teacher 2026-11-08). The PNGs
     (32 px, and 180 px filling its square) are the mark rendered by scripts/ahjo_tab_icons.js and committed beside it."""
+    html = re.sub(r'(<img class="brand-mark" src="(?:\.\./)*)brand/ruukkilabra-symboli\.svg"', rf'\g<1>{SITE_MARK_KR_SRC}"', html, count=1)
     for a, b in TAB_ICONS.items():
         assert f'href="{a}"' in html or f'/{a}"' in html, a
         html = re.sub(rf'(<link rel="(?:icon|apple-touch-icon)" href="(?:\.\./)*){re.escape(a)}"', rf'\g<1>{b}"', html)
@@ -416,6 +435,16 @@ def course_body(d, c, planned, local, modules, ref):
     their pictures, and links to Ahjo's shared materials, which stay in the bank (linked, never copied)."""
     u = d["ui"]; title, text, _ = course_info(c["code"], planned, local); k = c["code"].lower()
     out = hero(d, title, c["subtitle"], PAGE + "#opintojaksot", extra=f'<p class="ahjo-opening">{esc(text)}</p>')
+    eq = "#laitteisto"
+    tiles = [(PAGE, f'<img class="ahjo-shared-mark" src="{MARK_SRC}" alt="" width="40" height="40" aria-hidden="true">', d["title"], u["shared_home"]),
+             (BANK, icon("box", "ahjo-icon ahjo-shared-icon"), u["bank_h"], u["shared_bank"]),
+             (PROJECTS, icon("cube", "ahjo-icon ahjo-shared-icon"), u["projects_h"], u["projects_teaser"]),
+             (PAGE + eq, icon("tools", "ahjo-icon ahjo-shared-icon"), u["equipment_h_" + d["equipment_status"]], u["shared_equipment"]),
+             (SAFETY, icon("shield", "ahjo-icon ahjo-shared-icon"), u["safety_h"], u["shared_safety"])]
+    out += (f'<section class="ahjo-sec ahjo-shared" aria-labelledby="h-{k}-shared"><h2 id="h-{k}-shared">{esc(u["shared_h"])}</h2>'
+            f'<p class="ahjo-sec-lead">{esc(u["shared_lead"])}</p><ul class="ahjo-shared-list">'
+            + "".join(f'<li><a href="{h}">{ic}<span class="ahjo-shared-t">{esc(t)}</span><span class="ahjo-shared-x">{esc(x)}</span></a></li>' for h, ic, t, x in tiles)
+            + '</ul></section>')
     if c.get("license"):
         out += (f'<section class="ahjo-sec ahjo-safety-teaser ahjo-license" aria-labelledby="h-{k}-license">{icon("shield", "ahjo-icon ahjo-icon-big")}'
                 f'<div><h2 id="h-{k}-license">{esc(u["license_h"])}</h2><p>{esc(u["license_text"])}</p></div></section>')

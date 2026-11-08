@@ -89,7 +89,21 @@ for lang in i18n.languages():
     plan = re.search(r'<ul class="mod-list plan-list"[^>]*>(.*?)</ul>', home, re.S)
     expect(f"{lang}: Ahjo 1 and Ahjo 2 are not in the front page's planned list (teacher 2026-11-08)",
            not plan or not any(f'{c["code"].lower()}.svg' in plan.group(1) for c in d["courses"]))
-    expect(f"{lang}: the front page links Ahjo with the logo's mark as its icon", re.search(r'<ul class="mod-list ahjo-list"><li><a class="mod-row ahjo-row" href="ahjo\.html"><img class="mod-icon" src="(?:\.\./)?brand/ahjo-makerspace-merkki\.svg"', home) is not None)
+    rows = re.search(r'<ul class="mod-list ahjo-list">(.*?)</ul>', home, re.S)
+    expect(f"{lang}: the front page lists Ahjo 1 and Ahjo 2, each linking its course page with its icon (teacher 2026-11-08)",
+           rows is not None and [h for h in re.findall(r'href="([^"]+)"', rows.group(1))] == [ahjo.course_page(c["code"]) for c in d["courses"]]
+           and all(f'module-icons/{c["code"].lower()}.svg' in rows.group(1) for c in d["courses"]))
+    for c in d["courses"]:
+        cp = (out / ahjo.course_page(c["code"])).read_text() if (out / ahjo.course_page(c["code"])).is_file() else ""
+        m = cp[cp.find("<main"):]
+        sh = m.find('class="ahjo-sec ahjo-shared"')
+        expect(f"{lang} {c['code']}: Ahjo's shared pages come first on the course page", 0 < sh < min(x for x in (m.find('class="ahjo-sec ahjo-safety-teaser'), m.find('id="tavoitteet"')) if x > 0)
+               and all(f'href="{h}"' in m[sh:sh + 4000] for h in (ahjo.PAGE, ahjo.BANK, ahjo.SAFETY)))
+expect("the header's Ruukkilabra symbol in Kiviruukin lukio's colours is up to date", ahjo.SITE_MARK_KR.is_file() and ahjo.SITE_MARK_KR.read_text() == ahjo.site_mark_kiviruukki())
+for lang in i18n.languages():
+    out = SITE if lang == i18n.SOURCE else SITE / lang
+    h = (out / ahjo.PAGE).read_text()
+    expect(f"{lang}: the Ahjo pages' header symbol is in Kiviruukin lukio's colours", "ruukkilabra-symboli-kiviruukki.svg" in h[:h.find("</header>")] and 'brand-mark" src="brand/ruukkilabra-symboli.svg' not in h)
 expect("the mark is cut from the original logo unchanged (scripts/ahjo_art.py writes it)", ahjo.MARK.is_file() and ahjo.MARK.read_text() == ahjo.mark_svg())
 
 # browser: widths and keyboard

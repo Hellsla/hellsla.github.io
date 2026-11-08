@@ -324,3 +324,4 @@ if __name__ == "__main__":
     print("wrote", len(ART), "illustrations to", OUT)
     import ahjo                                   # the front page's icon: the logo's mark, cut from the original
     ahjo.MARK.write_text(ahjo.mark_svg()); print("wrote", ahjo.MARK)
+    ahjo.SITE_MARK_KR.write_text(ahjo.site_mark_kiviruukki()); print("wrote", ahjo.SITE_MARK_KR)

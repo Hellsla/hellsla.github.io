@@ -98,6 +98,12 @@
       "Dokumentoi",
       "Opettajalle: valmistelu"
     ],
+    "shared_h": "Ahjon yhteiset",
+    "shared_lead": "Nämä ovat yhteisiä kaikille Ahjon opintojaksoille. Tutustu niihin ensin.",
+    "shared_home": "Mikä Ahjo on ja mitä siellä tehdään.",
+    "shared_bank": "Yhteiset ohjeet ja materiaalit kahdeksassa aiheessa.",
+    "shared_equipment": "Mitä laitteita Ahjoon tulee.",
+    "shared_safety": "Säännöt ja perehdytys ennen työskentelyä.",
     "nav_projects": "Projektit",
     "projects_h": "Projektipankki",
     "projects_page_lead": "Aiheita Ahjo 1:n miniprojekteihin, Ahjo 2:n omiin projekteihin ja kilparobotiikkaan.",

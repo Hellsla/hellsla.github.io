@@ -1562,6 +1562,15 @@ main.ahjo-page{max-width:68rem;font-family:var(--ahjo-text)}
 .ahjo-res-k{display:inline-block;margin-left:.3rem;padding:0 .45rem;border-radius:999px;background:var(--bg-tint);font:600 .8125rem/1.6 var(--ahjo-text);color:var(--ink-2)}
 .ahjo-res-x{display:block;font-size:var(--fs-ui);color:var(--ink-2)}
 /* Ahjo's lists and notes keep the text measure (check_layout.py: no line over 44rem) on a wide screen */
+/* the shared Ahjo pages first on a course page (teacher 2026-11-08) */
+.ahjo-shared-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:.6rem}
+.ahjo-shared-list a{display:grid;grid-template-columns:40px 1fr;grid-template-rows:auto auto;column-gap:.75rem;align-items:center;height:100%;box-sizing:border-box;padding:.7rem .9rem;border:1px solid var(--line);border-radius:var(--card-radius);background:#fff;text-decoration:none;color:var(--ink)}
+.ahjo-shared-list a:hover{border-color:var(--kr-navy)}
+.ahjo-shared-list a:focus-visible{outline:3px solid var(--kr-navy);outline-offset:2px}
+.ahjo-shared-mark,.ahjo-shared-icon{grid-row:1/3;width:40px;height:40px}
+.ahjo-shared-icon{padding:7px;box-sizing:border-box;border-radius:12px;background:var(--kr-pink-soft);color:var(--kr-navy)}
+.ahjo-shared-t{font:700 1.0625rem/1.3 var(--ahjo-head);color:var(--kr-navy)}
+.ahjo-shared-x{font-size:var(--fs-ui);color:var(--ink-2)}
 .ahjo-page :is(.ahjo-topics,.ahjo-goals,.ahjo-lessons,.ahjo-deep,.ahjo-course-res,.ahjo-res-list),.ahjo-page :is(.ahjo-plan-note,.ahjo-more,.ahjo-safety-item,.ahjo-empty,.ahjo-proj-sum){max-width:44rem}
 /* the project bank (scripts/ahjo.py projects_body): one card per topic, a proposal until the teacher approves it */
 .ahjo-count{font-size:var(--fs-ui);font-weight:600;color:var(--ink-2);margin-left:.35rem;white-space:nowrap}
