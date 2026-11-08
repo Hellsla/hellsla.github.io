@@ -604,7 +604,7 @@
     {
       "id": "saannot",
       "title": "Tilan käyttösäännöt",
-      "covers": "Milloin ja miten Ahjoa käytetään, työpisteen järjestys ja siisteys."
+      "covers": "Milloin ja miten Ahjoa käytetään, työpisteen järjestys ja siisteys, kulku- ja lainauskirjanpito sekä omien laitteiden tuominen tilaan."
     },
     {
       "id": "perehdytys",
@@ -614,17 +614,17 @@
     {
       "id": "valvonta",
       "title": "Valvonta ja itsenäinen käyttö",
-      "covers": "Mitä tehdään opettajan valvonnassa ja millä ehdoilla tilaa voi käyttää itsenäisesti."
+      "covers": "Mitä tehdään opettajan valvonnassa, millä ehdoilla tilaa voi käyttää itsenäisesti ja ettei tilassa työskennellä yksin."
     },
     {
       "id": "tyokalut",
       "title": "Työkalujen ja koneiden turvallinen käyttö",
-      "covers": "Käsi- ja sähkötyökalujen yleiset turvallisuusperiaatteet."
+      "covers": "Käsi- ja sähkötyökalujen yleiset turvallisuusperiaatteet, työkalujen lainaaminen ja rikkoutuneesta laitteesta ilmoittaminen."
     },
     {
       "id": "elektroniikka",
       "title": "Juottaminen ja elektroniikkatyöskentely",
-      "covers": "Juotosaseman käyttö, juotoshöyryt, virtalähteet ja sähköturvallisuus."
+      "covers": "Juotosaseman käyttö, juotoshöyryt, virtalähteet ja sähköturvallisuus: jännite- ja energiarajat itse rakennetuissa laitteissa, verkkovirta ja litiumakut."
     },
     {
       "id": "3d-tulostus",
@@ -644,17 +644,17 @@
     {
       "id": "suojaimet",
       "title": "Ilmanvaihto, henkilönsuojaimet ja paloturvallisuus",
-      "covers": "Kohdepoisto, suojalasit ja muut suojaimet, palovaarat ja sammutusvälineet."
+      "covers": "Kohdepoisto, suojalasit, kuulosuojaimet ja muut suojaimet, kemikaalien varoitusmerkit sekä palovaarat ja sammutusvälineet."
     },
     {
       "id": "sailytys",
       "title": "Projektien säilyttäminen",
-      "covers": "Keskeneräisten töiden merkitseminen ja säilytys."
+      "covers": "Keskeneräisten töiden merkitseminen ja säilytys sekä se, milloin projekti katsotaan päättyneeksi ja puretaan."
     },
     {
       "id": "kierratys",
       "title": "Kierrätys ja jätteiden käsittely",
-      "covers": "Materiaalien lajittelu, elektroniikkaromu ja vaaralliset jätteet."
+      "covers": "Materiaalien lajittelu, elektroniikkaromu (SER), vaaralliset jätteet ja komponenttien palauttaminen käyttöön."
     },
     {
       "id": "onnettomuus",

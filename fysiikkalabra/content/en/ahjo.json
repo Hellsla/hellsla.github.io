@@ -603,7 +603,7 @@
     {
       "id": "saannot",
       "title": "Rules of the space",
-      "covers": "When and how Ahjo is used, order and tidiness at the workstation."
+      "covers": "When and how Ahjo is used, order and tidiness at the workstation, the visit and loan records, and bringing your own devices into the space."
     },
     {
       "id": "perehdytys",
@@ -613,17 +613,17 @@
     {
       "id": "valvonta",
       "title": "Supervision and independent use",
-      "covers": "What is done under a teacher's supervision and on what terms the space can be used independently."
+      "covers": "What is done under a teacher's supervision, on what terms the space can be used independently, and why nobody works there alone."
     },
     {
       "id": "tyokalut",
       "title": "Safe use of tools and machines",
-      "covers": "General safety principles for hand and power tools."
+      "covers": "General safety principles for hand and power tools, borrowing tools and reporting a broken machine."
     },
     {
       "id": "elektroniikka",
       "title": "Soldering and electronics work",
-      "covers": "Using a soldering station, solder fumes, power supplies and electrical safety."
+      "covers": "Using a soldering station, solder fumes, power supplies and electrical safety: voltage and energy limits for self-built devices, mains power and lithium batteries."
     },
     {
       "id": "3d-tulostus",
@@ -643,17 +643,17 @@
     {
       "id": "suojaimet",
       "title": "Ventilation, protective equipment and fire safety",
-      "covers": "Local exhaust, safety glasses and other protection, fire hazards and extinguishers."
+      "covers": "Local exhaust, safety glasses, hearing protection and other protection, chemical warning labels, fire hazards and extinguishers."
     },
     {
       "id": "sailytys",
       "title": "Storing projects",
-      "covers": "Labelling and storing unfinished work."
+      "covers": "Labelling and storing unfinished work, and when a project counts as finished and is taken apart."
     },
     {
       "id": "kierratys",
       "title": "Recycling and waste",
-      "covers": "Sorting materials, electronic scrap and hazardous waste."
+      "covers": "Sorting materials, electronic scrap (WEEE), hazardous waste and returning components for reuse."
     },
     {
       "id": "onnettomuus",
