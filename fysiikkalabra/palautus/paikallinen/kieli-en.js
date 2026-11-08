@@ -60,7 +60,7 @@
     'Pohdinta': 'Think about it', 'Ennusta': 'Predict', 'Tutki': 'Investigate', 'Käsitetehtävä': 'Concept task',
     'Laskutehtävä': 'Calculation task', 'Selitystehtävä': 'Explanation task', 'Ennuste': 'Prediction', 'Johtopäätös': 'Conclusion',
     'Koe': 'Experiment', 'Lisätutkimus': 'Further investigation', 'Teoria': 'Theory', 'Esimerkit': 'Examples', 'Esimerkki': 'Example',
-    'Koko ryhmän osaamisen sormenjälki': "The whole group's skills fingerprint", 'Koko ryhmä': 'Whole group', 'Opiskelijoittain': 'By student',
+    'Koko ryhmän osaamisen sormenjälki': "The whole group's skills fingerprint", 'Koko ryhmä': 'Whole group', 'Väitteittäin': 'By statement',
     ', väite ': ', statement ',
     'Ei vastattu': 'Not answered', 'Väittämä': 'Statement', 'Ei vielä': 'Not yet',
     'oppitunnin tehtävä, ei pisteitä': "lesson's task, no points", 'Vain arvioimattomat (': 'Ungraded only (', ' ratkaisua)': ' solutions)',

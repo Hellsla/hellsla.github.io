@@ -82,18 +82,15 @@
   table.fp td.lab { padding: 0 6px; font-size: 12px; width: 34em; max-width: 34em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   table.fp td.c { width: 20px; min-width: 20px; height: 20px; }
   table.fp td.c.sa-none { border: 1px solid var(--line); }
-  /* koko ryhmän sormenjälki (opettaja 8.11.2026): kuten opiskelijan Oma itsearvio, luvut sarakkeina ja väitteet riveinä;
-     solussa ryhmän vastausten jakauma tasoittain (ylhäältä osaan hyvin … ei vielä), valkoinen osa = ei vastattu */
+  /* koko ryhmän sormenjälki (opettaja 8.11.2026): rivit opiskelijat, sarakkeet luvut, solussa luvun väitteiden keskiarvo */
   h3 { font-size: 15px; margin: 14px 0 6px; color: var(--ink2); }
   #groupMap { overflow-x: auto; }
-  .gm { display: grid; gap: 3px; align-items: end; width: max-content; }
+  .gm { display: grid; gap: 3px; align-items: center; width: max-content; }
   .gm .th { align-self: end; padding: 0 2px 3px; border-bottom: 2px solid var(--accent); font: 700 11px/1.15 system-ui, sans-serif; letter-spacing: .03em; text-transform: uppercase; color: var(--accent); overflow: hidden; }
-  .gm .col, .gm .row { font: 600 12px/1 system-ui, sans-serif; color: var(--ink2); text-align: center; font-variant-numeric: tabular-nums; }
-  .gm .row { align-self: center; }
-  .gm .cell { width: 40px; height: 40px; border-radius: 4px; overflow: hidden; display: flex; flex-direction: column; box-shadow: inset 0 0 0 1px var(--line); background: #fff; }
-  .gm .cell.gap { box-shadow: none; background: none; }
-  .gm .cell > span { display: block; flex: none; }
-  .gm .cell.avg { align-items: center; justify-content: center; box-shadow: none; color: #fff; font: 700 13px system-ui, sans-serif; } .gm .cell.avg.sa-c { color: #1f2421; }
+  .gm .col { font: 600 12px/1 system-ui, sans-serif; color: var(--ink2); text-align: center; font-variant-numeric: tabular-nums; align-self: end; }
+  .gm .name { font-size: 14px; padding-right: 10px; white-space: nowrap; max-width: 16em; overflow: hidden; text-overflow: ellipsis; }
+  .gm .cell { width: 30px; height: 22px; border-radius: 3px; box-shadow: inset 0 0 0 1px var(--line); background: #fff; }
+  .gm .cell[class*=sa-] { box-shadow: none; }
   .gm .sa-a { background: #1a4d2e; } .gm .sa-b { background: #5f9460; } .gm .sa-c { background: #d6a744; } .gm .sa-d { background: #c0583b; } .gm .sa-x { background: #9a9a9a; }
 </style>
 </head>
@@ -113,7 +110,7 @@
       <p class="muted sa-legend" id="selfLegend"></p>
       <h3>Koko ryhmä</h3>
       <div id="groupMap"></div>
-      <h3>Opiskelijoittain</h3>
+      <h3>Väitteittäin</h3>
       <div id="selfBox"></div>
     </section>
     <div class="bar"><h2 class="grow">Tehtävät</h2><label class="muted"><input type="checkbox" id="onlyOpen"> Vain arvioimattomat</label></div>
@@ -339,7 +336,7 @@
     ov.summary.forEach(function (r) { if (names.indexOf(r.email) < 0) names.push(r.email); });
     chs.forEach(function (c) { c.self.students.forEach(function (x) { if (names.indexOf(x.email) < 0) names.push(x.email); }); });
     names.sort(function (a, b) { return a.localeCompare(b, 'fi'); });
-    renderGroupMap(ov, names.length);
+    renderGroupMap(ov, names);
     var wrap = el('div', 'wide'), t = el('table', 'fp'), head = el('thead'), hr = el('tr'), tb = el('tbody');
     t.id = 'fingerprint';
     hr.append(el('th', null, 'Väittämä'));
@@ -360,20 +357,18 @@
     });
     wrap.append(t); box.append(wrap);
   }
-  // Koko ryhmän sormenjälki (opettaja 8.11.2026, "koko ryhmän osaamisen sormenjälki"): sama ruudukko kuin opiskelijan
-  // moduulisivun Oma itsearviossa (teemat, luvut sarakkeina, väitteet 1–3 riveinä). Solussa ryhmän jakauma: kunkin tason
-  // osuus kaikista ryhmän opiskelijoista; valkoinen = ei vastattu (tai lukua ei palautettu). Nimiä ei näytetä.
-  var GM_AVG = /gmavg/.test(location.hash);
-  function renderGroupMap(ov, nAll) {
+  // Koko ryhmän sormenjälki (opettaja 8.11.2026: "koko ryhmän osaamisen sormenjälki", "rivi = 1 opiskelija", "avg ok"):
+  // rivit opiskelijat, sarakkeet luvut teemoittain kuten opiskelijan Oma itsearviossa; solun väri = opiskelijan luvun
+  // tavoiteväitteiden keskiarvo (4 = osaan hyvin … 1 = tarvitsen harjoitusta; Ei vielä ja tyhjät eivät mukana).
+  // Valkoinen = ei arvioitu, harmaa = vain Ei vielä. Solun päällä luku, väitteiden tasot ja keskiarvo.
+  function renderGroupMap(ov, names) {
     var box = $('groupMap'); box.textContent = '';
     var chs = ov.chapters.filter(function (c) { return c.self && c.self.items.length && inRange(c); });
-    if (!chs.length || !nAll) return;
-    var rows = chs.reduce(function (n, c) { return Math.max(n, c.self.items.length); }, 0);
+    if (!chs.length || !names.length) return;
     var g = el('div', 'gm'); g.setAttribute('role', 'img'); g.setAttribute('aria-label', 'Koko ryhmän osaamisen sormenjälki');
-    g.style.gridTemplateColumns = '18px repeat(' + chs.length + ', 40px)';
-    // teemat lukujen yläpuolella (curriculum.json themes: ensimmäinen luku)
+    g.style.gridTemplateColumns = 'auto repeat(' + chs.length + ', 30px)';
     var ids = ov.chapters.map(function (x) { return x.id; }), spans = [], cur = null;
-    chs.forEach(function (c, i) {
+    chs.forEach(function (c) {
       var t = null, at = ids.indexOf(c.id);
       (ov.themes || []).forEach(function (th) { var k = ids.indexOf(th.first); if (k >= 0 && k <= at) t = th; });
       if (!cur || cur.t !== t) { cur = { t: t, n: 0 }; spans.push(cur); }
@@ -385,27 +380,24 @@
     }
     g.append(el('span'));
     chs.forEach(function (c) { var h = el('span', 'col', String(c.number)); h.title = 'Luku ' + c.number + ' · ' + c.title; g.append(h); });
-    for (var k = 0; k < rows; k++) {
-      g.append(el('span', 'row', String(k + 1)));
+    names.forEach(function (name, i) {
+      var who = S.hide ? 'Opiskelija ' + (i + 1) : name;
+      g.append(el('span', 'name', who));
       chs.forEach(function (c) {
-        var it = c.self.items[k];
-        if (!it) { g.append(el('span', 'cell gap')); return; }
-        var cnt = { a: 0, b: 0, c: 0, d: 0, x: 0 }, got = 0;
-        c.self.students.forEach(function (x) { var v = (x.levels || {})[it.id]; if (cnt[v] !== undefined) { cnt[v]++; got++; } });
-        var cell = el('span', 'cell'), tip = [], sum = 0, n = 0;
-        ['a', 'b', 'c', 'd', 'x'].forEach(function (lv) {
-          if (!cnt[lv]) return;
-          if (GM_AVG) { if (SA_NUM[lv]) { sum += SA_NUM[lv] * cnt[lv]; n += cnt[lv]; } }
-          else { var part = el('span', 'sa-' + lv); part.style.height = (100 * cnt[lv] / nAll) + '%'; cell.append(part); }
-          tip.push(SA_TEXT[lv] + ': ' + cnt[lv]);
+        var me = c.self.students.filter(function (x) { return x.email === name; })[0], lv = (me && me.levels) || {};
+        var sum = 0, n = 0, any = false, tip = [];
+        c.self.items.forEach(function (it, k) {
+          var v = lv[it.id]; if (SA_TEXT[v] && v !== 'none') any = true;
+          if (SA_NUM[v] && !it.optional) { sum += SA_NUM[v]; n++; }
+          tip.push((k + 1) + '. ' + (SA_TEXT[v] && v !== 'none' ? SA_TEXT[v] : SA_TEXT.none));
         });
-        if (GM_AVG && n) { var avg = sum / n; cell.className = 'cell avg sa-' + 'abcd'.charAt(4 - Math.round(avg)); cell.append(el('b', null, num(Math.round(avg * 10) / 10))); tip.unshift('Keskiarvo ' + num(Math.round(avg * 10) / 10) + ' (' + n + '/' + nAll + ' vastasi)'); }
-        if (nAll - got > 0) tip.push(SA_TEXT.none + ': ' + (nAll - got));
-        cell.title = 'Luku ' + c.number + ', väite ' + (k + 1) + ': ' + it.label + '\n' + tip.join('\n');
-        cell.setAttribute('aria-label', cell.title);
+        var cell = el('span', 'cell');
+        if (n) { var avg = sum / n; cell.className = 'cell sa-' + 'abcd'.charAt(4 - Math.round(avg)); tip.unshift('Keskiarvo ' + num(Math.round(avg * 10) / 10)); }
+        else if (any) cell.className = 'cell sa-x';
+        cell.title = who + ' · Luku ' + c.number + '\n' + tip.join('\n');
         g.append(cell);
       });
-    }
+    });
     box.append(g);
   }
   ['from', 'to'].forEach(function (k) { $(k).addEventListener('change', function () { S[k] = $(k).value; if (S.ov) { renderTasks(S.ov); renderSummary(S.ov); renderSelf(S.ov); } }); });
