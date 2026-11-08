@@ -93,7 +93,39 @@
       "Jatkotehtävä",
       "Dokumentoi",
       "Opettajalle: valmistelu"
-    ]
+    ],
+    "nav_projects": "Projektit",
+    "projects_h": "Projektipankki",
+    "projects_page_lead": "Aiheita Ahjo 1:n miniprojekteihin, Ahjo 2:n omiin projekteihin ja kilparobotiikkaan.",
+    "projects_note": "Kaikki kortit ovat vielä ehdotuksia. Opettaja merkitsee kortin hyväksytyksi, kun aihe on todettu sopivaksi Ahjon laitteille ja aikatauluun. Kortti on lähtökohta, ja oma projekti saa poiketa siitä.",
+    "projects_approved_h": "Hyväksytyt aiheet",
+    "projects_proposed_h": "Ehdotukset",
+    "projects_none_approved": "Opettaja ei ole vielä hyväksynyt yhtään aihetta.",
+    "projects_count": {
+      "one": "{n} aihe",
+      "other": "{n} aihetta"
+    },
+    "proj_status_ehdotus": "Ehdotus",
+    "proj_status_hyvaksytty": "Hyväksytty",
+    "proj_problem": "Ongelma",
+    "proj_skills": "Opit",
+    "proj_materials": "Tarvikkeet",
+    "proj_success": "Onnistumisen mittari",
+    "proj_next": "Jatkokehitys",
+    "proj_subjects": "Muut oppiaineet",
+    "proj_inspiration": "Inspiraationa",
+    "proj_external": "englanninkielinen sivu toisella sivustolla",
+    "proj_levels": [
+      "Aloittelija",
+      "Edistynyt",
+      "Vaativa"
+    ],
+    "proj_lessons": {
+      "one": "noin {n} oppitunti",
+      "other": "noin {n} oppituntia"
+    },
+    "projects_teaser": "Valmiita projektiaiheita, joissa on ongelma, tarvikkeet ja mitattava onnistumisen mittari.",
+    "projects_all": "Kaikki projektiaiheet"
   },
   "courses": [
     {
@@ -689,6 +721,547 @@
       "id": "onnettomuus",
       "title": "Toiminta onnettomuus- ja vaaratilanteissa",
       "covers": "Ensiapu, hälytys, laitteiden pysäyttäminen ja tilanteesta ilmoittaminen."
+    }
+  ],
+  "projects": [
+    {
+      "id": "etaisyysvaroitin",
+      "status": "ehdotus",
+      "title": "Etäisyysvaroitin näkövammaiselle",
+      "summary": "Kepin tai vaatteen kiinnitettävä laite, joka varoittaa värinällä esteestä pään korkeudella.",
+      "problem": "Valkoinen keppi löytää maassa olevat esteet, mutta ei pään korkeudella olevia, kuten avattua ikkunaa tai kylttiä.",
+      "skills": [
+        "ultraäänianturin etäisyysmittaus",
+        "värinämoottorin ohjaus",
+        "käyttäjän haastattelu",
+        "kiinnikkeen 3D-mallinnus"
+      ],
+      "materials": [
+        "Arduino Uno",
+        "ultraäänietäisyysanturi",
+        "värinämoottori tai summeri",
+        "paristokotelo",
+        "3D-tulostettu kotelo"
+      ],
+      "success": "Laite varoittaa pään korkeudella olevasta esteestä 1,0–1,5 metrin etäisyydeltä vähintään 9 kertaa 10:stä, ja väärät hälytykset kirjataan.",
+      "next": "Värinän voimakkuus muuttuu etäisyyden mukaan. Laitetta testataan kohderyhmän kanssa opettajan sopimalla tavalla.",
+      "level": 2,
+      "lessons": 8,
+      "courses": [
+        "AHJO2"
+      ],
+      "subjects": [
+        "fysiikka",
+        "terveystieto"
+      ],
+      "inspiration": [
+        {
+          "source": "Arduino Project Hub",
+          "title": "Smart Cane",
+          "url": "https://projecthub.arduino.cc/saurabhrobotic/smart-cane-36dcdd"
+        }
+      ]
+    },
+    {
+      "id": "co2-mittari",
+      "status": "ehdotus",
+      "title": "Luokan hiilidioksidimittari",
+      "summary": "Mittari näyttää luokan hiilidioksidipitoisuuden liikennevaloina ja tallentaa koko päivän mittaukset.",
+      "problem": "Huono ilmanvaihto väsyttää, mutta luokassa ei huomata, milloin tuuletus olisi tarpeen.",
+      "skills": [
+        "CO₂-anturin lukeminen",
+        "mittausten tallennus ja kuvaaja",
+        "anturin tarkistus ulkoilmassa",
+        "näytön suunnittelu"
+      ],
+      "materials": [
+        "Arduino Uno",
+        "NDIR-tyyppinen CO₂-anturi (hankittava)",
+        "RGB-LED tai pieni näyttö",
+        "3D-tulostettu kotelo"
+      ],
+      "success": "Ulkoilmassa mittari näyttää 400–450 ppm. Se tallentaa koko oppitunnin mittaukset, ja kuvaajasta näkyy tuuletuksen vaikutus.",
+      "next": "Pitoisuutta verrataan oppilasmäärään ja ikkunoiden avaamiseen. Useasta luokasta kootaan yhteinen kartta.",
+      "level": 2,
+      "lessons": 8,
+      "courses": [
+        "AHJO2"
+      ],
+      "subjects": [
+        "kemia",
+        "biologia",
+        "terveystieto"
+      ],
+      "inspiration": [
+        {
+          "source": "Arduino Project Hub",
+          "title": "Air Monitor with 24h graph",
+          "url": "https://projecthub.arduino.cc/marcotrevisanmota/air-monitor-with-24h-graph-co2-humidity-temperature-00de62"
+        }
+      ]
+    },
+    {
+      "id": "aistiystavallinen-luokka",
+      "status": "ehdotus",
+      "title": "Aistiystävällinen luokka",
+      "summary": "Pieni näyttö kertoo rauhallisesti, kun luokan melu tai valaistus kasvaa liian kuormittavaksi.",
+      "problem": "Melu ja kirkas valo kuormittavat osaa oppilaista, ja tilanne huomataan vasta, kun keskittyminen on jo mennyt.",
+      "skills": [
+        "micro:bitin ääni- ja valoanturi",
+        "kynnysarvon valinta mittausten perusteella",
+        "käyttäjän haastattelu",
+        "saavutettava muotoilu"
+      ],
+      "materials": [
+        "micro:bit",
+        "paristokotelo",
+        "kotelo pahvista tai 3D-tulosteena"
+      ],
+      "success": "Näyttö reagoi, kun äänitaso ylittää valitun kynnyksen. Vähintään kolme testikäyttäjää ymmärtää näytön merkityksen ilman selitystä.",
+      "next": "Laite tallentaa päivän äänitasot, ja luokan kanssa sovitaan, mitä merkki tarkoittaa toiminnassa.",
+      "level": 1,
+      "lessons": 6,
+      "courses": [
+        "AHJO1",
+        "AHJO2"
+      ],
+      "subjects": [
+        "psykologia",
+        "terveystieto",
+        "kuvataide"
+      ],
+      "inspiration": [
+        {
+          "source": "micro:bit Educational Foundation",
+          "title": "Sensory classroom",
+          "url": "https://microbit.org/teach/lessons/sensory-classroom/"
+        }
+      ]
+    },
+    {
+      "id": "planeettamonkija",
+      "status": "ehdotus",
+      "title": "Mönkijä vieraalle planeetalle",
+      "summary": "Itsenäisesti esteitä väistävä mönkijä, jonka massa ja osabudjetti on rajattu kuten avaruusluotaimessa.",
+      "problem": "Marsissa olevaa mönkijää ei voi ohjata reaaliajassa, koska viesti kulkee minuutteja. Mönkijän on väistettävä esteet itse.",
+      "skills": [
+        "moottorinohjaus",
+        "etäisyysanturin käyttö päätöksenteossa",
+        "suunnittelu rajoitteiden mukaan",
+        "testiradan suunnittelu"
+      ],
+      "materials": [
+        "Arduino Uno tai robotiikkasarja",
+        "moottorinohjain ja kaksi DC-moottoria",
+        "etäisyysanturi",
+        "runko pahvista tai 3D-tulosteena"
+      ],
+      "success": "Mönkijä kulkee 3 metrin esteradan ilman, että kukaan koskee siihen, vähintään kahdesti kolmesta yrityksestä, eikä sen massa ylitä sovittua rajaa.",
+      "next": "Ohjaukseen lisätään viestiviive, ja energia otetaan aurinkopaneelista.",
+      "level": 2,
+      "lessons": 8,
+      "courses": [
+        "AHJO1",
+        "KILPAROBO"
+      ],
+      "subjects": [
+        "fysiikka",
+        "matematiikka"
+      ],
+      "inspiration": [
+        {
+          "source": "NASA JPL Education",
+          "title": "Robotics: Making a Self-Driving Rover",
+          "url": "https://www.jpl.nasa.gov/edu/resources/lesson-plan/robotics-making-a-self-driving-rover/"
+        }
+      ]
+    },
+    {
+      "id": "kevein-silta",
+      "status": "ehdotus",
+      "title": "Kevein kantava silta",
+      "summary": "3D-tulostettu silta, jonka tavoitteena on kantaa mahdollisimman suuri kuorma mahdollisimman pienellä massalla.",
+      "problem": "Rakenne pitää saada lujaksi ilman, että materiaalia kuluu turhaan. Sama kysymys ratkaistaan siltojen, lentokoneiden ja pakkausten suunnittelussa.",
+      "skills": [
+        "ristikkorakenteet",
+        "3D-mallinnus mitoituksen mukaan",
+        "tulostussuunnan vaikutus lujuuteen",
+        "kuormituskoe"
+      ],
+      "materials": [
+        "3D-tulostin ja PLA",
+        "punnukset",
+        "kaksi pöytää tai tukea 20 cm:n välein"
+      ],
+      "success": "Silta ylittää 20 cm:n välin ja painaa enintään 30 g. Tulos on kestetyn kuorman ja sillan massan suhde, ja se paranee ensimmäisestä versiosta.",
+      "next": "Kahta ristikkotyyppiä verrataan samalla massalla. Rakenteen murtumiskohtaa ennustetaan ennen testiä.",
+      "level": 1,
+      "lessons": 6,
+      "courses": [
+        "AHJO1",
+        "AHJO2"
+      ],
+      "subjects": [
+        "fysiikka",
+        "matematiikka",
+        "kuvataide"
+      ],
+      "inspiration": [
+        {
+          "source": "TeachEngineering",
+          "title": "Straw Bridges Design Challenge",
+          "url": "https://www.teachengineering.org/activities/ced-2679-straw-bridges-design-challenge-activity"
+        }
+      ]
+    },
+    {
+      "id": "energiankulutus",
+      "status": "ehdotus",
+      "title": "Koulun energiankulutuksen seuranta",
+      "summary": "Mittalaite kirjaa valaistuksen ja lämpötilan vuorokauden ajan ja paljastaa, missä energiaa kuluu turhaan.",
+      "problem": "Valot ja laitteet jäävät päälle tyhjiin tiloihin, mutta kukaan ei tiedä, kuinka usein ja kuinka paljon.",
+      "skills": [
+        "pitkän mittauksen suunnittelu",
+        "datan keruu ja kuvaajan tulkinta",
+        "energian ja tehon laskeminen",
+        "tulosten raportointi"
+      ],
+      "materials": [
+        "micro:bit",
+        "paristokotelo",
+        "kotelo"
+      ],
+      "success": "Laite tallentaa valaistuksen ja lämpötilan vähintään 24 tunnin ajalta. Ryhmä laskee, paljonko energiaa säästyisi, jos turhat valot sammuisivat.",
+      "next": "Säästö lasketaan euroina, ja mittauspisteitä lisätään. Tulokset esitellään koulun kiinteistöstä vastaaville.",
+      "level": 1,
+      "lessons": 6,
+      "courses": [
+        "AHJO1",
+        "AHJO2"
+      ],
+      "subjects": [
+        "fysiikka",
+        "maantiede",
+        "yhteiskuntaoppi"
+      ],
+      "inspiration": [
+        {
+          "source": "micro:bit Educational Foundation",
+          "title": "Energy awareness",
+          "url": "https://microbit.org/teach/lessons/energy-awareness/"
+        }
+      ]
+    },
+    {
+      "id": "kastelu",
+      "status": "ehdotus",
+      "title": "Kasvien automaattinen kastelu",
+      "summary": "Järjestelmä mittaa ruukun kosteutta ja kastelee kasvin, kun maa kuivuu.",
+      "problem": "Luokan kasvit kuivuvat lomilla, ja liikakastelu on yhtä haitallista kuin kuivuus.",
+      "skills": [
+        "maankosteusanturin kalibrointi",
+        "pumpun ohjaus transistorilla",
+        "säätö kynnysarvoilla",
+        "veden ja elektroniikan turvallinen erottaminen"
+      ],
+      "materials": [
+        "Arduino Uno",
+        "kapasitiivinen maankosteusanturi",
+        "pieni 5 V:n vesipumppu",
+        "MOSFET-moduuli",
+        "letku ja vesisäiliö"
+      ],
+      "success": "Ruukun kosteus pysyy valitulla välillä viikon ajan ilman ihmisen kastelua, ja kosteuslukemat tallennetaan.",
+      "next": "Kastellun ja kastelemattoman kasvin kasvua verrataan. Järjestelmä saa virtansa aurinkopaneelista.",
+      "level": 2,
+      "lessons": 8,
+      "courses": [
+        "AHJO2"
+      ],
+      "subjects": [
+        "biologia",
+        "maantiede"
+      ],
+      "inspiration": [
+        {
+          "source": "Arduino Project Hub",
+          "title": "Plant Waterer with Arduino Uno",
+          "url": "https://projecthub.arduino.cc/james_c_bradley/plant-waterer-with-arduino-uno-30ace0"
+        },
+        {
+          "source": "micro:bit Educational Foundation",
+          "title": "Helping plants grow",
+          "url": "https://microbit.org/teach/lessons/helping-plants-grow/"
+        }
+      ]
+    },
+    {
+      "id": "viivanseuraaja",
+      "status": "ehdotus",
+      "title": "Viivanseurantarobotti säädöllä",
+      "summary": "Robotti seuraa teippiviivaa, ja sen ohjausta parannetaan säätöteknisesti mittausten avulla.",
+      "problem": "Yksinkertainen robotti heiluttaa viivan molemmin puolin ja on hidas. Miten ohjauksesta saadaan sujuva ja nopea?",
+      "skills": [
+        "heijastusanturit",
+        "P- ja PD-säätö",
+        "parametrien virittäminen mittaamalla",
+        "ajanotto ja vertailu"
+      ],
+      "materials": [
+        "Arduino Uno tai robotiikkasarja",
+        "heijastusanturirivi (3–5 anturia)",
+        "moottorinohjain ja kaksi moottoria",
+        "rata teipistä"
+      ],
+      "success": "Robotti kiertää radan ajautumatta ulos, ja kierrosaika paranee vähintään 20 % ensimmäisestä toimivasta versiosta.",
+      "next": "Robotti tunnistaa risteykset ja valitsee reitin. Säätöparametrit selvitetään kuvaajan avulla.",
+      "level": 3,
+      "lessons": 10,
+      "courses": [
+        "AHJO2",
+        "KILPAROBO"
+      ],
+      "subjects": [
+        "matematiikka",
+        "fysiikka"
+      ],
+      "inspiration": [
+        {
+          "source": "Arduino Project Hub",
+          "title": "Line Follower Robot with PID Controller",
+          "url": "https://projecthub.arduino.cc/anova9347/line-follower-robot-with-pid-controller-01813f"
+        }
+      ]
+    },
+    {
+      "id": "valaiseva-tekstiili",
+      "status": "ehdotus",
+      "title": "Valaiseva e-tekstiili",
+      "summary": "Ommeltu ranneke tai heijastinkoru, jossa valot syttyvät magneettikytkimestä.",
+      "problem": "Pyöräilijä tai kävelijä näkyy pimeällä huonosti, eikä tavallinen heijastin kiinnosta kaikkia.",
+      "skills": [
+        "ommeltu virtapiiri johtavalla langalla",
+        "oikosulun välttäminen tekstiilissä",
+        "magneettikytkin",
+        "muotoilu ja käyttäjätestaus"
+      ],
+      "materials": [
+        "johtava ommellanka",
+        "ommeltavat LEDit",
+        "nappiparisto ja pidike",
+        "kangas tai huopa",
+        "magneetti tai reed-kytkin",
+        "ompelukone tai käsiompelu"
+      ],
+      "success": "Kaikki LEDit syttyvät kytkimestä 20 kertaa peräkkäin. Valo erottuu pimeässä vähintään 50 metrin päästä, ja tuote toimii vielä viikon käytön jälkeen.",
+      "next": "Tuotteeseen lisätään vilkkuva tila micro:bitillä. Tuotteelle tehdään hinta- ja materiaalilaskelma.",
+      "level": 1,
+      "lessons": 6,
+      "courses": [
+        "AHJO1",
+        "AHJO2"
+      ],
+      "subjects": [
+        "kuvataide",
+        "terveystieto"
+      ],
+      "inspiration": [
+        {
+          "source": "Instructables",
+          "title": "Light-up LED Cuff Bracelet With Magnetic Switch",
+          "url": "https://www.instructables.com/Light-up-LED-Cuff-Bracelet-With-Magnetic-Switch-e-/"
+        }
+      ]
+    },
+    {
+      "id": "tormaystesti",
+      "status": "ehdotus",
+      "title": "Törmäystestiauto kiihtyvyysanturilla",
+      "summary": "Pienoisauto törmää esteeseen, ja kyydissä oleva micro:bit mittaa matkustajan kiihtyvyyden.",
+      "problem": "Miten auton keula kannattaa rakentaa, jotta matkustajaan kohdistuu törmäyksessä mahdollisimman pieni voima?",
+      "skills": [
+        "kiihtyvyyden mittaus ja tallennus",
+        "impulssi ja liikemäärä",
+        "rypistyvän rakenteen suunnittelu",
+        "toistomittaukset"
+      ],
+      "materials": [
+        "micro:bit",
+        "kärry tai pienoisauto",
+        "kalteva ramppi",
+        "rypistymisvyöhykkeet pahvista tai 3D-tulosteena"
+      ],
+      "success": "Rypistymisvyöhyke pienentää mitattua suurinta kiihtyvyyttä vähintään 30 % verrattuna jäykkään keulaan samalta rampin korkeudelta, kun mittaus toistetaan kolmesti.",
+      "next": "Mitattua kiihtyvyyttä verrataan liikemäärän muutoksesta laskettuun arvoon. Rakennetta kokeillaan eri materiaaleilla.",
+      "level": 2,
+      "lessons": 6,
+      "courses": [
+        "AHJO1",
+        "AHJO2"
+      ],
+      "subjects": [
+        "fysiikka"
+      ],
+      "inspiration": [
+        {
+          "source": "TeachEngineering",
+          "title": "Creative Crash Testing Car Challenge",
+          "url": "https://www.teachengineering.org/activities/ced-2678-creative-crash-testing-car-challenge-activity"
+        }
+      ]
+    },
+    {
+      "id": "tuuliturbiini",
+      "status": "ehdotus",
+      "title": "Tuuliturbiinin siivet",
+      "summary": "Ryhmä suunnittelee ja tulostaa pienoisturbiinin siipiä ja selvittää mittaamalla, mikä muoto tuottaa eniten tehoa.",
+      "problem": "Siiven muoto, kulma ja määrä vaikuttavat siihen, kuinka paljon tuulesta saadaan energiaa. Mikä vaikuttaa eniten?",
+      "skills": [
+        "siiven 3D-mallinnus",
+        "tehon mittaus jännitteestä ja virrasta",
+        "yhden muuttujan koe",
+        "tulosten esittäminen kuvaajana"
+      ],
+      "materials": [
+        "3D-tulostin",
+        "pieni tasavirtageneraattori tai moottori",
+        "kuormavastus",
+        "yleismittari",
+        "tuuletin"
+      ],
+      "success": "Ryhmä vertaa vähintään kolmea siipiversiota samalla tuulella ja kuormalla. Jokaisen version teho mitataan kolmesti.",
+      "next": "Kuormavastusta vaihdellaan ja etsitään, millä kuormalla teho on suurin. Tulosta verrataan oikean tuulivoimalan tehokäyrään.",
+      "level": 2,
+      "lessons": 8,
+      "courses": [
+        "AHJO2"
+      ],
+      "subjects": [
+        "fysiikka",
+        "maantiede"
+      ],
+      "inspiration": [
+        {
+          "source": "TeachEngineering",
+          "title": "Does It Cut It? Wind Turbine Blade Design",
+          "url": "https://www.teachengineering.org/activities/ucd_windturbine_activity1"
+        }
+      ]
+    },
+    {
+      "id": "valosyntetisaattori",
+      "status": "ehdotus",
+      "title": "Valolla soitettava syntetisaattori",
+      "summary": "Soitin, jonka sävelkorkeutta ja sointia muutetaan käsillä varjostamalla valoantureita.",
+      "problem": "Voiko soittimen tehdä niin, että sitä soitetaan ilman koskettimia ja jokainen ryhmän jäsen pystyy soittamaan sitä?",
+      "skills": [
+        "jännitteenjako valovastuksella",
+        "analogisen tulon lukeminen",
+        "taajuus ja sävelkorkeus",
+        "kotelon muotoilu"
+      ],
+      "materials": [
+        "Arduino Uno",
+        "valovastukset tai potentiometrit",
+        "pieni kaiutin ja vahvistinmoduuli",
+        "kotelo"
+      ],
+      "success": "Soittimella voi soittaa vähintään yhden oktaavin asteikon, ja sävelten taajuudet poikkeavat tavoitteesta alle 2 % viritinsovelluksella mitattuna.",
+      "next": "Soittimeen lisätään tallennus- ja toistotila. Soittimella esitetään oma kappale.",
+      "level": 2,
+      "lessons": 8,
+      "courses": [
+        "AHJO1",
+        "AHJO2"
+      ],
+      "subjects": [
+        "musiikki",
+        "fysiikka"
+      ],
+      "inspiration": [
+        {
+          "source": "Arduino Project Hub",
+          "title": "Building the Auduino Synthesiser",
+          "url": "https://projecthub.arduino.cc/chariscat/building-the-auduino-synthesiser-arduino-based-diy-synth-7b8545"
+        }
+      ]
+    },
+    {
+      "id": "proteesikasi",
+      "status": "ehdotus",
+      "title": "Proteesikäsi, joka tuntee otteen",
+      "summary": "3D-tulostettu käsi, jonka sormia servot liikuttavat ja jonka ote pysähtyy, kun voima-anturi tuntee kosketuksen.",
+      "problem": "Proteesin pitää pystyä tarttumaan sekä raskaaseen että hauraaseen esineeseen niin, ettei käyttäjän tarvitse katsoa kättä koko ajan.",
+      "skills": [
+        "servojen ohjaus",
+        "voima-anturin lukeminen",
+        "jännemekanismin 3D-mallinnus",
+        "käyttäjälähtöinen suunnittelu ja etiikka"
+      ],
+      "materials": [
+        "Arduino Uno",
+        "2–5 servoa",
+        "voima-anturi (FSR)",
+        "siima",
+        "3D-tulostetut sormet ja kämmen"
+      ],
+      "success": "Käsi tarttuu muovimukiin ja nostaa sen niin, ettei muki painu kasaan. Ote pysähtyy, kun voima-anturin lukema ylittää valitun rajan, vähintään 9 kertaa 10:stä.",
+      "next": "Ohjaus tehdään lihassähköanturilla tai painikkeilla. Kättä verrataan oikeisiin proteeseihin hinnan ja toimintojen perusteella.",
+      "level": 3,
+      "lessons": 12,
+      "courses": [
+        "AHJO2"
+      ],
+      "subjects": [
+        "biologia",
+        "terveystieto",
+        "filosofia"
+      ],
+      "inspiration": [
+        {
+          "source": "TeachEngineering",
+          "title": "Get a Grip: Smart Prosthetic Hand",
+          "url": "https://www.teachengineering.org/activities/uok-3021-smart-prosthetic-hand-grip-arduino-activity"
+        }
+      ]
+    },
+    {
+      "id": "sahkoauto",
+      "status": "ehdotus",
+      "title": "Sähköauton pienoismalli",
+      "summary": "Ryhmä rakentaa sähköllä kulkevan pienoisauton budjetin rajoissa ja parantaa sen nopeutta ja energiankulutusta mittausten perusteella.",
+      "problem": "Sähköautossa moottori, välitys, massa ja ilmanvastus vaikuttavat yhdessä siihen, kuinka pitkälle akulla pääsee. Mitä kannattaa parantaa ensin?",
+      "skills": [
+        "moottori ja välityssuhde",
+        "nopeuden ja energian mittaus",
+        "3D-tulostetut vanteet ja hammaspyörät",
+        "budjetointi ja raportointi"
+      ],
+      "materials": [
+        "DC-moottori",
+        "paristot tai akku",
+        "3D-tulostetut vanteet ja hammaspyörät",
+        "runkomateriaali",
+        "ajanotto"
+      ],
+      "success": "Auto kulkee 5 metrin matkan suoraan. Ryhmä mittaa keskinopeuden ja kulutetun energian, ja viimeinen versio on vähintään 20 % parempi kuin ensimmäinen valitulla mittarilla.",
+      "next": "Ryhmä vertaa kahta välityssuhdetta ja laskee auton hyötysuhteen. Kustannuslaskelma esitellään kuin tuotteen myyntipuhe.",
+      "level": 2,
+      "lessons": 10,
+      "courses": [
+        "AHJO2"
+      ],
+      "subjects": [
+        "fysiikka",
+        "yhteiskuntaoppi"
+      ],
+      "inspiration": [
+        {
+          "source": "TeachEngineering",
+          "title": "Creative Engineering: Electric Vehicle Design",
+          "url": "https://www.teachengineering.org/activities/cub-2825-creative-engineering-electric-vehicle-design"
+        }
+      ]
     }
   ],
   "links": [

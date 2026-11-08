@@ -21,7 +21,7 @@ for lang in i18n.languages():
     out = SITE if lang == i18n.SOURCE else SITE / lang
     d = ahjo.load(lang)
     guides = ahjo.ready_guides(d)
-    for name in (ahjo.PAGE, ahjo.BANK, ahjo.SAFETY) + tuple(ahjo.course_page(c["code"]) for c in d["courses"]) + tuple(f"{g}.html" for g in guides):
+    for name in (ahjo.PAGE, ahjo.BANK, ahjo.SAFETY, ahjo.PROJECTS) + tuple(ahjo.course_page(c["code"]) for c in d["courses"]) + tuple(f"{g}.html" for g in guides):
         f = out / name
         expect(f"{lang} {name}: built", f.is_file())
         if not f.is_file(): continue
@@ -35,11 +35,22 @@ for lang in i18n.languages():
         expect(f"{lang} {name}: no laser cutter or CNC anywhere", not ahjo.FORBIDDEN.search(re.sub(r"<[^>]+>", " ", main)))
         bad = []
         for href in re.findall(r'href="([^"]+)"', main):
-            if re.match(r"[a-z]+:", href): bad.append(href); continue   # Ahjo links only inside Ruukkilabra
+            if re.match(r"[a-z]+:", href):      # Ahjo links only inside Ruukkilabra, but for a project card's inspiration (a known site)
+                ext = re.match(r"https://([^/]+)/", href)
+                if not (name == ahjo.PROJECTS and ext and ext.group(1) in ahjo.SOURCE_HOSTS): bad.append(href)
+                continue
             path, _, frag = href.partition("#")
             target = (out / path).resolve() if path else f
             if not target.is_file() or (frag and f'id="{frag}"' not in target.read_text()): bad.append(href)
         expect(f"{lang} {name}: every link resolves to a built page (and its anchor)", not bad, bad)
+    pr = (out / ahjo.PROJECTS).read_text() if (out / ahjo.PROJECTS).is_file() else ""
+    cards = re.findall(r'<article class="ahjo-proj( approved)?" id="([^"]+)".*?</article>', pr, re.S)
+    expect(f"{lang}: the project bank shows every card once", [c[1] for c in cards] == [p["id"] for p in sorted(d["projects"], key=lambda p: p["status"] != "hyvaksytty")], [c[1] for c in cards])
+    expect(f"{lang}: a card is approved only where the teacher marked it (approved_by, date)",
+           all(bool(a) == (p["status"] == "hyvaksytty" and bool(p.get("approved_by"))) for a, pid in cards for p in d["projects"] if p["id"] == pid))
+    expect(f"{lang}: every card has its status badge, a measure of success and an inspiration link marked external",
+           all(re.search(rf'id="{p["id"]}".*?ahjo-badge.*?{re.escape(ahjo.esc(d["ui"]["proj_success"]))}.*?rel="external noopener".*?ahjo-ext', pr, re.S) for p in d["projects"]))
+    expect(f"{lang}: the project page says the cards are proposals", ahjo.esc(d["ui"]["projects_note"]) in pr)
     bank = (out / ahjo.BANK).read_text() if (out / ahjo.BANK).is_file() else ""
     for g in guides:
         r = next(r for r in d["resources"] if r.get("id") == g)
@@ -85,12 +96,12 @@ try:
     with sync_playwright() as p:
         b = p.chromium.launch(**({"executable_path": os.environ["CHROMIUM_PATH"]} if os.environ.get("CHROMIUM_PATH") else {}))
         gpages = [f"{g}.html" for g in ahjo.ready_guides(ahjo.load())]
-        for name in ["ahjo.html", "ahjo-1.html", "ahjo-2.html", "ahjo-materiaalit.html", "ahjo-turvallisuus.html", "en/ahjo.html", "en/ahjo-1.html"] + gpages + ["en/" + g for g in gpages]:
+        for name in ["ahjo.html", "ahjo-1.html", "ahjo-2.html", "ahjo-materiaalit.html", "ahjo-turvallisuus.html", "ahjo-projektit.html", "en/ahjo.html", "en/ahjo-1.html", "en/ahjo-projektit.html"] + gpages + ["en/" + g for g in gpages]:
             for w in (360, 768, 1280):
                 pg = b.new_page(viewport={"width": w, "height": 900}); pg.goto(f"http://localhost:{port}/{name}")
                 ov = pg.evaluate("document.documentElement.scrollWidth - innerWidth")
                 expect(f"{name} @ {w}: no sideways scroll", ov <= 0, ov)
-                small = pg.evaluate("""[...document.querySelectorAll('main a')].filter(a => { if (a.closest('.ahjo-guide p, .ahjo-guide li, .ahjo-guide td')) return false; const r = a.getBoundingClientRect();
+                small = pg.evaluate("""[...document.querySelectorAll('main a')].filter(a => { if (a.closest('.ahjo-guide p, .ahjo-guide li, .ahjo-guide td, .ahjo-proj dd')) return false; const r = a.getBoundingClientRect();
                     return r.width > 0 && r.height < 24; }).map(a => a.textContent.trim()).slice(0, 5)""")
                 expect(f"{name} @ {w}: links are at least 24 px high", not small, small)
                 pg.close()
@@ -100,7 +111,7 @@ try:
             pg.keyboard.press("Tab")
             seen.append(pg.evaluate("(() => { const a = document.activeElement; return a.closest('.ahjo-nav') ? a.getAttribute('href') : null })()"))
         nav = [h for h in seen if h]
-        expect("keyboard: Tab reaches every link of Ahjo's navigation in order", nav[:5] == ["ahjo.html", "ahjo.html#opintojaksot", "ahjo-materiaalit.html", "ahjo.html#laitteisto", "ahjo-turvallisuus.html"], nav)
+        expect("keyboard: Tab reaches every link of Ahjo's navigation in order", nav[:6] == ["ahjo.html", "ahjo.html#opintojaksot", "ahjo-materiaalit.html", "ahjo-projektit.html", "ahjo.html#laitteisto", "ahjo-turvallisuus.html"], nav)
         b.close()
 finally:
     srv.terminate()
