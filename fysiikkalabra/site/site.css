@@ -279,6 +279,28 @@ ol.lessons li.ch-card.live .ch-box:hover>a{text-decoration:underline}
   .ch-card .ch-img{border-radius:0;border-bottom:1px solid var(--line-2)}
   ol.lessons li.ch-card.soon>.ch-box{padding:1rem}
 }
+/* Kuvalaatat (teacher 2026-11-08, "16 oppituntia vaatii skrollausta"): on a module page the chapter cards are small tiles,
+   the opening illustration, "Luku n" and the title without the Miksi question (it opens the chapter itself), two in a
+   row on a phone and as many as fit at 10rem from 40rem (six at 1280 px), so 16 chapters take about one screen. The
+   theme labels stay in the one continuous grid (subgrid rows, as above). FY9, FY14 and FY10 keep the large cards. */
+main.module-page ol.lessons.ch-cards{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:.6rem}
+main.module-page ol.lessons li.ch-card{display:grid;grid-row:span 2;grid-template-rows:subgrid}
+main.module-page ol.lessons li.ch-card>h3.ch-theme{grid-row:1;align-self:end;margin:.8rem 0 .4rem}
+main.module-page ol.lessons.ch-cards>li:first-child>h3.ch-theme{margin-top:.4rem}
+main.module-page ol.lessons li.ch-card>.ch-box{grid-row:2}
+main.module-page ol.lessons li.ch-card.live>.ch-box{grid-template-columns:minmax(0,1fr);grid-template-areas:"img" "num" "title" "tags";grid-template-rows:auto auto 1fr auto;padding:0 0 .6rem;overflow:hidden;margin-bottom:.6rem}
+main.module-page ol.lessons li.ch-card.live>.ch-box>*:not(.ch-img){margin-inline:.6rem}
+main.module-page ol.lessons li.ch-card .l-num{margin-top:.4rem;font-size:.75rem}
+main.module-page ol.lessons li.ch-card .ch-box>a,main.module-page ol.lessons li.ch-card .ch-box>.ch-title{font-size:.9375rem;line-height:1.3}
+main.module-page .ch-card p.ch-why{display:none}
+main.module-page .ch-card .ch-img{border-radius:0;border-bottom:1px solid var(--line-2)}
+main.module-page ol.lessons li.ch-card.soon>.ch-box{padding:.6rem;margin-bottom:.6rem}
+@container content (min-width:40rem){
+  main.module-page ol.lessons.ch-cards{grid-template-columns:repeat(auto-fill,minmax(10rem,1fr));column-gap:.75rem}
+  main.module-page ol.lessons li.ch-card.live>.ch-box{grid-template-areas:"img" "num" "title" "tags";grid-template-rows:auto auto 1fr auto;padding:0 0 .7rem;margin-bottom:.75rem}
+  main.module-page ol.lessons li.ch-card.live>.ch-box>*:not(.ch-img){margin-inline:.7rem}
+  main.module-page ol.lessons li.ch-card>h3.ch-theme{margin:.6rem 0 .45rem}
+}
 .mod-more{display:grid;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr));gap:0 2.5rem;margin-top:1.4rem}
 .mod-more>section>h2:first-child{margin-top:1rem}
 /* Lukiokohtaiset opintojaksot (teacher 2026-10-30, scripts/local_courses.py): on the front page their own section after
