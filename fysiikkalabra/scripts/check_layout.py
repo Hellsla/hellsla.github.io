@@ -11,7 +11,8 @@ can break when the student opens things (teacher 2026-10-27, "avautuvat kortit")
 
 In each state it reports:
   overflow   a formula KaTeX cannot parse, or an element wider than its box: display formulas (.katex-display), inline formulas that cannot wrap (a
-             long \dfrac), inline SVG figures, the page itself (tables scroll by design: a warning only), a calculation row whose left
+             long \dfrac), inline SVG figures, the page itself, a table wider than its box (no table scrolls sideways, teacher
+             2026-11-08: long words break at soft hyphens, scripts/tablefit.py), a calculation row whose left
              side runs into its right side or wraps although the chain has room (2026-10-31)
   svg-text   a figure label that overlaps another label or leaves the figure (NOTES 3)
   column     a column whose content spills into its neighbour
@@ -23,7 +24,7 @@ In each state it reports:
              and the worked example's problem are sticky beside their column and are not counted.
   small      reading text under 17 px (a phone never gets smaller text) or a control under 40 px tall
   heading    a stage heading hidden under the sticky navigation after following its link (closed state only)
-Exit status 1 on anything but a wide table."""
+Exit status 1 on any finding."""
 import sys, pathlib
 from playwright.sync_api import sync_playwright
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from _browser import launch
@@ -37,6 +38,7 @@ OUT = ROOT / "site" if "--site" in sys.argv else ROOT / "preview" if (ROOT / "pr
 
 JS = """() => {
   if (window.flFitMath) window.flFitMath();   // lesson.js: a too-wide inline formula gets its own scrolling line (kx-wide)
+  if (window.flFitTables) window.flFitTables();   // lesson.js: a table still too wide for its box is stacked
   const out = [], V = (e) => e.checkVisibility();
   const el = document.scrollingElement, vw = document.documentElement.clientWidth;
   if (el.scrollWidth > el.clientWidth + 1) out.push({what: 'page', over: el.scrollWidth - el.clientWidth, text: ''});
@@ -70,8 +72,9 @@ JS = """() => {
   }
   for (const t of document.querySelectorAll('table')) {
     if (t.closest('#sim-root') || !t.checkVisibility()) continue;
-    const box = t.parentElement;
-    if (t.scrollWidth > box.clientWidth + 1) out.push({what: 'table', over: t.scrollWidth - box.clientWidth, text: t.innerText.slice(0, 60)});
+    const box = t.parentElement, cs = getComputedStyle(box), room = box.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+    const over = Math.max(t.scrollWidth - t.clientWidth, Math.round(t.getBoundingClientRect().width - room));   // it would scroll, or it is wider than its box (no table scrolls, 2026-11-08)
+    if (over > 1) out.push({what: 'table', over, text: t.innerText.replace(/\\s+/g, ' ').slice(0, 60)});
   }
   for (const c of document.querySelectorAll('main .eq-chain')) {   // regression 2026-11-04: rows of a calculation collapsed to 0 px (kx-wide inside the grid)
     if (!c.checkVisibility()) continue;
@@ -180,14 +183,14 @@ with sync_playwright() as pw:
         uniq = []
         for f in found:                               # the same problem in several states is reported once, with its first state
             if not any(u["what"] == f["what"] and u["text"] == f["text"] for u in uniq): uniq.append(f)
-        hard = [f for f in uniq if f['what'] != 'table']   # tables scroll sideways by design (NOTES 1)
+        hard = uniq   # a table too wide for its box fails too: no table scrolls sideways (teacher 2026-11-08)
         tag = f"{OUT.name}/{page_file.relative_to(OUT).with_suffix('').as_posix()} at {width} px"
         if hard:
             bad += 1
             print(f"FAIL {tag}")
             for f in uniq:
-                print(f"  {f['what']:8} {f['over']:4} px  [{f['state']}]  {f['text']}" + ("  (warning: scrolls)" if f['what'] == 'table' else ""))
+                print(f"  {f['what']:8} {f['over']:4} px  [{f['state']}]  {f['text']}" )
         else:
-            print(f"OK   {tag}" + (f"  ({len(uniq)} wide table, scrolls)" if uniq else ""))
+            print(f"OK   {tag}")
     b.close()
 sys.exit(1 if bad else 0)

@@ -944,3 +944,47 @@
   });
   document.addEventListener('click', (e) => { if (menu.open && !menu.contains(e.target)) menu.open = false; });
 })();
+
+/* No table scrolls sideways (teacher 2026-11-08, "en halua että taulukkoja täytyy scrollata"). The cells wrap their
+   words (site.css; soft hyphens in Finnish, scripts/tablefit.py). A table that is still wider than its box (many
+   columns on a phone) is shown stacked: each row a block of its own, each cell with its column's heading beside it
+   (table.tbl-stack). A simulation's reading table (exp-table, filled while the student works) and a table with merged cells keep their columns.
+   window.flFitTables() measures again (check_layout.py). */
+(() => {
+  const MATH = { delimiters: [{ left: '$', right: '$', display: false }], throwOnError: false };
+  const ok = (t) => !t.closest('#sim-root') && !t.matches('.exp-table:not(.ex-data)') && t.tHead && t.tHead.rows.length === 1
+    && ![...t.querySelectorAll('th,td')].some((c) => c.colSpan > 1 || c.rowSpan > 1);
+  const labels = (t) => {
+    if (t.dataset.stackReady) return;
+    if (![...t.tBodies].some((tb) => tb.textContent.trim())) t.classList.add('tbl-blank');   // a blank measurement table: its columns once, a line to fill beside each
+    const heads = [...t.tHead.rows[0].cells];
+    for (const tb of t.tBodies) for (const tr of tb.rows) [...tr.cells].forEach((c, i) => {
+      const h = heads[i]; if (!h) return;
+      const l = document.createElement('span'); l.className = 'tbl-lab'; l.setAttribute('aria-hidden', 'true');
+      l.innerHTML = h.innerHTML;
+      const v = document.createElement('span'); v.className = 'tbl-val';
+      while (c.firstChild) v.append(c.firstChild);
+      c.append(l, v);
+      if (/\$/.test(l.textContent) && window.renderMathInElement) window.renderMathInElement(l, MATH);
+    });
+    t.dataset.stackReady = '1';
+  };
+  const fitOne = (t) => {
+    if (!t.checkVisibility()) return;
+    t.classList.remove('tbl-stack');
+    const p = t.parentElement, cs = getComputedStyle(p), room = p.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+    if (t.scrollWidth > t.clientWidth + 1 || t.getBoundingClientRect().width > room + 1) {   // wider than itself (it would scroll) or than its box
+      labels(t); t.classList.add('tbl-stack');
+    }
+  };
+  const tables = [...document.querySelectorAll('main table')].filter(ok);
+  if (!tables.length) return;
+  const fitAll = () => tables.forEach(fitOne);
+  window.flFitTables = fitAll;
+  if ('ResizeObserver' in window) {
+    const ro = new ResizeObserver((es) => es.forEach((e) => tables.forEach((t) => { if (t.parentElement === e.target) fitOne(t); })));
+    new Set(tables.map((t) => t.parentElement)).forEach((p) => ro.observe(p));
+  }
+  window.addEventListener('load', fitAll);
+  if (document.fonts) document.fonts.ready.then(fitAll);
+})();

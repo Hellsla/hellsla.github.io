@@ -67,7 +67,7 @@
     const body = [...tb.querySelectorAll('tbody tr')].map((tr) => [...tr.children].map((td) => (td.dataset.value ?? td.dataset.plain ?? td.textContent).trim()));
     return body.length ? [head, ...body] : [];
   };
-  const asTsv = (rows) => rows.map((r) => r.map((c) => c.replace(/[\t\r\n]+/g, ' ')).join('\t')).join('\n');
+  const asTsv = (rows) => rows.map((r) => r.map((c) => c.replace(/\u00ad/g, '').replace(/[\t\r\n]+/g, ' ')).join('\t')).join('\n');   // without the soft hyphens of a table cell (tablefit.py)
   const copyText = (text, done) => {   // the clipboard API, then a hidden textarea and execCommand('copy')
     const fallback = () => { const t = document.createElement('textarea'); t.value = text; t.setAttribute('readonly', ''); t.style.position = 'fixed'; t.style.opacity = '0';
       document.body.appendChild(t); t.select(); let ok = false; try { ok = document.execCommand('copy'); } catch (e) { ok = false; } t.remove(); done(ok); };

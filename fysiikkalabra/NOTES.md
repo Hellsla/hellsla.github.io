@@ -48,7 +48,7 @@ course's `scope_notes` in `curriculum.json`, not here. Lines without a date pred
 - Every display formula fits a 360 px phone: about 25 characters per row, one `=` step per row. In `aligned`
   the columns add up, so a long left side goes alone on its own row and the `= …` parts follow in one
   left-aligned column (`\begin{aligned} &a \\ &= b \\ &\approx c \end{aligned}`). `check_lesson.py` measures it.
-- Markdown tables scroll sideways on a phone by design; keep header cells short.
+- No table scrolls sideways at any width (teacher 2026-11-08): cells wrap, long words in a Finnish table break at soft hyphens (`scripts/tablefit.py`), and `check_layout.py` fails a table wider than its box. Keep header cells short and put a long row of readings in a column (a vertical table), not in nine columns.
 
 ## 2. Numbers, Finnish, scope
 
