@@ -360,16 +360,17 @@
     setState('');
     S.entries = []; lockUi(true);
     call('rlQueue', id).then(function (q) {
-      S.entries = S.onlyOpen ? q.filter(function (e) { return scoreText(e.versions[e.versions.length - 1].score) === ''; }) : q;
+      S.entries = S.onlyOpen ? q.filter(function (e) { return scoreText(e.versions[pickOf(e)].score) === ''; }) : q;
       $('filterNote').textContent = S.onlyOpen ? 'Vain arvioimattomat (' + S.entries.length + ' / ' + q.length + ' ratkaisua)' : '';
       if (!S.entries.length) { $('gAnswer').textContent = S.onlyOpen ? 'Kaikki tämän tehtävän ratkaisut on arvioitu.' : 'Tähän tehtävään ei ole ratkaisuja (tyhjiä ei näytetä).'; lockUi(false); $('points').disabled = true; return; }
       show(0, null);
     }, function (e) { $('gAnswer').textContent = ''; setState('Jonoa ei voitu ladata: ' + errText(e), 'no'); lockUi(false); });
   }
+  function pickOf(e) { return typeof e.pick === 'number' && e.pick >= 0 && e.pick < e.versions.length ? e.pick : e.versions.length - 1; }
   function lockUi(on) { $('prev').disabled = $('next').disabled = on; $('points').disabled = on; $('gVer').disabled = on; }
   function show(idx, ver) {
     S.idx = idx; var e = S.entries[idx];
-    S.ver = ver === null || ver === undefined ? e.versions.length - 1 : ver;   // oletuksena uusin hyväksytty versio
+    S.ver = ver === null || ver === undefined ? pickOf(e) : ver;   // oletuksena uusin hyväksytty versio, jossa tehtävään on ratkaisu
     var v = e.versions[S.ver];
     $('gPos').textContent = 'Opiskelija ' + (idx + 1) + '/' + S.entries.length;
     $('gEmail').textContent = S.hide ? 'Opiskelija ' + (idx + 1) : e.email;
@@ -391,7 +392,7 @@
       $('gAnswer').textContent = ''; $('gAnswer').append(el('p', 'err', 'Vastausta ei voitu näyttää: ' + errText(err)));
       $('points').disabled = !!S.task.lesson;
     });
-    var nx = S.entries[idx + 1]; if (nx) fetchAnswer(nx, nx.versions[nx.versions.length - 1]).catch(function () {});   // seuraava valmiiksi
+    var nx = S.entries[idx + 1]; if (nx) fetchAnswer(nx, nx.versions[pickOf(nx)]).catch(function () {});   // seuraava valmiiksi
   }
   function fetchAnswer(e, v) {
     var k = v.fileId + '|' + S.task.id;

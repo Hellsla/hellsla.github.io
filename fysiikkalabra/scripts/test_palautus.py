@@ -623,7 +623,8 @@ with sync_playwright() as p:
     ch2 = [c for c in course["chapters"] if c["id"] == "fy3-2"][0]
 
     def chapter_file(ch, text, text2=None):
-        given = {0: text} if text2 is None else {0: text, 1: text2}
+        given = {0: text} if text2 is None else {1: text2} if text is None else {0: text, 1: text2}
+        text = text or ""
         answers = [{"task": t["id"], "status": "answered" if i in given else "empty", "content": [{"type": "text", "text": given[i]}] if i in given else []} for i, t in enumerate([t for t in ch["tasks"] if not t.get("lesson")])]   # an old (version 1) file: the exercises only
         text = text + "|" + (text2 or "")
         canon = json.dumps(answers, ensure_ascii=False, separators=(",", ":"))
@@ -778,6 +779,17 @@ with sync_playwright() as p:
     go_back(lp)
     load(zre2)
     expect("local page: a changed solution is to be graded again, the unchanged task 2 is not counted twice", t1()[3:] == ["0", "1"] and t2()[2:] == ["1", "0", "1"], (t1(), t2()))
+    # a newer file without task 1 (the student's browser lost it): task 1 keeps its newest earlier solution (teacher 2026-11-08)
+    zre3 = tmp / "puuttuu.zip"
+    make_zip(zre3, FA, [("fy3-2.ratkaisut (3) - Aino Opiskelija.json", chapter_file(ch2, None, "Ainon uusi ratkaisu"), (2026, 11, 6, 14, 0, 0))])
+    load(zre3)
+    expect("local page: a task missing from the newest version keeps its earlier solution in the list", "Uusia palautuksia 1" in lmsg() and t1()[2:] == ["1", "0", "1"] and t2()[2:] == ["1", "0", "1"], (lmsg(), t1(), t2()))
+    lp.locator('details.chapter[data-chapter="fy3-2"] tr.task-row').first.click(); lp.wait_for_function("document.querySelector('#gAnswer .t')")
+    expect("local page: its queue opens the newest version with a solution (3/4), not the newest file", "versio 3/4" in lp.inner_text("#gTime") and "Ainon korjattu työ" in lp.inner_text("#gAnswer"), (lp.inner_text("#gTime"), lp.inner_text("#gAnswer")))
+    lp.fill("#points", "1"); lp.press("#points", "Enter")
+    lp.wait_for_function("document.getElementById('state').textContent.indexOf('Tallennettu') === 0")
+    go_back(lp)
+    expect("local page: the points given on the earlier version count in the summary", t1()[3:] == ["1", "0"] and "Aino Opiskelija" in lp.inner_text("#summary"), t1())
     # a second group: its own form, students and points, made from the zip alone
     load(zpath2)
     expect("local page: the second group from its zip; a group menu appears", "ryhmä FY3.2" in lp.inner_text("#title") and lp.is_visible("#groupWrap"), lp.inner_text("#title"))

@@ -74,6 +74,9 @@ samanlainen, joten kaikki kielet arvioidaan samalla sivulla.
    **Pisteet siirtyvät:** jos tehtävän ratkaisu on uudessa versiossa täsmälleen sama kuin aiemmassa, arvioidussa
    versiossa, tehtävä saa vanhat pisteet (arviointinäkymässä *Pisteet versiosta 1 ✓ (sama ratkaisu)*). Vain uudet ja
    muuttuneet ratkaisut jäävät arvioitaviksi. Siirretyt pisteet voi muuttaa normaalisti.
+   **Puuttuva tehtävä säilyy:** jos uudesta palautuksesta puuttuu tehtävä, johon aiemmassa versiossa oli ratkaisu
+   (esim. opiskelijan selaimesta on kadonnut alkupään tehtäviä), tehtävä arvioidaan uusimmasta versiosta, jossa siihen on
+   ratkaisu, ja sen pisteet pysyvät koosteessa ja CSV:ssä. Arviointinäkymä avaa tehtävän siitä versiosta.
 
 Sivu säilyttää tuodut palautukset tämän selaimen muistissa. Kun avaat sivun seuraavan kerran, ryhmät, pisteet, tilat ja
 vastaukset ovat tallessa, eikä zipiä tarvitse tuoda uudelleen. Uuden periodin sivu näkee saman selaimen ryhmät ja

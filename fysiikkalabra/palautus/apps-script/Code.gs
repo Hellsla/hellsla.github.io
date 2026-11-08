@@ -693,7 +693,12 @@ function rlRound_(x) { return Math.round(x * 100) / 100; }
 function rlPointsOk_(v) { return typeof v === 'number' && isFinite(v) && v >= 0 && v <= RL_CONFIG.MAX_POINTS && Math.abs(Math.round(v * 100) - v * 100) < 1e-6; }
 function rlNum_(x) { return String(rlRound_(x)).replace('.', ','); }   // suomalainen desimaalipilkku
 function rlLatest_(s, chapterId) { var vs = s.chapters[chapterId]; return vs ? vs[vs.length - 1] : null; }
-// Opiskelijan kooste luvuittain (uusin hyväksytty versio) ja yhteensä; luku puuttuu, jos sitä ei ole palautettu.
+// A task's version (teacher 2026-11-08): the newest version of the chapter with a solution to the task. A task left
+// out of a newer submission (the student's browser lost it) keeps its earlier solution and points; a changed solution
+// in a newer version is graded again. -1 when no version has a solution.
+function rlForTaskAt_(s, chapterId, taskId) { var vs = s.chapters[chapterId] || []; for (var i = vs.length - 1; i >= 0; i--) if (vs[i].answered.indexOf(taskId) >= 0) return i; return -1; }
+function rlForTask_(s, chapterId, taskId) { var vs = s.chapters[chapterId], i = rlForTaskAt_(s, chapterId, taskId); return i >= 0 ? vs[i] : rlLatest_(s, chapterId); }
+// Opiskelijan kooste luvuittain (tehtävittäin uusin hyväksytty versio, jossa tehtävään on ratkaisu) ja yhteensä; luku puuttuu, jos sitä ei ole palautettu.
 // answered = tehtyjä (ratkaisu editorissa), unchecked = tehtyjä ilman pisteitä, points = pisteiden summa.
 function rlSummary_(m) {
   return m.students.map(function (s) {
@@ -702,7 +707,7 @@ function rlSummary_(m) {
       var last = rlLatest_(s, c.id); if (!last) return;
       var sum = 0, n = 0, a = 0, u = 0;
       c.tasks.filter(function (t) { return !t.lesson; }).forEach(function (t) {   // oppitunnin tehtävät näytetään, ei pisteytetä
-        var p = rlTaskScore_(m, s, c.id, last, t.id).score, done = last.answered.indexOf(t.id) >= 0;
+        var v = rlForTask_(s, c.id, t.id), p = rlTaskScore_(m, s, c.id, v, t.id).score, done = v.answered.indexOf(t.id) >= 0;
         if (p !== '') { sum += p; n++; }
         if (done) { a++; if (p === '') u++; }
       });
@@ -724,10 +729,10 @@ function rlOverview() {
       // tyhjäksi jätetty tehtävä ei ole ratkaisu eikä arvioitava (opettaja 6.11.2026)
       var empty = 0, scored = 0, open = 0;
       subs.forEach(function (s) {
-        var last = rlLatest_(s, c.id);
-        if (last.answered.indexOf(t.id) < 0) { empty++; return; }
+        var v = rlForTask_(s, c.id, t.id);
+        if (v.answered.indexOf(t.id) < 0) { empty++; return; }
         if (t.lesson) return;
-        if (rlTaskScore_(m, s, c.id, last, t.id).score !== '') scored++; else open++;
+        if (rlTaskScore_(m, s, c.id, v, t.id).score !== '') scored++; else open++;
       });
       return { id: t.id, number: t.number, level: t.level, lesson: !!t.lesson, html: t.html, answer: t.answer, submissions: subs.length, empty: empty,
                solutions: subs.length - empty, scored: scored, open: open };
@@ -739,13 +744,14 @@ function rlOverview() {
   return { course: RL_COURSE.id, group: RL_CONFIG.GROUP || '', maxPoints: RL_CONFIG.MAX_POINTS, students: m.students.length, chapters: chapters,
            summary: rlSummary_(m), problems: m.problems };
 }
-// Jonossa vain opiskelijat, joiden uusimmassa palautuksessa tehtävään on ratkaisu (opettaja 6.11.2026: tyhjiä ei näytetä).
+// Jonossa vain opiskelijat, joiden jossakin palautuksessa tehtävään on ratkaisu (opettaja 6.11.2026: tyhjiä ei näytetä);
+// pick = uusin versio, jossa ratkaisu on (opettaja 8.11.2026: uudesta palautuksesta puuttuva tehtävä säilyy).
 function rlQueue(taskId) {
   var info = rlTaskInfo_(taskId);
   if (!info) throw rlError_('Tuntematon tehtävä.');
   var m = rlModel_(), ch = info.chapter.id;
-  return m.students.filter(function (s) { var last = rlLatest_(s, ch); return !!last && last.answered.indexOf(taskId) >= 0; }).map(function (s) {
-    return { email: s.email, versions: s.chapters[ch].map(function (v) {
+  return m.students.filter(function (s) { return rlForTaskAt_(s, ch, taskId) >= 0; }).map(function (s) {
+    return { email: s.email, pick: rlForTaskAt_(s, ch, taskId), versions: s.chapters[ch].map(function (v) {
       var sc = rlTaskScore_(m, s, ch, v, taskId);
       return { fileId: v.fileId, sub: v.sub, time: v.time, answered: v.answered.indexOf(taskId) >= 0, score: sc.score, from: sc.from };
     }) };
