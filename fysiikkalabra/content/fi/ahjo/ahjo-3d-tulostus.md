@@ -1,3 +1,24 @@
+## Pikastartti
+
+Näet kymmenessä minuutissa, kuinka kauan oman mallisi tulostus kestää ja paljonko muovia siihen kuluu. Viipalointiohjelmaa saa käyttää kuka tahansa. Tulostinta käytetään vasta laiteperehdytyksen jälkeen, ja siihen asti tulostuksen käynnistää opettaja.
+
+1. Avaa PrusaSlicer ja valitse opettajan valmistelema profiili (tulostin ja PLA-materiaali).
+2. Tuo ohjelmaan oma mallisi, esimerkiksi 3D-mallinnuksen pikastartin avaimenperä, tai opettajan valmis malli.
+3. Paina Viipaloi ja kirjaa ylös ohjelman arvioimat tulostusaika ja massa.
+4. Muuta täytöksi ensin $10\,\%$ ja sitten $50\,\%$. Viipaloi uudelleen ja katso, miten aika ja massa muuttuvat.
+
+### Kokeile
+
+Viipaloi malli ja lue siitä tulostusaika ja massa.
+
+### Muokkaa
+
+Muuta asentoa, kerroskorkeutta tai täyttöä niin, että tulostus kestää alle 15 minuuttia ja kappale on silti käyttökelpoinen.
+
+### Haasta itsesi
+
+Laske tulosteen materiaalikustannus. Tulosta kappale perehdytyksen jälkeen ja testaa sen lujuus alla olevan Opi lisää -osan ohjeen mukaan.
+
 ## Haaste
 
 Tulosta mallisi niin, että ensimmäinen kerros tarttuu alustaan, kappale kestää käytön ja tiedät, mitä tuloste maksoi. Kun osaat valita tulostusasennon ja tarkistaa ensimmäisen kerroksen, suurin osa epäonnistuneista tulosteista jää syntymättä.

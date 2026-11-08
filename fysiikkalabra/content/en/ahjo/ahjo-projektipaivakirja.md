@@ -1,3 +1,24 @@
+## Quick start
+
+You make your first entry in five minutes. A good journal grows from small entries written during the lesson.
+
+1. Open the group's shared document or a squared notebook.
+2. Write the date and one sentence on what you did today.
+3. Take a photo of your work and write a caption for it: what the photo shows and why you took it.
+4. Write one sentence on the next step.
+
+### Try
+
+Make a three-line entry: the date, what you did and the next step.
+
+### Modify
+
+Use your own way, such as a sketch, a short video or a comic, as long as the date and the next step are there.
+
+### Challenge yourself
+
+Record one decision and the reason for it, and one measurement as a table with units. The assessment criteria are below in the Learn more part.
+
 ## Challenge
 
 Keep a journal of your project so that another student could continue the project from the journal alone. A good journal is not a tidy final report. During the work it records what you decided, why you decided it, what you tried and what followed.

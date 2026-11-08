@@ -1,3 +1,24 @@
+## Quick start
+
+You make your own key ring in Tinkercad in about ten minutes. You only need a browser and your teacher's class code.
+
+1. Log in to Tinkercad with the class code and start a new 3D design.
+2. Drag a box onto the workplane and set its size to $50\,\text{mm} \times 20\,\text{mm} \times 4\,\text{mm}$.
+3. Drag a text shape onto the box and type your name. Raise the text by $4\,\text{mm}$ so that it sits on top of the box.
+4. Add a cylinder at one end of the box, make it a hole and group all the shapes. The key ring is done.
+
+### Try
+
+Make the key ring with the steps above and save it as an STL file.
+
+### Modify
+
+Make it yours: change the shape, add your own symbol or pattern, or make the letters raised or sunken.
+
+### Challenge yourself
+
+Design a part that has to fit another object, such as the desk-edge holder in the Learn more part below. Measure the other object with a calliper and choose the clearance.
+
 ## Challenge
 
 Design a holder that clips onto the edge of a table without screws and keeps a charger cable in place. The holder works if it goes onto the table edge when you press it by hand, stays in place and does not scratch the table. This only works if you measure accurately and leave the right clearance in your dimensions.

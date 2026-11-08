@@ -1,3 +1,24 @@
+## Quick start
+
+You get an LED blinking in about ten minutes, and you do not have to write any code yourself. Your teacher has installed the Arduino IDE and put the parts together for you. Always make connections with the USB cable unplugged.
+
+1. Put an LED and a $330\,\Omega$ resistor on the breadboard as in the drawing below. The LED's long leg goes on the resistor's side.
+2. Run a wire from the Arduino's pin 13 to the resistor's column and another wire from a GND pin to the column of the LED's short leg.
+3. Plug in the USB cable. In the Arduino IDE, open the ready-made example File → Examples → 01.Basics → Blink.
+4. Choose Arduino Uno as the board and the right port, and press Upload. The LED blinks once a second.
+
+### Try
+
+Make the LED blink with the ready-made Blink example.
+
+### Modify
+
+Change the `delay` numbers in the program and turn the blinking into a heartbeat, a lighthouse or SOS. Put the LED inside a ping-pong ball, a paper lantern or a plastic bottle and see how the light changes.
+
+### Challenge yourself
+
+Work out the series resistor yourself with Ohm's law, measure the current in the circuit and compare it with your calculation. The instructions are below in the Learn more part.
+
 ## Challenge
 
 Make an LED blink with an Arduino and know why it blinks. You connect an LED and a series resistor on a breadboard, size the resistor yourself, write the program and finally measure whether the current in the circuit is the one you calculated. The finished circuit is a first building block for many Ahjo projects: the same connection later drives indicator lights, buzzers and motor drivers.

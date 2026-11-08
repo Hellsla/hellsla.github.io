@@ -1,3 +1,24 @@
+## Pikastartti
+
+Teet oman avaimenperän Tinkercadissa noin kymmenessä minuutissa. Tarvitset vain selaimen ja opettajan luokkakoodin.
+
+1. Kirjaudu Tinkercadiin luokkakoodilla ja aloita uusi 3D-suunnitelma.
+2. Vedä työtasolle laatikko ja muuta sen mitoiksi $50\,\text{mm} \times 20\,\text{mm} \times 4\,\text{mm}$.
+3. Vedä laatikon päälle tekstimuoto ja kirjoita siihen nimesi. Nosta tekstiä $4\,\text{mm}$, jotta se on laatikon päällä.
+4. Lisää laatikon toiseen päähän lieriö, muuta se reiäksi ja ryhmitä kaikki muodot yhteen. Avaimenperä on valmis.
+
+### Kokeile
+
+Tee avaimenperä yllä olevien vaiheiden mukaan ja tallenna se STL-tiedostoksi.
+
+### Muokkaa
+
+Tee siitä omasi: vaihda muoto, lisää oma symboli tai kuvio, tai tee kirjaimista koholla tai upotettuja.
+
+### Haasta itsesi
+
+Suunnittele osa, jonka pitää sopia toiseen kappaleeseen, kuten alla olevan Opi lisää -osan pöydänreunapidike. Mittaa vastakappale työntömitalla ja valitse välys.
+
 ## Haaste
 
 Suunnittele pidike, joka kiinnittyy pöydän reunaan ilman ruuveja ja pitää laturin johdon paikallaan. Pidike on onnistunut, jos se menee pöydän reunaan käsin painamalla, pysyy paikallaan eikä naarmuta pöytää. Tämä onnistuu vain, jos mittaat tarkasti ja jätät mittoihin oikean välyksen.

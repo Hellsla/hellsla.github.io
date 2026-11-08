@@ -111,6 +111,9 @@
       "other": "{n} luonnosta"
     },
     "guide_draft_note": "Tätä ohjetta ei ole vielä kokeiltu Ahjon omilla laitteilla. Laitemallit, asetukset ja ajat tarkentuvat, kun laitteet on hankittu. Noudata aina opettajan antamia ohjeita ja laitekohtaista perehdytystä.",
+    "guide_quick": "Pikastartti",
+    "guide_more": "Opi lisää",
+    "guide_more_lead": "Tässä osassa työ tehdään perusteellisesti: miksi se toimii, tarkat työvaiheet, mittaukset ja ongelmien ratkaisu.",
     "guide_sections": [
       "Haaste",
       "Oppimistavoitteet",

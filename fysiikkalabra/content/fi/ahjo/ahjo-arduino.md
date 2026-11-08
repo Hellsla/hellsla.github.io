@@ -1,3 +1,24 @@
+## Pikastartti
+
+Saat LEDin vilkkumaan noin kymmenessä minuutissa, eikä sinun tarvitse kirjoittaa koodia itse. Opettaja on asentanut Arduino IDE:n ja koonnut tarvikkeet valmiiksi. Tee kytkennät aina USB-johto irrotettuna.
+
+1. Laita LED ja $330\,\Omega$:n vastus koekytkentälevylle alla olevan kytkentäkuvan mukaan. LEDin pitkä jalka tulee vastuksen puolelle.
+2. Vedä johto Arduinon pinnistä 13 vastuksen sarakkeeseen ja toinen johto GND-pinnistä LEDin lyhyen jalan sarakkeeseen.
+3. Kytke USB-johto. Avaa Arduino IDE:ssä valmis esimerkki File → Examples → 01.Basics → Blink.
+4. Valitse levyksi Arduino Uno ja oikea portti, ja paina Upload. LED vilkkuu sekunnin välein.
+
+### Kokeile
+
+Saa LED vilkkumaan valmiilla Blink-esimerkillä.
+
+### Muokkaa
+
+Muuta ohjelman `delay`-lukuja ja tee vilkkumisesta sydämen syke, majakka tai SOS. Laita LED pingispallon, paperilyhdyn tai muovipullon sisään ja katso, miten valo muuttuu.
+
+### Haasta itsesi
+
+Laske etuvastus itse Ohmin lailla, mittaa piirin virta ja vertaa tulosta laskemaasi. Ohjeet ovat alla Opi lisää -osassa.
+
 ## Haaste
 
 Saa LED vilkkumaan Arduinolla niin, että tiedät, miksi se vilkkuu. Kytket LEDin ja etuvastuksen koekytkentälevylle, mitoitat vastuksen itse, kirjoitat ohjelman ja mittaat lopuksi, kulkeeko piirissä se virta, jonka laskit. Valmis työ on ensimmäinen palikka monelle Ahjon projektille: sama kytkentä ohjaa myöhemmin merkkivaloja, summereita ja moottorinohjaimia.

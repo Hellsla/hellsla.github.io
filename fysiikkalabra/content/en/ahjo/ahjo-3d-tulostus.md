@@ -1,3 +1,24 @@
+## Quick start
+
+In ten minutes you see how long your own model takes to print and how much plastic it uses. Anyone may use the slicer. The printer is used only after the device induction, and until then your teacher starts the print.
+
+1. Open PrusaSlicer and choose the profile your teacher has prepared (the printer and PLA).
+2. Import your own model, for example the key ring from the 3D modelling quick start, or the teacher's ready-made model.
+3. Press Slice and write down the print time and mass the program estimates.
+4. Set the infill first to $10\,\%$ and then to $50\,\%$. Slice again and see how the time and the mass change.
+
+### Try
+
+Slice a model and read its print time and mass.
+
+### Modify
+
+Change the orientation, the layer height or the infill so that the print takes less than 15 minutes and the object is still usable.
+
+### Challenge yourself
+
+Work out the material cost of the print. Print the object after the induction and test its strength as in the Learn more part below.
+
 ## Challenge
 
 Print your model so that the first layer sticks to the bed, the object withstands use and you know what the print cost. Once you can choose the print orientation and check the first layer, most failed prints never happen.
