@@ -36,6 +36,8 @@ A course's fields (all texts in the language of the file):
   photos                                 optional: [{src, alt, width, height, caption?, wide?}], pictures in assets/pics/<code>/ (src
                                          "pics/<code>/<file>"), faces cropped out (teacher 2026-11-08); photos_heading
                                          optional, the section's heading (default site.local_photos)
+  kind_note                              optional: false leaves out the note "Tämä on lukiokohtainen opintojakso …"
+                                         (Kilparobotiikka, teacher 2026-11-08 "poista tuo kappale")
   theme                                  optional: "kiviruukki" = the page in Kiviruukin lukio's colours and fonts with
                                          the header symbol in them, like the Ahjo pages (Kilparobotiikka, teacher 2026-11-08)
   pathway                                investigation ids in the course's order; the course page lists its published
@@ -136,7 +138,7 @@ def page_body(code, c, T, chapters, published, investigations=(), guides_html=""
     import module_icons
     out = (f'<div class="mod-head">{module_icons.img(code, 56, "mod-head-icon")}<div><span class="eyebrow">{label(code) + " · " if label(code) else ""}{T("site.local_course_kind")}</span><h1>{esc(c["title"])}</h1></div></div>'
            f'<p class="lead">{esc(c["subtitle"])}</p>'
-           f'<p class="notice local-kind" role="note">{T("site.local_distinct", school=esc(c["school"]))}</p>'
+           + (f'<p class="notice local-kind" role="note">{T("site.local_distinct", school=esc(c["school"]))}</p>' if c.get("kind_note", True) else "")
            + (f'<p class="notice local-status" role="note"><strong>{T("site.local_status_" + status)}.</strong> {T("site.local_status_note_" + status)}</p>' if status != "ready" else "")
            + (f'<p class="local-authors">{T("units.authors")}: {esc(", ".join(c["authors"][:-1]) + " " + T("units.and") + " " + c["authors"][-1] if len(c["authors"]) > 1 else c["authors"][0])}</p>' if c.get("authors") else "")
            + (f'<p class="notice local-language" role="note">{T("units.language_note_" + c["language"])}</p>' if c.get("language") and c["language"] != T.lang and T.lang not in c.get("translations", []) else "")
