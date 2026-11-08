@@ -66,6 +66,10 @@
     "course_goals_lead": "In this course, you will learn to",
     "course_lessons": "{n} lessons",
     "lesson_example": "Example",
+    "lesson_output": "Output",
+    "lesson_guides": "Guides",
+    "deepening_h": "Optional deepening",
+    "deepening_lead": "Optional extra work for those who get further or want to go deeper. It is not part of the outline everyone follows.",
     "course_page_open": "Open the course page",
     "license_h": "Makerspace licence",
     "license_text": "Ahjo 1 is also Ahjo's Makerspace licence. You need it to work on independent projects in Ahjo.",
@@ -154,87 +158,164 @@
       "lessons": [
         {
           "title": "Welcome to Ahjo",
-          "text": "The space, the equipment and how we work; the rules and the induction.",
-          "example": "Map Ahjo's equipment and pick one real problem you could solve with it during the course, such as gear for your hobby or a tool that helps you study."
+          "text": "The space, the equipment and how we work; the rules and the general induction.",
+          "example": "A first 15-minute task: make an LED light with a battery and explain why it lights only one way round. Then map Ahjo's equipment and record one real problem you could solve with it during the course.",
+          "output": "Project journal set up and one problem recorded.",
+          "guides": [
+            "ahjo-projektipaivakirja"
+          ]
         },
         {
           "title": "Working safely",
-          "text": "Hand and power tools, protective equipment and an orderly workstation.",
-          "example": "A risk assessment as at a workplace: choose one machine, identify its hazards and write instructions someone else can work safely from."
+          "text": "Device induction for the 3D printer and hand tools; protective equipment and an orderly workstation.",
+          "example": "A risk assessment as at a workplace: choose one device, identify its hazards and write short instructions someone else can work safely from.",
+          "output": "A risk assessment of one device.",
+          "guides": []
         },
         {
           "title": "Basics of 3D modelling",
-          "text": "Basic shapes, joining and cutting in a modelling program.",
-          "example": "Model an ergonomic handle, a case or a spare part for something broken and justify your design choices."
+          "text": "Basic shapes, joining and holes in Tinkercad.",
+          "example": "Model an ergonomic handle, a case or a spare part for something broken. At the end of the lesson your part starts printing, and the print continues between lessons.",
+          "output": "Your own model in the print queue.",
+          "guides": [
+            "ahjo-3d-mallinnus"
+          ]
         },
         {
           "title": "A model to measure",
-          "text": "Dimensions, tolerances and fitting parts together.",
-          "example": "Design a two-part joint (snap fit or hinge) and find by experiment the clearance at which the parts fit together."
+          "text": "Dimensions, clearance and fitting parts together.",
+          "example": "Measure with a calliper and print a fit test of about 20 minutes during the lesson. Find the clearance at which a peg and a hole fit together.",
+          "output": "Fit test result: a clearance that works.",
+          "guides": [
+            "ahjo-3d-mallinnus"
+          ]
         },
         {
           "title": "From model to print",
-          "text": "Slicing, print settings and using the printer.",
-          "example": "An optimisation challenge: the lightest printed truss that carries 2 kg. Compare how infill, layer height and print orientation affect strength and material use."
+          "text": "Slicing in PrusaSlicer, print settings and using the printer.",
+          "example": "A strength test: print the same beam with two infills or in two orientations and hang known masses on it. Does it hold a 2 kg mass, a weight of about 20 N?",
+          "output": "Strength test results as a table.",
+          "guides": [
+            "ahjo-3d-tulostus"
+          ]
         },
         {
-          "title": "Judging a print and 3D scanning",
-          "text": "Print defects and how to fix them; scanning an object into a model.",
-          "example": "Scan an object, repair the model and print a scale copy. How accurate is it, and where do the differences come from?"
+          "title": "Judging and fixing a print",
+          "text": "The most common print defects, their causes and how to fix them.",
+          "example": "Compare your print with the model: measure three dimensions with a calliper, identify the defects and change one setting to fix them.",
+          "output": "The measured difference between model and print.",
+          "guides": [
+            "ahjo-3d-tulostus"
+          ]
         },
         {
           "title": "Circuits and components",
           "text": "Power source, resistor, LED and breadboard.",
-          "example": "Size an LED's series resistor with Ohm's law, build the circuit and compare the measured current with your calculation. What happens without the resistor?"
+          "example": "Size an LED's series resistor with Ohm's law, build the circuit and compare the measured current with your calculation.",
+          "output": "Circuit diagram and resistor calculation.",
+          "guides": [
+            "ahjo-arduino",
+            "fy6-3"
+          ]
         },
         {
           "title": "Measuring with a multimeter",
           "text": "Measuring voltage, current and resistance connected the right way.",
-          "example": "Measure the current drawn by a phone charger, an Arduino and a motor in different situations and estimate how long a battery would power your device."
+          "example": "Measure the current drawn by an Arduino, an LED and a motor in different situations and estimate how long a battery would power your device.",
+          "output": "Current and voltage measurements with units.",
+          "guides": [
+            "fy6-2"
+          ]
         },
         {
           "title": "A first Arduino program",
           "text": "The programming environment, digital outputs and a blinking LED.",
-          "example": "Program a reaction-time game that measures reaction time in milliseconds and computes the class's mean and spread."
+          "example": "Program a reaction-time game that measures reaction time in milliseconds, and calculate the class's mean. Calculating the spread is an extension.",
+          "output": "A working program and the class mean.",
+          "guides": [
+            "ahjo-arduino"
+          ]
         },
         {
           "title": "Sensors and inputs",
           "text": "Button, light and distance sensors; conditions and loops.",
-          "example": "Build a measuring device: a classroom CO₂, noise or temperature logger that records data. Plot a graph of a lesson's data."
+          "example": "Build a measuring device that sends its readings to the serial port, for example light or distance. Plot a graph of the data collected during the lesson.",
+          "output": "A graph of your own measurement data.",
+          "guides": [
+            "tvt-mittausohjelma"
+          ]
         },
         {
           "title": "Motors and actuators",
           "text": "Servo and DC motor; power supply and control.",
-          "example": "Use a servo to turn a solar panel towards the light and measure how much power tracking adds compared with a fixed panel."
-        },
-        {
-          "title": "Soldering",
-          "text": "Using a soldering station and soldering a small circuit.",
-          "example": "Solder your measuring device onto stripboard so that it lasts. Test the joints with a multimeter and compare reliability with the breadboard."
+          "example": "A servo turns towards the light, steered by two light-dependent resistors. Measuring the power is an optional extension.",
+          "output": "A light-following servo.",
+          "guides": [
+            "fy7-4"
+          ]
         },
         {
           "title": "Building a robot",
           "text": "The structure of a robotics kit, drive train and sensors.",
-          "example": "Build a robot that carries a load around a course as fast as possible. Compare how the gear ratio affects speed and pulling force."
+          "example": "Build a robot that carries a load around a course. Compare how the gear ratio affects speed and pulling force.",
+          "output": "A working robot base and a gear ratio comparison.",
+          "guides": []
         },
         {
           "title": "Programming a robot",
           "text": "Movement, sensor control and solving a task with a program.",
-          "example": "Program a robot to find its way past obstacles with its sensors. Compare simple and proportional (P) control in line following."
+          "example": "In the first round the robot drives the course without sensors, using only distances and angles calculated in advance, as when steering a space probe. In the second round it uses sensors. Compare the rounds.",
+          "output": "A comparison of the two rounds.",
+          "guides": []
+        },
+        {
+          "title": "Planning the mini project",
+          "text": "The problem, a measurable measure of success, a materials list and a sketch.",
+          "example": "Choose a topic from your own problem or the project bank. Record the problem, the measure, the materials and a sketch in your project journal, and have the plan approved by your teacher.",
+          "output": "An approved mini project plan.",
+          "guides": [
+            "ahjo-projektipaivakirja"
+          ]
         },
         {
           "title": "Mini project",
-          "text": "A small device of your own with the methods learned: design and build.",
-          "example": "A small device of your own with the methods learned, such as a plant moisture monitor, a bike light system or a sports performance meter."
+          "text": "A small device of your own with the methods learned: building and testing.",
+          "example": "Build the device according to the plan and test it with the measure of success at least three times.",
+          "output": "A working device and test results.",
+          "guides": [
+            "ahjo-projektipaivakirja"
+          ]
         },
         {
           "title": "Presentation and self-assessment",
           "text": "Presenting and documenting the mini project and assessing your own learning.",
-          "example": "Present your device as in a product review: goal, solution, measurements and what you would do in the next version."
+          "example": "Present your device as in a product review: goal, solution, measurements and what you would do in the next version.",
+          "output": "A presentation and a completed project journal.",
+          "guides": [
+            "ahjo-projektipaivakirja"
+          ]
         }
       ],
       "plan_status": "draft",
-      "license": true
+      "license": true,
+      "deepening": [
+        {
+          "title": "3D scanning",
+          "text": "Scan an object, repair the model and print a scale copy. How accurate is the copy, and where do the differences come from?"
+        },
+        {
+          "title": "Soldering",
+          "text": "Solder your measuring device onto stripboard once you have had the soldering station induction. Test the joints with a multimeter."
+        },
+        {
+          "title": "Solar panel power",
+          "text": "Measure with two multimeters how much more power a light-following panel gives than a fixed one."
+        },
+        {
+          "title": "P control",
+          "text": "Improve line following so that the robot's turning depends on how far it is from the line. Compare lap times."
+        }
+      ]
     },
     {
       "code": "AHJO2",
@@ -257,83 +338,141 @@
       "lessons": [
         {
           "title": "Starting the project",
-          "text": "How Ahjo 2 runs, teams and finding a project topic.",
-          "example": "Look at a few student invention and enterprise projects and collect problems that matter to you, the school or the neighbourhood."
+          "text": "How Ahjo 2 runs, teams and collecting real problems. Stage 1: the problem.",
+          "example": "Collect problems that matter to you, the school or the neighbourhood, and look at the topics in the project bank.",
+          "output": "At least five recorded problems.",
+          "guides": [
+            "ahjo-projektipaivakirja"
+          ]
         },
         {
           "title": "Defining the problem",
-          "text": "Whose problem, what need, and how success is recognised.",
-          "example": "Interview at least three users and write a precise problem definition: who, in what situation, and by what measurable criterion the solution succeeds."
+          "text": "Whose problem, what need, and how success is recognised. Stage 2: the user's needs.",
+          "example": "Interview at least three users and write the problem in the form: how might we help a user group in a situation where … Add a measurable measure of success.",
+          "output": "Problem definition and measure.",
+          "guides": [
+            "ahjo-projektipaivakirja"
+          ],
+          "milestone": "Hand-in 1: the problem and the user"
         },
         {
-          "title": "Ideation",
-          "text": "Ideation methods and producing several possible solutions.",
-          "example": "Ideate through constraints: what if it cost at most €20, worked without electricity, or had to be repairable by the user?"
+          "title": "Ideation and choice",
+          "text": "At least ten ideas and a justified choice. Stage 3: solutions.",
+          "example": "Ideate through constraints: what if it cost at most €20, worked without electricity, or the user had to be able to repair it? Choose with a light decision matrix that covers sustainability, accessibility, design and cost.",
+          "output": "Ideas and a decision matrix.",
+          "guides": []
         },
         {
-          "title": "Judging and choosing ideas",
-          "text": "Criteria, comparison and a justified choice.",
-          "example": "Rank the ideas with a weighted decision matrix that also covers sustainability: materials, energy use and life cycle."
+          "title": "Rough prototype",
+          "text": "A prototype of cardboard, tape and a ready-made circuit in one lesson. Stage 4: prototype.",
+          "example": "Build the quickest possible model that tests your riskiest assumption: does the user want this, and do they understand how to use it?",
+          "output": "A rough prototype and the assumption to test.",
+          "guides": []
+        },
+        {
+          "title": "User test 1",
+          "text": "An outsider tries the prototype; observations and choosing the direction. Stages 5 and 6: testing and feedback.",
+          "example": "Record observations in four groups: works, does not work, unclear, and new idea. Decide whether to continue, change or change direction.",
+          "output": "Test observations and a decision on how to continue.",
+          "guides": [
+            "ahjo-projektipaivakirja"
+          ],
+          "milestone": "Hand-in 2: observations from the first user test"
         },
         {
           "title": "Project plan",
-          "text": "Goals, roles, schedule, materials and risks.",
-          "example": "Write a plan with milestones, responsibilities, a budget and a risk assessment, as in a real product development project."
+          "text": "Milestones, roles, a priced materials list and risks.",
+          "example": "Write a plan as in a real product development project: who does what and when, what the materials cost and what could go wrong.",
+          "output": "Project plan and budget.",
+          "guides": []
         },
         {
-          "title": "Design",
-          "text": "Sketches, dimensioned drawings and digital models.",
-          "example": "Make a dimensioned drawing and a 3D model from which another group could build the same part without explanations."
+          "title": "Design, materials and methods",
+          "text": "A dimensioned drawing, a 3D model and a justified choice of material.",
+          "example": "Make a dimensioned drawing and a 3D model from which another group could build the same part. Compare at least two materials by strength, cost, making time and recyclability.",
+          "output": "Drawing, model and choice of material.",
+          "guides": [
+            "ahjo-3d-mallinnus"
+          ],
+          "milestone": "Hand-in 3: the plan and materials"
         },
         {
-          "title": "Materials and methods",
-          "text": "Choosing suitable materials, equipment and ways of making.",
-          "example": "Choose a material with reasons: compare strength, cost, making time and recyclability for at least two options."
+          "title": "Working prototype",
+          "text": "The first working version of the solution with Ahjo's equipment.",
+          "example": "Make the parts with different machines and share the work so that every member learns at least one new method of making.",
+          "output": "A working prototype.",
+          "guides": [
+            "ahjo-arduino",
+            "ahjo-3d-tulostus"
+          ]
         },
         {
-          "title": "A first prototype",
-          "text": "A quick, simple model to try out the idea.",
-          "example": "Build the smallest working prototype that tests the riskiest assumption of your project."
+          "title": "Test plan and measurements",
+          "text": "What is measured, how precisely and how many repetitions. Stage 6: measurement results.",
+          "example": "Write a test plan and measure the prototype with the measure of success three times. Present the results as a table and a graph.",
+          "output": "Test plan and the first results.",
+          "guides": [
+            "tvt-mittausohjelma"
+          ]
         },
         {
-          "title": "Testing the prototype",
-          "text": "A test plan, measuring and recording observations.",
-          "example": "Write a test plan: what is measured, how precisely, and what result counts as success. Collect the data and present it as a graph."
+          "title": "User test 2",
+          "text": "A user tries the working prototype without instructions.",
+          "example": "Watch the user without stepping in and record where they hesitate or make a mistake. Compare with the first test.",
+          "output": "Observations from the second user test.",
+          "guides": [
+            "ahjo-projektipaivakirja"
+          ]
         },
         {
-          "title": "Feedback and improvement",
-          "text": "Feedback from users and the group; planning changes.",
-          "example": "Run a user test in which an outsider uses the prototype without instructions. Record what you see and decide what to change and why."
+          "title": "Improvement 1",
+          "text": "Changes based on the tests and feedback. Stage 7: improvement.",
+          "example": "Choose the two most important changes on the basis of the tests, justify them and make them.",
+          "output": "Two justified changes.",
+          "guides": []
         },
         {
-          "title": "Building 1",
-          "text": "Making the parts of the solution according to the plan.",
-          "example": "Make the parts with different machines and share the work so that every member masters at least one new method."
-        },
-        {
-          "title": "Building 2",
-          "text": "Assembling the parts; electronics, programming or finishing as needed.",
-          "example": "Add a sensor, a microcontroller or a printed textile part that measurably improves how it works."
+          "title": "Improvement 2",
+          "text": "A part that measurably improves how it works.",
+          "example": "Add a sensor, a controller, or a printed or sewn part that measurably improves how it works. Measure the effect.",
+          "output": "A measured improvement.",
+          "guides": []
         },
         {
           "title": "Final testing",
-          "text": "Does the solution work: tests, measurements and comparison with the goals.",
-          "example": "Test the final solution with the same measures as the prototype and judge whether the original goal was met."
+          "text": "Does the solution work: the same measures as in the test plan.",
+          "example": "Test the final solution with the same measures as before and judge whether the goal set at the start was met.",
+          "output": "Test report.",
+          "guides": [
+            "tvt-tyoselostus"
+          ],
+          "milestone": "Hand-in 4: test report"
         },
         {
-          "title": "Finishing",
+          "title": "Finishing and user guide",
           "text": "Last fixes, appearance and usability.",
-          "example": "Finish it for presentation: a case, labels and instructions that let the user manage without the makers."
+          "example": "Finish it for presentation: a case, labels and a user guide that let the user manage without the makers.",
+          "output": "A finished solution and a user guide.",
+          "guides": []
         },
         {
           "title": "Documentation",
-          "text": "The project's stages, decisions and results into a portfolio.",
-          "example": "Put together a portfolio that tells your decisions and failures honestly; it also serves an upper secondary diploma and applications to further studies."
+          "text": "Project journal, materials list, editable files and sources. Stage 8: documentation.",
+          "example": "Put together a one-page summary from the journal that tells your decisions and failures honestly. It also serves an upper secondary diploma and applications to further studies.",
+          "output": "Summary and files.",
+          "guides": [
+            "ahjo-projektipaivakirja"
+          ]
         },
         {
           "title": "Presentation and assessment",
           "text": "Presenting the project and assessing your own and the group's work.",
-          "example": "Pitch the project to an audience or a partner company and answer questions. Finally, assess your own and the group's work."
+          "example": "Present the project to an audience and make a video of at most one minute. Finally, assess your own and the group's work with the project journal's criteria.",
+          "output": "Presentation, video and self-assessment.",
+          "guides": [
+            "ahjo-projektipaivakirja"
+          ],
+          "milestone": "Hand-in 5: summary and video"
         }
       ],
       "plan_status": "draft"

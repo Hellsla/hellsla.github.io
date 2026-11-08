@@ -78,6 +78,11 @@ for lang in i18n.languages():
         n = len(re.findall(r"<li>", ol.group(1))) if ol else 0
         expect(f"{lang} {c['code']}: the course page has the goals and {n} lessons, each with its picture",
                not c.get("lessons") or (n == len(c["lessons"]) == 16 and ol.group(1).count('class="ahjo-art"') == 16 and 'id="tavoitteet"' in cp))
+        expect(f"{lang} {c['code']}: every lesson says what it produces", not c.get("lessons") or (ol and ol.group(1).count('class="ahjo-lesson-e ahjo-lesson-o"') == 16))
+        hand = [l["milestone"] for l in c.get("lessons", []) if l.get("milestone")]
+        expect(f"{lang} {c['code']}: the hand-ins ({len(hand)}) are marked on their lessons", ol is not None and all(ahjo.esc(h) in ol.group(1) for h in hand) and (c["code"] != "AHJO2" or len(hand) == 5))
+        expect(f"{lang} {c['code']}: the optional deepening is its own section, not in the 16 lessons", bool(c.get("deepening")) == ('id="syventavat"' in cp)
+               and all(ahjo.esc(x["title"]) not in (ol.group(1) if ol else "") for x in c.get("deepening", [])))
         expect(f"{lang} {c['code']}: the course page links Ahjo's materials and safety", f'href="{ahjo.BANK}"' in cp and f'href="{ahjo.SAFETY}"' in cp)
         expect(f"{lang} {c['code']}: the Makerspace licence only where the teacher said so (Ahjo 1)", bool(c.get("license")) == ('class="ahjo-sec ahjo-safety-teaser ahjo-license"' in cp))
     home = (out / "index.html").read_text()
