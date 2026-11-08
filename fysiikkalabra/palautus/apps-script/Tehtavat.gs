@@ -273,15 +273,18 @@ var RL_COURSE = {
    "self": [
     {
      "id": "tavoite-1",
-     "label": "Ymmärrän, miksi voima kertoo vuorovaikutuksen voimakkuudesta ja miten voimamittari sen mittaa."
+     "label": "Ymmärrän, miksi voima kertoo vuorovaikutuksen voimakkuudesta ja miten voimamittari sen mittaa.",
+     "label_en": "I understand why force tells the strength of an interaction and how a force meter measures it."
     },
     {
      "id": "tavoite-2",
-     "label": "Erotan painon ja massan toisistaan myös arkikielessä."
+     "label": "Erotan painon ja massan toisistaan myös arkikielessä.",
+     "label_en": "I can tell weight and mass apart, also in everyday speech."
     },
     {
      "id": "tavoite-3",
-     "label": "Pystyn laskemaan kappaleen painon Maassa ja muilla taivaankappaleilla."
+     "label": "Pystyn laskemaan kappaleen painon Maassa ja muilla taivaankappaleilla.",
+     "label_en": "I can calculate an object's weight on Earth and on other celestial bodies."
     }
    ],
    "title_en": "Force as a measure of interaction and weight G = mg"
@@ -562,15 +565,18 @@ var RL_COURSE = {
    "self": [
     {
      "id": "tavoite-1",
-     "label": "Tunnistan, milloin voima tekee työtä ja milloin ei."
+     "label": "Tunnistan, milloin voima tekee työtä ja milloin ei.",
+     "label_en": "I can recognise when a force does work and when it does not."
     },
     {
      "id": "tavoite-2",
-     "label": "Osaan laskea työn sekä kaavalla että kuvaajan pinta-alana."
+     "label": "Osaan laskea työn sekä kaavalla että kuvaajan pinta-alana.",
+     "label_en": "I can calculate work both with the formula and as the area under a graph."
     },
     {
      "id": "tavoite-3",
-     "label": "Tiedän, mitä teho kertoo, ja osaan verrata kahden laitteen tehoja."
+     "label": "Tiedän, mitä teho kertoo, ja osaan verrata kahden laitteen tehoja.",
+     "label_en": "I know what power tells and can compare the power of two devices."
     }
    ],
    "title_en": "Work and energy"
@@ -843,15 +849,18 @@ var RL_COURSE = {
    "self": [
     {
      "id": "tavoite-1",
-     "label": "Osaan kuvata kaasun tilan lämpötilan, paineen ja tilavuuden avulla."
+     "label": "Osaan kuvata kaasun tilan lämpötilan, paineen ja tilavuuden avulla.",
+     "label_en": "I can describe the state of a gas with its temperature, pressure and volume."
     },
     {
      "id": "tavoite-2",
-     "label": "Ymmärrän hiukkasmallin avulla, mitä paine ja lämpötila ovat."
+     "label": "Ymmärrän hiukkasmallin avulla, mitä paine ja lämpötila ovat.",
+     "label_en": "I understand with the particle model what pressure and temperature are."
     },
     {
      "id": "tavoite-3",
-     "label": "Pystyn perustelemaan, miksi lämpötiloja verrataan kelvineinä."
+     "label": "Pystyn perustelemaan, miksi lämpötiloja verrataan kelvineinä.",
+     "label_en": "I can justify why temperatures are compared in kelvins."
     }
    ],
    "title_en": "Thermodynamic system, state variables and temperature"
@@ -1132,15 +1141,18 @@ var RL_COURSE = {
    "self": [
     {
      "id": "tavoite-1",
-     "label": "Osaan muuttaa mittausaineiston suoraksi ja jatkaa suoraa."
+     "label": "Osaan muuttaa mittausaineiston suoraksi ja jatkaa suoraa.",
+     "label_en": "I can turn measurement data into a straight line and extend it."
     },
     {
      "id": "tavoite-2",
-     "label": "Pystyn määrittämään absoluuttisen nollapisteen omista mittauksistani."
+     "label": "Pystyn määrittämään absoluuttisen nollapisteen omista mittauksistani.",
+     "label_en": "I can determine absolute zero from my own measurements."
     },
     {
      "id": "tavoite-3",
-     "label": "Osaan arvioida tuloksen epävarmuuden jyrkimmän ja loivimman suoran avulla."
+     "label": "Osaan arvioida tuloksen epävarmuuden jyrkimmän ja loivimman suoran avulla.",
+     "label_en": "I can estimate the uncertainty of a result with the steepest and the shallowest line."
     }
    ],
    "title_en": "Determining absolute zero"
@@ -1413,15 +1425,18 @@ var RL_COURSE = {
    "self": [
     {
      "id": "tavoite-1",
-     "label": "Ymmärrän, miten sama voima voi aiheuttaa suuren tai pienen paineen."
+     "label": "Ymmärrän, miten sama voima voi aiheuttaa suuren tai pienen paineen.",
+     "label_en": "I understand how the same force can cause a large or a small pressure."
     },
     {
      "id": "tavoite-2",
-     "label": "Osaan laskea nesteen paineen eri syvyyksillä."
+     "label": "Osaan laskea nesteen paineen eri syvyyksillä.",
+     "label_en": "I can calculate the pressure of a liquid at different depths."
     },
     {
      "id": "tavoite-3",
-     "label": "Pystyn tulkitsemaan paineen ja syvyyden kuvaajasta sekä vakiotermin että kulmakertoimen."
+     "label": "Pystyn tulkitsemaan paineen ja syvyyden kuvaajasta sekä vakiotermin että kulmakertoimen.",
+     "label_en": "I can read both the constant term and the slope of a pressure-depth graph."
     }
    ],
    "title_en": "Pressure and hydrostatic pressure"
@@ -1686,15 +1701,18 @@ var RL_COURSE = {
    "self": [
     {
      "id": "tavoite-1",
-     "label": "Erotan lämmön, työn ja sisäenergian toisistaan."
+     "label": "Erotan lämmön, työn ja sisäenergian toisistaan.",
+     "label_en": "I can tell heat, work and internal energy apart."
     },
     {
      "id": "tavoite-2",
-     "label": "Osaan käyttää termodynamiikan ensimmäistä pääsääntöä energiakirjanpitona."
+     "label": "Osaan käyttää termodynamiikan ensimmäistä pääsääntöä energiakirjanpitona.",
+     "label_en": "I can use the first law of thermodynamics as energy bookkeeping."
     },
     {
      "id": "tavoite-3",
-     "label": "Huomaan, kun arkikielen 'lämpö' tarkoittaa fysiikassa jotain muuta."
+     "label": "Huomaan, kun arkikielen 'lämpö' tarkoittaa fysiikassa jotain muuta.",
+     "label_en": "I notice when the everyday word 'heat' means something else in physics."
     }
    ],
    "title_en": "Internal energy, heat and conservation of energy"
@@ -1959,15 +1977,18 @@ var RL_COURSE = {
    "self": [
     {
      "id": "tavoite-1",
-     "label": "Osaan laskea lämpömäärän, joka lämmittää ainetta."
+     "label": "Osaan laskea lämpömäärän, joka lämmittää ainetta.",
+     "label_en": "I can calculate the heat that warms a substance."
     },
     {
      "id": "tavoite-2",
-     "label": "Ymmärrän, mitä ominaislämpökapasiteetti kertoo aineesta."
+     "label": "Ymmärrän, mitä ominaislämpökapasiteetti kertoo aineesta.",
+     "label_en": "I understand what specific heat capacity tells about a substance."
     },
     {
      "id": "tavoite-3",
-     "label": "Pystyn ratkaisemaan kalorimetrin tasapainolämpötilan energian säilymisen avulla."
+     "label": "Pystyn ratkaisemaan kalorimetrin tasapainolämpötilan energian säilymisen avulla.",
+     "label_en": "I can solve the equilibrium temperature of a calorimeter with energy conservation."
     }
    ],
    "title_en": "Heating and cooling of matter: Q = cmΔT"
@@ -2240,15 +2261,18 @@ var RL_COURSE = {
    "self": [
     {
      "id": "tavoite-1",
-     "label": "Ymmärrän, mihin energia kuluu, kun lämpötila pysyy olomuodon muutoksen ajan vakiona."
+     "label": "Ymmärrän, mihin energia kuluu, kun lämpötila pysyy olomuodon muutoksen ajan vakiona.",
+     "label_en": "I understand where the energy goes when the temperature stays constant during a change of phase."
     },
     {
      "id": "tavoite-2",
-     "label": "Osaan laskea sulamiseen ja höyrystymiseen tarvittavan lämpömäärän."
+     "label": "Osaan laskea sulamiseen ja höyrystymiseen tarvittavan lämpömäärän.",
+     "label_en": "I can calculate the heat needed for melting and vaporisation."
     },
     {
      "id": "tavoite-3",
-     "label": "Tunnistan lämpenemiskäyrästä olomuodon muutoksen vaiheet."
+     "label": "Tunnistan lämpenemiskäyrästä olomuodon muutoksen vaiheet.",
+     "label_en": "I can recognise the stages of a change of phase in a heating curve."
     }
    ],
    "title_en": "Changes of state"
@@ -2513,15 +2537,18 @@ var RL_COURSE = {
    "self": [
     {
      "id": "tavoite-1",
-     "label": "Ymmärrän, miksi jää viilentää juomaa niin tehokkaasti."
+     "label": "Ymmärrän, miksi jää viilentää juomaa niin tehokkaasti.",
+     "label_en": "I understand why ice cools a drink so effectively."
     },
     {
      "id": "tavoite-2",
-     "label": "Pystyn päättelemään lämpömääriä vertaamalla, sulaako kaikki jää."
+     "label": "Pystyn päättelemään lämpömääriä vertaamalla, sulaako kaikki jää.",
+     "label_en": "I can decide by comparing amounts of heat whether all the ice melts."
     },
     {
      "id": "tavoite-3",
-     "label": "Osaan laskea tasapainolämpötilan, kun osa aineesta sulaa."
+     "label": "Osaan laskea tasapainolämpötilan, kun osa aineesta sulaa.",
+     "label_en": "I can calculate the equilibrium temperature when part of a substance melts."
     }
    ],
    "title_en": "Thermal balance during a change of state"
@@ -2802,15 +2829,18 @@ var RL_COURSE = {
    "self": [
     {
      "id": "tavoite-1",
-     "label": "Pystyn selittämään hiukkasmallilla, miksi kiinteä aine laajenee lämmetessään."
+     "label": "Pystyn selittämään hiukkasmallilla, miksi kiinteä aine laajenee lämmetessään.",
+     "label_en": "I can explain with the particle model why a solid expands when it warms."
     },
     {
      "id": "tavoite-2",
-     "label": "Osaan suunnitella kokeen, jolla selvitän, mistä pituuden muutos riippuu."
+     "label": "Osaan suunnitella kokeen, jolla selvitän, mistä pituuden muutos riippuu.",
+     "label_en": "I can plan an experiment to find out what the change in length depends on."
     },
     {
      "id": "tavoite-3",
-     "label": "Osaan laskea kappaleen pituuden ja tilavuuden muutoksen."
+     "label": "Osaan laskea kappaleen pituuden ja tilavuuden muutoksen.",
+     "label_en": "I can calculate the change in an object's length and volume."
     }
    ],
    "title_en": "Thermal expansion"
@@ -3091,15 +3121,18 @@ var RL_COURSE = {
    "self": [
     {
      "id": "tavoite-1",
-     "label": "Osaan käyttää Boylen lakia isotermisessä tilanmuutoksessa."
+     "label": "Osaan käyttää Boylen lakia isotermisessä tilanmuutoksessa.",
+     "label_en": "I can use Boyle's law in an isothermal process."
     },
     {
      "id": "tavoite-2",
-     "label": "Pystyn osoittamaan kuvaajan avulla, että paine on kääntäen verrannollinen tilavuuteen."
+     "label": "Pystyn osoittamaan kuvaajan avulla, että paine on kääntäen verrannollinen tilavuuteen.",
+     "label_en": "I can show with a graph that pressure is inversely proportional to volume."
     },
     {
      "id": "tavoite-3",
-     "label": "Ymmärrän, miten kaasun tilavuus riippuu kelvinlämpötilasta."
+     "label": "Ymmärrän, miten kaasun tilavuus riippuu kelvinlämpötilasta.",
+     "label_en": "I understand how the volume of a gas depends on its kelvin temperature."
     }
    ],
    "title_en": "Changes of state of a gas and Boyle's law"
@@ -3396,15 +3429,18 @@ var RL_COURSE = {
    "self": [
     {
      "id": "tavoite-1",
-     "label": "Pystyn päättelemään paineesta, tilavuudesta ja lämpötilasta, kuinka paljon kaasua on."
+     "label": "Pystyn päättelemään paineesta, tilavuudesta ja lämpötilasta, kuinka paljon kaasua on.",
+     "label_en": "I can infer from pressure, volume and temperature how much gas there is."
     },
     {
      "id": "tavoite-2",
-     "label": "Osaan käyttää ideaalikaasun tilanyhtälöä."
+     "label": "Osaan käyttää ideaalikaasun tilanyhtälöä.",
+     "label_en": "I can use the ideal gas law."
     },
     {
      "id": "tavoite-3",
-     "label": "Ymmärrän kaasun paineen hiukkasten törmäyksinä astian seiniin."
+     "label": "Ymmärrän kaasun paineen hiukkasten törmäyksinä astian seiniin.",
+     "label_en": "I understand gas pressure as particles colliding with the walls."
     }
    ],
    "title_en": "Ideal gas law pV = nRT"
@@ -3677,15 +3713,18 @@ var RL_COURSE = {
    "self": [
     {
      "id": "tavoite-1",
-     "label": "Osaan laskea laajenevan kaasun työn ja nähdä sen kuvaajan pinta-alana."
+     "label": "Osaan laskea laajenevan kaasun työn ja nähdä sen kuvaajan pinta-alana.",
+     "label_en": "I can calculate the work of an expanding gas and see it as the area under a graph."
     },
     {
      "id": "tavoite-2",
-     "label": "Ymmärrän, miksi lämpövoimakone ei voi muuttaa kaikkea lämpöä työksi."
+     "label": "Ymmärrän, miksi lämpövoimakone ei voi muuttaa kaikkea lämpöä työksi.",
+     "label_en": "I understand why a heat engine cannot turn all heat into work."
     },
     {
      "id": "tavoite-3",
-     "label": "Osaan laskea lämpövoimakoneen hyötysuhteen."
+     "label": "Osaan laskea lämpövoimakoneen hyötysuhteen.",
+     "label_en": "I can calculate the efficiency of a heat engine."
     }
    ],
    "title_en": "Work done by a gas and the heat engine"
@@ -3966,15 +4005,18 @@ var RL_COURSE = {
    "self": [
     {
      "id": "tavoite-1",
-     "label": "Osaan laskea voimalaitoksen ketjun hyötysuhteen vaiheiden hyötysuhteista."
+     "label": "Osaan laskea voimalaitoksen ketjun hyötysuhteen vaiheiden hyötysuhteista.",
+     "label_en": "I can calculate the efficiency of a power plant chain from the efficiencies of its stages."
     },
     {
      "id": "tavoite-2",
-     "label": "Tiedän, missä lauhdevoimalaitoksen suurin energiahäviö syntyy."
+     "label": "Tiedän, missä lauhdevoimalaitoksen suurin energiahäviö syntyy.",
+     "label_en": "I know where the largest energy loss of a condensing power plant occurs."
     },
     {
      "id": "tavoite-3",
-     "label": "Ymmärrän, miksi yhteistuotanto hyödyntää polttoaineen paremmin."
+     "label": "Ymmärrän, miksi yhteistuotanto hyödyntää polttoaineen paremmin.",
+     "label_en": "I understand why combined heat and power makes better use of the fuel."
     }
    ],
    "title_en": "Energy production and the efficiency of power plants"
@@ -4247,15 +4289,18 @@ var RL_COURSE = {
    "self": [
     {
      "id": "tavoite-1",
-     "label": "Tunnistan johtumisen, konvektion ja lämpösäteilyn arjen tilanteista."
+     "label": "Tunnistan johtumisen, konvektion ja lämpösäteilyn arjen tilanteista.",
+     "label_en": "I can recognise conduction, convection and thermal radiation in everyday situations."
     },
     {
      "id": "tavoite-2",
-     "label": "Osaan laskea seinän tai ikkunan läpi johtuvan lämpötehon."
+     "label": "Osaan laskea seinän tai ikkunan läpi johtuvan lämpötehon.",
+     "label_en": "I can calculate the heat flow through a wall or a window."
     },
     {
      "id": "tavoite-3",
-     "label": "Pystyn selittämään kasvihuoneilmiön energiatasapainon avulla."
+     "label": "Pystyn selittämään kasvihuoneilmiön energiatasapainon avulla.",
+     "label_en": "I can explain the greenhouse effect with the energy balance."
     }
    ],
    "title_en": "Heat transfer, energy balance and climate change"
@@ -4528,15 +4573,18 @@ var RL_COURSE = {
    "self": [
     {
      "id": "tavoite-1",
-     "label": "Pystyn kokoamaan useasta lämpöilmiöstä yhden energiakirjanpidon."
+     "label": "Pystyn kokoamaan useasta lämpöilmiöstä yhden energiakirjanpidon.",
+     "label_en": "I can combine several heat phenomena into one energy balance."
     },
     {
      "id": "tavoite-2",
-     "label": "Osaan perustella, kuluuko energia lämpenemiseen vai olomuodon muutokseen."
+     "label": "Osaan perustella, kuluuko energia lämpenemiseen vai olomuodon muutokseen.",
+     "label_en": "I can justify whether energy goes into warming or into a change of phase."
     },
     {
      "id": "tavoite-3",
-     "label": "Uskallan tarttua monivaiheiseen arjen lämpötehtävään."
+     "label": "Uskallan tarttua monivaiheiseen arjen lämpötehtävään.",
+     "label_en": "I dare to take on a multi-step everyday heat problem."
     }
    ],
    "title_en": "Applied lesson: heat phenomena in everyday life"

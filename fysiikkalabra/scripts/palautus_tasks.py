@@ -175,7 +175,15 @@ def collect(course):
             # teacher 2026-11-06: "Käsitetehtävä 1" tells too little, so a task's item carries its own title and question
             self_items = pg.evaluate(SELF_ITEMS)
             ch = {"id": pid, "number": (int(m.group(1)) if m.group(1).isdigit() else m.group(1)) if m else int(pid.split("-")[1]), "title": re.sub(r"\s+", " ", title).replace("\\Delta ", "Δ").replace("\\Delta", "Δ"), "tasks": tasks}
-            if self_items: ch["self"] = self_items
+            if self_items:
+                # the goals' English wording from the English page (teacher 2026-11-08: the group's fingerprint in fi and en)
+                enp = SITE / "en" / f"{pid}.html"
+                if enp.is_file():
+                    import html as _h
+                    en_lab = {m.group(1): _h.unescape(m.group(2)) for m in re.finditer(r'<fieldset class="sa-rate[^"]*"[^>]*data-sa="(tavoite-\d+)" data-label="([^"]*)"', enp.read_text())}
+                    for it in self_items:
+                        if it["id"] in en_lab: it["label_en"] = en_lab[it["id"]]
+                ch["self"] = self_items
             en = EN_TITLES.get(course, {}).get(pid)   # the chapter's English name for the grading page's EN view (teacher 2026-11-08)
             if en: ch["title_en"] = re.sub(r"\s+", " ", re.sub(r"\$([^$]*)\$", r"\1", en)).replace("\\Delta ", "Δ").replace("\\Delta", "Δ").strip()
             chapters.append(ch)
