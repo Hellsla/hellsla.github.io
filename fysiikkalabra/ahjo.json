@@ -571,9 +571,13 @@
       "category": "dokumentointi",
       "title": "Projektipäiväkirja",
       "text": "Ideat, päätökset, testit ja muutokset talteen projektin aikana.",
-      "status": "planned",
+      "status": "draft",
       "courses": [
-        "AHJO2"
+        "AHJO2",
+        "KILPAROBO"
+      ],
+      "subjects": [
+        "lukiodiplomit"
       ]
     }
   ],

@@ -570,9 +570,13 @@
       "category": "dokumentointi",
       "title": "Project journal",
       "text": "Keeping ideas, decisions, tests and changes during a project.",
-      "status": "planned",
+      "status": "draft",
       "courses": [
-        "AHJO2"
+        "AHJO2",
+        "KILPAROBO"
+      ],
+      "subjects": [
+        "upper secondary diplomas"
       ]
     }
   ],
