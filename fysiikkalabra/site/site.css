@@ -1526,3 +1526,11 @@ main.ahjo-page{max-width:68rem;font-family:var(--ahjo-text)}
 .ahjo-lesson-t{font-weight:700;color:var(--kr-navy)}.ahjo-lesson-x{color:var(--ink-2)}
 .ahjo-courses{align-items:start}
 .ahjo-lesson-e{display:block;margin:.15rem 0 .1rem;padding-left:.6rem;border-left:3px solid var(--kr-pink);color:var(--ink)}
+/* the section's illustrations (scripts/ahjo_art.py, teacher 2026-11-08): one atop each course card, one beside each bank topic */
+.ahjo-art{display:block;width:100%;height:auto}
+.ahjo-course-art{margin:-.35rem -.5rem .8rem}
+.ahjo-cat-top{display:grid;grid-template-columns:minmax(0,1fr);gap:.25rem 1.5rem;align-items:center}
+.ahjo-cat-top h2{display:flex;align-items:center;gap:.6rem;margin:0 0 .35rem;font-size:1.5rem;font-weight:900;line-height:1.2}
+.ahjo-cat-top h2>.ahjo-icon{color:var(--kr-navy)}
+.ahjo-cat-art{max-width:200px;margin:0 0 .75rem}
+@media (min-width:40rem){.ahjo-cat-top{grid-template-columns:minmax(0,1fr) 200px}.ahjo-cat-art{margin:0}}

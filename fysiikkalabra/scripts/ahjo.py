@@ -71,6 +71,14 @@ ICONS = {
 }
 
 
+ART = ROOT / "assets/shared/ahjo"   # the section's illustrations (scripts/ahjo_art.py), inlined
+
+
+def art(name):
+    f = ART / f"{name}.svg"
+    return f.read_text().strip() if f.is_file() else ""
+
+
 def icon(name, cls="ahjo-icon"):
     return (f'<svg class="{cls}" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">'
             f'<path d="{ICONS[name]}"/></svg>')
@@ -245,7 +253,7 @@ def start_body(d, planned, local, modules, ref):
         status = u["course_status_ready"] if href else u["course_status_planned"]
         head = f'<a href="{href}">{esc(title)}</a>' if href else esc(title)
         cards.append(f'<article class="ahjo-course" id="{c["code"].lower()}" aria-labelledby="h-{c["code"].lower()}">'
-                     f'<div class="ahjo-course-head"><h3 id="h-{c["code"].lower()}"><span class="ahjo-course-name">{head}</span>'
+                     f'<div class="ahjo-course-art">{art(c["code"].lower())}</div><div class="ahjo-course-head"><h3 id="h-{c["code"].lower()}"><span class="ahjo-course-name">{head}</span>'
                      f'<span class="ahjo-course-sub">{esc(c["subtitle"])}</span></h3>'
                      f'<p class="ahjo-badge{"" if href else " planned"}">{esc(status)}</p></div>'
                      f'<p class="ahjo-course-text">{esc(text)}</p>'
@@ -335,7 +343,8 @@ def bank_body(d, planned, local, modules, ref):
                          f'<p class="ahjo-res-text">{esc(e["text"])}</p>' + "".join(f'<p class="ahjo-res-meta">{m}</p>' for m in meta) + '</li>')
         body = f'<ul class="ahjo-res-list">{"".join(items)}</ul>' if items else f'<p class="ahjo-empty">{esc(u["bank_none"])}</p>'
         secs.append(f'<section class="ahjo-sec ahjo-cat" id="{c["id"]}" aria-labelledby="h-cat-{c["id"]}">'
-                    f'<h2 id="h-cat-{c["id"]}">{icon(c["icon"])}{esc(c["title"])}</h2><p class="ahjo-sec-lead">{esc(c["text"])}</p>{body}</section>')
+                    f'<div class="ahjo-cat-top"><div><h2 id="h-cat-{c["id"]}">{icon(c["icon"])}{esc(c["title"])}</h2><p class="ahjo-sec-lead">{esc(c["text"])}</p></div>'
+                    f'<div class="ahjo-cat-art">{art(c["id"])}</div></div>{body}</section>')
     return hero(d, u["bank_h"], u["bank_page_lead"], BANK) + "".join(secs)
 
 
