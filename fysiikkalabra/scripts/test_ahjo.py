@@ -94,6 +94,11 @@ for lang in i18n.languages():
         sh = m.find('class="ahjo-sec ahjo-shared"')
         expect(f"{lang} {c['code']}: Ahjo's shared pages come first on the course page", 0 < sh < min(x for x in (m.find('class="ahjo-sec ahjo-safety-teaser'), m.find('id="tavoitteet"')) if x > 0)
                and all(f'href="{h}"' in m[sh:sh + 4000] for h in (ahjo.PAGE, ahjo.BANK, ahjo.SAFETY)))
+expect("the header's Ruukkilabra symbol in Kiviruukin lukio's colours is up to date", ahjo.SITE_MARK_KR.is_file() and ahjo.SITE_MARK_KR.read_text() == ahjo.site_mark_kiviruukki())
+for lang in i18n.languages():
+    out = SITE if lang == i18n.SOURCE else SITE / lang
+    h = (out / ahjo.PAGE).read_text()
+    expect(f"{lang}: the Ahjo pages' header symbol is in Kiviruukin lukio's colours", "ruukkilabra-symboli-kiviruukki.svg" in h[:h.find("</header>")] and 'brand-mark" src="brand/ruukkilabra-symboli.svg' not in h)
 expect("the mark is cut from the original logo unchanged (scripts/ahjo_art.py writes it)", ahjo.MARK.is_file() and ahjo.MARK.read_text() == ahjo.mark_svg())
 
 # browser: widths and keyboard
