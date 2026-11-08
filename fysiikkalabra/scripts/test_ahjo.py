@@ -25,6 +25,9 @@ for lang in i18n.languages():
         if not f.is_file(): continue
         html = f.read_text()
         main = html[html.find("<main"):html.find("</main>")]
+        head = html[:html.find("</head>")]
+        expect(f"{lang} {name}: Ahjo's mark as the tab icon, not Ruukkilabra's", "ruukkilabra-32.png" not in head and "ruukkilabra-symboli.svg" not in head
+               and all(re.search(rf'href="(?:\.\./)*{re.escape(i)}"', head) and (SITE / i).is_file() for i in ahjo.TAB_ICONS.values()))
         expect(f"{lang} {name}: the original logo with its name as alt", re.search(r'<img class="ahjo-logo" src="(?:\.\./)?brand/ahjo-makerspace-logo\.svg" alt="[^"]+"', main) is not None)
         expect(f"{lang} {name}: the section's navigation marks this page", f'aria-current="page"' in main and 'class="ahjo-nav"' in main)
         expect(f"{lang} {name}: no laser cutter or CNC anywhere", not ahjo.FORBIDDEN.search(re.sub(r"<[^>]+>", " ", main)))

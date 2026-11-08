@@ -1420,7 +1420,7 @@ def build_language(lang):
             pages.append((f"{g}.html", r["title"], ahjo.guide_body(ahjo_data, g, lang, render_md),
                           home_crumb + f'<a href="{ahjo.BANK}">{esc(u["bank_h"])}</a> › ' + esc(r["title"]), r["text"]))
         for name, title, body, crumbs, desc in pages:
-            (out / name).write_text(page(title, body, crumbs, name, desc, main_class="reading ahjo-page"))
+            (out / name).write_text(ahjo.tab_icons(page(title, body, crumbs, name, desc, main_class="reading ahjo-page")))
             ahjo_built.append(name)
     # Tietosuoja (teacher 2026-11-04): content/<lang>/tietosuoja.md (the Finnish where a language has none), linked from every footer
     priv_md = next((f for f in (ROOT / "content" / lang / "tietosuoja.md", ROOT / "content" / i18n.SOURCE / "tietosuoja.md") if f.is_file()), None)
