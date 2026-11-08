@@ -10,7 +10,7 @@ For every language, from the pages that are actually in site/ (so nothing here h
   - every row is one link, to its module page, with icon, code, title and the Miksi question (whole in its title),
     the arrow hidden from screen readers; the module page's lesson links all resolve (two clicks to a lesson)
   - the <title>, og:title and description stay as they were; the header links Näin opiskelet and Sivustosta (the study guide, now at
-    its own page nain-opiskelet.html since 2026-11-04, with the six stages under the lessons' names) and the footer Sivustosta (the teacher's text,
+    its own page nain-opiskelet.html since 2026-11-04, renewed 2026-11-08: three parts and the problem-solving map) and the footer Sivustosta (the teacher's text,
     content/<lang>/tietoa.md); no page links to the teacher's portfolio (teacher 2026-11-04)
   - every language link resolves, and a link to a page the other language has not published goes to that
     language's module page, to a note that exists there
@@ -133,11 +133,23 @@ for lang in i18n.languages():
     expect(f"{lang}: Sivustosta shows the teacher's text (content/{lang}/tietoa.md) with all its headings and bold parts",
            bool(heads) and all(_h.escape(h) in about for h in heads) and about.count("<strong>") == src.read_text().count("**") // 2, heads)
     rp = (out / "lukuvinkit.html").read_text(); sp = (out / "nain-opiskelet.html").read_text() if (out / "nain-opiskelet.html").is_file() else ""
-    guide = re.search(r'<main[^>]*><section class="path" id="nain-opiskelet".*?</section></main>', sp, re.S)
-    stages = re.findall(r"<li><strong>(.*?)</strong>", guide.group(0)) if guide else []
-    expect(f"{lang}: nain-opiskelet.html holds only the study guide: the six stages under the lessons' names and the more tips (teacher 2026-11-04)",
-           stages == [T("inquiry.stage_" + k) for k in ["herata", "ennusta", "tutki", "selita", "sovella", "tarkista"]] and 'class="more-tips"' in guide.group(0), stages)
-    expect(f"{lang}: Lukuvinkit holds only the books, no study guide (teacher 2026-11-04)", 'class="path"' not in rp and "more-tips" not in rp)
+    main_sp = re.search(r'<main[^>]*>(.*?)</main>', sp, re.S); main_sp = main_sp.group(1) if main_sp else ""
+    heads = re.findall(r'<h2 id="h-[a-z]+">([^<]*)</h2>', main_sp)
+    expect(f"{lang}: nain-opiskelet.html: Näin opit fysiikkaa with its three parts in order (teacher 2026-11-08)",
+           f'<h1 id="h-study">{_h.escape(T("guide.title"))}</h1>' in main_sp and heads == [_h.escape(T("guide." + k)) for k in ("start_h", "stuck_h", "tips_h")], heads)
+    chips = re.findall(r'<span class="study-chip"><span class="study-chip-no" aria-hidden="true">(\d)</span>([^<]*)</span>', main_sp)
+    expect(f"{lang}: the four steps name the chapter stages as a lesson's stage bar numbers them",
+           main_sp.count('<li><h3>') >= 4 and chips == [(str(n), _h.escape(x)) for n, x in zip(range(1, 7), [T("inquiry.stage_" + k) for k in ["herata", "ennusta", "tutki", "selita", "sovella"]] + [T("lesson.exercises")])], chips)
+    ways = re.search(r'<ul class="stuck-ways">(.*?)</ul>', main_sp, re.S)
+    expect(f"{lang}: the problem-solving map: the question, four ways in an unordered list, the retry card; its lines are decorative",
+           'class="stuck-q"' in main_sp and ways and ways.group(1).count("<li>") == 4 and 'class="stuck-retry"' in main_sp
+           and all('aria-hidden="true"' in m for m in re.findall(r'<svg class="stuck-lines[^>]*>', main_sp)))
+    expect(f"{lang}: five study tips and the link to the front page's module list",
+           len(re.findall(r'<li><svg class="study-icon"', main_sp.split('class="study-tips"')[-1])) == 5 and '<a class="study-cta" href="index.html#moduulit">' in main_sp)
+    expect(f"{lang}: every page's header links Näin opiskelet; on its own page it is marked current (teacher 2026-11-08)",
+           '<a class="nav-study" aria-current="page" href="nain-opiskelet.html">' in sp
+           and not [p.name for p in out.glob("*.html") if '<header class="top">' in p.read_text() and 'class="nav-study"' not in p.read_text()])
+    expect(f"{lang}: Kirjavinkit (lukuvinkit.html) holds only the books, no study guide (teacher 2026-11-04)", "study-steps" not in rp and "stuck-map" not in rp)
     local = local_courses.load(lang); everywhere = local_courses.load()
     sec = re.search(r'<ul class="mod-list local-list">(.*?)</ul>', home, re.S)
     if local:

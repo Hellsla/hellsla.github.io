@@ -176,11 +176,11 @@ def progress_view(themes, given, block):
     strings = {k: v for k, v in T("js").items() if k.startswith(("done_", "progress_", "palautus_", "work_", "selfmap_"))}
     strings.update({k: v for k, v in T("inquiry").items() if k in ("sa_a", "sa_b", "sa_c", "sa_d", "sa_x", "sa_x_short")})
     prog = (f'<section class="my-progress" id="oma-eteneminen" hidden><h2>{T("js.progress_title")}</h2>'
-            '<p class="pm-count" aria-live="polite"></p><div class="pm-bar" role="progressbar" aria-valuemin="0"><span></span></div>'
+            '<p class="pm-count visually-hidden" aria-live="polite"></p><div class="pm-bar" role="progressbar" aria-valuemin="0"><span></span></div>'
             f'<div class="pm-graph" role="group" aria-label="{T("js.progress_graph")}"><div class="pm-chart"></div></div>'
             f'<p class="pm-note">{T("js.progress_note" if given else "js.progress_note_all")}</p></section>')
     mine = (f'<section class="my-selfmap" id="oma-itsearvio" data-themes="{esc(json.dumps(themes, ensure_ascii=False))}" hidden><h2>{T("js.selfmap_title")}</h2>'
-            '<p class="sm-count" aria-live="polite"></p><div class="sm-map"></div></section>')
+            '<p class="sm-count visually-hidden" aria-live="polite"></p><div class="sm-map"></div></section>')
     # the button on one row with Tallenna työ tiedostoon and Avaa tallennettu työ (teacher 2026-11-08); it opens the
     # details below (its own summary hidden), so the work buttons stay beside it
     return (f'<div class="my-top"><button type="button" class="my-toggle" aria-expanded="false" aria-controls="omat-tiedot" hidden>{T("js.progress_show")}</button></div>'
@@ -221,6 +221,46 @@ def local_progress(code, c, lang):
 
 
 def forms_title(): return T("site.returns_title", period=FORMS["period"], year=FORMS["year"])
+
+
+def grading_file():
+    """The running period's local grading page (palautus/arviointi-<year>-p<n>.html, scripts/palautus_tasks.py), the
+    newest by name; None when there is none."""
+    fs = sorted((ROOT / "palautus").glob("arviointi-*.html"))
+    return fs[-1] if fs else None
+
+
+def teacher_page_body(name):
+    """Työkalut (teacher 2026-11-08; in English too, teacher 2026-11-08 "tee työkalusivu myös enkuksi"): the classroom
+    screen and the newest grading tool to download and the steps in short, texts in lang/<lang>.json "teacher". No
+    student data: the tool reads the Drive zip on the teacher's own computer and keeps the points in that browser."""
+    pal = f'<a href="{FORMS_PAGE}">{esc(forms_title())}</a>' if FORMS else esc(T("teacher.returns_page"))
+    screen = (TOOLS / "luokkanaytto.html").is_file()
+    return (f'<h1>{esc(T("teacher.title"))}</h1>'
+            f'<p class="lead">{esc(T("teacher.lead"))}</p>'
+            + (f'<section class="teacher-tool"><h2>{esc(T("teacher.screen_h"))}</h2>'
+               f'<p><a class="pad-btn" href="tyokalut/luokkanaytto.html">{esc(T("teacher.screen_open"))}</a></p></section>' if screen else '')
+            + f'<section class="teacher-tool"><h2>{esc(T("teacher.grading_h"))}</h2>'
+            f'<p>{esc(T("teacher.grading_p"))}</p>'
+            f'<p><a class="pad-btn teacher-download" href="tyokalut/{esc(name)}" download="{esc(name)}">{esc(T("teacher.download", name=name))}</a></p>'
+            f'<p>{esc(T("teacher.update_p"))}</p></section>'
+            f'<section class="teacher-steps"><h2>{esc(T("teacher.steps_h"))}</h2><ol>'
+            + "".join(f'<li>{T(f"teacher.step_{i}", returns=pal)}</li>' for i in range(1, 6)) + '</ol></section>'   # the steps keep their <i> and <b>
+            + teacher_examples())
+
+
+SHOTS = [("opiskelija", 1600, 702), ("opettaja-kooste", 1190, 1140), ("opettaja-arviointi", 1600, 594)]   # captions: lang "teacher.shot_<name>"
+
+
+def teacher_examples():
+    """Example screenshots (teacher 2026-11-08): a student after six weeks and the grading view with 30 made-up students."""
+    figs = []
+    for name, w, h in SHOTS:
+        if not (TOOLS / "kuvat" / f"{name}.webp").is_file(): continue
+        cap = T(f"teacher.shot_{name}")
+        figs.append(f'<figure class="teacher-shot"><img src="tyokalut/kuvat/{name}.webp" width="{w}" height="{h}" loading="lazy" '
+                    f'alt="{esc(cap)}"><figcaption>{esc(cap)}</figcaption></figure>')
+    return f'<section class="teacher-examples"><h2>{esc(T("teacher.examples_h"))}</h2>{"".join(figs)}</section>' if figs else ''
 
 
 def return_title(code):
@@ -402,7 +442,10 @@ def plain_tex(s):
 
 def texts(html):
     """{{t:site.footer}} in a template -> the text in the language being built (lang/<lang>.json)."""
-    return re.sub(r"\{\{t:([\w.]+)\}\}", lambda m: esc(T(m.group(1))), html)
+    html = re.sub(r"\{\{t:([\w.]+)\}\}", lambda m: esc(T(m.group(1))), html)
+    if grading_file():   # Työkalut in every language's footers (teacher 2026-11-08)
+        html = html.replace('<a href="tietosuoja.html">', f'<a href="{TEACHER_PAGE}">{esc(T("site.tools"))}</a><a href="tietosuoja.html">', 1)
+    return html
 
 
 # Modules the front page still lists dimmed under Tulossa although some of their chapters are published (teacher
@@ -429,15 +472,16 @@ def planned_row(p):
 
 
 ABOUT = "tietoa.html"
+TEACHER_PAGE = "tyokalut.html"   # Työkalut (teacher 2026-11-08): the newest local grading page and the classroom screen, in every language
+TOOLS = ROOT / "tyokalut"        # the classroom screen and its libraries (luokkanaytto.html, lib/), copied to site/tyokalut/
 PRIVACY = "tietosuoja.html"   # Tietosuoja (teacher 2026-11-04): no student data, no cookies, what the browser keeps and why
 
 
 def front_chrome(html):
-    """The front page's own header and footer (teacher 2026-11-03): Näin opiskelet beside Moduulit and Lukuvinkit and
-    Sivustosta after them (2026-11-04); its footer is only Ruukkilabra and Tietosuoja like every page's (2026-11-04). No Moduulit link in its header:
-    the front page is the module list (teacher 2026-11-04)."""
+    """The front page's own header and footer (teacher 2026-11-03): no Moduulit link in its header, as the front page is
+    the module list (teacher 2026-11-04), and Sivustosta after Vihkot (2026-11-04); its footer is only Ruukkilabra and
+    Tietosuoja like every page's (2026-11-04). Näin opiskelet is in every page's header (templates, teacher 2026-11-08)."""
     html = re.sub(r'<a class="nav-modules" [^>]*>[^<]*</a>', "", html, count=1)
-    html = html.replace('<a class="nav-reading"', f'<a class="nav-study" href="{STUDY_PAGE}">{esc(T("site.study"))}</a><a class="nav-reading"', 1)
     html = html.replace(f'{esc(T("site.booklets"))}</a>', f'{esc(T("site.booklets"))}</a><a class="nav-about" href="{ABOUT}">{esc(T("site.about"))}</a>', 1)   # Sivustosta in the header too (teacher 2026-11-04)
     return html
 
@@ -445,15 +489,64 @@ def front_chrome(html):
 STUDY_ID = "nain-opiskelet"
 STUDY_PAGE = STUDY_ID + ".html"   # a page of its own (teacher 2026-11-04: Lukuvinkit only the books, Näin opiskelet only the study tips)
 
+# Line icons of the study guide (teacher 2026-11-08): 24 x 24, drawn with the text colour, never the only carrier of a meaning.
+STUDY_ICONS = {
+    "draw": "M4 20l1-4.2L15.6 5.2a2.1 2.1 0 0 1 3 3L8.2 19zM13.6 7.2l3 3",
+    "theory": "M12 6.5C9.5 4.8 6.5 4.6 3.5 5.5v13c3-.9 6-.7 8.5 1 2.5-1.7 5.5-1.9 8.5-1v-13c-3-.9-6-.7-8.5 1zM12 6.5v13",
+    "hint": "M9.5 18h5M10.5 21h3M12 3a6 6 0 0 0-3.6 10.8c.7.6 1.1 1.3 1.1 2.1h5c0-.8.4-1.5 1.1-2.1A6 6 0 0 0 12 3z",
+    "talk": "M4 4.5h10a1 1 0 0 1 1 1V11a1 1 0 0 1-1 1H8.5L5 15v-3H4a1 1 0 0 1-1-1V5.5a1 1 0 0 1 1-1zM18 8.5h2a1 1 0 0 1 1 1V15a1 1 0 0 1-1 1h-1v3l-3.5-3H11a1 1 0 0 1-1-1v-1",
+    "retry": "M19.5 12.5a7.5 7.5 0 1 1-2.2-5.8M19.5 3.5v4.8h-4.8",
+    "graph": "M4 3.5v16.5h16.5M7 16.5c2.5 0 3.5-8.5 6.5-8.5s3 5 6 5",
+    "explain": "M5 4.5h14a1 1 0 0 1 1 1v9.5a1 1 0 0 1-1 1h-7.5L7 19.5V16H5a1 1 0 0 1-1-1V5.5a1 1 0 0 1 1-1zM8 8.5h8M8 12h5",
+    "calc": "M6.5 3h11a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM8.5 6.5h7v3h-7zM9 13.5h.01M12 13.5h.01M15 13.5h.01M9 17h.01M12 17h.01M15 17h.01",
+    "together": "M9 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15.5 5.2a3 3 0 0 1 0 5.6M17 14.3c2.3.6 4 2.8 4 5.7",
+    "review": "M5 5h14a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zM4 9.5h16M8 3v4M16 3v4M8 13.5h.01M12 13.5h.01M16 13.5h.01M8 17h.01M12 17h.01",
+}
+STUDY_WAYS = ["draw", "theory", "hint", "talk"]                  # lang guide.ways in this order
+STUDY_TIPS = ["graph", "explain", "calc", "together", "review"]   # lang guide.tips in this order
+# Each getting-started step shows the stages of a chapter it means, numbered as in a lesson's stage bar (Pohdinta 1 ...
+# Itsearvio 7, the exercises sixth): the guide speaks the lessons' own words (inquiry.stage_*, lesson.exercises).
+STUDY_STEP_STAGES = [[1, 2, 3], [4], [5], [6]]
+
+
+def study_icon(name, cls="study-icon"):
+    return (f'<svg class="{cls}" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">'
+            f'<path d="{STUDY_ICONS[name]}"/></svg>')
+
 
 def study_guide():
-    """Näin opiskelet Ruukkilabrassa (moved from the front page 2026-11-03; its own page nain-opiskelet.html, teacher 2026-11-04): the six
-    stages with the names the lessons use (lang inquiry.stage_*), where to start, more tips behind a disclosure."""
-    stages = "".join(f'<li><strong>{T("inquiry.stage_" + k)}</strong><span>{T("site.home_path_" + k)}</span></li>' for k in inquiry.STAGE_IDS)
-    return (f'<section class="path" id="{STUDY_ID}" aria-labelledby="h-path"><h1 id="h-path">{T("site.home_path")}</h1>'
-            f'<p class="section-lead">{T("site.home_start_lead")}</p><ol class="path-steps">{stages}</ol>'
-            f'<details class="more-tips"><summary>{T("site.home_start_more")}</summary><ul>'
-            + "".join(f"<li>{esc(x)}</li>" for x in T("site.home_start_items")) + '</ul></details></section>')
+    """Näin opit fysiikkaa, nain-opiskelet.html (teacher 2026-11-08, "Näin opiskelet -sivun uudistaminen"; its own page
+    since 2026-11-04): three parts. Näin pääset alkuun: four numbered steps, each with the chapter stages it means as
+    the lesson's stage chips. Jäikö tehtävä jumiin?: a problem-solving map, the question, four ways out side by side
+    (HTML cards, so the text reflows) joined by quiet SVG lines to Yritä uudelleen itse; below 50rem the same map is a
+    vertical rail, the lines' SVGs hidden. The ways are a <ul>: no order, help may be asked at once. Viisi vinkkiä:
+    five short tips with line icons. Then the closing line and a link to the front page's module list."""
+    g = lambda k: T("guide." + k)
+    names = [T("inquiry.stage_" + k) for k in inquiry.STAGE_IDS[:5]] + [T("lesson.exercises")]
+    def chips(nums):
+        return (f'<p class="study-where"><span class="visually-hidden">{esc(g("where"))}: </span>'
+                + "".join(f'<span class="study-chip"><span class="study-chip-no" aria-hidden="true">{n}</span>{esc(names[n - 1])}</span>' for n in nums) + '</p>')
+    steps = "".join(f'<li><h3>{esc(s["title"])}</h3><p>{esc(s["text"])}</p>{chips(nums)}</li>'
+                    for s, nums in zip(g("steps"), STUDY_STEP_STAGES))
+    ways = "".join(f'<li>{study_icon(k)}<h3>{esc(w["title"])}</h3><p>{esc(w["text"])}</p></li>' for k, w in zip(STUDY_WAYS, g("ways")))
+    tips = "".join(f'<li>{study_icon(k)}<div><h3>{esc(t["title"])}</h3><p>{esc(t["text"])}</p></div></li>' for k, t in zip(STUDY_TIPS, g("tips")))
+    # the map's lines in a 400 x 40 box stretched over the row of four cards (preserveAspectRatio none, so the strokes
+    # keep their width): from the question's centre to each card's centre, and from each card back to the retry card
+    xs = [50, 150, 250, 350]
+    fan = "".join(f'<path d="M200 0C200 22 {x} 18 {x} 40"/>' for x in xs)
+    join = "".join(f'<path d="M{x} 0C{x} 22 200 18 200 40"/>' for x in xs)
+    lines = lambda d, cls: f'<svg class="stuck-lines {cls}" viewBox="0 0 400 40" preserveAspectRatio="none" aria-hidden="true" focusable="false">{d}</svg>'
+    return (f'<section class="study-intro" id="{STUDY_ID}" aria-labelledby="h-study"><h1 id="h-study">{esc(g("title"))}</h1><p class="lead">{esc(g("lead"))}</p></section>'
+            f'<section class="study-sec" id="alkuun" aria-labelledby="h-start"><h2 id="h-start">{esc(g("start_h"))}</h2>'
+            f'<ol class="study-steps">{steps}</ol></section>'
+            f'<section class="study-sec stuck" id="jumissa" aria-labelledby="h-stuck"><h2 id="h-stuck">{esc(g("stuck_h"))}</h2>'
+            f'<p class="section-lead">{esc(g("stuck_lead"))} {esc(g("stuck_note"))}</p>'
+            f'<div class="stuck-map"><p class="stuck-q">{esc(g("stuck_question"))}</p>{lines(fan, "fan")}'
+            f'<ul class="stuck-ways">{ways}</ul>{lines(join, "join")}'
+            f'<div class="stuck-retry">{study_icon("retry")}<h3>{esc(g("retry_title"))}</h3><p>{esc(g("retry_text"))}</p></div></div></section>'
+            f'<section class="study-sec" id="vinkit" aria-labelledby="h-tips"><h2 id="h-tips">{esc(g("tips_h"))}</h2>'
+            f'<ul class="study-tips">{tips}</ul></section>'
+            f'<section class="study-end"><p>{esc(g("closing"))}</p><a class="study-cta" href="index.html#moduulit">{esc(g("cta"))}<span aria-hidden="true">→</span></a></section>')
 
 
 def page(title, body, crumbs, name, description, main_class="reading", full_title=None):
@@ -794,16 +887,18 @@ def chapter_crumbs(html, code, mod, seq, i, built_ids):
         elif l["id"] in built_ids: items += f'<li><a href="{l["id"]}.html">{label}</a></li>'
         else: items += f'<li><span class="soon">{label}</span></li>'
     items += "</ol>" if cur_ol else ""
-    more = "".join(f'<li><a href="{h}"{" aria-current=" + chr(34) + "page" + chr(34) if h == name else ""}><span class="n"></span><span>{esc(t)}</span></a></li>'
-                   for h, t in seq if not h.startswith(tuple(l["id"] + "." for l in slots)))
-    more += f'<li><a href="{code}.html"><span class="n"></span><span>{esc(T("lesson.chapter_up"))}</span></a></li>'
+    # Esimerkkikoe and Haastetehtävät numbered on after the chapters (17, 18 in a 16-chapter module), no "Moduulin
+    # sivulle" row: the path above leads there (teacher 2026-11-08)
+    extra = [(h, t) for h, t in seq if not h.startswith(tuple(l["id"] + "." for l in slots))]
+    more = "".join(f'<li><a href="{h}"{" aria-current=" + chr(34) + "page" + chr(34) if h == name else ""}><span class="n">{len(slots) + j}</span><span>{esc(t)}</span></a></li>'
+                   for j, (h, t) in enumerate(extra, 1))
     prev = seq[i - 1] if i else (f"{code}.html", T("lesson.chapter_up"))
     nxt = seq[i + 1] if i + 1 < len(seq) else (f"{code}.html", T("lesson.chapter_up"))
     arrow = lambda cls, h, label, short, t: (f'<a class="{cls}" href="{h}" aria-label="{esc(label)}: {esc(t)}">'
                                              + (f'‹<span class="lbl">{short}</span>' if cls == "prev" else f'<span class="lbl">{short}</span>›') + "</a>")
     crumbs = (f'<a href="index.html">{T("site.name")}</a> › <a href="{code}.html">{code}</a> › '
               f'<details class="ch-menu"><summary><span class="t">{here}</span></summary>'
-              f'<div class="ch-menu-panel">{items}<ol class="ch-menu-more">{more}</ol></div></details>'
+              f'<div class="ch-menu-panel">{items}' + (f'<ol class="ch-menu-more">{more}</ol>' if more else '') + '</div></details>'
               f'<span class="ch-arrows">{arrow("prev", prev[0], T("lesson.chapter_prev"), T("lesson.crumb_prev"), prev[1])}'
               f'{arrow("next", nxt[0], T("lesson.chapter_next"), T("lesson.crumb_next"), nxt[1])}</span>')
     return CRUMBS.sub(lambda m: m.group(1) + crumbs + m.group(2), html, count=1)
@@ -1249,9 +1344,11 @@ def build_language(lang):
     (out / booklets.PAGE).write_text(page(T("site.booklets"), booklets.body(T, lang, bk_titles, lambda c: module_icons.img(c, 40)),
                                           f'<a href="index.html">{T("site.name")}</a> › {esc(T("site.booklets"))}', booklets.PAGE,
                                           T("booklets.lead"), main_class="reading booklets-page"))
-    # Näin opiskelet (teacher 2026-11-04): the study guide alone, apart from the books of Lukuvinkit
-    (out / STUDY_PAGE).write_text(page(T("site.study"), study_guide(), f'<a href="index.html">{T("site.name")}</a> › {esc(T("site.study"))}',
-                                       STUDY_PAGE, T("site.home_start_lead"), main_class="reading study-page"))
+    # Näin opiskelet (teacher 2026-11-04, renewed 2026-11-08): the study guide alone, apart from the books of Kirjavinkit;
+    # its header link says it is the page shown
+    (out / STUDY_PAGE).write_text(page(T("guide.title"), study_guide(), f'<a href="index.html">{T("site.name")}</a> › {esc(T("site.study"))}',
+                                       STUDY_PAGE, T("guide.description"), main_class="reading study-page")
+                                  .replace('<a class="nav-study" href=', '<a class="nav-study" aria-current="page" href=', 1))
     # Sivustosta (teacher 2026-11-04): the teacher's own text, content/<lang>/tietoa.md (the Finnish where a language has
     # none). No page of the site links to the teacher's portfolio (teacher 2026-11-04: students should not find it)
     about_md = next((f for f in (ROOT / "content" / lang / "tietoa.md", ROOT / "content" / i18n.SOURCE / "tietoa.md") if f.is_file()), None)
@@ -1266,6 +1363,16 @@ def build_language(lang):
     if FORMS and lang in SUBMISSION_LANGS:   # Palautukset (teacher 2026-11-06): where the chapters have the button
         (out / FORMS_PAGE).write_text(page(forms_title(), forms_page_body(), f'<a href="index.html">{T("site.name")}</a> › {esc(forms_title())}',
                                            FORMS_PAGE, T("site.returns_desc"), main_class="reading return-page"))
+    teacher_built = False
+    if grading_file():   # Työkalut (teacher 2026-11-08): the grading tool and the classroom screen, linked from the footers
+        gf = grading_file()
+        if lang == i18n.SOURCE:   # the tools once, beside the Finnish pages in their own folder; the other languages' pages link there (rebase)
+            shutil.rmtree(out / "tyokalut", ignore_errors=True)
+            if TOOLS.is_dir(): shutil.copytree(TOOLS, out / "tyokalut")
+            (out / "tyokalut").mkdir(exist_ok=True); shutil.copyfile(gf, out / "tyokalut" / gf.name)
+        (out / TEACHER_PAGE).write_text(page(T("teacher.title"), teacher_page_body(gf.name), f'<a href="index.html">{T("site.name")}</a> › {esc(T("teacher.title"))}',
+                                             TEACHER_PAGE, T("teacher.desc"), main_class="reading teacher-page"))
+        teacher_built = True
     # Tietosuoja (teacher 2026-11-04): content/<lang>/tietosuoja.md (the Finnish where a language has none), linked from every footer
     priv_md = next((f for f in (ROOT / "content" / lang / "tietosuoja.md", ROOT / "content" / i18n.SOURCE / "tietosuoja.md") if f.is_file()), None)
     if priv_md:
@@ -1280,7 +1387,7 @@ def build_language(lang):
                 removed.append(lid if lang == i18n.SOURCE else f"{lang}/{lid}")
                 print(f"{'::warning::' if os.environ.get('GITHUB_ACTIONS') else 'WARNING:'} {old_page.relative_to(LIVE)} is on the live site but its reviews are not current ({why}); this build removes it")
     pre = out.relative_to(SITE).as_posix() + "/" if out != SITE else ""
-    expected.extend(pre + n for n in ["index.html", ABOUT] + ([PRIVACY] if priv_md else []) + ([concept_cards.APP] if concept_cards.modules(concept_cards.data_lang(lang)) else []) + ([reading_tips.PAGE] if reading_tips.SOURCE.is_file() else []) + [booklets.PAGE, STUDY_PAGE] + [f"{c}.html" for c, _ in modules] + [f"{c}.html" for c in local] + [f"{i}.html" for i in built_ids] + [f"{i}.html" for i in inv_built] + [f"{g}.html" for g in guide_built] + [practice.page_name(c) for c in practice_built] + [practice.page_name(c + practice.EXAM) for c in exam_built] + mixer_built
+    expected.extend(pre + n for n in ["index.html", ABOUT] + ([PRIVACY] if priv_md else []) + ([TEACHER_PAGE] if teacher_built else []) + ([concept_cards.APP] if concept_cards.modules(concept_cards.data_lang(lang)) else []) + ([reading_tips.PAGE] if reading_tips.SOURCE.is_file() else []) + [booklets.PAGE, STUDY_PAGE] + [f"{c}.html" for c, _ in modules] + [f"{c}.html" for c in local] + [f"{i}.html" for i in built_ids] + [f"{i}.html" for i in inv_built] + [f"{g}.html" for g in guide_built] + [practice.page_name(c) for c in practice_built] + [practice.page_name(c + practice.EXAM) for c in exam_built] + mixer_built
                     + [f"{u}.html" for u, ls in unit_pub.items() if lang in ls and not only])
     if SITE.name == "site.tmp" and lang in units.languages():   # a unit that lost its reviews leaves the site only with a warning
         for u in units.ids(lang):

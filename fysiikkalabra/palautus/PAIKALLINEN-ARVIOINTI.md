@@ -16,7 +16,7 @@ samanlainen, joten kaikki kielet arvioidaan samalla sivulla.
 
 1. **Yksi Forms-lomake ryhmää kohti**, eduespoo-tilillä, kuten KAYTTOONOTTO.md:n kohdassa 1. Nimeä lomakkeet
    ryhmittäin, nimi **alkaa ryhmällä**: *FY3.2 lv 2026-27 Palauta ratkaisut*. Arviointisivu tunnistaa ryhmän ja kurssin
-   nimen alusta. Tiedostokysymys *Palauta vastaukset*, enintään 10 Mt.
+   nimen alusta. Tiedostokysymys *Palauta vastaukset*, enintään 100 Mt.
    Opiskelija palauttaa samalla lomakkeella jokaisen luvun erikseen, kun luku on tehty. Uusi palautus on uusi
    lomakevastaus. Sheetsiin linkittämistä ja Apps Scriptiä ei tarvita. Palautuskansio ja lomakkeen vastaukset vain
    nimetyille opettajille (KAYTTOONOTTO.md, kohta 5).
@@ -69,6 +69,9 @@ samanlainen, joten kaikki kielet arvioidaan samalla sivulla.
 7. **Varmuuskopio** lataa ryhmän tuonnin tilan ja pisteet JSON-tiedostona. Säilytä se koulun Drivessa, ei julkisesti.
    **Palauta varmuuskopio** tuo sen takaisin valittuun ryhmään (esim. toisella koneella). **Poista ryhmä** poistaa
    ryhmän ja sen arvioinnin tästä selaimesta.
+   **Peru viimeisin tuonti** (Tuo tiedosto -napin vieressä, näkyy tuonnin jälkeen) poistaa viimeksi tuodut palautukset,
+   jos toit väärän tiedoston, ja palauttaa ryhmän arvioinnin tuontia edeltävään tilaan. Tuonnin jälkeen annetut pisteet
+   poistuvat, ja tuonnin luoma ryhmä poistuu. Vain viimeisin tuonti voidaan perua.
 8. Kun uusia palautuksia tulee, lataa kansio uudelleen ja valitse uusi zip samaan ryhmään. Jo luetut ohitetaan ja uudet
    lisätään (Tuo tiedosto). Korjattu palautus on opiskelijan uusi versio samasta luvusta, ja sitä arvioidaan.
    **Pisteet siirtyvät:** jos tehtävän ratkaisu on uudessa versiossa täsmälleen sama kuin aiemmassa, arvioidussa

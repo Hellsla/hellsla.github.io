@@ -21,7 +21,7 @@
     "logo": "ruukkilabra-logo-en.svg",
     "main_menu": "Main menu",
     "modules": "Modules",
-    "reading_tips": "Reading tips",
+    "reading_tips": "Book tips",
     "booklets": "Booklets",
     "reading_loan": "Borrow from Lauri",
     "reading_language": "Language",
@@ -47,26 +47,6 @@
     "course_description": "{{code}} {{title}}: lessons, simulations and exercises for an upper secondary physics module. {{done}} / {{n}} lessons ready.",
     "home_description": "Upper secondary physics through investigation: predictions, simulations, explanations and exercises, LOPS 2019 modules FY1–FY8.",
     "credits": "{{n}} cr",
-    "home_path": "How you study in Ruukkilabra",
-    "home_start_lead": "Choose a module and start from its first chapter, or from the chapter your class is working on. Every chapter follows the same stages.",
-    "home_path_herata": "a phenomenon and the question the chapter answers",
-    "home_path_ennusta": "commit to your own prediction before the results",
-    "home_path_tutki": "experiment with a simulation or data and record what you see",
-    "home_path_selita": "the explanation and the formula are built from the observations",
-    "home_path_sovella": "use the model in a new situation",
-    "home_path_tarkista": "test what you can do; the exercises are at the end of the chapter",
-    "home_start_items": [
-      "Predict first: once you have committed to an answer, you notice what is surprising in the investigation.",
-      "Use the simulation like an experiment: change one thing at a time and record what happens.",
-      "Open an answer or a model solution only after you have tried yourself, and compare yours with it step by step.",
-      "Do the core exercises. Besides calculating, the core path includes investigating, explaining and graphical representations: written reasoning, graphs, force diagrams and interpreting measurement data. The others are extra practice, and level 3 is challenging application.",
-      "Review by recalling: close the book and write down or explain from memory what you learned in the chapter. Recalling strengthens learning more than rereading.",
-      "Practise in several short sessions and come back to earlier topics later. One long session just before a test is quickly forgotten.",
-      "Mix review exercises from different chapters, so that you learn to recognise which model fits the situation.",
-      "Solve with pen and paper: draw a picture of the situation, write down the known and the unknown quantities, and explain each step to yourself.",
-      "Finally, check the unit and the order of magnitude of your result: is the answer sensible?",
-      "At the end of a chapter, go on to Next chapter."
-    ],
     "language": "Language",
     "language_choose": "Choose a language",
     "lang_unavailable": "page not available yet, goes to the module page",
@@ -90,7 +70,6 @@
       "one": "Show the goal",
       "other": "Show all {{n}} goals"
     },
-    "home_start_more": "More study tips",
     "module_question": {
       "FY1": "How does physics measure and explain the world, from protons to galaxies?",
       "FY2": "Where does our energy come from, and how does using it affect the environment?",
@@ -147,7 +126,8 @@
     "returns_lead": "Choose your course and your group. With the form, submit the chapter's solution file that you downloaded in the chapter's Exercises section (Download all solutions).",
     "returns_none": "No submissions this period",
     "returns_aria": "{{code}}: the groups' submission forms",
-    "returns_desc": "The groups' submission forms."
+    "returns_desc": "The groups' submission forms.",
+    "tools": "Tools"
   },
   "lesson": {
     "photos": "Photographs",
@@ -3165,5 +3145,102 @@
     "print_h": "How to print",
     "print_1": "Print as a booklet: paper A4, page size A5, double-sided. The printer orders the pages so that the folded sheets make a booklet.",
     "print_2": "Without a booklet mode, print two pages per sheet double-sided, cut the sheets in half and bind the left edge. The figures are in colour: velocity, acceleration and force are told apart by colour."
+  },
+  "teacher": {
+    "title": "Tools",
+    "lead": "Tools for the teacher: a classroom screen and grading the submissions on your own computer.",
+    "desc": "Tools for the teacher: the classroom screen and the grading page.",
+    "screen_h": "Classroom screen",
+    "screen_open": "Open the classroom screen",
+    "grading_h": "Grading tool",
+    "grading_p": "Ruukkilabra submissions are graded on your own computer with this separate page. It does not use the network, and no student data comes to Ruukkilabra. Choose EN at the top of the grading page to use it in English; the task statements stay in Finnish.",
+    "download": "Download the grading page ({{name}})",
+    "update_p": "Download the newest version whenever it is updated. The points and the imported submissions stay in the browser when you open the new version in the same browser.",
+    "steps_h": "How to grade",
+    "returns_page": "Submissions",
+    "step_1": "Make a Forms form for each group, with a name that starts with the group (e.g. <i>FY3.2 lv 2026-27 Palauta ratkaisut</i>), and add its link to the page {{returns}}.",
+    "step_2": "Download the form's response folder <i>(File responses)</i> from Drive as a zip file.",
+    "step_3": "Open the grading page in Chrome or Edge and choose <b>Tuo tiedosto</b> (Import file) → the zip.",
+    "step_4": "Choose a task and grade its solutions one after another: the numbers 0 and 1 and the arrows ← → change the points, ↓ ↑ change the student.",
+    "step_5": "Export the points as a CSV file and back up the group to the school's Drive.",
+    "examples_h": "Examples",
+    "shot_opiskelija": "A student's module page after six weeks: the tasks done day by day and the student's own self-assessment chapter by chapter (Finnish view).",
+    "shot_opettaja-kooste": "The grading page's summary: 30 made-up students over six weeks, the tasks done, the points and the self-assessment.",
+    "shot_opettaja-arviointi": "Grading one task at a time: the task, the student's answer and the points 0–1 with the arrow keys."
+  },
+  "guide": {
+    "_about": "Näin opiskelet -sivu nain-opiskelet.html (teacher 2026-11-08): build.py study_guide. steps[] gets the lesson's stage chips from inquiry.stage_* and lesson.exercises; ways[] are the options of the Jäikö tehtävä jumiin? map in the order icons draw, sketch, theory, hint, talk.",
+    "title": "How to learn physics",
+    "lead": "You learn physics by experimenting, thinking, calculating and talking things through. You don't need to understand everything straight away. What matters most is to try for yourself and to practise regularly.",
+    "description": "How to learn physics with Ruukkilabra: where to start, what to do when a problem won't budge, and five tips for studying physics.",
+    "start_h": "Getting started",
+    "steps": [
+      {
+        "title": "Explore and predict",
+        "text": "Start with the chapter's opening questions. Think about what you expect to happen and why. Try the simulations and compare what you observe with your predictions. Wrong predictions teach you something too."
+      },
+      {
+        "title": "Read the theory thoughtfully",
+        "text": "Get to know the concepts, figures, graphs and formulas. Try to understand what they mean. Stop and ask yourself whether you could explain it in your own words."
+      },
+      {
+        "title": "Work through the guided examples",
+        "text": "Try to solve the examples yourself. Use the step-by-step guidance and the hints. Think about why the solution goes the way it does."
+      },
+      {
+        "title": "Practise with the basic exercises",
+        "text": "Start with the Level 1 exercises and the core exercises. Once the basics feel solid, move on to harder ones. You don't need to do every exercise at once."
+      }
+    ],
+    "where": "Stages of a chapter",
+    "stuck_h": "Stuck on a problem?",
+    "stuck_lead": "Everyone runs into hard parts. Try one of these.",
+    "stuck_question": "Not getting anywhere?",
+    "stuck_note": "There is no set order: pick what suits the situation. You can ask for help right away.",
+    "ways": [
+      {
+        "title": "Draw and sketch",
+        "text": "Draw a picture of the situation. What do you know? What do you need to find out?"
+      },
+      {
+        "title": "Go back to the theory or an example",
+        "text": "Reread the part you need, or look at how a similar guided example was solved."
+      },
+      {
+        "title": "Try a hint",
+        "text": "If the task has hints, open one at a time and try to carry on yourself."
+      },
+      {
+        "title": "Talk it through and ask for help",
+        "text": "Talk with a classmate, compare your solutions or ask your teacher. Say what you have already tried."
+      }
+    ],
+    "retry_title": "Try again on your own",
+    "retry_text": "If you looked at the model solution, solve the problem again without it.",
+    "tips_h": "Five tips for studying physics",
+    "tips": [
+      {
+        "title": "Draw it out",
+        "text": "A picture or a diagram helps you understand the situation. Draw a force diagram, for example, or sketch a graph."
+      },
+      {
+        "title": "Explain in your own words",
+        "text": "Think about why the phenomenon happens, what the formulas mean and what your result tells you."
+      },
+      {
+        "title": "Do the calculations yourself",
+        "text": "You learn to calculate by calculating. Think about the physics principle first, and at the end check the units and whether the result makes sense."
+      },
+      {
+        "title": "Study together",
+        "text": "Talk with a classmate, compare ways of solving problems and explain things to each other."
+      },
+      {
+        "title": "Review regularly",
+        "text": "Go back to old problems and test yourself without the model solutions. Short, repeated practice sessions help you remember."
+      }
+    ],
+    "closing": "Physics is not just memorising formulas. The aim is to understand phenomena and learn to solve problems.",
+    "cta": "Go to the modules"
   }
 }

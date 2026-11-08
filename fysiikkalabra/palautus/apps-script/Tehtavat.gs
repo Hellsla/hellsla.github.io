@@ -283,7 +283,8 @@ var RL_COURSE = {
      "id": "tavoite-3",
      "label": "Pystyn laskemaan kappaleen painon Maassa ja muilla taivaankappaleilla."
     }
-   ]
+   ],
+   "title_en": "Force as a measure of interaction and weight G = mg"
   },
   {
    "id": "fy3-2",
@@ -571,7 +572,8 @@ var RL_COURSE = {
      "id": "tavoite-3",
      "label": "Tiedän, mitä teho kertoo, ja osaan verrata kahden laitteen tehoja."
     }
-   ]
+   ],
+   "title_en": "Work and energy"
   },
   {
    "id": "fy3-3",
@@ -851,7 +853,8 @@ var RL_COURSE = {
      "id": "tavoite-3",
      "label": "Pystyn perustelemaan, miksi lämpötiloja verrataan kelvineinä."
     }
-   ]
+   ],
+   "title_en": "Thermodynamic system, state variables and temperature"
   },
   {
    "id": "fy3-13",
@@ -1139,7 +1142,8 @@ var RL_COURSE = {
      "id": "tavoite-3",
      "label": "Osaan arvioida tuloksen epävarmuuden jyrkimmän ja loivimman suoran avulla."
     }
-   ]
+   ],
+   "title_en": "Determining absolute zero"
   },
   {
    "id": "fy3-4",
@@ -1419,7 +1423,8 @@ var RL_COURSE = {
      "id": "tavoite-3",
      "label": "Pystyn tulkitsemaan paineen ja syvyyden kuvaajasta sekä vakiotermin että kulmakertoimen."
     }
-   ]
+   ],
+   "title_en": "Pressure and hydrostatic pressure"
   },
   {
    "id": "fy3-5",
@@ -1691,7 +1696,8 @@ var RL_COURSE = {
      "id": "tavoite-3",
      "label": "Huomaan, kun arkikielen 'lämpö' tarkoittaa fysiikassa jotain muuta."
     }
-   ]
+   ],
+   "title_en": "Internal energy, heat and conservation of energy"
   },
   {
    "id": "fy3-6",
@@ -1963,7 +1969,8 @@ var RL_COURSE = {
      "id": "tavoite-3",
      "label": "Pystyn ratkaisemaan kalorimetrin tasapainolämpötilan energian säilymisen avulla."
     }
-   ]
+   ],
+   "title_en": "Heating and cooling of matter: Q = cmΔT"
   },
   {
    "id": "fy3-7",
@@ -2243,7 +2250,8 @@ var RL_COURSE = {
      "id": "tavoite-3",
      "label": "Tunnistan lämpenemiskäyrästä olomuodon muutoksen vaiheet."
     }
-   ]
+   ],
+   "title_en": "Changes of state"
   },
   {
    "id": "fy3-14",
@@ -2515,7 +2523,8 @@ var RL_COURSE = {
      "id": "tavoite-3",
      "label": "Osaan laskea tasapainolämpötilan, kun osa aineesta sulaa."
     }
-   ]
+   ],
+   "title_en": "Thermal balance during a change of state"
   },
   {
    "id": "fy3-8",
@@ -2803,7 +2812,8 @@ var RL_COURSE = {
      "id": "tavoite-3",
      "label": "Osaan laskea kappaleen pituuden ja tilavuuden muutoksen."
     }
-   ]
+   ],
+   "title_en": "Thermal expansion"
   },
   {
    "id": "fy3-9",
@@ -3091,7 +3101,8 @@ var RL_COURSE = {
      "id": "tavoite-3",
      "label": "Ymmärrän, miten kaasun tilavuus riippuu kelvinlämpötilasta."
     }
-   ]
+   ],
+   "title_en": "Changes of state of a gas and Boyle's law"
   },
   {
    "id": "fy3-10",
@@ -3395,7 +3406,8 @@ var RL_COURSE = {
      "id": "tavoite-3",
      "label": "Ymmärrän kaasun paineen hiukkasten törmäyksinä astian seiniin."
     }
-   ]
+   ],
+   "title_en": "Ideal gas law pV = nRT"
   },
   {
    "id": "fy3-11",
@@ -3675,7 +3687,8 @@ var RL_COURSE = {
      "id": "tavoite-3",
      "label": "Osaan laskea lämpövoimakoneen hyötysuhteen."
     }
-   ]
+   ],
+   "title_en": "Work done by a gas and the heat engine"
   },
   {
    "id": "fy3-15",
@@ -3963,7 +3976,8 @@ var RL_COURSE = {
      "id": "tavoite-3",
      "label": "Ymmärrän, miksi yhteistuotanto hyödyntää polttoaineen paremmin."
     }
-   ]
+   ],
+   "title_en": "Energy production and the efficiency of power plants"
   },
   {
    "id": "fy3-12",
@@ -4243,7 +4257,8 @@ var RL_COURSE = {
      "id": "tavoite-3",
      "label": "Pystyn selittämään kasvihuoneilmiön energiatasapainon avulla."
     }
-   ]
+   ],
+   "title_en": "Heat transfer, energy balance and climate change"
   },
   {
    "id": "fy3-16",
@@ -4523,7 +4538,8 @@ var RL_COURSE = {
      "id": "tavoite-3",
      "label": "Uskallan tarttua monivaiheiseen arjen lämpötehtävään."
     }
-   ]
+   ],
+   "title_en": "Applied lesson: heat phenomena in everyday life"
   }
  ]
 };

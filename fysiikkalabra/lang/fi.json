@@ -21,7 +21,7 @@
     "logo": "ruukkilabra-logo-fi.svg",
     "main_menu": "Päävalikko",
     "modules": "Moduulit",
-    "reading_tips": "Lukuvinkit",
+    "reading_tips": "Kirjavinkit",
     "booklets": "Vihkot",
     "reading_loan": "Lainattavissa Laurilta",
     "reading_language": "Kieli",
@@ -47,26 +47,6 @@
     "course_description": "{{code}} {{title}}: lukion fysiikan moduulin oppitunnit, simulaatiot ja tehtävät. {{done}} / {{n}} oppituntia valmiina.",
     "home_description": "Lukion fysiikkaa tutkimalla ja kokeilemalla: ennusteet, simulaatiot, selitykset ja tehtävät, LOPS 2019:n moduulit FY1–FY8.",
     "credits": "{{n}} op",
-    "home_path": "Näin opiskelet Ruukkilabrassa",
-    "home_start_lead": "Valitse moduuli ja aloita sen ensimmäisestä luvusta tai siitä luvusta, jota opiskelette tunnilla. Jokainen luku etenee samoin vaihein.",
-    "home_path_herata": "ilmiö ja kysymys, johon luku vastaa",
-    "home_path_ennusta": "sitoudu omaan ennusteeseen ennen tuloksia",
-    "home_path_tutki": "kokeile simulaatiolla tai aineistolla ja kirjaa havainnot",
-    "home_path_selita": "selitys ja kaava rakennetaan havainnoista",
-    "home_path_sovella": "käytä mallia uudessa tilanteessa",
-    "home_path_tarkista": "testaa osaamisesi; tehtävät ovat luvun lopussa",
-    "home_start_items": [
-      "Ennusta ensin: kun olet sitoutunut vastaukseen, huomaat, mikä tutkimuksessa yllättää.",
-      "Käytä simulaatiota kuin koetta: muuta yhtä asiaa kerrallaan ja kirjaa, mitä tapahtuu.",
-      "Avaa vastaus tai malliratkaisu vasta, kun olet itse yrittänyt, ja vertaa omaasi siihen vaihe vaiheelta.",
-      "Tee ydintehtävät. Ydinpolkuun kuuluu laskemisen lisäksi tutkimista, selittämistä ja graafisia esityksiä: sanallisia perusteluja, kuvaajia, voimakuvioita ja mittausaineiston tulkintaa. Muut tehtävät ovat lisäharjoitusta ja tason 3 tehtävät haastavaa soveltamista.",
-      "Kertaa muistelemalla: sulje kirja ja kirjoita tai selitä muistista, mitä luvussa opit. Muisteleminen vahvistaa oppimista enemmän kuin uudelleen lukeminen.",
-      "Harjoittele useana lyhyenä kertana ja palaa vanhoihin aiheisiin myöhemmin. Yksi pitkä rupeama juuri ennen koetta unohtuu nopeasti.",
-      "Sekoita kertaustehtäviä eri luvuista, niin opit tunnistamaan, mikä malli tilanteeseen sopii.",
-      "Ratkaise kynällä ja paperilla: piirrä tilanteesta kuva, kirjaa tunnetut ja kysytyt suureet ja perustele itsellesi jokainen vaihe.",
-      "Tarkista lopuksi tuloksen yksikkö ja suuruusluokka: onko vastaus järkevä?",
-      "Jatka luvun lopusta kohtaan Seuraava luku."
-    ],
     "language": "Kieli",
     "language_choose": "Valitse kieli",
     "lang_unavailable": "sivu ei vielä saatavilla, vie moduulin sivulle",
@@ -90,7 +70,6 @@
       "one": "Näytä tavoite",
       "other": "Näytä kaikki {{n}} tavoitetta"
     },
-    "home_start_more": "Lisää opiskeluvinkkejä",
     "module_question": {
       "FY1": "Miten fysiikka mittaa ja selittää maailmaa protonista galakseihin?",
       "FY2": "Mistä saamamme energia tulee, ja miten sen käyttö vaikuttaa ympäristöön?",
@@ -147,7 +126,8 @@
     "returns_lead": "Valitse kurssi ja oma ryhmäsi. Palauta lomakkeella luvun ratkaisutiedosto, jonka latasit luvun Tehtävät-kohdasta (Lataa kaikki ratkaisut).",
     "returns_none": "Ei palautuksia tässä periodissa",
     "returns_aria": "{{code}}: ryhmien palautuslomakkeet",
-    "returns_desc": "Ryhmien palautuslomakkeet."
+    "returns_desc": "Ryhmien palautuslomakkeet.",
+    "tools": "Työkalut"
   },
   "lesson": {
     "photos": "Valokuvat",
@@ -3165,5 +3145,102 @@
     "print_h": "Näin tulostat",
     "print_1": "Tulosta vihkotulostuksena: paperi A4, sivukoko A5, kaksipuolinen. Tulostin järjestää sivut niin, että taitetut arkit muodostavat vihkon.",
     "print_2": "Ilman vihkotoimintoa tulosta kaksi sivua arkille kaksipuolisena, leikkaa arkit kahtia ja sido vasemmasta reunasta. Kuvat ovat värillisiä: nopeus, kiihtyvyys ja voima erottuvat väreistä."
+  },
+  "teacher": {
+    "title": "Työkalut",
+    "lead": "Opettajan työkalut: luokan näyttö ja palautusten arviointi omalla koneella.",
+    "desc": "Opettajan työkalut: luokkanäyttö ja arviointisivu.",
+    "screen_h": "Luokkanäyttö",
+    "screen_open": "Avaa luokkanäyttö",
+    "grading_h": "Arviointityökalu",
+    "grading_p": "Ruukkilabran palautukset arvioidaan omalla koneella tällä erillisellä sivulla. Se ei käytä verkkoa, eikä mikään opiskelijan tieto tule Ruukkilabraan.",
+    "download": "Lataa arviointisivu ({{name}})",
+    "update_p": "Lataa uusin versio aina, kun se päivittyy. Pisteet ja tuodut palautukset säilyvät selaimessa, kun avaat uuden version samassa selaimessa.",
+    "steps_h": "Näin arvioit",
+    "returns_page": "Palautukset",
+    "step_1": "Tee jokaiselle ryhmälle oma Forms-lomake, jonka nimi alkaa ryhmällä (esim. <i>FY3.2 lv 2026-27 Palauta ratkaisut</i>), ja lisää sen linkki sivulle {{returns}}.",
+    "step_2": "Lataa Drivesta lomakkeen vastauskansio <i>(File responses)</i> zip-tiedostona.",
+    "step_3": "Avaa arviointisivu Chromessa tai Edgessä ja valitse <b>Tuo tiedosto</b> → zip.",
+    "step_4": "Valitse tehtävä ja arvioi sen ratkaisut peräkkäin: numerot 0 ja 1, nuolet ← → muuttavat pisteitä, ↓ ↑ vaihtavat opiskelijaa.",
+    "step_5": "Vie pisteet CSV-tiedostona ja tee varmuuskopio ryhmästä koulun Driveen.",
+    "examples_h": "Esimerkkejä",
+    "shot_opiskelija": "Opiskelijan moduulisivu kuuden viikon jälkeen: tehdyt tehtävät päivä päivältä ja oma itsearvio luvuittain.",
+    "shot_opettaja-kooste": "Arviointisivun kooste: 30 keksittyä opiskelijaa kuuden viikon ajalta, tehdyt tehtävät, pisteet ja itsearvio.",
+    "shot_opettaja-arviointi": "Arviointi tehtävä kerrallaan: tehtävänanto, opiskelijan vastaus ja pisteet 0–1 nuolinäppäimillä."
+  },
+  "guide": {
+    "_about": "Näin opiskelet -sivu nain-opiskelet.html (teacher 2026-11-08): build.py study_guide. steps[] gets the lesson's stage chips from inquiry.stage_* and lesson.exercises; ways[] are the options of the Jäikö tehtävä jumiin? map in the order icons draw, sketch, theory, hint, talk.",
+    "title": "Näin opit fysiikkaa",
+    "lead": "Fysiikkaa oppii kokeilemalla, pohtimalla, laskemalla ja keskustelemalla. Kaikkea ei tarvitse ymmärtää heti. Tärkeintä on yrittää itse ja harjoitella säännöllisesti.",
+    "description": "Näin opit fysiikkaa Ruukkilabrassa: mistä aloittaa, mitä tehdä, kun tehtävä ei etene, ja viisi vinkkiä fysiikan opiskeluun.",
+    "start_h": "Näin pääset alkuun",
+    "steps": [
+      {
+        "title": "Tutki ja ennusta",
+        "text": "Aloita luvun pohdintakysymyksistä. Mieti, mitä arvelet tapahtuvan ja miksi. Kokeile simulaatioita ja vertaile havaintojasi ennusteisiin. Myös vääristä ennusteista oppii."
+      },
+      {
+        "title": "Lue teoriaa ajatuksella",
+        "text": "Tutustu käsitteisiin, kuviin, kuvaajiin ja kaavoihin. Yritä ymmärtää, mitä ne tarkoittavat. Pysähdy miettimään, osaisitko selittää asian omin sanoin."
+      },
+      {
+        "title": "Tee ohjatut esimerkit",
+        "text": "Kokeile ratkaista esimerkkitehtäviä itse. Hyödynnä vaiheittaista ohjausta ja vihjeitä. Mieti, miksi ratkaisu etenee juuri esitetyllä tavalla."
+      },
+      {
+        "title": "Harjoittele perustehtävillä",
+        "text": "Aloita tason 1 tehtävistä ja ydintehtävistä. Kun perusteet sujuvat, siirry vaativampiin. Kaikkia tehtäviä ei tarvitse tehdä kerralla."
+      }
+    ],
+    "where": "Luvun vaiheet",
+    "stuck_h": "Jäikö tehtävä jumiin?",
+    "stuck_lead": "Vaikeisiin kohtiin törmää jokainen. Kokeile jotain näistä keinoista.",
+    "stuck_question": "Tehtävä ei etene?",
+    "stuck_note": "Keinoilla ei ole järjestystä: valitse tilanteeseen sopiva. Apua saa kysyä heti.",
+    "ways": [
+      {
+        "title": "Piirrä ja hahmottele",
+        "text": "Piirrä tilanteesta kuva. Mitä tiedät? Mitä pitäisi selvittää?"
+      },
+      {
+        "title": "Palaa teoriaan tai esimerkkiin",
+        "text": "Lue tarvittava kohta uudelleen tai tarkastele vastaavan ohjatun esimerkin ratkaisua."
+      },
+      {
+        "title": "Kokeile vihjettä",
+        "text": "Jos tehtävässä on vihjeitä, avaa yksi kerrallaan ja yritä jatkaa itse."
+      },
+      {
+        "title": "Keskustele ja kysy apua",
+        "text": "Juttele kaverin kanssa, verratkaa ratkaisujanne tai kysy opettajalta. Kerro, mitä olet jo yrittänyt."
+      }
+    ],
+    "retry_title": "Yritä uudelleen itse",
+    "retry_text": "Jos katsoit malliratkaisun, kokeile ratkaista tehtävä uudelleen ilman sitä.",
+    "tips_h": "Viisi vinkkiä fysiikan opiskeluun",
+    "tips": [
+      {
+        "title": "Piirrä ja havainnollista",
+        "text": "Kuva tai kaavio auttaa ymmärtämään tilannetta. Piirrä esimerkiksi voimakuvio tai hahmottele kuvaaja."
+      },
+      {
+        "title": "Selitä omin sanoin",
+        "text": "Mieti, miksi ilmiö tapahtuu, mitä kaavat tarkoittavat ja mitä laskemasi tulos kertoo."
+      },
+      {
+        "title": "Laske itse",
+        "text": "Laskemaan oppii laskemalla. Mieti ensin fysiikan periaate ja tarkista lopuksi yksiköt sekä tuloksen järkevyys."
+      },
+      {
+        "title": "Opiskele yhdessä",
+        "text": "Keskustele kaverin kanssa, vertailkaa ratkaisutapoja ja selittäkää asioita toisillenne."
+      },
+      {
+        "title": "Kertaa säännöllisesti",
+        "text": "Palaa vanhoihin tehtäviin ja testaa osaamistasi ilman malliratkaisuja. Lyhyet ja toistuvat harjoittelukerrat auttavat muistamaan."
+      }
+    ],
+    "closing": "Fysiikka ei ole pelkkää kaavojen muistamista. Tavoitteena on ymmärtää ilmiöitä ja oppia ratkaisemaan ongelmia.",
+    "cta": "Siirry moduuleihin"
   }
 }

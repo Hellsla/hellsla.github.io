@@ -70,7 +70,7 @@ threading.Thread(target=srv.serve_forever, daemon=True).start()
 BASE = f"http://127.0.0.1:{srv.server_port}/"
 
 # static: the script is on the FY3 chapter pages only
-pages_with = sorted(p.relative_to(SITE).as_posix() for p in SITE.rglob("*.html") if "palautus.js" in p.read_text(errors="ignore"))
+pages_with = sorted(p.relative_to(SITE).as_posix() for p in SITE.rglob("*.html") if not p.name.startswith("arviointi-") and "palautus.js" in p.read_text(errors="ignore"))   # the grading page to download (Työkalut) is the teacher's tool
 chapters = sorted(p.name for p in SITE.glob("fy*-*.html") if re.fullmatch(r"fy[1-8]-\d+\.html", p.name))
 reviews = sorted(p.name for p in SITE.glob("fy9-*.html"))   # the FY9 review lessons (teacher 2026-11-06, self-assessment of the review course)
 modules = [f"FY{i}.html" for i in range(1, 9)]   # the module pages: Tallenna työ / Avaa tallennettu työ (teacher 2026-11-07)
@@ -407,7 +407,7 @@ with sync_playwright() as p:
            ("a task's self-assessment in version 3", json.dumps(reseal(json.loads(modify(files["v1"], lambda g: g["selfassessment"]["goals"].append({"id": "check-1", "text": "", "level": "b"}))))), None, None, A, "virheellinen"),
            ("an unknown answer type", json.dumps(reseal(json.loads(modify(files["v1"], lambda g: g["answers"][i1]["responses"].append({"type": "html", "html": "<b>x</b>"}))))), None, None, A, "tuntematon vastaustyyppi"),
            ("an empty task with an answer", json.dumps(reseal(json.loads(modify(files["v1"], lambda g: [a for a in g["answers"] if a["status"] == "empty"][0]["responses"].append({"type": "number", "value": "3"}))))), None, None, A, "eivät täsmää"),
-           ("over the size limit", va, 9_500_000, None, A, "liian suuri"),
+           ("over the size limit", va, 20_500_000, None, A, "liian suuri"),
            ("a tampered answer", modify(files["v1"], lambda g: g["answers"][i1]["content"][0].update(text="muutettu")), None, None, A, "tarkistussumma"),
            ("HTML as a PNG picture", json.dumps(reseal(json.loads(modify(files["v1"], lambda g: g["answers"][i1]["content"][3].update(data=base64.b64encode(b"<html><script>alert(1)</script></html>").decode()))))), None, None, A, "ei ole PNG"),
            ("an SVG picture", json.dumps(reseal(json.loads(modify(files["v1"], lambda g: g["answers"][i1]["content"][3].update(mime="image/svg+xml", data=base64.b64encode(b"<svg onload='alert(1)'/>").decode()))))), None, None, A, "kuvamuoto"),
@@ -794,6 +794,16 @@ with sync_playwright() as p:
     load(zpath2)
     expect("local page: the second group from its zip; a group menu appears", "ryhmä FY3.2" in lp.inner_text("#title") and lp.is_visible("#groupWrap"), lp.inner_text("#title"))
     expect("local page: the second group has only its own students", "Daniel Opiskelija" in lp.inner_text("#summary") and "Aino" not in lp.inner_text("#summary"), lp.inner_text("#summary"))
+    # a wrong zip by mistake: 'Peru viimeisin tuonti' takes it away again (teacher 2026-11-08)
+    expect("local page: after an import the undo button shows", lp.is_visible("#undoImport") and lp.inner_text("#undoImport") == "Peru viimeisin tuonti", lp.is_visible("#undoImport"))
+    lp.click("#undoImport"); lp.wait_for_function("document.getElementById('localMsg').textContent.indexOf('Tuonti peruttu') >= 0")
+    lp.wait_for_function("document.getElementById('homeState').textContent !== 'Ladataan…'")
+    expect("local page: undo removes the group made by the import and goes back to the earlier group with its points", "ryhmä FY3.1" in lp.inner_text("#title") and lp.is_hidden("#groupWrap")
+           and lp.is_hidden("#undoImport") and t1()[3:] == ["1", "0"], (lp.inner_text("#title"), lmsg(), t1()))
+    lp.reload(); lp.wait_for_selector("#import"); lp.wait_for_function("document.getElementById('homeState').textContent !== 'Ladataan…'")
+    expect("local page: the undo holds after a reload (no FY3.2, FY3.1 answers kept)", lp.locator("#group option").count() == 1 and lp.is_hidden("#undoImport") and t1()[3:] == ["1", "0"], (lp.locator("#group option").count(), t1()))
+    load(zpath2)
+    expect("local page: the same zip can be imported again after undo", "Ryhmä FY3.2: luettu 1" in lmsg() and "Uusia palautuksia 1" in lmsg() and "ryhmä FY3.2" in lp.inner_text("#title"), lmsg())
     lp.select_option("#group", "FY3.1"); lp.wait_for_function("document.getElementById('title').textContent.indexOf('ryhmä FY3.1') >= 0")
     lp.wait_for_function("document.getElementById('homeState').textContent !== 'Ladataan…'")
     expect("local page: switching back shows the first group's students and points only", "Aino Opiskelija" in lp.inner_text("#summary") and "Daniel" not in lp.inner_text("#summary"), lp.inner_text("#summary"))

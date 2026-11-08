@@ -140,9 +140,9 @@ for case, s in rows:
     bt = "-" if not before else (f"{before[0] / 1e6:.2f} Mt" if before[0] else f"ei tallennu (~{before[2] / 1e6:.1f} Mt): {before[1][:70]}")
     at = f"{after[0] / 1e6:.2f} Mt ({after[1]:.1f} s)" if after[0] else f"ei tallennu (~{after[2] / 1e6:.1f} Mt): {after[1][:70]}"
     print(f"  {case:15} ennen: {bt:40}  jälkeen: {at}")
-limit = 9_000_000
+limit = 20_000_000   # teacher 2026-11-08: work file 20 MB, Forms 100 MB
 R = dict(rows)
-expect("after optimisation every case but the heaviest saves under the 9 MB limit", all(R[c]["opt"][0] and R[c]["opt"][0] <= limit for c in R if c != "kaavat+30kuvaa"), [(c, s["opt"][0]) for c, s in rows])
+expect("after optimisation every case, also the heaviest, saves under the 20 MB limit", all(R[c]["opt"][0] and R[c]["opt"][0] <= limit for c in R), [(c, s["opt"][0]) for c, s in rows])
 expect("over the limit: a clear message with the size, nothing left out silently", R["kaavat+30kuvaa"]["opt"][0] or "Tiedostosta tulisi liian suuri" in R["kaavat+30kuvaa"]["opt"][1], R["kaavat+30kuvaa"]["opt"])
 expect("before optimisation a phone photo is refused (over 2 MB)", all(not R[c]["raw"][0] and "liian suuri" in R[c]["raw"][1] for c in R if "kuvaa" in c))
 
@@ -172,7 +172,7 @@ lp.wait_for_function("document.getElementById('localMsg').textContent.indexOf('l
 lp.wait_for_function("document.getElementById('homeState').textContent !== 'Ladataan…'")
 t_import = time.time() - t0
 msg = lp.inner_text("#localMsg")
-expect(f"offline grading page: the four work files are read ({t_import:.1f} s, {zp.stat().st_size / 1e6:.1f} MB zip)", "luettu 4 tiedostoa" in msg and "hyväksyttyjä" in msg and "virheellisiä 0" in msg, msg)
+expect(f"offline grading page: all {len(files)} work files are read ({t_import:.1f} s, {zp.stat().st_size / 1e6:.1f} MB zip)", f"luettu {len(files)} tiedostoa" in msg and "hyväksyttyjä" in msg and "virheellisiä 0" in msg, msg)
 tid = IDS[0][1]
 lp.locator(f'tr.task-row[data-task="{tid}"]').first.click(); lp.wait_for_function("document.querySelector('#gAnswer .t')")
 shots = []
