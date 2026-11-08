@@ -131,12 +131,22 @@ def validate(curriculum):
     return errs
 
 
+def head_icon(code, c):
+    """The icon beside the course's title: the front page's tile, or on a page in Kiviruukin lukio's theme the picture
+    alone, inline without the tile's background and border, like the Ahjo course pages (teacher 2026-11-08)."""
+    import module_icons
+    if c.get("theme") != "kiviruukki": return module_icons.img(code, 56, "mod-head-icon")
+    svg = re.sub(r'<rect x="0\.5" y="0\.5" width="47" height="47" rx="12"[^>]*/>', "", module_icons.file(code).read_text(), count=1)
+    svg = re.sub(r"<title>.*?</title>", "", svg, count=1).strip()
+    return svg.replace("<svg ", '<svg class="mod-head-icon mod-head-plain" aria-hidden="true" focusable="false" ', 1)
+
+
 def page_body(code, c, T, chapters, published, investigations=(), guides_html="", course_units=()):
     """The course landing page. chapters: lesson id -> (module code, title) in this language; published: the page
     names this language built. Planned parts say so, and a chapter not published here is named without a link."""
     status = c["status"]
     import module_icons
-    out = (f'<div class="mod-head">{module_icons.img(code, 56, "mod-head-icon")}<div><span class="eyebrow">{label(code) + " · " if label(code) else ""}{T("site.local_course_kind")}</span><h1>{esc(c["title"])}</h1></div></div>'
+    out = (f'<div class="mod-head">{head_icon(code, c)}<div><span class="eyebrow">{label(code) + " · " if label(code) else ""}{T("site.local_course_kind")}</span><h1>{esc(c["title"])}</h1></div></div>'
            f'<p class="lead">{esc(c["subtitle"])}</p>'
            + (f'<p class="notice local-kind" role="note">{T("site.local_distinct", school=esc(c["school"]))}</p>' if c.get("kind_note", True) else "")
            + (f'<p class="notice local-status" role="note"><strong>{T("site.local_status_" + status)}.</strong> {T("site.local_status_note_" + status)}</p>' if status != "ready" else "")
