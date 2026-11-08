@@ -863,7 +863,7 @@ li.is-done .ex-done{color:var(--accent-deep)}
 .pm-count{margin:0 0 .5rem;font:700 var(--fs-body) var(--sans);font-variant-numeric:tabular-nums}
 .pm-bar{height:10px;border-radius:999px;background:var(--line-2);overflow:hidden}
 .pm-bar>span{display:block;height:100%;width:0;background:var(--given);transition:width .3s}
-.pm-graph{margin:.7rem 0 0}.pm-graph>summary{cursor:pointer;min-height:40px;display:flex;align-items:center;font:600 var(--fs-ui) var(--sans);color:var(--accent-deep)}
+.pm-graph{margin:.7rem 0 0}
 .pm-chart{margin:.3rem 0 0;overflow:hidden}.pm-svg{display:block;max-width:100%;height:auto}
 .pm-grid{stroke:var(--line-2)}.pm-axis{stroke:var(--fig-muted)}.pm-total{stroke:var(--given);stroke-dasharray:4 4}
 .pm-tick{font:13px var(--sans);fill:var(--ink-2)}.pm-tick-total{fill:var(--accent-deep);font-weight:700}.pm-goal{stroke:var(--given);stroke-width:2}.pm-tick-goal{fill:var(--given);font-weight:700}
@@ -888,8 +888,6 @@ li.is-done .ex-done{color:var(--accent-deep)}
 .sm-cell[data-level=a]{background:var(--sa-a);box-shadow:none}.sm-cell[data-level=b]{background:var(--sa-b);box-shadow:none}
 .sm-cell[data-level=c]{background:var(--sa-c);box-shadow:none}.sm-cell[data-level=d]{background:var(--sa-d);box-shadow:none}
 .sm-cell[data-level=x]{background:var(--sa-x);box-shadow:none}
-.sm-legend{list-style:none;margin:.9rem 0 0;padding:0;display:grid;gap:.3rem;font-size:var(--fs-small);color:var(--ink-2)}
-.sm-legend li{display:flex;align-items:center;gap:.5rem}.sm-legend .sm-cell{width:14px;min-height:14px;flex:none}
 @media print{.ex-done,.ex-done-msg,.done-count,.my-progress,.my-selfmap{display:none!important}}
 .act-core{margin:0 0 .35rem}.act-core .ex-core{margin:0}
 /* Kokeelliset tutkimukset (teacher 2026-10-30, scripts/investigations.py): the lesson page's reading column; the goals

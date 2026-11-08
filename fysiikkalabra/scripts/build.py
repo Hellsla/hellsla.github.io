@@ -177,10 +177,10 @@ def progress_view(themes, given, block):
     strings.update({k: v for k, v in T("inquiry").items() if k in ("sa_a", "sa_b", "sa_c", "sa_d", "sa_x", "sa_x_short")})
     prog = (f'<section class="my-progress" id="oma-eteneminen" hidden><h2>{T("js.progress_title")}</h2>'
             '<p class="pm-count" aria-live="polite"></p><div class="pm-bar" role="progressbar" aria-valuemin="0"><span></span></div>'
-            f'<details class="pm-graph"><summary>{T("js.progress_graph")}</summary><div class="pm-chart"></div></details>'
+            f'<div class="pm-graph" role="group" aria-label="{T("js.progress_graph")}"><div class="pm-chart"></div></div>'
             f'<p class="pm-note">{T("js.progress_note" if given else "js.progress_note_all")}</p></section>')
     mine = (f'<section class="my-selfmap" id="oma-itsearvio" data-themes="{esc(json.dumps(themes, ensure_ascii=False))}" hidden><h2>{T("js.selfmap_title")}</h2>'
-            '<p class="sm-count" aria-live="polite"></p><div class="sm-map"></div><ul class="sm-legend"></ul></section>')
+            '<p class="sm-count" aria-live="polite"></p><div class="sm-map"></div></section>')
     # the button on one row with Tallenna työ tiedostoon and Avaa tallennettu työ (teacher 2026-11-08); it opens the
     # details below (its own summary hidden), so the work buttons stay beside it
     return (f'<div class="my-top"><button type="button" class="my-toggle" aria-expanded="false" aria-controls="omat-tiedot" hidden>{T("js.progress_show")}</button></div>'

@@ -72,9 +72,7 @@
       const tight = [...map.querySelectorAll('.sm-theme')].some((l) => l.scrollWidth > l.clientWidth + 1 || l.firstChild.offsetHeight > l.clientHeight - 4);
       if (tight) map.firstChild.replaceWith(themeRows(true));
     }
-    const legend = box.querySelector('.sm-legend');
-    if (!legend.children.length) LEVELS.forEach((lv) => { const li = document.createElement('li'), sw = document.createElement('span');
-      sw.className = 'sm-cell'; sw.dataset.level = lv; li.append(sw, ' ' + S('sa_' + lv)); legend.append(li); });
+    // no legend under the map (teacher 2026-11-08: it took too much room); each cell's title names its level
     box.hidden = false;
     showWrap(box.closest('details'));
   };

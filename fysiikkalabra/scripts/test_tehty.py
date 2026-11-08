@@ -91,7 +91,8 @@ with sync_playwright() as p:
     pos = q.evaluate("(() => { const s = document.getElementById('oma-eteneminen'), h = document.querySelector('main h1'), l = [...document.querySelectorAll('main h2')].find((x) => !s.contains(x)); return !s.hidden && !!(h.compareDocumentPosition(s) & 4) && !!(s.compareDocumentPosition(l) & 4); })()")
     expect("FY3: Oma eteneminen after the heading, before the chapters", pos)
     expect("FY3: the bar follows the counter", q.get_attribute(".pm-bar", "aria-valuenow") == "3" and abs(float(q.evaluate("document.querySelector('.pm-bar > span').style.width").rstrip("%")) - 100 * 3 / total) < 0.01)
-    q.click(".pm-graph > summary"); q.wait_for_selector(".pm-chart svg", timeout=3000)
+    q.wait_for_selector(".pm-chart svg", timeout=3000)   # shown at once with the view (teacher 2026-11-08), no button of its own
+    expect("FY3: no Etenemisgraafi button, no colour legend under the fingerprint (teacher 2026-11-08)", q.locator(".pm-graph summary, .sm-legend").count() == 0)
     g = q.evaluate("(() => { const s = document.querySelector('.pm-chart svg'); return s && { dots: s.querySelectorAll('.pm-dot').length, path: s.querySelector('.pm-line').getAttribute('d'), ticks: [...s.querySelectorAll('.pm-tick')].map((t) => t.textContent), goal: !!s.querySelector('line.pm-goal') }; })()")
     expect("FY3: the graph by date, the axis up to 100 at first (teacher 2026-11-08), the goal line at 90 (2 op)", g and g["dots"] == 1 and "100" in g["ticks"] and str(total) not in g["ticks"] and "90" in g["ticks"] and "tavoite 90" in g["ticks"] and g["goal"] and g["path"].startswith("M"), g)
     big = q.evaluate("(total) => { const h = document.createElement('div'); document.body.append(h); const t = Array.from({ length: 143 }, (_, i) => new Date(Date.UTC(2026, 8, 1 + (i % 60))).toISOString()); window.flProgressChart(h, t, total);"
@@ -128,7 +129,7 @@ with sync_playwright() as p:
     for w in (360, 768, 1280):
         for page in ("fy3-1.html", "FY1.html", "FY3.html", "FY9.html"):
             q.set_viewport_size({"width": w, "height": 900}); q.goto(BASE + page)
-            if page.startswith("FY"): q.evaluate(WRAP); q.click(".pm-graph > summary"); q.wait_for_timeout(200)
+            if page.startswith("FY"): q.evaluate(WRAP); q.wait_for_timeout(200)
             else: q.evaluate(OPEN)
             over = q.evaluate("document.documentElement.scrollWidth - document.documentElement.clientWidth")
             expect(f"{page} at {w} px: no horizontal overflow", over <= 0, over)
