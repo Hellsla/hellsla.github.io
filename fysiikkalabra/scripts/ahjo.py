@@ -55,6 +55,18 @@ MARK = ROOT / "assets/shared/brand/ahjo-makerspace-merkki.svg"
 MARK_SRC = "brand/ahjo-makerspace-merkki.svg"
 
 
+TAB_ICONS = {"brand/ruukkilabra-32.png": "brand/ahjo-32.png", "brand/ruukkilabra-symboli.svg": MARK_SRC, "brand/ruukkilabra-180.png": "brand/ahjo-180.png"}
+
+
+def tab_icons(html):
+    """An Ahjo page's browser tab and home screen icon is Ahjo's mark, not Ruukkilabra's (teacher 2026-11-08). The PNGs
+    (32 px, and 180 px filling its square) are the mark rendered by scripts/ahjo_tab_icons.js and committed beside it."""
+    for a, b in TAB_ICONS.items():
+        assert f'href="{a}"' in html or f'/{a}"' in html, a
+        html = re.sub(rf'(<link rel="(?:icon|apple-touch-icon)" href="(?:\.\./)*){re.escape(a)}"', rf'\g<1>{b}"', html)
+    return html
+
+
 def mark_svg():
     """The logo's mark (its first three paths: the rays, the anvil and its arch, byte for byte) on the module icons'
     48 px white rounded square; the paths "Ahjo" and "Kiviruukin Makerspace" (the last two) are left out."""
