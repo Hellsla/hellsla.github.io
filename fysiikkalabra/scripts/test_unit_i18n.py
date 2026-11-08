@@ -26,7 +26,7 @@ REAL = snapshot()
 
 T = pathlib.Path(tempfile.mkdtemp(prefix="fysiikkalabra-unit-i18n-"))
 for f in ("curriculum.json", "competencies.json", "glossary.json", "local-courses.json", "CLAUDE.md", "NOTES.md"): shutil.copy(SRC / f, T / f)
-for d in ("scripts", "templates", "content", "lessons", "lang", "assets", "tests", "kortit", "tips", "news"):
+for d in ("scripts", "templates", "content", "lessons", "lang", "assets", "tests", "kortit", "tips", "news", "palautus", "tyokalut"):   # palautus/, tyokalut/: the footers' Työkalut link (build.grading_file)
     if (SRC / d).is_dir(): shutil.copytree(SRC / d, T / d, ignore=shutil.ignore_patterns("__pycache__", "packet-*", "shots*"))
 (T / "docs").mkdir(exist_ok=True); shutil.copy(SRC / "docs/visual-baseline.tsv", T / "docs")
 # The copy starts from the state before FY9 was translated: only this unit has an en version, and FY9 is not yet in
