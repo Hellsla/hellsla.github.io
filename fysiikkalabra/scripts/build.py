@@ -176,11 +176,11 @@ def progress_view(themes, given, block):
     strings = {k: v for k, v in T("js").items() if k.startswith(("done_", "progress_", "palautus_", "work_", "selfmap_"))}
     strings.update({k: v for k, v in T("inquiry").items() if k in ("sa_a", "sa_b", "sa_c", "sa_d", "sa_x", "sa_x_short")})
     prog = (f'<section class="my-progress" id="oma-eteneminen" hidden><h2>{T("js.progress_title")}</h2>'
-            '<p class="pm-count" aria-live="polite"></p><div class="pm-bar" role="progressbar" aria-valuemin="0"><span></span></div>'
+            '<p class="pm-count visually-hidden" aria-live="polite"></p><div class="pm-bar" role="progressbar" aria-valuemin="0"><span></span></div>'
             f'<div class="pm-graph" role="group" aria-label="{T("js.progress_graph")}"><div class="pm-chart"></div></div>'
             f'<p class="pm-note">{T("js.progress_note" if given else "js.progress_note_all")}</p></section>')
     mine = (f'<section class="my-selfmap" id="oma-itsearvio" data-themes="{esc(json.dumps(themes, ensure_ascii=False))}" hidden><h2>{T("js.selfmap_title")}</h2>'
-            '<p class="sm-count" aria-live="polite"></p><div class="sm-map"></div></section>')
+            '<p class="sm-count visually-hidden" aria-live="polite"></p><div class="sm-map"></div></section>')
     # the button on one row with Tallenna työ tiedostoon and Avaa tallennettu työ (teacher 2026-11-08); it opens the
     # details below (its own summary hidden), so the work buttons stay beside it
     return (f'<div class="my-top"><button type="button" class="my-toggle" aria-expanded="false" aria-controls="omat-tiedot" hidden>{T("js.progress_show")}</button></div>'
@@ -221,6 +221,52 @@ def local_progress(code, c, lang):
 
 
 def forms_title(): return T("site.returns_title", period=FORMS["period"], year=FORMS["year"])
+
+
+def grading_file():
+    """The running period's local grading page (palautus/arviointi-<year>-p<n>.html, scripts/palautus_tasks.py), the
+    newest by name; None when there is none."""
+    fs = sorted((ROOT / "palautus").glob("arviointi-*.html"))
+    return fs[-1] if fs else None
+
+
+def teacher_page_body(name):
+    """Työkalut (teacher 2026-11-08): the classroom screen and the newest grading tool to download and the steps in short. No student data:
+    the tool reads the Drive zip on the teacher's own computer and keeps the points in that browser."""
+    pal = f'<a href="{FORMS_PAGE}">{esc(forms_title())}</a>' if FORMS else "Palautukset"
+    screen = (TOOLS / "luokkanaytto.html").is_file()
+    return ('<h1>Työkalut</h1>'
+            '<p class="lead">Opettajan työkalut: luokan näyttö ja palautusten arviointi omalla koneella.</p>'
+            + ('<section class="teacher-tool"><h2>Luokkanäyttö</h2>'
+               '<p><a class="pad-btn" href="tyokalut/luokkanaytto.html">Avaa luokkanäyttö</a></p></section>' if screen else '')
+            + '<section class="teacher-tool"><h2>Arviointityökalu</h2>'
+            '<p>Ruukkilabran palautukset arvioidaan omalla koneella tällä erillisellä sivulla. Se ei käytä verkkoa, eikä mikään '
+            'opiskelijan tieto tule Ruukkilabraan.</p>'
+            f'<p><a class="pad-btn teacher-download" href="tyokalut/{esc(name)}" download="{esc(name)}">Lataa arviointisivu ({esc(name)})</a></p>'
+            '<p>Lataa uusin versio aina, kun se päivittyy. Pisteet ja tuodut palautukset säilyvät selaimessa, kun avaat uuden '
+            'version samassa selaimessa.</p></section>'
+            '<section class="teacher-steps"><h2>Näin arvioit</h2><ol>'
+            f'<li>Tee jokaiselle ryhmälle oma Forms-lomake, jonka nimi alkaa ryhmällä (esim. <i>FY3.2 lv 2026-27 Palauta ratkaisut</i>), ja lisää sen linkki sivulle {pal}.</li>'
+            '<li>Lataa Drivesta lomakkeen vastauskansio <i>(File responses)</i> zip-tiedostona.</li>'
+            '<li>Avaa arviointisivu Chromessa tai Edgessä ja valitse <b>Tuo tiedosto</b> → zip.</li>'
+            '<li>Valitse tehtävä ja arvioi sen ratkaisut peräkkäin: numerot 0 ja 1, nuolet ← → muuttavat pisteitä, ↓ ↑ vaihtavat opiskelijaa.</li>'
+            '<li>Vie pisteet CSV-tiedostona ja tee varmuuskopio ryhmästä koulun Driveen.</li></ol></section>'
+            + teacher_examples())
+
+
+SHOTS = [("opiskelija", 1600, 702, "Opiskelijan moduulisivu kuuden viikon jälkeen: tehdyt tehtävät päivä päivältä ja oma itsearvio luvuittain."),
+         ("opettaja-kooste", 1190, 1140, "Arviointisivun kooste: 30 keksittyä opiskelijaa kuuden viikon ajalta, tehdyt tehtävät, pisteet ja itsearvio."),
+         ("opettaja-arviointi", 1600, 594, "Arviointi tehtävä kerrallaan: tehtävänanto, opiskelijan vastaus ja pisteet 0–1 nuolinäppäimillä.")]
+
+
+def teacher_examples():
+    """Example screenshots (teacher 2026-11-08): a student after six weeks and the grading view with 30 made-up students."""
+    figs = []
+    for name, w, h, cap in SHOTS:
+        if not (TOOLS / "kuvat" / f"{name}.webp").is_file(): continue
+        figs.append(f'<figure class="teacher-shot"><img src="tyokalut/kuvat/{name}.webp" width="{w}" height="{h}" loading="lazy" '
+                    f'alt="{esc(cap)}"><figcaption>{esc(cap)}</figcaption></figure>')
+    return f'<section class="teacher-examples"><h2>Esimerkkejä</h2>{"".join(figs)}</section>' if figs else ''
 
 
 def return_title(code):
@@ -402,7 +448,10 @@ def plain_tex(s):
 
 def texts(html):
     """{{t:site.footer}} in a template -> the text in the language being built (lang/<lang>.json)."""
-    return re.sub(r"\{\{t:([\w.]+)\}\}", lambda m: esc(T(m.group(1))), html)
+    html = re.sub(r"\{\{t:([\w.]+)\}\}", lambda m: esc(T(m.group(1))), html)
+    if T.lang == i18n.SOURCE and grading_file():   # Työkalut in the Finnish footers (teacher 2026-11-08)
+        html = html.replace('<a href="tietosuoja.html">', f'<a href="{TEACHER_PAGE}">Työkalut</a><a href="tietosuoja.html">', 1)
+    return html
 
 
 # Modules the front page still lists dimmed under Tulossa although some of their chapters are published (teacher
@@ -429,6 +478,8 @@ def planned_row(p):
 
 
 ABOUT = "tietoa.html"
+TEACHER_PAGE = "tyokalut.html"   # Työkalut (teacher 2026-11-08): the newest local grading page and the classroom screen, Finnish only
+TOOLS = ROOT / "tyokalut"        # the classroom screen and its libraries (luokkanaytto.html, lib/), copied to site/tyokalut/
 PRIVACY = "tietosuoja.html"   # Tietosuoja (teacher 2026-11-04): no student data, no cookies, what the browser keeps and why
 
 
@@ -794,16 +845,18 @@ def chapter_crumbs(html, code, mod, seq, i, built_ids):
         elif l["id"] in built_ids: items += f'<li><a href="{l["id"]}.html">{label}</a></li>'
         else: items += f'<li><span class="soon">{label}</span></li>'
     items += "</ol>" if cur_ol else ""
-    more = "".join(f'<li><a href="{h}"{" aria-current=" + chr(34) + "page" + chr(34) if h == name else ""}><span class="n"></span><span>{esc(t)}</span></a></li>'
-                   for h, t in seq if not h.startswith(tuple(l["id"] + "." for l in slots)))
-    more += f'<li><a href="{code}.html"><span class="n"></span><span>{esc(T("lesson.chapter_up"))}</span></a></li>'
+    # Esimerkkikoe and Haastetehtävät numbered on after the chapters (17, 18 in a 16-chapter module), no "Moduulin
+    # sivulle" row: the path above leads there (teacher 2026-11-08)
+    extra = [(h, t) for h, t in seq if not h.startswith(tuple(l["id"] + "." for l in slots))]
+    more = "".join(f'<li><a href="{h}"{" aria-current=" + chr(34) + "page" + chr(34) if h == name else ""}><span class="n">{len(slots) + j}</span><span>{esc(t)}</span></a></li>'
+                   for j, (h, t) in enumerate(extra, 1))
     prev = seq[i - 1] if i else (f"{code}.html", T("lesson.chapter_up"))
     nxt = seq[i + 1] if i + 1 < len(seq) else (f"{code}.html", T("lesson.chapter_up"))
     arrow = lambda cls, h, label, short, t: (f'<a class="{cls}" href="{h}" aria-label="{esc(label)}: {esc(t)}">'
                                              + (f'‹<span class="lbl">{short}</span>' if cls == "prev" else f'<span class="lbl">{short}</span>›') + "</a>")
     crumbs = (f'<a href="index.html">{T("site.name")}</a> › <a href="{code}.html">{code}</a> › '
               f'<details class="ch-menu"><summary><span class="t">{here}</span></summary>'
-              f'<div class="ch-menu-panel">{items}<ol class="ch-menu-more">{more}</ol></div></details>'
+              f'<div class="ch-menu-panel">{items}' + (f'<ol class="ch-menu-more">{more}</ol>' if more else '') + '</div></details>'
               f'<span class="ch-arrows">{arrow("prev", prev[0], T("lesson.chapter_prev"), T("lesson.crumb_prev"), prev[1])}'
               f'{arrow("next", nxt[0], T("lesson.chapter_next"), T("lesson.crumb_next"), nxt[1])}</span>')
     return CRUMBS.sub(lambda m: m.group(1) + crumbs + m.group(2), html, count=1)
@@ -1266,6 +1319,16 @@ def build_language(lang):
     if FORMS and lang in SUBMISSION_LANGS:   # Palautukset (teacher 2026-11-06): where the chapters have the button
         (out / FORMS_PAGE).write_text(page(forms_title(), forms_page_body(), f'<a href="index.html">{T("site.name")}</a> › {esc(forms_title())}',
                                            FORMS_PAGE, T("site.returns_desc"), main_class="reading return-page"))
+    teacher_built = False
+    if lang == i18n.SOURCE and grading_file():   # Työkalut (teacher 2026-11-08): the grading tool and the classroom screen, linked from the footers
+        gf = grading_file()
+        shutil.rmtree(out / "tyokalut", ignore_errors=True)   # the tools beside the pages, in their own folder
+        if TOOLS.is_dir(): shutil.copytree(TOOLS, out / "tyokalut")
+        (out / "tyokalut").mkdir(exist_ok=True); shutil.copyfile(gf, out / "tyokalut" / gf.name)
+        (out / TEACHER_PAGE).write_text(page("Työkalut", teacher_page_body(gf.name), f'<a href="index.html">{T("site.name")}</a> › Työkalut',
+                                             TEACHER_PAGE, "Opettajan työkalut: luokkanäyttö ja arviointisivu.", main_class="reading teacher-page")
+                                        .replace(f"<!--fl-languages:{TEACHER_PAGE}-->", ""))   # Finnish only: no language control
+        teacher_built = True
     # Tietosuoja (teacher 2026-11-04): content/<lang>/tietosuoja.md (the Finnish where a language has none), linked from every footer
     priv_md = next((f for f in (ROOT / "content" / lang / "tietosuoja.md", ROOT / "content" / i18n.SOURCE / "tietosuoja.md") if f.is_file()), None)
     if priv_md:
@@ -1280,7 +1343,7 @@ def build_language(lang):
                 removed.append(lid if lang == i18n.SOURCE else f"{lang}/{lid}")
                 print(f"{'::warning::' if os.environ.get('GITHUB_ACTIONS') else 'WARNING:'} {old_page.relative_to(LIVE)} is on the live site but its reviews are not current ({why}); this build removes it")
     pre = out.relative_to(SITE).as_posix() + "/" if out != SITE else ""
-    expected.extend(pre + n for n in ["index.html", ABOUT] + ([PRIVACY] if priv_md else []) + ([concept_cards.APP] if concept_cards.modules(concept_cards.data_lang(lang)) else []) + ([reading_tips.PAGE] if reading_tips.SOURCE.is_file() else []) + [booklets.PAGE, STUDY_PAGE] + [f"{c}.html" for c, _ in modules] + [f"{c}.html" for c in local] + [f"{i}.html" for i in built_ids] + [f"{i}.html" for i in inv_built] + [f"{g}.html" for g in guide_built] + [practice.page_name(c) for c in practice_built] + [practice.page_name(c + practice.EXAM) for c in exam_built] + mixer_built
+    expected.extend(pre + n for n in ["index.html", ABOUT] + ([PRIVACY] if priv_md else []) + ([TEACHER_PAGE] if teacher_built else []) + ([concept_cards.APP] if concept_cards.modules(concept_cards.data_lang(lang)) else []) + ([reading_tips.PAGE] if reading_tips.SOURCE.is_file() else []) + [booklets.PAGE, STUDY_PAGE] + [f"{c}.html" for c, _ in modules] + [f"{c}.html" for c in local] + [f"{i}.html" for i in built_ids] + [f"{i}.html" for i in inv_built] + [f"{g}.html" for g in guide_built] + [practice.page_name(c) for c in practice_built] + [practice.page_name(c + practice.EXAM) for c in exam_built] + mixer_built
                     + [f"{u}.html" for u, ls in unit_pub.items() if lang in ls and not only])
     if SITE.name == "site.tmp" and lang in units.languages():   # a unit that lost its reviews leaves the site only with a warning
         for u in units.ids(lang):

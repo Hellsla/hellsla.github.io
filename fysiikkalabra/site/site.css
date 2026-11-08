@@ -518,6 +518,7 @@ details[data-locked]>summary{cursor:not-allowed;color:var(--ink-2)}
 fieldset.choice .feedback.is-answer,fieldset.choice[data-state] .feedback.is-answer{border-color:var(--accent);background:var(--accent-soft)}
 fieldset.choice li.is-answer>label{outline:2px solid var(--accent);outline-offset:2px;border-radius:8px}
 form.check output[data-state=close]{color:#7a5a00;font-weight:600}form.check output[data-state=close]::before{content:"≈ ";font-weight:700}
+.teacher-shot{margin:1rem 0 1.6rem}.teacher-shot img{display:block;max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px}.teacher-shot figcaption{margin-top:.4rem;font:var(--fs-ui) var(--sans);color:var(--ink-2)}
 .teacher-note{margin:.6rem 0;padding:.5rem .9rem;border-radius:8px;background:#fff6d6;border:1px solid #e6cf7a;font:600 var(--fs-ui) var(--sans)}
 @media print{.lock-note,.teacher-note{display:none}}
 /* the solution editor under an exercise (lesson.js 6; Abitti's own editor, loaded on the first click) */

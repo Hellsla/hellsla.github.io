@@ -70,7 +70,7 @@ threading.Thread(target=srv.serve_forever, daemon=True).start()
 BASE = f"http://127.0.0.1:{srv.server_port}/"
 
 # static: the script is on the FY3 chapter pages only
-pages_with = sorted(p.relative_to(SITE).as_posix() for p in SITE.rglob("*.html") if "palautus.js" in p.read_text(errors="ignore"))
+pages_with = sorted(p.relative_to(SITE).as_posix() for p in SITE.rglob("*.html") if not p.name.startswith("arviointi-") and "palautus.js" in p.read_text(errors="ignore"))   # the grading page to download (Työkalut) is the teacher's tool
 chapters = sorted(p.name for p in SITE.glob("fy*-*.html") if re.fullmatch(r"fy[1-8]-\d+\.html", p.name))
 reviews = sorted(p.name for p in SITE.glob("fy9-*.html"))   # the FY9 review lessons (teacher 2026-11-06, self-assessment of the review course)
 modules = [f"FY{i}.html" for i in range(1, 9)]   # the module pages: Tallenna työ / Avaa tallennettu työ (teacher 2026-11-07)

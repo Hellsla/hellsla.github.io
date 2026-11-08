@@ -197,7 +197,7 @@
     if (top === total) svg.append(sv('line', { x1: L, x2: W - R, y1: y(total), y2: y(total), class: 'pm-total' }), sv('text', { x: L - 6, y: y(total) + 4, 'text-anchor': 'end', class: 'pm-tick pm-tick-total' }, String(total)));
     else svg.append(sv('text', { x: L - 6, y: y(top) + 4, 'text-anchor': 'end', class: 'pm-tick' }, String(top)));
     if (GOAL) svg.append(sv('line', { x1: L, x2: W - R, y1: y(GOAL), y2: y(GOAL), class: 'pm-goal' }), sv('text', { x: L - 6, y: y(GOAL) + 4, 'text-anchor': 'end', class: 'pm-tick pm-tick-goal' }, String(GOAL)),
-      sv('text', { x: W - R - 4, y: y(GOAL) + 17, 'text-anchor': 'end', class: 'pm-tick pm-tick-goal' }, S('progress_goal', { goal: GOAL })));
+      sv('text', { x: L + 6, y: y(GOAL) - 6, 'text-anchor': 'start', class: 'pm-tick pm-tick-goal' }, S('progress_goal', { goal: GOAL })));
     const span = Math.round((d1 - d0) / DAY), every = Math.max(1, Math.ceil(span / Math.max(1, Math.floor((W - L - R) / 64))));
     const fmt = (d) => d.toLocaleDateString(LANG, { day: 'numeric', month: 'numeric' });
     for (let i = 0; i <= span; i += every) { const d = new Date(d0.getTime() + i * DAY); svg.append(sv('text', { x: x(d), y: H - 10, 'text-anchor': 'middle', class: 'pm-tick' }, fmt(d))); }
