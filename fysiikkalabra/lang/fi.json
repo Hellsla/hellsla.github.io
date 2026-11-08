@@ -147,7 +147,8 @@
     "returns_lead": "Valitse kurssi ja oma ryhmäsi. Palauta lomakkeella luvun ratkaisutiedosto, jonka latasit luvun Tehtävät-kohdasta (Lataa kaikki ratkaisut).",
     "returns_none": "Ei palautuksia tässä periodissa",
     "returns_aria": "{{code}}: ryhmien palautuslomakkeet",
-    "returns_desc": "Ryhmien palautuslomakkeet."
+    "returns_desc": "Ryhmien palautuslomakkeet.",
+    "tools": "Työkalut"
   },
   "lesson": {
     "photos": "Valokuvat",
@@ -3165,5 +3166,27 @@
     "print_h": "Näin tulostat",
     "print_1": "Tulosta vihkotulostuksena: paperi A4, sivukoko A5, kaksipuolinen. Tulostin järjestää sivut niin, että taitetut arkit muodostavat vihkon.",
     "print_2": "Ilman vihkotoimintoa tulosta kaksi sivua arkille kaksipuolisena, leikkaa arkit kahtia ja sido vasemmasta reunasta. Kuvat ovat värillisiä: nopeus, kiihtyvyys ja voima erottuvat väreistä."
+  },
+  "teacher": {
+    "title": "Työkalut",
+    "lead": "Opettajan työkalut: luokan näyttö ja palautusten arviointi omalla koneella.",
+    "desc": "Opettajan työkalut: luokkanäyttö ja arviointisivu.",
+    "screen_h": "Luokkanäyttö",
+    "screen_open": "Avaa luokkanäyttö",
+    "grading_h": "Arviointityökalu",
+    "grading_p": "Ruukkilabran palautukset arvioidaan omalla koneella tällä erillisellä sivulla. Se ei käytä verkkoa, eikä mikään opiskelijan tieto tule Ruukkilabraan.",
+    "download": "Lataa arviointisivu ({{name}})",
+    "update_p": "Lataa uusin versio aina, kun se päivittyy. Pisteet ja tuodut palautukset säilyvät selaimessa, kun avaat uuden version samassa selaimessa.",
+    "steps_h": "Näin arvioit",
+    "returns_page": "Palautukset",
+    "step_1": "Tee jokaiselle ryhmälle oma Forms-lomake, jonka nimi alkaa ryhmällä (esim. <i>FY3.2 lv 2026-27 Palauta ratkaisut</i>), ja lisää sen linkki sivulle {{returns}}.",
+    "step_2": "Lataa Drivesta lomakkeen vastauskansio <i>(File responses)</i> zip-tiedostona.",
+    "step_3": "Avaa arviointisivu Chromessa tai Edgessä ja valitse <b>Tuo tiedosto</b> → zip.",
+    "step_4": "Valitse tehtävä ja arvioi sen ratkaisut peräkkäin: numerot 0 ja 1, nuolet ← → muuttavat pisteitä, ↓ ↑ vaihtavat opiskelijaa.",
+    "step_5": "Vie pisteet CSV-tiedostona ja tee varmuuskopio ryhmästä koulun Driveen.",
+    "examples_h": "Esimerkkejä",
+    "shot_opiskelija": "Opiskelijan moduulisivu kuuden viikon jälkeen: tehdyt tehtävät päivä päivältä ja oma itsearvio luvuittain.",
+    "shot_opettaja-kooste": "Arviointisivun kooste: 30 keksittyä opiskelijaa kuuden viikon ajalta, tehdyt tehtävät, pisteet ja itsearvio.",
+    "shot_opettaja-arviointi": "Arviointi tehtävä kerrallaan: tehtävänanto, opiskelijan vastaus ja pisteet 0–1 nuolinäppäimillä."
   }
 }

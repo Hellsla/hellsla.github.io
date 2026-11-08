@@ -231,42 +231,36 @@ def grading_file():
 
 
 def teacher_page_body(name):
-    """Työkalut (teacher 2026-11-08): the classroom screen and the newest grading tool to download and the steps in short. No student data:
-    the tool reads the Drive zip on the teacher's own computer and keeps the points in that browser."""
-    pal = f'<a href="{FORMS_PAGE}">{esc(forms_title())}</a>' if FORMS else "Palautukset"
+    """Työkalut (teacher 2026-11-08; in English too, teacher 2026-11-08 "tee työkalusivu myös enkuksi"): the classroom
+    screen and the newest grading tool to download and the steps in short, texts in lang/<lang>.json "teacher". No
+    student data: the tool reads the Drive zip on the teacher's own computer and keeps the points in that browser."""
+    pal = f'<a href="{FORMS_PAGE}">{esc(forms_title())}</a>' if FORMS else esc(T("teacher.returns_page"))
     screen = (TOOLS / "luokkanaytto.html").is_file()
-    return ('<h1>Työkalut</h1>'
-            '<p class="lead">Opettajan työkalut: luokan näyttö ja palautusten arviointi omalla koneella.</p>'
-            + ('<section class="teacher-tool"><h2>Luokkanäyttö</h2>'
-               '<p><a class="pad-btn" href="tyokalut/luokkanaytto.html">Avaa luokkanäyttö</a></p></section>' if screen else '')
-            + '<section class="teacher-tool"><h2>Arviointityökalu</h2>'
-            '<p>Ruukkilabran palautukset arvioidaan omalla koneella tällä erillisellä sivulla. Se ei käytä verkkoa, eikä mikään '
-            'opiskelijan tieto tule Ruukkilabraan.</p>'
-            f'<p><a class="pad-btn teacher-download" href="tyokalut/{esc(name)}" download="{esc(name)}">Lataa arviointisivu ({esc(name)})</a></p>'
-            '<p>Lataa uusin versio aina, kun se päivittyy. Pisteet ja tuodut palautukset säilyvät selaimessa, kun avaat uuden '
-            'version samassa selaimessa.</p></section>'
-            '<section class="teacher-steps"><h2>Näin arvioit</h2><ol>'
-            f'<li>Tee jokaiselle ryhmälle oma Forms-lomake, jonka nimi alkaa ryhmällä (esim. <i>FY3.2 lv 2026-27 Palauta ratkaisut</i>), ja lisää sen linkki sivulle {pal}.</li>'
-            '<li>Lataa Drivesta lomakkeen vastauskansio <i>(File responses)</i> zip-tiedostona.</li>'
-            '<li>Avaa arviointisivu Chromessa tai Edgessä ja valitse <b>Tuo tiedosto</b> → zip.</li>'
-            '<li>Valitse tehtävä ja arvioi sen ratkaisut peräkkäin: numerot 0 ja 1, nuolet ← → muuttavat pisteitä, ↓ ↑ vaihtavat opiskelijaa.</li>'
-            '<li>Vie pisteet CSV-tiedostona ja tee varmuuskopio ryhmästä koulun Driveen.</li></ol></section>'
+    return (f'<h1>{esc(T("teacher.title"))}</h1>'
+            f'<p class="lead">{esc(T("teacher.lead"))}</p>'
+            + (f'<section class="teacher-tool"><h2>{esc(T("teacher.screen_h"))}</h2>'
+               f'<p><a class="pad-btn" href="tyokalut/luokkanaytto.html">{esc(T("teacher.screen_open"))}</a></p></section>' if screen else '')
+            + f'<section class="teacher-tool"><h2>{esc(T("teacher.grading_h"))}</h2>'
+            f'<p>{esc(T("teacher.grading_p"))}</p>'
+            f'<p><a class="pad-btn teacher-download" href="tyokalut/{esc(name)}" download="{esc(name)}">{esc(T("teacher.download", name=name))}</a></p>'
+            f'<p>{esc(T("teacher.update_p"))}</p></section>'
+            f'<section class="teacher-steps"><h2>{esc(T("teacher.steps_h"))}</h2><ol>'
+            + "".join(f'<li>{T(f"teacher.step_{i}", returns=pal)}</li>' for i in range(1, 6)) + '</ol></section>'   # the steps keep their <i> and <b>
             + teacher_examples())
 
 
-SHOTS = [("opiskelija", 1600, 702, "Opiskelijan moduulisivu kuuden viikon jälkeen: tehdyt tehtävät päivä päivältä ja oma itsearvio luvuittain."),
-         ("opettaja-kooste", 1190, 1140, "Arviointisivun kooste: 30 keksittyä opiskelijaa kuuden viikon ajalta, tehdyt tehtävät, pisteet ja itsearvio."),
-         ("opettaja-arviointi", 1600, 594, "Arviointi tehtävä kerrallaan: tehtävänanto, opiskelijan vastaus ja pisteet 0–1 nuolinäppäimillä.")]
+SHOTS = [("opiskelija", 1600, 702), ("opettaja-kooste", 1190, 1140), ("opettaja-arviointi", 1600, 594)]   # captions: lang "teacher.shot_<name>"
 
 
 def teacher_examples():
     """Example screenshots (teacher 2026-11-08): a student after six weeks and the grading view with 30 made-up students."""
     figs = []
-    for name, w, h, cap in SHOTS:
+    for name, w, h in SHOTS:
         if not (TOOLS / "kuvat" / f"{name}.webp").is_file(): continue
+        cap = T(f"teacher.shot_{name}")
         figs.append(f'<figure class="teacher-shot"><img src="tyokalut/kuvat/{name}.webp" width="{w}" height="{h}" loading="lazy" '
                     f'alt="{esc(cap)}"><figcaption>{esc(cap)}</figcaption></figure>')
-    return f'<section class="teacher-examples"><h2>Esimerkkejä</h2>{"".join(figs)}</section>' if figs else ''
+    return f'<section class="teacher-examples"><h2>{esc(T("teacher.examples_h"))}</h2>{"".join(figs)}</section>' if figs else ''
 
 
 def return_title(code):
@@ -449,8 +443,8 @@ def plain_tex(s):
 def texts(html):
     """{{t:site.footer}} in a template -> the text in the language being built (lang/<lang>.json)."""
     html = re.sub(r"\{\{t:([\w.]+)\}\}", lambda m: esc(T(m.group(1))), html)
-    if T.lang == i18n.SOURCE and grading_file():   # Työkalut in the Finnish footers (teacher 2026-11-08)
-        html = html.replace('<a href="tietosuoja.html">', f'<a href="{TEACHER_PAGE}">Työkalut</a><a href="tietosuoja.html">', 1)
+    if grading_file():   # Työkalut in every language's footers (teacher 2026-11-08)
+        html = html.replace('<a href="tietosuoja.html">', f'<a href="{TEACHER_PAGE}">{esc(T("site.tools"))}</a><a href="tietosuoja.html">', 1)
     return html
 
 
@@ -478,7 +472,7 @@ def planned_row(p):
 
 
 ABOUT = "tietoa.html"
-TEACHER_PAGE = "tyokalut.html"   # Työkalut (teacher 2026-11-08): the newest local grading page and the classroom screen, Finnish only
+TEACHER_PAGE = "tyokalut.html"   # Työkalut (teacher 2026-11-08): the newest local grading page and the classroom screen, in every language
 TOOLS = ROOT / "tyokalut"        # the classroom screen and its libraries (luokkanaytto.html, lib/), copied to site/tyokalut/
 PRIVACY = "tietosuoja.html"   # Tietosuoja (teacher 2026-11-04): no student data, no cookies, what the browser keeps and why
 
@@ -1320,14 +1314,14 @@ def build_language(lang):
         (out / FORMS_PAGE).write_text(page(forms_title(), forms_page_body(), f'<a href="index.html">{T("site.name")}</a> › {esc(forms_title())}',
                                            FORMS_PAGE, T("site.returns_desc"), main_class="reading return-page"))
     teacher_built = False
-    if lang == i18n.SOURCE and grading_file():   # Työkalut (teacher 2026-11-08): the grading tool and the classroom screen, linked from the footers
+    if grading_file():   # Työkalut (teacher 2026-11-08): the grading tool and the classroom screen, linked from the footers
         gf = grading_file()
-        shutil.rmtree(out / "tyokalut", ignore_errors=True)   # the tools beside the pages, in their own folder
-        if TOOLS.is_dir(): shutil.copytree(TOOLS, out / "tyokalut")
-        (out / "tyokalut").mkdir(exist_ok=True); shutil.copyfile(gf, out / "tyokalut" / gf.name)
-        (out / TEACHER_PAGE).write_text(page("Työkalut", teacher_page_body(gf.name), f'<a href="index.html">{T("site.name")}</a> › Työkalut',
-                                             TEACHER_PAGE, "Opettajan työkalut: luokkanäyttö ja arviointisivu.", main_class="reading teacher-page")
-                                        .replace(f"<!--fl-languages:{TEACHER_PAGE}-->", ""))   # Finnish only: no language control
+        if lang == i18n.SOURCE:   # the tools once, beside the Finnish pages in their own folder; the other languages' pages link there (rebase)
+            shutil.rmtree(out / "tyokalut", ignore_errors=True)
+            if TOOLS.is_dir(): shutil.copytree(TOOLS, out / "tyokalut")
+            (out / "tyokalut").mkdir(exist_ok=True); shutil.copyfile(gf, out / "tyokalut" / gf.name)
+        (out / TEACHER_PAGE).write_text(page(T("teacher.title"), teacher_page_body(gf.name), f'<a href="index.html">{T("site.name")}</a> › {esc(T("teacher.title"))}',
+                                             TEACHER_PAGE, T("teacher.desc"), main_class="reading teacher-page"))
         teacher_built = True
     # Tietosuoja (teacher 2026-11-04): content/<lang>/tietosuoja.md (the Finnish where a language has none), linked from every footer
     priv_md = next((f for f in (ROOT / "content" / lang / "tietosuoja.md", ROOT / "content" / i18n.SOURCE / "tietosuoja.md") if f.is_file()), None)
