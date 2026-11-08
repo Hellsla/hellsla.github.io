@@ -1420,7 +1420,8 @@ def build_language(lang):
         u = ahjo_data["ui"]; pages = [
             (ahjo.PAGE, ahjo_data["title"], ahjo.start_body(ahjo_data, planned, local, mod_titles, ahjo_ref), crumb + esc(ahjo_data["title"]), ahjo_data["description"]),
             (ahjo.BANK, u["bank_h"], ahjo.bank_body(ahjo_data, planned, local, mod_titles, ahjo_ref), home_crumb + esc(u["bank_h"]), u["bank_page_lead"]),
-            (ahjo.SAFETY, u["safety_page_title"], ahjo.safety_body(ahjo_data, lang, render_md), home_crumb + esc(u["safety_h"]), u["safety_page_lead"])]
+            (ahjo.SAFETY, u["safety_page_title"], ahjo.safety_body(ahjo_data, lang, render_md), home_crumb + esc(u["safety_h"]), u["safety_page_lead"]),
+            (ahjo.PROJECTS, u["projects_h"], ahjo.projects_body(ahjo_data, planned, local, mod_titles), home_crumb + esc(u["projects_h"]), u["projects_page_lead"])]
         for c in ahjo_data["courses"]:            # Ahjo 1 and Ahjo 2 each on its own page (teacher 2026-11-08)
             ct = ahjo.course_info(c["code"], planned, local)[0]
             pages.append((ahjo.course_page(c["code"]), f'{ct}: {c["subtitle"]}', ahjo.course_body(ahjo_data, c, planned, local, mod_titles, ahjo_ref),

@@ -98,7 +98,39 @@
     "shared_home": "What Ahjo is and what happens there.",
     "shared_bank": "Shared guides and materials in eight topics.",
     "shared_equipment": "The equipment coming to Ahjo.",
-    "shared_safety": "Rules and induction before you start working."
+    "shared_safety": "Rules and induction before you start working.",
+    "nav_projects": "Projects",
+    "projects_h": "Project bank",
+    "projects_page_lead": "Topics for Ahjo 1 mini projects, Ahjo 2 own projects and competition robotics.",
+    "projects_note": "All cards are still proposals. The teacher marks a card approved once the topic has been found suitable for Ahjo's equipment and schedule. A card is a starting point, and your own project may differ from it.",
+    "projects_approved_h": "Approved topics",
+    "projects_proposed_h": "Proposals",
+    "projects_none_approved": "The teacher has not approved any topic yet.",
+    "projects_count": {
+      "one": "{n} topic",
+      "other": "{n} topics"
+    },
+    "proj_status_ehdotus": "Proposal",
+    "proj_status_hyvaksytty": "Approved",
+    "proj_problem": "Problem",
+    "proj_skills": "You learn",
+    "proj_materials": "Materials",
+    "proj_success": "Measure of success",
+    "proj_next": "Further development",
+    "proj_subjects": "Other subjects",
+    "proj_inspiration": "Inspired by",
+    "proj_external": "a page on another site",
+    "proj_levels": [
+      "Beginner",
+      "Intermediate",
+      "Demanding"
+    ],
+    "proj_lessons": {
+      "one": "about {n} lesson",
+      "other": "about {n} lessons"
+    },
+    "projects_teaser": "Ready project topics, each with a problem, materials and a measurable measure of success.",
+    "projects_all": "All project topics"
   },
   "courses": [
     {
@@ -694,6 +726,547 @@
       "id": "onnettomuus",
       "title": "What to do in accidents and dangerous situations",
       "covers": "First aid, raising the alarm, stopping machines and reporting what happened."
+    }
+  ],
+  "projects": [
+    {
+      "id": "etaisyysvaroitin",
+      "status": "ehdotus",
+      "title": "Distance warning for a visually impaired person",
+      "summary": "A device attached to a cane or clothing that warns with vibration of an obstacle at head height.",
+      "problem": "A white cane finds obstacles on the ground but not those at head height, such as an open window or a sign.",
+      "skills": [
+        "distance measurement with an ultrasonic sensor",
+        "controlling a vibration motor",
+        "interviewing a user",
+        "3D modelling a mount"
+      ],
+      "materials": [
+        "Arduino Uno",
+        "ultrasonic distance sensor",
+        "vibration motor or buzzer",
+        "battery holder",
+        "3D-printed case"
+      ],
+      "success": "The device warns of an obstacle at head height from a distance of 1.0–1.5 metres at least 9 times out of 10, and false alarms are recorded.",
+      "next": "The strength of the vibration changes with the distance. The device is tested with the target group as agreed with the teacher.",
+      "level": 2,
+      "lessons": 8,
+      "courses": [
+        "AHJO2"
+      ],
+      "subjects": [
+        "physics",
+        "health education"
+      ],
+      "inspiration": [
+        {
+          "source": "Arduino Project Hub",
+          "title": "Smart Cane",
+          "url": "https://projecthub.arduino.cc/saurabhrobotic/smart-cane-36dcdd"
+        }
+      ]
+    },
+    {
+      "id": "co2-mittari",
+      "status": "ehdotus",
+      "title": "Classroom carbon dioxide meter",
+      "summary": "A meter shows the classroom's carbon dioxide level as traffic lights and records the measurements of the whole day.",
+      "problem": "Poor ventilation makes people tired, but nobody in the classroom notices when the room needs airing.",
+      "skills": [
+        "reading a CO₂ sensor",
+        "recording measurements and drawing a graph",
+        "checking the sensor in outdoor air",
+        "designing the display"
+      ],
+      "materials": [
+        "Arduino Uno",
+        "NDIR-type CO₂ sensor (to be acquired)",
+        "RGB LED or a small display",
+        "3D-printed case"
+      ],
+      "success": "In outdoor air the meter shows 400–450 ppm. It records the measurements of a whole lesson, and the graph shows the effect of airing.",
+      "next": "The level is compared with the number of students and with opening the windows. A shared map is made from several classrooms.",
+      "level": 2,
+      "lessons": 8,
+      "courses": [
+        "AHJO2"
+      ],
+      "subjects": [
+        "chemistry",
+        "biology",
+        "health education"
+      ],
+      "inspiration": [
+        {
+          "source": "Arduino Project Hub",
+          "title": "Air Monitor with 24h graph",
+          "url": "https://projecthub.arduino.cc/marcotrevisanmota/air-monitor-with-24h-graph-co2-humidity-temperature-00de62"
+        }
+      ]
+    },
+    {
+      "id": "aistiystavallinen-luokka",
+      "status": "ehdotus",
+      "title": "A sensory-friendly classroom",
+      "summary": "A small display calmly tells when the noise or lighting in the classroom becomes too stressful.",
+      "problem": "Noise and bright light are a strain for some students, and the situation is noticed only after concentration is already lost.",
+      "skills": [
+        "the micro:bit's sound and light sensors",
+        "choosing a threshold from measurements",
+        "interviewing a user",
+        "accessible design"
+      ],
+      "materials": [
+        "micro:bit",
+        "battery holder",
+        "case of cardboard or 3D-printed"
+      ],
+      "success": "The display reacts when the sound level goes over the chosen threshold. At least three test users understand what the display means without an explanation.",
+      "next": "The device records the day's sound levels, and the class agrees what the signal means in practice.",
+      "level": 1,
+      "lessons": 6,
+      "courses": [
+        "AHJO1",
+        "AHJO2"
+      ],
+      "subjects": [
+        "psychology",
+        "health education",
+        "visual arts"
+      ],
+      "inspiration": [
+        {
+          "source": "micro:bit Educational Foundation",
+          "title": "Sensory classroom",
+          "url": "https://microbit.org/teach/lessons/sensory-classroom/"
+        }
+      ]
+    },
+    {
+      "id": "planeettamonkija",
+      "status": "ehdotus",
+      "title": "A rover for another planet",
+      "summary": "A rover that avoids obstacles on its own, with its mass and parts budget limited as in a space probe.",
+      "problem": "A rover on Mars cannot be steered in real time, because a message takes minutes to arrive. The rover must avoid obstacles by itself.",
+      "skills": [
+        "motor control",
+        "using a distance sensor in decisions",
+        "designing within constraints",
+        "designing a test course"
+      ],
+      "materials": [
+        "Arduino Uno or a robotics kit",
+        "motor driver and two DC motors",
+        "distance sensor",
+        "body of cardboard or 3D-printed"
+      ],
+      "success": "The rover crosses a 3-metre obstacle course without anyone touching it in at least two attempts out of three, and its mass stays within the agreed limit.",
+      "next": "A message delay is added to the control, and the energy comes from a solar panel.",
+      "level": 2,
+      "lessons": 8,
+      "courses": [
+        "AHJO1",
+        "KILPAROBO"
+      ],
+      "subjects": [
+        "physics",
+        "mathematics"
+      ],
+      "inspiration": [
+        {
+          "source": "NASA JPL Education",
+          "title": "Robotics: Making a Self-Driving Rover",
+          "url": "https://www.jpl.nasa.gov/edu/resources/lesson-plan/robotics-making-a-self-driving-rover/"
+        }
+      ]
+    },
+    {
+      "id": "kevein-silta",
+      "status": "ehdotus",
+      "title": "The lightest load-bearing bridge",
+      "summary": "A 3D-printed bridge designed to carry as large a load as possible with as small a mass as possible.",
+      "problem": "A structure must be made strong without wasting material. The same question is solved when designing bridges, aircraft and packaging.",
+      "skills": [
+        "truss structures",
+        "3D modelling to dimensions",
+        "the effect of print orientation on strength",
+        "load testing"
+      ],
+      "materials": [
+        "3D printer and PLA",
+        "masses",
+        "two tables or supports 20 cm apart"
+      ],
+      "success": "The bridge spans a 20 cm gap and weighs at most 30 g. The result is the ratio of the load held to the bridge's mass, and it improves from the first version.",
+      "next": "Two truss types of the same mass are compared. The point where the structure breaks is predicted before the test.",
+      "level": 1,
+      "lessons": 6,
+      "courses": [
+        "AHJO1",
+        "AHJO2"
+      ],
+      "subjects": [
+        "physics",
+        "mathematics",
+        "visual arts"
+      ],
+      "inspiration": [
+        {
+          "source": "TeachEngineering",
+          "title": "Straw Bridges Design Challenge",
+          "url": "https://www.teachengineering.org/activities/ced-2679-straw-bridges-design-challenge-activity"
+        }
+      ]
+    },
+    {
+      "id": "energiankulutus",
+      "status": "ehdotus",
+      "title": "Monitoring the school's energy use",
+      "summary": "A measuring device records lighting and temperature for a day and night and reveals where energy is wasted.",
+      "problem": "Lights and devices are left on in empty rooms, but nobody knows how often and how much.",
+      "skills": [
+        "planning a long measurement",
+        "collecting data and reading a graph",
+        "calculating energy and power",
+        "reporting the results"
+      ],
+      "materials": [
+        "micro:bit",
+        "battery holder",
+        "case"
+      ],
+      "success": "The device records lighting and temperature for at least 24 hours. The group calculates how much energy would be saved if unnecessary lights were switched off.",
+      "next": "The saving is calculated in euros, and more measuring points are added. The results are presented to the people responsible for the school building.",
+      "level": 1,
+      "lessons": 6,
+      "courses": [
+        "AHJO1",
+        "AHJO2"
+      ],
+      "subjects": [
+        "physics",
+        "geography",
+        "social studies"
+      ],
+      "inspiration": [
+        {
+          "source": "micro:bit Educational Foundation",
+          "title": "Energy awareness",
+          "url": "https://microbit.org/teach/lessons/energy-awareness/"
+        }
+      ]
+    },
+    {
+      "id": "kastelu",
+      "status": "ehdotus",
+      "title": "Automatic plant watering",
+      "summary": "A system measures the moisture of a pot and waters the plant when the soil dries.",
+      "problem": "The classroom plants dry out during holidays, and overwatering is as harmful as drought.",
+      "skills": [
+        "calibrating a soil moisture sensor",
+        "controlling a pump with a transistor",
+        "control with thresholds",
+        "keeping water safely away from electronics"
+      ],
+      "materials": [
+        "Arduino Uno",
+        "capacitive soil moisture sensor",
+        "small 5 V water pump",
+        "MOSFET module",
+        "tube and water tank"
+      ],
+      "success": "The moisture of the pot stays in the chosen range for a week without anyone watering it, and the moisture readings are recorded.",
+      "next": "The growth of a watered and an unwatered plant is compared. The system is powered by a solar panel.",
+      "level": 2,
+      "lessons": 8,
+      "courses": [
+        "AHJO2"
+      ],
+      "subjects": [
+        "biology",
+        "geography"
+      ],
+      "inspiration": [
+        {
+          "source": "Arduino Project Hub",
+          "title": "Plant Waterer with Arduino Uno",
+          "url": "https://projecthub.arduino.cc/james_c_bradley/plant-waterer-with-arduino-uno-30ace0"
+        },
+        {
+          "source": "micro:bit Educational Foundation",
+          "title": "Helping plants grow",
+          "url": "https://microbit.org/teach/lessons/helping-plants-grow/"
+        }
+      ]
+    },
+    {
+      "id": "viivanseuraaja",
+      "status": "ehdotus",
+      "title": "Line-following robot with feedback control",
+      "summary": "A robot follows a tape line, and its steering is improved with feedback control using measurements.",
+      "problem": "A simple robot wobbles from side to side over the line and is slow. How can the steering be made smooth and fast?",
+      "skills": [
+        "reflectance sensors",
+        "P and PD control",
+        "tuning parameters by measuring",
+        "timing and comparison"
+      ],
+      "materials": [
+        "Arduino Uno or a robotics kit",
+        "reflectance sensor array (3–5 sensors)",
+        "motor driver and two motors",
+        "a track made of tape"
+      ],
+      "success": "The robot goes round the track without leaving it, and the lap time improves by at least 20 % from the first working version.",
+      "next": "The robot recognises junctions and chooses its route. The control parameters are found with the help of a graph.",
+      "level": 3,
+      "lessons": 10,
+      "courses": [
+        "AHJO2",
+        "KILPAROBO"
+      ],
+      "subjects": [
+        "mathematics",
+        "physics"
+      ],
+      "inspiration": [
+        {
+          "source": "Arduino Project Hub",
+          "title": "Line Follower Robot with PID Controller",
+          "url": "https://projecthub.arduino.cc/anova9347/line-follower-robot-with-pid-controller-01813f"
+        }
+      ]
+    },
+    {
+      "id": "valaiseva-tekstiili",
+      "status": "ehdotus",
+      "title": "Light-up e-textile",
+      "summary": "A sewn cuff or reflector accessory whose lights switch on with a magnetic switch.",
+      "problem": "A cyclist or pedestrian is hard to see in the dark, and an ordinary reflector does not appeal to everyone.",
+      "skills": [
+        "a circuit sewn with conductive thread",
+        "avoiding short circuits in fabric",
+        "magnetic switch",
+        "design and user testing"
+      ],
+      "materials": [
+        "conductive sewing thread",
+        "sewable LEDs",
+        "coin cell and holder",
+        "fabric or felt",
+        "magnet or reed switch",
+        "sewing machine or hand sewing"
+      ],
+      "success": "All LEDs light from the switch 20 times in a row. The light can be seen in the dark from at least 50 metres, and the product still works after a week of use.",
+      "next": "A flashing mode is added with a micro:bit. A price and material calculation is made for the product.",
+      "level": 1,
+      "lessons": 6,
+      "courses": [
+        "AHJO1",
+        "AHJO2"
+      ],
+      "subjects": [
+        "visual arts",
+        "health education"
+      ],
+      "inspiration": [
+        {
+          "source": "Instructables",
+          "title": "Light-up LED Cuff Bracelet With Magnetic Switch",
+          "url": "https://www.instructables.com/Light-up-LED-Cuff-Bracelet-With-Magnetic-Switch-e-/"
+        }
+      ]
+    },
+    {
+      "id": "tormaystesti",
+      "status": "ehdotus",
+      "title": "Crash test car with an accelerometer",
+      "summary": "A model car crashes into an obstacle, and a micro:bit on board measures the passenger's acceleration.",
+      "problem": "How should the front of a car be built so that the force on the passenger in a crash is as small as possible?",
+      "skills": [
+        "measuring and recording acceleration",
+        "impulse and momentum",
+        "designing a crumple structure",
+        "repeated measurements"
+      ],
+      "materials": [
+        "micro:bit",
+        "trolley or model car",
+        "ramp",
+        "crumple zones of cardboard or 3D-printed"
+      ],
+      "success": "The crumple zone reduces the largest measured acceleration by at least 30 % compared with a rigid front from the same ramp height, with the measurement repeated three times.",
+      "next": "The measured acceleration is compared with a value calculated from the change in momentum. The structure is tried with different materials.",
+      "level": 2,
+      "lessons": 6,
+      "courses": [
+        "AHJO1",
+        "AHJO2"
+      ],
+      "subjects": [
+        "physics"
+      ],
+      "inspiration": [
+        {
+          "source": "TeachEngineering",
+          "title": "Creative Crash Testing Car Challenge",
+          "url": "https://www.teachengineering.org/activities/ced-2678-creative-crash-testing-car-challenge-activity"
+        }
+      ]
+    },
+    {
+      "id": "tuuliturbiini",
+      "status": "ehdotus",
+      "title": "Wind turbine blades",
+      "summary": "The group designs and prints blades for a model turbine and finds out by measuring which shape gives the most power.",
+      "problem": "The shape, angle and number of blades affect how much energy is taken from the wind. Which matters most?",
+      "skills": [
+        "3D modelling a blade",
+        "measuring power from voltage and current",
+        "an experiment with one variable",
+        "presenting results as a graph"
+      ],
+      "materials": [
+        "3D printer",
+        "small DC generator or motor",
+        "load resistor",
+        "multimeter",
+        "fan"
+      ],
+      "success": "The group compares at least three blade versions with the same wind and load. The power of every version is measured three times.",
+      "next": "The load resistor is varied to find the load that gives the most power. The result is compared with the power curve of a real wind turbine.",
+      "level": 2,
+      "lessons": 8,
+      "courses": [
+        "AHJO2"
+      ],
+      "subjects": [
+        "physics",
+        "geography"
+      ],
+      "inspiration": [
+        {
+          "source": "TeachEngineering",
+          "title": "Does It Cut It? Wind Turbine Blade Design",
+          "url": "https://www.teachengineering.org/activities/ucd_windturbine_activity1"
+        }
+      ]
+    },
+    {
+      "id": "valosyntetisaattori",
+      "status": "ehdotus",
+      "title": "A synthesiser played with light",
+      "summary": "An instrument whose pitch and tone change when you shade light sensors with your hands.",
+      "problem": "Can an instrument be made so that it is played without keys and every member of the group can play it?",
+      "skills": [
+        "voltage division with a light-dependent resistor",
+        "reading an analogue input",
+        "frequency and pitch",
+        "designing the case"
+      ],
+      "materials": [
+        "Arduino Uno",
+        "light-dependent resistors or potentiometers",
+        "small speaker and amplifier module",
+        "case"
+      ],
+      "success": "The instrument can play a scale of at least one octave, and the frequencies of the notes differ from the target by less than 2 % as measured with a tuner app.",
+      "next": "A record and play mode is added. A piece of the group's own is performed on the instrument.",
+      "level": 2,
+      "lessons": 8,
+      "courses": [
+        "AHJO1",
+        "AHJO2"
+      ],
+      "subjects": [
+        "music",
+        "physics"
+      ],
+      "inspiration": [
+        {
+          "source": "Arduino Project Hub",
+          "title": "Building the Auduino Synthesiser",
+          "url": "https://projecthub.arduino.cc/chariscat/building-the-auduino-synthesiser-arduino-based-diy-synth-7b8545"
+        }
+      ]
+    },
+    {
+      "id": "proteesikasi",
+      "status": "ehdotus",
+      "title": "A prosthetic hand that feels its grip",
+      "summary": "A 3D-printed hand whose fingers are moved by servos and whose grip stops when a force sensor feels the contact.",
+      "problem": "A prosthesis must be able to grip both a heavy and a fragile object without the user having to watch the hand all the time.",
+      "skills": [
+        "controlling servos",
+        "reading a force sensor",
+        "3D modelling a tendon mechanism",
+        "user-centred design and ethics"
+      ],
+      "materials": [
+        "Arduino Uno",
+        "2–5 servos",
+        "force sensor (FSR)",
+        "fishing line",
+        "3D-printed fingers and palm"
+      ],
+      "success": "The hand grips a plastic cup and lifts it without crushing it. The grip stops when the force sensor's reading goes over the chosen limit at least 9 times out of 10.",
+      "next": "The hand is controlled with a muscle sensor or buttons. It is compared with real prostheses by price and functions.",
+      "level": 3,
+      "lessons": 12,
+      "courses": [
+        "AHJO2"
+      ],
+      "subjects": [
+        "biology",
+        "health education",
+        "philosophy"
+      ],
+      "inspiration": [
+        {
+          "source": "TeachEngineering",
+          "title": "Get a Grip: Smart Prosthetic Hand",
+          "url": "https://www.teachengineering.org/activities/uok-3021-smart-prosthetic-hand-grip-arduino-activity"
+        }
+      ]
+    },
+    {
+      "id": "sahkoauto",
+      "status": "ehdotus",
+      "title": "Model electric car",
+      "summary": "The group builds an electric model car within a budget and improves its speed and energy use on the basis of measurements.",
+      "problem": "In an electric car the motor, gearing, mass and air resistance together decide how far the battery takes you. What should be improved first?",
+      "skills": [
+        "motor and gear ratio",
+        "measuring speed and energy",
+        "3D-printed wheels and gears",
+        "budgeting and reporting"
+      ],
+      "materials": [
+        "DC motor",
+        "batteries",
+        "3D-printed wheels and gears",
+        "body material",
+        "timing"
+      ],
+      "success": "The car travels 5 metres in a straight line. The group measures the average speed and the energy used, and the last version is at least 20 % better than the first by the chosen measure.",
+      "next": "The group compares two gear ratios and calculates the car's efficiency. The cost calculation is presented as a sales pitch for a product.",
+      "level": 2,
+      "lessons": 10,
+      "courses": [
+        "AHJO2"
+      ],
+      "subjects": [
+        "physics",
+        "social studies"
+      ],
+      "inspiration": [
+        {
+          "source": "TeachEngineering",
+          "title": "Creative Engineering: Electric Vehicle Design",
+          "url": "https://www.teachengineering.org/activities/cub-2825-creative-engineering-electric-vehicle-design"
+        }
+      ]
     }
   ],
   "links": [

@@ -1568,3 +1568,20 @@ main.ahjo-page{max-width:68rem;font-family:var(--ahjo-text)}
 .ahjo-shared-icon{padding:7px;box-sizing:border-box;border-radius:12px;background:var(--kr-pink-soft);color:var(--kr-navy)}
 .ahjo-shared-t{font:700 1.0625rem/1.3 var(--ahjo-head);color:var(--kr-navy)}
 .ahjo-shared-x{font-size:var(--fs-ui);color:var(--ink-2)}
+.ahjo-page :is(.ahjo-topics,.ahjo-goals,.ahjo-lessons,.ahjo-course-res,.ahjo-res-list),.ahjo-page :is(.ahjo-plan-note,.ahjo-more,.ahjo-safety-item,.ahjo-empty,.ahjo-proj-sum){max-width:44rem}
+/* the project bank (scripts/ahjo.py projects_body): one card per topic, a proposal until the teacher approves it */
+.ahjo-count{font-size:var(--fs-ui);font-weight:600;color:var(--ink-2);margin-left:.35rem;white-space:nowrap}
+.ahjo-proj-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:1rem}
+@media (min-width:60rem){.ahjo-proj-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.ahjo-proj{padding:1rem 1.15rem;border:1px solid var(--line);border-top:4px solid var(--kr-pink);border-radius:var(--card-radius);background:var(--paper,#fff);max-width:44rem;min-width:0}
+.ahjo-proj.approved{border-top-color:var(--kr-navy)}
+.ahjo-proj-head{display:flex;align-items:flex-start;justify-content:space-between;gap:.5rem}
+.ahjo-proj-head h3{margin:0;font-size:1.2rem;line-height:1.3;color:var(--kr-navy)}
+.ahjo-proj-head .ahjo-badge{flex:none;margin:0}
+.ahjo-proj-sum{margin:.45rem 0 .55rem}
+.ahjo-proj-meta{display:flex;flex-wrap:wrap;gap:.3rem;margin:0 0 .5rem;font-size:var(--fs-small)}
+.ahjo-proj-dl{margin:0;font-size:var(--fs-ui)}
+.ahjo-proj-dl dt{font-weight:700;color:var(--kr-navy);margin-top:.55rem}
+.ahjo-proj-dl dd{margin:.1rem 0 0;overflow-wrap:anywhere}
+.ahjo-ext{color:var(--ink-2);font-size:var(--fs-small);white-space:nowrap}
+.ahjo-ext::before{content:"↗ "}

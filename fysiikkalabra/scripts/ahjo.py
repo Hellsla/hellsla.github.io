@@ -11,6 +11,7 @@ without one shows the Finnish (fi-easy). build.py renders three pages in every l
                           and the studies linked to Ahjo
   ahjo-materiaalit.html   the resource bank: every resource under its one category, with the courses that use it
   ahjo-turvallisuus.html  the safety section: its topics and their status
+  ahjo-projektit.html     the project bank: project cards, approved first, then proposals
 
 Fields of ahjo.json (texts in the file's language):
   title, eyebrow, lead, opening, description   the start page's heading and its lines
@@ -46,6 +47,11 @@ Fields of ahjo.json (texts in the file's language):
                            "valmisteilla" (default) shows the topic as being prepared; "hyvaksytty" needs approved_by,
                            date and the text in content/<lang>/ahjo/turvallisuus/<id>.md (the Finnish as fallback).
                            Only the school's responsible staff approve a topic; nothing here is an approval system
+  projects                 [{id, status, title, summary, problem, skills, materials, success, next, level, lessons, courses,
+                           subjects, inspiration: [{source, title, url}]}]: the project bank's cards (teacher 2026-11-08),
+                           original texts with a link to the page that inspired each (https on a site in SOURCE_HOSTS;
+                           checked by hand when written). level 1–3, lessons about how many 75-minute lessons. Status
+                           "ehdotus" (a proposal) until the teacher sets "hyvaksytty" with approved_by and date
   links                    [{course, text, categories}]: Ruukkilabra studies linked to Ahjo (existing codes only)
 
   python scripts/ahjo.py   validate (also run by build.py)
@@ -83,7 +89,11 @@ def mark_svg():
     return ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48"><title>Ahjo Makerspace</title>'
             '<rect x="0.5" y="0.5" width="47" height="47" rx="12" fill="#fffdf8" stroke="#e3dccb"/>'
             '<svg x="5" y="5" width="38" height="38" viewBox="153 9 636 636">' + "".join(paths[:3]) + '</svg></svg>\n')
-PAGE, BANK, SAFETY = "ahjo.html", "ahjo-materiaalit.html", "ahjo-turvallisuus.html"
+PAGE, BANK, SAFETY, PROJECTS = "ahjo.html", "ahjo-materiaalit.html", "ahjo-turvallisuus.html", "ahjo-projektit.html"
+PROJECT_STATUSES = ("ehdotus", "hyvaksytty")
+# the sites a project card may name as its inspiration (each link checked by hand when the card was written)
+SOURCE_HOSTS = ("projecthub.arduino.cc", "microbit.org", "www.jpl.nasa.gov", "www.teachengineering.org", "www.instructables.com",
+                "projects.raspberrypi.org", "fabacademy.org", "www.prusa3d.com", "dschool.stanford.edu", "learn.sparkfun.com")
 EQUIPMENT_STATUSES = ("tuleva", "kaytossa")
 RES_STATUSES = ("planned", "draft", "ready")
 PAGED = ("draft", "ready")        # a guide with its own page
@@ -157,7 +167,8 @@ def validate(lessons, investigations, guides, planned_codes, local_codes, module
     src = load()
     shape = lambda d: ([c["code"] for c in d["courses"]], [c["id"] for c in d["categories"]],
                        [r.get("ref") or r.get("id") or "safety" for r in d["resources"]], [g["id"] for g in d["equipment"]],
-                       [len(g["items"]) for g in d["equipment"]], [(len(c.get("goals", [])), len(c.get("lessons", []))) for c in d["courses"]], [s["id"] for s in d["safety"]], [l["course"] for l in d["links"]], sorted(d["ui"]))
+                       [len(g["items"]) for g in d["equipment"]], [(len(c.get("goals", [])), len(c.get("lessons", []))) for c in d["courses"]], [s["id"] for s in d["safety"]], [l["course"] for l in d["links"]], sorted(d["ui"]),
+                       [(p["id"], p["status"], p["level"], p["lessons"], p["courses"], [i["url"] for i in p["inspiration"]], len(p["skills"]), len(p["materials"]), len(p["subjects"])) for p in d.get("projects", [])])
     files = [SOURCE] + sorted((ROOT / "content").glob("*/ahjo.json"))
     for f in files:
         name = f.relative_to(ROOT)
@@ -222,6 +233,24 @@ def validate(lessons, investigations, guides, planned_codes, local_codes, module
             if st not in SAFETY_STATUSES: errs.append(f"{name}: safety {s['id']}: status must be one of {SAFETY_STATUSES}")
             if st == "hyvaksytty" and not (s.get("approved_by") and s.get("date") and safety_file(s["id"], i18n.SOURCE)):
                 errs.append(f"{name}: safety {s['id']}: approved needs approved_by, date and content/fi/ahjo/turvallisuus/{s['id']}.md")
+        pids = [p.get("id") for p in d.get("projects", [])]
+        if len(set(pids)) != len(pids): errs.append(f"{name}: repeated project ids")
+        for p in d.get("projects", []):
+            pid = p.get("id") or "?"
+            if not re.fullmatch(r"[a-z0-9-]+", pid): errs.append(f"{name}: project {pid}: id must be lowercase-with-hyphens")
+            for k in ("title", "summary", "problem", "skills", "materials", "success", "next", "courses", "inspiration"):
+                if not p.get(k): errs.append(f"{name}: project {pid}: no {k}")
+            if p.get("status") not in PROJECT_STATUSES: errs.append(f"{name}: project {pid}: status must be one of {PROJECT_STATUSES}")
+            if p.get("status") == "hyvaksytty" and not (p.get("approved_by") and p.get("date")):
+                errs.append(f"{name}: project {pid}: only the teacher approves a card: approved_by and date")
+            if p.get("level") not in (1, 2, 3): errs.append(f"{name}: project {pid}: level 1, 2 or 3")
+            if not isinstance(p.get("lessons"), int) or not 1 <= p["lessons"] <= 16: errs.append(f"{name}: project {pid}: lessons 1–16")
+            for code in p.get("courses", []):
+                if code not in known_codes: errs.append(f"{name}: project {pid}: unknown course {code}")
+            for i in p.get("inspiration", []):
+                host = re.match(r"https://([^/]+)/", i.get("url", ""))
+                if not host or host.group(1) not in SOURCE_HOSTS: errs.append(f"{name}: project {pid}: inspiration {i.get('url')!r} is not https on a known source site")
+                if not i.get("title") or not i.get("source"): errs.append(f"{name}: project {pid}: inspiration needs title and source")
         for l in d["links"]:
             if l["course"] not in known_codes: errs.append(f"{name}: link to unknown course {l['course']}")
             for c in l.get("categories", []):
@@ -236,7 +265,7 @@ def count(ui, key, n): return ui[key]["one" if n == 1 else "other"].replace("{n}
 
 def nav(d, current):
     u = d["ui"]
-    items = [(PAGE, u["nav_home"]), (PAGE + "#opintojaksot", u["nav_courses"]), (BANK, u["nav_bank"]),
+    items = [(PAGE, u["nav_home"]), (PAGE + "#opintojaksot", u["nav_courses"]), (BANK, u["nav_bank"]), (PROJECTS, u["nav_projects"]),
              (PAGE + "#laitteisto", u["nav_equipment"]), (SAFETY, u["nav_safety"])]
     return (f'<nav class="ahjo-nav" aria-label="{esc(u["nav_label"])}"><ul>'
             + "".join(f'<li><a href="{h}"{" aria-current=\"page\"" if h == current else ""}>{esc(t)}</a></li>' for h, t in items)
@@ -327,7 +356,7 @@ def start_body(d, planned, local, modules, ref):
             f'<p class="ahjo-sec-lead">{esc(u["bank_lead"])}</p><ul class="ahjo-cats">{"".join(cats)}</ul>'
             f'<p class="ahjo-more"><a href="{BANK}">{esc(u["bank_all"])}<span aria-hidden="true"> →</span></a></p></section>')
     return (hero(d, d["title"], d["lead"], PAGE, big=True, extra=f'<p class="ahjo-opening">{esc(d["opening"])}</p>')
-            + courses + bank + equipment_section(d)
+            + courses + bank + projects_teaser(d) + equipment_section(d)
             + (f'<section class="ahjo-sec ahjo-safety-teaser" id="turvallisuus" aria-labelledby="h-ahjo-safety">{icon("shield", "ahjo-icon ahjo-icon-big")}'
                f'<div><h2 id="h-ahjo-safety">{esc(u["safety_h"])}</h2><p>{esc(u["safety_lead"])}</p><p class="ahjo-draft-short">{esc(u["safety_draft_note"].split(". ")[0])}.</p>'
                f'<p class="ahjo-more"><a href="{SAFETY}">{esc(u["safety_open"])}<span aria-hidden="true"> →</span></a></p></div></section>')
@@ -355,6 +384,7 @@ def course_body(d, c, planned, local, modules, ref):
     eq = "#laitteisto"
     tiles = [(PAGE, f'<img class="ahjo-shared-mark" src="{MARK_SRC}" alt="" width="40" height="40" aria-hidden="true">', d["title"], u["shared_home"]),
              (BANK, icon("box", "ahjo-icon ahjo-shared-icon"), u["bank_h"], u["shared_bank"]),
+             (PROJECTS, icon("cube", "ahjo-icon ahjo-shared-icon"), u["projects_h"], u["projects_teaser"]),
              (PAGE + eq, icon("tools", "ahjo-icon ahjo-shared-icon"), u["equipment_h_" + d["equipment_status"]], u["shared_equipment"]),
              (SAFETY, icon("shield", "ahjo-icon ahjo-shared-icon"), u["safety_h"], u["shared_safety"])]
     out += (f'<section class="ahjo-sec ahjo-shared" aria-labelledby="h-{k}-shared"><h2 id="h-{k}-shared">{esc(u["shared_h"])}</h2>'
@@ -435,6 +465,49 @@ def bank_body(d, planned, local, modules, ref):
                     f'<div class="ahjo-cat-top"><div><h2 id="h-cat-{c["id"]}">{icon(c["icon"])}{esc(c["title"])}</h2><p class="ahjo-sec-lead">{esc(c["text"])}</p></div>'
                     f'<div class="ahjo-cat-art">{art(c["id"])}</div></div>{body}</section>')
     return hero(d, u["bank_h"], u["bank_page_lead"], BANK) + "".join(secs)
+
+
+def project_card(u, p, names):
+    """One project card: what it is, the problem, what you learn and need, how success is measured, where it can go,
+    and the page that inspired it (a link out of Ruukkilabra, marked as such; the card's text is our own)."""
+    ok = p["status"] == "hyvaksytty"
+    meta = (f'<span class="ahjo-chip">{esc(u["proj_levels"][p["level"] - 1])}</span>'
+            f'<span class="ahjo-chip">{esc(count(u, "proj_lessons", p["lessons"]))}</span>' + chips(p["courses"], names))
+    src = "; ".join(f'<a href="{esc(i["url"])}" rel="external noopener">{esc(i["title"])}</a> ({esc(i["source"])})' for i in p["inspiration"])
+    rows = [(u["proj_problem"], esc(p["problem"])), (u["proj_skills"], esc(", ".join(p["skills"]))), (u["proj_materials"], esc(", ".join(p["materials"]))),
+            (u["proj_success"], esc(p["success"])), (u["proj_next"], esc(p["next"]))]
+    if p.get("subjects"): rows.append((u["proj_subjects"], esc(", ".join(p["subjects"]))))
+    rows.append((u["proj_inspiration"], f'{src} <span class="ahjo-ext">{esc(u["proj_external"])}</span>'))
+    return (f'<article class="ahjo-proj{" approved" if ok else ""}" id="{p["id"]}" aria-labelledby="h-proj-{p["id"]}">'
+            f'<div class="ahjo-proj-head"><h3 id="h-proj-{p["id"]}">{esc(p["title"])}</h3>'
+            f'<p class="ahjo-badge{"" if ok else " planned"}">{esc(u["proj_status_" + p["status"]])}</p></div>'
+            f'<p class="ahjo-proj-sum">{esc(p["summary"])}</p><p class="ahjo-proj-meta">{meta}</p>'
+            f'<dl class="ahjo-proj-dl">' + "".join(f'<dt>{esc(k)}</dt><dd>{v}</dd>' for k, v in rows) + '</dl></article>')
+
+
+def projects_teaser(d):
+    """The start page's pointer to the project bank, with how many topics it has."""
+    u = d["ui"]; ps = d.get("projects", [])
+    if not ps: return ""
+    return (f'<section class="ahjo-sec" id="projektit" aria-labelledby="h-ahjo-projects"><h2 id="h-ahjo-projects">{esc(u["projects_h"])}'
+            f' <span class="ahjo-count">{esc(count(u, "projects_count", len(ps)))}</span></h2><p class="ahjo-sec-lead">{esc(u["projects_teaser"])}</p>'
+            f'<p class="ahjo-more"><a href="{PROJECTS}">{esc(u["projects_all"])}<span aria-hidden="true"> →</span></a></p></section>')
+
+
+def projects_body(d, planned, local, modules):
+    """The project bank (ahjo-projektit.html): the approved topics first, then the proposals; every card a proposal
+    ("ehdotus") until the teacher marks it approved ("hyvaksytty", with approved_by and date)."""
+    u = d["ui"]; names = lambda c: course_name(c, planned, local, modules)
+    ps = d.get("projects", [])
+    ok = [p for p in ps if p["status"] == "hyvaksytty"]; prop = [p for p in ps if p["status"] != "hyvaksytty"]
+    sec = lambda sid, h, items, empty: (f'<section class="ahjo-sec" id="{sid}" aria-labelledby="h-{sid}"><h2 id="h-{sid}">{esc(h)}'
+                                        f' <span class="ahjo-count">{esc(count(u, "projects_count", len(items)))}</span></h2>'
+                                        + (f'<div class="ahjo-proj-grid">{"".join(project_card(u, p, names) for p in items)}</div>' if items else f'<p class="ahjo-empty">{esc(empty)}</p>')
+                                        + '</section>')
+    return (hero(d, u["projects_h"], u["projects_page_lead"], PROJECTS)
+            + f'<p class="ahjo-draft" role="note">{icon("notebook")}<span>{esc(u["projects_note"])}</span></p>'
+            + sec("hyvaksytyt", u["projects_approved_h"], ok, u["projects_none_approved"])
+            + (sec("ehdotukset", u["projects_proposed_h"], prop, "") if prop else ""))
 
 
 def safety_body(d, lang, render_md):
