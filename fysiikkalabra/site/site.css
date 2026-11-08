@@ -87,6 +87,8 @@ header.top nav>a:active,.lang-menu>summary:active{background:var(--line)}
 @media (max-width:29.99rem){header.top nav>a.nav-modules{display:none}.brand-name small{letter-spacing:.06em}.lang-menu>summary{padding:0 10px}}
 @media (max-width:39.99rem){header.top nav>a.nav-reading,header.top nav>a.nav-study,header.top nav>a.nav-booklets{display:none}}   /* Lukuvinkit gives way first on a phone; the footer of every page links to it */
 @media (max-width:51.99rem){header.top nav>a.nav-about{display:none}}   /* Sivustosta (front page only) needs about 800 px to keep the header on one row; the footer links it */
+@media (max-width:49.99rem){header.top nav>a.nav-modules~a.nav-study{display:none}}   /* Näin opiskelet beside Moduulit (every page but the front, teacher 2026-11-08) needs about 800 px for one header row in English; the front page, without Moduulit, keeps it from 640 px */
+header.top nav>a[aria-current="page"]{color:var(--accent-deep);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:.4em}
 .visually-hidden{position:absolute!important;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 /* the language control: the current language on a quiet button, the others in a small panel (a <details>, no script) */
 .lang-menu{position:relative;margin:0}
@@ -198,20 +200,63 @@ main.home+footer.bottom{margin-top:1.4rem}   /* 1.75rem left the Finnish page 2 
   .plan-list{margin-top:60px}   /* the gap one row high, so the planned courses' rows stay level with the modules' (teacher 2026-11-04) */
 }
 @media (min-width:700px) and (max-width:63.99rem){.mod-name{font-size:.9375rem;line-height:1.25}.mod-q{font-size:.8125rem;line-height:1.3}.mod-row{gap:.6rem;padding-inline:.4rem}}
-/* the learning model (moved to the top of Lukuvinkit 2026-11-03): the six stage names the lessons use, a compact
-   numbered sequence on thin rules, two columns in the reading column, more tips behind a disclosure */
-.path{margin:0 0 2.6rem}
-.path h1,.path h2{margin-top:.6rem}
-.path .section-lead{margin-bottom:.4rem}
-.path-steps{list-style:none;counter-reset:step;padding:0;margin:1rem 0 0;display:grid;grid-template-columns:1fr;column-gap:1.6rem;border-top:1px solid var(--line)}
-.path-steps li{counter-increment:step;margin:0;display:grid;align-content:start;grid-template-columns:2rem minmax(0,1fr);column-gap:.4rem;padding:.6rem 0;border-bottom:1px solid var(--line-2);font-size:var(--fs-ui);line-height:1.45;color:var(--ink-2)}
-.path-steps li::before{content:counter(step);grid-row:span 2;font:600 1.25rem/1.2 var(--serif);color:var(--copper-ink)}
-.path-steps strong{font:700 1rem/1.35 var(--sans);color:var(--ink)}
-@container content (min-width:34rem){.path-steps{grid-template-columns:repeat(2,1fr)}}
-details.more-tips{margin:.6rem 0 0}
-details.more-tips>summary{min-height:44px;font:600 var(--fs-ui) var(--sans);color:var(--accent-deep)}
-details.more-tips ul{margin:.3rem 0 0;padding-left:1.3rem;font-size:1rem;line-height:1.55;color:var(--ink-2)}
-details.more-tips li{margin:.35rem 0}
+/* Näin opit fysiikkaa, nain-opiskelet.html (teacher 2026-11-08, build.py study_guide): a wider column than the reading
+   pages (the problem-solving map needs four cards side by side), text kept to the reading measure. Three parts under
+   full-width rules like a lesson's stages. 1 four numbered steps on thin rules, two columns, each with the lesson's
+   stage chips it means. 2 the map: the question, four ways (white cards, line icons) joined by quiet SVG curves to the
+   retry card in the accent tint; under 50rem a vertical rail with a node at each card. 3 five tips with line icons.
+   Green is the interaction colour, copper the thin accent (numbers, the question's outline). No animation. */
+main.study-page{max-width:60rem}
+.study-page .study-intro{max-width:var(--measure);padding-top:.4rem}
+.study-page .study-intro .lead{max-width:none;margin:0}
+.study-sec{margin-top:var(--stage-space);padding-top:1.1rem;border-top:2px solid var(--ink)}
+.study-sec>h2{margin:0 0 .5rem;font:600 clamp(1.5rem,1.3rem + .6vw,1.75rem)/1.2 var(--serif);letter-spacing:-.01em}
+.study-sec>.section-lead{max-width:var(--measure);font-size:var(--fs-body);margin:0 0 1.2rem}
+.study-page h3{margin:0 0 .3rem;font:700 var(--fs-h3)/1.3 var(--sans)}
+.study-page li p{margin:0;color:var(--ink-2)}
+.study-icon{width:28px;height:28px;flex:none;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;color:var(--accent-deep)}
+/* 1 Näin pääset alkuun */
+.study-steps{list-style:none;counter-reset:step;margin:.4rem 0 0;padding:0;display:grid;grid-template-columns:1fr;column-gap:2rem}
+.study-steps>li{counter-increment:step;position:relative;margin:0;padding:1rem 0 1.1rem 2.6rem;border-bottom:1px solid var(--line)}
+.study-steps>li::before{content:counter(step);position:absolute;left:0;top:.85rem;font:600 1.75rem/1 var(--serif);color:var(--copper-ink)}
+.study-where{display:flex;flex-wrap:wrap;gap:.35rem;margin:.65rem 0 0}
+.study-chip{display:inline-flex;align-items:center;gap:.4rem;min-height:30px;padding:0 .7rem 0 .3rem;border:1px solid var(--line);border-radius:999px;background:var(--surface);font:600 var(--fs-small)/1.2 var(--sans);color:var(--ink-2)}
+.study-chip-no{display:inline-grid;place-items:center;width:1.4rem;height:1.4rem;border-radius:50%;border:1px solid var(--line);font-size:.75rem;font-weight:700;color:var(--accent-deep)}
+@container content (min-width:40rem){.study-steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+/* 2 Jäikö tehtävä jumiin? */
+.stuck-map{position:relative;margin:1.4rem 0 0;padding-left:2.25rem}
+.stuck-map::before{content:"";position:absolute;left:.8rem;top:1.5rem;bottom:2.5rem;border-left:2px solid var(--fig-line)}
+.stuck-q{position:relative;display:inline-block;margin:0 0 1rem;padding:.55rem 1.25rem;border:1.5px solid var(--copper);border-radius:999px;background:var(--surface);font:600 1.25rem/1.3 var(--serif);color:var(--ink)}
+.stuck-ways{list-style:none;margin:0;padding:0;display:grid;gap:.75rem}
+.stuck-ways>li,.stuck-retry{position:relative;margin:0;padding:1rem 1.1rem 1.1rem;background:var(--surface);border:1px solid var(--line);border-radius:var(--card-radius)}
+.stuck-ways .study-icon,.stuck-retry .study-icon{display:block;margin:0 0 .5rem}
+.stuck-ways>li::before,.stuck-retry::before,.stuck-q::before{content:"";position:absolute;left:calc(-1.45rem - 6px);top:1.4rem;width:10px;height:10px;border-radius:50%;background:var(--bg);border:2px solid var(--fig-line)}
+.stuck-q::before{left:calc(-1.45rem - 7.5px);top:calc(50% - 6px)}
+.stuck-retry{margin-top:1rem;background:var(--accent-soft);border-color:var(--accent)}
+.stuck-retry::before{background:var(--accent);border-color:var(--accent)}
+.stuck-retry p{margin:0;color:var(--ink-2)}
+.stuck-lines{display:none}
+@container content (min-width:50rem){
+  .stuck-map{padding-left:0;text-align:center}
+  .stuck-map::before,.stuck-ways>li::before,.stuck-retry::before,.stuck-q::before{display:none}
+  .stuck-q{margin:0}
+  .stuck-lines{display:block;width:100%;height:2.5rem;fill:none;stroke:var(--fig-line);stroke-width:2;overflow:visible}
+  .stuck-lines path{vector-effect:non-scaling-stroke}
+  .stuck-ways{grid-template-columns:repeat(4,minmax(0,1fr));gap:0 1rem;text-align:left}
+  .stuck-ways .study-icon{margin-bottom:.6rem}
+  .stuck-retry{display:inline-grid;grid-template-columns:auto minmax(0,1fr);column-gap:.8rem;align-items:start;max-width:34rem;margin:0;text-align:left}
+  .stuck-retry .study-icon{grid-row:span 2;margin:0}
+}
+/* 3 Viisi vinkkiä */
+.study-tips{list-style:none;margin:.4rem 0 0;padding:0;display:grid;grid-template-columns:1fr;column-gap:2rem}
+.study-tips>li{display:flex;gap:.9rem;align-items:flex-start;margin:0;padding:1rem 0;border-bottom:1px solid var(--line)}
+.study-tips .study-icon{margin-top:.1rem}
+@container content (min-width:40rem){.study-tips{grid-template-columns:repeat(2,minmax(0,1fr))}}
+/* the closing line and the way on to the modules */
+.study-end{margin-top:var(--stage-space);max-width:var(--measure)}
+.study-end p{margin:0 0 1.1rem;font:400 1.25rem/1.45 var(--serif);color:var(--ink)}
+.study-cta{display:inline-flex;align-items:center;gap:.45rem;min-height:48px;padding:0 1.4rem;border-radius:999px;background:var(--accent-deep);color:var(--surface);font:600 var(--fs-body) var(--sans);text-decoration:none}
+.study-cta:hover{background:var(--accent)}
 /* module page: the lessons first (available ones are links, the rest marked coming), then Sovella, then the goals
    behind one disclosure; a note at #unavailable-<id> is shown when a language link from a page not published in
    this language lands here */
