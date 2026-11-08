@@ -4,7 +4,6 @@
     {"icon": "LUMATUTOR", "title": "LUMA-tutor", "text": "Toimi tiedetutorina: suunnittele tiedetapahtumia ja osallistu niihin."},
     {"icon": "AHJO1", "title": "Ahjo 1", "text": "3D-mallinnuksen, 3D-tulostuksen, elektroniikan ja robotiikan perusteet."},
     {"icon": "AHJO2", "title": "Ahjo 2", "text": "Suunnittele, valmista ja testaa oma prototyyppi."},
-    {"icon": "KILPAROBO", "title": "Kilparobotiikka", "text": "Suunnittele, rakenna ja ohjelmoi robotteja ja osallistu robotiikkakilpailuihin."},
     {"icon": "MYYTIT", "title": "Myytinmurtajat", "text": "Selvitä kokeilemalla, pitävätkö tutut väitteet paikkansa."}
   ],
   "FY10": {
@@ -404,6 +403,58 @@
       {
         "id": "fy1-4",
         "why": "kuvaajan laatiminen ja suoran sovittaminen, kokeen aineistotehtävien perusta"
+      }
+    ]
+  },
+  "KILPAROBO": {
+    "title": "Kilparobotiikka",
+    "subtitle": "Suunnittele, rakenna ja ohjelmoi robotteja ja osallistu robotiikkakilpailuihin.",
+    "school": "Kiviruukin lukio",
+    "status": "building",
+    "description": "Opintojaksolla suunnitellaan, rakennetaan ja ohjelmoidaan robotteja ryhmissä ja osallistutaan robotiikkakilpailuihin. Opintojakson materiaalia julkaistaan tälle sivulle sitä mukaa kuin se valmistuu.",
+    "theme": "kiviruukki",
+    "photos_heading": "Kuvia Otarobo\u00a02026\u00a0-kilpailusta",
+    "photos": [
+      {
+        "src": "pics/kilparobo/otarobo-ottelu.webp",
+        "width": 1600,
+        "height": 612,
+        "alt": "Robotiikkakilpailun kenttä, jossa neljä robottia ja värikkäitä pelikappaleita. Kentän reunalla joukkueita, kasvot rajattu pois kuvasta.",
+        "caption": "Karsintaottelu käynnistymässä: kaksi kahden joukkueen liittoumaa samalla kentällä.",
+        "wide": true
+      },
+      {
+        "src": "pics/kilparobo/otarobo-robotti-kentalla.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Metallirungosta, moottoreista ja pyöristä rakennettu robotti, jonka kääntyvässä varressa on tarttuja.",
+        "caption": "Robotti kentällä: alumiinirunko, moottorit, ohjain ja varren päässä tarttuja."
+      },
+      {
+        "src": "pics/kilparobo/otarobo-robotti-poydalla.webp",
+        "width": 1600,
+        "height": 1385,
+        "alt": "Keskeneräinen robotti pöydällä työkalujen, ruuvipussien ja kannettavan tietokoneen vieressä.",
+        "caption": "Varikolla robottia rakennetaan ja korjataan kilpailun lomassa."
+      },
+      {
+        "src": "pics/kilparobo/otarobo-autonominen.webp",
+        "width": 1600,
+        "height": 704,
+        "alt": "Kilpailukenttä, jonka takana näyttö kertoo autonomisen ohjelmoinnin suorituksen alkavan. Robotti kentän laidalla.",
+        "caption": "Autonominen osuus: minuutin ajan robotti toimii pelkän ohjelmansa varassa.",
+        "wide": true
+      }
+    ],
+    "quotes": [
+      {
+        "author": "Niko",
+        "lang": "fi",
+        "paragraphs": [
+          "Robotin rakentamisesta oppii sen, että ohjeita ei tarvitse aina seurata tarkasti, vaan kannattaa myös olla luova ja keksiä itse. Tässä oppii myös, että aina pitää testata ja korjata tai hienosäätää, kunnes robotti on sellainen kuin haluaa. Koodaus oli yllättävän raskas osuus, koska robottia piti sen takia säätää, mutta hauska kokemus se oli kuitenkin.",
+          "Jäi todella hyvät fiilikset, vaikka emme voittaneet. Tässä pääsi kokemaan ja luomaan uutta ja myös oppimaan muilta joukkueilta. Siisteintä oli, kun saimme ensimmäistä kertaa robotin kasaan ja liikkeelle. Toinen kiva asia oli, kun saimme koodinkin toimimaan kunnolla. Ihanin tunne!",
+          "Itse suosittelen tätä opintojaksoa ensi lukuvuodelle, koska tässä oppii sekä rakentamaan että koodaamaan. Isoin ja tärkein asia oli kuitenkin se, että pääsi pitämään hauskaa ja tutustumaan uusiin ihmisiin, joilla on sama kiinnostuksen kohde kuin itsellä."
+        ]
       }
     ]
   }

@@ -4,7 +4,6 @@
     {"icon": "LUMATUTOR", "title": "LUMA-tutor", "text": "Olet tiedetutori. Suunnittelet tiedetapahtumia ja olet mukana niissä."},
     {"icon": "AHJO1", "title": "Ahjo 1", "text": "Opit 3D-mallintamaan ja tulostamaan sekä elektroniikan ja robotiikan perusteita."},
     {"icon": "AHJO2", "title": "Ahjo 2", "text": "Suunnittelet, teet ja testaat oman prototyypin."},
-    {"icon": "KILPAROBO", "title": "Kilparobotiikka", "text": "Rakennat ja ohjelmoit robotteja ja osallistut kilpailuihin."},
     {"icon": "MYYTIT", "title": "Myytinmurtajat", "text": "Kokeilet, pitävätkö tutut väitteet paikkansa."}
   ],
   "FY14": {
@@ -150,6 +149,45 @@
       {
         "id": "fy1-4",
         "why": "kuvaajan piirtäminen ja suoran sovittaminen. Ne ovat tärkeitä kokeen aineistotehtävissä."
+      }
+    ]
+  },
+  "KILPAROBO": {
+    "title": "Kilparobotiikka",
+    "subtitle": "Rakennat ja ohjelmoit robotteja ja osallistut kilpailuihin.",
+    "school": "Kiviruukin lukio",
+    "description": "Opintojaksolla suunnittelet, rakennat ja ohjelmoit robotteja ryhmässä. Osallistut myös robotiikkakilpailuihin. Opintojakson materiaalia tulee tälle sivulle sitä mukaa kuin se valmistuu.",
+    "photos_heading": "Kuvia Otarobo\u00a02026\u00a0-kilpailusta",
+    "photos": [
+      {
+        "src": "pics/kilparobo/otarobo-ottelu.webp",
+        "width": 1600,
+        "height": 612,
+        "alt": "Robotiikkakilpailun kenttä. Kentällä on neljä robottia ja värikkäitä pelin osia. Kentän reunalla on joukkueita. Kasvot on rajattu pois.",
+        "caption": "Ottelu alkaa pian. Kentällä on kaksi liittoumaa. Kummassakin on kaksi joukkuetta.",
+        "wide": true
+      },
+      {
+        "src": "pics/kilparobo/otarobo-robotti-kentalla.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Robotti, jossa on metallirunko, moottoreita ja pyörät. Robotin varressa on tarttuja.",
+        "caption": "Robotti kentällä. Varren päässä on tarttuja."
+      },
+      {
+        "src": "pics/kilparobo/otarobo-robotti-poydalla.webp",
+        "width": 1600,
+        "height": 1385,
+        "alt": "Keskeneräinen robotti pöydällä. Vieressä on työkaluja, ruuveja ja tietokone.",
+        "caption": "Robottia rakennetaan ja korjataan otteluiden välissä."
+      },
+      {
+        "src": "pics/kilparobo/otarobo-autonominen.webp",
+        "width": 1600,
+        "height": 704,
+        "alt": "Kilpailukenttä. Takana näyttö, jossa lukee autonominen ohjelmointi. Robotti on kentän reunalla.",
+        "caption": "Autonominen osuus: robotti toimii minuutin ajan vain oman ohjelmansa avulla.",
+        "wide": true
       }
     ]
   }

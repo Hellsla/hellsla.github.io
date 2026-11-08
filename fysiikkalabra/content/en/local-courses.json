@@ -4,7 +4,6 @@
     {"icon": "LUMATUTOR", "title": "LUMA tutor", "text": "Act as a science tutor: plan science events and take part in them."},
     {"icon": "AHJO1", "title": "Ahjo 1", "text": "Basics of 3D modelling, 3D printing, electronics and robotics."},
     {"icon": "AHJO2", "title": "Ahjo 2", "text": "Design, build and test your own prototype."},
-    {"icon": "KILPAROBO", "title": "Competitive robotics", "text": "Design, build and program robots and take part in robotics competitions."},
     {"icon": "MYYTIT", "title": "Myth Busters", "text": "Find out by experiment whether familiar claims hold true."}
   ],
   "FY14": {
@@ -151,6 +150,45 @@
       {
         "id": "fy1-4",
         "why": "drawing a graph and fitting a line, the basis of the exam's data tasks"
+      }
+    ]
+  },
+  "KILPAROBO": {
+    "title": "Competitive robotics",
+    "subtitle": "Design, build and program robots and take part in robotics competitions.",
+    "school": "Kiviruukki upper secondary school",
+    "description": "In this course you design, build and program robots in teams and take part in robotics competitions. The course materials are published on this page as they are completed.",
+    "photos_heading": "Photos from the Otarobo\u00a02026 competition",
+    "photos": [
+      {
+        "src": "pics/kilparobo/otarobo-ottelu.webp",
+        "width": 1600,
+        "height": 612,
+        "alt": "A robotics competition field with four robots and colourful game pieces. Teams stand at the edge, their faces cropped out.",
+        "caption": "A qualification match about to start: two alliances of two teams on the same field.",
+        "wide": true
+      },
+      {
+        "src": "pics/kilparobo/otarobo-robotti-kentalla.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "A robot built from a metal frame, motors and wheels, with a gripper on a turning arm.",
+        "caption": "A robot on the field: aluminium frame, motors, controller and a gripper at the end of its arm."
+      },
+      {
+        "src": "pics/kilparobo/otarobo-robotti-poydalla.webp",
+        "width": 1600,
+        "height": 1385,
+        "alt": "An unfinished robot on a table beside tools, bags of screws and a laptop.",
+        "caption": "In the pits, robots are built and repaired between matches."
+      },
+      {
+        "src": "pics/kilparobo/otarobo-autonominen.webp",
+        "width": 1600,
+        "height": 704,
+        "alt": "A competition field with a screen behind it announcing the autonomous coding run. A robot at the edge of the field.",
+        "caption": "The autonomous run: for one minute the robot works on its program alone.",
+        "wide": true
       }
     ]
   }

@@ -462,7 +462,7 @@ def home_row(code, title, question, coming=False):
     appears on hover and focus only. The question is cut to one line in two columns, so it is whole in title too."""
     q = esc(question)
     return (f'<li><a class="mod-row{" coming" if coming else ""}" href="{code}.html">{module_icons.img(code, 40)}'
-            f'<span class="mod-text"><span class="mod-name"><span class="mod-code">{code}</span> <span class="mod-title">{esc(title)}</span></span>'
+            f'<span class="mod-text"><span class="mod-name">{('<span class="mod-code">' + code + '</span> ') if local_courses.label(code) else ""}<span class="mod-title">{esc(title)}</span></span>'
             f'<span class="mod-q" title="{q}">{q}</span></span><span class="mod-go" aria-hidden="true">→</span></a></li>')
 
 
@@ -1311,9 +1311,12 @@ def build_language(lang):
                                        guides.course_section(T, published, lang) if code == "FY10" else "", cu)
         prog = local_progress(code, c, lang)                 # Näytä edistyminen before the course's first section (FY9)
         if prog and "<h2" in body: body = body.replace("<h2", prog + "<h2", 1)
-        (out / f"{code}.html").write_text(page(f"{code} {c['title']}", body
-                                                + '<script src="invfilter.js"></script>',
-                                                f'<a href="index.html">{T("site.name")}</a> › {code}', f"{code}.html", c["description"], main_class="reading module-page local-course"))
+        for ph in c.get("photos", []):                  # the course's photos (local_courses.py), shared by every language like a lesson's
+            (SITE / ph["src"]).parent.mkdir(parents=True, exist_ok=True); shutil.copy(ROOT / "assets" / ph["src"], SITE / ph["src"]); assets.append(ph["src"])
+        name = f"{local_courses.label(code)} {c['title']}".strip()
+        html = page(name, body + '<script src="invfilter.js"></script>', f'<a href="index.html">{T("site.name")}</a> › {local_courses.label(code) or esc(c["title"])}',
+                    f"{code}.html", c["description"], main_class="reading module-page local-course" + (" kr-theme" if c.get("theme") == "kiviruukki" else ""))
+        (out / f"{code}.html").write_text(ahjo.kiviruukki_mark(html) if c.get("theme") == "kiviruukki" else html)
     mixer_built = []                             # the YO-sekoitin (scripts/mixer.py): every language, when a local course asks for it
     mcode = next((code for code, c in local_courses.load().items() if c.get("mixer")), None)
     if mcode:
