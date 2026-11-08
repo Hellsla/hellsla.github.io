@@ -398,6 +398,36 @@ footer.bottom{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);
 footer.bottom a{display:inline-flex;align-items:center;min-height:44px}
 footer.bottom .copyright{white-space:nowrap}
 .crumbs:empty{display:none}
+/* A chapter page's path goes from chapter to chapter (teacher 2026-11-08, build.py chapter_crumbs): its last part is the
+   chapter menu (a <details>), Edellinen / Seuraava at the row's right end; "FY3 · Luku 13" over the title then only on paper. */
+nav.crumbs:has(details.ch-menu){position:relative;flex-wrap:nowrap}
+.crumbs details.ch-menu{min-width:0;flex:0 1 auto}
+.crumbs details.ch-menu>summary{display:flex;align-items:center;gap:.35rem;min-height:40px;padding:0 .3rem;margin:0 -.3rem;list-style:none;cursor:pointer;font-weight:600;color:var(--accent-deep);white-space:nowrap}
+.crumbs details.ch-menu>summary::-webkit-details-marker{display:none}
+.crumbs details.ch-menu>summary::before,.crumbs details.ch-menu[open]>summary::before{content:none;display:none}
+.crumbs details.ch-menu>summary::after{content:"▾";font-size:.7em;flex:none}
+.crumbs details.ch-menu[open]>summary::after{content:"▴"}
+.crumbs details.ch-menu>summary .t{overflow:hidden;text-overflow:ellipsis;line-height:1.4;padding:.15rem 0}
+.crumbs details.ch-menu>summary:hover .t{text-decoration:underline}
+.crumbs details.ch-menu>summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:6px}
+.crumbs .ch-menu .tt{display:none}
+.ch-menu-panel{position:absolute;top:2.6rem;left:0;z-index:40;width:min(32rem,100%);max-height:min(78vh,40rem);overflow:auto;padding:.5rem .4rem .7rem;background:var(--surface);border:1px solid var(--line);border-radius:12px;box-shadow:0 12px 32px rgba(20,23,30,.16);white-space:normal;font-size:var(--fs-inner,1rem)}
+.ch-menu-panel p.ch-menu-theme{font:600 .75rem/1.3 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--accent-deep);margin:.7rem .7rem .3rem}
+.ch-menu-panel p.ch-menu-theme:first-child{margin-top:.2rem}
+.ch-menu-panel ol{list-style:none;margin:0;padding:0}
+.ch-menu-panel ol.ch-menu-more{border-top:1px solid var(--line-2);margin-top:.6rem;padding-top:.4rem}
+.ch-menu-panel li>a,.ch-menu-panel li>span{display:grid;grid-template-columns:2rem minmax(0,1fr);gap:.4rem;min-height:40px;align-items:center;padding:.2rem .7rem;border-radius:8px;color:var(--ink);text-decoration:none;line-height:1.35}
+.ch-menu-panel li>span.soon{color:var(--ink-2)}
+.ch-menu-panel li>a:hover{background:var(--bg-tint);text-decoration:underline}
+.ch-menu-panel li>a:focus-visible{outline:3px solid var(--accent);outline-offset:-3px}
+.ch-menu-panel .n{color:var(--copper-ink);font-weight:600;font-variant-numeric:tabular-nums}
+.ch-menu-panel a[aria-current]{background:var(--bg-tint);color:var(--accent-deep);font-weight:700;box-shadow:inset 3px 0 0 var(--accent)}
+.crumbs .ch-arrows{margin-left:auto;padding-left:.5rem;display:flex;gap:.4rem;flex:none}
+.crumbs .ch-arrows a{gap:.3rem;margin:0;padding:0 .8rem;min-width:40px;min-height:40px;border:1px solid var(--line);border-radius:999px;background:var(--surface);white-space:nowrap}
+.crumbs .ch-arrows a:hover{border-color:var(--accent)}
+.crumbs .ch-arrows .lbl{display:none}
+@media (min-width:700px){.crumbs .ch-menu .tt,.crumbs .ch-arrows .lbl{display:inline}}
+@media screen{body:has(details.ch-menu) .eyebrow.ch-no{display:none}}
 
 /* tables: a level-3 element, light frame, small sans heads; numbers in tabular figures */
 table{display:block;position:relative;width:fit-content;max-width:100%;overflow-x:auto;border-collapse:collapse;margin:1rem 0;border:1px solid var(--line);border-radius:12px;font-variant-numeric:tabular-nums;

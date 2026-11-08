@@ -755,6 +755,8 @@ def chapter_nav(out, modules, built_ids, practice_built, exam_built=()):
         course = (f"{code}.html", T("lesson.chapter_course", course=code))
         for i, (name, _) in enumerate(seq):
             f = out / name
+            if f.is_file(): f.write_text(chapter_crumbs(f.read_text(), code, mod, seq, i, built_ids))
+            f = out / name
             if not f.is_file(): continue
             prev = seq[i - 1] if i else None; nxt = seq[i + 1] if i + 1 < len(seq) else None
             nav = (f'<nav class="chapter-nav" aria-label="{esc(T("lesson.chapter_nav"))}">'
@@ -762,6 +764,46 @@ def chapter_nav(out, modules, built_ids, practice_built, exam_built=()):
                    + (link("next", "next", nxt[0], T("lesson.chapter_next"), nxt[1]) if nxt else link("next up", "", course[0], T("lesson.chapter_up"), course[1]))
                    + "</nav>")
             f.write_text(f.read_text().replace(f"<!--fl-chapter-nav:{name[:-5]}-->", nav))
+
+
+CRUMBS = re.compile(r'(<nav class="crumbs"[^>]*>).*?(</nav>)', re.S)
+
+
+def chapter_crumbs(html, code, mod, seq, i, built_ids):
+    """The path over a chapter page goes from chapter to chapter (teacher 2026-11-08): its last part is a menu
+    "Luku 13: title" (on a phone "Luku 13", as the title is right below) that opens the module's chapters under its
+    themes, then Esimerkkikoe, Haastetehtävät and the module page; at its right end Edellinen / Seuraava in the same
+    order as the links under the page (chapter_nav). No new row: "FY3 · Luku 13" over the title shows only on paper
+    (site.css), where the path is not printed. A <details>, so it works without scripts; lesson.js closes it."""
+    name, title = seq[i]
+    lid = name[:-5]
+    slots = mod.get("lessons", [])
+    n = next((k for k, l in enumerate(slots, 1) if l["id"] == lid), None)
+    here = (f'{T("site.chapter_n", n=n)}<span class="tt">: {esc(title)}</span>' if n else esc(title))
+    themes = {th["first"]: th["title"] for th in mod.get("themes", [])}
+    items, cur_ol = "", False
+    for k, l in enumerate(slots, 1):
+        if l["id"] in themes or not cur_ol:
+            items += ("</ol>" if cur_ol else "") + (f'<p class="ch-menu-theme">{esc(themes[l["id"]])}</p>' if l["id"] in themes else "") + "<ol>"
+            cur_ol = True
+        label = f'<span class="n">{k}</span><span>{esc(l["title"])}</span>'
+        if l["id"] == lid: items += f'<li><a href="{l["id"]}.html" aria-current="page">{label}</a></li>'
+        elif l["id"] in built_ids: items += f'<li><a href="{l["id"]}.html">{label}</a></li>'
+        else: items += f'<li><span class="soon">{label}</span></li>'
+    items += "</ol>" if cur_ol else ""
+    more = "".join(f'<li><a href="{h}"{" aria-current=" + chr(34) + "page" + chr(34) if h == name else ""}><span class="n"></span><span>{esc(t)}</span></a></li>'
+                   for h, t in seq if not h.startswith(tuple(l["id"] + "." for l in slots)))
+    more += f'<li><a href="{code}.html"><span class="n"></span><span>{esc(T("lesson.chapter_up"))}</span></a></li>'
+    prev = seq[i - 1] if i else (f"{code}.html", T("lesson.chapter_up"))
+    nxt = seq[i + 1] if i + 1 < len(seq) else (f"{code}.html", T("lesson.chapter_up"))
+    arrow = lambda cls, h, label, short, t: (f'<a class="{cls}" href="{h}" aria-label="{esc(label)}: {esc(t)}">'
+                                             + (f'‹<span class="lbl">{short}</span>' if cls == "prev" else f'<span class="lbl">{short}</span>›') + "</a>")
+    crumbs = (f'<a href="index.html">{T("site.name")}</a> › <a href="{code}.html">{code}</a> › '
+              f'<details class="ch-menu"><summary><span class="t">{here}</span></summary>'
+              f'<div class="ch-menu-panel">{items}<ol class="ch-menu-more">{more}</ol></div></details>'
+              f'<span class="ch-arrows">{arrow("prev", prev[0], T("lesson.chapter_prev"), T("lesson.crumb_prev"), prev[1])}'
+              f'{arrow("next", nxt[0], T("lesson.chapter_next"), T("lesson.crumb_next"), nxt[1])}</span>')
+    return CRUMBS.sub(lambda m: m.group(1) + crumbs + m.group(2), html, count=1)
 
 
 def unit_sections(md_text):

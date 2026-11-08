@@ -164,6 +164,8 @@
     "chapter_nav": "Chapters",
     "chapter_prev": "Previous chapter",
     "chapter_next": "Next chapter",
+    "crumb_prev": "Previous",
+    "crumb_next": "Next",
     "chapter_up": "Back to the module",
     "chapter_course": "All chapters of {{course}}",
     "choose": "Choose an option.",

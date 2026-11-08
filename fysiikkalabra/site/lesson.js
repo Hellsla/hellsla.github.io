@@ -927,3 +927,20 @@
   if (ex) build([...ex.querySelectorAll('li[id]')].filter((li) => li.querySelector(':scope > .ex-head')), ex);
   build([...document.querySelectorAll('.practice-task[id]')].filter((t) => headOf(t)), document.querySelector('main') || document.body);
 })();
+
+/* The chapter menu in the path (teacher 2026-11-08, build.py chapter_crumbs): opening it shows the current chapter in the
+   middle of the list; Escape, a click outside it or a link inside closes it. Without scripts the <details> still opens. */
+(() => {
+  const menu = document.querySelector('nav.crumbs details.ch-menu');
+  if (!menu) return;
+  const panel = menu.querySelector('.ch-menu-panel');
+  menu.addEventListener('toggle', () => {
+    if (!menu.open) return;
+    const cur = panel.querySelector('[aria-current]');
+    if (cur) panel.scrollTop = cur.offsetTop - panel.clientHeight / 2 + cur.offsetHeight / 2;
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && menu.open) { menu.open = false; menu.querySelector('summary').focus(); }
+  });
+  document.addEventListener('click', (e) => { if (menu.open && !menu.contains(e.target)) menu.open = false; });
+})();
