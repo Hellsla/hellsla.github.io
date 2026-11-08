@@ -423,7 +423,7 @@
       if (busy) return; busy = true; b.disabled = true; say(status, S('busy'));
       try { await work(); } catch (e) { say(status, e && e.user ? e.message : S('failed'), 'no'); } finally { busy = false; b.disabled = false; }
     };
-    saveBtn.addEventListener('click', () => run(saveBtn, async () => { const r = await save(); say(status, S('saved', { name: r.name, mb: r.mb }), 'ok'); }));
+    saveBtn.addEventListener('click', () => run(saveBtn, async () => { await save(); say(status, ''); }));   // no line after a save (teacher 2026-11-08); errors still show
     // a message carried over the reload after Avaa tallennettu työ
     try { const m = sessionStorage.getItem('ruukkilabra:avattu'); if (m) { sessionStorage.removeItem('ruukkilabra:avattu'); setTimeout(() => say(status, m, 'ok'), 0); } } catch (e) { /* none */ }
     if (ON_CHAPTER) {
