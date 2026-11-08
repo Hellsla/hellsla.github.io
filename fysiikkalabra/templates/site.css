@@ -450,13 +450,27 @@ nav.crumbs:has(details.ch-menu){position:relative;flex-wrap:nowrap}
 table{display:block;position:relative;width:fit-content;max-width:100%;overflow-x:auto;border-collapse:collapse;margin:1rem 0;border:1px solid var(--line);border-radius:12px;font-variant-numeric:tabular-nums;
   /* scroll cue: a soft shadow at an edge that has more columns behind it (covers move with the content) */
   background:linear-gradient(to right,var(--surface) 30%,transparent) left/2.5rem 100% no-repeat local,linear-gradient(to left,var(--surface) 30%,transparent) right/2.5rem 100% no-repeat local,radial-gradient(farthest-side at 0 50%,rgba(0,0,0,.2),transparent) left/.9rem 100% no-repeat scroll,radial-gradient(farthest-side at 100% 50%,rgba(0,0,0,.2),transparent) right/.9rem 100% no-repeat scroll,var(--surface)}
-th,td{padding:.45rem .8rem;text-align:left;border-bottom:1px solid var(--line-2);white-space:nowrap}
+th,td{padding:.45rem .7rem;text-align:left;border-bottom:1px solid var(--line-2);white-space:normal;hyphens:auto;-webkit-hyphens:auto}
+table caption{hyphens:auto;-webkit-hyphens:auto}
+/* a table still wider than its box is stacked (lesson.js, 2026-11-08): each row a block, each cell its heading beside the value */
+table .tbl-lab{display:none}
+table.tbl-stack{width:100%}
+table.tbl-stack caption{display:block}
+table.tbl-stack thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%)}
+table.tbl-stack tbody,table.tbl-stack tr{display:block}
+table.tbl-stack tr{padding:.35rem 0;border-bottom:1px solid var(--line)}
+table.tbl-stack tr:last-child{border-bottom:0}
+table.tbl-stack td,table.tbl-stack tbody th{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,3fr);column-gap:.7rem;align-items:baseline;border:0;padding:.2rem .8rem}
+table.tbl-stack .tbl-lab{display:block;font:600 var(--fs-small) var(--sans);color:var(--ink-2)}
+table.tbl-stack.tbl-blank tbody tr:not(:first-child){display:none}table.tbl-stack.tbl-blank .tbl-val{border-bottom:1px solid var(--line);min-height:1.5em}
 th{font:600 var(--fs-small) var(--sans);color:var(--ink-2);background:var(--bg-tint)}
 tr:last-child td{border-bottom:0}
-table thead,table tbody{display:table;width:100%}
-/* teacher 2026-10-28: every column visible on a phone. Below 48rem the cells wrap their words (Finnish hyphenation)
-   and pad less; a number with its unit stays on one line (KaTeX, nbsp). */
-@media (max-width:48rem){th,td{white-space:normal;hyphens:auto;-webkit-hyphens:auto;padding:.4rem .5rem}}
+/* teacher 2026-10-28 and 2026-11-08 ("en halua että taulukkoja täytyy scrollata"): every column visible at every width,
+   no sideways scrolling. The cells wrap their words (a long Finnish word at the soft hyphens build.py puts in it,
+   scripts/tablefit.py) and pad less on a phone; a number with its unit stays on one line (KaTeX, nbsp).
+   check_layout.py fails a table wider than its box. */
+@media (max-width:48rem){th,td{padding:.4rem .45rem}}
+@media (max-width:48rem){table.exp-table th,table.exp-table td{padding:.35rem .2rem}table.exp-table tr>:first-child{padding-left:.5rem}table.exp-table tr>:last-child{padding-right:.5rem}}   /* a simulation's reading table keeps its columns on a phone (its rows are compared): less space between them */
 
 /* stage navigation = the progress bar (teacher 2026-11-03): a bar of chips that sticks under the top edge at every width;
    on a narrow window it scrolls sideways inside itself (never the page). Each stage shows its number, so the nav and the
@@ -742,7 +756,7 @@ textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border
 .exp-controls .exp-reset:hover:not(:disabled),.exp-controls .exp-copy:hover:not(:disabled){background:var(--accent-soft);color:var(--accent-deep)}
 .exp-export-status{align-self:center;font:600 var(--fs-ui) var(--sans);color:var(--accent-deep)}
 .exp-export-text{display:block;width:100%;box-sizing:border-box;margin:.3rem 0 .7rem;font:15px/1.4 var(--mono);white-space:pre;overflow:auto}
-table.exp-table{margin:.6rem 0 .3rem}table.exp-table caption{font:600 var(--fs-small) var(--sans);color:var(--ink-2);text-align:left;padding:.3rem .8rem .1rem;white-space:nowrap}table.ex-data caption{white-space:normal;width:max-content;max-width:calc(100vw - 4rem)}   /* an exercise's data caption wraps on a phone, so its "(esimerkkiaineisto)" stays visible */
+table.exp-table{margin:.6rem 0 .3rem}table.exp-table caption{font:600 var(--fs-small) var(--sans);color:var(--ink-2);text-align:left;padding:.3rem .8rem .1rem}   /* a caption wraps at the table's width (an exercise's data caption keeps its "(esimerkkiaineisto)" visible; no table wider than its box, 2026-11-08) */
 table.exp-table tbody:empty::after{content:"";display:block;height:.3rem}
 .exp-status,.explain-status{font-size:var(--fs-ui);color:var(--ink-2);margin:.3rem 0 0;min-height:1.3em}
 .exp-question{margin-top:1rem;padding-top:1rem;border-top:1px solid var(--line-2)}
@@ -966,6 +980,7 @@ details.inv-teacher>summary{min-height:48px;display:flex;align-items:center;font
 .unit-credits,.unit-sources,.unit-teacher{max-width:var(--measure)}   /* every course's units (FY9 has no units.css of its own) */
 .investigation table{border-collapse:collapse;max-width:100%;display:block;overflow-x:auto}
 .investigation th,.investigation td{border:1px solid var(--line);padding:.35rem .6rem;min-width:4.5rem}
+@media (max-width:48rem){.investigation th,.investigation td{padding:.35rem .3rem;min-width:2.6rem}}   /* a blank measurement table keeps every column on a phone (no sideways scroll, 2026-11-08) */
 .inv-section{scroll-margin-top:var(--sticky-top)}
 /* a licensed photograph (FY14 units 2026-11-01; FY1–FY3 lessons 2026-11-03, assets/pics/<course>/photos.json): never wider than the reading column, at most 22rem tall so a portrait never
    fills a phone screen, centred in its box (the box keeps the width and height attributes' ratio while it loads);
