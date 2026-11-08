@@ -1,4 +1,4 @@
-"""Ahjo Makerspace pages (teacher 2026-11-08, scripts/ahjo.py) in the built site/: the three pages in every language,
+"""Ahjo Makerspace pages (teacher 2026-11-08, scripts/ahjo.py) in the built site/: the three pages and the two course pages (Ahjo 1, Ahjo 2) in every language,
 the original logo on each, every internal link resolving to a built file or an anchor on it, no equipment the school will
 not have, the safety page marked as a draft until a topic is approved, the front page's row, and in a browser no
 sideways scroll at 360, 768 and 1280 px and a keyboard path through the section's navigation.
@@ -19,7 +19,7 @@ def expect(name, ok, got=None):
 for lang in i18n.languages():
     out = SITE if lang == i18n.SOURCE else SITE / lang
     d = ahjo.load(lang)
-    for name in (ahjo.PAGE, ahjo.BANK, ahjo.SAFETY):
+    for name in (ahjo.PAGE, ahjo.BANK, ahjo.SAFETY) + tuple(ahjo.course_page(c["code"]) for c in d["courses"]):
         f = out / name
         expect(f"{lang} {name}: built", f.is_file())
         if not f.is_file(): continue
@@ -44,13 +44,20 @@ for lang in i18n.languages():
     expect(f"{lang}: Ahjo 1 and Ahjo 2 on the start page", all(f'id="{c["code"].lower()}"' in start for c in d["courses"]))
     for c in d["courses"]:
         card = re.search(rf'<article class="ahjo-course" id="{c["code"].lower()}".*?</article>', start, re.S)
-        n = len(re.findall(r"<li>", card.group(0).split('class="ahjo-lessons"')[1])) if card and 'class="ahjo-lessons"' in card.group(0) else 0
-        expect(f"{lang} {c['code']}: goals and the lesson outline in closed boxes ({n} lessons)", not c.get("lessons") or (n == len(c["lessons"]) == 16 and "<details open" not in card.group(0)))
+        expect(f"{lang} {c['code']}: the start page's card links its own course page", card is not None and f'href="{ahjo.course_page(c["code"])}"' in card.group(0))
+        cp = (out / ahjo.course_page(c["code"])).read_text() if (out / ahjo.course_page(c["code"])).is_file() else ""
+        ol = re.search(r'<ol class="ahjo-lessons">(.*?)</ol>', cp, re.S)
+        n = len(re.findall(r"<li>", ol.group(1))) if ol else 0
+        expect(f"{lang} {c['code']}: the course page has the goals and {n} lessons, each with its picture",
+               not c.get("lessons") or (n == len(c["lessons"]) == 16 and ol.group(1).count('class="ahjo-art"') == 16 and 'id="tavoitteet"' in cp))
+        expect(f"{lang} {c['code']}: the course page links Ahjo's materials and safety", f'href="{ahjo.BANK}"' in cp and f'href="{ahjo.SAFETY}"' in cp)
+        expect(f"{lang} {c['code']}: the Makerspace licence only where the teacher said so (Ahjo 1)", bool(c.get("license")) == ('class="ahjo-sec ahjo-safety-teaser ahjo-license"' in cp))
     home = (out / "index.html").read_text()
     plan = re.search(r'<ul class="mod-list plan-list"[^>]*>(.*?)</ul>', home, re.S)
     expect(f"{lang}: Ahjo 1 and Ahjo 2 are not in the front page's planned list (teacher 2026-11-08)",
            not plan or not any(f'{c["code"].lower()}.svg' in plan.group(1) for c in d["courses"]))
-    expect(f"{lang}: the front page links Ahjo with its logo", re.search(r'<ul class="mod-list ahjo-list"><li><a class="mod-row ahjo-row" href="ahjo\.html"><img [^>]*ahjo-makerspace-logo\.svg', home) is not None)
+    expect(f"{lang}: the front page links Ahjo with the logo's mark as its icon", re.search(r'<ul class="mod-list ahjo-list"><li><a class="mod-row ahjo-row" href="ahjo\.html"><img class="mod-icon" src="(?:\.\./)?brand/ahjo-makerspace-merkki\.svg"', home) is not None)
+expect("the mark is cut from the original logo unchanged (scripts/ahjo_art.py writes it)", ahjo.MARK.is_file() and ahjo.MARK.read_text() == ahjo.mark_svg())
 
 # browser: widths and keyboard
 from playwright.sync_api import sync_playwright
@@ -60,7 +67,7 @@ time.sleep(1)
 try:
     with sync_playwright() as p:
         b = p.chromium.launch(**({"executable_path": os.environ["CHROMIUM_PATH"]} if os.environ.get("CHROMIUM_PATH") else {}))
-        for name in ("ahjo.html", "ahjo-materiaalit.html", "ahjo-turvallisuus.html", "en/ahjo.html"):
+        for name in ("ahjo.html", "ahjo-1.html", "ahjo-2.html", "ahjo-materiaalit.html", "ahjo-turvallisuus.html", "en/ahjo.html", "en/ahjo-1.html"):
             for w in (360, 768, 1280):
                 pg = b.new_page(viewport={"width": w, "height": 900}); pg.goto(f"http://localhost:{port}/{name}")
                 ov = pg.evaluate("document.documentElement.scrollWidth - innerWidth")

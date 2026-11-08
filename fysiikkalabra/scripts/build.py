@@ -476,9 +476,9 @@ def planned_row(p):
 
 
 def ahjo_row(d):
-    """The front page's row of Ahjo Makerspace: its original logo (small), the name and one line, the whole row a link."""
+    """The front page's row of Ahjo Makerspace: the logo's mark as its icon (ahjo.mark_svg), the name and one line, the whole row a link."""
     q = esc(d["ui"]["front_line"])
-    return (f'<li><a class="mod-row ahjo-row" href="{ahjo.PAGE}"><img class="mod-icon ahjo-row-logo" src="{ahjo.LOGO_SRC}" alt="" width="40" height="40" aria-hidden="true">'
+    return (f'<li><a class="mod-row ahjo-row" href="{ahjo.PAGE}"><img class="mod-icon" src="{ahjo.MARK_SRC}" alt="" width="40" height="40" aria-hidden="true">'
             f'<span class="mod-text"><span class="mod-name"><span class="mod-title">{esc(d["title"])}</span></span>'
             f'<span class="mod-q" title="{q}">{q}</span></span><span class="mod-go" aria-hidden="true">→</span></a></li>')
 
@@ -1411,6 +1411,10 @@ def build_language(lang):
             (ahjo.PAGE, ahjo_data["title"], ahjo.start_body(ahjo_data, planned, local, mod_titles, ahjo_ref), crumb + esc(ahjo_data["title"]), ahjo_data["description"]),
             (ahjo.BANK, u["bank_h"], ahjo.bank_body(ahjo_data, planned, local, mod_titles, ahjo_ref), home_crumb + esc(u["bank_h"]), u["bank_page_lead"]),
             (ahjo.SAFETY, u["safety_page_title"], ahjo.safety_body(ahjo_data, lang, render_md), home_crumb + esc(u["safety_h"]), u["safety_page_lead"])]
+        for c in ahjo_data["courses"]:            # Ahjo 1 and Ahjo 2 each on its own page (teacher 2026-11-08)
+            ct = ahjo.course_info(c["code"], planned, local)[0]
+            pages.append((ahjo.course_page(c["code"]), f'{ct}: {c["subtitle"]}', ahjo.course_body(ahjo_data, c, planned, local, mod_titles, ahjo_ref),
+                          home_crumb + esc(ct), c["subtitle"]))
         for g in ahjo.ready_guides(ahjo_data):   # an Ahjo guide the teacher marked ready: its own page under the bank
             r = next(r for r in ahjo_data["resources"] if r.get("id") == g)
             pages.append((f"{g}.html", r["title"], ahjo.guide_body(ahjo_data, g, lang, render_md),

@@ -65,7 +65,14 @@
     "course_goals": "Goals",
     "course_goals_lead": "In this course, you will learn to",
     "course_lessons": "{n} lessons",
-    "lesson_example": "Example"
+    "lesson_example": "Example",
+    "course_page_open": "Open the course page",
+    "license_h": "Makerspace licence",
+    "license_text": "Ahjo 1 is also Ahjo's Makerspace licence. You need it to work on independent projects in Ahjo.",
+    "license_badge": "Makerspace licence",
+    "course_materials_h": "Ahjo's materials",
+    "course_materials_lead": "The course uses Ahjo's shared materials. Each one has a single home, and here are links to the ones this course needs.",
+    "course_materials_none": "The materials for this course are added to the resource bank as the course is completed."
   },
   "courses": [
     {
@@ -168,7 +175,8 @@
           "example": "Present your device as in a product review: goal, solution, measurements and what you would do in the next version."
         }
       ],
-      "plan_status": "draft"
+      "plan_status": "draft",
+      "license": true
     },
     {
       "code": "AHJO2",
@@ -576,7 +584,8 @@
       "icon": "tools",
       "title": "Mechanical work and prototyping",
       "items": [
-        "Pillar drill",
+        "Cordless drill",
+        "Rotary multi-tool (Dremel)",
         "Hot glue guns",
         "Cutting mats",
         "General hand and power tools",
@@ -613,7 +622,7 @@
     {
       "id": "valvonta",
       "title": "Supervision and independent use",
-      "covers": "What is done under a teacher's supervision, on what terms the space can be used independently, and why nobody works there alone."
+      "covers": "What is done under a teacher's supervision, on what terms the space can be used independently, and why nobody works there alone. Independent projects need the Makerspace licence (Ahjo 1)."
     },
     {
       "id": "tyokalut",
@@ -632,7 +641,7 @@
     },
     {
       "id": "mekaaninen",
-      "title": "Pillar drill and other mechanical tools",
+      "title": "Drill and other mechanical tools",
       "covers": "Clamping the workpiece, safety glasses, hair and clothing, handling bits and blades."
     },
     {
