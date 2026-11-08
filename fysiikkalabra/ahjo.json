@@ -67,6 +67,33 @@
     "course_goals_lead": "Opintojaksolla opit",
     "course_lessons": "{n} oppituntia",
     "lesson_example": "Esimerkki",
+    "lesson_make": "Tee",
+    "lesson_start": "Ensimmäiset 10 minuuttia",
+    "lesson_levels": [
+      "Kokeile",
+      "Muokkaa",
+      "Haasta itsesi"
+    ],
+    "approach_h": "Näin tunneilla edetään",
+    "approach_lead": "Jokainen tunti alkaa tekemisellä. Ensimmäinen onnistuminen tulee 5–10 minuutissa, ja opettaja on valmistellut laitteet ja esimerkkikoodit etukäteen. Laitteita käytetään vasta perehdytyksen jälkeen.",
+    "approach_steps": [
+      [
+        "Kokeile",
+        "Saat toimivan ensimmäisen version valmiista esimerkistä tai mallista."
+      ],
+      [
+        "Muokkaa",
+        "Muutat sitä: luvun, muodon, värin tai äänen. Valmiin koodin ja mallin käyttö on sallittua ja suotavaa."
+      ],
+      [
+        "Ymmärrä",
+        "Selvität, miksi se toimii. Teknologia, fysiikka ja ohjelmointi selitetään Ahjon ohjeissa ja fysiikan luvuissa."
+      ],
+      [
+        "Luo omaa",
+        "Suunnittelet itse, ensin tunnin haasteessa ja lopulta miniprojektissa."
+      ]
+    ],
     "lesson_output": "Tuotos",
     "lesson_guides": "Ohjeet",
     "deepening_h": "Syventävät osat",
@@ -160,7 +187,13 @@
         {
           "title": "Tervetuloa Ahjoon",
           "text": "Tila, laitteet ja toimintatavat; tilan käyttösäännöt ja yleisperehdytys.",
-          "example": "Ensimmäinen 15 minuutin tehtävä: saa LED syttymään paristolla ja selitä, miksi se syttyy vain toisin päin. Kartoita sitten Ahjon laitteet ja kirjaa yksi oikea ongelma, jonka voisit ratkaista niillä kurssin aikana.",
+          "make": "Taskulamppu löytötavarasta",
+          "start": "Kytke LED nappiparistoon, niin se syttyy. Käännä LED toisin päin ja katso, mitä tapahtuu.",
+          "levels": {
+            "try": "Saa LED syttymään ja selitä, miksi se syttyy vain yhteen suuntaan.",
+            "modify": "Muuta valon ilmettä pingispallolla, paperilla, foliolla tai muovipullolla ja valitse suosikkisi.",
+            "challenge": "Kierrä Ahjo ja kirjaa yksi oikea ongelma, jonka haluaisit ratkaista kurssin aikana."
+          },
           "output": "Projektipäiväkirja perustettu ja yksi ongelma kirjattu.",
           "guides": [
             "ahjo-projektipaivakirja"
@@ -169,14 +202,26 @@
         {
           "title": "Turvallinen työskentely",
           "text": "Laitekohtainen perehdytys 3D-tulostimeen ja käsityökaluihin; suojaimet ja työpisteen järjestys.",
-          "example": "Riskinarviointi kuten työpaikalla: valitse yksi laite, tunnista sen vaarat ja kirjoita sille lyhyt käyttöohje, jonka pohjalta toinen voi työskennellä turvallisesti.",
+          "make": "Ahjon oma ohjekortti",
+          "start": "Etsi tilasta viisi turvallisuuteen liittyvää asiaa, esimerkiksi sammutin, ensiapulaukku ja suojalasit, ja kuvaa ne.",
+          "levels": {
+            "try": "Käy laiteperehdytys 3D-tulostimeen ja käsityökaluihin.",
+            "modify": "Tee yhdestä laitteesta kuvallinen ohjekortti omalla tyylilläsi, esimerkiksi piirroksena tai sarjakuvana.",
+            "challenge": "Tee laitteelle riskinarviointi: vaara, todennäköisyys, seuraus ja miten siltä suojaudutaan."
+          },
           "output": "Yhden laitteen riskinarviointi.",
           "guides": []
         },
         {
           "title": "3D-mallinnuksen perusteet",
           "text": "Perusmuodot, yhdistäminen ja reiät Tinkercadissa.",
-          "example": "Mallinna ergonominen kahva, kotelo tai varaosa johonkin rikkinäiseen esineeseen. Tunnin lopussa kappale lähtee tulostumaan, ja tulostus jatkuu tuntien välillä.",
+          "make": "Oma avaimenperä",
+          "start": "Avaa Tinkercadissa opettajan valmis pohja ja kirjoita siihen nimesi. Ensimmäinen malli on valmis.",
+          "levels": {
+            "try": "Viimeistele avaimenperä ja tallenna se STL-tiedostoksi tulostusjonoon.",
+            "modify": "Tee muodosta omasi: lisää oma symboli tai kuvio ja siirrä reikä.",
+            "challenge": "Mallinna esine, joka korjaa tai parantaa jotain arjessasi, esimerkiksi johtopidike tai kynäteline."
+          },
           "output": "Oma malli tulostusjonossa.",
           "guides": [
             "ahjo-3d-mallinnus"
@@ -185,7 +230,13 @@
         {
           "title": "Mittatarkka malli",
           "text": "Mitat, välys ja osien sovittaminen yhteen.",
-          "example": "Mittaa työntömitalla ja tulosta noin 20 minuutin sovitekoe tunnin aikana. Selvitä, millä välyksellä tappi ja reikä sopivat yhteen.",
+          "make": "Kansi, joka napsahtaa kiinni",
+          "start": "Arvaa kolmen esineen mitat ja mittaa ne sitten työntömitalla. Kuka arvasi lähimmäs?",
+          "levels": {
+            "try": "Tulosta valmis sovitekoe, jossa on viisi välystä, ja selvitä, mikä tappi sopii reikään.",
+            "modify": "Mallinna kansi tai tulppa omaan purkkiin, kynään tai pulloon sovitekokeen välyksellä.",
+            "challenge": "Selvitä, miten välys riippuu tulostussuunnasta, ja esitä tulokset taulukkona."
+          },
           "output": "Sovitekokeen tulos: toimiva välys.",
           "guides": [
             "ahjo-3d-mallinnus"
@@ -194,7 +245,13 @@
         {
           "title": "Mallista tulosteeksi",
           "text": "Viipalointi PrusaSlicerilla, tulostusasetukset ja tulostimen käyttö.",
-          "example": "Kantavuustesti: tulosta sama palkki kahdella täyttöasteella tai kahdessa tulostussuunnassa ja ripusta siihen tunnettuja massoja. Kantaako se 2 kg:n massan eli noin 20 N:n painon?",
+          "make": "Palkki, joka kantaa",
+          "start": "Avaa valmis palkki PrusaSlicerissa ja muuta täyttöastetta. Miten tulostusaika ja massa muuttuvat?",
+          "levels": {
+            "try": "Viipaloi ja tulosta palkki opettajan antamilla asetuksilla.",
+            "modify": "Valitse itse täyttöaste ja tulostussuunta ja perustele valintasi.",
+            "challenge": "Kantaako palkki 2 kg:n massan eli noin 20 N:n painon? Vertaa kahta palkkia ja laske, kumpi kantaa enemmän omaa massaansa kohti."
+          },
           "output": "Lujuustestin tulokset taulukkona.",
           "guides": [
             "ahjo-3d-tulostus"
@@ -203,7 +260,13 @@
         {
           "title": "Tulosteen arviointi ja korjaaminen",
           "text": "Tavallisimmat tulostusvirheet, niiden syyt ja korjaaminen.",
-          "example": "Vertaa omaa tulostettasi malliin: mittaa kolme mittaa työntömitalla, tunnista virheet ja muuta yhtä asetusta niiden korjaamiseksi.",
+          "make": "Virheiden museo",
+          "start": "Valitse virhelaatikosta kolme epäonnistunutta tulostetta, nimeä niiden virheet ja arvaa syyt.",
+          "levels": {
+            "try": "Mittaa oma tulosteesi työntömitalla ja vertaa mittoja malliin.",
+            "modify": "Muuta yhtä tulostusasetusta ja tulosta korjattu versio.",
+            "challenge": "Kokoa luokan virheistä kuvallinen virheopas, jossa on virhe, syy ja korjaus."
+          },
           "output": "Mitattu ero mallin ja tulosteen välillä.",
           "guides": [
             "ahjo-3d-tulostus"
@@ -212,7 +275,13 @@
         {
           "title": "Virtapiiri ja komponentit",
           "text": "Jännitelähde, vastus, LED ja koekytkentälevy.",
-          "example": "Mitoita LEDin etuvastus Ohmin lailla, rakenna piiri ja vertaa mitattua virtaa laskemaasi.",
+          "make": "Valo ilman ohjelmointia",
+          "start": "Kytke LED ja vastus koekytkentälevylle valmiin kuvan mukaan. LED syttyy Arduinon 5 voltista ilman ohjelmaa.",
+          "levels": {
+            "try": "Rakenna piiri kytkentäkuvan mukaan.",
+            "modify": "Lisää toinen LED ensin sarjaan ja sitten rinnan. Kummassa kytkennässä LEDit loistavat kirkkaammin?",
+            "challenge": "Mitoita etuvastus Ohmin lailla ja vertaa mitattua virtaa laskemaasi."
+          },
           "output": "Kytkentäkaavio ja vastuksen laskelma.",
           "guides": [
             "ahjo-arduino",
@@ -222,7 +291,13 @@
         {
           "title": "Mittaaminen yleismittarilla",
           "text": "Jännitteen, virran ja resistanssin mittaaminen oikein kytkettynä.",
-          "example": "Mittaa, kuinka paljon virtaa Arduino, LED ja moottori ottavat eri tilanteissa, ja arvioi, kuinka kauan paristo riittäisi laitteellesi.",
+          "make": "Kuinka kauan paristo kestää?",
+          "start": "Mittaa uuden ja käytetyn pariston jännite. Kumpi on kumpi?",
+          "levels": {
+            "try": "Mittaa LEDin ja vastuksen jännitteet sekä piirin virta.",
+            "modify": "Valitse itse laite, esimerkiksi LED, moottori tai summeri, ja mittaa sen virta eri tilanteissa.",
+            "challenge": "Arvioi mittaustesi perusteella, kuinka kauan paristo riittäisi laitteellesi."
+          },
           "output": "Virta- ja jännitemittaukset yksiköineen.",
           "guides": [
             "fy6-2"
@@ -231,7 +306,13 @@
         {
           "title": "Arduinon ensimmäinen ohjelma",
           "text": "Ohjelmointiympäristö, digitaaliset lähdöt ja vilkkuva LED.",
-          "example": "Ohjelmoi reaktioaikapeli, joka mittaa reagointiajan millisekunteina, ja laske luokan keskiarvo. Hajonnan laskeminen on syventävä osa.",
+          "make": "Oma valorytmi",
+          "start": "Lataa valmis vilkkuohjelma Arduinolle ja muuta siinä yhtä lukua. LED vilkkuu nyt sinun tahdissasi.",
+          "levels": {
+            "try": "Saa LED vilkkumaan esimerkkiohjelmalla.",
+            "modify": "Tee vilkkumisesta sydämen syke, majakka tai oma nimesi morseaakkosilla.",
+            "challenge": "Ohjelmoi reaktioaikapeli, joka mittaa reaktioajan millisekunteina, ja laske luokan keskiarvo ja hajonta."
+          },
           "output": "Toimiva ohjelma ja luokan keskiarvo.",
           "guides": [
             "ahjo-arduino"
@@ -240,7 +321,13 @@
         {
           "title": "Anturit ja syötteet",
           "text": "Painike, valo- ja etäisyysanturi; ehtolauseet ja silmukat.",
-          "example": "Rakenna mittalaite, joka tallentaa lukemat sarjaporttiin, esimerkiksi valon tai etäisyyden. Piirrä tunnin aikana kerätystä datasta kuvaaja.",
+          "make": "Mittalaite, joka piirtää",
+          "start": "Kytke valoanturi, lataa valmis ohjelma ja peitä anturi kädelläsi. Sarjaplotteri piirtää käyrän heti.",
+          "levels": {
+            "try": "Lähetä anturin lukemat sarjaporttiin ja tallenna ne.",
+            "modify": "Tee anturista soitin tai valo, joka reagoi ympäristöön, esimerkiksi summeri, jonka sävel nousee, kun käsi lähestyy.",
+            "challenge": "Kalibroi anturi, kerää mittaussarja ja piirrä kuvaaja yksiköineen."
+          },
           "output": "Kuvaaja omasta mittausdatasta.",
           "guides": [
             "tvt-mittausohjelma"
@@ -249,7 +336,13 @@
         {
           "title": "Moottorit ja toimilaitteet",
           "text": "Servo ja tasavirtamoottori; virransyöttö ja ohjaus.",
-          "example": "Servo kääntyy valoa kohti kahden valovastuksen ohjaamana. Tehon mittaaminen on syventävä harjoitus.",
+          "make": "Liikkuva hahmo",
+          "start": "Kytke servo ja potentiometri valmiiseen ohjelmaan ja käännä servoa nupista.",
+          "levels": {
+            "try": "Ohjelmoi servo kääntymään kolmeen eri kulmaan.",
+            "modify": "Rakenna servon päälle pahvihahmo, joka vilkuttaa, nyökkää tai osoittaa.",
+            "challenge": "Tee servosta valon seuraaja, jota ohjaa kaksi valovastusta."
+          },
           "output": "Valoa seuraava servo.",
           "guides": [
             "fy7-4"
@@ -258,21 +351,39 @@
         {
           "title": "Robotin rakentaminen",
           "text": "Robotiikkasarjan rakenne, voimansiirto ja anturit.",
-          "example": "Rakenna robotti, joka kuljettaa kuorman radan läpi. Vertaile, miten välityssuhde vaikuttaa nopeuteen ja vetovoimaan.",
+          "make": "Robotti, joka kantaa kuorman",
+          "start": "Kokoa robotin alusta valmiista osista ja aja sitä testiohjelmalla eteen ja taakse.",
+          "levels": {
+            "try": "Rakenna robotti ohjeen mukaan.",
+            "modify": "Tee robotille oma kuori tai kuormatila pahvista tai tulosteena.",
+            "challenge": "Vertaa kahta välityssuhdetta: miten ne vaikuttavat nopeuteen ja vetovoimaan?"
+          },
           "output": "Toimiva robottialusta ja välityssuhteen vertailu.",
           "guides": []
         },
         {
           "title": "Robotin ohjelmointi",
           "text": "Liike, anturiohjaus ja tehtävän ratkaiseminen ohjelmalla.",
-          "example": "Ensimmäisellä kierroksella robotti ajaa radan ilman antureita pelkillä etukäteen lasketuilla matkoilla ja kulmilla, kuten avaruusluotainta ohjattaessa. Toisella kierroksella se käyttää antureita. Vertaa kierroksia.",
+          "make": "Rata ensin sokkona, sitten antureilla",
+          "start": "Ohjelmoi robotti ajamaan neliö. Kuinka lähelle lähtöpistettä se palaa?",
+          "levels": {
+            "try": "Aja rata pelkillä etukäteen lasketuilla matkoilla ja kulmilla, kuten avaruusluotainta ohjattaessa.",
+            "modify": "Lisää robottiin anturi ja anna sen löytää reitti itse.",
+            "challenge": "Vertaa kierroksia: mittaa aika ja tarkkuus kolmella toistolla."
+          },
           "output": "Kahden kierroksen vertailu.",
           "guides": []
         },
         {
           "title": "Miniprojektin suunnittelu",
           "text": "Ongelma, mitattava onnistumisen mittari, tarvikeluettelo ja luonnos.",
-          "example": "Valitse aihe omasta ongelmastasi tai projektipankista. Kirjaa projektipäiväkirjaan ongelma, mittari, tarvikkeet ja luonnos, ja hyväksytä suunnitelma opettajalla.",
+          "make": "Oma idea paperille",
+          "start": "Selaa projektipankkia ja omia kurssitöitäsi ja valitse kolme ideaa, joista innostut.",
+          "levels": {
+            "try": "Valitse yksi idea ja kirjaa siitä ongelma, mittari ja tarvikkeet.",
+            "modify": "Yhdistä kaksi kurssin aiempaa harjoitusta uudeksi laitteeksi.",
+            "challenge": "Tee pahvista mallikappale ja kokeile ideaa toisella ryhmällä ennen rakentamista."
+          },
           "output": "Hyväksytty miniprojektin suunnitelma.",
           "guides": [
             "ahjo-projektipaivakirja"
@@ -281,7 +392,13 @@
         {
           "title": "Miniprojekti",
           "text": "Pieni oma laite opituilla menetelmillä: rakentaminen ja testaus.",
-          "example": "Rakenna laite suunnitelman mukaan ja testaa se onnistumisen mittarilla vähintään kolmesti.",
+          "make": "Oma laite",
+          "start": "Kokoa tarvikkeet ja saa ensimmäinen osa toimimaan, esimerkiksi anturi tai valo.",
+          "levels": {
+            "try": "Rakenna toimiva versio yhdistelemällä kurssin esimerkkejä.",
+            "modify": "Tee laitteesta omannäköinen: kotelo, väri, ääni tai muoto.",
+            "challenge": "Testaa laitetta onnistumisen mittarilla kolmesti ja paranna sen heikointa kohtaa."
+          },
           "output": "Toimiva laite ja testitulokset.",
           "guides": [
             "ahjo-projektipaivakirja"
@@ -290,7 +407,13 @@
         {
           "title": "Esittely ja itsearviointi",
           "text": "Miniprojektin esittely, dokumentointi ja oman oppimisen arviointi.",
-          "example": "Esittele laite kuin tuotekehityskatselmuksessa: tavoite, ratkaisu, mittaustulokset ja mitä tekisit seuraavassa versiossa.",
+          "make": "Pieni näyttely",
+          "start": "Kuvaa laitteestasi 30 sekunnin video, jossa se toimii.",
+          "levels": {
+            "try": "Esittele laitteesi: tavoite, ratkaisu ja tulos.",
+            "modify": "Valitse oma esitystapa: demo, juliste, video tai näyttelypiste.",
+            "challenge": "Kerro, mitä tekisit seuraavassa versiossa, ja arvioi oppimisesi projektipäiväkirjan kriteereillä."
+          },
           "output": "Esittely ja täydennetty projektipäiväkirja.",
           "guides": [
             "ahjo-projektipaivakirja"
