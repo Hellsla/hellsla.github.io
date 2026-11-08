@@ -9,7 +9,6 @@ site.css styles them all alike:
 
   <ol class="lessons ch-cards"><li class="live ch-card"><h3 class="ch-theme">Section</h3><div class="ch-box">…</div></li>
     <li class="soon ch-card"><div class="ch-box">…</div></li></ol>
-  a local course chapter's label: <div class="ch-label"><h3 class="ch-theme">…</h3><p class="ch-theme-q">question</p></div>
 """
 import re
 
@@ -36,11 +35,10 @@ def md_question(text):
     return re.sub(r"(?<![\w*])\*([^*\n]+)\*(?![\w*])", r"<em>\1</em>", q).strip()
 
 
-def label(heading, lead="", attrs=""):
-    """A section's label, carried by its first card (one continuous grid, teacher 2026-11-04): the heading, and for a
-    local course chapter its question under it."""
-    h = f'<h3 class="ch-theme"{attrs}>{heading}</h3>'
-    return f'<div class="ch-label">{h}<p class="ch-theme-q"{attrs}>{lead}</p></div>' if lead else h
+def label(heading, attrs=""):
+    """A section's label, carried by its first card (one continuous grid, teacher 2026-11-04): its heading only, also a
+    local course chapter's, whose question no longer stands under it (teacher 2026-11-08)."""
+    return f'<h3 class="ch-theme"{attrs}>{heading}</h3>'
 
 
 def card(num, title, href=None, why="", svg="", tags="", cls="", attrs="", lab=""):
