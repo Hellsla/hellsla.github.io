@@ -44,7 +44,7 @@ ohjetta, joten kerro opiskelijoille itse (esim. lomakkeen kuvauksessa):
    - **Salli vain tietyt tiedostotyypit: pois päältä.** JSON ei kuulu Formsin tyyppivalintoihin, joten
      tyyppirajaus estäisi palautuksen. Skripti tarkistaa tiedoston sisällön itse.
    - **Tiedostojen enimmäismäärä: 1**
-   - **Tiedoston enimmäiskoko: 10 Mt.** RuukkiLabra ei tee yli 9 Mt:n tiedostoa.
+   - **Tiedoston enimmäiskoko: 100 Mt.** RuukkiLabra ei tee yli 20 Mt:n tiedostoa.
 3. Asetukset → **Vastaukset**:
    - **Kerää sähköpostiosoitteet: Vahvistettu** (Verified). Tämä on pakollinen. Tiedostonlähetyksen oma
      kirjautumisvaatimus ei yksin riitä, koska palauttajan henkilöllisyys luetaan tästä sarakkeesta.

@@ -122,6 +122,11 @@
       if (v && v.files && Array.isArray(v.entries) && !MEM[g]) MEM[g] = { files: v.files, entries: v.entries };
     }, function () {});
   }
+  // Viimeisimmän tuonnin peruminen (opettaja 8.11.2026: väärä tiedosto pois): tuontia edeltävä ryhmälista, kunkin
+  // ryhmän tila (localStorage-merkkijono) ja tuonnin lisäämät tiedostot. Vain yksi, viimeisin tuonti.
+  var UNDO = '__peru__';
+  function getUndo() { return idb('readonly', function (st) { return st.get(UNDO); }).then(function (v) { return v || null; }, function () { return null; }); }
+  function setUndo(v) { return idb('readwrite', function (st) { if (v) st.put(v, UNDO); else st.delete(UNDO); }).catch(function () {}); }
   function savedOf(g) { try { return JSON.parse(localStorage.getItem(key(g)) || 'null'); } catch (e) { return null; } }
   // Ryhmän vaihto: edellisen ryhmän tiedostot jäävät muistiin (sivun sulkemiseen asti), uuden ryhmän tila localStoragesta.
   // Kurssi vaihtuu ryhmän mukana (RL_COURSE: Code.gs lukee siitä luvut ja tehtävät).
@@ -290,9 +295,10 @@
     var bar = document.getElementById('localBar'); bar.hidden = false; bar.className = 'panel';
     var row1 = el('p'); row1.className = 'bar';
     var imp = el('button', 'Tuo tiedosto'); imp.type = 'button'; imp.id = 'import'; imp.className = 'primary';
+    var undo = el('button', 'Peru viimeisin tuonti'); undo.type = 'button'; undo.id = 'undoImport'; undo.hidden = true;
     var pick = el('input'); pick.type = 'file'; pick.multiple = true; pick.accept = '.zip,.json,application/zip,application/json'; pick.id = 'pick'; pick.hidden = true;
     var gLab = el('label'), gSel = el('select'); gSel.id = 'group'; gLab.append(el('b', 'Ryhmä: '), gSel); gLab.id = 'groupWrap';
-    row1.append(imp, pick, gLab);
+    row1.append(imp, undo, pick, gLab);
     var more = el('details'); more.id = 'more'; more.append(el('summary', 'Muut toiminnot'));
     var row = el('p'); row.className = 'bar';
     var csv = el('button', 'Vie pisteet (CSV)'), bak = el('button', 'Varmuuskopio'), res = el('button', 'Palauta varmuuskopio'), clr = el('button', 'Poista ryhmä');
@@ -310,6 +316,9 @@
       gLab.hidden = list.length < 2; more.hidden = !LOCAL.group;
     }
     function choose(g) { return loadFiles(g).then(function () { useGroup(g); fillGroups(); window.rlReload(); }); }
+    var hhmm = function (d) { return d.getHours() + '.' + pad(d.getMinutes()); };
+    function showUndo() { return getUndo().then(function (u) { undo.hidden = !u; undo.title = u ? 'Tuonti klo ' + hhmm(new Date(u.time)) + ': ' + u.count + ' palautusta' : ''; }); }
+    showUndo();
     var start = '';
     try { start = localStorage.getItem(chosenKey()) || ''; } catch (e) {}
     if (groups().indexOf(start) < 0) start = groups()[0] || '';
@@ -331,7 +340,7 @@
           by[g].files.push(e); if (f && by[g].forms.indexOf(f) < 0) by[g].forms.push(f);
         });
         return Promise.all(order.map(loadFiles)).then(function () {
-          var out = [], stores = [];
+          var out = [], stores = [], snap = { time: Date.now(), groups: groups(), chosen: LOCAL.group, per: {}, count: 0 };
           order.forEach(function (g) {
             var c = courseOfGroup(g), st = savedOf(g);
             if (!COURSES[(st && st.course) || c]) { out.push('Ryhmä ' + g + ': kurssia ' + (c || '?') + ' ei ole tällä arviointisivulla, ei luettu.'); return; }
@@ -340,13 +349,18 @@
             useGroup(g);
             var other = LOCAL.forms.length ? by[g].forms.filter(function (f) { return LOCAL.forms.indexOf(f) < 0; }) : [];
             if (other.length) { out.push('Zip on lomakkeelta "' + other[0] + '", mutta ryhmän ' + g + ' palautukset on luettu lomakkeelta "' + LOCAL.forms[0] + '". Mitään ei luettu.'); return; }
+            var was = savedOf(g) ? localStorage.getItem(key(g)) : null, had = {};
+            Object.keys(LOCAL.files).forEach(function (id) { had[id] = 1; });
             by[g].forms.forEach(function (f) { if (LOCAL.forms.indexOf(f) < 0) LOCAL.forms.push(f); });
             addEntries(by[g].files);
+            var added = Object.keys(LOCAL.files).filter(function (id) { return !had[id]; });
+            if (added.length) { snap.per[g] = { state: was, ids: added }; snap.count += added.length; }
             var r = rlImport_(); saveSheets();
             stores.push(storeFiles(g, LOCAL.files, LOCAL.entries).then(function () { return true; }, function () { return false; }));
             var k = r.counts;
             out.push('Ryhmä ' + g + ': luettu ' + by[g].files.length + ' tiedostoa. Uusia palautuksia ' + r.added + ' (hyväksyttyjä ' + k['Hyväksytty'] + ', kaksoiskappaleita ' + k['Kaksoiskappale'] + ', tarkistettavia ' + k['Tarkistettava'] + ', virheellisiä ' + k['Virheellinen'] + ').');
           });
+          if (snap.count) stores.push(setUndo(snap).then(showUndo).then(function () { return true; }));
           notes.forEach(function (f) { out.push('Ryhmää ei tunnistettu: "' + f + '". Lomakkeen nimen pitää alkaa ryhmällä, esim. FY3.2 lv 2026-27 Palauta ratkaisut.'); });
           fillGroups(); window.rlReload();
           msg.textContent = out.join(' ');
@@ -355,6 +369,30 @@
           });
         });
       }).catch(function (e) { pick.value = ''; msg.textContent = 'Tiedostoja ei voitu lukea: ' + (e && e.message || e); });
+    });
+    undo.addEventListener('click', function () {
+      getUndo().then(function (u) {
+        if (!u) { undo.hidden = true; return; }
+        var gs = Object.keys(u.per);
+        if (!window.confirm('Perutaanko tuonti klo ' + hhmm(new Date(u.time)) + '? Siinä tuodut ' + u.count + ' palautusta poistetaan, ja ryhmän ' + gs.join(', ') +
+          ' arviointi palaa tuontia edeltävään tilaan. Tuonnin jälkeen annetut pisteet poistuvat.')) return;
+        return Promise.all(gs.map(loadFiles)).then(function () {
+          useGroup('');
+          var jobs = gs.map(function (g) {
+            var m = MEM[g] || { files: {}, entries: [] }, drop = {};
+            u.per[g].ids.forEach(function (id) { drop[id] = 1; delete m.files[id]; });
+            m.entries = m.entries.filter(function (e) { return !drop[e.id]; }); MEM[g] = m;
+            try { if (u.per[g].state) localStorage.setItem(key(g), u.per[g].state); else localStorage.removeItem(key(g)); } catch (e) {}
+            if (!m.entries.length) { delete MEM[g]; return dropFiles(g); }
+            return storeFiles(g, m.files, m.entries).catch(function () {});
+          });
+          setGroups(u.groups);
+          return Promise.all(jobs).then(function () { return setUndo(null); }).then(function () {
+            var list = groups(), g = list.indexOf(u.chosen) >= 0 ? u.chosen : (list[0] || '');
+            return choose(g).then(function () { undo.hidden = true; msg.textContent = 'Tuonti peruttu: ' + u.count + ' palautusta poistettu.' + (g ? '' : ' Tuo ryhmän zip-tiedosto.'); });
+          });
+        });
+      });
     });
     csv.addEventListener('click', function () {
       var name = course() + '-' + safe(LOCAL.group) + '-pisteet.csv';
@@ -374,14 +412,14 @@
         if (st && st.group && st.group !== LOCAL.group && !window.confirm('Varmuuskopio on ryhmältä ' + st.group + '. Korvataanko ryhmän ' + LOCAL.group + ' arviointi sillä?')) return;
         var before = LOCAL.sheets, forms = LOCAL.forms;
         try { loadSheets(t); } catch (e) { LOCAL.sheets = before; LOCAL.forms = forms; msg.textContent = 'Tiedosto ei ole tämän kurssin arvioinnin varmuuskopio.'; return; }
-        saveSheets(); msg.textContent = 'Varmuuskopio palautettu ryhmään ' + LOCAL.group + '.'; window.rlReload();
+        saveSheets(); setUndo(null).then(showUndo); msg.textContent = 'Varmuuskopio palautettu ryhmään ' + LOCAL.group + '.'; window.rlReload();
       }, function () { msg.textContent = 'Tiedostoa ei voitu lukea.'; });
     });
     clr.addEventListener('click', function () {
       if (!window.confirm('Poistetaanko ryhmä ' + LOCAL.group + ' sekä sen tuonnit ja pisteet tästä selaimesta? Ota ensin varmuuskopio.')) return;
       var g = LOCAL.group;
       try { localStorage.removeItem(key()); } catch (e) {}
-      delete MEM[g]; LOCAL.group = ''; dropFiles(g);
+      delete MEM[g]; LOCAL.group = ''; dropFiles(g); setUndo(null).then(showUndo);
       setGroups(groups().filter(function (x) { return x !== g; }));
       choose(groups()[0] || '');
       msg.textContent = 'Ryhmä ' + g + ' poistettu.';

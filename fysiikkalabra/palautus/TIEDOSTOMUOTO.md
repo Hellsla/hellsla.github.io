@@ -51,7 +51,7 @@ RuukkiLabran `templates/palautus.js` tekee tiedoston opiskelijan selaimessa, ja 
 
 | | raja | peruste |
 |---|---|---|
-| tiedosto | 9 Mt | Formsin tiedostorajaksi asetetaan 10 Mt; Apps Script lukee tiedoston kerralla |
+| tiedosto | 20 Mt | Formsin tiedostorajaksi asetetaan 100 Mt; Apps Script lukee tiedoston kerralla |
 | kuva | 2 Mt, enintään 5000 px sivu | koko näytön kuvakaappaus mahtuu; arviointinäkymä hakee yhden tehtävän kerrallaan |
 | kuvia | 40 / tiedosto | |
 | teksti | 20 000 merkkiä / tehtävä | |

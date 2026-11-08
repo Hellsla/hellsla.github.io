@@ -55,9 +55,9 @@
       return { id: f.dataset.sa, text: (f.dataset.label || '').slice(0, 500), level: it && SA_LEVEL.test(it.level) ? it.level : null };
     });
   };
-  // Limits, the same in the teacher's Apps Script (Code.gs RL_LIMITS): Forms takes a file of at most 10 MB when the
-  // teacher picks that size; a picture of 2 MB is a full-screen screenshot, and the teacher's view loads one task at a time.
-  const LIMITS = { file: 9000000, image: 2000000, side: 5000, images: 40, text: 20000, latex: 4000, items: 400, mathPng: 200000 };
+  // Limits, the same in the teacher's Apps Script (Code.gs RL_LIMITS): Forms takes a file of at most 100 MB when the
+  // teacher picks that size (work file 20 MB, teacher 2026-11-08); a picture of 2 MB is a full-screen screenshot, and the teacher's view loads one task at a time.
+  const LIMITS = { file: 20000000, image: 2000000, side: 5000, images: 40, text: 20000, latex: 4000, items: 400, mathPng: 200000 };
   const STORE_KEY = 'ruukkilabra:palautus:' + CHAPTER;
   const sec = document.getElementById('exercises');
   const ON_CHAPTER = !!(CHAPTER && sec);
