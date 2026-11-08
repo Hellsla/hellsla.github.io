@@ -90,82 +90,82 @@
         {
           "title": "Welcome to Ahjo",
           "text": "The space, the equipment and how we work; the rules and the induction.",
-          "example": "An Ahjo tour: guess what each machine does and think of what you would like to build."
+          "example": "Map Ahjo's equipment and pick one real problem you could solve with it during the course, such as gear for your hobby or a tool that helps you study."
         },
         {
           "title": "Working safely",
           "text": "Hand and power tools, protective equipment and an orderly workstation.",
-          "example": "Make Ahjo's safety poster together, with rules the students justify themselves."
+          "example": "A risk assessment as at a workplace: choose one machine, identify its hazards and write instructions someone else can work safely from."
         },
         {
           "title": "Basics of 3D modelling",
           "text": "Basic shapes, joining and cutting in a modelling program.",
-          "example": "Model your own key ring or name tag and print it at the end of the lesson."
+          "example": "Model an ergonomic handle, a case or a spare part for something broken and justify your design choices."
         },
         {
           "title": "A model to measure",
           "text": "Dimensions, tolerances and fitting parts together.",
-          "example": "A phone stand or cable holder that fits your own phone to the millimetre."
+          "example": "Design a two-part joint (snap fit or hinge) and find by experiment the clearance at which the parts fit together."
         },
         {
           "title": "From model to print",
           "text": "Slicing, print settings and using the printer.",
-          "example": "How fast and light can you print a bridge that carries a drink can?"
+          "example": "An optimisation challenge: the lightest printed truss that carries 2 kg. Compare how infill, layer height and print orientation affect strength and material use."
         },
         {
           "title": "Judging a print and 3D scanning",
           "text": "Print defects and how to fix them; scanning an object into a model.",
-          "example": "Scan a stone, a fruit or your own face and print a miniature of it."
+          "example": "Scan an object, repair the model and print a scale copy. How accurate is it, and where do the differences come from?"
         },
         {
           "title": "Circuits and components",
           "text": "Power source, resistor, LED and breadboard.",
-          "example": "Light an LED with a lemon battery and find out how many lemons it takes."
+          "example": "Size an LED's series resistor with Ohm's law, build the circuit and compare the measured current with your calculation. What happens without the resistor?"
         },
         {
           "title": "Measuring with a multimeter",
           "text": "Measuring voltage, current and resistance connected the right way.",
-          "example": "Find a broken lead or a flat battery by measuring: Ahjo's electrical detective."
+          "example": "Measure the current drawn by a phone charger, an Arduino and a motor in different situations and estimate how long a battery would power your device."
         },
         {
           "title": "A first Arduino program",
           "text": "The programming environment, digital outputs and a blinking LED.",
-          "example": "Traffic lights or a Morse message a classmate tries to decode."
+          "example": "Program a reaction-time game that measures reaction time in milliseconds and computes the class's mean and spread."
         },
         {
           "title": "Sensors and inputs",
           "text": "Button, light and distance sensors; conditions and loops.",
-          "example": "A night light that turns on in the dark, or a parking sensor that beeps faster and faster."
+          "example": "Build a measuring device: a classroom CO₂, noise or temperature logger that records data. Plot a graph of a lesson's data."
         },
         {
           "title": "Motors and actuators",
           "text": "Servo and DC motor; power supply and control.",
-          "example": "A waving cat, a pointer, or a small fan that starts when it gets warm."
+          "example": "Use a servo to turn a solar panel towards the light and measure how much power tracking adds compared with a fixed panel."
         },
         {
           "title": "Soldering",
           "text": "Using a soldering station and soldering a small circuit.",
-          "example": "Solder your own blinking badge or a small sound circuit to take home."
+          "example": "Solder your measuring device onto stripboard so that it lasts. Test the joints with a multimeter and compare reliability with the breadboard."
         },
         {
           "title": "Building a robot",
           "text": "The structure of a robotics kit, drive train and sensors.",
-          "example": "Build a robot that carries a ping-pong ball from one end of the table to the other."
+          "example": "Build a robot that carries a load around a course as fast as possible. Compare how the gear ratio affects speed and pulling force."
         },
         {
           "title": "Programming a robot",
           "text": "Movement, sensor control and solving a task with a program.",
-          "example": "A line-following robot and a class race on a track."
+          "example": "Program a robot to find its way past obstacles with its sensors. Compare simple and proportional (P) control in line following."
         },
         {
           "title": "Mini project",
           "text": "A small device of your own with the methods learned: design and build.",
-          "example": "Solve a small everyday problem at school: a doorbell, a plant-watering reminder or a classroom noise meter."
+          "example": "A small device of your own with the methods learned, such as a plant moisture monitor, a bike light system or a sports performance meter."
         },
         {
           "title": "Presentation and self-assessment",
           "text": "Presenting and documenting the mini project and assessing your own learning.",
-          "example": "A fair: everyone presents their device in a minute and the others try it."
+          "example": "Present your device as in a product review: goal, solution, measurements and what you would do in the next version."
         }
       ],
       "plan_status": "draft"
@@ -192,82 +192,82 @@
         {
           "title": "Starting the project",
           "text": "How Ahjo 2 runs, teams and finding a project topic.",
-          "example": "Look at young inventors' solutions and collect problems from your own school life."
+          "example": "Look at a few student invention and enterprise projects and collect problems that matter to you, the school or the neighbourhood."
         },
         {
           "title": "Defining the problem",
           "text": "Whose problem, what need, and how success is recognised.",
-          "example": "Interview a user: what makes the PE lesson, canteen or bike park awkward?"
+          "example": "Interview at least three users and write a precise problem definition: who, in what situation, and by what measurable criterion the solution succeeds."
         },
         {
           "title": "Ideation",
           "text": "Ideation methods and producing several possible solutions.",
-          "example": "A six-minute sketch round: six ideas for the same problem."
+          "example": "Ideate through constraints: what if it cost at most €20, worked without electricity, or had to be repairable by the user?"
         },
         {
           "title": "Judging and choosing ideas",
           "text": "Criteria, comparison and a justified choice.",
-          "example": "Score the ideas: impact, feasibility and how exciting they are."
+          "example": "Rank the ideas with a weighted decision matrix that also covers sustainability: materials, energy use and life cycle."
         },
         {
           "title": "Project plan",
           "text": "Goals, roles, schedule, materials and risks.",
-          "example": "Make a one-page plan and timeline of the project and update it every lesson."
+          "example": "Write a plan with milestones, responsibilities, a budget and a risk assessment, as in a real product development project."
         },
         {
           "title": "Design",
           "text": "Sketches, dimensioned drawings and digital models.",
-          "example": "Cardboard first: build the idea from cardboard and tape before the computer model."
+          "example": "Make a dimensioned drawing and a 3D model from which another group could build the same part without explanations."
         },
         {
           "title": "Materials and methods",
           "text": "Choosing suitable materials, equipment and ways of making.",
-          "example": "Compare: what does the same part need when 3D printed, cut from vinyl or sewn?"
+          "example": "Choose a material with reasons: compare strength, cost, making time and recyclability for at least two options."
         },
         {
           "title": "A first prototype",
           "text": "A quick, simple model to try out the idea.",
-          "example": "A one-lesson prototype: what is the smallest version that lets you try the idea?"
+          "example": "Build the smallest working prototype that tests the riskiest assumption of your project."
         },
         {
           "title": "Testing the prototype",
           "text": "A test plan, measuring and recording observations.",
-          "example": "A stress test: drop it, load it, or let someone use it without instructions."
+          "example": "Write a test plan: what is measured, how precisely, and what result counts as success. Collect the data and present it as a graph."
         },
         {
           "title": "Feedback and improvement",
           "text": "Feedback from users and the group; planning changes.",
-          "example": "A feedback café: groups rotate and leave each other \"keep, change, try\" notes."
+          "example": "Run a user test in which an outsider uses the prototype without instructions. Record what you see and decide what to change and why."
         },
         {
           "title": "Building 1",
           "text": "Making the parts of the solution according to the plan.",
-          "example": "Split the building into parts so that everyone learns a new machine."
+          "example": "Make the parts with different machines and share the work so that every member masters at least one new method."
         },
         {
           "title": "Building 2",
           "text": "Assembling the parts; electronics, programming or finishing as needed.",
-          "example": "Add a sensor, light, sound or printed fabric part that makes it clearer for the user."
+          "example": "Add a sensor, a microcontroller or a printed textile part that measurably improves how it works."
         },
         {
           "title": "Final testing",
           "text": "Does the solution work: tests, measurements and comparison with the goals.",
-          "example": "Measure before and after: how much does the solution really help?"
+          "example": "Test the final solution with the same measures as the prototype and judge whether the original goal was met."
         },
         {
           "title": "Finishing",
           "text": "Last fixes, appearance and usability.",
-          "example": "A finish that makes it look like a product: a sticker, logo or case with the vinyl cutter and 3D printer."
+          "example": "Finish it for presentation: a case, labels and instructions that let the user manage without the makers."
         },
         {
           "title": "Documentation",
           "text": "The project's stages, decisions and results into a portfolio.",
-          "example": "Shoot a short video or make an illustrated portfolio from which someone else could build it."
+          "example": "Put together a portfolio that tells your decisions and failures honestly; it also serves an upper secondary diploma and applications to further studies."
         },
         {
           "title": "Presentation and assessment",
           "text": "Presenting the project and assessing your own and the group's work.",
-          "example": "A project exhibition in the school lobby or for visitors."
+          "example": "Pitch the project to an audience or a partner company and answer questions. Finally, assess your own and the group's work."
         }
       ],
       "plan_status": "draft"
