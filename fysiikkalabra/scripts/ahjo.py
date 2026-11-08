@@ -215,6 +215,7 @@ def course_name(code, planned, local, modules):
     if code in modules: return f"{code} {modules[code]}", f"{code}.html", False
     if code in local: return f"{code} {local[code]['title']}" if code.startswith("FY") else local[code]["title"], f"{code}.html", False
     p = next((p for p in planned if p.get("icon") == code), None)
+    if p and code.startswith("AHJO"): return p["title"], course_page(code), True   # Ahjo 1 and 2 have their own pages here
     return (p["title"] if p else code), None, True
 
 
@@ -249,16 +250,17 @@ def start_body(d, planned, local, modules, ref):
     # Ahjo 1 and Ahjo 2: name and line from the course registry, topics from ahjo.json
     cards = []
     for c in d["courses"]:
-        title, text, href = course_info(c["code"], planned, local)
-        status = u["course_status_ready"] if href else u["course_status_planned"]
-        head = f'<a href="{href}">{esc(title)}</a>' if href else esc(title)
+        title, text, _ = course_info(c["code"], planned, local)
+        href = course_page(c["code"])
+        badges = (f'<p class="ahjo-badge planned">{esc(u["course_status_planned"])}</p>'
+                  + (f'<p class="ahjo-badge ahjo-license-badge">{esc(u["license_badge"])}</p>' if c.get("license") else ""))
         cards.append(f'<article class="ahjo-course" id="{c["code"].lower()}" aria-labelledby="h-{c["code"].lower()}">'
-                     f'<div class="ahjo-course-art">{art(c["code"].lower())}</div><div class="ahjo-course-head"><h3 id="h-{c["code"].lower()}"><span class="ahjo-course-name">{head}</span>'
-                     f'<span class="ahjo-course-sub">{esc(c["subtitle"])}</span></h3>'
-                     f'<p class="ahjo-badge{"" if href else " planned"}">{esc(status)}</p></div>'
+                     f'<div class="ahjo-course-art">{art(c["code"].lower())}</div><div class="ahjo-course-head"><h3 id="h-{c["code"].lower()}"><span class="ahjo-course-name"><a href="{href}">{esc(title)}</a></span>'
+                     f'<span class="ahjo-course-sub">{esc(c["subtitle"])}</span></h3><div class="ahjo-badges">{badges}</div></div>'
                      f'<p class="ahjo-course-text">{esc(text)}</p>'
                      f'<h4 class="visually-hidden">{esc(u["course_contents"])}</h4>'
-                     f'<ul class="ahjo-topics">' + "".join(f'<li>{esc(t)}</li>' for t in c["topics"]) + '</ul>' + course_plan(u, c) + '</article>')
+                     f'<ul class="ahjo-topics">' + "".join(f'<li>{esc(t)}</li>' for t in c["topics"]) + '</ul>'
+                     f'<p class="ahjo-more"><a href="{href}">{esc(u["course_page_open"])}<span class="visually-hidden">: {esc(title)}</span><span aria-hidden="true"> →</span></a></p></article>')
     courses = (f'<section class="ahjo-sec" id="opintojaksot" aria-labelledby="h-ahjo-courses"><h2 id="h-ahjo-courses">{esc(u["courses_h"])}</h2>'
                f'<p class="ahjo-sec-lead">{esc(u["courses_lead"])}</p><div class="ahjo-courses">{"".join(cards)}</div></section>')
     # the bank's topics with what is ready and what is coming
@@ -280,22 +282,45 @@ def start_body(d, planned, local, modules, ref):
             + links_section(d, names))
 
 
-def course_plan(u, c):
-    """A course's goals and lesson outline as two closed boxes under its topics; a draft says so (teacher 2026-11-08:
-    "tavoitteet ja 16 oppituntia", written as a draft until the teacher approves it or gives the school's own text)."""
-    out = ""
-    if c.get("plan_status") == "draft" and (c.get("goals") or c.get("lessons")):
-        out += f'<p class="ahjo-plan-note">{esc(u["plan_draft"])}</p>'
+def course_page(code): return f"ahjo-{code[4:].lower()}.html"     # AHJO1 -> ahjo-1.html
+
+
+def lessons_list(u, c):
+    """The lesson outline with a picture for each lesson (scripts/ahjo_art.py)."""
+    return ('<ol class="ahjo-lessons">'
+            + "".join(f'<li><div class="ahjo-lesson"><span class="ahjo-lesson-art">{art(c["code"].lower() + "-" + str(i))}</span><span class="ahjo-lesson-b">'
+                      f'<span class="ahjo-lesson-t">{esc(l["title"])}</span> <span class="ahjo-lesson-x">{esc(l["text"])}</span>'
+                      + (f'<span class="ahjo-lesson-e"><span class="ahjo-meta-l">{esc(u["lesson_example"])}:</span> {esc(l["example"])}</span>' if l.get("example") else "")
+                      + '</span></div></li>' for i, l in enumerate(c["lessons"], 1))
+            + '</ol>')
+
+
+def course_body(d, c, planned, local, modules, ref):
+    """Ahjo 1 or Ahjo 2 on its own page (teacher 2026-11-08): the licence (Ahjo 1), contents, goals, the 16 lessons with
+    their pictures, and links to Ahjo's shared materials, which stay in the bank (linked, never copied)."""
+    u = d["ui"]; title, text, _ = course_info(c["code"], planned, local); k = c["code"].lower()
+    out = hero(d, title, c["subtitle"], PAGE + "#opintojaksot", extra=f'<p class="ahjo-opening">{esc(text)}</p>')
+    if c.get("license"):
+        out += (f'<section class="ahjo-sec ahjo-safety-teaser ahjo-license" aria-labelledby="h-{k}-license">{icon("shield", "ahjo-icon ahjo-icon-big")}'
+                f'<div><h2 id="h-{k}-license">{esc(u["license_h"])}</h2><p>{esc(u["license_text"])}</p></div></section>')
+    out += (f'<section class="ahjo-sec" aria-labelledby="h-{k}-contents"><div class="ahjo-course-art ahjo-course-page-art">{art(k)}</div>'
+            f'<h2 id="h-{k}-contents">{esc(u["course_contents"])}</h2><ul class="ahjo-topics">' + "".join(f'<li>{esc(t)}</li>' for t in c["topics"]) + '</ul></section>')
+    note = f'<p class="ahjo-plan-note">{esc(u["plan_draft"])}</p>' if c.get("plan_status") == "draft" and (c.get("goals") or c.get("lessons")) else ""
     if c.get("goals"):
-        out += (f'<details class="ahjo-plan"><summary>{esc(u["course_goals"])}</summary><p>{esc(u["course_goals_lead"])}</p>'
-                f'<ul>' + "".join(f'<li>{esc(g)}</li>' for g in c["goals"]) + '</ul></details>')
+        out += (f'<section class="ahjo-sec" id="tavoitteet" aria-labelledby="h-{k}-goals"><h2 id="h-{k}-goals">{esc(u["course_goals"])}</h2>{note}'
+                f'<p class="ahjo-sec-lead">{esc(u["course_goals_lead"])}</p><ul class="ahjo-goals">' + "".join(f'<li>{esc(g)}</li>' for g in c["goals"]) + '</ul></section>')
+        note = ""
     if c.get("lessons"):
-        out += (f'<details class="ahjo-plan"><summary>{esc(u["course_lessons"].replace("{n}", str(len(c["lessons"]))))}</summary><ol class="ahjo-lessons">'
-                + "".join(f'<li><div class="ahjo-lesson"><span class="ahjo-lesson-art">{art(c["code"].lower() + "-" + str(i))}</span><span class="ahjo-lesson-b">'
-                           f'<span class="ahjo-lesson-t">{esc(l["title"])}</span> <span class="ahjo-lesson-x">{esc(l["text"])}</span>'
-                           + (f'<span class="ahjo-lesson-e"><span class="ahjo-meta-l">{esc(u["lesson_example"])}:</span> {esc(l["example"])}</span>' if l.get("example") else "")
-                           + '</span></div></li>' for i, l in enumerate(c["lessons"], 1))
-                + '</ol></details>')
+        out += (f'<section class="ahjo-sec" id="oppitunnit" aria-labelledby="h-{k}-lessons"><h2 id="h-{k}-lessons">{esc(u["course_lessons"].replace("{n}", str(len(c["lessons"]))))}</h2>{note}'
+                + lessons_list(u, c) + '</section>')
+    mine = [e for _, e in resolve(d, ref) if c["code"] in e["courses"] and e["ready"]]
+    rows = "".join(f'<li><a href="{e["href"]}"><span class="ahjo-res-t">{esc(e["title"])}</span></a> <span class="ahjo-res-k">{esc(e["kind"])}</span>'
+                   f'<span class="ahjo-res-x">{esc(e["text"])}</span></li>' for e in mine)
+    out += (f'<section class="ahjo-sec" id="materiaalit" aria-labelledby="h-{k}-materials"><h2 id="h-{k}-materials">{esc(u["course_materials_h"])}</h2>'
+            f'<p class="ahjo-sec-lead">{esc(u["course_materials_lead"])}</p>'
+            + (f'<ul class="ahjo-course-res">{rows}</ul>' if rows else f'<p>{esc(u["course_materials_none"])}</p>')
+            + f'<p class="ahjo-more"><a href="{BANK}">{esc(u["bank_all"])}<span aria-hidden="true"> →</span></a></p>'
+            f'<p class="ahjo-more"><a href="{SAFETY}">{esc(u["safety_open"])}<span aria-hidden="true"> →</span></a></p></section>')
     return out
 
 

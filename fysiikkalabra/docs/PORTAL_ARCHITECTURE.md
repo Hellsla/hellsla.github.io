@@ -86,7 +86,7 @@ public repository: a hidden element is not access control.
 ## Ahjo Makerspace (implemented 2026-11-08)
 - `ahjo.json` (Finnish source, `content/en/ahjo.json` in English; fi-easy shows the Finnish) and `scripts/ahjo.py`
   (documents every field, validates, renders): `ahjo.html` (start page), `ahjo-materiaalit.html` (the bank, eight
-  categories), `ahjo-turvallisuus.html` (safety topics). Kiviruukin lukio's identity inside the common header and
+  categories), `ahjo-turvallisuus.html` (safety topics), and `ahjo-1.html` / `ahjo-2.html` (each course: goals, 16 lessons with pictures, links to its bank materials; Ahjo 1 is also the Makerspace licence needed for independent projects, `"license": true`). Kiviruukin lukio's identity inside the common header and
   footer: navy #012169, pink #fca5c7, Lato + Work Sans (self-hosted), the original logo
   `assets/shared/brand/ahjo-makerspace-logo.svg` byte for byte (its SHA-256 is pinned in ahjo.py).
 - Ahjo 1 and Ahjo 2 stay planned courses in `local-courses.json` `_planned`; their name and line come from there.

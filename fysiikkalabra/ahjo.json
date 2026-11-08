@@ -66,7 +66,14 @@
     "course_goals": "Tavoitteet",
     "course_goals_lead": "Opintojaksolla opit",
     "course_lessons": "{n} oppituntia",
-    "lesson_example": "Esimerkki"
+    "lesson_example": "Esimerkki",
+    "course_page_open": "Avaa kurssisivu",
+    "license_h": "Makerspace-ajokortti",
+    "license_text": "Ahjo 1 on samalla Ahjon Makerspace-ajokortti. Se tarvitaan, jotta voi tehdä Ahjossa itsenäisiä projekteja.",
+    "license_badge": "Makerspace-ajokortti",
+    "course_materials_h": "Ahjon materiaalit",
+    "course_materials_lead": "Kurssi käyttää Ahjon yhteisiä materiaaleja. Jokaisella materiaalilla on yksi kotipaikka, ja tänne on koottu linkit niihin, joita tällä kurssilla tarvitaan.",
+    "course_materials_none": "Tämän kurssin materiaalit lisätään materiaalipankkiin kurssin valmistuessa."
   },
   "courses": [
     {
@@ -169,7 +176,8 @@
           "example": "Esittele laite kuin tuotekehityskatselmuksessa: tavoite, ratkaisu, mittaustulokset ja mitä tekisit seuraavassa versiossa."
         }
       ],
-      "plan_status": "draft"
+      "plan_status": "draft",
+      "license": true
     },
     {
       "code": "AHJO2",
@@ -577,7 +585,8 @@
       "icon": "tools",
       "title": "Mekaaninen työskentely ja prototypointi",
       "items": [
-        "Pylväsporakone",
+        "Akkuporakone",
+        "Monitoimityökalu (Dremel)",
         "Kuumaliimapistoolit",
         "Leikkuualustat",
         "Yleistyökalut ja sähkötyökalut",
@@ -614,7 +623,7 @@
     {
       "id": "valvonta",
       "title": "Valvonta ja itsenäinen käyttö",
-      "covers": "Mitä tehdään opettajan valvonnassa, millä ehdoilla tilaa voi käyttää itsenäisesti ja ettei tilassa työskennellä yksin."
+      "covers": "Mitä tehdään opettajan valvonnassa, millä ehdoilla tilaa voi käyttää itsenäisesti ja ettei tilassa työskennellä yksin. Itsenäisiin projekteihin tarvitaan Makerspace-ajokortti (Ahjo 1)."
     },
     {
       "id": "tyokalut",
@@ -633,7 +642,7 @@
     },
     {
       "id": "mekaaninen",
-      "title": "Pylväsporakone ja muut mekaaniset työkalut",
+      "title": "Porakone ja muut mekaaniset työkalut",
       "covers": "Kappaleen kiinnitys, suojalasit, hiukset ja vaatetus, terien käsittely."
     },
     {
