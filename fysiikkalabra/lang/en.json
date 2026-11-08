@@ -3153,7 +3153,7 @@
     "screen_h": "Classroom screen",
     "screen_open": "Open the classroom screen",
     "grading_h": "Grading tool",
-    "grading_p": "Ruukkilabra submissions are graded on your own computer with this separate page. It does not use the network, and no student data comes to Ruukkilabra. The grading page is in Finnish.",
+    "grading_p": "Ruukkilabra submissions are graded on your own computer with this separate page. It does not use the network, and no student data comes to Ruukkilabra. Choose EN at the top of the grading page to use it in English; the task statements stay in Finnish.",
     "download": "Download the grading page ({{name}})",
     "update_p": "Download the newest version whenever it is updated. The points and the imported submissions stay in the browser when you open the new version in the same browser.",
     "steps_h": "How to grade",

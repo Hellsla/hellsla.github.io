@@ -2036,7 +2036,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
       list = list.filter(x => x.id !== id);
       if (current && current.id === id){
         current = null;
-        if (!list.length){ const nb = {id: uid(), name: 'Taulu 1', html: '', strokes: [], created: Date.now()}; list.push(nb); await put(nb); }
+        if (!list.length){ const nb = {id: uid(), name: t('Taulu') + ' 1', html: '', strokes: [], created: Date.now()}; list.push(nb); await put(nb); }
         const next = list[0]; show(next); current = next;
         localStorage.setItem('kiviruukki.board', next.id);
       }
@@ -2102,7 +2102,7 @@ body:fullscreen .topbar:hover,body:fullscreen .topbar:focus-within,body:-webkit-
         list = (await req(tx('readonly').getAll()).catch(() => [])).sort((a, b) => a.created - b.created);
         if (!list.length){
           // first run: move the existing note and drawing into "Taulu 1"
-          const old = {id: uid(), name: 'Taulu 1', html: serialize(), strokes: strokes.slice(), created: Date.now()};
+          const old = {id: uid(), name: t('Taulu') + ' 1', html: serialize(), strokes: strokes.slice(), created: Date.now()};
           if (!isEmpty(old)){ list.push(old); await put(old); }
         }
         localStorage.removeItem('kiviruukki.note'); localStorage.removeItem('kiviruukki.drawing');
