@@ -67,6 +67,10 @@
     "course_goals_lead": "Opintojaksolla opit",
     "course_lessons": "{n} oppituntia",
     "lesson_example": "Esimerkki",
+    "lesson_output": "Tuotos",
+    "lesson_guides": "Ohjeet",
+    "deepening_h": "Syventävät osat",
+    "deepening_lead": "Valinnaisia lisätöitä niille, jotka ehtivät pidemmälle tai haluavat syventyä. Ne eivät kuulu kaikille yhteiseen runkoon.",
     "course_page_open": "Avaa kurssisivu",
     "license_h": "Makerspace-ajokortti",
     "license_text": "Ahjo 1 on samalla Ahjon Makerspace-ajokortti. Se tarvitaan, jotta voi tehdä Ahjossa itsenäisiä projekteja.",
@@ -149,87 +153,164 @@
       "lessons": [
         {
           "title": "Tervetuloa Ahjoon",
-          "text": "Tila, laitteet ja toimintatavat; tilan käyttösäännöt ja perehdytys.",
-          "example": "Kartoita Ahjon laitteet ja valitse yksi oikea ongelma, jonka voisit ratkaista niillä kurssin aikana – esimerkiksi oman harrastuksen varuste tai opiskelua helpottava työkalu."
+          "text": "Tila, laitteet ja toimintatavat; tilan käyttösäännöt ja yleisperehdytys.",
+          "example": "Ensimmäinen 15 minuutin tehtävä: saa LED syttymään paristolla ja selitä, miksi se syttyy vain toisin päin. Kartoita sitten Ahjon laitteet ja kirjaa yksi oikea ongelma, jonka voisit ratkaista niillä kurssin aikana.",
+          "output": "Projektipäiväkirja perustettu ja yksi ongelma kirjattu.",
+          "guides": [
+            "ahjo-projektipaivakirja"
+          ]
         },
         {
           "title": "Turvallinen työskentely",
-          "text": "Käsi- ja sähkötyökalut, suojaimet ja työpisteen järjestys.",
-          "example": "Riskinarviointi kuten työpaikalla: valitse yksi laite, tunnista sen vaarat ja kirjoita sille käyttöohje, jonka pohjalta toinen voi työskennellä turvallisesti."
+          "text": "Laitekohtainen perehdytys 3D-tulostimeen ja käsityökaluihin; suojaimet ja työpisteen järjestys.",
+          "example": "Riskinarviointi kuten työpaikalla: valitse yksi laite, tunnista sen vaarat ja kirjoita sille lyhyt käyttöohje, jonka pohjalta toinen voi työskennellä turvallisesti.",
+          "output": "Yhden laitteen riskinarviointi.",
+          "guides": []
         },
         {
           "title": "3D-mallinnuksen perusteet",
-          "text": "Perusmuodot, yhdistäminen ja leikkaaminen mallinnusohjelmassa.",
-          "example": "Mallinna ergonominen kahva, kotelo tai varaosa johonkin rikkinäiseen esineeseen ja perustele muotovalintasi."
+          "text": "Perusmuodot, yhdistäminen ja reiät Tinkercadissa.",
+          "example": "Mallinna ergonominen kahva, kotelo tai varaosa johonkin rikkinäiseen esineeseen. Tunnin lopussa kappale lähtee tulostumaan, ja tulostus jatkuu tuntien välillä.",
+          "output": "Oma malli tulostusjonossa.",
+          "guides": [
+            "ahjo-3d-mallinnus"
+          ]
         },
         {
           "title": "Mittatarkka malli",
-          "text": "Mitat, toleranssit ja osien sovittaminen yhteen.",
-          "example": "Suunnittele kahdesta osasta koostuva liitos (napsautus tai sarana) ja selvitä kokeilemalla, millä välyksellä osat sopivat yhteen."
+          "text": "Mitat, välys ja osien sovittaminen yhteen.",
+          "example": "Mittaa työntömitalla ja tulosta noin 20 minuutin sovitekoe tunnin aikana. Selvitä, millä välyksellä tappi ja reikä sopivat yhteen.",
+          "output": "Sovitekokeen tulos: toimiva välys.",
+          "guides": [
+            "ahjo-3d-mallinnus"
+          ]
         },
         {
           "title": "Mallista tulosteeksi",
-          "text": "Viipalointi, tulostusasetukset ja tulostimen käyttö.",
-          "example": "Optimointihaaste: kevein tulostettu ristikkorakenne, joka kantaa 2 kg. Vertaile täyttöasteen, kerrospaksuuden ja tulostussuunnan vaikutusta lujuuteen ja materiaalin kulutukseen."
+          "text": "Viipalointi PrusaSlicerilla, tulostusasetukset ja tulostimen käyttö.",
+          "example": "Kantavuustesti: tulosta sama palkki kahdella täyttöasteella tai kahdessa tulostussuunnassa ja ripusta siihen tunnettuja massoja. Kantaako se 2 kg:n massan eli noin 20 N:n painon?",
+          "output": "Lujuustestin tulokset taulukkona.",
+          "guides": [
+            "ahjo-3d-tulostus"
+          ]
         },
         {
-          "title": "Tulosteen arviointi ja 3D-skannaus",
-          "text": "Tulosteen virheet ja niiden korjaaminen; kappaleen skannaaminen malliksi.",
-          "example": "Skannaa esine, korjaa mallin virheet ja tulosta siitä mittakaavamalli. Kuinka tarkka kopio on, ja mistä erot johtuvat?"
+          "title": "Tulosteen arviointi ja korjaaminen",
+          "text": "Tavallisimmat tulostusvirheet, niiden syyt ja korjaaminen.",
+          "example": "Vertaa omaa tulostettasi malliin: mittaa kolme mittaa työntömitalla, tunnista virheet ja muuta yhtä asetusta niiden korjaamiseksi.",
+          "output": "Mitattu ero mallin ja tulosteen välillä.",
+          "guides": [
+            "ahjo-3d-tulostus"
+          ]
         },
         {
           "title": "Virtapiiri ja komponentit",
-          "text": "Jännitelähde, vastus, LED ja kytkentäalusta.",
-          "example": "Mitoita LEDin etuvastus Ohmin lailla, rakenna piiri ja vertaa mitattua virtaa laskemaasi. Mitä tapahtuu, jos vastus puuttuu?"
+          "text": "Jännitelähde, vastus, LED ja koekytkentälevy.",
+          "example": "Mitoita LEDin etuvastus Ohmin lailla, rakenna piiri ja vertaa mitattua virtaa laskemaasi.",
+          "output": "Kytkentäkaavio ja vastuksen laskelma.",
+          "guides": [
+            "ahjo-arduino",
+            "fy6-3"
+          ]
         },
         {
           "title": "Mittaaminen yleismittarilla",
           "text": "Jännitteen, virran ja resistanssin mittaaminen oikein kytkettynä.",
-          "example": "Mittaa, kuinka paljon virtaa puhelimen laturi, Arduino ja moottori ottavat eri tilanteissa, ja arvioi, kuinka kauan akku riittäisi laitteellesi."
+          "example": "Mittaa, kuinka paljon virtaa Arduino, LED ja moottori ottavat eri tilanteissa, ja arvioi, kuinka kauan paristo riittäisi laitteellesi.",
+          "output": "Virta- ja jännitemittaukset yksiköineen.",
+          "guides": [
+            "fy6-2"
+          ]
         },
         {
           "title": "Arduinon ensimmäinen ohjelma",
           "text": "Ohjelmointiympäristö, digitaaliset lähdöt ja vilkkuva LED.",
-          "example": "Ohjelmoi reaktioaikapeli, joka mittaa reagointiajan millisekunteina ja laskee luokan keskiarvon ja hajonnan."
+          "example": "Ohjelmoi reaktioaikapeli, joka mittaa reagointiajan millisekunteina, ja laske luokan keskiarvo. Hajonnan laskeminen on syventävä osa.",
+          "output": "Toimiva ohjelma ja luokan keskiarvo.",
+          "guides": [
+            "ahjo-arduino"
+          ]
         },
         {
           "title": "Anturit ja syötteet",
           "text": "Painike, valo- ja etäisyysanturi; ehtolauseet ja silmukat.",
-          "example": "Rakenna mittalaite: luokan CO₂-, melu- tai lämpötilamittari, joka tallentaa dataa. Piirrä tunnin aikana kerätystä datasta kuvaaja."
+          "example": "Rakenna mittalaite, joka tallentaa lukemat sarjaporttiin, esimerkiksi valon tai etäisyyden. Piirrä tunnin aikana kerätystä datasta kuvaaja.",
+          "output": "Kuvaaja omasta mittausdatasta.",
+          "guides": [
+            "tvt-mittausohjelma"
+          ]
         },
         {
           "title": "Moottorit ja toimilaitteet",
           "text": "Servo ja tasavirtamoottori; virransyöttö ja ohjaus.",
-          "example": "Ohjaa servolla aurinkopaneelia, joka kääntyy valoa kohti, ja mittaa, kuinka paljon tehoa seuranta lisää kiinteään paneeliin verrattuna."
-        },
-        {
-          "title": "Juottaminen",
-          "text": "Juotosaseman käyttö ja pienen piirin juottaminen.",
-          "example": "Juota mittauslaitteesi piiri reikälevylle, niin se kestää käyttöä. Testaa juotokset yleismittarilla ja vertaa luotettavuutta kytkentäalustaan."
+          "example": "Servo kääntyy valoa kohti kahden valovastuksen ohjaamana. Tehon mittaaminen on syventävä harjoitus.",
+          "output": "Valoa seuraava servo.",
+          "guides": [
+            "fy7-4"
+          ]
         },
         {
           "title": "Robotin rakentaminen",
           "text": "Robotiikkasarjan rakenne, voimansiirto ja anturit.",
-          "example": "Rakenna robotti, joka kuljettaa kuorman radan läpi mahdollisimman nopeasti. Vertaile välityssuhteen vaikutusta nopeuteen ja vetovoimaan."
+          "example": "Rakenna robotti, joka kuljettaa kuorman radan läpi. Vertaile, miten välityssuhde vaikuttaa nopeuteen ja vetovoimaan.",
+          "output": "Toimiva robottialusta ja välityssuhteen vertailu.",
+          "guides": []
         },
         {
           "title": "Robotin ohjelmointi",
           "text": "Liike, anturiohjaus ja tehtävän ratkaiseminen ohjelmalla.",
-          "example": "Ohjelmoi robotti löytämään tiensä esteiden läpi anturien avulla. Vertaa yksinkertaista ja säätävää (esim. P-säätö) ohjausta viivanseurannassa."
+          "example": "Ensimmäisellä kierroksella robotti ajaa radan ilman antureita pelkillä etukäteen lasketuilla matkoilla ja kulmilla, kuten avaruusluotainta ohjattaessa. Toisella kierroksella se käyttää antureita. Vertaa kierroksia.",
+          "output": "Kahden kierroksen vertailu.",
+          "guides": []
+        },
+        {
+          "title": "Miniprojektin suunnittelu",
+          "text": "Ongelma, mitattava onnistumisen mittari, tarvikeluettelo ja luonnos.",
+          "example": "Valitse aihe omasta ongelmastasi tai projektipankista. Kirjaa projektipäiväkirjaan ongelma, mittari, tarvikkeet ja luonnos, ja hyväksytä suunnitelma opettajalla.",
+          "output": "Hyväksytty miniprojektin suunnitelma.",
+          "guides": [
+            "ahjo-projektipaivakirja"
+          ]
         },
         {
           "title": "Miniprojekti",
-          "text": "Pieni oma laite opituilla menetelmillä: suunnittelu ja rakentaminen.",
-          "example": "Pieni oma laite opituilla menetelmillä, esimerkiksi kasvin kosteusvahti, pyörän valojärjestelmä tai urheilusuorituksen mittari."
+          "text": "Pieni oma laite opituilla menetelmillä: rakentaminen ja testaus.",
+          "example": "Rakenna laite suunnitelman mukaan ja testaa se onnistumisen mittarilla vähintään kolmesti.",
+          "output": "Toimiva laite ja testitulokset.",
+          "guides": [
+            "ahjo-projektipaivakirja"
+          ]
         },
         {
           "title": "Esittely ja itsearviointi",
           "text": "Miniprojektin esittely, dokumentointi ja oman oppimisen arviointi.",
-          "example": "Esittele laite kuin tuotekehityskatselmuksessa: tavoite, ratkaisu, mittaustulokset ja mitä tekisit seuraavassa versiossa."
+          "example": "Esittele laite kuin tuotekehityskatselmuksessa: tavoite, ratkaisu, mittaustulokset ja mitä tekisit seuraavassa versiossa.",
+          "output": "Esittely ja täydennetty projektipäiväkirja.",
+          "guides": [
+            "ahjo-projektipaivakirja"
+          ]
         }
       ],
       "plan_status": "draft",
-      "license": true
+      "license": true,
+      "deepening": [
+        {
+          "title": "3D-skannaus",
+          "text": "Skannaa esine, korjaa mallin virheet ja tulosta siitä mittakaavamalli. Kuinka tarkka kopio on, ja mistä erot johtuvat?"
+        },
+        {
+          "title": "Juottaminen",
+          "text": "Juota mittalaitteesi piiri reikälevylle, kun olet saanut juotosaseman laiteperehdytyksen. Testaa juotokset yleismittarilla."
+        },
+        {
+          "title": "Aurinkopaneelin teho",
+          "text": "Mittaa kahdella yleismittarilla, kuinka paljon tehoa valoa seuraava paneeli tuottaa kiinteään paneeliin verrattuna."
+        },
+        {
+          "title": "P-säätö",
+          "text": "Paranna viivanseurantaa niin, että robotin kääntyminen riippuu siitä, kuinka kaukana viivasta se on. Vertaa kierrosaikoja."
+        }
+      ]
     },
     {
       "code": "AHJO2",
@@ -252,83 +333,141 @@
       "lessons": [
         {
           "title": "Projektin aloitus",
-          "text": "Ahjo 2:n kulku, tiimit ja projektin aiheen etsiminen.",
-          "example": "Tutustu muutamaan lukiolaisten keksintökilpailun ja Junior Achievementin tyyppiseen projektiin ja kerää ongelmia, jotka koskettavat sinua, koulua tai lähiympäristöä."
+          "text": "Ahjo 2:n kulku, tiimit ja todellisten ongelmien kerääminen. Vaihe 1: ongelma.",
+          "example": "Kerää ongelmia, jotka koskettavat sinua, koulua tai lähiympäristöä, ja tutustu projektipankin aiheisiin.",
+          "output": "Vähintään viisi kirjattua ongelmaa.",
+          "guides": [
+            "ahjo-projektipaivakirja"
+          ]
         },
         {
           "title": "Ongelman määrittely",
-          "text": "Kenen ongelma, mikä tarve ja miten onnistuminen tunnistetaan.",
-          "example": "Haastattele vähintään kolmea käyttäjää ja kirjoita ongelmalle tarkka määrittely: kuka, missä tilanteessa ja millä mitattavalla kriteerillä ratkaisu onnistuu."
+          "text": "Kenen ongelma, mikä tarve ja miten onnistuminen tunnistetaan. Vaihe 2: käyttäjän tarpeet.",
+          "example": "Haastattele vähintään kolmea käyttäjää ja kirjoita ongelma muotoon: miten voisimme auttaa käyttäjäryhmää tilanteessa, jossa … Lisää mitattava onnistumisen mittari.",
+          "output": "Ongelman määrittely ja mittari.",
+          "guides": [
+            "ahjo-projektipaivakirja"
+          ],
+          "milestone": "Palautus 1: ongelma ja käyttäjä"
         },
         {
-          "title": "Ideointi",
-          "text": "Ideointimenetelmät ja useiden ratkaisuvaihtoehtojen tuottaminen.",
-          "example": "Ideoi rajoitteiden kautta: entä jos ratkaisu saisi maksaa enintään 20 €, sen pitäisi toimia ilman sähköä tai se pitäisi korjata itse?"
+          "title": "Ideointi ja valinta",
+          "text": "Vähintään kymmenen ideaa ja perusteltu valinta. Vaihe 3: ratkaisut.",
+          "example": "Ideoi rajoitteiden kautta: entä jos ratkaisu saisi maksaa enintään 20 €, sen pitäisi toimia ilman sähköä tai käyttäjän pitäisi pystyä korjaamaan se itse? Valitse kevyellä päätösmatriisilla, jossa ovat mukana kestävyys, saavutettavuus, muotoilu ja kustannukset.",
+          "output": "Ideat ja päätösmatriisi.",
+          "guides": []
         },
         {
-          "title": "Ideoiden arviointi ja valinta",
-          "text": "Kriteerit, vertailu ja perusteltu valinta.",
-          "example": "Arvioi ideat painotetulla päätösmatriisilla ja huomioi myös kestävyys: materiaalit, energiankulutus ja elinkaari."
+          "title": "Karkea prototyyppi",
+          "text": "Prototyyppi pahvista, teipistä ja valmiista kytkennästä yhdessä tunnissa. Vaihe 4: prototyyppi.",
+          "example": "Rakenna nopein mahdollinen malli, jolla testaat riskialtteimman oletuksen: haluaako käyttäjä tämän, ja ymmärtääkö hän, miten sitä käytetään?",
+          "output": "Karkea prototyyppi ja testattava oletus.",
+          "guides": []
+        },
+        {
+          "title": "Käyttäjätesti 1",
+          "text": "Ulkopuolinen kokeilee prototyyppiä; havainnot ja suunnan valinta. Vaiheet 5 ja 6: testaus ja palaute.",
+          "example": "Kirjaa havainnot neljään ryhmään: toimii, ei toimi, epäselvä ja uusi idea. Päättäkää, jatketaanko, muutetaanko vai vaihdetaanko suuntaa.",
+          "output": "Testihavainnot ja päätös jatkosta.",
+          "guides": [
+            "ahjo-projektipaivakirja"
+          ],
+          "milestone": "Palautus 2: ensimmäisen käyttäjätestin havainnot"
         },
         {
           "title": "Projektisuunnitelma",
-          "text": "Tavoitteet, työnjako, aikataulu, materiaalit ja riskit.",
-          "example": "Laadi suunnitelma, jossa on välitavoitteet, vastuut, budjetti ja riskiarvio, kuten oikeassa tuotekehitysprojektissa."
+          "text": "Välitavoitteet, roolit, tarvikeluettelo hintoineen ja riskit.",
+          "example": "Laadi suunnitelma kuten oikeassa tuotekehitysprojektissa: kuka tekee mitä ja milloin, mitä tarvikkeet maksavat ja mikä voi mennä pieleen.",
+          "output": "Projektisuunnitelma ja budjetti.",
+          "guides": []
         },
         {
-          "title": "Suunnittelu",
-          "text": "Luonnokset, mittapiirrokset ja digitaaliset mallit.",
-          "example": "Tee mittapiirustus ja 3D-malli, joista toinen ryhmä pystyy rakentamaan saman osan ilman selityksiä."
+          "title": "Suunnittelu, materiaalit ja menetelmät",
+          "text": "Mittapiirros, 3D-malli ja perusteltu materiaalin valinta.",
+          "example": "Tee mittapiirros ja 3D-malli, joista toinen ryhmä voisi rakentaa saman osan. Vertaa vähintään kahta materiaalia lujuuden, hinnan, valmistusajan ja kierrätettävyyden perusteella.",
+          "output": "Mittapiirros, malli ja materiaalivalinta.",
+          "guides": [
+            "ahjo-3d-mallinnus"
+          ],
+          "milestone": "Palautus 3: suunnitelma ja materiaalit"
         },
         {
-          "title": "Materiaalit ja menetelmät",
-          "text": "Sopivien materiaalien, laitteiden ja valmistustapojen valinta.",
-          "example": "Valitse materiaali perustellen: vertaa lujuutta, hintaa, valmistusaikaa ja kierrätettävyyttä vähintään kahdella vaihtoehdolla."
+          "title": "Toimiva prototyyppi",
+          "text": "Ratkaisun ensimmäinen toimiva versio Ahjon laitteilla.",
+          "example": "Rakenna osat eri laitteilla ja jaa työt niin, että jokainen ryhmäläinen opettelee ainakin yhden uuden valmistusmenetelmän.",
+          "output": "Toimiva prototyyppi.",
+          "guides": [
+            "ahjo-arduino",
+            "ahjo-3d-tulostus"
+          ]
         },
         {
-          "title": "Ensimmäinen prototyyppi",
-          "text": "Nopea ja yksinkertainen malli idean kokeilemiseen.",
-          "example": "Rakenna mahdollisimman pieni toimiva prototyyppi, jolla testaat projektin riskialtteimman oletuksen."
+          "title": "Testisuunnitelma ja mittaukset",
+          "text": "Mitä mitataan, millä tarkkuudella ja kuinka monta toistoa. Vaihe 6: mittaustulokset.",
+          "example": "Laadi testisuunnitelma ja mittaa prototyyppi onnistumisen mittarilla kolmesti. Esitä tulokset taulukkona ja kuvaajana.",
+          "output": "Testisuunnitelma ja ensimmäiset mittaustulokset.",
+          "guides": [
+            "tvt-mittausohjelma"
+          ]
         },
         {
-          "title": "Prototyypin testaaminen",
-          "text": "Testisuunnitelma, mittaaminen ja havaintojen kirjaaminen.",
-          "example": "Laadi testisuunnitelma: mitä mitataan, millä tarkkuudella ja mikä tulos tarkoittaa onnistumista. Kerää data ja esitä se kuvaajana."
+          "title": "Käyttäjätesti 2",
+          "text": "Käyttäjä kokeilee toimivaa prototyyppiä ilman ohjeita.",
+          "example": "Seuraa käyttäjää puuttumatta ja kirjaa, missä kohdassa hän epäröi tai tekee virheen. Vertaa havaintoja ensimmäiseen testiin.",
+          "output": "Toisen käyttäjätestin havainnot.",
+          "guides": [
+            "ahjo-projektipaivakirja"
+          ]
         },
         {
-          "title": "Palaute ja kehittäminen",
-          "text": "Käyttäjän ja ryhmän palaute; muutosten suunnittelu.",
-          "example": "Pidä käyttäjätesti, jossa ulkopuolinen käyttää prototyyppiä ilman ohjeita. Kirjaa havainnot ja päätä, mitä muutetaan ja miksi."
+          "title": "Parantaminen 1",
+          "text": "Muutokset testien ja palautteen perusteella. Vaihe 7: parantaminen.",
+          "example": "Valitse testien perusteella kaksi tärkeintä muutosta, perustele ne ja toteuta ne.",
+          "output": "Kaksi perusteltua muutosta.",
+          "guides": []
         },
         {
-          "title": "Rakentaminen 1",
-          "text": "Ratkaisun osien valmistaminen suunnitelman mukaan.",
-          "example": "Rakenna ratkaisun osat eri laitteilla, ja jaa työt niin, että jokainen ryhmäläinen hallitsee ainakin yhden uuden valmistusmenetelmän."
-        },
-        {
-          "title": "Rakentaminen 2",
-          "text": "Osien kokoaminen, elektroniikka, ohjelmointi tai viimeistely tarpeen mukaan.",
-          "example": "Yhdistä ratkaisuun anturi, mikro-ohjain tai painettu tekstiiliosa, joka parantaa toimintaa mitattavasti."
+          "title": "Parantaminen 2",
+          "text": "Osa, joka parantaa toimintaa mitattavasti.",
+          "example": "Lisää ratkaisuun anturi, ohjain, tulostettu tai ommeltu osa, joka parantaa toimintaa mitattavasti. Mittaa vaikutus.",
+          "output": "Mitattu parannus.",
+          "guides": []
         },
         {
           "title": "Lopullinen testaus",
-          "text": "Toimiiko ratkaisu: testaus, mittaukset ja vertailu tavoitteisiin.",
-          "example": "Testaa lopullinen ratkaisu samoilla mittareilla kuin prototyyppi ja arvioi, saavutettiinko alussa asetettu tavoite."
+          "text": "Toimiiko ratkaisu: samat mittarit kuin testisuunnitelmassa.",
+          "example": "Testaa lopullinen ratkaisu samoilla mittareilla kuin aiemmin ja arvioi, saavutettiinko alussa asetettu tavoite.",
+          "output": "Testiraportti.",
+          "guides": [
+            "tvt-tyoselostus"
+          ],
+          "milestone": "Palautus 4: testiraportti"
         },
         {
-          "title": "Viimeistely",
+          "title": "Viimeistely ja käyttöohje",
           "text": "Viimeiset korjaukset, ulkoasu ja käytettävyys.",
-          "example": "Viimeistele ratkaisu esittelykuntoon: kotelo, merkinnät ja käyttöohje, joiden avulla käyttäjä pärjää ilman tekijää."
+          "example": "Viimeistele ratkaisu esittelykuntoon: kotelo, merkinnät ja käyttöohje, joiden avulla käyttäjä pärjää ilman tekijää.",
+          "output": "Viimeistelty ratkaisu ja käyttöohje.",
+          "guides": []
         },
         {
           "title": "Dokumentointi",
-          "text": "Projektin vaiheet, päätökset ja tulokset portfolioon.",
-          "example": "Kokoa portfolio, joka kertoo päätökset ja epäonnistumiset rehellisesti. Siitä on hyötyä myös lukiodiplomissa ja jatko-opintohauissa."
+          "text": "Projektipäiväkirja, tarvikeluettelo, muokattavat tiedostot ja lähteet. Vaihe 8: dokumentointi.",
+          "example": "Kokoa päiväkirjasta yhden sivun kooste, joka kertoo päätökset ja epäonnistumiset rehellisesti. Siitä on hyötyä myös lukiodiplomissa ja jatko-opintohauissa.",
+          "output": "Kooste ja tiedostot.",
+          "guides": [
+            "ahjo-projektipaivakirja"
+          ]
         },
         {
           "title": "Esittely ja arviointi",
           "text": "Projektin esittely sekä oman ja ryhmän työn arviointi.",
-          "example": "Pidä esittely kuin yleisölle tai yhteistyöyritykselle ja vastaa kysymyksiin. Arvioi lopuksi oma ja ryhmän työ."
+          "example": "Esittele projekti yleisölle ja tee siitä enintään minuutin video. Arvioi lopuksi oma ja ryhmän työ projektipäiväkirjan kriteereillä.",
+          "output": "Esittely, video ja itsearviointi.",
+          "guides": [
+            "ahjo-projektipaivakirja"
+          ],
+          "milestone": "Palautus 5: kooste ja video"
         }
       ],
       "plan_status": "draft"

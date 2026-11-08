@@ -234,10 +234,11 @@ A1 = {
               + f'<path d="M40 56V24h18v32M140 56V24h18v32" fill="{N2}" stroke="{N}" stroke-width="2"/><rect x="130" y="50" width="38" height="34" rx="3" fill="{N}"/><rect x="136" y="56" width="26" height="12" rx="2" fill="{P}"/>'
               + f'<rect x="58" y="98" width="82" height="34" rx="4" fill="{P}" {s2}/><path d="M58 92v-6M140 92v-6M58 89h82" stroke="{PD}" stroke-width="2"/><path d="M64 89l-5-3v6zM134 89l5-3v6z" fill="{PD}"/>'),
  5: lambda: sc(printer(78, 20, 1.0)),
- 6: lambda: sc(f'<ellipse cx="96" cy="118" rx="52" ry="12" fill="{N2}"/><ellipse cx="96" cy="112" rx="52" ry="12" fill="{N}"/>'
-              + f'<path d="M80 108c-6-24 4-50 16-50s22 26 16 50z" fill="{P}" {s2}/>'
-              + f'<rect x="176" y="40" width="30" height="80" rx="6" fill="{W}" {S}/><circle cx="191" cy="60" r="7" fill="{N}"/><circle cx="191" cy="60" r="3" fill="{P}"/>'
-              + "".join(f'<path d="M184 60L{120 - i * 4} {54 + i * 14}" stroke="{P}" stroke-width="2" stroke-dasharray="4 4"/>' for i in range(4))),
+ 6: lambda: sc(f'<ellipse cx="78" cy="122" rx="50" ry="10" fill="{N2}"/><path d="M48 118V74h60v44z" fill="{P}" {s2}/><path d="M48 90h60M48 104h60" stroke="{PD}" stroke-width="1.5"/>'
+              + f'<path d="M104 74c6 4 6 10 4 16" stroke="{PD}" stroke-width="3" fill="none" stroke-linecap="round"/>'
+              + f'<rect x="132" y="30" width="92" height="16" rx="2" fill="{M}" {s2}/>' + "".join(f'<path d="M{140 + 8 * i} 30v{6 if i % 5 else 10}" stroke="{N}" stroke-width="1.5"/>' for i in range(11))
+              + f'<path d="M140 46v40h12V46M196 46v40h12V46" fill="{N2}" stroke="{N}" stroke-width="2"/>'
+              + f'<g transform="translate(178 112)"><circle r="16" fill="{N}"/><path d="M-7 0l5 5 10-11" stroke="{W}" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>'),
  7: lambda: sc(f'<path d="M50 44h140v70H50z" fill="none" stroke="{N}" stroke-width="4" stroke-linejoin="round"/>'
               + f'<rect x="36" y="64" width="28" height="34" rx="3" fill="{N}"/><rect x="44" y="58" width="12" height="6" fill="{N}"/><path d="M44 74h12M50 84v-14" stroke="{W}" stroke-width="3"/>'
               + f'<rect x="96" y="36" width="44" height="16" rx="6" fill="{Y}" {s2}/><path d="M106 36v16M114 36v16M124 36v16" stroke="{PD}" stroke-width="2.5"/>'
@@ -254,13 +255,15 @@ A1 = {
  11: lambda: sc(f'<circle cx="200" cy="34" r="16" fill="#ffd166"/>' + rays(200, 34, 22, 30, n=6, a0=100, a1=250, col="#ffd166", w=3)
               + f'<g transform="rotate(-20 110 70)"><rect x="60" y="50" width="100" height="44" rx="3" fill="{N}"/>' + "".join(f'<path d="M{60 + 25 * i} 50v44" stroke="{N2}" stroke-width="2"/>' for i in range(1, 4)) + f'<path d="M60 72h100" stroke="{N2}" stroke-width="2"/></g>'
               + f'<path d="M110 90v30" stroke="{N}" stroke-width="6"/><rect x="92" y="118" width="36" height="20" rx="3" fill="{PD}" {s2}/><circle cx="110" cy="112" r="6" fill="{W}" {s2}/>'),
- 12: lambda: sc(f'<rect x="20" y="100" width="130" height="30" rx="3" fill="#3f8f5a"/>' + "".join(f'<circle cx="{34 + 16 * i}" cy="115" r="3" fill="#c9a227"/>' for i in range(8))
-              + f'<path d="M206 30L104 108" stroke="{N}" stroke-width="10" stroke-linecap="round"/><path d="M206 30L170 58" stroke="{PD}" stroke-width="14" stroke-linecap="round"/><path d="M104 108l-6 6" stroke="{M}" stroke-width="4" stroke-linecap="round"/>'
-              + f'<path d="M96 96c-6-10 6-14 0-24M84 94c-6-10 6-14 0-24" stroke="{M}" stroke-width="2.5" fill="none" stroke-linecap="round"/><circle cx="98" cy="114" r="4" fill="{L}"/>'),
- 13: lambda: sc(gear(76, 70, 34, N2) + gear(128, 98, 24, PD) + robot(156, 54).replace(f"translate(156 54)", "translate(160 52) scale(0.85)")),
- 14: lambda: sc(f'<path d="M20 120C60 120 60 50 120 50S180 110 222 110" stroke="{N}" stroke-width="10" fill="none" stroke-linecap="round"/>'
+ 12: lambda: sc(gear(76, 70, 34, N2) + gear(128, 98, 24, PD) + robot(156, 54).replace(f"translate(156 54)", "translate(160 52) scale(0.85)")),
+ 13: lambda: sc(f'<path d="M20 120C60 120 60 50 120 50S180 110 222 110" stroke="{N}" stroke-width="10" fill="none" stroke-linecap="round"/>'
               + robot(100, 40).replace("translate(100 40)", "translate(98 18) scale(0.55)")
               + f'<path d="M150 22l10 12M164 18l2 14M178 24l-6 12" stroke="{P}" stroke-width="3" stroke-linecap="round"/>'),
+ 14: lambda: sc(f'<rect x="26" y="20" width="110" height="114" rx="4" fill="{W}" {S}/><path d="M40 40h60M40 52h44" stroke="{L}" stroke-width="5" stroke-linecap="round"/>'
+              + f'<path d="M44 108l22-30 18 16 26-34" stroke="{PD}" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="110" cy="60" r="5" fill="{PD}"/>'
+              + "".join(f'<rect x="156" y="{30 + 32 * i}" width="16" height="16" rx="3" fill="{W}" {s2}/><path d="M180 {38 + 32 * i}h36" stroke="{L}" stroke-width="5" stroke-linecap="round"/>' for i in range(3))
+              + f'<path d="M159 38l4 5 8-9M159 70l4 5 8-9" stroke="{PD}" stroke-width="3" fill="none" stroke-linecap="round"/>'
+              + f'<path d="M126 136l42-42 8 8-42 42-12 4z" fill="{Y}" {s2}/>'),
  15: lambda: sc(f'<path d="M78 136l-8-50h80l-8 50z" fill="{PD}" {s2}/><rect x="66" y="80" width="88" height="10" rx="3" fill="{P}" {s2}/>'
               + f'<path d="M110 80c0-30-20-40-36-44 6 18 18 30 36 44zM110 80c0-34 22-44 40-46-6 20-20 32-40 46z" fill="#3f8f5a"/><path d="M110 80V40" stroke="#2d6b42" stroke-width="3"/>'
               + f'<path d="M150 104h20v-60" stroke="{N}" stroke-width="3" fill="none"/><rect x="164" y="24" width="44" height="28" rx="4" fill="{N2}" {s2}/><circle cx="176" cy="38" r="5" fill="{P}"/><path d="M186 38h14" stroke="{W}" stroke-width="3"/>'
@@ -277,26 +280,28 @@ A2 = {
  3: lambda: sc("".join(f'<rect x="{x}" y="{y}" width="46" height="40" rx="2" fill="{c}" transform="rotate({r} {x + 23} {y + 20})"/>'
                          + f'<path d="M{x + 8} {y + 14}h28M{x + 8} {y + 24}h18" stroke="{N}" stroke-width="2.5" stroke-linecap="round" opacity=".55" transform="rotate({r} {x + 23} {y + 20})"/>'
                          for x, y, c, r in ((24, 24, P, -6), (82, 18, "#ffd166", 4), (140, 26, PS, -3), (186, 40, P, 6), (40, 82, PS, 5), (100, 80, P, -4), (158, 88, "#ffd166", 3)))),
- 4: lambda: sc(f'<rect x="30" y="24" width="180" height="104" rx="6" fill="{W}" {S}/><path d="M30 50h180M30 76h180M30 102h180M90 24v104M130 24v104M170 24v104" stroke="{L}" stroke-width="2"/>'
-              + "".join(f'<circle cx="{110 + 40 * j}" cy="{63 + 26 * i}" r="{4 + v * 3}" fill="{PD if v == 2 else N2}"/>' for i, row in enumerate(((2, 1, 0), (1, 2, 2), (0, 1, 1))) for j, v in enumerate(row))
-              + f'<path d="M42 63h34M42 89h28M42 115h32" stroke="{N}" stroke-width="4" stroke-linecap="round"/><path d="M196 92l6 6 12-14" stroke="{PD}" stroke-width="4" fill="none" stroke-linecap="round"/>'),
- 5: lambda: sc(f'<path d="M30 30v96h184" {s2} fill="none"/>' + "".join(f'<rect x="{x}" y="{y}" width="{w}" height="14" rx="4" fill="{c}"/>' for x, y, w, c in ((40, 38, 50, N2), (80, 60, 60, PD), (130, 82, 44, N2), (160, 104, 46, P)))
-              + f'<path d="M150 30v96" stroke="{PD}" stroke-width="2.5" stroke-dasharray="5 4"/><path d="M144 26l6 8 6-8z" fill="{PD}"/>'),
- 6: lambda: sc(f'<rect x="20" y="18" width="200" height="116" rx="4" fill="#e9f0fb" {s2}/>' + "".join(f'<path d="M{20 + 20 * i} 18v116" stroke="#cfdcf1" stroke-width="1"/>' for i in range(1, 10)) + "".join(f'<path d="M20 {18 + 20 * j}h200" stroke="#cfdcf1" stroke-width="1"/>' for j in range(1, 6))
-              + f'<path d="M60 104V52h70l30 30v22z" fill="none" stroke="{N}" stroke-width="3" stroke-linejoin="round"/><circle cx="96" cy="80" r="10" fill="none" stroke="{N}" stroke-width="2.5"/>'
-              + f'<path d="M60 118h100M60 114v8M160 114v8" stroke="{PD}" stroke-width="2"/><path d="M174 52v52M170 52h8M170 104h8" stroke="{PD}" stroke-width="2"/><path d="M98 116h24" stroke="{PD}" stroke-width="4"/>'),
- 7: lambda: sc(f'<path d="M30 92l30-14 30 14v28l-30 14-30-14z" fill="{Y}" {s2}/><path d="M30 92l30 14 30-14M60 106v28" {s2} fill="none"/><path d="M40 100l14 6M46 114l10 4" stroke="#a97a35" stroke-width="2"/>'
-              + f'<path d="M106 120c10-30 40-30 50-60 6 20 0 50-20 64z" fill="{PS}" {s2}/><path d="M118 112c8-10 20-16 28-30" stroke="{P}" stroke-width="2"/>'
-              + f'<circle cx="190" cy="98" r="26" fill="{N2}" {s2}/><circle cx="190" cy="98" r="9" fill="{W}"/><path d="M190 72c-8 0-16 4-22 12" stroke="{P}" stroke-width="3" fill="none"/><path d="M168 84c-6 8-28 16-40 2" stroke="{P}" stroke-width="3" fill="none"/>'),
- 8: lambda: sc(f'<g transform="translate(76 22)"><path d="M0 30l44-22 44 22v54l-44 22-44-22z" fill="{C}" stroke="{N}" stroke-width="3" stroke-linejoin="round"/><path d="M0 30l44 22 44-22M44 52v54" stroke="{N}" stroke-width="3" fill="none"/>'
+ 4: lambda: sc(f'<g transform="translate(76 22)"><path d="M0 30l44-22 44 22v54l-44 22-44-22z" fill="{C}" stroke="{N}" stroke-width="3" stroke-linejoin="round"/><path d="M0 30l44 22 44-22M44 52v54" stroke="{N}" stroke-width="3" fill="none"/>'
               f'<path d="M58 40l18-9v10l-18 9z" fill="{N2}"/><path d="M10 50l24 12" stroke="#a97a35" stroke-width="2.5"/><path d="M-12 24l14 6M100 24l-14 6" stroke="{M}" stroke-width="3" stroke-linecap="round"/></g>'
               f'<rect x="24" y="118" width="30" height="8" rx="2" fill="{L}" transform="rotate(-20 39 122)"/><path d="M184 106l14-14 6 6-14 14z" fill="{PD}"/>'),
- 9: lambda: sc(chart(30, 24, 120, 100, [(0, .15), (.25, .3), (.5, .55), (.75, .6), (1, .85)]) + f'<circle cx="190" cy="80" r="30" fill="{W}" {S}/><path d="M190 80V60M190 80l14 8" {S}/><rect x="182" y="40" width="16" height="8" rx="2" fill="{N}"/><path d="M212 56l6-6" {S}/>'),
- 10: lambda: sc(bubble(20, 20, 84, 44, PS) + f'<path d="M50 42h24M62 30v24" stroke="{PD}" stroke-width="5" stroke-linecap="round"/>'
+ 5: lambda: sc(bubble(20, 20, 84, 44, PS) + f'<path d="M50 42h24M62 30v24" stroke="{PD}" stroke-width="5" stroke-linecap="round"/>'
               + bubble(136, 30, 84, 44, W, tail=-1) + f'<path d="M166 52h24" stroke="{N}" stroke-width="5" stroke-linecap="round"/>'
               + person(60, 104, N2) + person(180, 108, PD) + f'<path d="M98 110c14-16 32-16 46 0" stroke="{M}" stroke-width="3" fill="none" stroke-dasharray="4 5"/>'),
- 11: lambda: sc(bench(20, 220, 104, 150) + f'<path d="M40 104l20-30h40l10 30z" fill="{C}" {s2}/><rect x="124" y="78" width="40" height="26" rx="3" fill="{P}" {s2}/><path d="M144 78v26" stroke="{PD}" stroke-width="2"/>'
+ 6: lambda: sc(f'<path d="M30 30v96h184" {s2} fill="none"/>' + "".join(f'<rect x="{x}" y="{y}" width="{w}" height="14" rx="4" fill="{c}"/>' for x, y, w, c in ((40, 38, 50, N2), (80, 60, 60, PD), (130, 82, 44, N2), (160, 104, 46, P)))
+              + f'<path d="M150 30v96" stroke="{PD}" stroke-width="2.5" stroke-dasharray="5 4"/><path d="M144 26l6 8 6-8z" fill="{PD}"/>'),
+ 7: lambda: sc(f'<rect x="20" y="18" width="200" height="116" rx="4" fill="#e9f0fb" {s2}/>' + "".join(f'<path d="M{20 + 20 * i} 18v116" stroke="#cfdcf1" stroke-width="1"/>' for i in range(1, 10)) + "".join(f'<path d="M20 {18 + 20 * j}h200" stroke="#cfdcf1" stroke-width="1"/>' for j in range(1, 6))
+              + f'<path d="M60 104V52h70l30 30v22z" fill="none" stroke="{N}" stroke-width="3" stroke-linejoin="round"/><circle cx="96" cy="80" r="10" fill="none" stroke="{N}" stroke-width="2.5"/>'
+              + f'<path d="M60 118h100M60 114v8M160 114v8" stroke="{PD}" stroke-width="2"/><path d="M174 52v52M170 52h8M170 104h8" stroke="{PD}" stroke-width="2"/><path d="M98 116h24" stroke="{PD}" stroke-width="4"/>'),
+ 8: lambda: sc(bench(20, 220, 104, 150) + f'<path d="M40 104l20-30h40l10 30z" fill="{C}" {s2}/><rect x="124" y="78" width="40" height="26" rx="3" fill="{P}" {s2}/><path d="M144 78v26" stroke="{PD}" stroke-width="2"/>'
               + f'<g transform="rotate(-30 190 60)"><rect x="168" y="54" width="44" height="12" rx="5" fill="{N2}"/><rect x="204" y="44" width="14" height="32" rx="3" fill="{N}"/></g>'),
+ 9: lambda: sc(chart(30, 24, 120, 100, [(0, .15), (.25, .3), (.5, .55), (.75, .6), (1, .85)]) + f'<circle cx="190" cy="80" r="30" fill="{W}" {S}/><path d="M190 80V60M190 80l14 8" {S}/><rect x="182" y="40" width="16" height="8" rx="2" fill="{N}"/><path d="M212 56l6-6" {S}/>'),
+ 10: lambda: sc(person(54, 64, N2) + f'<rect x="80" y="86" width="64" height="40" rx="4" fill="{C}" {s2}/><circle cx="128" cy="100" r="6" fill="{P}" {s2}/><path d="M90 98h20" stroke="#a97a35" stroke-width="3"/>'
+              + f'<path d="M66 96l24 6" stroke="{N2}" stroke-width="8" stroke-linecap="round"/>' + person(190, 58, PD)
+              + f'<rect x="158" y="86" width="40" height="50" rx="3" fill="{W}" {s2}/><path d="M166 98h24M166 108h18M166 118h22" stroke="{L}" stroke-width="3" stroke-linecap="round"/>'
+              + f'<path d="M30 136h180" {S}/><path d="M118 40a8 8 0 1 1 10 8v6" stroke="{PD}" stroke-width="4" fill="none" stroke-linecap="round"/><circle cx="128" cy="64" r="3" fill="{PD}"/>'),
+ 11: lambda: sc(f'<rect x="22" y="56" width="70" height="56" rx="4" fill="{C}" {s2}/><path d="M36 76h26" stroke="#a97a35" stroke-width="3"/><circle cx="74" cy="96" r="6" fill="{L}" {s2}/>'
+              + f'<path d="M104 84h30" stroke="{PD}" stroke-width="5" stroke-linecap="round"/><path d="M130 72l14 12-14 12z" fill="{PD}"/>'
+              + f'<rect x="150" y="48" width="70" height="64" rx="8" fill="{W}" {S}/><circle cx="200" cy="96" r="7" fill="{P}" {s2}/><rect x="162" y="62" width="30" height="16" rx="2" fill="{N}"/><path d="M167 70h8M179 70h8" stroke="{P}" stroke-width="3"/>'
+              + f'<path d="M30 126h60M156 126h60" stroke="{M}" stroke-width="5" stroke-linecap="round"/><path d="M40 30h16M188 22v16M180 30h16" stroke="{P}" stroke-width="4" stroke-linecap="round"/>'),
  12: lambda: sc(board(36, 74, led=True) + f'<path d="M172 38c18 4 30 22 30 46s-14 40-30 46c-12-8-18-26-18-46s4-40 18-46z" fill="{PS}" {s2}/><path d="M164 70h30M162 86h34M164 102h30" stroke="{P}" stroke-width="3"/>'),
  13: lambda: sc(f'<path d="M30 128h184" {S}/><rect x="52" y="78" width="40" height="50" rx="3" fill="{M}"/><rect x="104" y="40" width="40" height="88" rx="3" fill="{PD}"/>'
               + f'<path d="M160 70h44M160 70v58" stroke="{N}" stroke-width="0"/><path d="M60 64l84-34" stroke="{N}" stroke-width="3" stroke-dasharray="6 5"/><path d="M144 30l-12-1 6 10z" fill="{N}"/>'

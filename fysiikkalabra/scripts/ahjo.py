@@ -167,7 +167,7 @@ def validate(lessons, investigations, guides, planned_codes, local_codes, module
     src = load()
     shape = lambda d: ([c["code"] for c in d["courses"]], [c["id"] for c in d["categories"]],
                        [r.get("ref") or r.get("id") or "safety" for r in d["resources"]], [g["id"] for g in d["equipment"]],
-                       [len(g["items"]) for g in d["equipment"]], [(len(c.get("goals", [])), len(c.get("lessons", []))) for c in d["courses"]], [s["id"] for s in d["safety"]], [l["course"] for l in d["links"]], sorted(d["ui"]),
+                       [len(g["items"]) for g in d["equipment"]], [(len(c.get("goals", [])), len(c.get("lessons", [])), [(l.get("guides", []), bool(l.get("milestone"))) for l in c.get("lessons", [])], len(c.get("deepening", []))) for c in d["courses"]], [s["id"] for s in d["safety"]], [l["course"] for l in d["links"]], sorted(d["ui"]),
                        [(p["id"], p["status"], p["level"], p["lessons"], p["courses"], [i["url"] for i in p["inspiration"]], len(p["skills"]), len(p["materials"]), len(p["subjects"])) for p in d.get("projects", [])])
     files = [SOURCE] + sorted((ROOT / "content").glob("*/ahjo.json"))
     for f in files:
@@ -193,6 +193,14 @@ def validate(lessons, investigations, guides, planned_codes, local_codes, module
             if c.get("lessons") and (len(c["lessons"]) != 16 or not all(l.get("title") and l.get("text") for l in c["lessons"])):
                 errs.append(f"{name}: {c['code']}: 16 lessons, each with a title and a text (teacher 2026-11-08)")
             if c.get("plan_status", "draft") not in ("draft", "approved"): errs.append(f"{name}: {c['code']}: plan_status draft or approved")
+            ahjo_ids = {r["id"] for r in d["resources"] if "id" in r}
+            for i, l in enumerate(c.get("lessons", []), 1):
+                if not l.get("output"): errs.append(f"{name}: {c['code']} lesson {i}: no output (what the lesson produces)")
+                for gid in l.get("guides", []):
+                    if gid not in ahjo_ids | lessons | investigations | guides: errs.append(f"{name}: {c['code']} lesson {i}: no such guide or chapter {gid!r}")
+            if sum(1 for l in c.get("lessons", []) if l.get("milestone")) not in (0, 5) and c["code"] == "AHJO2":
+                errs.append(f"{name}: AHJO2: the five hand-ins are marked on five lessons")
+            if any(not x.get("title") or not x.get("text") for x in c.get("deepening", [])): errs.append(f"{name}: {c['code']}: a deepening item without a title or text")
         seen = set()
         for r in d["resources"]:
             rid = r.get("ref") or r.get("id") or ("safety" if r.get("safety") else None)
@@ -366,14 +374,41 @@ def start_body(d, planned, local, modules, ref):
 def course_page(code): return f"ahjo-{code[4:].lower()}.html"     # AHJO1 -> ahjo-1.html
 
 
-def lessons_list(u, c):
-    """The lesson outline with a picture for each lesson (scripts/ahjo_art.py)."""
-    return ('<ol class="ahjo-lessons">'
-            + "".join(f'<li><div class="ahjo-lesson"><span class="ahjo-lesson-art">{art(c["code"].lower() + "-" + str(i))}</span><span class="ahjo-lesson-b">'
-                      f'<span class="ahjo-lesson-t">{esc(l["title"])}</span> <span class="ahjo-lesson-x">{esc(l["text"])}</span>'
-                      + (f'<span class="ahjo-lesson-e"><span class="ahjo-meta-l">{esc(u["lesson_example"])}:</span> {esc(l["example"])}</span>' if l.get("example") else "")
-                      + '</span></div></li>' for i, l in enumerate(c["lessons"], 1))
-            + '</ol>')
+def lesson_links(d, l, ref):
+    """A lesson's guides and chapters: an Ahjo guide once it has a page (draft or ready), a chapter or TVT guide once
+    published (in Finnish only where the language has none); nothing is linked before its page exists."""
+    u = d["ui"]; out = []
+    for gid in l.get("guides", []):
+        r = next((r for r in d["resources"] if r.get("id") == gid), None)
+        if r:
+            if r["status"] in PAGED: out.append(f'<a href="{gid}.html">{esc(r["title"])}</a>')
+            continue
+        got = ref(gid)
+        if got: out.append(f'<a href="{gid}.html">{esc(got[0])}</a>' + (f' <span class="ahjo-tag">{esc(u["res_in_finnish"])}</span>' if got[2] else ""))
+    return out
+
+
+def lessons_list(d, c, ref):
+    """The lesson outline with a picture for each lesson (scripts/ahjo_art.py), what each lesson produces, the guides it
+    uses and, in Ahjo 2, the hand-ins."""
+    u = d["ui"]; rows = []
+    for i, l in enumerate(c["lessons"], 1):
+        links = lesson_links(d, l, ref)
+        rows.append(f'<li><div class="ahjo-lesson"><span class="ahjo-lesson-art">{art(c["code"].lower() + "-" + str(i))}</span><span class="ahjo-lesson-b">'
+                    + (f'<span class="ahjo-badge ahjo-milestone">{esc(l["milestone"])}</span>' if l.get("milestone") else "")
+                    + f'<span class="ahjo-lesson-t">{esc(l["title"])}</span> <span class="ahjo-lesson-x">{esc(l["text"])}</span>'
+                    + (f'<span class="ahjo-lesson-e"><span class="ahjo-meta-l">{esc(u["lesson_example"])}:</span> {esc(l["example"])}</span>' if l.get("example") else "")
+                    + (f'<span class="ahjo-lesson-e ahjo-lesson-o"><span class="ahjo-meta-l">{esc(u["lesson_output"])}:</span> {esc(l["output"])}</span>' if l.get("output") else "")
+                    + (f'<span class="ahjo-lesson-g"><span class="ahjo-meta-l">{esc(u["lesson_guides"])}:</span> {", ".join(links)}</span>' if links else "")
+                    + '</span></div></li>')
+    return '<ol class="ahjo-lessons">' + "".join(rows) + '</ol>'
+
+
+def deepening_section(u, c, k):
+    if not c.get("deepening"): return ""
+    return (f'<section class="ahjo-sec" id="syventavat" aria-labelledby="h-{k}-deep"><h2 id="h-{k}-deep">{esc(u["deepening_h"])}</h2>'
+            f'<p class="ahjo-sec-lead">{esc(u["deepening_lead"])}</p><ul class="ahjo-deep">'
+            + "".join(f'<li><span class="ahjo-lesson-t">{esc(x["title"])}</span> {esc(x["text"])}</li>' for x in c["deepening"]) + '</ul></section>')
 
 
 def course_body(d, c, planned, local, modules, ref):
@@ -393,7 +428,7 @@ def course_body(d, c, planned, local, modules, ref):
         note = ""
     if c.get("lessons"):
         out += (f'<section class="ahjo-sec" id="oppitunnit" aria-labelledby="h-{k}-lessons"><h2 id="h-{k}-lessons">{esc(u["course_lessons"].replace("{n}", str(len(c["lessons"]))))}</h2>{note}'
-                + lessons_list(u, c) + '</section>')
+                + lessons_list(d, c, ref) + '</section>' + deepening_section(u, c, k))
     mine = [e for _, e in resolve(d, ref) if c["code"] in e["courses"] and e["href"] and (e["ready"] or e.get("draft"))]
     rows = "".join(f'<li><a href="{e["href"]}"><span class="ahjo-res-t">{esc(e["title"])}</span></a> <span class="ahjo-res-k">{esc(e["kind"])}</span>'
                    + (f' <span class="ahjo-badge planned">{esc(e["badge"])}</span>' if e.get("draft") else "")
