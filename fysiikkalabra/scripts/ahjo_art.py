@@ -325,3 +325,5 @@ if __name__ == "__main__":
     import ahjo                                   # the front page's icon: the logo's mark, cut from the original
     ahjo.MARK.write_text(ahjo.mark_svg()); print("wrote", ahjo.MARK)
     ahjo.SITE_MARK_KR.write_text(ahjo.site_mark_kiviruukki()); print("wrote", ahjo.SITE_MARK_KR)
+    import module_icons                          # Ahjo 1's and Ahjo 2's icons: the logo's anvil with the course's object
+    for code in ahjo.COURSE_ICON_TITLES: module_icons.file(code).write_text(ahjo.course_icon_svg(code)); print("wrote", module_icons.file(code))

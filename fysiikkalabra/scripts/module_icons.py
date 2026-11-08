@@ -31,8 +31,8 @@ ICONS = {
     "FY14": "tokamakin rengasplasma ja magneettikelat",
     # the school's planned courses, shown greyed out on the front page (teacher 2026-11-04; local_courses.planned)
     "LUMATUTOR": "tiedetutori ja koeputki",
-    "AHJO1": "3D-tulostin",
-    "AHJO2": "prototyypin suunnittelu",
+    "AHJO1": "3D-tulostin Ahjon alasimella (scripts/ahjo.py course_icon_svg)",
+    "AHJO2": "idean hehkulamppu Ahjon alasimella (scripts/ahjo.py course_icon_svg)",
     "KILPAROBO": "pyörillä liikkuva robotti",
     "MYYTIT": "suurennuslasi ja kysymysmerkki",
 }
