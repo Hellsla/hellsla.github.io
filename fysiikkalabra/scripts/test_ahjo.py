@@ -30,7 +30,7 @@ for lang in i18n.languages():
         head = html[:html.find("</head>")]
         expect(f"{lang} {name}: Ahjo's mark as the tab icon, not Ruukkilabra's", "ruukkilabra-32.png" not in head and "ruukkilabra-symboli.svg" not in head
                and all(re.search(rf'href="(?:\.\./)*{re.escape(i)}"', head) and (SITE / i).is_file() for i in ahjo.TAB_ICONS.values()))
-        expect(f"{lang} {name}: the original logo with its name as alt", re.search(r'<img class="ahjo-logo" src="(?:\.\./)?brand/ahjo-makerspace-logo\.svg" alt="[^"]+"', main) is not None)
+        expect(f"{lang} {name}: the original logo with its name as alt", re.search(r'<img class="ahjo-logo[^"]*" src="(?:\.\./)?brand/ahjo-makerspace-logo\.svg" alt="[^"]+"', main) is not None)
         expect(f"{lang} {name}: the section's navigation marks this page", f'aria-current="page"' in main and 'class="ahjo-nav"' in main)
         expect(f"{lang} {name}: no laser cutter or CNC anywhere", not ahjo.FORBIDDEN.search(re.sub(r"<[^>]+>", " ", main)))
         bad = []
@@ -87,6 +87,10 @@ for lang in i18n.languages():
         expect(f"{lang} {c['code']}: the hand-ins ({len(hand)}) are marked on their lessons", ol is not None and all(ahjo.esc(h) in ol.group(1) for h in hand) and (c["code"] != "AHJO2" or len(hand) == 5))
         expect(f"{lang} {c['code']}: the optional deepening is its own section, not in the 16 lessons", bool(c.get("deepening")) == ('id="syventavat"' in cp)
                and all(ahjo.esc(x["title"]) not in (ol.group(1) if ol else "") for x in c.get("deepening", [])))
+        hd = cp[cp.find('<header class="ahjo-hero'):cp.find("</header>", cp.find('<header class="ahjo-hero'))]
+        sh_ = cp[cp.find('class="ahjo-sec ahjo-shared"'):]
+        expect(f"{lang} {c['code']}: the course's logo large in the banner, Ahjo's logo heading the shared section (teacher 2026-11-08)",
+               "<img" not in hd and 'class="ahjo-logo ahjo-course-logo"' in hd and 'stroke="#e3dccb"' not in hd and "ahjo-makerspace-logo.svg" in sh_[:sh_.find("</section>")])
         expect(f"{lang} {c['code']}: the course page links Ahjo's materials and safety", f'href="{ahjo.BANK}"' in cp and f'href="{ahjo.SAFETY}"' in cp)
         expect(f"{lang} {c['code']}: the Makerspace licence only where the teacher said so (Ahjo 1)", bool(c.get("license")) == ('class="ahjo-sec ahjo-safety-teaser ahjo-license"' in cp))
     home = (out / "index.html").read_text()
