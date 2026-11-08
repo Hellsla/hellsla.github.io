@@ -60,7 +60,11 @@
     "links_lead": "Ahjo's guides and equipment can be used in many subjects. These Ruukkilabra studies are linked to Ahjo.",
     "links_planned": "being planned",
     "logo_alt": "Ahjo – Kiviruukin Makerspace",
-    "front_line": "Courses, guides, equipment and safety."
+    "front_line": "Courses, guides, equipment and safety.",
+    "plan_draft": "Draft: the goals and the lesson outline await the teacher's approval.",
+    "course_goals": "Goals",
+    "course_goals_lead": "In this course, you will learn to",
+    "course_lessons": "{n} lessons"
   },
   "courses": [
     {
@@ -72,7 +76,82 @@
         "Electronics and Arduino",
         "Basics of programming and robotics",
         "Getting to know the equipment and working safely"
-      ]
+      ],
+      "goals": [
+        "work safely in Ahjo and use its equipment as you were introduced to it",
+        "model objects to measure and make them with a 3D printer",
+        "build simple circuits and measure them with a multimeter",
+        "program a microcontroller and use sensors and actuators",
+        "build and program a simple robot",
+        "document your work and assess how well it succeeded"
+      ],
+      "lessons": [
+        {
+          "title": "Welcome to Ahjo",
+          "text": "The space, the equipment and how we work; the rules and the induction."
+        },
+        {
+          "title": "Working safely",
+          "text": "Hand and power tools, protective equipment and an orderly workstation."
+        },
+        {
+          "title": "Basics of 3D modelling",
+          "text": "Basic shapes, joining and cutting in a modelling program."
+        },
+        {
+          "title": "A model to measure",
+          "text": "Dimensions, tolerances and fitting parts together."
+        },
+        {
+          "title": "From model to print",
+          "text": "Slicing, print settings and using the printer."
+        },
+        {
+          "title": "Judging a print and 3D scanning",
+          "text": "Print defects and how to fix them; scanning an object into a model."
+        },
+        {
+          "title": "Circuits and components",
+          "text": "Power source, resistor, LED and breadboard."
+        },
+        {
+          "title": "Measuring with a multimeter",
+          "text": "Measuring voltage, current and resistance connected the right way."
+        },
+        {
+          "title": "A first Arduino program",
+          "text": "The programming environment, digital outputs and a blinking LED."
+        },
+        {
+          "title": "Sensors and inputs",
+          "text": "Button, light and distance sensors; conditions and loops."
+        },
+        {
+          "title": "Motors and actuators",
+          "text": "Servo and DC motor; power supply and control."
+        },
+        {
+          "title": "Soldering",
+          "text": "Using a soldering station and soldering a small circuit."
+        },
+        {
+          "title": "Building a robot",
+          "text": "The structure of a robotics kit, drive train and sensors."
+        },
+        {
+          "title": "Programming a robot",
+          "text": "Movement, sensor control and solving a task with a program."
+        },
+        {
+          "title": "Mini project",
+          "text": "A small device of your own with the methods learned: design and build."
+        },
+        {
+          "title": "Presentation and self-assessment",
+          "text": "Presenting and documenting the mini project and assessing your own learning."
+        }
+      ],
+      "plan_status": "draft"
     },
     {
       "code": "AHJO2",
@@ -83,7 +162,82 @@
         "Building",
         "Testing and improving",
         "Documentation and assessment"
-      ]
+      ],
+      "goals": [
+        "define a problem and the user's needs",
+        "come up with possible solutions and choose between them with reasons",
+        "plan and schedule a project in a group",
+        "build a prototype with Ahjo's equipment and methods",
+        "test a solution and improve it on the basis of tests and feedback",
+        "document and present the project and assess your own and the group's work"
+      ],
+      "lessons": [
+        {
+          "title": "Starting the project",
+          "text": "How Ahjo 2 runs, teams and finding a project topic."
+        },
+        {
+          "title": "Defining the problem",
+          "text": "Whose problem, what need, and how success is recognised."
+        },
+        {
+          "title": "Ideation",
+          "text": "Ideation methods and producing several possible solutions."
+        },
+        {
+          "title": "Judging and choosing ideas",
+          "text": "Criteria, comparison and a justified choice."
+        },
+        {
+          "title": "Project plan",
+          "text": "Goals, roles, schedule, materials and risks."
+        },
+        {
+          "title": "Design",
+          "text": "Sketches, dimensioned drawings and digital models."
+        },
+        {
+          "title": "Materials and methods",
+          "text": "Choosing suitable materials, equipment and ways of making."
+        },
+        {
+          "title": "A first prototype",
+          "text": "A quick, simple model to try out the idea."
+        },
+        {
+          "title": "Testing the prototype",
+          "text": "A test plan, measuring and recording observations."
+        },
+        {
+          "title": "Feedback and improvement",
+          "text": "Feedback from users and the group; planning changes."
+        },
+        {
+          "title": "Building 1",
+          "text": "Making the parts of the solution according to the plan."
+        },
+        {
+          "title": "Building 2",
+          "text": "Assembling the parts; electronics, programming or finishing as needed."
+        },
+        {
+          "title": "Final testing",
+          "text": "Does the solution work: tests, measurements and comparison with the goals."
+        },
+        {
+          "title": "Finishing",
+          "text": "Last fixes, appearance and usability."
+        },
+        {
+          "title": "Documentation",
+          "text": "The project's stages, decisions and results into a portfolio."
+        },
+        {
+          "title": "Presentation and assessment",
+          "text": "Presenting the project and assessing your own and the group's work."
+        }
+      ],
+      "plan_status": "draft"
     }
   ],
   "categories": [

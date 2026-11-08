@@ -42,6 +42,10 @@ for lang in i18n.languages():
     start = (out / ahjo.PAGE).read_text() if (out / ahjo.PAGE).is_file() else ""
     expect(f"{lang}: the equipment heading follows equipment_status", ahjo.esc(d["ui"]["equipment_h_" + d["equipment_status"]]) in start)
     expect(f"{lang}: Ahjo 1 and Ahjo 2 on the start page", all(f'id="{c["code"].lower()}"' in start for c in d["courses"]))
+    for c in d["courses"]:
+        card = re.search(rf'<article class="ahjo-course" id="{c["code"].lower()}".*?</article>', start, re.S)
+        n = len(re.findall(r"<li>", card.group(0).split('class="ahjo-lessons"')[1])) if card and 'class="ahjo-lessons"' in card.group(0) else 0
+        expect(f"{lang} {c['code']}: goals and the lesson outline in closed boxes ({n} lessons)", not c.get("lessons") or (n == len(c["lessons"]) == 16 and "<details open" not in card.group(0)))
     home = (out / "index.html").read_text()
     plan = re.search(r'<ul class="mod-list plan-list"[^>]*>(.*?)</ul>', home, re.S)
     expect(f"{lang}: Ahjo 1 and Ahjo 2 are not in the front page's planned list (teacher 2026-11-08)",

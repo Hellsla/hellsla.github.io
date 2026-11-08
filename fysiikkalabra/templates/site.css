@@ -1514,3 +1514,14 @@ main.ahjo-page{max-width:68rem;font-family:var(--ahjo-text)}
 @media print{.ahjo-nav{display:none}}
 @media (min-width:700px){.ahjo-list+.plan-list{margin-top:0}}   /* the Ahjo row takes the one-row gap, so the front page still fits 1440 x 900 */
 .ahjo-topics li{margin:0}
+/* a course's goals and its 16-lesson outline: two closed boxes in its card (teacher 2026-11-08) */
+.ahjo-plan-note{margin:.8rem 0 .2rem;font-size:var(--fs-small);color:var(--ink-2);font-style:italic}
+.ahjo-plan{margin:.4rem 0 0;border-top:1px solid var(--line)}
+.ahjo-plan>summary{display:flex;align-items:center;min-height:44px;cursor:pointer;font:700 var(--fs-ui) var(--ahjo-head);color:var(--kr-navy)}
+.ahjo-plan>summary:focus-visible{outline:3px solid var(--kr-navy);outline-offset:2px;border-radius:6px}
+.ahjo-plan p{margin:0 0 .3rem;font-size:var(--fs-ui);color:var(--ink-2)}
+.ahjo-plan ul{margin:0 0 .6rem;padding-left:1.2rem;font-size:var(--fs-ui)}
+.ahjo-lessons{margin:0 0 .6rem;padding-left:1.6rem;font-size:var(--fs-ui)}
+.ahjo-lessons li{margin:.25rem 0}.ahjo-lessons li::marker{color:var(--kr-navy);font-weight:700}
+.ahjo-lesson-t{font-weight:700;color:var(--kr-navy)}.ahjo-lesson-x{color:var(--ink-2)}
+.ahjo-courses{align-items:start}

@@ -61,7 +61,11 @@
     "links_lead": "Ahjon ohjeita ja laitteita voi käyttää monessa oppiaineessa. Nämä Ruukkilabran opinnot liittyvät Ahjoon.",
     "links_planned": "suunnitteilla",
     "logo_alt": "Ahjo – Kiviruukin Makerspace",
-    "front_line": "Opintojaksot, ohjeet, laitteisto ja turvallisuus."
+    "front_line": "Opintojaksot, ohjeet, laitteisto ja turvallisuus.",
+    "plan_draft": "Luonnos: tavoitteet ja oppituntien runko odottavat opettajan hyväksyntää.",
+    "course_goals": "Tavoitteet",
+    "course_goals_lead": "Opintojaksolla opit",
+    "course_lessons": "{n} oppituntia"
   },
   "courses": [
     {
@@ -73,7 +77,82 @@
         "Elektroniikka ja Arduino",
         "Ohjelmoinnin ja robotiikan perusteet",
         "Laitteisiin perehtyminen ja turvallinen työskentely"
-      ]
+      ],
+      "goals": [
+        "työskentelemään Ahjossa turvallisesti ja käyttämään sen laitteita perehdytyksen mukaisesti",
+        "mallintamaan mittatarkkoja kappaleita ja valmistamaan niitä 3D-tulostimella",
+        "rakentamaan yksinkertaisia virtapiirejä ja mittaamaan niitä yleismittarilla",
+        "ohjelmoimaan mikro-ohjainta ja käyttämään antureita ja toimilaitteita",
+        "rakentamaan ja ohjelmoimaan yksinkertaisen robotin",
+        "dokumentoimaan työtäsi ja arvioimaan sen onnistumista"
+      ],
+      "lessons": [
+        {
+          "title": "Tervetuloa Ahjoon",
+          "text": "Tila, laitteet ja toimintatavat; tilan käyttösäännöt ja perehdytys."
+        },
+        {
+          "title": "Turvallinen työskentely",
+          "text": "Käsi- ja sähkötyökalut, suojaimet ja työpisteen järjestys."
+        },
+        {
+          "title": "3D-mallinnuksen perusteet",
+          "text": "Perusmuodot, yhdistäminen ja leikkaaminen mallinnusohjelmassa."
+        },
+        {
+          "title": "Mittatarkka malli",
+          "text": "Mitat, toleranssit ja osien sovittaminen yhteen."
+        },
+        {
+          "title": "Mallista tulosteeksi",
+          "text": "Viipalointi, tulostusasetukset ja tulostimen käyttö."
+        },
+        {
+          "title": "Tulosteen arviointi ja 3D-skannaus",
+          "text": "Tulosteen virheet ja niiden korjaaminen; kappaleen skannaaminen malliksi."
+        },
+        {
+          "title": "Virtapiiri ja komponentit",
+          "text": "Jännitelähde, vastus, LED ja kytkentäalusta."
+        },
+        {
+          "title": "Mittaaminen yleismittarilla",
+          "text": "Jännitteen, virran ja resistanssin mittaaminen oikein kytkettynä."
+        },
+        {
+          "title": "Arduinon ensimmäinen ohjelma",
+          "text": "Ohjelmointiympäristö, digitaaliset lähdöt ja vilkkuva LED."
+        },
+        {
+          "title": "Anturit ja syötteet",
+          "text": "Painike, valo- ja etäisyysanturi; ehtolauseet ja silmukat."
+        },
+        {
+          "title": "Moottorit ja toimilaitteet",
+          "text": "Servo ja tasavirtamoottori; virransyöttö ja ohjaus."
+        },
+        {
+          "title": "Juottaminen",
+          "text": "Juotosaseman käyttö ja pienen piirin juottaminen."
+        },
+        {
+          "title": "Robotin rakentaminen",
+          "text": "Robotiikkasarjan rakenne, voimansiirto ja anturit."
+        },
+        {
+          "title": "Robotin ohjelmointi",
+          "text": "Liike, anturiohjaus ja tehtävän ratkaiseminen ohjelmalla."
+        },
+        {
+          "title": "Miniprojekti",
+          "text": "Pieni oma laite opituilla menetelmillä: suunnittelu ja rakentaminen."
+        },
+        {
+          "title": "Esittely ja itsearviointi",
+          "text": "Miniprojektin esittely, dokumentointi ja oman oppimisen arviointi."
+        }
+      ],
+      "plan_status": "draft"
     },
     {
       "code": "AHJO2",
@@ -84,7 +163,82 @@
         "Rakentaminen",
         "Testaaminen ja kehittäminen",
         "Dokumentointi ja arviointi"
-      ]
+      ],
+      "goals": [
+        "määrittelemään ongelman ja käyttäjän tarpeet",
+        "ideoimaan ratkaisuvaihtoehtoja ja valitsemaan niistä perustellusti",
+        "suunnittelemaan ja aikatauluttamaan projektin ryhmässä",
+        "rakentamaan prototyypin Ahjon laitteilla ja menetelmillä",
+        "testaamaan ratkaisua ja kehittämään sitä testien ja palautteen perusteella",
+        "dokumentoimaan ja esittelemään projektin sekä arvioimaan omaa ja ryhmän työtä"
+      ],
+      "lessons": [
+        {
+          "title": "Projektin aloitus",
+          "text": "Ahjo 2:n kulku, tiimit ja projektin aiheen etsiminen."
+        },
+        {
+          "title": "Ongelman määrittely",
+          "text": "Kenen ongelma, mikä tarve ja miten onnistuminen tunnistetaan."
+        },
+        {
+          "title": "Ideointi",
+          "text": "Ideointimenetelmät ja useiden ratkaisuvaihtoehtojen tuottaminen."
+        },
+        {
+          "title": "Ideoiden arviointi ja valinta",
+          "text": "Kriteerit, vertailu ja perusteltu valinta."
+        },
+        {
+          "title": "Projektisuunnitelma",
+          "text": "Tavoitteet, työnjako, aikataulu, materiaalit ja riskit."
+        },
+        {
+          "title": "Suunnittelu",
+          "text": "Luonnokset, mittapiirrokset ja digitaaliset mallit."
+        },
+        {
+          "title": "Materiaalit ja menetelmät",
+          "text": "Sopivien materiaalien, laitteiden ja valmistustapojen valinta."
+        },
+        {
+          "title": "Ensimmäinen prototyyppi",
+          "text": "Nopea ja yksinkertainen malli idean kokeilemiseen."
+        },
+        {
+          "title": "Prototyypin testaaminen",
+          "text": "Testisuunnitelma, mittaaminen ja havaintojen kirjaaminen."
+        },
+        {
+          "title": "Palaute ja kehittäminen",
+          "text": "Käyttäjän ja ryhmän palaute; muutosten suunnittelu."
+        },
+        {
+          "title": "Rakentaminen 1",
+          "text": "Ratkaisun osien valmistaminen suunnitelman mukaan."
+        },
+        {
+          "title": "Rakentaminen 2",
+          "text": "Osien kokoaminen, elektroniikka, ohjelmointi tai viimeistely tarpeen mukaan."
+        },
+        {
+          "title": "Lopullinen testaus",
+          "text": "Toimiiko ratkaisu: testaus, mittaukset ja vertailu tavoitteisiin."
+        },
+        {
+          "title": "Viimeistely",
+          "text": "Viimeiset korjaukset, ulkoasu ja käytettävyys."
+        },
+        {
+          "title": "Dokumentointi",
+          "text": "Projektin vaiheet, päätökset ja tulokset portfolioon."
+        },
+        {
+          "title": "Esittely ja arviointi",
+          "text": "Projektin esittely sekä oman ja ryhmän työn arviointi."
+        }
+      ],
+      "plan_status": "draft"
     }
   ],
   "categories": [

@@ -13,7 +13,8 @@ without one shows the Finnish (fi-easy). build.py renders three pages in every l
 Fields of ahjo.json (texts in the file's language):
   title, eyebrow, lead, opening, description   the start page's heading and its lines
   ui                       the section's interface texts; a count is {"one", "other"} with {n}
-  courses                  [{code, subtitle, topics}]: Ahjo 1 and Ahjo 2. Their name and one-line description come
+  courses                  [{code, subtitle, topics, goals?, lessons?, plan_status?}] (goals complete "Opintojaksolla
+                           opit"; lessons: 16 x {title, text}; plan_status "draft" until the teacher approves): Ahjo 1 and Ahjo 2. Their name and one-line description come
                            from local-courses.json ("_planned" by icon code, or the course itself once it is a real
                            local course with its own page, which is then linked): one source, never written twice
   categories               [{id, icon, title, text}]: the bank's main categories, in order (ICONS names the icon)
@@ -113,7 +114,7 @@ def validate(lessons, investigations, guides, planned_codes, local_codes, module
     src = load()
     shape = lambda d: ([c["code"] for c in d["courses"]], [c["id"] for c in d["categories"]],
                        [r.get("ref") or r.get("id") or "safety" for r in d["resources"]], [g["id"] for g in d["equipment"]],
-                       [len(g["items"]) for g in d["equipment"]], [s["id"] for s in d["safety"]], [l["course"] for l in d["links"]], sorted(d["ui"]))
+                       [len(g["items"]) for g in d["equipment"]], [(len(c.get("goals", [])), len(c.get("lessons", []))) for c in d["courses"]], [s["id"] for s in d["safety"]], [l["course"] for l in d["links"]], sorted(d["ui"]))
     files = [SOURCE] + sorted((ROOT / "content").glob("*/ahjo.json"))
     for f in files:
         name = f.relative_to(ROOT)
@@ -135,6 +136,9 @@ def validate(lessons, investigations, guides, planned_codes, local_codes, module
         for c in d["courses"]:
             if c["code"] not in set(planned_codes) | set(local_codes): errs.append(f"{name}: course {c['code']} is neither a local nor a planned course")
             if not c.get("topics"): errs.append(f"{name}: {c['code']} has no topics")
+            if c.get("lessons") and (len(c["lessons"]) != 16 or not all(l.get("title") and l.get("text") for l in c["lessons"])):
+                errs.append(f"{name}: {c['code']}: 16 lessons, each with a title and a text (teacher 2026-11-08)")
+            if c.get("plan_status", "draft") not in ("draft", "approved"): errs.append(f"{name}: {c['code']}: plan_status draft or approved")
         seen = set()
         for r in d["resources"]:
             rid = r.get("ref") or r.get("id") or ("safety" if r.get("safety") else None)
@@ -246,7 +250,7 @@ def start_body(d, planned, local, modules, ref):
                      f'<p class="ahjo-badge{"" if href else " planned"}">{esc(status)}</p></div>'
                      f'<p class="ahjo-course-text">{esc(text)}</p>'
                      f'<h4 class="visually-hidden">{esc(u["course_contents"])}</h4>'
-                     f'<ul class="ahjo-topics">' + "".join(f'<li>{esc(t)}</li>' for t in c["topics"]) + '</ul></article>')
+                     f'<ul class="ahjo-topics">' + "".join(f'<li>{esc(t)}</li>' for t in c["topics"]) + '</ul>' + course_plan(u, c) + '</article>')
     courses = (f'<section class="ahjo-sec" id="opintojaksot" aria-labelledby="h-ahjo-courses"><h2 id="h-ahjo-courses">{esc(u["courses_h"])}</h2>'
                f'<p class="ahjo-sec-lead">{esc(u["courses_lead"])}</p><div class="ahjo-courses">{"".join(cards)}</div></section>')
     # the bank's topics with what is ready and what is coming
@@ -266,6 +270,22 @@ def start_body(d, planned, local, modules, ref):
                f'<div><h2 id="h-ahjo-safety">{esc(u["safety_h"])}</h2><p>{esc(u["safety_lead"])}</p><p class="ahjo-draft-short">{esc(u["safety_draft_note"].split(". ")[0])}.</p>'
                f'<p class="ahjo-more"><a href="{SAFETY}">{esc(u["safety_open"])}<span aria-hidden="true"> →</span></a></p></div></section>')
             + links_section(d, names))
+
+
+def course_plan(u, c):
+    """A course's goals and lesson outline as two closed boxes under its topics; a draft says so (teacher 2026-11-08:
+    "tavoitteet ja 16 oppituntia", written as a draft until the teacher approves it or gives the school's own text)."""
+    out = ""
+    if c.get("plan_status") == "draft" and (c.get("goals") or c.get("lessons")):
+        out += f'<p class="ahjo-plan-note">{esc(u["plan_draft"])}</p>'
+    if c.get("goals"):
+        out += (f'<details class="ahjo-plan"><summary>{esc(u["course_goals"])}</summary><p>{esc(u["course_goals_lead"])}</p>'
+                f'<ul>' + "".join(f'<li>{esc(g)}</li>' for g in c["goals"]) + '</ul></details>')
+    if c.get("lessons"):
+        out += (f'<details class="ahjo-plan"><summary>{esc(u["course_lessons"].replace("{n}", str(len(c["lessons"]))))}</summary><ol class="ahjo-lessons">'
+                + "".join(f'<li><span class="ahjo-lesson-t">{esc(l["title"])}</span> <span class="ahjo-lesson-x">{esc(l["text"])}</span></li>' for l in c["lessons"])
+                + '</ol></details>')
+    return out
 
 
 def equipment_section(d):
