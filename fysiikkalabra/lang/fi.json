@@ -164,6 +164,8 @@
     "chapter_nav": "Luvusta toiseen",
     "chapter_prev": "Edellinen luku",
     "chapter_next": "Seuraava luku",
+    "crumb_prev": "Edellinen",
+    "crumb_next": "Seuraava",
     "chapter_up": "Moduulin sivulle",
     "chapter_course": "Kaikki moduulin {{course}} luvut",
     "choose": "Valitse vaihtoehto.",
