@@ -42,8 +42,8 @@ var RL_CONFIG = {
 };
 /* ===== asetukset päättyvät ===== */
 
-// Samat rajat kuin RuukkiLabran palautus.js:ssä (LIMITS). Formsin tiedostokoon raja asetetaan 10 Mt:ksi.
-var RL_LIMITS = { file: 9000000, image: 2000000, side: 5000, images: 40, text: 20000, latex: 4000, items: 400, mathPng: 200000 };
+// Samat rajat kuin RuukkiLabran palautus.js:ssä (LIMITS). Formsin tiedostokoon raja asetetaan 100 Mt:ksi (tiedosto enintään 20 Mt, 2026-11-08).
+var RL_LIMITS = { file: 20000000, image: 2000000, side: 5000, images: 40, text: 20000, latex: 4000, items: 400, mathPng: 200000 };
 var RL_FORMAT = 'ruukkilabra-palautus', RL_VERSION = 4;   // 2: + itsearvio (selfassessment), 3: kaikki vastaukset + tavoitearvioiden kooste (opettaja 6.11.2026), 4: + annettujen tehtävien eteneminen (7.11.2026)
 var RL_SA_LEVELS = ['a', 'b', 'c', 'd', 'x'];   // väriasteikko vihreästä punertavaan + Ei vielä (inquiry.py SA_LEVELS)
 var RL_STATUS = { OK: 'Hyväksytty', DUP: 'Kaksoiskappale', CHECK: 'Tarkistettava', BAD: 'Virheellinen', READ: 'Lukuvirhe' };
