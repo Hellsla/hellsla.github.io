@@ -82,6 +82,19 @@
   table.fp td.lab { padding: 0 6px; font-size: 12px; width: 34em; max-width: 34em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   table.fp td.c { width: 20px; min-width: 20px; height: 20px; }
   table.fp td.c.sa-none { border: 1px solid var(--line); }
+  /* koko ryhmän sormenjälki (opettaja 8.11.2026): kuten opiskelijan Oma itsearvio, luvut sarakkeina ja väitteet riveinä;
+     solussa ryhmän vastausten jakauma tasoittain (ylhäältä osaan hyvin … ei vielä), valkoinen osa = ei vastattu */
+  h3 { font-size: 15px; margin: 14px 0 6px; color: var(--ink2); }
+  #groupMap { overflow-x: auto; }
+  .gm { display: grid; gap: 3px; align-items: end; width: max-content; }
+  .gm .th { align-self: end; padding: 0 2px 3px; border-bottom: 2px solid var(--accent); font: 700 11px/1.15 system-ui, sans-serif; letter-spacing: .03em; text-transform: uppercase; color: var(--accent); overflow: hidden; }
+  .gm .col, .gm .row { font: 600 12px/1 system-ui, sans-serif; color: var(--ink2); text-align: center; font-variant-numeric: tabular-nums; }
+  .gm .row { align-self: center; }
+  .gm .cell { width: 40px; height: 40px; border-radius: 4px; overflow: hidden; display: flex; flex-direction: column; box-shadow: inset 0 0 0 1px var(--line); background: #fff; }
+  .gm .cell.gap { box-shadow: none; background: none; }
+  .gm .cell > span { display: block; flex: none; }
+  .gm .cell.avg { align-items: center; justify-content: center; box-shadow: none; color: #fff; font: 700 13px system-ui, sans-serif; } .gm .cell.avg.sa-c { color: #1f2421; }
+  .gm .sa-a { background: #1a4d2e; } .gm .sa-b { background: #5f9460; } .gm .sa-c { background: #d6a744; } .gm .sa-d { background: #c0583b; } .gm .sa-x { background: #9a9a9a; }
 </style>
 </head>
 <body>
@@ -98,6 +111,9 @@
     <section id="selfSec" hidden>
       <h2>Osaamisen sormenjälki</h2>
       <p class="muted sa-legend" id="selfLegend"></p>
+      <h3>Koko ryhmä</h3>
+      <div id="groupMap"></div>
+      <h3>Opiskelijoittain</h3>
       <div id="selfBox"></div>
     </section>
     <div class="bar"><h2 class="grow">Tehtävät</h2><label class="muted"><input type="checkbox" id="onlyOpen"> Vain arvioimattomat</label></div>
@@ -316,12 +332,14 @@
     var lg = $('selfLegend'); lg.textContent = '';
     ['d', 'c', 'b', 'a', 'x', 'none'].forEach(function (k) { var it = el('span', 'item'); it.append(el('span', 'sa sa-' + k), document.createTextNode(SA_TEXT[k])); lg.append(it); });
     $('selfSec').hidden = !chs.length;
+    $('groupMap').textContent = '';
     if (!chs.length) return;
     // kaikki ryhmän opiskelijat (myös ne, jotka eivät ole palauttaneet lukua), aakkosjärjestyksessä
     var names = [];
     ov.summary.forEach(function (r) { if (names.indexOf(r.email) < 0) names.push(r.email); });
     chs.forEach(function (c) { c.self.students.forEach(function (x) { if (names.indexOf(x.email) < 0) names.push(x.email); }); });
     names.sort(function (a, b) { return a.localeCompare(b, 'fi'); });
+    renderGroupMap(ov, names.length);
     var wrap = el('div', 'wide'), t = el('table', 'fp'), head = el('thead'), hr = el('tr'), tb = el('tbody');
     t.id = 'fingerprint';
     hr.append(el('th', null, 'Väittämä'));
@@ -341,6 +359,54 @@
       });
     });
     wrap.append(t); box.append(wrap);
+  }
+  // Koko ryhmän sormenjälki (opettaja 8.11.2026, "koko ryhmän osaamisen sormenjälki"): sama ruudukko kuin opiskelijan
+  // moduulisivun Oma itsearviossa (teemat, luvut sarakkeina, väitteet 1–3 riveinä). Solussa ryhmän jakauma: kunkin tason
+  // osuus kaikista ryhmän opiskelijoista; valkoinen = ei vastattu (tai lukua ei palautettu). Nimiä ei näytetä.
+  var GM_AVG = /gmavg/.test(location.hash);
+  function renderGroupMap(ov, nAll) {
+    var box = $('groupMap'); box.textContent = '';
+    var chs = ov.chapters.filter(function (c) { return c.self && c.self.items.length && inRange(c); });
+    if (!chs.length || !nAll) return;
+    var rows = chs.reduce(function (n, c) { return Math.max(n, c.self.items.length); }, 0);
+    var g = el('div', 'gm'); g.setAttribute('role', 'img'); g.setAttribute('aria-label', 'Koko ryhmän osaamisen sormenjälki');
+    g.style.gridTemplateColumns = '18px repeat(' + chs.length + ', 40px)';
+    // teemat lukujen yläpuolella (curriculum.json themes: ensimmäinen luku)
+    var ids = ov.chapters.map(function (x) { return x.id; }), spans = [], cur = null;
+    chs.forEach(function (c, i) {
+      var t = null, at = ids.indexOf(c.id);
+      (ov.themes || []).forEach(function (th) { var k = ids.indexOf(th.first); if (k >= 0 && k <= at) t = th; });
+      if (!cur || cur.t !== t) { cur = { t: t, n: 0 }; spans.push(cur); }
+      cur.n++;
+    });
+    if (spans.some(function (sp) { return sp.t; })) {
+      g.append(el('span'));
+      spans.forEach(function (sp) { var h = el('span', 'th', sp.t ? sp.t.title : ''); h.style.gridColumn = 'span ' + sp.n; if (sp.t) h.title = sp.t.title; g.append(h); });
+    }
+    g.append(el('span'));
+    chs.forEach(function (c) { var h = el('span', 'col', String(c.number)); h.title = 'Luku ' + c.number + ' · ' + c.title; g.append(h); });
+    for (var k = 0; k < rows; k++) {
+      g.append(el('span', 'row', String(k + 1)));
+      chs.forEach(function (c) {
+        var it = c.self.items[k];
+        if (!it) { g.append(el('span', 'cell gap')); return; }
+        var cnt = { a: 0, b: 0, c: 0, d: 0, x: 0 }, got = 0;
+        c.self.students.forEach(function (x) { var v = (x.levels || {})[it.id]; if (cnt[v] !== undefined) { cnt[v]++; got++; } });
+        var cell = el('span', 'cell'), tip = [], sum = 0, n = 0;
+        ['a', 'b', 'c', 'd', 'x'].forEach(function (lv) {
+          if (!cnt[lv]) return;
+          if (GM_AVG) { if (SA_NUM[lv]) { sum += SA_NUM[lv] * cnt[lv]; n += cnt[lv]; } }
+          else { var part = el('span', 'sa-' + lv); part.style.height = (100 * cnt[lv] / nAll) + '%'; cell.append(part); }
+          tip.push(SA_TEXT[lv] + ': ' + cnt[lv]);
+        });
+        if (GM_AVG && n) { var avg = sum / n; cell.className = 'cell avg sa-' + 'abcd'.charAt(4 - Math.round(avg)); cell.append(el('b', null, num(Math.round(avg * 10) / 10))); tip.unshift('Keskiarvo ' + num(Math.round(avg * 10) / 10) + ' (' + n + '/' + nAll + ' vastasi)'); }
+        if (nAll - got > 0) tip.push(SA_TEXT.none + ': ' + (nAll - got));
+        cell.title = 'Luku ' + c.number + ', väite ' + (k + 1) + ': ' + it.label + '\n' + tip.join('\n');
+        cell.setAttribute('aria-label', cell.title);
+        g.append(cell);
+      });
+    }
+    box.append(g);
   }
   ['from', 'to'].forEach(function (k) { $(k).addEventListener('change', function () { S[k] = $(k).value; if (S.ov) { renderTasks(S.ov); renderSummary(S.ov); renderSelf(S.ov); } }); });
   $('refresh').addEventListener('click', loadHome);
