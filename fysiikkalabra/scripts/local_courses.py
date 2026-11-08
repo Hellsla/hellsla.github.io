@@ -131,7 +131,7 @@ def page_body(code, c, T, chapters, published, investigations=(), guides_html=""
         items = ""
         for i, ch in enumerate(c["chapters"], 1):
             for j, u in enumerate(ch["units"], 1):
-                lab = cardgrid.label(f'{i} · {esc(ch["title"])}', esc(ch["question"]), lang_attr) if j == 1 else ""
+                lab = cardgrid.label(f'{i} · {esc(ch["title"])}', lang_attr) if j == 1 else ""   # the heading only, no question under it (teacher 2026-11-08)
                 num = T("site.chapter_n", n=f"{i}.{j}"); title = f'<span{lang_attr}>{esc(u["title"])}</span>' if lang_attr else esc(u["title"])
                 star = (f'<span class="tag">★ {T("units.optional_mark")}</span>') if u.get("optional") else ""
                 if u["id"] in hrefs:             # the version linked: this language's, else the source language's (units.py)

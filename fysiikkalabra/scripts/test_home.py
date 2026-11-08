@@ -170,7 +170,7 @@ for lang in i18n.languages():
             if local[code].get("chapters"):  # units as cards under the course's chapters (teacher 2026-11-04, scripts/cardgrid.py)
                 uc = re.search(r'<ol class="lessons ch-cards" id="unit-cards">(.*?)</ol>', pg, re.S)
                 live = re.findall(r'<li class="live ch-card">(.*?)</li>', uc.group(1), re.S) if uc else []
-                expect(f"{lang} {code}: one section per chapter with its question", uc and uc.group(1).count('class="ch-theme"') == len(local[code]["chapters"]) == uc.group(1).count('class="ch-theme-q"'))
+                expect(f"{lang} {code}: one section per chapter, its heading without the question (teacher 2026-11-08)", uc and uc.group(1).count('class="ch-theme"') == len(local[code]["chapters"]) and 'class="ch-theme-q"' not in uc.group(1))
                 expect(f"{lang} {code}: every published unit is a card with one link, its opening illustration and its question ({len(live)})",
                        all(len(re.findall(r"<a ", c)) == 1 and 'class="ch-img"><svg aria-hidden="true"' in c and 'class="ch-why"' in c for c in live)
                        and all((out / h).resolve().is_file() for c in live for h in re.findall(r'href="([^"]+)"', c)))
