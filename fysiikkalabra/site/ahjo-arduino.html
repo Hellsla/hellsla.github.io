@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Arduinon ensiaskeleet — Ruukkilabra</title>
+<meta name="description" content="Ensimmäinen kytkentä ja ohjelma Arduino-perussarjalla.">
+<link rel="canonical" href="https://ruukkilab.fi/ahjo-arduino.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ruukkilabra">
+<meta property="og:locale" content="fi_FI">
+<meta property="og:title" content="Arduinon ensiaskeleet">
+<meta property="og:description" content="Ensimmäinen kytkentä ja ohjelma Arduino-perussarjalla.">
+<meta property="og:url" content="https://ruukkilab.fi/ahjo-arduino.html">
+<meta name="theme-color" content="#f7f3ec">
+<link rel="icon" href="brand/ruukkilabra-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="brand/ruukkilabra-symboli.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="brand/ruukkilabra-180.png">
+<link rel="stylesheet" href="vendor/katex/katex.min.css">
+<link rel="stylesheet" href="site.css?v=776130e8">
+</head><body>
+<div class="page">
+<header class="top">
+  <a class="brand" href="index.html" aria-label="Ruukkilabra, etusivu"><img class="brand-mark" src="brand/ruukkilabra-symboli.svg" alt="" width="40" height="40"><span class="brand-name">Ruukkilabra<small>Lukion fysiikka</small></span></a>
+  <nav aria-label="Päävalikko"><a class="nav-modules" href="index.html#moduulit">Moduulit</a><a class="nav-study" href="nain-opiskelet.html">Näin opiskelet</a><a class="nav-reading" href="lukuvinkit.html">Kirjavinkit</a><a class="nav-booklets" href="vihkot.html">Vihkot</a><details class="lang-menu"><summary><span class="visually-hidden">Kieli: </span><span class="lang-current">Suomi</span></summary><ul class="lang-list" aria-label="Valitse kieli"><li><a class="lang" href="en/ahjo-arduino.html" hreflang="en" lang="en">English</a></li><li><a class="lang" href="fi-easy/ahjo-arduino.html" hreflang="fi" lang="fi">Selkeä suomi</a></li></ul></details></nav>
+</header>
+<nav class="crumbs" aria-label="Polku"><a href="index.html">Ruukkilabra</a> › <a href="ahjo.html">Ahjo Makerspace</a> › <a href="ahjo-materiaalit.html">Materiaalipankki</a> › Arduinon ensiaskeleet</nav>
+<main class="reading ahjo-page"><header class="ahjo-hero"><img class="ahjo-logo" src="brand/ahjo-makerspace-logo.svg" alt="Ahjo – Kiviruukin Makerspace" width="88" height="88"><div class="ahjo-hero-text"><p class="ahjo-eyebrow">Kiviruukin lukion makerspace</p><h1>Arduinon ensiaskeleet</h1><p class="ahjo-lead">Ensimmäinen kytkentä ja ohjelma Arduino-perussarjalla.</p></div></header><nav class="ahjo-nav" aria-label="Ahjo Makerspace"><ul><li><a href="ahjo.html">Ahjo</a></li><li><a href="ahjo.html#opintojaksot">Opintojaksot</a></li><li><a href="ahjo-materiaalit.html" aria-current="page">Materiaalipankki</a></li><li><a href="ahjo.html#laitteisto">Laitteisto</a></li><li><a href="ahjo-turvallisuus.html">Turvallisuus</a></li></ul></nav><p class="ahjo-draft" role="note"><svg class="ahjo-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M6 3h11a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H6zM9 3v18M12 8h3.5M12 12h3.5"/></svg><span><strong>Luonnos.</strong> Tätä ohjetta ei ole vielä kokeiltu Ahjon omilla laitteilla. Laitemallit, asetukset ja ajat tarkentuvat, kun laitteet on hankittu. Noudata aina opettajan antamia ohjeita ja laitekohtaista perehdytystä.</span></p><article class="ahjo-guide"><h2>Haaste</h2>
+<p>Saa LED vilkkumaan Arduinolla niin, että tiedät, miksi se vilkkuu. Kytket LEDin ja etuvastuksen koekytkentälevylle, mitoitat vastuksen itse, kirjoitat ohjelman ja mittaat lopuksi, kulkeeko piirissä se virta, jonka laskit. Valmis työ on ensimmäinen palikka monelle Ahjon projektille: sama kytkentä ohjaa myöhemmin merkkivaloja, summereita ja moottorinohjaimia.</p>
+<p>Työ kestää noin 75 minuuttia. Jatkotehtävään tarvitset toisen kerran.</p>
+<h2>Oppimistavoitteet</h2>
+<p>Työn jälkeen osaat</p>
+<ul>
+<li>kytkeä LEDin ja etuvastuksen koekytkentälevylle oikein päin ja selittää, miksi levyn pystyrivit yhdistävät komponentit</li>
+<li>laskea etuvastuksen resistanssin Ohmin laista ja valita lähimmän sopivan vakioarvon</li>
+<li>kirjoittaa, tallentaa ja ladata Arduino-ohjelman, jossa on <code>setup()</code>, <code>loop()</code>, <code>pinMode()</code>, <code>digitalWrite()</code> ja <code>delay()</code></li>
+<li>mitata virran yleismittarilla ja verrata mittausta laskettuun arvoon</li>
+<li>etsiä vian järjestelmällisesti oire kerrallaan.</li>
+</ul>
+<h2>Lähtötaso ja ennakkotaidot</h2>
+<p>Et tarvitse aiempaa ohjelmointikokemusta. Sinun on hyvä tietää, mitä jännite, virta ja resistanssi tarkoittavat. Kertaa tarvittaessa luvut <a href="fy6-1.html">Virtapiiri, sähkövirta ja jännite</a> ja <a href="fy6-3.html">Resistanssi ja Ohmin laki</a>. LEDin toiminnasta kerrotaan tarkemmin luvussa <a href="fy6-14.html">Puolijohteet, diodi, LED ja aurinkokenno</a>.</p>
+<h2>Laitteet ja materiaalit</h2>
+<p>Ahjon perussarjoissa käytetään Arduino Uno -levyä. Laitteisto on vasta hankinnassa, joten muiden tarvikkeiden mallit tarkentuvat myöhemmin.</p>
+<table>
+<thead>
+<tr>
+<th>Tarvike</th>
+<th>Määrä</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Arduino Uno ja USB-kaapeli</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Koe­kyt­ken­tä­le­vy (vä­hin­tään puolikas)</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Punainen LED, hal­kai­si­ja $5\,\text{mm}$</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Vastus $330\,\Omega$ (vä­ri­ren­kaat oranssi, oranssi, ruskea, kulta)</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Kyt­ken­tä­joh­ti­mia (uros–uros)</td>
+<td>2–4</td>
+</tr>
+<tr>
+<td>Yleis­mit­ta­ri</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Pai­no­nap­pi ja toinen LED (jat­ko­teh­tä­vä)</td>
+<td>1 + 1</td>
+</tr>
+<tr>
+<td>Tie­to­ko­ne, jossa on Arduino IDE</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h2>Turvallisuus ja perehdytys</h2>
+<p>Ahjon turvallisuusohjeet ovat vielä valmisteilla. Katso aihe <a href="ahjo-turvallisuus.html#elektroniikka">Juottaminen ja elektroniikkatyöskentely</a>, ja noudata opettajan antamaa perehdytystä.</p>
+<p>Tässä työssä käytetään vain USB-väylän $5\,\text{V}$:n jännitettä, joten sähköiskun vaaraa ei ole. Laitteita voi silti rikkoa:</p>
+<ul>
+<li>Tee ja muuta kytkentöjä vain, kun USB-kaapeli on irti.</li>
+<li>Älä koskaan kytke LEDiä ilman etuvastusta. Liian suuri virta polttaa LEDin ja voi vaurioittaa levyn pinniä.</li>
+<li>Älä yhdistä $5\,\text{V}$:n tai $3{,}3\,\text{V}$:n pinniä suoraan GND-pinniin. Se on oikosulku.</li>
+<li>Jos jokin komponentti kuumenee tai haisee, irrota USB-kaapeli heti ja kerro opettajalle.</li>
+</ul>
+<p>Verkkovirran turvallisuudesta kerrotaan luvussa <a href="fy6-15.html">Sähköturvallisuus kotona ja työssä</a>.</p>
+<h2>Työvaiheet</h2>
+<ol>
+<li>Mitoita etuvastus ennen kytkentää. Arduinon pinni antaa tilassa HIGH jännitteen $U = 5{,}0\,\text{V}$. Punaisen LEDin yli jää noin $U_\text{LED} = 2{,}0\,\text{V}$, ja sopiva virta on $I = 10\,\text{mA}$. Vastuksen yli jää loput jännitteestä, joten
+   $$\begin{aligned}R &= \frac{U - U_\text{LED}}{I}\\ &= \frac{5{,}0\,\text{V} - 2{,}0\,\text{V}}{0{,}010\,\text{A}}\\ &= 300\,\Omega.\end{aligned}$$
+   Lähin yleinen vakioarvo, joka ei ole tätä pienempi, on $330\,\Omega$. Suurempi resistanssi pienentää virtaa, joten LED on turvassa.</li>
+<li>Laske, mikä virta $330\,\Omega$:n vastuksella kulkee: $I = \dfrac{3{,}0\,\text{V}}{330\,\Omega} \approx 9{,}1\,\text{mA}$. Kirjoita arvo projektipäiväkirjaasi. Tarkistat sen mittaamalla vaiheessa 9.</li>
+<li>Tunnista LEDin jalat. Pitkä jalka on anodi ja lyhyt jalka katodi. Katodin puolella LEDin reunassa on usein myös tasainen kohta.</li>
+<li>Kytke USB-kaapeli irti. Aseta LED koekytkentälevylle niin, että katodi on reiässä a5 ja anodi reiässä a6.</li>
+<li>Aseta vastus reikien b6 ja b10 väliin. Vastuksella ei ole suuntaa.</li>
+<li>Vie johdin Arduinon pinnistä 13 reikään e10 ja toinen johdin GND-pinnistä reikään e5. Vertaa kytkentää kuvaan ja kytkentäkaavioon.</li>
+<li>Avaa Arduino IDE, kirjoita alla oleva ohjelma ja tallenna se. Valitse valikosta oikea levy ja portti, ja lataa ohjelma painikkeella Upload.</li>
+<li>Kytke USB-kaapeli. LEDin pitäisi palaa sekunnin ja olla sekunnin pimeänä vuorotellen.</li>
+<li>Mittaa virta. Irrota USB-kaapeli, ota pinnin 13 johdin pois reiästä e10 ja kytke yleismittari sarjaan sen tilalle: mittarin toinen johto pinniin 13 ja toinen reikään e10. Valitse virran mittausalue $\text{mA}$. Kytke USB ja lue arvo, kun LED palaa. Mittaustavasta kerrotaan lisää luvussa <a href="fy6-2.html">Mittaukset virtapiirissä</a>.</li>
+</ol>
+<h2>Kuvat ja esimerkkikoodi</h2>
+<p>Kytkentäkaaviossa näkyy, missä järjestyksessä virta kulkee pinnistä 13 vastuksen ja LEDin kautta maahan.</p>
+<div class="fig ahjo-fig"><svg viewBox="0 0 600 300" role="img" aria-label="Kytkentäkaavio, ei mittakaavassa. Vasemmalla on Arduino-levy laatikkona, jonka oikeassa reunassa on kaksi liitäntää: ylempänä digitaalipinni D13 ja alempana maa GND. Pinnistä D13 johdin vie 330 ohmin etuvastukseen R ja siitä punaiseen LEDiin, jonka kolmio osoittaa alaspäin: anodi on ylhäällä vastuksen puolella ja katodi eli poikkiviiva alhaalla. LEDin katodilta johdin palaa Arduinon GND-liitäntään. Violetit nuolet näyttävät virran I kulkevan pinnistä D13 vastuksen ja LEDin kautta maahan, kun pinni on tilassa HIGH." style="max-width:100%;font-size:24px">
+  <rect x="30" y="46" width="160" height="208" rx="12" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="66" y="61" width="88" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$\text{Arduino}$</div></foreignObject>
+  <rect x="182" y="102" width="16" height="16" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="130" y="97" width="42" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$\text{D13}$</div></foreignObject>
+  <rect x="182" y="206" width="16" height="16" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="130" y="201" width="42" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$\text{GND}$</div></foreignObject>
+  <polyline points="198,110 272,110" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="272" y="98" width="60" height="24" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <foreignObject x="262" y="131" width="80" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$R = 330\ \Omega$</div></foreignObject>
+  <polyline points="332,110 470,110 470,148" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M454,148 L486,148 L470,176 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="453" y1="176" x2="487" y2="176" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="492" y1="153" x2="504" y2="143" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M510,138 L505.5,147 L500.5,140.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="492" y1="165" x2="504" y2="155" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M510,150 L505.5,159 L500.5,152.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <polyline points="470,176 470,214 198,214" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <foreignObject x="384" y="134" width="60" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:20px">$\text{anodi}$</div></foreignObject>
+  <foreignObject x="374" y="168" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:20px">$\text{katodi}$</div></foreignObject>
+  <foreignObject x="500" y="181" width="42" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$\text{LED}$</div></foreignObject>
+  <path d="M246,110 L226,102 L226,118 Z" fill="#7048e8" stroke-linejoin="round"/>
+  <foreignObject x="224" y="69.5" width="24" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#7048e8">$I$</div></foreignObject>
+  <path d="M470,212 L462,192 L478,192 Z" fill="#7048e8" stroke-linejoin="round"/>
+  <path d="M320,214 L340,206 L340,222 Z" fill="#7048e8" stroke-linejoin="round"/>
+</svg></div>
+<p>Koekytkentälevyllä saman pystyrivin viisi reikää on yhdistetty toisiinsa levyn sisällä. Kuvassa keltaisella merkityt pystyrivit 5, 6 ja 10 kuljettavat virran komponentilta toiselle.</p>
+<div class="fig ahjo-fig"><svg viewBox="0 0 600 392" role="img" aria-label="Piirros koekytkentälevystä ylhäältä päin, ei mittakaavassa. Levyssä on viisi vaakariviä a–e ja pystyrivit 1–12; saman pystyrivin viisi reikää on kytketty levyn sisällä yhteen. Pystyrivit 5, 6 ja 10 on merkitty keltaisella. Punaisen LEDin lyhyt jalka eli katodi on reiässä a5 ja pitkä jalka eli anodi reiässä a6. 330 ohmin vastus (värirenkaat oranssi, oranssi, ruskea, kulta) on reikien b6 ja b10 välissä. Arduinon pinnistä 13 tuleva sininen johdin on reiässä e10, ja GND-liitännästä tuleva musta johdin reiässä e5. Virta kulkee siis pinnistä 13 pystyriviä 10 pitkin vastukseen, pystyriviä 6 pitkin LEDin anodille ja katodilta pystyriviä 5 pitkin maahan." style="max-width:100%;font-size:24px">
+  <rect x="40" y="48" width="520" height="240" rx="10" fill="#f4f1ea" stroke="#c9c2b2" stroke-width="2"/>
+  <rect x="226" y="96" width="28" height="148" rx="7" fill="#fff1b8"/>
+  <rect x="266" y="96" width="28" height="148" rx="7" fill="#fff1b8"/>
+  <rect x="426" y="96" width="28" height="148" rx="7" fill="#fff1b8"/>
+  <foreignObject x="65" y="255" width="30" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:18px;color:#6b7480">$1$</div></foreignObject>
+  <rect x="75.5" y="105.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="75.5" y="135.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="75.5" y="165.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="75.5" y="195.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="75.5" y="225.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <foreignObject x="105" y="255" width="30" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:18px;color:#6b7480">$2$</div></foreignObject>
+  <rect x="115.5" y="105.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="115.5" y="135.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="115.5" y="165.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="115.5" y="195.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="115.5" y="225.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <foreignObject x="145" y="255" width="30" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:18px;color:#6b7480">$3$</div></foreignObject>
+  <rect x="155.5" y="105.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="155.5" y="135.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="155.5" y="165.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="155.5" y="195.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="155.5" y="225.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <foreignObject x="185" y="255" width="30" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:18px;color:#6b7480">$4$</div></foreignObject>
+  <rect x="195.5" y="105.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="195.5" y="135.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="195.5" y="165.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="195.5" y="195.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="195.5" y="225.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <foreignObject x="225" y="255" width="30" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:18px;color:#6b7480">$5$</div></foreignObject>
+  <rect x="235.5" y="105.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="235.5" y="135.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="235.5" y="165.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="235.5" y="195.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="235.5" y="225.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <foreignObject x="265" y="255" width="30" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:18px;color:#6b7480">$6$</div></foreignObject>
+  <rect x="275.5" y="105.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="275.5" y="135.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="275.5" y="165.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="275.5" y="195.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="275.5" y="225.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <foreignObject x="305" y="255" width="30" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:18px;color:#6b7480">$7$</div></foreignObject>
+  <rect x="315.5" y="105.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="315.5" y="135.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="315.5" y="165.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="315.5" y="195.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="315.5" y="225.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <foreignObject x="345" y="255" width="30" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:18px;color:#6b7480">$8$</div></foreignObject>
+  <rect x="355.5" y="105.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="355.5" y="135.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="355.5" y="165.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="355.5" y="195.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="355.5" y="225.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <foreignObject x="385" y="255" width="30" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:18px;color:#6b7480">$9$</div></foreignObject>
+  <rect x="395.5" y="105.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="395.5" y="135.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="395.5" y="165.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="395.5" y="195.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="395.5" y="225.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <foreignObject x="425" y="255" width="30" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:18px;color:#6b7480">$10$</div></foreignObject>
+  <rect x="435.5" y="105.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="435.5" y="135.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="435.5" y="165.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="435.5" y="195.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="435.5" y="225.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <foreignObject x="465" y="255" width="30" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:18px;color:#6b7480">$11$</div></foreignObject>
+  <rect x="475.5" y="105.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="475.5" y="135.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="475.5" y="165.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="475.5" y="195.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="475.5" y="225.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <foreignObject x="505" y="255" width="30" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:18px;color:#6b7480">$12$</div></foreignObject>
+  <rect x="515.5" y="105.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="515.5" y="135.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="515.5" y="165.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="515.5" y="195.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <rect x="515.5" y="225.5" width="9" height="9" rx="1.5" fill="#4a4f57"/>
+  <foreignObject x="46" y="99" width="24" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:18px;color:#6b7480">$\text{a}$</div></foreignObject>
+  <foreignObject x="46" y="129" width="24" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:18px;color:#6b7480">$\text{b}$</div></foreignObject>
+  <foreignObject x="46" y="159" width="24" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:18px;color:#6b7480">$\text{c}$</div></foreignObject>
+  <foreignObject x="46" y="189" width="24" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:18px;color:#6b7480">$\text{d}$</div></foreignObject>
+  <foreignObject x="46" y="219" width="24" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:18px;color:#6b7480">$\text{e}$</div></foreignObject>
+  <line x1="252" y1="88" x2="240" y2="110" stroke="#868e96" stroke-width="3" stroke-linecap="round"/>
+  <line x1="268" y1="88" x2="280" y2="110" stroke="#868e96" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="260" cy="78" r="17" fill="#c92a2a" stroke="#1f2933" stroke-width="2"/>
+  <line x1="244" y1="70" x2="244" y2="86" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="162" y="54" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:20px">$\text{katodi}$</div></foreignObject>
+  <foreignObject x="288" y="54" width="60" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\text{anodi}$</div></foreignObject>
+  <line x1="280" y1="140" x2="324" y2="140" stroke="#868e96" stroke-width="3" stroke-linecap="round"/>
+  <line x1="396" y1="140" x2="440" y2="140" stroke="#868e96" stroke-width="3" stroke-linecap="round"/>
+  <rect x="324" y="130" width="72" height="20" rx="9" fill="#e6d3a8" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="335" y="130" width="6" height="20" fill="#e8590c"/>
+  <rect x="347" y="130" width="6" height="20" fill="#e8590c"/>
+  <rect x="359" y="130" width="6" height="20" fill="#7a3e12"/>
+  <rect x="379" y="130" width="6" height="20" fill="#c9a227"/>
+  <foreignObject x="483" y="10" width="74" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$R = 330\ \Omega$</div></foreignObject>
+  <line x1="486" y1="34" x2="398" y2="132" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <polyline points="440,230 460,250 460,338" fill="none" stroke="#1971c2" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="440" cy="230" r="5" fill="#1971c2"/>
+  <polyline points="240,230 220,250 220,338" fill="none" stroke="#1f2933" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="240" cy="230" r="5" fill="#1f2933"/>
+  <rect x="150" y="330" width="380" height="50" rx="8" fill="#2b6f88" stroke="#1f2933" stroke-width="2"/>
+  <rect x="190" y="336" width="300" height="14" rx="2" fill="#1f2933"/>
+  <rect x="197" y="340" width="6" height="6" fill="#8a96a3"/>
+  <rect x="217" y="340" width="6" height="6" fill="#8a96a3"/>
+  <rect x="237" y="340" width="6" height="6" fill="#8a96a3"/>
+  <rect x="257" y="340" width="6" height="6" fill="#8a96a3"/>
+  <rect x="277" y="340" width="6" height="6" fill="#8a96a3"/>
+  <rect x="297" y="340" width="6" height="6" fill="#8a96a3"/>
+  <rect x="317" y="340" width="6" height="6" fill="#8a96a3"/>
+  <rect x="337" y="340" width="6" height="6" fill="#8a96a3"/>
+  <rect x="357" y="340" width="6" height="6" fill="#8a96a3"/>
+  <rect x="377" y="340" width="6" height="6" fill="#8a96a3"/>
+  <rect x="397" y="340" width="6" height="6" fill="#8a96a3"/>
+  <rect x="417" y="340" width="6" height="6" fill="#8a96a3"/>
+  <rect x="437" y="340" width="6" height="6" fill="#8a96a3"/>
+  <rect x="457" y="340" width="6" height="6" fill="#8a96a3"/>
+  <rect x="477" y="340" width="6" height="6" fill="#8a96a3"/>
+  <foreignObject x="202" y="355" width="36" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:18px;color:#ffffff">$\text{GND}$</div></foreignObject>
+  <foreignObject x="446.5" y="355" width="27" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:18px;color:#ffffff">$\text{13}$</div></foreignObject>
+  <foreignObject x="303" y="355" width="74" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:18px;color:#ffffff">$\text{Arduino}$</div></foreignObject>
+</svg></div>
+<p>Esimerkkiohjelma. Kaksi kauttaviivaa aloittaa kommentin, jota Arduino ei suorita.</p>
+<pre><code class="language-cpp">// Vilkkuva LED: pinni 13 -&gt; 330 ohmin vastus -&gt; LED -&gt; GND
+const int LED_PIN = 13;        // pinni, johon vastus on kytketty
+const int ON_MS = 1000;        // kuinka kauan LED palaa (ms)
+const int OFF_MS = 1000;       // kuinka kauan LED on pimeänä (ms)
+
+void setup() {
+  pinMode(LED_PIN, OUTPUT);    // pinni toimii lähtönä
+}
+
+void loop() {
+  digitalWrite(LED_PIN, HIGH); // pinniin 5 V: LED syttyy
+  delay(ON_MS);
+  digitalWrite(LED_PIN, LOW);  // pinniin 0 V: LED sammuu
+  delay(OFF_MS);
+}
+</code></pre>
+<p><code>setup()</code> suoritetaan kerran, kun levy käynnistyy. <code>loop()</code> toistuu niin kauan kuin levyssä on virta.</p>
+<h2>Testaa ja mittaa</h2>
+<ul>
+<li>Muuta vakioiden <code>ON_MS</code> ja <code>OFF_MS</code> arvoja. Millä vilkkumistaajuudella et enää erota vilkkumista? Kirjoita havainto ja käyttämäsi arvot muistiin.</li>
+<li>Vertaa mittaamaasi virtaa vaiheessa 2 laskemaasi arvoon $9{,}1\,\text{mA}$. Laske suhteellinen ero. Mieti, mistä ero voi johtua: vastuksen toleranssi on tyypillisesti $\pm 5\,\%$, LEDin jännite ei ole tarkalleen $2{,}0\,\text{V}$, eikä pinnin jännite ole tarkalleen $5{,}0\,\text{V}$.</li>
+<li>Mittaa jännite LEDin ja vastuksen yli erikseen. Onko niiden summa sama kuin pinnin ja GND:n välinen jännite?</li>
+</ul>
+<h2>Jos jokin ei toimi</h2>
+<table>
+<thead>
+<tr>
+<th>Oire</th>
+<th>To­den­nä­köi­nen syy</th>
+<th>Korjaus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LED ei syty lainkaan</td>
+<td>LED on väärin päin</td>
+<td>Käännä LED: pitkä jalka reikään a6.</td>
+</tr>
+<tr>
+<td>LED ei syty lainkaan</td>
+<td>Johdin on väärällä pys­ty­ri­vil­lä</td>
+<td>Vertaa jokaista reikää kuvaan.</td>
+</tr>
+<tr>
+<td>Ohjelman lataus ei onnistu</td>
+<td>Väärä levy tai portti</td>
+<td>Tarkista Tools-valikko. Kokeile toista USB-kaapelia, sillä osa kaa­pe­leis­ta lataa vain virtaa.</td>
+</tr>
+<tr>
+<td>Portti ei näy lainkaan</td>
+<td>Kaapeli tai USB-portti ei toimi</td>
+<td>Kokeile toista USB-porttia ja kaapelia. Jos portti ei vie­lä­kään näy, kerro opet­ta­jal­le.</td>
+</tr>
+<tr>
+<td>LED palaa koko ajan</td>
+<td>Ohjelma ei ole la­tau­tu­nut tai johdin on väärässä pinnissä</td>
+<td>Lataa ohjelma uu­del­leen ja tarkista, että johdin on pinnissä 13.</td>
+</tr>
+<tr>
+<td>LED palaa him­meäs­ti</td>
+<td>Liian suuri vastus</td>
+<td>Tarkista vä­ri­ren­kaat: $330\,\Omega$ on oranssi, oranssi, ruskea.</td>
+</tr>
+<tr>
+<td>Mittari näyttää nollaa</td>
+<td>Mittari on rinnan eikä sarjassa, tai sulake on palanut</td>
+<td>Kytke mittari virran kul­ku­rei­til­le ja tarkista mit­tau­sa­lue.</td>
+</tr>
+</tbody>
+</table>
+<h2>Jatkotehtävä</h2>
+<ol>
+<li>SOS-merkki. Muuta ohjelmaa niin, että LED vilkuttaa morsemerkin SOS: kolme lyhyttä, kolme pitkää ja kolme lyhyttä välähdystä. Kirjoita lyhyelle ja pitkälle välähdykselle omat aliohjelmat.</li>
+<li>Painonappi. Kytke painonappi pinnin 2 ja GND:n väliin, ja ota käyttöön levyn sisäinen ylösvetovastus komennolla <code>pinMode(2, INPUT_PULLUP)</code>. Nyt <code>digitalRead(2)</code> antaa arvon LOW, kun nappi on painettuna. Tee ohjelma, jossa LED syttyy vain napin ollessa painettuna.</li>
+<li>Kaksi LEDiä. Lisää toinen LED ja vastus pinniin 12 ja tee liikennevalon kaltainen vuorottelu. Laske, kuinka suuri virta Arduinosta otetaan yhteensä.</li>
+</ol>
+<h2>Dokumentoi</h2>
+<p>Kirjaa projektipäiväkirjaan</p>
+<ul>
+<li>valokuva valmiista kytkennästä ja oma piirros kytkentäkaaviosta</li>
+<li>vastuksen laskusi ja valitsemasi vakioarvo</li>
+<li>mitattu virta, laskettu virta ja niiden ero</li>
+<li>ohjelmakoodi tai linkki siihen sekä yksi asia, jota muutit, ja mitä siitä seurasi</li>
+<li>yksi vika, joka sinulle tuli vastaan, ja miten löysit sen. Epäonnistuminen on hyvää dokumentoitavaa, kun kerrot, mitä siitä opit.</li>
+</ul>
+<h2>Opettajalle: valmistelu</h2>
+<ul>
+<li>Tämä on luonnos: ohjetta ei ole vielä kokeiltu Ahjon omilla laitteilla. Levyksi on valittu Arduino Uno. Tarkista ennen ensimmäistä kertaa, että Arduino IDE on asennettu koulun koneisiin ja tunnistaa levyn.</li>
+<li>Varaa yksi levy, kaapeli ja komponenttisarja paria kohti. Laita varalle ylimääräisiä LEDejä ja vastuksia, koska niitä katoaa ja rikkoutuu.</li>
+<li>Tarkista, että yleismittarien virta-alueen sulakkeet ovat ehjät.</li>
+<li>Tavallisin pysähdyskohta on ohjelman lataaminen. Kokeile lataus jokaisella koneella etukäteen.</li>
+<li>Työ sopii Ahjo 1 -opintojakson elektroniikkajaksoon sekä kilparobotiikan alkuun. Fysiikan teoriaan voit viitata luvuissa FY6.1–FY6.3 ja FY6.14.</li>
+<li>Ohjeen rakenne on saanut vaikutteita SparkFunin kokeiluoppaasta (SIK) ja Arduinon omista esimerkeistä. Teksti, kuvat ja koodi on kirjoitettu Ruukkilabraan.</li>
+</ul></article></main>
+<footer class="bottom"><span>Ruukkilabra</span><a href="tyokalut.html">Työkalut</a><a href="tietosuoja.html">Tietosuoja</a><span class="copyright">© 2026 Lauri Hellsten</span></footer>
+</div>
+<script src="vendor/katex/katex.min.js"></script><script src="vendor/katex/contrib/auto-render.min.js" onload="renderMathInElement(document.querySelector('main'),{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+</body></html>

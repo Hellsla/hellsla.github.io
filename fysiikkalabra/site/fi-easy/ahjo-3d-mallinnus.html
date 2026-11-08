@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>3D-mallinnuksen alkeet — Ruukkilabra</title>
+<meta name="description" content="Ensimmäinen tulostettava kappale mallinnusohjelmalla.">
+<link rel="canonical" href="https://ruukkilab.fi/fi-easy/ahjo-3d-mallinnus.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ruukkilabra">
+<meta property="og:locale" content="fi_FI">
+<meta property="og:title" content="3D-mallinnuksen alkeet">
+<meta property="og:description" content="Ensimmäinen tulostettava kappale mallinnusohjelmalla.">
+<meta property="og:url" content="https://ruukkilab.fi/fi-easy/ahjo-3d-mallinnus.html">
+<meta name="theme-color" content="#f7f3ec">
+<link rel="icon" href="../brand/ruukkilabra-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="../brand/ruukkilabra-symboli.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../brand/ruukkilabra-180.png">
+<link rel="stylesheet" href="../vendor/katex/katex.min.css">
+<link rel="stylesheet" href="../site.css?v=776130e8">
+</head><body>
+<div class="page">
+<header class="top">
+  <a class="brand" href="index.html" aria-label="Ruukkilabra, etusivu"><img class="brand-mark" src="../brand/ruukkilabra-symboli.svg" alt="" width="40" height="40"><span class="brand-name">Ruukkilabra<small>Lukion fysiikka</small></span></a>
+  <nav aria-label="Päävalikko"><a class="nav-modules" href="index.html#moduulit">Moduulit</a><a class="nav-study" href="nain-opiskelet.html">Näin opiskelet</a><a class="nav-reading" href="lukuvinkit.html">Kirjavinkit</a><a class="nav-booklets" href="vihkot.html">Vihkot</a><details class="lang-menu"><summary><span class="visually-hidden">Kieli: </span><span class="lang-current">Selkeä suomi</span></summary><ul class="lang-list" aria-label="Valitse kieli"><li><a class="lang" href="../ahjo-3d-mallinnus.html" hreflang="fi" lang="fi">Suomi</a></li><li><a class="lang" href="../en/ahjo-3d-mallinnus.html" hreflang="en" lang="en">English</a></li></ul></details></nav>
+</header>
+<nav class="crumbs" aria-label="Polku"><a href="index.html">Ruukkilabra</a> › <a href="ahjo.html">Ahjo Makerspace</a> › <a href="ahjo-materiaalit.html">Materiaalipankki</a> › 3D-mallinnuksen alkeet</nav>
+<main class="reading ahjo-page"><header class="ahjo-hero"><img class="ahjo-logo" src="../brand/ahjo-makerspace-logo.svg" alt="Ahjo – Kiviruukin Makerspace" width="88" height="88"><div class="ahjo-hero-text"><p class="ahjo-eyebrow">Kiviruukin lukion makerspace</p><h1>3D-mallinnuksen alkeet</h1><p class="ahjo-lead">Ensimmäinen tulostettava kappale mallinnusohjelmalla.</p></div></header><nav class="ahjo-nav" aria-label="Ahjo Makerspace"><ul><li><a href="ahjo.html">Ahjo</a></li><li><a href="ahjo.html#opintojaksot">Opintojaksot</a></li><li><a href="ahjo-materiaalit.html" aria-current="page">Materiaalipankki</a></li><li><a href="ahjo.html#laitteisto">Laitteisto</a></li><li><a href="ahjo-turvallisuus.html">Turvallisuus</a></li></ul></nav><p class="ahjo-draft" role="note"><svg class="ahjo-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M6 3h11a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H6zM9 3v18M12 8h3.5M12 12h3.5"/></svg><span><strong>Luonnos.</strong> Tätä ohjetta ei ole vielä kokeiltu Ahjon omilla laitteilla. Laitemallit, asetukset ja ajat tarkentuvat, kun laitteet on hankittu. Noudata aina opettajan antamia ohjeita ja laitekohtaista perehdytystä.</span></p><article class="ahjo-guide"><h2>Haaste</h2>
+<p>Suunnittele pidike, joka kiinnittyy pöydän reunaan ilman ruuveja ja pitää laturin johdon paikallaan. Pidike on onnistunut, jos se menee pöydän reunaan käsin painamalla, pysyy paikallaan eikä naarmuta pöytää. Tämä onnistuu vain, jos mittaat tarkasti ja jätät mittoihin oikean välyksen.</p>
+<p>Työ kestää yhden noin 75 minuutin kerran. Malli tulostetaan <a href="ahjo-3d-tulostus.html">3D-tulostuksen aloitusohjeen</a> mukaan.</p>
+<h2>Oppimistavoitteet</h2>
+<p>Työn jälkeen osaat</p>
+<ul>
+<li>mitata kappaleen työntömitalla ja kirjata mitat yksiköineen</li>
+<li>rakentaa mallin perusmuodoista lisäämällä ja poistamalla kappaleita</li>
+<li>selittää, mitä välys tarkoittaa ja miksi tulostettavan osan mitat eivät voi olla täsmälleen samat kuin vastakappaleen</li>
+<li>tallentaa mallin tulostettavaan muotoon (STL tai 3MF)</li>
+<li>arvioida kappaleen tilavuuden ja massan ennen tulostamista.</li>
+</ul>
+<h2>Lähtötaso ja ennakkotaidot</h2>
+<p>Et tarvitse aiempaa kokemusta 3D-mallinnuksesta. Tarvitset Tinkercad-tunnukset, jotka opettaja antaa tai joilla kirjaudut koulun ohjeen mukaan. Pinta-alan ja tilavuuden laskeminen sekä tiheyden käsite (luku <a href="fy1-7.html">Tiheys</a>) auttavat massan arvioinnissa.</p>
+<h2>Laitteet ja materiaalit</h2>
+<p>Mallinnetaan Tinkercadilla, joka toimii selaimessa eikä vaadi asennusta. Kun perusteet ovat hallussa, jatketaan Onshapella, joka sekin toimii selaimessa ja jossa mitat voi antaa muuttujina (jatkotehtävä 2). Fusion on vaihtoehto niille, jotka haluavat asennettavan ohjelman. Ahjon tietokoneet ovat vasta hankinnassa.</p>
+<table>
+<thead>
+<tr>
+<th>Tarvike</th>
+<th>Määrä</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tie­to­ko­ne ja hiiri, jossa on rul­la­pai­ni­ke</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Tin­ker­cad-tunnus (jatkossa Onshape-tunnus)</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Työn­tö­mit­ta</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Ruu­tu­pa­pe­ria ja kynä luon­nok­seen</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Pöytä tai levy, johon pidike tehdään</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h2>Turvallisuus ja perehdytys</h2>
+<p>Mallintaminen on näyttötyötä. Pidä tauko noin puolen tunnin välein ja säädä tuoli ja näyttö sopivalle korkeudelle. Työntömitan kärjet ovat teräviä, joten käsittele sitä varoen. Ahjon turvallisuusohjeet ovat valmisteilla, ja tulostamisen turvallisuudesta kerrotaan aiheessa <a href="ahjo-turvallisuus.html#3d-tulostus">3D-tulostuksen turvallisuus</a>.</p>
+<h2>Työvaiheet</h2>
+<ol>
+<li>Mittaa pöytälevyn paksuus työntömitalla kolmesta eri kohdasta ja laske keskiarvo. Kirjaa tulos kymmenesosamillimetrin tarkkuudella, esimerkiksi $t = 18{,}0\,\text{mm}$.</li>
+<li>Valitse välys $v$. Kun kaksi kappaletta liitetään toisiinsa, väliin tarvitaan rako, koska tulostin ei tee mittoja täsmälleen oikein ja tulostettu muovi on usein hieman suunniteltua leveämpää. Kokeile aluksi arvoa $v = 0{,}4\,\text{mm}$. Jos haluat varmistaa sopivan välyksen, tulosta ensin sovitekoe (jatkotehtävä 1).</li>
+<li>Laske pidikkeen haarojen väli:
+   $$\begin{aligned}a &= t + v\\ &= 18{,}0\,\text{mm} + 0{,}4\,\text{mm}\\ &= 18{,}4\,\text{mm}.\end{aligned}$$</li>
+<li>Piirrä ruutupaperille pidikkeen poikkileikkaus ja merkitse siihen mitat: haarojen pituus $30\,\text{mm}$, seinämän paksuus $4\,\text{mm}$, haarojen väli $a$ ja pidikkeen leveys $20\,\text{mm}$. Kuvassa alla näet, miltä poikkileikkaus näyttää.</li>
+<li>Tee mallinnusohjelmassa umpinainen särmiö, joka on pidikkeen ulkomittojen kokoinen: syvyys $30\,\text{mm}$, korkeus $a + 2 \cdot 4\,\text{mm} = 26{,}4\,\text{mm}$ ja leveys $20\,\text{mm}$.</li>
+<li>Tee toinen särmiö, joka on haarojen välin korkuinen: korkeus $a = 18{,}4\,\text{mm}$, syvyys $30\,\text{mm}$ ja leveys $24\,\text{mm}$. Se on pidikettä leveämpi, jotta se menee varmasti sivujen läpi. Muuta se reiäksi eli poistettavaksi kappaleeksi (Tinkercadissa valitse muodon asetuksista Reikä).</li>
+<li>Aseta reikä niin, että sen alareuna on $4\,\text{mm}$ ensimmäisen särmiön alareunan yläpuolella, se ulottuu $2\,\text{mm}$ kummankin sivun yli ja sen takareunan taakse jää $4\,\text{mm}$ paksu seinämä. Reiän etupää jää silloin pidikkeen ulkopuolelle. Valitse molemmat ja ryhmitä ne (Tinkercadissa Ryhmitä tai Ctrl + G). Nyt sinulla on U-muotoinen pidike.</li>
+<li>Lisää johdolle koukku: pieni lieriö pidikkeen yläpintaan, josta poistetaan johdon paksuinen lieriö ja kapea rako johdon sisään painamista varten. Mittaa johdon halkaisija ja lisää siihenkin välys.</li>
+<li>Pyöristä tai viistä pöydän puoleiset reunat, jos ohjelmassa on siihen työkalu. Terävä reuna naarmuttaa pöytää.</li>
+<li>Tarkista mitat ohjelman mittatyökalulla ja tallenna malli STL- tai 3MF-muodossa. Nimeä tiedosto niin, että siitä näkee tekijän ja version, esimerkiksi <code>pidike_v1_meikalainen.stl</code>.</li>
+</ol>
+<h2>Kuvat ja esimerkkikoodi</h2>
+<p>Useimmissa mallinnusohjelmissa reikä tehdään kappaleena, joka vähennetään toisesta. Reikäkappale kannattaa tehdä hieman pidemmäksi kuin kappale, josta se poistetaan. Silloin reikä menee varmasti läpi eikä pintaan jää ohutta kalvoa.</p>
+<div class="fig ahjo-fig"><svg viewBox="0 0 600 270" role="img" aria-label="Kaaviokuva kolmessa osassa, ei mittakaavassa. Vasemmalla on suorakulmainen särmiö, kappale. Sen jälkeen miinusmerkki ja pystysuora lieriö, joka on piirretty katkoviivalla ja harmaana: se on reikä eli kappale, joka poistetaan. Lieriö on särmiötä korkeampi, jotta reikä menee varmasti läpi. Yhtäsuuruusmerkin jälkeen oikealla on sama särmiö, jonka yläpinnassa näkyy pyöreä läpireikä: reikä on ryhmitetty kappaleen kanssa yhdeksi malliksi." style="max-width:100%;font-size:24px">
+  <path d="M24,120 L64,90 L194,90 L154,120 Z" fill="#e3f0fc" stroke="#1971c2" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M154,120 L194,90 L194,160 L154,190 Z" fill="#a9cdee" stroke="#1971c2" stroke-width="2.5" stroke-linejoin="round"/>
+  <rect x="24" y="120" width="130" height="70" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
+  <foreignObject x="207" y="119.5" width="30" height="41" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:34px">$-$</div></foreignObject>
+  <rect x="274" y="70" width="52" height="128" fill="#f1f3f5"/>
+  <ellipse cx="300" cy="198" rx="26" ry="9" fill="#f1f3f5" stroke="#6b7480" stroke-width="2" stroke-dasharray="6 5"/>
+  <line x1="274" y1="70" x2="274" y2="198" stroke="#6b7480" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <line x1="326" y1="70" x2="326" y2="198" stroke="#6b7480" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <ellipse cx="300" cy="70" rx="26" ry="9" fill="#e9ecef" stroke="#6b7480" stroke-width="2" stroke-dasharray="6 5"/>
+  <foreignObject x="361" y="119.5" width="30" height="41" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:34px">$=$</div></foreignObject>
+  <path d="M414,120 L454,90 L584,90 L544,120 Z" fill="#e3f0fc" stroke="#1971c2" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M544,120 L584,90 L584,160 L544,190 Z" fill="#a9cdee" stroke="#1971c2" stroke-width="2.5" stroke-linejoin="round"/>
+  <rect x="414" y="120" width="130" height="70" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
+  <ellipse cx="499" cy="105" rx="26" ry="9" fill="#495057" stroke="#1971c2" stroke-width="2"/>
+  <foreignObject x="65" y="223" width="88" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$\text{kappale}$</div></foreignObject>
+  <foreignObject x="267.5" y="223" width="65" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$\text{reikä}$</div></foreignObject>
+  <foreignObject x="409" y="223" width="180" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$\text{ryhmitelty malli}$</div></foreignObject>
+</svg></div>
+<p>Pidikkeen poikkileikkaus pöydän reunassa. Välys on piirretty kuvaan liioitellun suureksi.</p>
+<div class="fig ahjo-fig"><svg viewBox="0 0 600 300" role="img" aria-label="Leikkauskuva sivulta, ei mittakaavassa. Vasemmalta tulee vaakasuora pöytälevy, jonka paksuus on t. Pöytälevyn oikean reunan ympärillä on U-muotoinen pidike: sen ylempi haara on levyn päällä, pystyosa levyn reunan takana ja alempi haara levyn alla. Pidikkeen haarojen väli on a, ja se on hieman suurempi kuin levyn paksuus t. Haarojen ja levyn väliin jäävä rako on välys. Kuvassa rako on piirretty paljon todellista suuremmaksi, jotta se näkyy." style="max-width:100%;font-size:24px">
+  <rect x="30" y="132" width="300" height="72" fill="#f1dfb5" stroke="#a97a35" stroke-width="2"/>
+  <path d="M40,150 q60,-6 120,0 t120,0 t50,0" fill="none" stroke="#d9b26a" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M40,168 q60,-6 120,0 t120,0 t50,0" fill="none" stroke="#d9b26a" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M40,186 q60,-6 120,0 t120,0 t50,0" fill="none" stroke="#d9b26a" stroke-width="1.5" stroke-linejoin="round"/>
+  <foreignObject x="77" y="156" width="102" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{pöytälevy}$</span></div></foreignObject>
+  <path d="M226,108 L354,108 L354,228 L226,228 L226,212 L338,212 L338,124 L226,124 Z" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5" stroke-linejoin="round"/>
+  <foreignObject x="251.5" y="75" width="77" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px;color:#1971c2">$\text{pidike}$</div></foreignObject>
+  <line x1="62" y1="168" x2="62" y2="141" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M62,132 L66.5,142 L57.5,142 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="62" y1="168" x2="62" y2="195" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M62,204 L57.5,194 L66.5,194 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="50" y1="132" x2="74" y2="132" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="50" y1="204" x2="74" y2="204" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="24" y="153.5" width="24" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$t$</div></foreignObject>
+  <line x1="338" y1="124" x2="420" y2="124" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
+  <line x1="338" y1="212" x2="420" y2="212" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
+  <line x1="408" y1="168" x2="408" y2="133" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M408,124 L412.5,134 L403.5,134 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="408" y1="168" x2="408" y2="203" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M408,212 L403.5,202 L412.5,202 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="422" y="153.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$a = t + v$</div></foreignObject>
+  <foreignObject x="100" y="88" width="60" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\text{välys}$</div></foreignObject>
+  <line x1="160" y1="106" x2="250" y2="127" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="160" y1="106" x2="250" y2="209" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="146" y="255" width="308" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:18px;color:#6b7480">$\text{rako piirretty liioitellun suureksi}$</div></foreignObject>
+</svg></div>
+<p>Sovitekokeessa samaan kappaleeseen tehdään useita eri kokoisia reikiä. Reikiin kokeillaan tappia, ja näin selviää, mikä välys toimii juuri tällä tulostimella.</p>
+<div class="fig ahjo-fig"><svg viewBox="0 0 600 230" role="img" aria-label="Kaaviokuva ylhäältä, ei mittakaavassa: pitkä kapea koekappale, jossa on rivissä neljä pyöreää reikää. Reikien halkaisijat ovat vasemmalta oikealle 10,0 mm, 10,2 mm, 10,4 mm ja 10,6 mm, ja erot on piirretty todellista suuremmiksi. Jokaisen reiän alle on kirjoitettu sen halkaisija. Reikiin kokeillaan 10 millimetrin tappia, jotta nähdään, mikä reikä on sopivan väljä." style="max-width:100%;font-size:24px">
+  <rect x="36" y="40" width="528" height="96" rx="12" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
+  <circle cx="108" cy="88" r="24" fill="#ffffff" stroke="#1971c2" stroke-width="2.5"/>
+  <foreignObject x="78" y="149" width="60" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$10{,}0$</div></foreignObject>
+  <circle cx="236" cy="88" r="27.2" fill="#ffffff" stroke="#1971c2" stroke-width="2.5"/>
+  <foreignObject x="206" y="149" width="60" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$10{,}2$</div></foreignObject>
+  <circle cx="364" cy="88" r="30.4" fill="#ffffff" stroke="#1971c2" stroke-width="2.5"/>
+  <foreignObject x="334" y="149" width="60" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$10{,}4$</div></foreignObject>
+  <circle cx="492" cy="88" r="33.6" fill="#ffffff" stroke="#1971c2" stroke-width="2.5"/>
+  <foreignObject x="462" y="149" width="60" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$10{,}6$</div></foreignObject>
+  <foreignObject x="195.5" y="190" width="209" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#6b7480">$\text{reiän halkaisija}\ (\text{mm})$</div></foreignObject>
+</svg></div>
+<h2>Testaa ja mittaa</h2>
+<ul>
+<li>Arvioi pidikkeen tilavuus ennen tulostamista. Jaa poikkileikkaus suorakulmioiksi: kaksi haaraa ($30\,\text{mm} \cdot 4\,\text{mm}$) ja niiden välinen seinämä ($18{,}4\,\text{mm} \cdot 4\,\text{mm}$). Kerro poikkileikkauksen pinta-ala pidikkeen leveydellä. Tilavuudeksi tulee noin $6{,}3\,\text{cm}^3$.</li>
+<li>Laske, paljonko umpinainen pidike painaisi PLA-muovista, jonka tiheys on $\rho = 1{,}24\,\text{g/cm}^3$. Vertaa tulosta viipalointiohjelman arvioon, kun tulostat pidikkeen. Miksi ohjelman arvio on pienempi?</li>
+<li>Kun pidike on tulostettu, mittaa sen haarojen väli työntömitalla ja vertaa suunnittelemaasi arvoon $a$. Kirjaa ero muistiin. Se kertoo, kuinka tarkasti tulostin tekee mitat.</li>
+</ul>
+<h2>Jos jokin ei toimi</h2>
+<table>
+<thead>
+<tr>
+<th>Oire</th>
+<th>To­den­nä­köi­nen syy</th>
+<th>Korjaus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reikä ei näy mallissa</td>
+<td>Kap­pa­lei­ta ei ole ryh­mi­tet­ty, tai rei­kä­kap­pa­le ei ole reikä</td>
+<td>Valitse molemmat ja ryhmitä. Tarkista, että pois­tet­ta­va kappale on merkitty reiäksi.</td>
+</tr>
+<tr>
+<td>Reiän pohjaan jää ohut kalvo</td>
+<td>Reikä on täs­mäl­leen yhtä pitkä kuin kappale</td>
+<td>Pidennä rei­kä­kap­pa­let­ta niin, että se menee yli mo­lem­mis­ta päistä.</td>
+</tr>
+<tr>
+<td>Pidike ei mahdu pöydän reunaan</td>
+<td>Välys on liian pieni tai paksuus on mitattu väärin</td>
+<td>Mittaa uu­del­leen. Kasvata välystä $0{,}2\,\text{mm}$ ker­ral­laan.</td>
+</tr>
+<tr>
+<td>Pidike on löysä</td>
+<td>Välys on liian suuri</td>
+<td>Pienennä välystä tai tee haa­roi­hin pieni kohouma, joka puristaa levyä.</td>
+</tr>
+<tr>
+<td>Malli on väärän kokoinen tu­los­tu­soh­jel­mas­sa</td>
+<td>Yksikkö on vaih­tu­nut tal­len­nuk­ses­sa</td>
+<td>Tarkista, että oh­jel­mas­sa on käytössä mil­li­met­rit.</td>
+</tr>
+</tbody>
+</table>
+<h2>Jatkotehtävä</h2>
+<ol>
+<li>Sovitekoe. Mallinna koekappale, jossa on neljä reikää halkaisijoiltaan $10{,}0\,\text{mm}$, $10{,}2\,\text{mm}$, $10{,}4\,\text{mm}$ ja $10{,}6\,\text{mm}$, sekä tappi, jonka halkaisija on $10{,}0\,\text{mm}$. Tulosta ne ja kirjaa, mikä reikä on tiukka, mikä sopiva ja mikä löysä.</li>
+<li>Parametrinen malli Onshapessa. Piirrä pidikkeen U-muotoinen poikkileikkaus luonnokseksi ja pursota se $20\,\text{mm}$:n levyiseksi. Tee mitoista muuttujia ($t$, $v$, seinämän paksuus). Silloin saat saman pidikkeen eri pöytiin vaihtamalla yhden luvun.</li>
+<li>Käyttäjälähtöinen suunnittelu. Kysy luokkatoverilta, mitä hän pitäisi pöydän reunassa: kuulokkeita, laukkua vai puhelinta. Muokkaa pidikettä hänen tarpeensa mukaan.</li>
+</ol>
+<h2>Dokumentoi</h2>
+<p>Kirjaa projektipäiväkirjaan</p>
+<ul>
+<li>mitatut paksuudet, niiden keskiarvo ja valitsemasi välys perusteluineen</li>
+<li>luonnoksesi mittoineen ja kuvakaappaus valmiista mallista</li>
+<li>tilavuus- ja massa-arviosi laskuineen</li>
+<li>tulosteen mitattu haarojen väli ja ero suunniteltuun</li>
+<li>mitä muuttaisit seuraavaan versioon ja miksi.</li>
+</ul>
+<h2>Opettajalle: valmistelu</h2>
+<ul>
+<li>Tämä on luonnos: ohjetta ei ole vielä kokeiltu Ahjon koneilla. Ohjelmiksi on valittu Tinkercad aloitukseen ja Onshape jatkoon (molemmat selaimessa, ei asennusta). Tarkista ennen ensimmäistä kertaa kummankin ohjelman käyttöehdot ja ikärajat sekä se, miten opiskelijat kirjautuvat (esimerkiksi Tinkercadin opettajan luokkatila).</li>
+<li>Varaa työntömittoja vähintään yksi kahta opiskelijaa kohti.</li>
+<li>Jos tulostusaikaa on vähän, tulosta sovitekoe valmiiksi yhdellä tulostimella ja anna opiskelijoille sopiva välys valmiina.</li>
+<li>Massan arviointi yhdistää työn fysiikan lukuun <a href="fy1-7.html">Tiheys</a>, ja kappaleen käyttäjälähtöinen kehittäminen johdattaa Ahjo 2 -opintojakson suunnitteluprosessiin.</li>
+<li>Ohjeen rakenne on saanut vaikutteita Prusan opetusmateriaalien projektipohjasta. Teksti ja kuvat on tehty Ruukkilabraan.</li>
+</ul></article></main>
+<footer class="bottom"><span>Ruukkilabra</span><a href="tyokalut.html">Työkalut</a><a href="tietosuoja.html">Tietosuoja</a><span class="copyright">© 2026 Lauri Hellsten</span></footer>
+</div>
+<script src="../vendor/katex/katex.min.js"></script><script src="../vendor/katex/contrib/auto-render.min.js" onload="renderMathInElement(document.querySelector('main'),{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+</body></html>

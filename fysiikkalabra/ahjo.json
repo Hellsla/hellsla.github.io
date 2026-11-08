@@ -73,7 +73,27 @@
     "license_badge": "Makerspace-ajokortti",
     "course_materials_h": "Ahjon materiaalit",
     "course_materials_lead": "Kurssi käyttää Ahjon yhteisiä materiaaleja. Jokaisella materiaalilla on yksi kotipaikka, ja tänne on koottu linkit niihin, joita tällä kurssilla tarvitaan.",
-    "course_materials_none": "Tämän kurssin materiaalit lisätään materiaalipankkiin kurssin valmistuessa."
+    "course_materials_none": "Tämän kurssin materiaalit lisätään materiaalipankkiin kurssin valmistuessa.",
+    "res_draft": "Luonnos",
+    "bank_draft": {
+      "one": "{n} luonnos",
+      "other": "{n} luonnosta"
+    },
+    "guide_draft_note": "Tätä ohjetta ei ole vielä kokeiltu Ahjon omilla laitteilla. Laitemallit, asetukset ja ajat tarkentuvat, kun laitteet on hankittu. Noudata aina opettajan antamia ohjeita ja laitekohtaista perehdytystä.",
+    "guide_sections": [
+      "Haaste",
+      "Oppimistavoitteet",
+      "Lähtötaso ja ennakkotaidot",
+      "Laitteet ja materiaalit",
+      "Turvallisuus ja perehdytys",
+      "Työvaiheet",
+      "Kuvat ja esimerkkikoodi",
+      "Testaa ja mittaa",
+      "Jos jokin ei toimi",
+      "Jatkotehtävä",
+      "Dokumentoi",
+      "Opettajalle: valmistelu"
+    ]
   },
   "courses": [
     {
@@ -364,7 +384,7 @@
       "category": "elektroniikka",
       "title": "Arduinon ensiaskeleet",
       "text": "Ensimmäinen kytkentä ja ohjelma Arduino-perussarjalla.",
-      "status": "planned",
+      "status": "draft",
       "courses": [
         "AHJO1",
         "AHJO2",
@@ -387,7 +407,7 @@
       "category": "3d",
       "title": "3D-mallinnuksen alkeet",
       "text": "Ensimmäinen tulostettava kappale mallinnusohjelmalla.",
-      "status": "planned",
+      "status": "draft",
       "courses": [
         "AHJO1",
         "AHJO2"
@@ -401,7 +421,7 @@
       "category": "3d",
       "title": "3D-tulostuksen aloitusohje",
       "text": "Mallista tulosteeksi: viipalointi, tulostus ja jälkikäsittely.",
-      "status": "planned",
+      "status": "draft",
       "courses": [
         "AHJO1",
         "AHJO2"

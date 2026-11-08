@@ -569,7 +569,9 @@ def page(title, body, crumbs, name, description, main_class="reading", full_titl
     if re.search(r"\$[^$\s][^$]*\$", body):   # a chapter title with a formula (curriculum.json "$pV = nRT$"): the lesson pages' KaTeX
         tpl_ = (tpl_.replace('<link rel="stylesheet" href="site.css">', '<link rel="stylesheet" href="vendor/katex/katex.min.css">\n<link rel="stylesheet" href="site.css">', 1)
                 .replace("</body>", '<script src="vendor/katex/katex.min.js"></script><script src="vendor/katex/contrib/auto-render.min.js" '
-                         'onload="renderMathInElement(document.querySelector(\'main\'),{delimiters:[{left:\'$\',right:\'$\',display:false}],throwOnError:false})"></script>\n</body>', 1))
+                         'onload="renderMathInElement(document.querySelector(\'main\'),{delimiters:['
+                         + ("{left:\'$$\',right:\'$$\',display:true}," if "$$" in body else "")      # an Ahjo guide's displayed calculation
+                         + '{left:\'$\',right:\'$\',display:false}],throwOnError:false})"></script>\n</body>', 1))
     return rebase(texts(tpl_).replace("{{head_title}}", esc(head)).replace("{{title}}", esc(title)).replace("{{body}}", body).replace("{{crumbs}}", crumbs)
             .replace("{{main_class}}", main_class).replace("{{languages}}", languages_nav(name))
             .replace("{{description}}", esc(description)).replace("{{url}}", URL + name))

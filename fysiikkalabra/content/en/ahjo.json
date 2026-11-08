@@ -72,7 +72,27 @@
     "license_badge": "Makerspace licence",
     "course_materials_h": "Ahjo's materials",
     "course_materials_lead": "The course uses Ahjo's shared materials. Each one has a single home, and here are links to the ones this course needs.",
-    "course_materials_none": "The materials for this course are added to the resource bank as the course is completed."
+    "course_materials_none": "The materials for this course are added to the resource bank as the course is completed.",
+    "res_draft": "Draft",
+    "bank_draft": {
+      "one": "{n} draft",
+      "other": "{n} drafts"
+    },
+    "guide_draft_note": "This guide has not yet been tried on Ahjo's own devices. Device models, settings and times will be confirmed once the devices have been acquired. Always follow your teacher's instructions and the device-specific induction.",
+    "guide_sections": [
+      "Challenge",
+      "Learning goals",
+      "Starting level and prior skills",
+      "Equipment and materials",
+      "Safety and induction",
+      "Steps",
+      "Diagrams and example code",
+      "Test and measure",
+      "If something does not work",
+      "Extension",
+      "Document your work",
+      "For the teacher: preparation"
+    ]
   },
   "courses": [
     {
@@ -363,7 +383,7 @@
       "category": "elektroniikka",
       "title": "First steps with Arduino",
       "text": "A first circuit and program with an Arduino starter kit.",
-      "status": "planned",
+      "status": "draft",
       "courses": [
         "AHJO1",
         "AHJO2",
@@ -386,7 +406,7 @@
       "category": "3d",
       "title": "Basics of 3D modelling",
       "text": "A first printable object in a modelling program.",
-      "status": "planned",
+      "status": "draft",
       "courses": [
         "AHJO1",
         "AHJO2"
@@ -400,7 +420,7 @@
       "category": "3d",
       "title": "Getting started with 3D printing",
       "text": "From model to print: slicing, printing and finishing.",
-      "status": "planned",
+      "status": "draft",
       "courses": [
         "AHJO1",
         "AHJO2"
