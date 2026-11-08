@@ -149,11 +149,20 @@
 
   // ---- the module page ----
   const mod = document.getElementById('oma-eteneminen');
-  if (mod) { mod.hidden = false; const wrap = mod.closest('details'); if (wrap) wrap.hidden = false; }
-  const graph = mod && mod.querySelector('details.pm-graph');
-  if (graph) graph.addEventListener('toggle', () => { if (graph.open) render(); });
+  const showWrap = (wrap) => {   // the view's button beside the work buttons (teacher 2026-11-08) opens the details below
+    if (!wrap) return; wrap.hidden = false;
+    const tg = document.querySelector('.my-toggle[aria-controls="' + wrap.id + '"]');
+    if (!tg || tg.dataset.on) return; tg.dataset.on = '1'; tg.hidden = false;
+    tg.addEventListener('click', () => { wrap.open = !wrap.open; });
+    wrap.addEventListener('toggle', () => tg.setAttribute('aria-expanded', String(wrap.open)));
+  };
+  if (mod) { mod.hidden = false; showWrap(mod.closest('details')); }
+  // the graph shows at once when Näytä edistyminen opens (teacher 2026-11-08: no separate Etenemisgraafi button)
+  const graph = mod && mod.querySelector('.pm-graph'), view = mod && mod.closest('details');
+  const shown = () => !!graph && (!view || view.open);
+  if (view) view.addEventListener('toggle', () => { if (view.open) render(); });
   let lastW = 0;
-  window.addEventListener('resize', () => { const c = graph && graph.open && graph.querySelector('.pm-chart'); if (c && Math.abs(c.clientWidth - lastW) > 8) render(); });
+  window.addEventListener('resize', () => { const c = shown() && graph.querySelector('.pm-chart'); if (c && Math.abs(c.clientWidth - lastW) > 8) render(); });
 
   // The graph (the student's own; the teacher's view shows only the Tehty marks, never the times or a graph): the date across, the done tasks
   // up to the module's total, a step for each day with ticks, from the first tick's day to today.
@@ -175,15 +184,18 @@
     if (d1 - d0 < DAY) d0 = new Date(d1 - DAY);
     const W = Math.max(280, Math.round(host.clientWidth || 600)), H = 230, L = 40, R = 14, T = 14, B = 30;
     lastW = W;
-    const x = (d) => L + (W - L - R) * (d - d0) / (d1 - d0), y = (n) => T + (H - T - B) * (1 - n / total);
+    // the axis (teacher 2026-11-08): up to 100 at first, growing with the tasks done (to the next ten), never past every task
+    const top = EVERY ? Math.min(total, Math.max(100, Math.ceil(times.length / 10) * 10)) : total;
+    const x = (d) => L + (W - L - R) * (d - d0) / (d1 - d0), y = (n) => T + (H - T - B) * (1 - n / top);
     const svg = sv('svg', { width: W, height: H, viewBox: `0 0 ${W} ${H}`, role: 'img', class: 'pm-svg', 'aria-label': GOAL ? S('progress_chart_all', { n: times.length, total, goal: GOAL }) : S('progress_chart', { n: times.length, total }) });
-    const px = (H - T - B) / total, step = [1, 2, 5, 10, 20, 25, 50, 100, 200].find((k) => k * px >= 22) || 500;   // labels at least 22 px apart
+    const px = (H - T - B) / top, step = [1, 2, 5, 10, 20, 25, 50, 100, 200].find((k) => k * px >= 22) || 500;   // labels at least 22 px apart
     const near = (a, b) => Math.abs(a - b) * px < 16;
-    for (let v = 0; v <= total; v += step) {
-      if (v && ((v !== total && near(v, total)) || (GOAL && near(v, GOAL)))) continue;
+    for (let v = 0; v <= top; v += step) {
+      if (v && ((v !== top && near(v, top)) || (GOAL && near(v, GOAL)))) continue;
       svg.append(sv('line', { x1: L, x2: W - R, y1: y(v), y2: y(v), class: 'pm-grid' }), sv('text', { x: L - 6, y: y(v) + 4, 'text-anchor': 'end', class: 'pm-tick' }, String(v)));
     }
-    svg.append(sv('line', { x1: L, x2: W - R, y1: y(total), y2: y(total), class: 'pm-total' }), sv('text', { x: L - 6, y: y(total) + 4, 'text-anchor': 'end', class: 'pm-tick pm-tick-total' }, String(total)));
+    if (top === total) svg.append(sv('line', { x1: L, x2: W - R, y1: y(total), y2: y(total), class: 'pm-total' }), sv('text', { x: L - 6, y: y(total) + 4, 'text-anchor': 'end', class: 'pm-tick pm-tick-total' }, String(total)));
+    else svg.append(sv('text', { x: L - 6, y: y(top) + 4, 'text-anchor': 'end', class: 'pm-tick' }, String(top)));
     if (GOAL) svg.append(sv('line', { x1: L, x2: W - R, y1: y(GOAL), y2: y(GOAL), class: 'pm-goal' }), sv('text', { x: L - 6, y: y(GOAL) + 4, 'text-anchor': 'end', class: 'pm-tick pm-tick-goal' }, String(GOAL)),
       sv('text', { x: W - R - 4, y: y(GOAL) + 17, 'text-anchor': 'end', class: 'pm-tick pm-tick-goal' }, S('progress_goal', { goal: GOAL })));
     const span = Math.round((d1 - d0) / DAY), every = Math.max(1, Math.ceil(span / Math.max(1, Math.floor((W - L - R) / 64))));
@@ -210,7 +222,7 @@
       bar.setAttribute('aria-valuemax', String(total)); bar.setAttribute('aria-valuenow', String(done.length));
       bar.setAttribute('aria-label', S('progress_count', { n: done.length, total }));
       bar.firstElementChild.style.width = (total ? 100 * done.length / total : 0) + '%';
-      if (graph && graph.open) chart(graph.querySelector('.pm-chart'), done.map((id) => st.done[id]), total);
+      if (shown()) chart(graph.querySelector('.pm-chart'), done.map((id) => st.done[id]), total);
     }
   };
   window.flProgressChart = chart;

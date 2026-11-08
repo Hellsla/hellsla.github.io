@@ -39,6 +39,13 @@
     });
     return t;
   };
+  const showWrap = (wrap) => {   // the view's button beside the work buttons (teacher 2026-11-08) opens the details below
+    if (!wrap) return; wrap.hidden = false;
+    const tg = document.querySelector('.my-toggle[aria-controls="' + wrap.id + '"]');
+    if (!tg || tg.dataset.on) return; tg.dataset.on = '1'; tg.hidden = false;
+    tg.addEventListener('click', () => { wrap.open = !wrap.open; });
+    wrap.addEventListener('toggle', () => tg.setAttribute('aria-expanded', String(wrap.open)));
+  };
   const draw = () => {
     let n = 0, total = 0;
     const grid = document.createElement('div');
@@ -65,11 +72,9 @@
       const tight = [...map.querySelectorAll('.sm-theme')].some((l) => l.scrollWidth > l.clientWidth + 1 || l.firstChild.offsetHeight > l.clientHeight - 4);
       if (tight) map.firstChild.replaceWith(themeRows(true));
     }
-    const legend = box.querySelector('.sm-legend');
-    if (!legend.children.length) LEVELS.forEach((lv) => { const li = document.createElement('li'), sw = document.createElement('span');
-      sw.className = 'sm-cell'; sw.dataset.level = lv; li.append(sw, ' ' + S('sa_' + lv)); legend.append(li); });
+    // no legend under the map (teacher 2026-11-08: it took too much room); each cell's title names its level
     box.hidden = false;
-    const wrap = box.closest('details'); if (wrap) wrap.hidden = false;
+    showWrap(box.closest('details'));
   };
   draw();
   const wrap = box.closest('details');   // measured only when shown: the staircase is decided when the view opens

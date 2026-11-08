@@ -915,7 +915,7 @@ li.is-done .ex-done{color:var(--accent-deep)}
 .pm-count{margin:0 0 .5rem;font:700 var(--fs-body) var(--sans);font-variant-numeric:tabular-nums}
 .pm-bar{height:10px;border-radius:999px;background:var(--line-2);overflow:hidden}
 .pm-bar>span{display:block;height:100%;width:0;background:var(--given);transition:width .3s}
-.pm-graph{margin:.7rem 0 0}.pm-graph>summary{cursor:pointer;min-height:40px;display:flex;align-items:center;font:600 var(--fs-ui) var(--sans);color:var(--accent-deep)}
+.pm-graph{margin:.7rem 0 0}
 .pm-chart{margin:.3rem 0 0;overflow:hidden}.pm-svg{display:block;max-width:100%;height:auto}
 .pm-grid{stroke:var(--line-2)}.pm-axis{stroke:var(--fig-muted)}.pm-total{stroke:var(--given);stroke-dasharray:4 4}
 .pm-tick{font:13px var(--sans);fill:var(--ink-2)}.pm-tick-total{fill:var(--accent-deep);font-weight:700}.pm-goal{stroke:var(--given);stroke-width:2}.pm-tick-goal{fill:var(--given);font-weight:700}
@@ -923,8 +923,9 @@ li.is-done .ex-done{color:var(--accent-deep)}
 .pm-note,.pm-empty{margin:.7rem 0 0;font-size:var(--fs-small);color:var(--ink-2)}
 /* Oma itsearvio beside Oma eteneminen (teacher 2026-11-07, templates/omaarvio.js): the skills fingerprint, a column per
    chapter and a row per statement in the Itsearvio scale's colours; an unassessed cell is an empty outline */
-.my-wrap{margin:0 0 1rem}.my-wrap>summary{display:inline-flex;align-items:center;gap:.4rem;min-height:44px;padding:.45rem 1.1rem;border:1.5px solid var(--accent-deep);border-radius:999px;font:600 var(--fs-ui) var(--sans);color:var(--accent-deep);cursor:pointer;list-style:none}
-.my-wrap[open]>summary{margin-bottom:1rem}
+.my-top{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem;margin:0 0 1rem}.my-top .work-tools{margin:0}.my-top:not(:has(>:not([hidden]))){display:none}
+.my-wrap{margin:0 0 1rem}.my-wrap>summary{display:none}.my-toggle{background:none;display:inline-flex;align-items:center;gap:.4rem;min-height:44px;padding:.45rem 1.1rem;border:1.5px solid var(--accent-deep);border-radius:999px;font:600 var(--fs-ui) var(--sans);color:var(--accent-deep);cursor:pointer;list-style:none}
+.my-toggle[hidden]{display:none}.my-toggle::before{content:"▸";display:inline-block;width:1.2em;flex:none}.my-toggle[aria-expanded="true"]::before{content:"▾"}
 .my-row{display:grid;gap:1rem;margin:0 0 1.8rem;align-items:start}.my-row>.my-progress{margin:0}
 @media (min-width:60rem){.my-row{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .my-selfmap{padding:var(--card-pad);background:var(--surface);border:1px solid var(--line);border-radius:var(--card-radius)}
@@ -939,8 +940,6 @@ li.is-done .ex-done{color:var(--accent-deep)}
 .sm-cell[data-level=a]{background:var(--sa-a);box-shadow:none}.sm-cell[data-level=b]{background:var(--sa-b);box-shadow:none}
 .sm-cell[data-level=c]{background:var(--sa-c);box-shadow:none}.sm-cell[data-level=d]{background:var(--sa-d);box-shadow:none}
 .sm-cell[data-level=x]{background:var(--sa-x);box-shadow:none}
-.sm-legend{list-style:none;margin:.9rem 0 0;padding:0;display:grid;gap:.3rem;font-size:var(--fs-small);color:var(--ink-2)}
-.sm-legend li{display:flex;align-items:center;gap:.5rem}.sm-legend .sm-cell{width:14px;min-height:14px;flex:none}
 @media print{.ex-done,.ex-done-msg,.done-count,.my-progress,.my-selfmap{display:none!important}}
 .act-core{margin:0 0 .35rem}.act-core .ex-core{margin:0}
 /* Kokeelliset tutkimukset (teacher 2026-10-30, scripts/investigations.py): the lesson page's reading column; the goals

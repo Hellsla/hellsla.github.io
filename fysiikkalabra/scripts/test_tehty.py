@@ -79,8 +79,10 @@ with sync_playwright() as p:
     for code, done, goal, has_work in (("FY1", 0, 45, True), ("FY3", 3, 90, True), ("FY9", 0, 90, False)):
         q.goto(BASE + code + ".html"); q.wait_for_timeout(600)
         n_all = sum(len(c["tasks"]) for c in json.loads(q.evaluate("document.getElementById('fl-course').textContent"))["chapters"])
-        closed = q.is_visible(".my-wrap > summary") and q.inner_text(".my-wrap > summary") == "Näytä edistyminen" and not q.evaluate("document.querySelector('.my-wrap').open")
-        q.click(".my-wrap > summary"); q.wait_for_timeout(300)
+        closed = q.is_visible(".my-top > .my-toggle") and q.inner_text(".my-toggle") == "Näytä edistyminen" and q.get_attribute(".my-toggle", "aria-expanded") == "false" and not q.evaluate("document.querySelector('.my-wrap').open")
+        q.click(".my-toggle"); q.wait_for_timeout(300)
+        row = q.evaluate("(() => { const t = document.querySelector('.my-toggle').getBoundingClientRect(), w = document.querySelector('#oma-tyo'); return !w || w.hidden || Math.abs(w.getBoundingClientRect().top - t.top) < 12; })()")
+        expect(f"{code}: the work buttons on the same row as Näytä edistyminen, the view opens below", row and q.get_attribute(".my-toggle", "aria-expanded") == "true" and q.evaluate("document.querySelector('.my-wrap').open"))
         cnt = q.inner_text(".pm-count")
         expect(f"{code}: behind a closed 'Näytä edistyminen', the counter over every task with the goal 45 per op ({cnt}), Oma itsearvio beside it", closed and n_all > 50 and cnt == f"{done}/{n_all} tehtävää tehty · tavoite {goal}"
                and q.is_visible("#oma-itsearvio") and q.locator("#oma-itsearvio .sm-cell:not(.sm-gap)").count() > 20 and (q.locator("#oma-tyo").count() == 1) == has_work, (cnt, n_all))
@@ -89,9 +91,13 @@ with sync_playwright() as p:
     pos = q.evaluate("(() => { const s = document.getElementById('oma-eteneminen'), h = document.querySelector('main h1'), l = [...document.querySelectorAll('main h2')].find((x) => !s.contains(x)); return !s.hidden && !!(h.compareDocumentPosition(s) & 4) && !!(s.compareDocumentPosition(l) & 4); })()")
     expect("FY3: Oma eteneminen after the heading, before the chapters", pos)
     expect("FY3: the bar follows the counter", q.get_attribute(".pm-bar", "aria-valuenow") == "3" and abs(float(q.evaluate("document.querySelector('.pm-bar > span').style.width").rstrip("%")) - 100 * 3 / total) < 0.01)
-    q.click(".pm-graph > summary"); q.wait_for_selector(".pm-chart svg", timeout=3000)
+    q.wait_for_selector(".pm-chart svg", timeout=3000)   # shown at once with the view (teacher 2026-11-08), no button of its own
+    expect("FY3: no Etenemisgraafi button, no colour legend under the fingerprint (teacher 2026-11-08)", q.locator(".pm-graph summary, .sm-legend").count() == 0)
     g = q.evaluate("(() => { const s = document.querySelector('.pm-chart svg'); return s && { dots: s.querySelectorAll('.pm-dot').length, path: s.querySelector('.pm-line').getAttribute('d'), ticks: [...s.querySelectorAll('.pm-tick')].map((t) => t.textContent), goal: !!s.querySelector('line.pm-goal') }; })()")
-    expect(f"FY3: the graph by date, cumulative up to {total}, the goal line at 90 (2 op)", g and g["dots"] == 1 and str(total) in g["ticks"] and "90" in g["ticks"] and "tavoite 90" in g["ticks"] and g["goal"] and g["path"].startswith("M"), g)
+    expect("FY3: the graph by date, the axis up to 100 at first (teacher 2026-11-08), the goal line at 90 (2 op)", g and g["dots"] == 1 and "100" in g["ticks"] and str(total) not in g["ticks"] and "90" in g["ticks"] and "tavoite 90" in g["ticks"] and g["goal"] and g["path"].startswith("M"), g)
+    big = q.evaluate("(total) => { const h = document.createElement('div'); document.body.append(h); const t = Array.from({ length: 143 }, (_, i) => new Date(Date.UTC(2026, 8, 1 + (i % 60))).toISOString()); window.flProgressChart(h, t, total);"
+                     " const r = [...h.querySelectorAll('.pm-tick')].map((e) => e.textContent); h.remove(); return r; }", total)
+    expect("the axis grows with the tasks done: 143 done -> up to 150, not to every task", "150" in big and str(total) not in big, big)
     # Oma itsearvio: the verbal statements assessed and the fingerprint under the themes
     q.evaluate("localStorage.setItem('ruukkilabra:itsearvio:fy3-1', JSON.stringify({ items: { 'tavoite-1': { level: 'a' }, 'tavoite-3': { level: 'd' }, 'tehtava-x': { level: 'b' } } }))")
     q.reload(); q.evaluate(WRAP)
@@ -123,7 +129,7 @@ with sync_playwright() as p:
     for w in (360, 768, 1280):
         for page in ("fy3-1.html", "FY1.html", "FY3.html", "FY9.html"):
             q.set_viewport_size({"width": w, "height": 900}); q.goto(BASE + page)
-            if page.startswith("FY"): q.evaluate(WRAP); q.click(".pm-graph > summary"); q.wait_for_timeout(200)
+            if page.startswith("FY"): q.evaluate(WRAP); q.wait_for_timeout(200)
             else: q.evaluate(OPEN)
             over = q.evaluate("document.documentElement.scrollWidth - document.documentElement.clientWidth")
             expect(f"{page} at {w} px: no horizontal overflow", over <= 0, over)
