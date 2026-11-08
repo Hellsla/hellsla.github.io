@@ -249,7 +249,7 @@ def teacher_page_body(name):
             + teacher_examples())
 
 
-SHOTS = [("opiskelija", 1600, 702), ("opettaja-kooste", 1190, 1140), ("opettaja-arviointi", 1600, 594)]   # captions: lang "teacher.shot_<name>"
+SHOTS = [("opiskelija", 1600, 702), ("opettaja-kooste", 1190, 1140), ("opettaja-sormenjalki", 1594, 656), ("opettaja-arviointi", 1600, 594)]   # captions: lang "teacher.shot_<name>"
 
 
 def teacher_examples():
