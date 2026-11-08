@@ -99,6 +99,8 @@ for lang in i18n.languages():
         sh = m.find('class="ahjo-sec ahjo-shared"')
         expect(f"{lang} {c['code']}: Ahjo's shared pages come first on the course page", 0 < sh < min(x for x in (m.find('class="ahjo-sec ahjo-safety-teaser'), m.find('id="tavoitteet"')) if x > 0)
                and all(f'href="{h}"' in m[sh:sh + 4000] for h in (ahjo.PAGE, ahjo.BANK, ahjo.SAFETY)))
+import module_icons
+expect("Ahjo 1's and Ahjo 2's icons are the teacher's choice (1a, 2a), drawn on the logo's anvil", all(module_icons.file(c).read_text() == ahjo.course_icon_svg(c) for c in ahjo.COURSE_ICON_TITLES))
 expect("the header's Ruukkilabra symbol in Kiviruukin lukio's colours is up to date", ahjo.SITE_MARK_KR.is_file() and ahjo.SITE_MARK_KR.read_text() == ahjo.site_mark_kiviruukki())
 for lang in i18n.languages():
     out = SITE if lang == i18n.SOURCE else SITE / lang

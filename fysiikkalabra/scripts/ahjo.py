@@ -89,6 +89,28 @@ def site_mark_kiviruukki():
     return s.replace("Ruukkilabra – ahjo ja valoprisma", "Ruukkilabra – ahjo ja valoprisma Kiviruukin lukion väreissä")
 
 
+COURSE_ICON_TITLES = {"AHJO1": "3D-tulostin Ahjon alasimella", "AHJO2": "Idean hehkulamppu Ahjon alasimella"}
+
+
+def course_icon_svg(code):
+    """Ahjo 1's and Ahjo 2's icons (teacher 2026-11-08 chose 1a and 2a): the logo's anvil and arch (its paths copied
+    unchanged) on the module icons' tile, with a 3D printer (Ahjo 1) or an idea's light bulb (Ahjo 2) above it."""
+    paths = re.findall(r"<path\b.*?/>", LOGO.read_text(), re.S)
+    N, P, PL = "#012169", "#FCA5C7", "#FDD0E1"
+    s = f'stroke="{N}" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" fill="none"'
+    if code == "AHJO1":
+        top = (f'<path d="M230 410V60H712V410" {s}/><path d="M230 120H712" {s}/>'
+               f'<rect x="400" y="90" width="142" height="110" rx="18" fill="{N}"/><path d="M445 200h52l-26 50z" fill="{N}"/>'
+               + "".join(f'<rect x="380" y="{412 - (i + 1) * 34}" width="182" height="26" rx="8" fill="{P if i % 2 == 0 else PL}"/>' for i in range(4)))
+    else:
+        top = (f'<path d="M471 70a120 120 0 0 1 70 218v52H401v-52A120 120 0 0 1 471 70z" fill="{P}" stroke="{N}" stroke-width="30" stroke-linejoin="round"/>'
+               f'<path d="M411 380h120" {s}/><path d="M440 236l31 34 31-34" stroke="{N}" stroke-width="22" fill="none" stroke-linecap="round" stroke-linejoin="round"/>'
+               + "".join(f'<path d="M{a}" stroke="{P}" stroke-width="26" stroke-linecap="round"/>' for a in ("300 120 340 150", "642 120 602 150", "260 230 310 230", "682 230 632 230")))
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48"><title>{COURSE_ICON_TITLES[code]}</title>'
+            '<rect x="0.5" y="0.5" width="47" height="47" rx="12" fill="#fffdf8" stroke="#e3dccb"/>'
+            '<svg x="5" y="5" width="38" height="38" viewBox="121 -50 700 700">' + top + paths[1] + paths[2] + '</svg></svg>\n')
+
+
 def tab_icons(html):
     """An Ahjo page's browser tab and home screen icon is Ahjo's mark, not Ruukkilabra's, and the header shows Ruukkilabra's
     symbol in Kiviruukin lukio's colours (teacher 2026-11-08). The PNGs
@@ -299,12 +321,12 @@ def nav(d, current):
             + '</ul></nav>')
 
 
-def hero(d, title, lead, current, big=False, extra=""):
+def hero(d, title, lead, current, big=False, extra="", title_icon=""):
     """The section's own banner: the original logo (large on the start page), the school's line, the heading."""
     size = 168 if big else 88
     return (f'<header class="ahjo-hero{" ahjo-hero-big" if big else ""}">'
             f'<img class="ahjo-logo" src="{LOGO_SRC}" alt="{esc(d["ui"]["logo_alt"])}" width="{size}" height="{size}">'
-            f'<div class="ahjo-hero-text"><p class="ahjo-eyebrow">{esc(d["eyebrow"])}</p><h1>{esc(title)}</h1>'
+            f'<div class="ahjo-hero-text"><p class="ahjo-eyebrow">{esc(d["eyebrow"])}</p><h1{' class="ahjo-h1-icon"' if title_icon else ''}>{title_icon}{esc(title)}</h1>'
             f'<p class="ahjo-lead">{esc(lead)}</p>{extra}</div></header>' + nav(d, current))
 
 
@@ -361,7 +383,7 @@ def start_body(d, planned, local, modules, ref):
         badges = (f'<p class="ahjo-badge planned">{esc(u["course_status_planned"])}</p>'
                   + (f'<p class="ahjo-badge ahjo-license-badge">{esc(u["license_badge"])}</p>' if c.get("license") else ""))
         cards.append(f'<article class="ahjo-course" id="{c["code"].lower()}" aria-labelledby="h-{c["code"].lower()}">'
-                     f'<div class="ahjo-course-art">{art(c["code"].lower())}</div><div class="ahjo-course-head"><h3 id="h-{c["code"].lower()}"><span class="ahjo-course-name"><a href="{href}">{esc(title)}</a></span>'
+                     f'<div class="ahjo-course-art">{art(c["code"].lower())}</div><div class="ahjo-course-head"><h3 id="h-{c["code"].lower()}"><span class="ahjo-course-name"><img class="ahjo-course-icon" src="module-icons/{c["code"].lower()}.svg" alt="" width="40" height="40" aria-hidden="true"><a href="{href}">{esc(title)}</a></span>'
                      f'<span class="ahjo-course-sub">{esc(c["subtitle"])}</span></h3><div class="ahjo-badges">{badges}</div></div>'
                      f'<p class="ahjo-course-text">{esc(text)}</p>'
                      f'<h4 class="visually-hidden">{esc(u["course_contents"])}</h4>'
@@ -434,7 +456,8 @@ def course_body(d, c, planned, local, modules, ref):
     """Ahjo 1 or Ahjo 2 on its own page (teacher 2026-11-08): the licence (Ahjo 1), contents, goals, the 16 lessons with
     their pictures, and links to Ahjo's shared materials, which stay in the bank (linked, never copied)."""
     u = d["ui"]; title, text, _ = course_info(c["code"], planned, local); k = c["code"].lower()
-    out = hero(d, title, c["subtitle"], PAGE + "#opintojaksot", extra=f'<p class="ahjo-opening">{esc(text)}</p>')
+    ic = f'<img src="module-icons/{k}.svg" alt="" width="56" height="56" aria-hidden="true">' if (ROOT / "assets/shared/module-icons" / f"{k}.svg").is_file() else ""
+    out = hero(d, title, c["subtitle"], PAGE + "#opintojaksot", extra=f'<p class="ahjo-opening">{esc(text)}</p>', title_icon=ic)
     eq = "#laitteisto"
     tiles = [(PAGE, f'<img class="ahjo-shared-mark" src="{MARK_SRC}" alt="" width="40" height="40" aria-hidden="true">', d["title"], u["shared_home"]),
              (BANK, icon("box", "ahjo-icon ahjo-shared-icon"), u["bank_h"], u["shared_bank"]),

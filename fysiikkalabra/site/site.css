@@ -1588,3 +1588,6 @@ main.ahjo-page{max-width:68rem;font-family:var(--ahjo-text)}
 .ahjo-proj-dl dd{margin:.1rem 0 0;overflow-wrap:anywhere}
 .ahjo-ext{color:var(--ink-2);font-size:var(--fs-small);white-space:nowrap}
 .ahjo-ext::before{content:"↗ "}
+/* Ahjo 1's and Ahjo 2's icons beside their names (teacher 2026-11-08) */
+.ahjo-h1-icon{display:flex;align-items:center;gap:.6rem}.ahjo-h1-icon img{flex:none;width:56px;height:56px}
+.ahjo-course-name{display:flex;align-items:center;gap:.5rem}.ahjo-course-icon{flex:none;width:40px;height:40px}
