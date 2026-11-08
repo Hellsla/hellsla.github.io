@@ -1,0 +1,530 @@
+{
+  "_note": "Ahjo Makerspace (teacher 2026-11-08, docs/PORTAL_ARCHITECTURE.md section C): Kiviruukin lukio's makerspace inside Ruukkilabra. scripts/ahjo.py documents every field, validates this file and renders ahjo.html, ahjo-materiaalit.html and ahjo-turvallisuus.html. Finnish is the source; content/en/ahjo.json has the same ids in English. Ahjo 1 and Ahjo 2 take their name and description from local-courses.json \"_planned\" (one source). Equipment: what is coming, not confirmed models; set \"equipment_status\" (or one item's \"status\") to \"kaytossa\" when it is in use. Safety topics stay \"valmisteilla\" until the school's responsible staff approve them.",
+  "title": "Ahjo Makerspace",
+  "eyebrow": "Kiviruukin lukion makerspace",
+  "lead": "Ahjo on Kiviruukin lukion yhteinen tekemisen tila: oppiainerajat ylittävä STEAM-oppimisympäristö, jossa ideat muuttuvat malleiksi, prototyypeiksi ja ratkaisuiksi.",
+  "opening": "Kiviruukin lukio aloittaa syksyllä 2027. Ahjon laitteisto, ohjeet ja turvallisuusohjeet valmistuvat sitä ennen, ja tämä sivu täydentyy sitä mukaa.",
+  "description": "Kiviruukin lukion Ahjo Makerspace: opintojaksot Ahjo 1 ja Ahjo 2, yhteinen materiaalipankki, Ahjon tuleva laitteisto ja turvallisuus.",
+  "ui": {
+    "nav_label": "Ahjo Makerspace",
+    "nav_home": "Ahjo",
+    "nav_courses": "Opintojaksot",
+    "nav_bank": "Materiaalipankki",
+    "nav_equipment": "Laitteisto",
+    "nav_safety": "Turvallisuus",
+    "courses_h": "Ahjon opintojaksot",
+    "courses_lead": "Ahjo 1 ja Ahjo 2 ovat Kiviruukin lukion omia opintojaksoja, jotka käyttävät Ahjon laitteita ja yhteisiä ohjeita.",
+    "course_status_planned": "Suunnitteilla",
+    "course_status_ready": "Valmis",
+    "course_open": "Avaa opintojakso",
+    "course_contents": "Sisältö",
+    "equipment_h_tuleva": "Ahjon tuleva laitteisto",
+    "equipment_h_kaytossa": "Ahjon laitteisto",
+    "equipment_lead_tuleva": "Nämä laitteet kuuluvat Ahjon tulevaan varusteluun. Tarkemmat laitemallit ja kappalemäärät tarkentuvat myöhemmin.",
+    "equipment_lead_kaytossa": "Nämä laitteet ovat Ahjossa käytössä.",
+    "status_tuleva": "Tulossa",
+    "status_kaytossa": "Käytössä",
+    "bank_h": "Materiaalipankki",
+    "bank_lead": "Yhteiset ohjeet ja materiaalit kahdeksassa aiheessa. Jokaisella ohjeella on yksi paikka, ja sama ohje palvelee kaikkia opintojaksoja, jotka sitä käyttävät.",
+    "bank_page_lead": "Ahjon yhteiset ohjeet ja materiaalit. Jokaisella ohjeella on yksi paikka; opintojaksot linkittävät siihen eivätkä kopioi sitä.",
+    "bank_ready": {
+      "one": "{n} valmis materiaali",
+      "other": "{n} valmista materiaalia"
+    },
+    "bank_coming": {
+      "one": "{n} tulossa",
+      "other": "{n} tulossa"
+    },
+    "bank_none": "Materiaaleja lisätään myöhemmin.",
+    "bank_all": "Koko materiaalipankki",
+    "res_ready": "Valmis",
+    "res_coming": "Tulossa",
+    "res_used_by": "Käytössä",
+    "res_subjects": "Sopii myös",
+    "res_in_finnish": "suomeksi",
+    "kind_lesson": "Fysiikan luku",
+    "kind_guide": "TVT-ohje",
+    "kind_investigation": "Tutkimus",
+    "kind_ahjo": "Ahjon ohje",
+    "kind_safety": "Turvallisuus",
+    "safety_h": "Turvallisuus",
+    "safety_lead": "Ahjossa työskennellään turvallisesti: jokainen perehdytetään tilaan ja laitteisiin ennen niiden käyttöä.",
+    "safety_open": "Turvallisuusosio",
+    "safety_page_title": "Turvallisuus Ahjossa",
+    "safety_page_lead": "Tähän osioon kootaan Ahjon käyttösäännöt, perehdytys ja laitekohtaiset turvallisuusohjeet.",
+    "safety_draft_note": "Ahjon turvallisuusohjeet ovat valmisteilla. Koulun vastuuhenkilöt laativat ja hyväksyvät ne ennen kuin Ahjo otetaan käyttöön. Tällä sivulla ei vielä ole hyväksyttyjä ohjeita: siihen asti noudatetaan opettajan antamia ohjeita.",
+    "safety_status_valmisteilla": "Valmisteilla",
+    "safety_status_hyvaksytty": "Hyväksytty",
+    "safety_approved_by": "Hyväksynyt {who} {date}",
+    "safety_covers": "Käsittelee",
+    "links_h": "Ahjo muissa opinnoissa",
+    "links_lead": "Ahjon ohjeita ja laitteita voi käyttää monessa oppiaineessa. Nämä Ruukkilabran opinnot liittyvät Ahjoon.",
+    "links_planned": "suunnitteilla",
+    "logo_alt": "Ahjo – Kiviruukin Makerspace",
+    "front_line": "Opintojaksot, ohjeet, laitteisto ja turvallisuus."
+  },
+  "courses": [
+    {
+      "code": "AHJO1",
+      "subtitle": "Teknologian perusteet",
+      "topics": [
+        "3D-mallinnus",
+        "3D-tulostus",
+        "Elektroniikka ja Arduino",
+        "Ohjelmoinnin ja robotiikan perusteet",
+        "Laitteisiin perehtyminen ja turvallinen työskentely"
+      ]
+    },
+    {
+      "code": "AHJO2",
+      "subtitle": "Suunnittele ja toteuta",
+      "topics": [
+        "Ideointi ja ongelman määrittely",
+        "Suunnittelu ja prototypointi",
+        "Rakentaminen",
+        "Testaaminen ja kehittäminen",
+        "Dokumentointi ja arviointi"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": "3d",
+      "icon": "cube",
+      "title": "3D-suunnittelu ja digitaalinen valmistaminen",
+      "text": "Mallinnus, 3D-tulostus ja 3D-skannaus."
+    },
+    {
+      "id": "elektroniikka",
+      "icon": "chip",
+      "title": "Elektroniikka ja ohjelmointi",
+      "text": "Virtapiirit, komponentit, mittaaminen ja mikro-ohjaimet."
+    },
+    {
+      "id": "robotiikka",
+      "icon": "robot",
+      "title": "Robotiikka ja automaatio",
+      "text": "Moottorit, anturit ja ohjelmoitavat robotit."
+    },
+    {
+      "id": "vr",
+      "icon": "vr",
+      "title": "VR ja digitaaliset ympäristöt",
+      "text": "Virtuaalitodellisuus opetuksessa ja omissa projekteissa."
+    },
+    {
+      "id": "tekstiilit",
+      "icon": "scissors",
+      "title": "Tekstiilit, muotoilu ja muu valmistaminen",
+      "text": "Vinyylileikkuri, lämpöprässi, ompelu, brodeeraus ja suurkuvatulostus."
+    },
+    {
+      "id": "tyokalut",
+      "icon": "tools",
+      "title": "Työkalut ja materiaalit",
+      "text": "Käsi- ja sähkötyökalut, mittalaitteet ja materiaalien valinta."
+    },
+    {
+      "id": "turvallisuus",
+      "icon": "shield",
+      "title": "Turvallisuus ja perehdytys",
+      "text": "Tilan säännöt, perehdytys ja laitteiden turvallinen käyttö."
+    },
+    {
+      "id": "dokumentointi",
+      "icon": "notebook",
+      "title": "Projektityöskentelyn dokumentointi",
+      "text": "Mittaukset, kuvaajat ja raportointi projektin tueksi."
+    }
+  ],
+  "resources": [
+    {
+      "ref": "fy6-1",
+      "category": "elektroniikka",
+      "why": "Virtapiirin, sähkövirran ja jännitteen perusta ennen ensimmäistä kytkentää.",
+      "courses": [
+        "AHJO1",
+        "AHJO2"
+      ]
+    },
+    {
+      "ref": "fy6-3",
+      "category": "elektroniikka",
+      "why": "Ohmin laki: esimerkiksi LEDin etuvastuksen mitoitus.",
+      "courses": [
+        "AHJO1",
+        "AHJO2"
+      ]
+    },
+    {
+      "ref": "fy6-14",
+      "category": "elektroniikka",
+      "why": "Diodi ja LED: miksi komponentti johtaa vain yhteen suuntaan.",
+      "courses": [
+        "AHJO1"
+      ]
+    },
+    {
+      "id": "ahjo-arduino",
+      "category": "elektroniikka",
+      "title": "Arduinon ensiaskeleet",
+      "text": "Ensimmäinen kytkentä ja ohjelma Arduino-perussarjalla.",
+      "status": "planned",
+      "courses": [
+        "AHJO1",
+        "AHJO2",
+        "KILPAROBO"
+      ]
+    },
+    {
+      "id": "ahjo-juottaminen",
+      "category": "elektroniikka",
+      "title": "Juottaminen",
+      "text": "Juotosaseman käyttö ja hyvän juotoksen tunnistaminen.",
+      "status": "planned",
+      "courses": [
+        "AHJO1",
+        "AHJO2"
+      ]
+    },
+    {
+      "id": "ahjo-3d-mallinnus",
+      "category": "3d",
+      "title": "3D-mallinnuksen alkeet",
+      "text": "Ensimmäinen tulostettava kappale mallinnusohjelmalla.",
+      "status": "planned",
+      "courses": [
+        "AHJO1",
+        "AHJO2"
+      ],
+      "subjects": [
+        "kuvataide"
+      ]
+    },
+    {
+      "id": "ahjo-3d-tulostus",
+      "category": "3d",
+      "title": "3D-tulostuksen aloitusohje",
+      "text": "Mallista tulosteeksi: viipalointi, tulostus ja jälkikäsittely.",
+      "status": "planned",
+      "courses": [
+        "AHJO1",
+        "AHJO2"
+      ],
+      "subjects": [
+        "kuvataide",
+        "lukiodiplomit"
+      ]
+    },
+    {
+      "ref": "fy7-4",
+      "category": "robotiikka",
+      "why": "Sähkömoottorin toimintaperiaate: robotin liikkeen fysiikka.",
+      "courses": [
+        "AHJO1",
+        "KILPAROBO"
+      ]
+    },
+    {
+      "id": "ahjo-robotiikkasarja",
+      "category": "robotiikka",
+      "title": "Robotiikkasarjan käyttöönotto",
+      "text": "Rakenna ja ohjelmoi ensimmäinen liikkuva robotti.",
+      "status": "planned",
+      "courses": [
+        "AHJO1",
+        "KILPAROBO"
+      ]
+    },
+    {
+      "id": "ahjo-vr",
+      "category": "vr",
+      "title": "VR-lasien käyttö",
+      "text": "VR-lasien käyttöönotto, turvallinen pelialue ja puhdistus.",
+      "status": "planned",
+      "courses": [
+        "AHJO1"
+      ],
+      "subjects": [
+        "kaikki oppiaineet"
+      ]
+    },
+    {
+      "id": "ahjo-vinyylileikkuri",
+      "category": "tekstiilit",
+      "title": "Vinyylileikkuri ja lämpöprässi",
+      "text": "Kuvasta tarraksi tai kangaspainatukseksi.",
+      "status": "planned",
+      "courses": [
+        "AHJO2"
+      ],
+      "subjects": [
+        "kuvataide",
+        "muotoilu"
+      ]
+    },
+    {
+      "ref": "fy6-2",
+      "category": "tyokalut",
+      "why": "Yleismittarin käyttö: virran ja jännitteen mittaaminen oikein kytkettynä.",
+      "courses": [
+        "AHJO1",
+        "AHJO2"
+      ]
+    },
+    {
+      "ref": "fy6-15",
+      "category": "turvallisuus",
+      "why": "Sähköturvallisuuden perusteet ennen työskentelyä sähkölaitteiden kanssa.",
+      "courses": [
+        "AHJO1",
+        "AHJO2"
+      ]
+    },
+    {
+      "safety": true,
+      "category": "turvallisuus",
+      "courses": [
+        "AHJO1",
+        "AHJO2"
+      ]
+    },
+    {
+      "ref": "tvt-mittausohjelma",
+      "category": "dokumentointi",
+      "why": "Anturimittaukset tietokoneella prototyypin testaamiseen.",
+      "courses": [
+        "AHJO2"
+      ]
+    },
+    {
+      "ref": "tvt-videoanalyysi",
+      "category": "dokumentointi",
+      "why": "Liikkeen mittaaminen videolta, kun testaat rakentamaasi laitetta.",
+      "courses": [
+        "AHJO2"
+      ]
+    },
+    {
+      "ref": "tvt-tyoselostus",
+      "category": "dokumentointi",
+      "why": "Mittaustulosten ja kuvaajien esittäminen projektin raportissa.",
+      "courses": [
+        "AHJO2"
+      ]
+    },
+    {
+      "id": "ahjo-projektipaivakirja",
+      "category": "dokumentointi",
+      "title": "Projektipäiväkirja",
+      "text": "Ideat, päätökset, testit ja muutokset talteen projektin aikana.",
+      "status": "planned",
+      "courses": [
+        "AHJO2"
+      ]
+    }
+  ],
+  "equipment_status": "tuleva",
+  "equipment": [
+    {
+      "id": "3d",
+      "icon": "cube",
+      "title": "3D-suunnittelu ja valmistaminen",
+      "items": [
+        "3D-tulostimet",
+        "3D-skanneri",
+        "3D-mallinnukseen soveltuvat tietokoneet",
+        "Suunnittelu- ja tulostusohjelmistot"
+      ]
+    },
+    {
+      "id": "elektroniikka",
+      "icon": "chip",
+      "title": "Elektroniikka ja ohjelmointi",
+      "items": [
+        "Arduino-perussarjat",
+        "Raspberry Pi -pienoistietokoneet",
+        "BBC micro:bit -ohjaimet",
+        "Elektroniikan komponenttisarjat",
+        "Juotosasemat",
+        "Työskentelytelineet ja suurennuslasit",
+        "Säädettävät virtalähteet",
+        "Oskilloskoopit",
+        "Funktiogeneraattorit",
+        "Yleismittarit ja muut perustyökalut"
+      ]
+    },
+    {
+      "id": "robotiikka",
+      "icon": "robot",
+      "title": "Robotiikka",
+      "items": [
+        "LEGO- ja/tai VEX-robotiikkasarjat",
+        "Arduino- ja Raspberry Pi -pohjaiset robotiikkaratkaisut"
+      ]
+    },
+    {
+      "id": "vr",
+      "icon": "vr",
+      "title": "Virtuaalitodellisuus",
+      "items": [
+        "VR-lasit ja niihin kuuluvat laitteet",
+        "VR-työskentelyn edellyttämä tietotekniikka"
+      ]
+    },
+    {
+      "id": "tekstiilit",
+      "icon": "scissors",
+      "title": "Tekstiilit ja digitaalinen muotoilu",
+      "items": [
+        "Vinyylileikkuri",
+        "Lämpöprässi",
+        "Tekstiilipainatuksen laitteisto",
+        "Ompelukoneet",
+        "Brodeerauskone",
+        "Suurkuvatulostin"
+      ]
+    },
+    {
+      "id": "mekaaninen",
+      "icon": "tools",
+      "title": "Mekaaninen työskentely ja prototypointi",
+      "items": [
+        "Pylväsporakone",
+        "Kuumaliimapistoolit",
+        "Leikkuualustat",
+        "Yleistyökalut ja sähkötyökalut",
+        "Työpenkit ja työkaluseinä",
+        "Muut materiaalinkäsittelyn laitteet ja tarvikkeet"
+      ]
+    },
+    {
+      "id": "tila",
+      "icon": "box",
+      "title": "Työskentelytila",
+      "items": [
+        "Projektien säilytyslaatikot",
+        "Kierrätyspisteet",
+        "Työpisteiden puhdistusvälineet",
+        "Ensiapuvälineet",
+        "Suojavälineet",
+        "Ilmanvaihto ja tarvittava kohdepoisto",
+        "Esitys- ja opetustekniikka"
+      ]
+    }
+  ],
+  "safety": [
+    {
+      "id": "saannot",
+      "title": "Tilan käyttösäännöt",
+      "covers": "Milloin ja miten Ahjoa käytetään, työpisteen järjestys ja siisteys."
+    },
+    {
+      "id": "perehdytys",
+      "title": "Opiskelijoiden perehdytys",
+      "covers": "Mitä perehdytykseen kuuluu ennen tilan ja kunkin laitteen käyttöä."
+    },
+    {
+      "id": "valvonta",
+      "title": "Valvonta ja itsenäinen käyttö",
+      "covers": "Mitä tehdään opettajan valvonnassa ja millä ehdoilla tilaa voi käyttää itsenäisesti."
+    },
+    {
+      "id": "tyokalut",
+      "title": "Työkalujen ja koneiden turvallinen käyttö",
+      "covers": "Käsi- ja sähkötyökalujen yleiset turvallisuusperiaatteet."
+    },
+    {
+      "id": "elektroniikka",
+      "title": "Juottaminen ja elektroniikkatyöskentely",
+      "covers": "Juotosaseman käyttö, juotoshöyryt, virtalähteet ja sähköturvallisuus."
+    },
+    {
+      "id": "3d-tulostus",
+      "title": "3D-tulostuksen turvallisuus",
+      "covers": "Kuumat osat, materiaalit, tuuletus ja tulostimen valvonta."
+    },
+    {
+      "id": "mekaaninen",
+      "title": "Pylväsporakone ja muut mekaaniset työkalut",
+      "covers": "Kappaleen kiinnitys, suojalasit, hiukset ja vaatetus, terien käsittely."
+    },
+    {
+      "id": "vr",
+      "title": "VR-laitteiden turvallinen ja hygieeninen käyttö",
+      "covers": "Turvallinen pelialue, tauot, pahoinvointi ja laitteiden puhdistus."
+    },
+    {
+      "id": "suojaimet",
+      "title": "Ilmanvaihto, henkilönsuojaimet ja paloturvallisuus",
+      "covers": "Kohdepoisto, suojalasit ja muut suojaimet, palovaarat ja sammutusvälineet."
+    },
+    {
+      "id": "sailytys",
+      "title": "Projektien säilyttäminen",
+      "covers": "Keskeneräisten töiden merkitseminen ja säilytys."
+    },
+    {
+      "id": "kierratys",
+      "title": "Kierrätys ja jätteiden käsittely",
+      "covers": "Materiaalien lajittelu, elektroniikkaromu ja vaaralliset jätteet."
+    },
+    {
+      "id": "onnettomuus",
+      "title": "Toiminta onnettomuus- ja vaaratilanteissa",
+      "covers": "Ensiapu, hälytys, laitteiden pysäyttäminen ja tilanteesta ilmoittaminen."
+    }
+  ],
+  "links": [
+    {
+      "course": "AHJO1",
+      "text": "Teknologian perusteet: 3D-mallinnus ja -tulostus, elektroniikka ja Arduino, ohjelmoinnin ja robotiikan alkeet.",
+      "categories": [
+        "3d",
+        "elektroniikka",
+        "robotiikka",
+        "turvallisuus"
+      ]
+    },
+    {
+      "course": "AHJO2",
+      "text": "Oma prototyyppi ideasta testattuun ja dokumentoituun ratkaisuun.",
+      "categories": [
+        "3d",
+        "elektroniikka",
+        "tekstiilit",
+        "dokumentointi"
+      ]
+    },
+    {
+      "course": "KILPAROBO",
+      "text": "Robottien suunnittelu, rakentaminen ja ohjelmointi kilpailuja varten.",
+      "categories": [
+        "robotiikka",
+        "elektroniikka"
+      ]
+    },
+    {
+      "course": "FY6",
+      "text": "Virtapiirit, Ohmin laki, diodi ja LED sekä sähköturvallisuus: elektroniikan fysiikka.",
+      "categories": [
+        "elektroniikka",
+        "turvallisuus"
+      ]
+    },
+    {
+      "course": "FY7",
+      "text": "Sähkömoottori ja magneettikenttä: robotiikan toimilaitteiden fysiikka.",
+      "categories": [
+        "robotiikka"
+      ]
+    },
+    {
+      "course": "FY10",
+      "text": "Mittaaminen, kuvaajat ja työselostus: samat TVT-ohjeet tukevat prototyypin testaamista ja raportointia.",
+      "categories": [
+        "dokumentointi"
+      ]
+    }
+  ]
+}

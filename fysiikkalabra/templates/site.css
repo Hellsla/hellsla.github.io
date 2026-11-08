@@ -1394,3 +1394,123 @@ html #exercises .ex-focus .pad .rich-text-editor-toolbar-root>div,html.tasks-spl
 .sa-desc{margin:.45rem 0 0;font-size:var(--fs-inner);color:var(--ink-2);min-height:1.5em}
 .sa-lead{margin:.2rem 0 .4rem;color:var(--ink-2)}
 .sa-n{font-weight:700;margin-right:.15em}
+
+/* Ahjo Makerspace (teacher 2026-11-08, scripts/ahjo.py): Kiviruukin lukio's makerspace in the school's identity under the
+   site's common header and footer: navy #012169, pink #fca5c7, white and black; Lato for headings, Work Sans for text
+   (self-hosted like the other fonts). The original logo is shown as the teacher's file, only scaled. Light, not heavy:
+   one tinted banner, then plain sections on white with thin rules; pink marks, navy speaks. */
+@font-face{font-family:"Lato";font-style:normal;font-weight:400;font-display:swap;src:url(vendor/fonts/lato-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Lato";font-style:normal;font-weight:700;font-display:swap;src:url(vendor/fonts/lato-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:"Lato";font-style:normal;font-weight:900;font-display:swap;src:url(vendor/fonts/lato-latin-900-normal.woff2) format("woff2")}
+@font-face{font-family:"Work Sans";font-style:normal;font-weight:100 900;font-display:swap;src:url(vendor/fonts/work-sans-latin-wght-normal.woff2) format("woff2")}
+@font-face{font-family:"Work Sans";font-style:italic;font-weight:100 900;font-display:swap;src:url(vendor/fonts/work-sans-latin-wght-italic.woff2) format("woff2")}
+:root:has(main.ahjo-page){--bg:#fff;--bg-tint:#f3f5f9;--ink:#0b1638;--ink-2:#3c4563;--line:#dfe5eb;--line-2:#ecf0f4;
+  --accent:#012169;--accent-deep:#012169;--accent-soft:#fff0f6;--brand-green:#012169;--kr-navy:#012169;--kr-pink:#fca5c7;--kr-pink-soft:#fde4ee;
+  --ahjo-head:"Lato",var(--sans);--ahjo-text:"Work Sans",var(--sans)}
+body:has(main.ahjo-page){background-image:none}
+main.ahjo-page{max-width:68rem;font-family:var(--ahjo-text)}
+.ahjo-page h1,.ahjo-page h2,.ahjo-page h3{font-family:var(--ahjo-head);color:var(--kr-navy);letter-spacing:0}
+.ahjo-page a{color:var(--kr-navy)}
+.ahjo-icon{width:24px;height:24px;flex:none;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+/* the banner: the logo on white beside the heading, a pink rule under it */
+.ahjo-hero{display:flex;align-items:center;gap:1rem 1.75rem;margin:0 0 .75rem;padding:.5rem 0 1rem;border-bottom:4px solid var(--kr-pink)}
+.ahjo-logo{display:block;flex:none;width:88px;height:auto}
+.ahjo-hero-big .ahjo-logo{width:clamp(120px,9rem + 4vw,180px)}
+.ahjo-hero-text{min-width:0}
+.ahjo-eyebrow{margin:0 0 .2rem;font:700 var(--fs-small)/1.3 var(--ahjo-head);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
+.ahjo-hero h1{margin:0 0 .35rem;font-weight:900;font-size:clamp(1.75rem,1.3rem + 1.6vw,2.6rem);line-height:1.1}
+.ahjo-lead{margin:0;font-size:clamp(1.0625rem,1rem + .25vw,1.1875rem);line-height:1.5;color:var(--ink);max-width:44rem}
+.ahjo-opening{margin:.6rem 0 0;font-size:var(--fs-ui);color:var(--ink-2);max-width:44rem}
+@media (max-width:37.5rem){.ahjo-hero{flex-direction:column;align-items:flex-start;gap:.5rem}.ahjo-hero-big .ahjo-logo{width:132px}.ahjo-logo{width:72px}}
+/* the section's own navigation: a row of pills under the banner; wraps on a phone, never scrolls sideways */
+.ahjo-nav ul{display:flex;flex-wrap:wrap;gap:.4rem;margin:0 0 1.75rem;padding:0;list-style:none}
+.ahjo-nav a{display:inline-flex;align-items:center;min-height:40px;padding:0 .95rem;border:1.5px solid var(--kr-navy);border-radius:999px;font:700 var(--fs-ui) var(--ahjo-head);text-decoration:none;color:var(--kr-navy)}
+.ahjo-nav a:hover{background:var(--kr-pink-soft)}
+.ahjo-nav a[aria-current="page"]{background:var(--kr-navy);color:#fff}
+.ahjo-page a:focus-visible{outline:3px solid var(--kr-navy);outline-offset:2px}
+.ahjo-sec{margin:0 0 2.5rem}
+.ahjo-sec>h2{display:flex;align-items:center;gap:.6rem;margin:0 0 .35rem;font-size:1.5rem;font-weight:900;line-height:1.2}
+.ahjo-sec>h2::before{content:"";flex:none;width:22px;height:4px;border-radius:2px;background:var(--kr-pink)}
+.ahjo-sec>h2>.ahjo-icon{color:var(--kr-navy)}
+.ahjo-cat>h2::before{display:none}
+.ahjo-sec-lead{margin:0 0 1rem;color:var(--ink-2);max-width:44rem;font-size:var(--fs-body)}
+.ahjo-badge{display:inline-block;margin:0;padding:.1rem .6rem;border-radius:999px;background:var(--kr-navy);color:#fff;font:700 .8125rem/1.5 var(--ahjo-head);white-space:nowrap}
+.ahjo-badge.planned{background:var(--kr-pink-soft);color:var(--kr-navy);border:1px solid var(--kr-pink)}
+.ahjo-badge-s,.ahjo-tag{display:inline-block;padding:0 .45rem;border-radius:999px;background:var(--bg-tint);font:600 .8125rem/1.6 var(--ahjo-text);color:var(--ink-2)}
+/* Ahjo 1 and Ahjo 2 side by side from 44rem */
+.ahjo-courses{display:grid;grid-template-columns:minmax(0,1fr);gap:1rem}
+@media (min-width:44rem){.ahjo-courses{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.ahjo-course{padding:1.1rem 1.25rem 1rem;border:1px solid var(--line);border-top:5px solid var(--kr-navy);border-radius:var(--card-radius);background:#fff}
+.ahjo-course-head{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:.4rem .75rem;margin:0 0 .5rem}
+.ahjo-course h3{margin:0;display:flex;flex-direction:column;font-size:1.375rem;line-height:1.2}
+.ahjo-course-name{font-weight:900}
+.ahjo-course-sub{font-weight:700;font-size:1.0625rem;color:var(--ink-2)}
+.ahjo-course-text{margin:0 0 .6rem}
+.ahjo-topics{margin:0;padding:0;list-style:none;display:grid;gap:.3rem}
+.ahjo-topics li{position:relative;padding-left:1.15rem}
+.ahjo-topics li::before{content:"";position:absolute;left:0;top:.62em;width:.5rem;height:.5rem;border-radius:2px;background:var(--kr-pink)}
+/* the bank's topics: a quiet two- to four-column list, not cards */
+.ahjo-cats{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:minmax(0,1fr);border-top:1px solid var(--line)}
+@media (min-width:40rem){.ahjo-cats{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:1.5rem}}
+@media (min-width:64rem){.ahjo-cats{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.ahjo-cats li{border-bottom:1px solid var(--line)}
+.ahjo-cats a{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:.65rem;align-items:start;min-height:56px;padding:.6rem .4rem;text-decoration:none;border-radius:8px}
+.ahjo-cats a:hover{background:var(--kr-pink-soft)}
+.ahjo-cats .ahjo-icon{grid-row:span 2;margin-top:.1rem;color:var(--kr-navy)}
+.ahjo-cat-t{font:700 1rem/1.3 var(--ahjo-head);color:var(--kr-navy)}
+.ahjo-cat-n{font-size:var(--fs-small);color:var(--ink-2)}
+.ahjo-more{margin:.75rem 0 0}.ahjo-more a{font:700 var(--fs-ui) var(--ahjo-head);display:inline-flex;align-items:center;min-height:40px}
+/* the equipment: groups in columns, each a heading with its icon and a plain list */
+.ahjo-equip{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,17rem),1fr));gap:1.25rem 1.75rem}
+.ahjo-eq h3{display:flex;align-items:center;gap:.5rem;margin:0 0 .4rem;padding-bottom:.35rem;border-bottom:2px solid var(--kr-pink);font-size:1.0625rem;line-height:1.3}
+.ahjo-eq ul{margin:0;padding-left:1.1rem;font-size:var(--fs-ui);line-height:1.5}
+.ahjo-eq li{margin:.15rem 0}.ahjo-eq li::marker{color:var(--kr-navy)}
+/* safety on the start page: one quiet panel */
+.ahjo-safety-teaser{display:flex;gap:1rem;align-items:flex-start;padding:1.1rem 1.25rem;border-radius:var(--card-radius);background:var(--kr-pink-soft)}
+.ahjo-safety-teaser h2{margin:0 0 .3rem;font-size:1.375rem;font-weight:900}
+.ahjo-safety-teaser p{margin:0 0 .4rem}
+.ahjo-icon-big{width:40px;height:40px;color:var(--kr-navy)}
+.ahjo-draft-short{font-size:var(--fs-ui);color:var(--ink-2)}
+/* studies linked to Ahjo */
+.ahjo-links{list-style:none;margin:0;padding:0;border-top:1px solid var(--line);display:grid;grid-template-columns:minmax(0,1fr)}
+@media (min-width:52rem){.ahjo-links{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:1.75rem}}
+.ahjo-links>li{padding:.7rem 0;border-bottom:1px solid var(--line)}
+.ahjo-links p{margin:0}
+.ahjo-link-name{font:700 1.0625rem/1.4 var(--ahjo-head);color:var(--kr-navy)}
+.ahjo-link-name a{display:inline-flex;align-items:center;min-height:40px}
+.ahjo-link-name>span:first-child{display:inline-flex;align-items:center;min-height:40px}
+.ahjo-link-text{font-size:var(--fs-ui);color:var(--ink-2)}
+.ahjo-link-cats{display:flex;flex-wrap:wrap;gap:.3rem;margin:.4rem 0 0;padding:0;list-style:none}
+.ahjo-link-cats a{display:inline-flex;align-items:center;min-height:40px;padding:0 .7rem;border-radius:999px;background:var(--bg-tint);font-size:var(--fs-small);text-decoration:none}
+.ahjo-link-cats a:hover{background:var(--kr-pink-soft)}
+/* the bank page: each topic a section, each resource a row */
+.ahjo-res-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.ahjo-res{padding:.75rem 0;border-bottom:1px solid var(--line)}
+.ahjo-res p{margin:0}
+.ahjo-res-head{display:flex;flex-wrap:wrap;align-items:center;gap:.25rem .5rem}
+.ahjo-res-title{font:700 1.0625rem/1.4 var(--ahjo-head)}
+.ahjo-res-title a{display:inline-flex;align-items:center;min-height:40px}
+.ahjo-res.coming .ahjo-res-title{color:var(--ink-2)}
+.ahjo-kind{font:600 var(--fs-small) var(--ahjo-text);color:var(--ink-2)}
+.ahjo-res-text{margin-top:.15rem!important;font-size:var(--fs-ui);max-width:44rem}
+.ahjo-res-meta{margin-top:.3rem!important;font-size:var(--fs-small);color:var(--ink-2);display:flex;flex-wrap:wrap;align-items:center;gap:.25rem .35rem}
+.ahjo-meta-l{font-weight:600;color:var(--ink-2)}
+.ahjo-chip{display:inline-block;padding:0 .5rem;border-radius:999px;border:1px solid var(--kr-pink);background:var(--kr-pink-soft);color:var(--kr-navy);font-weight:600;line-height:1.6}
+.ahjo-empty{margin:0;padding:.75rem 0;border-top:1px solid var(--line);color:var(--ink-2);font-size:var(--fs-ui)}
+/* the safety page */
+.ahjo-draft{display:flex;gap:.75rem;align-items:flex-start;margin:0 0 1.5rem;padding:1rem 1.15rem;border:1px solid var(--kr-pink);border-left:6px solid var(--kr-navy);border-radius:10px;background:var(--kr-pink-soft);max-width:48rem}
+.ahjo-draft .ahjo-icon{color:var(--kr-navy);margin-top:.1rem}
+.ahjo-safety{list-style:none;margin:0;padding:0;counter-reset:s;display:grid;grid-template-columns:minmax(0,1fr);column-gap:1.75rem;border-top:1px solid var(--line)}
+@media (min-width:52rem){.ahjo-safety{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.ahjo-safety-item{padding:.8rem 0;border-bottom:1px solid var(--line);counter-increment:s}
+.ahjo-safety-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:.3rem .75rem}
+.ahjo-safety-head h2{margin:0;font-size:1.125rem;line-height:1.35;font-weight:700}
+.ahjo-safety-head h2::before{content:counter(s) ". ";color:var(--ink-2)}
+.ahjo-safety-item>p{margin:.25rem 0 0}
+.ahjo-approved{font-size:var(--fs-small);color:var(--ink-2)}
+/* the front page's row: the logo as is, a little larger than a module icon so its mark reads */
+.ahjo-list{border-top:0}   /* continues the school's own list, so the planned rows stay level with the modules' */
+.ahjo-row-logo{width:40px;height:40px}
+@media print{.ahjo-nav{display:none}}
+@media (min-width:700px){.ahjo-list+.plan-list{margin-top:0}}   /* the Ahjo row takes the one-row gap, so the front page still fits 1440 x 900 */
+.ahjo-topics li{margin:0}
