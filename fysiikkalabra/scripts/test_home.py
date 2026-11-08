@@ -36,7 +36,7 @@ Exit status 1 on any failure."""
 import json, re, sys, pathlib, html as _h
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from courses import ROOT
-import i18n, investigations, local_courses, units
+import ahjo, i18n, investigations, local_courses, units
 
 SITE = ROOT / (sys.argv[1] if len(sys.argv) > 1 else "site")
 curriculum = {k: v for k, v in json.loads((ROOT / "curriculum.json").read_text()).items() if not k.startswith("_")}
@@ -207,7 +207,7 @@ for lang in i18n.languages():
         expect(f"{lang} {code}: the module page shows the same icon beside its title", psrc == src and page_html.find("mod-head-icon") < page_html.find("<h1"), psrc)
     # the school's planned courses (teacher 2026-11-04): after the school's own courses, greyed out, icon + name + one
     # sentence, never a link (no content yet)
-    plans = local_courses.planned(lang)
+    plans = ahjo.front_page_planned(local_courses.planned(lang), ahjo.load(lang))   # Ahjo 1 and 2 only on the Ahjo page (2026-11-08)
     pl = re.search(r'<ul class="mod-list plan-list" aria-label="[^"]+">(.*?)</ul>', home, re.S)
     prow = re.findall(r'<li><div class="mod-row coming planned">(<img [^>]+>)<span class="mod-text">.*?<span class="mod-title">(.*?)</span>.*?</div></li>', pl.group(1), re.S) if pl else []
     expect(f"{lang}: the planned courses greyed out after the school's courses, one unlinked row each with its icon",

@@ -15,7 +15,7 @@ student-facing content is Finnish first, without new translations until the teac
 |---|---|---|
 | A. Oppimateriaalit | national modules FY1–FY8 (LOPS 2019), `curriculum.json`, inquiry lessons | implemented |
 | B. Lukiokohtaiset opintojaksot | school-specific optional courses: FY10 first, later e.g. Makerspace 1–2 | **registry + landing page implemented** |
-| C. Ahjo Makerspace | open maker resources and, apart from them, Ahjo-specific local information | planned (phase G) |
+| C. Ahjo Makerspace | open maker resources and, apart from them, Ahjo-specific local information | **start page, resource bank, equipment and safety structure implemented** (2026-11-08) |
 | D. Opettajalle | public teacher guidance; nothing confidential in the public repo or site | planned |
 
 Simulations stay inside the lessons that use them. Concept cards come to the chapter (teacher 2026-11-03,
@@ -82,3 +82,21 @@ The existing rule stays: a page is public only when its reviews pass for its cur
 `planning` contains no teaching content and is labelled as a plan. Links to a national lesson never re-review it.
 Confidential material (answer keys, student data, restricted assessment) never goes into served files or this
 public repository: a hidden element is not access control.
+
+## Ahjo Makerspace (implemented 2026-11-08)
+- `ahjo.json` (Finnish source, `content/en/ahjo.json` in English; fi-easy shows the Finnish) and `scripts/ahjo.py`
+  (documents every field, validates, renders): `ahjo.html` (start page), `ahjo-materiaalit.html` (the bank, eight
+  categories), `ahjo-turvallisuus.html` (safety topics). Kiviruukin lukio's identity inside the common header and
+  footer: navy #012169, pink #fca5c7, Lato + Work Sans (self-hosted), the original logo
+  `assets/shared/brand/ahjo-makerspace-logo.svg` byte for byte (its SHA-256 is pinned in ahjo.py).
+- Ahjo 1 and Ahjo 2 stay planned courses in `local-courses.json` `_planned`; their name and line come from there.
+  When one becomes a real local course (its own entry), the Ahjo page links its page automatically.
+- One resource, one home: a bank entry is either a `ref` to an existing published page (chapter, investigation,
+  TVT-ohje; never copied, linked only where published), an Ahjo guide `ahjo-<name>` (`planned` = listed as coming,
+  no page; `ready` = `content/<lang>/ahjo/<id>.md` becomes `<id>.html`), or the safety section. `courses` lists the
+  existing course codes that use it; no new courses are created here.
+- Equipment: `equipment_status` "tuleva" → "Ahjon tuleva laitteisto"; switch to "kaytossa" (or per item) when the
+  devices are in use. No models or quantities. Laser cutter and CNC are not coming and the validator rejects them.
+- Safety: every topic "valmisteilla" until the school's responsible staff approve it ("hyvaksytty" needs
+  approved_by, date and its text). No electronic induction or approval system.
+- Checks: `python scripts/ahjo.py` (also in build.py) and `scripts/test_ahjo.py` (in CI).

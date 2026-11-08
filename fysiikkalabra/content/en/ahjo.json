@@ -1,0 +1,716 @@
+{
+  "title": "Ahjo Makerspace",
+  "eyebrow": "Kiviruukin lukio's makerspace",
+  "lead": "Ahjo is Kiviruukin lukio's shared space for making: a cross-curricular STEAM learning environment where ideas become models, prototypes and solutions.",
+  "opening": "Kiviruukin lukio opens in autumn 2027. Ahjo's equipment, guides and safety instructions will be ready before that, and this page grows as they are completed.",
+  "description": "Kiviruukin lukio's Ahjo Makerspace: the courses Ahjo 1 and Ahjo 2, a shared resource bank, Ahjo's upcoming equipment and safety.",
+  "ui": {
+    "nav_label": "Ahjo Makerspace",
+    "nav_home": "Ahjo",
+    "nav_courses": "Courses",
+    "nav_bank": "Resource bank",
+    "nav_equipment": "Equipment",
+    "nav_safety": "Safety",
+    "courses_h": "Ahjo's courses",
+    "courses_lead": "Ahjo 1 and Ahjo 2 are Kiviruukin lukio's own courses that use Ahjo's equipment and shared guides.",
+    "course_status_planned": "Being planned",
+    "course_status_ready": "Ready",
+    "course_open": "Open the course",
+    "course_contents": "Contents",
+    "equipment_h_tuleva": "Ahjo's upcoming equipment",
+    "equipment_h_kaytossa": "Ahjo's equipment",
+    "equipment_lead_tuleva": "This equipment is part of Ahjo's upcoming fit-out. Exact models and quantities will be confirmed later.",
+    "equipment_lead_kaytossa": "This equipment is in use in Ahjo.",
+    "status_tuleva": "Coming",
+    "status_kaytossa": "In use",
+    "bank_h": "Resource bank",
+    "bank_lead": "Shared guides and materials in eight topics. Each guide has one home, and the same guide serves every course that uses it.",
+    "bank_page_lead": "Ahjo's shared guides and materials. Each guide has one home; courses link to it instead of copying it.",
+    "bank_ready": {
+      "one": "{n} resource ready",
+      "other": "{n} resources ready"
+    },
+    "bank_coming": {
+      "one": "{n} coming",
+      "other": "{n} coming"
+    },
+    "bank_none": "Materials will be added later.",
+    "bank_all": "The whole resource bank",
+    "res_ready": "Ready",
+    "res_coming": "Coming",
+    "res_used_by": "Used in",
+    "res_subjects": "Also suits",
+    "res_in_finnish": "in Finnish",
+    "kind_lesson": "Physics chapter",
+    "kind_guide": "ICT guide",
+    "kind_investigation": "Investigation",
+    "kind_ahjo": "Ahjo guide",
+    "kind_safety": "Safety",
+    "safety_h": "Safety",
+    "safety_lead": "Work in Ahjo is safe work: everyone is introduced to the space and the equipment before using them.",
+    "safety_open": "Safety section",
+    "safety_page_title": "Safety in Ahjo",
+    "safety_page_lead": "This section will collect Ahjo's rules, the induction and the safety instructions for each kind of equipment.",
+    "safety_draft_note": "Ahjo's safety instructions are being prepared. The school's responsible staff will write and approve them before Ahjo is taken into use. This page has no approved instructions yet: until then, follow your teacher's instructions.",
+    "safety_status_valmisteilla": "Being prepared",
+    "safety_status_hyvaksytty": "Approved",
+    "safety_approved_by": "Approved by {who} on {date}",
+    "safety_covers": "Covers",
+    "links_h": "Ahjo in other studies",
+    "links_lead": "Ahjo's guides and equipment can be used in many subjects. These Ruukkilabra studies are linked to Ahjo.",
+    "links_planned": "being planned",
+    "logo_alt": "Ahjo – Kiviruukin Makerspace",
+    "front_line": "Courses, guides, equipment and safety.",
+    "plan_draft": "Draft: the goals and the lesson outline await the teacher's approval.",
+    "course_goals": "Goals",
+    "course_goals_lead": "In this course, you will learn to",
+    "course_lessons": "{n} lessons",
+    "lesson_example": "Example"
+  },
+  "courses": [
+    {
+      "code": "AHJO1",
+      "subtitle": "Technology basics",
+      "topics": [
+        "3D modelling",
+        "3D printing",
+        "Electronics and Arduino",
+        "Basics of programming and robotics",
+        "Getting to know the equipment and working safely"
+      ],
+      "goals": [
+        "work safely in Ahjo and use its equipment as you were introduced to it",
+        "model objects to measure and make them with a 3D printer",
+        "build simple circuits and measure them with a multimeter",
+        "program a microcontroller and use sensors and actuators",
+        "build and program a simple robot",
+        "document your work and assess how well it succeeded"
+      ],
+      "lessons": [
+        {
+          "title": "Welcome to Ahjo",
+          "text": "The space, the equipment and how we work; the rules and the induction.",
+          "example": "Map Ahjo's equipment and pick one real problem you could solve with it during the course, such as gear for your hobby or a tool that helps you study."
+        },
+        {
+          "title": "Working safely",
+          "text": "Hand and power tools, protective equipment and an orderly workstation.",
+          "example": "A risk assessment as at a workplace: choose one machine, identify its hazards and write instructions someone else can work safely from."
+        },
+        {
+          "title": "Basics of 3D modelling",
+          "text": "Basic shapes, joining and cutting in a modelling program.",
+          "example": "Model an ergonomic handle, a case or a spare part for something broken and justify your design choices."
+        },
+        {
+          "title": "A model to measure",
+          "text": "Dimensions, tolerances and fitting parts together.",
+          "example": "Design a two-part joint (snap fit or hinge) and find by experiment the clearance at which the parts fit together."
+        },
+        {
+          "title": "From model to print",
+          "text": "Slicing, print settings and using the printer.",
+          "example": "An optimisation challenge: the lightest printed truss that carries 2 kg. Compare how infill, layer height and print orientation affect strength and material use."
+        },
+        {
+          "title": "Judging a print and 3D scanning",
+          "text": "Print defects and how to fix them; scanning an object into a model.",
+          "example": "Scan an object, repair the model and print a scale copy. How accurate is it, and where do the differences come from?"
+        },
+        {
+          "title": "Circuits and components",
+          "text": "Power source, resistor, LED and breadboard.",
+          "example": "Size an LED's series resistor with Ohm's law, build the circuit and compare the measured current with your calculation. What happens without the resistor?"
+        },
+        {
+          "title": "Measuring with a multimeter",
+          "text": "Measuring voltage, current and resistance connected the right way.",
+          "example": "Measure the current drawn by a phone charger, an Arduino and a motor in different situations and estimate how long a battery would power your device."
+        },
+        {
+          "title": "A first Arduino program",
+          "text": "The programming environment, digital outputs and a blinking LED.",
+          "example": "Program a reaction-time game that measures reaction time in milliseconds and computes the class's mean and spread."
+        },
+        {
+          "title": "Sensors and inputs",
+          "text": "Button, light and distance sensors; conditions and loops.",
+          "example": "Build a measuring device: a classroom CO₂, noise or temperature logger that records data. Plot a graph of a lesson's data."
+        },
+        {
+          "title": "Motors and actuators",
+          "text": "Servo and DC motor; power supply and control.",
+          "example": "Use a servo to turn a solar panel towards the light and measure how much power tracking adds compared with a fixed panel."
+        },
+        {
+          "title": "Soldering",
+          "text": "Using a soldering station and soldering a small circuit.",
+          "example": "Solder your measuring device onto stripboard so that it lasts. Test the joints with a multimeter and compare reliability with the breadboard."
+        },
+        {
+          "title": "Building a robot",
+          "text": "The structure of a robotics kit, drive train and sensors.",
+          "example": "Build a robot that carries a load around a course as fast as possible. Compare how the gear ratio affects speed and pulling force."
+        },
+        {
+          "title": "Programming a robot",
+          "text": "Movement, sensor control and solving a task with a program.",
+          "example": "Program a robot to find its way past obstacles with its sensors. Compare simple and proportional (P) control in line following."
+        },
+        {
+          "title": "Mini project",
+          "text": "A small device of your own with the methods learned: design and build.",
+          "example": "A small device of your own with the methods learned, such as a plant moisture monitor, a bike light system or a sports performance meter."
+        },
+        {
+          "title": "Presentation and self-assessment",
+          "text": "Presenting and documenting the mini project and assessing your own learning.",
+          "example": "Present your device as in a product review: goal, solution, measurements and what you would do in the next version."
+        }
+      ],
+      "plan_status": "draft"
+    },
+    {
+      "code": "AHJO2",
+      "subtitle": "Design and build",
+      "topics": [
+        "Ideation and defining the problem",
+        "Design and prototyping",
+        "Building",
+        "Testing and improving",
+        "Documentation and assessment"
+      ],
+      "goals": [
+        "define a problem and the user's needs",
+        "come up with possible solutions and choose between them with reasons",
+        "plan and schedule a project in a group",
+        "build a prototype with Ahjo's equipment and methods",
+        "test a solution and improve it on the basis of tests and feedback",
+        "document and present the project and assess your own and the group's work"
+      ],
+      "lessons": [
+        {
+          "title": "Starting the project",
+          "text": "How Ahjo 2 runs, teams and finding a project topic.",
+          "example": "Look at a few student invention and enterprise projects and collect problems that matter to you, the school or the neighbourhood."
+        },
+        {
+          "title": "Defining the problem",
+          "text": "Whose problem, what need, and how success is recognised.",
+          "example": "Interview at least three users and write a precise problem definition: who, in what situation, and by what measurable criterion the solution succeeds."
+        },
+        {
+          "title": "Ideation",
+          "text": "Ideation methods and producing several possible solutions.",
+          "example": "Ideate through constraints: what if it cost at most €20, worked without electricity, or had to be repairable by the user?"
+        },
+        {
+          "title": "Judging and choosing ideas",
+          "text": "Criteria, comparison and a justified choice.",
+          "example": "Rank the ideas with a weighted decision matrix that also covers sustainability: materials, energy use and life cycle."
+        },
+        {
+          "title": "Project plan",
+          "text": "Goals, roles, schedule, materials and risks.",
+          "example": "Write a plan with milestones, responsibilities, a budget and a risk assessment, as in a real product development project."
+        },
+        {
+          "title": "Design",
+          "text": "Sketches, dimensioned drawings and digital models.",
+          "example": "Make a dimensioned drawing and a 3D model from which another group could build the same part without explanations."
+        },
+        {
+          "title": "Materials and methods",
+          "text": "Choosing suitable materials, equipment and ways of making.",
+          "example": "Choose a material with reasons: compare strength, cost, making time and recyclability for at least two options."
+        },
+        {
+          "title": "A first prototype",
+          "text": "A quick, simple model to try out the idea.",
+          "example": "Build the smallest working prototype that tests the riskiest assumption of your project."
+        },
+        {
+          "title": "Testing the prototype",
+          "text": "A test plan, measuring and recording observations.",
+          "example": "Write a test plan: what is measured, how precisely, and what result counts as success. Collect the data and present it as a graph."
+        },
+        {
+          "title": "Feedback and improvement",
+          "text": "Feedback from users and the group; planning changes.",
+          "example": "Run a user test in which an outsider uses the prototype without instructions. Record what you see and decide what to change and why."
+        },
+        {
+          "title": "Building 1",
+          "text": "Making the parts of the solution according to the plan.",
+          "example": "Make the parts with different machines and share the work so that every member masters at least one new method."
+        },
+        {
+          "title": "Building 2",
+          "text": "Assembling the parts; electronics, programming or finishing as needed.",
+          "example": "Add a sensor, a microcontroller or a printed textile part that measurably improves how it works."
+        },
+        {
+          "title": "Final testing",
+          "text": "Does the solution work: tests, measurements and comparison with the goals.",
+          "example": "Test the final solution with the same measures as the prototype and judge whether the original goal was met."
+        },
+        {
+          "title": "Finishing",
+          "text": "Last fixes, appearance and usability.",
+          "example": "Finish it for presentation: a case, labels and instructions that let the user manage without the makers."
+        },
+        {
+          "title": "Documentation",
+          "text": "The project's stages, decisions and results into a portfolio.",
+          "example": "Put together a portfolio that tells your decisions and failures honestly; it also serves an upper secondary diploma and applications to further studies."
+        },
+        {
+          "title": "Presentation and assessment",
+          "text": "Presenting the project and assessing your own and the group's work.",
+          "example": "Pitch the project to an audience or a partner company and answer questions. Finally, assess your own and the group's work."
+        }
+      ],
+      "plan_status": "draft"
+    }
+  ],
+  "categories": [
+    {
+      "id": "3d",
+      "icon": "cube",
+      "title": "3D design and digital fabrication",
+      "text": "Modelling, 3D printing and 3D scanning."
+    },
+    {
+      "id": "elektroniikka",
+      "icon": "chip",
+      "title": "Electronics and programming",
+      "text": "Circuits, components, measuring and microcontrollers."
+    },
+    {
+      "id": "robotiikka",
+      "icon": "robot",
+      "title": "Robotics and automation",
+      "text": "Motors, sensors and programmable robots."
+    },
+    {
+      "id": "vr",
+      "icon": "vr",
+      "title": "VR and digital environments",
+      "text": "Virtual reality in teaching and in your own projects."
+    },
+    {
+      "id": "tekstiilit",
+      "icon": "scissors",
+      "title": "Textiles, design and other making",
+      "text": "Vinyl cutter, heat press, sewing, embroidery and large-format printing."
+    },
+    {
+      "id": "tyokalut",
+      "icon": "tools",
+      "title": "Tools and materials",
+      "text": "Hand and power tools, measuring instruments and choosing materials."
+    },
+    {
+      "id": "turvallisuus",
+      "icon": "shield",
+      "title": "Safety and induction",
+      "text": "Rules of the space, induction and safe use of the equipment."
+    },
+    {
+      "id": "dokumentointi",
+      "icon": "notebook",
+      "title": "Documenting project work",
+      "text": "Measurements, graphs and reporting to support a project."
+    }
+  ],
+  "resources": [
+    {
+      "ref": "fy6-1",
+      "category": "elektroniikka",
+      "why": "The basics of a circuit, current and voltage before your first connection.",
+      "courses": [
+        "AHJO1",
+        "AHJO2"
+      ]
+    },
+    {
+      "ref": "fy6-3",
+      "category": "elektroniikka",
+      "why": "Ohm's law: for example, choosing the series resistor of an LED.",
+      "courses": [
+        "AHJO1",
+        "AHJO2"
+      ]
+    },
+    {
+      "ref": "fy6-14",
+      "category": "elektroniikka",
+      "why": "Diode and LED: why a component conducts in one direction only.",
+      "courses": [
+        "AHJO1"
+      ]
+    },
+    {
+      "id": "ahjo-arduino",
+      "category": "elektroniikka",
+      "title": "First steps with Arduino",
+      "text": "A first circuit and program with an Arduino starter kit.",
+      "status": "planned",
+      "courses": [
+        "AHJO1",
+        "AHJO2",
+        "KILPAROBO"
+      ]
+    },
+    {
+      "id": "ahjo-juottaminen",
+      "category": "elektroniikka",
+      "title": "Soldering",
+      "text": "Using a soldering station and recognising a good joint.",
+      "status": "planned",
+      "courses": [
+        "AHJO1",
+        "AHJO2"
+      ]
+    },
+    {
+      "id": "ahjo-3d-mallinnus",
+      "category": "3d",
+      "title": "Basics of 3D modelling",
+      "text": "A first printable object in a modelling program.",
+      "status": "planned",
+      "courses": [
+        "AHJO1",
+        "AHJO2"
+      ],
+      "subjects": [
+        "visual arts"
+      ]
+    },
+    {
+      "id": "ahjo-3d-tulostus",
+      "category": "3d",
+      "title": "Getting started with 3D printing",
+      "text": "From model to print: slicing, printing and finishing.",
+      "status": "planned",
+      "courses": [
+        "AHJO1",
+        "AHJO2"
+      ],
+      "subjects": [
+        "visual arts",
+        "upper secondary diplomas"
+      ]
+    },
+    {
+      "ref": "fy7-4",
+      "category": "robotiikka",
+      "why": "How an electric motor works: the physics of a robot's motion.",
+      "courses": [
+        "AHJO1",
+        "KILPAROBO"
+      ]
+    },
+    {
+      "id": "ahjo-robotiikkasarja",
+      "category": "robotiikka",
+      "title": "Getting started with a robotics kit",
+      "text": "Build and program your first moving robot.",
+      "status": "planned",
+      "courses": [
+        "AHJO1",
+        "KILPAROBO"
+      ]
+    },
+    {
+      "id": "ahjo-vr",
+      "category": "vr",
+      "title": "Using VR headsets",
+      "text": "Setting up a VR headset, a safe play area and cleaning.",
+      "status": "planned",
+      "courses": [
+        "AHJO1"
+      ],
+      "subjects": [
+        "all subjects"
+      ]
+    },
+    {
+      "id": "ahjo-vinyylileikkuri",
+      "category": "tekstiilit",
+      "title": "Vinyl cutter and heat press",
+      "text": "From an image to a sticker or a fabric print.",
+      "status": "planned",
+      "courses": [
+        "AHJO2"
+      ],
+      "subjects": [
+        "visual arts",
+        "design"
+      ]
+    },
+    {
+      "ref": "fy6-2",
+      "category": "tyokalut",
+      "why": "Using a multimeter: measuring current and voltage connected the right way.",
+      "courses": [
+        "AHJO1",
+        "AHJO2"
+      ]
+    },
+    {
+      "ref": "fy6-15",
+      "category": "turvallisuus",
+      "why": "The basics of electrical safety before working with electrical devices.",
+      "courses": [
+        "AHJO1",
+        "AHJO2"
+      ]
+    },
+    {
+      "safety": true,
+      "category": "turvallisuus",
+      "courses": [
+        "AHJO1",
+        "AHJO2"
+      ]
+    },
+    {
+      "ref": "tvt-mittausohjelma",
+      "category": "dokumentointi",
+      "why": "Sensor measurements on a computer for testing a prototype.",
+      "courses": [
+        "AHJO2"
+      ]
+    },
+    {
+      "ref": "tvt-videoanalyysi",
+      "category": "dokumentointi",
+      "why": "Measuring motion from video when you test a device you built.",
+      "courses": [
+        "AHJO2"
+      ]
+    },
+    {
+      "ref": "tvt-tyoselostus",
+      "category": "dokumentointi",
+      "why": "Presenting measurements and graphs in a project report.",
+      "courses": [
+        "AHJO2"
+      ]
+    },
+    {
+      "id": "ahjo-projektipaivakirja",
+      "category": "dokumentointi",
+      "title": "Project journal",
+      "text": "Keeping ideas, decisions, tests and changes during a project.",
+      "status": "planned",
+      "courses": [
+        "AHJO2"
+      ]
+    }
+  ],
+  "equipment_status": "tuleva",
+  "equipment": [
+    {
+      "id": "3d",
+      "icon": "cube",
+      "title": "3D design and fabrication",
+      "items": [
+        "3D printers",
+        "3D scanner",
+        "Computers suited to 3D modelling",
+        "Design and printing software"
+      ]
+    },
+    {
+      "id": "elektroniikka",
+      "icon": "chip",
+      "title": "Electronics and programming",
+      "items": [
+        "Arduino starter kits",
+        "Raspberry Pi single-board computers",
+        "BBC micro:bit controllers",
+        "Electronic component kits",
+        "Soldering stations",
+        "Work stands and magnifiers",
+        "Adjustable power supplies",
+        "Oscilloscopes",
+        "Function generators",
+        "Multimeters and other basic tools"
+      ]
+    },
+    {
+      "id": "robotiikka",
+      "icon": "robot",
+      "title": "Robotics",
+      "items": [
+        "LEGO and/or VEX robotics kits",
+        "Robotics solutions based on Arduino and Raspberry Pi"
+      ]
+    },
+    {
+      "id": "vr",
+      "icon": "vr",
+      "title": "Virtual reality",
+      "items": [
+        "VR headsets and their accessories",
+        "The computing VR work needs"
+      ]
+    },
+    {
+      "id": "tekstiilit",
+      "icon": "scissors",
+      "title": "Textiles and digital design",
+      "items": [
+        "Vinyl cutter",
+        "Heat press",
+        "Textile printing equipment",
+        "Sewing machines",
+        "Embroidery machine",
+        "Large-format printer"
+      ]
+    },
+    {
+      "id": "mekaaninen",
+      "icon": "tools",
+      "title": "Mechanical work and prototyping",
+      "items": [
+        "Pillar drill",
+        "Hot glue guns",
+        "Cutting mats",
+        "General hand and power tools",
+        "Workbenches and a tool wall",
+        "Other material-handling equipment and supplies"
+      ]
+    },
+    {
+      "id": "tila",
+      "icon": "box",
+      "title": "Workspace",
+      "items": [
+        "Project storage boxes",
+        "Recycling points",
+        "Cleaning equipment for workstations",
+        "First-aid equipment",
+        "Protective equipment",
+        "Ventilation and local exhaust where needed",
+        "Presentation and teaching technology"
+      ]
+    }
+  ],
+  "safety": [
+    {
+      "id": "saannot",
+      "title": "Rules of the space",
+      "covers": "When and how Ahjo is used, order and tidiness at the workstation, the visit and loan records, and bringing your own devices into the space."
+    },
+    {
+      "id": "perehdytys",
+      "title": "Student induction",
+      "covers": "What the induction covers before using the space and each kind of equipment."
+    },
+    {
+      "id": "valvonta",
+      "title": "Supervision and independent use",
+      "covers": "What is done under a teacher's supervision, on what terms the space can be used independently, and why nobody works there alone."
+    },
+    {
+      "id": "tyokalut",
+      "title": "Safe use of tools and machines",
+      "covers": "General safety principles for hand and power tools, borrowing tools and reporting a broken machine."
+    },
+    {
+      "id": "elektroniikka",
+      "title": "Soldering and electronics work",
+      "covers": "Using a soldering station, solder fumes, power supplies and electrical safety: voltage and energy limits for self-built devices, mains power and lithium batteries."
+    },
+    {
+      "id": "3d-tulostus",
+      "title": "3D printing safety",
+      "covers": "Hot parts, materials, ventilation and keeping an eye on the printer."
+    },
+    {
+      "id": "mekaaninen",
+      "title": "Pillar drill and other mechanical tools",
+      "covers": "Clamping the workpiece, safety glasses, hair and clothing, handling bits and blades."
+    },
+    {
+      "id": "vr",
+      "title": "Safe and hygienic use of VR equipment",
+      "covers": "A safe play area, breaks, motion sickness and cleaning the equipment."
+    },
+    {
+      "id": "suojaimet",
+      "title": "Ventilation, protective equipment and fire safety",
+      "covers": "Local exhaust, safety glasses, hearing protection and other protection, chemical warning labels, fire hazards and extinguishers."
+    },
+    {
+      "id": "sailytys",
+      "title": "Storing projects",
+      "covers": "Labelling and storing unfinished work, and when a project counts as finished and is taken apart."
+    },
+    {
+      "id": "kierratys",
+      "title": "Recycling and waste",
+      "covers": "Sorting materials, electronic scrap (WEEE), hazardous waste and returning components for reuse."
+    },
+    {
+      "id": "onnettomuus",
+      "title": "What to do in accidents and dangerous situations",
+      "covers": "First aid, raising the alarm, stopping machines and reporting what happened."
+    }
+  ],
+  "links": [
+    {
+      "course": "AHJO1",
+      "text": "Technology basics: 3D modelling and printing, electronics and Arduino, the basics of programming and robotics.",
+      "categories": [
+        "3d",
+        "elektroniikka",
+        "robotiikka",
+        "turvallisuus"
+      ]
+    },
+    {
+      "course": "AHJO2",
+      "text": "Your own prototype, from an idea to a tested and documented solution.",
+      "categories": [
+        "3d",
+        "elektroniikka",
+        "tekstiilit",
+        "dokumentointi"
+      ]
+    },
+    {
+      "course": "KILPAROBO",
+      "text": "Designing, building and programming robots for competitions.",
+      "categories": [
+        "robotiikka",
+        "elektroniikka"
+      ]
+    },
+    {
+      "course": "FY6",
+      "text": "Circuits, Ohm's law, the diode and LED and electrical safety: the physics of electronics.",
+      "categories": [
+        "elektroniikka",
+        "turvallisuus"
+      ]
+    },
+    {
+      "course": "FY7",
+      "text": "The electric motor and the magnetic field: the physics of a robot's actuators.",
+      "categories": [
+        "robotiikka"
+      ]
+    },
+    {
+      "course": "FY10",
+      "text": "Measuring, graphs and the lab report: the same ICT guides support testing and reporting on a prototype.",
+      "categories": [
+        "dokumentointi"
+      ]
+    }
+  ]
+}

@@ -28,7 +28,7 @@ stay in their lesson folders and keep their <id>-sim.js URLs.
 """
 import hashlib, json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status, published_exercises, WorkTree
-import answers_shown, assigned, booklets, cardgrid, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, svgids, units, tablefit
+import ahjo, answers_shown, assigned, booklets, cardgrid, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, svgids, units, tablefit
 from i18n import t as T
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
@@ -68,6 +68,10 @@ tpl = (TPL / "lesson.html").read_text()
 page_tpl = (TPL / "page.html").read_text()
 curriculum = json.loads((ROOT / "curriculum.json").read_text())
 if local_courses.validate(curriculum): sys.exit("\n".join(local_courses.validate(curriculum)))
+_ahjo_errs = ahjo.validate({l["id"] for k, m in curriculum.items() if not k.startswith("_") for l in m.get("lessons", [])}, set(investigations.ids()),
+                           set(guides.ids()), [p["icon"] for p in local_courses.planned()], list(local_courses.load()),
+                           {k: m["title"] for k, m in curriculum.items() if not k.startswith("_")})
+if _ahjo_errs: sys.exit("ERROR: ahjo.json (scripts/ahjo.py):\n" + "\n".join(_ahjo_errs))
 
 
 # Submission trial (teacher 2026-11-05): "Lataa kaikki ratkaisut" on the chapters of these courses in these languages
@@ -469,6 +473,14 @@ def planned_row(p):
     return (f'<li><div class="mod-row coming planned">{module_icons.img(p["icon"], 40)}'
             f'<span class="mod-text"><span class="mod-name"><span class="mod-title">{esc(p["title"])}</span></span>'
             f'<span class="mod-q" title="{q}">{q}</span></span></div></li>')
+
+
+def ahjo_row(d):
+    """The front page's row of Ahjo Makerspace: its original logo (small), the name and one line, the whole row a link."""
+    q = esc(d["ui"]["front_line"])
+    return (f'<li><a class="mod-row ahjo-row" href="{ahjo.PAGE}"><img class="mod-icon ahjo-row-logo" src="{ahjo.LOGO_SRC}" alt="" width="40" height="40" aria-hidden="true">'
+            f'<span class="mod-text"><span class="mod-name"><span class="mod-title">{esc(d["title"])}</span></span>'
+            f'<span class="mod-q" title="{q}">{q}</span></span><span class="mod-go" aria-hidden="true">→</span></a></li>')
 
 
 ABOUT = "tietoa.html"
@@ -1308,7 +1320,9 @@ def build_language(lang):
     # modules on the left; on the right Tulossa (dimmed) and the school's own courses under the school's name. The
     # study guide is a page of its own, nain-opiskelet.html (study_guide), linked from the header as "Näin opiskelet".
     school = next(iter(local.values()))["school"] if local else ""
-    plan_rows = "".join(planned_row(p) for p in local_courses.planned(lang))
+    ahjo_data = ahjo.load(lang)
+    # Ahjo 1 and Ahjo 2 are shown on the Ahjo page only, not in the front page's planned list (teacher 2026-11-08)
+    plan_rows = "".join(planned_row(p) for p in ahjo.front_page_planned(local_courses.planned(lang), ahjo_data))
     home = (local_notes +
         # beside the heading a small badge: the site is still being built (teacher 2026-11-05, "leima että työn alla")
         f'<section class="home-intro" aria-labelledby="h-intro"><div class="intro-title"><h1 id="h-intro">{T("site.home_h1")}</h1>'
@@ -1326,6 +1340,8 @@ def build_language(lang):
         + (f'<h3 class="mod-group mod-school"><img src="brand/kiviruukin-lukio-rivi-musta.svg" alt="{esc(school)}" width="293" height="32"></h3>'
            f'<ul class="mod-list local-list">{local_rows}</ul>' if local_rows else "")
         # after a gap, the school's planned courses, greyed out and unlinked (teacher 2026-11-04: no content yet)
+        # Ahjo Makerspace (teacher 2026-11-08): the school's makerspace, one row with its original logo before the planned courses
+        + (f'<ul class="mod-list ahjo-list">{ahjo_row(ahjo_data)}</ul>' if ahjo_data else "")
         + (f'<ul class="mod-list plan-list" aria-label="{esc(T("site.planned_courses"))}">{plan_rows}</ul>' if plan_rows else "")
         + '</div></div></section>')
     (out / "index.html").write_text(front_chrome(page(T("site.home_title"), home, "", "index.html", T("site.home_description"), main_class="home",
@@ -1373,6 +1389,35 @@ def build_language(lang):
         (out / TEACHER_PAGE).write_text(page(T("teacher.title"), teacher_page_body(gf.name), f'<a href="index.html">{T("site.name")}</a> › {esc(T("teacher.title"))}',
                                              TEACHER_PAGE, T("teacher.desc"), main_class="reading teacher-page"))
         teacher_built = True
+    # Ahjo Makerspace (teacher 2026-11-08, scripts/ahjo.py): its start page, resource bank and safety section in every language
+    ahjo_built = []
+    if ahjo_data:
+        mod_titles = {k: course_text(k, curriculum[k])["title"] for k, _ in modules}
+        lesson_titles = {lid: t for k, _ in modules for lid, t in chapter_titles(k).items()}
+        def ahjo_ref(rid):
+            if rid in built_ids: return lesson_titles[rid], "lesson", False
+            if rid in guide_built: return guide_built[rid]["title"], "guide", False
+            if rid in inv_built: return inv_built[rid]["title"], "investigation", False
+            if lang != i18n.SOURCE and (OUTS[i18n.SOURCE] / f"{rid}.html").is_file():   # only the Finnish page: linked there, marked "in Finnish"
+                fi_only = not lang.startswith("fi")
+                if rid in guides.ids(): return guides.load(rid)["title"], "guide", fi_only
+                if rid in investigations.ids(): return investigations.load(rid)["title"], "investigation", fi_only
+                return next(l["title"] for k, m in curriculum.items() if not k.startswith("_") for l in m.get("lessons", []) if l["id"] == rid), "lesson", fi_only
+            return None
+        planned = local_courses.planned(lang)
+        crumb = f'<a href="index.html">{T("site.name")}</a> › '
+        home_crumb = crumb + f'<a href="{ahjo.PAGE}">{esc(ahjo_data["title"])}</a> › '
+        u = ahjo_data["ui"]; pages = [
+            (ahjo.PAGE, ahjo_data["title"], ahjo.start_body(ahjo_data, planned, local, mod_titles, ahjo_ref), crumb + esc(ahjo_data["title"]), ahjo_data["description"]),
+            (ahjo.BANK, u["bank_h"], ahjo.bank_body(ahjo_data, planned, local, mod_titles, ahjo_ref), home_crumb + esc(u["bank_h"]), u["bank_page_lead"]),
+            (ahjo.SAFETY, u["safety_page_title"], ahjo.safety_body(ahjo_data, lang, render_md), home_crumb + esc(u["safety_h"]), u["safety_page_lead"])]
+        for g in ahjo.ready_guides(ahjo_data):   # an Ahjo guide the teacher marked ready: its own page under the bank
+            r = next(r for r in ahjo_data["resources"] if r.get("id") == g)
+            pages.append((f"{g}.html", r["title"], ahjo.guide_body(ahjo_data, g, lang, render_md),
+                          home_crumb + f'<a href="{ahjo.BANK}">{esc(u["bank_h"])}</a> › ' + esc(r["title"]), r["text"]))
+        for name, title, body, crumbs, desc in pages:
+            (out / name).write_text(page(title, body, crumbs, name, desc, main_class="reading ahjo-page"))
+            ahjo_built.append(name)
     # Tietosuoja (teacher 2026-11-04): content/<lang>/tietosuoja.md (the Finnish where a language has none), linked from every footer
     priv_md = next((f for f in (ROOT / "content" / lang / "tietosuoja.md", ROOT / "content" / i18n.SOURCE / "tietosuoja.md") if f.is_file()), None)
     if priv_md:
@@ -1387,7 +1432,7 @@ def build_language(lang):
                 removed.append(lid if lang == i18n.SOURCE else f"{lang}/{lid}")
                 print(f"{'::warning::' if os.environ.get('GITHUB_ACTIONS') else 'WARNING:'} {old_page.relative_to(LIVE)} is on the live site but its reviews are not current ({why}); this build removes it")
     pre = out.relative_to(SITE).as_posix() + "/" if out != SITE else ""
-    expected.extend(pre + n for n in ["index.html", ABOUT] + ([PRIVACY] if priv_md else []) + ([TEACHER_PAGE] if teacher_built else []) + ([concept_cards.APP] if concept_cards.modules(concept_cards.data_lang(lang)) else []) + ([reading_tips.PAGE] if reading_tips.SOURCE.is_file() else []) + [booklets.PAGE, STUDY_PAGE] + [f"{c}.html" for c, _ in modules] + [f"{c}.html" for c in local] + [f"{i}.html" for i in built_ids] + [f"{i}.html" for i in inv_built] + [f"{g}.html" for g in guide_built] + [practice.page_name(c) for c in practice_built] + [practice.page_name(c + practice.EXAM) for c in exam_built] + mixer_built
+    expected.extend(pre + n for n in ["index.html", ABOUT] + ([PRIVACY] if priv_md else []) + ([TEACHER_PAGE] if teacher_built else []) + ([concept_cards.APP] if concept_cards.modules(concept_cards.data_lang(lang)) else []) + ([reading_tips.PAGE] if reading_tips.SOURCE.is_file() else []) + [booklets.PAGE, STUDY_PAGE] + ahjo_built + [f"{c}.html" for c, _ in modules] + [f"{c}.html" for c in local] + [f"{i}.html" for i in built_ids] + [f"{i}.html" for i in inv_built] + [f"{g}.html" for g in guide_built] + [practice.page_name(c) for c in practice_built] + [practice.page_name(c + practice.EXAM) for c in exam_built] + mixer_built
                     + [f"{u}.html" for u, ls in unit_pub.items() if lang in ls and not only])
     if SITE.name == "site.tmp" and lang in units.languages():   # a unit that lost its reviews leaves the site only with a warning
         for u in units.ids(lang):
