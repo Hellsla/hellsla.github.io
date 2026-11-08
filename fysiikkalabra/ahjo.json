@@ -96,6 +96,13 @@
     ],
     "lesson_output": "Tuotos",
     "lesson_guides": "Ohjeet",
+    "challenges_h": "Pienet haasteet",
+    "challenges_lead": "15–45 minuutin haasteita, joita voi tehdä Ahjo 1:n tuntien yhteydessä. Jokaisessa on kolme tasoa: Kokeile, Muokkaa ja Haasta itsesi. Mukana on myös kuvataidetta, musiikkia, muotoilua ja käsitöitä.",
+    "challenge_min": "{n} min",
+    "challenge_lesson": "Ahjo 1, tunti {n}",
+    "challenge_materials": "Tarvitset",
+    "challenge_induction": "Vaatii laiteperehdytyksen",
+    "lesson_challenge": "Pieni haaste",
     "deepening_h": "Syventävät osat",
     "deepening_lead": "Valinnaisia lisätöitä niille, jotka ehtivät pidemmälle tai haluavat syventyä. Ne eivät kuulu kaikille yhteiseen runkoon.",
     "course_page_open": "Avaa kurssisivu",
@@ -1537,6 +1544,268 @@
           "url": "https://www.teachengineering.org/activities/cub-2825-creative-engineering-electric-vehicle-design"
         }
       ]
+    }
+  ],
+  "challenges": [
+    {
+      "id": "paperivalopiiri",
+      "title": "Valokortti paperipiirillä",
+      "minutes": 30,
+      "lesson": 1,
+      "make": "Kortti, jossa LED syttyy, kun taitat kulman kiinni.",
+      "subjects": [
+        "kuvataide"
+      ],
+      "materials": [
+        "kartonki",
+        "kuparinauha",
+        "nappiparisto 3 V",
+        "LED",
+        "teippi"
+      ],
+      "levels": {
+        "try": "Liimaa kuparinauhasta kaksi rataa kortille, laita LED ja paristo niiden väliin ja taita kulma kytkimeksi.",
+        "modify": "Piirrä tai leikkaa kortin kanteen kuva, jonka läpi valo näkyy.",
+        "challenge": "Lisää toinen LED rinnan. Selitä, miksi molemmat palavat yhtä kirkkaasti."
+      }
+    },
+    {
+      "id": "leimasin",
+      "title": "Oma leimasin",
+      "minutes": 30,
+      "lesson": 3,
+      "make": "Tinkercadissa mallinnettu leimasin omalla kuviolla tai nimikirjaimilla.",
+      "subjects": [
+        "kuvataide",
+        "muotoilu"
+      ],
+      "materials": [
+        "tietokone ja Tinkercad",
+        "leimasinmuste (tulostuksen jälkeen)"
+      ],
+      "levels": {
+        "try": "Mallinna $30\\,\\text{mm}$:n kiekko ja sen päälle koholla oleva kuvio tai kirjaimet.",
+        "modify": "Tee oma kuvio tai logo ja lisää leimasimelle kahva.",
+        "challenge": "Muista peilata kirjaimet. Selitä, miksi leiman kuva on peilikuva."
+      }
+    },
+    {
+      "id": "paperisilta",
+      "title": "Paperisilta",
+      "minutes": 30,
+      "lesson": 4,
+      "make": "Yhdestä A4-arkista taiteltu silta, joka ylittää $20\\,\\text{cm}$:n välin.",
+      "subjects": [
+        "muotoilu",
+        "fysiikka"
+      ],
+      "materials": [
+        "A4-paperi",
+        "kaksi kirjapinoa",
+        "kolikoita tai punnuksia",
+        "vaaka"
+      ],
+      "levels": {
+        "try": "Taittele arkista silta ja lisää sen päälle kolikoita, kunnes se pettää.",
+        "modify": "Kokeile toista muotoa, kuten haitaria, putkea tai kaarta, ja vertaa tuloksia.",
+        "challenge": "Punnitse suurin kuorma, jonka silta kesti, ja laske, montako kertaa oman massansa verran se kantoi."
+      }
+    },
+    {
+      "id": "arvaa-ja-punnitse",
+      "title": "Arvaa ja punnitse",
+      "minutes": 15,
+      "lesson": 6,
+      "make": "Oma arvio tulosteen massasta ja sen tarkistus vaa'alla.",
+      "subjects": [
+        "matematiikka",
+        "fysiikka"
+      ],
+      "materials": [
+        "valmiita tulosteita",
+        "PrusaSlicer",
+        "vaaka, jonka tarkkuus on $0{,}1\\,\\text{g}$"
+      ],
+      "levels": {
+        "try": "Arvaa kolmen tulosteen massa ennen punnitsemista ja kirjaa arviot.",
+        "modify": "Vertaa arviotasi viipalointiohjelman arvioon ja vaa'an lukemaan.",
+        "challenge": "Laske tulosteen materiaalikustannus, kun kelan massa ja hinta tunnetaan."
+      }
+    },
+    {
+      "id": "ommeltu-piiri",
+      "title": "Ommeltu valopinssi",
+      "minutes": 45,
+      "lesson": 7,
+      "make": "Huopapinssi, jonka LED syttyy johtavalla langalla ommellun piirin ansiosta.",
+      "subjects": [
+        "käsityö",
+        "kuvataide"
+      ],
+      "materials": [
+        "huopaa",
+        "johtavaa lankaa",
+        "nappiparisto ja pidike",
+        "LED",
+        "neula"
+      ],
+      "levels": {
+        "try": "Ompele paristopidike ja LED huopaan niin, että plus- ja miinusradat eivät kosketa toisiaan.",
+        "modify": "Suunnittele pinssin muoto ja kuvio itse ja sijoita LED kuvion osaksi.",
+        "challenge": "Mittaa langan resistanssi yleismittarilla ja arvioi, kuinka pitkä lanka vielä toimii."
+      }
+    },
+    {
+      "id": "mittausjuliste",
+      "title": "Mittausjuliste",
+      "minutes": 30,
+      "lesson": 8,
+      "make": "Infografiikka luokan paristomittauksista.",
+      "subjects": [
+        "kuvataide",
+        "matematiikka"
+      ],
+      "materials": [
+        "luokan mittaustulokset",
+        "paperi ja kynät tai taulukkolaskentaohjelma"
+      ],
+      "levels": {
+        "try": "Kokoa luokan paristomittaukset yhteen taulukkoon yksiköineen.",
+        "modify": "Tee tuloksista juliste, jossa kuva kertoo tuloksen ilman pitkää tekstiä.",
+        "challenge": "Laske keskiarvo ja vaihteluväli ja merkitse ne julisteeseen."
+      }
+    },
+    {
+      "id": "savelma",
+      "title": "Summerin sävelmä",
+      "minutes": 30,
+      "lesson": 9,
+      "make": "Arduino soittaa pietsosummerilla tutun tai oman sävelmän.",
+      "subjects": [
+        "musiikki",
+        "fysiikka"
+      ],
+      "materials": [
+        "Arduino Uno",
+        "pietsosummeri",
+        "johtoja"
+      ],
+      "levels": {
+        "try": "Kytke summeri pinniin 8 ja soita yksi sävel komennolla tone(8, 440, 500).",
+        "modify": "Kirjoita kahdeksan sävelen melodia ja muuta tempoa.",
+        "challenge": "Laske asteikon taajuudet kaavalla $f = 440\\,\\text{Hz} \\cdot 2^{n/12}$ ja soita duuriasteikko."
+      }
+    },
+    {
+      "id": "morsetin",
+      "title": "Morsetin",
+      "minutes": 30,
+      "lesson": 10,
+      "make": "Painike, joka lähettää viestin valona ja äänenä.",
+      "subjects": [
+        "äidinkieli",
+        "historia"
+      ],
+      "materials": [
+        "Arduino Uno",
+        "painike",
+        "LED ja vastus",
+        "pietsosummeri"
+      ],
+      "levels": {
+        "try": "Rakenna painike, jonka painaminen sytyttää LEDin ja soittaa summeria.",
+        "modify": "Lähetä parillesi lyhyt viesti morseaakkosilla ja anna hänen tulkita se.",
+        "challenge": "Ohjelmoi Arduino tunnistamaan lyhyt ja pitkä painallus ja tulostamaan ne sarjamonitoriin."
+      }
+    },
+    {
+      "id": "lampomittari",
+      "title": "Kalibroitu lämpömittari",
+      "minutes": 45,
+      "lesson": 10,
+      "make": "Lämpömittari, jonka lukemaan voi luottaa.",
+      "subjects": [
+        "fysiikka",
+        "kemia"
+      ],
+      "materials": [
+        "Arduino Uno",
+        "lämpötila-anturi perussarjasta",
+        "jäävettä ja lämmintä vettä",
+        "vertailulämpömittari"
+      ],
+      "levels": {
+        "try": "Lue anturin raakalukemat sarjamonitoriin.",
+        "modify": "Näytä lämpötila LEDeillä tai äänellä niin, että sen voi lukea katsomatta näyttöä.",
+        "challenge": "Kalibroi anturi kahdessa pisteessä jäävedellä ja lämpimällä vedellä ja arvioi mittauksen epävarmuus."
+      }
+    },
+    {
+      "id": "harjarobotti",
+      "title": "Harjarobotti",
+      "minutes": 30,
+      "lesson": 11,
+      "make": "Hammasharjan päästä ja värinämoottorista tehty pieni robotti.",
+      "subjects": [
+        "muotoilu",
+        "fysiikka"
+      ],
+      "materials": [
+        "hammasharjan pää",
+        "värinämoottori",
+        "nappiparisto",
+        "kaksipuolinen teippi"
+      ],
+      "levels": {
+        "try": "Kiinnitä moottori ja paristo harjan päälle ja laita robotti liikkeelle.",
+        "modify": "Anna robotille oma ulkoasu ja rakenna sille rata tai areena.",
+        "challenge": "Mittaa robotin nopeus kolmella toistolla ja selvitä, miten harjasten kulma vaikuttaa siihen."
+      }
+    },
+    {
+      "id": "pahviautomaatti",
+      "title": "Pahviautomaatti",
+      "minutes": 45,
+      "lesson": 12,
+      "make": "Pahvinen hahmo, joka liikkuu kampea kääntämällä.",
+      "subjects": [
+        "kuvataide",
+        "muotoilu",
+        "fysiikka"
+      ],
+      "materials": [
+        "pahvia",
+        "grillitikkuja",
+        "kuumaliimaa",
+        "sakset"
+      ],
+      "levels": {
+        "try": "Rakenna laatikko, jonka läpi kulkee akseli. Kiinnitä akseliin epäkeskinen kiekko, joka nostaa hahmoa.",
+        "modify": "Suunnittele hahmo ja liike, esimerkiksi hyppy, nyökkäys tai heilutus.",
+        "challenge": "Vaihda kiekko soikeaksi tai monikulmioksi ja piirrä, miten hahmon korkeus muuttuu kierroksen aikana."
+      }
+    },
+    {
+      "id": "tarra",
+      "title": "Projektin logo tarraksi",
+      "minutes": 45,
+      "lesson": 14,
+      "induction": true,
+      "make": "Oma logo vinyylileikkurilla leikattuna tarrana.",
+      "subjects": [
+        "kuvataide",
+        "yrittäjyys"
+      ],
+      "materials": [
+        "vinyylileikkuri (laiteperehdytyksen jälkeen)",
+        "tarravinyyli",
+        "siirtokalvo"
+      ],
+      "levels": {
+        "try": "Piirrä miniprojektillesi yksinkertainen yksivärinen logo.",
+        "modify": "Muokkaa logoa niin, että se toimii myös pienenä ja leikattuna.",
+        "challenge": "Vertaa kahta kokoa ja selvitä, mikä on pienin yksityiskohta, jonka leikkuri vielä tekee siististi."
+      }
     }
   ],
   "links": [

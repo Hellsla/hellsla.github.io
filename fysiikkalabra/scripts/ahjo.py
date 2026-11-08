@@ -209,7 +209,8 @@ def validate(lessons, investigations, guides, planned_codes, local_codes, module
     shape = lambda d: ([c["code"] for c in d["courses"]], [c["id"] for c in d["categories"]],
                        [r.get("ref") or r.get("id") or "safety" for r in d["resources"]], [g["id"] for g in d["equipment"]],
                        [len(g["items"]) for g in d["equipment"]], [(len(c.get("goals", [])), len(c.get("lessons", [])), [(l.get("guides", []), bool(l.get("milestone")), bool(l.get("start")), sorted(l.get("levels", {}))) for l in c.get("lessons", [])], len(c.get("deepening", []))) for c in d["courses"]], [s["id"] for s in d["safety"]], [l["course"] for l in d["links"]], sorted(d["ui"]),
-                       [(p["id"], p["status"], p["level"], p["lessons"], p["courses"], [i["url"] for i in p["inspiration"]], len(p["skills"]), len(p["materials"]), len(p["subjects"])) for p in d.get("projects", [])])
+                       [(p["id"], p["status"], p["level"], p["lessons"], p["courses"], [i["url"] for i in p["inspiration"]], len(p["skills"]), len(p["materials"]), len(p["subjects"])) for p in d.get("projects", [])],
+                       [(x["id"], x["minutes"], x["lesson"], bool(x.get("induction")), len(x["subjects"]), len(x["materials"]), sorted(x["levels"])) for x in d.get("challenges", [])])
     files = [SOURCE] + sorted((ROOT / "content").glob("*/ahjo.json"))
     for f in files:
         name = f.relative_to(ROOT)
@@ -289,6 +290,14 @@ def validate(lessons, investigations, guides, planned_codes, local_codes, module
             if st not in SAFETY_STATUSES: errs.append(f"{name}: safety {s['id']}: status must be one of {SAFETY_STATUSES}")
             if st == "hyvaksytty" and not (s.get("approved_by") and s.get("date") and safety_file(s["id"], i18n.SOURCE)):
                 errs.append(f"{name}: safety {s['id']}: approved needs approved_by, date and content/fi/ahjo/turvallisuus/{s['id']}.md")
+        cids = [x.get("id") for x in d.get("challenges", [])]
+        if len(set(cids)) != len(cids): errs.append(f"{name}: repeated challenge ids")
+        for x in d.get("challenges", []):
+            cid = x.get("id") or "?"
+            if not (x.get("title") and x.get("make") and x.get("materials") and x.get("subjects")): errs.append(f"{name}: challenge {cid}: title, make, materials and subjects")
+            if not (isinstance(x.get("minutes"), int) and 15 <= x["minutes"] <= 45): errs.append(f"{name}: challenge {cid}: 15–45 minutes (teacher 2026-11-08)")
+            if not (isinstance(x.get("lesson"), int) and 1 <= x["lesson"] <= 16): errs.append(f"{name}: challenge {cid}: the Ahjo 1 lesson it goes with, 1–16")
+            if sorted(x.get("levels", {})) != ["challenge", "modify", "try"] or not all(x["levels"].values()): errs.append(f"{name}: challenge {cid}: the three levels try, modify, challenge")
         pids = [p.get("id") for p in d.get("projects", [])]
         if len(set(pids)) != len(pids): errs.append(f"{name}: repeated project ids")
         for p in d.get("projects", []):
@@ -443,7 +452,8 @@ def lessons_list(d, c, ref):
     u = d["ui"]; rows = []
     for i, l in enumerate(c["lessons"], 1):
         links = lesson_links(d, l, ref)
-        rows.append(f'<li><div class="ahjo-lesson"><span class="ahjo-lesson-art">{art(c["code"].lower() + "-" + str(i))}</span><span class="ahjo-lesson-b">'
+        mine = [x for x in d.get("challenges", []) if c["code"] == "AHJO1" and x["lesson"] == i]
+        rows.append(f'<li id="tunti-{i}"><div class="ahjo-lesson"><span class="ahjo-lesson-art">{art(c["code"].lower() + "-" + str(i))}</span><span class="ahjo-lesson-b">'
                     + (f'<span class="ahjo-badge ahjo-milestone">{esc(l["milestone"])}</span>' if l.get("milestone") else "")
                     + f'<span class="ahjo-lesson-t">{esc(l["title"])}</span> <span class="ahjo-lesson-x">{esc(l["text"])}</span>'
                     + (f'<span class="ahjo-make"><span class="ahjo-meta-l">{esc(u["lesson_make"])}:</span> {esc(l["make"])}</span>' if l.get("make") else "")
@@ -453,6 +463,8 @@ def lessons_list(d, c, ref):
                     + (f'<span class="ahjo-lesson-e"><span class="ahjo-meta-l">{esc(u["lesson_example"])}:</span> {esc(l["example"])}</span>' if l.get("example") else "")
                     + (f'<span class="ahjo-lesson-e ahjo-lesson-o"><span class="ahjo-meta-l">{esc(u["lesson_output"])}:</span> {esc(l["output"])}</span>' if l.get("output") else "")
                     + (f'<span class="ahjo-lesson-g"><span class="ahjo-meta-l">{esc(u["lesson_guides"])}:</span> {", ".join(links)}</span>' if links else "")
+                    + (f'<span class="ahjo-lesson-g"><span class="ahjo-meta-l">{esc(u["lesson_challenge"])}:</span> '
+                       + ", ".join(f'<a href="{BANK}#{x["id"]}">{esc(x["title"])}</a>' for x in mine) + '</span>' if mine else "")
                     + '</span></div></li>')
     return '<ol class="ahjo-lessons">' + "".join(rows) + '</ol>'
 
@@ -559,7 +571,31 @@ def bank_body(d, planned, local, modules, ref):
         secs.append(f'<section class="ahjo-sec ahjo-cat" id="{c["id"]}" aria-labelledby="h-cat-{c["id"]}">'
                     f'<div class="ahjo-cat-top"><div><h2 id="h-cat-{c["id"]}">{icon(c["icon"])}{esc(c["title"])}</h2><p class="ahjo-sec-lead">{esc(c["text"])}</p></div>'
                     f'<div class="ahjo-cat-art">{art(c["id"])}</div></div>{body}</section>')
-    return hero(d, u["bank_h"], u["bank_page_lead"], BANK) + "".join(secs)
+    return hero(d, u["bank_h"], u["bank_page_lead"], BANK) + challenges_section(d) + "".join(secs)
+
+
+def challenges_section(d):
+    """Ahjo 1's small challenges (15–45 minutes, teacher 2026-11-08): what you make, the time, the lesson it goes with,
+    what you need and the three levels. Arts, music, design and crafts as well as electronics."""
+    u = d["ui"]; xs = sorted(d.get("challenges", []), key=lambda x: x["lesson"])
+    if not xs: return ""
+    lessons = next((c.get("lessons", []) for c in d["courses"] if c["code"] == "AHJO1"), [])
+    cards = []
+    for x in xs:
+        lt = lessons[x["lesson"] - 1]["title"] if len(lessons) >= x["lesson"] else ""
+        meta = (f'<span class="ahjo-chip">{esc(u["challenge_min"].replace("{n}", str(x["minutes"])))}</span>'
+                f'<a class="ahjo-chip ahjo-chip-link" href="{course_page("AHJO1")}#tunti-{x["lesson"]}">{esc(u["challenge_lesson"].replace("{n}", str(x["lesson"])))}{": " + esc(lt) if lt else ""}</a>'
+                + "".join(f'<span class="ahjo-chip">{esc(sj)}</span>' for sj in x["subjects"])
+                + (f'<span class="ahjo-badge planned">{esc(u["challenge_induction"])}</span>' if x.get("induction") else ""))
+        levels = "".join(f'<li class="ahjo-level ahjo-level-{n}"><span class="ahjo-level-l">{esc(lab)}</span> <span class="ahjo-level-x">{esc(x["levels"][k])}</span></li>'
+                         for n, (k, lab) in enumerate(zip(("try", "modify", "challenge"), u["lesson_levels"]), 1))
+        cards.append(f'<article class="ahjo-proj ahjo-chal" id="{x["id"]}" aria-labelledby="h-chal-{x["id"]}"><div class="ahjo-proj-head"><h3 id="h-chal-{x["id"]}">{esc(x["title"])}</h3></div>'
+                     f'<p class="ahjo-proj-sum">{esc(x["make"])}</p><p class="ahjo-proj-meta">{meta}</p>'
+                     f'<p class="ahjo-res-meta"><span class="ahjo-meta-l">{esc(u["challenge_materials"])}:</span> {esc(", ".join(x["materials"]))}</p>'
+                     f'<ul class="ahjo-levels ahjo-chal-levels">{levels}</ul></article>')
+    return (f'<section class="ahjo-sec" id="pienet-haasteet" aria-labelledby="h-challenges"><h2 id="h-challenges">{esc(u["challenges_h"])}'
+            f' <span class="ahjo-count">{len(xs)}</span></h2><p class="ahjo-sec-lead">{esc(u["challenges_lead"])}</p>'
+            f'<div class="ahjo-chal-grid">{"".join(cards)}</div></section>')
 
 
 def project_card(u, p, names):
