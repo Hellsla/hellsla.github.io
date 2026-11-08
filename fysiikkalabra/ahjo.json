@@ -68,7 +68,12 @@
     "course_lessons": "{n} oppituntia",
     "lesson_example": "Esimerkki",
     "lesson_make": "Tee",
-    "lesson_start": "Ensimmäiset 10 minuuttia",
+    "lesson_start": "Aloita heti (5–10 min)",
+    "lesson_level_notes": [
+      "kaikille",
+      "omin ideoin",
+      "valinnainen"
+    ],
     "lesson_levels": [
       "Kokeile",
       "Muokkaa",
@@ -94,23 +99,66 @@
         "Suunnittelet itse, ensin tunnin haasteessa ja lopulta miniprojektissa."
       ]
     ],
+    "approach_structure_h": "Tunnin rakenne",
+    "approach_structure": [
+      [
+        "Aloita heti",
+        "5–10 minuuttia. Ensimmäinen onnistuminen valmiilla mallilla, kytkennällä tai ohjelmalla."
+      ],
+      [
+        "Kokeile",
+        "Kaikille yhteinen perustason työ, jolla saavutetaan tunnin tavoite."
+      ],
+      [
+        "Muokkaa",
+        "Muutat ratkaisua omien ideoidesi mukaan."
+      ],
+      [
+        "Haasta itsesi",
+        "Valinnainen, teknisesti tai luonnontieteellisesti vaativampi jatkotehtävä."
+      ],
+      [
+        "Mitä sait aikaan?",
+        "Perustason tuotos ja, jos teit haasteen, sen tuotos."
+      ]
+    ],
+    "approach_note": "Perustasoon kuuluvat Aloita heti, Kokeile ja Muokkaa. Haasta itsesi ja materiaalipankin pienet haasteet ovat valinnaisia. Kaikkea ei tarvitse tehdä saman tunnin aikana.",
     "course_start_h": "Aloitushaaste",
     "course_start_lesson": "Ahjo 2, tunti 1",
     "course_start_after": "Mitä tästä jää käteen",
     "lesson_output": "Tuotos",
+    "lesson_done": "Mitä sait aikaan?",
+    "lesson_done_base": "Perustaso",
+    "lesson_done_plus": "Haasta itsesi",
     "lesson_guides": "Ohjeet",
     "challenges_h": "Pienet haasteet",
-    "challenges_lead": "15–45 minuutin haasteita, joita voi tehdä Ahjo 1:n tuntien yhteydessä. Jokaisessa on kolme tasoa: Kokeile, Muokkaa ja Haasta itsesi. Mukana on myös kuvataidetta, musiikkia, muotoilua ja käsitöitä.",
+    "challenges_lead": "15–45 minuutin haasteita, joita voi tehdä Ahjo 1:n tuntien yhteydessä vaihtoehtoisena tehtävänä tai lisähaasteena. Ne eivät ole pakollisia. Jokaisessa on kolme tasoa: Kokeile, Muokkaa ja Haasta itsesi. Mukana on myös kuvataidetta, musiikkia, muotoilua ja käsitöitä.",
     "challenge_min": "{n} min",
     "challenge_lesson": "Ahjo 1, tunti {n}",
     "challenge_materials": "Tarvitset",
     "challenge_induction": "Vaatii laiteperehdytyksen",
-    "lesson_challenge": "Pieni haaste",
+    "lesson_challenge": "Valinnainen lisähaaste",
+    "lesson_final": "Miniprojektin vaihtoehdot",
     "deepening_h": "Syventävät osat",
     "deepening_lead": "Valinnaisia lisätöitä niille, jotka ehtivät pidemmälle tai haluavat syventyä. Ne eivät kuulu kaikille yhteiseen runkoon.",
     "course_page_open": "Avaa kurssisivu",
     "license_h": "Makerspace-ajokortti",
-    "license_text": "Ahjo 1 on samalla Ahjon Makerspace-ajokortti. Se tarvitaan, jotta voi tehdä Ahjossa itsenäisiä projekteja.",
+    "license_text": "Ahjo 1 on samalla Ahjon Makerspace-ajokortti. Se osoittaa, että hallitset makerspacen yleiset taidot, ja se tarvitaan, jotta voi tehdä Ahjossa itsenäisiä projekteja. Ajokortti ei kuitenkaan anna lupaa käyttää kaikkia laitteita itsenäisesti.",
+    "license_parts": [
+      [
+        "Makerspace-ajokortti (Ahjo 1)",
+        "Yleiset taidot: turvallinen työskentely, mittatarkka suunnittelu, elektroniikan ja ohjelmoinnin perusteet sekä työn dokumentointi."
+      ],
+      [
+        "Tilan turvallisuusperehdytys",
+        "Kaikille ennen kuin Ahjossa työskennellään: tilan säännöt, suojaimet, ensiapu ja toiminta vaaratilanteessa."
+      ],
+      [
+        "Laitekohtainen perehdytys ja käyttölupa",
+        "Jokaiseen laitteeseen erikseen. Vasta sen jälkeen laitetta saa käyttää, ja käyttölupa voi olla rajattu."
+      ]
+    ],
+    "license_status": "Ahjon laitteisto ja hyväksytyt turvallisuuskäytännöt ovat vielä valmistelussa.",
     "license_badge": "Makerspace-ajokortti",
     "course_materials_h": "Ahjon materiaalit",
     "course_materials_lead": "Kurssi käyttää Ahjon yhteisiä materiaaleja. Jokaisella materiaalilla on yksi kotipaikka, ja tänne on koottu linkit niihin, joita tällä kurssilla tarvitaan.",
@@ -207,7 +255,8 @@
             "modify": "Muuta valon ilmettä pingispallolla, paperilla, foliolla tai muovipullolla ja valitse suosikkisi.",
             "challenge": "Kierrä Ahjo ja kirjaa yksi oikea ongelma, jonka haluaisit ratkaista kurssin aikana."
           },
-          "output": "Projektipäiväkirja perustettu ja yksi ongelma kirjattu.",
+          "output": "Toimiva valo omassa kuoressa ja projektipäiväkirjan ensimmäinen merkintä.",
+          "output_plus": "Kirjattu oikea ongelma, jonka haluaisit ratkaista kurssin aikana.",
           "guides": [
             "ahjo-projektipaivakirja"
           ]
@@ -222,7 +271,8 @@
             "modify": "Tee yhdestä laitteesta kuvallinen ohjekortti omalla tyylilläsi, esimerkiksi piirroksena tai sarjakuvana.",
             "challenge": "Tee laitteelle riskinarviointi: vaara, todennäköisyys, seuraus ja miten siltä suojaudutaan."
           },
-          "output": "Yhden laitteen riskinarviointi.",
+          "output": "Käyty laiteperehdytys ja kuvallinen ohjekortti yhdestä laitteesta.",
+          "output_plus": "Laitteen riskinarviointi.",
           "guides": []
         },
         {
@@ -235,7 +285,8 @@
             "modify": "Tee muodosta omasi: lisää oma symboli tai kuvio ja siirrä reikä.",
             "challenge": "Mallinna esine, joka korjaa tai parantaa jotain arjessasi, esimerkiksi johtopidike tai kynäteline."
           },
-          "output": "Oma malli tulostusjonossa.",
+          "output": "Oma muokattu avaimenperä STL-tiedostona tulostusjonossa.",
+          "output_plus": "Malli esineestä, joka parantaa jotain arjessasi.",
           "guides": [
             "ahjo-3d-mallinnus"
           ]
@@ -250,7 +301,8 @@
             "modify": "Mallinna kansi tai tulppa omaan purkkiin, kynään tai pulloon sovitekokeen välyksellä.",
             "challenge": "Selvitä, miten välys riippuu tulostussuunnasta, ja esitä tulokset taulukkona."
           },
-          "output": "Sovitekokeen tulos: toimiva välys.",
+          "output": "Sovitekokeen tulos ja oma kansi tai tulppa mallinnettuna.",
+          "output_plus": "Taulukko siitä, miten välys riippuu tulostussuunnasta.",
           "guides": [
             "ahjo-3d-mallinnus"
           ]
@@ -265,7 +317,8 @@
             "modify": "Valitse itse täyttöaste ja tulostussuunta ja perustele valintasi.",
             "challenge": "Kantaako palkki 2 kg:n massan eli noin 20 N:n painon? Vertaa kahta palkkia ja laske, kumpi kantaa enemmän omaa massaansa kohti."
           },
-          "output": "Lujuustestin tulokset taulukkona.",
+          "output": "Viipaloitu ja tulostettu palkki sekä perusteltu täyttö ja tulostussuunta.",
+          "output_plus": "Lujuustestin tulokset ja kahden palkin vertailu taulukkona.",
           "guides": [
             "ahjo-3d-tulostus"
           ]
@@ -280,7 +333,8 @@
             "modify": "Muuta yhtä tulostusasetusta ja tulosta korjattu versio.",
             "challenge": "Kokoa luokan virheistä kuvallinen virheopas, jossa on virhe, syy ja korjaus."
           },
-          "output": "Mitattu ero mallin ja tulosteen välillä.",
+          "output": "Mitattu ero mallin ja tulosteen välillä sekä yksi perusteltu asetusmuutos.",
+          "output_plus": "Kuvallinen virheopas: virhe, syy ja korjaus.",
           "guides": [
             "ahjo-3d-tulostus"
           ]
@@ -295,7 +349,8 @@
             "modify": "Lisää toinen LED ensin sarjaan ja sitten rinnan. Kummassa kytkennässä LEDit loistavat kirkkaammin?",
             "challenge": "Mitoita etuvastus Ohmin lailla ja vertaa mitattua virtaa laskemaasi."
           },
-          "output": "Kytkentäkaavio ja vastuksen laskelma.",
+          "output": "Toimiva LED-piiri ja havainto sarja- ja rinnankytkennän erosta.",
+          "output_plus": "Etuvastuksen laskelma Ohmin lailla ja sitä vastaava mitattu virta.",
           "guides": [
             "ahjo-arduino",
             "fy6-3"
@@ -312,6 +367,7 @@
             "challenge": "Arvioi mittaustesi perusteella, kuinka kauan paristo riittäisi laitteellesi."
           },
           "output": "Virta- ja jännitemittaukset yksiköineen.",
+          "output_plus": "Mittauksiin perustuva arvio pariston kestosta.",
           "guides": [
             "fy6-2"
           ]
@@ -324,9 +380,10 @@
           "levels": {
             "try": "Saa LED vilkkumaan esimerkkiohjelmalla.",
             "modify": "Tee vilkkumisesta sydämen syke, majakka tai oma nimesi morseaakkosilla.",
-            "challenge": "Ohjelmoi reaktioaikapeli, joka mittaa reaktioajan millisekunteina, ja laske luokan keskiarvo ja hajonta."
+            "challenge": "Ohjelmoi reaktioaikapeli valmiin painikekytkennän avulla ja laske luokan tuloksista keskiarvo ja hajonta. Painikkeet ja syötteet käydään tarkemmin läpi tunnilla 10."
           },
-          "output": "Toimiva ohjelma ja luokan keskiarvo.",
+          "output": "Toimiva, itse muokattu LED-ohjelma: oma valorytmi.",
+          "output_plus": "Reaktioaikapeli sekä luokan tulosten keskiarvo ja hajonta.",
           "guides": [
             "ahjo-arduino"
           ]
@@ -341,7 +398,8 @@
             "modify": "Tee anturista soitin tai valo, joka reagoi ympäristöön, esimerkiksi summeri, jonka sävel nousee, kun käsi lähestyy.",
             "challenge": "Kalibroi anturi, kerää mittaussarja ja piirrä kuvaaja yksiköineen."
           },
-          "output": "Kuvaaja omasta mittausdatasta.",
+          "output": "Anturin lukemat sarjaplotterissa ja oma laite, joka reagoi anturiin.",
+          "output_plus": "Kalibroitu mittaussarja ja kuvaaja yksiköineen.",
           "guides": [
             "tvt-mittausohjelma"
           ]
@@ -356,7 +414,8 @@
             "modify": "Rakenna servon päälle pahvihahmo, joka vilkuttaa, nyökkää tai osoittaa.",
             "challenge": "Tee servosta valon seuraaja, jota ohjaa kaksi valovastusta."
           },
-          "output": "Valoa seuraava servo.",
+          "output": "Toimiva servo-ohjaus ja oma liikkuva hahmo tai mekanismi.",
+          "output_plus": "Valoa seuraava servo.",
           "guides": [
             "fy7-4"
           ]
@@ -371,7 +430,8 @@
             "modify": "Tee robotille oma kuori tai kuormatila pahvista tai tulosteena.",
             "challenge": "Vertaa kahta välityssuhdetta: miten ne vaikuttavat nopeuteen ja vetovoimaan?"
           },
-          "output": "Toimiva robottialusta ja välityssuhteen vertailu.",
+          "output": "Toimiva robottialusta, jolla on oma kuori tai kuormatila.",
+          "output_plus": "Kahden välityssuhteen kokeellinen vertailu.",
           "guides": []
         },
         {
@@ -384,27 +444,30 @@
             "modify": "Lisää robottiin anturi ja anna sen löytää reitti itse.",
             "challenge": "Vertaa kierroksia: mittaa aika ja tarkkuus kolmella toistolla."
           },
-          "output": "Kahden kierroksen vertailu.",
+          "output": "Robotti, joka ajaa radan ennalta ohjelmoiduilla liikkeillä, ja ensimmäinen kokeilu anturilla.",
+          "output_plus": "Kierrosten vertailu: aika ja tarkkuus kolmella toistolla.",
           "guides": []
         },
         {
           "title": "Miniprojektin suunnittelu",
           "text": "Ongelma, mitattava onnistumisen mittari, tarvikeluettelo ja luonnos.",
           "make": "Oma idea paperille",
-          "start": "Selaa projektipankkia ja omia kurssitöitäsi ja valitse kolme ideaa, joista innostut.",
+          "start": "Selaa alla olevia miniprojektin vaihtoehtoja ja omia kurssitöitäsi ja valitse kolme ideaa, joista innostut.",
           "levels": {
-            "try": "Valitse yksi idea ja kirjaa siitä ongelma, mittari ja tarvikkeet.",
+            "try": "Valitse yksi alla olevista miniprojektin vaihtoehdoista tai oma idea ja kirjaa siitä ongelma, mittari ja tarvikkeet.",
             "modify": "Yhdistä kaksi kurssin aiempaa harjoitusta uudeksi laitteeksi.",
             "challenge": "Tee pahvista mallikappale ja kokeile ideaa toisella ryhmällä ennen rakentamista."
           },
-          "output": "Hyväksytty miniprojektin suunnitelma.",
+          "output": "Opettajan hyväksymä suunnitelma: idea, onnistumisen mittari, tarvikkeet ja luonnos.",
+          "output_plus": "Pahvimalli ja toisen ryhmän palaute ideasta.",
           "guides": [
             "ahjo-projektipaivakirja"
-          ]
+          ],
+          "final": true
         },
         {
           "title": "Miniprojekti",
-          "text": "Pieni oma laite opituilla menetelmillä: rakentaminen ja testaus.",
+          "text": "Pieni oma laite opituilla menetelmillä ja valmiilla ratkaisuilla: rakentaminen ja testaus.",
           "make": "Oma laite",
           "start": "Kokoa tarvikkeet ja saa ensimmäinen osa toimimaan, esimerkiksi anturi tai valo.",
           "levels": {
@@ -412,14 +475,15 @@
             "modify": "Tee laitteesta omannäköinen: kotelo, väri, ääni tai muoto.",
             "challenge": "Testaa laitetta onnistumisen mittarilla kolmesti ja paranna sen heikointa kohtaa."
           },
-          "output": "Toimiva laite ja testitulokset.",
+          "output": "Toimiva laite, joka on testattu kerran onnistumisen mittarilla.",
+          "output_plus": "Kolme testiä ja parannettu heikoin kohta.",
           "guides": [
             "ahjo-projektipaivakirja"
           ]
         },
         {
           "title": "Esittely ja itsearviointi",
-          "text": "Miniprojektin esittely, dokumentointi ja oman oppimisen arviointi.",
+          "text": "Viimeistely, miniprojektin esittely ja oman oppimisen arviointi.",
           "make": "Pieni näyttely",
           "start": "Kuvaa laitteestasi 30 sekunnin video, jossa se toimii.",
           "levels": {
@@ -428,11 +492,39 @@
             "challenge": "Kerro, mitä tekisit seuraavassa versiossa, ja arvioi oppimisesi projektipäiväkirjan kriteereillä."
           },
           "output": "Esittely ja täydennetty projektipäiväkirja.",
+          "output_plus": "Seuraavan version suunnitelma ja itsearviointi projektipäiväkirjan kriteereillä.",
           "guides": [
             "ahjo-projektipaivakirja"
           ]
         }
       ],
+      "final": {
+        "title": "Miniprojekti",
+        "text": "Miniprojektissa yhdistät kurssilla jo harjoiteltuja tekniikoita ja valmiita ratkaisuja pieneksi omaksi laitteeksi. Uutta tekniikkaa ei tarvitse opetella. Suunnittelu tehdään tunnilla 14, rakentaminen ja testaus tunnilla 15, ja tunnin 16 alussa on puoli tuntia viimeistelyyn ennen esittelyä. Jos jatkat kurssilla aloitettua työtä, rakentamiseen jää enemmän aikaa. Kirjaa ideoita projektipäiväkirjaan jo kurssin aikana.",
+        "options": [
+          [
+            "Valaisin omalla valorytmillä",
+            "LED-lyhty tai -valaisin, jonka kuoren ja valorytmin suunnittelet itse. Pohjana tunnit 1 ja 9."
+          ],
+          [
+            "Anturisoitin tai valohälytin",
+            "Laite, joka soittaa, välkkyy tai hälyttää anturin lukeman mukaan. Pohjana tunnit 9 ja 10."
+          ],
+          [
+            "Liikkuva hahmo tai automaatti",
+            "Servolla liikkuva pahvihahmo tai mekanismi, joka reagoi painikkeeseen tai valoon. Pohjana tunti 11."
+          ],
+          [
+            "Oma mittalaite",
+            "Esimerkiksi valo- tai lämpömittari, jonka näytön tai kotelon teet itse. Pohjana tunnit 8 ja 10."
+          ],
+          [
+            "Tulostettu käyttöesine",
+            "Mittatarkka pidike, kotelo tai varaosa, joka testataan oikeassa käytössä. Pohjana tunnit 3–6."
+          ]
+        ],
+        "own": "Voit myös toteuttaa oman idean, kun opettaja on hyväksynyt suunnitelman."
+      },
       "plan_status": "draft",
       "license": true,
       "deepening": [
