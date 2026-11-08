@@ -93,6 +93,9 @@
         "You design it yourself, first in the lesson's challenge and finally in the mini project."
       ]
     ],
+    "course_start_h": "Opening challenge",
+    "course_start_lesson": "Ahjo 2, lesson 1",
+    "course_start_after": "What you take from it",
     "lesson_output": "Output",
     "lesson_guides": "Guides",
     "challenges_h": "Small challenges",
@@ -468,12 +471,34 @@
         "test a solution and improve it on the basis of tests and feedback",
         "document and present the project and assess your own and the group's work"
       ],
+      "start": {
+        "title": "The slowest ball run",
+        "minutes": 35,
+        "text": "Ahjo 2 starts with a quick build where failing is part of the job. The goal is not a polished result but the courage to try, test and change direction. All the materials are worked by hand, so no device induction is needed.",
+        "materials": [
+          "cardboard",
+          "masking tape",
+          "string",
+          "paper cups",
+          "straws",
+          "scissors",
+          "a ping-pong ball"
+        ],
+        "steps": [
+          "The teacher shows the task: build a run on which a ping-pong ball travels from the edge of the desk to the floor as slowly as possible. (2 min)",
+          "Build the first version as a group. Test as soon as the ball travels even part of the way. (15 min)",
+          "Test round: time the ball's trip with a stopwatch and tell the others what did not work. (3 min)",
+          "The teacher gives each group a user card, such as “a small child must understand the run without instructions” or “the run must fit in a shoebox”. Change the run for the user on the card. (10 min)",
+          "Debrief: what failed, what did you learn from it and what did the user card change? (5 min)"
+        ],
+        "after": "The same loop of building, testing, listening to the user and changing repeats all through Ahjo 2. Write in the project journal one thing that did not work and what you learnt from it."
+      },
       "lessons": [
         {
-          "title": "Starting the project",
-          "text": "How Ahjo 2 runs, teams and collecting real problems. Stage 1: the problem.",
-          "example": "Collect problems that matter to you, the school or the neighbourhood, and look at the topics in the project bank.",
-          "output": "At least five recorded problems.",
+          "title": "Opening challenge and project start",
+          "text": "A quick build where failing is allowed, then how Ahjo 2 runs, the teams and collecting real problems. Stage 1: the problem.",
+          "example": "First build the slowest ball run (35 min, instructions above). Then collect problems that matter to you, the school or your surroundings, and look through the topics in the project bank.",
+          "output": "The ball run, one recorded failure and at least five recorded problems.",
           "guides": [
             "ahjo-projektipaivakirja"
           ]

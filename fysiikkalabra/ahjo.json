@@ -94,6 +94,9 @@
         "Suunnittelet itse, ensin tunnin haasteessa ja lopulta miniprojektissa."
       ]
     ],
+    "course_start_h": "Aloitushaaste",
+    "course_start_lesson": "Ahjo 2, tunti 1",
+    "course_start_after": "Mitä tästä jää käteen",
     "lesson_output": "Tuotos",
     "lesson_guides": "Ohjeet",
     "challenges_h": "Pienet haasteet",
@@ -469,12 +472,34 @@
         "testaamaan ratkaisua ja kehittämään sitä testien ja palautteen perusteella",
         "dokumentoimaan ja esittelemään projektin sekä arvioimaan omaa ja ryhmän työtä"
       ],
+      "start": {
+        "title": "Hitain pallorata",
+        "minutes": 35,
+        "text": "Ahjo 2 alkaa nopealla rakentelulla, jossa epäonnistuminen kuuluu asiaan. Tavoitteena ei ole hieno lopputulos vaan rohkeus kokeilla, testata ja muuttaa suuntaa. Kaikki tarvikkeet työstetään käsin, joten laiteperehdytystä ei tarvita.",
+        "materials": [
+          "pahvia",
+          "maalarinteippiä",
+          "lankaa",
+          "paperimukeja",
+          "pillejä",
+          "sakset",
+          "pingispallo"
+        ],
+        "steps": [
+          "Opettaja näyttää tehtävän: rakentakaa rata, jolla pingispallo kulkee pöydän reunalta lattialle mahdollisimman hitaasti. (2 min)",
+          "Rakentakaa ryhmänä ensimmäinen versio. Testatkaa heti, kun pallo kulkee edes osan matkaa. (15 min)",
+          "Testikierros: mitatkaa sekuntikellolla, kauanko pallon matka kestää, ja kertokaa muille, mikä ei toiminut. (3 min)",
+          "Opettaja jakaa jokaiselle ryhmälle käyttäjäkortin, kuten ”pienen lapsen pitää ymmärtää rata ilman ohjeita” tai ”radan pitää mahtua kenkälaatikkoon”. Muuttakaa rataa kortin käyttäjälle. (10 min)",
+          "Purku: mikä epäonnistui, mitä siitä opittiin ja mitä käyttäjäkortti muutti? (5 min)"
+        ],
+        "after": "Sama kierros, eli rakenna, testaa, kuuntele käyttäjää ja muuta, toistuu koko Ahjo 2:n ajan. Kirjatkaa projektipäiväkirjaan yksi asia, joka ei toiminut, ja mitä siitä opitte."
+      },
       "lessons": [
         {
-          "title": "Projektin aloitus",
-          "text": "Ahjo 2:n kulku, tiimit ja todellisten ongelmien kerääminen. Vaihe 1: ongelma.",
-          "example": "Kerää ongelmia, jotka koskettavat sinua, koulua tai lähiympäristöä, ja tutustu projektipankin aiheisiin.",
-          "output": "Vähintään viisi kirjattua ongelmaa.",
+          "title": "Aloitushaaste ja projektin aloitus",
+          "text": "Nopea rakentelu, jossa saa epäonnistua, ja sitten Ahjo 2:n kulku, tiimit ja todellisten ongelmien kerääminen. Vaihe 1: ongelma.",
+          "example": "Rakentakaa ensin hitain pallorata (35 min, ohje yllä). Kerätkää sen jälkeen ongelmia, jotka koskettavat sinua, koulua tai lähiympäristöä, ja tutustukaa projektipankin aiheisiin.",
+          "output": "Pallorata, yksi kirjattu epäonnistuminen ja vähintään viisi kirjattua ongelmaa.",
           "guides": [
             "ahjo-projektipaivakirja"
           ]
