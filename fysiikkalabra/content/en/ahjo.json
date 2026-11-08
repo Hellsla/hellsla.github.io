@@ -67,7 +67,12 @@
     "course_lessons": "{n} lessons",
     "lesson_example": "Example",
     "lesson_make": "Make",
-    "lesson_start": "The first 10 minutes",
+    "lesson_start": "Start right away (5–10 min)",
+    "lesson_level_notes": [
+      "for everyone",
+      "your own ideas",
+      "optional"
+    ],
     "lesson_levels": [
       "Try",
       "Modify",
@@ -93,23 +98,66 @@
         "You design it yourself, first in the lesson's challenge and finally in the mini project."
       ]
     ],
+    "approach_structure_h": "How a lesson is built",
+    "approach_structure": [
+      [
+        "Start right away",
+        "5–10 minutes. A first success with a ready-made model, circuit or program."
+      ],
+      [
+        "Try",
+        "The basic work for everyone, which reaches the lesson's goal."
+      ],
+      [
+        "Modify",
+        "You change the solution according to your own ideas."
+      ],
+      [
+        "Challenge yourself",
+        "An optional follow-up task that is harder technically or scientifically."
+      ],
+      [
+        "What did you make?",
+        "The basic-level output and, if you did the challenge, its output."
+      ]
+    ],
+    "approach_note": "The basic level is Start right away, Try and Modify. Challenge yourself and the small challenges in the materials bank are optional. You do not have to do everything in the same lesson.",
     "course_start_h": "Opening challenge",
     "course_start_lesson": "Ahjo 2, lesson 1",
     "course_start_after": "What you take from it",
     "lesson_output": "Output",
+    "lesson_done": "What did you make?",
+    "lesson_done_base": "Basic level",
+    "lesson_done_plus": "Challenge yourself",
     "lesson_guides": "Guides",
     "challenges_h": "Small challenges",
-    "challenges_lead": "Challenges of 15–45 minutes to do alongside Ahjo 1's lessons. Each has three levels: Try, Modify and Challenge yourself. They include visual arts, music, design and crafts too.",
+    "challenges_lead": "Challenges of 15–45 minutes that you can do alongside the Ahjo 1 lessons as an alternative task or an extra challenge. They are not compulsory. Each has three levels: Try, Modify and Challenge yourself. They include art, music, design and crafts too.",
     "challenge_min": "{n} min",
     "challenge_lesson": "Ahjo 1, lesson {n}",
     "challenge_materials": "You need",
     "challenge_induction": "Needs the device induction",
-    "lesson_challenge": "Small challenge",
+    "lesson_challenge": "Optional extra challenge",
+    "lesson_final": "Mini project options",
     "deepening_h": "Optional deepening",
     "deepening_lead": "Optional extra work for those who get further or want to go deeper. It is not part of the outline everyone follows.",
     "course_page_open": "Open the course page",
     "license_h": "Makerspace licence",
-    "license_text": "Ahjo 1 is also Ahjo's Makerspace licence. You need it to work on independent projects in Ahjo.",
+    "license_text": "Ahjo 1 is also Ahjo's Makerspace licence. It shows that you master the general makerspace skills, and you need it to work on independent projects in Ahjo. The licence does not, however, let you use every device on your own.",
+    "license_parts": [
+      [
+        "Makerspace licence (Ahjo 1)",
+        "General skills: working safely, designing to measure, the basics of electronics and programming, and documenting your work."
+      ],
+      [
+        "Safety induction to the space",
+        "For everyone before working in Ahjo: the rules of the space, protective equipment, first aid and what to do in a dangerous situation."
+      ],
+      [
+        "Device induction and permission to use",
+        "Separately for each device. Only after it may you use the device, and the permission can be limited."
+      ]
+    ],
+    "license_status": "Ahjo's equipment and approved safety practices are still being prepared.",
     "license_badge": "Makerspace licence",
     "course_materials_h": "Ahjo's materials",
     "course_materials_lead": "The course uses Ahjo's shared materials. Each one has a single home, and here are links to the ones this course needs.",
@@ -206,7 +254,8 @@
             "modify": "Change how the light looks with a ping-pong ball, paper, foil or a plastic bottle, and pick your favourite.",
             "challenge": "Walk round Ahjo and record one real problem you would like to solve during the course."
           },
-          "output": "Project journal set up and one problem recorded.",
+          "output": "A working light in its own cover and the first entry in the project journal.",
+          "output_plus": "A recorded real problem you would like to solve during the course.",
           "guides": [
             "ahjo-projektipaivakirja"
           ]
@@ -221,7 +270,8 @@
             "modify": "Make an illustrated instruction card for one device in your own style, for example as a drawing or a comic.",
             "challenge": "Write a risk assessment for the device: the hazard, how likely it is, the consequence and how to protect yourself."
           },
-          "output": "A risk assessment of one device.",
+          "output": "The device induction done and an illustrated instruction card for one device.",
+          "output_plus": "A risk assessment of the device.",
           "guides": []
         },
         {
@@ -234,7 +284,8 @@
             "modify": "Make the shape your own: add your own symbol or pattern and move the hole.",
             "challenge": "Model something that fixes or improves something in your everyday life, such as a cable holder or a pen stand."
           },
-          "output": "Your own model in the print queue.",
+          "output": "Your own modified key ring as an STL file in the print queue.",
+          "output_plus": "A model of an object that improves something in your everyday life.",
           "guides": [
             "ahjo-3d-mallinnus"
           ]
@@ -249,7 +300,8 @@
             "modify": "Model a lid or a stopper for your own jar, pen or bottle with the clearance from the fit test.",
             "challenge": "Find out how the clearance depends on the print orientation, and present the results as a table."
           },
-          "output": "Fit test result: a clearance that works.",
+          "output": "The fit test result and your own lid or plug modelled.",
+          "output_plus": "A table of how the clearance depends on the print orientation.",
           "guides": [
             "ahjo-3d-mallinnus"
           ]
@@ -264,7 +316,8 @@
             "modify": "Choose the infill and the orientation yourself and justify your choice.",
             "challenge": "Does the beam hold a 2 kg mass, a weight of about 20 N? Compare two beams and work out which holds more per gram of its own mass."
           },
-          "output": "Strength test results as a table.",
+          "output": "A sliced and printed beam with a justified infill and print orientation.",
+          "output_plus": "Strength test results and a comparison of two beams as a table.",
           "guides": [
             "ahjo-3d-tulostus"
           ]
@@ -279,7 +332,8 @@
             "modify": "Change one print setting and print a corrected version.",
             "challenge": "Put together an illustrated guide to the class's defects: the defect, the cause and the fix."
           },
-          "output": "The measured difference between model and print.",
+          "output": "The measured difference between model and print and one justified change of setting.",
+          "output_plus": "An illustrated defect guide: the defect, the cause and the fix.",
           "guides": [
             "ahjo-3d-tulostus"
           ]
@@ -294,7 +348,8 @@
             "modify": "Add a second LED, first in series and then in parallel. In which connection do the LEDs shine brighter?",
             "challenge": "Size the series resistor with Ohm's law and compare the measured current with your calculation."
           },
-          "output": "Circuit diagram and resistor calculation.",
+          "output": "A working LED circuit and an observation of the difference between series and parallel.",
+          "output_plus": "The series resistor worked out with Ohm's law and the matching measured current.",
           "guides": [
             "ahjo-arduino",
             "fy6-3"
@@ -311,6 +366,7 @@
             "challenge": "From your measurements, estimate how long a battery would power your device."
           },
           "output": "Current and voltage measurements with units.",
+          "output_plus": "An estimate of the battery life based on your measurements.",
           "guides": [
             "fy6-2"
           ]
@@ -323,9 +379,10 @@
           "levels": {
             "try": "Make the LED blink with the example program.",
             "modify": "Turn the blinking into a heartbeat, a lighthouse or your own name in Morse code.",
-            "challenge": "Program a reaction-time game that measures reaction time in milliseconds, and work out the class's mean and spread."
+            "challenge": "Program a reaction-time game with a ready-made button circuit, and work out the mean and spread of the class's results. Buttons and inputs are covered properly in lesson 10."
           },
-          "output": "A working program and the class mean.",
+          "output": "A working LED program you have changed yourself: your own light rhythm.",
+          "output_plus": "A reaction-time game and the mean and spread of the class's results.",
           "guides": [
             "ahjo-arduino"
           ]
@@ -340,7 +397,8 @@
             "modify": "Turn the sensor into an instrument or a light that reacts to its surroundings, for example a buzzer whose pitch rises as your hand comes closer.",
             "challenge": "Calibrate the sensor, collect a series of measurements and plot a graph with units."
           },
-          "output": "A graph of your own measurement data.",
+          "output": "Sensor readings in the serial plotter and your own device that reacts to the sensor.",
+          "output_plus": "A calibrated series of measurements and a graph with units.",
           "guides": [
             "tvt-mittausohjelma"
           ]
@@ -355,7 +413,8 @@
             "modify": "Build a cardboard figure on the servo that waves, nods or points.",
             "challenge": "Make the servo follow the light, steered by two light-dependent resistors."
           },
-          "output": "A light-following servo.",
+          "output": "Working servo control and your own moving figure or mechanism.",
+          "output_plus": "A light-following servo.",
           "guides": [
             "fy7-4"
           ]
@@ -370,7 +429,8 @@
             "modify": "Give the robot its own body or load space made of cardboard or printed.",
             "challenge": "Compare two gear ratios: how do they affect speed and pulling force?"
           },
-          "output": "A working robot base and a gear ratio comparison.",
+          "output": "A working robot base with your own shell or load space.",
+          "output_plus": "An experimental comparison of two gear ratios.",
           "guides": []
         },
         {
@@ -383,27 +443,30 @@
             "modify": "Add a sensor to the robot and let it find the route itself.",
             "challenge": "Compare the rounds: measure the time and the accuracy with three repetitions."
           },
-          "output": "A comparison of the two rounds.",
+          "output": "A robot that drives the track with pre-programmed moves, and a first try with a sensor.",
+          "output_plus": "A comparison of the rounds: time and accuracy over three repetitions.",
           "guides": []
         },
         {
           "title": "Planning the mini project",
           "text": "The problem, a measurable measure of success, a materials list and a sketch.",
           "make": "Your own idea on paper",
-          "start": "Browse the project bank and your own course work and pick three ideas that excite you.",
+          "start": "Look through the mini project options below and your own course work, and choose three ideas that excite you.",
           "levels": {
-            "try": "Choose one idea and record its problem, measure and materials.",
+            "try": "Choose one of the mini project options below or your own idea, and record its problem, measure and materials.",
             "modify": "Combine two earlier exercises from the course into a new device.",
             "challenge": "Make a cardboard mock-up and try the idea on another group before building."
           },
-          "output": "An approved mini project plan.",
+          "output": "A plan approved by the teacher: the idea, the measure of success, the materials and a sketch.",
+          "output_plus": "A cardboard mock-up and another group's feedback on the idea.",
           "guides": [
             "ahjo-projektipaivakirja"
-          ]
+          ],
+          "final": true
         },
         {
           "title": "Mini project",
-          "text": "A small device of your own with the methods learned: building and testing.",
+          "text": "A small device of your own with the methods you have learnt and ready-made solutions: building and testing.",
           "make": "Your own device",
           "start": "Gather the materials and get the first part working, for example a sensor or a light.",
           "levels": {
@@ -411,14 +474,15 @@
             "modify": "Make the device your own: a case, a colour, a sound or a shape.",
             "challenge": "Test the device three times with the measure of success and improve its weakest point."
           },
-          "output": "A working device and test results.",
+          "output": "A working device tested once with the measure of success.",
+          "output_plus": "Three tests and an improved weakest point.",
           "guides": [
             "ahjo-projektipaivakirja"
           ]
         },
         {
           "title": "Presentation and self-assessment",
-          "text": "Presenting and documenting the mini project and assessing your own learning.",
+          "text": "Finishing, presenting the mini project and assessing your own learning.",
           "make": "A small exhibition",
           "start": "Film a 30-second video of your device working.",
           "levels": {
@@ -427,11 +491,39 @@
             "challenge": "Say what you would do in the next version, and assess your learning with the project journal's criteria."
           },
           "output": "A presentation and a completed project journal.",
+          "output_plus": "A plan for the next version and a self-assessment with the project journal's criteria.",
           "guides": [
             "ahjo-projektipaivakirja"
           ]
         }
       ],
+      "final": {
+        "title": "Mini project",
+        "text": "In the mini project you combine techniques you have already practised and ready-made solutions into a small device of your own. You do not need to learn a new technique. Planning is done in lesson 14, building and testing in lesson 15, and lesson 16 starts with half an hour for finishing before the presentation. If you continue work you started during the course, you have more time for building. Note down ideas in the project journal during the course.",
+        "options": [
+          [
+            "A lamp with your own light rhythm",
+            "An LED lantern or lamp whose cover and light rhythm you design yourself. Based on lessons 1 and 9."
+          ],
+          [
+            "A sensor instrument or light alarm",
+            "A device that plays, flickers or alarms according to a sensor reading. Based on lessons 9 and 10."
+          ],
+          [
+            "A moving figure or automaton",
+            "A cardboard figure or mechanism moved by a servo that reacts to a button or light. Based on lesson 11."
+          ],
+          [
+            "Your own measuring device",
+            "For example a light or temperature meter whose display or case you make yourself. Based on lessons 8 and 10."
+          ],
+          [
+            "A printed useful object",
+            "A holder, case or spare part made to measure and tested in real use. Based on lessons 3–6."
+          ]
+        ],
+        "own": "You can also carry out your own idea once the teacher has approved the plan."
+      },
       "plan_status": "draft",
       "license": true,
       "deepening": [

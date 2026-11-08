@@ -1547,7 +1547,10 @@ main.ahjo-page{max-width:68rem;font-family:var(--ahjo-text)}
 .ahjo-levels{display:block;margin:.2rem 0 .15rem;padding-left:.6rem}.ahjo-level{display:grid;grid-template-columns:9.5rem 1fr;column-gap:.4rem;margin:.15rem 0}
 .ahjo-level-l{font-weight:700;color:var(--kr-navy)}.ahjo-level-l::before{content:'';display:inline-block;width:.55rem;height:.55rem;margin-right:.35rem;border-radius:50%;background:var(--kr-pink);vertical-align:.05em}
 .ahjo-level-2 .ahjo-level-l::before{background:var(--kr-navy-mid,#2a4a9b)}.ahjo-level-3 .ahjo-level-l::before{background:var(--kr-navy)}
-@media (max-width:480px){.ahjo-level{display:block}.ahjo-level-l{display:block}}
+.ahjo-level-n{display:block;padding-left:.9rem;font-weight:400;font-size:.85em;color:var(--ink-2)}
+.ahjo-done .ahjo-meta-l{display:block}.ahjo-done-row{display:block}.ahjo-done-l{font-weight:700;color:var(--kr-navy)}.ahjo-done-plus,.ahjo-done-plus .ahjo-done-l{color:var(--ink-2)}
+.ahjo-license-parts{margin:.5rem 0;padding-left:1.4rem;max-width:44rem}.ahjo-license-parts li{margin:.3rem 0}.ahjo-structure{margin-top:.3rem}
+@media (max-width:480px){.ahjo-level{display:block}.ahjo-level-l{display:block}.ahjo-level-n{display:inline;padding-left:.4rem}}
 .ahjo-approach{margin:0;padding-left:1.6rem;font-size:var(--fs-ui)}.ahjo-approach li{margin:.35rem 0}.ahjo-approach-t{font-weight:700;color:var(--kr-navy)}
 .ahjo-lesson-g{display:block;margin:.15rem 0 .1rem;padding-left:.6rem}
 .ahjo-lesson-g a{display:inline-flex;align-items:center;min-height:24px}
