@@ -77,8 +77,8 @@ Verkkovirran turvallisuudesta kerrotaan luvussa [Sähköturvallisuus kotona ja t
 4. Kytke USB-kaapeli irti. Aseta LED koekytkentälevylle niin, että katodi on reiässä a5 ja anodi reiässä a6.
 5. Aseta vastus reikien b6 ja b10 väliin. Vastuksella ei ole suuntaa.
 6. Vie johdin Arduinon pinnistä 13 reikään e10 ja toinen johdin GND-pinnistä reikään e5. Vertaa kytkentää kuvaan ja kytkentäkaavioon.
-7. Avaa Arduino IDE, kirjoita alla oleva ohjelma ja tallenna se. Valitse valikosta oikea levy ja portti, ja lataa ohjelma painikkeella Upload.
-8. Kytke USB-kaapeli. LEDin pitäisi palaa sekunnin ja olla sekunnin pimeänä vuorotellen.
+7. Kun kytkentä on tarkistettu, kytke USB-kaapeli Arduinon ja tietokoneen väliin.
+8. Avaa Arduino IDE, kirjoita alla oleva ohjelma ja tallenna se. Valitse valikosta levyksi Arduino Uno ja oikea portti, ja lataa ohjelma painikkeella Upload. LEDin pitäisi palaa sekunnin ja olla sekunnin pimeänä vuorotellen. Ohjelma toimii samoin kuin Pikastartin valmis Blink-esimerkki, sillä Arduino Unossa esimerkin `LED_BUILTIN` on pinni 13.
 9. Mittaa virta. Irrota USB-kaapeli, ota pinnin 13 johdin pois reiästä e10 ja kytke yleismittari sarjaan sen tilalle: mittarin toinen johto pinniin 13 ja toinen reikään e10. Valitse virran mittausalue $\text{mA}$. Kytke USB ja lue arvo, kun LED palaa. Mittaustavasta kerrotaan lisää luvussa [Mittaukset virtapiirissä](fy6-2.html).
 
 ## Kuvat ja esimerkkikoodi

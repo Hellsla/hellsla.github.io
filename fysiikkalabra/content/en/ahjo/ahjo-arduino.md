@@ -77,8 +77,8 @@ Mains electricity safety is covered in the chapter [Electrical safety at home an
 4. Unplug the USB cable. Put the LED on the breadboard with the cathode in hole a5 and the anode in hole a6.
 5. Put the resistor between holes b6 and b10. A resistor has no direction.
 6. Run a wire from the Arduino's pin 13 to hole e10 and another wire from a GND pin to hole e5. Compare your circuit with the drawing and the circuit diagram.
-7. Open the Arduino IDE, type the program below and save it. Choose the right board and port from the menu, and upload the program with the Upload button.
-8. Plug in the USB cable. The LED should be on for one second and off for one second in turn.
+7. When you have checked the circuit, plug the USB cable in between the Arduino and the computer.
+8. Open the Arduino IDE, type the program below and save it. Choose Arduino Uno as the board and the right port from the menu, and upload the program with the Upload button. The LED should be on for one second and off for one second in turn. The program works like the ready-made Blink example of the quick start, because on the Arduino Uno the example's `LED_BUILTIN` is pin 13.
 9. Measure the current. Unplug the USB cable, take the pin 13 wire out of hole e10 and connect the multimeter in series in its place: one lead to pin 13 and the other to hole e10. Choose the current range $\text{mA}$. Plug in the USB cable and read the value while the LED is on. Measuring is explained further in the chapter [Measurements in an electric circuit](fy6-2.html).
 
 ## Diagrams and example code

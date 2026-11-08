@@ -134,11 +134,12 @@ Esimerkki merkinnästä, jossa kokeilu epäonnistui:
 --- Tunti 6, 14.2. ---
 Tavoite: kastelupumppu käynnistyy, kun maa on kuiva.
 Tehty: Aino kytki pumpun MOSFET-moduuliin, Eetu kirjoitti koodin.
-Päätös: kynnysarvoksi 520, koska kuivan mullan lukemat olivat 540-560
-ja juuri kastellun 300-340 (3 toistoa, ks. taulukko 2).
+Päätös: pumppu käynnistyy, kun lukema ylittää 520, koska kuivan
+mullan lukemat olivat 540-560 ja juuri kastellun 300-340
+(3 toistoa, ks. taulukko 2). Kuiva multa antaa siis suuremman lukeman.
 Ongelma: pumppu käynnistyi ja sammui sekunnin välein. Syy: lukema
-heilui kynnyksen molemmin puolin. Muutos: käynnistys alle 520,
-sammutus vasta yli 560 (hystereesi).
+heilui kynnyksen molemmin puolin. Muutos: käynnistys, kun lukema
+ylittää 520, ja sammutus vasta, kun se laskee alle 400 (hystereesi).
 Seuraava askel: testataan muutos yön yli ja kirjataan lukemat.
 ```
 
