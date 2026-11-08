@@ -78,6 +78,10 @@ for lang in i18n.languages():
         n = len(re.findall(r"<li>", ol.group(1))) if ol else 0
         expect(f"{lang} {c['code']}: the course page has the goals and {n} lessons, each with its picture",
                not c.get("lessons") or (n == len(c["lessons"]) == 16 and ol.group(1).count('class="ahjo-art"') == 16 and 'id="tavoitteet"' in cp))
+        hands = [l for l in c.get("lessons", []) if l.get("levels")]
+        expect(f"{lang} {c['code']}: a hands-on start and the three levels on every lesson that has them ({len(hands)}), and the approach section", ol is not None
+               and ol.group(1).count('class="ahjo-lesson-e ahjo-lesson-s"') == len(hands) and ol.group(1).count('class="ahjo-levels"') == len(hands)
+               and (not hands or ('id="nain-edetaan"' in cp and cp.find('id="nain-edetaan"') < cp.find('id="oppitunnit"'))))
         expect(f"{lang} {c['code']}: every lesson says what it produces", not c.get("lessons") or (ol and ol.group(1).count('class="ahjo-lesson-e ahjo-lesson-o"') == 16))
         hand = [l["milestone"] for l in c.get("lessons", []) if l.get("milestone")]
         expect(f"{lang} {c['code']}: the hand-ins ({len(hand)}) are marked on their lessons", ol is not None and all(ahjo.esc(h) in ol.group(1) for h in hand) and (c["code"] != "AHJO2" or len(hand) == 5))

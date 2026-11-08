@@ -208,7 +208,7 @@ def validate(lessons, investigations, guides, planned_codes, local_codes, module
     src = load()
     shape = lambda d: ([c["code"] for c in d["courses"]], [c["id"] for c in d["categories"]],
                        [r.get("ref") or r.get("id") or "safety" for r in d["resources"]], [g["id"] for g in d["equipment"]],
-                       [len(g["items"]) for g in d["equipment"]], [(len(c.get("goals", [])), len(c.get("lessons", [])), [(l.get("guides", []), bool(l.get("milestone"))) for l in c.get("lessons", [])], len(c.get("deepening", []))) for c in d["courses"]], [s["id"] for s in d["safety"]], [l["course"] for l in d["links"]], sorted(d["ui"]),
+                       [len(g["items"]) for g in d["equipment"]], [(len(c.get("goals", [])), len(c.get("lessons", [])), [(l.get("guides", []), bool(l.get("milestone")), bool(l.get("start")), sorted(l.get("levels", {}))) for l in c.get("lessons", [])], len(c.get("deepening", []))) for c in d["courses"]], [s["id"] for s in d["safety"]], [l["course"] for l in d["links"]], sorted(d["ui"]),
                        [(p["id"], p["status"], p["level"], p["lessons"], p["courses"], [i["url"] for i in p["inspiration"]], len(p["skills"]), len(p["materials"]), len(p["subjects"])) for p in d.get("projects", [])])
     files = [SOURCE] + sorted((ROOT / "content").glob("*/ahjo.json"))
     for f in files:
@@ -242,6 +242,10 @@ def validate(lessons, investigations, guides, planned_codes, local_codes, module
             if sum(1 for l in c.get("lessons", []) if l.get("milestone")) not in (0, 5) and c["code"] == "AHJO2":
                 errs.append(f"{name}: AHJO2: the five hand-ins are marked on five lessons")
             if any(not x.get("title") or not x.get("text") for x in c.get("deepening", [])): errs.append(f"{name}: {c['code']}: a deepening item without a title or text")
+            hands_on = [l for l in c.get("lessons", []) if l.get("levels") or l.get("start")]
+            if hands_on and (len(hands_on) != len(c["lessons"]) or not all(l.get("make") and l.get("start") and sorted(l.get("levels", {})) == ["challenge", "modify", "try"] and all(l["levels"].values()) for l in hands_on)):
+                errs.append(f"{name}: {c['code']}: every lesson has what is made, the first 10 minutes and the three levels try, modify, challenge (teacher 2026-11-08)")
+            if c.get("start") and not (c["start"].get("title") and c["start"].get("text")): errs.append(f"{name}: {c['code']}: the opening challenge needs a title and a text")
         seen = set()
         for r in d["resources"]:
             rid = r.get("ref") or r.get("id") or ("safety" if r.get("safety") else None)
@@ -439,6 +443,10 @@ def lessons_list(d, c, ref):
         rows.append(f'<li><div class="ahjo-lesson"><span class="ahjo-lesson-art">{art(c["code"].lower() + "-" + str(i))}</span><span class="ahjo-lesson-b">'
                     + (f'<span class="ahjo-badge ahjo-milestone">{esc(l["milestone"])}</span>' if l.get("milestone") else "")
                     + f'<span class="ahjo-lesson-t">{esc(l["title"])}</span> <span class="ahjo-lesson-x">{esc(l["text"])}</span>'
+                    + (f'<span class="ahjo-make"><span class="ahjo-meta-l">{esc(u["lesson_make"])}:</span> {esc(l["make"])}</span>' if l.get("make") else "")
+                    + (f'<span class="ahjo-lesson-e ahjo-lesson-s"><span class="ahjo-meta-l">{esc(u["lesson_start"])}:</span> {esc(l["start"])}</span>' if l.get("start") else "")
+                    + (('<span class="ahjo-levels">' + "".join(f'<span class="ahjo-level ahjo-level-{n}"><span class="ahjo-level-l">{esc(lab)}</span> <span class="ahjo-level-x">{esc(l["levels"][key])}</span></span>'
+                                                               for n, (key, lab) in enumerate(zip(("try", "modify", "challenge"), u["lesson_levels"]), 1)) + '</span>') if l.get("levels") else "")
                     + (f'<span class="ahjo-lesson-e"><span class="ahjo-meta-l">{esc(u["lesson_example"])}:</span> {esc(l["example"])}</span>' if l.get("example") else "")
                     + (f'<span class="ahjo-lesson-e ahjo-lesson-o"><span class="ahjo-meta-l">{esc(u["lesson_output"])}:</span> {esc(l["output"])}</span>' if l.get("output") else "")
                     + (f'<span class="ahjo-lesson-g"><span class="ahjo-meta-l">{esc(u["lesson_guides"])}:</span> {", ".join(links)}</span>' if links else "")
@@ -481,6 +489,10 @@ def course_body(d, c, planned, local, modules, ref):
         out += (f'<section class="ahjo-sec" id="tavoitteet" aria-labelledby="h-{k}-goals"><h2 id="h-{k}-goals">{esc(u["course_goals"])}</h2>{note}'
                 f'<p class="ahjo-sec-lead">{esc(u["course_goals_lead"])}</p><ul class="ahjo-goals">' + "".join(f'<li>{esc(g)}</li>' for g in c["goals"]) + '</ul></section>')
         note = ""
+    if any(l.get("levels") for l in c.get("lessons", [])):
+        out += (f'<section class="ahjo-sec" id="nain-edetaan" aria-labelledby="h-{k}-approach"><h2 id="h-{k}-approach">{esc(u["approach_h"])}</h2>'
+                f'<p class="ahjo-sec-lead">{esc(u["approach_lead"])}</p><ol class="ahjo-approach">'
+                + "".join(f'<li><span class="ahjo-approach-t">{esc(t)}</span> {esc(x)}</li>' for t, x in u["approach_steps"]) + '</ol></section>')
     if c.get("lessons"):
         out += (f'<section class="ahjo-sec" id="oppitunnit" aria-labelledby="h-{k}-lessons"><h2 id="h-{k}-lessons">{esc(u["course_lessons"].replace("{n}", str(len(c["lessons"]))))}</h2>{note}'
                 + lessons_list(d, c, ref) + '</section>' + deepening_section(u, c, k))

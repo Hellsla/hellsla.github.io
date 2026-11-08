@@ -66,6 +66,33 @@
     "course_goals_lead": "In this course, you will learn to",
     "course_lessons": "{n} lessons",
     "lesson_example": "Example",
+    "lesson_make": "Make",
+    "lesson_start": "The first 10 minutes",
+    "lesson_levels": [
+      "Try",
+      "Modify",
+      "Challenge yourself"
+    ],
+    "approach_h": "How the lessons work",
+    "approach_lead": "Every lesson starts with making. The first success comes within 5–10 minutes, and the teacher has prepared the devices and example code in advance. Devices are used only after the induction.",
+    "approach_steps": [
+      [
+        "Try",
+        "You get a first working version from a ready-made example or model."
+      ],
+      [
+        "Modify",
+        "You change it: a number, a shape, a colour or a sound. Using ready-made code and models is allowed and encouraged."
+      ],
+      [
+        "Understand",
+        "You find out why it works. The technology, physics and programming are explained in Ahjo's guides and the physics chapters."
+      ],
+      [
+        "Create your own",
+        "You design it yourself, first in the lesson's challenge and finally in the mini project."
+      ]
+    ],
     "lesson_output": "Output",
     "lesson_guides": "Guides",
     "deepening_h": "Optional deepening",
@@ -159,7 +186,13 @@
         {
           "title": "Welcome to Ahjo",
           "text": "The space, the equipment and how we work; the rules and the general induction.",
-          "example": "A first 15-minute task: make an LED light with a battery and explain why it lights only one way round. Then map Ahjo's equipment and record one real problem you could solve with it during the course.",
+          "make": "A torch from found objects",
+          "start": "Connect an LED to a coin cell and it lights up. Turn the LED round and see what happens.",
+          "levels": {
+            "try": "Make the LED light and explain why it lights only one way round.",
+            "modify": "Change how the light looks with a ping-pong ball, paper, foil or a plastic bottle, and pick your favourite.",
+            "challenge": "Walk round Ahjo and record one real problem you would like to solve during the course."
+          },
           "output": "Project journal set up and one problem recorded.",
           "guides": [
             "ahjo-projektipaivakirja"
@@ -168,14 +201,26 @@
         {
           "title": "Working safely",
           "text": "Device induction for the 3D printer and hand tools; protective equipment and an orderly workstation.",
-          "example": "A risk assessment as at a workplace: choose one device, identify its hazards and write short instructions someone else can work safely from.",
+          "make": "Ahjo's own instruction card",
+          "start": "Find five things in the space that have to do with safety, such as the fire extinguisher, the first aid kit and safety glasses, and photograph them.",
+          "levels": {
+            "try": "Take the device induction for the 3D printer and the hand tools.",
+            "modify": "Make an illustrated instruction card for one device in your own style, for example as a drawing or a comic.",
+            "challenge": "Write a risk assessment for the device: the hazard, how likely it is, the consequence and how to protect yourself."
+          },
           "output": "A risk assessment of one device.",
           "guides": []
         },
         {
           "title": "Basics of 3D modelling",
           "text": "Basic shapes, joining and holes in Tinkercad.",
-          "example": "Model an ergonomic handle, a case or a spare part for something broken. At the end of the lesson your part starts printing, and the print continues between lessons.",
+          "make": "Your own key ring",
+          "start": "Open the teacher's ready-made template in Tinkercad and type your name on it. Your first model is done.",
+          "levels": {
+            "try": "Finish the key ring and save it as an STL file in the print queue.",
+            "modify": "Make the shape your own: add your own symbol or pattern and move the hole.",
+            "challenge": "Model something that fixes or improves something in your everyday life, such as a cable holder or a pen stand."
+          },
           "output": "Your own model in the print queue.",
           "guides": [
             "ahjo-3d-mallinnus"
@@ -184,7 +229,13 @@
         {
           "title": "A model to measure",
           "text": "Dimensions, clearance and fitting parts together.",
-          "example": "Measure with a calliper and print a fit test of about 20 minutes during the lesson. Find the clearance at which a peg and a hole fit together.",
+          "make": "A lid that snaps shut",
+          "start": "Guess the sizes of three objects, then measure them with a calliper. Who guessed closest?",
+          "levels": {
+            "try": "Print a ready-made fit test with five clearances and find which peg fits the hole.",
+            "modify": "Model a lid or a stopper for your own jar, pen or bottle with the clearance from the fit test.",
+            "challenge": "Find out how the clearance depends on the print orientation, and present the results as a table."
+          },
           "output": "Fit test result: a clearance that works.",
           "guides": [
             "ahjo-3d-mallinnus"
@@ -193,7 +244,13 @@
         {
           "title": "From model to print",
           "text": "Slicing in PrusaSlicer, print settings and using the printer.",
-          "example": "A strength test: print the same beam with two infills or in two orientations and hang known masses on it. Does it hold a 2 kg mass, a weight of about 20 N?",
+          "make": "A beam that holds",
+          "start": "Open a ready-made beam in PrusaSlicer and change the infill. How do the print time and the mass change?",
+          "levels": {
+            "try": "Slice and print the beam with the settings your teacher gives.",
+            "modify": "Choose the infill and the orientation yourself and justify your choice.",
+            "challenge": "Does the beam hold a 2 kg mass, a weight of about 20 N? Compare two beams and work out which holds more per gram of its own mass."
+          },
           "output": "Strength test results as a table.",
           "guides": [
             "ahjo-3d-tulostus"
@@ -202,7 +259,13 @@
         {
           "title": "Judging and fixing a print",
           "text": "The most common print defects, their causes and how to fix them.",
-          "example": "Compare your print with the model: measure three dimensions with a calliper, identify the defects and change one setting to fix them.",
+          "make": "A museum of mistakes",
+          "start": "Pick three failed prints from the box of mistakes, name their defects and guess the causes.",
+          "levels": {
+            "try": "Measure your own print with a calliper and compare it with the model.",
+            "modify": "Change one print setting and print a corrected version.",
+            "challenge": "Put together an illustrated guide to the class's defects: the defect, the cause and the fix."
+          },
           "output": "The measured difference between model and print.",
           "guides": [
             "ahjo-3d-tulostus"
@@ -211,7 +274,13 @@
         {
           "title": "Circuits and components",
           "text": "Power source, resistor, LED and breadboard.",
-          "example": "Size an LED's series resistor with Ohm's law, build the circuit and compare the measured current with your calculation.",
+          "make": "Light without a program",
+          "start": "Put an LED and a resistor on the breadboard as in the ready-made drawing. The LED lights from the Arduino's 5 volts with no program.",
+          "levels": {
+            "try": "Build the circuit as in the drawing.",
+            "modify": "Add a second LED, first in series and then in parallel. In which connection do the LEDs shine brighter?",
+            "challenge": "Size the series resistor with Ohm's law and compare the measured current with your calculation."
+          },
           "output": "Circuit diagram and resistor calculation.",
           "guides": [
             "ahjo-arduino",
@@ -221,7 +290,13 @@
         {
           "title": "Measuring with a multimeter",
           "text": "Measuring voltage, current and resistance connected the right way.",
-          "example": "Measure the current drawn by an Arduino, an LED and a motor in different situations and estimate how long a battery would power your device.",
+          "make": "How long does the battery last?",
+          "start": "Measure the voltage of a new and a used battery. Which is which?",
+          "levels": {
+            "try": "Measure the voltages across the LED and the resistor, and the current in the circuit.",
+            "modify": "Choose a device yourself, such as an LED, a motor or a buzzer, and measure its current in different situations.",
+            "challenge": "From your measurements, estimate how long a battery would power your device."
+          },
           "output": "Current and voltage measurements with units.",
           "guides": [
             "fy6-2"
@@ -230,7 +305,13 @@
         {
           "title": "A first Arduino program",
           "text": "The programming environment, digital outputs and a blinking LED.",
-          "example": "Program a reaction-time game that measures reaction time in milliseconds, and calculate the class's mean. Calculating the spread is an extension.",
+          "make": "Your own light rhythm",
+          "start": "Upload a ready-made blink program to the Arduino and change one number in it. The LED now blinks to your beat.",
+          "levels": {
+            "try": "Make the LED blink with the example program.",
+            "modify": "Turn the blinking into a heartbeat, a lighthouse or your own name in Morse code.",
+            "challenge": "Program a reaction-time game that measures reaction time in milliseconds, and work out the class's mean and spread."
+          },
           "output": "A working program and the class mean.",
           "guides": [
             "ahjo-arduino"
@@ -239,7 +320,13 @@
         {
           "title": "Sensors and inputs",
           "text": "Button, light and distance sensors; conditions and loops.",
-          "example": "Build a measuring device that sends its readings to the serial port, for example light or distance. Plot a graph of the data collected during the lesson.",
+          "make": "A measuring device that draws",
+          "start": "Connect a light sensor, upload a ready-made program and cover the sensor with your hand. The serial plotter draws a curve at once.",
+          "levels": {
+            "try": "Send the sensor's readings to the serial port and save them.",
+            "modify": "Turn the sensor into an instrument or a light that reacts to its surroundings, for example a buzzer whose pitch rises as your hand comes closer.",
+            "challenge": "Calibrate the sensor, collect a series of measurements and plot a graph with units."
+          },
           "output": "A graph of your own measurement data.",
           "guides": [
             "tvt-mittausohjelma"
@@ -248,7 +335,13 @@
         {
           "title": "Motors and actuators",
           "text": "Servo and DC motor; power supply and control.",
-          "example": "A servo turns towards the light, steered by two light-dependent resistors. Measuring the power is an optional extension.",
+          "make": "A moving figure",
+          "start": "Connect a servo and a potentiometer to a ready-made program and turn the servo with the knob.",
+          "levels": {
+            "try": "Program the servo to turn to three different angles.",
+            "modify": "Build a cardboard figure on the servo that waves, nods or points.",
+            "challenge": "Make the servo follow the light, steered by two light-dependent resistors."
+          },
           "output": "A light-following servo.",
           "guides": [
             "fy7-4"
@@ -257,21 +350,39 @@
         {
           "title": "Building a robot",
           "text": "The structure of a robotics kit, drive train and sensors.",
-          "example": "Build a robot that carries a load around a course. Compare how the gear ratio affects speed and pulling force.",
+          "make": "A robot that carries a load",
+          "start": "Put the robot base together from ready-made parts and drive it forwards and backwards with a test program.",
+          "levels": {
+            "try": "Build the robot as in the instructions.",
+            "modify": "Give the robot its own body or load space made of cardboard or printed.",
+            "challenge": "Compare two gear ratios: how do they affect speed and pulling force?"
+          },
           "output": "A working robot base and a gear ratio comparison.",
           "guides": []
         },
         {
           "title": "Programming a robot",
           "text": "Movement, sensor control and solving a task with a program.",
-          "example": "In the first round the robot drives the course without sensors, using only distances and angles calculated in advance, as when steering a space probe. In the second round it uses sensors. Compare the rounds.",
+          "make": "A course blind first, then with sensors",
+          "start": "Program the robot to drive a square. How close to the start does it come back?",
+          "levels": {
+            "try": "Drive the course using only distances and angles calculated in advance, as when steering a space probe.",
+            "modify": "Add a sensor to the robot and let it find the route itself.",
+            "challenge": "Compare the rounds: measure the time and the accuracy with three repetitions."
+          },
           "output": "A comparison of the two rounds.",
           "guides": []
         },
         {
           "title": "Planning the mini project",
           "text": "The problem, a measurable measure of success, a materials list and a sketch.",
-          "example": "Choose a topic from your own problem or the project bank. Record the problem, the measure, the materials and a sketch in your project journal, and have the plan approved by your teacher.",
+          "make": "Your own idea on paper",
+          "start": "Browse the project bank and your own course work and pick three ideas that excite you.",
+          "levels": {
+            "try": "Choose one idea and record its problem, measure and materials.",
+            "modify": "Combine two earlier exercises from the course into a new device.",
+            "challenge": "Make a cardboard mock-up and try the idea on another group before building."
+          },
           "output": "An approved mini project plan.",
           "guides": [
             "ahjo-projektipaivakirja"
@@ -280,7 +391,13 @@
         {
           "title": "Mini project",
           "text": "A small device of your own with the methods learned: building and testing.",
-          "example": "Build the device according to the plan and test it with the measure of success at least three times.",
+          "make": "Your own device",
+          "start": "Gather the materials and get the first part working, for example a sensor or a light.",
+          "levels": {
+            "try": "Build a working version by combining examples from the course.",
+            "modify": "Make the device your own: a case, a colour, a sound or a shape.",
+            "challenge": "Test the device three times with the measure of success and improve its weakest point."
+          },
           "output": "A working device and test results.",
           "guides": [
             "ahjo-projektipaivakirja"
@@ -289,7 +406,13 @@
         {
           "title": "Presentation and self-assessment",
           "text": "Presenting and documenting the mini project and assessing your own learning.",
-          "example": "Present your device as in a product review: goal, solution, measurements and what you would do in the next version.",
+          "make": "A small exhibition",
+          "start": "Film a 30-second video of your device working.",
+          "levels": {
+            "try": "Present your device: the goal, the solution and the result.",
+            "modify": "Choose your own way to present: a demo, a poster, a video or an exhibition stand.",
+            "challenge": "Say what you would do in the next version, and assess your learning with the project journal's criteria."
+          },
           "output": "A presentation and a completed project journal.",
           "guides": [
             "ahjo-projektipaivakirja"

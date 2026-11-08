@@ -1539,7 +1539,14 @@ main.ahjo-page{max-width:68rem;font-family:var(--ahjo-text)}
 /* a picture for each lesson (teacher 2026-11-08 "Haluan kuvat tunneille"): small at the left of the lesson's text */
 .ahjo-lessons li{margin:.55rem 0}
 .ahjo-lesson{display:flow-root}
-.ahjo-lesson-o{border-left-color:var(--kr-navy)}.ahjo-lesson-g{display:block;margin:.15rem 0 .1rem;padding-left:.6rem}
+.ahjo-lesson-o{border-left-color:var(--kr-navy)}.ahjo-lesson-s{background:var(--kr-pink-soft);border-radius:0 6px 6px 0;padding:.15rem .6rem}
+.ahjo-make{display:block;margin:.2rem 0 .15rem;font-weight:700;color:var(--kr-navy)}.ahjo-make .ahjo-meta-l{color:var(--kr-pink-dark,#b0306b)}
+.ahjo-levels{display:block;margin:.2rem 0 .15rem;padding-left:.6rem}.ahjo-level{display:grid;grid-template-columns:9.5rem 1fr;column-gap:.4rem;margin:.15rem 0}
+.ahjo-level-l{font-weight:700;color:var(--kr-navy)}.ahjo-level-l::before{content:'';display:inline-block;width:.55rem;height:.55rem;margin-right:.35rem;border-radius:50%;background:var(--kr-pink);vertical-align:.05em}
+.ahjo-level-2 .ahjo-level-l::before{background:var(--kr-navy-mid,#2a4a9b)}.ahjo-level-3 .ahjo-level-l::before{background:var(--kr-navy)}
+@media (max-width:480px){.ahjo-level{display:block}.ahjo-level-l{display:block}}
+.ahjo-approach{margin:0;padding-left:1.6rem;font-size:var(--fs-ui)}.ahjo-approach li{margin:.35rem 0}.ahjo-approach-t{font-weight:700;color:var(--kr-navy)}
+.ahjo-lesson-g{display:block;margin:.15rem 0 .1rem;padding-left:.6rem}
 .ahjo-lesson-g a{display:inline-flex;align-items:center;min-height:24px}
 .ahjo-milestone{display:table;margin:0 0 .3rem;white-space:normal;border-radius:.6rem}
 .ahjo-deep{margin:0;padding-left:1.2rem;font-size:var(--fs-ui)}.ahjo-deep li{margin:.4rem 0}
@@ -1571,7 +1578,7 @@ main.ahjo-page{max-width:68rem;font-family:var(--ahjo-text)}
 .ahjo-shared-icon{padding:7px;box-sizing:border-box;border-radius:12px;background:var(--kr-pink-soft);color:var(--kr-navy)}
 .ahjo-shared-t{font:700 1.0625rem/1.3 var(--ahjo-head);color:var(--kr-navy)}
 .ahjo-shared-x{font-size:var(--fs-ui);color:var(--ink-2)}
-.ahjo-page :is(.ahjo-topics,.ahjo-goals,.ahjo-lessons,.ahjo-deep,.ahjo-course-res,.ahjo-res-list),.ahjo-page :is(.ahjo-plan-note,.ahjo-more,.ahjo-safety-item,.ahjo-empty,.ahjo-proj-sum){max-width:44rem}
+.ahjo-page :is(.ahjo-topics,.ahjo-goals,.ahjo-lessons,.ahjo-deep,.ahjo-approach,.ahjo-course-res,.ahjo-res-list),.ahjo-page :is(.ahjo-plan-note,.ahjo-more,.ahjo-safety-item,.ahjo-empty,.ahjo-proj-sum){max-width:44rem}
 /* the project bank (scripts/ahjo.py projects_body): one card per topic, a proposal until the teacher approves it */
 .ahjo-count{font-size:var(--fs-ui);font-weight:600;color:var(--ink-2);margin-left:.35rem;white-space:nowrap}
 .ahjo-proj-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:1rem}
