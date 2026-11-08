@@ -90,6 +90,11 @@ for lang in i18n.languages():
         expect(f"{lang} {c['code']}: a hands-on start and the three levels on every lesson that has them ({len(hands)}), and the approach section", ol is not None
                and ol.group(1).count('class="ahjo-lesson-e ahjo-lesson-s"') == len(hands) and ol.group(1).count('class="ahjo-levels"') == len(hands)
                and (not hands or ('id="nain-edetaan"' in cp and cp.find('id="nain-edetaan"') < cp.find('id="oppitunnit"'))))
+        st = c.get("start")
+        expect(f"{lang} {c['code']}: the opening challenge comes before the lessons with all its steps, and lesson 1 links it (Ahjo 2, teacher 2026-11-08)",
+               (c["code"] != "AHJO2" or st is not None) and (not st or ('id="aloitushaaste"' in cp and cp.find('id="aloitushaaste"') < cp.find('id="oppitunnit"')
+               and all(ahjo.esc(x) in cp for x in st["steps"]) and ol is not None and re.search(r'<li id="tunti-1">.*?href="#aloitushaaste"', ol.group(1), re.S) is not None
+               and not re.search(r'<li id="tunti-2">.*?href="#aloitushaaste"', ol.group(1), re.S))))
         expect(f"{lang} {c['code']}: every lesson says what it produces", not c.get("lessons") or (ol and ol.group(1).count('class="ahjo-lesson-e ahjo-lesson-o"') == 16))
         hand = [l["milestone"] for l in c.get("lessons", []) if l.get("milestone")]
         expect(f"{lang} {c['code']}: the hand-ins ({len(hand)}) are marked on their lessons", ol is not None and all(ahjo.esc(h) in ol.group(1) for h in hand) and (c["code"] != "AHJO2" or len(hand) == 5))
