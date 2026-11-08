@@ -92,7 +92,7 @@ def site_mark_kiviruukki():
 COURSE_ICON_TITLES = {"AHJO1": "3D-tulostin Ahjon alasimella", "AHJO2": "Idean hehkulamppu Ahjon alasimella"}
 
 
-def course_icon_svg(code):
+def course_icon_svg(code, tile=True):
     """Ahjo 1's and Ahjo 2's icons (teacher 2026-11-08 chose 1a and 2a): the logo's anvil and arch (its paths copied
     unchanged) on the module icons' tile, with a 3D printer (Ahjo 1) or an idea's light bulb (Ahjo 2) above it."""
     paths = re.findall(r"<path\b.*?/>", LOGO.read_text(), re.S)
@@ -107,8 +107,8 @@ def course_icon_svg(code):
                f'<path d="M411 380h120" {s}/><path d="M440 236l31 34 31-34" stroke="{N}" stroke-width="22" fill="none" stroke-linecap="round" stroke-linejoin="round"/>'
                + "".join(f'<path d="M{a}" stroke="{P}" stroke-width="26" stroke-linecap="round"/>' for a in ("300 120 340 150", "642 120 602 150", "260 230 310 230", "682 230 632 230")))
     return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48"><title>{COURSE_ICON_TITLES[code]}</title>'
-            '<rect x="0.5" y="0.5" width="47" height="47" rx="12" fill="#fffdf8" stroke="#e3dccb"/>'
-            '<svg x="5" y="5" width="38" height="38" viewBox="121 -50 700 700">' + top + paths[1] + paths[2] + '</svg></svg>\n')
+            + ('<rect x="0.5" y="0.5" width="47" height="47" rx="12" fill="#fffdf8" stroke="#e3dccb"/>' if tile else "")
+            + '<svg x="5" y="5" width="38" height="38" viewBox="121 -50 700 700">' + top + paths[1] + paths[2] + '</svg></svg>\n')
 
 
 def tab_icons(html):
@@ -459,7 +459,8 @@ def course_body(d, c, planned, local, modules, ref):
     u = d["ui"]; title, text, _ = course_info(c["code"], planned, local); k = c["code"].lower()
     # the course's own logo large in the banner; Ahjo's logo heads the shared section below (teacher 2026-11-08)
     out = hero(d, title, c["subtitle"], PAGE + "#opintojaksot", big=True, extra=f'<p class="ahjo-opening">{esc(text)}</p>',
-               logo=f'<img class="ahjo-logo ahjo-course-logo" src="module-icons/{k}.svg" alt="" width="168" height="168">')
+               logo=course_icon_svg(c["code"], tile=False).strip().replace("<svg ", '<svg class="ahjo-logo ahjo-course-logo" aria-hidden="true" focusable="false" ', 1)
+                    .replace('width="48" height="48"', 'width="168" height="168"', 1))   # inline, without the tile (teacher 2026-11-08)
     eq = "#laitteisto"
     tiles = [(BANK, icon("box", "ahjo-icon ahjo-shared-icon"), u["bank_h"], u["shared_bank"]),
              (PROJECTS, icon("cube", "ahjo-icon ahjo-shared-icon"), u["projects_h"], u["projects_teaser"]),

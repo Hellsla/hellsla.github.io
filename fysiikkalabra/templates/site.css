@@ -1591,7 +1591,7 @@ main.ahjo-page{max-width:68rem;font-family:var(--ahjo-text)}
 /* Ahjo 1's and Ahjo 2's icons beside their names (teacher 2026-11-08) */
 .ahjo-course-name{display:flex;align-items:center;gap:.5rem}.ahjo-course-icon{flex:none;width:40px;height:40px}
 /* a course page: the course's logo in the banner, Ahjo's logo heading the shared section (teacher 2026-11-08) */
-.ahjo-course-logo{border-radius:22%}
+.ahjo-course-logo{height:auto}
 .ahjo-shared-head{display:flex;align-items:center;gap:1rem 1.25rem;margin:0 0 .8rem}
 .ahjo-shared-head h2{margin-top:0}.ahjo-shared-home{flex:none;display:block;border-radius:12px}.ahjo-shared-home:focus-visible{outline:3px solid var(--kr-navy);outline-offset:3px}.ahjo-shared-head .ahjo-sec-lead{margin-bottom:0}
 .ahjo-shared-logo{width:104px}

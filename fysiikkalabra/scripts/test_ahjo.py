@@ -86,7 +86,7 @@ for lang in i18n.languages():
         hd = cp[cp.find('<header class="ahjo-hero'):cp.find("</header>", cp.find('<header class="ahjo-hero'))]
         sh_ = cp[cp.find('class="ahjo-sec ahjo-shared"'):]
         expect(f"{lang} {c['code']}: the course's logo large in the banner, Ahjo's logo heading the shared section (teacher 2026-11-08)",
-               hd.count("<img") == 1 and f'module-icons/{c["code"].lower()}.svg' in hd and "ahjo-makerspace-logo.svg" in sh_[:sh_.find("</section>")])
+               "<img" not in hd and 'class="ahjo-logo ahjo-course-logo"' in hd and 'stroke="#e3dccb"' not in hd and "ahjo-makerspace-logo.svg" in sh_[:sh_.find("</section>")])
         expect(f"{lang} {c['code']}: the course page links Ahjo's materials and safety", f'href="{ahjo.BANK}"' in cp and f'href="{ahjo.SAFETY}"' in cp)
         expect(f"{lang} {c['code']}: the Makerspace licence only where the teacher said so (Ahjo 1)", bool(c.get("license")) == ('class="ahjo-sec ahjo-safety-teaser ahjo-license"' in cp))
     home = (out / "index.html").read_text()
