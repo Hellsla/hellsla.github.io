@@ -5913,7 +5913,7 @@ function rlScoresCsv() {
     'RuukkiLabra · arviointi': 'RuukkiLabra · grading', 'Päivitä': 'Refresh', 'Ladataan…': 'Loading…', 'Luvut': 'Chapters',
     'Ensimmäinen luku': 'First chapter', 'Viimeinen luku': 'Last chapter', 'Kooste': 'Summary', 'Piilota nimet': 'Hide names',
     'Näytä nimet': 'Show names', 'Ei palautuksia.': 'No submissions.', 'Ryhmä yhteensä': 'Group in total',
-    'Osaamisen sormenjälki': 'Skills fingerprint', 'Tehtävät': 'Tasks', 'Vain arvioimattomat': 'Ungraded only',
+    'Ryhmän sormenjälki': "Group's learning fingerprint", 'Tehtävät': 'Tasks', 'Vain arvioimattomat': 'Ungraded only',
     'Tarkistettavat ja hylätyt palautukset': 'Submissions to check and rejected submissions', 'Tila': 'Status', 'Luku': 'Chapter',
     'Opiskelija': 'Student', 'Palautusaika': 'Submitted', 'Tunniste': 'ID', 'Syy': 'Reason', 'Päätös': 'Decision',
     '← Tehtävälista': '← Task list', 'Palautusversio': 'Submission version', 'Tehtävänanto': 'Task',
@@ -6205,7 +6205,7 @@ function rlScoresCsv() {
     <div id="groupChart" hidden aria-label="Ryhmä yhteensä"></div>
     <div class="wide"><table id="summary" hidden><thead></thead><tbody></tbody></table></div>
     <section id="selfSec" hidden>
-      <h2>Osaamisen sormenjälki</h2>
+      <h2>Ryhmän sormenjälki</h2>
       <p class="muted sa-legend" id="selfLegend"></p>
       <div id="selfBox"></div>
     </section>
@@ -6413,7 +6413,7 @@ function rlScoresCsv() {
     $('probSec').hidden = S.hide || !(S.ov && S.ov.problems.length);
     if (S.ov) { renderSummary(S.ov); renderSelf(S.ov); }
   });
-  // Osaamisen sormenjälki (opettaja 6.11.2026): koko ryhmä yhdessä taulukossa. Rivit ovat lukujen itsearviokohteet
+  // Ryhmän sormenjälki (opettaja 6.11.2026; nimi opettaja 8.11.2026): koko ryhmä yhdessä taulukossa. Rivit ovat lukujen itsearviokohteet
   // (Tarkista osaamisesi -tehtävät ja luvun tavoitteet) luvuittain, sarakkeissa opiskelijat, solussa uusimman palautuksen
   // taso värinä. Valkoinen = ei vastattu (tai lukua ei palautettu), harmaa = en ole vielä harjoitellut. Kooste-valinta rajaa luvut.
   var SA_NUM = { a: 4, b: 3, c: 2, d: 1 };
@@ -6436,7 +6436,7 @@ function rlScoresCsv() {
     hr.append(el('th', null, 'Väittämä'));
     names.forEach(function (n, i) { var th = el('th', 'st', S.hide ? 'Opiskelija ' + (i + 1) : n); th.scope = 'col'; hr.append(th); });
     head.append(hr); t.append(head, tb);
-    // teemat (curriculum.json themes) lukujen yläpuolella kuten opiskelijan Oma itsearviossa (opettaja 8.11.2026)
+    // teemat (curriculum.json themes) lukujen yläpuolella kuten Opiskelijan sormenjäljessä (opettaja 8.11.2026)
     var ids = ov.chapters.map(function (x) { return x.id; }), theme = null;
     chs.forEach(function (c) {
       var th = null, at = ids.indexOf(c.id);

@@ -44,7 +44,7 @@ samanlainen, joten kaikki kielet arvioidaan samalla sivulla.
    **Tarkistamatta** (tehtyjä ilman pisteitä), **Pisteet** (summa / enimmäispisteet) ja **Itsearvio** (keskiarvo,
    4 = osaan niin hyvin, että voisin opettaa kaverille … 1 = tarvitsen vielä harjoitusta; luvun tavoitearvioista,
    *En ole vielä harjoitellut* ei ole mukana). Ylhäällä oleva **Luvut**-valinta (mistä luvusta mihin) rajaa koosteen, tehtävät ja sormenjäljen.
-   **Osaamisen sormenjälki** näyttää koko ryhmän tavoitearviot yhdessä taulukossa: rivit ovat luvun tavoitteet luvuittain, sarakkeissa
+   **Ryhmän sormenjälki** näyttää koko ryhmän tavoitearviot yhdessä taulukossa: rivit ovat luvun tavoitteet luvuittain, sarakkeissa
    opiskelijat. Valkoinen = ei vastattu, harmaa = en ole vielä harjoitellut. Koko teksti näkyy hiiren alla. Sarakkeen otsikko järjestää taulukon (uusi napsautus kääntää järjestyksen). Luvut
    lasketaan opiskelijan uusimmasta hyväksytystä palautuksesta. Palkit näyttävät tehdyt tehtävät ja pisteet suhteessa
    enimmäismäärään, opiskelijoittain ja koko ryhmälle (Kooste-otsikon alla).
