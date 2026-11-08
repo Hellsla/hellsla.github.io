@@ -1,7 +1,9 @@
 """Ahjo Makerspace (teacher 2026-11-08; docs/PORTAL_ARCHITECTURE.md section C): Kiviruukin lukio's makerspace inside
 Ruukkilabra, in the school's colours (navy #012169, pink #fca5c7, Lato headings, Work Sans text; site.css "Ahjo") under
 the site's common header, with the original Ahjo Makerspace logo (assets/shared/brand/ahjo-makerspace-logo.svg, the
-teacher's file byte for byte: never redrawn, recoloured or cropped; LOGO_SHA256 pins it).
+teacher's file byte for byte: never redrawn, recoloured or cropped; LOGO_SHA256 pins it). The front page's course list
+shows only the mark (rays and anvil, teacher 2026-11-08) on the same white rounded square as the module icons: MARK,
+cut from the logo by mark_svg() with its paths copied unchanged and the name's two paths left out.
 
 ahjo.json is the source (Finnish); content/<lang>/ahjo.json has the same ids in another language, and a language
 without one shows the Finnish (fi-easy). build.py renders three pages in every language:
@@ -49,6 +51,18 @@ SOURCE = ROOT / "ahjo.json"
 LOGO = ROOT / "assets/shared/brand/ahjo-makerspace-logo.svg"
 LOGO_SRC = "brand/ahjo-makerspace-logo.svg"
 LOGO_SHA256 = "53cb75c6c45b7adef3d57c59c75cdc2bb220d25ccf75faa71858a27d59823e26"   # Ahjo_Makerspace_logo.svg as the teacher gave it (2026-11-08)
+MARK = ROOT / "assets/shared/brand/ahjo-makerspace-merkki.svg"
+MARK_SRC = "brand/ahjo-makerspace-merkki.svg"
+
+
+def mark_svg():
+    """The logo's mark (its first three paths: the rays, the anvil and its arch, byte for byte) on the module icons'
+    48 px white rounded square; the paths "Ahjo" and "Kiviruukin Makerspace" (the last two) are left out."""
+    paths = re.findall(r"<path\b.*?/>", LOGO.read_text(), re.S)
+    assert len(paths) == 5, "the Ahjo logo changed: check which paths are the mark"
+    return ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48"><title>Ahjo Makerspace</title>'
+            '<rect x="0.5" y="0.5" width="47" height="47" rx="12" fill="#fffdf8" stroke="#e3dccb"/>'
+            '<svg x="5" y="5" width="38" height="38" viewBox="153 9 636 636">' + "".join(paths[:3]) + '</svg></svg>\n')
 PAGE, BANK, SAFETY = "ahjo.html", "ahjo-materiaalit.html", "ahjo-turvallisuus.html"
 EQUIPMENT_STATUSES = ("tuleva", "kaytossa")
 RES_STATUSES = ("planned", "ready")

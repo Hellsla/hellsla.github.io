@@ -476,9 +476,9 @@ def planned_row(p):
 
 
 def ahjo_row(d):
-    """The front page's row of Ahjo Makerspace: its original logo (small), the name and one line, the whole row a link."""
+    """The front page's row of Ahjo Makerspace: the logo's mark as its icon (ahjo.mark_svg), the name and one line, the whole row a link."""
     q = esc(d["ui"]["front_line"])
-    return (f'<li><a class="mod-row ahjo-row" href="{ahjo.PAGE}"><img class="mod-icon ahjo-row-logo" src="{ahjo.LOGO_SRC}" alt="" width="40" height="40" aria-hidden="true">'
+    return (f'<li><a class="mod-row ahjo-row" href="{ahjo.PAGE}"><img class="mod-icon" src="{ahjo.MARK_SRC}" alt="" width="40" height="40" aria-hidden="true">'
             f'<span class="mod-text"><span class="mod-name"><span class="mod-title">{esc(d["title"])}</span></span>'
             f'<span class="mod-q" title="{q}">{q}</span></span><span class="mod-go" aria-hidden="true">→</span></a></li>')
 

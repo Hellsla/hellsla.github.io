@@ -56,7 +56,8 @@ for lang in i18n.languages():
     plan = re.search(r'<ul class="mod-list plan-list"[^>]*>(.*?)</ul>', home, re.S)
     expect(f"{lang}: Ahjo 1 and Ahjo 2 are not in the front page's planned list (teacher 2026-11-08)",
            not plan or not any(f'{c["code"].lower()}.svg' in plan.group(1) for c in d["courses"]))
-    expect(f"{lang}: the front page links Ahjo with its logo", re.search(r'<ul class="mod-list ahjo-list"><li><a class="mod-row ahjo-row" href="ahjo\.html"><img [^>]*ahjo-makerspace-logo\.svg', home) is not None)
+    expect(f"{lang}: the front page links Ahjo with the logo's mark as its icon", re.search(r'<ul class="mod-list ahjo-list"><li><a class="mod-row ahjo-row" href="ahjo\.html"><img class="mod-icon" src="(?:\.\./)?brand/ahjo-makerspace-merkki\.svg"', home) is not None)
+expect("the mark is cut from the original logo unchanged (scripts/ahjo_art.py writes it)", ahjo.MARK.is_file() and ahjo.MARK.read_text() == ahjo.mark_svg())
 
 # browser: widths and keyboard
 from playwright.sync_api import sync_playwright
