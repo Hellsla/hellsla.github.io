@@ -80,6 +80,8 @@
       "FY7": "Miten sähkö ja magnetismi liittyvät toisiinsa, ja mitä valo on?",
       "FY8": "Miksi atomin energia on kvantittunut, ja mistä säteily syntyy?"
     },
+    "local_quotes": "Opiskelijoiden kokemuksia",
+    "local_photos": "Kuvia",
     "local_course_kind": "Lukiokohtainen opintojakso",
     "local_status_planning": "Suunnitteilla",
     "local_distinct": "Tämä on lukiokohtainen opintojakso ({{school}}). Sen tavoitteet ja sisällöt perustuvat lukion omaan suunnitelmaan, eivät valtakunnallisiin moduuleihin FY1–FY8.",

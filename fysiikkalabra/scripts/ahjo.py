@@ -111,11 +111,17 @@ def course_icon_svg(code, tile=True):
             + '<svg x="5" y="5" width="38" height="38" viewBox="121 -50 700 700">' + top + paths[1] + paths[2] + '</svg></svg>\n')
 
 
+def kiviruukki_mark(html):
+    """The header's Ruukkilabra symbol in Kiviruukin lukio's colours: the Ahjo pages and a local course with the school's
+    theme (Kilparobotiikka, teacher 2026-11-08 "ruukkilab logo näillä väreillä vasemmassa yläkulmassa")."""
+    return re.sub(r'(<img class="brand-mark" src="(?:\.\./)*)brand/ruukkilabra-symboli\.svg"', rf'\g<1>{SITE_MARK_KR_SRC}"', html, count=1)
+
+
 def tab_icons(html):
     """An Ahjo page's browser tab and home screen icon is Ahjo's mark, not Ruukkilabra's, and the header shows Ruukkilabra's
     symbol in Kiviruukin lukio's colours (teacher 2026-11-08). The PNGs
     (32 px, and 180 px filling its square) are the mark rendered by scripts/ahjo_tab_icons.js and committed beside it."""
-    html = re.sub(r'(<img class="brand-mark" src="(?:\.\./)*)brand/ruukkilabra-symboli\.svg"', rf'\g<1>{SITE_MARK_KR_SRC}"', html, count=1)
+    html = kiviruukki_mark(html)
     for a, b in TAB_ICONS.items():
         assert f'href="{a}"' in html or f'/{a}"' in html, a
         html = re.sub(rf'(<link rel="(?:icon|apple-touch-icon)" href="(?:\.\./)*){re.escape(a)}"', rf'\g<1>{b}"', html)

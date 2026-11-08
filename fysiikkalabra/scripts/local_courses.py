@@ -30,6 +30,14 @@ A course's fields (all texts in the language of the file):
   overview                               optional: one paragraph after the chapters' lead (FY14: sessions, ★, Fotoni)
   mixer                                  optional: true links the YO-sekoitin page (scripts/mixer.py) from the course
                                          page and has build.py build it in every language that publishes the course
+  quotes                                 optional: [{author, paragraphs, lang?}], students' own words about the course,
+                                         shown after the description as written (only typos fixed, teacher 2026-11-08);
+                                         lang marks a quote kept in its own language on a page of another
+  photos                                 optional: [{src, alt, width, height, caption?, wide?}], pictures in assets/pics/<code>/ (src
+                                         "pics/<code>/<file>"), faces cropped out (teacher 2026-11-08); photos_heading
+                                         optional, the section's heading (default site.local_photos)
+  theme                                  optional: "kiviruukki" = the page in Kiviruukin lukio's colours and fonts with
+                                         the header symbol in them, like the Ahjo pages (Kilparobotiikka, teacher 2026-11-08)
   pathway                                investigation ids in the course's order; the course page lists its published
                                          investigations in this order, any others after them by title
   python scripts/local_courses.py        validate the registry (also run by build.py and test_home.py)
@@ -49,6 +57,12 @@ def order(code):
     """Sort key of a course code: its letters, then its number as a number (FY9 < FY10 < FY14)."""
     m = re.fullmatch(r"([A-Za-z]*)(\d*)", code)
     return (m.group(1), int(m.group(2) or 0)) if m else (code, 0)
+
+
+def label(code):
+    """The code shown beside a course's name: a real course code (FY10) only, never an internal one (KILPAROBO), as
+    Ahjo's course_name does."""
+    return code if code.startswith("FY") else ""
 
 
 def load(lang=i18n.SOURCE):
@@ -98,6 +112,13 @@ def validate(curriculum):
                 elif u["id"] in seen: errs.append(f"{REGISTRY} {code}: unit {u['id']} is listed twice")
                 seen.add(u.get("id"))
         if c.get("chapters") and not lang: errs.append(f"{REGISTRY} {code}: a course with chapters of units names their language")
+        for i, q in enumerate(c.get("quotes", [])):
+            if not (q.get("author") and q.get("paragraphs") and all(str(x).strip() for x in q["paragraphs"])): errs.append(f"{REGISTRY} {code}: quotes[{i}] needs author and paragraphs")
+            if q.get("lang") is not None and q["lang"] not in i18n.languages(): errs.append(f"{REGISTRY} {code}: quotes[{i}] lang {q['lang']!r} is not a site language")
+        for i, ph in enumerate(c.get("photos", [])):
+            if not (ph.get("src") and ph.get("alt") and ph.get("width") and ph.get("height")): errs.append(f"{REGISTRY} {code}: photos[{i}] needs src, alt, width and height")
+            elif not (ROOT / "assets" / ph["src"]).is_file(): errs.append(f"{REGISTRY} {code}: photos[{i}] {ph['src']} is not in assets/")
+        if c.get("theme") not in (None, "kiviruukki"): errs.append(f"{REGISTRY} {code}: theme {c['theme']!r} is not 'kiviruukki'")
         for f in ("modes", "report"):
             errs += [f"{REGISTRY} {code}: {f}[{i}] needs title and text" for i, x in enumerate(c.get(f, [])) if not (x.get("title") and x.get("text"))]
     from module_icons import ICONS
@@ -113,13 +134,24 @@ def page_body(code, c, T, chapters, published, investigations=(), guides_html=""
     names this language built. Planned parts say so, and a chapter not published here is named without a link."""
     status = c["status"]
     import module_icons
-    out = (f'<div class="mod-head">{module_icons.img(code, 56, "mod-head-icon")}<div><span class="eyebrow">{code} · {T("site.local_course_kind")}</span><h1>{esc(c["title"])}</h1></div></div>'
+    out = (f'<div class="mod-head">{module_icons.img(code, 56, "mod-head-icon")}<div><span class="eyebrow">{label(code) + " · " if label(code) else ""}{T("site.local_course_kind")}</span><h1>{esc(c["title"])}</h1></div></div>'
            f'<p class="lead">{esc(c["subtitle"])}</p>'
            f'<p class="notice local-kind" role="note">{T("site.local_distinct", school=esc(c["school"]))}</p>'
            + (f'<p class="notice local-status" role="note"><strong>{T("site.local_status_" + status)}.</strong> {T("site.local_status_note_" + status)}</p>' if status != "ready" else "")
            + (f'<p class="local-authors">{T("units.authors")}: {esc(", ".join(c["authors"][:-1]) + " " + T("units.and") + " " + c["authors"][-1] if len(c["authors"]) > 1 else c["authors"][0])}</p>' if c.get("authors") else "")
            + (f'<p class="notice local-language" role="note">{T("units.language_note_" + c["language"])}</p>' if c.get("language") and c["language"] != T.lang and T.lang not in c.get("translations", []) else "")
            + f'<p class="local-desc">{esc(c["description"])}</p>')
+    if c.get("photos"):                  # pictures of the course's events, cropped so that no face shows (teacher 2026-11-08)
+        out += (f'<h2 id="kuvia">{esc(c.get("photos_heading") or T("site.local_photos"))}</h2><div class="local-photos">'
+                + "".join(f'<figure class="local-photo{" wide" if p.get("wide") else ""}"><img src="{esc(p["src"])}" alt="{esc(p["alt"])}" width="{p["width"]}" height="{p["height"]}" loading="lazy" decoding="async">'
+                          + (f'<figcaption>{esc(p["caption"])}</figcaption>' if p.get("caption") else "") + '</figure>' for p in c["photos"])
+                + '</div>')
+    if c.get("quotes"):                  # students' own words (teacher 2026-11-08), a Finnish quote marked so on other pages
+        out += f'<h2 id="kokemuksia">{T("site.local_quotes")}</h2>'
+        for q in c["quotes"]:
+            lang = f' lang="{q["lang"]}"' if q.get("lang") and q["lang"] != T.lang else ""
+            out += (f'<figure class="local-quote"><blockquote{lang}>{"".join(f"<p>{esc(x)}</p>" for x in q["paragraphs"])}</blockquote>'
+                    f'<figcaption>– {esc(q["author"])}</figcaption></figure>')
     if c.get("chapters"):                # the course's chapters and their units (scripts/units.py) as cards (scripts/cardgrid.py,
         import cardgrid, units           # teacher 2026-11-04): a section per chapter with its question, a card per unit with
         hrefs = {u: (ul, href) for u, ul, href in course_units}   # its opening illustration and question; a unit still coming is dashed

@@ -1609,3 +1609,30 @@ main.ahjo-page{max-width:68rem;font-family:var(--ahjo-text)}
 .ahjo-shared-head h2{margin-top:0}.ahjo-shared-home{flex:none;display:block;border-radius:12px}.ahjo-shared-home:focus-visible{outline:3px solid var(--kr-navy);outline-offset:3px}.ahjo-shared-head .ahjo-sec-lead{margin-bottom:0}
 .ahjo-shared-logo{width:104px}
 @media (max-width:37.5rem){.ahjo-shared-head{align-items:flex-start}.ahjo-shared-logo{width:80px}}
+
+/* A local course in Kiviruukin lukio's identity (local-courses.json "theme": "kiviruukki", Kilparobotiikka, teacher
+   2026-11-08): the Ahjo pages' navy #012169 and pink #fca5c7, Lato headings and Work Sans text, a pink rule under the title */
+:root:has(main.kr-theme){--bg:#fff;--bg-tint:#f3f5f9;--ink:#0b1638;--ink-2:#3c4563;--line:#dfe5eb;--line-2:#ecf0f4;
+  --accent:#012169;--accent-deep:#012169;--accent-soft:#fff0f6;--brand-green:#012169;--kr-navy:#012169;--kr-pink:#fca5c7;--kr-pink-soft:#fde4ee}
+body:has(main.kr-theme){background-image:none}
+main.kr-theme{font-family:"Work Sans",var(--sans)}
+.kr-theme h1,.kr-theme h2,.kr-theme h3{font-family:"Lato",var(--sans);color:var(--kr-navy);letter-spacing:0}
+.kr-theme h1{font-weight:900}
+.kr-theme .mod-head{padding-bottom:.75rem;border-bottom:4px solid var(--kr-pink)}
+.kr-theme h2{display:flex;align-items:center;gap:.6rem;font-weight:900}
+.kr-theme h2::before{content:"";flex:none;width:22px;height:4px;border-radius:2px;background:var(--kr-pink)}
+.kr-theme a{color:var(--kr-navy)}
+.kr-theme .notice{border-color:var(--kr-pink);background:var(--kr-pink-soft)}
+/* the course's photos: two columns from 44rem, a wide photo across both; never wider than the page */
+.local-photos{display:grid;grid-template-columns:1fr;gap:1rem;margin:0 0 2rem}
+@media (min-width:44rem){.local-photos{grid-template-columns:1fr 1fr}.local-photo.wide{grid-column:1/-1}}
+.local-photo{margin:0}
+.local-photo img{display:block;width:100%;height:auto;border-radius:12px}
+.local-photo figcaption{margin:.4rem 0 0;font-size:var(--fs-small);color:var(--ink-2)}
+/* a student's own words: the school pink as the quote's rule */
+.local-quote{margin:0 0 2rem;max-width:44rem}
+.local-quote blockquote{margin:0;border-left-color:var(--kr-pink,var(--accent));background:var(--accent-soft);font-family:inherit;font-size:1.0625rem;line-height:1.6}
+.local-quote blockquote p+p{margin-top:.8rem}
+.local-quote figcaption{margin:.5rem 0 0 1.2rem;font-weight:700;color:var(--ink)}
+.kr-theme .lead{font-family:"Work Sans",var(--sans)}
+@media (min-width:44rem){.local-photo:not(.wide) img{aspect-ratio:4/3;object-fit:cover}}
