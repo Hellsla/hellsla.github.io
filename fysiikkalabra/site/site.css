@@ -1722,6 +1722,12 @@ main.kr-theme{font-family:"Work Sans",var(--sans)}
 .ahjo-done .ahjo-done-row{margin:0 0 .4rem}
 .ahjo-peer{padding:.9rem 1.1rem 1rem;border-left:4px solid var(--kr-navy);border-radius:0 12px 12px 0;background:var(--bg-tint)}
 .ahjo-peer>h2{display:flex;align-items:center;gap:.5rem;font-size:1.125rem}.ahjo-peer p{margin:0;line-height:1.5}
+.ahjo-lgoal{margin:.5rem 0 0;line-height:1.45}
+.ahjo-wait{padding:.8rem 1.1rem .9rem;border:1.5px dashed var(--line);border-radius:12px}
+.ahjo-wait>h2{display:flex;align-items:center;gap:.5rem;font-size:1.125rem}.ahjo-wait p{margin:0;line-height:1.5}
+.ahjo-own{font-size:var(--fs-small);color:var(--ink-2)}
+.ahjo-check-h{margin:1rem 0 .4rem;font-size:1.0625rem;font-weight:900}
+.ahjo-check{margin:0;padding-left:1.2rem;max-width:44rem}.ahjo-check li{margin:.3rem 0}
 .ahjo-pace{margin:.5rem 0 0;font-size:var(--fs-small);color:var(--ink-2)}
 .ahjo-lside-own{margin:0 0 .5rem!important;line-height:1.45}
 .ahjo-lside-tag{display:block;font-size:var(--fs-small);font-weight:400;color:var(--ink-2)}
