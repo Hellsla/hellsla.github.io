@@ -156,12 +156,12 @@
 
 ## fy1-2-L3-02
 **Annettu:** näytön leveys $W = 1920\,\text{px}$ (tarkka luku); Kuun halkaisija $D = 3474\,\text{km} = 1\,\text{px}$; matka $a = 30{,}07\,\text{AU}$; $1\,\text{AU} = 1{,}496\cdot10^{8}\,\text{km}$
-**Kysytty:** näyttöjen lukumäärä $N$
-**Periaate:** Kuva on mittakaavassa, joten kilometrit muuttuvat kuvapisteiksi jakamalla Kuun halkaisijalla. Näyttöjen lukumäärä on kuvapisteiden määrä jaettuna yhden näytön leveydellä.
+**Kysytty:** kuinka moninkertainen matka on kuvassa yhden näytön leveyteen verrattuna, suhde $N$
+**Periaate:** Kuva on mittakaavassa, joten kilometrit muuttuvat kuvapisteiksi jakamalla Kuun halkaisijalla. Suhde $N$ on kuvapisteiden määrä jaettuna yhden näytön leveydellä.
 **Kaava:** $N = \dfrac{a}{D}\cdot\dfrac{1\,\text{px}}{W}$
 **Muunnokset:** Matka kilometreinä: $a = 30{,}07\,\text{AU} = 30{,}07\cdot 1{,}496\cdot10^{8}\,\text{km} = 4{,}498\cdot10^{9}\,\text{km}$. Jokainen $3474\,\text{km}$ on yksi kuvapiste, joten kuvapisteitä on $4{,}498\cdot10^{9}\,\text{km} : 3474\,\text{km} = 1{,}295\cdot10^{6}$.
 **Sijoitus:** $N = \dfrac{1{,}295\cdot10^{6}\,\text{px}}{1920\,\text{px}} = 674{,}4$
-**Vastaus:** $674{,}4$ näytön leveyttä, neljä merkitsevää numeroa kuten tiedoissa $30{,}07\,\text{AU}$, $1{,}496\cdot10^{8}\,\text{km}$ ja $3474\,\text{km}$; näytön leveys $1920\,\text{px}$ on tarkka luku eikä rajoita.
+**Vastaus:** noin $674{,}4$-kertainen eli $674{,}4$ näytön leveyttä, neljä merkitsevää numeroa kuten tiedoissa $30{,}07\,\text{AU}$, $1{,}496\cdot10^{8}\,\text{km}$ ja $3474\,\text{km}$; näytön leveys $1920\,\text{px}$ on tarkka luku eikä rajoita.
 **Järkevyys:** Neptunus on noin 1,3 miljoonan kuvapisteen päässä, ja 1,3 miljoonaa jaettuna kahdella tuhannella on noin 650. Tulos on samaa suuruusluokkaa. Matkaa ei siis näe kuvassa yhdellä vilkaisulla, vaan sitä on vieritettävä satojen näytönleveyksien verran.
 
 ## fy1-2-L3-03

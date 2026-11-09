@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: f60c54c8378a5724
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: e6cb851f7e223149
+Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-11-09: diff since origin/main only)
 
 ## Blocking
 - none
@@ -9,5 +9,6 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff sin
 - none
 
 ## Checked
-- Cooling task: new premise 'initial rate about the same in all containers and constant' gives r = 6,0 K / 3,0 min = 2,0 K/min, fall ≥ 1,0 K / 0,050 = 20 K, t = 10 min (answer 10, unchanged); the solution's reasonableness already says real cooling slows and 10 min is a lower bound, consistent with the stated assumption.
-- Pendulum research question 'vaikuttaa heilahdusaikaan' and the 3,0 m at 1,5 m/s task reordering: no change to physics or answers.
+- fy1-8-L3-04: the general rule 'a difference can be shown only if the intervals do not overlap' is removed; Periaate now states the data-specific conclusion (intervals overlap, no reliable conclusion, hand-timing uncertainty to be considered); Järkevyys softened to 'ei erotu luotettavasti'.
+- d = 0,04 s, k = 3,75 ≈ 3,8 and the overlap 3,08–3,12 s unchanged.
+- Language version en judged from the diff against origin/main; notation (LaTeX numbers with units, decimal comma/point, \cdot) checked in changed lines.

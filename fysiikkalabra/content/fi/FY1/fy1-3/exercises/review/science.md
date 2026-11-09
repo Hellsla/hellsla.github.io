@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 615bdc9d60ae766e
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: 3e5427fe956328a7
+Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-11-09: diff since origin/main only)
 
 ## Blocking
 - none
@@ -9,7 +9,6 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff sin
 - none
 
 ## Checked
-- Pendulum: 0,2 s/(13*1,5 s) = 1,03 % > 1 %, 0,2/(14*1,5) = 0,95 %, single swing 13,3 % ~ 13 %: units added, numbers right, '~' is right where '=' was not.
-- Ruler vs calliper: 0,5 mm : 0,005 mm = 100; new reason (same half-interval rule, so the ratio is exact) is correct and replaces a misplaced sig-fig remark.
-- Stopwatch delays: error is one third of the starting delay, so 'cancel for the most part' is more accurate than 'almost completely'.
-- Scale offset task text and density values with units: data and answers unchanged.
+- fy1-3-L3-05: Periaate now names the check as a simplified comparison of the stated uncertainty estimates; Vastaus says the results are not consistent per these estimates, the estimates are not hard limits and separation alone does not decide statistical significance.
+- Gap 0.04 g/cm³ and intervals 2,69–2,79 / 2,55–2,65 unchanged and correct.
+- Language version fi judged from the diff against origin/main; notation (LaTeX numbers with units, decimal comma/point, \cdot) checked in changed lines.

@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 6aaf52e4097358d5
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: 05cefb32bec1ef00
+Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-11-09: diff since origin/main only)
 
 ## Blocking
 - none
@@ -9,5 +9,6 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff sin
 - none
 
 ## Checked
-- 'laite' to 'virtalähde'/'power bank' applied consistently in task, table header, solutions (the earlier generic 'device' was ambiguous for a battery-capacity task); '$\text{Yksikkö}$' to plain 'Yksikkö' in table; 'Kuvan lukeminen'; the Sun 'about 400 Moon diameters' reasonableness check is now dimensionally precise; 'ja puolen' matches 1.33e6 km / 3.84e5 km = 3.5. fi/en/fi-easy aligned.
-- Language version en judged from the word-level diff against origin/main; the fi, en and fi-easy changes correspond.
+- fy1-2-L3-02: question now asks for a ratio (how many times one screen width), so it no longer reads as a count of whole screens (675); answer 674.4, tolerance 0.02 unchanged; unit "" as in other ratio tasks.
+- Kysytty, Periaate, Vastaus describe the same ratio N; Järkevyys still fits.
+- Language version en judged from the diff against origin/main; notation (LaTeX numbers with units, decimal comma/point, \cdot) checked in changed lines.

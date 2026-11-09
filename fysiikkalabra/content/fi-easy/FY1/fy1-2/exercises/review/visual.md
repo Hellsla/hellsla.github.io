@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 9f98868b9f13e666
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: 5c84c3bbd0a47dd8
+Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-11-09: diff since origin/main only)
 
 ## Blocking
 - none
@@ -9,4 +9,6 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff sin
 - none
 
 ## Checked
-- Word-diff of exercises and answers.py: units added in fy1-3 (g/cm^3, s) and fy1-2 wording (virtalähde/power bank, Kuvan/figure) are correct LaTeX/plain text as appropriate; table header "Yksikkö" now plain text, fine. No figure change.
+- fy1-2-L3-02: question now asks for a ratio (how many times one screen width), so it no longer reads as a count of whole screens (675); answer 674.4, tolerance 0.02 unchanged; unit "" as in other ratio tasks.
+- Kysytty, Periaate, Vastaus describe the same ratio N; Järkevyys still fits.
+- Language version fi-easy judged from the diff against origin/main; notation (LaTeX numbers with units, decimal comma/point, \cdot) checked in changed lines.
