@@ -1,7 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 88ba38802bc0befd
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"): the round-2 polish diff (git diff HEAD~1, commit 29f864da6) only
-Round: 2
+CONTENT-HASH: 6df87ff7c2b3f884
+Mode: light (teacher 2026-11-07, "kevyt katselmointi"): the FY2 targeted-fix diff (git diff origin/main...HEAD) only
 
 ## Blocking
 - none
@@ -10,6 +9,8 @@ Round: 2
 - none
 
 ## Checked
-- lesson.md: the source paragraph under the emission table is split; the two paragraphs are about 101 and 59 words, within the ~120-word guide, and the second paragraph begins naturally with "This is an accounting assumption…".
-- inquiry.json ennuste-2 correct feedback: "According to the IPCC life-cycle comparison"; grammar correct.
-- Round-1 changes are not re-reviewed (they passed in round 1). No captures opened (diff judged from source).
+- Diff of content/en/FY2/fy2-8/inquiry.json in context: sim model ("in the early 2020s", "This temperature has not yet settled", "early-2020s situation"), koe intro, values.co2.420, feedback; lang/en.json taso_nyt.
+- "at the present amount" later in the model refers to the real atmosphere and remains correct.
+- Rendered preview/en/fy2-8.html at 390 px: menu "early-2020s amount" fits beside the speed menu, readout wraps cleanly, no horizontal overflow.
+- Agrees with fi; fi-easy feedback not updated (reported there).
+- Content hash recomputed: 6df87ff7c2b3f884 (matches brief).

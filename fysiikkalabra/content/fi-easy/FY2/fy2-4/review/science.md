@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 88d00a44a2018fd5
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: c131f9dde568eeea
+Mode: light (teacher 2026-11-07, "kevyt katselmointi"): the FY2 targeted-fix diff (git diff origin/main...HEAD) only
 
 ## Blocking
 - none
@@ -9,7 +9,10 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction 
 - none
 
 ## Checked
-- Diff `git diff origin/main...HEAD` of lesson.md, inquiry.json, exit-ticket.json (fi-easy); content hash recomputed and equal to the brief's.
-- lesson.md hero question and inquiry.json hook: "same amount of visible light" is consistent with the figure (both lamps $3\,\text{W}$ of light; $60\,\text{W}\cdot0{,}05 = 10\,\text{W}\cdot0{,}30 = 3\,\text{W}$ recomputed).
-- New paragraph: useful energy = visible radiant energy as a stated simplified model; luminous flux (eye's wavelength-dependent sensitivity) described correctly; no new formula.
-- Selkeä suomi changes carry the same physics as fi.
+- Hashes recomputed with scripts/reviews.py at start and end; all six match the brief.
+- Sim "model": losses defined as the energy not ending up as the defined useful output (correct definition, 1); "mostly thermal energy in many devices" is a correctly hedged claim (2, 3); solar panel: part of the incoming radiant energy is reflected, so reflection is no longer called heat (the reported error is gone).
+- Experiment 1 model: 60 kW x 10 s = 600 kJ, 25 % -> 150 kJ, 20 s -> 1200/300 kJ, 15/60 = 25 %, remainder 75 % (recomputed); "losses, mostly heat" is right for a petrol engine (exhaust, coolant, friction).
+- Read the surrounding paragraph in the source file: the new sentences fit the model text and its stated conditions (constant efficiency, constant power).
+- Guardrail "Energy, heat and efficiency": "lämpöenergia"/"heat" for the losses is allowed in FY2, and these passages do not conflict with it.
+- fi, en and fi-easy say the same thing.
+- fi-easy: "osa tulevasta valosta heijastuu pois" says light where fi says radiant energy. Sunlight also has infrared, but at this level that is a C simplification that leaves no wrong picture. Short, clear sentences.

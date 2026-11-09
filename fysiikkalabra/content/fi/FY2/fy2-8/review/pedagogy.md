@@ -1,7 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: fdb9602a936296b0
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
-Round: 2
+CONTENT-HASH: 4afdc6bfe3a42eeb
+Mode: light (teacher 2026-11-07, "kevyt katselmointi"): the FY2 targeted-fix diff (git diff origin/main...HEAD) only
 
 ## Blocking
 - none
@@ -10,6 +9,7 @@ Round: 2
 - none
 
 ## Checked
-- git diff HEAD~1 (commit 29f864da6) of the unit's files (fi), judged in context; round-1 findings for this unit.
-- inquiry.json ennuste-2 correct-option feedback: 'Annetun vertailuaineiston mukaan' -> 'IPCC:n elinkaarivertailun mukaan', so the feedback no longer refers to data the student has not yet seen; it still discloses no table values and the next stage still shows them.
-- lesson.md summary bullet: wording only ('siitä, kuinka nopeasti hiili sitoutuu takaisin'), clearer.
+- git diff origin/main...HEAD of fy2-8 inquiry.json (fi), lang/fi.json sims.fy2-8.taso_nyt, tests/sims/fy2-8.json, lessons/FY2/fy2-8/sim-spec.md; hash verified.
+- Level label "2020-luvun alun määrä" identical in the select (lang), experiment values, koe intro list, model text and option feedback, so the student meets one name throughout; the test's expected option string matches the lang string.
+- Model paragraph: "2020-luvun alussa ... Tämä lämpötila ei ole vielä asettunut ... alkaa 2020-luvun alun tilanteesta" reads naturally; 420 ppm and the temperatures unchanged as instructed. The later "jo nykyisellä määrällä" (absorption) is generic present-day wording, not the level label, and does not conflict.
+- Feedback still explains the warming lag; nothing disclosed before the experiment.
