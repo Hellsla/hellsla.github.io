@@ -151,7 +151,7 @@
           {
             "text": "Kasvihuonekaasut imevät maanpinnan lämpösäteilyä ja lähettävät osan takaisin alas. Siksi energia poistuu hitaammin.",
             "correct": true,
-            "feedback": "Oikein. Auringon säteily pääsee kaikilla tasoilla maanpinnalle samalla tavalla. Lämpösäteilyn kulku muuttuu: kasvihuonekaasumolekyylit imevät sitä ja lähettävät osan takaisin. Ilman kasvihuonekaasuja, myös ilman vesihöyryä, Maan yksinkertainen säteilytasapainomalli antaa lämpötilaksi noin $-18\\,{}^\\circ\\text{C}$. Kun hiilidioksidia lisätään, lämpötila nousee, mutta vähitellen. Nykyisellä pitoisuudella maapallo on noin $+15\\,{}^\\circ\\text{C}$ ja lämpenee yhä kohti noin $+16\\,{}^\\circ\\text{C}$:ta."
+            "feedback": "Oikein. Auringon säteily pääsee kaikilla tasoilla maanpinnalle samalla tavalla. Lämpösäteilyn kulku muuttuu: kasvihuonekaasumolekyylit imevät sitä ja lähettävät osan takaisin. Ilman kasvihuonekaasuja, myös ilman vesihöyryä, Maan yksinkertainen säteilytasapainomalli antaa lämpötilaksi noin $-18\\,{}^\\circ\\text{C}$. Kun hiilidioksidia lisätään, lämpötila nousee, mutta vähitellen. 2020-luvun alun pitoisuudella maapallo on noin $+15\\,{}^\\circ\\text{C}$ ja lämpenee yhä kohti noin $+16\\,{}^\\circ\\text{C}$:ta."
           },
           {
             "text": "Kasvihuonekaasut päästävät auringon säteilyä läpi paremmin kuin muut kaasut, joten maanpinnalle tulee enemmän energiaa.",
