@@ -80,6 +80,8 @@ jobs:
         run: python scripts/ahjo.py && python scripts/test_ahjo.py
       - name: Kilparobotiikka's team pages (five pages, links only to VEX/RECF, photos and quotes kept, safety roles, widths; teacher 2026-11-09)
         run: python scripts/kilparobo.py && python scripts/test_kilparobo.py
+      - name: LUMA-tutor's pages (five parts, 23 · 75 min, workshop cards and filters, ten templates, nothing stored, print, widths; teacher 2026-11-09)
+        run: python scripts/lumatutor.py && python scripts/test_lumatutor.py
       - name: the solution editor under every exercise (Abitti's Digabi editor, loaded on the first click; copy for L'Math; teacher 2026-11-01)
         run: python scripts/test_writepad.py
       - name: submission and grading trial, FY3-1 (Lataa ratkaisut, Apps Script import and grading view against a mock; teacher 2026-11-05)

@@ -1,0 +1,1246 @@
+{
+  "_note": "LUMA tutor in English, translated from lumatutor.json (the Finnish source). Same shape; ids, numbers, links and file names stay as in the Finnish.",
+  "ui": {
+    "nav_label": "Parts of LUMA tutor",
+    "nav_home": "Start",
+    "nav_tools": "Toolkit",
+    "part_n": "Part {n}",
+    "lessons": "Workload",
+    "lessons_value": "${n} \\cdot 75\\,\\text{min}$",
+    "start": "Start here",
+    "next": "Next part",
+    "prev": "Previous part",
+    "copy": "Copy text",
+    "copied": "Copied to the clipboard.",
+    "download": "Download as a text file",
+    "print": "Print",
+    "print_page": "Print the whole page",
+    "template_use": "Use",
+    "template_link": "Open the template",
+    "external": "opens in a new tab",
+    "plan_badge": "Planning decision",
+    "status_ready": "Ready guide, not yet piloted",
+    "status_ready_short": "Ready, not piloted",
+    "status_idea": "Idea for development",
+    "filter_h": "Filter the workshops",
+    "filter_topic": "Topic",
+    "filter_audience": "Audience",
+    "filter_duration": "Duration",
+    "filter_equipment": "Equipment",
+    "filter_all": "All",
+    "filter_reset": "Show all",
+    "filter_shown": "Showing {n} of {m} workshops.",
+    "filter_none": "No workshop matches your choices. Loosen the filters.",
+    "duration_short": "up to 20 min",
+    "duration_mid": "21–30 min",
+    "duration_long": "over 30 min",
+    "minutes": "about ${n}\\,\\text{min}$",
+    "audience": "Audience",
+    "topic": "Topic",
+    "duration": "Duration",
+    "equipment": "Equipment",
+    "open_card": "Open the workshop card",
+    "card_parts_h": "Parts of the workshop card",
+    "tutor_side": "For the tutor",
+    "tutor_side_note": "This part is for you, not for the participants. Read it before the workshop.",
+    "participant_side": "For the participants",
+    "participant_side_note": "You can show this part to the participants or print it for them. In print it starts on its own page.",
+    "w_goals": "Learning goals",
+    "w_materials": "Equipment and materials",
+    "w_prep": "Preparation",
+    "w_safety": "Safety",
+    "w_steps": "Step by step",
+    "w_say": "You could say, for example",
+    "w_background": "Background for the tutor",
+    "w_questions": "Three good questions for the participants",
+    "w_problems": "Common problems and fixes",
+    "w_problem": "Problem",
+    "w_fix": "What to do",
+    "w_variations": "Variations and differentiation",
+    "w_closing": "Closing and shared reflection",
+    "w_self": "Tutor's self-assessment",
+    "w_sources": "Sources",
+    "w_answers": "Answers for the tutor",
+    "w_idea": "Idea",
+    "w_open": "To develop before use",
+    "w_safety_notes": "Safety notes",
+    "w_planned": "planned duration",
+    "back_bank": "Back to the workshop bank",
+    "data_download": "Download the data (CSV)",
+    "data_h": "Data",
+    "fig_note": "Figure",
+    "toolkit_lead_short": "Every template can be copied, downloaded as a text file or printed.",
+    "own_h": "Your own workshop",
+    "in_toolkit": "In the toolkit",
+    "card_n": "Card {n}",
+    "done_check": "Check before you go on",
+    "time_total": "Total",
+    "time_part": "Part",
+    "time_minutes": "Minutes",
+    "time_lessons": "$75\\,\\text{min}$ blocks",
+    "and": "and",
+    "cooler": "the year {y} was cooler than {p}",
+    "decade_h": "Decade means",
+    "decade_col": "Decade",
+    "mean_col": "Anomaly",
+    "decade_label": "{d}s",
+    "decade_partial": "{a}–{b}",
+    "csv_co2": "year,co2_ppm",
+    "csv_temp": "year,anomaly_C",
+    "csv_file_co2": "hiilidioksidi-mauna-loa.csv",
+    "csv_file_temp": "lampotilapoikkeama-gistemp.csv",
+    "data_retrieved": "Data retrieved on {d}. The numbers are the annual means as the source publishes them.",
+    "data_title_co2": "Annual mean of carbon dioxide, Mauna Loa (Hawaii)",
+    "data_source_co2": "NOAA Global Monitoring Laboratory and Scripps Institution of Oceanography: Trends in Atmospheric Carbon Dioxide, Mauna Loa, annual means (co2_annmean_mlo)",
+    "data_title_temp": "Anomaly of the Earth's mean temperature from the mean of 1951–1980",
+    "data_source_temp": "NASA Goddard Institute for Space Studies: GISTEMP v4, Global Land-Ocean Temperature Index, annual means"
+  },
+  "sections": [
+    {
+      "id": "perehdy",
+      "page": "lumatutor-perehdy.html",
+      "icon": "compass",
+      "title": "Get ready",
+      "long": "Get ready: grow into a LUMA tutor",
+      "lessons": 3,
+      "workload": "Induction and guiding exercises",
+      "text": "You learn how to spark interest, ask, explain and guide a group safely. Ten short topics with exercises."
+    },
+    {
+      "id": "tutustu",
+      "page": "lumatutor-tutustu.html",
+      "icon": "ticket",
+      "title": "Visit science events",
+      "long": "Visit science events",
+      "lessons": 4,
+      "workload": "Visits to science events and observation",
+      "text": "You visit at least one science event and look at it through the eyes of a science communicator. You collect ideas for your own workshop."
+    },
+    {
+      "id": "suunnittele",
+      "page": "lumatutor-suunnittele.html",
+      "icon": "flask",
+      "title": "Plan a workshop",
+      "long": "Plan a workshop",
+      "lessons": 4,
+      "workload": "Planning and testing your own science workshop",
+      "text": "You choose a workshop from the workshop bank or plan your own, test it and improve it based on feedback."
+    },
+    {
+      "id": "toteuta",
+      "page": "lumatutor-toteuta.html",
+      "icon": "people",
+      "title": "Run it",
+      "long": "Run it: guide others",
+      "lessons": 9,
+      "workload": "Preparing and running science events",
+      "text": "You run science workshops and help organise science events. This is the most important evidence in the course."
+    },
+    {
+      "id": "arvioi",
+      "page": "lumatutor-arvioi.html",
+      "icon": "notebook",
+      "title": "Assess and hand in",
+      "long": "Assess and hand in",
+      "lessons": 3,
+      "workload": "Portfolio, feedback and assessment",
+      "text": "You put together your tutor portfolio, log your working time and assess how you have developed. Finally, a feedback talk with the teacher."
+    }
+  ],
+  "hub": {
+    "glance_h": "At a glance",
+    "glance": [
+      {
+        "q": "What do you do in the course?",
+        "a": "You learn about science education, visit a science event, plan your own science workshop and guide others to explore and try things out.",
+        "href": "#polku"
+      },
+      {
+        "q": "How do you complete the course?",
+        "a": "You work through the five parts at your own pace during the school year. The key evidence is guiding a real science workshop or event.",
+        "href": "#suoritus"
+      },
+      {
+        "q": "How much work is it?",
+        "a": "About $28.5\\,\\text{h}$, planned as $23 \\cdot 75\\,\\text{min}$. That is the total workload, not 23 lessons in a classroom.",
+        "href": "#tyomaara"
+      },
+      {
+        "q": "Where do I start?",
+        "a": "With the induction. Read its first topic and start your portfolio with your starting point.",
+        "href": "lumatutor-perehdy.html"
+      },
+      {
+        "q": "What do I need to document?",
+        "a": "In your portfolio you record your exercises, what you observed on a visit, your workshop plan, the times you guided, your working time and your self-assessment.",
+        "href": "lumatutor-arvioi.html"
+      }
+    ],
+    "intro_h": "What is a LUMA tutor?",
+    "intro": [
+      "A LUMA tutor works as a science tutor: they plan science events and take part in them. LUMA comes from the Finnish words for natural sciences and mathematics, and technology belongs to it too.",
+      "The course is not tutoring in mathematics, physics or chemistry. Its subject is science education and science communication: how to get children, young people and other students excited about phenomena, asking questions and trying things out themselves.",
+      "LUMA tutor is Kiviruukki upper secondary school's own programme. It complements Ruukkilabra, where you study science yourself, and Ahjo Makerspace, where you build and make. As a LUMA tutor you take science to others."
+    ],
+    "idea_h": "Core idea",
+    "idea": "Science belongs to everyone.",
+    "idea_text": "Everyone can wonder, ask and explore, whatever their age, language or earlier knowledge. The tutor's job is to make that possible.",
+    "path_h": "How you progress",
+    "path_lead": "The course has five parts. Work through them in order, but the parts may overlap with the events of the school year: you can, for example, visit a science event while you are still in the induction.",
+    "goals_h": "Goals",
+    "goals_lead": "After the course you can",
+    "goals": [
+      "say what science education and science communication are and why they are needed",
+      "explain a scientific phenomenon with language and pictures that suit the audience",
+      "ask questions that make a participant think and try things out themselves",
+      "guide a group so that everyone gets to take part",
+      "plan, test and improve a hands-on science workshop",
+      "take care of safety as your role requires and know when to call an adult",
+      "work as part of an event's organising team and take responsibility for your share",
+      "assess your own work and develop it based on feedback"
+    ],
+    "workload_h": "Workload",
+    "workload_lead": "The total workload of the course is about $38 \\cdot 45\\,\\text{min} = 1\\,710\\,\\text{min}$, or $28.5\\,\\text{h}$. That equals $22.8$ lessons of $75\\,\\text{min}$. For planning, the workload is rounded to $23 \\cdot 75\\,\\text{min}$.",
+    "workload_rounding": "$23 \\cdot 75\\,\\text{min} = 1\\,725\\,\\text{min}$, or $28\\,\\text{h}\\ 45\\,\\text{min}$. This is $15\\,\\text{min}$ more than the exact workload. The rounding is intentional.",
+    "workload_points": [
+      "The workload is the student's total workload, not 23 separate contact lessons.",
+      "It includes the shared induction meetings, independent preparation, event visits, planning and testing the workshop, working at events, and the portfolio and self-assessment.",
+      "Events vary in length, so you log your actual working time in minutes on the [working time log](lumatutor-tyokalut.html#tyoaika).",
+      "There may be reasonable flexibility between the parts if you agree on it with the teacher. The total scope and the goals stay the same."
+    ],
+    "requirements_h": "Completion",
+    "requirements_lead": "To pass, you need all six of these:",
+    "requirements": [
+      "You complete the tutor induction.",
+      "You take part in at least one suitable visit to a science event.",
+      "You plan and test a science workshop.",
+      "You take part in guiding a science workshop or science event in practice.",
+      "You document your participation and assess your work in a portfolio.",
+      "Your total workload matches the scope of the course."
+    ],
+    "assessment_h": "Assessment",
+    "assessment_lead": "The course is assessed as pass or fail. Filling the hours is not enough on its own: the teacher assesses your work and your portfolio in the following areas.",
+    "criteria": [
+      {
+        "title": "Guiding skills",
+        "text": "You let the participants do things themselves, you ask before you tell, and you notice who is left out."
+      },
+      {
+        "title": "Preparation",
+        "text": "You have tried the workshop in advance, the equipment is ready and you know what to do if something does not work."
+      },
+      {
+        "title": "Cooperation",
+        "text": "You agree on tasks with the other tutors and the teacher and keep to what was agreed."
+      },
+      {
+        "title": "Responsibility",
+        "text": "You follow the safety instructions, respect the participants and do not collect personal data about them."
+      },
+      {
+        "title": "Active participation",
+        "text": "You are at the events for the whole agreed time and take on tasks on your own initiative."
+      },
+      {
+        "title": "Development and reflection",
+        "text": "Your portfolio shows what you learned, what changed and what you would do differently next time."
+      }
+    ],
+    "plan_note": "The scope of the course, the split of the workload and the assessment model are a planning decision. They apply only once they have been confirmed in Kiviruukki upper secondary school's local curriculum.",
+    "safety_h": "Responsibility and safety",
+    "safety": "The teacher is responsible for supervision and for organising safety. You are never alone the person responsible at an event for minors. No personal data is collected from the children who take part in the workshops: no names and no identifiable photos.",
+    "links_h": "Links to other studies",
+    "links_lead": "LUMA tutor's own task is science education, guiding, events and science communication. Other Kiviruukki studies give it content.",
+    "links": [
+      {
+        "title": "Ruukkilabra",
+        "href": "index.html",
+        "items": [
+          "experimental work and investigations in physics",
+          "measuring and the reliability of measurements",
+          "explanations and pictures of phenomena as background for a workshop"
+        ]
+      },
+      {
+        "title": "Ahjo Makerspace",
+        "href": "ahjo.html",
+        "items": [
+          "robotics and electronics",
+          "digital fabrication and prototypes",
+          "STEAM projects that can be shown at events"
+        ]
+      },
+      {
+        "title": "Science and technology diploma",
+        "href": "",
+        "items": [
+          "skills gained in a science education project may possibly be used in the diploma portfolio",
+          "LUMA tutor is not automatically accepted as a course on the diploma path; this is decided separately"
+        ]
+      }
+    ],
+    "models_h": "Pedagogical models",
+    "models_lead": "The structure of the course draws on ideas that work in the following programmes. Ruukkilabra's text is its own, and none of the programmes is a partner of LUMA tutor.",
+    "models": [
+      {
+        "name": "OHSU Science Ambassadors",
+        "org": "Oregon Health & Science University",
+        "url": "https://www.ohsu.edu/outreach/k-12-programs",
+        "idea": "Upper secondary students learn current science, develop their leadership skills and take science activities to younger students."
+      },
+      {
+        "name": "Peer Tutor Training Program",
+        "org": "University of Pennsylvania",
+        "url": "https://www.gse.upenn.edu/peer-tutor-training-program",
+        "idea": "Upper secondary students are trained as tutors before they guide younger ones: training and guiding run side by side."
+      },
+      {
+        "name": "PASS",
+        "org": "Monash University",
+        "url": "https://www.monash.edu/access-inclusion-success/pass",
+        "idea": "A student guides their peers in a group. The leader does not lecture again but guides the group to solve things on their own and together."
+      },
+      {
+        "name": "LUMAlab Gadolin",
+        "org": "University of Helsinki",
+        "url": "https://www.helsinki.fi/fi/tiedekasvatus/opettajille/lumalab-gadolin",
+        "idea": "Hands-on science workshops where research-based science education turns into doing."
+      },
+      {
+        "name": "Tiedeluokka SOLU",
+        "org": "Päijät-Häme LUMA Centre",
+        "url": "https://www.helsinki.fi/fi/verkostot/paijat-hameen-luma-keskus/tiedeluokka-solun-opetusvierailut",
+        "idea": "A group visits a science classroom: an expert guides, and the group's own teacher is there the whole time."
+      }
+    ],
+    "models_checked": "Links checked on 9 November 2026."
+  },
+  "perehdy": {
+    "title": "Get ready: grow into a LUMA tutor",
+    "lead": "Ten short topics on how to spark interest, ask, explain and guide. Each has an exercise and an example situation.",
+    "how_h": "How the induction works",
+    "how": [
+      "You can do the induction on your own or in two or three shared meetings led by the teacher. Shared meetings are best for the exercises that need an audience.",
+      "The workload is about $3 \\cdot 75\\,\\text{min}$. For each topic, write one insight and the exercise you did in your portfolio."
+    ],
+    "meetings_h": "Suggested shared meetings",
+    "meetings": [
+      {
+        "title": "Meeting 1: The tutor's role",
+        "topics": [
+          "rooli",
+          "innostaminen",
+          "ryhma"
+        ],
+        "text": "Get to know each other and the tutor's task. Practise starting a group and making sure everyone gets involved."
+      },
+      {
+        "title": "Meeting 2: Ask, explain, show",
+        "topics": [
+          "kysymykset",
+          "selittaminen",
+          "tutkiminen",
+          "demonstraatio"
+        ],
+        "text": "Everyone gives a two-minute science demonstration and gets feedback. Practise turning a ready answer into a question."
+      },
+      {
+        "title": "Meeting 3: For everyone, and safely",
+        "topics": [
+          "erilaiset",
+          "turvallisuus",
+          "tiedeviestinta"
+        ],
+        "text": "Go through safety and who is responsible for what. Try one workshop from the workshop bank within the group."
+      }
+    ],
+    "topics": [
+      {
+        "id": "rooli",
+        "title": "What is a LUMA tutor and what do they do?",
+        "text": [
+          "A LUMA tutor is an upper secondary student who gets others interested in science, mathematics and technology. They run workshops, help at events and show by their own example that science is interesting and belongs to everyone.",
+          "A tutor is not a teacher or a science show performer. Their most important task is to get the participants doing, asking and discovering things themselves. Younger children often find an upper secondary student easier to approach than an adult, and that is the tutor's strength."
+        ],
+        "points": [
+          "A tutor guides, not lectures.",
+          "A tutor does not need to know everything: ”I don't know, let's find out together” is a good answer.",
+          "A tutor always works together with the teacher and the other tutors."
+        ],
+        "practice": {
+          "title": "Exercise: Me as a tutor",
+          "text": "Write three sentences in your portfolio: why you want to be a LUMA tutor, what your strength is and what you want to learn. This is the first part of the portfolio."
+        },
+        "case": {
+          "title": "Example situation",
+          "text": "A third-grader asks: ”Are you a teacher?” What do you answer, and how can your answer make the situation more relaxed?"
+        }
+      },
+      {
+        "id": "innostaminen",
+        "title": "How do you get children and young people interested in science?",
+        "text": [
+          "Interest starts when something surprises and the participant wants to know why. A good start is a phenomenon, not a definition: a bulb that lights with one wire but not another, or a sheet of paper that holds coins once you fold it.",
+          "Success keeps interest going. Plan the workshop so that the first success comes within a few minutes and a harder challenge only after that. Your own enthusiasm spreads: if you genuinely wonder, the participants wonder too."
+        ],
+        "points": [
+          "Start with a phenomenon or a question, not an explanation.",
+          "First success quickly, the challenge after it.",
+          "Praise trying and a good question, not only the right answer."
+        ],
+        "practice": {
+          "title": "Exercise: The hook",
+          "text": "Invent a start for some phenomenon that lasts at most 30 seconds and raises a question. Try it on a friend: did they ask something?"
+        },
+        "case": {
+          "title": "Example situation",
+          "text": "A lower secondary student says right at the start: ”Physics is boring.” How do you go on so that they get a chance to be surprised, without arguing with them?"
+        }
+      },
+      {
+        "id": "ryhma",
+        "title": "How do you guide a group?",
+        "text": [
+          "Guiding a group starts before anyone touches the equipment. Introduce yourself, say briefly what you will do and agree on one clear signal for everyone to stop and listen, for example a raised hand.",
+          "Give instructions one step at a time and show them. Hand out the equipment only after the instructions, or no one will listen. Go round the groups, look at everyone and give each person a task: builder, measurer, recorder, presenter. The roles rotate."
+        ],
+        "points": [
+          "One instruction at a time, show it and say it.",
+          "Equipment only after the instructions.",
+          "A role for everyone, and the roles rotate.",
+          "Agree on a stop signal right at the start."
+        ],
+        "practice": {
+          "title": "Exercise: Everyone in",
+          "text": "Guide a group of three to build a tower from ten sheets of paper. Rules: everyone touches the structure in turn, and you do not touch it at all. What did you notice?"
+        },
+        "case": {
+          "title": "Example situation",
+          "text": "One participant does everything, and the other two watch. What do you say or do to change this without offending anyone?"
+        }
+      },
+      {
+        "id": "kysymykset",
+        "title": "How do you ask good questions?",
+        "text": [
+          "A question with one right word as its answer stops thinking. An open question starts it: ”What do you think will happen?”, ”What do you notice?”, ”How could you test it?”",
+          "When a participant asks you something, do not answer straight away. Turn the question back or suggest trying: ”Good question. What if we try?” Wait calmly for an answer. Silence often means someone is thinking."
+        ],
+        "points": [
+          "An open question before the explanation.",
+          "Wait at least five seconds for an answer.",
+          "Turn the question into an experiment.",
+          "All the question cards are in the [toolkit](lumatutor-tyokalut.html#kysymyskortit)."
+        ],
+        "practice": {
+          "title": "Exercise: From answer to question",
+          "text": "Turn these ready answers into questions that make the participant think for themselves: ”The bulb does not light because the circuit is not closed.” ”Folded paper holds more because it is stiffer.” ”The red film lets only red light through.”"
+        },
+        "case": {
+          "title": "Example situation",
+          "text": "A participant asks: ”Why doesn't this work?” Write three questions that help them find the fault themselves."
+        }
+      },
+      {
+        "id": "selittaminen",
+        "title": "How do you explain difficult things clearly?",
+        "text": [
+          "A good explanation starts from what the listener already knows. Use everyday words, comparisons and pictures. Say one thing at a time and check that the listener is still with you.",
+          "A comparison helps, but every comparison breaks down somewhere. Say so out loud: ”A circuit is a bit like water pipes, but electricity does not pour out of a wire if the wire breaks.” Avoid terms you cannot explain yourself without other terms."
+        ],
+        "points": [
+          "Start from what the listener already knows.",
+          "One thing at a time, then a check.",
+          "A comparison and a picture, and say where the comparison breaks down.",
+          "You may use the proper terms once you have explained them."
+        ],
+        "practice": {
+          "title": "Exercise: For a primary pupil",
+          "text": "Explain a scientific phenomenon to a primary school pupil without difficult concepts, for example why the sky is blue or why ice floats. Write the explanation in at most five sentences and ask a friend to find a word in it that a 9-year-old would not understand."
+        },
+        "case": {
+          "title": "Example situation",
+          "text": "You are explaining a circuit, and a participant says: ”I don't get it.” What do you do next if the same explanation again does not help?"
+        }
+      },
+      {
+        "id": "tutkiminen",
+        "title": "How do you get participants to explore and try things themselves?",
+        "text": [
+          "Exploring often goes like this: predict, try, observe, explain. When a participant first guesses what will happen, they watch the experiment more closely and remember the result better.",
+          "Give the participants a task with many solutions and keep your own hands in your pockets. A mistake is part of research: ”What did we learn from this?” is better than ”Wrong.”"
+        ],
+        "points": [
+          "Predict before trying.",
+          "Tasks that allow many solutions.",
+          "The tutor does not do it for the participant.",
+          "Ask what a mistake taught."
+        ],
+        "practice": {
+          "title": "Exercise: Predict first",
+          "text": "Choose a simple experiment, for example whether an orange floats with and without its peel. Write a prediction question for it, a one-sentence instruction for trying it, and a question with which the participant explains the result."
+        },
+        "case": {
+          "title": "Example situation",
+          "text": "A group wants you to show them the right solution straight away. How do you keep the exploring with them and still help them forward?"
+        }
+      },
+      {
+        "id": "demonstraatio",
+        "title": "What makes a good science demonstration?",
+        "text": [
+          "A demonstration is a short show in which the audience sees a phenomenon. A good demonstration can be seen from the back row, lasts a few minutes, works reliably and leaves a question the audience wants answered.",
+          "Build the demonstration in three parts: a question or prediction, the show and a discussion. Rehearse it many times in advance and think about what you will do if it fails. A failure can also teach something when you say out loud what you think happened."
+        ],
+        "points": [
+          "Visible to everyone, lasts a few minutes.",
+          "A question before the show, a discussion after it.",
+          "Rehearsed, with a backup plan ready.",
+          "The planning template is in the [toolkit](lumatutor-tyokalut.html#demonstraatio)."
+        ],
+        "practice": {
+          "title": "Exercise: A two-minute demonstration",
+          "text": "Prepare a two-minute science demonstration with everyday equipment and give it to a group or film it for yourself. Time it. Ask for feedback on two things: could the phenomenon be seen, and did a question stay in mind?"
+        },
+        "case": {
+          "title": "Example situation",
+          "text": "The demonstration fails, and the audience starts to giggle. What do you say to make the situation part of science?"
+        }
+      },
+      {
+        "id": "erilaiset",
+        "title": "How do you take different learners and participants into account?",
+        "text": [
+          "A group always has people of different ages, who learn in different ways and speak different languages. Someone is quick, someone needs more time, someone does not see or hear well, and someone is nervous. A good workshop works in many ways: by showing, saying, trying and with a picture.",
+          "Plan an easier and a harder version of every workshop. Speak clearly in short sentences, show as you speak, and check that the equipment can also be reached from a wheelchair. Do not assume anything about a participant from their appearance or their name."
+        ],
+        "points": [
+          "Show and say, do not only say.",
+          "An easier and a harder version ready.",
+          "Clear language: short sentences, one thing at a time.",
+          "Space and equipment within everyone's reach."
+        ],
+        "practice": {
+          "title": "Exercise: Without words",
+          "text": "Guide a friend through a simple task, for example folding a paper plane, without speaking at all. What does this tell you about instructions for a participant whose language is different from yours?"
+        },
+        "case": {
+          "title": "Example situation",
+          "text": "One participant is done in half the time and starts to disturb the others. What could you give them to do?"
+        }
+      },
+      {
+        "id": "turvallisuus",
+        "title": "How do you act safely and responsibly?",
+        "text": [
+          "Safety is planned in advance. Every workshop card has safety instructions: read them and go through them with the teacher. The teacher is responsible for supervision, but you are responsible for following the instructions and for stopping the activity if something looks dangerous.",
+          "Responsibility also means respecting the participants. Do not collect names or other personal data from the participants, do not photograph anyone without permission, and tell the teacher at once if someone gets hurt or a situation worries you."
+        ],
+        "points": [
+          "Read the workshop's safety instructions and go through them with the teacher.",
+          "You may, and must, stop the activity if something is dangerous.",
+          "No personal data, no photos without permission.",
+          "Tell the teacher at once about anything that worries you.",
+          "Use the [safety checklist](lumatutor-tyokalut.html#turvallisuus) before every workshop."
+        ],
+        "practice": {
+          "title": "Exercise: Spot the risks",
+          "text": "Choose one workshop from the workshop bank and find three things in it that could go wrong. For each, write how to prevent it and what you will do if it happens anyway."
+        },
+        "case": {
+          "title": "Example situation",
+          "text": "In the middle of a workshop, a participant puts a button cell in their mouth. What do you do at once, and whom do you tell?"
+        }
+      },
+      {
+        "id": "tiedeviestinta",
+        "title": "What is good science communication?",
+        "text": [
+          "Science communication means telling people who are not experts in a field about research-based knowledge. Good science communication is true, understandable and interesting, and it also tells how the knowledge was gained and what is not yet known.",
+          "As a tutor you are a science communicator. Say where the knowledge comes from, separate an observation from an interpretation, do not exaggerate, and say plainly if you do not know. A reliable source is, for example, a research institute, a university or a textbook, not just a social media post."
+        ],
+        "points": [
+          "True, understandable and interesting, in that order.",
+          "Say where the knowledge comes from.",
+          "Separate observation (what we saw) and interpretation (what it means).",
+          "”I don't know” is an honest answer."
+        ],
+        "practice": {
+          "title": "Exercise: One picture, one message",
+          "text": "Choose one graph or picture from a reliable source and write a title for it and two sentences that tell a lower secondary student what can be seen in it. Give the source."
+        },
+        "case": {
+          "title": "Example situation",
+          "text": "A participant says they saw a video claiming that climate change is a hoax. How do you talk with them respectfully and based on knowledge?"
+        }
+      }
+    ],
+    "done_h": "The induction is done when",
+    "done": [
+      "you have gone through all ten topics",
+      "you have done the exercise for each topic or done it in a shared meeting",
+      "you have given a two-minute science demonstration",
+      "your portfolio has your starting point and your main insights from the induction"
+    ]
+  },
+  "tutustu": {
+    "title": "Visit science events",
+    "lead": "See how others do science education and collect ideas for your own workshop. Take part in at least one suitable science event.",
+    "why_h": "Why visit?",
+    "why": [
+      "As a LUMA tutor you do not only organise events. You also learn to look at how experienced science communicators and science educators do their work: how they start, what they ask and how they get the audience to try things.",
+      "On a visit you are an observer. You watch how it is done and how the audience reacts, not only the phenomena. No long report is needed: the aim is to collect thoughts and ideas for your own work."
+    ],
+    "kinds_h": "What kind of events?",
+    "kinds_lead": "A suitable event is one where the public hears about science or gets to try things themselves. Examples:",
+    "kinds": [
+      "Researchers' Night",
+      "Heureka's science events",
+      "science days and open days at universities",
+      "events at LUMA centres",
+      "public events at research institutes",
+      "science festivals",
+      "public lectures popularising science",
+      "STEAM and technology education events",
+      "other science events the teacher approves"
+    ],
+    "kinds_note": "The list gives examples of kinds of events. They are not agreed visits or partnerships. Always check the timing and suitability of an event with the teacher first.",
+    "modes_h": "Three ways to visit",
+    "modes": [
+      {
+        "title": "Group visit",
+        "text": "The teacher arranges a visit for the whole tutor group. Agree in advance who observes what."
+      },
+      {
+        "title": "Your own visit",
+        "text": "You visit an event on your own, for example at a weekend. Tell the teacher in advance where you are going and make sure the event is suitable."
+      },
+      {
+        "title": "As an assistant",
+        "text": "You help a workshop leader at an event. You see the workshop from the inside, and this is often the best way to learn."
+      }
+    ],
+    "steps_h": "Before, during and after",
+    "steps": [
+      {
+        "title": "Before",
+        "items": [
+          "Agree on the visit with the teacher and check the event's programme.",
+          "Choose one or two things to observe in particular.",
+          "Print the [observation template](lumatutor-tyokalut.html#havainnointi) or copy it to your phone."
+        ]
+      },
+      {
+        "title": "During",
+        "items": [
+          "Take part yourself, try things and listen.",
+          "Watch the audience: when do they get excited, and when does their attention drift?",
+          "Make short notes as soon as something gives you an idea.",
+          "Do not photograph people without permission. You may photograph equipment and set-ups if the organiser allows it."
+        ]
+      },
+      {
+        "title": "After",
+        "items": [
+          "Complete the observation template on the same day.",
+          "Choose one idea to try in your own workshop.",
+          "Add your observations to the Visits to science events part of your portfolio and log the time you spent."
+        ]
+      }
+    ],
+    "observe_h": "Observation questions",
+    "observe_lead": "Look at the event from the point of view of science communication and science education. Answer the six questions in a few sentences.",
+    "observe": [
+      "How was the science made understandable?",
+      "How was the audience's interest sparked?",
+      "How did the participants get to try and explore things themselves?",
+      "What demonstrations or workshops were there at the event?",
+      "What worked especially well?",
+      "What could I use in my own science workshop?"
+    ],
+    "template_note": "A ready template you can copy, download or print:",
+    "time_h": "Working time",
+    "time": "A workload of about $4 \\cdot 75\\,\\text{min}$ is set aside for visits and observation. This covers preparing, the event itself and writing up your observations. Agree with the teacher on whether travel time counts. Log the actual time in minutes.",
+    "done_h": "This part is done when",
+    "done": [
+      "you have taken part in at least one suitable science event",
+      "you have answered the six observation questions",
+      "you have chosen at least one idea for your own workshop",
+      "your observations are in the portfolio and the time is logged"
+    ]
+  },
+  "suunnittele": {
+    "title": "Plan a workshop",
+    "lead": "The workshop bank has ready science workshops that upper secondary students can run, for example for comprehensive school pupils. Choose one, adapt it or plan your own.",
+    "bank_h": "Science workshop bank",
+    "bank_lead": "Every ready workshop is a complete guide: goals, equipment, safety, step-by-step timing, background and printable participant material. The ideas for development are ideas that have not yet been written out or tried.",
+    "ready_h": "Ready workshops",
+    "ideas_h": "Ideas for development",
+    "ideas_lead": "These workshops are waiting for a developer. You can take one as your own planning task: write it out with the planning template, test it and bring it to the teacher.",
+    "own_h": "How to plan and test a workshop",
+    "own_lead": "Use the [workshop planning template](lumatutor-tyokalut.html#suunnittelu). The ready workshops show what a finished plan looks like.",
+    "own_steps": [
+      {
+        "title": "Choose a phenomenon and an audience",
+        "text": "Which phenomenon interests you, and who is the workshop for? A primary pupil needs shorter steps and more doing than a lower secondary student."
+      },
+      {
+        "title": "Write the goal in one sentence",
+        "text": "What can the participant do or notice after the workshop? For example: ”The participant notices that the bulb lights only when the circuit is closed.”"
+      },
+      {
+        "title": "Plan the hook",
+        "text": "Start with a phenomenon or a question that sparks curiosity in under a minute."
+      },
+      {
+        "title": "Plan the activity",
+        "text": "A task where the participants predict, try and observe. First success within a few minutes, then a challenge."
+      },
+      {
+        "title": "Write the questions and the closing",
+        "text": "Three good questions and a closing in which the participants say what they noticed."
+      },
+      {
+        "title": "Make a safety plan and an equipment list",
+        "text": "Go through the [safety checklist](lumatutor-tyokalut.html#turvallisuus). Show the plan to the teacher before testing."
+      },
+      {
+        "title": "Test",
+        "text": "Try the workshop first yourself and then with other tutors or friends. Time it and ask for feedback with the [feedback form](lumatutor-tyokalut.html#palaute)."
+      },
+      {
+        "title": "Improve",
+        "text": "Write in your portfolio what happened in the test and what you changed. Changing the plan after a test is the most important part of planning."
+      }
+    ],
+    "time_h": "Working time",
+    "time": "A workload of about $4 \\cdot 75\\,\\text{min}$ is set aside for planning and testing. Taking a ready workshop into use takes less time than planning your own, so when you use a ready workshop, make it your own: add your own hook, your own differentiation or a new step.",
+    "add_h": "Adding a new workshop to the bank",
+    "add": "When a workshop you planned has been tested and the teacher has approved it, it can be added to the bank. In Ruukkilabra each workshop is its own file, so adding one needs no changes to the site's code.",
+    "done_h": "This part is done when",
+    "done": [
+      "you have a written workshop plan or an adapted ready workshop",
+      "you have tested the workshop at least once with others",
+      "you have changed the plan based on the test",
+      "the plan, the test results and the changes are in your portfolio"
+    ]
+  },
+  "toteuta": {
+    "title": "Run it: guide others",
+    "lead": "You run science workshops and help organise science events. Guiding a real workshop or event is the key evidence in the course.",
+    "kinds_h": "What kind of events?",
+    "kinds_lead": "The events are agreed with the teacher during the school year. Possible events include, for example:",
+    "kinds": [
+      "science workshops for primary pupils",
+      "visits by lower secondary students to the upper secondary school",
+      "Kiviruukki upper secondary school's open days",
+      "science festivals and science days",
+      "science clubs",
+      "joint events with LUMA centres",
+      "workshops for international visitors",
+      "science events planned by the students themselves",
+      "Kiviruukki's own STEAM and Makerspace events"
+    ],
+    "kinds_note": "The list gives possible kinds of events. The teacher tells you which events are on offer this school year.",
+    "peer_h": "Peer tutoring",
+    "peer_lead": "Peer tutoring can be part of the course, but it is not its main content. It is agreed with the teacher. Examples:",
+    "peer": [
+      "a voluntary maths problem-solving session",
+      "guiding experimental work in physics or chemistry",
+      "supporting students who are preparing for competitions",
+      "guiding small groups",
+      "organising science demonstrations"
+    ],
+    "peer_note": "The same holds in peer tutoring as in workshops: guide the other person to think, do not do it for them. First ask what they have already tried.",
+    "task_h": "At every event you know",
+    "task_lead": "Before every event, go through these six questions with the teacher and the other tutors. Write the answers on the [event preparation checklist](lumatutor-tyokalut.html#valmistelu).",
+    "task": [
+      {
+        "q": "What am I expected to do?",
+        "a": "Your own role: for example lead tutor, assistant, equipment manager or host. You know when you need to be there and what you do in each step."
+      },
+      {
+        "q": "How do I prepare?",
+        "a": "You read the workshop card, try the workshop yourself, rehearse the start out loud and find out what kind of group is coming."
+      },
+      {
+        "q": "What equipment is needed?",
+        "a": "You make an equipment list from the workshop card, set aside spares and check that everything works, the day before and just before the start."
+      },
+      {
+        "q": "How are the responsibilities shared?",
+        "a": "You agree who guides, who assists, who is in charge of the equipment and who tidies up. The teacher is responsible for supervision and safety."
+      },
+      {
+        "q": "How is safety ensured?",
+        "a": "You go through the [safety checklist](lumatutor-tyokalut.html#turvallisuus), you know where the first aid kit is and whom to contact if something happens."
+      },
+      {
+        "q": "How is participation documented?",
+        "a": "You log the event, your role and your working time, collect anonymous participant feedback and fill in the tutor's self-assessment on the same day."
+      }
+    ],
+    "roles_h": "Roles at an event",
+    "roles": [
+      {
+        "title": "Lead tutor",
+        "text": "Starts and ends the workshop, gives the instructions and keeps to the timetable."
+      },
+      {
+        "title": "Assistant",
+        "text": "Goes round the groups, helps those who are stuck and notices who needs support."
+      },
+      {
+        "title": "Equipment manager",
+        "text": "Prepares and hands out the equipment, keeps the spare parts safe and is in charge of tidying up."
+      },
+      {
+        "title": "Host",
+        "text": "Welcomes the group, shows them around and takes care of moving from place to place."
+      }
+    ],
+    "roles_note": "The roles change from event to event. If the events make it possible, everyone gets to try the lead tutor role at least once.",
+    "responsibility_h": "Responsibility",
+    "responsibility": [
+      "The teacher is responsible for proper supervision of the activity and for organising safety.",
+      "You are never alone the person responsible at an event for minors. The group's own teacher or another responsible adult is always there.",
+      "No personal data is collected from the participants. Feedback is anonymous, and identifiable photos are not taken or published without permission, following the school's practice."
+    ],
+    "time_h": "Working time",
+    "time": "A workload of about $9 \\cdot 75\\,\\text{min}$ is set aside for preparing and running events. This could be, for example, two or three events with their preparation, or several short workshops. For each event, log the time spent on preparing and on guiding separately.",
+    "done_h": "This part is done when",
+    "done": [
+      "you have taken part in guiding at least one real science workshop or science event",
+      "you have practised the lead tutor role, if the events make it possible (agree on this with the teacher)",
+      "for every event, your role, working time, feedback and self-assessment are recorded"
+    ]
+  },
+  "arvioi": {
+    "title": "Assess and hand in",
+    "lead": "The tutor portfolio shows what you did and what you learned. With it you follow your progress throughout the school year and show your skills.",
+    "portfolio_h": "Tutor portfolio",
+    "portfolio_lead": "The portfolio has six parts. Fill it in as you go, not only at the end. Short, honest answers are better than long, general ones.",
+    "portfolio_template": "The whole portfolio is one [portfolio template](lumatutor-tyokalut.html#portfolio) that you can copy into your own file.",
+    "parts": [
+      {
+        "title": "Your starting point",
+        "when": "Right at the start",
+        "items": [
+          "Why do I want to be a LUMA tutor?",
+          "What strengths do I have?",
+          "What do I want to learn?"
+        ]
+      },
+      {
+        "title": "Induction",
+        "when": "During the induction",
+        "items": [
+          "Exercises completed",
+          "Main insights about guiding"
+        ]
+      },
+      {
+        "title": "Visits to science events",
+        "when": "After every visit",
+        "items": [
+          "Where did I go?",
+          "What did I observe?",
+          "What did I learn about science communication?",
+          "What could I use myself?"
+        ]
+      },
+      {
+        "title": "Planning the workshop",
+        "when": "During planning and testing",
+        "items": [
+          "The workshop's topic and audience",
+          "My plan",
+          "Test results",
+          "Changes made to the plan"
+        ]
+      },
+      {
+        "title": "Running events",
+        "when": "After every event",
+        "items": [
+          "Event and date",
+          "My role",
+          "Working time",
+          "What worked?",
+          "What would I improve?"
+        ]
+      },
+      {
+        "title": "Final self-assessment",
+        "when": "At the end",
+        "items": [
+          "How did my guiding skills develop?",
+          "How well can I get others interested in science?",
+          "What did I learn about cooperation?",
+          "What would I do differently next time?"
+        ]
+      }
+    ],
+    "time_h": "Working time log",
+    "time_lead": "Log every work session: the day, what you did, which part it belongs to and how many minutes it took. At the end, add up the totals by part.",
+    "time_targets_h": "Guideline split",
+    "time_template": "Use the [working time log](lumatutor-tyokalut.html#tyoaika).",
+    "self_h": "Self-assessment",
+    "self_lead": "After every event, assess your work with the [tutor's self-assessment template](lumatutor-tyokalut.html#itsearviointi). At the end you assess your development over the whole course using the same areas the teacher uses to assess completion:",
+    "return_h": "Handing in",
+    "return": [
+      "Hand in your portfolio and your working time log in the learning environment the school names separately. Ruukkilabra does not save anything you write: make the portfolio in your own file.",
+      "After handing in, you have a short feedback talk with the teacher. You go through the portfolio, the events and your self-assessment, and the teacher explains the grounds for the assessment."
+    ],
+    "check_h": "Before handing in, check that",
+    "check": [
+      "all six parts of the portfolio have answers",
+      "the working time log is added up",
+      "every event has a role, working time and self-assessment",
+      "the portfolio has no participants' names or other personal data"
+    ]
+  },
+  "tyokalut": {
+    "title": "Tutor's toolkit",
+    "lead": "Templates and checklists for every stage of the course. They are made to be used directly at real events.",
+    "how": "Every template can be copied into your own file, downloaded as a text file or printed. The Print button prints only that template. Nothing is saved in Ruukkilabra.",
+    "templates": [
+      {
+        "id": "suunnittelu",
+        "title": "Workshop planning template",
+        "use": "For planning your own workshop or adapting a ready one.",
+        "file": "tyopajan-suunnitelma.txt",
+        "section": "suunnittele",
+        "blocks": [
+          "# Workshop plan",
+          "? Name of the workshop",
+          "? Planned by",
+          "? Audience and group size",
+          "? Topic",
+          "? Duration",
+          "## Goal",
+          "?? What can the participant do or notice after the workshop? (one sentence)",
+          "## Equipment and preparation",
+          "?? Equipment and materials, quantities",
+          "?? Preparation before the workshop",
+          "## Safety",
+          "?? What are the risks and how are they prevented?",
+          "## Steps",
+          ". Write the steps and how many minutes each takes.",
+          "? Start and hook",
+          "? Activity 1",
+          "? Activity 2",
+          "? Closing and shared reflection",
+          "## Questions and differentiation",
+          "?? Three good questions for the participants",
+          "?? An easier version and a harder version",
+          "?? What can go wrong and what do I do then?",
+          "## Background",
+          "?? What does the tutor need to know about the phenomenon? Sources",
+          "## Testing",
+          "? Tested (when, with whom)",
+          "?? What happened in the test?",
+          "?? What did I change after the test?"
+        ]
+      },
+      {
+        "id": "havainnointi",
+        "title": "Science event observation template",
+        "use": "For a visit to a science event. Make notes at the event and complete them on the same day.",
+        "file": "vierailun-havainnot.txt",
+        "section": "tutustu",
+        "blocks": [
+          "# Visit to a science event",
+          "? Event and place",
+          "? Date",
+          "? Type of visit (group, own, as an assistant)",
+          "? What do I observe in particular?",
+          "## Observations",
+          "?? 1. How was the science made understandable?",
+          "?? 2. How was the audience's interest sparked?",
+          "?? 3. How did the participants get to try and explore things themselves?",
+          "?? 4. What demonstrations or workshops were there at the event?",
+          "?? 5. What worked especially well?",
+          "?? 6. What could I use in my own science workshop?",
+          "## Finally",
+          "? One idea I will try",
+          "? Time spent (in minutes)"
+        ]
+      },
+      {
+        "id": "valmistelu",
+        "title": "Event preparation checklist",
+        "use": "A week before the event, the day before and just before the start.",
+        "file": "tapahtuman-valmistelu.txt",
+        "section": "toteuta",
+        "blocks": [
+          "# Event preparation",
+          "? Event, place and date",
+          "? Group: age and size",
+          "? Teacher in charge on site",
+          "## Roles",
+          "? Lead tutor",
+          "? Assistant(s)",
+          "? Equipment manager",
+          "? Host",
+          "## A week before",
+          "[ ] The workshop is chosen and the workshop card read.",
+          "[ ] I have tried the workshop myself.",
+          "[ ] The equipment list is made and missing equipment ordered or borrowed.",
+          "[ ] The safety checklist has been gone through with the teacher.",
+          "[ ] The room is booked and I know where it is.",
+          "## The day before",
+          "[ ] The equipment is counted and tested, spares included.",
+          "[ ] The participant materials are printed.",
+          "[ ] The start has been rehearsed out loud.",
+          "[ ] The timetable is clear to all tutors.",
+          "## Just before the start",
+          "[ ] The equipment is in place and will be handed out only after the instructions.",
+          "[ ] I know where the first aid kit and the emergency exits are.",
+          "[ ] I know whom to contact if something happens.",
+          "[ ] The feedback form is ready.",
+          "## After",
+          "[ ] The room is tidied and the equipment returned.",
+          "[ ] Working time and self-assessment are logged."
+        ]
+      },
+      {
+        "id": "turvallisuus",
+        "title": "Safety checklist",
+        "use": "Before every workshop, together with the teacher.",
+        "file": "turvallisuus.txt",
+        "section": "toteuta",
+        "blocks": [
+          "# Safety check",
+          "? Workshop",
+          "? Checked together (teacher and tutors)",
+          "## In every workshop",
+          "[ ] The teacher in charge or another responsible adult is there the whole time.",
+          "[ ] I know where the first aid kit and the emergency exits are.",
+          "[ ] Walkways are clear, and there are no cables or things on the floor.",
+          "[ ] The equipment suits the participants' age.",
+          "[ ] Participants have been asked about allergies if food, latex or another allergen is used.",
+          "[ ] No personal data is collected from participants, and they are not photographed without permission.",
+          "## Electricity",
+          "[ ] Only batteries or low voltage are used, never mains electricity.",
+          "[ ] Button cells are out of children's reach.",
+          "[ ] Participants are told not to short-circuit a battery: the wire can get hot.",
+          "[ ] Broken, leaking or hot batteries are taken out of use at once.",
+          "## Chemicals and water",
+          "[ ] Only substances the teacher has approved. The safety data has been read.",
+          "[ ] Safety glasses are worn when a substance can splash.",
+          "[ ] Nothing is tasted.",
+          "[ ] A wet floor is dried at once.",
+          "## Tools and light",
+          "[ ] Sharp tools only under guidance, not for young children.",
+          "[ ] No laser pointers are used.",
+          "[ ] No one looks straight at the sun or a bright lamp.",
+          "[ ] Lamps that get hot are placed where no one touches them.",
+          "## If something happens",
+          "[ ] I stop the activity and call the responsible adult at once.",
+          "[ ] If a child may have swallowed a button cell or a magnet, call 112 at once. Do not wait for symptoms.",
+          "[ ] I tell the teacher what happened on the same day."
+        ]
+      },
+      {
+        "id": "kysymyskortit",
+        "title": "Cards of good guiding questions",
+        "use": "Print, cut out the cards and keep them with you in the workshop.",
+        "file": "ohjauskysymykset.txt",
+        "section": "perehdy",
+        "cards": true,
+        "blocks": [
+          "# Guiding questions",
+          "## Spark curiosity",
+          "- What do you notice?",
+          "- What is strange or surprising here?",
+          "- What would you like to know about this?",
+          "## Predict",
+          "- What do you think will happen if…?",
+          "- Why do you think so?",
+          "- Could something else be possible?",
+          "## Explore",
+          "- How could you test it?",
+          "- What do you change, and what stays the same?",
+          "- What happens if you do it differently?",
+          "## Observe",
+          "- What happened?",
+          "- Did what you predicted happen?",
+          "- Did someone else notice something different?",
+          "## Explain",
+          "- Why do you think it happened like that?",
+          "- How would you explain this to a friend?",
+          "- What evidence supports your idea?",
+          "## Apply and reflect",
+          "- Where in everyday life do you see the same phenomenon?",
+          "- What would you do next?",
+          "- What was the most surprising thing today?",
+          "## When someone is stuck",
+          "- What have you already tried?",
+          "- Which part works and which does not?",
+          "- What if we try one change at a time?"
+        ]
+      },
+      {
+        "id": "demonstraatio",
+        "title": "Science demonstration planning template",
+        "use": "For planning a short show of a few minutes.",
+        "file": "demonstraatio.txt",
+        "section": "perehdy",
+        "blocks": [
+          "# Science demonstration",
+          "? Phenomenon",
+          "? Audience and place",
+          "? Duration",
+          "## Three parts",
+          "?? 1. A question or prediction for the audience",
+          "?? 2. The show: what I do and what the audience sees",
+          "?? 3. Discussion: what I ask after the show",
+          "## Explanation",
+          "?? An explanation in language that suits the audience (at most five sentences)",
+          "## Checks",
+          "[ ] Visible to the back row.",
+          "[ ] Rehearsed at least three times.",
+          "[ ] Safety checked with the teacher.",
+          "? Backup plan if the show fails"
+        ]
+      },
+      {
+        "id": "palaute",
+        "title": "Participant feedback form",
+        "use": "At the end of the workshop. Anonymous: participants are not asked for their name or any other personal data.",
+        "file": "osallistujapalaute.txt",
+        "section": "toteuta",
+        "blocks": [
+          "# Feedback on the workshop",
+          ". Do not write your name. Circle or mark.",
+          "? The workshop was: fun / OK / not fun",
+          "? I learned something new: yes / a little / no",
+          "? I got to try things myself: yes / a little / no",
+          "? The instructions were: clear / a bit confusing / confusing",
+          "?? The most fun thing was",
+          "?? I would still like to know",
+          ". For young children it is enough to put a sticker on a smiling, neutral or sad face.",
+          "## For the tutor: summary of the feedback",
+          "? Number of answers",
+          "?? What does the feedback teach?"
+        ]
+      },
+      {
+        "id": "itsearviointi",
+        "title": "Tutor's self-assessment template",
+        "use": "After every time you guide, on the same day.",
+        "file": "tutorin-itsearviointi.txt",
+        "section": "arvioi",
+        "blocks": [
+          "# Tutor's self-assessment",
+          "? Event and date",
+          "? My role",
+          "## Rate on a scale of 1–4 (1 = still practising, 4 = went well)",
+          "? Guiding skills: I let the participants do it themselves",
+          "? Preparation: I was ready, and the equipment worked",
+          "? Cooperation: I worked with the others as agreed",
+          "? Responsibility: I took care of safety",
+          "? Activity: I took on tasks on my own initiative",
+          "## Reflect",
+          "?? What worked? How could you tell?",
+          "?? In which situation could I have acted differently?",
+          "?? What can I conclude from the participant feedback?",
+          "?? What will I do differently next time?"
+        ]
+      },
+      {
+        "id": "tyoaika",
+        "title": "Working time log",
+        "use": "Throughout the course. Log the actual time in minutes.",
+        "file": "tyoajan-seuranta.txt",
+        "section": "arvioi",
+        "log": true,
+        "blocks": [
+          "# Working time log",
+          ". Log every work session on the same day. The part is Get ready, Visit, Plan, Run or Assess.",
+          "= Day | What I did | Part | Minutes",
+          "## Summary",
+          "? Get ready in total (guideline 225 minutes)",
+          "? Visit in total (300 minutes)",
+          "? Plan in total (300 minutes)",
+          "? Run in total (675 minutes)",
+          "? Assess in total (225 minutes)",
+          "? All in total (about 1,710–1,725 minutes)"
+        ]
+      },
+      {
+        "id": "portfolio",
+        "title": "Portfolio template",
+        "use": "Throughout the course. Copy it into your own file and hand it in where the school tells you.",
+        "file": "tutorportfolio.txt",
+        "section": "arvioi",
+        "blocks": [
+          "# LUMA tutor portfolio",
+          "? Name and group",
+          "## 1. My starting point",
+          "?? Why do I want to be a LUMA tutor?",
+          "?? What strengths do I have?",
+          "?? What do I want to learn?",
+          "## 2. Induction",
+          "?? Exercises completed",
+          "?? Main insights about guiding",
+          "## 3. Visits to science events",
+          "? Where did I go?",
+          "?? What did I observe?",
+          "?? What did I learn about science communication?",
+          "?? What could I use myself?",
+          "## 4. Planning the workshop",
+          "? The workshop's topic and audience",
+          "?? My plan (attach the planning template)",
+          "?? Test results",
+          "?? Changes made to the plan",
+          "## 5. Running events",
+          ". Fill in for every event.",
+          "? Event and date",
+          "? My role",
+          "? Working time",
+          "?? What worked?",
+          "?? What would I improve?",
+          "## 6. Final self-assessment",
+          "?? How did my guiding skills develop?",
+          "?? How well can I get others interested in science?",
+          "?? What did I learn about cooperation?",
+          "?? What would I do differently next time?",
+          "## Attachments",
+          "[ ] Working time log, added up",
+          "[ ] Tutor's self-assessments",
+          "[ ] No participants' names or other personal data"
+        ]
+      }
+    ]
+  },
+  "taxonomy": {
+    "topic": {
+      "sahko": "Electricity",
+      "rakenteet": "Structures and engineering",
+      "matematiikka": "Mathematics",
+      "valo": "Light",
+      "ilmasto": "Climate and data",
+      "vesi": "Water and chemistry",
+      "liike": "Motion and energy",
+      "paine": "Air pressure",
+      "ohjelmointi": "Programming and robotics",
+      "elama": "Living nature"
+    },
+    "audience": {
+      "alakoulu": "Primary school",
+      "ylakoulu": "Lower secondary"
+    },
+    "equipment": {
+      "arki": "Everyday items",
+      "paristot": "Batteries and wires",
+      "valaisimet": "Torches",
+      "tulosteet": "Printouts",
+      "tietokone": "Computer or tablet",
+      "vesi": "Water",
+      "mikroskooppi": "Microscope",
+      "robotti": "Robot or microcontroller"
+    }
+  }
+}

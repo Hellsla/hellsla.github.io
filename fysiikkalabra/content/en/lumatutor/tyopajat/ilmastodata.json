@@ -1,0 +1,202 @@
+{
+  "id": "ilmastodata",
+  "order": 5,
+  "status": "ready",
+  "title": "Climate data detectives",
+  "short": "Participants examine real, sourced measurement data on carbon dioxide and global temperature and practise drawing conclusions.",
+  "audience": "ylakoulu",
+  "topic": "ilmasto",
+  "minutes": 45,
+  "group": "in pairs or groups of three",
+  "equipment": [
+    "tulosteet",
+    "tietokone"
+  ],
+  "data": true,
+  "goals": [
+    "The participant can read values from a graph and calculate how they change.",
+    "The participant can tell the variation of a single year from the long-term direction.",
+    "The participant considers what two graphs that change at the same time prove and what they do not.",
+    "The participant knows to ask who measured the data and how."
+  ],
+  "materials": [
+    "A printed detective data card for each group, preferably in colour. The card has two graphs and the decade means.",
+    "A ruler and a pen for each group.",
+    "Optionally computers or tablets: the data can be downloaded as a CSV file and opened in a spreadsheet program."
+  ],
+  "prep": [
+    "Print the data cards. Check that the values in the graphs can be told apart in print.",
+    "Do the tasks yourself and compare with the answers. The answers are calculated directly from the same data as the graphs.",
+    "Read the background, especially what the temperature anomaly and ppm mean. They are asked about almost every time.",
+    "If you use computers, download the CSV files in advance and check that they open."
+  ],
+  "safety": [
+    "The workshop has no physical risks. When computers are used, cables are kept off the walkways.",
+    "Climate change can cause worry. Leave room for questions and also tell what people are doing to cut emissions. Do not frighten and do not play it down."
+  ],
+  "steps": [
+    {
+      "time": "0–5",
+      "title": "Hook: weather or climate?",
+      "do": "Ask whether last winter was cold. Discuss whether one winter can tell whether the Earth is warming. Separate weather (the situation over a day or a week) and climate (the mean over decades).",
+      "say": "If this winter is cold, is climate change over? How could you find out? Today you are detectives, and the evidence is real measurement data."
+    },
+    {
+      "time": "5–10",
+      "title": "Who measured, and how?",
+      "do": "Show the data card. Tell who made the measurements and what the units of the graphs mean. Ask why it matters to know where data comes from.",
+      "say": "A good detective first asks where the evidence comes from. Who measured these? What does ppm mean?"
+    },
+    {
+      "time": "10–22",
+      "title": "Case 1: carbon dioxide",
+      "do": "Before looking at the graph, the groups guess how much the concentration grew from 1960 to 2020 and write the guess on the card. Then the groups read values from the carbon dioxide graph, calculate the change and compare the growth over two 30-year periods. Go round and ask how they read each value.",
+      "say": "Show with your finger where you read the value. Did the concentration grow steadily, or did the growth speed up?"
+    },
+    {
+      "time": "22–34",
+      "title": "Case 2: temperature",
+      "do": "The groups find the warmest years in the temperature graph, find a year that was cooler than the year before, and compare the decade means.",
+      "say": "Did you find a year that was cooler than the one before? Does it cancel the warming? What do the decade means tell you?"
+    },
+    {
+      "time": "34–40",
+      "title": "Case 3: combine the evidence",
+      "do": "The groups consider whether two graphs rising at the same time prove that one causes the other. Afterwards, tell what else is known about the effect of carbon dioxide.",
+      "say": "Two graphs rise at the same time. Is that enough evidence that carbon dioxide warms the Earth? What else is needed?"
+    },
+    {
+      "time": "40–45",
+      "title": "Closing",
+      "do": "Each group gives one conclusion and its evidence. Sum up what the data shows and what cannot be said from it.",
+      "say": "What is your most important conclusion, and what evidence supports it?"
+    }
+  ],
+  "background": [
+    "The concentration of carbon dioxide is measured in ppm (parts per million). A concentration of $400\\,\\text{ppm}$ means that 400 out of every million molecules of dry air are carbon dioxide. The values in the graph are annual means from the Mauna Loa Observatory in Hawaii, where measurements began in 1958. The site is high up and far from large sources of emissions. The concentration varies within a year, because plants in the northern hemisphere take up carbon dioxide in summer. This variation evens out in the annual means.",
+    "The temperature graph does not show the Earth's mean temperature in degrees, but the anomaly from the mean of the years 1951–1980. A positive value means that the year was warmer than the reference period. The anomaly is used because it can be determined more accurately than the mean temperature itself: the changes at thousands of weather stations and ocean measurements can be combined more reliably than their readings. NASA's GISTEMP data is one of several independent research groups' temperature datasets, and they give a very similar picture.",
+    "Single years vary naturally, for example because of El Niño and volcanic eruptions. That is why climate is studied as decade means. One year cooler than the one before does not cancel the long-term direction, and this is the most important observation in the workshop.",
+    "Two graphs rising at the same time do not on their own prove that one causes the other. The warming effect of carbon dioxide is, however, known in other ways too: as early as 1859 John Tyndall measured in the laboratory that carbon dioxide absorbs heat radiation. According to the Intergovernmental Panel on Climate Change, IPCC, it is unequivocal that human influence has warmed the atmosphere, ocean and land.",
+    "Measuring institutions refine their data, and a new year is added every year. So the numbers in this workshop may differ slightly from the sources' current numbers. The graphs and the answers are calculated automatically from the same saved data, so they agree with each other. The data was retrieved on {retrieved}."
+  ],
+  "figures": [
+    "co2",
+    "lampotila"
+  ],
+  "questions": [
+    "How do you know that this data can be trusted?",
+    "Why does one cold year not cancel the warming?",
+    "Do two graphs rising at the same time prove that one causes the other? What else would be needed?"
+  ],
+  "problems": [
+    {
+      "p": "Participants read a value from the wrong line or axis of the graph.",
+      "f": "Ask them to point with a ruler at the year on the horizontal axis, go straight up to the graph and from there straight across to the vertical axis."
+    },
+    {
+      "p": "The anomaly gets mixed up with the temperature: ”The Earth is only one degree warm?”",
+      "f": "Explain that the number is the difference from the mean of the reference period, not the temperature itself. Ask what it means that a year was one degree warmer than the reference period."
+    },
+    {
+      "p": "Someone says the data is faked.",
+      "f": "Do not argue. Ask how the claim could be checked, and say that several independent research groups have reached the same result with different measurements. The sources are on the card."
+    },
+    {
+      "p": "A group finishes quickly.",
+      "f": "Give an extra task: work out over how many years the concentration grew by its first $20\\,\\text{ppm}$, and over how many years by its last $20\\,\\text{ppm}$."
+    }
+  ],
+  "variations": [
+    {
+      "title": "Easier",
+      "text": "Do only cases 1 and 2. Mark the years 1960 and 2020 on the graph with lines in advance."
+    },
+    {
+      "title": "Harder",
+      "text": "Open the CSV data in a spreadsheet. Plot the carbon dioxide concentration and the temperature anomaly in one scatter plot and consider what it shows."
+    },
+    {
+      "title": "With computers",
+      "text": "The groups calculate the decade means themselves in a spreadsheet and compare them with the table on the data card."
+    },
+    {
+      "title": "For upper secondary students",
+      "text": "The same data suits practising reading graphs and slopes in upper secondary physics: how fast did the carbon dioxide concentration grow in different decades?"
+    }
+  ],
+  "closing": [
+    "Each group gives one conclusion and the evidence it is based on. Write them on the board.",
+    "Sum up: the carbon dioxide concentration has grown, and the growth has sped up. The Earth's mean temperature has risen. A single year varies, but the decade means rise.",
+    "Remind them of the detective's question: who measured, how, and where does the information come from?"
+  ],
+  "self": [
+    "Could the participants read the graphs themselves, or did I read the values for them?",
+    "How did I respond if someone doubted the data or got worried?",
+    "Did the participants separate observation and interpretation?",
+    "Was there enough time for all three cases?"
+  ],
+  "participant": {
+    "title": "Climate data detectives: data card",
+    "figures": [
+      "co2",
+      "lampotila"
+    ],
+    "blocks": [
+      "# Climate data detectives",
+      ". The evidence is real measurement data. Carbon dioxide: NOAA and Scripps, Mauna Loa, annual means. Temperature: NASA GISTEMP v4, anomaly from the mean of 1951–1980.",
+      "## Case 1: carbon dioxide",
+      "? Guess first, before you look at the graph: how much did the carbon dioxide concentration grow from 1960 to 2020?",
+      "{figure:co2}",
+      "? a) Read the carbon dioxide concentration in 1960 and in 2020 from the graph.",
+      "? b) How much did the concentration grow from 1960 to 2020?",
+      "?? c) Did the concentration grow more in 1960–1990 or in 1990–2020? What does that tell you?",
+      "{figure:lampotila}",
+      "## Case 2: temperature",
+      "? a) Which are the three warmest years in the graph?",
+      "?? b) Find a year that was cooler than the year before. Does it cancel the warming? Give reasons.",
+      "{decades}",
+      "? c) How much warmer were the 2010s than the 1960s?",
+      "## Case 3: combine the evidence",
+      "?? Both graphs rise. Does that prove that carbon dioxide warms the Earth? What else would be needed?",
+      "## The detectives' conclusion",
+      "?? Our most important conclusion and the evidence that supports it"
+    ]
+  },
+  "answers": [
+    "Case 1 a: in 1960 about {co2:1960} and in 2020 about {co2:2020}. When read from the graph, a difference of a few ppm is acceptable.",
+    "Case 1 b: the growth was about {co2diff:1960-2020}.",
+    "Case 1 c: in 1960–1990 the concentration grew by about {co2diff:1960-1990}, in 1990–2020 by about {co2diff:1990-2020}. The growth has sped up: the concentration now grows faster than before.",
+    "Case 2 a: the warmest years are {warmest:3}. They are all among the last years in the data.",
+    "Case 2 b: for example, {cooler}. It does not cancel the warming: years vary, but the decade means rise.",
+    "Case 2 c: the mean of the 2010s was {decade:2010} and that of the 1960s {decade:1960}, so the 2010s were about {decadediff:1960-2010} warmer.",
+    "Case 3: two graphs rising at the same time do not on their own prove cause and effect. An explanation of why carbon dioxide warms is needed: laboratory measurements show that it absorbs heat radiation. A good answer says that happening at the same time is not enough.",
+    "Extra task: the first $20\\,\\text{ppm}$ built up in 1959–1979, in about 20 years, and the last $20\\,\\text{ppm}$ in 2018–2025, in about 7 years."
+  ],
+  "sources": [
+    {
+      "title": "NOAA Global Monitoring Laboratory: Trends in Atmospheric Carbon Dioxide (Mauna Loa)",
+      "url": "https://gml.noaa.gov/ccgg/trends/data.html"
+    },
+    {
+      "title": "NASA GISS: GISTEMP Surface Temperature Analysis",
+      "url": "https://data.giss.nasa.gov/gistemp/"
+    },
+    {
+      "title": "Data mirror (carbon dioxide): datasets/co2-ppm",
+      "url": "https://github.com/datasets/co2-ppm"
+    },
+    {
+      "title": "Data mirror (temperature): datasets/global-temp",
+      "url": "https://github.com/datasets/global-temp"
+    },
+    {
+      "title": "IPCC AR6 WG1: Summary for Policymakers, A.1",
+      "url": "https://www.ipcc.ch/report/ar6/wg1/"
+    }
+  ],
+  "lessons": [
+    "fy1-4",
+    "fy2-8",
+    "fy3-12"
+  ]
+}

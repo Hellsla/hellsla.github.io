@@ -1,0 +1,28 @@
+{
+  "id": "puhdas-vesi",
+  "order": 6,
+  "status": "idea",
+  "title": "Kuinka puhdasta vettä voi tehdä?",
+  "audience": "ylakoulu",
+  "topic": "vesi",
+  "minutes": 30,
+  "equipment": [
+    "vesi",
+    "arki"
+  ],
+  "short": "Osallistujat rakentavat suodattimen hiekasta, sorasta ja kankaasta ja tutkivat, kuinka kirkasta likaisesta vedestä saa.",
+  "idea": "Ryhmät saavat likaista vettä ja materiaaleja, kuten soraa, hiekkaa, kahvinsuodatinpaperia ja puuvillakangasta. He suunnittelevat suodattimen leikatusta muovipullosta, testaavat sen ja vertaavat suodatetun veden kirkkautta. Lopuksi pohditaan, miksi kirkas vesi ei silti ole juomakelpoista ja miten vesilaitos puhdistaa vettä.",
+  "open": [
+    "Likaisen veden resepti, joka on turvallinen ja toistettava (esimerkiksi multa ja vesi).",
+    "Tapa vertailla kirkkautta reilusti, esimerkiksi valkoisen paperin päälle piirretty viiva, joka pitää nähdä vesilasin läpi.",
+    "Taustatiedot vedenpuhdistuksen vaiheista luotettavasta lähteestä.",
+    "Siivous ja vesijätteen hävitys."
+  ],
+  "safety": [
+    "Suodatettua vettä ei koskaan juoda eikä maisteta.",
+    "Muovipullojen leikkaus tehdään valmiiksi, koska leikattu reuna voi olla terävä.",
+    "Märkä lattia kuivataan heti.",
+    "Kädet pestään likaisen veden ja mullan käsittelyn jälkeen."
+  ],
+  "lessons": []
+}

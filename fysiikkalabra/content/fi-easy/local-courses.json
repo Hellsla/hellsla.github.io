@@ -1,7 +1,6 @@
 {
   "_note": "Selkosuomen tekstit local-courses.json-tiedostoon (scripts/local_courses.py).",
   "_planned": [
-    {"icon": "LUMATUTOR", "title": "LUMA-tutor", "text": "Olet tiedetutori. Suunnittelet tiedetapahtumia ja olet mukana niissä."},
     {"icon": "AHJO1", "title": "Ahjo 1", "text": "Opit 3D-mallintamaan ja tulostamaan sekä elektroniikan ja robotiikan perusteita."},
     {"icon": "AHJO2", "title": "Ahjo 2", "text": "Suunnittelet, teet ja testaat oman prototyypin."},
     {"icon": "MYYTIT", "title": "Myytinmurtajat", "text": "Kokeilet, pitävätkö tutut väitteet paikkansa."}
@@ -190,5 +189,12 @@
         "wide": true
       }
     ]
+  },
+  "LUMATUTOR": {
+    "title": "LUMA-tutor",
+    "subtitle": "Tiede kuuluu kaikille.",
+    "front_line": "Olet tiedetutori. Suunnittelet tiedetapahtumia ja olet mukana niissä.",
+    "school": "Kiviruukin lukio",
+    "description": "Innosta muita tieteen pariin! LUMA-tutorina käyt tiedetapahtumissa, suunnittelet omia tiedetyöpajoja ja ohjaat muita tutkimaan luonnontieteiden, matematiikan ja teknologian ilmiöitä."
   }
 }

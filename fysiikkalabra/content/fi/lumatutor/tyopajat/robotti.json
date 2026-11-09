@@ -1,0 +1,29 @@
+{
+  "id": "robotti",
+  "order": 9,
+  "status": "idea",
+  "title": "Ohjelmoi ensimmäinen robottisi",
+  "audience": "ylakoulu",
+  "topic": "ohjelmointi",
+  "minutes": 45,
+  "equipment": [
+    "tietokone",
+    "robotti"
+  ],
+  "short": "Osallistujat ohjelmoivat pienen robotin tai mikro-ohjaimen tekemään ensimmäisen liikkeen tai valon.",
+  "idea": "Osallistujat saavat valmiin, yksinkertaisen ohjelman, jota he muokkaavat: ensin valo vilkkuu nopeammin, sitten robotti liikkuu eteen ja kääntyy. Tavoite on ensimmäinen onnistuminen muutamassa minuutissa ja sen jälkeen oma muutos. Ahjo Makerspacen Arduino-ohjeet ja robotin testiohjelma sopivat pohjaksi.",
+  "open": [
+    "Mitä laitteita on käytettävissä. Ahjon laitteisto on vasta tulossa, joten laitteet sovitaan opettajan kanssa.",
+    "Valmis aloitusohjelma ja ohje, jonka yläkoululainen pystyy seuraamaan.",
+    "Varasuunnitelma, jos tietokone tai yhteys laitteeseen ei toimi."
+  ],
+  "safety": [
+    "Vain pienjännite ja paristot tai USB-virta.",
+    "Liikkuvalle robotille rajattu alue lattialla, jotta kukaan ei kompastu."
+  ],
+  "link": {
+    "title": "Ahjo: Arduino-ohje",
+    "href": "ahjo-arduino.html"
+  },
+  "lessons": []
+}

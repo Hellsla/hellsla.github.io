@@ -1,0 +1,156 @@
+{
+  "id": "valo-ja-varit",
+  "order": 4,
+  "status": "ready",
+  "title": "Explore light and colours",
+  "short": "Participants reveal a secret message with a red film, mix coloured lights and find a rainbow in a CD.",
+  "audience": "alakoulu",
+  "topic": "valo",
+  "minutes": 20,
+  "group": "2–3 participants per group",
+  "equipment": [
+    "valaisimet",
+    "arki"
+  ],
+  "goals": [
+    "The participant notices that white light contains many colours.",
+    "The participant explores how a colour film changes what we see.",
+    "The participant notices that mixing coloured lights makes new colours."
+  ],
+  "materials": [
+    "For each group a red transparent colour film, for example craft film or a sweet wrapper, about the size of a postcard.",
+    "For each group a secret message: white paper with a message written in light blue marker and a scribble in red and orange marker on top of it.",
+    "For mixing colours, three LED torches and a red, a green and a blue film, fixed with a rubber band in front of the torches. Only one set is needed for the whole group.",
+    "A white wall or a large sheet of white paper and a room that can be partly darkened.",
+    "For each group an old CD or DVD.",
+    "A printed light researcher card for each group, and pens."
+  ],
+  "prep": [
+    "Make the secret messages and check each one through the film. Not every marker works: the red scribble must disappear and the blue message must show up dark.",
+    "Fix the films in front of the torches and try mixing the colours in dim light. If one colour is dimmer than the others, use a brighter torch or a thinner film.",
+    "Choose a place that can be darkened so that there is still light on the floor and the walkways.",
+    "Print the cards."
+  ],
+  "safety": [
+    "Do not use laser pointers. Laser light can damage the eye permanently.",
+    "Do not look at the sun. A colour film or a CD does not protect the eyes, even though they dim the light.",
+    "No one points a torch into anyone's eyes.",
+    "In a dim room the walkways are kept clear and enough light is left for everyone to see to move around.",
+    "A broken CD can be sharp. Take cracked discs out of use."
+  ],
+  "steps": [
+    {
+      "time": "0–3",
+      "title": "Hook",
+      "do": "First ask what colours the participants guess they will see when light falls on a CD. Then show a CD in the light so that the colours of the rainbow appear on its surface. Give each group a disc to try.",
+      "say": "Where do these colours come from? The disc is silver, and the light is white. Let's find out what white light really is."
+    },
+    {
+      "time": "3–9",
+      "title": "Challenge 1: the secret message",
+      "do": "Give the groups the secret messages and the red films. Before looking, the groups guess what they will see through the film. Then they look and read the message.",
+      "say": "The paper has a hidden message, but the scribble covers it. What do you think you will see through the red film?"
+    },
+    {
+      "time": "9–16",
+      "title": "Challenge 2: mix the lights",
+      "do": "Partly darken the room. Point the red and the green torch at the same spot on the wall. Let the participants predict first. Then try red and blue, green and blue, and all three.",
+      "say": "What colour do you get when red and green light overlap? Write your guess on the card before I switch on the torches."
+    },
+    {
+      "time": "16–20",
+      "title": "Closing",
+      "do": "Sum up the observations with the help of the picture. Ask where in everyday life colours are mixed with light.",
+      "say": "A phone screen has tiny red, green and blue lights. How do you think the screen makes yellow?"
+    }
+  ],
+  "background": [
+    "White light is a mixture of all the colours of visible light. The wavelengths of visible light range from about $400\\,\\text{nm}$ (violet) to about $700\\,\\text{nm}$ (red). The surface of a CD has closely spaced grooves side by side that bend different wavelengths in different directions. That is why white light splits into colours on the disc. In Ruukkilabra the phenomenon is studied in the chapter Interference and diffraction of light.",
+    "An object looks red because it reflects red light and absorbs the other colours. A red film lets mainly red light through and absorbs the rest. When the secret message is seen through the red film, the white paper and the red scribble both reflect red light, so they look the same and the scribble disappears. The blue marker absorbs red light, so the message shows up dark.",
+    "The eye has three kinds of cone cells, most sensitive to long, medium and short wavelengths. The brain forms a colour from how strongly each type of cone responds. When red and green light fall on the same spot, the eye sees yellow, even though no yellow wavelength is present. Red and blue give magenta, green and blue give cyan, and all three together give nearly white. This is additive colour mixing of light, which screens use.",
+    "A common misconception is that a colour film dyes the light. The film does not add colour but removes the other colours from the light. Another confusion comes from paints: blue and yellow paint mix to green because paints absorb light. Mixing paints is subtractive, and it follows different rules from mixing lights. If a participant asks about this, it is an excellent question.",
+    "Colour films and torches are not perfect, so the mixed colours are not always pure. Yellow may look orange if the red torch is brighter than the green one. Tell the participants this: an observation depends on the equipment, and researchers too report what equipment they measured with."
+  ],
+  "figures": [
+    "varit"
+  ],
+  "questions": [
+    "Why do you think the red scribble disappears when you look through the red film?",
+    "What colour do you expect to see when red and green light overlap, and why?",
+    "Where do the colours of the CD come from when the light is white?"
+  ],
+  "problems": [
+    {
+      "p": "The secret message does not appear through the film.",
+      "f": "The blue of the marker is not dark enough through the film, or the scribble is not red enough. Test the markers in advance and keep ready-made messages in reserve."
+    },
+    {
+      "p": "The mix of red and green looks orange or brown.",
+      "f": "The torches are not equally bright. Move the brighter torch further from the wall. Tell the participants why the result differs."
+    },
+    {
+      "p": "The room cannot be made dark enough.",
+      "f": "Try mixing the colours inside a large cardboard box or in the shade under a table. Do challenge 2 as a demonstration for the whole group."
+    },
+    {
+      "p": "Participants play with the torches and point them at each other.",
+      "f": "Keep the torches yourself and hand them to the participants one at a time. Repeat the rule: light is not pointed into eyes."
+    }
+  ],
+  "variations": [
+    {
+      "title": "Easier",
+      "text": "Do only the secret message and the CD. Mixing colours can be shown as a demonstration."
+    },
+    {
+      "title": "Harder",
+      "text": "Let the participants make their own secret message and try which markers disappear through a red and which through a green film. Why is the result different?"
+    },
+    {
+      "title": "Coloured shadows",
+      "text": "When red, green and blue light fall on a wall from different directions and a hand is held in front of them, the hand's shadows are coloured. Ask why one shadow is yellow."
+    },
+    {
+      "title": "For lower secondary students",
+      "text": "Examine a phone screen with a magnifying glass: can you see red, green and blue dots? Use them to explain how the screen makes white."
+    }
+  ],
+  "closing": [
+    "Ask each group for one thing that surprised them.",
+    "Sum up with the help of the picture: white light contains many colours, a film lets only some of them through, and combining coloured lights makes new colours.",
+    "Ask where at home there is a device that makes all the colours from three lights."
+  ],
+  "self": [
+    "Did the participants predict before they looked, or did I tell the result first?",
+    "Did the darkening work, and was the room safe?",
+    "How did I explain why the scribble disappears? Did the participants understand?",
+    "What would I do differently with the equipment?"
+  ],
+  "participant": {
+    "title": "Light researcher card",
+    "blocks": [
+      "# Light researcher card",
+      "## Start: the rainbow",
+      "? I guess that on the CD I will see",
+      "? What colours did you see on the CD?",
+      "## Challenge 1: the secret message",
+      "? I guess that through the film I will see",
+      "? The message says",
+      "? Where did the scribble go?",
+      "## Challenge 2: mix the lights",
+      ". First write your guess. Then write what you saw.",
+      "= Lights | I guess | I saw",
+      "- red and green",
+      "- red and blue",
+      "- green and blue",
+      "- all three",
+      "## Safety",
+      ". Do not look at the sun, and do not point a torch into anyone's eyes."
+    ]
+  },
+  "sources": [],
+  "lessons": [
+    "fy7-11",
+    "fy7-13"
+  ]
+}

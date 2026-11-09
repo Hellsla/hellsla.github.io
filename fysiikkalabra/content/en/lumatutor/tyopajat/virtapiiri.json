@@ -1,0 +1,169 @@
+{
+  "id": "virtapiiri",
+  "order": 1,
+  "status": "ready",
+  "title": "Electric wonder – build a circuit",
+  "short": "Participants make a bulb light up, find out which materials conduct electricity and build their own switch.",
+  "audience": "alakoulu",
+  "topic": "sahko",
+  "minutes": 20,
+  "group": "2–3 participants per group, at most about 16 participants for two tutors",
+  "equipment": [
+    "paristot",
+    "arki"
+  ],
+  "goals": [
+    "The participant notices that the bulb lights only when the circuit is closed.",
+    "The participant can test whether an object conducts electricity.",
+    "The participant understands that a switch opens and closes the circuit."
+  ],
+  "materials": [
+    "For each group a battery holder with two AA batteries ($3\\,\\text{V}$ in total).",
+    "For each group a small bulb in a bulb holder. The bulb's rated voltage must be at least the battery voltage, for example $3.5\\,\\text{V}$.",
+    "For each group three crocodile clip leads.",
+    "Objects to test: a coin, a key, a paper clip, aluminium foil, an eraser, a wooden stick, a plastic spoon, paper and a pencil sharpened at both ends.",
+    "For the switch: a piece of cardboard, two drawing pins and a paper clip.",
+    "For the extra challenge, a second identical bulb in a holder for each group.",
+    "Spares: extra batteries and one spare bulb for every three groups.",
+    "A printed researcher card for each group, and pens."
+  ],
+  "prep": [
+    "Test every battery, bulb and lead in advance. A broken bulb is the most common problem in this workshop.",
+    "Sort the equipment into a box for each group so that handing out is quick.",
+    "Build one ready, working circuit to show at the start and cover it with a cloth.",
+    "Print the researcher cards."
+  ],
+  "safety": [
+    "Use only AA batteries in a holder. Never use mains electricity, rechargeable lithium batteries or button cells. A button cell is life-threatening if a child swallows it.",
+    "Tell the participants: the battery's terminals must not be joined directly with a wire without a bulb. That is a short circuit, and the wire and the battery can get hot.",
+    "If a battery gets hot, leaks or is damaged, take it out of use at once.",
+    "Say that the same experiment is not safe with a wall socket: the voltage of the mains at home is so high that it can kill.",
+    "Drawing pins and the sharp ends of the pencil: the tutor hands them out and collects them."
+  ],
+  "steps": [
+    {
+      "time": "0–3",
+      "title": "Hook",
+      "do": "Uncover the ready circuit and light the bulb. Then disconnect one lead, and the bulb goes out. Ask what happened.",
+      "say": "Here is a battery, a bulb and some wires. When I disconnect this one, the bulb goes out. Why? Your task is to find out what the bulb needs to light up."
+    },
+    {
+      "time": "3–8",
+      "title": "Challenge 1: light the bulb",
+      "do": "Give the groups a battery holder, a bulb and two leads. Let the groups try for themselves. When the bulb lights, ask them to draw their connection on the researcher card.",
+      "say": "Can you make the bulb light? When it lights, show with your finger: which way does the electricity go?"
+    },
+    {
+      "time": "8–14",
+      "title": "Challenge 2: what conducts electricity?",
+      "do": "Add a third lead to the circuit so that there is a gap in it. The participants first predict for each object whether the bulb will light, and then test it by placing the object in the gap.",
+      "say": "Before you try: mark on the card whether the bulb will light when the object is in the gap. Then test it."
+    },
+    {
+      "time": "14–18",
+      "title": "Challenge 3: build a switch",
+      "do": "The groups build a switch from cardboard, two drawing pins and a paper clip, so that they can turn the bulb on and off. If time runs short, leave the switch as an extra challenge and go on to the closing.",
+      "say": "Now you know what conducts electricity. How could you make the bulb go on and off without disconnecting the leads?"
+    },
+    {
+      "time": "18–20",
+      "title": "Closing",
+      "do": "Bring the groups together. Ask each group to say one thing they noticed. Collect the equipment into the boxes.",
+      "say": "What did the objects that made the bulb light have in common? Where at home is there a switch that works the same way?"
+    }
+  ],
+  "background": [
+    "A circuit is a closed path along which an electric current flows from one terminal of the battery to the other. The battery gives energy to the electric charge, and in the bulb this energy turns into light and heat. If the path is broken at any point, the current stops in the whole circuit and the bulb goes out.",
+    "An electric current is moving electric charge. In metals the moving charges are electrons that are free to move. That is why metals conduct electricity well. Plastic, rubber, wood and paper have no freely moving charges, so they are insulators. The graphite in a pencil conducts electricity, but so poorly that the bulb may not light. That is a good topic for discussion: materials are not split sharply into two groups.",
+    "A common misconception is that the bulb uses up current, so that there would be less current after the bulb. That is not so: in a simple circuit the same current flows through every point of the circuit. The bulb uses energy, not current. Another common idea is that one wire is enough. Challenge 1 shows that a path to both terminals is needed.",
+    "If you add a second identical bulb in series, both glow more dimly than one bulb on its own, because the total resistance of the circuit grows and the current gets smaller. In Ruukkilabra this is studied in the chapter Resistors in series and in parallel.",
+    "The figure shows a circuit with circuit symbols. By convention the direction of the current is marked from the battery's positive terminal to its negative terminal. The electrons in the wires move in the opposite direction."
+  ],
+  "figures": [
+    "virtapiiri"
+  ],
+  "questions": [
+    "What do you think the bulb needs in order to light up?",
+    "What did the objects that made the bulb light have in common?",
+    "What do you think will happen if a second bulb is added to the circuit?"
+  ],
+  "problems": [
+    {
+      "p": "The bulb does not light even though the connection looks right.",
+      "f": "Check the bulb in a spare circuit and screw it tight in its holder. Check that the batteries are the right way round in the holder and that the crocodile clips touch metal."
+    },
+    {
+      "p": "A group joins the battery's terminals directly with a wire.",
+      "f": "Stop the experiment calmly and disconnect the wire. Explain why a short circuit heats the wire, and ask the group to find a place for the bulb in the circuit."
+    },
+    {
+      "p": "The pencil does not light the bulb, although someone says it conducts.",
+      "f": "Both are right: graphite conducts poorly, and the bulb may glow dimly. Ask how we could find out whether it conducts a little. You can show the experiment with an LED if you have an LED module with its own series resistor."
+    },
+    {
+      "p": "A group has finished all the challenges in a few minutes.",
+      "f": "Give an extra challenge: add a second bulb so that both glow almost as brightly as one bulb on its own. The solution is a parallel connection."
+    }
+  ],
+  "variations": [
+    {
+      "title": "Easier",
+      "text": "Leave out challenge 3 and use the time for challenge 2. Give a picture of the connection if a group cannot get started."
+    },
+    {
+      "title": "Harder",
+      "text": "Two bulbs in series and in parallel: which connection makes the bulbs glow more brightly? The group draws both connections with circuit symbols."
+    },
+    {
+      "title": "Without writing",
+      "text": "The youngest participants, or those just learning the language, sort the objects into two boxes, conducts and does not conduct, instead of writing."
+    },
+    {
+      "title": "Link to Ahjo",
+      "text": "With lower secondary students you can go on to the LED circuit in Ahjo's Arduino guide, where the same closed circuit is controlled by a program."
+    }
+  ],
+  "closing": [
+    "Ask each group for one observation. Write the answers on the board in two columns: conducts and does not conduct.",
+    "Sum up in one sentence: the bulb lights only when the electricity has a closed path from the battery through the bulb and back to the battery.",
+    "Ask where at home there is a switch. Remind them that the mains at home is dangerous and must not be explored on their own."
+  ],
+  "self": [
+    "Did every group get the bulb to light with their own hands, or did I do it for someone?",
+    "Did the participants predict before testing?",
+    "At which step did the timetable stretch, and why?",
+    "What did I answer to a question I did not know the answer to?"
+  ],
+  "participant": {
+    "title": "Researcher card: electric wonder",
+    "blocks": [
+      "# Researcher card: electric wonder",
+      "## Challenge 1: light the bulb",
+      ". You have a battery, a bulb and two wires. Can you make the bulb light?",
+      "?? Draw here how you connected the wires.",
+      "## Challenge 2: what conducts electricity?",
+      ". First mark your prediction. Then test by putting the object in the gap in the circuit.",
+      "= Object | I predict: will it light? | I tested: did it light?",
+      "- coin",
+      "- key",
+      "- paper clip",
+      "- aluminium foil",
+      "- eraser",
+      "- wooden stick",
+      "- plastic spoon",
+      "- paper",
+      "- pencil tip",
+      "## Challenge 3: build a switch",
+      ". Build a switch from cardboard, pins and a paper clip. Can you make the bulb go on and off without disconnecting the wires?",
+      "? Why does the switch work?",
+      "## Safety",
+      ". Do not join the battery's terminals directly to each other. Never experiment with a wall socket."
+    ]
+  },
+  "sources": [],
+  "lessons": [
+    "fy6-1",
+    "fy6-4",
+    "fy6-15"
+  ]
+}

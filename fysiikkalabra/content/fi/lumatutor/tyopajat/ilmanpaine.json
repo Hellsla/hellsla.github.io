@@ -1,0 +1,28 @@
+{
+  "id": "ilmanpaine",
+  "order": 8,
+  "status": "idea",
+  "title": "Ilmanpaineen kummallisuudet",
+  "audience": "ylakoulu",
+  "topic": "paine",
+  "minutes": 30,
+  "equipment": [
+    "vesi",
+    "arki"
+  ],
+  "short": "Vesilasi, jonka pahvi pitää ylösalaisin, imukupit, joita ei saa irti, ja muita kokeita, joissa ilma painaa.",
+  "idea": "Ryhmät kiertävät pisteitä, joissa ilmanpaine tekee jotain yllättävää: vesilasi käännetään ylösalaisin pahvin varassa, imukupit painetaan yhteen ja vedetään irti, ja pilli pidetään sormella tukittuna vesilasissa. Jokaisessa pisteessä ennustetaan ensin. Lopuksi selitetään, että ilma painaa kaikkiin suuntiin ja paine on voima pinta-alaa kohden.",
+  "open": [
+    "Pisteiden ohjeet ja välineet, jotka toimivat varmasti.",
+    "Yläkoululaisille sopiva kuva paineesta ja sen yhteys Ruukkilabran lukuun Paine ja hydrostaattinen paine.",
+    "Siivous: pisteillä käytetään vettä."
+  ],
+  "safety": [
+    "Ei kuumennettavia kokeita (esimerkiksi tölkin murskaaminen kuumentamalla), koska ne aiheuttavat palovammavaaran.",
+    "Lasit muovisia.",
+    "Märkä lattia kuivataan heti."
+  ],
+  "lessons": [
+    "fy3-4"
+  ]
+}
