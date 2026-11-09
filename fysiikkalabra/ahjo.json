@@ -142,6 +142,34 @@
     "challenge_induction": "Vaatii laiteperehdytyksen",
     "lesson_challenge": "Valinnainen lisähaaste",
     "lesson_final": "Miniprojektin vaihtoehdot",
+    "course_begin": "Aloita ensimmäinen tehtävä",
+    "course_begin2": "Aloita: {t}",
+    "lesson_n": "Tunti {n}",
+    "lesson_of": "Tunti {n}/{m}",
+    "lesson_open": "Avaa tunti {n}",
+    "lesson_back": "Takaisin: {t}",
+    "lesson_prev": "Edellinen tunti",
+    "lesson_next": "Seuraava tunti",
+    "lesson_needs": "Tarvitset",
+    "lesson_guide": "Työohje",
+    "lesson_safety": "Turvallisuus",
+    "lesson_safety_none": "Tällä tunnilla ei käytetä laitteita. Noudata Ahjon yleisiä sääntöjä.",
+    "lesson_safety_note": "Ahjon turvallisuusohjeet ovat vielä valmisteilla. Noudata opettajan perehdytystä.",
+    "lesson_today": "Tänään teet",
+    "lesson_now": "Projektissa nyt",
+    "lesson_task": "Seuraava tehtävä",
+    "lesson_save": "Tallenna projektipäiväkirjaan",
+    "lesson_diary": "Projektipäiväkirja",
+    "lesson_milestone": "Välipalautus",
+    "lesson_challenge_card": "Pieni lisähaaste",
+    "path_h": "Projektin polku",
+    "path_lead": "16 tuntia, seitsemän vaihetta ja viisi välipalautusta. Jokainen vaihe vie projektia eteenpäin.",
+    "units_h": "16 tuntia, viisi kokonaisuutta",
+    "unit_lessons": "Tunnit {a}–{b}",
+    "unit_lesson": "Tunti {a}",
+    "course_about": "Lisätietoa opintojaksosta",
+    "course_about_lead": "Tavoitteet, ajokortti ja jatkomahdollisuudet.",
+    "guide_back": "Takaisin oppituntiin",
     "deepening_h": "Syventävät osat",
     "deepening_lead": "Valinnaisia lisätöitä niille, jotka ehtivät pidemmälle tai haluavat syventyä. Ne eivät kuulu kaikille yhteiseen runkoon.",
     "course_page_open": "Avaa kurssisivu",
@@ -232,6 +260,50 @@
     {
       "code": "AHJO1",
       "subtitle": "Teknologian perusteet",
+      "pitch": "Kokeile, rakenna ja keksi jotain omaa. Opit käyttämään 3D-tulostusta, elektroniikkaa, ohjelmointia ja robotiikkaa tekemällä.",
+      "units": [
+        {
+          "title": "Tutustu ja kokeile",
+          "lessons": [
+            1,
+            2
+          ]
+        },
+        {
+          "title": "Suunnittele ja 3D-tulosta",
+          "lessons": [
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "title": "Elektroniikka ja Arduino",
+          "lessons": [
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "title": "Robotiikka",
+          "lessons": [
+            12,
+            13
+          ]
+        },
+        {
+          "title": "Oma projekti",
+          "lessons": [
+            14,
+            15,
+            16
+          ]
+        }
+      ],
       "topics": [
         "3D-mallinnus",
         "3D-tulostus",
@@ -262,6 +334,16 @@
           "output_plus": "Kirjattu oikea ongelma, jonka haluaisit ratkaista kurssin aikana.",
           "guides": [
             "ahjo-projektipaivakirja"
+          ],
+          "needs": [
+            "LED",
+            "nappiparisto CR2032",
+            "pingispallo, paperia, foliota tai muovipullo",
+            "projektipäiväkirja"
+          ],
+          "safety": [
+            "saannot",
+            "perehdytys"
           ]
         },
         {
@@ -276,7 +358,18 @@
           },
           "output": "Käyty laiteperehdytys ja kuvallinen ohjekortti yhdestä laitteesta.",
           "output_plus": "Laitteen riskinarviointi.",
-          "guides": []
+          "guides": [],
+          "needs": [
+            "puhelin tai kamera",
+            "Ahjon turvallisuusohjeet",
+            "suojalasit"
+          ],
+          "safety": [
+            "perehdytys",
+            "tyokalut",
+            "3d-tulostus",
+            "onnettomuus"
+          ]
         },
         {
           "title": "3D-mallinnuksen perusteet",
@@ -292,7 +385,13 @@
           "output_plus": "Malli esineestä, joka parantaa jotain arjessasi.",
           "guides": [
             "ahjo-3d-mallinnus"
-          ]
+          ],
+          "needs": [
+            "tietokone",
+            "Tinkercad-tunnus",
+            "opettajan valmis pohja"
+          ],
+          "safety": []
         },
         {
           "title": "Mittatarkka malli",
@@ -308,6 +407,14 @@
           "output_plus": "Taulukko siitä, miten välys riippuu tulostussuunnasta.",
           "guides": [
             "ahjo-3d-mallinnus"
+          ],
+          "needs": [
+            "tietokone ja Tinkercad",
+            "työntömitta",
+            "kolme mitattavaa esinettä"
+          ],
+          "safety": [
+            "tyokalut"
           ]
         },
         {
@@ -324,6 +431,14 @@
           "output_plus": "Lujuustestin tulokset ja kahden palkin vertailu taulukkona.",
           "guides": [
             "ahjo-3d-tulostus"
+          ],
+          "needs": [
+            "tietokone ja PrusaSlicer",
+            "3D-tulostin opettajan luvalla",
+            "valmis palkkimalli"
+          ],
+          "safety": [
+            "3d-tulostus"
           ]
         },
         {
@@ -340,6 +455,14 @@
           "output_plus": "Kuvallinen virheopas: virhe, syy ja korjaus.",
           "guides": [
             "ahjo-3d-tulostus"
+          ],
+          "needs": [
+            "virhelaatikon tulosteet",
+            "oma tuloste",
+            "työntömitta"
+          ],
+          "safety": [
+            "3d-tulostus"
           ]
         },
         {
@@ -357,6 +480,14 @@
           "guides": [
             "ahjo-arduino",
             "fy6-3"
+          ],
+          "needs": [
+            "Arduino Uno ja USB-kaapeli",
+            "koekytkentälevy ja johtimia",
+            "LED ja 330 Ω:n vastus"
+          ],
+          "safety": [
+            "elektroniikka"
           ]
         },
         {
@@ -373,6 +504,14 @@
           "output_plus": "Mittauksiin perustuva arvio pariston kestosta.",
           "guides": [
             "fy6-2"
+          ],
+          "needs": [
+            "yleismittari",
+            "uusi ja käytetty paristo",
+            "edellisen tunnin LED-piiri"
+          ],
+          "safety": [
+            "elektroniikka"
           ]
         },
         {
@@ -389,6 +528,14 @@
           "output_plus": "Reaktioaikapeli sekä luokan tulosten keskiarvo ja hajonta.",
           "guides": [
             "ahjo-arduino"
+          ],
+          "needs": [
+            "Arduino Uno ja USB-kaapeli",
+            "tietokone ja Arduino IDE",
+            "LED-piiri koekytkentälevyllä"
+          ],
+          "safety": [
+            "elektroniikka"
           ]
         },
         {
@@ -405,6 +552,14 @@
           "output_plus": "Kalibroitu mittaussarja ja kuvaaja yksiköineen.",
           "guides": [
             "tvt-mittausohjelma"
+          ],
+          "needs": [
+            "Arduino Uno ja USB-kaapeli",
+            "valoanturi, painike tai etäisyysanturi",
+            "koekytkentälevy ja johtimia"
+          ],
+          "safety": [
+            "elektroniikka"
           ]
         },
         {
@@ -421,6 +576,14 @@
           "output_plus": "Valoa seuraava servo.",
           "guides": [
             "fy7-4"
+          ],
+          "needs": [
+            "Arduino Uno ja USB-kaapeli",
+            "servo ja potentiometri",
+            "pahvia ja teippiä hahmoon"
+          ],
+          "safety": [
+            "elektroniikka"
           ]
         },
         {
@@ -435,7 +598,16 @@
           },
           "output": "Toimiva robottialusta, jolla on oma kuori tai kuormatila.",
           "output_plus": "Kahden välityssuhteen kokeellinen vertailu.",
-          "guides": []
+          "guides": [],
+          "needs": [
+            "robotiikkasarja",
+            "testiohjelma",
+            "kuorma, esimerkiksi kolikoita"
+          ],
+          "safety": [
+            "tyokalut",
+            "mekaaninen"
+          ]
         },
         {
           "title": "Robotin ohjelmointi",
@@ -449,7 +621,15 @@
           },
           "output": "Robotti, joka ajaa radan ennalta ohjelmoiduilla liikkeillä, ja ensimmäinen kokeilu anturilla.",
           "output_plus": "Kierrosten vertailu: aika ja tarkkuus kolmella toistolla.",
-          "guides": []
+          "guides": [],
+          "needs": [
+            "koottu robotti",
+            "tietokone",
+            "maalarinteippiä radan merkitsemiseen"
+          ],
+          "safety": [
+            "tyokalut"
+          ]
         },
         {
           "title": "Miniprojektin suunnittelu",
@@ -466,7 +646,13 @@
           "guides": [
             "ahjo-projektipaivakirja"
           ],
-          "final": true
+          "final": true,
+          "needs": [
+            "projektipäiväkirja",
+            "kynä ja paperia luonnokseen",
+            "omat aiemmat kurssityöt"
+          ],
+          "safety": []
         },
         {
           "title": "Miniprojekti",
@@ -482,6 +668,15 @@
           "output_plus": "Kolme testiä ja parannettu heikoin kohta.",
           "guides": [
             "ahjo-projektipaivakirja"
+          ],
+          "needs": [
+            "oma suunnitelma",
+            "tarvikeluettelon osat",
+            "projektipäiväkirja"
+          ],
+          "safety": [
+            "valvonta",
+            "tyokalut"
           ]
         },
         {
@@ -498,6 +693,14 @@
           "output_plus": "Seuraavan version suunnitelma ja itsearviointi projektipäiväkirjan kriteereillä.",
           "guides": [
             "ahjo-projektipaivakirja"
+          ],
+          "needs": [
+            "valmis laite",
+            "puhelin videon kuvaamiseen",
+            "projektipäiväkirja"
+          ],
+          "safety": [
+            "sailytys"
           ]
         }
       ],
@@ -552,6 +755,60 @@
     {
       "code": "AHJO2",
       "subtitle": "Suunnittele ja toteuta",
+      "pitch": "Innostu ongelmasta, keksi ratkaisu ja rakenna oma prototyyppi.",
+      "units": [
+        {
+          "title": "Keksi",
+          "lessons": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "title": "Kokeile",
+          "lessons": [
+            4,
+            5
+          ]
+        },
+        {
+          "title": "Suunnittele",
+          "lessons": [
+            6,
+            7
+          ]
+        },
+        {
+          "title": "Rakenna",
+          "lessons": [
+            8
+          ]
+        },
+        {
+          "title": "Testaa",
+          "lessons": [
+            9,
+            10
+          ]
+        },
+        {
+          "title": "Paranna",
+          "lessons": [
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "title": "Esittele",
+          "lessons": [
+            14,
+            15,
+            16
+          ]
+        }
+      ],
       "topics": [
         "Ideointi ja ongelman määrittely",
         "Suunnittelu ja prototypointi",
@@ -597,6 +854,13 @@
           "output": "Pallorata, yksi kirjattu epäonnistuminen ja vähintään viisi kirjattua ongelmaa.",
           "guides": [
             "ahjo-projektipaivakirja"
+          ],
+          "needs": [
+            "pallorata-aloituksen tarvikkeet",
+            "projektipäiväkirja"
+          ],
+          "safety": [
+            "tyokalut"
           ]
         },
         {
@@ -607,21 +871,39 @@
           "guides": [
             "ahjo-projektipaivakirja"
           ],
-          "milestone": "Palautus 1: ongelma ja käyttäjä"
+          "milestone": "Palautus 1: ongelma ja käyttäjä",
+          "needs": [
+            "projektipäiväkirja",
+            "haastattelukysymykset",
+            "vähintään kolme käyttäjää"
+          ],
+          "safety": []
         },
         {
           "title": "Ideointi ja valinta",
           "text": "Vähintään kymmenen ideaa ja perusteltu valinta. Vaihe 3: ratkaisut.",
           "example": "Ideoi rajoitteiden kautta: entä jos ratkaisu saisi maksaa enintään 20 €, sen pitäisi toimia ilman sähköä tai käyttäjän pitäisi pystyä korjaamaan se itse? Valitse kevyellä päätösmatriisilla, jossa ovat mukana kestävyys, saavutettavuus, muotoilu ja kustannukset.",
           "output": "Ideat ja päätösmatriisi.",
-          "guides": []
+          "guides": [],
+          "needs": [
+            "paperia ja tusseja",
+            "päätösmatriisi projektipäiväkirjassa"
+          ],
+          "safety": []
         },
         {
           "title": "Karkea prototyyppi",
           "text": "Prototyyppi pahvista, teipistä ja valmiista kytkennästä yhdessä tunnissa. Vaihe 4: prototyyppi.",
           "example": "Rakenna nopein mahdollinen malli, jolla testaat riskialtteimman oletuksen: haluaako käyttäjä tämän, ja ymmärtääkö hän, miten sitä käytetään?",
           "output": "Karkea prototyyppi ja testattava oletus.",
-          "guides": []
+          "guides": [],
+          "needs": [
+            "pahvia, teippiä ja lankaa",
+            "valmis kytkentä tarvittaessa"
+          ],
+          "safety": [
+            "tyokalut"
+          ]
         },
         {
           "title": "Käyttäjätesti 1",
@@ -631,14 +913,25 @@
           "guides": [
             "ahjo-projektipaivakirja"
           ],
-          "milestone": "Palautus 2: ensimmäisen käyttäjätestin havainnot"
+          "milestone": "Palautus 2: ensimmäisen käyttäjätestin havainnot",
+          "needs": [
+            "oma prototyyppi",
+            "testaaja ryhmän ulkopuolelta",
+            "projektipäiväkirja"
+          ],
+          "safety": []
         },
         {
           "title": "Projektisuunnitelma",
           "text": "Välitavoitteet, roolit, tarvikeluettelo hintoineen ja riskit.",
           "example": "Laadi suunnitelma kuten oikeassa tuotekehitysprojektissa: kuka tekee mitä ja milloin, mitä tarvikkeet maksavat ja mikä voi mennä pieleen.",
           "output": "Projektisuunnitelma ja budjetti.",
-          "guides": []
+          "guides": [],
+          "needs": [
+            "projektipäiväkirja",
+            "tarvikkeiden hinnat"
+          ],
+          "safety": []
         },
         {
           "title": "Suunnittelu, materiaalit ja menetelmät",
@@ -648,7 +941,13 @@
           "guides": [
             "ahjo-3d-mallinnus"
           ],
-          "milestone": "Palautus 3: suunnitelma ja materiaalit"
+          "milestone": "Palautus 3: suunnitelma ja materiaalit",
+          "needs": [
+            "tietokone ja sopiva suunnitteluohjelma",
+            "kaksi vertailtavaa materiaalia",
+            "työntömitta"
+          ],
+          "safety": []
         },
         {
           "title": "Toimiva prototyyppi",
@@ -658,6 +957,17 @@
           "guides": [
             "ahjo-arduino",
             "ahjo-3d-tulostus"
+          ],
+          "needs": [
+            "oma suunnitelma",
+            "Ahjon laitteet opettajan luvalla",
+            "tarvikkeet"
+          ],
+          "safety": [
+            "valvonta",
+            "tyokalut",
+            "3d-tulostus",
+            "elektroniikka"
           ]
         },
         {
@@ -667,7 +977,13 @@
           "output": "Testisuunnitelma ja ensimmäiset mittaustulokset.",
           "guides": [
             "tvt-mittausohjelma"
-          ]
+          ],
+          "needs": [
+            "prototyyppi",
+            "mittavälineet",
+            "taulukkolaskenta tai mittausohjelma"
+          ],
+          "safety": []
         },
         {
           "title": "Käyttäjätesti 2",
@@ -676,21 +992,43 @@
           "output": "Toisen käyttäjätestin havainnot.",
           "guides": [
             "ahjo-projektipaivakirja"
-          ]
+          ],
+          "needs": [
+            "toimiva prototyyppi",
+            "testaaja",
+            "projektipäiväkirja"
+          ],
+          "safety": []
         },
         {
           "title": "Parantaminen 1",
           "text": "Muutokset testien ja palautteen perusteella. Vaihe 7: parantaminen.",
           "example": "Valitse testien perusteella kaksi tärkeintä muutosta, perustele ne ja toteuta ne.",
           "output": "Kaksi perusteltua muutosta.",
-          "guides": []
+          "guides": [],
+          "needs": [
+            "prototyyppi",
+            "testien havainnot",
+            "tarvikkeet muutoksiin"
+          ],
+          "safety": [
+            "tyokalut"
+          ]
         },
         {
           "title": "Parantaminen 2",
           "text": "Parannus, jonka vaikutus näkyy mittauksissa.",
           "example": "Valitse testitulosten perusteella yksi parannus ja mittaa sen vaikutus. Parannus voi olla uusi osa tai anturi, mutta yhtä hyvin rakenteen yksinkertaistaminen, materiaalin vaihtaminen tai ohjelman parantaminen.",
           "output": "Mitattu parannus ja sen perustelu.",
-          "guides": []
+          "guides": [],
+          "needs": [
+            "prototyyppi",
+            "mittavälineet",
+            "tarvikkeet parannukseen"
+          ],
+          "safety": [
+            "tyokalut"
+          ]
         },
         {
           "title": "Lopullinen testaus",
@@ -700,14 +1038,27 @@
           "guides": [
             "tvt-tyoselostus"
           ],
-          "milestone": "Palautus 4: testiraportti"
+          "milestone": "Palautus 4: testiraportti",
+          "needs": [
+            "valmis ratkaisu",
+            "testisuunnitelma",
+            "mittavälineet"
+          ],
+          "safety": []
         },
         {
           "title": "Viimeistely ja käyttöohje",
           "text": "Viimeiset korjaukset, ulkoasu ja käytettävyys.",
           "example": "Viimeistele ratkaisu esittelykuntoon: kotelo, merkinnät ja käyttöohje, joiden avulla käyttäjä pärjää ilman tekijää.",
           "output": "Viimeistelty ratkaisu ja käyttöohje.",
-          "guides": []
+          "guides": [],
+          "needs": [
+            "valmis ratkaisu",
+            "tarvikkeet koteloon ja merkintöihin"
+          ],
+          "safety": [
+            "tyokalut"
+          ]
         },
         {
           "title": "Dokumentointi",
@@ -716,6 +1067,13 @@
           "output": "Kooste ja tiedostot.",
           "guides": [
             "ahjo-projektipaivakirja"
+          ],
+          "needs": [
+            "projektipäiväkirja",
+            "valokuvat ja tiedostot"
+          ],
+          "safety": [
+            "sailytys"
           ]
         },
         {
@@ -726,7 +1084,13 @@
           "guides": [
             "ahjo-projektipaivakirja"
           ],
-          "milestone": "Palautus 5: kooste ja video"
+          "milestone": "Palautus 5: kooste ja video",
+          "needs": [
+            "valmis ratkaisu",
+            "puhelin videon kuvaamiseen",
+            "projektipäiväkirja"
+          ],
+          "safety": []
         }
       ],
       "flex": "Projektit ovat erilaisia. Palautukset ja välitavoitteet ovat kaikille samat, mutta rakentamisen ja testauksen rytmin voi sopia opettajan kanssa. Esimerkiksi pitkä rakennusvaihe voi jatkua seuraavalle tunnille, kun testisuunnitelmaa tehdään sen rinnalla.",
