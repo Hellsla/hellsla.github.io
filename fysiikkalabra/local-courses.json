@@ -408,10 +408,10 @@
   },
   "KILPAROBO": {
     "title": "Kilparobotiikka",
-    "subtitle": "Suunnittele, rakenna ja ohjelmoi robotteja ja osallistu robotiikkakilpailuihin.",
+    "subtitle": "Suunnittele, rakenna ja ohjelmoi VEX V5 -kilparobotteja yhdessä joukkueen kanssa.",
     "school": "Kiviruukin lukio",
     "status": "building",
-    "description": "Opintojaksolla suunnitellaan, rakennetaan ja ohjelmoidaan robotteja ryhmissä ja osallistutaan robotiikkakilpailuihin. Opintojakson materiaalia julkaistaan tälle sivulle sitä mukaa kuin se valmistuu.",
+    "description": "Kiviruukin lukion robotiikkajoukkue rakentaa, ohjelmoi ja kehittää VEX V5 -kilparobotteja. Uudet opiskelijat pääsevät mukaan ilman aiempaa kokemusta, ja kokeneemmat opiskelijat ohjaavat heitä.",
     "theme": "kiviruukki",
     "kind_note": false,
     "photos_heading": "Kuvia Otarobo\u00a02026\u00a0-kilpailusta",

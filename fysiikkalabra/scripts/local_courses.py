@@ -141,29 +141,46 @@ def head_icon(code, c):
     return svg.replace("<svg ", '<svg class="mod-head-icon mod-head-plain" aria-hidden="true" focusable="false" ', 1)
 
 
-def page_body(code, c, T, chapters, published, investigations=(), guides_html="", course_units=()):
-    """The course landing page. chapters: lesson id -> (module code, title) in this language; published: the page
-    names this language built. Planned parts say so, and a chapter not published here is named without a link."""
+def head(code, c, T):
+    """The course page's title block: icon, name, line, notes and description (also Kilparobotiikka's start page)."""
     status = c["status"]
     import module_icons
-    out = (f'<div class="mod-head">{head_icon(code, c)}<div><span class="eyebrow">{label(code) + " · " if label(code) else ""}{T("site.local_course_kind")}</span><h1>{esc(c["title"])}</h1></div></div>'
+    return (f'<div class="mod-head">{head_icon(code, c)}<div><span class="eyebrow">{label(code) + " · " if label(code) else ""}{T("site.local_course_kind")}</span><h1>{esc(c["title"])}</h1></div></div>'
            f'<p class="lead">{esc(c["subtitle"])}</p>'
            + (f'<p class="notice local-kind" role="note">{T("site.local_distinct", school=esc(c["school"]))}</p>' if c.get("kind_note", True) else "")
            + (f'<p class="notice local-status" role="note"><strong>{T("site.local_status_" + status)}.</strong> {T("site.local_status_note_" + status)}</p>' if status != "ready" else "")
            + (f'<p class="local-authors">{T("units.authors")}: {esc(", ".join(c["authors"][:-1]) + " " + T("units.and") + " " + c["authors"][-1] if len(c["authors"]) > 1 else c["authors"][0])}</p>' if c.get("authors") else "")
            + (f'<p class="notice local-language" role="note">{T("units.language_note_" + c["language"])}</p>' if c.get("language") and c["language"] != T.lang and T.lang not in c.get("translations", []) else "")
            + f'<p class="local-desc">{esc(c["description"])}</p>')
+
+
+def photos_html(c, T, heading=True):
+    """The course's photo grid (heading=False: without its h2, under another section)."""
+    out = ""
     if c.get("photos"):                  # pictures of the course's events, cropped so that no face shows (teacher 2026-11-08)
-        out += (f'<h2 id="kuvia">{esc(c.get("photos_heading") or T("site.local_photos"))}</h2><div class="local-photos">'
+        out += ((f'<h2 id="kuvia">{esc(c.get("photos_heading") or T("site.local_photos"))}</h2>' if heading else '') + '<div class="local-photos">'
                 + "".join(f'<figure class="local-photo{" wide" if p.get("wide") else ""}"><img src="{esc(p["src"])}" alt="{esc(p["alt"])}" width="{p["width"]}" height="{p["height"]}" loading="lazy" decoding="async">'
                           + (f'<figcaption>{esc(p["caption"])}</figcaption>' if p.get("caption") else "") + '</figure>' for p in c["photos"])
                 + '</div>')
+    return out
+
+
+def quotes_html(c, T, heading=True):
+    """The students' quotes (heading=False: without their h2)."""
+    out = ""
     if c.get("quotes"):                  # students' own words (teacher 2026-11-08), a Finnish quote marked so on other pages
-        out += f'<h2 id="kokemuksia">{T("site.local_quotes")}</h2>'
+        out += f'<h2 id="kokemuksia">{T("site.local_quotes")}</h2>' if heading else ''
         for q in c["quotes"]:
             lang = f' lang="{q["lang"]}"' if q.get("lang") and q["lang"] != T.lang else ""
             out += (f'<figure class="local-quote"><blockquote{lang}>{"".join(f"<p>{esc(x)}</p>" for x in q["paragraphs"])}</blockquote>'
                     f'<figcaption>– {esc(q["author"])}</figcaption></figure>')
+    return out
+
+
+def page_body(code, c, T, chapters, published, investigations=(), guides_html="", course_units=()):
+    """The course landing page. chapters: lesson id -> (module code, title) in this language; published: the page
+    names this language built. Planned parts say so, and a chapter not published here is named without a link."""
+    out = head(code, c, T) + photos_html(c, T) + quotes_html(c, T)
     if c.get("chapters"):                # the course's chapters and their units (scripts/units.py) as cards (scripts/cardgrid.py,
         import cardgrid, units           # teacher 2026-11-04): a section per chapter with its question, a card per unit with
         hrefs = {u: (ul, href) for u, ul, href in course_units}   # its opening illustration and question; a unit still coming is dashed

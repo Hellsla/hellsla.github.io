@@ -1641,6 +1641,116 @@ main.kr-theme{font-family:"Work Sans",var(--sans)}
 .kr-theme .lead{font-family:"Work Sans",var(--sans)}
 @media (min-width:44rem){.local-photo:not(.wide) img{aspect-ratio:4/3;object-fit:cover}}
 .mod-head-plain{width:4rem;height:4rem}@media (max-width:30rem){.mod-head-plain{width:3.25rem;height:3.25rem}}
+/* Kilparobotiikka's team pages (teacher 2026-11-09, scripts/kilparobo.py): the course page's theme, Ahjo's pill navigation
+   and section headings, cards that wrap to one column on a phone; nothing scrolls sideways */
+:root:has(main.kr-team){--ahjo-head:"Lato",var(--sans);--ahjo-text:"Work Sans",var(--sans)}
+main.kr-team{max-width:68rem}
+.kr-team :is(p,ul,ol){max-width:46rem}
+.kr-team .kr-stage-index,.kr-team .kr-cards,.kr-team .kr-ahjo,.kr-team .kr-roles,.kr-team .kr-stage-grid,.kr-team .kr-two,.kr-team .kr-quick ol,.kr-team .kr-phases{max-width:none}
+.kr-nav{margin-top:1rem}
+.kr-head{padding-bottom:.75rem;border-bottom:4px solid var(--kr-pink)}
+.kr-head h1{margin:.1rem 0 .4rem;font-size:clamp(1.6rem,1.25rem + 1.4vw,2.35rem);line-height:1.15}
+.kr-head .lead{margin:0}
+.kr-team h3{font-size:1.125rem;margin:1.25rem 0 .4rem}
+.kr-team .ahjo-sec>h2{margin-top:0}
+.kr-quick ol{display:grid;grid-template-columns:repeat(auto-fit,minmax(11.5rem,1fr));gap:.6rem;margin:0 0 2.25rem;padding:0;list-style:none}
+.kr-quick a{display:flex;align-items:center;gap:.7rem;height:100%;min-height:3.5rem;padding:.65rem .9rem;border:1.5px solid var(--kr-navy);border-radius:14px;background:#fff;font:700 var(--fs-ui)/1.3 var(--ahjo-head);text-decoration:none;color:var(--kr-navy)}
+.kr-quick a:hover{background:var(--kr-pink-soft)}
+.kr-quick-n,.kr-stage-n,.kr-phase-n{flex:none;display:inline-grid;place-items:center;width:2rem;height:2rem;border-radius:50%;background:var(--kr-pink);color:var(--kr-navy);font:900 1rem/1 var(--ahjo-head)}
+.kr-join{margin:1.25rem 0 0;padding:1rem 1.25rem;border-radius:14px;background:var(--bg-tint)}
+.kr-join h3{margin-top:0}
+.kr-steps{margin:0 0 .5rem;padding-left:1.4rem}.kr-steps li+li{margin-top:.3rem}
+.kr-note{color:var(--ink-2);font-size:var(--fs-small)}
+.kr-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr));gap:.9rem;margin:0 0 1.25rem;padding:0;list-style:none}
+.kr-areas,.kr-skills{grid-template-columns:repeat(auto-fill,minmax(18rem,1fr))}
+.kr-card{padding:1rem 1.1rem;border:1px solid var(--line);border-radius:14px;background:#fff}
+.kr-card h3{margin:.4rem 0 .3rem;font-size:1.0625rem}
+.kr-card p{margin:0;font-size:var(--fs-small);color:var(--ink-2)}
+.kr-card-icon{width:28px;height:28px;color:var(--kr-navy)}
+.kr-link-card{padding:0}
+.kr-link-card a{display:flex;flex-direction:column;gap:.3rem;height:100%;padding:1rem 1.1rem;border-radius:14px;text-decoration:none}
+.kr-link-card a:hover{background:var(--kr-pink-soft)}
+.kr-card-t{font:900 1.0625rem/1.3 var(--ahjo-head);color:var(--kr-navy);text-decoration:underline;text-decoration-color:var(--kr-pink);text-underline-offset:3px}
+.kr-card-x{font-size:var(--fs-small);color:var(--ink-2)}
+.kr-principles{padding-left:1.2rem}.kr-principles li+li{margin-top:.3rem}
+.kr-now{padding:1rem 1.25rem;border-left:4px solid var(--kr-pink);border-radius:0 14px 14px 0;background:var(--bg-tint)}
+.kr-now p{margin:0}.kr-now p+p{margin-top:.4rem}.kr-empty{color:var(--ink-2)}.kr-now-date{font-size:var(--fs-small);color:var(--ink-2)}
+.kr-past{margin:0 0 1rem}.kr-past h4{margin:0 0 .3rem;font:900 1.0625rem var(--ahjo-head);color:var(--kr-navy)}
+.kr-past .local-photos{margin-top:.75rem}
+.kr-upcoming{padding:1rem 1.25rem;border:1px dashed var(--kr-navy);border-radius:14px}
+.kr-upcoming p{margin-top:0}.kr-upcoming ul{margin-bottom:0}
+.kr-ext{width:15px;height:15px;margin-left:.2rem;vertical-align:-.1em}
+.kr-ahjo{display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:.9rem}
+.kr-ahjo-col{padding:.9rem 1.1rem;border-radius:14px;background:var(--bg-tint)}
+.kr-ahjo-col:last-child{background:var(--kr-pink-soft)}
+.kr-ahjo-col h3{margin:0 0 .3rem}.kr-ahjo-col ul{margin:0;padding-left:1.1rem}
+.kr-safety-first{display:flex;gap:.6rem;align-items:flex-start}
+.kr-stage-index{display:flex;flex-wrap:wrap;gap:.4rem;margin:1rem 0 2rem;padding:0;list-style:none;counter-reset:krs}
+.kr-stage-index li{counter-increment:krs}
+.kr-stage-index a{display:inline-flex;align-items:center;gap:.45rem;min-height:40px;padding:0 .85rem 0 .35rem;border:1px solid var(--line);border-radius:999px;background:#fff;text-decoration:none;font:700 var(--fs-ui) var(--ahjo-head)}
+.kr-stage-index a::before{content:counter(krs);display:inline-grid;place-items:center;width:1.7rem;height:1.7rem;border-radius:50%;background:var(--kr-pink);color:var(--kr-navy);font-weight:900}
+.kr-stage-index a:hover{background:var(--kr-pink-soft)}
+.kr-stage{margin:0 0 2.5rem;padding:0 0 1.5rem;border-bottom:1px solid var(--line)}
+.kr-stage-head{display:flex;align-items:center;gap:.7rem}
+.kr-stage-head h2{margin:0;font-size:1.45rem}
+.kr-team .kr-stage-head h2::before{display:none}
+.kr-stage-k{display:block;font:700 var(--fs-small)/1.3 var(--ahjo-head);letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2)}
+.kr-stage-n{width:2.6rem;height:2.6rem;font-size:1.25rem}
+.kr-goal{margin:.8rem 0 0;padding:.6rem .9rem;border-radius:10px;background:var(--kr-pink-soft)}
+.kr-stage-grid{display:grid;grid-template-columns:1fr;gap:0 1.5rem}
+@media (min-width:52rem){.kr-stage-grid{grid-template-columns:1fr 1fr}}
+.kr-stage-grid ul{padding-left:1.2rem}.kr-stage-grid li+li{margin-top:.3rem}
+.kr-stage-do{padding-top:.4rem}
+.kr-box{margin:.8rem 0 0;padding:.8rem 1rem;border:1px solid var(--line);border-radius:12px;background:#fff}
+.kr-box h3,.kr-box>h2{display:flex;align-items:center;gap:.45rem;margin:0 0 .3rem;font-size:1rem}
+.kr-box p{margin:0}
+.kr-box-mentor{background:var(--bg-tint)}
+.kr-box-show{border-color:var(--kr-pink)}
+.kr-stage-links{margin-top:.8rem;font-size:var(--fs-small)}
+.kr-stage-links h4{margin:.6rem 0 .2rem;font:700 var(--fs-small) var(--ahjo-head);color:var(--ink-2);text-transform:uppercase;letter-spacing:.05em}
+.kr-stage-links ul{margin:0;padding-left:1.1rem}
+.kr-guides{padding-left:1.2rem}.kr-guides li+li{margin-top:.45rem}.kr-guides>li>span{display:block;color:var(--ink-2);font-size:var(--fs-small)}
+.kr-phases{display:grid;grid-template-columns:repeat(auto-fill,minmax(14.5rem,1fr));gap:.9rem;margin:0 0 1rem;padding:0;list-style:none}
+.kr-phase{padding:1rem 1.1rem;border:1px solid var(--line);border-radius:14px;background:#fff}
+.kr-phase h3{display:flex;align-items:center;gap:.6rem;margin:0 0 .4rem;font-size:1.0625rem}
+.kr-phase p{margin:.35rem 0 0;font-size:var(--fs-small)}
+.kr-diary-q{padding-left:1.4rem;font-weight:700}
+.kr-template{margin:1rem 0;padding:1rem;border-radius:14px;background:var(--bg-tint)}
+.kr-template pre{margin:0 0 .8rem;padding:.9rem 1rem;max-width:46rem;white-space:pre-wrap;overflow-wrap:anywhere;border:1px solid var(--line);border-radius:10px;background:#fff;font-size:.9375rem;line-height:1.5}
+.kr-template-actions{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem}
+.kr-btn{display:inline-flex;align-items:center;gap:.45rem;min-height:44px;padding:0 1rem;border:1.5px solid var(--kr-navy);border-radius:999px;background:#fff;font:700 var(--fs-ui) var(--ahjo-head);color:var(--kr-navy);text-decoration:none;cursor:pointer}
+.kr-btn:hover{background:var(--kr-pink-soft)}
+.kr-btn[hidden]{display:none}
+.kr-copied{font-size:var(--fs-small);color:var(--ink-2)}
+.kr-principle{margin:1.5rem 0 2rem}
+.kr-principle blockquote{margin:0;padding:1rem 1.25rem;border-left:5px solid var(--kr-pink);border-radius:0 14px 14px 0;background:var(--kr-pink-soft);font:900 clamp(1.125rem,1rem + .5vw,1.375rem)/1.4 var(--ahjo-head);color:var(--kr-navy)}
+.kr-principle blockquote p{margin:0}
+.kr-two{display:grid;grid-template-columns:1fr;gap:0 1.5rem}
+@media (min-width:52rem){.kr-two{grid-template-columns:1fr 1fr}}
+.kr-two .ahjo-sec{margin-bottom:1.75rem}
+.kr-two .kr-box{margin-top:0;padding:1rem 1.25rem}
+.kr-team .kr-two .ahjo-sec>h2{font-size:1.25rem}
+.kr-team .ahjo-sec ul:not([class]){padding-left:1.2rem}.kr-team .ahjo-sec ul:not([class]) li+li{margin-top:.3rem}
+.kr-check{padding:0;list-style:none}.kr-check li{position:relative;padding-left:1.8rem}.kr-check li+li{margin-top:.4rem}
+.kr-check li::before{content:"";position:absolute;left:0;top:.2rem;width:1.1rem;height:1.1rem;border:2px solid var(--kr-navy);border-radius:4px;background:#fff}
+.kr-q{padding-left:1.2rem}.kr-q li{font-style:italic}.kr-q li+li{margin-top:.3rem}
+.kr-growth{margin:0 0 2.25rem;padding:.8rem 1rem;border-radius:12px;background:var(--bg-tint)}
+.kr-skills .kr-card ul{margin:.2rem 0 .5rem;padding-left:1.1rem;font-size:var(--fs-small)}
+.kr-signs-h{font-weight:700;color:var(--ink)!important}
+.kr-stop{display:flex;margin:1rem 0 2rem;max-width:46rem;align-items:center;gap:.6rem;padding:.8rem 1rem;border-radius:12px;background:var(--kr-navy);color:#fff}
+.kr-stop .ahjo-icon{color:var(--kr-pink)}
+.kr-roles{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:.9rem}
+.kr-role{padding:.9rem 1.1rem;border-radius:14px;background:var(--bg-tint)}
+.kr-role-teacher{background:var(--kr-pink-soft)}
+.kr-role h3{margin:0 0 .3rem}.kr-role ul{margin:0;padding-left:1.1rem}
+.kr-safety-grid{display:grid;grid-template-columns:1fr;gap:0 2rem}
+@media (min-width:52rem){.kr-safety-grid{grid-template-columns:1fr 1fr}}
+.kr-safety{margin:0 0 1.75rem}
+.kr-safety>h2{font-size:1.3rem;margin-bottom:.35rem}
+.kr-team .kr-safety>h2::before{display:none}
+.kr-safety ul{padding-left:1.2rem}.kr-safety li+li{margin-top:.3rem}
+.kr-teacher{padding:.5rem .8rem;border-left:4px solid var(--kr-pink);background:var(--bg-tint);font-size:var(--fs-small)}
+@media print{.kr-nav,.kr-template-actions,.kr-quick{display:none}}
 /* Ahjo for the student (teacher 2026-11-09, scripts/ahjo.py course_body, lesson_body): a course page that says in a few
    seconds what you get to do and where to start, lesson cards in groups (Ahjo 1) or the project path (Ahjo 2), and a
    working view for every lesson whose "start now" is the most visible part. Mobile first: one column, big targets. */

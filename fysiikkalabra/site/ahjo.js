@@ -41,4 +41,12 @@
     });
     f.hidden = false;
   });
+  document.querySelectorAll("[data-copy]").forEach(function (b) {
+    var src = document.getElementById(b.getAttribute("data-copy")), say = b.parentNode.querySelector(".kr-copied");
+    if (!src || !navigator.clipboard) return;
+    b.hidden = false;
+    b.addEventListener("click", function () {
+      navigator.clipboard.writeText(src.textContent).then(function () { if (say) say.textContent = b.getAttribute("data-copied"); });
+    });
+  });
 })();
