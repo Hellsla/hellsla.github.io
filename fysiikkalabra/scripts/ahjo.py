@@ -215,7 +215,7 @@ def validate(lessons, investigations, guides, planned_codes, local_codes, module
     shape = lambda d: ([c["code"] for c in d["courses"]], [c["id"] for c in d["categories"]],
                        [r.get("ref") or r.get("id") or "safety" for r in d["resources"]], [g["id"] for g in d["equipment"]],
                        [len(g["items"]) for g in d["equipment"]], [(len(c.get("goals", [])), len(c.get("lessons", [])), [(l.get("guides", []), bool(l.get("milestone")), bool(l.get("start")), sorted(l.get("levels", {})), bool(l.get("output_plus")), bool(l.get("final"))) for l in c.get("lessons", [])], len(c.get("deepening", [])), (c["start"]["minutes"], len(c["start"]["materials"]), len(c["start"]["steps"])) if c.get("start") else None, len(c["final"]["options"]) if c.get("final") else None, [x["minutes"] for x in c["snacks"]["items"]] if c.get("snacks") else None, bool(c.get("flex")), [len(x["lessons"]) for x in c.get("units", [])], [(len(l.get("needs", [])), l.get("safety")) for l in c.get("lessons", [])], bool(c.get("pitch"))) for c in d["courses"]], [s["id"] for s in d["safety"]], [l["course"] for l in d["links"]], sorted(d["ui"]),
-                       [(p["id"], p["status"], p["level"], p["lessons"], p["courses"], [i["url"] for i in p["inspiration"]], len(p["skills"]), len(p["materials"]), len(p["subjects"])) for p in d.get("projects", [])],
+                       [(p["id"], p.get("art"), p["status"], p["level"], p["lessons"], p["courses"], [i["url"] for i in p["inspiration"]], len(p["skills"]), len(p["materials"]), len(p["subjects"])) for p in d.get("projects", [])],
                        [(x["id"], x["minutes"], x["lesson"], bool(x.get("induction")), len(x["subjects"]), len(x["materials"]), sorted(x["levels"]), x.get("guide")) for x in d.get("challenges", [])])
     files = [SOURCE] + sorted((ROOT / "content").glob("*/ahjo.json"))
     for f in files:
@@ -335,6 +335,7 @@ def validate(lessons, investigations, guides, planned_codes, local_codes, module
             if p.get("status") == "hyvaksytty" and not (p.get("approved_by") and p.get("date")):
                 errs.append(f"{name}: project {pid}: only the teacher approves a card: approved_by and date")
             if p.get("level") not in (1, 2, 3): errs.append(f"{name}: project {pid}: level 1, 2 or 3")
+            if not (ART / f'{p.get("art", "")}.svg').is_file(): errs.append(f"{name}: project {pid}: art must name a picture in assets/shared/ahjo/")
             if not isinstance(p.get("lessons"), int) or not 1 <= p["lessons"] <= 16: errs.append(f"{name}: project {pid}: lessons 1–16")
             for code in p.get("courses", []):
                 if code not in known_codes: errs.append(f"{name}: project {pid}: unknown course {code}")
@@ -634,12 +635,12 @@ def lesson_body(d, c, i, planned, local, ref):
                 f'<p class="ahjo-done-row">{esc(l["output"])}</p>'
                 + (f'<p class="ahjo-done-row ahjo-done-plus"><span class="ahjo-done-l">{esc(u["lesson_milestone"])}:</span> {esc(l["milestone"])}</p>' if l.get("milestone") else "")
                 + '</section>')
-        main = (start_section(u, c, k, lesson=True) if i == 1 else "") + now + done
+        main = now + done
     extra = ""
     if l.get("final") and c.get("final"): extra += final_section(c, k)
     sn = c.get("snacks")
     if sn and 8 <= i <= 12:
-        extra += (f'<p class="ahjo-plan-note ahjo-snack-hint"><a href="{course}#maker-valipalat">{esc(sn["title"])}</a>: {esc(sn["text"].split(". ")[0])}.</p>')
+        main += (f'<p class="ahjo-plan-note ahjo-snack-hint"><a href="{course}#maker-valipalat">{esc(sn["title"])}</a>: {esc(sn["text"].split(". ")[0])}.</p>')
     mine = [x for x in d.get("challenges", []) if c["code"] == "AHJO1" and x["lesson"] == i]
     guides = links + [f'<a href="{BANK}#{x["id"]}">{esc(u["lesson_challenge_card"])}: {esc(x["title"])}</a>' for x in mine]
     diary = next((r for r in d["resources"] if r.get("id") == "ahjo-projektipaivakirja" and r.get("status") in PAGED), None)
@@ -656,7 +657,10 @@ def lesson_body(d, c, i, planned, local, ref):
                 f'<span class="ahjo-pager-t">{j}. {esc(lj.get("make") or lj["title"])}</span></a>')
     pager = (f'<nav class="ahjo-pager" aria-label="{esc(u["lesson_prev"])} / {esc(u["lesson_next"])}">{pg(i - 1, "prev", "← " + u["lesson_prev"])}'
              f'<a class="ahjo-pager-up" href="{course}#kortti-{i}">{esc(u["lesson_back"].replace("{t}", title))}</a>{pg(i + 1, "next", u["lesson_next"] + " →")}</nav>')
-    return top + head + f'<div class="ahjo-lgrid"><div class="ahjo-lmain">{main}{extra}</div>{side}</div>' + pager
+    # the long parts (Ahjo 2's opening challenge on lesson 1, the mini project options on lesson 14) run the page's full
+    # width, before or after the two columns, so the side column never stands beside a long empty gap
+    first = start_section(u, c, k, lesson=True) if i == 1 and not hands else ""
+    return top + head + first + f'<div class="ahjo-lgrid"><div class="ahjo-lmain">{main}</div>{side}</div>' + extra + pager
 
 
 def final_section(c, k):
@@ -735,7 +739,19 @@ def bank_body(d, planned, local, modules, ref):
         secs.append(f'<section class="ahjo-sec ahjo-cat" id="{c["id"]}" aria-labelledby="h-cat-{c["id"]}">'
                     f'<div class="ahjo-cat-top"><div><h2 id="h-cat-{c["id"]}">{icon(c["icon"])}{esc(c["title"])}</h2><p class="ahjo-sec-lead">{esc(c["text"])}</p></div>'
                     f'<div class="ahjo-cat-art">{art(c["id"])}</div></div>{body}</section>')
-    return hero(d, u["bank_h"], u["bank_page_lead"], BANK) + challenges_section(d) + "".join(secs)
+    jump = (f'<nav class="ahjo-jump" aria-labelledby="h-bank-jump"><p class="ahjo-filter-l" id="h-bank-jump">{esc(u["bank_jump"])}</p><ul>'
+            + (f'<li><a href="#pienet-haasteet">{esc(u["challenges_h"])}</a></li>' if d.get("challenges") else "")
+            + "".join(f'<li><a href="#{c["id"]}">{esc(c["title"])}</a></li>' for c in d["categories"]) + '</ul></nav>')
+    return hero(d, u["bank_h"], u["bank_page_lead"], BANK) + jump + challenges_section(d) + "".join(secs) + '<script src="ahjo.js"></script>'
+
+
+def filter_bar(u, label, key, values):
+    """A row of toggle buttons that shows only the cards whose data-<key> matches (templates/ahjo.js). Hidden until the
+    script runs, so without it every card simply shows; the count is read out when it changes."""
+    btns = f'<button type="button" class="ahjo-fbtn" data-v="" aria-pressed="true">{esc(u["filter_all"])}</button>' + "".join(
+        f'<button type="button" class="ahjo-fbtn" data-v="{esc(v)}" aria-pressed="false">{esc(t)}</button>' for v, t in values)
+    return (f'<div class="ahjo-filter" data-key="{key}" data-shown="{esc(u["filter_shown"])}" hidden><p class="ahjo-filter-l" id="f-{key}">{esc(label)}</p>'
+            f'<div class="ahjo-filter-b" role="group" aria-labelledby="f-{key}">{btns}</div><p class="ahjo-filter-n" aria-live="polite"></p></div>')
 
 
 def challenges_section(d):
@@ -753,15 +769,17 @@ def challenges_section(d):
                 + (f'<span class="ahjo-badge planned">{esc(u["challenge_induction"])}</span>' if x.get("induction") else ""))
         levels = "".join(f'<li class="ahjo-level ahjo-level-{n}"><span class="ahjo-level-l">{esc(lab)}</span> <span class="ahjo-level-x">{esc(x["levels"][k])}</span></li>'
                          for n, (k, lab) in enumerate(zip(("try", "modify", "challenge"), u["lesson_levels"]), 1))
-        cards.append(f'<article class="ahjo-proj ahjo-chal" id="{x["id"]}" aria-labelledby="h-chal-{x["id"]}"><div class="ahjo-proj-head"><h3 id="h-chal-{x["id"]}">{esc(x["title"])}</h3></div>'
+        cards.append(f'<article class="ahjo-proj ahjo-chal" id="{x["id"]}" aria-labelledby="h-chal-{x["id"]}" data-time="{"short" if x["minutes"] <= 20 else "long"}">'
+                     f'<div class="ahjo-proj-head"><h3 id="h-chal-{x["id"]}">{esc(x["title"])}</h3></div>'
                      f'<p class="ahjo-proj-sum">{esc(x["make"])}</p><p class="ahjo-proj-meta">{meta}</p>'
-                     f'<p class="ahjo-res-meta"><span class="ahjo-meta-l">{esc(u["challenge_materials"])}:</span> {esc(", ".join(x["materials"]))}</p>'
-                     f'<ul class="ahjo-levels ahjo-chal-levels">{levels}</ul>'
                      + (f'<p class="ahjo-chal-guide"><a href="{x["guide"]}.html">{esc(u["challenge_guide"])} →</a></p>' if x.get("guide") else "")
-                     + '</article>')
+                     + f'<details class="ahjo-open"><summary>{esc(u["chal_more"])}</summary>'
+                     f'<p class="ahjo-res-meta"><span class="ahjo-meta-l">{esc(u["challenge_materials"])}:</span> {esc(", ".join(x["materials"]))}</p>'
+                     f'<ul class="ahjo-levels ahjo-chal-levels">{levels}</ul></details></article>')
     return (f'<section class="ahjo-sec" id="pienet-haasteet" aria-labelledby="h-challenges"><h2 id="h-challenges">{esc(u["challenges_h"])}'
             f' <span class="ahjo-count">{len(xs)}</span></h2><p class="ahjo-sec-lead">{esc(u["challenges_lead"])}</p>'
-            f'<div class="ahjo-chal-grid">{"".join(cards)}</div></section>')
+            + filter_bar(u, u["filter_time"], "time", (("short", u["filter_short"]), ("long", u["filter_long"])))
+            + f'<div class="ahjo-chal-grid ahjo-filtered">{"".join(cards)}</div></section>')
 
 
 def project_card(u, p, names):
@@ -775,11 +793,13 @@ def project_card(u, p, names):
             (u["proj_success"], esc(p["success"])), (u["proj_next"], esc(p["next"]))]
     if p.get("subjects"): rows.append((u["proj_subjects"], esc(", ".join(p["subjects"]))))
     rows.append((u["proj_inspiration"], f'{src} <span class="ahjo-ext">{esc(u["proj_external"])}</span>'))
-    return (f'<article class="ahjo-proj{" approved" if ok else ""}" id="{p["id"]}" aria-labelledby="h-proj-{p["id"]}">'
+    return (f'<article class="ahjo-proj{" approved" if ok else ""}" id="{p["id"]}" aria-labelledby="h-proj-{p["id"]}" data-level="{p["level"]}">'
+            f'<div class="ahjo-pcard-art">{art(p["art"])}</div>'
             f'<div class="ahjo-proj-head"><h3 id="h-proj-{p["id"]}">{esc(p["title"])}</h3>'
             f'<p class="ahjo-badge{"" if ok else " planned"}">{esc(u["proj_status_" + p["status"]])}</p></div>'
             f'<p class="ahjo-proj-sum">{esc(p["summary"])}</p><p class="ahjo-proj-meta">{meta}</p>'
-            f'<dl class="ahjo-proj-dl">' + "".join(f'<dt>{esc(k)}</dt><dd>{v}</dd>' for k, v in rows) + '</dl></article>')
+            f'<details class="ahjo-open"><summary>{esc(u["proj_more"])}</summary>'
+            f'<dl class="ahjo-proj-dl">' + "".join(f'<dt>{esc(k)}</dt><dd>{v}</dd>' for k, v in rows) + '</dl></details></article>')
 
 
 def projects_teaser(d):
@@ -799,12 +819,13 @@ def projects_body(d, planned, local, modules):
     ok = [p for p in ps if p["status"] == "hyvaksytty"]; prop = [p for p in ps if p["status"] != "hyvaksytty"]
     sec = lambda sid, h, items, empty: (f'<section class="ahjo-sec" id="{sid}" aria-labelledby="h-{sid}"><h2 id="h-{sid}">{esc(h)}'
                                         f' <span class="ahjo-count">{esc(count(u, "projects_count", len(items)))}</span></h2>'
-                                        + (f'<div class="ahjo-proj-grid">{"".join(project_card(u, p, names) for p in items)}</div>' if items else f'<p class="ahjo-empty">{esc(empty)}</p>')
+                                        + (f'<div class="ahjo-proj-grid ahjo-filtered">{"".join(project_card(u, p, names) for p in items)}</div>' if items else f'<p class="ahjo-empty">{esc(empty)}</p>')
                                         + '</section>')
     return (hero(d, u["projects_h"], u["projects_page_lead"], PROJECTS)
             + f'<p class="ahjo-draft" role="note">{icon("notebook")}<span>{esc(u["projects_note"])}</span></p>'
+            + filter_bar(u, u["filter_level"], "level", tuple((str(n), t) for n, t in enumerate(u["proj_levels"], 1)))
             + sec("hyvaksytyt", u["projects_approved_h"], ok, u["projects_none_approved"])
-            + (sec("ehdotukset", u["projects_proposed_h"], prop, "") if prop else ""))
+            + (sec("ehdotukset", u["projects_proposed_h"], prop, "") if prop else "") + '<script src="ahjo.js"></script>')
 
 
 def safety_body(d, lang, render_md):

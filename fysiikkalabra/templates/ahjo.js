@@ -2,7 +2,9 @@
    - An old link to a lesson on a course page (ahjo-1.html#tunti-3) opens the lesson's own page; #miniprojekti opens
      lesson 14, where the mini project options now are.
    - A link to something folded under "Lisätietoa opintojaksosta" (#tavoitteet, #ajokortti, ...) unfolds it.
-   - A guide opened from a lesson (?tunti=ahjo-1-tunti-3) shows a link back to that lesson. */
+   - A guide opened from a lesson (?tunti=ahjo-1-tunti-3) shows a link back to that lesson.
+   - The material and project banks' filters (time, level) show only the matching cards; without the script every card
+     shows and the filter stays hidden. */
 (function () {
   var page = location.pathname.split("/").pop() || "";
   var course = page.match(/^ahjo-(\d)\.html$/);
@@ -25,4 +27,18 @@
     back.querySelector("a").setAttribute("href", from + ".html");
     back.hidden = false;
   }
+  document.querySelectorAll(".ahjo-filter").forEach(function (f) {
+    var key = f.getAttribute("data-key"), scope = f.closest("section") || f.closest("main") || document;
+    var items = scope.querySelectorAll("[data-" + key + "]"), n = f.querySelector(".ahjo-filter-n");
+    var btns = f.querySelectorAll(".ahjo-fbtn");
+    btns.forEach(function (b) {
+      b.addEventListener("click", function () {
+        var v = b.getAttribute("data-v"), shown = 0;
+        btns.forEach(function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
+        items.forEach(function (it) { var ok = !v || it.getAttribute("data-" + key) === v; it.hidden = !ok; if (ok) shown++; });
+        n.textContent = v ? f.getAttribute("data-shown").replace("{n}", shown).replace("{m}", items.length) : "";
+      });
+    });
+    f.hidden = false;
+  });
 })();
