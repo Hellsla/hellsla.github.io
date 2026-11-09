@@ -28,7 +28,7 @@ stay in their lesson folders and keep their <id>-sim.js URLs.
 """
 import hashlib, json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status, published_exercises, WorkTree
-import ahjo, answers_shown, assigned, booklets, cardgrid, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, svgids, units, tablefit
+import ahjo, answers_shown, kilparobo, assigned, booklets, cardgrid, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, svgids, units, tablefit
 from i18n import t as T
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
@@ -74,6 +74,8 @@ _ahjo_errs = ahjo.validate({l["id"] for k, m in curriculum.items() if not k.star
                            set(guides.ids()), [p["icon"] for p in local_courses.planned()], list(local_courses.load()),
                            {k: m["title"] for k, m in curriculum.items() if not k.startswith("_")})
 if _ahjo_errs: sys.exit("ERROR: ahjo.json (scripts/ahjo.py):\n" + "\n".join(_ahjo_errs))
+_kr_errs = kilparobo.validate({l["id"] for k, m in curriculum.items() if not k.startswith("_") for l in m.get("lessons", [])})
+if _kr_errs: sys.exit("ERROR: kilparobo.json (scripts/kilparobo.py):\n" + "\n".join(_kr_errs))
 
 
 # Submission trial (teacher 2026-11-05): "Lataa kaikki ratkaisut" on the chapters of these courses in these languages
@@ -1302,23 +1304,41 @@ def build_language(lang):
         unit_pub.setdefault(u, set()).add(ul)
     if lang in units.languages(): build_units(lang, out, unit_pub)
     local = local_courses.load(lang)
-    local_rows = ""
+    local_rows = ""; kr_built = []
+    ahjo_data = ahjo.load(lang)
     for code, c in local.items():
         cu = []
         for u, ls in unit_pub.items():                   # (id, the language linked, href): this language's version, else the source's
             ul = lang if lang in ls else units.lang_of(u) if units.lang_of(u) in ls else None
             if ul and units.load(u, ul)["course"] == code: cu.append((u, ul, os.path.relpath(OUTS[ul] / f"{u}.html", out).replace(os.sep, "/")))
         local_rows += home_row(code, c["title"], c["subtitle"])
-        body = local_courses.page_body(code, c, T, chapters, {f"{i}.html" for i in built_ids}, [(i, d) for i, d in inv_built.items() if code in d["courses"]],
-                                       guides.course_section(T, published, lang) if code == "FY10" else "", cu)
+        kr = kilparobo.load(lang) if code == kilparobo.CODE else None   # Kilparobotiikka's team pages (teacher 2026-11-09, scripts/kilparobo.py)
+        if kr:
+            kr["_course_title"] = c["title"]
+            body = kilparobo.hub_body(kr, local_courses.head(code, c, T), local_courses.photos_html(c, T, heading=False), local_courses.quotes_html(c, T, heading=False))
+        else:
+            body = local_courses.page_body(code, c, T, chapters, {f"{i}.html" for i in built_ids}, [(i, d) for i, d in inv_built.items() if code in d["courses"]],
+                                           guides.course_section(T, published, lang) if code == "FY10" else "", cu)
         prog = local_progress(code, c, lang)                 # Näytä edistyminen before the course's first section (FY9)
         if prog and "<h2" in body: body = body.replace("<h2", prog + "<h2", 1)
         for ph in c.get("photos", []):                  # the course's photos (local_courses.py), shared by every language like a lesson's
             (SITE / ph["src"]).parent.mkdir(parents=True, exist_ok=True); shutil.copy(ROOT / "assets" / ph["src"], SITE / ph["src"]); assets.append(ph["src"])
         name = f"{local_courses.label(code)} {c['title']}".strip()
         html = page(name, body + '<script src="invfilter.js"></script>', f'<a href="index.html">{T("site.name")}</a> › {local_courses.label(code) or esc(c["title"])}',
-                    f"{code}.html", c["description"], main_class="reading module-page local-course" + (" kr-theme" if c.get("theme") == "kiviruukki" else ""))
+                    f"{code}.html", c["description"], main_class="reading module-page local-course" + (" kr-theme" if c.get("theme") == "kiviruukki" else "") + (" kr-team" if kr else ""))
         (out / f"{code}.html").write_text(ahjo.kiviruukki_mark(html) if c.get("theme") == "kiviruukki" else html)
+        if kr:                                           # its four other pages, under the course page in the breadcrumb
+            ref = lambda rid: (chapters[rid][1], f"{rid}.html") if rid in chapters and rid in built_ids else None
+            diary = "ahjo-projektipaivakirja.html" if ahjo_data and "ahjo-projektipaivakirja" in ahjo.ready_guides(ahjo_data) else None
+            crumb = f'<a href="index.html">{T("site.name")}</a> › <a href="{code}.html">{esc(c["title"])}</a> › '
+            for name, title, sub in ((kilparobo.PATH, kr["path"]["title"], kilparobo.path_body(kr, ref)),
+                                     (kilparobo.SEASON, kr["season"]["title"], kilparobo.season_body(kr, diary)),
+                                     (kilparobo.MENTOR, kr["mentor"]["title"], kilparobo.mentor_body(kr)),
+                                     (kilparobo.SAFETY, kr["safety"]["title"], kilparobo.safety_body(kr, ahjo.SAFETY if ahjo_data else None))):
+                lead = {kilparobo.PATH: kr["path"], kilparobo.SEASON: kr["season"], kilparobo.MENTOR: kr["mentor"], kilparobo.SAFETY: kr["safety"]}[name]["lead"]
+                (out / name).write_text(ahjo.kiviruukki_mark(page(title, sub + '<script src="ahjo.js"></script>', crumb + esc(title), name, lead,
+                                                                  main_class="reading module-page local-course kr-theme kr-team")))
+                kr_built.append(name)
     mixer_built = []                             # the YO-sekoitin (scripts/mixer.py): every language, when a local course asks for it
     mcode = next((code for code, c in local_courses.load().items() if c.get("mixer")), None)
     if mcode:
@@ -1457,7 +1477,7 @@ def build_language(lang):
                 removed.append(lid if lang == i18n.SOURCE else f"{lang}/{lid}")
                 print(f"{'::warning::' if os.environ.get('GITHUB_ACTIONS') else 'WARNING:'} {old_page.relative_to(LIVE)} is on the live site but its reviews are not current ({why}); this build removes it")
     pre = out.relative_to(SITE).as_posix() + "/" if out != SITE else ""
-    expected.extend(pre + n for n in ["index.html", ABOUT] + ([PRIVACY] if priv_md else []) + ([TEACHER_PAGE] if teacher_built else []) + ([concept_cards.APP] if concept_cards.modules(concept_cards.data_lang(lang)) else []) + ([reading_tips.PAGE] if reading_tips.SOURCE.is_file() else []) + [booklets.PAGE, STUDY_PAGE] + ahjo_built + [f"{c}.html" for c, _ in modules] + [f"{c}.html" for c in local] + [f"{i}.html" for i in built_ids] + [f"{i}.html" for i in inv_built] + [f"{g}.html" for g in guide_built] + [practice.page_name(c) for c in practice_built] + [practice.page_name(c + practice.EXAM) for c in exam_built] + mixer_built
+    expected.extend(pre + n for n in ["index.html", ABOUT] + ([PRIVACY] if priv_md else []) + ([TEACHER_PAGE] if teacher_built else []) + ([concept_cards.APP] if concept_cards.modules(concept_cards.data_lang(lang)) else []) + ([reading_tips.PAGE] if reading_tips.SOURCE.is_file() else []) + [booklets.PAGE, STUDY_PAGE] + ahjo_built + kr_built + [f"{c}.html" for c, _ in modules] + [f"{c}.html" for c in local] + [f"{i}.html" for i in built_ids] + [f"{i}.html" for i in inv_built] + [f"{g}.html" for g in guide_built] + [practice.page_name(c) for c in practice_built] + [practice.page_name(c + practice.EXAM) for c in exam_built] + mixer_built
                     + [f"{u}.html" for u, ls in unit_pub.items() if lang in ls and not only])
     if SITE.name == "site.tmp" and lang in units.languages():   # a unit that lost its reviews leaves the site only with a warning
         for u in units.ids(lang):

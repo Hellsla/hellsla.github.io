@@ -1,0 +1,358 @@
+{
+  "ui": {
+    "nav_label": "Competitive robotics pages",
+    "nav_home": "Start",
+    "nav_path": "Beginner's path",
+    "nav_season": "Season and diary",
+    "nav_mentor": "Mentoring",
+    "nav_safety": "Safety",
+    "quick_h": "Where do I find?",
+    "stage_n": "Stage {n}",
+    "goal": "Goal",
+    "topics": "What you learn",
+    "practice": "Practice",
+    "mentor_tip": "Tip for the mentor",
+    "show": "How you show the skill",
+    "see_also": "See also",
+    "official": "Official guides",
+    "physics": "Physics behind it",
+    "in_english": "in English",
+    "external": "opens on a VEX or RECF site",
+    "phase_n": "{n}",
+    "phase_questions": "Ask",
+    "phase_output": "Record",
+    "copy": "Copy the template",
+    "copied": "Template copied to the clipboard.",
+    "download": "Download as a text file",
+    "mentor_side": "Student mentor",
+    "teacher_side": "The teacher decides",
+    "draft_badge": "Draft",
+    "check_badge": "Check the season's details",
+    "now_empty": "The team's current situation is written here when the teacher or the team updates it. Until then, ask the teacher or a team member what the team is doing now and when it meets.",
+    "now_phase": "Season phase now:",
+    "now_updated": "Updated",
+    "more": "Open",
+    "back_home": "Competitive robotics start page",
+    "signs": "Your skill shows when",
+    "evidence": "Evidence can be"
+  },
+  "hub": {
+    "quick": [
+      {"q": "What is competitive robotics?", "href": "#tule-mukaan"},
+      {"q": "How do I join?", "href": "#mukaan"},
+      {"q": "Where do I start?", "href": "kilparobo-polku.html"},
+      {"q": "What is the team doing now?", "href": "#nyt"},
+      {"q": "Where are the technical guides?", "href": "kilparobo-polku.html#ohjeet"}
+    ],
+    "intro_h": "Competitive robotics – join us!",
+    "intro": [
+      "Kiviruukki upper secondary school's robotics team takes part in VEX V5 robotics competitions. In the team we design, build, program and develop competition robots together.",
+      "You need no earlier robotics experience. More experienced students help new ones get started, and everyone learns by doing. You fit in if you are interested in, for example, building, programming, measuring, game strategy, photography or organising events.",
+      "In competitions we try to do well, but the most important things are learning, solving problems and working together. A robot is never finished: it can always be tested, fixed and improved."
+    ],
+    "join_h": "How do I join?",
+    "join": [
+      "Ask the teacher or a team member when the team meets next.",
+      "Come to one meeting. You get a mentor, a more experienced student, who shows you the robot and the workspace.",
+      "Complete the safety induction before you use tools or drive the robot.",
+      "Start from the first stage of the beginner's path and go at your own pace."
+    ],
+    "join_note": "You do not need to have taken Ahjo 1 or Ahjo 2. You can join straight away.",
+    "team_h": "How the team works",
+    "team_lead": "The team is student-led. Students agree together what to do to the robot next and share the work. The teacher is responsible for the activity and safety and supports when needed.",
+    "areas": [
+      {"icon": "tools", "title": "Mechanics and building", "text": "Chassis, drivetrain, grippers and other mechanisms. Design, build and repair."},
+      {"icon": "code", "title": "Programming and automation", "text": "Driver control, autonomous programs and sensors in the VEXcode V5 programming environment."},
+      {"icon": "ruler", "title": "Testing and measuring", "text": "Find out by measuring whether a change helped: time, distance, accuracy and repeatability."},
+      {"icon": "flag", "title": "Competition strategy and driver practice", "text": "Analysing the game's rules and scoring, a match plan and driving practice."},
+      {"icon": "notebook", "title": "Documentation, communication and competition arrangements", "text": "The development diary, photos, presenting the team and preparing competition trips with the teacher."}
+    ],
+    "principles": [
+      "Roles are not fixed. You can try different tasks and change area during the season.",
+      "Everyone takes part in developing the robot as far as they can.",
+      "Experienced students do not do the tasks for new ones. They guide, ask and give feedback.",
+      "Skills stay in the team: record what you do so that next year's students can carry on from there."
+    ],
+    "pages_h": "The team's tools",
+    "pages": [
+      {"href": "kilparobo-polku.html", "icon": "path", "title": "Beginner's path", "text": "Five stages from getting to know the robot to the team's project. Each has a practice and a tip for the mentor."},
+      {"href": "kilparobo-kausi.html", "icon": "calendar", "title": "Season and diary", "text": "The phases of a competition season and a development diary template to copy."},
+      {"href": "kilparobo-mentorointi.html", "icon": "people", "title": "Mentoring and skills", "text": "The mentor's checklist, guiding questions and a light way to make skills visible."},
+      {"href": "kilparobo-turvallisuus.html", "icon": "shield", "title": "Safety", "text": "The robot's movements, batteries, tools, testing and switching the robot off."}
+    ],
+    "now_h": "What is the team doing now?",
+    "competitions_h": "Competitions and experiences",
+    "competitions_lead": "The team's competitions and the students' experiences are collected here. Every season has a different game and rules, so photos and experiences from an earlier competition say nothing about the current season's rules.",
+    "past_h": "Earlier competitions",
+    "past": [
+      {"id": "otarobo-2026", "title": "Otarobo 2026", "text": "The team took part in the Otarobo 2026 competition with VEX V5 robots. The photos are cropped so that nobody's face shows.", "photos": true}
+    ],
+    "experiences_h": "Experiences from competitions",
+    "upcoming_h": "Coming competitions",
+    "upcoming": "The team's coming competitions are announced here once taking part is confirmed. The current season's VEX V5 game, game manual and competitions are on the official sites.",
+    "upcoming_links": [
+      {"title": "RobotEvents: VEX competitions and events", "url": "https://www.robotevents.com/"},
+      {"title": "RECF: the organiser of VEX competitions", "url": "https://www.roboticseducation.org/"}
+    ],
+    "ahjo_h": "Ahjo 1, Ahjo 2 and competitive robotics",
+    "ahjo_lead": "Ahjo's courses and competitive robotics support each other. In Ahjo you practise basic technology skills and project work; in competitive robotics you apply them to a competition challenge. You do not need either course before joining.",
+    "ahjo_cols": [
+      {"title": "Ahjo 1", "href": "ahjo-1.html", "items": ["Basics of technology", "Measuring", "Building", "First steps in programming"]},
+      {"title": "Ahjo 2", "href": "ahjo-2.html", "items": ["Project planning", "Prototyping", "Testing", "Iteration"]},
+      {"title": "Competitive robotics", "href": "", "items": ["Applying skills to a competition challenge", "Teamwork", "Competition strategy", "Long-term robot development", "Mentoring"]}
+    ],
+    "ahjo_note": "Ahjo's robotics tasks use Arduino. Competitive robotics uses the VEX V5 system, whose parts and programming are different."
+  },
+  "now": {"text": "", "phase": 0, "updated": ""},
+  "path": {
+    "title": "VEX V5 – the beginner's path",
+    "lead": "The path helps a new student get started with a VEX V5 robot. Go at your own pace with your mentor. The stages have no deadlines, and you can skip a stage when you already know its contents.",
+    "how": "Each stage has a goal, a small practice, a tip for the mentor and a way to show what you learnt. When you have shown the skill to your mentor, record it in the development diary.",
+    "safety_first": "Before the first stage: complete the safety induction as the teacher instructs.",
+    "hardware_note": "The team's equipment may differ from the examples on this page. Check the team's own parts, and check in the current season's game manual what a competition robot may use.",
+    "stages": [
+      {
+        "id": "tutustu",
+        "title": "Get to know the robot",
+        "goal": "You recognise the robot's main parts and know what each does and where it is connected.",
+        "topics": [
+          "VEX V5 Robot Brain: the robot's control unit with a touchscreen, 21\u00a0Smart Ports for motors and sensors, and eight 3-Wire ports (A\u2060–\u2060H).",
+          "V5 Controller: the driver's controller. It connects wirelessly to the Brain through the V5 Robot Radio connected to the robot.",
+          "V5 Smart Motor (11W): the motor has an interchangeable gear cartridge that sets its top speed: red 100\u00a0rpm, green 200\u00a0rpm and blue 600\u00a0rpm.",
+          "Battery and power: the V5 Robot Battery is connected to the Brain, and the Brain powers the motors and sensors.",
+          "Sensors: for example the Inertial Sensor (heading and turning), Distance Sensor (distance), Optical Sensor (colour and proximity) and Rotation Sensor (a shaft's rotation).",
+          "Mechanical structure: metal chassis, shafts, bearings, gears and screw joints."
+        ],
+        "practice": "Go round the team's robot with your mentor. Find the Brain, the controller, the radio, the battery and every motor and sensor. Check on the Brain's screen which port each device is connected to, and draw a port map of the robot.",
+        "mentor": "Let the new student find the parts themselves. Ask for example: How do you know this is a motor and not a sensor? What would happen if this cable came loose in the middle of a match?",
+        "show": "Using the port map, you explain to your mentor what the robot's parts do and where they are connected.",
+        "links": [
+          {"title": "Understanding the V5 Robot Brain", "url": "https://kb.vex.com/hc/en-us/articles/360060662352-Understanding-the-V5-Robot-Brain"},
+          {"title": "Understanding the V5 Controller", "url": "https://kb.vex.com/hc/en-us/articles/360060527672-Understanding-the-V5-Controller"},
+          {"title": "Understanding V5 Smart Motors", "url": "https://kb.vex.com/hc/en-us/articles/360060929971-Understanding-V5-Smart-Motors"},
+          {"title": "Overview of the VEX V5 Sensors", "url": "https://kb.vex.com/hc/en-us/articles/4401967256596-Overview-of-the-VEX-V5-Sensors"}
+        ],
+        "refs": ["fy7-4"]
+      },
+      {
+        "id": "ohjaa",
+        "title": "Learn to drive",
+        "goal": "You start the robot safely and drive it under control with the controller.",
+        "topics": [
+          "Starting safely: check the surroundings, put the robot on the floor or field and keep your hands away from moving parts.",
+          "The link between controller and Brain: how you see that the controller is connected to the robot.",
+          "Driving practice: driving straight, turning and handling game pieces.",
+          "Speed and accuracy: when is it worth driving slowly, and when fast?",
+          "First observations: how the robot behaves when the battery runs down, the surface changes or the load grows."
+        ],
+        "practice": "Make a small course with tape: a straight, two turns and a stopping area. Drive the course three times, time it and count how many times the robot hits a line. Then drive more slowly and compare the results.",
+        "mentor": "Show starting and switching off once, then let the new student do them. After driving, ask: What was hardest? What did the robot do that you did not expect?",
+        "show": "You start and switch off the robot correctly and drive the course three times without collisions. You record the times and one observation in the development diary.",
+        "links": [
+          {"title": "Pairing the V5 Controller with the V5 Brain", "url": "https://kb.vex.com/hc/en-us/articles/360035592532"},
+          {"title": "Understanding the V5 Robot Battery", "url": "https://kb.vex.com/hc/en-us/articles/360060529912-Understanding-the-V5-Robot-Battery"}
+        ],
+        "refs": ["fy4-6", "fy1-3"]
+      },
+      {
+        "id": "ohjelmoi",
+        "title": "Learn to program",
+        "goal": "You write a program that moves the robot and uses the reading of one sensor.",
+        "topics": [
+          "VEXcode V5: the programming environment where you can code with blocks, Python or C++.",
+          "Configuring devices: motors and sensors are added to the program's device settings on the right ports.",
+          "Controlling motors: direction, speed, and turning angle or time.",
+          "Program structure: the order of commands, repetition, conditions and your own functions.",
+          "Using sensors: showing a reading on the Brain's screen and using it in a condition.",
+          "A simple autonomous action: the robot drives, turns and stops without a driver."
+        ],
+        "practice": "Make a program that drives the robot straight forward about a metre, turns a right angle and stops. Measure with a tape measure how accurately the robot arrives. Then add a condition: the robot stops when the Distance Sensor detects an obstacle. Choose the limit yourself and record it.",
+        "mentor": "Do not write code for the new student. Ask them to read the program aloud and say what the robot should do. When something does not work, ask: What did you expect? What happened? What would you change first?",
+        "show": "You run the program for your mentor, explain its structure and show what happens when the sensor's limit is changed.",
+        "note": "The length and rules of a match's autonomous period depend on the season's game. Check them in the current season's game manual.",
+        "links": [
+          {"title": "VEXcode V5", "url": "https://www.vexrobotics.com/vexcode"},
+          {"title": "Configuring Sensors in VEXcode V5", "url": "https://kb.vex.com/hc/en-us/articles/13951571840660-Configuring-Sensors-in-VEXcode-V5"},
+          {"title": "VEX API Reference (Blocks, Python, C++)", "url": "https://api.vex.com/"}
+        ],
+        "refs": ["fy1-5"]
+      },
+      {
+        "id": "rakenna",
+        "title": "Build and improve",
+        "goal": "You make one reasoned mechanical change to the robot and show with a test what it changed.",
+        "topics": [
+          "Drivetrain: how the motor's rotation is passed to wheels and mechanisms through shafts, gears and chains.",
+          "Gear ratios: when a small gear turns a large one, speed drops and torque grows. Choosing the gear cartridge works the same way.",
+          "Stiffness of structures: bracing, triangles and properly tightened joints keep the chassis from twisting.",
+          "Centre of mass: a low, central centre of mass keeps the robot from tipping over.",
+          "Grippers and other mechanisms: how a game piece is picked up, carried and released.",
+          "Testing and iteration: one change at a time and the same test before and after the change."
+        ],
+        "practice": "Choose one mechanism with your mentor, for example a lifting arm. First measure the starting point, for example the lifting time or the largest load the arm lifts. Change the gear ratio or the gear cartridge, measure again in the same way and compare.",
+        "mentor": "Let the new student suggest a change before you share your own idea. Ask: Why do you think this helps? How will we measure whether it helped? What do we lose if we gain speed?",
+        "show": "You present the before-and-after measurement and explain in your own words how the gear ratio or the structure made a difference.",
+        "links": [
+          {"title": "Using Gear Ratios with the V5 Motor", "url": "https://kb.vex.com/hc/en-us/articles/360035590932"},
+          {"title": "Switching the V5 Motor Gear Cartridge", "url": "https://kb.vex.com/hc/en-us/articles/360035591312-Gear-Cartridge-Motor-for-VEX-V5"},
+          {"title": "Building with VEX V5", "url": "https://kb.vex.com/hc/en-us/articles/360046701172-Building-with-VEX-V5"}
+        ],
+        "refs": ["fy5-1", "fy5-2", "fy4-4", "fy2-3"]
+      },
+      {
+        "id": "projekti",
+        "title": "Take part in the team's project",
+        "goal": "You take one small development task from a plan to a tested and documented solution.",
+        "topics": [
+          "Choose a development task from the team's task list or suggest your own.",
+          "Plan a solution: a sketch, the parts needed and a test that shows whether it worked.",
+          "Carry out the solution with your mentor's support.",
+          "Test and compare the result with the starting point.",
+          "Record the observation and the improvement in the development diary."
+        ],
+        "practice": "Examples of development tasks: improving a gripper's hold, making an autonomous program more accurate, routing cables so that nothing comes loose during a match, or sorting spare parts so that they are quick to find.",
+        "mentor": "Agree when you will check the work together. Let the new student present the work to the team themselves, even if it is not finished yet.",
+        "show": "You briefly present the work to the team and write a diary entry that would let someone else continue the work.",
+        "links": [],
+        "refs": [],
+        "inner": [{"href": "kilparobo-kausi.html#paivakirja", "title": "Development diary template"}]
+      }
+    ],
+    "guides_h": "Technical guides",
+    "guides_lead": "The official guides are in English. Always check that a guide is about the VEX V5 system and not, for example, VEX IQ or VEX EXP, and that it matches the team's equipment and software version.",
+    "guides": [
+      {"title": "VEX Library: V5", "text": "The manufacturer's guides to V5 devices, building and programming.", "url": "https://kb.vex.com/hc/en-us/categories/360002333191-V5"},
+      {"title": "VEXcode V5", "text": "The programming environment and its download.", "url": "https://www.vexrobotics.com/vexcode"},
+      {"title": "VEX API Reference", "text": "Descriptions of the commands for Blocks, Python and C++.", "url": "https://api.vex.com/"},
+      {"title": "RobotEvents", "text": "Competitions, events and the current season's game.", "url": "https://www.robotevents.com/"},
+      {"title": "RECF Library", "text": "The competition organiser's guides, including the Engineering Notebook.", "url": "https://kb.roboticseducation.org/hc/en-us"}
+    ]
+  },
+  "season": {
+    "title": "Competition season and development diary",
+    "lead": "The game and rules of VEX V5 competitions change every season. This model describes how the team moves through a season whatever the game. The phases partly overlap, and the team keeps returning to them.",
+    "h": "How a competition season goes",
+    "phases": [
+      {"title": "Getting to know the competition rules", "text": "Read the current season's game manual and follow its updates. Everyone reads at least the game's description and the robot rules.", "questions": ["What may the robot be, and what may it not be?", "How are points scored?"], "output": "A short summary of the most important rules in your own words."},
+      {"title": "Analysing the competition challenge", "text": "Break the game into tasks: what the robot has to be able to do and how many points each task gives.", "questions": ["Which tasks give the most points for their difficulty?", "What can the robot do autonomously?"], "output": "The robot's tasks in order of importance."},
+      {"title": "Planning the strategy", "text": "Decide what the team focuses on. A good strategy fits the team's time, skills and parts.", "questions": ["What do we do first in a match?", "How do we work with our alliance partner?"], "output": "The strategy and the reasons for it."},
+      {"title": "Designing and building the robot", "text": "Sketch alternatives, choose one with reasons and build it. The first version may be simple.", "questions": ["Which alternatives did we consider?", "Why did we choose this one?"], "output": "Sketches, the reasons for the choice and a parts list."},
+      {"title": "Programming", "text": "Program the driver control and the autonomous actions. Save every working version so that you can go back to it.", "questions": ["Which part of the program does what?", "Which version worked best, and why?"], "output": "The program's versions and a short note on how they differ."},
+      {"title": "Testing and practice matches", "text": "First test the tasks one by one, then the whole robot in practice matches. The drivers practise regularly.", "questions": ["What fails most often?", "What do we fix first?"], "output": "Test results and a list of fixes."},
+      {"title": "Taking part in a competition", "text": "The teacher handles registration and travel with the team. On competition day you check the robot before every match and record your observations.", "questions": ["What worked in the match?", "What did other teams do well?"], "output": "Match notes."},
+      {"title": "Evaluating and improving after the competition", "text": "Go through what worked and what did not, and decide what to improve first. At the end of the season, record what next year's team should know.", "questions": ["What did we learn?", "What would we do differently?"], "output": "A season summary for the next team."}
+    ],
+    "note": "The season's schedule and competitions are agreed with the teacher. This page has no dates because they change every year.",
+    "diary_h": "The team's development diary",
+    "diary_lead": "The development diary is the team's memory. A short entry for each experiment is enough. When you record what was tried and what was learnt, next year's team can carry on from there.",
+    "diary_questions": ["What were we trying to solve?", "What did we change?", "How did we test it?", "What did we observe?", "What do we do next?"],
+    "template_name": "kilparobo-development-diary.txt",
+    "template": [
+      "DEVELOPMENT DIARY – entry",
+      "",
+      "Date:",
+      "Authors (first names or initials):",
+      "Part of the robot or program:",
+      "",
+      "1. What were we trying to solve?",
+      "",
+      "2. What did we change?",
+      "",
+      "3. How did we test it?",
+      "",
+      "4. What did we observe? (measurements, photo or video)",
+      "",
+      "5. What do we do next?",
+      ""
+    ],
+    "where": "You can use the template in the school's own tools, for example a shared text document, a note-taking app or a paper notebook. This page stores nothing. The diary needs no personal data: first names or initials are enough for the authors.",
+    "notebook": "At VEX competitions the judges may evaluate a team's Engineering Notebook. According to RECF's guides the notebook can be on paper or digital, and each event decides which it accepts. The five questions of this template suit recording design, testing and improvements. If the team wants its notebook judged, check the current season's criteria in RECF's guides.",
+    "notebook_link": {"title": "RECF: An Introduction to Notebooking", "url": "https://kb.roboticseducation.org/hc/en-us/articles/41248469020439-Getting-Started-with-Notebooking"},
+    "ahjo_diary": "A longer guide and assessment criteria:",
+    "ahjo_diary_link": "Ahjo's project diary"
+  },
+  "mentor": {
+    "title": "Mentoring – students teach students",
+    "lead": "A more experienced student mentors a new student: shows, asks and gives feedback. Mentoring needs no forms. It is enough that the new student knows whom to turn to.",
+    "principle": "A good mentor does not build the robot for someone else. A good mentor helps the other person learn to build it themselves.",
+    "duties_h": "The mentor's tasks",
+    "duties": [
+      "Welcomes the new student.",
+      "Introduces safe working following the instructions the teacher has approved.",
+      "Shows the basic functions of the devices.",
+      "Helps with the first building and programming tasks.",
+      "Asks guiding questions instead of giving ready answers.",
+      "Encourages solving problems independently.",
+      "Helps with documentation.",
+      "Gives feedback."
+    ],
+    "checklist_h": "The mentor's checklist",
+    "checklist": [
+      "Introduce the team, the workspace and the robot.",
+      "Go through the safety instructions as the teacher has given them.",
+      "Show once, then let the new student do it.",
+      "Keep your own hands off the robot: guide with words.",
+      "Ask before you tell.",
+      "Let mistakes happen when they are safe. They teach.",
+      "Notice effort and progress.",
+      "Help write an entry in the development diary.",
+      "Tell the teacher if something is dangerous or if you cannot help."
+    ],
+    "questions_h": "Guiding questions",
+    "questions": [
+      "What do you think will happen if …?",
+      "How could you test that?",
+      "What is the robot doing now, and what do you want it to do?",
+      "What is the smallest change you could try?",
+      "Where could you look for information on this?",
+      "What did you learn from this experiment?"
+    ],
+    "practical_h": "How mentoring is arranged",
+    "practical": [
+      "A new student gets a mentor at the first meeting. One mentor can have several new students.",
+      "You can change mentor, and you can ask anyone in the team for help.",
+      "Once you have gone through the beginner's path, you can become a mentor yourself.",
+      "A mentor does not approve the use of tools or make safety decisions. The teacher decides on those."
+    ],
+    "growth": "Mentoring also develops the mentor. You learn to explain, listen, lead and give feedback. When you teach something to someone else, you understand it better yourself.",
+    "skills_h": "Recognising skills",
+    "skills_lead": "Competitive robotics builds many skills that a competition result does not show. This light model helps you notice and show what you have learnt. Your competition ranking is not the measure of your skills.",
+    "skills": [
+      {"title": "Technical skills", "signs": ["you build or repair a mechanism", "you program motors and sensors to work together"], "evidence": "a photo of a build, a program or a measurement"},
+      {"title": "Problem solving", "signs": ["you look for a fault systematically", "you try one change at a time and test it"], "evidence": "a diary entry showing the problem, the experiments and the solution"},
+      {"title": "Project work", "signs": ["you plan a task and estimate how long it takes", "you finish the work or hand it over to someone else in good order"], "evidence": "a task list or plan and how it was carried out"},
+      {"title": "Teamwork", "signs": ["you agree on sharing the work with others", "you listen to others' ideas and give reasons for your own"], "evidence": "feedback from the team or your mentor"},
+      {"title": "Documentation", "signs": ["you record changes and tests so that someone else can continue the work"], "evidence": "development diary entries"},
+      {"title": "Mentoring and guiding others", "signs": ["you introduce a new student", "you guide by asking and do not do things for others"], "evidence": "the mentored student's account or a diary entry written together"}
+    ],
+    "skills_how": "During the season, collect a few pieces of evidence, for example a photo, a diary entry, a program or your mentor's feedback, and go through them with the teacher at the end of the season.",
+    "skills_note": "Credits, recognition of studies and assessment are decided separately at the school. Ask the teacher about them.",
+    "diploma": "Skills from competitive robotics may also be used in the portfolio of the Science and Technology Diploma (Tiede- ja teknologia -diplomi) if the work matches the diploma's goals. Ask the teacher about this."
+  },
+  "safety": {
+    "title": "Safety in competitive robotics",
+    "lead": "Everyone completes the safety induction before using tools or driving the robot. This page is a checklist. The binding instructions come from the teacher.",
+    "draft": "The safety instructions are a draft until the school's responsible staff have approved them.",
+    "stop": "Anyone may say STOP. When someone says STOP, the robot is stopped at once.",
+    "roles_h": "Who decides what",
+    "roles": [
+      {"who": "mentor", "items": ["shows the working methods in the instructions", "reminds others of the safety instructions", "stops a dangerous situation and tells the teacher"]},
+      {"who": "teacher", "items": ["approves the use of tools and gives permission to work independently", "decides the rules of the practice and test area", "decides how batteries are charged and stored", "decides what to do in an emergency"]}
+    ],
+    "roles_note": "A student mentor cannot give permission to use dangerous tools independently.",
+    "topics": [
+      {"id": "liikkeet", "icon": "gear", "title": "The robot's mechanical movements", "do": ["Gears, chains, arms and grippers can pinch fingers. Keep hands, hair, jewellery and cables away from moving parts.", "When the robot is powered on, assume that it can move.", "Repair and adjust the robot only with the power off."], "teacher": "where the robot may be used and who may drive it"},
+      {"id": "akut", "icon": "battery", "title": "Handling batteries", "do": ["Use only the V5 Robot Battery and charge it with the V5 charger.", "Do not use a battery that is dented, swollen, hot or smells. Take it to the teacher.", "Do not leave a charging battery unattended.", "Store batteries where the teacher says, so that their connectors cannot touch metal."], "teacher": "where batteries are charged and stored and how a damaged battery is handled"},
+      {"id": "tyokalut", "icon": "tools", "title": "Tools used for building", "do": ["Hand tools such as hex keys and spanners are used after the induction.", "Cutting and filing metal parts leaves sharp edges. File the edges smooth and wear safety glasses.", "Power tools such as a cordless drill or a rotary multi-tool are used only with the teacher's permission and after the teacher's induction."], "teacher": "the use of each power tool, and its independent use separately"},
+      {"id": "testaus", "icon": "ruler", "title": "Testing the robot", "do": ["Test a new program first with the wheels off the ground, or in a fenced-off area.", "Agree before the test who holds the controller and who stops the robot.", "Say it aloud when the robot starts."], "teacher": "the test area and whether autonomous programs may be tested without the teacher"},
+      {"id": "alue", "icon": "flag", "title": "Safety of the practice area", "do": ["Keep the field and walkways clear of bags, parts and cables.", "Spectators stay outside the edge of the field.", "Put parts and tools back at the end of every session."], "teacher": "the limits and rules of the practice area"},
+      {"id": "sammutus", "icon": "power", "title": "Switching the robot off and making it safe", "do": ["Stop the program from the controller or the Brain's screen.", "Switch the Brain off with its power button.", "Disconnect the battery when the robot is repaired, carried or stored.", "Lower raised arms and mechanisms or support them so that nothing falls."], "teacher": "what to do in an emergency and whom to tell"}
+    ],
+    "ahjo": "If you work in Ahjo, also follow Ahjo's safety instructions.",
+    "ahjo_link": "Ahjo's safety",
+    "links": [
+      {"title": "Charging the V5 Battery", "url": "https://kb.vex.com/hc/en-us/articles/360035590152-Charging-the-V5-Battery"},
+      {"title": "Understanding the V5 Robot Battery", "url": "https://kb.vex.com/hc/en-us/articles/360060529912-Understanding-the-V5-Robot-Battery"}
+    ]
+  }
+}
