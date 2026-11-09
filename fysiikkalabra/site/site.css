@@ -1641,3 +1641,110 @@ main.kr-theme{font-family:"Work Sans",var(--sans)}
 .kr-theme .lead{font-family:"Work Sans",var(--sans)}
 @media (min-width:44rem){.local-photo:not(.wide) img{aspect-ratio:4/3;object-fit:cover}}
 .mod-head-plain{width:4rem;height:4rem}@media (max-width:30rem){.mod-head-plain{width:3.25rem;height:3.25rem}}
+/* Ahjo for the student (teacher 2026-11-09, scripts/ahjo.py course_body, lesson_body): a course page that says in a few
+   seconds what you get to do and where to start, lesson cards in groups (Ahjo 1) or the project path (Ahjo 2), and a
+   working view for every lesson whose "start now" is the most visible part. Mobile first: one column, big targets. */
+.ahjo-h1-sub{font-weight:700;font-size:.62em;color:var(--ink-2)}
+.ahjo-cta-row{margin:1rem 0 0}
+.ahjo-cta{display:inline-flex;align-items:center;justify-content:center;gap:.25rem;min-height:48px;padding:.55rem 1.4rem;border-radius:999px;background:var(--kr-navy);color:#fff!important;font:700 1.0625rem/1.3 var(--ahjo-head);text-decoration:none;border:2px solid var(--kr-navy)}
+.ahjo-cta:hover{background:#0a2f86;border-color:#0a2f86}
+.ahjo-cta:focus-visible{outline:3px solid var(--kr-pink);outline-offset:3px}
+.ahjo-cta-quiet{background:#fff;color:var(--kr-navy)!important}.ahjo-cta-quiet:hover{background:var(--kr-pink-soft)}
+.ahjo-from{margin:0 0 1rem;max-width:40rem}.ahjo-from[hidden]{display:none}
+/* Ahjo 1: five groups of lesson cards */
+.ahjo-units{display:grid;gap:2.25rem;margin:0 0 2.5rem}
+.ahjo-unit-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:.35rem .65rem;margin:0 0 .9rem;font-size:1.375rem;font-weight:900;line-height:1.25}
+.ahjo-unit-n{display:inline-grid;place-items:center;flex:none;width:2rem;height:2rem;border-radius:50%;background:var(--kr-pink);color:var(--kr-navy);font-size:1.05rem;align-self:center}
+.ahjo-unit-r{font:600 var(--fs-ui)/1.3 var(--ahjo-text);color:var(--ink-2)}
+.ahjo-lcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,14.5rem),1fr));gap:1rem;margin:0;padding:0;list-style:none}
+.ahjo-lcard{display:flex;flex-direction:column;height:100%;border:1.5px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;color:var(--ink)!important;text-decoration:none;transition:border-color .15s,box-shadow .15s}
+.ahjo-lcard:hover{border-color:var(--kr-navy);box-shadow:0 4px 14px rgba(1,33,105,.12)}
+.ahjo-lcard:focus-visible{outline:3px solid var(--kr-navy);outline-offset:2px}
+.ahjo-lcard-art .ahjo-art{border-radius:0}
+.ahjo-lcard-b{display:flex;flex-direction:column;gap:.3rem;flex:1;padding:.8rem 1rem 1rem}
+.ahjo-lcard-n{font:700 var(--fs-small)/1.3 var(--ahjo-head);letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2)}
+.ahjo-lcard-t{font:900 1.1875rem/1.25 var(--ahjo-head);color:var(--kr-navy)}
+.ahjo-lcard-x{font-size:var(--fs-ui);line-height:1.45;color:var(--ink-2)}
+.ahjo-lcard-go{margin-top:auto;padding-top:.4rem;font:700 var(--fs-ui)/1.3 var(--ahjo-head);color:var(--kr-navy)}
+@media (prefers-reduced-motion:reduce){.ahjo-lcard{transition:none}}
+/* Ahjo 2: the project path, seven stages; a column each on a wide screen, a line down the page on a phone */
+.ahjo-path{display:grid;gap:.75rem;margin:0 0 1rem;padding:0;list-style:none}
+.ahjo-path-step{border-left:4px solid var(--kr-pink);padding:.1rem 0 .1rem .9rem}
+.ahjo-path-step h3{display:flex;align-items:center;gap:.5rem;margin:0 0 .35rem;font-size:1.1875rem;font-weight:900}
+.ahjo-path-sn{display:inline-grid;place-items:center;flex:none;width:1.75rem;height:1.75rem;border-radius:50%;background:var(--kr-navy);color:#fff;font-size:.95rem}
+.ahjo-path-ls{margin:0;padding:0;list-style:none}
+.ahjo-path-ls a{display:flex;align-items:flex-start;gap:.55rem;min-height:44px;padding:.45rem .5rem;border-radius:10px;text-decoration:none;color:var(--ink)!important;line-height:1.35}
+.ahjo-path-ls a:hover{background:var(--kr-pink-soft)}
+.ahjo-path-n{display:inline-grid;place-items:center;flex:none;min-width:1.6rem;height:1.6rem;border-radius:6px;background:var(--bg-tint);font:700 .875rem var(--ahjo-head);color:var(--kr-navy)}
+.ahjo-path-t{display:flex;flex-direction:column;gap:.15rem;font-weight:600;min-width:0}
+.ahjo-path-m{display:inline-flex;align-items:center;gap:.25rem;font:600 .8125rem/1.3 var(--ahjo-text);color:var(--ink-2)}
+.ahjo-path-mi{width:16px;height:16px;color:var(--kr-navy)}
+@media (min-width:44rem){.ahjo-path{grid-template-columns:repeat(auto-fill,minmax(14rem,1fr));gap:1.25rem 1rem}
+  .ahjo-path-step{border-left:0;border-top:4px solid var(--kr-pink);padding:.6rem 0 0}
+  .ahjo-path-ls a{padding:.4rem .3rem}}
+/* the course page's folded details */
+.ahjo-about{margin:0 0 2.5rem;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.ahjo-about>summary{display:flex;flex-wrap:wrap;align-items:baseline;min-height:64px;padding:.7rem 0;cursor:pointer;text-align:left;list-style:none}
+.ahjo-about>summary>.ahjo-about-x{flex-basis:100%;margin-left:1.2em}.ahjo-about>summary::before{color:var(--kr-navy)}
+.ahjo-about>summary:focus-visible{outline:3px solid var(--kr-navy);outline-offset:2px}
+.ahjo-about-t{font:900 1.25rem/1.3 var(--ahjo-head);color:var(--kr-navy)}
+.ahjo-about-x{color:var(--ink-2);font-size:var(--fs-ui)}
+.ahjo-about-b{display:grid;gap:1.5rem;padding:.5rem 0 1.5rem;max-width:48rem}
+.ahjo-about-b h3{margin:0 0 .4rem;font-size:1.125rem;font-weight:900}
+.ahjo-about-b p{margin:0 0 .5rem}
+/* one lesson's working view */
+.ahjo-ltop{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 1rem;margin:0 0 1rem;padding:0 0 .75rem;border-bottom:1px solid var(--line)}
+.ahjo-ltop-home img{display:block;width:36px;height:36px}
+.ahjo-ltop-back{display:inline-flex;align-items:center;min-height:44px;font:700 var(--fs-ui) var(--ahjo-head);text-decoration:none}
+.ahjo-ltop-back:hover{text-decoration:underline}
+.ahjo-ltop-n{margin-left:auto;font:700 var(--fs-small)/1.3 var(--ahjo-head);color:var(--ink-2)}
+.ahjo-lhead{display:grid;gap:1rem;margin:0 0 1.5rem;padding:0 0 1.25rem;border-bottom:4px solid var(--kr-pink)}
+.ahjo-lhead-art{max-width:20rem;border-radius:14px;overflow:hidden}
+.ahjo-lhead h1{margin:0 0 .25rem;font-weight:900;font-size:clamp(1.75rem,1.4rem + 1.4vw,2.5rem);line-height:1.1}
+.ahjo-lhead-sub{margin:0 0 .5rem;font:700 1.0625rem/1.35 var(--ahjo-head);color:var(--ink-2)}
+.ahjo-lhead-m{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem;margin:.6rem 0 0;font-weight:600}
+@media (min-width:44rem){.ahjo-lhead{grid-template-columns:15rem minmax(0,1fr);align-items:center;gap:1.75rem}}
+.ahjo-lgrid{display:grid;gap:2rem}
+.ahjo-lmain{min-width:0}
+@media (min-width:60rem){.ahjo-lgrid{grid-template-columns:minmax(0,1fr) 18.5rem;align-items:start}}
+.ahjo-now{margin:0 0 1.75rem;padding:1.15rem 1.25rem 1.3rem;border:2px solid var(--kr-pink);border-radius:16px;background:var(--kr-pink-soft)}
+.ahjo-now h2{margin:0 0 .4rem;font-size:1.375rem;font-weight:900}
+.ahjo-now-x{margin:0;font-size:1.1875rem;line-height:1.5;color:var(--ink)}
+.ahjo-now-go{margin:1rem 0 0}
+.ahjo-lsec{margin:0 0 1.75rem}
+.ahjo-lsec>h2{margin:0 0 .6rem;font-size:1.3125rem;font-weight:900}
+.ahjo-steps{display:grid;gap:.75rem;margin:0 0 1.75rem;padding:0;list-style:none}
+.ahjo-step{padding:.85rem 1rem;border:1.5px solid var(--line);border-radius:12px;background:#fff}
+.ahjo-step h3{display:flex;flex-wrap:wrap;align-items:baseline;gap:.5rem;margin:0 0 .3rem;font-size:1.125rem;font-weight:900}
+.ahjo-step p{margin:0;line-height:1.5}
+.ahjo-step .ahjo-level-n{font:600 var(--fs-small)/1.3 var(--ahjo-text);color:var(--ink-2)}
+.ahjo-step-3{border-style:dashed;background:var(--bg-tint)}
+.ahjo-done .ahjo-done-row{margin:0 0 .4rem}
+.ahjo-lside{display:grid;gap:1rem;align-content:start}
+.ahjo-lside section{padding:1rem 1.1rem;border-radius:12px;background:var(--bg-tint)}
+.ahjo-lside h2{display:flex;align-items:center;gap:.5rem;margin:0 0 .5rem;font-size:1.0625rem;font-weight:900}
+.ahjo-lside h2::before{display:none}
+.ahjo-lside-list{margin:0;padding-left:1.15rem;line-height:1.45}
+.ahjo-lside-list li{margin:.15rem 0}
+.ahjo-lside-list a{display:block;min-height:24px;padding:.1rem 0;font-weight:600}
+.ahjo-lside p{margin:0}.ahjo-lside-note{margin-top:.5rem!important;font-size:var(--fs-small);color:var(--ink-2)}
+.ahjo-pager{display:grid;grid-template-columns:1fr 1fr;grid-template-areas:"prev next" "up up";gap:.75rem;margin:2.5rem 0 1rem;padding-top:1.25rem;border-top:1px solid var(--line)}
+.ahjo-pager a{display:flex;flex-direction:column;justify-content:center;gap:.1rem;min-height:60px;padding:.6rem 1rem;border:1.5px solid var(--kr-navy);border-radius:12px;text-decoration:none;min-width:0}
+.ahjo-pager a:hover{background:var(--kr-pink-soft)}
+.ahjo-pager-prev{grid-area:prev}.ahjo-pager-next{grid-area:next;text-align:right;align-items:flex-end}
+.ahjo-pager-up{grid-area:up;align-items:center;text-align:center;font:700 var(--fs-ui)/1.3 var(--ahjo-head);border-color:var(--line)!important}
+.ahjo-pager-x{display:block}
+.ahjo-pager-l{font:600 var(--fs-small)/1.3 var(--ahjo-text);color:var(--ink-2)}
+.ahjo-pager-t{font:700 1rem/1.3 var(--ahjo-head);color:var(--kr-navy);overflow-wrap:anywhere}
+.ahjo-snack-hint{margin:0 0 1.5rem}.ahjo-snack-hint a{display:inline-block;min-height:24px;padding:.1rem 0;font-weight:700}
+/* on a phone a lesson card is a row (picture left), so the 16 lessons stay a short scroll */
+@media (max-width:37.5rem){.ahjo-lcards{gap:.65rem}
+  .ahjo-lcard{flex-direction:row;align-items:stretch}
+  .ahjo-lcard-art{flex:none;width:6.5rem;display:flex;align-items:center;background:var(--bg-tint)}
+  .ahjo-lcard-b{padding:.6rem .8rem .7rem;gap:.15rem}.ahjo-lcard-t{font-size:1.0625rem}
+  .ahjo-lcard-x{font-size:var(--fs-small)}
+  .ahjo-course-hero .ahjo-course-logo{width:72px;height:72px}}
+@media (max-width:43.99rem){.ahjo-lhead-art{max-width:10rem}}
+@media (max-width:30rem){.ahjo-pager{grid-template-columns:1fr;grid-template-areas:"next" "prev" "up"}.ahjo-pager-next{text-align:left;align-items:flex-start}}
+.ahjo-eyebrow-logo{display:flex;align-items:center;gap:.6rem}.ahjo-eyebrow-logo a{display:block;flex:none;border-radius:8px}
+.ahjo-course-hero .ahjo-logo.ahjo-logo-mini{width:40px;height:40px}

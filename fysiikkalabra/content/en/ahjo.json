@@ -141,6 +141,34 @@
     "challenge_induction": "Needs the device induction",
     "lesson_challenge": "Optional extra challenge",
     "lesson_final": "Mini project options",
+    "course_begin": "Start the first task",
+    "course_begin2": "Start: {t}",
+    "lesson_n": "Lesson {n}",
+    "lesson_of": "Lesson {n}/{m}",
+    "lesson_open": "Open lesson {n}",
+    "lesson_back": "Back to {t}",
+    "lesson_prev": "Previous lesson",
+    "lesson_next": "Next lesson",
+    "lesson_needs": "You need",
+    "lesson_guide": "Step-by-step guide",
+    "lesson_safety": "Safety",
+    "lesson_safety_none": "No devices are used in this lesson. Follow Ahjo's general rules.",
+    "lesson_safety_note": "Ahjo's safety instructions are still being prepared. Follow your teacher's induction.",
+    "lesson_today": "Today you make",
+    "lesson_now": "In your project now",
+    "lesson_task": "Next task",
+    "lesson_save": "Save in your project diary",
+    "lesson_diary": "Project diary",
+    "lesson_milestone": "Hand-in",
+    "lesson_challenge_card": "Small extra challenge",
+    "path_h": "The project path",
+    "path_lead": "16 lessons, seven stages and five hand-ins. Every stage takes the project forward.",
+    "units_h": "16 lessons in five parts",
+    "unit_lessons": "Lessons {a}–{b}",
+    "unit_lesson": "Lesson {a}",
+    "course_about": "More about the course",
+    "course_about_lead": "Goals, the licence and what comes next.",
+    "guide_back": "Back to the lesson",
     "deepening_h": "Optional deepening",
     "deepening_lead": "Optional extra work for those who get further or want to go deeper. It is not part of the outline everyone follows.",
     "course_page_open": "Open the course page",
@@ -231,6 +259,50 @@
     {
       "code": "AHJO1",
       "subtitle": "Technology basics",
+      "pitch": "Try things, build and invent something of your own. You learn 3D printing, electronics, programming and robotics by doing.",
+      "units": [
+        {
+          "title": "Explore and try",
+          "lessons": [
+            1,
+            2
+          ]
+        },
+        {
+          "title": "Design and 3D print",
+          "lessons": [
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "title": "Electronics and Arduino",
+          "lessons": [
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "title": "Robotics",
+          "lessons": [
+            12,
+            13
+          ]
+        },
+        {
+          "title": "Your own project",
+          "lessons": [
+            14,
+            15,
+            16
+          ]
+        }
+      ],
       "topics": [
         "3D modelling",
         "3D printing",
@@ -261,6 +333,16 @@
           "output_plus": "A recorded real problem you would like to solve during the course.",
           "guides": [
             "ahjo-projektipaivakirja"
+          ],
+          "needs": [
+            "LED",
+            "CR2032 coin cell",
+            "ping-pong ball, paper, foil or a plastic bottle",
+            "project diary"
+          ],
+          "safety": [
+            "saannot",
+            "perehdytys"
           ]
         },
         {
@@ -275,7 +357,18 @@
           },
           "output": "The device induction done and an illustrated instruction card for one device.",
           "output_plus": "A risk assessment of the device.",
-          "guides": []
+          "guides": [],
+          "needs": [
+            "phone or camera",
+            "Ahjo's safety instructions",
+            "safety glasses"
+          ],
+          "safety": [
+            "perehdytys",
+            "tyokalut",
+            "3d-tulostus",
+            "onnettomuus"
+          ]
         },
         {
           "title": "Basics of 3D modelling",
@@ -291,7 +384,13 @@
           "output_plus": "A model of an object that improves something in your everyday life.",
           "guides": [
             "ahjo-3d-mallinnus"
-          ]
+          ],
+          "needs": [
+            "computer",
+            "Tinkercad account",
+            "the teacher's ready-made template"
+          ],
+          "safety": []
         },
         {
           "title": "A model to measure",
@@ -307,6 +406,14 @@
           "output_plus": "A table of how the clearance depends on the print orientation.",
           "guides": [
             "ahjo-3d-mallinnus"
+          ],
+          "needs": [
+            "computer and Tinkercad",
+            "calliper",
+            "three objects to measure"
+          ],
+          "safety": [
+            "tyokalut"
           ]
         },
         {
@@ -323,6 +430,14 @@
           "output_plus": "Strength test results and a comparison of two beams as a table.",
           "guides": [
             "ahjo-3d-tulostus"
+          ],
+          "needs": [
+            "computer and PrusaSlicer",
+            "3D printer with the teacher's permission",
+            "ready-made beam model"
+          ],
+          "safety": [
+            "3d-tulostus"
           ]
         },
         {
@@ -339,6 +454,14 @@
           "output_plus": "An illustrated defect guide: the defect, the cause and the fix.",
           "guides": [
             "ahjo-3d-tulostus"
+          ],
+          "needs": [
+            "prints from the failure box",
+            "your own print",
+            "calliper"
+          ],
+          "safety": [
+            "3d-tulostus"
           ]
         },
         {
@@ -356,6 +479,14 @@
           "guides": [
             "ahjo-arduino",
             "fy6-3"
+          ],
+          "needs": [
+            "Arduino Uno and USB cable",
+            "breadboard and wires",
+            "LED and 330 Ω resistor"
+          ],
+          "safety": [
+            "elektroniikka"
           ]
         },
         {
@@ -372,6 +503,14 @@
           "output_plus": "An estimate of the battery life based on your measurements.",
           "guides": [
             "fy6-2"
+          ],
+          "needs": [
+            "multimeter",
+            "a new and a used battery",
+            "the LED circuit from the last lesson"
+          ],
+          "safety": [
+            "elektroniikka"
           ]
         },
         {
@@ -388,6 +527,14 @@
           "output_plus": "A reaction-time game and the mean and spread of the class's results.",
           "guides": [
             "ahjo-arduino"
+          ],
+          "needs": [
+            "Arduino Uno and USB cable",
+            "computer and Arduino IDE",
+            "LED circuit on the breadboard"
+          ],
+          "safety": [
+            "elektroniikka"
           ]
         },
         {
@@ -404,6 +551,14 @@
           "output_plus": "A calibrated series of measurements and a graph with units.",
           "guides": [
             "tvt-mittausohjelma"
+          ],
+          "needs": [
+            "Arduino Uno and USB cable",
+            "light sensor, button or distance sensor",
+            "breadboard and wires"
+          ],
+          "safety": [
+            "elektroniikka"
           ]
         },
         {
@@ -420,6 +575,14 @@
           "output_plus": "A light-following servo.",
           "guides": [
             "fy7-4"
+          ],
+          "needs": [
+            "Arduino Uno and USB cable",
+            "servo and potentiometer",
+            "card and tape for the figure"
+          ],
+          "safety": [
+            "elektroniikka"
           ]
         },
         {
@@ -434,7 +597,16 @@
           },
           "output": "A working robot base with your own shell or load space.",
           "output_plus": "An experimental comparison of two gear ratios.",
-          "guides": []
+          "guides": [],
+          "needs": [
+            "robotics kit",
+            "test program",
+            "a load, for example coins"
+          ],
+          "safety": [
+            "tyokalut",
+            "mekaaninen"
+          ]
         },
         {
           "title": "Programming a robot",
@@ -448,7 +620,15 @@
           },
           "output": "A robot that drives the track with pre-programmed moves, and a first try with a sensor.",
           "output_plus": "A comparison of the rounds: time and accuracy over three repetitions.",
-          "guides": []
+          "guides": [],
+          "needs": [
+            "the assembled robot",
+            "computer",
+            "masking tape to mark the track"
+          ],
+          "safety": [
+            "tyokalut"
+          ]
         },
         {
           "title": "Planning the mini project",
@@ -465,7 +645,13 @@
           "guides": [
             "ahjo-projektipaivakirja"
           ],
-          "final": true
+          "final": true,
+          "needs": [
+            "project diary",
+            "pen and paper for the sketch",
+            "your earlier course work"
+          ],
+          "safety": []
         },
         {
           "title": "Mini project",
@@ -481,6 +667,15 @@
           "output_plus": "Three tests and an improved weakest point.",
           "guides": [
             "ahjo-projektipaivakirja"
+          ],
+          "needs": [
+            "your own plan",
+            "the parts on your list",
+            "project diary"
+          ],
+          "safety": [
+            "valvonta",
+            "tyokalut"
           ]
         },
         {
@@ -497,6 +692,14 @@
           "output_plus": "A plan for the next version and a self-assessment with the project journal's criteria.",
           "guides": [
             "ahjo-projektipaivakirja"
+          ],
+          "needs": [
+            "the finished device",
+            "phone to film a video",
+            "project diary"
+          ],
+          "safety": [
+            "sailytys"
           ]
         }
       ],
@@ -551,6 +754,60 @@
     {
       "code": "AHJO2",
       "subtitle": "Design and build",
+      "pitch": "Get excited about a problem, come up with a solution and build your own prototype.",
+      "units": [
+        {
+          "title": "Invent",
+          "lessons": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "title": "Try",
+          "lessons": [
+            4,
+            5
+          ]
+        },
+        {
+          "title": "Design",
+          "lessons": [
+            6,
+            7
+          ]
+        },
+        {
+          "title": "Build",
+          "lessons": [
+            8
+          ]
+        },
+        {
+          "title": "Test",
+          "lessons": [
+            9,
+            10
+          ]
+        },
+        {
+          "title": "Improve",
+          "lessons": [
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "title": "Present",
+          "lessons": [
+            14,
+            15,
+            16
+          ]
+        }
+      ],
       "topics": [
         "Ideation and defining the problem",
         "Design and prototyping",
@@ -596,6 +853,13 @@
           "output": "The ball run, one recorded failure and at least five recorded problems.",
           "guides": [
             "ahjo-projektipaivakirja"
+          ],
+          "needs": [
+            "the marble run materials",
+            "project diary"
+          ],
+          "safety": [
+            "tyokalut"
           ]
         },
         {
@@ -606,21 +870,39 @@
           "guides": [
             "ahjo-projektipaivakirja"
           ],
-          "milestone": "Hand-in 1: the problem and the user"
+          "milestone": "Hand-in 1: the problem and the user",
+          "needs": [
+            "project diary",
+            "interview questions",
+            "at least three users"
+          ],
+          "safety": []
         },
         {
           "title": "Ideation and choice",
           "text": "At least ten ideas and a justified choice. Stage 3: solutions.",
           "example": "Ideate through constraints: what if it cost at most €20, worked without electricity, or the user had to be able to repair it? Choose with a light decision matrix that covers sustainability, accessibility, design and cost.",
           "output": "Ideas and a decision matrix.",
-          "guides": []
+          "guides": [],
+          "needs": [
+            "paper and markers",
+            "decision matrix in the project diary"
+          ],
+          "safety": []
         },
         {
           "title": "Rough prototype",
           "text": "A prototype of cardboard, tape and a ready-made circuit in one lesson. Stage 4: prototype.",
           "example": "Build the quickest possible model that tests your riskiest assumption: does the user want this, and do they understand how to use it?",
           "output": "A rough prototype and the assumption to test.",
-          "guides": []
+          "guides": [],
+          "needs": [
+            "card, tape and string",
+            "a ready-made circuit if needed"
+          ],
+          "safety": [
+            "tyokalut"
+          ]
         },
         {
           "title": "User test 1",
@@ -630,14 +912,25 @@
           "guides": [
             "ahjo-projektipaivakirja"
           ],
-          "milestone": "Hand-in 2: observations from the first user test"
+          "milestone": "Hand-in 2: observations from the first user test",
+          "needs": [
+            "your prototype",
+            "a tester from outside the group",
+            "project diary"
+          ],
+          "safety": []
         },
         {
           "title": "Project plan",
           "text": "Milestones, roles, a priced materials list and risks.",
           "example": "Write a plan as in a real product development project: who does what and when, what the materials cost and what could go wrong.",
           "output": "Project plan and budget.",
-          "guides": []
+          "guides": [],
+          "needs": [
+            "project diary",
+            "prices of the materials"
+          ],
+          "safety": []
         },
         {
           "title": "Design, materials and methods",
@@ -647,7 +940,13 @@
           "guides": [
             "ahjo-3d-mallinnus"
           ],
-          "milestone": "Hand-in 3: the plan and materials"
+          "milestone": "Hand-in 3: the plan and materials",
+          "needs": [
+            "computer and a suitable design program",
+            "two materials to compare",
+            "calliper"
+          ],
+          "safety": []
         },
         {
           "title": "Working prototype",
@@ -657,6 +956,17 @@
           "guides": [
             "ahjo-arduino",
             "ahjo-3d-tulostus"
+          ],
+          "needs": [
+            "your own plan",
+            "Ahjo's devices with the teacher's permission",
+            "materials"
+          ],
+          "safety": [
+            "valvonta",
+            "tyokalut",
+            "3d-tulostus",
+            "elektroniikka"
           ]
         },
         {
@@ -666,7 +976,13 @@
           "output": "Test plan and the first results.",
           "guides": [
             "tvt-mittausohjelma"
-          ]
+          ],
+          "needs": [
+            "prototype",
+            "measuring tools",
+            "spreadsheet or measurement program"
+          ],
+          "safety": []
         },
         {
           "title": "User test 2",
@@ -675,21 +991,43 @@
           "output": "Observations from the second user test.",
           "guides": [
             "ahjo-projektipaivakirja"
-          ]
+          ],
+          "needs": [
+            "working prototype",
+            "tester",
+            "project diary"
+          ],
+          "safety": []
         },
         {
           "title": "Improvement 1",
           "text": "Changes based on the tests and feedback. Stage 7: improvement.",
           "example": "Choose the two most important changes on the basis of the tests, justify them and make them.",
           "output": "Two justified changes.",
-          "guides": []
+          "guides": [],
+          "needs": [
+            "prototype",
+            "what the tests showed",
+            "materials for the changes"
+          ],
+          "safety": [
+            "tyokalut"
+          ]
         },
         {
           "title": "Improvement 2",
           "text": "An improvement whose effect shows in the measurements.",
           "example": "Choose one improvement based on the test results and measure its effect. It can be a new part or sensor, but just as well a simpler structure, a different material or a better program.",
           "output": "A measured improvement and the reason for it.",
-          "guides": []
+          "guides": [],
+          "needs": [
+            "prototype",
+            "measuring tools",
+            "materials for the improvement"
+          ],
+          "safety": [
+            "tyokalut"
+          ]
         },
         {
           "title": "Final testing",
@@ -699,14 +1037,27 @@
           "guides": [
             "tvt-tyoselostus"
           ],
-          "milestone": "Hand-in 4: test report"
+          "milestone": "Hand-in 4: test report",
+          "needs": [
+            "finished solution",
+            "test plan",
+            "measuring tools"
+          ],
+          "safety": []
         },
         {
           "title": "Finishing and user guide",
           "text": "Last fixes, appearance and usability.",
           "example": "Finish it for presentation: a case, labels and a user guide that let the user manage without the makers.",
           "output": "A finished solution and a user guide.",
-          "guides": []
+          "guides": [],
+          "needs": [
+            "finished solution",
+            "materials for the case and the labels"
+          ],
+          "safety": [
+            "tyokalut"
+          ]
         },
         {
           "title": "Documentation",
@@ -715,6 +1066,13 @@
           "output": "Summary and files.",
           "guides": [
             "ahjo-projektipaivakirja"
+          ],
+          "needs": [
+            "project diary",
+            "photos and files"
+          ],
+          "safety": [
+            "sailytys"
           ]
         },
         {
@@ -725,7 +1083,13 @@
           "guides": [
             "ahjo-projektipaivakirja"
           ],
-          "milestone": "Hand-in 5: summary and video"
+          "milestone": "Hand-in 5: summary and video",
+          "needs": [
+            "finished solution",
+            "phone to film a video",
+            "project diary"
+          ],
+          "safety": []
         }
       ],
       "flex": "Projects differ. The hand-ins and milestones are the same for everyone, but the rhythm of building and testing can be agreed with the teacher. For example, a long building stage can carry on into the next lesson while the test plan is written alongside it.",
