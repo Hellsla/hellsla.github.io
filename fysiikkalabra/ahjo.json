@@ -650,8 +650,8 @@
           "output_plus": "Kahden välityssuhteen kokeellinen vertailu.",
           "guides": [],
           "needs": [
-            "robotiikkasarja",
-            "sarjan testiohjelma (opettaja valitsee sarjan mukaan)",
+            "Arduino-robottialusta: Arduino Uno, kaksi DC-moottoria, moottorinohjain ja moottoreiden paristo",
+            "aloitusaineiston testiohjelma (tarkista pinnit oman moottorinohjaimen mukaan)",
             "kuorma: kolikoita tai punnuksia",
             "keittiövaaka ja mittanauha"
           ],
@@ -660,7 +660,8 @@
             "mekaaninen"
           ],
           "starters": [
-            "kuormituskoe"
+            "kuormituskoe",
+            "robotti-testi"
           ],
           "peer": "Vertailkaa kuormatiloja toisen ryhmän kanssa: kumman ratkaisu kantaa enemmän, ja miksi?"
         },
@@ -679,13 +680,16 @@
           "guides": [],
           "needs": [
             "koottu robotti",
-            "tietokone ja sarjan ohjelmointiympäristö",
+            "tietokone ja Arduino IDE",
             "maalarinteippiä radan merkitsemiseen"
           ],
           "safety": [
             "tyokalut"
           ],
-          "peer": "Kokeilkaa toisen parin ohjelmaa omalla robotillanne ja kertokaa, missä kohdassa robotti poikkesi reitiltä."
+          "peer": "Kokeilkaa toisen parin ohjelmaa omalla robotillanne ja kertokaa, missä kohdassa robotti poikkesi reitiltä.",
+          "starters": [
+            "robotti-testi"
+          ]
         },
         {
           "title": "Miniprojektin suunnittelu",
@@ -2576,6 +2580,12 @@
       "file": "sarjaplotteri.ino",
       "title": "Valoanturin ohjelma sarjaplotteriin (Arduino)",
       "note": "testaamaton luonnos: kokeile ensin opettajan koneella"
+    },
+    {
+      "id": "robotti-testi",
+      "file": "robotti-testi.ino",
+      "title": "Robotin testiohjelma (Arduino)",
+      "note": "testaamaton luonnos: robottialusta ei ole vielä valittu, tarkista pinnit"
     },
     {
       "id": "kuormituskoe",
