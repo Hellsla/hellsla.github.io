@@ -54,10 +54,18 @@ for lang in i18n.languages():
     expect(f"{lang}: every card has its status badge, a measure of success and an inspiration link marked external",
            all(re.search(rf'id="{p["id"]}".*?ahjo-badge.*?{re.escape(ahjo.esc(d["ui"]["proj_success"]))}.*?rel="external noopener".*?ahjo-ext', pr, re.S) for p in d["projects"]))
     expect(f"{lang}: the project page says the cards are proposals", ahjo.esc(d["ui"]["projects_note"]) in pr)
+    expect(f"{lang}: a project card shows its picture, name, line, level and length first and opens for the rest (teacher 2026-11-09)",
+           all(re.search(rf'<article class="ahjo-proj[^"]*" id="{p["id"]}"[^>]* data-level="{p["level"]}"><div class="ahjo-pcard-art"><svg.*?<h3[^>]*>{re.escape(ahjo.esc(p["title"]))}</h3>'
+                         rf'.*?class="ahjo-proj-sum">{re.escape(ahjo.esc(p["summary"]))}</p><p class="ahjo-proj-meta">.*?<details class="ahjo-open"><summary>.*?<dl class="ahjo-proj-dl">.*?</dl></details></article>', pr, re.S)
+               for p in d["projects"]))
+    expect(f"{lang}: the projects can be filtered by level (hidden until the script runs)", re.search(r'<div class="ahjo-filter" data-key="level"[^>]*hidden>', pr) is not None)
     bank = (out / ahjo.BANK).read_text() if (out / ahjo.BANK).is_file() else ""
     chal = re.findall(r'<article class="ahjo-proj ahjo-chal" id="([^"]+)".*?</article>', bank, re.S)
     expect(f"{lang}: the bank shows every small challenge once (10–15, teacher 2026-11-08), each with its three levels", 10 <= len(chal) <= 15
            and sorted(chal) == sorted(x["id"] for x in d.get("challenges", [])) and bank.count('class="ahjo-levels ahjo-chal-levels"') == len(chal), chal)
+    expect(f"{lang}: the bank jumps to every topic, and the small challenges can be filtered by time",
+           all(f'<a href="#{c["id"]}">' in bank for c in d["categories"]) and re.search(r'<div class="ahjo-filter" data-key="time"[^>]*hidden>', bank) is not None
+           and all(re.search(rf'id="{x["id"]}"[^>]* data-time="{"short" if x["minutes"] <= 20 else "long"}"', bank) for x in d.get("challenges", [])))
     guided = [x for x in d.get("challenges", []) if x.get("guide")]
     expect(f"{lang}: the three small challenges with a full guide (teacher 2026-11-08) link to it from their card", len(guided) == 3
            and all(re.search(rf'id="{x["id"]}".*?class="ahjo-chal-guide"><a href="{x["guide"]}.html"', bank, re.S) and (out / f'{x["guide"]}.html').is_file() for x in guided), [x["id"] for x in guided])
@@ -230,6 +238,17 @@ try:
         expect("Next lesson goes from lesson 9 to lesson 10", pg.url.endswith("/ahjo-1-tunti-10.html"), pg.url)
         pg.click(".ahjo-pager-up"); pg.wait_for_load_state()
         expect("Back to the course stays on the course page", pg.url.split("#")[0].endswith("/ahjo-1.html"), pg.url)
+        pg.goto(f"http://localhost:{port}/ahjo-projektit.html")
+        d0 = ahjo.load()
+        pg.click('.ahjo-filter[data-key="level"] .ahjo-fbtn[data-v="3"]')
+        vis = pg.evaluate("[...document.querySelectorAll('article.ahjo-proj')].filter(a => a.offsetParent).map(a => a.id)")
+        expect("project bank: the level filter shows only that level's cards", sorted(vis) == sorted(p["id"] for p in d0["projects"] if p["level"] == 3) and vis, vis)
+        pg.click('.ahjo-filter[data-key="level"] .ahjo-fbtn[data-v=""]')
+        expect("project bank: All shows every card again", pg.evaluate("[...document.querySelectorAll('article.ahjo-proj')].filter(a => a.offsetParent).length") == len(d0["projects"]))
+        pg.goto(f"http://localhost:{port}/ahjo-materiaalit.html")
+        pg.click('.ahjo-filter[data-key="time"] .ahjo-fbtn[data-v="short"]')
+        vis = pg.evaluate("[...document.querySelectorAll('article.ahjo-chal')].filter(a => a.offsetParent).map(a => a.id)")
+        expect("material bank: the time filter shows only the short challenges", sorted(vis) == sorted(x["id"] for x in d0["challenges"] if x["minutes"] <= 20) and vis, vis)
         pg.goto(f"http://localhost:{port}/ahjo-1.html")
         top = pg.evaluate("document.querySelector('.ahjo-course-hero .ahjo-cta').getBoundingClientRect().bottom")
         expect("phone: the button to the first task is in the first screen", top <= 844, top)

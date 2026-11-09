@@ -25,7 +25,7 @@
     "status_kaytossa": "In use",
     "bank_h": "Resource bank",
     "bank_lead": "Shared guides and materials in eight topics. Each guide has one home, and the same guide serves every course that uses it.",
-    "bank_page_lead": "Ahjo's shared guides and materials. Each guide has one home; courses link to it instead of copying it.",
+    "bank_page_lead": "Guides, challenges and materials for your work in Ahjo. Find them by topic or by time.",
     "bank_ready": {
       "one": "{n} resource ready",
       "other": "{n} resources ready"
@@ -248,6 +248,16 @@
       "Intermediate",
       "Demanding"
     ],
+    "filter_topic": "Topic",
+    "filter_time": "Time",
+    "filter_level": "Level",
+    "filter_all": "All",
+    "filter_short": "up to 20 min",
+    "filter_long": "30–45 min",
+    "filter_shown": "Showing {n}/{m}",
+    "chal_more": "How to do it",
+    "proj_more": "Project details",
+    "bank_jump": "Go to a topic",
     "proj_lessons": {
       "one": "about {n} lesson",
       "other": "about {n} lessons"
@@ -1550,6 +1560,7 @@
       "id": "etaisyysvaroitin",
       "status": "ehdotus",
       "title": "Distance warning for a visually impaired person",
+      "art": "elektroniikka",
       "summary": "A device attached to a cane or clothing that warns with vibration of an obstacle at head height.",
       "problem": "A white cane finds obstacles on the ground but not those at head height, such as an open window or a sign.",
       "skills": [
@@ -1588,6 +1599,7 @@
       "id": "co2-mittari",
       "status": "ehdotus",
       "title": "Classroom carbon dioxide meter",
+      "art": "ahjo1-10",
       "summary": "A meter shows the classroom's carbon dioxide level as traffic lights and records the measurements of the whole day.",
       "problem": "Poor ventilation makes people tired, but nobody in the classroom notices when the room needs airing.",
       "skills": [
@@ -1626,6 +1638,7 @@
       "id": "aistiystavallinen-luokka",
       "status": "ehdotus",
       "title": "A sensory-friendly classroom",
+      "art": "ahjo1-7",
       "summary": "A small display calmly tells when the noise or lighting in the classroom becomes too stressful.",
       "problem": "Noise and bright light are a strain for some students, and the situation is noticed only after concentration is already lost.",
       "skills": [
@@ -1664,6 +1677,7 @@
       "id": "planeettamonkija",
       "status": "ehdotus",
       "title": "A rover for another planet",
+      "art": "robotiikka",
       "summary": "A rover that avoids obstacles on its own, with its mass and parts budget limited as in a space probe.",
       "problem": "A rover on Mars cannot be steered in real time, because a message takes minutes to arrive. The rover must avoid obstacles by itself.",
       "skills": [
@@ -1702,6 +1716,7 @@
       "id": "kevein-silta",
       "status": "ehdotus",
       "title": "The lightest load-bearing bridge",
+      "art": "ahjo1-5",
       "summary": "A 3D-printed bridge designed to carry as large a load as possible with as small a mass as possible.",
       "problem": "A structure must be made strong without wasting material. The same question is solved when designing bridges, aircraft and packaging.",
       "skills": [
@@ -1740,6 +1755,7 @@
       "id": "energiankulutus",
       "status": "ehdotus",
       "title": "Monitoring the school's energy use",
+      "art": "ahjo1-8",
       "summary": "A measuring device records lighting and temperature for a day and night and reveals where energy is wasted.",
       "problem": "Lights and devices are left on in empty rooms, but nobody knows how often and how much.",
       "skills": [
@@ -1778,6 +1794,7 @@
       "id": "kastelu",
       "status": "ehdotus",
       "title": "Automatic plant watering",
+      "art": "ahjo1-9",
       "summary": "A system measures the moisture of a pot and waters the plant when the soil dries.",
       "problem": "The classroom plants dry out during holidays, and overwatering is as harmful as drought.",
       "skills": [
@@ -1821,6 +1838,7 @@
       "id": "viivanseuraaja",
       "status": "ehdotus",
       "title": "Line-following robot with feedback control",
+      "art": "ahjo1-13",
       "summary": "A robot follows a tape line, and its steering is improved with feedback control using measurements.",
       "problem": "A simple robot wobbles from side to side over the line and is slow. How can the steering be made smooth and fast?",
       "skills": [
@@ -1859,6 +1877,7 @@
       "id": "valaiseva-tekstiili",
       "status": "ehdotus",
       "title": "Light-up e-textile",
+      "art": "tekstiilit",
       "summary": "A sewn cuff or reflector accessory whose lights switch on with a magnetic switch.",
       "problem": "A cyclist or pedestrian is hard to see in the dark, and an ordinary reflector does not appeal to everyone.",
       "skills": [
@@ -1899,6 +1918,7 @@
       "id": "tormaystesti",
       "status": "ehdotus",
       "title": "Crash test car with an accelerometer",
+      "art": "ahjo2-9",
       "summary": "A model car crashes into an obstacle, and a micro:bit on board measures the passenger's acceleration.",
       "problem": "How should the front of a car be built so that the force on the passenger in a crash is as small as possible?",
       "skills": [
@@ -1936,6 +1956,7 @@
       "id": "tuuliturbiini",
       "status": "ehdotus",
       "title": "Wind turbine blades",
+      "art": "3d",
       "summary": "The group designs and prints blades for a model turbine and finds out by measuring which shape gives the most power.",
       "problem": "The shape, angle and number of blades affect how much energy is taken from the wind. Which matters most?",
       "skills": [
@@ -1974,6 +1995,7 @@
       "id": "valosyntetisaattori",
       "status": "ehdotus",
       "title": "A synthesiser played with light",
+      "art": "ahjo1-7",
       "summary": "An instrument whose pitch and tone change when you shade light sensors with your hands.",
       "problem": "Can an instrument be made so that it is played without keys and every member of the group can play it?",
       "skills": [
@@ -2012,6 +2034,7 @@
       "id": "proteesikasi",
       "status": "ehdotus",
       "title": "A prosthetic hand that feels its grip",
+      "art": "ahjo1-11",
       "summary": "A 3D-printed hand whose fingers are moved by servos and whose grip stops when a force sensor feels the contact.",
       "problem": "A prosthesis must be able to grip both a heavy and a fragile object without the user having to watch the hand all the time.",
       "skills": [
@@ -2051,6 +2074,7 @@
       "id": "sahkoauto",
       "status": "ehdotus",
       "title": "Model electric car",
+      "art": "ahjo1-12",
       "summary": "The group builds an electric model car within a budget and improves its speed and energy use on the basis of measurements.",
       "problem": "In an electric car the motor, gearing, mass and air resistance together decide how far the battery takes you. What should be improved first?",
       "skills": [

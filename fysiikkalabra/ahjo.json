@@ -26,7 +26,7 @@
     "status_kaytossa": "Käytössä",
     "bank_h": "Materiaalipankki",
     "bank_lead": "Yhteiset ohjeet ja materiaalit kahdeksassa aiheessa. Jokaisella ohjeella on yksi paikka, ja sama ohje palvelee kaikkia opintojaksoja, jotka sitä käyttävät.",
-    "bank_page_lead": "Ahjon yhteiset ohjeet ja materiaalit. Jokaisella ohjeella on yksi paikka; opintojaksot linkittävät siihen eivätkä kopioi sitä.",
+    "bank_page_lead": "Ohjeet, haasteet ja materiaalit Ahjon töihin. Etsi aiheen tai keston mukaan.",
     "bank_ready": {
       "one": "{n} valmis materiaali",
       "other": "{n} valmista materiaalia"
@@ -249,6 +249,16 @@
       "Edistynyt",
       "Vaativa"
     ],
+    "filter_topic": "Aihe",
+    "filter_time": "Kesto",
+    "filter_level": "Taso",
+    "filter_all": "Kaikki",
+    "filter_short": "enintään 20 min",
+    "filter_long": "30–45 min",
+    "filter_shown": "Näytetään {n}/{m}",
+    "chal_more": "Näin teet",
+    "proj_more": "Projektin tiedot",
+    "bank_jump": "Siirry aiheeseen",
     "proj_lessons": {
       "one": "noin {n} oppitunti",
       "other": "noin {n} oppituntia"
@@ -1551,6 +1561,7 @@
       "id": "etaisyysvaroitin",
       "status": "ehdotus",
       "title": "Etäisyysvaroitin näkövammaiselle",
+      "art": "elektroniikka",
       "summary": "Kepin tai vaatteen kiinnitettävä laite, joka varoittaa värinällä esteestä pään korkeudella.",
       "problem": "Valkoinen keppi löytää maassa olevat esteet, mutta ei pään korkeudella olevia, kuten avattua ikkunaa tai kylttiä.",
       "skills": [
@@ -1589,6 +1600,7 @@
       "id": "co2-mittari",
       "status": "ehdotus",
       "title": "Luokan hiilidioksidimittari",
+      "art": "ahjo1-10",
       "summary": "Mittari näyttää luokan hiilidioksidipitoisuuden liikennevaloina ja tallentaa koko päivän mittaukset.",
       "problem": "Huono ilmanvaihto väsyttää, mutta luokassa ei huomata, milloin tuuletus olisi tarpeen.",
       "skills": [
@@ -1627,6 +1639,7 @@
       "id": "aistiystavallinen-luokka",
       "status": "ehdotus",
       "title": "Aistiystävällinen luokka",
+      "art": "ahjo1-7",
       "summary": "Pieni näyttö kertoo rauhallisesti, kun luokan melu tai valaistus kasvaa liian kuormittavaksi.",
       "problem": "Melu ja kirkas valo kuormittavat osaa oppilaista, ja tilanne huomataan vasta, kun keskittyminen on jo mennyt.",
       "skills": [
@@ -1665,6 +1678,7 @@
       "id": "planeettamonkija",
       "status": "ehdotus",
       "title": "Mönkijä vieraalle planeetalle",
+      "art": "robotiikka",
       "summary": "Itsenäisesti esteitä väistävä mönkijä, jonka massa ja osabudjetti on rajattu kuten avaruusluotaimessa.",
       "problem": "Marsissa olevaa mönkijää ei voi ohjata reaaliajassa, koska viesti kulkee minuutteja. Mönkijän on väistettävä esteet itse.",
       "skills": [
@@ -1703,6 +1717,7 @@
       "id": "kevein-silta",
       "status": "ehdotus",
       "title": "Kevein kantava silta",
+      "art": "ahjo1-5",
       "summary": "3D-tulostettu silta, jonka tavoitteena on kantaa mahdollisimman suuri kuorma mahdollisimman pienellä massalla.",
       "problem": "Rakenne pitää saada lujaksi ilman, että materiaalia kuluu turhaan. Sama kysymys ratkaistaan siltojen, lentokoneiden ja pakkausten suunnittelussa.",
       "skills": [
@@ -1741,6 +1756,7 @@
       "id": "energiankulutus",
       "status": "ehdotus",
       "title": "Koulun energiankulutuksen seuranta",
+      "art": "ahjo1-8",
       "summary": "Mittalaite kirjaa valaistuksen ja lämpötilan vuorokauden ajan ja paljastaa, missä energiaa kuluu turhaan.",
       "problem": "Valot ja laitteet jäävät päälle tyhjiin tiloihin, mutta kukaan ei tiedä, kuinka usein ja kuinka paljon.",
       "skills": [
@@ -1779,6 +1795,7 @@
       "id": "kastelu",
       "status": "ehdotus",
       "title": "Kasvien automaattinen kastelu",
+      "art": "ahjo1-9",
       "summary": "Järjestelmä mittaa ruukun kosteutta ja kastelee kasvin, kun maa kuivuu.",
       "problem": "Luokan kasvit kuivuvat lomilla, ja liikakastelu on yhtä haitallista kuin kuivuus.",
       "skills": [
@@ -1822,6 +1839,7 @@
       "id": "viivanseuraaja",
       "status": "ehdotus",
       "title": "Viivanseurantarobotti säädöllä",
+      "art": "ahjo1-13",
       "summary": "Robotti seuraa teippiviivaa, ja sen ohjausta parannetaan säätöteknisesti mittausten avulla.",
       "problem": "Yksinkertainen robotti heiluttaa viivan molemmin puolin ja on hidas. Miten ohjauksesta saadaan sujuva ja nopea?",
       "skills": [
@@ -1860,6 +1878,7 @@
       "id": "valaiseva-tekstiili",
       "status": "ehdotus",
       "title": "Valaiseva e-tekstiili",
+      "art": "tekstiilit",
       "summary": "Ommeltu ranneke tai heijastinkoru, jossa valot syttyvät magneettikytkimestä.",
       "problem": "Pyöräilijä tai kävelijä näkyy pimeällä huonosti, eikä tavallinen heijastin kiinnosta kaikkia.",
       "skills": [
@@ -1900,6 +1919,7 @@
       "id": "tormaystesti",
       "status": "ehdotus",
       "title": "Törmäystestiauto kiihtyvyysanturilla",
+      "art": "ahjo2-9",
       "summary": "Pienoisauto törmää esteeseen, ja kyydissä oleva micro:bit mittaa matkustajan kiihtyvyyden.",
       "problem": "Miten auton keula kannattaa rakentaa, jotta matkustajaan kohdistuu törmäyksessä mahdollisimman pieni voima?",
       "skills": [
@@ -1937,6 +1957,7 @@
       "id": "tuuliturbiini",
       "status": "ehdotus",
       "title": "Tuuliturbiinin siivet",
+      "art": "3d",
       "summary": "Ryhmä suunnittelee ja tulostaa pienoisturbiinin siipiä ja selvittää mittaamalla, mikä muoto tuottaa eniten tehoa.",
       "problem": "Siiven muoto, kulma ja määrä vaikuttavat siihen, kuinka paljon tuulesta saadaan energiaa. Mikä vaikuttaa eniten?",
       "skills": [
@@ -1975,6 +1996,7 @@
       "id": "valosyntetisaattori",
       "status": "ehdotus",
       "title": "Valolla soitettava syntetisaattori",
+      "art": "ahjo1-7",
       "summary": "Soitin, jonka sävelkorkeutta ja sointia muutetaan käsillä varjostamalla valoantureita.",
       "problem": "Voiko soittimen tehdä niin, että sitä soitetaan ilman koskettimia ja jokainen ryhmän jäsen pystyy soittamaan sitä?",
       "skills": [
@@ -2013,6 +2035,7 @@
       "id": "proteesikasi",
       "status": "ehdotus",
       "title": "Proteesikäsi, joka tuntee otteen",
+      "art": "ahjo1-11",
       "summary": "3D-tulostettu käsi, jonka sormia servot liikuttavat ja jonka ote pysähtyy, kun voima-anturi tuntee kosketuksen.",
       "problem": "Proteesin pitää pystyä tarttumaan sekä raskaaseen että hauraaseen esineeseen niin, ettei käyttäjän tarvitse katsoa kättä koko ajan.",
       "skills": [
@@ -2052,6 +2075,7 @@
       "id": "sahkoauto",
       "status": "ehdotus",
       "title": "Sähköauton pienoismalli",
+      "art": "ahjo1-12",
       "summary": "Ryhmä rakentaa sähköllä kulkevan pienoisauton budjetin rajoissa ja parantaa sen nopeutta ja energiankulutusta mittausten perusteella.",
       "problem": "Sähköautossa moottori, välitys, massa ja ilmanvastus vaikuttavat yhdessä siihen, kuinka pitkälle akulla pääsee. Mitä kannattaa parantaa ensin?",
       "skills": [
