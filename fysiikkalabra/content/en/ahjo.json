@@ -152,13 +152,16 @@
     "lesson_needs": "You need",
     "lesson_guide": "Step-by-step guide",
     "lesson_safety": "Safety",
-    "lesson_safety_none": "No devices are used in this lesson. Follow Ahjo's general rules.",
+    "lesson_safety_none": "This lesson uses none of Ahjo's machines or tools. Follow Ahjo's general rules.",
     "lesson_safety_note": "Ahjo's safety instructions are still being prepared. Follow your teacher's induction.",
     "lesson_today": "Today you make",
     "lesson_now": "In your project now",
     "lesson_task": "Next task",
     "lesson_save": "Save in your project diary",
     "lesson_diary": "Project diary",
+    "lesson_peer": "Together",
+    "lesson_pace": "A lesson is a step that guides the project, not an order that binds every group. Your group may be ahead or behind: agree with the teacher what you do now.",
+    "lesson_starters": "Starter files",
     "lesson_milestone": "Hand-in",
     "lesson_challenge_card": "Small extra challenge",
     "path_h": "The project path",
@@ -331,8 +334,8 @@
       "lessons": [
         {
           "title": "Welcome to Ahjo",
-          "text": "The space, the equipment and how we work; the rules and the general induction.",
           "make": "A torch from found objects",
+          "text": "The space, the equipment and how we work; the rules and the general induction.",
           "start": "Connect an LED to a coin cell and it lights up. Turn the LED round and see what happens.",
           "levels": {
             "try": "Make the LED light and explain why it lights only one way round.",
@@ -353,7 +356,8 @@
           "safety": [
             "saannot",
             "perehdytys"
-          ]
+          ],
+          "peer": "Show your light to the person next to you. Try whose shell spreads the light most evenly, and swap one idea."
         },
         {
           "title": "Working safely",
@@ -382,9 +386,9 @@
         },
         {
           "title": "Basics of 3D modelling",
-          "text": "Basic shapes, joining and holes in Tinkercad.",
           "make": "Your own key ring",
-          "start": "Open the teacher's ready-made template in Tinkercad and type your name on it. Your first model is done.",
+          "text": "Basic shapes, joining and holes in Tinkercad.",
+          "start": "Import the key fob base from the teacher into Tinkercad and write your name on it. Your first model is done.",
           "levels": {
             "try": "Finish the key ring and save it as an STL file in the print queue.",
             "modify": "Make the shape your own: add your own symbol or pattern and move the hole.",
@@ -398,21 +402,26 @@
           "needs": [
             "computer",
             "Tinkercad account",
-            "the teacher's ready-made template"
+            "key fob base (starter file)"
           ],
-          "safety": []
+          "safety": [],
+          "safety_note": "In this lesson you model on a computer. The teacher or a student inducted on the 3D printer prints the model later.",
+          "starters": [
+            "avaimenpera-pohja"
+          ],
+          "peer": "Show your unfinished model to the person next to you and ask one question you need help with."
         },
         {
           "title": "A model to measure",
-          "text": "Dimensions, clearance and fitting parts together.",
           "make": "A lid that snaps shut",
+          "text": "Dimensions, clearance and fitting parts together.",
           "start": "Guess the sizes of three objects, then measure them with a calliper. Who guessed closest?",
           "levels": {
-            "try": "Print a ready-made fit test with five clearances and find which peg fits the hole.",
-            "modify": "Model a lid or a stopper for your own jar, pen or bottle with the clearance from the fit test.",
+            "try": "Try the fit test the teacher has printed in advance: which ring does the pin go into snugly but without force? A ring's height tells its clearance: 3 mm is 0.1 mm and 7 mm is 0.5 mm.",
+            "modify": "Model a lid or plug for your own jar, pen or bottle with the clearance from the fit test. First print only a thin test ring that is ready in under 15 minutes, and correct the size if it is too tight or loose.",
             "challenge": "Find out how the clearance depends on the print orientation, and present the results as a table."
           },
-          "output": "The fit test result and your own lid or plug modelled.",
+          "output": "The fit test result, your own lid or plug modelled, and its size checked with a test ring.",
           "output_plus": "A table of how the clearance depends on the print orientation.",
           "guides": [
             "ahjo-3d-mallinnus"
@@ -420,80 +429,100 @@
           "needs": [
             "computer and Tinkercad",
             "calliper",
-            "three objects to measure"
+            "three objects to measure",
+            "the fit test printed by the teacher"
           ],
           "safety": [
-            "tyokalut"
+            "tyokalut",
+            "3d-tulostus"
+          ],
+          "starters": [
+            "sovitekoe"
           ]
         },
         {
           "title": "From model to print",
-          "text": "Slicing in PrusaSlicer, print settings and using the printer.",
           "make": "A beam that holds",
+          "text": "Slicing in PrusaSlicer, print settings and using the printer.",
           "start": "Open a ready-made beam in PrusaSlicer and change the infill. How do the print time and the mass change?",
           "levels": {
-            "try": "Slice and print the beam with the settings your teacher gives.",
-            "modify": "Choose the infill and the orientation yourself and justify your choice.",
-            "challenge": "Does the beam hold a 2 kg mass, a weight of about 20 N? Compare two beams and work out which holds more per gram of its own mass."
+            "try": "Print the beam with the teacher's settings. Rest its ends on two piles of books 10 cm apart, hang a bag in the middle and add water or coins until the beam bends clearly or breaks. If your own beam is not ready yet, test one the teacher printed in advance.",
+            "modify": "Choose the infill and print orientation yourself and give your reasons. Before the test, guess whether your beam holds more or less than the teacher's beam.",
+            "challenge": "Weigh the load the beam held and compare two beams: which carries more per its own mass? Show the comparison as a table."
           },
-          "output": "A sliced and printed beam with a justified infill and print orientation.",
-          "output_plus": "Strength test results and a comparison of two beams as a table.",
+          "output": "A printed beam, reasoned infill and orientation, and the load test result: how much the beam carried.",
+          "output_plus": "A table comparing two beams: load per own mass.",
           "guides": [
             "ahjo-3d-tulostus"
           ],
           "needs": [
             "computer and PrusaSlicer",
             "3D printer with the teacher's permission",
-            "ready-made beam model"
+            "beam model (starter file)",
+            "a bag and water or coins",
+            "kitchen scale and safety glasses"
           ],
           "safety": [
-            "3d-tulostus"
+            "3d-tulostus",
+            "tyokalut"
+          ],
+          "safety_note": "In the load test the beam can snap without warning. Wear safety glasses, keep the load close to the floor and your feet away from under it.",
+          "starters": [
+            "palkki",
+            "kuormituskoe"
           ]
         },
         {
           "title": "Judging and fixing a print",
-          "text": "The most common print defects, their causes and how to fix them.",
           "make": "A museum of mistakes",
+          "text": "The most common print defects, their causes and how to fix them.",
           "start": "Pick three failed prints from the box of mistakes, name their defects and guess the causes.",
           "levels": {
             "try": "Measure your own print with a calliper and compare it with the model.",
-            "modify": "Change one print setting and print a corrected version.",
+            "modify": "Change one print setting and print the corrected version as a small test piece, for example a 20 mm cube, so that it is ready within the lesson. Measure both versions at the same points and enter them in the before and after table.",
             "challenge": "Put together an illustrated guide to the class's defects: the defect, the cause and the fix."
           },
-          "output": "The measured difference between model and print and one justified change of setting.",
+          "output": "A before and after comparison: measurements and a photo of both versions, and a conclusion on whether the setting change improved the print.",
           "output_plus": "An illustrated defect guide: the defect, the cause and the fix.",
           "guides": [
             "ahjo-3d-tulostus"
           ],
           "needs": [
-            "prints from the failure box",
+            "prints from the error box",
             "your own print",
-            "calliper"
+            "calliper",
+            "test cube (starter file)"
           ],
           "safety": [
             "3d-tulostus"
-          ]
+          ],
+          "starters": [
+            "kalibrointikuutio",
+            "ennen-jalkeen"
+          ],
+          "peer": "Tell another pair about one failure and one success: what did you change and what happened?"
         },
         {
           "title": "Circuits and components",
-          "text": "Power source, resistor, LED and breadboard.",
           "make": "Light without a program",
-          "start": "Put an LED and a resistor on the breadboard as in the ready-made drawing. The LED lights from the Arduino's 5 volts with no program.",
+          "text": "Power source, resistor, LED and breadboard.",
+          "start": "Connect an LED and a 330 Ω resistor on the breadboard as in the wiring picture and take the wires to the Arduino's 5V and GND pins. The LED lights when you plug in the USB cable. No program is needed.",
           "levels": {
-            "try": "Build the circuit as in the drawing.",
-            "modify": "Add a second LED, first in series and then in parallel. In which connection do the LEDs shine brighter?",
+            "try": "Build the circuit as in the wiring picture. Always make changes with the USB cable unplugged.",
+            "modify": "Add a second LED first in series and then in parallel. In parallel each LED gets its own 330 Ω resistor. In which circuit do the LEDs shine brighter, and why?",
             "challenge": "Size the series resistor with Ohm's law and compare the measured current with your calculation."
           },
           "output": "A working LED circuit and an observation of the difference between series and parallel.",
           "output_plus": "The series resistor worked out with Ohm's law and the matching measured current.",
           "guides": [
-            "ahjo-arduino",
+            "ahjo-led-piiri",
             "fy6-3"
           ],
           "needs": [
-            "Arduino Uno and USB cable",
-            "breadboard and wires",
-            "LED and 330 Ω resistor"
+            "Arduino Uno and USB cable (as a power source only)",
+            "breadboard and 4–6 wires",
+            "two LEDs and two 330 Ω resistors",
+            "multimeter for the challenge"
           ],
           "safety": [
             "elektroniikka"
@@ -501,33 +530,37 @@
         },
         {
           "title": "Measuring with a multimeter",
-          "text": "Measuring voltage, current and resistance connected the right way.",
           "make": "How long does the battery last?",
-          "start": "Measure the voltage of a new and a used battery. Which is which?",
+          "text": "Measuring voltage, current and resistance connected the right way.",
+          "start": "Measure the voltage of a new and a used AA battery. Which is which?",
           "levels": {
-            "try": "Measure the voltages across the LED and the resistor, and the current in the circuit.",
+            "try": "Connect an LED and a 330 Ω resistor to the battery holder and measure the circuit's voltage and current. Then estimate the battery life: the capacity in milliampere-hours divided by the current in milliamperes gives the hours. The result is a rough estimate, because a battery's real capacity depends on the current and the temperature, and its voltage drops as it runs down.",
             "modify": "Choose a device yourself, such as an LED, a motor or a buzzer, and measure its current in different situations.",
-            "challenge": "From your measurements, estimate how long a battery would power your device."
+            "challenge": "Measure the current with a motor or a buzzer too and compare the estimates. Think about why the real life can differ from the estimate."
           },
-          "output": "Current and voltage measurements with units.",
-          "output_plus": "An estimate of the battery life based on your measurements.",
+          "output": "Voltage and current measurements with units, and a rough estimate of how many hours the battery would last.",
+          "output_plus": "Estimates for several devices and a reflection on why an estimate is not an exact forecast.",
           "guides": [
             "fy6-2"
           ],
           "needs": [
             "multimeter",
-            "a new and a used battery",
-            "the LED circuit from the last lesson"
+            "a new and a used AA battery",
+            "battery holder for 2 × AA with wires",
+            "LED and 330 Ω resistor"
           ],
           "safety": [
             "elektroniikka"
+          ],
+          "starters": [
+            "pariston-kesto"
           ]
         },
         {
           "title": "A first Arduino program",
-          "text": "The programming environment, digital outputs and a blinking LED.",
           "make": "Your own light rhythm",
-          "start": "Upload a ready-made blink program to the Arduino and change one number in it. The LED now blinks to your beat.",
+          "text": "The programming environment, digital outputs and a blinking LED.",
+          "start": "Move the LED circuit's wire from the 5V pin to pin 13, open the ready example Blink in the Arduino IDE and change one delay number. The LED now blinks to your beat.",
           "levels": {
             "try": "Make the LED blink with the example program.",
             "modify": "Turn the blinking into a heartbeat, a lighthouse or your own name in Morse code.",
@@ -545,13 +578,14 @@
           ],
           "safety": [
             "elektroniikka"
-          ]
+          ],
+          "peer": "Show your light rhythm to a partner. Can they tell what it shows?"
         },
         {
           "title": "Sensors and inputs",
-          "text": "Button, light and distance sensors; conditions and loops.",
           "make": "A measuring device that draws",
-          "start": "Connect a light sensor, upload a ready-made program and cover the sensor with your hand. The serial plotter draws a curve at once.",
+          "text": "Button, light and distance sensors; conditions and loops.",
+          "start": "Connect a light-dependent resistor and a 10 kΩ resistor as in the wiring picture, upload the ready sketch and open the serial plotter. Cover the sensor with your hand: the curve drops at once.",
           "levels": {
             "try": "Send the sensor's readings to the serial port and save them.",
             "modify": "Turn the sensor into an instrument or a light that reacts to its surroundings, for example a buzzer whose pitch rises as your hand comes closer.",
@@ -560,22 +594,26 @@
           "output": "Sensor readings in the serial plotter and your own device that reacts to the sensor.",
           "output_plus": "A calibrated series of measurements and a graph with units.",
           "guides": [
-            "tvt-mittausohjelma"
+            "ahjo-sarjaplotteri"
           ],
           "needs": [
             "Arduino Uno and USB cable",
-            "light sensor, button or distance sensor",
-            "breadboard and wires"
+            "light-dependent resistor and 10 kΩ resistor",
+            "breadboard and wires",
+            "buzzer or LED for the modify step"
           ],
           "safety": [
             "elektroniikka"
+          ],
+          "starters": [
+            "sarjaplotteri"
           ]
         },
         {
           "title": "Motors and actuators",
-          "text": "Servo and DC motor; power supply and control.",
           "make": "A moving figure",
-          "start": "Connect a servo and a potentiometer to a ready-made program and turn the servo with the knob.",
+          "text": "Servo and DC motor; power supply and control.",
+          "start": "Connect a servo and a potentiometer as in the wiring picture and open the ready example Knob in the Arduino IDE. Turn the knob: the servo follows.",
           "levels": {
             "try": "Program the servo to turn to three different angles.",
             "modify": "Build a cardboard figure on the servo that waves, nods or points.",
@@ -584,6 +622,7 @@
           "output": "Working servo control and your own moving figure or mechanism.",
           "output_plus": "A light-following servo.",
           "guides": [
+            "ahjo-servo",
             "fy7-4"
           ],
           "needs": [
@@ -593,35 +632,41 @@
           ],
           "safety": [
             "elektroniikka"
-          ]
+          ],
+          "peer": "Develop another pair's figure further: add one movement and note in your project diary whose work you built on."
         },
         {
           "title": "Building a robot",
-          "text": "The structure of a robotics kit, drive train and sensors.",
           "make": "A robot that carries a load",
+          "text": "The structure of a robotics kit, drive train and sensors.",
           "start": "Put the robot base together from ready-made parts and drive it forwards and backwards with a test program.",
           "levels": {
             "try": "Build the robot as in the instructions.",
-            "modify": "Give the robot its own body or load space made of cardboard or printed.",
+            "modify": "Make a load bay for the robot from cardboard or as a print. Test how many grams the robot carries one metre without the load falling or the robot stopping. Improve one thing and test again.",
             "challenge": "Compare two gear ratios: how do they affect speed and pulling force?"
           },
-          "output": "A working robot base with your own shell or load space.",
+          "output": "A working robot base, your own load bay and the measured load the robot carries one metre, before and after one improvement.",
           "output_plus": "An experimental comparison of two gear ratios.",
           "guides": [],
           "needs": [
             "robotics kit",
-            "test program",
-            "a load, for example coins"
+            "the kit's test program (the teacher chooses it with the kit)",
+            "load: coins or weights",
+            "kitchen scale and tape measure"
           ],
           "safety": [
             "tyokalut",
             "mekaaninen"
-          ]
+          ],
+          "starters": [
+            "kuormituskoe"
+          ],
+          "peer": "Compare load bays with another group: whose solution carries more, and why?"
         },
         {
           "title": "Programming a robot",
-          "text": "Movement, sensor control and solving a task with a program.",
           "make": "A course blind first, then with sensors",
+          "text": "Movement, sensor control and solving a task with a program.",
           "start": "Program the robot to drive a square. How close to the start does it come back?",
           "levels": {
             "try": "Drive the course using only distances and angles calculated in advance, as when steering a space probe.",
@@ -632,18 +677,19 @@
           "output_plus": "A comparison of the rounds: time and accuracy over three repetitions.",
           "guides": [],
           "needs": [
-            "the assembled robot",
-            "computer",
-            "masking tape to mark the track"
+            "assembled robot",
+            "computer and the kit's programming environment",
+            "masking tape to mark the course"
           ],
           "safety": [
             "tyokalut"
-          ]
+          ],
+          "peer": "Run another pair's program on your robot and tell them where the robot left the route."
         },
         {
           "title": "Planning the mini project",
-          "text": "The problem, a measurable measure of success, a materials list and a sketch.",
           "make": "Your own idea on paper",
+          "text": "The problem, a measurable measure of success, a materials list and a sketch.",
           "start": "Look through the mini project options below and your own course work, and choose three ideas that excite you.",
           "levels": {
             "try": "Choose one of the mini project options below or your own idea, and record its problem, measure and materials.",
@@ -652,29 +698,32 @@
           },
           "output": "A plan approved by the teacher: the idea, the measure of success, the materials and a sketch.",
           "output_plus": "A cardboard mock-up and another group's feedback on the idea.",
+          "final": true,
           "guides": [
             "ahjo-projektipaivakirja"
           ],
-          "final": true,
           "needs": [
             "project diary",
             "pen and paper for the sketch",
             "your earlier course work"
           ],
-          "safety": []
+          "safety": [
+            "tyokalut"
+          ],
+          "peer": "Add one idea you did not choose to the class's shared idea bank. Someone else may need it."
         },
         {
           "title": "Mini project",
-          "text": "A small device of your own with the methods you have learnt and ready-made solutions: building and testing.",
           "make": "Your own device",
-          "start": "Gather the materials and get the first part working, for example a sensor or a light.",
+          "text": "A small device of your own with the methods you have learnt and ready-made solutions: building and testing.",
+          "start": "Gather the parts and get the first part working, for example a sensor or a light. If a part is waiting for the printer, build a cardboard or tape version first.",
           "levels": {
-            "try": "Build a working version by combining examples from the course.",
-            "modify": "Make the device your own: a case, a colour, a sound or a shape.",
-            "challenge": "Test the device three times with the measure of success and improve its weakest point."
+            "try": "Build a working prototype by combining the course's examples and test it with your measure of success.",
+            "modify": "Change your solution based on the test, test again and note what the change did. A change that fails is a good result too, when you explain it.",
+            "challenge": "Test the device with your measure three times, improve its weakest point and make it your own: case, colour, sound or shape."
           },
-          "output": "A working device tested once with the measure of success.",
-          "output_plus": "Three tests and an improved weakest point.",
+          "output": "One round of development: a prototype, a test with the measure, a change based on the test and a new test, with a note of what you saw. The device does not have to succeed when the round is reasoned.",
+          "output_plus": "Three tests, the weakest point improved and a finished look.",
           "guides": [
             "ahjo-projektipaivakirja"
           ],
@@ -686,12 +735,16 @@
           "safety": [
             "valvonta",
             "tyokalut"
-          ]
+          ],
+          "starters": [
+            "testisuunnitelma"
+          ],
+          "peer": "A short show and tell halfway through the lesson: show your unfinished device and ask one question you need help with."
         },
         {
           "title": "Presentation and self-assessment",
-          "text": "Finishing, presenting the mini project and assessing your own learning.",
           "make": "A small exhibition",
+          "text": "Finishing, presenting the mini project and assessing your own learning.",
           "start": "Film a 30-second video of your device working.",
           "levels": {
             "try": "Present your device: the goal, the solution and the result.",
@@ -709,8 +762,11 @@
             "project diary"
           ],
           "safety": [
-            "sailytys"
-          ]
+            "sailytys",
+            "tyokalut"
+          ],
+          "safety_note": "At the show your device is close to the audience. Check that it has no hot parts, sharp edges or loose wires.",
+          "peer": "Try two other people's devices and leave each one a compliment and one idea for improvement."
         }
       ],
       "final": {
@@ -870,21 +926,23 @@
           ],
           "safety": [
             "tyokalut"
-          ]
+          ],
+          "safety_note": "The ball run is made by hand: scissors, tape and cardboard. Ahjo's machines are not used yet.",
+          "peer": "Write the problems you collected in the class's shared idea bank so that other groups can take them up too."
         },
         {
           "title": "Defining the problem",
           "text": "Whose problem, what need, and how success is recognised. Stage 2: the user's needs.",
-          "example": "Interview at least three users and write the problem in the form: how might we help a user group in a situation where … Add a measurable measure of success.",
+          "example": "Find out what users need. Interview at least three users, or if it suits your project better, observe the situation of use or gather the need in another reasoned way, for example with a survey. In an artistic project the user can be a viewer or a listener. Write the problem as: how might we help a user group in a situation where … Add a measure of success: a number you can measure or a clear qualitative sign.",
           "output": "Problem definition and measure.",
+          "milestone": "Hand-in 1: the problem and the user",
           "guides": [
             "ahjo-projektipaivakirja"
           ],
-          "milestone": "Hand-in 1: the problem and the user",
           "needs": [
             "project diary",
-            "interview questions",
-            "at least three users"
+            "interview or observation questions",
+            "at least three users or a situation of use to observe"
           ],
           "safety": []
         },
@@ -898,7 +956,8 @@
             "paper and markers",
             "decision matrix in the project diary"
           ],
-          "safety": []
+          "safety": [],
+          "peer": "Brainstorm for five minutes with another group: each group comes up with three ideas for the other's problem."
         },
         {
           "title": "Rough prototype",
@@ -911,24 +970,30 @@
             "a ready-made circuit if needed"
           ],
           "safety": [
-            "tyokalut"
-          ]
+            "tyokalut",
+            "elektroniikka"
+          ],
+          "peer": "Show and tell: show your unfinished prototype to another group in one minute and ask one question."
         },
         {
           "title": "User test 1",
           "text": "An outsider tries the prototype; observations and choosing the direction. Stages 5 and 6: testing and feedback.",
           "example": "Record observations in four groups: works, does not work, unclear, and new idea. Decide whether to continue, change or change direction.",
           "output": "Test observations and a decision on how to continue.",
+          "milestone": "Hand-in 2: observations from the first user test",
           "guides": [
             "ahjo-projektipaivakirja"
           ],
-          "milestone": "Hand-in 2: observations from the first user test",
           "needs": [
             "your prototype",
             "a tester from outside the group",
             "project diary"
           ],
-          "safety": []
+          "safety": [
+            "tyokalut"
+          ],
+          "safety_note": "Another person tries your prototype. Check first that it has no sharp edges, loose parts, bare wires or hot spots. The tester does not use Ahjo's machines.",
+          "peer": "Test another group's prototype and give your findings under the same four headings."
         },
         {
           "title": "Project plan",
@@ -961,7 +1026,7 @@
         {
           "title": "Working prototype",
           "text": "The first working version of the solution with Ahjo's equipment.",
-          "example": "Make the parts with different machines and share the work so that every member learns at least one new method of making.",
+          "example": "Build the prototype's parts with Ahjo's machines. Share the work so that everyone takes part in making it and learns at least one thing new to them. You do not need every method: choose the ones your project really needs.",
           "output": "A working prototype.",
           "guides": [
             "ahjo-arduino",
@@ -977,22 +1042,30 @@
             "tyokalut",
             "3d-tulostus",
             "elektroniikka"
-          ]
+          ],
+          "peer": "At the end of the lesson tell the other groups about one success and one failure."
         },
         {
           "title": "Test plan and measurements",
           "text": "What is measured, how precisely and how many repetitions. Stage 6: measurement results.",
-          "example": "Write a test plan and measure the prototype with the measure of success three times. Present the results as a table and a graph.",
+          "example": "Write a test plan and test the prototype with your measure of success three times. If the measure is a number, show the results as a table and a graph. If measuring a number does not suit the project, use a qualitative test, for example observation, a user's rating on a scale or before and after photos, and record the results just as carefully.",
           "output": "Test plan and the first results.",
           "guides": [
             "tvt-mittausohjelma"
           ],
           "needs": [
             "prototype",
-            "measuring tools",
+            "measuring tools or an observation form",
             "spreadsheet or measurement program"
           ],
-          "safety": []
+          "safety": [
+            "valvonta",
+            "tyokalut"
+          ],
+          "safety_note": "Test your own prototype only with machines and tools you have been inducted into and the teacher has allowed. If the prototype has electricity, moving parts or heat, agree the test with the teacher before you start.",
+          "starters": [
+            "testisuunnitelma"
+          ]
         },
         {
           "title": "User test 2",
@@ -1007,7 +1080,10 @@
             "tester",
             "project diary"
           ],
-          "safety": []
+          "safety": [
+            "tyokalut"
+          ],
+          "safety_note": "Another person tries your prototype. Check first that it has no sharp edges, loose parts, bare wires or hot spots. The tester does not use Ahjo's machines."
         },
         {
           "title": "Improvement 1",
@@ -1022,13 +1098,14 @@
           ],
           "safety": [
             "tyokalut"
-          ]
+          ],
+          "peer": "If another group has solved a similar problem, you may use its solution when you credit it in the project diary."
         },
         {
           "title": "Improvement 2",
           "text": "An improvement whose effect shows in the measurements.",
-          "example": "Choose one improvement based on the test results and measure its effect. It can be a new part or sensor, but just as well a simpler structure, a different material or a better program.",
-          "output": "A measured improvement and the reason for it.",
+          "example": "Choose one improvement based on the test results and test its effect with the same measure or observation as before. The improvement can be a new part or sensor, but just as well a simpler structure, a different material or a better program. If the improvement does not work, that is a valuable result too: record what you tried, what you measured and what you learned.",
+          "output": "A tested improvement and its reasons, also if the improvement did not work.",
           "guides": [],
           "needs": [
             "prototype",
@@ -1042,23 +1119,28 @@
         {
           "title": "Final testing",
           "text": "Does the solution work: the same measures as in the test plan.",
-          "example": "Test the final solution with the same measures as before and judge whether the goal set at the start was met.",
+          "example": "Test the final solution with the same measures or observations as in the test plan and judge whether you reached the goal set at the start. If you changed the solution after the previous test, test the changed part again.",
           "output": "Test report.",
+          "milestone": "Hand-in 4: test report",
           "guides": [
             "tvt-tyoselostus"
           ],
-          "milestone": "Hand-in 4: test report",
           "needs": [
             "finished solution",
             "test plan",
             "measuring tools"
           ],
-          "safety": []
+          "safety": [
+            "valvonta",
+            "tyokalut"
+          ],
+          "safety_note": "Test your own prototype only with machines and tools you have been inducted into and the teacher has allowed. If the prototype has electricity, moving parts or heat, agree the test with the teacher before you start.",
+          "peer": "Ask another group to try your solution. Do they find a fault you did not notice yourselves?"
         },
         {
           "title": "Finishing and user guide",
           "text": "Last fixes, appearance and usability.",
-          "example": "Finish it for presentation: a case, labels and a user guide that let the user manage without the makers.",
+          "example": "Finish the solution for the show: case, labels and a user guide that let the user manage without its maker. If finishing changes how it works, for example a case covers a sensor or a wire moves, check that it works again before the show.",
           "output": "A finished solution and a user guide.",
           "guides": [],
           "needs": [
@@ -1090,16 +1172,19 @@
           "text": "Presenting the project and assessing your own and the group's work.",
           "example": "Present the project to an audience and make a video of at most one minute. Finally, assess your own and the group's work with the project journal's criteria.",
           "output": "Presentation, video and self-assessment.",
+          "milestone": "Hand-in 5: summary and video",
           "guides": [
             "ahjo-projektipaivakirja"
           ],
-          "milestone": "Hand-in 5: summary and video",
           "needs": [
             "finished solution",
             "phone to film a video",
             "project diary"
           ],
-          "safety": []
+          "safety": [
+            "tyokalut"
+          ],
+          "safety_note": "At the show your solution is close to the audience. Check that it has no hot parts, sharp edges or loose wires."
         }
       ],
       "flex": "Projects differ. The hand-ins and milestones are the same for everyone, but the rhythm of building and testing can be agreed with the teacher. For example, a long building stage can carry on into the next lesson while the test plan is written alongside it.",
@@ -1219,6 +1304,39 @@
         "AHJO1",
         "AHJO2",
         "KILPAROBO"
+      ]
+    },
+    {
+      "id": "ahjo-led-piiri",
+      "category": "elektroniikka",
+      "title": "An LED circuit without a program",
+      "text": "An LED, a series resistor and 5 V. Series and parallel circuits where every branch has its own resistor.",
+      "status": "draft",
+      "courses": [
+        "AHJO1",
+        "AHJO2"
+      ]
+    },
+    {
+      "id": "ahjo-sarjaplotteri",
+      "category": "elektroniikka",
+      "title": "Light sensor and the serial plotter",
+      "text": "A light-dependent resistor in a voltage divider, readings in the Arduino serial plotter and a measurement series in a spreadsheet.",
+      "status": "draft",
+      "courses": [
+        "AHJO1",
+        "AHJO2"
+      ]
+    },
+    {
+      "id": "ahjo-servo",
+      "category": "elektroniikka",
+      "title": "Servo and potentiometer",
+      "text": "Turning a servo with a potentiometer: wiring, a short program and troubleshooting.",
+      "status": "draft",
+      "courses": [
+        "AHJO1",
+        "AHJO2"
       ]
     },
     {
@@ -2425,6 +2543,62 @@
       "categories": [
         "dokumentointi"
       ]
+    }
+  ],
+  "starters": [
+    {
+      "id": "avaimenpera-pohja",
+      "file": "avaimenpera-pohja.stl",
+      "title": "Key fob base (STL, 50 × 25 × 3 mm)",
+      "note": "untested draft: the teacher prints or tries it before use"
+    },
+    {
+      "id": "sovitekoe",
+      "file": "sovitekoe.stl",
+      "title": "Fit test: five rings and a pin (STL)",
+      "note": "untested draft: the teacher prints or tries it before use"
+    },
+    {
+      "id": "palkki",
+      "file": "palkki.stl",
+      "title": "Beam for the load test (STL, 120 × 12 × 6 mm)",
+      "note": "untested draft: the teacher prints or tries it before use"
+    },
+    {
+      "id": "kalibrointikuutio",
+      "file": "kalibrointikuutio.stl",
+      "title": "Test cube 20 mm (STL)",
+      "note": "untested draft: the teacher prints or tries it before use"
+    },
+    {
+      "id": "sarjaplotteri",
+      "file": "sarjaplotteri.ino",
+      "title": "Light sensor sketch for the serial plotter (Arduino)",
+      "note": "untested draft: try it on the teacher's computer first"
+    },
+    {
+      "id": "kuormituskoe",
+      "file": "kuormituskoe.csv",
+      "title": "Load test table (CSV)",
+      "note": "spreadsheet template"
+    },
+    {
+      "id": "ennen-jalkeen",
+      "file": "ennen-jalkeen.csv",
+      "title": "Before and after table (CSV)",
+      "note": "spreadsheet template"
+    },
+    {
+      "id": "pariston-kesto",
+      "file": "pariston-kesto.csv",
+      "title": "Battery life estimate (CSV)",
+      "note": "spreadsheet template"
+    },
+    {
+      "id": "testisuunnitelma",
+      "file": "testisuunnitelma.csv",
+      "title": "Test plan template (CSV)",
+      "note": "spreadsheet template"
     }
   ]
 }

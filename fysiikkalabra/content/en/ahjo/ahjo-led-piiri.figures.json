@@ -1,0 +1,9 @@
+{
+ "Kytkentäkaavio, ei mittakaavassa. Vasemmalla on Arduino-levy laatikkona, jonka oikeassa reunassa on kaksi liitäntää: ylempänä 5V ja alempana maa GND. 5V-liitännästä johdin vie 330 ohmin vastukseen R ja siitä punaiseen LEDiin, jonka kolmio osoittaa alaspäin: anodi on ylhäällä vastuksen puolella ja katodi alhaalla. LEDiltä johdin palaa GND-liitäntään. Violetti nuoli näyttää virran I suunnan. Ohjelmaa ei tarvita, sillä 5V-liitännässä on jännite aina, kun USB-johto on kytketty.": "Circuit diagram, not to scale. On the left is the Arduino board as a box with two connections on its right edge: 5V above and ground GND below. From the 5V connection a wire leads to the 330-ohm resistor R and from it to a red LED whose triangle points down: the anode is at the top on the resistor's side and the cathode at the bottom. From the LED a wire returns to the GND connection. A violet arrow shows the direction of the current I. No program is needed, as the 5V connection has a voltage whenever the USB cable is connected.",
+ "Arduino": "Arduino",
+ "GND": "GND",
+ "LED": "LED",
+ "Kaksi kytkentäkaaviota vierekkäin, ei mittakaavassa. Vasemmalla sarjaankytkentä: 5V-liitännästä virta kulkee yhden 330 ohmin vastuksen ja kahden peräkkäisen LEDin kautta GND-liitäntään, eli virralla on vain yksi reitti. Oikealla rinnankytkentä: 5V-liitännästä lähtee kaksi haaraa, ja kummassakin haarassa on oma 330 ohmin vastus ja oma LED ennen kuin haarat yhdistyvät GND-liitäntään.": "Two circuit diagrams side by side, not to scale. On the left a series circuit: from the 5V connection the current flows through one 330-ohm resistor and two LEDs one after the other to the GND connection, so the current has only one path. On the right a parallel circuit: two branches leave the 5V connection, and each branch has its own 330-ohm resistor and its own LED before the branches join at the GND connection.",
+ "sarjaan": "series",
+ "rinnan": "parallel"
+}

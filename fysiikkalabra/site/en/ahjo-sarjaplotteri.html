@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Light sensor and the serial plotter — Ruukkilabra</title>
+<meta name="description" content="A light-dependent resistor in a voltage divider, readings in the Arduino serial plotter and a measurement series in a spreadsheet.">
+<link rel="canonical" href="https://ruukkilab.fi/en/ahjo-sarjaplotteri.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ruukkilabra">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Light sensor and the serial plotter">
+<meta property="og:description" content="A light-dependent resistor in a voltage divider, readings in the Arduino serial plotter and a measurement series in a spreadsheet.">
+<meta property="og:url" content="https://ruukkilab.fi/en/ahjo-sarjaplotteri.html">
+<meta name="theme-color" content="#f7f3ec">
+<link rel="icon" href="../brand/ahjo-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="../brand/ahjo-makerspace-merkki.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../brand/ahjo-180.png">
+<link rel="stylesheet" href="../vendor/katex/katex.min.css">
+<link rel="stylesheet" href="../site.css?v=e077f76e">
+</head><body>
+<div class="page">
+<header class="top">
+  <a class="brand" href="index.html" aria-label="Ruukkilabra, home page"><img class="brand-mark" src="../brand/ruukkilabra-symboli-kiviruukki.svg" alt="" width="40" height="40"><span class="brand-name">Ruukkilabra<small>Upper secondary physics</small></span></a>
+  <nav aria-label="Main menu"><a class="nav-modules" href="index.html#moduulit">Modules</a><a class="nav-study" href="nain-opiskelet.html">How to study</a><a class="nav-reading" href="lukuvinkit.html">Book tips</a><a class="nav-booklets" href="vihkot.html">Booklets</a><details class="lang-menu"><summary><span class="visually-hidden">Language: </span><span class="lang-current">English</span></summary><ul class="lang-list" aria-label="Choose a language"><li><a class="lang" href="../ahjo-sarjaplotteri.html" hreflang="fi" lang="fi">Suomi</a></li><li><a class="lang" href="../fi-easy/ahjo-sarjaplotteri.html" hreflang="fi" lang="fi">Selkeä suomi</a></li></ul></details></nav>
+</header>
+<nav class="crumbs" aria-label="Path"><a href="index.html">Ruukkilabra</a> › <a href="ahjo.html">Ahjo Makerspace</a> › <a href="ahjo-materiaalit.html">Resource bank</a> › Light sensor and the serial plotter</nav>
+<main class="reading ahjo-page"><header class="ahjo-hero"><img class="ahjo-logo" src="../brand/ahjo-makerspace-logo.svg" alt="Ahjo – Kiviruukin Makerspace" width="124" height="124"><div class="ahjo-hero-text"><p class="ahjo-eyebrow">Kiviruukin lukio&#x27;s makerspace</p><h1>Light sensor and the serial plotter</h1><p class="ahjo-lead">A light-dependent resistor in a voltage divider, readings in the Arduino serial plotter and a measurement series in a spreadsheet.</p></div></header><nav class="ahjo-nav" aria-label="Ahjo Makerspace"><ul><li><a href="ahjo.html">Ahjo</a></li><li><a href="ahjo.html#opintojaksot">Courses</a></li><li><a href="ahjo-materiaalit.html" aria-current="page">Resource bank</a></li><li><a href="ahjo-projektit.html">Projects</a></li><li><a href="ahjo.html#laitteisto">Equipment</a></li><li><a href="ahjo-turvallisuus.html">Safety</a></li></ul></nav><p class="ahjo-from" hidden><a class="ahjo-cta ahjo-cta-quiet" href="ahjo-1.html"><span aria-hidden="true">← </span>Back to the lesson</a></p><p class="ahjo-draft" role="note"><svg class="ahjo-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M6 3h11a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H6zM9 3v18M12 8h3.5M12 12h3.5"/></svg><span><strong>Draft.</strong> This guide has not yet been tried on Ahjo&#x27;s own devices. Device models, settings and times will be confirmed once the devices have been acquired. Always follow your teacher&#x27;s instructions and the device-specific induction.</span></p><article class="ahjo-guide"><section class="ahjo-quick" aria-labelledby="pikastartti"><h2 id="pikastartti">Quick start</h2>
+<p>You get the sensor's readings as a curve in about ten minutes. The program is ready as a <a href="../ahjo-aloitus/sarjaplotteri.ino">starter file</a>, and the same code is below in this guide. Always make connections with the USB cable unplugged.</p>
+<ol>
+<li>Connect the light-dependent resistor and the $10\,\text{k}\Omega$ resistor in series between the Arduino's 5V and GND pins as in the diagram below.</li>
+<li>Run a wire from between the light-dependent resistor and the $10\,\text{k}\Omega$ resistor to the Arduino's A0 input.</li>
+<li>Plug in the USB cable, open the program in the Arduino IDE and upload it with the Upload button.</li>
+<li>Open Tools → Serial Plotter and choose the speed 9600 baud. Cover the sensor with your hand: the curve drops.</li>
+</ol>
+<h3>Try</h3>
+<p>Get the sensor's readings to show in the serial plotter and save them.</p>
+<h3>Modify</h3>
+<p>Make the sensor into an instrument or a light that reacts to its surroundings. For example, a buzzer's pitch can rise when there is more light. The code is below in the Extension section.</p>
+<h3>Challenge yourself</h3>
+<p>Convert the readings to voltages, collect a measurement series and draw a graph with units.</p>
+</section><div class="ahjo-more-band"><h2 id="opi-lisaa">Learn more</h2><p>This part goes through the work thoroughly: why it works, the exact steps, measurements and solving problems.</p></div><h2>Challenge</h2>
+<p>You make a measuring device that draws. A light-dependent resistor changes its resistance with light, and the Arduino measures it as a voltage. The serial plotter shows the readings as a curve as soon as the surroundings change. Many other sensors are read the same way, for example temperature, humidity and force sensors.</p>
+<p>The work takes one 75-minute lesson.</p>
+<h2>Learning goals</h2>
+<p>After the work you can</p>
+<ul>
+<li>connect a sensor to a voltage divider and an analogue input</li>
+<li>read the sensor's value with <code>analogRead()</code> and send it to the computer with <code>Serial.println()</code></li>
+<li>open the serial plotter and interpret its curve</li>
+<li>convert a reading to a voltage and save a measurement series.</li>
+</ul>
+<h2>Starting level and prior skills</h2>
+<p>You should know how to upload a program to the Arduino. Revise <a href="ahjo-arduino.html">First steps with Arduino</a> if needed. The voltage divider and resistance are explained in the chapter <a href="fy6-3.html">Resistance and Ohm's law</a>.</p>
+<h2>Equipment and materials</h2>
+<p>Ahjo's equipment is still being acquired, so the models of the supplies will be specified later.</p>
+<table>
+<thead>
+<tr>
+<th>Supply</th>
+<th>Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Arduino Uno and USB cable</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Breadboard and jumper wires</td>
+<td>1 + 4</td>
+</tr>
+<tr>
+<td>Light-dependent resistor (LDR)</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Resistor $10\,\text{k}\Omega$ (brown, black, orange, gold)</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Passive buzzer, or an LED and a $330\,\Omega$ resistor (Modify)</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Computer with the Arduino IDE</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h2>Safety and induction</h2>
+<p>Ahjo's safety instructions are still being prepared. See the topic <a href="ahjo-turvallisuus.html#elektroniikka">Soldering and electronics work</a>, and follow the teacher's induction.</p>
+<ul>
+<li>Make and change connections only when the USB cable is unplugged.</li>
+<li>Do not connect the 5V pin straight to the GND pin. The light-dependent resistor and the $10\,\text{k}\Omega$ resistor are always in series between them.</li>
+<li>If something gets hot or smells, unplug the USB cable at once and tell the teacher.</li>
+</ul>
+<h2>Steps</h2>
+<ol>
+<li>Unplug the USB cable. Place the light-dependent resistor and the $10\,\text{k}\Omega$ resistor on the breadboard so that they share one column. That is the divider's middle point.</li>
+<li>Run a wire from the 5V pin to the free end of the light-dependent resistor and a wire from the GND pin to the free end of the $10\,\text{k}\Omega$ resistor.</li>
+<li>Run a wire from the middle point's column to the A0 input.</li>
+<li>Plug in the USB cable. Open the program, choose the Arduino Uno as the board and the right port, and upload the program.</li>
+<li>Open Tools → Serial Plotter and choose 9600 baud. The curve should move when you cover the sensor or point a phone's light at it.</li>
+<li>Save a measurement series. Open Tools → Serial Monitor, cover the sensor now and then, and copy the readings into a spreadsheet.</li>
+</ol>
+<h2>Diagrams and example code</h2>
+<p>The light-dependent resistor and the $10\,\text{k}\Omega$ resistor form a voltage divider. The more light, the smaller the light-dependent resistor's resistance and the larger the voltage at the A0 input.</p>
+<div class="fig ahjo-fig"><svg viewBox="0 0 600 330" role="img" aria-label="Circuit diagram, not to scale. On the left is the Arduino board as a box with three connections on its right edge: 5V at the top, the analogue input A0 in the middle and GND at the bottom. On the right is a vertical voltage divider: from the 5V connection a wire leads to the light-dependent resistor, drawn as a box with two light arrows pointing at it. From the light-dependent resistor&#x27;s lower end the wire continues to the 10-kilohm resistor and from it to the GND connection. From the point between the light-dependent resistor and the 10-kilohm resistor a wire leads to the A0 input." style="max-width:100%;font-size:24px">
+  <rect x="30" y="46" width="160" height="238" rx="12" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="66" y="61" width="88" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$\text{Arduino}$</div></foreignObject>
+  <rect x="182" y="92" width="16" height="16" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="141" y="87" width="31" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$\text{5V}$</div></foreignObject>
+  <rect x="182" y="157" width="16" height="16" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="141" y="152" width="31" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$\text{A0}$</div></foreignObject>
+  <rect x="182" y="242" width="16" height="16" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="130" y="237" width="42" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$\text{GND}$</div></foreignObject>
+  <polyline points="198,100 430,100 430,108" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="420" y="108" width="20" height="44" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <line x1="486" y1="104" x2="452.5" y2="121" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M446,124 L451.5,117 L455,123.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="486" y1="120" x2="452.5" y2="137" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M446,140 L451.5,133 L455,139.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="492" y="84" width="39" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\text{LDR}$</div></foreignObject>
+  <polyline points="430,152 430,186" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="430" cy="165" r="5" fill="#1f2933"/>
+  <polyline points="198,165 430,165" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="420" y="186" width="20" height="44" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <foreignObject x="450" y="196" width="53" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$10\ \text{k}\Omega$</div></foreignObject>
+  <polyline points="430,230 430,250 198,250" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <foreignObject x="202.5" y="136" width="195" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:18px;color:#6b7480">$\text{divider's middle point}$</div></foreignObject>
+</svg></div>
+<p>The example program reads the A0 input 20 times a second and sends the reading to the computer. The text <code>valo:</code> names the curve in the serial plotter.</p>
+<pre><code class="language-cpp">const int SENSOR_PIN = A0;      // the divider's middle point
+
+void setup() {
+  Serial.begin(9600);           // the same speed as in the serial plotter
+}
+
+void loop() {
+  int value = analogRead(SENSOR_PIN);   // 0...1023 means 0...5 V
+  Serial.print(&quot;valo:&quot;);
+  Serial.println(value);
+  delay(50);                            // 20 readings a second
+}
+</code></pre>
+<p>The reading is a whole number 0–1023. It can be converted to a voltage:
+$$U = \frac{\text{reading}}{1023} \cdot 5{,}0\,\text{V}.$$</p>
+<h2>Test and measure</h2>
+<ul>
+<li>Look at the reading in room light, covered with your hand and in a phone's light. Record three readings and convert them to voltages.</li>
+<li>Also measure the voltage at the A0 input with a multimeter. Does it match the voltage you calculated from the reading?</li>
+<li>Challenge yourself: compare the readings with the lux readings of a phone's light meter app in the same place and draw a graph. The app's reading is only indicative.</li>
+</ul>
+<h2>If something does not work</h2>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Likely cause</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The serial plotter is empty</td>
+<td>Wrong speed</td>
+<td>Choose 9600 baud in the plotter.</td>
+</tr>
+<tr>
+<td>The serial plotter is empty</td>
+<td>The program did not upload</td>
+<td>Upload the program again and check the board and port.</td>
+</tr>
+<tr>
+<td>The reading is always 0 or 1023</td>
+<td>The A0 wire is in the wrong column</td>
+<td>Move the A0 wire to the middle point, between the light-dependent resistor and the resistor.</td>
+</tr>
+<tr>
+<td>The reading jumps randomly</td>
+<td>The A0 wire is loose</td>
+<td>Press the wire firmly into the hole.</td>
+</tr>
+<tr>
+<td>The curve rises when the sensor is covered</td>
+<td>The light-dependent resistor and the resistor have swapped places</td>
+<td>The circuit still works. Just note that the direction is reversed.</td>
+</tr>
+<tr>
+<td>Uploading fails</td>
+<td>The serial monitor or plotter holds the port</td>
+<td>Close them and upload again.</td>
+</tr>
+</tbody>
+</table>
+<h2>Extension</h2>
+<ol>
+<li>Light instrument. Connect a passive buzzer between pin 8 and GND and add a line to the program's <code>loop()</code> that turns the reading into a pitch:
+   <code>cpp
+   tone(8, map(value, 0, 1023, 200, 2000));   // more light, higher pitch</code></li>
+<li>Night light. Connect an LED and a $330\,\Omega$ resistor to pin 13. Light the LED when the reading is smaller than a limit you choose. Choose the limit from your measurements.</li>
+<li>Another sensor. Try the same program with another sensor, for example a potentiometer or a temperature sensor, if one is available.</li>
+</ol>
+<h2>Document your work</h2>
+<p>Record in your project diary</p>
+<ul>
+<li>a photo of the circuit and a screenshot of the serial plotter's curve</li>
+<li>three readings in different lighting and the matching voltages</li>
+<li>how you made the sensor into an instrument, a light or another device</li>
+<li>one fault you ran into, and how you found it.</li>
+</ul>
+<h2>For the teacher: preparation</h2>
+<ul>
+<li>This is a draft: the guide and the starter program have not yet been tried with Ahjo's own equipment. Try the program on the teacher's computer before the lesson.</li>
+<li>The serial plotter is in the Arduino IDE from version 1.6.6. In the Arduino IDE 2 it also opens from the button in the window's top right corner.</li>
+<li>The resistance of light-dependent resistors varies by model. If the readings stay in a narrow range, try a $4{,}7\,\text{k}\Omega$ or $47\,\text{k}\Omega$ resistor in place of the $10\,\text{k}\Omega$ one.</li>
+<li>At the Modify level of lesson 10 a distance sensor can also be used, if one has been acquired. It needs its own program, which this guide does not have.</li>
+<li>The text, diagrams and code were written for Ruukkilabra.</li>
+</ul></article><script src="../ahjo.js?v=ea177c50"></script></main>
+<footer class="bottom"><span>Ruukkilabra</span><a href="tyokalut.html">Tools</a><a href="tietosuoja.html">Privacy</a><span class="copyright">© 2026 Lauri Hellsten</span></footer>
+</div>
+<script src="../vendor/katex/katex.min.js"></script><script src="../vendor/katex/contrib/auto-render.min.js" onload="renderMathInElement(document.querySelector('main'),{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+</body></html>

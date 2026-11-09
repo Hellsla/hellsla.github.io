@@ -39,26 +39,28 @@ After this work you can
 
 The assessment has seven criteria, each with four levels: beginning, developing, good and excellent. What is assessed is the process, not only the end result. A project that did not work can be assessed as excellent if the journal shows why it did not work and what was learned from it.
 
+The criteria fit all kinds of projects: devices, crafts, design, music, repair, building from recycled materials and art. A measure of success can be a number, but also a qualitative observation, for example a user's feedback, a before-and-after comparison or a photo of the same spot. The top level is reached when the decisions, experiments, use of feedback and development show in the journal and are justified.
+
 1. Defining the problem
     - Beginning: the topic is named, but it is not said whose problem is being solved.
     - Developing: the problem and the user are described in your own words.
-    - Good: the problem is based on an interview with a user or an observation, and the goal has a measurable measure of success.
+    - Good: the problem is based on an interview with a user or an observation, and the goal has an agreed measure of success. The measure can be a number or a qualitative observation.
     - Excellent: in addition, the problem is refined during the project, and the change is justified.
 2. Reasons for design decisions
     - Beginning: the chosen solution is given without alternatives.
     - Developing: there are several alternatives, but the choice is not justified.
-    - Good: at least three alternatives are compared on agreed criteria, for example with a decision matrix.
-    - Excellent: in addition, sustainability, accessibility or costs are considered, and the comparison clearly affects the choice.
+    - Good: the alternatives are compared on agreed criteria, for example with a decision matrix, sketches or small experiments.
+    - Excellent: in addition, sustainability, accessibility, costs or expression are considered, and the comparison clearly affects the choice.
 3. Technical implementation
-    - Beginning: there is a photo of the prototype, but no description of how it works.
-    - Developing: the structure, circuit or code is partly described.
-    - Good: a circuit diagram, a dimensioned drawing or a 3D model and commented code are included, and the parts and their prices are listed.
-    - Excellent: another student could build the same prototype from the journal.
+    - Beginning: there is a photo of the prototype or work, but no description of how it was made or how it works.
+    - Developing: the structure, circuit, code or way of making is partly described.
+    - Good: what this project needs is included: for example a circuit diagram, a dimensioned drawing, a 3D model, commented code, a pattern or the making steps as photos. The parts and materials are listed.
+    - Excellent: another student could make the same prototype or work from the journal.
 4. Testing and development
     - Beginning: the journal tells whether the prototype worked.
-    - Developing: a test was done, but there is no measure or no repetitions.
-    - Good: tests are done with the measure of success, there are at least three repetitions, and the results are in a table with units.
-    - Excellent: the test results lead to a justified change, and the effect of the change is measured again in the same way.
+    - Developing: a test was done, but it is not compared with the measure of success.
+    - Good: tests are done with the measure of success, and the results are recorded. Measurements are in a table with units and repeated, where there are any. A qualitative test, for example a user trial or a listening, is described so that it can be repeated.
+    - Excellent: the test results or feedback lead to a justified change, and the effect of the change is tested again in the same way. A change that did not improve things also counts when the reason is considered.
 5. Documentation
     - Beginning: entries are rare and written afterwards.
     - Developing: there are entries from most lessons, but photos or decisions lack explanations.

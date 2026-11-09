@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Servo ja potentiometri — Ruukkilabra</title>
+<meta name="description" content="Servon kääntäminen potentiometrillä: kytkentä, lyhyt ohjelma ja vianetsintä.">
+<link rel="canonical" href="https://ruukkilab.fi/ahjo-servo.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ruukkilabra">
+<meta property="og:locale" content="fi_FI">
+<meta property="og:title" content="Servo ja potentiometri">
+<meta property="og:description" content="Servon kääntäminen potentiometrillä: kytkentä, lyhyt ohjelma ja vianetsintä.">
+<meta property="og:url" content="https://ruukkilab.fi/ahjo-servo.html">
+<meta name="theme-color" content="#f7f3ec">
+<link rel="icon" href="brand/ahjo-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="brand/ahjo-makerspace-merkki.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="brand/ahjo-180.png">
+<link rel="stylesheet" href="vendor/katex/katex.min.css">
+<link rel="stylesheet" href="site.css?v=e077f76e">
+</head><body>
+<div class="page">
+<header class="top">
+  <a class="brand" href="index.html" aria-label="Ruukkilabra, etusivu"><img class="brand-mark" src="brand/ruukkilabra-symboli-kiviruukki.svg" alt="" width="40" height="40"><span class="brand-name">Ruukkilabra<small>Lukion fysiikka</small></span></a>
+  <nav aria-label="Päävalikko"><a class="nav-modules" href="index.html#moduulit">Moduulit</a><a class="nav-study" href="nain-opiskelet.html">Näin opiskelet</a><a class="nav-reading" href="lukuvinkit.html">Kirjavinkit</a><a class="nav-booklets" href="vihkot.html">Vihkot</a><details class="lang-menu"><summary><span class="visually-hidden">Kieli: </span><span class="lang-current">Suomi</span></summary><ul class="lang-list" aria-label="Valitse kieli"><li><a class="lang" href="en/ahjo-servo.html" hreflang="en" lang="en">English</a></li><li><a class="lang" href="fi-easy/ahjo-servo.html" hreflang="fi" lang="fi">Selkeä suomi</a></li></ul></details></nav>
+</header>
+<nav class="crumbs" aria-label="Polku"><a href="index.html">Ruukkilabra</a> › <a href="ahjo.html">Ahjo Makerspace</a> › <a href="ahjo-materiaalit.html">Materiaalipankki</a> › Servo ja potentiometri</nav>
+<main class="reading ahjo-page"><header class="ahjo-hero"><img class="ahjo-logo" src="brand/ahjo-makerspace-logo.svg" alt="Ahjo – Kiviruukin Makerspace" width="124" height="124"><div class="ahjo-hero-text"><p class="ahjo-eyebrow">Kiviruukin lukion makerspace</p><h1>Servo ja potentiometri</h1><p class="ahjo-lead">Servon kääntäminen potentiometrillä: kytkentä, lyhyt ohjelma ja vianetsintä.</p></div></header><nav class="ahjo-nav" aria-label="Ahjo Makerspace"><ul><li><a href="ahjo.html">Ahjo</a></li><li><a href="ahjo.html#opintojaksot">Opintojaksot</a></li><li><a href="ahjo-materiaalit.html" aria-current="page">Materiaalipankki</a></li><li><a href="ahjo-projektit.html">Projektit</a></li><li><a href="ahjo.html#laitteisto">Laitteisto</a></li><li><a href="ahjo-turvallisuus.html">Turvallisuus</a></li></ul></nav><p class="ahjo-from" hidden><a class="ahjo-cta ahjo-cta-quiet" href="ahjo-1.html"><span aria-hidden="true">← </span>Takaisin oppituntiin</a></p><p class="ahjo-draft" role="note"><svg class="ahjo-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M6 3h11a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H6zM9 3v18M12 8h3.5M12 12h3.5"/></svg><span><strong>Luonnos.</strong> Tätä ohjetta ei ole vielä kokeiltu Ahjon omilla laitteilla. Laitemallit, asetukset ja ajat tarkentuvat, kun laitteet on hankittu. Noudata aina opettajan antamia ohjeita ja laitekohtaista perehdytystä.</span></p><article class="ahjo-guide"><section class="ahjo-quick" aria-labelledby="pikastartti"><h2 id="pikastartti">Pikastartti</h2>
+<p>Saat servon kääntymään potentiometrillä noin kymmenessä minuutissa. Arduino IDE:ssä on valmis esimerkkiohjelma File → Examples → Servo → Knob, ja alla on sama asia lyhyempänä ohjelmana. Tee kytkennät aina USB-johto irrotettuna.</p>
+<ol>
+<li>Kytke potentiometrin reunimmaiset jalat Arduinon 5V- ja GND-pinniin ja keskimmäinen jalka A0-tuloon alla olevan kuvan mukaan.</li>
+<li>Kytke servon punainen johto 5V:iin, ruskea tai musta johto GND:hen ja oranssi tai keltainen johto pinniin 9.</li>
+<li>Kytke USB-johto, avaa ohjelma ja lataa se painikkeella Upload.</li>
+<li>Käännä potentiometriä. Servon varsi kääntyy samaan tahtiin.</li>
+</ol>
+<h3>Kokeile</h3>
+<p>Saa servo kääntymään potentiometrillä.</p>
+<h3>Muokkaa</h3>
+<p>Rajaa servon liike omaan tarpeeseesi, esimerkiksi välille 30–150 astetta, tai tee servosta osoitin, jonka taustalle piirrät oman asteikon.</p>
+<h3>Haasta itsesi</h3>
+<p>Liitä servo omaan rakennelmaasi, esimerkiksi portiksi, viuhkaksi tai liikkuvaksi hahmoksi, ja testaa, kestääkö kiinnitys sata edestakaista liikettä.</p>
+</section><div class="ahjo-more-band"><h2 id="opi-lisaa">Opi lisää</h2><p>Tässä osassa työ tehdään perusteellisesti: miksi se toimii, tarkat työvaiheet, mittaukset ja ongelmien ratkaisu.</p></div><h2>Haaste</h2>
+<p>Saat ensimmäisen liikkeen aikaan ohjelmalla. Potentiometri on säädettävä vastus, jonka asennon Arduino lukee jännitteenä. Ohjelma muuttaa lukeman kulmaksi, ja servo kääntyy siihen kulmaan. Samalla periaatteella liikkuvat monet robotin osat, esimerkiksi tarttujat ja ohjattavat pyörät.</p>
+<p>Työ kestää yhden 75 minuutin tunnin.</p>
+<h2>Oppimistavoitteet</h2>
+<p>Työn jälkeen osaat</p>
+<ul>
+<li>kytkeä potentiometrin jännitteenjaoksi ja servon Arduinoon</li>
+<li>muuttaa lukeman kulmaksi komennolla <code>map()</code> ja kääntää servoa komennolla <code>write()</code></li>
+<li>rajata servon liikkeen ohjelmassa</li>
+<li>kiinnittää servon rakennelmaan niin, että varsi ei joudu väkisin vääntymään.</li>
+</ul>
+<h2>Lähtötaso ja ennakkotaidot</h2>
+<p>Sinun on hyvä osata ladata ohjelma Arduinolle. Kertaa tarvittaessa <a href="ahjo-arduino.html">Arduinon ensiaskeleet</a>. Analogisen lukeman lukemista harjoitellaan ohjeessa <a href="ahjo-sarjaplotteri.html">Valoanturi ja sarjaplotteri</a>.</p>
+<h2>Laitteet ja materiaalit</h2>
+<p>Ahjon laitteisto on vasta hankinnassa, joten tarvikkeiden mallit tarkentuvat myöhemmin.</p>
+<table>
+<thead>
+<tr>
+<th>Tarvike</th>
+<th>Määrä</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Arduino Uno ja USB-kaapeli</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Koe­kyt­ken­tä­le­vy ja kyt­ken­tä­joh­ti­mia</td>
+<td>1 + 6</td>
+</tr>
+<tr>
+<td>Po­ten­tio­met­ri, esi­mer­kik­si $10\,\text{k}\Omega$</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Pieni har­ras­te­ser­vo, esi­mer­kik­si SG90-ko­ko­luok­ka</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Servon varsi ja ruuvi (servon mukana)</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Pahvia, teippiä tai kuu­ma­lii­maa ra­ken­nel­maan (Haasta itsesi)</td>
+<td>tarpeen mukaan</td>
+</tr>
+<tr>
+<td>Tie­to­ko­ne, jossa on Arduino IDE</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h2>Turvallisuus ja perehdytys</h2>
+<p>Ahjon turvallisuusohjeet ovat vielä valmisteilla. Katso aihe <a href="ahjo-turvallisuus.html#elektroniikka">Juottaminen ja elektroniikkatyöskentely</a>, ja noudata opettajan perehdytystä. Kuumaliimapistoolia käytetään vain opettajan luvalla.</p>
+<ul>
+<li>Tee ja muuta kytkentöjä vain, kun USB-johto on irti.</li>
+<li>Pidä sormet poissa servon varren tieltä, kun ohjelma on käynnissä.</li>
+<li>Älä käännä servon vartta käsin väkisin. Servon sisällä olevat hammasrattaat voivat rikkoutua.</li>
+<li>Pieni servo toimii USB-johdon 5 V:n jännitteellä. Isompi servo tai useampi servo tarvitsee oman virtalähteen. Kysy opettajalta, ja muista silloin yhdistää virtalähteen ja Arduinon GND-pinnit.</li>
+<li>Jos servo surisee pitkään paikallaan, kuumenee tai haisee, irrota USB-johto heti ja kerro opettajalle.</li>
+</ul>
+<h2>Työvaiheet</h2>
+<ol>
+<li>Irrota USB-johto. Aseta potentiometri koekytkentälevylle niin, että sen kolme jalkaa ovat eri pystyriveillä.</li>
+<li>Vie johto 5V-pinnistä potentiometrin toiseen reunajalkaan ja johto GND-pinnistä toiseen reunajalkaan.</li>
+<li>Vie johto potentiometrin keskimmäisestä jalasta A0-tuloon.</li>
+<li>Kytke servon punainen johto samaan 5V-riviin, ruskea tai musta johto GND-riviin ja oranssi tai keltainen johto pinniin 9.</li>
+<li>Kiinnitä servon varsi, mutta älä vielä ruuvaa sitä rakennelmaan. Liike pitää ensin nähdä vapaana.</li>
+<li>Kytke USB-johto, valitse levyksi Arduino Uno ja oikea portti, ja lataa ohjelma.</li>
+<li>Käännä potentiometri ääriasennosta toiseen. Katso, mihin kulmiin varsi pysähtyy, ja kirjaa ne.</li>
+</ol>
+<h2>Kuvat ja esimerkkikoodi</h2>
+<p>Potentiometri on jännitteenjako, jonka keskikohtaa liukuri siirtää. Servossa on kolme johtoa: kaksi virtaa varten ja yksi ohjausta varten.</p>
+<div class="fig ahjo-fig"><svg viewBox="0 0 600 360" role="img" aria-label="Kytkentäkaavio, ei mittakaavassa. Vasemmalla on Arduino-levy laatikkona, jonka oikeassa reunassa on neljä liitäntää ylhäältä alas: 5V, A0, GND ja pinni 9. Keskellä on potentiometri: sen yläpää on kytketty 5V:iin ja alapää GND:hen, ja keskimmäinen liitäntä eli liukuri on kytketty A0-tuloon. Oikealla on servo laatikkona, jossa on kolme johtoa: punainen 5V:iin, ruskea tai musta GND:hen ja oranssi tai keltainen ohjausjohto pinniin 9." style="max-width:100%;font-size:24px">
+  <rect x="30" y="46" width="160" height="290" rx="12" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="66" y="61" width="88" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$\text{Arduino}$</div></foreignObject>
+  <rect x="182" y="92" width="16" height="16" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="141" y="87" width="31" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$\text{5V}$</div></foreignObject>
+  <rect x="182" y="172" width="16" height="16" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="141" y="167" width="31" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$\text{A0}$</div></foreignObject>
+  <rect x="182" y="252" width="16" height="16" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="130" y="247" width="42" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$\text{GND}$</div></foreignObject>
+  <rect x="182" y="302" width="16" height="16" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="153" y="297" width="19" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$\text{9}$</div></foreignObject>
+  <polyline points="198,100 480,100" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="290" cy="100" r="5" fill="#1f2933"/>
+  <polyline points="290,100 290,156" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="280" y="156" width="20" height="48" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <polyline points="290,204 290,260" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="198,180 242,180" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="240" y1="180" x2="268" y2="180" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M277,180 L267,184.5 L267,175.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="308" y="214" width="143" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\text{potentiometri}$</div></foreignObject>
+  <polyline points="198,260 510,260" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="290" cy="260" r="5" fill="#1f2933"/>
+  <rect x="450" y="150" width="120" height="70" rx="8" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <foreignObject x="477.5" y="172" width="65" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$\text{servo}$</div></foreignObject>
+  <polyline points="480,100 480,150" fill="none" stroke="#c92a2a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="510,220 510,260" fill="none" stroke="#5c3b1e" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="545,220 545,310 198,310" fill="none" stroke="#e8590c" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+</svg></div>
+<p>Ohjelma lukee potentiometrin, muuttaa lukeman 0–1023 kulmaksi 0–180 astetta ja kääntää servon siihen.</p>
+<pre><code class="language-cpp">#include &lt;Servo.h&gt;
+
+const int POT_PIN = A0;     // potentiometrin keskimmäinen jalka
+const int SERVO_PIN = 9;    // servon ohjausjohto
+
+Servo servo;
+
+void setup() {
+  servo.attach(SERVO_PIN);
+}
+
+void loop() {
+  int value = analogRead(POT_PIN);          // 0...1023
+  int angle = map(value, 0, 1023, 0, 180);  // 0...180 astetta
+  servo.write(angle);
+  delay(15);                                 // servo ehtii kääntyä
+}
+</code></pre>
+<p>Muokkaa-tasolla liikettä rajataan vaihtamalla rivin <code>map()</code> kaksi viimeistä lukua, esimerkiksi <code>map(value, 0, 1023, 30, 150)</code>.</p>
+<h2>Testaa ja mittaa</h2>
+<ul>
+<li>Kirjaa, mihin kulmiin varsi pysähtyy potentiometrin ääriasennoissa. Vastaavatko ne ohjelman lukuja 0 ja 180?</li>
+<li>Kun servo on kiinni rakennelmassa, käännä potentiometriä hitaasti ja katso, mistä kohdasta liike alkaa takkuilla. Rajaa liike ohjelmassa sen sisäpuolelle.</li>
+<li>Haasta itsesi: kirjoita ohjelma, joka liikuttaa servoa edestakaisin sata kertaa, ja tarkista sen jälkeen kiinnitys. Pitikö se? Mikä löystyi?</li>
+</ul>
+<h2>Jos jokin ei toimi</h2>
+<table>
+<thead>
+<tr>
+<th>Oire</th>
+<th>To­den­nä­köi­nen syy</th>
+<th>Korjaus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Servo ei liiku lainkaan</td>
+<td>Oh­jaus­joh­to on väärässä pinnissä</td>
+<td>Vie oranssi tai kel­tai­nen johto pinniin 9.</td>
+</tr>
+<tr>
+<td>Servo ei liiku lainkaan</td>
+<td>Ohjelma ei la­tau­tu­nut</td>
+<td>Lataa ohjelma uu­del­leen ja tarkista levy ja portti.</td>
+</tr>
+<tr>
+<td>Servo nykii tai Arduino käyn­nis­tyy uu­del­leen</td>
+<td>Servo ottaa liikaa virtaa USB-johdosta</td>
+<td>Kokeile pie­nem­pää servoa tai kysy opet­ta­jal­ta eril­lis­tä vir­ta­läh­det­tä.</td>
+</tr>
+<tr>
+<td>Servo kääntyy vain vähän</td>
+<td>Po­ten­tio­met­rin johto on irti tai väärässä jalassa</td>
+<td>Tarkista, että kes­kim­mäi­nen jalka menee A0-tuloon.</td>
+</tr>
+<tr>
+<td>Varsi surisee ää­ria­sen­nos­sa</td>
+<td>Ra­ken­nel­ma estää liikkeen</td>
+<td>Rajaa liike oh­jel­mas­sa rivillä <code>map()</code>.</td>
+</tr>
+<tr>
+<td>Liike on väärään suuntaan</td>
+<td>Po­ten­tio­met­rin reu­na­ja­lat ovat toisin päin</td>
+<td>Vaihda 5V- ja GND-johdot kes­ke­nään tai vaihda lukujen 0 ja 180 paikat.</td>
+</tr>
+</tbody>
+</table>
+<h2>Jatkotehtävä</h2>
+<ol>
+<li>Osoitinmittari. Yhdistä tämä ohje ja <a href="ahjo-sarjaplotteri.html">valoanturi</a>: servon varsi näyttää valon määrää omalla asteikollasi.</li>
+<li>Kaksi asentoa. Korvaa potentiometri painonapilla. Kun nappia painetaan, servo kääntyy toiseen asentoon.</li>
+<li>Liikkuva hahmo. Tee pahvista hahmo tai mekanismi, jota servo liikuttaa, ja esittele se muille ryhmille.</li>
+</ol>
+<h2>Dokumentoi</h2>
+<p>Kirjaa projektipäiväkirjaan</p>
+<ul>
+<li>valokuva tai lyhyt video kytkennästä ja liikkeestä</li>
+<li>servon ääriasennot ja miten rajasit liikettä</li>
+<li>miten kiinnitit servon ja kestikö kiinnitys</li>
+<li>yksi vika, joka tuli vastaan, ja miten löysit sen.</li>
+</ul>
+<h2>Opettajalle: valmistelu</h2>
+<ul>
+<li>Tämä on luonnos: ohjetta ja ohjelmaa ei ole vielä kokeiltu Ahjon omilla laitteilla. Kokeile kytkentä ennen tuntia samalla servomallilla, jota oppilaat käyttävät.</li>
+<li>Servo-kirjasto tulee Arduino IDE:n mukana. Esimerkkiohjelma Knob löytyy valikosta File → Examples → Servo.</li>
+<li>Pieni harrasteservo toimii yleensä USB-johdon jännitteellä, mutta virrankulutus vaihtelee mallin mukaan. Jos Arduino käynnistyy uudelleen, käytä servolle omaa virtalähdettä ja yhteistä GND-pinniä.</li>
+<li>Kuumaliiman käytöstä päätetään Ahjon turvallisuusohjeissa, jotka ovat vielä valmisteilla.</li>
+<li>Teksti, kuvat ja koodi on kirjoitettu Ruukkilabraan.</li>
+</ul></article><script src="ahjo.js?v=ea177c50"></script></main>
+<footer class="bottom"><span>Ruukkilabra</span><a href="tyokalut.html">Työkalut</a><a href="tietosuoja.html">Tietosuoja</a><span class="copyright">© 2026 Lauri Hellsten</span></footer>
+</div>
+<script src="vendor/katex/katex.min.js"></script><script src="vendor/katex/contrib/auto-render.min.js" onload="renderMathInElement(document.querySelector('main'),{delimiters:[{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+</body></html>

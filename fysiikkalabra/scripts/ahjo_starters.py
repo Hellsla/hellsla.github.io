@@ -1,0 +1,135 @@
+"""Ahjo's small starter files (teacher 2026-11-09): the 3D models a lesson starts from, the Arduino sketch of the serial
+plotter guide and the measurement templates, written from this script so that every size is stated here and can be
+checked. Run to (re)write assets/shared/ahjo/aloitus/; scripts/build.py publishes them as ahjo-aloitus/, scripts/ahjo.py
+links them from the lessons (ahjo.json "starters"), and scripts/test_ahjo.py checks the files match this script.
+
+None of these has been printed or run on Ahjo's own equipment yet, so ahjo.json says so beside every link.
+
+  python scripts/ahjo_starters.py"""
+import math, pathlib
+
+OUT = pathlib.Path(__file__).resolve().parents[1] / "assets/shared/ahjo/aloitus"
+
+
+# --- ASCII STL ----------------------------------------------------------------------------------------------------
+def facet(a, b, c):
+    """One triangle, counter-clockwise seen from outside, with its normal."""
+    u = [b[i] - a[i] for i in range(3)]; v = [c[i] - a[i] for i in range(3)]
+    nx, ny, nz = u[1] * v[2] - u[2] * v[1], u[2] * v[0] - u[0] * v[2], u[0] * v[1] - u[1] * v[0]
+    ln = math.sqrt(nx * nx + ny * ny + nz * nz) or 1.0
+    f = lambda p: " ".join(f"{x:.4f}" for x in p)
+    return (f"  facet normal {nx / ln:.6f} {ny / ln:.6f} {nz / ln:.6f}\n    outer loop\n      vertex {f(a)}\n      vertex {f(b)}\n"
+            f"      vertex {f(c)}\n    endloop\n  endfacet\n")
+
+
+def quad(a, b, c, d): return facet(a, b, c) + facet(a, c, d)
+
+
+def box(x0, y0, z0, dx, dy, dz):
+    """A closed box, in mm."""
+    p = lambda i, j, k: (x0 + i * dx, y0 + j * dy, z0 + k * dz)
+    return (quad(p(0, 0, 0), p(0, 1, 0), p(1, 1, 0), p(1, 0, 0)) + quad(p(0, 0, 1), p(1, 0, 1), p(1, 1, 1), p(0, 1, 1))
+            + quad(p(0, 0, 0), p(1, 0, 0), p(1, 0, 1), p(0, 0, 1)) + quad(p(1, 1, 0), p(0, 1, 0), p(0, 1, 1), p(1, 1, 1))
+            + quad(p(0, 1, 0), p(0, 0, 0), p(0, 0, 1), p(0, 1, 1)) + quad(p(1, 0, 0), p(1, 1, 0), p(1, 1, 1), p(1, 0, 1)))
+
+
+def cylinder(cx, cy, r, h, n=64):
+    out = ""
+    for i in range(n):
+        a, b = 2 * math.pi * i / n, 2 * math.pi * (i + 1) / n
+        p, q = (cx + r * math.cos(a), cy + r * math.sin(a)), (cx + r * math.cos(b), cy + r * math.sin(b))
+        out += facet((cx, cy, 0), (q[0], q[1], 0), (p[0], p[1], 0)) + facet((cx, cy, h), (p[0], p[1], h), (q[0], q[1], h))
+        out += quad((p[0], p[1], 0), (q[0], q[1], 0), (q[0], q[1], h), (p[0], p[1], h))
+    return out
+
+
+def plate_with_hole(x0, y0, w, d, h, cx, cy, r, n=64):
+    """A rectangular plate w x d x h with one round hole of radius r through it at (cx, cy). The plate is star-shaped
+    from the hole's centre, so every ray from it meets the outline once: the faces are strips between the hole and the
+    outline along those rays, with rays through the four corners so the outline stays straight. Closed and manifold."""
+    corners = [(x0, y0), (x0 + w, y0), (x0 + w, y0 + d), (x0, y0 + d)]
+    angs = sorted({round(2 * math.pi * i / n, 9) for i in range(n)} | {round(math.atan2(y - cy, x - cx) % (2 * math.pi), 9) for x, y in corners})
+
+    def edge(t):
+        dx, dy = math.cos(t), math.sin(t); best = None
+        for x, y in ((x0, None), (x0 + w, None), (None, y0), (None, y0 + d)):
+            s = ((x - cx) / dx if abs(dx) > 1e-12 else None) if x is not None else ((y - cy) / dy if abs(dy) > 1e-12 else None)
+            if s is None or s <= 0: continue
+            px, py = cx + s * dx, cy + s * dy
+            if x0 - 1e-6 <= px <= x0 + w + 1e-6 and y0 - 1e-6 <= py <= y0 + d + 1e-6 and (best is None or s < best[0]): best = (s, px, py)
+        return best[1], best[2]
+
+    ins = [(cx + r * math.cos(t), cy + r * math.sin(t)) for t in angs]; outs = [edge(t) for t in angs]
+    out = ""
+    for i in range(len(angs)):
+        j = (i + 1) % len(angs)
+        a, b, c, e = ins[i], outs[i], outs[j], ins[j]
+        out += quad((a[0], a[1], h), (b[0], b[1], h), (c[0], c[1], h), (e[0], e[1], h))          # top
+        out += quad((a[0], a[1], 0), (e[0], e[1], 0), (c[0], c[1], 0), (b[0], b[1], 0))          # bottom
+        out += quad((b[0], b[1], 0), (c[0], c[1], 0), (c[0], c[1], h), (b[0], b[1], h))          # outer wall
+        out += quad((a[0], a[1], 0), (a[0], a[1], h), (e[0], e[1], h), (e[0], e[1], 0))          # the hole's wall
+    return out
+
+
+def stl(name, body): return f"solid {name}\n{body}endsolid {name}\n"
+
+
+# --- the files ----------------------------------------------------------------------------------------------------
+FIT_CLEARANCES = (0.1, 0.2, 0.3, 0.4, 0.5)      # mm, hole diameter minus pin diameter
+PIN = 10.0                                       # mm, the pin's diameter
+FIT_HEIGHTS = (3, 4, 5, 6, 7)                    # mm: a ring's height tells its clearance (3 mm = 0.1 mm ... 7 mm = 0.5 mm)
+
+
+def files():
+    out = {}
+    # Ahjo 1, lesson 3: a key fob to start from, 50 x 25 x 3 mm with a 5 mm hole for the ring
+    out["avaimenpera-pohja.stl"] = stl("avaimenpera_pohja", plate_with_hole(0, 0, 50, 25, 3, 7, 12.5, 2.5))
+    # Ahjo 1, lesson 4: five rings 16 x 16 mm with holes 10.1-10.5 mm, told apart by height, and a 10.0 mm pin
+    body = "".join(plate_with_hole(i * 20, 0, 16, 16, hgt, i * 20 + 8, 8, (PIN + c) / 2) for i, (c, hgt) in enumerate(zip(FIT_CLEARANCES, FIT_HEIGHTS)))
+    out["sovitekoe.stl"] = stl("sovitekoe", body + cylinder(110, 8, PIN / 2, 15))
+    # Ahjo 1, lesson 5: a beam 120 x 12 x 6 mm for the load test (span 100 mm between the supports)
+    out["palkki.stl"] = stl("palkki", box(0, 0, 0, 120, 12, 6))
+    # Ahjo 1, lesson 6: a 20 mm cube for a print that is ready within the lesson
+    out["kalibrointikuutio.stl"] = stl("kalibrointikuutio", box(0, 0, 0, 20, 20, 20))
+    out["sarjaplotteri.ino"] = SKETCH
+    for name, head in TEMPLATES.items():
+        out[name] = head + "\n" + "\n".join(";" * head.count(";") for _ in range(8)) + "\n"
+    return out
+
+
+SKETCH = """// Valoanturi sarjaplotteriin (Ruukkilabra, Ahjo 1, tunti 10)
+// Kytkenta: 5V -> valovastus -> A0 -> 10 kohm vastus -> GND
+// Avaa Tools -> Serial Plotter ja valitse 9600 baud.
+// Light sensor to the serial plotter: 5V -> LDR -> A0 -> 10 kohm -> GND, 9600 baud.
+
+const int SENSOR_PIN = A0;      // jannitteenjaon keskikohta / the divider's middle point
+
+void setup() {
+  Serial.begin(9600);           // sama nopeus kuin plotterissa / the same speed as the plotter
+}
+
+void loop() {
+  int value = analogRead(SENSOR_PIN);   // 0...1023 vastaa 0...5 V / 0...1023 means 0...5 V
+  Serial.print("valo:");                // nimi kayralle / the curve's name
+  Serial.println(value);
+  delay(50);                            // 20 lukemaa sekunnissa / 20 readings a second
+}
+"""
+
+TEMPLATES = {   # semicolons and decimal commas open in a Finnish spreadsheet; the headers say both languages
+    "kuormituskoe.csv": "Palkki tai rakenne / Beam or structure;Oma massa (g) / Own mass (g);Kuorma, jonka se kesti (g) / Load it held (g);Mitä tapahtui / What happened",
+    "ennen-jalkeen.csv": "Mitattava kohta / What you measure;Malli (mm) / Model (mm);Ennen (mm) / Before (mm);Jälkeen (mm) / After (mm);Paraniko? / Better?",
+    "pariston-kesto.csv": "Laite / Device;Jännite (V) / Voltage (V);Virta (mA) / Current (mA);Pariston kapasiteetti (mAh) / Capacity (mAh);Arvio (h) = mAh / mA / Estimate (h)",
+    "testisuunnitelma.csv": "Testi / Test;Mittari tai havainto / Measure or observation;Toisto 1 / Run 1;Toisto 2 / Run 2;Toisto 3 / Run 3;Havainto / Note",
+}
+
+
+def main():
+    OUT.mkdir(parents=True, exist_ok=True)
+    for name, text in files().items():
+        (OUT / name).write_text(text)
+        print("wrote", OUT / name)
+
+
+if __name__ == "__main__":
+    main()

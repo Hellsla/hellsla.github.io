@@ -1,0 +1,7 @@
+{
+ "Kytkentäkaavio, ei mittakaavassa. Vasemmalla on Arduino-levy laatikkona, jonka oikeassa reunassa on kolme liitäntää: ylhäällä 5V, keskellä analogiatulo A0 ja alhaalla GND. Oikealla on pystysuora jännitteenjako: 5V-liitännästä johdin vie valovastukseen, jonka symbolina on laatikko ja kaksi siihen osoittavaa valonuolta. Valovastuksen alapäästä johdin jatkuu 10 kilo-ohmin vastukseen ja siitä GND-liitäntään. Valovastuksen ja 10 kilo-ohmin vastuksen välisestä kohdasta lähtee johdin A0-tuloon.": "Circuit diagram, not to scale. On the left is the Arduino board as a box with three connections on its right edge: 5V at the top, the analogue input A0 in the middle and GND at the bottom. On the right is a vertical voltage divider: from the 5V connection a wire leads to the light-dependent resistor, drawn as a box with two light arrows pointing at it. From the light-dependent resistor's lower end the wire continues to the 10-kilohm resistor and from it to the GND connection. From the point between the light-dependent resistor and the 10-kilohm resistor a wire leads to the A0 input.",
+ "Arduino": "Arduino",
+ "GND": "GND",
+ "valovastus": "LDR",
+ "jännitteenjaon keskikohta": "divider's middle point"
+}

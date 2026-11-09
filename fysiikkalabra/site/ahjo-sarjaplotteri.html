@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Valoanturi ja sarjaplotteri — Ruukkilabra</title>
+<meta name="description" content="Valovastus jännitteenjakoon, lukemat Arduinon sarjaplotteriin ja mittaussarja taulukkoon.">
+<link rel="canonical" href="https://ruukkilab.fi/ahjo-sarjaplotteri.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ruukkilabra">
+<meta property="og:locale" content="fi_FI">
+<meta property="og:title" content="Valoanturi ja sarjaplotteri">
+<meta property="og:description" content="Valovastus jännitteenjakoon, lukemat Arduinon sarjaplotteriin ja mittaussarja taulukkoon.">
+<meta property="og:url" content="https://ruukkilab.fi/ahjo-sarjaplotteri.html">
+<meta name="theme-color" content="#f7f3ec">
+<link rel="icon" href="brand/ahjo-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="brand/ahjo-makerspace-merkki.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="brand/ahjo-180.png">
+<link rel="stylesheet" href="vendor/katex/katex.min.css">
+<link rel="stylesheet" href="site.css?v=e077f76e">
+</head><body>
+<div class="page">
+<header class="top">
+  <a class="brand" href="index.html" aria-label="Ruukkilabra, etusivu"><img class="brand-mark" src="brand/ruukkilabra-symboli-kiviruukki.svg" alt="" width="40" height="40"><span class="brand-name">Ruukkilabra<small>Lukion fysiikka</small></span></a>
+  <nav aria-label="Päävalikko"><a class="nav-modules" href="index.html#moduulit">Moduulit</a><a class="nav-study" href="nain-opiskelet.html">Näin opiskelet</a><a class="nav-reading" href="lukuvinkit.html">Kirjavinkit</a><a class="nav-booklets" href="vihkot.html">Vihkot</a><details class="lang-menu"><summary><span class="visually-hidden">Kieli: </span><span class="lang-current">Suomi</span></summary><ul class="lang-list" aria-label="Valitse kieli"><li><a class="lang" href="en/ahjo-sarjaplotteri.html" hreflang="en" lang="en">English</a></li><li><a class="lang" href="fi-easy/ahjo-sarjaplotteri.html" hreflang="fi" lang="fi">Selkeä suomi</a></li></ul></details></nav>
+</header>
+<nav class="crumbs" aria-label="Polku"><a href="index.html">Ruukkilabra</a> › <a href="ahjo.html">Ahjo Makerspace</a> › <a href="ahjo-materiaalit.html">Materiaalipankki</a> › Valoanturi ja sarjaplotteri</nav>
+<main class="reading ahjo-page"><header class="ahjo-hero"><img class="ahjo-logo" src="brand/ahjo-makerspace-logo.svg" alt="Ahjo – Kiviruukin Makerspace" width="124" height="124"><div class="ahjo-hero-text"><p class="ahjo-eyebrow">Kiviruukin lukion makerspace</p><h1>Valoanturi ja sarjaplotteri</h1><p class="ahjo-lead">Valovastus jännitteenjakoon, lukemat Arduinon sarjaplotteriin ja mittaussarja taulukkoon.</p></div></header><nav class="ahjo-nav" aria-label="Ahjo Makerspace"><ul><li><a href="ahjo.html">Ahjo</a></li><li><a href="ahjo.html#opintojaksot">Opintojaksot</a></li><li><a href="ahjo-materiaalit.html" aria-current="page">Materiaalipankki</a></li><li><a href="ahjo-projektit.html">Projektit</a></li><li><a href="ahjo.html#laitteisto">Laitteisto</a></li><li><a href="ahjo-turvallisuus.html">Turvallisuus</a></li></ul></nav><p class="ahjo-from" hidden><a class="ahjo-cta ahjo-cta-quiet" href="ahjo-1.html"><span aria-hidden="true">← </span>Takaisin oppituntiin</a></p><p class="ahjo-draft" role="note"><svg class="ahjo-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M6 3h11a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H6zM9 3v18M12 8h3.5M12 12h3.5"/></svg><span><strong>Luonnos.</strong> Tätä ohjetta ei ole vielä kokeiltu Ahjon omilla laitteilla. Laitemallit, asetukset ja ajat tarkentuvat, kun laitteet on hankittu. Noudata aina opettajan antamia ohjeita ja laitekohtaista perehdytystä.</span></p><article class="ahjo-guide"><section class="ahjo-quick" aria-labelledby="pikastartti"><h2 id="pikastartti">Pikastartti</h2>
+<p>Saat anturin lukemat käyräksi noin kymmenessä minuutissa. Ohjelma on valmiina <a href="ahjo-aloitus/sarjaplotteri.ino">aloitusaineistona</a>, ja sama koodi on alla tässä ohjeessa. Tee kytkennät aina USB-johto irrotettuna.</p>
+<ol>
+<li>Kytke valovastus ja $10\,\text{k}\Omega$:n vastus sarjaan Arduinon 5V- ja GND-pinnin väliin alla olevan kuvan mukaan.</li>
+<li>Vie johto valovastuksen ja $10\,\text{k}\Omega$:n vastuksen välistä Arduinon A0-tuloon.</li>
+<li>Kytke USB-johto, avaa ohjelma Arduino IDE:ssä ja lataa se painikkeella Upload.</li>
+<li>Avaa Tools → Serial Plotter ja valitse nopeudeksi 9600 baud. Peitä anturi kädelläsi: käyrä laskee.</li>
+</ol>
+<h3>Kokeile</h3>
+<p>Saa anturin lukemat näkymään sarjaplotterissa ja tallenna ne.</p>
+<h3>Muokkaa</h3>
+<p>Tee anturista soitin tai valo, joka reagoi ympäristöön. Esimerkiksi summerin sävel voi nousta, kun valoa on enemmän. Koodi on alla Jatkotehtävä-osassa.</p>
+<h3>Haasta itsesi</h3>
+<p>Muunna lukemat jännitteeksi, kerää mittaussarja ja piirrä kuvaaja yksiköineen.</p>
+</section><div class="ahjo-more-band"><h2 id="opi-lisaa">Opi lisää</h2><p>Tässä osassa työ tehdään perusteellisesti: miksi se toimii, tarkat työvaiheet, mittaukset ja ongelmien ratkaisu.</p></div><h2>Haaste</h2>
+<p>Teet mittalaitteen, joka piirtää. Valovastus muuttaa resistanssiaan valon mukaan, ja Arduino mittaa sen jännitteenä. Sarjaplotteri näyttää lukemat käyränä heti, kun ympäristö muuttuu. Samalla tavalla luetaan monia muitakin antureita, esimerkiksi lämpö-, kosteus- ja voima-antureita.</p>
+<p>Työ kestää yhden 75 minuutin tunnin.</p>
+<h2>Oppimistavoitteet</h2>
+<p>Työn jälkeen osaat</p>
+<ul>
+<li>kytkeä anturin jännitteenjakoon ja analogiatuloon</li>
+<li>lukea anturin arvon komennolla <code>analogRead()</code> ja lähettää sen tietokoneelle komennolla <code>Serial.println()</code></li>
+<li>avata sarjaplotterin ja tulkita sen käyrää</li>
+<li>muuntaa lukeman jännitteeksi ja tallentaa mittaussarjan.</li>
+</ul>
+<h2>Lähtötaso ja ennakkotaidot</h2>
+<p>Sinun on hyvä osata ladata ohjelma Arduinolle. Kertaa tarvittaessa <a href="ahjo-arduino.html">Arduinon ensiaskeleet</a>. Jännitteenjaosta ja resistanssista kerrotaan luvussa <a href="fy6-3.html">Resistanssi ja Ohmin laki</a>.</p>
+<h2>Laitteet ja materiaalit</h2>
+<p>Ahjon laitteisto on vasta hankinnassa, joten tarvikkeiden mallit tarkentuvat myöhemmin.</p>
+<table>
+<thead>
+<tr>
+<th>Tarvike</th>
+<th>Määrä</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Arduino Uno ja USB-kaapeli</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Koe­kyt­ken­tä­le­vy ja kyt­ken­tä­joh­ti­mia</td>
+<td>1 + 4</td>
+</tr>
+<tr>
+<td>Va­lo­vas­tus (LDR)</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Vastus $10\,\text{k}\Omega$ (ruskea, musta, oranssi, kulta)</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Pas­sii­vi­nen summeri tai LED ja $330\,\Omega$:n vastus (Muokkaa)</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Tie­to­ko­ne, jossa on Arduino IDE</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h2>Turvallisuus ja perehdytys</h2>
+<p>Ahjon turvallisuusohjeet ovat vielä valmisteilla. Katso aihe <a href="ahjo-turvallisuus.html#elektroniikka">Juottaminen ja elektroniikkatyöskentely</a>, ja noudata opettajan perehdytystä.</p>
+<ul>
+<li>Tee ja muuta kytkentöjä vain, kun USB-johto on irti.</li>
+<li>Älä yhdistä 5V-pinniä suoraan GND-pinniin. Valovastus ja $10\,\text{k}\Omega$:n vastus ovat aina sarjassa näiden välissä.</li>
+<li>Jos jokin kuumenee tai haisee, irrota USB-johto heti ja kerro opettajalle.</li>
+</ul>
+<h2>Työvaiheet</h2>
+<ol>
+<li>Irrota USB-johto. Aseta valovastus ja $10\,\text{k}\Omega$:n vastus koekytkentälevylle niin, että niillä on yksi yhteinen pystyrivi. Se on jännitteenjaon keskikohta.</li>
+<li>Vie johto 5V-pinnistä valovastuksen vapaaseen päähän ja johto GND-pinnistä $10\,\text{k}\Omega$:n vastuksen vapaaseen päähän.</li>
+<li>Vie johto keskikohdan pystyriviltä A0-tuloon.</li>
+<li>Kytke USB-johto. Avaa ohjelma, valitse levyksi Arduino Uno ja oikea portti, ja lataa ohjelma.</li>
+<li>Avaa Tools → Serial Plotter ja valitse 9600 baud. Käyrän pitäisi liikkua, kun peität anturin tai osoitat sitä puhelimen valolla.</li>
+<li>Tallenna mittaussarja. Avaa Tools → Serial Monitor, peitä anturi välillä ja kopioi lukemat taulukkolaskentaan.</li>
+</ol>
+<h2>Kuvat ja esimerkkikoodi</h2>
+<p>Valovastus ja $10\,\text{k}\Omega$:n vastus muodostavat jännitteenjaon. Mitä enemmän valoa, sitä pienempi on valovastuksen resistanssi ja sitä suurempi on jännite A0-tulossa.</p>
+<div class="fig ahjo-fig"><svg viewBox="0 0 600 330" role="img" aria-label="Kytkentäkaavio, ei mittakaavassa. Vasemmalla on Arduino-levy laatikkona, jonka oikeassa reunassa on kolme liitäntää: ylhäällä 5V, keskellä analogiatulo A0 ja alhaalla GND. Oikealla on pystysuora jännitteenjako: 5V-liitännästä johdin vie valovastukseen, jonka symbolina on laatikko ja kaksi siihen osoittavaa valonuolta. Valovastuksen alapäästä johdin jatkuu 10 kilo-ohmin vastukseen ja siitä GND-liitäntään. Valovastuksen ja 10 kilo-ohmin vastuksen välisestä kohdasta lähtee johdin A0-tuloon." style="max-width:100%;font-size:24px">
+  <rect x="30" y="46" width="160" height="238" rx="12" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="66" y="61" width="88" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$\text{Arduino}$</div></foreignObject>
+  <rect x="182" y="92" width="16" height="16" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="141" y="87" width="31" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$\text{5V}$</div></foreignObject>
+  <rect x="182" y="157" width="16" height="16" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="141" y="152" width="31" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$\text{A0}$</div></foreignObject>
+  <rect x="182" y="242" width="16" height="16" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="130" y="237" width="42" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$\text{GND}$</div></foreignObject>
+  <polyline points="198,100 430,100 430,108" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="420" y="108" width="20" height="44" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <line x1="486" y1="104" x2="452.5" y2="121" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M446,124 L451.5,117 L455,123.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="486" y1="120" x2="452.5" y2="137" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M446,140 L451.5,133 L455,139.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="492" y="84" width="112" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\text{valovastus}$</div></foreignObject>
+  <polyline points="430,152 430,186" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="430" cy="165" r="5" fill="#1f2933"/>
+  <polyline points="198,165 430,165" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="420" y="186" width="20" height="44" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <foreignObject x="450" y="196" width="53" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$10\ \text{k}\Omega$</div></foreignObject>
+  <polyline points="430,230 430,250 198,250" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <foreignObject x="183.5" y="136" width="233" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:18px;color:#6b7480">$\text{jännitteenjaon keskikohta}$</div></foreignObject>
+</svg></div>
+<p>Esimerkkiohjelma lukee A0-tulon 20 kertaa sekunnissa ja lähettää lukeman tietokoneelle. Teksti <code>valo:</code> antaa käyrälle nimen sarjaplotterissa.</p>
+<pre><code class="language-cpp">const int SENSOR_PIN = A0;      // jännitteenjaon keskikohta
+
+void setup() {
+  Serial.begin(9600);           // sama nopeus kuin sarjaplotterissa
+}
+
+void loop() {
+  int value = analogRead(SENSOR_PIN);   // 0...1023 vastaa 0...5 V
+  Serial.print(&quot;valo:&quot;);
+  Serial.println(value);
+  delay(50);                            // 20 lukemaa sekunnissa
+}
+</code></pre>
+<p>Lukema on kokonaisluku 0–1023. Sen voi muuntaa jännitteeksi:
+$$U = \frac{\text{lukema}}{1023} \cdot 5{,}0\,\text{V}.$$</p>
+<h2>Testaa ja mittaa</h2>
+<ul>
+<li>Katso lukemaa huoneen valossa, kädellä peitettynä ja puhelimen valossa. Kirjaa kolme lukemaa ja muunna ne jännitteiksi.</li>
+<li>Mittaa A0-tulon jännite myös yleismittarilla. Vastaako se lukemasta laskemaasi jännitettä?</li>
+<li>Haasta itsesi: vertaa lukemia puhelimen valoisuussovelluksen luksilukemiin samassa paikassa ja piirrä kuvaaja. Sovelluksen lukema on vain suuntaa antava.</li>
+</ul>
+<h2>Jos jokin ei toimi</h2>
+<table>
+<thead>
+<tr>
+<th>Oire</th>
+<th>To­den­nä­köi­nen syy</th>
+<th>Korjaus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sar­jap­lot­te­ri on tyhjä</td>
+<td>Väärä nopeus</td>
+<td>Valitse plot­te­ris­ta 9600 baud.</td>
+</tr>
+<tr>
+<td>Sar­jap­lot­te­ri on tyhjä</td>
+<td>Ohjelma ei la­tau­tu­nut</td>
+<td>Lataa ohjelma uu­del­leen ja tarkista levy ja portti.</td>
+</tr>
+<tr>
+<td>Lukema on koko ajan 0 tai 1023</td>
+<td>A0-johto on väärällä pys­ty­ri­vil­lä</td>
+<td>Vie A0-johto kes­ki­koh­taan, va­lo­vas­tuk­sen ja vas­tuk­sen väliin.</td>
+</tr>
+<tr>
+<td>Lukema hyppii sa­tun­nai­ses­ti</td>
+<td>A0-johto on irti</td>
+<td>Paina johto kunnolla reikään.</td>
+</tr>
+<tr>
+<td>Käyrä nousee, kun anturi pei­te­tään</td>
+<td>Va­lo­vas­tus ja vastus ovat vaih­ta­neet paikkaa</td>
+<td>Kytkentä toimii silti. Huomaa vain, että suunta on toisin päin.</td>
+</tr>
+<tr>
+<td>Lataus ei onnistu</td>
+<td>Sar­ja­mo­ni­to­ri tai plotteri varaa portin</td>
+<td>Sulje ne ja lataa uu­del­leen.</td>
+</tr>
+</tbody>
+</table>
+<h2>Jatkotehtävä</h2>
+<ol>
+<li>Valosoitin. Kytke passiivinen summeri pinnin 8 ja GND:n väliin ja lisää ohjelman <code>loop()</code>-osaan rivi, joka muuttaa lukeman säveleksi:
+   <code>cpp
+   tone(8, map(value, 0, 1023, 200, 2000));   // enemmän valoa, korkeampi sävel</code></li>
+<li>Yövalo. Kytke LED ja $330\,\Omega$:n vastus pinniin 13. Sytytä LED, kun lukema on pienempi kuin valitsemasi raja-arvo. Valitse raja-arvo mittaustesi perusteella.</li>
+<li>Toinen anturi. Kokeile samaa ohjelmaa toisella anturilla, esimerkiksi potentiometrillä tai lämpöanturilla, jos sellainen on saatavilla.</li>
+</ol>
+<h2>Dokumentoi</h2>
+<p>Kirjaa projektipäiväkirjaan</p>
+<ul>
+<li>valokuva kytkennästä ja kuvakaappaus sarjaplotterin käyrästä</li>
+<li>kolme lukemaa eri valaistuksessa ja niitä vastaavat jännitteet</li>
+<li>miten teit anturista soittimen, valon tai muun laitteen</li>
+<li>yksi vika, joka tuli vastaan, ja miten löysit sen.</li>
+</ul>
+<h2>Opettajalle: valmistelu</h2>
+<ul>
+<li>Tämä on luonnos: ohjetta ja aloitusaineiston ohjelmaa ei ole vielä kokeiltu Ahjon omilla laitteilla. Kokeile ohjelma ennen tuntia opettajan koneella.</li>
+<li>Sarjaplotteri löytyy Arduino IDE:n versioista 1.6.6 alkaen. Arduino IDE 2:ssa sen saa auki myös ikkunan oikean yläkulman painikkeesta.</li>
+<li>Valovastuksen resistanssi vaihtelee mallin mukaan. Jos lukemat jäävät kapealle alueelle, kokeile $10\,\text{k}\Omega$:n tilalla $4{,}7\,\text{k}\Omega$:n tai $47\,\text{k}\Omega$:n vastusta.</li>
+<li>Tunnin 10 Muokkaa-tasolla voi käyttää myös etäisyysanturia, jos sellainen on hankittu. Sille tarvitaan oma ohjelma, jota tässä ohjeessa ei ole.</li>
+<li>Teksti, kuvat ja koodi on kirjoitettu Ruukkilabraan.</li>
+</ul></article><script src="ahjo.js?v=ea177c50"></script></main>
+<footer class="bottom"><span>Ruukkilabra</span><a href="tyokalut.html">Työkalut</a><a href="tietosuoja.html">Tietosuoja</a><span class="copyright">© 2026 Lauri Hellsten</span></footer>
+</div>
+<script src="vendor/katex/katex.min.js"></script><script src="vendor/katex/contrib/auto-render.min.js" onload="renderMathInElement(document.querySelector('main'),{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+</body></html>
