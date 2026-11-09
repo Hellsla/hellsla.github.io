@@ -1,7 +1,6 @@
 {
   "_note": "English texts of local-courses.json (scripts/local_courses.py): a course is published in English when it has an entry here.",
   "_planned": [
-    {"icon": "LUMATUTOR", "title": "LUMA tutor", "text": "Act as a science tutor: plan science events and take part in them."},
     {"icon": "AHJO1", "title": "Ahjo 1", "text": "Basics of 3D modelling, 3D printing, electronics and robotics."},
     {"icon": "AHJO2", "title": "Ahjo 2", "text": "Design, build and test your own prototype."},
     {"icon": "MYYTIT", "title": "Myth Busters", "text": "Find out by experiment whether familiar claims hold true."}
@@ -191,5 +190,12 @@
         "wide": true
       }
     ]
+  },
+  "LUMATUTOR": {
+    "title": "LUMA tutor",
+    "subtitle": "Science belongs to everyone.",
+    "front_line": "Act as a science tutor: plan science events and take part in them.",
+    "school": "Kiviruukki upper secondary school",
+    "description": "Inspire others to explore science! As a LUMA tutor you visit science events, design your own science workshops and guide others to investigate phenomena in the natural sciences, mathematics and technology."
   }
 }

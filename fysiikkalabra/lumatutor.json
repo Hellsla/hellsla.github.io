@@ -1,0 +1,1246 @@
+{
+  "_note": "LUMA-tutor (opettajan toimeksianto 9.11.2026, scripts/lumatutor.py). Suomi on lähdekieli; content/<lang>/lumatutor.json on samanmuotoinen käännös, ja kieli ilman omaa tiedostoa näyttää suomenkielisen (selkosuomi). Työpajat ovat omina tiedostoinaan content/<lang>/lumatutor/tyopajat/<id>.json, joten uusi työpaja lisätään yhdellä tiedostolla. Laajuus ja arviointi ovat suunnitteluratkaisu, kunnes paikallinen opetussuunnitelma vahvistaa ne. Tekstissä [nimi](sivu.html#kohta) on linkki ja $...$ LaTeXia.",
+  "ui": {
+    "nav_label": "LUMA-tutorin osat",
+    "nav_home": "Aloitus",
+    "nav_tools": "Työkalupakki",
+    "part_n": "Osa {n}",
+    "lessons": "Työmäärä",
+    "lessons_value": "${n} \\cdot 75\\,\\text{min}$",
+    "start": "Aloita tästä",
+    "next": "Seuraava osa",
+    "prev": "Edellinen osa",
+    "copy": "Kopioi teksti",
+    "copied": "Kopioitu leikepöydälle.",
+    "download": "Lataa tekstitiedostona",
+    "print": "Tulosta",
+    "print_page": "Tulosta koko sivu",
+    "template_use": "Käyttö",
+    "template_link": "Avaa pohja",
+    "external": "avautuu uuteen välilehteen",
+    "plan_badge": "Suunnitteluratkaisu",
+    "status_ready": "Valmis ohjausmateriaali, ei vielä pilotoitu",
+    "status_ready_short": "Valmis, pilotoimatta",
+    "status_idea": "Jatkokehitysehdotus",
+    "filter_h": "Rajaa työpajoja",
+    "filter_topic": "Aihe",
+    "filter_audience": "Kohderyhmä",
+    "filter_duration": "Kesto",
+    "filter_equipment": "Välineet",
+    "filter_all": "Kaikki",
+    "filter_reset": "Näytä kaikki",
+    "filter_shown": "Näytetään {n}/{m} työpajaa.",
+    "filter_none": "Yksikään työpaja ei sovi valintoihin. Väljennä rajausta.",
+    "duration_short": "enintään 20 min",
+    "duration_mid": "21–30 min",
+    "duration_long": "yli 30 min",
+    "minutes": "noin ${n}\\,\\text{min}$",
+    "audience": "Kohderyhmä",
+    "topic": "Aihe",
+    "duration": "Kesto",
+    "equipment": "Välineet",
+    "open_card": "Avaa työpajakortti",
+    "card_parts_h": "Työpajakortin osat",
+    "tutor_side": "Tutorille",
+    "tutor_side_note": "Tämä osa on sinulle, ei osallistujille. Lue se ennen työpajaa.",
+    "participant_side": "Osallistujille",
+    "participant_side_note": "Tämän osan voit näyttää osallistujille tai tulostaa heille. Se alkaa tulosteessa omalta sivultaan.",
+    "w_goals": "Oppimistavoitteet",
+    "w_materials": "Välineet ja materiaalit",
+    "w_prep": "Valmistelut",
+    "w_safety": "Turvallisuus",
+    "w_steps": "Toteutus vaiheittain",
+    "w_say": "Voit sanoa esimerkiksi",
+    "w_background": "Taustatietoa tutorille",
+    "w_questions": "Kolme hyvää kysymystä osallistujille",
+    "w_problems": "Yleisimmät ongelmat ja ratkaisut",
+    "w_problem": "Ongelma",
+    "w_fix": "Näin ratkaiset",
+    "w_variations": "Vaihtoehtoiset toteutukset ja eriyttäminen",
+    "w_closing": "Lopetus ja yhteinen pohdinta",
+    "w_self": "Tutorin itsearviointi",
+    "w_sources": "Lähteet",
+    "w_answers": "Vastaukset tutorille",
+    "w_idea": "Idea",
+    "w_open": "Kehitettävää ennen käyttöä",
+    "w_safety_notes": "Huomioi turvallisuudessa",
+    "w_planned": "suunniteltu kesto",
+    "back_bank": "Takaisin työpajapankkiin",
+    "data_download": "Lataa aineisto (CSV)",
+    "data_h": "Aineisto",
+    "fig_note": "Kuva",
+    "toolkit_lead_short": "Kaikki pohjat voi kopioida, ladata tekstitiedostona tai tulostaa.",
+    "own_h": "Oma työpaja",
+    "in_toolkit": "Työkalupakissa",
+    "card_n": "Kortti {n}",
+    "done_check": "Tarkista ennen kuin jatkat",
+    "time_total": "Yhteensä",
+    "time_part": "Osa",
+    "time_minutes": "Minuuttia",
+    "time_lessons": "$75\\,\\text{min}$ jaksoja",
+    "and": "ja",
+    "cooler": "vuosi {y} oli vuotta {p} kylmempi",
+    "decade_h": "Vuosikymmenten keskiarvot",
+    "decade_col": "Vuosikymmen",
+    "mean_col": "Poikkeama",
+    "decade_label": "{d}-luku",
+    "decade_partial": "{a}–{b}",
+    "csv_co2": "vuosi,co2_ppm",
+    "csv_temp": "vuosi,poikkeama_C",
+    "csv_file_co2": "hiilidioksidi-mauna-loa.csv",
+    "csv_file_temp": "lampotilapoikkeama-gistemp.csv",
+    "data_retrieved": "Aineisto haettu {d}. Luvut ovat lähteen julkaisemia vuosikeskiarvoja sellaisinaan.",
+    "data_title_co2": "Hiilidioksidin vuosikeskiarvo, Mauna Loa (Havaiji)",
+    "data_source_co2": "NOAA Global Monitoring Laboratory ja Scripps Institution of Oceanography: Trends in Atmospheric Carbon Dioxide, Mauna Loa, vuosikeskiarvot (co2_annmean_mlo)",
+    "data_title_temp": "Maapallon keskilämpötilan poikkeama vuosien 1951–1980 keskiarvosta",
+    "data_source_temp": "NASA Goddard Institute for Space Studies: GISTEMP v4, Global Land-Ocean Temperature Index, vuosikeskiarvot"
+  },
+  "sections": [
+    {
+      "id": "perehdy",
+      "page": "lumatutor-perehdy.html",
+      "icon": "compass",
+      "title": "Perehdy",
+      "long": "Perehdy: kasva LUMA-tutoriksi",
+      "lessons": 3,
+      "workload": "Perehdytys ja ohjausharjoitukset",
+      "text": "Opit, miten innostetaan, kysytään, selitetään ja ohjataan ryhmää turvallisesti. Kymmenen lyhyttä aihetta harjoituksineen."
+    },
+    {
+      "id": "tutustu",
+      "page": "lumatutor-tutustu.html",
+      "icon": "ticket",
+      "title": "Tutustu tiedetapahtumiin",
+      "long": "Tutustu tiedetapahtumiin",
+      "lessons": 4,
+      "workload": "Vierailut tiedetapahtumissa ja havainnointi",
+      "text": "Käyt vähintään yhdessä tiedetapahtumassa ja katsot sitä tiedeviestijän silmin. Keräät ideoita omaan työpajaasi."
+    },
+    {
+      "id": "suunnittele",
+      "page": "lumatutor-suunnittele.html",
+      "icon": "flask",
+      "title": "Suunnittele työpaja",
+      "long": "Suunnittele työpaja",
+      "lessons": 4,
+      "workload": "Oman tiedetyöpajan suunnittelu ja testaaminen",
+      "text": "Valitset työpajan työpajapankista tai suunnittelet omasi, testaat sen ja parannat sitä palautteen perusteella."
+    },
+    {
+      "id": "toteuta",
+      "page": "lumatutor-toteuta.html",
+      "icon": "people",
+      "title": "Toteuta",
+      "long": "Toteuta: ohjaa muita",
+      "lessons": 9,
+      "workload": "Tiedetapahtumien valmistelu ja ohjaaminen",
+      "text": "Ohjaat tiedetyöpajoja ja olet mukana järjestämässä tiedetapahtumia. Tämä on opintojakson tärkein näyttö."
+    },
+    {
+      "id": "arvioi",
+      "page": "lumatutor-arvioi.html",
+      "icon": "notebook",
+      "title": "Arvioi ja palauta",
+      "long": "Arvioi ja palauta",
+      "lessons": 3,
+      "workload": "Portfolio, palaute ja arviointi",
+      "text": "Kokoat tutorportfolion, kirjaat työaikasi ja arvioit omaa kehittymistäsi. Lopuksi palautekeskustelu opettajan kanssa."
+    }
+  ],
+  "hub": {
+    "glance_h": "Yhdellä silmäyksellä",
+    "glance": [
+      {
+        "q": "Mitä opintojaksolla tehdään?",
+        "a": "Tutustut tiedekasvatukseen, käyt tiedetapahtumassa, suunnittelet oman tiedetyöpajan ja ohjaat muita tutkimaan ja kokeilemaan.",
+        "href": "#polku"
+      },
+      {
+        "q": "Miten opintojakso suoritetaan?",
+        "a": "Etenet viisi osaa omaan tahtiisi lukuvuoden aikana. Keskeinen näyttö on oikean tiedetyöpajan tai tapahtuman ohjaaminen.",
+        "href": "#suoritus"
+      },
+      {
+        "q": "Paljonko työtä on?",
+        "a": "Noin $28{,}5\\,\\text{h}$, suunnittelussa $23 \\cdot 75\\,\\text{min}$. Se on kokonaistyömäärä, ei 23 oppituntia luokassa.",
+        "href": "#tyomaara"
+      },
+      {
+        "q": "Mistä aloitan?",
+        "a": "Perehdytyksestä. Lue sen ensimmäinen aihe ja aloita portfoliosi lähtötilanteella.",
+        "href": "lumatutor-perehdy.html"
+      },
+      {
+        "q": "Mitä pitää dokumentoida?",
+        "a": "Portfolioon kirjaat harjoitukset, vierailun havainnot, työpajasuunnitelman, ohjauskertasi, työaikasi ja itsearvioinnin.",
+        "href": "lumatutor-arvioi.html"
+      }
+    ],
+    "intro_h": "Mikä LUMA-tutor on?",
+    "intro": [
+      "LUMA-tutor toimii tiedetutorina: hän suunnittelee tiedetapahtumia ja osallistuu niihin. LUMA tulee sanoista luonnontieteet ja matematiikka, ja mukaan kuuluu myös teknologia.",
+      "Opintojakso ei ole matematiikan, fysiikan tai kemian tukiopetusta. Sen aiheena on tiedekasvatus ja tiedeviestintä: miten saat lapset, nuoret ja muut opiskelijat innostumaan ilmiöistä, kysymään ja kokeilemaan itse.",
+      "LUMA-tutor on Kiviruukin lukion oma toimintakokonaisuus. Se täydentää Ruukkilabraa, jossa opiskelet luonnontieteitä itse, ja Ahjo Makerspacea, jossa rakennat ja valmistat. LUMA-tutorina viet tieteen muille."
+    ],
+    "idea_h": "Ydinajatus",
+    "idea": "Tiede kuuluu kaikille.",
+    "idea_text": "Jokainen voi ihmetellä, kysyä ja tutkia, iästä, kielestä ja aiemmasta osaamisesta riippumatta. Tutorin tehtävä on tehdä tämä mahdolliseksi.",
+    "path_h": "Näin etenet",
+    "path_lead": "Opintojaksossa on viisi osaa. Etene niissä järjestyksessä, mutta lukuvuoden tapahtumien mukaan osat voivat limittyä: voit esimerkiksi käydä tiedetapahtumassa jo perehdytyksen aikana.",
+    "goals_h": "Tavoitteet",
+    "goals_lead": "Opintojakson jälkeen osaat",
+    "goals": [
+      "kertoa, mitä tiedekasvatus ja tiedeviestintä ovat ja miksi niitä tarvitaan",
+      "selittää luonnontieteellisen ilmiön kohderyhmälle sopivalla kielellä ja kuvalla",
+      "esittää kysymyksiä, jotka saavat osallistujan ajattelemaan ja kokeilemaan itse",
+      "ohjata ryhmää niin, että jokainen pääsee osallistumaan",
+      "suunnitella, testata ja parantaa toiminnallisen tiedetyöpajan",
+      "huolehtia turvallisuudesta oman roolisi mukaisesti ja tietää, milloin pyydät aikuista",
+      "toimia osana tapahtuman järjestäjätiimiä ja kantaa vastuun omasta osuudestasi",
+      "arvioida omaa toimintaasi ja kehittää sitä palautteen perusteella"
+    ],
+    "workload_h": "Työmäärä",
+    "workload_lead": "Opintojakson kokonaistyömäärä on noin $38 \\cdot 45\\,\\text{min} = 1\\,710\\,\\text{min}$ eli $28{,}5\\,\\text{h}$. Se vastaa $22{,}8$ oppituntia, joiden pituus on $75\\,\\text{min}$. Suunnittelussa työmäärä pyöristetään arvoon $23 \\cdot 75\\,\\text{min}$.",
+    "workload_rounding": "$23 \\cdot 75\\,\\text{min} = 1\\,725\\,\\text{min}$ eli $28\\,\\text{h}\\ 45\\,\\text{min}$. Tämä on $15\\,\\text{min}$ enemmän kuin tarkka työmäärä. Pyöristys on tarkoituksellinen.",
+    "workload_points": [
+      "Työmäärä on opiskelijan kokonaistyömäärä, ei 23 erillistä lähiopetuskertaa.",
+      "Siihen kuuluvat yhteiset perehdytystapaamiset, itsenäinen valmistelu, tapahtumavierailut, työpajan suunnittelu ja testaus, tapahtumissa toimiminen sekä portfolio ja itsearviointi.",
+      "Tapahtumien kesto vaihtelee, joten kirjaat toteutuneen työajan minuutteina [työajan seurantalomakkeeseen](lumatutor-tyokalut.html#tyoaika).",
+      "Osien välillä voi olla perusteltua joustoa, jos siitä sovitaan opettajan kanssa. Kokonaislaajuus ja tavoitteet pysyvät samoina."
+    ],
+    "requirements_h": "Suoritus",
+    "requirements_lead": "Hyväksyttyyn suoritukseen tarvitaan kaikki kuusi kohtaa:",
+    "requirements": [
+      "Suoritat tutorin perehdytyksen.",
+      "Osallistut vähintään yhteen soveltuvaan tiedetapahtumavierailuun.",
+      "Suunnittelet ja testaat tiedetyöpajan.",
+      "Osallistut käytännössä tiedetyöpajan tai tiedetapahtuman ohjaamiseen.",
+      "Dokumentoit osallistumisesi ja arvioit toimintaasi portfoliossa.",
+      "Kokonaistyömääräsi vastaa opintojakson laajuutta."
+    ],
+    "assessment_h": "Arviointi",
+    "assessment_lead": "Opintojakso arvioidaan asteikolla hyväksytty tai hylätty. Pelkkä tuntimäärän täyttyminen ei riitä: opettaja arvioi toimintaasi ja portfoliotasi seuraavien osa-alueiden perusteella.",
+    "criteria": [
+      {
+        "title": "Ohjaustaidot",
+        "text": "Annat osallistujien tehdä itse, kysyt ennen kuin kerrot ja huomaat, kuka jää ulkopuolelle."
+      },
+      {
+        "title": "Valmistautuminen",
+        "text": "Olet kokeillut työpajan etukäteen, välineet ovat valmiina ja tiedät, mitä teet, jos jokin ei toimi."
+      },
+      {
+        "title": "Yhteistyö",
+        "text": "Sovit tehtävistä muiden tutorien ja opettajan kanssa ja pidät kiinni sovitusta."
+      },
+      {
+        "title": "Vastuullisuus",
+        "text": "Noudatat turvallisuusohjeita, kunnioitat osallistujia etkä kerää heistä henkilötietoja."
+      },
+      {
+        "title": "Aktiivinen osallistuminen",
+        "text": "Olet mukana tapahtumissa koko sovitun ajan ja tartut tehtäviin oma-aloitteisesti."
+      },
+      {
+        "title": "Kehittyminen ja reflektointi",
+        "text": "Portfoliostasi näkyy, mitä opit, mikä muuttui ja mitä tekisit seuraavalla kerralla toisin."
+      }
+    ],
+    "plan_note": "Opintojakson laajuus, työmäärän jako ja arviointimalli ovat suunnitteluratkaisu. Ne ovat voimassa vasta, kun ne on vahvistettu Kiviruukin lukion paikallisessa opetussuunnitelmassa.",
+    "safety_h": "Vastuu ja turvallisuus",
+    "safety": "Opettaja vastaa toiminnan valvonnasta ja turvallisuuden järjestämisestä. Et toimi yksin vastuuhenkilönä tapahtumassa, joka on suunnattu alaikäisille. Työpajoihin osallistuvista lapsista ei kerätä henkilötietoja, ei nimiä eikä tunnistettavia kuvia.",
+    "links_h": "Yhteydet muihin opintoihin",
+    "links_lead": "LUMA-tutorin oma tehtävä on tiedekasvatus, ohjaaminen, tapahtumat ja tiedeviestintä. Muut Kiviruukin opinnot antavat sille sisältöä.",
+    "links": [
+      {
+        "title": "Ruukkilabra",
+        "href": "index.html",
+        "items": [
+          "fysiikan kokeelliset työt ja tutkimukset",
+          "mittaaminen ja mittausten luotettavuus",
+          "ilmiöiden selitykset ja kuvat työpajan taustatiedoksi"
+        ]
+      },
+      {
+        "title": "Ahjo Makerspace",
+        "href": "ahjo.html",
+        "items": [
+          "robotiikka ja elektroniikka",
+          "digitaalinen valmistaminen ja prototyypit",
+          "STEAM-projektit, joita voi esitellä tapahtumissa"
+        ]
+      },
+      {
+        "title": "Tiede- ja teknologiadiplomi",
+        "href": "",
+        "items": [
+          "tiedekasvatusprojektissa karttunutta osaamista voi mahdollisesti hyödyntää TT-portfoliossa",
+          "LUMA-tutor ei ole automaattisesti hyväksyttävä diplomipolun opinto; asiasta päätetään erikseen"
+        ]
+      }
+    ],
+    "models_h": "Pedagogiset esikuvat",
+    "models_lead": "Opintojakson rakenteessa on hyödynnetty seuraavien ohjelmien toimivia ajatuksia. Ruukkilabran teksti on omaa, eikä mikään ohjelmista ole LUMA-tutorin yhteistyökumppani.",
+    "models": [
+      {
+        "name": "OHSU Science Ambassadors",
+        "org": "Oregon Health & Science University",
+        "url": "https://www.ohsu.edu/outreach/k-12-programs",
+        "idea": "Lukiolaiset oppivat ajankohtaista tiedettä, kehittävät johtamistaitojaan ja vievät tiedeaktiviteetteja nuoremmille."
+      },
+      {
+        "name": "Peer Tutor Training Program",
+        "org": "University of Pennsylvania",
+        "url": "https://www.gse.upenn.edu/peer-tutor-training-program",
+        "idea": "Lukiolaiset koulutetaan ohjaajiksi ennen kuin he ohjaavat nuorempia: perehdytys ja ohjaus kulkevat rinnakkain."
+      },
+      {
+        "name": "PASS",
+        "org": "Monash University",
+        "url": "https://www.monash.edu/access-inclusion-success/pass",
+        "idea": "Opiskelija ohjaa vertaisiaan ryhmässä. Ohjaaja ei luennoi uudelleen, vaan ohjaa ryhmää ratkaisemaan itse ja yhdessä."
+      },
+      {
+        "name": "LUMAlab Gadolin",
+        "org": "Helsingin yliopisto",
+        "url": "https://www.helsinki.fi/fi/tiedekasvatus/opettajille/lumalab-gadolin",
+        "idea": "Kokeelliset tiedetyöpajat, joissa tutkimukseen perustuva tiedekasvatus muuttuu tekemiseksi."
+      },
+      {
+        "name": "Tiedeluokka SOLU",
+        "org": "Päijät-Hämeen LUMA-keskus",
+        "url": "https://www.helsinki.fi/fi/verkostot/paijat-hameen-luma-keskus/tiedeluokka-solun-opetusvierailut",
+        "idea": "Ryhmän vierailu tiedeluokkaan: asiantuntija ohjaa, ja ryhmän oma opettaja on mukana koko ajan."
+      }
+    ],
+    "models_checked": "Linkit tarkistettu 9.11.2026."
+  },
+  "perehdy": {
+    "title": "Perehdy: kasva LUMA-tutoriksi",
+    "lead": "Kymmenen lyhyttä aihetta siitä, miten innostetaan, kysytään, selitetään ja ohjataan. Jokaisessa on harjoitus ja esimerkkitilanne.",
+    "how_h": "Miten perehdytys tehdään",
+    "how": [
+      "Perehdytyksen voi tehdä itsenäisesti tai kahdessa tai kolmessa yhteisessä tapaamisessa opettajan johdolla. Yhteiset tapaamiset ovat parhaita harjoituksille, joissa tarvitaan yleisöä.",
+      "Työmäärä on noin $3 \\cdot 75\\,\\text{min}$. Kirjaa jokaisesta aiheesta portfolioon yksi oivallus ja tekemäsi harjoitus."
+    ],
+    "meetings_h": "Ehdotus yhteisiksi tapaamisiksi",
+    "meetings": [
+      {
+        "title": "Tapaaminen 1: Tutorin rooli",
+        "topics": [
+          "rooli",
+          "innostaminen",
+          "ryhma"
+        ],
+        "text": "Tutustutaan toisiin ja tutorin tehtävään. Harjoitellaan ryhmän aloittamista ja sitä, että kaikki pääsevät mukaan."
+      },
+      {
+        "title": "Tapaaminen 2: Kysy, selitä, näytä",
+        "topics": [
+          "kysymykset",
+          "selittaminen",
+          "tutkiminen",
+          "demonstraatio"
+        ],
+        "text": "Jokainen esittää kahden minuutin tiededemonstraation ja saa palautetta. Harjoitellaan valmiin vastauksen muuttamista kysymykseksi."
+      },
+      {
+        "title": "Tapaaminen 3: Kaikille ja turvallisesti",
+        "topics": [
+          "erilaiset",
+          "turvallisuus",
+          "tiedeviestinta"
+        ],
+        "text": "Käydään läpi turvallisuus ja vastuunjako. Kokeillaan yhtä työpajapankin työpajaa ryhmän kesken."
+      }
+    ],
+    "topics": [
+      {
+        "id": "rooli",
+        "title": "Mikä on LUMA-tutor ja mitä hän tekee?",
+        "text": [
+          "LUMA-tutor on lukiolainen, joka innostaa muita luonnontieteiden, matematiikan ja teknologian pariin. Hän ohjaa työpajoja, auttaa tapahtumissa ja näyttää omalla esimerkillään, että tiede on kiinnostavaa ja kuuluu kaikille.",
+          "Tutor ei ole opettaja eikä tiedeshow'n esiintyjä. Hänen tärkein tehtävänsä on saada osallistujat itse tekemään, kysymään ja oivaltamaan. Lukiolainen on usein nuoremmalle helpompi lähestyä kuin aikuinen, ja se on tutorin vahvuus."
+        ],
+        "points": [
+          "Tutor ohjaa, ei luennoi.",
+          "Tutor ei tarvitse tietää kaikkea: ”En tiedä, selvitetään yhdessä” on hyvä vastaus.",
+          "Tutor toimii aina yhdessä opettajan ja muiden tutorien kanssa."
+        ],
+        "practice": {
+          "title": "Harjoitus: Minä tutorina",
+          "text": "Kirjoita portfolioon kolme lausetta: miksi haluat LUMA-tutoriksi, mikä on vahvuutesi ja mitä haluat oppia. Tämä on portfolion ensimmäinen osa."
+        },
+        "case": {
+          "title": "Esimerkkitilanne",
+          "text": "Kolmasluokkalainen kysyy: ”Ootsä opettaja?” Mitä vastaat, ja miten vastauksesi voi tehdä tilanteesta rennomman?"
+        }
+      },
+      {
+        "id": "innostaminen",
+        "title": "Miten innostetaan lapsia ja nuoria luonnontieteisiin?",
+        "text": [
+          "Innostus syntyy, kun jokin yllättää ja osallistuja haluaa tietää miksi. Hyvä aloitus on ilmiö, ei määritelmä: lamppu, joka syttyy yhdellä johdolla mutta ei toisella, tai paperi, joka kantaa kolikoita, kun sen taittaa.",
+          "Innostusta ylläpitää onnistuminen. Suunnittele työpaja niin, että ensimmäinen onnistuminen tulee muutamassa minuutissa ja vaikeampi haaste vasta sen jälkeen. Oma innostuksesi tarttuu: jos ihmettelet aidosti, osallistujatkin ihmettelevät."
+        ],
+        "points": [
+          "Aloita ilmiöllä tai kysymyksellä, älä selityksellä.",
+          "Ensimmäinen onnistuminen nopeasti, haaste sen jälkeen.",
+          "Kehu yrittämistä ja hyvää kysymystä, ei vain oikeaa vastausta."
+        ],
+        "practice": {
+          "title": "Harjoitus: Koukku",
+          "text": "Keksi jollekin ilmiölle aloitus, joka kestää enintään 30 sekuntia ja herättää kysymyksen. Kokeile sitä kaveriin: kysyikö hän jotain?"
+        },
+        "case": {
+          "title": "Esimerkkitilanne",
+          "text": "Yläkoululainen sanoo heti alussa: ”Fysiikka on tylsää.” Miten jatkat niin, että hän saa mahdollisuuden yllättyä ilman, että väittelet hänen kanssaan?"
+        }
+      },
+      {
+        "id": "ryhma",
+        "title": "Miten ohjataan ryhmää?",
+        "text": [
+          "Ryhmän ohjaaminen alkaa ennen kuin kukaan koskee välineisiin. Esittäydy, kerro lyhyesti mitä tehdään ja sovi yksi selkeä merkki, jolla kaikki pysähtyvät kuuntelemaan, esimerkiksi käsi ylhäällä.",
+          "Anna ohje yksi vaihe kerrallaan ja näytä se. Jaa välineet vasta ohjeen jälkeen, muuten kukaan ei kuuntele. Kierrä ryhmien luona, katso kaikkia ja anna jokaiselle tehtävä: rakentaja, mittaaja, kirjuri, esittelijä. Roolit vaihtuvat."
+        ],
+        "points": [
+          "Yksi ohje kerrallaan, näytä ja sano.",
+          "Välineet vasta ohjeen jälkeen.",
+          "Roolit jokaiselle, ja roolit vaihtuvat.",
+          "Sovi pysähtymismerkki heti alussa."
+        ],
+        "practice": {
+          "title": "Harjoitus: Kaikki mukaan",
+          "text": "Ohjaa kolmen hengen ryhmää rakentamaan torni kymmenestä paperiarkista. Säännöt: jokainen koskee rakennelmaan vuorollaan, ja sinä et koske siihen lainkaan. Mitä huomasit?"
+        },
+        "case": {
+          "title": "Esimerkkitilanne",
+          "text": "Yksi osallistuja tekee kaiken, ja kaksi muuta katsoo vierestä. Mitä sanot tai teet, jotta tilanne muuttuu loukkaamatta ketään?"
+        }
+      },
+      {
+        "id": "kysymykset",
+        "title": "Miten esitetään hyviä kysymyksiä?",
+        "text": [
+          "Kysymys, johon on yksi oikea sana vastaukseksi, lopettaa ajattelun. Avoin kysymys käynnistää sen: ”Mitä luulet tapahtuvan?”, ”Mitä huomaat?”, ”Miten voisit testata sen?”",
+          "Kun osallistuja kysyy sinulta, älä vastaa heti. Käännä kysymys takaisin tai ehdota kokeilua: ”Hyvä kysymys. Mitä jos kokeillaan?” Odota vastausta rauhassa. Hiljaisuus tarkoittaa usein, että joku ajattelee."
+        ],
+        "points": [
+          "Avoin kysymys ennen selitystä.",
+          "Odota vastausta ainakin viisi sekuntia.",
+          "Käännä kysymys kokeiluksi.",
+          "Kaikki kysymyskortit ovat [työkalupakissa](lumatutor-tyokalut.html#kysymyskortit)."
+        ],
+        "practice": {
+          "title": "Harjoitus: Vastauksesta kysymys",
+          "text": "Muuta nämä valmiit vastaukset kysymyksiksi, jotka saavat osallistujan ajattelemaan itse: ”Lamppu ei syty, koska piiri ei ole suljettu.” ”Taitettu paperi kestää enemmän, koska se on jäykempi.” ”Punainen kalvo päästää läpi vain punaista valoa.”"
+        },
+        "case": {
+          "title": "Esimerkkitilanne",
+          "text": "Osallistuja kysyy: ”Miks tää ei toimi?” Kirjoita kolme kysymystä, joilla autat häntä löytämään vian itse."
+        }
+      },
+      {
+        "id": "selittaminen",
+        "title": "Miten selitetään vaikeita asioita ymmärrettävästi?",
+        "text": [
+          "Hyvä selitys alkaa siitä, mitä kuulija jo tietää. Käytä arkisia sanoja, vertauksia ja kuvia. Kerro yksi asia kerrallaan ja tarkista, pysyikö kuulija mukana.",
+          "Vertaus auttaa, mutta jokainen vertaus ontuu jossain kohdassa. Sano se ääneen: ”Virtapiiri on vähän kuin vesiputkisto, mutta sähkö ei valu johdosta ulos, jos johto katkeaa.” Vältä termejä, joita et itse osaa selittää ilman toisia termejä."
+        ],
+        "points": [
+          "Aloita siitä, mitä kuulija jo tietää.",
+          "Yksi asia kerrallaan, sitten tarkistus.",
+          "Vertaus ja kuva, ja kerro, missä vertaus ontuu.",
+          "Oikeat termit saa sanoa, kun ne on ensin selitetty."
+        ],
+        "practice": {
+          "title": "Harjoitus: Alakoululaiselle",
+          "text": "Selitä jokin luonnontieteellinen ilmiö alakoululaiselle ilman vaikeita käsitteitä, esimerkiksi miksi taivas on sininen tai miksi jää kelluu. Kirjoita selitys enintään viidellä lauseella ja pyydä kaveria etsimään siitä sana, jota 9-vuotias ei ymmärtäisi."
+        },
+        "case": {
+          "title": "Esimerkkitilanne",
+          "text": "Selität virtapiiriä, ja osallistuja sanoo: ”Mä en tajuu.” Mitä teet seuraavaksi, jos sama selitys uudelleen ei auta?"
+        }
+      },
+      {
+        "id": "tutkiminen",
+        "title": "Miten osallistujat saadaan itse tutkimaan ja kokeilemaan?",
+        "text": [
+          "Tutkiminen etenee usein näin: ennusta, kokeile, havaitse, selitä. Kun osallistuja ensin arvaa, mitä tapahtuu, hän katsoo kokeilua tarkemmin ja muistaa tuloksen paremmin.",
+          "Anna osallistujille tehtävä, jolla on monta ratkaisua, ja pidä omat kädet taskussa. Virhe on tutkimuksen osa: ”Mitä opimme tästä?” on parempi kuin ”Väärin.”"
+        ],
+        "points": [
+          "Ennusta ennen kokeilua.",
+          "Monta ratkaisua sallivat tehtävät.",
+          "Tutor ei tee osallistujan puolesta.",
+          "Virheestä kysytään, mitä se opetti."
+        ],
+        "practice": {
+          "title": "Harjoitus: Ennusta ensin",
+          "text": "Valitse yksinkertainen koe, esimerkiksi kelluuko appelsiini kuorittuna ja kuorittomana. Kirjoita sille ennustekysymys, kokeiluohje yhdellä lauseella ja kysymys, jolla osallistuja selittää tuloksen."
+        },
+        "case": {
+          "title": "Esimerkkitilanne",
+          "text": "Ryhmä haluaa, että näytät heti oikean ratkaisun. Miten pidät tutkimisen heillä ja autat silti eteenpäin?"
+        }
+      },
+      {
+        "id": "demonstraatio",
+        "title": "Millainen on hyvä tiededemonstraatio?",
+        "text": [
+          "Demonstraatio on lyhyt näytös, jossa yleisö näkee ilmiön. Hyvä demonstraatio näkyy takariviin, kestää muutaman minuutin, toimii varmasti ja jättää kysymyksen, johon yleisö haluaa vastauksen.",
+          "Rakenna demonstraatio kolmeen osaan: kysymys tai ennustus, näytös ja keskustelu. Harjoittele se monta kertaa etukäteen ja mieti, mitä teet, jos se epäonnistuu. Epäonnistuminenkin voi olla opettavainen, kun sanot ääneen, mitä luulet tapahtuneen."
+        ],
+        "points": [
+          "Näkyy kaikille, kestää muutaman minuutin.",
+          "Kysymys ennen näytöstä, keskustelu sen jälkeen.",
+          "Harjoiteltu, ja varasuunnitelma valmiina.",
+          "Suunnittelupohja on [työkalupakissa](lumatutor-tyokalut.html#demonstraatio)."
+        ],
+        "practice": {
+          "title": "Harjoitus: Kahden minuutin demonstraatio",
+          "text": "Valmistele kahden minuutin tiededemonstraatio arkisilla välineillä ja esitä se ryhmälle tai kuvaa se itsellesi. Mittaa aika. Pyydä palautetta kahdesta asiasta: näkyikö ilmiö ja jäikö kysymys mieleen."
+        },
+        "case": {
+          "title": "Esimerkkitilanne",
+          "text": "Demonstraatio ei onnistu, ja yleisö alkaa naureskella. Mitä sanot, jotta tilanteesta tulee osa tiedettä?"
+        }
+      },
+      {
+        "id": "erilaiset",
+        "title": "Miten erilaiset oppijat ja osallistujat huomioidaan?",
+        "text": [
+          "Ryhmässä on aina eri-ikäisiä, eri tavoin oppivia ja eri kieliä puhuvia. Joku on nopea, joku tarvitsee enemmän aikaa, joku ei näe tai kuule hyvin, ja joku jännittää. Hyvä työpaja toimii monella tavalla: näyttämällä, sanomalla, kokeilemalla ja kuvalla.",
+          "Suunnittele jokaiseen työpajaan helpompi ja haastavampi versio. Puhu selkeästi ja lyhyin lausein, näytä samalla, ja tarkista, että välineisiin ylettyy myös pyörätuolista. Älä oleta osallistujasta mitään hänen ulkonäkönsä tai nimensä perusteella."
+        ],
+        "points": [
+          "Näytä ja sano, älä vain sano.",
+          "Helpompi ja haastavampi versio valmiina.",
+          "Selkeä kieli: lyhyet lauseet, yksi asia kerrallaan.",
+          "Tila ja välineet kaikkien ulottuville."
+        ],
+        "practice": {
+          "title": "Harjoitus: Ilman sanoja",
+          "text": "Ohjaa kaveri tekemään yksinkertainen tehtävä, esimerkiksi taittamaan paperista lennokki, puhumatta lainkaan. Mitä tämä kertoo ohjeista osallistujalle, jonka kieli on eri kuin sinun?"
+        },
+        "case": {
+          "title": "Esimerkkitilanne",
+          "text": "Yksi osallistuja on valmis puolessa ajassa ja alkaa häiritä muita. Mitä hänelle voi antaa tehtäväksi?"
+        }
+      },
+      {
+        "id": "turvallisuus",
+        "title": "Miten toimitaan turvallisesti ja vastuullisesti?",
+        "text": [
+          "Turvallisuus suunnitellaan etukäteen. Jokaisessa työpajakortissa on turvallisuusohjeet: lue ne ja käy ne läpi opettajan kanssa. Opettaja vastaa valvonnasta, mutta sinä vastaat siitä, että noudatat ohjeita ja keskeytät toiminnan, jos jokin näyttää vaaralliselta.",
+          "Vastuullisuus on myös osallistujien kunnioittamista. Älä kerää osallistujista nimiä tai muita henkilötietoja, älä kuvaa ketään ilman lupaa, ja kerro opettajalle heti, jos joku loukkaantuu tai jokin tilanne huolettaa sinua."
+        ],
+        "points": [
+          "Lue työpajan turvallisuusohjeet ja käy ne läpi opettajan kanssa.",
+          "Saat ja sinun pitää keskeyttää, jos jokin on vaarallista.",
+          "Ei henkilötietoja, ei kuvia ilman lupaa.",
+          "Ilmoita opettajalle heti kaikesta, mikä huolettaa.",
+          "Käytä [turvallisuustarkistuslistaa](lumatutor-tyokalut.html#turvallisuus) ennen jokaista työpajaa."
+        ],
+        "practice": {
+          "title": "Harjoitus: Riskit esiin",
+          "text": "Valitse yksi työpajapankin työpaja ja etsi siitä kolme asiaa, jotka voivat mennä vikaan. Kirjoita jokaiselle, miten ne estetään ja mitä teet, jos ne silti tapahtuvat."
+        },
+        "case": {
+          "title": "Esimerkkitilanne",
+          "text": "Kesken työpajan osallistuja laittaa nappipariston suuhunsa. Mitä teet heti, ja kenelle kerrot?"
+        }
+      },
+      {
+        "id": "tiedeviestinta",
+        "title": "Mitä on hyvä tiedeviestintä?",
+        "text": [
+          "Tiedeviestintä on tutkitun tiedon kertomista niille, jotka eivät ole alan asiantuntijoita. Hyvä tiedeviestintä on totta, ymmärrettävää ja kiinnostavaa, ja se kertoo myös, miten tieto on saatu ja mitä ei vielä tiedetä.",
+          "Tutorina olet tiedeviestijä. Kerro, mistä tieto on peräisin, erota havainto tulkinnasta, älä liioittele, ja sano suoraan, jos et tiedä. Luotettava lähde on esimerkiksi tutkimuslaitos, yliopisto tai oppikirja, ei pelkkä somepostaus."
+        ],
+        "points": [
+          "Totta, ymmärrettävää ja kiinnostavaa, tässä järjestyksessä.",
+          "Kerro, mistä tieto on peräisin.",
+          "Erota havainto (mitä näimme) ja tulkinta (mitä se tarkoittaa).",
+          "”En tiedä” on rehellinen vastaus."
+        ],
+        "practice": {
+          "title": "Harjoitus: Yksi kuva, yksi viesti",
+          "text": "Valitse yksi kuvaaja tai kuva luotettavasta lähteestä ja kirjoita sille otsikko ja kaksi lausetta, jotka kertovat yläkoululaiselle, mitä siitä näkee. Merkitse lähde."
+        },
+        "case": {
+          "title": "Esimerkkitilanne",
+          "text": "Osallistuja sanoo nähneensä videon, jonka mukaan ilmastonmuutos on huijausta. Miten keskustelet hänen kanssaan kunnioittavasti ja tietoon nojaten?"
+        }
+      }
+    ],
+    "done_h": "Perehdytys on valmis, kun",
+    "done": [
+      "olet käynyt läpi kaikki kymmenen aihetta",
+      "olet tehnyt jokaisen aiheen harjoituksen tai tehnyt sen yhteisessä tapaamisessa",
+      "olet esittänyt kahden minuutin tiededemonstraation",
+      "portfoliossasi on lähtötilanne ja perehdytyksen tärkeimmät oivallukset"
+    ]
+  },
+  "tutustu": {
+    "title": "Tutustu tiedetapahtumiin",
+    "lead": "Katso, miten muut tekevät tiedekasvatusta, ja kerää ideoita omaan työpajaasi. Osallistu vähintään yhteen soveltuvaan tiedetapahtumaan.",
+    "why_h": "Miksi vierailla?",
+    "why": [
+      "LUMA-tutorina et vain järjestä tapahtumia. Opit myös katsomaan, miten kokeneet tiedeviestijät ja tiedekasvattajat tekevät työnsä: miten he aloittavat, mitä he kysyvät ja miten he saavat yleisön kokeilemaan.",
+      "Vierailulla olet havainnoija. Seuraat toteutusta ja yleisöä, et vain ilmiöitä. Pitkää raporttia ei tarvita: tavoite on kerätä ajatuksia ja ideoita omaan toimintaasi."
+    ],
+    "kinds_h": "Millaisiin tapahtumiin?",
+    "kinds_lead": "Sopiva tapahtuma on sellainen, jossa yleisölle kerrotaan tieteestä tai yleisö pääsee itse kokeilemaan. Esimerkkejä:",
+    "kinds": [
+      "Tieteiden yö",
+      "Heurekan tiedetapahtumat",
+      "yliopistojen ja korkeakoulujen tiedepäivät ja avoimet ovet",
+      "LUMA-keskusten tapahtumat",
+      "tutkimuslaitosten yleisötapahtumat",
+      "tiedefestivaalit",
+      "tieteen popularisointiin liittyvät yleisöluennot",
+      "STEAM- ja teknologiakasvatuksen tapahtumat",
+      "muut opettajan hyväksymät tiedetapahtumat"
+    ],
+    "kinds_note": "Luettelo on esimerkkejä tapahtumatyypeistä. Ne eivät ole sovittuja vierailuja eivätkä yhteistyösopimuksia. Tarkista tapahtuman ajankohta ja sopivuus aina ensin opettajalta.",
+    "modes_h": "Kolme tapaa vierailla",
+    "modes": [
+      {
+        "title": "Yhteinen vierailu",
+        "text": "Opettaja järjestää vierailun koko tutorryhmälle. Sovitte etukäteen, kuka havainnoi mitäkin."
+      },
+      {
+        "title": "Oma vierailu",
+        "text": "Käyt tapahtumassa itsenäisesti, esimerkiksi viikonloppuna. Kerro opettajalle etukäteen, mihin olet menossa, ja varmista, että tapahtuma sopii."
+      },
+      {
+        "title": "Apuohjaajana",
+        "text": "Olet tapahtumassa työpajan ohjaajan apuna. Näet työpajan sisältä päin, ja tämä on usein paras tapa oppia."
+      }
+    ],
+    "steps_h": "Ennen, aikana ja jälkeen",
+    "steps": [
+      {
+        "title": "Ennen",
+        "items": [
+          "Sovi vierailusta opettajan kanssa ja tarkista tapahtuman ohjelma.",
+          "Valitse yksi tai kaksi asiaa, joita havainnoit erityisesti.",
+          "Tulosta tai kopioi [havainnointipohja](lumatutor-tyokalut.html#havainnointi) puhelimeesi."
+        ]
+      },
+      {
+        "title": "Aikana",
+        "items": [
+          "Osallistu itse, kokeile ja kuuntele.",
+          "Katso yleisöä: milloin he innostuvat, milloin heidän huomionsa herpaantuu?",
+          "Kirjaa lyhyitä muistiinpanoja heti, kun jokin herättää ajatuksen.",
+          "Älä kuvaa ihmisiä ilman lupaa. Voit kuvata välineitä ja rakenteita, jos järjestäjä sallii."
+        ]
+      },
+      {
+        "title": "Jälkeen",
+        "items": [
+          "Täydennä havainnointipohja saman päivän aikana.",
+          "Valitse yksi idea, jota kokeilet omassa työpajassasi.",
+          "Lisää havainnot portfolion kohtaan Tiedetapahtumavierailut ja kirjaa käyttämäsi aika työajan seurantaan."
+        ]
+      }
+    ],
+    "observe_h": "Havainnointikysymykset",
+    "observe_lead": "Katso tapahtumaa tiedeviestinnän ja tiedekasvatuksen näkökulmasta. Vastaa kuuteen kysymykseen muutamalla lauseella.",
+    "observe": [
+      "Miten tiedesisällöt tehtiin ymmärrettäviksi?",
+      "Miten yleisön kiinnostus herätettiin?",
+      "Miten osallistujat pääsivät itse kokeilemaan ja tutkimaan?",
+      "Millaisia demonstraatioita tai työpajoja tapahtumassa oli?",
+      "Mikä toteutus onnistui erityisen hyvin?",
+      "Mitä voisin hyödyntää omassa tiedetyöpajassani?"
+    ],
+    "template_note": "Valmis pohja, jonka voit kopioida, ladata tai tulostaa:",
+    "time_h": "Työaika",
+    "time": "Vierailuihin ja havainnointiin on varattu työmäärää noin $4 \\cdot 75\\,\\text{min}$. Siihen kuuluvat valmistautuminen, itse tapahtuma ja havaintojen kirjaaminen. Matka-ajan laskemisesta sovitaan opettajan kanssa. Kirjaa toteutunut aika minuutteina.",
+    "done_h": "Osa on valmis, kun",
+    "done": [
+      "olet osallistunut vähintään yhteen soveltuvaan tiedetapahtumaan",
+      "olet vastannut kuuteen havainnointikysymykseen",
+      "olet valinnut ainakin yhden idean omaan työpajaasi",
+      "havainnot ovat portfoliossa ja aika on kirjattu"
+    ]
+  },
+  "suunnittele": {
+    "title": "Suunnittele työpaja",
+    "lead": "Työpajapankissa on valmiita tiedetyöpajoja, joita lukiolaiset voivat ohjata esimerkiksi peruskoululaisille. Valitse yksi, muokkaa sitä tai suunnittele oma.",
+    "bank_h": "Tiedetyöpajapankki",
+    "bank_lead": "Jokainen valmis työpaja on kokonainen ohjausmateriaali: tavoitteet, välineet, turvallisuus, toteutus minuutteineen, taustatiedot ja tulostettava osallistujan materiaali. Jatkokehitysehdotukset ovat ideoita, joita ei ole vielä kirjoitettu valmiiksi eikä kokeiltu.",
+    "ready_h": "Valmiit työpajat",
+    "ideas_h": "Jatkokehitysehdotukset",
+    "ideas_lead": "Nämä työpajat odottavat kehittäjää. Voit ottaa yhden omaksi suunnittelutehtäväksesi: kirjoita se valmiiksi suunnittelupohjalla, testaa ja tuo opettajalle.",
+    "own_h": "Näin suunnittelet ja testaat työpajan",
+    "own_lead": "Käytä [työpajan suunnittelupohjaa](lumatutor-tyokalut.html#suunnittelu). Valmiit työpajat ovat malleja siitä, millainen valmis suunnitelma on.",
+    "own_steps": [
+      {
+        "title": "Valitse ilmiö ja kohderyhmä",
+        "text": "Mikä ilmiö kiinnostaa sinua, ja kenelle työpaja on? Alakoululainen tarvitsee lyhyempiä vaiheita ja enemmän tekemistä kuin yläkoululainen."
+      },
+      {
+        "title": "Kirjoita tavoite yhdellä lauseella",
+        "text": "Mitä osallistuja osaa tai huomaa työpajan jälkeen? Esimerkiksi: ”Osallistuja huomaa, että lamppu syttyy vain, kun piiri on suljettu.”"
+      },
+      {
+        "title": "Suunnittele koukku",
+        "text": "Aloita ilmiöllä tai kysymyksellä, joka herättää uteliaisuuden alle minuutissa."
+      },
+      {
+        "title": "Suunnittele tekeminen",
+        "text": "Tehtävä, jossa osallistujat ennustavat, kokeilevat ja havaitsevat. Ensimmäinen onnistuminen muutamassa minuutissa, sitten haaste."
+      },
+      {
+        "title": "Kirjoita kysymykset ja lopetus",
+        "text": "Kolme hyvää kysymystä ja lopetus, jossa osallistujat kertovat, mitä huomasivat."
+      },
+      {
+        "title": "Tee turvallisuussuunnitelma ja välinelista",
+        "text": "Käy läpi [turvallisuustarkistuslista](lumatutor-tyokalut.html#turvallisuus). Näytä suunnitelma opettajalle ennen testausta."
+      },
+      {
+        "title": "Testaa",
+        "text": "Kokeile työpajaa ensin itse ja sitten muiden tutorien tai kavereiden kanssa. Ota aika ja pyydä palautetta [palautelomakkeella](lumatutor-tyokalut.html#palaute)."
+      },
+      {
+        "title": "Paranna",
+        "text": "Kirjaa portfolioon, mitä testissä tapahtui ja mitä muutit. Muutos testin perusteella on suunnittelun tärkein osa."
+      }
+    ],
+    "time_h": "Työaika",
+    "time": "Suunnitteluun ja testaamiseen on varattu työmäärää noin $4 \\cdot 75\\,\\text{min}$. Valmiin työpajan käyttöönotto vie vähemmän aikaa kuin oman suunnittelu, joten valmista työpajaa käyttäessäsi muokkaa sitä omaksesi: lisää oma koukku, oma eriyttäminen tai uusi vaihe.",
+    "add_h": "Uuden työpajan lisääminen pankkiin",
+    "add": "Kun suunnittelemasi työpaja on testattu ja opettaja on hyväksynyt sen, se voidaan lisätä pankkiin. Ruukkilabrassa jokainen työpaja on oma tiedostonsa, joten lisääminen ei vaadi muutoksia sivuston koodiin.",
+    "done_h": "Osa on valmis, kun",
+    "done": [
+      "sinulla on kirjallinen työpajasuunnitelma tai muokattu valmis työpaja",
+      "olet testannut työpajan vähintään kerran muiden kanssa",
+      "olet muuttanut suunnitelmaa testin perusteella",
+      "suunnitelma, testauksen tulokset ja muutokset ovat portfoliossa"
+    ]
+  },
+  "toteuta": {
+    "title": "Toteuta: ohjaa muita",
+    "lead": "Ohjaat tiedetyöpajoja ja olet mukana järjestämässä tiedetapahtumia. Todellisen työpajan tai tapahtuman ohjaaminen on opintojakson keskeinen näyttö.",
+    "kinds_h": "Millaisia tapahtumia?",
+    "kinds_lead": "Tapahtumat sovitaan opettajan kanssa lukuvuoden aikana. Mahdollisia toteutuksia ovat esimerkiksi:",
+    "kinds": [
+      "alakoululaisten tiedetyöpajat",
+      "yläkoululaisten vierailut lukiossa",
+      "Kiviruukin lukion esittelytilaisuudet",
+      "tiedefestivaalit ja tiedepäivät",
+      "tiedekerhot",
+      "LUMA-keskusten yhteistyötapahtumat",
+      "kansainvälisten vierailijoiden työpajat",
+      "opiskelijoiden itse suunnittelemat tiedetapahtumat",
+      "Kiviruukin omat STEAM- ja Makerspace-tapahtumat"
+    ],
+    "kinds_note": "Luettelossa ovat mahdolliset tapahtumatyypit. Opettaja kertoo, mitkä tapahtumat ovat tänä lukuvuonna tarjolla.",
+    "peer_h": "Vertaisohjaus",
+    "peer_lead": "Vertaisohjaus voi kuulua opintojaksoon, mutta se ei ole sen pääasiallinen sisältö. Siitä sovitaan opettajan kanssa. Esimerkkejä:",
+    "peer": [
+      "vapaaehtoinen matematiikan laskupaja",
+      "fysiikan tai kemian kokeellisten töiden ohjaaminen",
+      "kilpailuihin valmistautuvien opiskelijoiden tukeminen",
+      "pienryhmien ohjaaminen",
+      "tiededemonstraatioiden järjestäminen"
+    ],
+    "peer_note": "Vertaisohjauksessa pätee sama kuin työpajoissa: ohjaa ajattelemaan, älä tee puolesta. Kysy ensin, mitä toinen on jo yrittänyt.",
+    "task_h": "Jokaisessa tapahtumassa tiedät",
+    "task_lead": "Ennen jokaista tapahtumaa käyt opettajan ja muiden tutorien kanssa läpi nämä kuusi kysymystä. Kirjaa vastaukset [tapahtuman valmistelun tarkistuslistaan](lumatutor-tyokalut.html#valmistelu).",
+    "task": [
+      {
+        "q": "Mitä minun odotetaan tekevän?",
+        "a": "Oma roolisi: esimerkiksi työpajan pääohjaaja, apuohjaaja, välinevastaava tai vastaanottaja. Tiedät, mihin aikaan olet paikalla ja mitä teet kunkin vaiheen aikana."
+      },
+      {
+        "q": "Miten valmistaudun?",
+        "a": "Luet työpajakortin, kokeilet työpajan itse, harjoittelet aloituksen ääneen ja selvität, millainen ryhmä on tulossa."
+      },
+      {
+        "q": "Mitä välineitä tarvitaan?",
+        "a": "Teet välinelistan työpajakortin perusteella, varaat varavälineitä ja tarkistat, että kaikki toimii, päivää ennen ja juuri ennen aloitusta."
+      },
+      {
+        "q": "Miten vastuut jaetaan?",
+        "a": "Sovitte, kuka ohjaa, kuka avustaa, kuka vastaa välineistä ja kuka siivoaa. Opettaja vastaa valvonnasta ja turvallisuudesta."
+      },
+      {
+        "q": "Miten turvallisuus varmistetaan?",
+        "a": "Käytte [turvallisuustarkistuslistan](lumatutor-tyokalut.html#turvallisuus) läpi, tiedätte ensiaputarvikkeiden paikan ja sen, keneen otat yhteyttä, jos jotain sattuu."
+      },
+      {
+        "q": "Miten osallistuminen dokumentoidaan?",
+        "a": "Kirjaat tapahtuman, roolisi ja työaikasi työajan seurantaan, keräät osallistujapalautteen nimettömänä ja täytät tutorin itsearvioinnin samana päivänä."
+      }
+    ],
+    "roles_h": "Roolit tapahtumassa",
+    "roles": [
+      {
+        "title": "Pääohjaaja",
+        "text": "Aloittaa ja lopettaa työpajan, antaa ohjeet ja pitää aikataulusta kiinni."
+      },
+      {
+        "title": "Apuohjaaja",
+        "text": "Kiertää ryhmien luona, auttaa jumiin jääneitä ja huomaa, kuka tarvitsee tukea."
+      },
+      {
+        "title": "Välinevastaava",
+        "text": "Valmistelee ja jakaa välineet, pitää varaosat tallessa ja vastaa siivouksesta."
+      },
+      {
+        "title": "Vastaanottaja",
+        "text": "Ottaa ryhmän vastaan, näyttää paikat ja huolehtii siirtymistä."
+      }
+    ],
+    "roles_note": "Roolit vaihtuvat tapahtumasta toiseen. Jos tapahtumat sen mahdollistavat, jokainen pääsee kokeilemaan pääohjaajan roolia ainakin kerran.",
+    "responsibility_h": "Vastuu",
+    "responsibility": [
+      "Opettaja vastaa toiminnan asianmukaisesta valvonnasta ja turvallisuuden organisoinnista.",
+      "Et toimi yksin vastuuhenkilönä tapahtumassa, joka on suunnattu alaikäisille. Paikalla on aina ryhmän oma opettaja tai muu vastuussa oleva aikuinen.",
+      "Osallistujista ei kerätä henkilötietoja. Palaute kerätään nimettömänä, eikä tunnistettavia kuvia oteta tai julkaista ilman lupaa koulun käytännön mukaisesti."
+    ],
+    "time_h": "Työaika",
+    "time": "Tapahtumien valmisteluun ja ohjaamiseen on varattu työmäärää noin $9 \\cdot 75\\,\\text{min}$. Se voi olla esimerkiksi kaksi tai kolme tapahtumaa valmisteluineen tai useampi lyhyt työpaja. Kirjaa jokaisesta tapahtumasta valmisteluun ja ohjaamiseen kulunut aika erikseen.",
+    "done_h": "Osa on valmis, kun",
+    "done": [
+      "olet osallistunut ainakin yhden todellisen tiedetyöpajan tai tiedetapahtuman ohjaamiseen",
+      "olet harjoitellut pääohjaajan roolia, jos tapahtumat sen mahdollistavat (sovi tästä opettajan kanssa)",
+      "jokaisesta tapahtumasta on kirjattu rooli, työaika, palaute ja itsearviointi"
+    ]
+  },
+  "arvioi": {
+    "title": "Arvioi ja palauta",
+    "lead": "Tutorportfolio kertoo, mitä teit ja mitä opit. Sen avulla seuraat etenemistäsi koko lukuvuoden ajan ja osoitat osaamisesi.",
+    "portfolio_h": "Tutorportfolio",
+    "portfolio_lead": "Portfoliossa on kuusi osaa. Täytä sitä sitä mukaa kuin etenet, älä vasta lopussa. Lyhyet ja rehelliset vastaukset ovat parempia kuin pitkät ja yleiset.",
+    "portfolio_template": "Koko portfolio on yhtenä [portfoliopohjana](lumatutor-tyokalut.html#portfolio), jonka voit kopioida omaan tiedostoosi.",
+    "parts": [
+      {
+        "title": "Oma lähtötilanne",
+        "when": "Heti alussa",
+        "items": [
+          "Miksi haluan toimia LUMA-tutorina?",
+          "Mitä vahvuuksia minulla on?",
+          "Mitä haluan oppia?"
+        ]
+      },
+      {
+        "title": "Perehdytys",
+        "when": "Perehdytyksen aikana",
+        "items": [
+          "Suoritetut harjoitukset",
+          "Tärkeimmät oivallukset ohjaamisesta"
+        ]
+      },
+      {
+        "title": "Tiedetapahtumavierailut",
+        "when": "Jokaisen vierailun jälkeen",
+        "items": [
+          "Missä kävin?",
+          "Mitä havaitsin?",
+          "Mitä opin tiedeviestinnästä?",
+          "Mitä voisin hyödyntää itse?"
+        ]
+      },
+      {
+        "title": "Työpajan suunnittelu",
+        "when": "Suunnittelun ja testauksen aikana",
+        "items": [
+          "Työpajan aihe ja kohderyhmä",
+          "Oma suunnitelma",
+          "Testauksen tulokset",
+          "Suunnitelmaan tehdyt muutokset"
+        ]
+      },
+      {
+        "title": "Tapahtumien toteuttaminen",
+        "when": "Jokaisen tapahtuman jälkeen",
+        "items": [
+          "Tapahtuma ja ajankohta",
+          "Oma rooli",
+          "Käytetty työaika",
+          "Mikä onnistui?",
+          "Mitä kehittäisin?"
+        ]
+      },
+      {
+        "title": "Lopullinen itsearviointi",
+        "when": "Lopuksi",
+        "items": [
+          "Miten ohjaustaitoni kehittyivät?",
+          "Miten osaan innostaa muita tieteen pariin?",
+          "Mitä opin yhteistyöstä?",
+          "Mitä tekisin seuraavalla kerralla toisin?"
+        ]
+      }
+    ],
+    "time_h": "Työajan seuranta",
+    "time_lead": "Kirjaa jokainen työrupeama: päivä, mitä teit, mihin osaan se kuuluu ja montako minuuttia siihen kului. Laske lopuksi yhteen osittain.",
+    "time_targets_h": "Suuntaa-antava jako",
+    "time_template": "Käytä [työajan seurantalomaketta](lumatutor-tyokalut.html#tyoaika).",
+    "self_h": "Itsearviointi",
+    "self_lead": "Arvioi jokaisen tapahtuman jälkeen omaa toimintaasi [tutorin itsearviointipohjalla](lumatutor-tyokalut.html#itsearviointi). Lopuksi arvioit kehittymistäsi koko opintojakson ajalta samojen osa-alueiden avulla, joilla opettaja arvioi suoritusta:",
+    "return_h": "Palautus",
+    "return": [
+      "Palauta portfoliosi ja työajan seuranta koulun erikseen osoittamassa oppimisympäristössä. Ruukkilabra ei tallenna mitään, mitä kirjoitat: tee portfolio omaan tiedostoosi.",
+      "Palautuksen jälkeen käyt opettajan kanssa lyhyen palautekeskustelun. Siinä käydään läpi portfolio, tapahtumat ja itsearviointi, ja opettaja kertoo arvioinnin perusteet."
+    ],
+    "check_h": "Ennen palautusta tarkista",
+    "check": [
+      "portfolion kaikissa kuudessa osassa on vastaukset",
+      "työajan seuranta on laskettu yhteen",
+      "jokaisesta tapahtumasta on rooli, työaika ja itsearviointi",
+      "portfoliossa ei ole osallistujien nimiä tai muita henkilötietoja"
+    ]
+  },
+  "tyokalut": {
+    "title": "Ohjaajan työkalupakki",
+    "lead": "Pohjat ja tarkistuslistat kaikkiin opintojakson vaiheisiin. Ne on tehty käytettäviksi suoraan oikeissa tapahtumissa.",
+    "how": "Jokaisen pohjan voi kopioida omaan tiedostoon, ladata tekstitiedostona tai tulostaa. Tulosta-painike tulostaa vain sen pohjan. Mitään ei tallenneta Ruukkilabraan.",
+    "templates": [
+      {
+        "id": "suunnittelu",
+        "title": "Työpajan suunnittelupohja",
+        "use": "Oman työpajan suunnitteluun tai valmiin työpajan muokkaamiseen.",
+        "file": "tyopajan-suunnitelma.txt",
+        "section": "suunnittele",
+        "blocks": [
+          "# Työpajan suunnitelma",
+          "? Työpajan nimi",
+          "? Suunnittelija(t)",
+          "? Kohderyhmä ja ryhmän koko",
+          "? Aihealue",
+          "? Kesto",
+          "## Tavoite",
+          "?? Mitä osallistuja osaa tai huomaa työpajan jälkeen? (yksi lause)",
+          "## Välineet ja valmistelut",
+          "?? Välineet ja materiaalit, määrät",
+          "?? Valmistelut ennen työpajaa",
+          "## Turvallisuus",
+          "?? Mitkä riskit ja miten ne estetään?",
+          "## Toteutus",
+          ". Kirjoita vaiheet ja niiden kesto minuutteina.",
+          "? Aloitus ja koukku",
+          "? Tekeminen 1",
+          "? Tekeminen 2",
+          "? Lopetus ja yhteinen pohdinta",
+          "## Kysymykset ja eriyttäminen",
+          "?? Kolme hyvää kysymystä osallistujille",
+          "?? Helpompi versio ja haastavampi versio",
+          "?? Mitä voi mennä vikaan ja mitä silloin teen?",
+          "## Taustatiedot",
+          "?? Mitä tutorin pitää tietää ilmiöstä? Lähteet",
+          "## Testaus",
+          "? Testattu (milloin, kenen kanssa)",
+          "?? Mitä testissä tapahtui?",
+          "?? Mitä muutin testin jälkeen?"
+        ]
+      },
+      {
+        "id": "havainnointi",
+        "title": "Tiedetapahtumavierailun havainnointipohja",
+        "use": "Tiedetapahtumavierailulle. Täytä muistiinpanot tapahtumassa ja täydennä samana päivänä.",
+        "file": "vierailun-havainnot.txt",
+        "section": "tutustu",
+        "blocks": [
+          "# Tiedetapahtumavierailu",
+          "? Tapahtuma ja paikka",
+          "? Ajankohta",
+          "? Vierailun tapa (yhteinen, oma, apuohjaajana)",
+          "? Mitä havainnoin erityisesti?",
+          "## Havainnot",
+          "?? 1. Miten tiedesisällöt tehtiin ymmärrettäviksi?",
+          "?? 2. Miten yleisön kiinnostus herätettiin?",
+          "?? 3. Miten osallistujat pääsivät itse kokeilemaan ja tutkimaan?",
+          "?? 4. Millaisia demonstraatioita tai työpajoja tapahtumassa oli?",
+          "?? 5. Mikä toteutus onnistui erityisen hyvin?",
+          "?? 6. Mitä voisin hyödyntää omassa tiedetyöpajassani?",
+          "## Lopuksi",
+          "? Yksi idea, jota kokeilen",
+          "? Käytetty aika (minuutteina)"
+        ]
+      },
+      {
+        "id": "valmistelu",
+        "title": "Tapahtuman valmistelun tarkistuslista",
+        "use": "Viikkoa ennen tapahtumaa, edellisenä päivänä ja juuri ennen aloitusta.",
+        "file": "tapahtuman-valmistelu.txt",
+        "section": "toteuta",
+        "blocks": [
+          "# Tapahtuman valmistelu",
+          "? Tapahtuma, paikka ja ajankohta",
+          "? Ryhmä: ikä ja koko",
+          "? Vastuuopettaja paikalla",
+          "## Roolit",
+          "? Pääohjaaja",
+          "? Apuohjaaja(t)",
+          "? Välinevastaava",
+          "? Vastaanottaja",
+          "## Viikkoa ennen",
+          "[ ] Työpaja on valittu ja työpajakortti luettu.",
+          "[ ] Olen kokeillut työpajan itse.",
+          "[ ] Välinelista on tehty ja puuttuvat välineet tilattu tai lainattu.",
+          "[ ] Turvallisuustarkistuslista on käyty läpi opettajan kanssa.",
+          "[ ] Tila on varattu ja tiedän, missä se on.",
+          "## Edellisenä päivänä",
+          "[ ] Välineet on laskettu ja testattu, varavälineet mukana.",
+          "[ ] Osallistujan materiaalit on tulostettu.",
+          "[ ] Aloitus on harjoiteltu ääneen.",
+          "[ ] Aikataulu on selvä kaikille tutoreille.",
+          "## Juuri ennen aloitusta",
+          "[ ] Välineet ovat paikoillaan, ja ne jaetaan vasta ohjeen jälkeen.",
+          "[ ] Tiedän ensiaputarvikkeiden paikan ja hätäuloskäynnit.",
+          "[ ] Tiedän, keneen otan yhteyttä, jos jotain sattuu.",
+          "[ ] Palautelomake on valmiina.",
+          "## Jälkeen",
+          "[ ] Tila on siivottu ja välineet palautettu.",
+          "[ ] Työaika ja itsearviointi on kirjattu."
+        ]
+      },
+      {
+        "id": "turvallisuus",
+        "title": "Turvallisuustarkistuslista",
+        "use": "Ennen jokaista työpajaa, yhdessä opettajan kanssa.",
+        "file": "turvallisuus.txt",
+        "section": "toteuta",
+        "blocks": [
+          "# Turvallisuustarkistus",
+          "? Työpaja",
+          "? Tarkistettu yhdessä (opettaja ja tutorit)",
+          "## Kaikissa työpajoissa",
+          "[ ] Vastuuopettaja tai muu vastuussa oleva aikuinen on paikalla koko ajan.",
+          "[ ] Tiedän ensiaputarvikkeiden paikan ja hätäuloskäynnit.",
+          "[ ] Kulkureitit ovat vapaina, eikä johtoja tai tavaroita ole lattialla.",
+          "[ ] Välineet sopivat osallistujien iälle.",
+          "[ ] Osallistujilta on kysytty allergioista, jos käytetään ruokaa, lateksia tai muuta allergisoivaa.",
+          "[ ] Osallistujista ei kerätä henkilötietoja, eikä heitä kuvata ilman lupaa.",
+          "## Sähkö",
+          "[ ] Käytetään vain paristoja tai pienjännitettä, ei koskaan verkkovirtaa.",
+          "[ ] Nappiparistoja ei ole lasten ulottuvilla.",
+          "[ ] Kerrotaan, että paristoa ei saa oikosulkea: johto voi kuumentua.",
+          "[ ] Rikkinäiset, vuotavat tai kuumenevat paristot poistetaan heti käytöstä.",
+          "## Kemikaalit ja vesi",
+          "[ ] Vain opettajan hyväksymiä aineita. Käyttöturvallisuustiedot on luettu.",
+          "[ ] Suojalasit käytössä, kun aine voi roiskua.",
+          "[ ] Mitään ei maisteta.",
+          "[ ] Märkä lattia kuivataan heti.",
+          "## Työkalut ja valo",
+          "[ ] Terävät työkalut vain ohjatusti, ei pienille lapsille.",
+          "[ ] Laserosoittimia ei käytetä.",
+          "[ ] Aurinkoon tai kirkkaaseen lamppuun ei katsota suoraan.",
+          "[ ] Kuumenevat lamput on sijoitettu niin, ettei niihin kosketa.",
+          "## Jos jotain sattuu",
+          "[ ] Keskeytän toiminnan ja kutsun vastuuaikuisen heti.",
+          "[ ] Jos lapsi on voinut niellä nappipariston tai magneetin, soitetaan heti 112. Oireita ei jäädä odottamaan.",
+          "[ ] Kerron tapahtuneesta opettajalle saman päivän aikana."
+        ]
+      },
+      {
+        "id": "kysymyskortit",
+        "title": "Hyvien ohjauskysymysten kortit",
+        "use": "Tulosta, leikkaa kortit irti ja pidä niitä mukana työpajassa.",
+        "file": "ohjauskysymykset.txt",
+        "section": "perehdy",
+        "cards": true,
+        "blocks": [
+          "# Ohjauskysymykset",
+          "## Herätä uteliaisuus",
+          "- Mitä huomaat?",
+          "- Mikä tässä on outoa tai yllättävää?",
+          "- Mitä haluaisit tietää tästä?",
+          "## Ennusta",
+          "- Mitä luulet tapahtuvan, jos…?",
+          "- Miksi ajattelet niin?",
+          "- Olisiko jokin muu vaihtoehto mahdollinen?",
+          "## Tutki",
+          "- Miten voisit testata sen?",
+          "- Mitä muutat, ja mikä pysyy samana?",
+          "- Mitä tapahtuu, jos teet sen toisin?",
+          "## Havaitse",
+          "- Mitä tapahtui?",
+          "- Tapahtuiko se, mitä ennustit?",
+          "- Huomasiko joku muu jotain erilaista?",
+          "## Selitä",
+          "- Miksi luulet, että niin kävi?",
+          "- Miten selittäisit tämän kaverillesi?",
+          "- Mikä todiste tukee ajatustasi?",
+          "## Sovella ja pohdi",
+          "- Missä arjessa näet saman ilmiön?",
+          "- Mitä tekisit seuraavaksi?",
+          "- Mikä oli tänään yllättävintä?",
+          "## Kun joku on jumissa",
+          "- Mitä olet jo kokeillut?",
+          "- Mikä osa toimii ja mikä ei?",
+          "- Mitä jos kokeillaan yksi muutos kerrallaan?"
+        ]
+      },
+      {
+        "id": "demonstraatio",
+        "title": "Tiededemonstraation suunnittelupohja",
+        "use": "Lyhyen, muutaman minuutin näytöksen suunnitteluun.",
+        "file": "demonstraatio.txt",
+        "section": "perehdy",
+        "blocks": [
+          "# Tiededemonstraatio",
+          "? Ilmiö",
+          "? Yleisö ja paikka",
+          "? Kesto",
+          "## Kolme osaa",
+          "?? 1. Kysymys tai ennustus yleisölle",
+          "?? 2. Näytös: mitä teen ja mitä yleisö näkee",
+          "?? 3. Keskustelu: mitä kysyn näytöksen jälkeen",
+          "## Selitys",
+          "?? Selitys kohderyhmälle sopivalla kielellä (enintään viisi lausetta)",
+          "## Varmistukset",
+          "[ ] Näkyy takariviin asti.",
+          "[ ] Harjoiteltu ainakin kolme kertaa.",
+          "[ ] Turvallisuus on tarkistettu opettajan kanssa.",
+          "? Varasuunnitelma, jos näytös epäonnistuu"
+        ]
+      },
+      {
+        "id": "palaute",
+        "title": "Osallistujapalautteen lomake",
+        "use": "Työpajan lopussa. Nimetön: osallistujilta ei kysytä nimeä eikä muita henkilötietoja.",
+        "file": "osallistujapalaute.txt",
+        "section": "toteuta",
+        "blocks": [
+          "# Palaute työpajasta",
+          ". Älä kirjoita nimeäsi. Ympyröi tai merkitse.",
+          "? Työpaja oli: kiva / ihan ok / ei kiva",
+          "? Opin jotain uutta: kyllä / vähän / en",
+          "? Pääsin itse kokeilemaan: kyllä / vähän / en",
+          "? Ohjeet olivat: selkeät / vähän sekavat / sekavat",
+          "?? Hauskinta oli",
+          "?? Haluaisin vielä tietää",
+          ". Pienille lapsille riittää, että he laittavat tarran hymynaaman, neutraalin naaman tai surullisen naaman kohdalle.",
+          "## Tutorille: palautteen yhteenveto",
+          "? Vastauksia yhteensä",
+          "?? Mitä palautteesta oppii?"
+        ]
+      },
+      {
+        "id": "itsearviointi",
+        "title": "Tutorin itsearviointipohja",
+        "use": "Jokaisen ohjauskerran jälkeen, samana päivänä.",
+        "file": "tutorin-itsearviointi.txt",
+        "section": "arvioi",
+        "blocks": [
+          "# Tutorin itsearviointi",
+          "? Tapahtuma ja ajankohta",
+          "? Oma rooli",
+          "## Arvioi asteikolla 1–4 (1 = vielä harjoittelen, 4 = onnistuin hyvin)",
+          "? Ohjaustaidot: annoin osallistujien tehdä itse",
+          "? Valmistautuminen: olin valmis, ja välineet toimivat",
+          "? Yhteistyö: toimin sovitusti muiden kanssa",
+          "? Vastuullisuus: huolehdin turvallisuudesta",
+          "? Aktiivisuus: tartuin tehtäviin oma-aloitteisesti",
+          "## Pohdi",
+          "?? Mikä onnistui? Mistä sen huomasi?",
+          "?? Missä tilanteessa olisin voinut toimia toisin?",
+          "?? Mitä osallistujapalautteesta voi päätellä?",
+          "?? Mitä teen seuraavalla kerralla toisin?"
+        ]
+      },
+      {
+        "id": "tyoaika",
+        "title": "Työajan seurantalomake",
+        "use": "Koko opintojakson ajan. Kirjaa toteutunut aika minuutteina.",
+        "file": "tyoajan-seuranta.txt",
+        "section": "arvioi",
+        "log": true,
+        "blocks": [
+          "# Työajan seuranta",
+          ". Kirjaa jokainen työrupeama samana päivänä. Osa on Perehdy, Tutustu, Suunnittele, Toteuta tai Arvioi.",
+          "= Päivä | Mitä tein | Osa | Minuuttia",
+          "## Yhteenveto",
+          "? Perehdy yhteensä (suuntaa-antava tavoite 225 minuuttia)",
+          "? Tutustu yhteensä (300 minuuttia)",
+          "? Suunnittele yhteensä (300 minuuttia)",
+          "? Toteuta yhteensä (675 minuuttia)",
+          "? Arvioi yhteensä (225 minuuttia)",
+          "? Kaikki yhteensä (noin 1 710–1 725 minuuttia)"
+        ]
+      },
+      {
+        "id": "portfolio",
+        "title": "Portfoliopohja",
+        "use": "Koko opintojakson ajan. Kopioi omaan tiedostoosi ja palauta koulun osoittamassa oppimisympäristössä.",
+        "file": "tutorportfolio.txt",
+        "section": "arvioi",
+        "blocks": [
+          "# LUMA-tutorin portfolio",
+          "? Nimi ja ryhmä",
+          "## 1. Oma lähtötilanne",
+          "?? Miksi haluan toimia LUMA-tutorina?",
+          "?? Mitä vahvuuksia minulla on?",
+          "?? Mitä haluan oppia?",
+          "## 2. Perehdytys",
+          "?? Suoritetut harjoitukset",
+          "?? Tärkeimmät oivallukset ohjaamisesta",
+          "## 3. Tiedetapahtumavierailut",
+          "? Missä kävin?",
+          "?? Mitä havaitsin?",
+          "?? Mitä opin tiedeviestinnästä?",
+          "?? Mitä voisin hyödyntää itse?",
+          "## 4. Työpajan suunnittelu",
+          "? Työpajan aihe ja kohderyhmä",
+          "?? Oma suunnitelma (liitä suunnittelupohja)",
+          "?? Testauksen tulokset",
+          "?? Suunnitelmaan tehdyt muutokset",
+          "## 5. Tapahtumien toteuttaminen",
+          ". Täytä jokaisesta tapahtumasta.",
+          "? Tapahtuma ja ajankohta",
+          "? Oma rooli",
+          "? Käytetty työaika",
+          "?? Mikä onnistui?",
+          "?? Mitä kehittäisin?",
+          "## 6. Lopullinen itsearviointi",
+          "?? Miten ohjaustaitoni kehittyivät?",
+          "?? Miten osaan innostaa muita tieteen pariin?",
+          "?? Mitä opin yhteistyöstä?",
+          "?? Mitä tekisin seuraavalla kerralla toisin?",
+          "## Liitteet",
+          "[ ] Työajan seuranta laskettuna yhteen",
+          "[ ] Tutorin itsearvioinnit",
+          "[ ] Ei osallistujien nimiä tai muita henkilötietoja"
+        ]
+      }
+    ]
+  },
+  "taxonomy": {
+    "topic": {
+      "sahko": "Sähkö",
+      "rakenteet": "Rakenteet ja tekniikka",
+      "matematiikka": "Matematiikka",
+      "valo": "Valo",
+      "ilmasto": "Ilmasto ja data",
+      "vesi": "Vesi ja kemia",
+      "liike": "Liike ja energia",
+      "paine": "Ilmanpaine",
+      "ohjelmointi": "Ohjelmointi ja robotiikka",
+      "elama": "Elävä luonto"
+    },
+    "audience": {
+      "alakoulu": "Alakoulu",
+      "ylakoulu": "Yläkoulu"
+    },
+    "equipment": {
+      "arki": "Arkiset tarvikkeet",
+      "paristot": "Paristot ja johdot",
+      "valaisimet": "Taskulamput",
+      "tulosteet": "Tulosteet",
+      "tietokone": "Tietokone tai tabletti",
+      "vesi": "Vesi",
+      "mikroskooppi": "Mikroskooppi",
+      "robotti": "Robotti tai mikro-ohjain"
+    }
+  }
+}

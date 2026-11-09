@@ -1,0 +1,202 @@
+{
+  "id": "ilmastodata",
+  "order": 5,
+  "status": "ready",
+  "title": "Ilmastodatan salapoliisit",
+  "short": "Osallistujat tutkivat oikeaa, lähteistettyä mittausdataa hiilidioksidista ja maapallon lämpötilasta ja harjoittelevat johtopäätösten tekemistä.",
+  "audience": "ylakoulu",
+  "topic": "ilmasto",
+  "minutes": 45,
+  "group": "pareittain tai kolmen hengen ryhmissä",
+  "equipment": [
+    "tulosteet",
+    "tietokone"
+  ],
+  "data": true,
+  "goals": [
+    "Osallistuja osaa lukea arvoja kuvaajasta ja laskea niiden muutoksen.",
+    "Osallistuja erottaa yksittäisen vuoden vaihtelun pitkän aikavälin suunnasta.",
+    "Osallistuja pohtii, mitä kaksi samaan aikaan muuttuvaa kuvaajaa todistaa ja mitä ei.",
+    "Osallistuja osaa kysyä, kuka aineiston on mitannut ja miten."
+  ],
+  "materials": [
+    "Tulostettu salapoliisin aineistokortti jokaiselle ryhmälle, mieluiten värillisenä. Kortissa on kaksi kuvaajaa ja vuosikymmenten keskiarvot.",
+    "Viivain ja kynä jokaiselle ryhmälle.",
+    "Vapaaehtoisesti tietokoneet tai tabletit: aineiston voi ladata CSV-tiedostona ja avata taulukkolaskentaohjelmassa."
+  ],
+  "prep": [
+    "Tulosta aineistokortit. Tarkista, että kuvaajien arvot erottuvat tulosteessa.",
+    "Tee tehtävät itse ja vertaa vastauksiin. Vastaukset on laskettu suoraan samasta aineistosta kuin kuvaajat.",
+    "Lue taustatiedot, erityisesti mitä lämpötilan poikkeama ja ppm tarkoittavat. Niitä kysytään melkein aina.",
+    "Jos käytätte tietokoneita, lataa CSV-tiedostot etukäteen ja kokeile, että ne aukeavat."
+  ],
+  "safety": [
+    "Työpajassa ei ole fyysisiä riskejä. Tietokoneita käytettäessä johdot pidetään pois kulkureiteiltä.",
+    "Ilmastonmuutos voi herättää huolta. Anna tilaa kysymyksille ja kerro myös, mitä ihmiset tekevät päästöjen vähentämiseksi. Älä pelottele äläkä vähättele."
+  ],
+  "steps": [
+    {
+      "time": "0–5",
+      "title": "Koukku: sää vai ilmasto?",
+      "do": "Kysy, oliko viime talvi kylmä. Keskustelkaa, voiko yhdestä talvesta päätellä, lämpeneekö maapallo. Erota sää (päivän ja viikon tilanne) ja ilmasto (vuosikymmenten keskiarvo).",
+      "say": "Jos tämä talvi on kylmä, onko ilmastonmuutos ohi? Miten sen voisi selvittää? Tänään olette salapoliiseja, ja todisteena on oikea mittausdata."
+    },
+    {
+      "time": "5–10",
+      "title": "Kuka mittasi ja miten?",
+      "do": "Näytä aineistokortti. Kerro, kuka mittaukset on tehnyt ja mitä kuvaajien yksiköt tarkoittavat. Kysy, miksi on tärkeää tietää, mistä data tulee.",
+      "say": "Hyvä salapoliisi kysyy ensin, mistä todiste on peräisin. Kuka nämä mittasi? Mitä ppm tarkoittaa?"
+    },
+    {
+      "time": "10–22",
+      "title": "Tapaus 1: hiilidioksidi",
+      "do": "Ennen kuvaajan katsomista ryhmät arvaavat, kuinka paljon pitoisuus kasvoi vuodesta 1960 vuoteen 2020, ja kirjaavat arvauksen korttiin. Sitten ryhmät lukevat hiilidioksidikuvaajasta arvot, laskevat muutoksen ja vertaavat kahden 30 vuoden jakson kasvua. Kierrä ja kysy, miten he lukivat arvon.",
+      "say": "Näyttäkää sormella, mistä luitte arvon. Kasvoiko pitoisuus tasaisesti vai nopeutuiko kasvu?"
+    },
+    {
+      "time": "22–34",
+      "title": "Tapaus 2: lämpötila",
+      "do": "Ryhmät etsivät lämpötilakuvaajasta lämpimimmät vuodet, etsivät vuoden, joka oli edellistä kylmempi, ja vertaavat vuosikymmenten keskiarvoja.",
+      "say": "Löysittekö vuoden, joka oli edellistä kylmempi? Kumoaako se lämpenemisen? Mitä vuosikymmenten keskiarvot kertovat?"
+    },
+    {
+      "time": "34–40",
+      "title": "Tapaus 3: yhdistä todisteet",
+      "do": "Ryhmät pohtivat, todistavatko kaksi samaan aikaan nousevaa kuvaajaa, että toinen aiheuttaa toisen. Kerro sen jälkeen, mitä muuta tiedetään hiilidioksidin vaikutuksesta.",
+      "say": "Kaksi kuvaajaa nousee samaan aikaan. Riittääkö se todisteeksi siitä, että hiilidioksidi lämmittää? Mitä muuta tarvitaan?"
+    },
+    {
+      "time": "40–45",
+      "title": "Lopetus",
+      "do": "Jokainen ryhmä kertoo yhden johtopäätöksen ja sen todisteen. Kokoa yhteen, mitä data näyttää ja mitä sen perusteella ei voi sanoa.",
+      "say": "Mikä on teidän tärkein johtopäätöksenne, ja mikä todiste sitä tukee?"
+    }
+  ],
+  "background": [
+    "Hiilidioksidin pitoisuus mitataan yksikössä ppm (parts per million), eli miljoonasosina. Pitoisuus $400\\,\\text{ppm}$ tarkoittaa, että miljoonasta kuivan ilman molekyylistä 400 on hiilidioksidia. Kuvaajan arvot ovat vuosikeskiarvoja Mauna Loan observatoriosta Havaijilta, missä mittaukset alkoivat vuonna 1958. Paikka on korkealla ja kaukana suurista päästölähteistä. Pitoisuus vaihtelee vuoden sisällä, koska pohjoisen pallonpuoliskon kasvillisuus sitoo hiilidioksidia kesällä. Vuosikeskiarvoissa tämä vaihtelu tasoittuu.",
+    "Lämpötilakuvaajassa ei ole maapallon keskilämpötilaa asteina, vaan poikkeama vuosien 1951–1980 keskiarvosta. Positiivinen arvo tarkoittaa, että vuosi oli vertailujaksoa lämpimämpi. Poikkeama lasketaan, koska se on tarkemmin määritettävissä kuin itse keskilämpötila: tuhansien sääasemien ja merimittausten muutokset voidaan yhdistää luotettavammin kuin niiden lukemat. NASAn GISTEMP-aineisto on yksi useista toisistaan riippumattomista tutkimusryhmien lämpötila-aineistoista, ja ne antavat hyvin samanlaisen kuvan.",
+    "Yksittäiset vuodet vaihtelevat luonnollisesti, esimerkiksi El Niño -ilmiön ja tulivuorenpurkausten vuoksi. Siksi ilmastoa tutkitaan vuosikymmenten keskiarvoina. Yksi edellistä kylmempi vuosi ei kumoa pitkän aikavälin suuntaa, ja tämä on työpajan tärkein havainto.",
+    "Kaksi samaan aikaan nousevaa kuvaajaa ei yksinään todista, että toinen aiheuttaa toisen. Hiilidioksidin lämmittävä vaikutus tunnetaan kuitenkin myös muuta kautta: John Tyndall mittasi jo vuonna 1859 laboratoriossa, että hiilidioksidi imee lämpösäteilyä. Hallitustenvälisen ilmastonmuutospaneelin IPCC:n mukaan on kiistatonta, että ihmisen toiminta on lämmittänyt ilmakehää, valtameriä ja maata.",
+    "Mittauslaitokset tarkentavat aineistoja, ja uusi vuosi lisätään joka vuosi. Siksi tämän työpajan luvut voivat poiketa hieman lähteiden nykyisistä luvuista. Kuvaajat ja vastaukset lasketaan automaattisesti samasta tallennetusta aineistosta, joten ne ovat keskenään yhtäpitäviä. Aineisto on haettu {retrieved}."
+  ],
+  "figures": [
+    "co2",
+    "lampotila"
+  ],
+  "questions": [
+    "Mistä tiedät, että tähän aineistoon voi luottaa?",
+    "Miksi yksi kylmä vuosi ei kumoa lämpenemistä?",
+    "Todistavatko kaksi samaan aikaan nousevaa kuvaajaa, että toinen aiheuttaa toisen? Mitä muuta tarvittaisiin?"
+  ],
+  "problems": [
+    {
+      "p": "Osallistujat lukevat arvon kuvaajasta väärältä riviltä tai akselilta.",
+      "f": "Pyydä näyttämään viivaimella vuosi vaaka-akselilta ja kulkemaan suoraan ylös kuvaajaan ja sieltä vaakasuoraan pystyakselille."
+    },
+    {
+      "p": "Poikkeama sekoittuu lämpötilaan: ”Maapallolla on vain yksi aste lämmintä?”",
+      "f": "Kerro, että luku on ero vertailujakson keskiarvoon, ei itse lämpötila. Kysy, mitä tarkoittaa, että vuosi oli vertailujaksoa yhden asteen lämpimämpi."
+    },
+    {
+      "p": "Joku sanoo, että data on väärennettyä.",
+      "f": "Älä väittele. Kysy, miten väitteen voisi tarkistaa, ja kerro, että useat toisistaan riippumattomat tutkimusryhmät ovat päätyneet samaan tulokseen eri mittauksilla. Lähteet ovat kortissa."
+    },
+    {
+      "p": "Ryhmä on valmis nopeasti.",
+      "f": "Anna lisätehtävä: laske, monenko vuoden aikana pitoisuus kasvoi ensimmäiset $20\\,\\text{ppm}$ ja monenko vuoden aikana viimeiset $20\\,\\text{ppm}$."
+    }
+  ],
+  "variations": [
+    {
+      "title": "Helpompi",
+      "text": "Tee vain tapaukset 1 ja 2. Merkitse kuvaajaan valmiiksi vuodet 1960 ja 2020 viivoilla."
+    },
+    {
+      "title": "Haastavampi",
+      "text": "Avaa CSV-aineisto taulukkolaskennassa. Piirrä hiilidioksidipitoisuus ja lämpötilan poikkeama samaan hajontakuvioon ja pohdi, mitä kuvio näyttää."
+    },
+    {
+      "title": "Tietokoneilla",
+      "text": "Ryhmät laskevat vuosikymmenten keskiarvot itse taulukkolaskennassa ja vertaavat niitä aineistokortin taulukkoon."
+    },
+    {
+      "title": "Lukiolaisille",
+      "text": "Sama aineisto sopii lukion fysiikan kuvaajan lukemisen ja kulmakertoimen harjoitteluun: mikä on hiilidioksidipitoisuuden kasvunopeus eri vuosikymmeninä?"
+    }
+  ],
+  "closing": [
+    "Jokainen ryhmä kertoo yhden johtopäätöksen ja todisteen, johon se perustuu. Kirjaa ne taululle.",
+    "Kokoa yhteen: hiilidioksidipitoisuus on kasvanut, ja kasvu on nopeutunut. Maapallon keskilämpötila on noussut. Yksittäinen vuosi vaihtelee, mutta vuosikymmenten keskiarvot nousevat.",
+    "Muistuta salapoliisin kysymyksestä: kuka mittasi, miten ja mistä tieto on peräisin?"
+  ],
+  "self": [
+    "Pystyivätkö osallistujat lukemaan kuvaajia itse, vai luinko arvot heidän puolestaan?",
+    "Miten vastasin, jos joku epäili dataa tai huolestui?",
+    "Erottivatko osallistujat havainnon ja tulkinnan?",
+    "Riittikö aika kaikille kolmelle tapaukselle?"
+  ],
+  "participant": {
+    "title": "Ilmastodatan salapoliisit: aineistokortti",
+    "figures": [
+      "co2",
+      "lampotila"
+    ],
+    "blocks": [
+      "# Ilmastodatan salapoliisit",
+      ". Todisteet ovat oikeaa mittausdataa. Hiilidioksidi: NOAA ja Scripps, Mauna Loa, vuosikeskiarvot. Lämpötila: NASA GISTEMP v4, poikkeama vuosien 1951–1980 keskiarvosta.",
+      "## Tapaus 1: hiilidioksidi",
+      "? Arvaa ensin ennen kuvaajan katsomista: kuinka paljon hiilidioksidipitoisuus kasvoi vuodesta 1960 vuoteen 2020?",
+      "{figure:co2}",
+      "? a) Lue kuvaajasta hiilidioksidipitoisuus vuonna 1960 ja vuonna 2020.",
+      "? b) Kuinka paljon pitoisuus kasvoi vuodesta 1960 vuoteen 2020?",
+      "?? c) Kasvoiko pitoisuus enemmän vuosina 1960–1990 vai 1990–2020? Mitä se kertoo?",
+      "{figure:lampotila}",
+      "## Tapaus 2: lämpötila",
+      "? a) Mitkä ovat kuvaajan kolme lämpimintä vuotta?",
+      "?? b) Etsi vuosi, joka oli edellistä vuotta kylmempi. Kumoaako se lämpenemisen? Perustele.",
+      "{decades}",
+      "? c) Kuinka paljon lämpimämpi 2010-luku oli kuin 1960-luku?",
+      "## Tapaus 3: yhdistä todisteet",
+      "?? Molemmat kuvaajat nousevat. Todistaako se, että hiilidioksidi lämmittää maapalloa? Mitä muuta tarvittaisiin?",
+      "## Salapoliisin johtopäätös",
+      "?? Tärkein johtopäätöksemme ja todiste, joka tukee sitä"
+    ]
+  },
+  "answers": [
+    "Tapaus 1 a: vuonna 1960 noin {co2:1960} ja vuonna 2020 noin {co2:2020}. Kuvaajasta luettuna muutaman ppm:n ero on hyväksyttävä.",
+    "Tapaus 1 b: kasvu oli noin {co2diff:1960-2020}.",
+    "Tapaus 1 c: vuosina 1960–1990 pitoisuus kasvoi noin {co2diff:1960-1990}, vuosina 1990–2020 noin {co2diff:1990-2020}. Kasvu on nopeutunut: pitoisuus kasvaa nyt nopeammin kuin ennen.",
+    "Tapaus 2 a: lämpimimmät vuodet ovat {warmest:3}. Ne ovat kaikki aineiston viimeisiltä vuosilta.",
+    "Tapaus 2 b: esimerkiksi {cooler}. Ei kumoa: vuodet vaihtelevat, mutta vuosikymmenten keskiarvot nousevat.",
+    "Tapaus 2 c: 2010-luvun keskiarvo oli {decade:2010} ja 1960-luvun {decade:1960}, joten 2010-luku oli noin {decadediff:1960-2010} lämpimämpi.",
+    "Tapaus 3: kaksi samaan aikaan nousevaa kuvaajaa ei yksinään todista syy-yhteyttä. Tarvitaan selitys siitä, miksi hiilidioksidi lämmittää: laboratoriomittaukset osoittavat, että se imee lämpösäteilyä. Hyvä vastaus mainitsee, että pelkkä samanaikaisuus ei riitä.",
+    "Lisätehtävä: ensimmäiset $20\\,\\text{ppm}$ kertyivät vuosina 1959–1979 eli noin 20 vuodessa, viimeiset $20\\,\\text{ppm}$ vuosina 2018–2025 eli noin 7 vuodessa."
+  ],
+  "sources": [
+    {
+      "title": "NOAA Global Monitoring Laboratory: Trends in Atmospheric Carbon Dioxide (Mauna Loa)",
+      "url": "https://gml.noaa.gov/ccgg/trends/data.html"
+    },
+    {
+      "title": "NASA GISS: GISTEMP Surface Temperature Analysis",
+      "url": "https://data.giss.nasa.gov/gistemp/"
+    },
+    {
+      "title": "Aineiston peili (hiilidioksidi): datasets/co2-ppm",
+      "url": "https://github.com/datasets/co2-ppm"
+    },
+    {
+      "title": "Aineiston peili (lämpötila): datasets/global-temp",
+      "url": "https://github.com/datasets/global-temp"
+    },
+    {
+      "title": "IPCC AR6 WG1: Summary for Policymakers, A.1",
+      "url": "https://www.ipcc.ch/report/ar6/wg1/"
+    }
+  ],
+  "lessons": [
+    "fy1-4",
+    "fy2-8",
+    "fy3-12"
+  ]
+}

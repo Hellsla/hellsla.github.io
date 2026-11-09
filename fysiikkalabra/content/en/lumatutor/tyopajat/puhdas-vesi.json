@@ -1,0 +1,28 @@
+{
+  "id": "puhdas-vesi",
+  "order": 6,
+  "status": "idea",
+  "title": "How clean can you make water?",
+  "audience": "ylakoulu",
+  "topic": "vesi",
+  "minutes": 30,
+  "equipment": [
+    "vesi",
+    "arki"
+  ],
+  "short": "Participants build a filter from sand, gravel and cloth and find out how clear they can make dirty water.",
+  "idea": "The groups get dirty water and materials such as gravel, sand, coffee filter paper and cotton cloth. They design a filter from a cut plastic bottle, test it and compare how clear the filtered water is. Finally they consider why clear water is still not safe to drink and how a waterworks cleans water.",
+  "open": [
+    "A recipe for dirty water that is safe and repeatable (for example soil and water).",
+    "A fair way to compare clarity, for example a line drawn on white paper that must be seen through a glass of water.",
+    "Background on the stages of water treatment from a reliable source.",
+    "Tidying up and disposing of the waste water."
+  ],
+  "safety": [
+    "Filtered water is never drunk or tasted.",
+    "The plastic bottles are cut in advance, because a cut edge can be sharp.",
+    "A wet floor is dried at once.",
+    "Hands are washed after handling the dirty water and soil."
+  ],
+  "lessons": []
+}

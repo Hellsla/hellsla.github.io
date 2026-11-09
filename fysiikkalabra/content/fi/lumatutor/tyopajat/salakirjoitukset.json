@@ -1,0 +1,190 @@
+{
+  "id": "salakirjoitukset",
+  "order": 3,
+  "status": "ready",
+  "title": "Salakirjoitukset ja matematiikka",
+  "short": "Osallistujat murtavat salakirjoituksia siirtokiekolla ja kirjainten esiintymistiheyksillä ja keksivät oman koodin.",
+  "audience": "ylakoulu",
+  "topic": "matematiikka",
+  "minutes": 30,
+  "group": "pareittain",
+  "equipment": [
+    "tulosteet"
+  ],
+  "goals": [
+    "Osallistuja osaa salata ja purkaa viestin siirtosalauksella.",
+    "Osallistuja ymmärtää, miksi siirtosalauksen voi murtaa kokeilemalla kaikki avaimet.",
+    "Osallistuja käyttää päättelyä ja kirjainten esiintymistiheyksiä salakirjoituksen murtamiseen."
+  ],
+  "materials": [
+    "Tulostettu salakiekko jokaiselle osallistujalle, mieluiten paksulle paperille.",
+    "Jokaiselle parille kiinnitysnasta tai jakonasta kiekon keskelle ja pala pahvia alustaksi.",
+    "Pyöreäkärkiset sakset kiekkojen leikkaamiseen, tai valmiiksi leikatut kiekot.",
+    "Tulostettu salapoliisin tehtäväkortti jokaiselle parille ja kyniä.",
+    "Taulu tai iso paperi, johon koukkuviesti kirjoitetaan."
+  ],
+  "prep": [
+    "Tulosta kiekot ja tehtäväkortit. Jos aikaa on vähän, leikkaa kiekot valmiiksi.",
+    "Kokoa yksi kiekko itse ja kokeile, että pystyt purkamaan tehtäväkortin kaikki viestit.",
+    "Kirjoita koukkuviesti taululle ennen kuin osallistujat tulevat. Viesti ja sen ratkaisu ovat alla vastauksissa.",
+    "Lue vastaukset ja taustatiedot. Älä näytä vastauksia osallistujille."
+  ],
+  "safety": [
+    "Sakset ja nastat: tutor jakaa ne, kertoo turvallisesta käytöstä ja kerää ne pois heti, kun kiekot on koottu.",
+    "Omissa viesteissään osallistujat eivät kirjoita kenenkään nimeä tai muuta henkilökohtaista tietoa. Kerro, että viestit jäävät työpajaan."
+  ],
+  "steps": [
+    {
+      "time": "0–4",
+      "title": "Koukku",
+      "do": "Näytä taululle kirjoitettu salattu viesti. Kerro, että se on salattu tavalla, jota Julius Caesarin kerrotaan käyttäneen. Anna parien arvata hetki.",
+      "say": "Tässä on salainen viesti. Jokainen kirjain on korvattu toisella. Kuka keksii, mitä siinä lukee? Vihje: kaikki kirjaimet on siirretty yhtä monta askelta."
+    },
+    {
+      "time": "4–10",
+      "title": "Kokoa kiekko ja pura viesti 1",
+      "do": "Osallistujat kokoavat salakiekon: pieni kiekko ison päälle ja nasta keskelle. Näytä, miten avain asetetaan. Parit purkavat viestin 1, jonka avain on annettu.",
+      "say": "Avain 5 tarkoittaa, että ulkokehän A:n kohdalle käännetään sisäkehän F, viisi askelta A:n jälkeen. Nyt jokaisen ulkokehän kirjaimen kohdalla on sen salattu pari. Purkaessa etsit salatun kirjaimen sisäkehältä ja luet alkuperäisen ulkokehältä."
+    },
+    {
+      "time": "10–16",
+      "title": "Viesti 2: avain puuttuu",
+      "do": "Viestin 2 avainta ei kerrota. Parit kokeilevat avaimia järjestyksessä, kunnes viesti alkaa olla järkevää suomea. Kysy, montako avainta pitää pahimmillaan kokeilla.",
+      "say": "Avainta ei ole annettu. Miten voisitte silti löytää sen? Montako vaihtoehtoa on yhteensä?"
+    },
+    {
+      "time": "16–23",
+      "title": "Viesti 3: kirjainsalapoliisi",
+      "do": "Viesti 3 on pidempi. Parit laskevat, mitkä kirjaimet esiintyvät salakirjoituksessa useimmin. Kerro, että suomen kielen yleisimpiä kirjaimia ovat A, I, T, N ja E. Yleisin salattu kirjain on todennäköisesti jokin niistä. Kärjessä voi olla lähes tasapeli, joten jos ensimmäinen kokeilu ei tuota järkevää tekstiä, kokeillaan seuraavaa.",
+      "say": "Laskekaa kolme yleisintä kirjainta. Jos yleisin salattu kirjain olisi alun perin A, mikä avain silloin olisi? Kokeilkaa sitä."
+    },
+    {
+      "time": "23–27",
+      "title": "Oma koodi",
+      "do": "Parit salaavat lyhyen viestin omalla avaimellaan ja vaihtavat sen viereisen parin kanssa. Viereinen pari yrittää murtaa sen.",
+      "say": "Keksikää lyhyt viesti, valitkaa avain ja salatkaa. Älkää kertoko avainta: saako naapuripari sen selville?"
+    },
+    {
+      "time": "27–30",
+      "title": "Lopetus",
+      "do": "Kokoa yhteen, miksi siirtosalaus on helppo murtaa ja miten nykyiset salaukset eroavat siitä.",
+      "say": "Siirtosalauksessa on vain 28 todellista avainta. Kuinka monta avainta pitäisi olla, ettei tietokonekaan ehtisi kokeilla kaikkia?"
+    }
+  ],
+  "background": [
+    "Siirtosalauksessa eli Caesarin salauksessa jokainen kirjain korvataan kirjaimella, joka on aakkosissa tietyn askelmäärän päässä. Askelten määrä on avain. Kun aakkoset loppuvat, jatketaan alusta. Suomen aakkosissa on 29 kirjainta A–Ö, joten avaimia on 29, joista yksi (siirto 0) ei muuta viestiä lainkaan. Todellisia avaimia on siis 28.",
+    "Matemaattisesti siirtosalaus on jakojäännöksen laskemista. Numeroidaan kirjaimet A = 0, B = 1, … , Ö = 28. Kirjain $x$ salataan avaimella $k$ kirjaimeksi $y = (x + k) \\bmod 29$ ja puretaan laskemalla $x = (y - k) \\bmod 29$. Merkintä $\\bmod 29$ tarkoittaa jakojäännöstä, kun luku jaetaan luvulla 29. Sama laskutapa on kellotaulussa: kun kello on 22 ja lisätään 5 tuntia, kello on 3.",
+    "Koska avaimia on vain 28, viestin voi murtaa kokeilemalla ne kaikki. Toinen tapa on esiintymistiheysanalyysi: jokaisessa kielessä jotkut kirjaimet ovat yleisempiä kuin toiset. Suomen kielen yleisimpiä kirjaimia ovat A, I, T, N ja E. Pitkässä salatussa viestissä yleisin kirjain vastaa siksi todennäköisesti jotakin niistä. Lyhyessä viestissä esiintymistiheydet voivat poiketa paljon, joten menetelmä toimii sitä paremmin, mitä pidempi viesti on.",
+    "Jos jokainen kirjain korvataan millä tahansa toisella kirjaimella ilman säännöllistä siirtoa, avaimia on $29! \\approx 8{,}8 \\cdot 10^{30}$. Niitä ei voi kokeilla kaikkia, mutta esiintymistiheysanalyysi murtaa tällaisenkin salauksen. Nykyiset salausmenetelmät perustuvat matemaattisiin ongelmiin, joiden ratkaiseminen ilman avainta veisi tietokoneiltakin käytännössä liian kauan.",
+    "Viestit ja niiden ratkaisut näkyvät alla. Ne on salattu automaattisesti samalla 29 kirjaimen siirtosalauksella kuin kiekossa, joten kiekolla purettu tulos täsmää niihin. Välilyönnit ja välimerkit jätetään ennalleen."
+  ],
+  "figures": [
+    "salakiekko"
+  ],
+  "ciphers": [
+    {
+      "id": "koukku",
+      "plain": "TIEDE KUULUU KAIKILLE",
+      "shift": 3
+    },
+    {
+      "id": "viesti1",
+      "plain": "MATEMATIIKKA ON SALAPOLIISIN TYÖKALU",
+      "shift": 5
+    },
+    {
+      "id": "viesti2",
+      "plain": "HYVÄ KYSYMYS ON PUOLI VASTAUSTA",
+      "shift": 11
+    },
+    {
+      "id": "viesti3",
+      "plain": "SALAKIRJOITUKSIA ON KÄYTETTY TUHANSIA VUOSIA. KUN VIESTI ON TARPEEKSI PITKÄ, SEN VOI MURTAA LASKEMALLA, MITKÄ KIRJAIMET OVAT YLEISIMPIÄ. TAITAVA SALAPOLIISI TARVITSEE SIIS VAIN KYNÄN, PAPERIA JA AIKAA.",
+      "shift": 8
+    }
+  ],
+  "questions": [
+    "Montako eri avainta siirtosalauksessa on, ja miten sen voi päätellä kiekosta?",
+    "Miksi yleisin kirjain auttaa murtamaan salauksen, ja milloin se voi johtaa harhaan?",
+    "Miten tekisit salauksesta niin vaikean, ettei sitä voi murtaa kokeilemalla?"
+  ],
+  "problems": [
+    {
+      "p": "Osallistujat siirtävät väärään suuntaan purkaessaan.",
+      "f": "Muistuta, että salattaessa siirrytään eteenpäin ja purettaessa taaksepäin. Kiekossa ulkokehä on alkuperäinen ja sisäkehä salattu kirjain."
+    },
+    {
+      "p": "Kiekon kirjaimet eivät osu kohdakkain.",
+      "f": "Tarkista, että nasta on täsmälleen kiekkojen keskellä. Valmiiksi leikatut kiekot vähentävät ongelmaa."
+    },
+    {
+      "p": "Viestin 3 yleisin kirjain ei olekaan A.",
+      "f": "Se on mahdollista. Kokeile seuraavaksi I:tä, T:tä, N:ää ja E:tä. Ratkaisu löytyy muutamalla kokeilulla, ja se on tärkeä havainto: tiheysanalyysi antaa todennäköisiä vaihtoehtoja, ei varmaa vastausta."
+    },
+    {
+      "p": "Pari jää jumiin viestiin 2.",
+      "f": "Ehdota, että he purkavat vain viestin ensimmäisen sanan jokaisella avaimella. Järkevä sana kertoo avaimen."
+    }
+  ],
+  "variations": [
+    {
+      "title": "Helpompi",
+      "text": "Käytä vain viestejä 1 ja 2 ja anna viestille 2 vihje: avain on suurempi kuin 10."
+    },
+    {
+      "title": "Haastavampi",
+      "text": "Vigenèren salaus: avaimena on sana, ja jokaisen kirjaimen siirto on avainsanan seuraavan kirjaimen järjestysnumero. Miksi tiheysanalyysi ei toimi yhtä suoraan?"
+    },
+    {
+      "title": "Ohjelmoiden",
+      "text": "Osallistujat, jotka osaavat ohjelmoida, kirjoittavat salausohjelman, joka kokeilee kaikki 28 avainta automaattisesti."
+    },
+    {
+      "title": "Alakoululaisille",
+      "text": "Lyhyet viestit ja avain annettuna. Käytä kiekkoa ilman jakojäännöstä ja kerro vain, että aakkoset jatkuvat ympyränä."
+    }
+  ],
+  "closing": [
+    "Kysy, montako avainta siirtosalauksessa on ja miksi se tekee salauksesta heikon.",
+    "Kerro, että verkkopankit ja viestisovellukset käyttävät salauksia, joissa avaimia on niin paljon, ettei niitä voi kokeilla kaikkia.",
+    "Pyydä jokaista paria kertomaan, kumpi oli helpompaa: salata vai murtaa?"
+  ],
+  "self": [
+    "Ymmärsivätkö osallistujat kiekon toiminnan ennen kuin aloin selittää jakojäännöstä?",
+    "Annoinko parien kokeilla viestiä 2 tarpeeksi kauan ennen vihjeitä?",
+    "Kuinka moni pari ehti tehdä oman koodin?",
+    "Mitä muuttaisin viestien pituuksissa tai järjestyksessä?"
+  ],
+  "participant": {
+    "title": "Salapoliisin tehtäväkortti",
+    "blocks": [
+      "# Salapoliisin tehtäväkortti",
+      ". Kiekon ulkokehällä on alkuperäinen kirjain ja sisäkehällä salattu kirjain. Avain kertoo, montako askelta A:n jälkeen on se sisäkehän kirjain, joka käännetään ulkokehän A:n kohdalle. Purkaessa etsi salattu kirjain sisäkehältä ja lue alkuperäinen ulkokehältä. Välilyönnit ja välimerkit ovat ennallaan.",
+      "{figure:salakiekko}",
+      "## Viesti 1. Avain on 5.",
+      "> {cipher:viesti1}",
+      "?? Ratkaisu",
+      "## Viesti 2. Avainta ei kerrota.",
+      "> {cipher:viesti2}",
+      "? Avain on",
+      "?? Ratkaisu",
+      "## Viesti 3. Kirjainsalapoliisi",
+      "> {cipher:viesti3}",
+      ". Laske kolme yleisintä kirjainta. Suomen kielen yleisimpiä kirjaimia ovat A, I, T, N ja E.",
+      "? Yleisimmät kirjaimet",
+      "? Avain on",
+      "?? Ratkaisu",
+      "## Oma koodi",
+      ". Salaa lyhyt viesti omalla avaimellasi. Älä kirjoita kenenkään nimeä. Antakaa naapuriparin murtaa se.",
+      "?? Salattu viestini"
+    ]
+  },
+  "answers": [
+    "Koukku: {cipher:koukku} → {plain:koukku} (avain {shift:koukku}).",
+    "Viesti 1: {plain:viesti1}.",
+    "Viesti 2: avain {shift:viesti2}. {plain:viesti2}.",
+    "Viesti 3: avain {shift:viesti3}. Salatun viestin yleisimmät kirjaimet ovat {top:viesti3}, ja ne vastaavat kirjaimia {topplain:viesti3}. {plain:viesti3}"
+  ],
+  "sources": [],
+  "lessons": []
+}

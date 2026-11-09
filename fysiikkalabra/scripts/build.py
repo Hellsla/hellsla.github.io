@@ -28,7 +28,7 @@ stay in their lesson folders and keep their <id>-sim.js URLs.
 """
 import hashlib, json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status, published_exercises, WorkTree
-import ahjo, answers_shown, kilparobo, assigned, booklets, cardgrid, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, svgids, units, tablefit
+import ahjo, answers_shown, kilparobo, lumatutor, assigned, booklets, cardgrid, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, svgids, units, tablefit
 from i18n import t as T
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
@@ -47,7 +47,7 @@ if SITE.name == "site.tmp":
 else:
     SITE.mkdir(exist_ok=True)                         # preview/ is shared by agents building at the same time, so it is never wiped
 TPL = ROOT / "templates"
-for f in ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js", "ahjo.js"): shutil.copy(TPL / f, SITE / f)
+for f in ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js", "ahjo.js", "lumatutor.js"): shutil.copy(TPL / f, SITE / f)
 card_files = concept_cards.publish(SITE)   # site/kortit/<module>.json, read by Käsitetakomo (scripts/concept_cards.py)
 # p5 + KaTeX, no CDN needed. The read-aloud model and onnxruntime-web are not part of the site (teacher 2026-11-04,
 # UI fix 3): they are in the repository Hellsla/ruukkilabra-models, copied into the published site's models/ folder
@@ -76,6 +76,8 @@ _ahjo_errs = ahjo.validate({l["id"] for k, m in curriculum.items() if not k.star
 if _ahjo_errs: sys.exit("ERROR: ahjo.json (scripts/ahjo.py):\n" + "\n".join(_ahjo_errs))
 _kr_errs = kilparobo.validate({l["id"] for k, m in curriculum.items() if not k.startswith("_") for l in m.get("lessons", [])})
 if _kr_errs: sys.exit("ERROR: kilparobo.json (scripts/kilparobo.py):\n" + "\n".join(_kr_errs))
+_lt_errs = lumatutor.validate({l["id"] for k, m in curriculum.items() if not k.startswith("_") for l in m.get("lessons", [])})
+if _lt_errs: sys.exit("ERROR: lumatutor.json (scripts/lumatutor.py):\n" + "\n".join(_lt_errs))
 
 
 # Submission trial (teacher 2026-11-05): "Lataa kaikki ratkaisut" on the chapters of these courses in these languages
@@ -1304,16 +1306,20 @@ def build_language(lang):
         unit_pub.setdefault(u, set()).add(ul)
     if lang in units.languages(): build_units(lang, out, unit_pub)
     local = local_courses.load(lang)
-    local_rows = ""; kr_built = []
+    local_rows = ""; kr_built = []; lt_built = []
     ahjo_data = ahjo.load(lang)
     for code, c in local.items():
         cu = []
         for u, ls in unit_pub.items():                   # (id, the language linked, href): this language's version, else the source's
             ul = lang if lang in ls else units.lang_of(u) if units.lang_of(u) in ls else None
             if ul and units.load(u, ul)["course"] == code: cu.append((u, ul, os.path.relpath(OUTS[ul] / f"{u}.html", out).replace(os.sep, "/")))
-        local_rows += home_row(code, c["title"], c["subtitle"])
+        local_rows += home_row(code, c["title"], c.get("front_line") or c["subtitle"])
         kr = kilparobo.load(lang) if code == kilparobo.CODE else None   # Kilparobotiikka's team pages (teacher 2026-11-09, scripts/kilparobo.py)
-        if kr:
+        lt = lumatutor.load(lang) if code == lumatutor.CODE else None   # LUMA-tutor's pages (teacher 2026-11-09, scripts/lumatutor.py)
+        if lt:
+            lt["_course_title"] = c["title"]; lt_ws = lumatutor.workshops(lang)
+            body = lumatutor.hub_body(lt, local_courses.head(code, c, T), lt_ws)
+        elif kr:
             kr["_course_title"] = c["title"]
             body = kilparobo.hub_body(kr, local_courses.head(code, c, T), local_courses.photos_html(c, T, heading=False), local_courses.quotes_html(c, T, heading=False))
         else:
@@ -1325,7 +1331,7 @@ def build_language(lang):
             (SITE / ph["src"]).parent.mkdir(parents=True, exist_ok=True); shutil.copy(ROOT / "assets" / ph["src"], SITE / ph["src"]); assets.append(ph["src"])
         name = f"{local_courses.label(code)} {c['title']}".strip()
         html = page(name, body + '<script src="invfilter.js"></script>', f'<a href="index.html">{T("site.name")}</a> › {local_courses.label(code) or esc(c["title"])}',
-                    f"{code}.html", c["description"], main_class="reading module-page local-course" + (" kr-theme" if c.get("theme") == "kiviruukki" else "") + (" kr-team" if kr else ""))
+                    f"{code}.html", c["description"], main_class="reading module-page local-course" + (" kr-theme" if c.get("theme") == "kiviruukki" else "") + (" kr-team" if kr or lt else "") + (" lt-course" if lt else ""))
         (out / f"{code}.html").write_text(ahjo.kiviruukki_mark(html) if c.get("theme") == "kiviruukki" else html)
         if kr:                                           # its four other pages, under the course page in the breadcrumb
             ref = lambda rid: (chapters[rid][1], f"{rid}.html") if rid in chapters and rid in built_ids else None
@@ -1339,6 +1345,14 @@ def build_language(lang):
                 (out / name).write_text(ahjo.kiviruukki_mark(page(title, sub + '<script src="ahjo.js"></script>', crumb + esc(title), name, lead,
                                                                   main_class="reading module-page local-course kr-theme kr-team")))
                 kr_built.append(name)
+        if lt:                                           # its parts, toolkit and workshop cards, under the course page in the breadcrumb
+            ref = lambda rid: (chapters[rid][1], f"{rid}.html") if rid in chapters and rid in built_ids else None
+            crumb = f'<a href="index.html">{T("site.name")}</a> › <a href="{code}.html">{esc(c["title"])}</a> › '
+            for name, title, sub, lead in lumatutor.subpages(lt, lt_ws, lang, ref):
+                ws_crumb = f'<a href="{lumatutor.section_of(lt, "suunnittele")["page"]}">{esc(lumatutor.section_of(lt, "suunnittele")["title"])}</a> › ' if name.startswith("lumatutor-tyopaja-") else ""
+                (out / name).write_text(ahjo.kiviruukki_mark(page(title, sub, crumb + ws_crumb + esc(title), name, lead,
+                                                                  main_class="reading module-page local-course kr-theme kr-team lt-course")))
+                lt_built.append(name)
     mixer_built = []                             # the YO-sekoitin (scripts/mixer.py): every language, when a local course asks for it
     mcode = next((code for code, c in local_courses.load().items() if c.get("mixer")), None)
     if mcode:
@@ -1477,7 +1491,7 @@ def build_language(lang):
                 removed.append(lid if lang == i18n.SOURCE else f"{lang}/{lid}")
                 print(f"{'::warning::' if os.environ.get('GITHUB_ACTIONS') else 'WARNING:'} {old_page.relative_to(LIVE)} is on the live site but its reviews are not current ({why}); this build removes it")
     pre = out.relative_to(SITE).as_posix() + "/" if out != SITE else ""
-    expected.extend(pre + n for n in ["index.html", ABOUT] + ([PRIVACY] if priv_md else []) + ([TEACHER_PAGE] if teacher_built else []) + ([concept_cards.APP] if concept_cards.modules(concept_cards.data_lang(lang)) else []) + ([reading_tips.PAGE] if reading_tips.SOURCE.is_file() else []) + [booklets.PAGE, STUDY_PAGE] + ahjo_built + kr_built + [f"{c}.html" for c, _ in modules] + [f"{c}.html" for c in local] + [f"{i}.html" for i in built_ids] + [f"{i}.html" for i in inv_built] + [f"{g}.html" for g in guide_built] + [practice.page_name(c) for c in practice_built] + [practice.page_name(c + practice.EXAM) for c in exam_built] + mixer_built
+    expected.extend(pre + n for n in ["index.html", ABOUT] + ([PRIVACY] if priv_md else []) + ([TEACHER_PAGE] if teacher_built else []) + ([concept_cards.APP] if concept_cards.modules(concept_cards.data_lang(lang)) else []) + ([reading_tips.PAGE] if reading_tips.SOURCE.is_file() else []) + [booklets.PAGE, STUDY_PAGE] + ahjo_built + kr_built + lt_built + [f"{c}.html" for c, _ in modules] + [f"{c}.html" for c in local] + [f"{i}.html" for i in built_ids] + [f"{i}.html" for i in inv_built] + [f"{g}.html" for g in guide_built] + [practice.page_name(c) for c in practice_built] + [practice.page_name(c + practice.EXAM) for c in exam_built] + mixer_built
                     + [f"{u}.html" for u, ls in unit_pub.items() if lang in ls and not only])
     if SITE.name == "site.tmp" and lang in units.languages():   # a unit that lost its reviews leaves the site only with a warning
         for u in units.ids(lang):
@@ -1496,7 +1510,7 @@ link_languages()
 i18n.set_lang(i18n.SOURCE)
 # Cache busting (teacher 2026-11-03: a page fetched just after a deploy showed new HTML with yesterday's cached site.css):
 # every link to a shared stylesheet or script carries ?v=<first 8 hex of its SHA-256>, so a changed file is a new URL.
-SHARED = ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js", "ahjo.js")
+SHARED = ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js", "ahjo.js", "lumatutor.js")
 _ver = {f: hashlib.sha256((SITE / f).read_bytes()).hexdigest()[:8] for f in SHARED if (SITE / f).is_file()}
 _ref = re.compile(r'((?:href|src)="(?:\.\./)*)(' + "|".join(re.escape(f) for f in _ver) + r')(?:\?v=[0-9a-f]*)?"')
 for _page in SITE.rglob("*.html"):
@@ -1505,7 +1519,7 @@ for _page in SITE.rglob("*.html"):
     if "<table" in _new: _new = tablefit.fit(_new, re.search(r'<html[^>]*\blang="fi\b', _new[:400]) is not None)   # no table scrolls sideways (2026-11-08)
     if _new != _old: _page.write_text(_new)
 if SITE.name == "site.tmp":                      # check the render, then swap it in; the old site comes back if the swap fails
-    expected += ["site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js", "ahjo.js"] + card_files + assets
+    expected += ["site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js", "ahjo.js", "lumatutor.js"] + card_files + assets
     broken = [n for n in expected if not (SITE / n).is_file() or (SITE / n).stat().st_size == 0]
     if broken or not (SITE / "vendor").is_dir(): sys.exit(f"build check failed, site/ left unchanged: missing or empty {broken or ['vendor/']}")
     old = ROOT / "site.old"

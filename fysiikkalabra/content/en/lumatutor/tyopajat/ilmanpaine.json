@@ -1,0 +1,28 @@
+{
+  "id": "ilmanpaine",
+  "order": 8,
+  "status": "idea",
+  "title": "The oddities of air pressure",
+  "audience": "ylakoulu",
+  "topic": "paine",
+  "minutes": 30,
+  "equipment": [
+    "vesi",
+    "arki"
+  ],
+  "short": "A glass of water held upside down by a piece of card, suction cups that will not come apart, and other experiments where the air pushes.",
+  "idea": "The groups go round stations where air pressure does something surprising: a glass of water is turned upside down with a card over it, suction cups are pressed together and pulled apart, and a straw is held in a glass of water with a finger over its top. At every station they predict first. Finally the tutor explains that air pushes in all directions and that pressure is force per unit area.",
+  "open": [
+    "Instructions and equipment for the stations that work reliably.",
+    "A picture of pressure that suits lower secondary students, and its link to Ruukkilabra's chapter Pressure and hydrostatic pressure.",
+    "Tidying up: the stations use water."
+  ],
+  "safety": [
+    "No experiments that need heating (for example crushing a can by heating it), because they cause a risk of burns.",
+    "Plastic glasses.",
+    "A wet floor is dried at once."
+  ],
+  "lessons": [
+    "fy3-4"
+  ]
+}

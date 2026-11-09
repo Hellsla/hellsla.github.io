@@ -38,6 +38,8 @@ A course's fields (all texts in the language of the file):
                                          optional, the section's heading (default site.local_photos)
   kind_note                              optional: false leaves out the note "Tämä on lukiokohtainen opintojakso …"
                                          (Kilparobotiikka, teacher 2026-11-08 "poista tuo kappale")
+  front_line                             optional: the front page's line for the course instead of its subtitle (LUMA-tutor:
+                                         subtitle "Tiede kuuluu kaikille.", the front page keeps its one-sentence description)
   theme                                  optional: "kiviruukki" = the page in Kiviruukin lukio's colours and fonts with
                                          the header symbol in them, like the Ahjo pages (Kilparobotiikka, teacher 2026-11-08)
   pathway                                investigation ids in the course's order; the course page lists its published

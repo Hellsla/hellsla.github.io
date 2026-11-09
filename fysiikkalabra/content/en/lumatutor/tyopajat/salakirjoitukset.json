@@ -1,0 +1,190 @@
+{
+  "id": "salakirjoitukset",
+  "order": 3,
+  "status": "ready",
+  "title": "Secret codes and mathematics",
+  "short": "Participants break secret messages with a cipher wheel and letter frequencies, and invent their own code.",
+  "audience": "ylakoulu",
+  "topic": "matematiikka",
+  "minutes": 30,
+  "group": "in pairs",
+  "equipment": [
+    "tulosteet"
+  ],
+  "goals": [
+    "The participant can encrypt and decrypt a message with a shift cipher.",
+    "The participant understands why a shift cipher can be broken by trying every key.",
+    "The participant uses reasoning and letter frequencies to break a secret message."
+  ],
+  "materials": [
+    "A printed cipher wheel for each participant, preferably on thick paper.",
+    "For each pair a drawing pin or a split pin for the centre of the wheel, and a piece of cardboard as a base.",
+    "Round-tipped scissors for cutting out the wheels, or wheels cut out in advance.",
+    "A printed detective task card for each pair, and pens.",
+    "A board or a large sheet of paper for the hook message."
+  ],
+  "prep": [
+    "Print the wheels and the task cards. If time is short, cut out the wheels in advance.",
+    "Put one wheel together yourself and check that you can decrypt every message on the task card.",
+    "Write the hook message on the board before the participants arrive. The message and its solution are in the answers below.",
+    "Read the answers and the background. Do not show the answers to the participants."
+  ],
+  "safety": [
+    "Scissors and pins: the tutor hands them out, explains how to use them safely and collects them as soon as the wheels are put together.",
+    "In their own messages, participants do not write anyone's name or other personal information. Tell them that the messages stay in the workshop."
+  ],
+  "steps": [
+    {
+      "time": "0–4",
+      "title": "Hook",
+      "do": "Show the secret message written on the board. Tell them it is encrypted in a way Julius Caesar is said to have used. Let the pairs guess for a moment.",
+      "say": "Here is a secret message. Every letter has been replaced by another one. Who can work out what it says? Hint: every letter has been moved the same number of steps."
+    },
+    {
+      "time": "4–10",
+      "title": "Put the wheel together and decrypt message 1",
+      "do": "The participants put the cipher wheel together: the small wheel on top of the big one and the pin in the centre. Show how to set the key. The pairs decrypt message 1, whose key is given.",
+      "say": "Key 5 means that you turn the inner wheel's F, five steps after A, to sit under the outer wheel's A. Now every letter on the outer wheel has its encrypted partner next to it. To decrypt, find the encrypted letter on the inner wheel and read the original from the outer wheel."
+    },
+    {
+      "time": "10–16",
+      "title": "Message 2: the key is missing",
+      "do": "The key for message 2 is not given. The pairs try the keys in order until the message starts to make sense. Ask how many keys they have to try in the worst case.",
+      "say": "The key is not given. How could you still find it? How many options are there in total?"
+    },
+    {
+      "time": "16–23",
+      "title": "Message 3: letter detective",
+      "do": "Message 3 is longer. The pairs count which letters appear most often in the secret message. Tell them that the most common letters in English include E, T, A and O. The most common encrypted letter is probably one of them. The top letters may be nearly tied, so if the first try does not give sensible text, try the next one.",
+      "say": "Count the three most common letters. If the most common encrypted letter was originally E, what would the key be? Try it."
+    },
+    {
+      "time": "23–27",
+      "title": "Your own code",
+      "do": "The pairs encrypt a short message with their own key and swap it with the pair next to them. The other pair tries to break it.",
+      "say": "Think of a short message, choose a key and encrypt it. Do not tell the key: can the pair next to you find it?"
+    },
+    {
+      "time": "27–30",
+      "title": "Closing",
+      "do": "Sum up why a shift cipher is easy to break and how today's encryption differs from it.",
+      "say": "This shift cipher has only 28 real keys. How many keys would there have to be so that not even a computer would have time to try them all?"
+    }
+  ],
+  "background": [
+    "In a shift cipher, or Caesar cipher, every letter is replaced by the letter a set number of steps further on in the alphabet. The number of steps is the key. When the alphabet runs out, you go on from the start. The wheel uses the Finnish alphabet of 29 letters, A–Z followed by Å, Ä and Ö, so there are 29 keys, one of which (shift 0) does not change the message at all. So there are 28 real keys.",
+    "Mathematically, a shift cipher is calculating with remainders. Number the letters A = 0, B = 1, … , Ö = 28. The letter $x$ is encrypted with the key $k$ into the letter $y = (x + k) \\bmod 29$ and decrypted by calculating $x = (y - k) \\bmod 29$. The notation $\\bmod 29$ means the remainder when the number is divided by 29. A clock face works the same way: when it is 22 o'clock and you add 5 hours, it is 3 o'clock.",
+    "Because there are only 28 keys, the message can be broken by trying them all. Another way is frequency analysis: in every language some letters are more common than others. In English the most common letters include E, T, A and O. In a long encrypted message the most common letter therefore probably stands for one of them. In a short message the frequencies can differ a lot, so the method works better the longer the message is.",
+    "If every letter is replaced by any other letter without a regular shift, there are $29! \\approx 8.8 \\cdot 10^{30}$ keys. They cannot all be tried, but frequency analysis breaks even this kind of cipher. Today's encryption methods are based on mathematical problems that would in practice take even computers too long to solve without the key.",
+    "The messages and their solutions are shown below. They are encrypted automatically with the same 29-letter shift cipher as on the wheel, so the result decrypted with the wheel matches them. Spaces and punctuation are left as they are."
+  ],
+  "figures": [
+    "salakiekko"
+  ],
+  "ciphers": [
+    {
+      "id": "koukku",
+      "plain": "SCIENCE BELONGS TO EVERYONE",
+      "shift": 3
+    },
+    {
+      "id": "viesti1",
+      "plain": "MATHEMATICS IS A DETECTIVE'S TOOL",
+      "shift": 5
+    },
+    {
+      "id": "viesti2",
+      "plain": "A GOOD QUESTION IS HALF THE ANSWER",
+      "shift": 11
+    },
+    {
+      "id": "viesti3",
+      "plain": "PEOPLE HAVE USED SECRET WRITING FOR THOUSANDS OF YEARS. WHEN A MESSAGE IS LONG ENOUGH, YOU CAN BREAK IT BY COUNTING WHICH LETTERS ARE THE MOST COMMON. SO A SKILLED DETECTIVE NEEDS ONLY A PEN, SOME PAPER AND TIME.",
+      "shift": 8
+    }
+  ],
+  "questions": [
+    "How many different keys does the shift cipher have, and how can you tell from the wheel?",
+    "Why does the most common letter help to break the cipher, and when can it mislead you?",
+    "How would you make a cipher so hard that it cannot be broken by trying?"
+  ],
+  "problems": [
+    {
+      "p": "Participants shift in the wrong direction when decrypting.",
+      "f": "Remind them that you move forwards to encrypt and backwards to decrypt. On the wheel the outer ring is the original letter and the inner ring the encrypted one."
+    },
+    {
+      "p": "The letters on the wheel do not line up.",
+      "f": "Check that the pin is exactly in the centre of the wheels. Wheels cut out in advance reduce the problem."
+    },
+    {
+      "p": "The most common letter in message 3 is not E after all.",
+      "f": "That is possible. Try T, A and O next. The solution is found in a few tries, and that is an important observation: frequency analysis gives likely options, not a certain answer."
+    },
+    {
+      "p": "A pair gets stuck on message 2.",
+      "f": "Suggest that they decrypt only the first word of the message with each key. A word that makes sense gives the key."
+    }
+  ],
+  "variations": [
+    {
+      "title": "Easier",
+      "text": "Use only messages 1 and 2, and give a hint for message 2: the key is greater than 10."
+    },
+    {
+      "title": "Harder",
+      "text": "The Vigenère cipher: the key is a word, and each letter's shift is the position of the next letter of the key word. Why does frequency analysis not work as directly?"
+    },
+    {
+      "title": "With programming",
+      "text": "Participants who can program write an encryption program that tries all 28 keys automatically."
+    },
+    {
+      "title": "For primary pupils",
+      "text": "Short messages with the key given. Use the wheel without remainders and just say that the alphabet goes on in a circle."
+    }
+  ],
+  "closing": [
+    "Ask how many keys the shift cipher has and why that makes it weak.",
+    "Tell them that online banks and messaging apps use encryption with so many keys that they cannot all be tried.",
+    "Ask each pair which was easier: encrypting or breaking?"
+  ],
+  "self": [
+    "Did the participants understand how the wheel works before I started to explain remainders?",
+    "Did I let the pairs try message 2 long enough before giving hints?",
+    "How many pairs had time to make their own code?",
+    "What would I change in the length or order of the messages?"
+  ],
+  "participant": {
+    "title": "Detective task card",
+    "blocks": [
+      "# Detective task card",
+      ". The outer ring of the wheel has the original letter and the inner ring the encrypted letter. The key tells how many steps after A the inner letter is that you turn to sit under the outer A. To decrypt, find the encrypted letter on the inner ring and read the original from the outer ring. Spaces and punctuation stay as they are.",
+      "{figure:salakiekko}",
+      "## Message 1. The key is 5.",
+      "> {cipher:viesti1}",
+      "?? Solution",
+      "## Message 2. The key is not given.",
+      "> {cipher:viesti2}",
+      "? The key is",
+      "?? Solution",
+      "## Message 3. Letter detective",
+      "> {cipher:viesti3}",
+      ". Count the three most common letters. The most common letters in English include E, T, A and O.",
+      "? The most common letters",
+      "? The key is",
+      "?? Solution",
+      "## Your own code",
+      ". Encrypt a short message with your own key. Do not write anyone's name. Let the pair next to you break it.",
+      "?? My secret message"
+    ]
+  },
+  "answers": [
+    "Hook: {cipher:koukku} → {plain:koukku} (key {shift:koukku}).",
+    "Message 1: {plain:viesti1}.",
+    "Message 2: key {shift:viesti2}. {plain:viesti2}.",
+    "Message 3: key {shift:viesti3}. The most common letters in the secret message are {top:viesti3}, and they stand for the letters {topplain:viesti3}. {plain:viesti3}"
+  ],
+  "sources": [],
+  "lessons": []
+}

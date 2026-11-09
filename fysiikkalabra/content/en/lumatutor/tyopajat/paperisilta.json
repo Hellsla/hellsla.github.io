@@ -1,0 +1,163 @@
+{
+  "id": "paperisilta",
+  "order": 2,
+  "status": "ready",
+  "title": "Whose paper bridge holds the most?",
+  "short": "Participants design, build, test and improve a paper bridge that carries as many coins as possible.",
+  "audience": "alakoulu",
+  "topic": "rakenteet",
+  "minutes": 20,
+  "group": "2–3 participants per group",
+  "equipment": [
+    "arki"
+  ],
+  "goals": [
+    "The participant notices that the shape of the paper affects how much it carries.",
+    "The participant practises the design cycle: plan, build, test, improve.",
+    "The participant can compare structures fairly when the test is done the same way every time."
+  ],
+  "materials": [
+    "For each group four sheets of A4 copy paper.",
+    "For each group about $30\\,\\text{cm}$ of masking tape.",
+    "For each group two equally high stacks of books or boxes, $20\\,\\text{cm}$ apart.",
+    "For each group a light paper cup or a small box to hold the load.",
+    "As the load, identical coins or metal washers, about 50 for each group. If they run out, the result is recorded as ”over 50”.",
+    "A ruler, a short piece of string for measuring the gap, and a printed engineer card for each group."
+  ],
+  "prep": [
+    "Measure a $20\\,\\text{cm}$ gap for each group in advance and mark the places of the supports on the table with tape.",
+    "Try for yourself how many coins a flat sheet carries, and build one folded model. Do not show the model to the participants before they have tried themselves.",
+    "Count out the coins for the groups and print the cards.",
+    "Write the rules on the board: the bridge rests only on the supports, no tape to the table, the load goes in the middle of the bridge."
+  ],
+  "safety": [
+    "Coins and washers are small objects. They are not suitable for children under three, and younger siblings coming along must be agreed in advance.",
+    "Keep the stacks of books low so that nothing falls on anyone's feet.",
+    "No scissors are needed. If they are used, hand out round-tipped scissors and collect them for the testing.",
+    "Participants wash their hands after handling coins if food is served at the event."
+  ],
+  "steps": [
+    {
+      "time": "0–2",
+      "title": "Hook",
+      "do": "Lay a flat A4 sheet across the supports and put one coin in a cup in the middle. The paper bends and the cup falls.",
+      "say": "This paper does not carry even one coin. I claim that the same paper can be made into a bridge that carries dozens of coins. What should we do?"
+    },
+    {
+      "time": "2–4",
+      "title": "Predict and plan",
+      "do": "Explain the rules and give each group the paper and tape. The group draws its first idea on the card and guesses how many coins it will carry.",
+      "say": "You may fold, roll and tape the paper, but you may not add anything else. First draw your idea and guess how many coins it will carry."
+    },
+    {
+      "time": "4–9",
+      "title": "Build and test",
+      "do": "The groups build their first bridge and test it by adding coins one at a time. Go round the groups and ask which part gives way first.",
+      "say": "Which part gives way first? Does the bridge bend, or does it slide off the support?"
+    },
+    {
+      "time": "9–15",
+      "title": "Improve",
+      "do": "The groups change the bridge based on the test and build a new version from the remaining paper. Encourage them to change one thing at a time. If you have $30\\,\\text{min}$, give this step more time.",
+      "say": "Which one change could help the most? Try it and see if the bridge carries more."
+    },
+    {
+      "time": "15–18",
+      "title": "Final test",
+      "do": "Each group tests its best bridge in turn while the others watch. Count the coins out loud together. Write the results on the board.",
+      "say": "Every bridge is tested the same way: the cup in the middle and the coins one at a time. How many coins were in the cup when the bridge gave way?"
+    },
+    {
+      "time": "18–20",
+      "title": "Closing",
+      "do": "Compare the bridges: what do the strongest ones have in common? Show the picture of the cross-sections and ask where in everyday life the same idea can be seen.",
+      "say": "Every bridge had the same amount of paper. Why did some carry more?"
+    }
+  ],
+  "background": [
+    "A flat sheet of paper bends easily because it is thin. When the paper is folded into a zigzag, a channel or a tube, the same amount of paper spreads out into a taller structure. A tall structure resists bending much better than a low one.",
+    "When a beam bends, its top surface is squeezed together and its bottom surface is stretched. In the middle there is a layer that is neither squeezed nor stretched. The further the material is from this middle layer, the more it resists bending. The bending stiffness is proportional to the second moment of area of the cross-section, which for a rectangular cross-section is $I = \\dfrac{b h^{3}}{12}$. Here $b$ is the width of the cross-section and $h$ its height. When the height doubles and the width stays the same, the stiffness grows eightfold. Folding makes the paper narrower, so in practice the gain is smaller, but still large. The tutor does not need to tell the participants the formula, but it explains why folding helps so much.",
+    "For the same reason corrugated cardboard has a wavy middle layer, steel beams are shaped like the letter I and many bridges have tall girders. An arch works differently: it turns the load into compression towards the supports.",
+    "A paper bridge usually fails in one of these ways: it bends in the middle, the wall of a fold buckles sideways, the bridge slides off a support or a taped joint comes loose. When the participants notice how the bridge fails, they can improve exactly that part.",
+    "The number of coins depends on the paper, the coins and the builders, so there is no single right answer. The comparison is fair only if everyone tests with the same gap and the same cup and adds the coins the same way. This is a good chance to talk about why variables are kept constant in research."
+  ],
+  "figures": [
+    "paperisilta"
+  ],
+  "questions": [
+    "Why do you think folded paper carries more than flat paper?",
+    "Which part of your bridge gave way first, and how could you strengthen exactly that part?",
+    "Where have you seen the same shape that makes a structure stiff?"
+  ],
+  "problems": [
+    {
+      "p": "The bridge slides off a support before it bends.",
+      "f": "Ask how the ends of the bridge could stay in place without taping them to the table. A wider or folded end on the supports helps."
+    },
+    {
+      "p": "A group uses all its tape on the first version.",
+      "f": "Hand out the tape in two parts: half for the first version and half for the improved one."
+    },
+    {
+      "p": "The coins are added in different places or thrown into the cup.",
+      "f": "Show the testing method yourself before the tests and ask that one group member is the tester and another the counter."
+    },
+    {
+      "p": "A group copies its neighbour's bridge.",
+      "f": "Copying is allowed in engineering when you say so out loud. Ask what they will improve on their neighbour's idea."
+    }
+  ],
+  "variations": [
+    {
+      "title": "Easier",
+      "text": "Shorten the gap to $15\\,\\text{cm}$ and show one folded model if a group cannot get started."
+    },
+    {
+      "title": "Harder",
+      "text": "Lengthen the gap to $25\\,\\text{cm}$ or limit the material to two sheets. Extra task: how many coins does the bridge carry per gram of paper?"
+    },
+    {
+      "title": "Without tape",
+      "text": "Folding alone, without tape, makes the participants think about the shape even more carefully."
+    },
+    {
+      "title": "For lower secondary students",
+      "text": "Measure how much the bridge sags with a ruler after every five coins and draw a graph of the relation between the load and the sag."
+    }
+  ],
+  "closing": [
+    "Collect the results on the board and ask what the strongest bridges have in common.",
+    "Show the cross-section picture and sum up: the same amount of paper carries more when it is folded into a tall structure.",
+    "Ask what the group's best improvement was and how they came up with it. Remind them that engineers improve structures in exactly this way: by testing."
+  ],
+  "self": [
+    "Did every member of each group get to build and test, or did someone do everything?",
+    "Did the tests stay fair, and did the participants notice why that matters?",
+    "Did I give away the solution too early?",
+    "What would I change in the equipment or the use of time?"
+  ],
+  "participant": {
+    "title": "Engineer card: paper bridge",
+    "blocks": [
+      "# Engineer card: paper bridge",
+      ". Task: from four sheets of paper and tape, build a bridge that spans a $20\\,\\text{cm}$ gap and carries as many coins as possible.",
+      "## Rules",
+      "- The bridge rests only on the supports. Tape must not be stuck to the table.",
+      "- The cup goes in the middle of the bridge, and the coins are added one at a time.",
+      "## Version 1",
+      "?? Draw your idea.",
+      "? I guess the bridge carries ____ coins.",
+      "? The bridge carried ____ coins.",
+      "? Which part gave way first?",
+      "## Version 2",
+      "? What did we change?",
+      "? The bridge carried ____ coins.",
+      "## Think",
+      "?? Why did the improved bridge carry more or less?"
+    ]
+  },
+  "sources": [],
+  "lessons": [
+    "fy4-5"
+  ]
+}

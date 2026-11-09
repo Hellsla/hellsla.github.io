@@ -1,0 +1,26 @@
+{
+  "id": "mikroskooppi",
+  "order": 10,
+  "status": "idea",
+  "title": "Into the invisible world with a microscope",
+  "audience": "alakoulu",
+  "topic": "elama",
+  "minutes": 30,
+  "equipment": [
+    "mikroskooppi"
+  ],
+  "short": "Participants examine everyday samples with a microscope or a magnifying glass: salt, sugar, fabric and a plant leaf.",
+  "idea": "The groups first guess what a familiar thing looks like magnified and draw their guess. Then they look at the sample with a microscope or a magnifying glass and draw what they saw. The workshop practises careful observation and telling an observation from an assumption.",
+  "open": [
+    "What kind of microscopes or phone clip-on magnifiers are available.",
+    "Samples that show up well at low magnification.",
+    "Using living organisms: if they are used, they are returned to nature."
+  ],
+  "safety": [
+    "Glass slides can break. Use plastic ones if possible.",
+    "Do not touch the hot part near the microscope's lamp.",
+    "Samples are not tasted.",
+    "A mirror-lit microscope is never pointed at the sun."
+  ],
+  "lessons": []
+}

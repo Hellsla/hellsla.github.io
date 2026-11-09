@@ -1,0 +1,156 @@
+{
+  "id": "valo-ja-varit",
+  "order": 4,
+  "status": "ready",
+  "title": "Tutki valoa ja värejä",
+  "short": "Osallistujat paljastavat salaisen viestin punaisella kalvolla, sekoittavat värillisiä valoja ja löytävät sateenkaaren CD-levystä.",
+  "audience": "alakoulu",
+  "topic": "valo",
+  "minutes": 20,
+  "group": "2–3 osallistujaa ryhmässä",
+  "equipment": [
+    "valaisimet",
+    "arki"
+  ],
+  "goals": [
+    "Osallistuja huomaa, että valkoinen valo sisältää monia värejä.",
+    "Osallistuja tutkii, miten värikalvo muuttaa sitä, mitä näemme.",
+    "Osallistuja huomaa, että värillisiä valoja sekoittamalla syntyy uusia värejä."
+  ],
+  "materials": [
+    "Jokaiselle ryhmälle punainen läpinäkyvä värikalvo, esimerkiksi askartelukalvo tai suklaapaperi, noin postikortin kokoinen.",
+    "Jokaiselle ryhmälle salainen viesti: valkoinen paperi, johon on kirjoitettu viesti vaaleansinisellä tussilla ja kirjoitettu sen päälle punaisella ja oranssilla tussilla sotkua.",
+    "Värien sekoittamiseen kolme LED-taskulamppua ja punainen, vihreä ja sininen kalvo, kiinnitettynä kuminauhalla lamppujen eteen. Tarvitaan vain yksi sarja koko ryhmälle.",
+    "Valkoinen seinä tai iso valkoinen paperi ja tila, jonka voi pimentää osittain.",
+    "Jokaiselle ryhmälle vanha CD- tai DVD-levy.",
+    "Tulostettu valotutkijan kortti jokaiselle ryhmälle ja kyniä."
+  ],
+  "prep": [
+    "Tee salaiset viestit ja kokeile jokainen kalvon läpi. Kaikki tussit eivät toimi: punaisen sotkun pitää kadota ja sinisen viestin näkyä tummana.",
+    "Kiinnitä kalvot taskulamppujen eteen ja kokeile värien sekoittumista hämärässä. Jos jokin väri on muita himmeämpi, käytä kirkkaampaa lamppua tai ohuempaa kalvoa.",
+    "Valitse paikka, jonka voi pimentää niin, että lattialle ja kulkureiteille jää silti valoa.",
+    "Tulosta kortit."
+  ],
+  "safety": [
+    "Älä käytä laserosoittimia. Laserin valo voi vahingoittaa silmää pysyvästi.",
+    "Älä katso aurinkoon. Värikalvo tai CD-levy ei suojaa silmiä, vaikka ne himmentävät valoa.",
+    "Taskulamppua ei suunnata kenenkään silmiin.",
+    "Hämärässä tilassa kulkureitit pidetään vapaina ja valoa jätetään sen verran, että kaikki näkevät liikkua.",
+    "Rikkinäinen CD-levy voi olla terävä. Poista halkeilleet levyt käytöstä."
+  ],
+  "steps": [
+    {
+      "time": "0–3",
+      "title": "Koukku",
+      "do": "Kysy ensin, mitä värejä osallistujat arvaavat näkevänsä, kun valo osuu CD-levyyn. Näytä sitten levy valossa niin, että sen pinnalla näkyy sateenkaaren värit. Anna jokaiselle ryhmälle levy kokeiltavaksi.",
+      "say": "Mistä nämä värit tulevat? Levy on hopeanvärinen, ja valo on valkoista. Tutkitaan, mitä valkoinen valo oikeastaan on."
+    },
+    {
+      "time": "3–9",
+      "title": "Haaste 1: salainen viesti",
+      "do": "Jaa ryhmille salaiset viestit ja punaiset kalvot. Ennen katsomista ryhmät arvaavat, mitä kalvon läpi näkyy. Sitten he katsovat ja lukevat viestin.",
+      "say": "Paperissa on piilotettu viesti, mutta sotku peittää sen. Mitä luulette näkyvän punaisen kalvon läpi?"
+    },
+    {
+      "time": "9–16",
+      "title": "Haaste 2: sekoita valoja",
+      "do": "Pimennä tila osittain. Osoita punaisella ja vihreällä lampulla samaan kohtaan seinällä. Anna osallistujien ennustaa ensin. Kokeilkaa sitten punainen ja sininen, vihreä ja sininen sekä kaikki kolme.",
+      "say": "Mitä väriä tulee, kun punainen ja vihreä valo menevät päällekkäin? Kirjoittakaa arvaus korttiin ennen kuin sytytän lamput."
+    },
+    {
+      "time": "16–20",
+      "title": "Lopetus",
+      "do": "Kokoa havainnot yhteen kuvan avulla. Kysy, missä arjessa näkyy värien sekoittaminen valolla.",
+      "say": "Puhelimen näytössä on pieniä punaisia, vihreitä ja sinisiä valoja. Mitä luulette, miten näyttö saa aikaan keltaisen?"
+    }
+  ],
+  "background": [
+    "Valkoinen valo on sekoitus kaikkia näkyvän valon värejä. Näkyvän valon aallonpituudet ovat noin $400\\,\\text{nm}$:stä (violetti) noin $700\\,\\text{nm}$:iin (punainen). CD-levyn pinnassa on tiheään vierekkäisiä uria, jotka taivuttavat eri aallonpituuksia eri suuntiin. Siksi valkoinen valo hajoaa levyllä väreiksi. Ruukkilabrassa ilmiötä tutkitaan luvussa Valon interferenssi ja diffraktio.",
+    "Esine näyttää punaiselta, koska se heijastaa punaista valoa ja imee muita värejä. Punainen kalvo päästää läpi pääasiassa punaista valoa ja imee muut. Kun salaista viestiä katsotaan punaisen kalvon läpi, valkoinen paperi ja punainen sotku heijastavat molemmat punaista valoa, joten ne näyttävät samalta ja sotku katoaa. Sininen tussi imee punaista valoa, joten viesti näkyy tummana.",
+    "Silmässä on kolmenlaisia tappisoluja, jotka ovat herkimpiä pitkille, keskipitkille ja lyhyille aallonpituuksille. Aivot muodostavat värin siitä, kuinka voimakkaasti kukin tappisolutyyppi reagoi. Kun punainen ja vihreä valo osuvat samaan kohtaan, silmä näkee keltaista, vaikka keltaisen aallonpituutta ei ole mukana. Punainen ja sininen antavat purppuranpunaisen, vihreä ja sininen syaanin, ja kaikki kolme yhdessä lähes valkoisen. Tämä on valon additiivista värien sekoittamista, jota näytöt käyttävät.",
+    "Yleinen virhekäsitys on, että värikalvo värjää valon. Kalvo ei lisää väriä, vaan poistaa valosta muut värit. Toinen sekaannus syntyy maaleista: sininen ja keltainen maali sekoittuvat vihreäksi, koska maalit imevät valoa. Maalien sekoittaminen on subtraktiivista, ja se noudattaa eri sääntöjä kuin valojen sekoittaminen. Jos osallistuja kysyy tästä, se on erinomainen kysymys.",
+    "Värikalvot ja taskulamput eivät ole täydellisiä, joten sekoitusvärit eivät aina ole puhtaita. Keltainen voi näyttää oranssilta, jos punainen lamppu on vihreää kirkkaampi. Kerro tämä osallistujille: havainto riippuu välineistä, ja tutkijatkin kertovat, millaisilla välineillä he mittasivat."
+  ],
+  "figures": [
+    "varit"
+  ],
+  "questions": [
+    "Mitä luulet, miksi punainen sotku katoaa punaisen kalvon läpi katsottaessa?",
+    "Mitä väriä odotat näkeväsi, kun punainen ja vihreä valo menevät päällekkäin, ja miksi?",
+    "Mistä CD-levyn värit tulevat, kun valo on valkoista?"
+  ],
+  "problems": [
+    {
+      "p": "Salainen viesti ei paljastu kalvon läpi.",
+      "f": "Tussin sininen ei ole tarpeeksi tumma kalvon läpi, tai sotku ei ole tarpeeksi punaista. Kokeile tussit etukäteen ja pidä varalla valmiita viestejä."
+    },
+    {
+      "p": "Punaisen ja vihreän sekoitus näyttää oranssilta tai ruskealta.",
+      "f": "Lamput ovat eri kirkkaita. Siirrä kirkkaampaa lamppua kauemmas seinästä. Kerro osallistujille, miksi tulos poikkeaa."
+    },
+    {
+      "p": "Tilaa ei saa tarpeeksi pimeäksi.",
+      "f": "Kokeile värien sekoittamista ison pahvilaatikon sisällä tai varjossa pöydän alla. Tee haaste 2 demonstraationa koko ryhmälle."
+    },
+    {
+      "p": "Osallistujat leikkivät taskulampuilla ja osoittavat niillä toisiaan.",
+      "f": "Pidä lamput itselläsi ja anna ne osallistujille yksi kerrallaan. Kertaa sääntö: valoa ei osoiteta silmiin."
+    }
+  ],
+  "variations": [
+    {
+      "title": "Helpompi",
+      "text": "Tee vain salainen viesti ja CD-levy. Värien sekoittamisen voi näyttää demonstraationa."
+    },
+    {
+      "title": "Haastavampi",
+      "text": "Anna osallistujien tehdä oma salainen viesti ja kokeilla, mitkä tussit katoavat punaisen ja mitkä vihreän kalvon läpi. Miksi tulos on erilainen?"
+    },
+    {
+      "title": "Värikkäät varjot",
+      "text": "Kun punainen, vihreä ja sininen valo osuvat seinälle eri suunnista ja käsi on niiden edessä, käden varjot ovat värikkäitä. Kysy, miksi yksi varjo on keltainen."
+    },
+    {
+      "title": "Yläkoululaisille",
+      "text": "Tutki puhelimen näyttöä suurennuslasilla: näkyykö punaisia, vihreitä ja sinisiä pisteitä? Selitä niiden avulla, miten näyttö tekee valkoisen."
+    }
+  ],
+  "closing": [
+    "Kysy jokaiselta ryhmältä yksi asia, joka yllätti.",
+    "Kokoa yhteen kuvan avulla: valkoisessa valossa on monia värejä, kalvo päästää läpi vain osan, ja värillisiä valoja yhdistämällä syntyy uusia värejä.",
+    "Kysy, missä kotona on laite, joka tekee kaikki värit kolmesta valosta."
+  ],
+  "self": [
+    "Ennustivatko osallistujat ennen kuin näyttivät, vai kerroinko tuloksen ensin?",
+    "Toimiko pimennys, ja oliko tila turvallinen?",
+    "Miten selitin, miksi sotku katoaa? Ymmärsivätkö osallistujat?",
+    "Mitä tekisin toisin välineissä?"
+  ],
+  "participant": {
+    "title": "Valotutkijan kortti",
+    "blocks": [
+      "# Valotutkijan kortti",
+      "## Aloitus: sateenkaari",
+      "? Arvaan, että CD-levyssä näkyy",
+      "? Mitä värejä näit CD-levyssä?",
+      "## Haaste 1: salainen viesti",
+      "? Arvaan, että kalvon läpi näkyy",
+      "? Viestissä lukee",
+      "? Mihin sotku katosi?",
+      "## Haaste 2: sekoita valoja",
+      ". Kirjoita ensin arvauksesi. Kirjoita sitten, mitä näit.",
+      "= Valot | Arvaan | Näin",
+      "- punainen ja vihreä",
+      "- punainen ja sininen",
+      "- vihreä ja sininen",
+      "- kaikki kolme",
+      "## Turvallisuus",
+      ". Älä katso aurinkoon, älä osoita taskulampulla ketään silmiin."
+    ]
+  },
+  "sources": [],
+  "lessons": [
+    "fy7-11",
+    "fy7-13"
+  ]
+}
