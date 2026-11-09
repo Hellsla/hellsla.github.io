@@ -1684,8 +1684,8 @@ main.kr-theme{font-family:"Work Sans",var(--sans)}
   .ahjo-path-ls a{padding:.4rem .3rem}}
 /* the course page's folded details */
 .ahjo-about{margin:0 0 2.5rem;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.ahjo-about>summary{display:list-item;min-height:64px;padding:.7rem 0 .7rem .25rem;cursor:pointer;text-align:left;list-style-position:inside}
-.ahjo-about>summary>.ahjo-about-x{display:block;margin-left:1.1rem}.ahjo-about>summary::marker{color:var(--kr-navy)}
+.ahjo-about>summary{display:flex;flex-wrap:wrap;align-items:baseline;min-height:64px;padding:.7rem 0;cursor:pointer;text-align:left;list-style:none}
+.ahjo-about>summary>.ahjo-about-x{flex-basis:100%;margin-left:1.2em}.ahjo-about>summary::before{color:var(--kr-navy)}
 .ahjo-about>summary:focus-visible{outline:3px solid var(--kr-navy);outline-offset:2px}
 .ahjo-about-t{font:900 1.25rem/1.3 var(--ahjo-head);color:var(--kr-navy)}
 .ahjo-about-x{color:var(--ink-2);font-size:var(--fs-ui)}
