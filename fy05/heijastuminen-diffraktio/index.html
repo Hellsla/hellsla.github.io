@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aaltojen heijastuminen ja diffraktio · FY05</title>
+<style>
+  /* ---------- yhteinen ulkoasu (sama kaikissa FY05-simulaatioissa) ----------
+     Mitoitus on tehty luokkahuoneen näyttöä varten: peruskoko seuraa ikkunan kokoa
+     (16:9-upotuksessa noin 4 % korkeudesta) ja kaikki mitat ovat em-yksiköissä,
+     joten koko käyttöliittymä skaalautuu kuin kalvo. ?koko=1,2 suurentaa kaiken 20 %. */
+  :root{
+    --bg:#ffffff; --panel:#f6f6f3;
+    --ink:#2b2e33; --ink-2:#555a61; --ink-3:#858a91;
+    --line:#e2e2de; --line-2:#c6c6c0;
+    --accent:#2f6f9f; --accent-soft:#e3edf6;
+    --c-blue:#2a7aab; --c-red:#c2404f; --c-orange:#d8761f; --c-green:#35895a; --c-violet:#7a62b0;
+    --font:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    --koko:1;
+  }
+  *{box-sizing:border-box}
+  html{font-size:calc(clamp(12px,min(2.75vw,4vh),60px) * var(--koko))}
+  html,body{margin:0;height:100%;overflow:hidden;background:var(--bg);color:var(--ink);
+    -webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+  body{font-family:var(--font);font-size:1rem;line-height:1.3}
+  .app{position:fixed;inset:0;display:grid;grid-template-columns:minmax(0,1fr) auto}
+  .app.is-bottom{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto}
+  .stage{position:relative;min-width:0;min-height:0;overflow:hidden}
+  #cv{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none;
+    user-select:none;-webkit-user-select:none}
+  .panel{width:13.4em;background:var(--panel);border-left:1px solid var(--line);
+    padding:.55em .7em .5em;display:flex;flex-direction:column;gap:.35em;overflow:hidden}
+  .app.is-bottom .panel{width:auto;font-size:.92em;border-left:0;border-top:1px solid var(--line);flex-direction:row;
+    flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.35em 1.2em;padding:.4em 1em .5em}
+  .group{display:flex;flex-direction:column;gap:.15em;min-width:0}
+  .ctl{display:flex;flex-direction:column;gap:0}
+  .ctl-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:0 .5em;font-size:.88em;line-height:1.2;color:var(--ink-2);white-space:nowrap}
+  .ctl-head b{font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap;margin-left:auto}
+  .sym{font-style:italic}
+  sub{font-size:.72em;line-height:0}
+  input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:1.3em;margin:0;background:transparent;
+    cursor:pointer;font-size:inherit;--p:50%}
+  input[type=range]:focus{outline:none}
+  input[type=range]:focus-visible{outline:2px solid var(--accent-soft);outline-offset:1px;border-radius:.4em}
+  input[type=range]::-webkit-slider-runnable-track{height:.28em;border-radius:.2em;
+    background:linear-gradient(to right,var(--accent) 0 var(--p),var(--line-2) var(--p) 100%)}
+  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:1.05em;height:1.05em;margin-top:-.385em;border-radius:50%;
+    background:#fff;border:.1em solid var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.14)}
+  input[type=range]::-moz-range-track{height:.28em;border-radius:.2em;background:var(--line-2)}
+  input[type=range]::-moz-range-progress{height:.28em;border-radius:.2em;background:var(--accent)}
+  input[type=range]::-moz-range-thumb{width:.95em;height:.95em;border-radius:50%;background:#fff;border:.1em solid var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.14)}
+  .chk{display:flex;align-items:center;gap:.45em;font-size:.9em;line-height:1.2;cursor:pointer;user-select:none;min-height:1.5em;white-space:nowrap}
+  .chk input{font-size:inherit;width:1.05em;height:1.05em;margin:0;accent-color:var(--accent);cursor:pointer;flex:none}
+  .chk.wrap{white-space:normal;align-items:flex-start}
+  .chk.wrap input{margin-top:.1em}
+  .btns{display:flex;gap:.3em;flex-wrap:wrap}
+  .btns .btn{flex:1 1 0}
+  .btn{font:inherit;font-size:.9em;line-height:1;display:inline-flex;align-items:center;justify-content:center;gap:.35em;
+    min-height:2.05em;padding:0 .55em;border-radius:.5em;border:1px solid var(--line-2);background:#fff;color:var(--ink);
+    cursor:pointer;touch-action:manipulation;white-space:nowrap}
+  .btn:hover{border-color:var(--ink-3)}
+  .btn:active{background:#f1f1ee}
+  .btn svg{width:1em;height:1em;flex:none}
+  .btn.primary{background:var(--ink);border-color:var(--ink);color:#fff}
+  .btn.primary:hover{background:#1c1f23}
+  .btn.wide{width:100%}
+  .btn[aria-pressed=true]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+  .btn:disabled{opacity:.45;cursor:default}
+  .seg{display:inline-flex;border:1px solid var(--line-2);border-radius:.5em;overflow:hidden;background:#fff}
+  .seg button{font:inherit;font-size:.9em;border:0;background:transparent;padding:0 .7em;min-height:2.0em;color:var(--ink-2);
+    cursor:pointer;touch-action:manipulation}
+  .seg button+button{border-left:1px solid var(--line-2)}
+  .seg button[aria-pressed=true]{background:var(--accent-soft);color:var(--accent);font-weight:600}
+  .key{display:inline-block;width:1.4em;height:.7em;flex:none;position:relative}
+  .key::before{content:"";position:absolute;left:0;right:.35em;top:calc(50% - .08em);height:.16em;background:var(--c)}
+  .key::after{content:"";position:absolute;right:0;top:calc(50% - .3em);border-left:.5em solid var(--c);
+    border-top:.3em solid transparent;border-bottom:.3em solid transparent}
+  .key.none{visibility:hidden}
+  .legend{display:flex;flex-direction:column;gap:.15em;font-size:.85em;line-height:1.25;color:var(--ink-2)}
+  .legend span{display:flex;align-items:center;gap:.5em}
+  .legend[hidden]{display:none}
+  @media (max-aspect-ratio:4/5),(max-width:560px){      /* puhelin pystyasennossa: säätimet kuvan alla */
+    html{font-size:calc(clamp(13px,3.7vw,18px) * var(--koko))}
+    html,body{overflow:auto}
+    .app{position:static;min-height:100%;grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto}
+    .stage{height:58vh;min-height:300px}
+    .app .panel,.app.is-bottom .panel{width:auto;border-left:0;border-top:1px solid var(--line);overflow:visible}
+  }
+
+  /* ---------- tämän simulaation omat ---------- */
+  .seg.wide{display:flex;width:100%}
+  .seg.wide button{flex:1 1 0;padding:0 .25em;white-space:nowrap}
+  .panel [hidden]{display:none !important}
+  .hint{margin:0;font-size:.8em;line-height:1.3;color:var(--ink-3)}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="stage">
+    <canvas id="cv" role="img" aria-label="Aaltoallas ylhäältä katsottuna. Heijastumisessa suorat aallot tai pistelähteen aallot heijastuvat suorasta seinästä niin, että tulokulma on yhtä suuri kuin heijastuskulma. Diffraktiossa suorat aallot kulkevat raon tai esteen reunan ohi ja taipuvat esteen taakse; taipuminen on voimakkainta, kun rako on aallonpituuden levyinen."></canvas>
+  </div>
+
+  <div class="panel" aria-label="Säätimet">
+    <div class="seg wide" id="scene" role="group" aria-label="Ilmiö">
+      <button type="button" data-s="refl">Heijastuminen</button>
+      <button type="button" data-s="diff">Diffraktio</button>
+    </div>
+    <button class="btn primary wide" id="play" type="button"></button>
+    <button class="btn wide" id="reset" type="button" title="Tyyni vesi">
+      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.3 8.2a4.7 4.7 0 1 0 1.5-3.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M2.6 2.4v3.4H6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Alusta</button>
+    <div class="group" id="g-refl">
+      <div class="seg wide" id="src" role="group" aria-label="Aaltolähde">
+        <button type="button" data-v="plane">Suora aalto</button>
+        <button type="button" data-v="point">Pistelähde</button>
+      </div>
+      <label class="ctl" id="c-alpha"><span class="ctl-head"><span>Tulokulma <span class="sym">α</span></span><b data-for="alpha"></b></span>
+        <input id="alpha" type="range" min="0" max="50" step="5" value="30" aria-label="Tulokulma eli seinän kallistus"></label>
+    </div>
+    <div class="group" id="g-diff" hidden>
+      <div class="seg wide" id="obst" role="group" aria-label="Este">
+        <button type="button" data-v="slit">Rako</button>
+        <button type="button" data-v="edge">Esteen reuna</button>
+      </div>
+      <label class="ctl" id="c-d"><span class="ctl-head"><span>Raon leveys <span class="sym">d</span></span><b data-for="d"></b></span>
+        <input id="d" type="range" min="1" max="8" step="0.5" value="2" aria-label="Raon leveys"></label>
+    </div>
+    <label class="ctl"><span class="ctl-head"><span>Aallonpituus <span class="sym">λ</span></span><b data-for="lam"></b></span>
+      <input id="lam" type="range" min="1.2" max="3" step="0.1" value="2" aria-label="Aallonpituus"></label>
+    <div class="group">
+      <label class="chk"><input type="checkbox" id="pulses"><span class="key none"></span>Aaltojonot</label>
+      <label class="chk" id="k-rays"><input type="checkbox" id="showRays"><span class="key" style="--c:var(--c-orange)"></span>Säteet</label>
+      <label class="chk" id="k-shadow" hidden><input type="checkbox" id="showShadow"><span class="key none"></span>Varjon raja</label>
+      <label class="chk"><input type="checkbox" id="showVal"><span class="key none"></span>Arvot</label>
+    </div>
+    <p class="hint" id="hint"></p>
+  </div>
+</div>
+
+<script>
+(() => {
+'use strict';
+
+/* =====================================================================
+   Yhteiset apufunktiot
+   ===================================================================== */
+const FONT = 'system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
+const MINUS = '−', NBSP = ' ';
+const css = (n) => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const COL = { ink: css('--ink'), ink2: css('--ink-2'), ink3: css('--ink-3'), line: css('--line'), line2: css('--line-2'),
+  blue: css('--c-blue'), red: css('--c-red'), orange: css('--c-orange'), green: css('--c-green'), violet: css('--c-violet') };
+
+/** Luku suomalaisittain: desimaalipilkku, oikea miinusmerkki, ei "−0,0". */
+function fmt(x, d = 1) {
+  if (!Number.isFinite(x)) return '–';
+  const s = Math.abs(x).toFixed(d);
+  const neg = x < 0 && +s !== 0;
+  let [ip, fp] = s.split('.');
+  if (ip.length > 4) ip = ip.replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+  return (neg ? MINUS : '') + ip + (fp ? ',' + fp : '');
+}
+/** Luku n merkitsevällä numerolla (esim. 160, 32,0, 2,67, 0,100). */
+function fmtSig(x, n = 3) {
+  if (!Number.isFinite(x)) return '–';
+  if (x === 0) return '0';
+  const d = Math.max(0, n - 1 - Math.floor(Math.log10(Math.abs(x)) + 1e-9));
+  return fmt(x, Math.min(d, 6));
+}
+const clamp = (x, a, b) => Math.min(b, Math.max(a, x));
+
+/* Pieni merkintäkieli kanvastekstille:
+   {F} = kursiivinen suureen tunnus, {->v} = vektori (kursiivi + nuoli),
+   _1 tai _{ab} = alaindeksi, ^2 tai ^{ab} = yläindeksi. */
+const richCache = new Map();
+function rich(src) {
+  let out = richCache.get(src);
+  if (out) return out;
+  out = []; let buf = '';
+  const flush = () => { if (buf) { out.push({ t: buf }); buf = ''; } };
+  for (let i = 0; i < src.length; i++) {
+    const c = src[i];
+    if (c === '{') {
+      const j = src.indexOf('}', i), body = src.slice(i + 1, j);
+      flush();
+      out.push(body.startsWith('->') ? { t: body.slice(2), it: true, vec: true } : { t: body, it: true });
+      i = j;
+    } else if ((c === '_' || c === '^') && i + 1 < src.length) {
+      flush();
+      let body;
+      if (src[i + 1] === '{') { const j = src.indexOf('}', i + 1); body = src.slice(i + 2, j); i = j; }
+      else { body = src[i + 1]; i++; }
+      out.push(c === '_' ? { t: body, sub: true } : { t: body, sup: true });
+    } else buf += c;
+  }
+  flush();
+  richCache.set(src, out);
+  return out;
+}
+/** Piirtää rikastetun tekstin; palauttaa leveyden. */
+function drawRich(ctx, src, x, y, o = {}) {
+  const size = o.size || 15, parts = rich(src), weight = o.weight || 400;
+  const fontOf = (p) => `${p.it ? 'italic ' : ''}${weight} ${(p.sub || p.sup) ? Math.round(size * 0.72) : size}px ${FONT}`;
+  let w = 0;
+  const ws = parts.map((p) => { ctx.font = fontOf(p); const pw = ctx.measureText(p.t).width + (p.it ? size * 0.06 : 0); w += pw; return pw; });
+  if (o.measure) return w;
+  let cx = o.align === 'center' ? x - w / 2 : o.align === 'right' ? x - w : x;
+  ctx.textBaseline = 'middle'; ctx.textAlign = 'left';
+  parts.forEach((p, k) => {
+    ctx.font = fontOf(p);
+    const dy = p.sub ? size * 0.3 : p.sup ? -size * 0.36 : 0;
+    if (o.halo) {
+      ctx.lineWidth = 4; ctx.lineJoin = 'round';
+      ctx.strokeStyle = typeof o.halo === 'string' ? o.halo : 'rgba(255,255,255,0.92)';
+      ctx.strokeText(p.t, cx, y + dy);
+    }
+    ctx.fillStyle = o.color || COL.ink;
+    ctx.fillText(p.t, cx, y + dy);
+    if (p.vec) {                                   // vektorinuoli kirjaimen yläpuolelle
+      const ax0 = cx + size * 0.12, ax1 = cx + ws[k] + size * 0.02, ay = y - size * 0.62;
+      ctx.strokeStyle = o.color || COL.ink; ctx.lineWidth = Math.max(1, size / 13);
+      ctx.beginPath(); ctx.moveTo(ax0, ay); ctx.lineTo(ax1, ay);
+      ctx.moveTo(ax1 - size * 0.2, ay - size * 0.12); ctx.lineTo(ax1, ay); ctx.lineTo(ax1 - size * 0.2, ay + size * 0.12);
+      ctx.stroke();
+    }
+    cx += ws[k];
+  });
+  return w;
+}
+/** Vektorinuoli (ohut varsi, kapea kärki). */
+function arrow(ctx, x1, y1, x2, y2, color, o = {}) {
+  const w = o.width || 2.4, L = Math.hypot(x2 - x1, y2 - y1);
+  if (L < 0.5) return;
+  const ux = (x2 - x1) / L, uy = (y2 - y1) / L;
+  const hl = Math.min(o.head || 10 + w * 1.2, L * 0.8), hw = hl * 0.58;
+  const bx = x2 - ux * hl, by = y2 - uy * hl;
+  ctx.strokeStyle = color; ctx.fillStyle = color; ctx.lineWidth = w; ctx.lineCap = 'butt';
+  ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(bx + ux, by + uy); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(x2, y2);
+  ctx.lineTo(bx - uy * hw, by + ux * hw); ctx.lineTo(bx + uy * hw, by - ux * hw); ctx.closePath(); ctx.fill();
+}
+/** ?koko=1,2 (tai ?scale=) suurentaa koko käyttöliittymän: luokan näytölle voi valita sopivan koon. */
+(() => {
+  const q = new URLSearchParams(location.search), raw = q.get('koko') || q.get('scale') || q.get('zoom');
+  const k = raw ? parseFloat(raw.replace(',', '.')) : NaN;
+  if (k >= 0.5 && k <= 3) document.documentElement.style.setProperty('--koko', String(k));
+})();
+/** Kanvas, joka seuraa elementin kokoa ja näytön tarkkuutta.
+    Piirtäminen tehdään loogisina pikseleinä: u = sivun peruskoko / 15 px. Kun ikkuna kasvaa
+    (esim. luokan näyttö), myös tekstit, viivat ja merkit suurenevat samassa suhteessa.
+    Kuvapuskuri on vähintään 2-kertainen, jotta kuva pysyy terävänä, kun esitysohjelma
+    (esim. Slides.com) suurentaa upotuksen koko ruudulle. */
+function setupCanvas(cv, onResize) {
+  const view = { ctx: cv.getContext('2d'), W: 1, H: 1, dpr: 1, u: 1 };
+  const resize = () => {
+    const r = cv.getBoundingClientRect();
+    const base = parseFloat(getComputedStyle(document.documentElement).fontSize) || 15;
+    const boost = r.width * r.height <= 1.2e6 ? 2 : 1.5;
+    const dev = Math.min(3, Math.max(window.devicePixelRatio || 1, boost));
+    view.u = base / 15;
+    view.W = Math.max(1, r.width / view.u); view.H = Math.max(1, r.height / view.u);
+    view.dpr = dev * view.u;                       // looginen pikseli → laitepikseli
+    cv.width = Math.round(r.width * dev); cv.height = Math.round(r.height * dev);
+    if (onResize) onResize(view);
+  };
+  /** Osoittimen paikka loogisina pikseleinä. */
+  view.pt = (e) => { const r = cv.getBoundingClientRect(); return { x: (e.clientX - r.left) / view.u, y: (e.clientY - r.top) / view.u }; };
+  new ResizeObserver(resize).observe(cv);
+  window.addEventListener('resize', resize);       // peruskoko voi muuttua, vaikka kanvaksen koko ei muuttuisi
+  resize();
+  return view;
+}
+/** Liukusäädin + arvonäyttö. */
+function bindRange(id, show, onInput) {
+  const el = document.getElementById(id), out = document.querySelector(`[data-for="${id}"]`);
+  const paint = () => {
+    const v = +el.value, a = +el.min, b = +el.max;
+    el.style.setProperty('--p', ((v - a) / (b - a) * 100) + '%');
+    if (out) out.textContent = show(v);
+  };
+  el.addEventListener('input', () => { paint(); onInput(+el.value); });
+  paint();
+  return { el, set(v) { el.value = v; paint(); }, get v() { return +el.value; }, repaint: paint };
+}
+/** Kiinteän aika-askeleen silmukka: fysiikka ei riipu näytön virkistystaajuudesta. */
+function startLoop({ dt, step, draw, running }) {
+  let last = performance.now(), acc = 0;
+  const frame = (ts) => {
+    requestAnimationFrame(frame);
+    const real = clamp((ts - last) / 1000, 0, 0.1);   // pitkä tauko (esim. välilehti piilossa) ei aiheuta hyppyä
+    last = ts;
+    if (running()) {
+      acc += real;
+      let n = 0;
+      while (acc >= dt && n++ < 1000) { step(dt); acc -= dt; }
+    }
+    draw();
+  };
+  requestAnimationFrame(frame);
+}
+
+/* =====================================================================
+   Fysiikka: aaltojen heijastuminen ja diffraktio aaltoaltaassa
+   Veden pinnan poikkeama u lasketaan kaksiulotteisesta aaltoyhtälöstä ∂²u/∂t² = c²∇²u ruudukossa
+   (ruutu 1 mm, keskeisdifferenssit ajassa ja paikassa, Courantin luku C = c·Δt/Δx = 0,5).
+   Seinissä vesi ei virtaa seinän läpi (∂u/∂n = 0): aalto heijastuu kuten aaltoaltaassa, ilman vaiheen
+   kääntymistä. Altaan reunoilla on vaimentava kaista, joka imee aallot, joten allas näyttää jatkuvan.
+   Aaltokampa tai pistelähde värähtelee taajuudella, joka antaa valitun aallonpituuden ruudukon
+   dispersioyhtälöstä sin(ωΔt/2) = C sin(πΔx/λ).
+   Heijastuminen: suora seinä, tulokulma = heijastuskulma normaalista mitattuna. Pistelähteen aallot
+   heijastuvat kuin ne tulisivat seinän takana olevasta kuvalähteestä.
+   Diffraktio: aalto taipuu raon tai esteen reunan taakse; taipuminen on voimakasta, kun raon leveys
+   on aallonpituuden suuruusluokkaa, ja heikkoa, kun rako on monta aallonpituutta leveä.
+   ===================================================================== */
+const DX = 0.1, NYI = 200, SP = 24, C2 = 0.25, SPS = 160;           // ruutu (cm), altaan korkeus (ruutua), vaimennuskaista, C², askelta/s
+const SRC_X = 6, GAIN = 2.2;                                        // aaltokamman paikka (ruutua), värien herkkyys
+const S = {
+  scene: 'refl', src: 'plane', obst: 'slit', lam: 2.0, alpha: 30, d: 2.0,
+  running: false, n: 0, phase: 0, pulses: false, n0: 0, show: { rays: false, shadow: false, val: false },
+};
+let G = null;                                                       // ruudukko: koko, kentät, seinät, vaimennus
+
+/* ---------- geometria (altaan sisäosan ruutuina, y alaspäin) ---------- */
+const lamCells = () => S.lam / DX;
+const omega = () => 2 * Math.asin(Math.sqrt(C2) * Math.sin(Math.PI / lamCells()));
+/** Heijastavan seinän kulma: kapeassa altaassa seinä ei saa ulottua aaltokampaan asti. */
+function wallAngle() {
+  const xw = 0.62 * G.NXI, below = 0.28 * NYI + SP;
+  return Math.min(S.alpha, Math.atan((xw - SRC_X - 24) / below) * 180 / Math.PI);
+}
+function geom() {
+  const NXI = G.NXI;
+  if (S.scene === 'refl') {
+    if (S.src === 'plane') {
+      const f = wallAngle() * Math.PI / 180;
+      return { kind: 'line', P: [0.62 * NXI, 0.72 * NYI], w: [Math.sin(f), -Math.cos(f)], n: [-Math.cos(f), -Math.sin(f)], phi: f };
+    }
+    return { kind: 'line', P: [0.62 * NXI, 0.5 * NYI], w: [0, -1], n: [-1, 0], phi: 0, S: [0.3 * NXI, 0.5 * NYI] };
+  }
+  const xb = Math.round(0.36 * NXI), dc = S.d / DX;
+  return S.obst === 'slit' ? { kind: 'bar', xb, open: [NYI / 2 - dc / 2, NYI / 2 + dc / 2] } : { kind: 'bar', xb, open: [-SP - 1, NYI / 2] };
+}
+
+/* ---------- ruudukko ---------- */
+function buildGrid(NXI) {
+  const NX = NXI + 2 * SP, NY = NYI + 2 * SP, N = NX * NY;
+  G = { NXI, NX, NY, u0: new Float32Array(N), u1: new Float32Array(N), u2: new Float32Array(N), open: new Uint8Array(N), damp: new Float32Array(N) };
+  for (let j = 0; j < NY; j++) for (let i = 0; i < NX; i++) {
+    const d = Math.max(0, SP - i, i - (NX - 1 - SP), SP - j, j - (NY - 1 - SP));
+    G.damp[j * NX + i] = 0.3 * (d / SP) ** 2;
+  }
+  G.off = document.createElement('canvas'); G.off.width = NXI; G.off.height = NYI;
+  G.octx = G.off.getContext('2d'); G.img = G.octx.createImageData(NXI, NYI);
+  rasterize();
+}
+/** Seinäruudut nykyisestä geometriasta; seinän sisällä vesi on levossa. */
+function rasterize() {
+  const { NX, NY, open, u0, u1 } = G, g = geom();
+  open.fill(1);
+  for (let j = 0; j < NY; j++) for (let i = 0; i < NX; i++) {
+    const x = i - SP + 0.5, y = j - SP + 0.5;
+    let wall;
+    if (g.kind === 'line') wall = Math.abs((x - g.P[0]) * g.n[0] + (y - g.P[1]) * g.n[1]) <= 1.6;
+    else wall = Math.abs(x - g.xb) <= 1.6 && !(y > g.open[0] && y < g.open[1]);
+    if (wall) { const k = j * NX + i; open[k] = 0; u0[k] = 0; u1[k] = 0; }
+  }
+}
+function clearWater() { G.u0.fill(0); G.u1.fill(0); G.u2.fill(0); S.n = 0; S.n0 = 0; S.phase = 0; }
+
+/** Aaltojono: lähde värähtelee neljä jaksoa pehmeästi alkaen ja loppuen, sitten tauko; jono toistuu 4,5 s välein. */
+function burst(m, T) {
+  const t = m % Math.round(4.5 * SPS), up = T, len = 4 * T;
+  if (t > len) return 0;
+  return t < up ? 0.5 - 0.5 * Math.cos(Math.PI * t / up) : t > len - up ? 0.5 - 0.5 * Math.cos(Math.PI * (len - t) / up) : 1;
+}
+/** Yksi aika-askel: aaltoyhtälö, vaimennus reunoilla ja lähde. */
+function step() {
+  const { NX, NY, u0, u1, u2, open: o, damp } = G;
+  for (let j = 1; j < NY - 1; j++) {
+    let k = j * NX + 1;
+    for (let i = 1; i < NX - 1; i++, k++) {
+      if (!o[k]) { u2[k] = 0; continue; }
+      const c = u1[k];                                              // seinän puolelta ei virtaa: naapuri lasketaan samaksi (∂u/∂n = 0)
+      const lap = o[k - 1] * (u1[k - 1] - c) + o[k + 1] * (u1[k + 1] - c) + o[k - NX] * (u1[k - NX] - c) + o[k + NX] * (u1[k + NX] - c);
+      const s = damp[k];
+      u2[k] = (2 * c - (1 - s) * u0[k] + C2 * lap) / (1 + s);
+    }
+  }
+  const w = omega(), T = 2 * Math.PI / w, ramp = S.pulses ? burst(S.n - S.n0, T) : S.n < 2 * T ? 0.5 - 0.5 * Math.cos(Math.PI * S.n / (2 * T)) : 1;
+  S.phase += w;
+  const g = geom();
+  if (g.S) {                                                        // pistelähde
+    const k = (SP + Math.round(g.S[1])) * NX + SP + Math.round(g.S[0]);
+    u2[k] += 1.6 * ramp * Math.sin(S.phase);
+  } else {                                                          // aaltokampa: amplitudi 1 suoralle aallolle
+    const f = 2 * C2 * Math.sin(2 * Math.PI / lamCells()) * ramp * Math.sin(S.phase), i = SP + SRC_X;
+    for (let j = 0; j < NY; j++) { const k = j * NX + i; if (o[k]) u2[k] += f; }
+  }
+  G.u0 = u1; G.u1 = u2; G.u2 = u0;
+  S.n++;
+}
+
+/* =====================================================================
+   Piirtäminen
+   ===================================================================== */
+const cv = document.getElementById('cv');
+let L = {};
+const view = setupCanvas(cv, (v) => {
+  const fs = clamp(Math.min(v.W / 30, v.H / 16), 12, 18), pad = fs * 0.7, band = 12 + fs * 0.85 * 1.4;
+  L = { W: v.W, H: v.H, fs, pad, band };
+  const NXI = Math.round(clamp(NYI * (v.W - 2 * pad) / Math.max(1, v.H - band - pad), 150, 360));
+  if (!G || G.NXI !== NXI) { buildGrid(NXI); S.n = 0; S.phase = 0; }
+});
+const CRAY = COL.orange, WALL = '#3f4349';
+// väritaulukko: harja tummansininen, tasainen vesi keskisininen, aallonpohja vaalea
+const LUT = new Uint8Array(1024 * 3), UMAX = 2.5;
+(() => {
+  const crest = [31, 95, 143], mid = [150, 192, 221], trough = [240, 247, 252];
+  for (let q = 0; q < 1024; q++) {
+    const t = Math.tanh(GAIN * (q / 1023 * 2 - 1) * UMAX), a = t >= 0 ? crest : trough, s = Math.abs(t);
+    for (let c = 0; c < 3; c++) LUT[q * 3 + c] = Math.round(mid[c] + (a[c] - mid[c]) * s);
+  }
+})();
+
+function draw() {
+  const { ctx, dpr } = view, { W, H, fs, pad, band } = L, val = S.show.val;
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  ctx.clearRect(0, 0, W, H);
+  const { NXI, NX, u1, open, img } = G;
+  const cp = Math.min((W - 2 * pad) / NXI, (H - band - pad) / NYI), tw = NXI * cp, th = NYI * cp;
+  const tx = (W - tw) / 2, ty = band + (H - band - pad - th) / 2;
+  const SX = (x) => tx + x * cp, SY = (y) => ty + y * cp;
+
+  // vesi
+  const px = img.data;
+  for (let j = 0; j < NYI; j++) {
+    let k = (j + SP) * NX + SP, p = j * NXI * 4;
+    for (let i = 0; i < NXI; i++, k++, p += 4) {
+      if (!open[k]) { px[p] = 63; px[p + 1] = 67; px[p + 2] = 73; px[p + 3] = 255; continue; }
+      const q = Math.max(0, Math.min(1023, Math.round((u1[k] / UMAX + 1) * 511.5))) * 3;
+      px[p] = LUT[q]; px[p + 1] = LUT[q + 1]; px[p + 2] = LUT[q + 2]; px[p + 3] = 255;
+    }
+  }
+  G.octx.putImageData(img, 0, 0);
+  ctx.imageSmoothingEnabled = true; ctx.imageSmoothingQuality = 'high';
+  ctx.drawImage(G.off, tx, ty, tw, th);
+
+  ctx.save(); ctx.beginPath(); ctx.rect(tx, ty, tw, th); ctx.clip();
+  const g = geom(), lw = Math.max(4, 3.2 * cp);
+  // seinät ja esteet terävinä viivoina
+  ctx.strokeStyle = WALL; ctx.fillStyle = WALL; ctx.lineWidth = lw; ctx.lineCap = 'butt';
+  if (g.kind === 'line') {
+    const R = 2 * (NXI + NYI);
+    ctx.beginPath(); ctx.moveTo(SX(g.P[0] - g.w[0] * R), SY(g.P[1] - g.w[1] * R)); ctx.lineTo(SX(g.P[0] + g.w[0] * R), SY(g.P[1] + g.w[1] * R)); ctx.stroke();
+  } else {
+    if (g.open[0] > 0) ctx.fillRect(SX(g.xb) - lw / 2, ty, lw, SY(g.open[0]) - ty);
+    ctx.fillRect(SX(g.xb) - lw / 2, SY(g.open[1]), lw, ty + th - SY(g.open[1]));
+  }
+  // lähde: aaltokampa vasemmassa reunassa tai pistelähde
+  if (g.S) {
+    ctx.fillStyle = WALL; ctx.beginPath(); ctx.arc(SX(g.S[0]), SY(g.S[1]), Math.max(5, 2.2 * cp), 0, 2 * Math.PI); ctx.fill();
+  } else {
+    ctx.fillStyle = '#5d6168'; ctx.fillRect(tx, ty, (SRC_X + 2.5) * cp, th);
+    ctx.fillStyle = '#7d8187'; ctx.fillRect(tx + (SRC_X + 1) * cp, ty, 1.5 * cp, th);
+  }
+
+  // säteet, normaali ja kulmat (heijastuminen)
+  const ray = (x0, y0, x1, y1, dashed) => {                         // valkoinen pohja näkyy sinisen veden päällä
+    for (const [c, wd] of [['rgba(255,255,255,0.9)', 5], [CRAY, 2.6]]) {
+      ctx.strokeStyle = c; ctx.lineWidth = wd; ctx.setLineDash(dashed ? [8, 6] : []);
+      ctx.beginPath(); ctx.moveTo(SX(x0), SY(y0)); ctx.lineTo(SX(x1), SY(y1)); ctx.stroke();
+    }
+    ctx.setLineDash([]);
+    if (!dashed) { const mx = (x0 + x1) / 2, my = (y0 + y1) / 2, L2 = Math.hypot(x1 - x0, y1 - y0); arrow(ctx, SX(mx - (x1 - x0) / L2 * 4), SY(my - (y1 - y0) / L2 * 4), SX(mx + (x1 - x0) / L2 * 4), SY(my + (y1 - y0) / L2 * 4), CRAY, { width: 2.6, head: 14 }); }
+  };
+  const normal = (x, y, nx, ny, len) => {
+    for (const [c, wd] of [['rgba(255,255,255,0.9)', 4], [COL.ink, 1.6]]) {
+      ctx.strokeStyle = c; ctx.lineWidth = wd; ctx.setLineDash([6, 5]);
+      ctx.beginPath(); ctx.moveTo(SX(x), SY(y)); ctx.lineTo(SX(x + nx * len), SY(y + ny * len)); ctx.stroke();
+    }
+    ctx.setLineDash([]);
+  };
+  if (S.scene === 'refl' && S.show.rays) {
+    if (!g.S) {
+      const [Px, Py] = g.P, rx = -Math.cos(2 * g.phi), ry = -Math.sin(2 * g.phi), len = 0.42 * NYI;
+      ray(SRC_X + 14, Py, Px, Py); ray(Px, Py, Px + rx * len, Py + ry * len);
+      normal(Px, Py, g.n[0], g.n[1], len * 0.85);
+      if (g.phi > 0.03) {                                          // kulmat normaalista
+        const r = 0.13 * NYI * cp, an = Math.atan2(g.n[1], g.n[0]), ai = -Math.PI, ar = Math.atan2(ry, rx);   // ruudun kulmat: −π < ai < an < ar < 0
+        ctx.strokeStyle = COL.ink; ctx.lineWidth = 1.8;
+        ctx.beginPath(); ctx.arc(SX(Px), SY(Py), r, ai, an); ctx.stroke();
+        ctx.beginPath(); ctx.arc(SX(Px), SY(Py), r * 1.15, an, ar); ctx.stroke();
+        const lab = (a, rr, t) => drawRich(ctx, t, SX(Px) + Math.cos(a) * rr, SY(Py) + Math.sin(a) * rr, { size: fs, color: COL.ink, align: 'center', halo: true });
+        lab((an + ai) / 2, r + fs * 0.75, '{α}'); lab((an + ar) / 2, r * 1.15 + fs * 0.75, '{β}');
+      }
+    } else {
+      const [Sx, Sy] = g.S, xw = g.P[0], Ix = 2 * xw - Sx;
+      for (const dy of [-0.3, 0.3]) {
+        const Qy = Sy + dy * NYI, t = 0.9;                             // heijastunut säde jatkuu kuvalähteestä poispäin
+        ray(Sx, Sy, xw, Qy); ray(xw, Qy, xw - (xw - Sx) * t, Qy + (Qy - Sy) * t); ray(xw, Qy, Ix, Sy, true);
+      }
+      normal(xw, Sy - 0.3 * NYI, -1, 0, 0.18 * NYI);
+      ctx.strokeStyle = CRAY; ctx.lineWidth = 2; ctx.setLineDash([5, 4]);
+      ctx.beginPath(); ctx.arc(SX(Ix), SY(Sy), Math.max(6, 2.6 * cp), 0, 2 * Math.PI); ctx.stroke(); ctx.setLineDash([]);
+      drawRich(ctx, '{S}', SX(Sx) - fs * 0.9, SY(Sy) - fs * 0.6, { size: fs, color: COL.ink, align: 'center', halo: true });
+      drawRich(ctx, '{S}′', SX(Ix) + fs * 0.9, SY(Sy) - fs * 0.6, { size: fs, color: COL.ink, align: 'center', halo: true });
+    }
+  }
+  // varjon raja: suoraan etenevän aallon reuna esteen takana (diffraktio)
+  if (S.scene === 'diff' && S.show.shadow) {
+    const edges = g.open[0] > 0 ? g.open : [g.open[1]];
+    for (const y of edges) {
+      for (const [c, wd] of [['rgba(255,255,255,0.9)', 4.5], [COL.red, 2]]) {
+        ctx.strokeStyle = c; ctx.lineWidth = wd; ctx.setLineDash([9, 6]);
+        ctx.beginPath(); ctx.moveTo(SX(g.xb), SY(y)); ctx.lineTo(tx + tw, SY(y)); ctx.stroke();
+      }
+    }
+    ctx.setLineDash([]);
+  }
+  // mitat: aallonpituus ja raon leveys
+  if (val) {
+    const dim = (x0, y0, x1, y1, t, side) => {
+      arrow(ctx, SX((x0 + x1) / 2), SY((y0 + y1) / 2), SX(x0), SY(y0), COL.ink, { width: 2, head: 9 });
+      arrow(ctx, SX((x0 + x1) / 2), SY((y0 + y1) / 2), SX(x1), SY(y1), COL.ink, { width: 2, head: 9 });
+      drawRich(ctx, t, SX((x0 + x1) / 2) + side[0] * fs, SY((y0 + y1) / 2) + side[1] * fs, { size: fs, color: COL.ink, align: 'center', halo: true });
+    };
+    const lc = lamCells(), lx = S.scene === 'diff' ? g.xb - 12 - lc : SRC_X + 16, ly = 0.07 * NYI;
+    dim(lx, ly, lx + lc, ly, '{λ}', [0, 0.85]);
+    if (S.scene === 'diff' && S.obst === 'slit') dim(g.xb - 8, g.open[0], g.xb - 8, g.open[1], '{d}', [-0.9, 0]);
+    // mittakaava 5 cm oikeassa alakulmassa
+    const sx1 = NXI - 8, sx0 = sx1 - 5 / DX, sy = NYI - 8;
+    ctx.strokeStyle = '#fff'; ctx.lineWidth = 5; ctx.beginPath(); ctx.moveTo(SX(sx0), SY(sy)); ctx.lineTo(SX(sx1), SY(sy)); ctx.stroke();
+    ctx.strokeStyle = COL.ink; ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(SX(sx0), SY(sy) - 5); ctx.lineTo(SX(sx0), SY(sy)); ctx.lineTo(SX(sx1), SY(sy)); ctx.lineTo(SX(sx1), SY(sy) - 5); ctx.stroke();
+    drawRich(ctx, `5${NBSP}cm`, SX((sx0 + sx1) / 2), SY(sy) - fs * 0.6, { size: fs * 0.8, color: COL.ink, align: 'center', halo: true });
+  }
+  ctx.restore();
+  ctx.strokeStyle = COL.line2; ctx.lineWidth = 1; ctx.strokeRect(tx - 0.5, ty - 0.5, tw + 1, th + 1);
+
+  // arvot ylhäällä
+  if (val) {
+    let t;
+    if (S.scene === 'refl') t = g.S ? `{λ} = ${fmt(S.lam, 1)}${NBSP}cm` : `tulokulma {α} = ${fmt(g.phi * 180 / Math.PI, 0)}°,   heijastuskulma {β} = ${fmt(g.phi * 180 / Math.PI, 0)}°,   {λ} = ${fmt(S.lam, 1)}${NBSP}cm`;
+    else t = S.obst === 'slit' ? `raon leveys {d} = ${fmt(S.d, 1)}${NBSP}cm,   {λ} = ${fmt(S.lam, 1)}${NBSP}cm,   {d}/{λ} = ${fmt(S.d / S.lam, 1)}` : `{λ} = ${fmt(S.lam, 1)}${NBSP}cm`;
+    const ef = fs * 0.85, w = drawRich(ctx, t, 0, 0, { size: ef, measure: true }), sz = w > W - 28 ? ef * (W - 28) / w : ef;
+    drawRich(ctx, t, tx, 12 + sz * 0.6, { size: sz, color: COL.ink2, halo: true });
+  }
+}
+
+/* =====================================================================
+   Käyttöliittymä
+   ===================================================================== */
+const $ = (id) => document.getElementById(id);
+const playBtn = $('play'), hint = $('hint');
+const ICON_PLAY = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.6v10.8l9-5.4z" fill="currentColor"/></svg>';
+const ICON_PAUSE = '<svg viewBox="0 0 16 16" aria-hidden="true"><rect x="3.5" y="2.6" width="3.2" height="10.8" rx=".8" fill="currentColor"/><rect x="9.3" y="2.6" width="3.2" height="10.8" rx=".8" fill="currentColor"/></svg>';
+function paintPlay() { playBtn.innerHTML = S.running ? ICON_PAUSE + 'Tauko' : ICON_PLAY + 'Käynnistä'; }
+playBtn.addEventListener('click', () => { S.running = !S.running; paintPlay(); });
+$('reset').addEventListener('click', () => { clearWater(); S.running = false; paintPlay(); });
+const HINTS = {
+  plane: 'Säde on kohtisuorassa aaltorintamaa vastaan. Kulmat mitataan seinän normaalista.',
+  point: 'Heijastuneet aallot etenevät kuin ne tulisivat seinän takana olevasta kuvalähteestä.',
+  slit: 'Vertaa raon leveyttä aallonpituuteen.',
+  edge: 'Aalto taipuu esteen reunan taakse varjon puolelle.',
+};
+function paint() {
+  const refl = S.scene === 'refl';
+  for (const [id, key, v] of [['scene', 'data-s', S.scene], ['src', 'data-v', S.src], ['obst', 'data-v', S.obst]]) {
+    for (const b of document.querySelectorAll(`#${id} button`)) b.setAttribute('aria-pressed', String(b.getAttribute(key) === v));
+  }
+  $('g-refl').hidden = !refl; $('g-diff').hidden = refl;
+  $('c-alpha').hidden = S.src !== 'plane'; $('c-d').hidden = S.obst !== 'slit';
+  $('k-rays').hidden = !refl; $('k-shadow').hidden = refl;
+  hint.textContent = HINTS[refl ? S.src : S.obst];
+}
+/** Uusi tilanne: allas tyynnytetään, ajo jatkuu, jos se oli käynnissä. */
+function setup(change) { Object.assign(S, change); rasterize(); clearWater(); paint(); }
+for (const b of document.querySelectorAll('#scene button')) b.addEventListener('click', () => setup({ scene: b.dataset.s }));
+for (const b of document.querySelectorAll('#src button')) b.addEventListener('click', () => setup({ src: b.dataset.v }));
+for (const b of document.querySelectorAll('#obst button')) b.addEventListener('click', () => setup({ obst: b.dataset.v }));
+// liukusäätimet muuttavat tilannetta kesken ajon: vanhat aallot jatkavat matkaansa
+bindRange('alpha', (x) => `${fmt(x, 0)}°`, (x) => { S.alpha = x; rasterize(); });
+bindRange('d', (x) => `${fmt(x, 1)}${NBSP}cm`, (x) => { S.d = x; rasterize(); });
+bindRange('lam', (x) => `${fmt(x, 1)}${NBSP}cm`, (x) => { S.lam = x; });
+const pulsesEl = $('pulses');
+S.pulses = pulsesEl.checked; pulsesEl.addEventListener('change', () => { S.pulses = pulsesEl.checked; S.n0 = S.n; });
+for (const [id, key] of [['showRays', 'rays'], ['showShadow', 'shadow'], ['showVal', 'val']]) {
+  const el = $(id);
+  S.show[key] = el.checked;
+  el.addEventListener('change', () => { S.show[key] = el.checked; });
+}
+/* ?tilanne=heijastuminen | diffraktio, ?lahde=suora | piste, ?este=rako | reuna valitsevat aloitustilanteen. */
+(() => {
+  const q = new URLSearchParams(location.search), get = (k) => (q.get(k) || '').toLowerCase();
+  setup({
+    scene: get('tilanne') === 'diffraktio' ? 'diff' : 'refl',
+    src: get('lahde') === 'piste' ? 'point' : 'plane',
+    obst: get('este') === 'reuna' ? 'edge' : 'slit',
+  });
+})();
+paintPlay();
+startLoop({ dt: 1 / SPS, step, draw, running: () => S.running });
+})();
+</script>
+</body>
+</html>
