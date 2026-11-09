@@ -11,13 +11,17 @@
 // Speed control: each frame adds (real frame time)·speed to the simulated time, and the particles advance in fixed
 // steps of DT = 1/60 s of it; the pressure window is the last 90 steps (1,5 s of simulated time), so "Nopeus"
 // changes only the pace, never the measured pressure.
+// A change of T or V empties the pressure window (the particles keep moving), so the reading never mixes wall hits of
+// the old and the new state; until the window is full again the readout says the measurement is settling instead of
+// showing a value. When the piston moves in, particles left outside are moved back inside (x scaled, as in the
+// ideal gas lesson), so the move itself adds no wall hits.
 // The readout is DOM text; the canvas only draws. p5.js 1.9 instance mode, 600×400. Exposes window.simState.
 new p5((p) => {
   const N = 80, R = 4, DT = 1 / 60, V_REF = 120;              // particles, radius, fixed time step, speed at 300 K (px/s)
   const BOX = { x: 40, y: 80, h: 200 };                       // left wall and height; effective width = PX px per dm³
   const PX = 192;                                             // effective width in px per dm³ (= 200 - 2R at 1,00 dm³)
   const WINDOW = 90;                                          // frames in the pressure window (1,5 s)
-  let sT, sV, lT, lV, sSp, readout, parts = [], hist = [], lastT = null, acc = 0;
+  let sT, sV, lT, lV, sSp, readout, parts = [], hist = [], lastT = null, lastV = null, acc = 0;
 
   const slider = (parent, min, max, val, step) => {
     const label = p.createElement('label').parent(parent);
@@ -66,19 +70,24 @@ new p5((p) => {
   p.draw = () => {
     const T = sT.value(), V = sV.value(), v = speed(T);
     const W = PX * V + 2 * R, right = BOX.x + W, top = BOX.y, bottom = BOX.y + BOX.h;
+    if (lastT !== null && (T !== lastT || V !== lastV)) {    // a new state starts a new pressure window
+      if (V < lastV) for (const q of parts) if (q.x > right - R) q.x = BOX.x + R + (q.x - BOX.x - R) * V / lastV;
+      hist = [];
+    }
+    lastT = T; lastV = V;
     for (acc += Math.min(p.deltaTime, 100) / 1000 * Number(sSp.value()); acc >= DT; acc -= DT) step(T, V);   // simulated time = real time · speed
     const t = hist.length * DT;
     const sx = hist.reduce((a, h) => a + h[0], 0), sy = hist.reduce((a, h) => a + h[1], 0);
     const Wc = W - 2 * R, Hc = BOX.h - 2 * R;                              // effective box: where the particle centres can be
-    const pMeas = (sx / (t * 2 * Hc) + sy / (t * 2 * Wc)) / 2;             // momentum per time per wall length, averaged over both axes
+    const pMeas = t > 0 ? (sx / (t * 2 * Hc) + sy / (t * 2 * Wc)) / 2 : 0;   // 0 only in a frame without a step             // momentum per time per wall length, averaged over both axes
     const pRef = N * V_REF * V_REF / (2 * PX * Hc);                        // same model at 300 K and 1,00 dm³ (effective width PX)
     const pRel = 100 * pMeas / pRef, pTheory = 100 * (T / 300) / V;
-    const theta = T - 273.15;
+    const theta = T - 273.15, settling = hist.length < WINDOW;               // a fresh window: not a full 1,5 s yet
     lT.html(__(`lampotila`, {t: T})); lV.html(__(`tilavuus`, {v: tx(V, 1)}));
     readout.html(`<strong>$T = ${T}\\,\\text{K} = ${tx(theta, 0)}\\,{}^\\circ\\text{C}$</strong>` +
                  __(`hiukkasten_keskinopeus`, {math: tx(Math.sqrt(T / 300), 2)}) +
-                 __(`paine_suhteellinen_ja`, {prel: tx(pRel, 0), ptheory: tx(pTheory, 0)}));
-    window.simState = { T, theta, V, vRel: v / V_REF, pRel, pTheory, N, speedCheck: Math.hypot(parts[0].vx, parts[0].vy) * v };
+                 __(settling ? `paine_tasaantuu` : `paine_suhteellinen_ja`, {prel: tx(pRel, 0), ptheory: tx(pTheory, 0)}));
+    window.simState = { T, theta, V, vRel: v / V_REF, pRel, pTheory, settling, N, speedCheck: Math.hypot(parts[0].vx, parts[0].vy) * v };
 
     const k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));
     const ts = (n) => Math.round(n * k);

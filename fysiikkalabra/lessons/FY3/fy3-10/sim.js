@@ -15,6 +15,9 @@
 // last 0,05 s (length ∝ speed), a flash = one wall hit (more N, higher T or smaller V → more flashes = more pressure).
 // The gauge and the bar share one scale; the gauge needle and the measured bar have the colour of the wall flashes.
 // The model value (N/100)(T/300)(100/V) is not shown: the experiments ask the student to find the relation from measurements.
+// A change of N, T or V empties the moving average (the particles keep moving), so the reading never mixes wall hits
+// of the old and the new state; for the first SETTLE seconds of a new average the readout says the measurement is
+// settling instead of showing a value (few hits so far, so a value would jump), and the bar keeps its axis.
 // p5.js 1.9 instance mode, 600×400 canvas inside #sim-root. Exposes window.simState every frame, and as test hooks
 // window.simAdvance(s) (runs s simulated seconds at once) and window.simRestart() (the state right after loading).
 // Speed control: each frame advances the simulated time by (real frame time)·speed; the pressure average runs over
@@ -29,7 +32,7 @@ new p5((p) => {
   const GA = { x: 48, y: 31, r: 26 };                            // pressure gauge on the top wall
   const MEAS = [205, 45, 125], FLASH = [255, 90, 175];          // measured pressure, wall hit
   const SLOW = [60, 130, 255], MID = [245, 215, 80], FAST = [255, 120, 30], VMAX = 420;   // speed scale 0…420 px/s
-  const TAIL = 0.05, HN = 256, FL = 30;                          // trail (s), stored hits, flash life (steps = 0,125 s)
+  const TAIL = 0.05, HN = 256, FL = 30, SETTLE = 0.5;            // trail (s), stored hits, flash life (steps = 0,125 s), settling (s)
   const mix = (a, b, f) => a.map((x, i) => Math.round(x + (b[i] - x) * f));
   const PAL = Array.from({ length: 32 }, (_, i) => i < 16 ? mix(SLOW, MID, i / 15.5) : mix(MID, FAST, (i - 16) / 15));
   const hw = new Int8Array(HN), hs = new Float32Array(HN), hv = new Float32Array(HN), hn = new Int32Array(HN);   // hit ring
@@ -62,9 +65,10 @@ new p5((p) => {
     for (const q of parts) { q.vx *= fx; q.vy *= fy; }
   };
   const clearAvg = () => { bins = []; hbins = []; cur = 0; hcur = 0; curSteps = 0; };
-  // apply the sliders: wall position, temperature, particle number
+  // apply the sliders: wall position, temperature, particle number; a new state starts a new average
   const sync = () => {
     const n = Number(sN.value()), t = Number(sT.value()), lx = LXMAX * Number(sV.value()) / 100;
+    if (n !== N || t !== T || lx !== Lx) clearAvg();
     if (lx < Lx) for (const q of parts) if (q.x > lx) q.x *= lx / Lx;   // wall moved in: particles left outside go back in
     Lx = lx;
     if (t !== T) { const f = Math.sqrt(t / T); for (const q of parts) { q.vx *= f; q.vy *= f; } T = t; }   // v ∝ √T
@@ -97,7 +101,7 @@ new p5((p) => {
     const pPredicted = (N / 100) * (T / 300) / Vrel, vrms = Math.sqrt(parts.reduce((a, q) => a + q.vx * q.vx + q.vy * q.vy, 0) / N);
     const sp = parts.map((q) => Math.hypot(q.vx, q.vy)).sort((a, b) => a - b), vmed = (sp[(N - 1) >> 1] + sp[N >> 1]) / 2;
     const hitRate = tAvg > 0 ? (hbins.reduce((a, b) => a + b, 0) + hcur) / tAvg : 0;   // wall hits per second = flashes
-    window.simState = { N, T, Vrel, pMeasured, pPredicted, ratio: pMeasured / pPredicted, tAvg, vrms, vmed, hitRate, speed };
+    window.simState = { N, T, Vrel, pMeasured, pPredicted, ratio: pMeasured / pPredicted, tAvg, settling: tAvg < SETTLE, vrms, vmed, hitRate, speed };
     return window.simState;
   };
 
@@ -132,7 +136,8 @@ new p5((p) => {
     sync(); advance(Math.min(p.deltaTime, 100) / 1000 * speed);   // simulated time = real time · speed
     const { Vrel, pMeasured: pm, tAvg, hitRate } = update();   // the model value pPredicted stays in simState, not on screen
     lN.html(__(`hiukkasmaara`, {n: N})); lT.html(__(`lampotila`, {t: T})); lV.html(__(`tilavuus`, {vrel: tx(Vrel * 100, 0)}));
-    readout.html(__(`mitattu_paine_keskiarvo`, {pm: tx(pm, 2), tavg: tx(tAvg, 1)}) +
+    const settling = tAvg < SETTLE;                              // a fresh average: too few hits for a value yet
+    readout.html(__(settling ? `mittaus_tasaantuu` : `mitattu_paine_keskiarvo`, {pm: tx(pm, 2), tavg: tx(tAvg, 1)}) +
       __(`osumia_seiniin_sekunnissa`, {hitrate: tx(hitRate, 0)}));
 
     const k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));   // keep canvas text legible when scaled
@@ -151,7 +156,7 @@ new p5((p) => {
     };
     p.background(250);
     const v = pm;                                                // one scale (1, 2 or 5 · 10ⁿ) for the gauge and the bars
-    if (v * 1.05 > top || v < 0.4 * top) [top, tStep] = scale(v);
+    if (!settling && (v * 1.05 > top || v < 0.4 * top)) [top, tStep] = scale(v);
     const nT = Math.round(top / tStep), yT = 8 + ts(14);
 
     // the cylinder: dark gas region, air behind the piston, steel walls, piston plate, rod and handle
@@ -232,7 +237,7 @@ new p5((p) => {
     for (let i = 0; i < 1; i++) {
       const bx = BAR.x[i] - BAR.w / 2, by = Y(vals[i]), c = cols[i];
       rect(bx, by, BAR.w, BAR.y0 - by, grad(bx, 0, bx + BAR.w, 0, [[0, rgb(c, 0.85)], [0.35, rgb(mix(c, [255, 255, 255], 0.35))], [1, rgb(mix(c, [0, 0, 0], 0.25))]]));
-      p.fill(40); p.textSize(ts(13)); lab(`$${tx(vals[i], 2)}$`, BAR.x[i], by - 6, p.CENTER);
+      p.fill(40); p.textSize(ts(13)); if (!settling) lab(`$${tx(vals[i], 2)}$`, BAR.x[i], by - 6, p.CENTER);
       p.textSize(ts(12)); lab(names[i], BAR.x[i], BAR.y0 + 4 + ts(12), p.CENTER);
     }
     window.simState.labels = labels;

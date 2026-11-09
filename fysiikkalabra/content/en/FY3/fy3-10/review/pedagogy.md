@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: f1593e0cfff67369
+CONTENT-HASH: 72918ee2d2e88fc2
 
 ## Blocking
 - none
@@ -13,6 +13,7 @@ CONTENT-HASH: f1593e0cfff67369
 - Simulation English text (fy3-10-sim-390.png): decimal commas ("1,17", "1,5", "0,0 s") and "Speed: normal (0.5x)" beside a "mean over 0,0 s" reading that confuses before the first run. Fix: English decimal points; show "–" until a mean exists.
 
 ## Checked
+- delta review 2026-11-10 (measurement window reset, teacher's FY3 brief): slider change of N, T or V now empties the average, 0,5 s settling note replaces the value, bar keeps axis and hides its number; Nollaa mittaus still works (tAvg 0,15 settling); howto and 'paina Nollaa mittaus ja odota ~2 s' remain valid and the note tells the student why to wait; measured/predicted stays 0,93-1,06 after settling so N, T, V experiments can still confirm or refute predictions; no value is shown that could be misread. No blocking findings.
 - delta review 2026-11-07 round 2 (follow-up consistency edits): the 'Etsi virhe' feedback on the pressure and volume options now says the units must fit R's unit (Pa with m³, kPa with l, 1 kPa·l = 1 J) instead of calling the pascal the only correct unit; each still ends 'the error is elsewhere' without disclosing it, so it repairs the misconception and matches the lesson's new 1 kPa·l = 1 J text.
 - delta review 2026-11-07 (teacher's proofread replacement texts): the symbol list of $pV = nRT$ and the new unit paragraph (R in J/(mol·K), so pV in joules; Pa·m³ usual, kPa·l also gives J; be consistent) are clear and agree with the worked example and the Sekoitetut yksiköt misconception; inquiry and exit-ticket edits are unit typesetting only. en: the translation keeps the meaning.
 - Round 1 blocking resolved: check-2 solution now uses p ∝ NT/V and N ∝ n; no undefined k.
