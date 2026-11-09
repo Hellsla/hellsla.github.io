@@ -1,0 +1,26 @@
+{
+  "id": "mikroskooppi",
+  "order": 10,
+  "status": "idea",
+  "title": "Mikroskoopilla näkymättömään maailmaan",
+  "audience": "alakoulu",
+  "topic": "elama",
+  "minutes": 30,
+  "equipment": [
+    "mikroskooppi"
+  ],
+  "short": "Osallistujat tutkivat mikroskoopilla tai suurennuslasilla arkisia näytteitä: suolaa, sokeria, kangasta ja kasvin lehteä.",
+  "idea": "Ryhmät arvaavat ensin, miltä tuttu asia näyttää suurennettuna, ja piirtävät arvauksensa. Sitten he katsovat näytteen mikroskoopilla tai suurennuslasilla ja piirtävät, mitä näkivät. Työpaja harjoittaa tarkkaa havainnointia ja havainnon ja oletuksen erottamista.",
+  "open": [
+    "Millaisia mikroskooppeja tai puhelimeen kiinnitettäviä suurentimia on käytettävissä.",
+    "Näytteet, jotka näkyvät hyvin pienellä suurennuksella.",
+    "Elävien eliöiden käyttö: jos niitä käytetään, ne palautetaan luontoon."
+  ],
+  "safety": [
+    "Lasiset objektilasit voivat rikkoutua. Käytä muovisia, jos mahdollista.",
+    "Mikroskoopin lampun lähellä ei kosketa kuumaan osaan.",
+    "Näytteitä ei maisteta.",
+    "Peilillä valaistavaa mikroskooppia ei koskaan suunnata aurinkoon."
+  ],
+  "lessons": []
+}

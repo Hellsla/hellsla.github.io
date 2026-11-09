@@ -1,0 +1,31 @@
+{
+  "id": "hidas-pallorata",
+  "order": 7,
+  "status": "idea",
+  "title": "Rakenna mahdollisimman hidas pallorata",
+  "audience": "alakoulu",
+  "topic": "liike",
+  "minutes": 30,
+  "equipment": [
+    "arki"
+  ],
+  "short": "Osallistujat rakentavat pahvista ja teipistä radan, jolla kuula kulkee alas mahdollisimman hitaasti.",
+  "idea": "Tavallisesti radasta yritetään tehdä nopea, mutta tässä tavoite on päinvastainen. Ryhmät rakentavat seinälle tai pöydälle radan, jolla kuula tai marmorikuula vierii mahdollisimman kauan. Ajanotto tehdään puhelimen sekuntikellolla. Haaste herättää keskustelun kitkasta, kaltevuudesta ja energiasta. Ahjo 2:n aloitushaaste on samaa ideaa lukiolaisille, ja sitä voi käyttää työpajan pohjana.",
+  "open": [
+    "Välinelista ja radan tukirakenne, joka ei vaadi seinään kiinnittämistä.",
+    "Alakoululaisille sopiva selitys siitä, miksi kuula hidastuu mutkissa.",
+    "Reilut säännöt: aloituskorkeus ja kuulan koko samat kaikille."
+  ],
+  "safety": [
+    "Pienet kuulat eivät sovi alle kolmevuotiaille, ja ne kerätään pois lattialta, jotta kukaan ei liukastu.",
+    "Sakset ja mattoveitsi vain tutorilla."
+  ],
+  "link": {
+    "title": "Ahjo 2: aloitushaaste",
+    "href": "ahjo-2.html#aloitushaaste"
+  },
+  "lessons": [
+    "fy4-6",
+    "fy4-8"
+  ]
+}

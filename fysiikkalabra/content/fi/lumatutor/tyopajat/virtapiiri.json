@@ -1,0 +1,169 @@
+{
+  "id": "virtapiiri",
+  "order": 1,
+  "status": "ready",
+  "title": "Sähköinen ihme – rakenna virtapiiri",
+  "short": "Osallistujat saavat lampun syttymään, tutkivat, mitkä aineet johtavat sähköä, ja rakentavat oman kytkimen.",
+  "audience": "alakoulu",
+  "topic": "sahko",
+  "minutes": 30,
+  "group": "2–3 osallistujaa ryhmässä, enintään noin 16 osallistujaa kahta tutoria kohden",
+  "equipment": [
+    "paristot",
+    "arki"
+  ],
+  "goals": [
+    "Osallistuja huomaa, että lamppu syttyy vain, kun virtapiiri on suljettu.",
+    "Osallistuja osaa testata, johtaako jokin esine sähköä.",
+    "Osallistuja ymmärtää, että kytkin avaa ja sulkee virtapiirin."
+  ],
+  "materials": [
+    "Jokaiselle ryhmälle paristokotelo, jossa on kaksi AA-paristoa (yhteensä $3\\,\\text{V}$).",
+    "Jokaiselle ryhmälle pienoislamppu lampunpitimessä. Lampun nimellisjännitteen pitää olla vähintään pariston jännite, esimerkiksi $3{,}5\\,\\text{V}$.",
+    "Jokaiselle ryhmälle kolme hauenleukajohtoa.",
+    "Testattavia esineitä: kolikko, avain, paperiliitin, alumiinifoliota, kumi, puutikku, muovilusikka, paperia ja lyijykynä, jonka molemmat päät on teroitettu.",
+    "Kytkimeen: pahvinpala, kaksi kiinnitysnastaa ja paperiliitin.",
+    "Lisähaasteeseen toinen samanlainen lamppu lampunpitimessä jokaiselle ryhmälle.",
+    "Varalle: ylimääräisiä paristoja ja yksi varalamppu jokaista kolmea ryhmää kohden.",
+    "Tulostettu osallistujan tutkijakortti jokaiselle ryhmälle ja kyniä."
+  ],
+  "prep": [
+    "Kokeile jokainen paristo, lamppu ja johto etukäteen. Rikkinäinen lamppu on työpajan yleisin ongelma.",
+    "Lajittele välineet ryhmäkohtaisiin rasioihin, jotta jakaminen on nopeaa.",
+    "Rakenna yksi valmis, toimiva virtapiiri näytettäväksi aloituksessa ja peitä se liinalla.",
+    "Tulosta tutkijakortit."
+  ],
+  "safety": [
+    "Käytä vain AA-paristoja kotelossa. Älä koskaan käytä verkkovirtaa, ladattavia litiumakkuja tai nappiparistoja. Nappiparisto on hengenvaarallinen, jos lapsi nielee sen.",
+    "Kerro osallistujille: pariston navoja ei saa yhdistää johdolla suoraan toisiinsa ilman lamppua. Tämä on oikosulku, jossa johto ja paristo voivat kuumentua.",
+    "Jos paristo kuumenee, vuotaa tai on vaurioitunut, poista se heti käytöstä.",
+    "Kerro, että sama koe ei ole turvallinen pistorasiassa: kotien sähköverkon jännite on niin suuri, että se voi tappaa.",
+    "Kiinnitysnastat ja lyijykynän terävät päät: tutor jakaa ne ja kerää ne pois."
+  ],
+  "steps": [
+    {
+      "time": "0–3",
+      "title": "Koukku",
+      "do": "Paljasta valmis virtapiiri ja sytytä lamppu. Irrota sitten yksi johto, niin lamppu sammuu. Kysy, mitä tapahtui.",
+      "say": "Tässä on paristo, lamppu ja johtoja. Kun irrotan tämän, lamppu sammuu. Miksi? Teidän tehtävänne on selvittää, mitä lamppu tarvitsee syttyäkseen."
+    },
+    {
+      "time": "3–9",
+      "title": "Haaste 1: sytytä lamppu",
+      "do": "Jaa ryhmille paristokotelo, lamppu ja kaksi johtoa. Anna ryhmien kokeilla itse. Kun lamppu syttyy, pyydä piirtämään oma kytkentä tutkijakorttiin.",
+      "say": "Saatteko lampun syttymään? Kun se syttyy, sormella näyttäen: mitä reittiä sähkö kulkee?"
+    },
+    {
+      "time": "9–18",
+      "title": "Haaste 2: mikä johtaa sähköä?",
+      "do": "Lisää piiriin kolmas johto, niin että piirissä on rako. Osallistujat ennustavat ensin jokaisesta esineestä, syttyykö lamppu, ja testaavat sitten asettamalla esineen rakoon.",
+      "say": "Ennen kuin kokeilette: merkitkää korttiin, syttyykö lamppu, kun esine on raossa. Sitten testatkaa."
+    },
+    {
+      "time": "18–25",
+      "title": "Haaste 3: rakenna kytkin",
+      "do": "Ryhmät rakentavat pahvista, kahdesta nastasta ja paperiliittimestä kytkimen, jolla lampun voi sytyttää ja sammuttaa.",
+      "say": "Nyt tiedätte, mikä johtaa sähköä. Miten saisitte lampun syttymään ja sammumaan irrottamatta johtoja?"
+    },
+    {
+      "time": "25–30",
+      "title": "Lopetus",
+      "do": "Kokoa ryhmät yhteen. Pyydä jokaista ryhmää kertomaan yksi asia, jonka he huomasivat. Kerää välineet rasioihin.",
+      "say": "Mikä yhdisti esineitä, jotka saivat lampun syttymään? Missä kotona on kytkin, joka toimii samalla tavalla?"
+    }
+  ],
+  "background": [
+    "Virtapiiri on suljettu reitti, jota pitkin sähkövirta kulkee pariston navalta toiselle. Paristo antaa sähkövaraukselle energiaa, ja lampussa tämä energia muuttuu valoksi ja lämmöksi. Jos reitti katkeaa missä tahansa kohdassa, virta lakkaa kulkemasta koko piirissä ja lamppu sammuu.",
+    "Sähkövirta on sähkövarausten liikettä. Metalleissa liikkuvat varaukset ovat elektroneja, jotka pääsevät liikkumaan vapaasti. Siksi metallit johtavat sähköä hyvin. Muovissa, kumissa, puussa ja paperissa ei ole vapaasti liikkuvia varauksia, joten ne ovat eristeitä. Lyijykynän grafiitti johtaa sähköä, mutta niin huonosti, että lamppu ei välttämättä syty. Se on hyvä keskustelun aihe: aineet eivät jakaudu jyrkästi kahteen ryhmään.",
+    "Yleinen virhekäsitys on, että lamppu kuluttaa virtaa, jolloin lampun jälkeen virtaa olisi vähemmän. Näin ei ole: yksinkertaisessa virtapiirissä sama virta kulkee piirin jokaisen kohdan kautta. Lamppu kuluttaa energiaa, ei virtaa. Toinen yleinen käsitys on, että yksi johto riittää. Haaste 1 näyttää, että tarvitaan reitti molemmille navoille.",
+    "Jos lisäät piiriin peräkkäin toisen samanlaisen lampun, molemmat palavat himmeämmin kuin yksi lamppu yksinään, koska piirin kokonaisresistanssi kasvaa ja virta pienenee. Ruukkilabrassa tätä tutkitaan luvussa Vastusten sarja- ja rinnankytkennät.",
+    "Kuvassa on virtapiiri piirrosmerkein. Sovitun käytännön mukaan virran suunta merkitään pariston plusnavalta miinusnavalle. Elektronit liikkuvat johdoissa päinvastaiseen suuntaan."
+  ],
+  "figures": [
+    "virtapiiri"
+  ],
+  "questions": [
+    "Mitä luulet, mitä lamppu tarvitsee, jotta se syttyy?",
+    "Mikä yhdistää esineitä, jotka saivat lampun syttymään?",
+    "Mitä luulet tapahtuvan, jos piiriin lisätään toinen lamppu?"
+  ],
+  "problems": [
+    {
+      "p": "Lamppu ei syty, vaikka kytkentä näyttää oikealta.",
+      "f": "Tarkista lamppu varapiirissä ja kiristä se pitimeen. Tarkista, että paristot ovat kotelossa oikein päin ja että hauenleuat koskettavat metallia."
+    },
+    {
+      "p": "Ryhmä yhdistää pariston navat suoraan johdolla.",
+      "f": "Pysäytä kokeilu rauhallisesti ja irrota johto. Kerro, miksi oikosulku kuumentaa johtoa, ja pyydä ryhmää löytämään piiriin lampun paikka."
+    },
+    {
+      "p": "Lyijykynä ei sytytä lamppua, vaikka joku sanoo sen johtavan.",
+      "f": "Molemmat ovat oikeassa: grafiitti johtaa huonosti, ja lamppu voi hehkua himmeästi. Kysy, miten voisimme tutkia, johtaako se vähän. Voit näyttää kokeen LEDillä, jos sinulla on LED-moduuli, jossa on oma etuvastus."
+    },
+    {
+      "p": "Ryhmä on valmis kaikilla haasteilla jo muutamassa minuutissa.",
+      "f": "Anna lisähaaste: lisää toinen lamppu niin, että molemmat palavat lähes yhtä kirkkaasti kuin yksi lamppu yksinään. Ratkaisu on rinnankytkentä."
+    }
+  ],
+  "variations": [
+    {
+      "title": "Helpompi",
+      "text": "Jätä haaste 3 pois ja käytä aikaa haasteeseen 2. Anna valmiiksi kuva kytkennästä, jos ryhmä ei pääse alkuun."
+    },
+    {
+      "title": "Haastavampi",
+      "text": "Kaksi lamppua sarjaan ja rinnan: kumpi kytkentä saa lamput palamaan kirkkaammin? Ryhmä piirtää molemmat kytkennät piirrosmerkein."
+    },
+    {
+      "title": "Ilman kirjoittamista",
+      "text": "Pienimmät tai suomea vasta opettelevat osallistujat lajittelevat esineet kahteen rasiaan, johtaa ja ei johda, kirjoittamisen sijaan."
+    },
+    {
+      "title": "Yhteys Ahjoon",
+      "text": "Yläkoululaisille voi jatkaa Ahjon Arduino-ohjeen LED-kytkennällä, jossa sama suljettu piiri ohjataan ohjelmalla."
+    }
+  ],
+  "closing": [
+    "Kysy jokaiselta ryhmältä yksi havainto. Kirjaa vastaukset taululle kahteen sarakkeeseen: johtaa ja ei johda.",
+    "Kokoa yhteen yhdellä lauseella: lamppu syttyy vain, kun sähköllä on suljettu reitti paristolta lampun kautta takaisin paristolle.",
+    "Kysy, missä kotona on kytkin. Muistuta, että kodin sähköverkko on vaarallinen ja sitä ei saa tutkia itse."
+  ],
+  "self": [
+    "Saivatko kaikki ryhmät lampun syttymään omin käsin, vai teinkö sen jonkun puolesta?",
+    "Ennustivatko osallistujat ennen testaamista?",
+    "Missä vaiheessa aikataulu venyi, ja miksi?",
+    "Mitä vastasin kysymykseen, johon en tiennyt vastausta?"
+  ],
+  "participant": {
+    "title": "Tutkijakortti: sähköinen ihme",
+    "blocks": [
+      "# Tutkijakortti: sähköinen ihme",
+      "## Haaste 1: sytytä lamppu",
+      ". Sinulla on paristo, lamppu ja kaksi johtoa. Saatko lampun syttymään?",
+      "?? Piirrä tähän, miten kytkit johdot.",
+      "## Haaste 2: mikä johtaa sähköä?",
+      ". Merkitse ensin ennustus. Testaa sitten laittamalla esine piirin rakoon.",
+      "= Esine | Ennustan: syttyykö? | Testasin: syttyikö?",
+      "- kolikko",
+      "- avain",
+      "- paperiliitin",
+      "- alumiinifolio",
+      "- kumi",
+      "- puutikku",
+      "- muovilusikka",
+      "- paperi",
+      "- lyijykynän kärki",
+      "## Haaste 3: rakenna kytkin",
+      ". Rakenna pahvista, nastoista ja paperiliittimestä kytkin. Saatko lampun syttymään ja sammumaan irrottamatta johtoja?",
+      "? Miksi kytkin toimii?",
+      "## Turvallisuus",
+      ". Älä yhdistä pariston napoja suoraan toisiinsa. Älä koskaan kokeile pistorasialla."
+    ]
+  },
+  "sources": [],
+  "lessons": [
+    "fy6-1",
+    "fy6-4",
+    "fy6-15"
+  ]
+}

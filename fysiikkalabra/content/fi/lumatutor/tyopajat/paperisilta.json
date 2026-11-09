@@ -1,0 +1,163 @@
+{
+  "id": "paperisilta",
+  "order": 2,
+  "status": "ready",
+  "title": "Kenen paperisilta kestää eniten?",
+  "short": "Osallistujat suunnittelevat, rakentavat, testaavat ja parantavat paperisillan, joka kantaa mahdollisimman monta kolikkoa.",
+  "audience": "alakoulu",
+  "topic": "rakenteet",
+  "minutes": 30,
+  "group": "2–3 osallistujaa ryhmässä",
+  "equipment": [
+    "arki"
+  ],
+  "goals": [
+    "Osallistuja huomaa, että paperin muoto vaikuttaa siihen, kuinka paljon se kantaa.",
+    "Osallistuja harjoittelee suunnittelun kiertoa: suunnittele, rakenna, testaa, paranna.",
+    "Osallistuja osaa vertailla rakenteita reilusti, kun testi tehdään joka kerta samalla tavalla."
+  ],
+  "materials": [
+    "Jokaiselle ryhmälle neljä A4-kopiopaperia.",
+    "Jokaiselle ryhmälle noin $30\\,\\text{cm}$ maalarinteippiä.",
+    "Jokaiselle ryhmälle kaksi samankorkeaa kirjapinoa tai laatikkoa, joiden väli on $20\\,\\text{cm}$.",
+    "Jokaiselle ryhmälle kevyt pahvimuki tai pieni rasia kuorman astiaksi.",
+    "Kuormaksi samanlaisia kolikoita tai metallisia aluslevyjä, jokaiselle ryhmälle noin 50. Jos ne loppuvat kesken, tulokseksi kirjataan ”yli 50”.",
+    "Viivain, lyhyt narunpätkä välin mittaamiseen ja tulostettu insinöörikortti jokaiselle ryhmälle."
+  ],
+  "prep": [
+    "Mittaa jokaiselle ryhmälle valmiiksi $20\\,\\text{cm}$ väli ja merkitse tukien paikat teipillä pöytään.",
+    "Kokeile itse, montako kolikkoa litteä paperi kantaa, ja rakenna yksi taitettu malli. Älä näytä mallia osallistujille ennen kuin he ovat kokeilleet itse.",
+    "Laske kolikot valmiiksi ryhmille ja tulosta kortit.",
+    "Kirjoita taululle säännöt: silta lepää vain tukien päällä, ei teippiä pöytään, kuorma laitetaan sillan keskelle."
+  ],
+  "safety": [
+    "Kolikot ja aluslevyt ovat pieniä esineitä. Ne eivät sovi alle kolmevuotiaille, ja pienten sisarusten mukanaolosta pitää sopia etukäteen.",
+    "Pidä kirjapinot matalina, ettei mikään putoa jaloille.",
+    "Saksia ei tarvita. Jos niitä käytetään, jaa pyöreäkärkiset sakset ja kerää ne pois testin ajaksi.",
+    "Osallistujat pesevät kädet kolikoiden käsittelyn jälkeen, jos tapahtumassa syödään."
+  ],
+  "steps": [
+    {
+      "time": "0–3",
+      "title": "Koukku",
+      "do": "Aseta litteä A4-paperi tukien päälle ja laita sen keskelle yksi kolikko mukissa. Paperi taipuu ja muki putoaa.",
+      "say": "Tämä paperi ei kanna edes yhtä kolikkoa. Väitän, että samasta paperista voi tehdä sillan, joka kantaa kymmeniä kolikoita. Mitä pitäisi tehdä?"
+    },
+    {
+      "time": "3–6",
+      "title": "Ennusta ja suunnittele",
+      "do": "Kerro säännöt ja anna jokaiselle ryhmälle paperit ja teippi. Ryhmä piirtää korttiin ensimmäisen idean ja arvaa, montako kolikkoa se kantaa.",
+      "say": "Saatte taittaa, rullata ja teipata paperia, mutta ette lisätä mitään muuta. Piirtäkää ensin idea ja arvatkaa, montako kolikkoa se kantaa."
+    },
+    {
+      "time": "6–13",
+      "title": "Rakenna ja testaa",
+      "do": "Ryhmät rakentavat ensimmäisen sillan ja testaavat sen lisäämällä kolikoita yksi kerrallaan. Kierrä ryhmien luona ja kysy, mikä kohta pettää ensin.",
+      "say": "Mikä kohta pettää ensin? Taipuuko silta vai liukuuko se pois tuelta?"
+    },
+    {
+      "time": "13–21",
+      "title": "Paranna",
+      "do": "Ryhmät muuttavat siltaa testin perusteella ja rakentavat uuden version jäljellä olevista papereista. Kehota muuttamaan yksi asia kerrallaan.",
+      "say": "Mikä yksi muutos voisi auttaa eniten? Kokeilkaa se ja katsokaa, kantaako silta enemmän."
+    },
+    {
+      "time": "21–26",
+      "title": "Lopullinen testi",
+      "do": "Jokainen ryhmä testaa parhaan siltansa vuorollaan muiden nähden. Laske kolikot ääneen yhdessä. Kirjaa tulokset taululle.",
+      "say": "Kaikki testataan samalla tavalla: muki keskelle ja kolikot yksi kerrallaan. Montako kolikkoa oli mukissa, kun silta petti?"
+    },
+    {
+      "time": "26–30",
+      "title": "Lopetus",
+      "do": "Vertaa siltoja: mitä yhteistä on kestävimmillä? Näytä kuva poikkileikkauksista ja kysy, missä arjessa näkyy sama idea.",
+      "say": "Kaikissa silloissa oli yhtä paljon paperia. Miksi toiset kantoivat enemmän?"
+    }
+  ],
+  "background": [
+    "Litteä paperi taipuu helposti, koska se on ohut. Kun paperi taitetaan haitariksi, kouruksi tai putkeksi, sama paperimäärä levittyy korkeammaksi rakenteeksi. Korkea rakenne vastustaa taipumista paljon paremmin kuin matala.",
+    "Taivutuksessa palkin yläpinta puristuu kokoon ja alapinta venyy. Keskellä on kohta, joka ei puristu eikä veny. Mitä kauempana materiaali on tästä keskikohdasta, sitä enemmän se vastustaa taipumista. Taivutusjäykkyys on verrannollinen poikkileikkauksen jäyhyysmomenttiin, joka suorakulmaiselle poikkileikkaukselle on $I = \\dfrac{b h^{3}}{12}$. Siinä $b$ on poikkileikkauksen leveys ja $h$ sen korkeus. Kun korkeus kaksinkertaistuu ja leveys pysyy samana, jäykkyys kasvaa kahdeksankertaiseksi. Taittaminen kaventaa paperia, joten käytännössä hyöty on pienempi, mutta silti suuri. Tutorin ei tarvitse kertoa kaavaa osallistujille, mutta se selittää, miksi taittaminen auttaa niin paljon.",
+    "Samasta syystä aaltopahvissa on aaltoileva välikerros, teräspalkit ovat I-kirjaimen muotoisia ja monissa silloissa on korkeat kannattimet. Kaari toimii toisin: se ohjaa kuorman puristukseksi kohti tukia.",
+    "Paperisilta pettää yleensä jollakin näistä tavoista: se taipuu keskeltä, taitteen seinämä lommahtaa sivulle, silta liukuu pois tuelta tai teippiliitos irtoaa. Kun osallistujat huomaavat, miten silta pettää, he osaavat parantaa juuri sitä kohtaa.",
+    "Kolikoiden määrä riippuu paperista, kolikoista ja rakentajista, joten valmista oikeaa vastausta ei ole. Vertailu on reilu vain, jos kaikki testaavat samalla välillä, samalla mukilla ja lisäävät kolikot samalla tavalla. Tämä on hyvä tilaisuus puhua siitä, miksi tutkimuksessa muuttujia pidetään vakioina."
+  ],
+  "figures": [
+    "paperisilta"
+  ],
+  "questions": [
+    "Miksi luulet, että taitettu paperi kantaa enemmän kuin litteä?",
+    "Mikä kohta sillassasi petti ensin, ja miten voisit vahvistaa juuri sitä?",
+    "Missä olet nähnyt saman muodon, joka tekee rakenteesta jäykän?"
+  ],
+  "problems": [
+    {
+      "p": "Silta liukuu pois tuelta ennen kuin se taipuu.",
+      "f": "Kysy, miten sillan päät voisivat pysyä paikoillaan ilman teippiä pöytään. Leveämpi tai taitettu pää tukien päällä auttaa."
+    },
+    {
+      "p": "Ryhmä käyttää kaiken teipin heti ensimmäiseen versioon.",
+      "f": "Jaa teippi kahdessa osassa: puolet ensimmäiseen ja puolet parannettuun versioon."
+    },
+    {
+      "p": "Kolikot lisätään eri kohtiin tai heitetään mukiin.",
+      "f": "Näytä testitapa itse ennen testejä ja pyydä, että yksi ryhmän jäsen on testaaja ja toinen laskija."
+    },
+    {
+      "p": "Ryhmä kopioi naapurin sillan.",
+      "f": "Kopioiminen on insinöörityössä sallittua, kun sen sanoo ääneen. Kysy, mitä he parantavat naapurin ideasta."
+    }
+  ],
+  "variations": [
+    {
+      "title": "Helpompi",
+      "text": "Lyhennä väli $15\\,\\text{cm}$:iin ja anna yksi taitettu malli nähtäväksi, jos ryhmä ei pääse alkuun."
+    },
+    {
+      "title": "Haastavampi",
+      "text": "Pidennä väli $25\\,\\text{cm}$:iin tai rajoita materiaali kahteen paperiin. Lisätehtävä: kuinka monta kolikkoa silta kantaa yhtä paperigrammaa kohden?"
+    },
+    {
+      "title": "Ilman teippiä",
+      "text": "Pelkkä taittaminen ilman teippiä pakottaa miettimään muotoa vielä tarkemmin."
+    },
+    {
+      "title": "Yläkoululaisille",
+      "text": "Mittaa sillan taipuma viivaimella jokaisen viiden kolikon jälkeen ja piirrä kuvaaja kuorman ja taipuman välisestä yhteydestä."
+    }
+  ],
+  "closing": [
+    "Kerää tulokset taululle ja kysy, mitä yhteistä kestävimmillä silloilla on.",
+    "Näytä poikkileikkauskuva ja kokoa yhteen: sama paperimäärä kantaa enemmän, kun se taitetaan korkeaksi rakenteeksi.",
+    "Kysy, mikä oli ryhmän paras parannus ja miten he keksivät sen. Muistuta, että insinöörit parantavat rakenteita juuri näin: testaamalla."
+  ],
+  "self": [
+    "Pääsivätkö kaikki ryhmän jäsenet rakentamaan ja testaamaan, vai tekikö joku kaiken?",
+    "Pysyivätkö testit reiluina, ja huomasivatko osallistujat, miksi se on tärkeää?",
+    "Annoinko ratkaisun liian aikaisin?",
+    "Mitä muuttaisin välineissä tai ajankäytössä?"
+  ],
+  "participant": {
+    "title": "Insinöörikortti: paperisilta",
+    "blocks": [
+      "# Insinöörikortti: paperisilta",
+      ". Tehtävä: rakenna neljästä paperista ja teipistä silta, joka ylittää $20\\,\\text{cm}$ välin ja kantaa mahdollisimman monta kolikkoa.",
+      "## Säännöt",
+      "- Silta lepää vain tukien päällä. Teippiä ei saa kiinnittää pöytään.",
+      "- Muki laitetaan sillan keskelle, ja kolikot lisätään yksi kerrallaan.",
+      "## Versio 1",
+      "?? Piirrä ideasi.",
+      "? Arvaan, että silta kantaa ____ kolikkoa.",
+      "? Silta kantoi ____ kolikkoa.",
+      "? Mikä kohta petti ensin?",
+      "## Versio 2",
+      "? Mitä muutimme?",
+      "? Silta kantoi ____ kolikkoa.",
+      "## Pohdi",
+      "?? Miksi parannettu silta kantoi enemmän tai vähemmän?"
+    ]
+  },
+  "sources": [],
+  "lessons": [
+    "fy4-5"
+  ]
+}

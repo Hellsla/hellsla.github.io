@@ -1,0 +1,29 @@
+{
+  "id": "robotti",
+  "order": 9,
+  "status": "idea",
+  "title": "Program your first robot",
+  "audience": "ylakoulu",
+  "topic": "ohjelmointi",
+  "minutes": 45,
+  "equipment": [
+    "tietokone",
+    "robotti"
+  ],
+  "short": "Participants program a small robot or microcontroller to make its first movement or light.",
+  "idea": "The participants get a ready, simple program that they change: first a light blinks faster, then the robot moves forward and turns. The aim is a first success within a few minutes and then a change of their own. Ahjo Makerspace's Arduino guides and the robot's test program are a good basis.",
+  "open": [
+    "Which devices are available. Ahjo's equipment is still on its way, so the devices are agreed with the teacher.",
+    "A ready starter program and instructions that a lower secondary student can follow.",
+    "A backup plan if a computer or the connection to the device does not work."
+  ],
+  "safety": [
+    "Only low voltage and batteries or USB power.",
+    "A marked area on the floor for a moving robot, so that no one trips."
+  ],
+  "link": {
+    "title": "Ahjo: Arduino guide",
+    "href": "ahjo-arduino.html"
+  },
+  "lessons": []
+}

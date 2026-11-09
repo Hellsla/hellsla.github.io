@@ -1,0 +1,31 @@
+{
+  "id": "hidas-pallorata",
+  "order": 7,
+  "status": "idea",
+  "title": "Build the slowest possible ball run",
+  "audience": "alakoulu",
+  "topic": "liike",
+  "minutes": 30,
+  "equipment": [
+    "arki"
+  ],
+  "short": "Participants build a track from cardboard and tape on which a ball rolls down as slowly as possible.",
+  "idea": "Usually people try to make a track fast, but here the goal is the opposite. The groups build a track on a wall or a table on which a ball or a marble rolls for as long as possible. Timing is done with a phone's stopwatch. The challenge starts a discussion about friction, slope and energy. The opening challenge of Ahjo 2 is the same idea for upper secondary students and can be used as the basis for the workshop.",
+  "open": [
+    "An equipment list and a support for the track that does not need fixing to a wall.",
+    "An explanation for primary pupils of why the ball slows down in the bends.",
+    "Fair rules: the same starting height and ball size for everyone."
+  ],
+  "safety": [
+    "Small balls are not suitable for children under three, and they are picked up from the floor so that no one slips.",
+    "Scissors and the utility knife only for the tutor."
+  ],
+  "link": {
+    "title": "Ahjo 2: opening challenge",
+    "href": "ahjo-2.html#aloitushaaste"
+  },
+  "lessons": [
+    "fy4-6",
+    "fy4-8"
+  ]
+}

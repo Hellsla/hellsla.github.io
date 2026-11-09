@@ -160,7 +160,7 @@ for lang in i18n.languages():
         lcodes = [c for d, c, r in re.findall(ROW, sec.group(1), re.S)] if sec else []
         expect(f"{lang}: one row per local course, in registry order", lcodes == list(local), lcodes)
         for code, r in zip(local, lrows):
-            expect(f"{lang} {code}: the row has its subtitle as the question", f'title="{_h.escape(local[code]["subtitle"])}"' in r, r[:300])
+            expect(f"{lang} {code}: the row has its front_line or subtitle as the question", f'title="{_h.escape(local[code].get("front_line") or local[code]["subtitle"])}"' in r, r[:300])
             pg = (out / f"{code}.html").read_text() if (out / f"{code}.html").is_file() else ""
             expect(f"{lang} {code}: the page exists, says it is school-specific and what is planned",
                    bool(pg) and ('class="notice local-kind"' in pg) == local[code].get("kind_note", True) and (('class="notice local-status"' not in pg) if local[code]["status"] == "ready" else ('class="notice local-status"' in pg and T("site.local_status_" + local[code]["status"]) in pg)))
