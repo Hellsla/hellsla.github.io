@@ -649,8 +649,8 @@
           "output_plus": "An experimental comparison of two gear ratios.",
           "guides": [],
           "needs": [
-            "robotics kit",
-            "the kit's test program (the teacher chooses it with the kit)",
+            "Arduino robot base: Arduino Uno, two DC motors, a motor driver and a battery for the motors",
+            "the starter test sketch (check the pins for your motor driver)",
             "load: coins or weights",
             "kitchen scale and tape measure"
           ],
@@ -659,7 +659,8 @@
             "mekaaninen"
           ],
           "starters": [
-            "kuormituskoe"
+            "kuormituskoe",
+            "robotti-testi"
           ],
           "peer": "Compare load bays with another group: whose solution carries more, and why?"
         },
@@ -678,13 +679,16 @@
           "guides": [],
           "needs": [
             "assembled robot",
-            "computer and the kit's programming environment",
+            "computer and the Arduino IDE",
             "masking tape to mark the course"
           ],
           "safety": [
             "tyokalut"
           ],
-          "peer": "Run another pair's program on your robot and tell them where the robot left the route."
+          "peer": "Run another pair's program on your robot and tell them where the robot left the route.",
+          "starters": [
+            "robotti-testi"
+          ]
         },
         {
           "title": "Planning the mini project",
@@ -2575,6 +2579,12 @@
       "file": "sarjaplotteri.ino",
       "title": "Light sensor sketch for the serial plotter (Arduino)",
       "note": "untested draft: try it on the teacher's computer first"
+    },
+    {
+      "id": "robotti-testi",
+      "file": "robotti-testi.ino",
+      "title": "Robot test sketch (Arduino)",
+      "note": "untested draft: the robot base is not chosen yet, check the pins"
     },
     {
       "id": "kuormituskoe",
