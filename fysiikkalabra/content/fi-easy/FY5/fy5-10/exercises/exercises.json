@@ -90,7 +90,7 @@
         },
         {
           "text": "Aallon nopeus kaksinkertaistuu, koska tiheämpi heilutus työntää aaltoa nopeammin eteenpäin",
-          "feedback": "Tämä on yleinen virhekäsitys. Nopeuden määrää väliaine eli naru ja sen jännitys. Taajuus ei muuta nopeutta. Taajuus muuttaa aallonpituutta."
+          "feedback": "Tämä on yleinen virhekäsitys. Nopeuden määräävät narun ominaisuudet: narun jännitys ja narun massa pituusyksikköä kohti. Taajuus ei muuta nopeutta. Taajuus muuttaa aallonpituutta."
         },
         {
           "text": "Aallonpituus pysyy samana, koska aallonpituuden määrää narun materiaali eikä käden liike",
@@ -140,7 +140,7 @@
         {
           "text": "Samalla jännityksellä kaksi kertaa tiheämpi heilutus kasvattaa nopeuden $3{,}6\\,\\text{m/s}$:iin.",
           "true": false,
-          "feedback": "Epätosi: aallon nopeus riippuu väliaineesta eli köydestä ja sen jännityksestä. Se ei riipu taajuudesta. Nopeus pysyy $1{,}8\\,\\text{m/s}$:na, ja aallonpituus lyhenee $0{,}60\\,\\text{m}$:iin."
+          "feedback": "Epätosi: aallon nopeus riippuu köyden ominaisuuksista: köyden jännityksestä ja köyden massasta pituusyksikköä kohti. Se ei riipu taajuudesta. Nopeus pysyy $1{,}8\\,\\text{m/s}$:na, ja aallonpituus lyhenee $0{,}60\\,\\text{m}$:iin."
         },
         {
           "text": "Nauhan $(t, y)$-kuvaajassa peräkkäisten huippujen väli on $1{,}2\\,\\text{m}$.",

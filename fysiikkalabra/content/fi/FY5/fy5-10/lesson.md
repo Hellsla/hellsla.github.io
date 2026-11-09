@@ -269,7 +269,7 @@ v = \frac{\lambda}{T} = f\lambda
 missä $v$ on aallon etenemisnopeus ($\text{m/s}$), $\lambda$ aallonpituus ($\text{m}$), $T$ jaksonaika ($\text{s}$) ja $f$ taajuus ($\text{Hz}$). Yksiköt sopivat yhteen, koska $1\,\text{Hz} = 1\,\text{s}^{-1}$, joten $1\,\text{Hz} \cdot 1\,\text{m} = 1\,\text{m/s}$. Pulssin nopeuden voi mitata myös suoraan: pulssi etenee samassa väliaineessa tasaisella nopeudella, joten $v = \tfrac{s}{t}$, missä $s$ on matka ja $t$ siihen kulunut aika.
 
 ### Nopeus riippuu väliaineesta, taajuus lähteestä
-Aallon nopeus määräytyy väliaineesta. Kireässä narussa aalto etenee nopeammin kuin löysässä, ja ääni etenee $20\,{}^\circ\text{C}$:n ilmassa noin $343\,\text{m/s}$:n mutta vedessä noin $1500\,\text{m/s}$:n nopeudella. Taajuus määräytyy lähteestä: se on käden, jousen pään tai kaiuttimen värähtelyn taajuus. Ideaalisessa narussa aallon nopeus määräytyy narun jännityksestä ja massasta pituusyksikköä kohti, joten se ei riipu taajuudesta eikä pienestä amplitudista; samoin ilmassa äänen nopeus ei käytännössä riipu taajuudesta. Tämä ei ole kaikkien aaltojen yleinen laki: esimerkiksi veden pinta-aaltojen nopeus voi riippua aallonpituudesta, jolloin aaltoa sanotaan dispersiiviseksi. Tsunamin hyvin pitkä aalto taas etenee sitä nopeammin, mitä syvempää meri on. Kun samaa narua heilutetaan tiheämmin, nopeus pysyy samana ja aallonpituus lyhenee: kaksinkertainen taajuus puolittaa aallonpituuden. Kun aalto siirtyy väliaineesta toiseen, taajuus säilyy, mutta nopeus ja aallonpituus muuttuvat.
+Aallon nopeus määräytyy väliaineen ominaisuuksista. Kireässä narussa aalto etenee nopeammin kuin löysässä, ja ääni etenee $20\,{}^\circ\text{C}$:n ilmassa noin $343\,\text{m/s}$:n mutta vedessä noin $1500\,\text{m/s}$:n nopeudella. Taajuus määräytyy lähteestä: se on käden, jousen pään tai kaiuttimen värähtelyn taajuus. Ideaalisessa narussa aallon nopeus määräytyy narun jännityksestä ja massasta pituusyksikköä kohti, joten se ei riipu taajuudesta eikä pienestä amplitudista; samoin ilmassa äänen nopeus ei käytännössä riipu taajuudesta. Tämä ei ole kaikkien aaltojen yleinen laki: esimerkiksi veden pinta-aaltojen nopeus voi riippua aallonpituudesta, jolloin aaltoa sanotaan dispersiiviseksi. Tsunamin hyvin pitkä aalto taas etenee sitä nopeammin, mitä syvempää meri on. Kun samaa narua heilutetaan tiheämmin, nopeus pysyy samana ja aallonpituus lyhenee: kaksinkertainen taajuus puolittaa aallonpituuden. Kun aalto siirtyy väliaineesta toiseen, taajuus säilyy, mutta nopeus ja aallonpituus muuttuvat.
 
 ### Valokuva ja yhden kohdan kuvaaja
 Aaltoa voi kuvata kahdella kuvaajalla, jotka näyttävät samanlaisilta siniaalloilta. **Valokuva** eli $(x, y)$-kuvaaja näyttää koko narun muodon yhdellä hetkellä: vaaka-akselilla on paikka $x$, ja kahden harjan väli on aallonpituus $\lambda$. **Yhden kohdan kuvaaja** eli $(t, y)$-kuvaaja näyttää yhden narun kohdan poikkeaman $y$ ajan funktiona: vaaka-akselilla on aika $t$, ja kahden huipun väli on jaksonaika $T$. Kummastakin kuvaajasta voi lukea amplitudin $A$. Lue siis aina ensin, mikä suure on vaaka-akselilla.
@@ -369,7 +369,7 @@ Pitkä naru on vedetty kireälle pihan poikki. Kun narun päätä heilautetaan k
 
 <!-- vaihe -->
 
-**Periaate.** Aallon nopeus riippuu väliaineesta eli tässä narusta ja sen jännityksestä, ei siitä, tehdäänkö narussa pulssi vai jaksollinen aalto. Siksi jaksollinen aalto etenee samalla nopeudella $v$ kuin pulssi, ja pulssi etenee tasaisesti, joten $v = \tfrac{s}{t}$. Aallonpituus saadaan sitten perusyhtälöstä $v = f\lambda$.
+**Periaate.** Aallon nopeus riippuu väliaineen ominaisuuksista, tässä narun jännityksestä ja massasta pituusyksikköä kohti, ei siitä, tehdäänkö narussa pulssi vai jaksollinen aalto. Siksi jaksollinen aalto etenee samalla nopeudella $v$ kuin pulssi, ja pulssi etenee tasaisesti, joten $v = \tfrac{s}{t}$. Aallonpituus saadaan sitten perusyhtälöstä $v = f\lambda$.
 
 <!-- vaihe -->
 
@@ -406,7 +406,7 @@ Pitkä naru on vedetty kireälle pihan poikki. Kun narun päätä heilautetaan k
 **Järkevyys.** Jaksonaika on $T = \tfrac{1}{f} = 0{,}333\,\text{s}$, ja siinä ajassa aalto etenee $2{,}4\,\text{m/s} \cdot 0{,}333\,\text{s} = 0{,}80\,\text{m}$ eli juuri yhden aallonpituuden, kuten pitääkin.
 
 ## Yleinen virhekäsitys
-Moni ajattelee, että aalto etenee sitä nopeammin, mitä tiheämmin kättä heilutetaan. Samassa narussa nopeus pysyy kuitenkin samana. Kun taajuus kasvaa $1{,}0\,\text{Hz}$:stä $2{,}0\,\text{Hz}$:iin, aallonpituus lyhenee $2{,}0\,\text{m}$:stä $1{,}0\,\text{m}$:iin, ja tulo $f\lambda$ on edelleen $2{,}0\,\text{m/s}$. Nopeuden voi muuttaa vain muuttamalla väliainetta, esimerkiksi kiristämällä narua.
+Moni ajattelee, että aalto etenee sitä nopeammin, mitä tiheämmin kättä heilutetaan. Samassa narussa nopeus pysyy kuitenkin samana. Kun taajuus kasvaa $1{,}0\,\text{Hz}$:stä $2{,}0\,\text{Hz}$:iin, aallonpituus lyhenee $2{,}0\,\text{m}$:stä $1{,}0\,\text{m}$:iin, ja tulo $f\lambda$ on edelleen $2{,}0\,\text{m/s}$. Nopeuden voi muuttaa vain muuttamalla narua tai sen jännitystä, esimerkiksi kiristämällä narua.
 
 Toinen yleinen virhe on lukea aallonpituus yhden kohdan $(t, y)$-kuvaajasta. Siinä huippujen väli on jaksonaika $T$ sekunteina, ei aallonpituus. Kolmas virhe on ajatella, että aalto kuljettaa narun ainetta mukanaan: narun kohdat vain värähtelevät paikallaan, ja eteenpäin siirtyy energia.
 

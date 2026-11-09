@@ -135,7 +135,7 @@ Työmelusta säädetään valtioneuvoston asetuksessa työntekijöiden suojelemi
 
 ## Kaava: Melualtistuksen vertailuaika
 
-Ylempää toiminta-arvoa vastaa kahdeksan tunnin altistus tasolle $85\,\text{dB(A)}$. Saman energia-annoksen saa lyhyemmässä ajassa suuremmalla tasolla, ja jokainen $3\,\text{dB}$:n nousu puolittaa ajan. Tämä nyrkkisääntö seuraa siitä, että melualtistus lasketaan energian keskiarvona. Laskennallista aikaa, jossa kertyy ylempää toiminta-arvoa vastaava energia-annos, kutsutaan tässä luvussa vertailuajaksi. Päivittäinen vertailuaika on
+Ylempää toiminta-arvoa vastaa kahdeksan tunnin altistus tasolle $85\,\text{dB(A)}$. Saman energia-annoksen saa lyhyemmässä ajassa suuremmalla tasolla, ja jokainen $3\,\text{dB}$:n nousu puolittaa ajan. Tämä nyrkkisääntö seuraa siitä, että melualtistus lasketaan energian keskiarvona. Tarkalleen intensiteetin kaksinkertaistuminen nostaa tasoa $10\,\text{dB} \cdot \lg 2 \approx 3{,}01\,\text{dB}$, joten pyöreä $3\,\text{dB}$ on käytännön laskusääntö. Laskennallista aikaa, jossa kertyy ylempää toiminta-arvoa vastaava energia-annos, kutsutaan tässä luvussa vertailuajaksi. Päivittäinen vertailuaika on
 
 ```latex
 t_\text{v} = \frac{t_0}{2^{\,n}}

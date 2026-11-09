@@ -175,7 +175,7 @@
       "id": "fy5-7-L2-03",
       "level": 2,
       "text": "The needle of a sewing machine moves up and down $900$ times a minute. What is the period of the motion of the needle? Give the answer in milliseconds.",
-      "answer": 67,
+      "answer": 66.7,
       "unit": "ms",
       "tolerance": 0.02
     },
@@ -348,7 +348,7 @@
         "data",
         "model"
       ],
-      "answer": 79,
+      "answer": 79.1,
       "unit": "%",
       "tolerance": 0.02,
       "data": {

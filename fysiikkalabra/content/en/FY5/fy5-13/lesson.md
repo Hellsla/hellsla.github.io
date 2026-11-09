@@ -1,6 +1,6 @@
 # Standing waves: nodes, antinodes and natural frequencies
 
-> **Why** does a guitar string always sound the same note when it is plucked, and why does the note rise when the string is pressed against the fingerboard or tightened?
+> **Why** does a plucked guitar string sound at a definite pitch, and why does the pitch rise when the string is tightened or its vibrating part is shortened by pressing it against the fingerboard?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: an acoustic guitar lies in its open case, seen from above. On the neck there is a capo, which presses the strings against the fretboard at the third fret. One of the strings has been plucked and is vibrating: the string moves most halfway between the capo and the bridge and stays still at both ends, and the range of its motion is shown in light blue. The case is on a wooden floor, with a pick beside it." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy513h-floor" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="600"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy513h-top" gradientUnits="userSpaceOnUse" x1="0" y1="92" x2="0" y2="512"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#b8622d"/></linearGradient></defs>

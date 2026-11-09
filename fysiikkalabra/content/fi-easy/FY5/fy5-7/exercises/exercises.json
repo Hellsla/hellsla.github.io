@@ -175,7 +175,7 @@
       "id": "fy5-7-L2-03",
       "level": 2,
       "text": "Ompelukoneen neula liikkuu ylös ja alas $900$ kertaa minuutissa. Mikä on neulan liikkeen jaksonaika? Anna vastaus millisekunteina.",
-      "answer": 67,
+      "answer": 66.7,
       "unit": "ms",
       "tolerance": 0.02
     },
@@ -348,7 +348,7 @@
         "data",
         "model"
       ],
-      "answer": 79,
+      "answer": 79.1,
       "unit": "%",
       "tolerance": 0.02,
       "data": {

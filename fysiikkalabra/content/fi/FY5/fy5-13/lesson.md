@@ -1,6 +1,6 @@
 # Seisova aalto: solmut, kuvut ja ominaistaajuudet
 
-> **Miksi** kitaran kieli soi aina samalla sävelellä, kun sitä näppää, ja miksi sävel nousee, kun kieltä painetaan otelautaa vasten tai kun sitä kiristetään?
+> **Miksi** näppätty kitaran kieli soi tietyllä sävelkorkeudella, ja miksi sävel nousee, kun kieltä kiristetään tai sen värähtelevää osaa lyhennetään painamalla kieli otelautaa vasten?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: akustinen kitara makaa avatussa kotelossaan ylhäältä katsottuna. Kaulalla on kapo, joka painaa kielet otelautaa vasten kolmannen nauhan kohdalta. Yksi kielistä on näpätty, ja se värähtelee: kieli on suurimmillaan kapon ja tallan puolivälissä ja pysyy paikallaan kummassakin päässä, ja sen liikealue näkyy vaaleansinisenä. Kotelo on puulattialla, ja sen vieressä on plektra." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy513h-floor" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="600"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy513h-top" gradientUnits="userSpaceOnUse" x1="0" y1="92" x2="0" y2="512"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#b8622d"/></linearGradient></defs>

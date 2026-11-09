@@ -108,7 +108,7 @@ def pendulum():
     f.rect(px - 70, py - 16, 140, 16, IRON, INK, 2)
     f.line(px, py, px, py + L + 50, MUTED, 1.5, "6 5")
     # the path arc and the angle
-    a0 = math.radians(40)
+    a0 = al                                   # the path ends at the extreme position
     f.path(f"M{n(px - L * math.sin(a0))},{n(py + L * math.cos(a0))} A{L},{L} 0 0 0 {n(px + L * math.sin(a0))},{n(py + L * math.cos(a0))}",
            stroke=MUTED, w=1.5, extra='stroke-dasharray="6 5"')
     r = 62
