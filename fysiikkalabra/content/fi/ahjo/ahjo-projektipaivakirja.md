@@ -66,10 +66,10 @@ Kriteerit sopivat kaikenlaisiin projekteihin: laitteisiin, käsitöihin, muotoil
     - Kehittyvä: merkintöjä on useimmilta tunneilta, mutta kuvista tai päätöksistä puuttuu selityksiä.
     - Hyvä: jokaisella tunnilla on päivätty merkintä, jossa on tavoite, tehty työ, päätökset ja seuraava askel. Kuvissa on kuvatekstit, ja lähteet on merkitty.
     - Erinomainen: lisäksi tiedostot ovat muokattavassa muodossa ja versioituina, ja loppukooste kertoo projektin kulun yhdellä sivulla.
-6. Yhteistyö
+6. Yhteistyö ja henkilökohtainen vastuu
     - Alkava: ryhmän työnjakoa ei kerrota.
     - Kehittyvä: roolit on nimetty.
-    - Hyvä: kunkin jäsenen osuus näkyy merkinnöissä, ja palaute käyttäjiltä tai muilta ryhmiltä on kirjattu.
+    - Hyvä: kunkin jäsenen osuus näkyy merkinnöissä ja palautusten omissa osuuksissa, ja palaute käyttäjiltä tai muilta ryhmiltä on kirjattu.
     - Erinomainen: ryhmä on muuttanut työtapaansa palautteen perusteella, ja muutos on kirjattu.
 7. Oma oppiminen
     - Alkava: loppuun on kirjoitettu, että projekti oli kiva tai vaikea.
@@ -107,7 +107,8 @@ Opettaja kertoo, mitä koulun palvelua päiväkirjaan käytetään.
 6. Kun jokin epäonnistuu, kirjaa mitä tapahtui, mikä oli todennäköinen syy ja mitä muutat. Älä poista epäonnistuneita kokeiluja päiväkirjasta.
 7. Merkitse lähteet heti, kun käytät niitä: ohjeet, koodin osat, 3D-mallit ja kuvat. Merkitse myös niiden lisenssi, jos se on tiedossa.
 8. Lukekaa päiväkirja kerran viikossa yhdessä läpi. Tarkistakaa, löytyykö jokaiselta tunnilta merkintä ja näkyykö kaikkien osuus.
-9. Kirjoita projektin lopuksi yhden sivun kooste: ongelma, ratkaisu, tärkeimmät testitulokset ja mitä opit. Tee lisäksi enintään minuutin video, jossa prototyyppi toimii.
+9. Ahjo 2:n palautuksissa jokainen ryhmän jäsen kirjoittaa lyhyen oman osuuden, muutaman lauseen: mitä tein itse, minkä ongelman ratkaisemiseen osallistuin, mitä opin ja mitä tekisin seuraavaksi toisin. Muuta erillistä raporttia ei tarvita.
+10. Kirjoita projektin lopuksi yhden sivun kooste: ongelma, ratkaisu, tärkeimmät testitulokset ja mitä opit. Tee lisäksi enintään minuutin video, jossa prototyyppi toimii.
 
 ## Kuvat ja esimerkkikoodi
 

@@ -162,6 +162,7 @@ ICONS = {
     "box": "M3 8l9-4 9 4v10l-9 4-9-4zM3 8l9 4 9-4M12 12v10",
     "people": "M9 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM3 20v-1a6 6 0 0 1 12 0v1M16 11a2.5 2.5 0 1 0 0-5M17.5 14a4.5 4.5 0 0 1 3.5 4.4V20",
     "download": "M12 4v11M7 10l5 5 5-5M5 20h14",
+    "clock": "M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM12 7v5l3 2",
 }
 STARTERS = ROOT / "assets/shared/ahjo/aloitus"    # small starter files a lesson links (teacher 2026-11-09), published as ahjo-aloitus/
 STARTERS_PUB = "ahjo-aloitus"
@@ -218,7 +219,7 @@ def validate(lessons, investigations, guides, planned_codes, local_codes, module
     src = load()
     shape = lambda d: ([c["code"] for c in d["courses"]], [c["id"] for c in d["categories"]],
                        [r.get("ref") or r.get("id") or "safety" for r in d["resources"]], [g["id"] for g in d["equipment"]],
-                       [len(g["items"]) for g in d["equipment"]], [(len(c.get("goals", [])), len(c.get("lessons", [])), [(l.get("guides", []), bool(l.get("milestone")), bool(l.get("start")), sorted(l.get("levels", {})), bool(l.get("output_plus")), bool(l.get("final"))) for l in c.get("lessons", [])], len(c.get("deepening", [])), (c["start"]["minutes"], len(c["start"]["materials"]), len(c["start"]["steps"])) if c.get("start") else None, len(c["final"]["options"]) if c.get("final") else None, [x["minutes"] for x in c["snacks"]["items"]] if c.get("snacks") else None, bool(c.get("flex")), [len(x["lessons"]) for x in c.get("units", [])], [(len(l.get("needs", [])), l.get("safety"), bool(l.get("safety_note")), bool(l.get("peer")), l.get("starters", [])) for l in c.get("lessons", [])], bool(c.get("pitch"))) for c in d["courses"]], [s["id"] for s in d["safety"]], [(f["id"], f["file"]) for f in d.get("starters", [])], [l["course"] for l in d["links"]], sorted(d["ui"]),
+                       [len(g["items"]) for g in d["equipment"]], [(len(c.get("goals", [])), len(c.get("lessons", [])), [(l.get("guides", []), bool(l.get("milestone")), bool(l.get("start")), sorted(l.get("levels", {})), bool(l.get("output_plus")), bool(l.get("final"))) for l in c.get("lessons", [])], len(c.get("deepening", [])), (c["start"]["minutes"], len(c["start"]["materials"]), len(c["start"]["steps"])) if c.get("start") else None, len(c["final"]["options"]) if c.get("final") else None, [x["minutes"] for x in c["snacks"]["items"]] if c.get("snacks") else None, bool(c.get("flex")), [len(x["lessons"]) for x in c.get("units", [])], [(len(l.get("needs", [])), l.get("safety"), bool(l.get("safety_note")), bool(l.get("peer")), l.get("starters", []), bool(l.get("goal")), bool(l.get("wait"))) for l in c.get("lessons", [])], bool(c.get("pitch")), len(c.get("assessment", {}).get("items", [])), len(d["ui"].get("license_check", []))) for c in d["courses"]], [s["id"] for s in d["safety"]], [(f["id"], f["file"]) for f in d.get("starters", [])], [l["course"] for l in d["links"]], sorted(d["ui"]),
                        [(p["id"], p.get("art"), p["status"], p["level"], p["lessons"], p["courses"], [i["url"] for i in p["inspiration"]], len(p["skills"]), len(p["materials"]), len(p["subjects"])) for p in d.get("projects", [])],
                        [(x["id"], x["minutes"], x["lesson"], bool(x.get("induction")), len(x["subjects"]), len(x["materials"]), sorted(x["levels"]), x.get("guide")) for x in d.get("challenges", [])])
     files = [SOURCE] + sorted((ROOT / "content").glob("*/ahjo.json"))
@@ -248,6 +249,7 @@ def validate(lessons, investigations, guides, planned_codes, local_codes, module
             ahjo_ids = {r["id"] for r in d["resources"] if "id" in r}
             for i, l in enumerate(c.get("lessons", []), 1):
                 if not l.get("output"): errs.append(f"{name}: {c['code']} lesson {i}: no output (what the lesson produces)")
+                if c.get("lessons") and not l.get("goal"): errs.append(f"{name}: {c['code']} lesson {i}: no goal (what you learn, one short line; teacher 2026-11-09)")
                 for gid in l.get("guides", []):
                     if gid not in ahjo_ids | lessons | investigations | guides: errs.append(f"{name}: {c['code']} lesson {i}: no such guide or chapter {gid!r}")
             if sum(1 for l in c.get("lessons", []) if l.get("milestone")) not in (0, 5) and c["code"] == "AHJO2":
@@ -551,9 +553,15 @@ def about_section(d, c, k):
     if c.get("goals"):
         parts.append(f'<section id="tavoitteet" aria-labelledby="h-{k}-goals"><h3 id="h-{k}-goals">{esc(u["course_goals"])}</h3>{note}'
                      f'<p>{esc(u["course_goals_lead"])}</p><ul class="ahjo-goals">' + "".join(f'<li>{esc(g)}</li>' for g in c["goals"]) + '</ul></section>')
+    if c.get("assessment"):    # what is assessed (teacher 2026-11-09): the process, not only a working end product
+        a = c["assessment"]
+        parts.append(f'<section id="arviointi" aria-labelledby="h-{k}-assess"><h3 id="h-{k}-assess">{esc(u["assess_h"])}</h3><p>{esc(a["lead"])}</p>'
+                     '<ul class="ahjo-goals">' + "".join(f'<li>{esc(x)}</li>' for x in a["items"]) + f'</ul><p class="ahjo-plan-note">{esc(a["note"])}</p></section>')
     if c.get("license"):
         parts.append(f'<section id="ajokortti" class="ahjo-license" aria-labelledby="h-{k}-license"><h3 id="h-{k}-license">{esc(u["license_h"])}</h3><p>{esc(u["license_text"])}</p>'
                      + ('<ol class="ahjo-license-parts">' + "".join(f'<li><span class="ahjo-approach-t">{esc(t)}.</span> {esc(x)}</li>' for t, x in u.get("license_parts", [])) + '</ol>' if u.get("license_parts") else "")
+                     + (f'<h4 class="ahjo-check-h">{esc(u["license_check_h"])}</h4><ul class="ahjo-check">' + "".join(f'<li>{esc(x)}</li>' for x in u["license_check"])
+                        + f'</ul><p class="ahjo-plan-note">{esc(u["license_check_note"])}</p>' if u.get("license_check") else "")
                      + (f'<p class="ahjo-plan-note">{esc(u["license_status"])}</p>' if u.get("license_status") else "") + '</section>')
     parts.append(f'<section aria-labelledby="h-{k}-contents"><h3 id="h-{k}-contents">{esc(u["course_contents"])}</h3><ul class="ahjo-topics">'
                  + "".join(f'<li>{esc(t)}</li>' for t in c["topics"]) + '</ul></section>')
@@ -627,6 +635,7 @@ def lesson_body(d, c, i, planned, local, ref):
             + (f'<p class="ahjo-lhead-sub">{esc(l["title"])}</p>' if l.get("make") else "")
             + (f'<p class="ahjo-lead">{esc(l["text"])}</p>' if hands else f'<p class="ahjo-lead"><span class="ahjo-meta-l">{esc(u["lesson_now"])}:</span> {esc(l["text"])}</p>'
                f'<p class="ahjo-pace">{esc(u["lesson_pace"])}</p>')
+            + (f'<p class="ahjo-lgoal"><span class="ahjo-meta-l">{esc(u["lesson_goal"])}:</span> {esc(l["goal"])}</p>' if l.get("goal") else "")
             + '</div></header>')
     guide_btn = (f'<p class="ahjo-now-go">{links[0].replace("<a ", "<a class=\"ahjo-cta\" ", 1).replace("</a>", "<span aria-hidden=\"true\"> →</span></a>", 1)}</p>'
                  if links and links[0].startswith("<a ") else "")
@@ -644,9 +653,14 @@ def lesson_body(d, c, i, planned, local, ref):
         now = (f'<section class="ahjo-now" aria-labelledby="h-now"><h2 id="h-now">{esc(u["lesson_task"])}</h2><p class="ahjo-now-x">{esc(l["example"])}</p>{guide_btn}</section>')
         done = (f'<section class="ahjo-lsec ahjo-done" aria-labelledby="h-done"><h2 id="h-done">{esc(u["lesson_save"])}</h2>'
                 f'<p class="ahjo-done-row">{esc(l["output"])}</p>'
-                + (f'<p class="ahjo-done-row ahjo-done-plus"><span class="ahjo-done-l">{esc(u["lesson_milestone"])}:</span> {esc(l["milestone"])}</p>' if l.get("milestone") else "")
+                + (f'<p class="ahjo-done-row ahjo-done-plus"><span class="ahjo-done-l">{esc(u["lesson_milestone"])}:</span> {esc(l["milestone"])}</p>'
+                   f'<p class="ahjo-done-row ahjo-own">{esc(u["lesson_own"])}</p>' if l.get("milestone") else "")
                 + '</section>')
         main = now + done
+    if l.get("wait"):   # while a printer or a robot is busy: work on the same goal (teacher 2026-11-09)
+        wait = (f'<section class="ahjo-lsec ahjo-wait" aria-labelledby="h-wait"><h2 id="h-wait">{icon("clock")}{esc(u["lesson_wait"])}</h2>'
+                f'<p>{esc(l["wait"])}</p></section>')
+        main = main.replace('<section class="ahjo-lsec ahjo-done"', wait + '<section class="ahjo-lsec ahjo-done"', 1)
     extra = ""
     if l.get("peer"):   # a short way of working together (teacher 2026-11-09): never a new hand-in
         main += (f'<section class="ahjo-lsec ahjo-peer" aria-labelledby="h-peer"><h2 id="h-peer">{icon("people")}{esc(u["lesson_peer"])}</h2>'

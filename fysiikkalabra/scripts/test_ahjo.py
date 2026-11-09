@@ -142,6 +142,10 @@ for lang in i18n.languages():
                bool(c.get("license")) == ('id="ajokortti"' in ab) and (not c.get("license") or (all(ahjo.esc(t) in ab for t, _ in u["license_parts"]) and ahjo.esc(u["license_status"]) in ab)))
         expect(f"{lang} {c['code']}: the lesson structure A–E is in the folded details where the lessons have levels",
                not any(l.get("levels") for l in ls) or ('id="nain-edetaan"' in ab and 'type="A"' in ab and ahjo.esc(u["approach_note"]) in ab))
+        expect(f"{lang} {c['code']}: what is assessed is in the folded details (teacher 2026-11-09)",
+               'id="arviointi"' in ab and all(ahjo.esc(x) in ab for x in c["assessment"]["items"]) and ahjo.esc(c["assessment"]["note"]) in ab)
+        expect(f"{lang} {c['code']}: the licence's skills checklist only on Ahjo 1", bool(c.get("license")) == ('class="ahjo-check"' in ab)
+               and (not c.get("license") or all(ahjo.esc(x) in ab for x in u["license_check"])))
         fin = c.get("final")
         l14 = (out / ahjo.lesson_page(c["code"], 14)).read_text() if (out / ahjo.lesson_page(c["code"], 14)).is_file() else ""
         expect(f"{lang} {c['code']}: the mini project options are on lesson 14's page (teacher 2026-11-08)",
@@ -183,6 +187,10 @@ for lang in i18n.languages():
             sts = [x for x in d.get("starters", []) if x["id"] in l.get("starters", [])]
             expect(f"{tag}: its starter files are linked with their note (untested, the teacher prints or tries them first)",
                    all(re.search(rf'href="(?:\.\./)?{ahjo.STARTERS_PUB}/{re.escape(x["file"])}" download', lm) and ahjo.esc(x["note"]) in lm and (SITE / ahjo.STARTERS_PUB / x["file"]).is_file() for x in sts))
+            hd = lm[lm.find('<header class="ahjo-lhead"'):lm.find("</header>", lm.find('<header class="ahjo-lhead"'))]
+            expect(f"{tag}: the goal is in the header, so the work still starts first (teacher 2026-11-09)", f'{ahjo.esc(l["goal"])}</p>' in hd)
+            expect(f"{tag}: 'If you have to wait' where the lesson has one", bool(l.get("wait")) == ('class="ahjo-lsec ahjo-wait"' in lm) and (not l.get("wait") or ahjo.esc(l["wait"]) in lm))
+            expect(f"{tag}: a hand-in asks for each member's own part (teacher 2026-11-09)", not l.get("milestone") or ahjo.esc(u["lesson_own"]) in lm)
             if c["code"] == "AHJO2":
                 expect(f"{tag}: says that the lesson guides the project and does not bind every group (teacher 2026-11-09)", ahjo.esc(u["lesson_pace"]) in lm)
             pager = re.search(r'<nav class="ahjo-pager".*?</nav>', lm, re.S)
@@ -220,6 +228,23 @@ for lang in i18n.languages():
            all(re.search(k, a1[n]["levels"]["try"], re.I) for n, k in ((4, "sovitekoe|sovitekok|fit test"), (5, "kuorma|kolik|load|coin"), (8, "arvio|estimate"))) and re.search(r"ennen ja jälkeen|before.and.after", a1[6]["output"], re.I))
     expect(f"{lang} AHJO1 lesson 15: build, test, change and test again, and a failed change is accepted", re.search(r"testaa uudelleen|test again|uusi testi|new test", a1[15]["output"] + a1[15]["levels"]["modify"], re.I)
            and re.search(r"ei tarvitse onnistua|epäonnist|ei onnistunut|does not have to succeed|fail|did not", a1[15]["output"] + a1[15]["levels"]["modify"], re.I))
+    # brief 3 (teacher 2026-11-09 19.42): robotics on a ready base, a correct multimeter, the light sensor's direction, waiting options
+    expect(f"{lang} AHJO1 lessons 12–13: the basic level runs on a ready robot base, building it is the challenge, and the sensor starts with a simple trial",
+           re.search(r"valmiiksi koottu|valmis|ready", a1[12]["start"] + " ".join(a1[12]["needs"]), re.I) is not None and re.search(r"kokoa|assemble", a1[12]["levels"]["challenge"], re.I) is not None
+           and re.search(r"painike|button", a1[13]["levels"]["modify"], re.I) is not None and "mekaaninen" not in a1[12]["safety"])
+    expect(f"{lang} AHJO1 lesson 8: voltage in parallel, current in series, and never a current range across the battery",
+           all(re.search(w, a1[8]["levels"]["try"] + a1[8].get("safety_note", ""), re.I) for w in (r"rinnan|parallel", r"sarjaan|series")) and re.search(r"sulak|fuse", a1[8].get("safety_note", ""), re.I))
+    expect(f"{lang} AHJO1 lesson 10: more light raises the buzzer's pitch (a covering hand lowers it, as the sketch maps light to pitch)",
+           not re.search(r"käsi lähestyy|hand comes closer", a1[10]["levels"]["modify"]))
+    expect(f"{lang} AHJO1 lesson 1: the coin cell's hazard is said", re.search(r"niel|swallow", a1[1].get("safety_note", ""), re.I) is not None)
+    expect(f"{lang}: every lesson that prints in class, or shares a robot, says what to do while waiting (lessons 4, 5, 6, 12, 13, 15; Ahjo 2: 8, 14)",
+           all(a1[n].get("wait") for n in (4, 5, 6, 12, 13, 15)) and all(d["courses"][1]["lessons"][n - 1].get("wait") for n in (8, 14)))
+    expect(f"{lang}: every lesson has a short goal (what you learn), at most 140 characters", all(l.get("goal") and len(l["goal"]) <= 140 for c in d["courses"] for l in c["lessons"]),
+           [l["title"] for c in d["courses"] for l in c["lessons"] if not l.get("goal") or len(l["goal"]) > 140])
+    expect(f"{lang}: the licence's skills checklist covers coin cells, the multimeter, the printer's hot parts, tools and robots, and testing, and says it does not replace a device permit",
+           all(any(re.search(w, x, re.I) for x in u["license_check"]) for w in (r"nappiparist|coin cell", r"rinnan|parallel", r"kuum|hot", r"robot", r"testaa|test")) and re.search(r"lupa|permit", u["license_check_note"], re.I))
+    expect(f"{lang}: both courses list what is assessed, and say a failed prototype or attempt can show excellent skills",
+           [len(c["assessment"]["items"]) for c in d["courses"]] == [6, 7] and all(re.search(r"epäonnist|ei onnistunut|ei toiminut|fail", c["assessment"]["note"], re.I) for c in d["courses"]))
     hand = [l for c in d["courses"] for l in c["lessons"] if l.get("milestone")]
     expect(f"{lang}: the peer practices add no hand-ins (still five, all in Ahjo 2)", len(hand) == 5 and all(not l.get("milestone") for l in d["courses"][0]["lessons"]))
     for g in ("ahjo-led-piiri", "ahjo-sarjaplotteri", "ahjo-servo"):

@@ -66,10 +66,10 @@ The criteria fit all kinds of projects: devices, crafts, design, music, repair, 
     - Developing: there are entries from most lessons, but photos or decisions lack explanations.
     - Good: every lesson has a dated entry with the goal, the work done, the decisions and the next step. Photos have captions, and sources are marked.
     - Excellent: in addition, the files are in editable form and versioned, and a final summary tells the course of the project on one page.
-6. Collaboration
+6. Collaboration and personal responsibility
     - Beginning: the division of work in the group is not described.
     - Developing: the roles are named.
-    - Good: each member's share is visible in the entries, and feedback from users or other groups is recorded.
+    - Good: each member's share is visible in the entries and in their own parts of the hand-ins, and feedback from users or other groups is recorded.
     - Excellent: the group has changed its way of working on the basis of feedback, and the change is recorded.
 7. Your own learning
     - Beginning: at the end it says that the project was fun or difficult.
@@ -107,7 +107,8 @@ Your teacher tells you which school service is used for the journal.
 6. When something fails, record what happened, what the likely cause was and what you will change. Do not delete failed attempts from the journal.
 7. Mark your sources as soon as you use them: instructions, pieces of code, 3D models and images. Mark their licence too if it is known.
 8. Read through the journal together once a week. Check that every lesson has an entry and that everyone's share is visible.
-9. At the end of the project, write a one-page summary: the problem, the solution, the most important test results and what you learned. Also make a video of at most one minute in which the prototype works.
+9. In Ahjo 2's hand-ins every group member writes a short part of their own, a few sentences: what I did myself, which problem I helped to solve, what I learned and what I would do differently next time. No other separate report is needed.
+10. At the end of the project, write a one-page summary: the problem, the solution, the most important test results and what you learned. Also make a video of at most one minute in which the prototype works.
 
 ## Diagrams and example code
 

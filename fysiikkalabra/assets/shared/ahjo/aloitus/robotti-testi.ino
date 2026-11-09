@@ -39,3 +39,11 @@ void loop() {
   // Tunti 13: ajakaa nelio toistamalla neljasti drive(SPEED, SPEED, DRIVE_MS) ja drive(SPEED, -SPEED, TURN_MS).
   // Lesson 13: drive a square by repeating forwards and a right turn four times.
 }
+
+// Tunti 13, anturikokeilu: painike robotin keulaan pinnin 2 ja GND:n valiin. Lisaa setup()-osaan
+//   pinMode(2, INPUT_PULLUP);
+// ja aja eteenpain vain, kun painike ei ole painettuna (painettuna digitalRead(2) on LOW):
+//   if (digitalRead(2) == HIGH) { motor(ENA, IN1, IN2, SPEED); motor(ENB, IN3, IN4, SPEED); }
+//   else { motor(ENA, IN1, IN2, 0); motor(ENB, IN3, IN4, 0); }
+// Lesson 13, sensor trial: a push button on the robot's front between pin 2 and GND, pinMode(2, INPUT_PULLUP),
+// and drive forwards only while digitalRead(2) is HIGH (the button is not pressed); otherwise stop.
