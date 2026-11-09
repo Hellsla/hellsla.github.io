@@ -6,7 +6,7 @@
   "short": "Participants design, build, test and improve a paper bridge that carries as many coins as possible.",
   "audience": "alakoulu",
   "topic": "rakenteet",
-  "minutes": 30,
+  "minutes": 20,
   "group": "2–3 participants per group",
   "equipment": [
     "arki"
@@ -38,37 +38,37 @@
   ],
   "steps": [
     {
-      "time": "0–3",
+      "time": "0–2",
       "title": "Hook",
       "do": "Lay a flat A4 sheet across the supports and put one coin in a cup in the middle. The paper bends and the cup falls.",
       "say": "This paper does not carry even one coin. I claim that the same paper can be made into a bridge that carries dozens of coins. What should we do?"
     },
     {
-      "time": "3–6",
+      "time": "2–4",
       "title": "Predict and plan",
       "do": "Explain the rules and give each group the paper and tape. The group draws its first idea on the card and guesses how many coins it will carry.",
       "say": "You may fold, roll and tape the paper, but you may not add anything else. First draw your idea and guess how many coins it will carry."
     },
     {
-      "time": "6–13",
+      "time": "4–9",
       "title": "Build and test",
       "do": "The groups build their first bridge and test it by adding coins one at a time. Go round the groups and ask which part gives way first.",
       "say": "Which part gives way first? Does the bridge bend, or does it slide off the support?"
     },
     {
-      "time": "13–21",
+      "time": "9–15",
       "title": "Improve",
-      "do": "The groups change the bridge based on the test and build a new version from the remaining paper. Encourage them to change one thing at a time.",
+      "do": "The groups change the bridge based on the test and build a new version from the remaining paper. Encourage them to change one thing at a time. If you have $30\\,\\text{min}$, give this step more time.",
       "say": "Which one change could help the most? Try it and see if the bridge carries more."
     },
     {
-      "time": "21–26",
+      "time": "15–18",
       "title": "Final test",
       "do": "Each group tests its best bridge in turn while the others watch. Count the coins out loud together. Write the results on the board.",
       "say": "Every bridge is tested the same way: the cup in the middle and the coins one at a time. How many coins were in the cup when the bridge gave way?"
     },
     {
-      "time": "26–30",
+      "time": "18–20",
       "title": "Closing",
       "do": "Compare the bridges: what do the strongest ones have in common? Show the picture of the cross-sections and ask where in everyday life the same idea can be seen.",
       "say": "Every bridge had the same amount of paper. Why did some carry more?"

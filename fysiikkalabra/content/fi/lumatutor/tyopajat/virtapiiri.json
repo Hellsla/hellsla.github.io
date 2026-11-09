@@ -6,7 +6,7 @@
   "short": "Osallistujat saavat lampun syttymään, tutkivat, mitkä aineet johtavat sähköä, ja rakentavat oman kytkimen.",
   "audience": "alakoulu",
   "topic": "sahko",
-  "minutes": 30,
+  "minutes": 20,
   "group": "2–3 osallistujaa ryhmässä, enintään noin 16 osallistujaa kahta tutoria kohden",
   "equipment": [
     "paristot",
@@ -48,25 +48,25 @@
       "say": "Tässä on paristo, lamppu ja johtoja. Kun irrotan tämän, lamppu sammuu. Miksi? Teidän tehtävänne on selvittää, mitä lamppu tarvitsee syttyäkseen."
     },
     {
-      "time": "3–9",
+      "time": "3–8",
       "title": "Haaste 1: sytytä lamppu",
       "do": "Jaa ryhmille paristokotelo, lamppu ja kaksi johtoa. Anna ryhmien kokeilla itse. Kun lamppu syttyy, pyydä piirtämään oma kytkentä tutkijakorttiin.",
       "say": "Saatteko lampun syttymään? Kun se syttyy, sormella näyttäen: mitä reittiä sähkö kulkee?"
     },
     {
-      "time": "9–18",
+      "time": "8–14",
       "title": "Haaste 2: mikä johtaa sähköä?",
       "do": "Lisää piiriin kolmas johto, niin että piirissä on rako. Osallistujat ennustavat ensin jokaisesta esineestä, syttyykö lamppu, ja testaavat sitten asettamalla esineen rakoon.",
       "say": "Ennen kuin kokeilette: merkitkää korttiin, syttyykö lamppu, kun esine on raossa. Sitten testatkaa."
     },
     {
-      "time": "18–25",
+      "time": "14–18",
       "title": "Haaste 3: rakenna kytkin",
-      "do": "Ryhmät rakentavat pahvista, kahdesta nastasta ja paperiliittimestä kytkimen, jolla lampun voi sytyttää ja sammuttaa.",
+      "do": "Ryhmät rakentavat pahvista, kahdesta nastasta ja paperiliittimestä kytkimen, jolla lampun voi sytyttää ja sammuttaa. Jos aika ei riitä, jätä kytkin lisähaasteeksi ja siirry lopetukseen.",
       "say": "Nyt tiedätte, mikä johtaa sähköä. Miten saisitte lampun syttymään ja sammumaan irrottamatta johtoja?"
     },
     {
-      "time": "25–30",
+      "time": "18–20",
       "title": "Lopetus",
       "do": "Kokoa ryhmät yhteen. Pyydä jokaista ryhmää kertomaan yksi asia, jonka he huomasivat. Kerää välineet rasioihin.",
       "say": "Mikä yhdisti esineitä, jotka saivat lampun syttymään? Missä kotona on kytkin, joka toimii samalla tavalla?"

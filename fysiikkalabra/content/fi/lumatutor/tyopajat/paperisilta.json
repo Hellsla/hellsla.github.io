@@ -6,7 +6,7 @@
   "short": "Osallistujat suunnittelevat, rakentavat, testaavat ja parantavat paperisillan, joka kantaa mahdollisimman monta kolikkoa.",
   "audience": "alakoulu",
   "topic": "rakenteet",
-  "minutes": 30,
+  "minutes": 20,
   "group": "2–3 osallistujaa ryhmässä",
   "equipment": [
     "arki"
@@ -38,37 +38,37 @@
   ],
   "steps": [
     {
-      "time": "0–3",
+      "time": "0–2",
       "title": "Koukku",
       "do": "Aseta litteä A4-paperi tukien päälle ja laita sen keskelle yksi kolikko mukissa. Paperi taipuu ja muki putoaa.",
       "say": "Tämä paperi ei kanna edes yhtä kolikkoa. Väitän, että samasta paperista voi tehdä sillan, joka kantaa kymmeniä kolikoita. Mitä pitäisi tehdä?"
     },
     {
-      "time": "3–6",
+      "time": "2–4",
       "title": "Ennusta ja suunnittele",
       "do": "Kerro säännöt ja anna jokaiselle ryhmälle paperit ja teippi. Ryhmä piirtää korttiin ensimmäisen idean ja arvaa, montako kolikkoa se kantaa.",
       "say": "Saatte taittaa, rullata ja teipata paperia, mutta ette lisätä mitään muuta. Piirtäkää ensin idea ja arvatkaa, montako kolikkoa se kantaa."
     },
     {
-      "time": "6–13",
+      "time": "4–9",
       "title": "Rakenna ja testaa",
       "do": "Ryhmät rakentavat ensimmäisen sillan ja testaavat sen lisäämällä kolikoita yksi kerrallaan. Kierrä ryhmien luona ja kysy, mikä kohta pettää ensin.",
       "say": "Mikä kohta pettää ensin? Taipuuko silta vai liukuuko se pois tuelta?"
     },
     {
-      "time": "13–21",
+      "time": "9–15",
       "title": "Paranna",
-      "do": "Ryhmät muuttavat siltaa testin perusteella ja rakentavat uuden version jäljellä olevista papereista. Kehota muuttamaan yksi asia kerrallaan.",
+      "do": "Ryhmät muuttavat siltaa testin perusteella ja rakentavat uuden version jäljellä olevista papereista. Kehota muuttamaan yksi asia kerrallaan. Jos aikaa on käytössä $30\\,\\text{min}$, anna tähän vaiheeseen enemmän aikaa.",
       "say": "Mikä yksi muutos voisi auttaa eniten? Kokeilkaa se ja katsokaa, kantaako silta enemmän."
     },
     {
-      "time": "21–26",
+      "time": "15–18",
       "title": "Lopullinen testi",
       "do": "Jokainen ryhmä testaa parhaan siltansa vuorollaan muiden nähden. Laske kolikot ääneen yhdessä. Kirjaa tulokset taululle.",
       "say": "Kaikki testataan samalla tavalla: muki keskelle ja kolikot yksi kerrallaan. Montako kolikkoa oli mukissa, kun silta petti?"
     },
     {
-      "time": "26–30",
+      "time": "18–20",
       "title": "Lopetus",
       "do": "Vertaa siltoja: mitä yhteistä on kestävimmillä? Näytä kuva poikkileikkauksista ja kysy, missä arjessa näkyy sama idea.",
       "say": "Kaikissa silloissa oli yhtä paljon paperia. Miksi toiset kantoivat enemmän?"

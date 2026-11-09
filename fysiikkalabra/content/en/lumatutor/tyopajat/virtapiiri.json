@@ -6,7 +6,7 @@
   "short": "Participants make a bulb light up, find out which materials conduct electricity and build their own switch.",
   "audience": "alakoulu",
   "topic": "sahko",
-  "minutes": 30,
+  "minutes": 20,
   "group": "2–3 participants per group, at most about 16 participants for two tutors",
   "equipment": [
     "paristot",
@@ -48,25 +48,25 @@
       "say": "Here is a battery, a bulb and some wires. When I disconnect this one, the bulb goes out. Why? Your task is to find out what the bulb needs to light up."
     },
     {
-      "time": "3–9",
+      "time": "3–8",
       "title": "Challenge 1: light the bulb",
       "do": "Give the groups a battery holder, a bulb and two leads. Let the groups try for themselves. When the bulb lights, ask them to draw their connection on the researcher card.",
       "say": "Can you make the bulb light? When it lights, show with your finger: which way does the electricity go?"
     },
     {
-      "time": "9–18",
+      "time": "8–14",
       "title": "Challenge 2: what conducts electricity?",
       "do": "Add a third lead to the circuit so that there is a gap in it. The participants first predict for each object whether the bulb will light, and then test it by placing the object in the gap.",
       "say": "Before you try: mark on the card whether the bulb will light when the object is in the gap. Then test it."
     },
     {
-      "time": "18–25",
+      "time": "14–18",
       "title": "Challenge 3: build a switch",
-      "do": "The groups build a switch from cardboard, two drawing pins and a paper clip, so that they can turn the bulb on and off.",
+      "do": "The groups build a switch from cardboard, two drawing pins and a paper clip, so that they can turn the bulb on and off. If time runs short, leave the switch as an extra challenge and go on to the closing.",
       "say": "Now you know what conducts electricity. How could you make the bulb go on and off without disconnecting the leads?"
     },
     {
-      "time": "25–30",
+      "time": "18–20",
       "title": "Closing",
       "do": "Bring the groups together. Ask each group to say one thing they noticed. Collect the equipment into the boxes.",
       "say": "What did the objects that made the bulb light have in common? Where at home is there a switch that works the same way?"
