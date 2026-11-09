@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 8a07abce222b31a4
+CONTENT-HASH: 146da54b10752e46
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] fy5-11 credits list — the heading "Photographs" now lists only a computed image — use a neutral heading such as "Picture credits" when a computed picture is in the list.
 
 ## Checked
-- light delta review (teacher 2026-11-07), after fixes 2: own 390 px (2×) capture of the #credits list in preview/en/fy5-11.html — the entry now reads "Computed model picture: single-slit diffraction in a ripple tank. Ruukkilabra. Computed from a model for this site." (English, no clipping); photos.json diff; page scrollWidth 390, no overflow.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: diffraction figure (diffraktio): narrow slit now 18 px against the 26 px wavefront spacing (0,7 λ), matching the label b < λ and the description; semicircular fronts unchanged, nothing clipped at 390; captures fy5-11-en-390-diffraktio.png, -1280-diffraktio.png. Built preview, own Playwright captures (deviceScaleFactor 1) under /tmp/claude-0/-home-user/61da6444-3d3b-5f0d-8dfa-1c431aff38b7/scratchpad/visual/; inline-KaTeX wrap/overflow check on every changed passage at 390 px: none.

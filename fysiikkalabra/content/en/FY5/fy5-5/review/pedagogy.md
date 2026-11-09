@@ -1,8 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 7d00c1710ea5520b
+CONTENT-HASH: fa4b921e0f83747b
+
 ## Blocking
 
 ## Polish
 
 ## Checked
-light delta review (teacher 2026-11-07): batch delta review of the new Artemis II photo (the caption ties it to equal mutual forces, which is the paragraph's point) and the Cavendish sentence in context. The sentence is clear and agrees with the reworded exercise fy5-5-L3-04. No numbers or symbols changed.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: the two rewritten mistake feedbacks of the optional Kuu-koe numeric task: 0.00272 now names both slips that give that number (m/s² not converted, or km left in r and then converted to mm/s²) and 2.72e-6 names the double slip; both point at the step to fix.

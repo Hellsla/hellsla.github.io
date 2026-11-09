@@ -97,7 +97,7 @@
 **Formula:** $f = \dfrac{1}{T}$, from which $T = \dfrac{1}{f}$
 **Conversions:** $f = 900\,\tfrac{1}{\text{min}} = \dfrac{900}{60\,\text{s}} = 15\,\text{Hz}$; finally $1\,\text{s} = 1000\,\text{ms}$.
 **Substitution:** $T = \dfrac{1}{15\,\tfrac{1}{\text{s}}} = 0.06667\,\text{s} = 0.06667 \cdot 1000\,\text{ms} = 66.67\,\text{ms}$
-**Answer:** $66.7\,\text{ms}$, three significant figures: the count $900$ and the minute are exact numbers.
+**Answer:** $66.7\,\text{ms}$. The count of $900$ a minute is exact, so the result is rounded to the usual three significant figures.
 **Reasonableness:** Another route: a minute has $60\,000\,\text{ms}$, and it is divided among $900$ motions, so one takes $\tfrac{60\,000\,\text{ms}}{900} \approx 67\,\text{ms}$. So the needle moves about $15$ times a second, which fits the fast whirr of a sewing machine.
 
 ## fy5-7-L2-04

@@ -1,8 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 291341ab171a800c
+CONTENT-HASH: 6e488fc558e8d4f6
+
 ## Blocking
 
 ## Polish
-- *heijastuslaki*: "samassa kulmassa, jossa se tulee pinnalle" ei mainitse normaalia, vaikka teksti korostaa, että kulmat mitataan normaalista. Esim. "Heijastuskulma on yhtä suuri kuin tulokulma. Kulmat mitataan pinnan normaalista."
+
 ## Checked
-batch delta review: added meta.json key_concepts ("Luvun tärkeät käsitteet") read against lesson.md: every term is a term the lesson bolds and uses, each explanation is short S2 Finnish, physically correct and consistent with the lesson's own definition, wording, tasks and feedback; no numbers or symbols changed, nothing in the lesson disclosed or removed.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: the narrowed right-hand slit of the diffraction figure: it is now visibly narrower than the wavelength, matching its b < λ label and description.

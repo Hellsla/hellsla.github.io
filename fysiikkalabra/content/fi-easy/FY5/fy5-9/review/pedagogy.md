@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: e960fc0ad1c58628
+CONTENT-HASH: 46c2c34f09efa7c0
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-light delta review (teacher 2026-11-07), after fixes: "Silloin kello ei edistä eikä jätätä" is the standard clock idiom and fits the paragraph; earlier Polish resolved.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: the redrawn dashed path of the pendulum figure, which now ends at the extreme position the figure shows; no text changed.

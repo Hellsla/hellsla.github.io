@@ -97,7 +97,7 @@
 **Kaava:** $f = \dfrac{1}{T}$, josta $T = \dfrac{1}{f}$
 **Muunnokset:** $f = 900\,\tfrac{1}{\text{min}} = \dfrac{900}{60\,\text{s}} = 15\,\text{Hz}$; lopuksi $1\,\text{s} = 1000\,\text{ms}$.
 **Sijoitus:** $T = \dfrac{1}{15\,\tfrac{1}{\text{s}}} = 0{,}06667\,\text{s} = 0{,}06667 \cdot 1000\,\text{ms} = 66{,}67\,\text{ms}$
-**Vastaus:** $66{,}7\,\text{ms}$, kolme merkitsevää numeroa, koska lukumäärä $900$ ja minuutti ovat tarkkoja lukuja.
+**Vastaus:** $66{,}7\,\text{ms}$. Lukumäärä $900$ kertaa minuutissa on tarkka. Siksi tulos pyöristetään tavalliseen kolmeen merkitsevään numeroon.
 **Järkevyys:** Toinen reitti: minuutissa on $60\,000\,\text{ms}$, ja se jakautuu $900$ liikkeelle, joten yksi kestää $\tfrac{60\,000\,\text{ms}}{900} \approx 67\,\text{ms}$. Neula liikkuu siis noin $15$ kertaa sekunnissa. Se sopii ompelukoneen nopeaan surinaan.
 
 ## fy5-7-L2-04

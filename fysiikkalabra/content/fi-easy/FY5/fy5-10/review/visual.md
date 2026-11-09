@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 5e67d8c09b2d9382
+CONTENT-HASH: 450033aa73590cf0
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] lesson.md "Aalto on etenevä häiriö" (about 137 words) and "Nopeus riippuu väliaineesta, taajuus lähteestä" (about 139 words): the new hedges push both paragraphs past the roughly 120-word limit, each about 700 px tall at 390 px. Fix: start a new paragraph at "Tämä pätee ideaaliseen aaltomalliin …" and at "Tämä ei kuitenkaan päde kaikkiin aaltoihin." Each hedge then reads as its own idea.
 
 ## Checked
-- light delta review (teacher 2026-11-07): I captured and opened both changed theory paragraphs, the Tiivistelmä bullet and the opened exit-ticket answer at 390 px from the rebuilt preview, and both paragraphs at 1280 px. The new term "dispersiivinen" is explained in the same sentence it appears in. The °C and m/s values stay on one line, nothing is clipped, and a scan found no inline formula that wraps.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: theory, Periaate step, "Nopeuden voi muuttaa vain …", sim model note, Koe 3 title, result text, rubric line, exercise feedback/solutions with the new "jännitys ja massa pituusyksikköä kohti" wording; units LaTeX, no inline formula wraps at 390; captures fy5-10-fi-easy-390/1280-teoria, -periaate, -vain, -model, -koe3, -tulos, -rubric.png. Built preview, own Playwright captures (deviceScaleFactor 1) under /tmp/claude-0/-home-user/61da6444-3d3b-5f0d-8dfa-1c431aff38b7/scratchpad/visual/; inline-KaTeX wrap/overflow check on every changed passage at 390 px: none.

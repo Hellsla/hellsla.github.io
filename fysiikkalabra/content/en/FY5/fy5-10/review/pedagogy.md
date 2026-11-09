@@ -1,12 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 82182e756639fe8e
+CONTENT-HASH: 582c5df6e9d91c3f
 
 ## Blocking
-(none)
 
 ## Polish
-- lesson.md:137 — the paragraph is about 200 words; start a new paragraph at "Real waves can also carry a little matter", so the ideal-model idea ends its own paragraph.
-- lesson.md:272 — the paragraph is about 200 words; start a new paragraph at "This is not a general law for all waves", so the rope rule (speed set by the medium) stays the core idea.
 
 ## Checked
-light delta review (teacher 2026-11-07), after fixes: "This is why the bell ..." now follows "energy ... but not matter" directly; the drift remark comes after; earlier Polish resolved.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: the replacement of 'väliaine eli naru ja sen jännitys' by the rope's properties (tension and mass per unit length) in the theory, worked example, misconception box, sim model notes, experiment 3 title and the conclusion's model answer; the last criterion is observable and now assesses both halves of what the prompt asks about experiment 3. Terms and the tension-only model are consistent.

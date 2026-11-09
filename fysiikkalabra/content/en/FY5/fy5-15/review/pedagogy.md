@@ -1,12 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 977ddad9a5067b61
+CONTENT-HASH: 645300f76b18132d
 
 ## Blocking
-(none)
 
 ## Polish
-- lesson.md:218 — the photo caption has three extra sentences and uses "A-weighted sound pressure level" and "unweighted" before the text introduces them; keep one sentence, e.g. "The display shows the A-weighted sound level in decibels (see *What a meter measures*)."
-- lesson.md:271 — "their energy flows partly cancel" is opaque for a 17-year-old; e.g. "the waves travel in many directions, so the pressure is larger than the net flow of energy would suggest".
 
 ## Checked
-light delta review (teacher 2026-11-07), after fixes 2: The decibel scale now opens "Because the range is so wide, ...", so the reason for the scale is explicit; earlier Polish resolved.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: the rule paragraph in the lesson (same tone in phase reinforces at some places and weakens at others, chapter cited by name) and the corrected sim model note, which now puts the interfering loudspeakers at different places, so it no longer contradicts the co-located setup or suggests that interference always gives a pattern.

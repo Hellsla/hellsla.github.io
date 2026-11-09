@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 0dc75d7c4482d80e
+CONTENT-HASH: 507fa7be4637cf19
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- light delta review (teacher 2026-11-07), after fixes: HEAD~1 diff: ideal reflection stated before the sum; the remark that a weaker real reflected wave makes even the nodes vibrate slightly moved after the node/antinode spacing (λ/2, λ/4); consistent with the stated assumption, physics correct.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: Checked the new opening question (pitch rises with tension and with a shorter vibrating length) and the added sim-model sentence that in the tube the drawn displacement is air displacement along the tube, so nodes and antinodes are displacement nodes and antinodes, consistent with the antinode at the open end.

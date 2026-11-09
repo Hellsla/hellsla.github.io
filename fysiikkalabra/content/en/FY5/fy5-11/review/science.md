@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: bdfbb79adbe6821f
+CONTENT-HASH: 146da54b10752e46
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-batch delta review: chapter titles renamed in the title, meta and every chapter reference; every reference names the current title of the right chapter (no stale old title left in content/en/FY5); opening illustration restyled (no SVG text changed); no formula, number, option or feedback physics changed; every changed choice keeps its single correct option.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: Checked the diffraction figure: half-width 0.35λ gives slit width 0.7λ, consistent with the label b < λ and the alt text; inline SVG barrier rectangles (y 44–181, 199–336) match yc ± 0.35·26 px.

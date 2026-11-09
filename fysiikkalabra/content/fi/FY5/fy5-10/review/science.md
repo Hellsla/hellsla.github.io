@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: be1ccffb88eff6c2
+CONTENT-HASH: 14a6b7b2f3b670f5
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- light delta review (teacher 2026-11-07), after fixes: HEAD~1 diff: the bell sentence now follows directly from 'energy but not matter' in the ideal wave model, and the real-wave net transport (Stokes drift of a floating object) comes after it; causality and the ideal-model qualifier correct, no new error.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: Checked every changed passage in lesson, inquiry (model, Koe 3 title, explain model answer and criterion) for the rope: speed depends on the medium's properties, for a rope its tension and mass per unit length, tension is no longer called the medium, and the sim model now states that mass per unit length is constant; the new criterion asks only what the prompt asks (wavelength in Koe 3). Searched the lesson for leftover medium = tension wording: none.

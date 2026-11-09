@@ -1,20 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: caa49ffb8ee68be0
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 428b1dee26536b75
 
 ## Blocking
-(none)
-
-## Fixed
-(none needed)
 
 ## Polish
-(none)
 
 ## Checked
-- New task fy5-7-L1-09 (a four-option graph choice (f = 2.0 Hz, A = 3.0 cm gives T = 0.50 s, graph B)) compared with content/fi: answer, unit, tolerance, correct flags, choices/statements/order, every number and formula identical; English decimal point used; wording natural.
-- Recomputed independently: answers and all numbers in the task and its solution agree with fi.
-- solutions.md section for fy5-7-L1-09: same structure and numbers as fi; the physics and its conditions unchanged.
-- Option figures pick-a3-t1, pick-a3-t05, pick-a15-t05, pick-a3-t2: en figures.json descriptions match lessons/FY5/fy5-7/figures.py (peaks, periods, first peak times) and the choice-to-figure mapping equals fi.
-- check_i18n.py: no errors for fy5-7; build.py fy5-7 succeeds.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: Recomputed L2-03 T = 60 000 ms / 900 = 66.67 ms → 66.7 ms (the reworded reason, 900 per minute exact so the usual three significant figures, holds) and L3-04 p = (4.96/2.77 − 1)·100 % = 79.06 % → 79.1 % (time uncertainty ±0.005 s gives about ±0.5 %, so three figures fit); answers.py, exercises.json (tolerance 0.02) and solutions agree in all three languages.

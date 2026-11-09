@@ -1,19 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: caa49ffb8ee68be0
-Mode: delta (new task fy5-7-L1-09), Round 1
+CONTENT-HASH: 428b1dee26536b75
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] pick-* graphs — y axis runs to -4 but only -3..4 labelled at the bottom (tick -4 unnumbered); label it or end the axis at -3.5.
-- [Minor] option order — the letters appear shuffled (B, D, C, A) so the list reads unordered; sort by letter if the shuffle may keep labels.
-- [Minor] pick-* graphs — tick numerals about 13 px on a phone; legible but small.
 
 ## Checked
-- Own render of fy5-7-L1-09 (en) at 390 px, all options answered, feedback and solution open, after page scripts: scrollWidth 390, no clipped element outside scroll boxes, no KaTeX errors or raw $ source; opened en-fy5-7-L1-09.png.
-- Opened all four option figures at 2x (en-opts.png): same axes, scale and stroke in each, curve starts upward from 0, dashed equilibrium line; labels t (s), x (cm) translated/decimal comma correctly in en; aria-labels translated and match the curves (A: peaks 0.25 s/period 1.0 s; B: 4 oscillations; C: 1.5 cm; D: 1 oscillation).
-- Quantities with units are inline maths, solution rows break as designed, no wide-formula problem.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: solutions of L2-03 ($66.7\,\text{ms}$; reworded: exact count $900$ per minute, usual three significant figures) and L3-04 ($79.1\,\%$ with $4.96\,\text{s}$, $2.77\,\text{s}$) opened with ?ratkaisut=1; units LaTeX, decimal comma, no wrap at 390; captures fy5-7-en-390/1280-sol-a.png, -sol-b.png. Built preview, own Playwright captures under /tmp/claude-0/-home-user/61da6444-3d3b-5f0d-8dfa-1c431aff38b7/scratchpad/visual/; no inline formula wraps at 390 px.

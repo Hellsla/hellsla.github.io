@@ -1,12 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: c74d89688be36f47
+CONTENT-HASH: 04e865d86ab662a1
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] lesson.md "Mitä mittari mittaa" — $p_0 = 20\,\mu\text{Pa}$ renders the prefix µ italic — set the unit upright (e.g. \text{µPa}).
-- [Minor] lesson.md Esimerkki, Tunnetut ja kysytty — still "kuulokynnys $I_0$" while the formula text and summary now say "vertailuintensiteetti" — use "vertailuintensiteetti $I_0$".
 
 ## Checked
-- light delta review (teacher 2026-11-07): the photo caption (Chengdu meter, 320 px, credit), the threshold and dB-scale paragraphs, the new section "Mitä mittari mittaa", the formula definition line, the example's task, Tunnetut and Tulos, the summary bullets and the exit ticket at 390 px. No inline formula wraps, scrollWidth 390.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: theory paragraph ("samassa vaiheessa … vahvistavat toisiaan …") and the reworded model sentence (loudspeakers at different places would interfere); no inline wrap at 390; captures fy5-15-fi-390/1280-teoria.png, -model.png. Built preview, own Playwright captures (deviceScaleFactor 1) under /tmp/claude-0/-home-user/61da6444-3d3b-5f0d-8dfa-1c431aff38b7/scratchpad/visual/; inline-KaTeX wrap/overflow check on every changed passage at 390 px: none.

@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 8abde523421734f2
+CONTENT-HASH: 0bd8eebc4458e20c
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- light delta review (teacher 2026-11-07), round 2: HEAD~1 diff: the repeated Cavendish sentence removed; the remaining text (1798, Earth's mean density, γ from his result) correct; earlier Polish fixed.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: Recomputed the Kuu-koe numbers: $4\pi^2 r/T^2 = 2.724\cdot10^{-3}$ m/s² = 2.72 mm/s²; 0.00272 is both the m/s² value and the km-left value converted to mm/s², and 2.72e-6 is km left and not converted, so both rewritten mistake feedbacks are right.

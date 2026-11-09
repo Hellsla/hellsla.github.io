@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: b9fdc006f8109f4b
+CONTENT-HASH: ef7663fc7b618aab
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-light delta review (teacher 2026-11-07): only the changed passages of the batch packet's diff (= git diff origin/main) judged in context, not a full review; Δv direction (inward, parallel to midpoint-to-centre line, instantaneous a_n towards centre in the limit) correct; centrifugal force only as a fictitious force in the turning frame, ground-frame force diagrams with real forces only; exit ticket, inquiry model and summary consistent; numbers unchanged.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: Checked the added note in the car sim model: kinetic friction is usually smaller than the maximum static friction, and tyre rolling and steering also matter, which states the condition of the model's use of $\mu_0 mg$ during a skid; physics correct and the same in all three languages.

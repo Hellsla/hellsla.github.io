@@ -1,12 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: be1ccffb88eff6c2
+CONTENT-HASH: 14a6b7b2f3b670f5
 
 ## Blocking
-(none)
 
 ## Polish
-- lesson.md:272 — the tsunami sentence (speed depends on sea depth) does not illustrate the point just made (speed depending on frequency/wavelength); drop it or say it shows dependence on the medium.
-- exit-ticket.json:4 — "ainakaan ideaalisessa aaltomallissa" sounds like doubt about the core answer; the lesson text already carries the hedge: "Aalto kuljettaa energiaa mutta ei ainetta."
 
 ## Checked
-light delta review (teacher 2026-11-07), after fixes: lesson.md:137 — the bell sentence now follows "energiaa ... mutta ei ainetta" directly and the water-wave drift comes last; earlier Blocking resolved, core idea in front.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: the replacement of 'väliaine eli naru ja sen jännitys' by the rope's properties (tension and mass per unit length) in the theory, worked example, misconception box, sim model notes, experiment 3 title and the conclusion's model answer; the last criterion is observable and now assesses both halves of what the prompt asks about experiment 3. Terms and the tension-only model are consistent.

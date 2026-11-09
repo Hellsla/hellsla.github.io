@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 782d8d9bf631068a
+CONTENT-HASH: 2355a3e085de0f9e
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-light delta review (teacher 2026-11-07): only the passages changed against origin/main were judged, in context; no full review was done even where the tooling asks for one. Pendulum period grows slightly at large angles (table T:T0 1.002/1.008/1.031/1.073 recomputed from the exact series: correct, table is above line 356); clock argument (amplitude kept constant and small because T depends slightly on amplitude) correct.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: Checked the pendulum force diagram path arc in figures.py and the inline SVG: the arc now spans ±α = ±35° and its end (362, 228.5) coincides with the bob centre (361.9, 228.4) at the extreme position; forces unchanged.

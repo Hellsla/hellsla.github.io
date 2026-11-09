@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 291341ab171a800c
+CONTENT-HASH: 6e488fc558e8d4f6
 
 ## Blocking
-(none)
 
 ## Polish
-- heijastuslaki: the lesson measures both angles from the normal; "normaaliin nähden" would match it. The sentence is not wrong as written.
 
 ## Checked
-batch delta review: added meta.json key_concepts (Luvun tärkeät käsitteet) checked term by term against the lesson's own definitions, summary and the physics guardrails; no number, formula or choice changed. Terms: heijastuminen, heijastuslaki, Huygensin periaate and diffraktio agree with the lesson.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: Checked the diffraction figure: half-width 0.35λ gives slit width 0.7λ, consistent with the label b < λ and the alt text; inline SVG barrier rectangles (y 44–181, 199–336) match yc ± 0.35·26 px.

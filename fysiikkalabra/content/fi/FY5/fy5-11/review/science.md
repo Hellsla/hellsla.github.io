@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 7a5ea454bf870fc1
+CONTENT-HASH: 8132c9436beee126
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: the diff only renames this and neighbouring FY5 chapters (title, meta.json, `luku *...*` references in lesson.md and inquiry.json); every renamed reference names the chapter that holds the cited content, and no formula, number, option, `correct` flag or feedback physics changed. Opening illustration redrawn: its alt text and capture show the situation correctly (no labels or numbers in the lesson's other figures changed). Every choice still has exactly one correct option.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: Checked the diffraction figure: half-width 0.35λ gives slit width 0.7λ, consistent with the label b < λ and the alt text; inline SVG barrier rectangles (y 44–181, 199–336) match yc ± 0.35·26 px.

@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: d1f04d839bde9393
+CONTENT-HASH: 6d9e753be2010433
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-light delta review (teacher 2026-11-07): only the changed passages of the batch packet's diff (= git diff origin/main) judged in context, not a full review; reflection percentages as typical normal-incidence model values depending on tissue and angle; ultrasound non-ionising but heating and cavitation, so power and duration limited: correct.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: Recomputed Δd = 1540 m/s · 40 µs / 2 = 3.08 cm; answer 3.1 cm with tolerance 0.03 accepts 3.08 (and the one-last-digit check accepts 3.0–3.2, within the ±2 µs reading uncertainty of Δt); the new two-significant-figure reason (5 µs grid, ~1 µs reading) holds; mistakes 6.16 and 6.93 still distinct.

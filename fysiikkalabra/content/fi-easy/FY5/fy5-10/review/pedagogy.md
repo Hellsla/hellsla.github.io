@@ -1,12 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 5e67d8c09b2d9382
+CONTENT-HASH: 450033aa73590cf0
 
 ## Blocking
-(none)
 
 ## Polish
-- lesson.md:272 — "Tsunamin hyvin pitkä aalto ..." is about the medium, not frequency, so after "Tämä ei kuitenkaan päde kaikkiin aaltoihin" it muddles the point; drop it or say it shows depth setting the speed.
-- lesson.md:137, 272 — both paragraphs about 132 words (rule about 120); split each where the hedge begins (137: at "Tämä pätee ideaaliseen aaltomalliin").
 
 ## Checked
-light delta review (teacher 2026-11-07), after fixes: "Aalto kuljettaa siis energiaa ... mutta ei ainetta" now follows the particle sentences and the bell example; the ideal-model hedge comes last; earlier Blocking resolved.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: the replacement of 'väliaine eli naru ja sen jännitys' by the rope's properties (tension and mass per unit length) in the theory, worked example, misconception box, sim model notes, experiment 3 title and the conclusion's model answer; the last criterion is observable and now assesses both halves of what the prompt asks about experiment 3. Terms and the tension-only model are consistent. Selkeä suomi: short sentences, colon lists kept simple.

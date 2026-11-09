@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 8abde523421734f2
+CONTENT-HASH: 0bd8eebc4458e20c
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-light delta review (teacher 2026-11-07): only the changed passages were judged, in context of the surrounding text, tasks, feedback and solutions; no full review even where the tooling asks for one; physics left to the science review; Artemis II photo caption ties to the equal-force idea; Cavendish sentence matches the exercise L3-04 stem and solution.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: the two rewritten mistake feedbacks of the optional Kuu-koe numeric task: 0.00272 now names both slips that give that number (m/s² not converted, or km left in r and then converted to mm/s²) and 2.72e-6 names the double slip; both point at the step to fix. Selkeä suomi: short sentences.

@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 6647fdd12f20f60e
+CONTENT-HASH: cb309d9d31c54b23
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] lesson.md, Noise at work in law — the paragraph grew to 222 words (37 lines at 390 px; the Finnish source 136, lint warning) — split it after "must not exceed it." into duties at the action values / limit value and A-/C-weighting, in both languages.
-- [Minor] lesson.md, Dose: level and time — "can shorten many times over the time in which the same dose builds up" — "can make the same dose build up in a fraction of the time".
+- [Minor] lesson.md, new sentence — sentence-initial "Exactly," reads as an interjection — "Strictly, doubling the intensity raises the level by …" (or "More precisely, …").
 
 ## Checked
-- light delta review (teacher 2026-11-07), after fixes 2: own 390 px (2×) captures of the "Assess what you learned" box in preview/en/fy5-16.html and preview/fy5-16.html — goal 1 now reads "I can assess the harm of noise and calculate the reference time of a noise dose." / "Osaan arvioida melun haittoja ja laskea melualtistuksen vertailuajan.", consistent with the theory's reference time; wraps cleanly, rating buttons intact; itsearvio en/fi diff; page scrollWidth 390.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: new sentence $10\,\text{dB} \cdot \lg 2 \approx 3{,}01\,\text{dB}$ stays on one line at 390 (\cdot used, decimal comma in fi), "likimain" in the model note; captures fy5-16-en-390/1280-teoria.png, -model.png. Built preview, own Playwright captures (deviceScaleFactor 1) under /tmp/claude-0/-home-user/61da6444-3d3b-5f0d-8dfa-1c431aff38b7/scratchpad/visual/; inline-KaTeX wrap/overflow check on every changed passage at 390 px: none.

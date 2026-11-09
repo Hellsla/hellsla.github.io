@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 5bc694b064e3028d
+CONTENT-HASH: e29d9c5cb47aab9c
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- light delta review (teacher 2026-11-07): only the passages changed against origin/main were judged, in context, not a full review; reflection percentages now labelled as typical model values for normal incidence (they depend on tissues and angle): correct; non-ionising but not harmless (heating, cavitation), limits on power and duration and examination only when needed: correct and suitably worded as safety content.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: Recomputed Δd = 1540 m/s · 40 µs / 2 = 3.08 cm; answer 3.1 cm with tolerance 0.03 accepts 3.08 (and the one-last-digit check accepts 3.0–3.2, within the ±2 µs reading uncertainty of Δt); the new two-significant-figure reason (5 µs grid, ~1 µs reading) holds; mistakes 6.16 and 6.93 still distinct.

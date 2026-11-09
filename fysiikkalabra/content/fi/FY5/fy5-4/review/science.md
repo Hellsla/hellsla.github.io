@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 6ecad806cab2ad38
+CONTENT-HASH: c11ad363eb6f117b
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- light delta review (teacher 2026-11-07): only the passages changed against origin/main were judged, in context, not a full review; Δv over a finite interval points inward, parallel to the radius at the interval's midpoint, and tends to the radial direction as the interval shrinks: correct and consistent with the muutos figure (Δv drawn at the midpoint, straight down); centrifugal force only as a fictitious force in the car's rotating frame, no real one in the ground frame: correct and the same in the misconception section, summary, exit ticket and inquiry model answer.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: Checked the added note in the car sim model: kinetic friction is usually smaller than the maximum static friction, and tyre rolling and steering also matter, which states the condition of the model's use of $\mu_0 mg$ during a skid; physics correct and the same in all three languages.

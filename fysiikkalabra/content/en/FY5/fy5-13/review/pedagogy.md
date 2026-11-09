@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 45e3242fc73a538e
+CONTENT-HASH: d5d110ef90ffc440
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-light delta review (teacher 2026-11-07), after fixes: the weaker-reflection remark now follows the node/antinode definitions ("even the nodes vibrate a little"), the build-up paragraph keeps only the ideal assumption; earlier Polish resolved.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: the rewritten opening Miksi question (definite pitch; rise when tightened or the vibrating part is shortened), which still motivates and now names the length cause, and the added sim note that in the pipe displacement means the air's displacement along the pipe, so nodes and antinodes are displacement nodes and antinodes.

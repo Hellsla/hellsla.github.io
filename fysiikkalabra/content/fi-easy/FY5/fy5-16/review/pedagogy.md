@@ -1,12 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: f3a92ad89167f2ed
+CONTENT-HASH: 86fddac9576823e7
 
 ## Blocking
-(none)
 
 ## Polish
-- lesson.md:134 — the asetus paragraph is 142 words (rule about 120); split before "Toiminta-arvoihin sen sijaan verrataan".
-- inquiry.json:58 — "Kuinka kauan suunnilleen kestää, että melutasossa 94 dB korvaan kertyy..." is clumsy; "Kuinka kauan suunnilleen kestää, ennen kuin korvaan kertyy sama äänienergian annos tasolla 94 dB?"
 
 ## Checked
-light delta review (teacher 2026-11-07), after fixes: "Se on laskennallinen vertailuarvo" is short and plain and keeps the not-safe point.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: the 'likimain' added to the sim model answer and the new sentence that doubling gives exactly 10 dB · lg 2 ≈ 3.01 dB, so 3 dB is a practical rule; short and clarifying, no wall of text. Selkeä suomi: short sentences.

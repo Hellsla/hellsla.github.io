@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: cc23e4c2ca6e21a8
+CONTENT-HASH: 318947dcf5129922
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-light delta review (teacher 2026-11-07): two added sentences only (percentages as model values, cavitation); own 390 px element captures of the current built page preview/en/fy5-17.html (hash unchanged since the stamped review/shots), inline KaTeX wrap scan of the whole page: none wraps.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: rewritten Vastaus of the ultrasound task (answer 3,1 cm, reading accuracy $5\,\mu\text{s}$ / $1\,\mu\text{s}$ in LaTeX, glued case endings), no wrap at 390; captures fy5-17-en-390-sol.png, -1280-sol.png. Built preview, own Playwright captures (deviceScaleFactor 1) under /tmp/claude-0/-home-user/61da6444-3d3b-5f0d-8dfa-1c431aff38b7/scratchpad/visual/; inline-KaTeX wrap/overflow check on every changed passage at 390 px: none.
