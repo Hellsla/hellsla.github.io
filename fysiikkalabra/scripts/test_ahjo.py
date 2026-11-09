@@ -172,7 +172,19 @@ for lang in i18n.languages():
                        and "ahjo-projektipaivakirja.html" in lm)
             expect(f"{tag}: what you need, and the lesson's safety topics linked with their status still being prepared",
                    all(ahjo.esc(x) in lm for x in l["needs"]) and all(f'href="{ahjo.SAFETY}#{s}"' in lm for s in l.get("safety", []))
-                   and (not l.get("safety") or ahjo.esc(u["lesson_safety_note"]) in lm) and (l.get("safety") or ahjo.esc(u["lesson_safety_none"]) in lm))
+                   and (not l.get("safety") or ahjo.esc(u["lesson_safety_note"]) in lm) and (l.get("safety") or l.get("safety_note") or ahjo.esc(u["lesson_safety_none"]) in lm))
+            expect(f"{tag}: the lesson's own safety note is shown, and 'no devices' only where the lesson has neither topics nor a note (teacher 2026-11-09)",
+                   (not l.get("safety_note") or f'<p class="ahjo-lside-own">{ahjo.esc(l["safety_note"])}</p>' in lm)
+                   and ((ahjo.esc(u["lesson_safety_none"]) in lm) == (not l.get("safety") and not l.get("safety_note"))))
+            peer = re.search(r'<section class="ahjo-lsec ahjo-peer".*?</section>', lm, re.S)
+            expect(f"{tag}: the together part (peers) is shown where the lesson has one, and it is not a hand-in",
+                   bool(peer) == bool(l.get("peer")) and (not peer or (ahjo.esc(l["peer"]) in peer.group(0) and "ahjo-milestone" not in peer.group(0)
+                                                                      and not (l.get("milestone") and ahjo.esc(l["milestone"]) in peer.group(0)))))
+            sts = [x for x in d.get("starters", []) if x["id"] in l.get("starters", [])]
+            expect(f"{tag}: its starter files are linked with their note (untested, the teacher prints or tries them first)",
+                   all(re.search(rf'href="(?:\.\./)?{ahjo.STARTERS_PUB}/{re.escape(x["file"])}" download', lm) and ahjo.esc(x["note"]) in lm and (SITE / ahjo.STARTERS_PUB / x["file"]).is_file() for x in sts))
+            if c["code"] == "AHJO2":
+                expect(f"{tag}: says that the lesson guides the project and does not bind every group (teacher 2026-11-09)", ahjo.esc(u["lesson_pace"]) in lm)
             pager = re.search(r'<nav class="ahjo-pager".*?</nav>', lm, re.S)
             pg = pager.group(0) if pager else ""
             expect(f"{tag}: back to the course and to the previous and next lesson",
@@ -186,6 +198,46 @@ for lang in i18n.languages():
     expect(f"{lang}: the front page lists Ahjo 1 and Ahjo 2, each linking its course page with its icon (teacher 2026-11-08)",
            rows is not None and [h for h in re.findall(r'href="([^"]+)"', rows.group(1))] == [ahjo.course_page(c["code"]) for c in d["courses"]]
            and all(f'module-icons/{c["code"].lower()}.svg' in rows.group(1) for c in d["courses"]))
+# contradictions in the data (teacher 2026-11-09): deterministic, so they cannot come back
+import ahjo_starters
+expect("the starter files are what scripts/ahjo_starters.py writes", all((ahjo.STARTERS / n).is_file() and (ahjo.STARTERS / n).read_text() == t for n, t in ahjo_starters.files().items()))
+for lang in i18n.languages():
+    d = ahjo.load(lang); u = d["ui"]
+    expect(f"{lang}: every starter file says it is untested or a template, never approved",
+           all(re.search(r"testaamaton|untested|pohja|template|kokeillut|tried", x["note"], re.I) and not re.search(r"hyväksytty|approved|\btestattu\b|\btested\b", x["note"], re.I) for x in d["starters"]))
+    WORK = re.compile(r"prototyyp|prototype|tulost|print|arduino|robot|servo|moottor|motor|parist|batter|\bled|pahvi|cardboard|sakse|scissor|työkalu|tool|laitte|device|kuorm|load|juot|solder", re.I)
+    for c in d["courses"]:
+        for i, l in enumerate(c["lessons"], 1):
+            said = " ".join([l.get("start", ""), l.get("example", ""), l.get("output", "")] + list(l.get("levels", {}).values()) + l.get("needs", []))
+            expect(f"{lang} {c['code']} lesson {i}: a lesson that builds or tests something does not say 'no devices' (it has safety topics or its own note)",
+                   not WORK.search(said) or bool(l.get("safety") or l.get("safety_note")), WORK.search(said).group(0) if WORK.search(said) else None)
+    a1 = {i: l for i, l in enumerate(d["courses"][0]["lessons"], 1)}
+    expect(f"{lang} AHJO1: lessons 7, 10 and 11 start from their own wiring guide (LED from 5V, serial plotter, servo), not from a measuring program's page",
+           [a1[n]["guides"][0] for n in (7, 10, 11)] == ["ahjo-led-piiri", "ahjo-sarjaplotteri", "ahjo-servo"])
+    expect(f"{lang} AHJO1 lesson 7: two LEDs and two resistors in the materials, as each parallel branch has its own resistor",
+           re.search(r"(kaksi|two) 330 Ω", " ".join(a1[7]["needs"])) is not None and re.search(r"(kaksi|two) LED", " ".join(a1[7]["needs"])) is not None)
+    expect(f"{lang} AHJO1 lessons 4, 5, 6, 8: the fit test, load test, before/after and battery estimate are in the basic level",
+           all(re.search(k, a1[n]["levels"]["try"], re.I) for n, k in ((4, "sovitekoe|sovitekok|fit test"), (5, "kuorma|kolik|load|coin"), (8, "arvio|estimate"))) and re.search(r"ennen ja jälkeen|before.and.after", a1[6]["output"], re.I))
+    expect(f"{lang} AHJO1 lesson 15: build, test, change and test again, and a failed change is accepted", re.search(r"testaa uudelleen|test again|uusi testi|new test", a1[15]["output"] + a1[15]["levels"]["modify"], re.I)
+           and re.search(r"ei tarvitse onnistua|epäonnist|ei onnistunut|does not have to succeed|fail|did not", a1[15]["output"] + a1[15]["levels"]["modify"], re.I))
+    hand = [l for c in d["courses"] for l in c["lessons"] if l.get("milestone")]
+    expect(f"{lang}: the peer practices add no hand-ins (still five, all in Ahjo 2)", len(hand) == 5 and all(not l.get("milestone") for l in d["courses"][0]["lessons"]))
+    for g in ("ahjo-led-piiri", "ahjo-sarjaplotteri", "ahjo-servo"):
+        t = ahjo.guide_file(g, lang).read_text()
+        expect(f"{lang} {g}: the guide has code or wiring, and troubleshooting", "<svg data-fig=" in t and t.count("\n| ") >= 4)
+    t = ahjo.guide_file("ahjo-led-piiri", lang).read_text()
+    expect(f"{lang} ahjo-led-piiri: no program is needed, and each parallel branch has its own resistor", "```" not in t and re.search(r"oma \$330|own \$330", t) is not None)
+    t = ahjo.guide_file("ahjo-sarjaplotteri", lang).read_text()
+    expect(f"{lang} ahjo-sarjaplotteri: the program in the guide is the starter sketch's, at the plotter's speed", "Serial.begin(9600)" in t and "9600" in ahjo_starters.SKETCH
+           and "analogRead(SENSOR_PIN)" in t and "analogRead(SENSOR_PIN)" in ahjo_starters.SKETCH and "Vernier" not in t)
+fi, easy = ahjo.load(), ahjo.load("fi-easy")
+key = lambda d: [(l.get("start"), l.get("example"), l.get("peer"), l.get("safety_note"), tuple(l.get("levels", {}).values())) for c in d["courses"] for l in c["lessons"]]
+diff = sum(a != b for a, b in zip(key(fi), key(easy)))
+expect("fi-easy: the key student instructions are rewritten in selkosuomi (not the Finnish text copied)", ahjo.data_file("fi-easy") != ahjo.SOURCE and diff == 32, diff)
+expect("fi-easy: shorter sentences than the Finnish in the lessons' instructions",
+       (lambda w: w(easy) < w(fi))(lambda d: sum(len(s.split()) for x in key(d) for v in x for s in re.split(r"[.?!]", " ".join(v) if isinstance(v, tuple) else (v or "")) if s.strip())
+                                    / max(1, sum(1 for x in key(d) for v in x for s in re.split(r"[.?!]", " ".join(v) if isinstance(v, tuple) else (v or "")) if s.strip()))))
+
 import module_icons
 expect("Ahjo 1's and Ahjo 2's icons are the teacher's choice (1a, 2a), drawn on the logo's anvil", all(module_icons.file(c).read_text() == ahjo.course_icon_svg(c) for c in ahjo.COURSE_ICON_TITLES))
 expect("the header's Ruukkilabra symbol in Kiviruukin lukio's colours is up to date", ahjo.SITE_MARK_KR.is_file() and ahjo.SITE_MARK_KR.read_text() == ahjo.site_mark_kiviruukki())
@@ -206,7 +258,7 @@ try:
         gpages = [f"{g}.html" for g in ahjo.ready_guides(ahjo.load())]
         for name in ["ahjo.html", "ahjo-1.html", "ahjo-2.html", "ahjo-materiaalit.html", "ahjo-turvallisuus.html", "ahjo-projektit.html", "en/ahjo.html", "en/ahjo-1.html", "en/ahjo-projektit.html",
                      "ahjo-1-tunti-1.html", "ahjo-1-tunti-3.html", "ahjo-1-tunti-9.html", "ahjo-1-tunti-14.html", "ahjo-2-tunti-1.html", "ahjo-2-tunti-5.html",
-                     "ahjo-2-tunti-16.html", "en/ahjo-2.html", "en/ahjo-1-tunti-7.html", "en/ahjo-2-tunti-9.html", "fi-easy/ahjo-1-tunti-12.html"] + gpages + ["en/" + g for g in gpages]:
+                     "ahjo-2-tunti-16.html", "en/ahjo-2.html", "en/ahjo-1-tunti-7.html", "en/ahjo-2-tunti-9.html", "fi-easy/ahjo-1-tunti-12.html", "fi-easy/ahjo-1-tunti-5.html", "fi-easy/ahjo-2-tunti-9.html"] + gpages + ["en/" + g for g in gpages]:
             for w in (360, 768, 1280):
                 pg = b.new_page(viewport={"width": w, "height": 900}); pg.goto(f"http://localhost:{port}/{name}")
                 ov = pg.evaluate("document.documentElement.scrollWidth - innerWidth")

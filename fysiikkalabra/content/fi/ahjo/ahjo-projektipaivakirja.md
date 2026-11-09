@@ -39,26 +39,28 @@ Työn jälkeen osaat
 
 Arvioinnissa on seitsemän kriteeriä ja kullakin neljä tasoa: alkava, kehittyvä, hyvä ja erinomainen. Arvioinnin kohteena on prosessi eikä pelkkä lopputulos. Projekti, joka ei toiminut, voi saada erinomaisen arvion, jos päiväkirjasta näkyy, miksi se ei toiminut ja mitä siitä opittiin.
 
+Kriteerit sopivat kaikenlaisiin projekteihin: laitteisiin, käsitöihin, muotoiluun, musiikkiin, korjaamiseen, kierrätysmateriaalista rakentamiseen ja taiteeseen. Onnistumisen mittari voi olla luku, mutta myös laadullinen havainto, esimerkiksi käyttäjän palaute, vertailu ennen ja jälkeen tai valokuva samasta kohdasta. Ylimmälle tasolle pääsee, kun päätökset, kokeilut, palautteen käyttö ja kehittyminen näkyvät päiväkirjassa ja ne on perusteltu.
+
 1. Ongelman määrittely
     - Alkava: aihe on nimetty, mutta ei kerrota, kenen ongelmaa ratkaistaan.
     - Kehittyvä: ongelma ja käyttäjä on kuvattu omin sanoin.
-    - Hyvä: ongelma perustuu käyttäjän haastatteluun tai havaintoon, ja tavoitteelle on mitattava onnistumisen mittari.
+    - Hyvä: ongelma perustuu käyttäjän haastatteluun tai havaintoon, ja tavoitteelle on sovittu onnistumisen mittari. Mittari voi olla luku tai laadullinen havainto.
     - Erinomainen: lisäksi ongelmaa tarkennetaan projektin aikana, ja muutos perustellaan.
 2. Suunnitteluratkaisujen perustelut
     - Alkava: valittu ratkaisu kerrotaan ilman vaihtoehtoja.
     - Kehittyvä: vaihtoehtoja on useita, mutta valintaa ei perustella.
-    - Hyvä: vähintään kolmea vaihtoehtoa verrataan sovituilla perusteilla, esimerkiksi päätösmatriisilla.
-    - Erinomainen: lisäksi pohditaan kestävyyttä, saavutettavuutta tai kustannuksia, ja vertailu vaikuttaa valintaan näkyvästi.
+    - Hyvä: vaihtoehtoja verrataan sovituilla perusteilla, esimerkiksi päätösmatriisilla, luonnoksilla tai pienillä kokeiluilla.
+    - Erinomainen: lisäksi pohditaan kestävyyttä, saavutettavuutta, kustannuksia tai ilmaisua, ja vertailu vaikuttaa valintaan näkyvästi.
 3. Tekninen toteutus
-    - Alkava: prototyypistä on kuva, mutta ei kuvausta siitä, miten se toimii.
-    - Kehittyvä: rakenne, kytkentä tai koodi on kuvattu osittain.
-    - Hyvä: kytkentäkaavio, mitoitettu piirros tai 3D-malli ja kommentoitu koodi ovat mukana, ja osat ja niiden hinnat on lueteltu.
-    - Erinomainen: toinen opiskelija voisi rakentaa saman prototyypin päiväkirjan perusteella.
+    - Alkava: prototyypistä tai teoksesta on kuva, mutta ei kuvausta siitä, miten se on tehty tai miten se toimii.
+    - Kehittyvä: rakenne, kytkentä, koodi tai valmistustapa on kuvattu osittain.
+    - Hyvä: mukana on se, mitä tämä projekti tarvitsee: esimerkiksi kytkentäkaavio, mitoitettu piirros, 3D-malli, kommentoitu koodi, kaava tai valmistusvaiheet kuvina. Osat ja materiaalit on lueteltu.
+    - Erinomainen: toinen opiskelija voisi tehdä saman prototyypin tai teoksen päiväkirjan perusteella.
 4. Testaus ja kehittäminen
     - Alkava: kerrotaan, toimiko prototyyppi.
-    - Kehittyvä: testi on tehty, mutta mittaria tai toistoja ei ole.
-    - Hyvä: testit tehdään onnistumisen mittarilla, toistoja on vähintään kolme, ja tulokset ovat taulukossa yksiköineen.
-    - Erinomainen: testitulokset johtavat perusteltuun muutokseen, ja muutoksen vaikutus mitataan uudelleen samalla tavalla.
+    - Kehittyvä: testi on tehty, mutta sitä ei verrata onnistumisen mittariin.
+    - Hyvä: testit tehdään onnistumisen mittarilla, ja tulokset on kirjattu. Mittaukset ovat taulukossa yksiköineen ja toistettuina, kun niitä on. Laadullinen testi, esimerkiksi käyttäjän kokeilu tai kuuntelu, on kuvattu niin, että sen voi toistaa.
+    - Erinomainen: testitulokset tai palaute johtavat perusteltuun muutokseen, ja muutoksen vaikutus testataan uudelleen samalla tavalla. Myös muutos, joka ei parantanut, kelpaa, kun syy pohditaan.
 5. Dokumentointi
     - Alkava: merkintöjä on harvoin, ja ne on kirjoitettu jälkikäteen.
     - Kehittyvä: merkintöjä on useimmilta tunneilta, mutta kuvista tai päätöksistä puuttuu selityksiä.

@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>An LED circuit without a program — Ruukkilabra</title>
+<meta name="description" content="An LED, a series resistor and 5 V. Series and parallel circuits where every branch has its own resistor.">
+<link rel="canonical" href="https://ruukkilab.fi/en/ahjo-led-piiri.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ruukkilabra">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="An LED circuit without a program">
+<meta property="og:description" content="An LED, a series resistor and 5 V. Series and parallel circuits where every branch has its own resistor.">
+<meta property="og:url" content="https://ruukkilab.fi/en/ahjo-led-piiri.html">
+<meta name="theme-color" content="#f7f3ec">
+<link rel="icon" href="../brand/ahjo-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="../brand/ahjo-makerspace-merkki.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../brand/ahjo-180.png">
+<link rel="stylesheet" href="../vendor/katex/katex.min.css">
+<link rel="stylesheet" href="../site.css?v=e077f76e">
+</head><body>
+<div class="page">
+<header class="top">
+  <a class="brand" href="index.html" aria-label="Ruukkilabra, home page"><img class="brand-mark" src="../brand/ruukkilabra-symboli-kiviruukki.svg" alt="" width="40" height="40"><span class="brand-name">Ruukkilabra<small>Upper secondary physics</small></span></a>
+  <nav aria-label="Main menu"><a class="nav-modules" href="index.html#moduulit">Modules</a><a class="nav-study" href="nain-opiskelet.html">How to study</a><a class="nav-reading" href="lukuvinkit.html">Book tips</a><a class="nav-booklets" href="vihkot.html">Booklets</a><details class="lang-menu"><summary><span class="visually-hidden">Language: </span><span class="lang-current">English</span></summary><ul class="lang-list" aria-label="Choose a language"><li><a class="lang" href="../ahjo-led-piiri.html" hreflang="fi" lang="fi">Suomi</a></li><li><a class="lang" href="../fi-easy/ahjo-led-piiri.html" hreflang="fi" lang="fi">Selkeä suomi</a></li></ul></details></nav>
+</header>
+<nav class="crumbs" aria-label="Path"><a href="index.html">Ruukkilabra</a> › <a href="ahjo.html">Ahjo Makerspace</a> › <a href="ahjo-materiaalit.html">Resource bank</a> › An LED circuit without a program</nav>
+<main class="reading ahjo-page"><header class="ahjo-hero"><img class="ahjo-logo" src="../brand/ahjo-makerspace-logo.svg" alt="Ahjo – Kiviruukin Makerspace" width="124" height="124"><div class="ahjo-hero-text"><p class="ahjo-eyebrow">Kiviruukin lukio&#x27;s makerspace</p><h1>An LED circuit without a program</h1><p class="ahjo-lead">An LED, a series resistor and 5 V. Series and parallel circuits where every branch has its own resistor.</p></div></header><nav class="ahjo-nav" aria-label="Ahjo Makerspace"><ul><li><a href="ahjo.html">Ahjo</a></li><li><a href="ahjo.html#opintojaksot">Courses</a></li><li><a href="ahjo-materiaalit.html" aria-current="page">Resource bank</a></li><li><a href="ahjo-projektit.html">Projects</a></li><li><a href="ahjo.html#laitteisto">Equipment</a></li><li><a href="ahjo-turvallisuus.html">Safety</a></li></ul></nav><p class="ahjo-from" hidden><a class="ahjo-cta ahjo-cta-quiet" href="ahjo-1.html"><span aria-hidden="true">← </span>Back to the lesson</a></p><p class="ahjo-draft" role="note"><svg class="ahjo-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M6 3h11a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H6zM9 3v18M12 8h3.5M12 12h3.5"/></svg><span><strong>Draft.</strong> This guide has not yet been tried on Ahjo&#x27;s own devices. Device models, settings and times will be confirmed once the devices have been acquired. Always follow your teacher&#x27;s instructions and the device-specific induction.</span></p><article class="ahjo-guide"><section class="ahjo-quick" aria-labelledby="pikastartti"><h2 id="pikastartti">Quick start</h2>
+<p>You get an LED to light in about five minutes without a program. Here the Arduino is only a power supply: its 5V pin has a voltage whenever the USB cable is connected. Always make connections with the USB cable unplugged.</p>
+<ol>
+<li>Place the LED and the $330\,\Omega$ resistor on the breadboard as in the diagram below. The LED's long leg goes to the resistor's side.</li>
+<li>Run a wire from the Arduino's 5V pin to the free end of the resistor and another wire from the GND pin to the column of the LED's short leg.</li>
+<li>Plug the USB cable into a computer or a USB charger. The LED lights at once.</li>
+</ol>
+<h3>Try</h3>
+<p>Build the circuit as in the diagram and get the LED to light.</p>
+<h3>Modify</h3>
+<p>Add a second LED, first in series and then in parallel. In the parallel circuit every LED gets its own $330\,\Omega$ resistor. Compare in which circuit the LEDs shine brighter.</p>
+<h3>Challenge yourself</h3>
+<p>Size the series resistor with Ohm's law and measure the current with a multimeter. Compare the measured current with your calculation.</p>
+</section><div class="ahjo-more-band"><h2 id="opi-lisaa">Learn more</h2><p>This part goes through the work thoroughly: why it works, the exact steps, measurements and solving problems.</p></div><h2>Challenge</h2>
+<p>You build your first own circuit: an LED, a series resistor and a voltage source. When the circuit works, you add a second LED first in series and then in parallel and find out why the LEDs shine with different brightness. The same circuit later becomes the indicator light of many Ahjo projects, and in lesson 9 you control it with a program.</p>
+<p>The work takes one 75-minute lesson.</p>
+<h2>Learning goals</h2>
+<p>After the work you can</p>
+<ul>
+<li>connect an LED and a series resistor the right way round on a breadboard</li>
+<li>explain why an LED needs a series resistor</li>
+<li>recognise series and parallel circuits and explain why every LED in a parallel circuit needs its own resistor</li>
+<li>calculate a series resistor from Ohm's law and measure the current with a multimeter.</li>
+</ul>
+<h2>Starting level and prior skills</h2>
+<p>You do not need earlier electronics experience. Voltage, current and resistance are explained in the chapters <a href="fy6-1.html">Circuit, electric current and voltage</a> and <a href="fy6-3.html">Resistance and Ohm's law</a>.</p>
+<h2>Equipment and materials</h2>
+<p>Ahjo's equipment is still being acquired, so the models of the supplies will be specified later.</p>
+<table>
+<thead>
+<tr>
+<th>Supply</th>
+<th>Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Arduino Uno and USB cable</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Breadboard</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Red LED, diameter $5\,\text{mm}$</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Resistor $330\,\Omega$ (orange, orange, brown, gold)</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Jumper wires (male–male)</td>
+<td>4–6</td>
+</tr>
+<tr>
+<td>Multimeter (Challenge yourself)</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h2>Safety and induction</h2>
+<p>Ahjo's safety instructions are still being prepared. See the topic <a href="ahjo-turvallisuus.html#elektroniikka">Soldering and electronics work</a>, and follow the teacher's induction.</p>
+<p>The circuit only has the USB bus's $5\,\text{V}$, so there is no risk of electric shock. You can still break components:</p>
+<ul>
+<li>Make and change connections only when the USB cable is unplugged.</li>
+<li>Do not connect an LED without a series resistor. Too large a current burns the LED.</li>
+<li>Do not connect the 5V pin straight to the GND pin. That is a short circuit.</li>
+<li>If something gets hot or smells, unplug the USB cable at once and tell the teacher.</li>
+</ul>
+<h2>Steps</h2>
+<ol>
+<li>Identify the LED's legs. The long leg is the anode and the short leg the cathode. On the cathode's side the LED's rim often has a flat spot.</li>
+<li>Unplug the USB cable. Place the LED on the breadboard so that its legs are in different columns.</li>
+<li>Place the resistor so that one of its ends is in the same column as the LED's long leg. A resistor has no direction.</li>
+<li>Run a wire from the Arduino's 5V pin to the other end of the resistor and a wire from the GND pin to the column of the LED's short leg.</li>
+<li>Check the circuit against the diagram and plug in the USB cable. The LED lights.</li>
+<li>Series circuit. Unplug the USB cable. Add the second LED after the first so that the current flows through both one after the other. There is still one resistor. Plug in the USB cable and look at the brightness.</li>
+<li>Parallel circuit. Unplug the USB cable. Build a second branch: its own $330\,\Omega$ resistor and its own LED between the 5V wire and the GND wire. Plug in the USB cable and compare the brightness with the series circuit.</li>
+</ol>
+<h2>Diagrams and example code</h2>
+<p>In the first diagram the current flows from the 5V pin through the resistor and the LED to ground. No program is needed.</p>
+<div class="fig ahjo-fig"><svg viewBox="0 0 600 300" role="img" aria-label="Circuit diagram, not to scale. On the left is the Arduino board as a box with two connections on its right edge: 5V above and ground GND below. From the 5V connection a wire leads to the 330-ohm resistor R and from it to a red LED whose triangle points down: the anode is at the top on the resistor&#x27;s side and the cathode at the bottom. From the LED a wire returns to the GND connection. A violet arrow shows the direction of the current I. No program is needed, as the 5V connection has a voltage whenever the USB cable is connected." style="max-width:100%;font-size:24px">
+  <rect x="30" y="46" width="160" height="208" rx="12" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="66" y="61" width="88" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$\text{Arduino}$</div></foreignObject>
+  <rect x="182" y="102" width="16" height="16" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="141" y="97" width="31" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$\text{5V}$</div></foreignObject>
+  <rect x="182" y="206" width="16" height="16" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="130" y="201" width="42" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$\text{GND}$</div></foreignObject>
+  <polyline points="198,110 290,110" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="290" y="100" width="56" height="20" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <polyline points="346,110 430,110 430,150" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <foreignObject x="278" y="131" width="80" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$R = 330\ \Omega$</div></foreignObject>
+  <path d="M416,150 L444,150 L430,174 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="415" y1="174" x2="445" y2="174" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="450" y1="154" x2="460.5" y2="145.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M466,141 L462,149 L457.5,143.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="450" y1="165" x2="460.5" y2="156.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M466,152 L462,160 L457.5,154.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <polyline points="430,174 430,214 198,214" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <foreignObject x="456" y="183" width="42" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$\text{LED}$</div></foreignObject>
+  <path d="M258,110 L244,101 L244,119 Z" fill="#7048e8" stroke-linejoin="round"/>
+  <foreignObject x="232" y="69.5" width="24" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#7048e8">$I$</div></foreignObject>
+</svg></div>
+<p>In a series circuit the current has one path. In a parallel circuit each LED has its own branch and its own resistor.</p>
+<div class="fig ahjo-fig"><svg viewBox="0 0 600 330" role="img" aria-label="Two circuit diagrams side by side, not to scale. On the left a series circuit: from the 5V connection the current flows through one 330-ohm resistor and two LEDs one after the other to the GND connection, so the current has only one path. On the right a parallel circuit: two branches leave the 5V connection, and each branch has its own 330-ohm resistor and its own LED before the branches join at the GND connection." style="max-width:100%;font-size:24px">
+  <foreignObject x="111.5" y="17" width="77" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$\text{series}$</div></foreignObject>
+  <foreignObject x="81" y="50" width="29" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:20px">$\text{5V}$</div></foreignObject>
+  <polyline points="116,62 150,62 150,86" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="140" y="86" width="20" height="48" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <foreignObject x="170" y="98" width="53" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$330\ \Omega$</div></foreignObject>
+  <polyline points="150,134 150,166" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M136,166 L164,166 L150,190 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="135" y1="190" x2="165" y2="190" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="170" y1="170" x2="180.5" y2="161.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M186,157 L182,165 L177.5,159.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="170" y1="181" x2="180.5" y2="172.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M186,168 L182,176 L177.5,170.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <polyline points="150,190 150,226" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M136,226 L164,226 L150,250 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="135" y1="250" x2="165" y2="250" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="170" y1="230" x2="180.5" y2="221.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M186,217 L182,225 L177.5,219.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="170" y1="241" x2="180.5" y2="232.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M186,228 L182,236 L177.5,230.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <polyline points="150,250 150,292 116,292" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <foreignObject x="71" y="280" width="39" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:20px">$\text{GND}$</div></foreignObject>
+  <foreignObject x="390" y="17" width="100" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$\text{parallel}$</div></foreignObject>
+  <foreignObject x="311" y="50" width="29" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:20px">$\text{5V}$</div></foreignObject>
+  <polyline points="346,62 500,62" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="380,62 380,86" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="370" y="86" width="20" height="48" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <foreignObject x="396" y="135" width="48" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$330\ \Omega$</div></foreignObject>
+  <polyline points="380,134 380,186" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M366,186 L394,186 L380,210 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="365" y1="210" x2="395" y2="210" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="400" y1="190" x2="410.5" y2="181.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M416,177 L412,185 L407.5,179.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="400" y1="201" x2="410.5" y2="192.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M416,188 L412,196 L407.5,190.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <polyline points="380,210 380,292" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="500,62 500,86" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="490" y="86" width="20" height="48" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <foreignObject x="516" y="135" width="48" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$330\ \Omega$</div></foreignObject>
+  <polyline points="500,134 500,186" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M486,186 L514,186 L500,210 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="485" y1="210" x2="515" y2="210" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="520" y1="190" x2="530.5" y2="181.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M536,177 L532,185 L527.5,179.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="520" y1="201" x2="530.5" y2="192.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M536,188 L532,196 L527.5,190.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <polyline points="500,210 500,292" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="346,292 500,292" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <foreignObject x="301" y="280" width="39" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:20px">$\text{GND}$</div></foreignObject>
+  <circle cx="380" cy="62" r="5" fill="#1f2933"/>
+  <circle cx="500" cy="62" r="5" fill="#1f2933"/>
+  <circle cx="380" cy="292" r="5" fill="#1f2933"/>
+  <circle cx="500" cy="292" r="5" fill="#1f2933"/>
+</svg></div>
+<p>Why do LEDs in parallel need their own resistors? The voltages of two LEDs are never exactly the same. If the branches shared one resistor, most of the current would flow through the LED with the smaller voltage. That LED would shine brightly and the other dimly, and at worst the first LED would be damaged.</p>
+<h2>Test and measure</h2>
+<ul>
+<li>Calculate the current of one LED. About $2{,}0\,\text{V}$ is left over a red LED, so $3{,}0\,\text{V}$ is left over the resistor:
+  $$I = \frac{3{,}0\,\text{V}}{330\,\Omega} \approx 9{,}1\,\text{mA}.$$</li>
+<li>Over two LEDs in series there is about $4{,}0\,\text{V}$ altogether, so only about $1{,}0\,\text{V}$ is left over the resistor and the current is about $3\,\text{mA}$. That is why LEDs in series are dimmer.</li>
+<li>In the parallel circuit about $9\,\text{mA}$ flows in each branch, and about $18\,\text{mA}$ altogether is taken from the Arduino.</li>
+<li>Challenge yourself: measure the current by connecting the multimeter in series in place of the 5V wire. Choose the current range $\text{mA}$. The measuring method is explained in the chapter <a href="fy6-2.html">Measurements in a circuit</a>.</li>
+</ul>
+<h2>If something does not work</h2>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Likely cause</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The LED does not light</td>
+<td>The LED is the wrong way round</td>
+<td>Turn the LED: long leg to the resistor's side.</td>
+</tr>
+<tr>
+<td>The LED does not light</td>
+<td>A wire is in the wrong column</td>
+<td>Compare every connection with the diagram.</td>
+</tr>
+<tr>
+<td>LEDs in series do not light</td>
+<td>The LEDs' voltage is too large</td>
+<td>Use red LEDs. Blue and white LEDs need about $3\,\text{V}$, and two of them do not light in series from $5\,\text{V}$.</td>
+</tr>
+<tr>
+<td>Only one of the LEDs in parallel lights</td>
+<td>The branches share a resistor or one LED is the wrong way round</td>
+<td>Give each branch its own resistor and check the LEDs' direction.</td>
+</tr>
+<tr>
+<td>The Arduino's light is off</td>
+<td>The USB cable gives no power</td>
+<td>Try another cable or USB port.</td>
+</tr>
+</tbody>
+</table>
+<h2>Extension</h2>
+<ol>
+<li>Try how the size of the resistor affects the brightness. Replace the $330\,\Omega$ resistor with a $1\,\text{k}\Omega$ resistor and compare.</li>
+<li>Add a push button between the LED and the resistor. Now the LED lights only while the button is pressed.</li>
+<li>Move the 5V wire to pin 13 and continue in lesson 9 with the guide <a href="ahjo-arduino.html">First steps with Arduino</a>. Then a program decides when the LED lights.</li>
+</ol>
+<h2>Document your work</h2>
+<p>Record in your project diary</p>
+<ul>
+<li>a photo of the circuit and your own drawing of the circuit diagram</li>
+<li>an observation: in which circuit the LEDs were brighter, and why</li>
+<li>Challenge yourself: your calculated and measured current and their difference</li>
+<li>one fault you ran into, and how you found it.</li>
+</ul>
+<h2>For the teacher: preparation</h2>
+<ul>
+<li>This is a draft: the guide has not yet been tried with Ahjo's own equipment. The board chosen is the Arduino Uno.</li>
+<li>Here the Arduino is only a $5\,\text{V}$ power supply. A power module on a USB charger or a 3 × AA battery holder can be used instead.</li>
+<li>Reserve red LEDs, as the series circuit does not work with blue or white LEDs from $5\,\text{V}$.</li>
+<li>Keep spare LEDs and resistors. Check that the fuses of the multimeters' current ranges are intact.</li>
+<li>The text, diagrams and calculations were written for Ruukkilabra.</li>
+</ul></article><script src="../ahjo.js?v=ea177c50"></script></main>
+<footer class="bottom"><span>Ruukkilabra</span><a href="tyokalut.html">Tools</a><a href="tietosuoja.html">Privacy</a><span class="copyright">© 2026 Lauri Hellsten</span></footer>
+</div>
+<script src="../vendor/katex/katex.min.js"></script><script src="../vendor/katex/contrib/auto-render.min.js" onload="renderMathInElement(document.querySelector('main'),{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+</body></html>

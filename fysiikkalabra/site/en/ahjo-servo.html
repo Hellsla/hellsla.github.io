@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Servo and potentiometer — Ruukkilabra</title>
+<meta name="description" content="Turning a servo with a potentiometer: wiring, a short program and troubleshooting.">
+<link rel="canonical" href="https://ruukkilab.fi/en/ahjo-servo.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ruukkilabra">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Servo and potentiometer">
+<meta property="og:description" content="Turning a servo with a potentiometer: wiring, a short program and troubleshooting.">
+<meta property="og:url" content="https://ruukkilab.fi/en/ahjo-servo.html">
+<meta name="theme-color" content="#f7f3ec">
+<link rel="icon" href="../brand/ahjo-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="../brand/ahjo-makerspace-merkki.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../brand/ahjo-180.png">
+<link rel="stylesheet" href="../vendor/katex/katex.min.css">
+<link rel="stylesheet" href="../site.css?v=e077f76e">
+</head><body>
+<div class="page">
+<header class="top">
+  <a class="brand" href="index.html" aria-label="Ruukkilabra, home page"><img class="brand-mark" src="../brand/ruukkilabra-symboli-kiviruukki.svg" alt="" width="40" height="40"><span class="brand-name">Ruukkilabra<small>Upper secondary physics</small></span></a>
+  <nav aria-label="Main menu"><a class="nav-modules" href="index.html#moduulit">Modules</a><a class="nav-study" href="nain-opiskelet.html">How to study</a><a class="nav-reading" href="lukuvinkit.html">Book tips</a><a class="nav-booklets" href="vihkot.html">Booklets</a><details class="lang-menu"><summary><span class="visually-hidden">Language: </span><span class="lang-current">English</span></summary><ul class="lang-list" aria-label="Choose a language"><li><a class="lang" href="../ahjo-servo.html" hreflang="fi" lang="fi">Suomi</a></li><li><a class="lang" href="../fi-easy/ahjo-servo.html" hreflang="fi" lang="fi">Selkeä suomi</a></li></ul></details></nav>
+</header>
+<nav class="crumbs" aria-label="Path"><a href="index.html">Ruukkilabra</a> › <a href="ahjo.html">Ahjo Makerspace</a> › <a href="ahjo-materiaalit.html">Resource bank</a> › Servo and potentiometer</nav>
+<main class="reading ahjo-page"><header class="ahjo-hero"><img class="ahjo-logo" src="../brand/ahjo-makerspace-logo.svg" alt="Ahjo – Kiviruukin Makerspace" width="124" height="124"><div class="ahjo-hero-text"><p class="ahjo-eyebrow">Kiviruukin lukio&#x27;s makerspace</p><h1>Servo and potentiometer</h1><p class="ahjo-lead">Turning a servo with a potentiometer: wiring, a short program and troubleshooting.</p></div></header><nav class="ahjo-nav" aria-label="Ahjo Makerspace"><ul><li><a href="ahjo.html">Ahjo</a></li><li><a href="ahjo.html#opintojaksot">Courses</a></li><li><a href="ahjo-materiaalit.html" aria-current="page">Resource bank</a></li><li><a href="ahjo-projektit.html">Projects</a></li><li><a href="ahjo.html#laitteisto">Equipment</a></li><li><a href="ahjo-turvallisuus.html">Safety</a></li></ul></nav><p class="ahjo-from" hidden><a class="ahjo-cta ahjo-cta-quiet" href="ahjo-1.html"><span aria-hidden="true">← </span>Back to the lesson</a></p><p class="ahjo-draft" role="note"><svg class="ahjo-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M6 3h11a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H6zM9 3v18M12 8h3.5M12 12h3.5"/></svg><span><strong>Draft.</strong> This guide has not yet been tried on Ahjo&#x27;s own devices. Device models, settings and times will be confirmed once the devices have been acquired. Always follow your teacher&#x27;s instructions and the device-specific induction.</span></p><article class="ahjo-guide"><section class="ahjo-quick" aria-labelledby="pikastartti"><h2 id="pikastartti">Quick start</h2>
+<p>You get the servo to turn with a potentiometer in about ten minutes. The Arduino IDE has a ready example program File → Examples → Servo → Knob, and below is the same thing as a shorter program. Always make connections with the USB cable unplugged.</p>
+<ol>
+<li>Connect the potentiometer's outer legs to the Arduino's 5V and GND pins and the middle leg to the A0 input as in the diagram below.</li>
+<li>Connect the servo's red wire to 5V, the brown or black wire to GND and the orange or yellow wire to pin 9.</li>
+<li>Plug in the USB cable, open the program and upload it with the Upload button.</li>
+<li>Turn the potentiometer. The servo's arm turns along with it.</li>
+</ol>
+<h3>Try</h3>
+<p>Get the servo to turn with the potentiometer.</p>
+<h3>Modify</h3>
+<p>Limit the servo's movement to what you need, for example to 30–150 degrees, or make the servo into a pointer with your own scale drawn behind it.</p>
+<h3>Challenge yourself</h3>
+<p>Attach the servo to your own construction, for example a gate, a fan or a moving figure, and test whether the attachment survives a hundred back-and-forth movements.</p>
+</section><div class="ahjo-more-band"><h2 id="opi-lisaa">Learn more</h2><p>This part goes through the work thoroughly: why it works, the exact steps, measurements and solving problems.</p></div><h2>Challenge</h2>
+<p>You make your first movement with a program. A potentiometer is an adjustable resistor whose position the Arduino reads as a voltage. The program turns the reading into an angle, and the servo turns to that angle. Many robot parts move on the same principle, for example grippers and steered wheels.</p>
+<p>The work takes one 75-minute lesson.</p>
+<h2>Learning goals</h2>
+<p>After the work you can</p>
+<ul>
+<li>connect a potentiometer as a voltage divider and a servo to the Arduino</li>
+<li>turn a reading into an angle with <code>map()</code> and turn a servo with <code>write()</code></li>
+<li>limit the servo's movement in the program</li>
+<li>attach a servo to a construction so that the arm is not forced.</li>
+</ul>
+<h2>Starting level and prior skills</h2>
+<p>You should know how to upload a program to the Arduino. Revise <a href="ahjo-arduino.html">First steps with Arduino</a> if needed. Reading an analogue value is practised in the guide <a href="ahjo-sarjaplotteri.html">Light sensor and the serial plotter</a>.</p>
+<h2>Equipment and materials</h2>
+<p>Ahjo's equipment is still being acquired, so the models of the supplies will be specified later.</p>
+<table>
+<thead>
+<tr>
+<th>Supply</th>
+<th>Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Arduino Uno and USB cable</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Breadboard and jumper wires</td>
+<td>1 + 6</td>
+</tr>
+<tr>
+<td>Potentiometer, for example $10\,\text{k}\Omega$</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Small hobby servo, for example SG90 size</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Servo arm and screw (come with the servo)</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Cardboard, tape or hot glue for the construction (Challenge yourself)</td>
+<td>as needed</td>
+</tr>
+<tr>
+<td>Computer with the Arduino IDE</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h2>Safety and induction</h2>
+<p>Ahjo's safety instructions are still being prepared. See the topic <a href="ahjo-turvallisuus.html#elektroniikka">Soldering and electronics work</a>, and follow the teacher's induction. The hot glue gun is used only with the teacher's permission.</p>
+<ul>
+<li>Make and change connections only when the USB cable is unplugged.</li>
+<li>Keep your fingers out of the servo arm's way while the program runs.</li>
+<li>Do not force the servo arm by hand. The gears inside the servo can break.</li>
+<li>A small servo works from the USB cable's 5 V. A bigger servo or several servos need their own power supply. Ask the teacher, and then remember to join the GND pins of the power supply and the Arduino.</li>
+<li>If the servo buzzes in place for a long time, gets hot or smells, unplug the USB cable at once and tell the teacher.</li>
+</ul>
+<h2>Steps</h2>
+<ol>
+<li>Unplug the USB cable. Place the potentiometer on the breadboard so that its three legs are in different columns.</li>
+<li>Run a wire from the 5V pin to one outer leg of the potentiometer and a wire from the GND pin to the other outer leg.</li>
+<li>Run a wire from the potentiometer's middle leg to the A0 input.</li>
+<li>Connect the servo's red wire to the same 5V row, the brown or black wire to the GND row and the orange or yellow wire to pin 9.</li>
+<li>Fit the servo arm, but do not screw it to the construction yet. First see the movement free.</li>
+<li>Plug in the USB cable, choose the Arduino Uno as the board and the right port, and upload the program.</li>
+<li>Turn the potentiometer from one end to the other. See at which angles the arm stops, and record them.</li>
+</ol>
+<h2>Diagrams and example code</h2>
+<p>The potentiometer is a voltage divider whose middle point the wiper moves. The servo has three wires: two for power and one for control.</p>
+<div class="fig ahjo-fig"><svg viewBox="0 0 600 360" role="img" aria-label="Circuit diagram, not to scale. On the left is the Arduino board as a box with four connections on its right edge from top to bottom: 5V, A0, GND and pin 9. In the middle is the potentiometer: its upper end is connected to 5V and its lower end to GND, and the middle connection, the wiper, is connected to the A0 input. On the right is the servo as a box with three wires: red to 5V, brown or black to GND and the orange or yellow control wire to pin 9." style="max-width:100%;font-size:24px">
+  <rect x="30" y="46" width="160" height="290" rx="12" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="66" y="61" width="88" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$\text{Arduino}$</div></foreignObject>
+  <rect x="182" y="92" width="16" height="16" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="141" y="87" width="31" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$\text{5V}$</div></foreignObject>
+  <rect x="182" y="172" width="16" height="16" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="141" y="167" width="31" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$\text{A0}$</div></foreignObject>
+  <rect x="182" y="252" width="16" height="16" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="130" y="247" width="42" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$\text{GND}$</div></foreignObject>
+  <rect x="182" y="302" width="16" height="16" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="153" y="297" width="19" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$\text{9}$</div></foreignObject>
+  <polyline points="198,100 480,100" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="290" cy="100" r="5" fill="#1f2933"/>
+  <polyline points="290,100 290,156" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="280" y="156" width="20" height="48" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <polyline points="290,204 290,260" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="198,180 242,180" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="240" y1="180" x2="268" y2="180" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M277,180 L267,184.5 L267,175.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="308" y="214" width="143" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\text{potentiometer}$</div></foreignObject>
+  <polyline points="198,260 510,260" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="290" cy="260" r="5" fill="#1f2933"/>
+  <rect x="450" y="150" width="120" height="70" rx="8" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <foreignObject x="477.5" y="172" width="65" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$\text{servo}$</div></foreignObject>
+  <polyline points="480,100 480,150" fill="none" stroke="#c92a2a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="510,220 510,260" fill="none" stroke="#5c3b1e" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="545,220 545,310 198,310" fill="none" stroke="#e8590c" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+</svg></div>
+<p>The program reads the potentiometer, turns the reading 0–1023 into an angle of 0–180 degrees and turns the servo to it.</p>
+<pre><code class="language-cpp">#include &lt;Servo.h&gt;
+
+const int POT_PIN = A0;     // the potentiometer's middle leg
+const int SERVO_PIN = 9;    // the servo's control wire
+
+Servo servo;
+
+void setup() {
+  servo.attach(SERVO_PIN);
+}
+
+void loop() {
+  int value = analogRead(POT_PIN);          // 0...1023
+  int angle = map(value, 0, 1023, 0, 180);  // 0...180 degrees
+  servo.write(angle);
+  delay(15);                                 // the servo has time to turn
+}
+</code></pre>
+<p>At the Modify level the movement is limited by changing the last two numbers of the <code>map()</code> line, for example <code>map(value, 0, 1023, 30, 150)</code>.</p>
+<h2>Test and measure</h2>
+<ul>
+<li>Record at which angles the arm stops at the potentiometer's end positions. Do they match the program's numbers 0 and 180?</li>
+<li>When the servo is attached to the construction, turn the potentiometer slowly and see where the movement starts to stick. Limit the movement in the program to inside that point.</li>
+<li>Challenge yourself: write a program that moves the servo back and forth a hundred times, and then check the attachment. Did it hold? What came loose?</li>
+</ul>
+<h2>If something does not work</h2>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Likely cause</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The servo does not move at all</td>
+<td>The control wire is in the wrong pin</td>
+<td>Move the orange or yellow wire to pin 9.</td>
+</tr>
+<tr>
+<td>The servo does not move at all</td>
+<td>The program did not upload</td>
+<td>Upload the program again and check the board and port.</td>
+</tr>
+<tr>
+<td>The servo jerks or the Arduino restarts</td>
+<td>The servo takes too much current from the USB cable</td>
+<td>Try a smaller servo or ask the teacher for a separate power supply.</td>
+</tr>
+<tr>
+<td>The servo turns only a little</td>
+<td>The potentiometer's wire is loose or on the wrong leg</td>
+<td>Check that the middle leg goes to the A0 input.</td>
+</tr>
+<tr>
+<td>The arm buzzes at an end position</td>
+<td>The construction blocks the movement</td>
+<td>Limit the movement in the program on the <code>map()</code> line.</td>
+</tr>
+<tr>
+<td>The movement goes the wrong way</td>
+<td>The potentiometer's outer legs are the other way round</td>
+<td>Swap the 5V and GND wires or swap the numbers 0 and 180.</td>
+</tr>
+</tbody>
+</table>
+<h2>Extension</h2>
+<ol>
+<li>Pointer meter. Combine this guide with the <a href="ahjo-sarjaplotteri.html">light sensor</a>: the servo arm shows the amount of light on your own scale.</li>
+<li>Two positions. Replace the potentiometer with a push button. When the button is pressed, the servo turns to its other position.</li>
+<li>Moving figure. Make a cardboard figure or mechanism that the servo moves, and show it to the other groups.</li>
+</ol>
+<h2>Document your work</h2>
+<p>Record in your project diary</p>
+<ul>
+<li>a photo or a short video of the circuit and the movement</li>
+<li>the servo's end positions and how you limited the movement</li>
+<li>how you attached the servo and whether the attachment held</li>
+<li>one fault you ran into, and how you found it.</li>
+</ul>
+<h2>For the teacher: preparation</h2>
+<ul>
+<li>This is a draft: the guide and the program have not yet been tried with Ahjo's own equipment. Try the circuit before the lesson with the same servo model the students use.</li>
+<li>The Servo library comes with the Arduino IDE. The example program Knob is in the menu File → Examples → Servo.</li>
+<li>A small hobby servo usually works from the USB cable's voltage, but the current varies by model. If the Arduino restarts, give the servo its own power supply and a shared GND.</li>
+<li>The use of hot glue is decided in Ahjo's safety instructions, which are still being prepared.</li>
+<li>The text, diagrams and code were written for Ruukkilabra.</li>
+</ul></article><script src="../ahjo.js?v=ea177c50"></script></main>
+<footer class="bottom"><span>Ruukkilabra</span><a href="tyokalut.html">Tools</a><a href="tietosuoja.html">Privacy</a><span class="copyright">© 2026 Lauri Hellsten</span></footer>
+</div>
+<script src="../vendor/katex/katex.min.js"></script><script src="../vendor/katex/contrib/auto-render.min.js" onload="renderMathInElement(document.querySelector('main'),{delimiters:[{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+</body></html>

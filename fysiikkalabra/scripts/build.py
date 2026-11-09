@@ -58,6 +58,8 @@ for _d in MODEL_DIRS: shutil.rmtree(SITE / "vendor" / _d, ignore_errors=True)
 if booklets.DIR.is_dir():                                      # Vihkot: the printable course books (scripts/booklets.py)
     (SITE / booklets.PUBLISHED).mkdir(parents=True, exist_ok=True)
     for f in booklets.DIR.glob("*.pdf"): shutil.copy2(f, SITE / booklets.PUBLISHED / f.name)
+if (ROOT / "assets/shared/ahjo/aloitus").is_dir():             # Ahjo's starter files (scripts/ahjo.py STARTERS): models, sketches, templates
+    shutil.copytree(ROOT / "assets/shared/ahjo/aloitus", SITE / "ahjo-aloitus", dirs_exist_ok=True)
 if (ROOT / "assets/shared/brand").is_dir():                   # the Ruukkilabra logos and favicon (scripts/brand_logos.py); test copies may leave them out
     shutil.copytree(ROOT / "assets/shared/brand", SITE / "brand", dirs_exist_ok=True)
 if (ROOT / "assets/units").is_dir():                          # the local courses' unit components (scripts/units.py)

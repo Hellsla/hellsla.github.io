@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LED-piiri ilman ohjelmaa — Ruukkilabra</title>
+<meta name="description" content="LED, etuvastus ja 5 V:n jännite. Sarjaan- ja rinnankytkentä, jossa jokaisella haaralla on oma vastus.">
+<link rel="canonical" href="https://ruukkilab.fi/fi-easy/ahjo-led-piiri.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ruukkilabra">
+<meta property="og:locale" content="fi_FI">
+<meta property="og:title" content="LED-piiri ilman ohjelmaa">
+<meta property="og:description" content="LED, etuvastus ja 5 V:n jännite. Sarjaan- ja rinnankytkentä, jossa jokaisella haaralla on oma vastus.">
+<meta property="og:url" content="https://ruukkilab.fi/fi-easy/ahjo-led-piiri.html">
+<meta name="theme-color" content="#f7f3ec">
+<link rel="icon" href="../brand/ahjo-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="../brand/ahjo-makerspace-merkki.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../brand/ahjo-180.png">
+<link rel="stylesheet" href="../vendor/katex/katex.min.css">
+<link rel="stylesheet" href="../site.css?v=e077f76e">
+</head><body>
+<div class="page">
+<header class="top">
+  <a class="brand" href="index.html" aria-label="Ruukkilabra, etusivu"><img class="brand-mark" src="../brand/ruukkilabra-symboli-kiviruukki.svg" alt="" width="40" height="40"><span class="brand-name">Ruukkilabra<small>Lukion fysiikka</small></span></a>
+  <nav aria-label="Päävalikko"><a class="nav-modules" href="index.html#moduulit">Moduulit</a><a class="nav-study" href="nain-opiskelet.html">Näin opiskelet</a><a class="nav-reading" href="lukuvinkit.html">Kirjavinkit</a><a class="nav-booklets" href="vihkot.html">Vihkot</a><details class="lang-menu"><summary><span class="visually-hidden">Kieli: </span><span class="lang-current">Selkeä suomi</span></summary><ul class="lang-list" aria-label="Valitse kieli"><li><a class="lang" href="../ahjo-led-piiri.html" hreflang="fi" lang="fi">Suomi</a></li><li><a class="lang" href="../en/ahjo-led-piiri.html" hreflang="en" lang="en">English</a></li></ul></details></nav>
+</header>
+<nav class="crumbs" aria-label="Polku"><a href="index.html">Ruukkilabra</a> › <a href="ahjo.html">Ahjo Makerspace</a> › <a href="ahjo-materiaalit.html">Materiaalipankki</a> › LED-piiri ilman ohjelmaa</nav>
+<main class="reading ahjo-page"><header class="ahjo-hero"><img class="ahjo-logo" src="../brand/ahjo-makerspace-logo.svg" alt="Ahjo – Kiviruukin Makerspace" width="124" height="124"><div class="ahjo-hero-text"><p class="ahjo-eyebrow">Kiviruukin lukion makerspace</p><h1>LED-piiri ilman ohjelmaa</h1><p class="ahjo-lead">LED, etuvastus ja 5 V:n jännite. Sarjaan- ja rinnankytkentä, jossa jokaisella haaralla on oma vastus.</p></div></header><nav class="ahjo-nav" aria-label="Ahjo Makerspace"><ul><li><a href="ahjo.html">Ahjo</a></li><li><a href="ahjo.html#opintojaksot">Opintojaksot</a></li><li><a href="ahjo-materiaalit.html" aria-current="page">Materiaalipankki</a></li><li><a href="ahjo-projektit.html">Projektit</a></li><li><a href="ahjo.html#laitteisto">Laitteisto</a></li><li><a href="ahjo-turvallisuus.html">Turvallisuus</a></li></ul></nav><p class="ahjo-from" hidden><a class="ahjo-cta ahjo-cta-quiet" href="ahjo-1.html"><span aria-hidden="true">← </span>Takaisin oppituntiin</a></p><p class="ahjo-draft" role="note"><svg class="ahjo-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M6 3h11a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H6zM9 3v18M12 8h3.5M12 12h3.5"/></svg><span><strong>Luonnos.</strong> Tätä ohjetta ei ole vielä kokeiltu Ahjon omilla laitteilla. Laitemallit, asetukset ja ajat tarkentuvat, kun laitteet on hankittu. Noudata aina opettajan antamia ohjeita ja laitekohtaista perehdytystä.</span></p><article class="ahjo-guide"><section class="ahjo-quick" aria-labelledby="pikastartti"><h2 id="pikastartti">Pikastartti</h2>
+<p>Saat LEDin syttymään noin viidessä minuutissa ilman ohjelmaa. Arduino toimii tässä vain virtalähteenä: sen 5V-pinnissä on jännite aina, kun USB-johto on kytketty. Tee kytkennät aina USB-johto irrotettuna.</p>
+<ol>
+<li>Laita LED ja $330\,\Omega$:n vastus koekytkentälevylle alla olevan kuvan mukaan. LEDin pitkä jalka tulee vastuksen puolelle.</li>
+<li>Vedä johto Arduinon 5V-pinnistä vastuksen vapaaseen päähän ja toinen johto GND-pinnistä LEDin lyhyen jalan pystyriville.</li>
+<li>Kytke USB-johto tietokoneeseen tai USB-laturiin. LED syttyy heti.</li>
+</ol>
+<h3>Kokeile</h3>
+<p>Rakenna piiri kuvan mukaan ja saa LED syttymään.</p>
+<h3>Muokkaa</h3>
+<p>Lisää toinen LED ensin sarjaan ja sitten rinnan. Rinnankytkennässä jokainen LED saa oman $330\,\Omega$:n vastuksen. Vertaa, kummassa kytkennässä LEDit loistavat kirkkaammin.</p>
+<h3>Haasta itsesi</h3>
+<p>Mitoita etuvastus Ohmin lailla ja mittaa piirin virta yleismittarilla. Vertaa mitattua virtaa laskemaasi.</p>
+</section><div class="ahjo-more-band"><h2 id="opi-lisaa">Opi lisää</h2><p>Tässä osassa työ tehdään perusteellisesti: miksi se toimii, tarkat työvaiheet, mittaukset ja ongelmien ratkaisu.</p></div><h2>Haaste</h2>
+<p>Rakennat ensimmäisen oman virtapiirin: LED, etuvastus ja jännitelähde. Kun piiri toimii, lisäät toisen LEDin ensin sarjaan ja sitten rinnan ja selvität, miksi LEDit loistavat eri kirkkaudella. Sama piiri on myöhemmin monen Ahjo-projektin merkkivalo, ja tunnilla 9 ohjaat sitä ohjelmalla.</p>
+<p>Työ kestää yhden 75 minuutin tunnin.</p>
+<h2>Oppimistavoitteet</h2>
+<p>Työn jälkeen osaat</p>
+<ul>
+<li>kytkeä LEDin ja etuvastuksen koekytkentälevylle oikein päin</li>
+<li>selittää, miksi LED tarvitsee etuvastuksen</li>
+<li>tunnistaa sarjaan- ja rinnankytkennän ja selittää, miksi rinnankytkennän jokainen LED tarvitsee oman vastuksen</li>
+<li>laskea etuvastuksen Ohmin laista ja mitata virran yleismittarilla.</li>
+</ul>
+<h2>Lähtötaso ja ennakkotaidot</h2>
+<p>Et tarvitse aiempaa elektroniikkakokemusta. Jännitteestä, virrasta ja resistanssista kerrotaan luvuissa <a href="fy6-1.html">Virtapiiri, sähkövirta ja jännite</a> ja <a href="fy6-3.html">Resistanssi ja Ohmin laki</a>.</p>
+<h2>Laitteet ja materiaalit</h2>
+<p>Ahjon laitteisto on vasta hankinnassa, joten tarvikkeiden mallit tarkentuvat myöhemmin.</p>
+<table>
+<thead>
+<tr>
+<th>Tarvike</th>
+<th>Määrä</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Arduino Uno ja USB-kaapeli</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Koe­kyt­ken­tä­le­vy</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Punainen LED, hal­kai­si­ja $5\,\text{mm}$</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Vastus $330\,\Omega$ (oranssi, oranssi, ruskea, kulta)</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Kyt­ken­tä­joh­ti­mia (uros–uros)</td>
+<td>4–6</td>
+</tr>
+<tr>
+<td>Yleis­mit­ta­ri (Haasta itsesi)</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h2>Turvallisuus ja perehdytys</h2>
+<p>Ahjon turvallisuusohjeet ovat vielä valmisteilla. Katso aihe <a href="ahjo-turvallisuus.html#elektroniikka">Juottaminen ja elektroniikkatyöskentely</a>, ja noudata opettajan perehdytystä.</p>
+<p>Piirissä on vain USB-väylän $5\,\text{V}$:n jännite, joten sähköiskun vaaraa ei ole. Komponentteja voi silti rikkoa:</p>
+<ul>
+<li>Tee ja muuta kytkentöjä vain, kun USB-johto on irti.</li>
+<li>Älä kytke LEDiä ilman etuvastusta. Liian suuri virta polttaa LEDin.</li>
+<li>Älä yhdistä 5V-pinniä suoraan GND-pinniin. Se on oikosulku.</li>
+<li>Jos jokin kuumenee tai haisee, irrota USB-johto heti ja kerro opettajalle.</li>
+</ul>
+<h2>Työvaiheet</h2>
+<ol>
+<li>Tunnista LEDin jalat. Pitkä jalka on anodi ja lyhyt jalka katodi. Katodin puolella LEDin reunassa on usein tasainen kohta.</li>
+<li>Irrota USB-johto. Aseta LED koekytkentälevylle niin, että jalat ovat eri pystyriveillä.</li>
+<li>Aseta vastus niin, että sen toinen pää on samalla pystyrivillä kuin LEDin pitkä jalka. Vastuksella ei ole suuntaa.</li>
+<li>Vie johto Arduinon 5V-pinnistä vastuksen toiseen päähän ja johto GND-pinnistä LEDin lyhyen jalan pystyriville.</li>
+<li>Tarkista kytkentä kuvasta ja kytke USB-johto. LED syttyy.</li>
+<li>Sarjaankytkentä. Irrota USB-johto. Lisää toinen LED ensimmäisen perään niin, että virta kulkee molempien kautta peräkkäin. Vastuksia on edelleen yksi. Kytke USB-johto ja katso kirkkautta.</li>
+<li>Rinnankytkentä. Irrota USB-johto. Rakenna toinen haara: oma $330\,\Omega$:n vastus ja oma LED 5V-johdon ja GND-johdon väliin. Kytke USB-johto ja vertaa kirkkautta sarjaankytkentään.</li>
+</ol>
+<h2>Kuvat ja esimerkkikoodi</h2>
+<p>Ensimmäisessä kaaviossa virta kulkee 5V-pinnistä vastuksen ja LEDin kautta maahan. Ohjelmaa ei tarvita.</p>
+<div class="fig ahjo-fig"><svg viewBox="0 0 600 300" role="img" aria-label="Kytkentäkaavio, ei mittakaavassa. Vasemmalla on Arduino-levy laatikkona, jonka oikeassa reunassa on kaksi liitäntää: ylempänä 5V ja alempana maa GND. 5V-liitännästä johdin vie 330 ohmin vastukseen R ja siitä punaiseen LEDiin, jonka kolmio osoittaa alaspäin: anodi on ylhäällä vastuksen puolella ja katodi alhaalla. LEDiltä johdin palaa GND-liitäntään. Violetti nuoli näyttää virran I suunnan. Ohjelmaa ei tarvita, sillä 5V-liitännässä on jännite aina, kun USB-johto on kytketty." style="max-width:100%;font-size:24px">
+  <rect x="30" y="46" width="160" height="208" rx="12" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="66" y="61" width="88" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$\text{Arduino}$</div></foreignObject>
+  <rect x="182" y="102" width="16" height="16" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="141" y="97" width="31" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$\text{5V}$</div></foreignObject>
+  <rect x="182" y="206" width="16" height="16" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="130" y="201" width="42" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$\text{GND}$</div></foreignObject>
+  <polyline points="198,110 290,110" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="290" y="100" width="56" height="20" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <polyline points="346,110 430,110 430,150" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <foreignObject x="278" y="131" width="80" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$R = 330\ \Omega$</div></foreignObject>
+  <path d="M416,150 L444,150 L430,174 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="415" y1="174" x2="445" y2="174" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="450" y1="154" x2="460.5" y2="145.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M466,141 L462,149 L457.5,143.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="450" y1="165" x2="460.5" y2="156.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M466,152 L462,160 L457.5,154.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <polyline points="430,174 430,214 198,214" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <foreignObject x="456" y="183" width="42" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$\text{LED}$</div></foreignObject>
+  <path d="M258,110 L244,101 L244,119 Z" fill="#7048e8" stroke-linejoin="round"/>
+  <foreignObject x="232" y="69.5" width="24" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#7048e8">$I$</div></foreignObject>
+</svg></div>
+<p>Sarjaankytkennässä virralla on yksi reitti. Rinnankytkennässä kummallakin LEDillä on oma haara ja oma vastus.</p>
+<div class="fig ahjo-fig"><svg viewBox="0 0 600 330" role="img" aria-label="Kaksi kytkentäkaaviota vierekkäin, ei mittakaavassa. Vasemmalla sarjaankytkentä: 5V-liitännästä virta kulkee yhden 330 ohmin vastuksen ja kahden peräkkäisen LEDin kautta GND-liitäntään, eli virralla on vain yksi reitti. Oikealla rinnankytkentä: 5V-liitännästä lähtee kaksi haaraa, ja kummassakin haarassa on oma 330 ohmin vastus ja oma LED ennen kuin haarat yhdistyvät GND-liitäntään." style="max-width:100%;font-size:24px">
+  <foreignObject x="106" y="17" width="88" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$\text{sarjaan}$</div></foreignObject>
+  <foreignObject x="81" y="50" width="29" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:20px">$\text{5V}$</div></foreignObject>
+  <polyline points="116,62 150,62 150,86" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="140" y="86" width="20" height="48" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <foreignObject x="170" y="98" width="53" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$330\ \Omega$</div></foreignObject>
+  <polyline points="150,134 150,166" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M136,166 L164,166 L150,190 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="135" y1="190" x2="165" y2="190" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="170" y1="170" x2="180.5" y2="161.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M186,157 L182,165 L177.5,159.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="170" y1="181" x2="180.5" y2="172.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M186,168 L182,176 L177.5,170.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <polyline points="150,190 150,226" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M136,226 L164,226 L150,250 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="135" y1="250" x2="165" y2="250" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="170" y1="230" x2="180.5" y2="221.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M186,217 L182,225 L177.5,219.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="170" y1="241" x2="180.5" y2="232.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M186,228 L182,236 L177.5,230.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <polyline points="150,250 150,292 116,292" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <foreignObject x="71" y="280" width="39" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:20px">$\text{GND}$</div></foreignObject>
+  <foreignObject x="401.5" y="17" width="77" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$\text{rinnan}$</div></foreignObject>
+  <foreignObject x="311" y="50" width="29" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:20px">$\text{5V}$</div></foreignObject>
+  <polyline points="346,62 500,62" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="380,62 380,86" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="370" y="86" width="20" height="48" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <foreignObject x="396" y="135" width="48" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$330\ \Omega$</div></foreignObject>
+  <polyline points="380,134 380,186" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M366,186 L394,186 L380,210 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="365" y1="210" x2="395" y2="210" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="400" y1="190" x2="410.5" y2="181.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M416,177 L412,185 L407.5,179.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="400" y1="201" x2="410.5" y2="192.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M416,188 L412,196 L407.5,190.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <polyline points="380,210 380,292" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="500,62 500,86" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="490" y="86" width="20" height="48" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <foreignObject x="516" y="135" width="48" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$330\ \Omega$</div></foreignObject>
+  <polyline points="500,134 500,186" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M486,186 L514,186 L500,210 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="485" y1="210" x2="515" y2="210" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="520" y1="190" x2="530.5" y2="181.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M536,177 L532,185 L527.5,179.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="520" y1="201" x2="530.5" y2="192.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M536,188 L532,196 L527.5,190.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <polyline points="500,210 500,292" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="346,292 500,292" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <foreignObject x="301" y="280" width="39" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:20px">$\text{GND}$</div></foreignObject>
+  <circle cx="380" cy="62" r="5" fill="#1f2933"/>
+  <circle cx="500" cy="62" r="5" fill="#1f2933"/>
+  <circle cx="380" cy="292" r="5" fill="#1f2933"/>
+  <circle cx="500" cy="292" r="5" fill="#1f2933"/>
+</svg></div>
+<p>Miksi rinnan kytketyt LEDit tarvitsevat omat vastukset? Kahden LEDin jännite ei ole koskaan täsmälleen sama. Jos haarat jakaisivat yhden vastuksen, suurin osa virrasta kulkisi sen LEDin kautta, jonka jännite on pienempi. Se LED palaisi kirkkaasti ja toinen himmeästi, ja pahimmillaan ensimmäinen LED vaurioituisi.</p>
+<h2>Testaa ja mittaa</h2>
+<ul>
+<li>Laske yhden LEDin virta. Punaisen LEDin yli jää noin $2{,}0\,\text{V}$, joten vastuksen yli jää $3{,}0\,\text{V}$:
+  $$I = \frac{3{,}0\,\text{V}}{330\,\Omega} \approx 9{,}1\,\text{mA}.$$</li>
+<li>Sarjaan kytkettyjen LEDien yli jää yhteensä noin $4{,}0\,\text{V}$, joten vastuksen yli jää vain noin $1{,}0\,\text{V}$ ja virta on noin $3\,\text{mA}$. Siksi sarjaan kytketyt LEDit ovat himmeämpiä.</li>
+<li>Rinnankytkennässä kummassakin haarassa kulkee noin $9\,\text{mA}$, ja Arduinosta otetaan yhteensä noin $18\,\text{mA}$.</li>
+<li>Haasta itsesi: mittaa virta kytkemällä yleismittari sarjaan 5V-johdon tilalle. Valitse virran mittausalue $\text{mA}$. Mittaustavasta kerrotaan luvussa <a href="fy6-2.html">Mittaukset virtapiirissä</a>.</li>
+</ul>
+<h2>Jos jokin ei toimi</h2>
+<table>
+<thead>
+<tr>
+<th>Oire</th>
+<th>To­den­nä­köi­nen syy</th>
+<th>Korjaus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LED ei syty</td>
+<td>LED on väärin päin</td>
+<td>Käännä LED: pitkä jalka vas­tuk­sen puolelle.</td>
+</tr>
+<tr>
+<td>LED ei syty</td>
+<td>Johto on väärällä pys­ty­ri­vil­lä</td>
+<td>Vertaa jokaista kyt­ken­tää kuvaan.</td>
+</tr>
+<tr>
+<td>Sarjaan kytketyt LEDit eivät syty</td>
+<td>LEDien jännite on liian suuri</td>
+<td>Käytä punaisia LEDejä. Sininen ja val­koi­nen LED tar­vit­se­vat noin $3\,\text{V}$, eivätkä kaksi niistä syty sarjassa $5\,\text{V}$:n jän­nit­teel­lä.</td>
+</tr>
+<tr>
+<td>Rinnan kyt­ke­tyis­tä LEDeistä vain toinen palaa</td>
+<td>Haa­roil­la on yhteinen vastus tai toinen LED on väärin päin</td>
+<td>Anna kum­mal­le­kin haaralle oma vastus ja tarkista LEDien suunta.</td>
+</tr>
+<tr>
+<td>Arduinon valo ei pala</td>
+<td>USB-johto ei anna virtaa</td>
+<td>Kokeile toista johtoa tai USB-porttia.</td>
+</tr>
+</tbody>
+</table>
+<h2>Jatkotehtävä</h2>
+<ol>
+<li>Kokeile, miten vastuksen koko vaikuttaa kirkkauteen. Vaihda $330\,\Omega$:n vastuksen tilalle $1\,\text{k}\Omega$:n vastus ja vertaa.</li>
+<li>Lisää piiriin painonappi LEDin ja vastuksen väliin. Nyt LED palaa vain, kun nappia painetaan.</li>
+<li>Siirrä 5V-johto pinniin 13 ja jatka tunnilla 9 <a href="ahjo-arduino.html">Arduinon ensiaskeleet</a> -ohjeella. Silloin ohjelma päättää, milloin LED palaa.</li>
+</ol>
+<h2>Dokumentoi</h2>
+<p>Kirjaa projektipäiväkirjaan</p>
+<ul>
+<li>valokuva kytkennästä ja oma piirros kytkentäkaaviosta</li>
+<li>havainto: kummassa kytkennässä LEDit olivat kirkkaampia, ja miksi</li>
+<li>Haasta itsesi: laskemasi ja mittaamasi virta sekä niiden ero</li>
+<li>yksi vika, joka tuli vastaan, ja miten löysit sen.</li>
+</ul>
+<h2>Opettajalle: valmistelu</h2>
+<ul>
+<li>Tämä on luonnos: ohjetta ei ole vielä kokeiltu Ahjon omilla laitteilla. Levyksi on valittu Arduino Uno.</li>
+<li>Arduino toimii tässä vain $5\,\text{V}$:n virtalähteenä. Sen tilalla voi käyttää myös USB-laturiin kytkettyä virtalähdemoduulia tai 3 × AA -paristokoteloa.</li>
+<li>Varaa punaisia LEDejä, sillä sarjaankytkentä ei toimi sinisillä tai valkoisilla LEDeillä $5\,\text{V}$:n jännitteellä.</li>
+<li>Laita varalle ylimääräisiä LEDejä ja vastuksia. Tarkista, että yleismittarien virta-alueen sulakkeet ovat ehjät.</li>
+<li>Teksti, kuvat ja laskut on kirjoitettu Ruukkilabraan.</li>
+</ul></article><script src="../ahjo.js?v=ea177c50"></script></main>
+<footer class="bottom"><span>Ruukkilabra</span><a href="tyokalut.html">Työkalut</a><a href="tietosuoja.html">Tietosuoja</a><span class="copyright">© 2026 Lauri Hellsten</span></footer>
+</div>
+<script src="../vendor/katex/katex.min.js"></script><script src="../vendor/katex/contrib/auto-render.min.js" onload="renderMathInElement(document.querySelector('main'),{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+</body></html>

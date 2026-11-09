@@ -160,7 +160,11 @@ ICONS = {
     "shield": "M12 3l7 3v5c0 4.5-3 8.4-7 10-4-1.6-7-5.5-7-10V6zM9 12l2 2 4-4",
     "notebook": "M6 3h11a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H6zM9 3v18M12 8h3.5M12 12h3.5",
     "box": "M3 8l9-4 9 4v10l-9 4-9-4zM3 8l9 4 9-4M12 12v10",
+    "people": "M9 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM3 20v-1a6 6 0 0 1 12 0v1M16 11a2.5 2.5 0 1 0 0-5M17.5 14a4.5 4.5 0 0 1 3.5 4.4V20",
+    "download": "M12 4v11M7 10l5 5 5-5M5 20h14",
 }
+STARTERS = ROOT / "assets/shared/ahjo/aloitus"    # small starter files a lesson links (teacher 2026-11-09), published as ahjo-aloitus/
+STARTERS_PUB = "ahjo-aloitus"
 
 
 ART = ROOT / "assets/shared/ahjo"   # the section's illustrations (scripts/ahjo_art.py), inlined
@@ -214,7 +218,7 @@ def validate(lessons, investigations, guides, planned_codes, local_codes, module
     src = load()
     shape = lambda d: ([c["code"] for c in d["courses"]], [c["id"] for c in d["categories"]],
                        [r.get("ref") or r.get("id") or "safety" for r in d["resources"]], [g["id"] for g in d["equipment"]],
-                       [len(g["items"]) for g in d["equipment"]], [(len(c.get("goals", [])), len(c.get("lessons", [])), [(l.get("guides", []), bool(l.get("milestone")), bool(l.get("start")), sorted(l.get("levels", {})), bool(l.get("output_plus")), bool(l.get("final"))) for l in c.get("lessons", [])], len(c.get("deepening", [])), (c["start"]["minutes"], len(c["start"]["materials"]), len(c["start"]["steps"])) if c.get("start") else None, len(c["final"]["options"]) if c.get("final") else None, [x["minutes"] for x in c["snacks"]["items"]] if c.get("snacks") else None, bool(c.get("flex")), [len(x["lessons"]) for x in c.get("units", [])], [(len(l.get("needs", [])), l.get("safety")) for l in c.get("lessons", [])], bool(c.get("pitch"))) for c in d["courses"]], [s["id"] for s in d["safety"]], [l["course"] for l in d["links"]], sorted(d["ui"]),
+                       [len(g["items"]) for g in d["equipment"]], [(len(c.get("goals", [])), len(c.get("lessons", [])), [(l.get("guides", []), bool(l.get("milestone")), bool(l.get("start")), sorted(l.get("levels", {})), bool(l.get("output_plus")), bool(l.get("final"))) for l in c.get("lessons", [])], len(c.get("deepening", [])), (c["start"]["minutes"], len(c["start"]["materials"]), len(c["start"]["steps"])) if c.get("start") else None, len(c["final"]["options"]) if c.get("final") else None, [x["minutes"] for x in c["snacks"]["items"]] if c.get("snacks") else None, bool(c.get("flex")), [len(x["lessons"]) for x in c.get("units", [])], [(len(l.get("needs", [])), l.get("safety"), bool(l.get("safety_note")), bool(l.get("peer")), l.get("starters", [])) for l in c.get("lessons", [])], bool(c.get("pitch"))) for c in d["courses"]], [s["id"] for s in d["safety"]], [(f["id"], f["file"]) for f in d.get("starters", [])], [l["course"] for l in d["links"]], sorted(d["ui"]),
                        [(p["id"], p.get("art"), p["status"], p["level"], p["lessons"], p["courses"], [i["url"] for i in p["inspiration"]], len(p["skills"]), len(p["materials"]), len(p["subjects"])) for p in d.get("projects", [])],
                        [(x["id"], x["minutes"], x["lesson"], bool(x.get("induction")), len(x["subjects"]), len(x["materials"]), sorted(x["levels"]), x.get("guide")) for x in d.get("challenges", [])])
     files = [SOURCE] + sorted((ROOT / "content").glob("*/ahjo.json"))
@@ -262,6 +266,8 @@ def validate(lessons, investigations, guides, planned_codes, local_codes, module
                 for i, l in enumerate(c["lessons"], 1):
                     if not l.get("needs"): errs.append(f"{name}: {c['code']} lesson {i}: what the student needs (needs)")
                     if any(x not in sids for x in l.get("safety", [])): errs.append(f"{name}: {c['code']} lesson {i}: unknown safety topic in {l.get('safety')}")
+                    if any(x not in {f["id"] for f in d.get("starters", [])} for x in l.get("starters", [])): errs.append(f"{name}: {c['code']} lesson {i}: unknown starter file in {l.get('starters')}")
+                    if "peer" in l and not l["peer"]: errs.append(f"{name}: {c['code']} lesson {i}: an empty peer activity")
             fin = c.get("final")
             if fin and not (fin.get("title") and fin.get("text") and fin.get("own") and 3 <= len(fin.get("options", [])) <= 5 and all(len(o) == 2 and all(o) for o in fin["options"])):
                 errs.append(f"{name}: {c['code']}: the mini project has a title, a text, 3–5 options (title, text) and the own-idea note (teacher 2026-11-08)")
@@ -324,6 +330,9 @@ def validate(lessons, investigations, guides, planned_codes, local_codes, module
             if not (isinstance(x.get("lesson"), int) and 1 <= x["lesson"] <= 16): errs.append(f"{name}: challenge {cid}: the Ahjo 1 lesson it goes with, 1–16")
             if sorted(x.get("levels", {})) != ["challenge", "modify", "try"] or not all(x["levels"].values()): errs.append(f"{name}: challenge {cid}: the three levels try, modify, challenge")
             if x.get("guide") and not any(r.get("id") == x["guide"] and r.get("status") in PAGED for r in d["resources"]): errs.append(f"{name}: challenge {cid}: its guide {x['guide']} is not a written guide in resources")
+        for f in d.get("starters", []):   # starter files (teacher 2026-11-09): each says what is still unchecked
+            if not (f.get("id") and f.get("title") and f.get("file") and f.get("note")): errs.append(f"{name}: starter {f.get('id')}: id, title, file and note (what is still unchecked)")
+            elif not (STARTERS / f["file"]).is_file(): errs.append(f"{name}: starter {f['id']}: no file assets/shared/ahjo/aloitus/{f['file']}")
         pids = [p.get("id") for p in d.get("projects", [])]
         if len(set(pids)) != len(pids): errs.append(f"{name}: repeated project ids")
         for p in d.get("projects", []):
@@ -591,9 +600,10 @@ def safety_box(d, l):
     """The safety topics of what this lesson does, linked to the safety page, with their status: still being prepared
     until the school's staff approve them (never shown as approved here)."""
     u = d["ui"]; tops = [s for s in d["safety"] if s["id"] in l.get("safety", [])]
-    if not tops: return f'<p>{esc(u["lesson_safety_none"])}</p>'
+    note = f'<p class="ahjo-lside-own">{esc(l["safety_note"])}</p>' if l.get("safety_note") else ""
+    if not tops: return note or f'<p>{esc(u["lesson_safety_none"])}</p>'
     pending = any(s.get("status", "valmisteilla") != "hyvaksytty" for s in tops)
-    return ('<ul class="ahjo-lside-list">' + "".join(f'<li><a href="{SAFETY}#{s["id"]}">{esc(s["title"])}</a></li>' for s in tops) + '</ul>'
+    return (note + '<ul class="ahjo-lside-list">' + "".join(f'<li><a href="{SAFETY}#{s["id"]}">{esc(s["title"])}</a></li>' for s in tops) + '</ul>'
             + (f'<p class="ahjo-lside-note">{esc(u["lesson_safety_note"])}</p>' if pending else ""))
 
 
@@ -615,7 +625,8 @@ def lesson_body(d, c, i, planned, local, ref):
             f'<p class="ahjo-eyebrow">{esc(u["lesson_n"].replace("{n}", str(i)))} · {esc(unit["title"])}</p>'
             f'<h1>{esc(l.get("make") or l["title"])}</h1>'
             + (f'<p class="ahjo-lhead-sub">{esc(l["title"])}</p>' if l.get("make") else "")
-            + (f'<p class="ahjo-lead">{esc(l["text"])}</p>' if hands else f'<p class="ahjo-lead"><span class="ahjo-meta-l">{esc(u["lesson_now"])}:</span> {esc(l["text"])}</p>')
+            + (f'<p class="ahjo-lead">{esc(l["text"])}</p>' if hands else f'<p class="ahjo-lead"><span class="ahjo-meta-l">{esc(u["lesson_now"])}:</span> {esc(l["text"])}</p>'
+               f'<p class="ahjo-pace">{esc(u["lesson_pace"])}</p>')
             + '</div></header>')
     guide_btn = (f'<p class="ahjo-now-go">{links[0].replace("<a ", "<a class=\"ahjo-cta\" ", 1).replace("</a>", "<span aria-hidden=\"true\"> →</span></a>", 1)}</p>'
                  if links and links[0].startswith("<a ") else "")
@@ -637,6 +648,9 @@ def lesson_body(d, c, i, planned, local, ref):
                 + '</section>')
         main = now + done
     extra = ""
+    if l.get("peer"):   # a short way of working together (teacher 2026-11-09): never a new hand-in
+        main += (f'<section class="ahjo-lsec ahjo-peer" aria-labelledby="h-peer"><h2 id="h-peer">{icon("people")}{esc(u["lesson_peer"])}</h2>'
+                 f'<p>{esc(l["peer"])}</p></section>')
     if l.get("final") and c.get("final"): extra += final_section(c, k)
     sn = c.get("snacks")
     if sn and 8 <= i <= 12:
@@ -646,9 +660,14 @@ def lesson_body(d, c, i, planned, local, ref):
     diary = next((r for r in d["resources"] if r.get("id") == "ahjo-projektipaivakirja" and r.get("status") in PAGED), None)
     if diary and not any("ahjo-projektipaivakirja.html" in g for g in guides) and not hands:
         guides.insert(0, f'<a href="ahjo-projektipaivakirja.html{q}">{esc(u["lesson_diary"])}</a>')
+    sts = [f for x in l.get("starters", []) for f in d.get("starters", []) if f["id"] == x]
+    starters = (f'<section aria-labelledby="h-start-files"><h2 id="h-start-files">{icon("download")}{esc(u["lesson_starters"])}</h2><ul class="ahjo-lside-list">'
+                + "".join(f'<li><a href="{STARTERS_PUB}/{esc(f["file"])}" download>{esc(f["title"])}</a> <span class="ahjo-lside-tag">{esc(f["note"])}</span></li>' for f in sts)
+                + '</ul></section>') if sts else ""
     side = ('<div class="ahjo-lside">'
             f'<section aria-labelledby="h-needs"><h2 id="h-needs">{icon("box")}{esc(u["lesson_needs"])}</h2><ul class="ahjo-lside-list">' + "".join(f'<li>{esc(x)}</li>' for x in l.get("needs", [])) + '</ul></section>'
             + (f'<section aria-labelledby="h-guide"><h2 id="h-guide">{icon("notebook")}{esc(u["lesson_guide"])}</h2><ul class="ahjo-lside-list">' + "".join(f'<li>{g}</li>' for g in guides) + '</ul></section>' if guides else "")
+            + starters
             + f'<section aria-labelledby="h-safe"><h2 id="h-safe">{icon("shield")}{esc(u["lesson_safety"])}</h2>{safety_box(d, l)}</section></div>')
     def pg(j, rel, lab):
         if not 1 <= j <= m: return '<span class="ahjo-pager-x" aria-hidden="true"></span>'
