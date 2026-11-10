@@ -61,6 +61,18 @@ with sync_playwright() as pw:
         first = pg.evaluate("(() => { const a = document.activeElement; const r = a.getBoundingClientRect(); return [a.className, a.getAttribute('href'), r.top >= 0 && r.height > 20, !!document.querySelector('main#sisalto')]; })()")
         expect(f"{name}: the first Tab stop is the skip link, in view, to the main content", first == ["skip", "#sisalto", True, True], first)
         pg.close()
+    # 1b. no page built from the lesson template scrolls sideways on a phone, closed or with its stage list open: the long
+    # section names of an investigation or a guide go on the stage button and on the Seuraavaksi links (2026-11-10)
+    kinds = [n for n in (f"{OPEN}.html", "fy10-heiluri.html", "tvt-kuvaaja.html", f"{COURSE}-koe.html", f"{COURSE}-sovella.html", "en/fy14-plasma.html", f"fi-easy/{OPEN}.html") if (SITE / n).exists()]
+    for name in kinds:
+        for w in (320, 360):
+            pg = b.new_page(viewport={"width": w, "height": 780}); pg.goto((SITE / name).as_uri()); pg.wait_for_timeout(300)
+            closed = pg.evaluate("document.documentElement.scrollWidth - innerWidth")
+            opened = None
+            if pg.is_visible(".toc-now"):
+                pg.click(".toc-now"); pg.wait_for_timeout(100); opened = pg.evaluate("document.documentElement.scrollWidth - innerWidth")
+            expect(f"{name} at {w} px: no sideways scroll, with the stage list closed and open", closed <= 0 and (opened is None or opened <= 0), (closed, opened))
+            pg.close()
     # 2. the self-assessment levels by name
     pg = b.new_page(viewport={"width": 390, "height": 844}); pg.goto((SITE / f"{OPEN}.html").as_uri()); pg.wait_for_timeout(300)
     names = pg.evaluate("""(() => { const fs = document.querySelector('fieldset.sa-rate'); if (!fs) return null;
