@@ -2,14 +2,9 @@ VERDICT: PASS
 CONTENT-HASH: d3bbbfc30db75858
 
 ## Blocking
-- none
 
 ## Polish
-- lang/en.json:2014 (sims.fy6-13.lukemat_lap) — "values calculated with the ideal model before breakdown" does not quite describe what is shown: during connected breakdown the readout shows $Q = CU_0$ and $W = \tfrac12 CU_0^2$ at the set voltage, which is above the breakdown voltage. For example, at d = 1.0 mm in air with $U_0 = 3.1\,\text{kV}$ it shows 549 nC and 851 µJ, while the largest values before breakdown (3.0 kV) are 531 nC and 797 µJ — say "ideal-model values at this voltage, as if no breakdown happened". Not blocking: the mallirajaus note says the model no longer holds.
+- assets/sims/fy6/fy6-13/sim.js:81 — the code comment still says "the ideal model's values before it". It is not shown to students and is optional to update. This is C-level.
 
 ## Checked
-- sim.js:81: `lukemat_lap` is chosen only when `S.lap && !S.burnt` (connected source, E > E_max). When disconnected, breakdown still discharges to Q = 0 and shows `purkautui-teksti`. The model and `simState` are unchanged (Q, W, lapilyonti keys are the same).
-- The breakdown readout still shows C, U, E and E_max. The breakdown text and the mallirajaus note are still added, so the model's limit is stated at the point of use.
-- Recomputed (experiment 5): C = ε0A/d = 177 pF; breakdown starts at U0 > 3.0 kV (E > 3 MV/m, strict inequality in code); Q and W as above.
-- fi and fi-easy strings say the same as en.
-- No other content changed since the last PASS (git diff); content hash the same at start and end.
+- batch delta review: the packet's wording diff is empty. The only change is lang/en.json:2014 `sims.fy6-13.lukemat_lap` (it is outside the content hash, which is unchanged) and now reads "Values of the ideal model at this voltage, as if no breakdown occurred". sim.js:62–64 confirms that, connected and in breakdown, U = U0 (the voltage shown on the line above), Q = C·U0 and W = ½·Q·U0. "At this voltage" is therefore exact, and last round's Polish item is resolved. Example: d = 1.0 mm in air, C = 177 pF, U0 = 3.1 kV gives 549 nC and 851 µJ. The label and the mallirajaus note agree; the label is used only when S.lap && !S.burnt; no simState key or calculation changed; it says the same as fi. Hash identical at start and end.

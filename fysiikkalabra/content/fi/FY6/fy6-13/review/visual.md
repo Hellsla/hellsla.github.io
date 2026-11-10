@@ -4,7 +4,6 @@ CONTENT-HASH: ffc9647383412788
 ## Blocking
 
 ## Polish
-- [Minor] fy6-13 readout: the ideal-model line runs on as plain text without a separator from the line above; acceptable, optional line break before it.
 
 ## Checked
-- batch delta review: fy6-13 sim readout in connected breakdown (air, d=1,0 mm, U0=4,0 kV) at 360, 768, 1280 px: third line names Q and W as ideal-model values, then bold breakdown text and note; maths KaTeX, no clipping or horizontal overflow, readable hierarchy.
+- batch delta review: no text diff; opened the connected-breakdown readout (air, d = 1,0 mm, U0 = 4,0 kV) at 360 and 1280 px on the built page: the third line (Jännite U, kenttä E, läpilyöntilujuus Emax) wraps cleanly, nothing clipped, no horizontal overflow.

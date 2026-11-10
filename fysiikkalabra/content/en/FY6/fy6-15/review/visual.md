@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: bf7d981181f52418
+CONTENT-HASH: 54bf1031ed79eec6
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: fy6-15 bird prediction option and its feedback opened at 390 px: option and text fit the card, LaTeX unit in the prompt intact; feedback gated on Teoria as designed.
+- batch delta review: bird sentences reworded (text only, no new maths); opened the Teoria paragraph at 390 px in the fi preview: reads naturally, maths unchanged, no overflow. Wording judged in en.

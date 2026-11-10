@@ -4,16 +4,7 @@ CONTENT-HASH: ffc9647383412788
 ## Blocking
 
 ## Polish
-- lang/fi.json:1946 (`sims.fy6-13.lukemat_lap`) — "arvot ennen läpilyöntiä" is slightly loose. The values shown are $Q = CU_0$ and $W = \tfrac12 CU_0^2$ at the set source voltage, which the capacitor never reaches. Example: d = 1,0 mm, air, U0 = 3,1 kV shows 549 nC and 851 µJ, but just before breakdown (U = 3,0 kV) the ideal model gives at most 531 nC and 797 µJ. "Ideaalimallin laskennalliset arvot jännitteellä $U_0$ (läpilyöntiä ei mallinneta)" would be exact. C-level, teacher's wording.
+- assets/sims/fy6/fy6-13/sim.js:81 — the code comment still says "the ideal model's values before it". It is not shown to students and is optional to update. This is C-level.
 
 ## Checked
-- Diff: sim.js picks `lukemat_lap` only when `S.lap && !S.burnt` (connected and in breakdown). Q and W move under the ideal-model label, and C, U, E and Emax stay as before. No calculation and no simState key changed.
-- Browser (rebuilt preview, fi), d = 1,0 mm, air:
-  - U0 = 3,0 kV: no breakdown, normal readout (177 pF, 531 nC, 797 µJ).
-  - U0 = 3,1 kV, kytketty: breakdown, new label with Q 549 nC and W 851 µJ, then the breakdown text and the mallirajaus note.
-  - irrotettu: Q = 0, purkautui text, normal readout.
-- Recomputed: C = ε0·A/d = 177,1 pF, Q and W at 3,0 and 3,1 kV as above. All agree with the sim.
-- The previous Polish item (name Q and W as ideal values) is now done on screen. The readout and the mallirajaus note agree.
-- The key exists in fi, en and fi-easy.
-- The rest of the lesson is unchanged since the last PASS (5d937e42ff5cf67a); predictions, experiments and numbers were checked there.
-- Hash identical at start and end.
+- batch delta review: the packet's wording diff is empty. The only change is lang/fi.json:1946 `sims.fy6-13.lukemat_lap` (it is outside the content hash, which is unchanged) and now reads "Ideaalimallin laskennalliset arvot tällä jännitteellä, jos läpilyöntiä ei tapahtuisi". sim.js:62–64 confirms that, connected and in breakdown, U = U0 (the voltage shown on the line above), Q = C·U0 and W = ½·Q·U0. "Tällä jännitteellä" is therefore exact, and last round's Polish item is resolved. Example: d = 1,0 mm in air, C = 177 pF, U0 = 3,1 kV gives 549 nC and 851 µJ. The label and the mallirajaus note agree; the label is used only when S.lap && !S.burnt; no simState key or calculation changed; fi-easy says the same. Hash identical at start and end.
