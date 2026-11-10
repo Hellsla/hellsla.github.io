@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: d8f17db342f59821
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: 56dcd8258585d1da
+Mode: light (teacher 2026-11-07, "kevyt katselmointi"): the FY2 targeted-fix diff (git diff origin/main...HEAD) only
 
 ## Blocking
 - none
@@ -9,6 +9,6 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction 
 - none
 
 ## Checked
-- git diff origin/main...HEAD of the unit's files (en); pedagogy of the changed passages in context only; FY2 text level.
-- lesson.md opening question and inquiry hook: 'gives as much (visible) light' instead of 'as bright' - removes the brightness/power ambiguity without disclosing anything.
-- New paragraph (simplified model, useful energy = visible radiation; luminous flux describes lighting better): no new formula, framed as a model limit, appropriate for FY2.
+- git diff origin/main...HEAD of fy2-4 inquiry.json (en); hash verified.
+- Sim model paragraph: "losses are the part of the energy that does not end up as the defined useful output ... mostly thermal energy ... part of the incoming radiant energy is also reflected back to the surroundings" reads naturally in context and matches fi.
+- Experiment-1 model: "losses, mostly heat" matches fi "pääosin lämpöä".

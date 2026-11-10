@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: fdb9602a936296b0
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"): the round-2 polish diff (git diff HEAD~1, commit 29f864da6) only
-Round: 2
+CONTENT-HASH: 4afdc6bfe3a42eeb
+Mode: light (teacher 2026-11-07, "kevyt katselmointi"): the FY2 targeted-fix diff (git diff origin/main...HEAD) only
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] inquiry.json koe intro — the list "esiteollinen, 2020-luvun alun ja kaksinkertainen hiilidioksidi" leaves the genitive "2020-luvun alun" without its noun; readable, but "2020-luvun alun määrä" would match the menu label exactly.
 
 ## Checked
-- lesson.md summary bullet: noun chain replaced by "siitä, kuinka nopeasti hiili sitoutuu takaisin"; grammar correct.
-- inquiry.json ennuste-2 correct feedback now cites "IPCC:n elinkaarivertailun mukaan" and no longer points to data not yet shown.
-- Round-1 changes are not re-reviewed (they passed in round 1). No captures opened (diff judged from source).
+- Diff of content/fi/FY2/fy2-8/inquiry.json in context: sim model, koe intro, values.co2.420, correct-option feedback; lang/fi.json taso_nyt; sim-spec.md and tests/sims/fy2-8.json option string match the new label.
+- "Tämä lämpötila ei ole vielä asettunut" and "Simulaatio alkaa 2020-luvun alun tilanteesta" read naturally; "jo nykyisellä määrällä" left later in the model refers to the real present atmosphere and stays correct.
+- Rendered preview/fy2-8.html at 390 px (Playwright): menu shows "2020-luvun alun määrä", no clipping, readout "Kasvihuonekaasut: 2020-luvun alun määrä, CO2-pitoisuus 420 ppm" wraps cleanly, no horizontal overflow (scrollWidth 390).
+- Note: the fi-easy feedback still says "Nykyisellä pitoisuudella" (reported in that part).
+- Content hash recomputed: 4afdc6bfe3a42eeb (matches brief).

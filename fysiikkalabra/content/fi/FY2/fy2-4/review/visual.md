@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 8fbdca349e627a9f
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: 893ac0f1037abe61
+Mode: light (teacher 2026-11-07, "kevyt katselmointi"): the FY2 targeted-fix diff (git diff origin/main...HEAD) only
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] inquiry.json, sim "model" and koe-1 "model" — the sim text now says losses become "pääosin lämpöenergiaksi", the experiment model says "häviöitä, pääosin lämpöä"; both are correct and readable, optionally use one form in both (e.g. "pääosin lämmöksi" / "pääosin lämpöä") for a single voice.
 
 ## Checked
-- Diff of lesson.md, inquiry.json, exit-ticket.json (Finnish), changed passages with surrounding paragraph.
-- Hero question, hook text and the new simplified-model paragraph (visible radiation vs luminous flux): no new formulas, numbers $60\,\text{W}$, $10\,\text{W}$ unchanged in LaTeX, short paragraph, natural Finnish.
-- No captures opened (diff judged from source).
+- Diff of content/fi/FY2/fy2-4/inquiry.json read in full surrounding paragraph (sim model, koe-1 discussion model).
+- New loss sentences: natural Finnish, no AI phrasing, "määriteltyyn hyötyyn" is clear; reflection now described as "osa tulevasta säteilyenergiasta myös heijastuu ympäristöön", not as heat.
+- "Loput $75\,\%$ oli häviöitä, pääosin lämpöä." reads naturally; LaTeX intact; no new plain numbers or units.
+- Substance agrees with en and fi-easy versions of the same two passages.
+- Content hash recomputed at start and end: 893ac0f1037abe61 (matches brief).
