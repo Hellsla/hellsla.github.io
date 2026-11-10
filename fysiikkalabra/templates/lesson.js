@@ -135,7 +135,7 @@
     const links = [...toc.querySelectorAll('a[href^="#"]')];
     const pairs = links.map((a) => [a, document.getElementById(decodeURIComponent(a.getAttribute('href').slice(1)))]).filter((p) => p[1]);
     const targets = pairs.map((p) => p[1]);
-    let pinned = null, reading = null, current = null;
+    let pinned = null, reading = null, current = null, onMark = null;
     const keepInView = (a) => {
       if (toc.scrollWidth <= toc.clientWidth + 1 || getComputedStyle(toc).flexDirection === 'column') return;
       const tools = toc.querySelector('.toc-tools'), right = toc.clientWidth - (tools ? tools.offsetWidth : 0);
@@ -146,6 +146,7 @@
     const mark = (id) => {
       if (!id || id === current) return;
       current = id;
+      if (onMark) onMark(id);
       links.forEach((a) => {
         const on = a.getAttribute('href') === '#' + id;
         if (on) { a.setAttribute('aria-current', 'step'); keepInView(a); } else a.removeAttribute('aria-current');
@@ -194,6 +195,24 @@
       : u.matches('form') ? /^(ok|no|close)$/.test((u.querySelector('output') || {}).dataset?.state || '') : u.hidden);
     const unitKey = (u) => { const host = u.closest('[id]'); const all = [...host.querySelectorAll(REQUIRED)]; return host.id + ':' + all.indexOf(u); };
     const stages = pairs.filter(([, t]) => t.matches('section.stage')).map(([a, t]) => ({ a, t, units: required(t) }));
+    // Jatka (design audit 2026-11-10, P0-3; templates/jatka.js): the number of stages is kept beside the done ones, and
+    // the chapter opened last with the stage on screen in ruukkilabra:viimeisin { pre, file, title, num ("FY5 · Luku 4"), stage, label,
+    // n, of, t }, so that the module page and the front page can say where to go on. This browser only, nothing sent.
+    if (stages.length) {
+      saved.of = stages.length;
+      const pre = (location.pathname.match(/(?:^|\/)((?:en|fi-easy|fr|sv)\/)[^/]*$/) || [])[1] || '';
+      const file = location.pathname.split('/').pop() || '';
+      const h1 = document.querySelector('main h1'), num = document.querySelector('.crumbs .ch-menu > summary .t');
+      const mod = ((toc.querySelector('.toc-head span') || {}).textContent || '').trim();
+      const visit = (id) => {
+        const k = stages.findIndex((s) => s.t.id === id || s.t.contains(document.getElementById(id)));
+        if (k < 0 || !/\.html$/.test(file)) return;
+        const label = ((stages[k].a.querySelector('.toc-label') || {}).textContent || '').trim();
+        try { localStorage.setItem('ruukkilabra:viimeisin', JSON.stringify({ pre, file, title: h1 ? h1.textContent.trim() : document.title,
+          num: [mod, num ? (num.firstChild.textContent || '').trim() : ''].filter(Boolean).join(' · '), stage: stages[k].t.id, label, n: k + 1, of: stages.length, t: Date.now() })); } catch (e) { /* no storage */ }
+      };
+      onMark = visit; if (current) visit(current);
+    }
     const DONE = msg('stage_done');
     const show = (s) => {
       if (s.a.classList.contains('is-done')) return;

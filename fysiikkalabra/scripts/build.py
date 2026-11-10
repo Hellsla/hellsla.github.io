@@ -47,7 +47,7 @@ if SITE.name == "site.tmp":
 else:
     SITE.mkdir(exist_ok=True)                         # preview/ is shared by agents building at the same time, so it is never wiped
 TPL = ROOT / "templates"
-for f in ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js", "ahjo.js", "lumatutor.js"): shutil.copy(TPL / f, SITE / f)
+for f in ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js", "jatka.js", "ahjo.js", "lumatutor.js"): shutil.copy(TPL / f, SITE / f)
 card_files = concept_cards.publish(SITE)   # site/kortit/<module>.json, read by Käsitetakomo (scripts/concept_cards.py)
 # p5 + KaTeX, no CDN needed. The read-aloud model and onnxruntime-web are not part of the site (teacher 2026-11-04,
 # UI fix 3): they are in the repository Hellsla/ruukkilabra-models, copied into the published site's models/ folder
@@ -498,6 +498,13 @@ def ahjo_course_row(c, planned):
     return (f'<li><a class="mod-row ahjo-row ahjo-course-row" href="{ahjo.course_page(c["code"])}"><img class="mod-icon" src="module-icons/{c["code"].lower()}.svg" alt="" width="40" height="40" aria-hidden="true">'
             f'<span class="mod-text"><span class="mod-name"><span class="mod-code">{esc(p["title"])}</span> <span class="mod-title">{esc(c["subtitle"])}</span></span>'
             f'<span class="mod-q" title="{q}">{q}</span></span><span class="mod-go" aria-hidden="true">→</span></a></li>')
+
+
+def resume_box():
+    """Jatka (design audit 2026-11-10, P0-3): an empty row that templates/jatka.js fills from this browser's own record
+    of started chapters; it stays hidden for a reader who has not started one, and without the script."""
+    t = {"resume": T("site.resume"), "go": T("site.resume_go"), "stages": T("site.state_stages"), "started": T("site.state_started"), "stage": T("site.resume_stage")}
+    return f'<div class="resume" id="jatka" data-t="{esc(json.dumps(t, ensure_ascii=False))}" hidden></div>'
 
 
 ABOUT = "tietoa.html"
@@ -1241,7 +1248,7 @@ def build_language(lang):
                 f'<p class="lead">{esc(T("site.module_question." + code))}</p>'
                 f'<p class="mod-status">{main_label}{(" · " + extra_label) if extra_label else ""}</p>'
                 + progress_section(code, lang, mod)
-                + f'<h2>{T("site.course_lessons")}</h2>{items}<div class="mod-more">'
+                + resume_box() + f'<h2>{T("site.course_lessons")}</h2>{items}<script src="jatka.js"></script><div class="mod-more">'
                 + concept_cards.module_section(code, T, lang, chapter_titles(code, built_ids), end_img("deck"))   # Kertauspakkasi: the student's deck of the module (teacher 2026-11-03); order deck, exam, Haastetehtävät (teacher 2026-11-05)
                 + (f'<section class="me-card">{end_img("exam")}<h2>{T("exam.title")}</h2><p>{T("exam.course_lead")}</p><ul class="lessons practice-link"><li class="live">'
                    f'<a href="{practice.page_name(code + practice.EXAM)}">{T("exam.title")}</a> <span class="count">{exam_built[code]}</span></li></ul></section>' if code in exam_built else "")
@@ -1395,7 +1402,7 @@ def build_language(lang):
         # from 700 px the school's logo stands here, over the right column, so that both lists start level (teacher
         # 2026-11-04); the list's own heading (the same logo) is then visually hidden, site.css .intro-school
         + (f'<img class="intro-school" src="brand/kiviruukin-lukio-rivi-musta.svg" alt="" width="293" height="32">' if local_rows else "")
-        + '</section>'
+        + '</section>' + resume_box() + '<script src="jatka.js"></script>'
         f'<section class="catalogue" id="moduulit" aria-labelledby="h-modules"><h2 id="h-modules" class="visually-hidden">{T("site.modules")}</h2>'
         f'<div class="mod-cols"><ul class="mod-list">{catalogue}</ul><div class="mod-side">'
         + (f'<h3 class="mod-group">{T("site.upcoming")}</h3><ul class="mod-list up-list">{upcoming}</ul>' if upcoming else "")
@@ -1525,7 +1532,7 @@ link_languages()
 i18n.set_lang(i18n.SOURCE)
 # Cache busting (teacher 2026-11-03: a page fetched just after a deploy showed new HTML with yesterday's cached site.css):
 # every link to a shared stylesheet or script carries ?v=<first 8 hex of its SHA-256>, so a changed file is a new URL.
-SHARED = ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js", "ahjo.js", "lumatutor.js")
+SHARED = ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js", "jatka.js", "ahjo.js", "lumatutor.js")
 _ver = {f: hashlib.sha256((SITE / f).read_bytes()).hexdigest()[:8] for f in SHARED if (SITE / f).is_file()}
 _ref = re.compile(r'((?:href|src)="(?:\.\./)*)(' + "|".join(re.escape(f) for f in _ver) + r')(?:\?v=[0-9a-f]*)?"')
 for _page in SITE.rglob("*.html"):
@@ -1534,7 +1541,7 @@ for _page in SITE.rglob("*.html"):
     if "<table" in _new: _new = tablefit.fit(_new, re.search(r'<html[^>]*\blang="fi\b', _new[:400]) is not None)   # no table scrolls sideways (2026-11-08)
     if _new != _old: _page.write_text(_new)
 if SITE.name == "site.tmp":                      # check the render, then swap it in; the old site comes back if the swap fails
-    expected += ["site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js", "ahjo.js", "lumatutor.js"] + card_files + assets
+    expected += ["site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js", "jatka.js", "ahjo.js", "lumatutor.js"] + card_files + assets
     broken = [n for n in expected if not (SITE / n).is_file() or (SITE / n).stat().st_size == 0]
     if broken or not (SITE / "vendor").is_dir(): sys.exit(f"build check failed, site/ left unchanged: missing or empty {broken or ['vendor/']}")
     old = ROOT / "site.old"

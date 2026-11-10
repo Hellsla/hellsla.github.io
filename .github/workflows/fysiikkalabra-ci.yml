@@ -90,6 +90,8 @@ jobs:
         run: python scripts/test_readaloud.py
       - name: the progress bar of a lesson (sticky stage bar, stage on screen, done stages in localStorage, no JavaScript; teacher 2026-11-03)
         run: python scripts/test_progress.py
+      - name: Menu on a phone, skip link, named self-assessment levels, Jatka (design audit 2026-11-10)
+        run: python scripts/test_jatka.py
       - run: python scripts/test_reviews.py
       - run: python scripts/test_inquiry.py
       - name: the answer check reads typed numbers and accepts half a unit in the shown last digit (templates/lesson.js part 1, teacher 2026-11-10)
