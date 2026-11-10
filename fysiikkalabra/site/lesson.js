@@ -136,6 +136,39 @@
     const pairs = links.map((a) => [a, document.getElementById(decodeURIComponent(a.getAttribute('href').slice(1)))]).filter((p) => p[1]);
     const targets = pairs.map((p) => p[1]);
     let pinned = null, reading = null, current = null, onMark = null;
+    // The bar on a phone (design audit 2026-11-10, step 2 of docs/audits/2026-11-10-vaiheiden-kayttoliittyma.md): under
+    // 700 px only three of the seven chips fitted, with no sign that the bar scrolled. There the bar is now one button,
+    // "3/7 Tutki", that opens the whole list with its ticks under the bar (site.css nav.toc.has-now); the thin line
+    // under the bar is the share of done stages (--p). From 700 px the chips show as before. Without JavaScript the
+    // bar stays the list of links that scrolls sideways.
+    let now = null;
+    if (pairs.length >= 3) {
+      now = document.createElement('button'); now.type = 'button'; now.className = 'toc-now'; now.setAttribute('aria-expanded', 'false');
+      now.innerHTML = '<span class="visually-hidden"></span><span class="toc-now-n"></span><span class="toc-now-l"></span>';
+      now.firstChild.textContent = msg('toc_stage') + ' ';
+      toc.insertBefore(now, toc.firstChild); toc.classList.add('has-now');
+      const open = (on) => { toc.classList.toggle('is-open', on); now.setAttribute('aria-expanded', String(on)); };
+      now.addEventListener('click', () => open(!toc.classList.contains('is-open')));
+      toc.addEventListener('click', (e) => { if (e.target.closest('a[href^="#"]')) open(false); });
+      document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && toc.classList.contains('is-open')) { open(false); now.focus(); } });
+      document.addEventListener('click', (e) => { if (!toc.contains(e.target)) open(false); });
+    }
+    const showNow = (a) => {
+      if (!now || !a) return;
+      const k = pairs.findIndex((p) => p[0] === a);
+      now.querySelector('.toc-now-n').textContent = (k + 1) + '/' + pairs.length;
+      now.querySelector('.toc-now-l').textContent = ((a.querySelector('.toc-label') || a).textContent || '').replace(/\s*\(.*\)\s*$/, '').trim();
+    };
+    // Seuraavaksi: at the end of every part of the page that has a later one, a link to the next (a <nav>, so the
+    // read-aloud skips it). The page is long, and this is where the reader decides to go on.
+    pairs.forEach(([, t], k) => {
+      const nx = pairs[k + 1]; if (!nx || !t.matches('section')) return;
+      const row = document.createElement('nav'); row.className = 'next-stage'; row.setAttribute('aria-label', msg('next_stage'));
+      const a = document.createElement('a'); a.href = '#' + nx[1].id;
+      const lab = document.createElement('span'); lab.className = 'next-stage-l'; lab.textContent = msg('next_stage');
+      const name = document.createElement('strong'); name.textContent = ((nx[0].querySelector('.toc-label') || nx[0]).textContent || '').trim();
+      a.append(lab, name); row.append(a); t.after(row);   // after the section, not in it: a stage's own last part stays its last child
+    });
     const keepInView = (a) => {
       if (toc.scrollWidth <= toc.clientWidth + 1 || getComputedStyle(toc).flexDirection === 'column') return;
       const tools = toc.querySelector('.toc-tools'), right = toc.clientWidth - (tools ? tools.offsetWidth : 0);
@@ -149,7 +182,7 @@
       if (onMark) onMark(id);
       links.forEach((a) => {
         const on = a.getAttribute('href') === '#' + id;
-        if (on) { a.setAttribute('aria-current', 'step'); keepInView(a); } else a.removeAttribute('aria-current');
+        if (on) { a.setAttribute('aria-current', 'step'); keepInView(a); showNow(a); } else a.removeAttribute('aria-current');
       });
     };
     const inView = new Set();
@@ -217,6 +250,7 @@
     const show = (s) => {
       if (s.a.classList.contains('is-done')) return;
       s.a.classList.add('is-done');
+      toc.style.setProperty('--p', String(toc.querySelectorAll('a.is-done').length / Math.max(1, stages.length)));
       const sr = document.createElement('span'); sr.className = 'visually-hidden'; sr.textContent = ' (' + DONE + ')'; s.a.append(sr);
     };
     const inside = (r) => r.height > 0 && r.bottom >= 0 && r.bottom <= window.innerHeight;   // its end is on screen
