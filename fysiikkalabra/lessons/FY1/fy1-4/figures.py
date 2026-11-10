@@ -141,9 +141,55 @@ def scatter_points():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "scatter": scatter, "slope": slope, "kettle": kettle, "scatter-points": scatter_points}
+def candle():
+    """Task illustration (fy1-4-L1-04): a candle burning on a saucer; no numbers."""
+    f = S.scene("fy14-candle", "Kuvitus: kynttilä palaa lautasella hämärässä huoneessa. Liekin ympärillä on valokehä, ja kynttilän kyljessä on valunutta steariinia.")
+    f.rect(0, 0, 600, 360, "#3b3f4a")
+    f.add('<circle cx="300" cy="120" r="150" fill="#ffd8a8" opacity="0.12"/><circle cx="300" cy="120" r="80" fill="#ffd8a8" opacity="0.18"/>')
+    f.rect(0, 280, 600, 80, "#5a4636"); f.rect(0, 278, 600, 4, "#6e5644")
+    f.add('<ellipse cx="300" cy="284" rx="110" ry="16" fill="#d9dee3"/><ellipse cx="300" cy="280" rx="84" ry="10" fill="#eef0f2"/>')
+    wax = "#f6efe0"
+    f.rect(262, 150, 76, 130, wax, S.dark(wax, 0.3), S.W_OBJ)
+    f.rect(312, 150, 26, 130, S.dark(wax, 0.08))
+    f.add(f'<ellipse cx="300" cy="150" rx="38" ry="8" fill="{S.dark(wax, 0.06)}" stroke="{S.dark(wax, 0.3)}" stroke-width="{S.W_OBJ}"/>')
+    f.path("M272,150 q-4,26 2,40 q6,6 8,-4 q2,-18 0,-36 Z", wax, S.dark(wax, 0.25), 1.25)     # a drip
+    f.line(300, 150, 300, 128, "#2b2f36", 3)
+    f.add('<path d="M300,64 C318,92 318,118 300,132 C282,118 282,92 300,64 Z" fill="#ffc078"/>'
+          '<path d="M300,86 C310,104 310,118 300,128 C290,118 290,104 300,86 Z" fill="#fff3bf"/>'
+          '<ellipse cx="300" cy="128" rx="5" ry="7" fill="#4dabf7" opacity="0.7"/>')
+    return f.svg()
+
+
+def spring_masses():
+    """Task illustration (fy1-4-L2-05): a steel spring hangs from a stand with a slotted mass; spare masses on the table; no numbers."""
+    f = S.scene("fy14-spring", "Kuvitus: teräsjousi riippuu telineestä, ja sen alapäässä on punnusripustin ja punnuksia. Pöydällä on lisää punnuksia "
+                "ja viivain jousen venymän mittaamiseen.")
+    f.rect(0, 0, 600, 360, "#f3efe6")
+    H.wood(f, 0, 310, 600, 50, "fy14s-top")
+    metal = "#c4ccd4"
+    f.rect(100, 296, 170, 14, "#6c757d", S.dark("#6c757d", 0.35), S.W_OBJ, 3)
+    f.rect(120, 30, 12, 268, metal, S.dark(metal, 0.45), S.W_OBJ, 2)
+    f.rect(120, 30, 150, 10, metal, S.dark(metal, 0.45), S.W_OBJ, 2)
+    x, y0, coils, L = 240, 40, 14, 120
+    pts = " ".join(f"{n(x + (10 if k % 2 else -10))},{n(y0 + 10 + k * L / coils)}" for k in range(coils + 1))
+    f.add(f'<polyline points="{x},{y0} {x},{y0 + 10} {pts} {x},{y0 + L + 22}" fill="none" stroke="#5b636d" stroke-width="2.5" stroke-linejoin="round"/>')
+    f.line(x, y0 + L + 22, x, y0 + L + 40, "#5b636d", 2)
+    for k in range(3):                                                              # slotted masses on the hanger
+        f.rect(x - 22, y0 + L + 40 + k * 14, 44, 13, "#8a929c", S.dark("#8a929c", 0.4), 1.5, 2)
+    ry = 120
+    f.rect(296, ry, 22, 190, "#f1dfb5", S.dark("#f1dfb5", 0.4), S.W_OBJ, 2)         # ruler beside the spring
+    for k in range(37): f.line(296, ry + 5 + k * 5, 296 + (12 if k % 10 == 0 else 8 if k % 5 == 0 else 5), ry + 5 + k * 5, "#3a4350", 1)
+    for k, xx in enumerate((400, 446, 492)):
+        for j in range(3 - k % 2):
+            f.rect(xx - 18, 296 - 13 * (j + 1), 36, 12, "#8a929c", S.dark("#8a929c", 0.4), 1.5, 2)
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "candle": candle, "spring-masses": spring_masses, "scatter": scatter, "slope": slope, "kettle": kettle, "scatter-points": scatter_points}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
+    "candle": "safe: the situation only, a burning candle; no numbers",
+    "spring-masses": "safe: the situation only, a spring with slotted masses and a ruler; no readings",
     "scatter": "reveals: the fitted line s = 0,5 m/s · t (scatter-points is the same data without it)",
     "scatter-points": "safe: the six points only, axes to 9 s for an extrapolation",
     "slope": "reveals: the slope 0,5 and the intercept 1",

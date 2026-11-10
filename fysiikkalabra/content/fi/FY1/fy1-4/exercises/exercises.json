@@ -29,6 +29,7 @@
       "id": "fy1-4-L1-04",
       "level": 1,
       "text": "Kynttilä palaa tasaisesti. Mittauspisteisiin sovitettu suora kulkee pisteiden $(0{,}0\\,\\text{h};\\ 20{,}0\\,\\text{cm})$ ja $(4{,}0\\,\\text{h};\\ 14{,}0\\,\\text{cm})$ kautta, kun $y$-akselilla on kynttilän pituus. Mikä on suoran kulmakerroin? Anna vastaus etumerkkeineen yksikössä $\\text{cm/h}$.",
+      "figure": "fy1-4/candle",
       "answer": -1.5,
       "unit": "cm/h",
       "tolerance": 0.02
@@ -153,6 +154,7 @@
       "id": "fy1-4-L2-05",
       "level": 2,
       "text": "Teräsjouseen ripustettiin erimassaisia punnuksia ja mitattiin jousen venymä $x$ kuorman massan $m$ funktiona. Piirrä mittauspisteistä kuvaaja, sovita pisteisiin suora ja määritä sen kulmakerroin. Kuinka monta millimetriä jousi venyy yhtä lisägrammaa kohti? Anna vastaus yksikössä $\\text{mm/g}$.",
+      "figure": "fy1-4/spring-masses",
       "kind": [
         "data",
         "graph"

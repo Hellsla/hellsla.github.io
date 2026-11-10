@@ -34,12 +34,15 @@ def hero():
 
 
 def cart(f, cx, cy):
-    """A small cart on the ground line y = cy: body, cabin and two wheels."""
-    f.rect(cx - 28, cy - 36, 56, 22, COLD_LIGHT, INK, 2.5, 4)
-    f.rect(cx - 13, cy - 52, 26, 16, GLASS, INK, 2.5, 3)
-    for wx in (cx - 16, cx + 16):
-        f.circle(wx, cy - 8, 8, INK)
-        f.circle(wx, cy - 8, 3, WHITE)
+    """A dynamics cart on the ground line y = cy: a tinted body with a darker side, a top rail and two spoked wheels."""
+    body = "#4f8fd0"
+    f.path(f"M{cx - 30},{cy - 34} h60 l-4,18 h-52 Z", body, S.dark(body, 0.4), S.W_OBJ)
+    f.path(f"M{cx - 30},{cy - 34} h60 l-2,6 h-56 Z", S.light(body, 0.45))
+    f.rect(cx - 22, cy - 40, 44, 6, "#c4ccd4", S.dark("#c4ccd4", 0.45), 1.25, 2)
+    for wx in (cx - 17, cx + 17):
+        f.circle(wx, cy - 9, 9, "#3a4350")
+        f.circle(wx, cy - 9, 4, "#c4ccd4")
+        f.circle(wx, cy - 9, 1.5, "#3a4350")
 
 
 def motion():
@@ -47,12 +50,12 @@ def motion():
             "Kärryjen välit ovat yhtä pitkät, ja jokaisen välin alla on yhtä pitkä sulku Δs: tasaisessa liikkeessä kappale kulkee yhtä pitkissä "
             "ajoissa yhtä pitkät matkat. Välit on piirretty mittakaavassa, kärryt ovat samankokoisia.")
     ground = 150
-    f.line(24, ground, 576, ground, INK, 2.5)
+    f.hatch_ground(24, 576, ground)
     xs = [70 + 115 * i for i in range(5)]
     for i, x in enumerate(xs):
         cart(f, x, ground)
-        f.line(x, ground, x, ground + 12, INK, 2)
-        f.tex(x, ground + 36, r"t = 0\,\text{s}" if i == 0 else rf"{i}\,\text{{s}}", "middle", w=100 if i == 0 else 60)
+        f.line(x, ground + 12, x, ground + 20, INK, 1.25)
+        f.tex(x, ground + 40, r"t = 0\,\text{s}" if i == 0 else rf"{i}\,\text{{s}}", "middle", w=100 if i == 0 else 60)
     f.arrow(xs[0] + 6, 70, xs[0] + 66, 70, COLD, 3, 14)                  # velocity is blue (NOTES.md §3)
     f.tex(xs[0] + 36, 46, "v", "middle", COLD)
     for a, b in zip(xs, xs[1:]):
@@ -140,10 +143,49 @@ def pick_vt():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "motion": motion, "graph": graph, "line-read": line_read,
+def lightning():
+    """Task illustration (fy1-5-L2-04): lightning over a lake seen from a cabin's porch; no numbers."""
+    f = S.scene("fy15-thunder", "Kuvitus: salama iskee järven toiselle puolelle tummasta ukkospilvestä. Etualalla mökin kuistilla on lyhty, "
+                "ja ranta on tumma.")
+    f.defs_add('<linearGradient id="fy15t-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a3346"/><stop offset="1" stop-color="#5d6b84"/></linearGradient>')
+    f.rect(0, 0, 600, 360, "url(#fy15t-sky)")
+    for cx, cy, sc, c in ((120, 60, 2.0, "#3b4458"), (360, 46, 2.4, "#343d50"), (520, 70, 1.8, "#3f495e")): H.cloud(f, cx, cy, sc, c)
+    bolt = "M372,92 L352,150 L370,150 L340,214 L362,214 L330,262 L392,190 L370,190 L396,140 L378,140 L398,92 Z"
+    f.add(f'<path d="{bolt}" fill="#fff7c2" stroke="#ffe066" stroke-width="2" stroke-linejoin="round"/>')
+    f.add('<ellipse cx="364" cy="180" rx="70" ry="90" fill="#fff7c2" opacity="0.12"/>')
+    f.path("M0,262 C80,252 200,256 300,262 C420,268 520,256 600,260 V276 H0 Z", "#1f2a33")
+    f.rect(0, 276, 600, 84, "#3a4a63")
+    f.add('<path d="M300,286 l40,0" stroke="#fff7c2" stroke-width="3" opacity="0.4"/><path d="M330,300 l26,0" stroke="#fff7c2" stroke-width="2" opacity="0.3"/>')
+    f.path("M0,300 L120,300 L120,360 L0,360 Z", "#6b4f37")                     # the porch in the foreground
+    for x in (10, 40, 70, 100): f.line(x, 300, x, 360, "#4f3a28", 1.5)
+    f.rect(0, 250, 130, 8, "#6b4f37"); f.line(122, 250, 122, 300, "#4f3a28", 6)
+    f.rect(84, 262, 20, 30, "#ffd8a8", "#4f3a28", 1.5, 3); f.add('<circle cx="94" cy="277" r="16" fill="#ffd8a8" opacity="0.25"/>')
+    return f.svg()
+
+
+def two_friends():
+    """Task illustration (fy1-5-L3-03): two friends set off from the school door along a straight street; no numbers."""
+    f = S.scene("fy15-friends", "Kuvitus: kaksi ystävää lähtee koulun ovelta samaa suoraa katua pitkin samaan suuntaan. Edellä kävelee toinen, "
+                "ja ovelta lähtee perään toinen, joka pitää kiirettä.")
+    H.sky(f, "fy15f", 360)
+    f.rect(0, 120, 220, 160, "#e5c9a3", S.dark("#e5c9a3", 0.35), S.W_OBJ)                    # the school
+    for x in (20, 80, 150): f.rect(x, 140, 44, 40, "#cfe3f3", S.dark("#e5c9a3", 0.35), 1.25)
+    f.rect(96, 200, 56, 80, "#7a5236", S.dark("#7a5236", 0.35), S.W_OBJ)
+    f.rect(0, 110, 230, 14, "#9a4a3a")
+    f.rect(0, 280, 600, 80, "#b9bfc6"); f.rect(0, 276, 600, 6, "#9aa3ad")
+    for x in range(0, 600, 60): f.line(x, 282, x - 20, 360, "#a8afb7", 1.25)
+    for x in (300, 470): H.birch(f, x + 60, 276, 110)
+    H.walker(f, 430, 304, coat="#2b8a3e", trousers="#3a4350", sc=0.4)
+    H.walker(f, 250, 304, coat="#e8590c", trousers="#3a4350", sc=0.4, lean=0.15, stride=1.3)
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "lightning": lightning, "two-friends": two_friends, "motion": motion, "graph": graph, "line-read": line_read,
            "pick-back": pick_back, "pick-away": pick_away, "pick-distance": pick_distance, "pick-vt": pick_vt}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
+    "lightning": "safe: the situation only, lightning seen across a lake; no numbers",
+    "two-friends": "safe: the situation only, two friends leaving the school door; no numbers",
     "motion": "safe: equal spacing at equal times, no distances",
     "graph": "reveals: the slope 3 m/s of both lines and s0 = 5 m",
     "line-read": "safe: one straight line through the origin, grid crossings to read, no slope marked (graph is the lesson figure)",
