@@ -5,8 +5,10 @@ Usage: python scripts/test_progress.py [site] [page ...]
 In a browser, on fy4-4 in every language (or the pages named), at 360, 768 and 1280 px:
   - the stage navigation sticks under the top edge at every width and stays in view when the page is scrolled
   - the stage on screen is marked (aria-current) as the page is scrolled (IntersectionObserver)
-  - below 700 px the bar scrolls sideways inside itself, the page never does, and the current stage is in view
-    (not under the Kuuntele button)
+  - below 700 px the chips are folded into one button that names the stage on screen ("4/7 Teoria") and opens every
+    stage on its own row under the bar; choosing one goes there and closes the list (design audit 2026-11-10; the bar
+    scrolled sideways inside itself until then, and still does without JavaScript); the page never scrolls sideways
+  - every stage but the last ends with a Seuraavaksi link to the next one
   - a stage is marked done (a tick and a hidden "(tehty)") once its required answers are given (Vastaa / Tarkista),
     optional tasks do not count, and the state is kept in localStorage under ruukkilabra:<page> and restored on reload
   - without JavaScript the bar is a plain list of links and there is no Kuuntele button
@@ -60,12 +62,39 @@ with sync_playwright() as pw:
                 st = pg.evaluate(f"""() => {{ const n = document.querySelector('nav.toc'), r = n.getBoundingClientRect(), a = n.querySelector('a[aria-current]');
                     const tools = n.querySelector('.toc-tools'), right = tools && !tools.hidden ? tools.getBoundingClientRect().left : r.right;
                     const ar = a && a.getBoundingClientRect();
-                    return {{ cur: {CURRENT}, top: Math.round(r.top), pos: getComputedStyle(n).position,
-                      seen: !!ar && ar.left >= r.left - 1 && ar.right <= right + 1, sw: document.documentElement.scrollWidth, iw: innerWidth }}; }}""")
+                    // under 700 px the chips give way to one button that names the stage on screen, "4/7 Teoria" (2026-11-10)
+                    const now = n.querySelector('.toc-now'), nr = now && now.getBoundingClientRect(), all = [...n.querySelectorAll('a[href^="#"]')];
+                    const compact = !!now && getComputedStyle(now).display !== 'none';
+                    const named = compact && !!a && now.querySelector('.toc-now-n').textContent === (all.indexOf(a) + 1) + '/' + all.length
+                      && now.querySelector('.toc-now-l').textContent === a.querySelector('.toc-label').textContent && nr.left >= r.left - 1 && nr.right <= right + 1 && nr.height >= 44;
+                    return {{ cur: {CURRENT}, top: Math.round(r.top), pos: getComputedStyle(n).position, compact,
+                      seen: compact ? named : !!ar && ar.left >= r.left - 1 && ar.right <= right + 1, sw: document.documentElement.scrollWidth, iw: innerWidth }}; }}""")
                 expect(f"{tag}: at {sid} the bar is stuck at the top, marks {sid}, shows it, and the page does not scroll sideways",
                        st["cur"] == ["#" + sid] and st["top"] == 0 and st["pos"] == "sticky" and st["seen"] and st["sw"] <= st["iw"], st)
             if w < 700:
-                expect(f"{tag}: the bar scrolls sideways inside itself", pg.evaluate("(() => { const n = document.querySelector('nav.toc'); return n.scrollWidth > n.clientWidth && getComputedStyle(n).overflowX === 'auto'; })()"))
+                # the bar no longer scrolls sideways under 700 px (design audit 2026-11-10: three of seven chips showed, with
+                # no sign of the rest): one button names the stage, and opens every stage on its own row under the bar
+                st = pg.evaluate("""() => { const n = document.querySelector('nav.toc'), links = [...n.querySelectorAll('a[href^="#"]')];
+                    const vis = () => links.filter(a => a.offsetParent).length; const before = vis();
+                    n.querySelector('.toc-now').click(); const open = vis(), rows = links.every(a => a.getBoundingClientRect().height >= 44 && a.getBoundingClientRect().right <= innerWidth);
+                    const exp = n.querySelector('.toc-now').getAttribute('aria-expanded');
+                    return { before, open, total: links.length, rows, exp, sw: document.documentElement.scrollWidth, iw: innerWidth }; }""")
+                expect(f"{tag}: the chips are folded into one button; it opens every stage on a 44 px row, and the page does not scroll sideways",
+                       st["before"] == 0 and st["open"] == st["total"] >= 5 and st["rows"] and st["exp"] == "true" and st["sw"] <= st["iw"], st)
+                pg.click('nav.toc a[href="#selita"]'); pg.wait_for_timeout(700)
+                st = pg.evaluate(f"""() => {{ const n = document.querySelector('nav.toc'); return {{ cur: {CURRENT}, open: n.classList.contains('is-open'),
+                    shown: [...n.querySelectorAll('a[href^="#"]')].filter(a => a.offsetParent).length, top: Math.round(document.getElementById('selita').getBoundingClientRect().top), bar: Math.round(n.getBoundingClientRect().bottom) }}; }}""")
+                expect(f"{tag}: choosing a stage goes there, closes the list, and the stage's heading is not under the bar",
+                       st["cur"] == ["#selita"] and not st["open"] and st["shown"] == 0 and st["top"] >= st["bar"] - 2, st)
+                pg.click(".toc-now"); pg.keyboard.press("Escape")
+                expect(f"{tag}: Esc closes the list", pg.evaluate("!document.querySelector('nav.toc').classList.contains('is-open')"))
+            else:
+                expect(f"{tag}: from 700 px the chips show and there is no stage button", pg.evaluate("getComputedStyle(document.querySelector('.toc-now')).display === 'none' && [...document.querySelectorAll('nav.toc a[href^=\"#\"]')].every(a => a.offsetParent)"))
+            nx = pg.evaluate("""() => { const links = [...document.querySelectorAll('nav.toc a[href^="#"]')].map(a => a.getAttribute('href'));
+                const rows = [...document.querySelectorAll('nav.next-stage a')].map(a => [a.closest('nav').previousElementSibling.id, a.getAttribute('href'), a.getBoundingClientRect().height >= 44]);
+                return { links, rows }; }""")
+            want = [[a[1:], b] for a, b in zip(nx["links"], nx["links"][1:])]
+            expect(f"{tag}: every stage but the last ends with a Seuraavaksi link to the next one (44 px)", [[r[0], r[1]] for r in nx["rows"]] == want and all(r[2] for r in nx["rows"]), nx["rows"])
             if w == 1280:
                 pg.evaluate("scrollTo(0, 0)"); pg.wait_for_timeout(200)
                 # optional tasks do not count: answering the optional Pohdinta question marks nothing

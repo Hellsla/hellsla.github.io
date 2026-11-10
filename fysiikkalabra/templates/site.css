@@ -2169,3 +2169,30 @@ main.home>.resume{margin:0 0 1rem}
 .act-theory>h3.theory-h:first-child{margin-top:.4rem}
 .act-theory h4{margin-top:1.4rem}
 .hook{font-family:var(--sans)}
+
+/* The stage bar on a phone and Seuraavaksi (design audit 2026-11-10; docs/audits/2026-11-10-vaiheiden-kayttoliittyma.md
+   step 2; lesson.js part 2). Under 700 px the chips give way to one button, "3/7 Tutki", beside Kuuntele; it opens the
+   whole list under the bar, each stage on its own 44 px row with its tick. The line under the bar is the share of done
+   stages. Without JavaScript (no .has-now) the bar is the scrolling list as before. */
+.toc-now{display:none}
+@media (max-width:699.98px){
+  nav.toc.has-now{flex-wrap:wrap;overflow-x:visible;row-gap:0;background-image:linear-gradient(var(--accent),var(--accent));background-repeat:no-repeat;background-position:left bottom;background-size:calc(var(--p,0) * 100%) 3px}
+  nav.toc.has-now>.toc-now{order:0;display:inline-flex;align-items:center;gap:.5rem;min-height:44px;min-width:0;flex:0 1 auto;padding:0 .9rem 0 .7rem;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink);font:700 var(--fs-ui) var(--sans);cursor:pointer}
+  .toc-now-n{font-variant-numeric:tabular-nums;color:var(--accent-deep)}
+  .toc-now-l{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .toc-now::after{content:"";flex:none;width:.45rem;height:.45rem;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(-2px) rotate(45deg)}
+  .toc-now[aria-expanded=true]::after{transform:translateY(2px) rotate(-135deg)}
+  nav.toc.has-now>.toc-tools{order:1;position:static;margin-right:0;padding-right:0;box-shadow:none;background:none}
+  nav.toc.has-now>a{order:2;display:none;flex:1 0 100%;min-height:44px;border-radius:10px;font-size:var(--fs-ui)}
+  nav.toc.has-now.is-open>a{display:flex}
+  nav.toc.has-now.is-open>a:first-of-type{margin-top:.4rem}
+  nav.toc.has-now.is-open{padding-bottom:.6rem;background-color:var(--bg);box-shadow:0 10px 24px rgba(20,23,30,.12);max-height:100dvh;overflow-y:auto}
+  nav.toc.has-now .toc-label{max-width:none}
+}
+.next-stage{margin:1.8rem 0 0;max-width:var(--measure)}
+.next-stage a{display:flex;align-items:center;gap:.6rem;min-height:48px;padding:.4rem 1rem;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--ink);text-decoration:none;font-size:var(--fs-body)}
+.next-stage a::after{content:"\2192";margin-left:auto;color:var(--accent-deep);font-weight:700}
+.next-stage a:hover{border-color:var(--accent-deep);background:var(--accent-soft)}
+.next-stage-l{font:700 var(--fs-small)/1.2 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--accent-deep)}
+html.tasks-split #exercises+.next-stage{display:none}   /* in the side panel the exercises are beside the lesson, not before the next stage */
+@media print{.next-stage{display:none!important}}

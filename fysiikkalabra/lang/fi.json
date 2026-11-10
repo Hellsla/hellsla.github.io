@@ -419,6 +419,8 @@
     "ra_loading": "Ladataan puheääntä: {{p}} %. Lataus tehdään vain ensimmäisellä kerralla.",
     "ra_fallback": "Puheääntä ei voitu ladata, joten selain lukee laitteen omalla äänellä.",
     "stage_done": "tehty",
+    "toc_stage": "Vaihe",
+    "next_stage": "Seuraavaksi",
     "ra_settings": "Kuuntelun asetukset",
     "ra_no_lang_voice": "Laitteessa ei ole suomenkielistä puheääntä.",
     "check_near": "Lähellä – tarkista pyöristys ja merkitsevät numerot.",

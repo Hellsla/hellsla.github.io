@@ -419,6 +419,8 @@
     "ra_loading": "Loading the voice: {{p}} %. This happens only the first time.",
     "ra_fallback": "The voice could not be loaded, so the browser reads with the device's own voice.",
     "stage_done": "done",
+    "toc_stage": "Stage",
+    "next_stage": "Next",
     "ra_settings": "Listening settings",
     "ra_no_lang_voice": "Your device has no English voice.",
     "check_near": "Close – check the rounding and the significant figures.",
