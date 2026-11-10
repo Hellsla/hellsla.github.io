@@ -90,6 +90,15 @@ for lang in i18n.languages():
                [re.findall(r'href="([^"]+)"', c)[:1] for c in cards if 'class="ch-why"' not in c or "ch-img" not in c][:3])
         themes = [t["first"] for t in curriculum[code].get("themes", [])]
         expect(f"{lang} {code}: the chapters are under the module's {len(themes)} themes", mod.count('class="ch-theme"') == len(themes))
+        # each theme on a row of its own over its tiles, with its chapters' range (teacher 2026-11-10, variant B)
+        rows = re.findall(r'<li class="ch-theme-row"><h3 class="ch-theme">([^<]+)</h3><span class="ch-range">([^<]+)</span></li>(.*?)(?=<li class="ch-theme-row"|</ol>)', mod, re.S)
+        firsts = [re.search(r'href="([^"]+)\.html"', r[2]) for r in rows]
+        live_first = [t for t in themes if (out / f"{t}.html").is_file()]
+        ranges = [[int(x) for x in re.findall(r"\d+", r[1])] for r in rows]
+        expect(f"{lang} {code}: each theme is a row of its own before its first chapter, with the range of its chapters",
+               len(rows) == len(themes) and [f.group(1) for f, t in zip(firsts, themes) if f and t in live_first] == live_first
+               and all(len(r) in (1, 2) for r in ranges) and (not ranges or (ranges[0][0] == 1 and ranges[-1][-1] == len(curriculum[code]["lessons"])
+               and all(b[0] == a[-1] + 1 for a, b in zip(ranges, ranges[1:])))), [(r[0], r[1]) for r in rows])
         expect(f"{lang} {code}: lessons before the goals, goals behind a disclosure",
                mod.find('class="lessons"') < mod.find('class="goals"') or 'class="goals"' not in mod)
     main_html = re.search(r"<main.*?</main>", home, re.S).group(0)

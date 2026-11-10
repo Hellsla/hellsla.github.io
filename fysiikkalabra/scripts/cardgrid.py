@@ -41,6 +41,13 @@ def label(heading, attrs=""):
     return f'<h3 class="ch-theme"{attrs}>{heading}</h3>'
 
 
+def theme_row(heading, note=""):
+    """A theme on a row of its own over its cards (teacher 2026-11-10, variant B of the module page comparison; the
+    module pages FY1-FY8): its name and, as note, its chapters ("luvut 7–9"). The row spans the grid, so every theme
+    starts a new row of tiles and its start, extent and end show without reading the tiles."""
+    return f'<li class="ch-theme-row"><h3 class="ch-theme">{heading}</h3>' + (f'<span class="ch-range">{note}</span>' if note else "") + "</li>"
+
+
 def card(num, title, href=None, why="", svg="", tags="", cls="", attrs="", lab=""):
     """One card. num and title are HTML; href None = a chapter still coming (a dashed card without a link or picture).
     cls adds classes after "live ch-card"; attrs (a leading space) adds attributes to the <li> (filter data); lab is

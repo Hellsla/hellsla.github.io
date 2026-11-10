@@ -836,15 +836,20 @@ def chapter_card(html):
 def chapter_cards(code, mod, slots, built_ids, legacy_ids, cards):
     """The module page's chapters as cards, under the module's themes (curriculum.json "themes": [{title, first}],
     titles translated in content/<lang>/courses.json "themes"); a chapter still coming is a plain row without a link.
-    One continuous grid (teacher 2026-11-04): a theme's name is a label above its first card, so the next theme's cards
-    go on in the same row and a short theme leaves no hole beside it (scripts/cardgrid.py)."""
+    Each theme has a row of its own over its tiles, with its chapters' range, and starts a new row of tiles (teacher
+    2026-11-10, variant B of the comparison; until then one continuous grid with the name over the theme's first card,
+    which hid where a theme ended). FY9, FY14 and the FY10 bank keep the label over the first card (cardgrid.label)."""
     themes = {th["first"]: th["title"] for th in mod.get("themes", [])}
     if themes and slots[0]["id"] not in themes: sys.exit(f"{code}: the first theme must start at the first chapter {slots[0]['id']}")
     bad = set(themes) - {l["id"] for l in slots}
     if bad: sys.exit(f"{code}: themes start at unknown chapters {sorted(bad)} (curriculum.json)")
     items = ""
+    starts = [i for i, l in enumerate(slots, 1) if l["id"] in themes] + [len(slots) + 1]
     for i, l in enumerate(slots, 1):
-        lab = cardgrid.label(esc(themes[l["id"]])) if l["id"] in themes else ""
+        lab = ""
+        if l["id"] in themes:     # the theme on its own row with its chapters' range (teacher 2026-11-10, variant B)
+            last = starts[starts.index(i) + 1] - 1
+            items += cardgrid.theme_row(esc(themes[l["id"]]), T("site.theme_chapter", n=i) if last == i else T("site.theme_chapters", a=i, b=last))
         num = T("site.chapter_n", n=i); title = esc(l["title"])
         if l["id"] in built_ids:
             svg, why = cards.get(l["id"], ("", ""))

@@ -48,6 +48,8 @@
     "lesson_prototype": "prototype",
     "lesson_coming": "coming soon",
     "chapter_n": "Chapter {{n}}",
+    "theme_chapter": "chapter {{n}}",
+    "theme_chapters": "chapters {{a}}–{{b}}",
     "course_goals": "Module goals",
     "course_goals_lead": "The student",
     "course_lessons": "Lessons",
