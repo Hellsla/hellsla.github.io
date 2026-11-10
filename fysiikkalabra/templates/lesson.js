@@ -247,9 +247,27 @@
       onMark = visit; if (current) visit(current);
     }
     const DONE = msg('stage_done');
+    // Seuraavaksi after Ennusta waits for the predictions (teacher 2026-11-10): until the stage's required predictions
+    // are given, the row after it says "Tee ennusteet ennen tutkimista" and opens the prediction box instead of
+    // leading on. Nothing else is locked: the stage bar and scrolling take the reader anywhere, as before.
+    const lockNext = (s) => {
+      const row = s.t.nextElementSibling, fold = s.t.querySelector('details.fold'), title = fold && fold.querySelector('.fold-title');
+      if (!row || !row.matches('nav.next-stage') || !title || row._go) return;
+      const a = row.querySelector('a'); row._go = { href: a.getAttribute('href'), kids: [...a.childNodes] };
+      const st = document.createElement('strong'); st.textContent = title.textContent.trim();
+      a.replaceChildren(st); a.setAttribute('href', '#' + s.t.id); row.classList.add('is-waiting');
+      a.addEventListener('click', row._open = (e) => { e.preventDefault(); fold.open = true; fold.scrollIntoView({ block: 'start' }); const f = fold.querySelector('input, button, textarea'); if (f) f.focus({ preventScroll: true }); });
+    };
+    function unlockNext(s) {
+      const row = s.t.nextElementSibling; if (!row || !row._go) return;
+      const a = row.querySelector('a'); a.removeEventListener('click', row._open); a.replaceChildren(...row._go.kids); a.setAttribute('href', row._go.href);
+      row.classList.remove('is-waiting'); row._go = null;
+    }
+    stages.forEach((s) => { if (s.t.id === 'ennusta' && s.units.length && !saved.done.includes(s.t.id)) lockNext(s); });
     const show = (s) => {
       if (s.a.classList.contains('is-done')) return;
       s.a.classList.add('is-done');
+      unlockNext(s);
       toc.style.setProperty('--p', String(toc.querySelectorAll('a.is-done').length / Math.max(1, stages.length)));
       const sr = document.createElement('span'); sr.className = 'visually-hidden'; sr.textContent = ' (' + DONE + ')'; s.a.append(sr);
     };

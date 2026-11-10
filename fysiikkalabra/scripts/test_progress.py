@@ -92,8 +92,9 @@ with sync_playwright() as pw:
                 expect(f"{tag}: from 700 px the chips show and there is no stage button", pg.evaluate("getComputedStyle(document.querySelector('.toc-now')).display === 'none' && [...document.querySelectorAll('nav.toc a[href^=\"#\"]')].every(a => a.offsetParent)"))
             nx = pg.evaluate("""() => { const links = [...document.querySelectorAll('nav.toc a[href^="#"]')].map(a => a.getAttribute('href'));
                 const rows = [...document.querySelectorAll('nav.next-stage a')].map(a => [a.closest('nav').previousElementSibling.id, a.getAttribute('href'), a.getBoundingClientRect().height >= 44]);
-                return { links, rows }; }""")
-            want = [[a[1:], b] for a, b in zip(nx["links"], nx["links"][1:])]
+                return { links, rows, waiting: !!document.querySelector('#ennusta + nav.next-stage.is-waiting') }; }""")
+            # after Ennusta the link waits for the predictions (teacher 2026-11-10): until then it points back at the stage
+            want = [[a[1:], ("#ennusta" if a == "#ennusta" and nx["waiting"] else b)] for a, b in zip(nx["links"], nx["links"][1:])]
             expect(f"{tag}: every stage but the last ends with a Seuraavaksi link to the next one (44 px)", [[r[0], r[1]] for r in nx["rows"]] == want and all(r[2] for r in nx["rows"]), nx["rows"])
             if w == 1280:
                 pg.evaluate("scrollTo(0, 0)"); pg.wait_for_timeout(200)
@@ -106,6 +107,8 @@ with sync_playwright() as pw:
                 pg.evaluate("[...document.querySelectorAll('#ennusta fieldset.choice:not(details.opt *)')].slice(0, -1).forEach(fs => { fs.querySelector('input[type=radio]').checked = true; fs.querySelector('button.commit').click(); })")
                 pg.wait_for_timeout(100)
                 expect(f"{tag}: Ennusta is not done before every prediction is given", n < 2 or "#ennusta" not in pg.evaluate(DONE), pg.evaluate(DONE))
+                wait = pg.evaluate("(() => { const r = document.querySelector('#ennusta + nav.next-stage'), a = r.querySelector('a'); return [r.classList.contains('is-waiting'), a.getAttribute('href'), a.textContent.trim() === document.querySelector('#ennusta .fold-title').textContent.trim(), !!document.querySelector('nav.toc a[href=\"#tutki\"]').offsetParent]; })()")
+                expect(f"{tag}: until then the row after Ennusta asks for the predictions and does not lead on, while the stage bar still does", wait == [True, "#ennusta", True, True], wait)
                 pg.evaluate("[...document.querySelectorAll('#ennusta fieldset.choice:not(details.opt *)')].slice(-1).forEach(fs => { fs.querySelector('input[type=radio]').checked = true; fs.querySelector('button.commit').click(); })")
                 pg.evaluate("document.querySelectorAll('#exercises li.core form.check').forEach(f => { f.querySelector('input').value = '1'; f.requestSubmit(); })")
                 # a core exercise can be a multiple choice (core path by skill, 2026-11-05): commit it with Vastaa
@@ -113,6 +116,8 @@ with sync_playwright() as pw:
                 pg.wait_for_timeout(150)
                 done = pg.evaluate(DONE)
                 expect(f"{tag}: Ennusta and Tehtävät are done once their required answers are checked", "#ennusta" in done and "#exercises" in done, done)
+                go = pg.evaluate("(() => { const r = document.querySelector('#ennusta + nav.next-stage'), a = r.querySelector('a'); return [r.classList.contains('is-waiting'), a.getAttribute('href')]; })()")
+                expect(f"{tag}: with the predictions given the row leads to Tutki", go == [False, "#tutki"], go)
                 sr = pg.evaluate("document.querySelector('nav.toc a[href=\"#ennusta\"] .visually-hidden')?.textContent || ''")
                 expect(f"{tag}: a done stage says so to a screen reader", T("js.stage_done") in sr, sr)
                 saved = pg.evaluate(f"(() => {{ try {{ return JSON.parse(localStorage.getItem('{key}')); }} catch (e) {{ return null; }} }})()")
