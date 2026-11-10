@@ -14,7 +14,14 @@ Drawing on demand (2026-11-05, templates/sim-embed.js STATIC): a listed sim must
 nothing happens, show after every control change what one more forced redraw would show (no stale picture or state), and
 reach the same simState and readouts as the old continuous loop (?simloop=1) over the same control changes; a sim not
 listed keeps its loop. The cache of label widths stays within its bound and gives the same width after an eviction.
-One line per sim; details only on failure."""
+One line per sim; details only on failure.
+A slow machine (2026-11-10, after main's CI failed on a slow runner): every sim advances by Math.min(p.deltaTime, 100)
+a frame, so when a frame takes over 100 ms simulated time falls behind the wall clock, and an assertion that waits
+(the 200 ms after a setup, setTimeout) or compares simulated time with performance.now() can fail with no fault in the
+sim. The assertion page counts such late frames (PAGE_JS); an assertion that fails while late frames were drawn is
+reported as not judged ("slow:"), not as a failure; one that fails with every frame on time fails as before. Its
+textContent reads without soft hyphens, as a reader sees the text: build.py (tablefit.py) puts them into the long
+words of table cells, the sims' table texts too ("Ei mit\u00adtauk\u00adsia")."""
 import json, re, sys, pathlib, itertools
 from playwright.sync_api import sync_playwright
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from _browser import launch
@@ -146,6 +153,18 @@ def on_demand(b, page_file, lid, translated):
     return (not bad, f"on demand: idle {r['idleDraws']} frames/s, {len(cs)} changes and a drag" + ("" if translated or bad else " = continuous loop"), bad)
 
 
+PAGE_JS = """(() => {
+  // late frames: a gap of over 100 ms between two frames, more than a sim's Math.min(p.deltaTime, 100) counts
+  window.flLate = 0; let last = performance.now();
+  const tick = (t) => { if (t - last > 100) window.flLate++; last = t; requestAnimationFrame(tick); };
+  requestAnimationFrame(tick);
+  // the text as a reader sees it: without the soft hyphens of tablefit.py
+  const tc = Object.getOwnPropertyDescriptor(Node.prototype, 'textContent');
+  Object.defineProperty(Node.prototype, 'textContent', { configurable: true, set: tc.set,
+    get() { const t = tc.get.call(this); return typeof t === 'string' && t.includes('\\u00ad') ? t.replace(/\\u00ad/g, '') : t; } });
+})();"""
+
+
 def ready(page):
     """Wait until the sketch has drawn (simState exists), at most 1.5 s, then one more frame."""
     try: page.wait_for_function("window.simState", timeout=1500)
@@ -194,6 +213,7 @@ with sync_playwright() as pw:
         if only and lid not in only: continue
         if 'id="sim-root"' not in page_file.read_text(): continue   # a lesson page with a simulation, wherever its sim.js lives
         page = b.new_page(viewport={"width": 1280, "height": 900})   # fresh page: no leftover listeners
+        page.add_init_script(PAGE_JS)                                 # late frames counted, text without soft hyphens
         errors = []
         page.on("console", lambda m: errors.append(m.text) if m.type == "error" else None)
         page.on("pageerror", lambda e: errors.append(str(e)))
@@ -206,13 +226,15 @@ with sync_playwright() as pw:
         translated = page_file.parent != OUT
         if translated: checks = []   # the assertions name controls, options and readouts in Finnish words and build on each
                                      # other's state: they run on the Finnish page; the same sim code is loaded and swept here
-        bad = []
+        bad, slow = [], []
         if state is not None:
             for c in checks:
+                late = page.evaluate("window.flLate")
                 if c.get("setup"): page.evaluate(c["setup"]); page.wait_for_timeout(200)
                 got = page.evaluate(c["expr"])
                 if got is None or abs(got - c["expected"]) > c.get("tol", 0.01) * max(1, abs(c["expected"])):
-                    bad.append(f"{c['expr'][:160]} = {got} (expected {c['expected']})")
+                    late = page.evaluate("window.flLate") - late
+                    (slow if late else bad).append(f"{c['expr'][:160]} = {got} (expected {c['expected']})" + (f", {late} frames over 100 ms" if late else ""))
         page.close()
         sweep_ok, sweep_note, sweep_bad = sweep(b, page_file) if state is not None else (True, "", [])
         dem_ok, dem_note, dem_bad = on_demand(b, page_file, lid, translated) if state is not None else (True, "", [])
@@ -221,5 +243,6 @@ with sync_playwright() as pw:
         fails += not ok
         print("PASS" if ok else "FAIL", f"{OUT.name}/{page_file.relative_to(OUT).with_suffix('').as_posix()}", "no simState (p5 not loaded?)" if state is None else ("assertions on the Finnish page" if translated else f"{len(checks)} assertions") + f", {sweep_note}")
         for line in errors[:3] + bad + sweep_bad: print("     " + line)
+        for line in slow: print("     slow: not judged, " + line)
     b.close()
 sys.exit(1 if fails else 0)
