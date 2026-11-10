@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 707724903355c33d
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
-
+CONTENT-HASH: bf7d981181f52418
 ## Blocking
-- none
+(none)
 
 ## Polish
-- 'TN system' is named but not explained for a first-year student; one clause would do (en and fi-easy).
+- inquiry.json ennuste-2, correct option — the correct choice is the only one that states a magnitude ('very small current'); distractor 4 feedback now says the same, so the four feedbacks agree. Optionally add 'a few millivolts' (as fy6-5 does) so the student can argue with a number.
 
 ## Checked
-- Diff since origin/main for fy6-15 lesson (en) read against the teacher's brief items that touch it; the changed text says what the brief intends, is consistent between lesson, inquiry, exercises, solutions and feedback, and introduces no new misconception.
-- Standing rules in the changed lines: LaTeX maths and units, decimal point, no bold in task statements, no lesson ids shown.
-- Round 3 (layperson paragraph and summary bullet): every example (fuse, lamp, tripped breaker/RCD reset, extension cord, appliance power cord and plug, ceiling light with connector block) is on the Tukes list; de-energised condition and the 'only if able to do safely' condition are stated; term 'layperson'/'maallikko' used consistently. Polish: the summary bullet still says 'fixed installations' while the body now says 'actual installation work'; align the wording. No Blocking.
-- Round 4 (uncommitted diff): summary bullet now says actual installation work belongs to professionals, matching the body (earlier polish resolved); 'single-phase' added to the extension-cord and supply-cord examples in the lesson and exit ticket, as on the Tukes list; 'ceiling light' replaced by 'light fitting'. Wording consistent between lesson and exit ticket. No Blocking, no new Polish.
+- The bird prediction stays arguable before the theory: all four options remain plausible to a student who has not met potential difference, and the feedback is gated by the reveal.
+- 'Very small current' repairs the older 'no current' simplification: the student no longer learns that a body between equal potentials carries exactly zero, consistent with the later lessons on thresholds.
+- Distractor 1 and 3 feedbacks repair their own misconception (insulating feet; least-resistance path) and no longer contradict the correct option.
+- 'A dangerous current flows only when the potential difference is large' matches the theory text and the safety goal.
+- Exercise-set change (L3-05) judged under its own report.

@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: a362da4bacf76398
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: f811235b68f65c28
 
 ## Blocking
-- none
 
 ## Polish
-- "Suojamaadoitusjohdin" and "suojajohdin" alternate; the lesson links them with "eli" once, which is enough, but keep one term in the exercises if easy.
+- lesson.md (Suurjohdot, "Lintu voi istua paljaalla johtimella"): "eikä linnun kautta kulje virtaa" now contradicts the prediction's "kulkee vain erittäin pieni sähkövirta". Align: "eikä linnun kautta kulje merkittävää virtaa" (or "vain erittäin pieni virta").
+- Ennuste 2, fourth option feedback repeats the same closing clause as the other three; vary one so the feedback texts do not read as a template.
 
 ## Checked
-- TN fault-current path: return through the protective conductor to the supply, fuse/MCB trip, RCD also mentioned, TN caveat given. Figure aria-label (arrow up toward the supply) matches the unchanged drawing (PE polyline from the casing to the fuse).
-- Laypeople rule: fixed installations for professionals, only specifically permitted minor work and only if one can do it safely; the "epävarmassa tilanteessa" sentence is good advice. Exit ticket and summary agree.
-- P = UI as a model with in-phase current or power factor about 1 in the group-load section.
-- Round 3: diff HEAD~2 read. "Maallikko eli sähköalan koulutusta vailla oleva sähkönkäyttäjä" defines the term at first use; all examples (fuse and lamp, MCB/RCD reset, extension cord, appliance cord and plug, luminaire with connector) are on the Tukes list; "jännitteettöminä" added; summary bullet uses "Maallikko". Still PASS.
-- Round 4: diff read. "yksivaiheisen" added to the extension-cord and supply-cord examples and to the exit ticket; summary bullet now "varsinaiset sähköasennustyöt kuuluvat sähköalan ammattilaisille", matching the paragraph. Reads fluently; still PASS.
+- Changed part: correct option and four feedbacks. The correct option now says a very small current flows, which is physically and pedagogically better than "no current"; it can still be argued about before the evidence (the competing options are real misconceptions: insulating feet, path of least resistance, insulating sheath).
+- Option 3 feedback repairs the "least resistance only" misconception by naming parallel paths; the lesson's own parallel-branch idea (fy6-5) is used.
+- Feedback gated and revealed after the theory summary; 43 inquiry tests pass; rest of the lesson unchanged since the last PASS.
+- Exercise L3-05 RCD sentence is judged in the exercise report.

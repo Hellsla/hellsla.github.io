@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: c288158df2f47ea5
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: c650c557cc001a60
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- Question text, answer options, feedback and solutions: suojajohdin/back to supply wording, no 'maahan' left in the corrected claims; options stay parallel.
-- Source-only delta review (no screenshots needed: figure changes are aria-label texts only); Finnish language, maths typography (LaTeX, \cdot, decimal comma, number+unit LaTeX) and no lesson ids shown to students.
+- Delta (solutions.md, L3-05 Vastaus): opened the opened solution at 390 and 1280 px in this language; the changed Vastaus paragraph sits under the boxed answer, maths in KaTeX, number+unit LaTeX, no overflow, answer and Järkevyys blocks intact. Source-only wording change otherwise.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

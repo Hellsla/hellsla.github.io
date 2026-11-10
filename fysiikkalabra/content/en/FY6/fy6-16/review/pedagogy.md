@@ -1,13 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: f7da803daeac7f68
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
-
+CONTENT-HASH: db324a986b213d71
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- inquiry.json tarkistus-1 — the correct option is now much longer than the two distractors, so length gives it away; shorten it to one sentence (supply sized for a long, high-power load; RCD required indoors and outdoors) or lengthen the others.
 
 ## Checked
-- Diff since origin/main for fy6-16 lesson (en) read against the teacher's brief items that touch it; the changed text says what the brief intends, is consistent between lesson, inquiry, exercises, solutions and feedback, and introduces no new misconception.
-- Standing rules in the changed lines: LaTeX maths and units, decimal point, no bold in task statements, no lesson ids shown.
+- The wrong 'outdoors the leakage danger is greater' premise is gone; the option now states the sizing reason and the RCD requirement, both of which the question asks about (own circuit and own RCD).
+- Distractor 2 (own circuit speeds charging) and 3 (RCD prevents main fuse blowing) are real misconceptions, and their feedback repairs them.
+- Feedback explains what an RCD compares (out versus returning current) and does not merely restate the answer.
+- Rest of the lesson untouched since the last PASS.

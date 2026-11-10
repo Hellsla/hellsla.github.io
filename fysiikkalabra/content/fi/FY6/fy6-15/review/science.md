@@ -1,17 +1,18 @@
-VERDICT: PASS
-CONTENT-HASH: a362da4bacf76398
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+VERDICT: FAIL
+CONTENT-HASH: f811235b68f65c28
 
 ## Blocking
-- none
+- content/fi/FY6/fy6-15/lesson.md:408 — (B, 6 consistency) The theory still says "molemmat jalat ovat samassa potentiaalissa: jalkojen välillä ei ole jännitettä, eikä linnun kautta kulje virtaa". That is exact only for a resistance-free conductor. The revised prediction (inquiry.json:91–104) now says the potential difference is very small and only a very small current flows, and its correct feedback opens "Teoria tukee tätä", so theory and feedback now contradict each other. Luku *Kirchhoffin lait ja potentiaali virtapiirissä* also gives millivolts and a tiny current. — Fix: "jalat ovat samalla johtimella lähes samassa potentiaalissa: jalkojen välinen potentiaaliero on hyvin pieni, joten linnun kautta kulkee vain erittäin pieni virta", keeping the danger sentence.
+- content/fi/FY6/fy6-15/lesson.md:570 — (B, 6) The misconception paragraph says the bird is safe "koska sen jalkojen välillä ei ole jännitettä". This is the same contradiction. — Fix: "koska sen jalkojen välinen potentiaaliero on hyvin pieni".
 
 ## Polish
-- none
 
 ## Checked
-- Suojamaadoitus (lesson, summary, inquiry explain model and criterion, figure maadoitus aria-label and figures.py): in the TN system the fault current returns through the protective conductor to the supply; fuse or MCB trips; RCD may also trip; scope stated as the TN system. Correct; the person-to-earth path without PE is also right (returns via the supply earthing).
-- Maallikon sähkötyöt (lesson, summary, exit ticket): fixed installations for professionals; laypeople only specifically permitted minor work and only if they can do it safely; examples within Tukes's list; uncertain cases to a professional.
-- P = UI condition (in-phase / power factor ≈ 1, active power depends on phase in general); 230 · 10 = 2300 W, 230 · 16 = 3680 W recomputed.
-- Lint: no physics warnings.
-- Round 3 (hash 17a65fd2157d29ea): layman paragraph and summary bullet checked against the Tukes list the teacher pasted; FAIL because "yksivaiheisen" was missing from the cord examples.
-- Round 4 (git diff HEAD, hash a362da4bacf76398): lesson.md:461 now says "yksivaiheisen jatkojohdon korjaaminen, sähkölaitteen rikkoutuneen yksivaiheisen liitäntäjohdon ja pistotulpan vaihtaminen"; the exit ticket says "korjata yksivaiheisen jatkojohdon"; the summary bullet (line 578) says "varsinaiset sähköasennustyöt kuuluvat sähköalan ammattilaisille", matching the paragraph. Every example is now on the Tukes list with its condition; Blocking resolved.
+- inquiry.json Ennuste 2: exactly one correct option, and its physics is right. Feet a few cm apart on one conductor give a tiny potential difference (millivolts at hundreds of amperes), so the current through the bird is negligible. A wing touching another conductor or an earthed pole makes a large potential difference and a large current.
+- The three distractors are still wrong, and their feedback is right:
+  - Legs conduct.
+  - Current splits between parallel paths; it does not take only the least-resistance path, and the bird carries a very small share.
+  - Bare overhead conductors are insulated only by air.
+- The four feedbacks agree with each other.
+- The rest of the lesson is unchanged since the last PASS (a362da4bacf76398). No numbers changed in the diff.
+- Hash identical at start and end.

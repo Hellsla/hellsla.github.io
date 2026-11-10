@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 5d937e42ff5cf67a
+CONTENT-HASH: ffc9647383412788
 
 ## Blocking
 
 ## Polish
-- content/fi/FY6/fy6-13/inquiry.json:113 (simulaatio `model`) — the Mallin oletukset box says how a disconnected capacitor behaves at breakdown but not that, connected, the sim keeps showing the ideal $Q = CU_0$ and $W$; the new readout note (lang/fi.json:1949 `sims.fy6-13.mallirajaus`) says it only on screen — optionally add the same sentence to the box so theory and sim boxes say the same.
-- lang/fi.json:1949 — the note could name what stays ideal: "the shown $Q$ and $W$ are the ideal model's values" (C-level, not a finding).
+- lang/fi.json:1946 (`sims.fy6-13.lukemat_lap`) — "arvot ennen läpilyöntiä" is slightly loose. The values shown are $Q = CU_0$ and $W = \tfrac12 CU_0^2$ at the set source voltage, which the capacitor never reaches. Example: d = 1,0 mm, air, U0 = 3,1 kV shows 549 nC and 851 µJ, but just before breakdown (U = 3,0 kV) the ideal model gives at most 531 nC and 797 µJ. "Ideaalimallin laskennalliset arvot jännitteellä $U_0$ (läpilyöntiä ei mallinneta)" would be exact. C-level, teacher's wording.
 
 ## Checked
-- Diff: `mallirajaus` appended after the bold breakdown text only when `S.lap && !S.burnt` (connected); its claim is right (breakdown violates the ideal-dielectric assumption; a source-sustained arc current is not modelled) and it removes the risk of reading the displayed $Q$, $W$ as physical during breakdown.
-- Browser (preview, fi): d = 1,0 mm air, U0 = 3,0 kV → E = 3,00 MV/m, no breakdown; 3,1 kV → lapilyonti 1, Q 549 nC, note shown; then irrotettu → Q = 0, purkautui text, no note.
-- Recomputed in one script with own formulas: sim load 88,5 pF / 88,5 nC / 44,3 µJ; koe 1–4 Q, W, U, E (lasi 0,179 kV, 7,9 µJ; kytketty lasi 496 nC, 248 µJ); koe 5 U_max 3,0 kV; paper 160 V; example 6,75 J, 6,75 kW, 3,4 s; kertaus 150 kV/m; virhe 0,034 J; siirto 190,35 µJ; TV 12 J; exit 1,2 mC — all match lesson-answers.py and the texts.
-- Predictions 1–2, kertaus, virhe, tarkistus 1–2: exactly one correct option each; distractor feedback right.
-- Experiments: each isolates its varied parameter (locked lists correct); simState gives every measured key.
-- Models and conditions: plate formula (small gap, filled gap), U_max = E_max d, half-energy loss stated as a result of this charging model, kytketty/irrotettu table and its mechanism.
-- Scope: charging/discharging qualitative only, no capacitor connections.
-- Numbers, setups and correct options identical in the en and fi-easy versions.
+- Diff: sim.js picks `lukemat_lap` only when `S.lap && !S.burnt` (connected and in breakdown). Q and W move under the ideal-model label, and C, U, E and Emax stay as before. No calculation and no simState key changed.
+- Browser (rebuilt preview, fi), d = 1,0 mm, air:
+  - U0 = 3,0 kV: no breakdown, normal readout (177 pF, 531 nC, 797 µJ).
+  - U0 = 3,1 kV, kytketty: breakdown, new label with Q 549 nC and W 851 µJ, then the breakdown text and the mallirajaus note.
+  - irrotettu: Q = 0, purkautui text, normal readout.
+- Recomputed: C = ε0·A/d = 177,1 pF, Q and W at 3,0 and 3,1 kV as above. All agree with the sim.
+- The previous Polish item (name Q and W as ideal values) is now done on screen. The readout and the mallirajaus note agree.
+- The key exists in fi, en and fi-easy.
+- The rest of the lesson is unchanged since the last PASS (5d937e42ff5cf67a); predictions, experiments and numbers were checked there.
 - Hash identical at start and end.

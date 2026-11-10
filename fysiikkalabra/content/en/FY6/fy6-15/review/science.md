@@ -1,18 +1,14 @@
-VERDICT: PASS
-CONTENT-HASH: 707724903355c33d
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+VERDICT: FAIL
+CONTENT-HASH: bf7d981181f52418
 
 ## Blocking
-- none
+- content/en/FY6/fy6-15/lesson.md:408 and :570 — (A, consistency 6) the theory still says "both its feet are at the same potential: there is no voltage between the feet, and no current flows through the bird", and the misconception says "there is no voltage between its feet". The revised prediction 2 (inquiry.json:95 and all four feedbacks) now says, correctly, that the potential difference is very small and so only a very small current flows, and it tells the student "the theory supports this". fy6-5 says the same (millivolts, negligible current; 400 A · 0.12 Ω/km · 4 cm ≈ 2 mV). So the theory contradicts the option it is cited for, and its claim is not strictly true — change both sentences to "the feet are on the same conductor at almost the same potential: the potential difference between them is very small, so only a very small current flows through the bird".
 
 ## Polish
 - none
 
 ## Checked
-- Protective earth: frame connected to the protective conductor; fault current returns along it to the supply; fuse/MCB trips; RCD can also trip; TN-system caveat; distribution-board sentence (PE bonded to earthing and the incoming conductor) — all = fi and correct for TN.
-- Fuse-myth paragraph and summary bullet: 'frame fault … back to the supply'. Remaining 'to the ground' uses are the touch current through a person and fallen-line step voltage, which are correct.
-- Laypeople: fixed installations mainly for professionals; only specifically permitted minor jobs and only if they can do them safely; the earlier light-fitting item removed (= fi). Exit ticket says the same.
-- P = UI paragraph conditioned on in-phase/power factor ≈ 1; 2300 W and 3680 W recomputed. maadoitus aria-label text only.
-- Diff since origin/main compared sentence by sentence with the Finnish source change; content hash checked at start and end.
-- Round 3 (git diff HEAD~2, layman paragraph and summary bullet): matches the fi change and the Tukes page the teacher pasted. Actual installation work only by registered professionals; laypersons only permitted minor jobs, only if they can do them safely; work always de-energised. Every example is on the Tukes list: fuse, lamp, resetting a tripped MCB or RCD, repairing an extension cord, replacing an appliance's broken single-phase cord and plug, luminaire with a connector block. Term: layperson.
-- Round 4 (uncommitted diff): the extension cord is now single-phase in the body and in the exit ticket, matching the Tukes list. "Light fitting with a lighting connector block" fits the Tukes interior-luminaire item. The summary bullet now says "actual electrical installation work belongs to electrical professionals", the same as the body. Both round-3 Polish items are resolved. The exit ticket example (a new wall socket for professionals) is correct.
+- Prediction 2: exactly one correct option. The dry-feet, path-of-least-resistance and insulating-sheath distractors are really wrong, and each feedback says why. The parallel-path feedback correctly says that a small current does flow through the bird.
+- Correct-option feedback: touching another conductor or an earthed pole would give a large potential difference and a large current. This is physically right.
+- The exercise solution change (L3-05) is judged in the separate exercise report.
+- Rest of the lesson unchanged since the last PASS (git diff); content hash the same at start and end.

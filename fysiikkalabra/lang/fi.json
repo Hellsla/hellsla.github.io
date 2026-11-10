@@ -1943,7 +1943,7 @@
       "irrotettu": "irrotettu",
       "selite": "Punainen: positiivinen varaus. Sininen: negatiivinen varaus. Vihreä: sähkökenttä. Oranssi: energia.",
       "lukemat": "Kapasitanssi $C = {{C}}\\,\\text{pF}$, varaus $Q = {{Q}}\\,\\text{nC}$<br>Jännite $U = {{U}}\\,\\text{kV}$, kenttä $E = {{E}}\\,\\text{MV/m}$, läpilyöntilujuus $E_\\text{max} = {{Emax}}\\,\\text{MV/m}$<br><strong>Energia $W = {{W}}\\,\\mu\\text{J}$</strong>",
-      "lukemat_lap": "Kapasitanssi $C = {{C}}\\,\\text{pF}$<br>Jännite $U = {{U}}\\,\\text{kV}$, kenttä $E = {{E}}\\,\\text{MV/m}$, läpilyöntilujuus $E_\\text{max} = {{Emax}}\\,\\text{MV/m}$<br>Ideaalimallin laskennalliset arvot ennen läpilyöntiä: varaus $Q = {{Q}}\\,\\text{nC}$, energia $W = {{W}}\\,\\mu\\text{J}$",
+      "lukemat_lap": "Kapasitanssi $C = {{C}}\\,\\text{pF}$<br>Jännite $U = {{U}}\\,\\text{kV}$, kenttä $E = {{E}}\\,\\text{MV/m}$, läpilyöntilujuus $E_\\text{max} = {{Emax}}\\,\\text{MV/m}$<br>Ideaalimallin laskennalliset arvot tällä jännitteellä, jos läpilyöntiä ei tapahtuisi: varaus $Q = {{Q}}\\,\\text{nC}$, energia $W = {{W}}\\,\\mu\\text{J}$",
       "lapilyonti": "$\\text{läpilyönti}$",
       "purkautui": "$\\text{purkautui}$",
       "lapilyonti-teksti": "Läpilyönti: kenttä ylittää eristeen läpilyöntilujuuden, eriste alkaa johtaa ja levyjen välillä purkautuu kipinä.",

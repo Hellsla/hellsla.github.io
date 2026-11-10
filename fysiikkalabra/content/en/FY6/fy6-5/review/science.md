@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 79d1670c337574c6
+CONTENT-HASH: 6e6209f27ed720e0
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- content/en/FY6/fy6-5/lesson.md:303 — the paragraph comes straight after the worked example (12 V, where $R_3 = 30\,\Omega$) but uses the Key-idea circuit (9.0 V, $R_1 = 10\,\Omega$, $R_2 = 30\,\Omega$) without naming it, so "$I_2$" for the 30 Ω branch may be read against the example's labels — open with "In the circuit of the figure in Key idea ($9.0\,\text{V}$, $R_1 = 10\,\Omega$) …".
+- content/en/FY6/fy6-5/lesson.md:303 — the old text showed why the wrong method fails (the branch currents would add up to more than arrives at the junction); the new text only checks the right values — you could add "the wrong values $0.30\,\text{A} + 0.15\,\text{A} = 0.45\,\text{A}$ would exceed $I_1 = 0.30\,\text{A}$", which matches the error-spotting item.
 
 ## Checked
-- Every number, unit, formula and answer in lesson.md, inquiry.json, exit-ticket.json and the figure descriptions compared with the Finnish original (formula count 124/124 in lesson.md; numbers identical, decimal point, {,} gone from the LaTeX).
-- Worked example has its seven stages; the voltage-law, current-law and potential statements, junction/loop wording and the bird explanation keep the Finnish meaning.
-- Sim labels sims.fy6-5 and experiment names, units and select values match the Finnish keys.
-- English terms: junction, loop, source voltage, potential, potential graph, zero point; no emf.
-- Internal-energy rewording (lesson.md current-law paragraph and misconception, inquiry.json bulb feedback and model answer 3) compared with the Finnish: "internal energy of the resistor, transferred to the surroundings as heat" / "its internal energy" keeps the Finnish meaning; no other numbers or formulas changed.
+- Recomputed: $R_{23} = 20\,\Omega$, $I_1 = 9.0\,\text{V} : 30\,\Omega = 0.30\,\text{A}$, branch voltage $6.0\,\text{V}$, $I_2 = 0.20\,\text{A}$, $I_3 = 0.10\,\text{A}$, wrong $9.0\,\text{V} : 30\,\Omega = 0.30\,\text{A}$: all as in the text.
+- The new paragraph matches the junction and circuit figures, the voltage-law paragraph (3.0 V + 6.0 V), prediction 1, the error-spotting item and the conclusion's model answer (labels $I_2$ for 30 Ω and $I_3$ for 60 Ω are the same throughout).
+- Kirchhoff's current law is used correctly: $0.20 + 0.10 = 0.30\,\text{A}$.
+- Rest of the lesson unchanged since the last PASS (git diff: only this paragraph); content hash the same at start and end.

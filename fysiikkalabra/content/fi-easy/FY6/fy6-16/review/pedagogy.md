@@ -1,15 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 6c49aa16b3f59157
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
-
+CONTENT-HASH: 9e1f7c5564a24ca1
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- inquiry.json tarkistus-1 — the correct option is now much longer than the two distractors, so length gives it away; shorten it to one sentence (supply sized for a long, high-power load; RCD required indoors and outdoors) or lengthen the others.
 
 ## Checked
-- Diff since origin/main for fy6-16 lesson (fi-easy) read against the teacher's brief items that touch it; the changed text says what the brief intends, is consistent between lesson, inquiry, exercises, solutions and feedback, and introduces no new misconception.
-- Standing rules in the changed lines: LaTeX maths and units, decimal comma, no bold in task statements, no lesson ids shown.
-- NOTES.md §12: same physics as the Finnish; new terms (kytkentämuutos, irradianssi, tehokerroin, vaihe-ero, pätöteho, mitoitettu, vakiovirtalähde etc.) are explained in the sentence where first used; whole natural sentences, one action per sentence in instructions.
-- Round 2 (31612ad07 delta): Balanced three-phase load is now stated as a model assumption ("Mallissa oletetaan myös ... Silloin kokonaisteho on"); clear. No new Blocking.
+- The wrong 'outdoors the leakage danger is greater' premise is gone; the option now states the sizing reason and the RCD requirement, both of which the question asks about (own circuit and own RCD).
+- Distractor 2 (own circuit speeds charging) and 3 (RCD prevents main fuse blowing) are real misconceptions, and their feedback repairs them.
+- Feedback explains what an RCD compares (out versus returning current) and does not merely restate the answer.
+- Rest of the lesson untouched since the last PASS.

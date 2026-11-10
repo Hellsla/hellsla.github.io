@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: e808871f5f949aef
-
+CONTENT-HASH: d3bbbfc30db75858
 ## Blocking
 (none)
 
 ## Polish
-- lang/en.json:2017 — "does not model the discharge current maintained by the connected voltage source" is dense; "does not model the current a connected source would keep driving through the dielectric" is clearer.
-- Two sentences in the readout is more text than Lesson page 4 prefers; accepted as the teacher's request.
+- assets/sims/fy6/fy6-13/sim.js:81 (lang sims.fy6-13.lukemat_lap) — the connected-breakdown readout names Q and W as 'values calculated with the ideal model before breakdown', but they are Q = CU and W = QU/2 at the present voltage above the limit, not at the limit — say 'as the ideal model gives them (without breakdown)' — wording only; the point (these are model values, not measurements) reaches the student.
 
 ## Checked
-Full review forced by the sim change; lesson text, inquiry, example stages, figures and exit ticket unchanged since the last PASS (hash differs only by sim.js/lang). New: the model-limitation note shows on its own line under the bold breakdown text only with the source connected (sim.js:82). It is correct for a learner: it says the ideal model fails at breakdown and the sim does not model the sustained discharge current, so a student does not read the readout as real physics. It does not disclose any answer or break an experiment. Deterministic checks (inquiry 116/0, layouts 360/768/1280) pass.
+- Delta judged on the readout change only; the rest was passed earlier and the diff does not touch it.
+- The breakdown readout now separates C, U, E, E_max from the model-only Q and W; the label is consistent with the mallirajaus note below it and with the burnt state (normal readout, Q = 0).
+- Q and W no longer read as real stored values during a spark, which repairs a misconception the earlier readout invited.

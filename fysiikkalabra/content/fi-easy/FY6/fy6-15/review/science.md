@@ -1,18 +1,14 @@
-VERDICT: PASS
-CONTENT-HASH: 04addc44745aaeae
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+VERDICT: FAIL
+CONTENT-HASH: 7a77469839e5294b
 
 ## Blocking
-- none
+- content/fi-easy/FY6/fy6-15/lesson.md:416 and :578 — **B / consistency (6)**: the theory still says the bird's feet are "samassa potentiaalissa", "jalkojen välillä ei ole jännitettä, eikä linnun kautta kulje virtaa", while the revised prediction (inquiry.json:92–100) now says, correctly, that the potential difference is very small and only a very small current flows, and its feedback opens "Teoria tukee tätä" (inquiry.json:96). Zero voltage is true only for a resistanceless wire; the prerequisite chapter *Kirchhoffin lait* computes millivolts (400 A, 0,12 Ω/km, 4 cm → 1,9 mV). Theory and prediction now contradict each other. — Reword both lesson sentences the same way as the prediction ("jalat ovat lähes samassa potentiaalissa; jalkojen välinen potentiaaliero on hyvin pieni, joten linnun kautta kulkee vain erittäin pieni virta"); the same sentences in content/fi (lesson.md:408, :570) need the same fix.
 
 ## Polish
-- none
 
 ## Checked
-- Suojajohdin, vikavirta takaisin sähkönsyöttöön, sulake/johdonsuojakatkaisija, vikavirtasuoja, TN caveat, sähkökeskus sentence (= fi).
-- Maallikko: kiinteät asennukset pääsääntöisesti ammattilaisille, vain erikseen sallitut vähäiset työt ja vain turvallisesti; exit ticket and meta explain the same.
-- P = UI paragraph conditioned (tehokerroin ≈ 1); 2300 W, 3680 W.
-- Diff since origin/main compared sentence by sentence with the Finnish source change; content hash checked at start and end.
-- Round 2 (git diff HEAD~1): lesson.md:359 gloss now "vaihejohdin pääsee vian takia kosketukseen laitteen metallirungon, suojajohtimen tai maan kanssa"; correct for an earth fault and consistent with the TN explanation. Round-1 polish resolved.
-- Round 3 (git diff HEAD~2): maallikko defined (ei sähköalan koulutusta); varsinaiset sähköasennustyöt vain ammattilaisille; vain erikseen sallitut vähäiset työt ja vain turvallisesti; työ aina sähkö katkaistuna. All examples on the Tukes list (sulake, lamppu, johdonsuojakatkaisijan ja vikavirtasuojan palautus, jatkojohdon korjaus, laitteen liitäntäjohdon ja pistotulpan vaihto, valaisin sokeripalalla). Same as fi.
-- Round 4 (uncommitted diff): "yksivaiheisen jatkojohdon" and "laitteen rikkinäisen yksivaiheisen johdon ja pistotulpan" in the body and "yksivaiheisen jatkojohdon" in the exit ticket match the Tukes list. The summary bullet now says "varsinaiset sähköasennustyöt kuuluvat sähköalan ammattilaisille", the same as the body. Round-3 summary Polish resolved. The unqualified "valaisimen" (Tukes: sisustusvalaisimen) is acceptable at this level.
+- Diff, prediction "lintu johtimella": exactly one correct option (very small potential difference → very small current); the three distractors are really wrong and each feedback says why (feet conduct; current divides over parallel paths, the bird's share is very small; overhead lines are bare, insulated by air).
+- Correct-option feedback: dangerous current needs a large potential difference across the body; wing touching another phase or an earthed pole → large current — right.
+- Magnitude: 1,9 mV across a bird's resistance of kΩ order gives µA or less — "erittäin pieni" is right.
+- Nothing else changed; rest relies on the previous PASS.
+- Hash identical at start and end.
