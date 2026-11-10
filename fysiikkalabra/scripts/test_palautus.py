@@ -167,7 +167,10 @@ with sync_playwright() as p:
     pg.evaluate("window.flPadStore.put('fy3-2-L1-01', 'toisen luvun ratkaisu', 'fy3-2.html')")
     # guided self-assessment of Tarkista osaamisesi (teacher 2026-11-06): a colour scale under every task and goal
     sa = pg.evaluate("[...document.querySelectorAll('#tarkista fieldset.sa-rate')].map((f) => [f.dataset.sa, f.querySelectorAll('input[type=radio]').length])")
-    expect("self-assessment: five levels under every Tarkista task and every goal of the chapter, no separate key (teacher 2026-11-06)", len(sa) >= 5 and all(n == 5 for _, n in sa) and any(i.startswith("tavoite-") for i, _ in sa) and pg.locator("#tarkista .sa-key").count() == 0, sa)
+    # since 2026-11-10 (teacher) only under the open tasks, which the page cannot judge (the reflection, a written explanation), and under every goal; a task the page checks has no row
+    auto = pg.evaluate("document.querySelectorAll('#tarkista .act-choice fieldset.sa-rate, #tarkista .act-numeric fieldset.sa-rate').length")
+    expect("self-assessment: five levels under every open task of Testaa ja arvioi and every goal, none under a task the page checks, no separate key",
+           len(sa) >= 4 and all(n == 5 for _, n in sa) and any(i.startswith("tavoite-") for i, _ in sa) and any(not i.startswith("tavoite-") for i, _ in sa) and auto == 0 and pg.locator("#tarkista .sa-key").count() == 0, (sa, auto))
     sa_task = next(i for i, _ in sa if not i.startswith("tavoite-"))
     expect("Testaa ja arvioi: the tasks with their own ratings first, then the goals' card (teacher 2026-11-10; the goals first until then)", [i.startswith("tavoite-") for i, _ in sa] == sorted([i.startswith("tavoite-") for i, _ in sa])
            and pg.evaluate("(() => { const g = document.querySelector('#tarkista > .act-selfgoals'); const acts = [...document.querySelectorAll('#tarkista .activity')]; return !!g && acts[acts.length - 1] === g && acts.length > 1; })()"), sa)   # the goals' card is the stage's last activity (it followed the lead until 2026-11-10)
@@ -266,7 +269,9 @@ with sync_playwright() as p:
     pg.goto(BASE + "fy9-energia.html")
     rv = pg.evaluate("[...document.querySelectorAll('#exercises div.practice-task[id]')].filter((t) => t.querySelector('.pad-open')).map((t) => t.id)")
     sa9 = pg.evaluate("[...document.querySelectorAll('#tarkista fieldset.sa-rate')].map((f) => f.dataset.sa)")
-    expect("FY9: a self-assessment under every task of Testaa ja arvioi, then the three goal statements (teacher 2026-11-10; the goals first until then)", len(sa9) >= 7 and sa9[-3:] == ["tavoite-1", "tavoite-2", "tavoite-3"] and not any(x.startswith("tavoite-") for x in sa9[:-3]), sa9)
+    auto9 = pg.evaluate("document.querySelectorAll('#tarkista .act-choice fieldset.sa-rate, #tarkista .act-numeric fieldset.sa-rate').length")
+    expect("FY9: a self-assessment under the open tasks of Testaa ja arvioi (not under one the page checks), then the three goal statements (teacher 2026-11-10)",
+           len(sa9) >= 4 and sa9[-3:] == ["tavoite-1", "tavoite-2", "tavoite-3"] and not any(x.startswith("tavoite-") for x in sa9[:-3]) and auto9 == 0, (sa9, auto9))
     pg.click('fieldset[data-sa="tavoite-2"] .sa-opt[data-level="a"]')
     open_pad(pg, rv[0])
     pg.locator(f'[id="{rv[0]}"] .rich-text-editor').click(); pg.keyboard.type("Kertausratkaisu")
@@ -291,7 +296,10 @@ with sync_playwright() as p:
     pg2.check('#reflect .revise input[value="kylla"]'); pg2.fill('#reflect textarea', "Paino muuttuu, massa ei.")
     pg2.fill('#check-2 form.check input', "9,8")
     pg2.check('#check-1 fieldset.choice input[type=radio] >> nth=0'); pg2.click('#check-1 fieldset.choice button.commit')
-    pg2.click('fieldset[data-sa="check-1"] .sa-opt[data-level="b"]')
+    # a level given under a checked task before 2026-11-10, when such a task still had a row: it must survive the page, new choices, a reload and the work file
+    OLD_SA = {"level": "b", "history": [["c", "2026-11-07T08:00:00.000Z"], ["b", "2026-11-07T08:05:00.000Z"]]}
+    pg2.evaluate("(old) => { const k = 'ruukkilabra:itsearvio:fy3-1'; const v = JSON.parse(localStorage.getItem(k) || 'null') || { v: 1, items: {} }; v.items['check-1'] = old; localStorage.setItem(k, JSON.stringify(v)); }", OLD_SA)
+    expect("the checked task has no self-assessment row any more", pg2.locator('fieldset[data-sa="check-1"]').count() == 0)
     pg2.click('fieldset[data-sa="tavoite-1"] .sa-opt[data-level="d"]'); pg2.click('fieldset[data-sa="tavoite-1"] .sa-opt[data-level="a"]')
     pg2.click('fieldset[data-sa="tavoite-2"] .sa-opt[data-level="x"]')
     # a measurement row as the experiment writes it (the simulation itself is tested in test_sims)
@@ -303,6 +311,9 @@ with sync_playwright() as p:
       (document.querySelector('#pred-2 input:checked') || {}).value, document.querySelector('#pred-2 .justify textarea').value, document.querySelector('#johtopaatos textarea').value,
       (document.querySelector('#reflect .revise input:checked') || {}).value, document.querySelector('#reflect textarea').value, document.querySelector('#check-2 form.check input').value,
       (document.querySelector('fieldset[data-sa="tavoite-1"] input:checked') || {}).value]""")
+    old_kept = pg2.evaluate("(JSON.parse(localStorage.getItem('ruukkilabra:itsearvio:fy3-1')) || {items: {}}).items")
+    expect("an older level under a checked task is still in the browser's record, with its history, beside the new goal levels",
+           old_kept.get("check-1") == OLD_SA and old_kept.get("tavoite-1", {}).get("level") == "a" and old_kept.get("tavoite-2", {}).get("level") == "x", old_kept)
     expect("after a reload every answer is back: number, choice, reason, written answers, the reflection's choice, goal level", kept == ["6,0", "0", "1", "Jupiter vetää enemmän.", "Suhde G/m on vakio.", "kylla", "Paino muuttuu, massa ei.", "9,8", "a"], kept)
     pg2.evaluate("""() => { const tb = document.querySelector('#exp-1 table.exp-table tbody'); if (!tb.rows.length) { const tr = document.createElement('tr');
       tr.innerHTML = '<td data-value="0.1">0,10</td><td data-value="0.981">0,981</td>'; tb.append(tr); } }""")
@@ -315,6 +326,9 @@ with sync_playwright() as p:
     # carries the Tehty marks, and the teacher's side keeps reading them
     pg2.evaluate("window.flDone = window.flDone || { progress: () => ({ course: 'FY3', assigned: ['fy3-1-L1-06', 'fy3-1-L1-07'], done: [['fy3-1-L1-06', '2026-11-06T09:00:00.000Z']], history: [['fy3-1-L1-06', '2026-11-06T09:00:00.000Z', 1]] }) }")
     files["work"] = json.loads(pg2.evaluate("window.flWork.make().then((r) => r.text)"))
+    kept_sa = json.loads((files["work"].get("store", {}).get("local", {}) or {}).get("ruukkilabra:itsearvio:fy3-1", "{}")).get("items", {})
+    expect("the module's work file carries the browser's whole self-assessment record, the older task level included, so it comes back on another computer",
+           kept_sa.get("check-1") == OLD_SA and kept_sa.get("tavoite-1", {}).get("level") == "a", kept_sa)
     A3 = {a["task"]: a for a in fa["answers"]}
     R = lambda t: A3[t]["responses"]
     expect("1-2: the number with its unit, answered though the editor is empty", A3["fy3-1-L1-02"]["status"] == "answered" and A3["fy3-1-L1-02"]["content"] == [] and R("fy3-1-L1-02") == [{"type": "number", "value": "6,0", "unit": "cm"}], A3["fy3-1-L1-02"])

@@ -850,7 +850,12 @@ def render(folder, inquiry, parts, md):
             content = content.replace("<output aria-live=\"polite\"></output></fieldset>", f'<output aria-live="polite"></output>{hint}</fieldset>') if t == "choice" else content[:-len("</div>")] + hint + "</div>"
         hints = hints_html([md(mathlayout.display_chains(h)) for h in a.get("hints", [])]) if t not in ("numeric",) else ""
         sa = ""
-        if parts.get("selfassess") and a.get("stage") == "tarkista" and t in ("choice", "numeric", "explain", "exit"):   # every task of Tarkista osaamisesi (teacher 2026-11-06)
+        # the open tasks of Testaa ja arvioi only (teacher 2026-11-10): the reflection (exit) and a written explanation, which
+        # the page cannot judge. A choice or a number is checked by the page, which says whether it was right, so a rating
+        # row under it asked the same thing twice (every task had one from 2026-11-06). A level given earlier under such a
+        # task stays in the browser's record (ruukkilabra:itsearvio:<chapter>) and in the work file, untouched; it is
+        # only no longer shown. The submission and the grading view have always carried the goals' levels only.
+        if parts.get("selfassess") and a.get("stage") == "tarkista" and t in ("explain", "exit"):
             sa = sa_fieldset(lid, aid, plain(_h.unescape(shown.get(aid) or "") or a.get("title") or exit_title()), "", T("inquiry.sa_legend"))   # one plain question (teacher 2026-11-06)
         hints += sa
         if a.get("optional") or a.get("fold") or t == "reflect":   # a closed box, named, that a student may open or leave; "fold": a
