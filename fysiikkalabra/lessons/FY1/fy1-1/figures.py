@@ -32,21 +32,34 @@ def hero():
     x, r = lens[2]
     f.add(f'<clipPath id="fy11h-l3"><circle cx="{n(x)}" cy="{cy}" r="{r}"/></clipPath>')
     f.circle(x, cy, r, ICE, None)
-    f.add(f'<g clip-path="url(#fy11h-l3)"><rect x="{x - r}" y="{cy + 58}" width="{2 * r}" height="40" fill="{GOOD_LIGHT}"/>'
-          f'<rect x="{n(x - 34)}" y="{cy + 14}" width="14" height="46" rx="6" fill="{IRON}" stroke="{INK}" stroke-width="3"/>'
-          f'<rect x="{n(x - 14)}" y="{cy + 14}" width="14" height="46" rx="6" fill="{IRON}" stroke="{INK}" stroke-width="3"/>'
-          f'<rect x="{n(x - 40)}" y="{cy - 36}" width="40" height="56" rx="12" fill="{COLD}" stroke="{INK}" stroke-width="3"/>'
-          f'<rect x="{n(x - 50)}" y="{cy - 32}" width="12" height="42" rx="6" fill="{COLD}" stroke="{INK}" stroke-width="3"/>'
-          f'<rect x="{n(x - 2)}" y="{cy - 32}" width="12" height="42" rx="6" fill="{COLD}" stroke="{INK}" stroke-width="3"/>'
-          f'<circle cx="{n(x - 20)}" cy="{cy - 56}" r="17" fill="{SAND_LIGHT}" stroke="{INK}" stroke-width="3"/></g>')
+    skin, coat, jeans, hair = "#f1c9a5", "#2f74b5", "#3b4a5c", "#5a3d2b"
+    person = (f'<rect x="{x - r}" y="{cy + 50}" width="{2 * r}" height="50" fill="{GOOD_LIGHT}"/>'
+              f'<ellipse cx="{n(x)}" cy="{cy + 62}" rx="30" ry="5" fill="#7fae63"/>'
+              f'<path d="M{n(x - 14)},{cy + 6} h12 l1,54 h-14 Z" fill="{jeans}"/><path d="M{n(x + 2)},{cy + 6} h12 l1,54 h-14 Z" fill="{jeans}"/>'
+              f'<path d="M{n(x - 17)},{cy + 58} h17 v6 h-20 Z" fill="#2b2f36"/><path d="M{n(x + 1)},{cy + 58} h17 v6 h-20 Z" fill="#2b2f36"/>'
+              f'<path d="M{n(x - 22)},{cy - 30} q22,-10 44,0 l4,40 q-26,8 -52,0 Z" fill="{coat}"/>'
+              f'<path d="M{n(x + 8)},{cy - 33} q10,2 14,3 l4,40 q-8,3 -16,3 Z" fill="#245f96"/>'
+              f'<path d="M{n(x - 22)},{cy - 26} q-10,18 -8,38" stroke="{coat}" stroke-width="10" fill="none" stroke-linecap="round"/>'
+              f'<path d="M{n(x + 22)},{cy - 26} q10,18 8,38" stroke="#245f96" stroke-width="10" fill="none" stroke-linecap="round"/>'
+              f'<circle cx="{n(x - 30)}" cy="{cy + 14}" r="5" fill="{skin}"/><circle cx="{n(x + 30)}" cy="{cy + 14}" r="5" fill="{skin}"/>'
+              f'<rect x="{n(x - 5)}" y="{cy - 40}" width="10" height="10" fill="{skin}"/>'
+              f'<ellipse cx="{n(x)}" cy="{cy - 54}" rx="15" ry="17" fill="{skin}"/>'
+              f'<path d="M{n(x - 15)},{cy - 56} q2,-18 15,-18 q14,0 15,16 q-8,-8 -16,-8 q-8,0 -14,10 Z" fill="{hair}"/>')
+    f.add(f'<g clip-path="url(#fy11h-l3)">{person}</g>')
     f.circle(x, cy, r, "none", INK, 3)
     # 4: the Earth
     x, r = lens[3]
     f.add(f'<clipPath id="fy11h-l4"><circle cx="{n(x)}" cy="{cy}" r="{r}"/></clipPath>')
     f.circle(x, cy, r, WATER, None)
-    land = [[(-70, -60), (-30, -88), (20, -70), (10, -30), (-30, -10), (-62, -22)], [(10, -20), (50, -42), (92, -22), (84, 20), (50, 36), (24, 18)],
-            [(-30, 20), (0, 28), (10, 70), (-14, 100), (-32, 66)]]
-    g = "".join(f'<path d="M' + " L".join(f"{n(x + a)},{n(cy + b)}" for a, b in poly) + f' Z" fill="{GOOD_LIGHT}" stroke="{GOOD}" stroke-width="3" stroke-linejoin="round"/>' for poly in land)
+    land = (f'<path d="M{n(x - 78)},{cy - 52} C{n(x - 60)},{cy - 92} {n(x - 6)},{cy - 96} {n(x + 14)},{cy - 70} C{n(x + 26)},{cy - 52} {n(x + 4)},{cy - 40} '
+            f'{n(x - 10)},{cy - 24} C{n(x - 24)},{cy - 8} {n(x - 46)},{cy - 14} {n(x - 60)},{cy - 24} C{n(x - 74)},{cy - 32} {n(x - 86)},{cy - 38} {n(x - 78)},{cy - 52} Z" fill="#8cbf6a"/>'
+            f'<path d="M{n(x + 14)},{cy - 22} C{n(x + 36)},{cy - 50} {n(x + 84)},{cy - 44} {n(x + 98)},{cy - 16} C{n(x + 108)},{cy + 8} {n(x + 82)},{cy + 30} '
+            f'{n(x + 56)},{cy + 34} C{n(x + 36)},{cy + 38} {n(x + 22)},{cy + 22} {n(x + 26)},{cy + 6} C{n(x + 28)},{cy - 6} {n(x + 8)},{cy - 8} {n(x + 14)},{cy - 22} Z" fill="#a6c97a"/>'
+            f'<path d="M{n(x - 34)},{cy + 22} C{n(x - 12)},{cy + 14} {n(x + 10)},{cy + 30} {n(x + 8)},{cy + 56} C{n(x + 6)},{cy + 78} {n(x - 12)},{cy + 100} '
+            f'{n(x - 22)},{cy + 96} C{n(x - 30)},{cy + 80} {n(x - 26)},{cy + 62} {n(x - 36)},{cy + 46} C{n(x - 44)},{cy + 34} {n(x - 44)},{cy + 26} {n(x - 34)},{cy + 22} Z" fill="#8cbf6a"/>'
+            f'<path d="M{n(x - r)},{cy + 10} C{n(x - 40)},{cy - 6} {n(x + 40)},{cy + 14} {n(x + r)},{cy - 4}" stroke="#ffffff" stroke-width="9" fill="none" opacity="0.55" stroke-linecap="round"/>'
+            f'<circle cx="{n(x + 60)}" cy="{cy + 50}" r="{r * 1.15:.0f}" fill="#0f2a4a" opacity="0.28"/>')
+    g = land
     f.add(f'<g clip-path="url(#fy11h-l4)">{g}<ellipse cx="{n(x)}" cy="{cy - r}" rx="70" ry="22" fill="{WHITE}"/><ellipse cx="{n(x)}" cy="{cy + r}" rx="60" ry="18" fill="{WHITE}"/></g>')
     f.circle(x, cy, r, "none", INK, 3)
     # 5: a spiral galaxy
@@ -190,7 +203,7 @@ def atom_stadium():
     f.line(cx, cy - 70, cx, cy + 70, WHITE, 2.5)
     f.add(f'<circle cx="{cx}" cy="{cy}" r="26" fill="none" stroke="{WHITE}" stroke-width="2.5"/>')
     f.circle(cx, cy, 5, HOT, WHITE, 1.5)
-    f.arrow(cx + 120, cy - 40, cx + 12, cy - 4, HEAT, 2.5, 12)
+    f.leader(cx + 4, cy - 3, cx + 118, cy - 40)
     f.tex(cx + 124, cy - 48, r"\text{ydin} \approx \text{herne}", "start", INK, bg=True)
     f.tex(cx - 196, cy + 40, r"\text{atomi} \approx \text{stadion}", "start", INK, bg=True)
     f.line(cx - 250, 312, cx + 250, 312, INK, 2); f.line(cx - 250, 304, cx - 250, 320, INK, 2); f.line(cx + 250, 304, cx + 250, 320, INK, 2)
@@ -207,7 +220,7 @@ def cosmic_address():
     levels = [("havaittava maailmankaikkeus", "10^{27}", WHITE), ("Virgon superjoukko", "10^{24}", GLASS),
               ("Paikallinen ryhmä", "10^{23}", COLD_LIGHT), ("Linnunrata", "10^{21}", ICE),
               ("Aurinkokunnan planeettojen alue", "10^{13}", HEAT_LIGHT), ("Maa ja Kuu", "10^{9}", WHITE)]
-    step, dx = 56, 12
+    step, dx = 56, 3
     for i, (name, size, col) in enumerate(levels):
         x0, y0 = 12 + i * dx, 12 + i * step
         x1, y1 = 588 - i * dx, 388 - (0 if i == 0 else 0)
@@ -264,9 +277,9 @@ def interactions():
             "syntyy elektroni ja antineutriino.")
     W, H, g = 282, 196, 12
     panels = [(12, 12, "gravitaatio"), (12 + W + g, 12, "sähkömagneettinen"), (12, 12 + H + g, "vahva"), (12 + W + g, 12 + H + g, "heikko")]
+    f.line(300, 16, 300, 404, MUTED, 1.25, "5 4"); f.line(16, 210, 584, 210, MUTED, 1.25, "5 4")
     for x, y, name in panels:
-        f.rect(x, y, W, H, WHITE, RULE_LIGHT, 2, rx=8)
-        f.tex(x + 14, y + 22, rf"\text{{{name}}}", "start", COLD)
+        f.tex(x + 4, y + 22, rf"\text{{{name}}}", "start")
     # gravitation: Sun, Earth on its orbit, the force towards the Sun
     x, y = 12, 12
     sx, sy = x + 120, y + 104
@@ -329,11 +342,63 @@ def scale_marks():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "scale-axis": scale_axis, "ladder": ladder,
+def eclipse():
+    """Task illustration (fy1-1-L1-09): a total solar eclipse over a lake at dusk; the Moon's disc just covers the Sun's."""
+    f = S.scene("fy11-eclipse", "Kuvitus: täydellinen auringonpimennys järven yllä. Kuun musta kiekko peittää Auringon juuri ja juuri kokonaan, "
+                "ja kiekon ympärillä näkyy Auringon vaalea kehä. Taivas on hämärä, ja rannalla on havumetsää.")
+    f.defs_add('<radialGradient id="fy11e-sky" cx="0.5" cy="0.35" r="0.8"><stop offset="0" stop-color="#3b4f7a"/><stop offset="1" stop-color="#141b30"/></radialGradient>')
+    f.defs_add('<radialGradient id="fy11e-corona" cx="0.5" cy="0.5" r="0.5"><stop offset="0.55" stop-color="#ffffff" stop-opacity="0.95"/>'
+               '<stop offset="0.7" stop-color="#fff3d0" stop-opacity="0.55"/><stop offset="1" stop-color="#fff3d0" stop-opacity="0"/></radialGradient>')
+    f.rect(0, 0, 600, 360, "url(#fy11e-sky)")
+    for k in range(40):
+        f.add(f'<circle cx="{n(H.rnd(k, 11) * 600)}" cy="{n(H.rnd(k + 70, 11) * 200)}" r="{0.6 + 1.2 * H.rnd(k + 9, 11):.1f}" fill="#ffffff" opacity="0.6"/>')
+    sx, sy = 330, 120
+    f.circle(sx, sy, 86, "url(#fy11e-corona)")
+    for k in range(10):                                       # streamers of the corona
+        a = k * 0.628 + 0.2; L = 70 + 40 * H.rnd(k, 2)
+        f.add(f'<path d="M{n(sx + 44 * math.cos(a))},{n(sy + 44 * math.sin(a))} L{n(sx + L * math.cos(a))},{n(sy + L * math.sin(a))}" stroke="#ffffff" stroke-width="2" opacity="0.35" stroke-linecap="round"/>')
+    f.circle(sx, sy, 44, "#0b0f1a")
+    f.add(f'<circle cx="{sx + 30}" cy="{sy - 30}" r="3.5" fill="#ff8f6b"/>')     # a red prominence on the edge
+    f.path("M0,250 L40,226 L60,236 L90,204 L120,232 L150,212 L190,238 L230,220 L260,240 L600,240 L600,262 L0,262 Z", "#1c2a24")
+    for x in range(10, 600, 26):                              # spruce silhouettes on the far shore
+        h = 26 + 22 * H.rnd(x, 6)
+        f.path(f"M{x},{n(246 - h)} L{x + 11},246 H{x - 11} Z", "#16211c")
+    f.rect(0, 258, 600, 102, "#26355a")
+    f.add(f'<ellipse cx="{sx}" cy="300" rx="34" ry="5" fill="#fff3d0" opacity="0.35"/><ellipse cx="{sx}" cy="318" rx="20" ry="3" fill="#fff3d0" opacity="0.25"/>')
+    f.path("M0,360 L0,322 C80,314 160,326 240,336 C300,344 360,350 420,360 Z", "#121a2b")
+    return f.svg()
+
+
+def rain_field():
+    """Task illustration (fy1-1-L3-04): a rain shower over a football field; no numbers."""
+    f = S.scene("fy11-rain", "Kuvitus: sadekuuro jalkapallokentän yllä. Harmaa pilvi peittää taivaan, ja vinot sadeviivat putoavat "
+                "vihreälle kentälle, jolla on valkoiset rajaviivat ja maalit.")
+    f.rect(0, 0, 600, 360, "#c9d3dc")
+    H.cloud(f, 150, 70, 1.6, "#9aa6b2"); H.cloud(f, 420, 60, 1.9, "#8d99a6"); H.cloud(f, 300, 96, 1.4, "#a4b0bb")
+    f.path("M30,330 L130,180 H470 L570,330 Z", "#6fae55")                  # the field in perspective
+    for k in range(6):
+        t0, t1 = k / 6, (k + 0.5) / 6
+        y0, y1 = 180 + 150 * t0, 180 + 150 * t1
+        f.path(f"M{n(130 - 100 * t0)},{n(y0)} L{n(470 + 100 * t0)},{n(y0)} L{n(470 + 100 * t1)},{n(y1)} L{n(130 - 100 * t1)},{n(y1)} Z", "#7cba60")
+    f.path("M30,330 L130,180 H470 L570,330 Z", stroke="#ffffff", w=2.5)
+    f.line(80, 255, 520, 255, "#ffffff", 2.5)
+    f.add('<ellipse cx="300" cy="255" rx="58" ry="16" fill="none" stroke="#ffffff" stroke-width="2.5"/>')
+    for x0, y0, x1, w_ in ((290, 180, 310, 0), (288, 330, 312, 0)):
+        pass
+    f.path("M276,182 v-16 h48 v16", stroke="#ffffff", w=3); f.path("M266,330 v-26 h68 v26", stroke="#ffffff", w=3.5)
+    for k in range(140):                                     # rain streaks
+        x, y = H.rnd(k, 21) * 640 - 20, 80 + H.rnd(k + 200, 21) * 270
+        f.add(f'<line x1="{n(x)}" y1="{n(y)}" x2="{n(x - 6)}" y2="{n(y + 18)}" stroke="#4f6f8f" stroke-width="1.5" opacity="0.55" stroke-linecap="round"/>')
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "scale-axis": scale_axis, "ladder": ladder, "eclipse": eclipse, "rain-field": rain_field,
            "matter-ladder": matter_ladder, "atom-stadium": atom_stadium, "cosmic-address": cosmic_address,
            "object-types": object_types, "interactions": interactions, "scale-marks": scale_marks}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
+    "eclipse": "safe: the situation only, a total solar eclipse; no sizes or distances",
+    "rain-field": "safe: the situation only, rain over a football field; no numbers",
     "scale-axis": "reveals: the sizes from proton to universe as powers of ten",
     "ladder": "reveals: a hydrogen atom is about 10^5 times a proton",
     "matter-ladder": "reveals: the sizes of molecule, atom, nucleus and proton",

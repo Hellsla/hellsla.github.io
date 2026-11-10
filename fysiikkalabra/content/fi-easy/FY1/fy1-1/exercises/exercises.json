@@ -99,6 +99,7 @@
       "id": "fy1-1-L1-09",
       "level": 1,
       "text": "Oletetaan pimennys, jossa Kuu peittää Auringon juuri ja juuri kokonaan. Silloin Aurinko ja Kuu näyttävät taivaalla suunnilleen yhtä suurilta. Kuun etäisyys Maasta on $3{,}84\\cdot10^{8}\\,\\text{m}$. Kuun halkaisija on $3{,}47\\cdot10^{6}\\,\\text{m}$ ja Auringon halkaisija $1{,}39\\cdot10^{9}\\,\\text{m}$.\n\nKohde näyttää yhtä suurelta, kun sen etäisyys on yhtä monta kertaa Kuun etäisyys kuin sen halkaisija on Kuun halkaisija. Mikä arvo on järkevä arvio Maan etäisyydelle Auringosta?",
+      "figure": "fy1-1/eclipse",
       "kind": [
         "concept",
         "model"
@@ -333,6 +334,7 @@
       "id": "fy1-1-L3-04",
       "level": 3,
       "text": "Arvioi, kuinka monta sadepisaraa putoaa jalkapallokentälle yhden sadekuuron aikana.\n\nKäytä näitä oletuksia. Kuuro kasvattaa kentälle kertyvän vesikerroksen paksuutta nopeudella $5{,}0\\,\\text{mm/h}$ ja kestää $10\\,\\text{min}$. Kentän ala on $6{,}0\\cdot10^{3}\\,\\text{m}^2$. Jokainen pisara on pallo, jonka halkaisija on $2{,}0\\,\\text{mm}$. Pallon tilavuus on $V = 4\\pi r^{3}/3$.\n\nKuinka monta pisaraa kentälle putoaa miljardeina? Mikä oletuksista vaikuttaa tulokseen eniten, jos sen arvo on $20\\,\\%$ liian suuri? Selitä, miksi. Perustele laskemalla.",
+      "figure": "fy1-1/rain-field",
       "kind": [
         "reasoning",
         "model"
