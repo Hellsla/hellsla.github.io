@@ -273,9 +273,9 @@
       "prompt": "Miksi sähköauton latausasemalla on oma ryhmä ja oma vikavirtasuoja?",
       "choices": [
         {
-          "text": "Lataus on tuntien suuri kuorma, joten johto mitoitetaan sille, ja ulkona vuotovirran vaara on tavallista suurempi.",
+          "text": "Lataus on pitkäkestoinen ja suuritehoinen kuorma, joten sähkösyöttö mitoitetaan latausta varten. Latauspisteellä on oltava vaatimusten mukainen vikavirtasuojaus riippumatta siitä, sijaitseeko se sisällä vai ulkona.",
           "correct": true,
-          "feedback": "Oikein. Oma ryhmä varmistaa, että johto ja sulake on mitoitettu juuri latausvirralle eikä samassa johdossa ole muita kuormia. Vikavirtasuoja katkaisee virran, jos osa siitä vuotaa esimerkiksi märän kaapelin ja ihmisen kautta maahan."
+          "feedback": "Oikein. Oma ryhmä varmistaa, että johto ja sulake on mitoitettu juuri pitkäkestoiselle latausvirralle eikä samassa johdossa ole muita kuormia. Vikavirtasuojaus vaaditaan latauspisteelle sekä sisällä että ulkona: vikavirtasuoja katkaisee virran, jos osa siitä vuotaa esimerkiksi vaurioituneen kaapelin ja ihmisen kautta maahan."
         },
         {
           "text": "Oma ryhmä nopeuttaa latausta, koska virta ei jakaudu muiden pistorasioiden kanssa samaan johtoon.",

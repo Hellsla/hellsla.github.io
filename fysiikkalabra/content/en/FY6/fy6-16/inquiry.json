@@ -273,9 +273,9 @@
       "prompt": "Why does the charging station of an electric car have its own circuit and its own residual current device (RCD)?",
       "choices": [
         {
-          "text": "Charging is a large load lasting hours, so the cable is sized for it, and outdoors the danger of leakage current is greater than usual.",
+          "text": "Charging is a long-lasting, high-power load, so the electricity supply is sized for charging. A charging point must have residual current protection that meets the requirements, whether it is indoors or outdoors.",
           "correct": true,
-          "feedback": "Correct. An own circuit makes sure that the cable and the fuse are sized for exactly the charging current and that there are no other loads on the same cable. The residual current device cuts the current if part of it leaks to the ground, for example through a wet cable and a person."
+          "feedback": "Correct. An own circuit makes sure that the cable and the fuse are sized for exactly the long-lasting charging current and that there are no other loads on the same cable. Residual current protection is required for a charging point both indoors and outdoors: the residual current device cuts the current if part of it leaks to the ground, for example through a damaged cable and a person."
         },
         {
           "text": "An own circuit speeds up charging, because the current does not share the same cable with other sockets.",

@@ -78,7 +78,8 @@ new p5((p) => {
     lD.html(__('etaisyys', { d: tx(S.d, 1) }));
     lA.html(__('ala', { A: String(Math.round(S.A)) }));
     lU.html(__('jannite', { U: tx(S.U0, 1) }));
-    readout.html(__('lukemat', { C: sig(S.C), Q: sig(S.Q), U: tx(S.U, S.U < 10 ? 2 : 1), E: tx(S.E, S.E < 10 ? 2 : 1), Emax: String(S.Emax), W: sig(S.W) })
+    readout.html(__(S.lap && !S.burnt ? 'lukemat_lap' : 'lukemat', {   // at breakdown Q and W are named the ideal model's values before it
+                 C: sig(S.C), Q: sig(S.Q), U: tx(S.U, S.U < 10 ? 2 : 1), E: tx(S.E, S.E < 10 ? 2 : 1), Emax: String(S.Emax), W: sig(S.W) })
                  + (S.burnt ? '<br><strong>' + __('purkautui-teksti') + '</strong>' : S.lap ? '<br><strong>' + __('lapilyonti-teksti') + '</strong><br>' + __('mallirajaus') : ''));
     window.simState = { A: S.A, d: S.d, U0: S.U0, eriste: S.m, lahde: S.lahde, er: S.er, Emax: S.Emax, C: S.C, Q: S.Q, U: S.U,
                         E: S.E, W: S.W, lapilyonti: S.lap, purkautui: S.burnt ? 1 : 0, labels: null };

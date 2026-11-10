@@ -2011,6 +2011,7 @@
       "irrotettu": "disconnected",
       "selite": "Red: positive charge. Blue: negative charge. Green: electric field. Orange: energy.",
       "lukemat": "Capacitance $C = {{C}}\\,\\text{pF}$, charge $Q = {{Q}}\\,\\text{nC}$<br>Voltage $U = {{U}}\\,\\text{kV}$, field $E = {{E}}\\,\\text{MV/m}$, dielectric strength $E_\\text{max} = {{Emax}}\\,\\text{MV/m}$<br><strong>Energy $W = {{W}}\\,\\mu\\text{J}$</strong>",
+      "lukemat_lap": "Capacitance $C = {{C}}\\,\\text{pF}$<br>Voltage $U = {{U}}\\,\\text{kV}$, field $E = {{E}}\\,\\text{MV/m}$, dielectric strength $E_\\text{max} = {{Emax}}\\,\\text{MV/m}$<br>Values calculated with the ideal model before breakdown: charge $Q = {{Q}}\\,\\text{nC}$, energy $W = {{W}}\\,\\mu\\text{J}$",
       "lapilyonti": "$\\text{breakdown}$",
       "purkautui": "$\\text{discharged}$",
       "lapilyonti-teksti": "Breakdown: the field exceeds the dielectric strength, the dielectric starts to conduct and a spark discharges between the plates.",

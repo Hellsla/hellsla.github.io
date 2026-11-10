@@ -389,7 +389,7 @@
     if (!mistakes.length) return;
     const input = form.querySelector('input'), out = form.querySelector('output'), tol = Number(form.dataset.tol);
     form.addEventListener('submit', () => {
-      const v = Number(input.value.trim().replace(/\s+/g, '').replace(/−/g, '-').replace(',', '.').replace(/[^\d.eE+-]/g, ''));
+      const v = window.flParse ? window.flParse(input.value) : NaN;   // the same reading as the answer check (lesson.js part 1)
       if (!Number.isFinite(v) || out.dataset.state === 'ok' || out.dataset.state === 'close') return;
       const m = mistakes.find((x) => Math.abs(v - x.value) <= (x.value === 0 ? tol : tol * Math.abs(x.value)));
       if (m) { if (m.html) out.innerHTML = m.html; else out.textContent = m.feedback; out.dataset.state = 'no'; if (m.feedback.includes('$')) typeset(out); }
