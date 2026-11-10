@@ -867,7 +867,9 @@ def course_text(code, mod):
 # chapter tiles' 2:1 flat style, no text), the same on every module page and in every language; decorative (alt "").
 END_DIR = ROOT / "assets/shared/module-end"
 def end_img(name):
-    svg = (END_DIR / f"{name}.svg").read_text(encoding="utf-8").strip()
+    f = END_DIR / f"{name}.svg"
+    if not f.is_file(): return ""   # test copies (test_reviews.py) may leave the shared assets out
+    svg = f.read_text(encoding="utf-8").strip()
     svg = svg.replace("<svg", '<svg aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid slice"', 1)
     return f'<div class="me-img">{svg}</div>'
 
