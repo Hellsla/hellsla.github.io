@@ -2158,3 +2158,14 @@ main.home>.resume{margin:0 0 1rem}
 .ch-state.is-done{color:var(--accent-deep)}
 .ch-state.is-done::before{content:"\2713\00a0"}
 @media print{.resume,.ch-state{display:none!important}}
+
+/* The theory's two heading levels apart, and one text face in the lesson (design audit 2026-11-10, problem 6;
+   docs/audits/2026-11-10-vaiheiden-kayttoliittyma.md, step 1). A theory section's heading (## in lesson.md) was 18 px
+   and its subheading (###) 17 px in the same weight, so "Ydinajatus" and the point under it read as equals: the
+   section heading is now 20 px with clearly more room over it than the subheading has. Pohdinta's opening paragraph
+   is set in the reading face like the rest of the lesson; Fraunces stays for the title, the Miksi question and the
+   stage's own question. */
+.act-theory h3.theory-h{font-size:1.25rem;letter-spacing:-.01em;margin-top:2.6rem}
+.act-theory>h3.theory-h:first-child{margin-top:.4rem}
+.act-theory h4{margin-top:1.4rem}
+.hook{font-family:var(--sans)}
