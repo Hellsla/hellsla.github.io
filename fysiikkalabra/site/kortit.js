@@ -234,6 +234,17 @@
   };
 
   const deck = (sec, d) => {
+    if (sec.classList.contains('ch-card')) {   // the module page's tile (2026-11-10): its count and link follow the deck
+      const a = sec.querySelector('.ch-box > a'), num = sec.querySelector('.l-num');
+      if (!a || !num) return;
+      const all = num.textContent, href = a.getAttribute('href');
+      const drawTile = () => {
+        const s = state(), n = d.cards.filter((c) => (s[c.id] || {}).tila === 'kertaa').length;
+        num.textContent = n ? t('tile_review', { n }) : all;
+        a.setAttribute('href', n ? `${d.app}?moduuli=${encodeURIComponent(d.moduuli)}&pakka=oma` : href);
+      };
+      drawTile(); listeners.add(drawTile); return;
+    }
     const body = sec.querySelector('.kc-deck-body');
     const draw = () => {
       const s = state(), ids = d.cards.filter((c) => (s[c.id] || {}).tila === 'kertaa');

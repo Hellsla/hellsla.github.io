@@ -864,16 +864,33 @@ def course_text(code, mod):
     return out
 
 
-# Moduulin loppuosiot (teacher 2026-11-10, "omat kortit, samat kaikilla kursseilla"): Kertauspakkasi, Esimerkkikoe,
-# Haastetehtävät and Moduulin tavoitteet are cards with one shared illustration each (assets/shared/module-end/, the
-# chapter tiles' 2:1 flat style, no text), the same on every module page and in every language; decorative (alt "").
+# Moduulin loppuosiot (teacher 2026-11-10, "omat kortit, samat kaikilla kursseilla"; the same size as the chapter tiles
+# and without their lead texts, teacher 2026-11-10 evening): Kertauspakkasi, Esimerkkikoe, Haastetehtävät and Moduulin
+# tavoitteet as tiles in a grid of their own under the chapters, each with one shared illustration
+# (assets/shared/module-end/, the chapter tiles' 2:1 flat style, no text), the same on every module page and in every
+# language; the small line over the title is a count, not a description. The goals tile opens its list in place.
 END_DIR = ROOT / "assets/shared/module-end"
 def end_img(name):
     f = END_DIR / f"{name}.svg"
     if not f.is_file(): return ""   # test copies (test_reviews.py) may leave the shared assets out
     svg = f.read_text(encoding="utf-8").strip()
-    svg = svg.replace("<svg", '<svg aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid slice"', 1)
-    return f'<div class="me-img">{svg}</div>'
+    return svg.replace("<svg", '<svg aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid slice"', 1)
+
+
+def end_tiles(code, mod, T, lang, built_ids, exam_built, practice_built):
+    items = concept_cards.module_section(code, T, lang, chapter_titles(code, built_ids), end_img("deck"))
+    if code in exam_built:
+        items += cardgrid.card(exam_built[code], T("exam.title"), practice.page_name(code + practice.EXAM), svg=end_img("exam"), cls=" me-tile")
+    if code in practice_built:
+        items += cardgrid.card(practice_built[code], T("practice.title"), practice.page_name(code), svg=end_img("challenge"), cls=" me-tile")
+    goals = mod.get("tavoitteet", [])
+    if goals:
+        img = end_img("goals")
+        items += (f'<li class="live ch-card me-tile me-goals"><details class="goals"><summary>'
+                  + (f'<span class="ch-img">{img}</span>' if img else "")
+                  + f'<span class="l-num">{T.count("site.course_goals_n", len(goals))}</span><span class="ch-title">{T("site.course_goals")}</span></summary>'
+                  f'<div class="me-goals-body"><p>{T("site.course_goals_lead")}</p><ul>{"".join(f"<li>{esc(g)}</li>" for g in goals)}</ul></div></details></li>')
+    return cardgrid.grid(items, ' id="moduulin-loppu"') if items else ""
 
 
 def chapter_nav(out, modules, built_ids, practice_built, exam_built=()):
@@ -1241,14 +1258,8 @@ def build_language(lang):
                 f'<p class="lead">{esc(T("site.module_question." + code))}</p>'
                 f'<p class="mod-status">{main_label}{(" · " + extra_label) if extra_label else ""}</p>'
                 + progress_section(code, lang, mod)
-                + f'<h2>{T("site.course_lessons")}</h2>{items}<div class="mod-more">'
-                + concept_cards.module_section(code, T, lang, chapter_titles(code, built_ids), end_img("deck"))   # Kertauspakkasi: the student's deck of the module (teacher 2026-11-03); order deck, exam, Haastetehtävät (teacher 2026-11-05)
-                + (f'<section class="me-card">{end_img("exam")}<h2>{T("exam.title")}</h2><p>{T("exam.course_lead")}</p><ul class="lessons practice-link"><li class="live">'
-                   f'<a href="{practice.page_name(code + practice.EXAM)}">{T("exam.title")}</a> <span class="count">{exam_built[code]}</span></li></ul></section>' if code in exam_built else "")
-                + (f'<section class="me-card">{end_img("challenge")}<h2>{T("practice.title")}</h2><p>{T("practice.course_lead")}</p><ul class="lessons practice-link"><li class="live">'
-                   f'<a href="{practice.page_name(code)}">{T("practice.title")}</a> <span class="count">{practice_built[code]}</span></li></ul></section>' if code in practice_built else "")
-                + (f'<section class="me-card me-goals">{end_img("goals")}<h2>{T("site.course_goals")}</h2><details class="goals"><summary>{T.count("site.course_goals_show", len(mod.get("tavoitteet", [])))}</summary>'
-                   f'<p>{T("site.course_goals_lead")}</p><ul>{goals}</ul></details></section>' if goals else "") + "</div>")
+                + f'<h2>{T("site.course_lessons")}</h2>{items}'
+                + end_tiles(code, mod, T, lang, built_ids, exam_built, practice_built))
         desc = T("site.course_description", code=code, title=mod["title"], done=done, n=len(slots))
         (out / f"{code}.html").write_text(page(T("site.course_title", code=code, title=mod["title"]), body,
                                                 f'<a href="index.html">{T("site.name")}</a> › {code}', f"{code}.html", desc, main_class="reading module-page"))

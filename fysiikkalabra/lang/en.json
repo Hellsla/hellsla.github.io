@@ -130,7 +130,11 @@
     "returns_none": "No submissions this period",
     "returns_aria": "{{code}}: the groups' submission forms",
     "returns_desc": "The groups' submission forms.",
-    "tools": "Tools"
+    "tools": "Tools",
+    "course_goals_n": {
+      "one": "1 goal",
+      "other": "{{n}} goals"
+    }
   },
   "lesson": {
     "photos": "Photographs",
@@ -2845,13 +2849,21 @@
       "topics_n": {
         "one": "{{n}} topic",
         "other": "{{n}} topics"
+      },
+      "tile_review": {
+        "one": "{{n}} to review",
+        "other": "{{n}} to review"
       }
     },
     "home_lead": "Review physics concepts and definitions with flashcards (in Finnish). Choose a module and a topic, or combine topics.",
     "home_link": "Käsitetakomo – review physics concepts (in Finnish)",
     "module_lead": "Review this module's concepts and definitions with flashcards in Käsitetakomo (in Finnish). Choose a topic there or combine several.",
     "module_link": "Review this module's concepts (in Finnish)",
-    "lesson_link": "Review this chapter's concepts in Käsitetakomo (in Finnish)"
+    "lesson_link": "Review this chapter's concepts in Käsitetakomo (in Finnish)",
+    "tile_cards": {
+      "one": "{{n}} concept card",
+      "other": "{{n}} concept cards"
+    }
   },
   "speech": {
     "_about": "Read aloud (templates/readaloud.js, teacher 2026-11-03): how a formula is spoken. rate: default speech rate; joiner: how a product of units is joined (watt hours); units: [singular, plural]; per_unit: the only unit of a denominator as a whole phrase; area/volume go before a metre (square metres).",
