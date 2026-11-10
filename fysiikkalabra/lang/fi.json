@@ -137,7 +137,11 @@
     "returns_none": "Ei palautuksia tässä periodissa",
     "returns_aria": "{{code}}: ryhmien palautuslomakkeet",
     "returns_desc": "Ryhmien palautuslomakkeet.",
-    "tools": "Työkalut"
+    "tools": "Työkalut",
+    "course_goals_n": {
+      "one": "1 tavoite",
+      "other": "{{n}} tavoitetta"
+    }
   },
   "lesson": {
     "photos": "Valokuvat",
@@ -2856,13 +2860,21 @@
       "topics_n": {
         "one": "{{n}} aihe",
         "other": "{{n}} aihetta"
+      },
+      "tile_review": {
+        "one": "{{n}} kerrattava",
+        "other": "{{n}} kerrattavaa"
       }
     },
     "home_lead": "Kertaa fysiikan käsitteitä ja määritelmiä kortein. Valitse moduuli ja aihe; aiheita voi myös yhdistää.",
     "home_link": "Käsitetakomo – kertaa fysiikan käsitteitä",
     "module_lead": "Kertaa moduulin käsitteitä ja määritelmiä kortein Käsitetakomossa. Valitse sieltä aihe tai yhdistä useita.",
     "module_link": "Kertaa tämän moduulin käsitteet",
-    "lesson_link": "Kertaa luvun käsitteet Käsitetakomossa"
+    "lesson_link": "Kertaa luvun käsitteet Käsitetakomossa",
+    "tile_cards": {
+      "one": "{{n}} käsitekortti",
+      "other": "{{n}} käsitekorttia"
+    }
   },
   "speech": {
     "_about": "Ääneenluku (templates/readaloud.js, opettaja 2026-11-03): miten kaava sanotaan ääneen. rate: puheen oletusnopeus; joiner: millä useamman yksikön tulo liitetään (kilowatti+tuntia); units: [perusmuoto, partitiivi]; per_unit: nimittäjän ainoa yksikkö kokonaisena ilmauksena; area/volume liitetään metrin eteen (neliömetriä).",

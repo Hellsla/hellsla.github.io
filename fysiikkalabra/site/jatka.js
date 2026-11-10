@@ -29,7 +29,7 @@
   };
   const stageText = (v) => (v && v.n && v.of ? fmt(T.stage, { n: v.n, of: v.of }) + (v.label ? ' ' + v.label : '') : '');
 
-  const tiles = [...document.querySelectorAll('ol.ch-cards li.live .ch-box > a[href]')].map((a) => ({ a, file: a.getAttribute('href'), box: a.closest('.ch-box') }))
+  const tiles = [...document.querySelectorAll('ol.ch-cards li.live:not(.me-tile) .ch-box > a[href]')   /* the module's end tiles (exam, challenge tasks) are not chapters */].map((a) => ({ a, file: a.getAttribute('href'), box: a.closest('.ch-box') }))
     .filter((t) => /^[\w.-]+\.html$/.test(t.file));
   if (!tiles.length) {                       // the front page
     if (last && last.title) show(last.file, last.num || '', last.title, stageText(last));

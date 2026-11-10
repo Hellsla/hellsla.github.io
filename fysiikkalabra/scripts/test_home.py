@@ -279,7 +279,7 @@ for lang in i18n.languages():
         f = out / f"{code}.html"
         if not f.is_file(): continue
         want = bool(concept_cards.cards_of(code, lang))
-        expect(f"{lang} {code}.html: {'Kertauspakkasi' if want else 'no deck (no cards in this language)'}", bool(re.search(r'class="kc-deck[ "]', f.read_text())) == want)
+        expect(f"{lang} {code}.html: {'Kertauspakkasi' if want else 'no deck (no cards in this language)'}", bool(re.search(r'class="[^"]*\bkc-deck\b', f.read_text())) == want)
     wrong = []
     for code, m in curriculum.items():
         for l in m["lessons"]:
@@ -418,8 +418,8 @@ with sync_playwright() as pw:
         added = pg.evaluate("Object.values(JSON.parse(localStorage.getItem('ruukkilabra:kortit') || '{}')).some(e => e.tila === 'kertaa')")
         expect(f"{lid}: a chip opens the popover and 'Lisää kertauspakkaan' adds the card", added)
         pg.goto(URL + f"{code}.html"); pg.wait_for_timeout(200)
-        deck = pg.evaluate("[document.querySelector('.kc-deck-count')?.textContent || '', document.querySelector('.kc-deck a.kc-button')?.getAttribute('href') || '']")
-        expect(f"{code}.html: Kertauspakkasi counts the deck and 'Kertaa nyt' opens it", bool(deck[0]) and deck[1] == f"kasitteet.html?moduuli={code}&pakka=oma", deck)
+        deck = pg.evaluate("[document.querySelector('.kc-deck .l-num')?.textContent || '', document.querySelector('.kc-deck .ch-box > a')?.getAttribute('href') || '']")
+        expect(f"{code}.html: the Kertauspakkasi tile counts the deck and opens it", deck[0].startswith("1 ") and deck[1] == f"kasitteet.html?moduuli={code}&pakka=oma", deck)
         pg.goto(URL + f"kasitteet.html?moduuli={code}&pakka=oma"); pg.wait_for_timeout(300)
         expect("Käsitetakomo: ?pakka=oma studies the student's own deck", pg.evaluate("document.querySelectorAll('.kc-study .kc-card').length === 1"))
         if (SITE / f"{code}-sovella.html").is_file():

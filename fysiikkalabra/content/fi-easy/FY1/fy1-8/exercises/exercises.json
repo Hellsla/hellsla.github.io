@@ -5,6 +5,7 @@
       "level": 1,
       "core": true,
       "text": "Pallo vierii rinnettä alas. Oppilas mittaa sen kulkuajaksi käsikellolla $4{,}0\\,\\text{s}$. Ajanoton epävarmuus on $\\Delta t = 0{,}2\\,\\text{s}$. Kuinka suuri on ajan suhteellinen epävarmuus $\\varepsilon$ prosentteina?",
+      "figure": "fy1-8/ramp-ball",
       "answer": 5.0,
       "unit": "%",
       "tolerance": 0.02
@@ -210,6 +211,7 @@
       "id": "fy1-8-L2-05",
       "level": 2,
       "text": "Oppilas tutkii, vierivätkö kevyt ($50\\,\\text{g}$) ja raskas ($200\\,\\text{g}$) pallo saman rinteen alas yhtä nopeasti. Hän muuttaa vain massaa. Hän mittaa kummallakin pallolla viisi kulkuaikaa käsikellolla.\n\nHän päättelee: ”Raskas pallo on nopeampi, koska sen keskimääräinen aika on lyhyempi.”\n\nLaske kummankin pallon aikojen keskiarvo ja epävarmuus (puolet vaihteluvälistä). Kuinka monta prosenttia keskiarvojen erotus on epävarmuudesta? Päättele lisäksi, tukeeko aineisto oppilaan päätelmää.",
+      "figure": "fy1-8/two-balls-ramp",
       "kind": [
         "data",
         "error"

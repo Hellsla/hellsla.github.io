@@ -5,6 +5,7 @@
       "level": 1,
       "core": true,
       "text": "A ball rolls down a slope, and a student measures its travel time with a hand stopwatch as $4.0\\,\\text{s}$. The timing uncertainty is $\\Delta t = 0.2\\,\\text{s}$. What is the relative uncertainty $\\varepsilon$ of the time as a percentage?",
+      "figure": "fy1-8/ramp-ball",
       "answer": 5.0,
       "unit": "%",
       "tolerance": 0.02
@@ -210,6 +211,7 @@
       "id": "fy1-8-L2-05",
       "level": 2,
       "text": "A student investigates whether a light ($50\\,\\text{g}$) and a heavy ($200\\,\\text{g}$) ball roll down the same slope equally fast. He changes only the mass and measures five travel times for each ball with a hand stopwatch.\n\nHe concludes: “The heavy ball is faster, because its mean time is shorter.”\n\nCalculate the mean and the uncertainty (half of the range) of the times of each ball. What percentage of the uncertainty is the difference of the means? Also decide whether the data supports the student's conclusion.",
+      "figure": "fy1-8/two-balls-ramp",
       "kind": [
         "data",
         "error"

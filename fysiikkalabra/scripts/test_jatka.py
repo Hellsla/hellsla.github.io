@@ -107,9 +107,11 @@ with sync_playwright() as pw:
     mod = pg.evaluate("""(() => { const b = document.getElementById('jatka'); const st = (f) => { const a = document.querySelector('ol.ch-cards a[href="' + f + '"]'); const s = a && a.closest('.ch-box').querySelector('.ch-state'); return s ? s.textContent : null; };
       return { hidden: b.hidden, href: (b.querySelector('a') || {}).getAttribute?.('href'), states: %s.map(st), over: document.documentElement.scrollWidth > innerWidth }; })()""" % json.dumps([f"{x}.html" for x in (FIRST, SECOND, THIRD)]))
     expect("the module page: Jatka leads to the chapter opened last", mod["hidden"] is False and mod["href"] == f"{OPEN}.html", mod)
+    pg.evaluate("(c) => localStorage.setItem('ruukkilabra:' + c + '-koe', JSON.stringify({ done: ['osa-1'], answered: [], of: 3 }))", COURSE)
     pg.reload(); pg.wait_for_timeout(150)
     again = pg.evaluate("[document.getElementById('jatka').hidden, document.querySelector('#jatka a').getAttribute('href'), document.querySelectorAll('.ch-state').length, document.querySelectorAll('#jatka a').length]")
     expect("after a reload the row and the tile marks are the same, drawn once", again == [False, f"{OPEN}.html", 2, 1], again)
+    expect("the module's end tiles (exam, challenge tasks, goals) are never marked as chapters", pg.evaluate("!document.querySelector('.me-tile .ch-state')"))
     expect("the module page: a finished chapter and a started one are marked, an unopened one is not",
            bool(mod["states"][0]) and mod["states"][1] is None and bool(mod["states"][2]) and f"2/{of}" in mod["states"][2] and mod["states"][0] != mod["states"][2] and not mod["over"], mod)
     pg.evaluate("localStorage.removeItem('ruukkilabra:viimeisin')"); pg.reload(); pg.wait_for_timeout(150)

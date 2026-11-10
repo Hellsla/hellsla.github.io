@@ -1,14 +1,17 @@
 """Figures of this lesson (scripts/figlib.py); `python scripts/figures.py fy1-3` writes them into lesson.md."""
 from figlib import (Fig, INK, MUTED, WHITE, RULE_LIGHT, HOT, COLD, GOOD, ALUMINIUM, METAL_EDGE, IRON, GLASS, GOOD_LIGHT, fi)
 from figlib import PAPER, SAND, SAND_DARK, n
+import math
 import herolib as H
 from figlib import HEAT, SAND_LIGHT
 from herolib import rnd, steel
+from figstyle import Fig, Axes            # the house illustration style (docs/illustration-style.md)
+import figstyle as S
 
 
 def hero():
     """The chapter's opening illustration: one ball rolling down a ramp, ten hands with stopwatches stopped at slightly different times."""
-    f = H.hero("fy13-hero", "Kuvitus: luokan pöydällä kalteva alumiinikouru, jota pitkin teräskuula vierii. Etualalla kymmenen kättä pitää "
+    f = S.hero("fy13-hero", "Kuvitus: luokan pöydällä kalteva alumiinikouru, jota pitkin teräskuula vierii. Etualalla kymmenen kättä pitää "
                "sekuntikelloja; niiden viisarit ovat pysähtyneet hieman eri kohtiin, vaikka ne mittasivat samaa vierimistä.")
     f.rect(0, 0, 1200, 600, PAPER)
     H.window(f, 70, 40, 220, 200, "fy13h-win")
@@ -35,12 +38,16 @@ def hero():
     # ten hands in front, each with a stopwatch stopped a little apart
     for k in range(10):
         cx = 66 + k * 119; cy = 520 + 10 * (k % 2)
-        sleeve = (COLD, HEAT, GOOD, HOT, IRON)[k % 5]
-        f.path(f"M{cx - 26},600 L{cx - 22},{cy + 40} H{cx + 22} L{cx + 26},600 Z", sleeve, INK, 3)
-        f.add(f'<ellipse cx="{cx}" cy="{cy + 34}" rx="34" ry="26" fill="{SAND_LIGHT}" stroke="{INK}" stroke-width="2.5"/>')
+        sleeve = ("#2f74b5", "#e8590c", "#2b8a3e", "#c92a2a", "#6c757d")[k % 5]
+        skin = ("#f1c9a5", "#d9a77c", "#f3d2b4", "#b98157", "#eac09a")[k % 5]
+        f.path(f"M{cx - 30},600 L{cx - 24},{cy + 52} H{cx + 24} L{cx + 30},600 Z", sleeve)                      # sleeve with a cuff
+        f.path(f"M{cx + 6},600 L{cx + 10},{cy + 52} H{cx + 24} L{cx + 30},600 Z", S.dark(sleeve, 0.18))
+        f.rect(cx - 26, cy + 46, 52, 12, S.light(sleeve, 0.25), None, 0, 4)
+        f.path(f"M{cx - 24},{cy + 50} C{cx - 30},{cy + 20} {cx - 22},{cy - 2} {cx},{cy} C{cx + 24},{cy - 2} {cx + 32},{cy + 22} {cx + 24},{cy + 50} Z", skin)   # palm
         H.stopwatch(f, cx, cy, 40, 0.30 + 0.12 * (rnd(k, 4) - 0.5))
-        for j in range(3): f.rect(cx + 28, cy - 18 + 16 * j, 20, 15, SAND_LIGHT, INK, 2, 7)   # fingers round the watch
-        f.rect(cx - 8, cy - 64, 16, 22, SAND_LIGHT, INK, 2, 8)                                 # the thumb on the button
+        for j in range(3):                                                                    # fingers curled round the watch
+            f.add(f'<ellipse cx="{cx + 36}" cy="{cy - 12 + 15 * j}" rx="11" ry="7.5" fill="{skin}" stroke="{S.dark(skin, 0.3)}" stroke-width="1.5"/>')
+        f.path(f"M{cx - 6},{cy - 44} q-2,-16 8,-20 q10,2 8,18 Z", skin, S.dark(skin, 0.3), 1.5)        # the thumb on the button
     return f.svg()
 
 
@@ -176,9 +183,59 @@ def pendulum_dots():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "error-types": error_types, "range-half": range_half, "zero-scale": zero_scale, "example-plot": example_plot,
+def paper_stack():
+    """Task illustration (fy1-3-L3-02): a stack of copy paper beside an upright ruler; no readings."""
+    f = S.scene("fy13-paper", "Kuvitus: pöydällä on pino kopiopaperia, ja pinon vieressä seisoo pystysuora viivain. Pinon yläreuna on viivaimen "
+                "lukeman kohdalla, mutta numeroita ei ole kuvassa.")
+    f.rect(0, 0, 600, 360, "#f3efe6")
+    H.wood(f, 0, 290, 600, 70, "fy13p-top")
+    x0, y0, w, h, d = 150, 170, 260, 120, 46          # front face of the stack, depth drawn up-right
+    f.path(f"M{x0},{y0} l{d},-{d * 0.55} h{w} l-{d},{d * 0.55} Z", "#ffffff", "#9aa3ad", S.W_OBJ)
+    f.path(f"M{x0 + w},{y0} l{d},-{d * 0.55} v{h} l-{d},{d * 0.55} Z", "#e4e7ea", "#9aa3ad", S.W_OBJ)
+    f.rect(x0, y0, w, h, "#f6f7f8", "#9aa3ad", S.W_OBJ)
+    for k in range(1, 40):                                # sheet edges on the front face
+        f.add(f'<line x1="{x0}" y1="{n(y0 + k * h / 40)}" x2="{x0 + w}" y2="{n(y0 + k * h / 40)}" stroke="#c9ced3" stroke-width="0.8"/>')
+    rx = 470                                              # ruler standing upright
+    f.rect(rx, 60, 34, 230, "#f1dfb5", S.dark("#f1dfb5", 0.4), S.W_OBJ, 2)
+    for k in range(0, 46):
+        y = 286 - k * 5
+        f.line(rx, y, rx + (14 if k % 10 == 0 else 9 if k % 5 == 0 else 6), y, "#3a4350", 1)
+    f.line(x0 + w + d + 4, y0 - d * 0.55, rx - 4, y0 - d * 0.55, "#6b7480", 1.25, "5 4")
+    return f.svg()
+
+
+def pendulum_timing():
+    """Task illustration (fy1-3-L2-07): a pendulum on a stand, a hand ready on a stopwatch; no numbers."""
+    f = S.scene("fy13-pend", "Kuvitus: telineeseen ripustettu heiluri heilahtaa, ja haalea välikuva näyttää sen ääriasennon. Etualalla käsi pitää "
+                "sekuntikelloa peukalo käynnistysnapilla.")
+    f.rect(0, 0, 600, 360, "#f3efe6")
+    H.wood(f, 0, 310, 600, 50, "fy13t-top")
+    f.rect(120, 296, 160, 14, "#6c757d", S.dark("#6c757d", 0.35), S.W_OBJ, 3)
+    f.rect(132, 40, 12, 258, "#c4ccd4", S.dark("#c4ccd4", 0.45), S.W_OBJ, 2)
+    f.rect(132, 40, 140, 10, "#c4ccd4", S.dark("#c4ccd4", 0.45), S.W_OBJ, 2)
+    px, py, L = 250, 50, 200
+    for ang, op in ((-22, 0.3), (14, 1)):
+        a = math.radians(ang); bx, by = px + L * math.sin(a), py + L * math.cos(a)
+        f.add(f'<g opacity="{op}"><line x1="{px}" y1="{py}" x2="{n(bx)}" y2="{n(by)}" stroke="#3a4350" stroke-width="1.5"/></g>')
+        if op < 1: f.add(f'<circle cx="{n(bx)}" cy="{n(by)}" r="16" fill="#9aa3ad" opacity="0.3"/>')
+        else: f.ball("fy13t-bob", bx, by, 16, "#aab4bf")
+    f.add(f'<path d="M{n(px + 0.8 * L * math.sin(math.radians(-22)))},{n(py + 0.8 * L * math.cos(math.radians(-22)))} A{0.8 * L},{0.8 * L} 0 0 0 {n(px + 0.8 * L * math.sin(math.radians(14)))},{n(py + 0.8 * L * math.cos(math.radians(14)))}" '
+          f'fill="none" stroke="#6b7480" stroke-width="1.25" stroke-dasharray="5 4"/>')
+    cx, cy, skin, sleeve = 470, 250, "#eac09a", "#2f74b5"
+    f.path(f"M{cx - 30},360 L{cx - 24},{cy + 52} H{cx + 24} L{cx + 30},360 Z", sleeve)
+    f.rect(cx - 26, cy + 46, 52, 12, S.light(sleeve, 0.25), None, 0, 4)
+    f.path(f"M{cx - 24},{cy + 50} C{cx - 30},{cy + 20} {cx - 22},{cy - 2} {cx},{cy} C{cx + 24},{cy - 2} {cx + 32},{cy + 22} {cx + 24},{cy + 50} Z", skin)
+    H.stopwatch(f, cx, cy, 40, 0.0)
+    for j in range(3): f.add(f'<ellipse cx="{cx + 36}" cy="{cy - 12 + 15 * j}" rx="11" ry="7.5" fill="{skin}" stroke="{S.dark(skin, 0.3)}" stroke-width="1.5"/>')
+    f.path(f"M{cx - 6},{cy - 44} q-2,-16 8,-20 q10,2 8,18 Z", skin, S.dark(skin, 0.3), 1.5)
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "paper-stack": paper_stack, "pendulum-timing": pendulum_timing, "error-types": error_types, "range-half": range_half, "zero-scale": zero_scale, "example-plot": example_plot,
            "pendulum-dots": pendulum_dots}
 
 REUSE = {
+    "paper-stack": "safe: the situation only, a paper stack beside a ruler; no readings",
+    "pendulum-timing": "safe: the situation only, a pendulum and a hand-held stopwatch; no numbers",
     "pendulum-dots": "safe: five repeated readings on a time axis, no mean or range marked",
 }

@@ -77,6 +77,7 @@
       "id": "fy1-2-L1-07",
       "level": 1,
       "text": "Pyöräilijän nopeus on $18\\,\\text{km/h}$. Ilmoita nopeus yksikössä $\\text{m/s}$.",
+      "figure": "fy1-2/cyclist",
       "kind": [
         "model"
       ],
@@ -269,6 +270,7 @@
       "level": 2,
       "core": true,
       "text": "Vesihana täyttää ämpäriä tasaisella virtaamalla $q = 0{,}20\\,\\textsf{l}/\\text{s}$. Oppilas laskee, kauanko $12\\,\\textsf{l}$:n ämpärin täyttäminen kestää.\n\nOppilaan ratkaisu on: ”Aika on virtaaman ja tilavuuden tulo, $t = qV = 0{,}20\\,\\textsf{l}/\\text{s}\\cdot12\\,\\textsf{l} = 2{,}4$.” Hän päättelee, että ämpäri täyttyy $2{,}4$ sekunnissa.\n\nTarkista oppilaan laskun yksiköt ja selitä, mistä yksikkötarkastelu paljastaa virheen. Laske sitten oikea aika minuutteina.",
+      "figure": "fy1-2/tap-bucket",
       "kind": [
         "error",
         "reasoning"
