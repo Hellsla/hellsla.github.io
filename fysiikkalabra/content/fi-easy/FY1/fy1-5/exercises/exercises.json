@@ -125,6 +125,7 @@
       "id": "fy1-5-L2-04",
       "level": 2,
       "text": "Salama välähtää. Ukkosen jyrähdys kuuluu $5{,}0\\,\\text{s}$ myöhemmin. Ääni etenee ilmassa tasaisesti nopeudella $343\\,\\text{m/s}$. Valon kulkuaika on hyvin pieni, joten se jätetään huomiotta. Kuinka kaukana salama iski? Vastaa kilometreinä.",
+      "figure": "fy1-5/lightning",
       "answer": 1.7,
       "unit": "km",
       "tolerance": 0.02
@@ -258,6 +259,7 @@
       "id": "fy1-5-L3-03",
       "level": 3,
       "text": "Kaksi ystävää lähtee koulun ovelta samaa suoraa katua pitkin samaan suuntaan. Ensimmäinen kävelee tasaisesti nopeudella $1{,}5\\,\\text{m/s}$. Toinen lähtee ovelta $40\\,\\text{s}$ myöhemmin pyörällä. Hän ajaa tasaisesti nopeudella $4{,}5\\,\\text{m/s}$. Kuinka kaukana ovelta pyöräilijä saavuttaa kävelijän?",
+      "figure": "fy1-5/two-friends",
       "answer": 90,
       "unit": "m",
       "tolerance": 0.02

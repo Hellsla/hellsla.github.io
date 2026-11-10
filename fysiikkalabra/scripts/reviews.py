@@ -5,6 +5,7 @@
   python scripts/reviews.py legacy <id>                write review/legacy.md: prototype content the teacher keeps visible
   python scripts/reviews.py scope <id> [--exercises]   per reviewer: none, delta or full, from what changed since its PASS
   python scripts/reviews.py carry <id> [--exercises]   record that a reviewer's PASS carries over a change it need not see
+  python scripts/reviews.py approve-figures <id> …     record that the teacher approved the lesson's figures as drawn now
   python scripts/reviews.py impact [<ref>]   which lessons a change since <ref> (default origin/main) touches, and
                                              which review each needs; shared simulations count for every user
   python scripts/reviews.py verify           CI: every lesson's state; exit 1 on a malformed report or an invalid carry
@@ -72,6 +73,7 @@ VISUAL = "visual"
 VISUAL_GATE = True    # the activation switch of the third mandatory review (teacher's brief 2026-10-31, module docstring)
 BASELINE = ROOT / "docs" / "visual-baseline.tsv"   # what was published before the gate: hash-bound, rows only ever removed
 BASELINE_COLS = ["kind", "lang", "id", "part", "hash", "date"]
+TEACHER_FIGURES = ROOT / "docs" / "teacher-figures.tsv"   # figures the teacher approved as drawn (teacher 2026-11-10)
 CONTENT = ("meta.json", "lesson.md", "exercises.json", "solutions.md", "answers.py", "exit-ticket.json", "sim.js", "sim-spec.md", "inquiry.json")
 EXERCISE_CONTENT = ("exercises.json", "solutions.md", "answers.py")
 LESSON_CONTENT = tuple(n for n in CONTENT if n not in EXERCISE_CONTENT) + ("lesson-answers.py",)
@@ -107,6 +109,7 @@ RULES = {                       # category: (science, pedagogy, visual)
     "illustration":   ("none",  "delta", "delta"),   # an illustration (data-fig="hero" or "scene"): no text, no physics claim (teacher 2026-10-26)
     "core-mark":      ("none",  "none", "none"),    # an exercise or lesson activity marked core (`"core": true`) or unmarked, nothing else: the module's core path as a whole is reviewed in docs/core-path/ (teacher 2026-11-05)
     "paragraphs":     ("none",  "none", "none"),    # a task text cut into paragraphs (a blank line, "\\n\\n" in the JSON string), its words unchanged: build.exercise_text renders them, check_layout checks them (teacher 2026-11-04)
+    "teacher-figure": ("none",  "none", "none"),    # a figure the teacher approved as drawn (docs/teacher-figures.tsv, its exact Finnish SVG), its words in a translation, a task given it by "figure": the layout is check_layout's (teacher 2026-11-10)
     "split":          ("none",  "none", "none"),    # passed as one lesson before the split; this part's files moved, unchanged (answers.py: line for line)
 }
 WHY = {"core-mark": "exercises or activities marked core or unmarked, nothing else", "paragraphs": "a task text cut into paragraphs, its words unchanged", "photo": "a licensed illustration photograph added, moved or recaptioned", "typography": "formulas re-set (spacing, fraction style, decimal comma) or a symbol set as maths, or blank lines, without a change of meaning", "tests": "simulation tests added or tightened", "comments": "comments only", "style": "figure or sim styling only",
@@ -124,6 +127,7 @@ WHY = {"core-mark": "exercises or activities marked core or unmarked, nothing el
        "experiment": "an experiment setup, correct option or numeric answer in inquiry.json changed",
        "simulation": "the simulation's code changed", "figure": "a figure or picture changed",
        "illustration": "the illustrations only",
+       "teacher-figure": "figures the teacher approved as drawn (docs/teacher-figures.tsv)",
        "split": "the exercises moved to their own folder, every file as it was passed (answers.py split line for line)"}
 
 
@@ -778,6 +782,105 @@ def split_from(old, new):
 VECTOR = re.compile(r"\\(?:mathbf|vec)\{([A-Za-z])\}")
 
 
+# ------------------------------------------------------------------ figures the teacher approved (teacher 2026-11-10)
+# "en tiedä miksi arviointeja pitäisi suorittaa jos vain kuva vaihdetaan. kuvat olen itse hyväksynyt" and "täysin uudet
+# kuvat voi tarkistaa asettelun osalta, mutta nekään eivät pedagogista tai fysikaalista arviota tarvitse": a figure whose
+# Finnish drawing, exactly as it is now, has a row in docs/teacher-figures.tsv is the category "teacher-figure", which
+# no reviewer must see (check_layout.py checks the page it sits on). The row holds the hash of the rendered Finnish SVG,
+# so any later change to the drawing, or to the shared style it is drawn with, needs a new approval or the reviews.
+
+def figure_hash(fid):
+    """Hash of figure `fid` as figures.py draws it now in Finnish (what an approval row names)."""
+    return hashlib.sha256(figcat.render(fid).encode()).hexdigest()[:16]
+
+
+@functools.lru_cache(maxsize=None)
+def teacher_figures():
+    """{figure id: set of approved hashes} from docs/teacher-figures.tsv."""
+    out = collections.defaultdict(set)
+    if TEACHER_FIGURES.is_file():
+        for l in TEACHER_FIGURES.read_text().splitlines():
+            c = l.split("\t")
+            if len(c) >= 3 and not l.startswith(("#", "date\t")): out[c[1]].add(c[2])
+    return out
+
+
+@functools.lru_cache(maxsize=None)
+def approved(fid):
+    """True when figure `fid`, as the working tree draws it, is one the teacher approved."""
+    rows = teacher_figures().get(fid)
+    if not rows: return False
+    try: return figure_hash(fid) in rows
+    except Exception: return False
+
+
+def approve_figures(lid):
+    """Append a row for every figure of lesson `lid` (its figures.py, as drawn now) that has none for its current drawing."""
+    rows = teacher_figures(); folder = find_lesson(lid)
+    mod = figcat.module(str(courses.code_dir(folder)))
+    new = [(f"{lid}/{name}", figure_hash(f"{lid}/{name}")) for name in getattr(mod, "FIGURES", {})]
+    new = [(fid, h) for fid, h in new if h not in rows.get(fid, set())]
+    if not TEACHER_FIGURES.is_file():
+        TEACHER_FIGURES.write_text("# Figures the teacher approved as drawn (teacher 2026-11-10; scripts/reviews.py \"figures the teacher approved\").\n"
+                                   "# One row per approved drawing: the hash of its Finnish SVG (reviews.py figure_hash). Written by\n"
+                                   "# `python scripts/reviews.py approve-figures <id>` only after the teacher has seen and approved the figures.\n"
+                                   "date\tfigure\thash\n")
+    with TEACHER_FIGURES.open("a") as f:
+        for fid, h in new: f.write(f"{datetime.date.today()}\t{fid}\t{h}\n")
+    teacher_figures.cache_clear(); approved.cache_clear()
+    print(f"{lid}: {len(new)} figure(s) recorded as approved")
+
+
+SVG_BLOCK = re.compile(r'<svg\b[^>]*\bdata-fig="([^"]+)".*?</svg>', re.S)
+FIG_REF_LINE = re.compile(r'^\s*"figure":\s*"([^"]+)",?$')
+
+
+def _strip_approved_svgs(text, oid):
+    """lesson.md with each approved figure's SVG reduced to a placeholder naming it."""
+    if not text: return text
+    return SVG_BLOCK.sub(lambda m: f'<svg data-fig="{m.group(1)}" data-approved=""></svg>' if approved(f"{oid}/{m.group(1)}") else m.group(0), text)
+
+
+def _approved_texts(oid):
+    """The Finnish words drawn in the approved figures of owner `oid` (what figures.json translates)."""
+    try: mod = figcat.module(str(figcat.owner(oid)[0]))
+    except Exception: return ""
+    return html.unescape("\n".join(figcat.render(f"{oid}/{n}") for n in getattr(mod, "FIGURES", {}) if approved(f"{oid}/{n}")))
+
+
+def _strip_approved_translations(old, new, oid):
+    """(old, new) figures.json views without the entries of approved figures' words and without entries dropped since
+    old (a translation of a text no longer drawn: check_i18n.py fails a drawn text left without one)."""
+    try: a, b = json.loads(old), json.loads(new)
+    except (TypeError, json.JSONDecodeError): return old, new
+    drawn = _approved_texts(oid)
+    keep = lambda d, other: {k: v for k, v in d.items() if not (k in drawn) and (other is None or k in other)}
+    a2, b2 = keep(a, b), keep(b, None)
+    return json.dumps(a2, indent=1, ensure_ascii=False), json.dumps(b2, indent=1, ensure_ascii=False)
+
+
+def _strip_approved_refs(text):
+    """exercises.json view without the "figure" lines naming approved figures, trailing commas dropped (a key added
+    last moves the comma of the line before it)."""
+    if not text: return text
+    return "\n".join(l.rstrip(",") for l in text.splitlines() if not ((m := FIG_REF_LINE.match(l)) and approved(m.group(1))))
+
+
+def _approved_change(rel, a, b, oid):
+    """(a, b, taken): the views with the approved figures' part of the change taken out, and whether there was one."""
+    if rel.endswith("/lesson.md"):
+        a2, b2 = _strip_approved_svgs(a, oid), _strip_approved_svgs(b, oid)
+        return a2, b2, (a2, b2) != (a, b)
+    if rel.endswith("/figures.json") and a and b:
+        a2, b2 = _strip_approved_translations(a, b, rel.split("/")[-2])
+        return a2, b2, (a2, b2) != (a, b)
+    if rel.endswith("/exercises.json") and a and b:
+        refs = lambda t: [l.strip().rstrip(",") for l in t.splitlines() if (m := FIG_REF_LINE.match(l)) and approved(m.group(1))]
+        if refs(a) == refs(b): return a, b, False
+        return _strip_approved_refs(a), _strip_approved_refs(b), True
+    return a, b, False
+
+
 def changes(folder, base, part="lesson", split=False):
     """(categories, unified diff, changed line count) of `part` between commit `base` and the working tree, over every
     source its hash covers, as the base saw them and as they are now. Formatting the hash ignores is not a change here
@@ -795,6 +898,15 @@ def changes(folder, base, part="lesson", split=False):
             if ra != rb and split_from(ra, rb): diff.append(f"--- {rel}: taken line for line from answers.py"); continue
         a, b = _view(ra, rel, binary), _view(rb, rel, binary)
         if a == b: continue
+        if rel.startswith("figure:") and approved(rel[7:]):     # an approved figure a task refers to
+            cats.add("teacher-figure"); diff.append(f"--- {rel}: drawing approved by the teacher"); continue
+        if not binary and TEACHER_FIGURES.is_file():
+            a2, b2, took = _approved_change(rel, a, b, folder.name)
+            if took:
+                cats.add("teacher-figure"); diff.append(f"--- {rel}: figures approved by the teacher")
+                if a2 == b2: continue
+                if rel.endswith("/lesson.md"): ra, rb = a2, b2
+                a, b = a2, b2
         if rel.startswith("tests/sims/"): cats.add(test_change(rel, base)); diff.append(f"--- {rel}: simulation assertions changed"); continue
         if binary: cats.add("simulation" if "/sims/" in f"/{rel}" else "photo" if _is_photo(rel) else "figure"); diff.append(f"--- {rel}: binary file {'added' if a is None else 'removed' if b is None else 'changed'}"); continue
         lines = list(difflib.unified_diff((a or "").splitlines(), (b or "").splitlines(), f"a/{rel}", f"b/{rel}", lineterm="", n=2))
@@ -1064,6 +1176,7 @@ if __name__ == "__main__":
     elif a[0] == "legacy": write_legacy(find_lesson(a[1]))
     elif a[0] == "scope": print_scope(find_lesson(a[1]), part)
     elif a[0] == "carry": carry(find_lesson(a[1]), part)
+    elif a[0] == "approve-figures": [approve_figures(x) for x in a[1:]]
     elif a[0] == "impact": impact(a[1] if len(a) > 1 else "origin/main")
     elif a[0] == "baseline": baseline_init() if a[1:2] == ["init"] else baseline_report()
     elif a[0] == "verify":

@@ -13,6 +13,7 @@
       "id": "fy1-6-L1-02",
       "level": 1,
       "text": "Omena irtoaa oksasta ja putoaa levosta maahan $0{,}80\\,\\text{s}$:ssa. Ilmanvastus jätetään huomiotta. Mikä on omenan nopeus maahan osuessa?",
+      "figure": "fy1-6/apple",
       "answer": 7.848,
       "unit": "m/s",
       "tolerance": 0.02
@@ -245,6 +246,7 @@
       "id": "fy1-6-L2-07",
       "level": 2,
       "text": "Oppilaat mittaavat putoamiskiihtyvyyden kahdella valoportilla. Portit ovat pystysuunnassa toistensa alapuolella. Levosta pudotetun $5{,}0\\,\\text{cm}$ pitkän kappaleen nopeus saadaan kummassakin portissa kappaleen pituudesta ja ajasta $\\Delta t_\\text{valo}$, jonka valo on katkennut.\n\nPudotushetkeä ei tunneta tarkasti. Kello mittaa hetket $t$, jolloin valon katkos on ajallisesti puolivälissä. Silloin kappaleen nopeus on yhtä suuri kuin sen keskinopeus katkoksen aikana.\n\nLaske putoamiskiihtyvyys taulukon mittauksista. Selitä, miksi $g$ saadaan kahden portin nopeuksista, vaikka pudotushetki ei ole tiedossa.",
+      "figure": "fy1-6/light-gates",
       "kind": [
         "data",
         "model"

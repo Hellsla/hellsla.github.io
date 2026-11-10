@@ -106,6 +106,7 @@
       "id": "fy1-7-L1-08",
       "level": 1,
       "text": "The volume of a lead sinker for a fishing line is $5.00\\,\\text{cm}^3$. The density of lead is $11.3\\,\\text{g/cm}^3$. What is the mass of the sinker? Give your answer in grams.",
+      "figure": "fy1-7/sinker",
       "kind": [
         "model"
       ],
@@ -119,6 +120,7 @@
       "id": "fy1-7-L2-01",
       "level": 2,
       "text": "The dimensions of a gold ingot are $10.0\\,\\text{cm} \\cdot 5.0\\,\\text{cm} \\cdot 2.0\\,\\text{cm}$. The density of gold is $19\\,300\\,\\text{kg/m}^3$. What is the mass of the ingot? Give your answer in kilograms.",
+      "figure": "fy1-7/gold-bar",
       "answer": 1.9,
       "unit": "kg",
       "tolerance": 0.02

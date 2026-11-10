@@ -99,6 +99,7 @@
       "id": "fy1-1-L1-09",
       "level": 1,
       "text": "Assume an eclipse in which the Moon just barely covers the Sun completely. The Sun and the Moon then look approximately equally large in the sky. The distance of the Moon from the Earth is $3.84\\cdot10^{8}\\,\\text{m}$, the diameter of the Moon is $3.47\\cdot10^{6}\\,\\text{m}$ and the diameter of the Sun is $1.39\\cdot10^{9}\\,\\text{m}$.\n\nAn object looks equally large when its distance is as many times the distance of the Moon as its diameter is times the diameter of the Moon. Which value is a reasonable estimate for the distance of the Earth from the Sun?",
+      "figure": "fy1-1/eclipse",
       "kind": [
         "concept",
         "model"
@@ -333,6 +334,7 @@
       "id": "fy1-1-L3-04",
       "level": 3,
       "text": "Estimate how many raindrops fall on a football pitch during one rain shower.\n\nAssumptions: the shower increases the thickness of the water layer on the pitch at the rate $5.0\\,\\text{mm/h}$ and lasts $10\\,\\text{min}$, the area of the pitch is $6.0\\cdot10^{3}\\,\\text{m}^2$ and every drop is a sphere with a diameter of $2.0\\,\\text{mm}$. The volume of a sphere is $V = 4\\pi r^{3}/3$.\n\nHow many drops fall on the pitch, in billions? Which of the assumptions affects the result most if its value is $20\\,\\%$ too large, and why? Justify by calculation.",
+      "figure": "fy1-1/rain-field",
       "kind": [
         "reasoning",
         "model"

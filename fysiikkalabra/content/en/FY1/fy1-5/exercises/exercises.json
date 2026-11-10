@@ -125,6 +125,7 @@
       "id": "fy1-5-L2-04",
       "level": 2,
       "text": "After a flash of lightning, the rumble of thunder is heard $5.0\\,\\text{s}$ later. Sound travels in air uniformly at $343\\,\\text{m/s}$, and the travel time of light is so small that it is ignored. How far away did the lightning strike? Give the answer in kilometres.",
+      "figure": "fy1-5/lightning",
       "answer": 1.7,
       "unit": "km",
       "tolerance": 0.02
@@ -258,6 +259,7 @@
       "id": "fy1-5-L3-03",
       "level": 3,
       "text": "Two friends set off from the school door along the same straight street in the same direction. The first walks uniformly at $1.5\\,\\text{m/s}$. The second leaves the door $40\\,\\text{s}$ later on a bicycle and rides uniformly at $4.5\\,\\text{m/s}$. How far from the door does the cyclist catch up with the walker?",
+      "figure": "fy1-5/two-friends",
       "answer": 90,
       "unit": "m",
       "tolerance": 0.02
