@@ -159,7 +159,7 @@ def bank(T, items, lang=i18n.SOURCE):
             + f'<button type="reset" class="bank-reset">{T("investigation.filter_reset")}</button>'
             f'<p class="bank-count" id="bank-count" aria-live="polite" data-template="{esc(T("investigation.filter_count"))}"></p></form>')
     order = {t: n for n, t in enumerate(TOPICS)}    # cards under their topics (teacher 2026-11-04, scripts/cardgrid.py), each topic
-    rows = ""; seen = set()                         # in the course's order; the filter moves a topic's label to its first card shown
+    rows = ""; seen = set()                         # in the course's order
     for i, d in sorted(items, key=lambda x: order[x[1]["topic"]]):
         fl, el = levels(d, "physics"), levels(d, "experiment")
         words = " ".join([d["title"], d["question"]] + d.get("equipment", [])).lower()
@@ -167,8 +167,11 @@ def bank(T, items, lang=i18n.SOURCE):
                f'<span class="bank-level" title="{T("investigation.level_experiment")}">{span(el)}</span>')
         meta = (f'<span class="bank-meta"><span class="bank-modes">{", ".join(T("investigation.mode_short_" + m) for m in d["modes"])}</span>'
                 f'<span class="bank-mods">{T("investigation.builds_on")} {", ".join(d.get("modules", []))}</span></span>')
-        lab = "" if d["topic"] in seen else cardgrid.label(T("investigation.topic_" + d["topic"]), attrs=f' data-topic-label="{d["topic"]}"')
-        seen.add(d["topic"])
+        if d["topic"] not in seen:    # the topic on a row of its own with the count of its investigations (teacher 2026-11-10); the filter hides a topic with none shown and keeps the count (invfilter.js)
+            n = sum(1 for _, x in items if x["topic"] == d["topic"]); one, other = T("investigation.row_count")["one"], T("investigation.row_count")["other"]
+            rows += cardgrid.theme_row(T("investigation.topic_" + d["topic"]), f'<span data-topic-count data-one="{esc(one)}" data-other="{esc(other)}">{T.count("investigation.row_count", n)}</span>',
+                                       attrs=f' data-topic-label="{d["topic"]}"')
+        lab = ""; seen.add(d["topic"])
         src = folder(i, lang) / "investigation.md"
         rows += cardgrid.card(num, esc(d["title"]), f"{i}.html", esc(d["question"]), cardgrid.hero(src.read_text() if src.is_file() else ""), meta,
                               " bank-item", f' data-topic="{d["topic"]}" data-f="{" ".join(fl)}" data-e="{" ".join(el)}" '

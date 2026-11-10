@@ -41,11 +41,13 @@ def label(heading, attrs=""):
     return f'<h3 class="ch-theme"{attrs}>{heading}</h3>'
 
 
-def theme_row(heading, note=""):
+def theme_row(heading, note="", attrs="", h_attrs=""):
     """A theme on a row of its own over its cards (teacher 2026-11-10, variant B of the module page comparison; the
-    module pages FY1-FY8): its name and, as note, its chapters ("luvut 7–9"). The row spans the grid, so every theme
-    starts a new row of tiles and its start, extent and end show without reading the tiles."""
-    return f'<li class="ch-theme-row"><h3 class="ch-theme">{heading}</h3>' + (f'<span class="ch-range">{note}</span>' if note else "") + "</li>"
+    module pages FY1-FY8, then FY9, FY14 and the FY10 bank): its name and, as note (HTML), what it holds ("luvut 7–9",
+    "3 oppituntia", "6 tutkimusta"). The row spans the grid, so every theme starts a new row of cards and its start,
+    extent and end show without reading the cards. attrs go on the <li> (the bank's filter data), h_attrs on the
+    heading (its language)."""
+    return f'<li class="ch-theme-row"{attrs}><h3 class="ch-theme"{h_attrs}>{heading}</h3>' + (f'<span class="ch-range">{note}</span>' if note else "") + "</li>"
 
 
 def card(num, title, href=None, why="", svg="", tags="", cls="", attrs="", lab=""):
