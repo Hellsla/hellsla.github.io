@@ -298,7 +298,11 @@
     "sa_goals_title": "Arvioi, mitä opit",
     "sa_goals_lead": "Nämä tavoitearviot tulevat mukaan luvun tehtävien palautukseen.",
     "sa_goal_prefix": "Opin",
-    "sa_x_short": "Ei vielä"
+    "sa_x_short": "Ei vielä",
+    "sa_d_short": "Harjoittelen vielä",
+    "sa_c_short": "Osaan osittain",
+    "sa_b_short": "Osaan",
+    "sa_a_short": "Osaan opettaa"
   },
   "js": {
     "split_open": "Avaa tehtävät teorian viereen",

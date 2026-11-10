@@ -739,11 +739,12 @@ SA_LEVELS = ("d", "c", "b", "a", "x")   # reddish on the left, dark green on the
 
 
 def sa_fieldset(chapter, sid, label, md_label, legend):
-    """One self-assessment row of Tarkista osaamisesi (teacher 2026-11-06): the five levels as radio buttons, the
-    chosen level's description under them (inquiry.js part 8). sid: the item's id in the submission file
+    """One self-assessment row of Tarkista osaamisesi (teacher 2026-11-06): the five levels as radio buttons, each
+    with its short name in view (design audit 2026-11-10: a colour alone told a touch-screen reader nothing before the
+    choice), the chosen level's full description under them (inquiry.js part 8). sid: the item's id in the submission file
     (an activity id, or "tavoite-<n>"); label: the item's plain text for the teacher's grading view."""
     opts = "".join(f'<label class="sa-opt" data-level="{v}" title="{esc(T("inquiry.sa_" + v))}"><input type="radio" name="sa-{esc(sid)}" value="{v}">'
-                   f'<span class="sa-sw" aria-hidden="true">{T("inquiry.sa_x_short") if v == "x" else ""}</span><span class="sa-text">{T("inquiry.sa_" + v)}</span></label>' for v in SA_LEVELS)
+                   f'<span class="sa-sw" aria-hidden="true">{T("inquiry.sa_" + v + "_short")}</span><span class="sa-text">{T("inquiry.sa_" + v)}</span></label>' for v in SA_LEVELS)
     return (f'<fieldset class="sa-rate" data-chapter="{esc(chapter)}" data-sa="{esc(sid)}" data-label="{esc(label)}">'
             f'<legend>{md_label if md_label else legend}</legend><div class="sa-opts">{opts}</div><p class="sa-desc" aria-live="polite"></p></fieldset>')
 

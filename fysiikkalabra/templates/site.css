@@ -1403,16 +1403,18 @@ html #exercises .ex-focus .pad .rich-text-editor-toolbar-root>div,html.tasks-spl
 .sa-opts [data-level=x]{--sa:var(--sa-x);--sa-on:#14171e}
 .sa-rate{margin:1rem 0 0;padding:.7rem 0 0;border:0;border-top:1px dashed var(--line);min-width:0}
 .sa-rate legend{float:left;width:100%;margin:0 0 .45rem;padding:0;font-size:var(--fs-body);color:var(--ink)}
-.sa-opts{clear:both;display:flex;align-items:stretch;gap:3px;max-width:26rem}
-.sa-opt{position:relative;flex:1 1 0;display:flex;min-height:44px;cursor:pointer}
-.sa-opt[data-level=d] .sa-sw{border-radius:999px 0 0 999px}.sa-opt[data-level=a] .sa-sw{border-radius:0 999px 999px 0}
-.sa-opt[data-level=x]{flex:0 0 auto;margin-left:.6rem}
-.sa-opt[data-level=x] .sa-sw{border-radius:999px;padding:0 .9rem;color:var(--ink-2);font:600 var(--fs-ui)/1 var(--sans);white-space:nowrap}
+/* Named levels (design audit 2026-11-10, P0-2): each level is a chip with its short name, quiet until chosen; the
+   chosen one takes its level's colour (the same colours as the module page's fingerprint) and a tick, so the colour is
+   never the only sign. Two chips in a row on a phone, four from about 36rem; "Ei vielä" stays apart on its own row. */
+.sa-opts{clear:both;display:grid;grid-template-columns:repeat(auto-fit,minmax(8.5rem,1fr));gap:6px;max-width:38rem}
+.sa-opt{position:relative;display:flex;min-height:44px;cursor:pointer}
+.sa-opt[data-level=x]{grid-column:1/-1;justify-self:start}
 .sa-opt input{position:absolute;inset:0;opacity:0;width:100%;height:100%;margin:0;cursor:pointer;z-index:1}
-.sa-sw{flex:1;display:flex;align-items:center;justify-content:center;background:var(--sa);transition:opacity .15s}
-.sa-opts:has(input:checked) .sa-sw{opacity:.4}
-.sa-opt input:checked+.sa-sw{opacity:1;box-shadow:inset 0 0 0 3px var(--surface),0 0 0 2px var(--ink)}
-.sa-opt:not([data-level=x]) input:checked+.sa-sw::after{content:"\2713";color:var(--sa-on);font:700 1.15rem/1 var(--sans)}
+.sa-sw{flex:1;display:flex;align-items:center;justify-content:center;gap:.35em;padding:.45rem .7rem;text-align:center;background:var(--surface);color:var(--ink);border:1.5px solid var(--ink-2);border-radius:10px;font:600 var(--fs-ui)/1.25 var(--sans);transition:background-color .15s,color .15s}
+.sa-opt[data-level=x] .sa-sw{border-color:var(--line);color:var(--ink-2);border-radius:999px;padding:0 .9rem;white-space:nowrap}
+.sa-opt:hover .sa-sw{background:var(--bg-tint)}
+.sa-opt input:checked+.sa-sw{background:var(--sa);border-color:var(--sa);color:var(--sa-on)}
+.sa-opt input:checked+.sa-sw::before{content:"\2713";font-weight:700}
 .sa-opt input:focus-visible+.sa-sw{outline:3px solid var(--accent);outline-offset:3px}
 .sa-opt .sa-text{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .sa-desc{margin:.45rem 0 0;font-size:var(--fs-inner);color:var(--ink-2);min-height:1.5em}

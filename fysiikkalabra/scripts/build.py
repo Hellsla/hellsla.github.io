@@ -186,7 +186,7 @@ def progress_view(themes, given, block):
     assigned tasks (FY3) the counter is over them and their Tehty marks; otherwise over every task of the module, a
     task with a saved solution counting as done (FY1-FY9, no marks on the tasks)."""
     strings = {k: v for k, v in T("js").items() if k.startswith(("done_", "progress_", "palautus_", "work_", "selfmap_"))}
-    strings.update({k: v for k, v in T("inquiry").items() if k in ("sa_a", "sa_b", "sa_c", "sa_d", "sa_x", "sa_x_short")})
+    strings.update({k: v for k, v in T("inquiry").items() if k in ("sa_a", "sa_b", "sa_c", "sa_d", "sa_x", "sa_x_short", "sa_a_short", "sa_b_short", "sa_c_short", "sa_d_short")})
     prog = (f'<section class="my-progress" id="oma-eteneminen" hidden><h2>{T("js.progress_title")}</h2>'
             '<p class="pm-count visually-hidden" aria-live="polite"></p><div class="pm-bar" role="progressbar" aria-valuemin="0"><span></span></div>'
             f'<div class="pm-graph" role="group" aria-label="{T("js.progress_graph")}"><div class="pm-chart"></div></div>'
