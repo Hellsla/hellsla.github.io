@@ -239,7 +239,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-1:check-1",
-     "number": "Itsearvio: 2. Käsitetehtävä",
+     "number": "Testaa ja arvioi: 2. Käsitetehtävä",
      "level": 0,
      "lesson": true,
      "html": "<fieldset class=\"choice list\"><p>Sama kappale ripustetaan samaan voimamittariin ensin Maassa ja sitten Marsissa. Marsissa lukema on pienempi. Mikä selitys on oikein?</p><ul class=\"choices\"><li><label><span>Marsin kylmyys jäykistää jousen, joten se venyy vähemmän.</span></label></li><li><label><span>Kappaleen massa on Marsissa pienempi.</span></label></li><li><label><span>Marsin ja kappaleen välinen vuorovaikutus on heikompi kuin Maan ja kappaleen.</span></label></li><li><label><span>Marsin ohut ilmakehä painaa kappaletta vähemmän alaspäin.</span></label></li></ul><div class=\"choice-actions\"></div><output></output></fieldset>",
@@ -247,7 +247,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-1:check-c2",
-     "number": "Itsearvio: 3. Käsitetehtävä: Massa ja paino arkikielessä",
+     "number": "Testaa ja arvioi: 3. Käsitetehtävä: Massa ja paino arkikielessä",
      "level": 0,
      "lesson": true,
      "html": "<fieldset class=\"choice list\"><p>Kaupan vaaka näyttää pullolliselle vettä lukeman <span class=\"math-glue\"><span><math><semantics><mrow><mn>1</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>5</mn> <mtext>kg</mtext></mrow></semantics></math></span>.</span> Mikä seuraavista väitteistä on fysiikan kannalta oikein?</p><ul class=\"choices\"><li><label><span>Veden massa on <span><math><semantics><mrow><mn>1</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>5</mn> <mtext>kg</mtext></mrow></semantics></math></span> ja paino Maassa noin <span class=\"math-glue\"><span><math><semantics><mrow><mn>15</mn> <mtext>N</mtext></mrow></semantics></math></span>.</span></span></label></li><li><label><span>Veden massa on <span><math><semantics><mrow><mn>15</mn> <mtext>N</mtext></mrow></semantics></math></span> ja paino <span class=\"math-glue\"><span><math><semantics><mrow><mn>1</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>5</mn> <mtext>kg</mtext></mrow></semantics></math></span>.</span></span></label></li><li><label><span>Veden massa on <span><math><semantics><mrow><mn>1</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>5</mn> <mtext>kg</mtext></mrow></semantics></math></span> ja paino <span class=\"math-glue\"><span><math><semantics><mrow><mn>1</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>5</mn> <mtext>N</mtext></mrow></semantics></math></span>,</span> koska sama luku kertoo molemmat.</span></label></li><li><label><span>Veden paino on <span class=\"math-glue\"><span><math><semantics><mrow><mn>1</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>5</mn> <mtext>kg</mtext></mrow></semantics></math></span>,</span> koska kilogramma on painon yksikkö.</span></label></li></ul><div class=\"choice-actions\"></div><output></output></fieldset>",
@@ -255,7 +255,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-1:check-2",
-     "number": "Itsearvio: 4. Laskutehtävä: Kuvaaja ja laskeminen",
+     "number": "Testaa ja arvioi: 4. Laskutehtävä: Kuvaaja ja laskeminen",
      "level": 0,
      "lesson": true,
      "html": "<div class=\"numeric\"><p class=\"task\">Tuntemattomalla taivaankappaleella mitattiin painoja eri massoille. <span><math><semantics><mrow><mo stretchy=\"false\">(</mo><mi>m</mi><mo separator=\"true\">,</mo><mi>G</mi><mo stretchy=\"false\">)</mo></mrow></semantics></math></span>-kuvaaja on origon kautta kulkeva suora, joka kulkee pisteen <span><math><semantics><mrow><mo stretchy=\"false\">(</mo><mn>50</mn> <mtext>kg</mtext><mo separator=\"true\">,</mo><mn>440</mn> <mtext>N</mtext><mo stretchy=\"false\">)</mo></mrow></semantics></math></span> kautta. Mikä on putoamiskiihtyvyys tällä taivaankappaleella? Vastaa yksikössä m/s².</p></div>",
@@ -263,7 +263,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-1:check-3",
-     "number": "Itsearvio: 5. Selitystehtävä: Selitä ja siirrä",
+     "number": "Testaa ja arvioi: 5. Selitystehtävä: Selitä ja siirrä",
      "level": 0,
      "lesson": true,
      "html": "<div class=\"explain\"><p class=\"task\">Selitä omin sanoin, miksi astronautti painaa Kuussa vain noin kuudesosan siitä, mitä hän painaa Maassa, vaikka hänestä ei ole kadonnut mitään. Käytä käsitteitä massa, paino ja vuorovaikutus sekä yksiköitä.</p><div class=\"choice-actions\"></div></div>",
@@ -531,7 +531,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-2:check-1",
-     "number": "Itsearvio: 2. Käsitetehtävä",
+     "number": "Testaa ja arvioi: 2. Käsitetehtävä",
      "level": 0,
      "lesson": true,
      "html": "<fieldset class=\"choice list\"><p>Jousta venytetään ensin <span class=\"math-glue\"><span><math><semantics><mrow><mn>0</mn> <mtext>cm</mtext></mrow></semantics></math></span>:</span>stä <span class=\"math-glue\"><span><math><semantics><mrow><mn>10</mn> <mtext>cm</mtext></mrow></semantics></math></span>:</span>iin ja sitten <span class=\"math-glue\"><span><math><semantics><mrow><mn>10</mn> <mtext>cm</mtext></mrow></semantics></math></span>:</span>stä <span class=\"math-glue\"><span><math><semantics><mrow><mn>20</mn> <mtext>cm</mtext></mrow></semantics></math></span>:</span>iin. Voima kasvaa tasaisesti venymän mukana. Jälkimmäinen venytys vaatii ensimmäiseen verrattuna</p><ul class=\"choices\"><li><label><span>saman työn, koska venymä kasvaa yhtä paljon.</span></label></li><li><label><span>kaksinkertaisen työn, koska voima on lopussa kaksinkertainen.</span></label></li><li><label><span>kolminkertaisen työn.</span></label></li></ul><div class=\"choice-actions\"></div><output></output></fieldset>",
@@ -539,7 +539,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-2:check-c2",
-     "number": "Itsearvio: 3. Käsitetehtävä: Kantaminen ja työ",
+     "number": "Testaa ja arvioi: 3. Käsitetehtävä: Kantaminen ja työ",
      "level": 0,
      "lesson": true,
      "html": "<fieldset class=\"choice list\"><p>Nostat laatikon, jonka paino on <span class=\"math-glue\"><span><math><semantics><mrow><mn>98</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>1</mn> <mtext>N</mtext></mrow></semantics></math></span>,</span> tasaisella nopeudella <span><math><semantics><mrow><mn>1</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>0</mn> <mtext>m</mtext></mrow></semantics></math></span> ylös. Sen jälkeen kannat sitä <span><math><semantics><mrow><mn>5</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>0</mn> <mtext>m</mtext></mrow></semantics></math></span> vaakasuoraan tasaisella vauhdilla. Kuinka suuren työn kannatteleva voimasi tekee yhteensä?</p><ul class=\"choices\"><li><label><span>Noin <span class=\"math-glue\"><span><math><semantics><mrow><mn>98</mn> <mtext>J</mtext></mrow></semantics></math></span>.</span></span></label></li><li><label><span><span class=\"math-glue\"><span><math><semantics><mrow><mn>0</mn> <mtext>J</mtext></mrow></semantics></math></span>,</span> koska laatikon vauhti ei muutu.</span></label></li><li><label><span>Noin <span class=\"math-glue\"><span><math><semantics><mrow><mn>490</mn> <mtext>J</mtext></mrow></semantics></math></span>,</span> koska kantaminen on raskaampaa kuin nostaminen.</span></label></li><li><label><span>Noin <span class=\"math-glue\"><span><math><semantics><mrow><mn>590</mn> <mtext>J</mtext></mrow></semantics></math></span>.</span></span></label></li></ul><div class=\"choice-actions\"></div><output></output></fieldset>",
@@ -547,7 +547,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-2:check-2",
-     "number": "Itsearvio: 4. Laskutehtävä: Kuvaaja ja laskeminen",
+     "number": "Testaa ja arvioi: 4. Laskutehtävä: Kuvaaja ja laskeminen",
      "level": 0,
      "lesson": true,
      "html": "<div class=\"numeric\"><p class=\"task\"><span><math><semantics><mrow><mo stretchy=\"false\">(</mo><mi>s</mi><mo separator=\"true\">,</mo><mi>F</mi><mo stretchy=\"false\">)</mo></mrow></semantics></math></span>-kuvaajassa liikkeen suuntainen voima on <span><math><semantics><mrow><mn>30</mn> <mtext>N</mtext></mrow></semantics></math></span> välillä 0–<span><math><semantics><mrow><mn>4</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>0</mn> <mtext>m</mtext></mrow></semantics></math></span> ja laskee sitten tasaisesti nollaan välillä 4,0–<span class=\"math-glue\"><span><math><semantics><mrow><mn>8</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>0</mn> <mtext>m</mtext></mrow></semantics></math></span>.</span> Kuinka suuren työn voima tekee koko <span class=\"math-glue\"><span><math><semantics><mrow><mn>8</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>0</mn> <mtext>m</mtext></mrow></semantics></math></span>:</span>n matkalla? Vastaa jouleina.</p></div>",
@@ -555,7 +555,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-2:check-3",
-     "number": "Itsearvio: 5. Selitystehtävä: Selitä ja siirrä",
+     "number": "Testaa ja arvioi: 5. Selitystehtävä: Selitä ja siirrä",
      "level": 0,
      "lesson": true,
      "html": "<div class=\"explain\"><p class=\"task\">Selitä omin sanoin, miksi hissin moottori tekee saman työn riippumatta nostonopeudesta, mutta tarvitsee nopeammassa nostossa suuremman tehon. Käytä käsitteitä työ, teho ja yksiköitä.</p><div class=\"choice-actions\"></div></div>",
@@ -815,7 +815,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-3:check-1",
-     "number": "Itsearvio: 2. Käsitetehtävä",
+     "number": "Testaa ja arvioi: 2. Käsitetehtävä",
      "level": 0,
      "lesson": true,
      "html": "<fieldset class=\"choice list\"><p>Ilman lämpötila on <span class=\"math-glue\"><span><math><semantics><mrow><mn>0</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>.</span> Mitä mikromalli sanoo ilman hiukkasista?</p><ul class=\"choices\"><li><label><span>Hiukkaset ovat jäätyneet kiinni toisiinsa kuten vesi jäässä.</span></label></li><li><label><span>Hiukkaset ovat pysähtyneet, koska lämpötila on nolla.</span></label></li><li><label><span>Hiukkaset liikkuvat, ja niiden keskimääräinen liike-energia on verrannollinen kelvinlämpötilaan <span class=\"math-glue\"><span><math><semantics><mrow><mn>273</mn> <mtext>K</mtext></mrow></semantics></math></span>.</span></span></label></li><li><label><span>Hiukkaset liikkuvat vain, jos kaasua lämmitetään.</span></label></li></ul><div class=\"choice-actions\"></div><output></output></fieldset>",
@@ -823,7 +823,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-3:check-c2",
-     "number": "Itsearvio: 3. Käsitetehtävä: Lämpötilan kasvu",
+     "number": "Testaa ja arvioi: 3. Käsitetehtävä: Lämpötilan kasvu",
      "level": 0,
      "lesson": true,
      "html": "<fieldset class=\"choice list\"><p>Ilman lämpötila nousee <span class=\"math-glue\"><span><math><semantics><mrow><mn>10</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>:</span>sta <span class=\"math-glue\"><span><math><semantics><mrow><mn>20</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>:</span>een. Mitä tapahtuu hiukkasten keskimääräiselle liike-energialle?</p><ul class=\"choices\"><li><label><span>Se kaksinkertaistuu, koska lämpötilan lukuarvo kaksinkertaistuu.</span></label></li><li><label><span>Se kasvaa <span class=\"math-glue\"><span><math><semantics><mrow><mn>10</mn> <mi mathvariant=\"normal\">%</mi></mrow></semantics></math></span>,</span> koska lämpötila nousee kymmenellä asteella.</span></label></li><li><label><span>Se kasvaa noin <span class=\"math-glue\"><span><math><semantics><mrow><mn>3</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>5</mn> <mi mathvariant=\"normal\">%</mi></mrow></semantics></math></span>.</span></span></label></li></ul><div class=\"choice-actions\"></div><output></output></fieldset>",
@@ -831,7 +831,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-3:check-2",
-     "number": "Itsearvio: 4. Laskutehtävä: Taulukko ja ekstrapolointi",
+     "number": "Testaa ja arvioi: 4. Laskutehtävä: Taulukko ja ekstrapolointi",
      "level": 0,
      "lesson": true,
      "html": "<div class=\"numeric\"><p class=\"task\">Taulukossa ovat simulaation teoria-arvot paineelle (suhteellinen luku), kun tilavuus on 1,0&nbsp;dm³. Ne ovat mallin arvoja, eivät mittauksia.</p> <table> <thead> <tr> <th><span><math><semantics><mrow><mi>θ</mi></mrow></semantics></math></span> (°C)</th> <th>−123</th> <th>27</th> <th>177</th> </tr> </thead> <tbody> <tr> <td><span><math><semantics><mrow><mi>p</mi></mrow></semantics></math></span> (suht.)</td> <td>50</td> <td>100</td> <td>150</td> </tr> </tbody> </table> <p>Pisteet ovat samalla suoralla. Jatka suoraa ja määritä lämpötila, jossa paine olisi nolla. Vastaa celsiusasteina.</p></div>",
@@ -839,7 +839,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-3:check-3",
-     "number": "Itsearvio: 5. Selitystehtävä",
+     "number": "Testaa ja arvioi: 5. Selitystehtävä",
      "level": 0,
      "lesson": true,
      "html": "<div class=\"explain\"><p class=\"task\">Selitä mikromallin avulla, miksi lämpötilojen suhteita verrataan kelvineinä eikä celsiusasteina ja miksi kelvinlämpötila ei voi olla negatiivinen.</p><div class=\"choice-actions\"></div></div>",
@@ -1107,7 +1107,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-13:tarkistus-1",
-     "number": "Itsearvio: 2. Käsitetehtävä: Mitä epävarmuus kertoo",
+     "number": "Testaa ja arvioi: 2. Käsitetehtävä: Mitä epävarmuus kertoo",
      "level": 0,
      "lesson": true,
      "html": "<fieldset class=\"choice list\"><p>Ryhmän tulos on <span><math><semantics><mrow><msub><mi>θ</mi><mn>0</mn></msub><mo>=</mo><mo>−</mo><mn>276</mn><mo>±</mo><mn>18</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>⁠. Mitä <span><math><semantics><mrow><mo>±</mo><mn>18</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span> tarkoittaa?</p><ul class=\"choices\"><li><label><span>Mittauksessa tehtiin 18 virhettä.</span></label></li><li><label><span>Todellinen nollapiste on todennäköisesti välillä <span><math><semantics><mrow><mo>−</mo><mn>294</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span> … <span class=\"math-glue\"><span><math><semantics><mrow><mo>−</mo><mn>258</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>,</span> koska pisteisiin sopivat suorat osuvat nollapaineeseen tällä välillä.</span></label></li><li><label><span>Tulos on varmasti oikein, koska luku 18 on pieni.</span></label></li><li><label><span>Painemittari näytti jokaisessa pisteessä <span><math><semantics><mrow><mn>18</mn> <mtext>kPa</mtext></mrow></semantics></math></span> väärin.</span></label></li></ul><div class=\"choice-actions\"></div><output></output></fieldset>",
@@ -1115,7 +1115,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-13:check-c2",
-     "number": "Itsearvio: 3. Käsitetehtävä: Suora ja mittauspisteet",
+     "number": "Testaa ja arvioi: 3. Käsitetehtävä: Suora ja mittauspisteet",
      "level": 0,
      "lesson": true,
      "html": "<fieldset class=\"choice list\"><p>Ryhmä mittasi suljetun kaasun paineen kuudessa lämpötilassa ja piirsi pisteet <span><math><semantics><mrow><mo stretchy=\"false\">(</mo><mi>θ</mi><mo separator=\"true\">,</mo><mi>p</mi><mo stretchy=\"false\">)</mo></mrow></semantics></math></span>-koordinaatistoon. Mikään suora ei kulje kaikkien pisteiden kautta. Miten ryhmän kannattaa toimia, kun se jatkaa kuvaajaa nollapaineeseen?</p><ul class=\"choices\"><li><label><span>Yhdistetään pisteet murtoviivalla ja jatketaan sen viimeistä osaa nollapaineeseen, koska silloin kuvaaja kulkee jokaisen mittauspisteen kautta.</span></label></li><li><label><span>Piirretään yksi suora pisteiden joukon keskeltä niin, että se kulkee epävarmuusjanojen kautta, ja jatketaan sitä nollapaineeseen.</span></label></li><li><label><span>Mittaus on epäonnistunut, koska huolellisesti mitatut pisteet ovat aina täsmälleen samalla suoralla. Koko mittaus tehdään uudelleen.</span></label></li><li><label><span>Poistetaan suorasta eniten poikkeavia pisteitä, kunnes loput ovat täsmälleen samalla suoralla.</span></label></li></ul><div class=\"choice-actions\"></div><output></output></fieldset>",
@@ -1123,7 +1123,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-13:tarkistus-2",
-     "number": "Itsearvio: 4. Laskutehtävä: Nollapiste kahdesta pisteestä",
+     "number": "Testaa ja arvioi: 4. Laskutehtävä: Nollapiste kahdesta pisteestä",
      "level": 0,
      "lesson": true,
      "html": "<div class=\"numeric\"><p class=\"task\">Suoralta luetaan pisteet <span class=\"math-glue\"><span><math><semantics><mrow><mo stretchy=\"false\">(</mo><mn>15</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>0</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>;</span> <span><math><semantics><mrow><mn>108</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>0</mn> <mtext>kPa</mtext><mo stretchy=\"false\">)</mo></mrow></semantics></math></span> ja <span class=\"math-glue\"><span><math><semantics><mrow><mo stretchy=\"false\">(</mo><mn>95</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>0</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>;</span> <span class=\"math-glue\"><span><math><semantics><mrow><mn>137</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>0</mn> <mtext>kPa</mtext><mo stretchy=\"false\">)</mo></mrow></semantics></math></span>.</span> Määritä lämpötila, jossa suora antaa paineeksi nollan. Vastaa celsiusasteina.</p></div>",
@@ -1131,7 +1131,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-13:tarkistus-3",
-     "number": "Itsearvio: 5. Selitystehtävä: Selitä ja arvioi",
+     "number": "Testaa ja arvioi: 5. Selitystehtävä: Selitä ja arvioi",
      "level": 0,
      "lesson": true,
      "html": "<div class=\"explain\"><p class=\"task\">Miksi ekstrapoloinnilla saatu absoluuttisen nollapisteen arvo on epävarmempi kuin mitkään mittausalueella luetut paineet, ja miten epävarmuutta voitaisiin pienentää?</p><div class=\"choice-actions\"></div></div>",
@@ -1391,7 +1391,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-4:check-1",
-     "number": "Itsearvio: 2. Käsitetehtävä",
+     "number": "Testaa ja arvioi: 2. Käsitetehtävä",
      "level": 0,
      "lesson": true,
      "html": "<fieldset class=\"choice list\"><p>Painemittarin anturikalvo käännetään <span class=\"math-glue\"><span><math><semantics><mrow><mn>4</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>0</mn> <mtext>m</mtext></mrow></semantics></math></span>:</span>n syvyydessä vuorotellen osoittamaan ylös, sivulle ja alas. Neste on levossa. Mitä mittari näyttää?</p><ul class=\"choices\"><li><label><span>Saman lukeman kaikissa asennoissa.</span></label></li><li><label><span>Suurimman lukeman, kun kalvo osoittaa ylös, koska vesi painaa alaspäin.</span></label></li><li><label><span>Nollan, kun kalvo osoittaa sivulle, koska vesi ei paina sivulle.</span></label></li></ul><div class=\"choice-actions\"></div><output></output></fieldset>",
@@ -1399,7 +1399,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-4:check-c2",
-     "number": "Itsearvio: 3. Käsitetehtävä: Astian muoto",
+     "number": "Testaa ja arvioi: 3. Käsitetehtävä: Astian muoto",
      "level": 0,
      "lesson": true,
      "html": "<fieldset class=\"choice list\"><p>Kapea pystyputki ja leveä allas ovat täynnä vettä <span class=\"math-glue\"><span><math><semantics><mrow><mn>1</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>0</mn> <mtext>m</mtext></mrow></semantics></math></span>:</span>n korkeuteen. Altaassa on tuhatkertainen määrä vettä putkeen verrattuna. Kummassa pohjan paine on suurempi?</p><ul class=\"choices\"><li><label><span>Putkessa, koska vesi on siinä ahtaassa tilassa.</span></label></li><li><label><span>Altaassa, koska siinä on enemmän vettä ja siis suurempi paino.</span></label></li><li><label><span>Yhtä suuri kummassakin.</span></label></li></ul><div class=\"choice-actions\"></div><output></output></fieldset>",
@@ -1407,7 +1407,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-4:check-2",
-     "number": "Itsearvio: 4. Laskutehtävä: Kuvaaja ja laskeminen",
+     "number": "Testaa ja arvioi: 4. Laskutehtävä: Kuvaaja ja laskeminen",
      "level": 0,
      "lesson": true,
      "html": "<div class=\"numeric\"><p class=\"task\">Tuntemattoman nesteen <span><math><semantics><mrow><mo stretchy=\"false\">(</mo><mi>h</mi><mo separator=\"true\">,</mo><mi>p</mi><mo stretchy=\"false\">)</mo></mrow></semantics></math></span>-kuvaaja on suora, joka kulkee pisteiden <span class=\"math-glue\">(<span><math><semantics><mrow><mn>0</mn> <mtext>m</mtext></mrow></semantics></math></span>,</span> <span class=\"math-glue\"><span><math><semantics><mrow><mn>101</mn> <mtext>kPa</mtext></mrow></semantics></math></span>)</span> ja <span class=\"math-glue\">(<span><math><semantics><mrow><mn>8</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>0</mn> <mtext>m</mtext></mrow></semantics></math></span>,</span> <span class=\"math-glue\"><span><math><semantics><mrow><mn>171</mn> <mtext>kPa</mtext></mrow></semantics></math></span>)</span> kautta. Mikä on nesteen tiheys? Vastaa yksikössä kg/m³.</p></div>",
@@ -1415,7 +1415,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-4:check-3",
-     "number": "Itsearvio: 5. Selitystehtävä: Selitä ja siirrä",
+     "number": "Testaa ja arvioi: 5. Selitystehtävä: Selitä ja siirrä",
      "level": 0,
      "lesson": true,
      "html": "<div class=\"explain\"><p class=\"task\">Sukeltaja on <span class=\"math-glue\"><span><math><semantics><mrow><mn>3</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>0</mn> <mtext>m</mtext></mrow></semantics></math></span>:</span>n syvyydessä, ja korvassa tuntuu painetta. Kun hän tasaa paineen päästämällä ilmaa nielusta välikorvaan, tunne katoaa. Selitä paineen avulla, miksi tärykalvoon kohdistuu aluksi voima ja miksi se häviää tasauksessa. Käytä käsitteitä paine, ylipaine ja voima.</p><div class=\"choice-actions\"></div></div>",
@@ -1667,7 +1667,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-5:check-1",
-     "number": "Itsearvio: 2. Käsitetehtävä",
+     "number": "Testaa ja arvioi: 2. Käsitetehtävä",
      "level": 0,
      "lesson": true,
      "html": "<fieldset class=\"choice list\"><p>Kaasu laajenee hyvin eristetyssä sylinterissä ja työntää mäntää ulospäin. Kaasuun ei siirry lämpöä eikä siitä siirry lämpöä pois. Mitä kaasun lämpötilalle tapahtuu?</p><ul class=\"choices\"><li><label><span>Se pysyy samana, koska lämpöä ei siirry.</span></label></li><li><label><span>Se laskee, koska kaasu tekee työtä ja sen sisäenergia pienenee.</span></label></li><li><label><span>Se nousee, koska hiukkaset liikkuvat nopeammin laajenevassa kaasussa.</span></label></li></ul><div class=\"choice-actions\"></div><output></output></fieldset>",
@@ -1675,7 +1675,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-5:check-c2",
-     "number": "Itsearvio: 3. Käsitetehtävä: Lämpö ja sisäenergia",
+     "number": "Testaa ja arvioi: 3. Käsitetehtävä: Lämpö ja sisäenergia",
      "level": 0,
      "lesson": true,
      "html": "<fieldset class=\"choice list\"><p>Nuotiossa kuumentunut kivi lasketaan kylmään veteen. Mikä väite kuvaa tilannetta oikein?</p><ul class=\"choices\"><li><label><span>Kun kivi ja vesi saavuttavat saman lämpötilan, lämpö on kadonnut.</span></label></li><li><label><span>Kivestä siirtyy veteen lämpötilaa, kunnes lämpötilat ovat yhtä suuret.</span></label></li><li><label><span>Kuumassa kivessä on paljon lämpöä, ja se siirtyy kivestä veteen.</span></label></li><li><label><span>Kivellä on veteen verrattuna korkeampi lämpötila, joten kivestä siirtyy veteen energiaa lämpönä. Kiven sisäenergia pienenee ja veden kasvaa.</span></label></li></ul><div class=\"choice-actions\"></div><output></output></fieldset>",
@@ -1683,7 +1683,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-5:check-2",
-     "number": "Itsearvio: 4. Laskutehtävä: Energiakirjanpito",
+     "number": "Testaa ja arvioi: 4. Laskutehtävä: Energiakirjanpito",
      "level": 0,
      "lesson": true,
      "html": "<div class=\"numeric\"><p class=\"task scenario\">Sylinterin kaasu käy läpi kaksi vaihetta. Vaiheessa 1 mäntä puristaa kaasua tehden siihen työn <span class=\"math-glue\"><span><math><semantics><mrow><mn>80</mn> <mtext>J</mtext></mrow></semantics></math></span>,</span> ja kaasusta siirtyy seiniin lämpömäärä <span class=\"math-glue\"><span><math><semantics><mrow><mn>30</mn> <mtext>J</mtext></mrow></semantics></math></span>.</span> Vaiheessa 2 kaasuun siirtyy lämpömäärä <span class=\"math-glue\"><span><math><semantics><mrow><mn>50</mn> <mtext>J</mtext></mrow></semantics></math></span>,</span> ja kaasu laajenee tehden mäntään työn <span class=\"math-glue\"><span><math><semantics><mrow><mn>70</mn> <mtext>J</mtext></mrow></semantics></math></span>.</span></p><p class=\"task ask\">Kuinka paljon kaasun sisäenergia muuttuu kahden vaiheen aikana yhteensä? Vastaa jouleina.</p></div>",
@@ -1691,7 +1691,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-5:check-3",
-     "number": "Itsearvio: 5. Selitystehtävä: Selitä ja siirrä",
+     "number": "Testaa ja arvioi: 5. Selitystehtävä: Selitä ja siirrä",
      "level": 0,
      "lesson": true,
      "html": "<div class=\"explain\"><p class=\"task\">Pumppaat samaa rengasta kahdesti samaan paineeseen: kerran nopeasti ja kerran hyvin hitaasti. Kummallakin kerralla teet ilmaan suunnilleen saman työn. Selitä, miksi pumppu lämpenee nopeasti pumpatessa enemmän. Käytä käsitteitä sisäenergia, työ ja lämpö sekä yhtälöä <span><math><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><mi>U</mi><mo>=</mo><mi>Q</mi><mo>+</mo><mi>W</mi></mrow></semantics></math></span>⁠.</p><div class=\"choice-actions\"></div></div>",
@@ -1943,7 +1943,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-6:tarkistus-1",
-     "number": "Itsearvio: 2. Käsitetehtävä",
+     "number": "Testaa ja arvioi: 2. Käsitetehtävä",
      "level": 0,
      "lesson": true,
      "html": "<fieldset class=\"choice list\"><p>Saunan kiukaalla on <span class=\"math-glue\"><span><math><semantics><mrow><mn>10</mn> <mtext>kg</mtext></mrow></semantics></math></span>:</span>n rautapata, ja pöydällä on lasi, jossa on <span><math><semantics><mrow><mn>0</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>20</mn> <mtext>kg</mtext></mrow></semantics></math></span> vettä. Kumman lämpötilan nostaminen yhdellä kelvinillä vaatii enemmän energiaa?</p><ul class=\"choices\"><li><label><span>Padan, koska sen lämpökapasiteetti <span><math><semantics><mrow><mi>C</mi><mo>=</mo><mi>c</mi><mi>m</mi></mrow></semantics></math></span> on suurempi.</span></label></li><li><label><span>Veden, koska veden ominaislämpökapasiteetti on paljon suurempi kuin raudan.</span></label></li><li><label><span>Yhtä paljon, koska kummankin lämpötila nousee yhden kelvinin.</span></label></li></ul><div class=\"choice-actions\"></div><output></output></fieldset>",
@@ -1951,7 +1951,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-6:check-c2",
-     "number": "Itsearvio: 3. Käsitetehtävä: Lämpötasapaino",
+     "number": "Testaa ja arvioi: 3. Käsitetehtävä: Lämpötasapaino",
      "level": 0,
      "lesson": true,
      "html": "<fieldset class=\"choice list\"><p>Eristetyssä astiassa sekoitetaan <span><math><semantics><mrow><mn>1</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>0</mn> <mtext>kg</mtext></mrow></semantics></math></span> vettä, jonka lämpötila on <span class=\"math-glue\"><span><math><semantics><mrow><mn>80</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>,</span> ja <span><math><semantics><mrow><mn>3</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>0</mn> <mtext>kg</mtext></mrow></semantics></math></span> vettä, jonka lämpötila on <span class=\"math-glue\"><span><math><semantics><mrow><mn>20</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>.</span> Mikä on veden lämpötila, kun lämpötila on tasoittunut?</p><ul class=\"choices\"><li><label><span><span class=\"math-glue\"><span><math><semantics><mrow><mn>50</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>,</span> koska lämpötila asettuu alkulämpötilojen keskiarvoon.</span></label></li><li><label><span><span class=\"math-glue\"><span><math><semantics><mrow><mn>65</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>,</span> koska kuuma vesi määrää lämpötilan.</span></label></li><li><label><span><span class=\"math-glue\"><span><math><semantics><mrow><mn>35</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>,</span> koska luovutettu ja vastaanotettu lämpömäärä ovat yhtä suuret ja kylmää vettä on enemmän.</span></label></li></ul><div class=\"choice-actions\"></div><output></output></fieldset>",
@@ -1959,7 +1959,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-6:tarkistus-2",
-     "number": "Itsearvio: 4. Laskutehtävä: Kalorimetrinen mittaus",
+     "number": "Testaa ja arvioi: 4. Laskutehtävä: Kalorimetrinen mittaus",
      "level": 0,
      "lesson": true,
      "html": "<div class=\"numeric\"><p class=\"task\">Kalorimetrissä on <span><math><semantics><mrow><mn>0</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>200</mn> <mtext>kg</mtext></mrow></semantics></math></span> vettä, jonka lämpötila on <span class=\"math-glue\"><span><math><semantics><mrow><mn>18</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>0</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>.</span> Siihen upotetaan <span class=\"math-glue\"><span><math><semantics><mrow><mn>0</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>150</mn> <mtext>kg</mtext></mrow></semantics></math></span>:</span>n metallikappale, joka on lämmitetty <span class=\"math-glue\"><span><math><semantics><mrow><mn>98</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>0</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>:</span>seen. Lämpötila asettuu arvoon <span class=\"math-glue\"><span><math><semantics><mrow><mn>29</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>0</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>.</span> Määritä metallin ominaislämpökapasiteetti, kun kalorimetrin oma lämpökapasiteetti ja lämpöhäviöt jätetään huomiotta. Vastaa yksikössä J/(kg·K).</p></div>",
@@ -1967,7 +1967,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-6:tarkistus-3",
-     "number": "Itsearvio: 5. Selitystehtävä: Selitä ja siirrä",
+     "number": "Testaa ja arvioi: 5. Selitystehtävä: Selitä ja siirrä",
      "level": 0,
      "lesson": true,
      "html": "<div class=\"explain\"><p class=\"task\">Suuren järven rannalla syksyn yöt ovat usein lauhempia ja kevään päivät viileämpiä kuin kaukana sisämaassa. Selitä ilmiö käyttämällä käsitteitä ominaislämpökapasiteetti ja lämpömäärä.</p><div class=\"choice-actions\"></div></div>",
@@ -2227,7 +2227,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-7:check-1",
-     "number": "Itsearvio: 2. Käsitetehtävä",
+     "number": "Testaa ja arvioi: 2. Käsitetehtävä",
      "level": 0,
      "lesson": true,
      "html": "<fieldset class=\"choice list\"><p>Vesi kiehuu <span class=\"math-glue\"><span><math><semantics><mrow><mn>100</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>:</span>ssa. Mitä vesimolekyyleille tapahtuu, kun vesi höyrystyy?</p><ul class=\"choices\"><li><label><span>Molekyylit hajoavat vedyksi ja hapeksi.</span></label></li><li><label><span>Molekyylit etääntyvät toisistaan, ja niiden välinen vuorovaikutusenergia kasvaa.</span></label></li><li><label><span>Molekyylien liike nopeutuu, joten niiden liike-energia kasvaa.</span></label></li><li><label><span>Molekyylit laajenevat, ja siksi höyry vie enemmän tilaa.</span></label></li></ul><div class=\"choice-actions\"></div><output></output></fieldset>",
@@ -2235,7 +2235,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-7:check-c2",
-     "number": "Itsearvio: 3. Käsitetehtävä: Kiehuva vesi",
+     "number": "Testaa ja arvioi: 3. Käsitetehtävä: Kiehuva vesi",
      "level": 0,
      "lesson": true,
      "html": "<fieldset class=\"choice list\"><p>Kattilassa vesi kiehuu tasaisesti <span class=\"math-glue\"><span><math><semantics><mrow><mn>100</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>:</span>ssa. Liesilevyn teho käännetään suuremmaksi. Mitä tapahtuu?</p><ul class=\"choices\"><li><label><span>Veden lämpötila nousee yli <span class=\"math-glue\"><span><math><semantics><mrow><mn>100</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>:</span>n, koska veteen siirtyy enemmän energiaa.</span></label></li><li><label><span>Veden kiehuminen hidastuu, koska energiaa tulee enemmän kuin vesi ehtii ottaa vastaan.</span></label></li><li><label><span>Veden lämpötila pysyy <span class=\"math-glue\"><span><math><semantics><mrow><mn>100</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>:</span>ssa, mutta vettä höyrystyy joka sekunti enemmän.</span></label></li><li><label><span>Mikään ei muutu, koska kiehuvan veden lämpötila ei muutu.</span></label></li></ul><div class=\"choice-actions\"></div><output></output></fieldset>",
@@ -2243,7 +2243,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-7:check-2",
-     "number": "Itsearvio: 4. Laskutehtävä: Lämpenemiskäyrä",
+     "number": "Testaa ja arvioi: 4. Laskutehtävä: Lämpenemiskäyrä",
      "level": 0,
      "lesson": true,
      "html": "<div class=\"numeric\"><p class=\"task scenario\">Kattilaa lämmitetään <span class=\"math-glue\"><span><math><semantics><mrow><mn>1500</mn> <mtext>W</mtext></mrow></semantics></math></span>:</span>n kuumentimella, jonka energia siirtyy kokonaan veteen. Veden lämpenemiskäyrässä <span><math><semantics><mrow><mo stretchy=\"false\">(</mo><mi>t</mi><mo separator=\"true\">,</mo><mi>T</mi><mo stretchy=\"false\">)</mo></mrow></semantics></math></span> lämpötila on <span class=\"math-glue\"><span><math><semantics><mrow><mn>100</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>:</span>ssa vaakasuora hetkestä <span><math><semantics><mrow><mi>t</mi><mo>=</mo><mn>2</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>0</mn> <mtext>min</mtext></mrow></semantics></math></span> hetkeen <span class=\"math-glue\"><span><math><semantics><mrow><mi>t</mi><mo>=</mo><mn>17</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>0</mn> <mtext>min</mtext></mrow></semantics></math></span>,</span> jolloin kattila on tyhjä.</p><p class=\"task ask\">Kuinka paljon vettä kiehui pois? Vastaa kilogrammoina.</p></div>",
@@ -2251,7 +2251,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-7:check-3",
-     "number": "Itsearvio: 5. Selitystehtävä: Selitä ja siirrä",
+     "number": "Testaa ja arvioi: 5. Selitystehtävä: Selitä ja siirrä",
      "level": 0,
      "lesson": true,
      "html": "<div class=\"explain\"><p class=\"task\">Miksi 100-asteinen höyry polttaa ihoa pahemmin kuin sama massa 100-asteista vettä? Käytä selityksessä olomuodon muutosta ja energiaa.</p><div class=\"choice-actions\"></div></div>",
@@ -2503,7 +2503,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-14:tarkistus-1",
-     "number": "Itsearvio: 2. Käsitetehtävä",
+     "number": "Testaa ja arvioi: 2. Käsitetehtävä",
      "level": 0,
      "lesson": true,
      "html": "<fieldset class=\"choice list\"><p>Eristetyssä astiassa on jääsohjoa, jossa on sekä vettä että jäätä, ja sen lämpötila on <span class=\"math-glue\"><span><math><semantics><mrow><mn>0</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>.</span> Astiaan siirtyy lämpöä, mutta jäätä on yhä jäljellä. Mitä seoksen lämpötilalle tapahtuu?</p><ul class=\"choices\"><li><label><span>Se nousee hitaasti, koska jää ja vesi lämpenevät yhdessä.</span></label></li><li><label><span>Se laskee, koska jää jäähdyttää vettä.</span></label></li><li><label><span>Se pysyy <span class=\"math-glue\"><span><math><semantics><mrow><mn>0</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>:</span>ssa, ja lisätty lämpö sulattaa jäätä.</span></label></li></ul><div class=\"choice-actions\"></div><output></output></fieldset>",
@@ -2511,7 +2511,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-14:check-c2",
-     "number": "Itsearvio: 3. Käsitetehtävä: Kylmä jääpala vedessä",
+     "number": "Testaa ja arvioi: 3. Käsitetehtävä: Kylmä jääpala vedessä",
      "level": 0,
      "lesson": true,
      "html": "<fieldset class=\"choice list\"><p>Eristetyssä astiassa on vettä, jonka lämpötila on <span class=\"math-glue\"><span><math><semantics><mrow><mn>0</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>.</span> Veteen pudotetaan pakastimesta otettu jääpala, jonka lämpötila on <span class=\"math-glue\"><span><math><semantics><mrow><mo>−</mo><mn>18</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>.</span> Mitä astiassa tapahtuu, kun lämpötilat alkavat tasoittua?</p><ul class=\"choices\"><li><label><span>Vettä jäätyy palan pinnalle. Jäätyessään vesi luovuttaa energiaa, joka lämmittää palaa kohti <span class=\"math-glue\"><span><math><semantics><mrow><mn>0</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>:</span>ta.</span></label></li><li><label><span>Pala alkaa heti sulaa, koska ympäröivä vesi on sitä lämpimämpää.</span></label></li><li><label><span>Vesi jäähtyy nesteenä alle <span class=\"math-glue\"><span><math><semantics><mrow><mn>0</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>:</span>n, ja pala lämpenee, kunnes lämpötilat ovat samat.</span></label></li><li><label><span>Mitään ei tapahdu, koska <span class=\"math-glue\"><span><math><semantics><mrow><mn>0</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>:</span>n vesi ei voi luovuttaa enää lämpöä.</span></label></li></ul><div class=\"choice-actions\"></div><output></output></fieldset>",
@@ -2519,7 +2519,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-14:tarkistus-2",
-     "number": "Itsearvio: 4. Laskutehtävä",
+     "number": "Testaa ja arvioi: 4. Laskutehtävä",
      "level": 0,
      "lesson": true,
      "html": "<div class=\"numeric\"><p class=\"task scenario\">Kalorimetrissä on <span><math><semantics><mrow><mn>0</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>20</mn> <mtext>kg</mtext></mrow></semantics></math></span> teetä, jonka lämpötila on <span><math><semantics><mrow><mn>70</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span> ja jonka ominaislämpökapasiteetti on sama kuin veden. Teehen pudotetaan <span><math><semantics><mrow><mn>0</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>050</mn> <mtext>kg</mtext></mrow></semantics></math></span> jäätä, jonka lämpötila on <span class=\"math-glue\"><span><math><semantics><mrow><mn>0</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>.</span></p><p class=\"task ask\">Mikä on lämpötila, kun kaikki jää on sulanut ja lämpötasapaino on saavutettu? Vastaa celsiusasteina.</p></div>",
@@ -2527,7 +2527,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-14:tarkistus-3",
-     "number": "Itsearvio: 5. Selitystehtävä: Selitä ja siirrä",
+     "number": "Testaa ja arvioi: 5. Selitystehtävä: Selitä ja siirrä",
      "level": 0,
      "lesson": true,
      "html": "<div class=\"explain\"><p class=\"task\">Juoman viilentämiseen käytetään jääkuutioita. Selitä, miksi 0-asteinen jää viilentää juomaa paljon tehokkaammin kuin sama massa 0-asteista vettä, ja miksi jäätä voi jäädä lasiin, vaikka juoma on huoneenlämpöistä.</p><div class=\"choice-actions\"></div></div>",
@@ -2795,7 +2795,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-8:check-1",
-     "number": "Itsearvio: 2. Käsitetehtävä",
+     "number": "Testaa ja arvioi: 2. Käsitetehtävä",
      "level": 0,
      "lesson": true,
      "html": "<fieldset class=\"choice list\"><p>Syksyllä järven vesi jäähtyy pinnalta käsin. Koko järvi on jo jäähtynyt <span class=\"math-glue\"><span><math><semantics><mrow><mn>4</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>:</span>seen, ja pintavesi jäähtyy edelleen <span class=\"math-glue\"><span><math><semantics><mrow><mn>2</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>:</span>seen. Mitä 2-asteiselle pintavedelle tapahtuu?</p><ul class=\"choices\"><li><label><span>Se jää pinnalle, koska <span class=\"math-glue\"><span><math><semantics><mrow><mn>0</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>:</span>n ja <span class=\"math-glue\"><span><math><semantics><mrow><mn>4</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>:</span>n välillä vesi laajenee jäähtyessään ja sen tiheys pienenee.</span></label></li><li><label><span>Se painuu pohjalle, koska kylmempi vesi on aina tiheämpää.</span></label></li><li><label><span>Se sekoittuu koko järveen, joten järvi jäähtyy kauttaaltaan <span class=\"math-glue\"><span><math><semantics><mrow><mn>0</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>:</span>seen ja jäätyy pohjasta.</span></label></li></ul><div class=\"choice-actions\"></div><output></output></fieldset>",
@@ -2803,7 +2803,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-8:check-c2",
-     "number": "Itsearvio: 3. Käsitetehtävä: Reikä lämpiää",
+     "number": "Testaa ja arvioi: 3. Käsitetehtävä: Reikä lämpiää",
      "level": 0,
      "lesson": true,
      "html": "<fieldset class=\"choice list\"><p>Teräslevyssä on pyöreä reikä. Levyä lämmitetään tasaisesti. Mitä reiän halkaisijalle tapahtuu?</p><ul class=\"choices\"><li><label><span>Reikä suurenee, koska kaikki levyn mitat kasvavat samassa suhteessa, kuin kuvaa suurennettaisiin.</span></label></li><li><label><span>Reikä pysyy samana, koska laajeneminen koskee vain levyn ulkomittoja.</span></label></li><li><label><span>Reikä pienenee, koska metalli laajenee ja täyttää reikää reunoilta.</span></label></li></ul><div class=\"choice-actions\"></div><output></output></fieldset>",
@@ -2811,7 +2811,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-8:check-2",
-     "number": "Itsearvio: 4. Laskutehtävä: Taulukko ja laskeminen",
+     "number": "Testaa ja arvioi: 4. Laskutehtävä: Taulukko ja laskeminen",
      "level": 0,
      "lesson": true,
      "html": "<div class=\"numeric\"><p class=\"task\">Metallisauvan pituus on <span class=\"math-glue\"><span><math><semantics><mrow><mn>20</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>:</span>ssa <span class=\"math-glue\"><span><math><semantics><mrow><mn>2</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>00</mn> <mtext>m</mtext></mrow></semantics></math></span>.</span> Taulukossa ovat sauvan pituuden muutoksen esimerkkiarvot eri lämpötiloissa (laskettuja arvoja, eivät mittauksia).</p> <table> <thead> <tr> <th><span><math><semantics><mrow><mi>T</mi></mrow></semantics></math></span> (°C)</th> <th>20</th> <th>60</th> <th>100</th> </tr> </thead> <tbody> <tr> <td><span><math><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><mi>L</mi></mrow></semantics></math></span> (mm)</td> <td>0</td> <td>1,84</td> <td>3,68</td> </tr> </tbody> </table> <p>Laske metallin pituuden lämpötilakerroin <span class=\"math-glue\"><span><math><semantics><mrow><mi>α</mi></mrow></semantics></math></span>.</span> Anna vastaus yksikössä <span class=\"math-glue\"><span><math><semantics><mrow><mn>1</mn><msup><mn>0</mn><mrow><mo>−</mo><mn>6</mn></mrow></msup> <mfrac><mn>1</mn><mtext>K</mtext></mfrac></mrow></semantics></math></span>.</span></p></div>",
@@ -2819,7 +2819,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-8:check-3",
-     "number": "Itsearvio: 5. Selitystehtävä: Selitä ja siirrä",
+     "number": "Testaa ja arvioi: 5. Selitystehtävä: Selitä ja siirrä",
      "level": 0,
      "lesson": true,
      "html": "<div class=\"explain\"><p class=\"task\">Selitä mikromallin avulla, miksi teräskisko pitenee lämmetessään, ja miksi saman lämpötilan nousu kasvattaa vakiopaineisen ilman tilavuutta suhteessa paljon enemmän kuin kiskon tilavuutta.</p><div class=\"choice-actions\"></div></div>",
@@ -3087,7 +3087,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-9:check-1",
-     "number": "Itsearvio: 2. Käsitetehtävä",
+     "number": "Testaa ja arvioi: 2. Käsitetehtävä",
      "level": 0,
      "lesson": true,
      "html": "<fieldset class=\"choice list\"><p>Suljettu kaasumäärä puristetaan puoleen alkuperäisestä tilavuudesta, ja lämpötila pysyy samana. Miksi paine kaksinkertaistuu mikromallin mukaan?</p><ul class=\"choices\"><li><label><span>Samat hiukkaset osuvat seinämiin kaksi kertaa niin usein, mutta yhtä kovaa kuin ennen.</span></label></li><li><label><span>Hiukkaset puristuvat pienemmiksi ja kovemmiksi.</span></label></li><li><label><span>Hiukkaset liikkuvat kaksi kertaa nopeammin.</span></label></li><li><label><span>Kaasun paino kasvaa, kun se puristetaan pienempään tilaan.</span></label></li></ul><div class=\"choice-actions\"></div><output></output></fieldset>",
@@ -3095,7 +3095,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-9:check-c2",
-     "number": "Itsearvio: 3. Käsitetehtävä: Kelvinlämpötila",
+     "number": "Testaa ja arvioi: 3. Käsitetehtävä: Kelvinlämpötila",
      "level": 0,
      "lesson": true,
      "html": "<fieldset class=\"choice list\"><p>Suljetun pullon ilma lämpenee <span class=\"math-glue\"><span><math><semantics><mrow><mn>7</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>:</span>sta <span class=\"math-glue\"><span><math><semantics><mrow><mn>35</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>:</span>seen. Pullon tilavuus ei muutu. Mitä paineelle tapahtuu?</p><ul class=\"choices\"><li><label><span>Paine ei muutu, koska pullon tilavuus ei muutu.</span></label></li><li><label><span>Paine kasvaa noin <span class=\"math-glue\"><span><math><semantics><mrow><mn>10</mn> <mi mathvariant=\"normal\">%</mi></mrow></semantics></math></span>,</span> koska kelvinlämpötila kasvaa arvosta <span><math><semantics><mrow><mn>280</mn> <mtext>K</mtext></mrow></semantics></math></span> arvoon <span class=\"math-glue\"><span><math><semantics><mrow><mn>308</mn> <mtext>K</mtext></mrow></semantics></math></span>.</span></span></label></li><li><label><span>Paine kasvaa <span class=\"math-glue\"><span><math><semantics><mrow><mn>28</mn> <mi mathvariant=\"normal\">%</mi></mrow></semantics></math></span>,</span> koska lämpötila nousee <span><math><semantics><mrow><mn>28</mn></mrow></semantics></math></span> astetta.</span></label></li><li><label><span>Paine kasvaa viisinkertaiseksi, koska lämpötila kasvaa viisinkertaiseksi.</span></label></li></ul><div class=\"choice-actions\"></div><output></output></fieldset>",
@@ -3103,7 +3103,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-9:check-2",
-     "number": "Itsearvio: 4. Laskutehtävä: Kuvaaja ja laskeminen",
+     "number": "Testaa ja arvioi: 4. Laskutehtävä: Kuvaaja ja laskeminen",
      "level": 0,
      "lesson": true,
      "html": "<div class=\"numeric\"><p class=\"task scenario\">Ruiskun ilman mittauksista piirretty <span><math><semantics><mrow><mo stretchy=\"false\">(</mo><mn>1</mn><mi mathvariant=\"normal\">/</mi><mi>V</mi><mo separator=\"true\">,</mo><mi>p</mi><mo stretchy=\"false\">)</mo></mrow></semantics></math></span>-kuvaaja on origon kautta kulkeva suora, jonka kulmakerroin on 3,6&nbsp;kPa·l.</p><p class=\"task ask\">Mikä on ilman paine, kun sen tilavuus on 30,0 ml? Lämpötila pysyy samana. Vastaa kilopascaleina.</p></div>",
@@ -3111,7 +3111,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-9:check-3",
-     "number": "Itsearvio: 5. Selitystehtävä: Selitä koe",
+     "number": "Testaa ja arvioi: 5. Selitystehtävä: Selitä koe",
      "level": 0,
      "lesson": true,
      "html": "<div class=\"explain\"><p class=\"task\">Boylen lakia todennetaan ruiskulla ja painemittarilla. Selitä, miksi mäntää liikutetaan hitaasti ja miksi tulokset piirretään <span><math><semantics><mrow><mo stretchy=\"false\">(</mo><mn>1</mn><mi mathvariant=\"normal\">/</mi><mi>V</mi><mo separator=\"true\">,</mo><mi>p</mi><mo stretchy=\"false\">)</mo></mrow></semantics></math></span>-koordinaatistoon eikä pelkästään <span><math><semantics><mrow><mo stretchy=\"false\">(</mo><mi>V</mi><mo separator=\"true\">,</mo><mi>p</mi><mo stretchy=\"false\">)</mo></mrow></semantics></math></span>-koordinaatistoon. Mitä muuta koejärjestelyssä on varmistettava?</p><div class=\"choice-actions\"></div></div>",
@@ -3395,7 +3395,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-10:check-1",
-     "number": "Itsearvio: 2. Käsitetehtävä",
+     "number": "Testaa ja arvioi: 2. Käsitetehtävä",
      "level": 0,
      "lesson": true,
      "html": "<fieldset class=\"choice list\"><p>Kaasun tilavuus puolitetaan, ja lämpötila ja hiukkasmäärä pysyvät samoina. Paine kaksinkertaistuu. Mikä on syy hiukkasmallin mukaan?</p><ul class=\"choices\"><li><label><span>Hiukkaset osuvat seiniin useammin, koska ne kulkevat seinästä seinään lyhyemmän matkan.</span></label></li><li><label><span>Hiukkaset liikkuvat nopeammin pienemmässä tilassa.</span></label></li><li><label><span>Hiukkaset puristuvat pienemmiksi ja painavat seiniä voimakkaammin.</span></label></li><li><label><span>Hiukkaset törmäilevät useammin toisiinsa, ja se lisää painetta.</span></label></li></ul><div class=\"choice-actions\"></div><output></output></fieldset>",
@@ -3403,7 +3403,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-10:check-c2",
-     "number": "Itsearvio: 3. Käsitetehtävä: Kelvinlämpötila",
+     "number": "Testaa ja arvioi: 3. Käsitetehtävä: Kelvinlämpötila",
      "level": 0,
      "lesson": true,
      "html": "<fieldset class=\"choice list\"><p>Jäykkään, suljettuun astiaan on suljettu ilmaa, jonka lämpötila on <span class=\"math-glue\"><span><math><semantics><mrow><mn>20</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>.</span> Astiaa lämmitetään, kunnes ilman lämpötila on <span class=\"math-glue\"><span><math><semantics><mrow><mn>40</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>.</span> Mitä ilman paineelle tapahtuu?</p><ul class=\"choices\"><li><label><span>Paine kaksinkertaistuu, koska lämpötila kaksinkertaistuu.</span></label></li><li><label><span>Paine kasvaa <span class=\"math-glue\"><span><math><semantics><mrow><mn>20</mn> <mi mathvariant=\"normal\">%</mi></mrow></semantics></math></span>,</span> koska lämpötila nousee <span><math><semantics><mrow><mn>20</mn></mrow></semantics></math></span> astetta.</span></label></li><li><label><span>Paine ei muutu, koska astian tilavuus ja ilman määrä pysyvät samoina.</span></label></li><li><label><span>Paine kasvaa noin <span class=\"math-glue\"><span><math><semantics><mrow><mn>7</mn> <mi mathvariant=\"normal\">%</mi></mrow></semantics></math></span>,</span> koska kelvinlämpötila kasvaa arvosta <span><math><semantics><mrow><mn>293</mn> <mtext>K</mtext></mrow></semantics></math></span> arvoon <span class=\"math-glue\"><span><math><semantics><mrow><mn>313</mn> <mtext>K</mtext></mrow></semantics></math></span>.</span></span></label></li></ul><div class=\"choice-actions\"></div><output></output></fieldset>",
@@ -3411,7 +3411,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-10:check-2",
-     "number": "Itsearvio: 4. Laskutehtävä: Ennuste simulaation tilalle",
+     "number": "Testaa ja arvioi: 4. Laskutehtävä: Ennuste simulaation tilalle",
      "level": 0,
      "lesson": true,
      "html": "<div class=\"numeric\"><p class=\"task\">Simulaation vertailutilassa <span class=\"math-glue\">(<span><math><semantics><mrow><mi>N</mi><mo>=</mo><mn>100</mn></mrow></semantics></math></span>,</span> <span class=\"math-glue\"><span><math><semantics><mrow><mi>T</mi><mo>=</mo><mn>300</mn> <mtext>K</mtext></mrow></semantics></math></span>,</span> <span class=\"math-glue\"><span><math><semantics><mrow><mi>V</mi><mo>=</mo><mn>100</mn> <mi mathvariant=\"normal\">%</mi></mrow></semantics></math></span>)</span> paine on <span class=\"math-glue\"><span><math><semantics><mrow><mi>p</mi><mi mathvariant=\"normal\">/</mi><msub><mi>p</mi><mtext>ref</mtext></msub><mo>=</mo><mn>1</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>00</mn></mrow></semantics></math></span>.</span> Hiukkasmäärä kasvatetaan 150:een, lämpötila nostetaan <span class=\"math-glue\"><span><math><semantics><mrow><mn>450</mn> <mtext>K</mtext></mrow></semantics></math></span>:</span>iin ja tilavuus pienennetään <span class=\"math-glue\"><span><math><semantics><mrow><mn>75</mn> <mi mathvariant=\"normal\">%</mi></mrow></semantics></math></span>:</span>iin. Mikä on tilanyhtälön ennuste <span class=\"math-glue\"><span><math><semantics><mrow><mi>p</mi><mi mathvariant=\"normal\">/</mi><msub><mi>p</mi><mtext>ref</mtext></msub></mrow></semantics></math></span>?</span></p></div>",
@@ -3419,7 +3419,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-10:check-3",
-     "number": "Itsearvio: 5. Selitystehtävä: Selitä punnituksen avulla",
+     "number": "Testaa ja arvioi: 5. Selitystehtävä: Selitä punnituksen avulla",
      "level": 0,
      "lesson": true,
      "html": "<div class=\"explain\"><p class=\"task scenario\">Selitä punnituksen ja tilanyhtälön avulla, miksi kahdessa yhtä suuressa astiassa on samassa paineessa ja lämpötilassa yhtä monta moolia kaasua, olipa kaasu mikä tahansa.</p><p class=\"task ask\">Miksi kaasut silti painavat eri verran?</p><div class=\"choice-actions\"></div></div>",
@@ -3679,7 +3679,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-11:check-1",
-     "number": "Itsearvio: 2. Käsitetehtävä",
+     "number": "Testaa ja arvioi: 2. Käsitetehtävä",
      "level": 0,
      "lesson": true,
      "html": "<fieldset class=\"choice list\"><p>Teräksisessä kaasupullossa on paineistettua typpeä <span class=\"math-glue\"><span><math><semantics><mrow><mn>20</mn> <mtext>MPa</mtext></mrow></semantics></math></span>:</span>n paineessa. Pullo seisoo hyllyllä vuoden. Kuinka suuren työn kaasu tekee sinä aikana?</p><ul class=\"choices\"><li><label><span>Suuren työn, koska paine on suuri ja vaikuttaa pullon seiniin koko vuoden.</span></label></li><li><label><span>Työn, joka on yhtä suuri kuin kaasun sisäenergia.</span></label></li><li><label><span>Ei lainkaan työtä, koska kaasun tilavuus ei muutu.</span></label></li></ul><div class=\"choice-actions\"></div><output></output></fieldset>",
@@ -3687,7 +3687,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-11:check-c2",
-     "number": "Itsearvio: 3. Käsitetehtävä: Lämpöpumppu",
+     "number": "Testaa ja arvioi: 3. Käsitetehtävä: Lämpöpumppu",
      "level": 0,
      "lesson": true,
      "html": "<fieldset class=\"choice list\"><p>Lämpöpumppu käyttää sähköä <span><math><semantics><mrow><mn>1</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>0</mn> <mtext>kWh</mtext></mrow></semantics></math></span> ja luovuttaa samalla taloon lämpöä <span class=\"math-glue\"><span><math><semantics><mrow><mn>3</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>0</mn> <mtext>kWh</mtext></mrow></semantics></math></span>.</span> Mikä väite pitää paikkansa?</p><ul class=\"choices\"><li><label><span>Pumppu luo ylimääräiset <span><math><semantics><mrow><mn>2</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>0</mn> <mtext>kWh</mtext></mrow></semantics></math></span> energiaa, koska se on niin tehokas laite.</span></label></li><li><label><span>Ylimääräinen lämpö syntyy pumpun kitkasta ja muista häviöistä.</span></label></li><li><label><span>Pumppu ottaa ulkoilmasta lämpöä <span class=\"math-glue\"><span><math><semantics><mrow><mn>2</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>0</mn> <mtext>kWh</mtext></mrow></semantics></math></span>,</span> ja sisälle luovutettu lämpö on ulkoa otetun lämmön ja sähköenergian summa.</span></label></li><li><label><span>Sähkö muuttuu lämmöksi pumpussa kolminkertaisella hyötysuhteella.</span></label></li></ul><div class=\"choice-actions\"></div><output></output></fieldset>",
@@ -3695,7 +3695,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-11:check-2",
-     "number": "Itsearvio: 4. Laskutehtävä: Kuvaaja ja laskeminen",
+     "number": "Testaa ja arvioi: 4. Laskutehtävä: Kuvaaja ja laskeminen",
      "level": 0,
      "lesson": true,
      "html": "<div class=\"numeric\"><p class=\"task\">Kaasun <span><math><semantics><mrow><mo stretchy=\"false\">(</mo><mi>V</mi><mo separator=\"true\">,</mo><mi>p</mi><mo stretchy=\"false\">)</mo></mrow></semantics></math></span>-kuvaaja on vaakasuora jana korkeudella <span class=\"math-glue\"><span><math><semantics><mrow><mi>p</mi><mo>=</mo><mn>150</mn> <mtext>kPa</mtext></mrow></semantics></math></span>,</span> ja se alkaa kohdasta <span><math><semantics><mrow><mi>V</mi><mo>=</mo><mn>2</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>0</mn> <mtext>l</mtext></mrow></semantics></math></span> ja päättyy kohtaan <span class=\"math-glue\"><span><math><semantics><mrow><mi>V</mi><mo>=</mo><mn>5</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>0</mn> <mtext>l</mtext></mrow></semantics></math></span>.</span> Kuinka suuren työn <span><math><semantics><mrow><msub><mi>W</mi><mtext>k</mtext></msub></mrow></semantics></math></span> kaasu tekee? Vastaa jouleina.</p></div>",
@@ -3703,7 +3703,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-11:check-3",
-     "number": "Itsearvio: 5. Selitystehtävä: Selitä ja siirrä",
+     "number": "Testaa ja arvioi: 5. Selitystehtävä: Selitä ja siirrä",
      "level": 0,
      "lesson": true,
      "html": "<div class=\"explain\"><p class=\"task\">Ystäväsi ehdottaa: ”Rakennetaan niin hyvä voimalaitos, ettei se tarvitse lauhdutinta lainkaan. Silloin kaikki polttoaineen energia muuttuu sähköksi.” Selitä, miksi tämä ei onnistu, ja kerro, miten lauhduttimen lämmön voi silti käyttää hyödyksi.</p><div class=\"choice-actions\"></div></div>",
@@ -3971,7 +3971,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-15:check-1",
-     "number": "Itsearvio: 2. Käsitetehtävä",
+     "number": "Testaa ja arvioi: 2. Käsitetehtävä",
      "level": 0,
      "lesson": true,
      "html": "<fieldset class=\"choice list\"><p>Tuulivoimalan hyötysuhde on <span><math><semantics><mrow><mn>0</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>42</mn></mrow></semantics></math></span> ja hiilellä toimivan lauhdevoimalaitoksen <span class=\"math-glue\"><span><math><semantics><mrow><mn>0</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>40</mn></mrow></semantics></math></span>.</span> Opiskelija päättelee: ”Tuulivoimala on siis vain vähän parempi kuin hiilivoimala.” Mikä on päättelyn ongelma?</p><ul class=\"choices\"><li><label><span>Tuulivoimalan hyötysuhde on laskettu väärin, koska mikään voimala ei voi ylittää hyötysuhdetta 0,40.</span></label></li><li><label><span>Hyötysuhteiden nimittäjät ovat eri asioita: hiilivoimalassa ostettu polttoaine, tuulivoimalassa ilmavirran teho, jota ei osteta eikä kulu. Luvut eivät kerro polttoaineen käytöstä.</span></label></li><li><label><span>Hiilivoimalan hyötysuhde pitäisi laskea yhteen sähkön ja kaukolämmön kanssa.</span></label></li><li><label><span>Päättelyssä ei ole ongelmaa: luvut kertovat suoraan, kumpi laitos on parempi.</span></label></li></ul><div class=\"choice-actions\"></div><output></output></fieldset>",
@@ -3979,7 +3979,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-15:check-c2",
-     "number": "Itsearvio: 3. Käsitetehtävä: Miksi hyötysuhteet eroavat",
+     "number": "Testaa ja arvioi: 3. Käsitetehtävä: Miksi hyötysuhteet eroavat",
      "level": 0,
      "lesson": true,
      "html": "<fieldset class=\"choice list\"><p>Vesivoimalaitoksen hyötysuhde on noin <span class=\"math-glue\"><span><math><semantics><mrow><mn>0</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>9</mn></mrow></semantics></math></span>,</span> mutta lauhdevoimalaitoksen noin <span class=\"math-glue\"><span><math><semantics><mrow><mn>0</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>4</mn></mrow></semantics></math></span>.</span> Mikä selittää eron?</p><ul class=\"choices\"><li><label><span>Vesivoimalaitoksen koneissa on vähemmän kitkaa kuin lauhdevoimalaitoksen koneissa.</span></label></li><li><label><span>Lauhdevoimalaitoksen kattila hukkaa suurimman osan polttoaineen energiasta.</span></label></li><li><label><span>Vesivoimalaitos ei ole lämpövoimakone: turbiini muuttaa veden liike-energian suoraan mekaaniseksi energiaksi, eikä lämpöä tarvitse luovuttaa kylmempään. Lauhdevoimalaitoksessa suuri osa polttoaineen energiasta siirtyy lauhduttimessa jäähdytysveteen.</span></label></li><li><label><span>Veden liike-energia on ilmaista, joten sen hyötysuhde lasketaan helpommin.</span></label></li></ul><div class=\"choice-actions\"></div><output></output></fieldset>",
@@ -3987,7 +3987,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-15:check-2",
-     "number": "Itsearvio: 4. Laskutehtävä",
+     "number": "Testaa ja arvioi: 4. Laskutehtävä",
      "level": 0,
      "lesson": true,
      "html": "<div class=\"numeric\"><p class=\"task\">Yhteistuotantolaitoksen polttoaineteho on <span class=\"math-glue\"><span><math><semantics><mrow><mn>360</mn> <mtext>MW</mtext></mrow></semantics></math></span>,</span> sähköteho <span><math><semantics><mrow><mn>108</mn> <mtext>MW</mtext></mrow></semantics></math></span> ja hukkalämmön teho <span class=\"math-glue\"><span><math><semantics><mrow><mn>36</mn> <mtext>MW</mtext></mrow></semantics></math></span>.</span> Kuinka suuri on kaukolämpöteho? Vastaa megawatteina.</p></div>",
@@ -3995,7 +3995,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-15:check-3",
-     "number": "Itsearvio: 5. Selitystehtävä: Selitä ja vertaa",
+     "number": "Testaa ja arvioi: 5. Selitystehtävä: Selitä ja vertaa",
      "level": 0,
      "lesson": true,
      "html": "<div class=\"explain\"><p class=\"task\">Kaupunki harkitsee voimalaitosta. Lauhdevoimalaitoksen hyötysuhde on 0,40. Yhteistuotantolaitoksen kokonaishyötysuhde on 0,88, mutta sähköä siitä on vain 0,30 polttoaineen tehosta. Selitä, miksi yhteistuotantolaitos ei ole yksinkertaisesti yli kaksi kertaa parempi kuin lauhdevoimalaitos, ja kerro, mitä tietoa vertailuun tarvitaan.</p><div class=\"choice-actions\"></div></div>",
@@ -4255,7 +4255,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-12:check-1",
-     "number": "Itsearvio: 2. Käsitetehtävä",
+     "number": "Testaa ja arvioi: 2. Käsitetehtävä",
      "level": 0,
      "lesson": true,
      "html": "<fieldset class=\"choice list\"><p>Kirkkaana talviyönä pakkanen kiristyy nopeasti, mutta pilvisenä yönä lämpötila laskee vain vähän. Mikä selittää eron parhaiten?</p><ul class=\"choices\"><li><label><span>Pilvet tuottavat itse lämpöä.</span></label></li><li><label><span>Pilvet estävät avaruuden kylmyyttä tulemasta maanpinnalle.</span></label></li><li><label><span>Pilvet imevät maanpinnan lämpösäteilyä ja säteilevät osan siitä takaisin alas, joten maanpinta menettää nettona vähemmän energiaa.</span></label></li><li><label><span>Pilvet estävät lämpöä johtumasta maanpinnalta avaruuteen.</span></label></li></ul><div class=\"choice-actions\"></div><output></output></fieldset>",
@@ -4263,7 +4263,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-12:check-c2",
-     "number": "Itsearvio: 3. Käsitetehtävä: Lämmön siirtymistapa",
+     "number": "Testaa ja arvioi: 3. Käsitetehtävä: Lämmön siirtymistapa",
      "level": 0,
      "lesson": true,
      "html": "<fieldset class=\"choice list\"><p>Huoneen ilma on viileää, mutta takkatulen edessä istuvan kasvot tuntuvat heti lämpimiltä. Miten lämpö siirtyy tulesta kasvoihin?</p><ul class=\"choices\"><li><label><span>Konvektiolla, koska tulen lämmittämä ilma virtaa kasvoille.</span></label></li><li><label><span>Johtumalla ilman kautta, koska lämpö etenee ilman hiukkasten törmäyksissä tulesta kasvoille.</span></label></li><li><label><span>Lämpösäteilynä, koska tuli lähettää säteilyä, jonka kasvojen iho imee ja joka lämmittää ihoa suoraan.</span></label></li></ul><div class=\"choice-actions\"></div><output></output></fieldset>",
@@ -4271,7 +4271,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-12:check-2",
-     "number": "Itsearvio: 4. Laskutehtävä: Ilmakehän energiatase",
+     "number": "Testaa ja arvioi: 4. Laskutehtävä: Ilmakehän energiatase",
      "level": 0,
      "lesson": true,
      "html": "<div class=\"numeric\"><p class=\"task scenario\">Tutki-vaiheen ensimmäisen taulukon mallissa maanpinta säteilee <span class=\"math-glue\"><span><math><semantics><mrow><mn>390</mn> <msup><mtext>W/m</mtext><mn>2</mn></msup></mrow></semantics></math></span>.</span> Siitä <span><math><semantics><mrow><mn>100</mn> <msup><mtext>W/m</mtext><mn>2</mn></msup></mrow></semantics></math></span> pääsee ilmakehän läpi suoraan avaruuteen, ja loput ilmakehä imee. Ilmakehä säteilee alas maanpinnalle <span class=\"math-glue\"><span><math><semantics><mrow><mn>150</mn> <msup><mtext>W/m</mtext><mn>2</mn></msup></mrow></semantics></math></span>.</span> Koko maapallo on tasapainossa, joten avaruuteen lähtee yhteensä <span class=\"math-glue\"><span><math><semantics><mrow><mn>240</mn> <msup><mtext>W/m</mtext><mn>2</mn></msup></mrow></semantics></math></span>.</span></p><p class=\"task ask\">Kuinka suuren tehon neliömetriä kohti ilmakehä säteilee ylöspäin avaruuteen? Luvut ovat esimerkkiarvoja.</p></div>",
@@ -4279,7 +4279,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-12:check-3",
-     "number": "Itsearvio: 5. Selitystehtävä: Selitä ja siirrä",
+     "number": "Testaa ja arvioi: 5. Selitystehtävä: Selitä ja siirrä",
      "level": 0,
      "lesson": true,
      "html": "<div class=\"explain\"><p class=\"task\">Ystäväsi väittää: ”Maapallo säteilee avaruuteen yhtä paljon energiaa kuin imee Auringosta, joten lisähiilidioksidi ei voi muuttaa sen lämpötilaa. Sitä paitsi kasvihuoneilmiö on kokonaan haitallinen.” Selitä energiatasapainon ja lämpösäteilyn avulla, mikä väitteessä on oikein ja mikä väärin.</p><div class=\"choice-actions\"></div></div>",
@@ -4539,7 +4539,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-16:check-1",
-     "number": "Itsearvio: 2. Käsitetehtävä",
+     "number": "Testaa ja arvioi: 2. Käsitetehtävä",
      "level": 0,
      "lesson": true,
      "html": "<fieldset class=\"choice list\"><p>Kylmälaukun jää on juuri sulanut loppuun, ja sisällä on vettä <span class=\"math-glue\"><span><math><semantics><mrow><mn>0</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>:</span>ssa. Seinän läpi tulee juuri nyt sama teho kuin äsken. Mitä sisälämpötilalle tapahtuu seuraavaksi ja miksi?</p><ul class=\"choices\"><li><label><span>Se nousee, koska energia ei enää kulu jään sulattamiseen vaan veden lämmittämiseen, <span class=\"math-glue\"><span><math><semantics><mrow><mi>Q</mi><mo>=</mo><mi>c</mi><mi>m</mi><mi mathvariant=\"normal\">Δ</mi><mi>T</mi></mrow></semantics></math></span>.</span></span></label></li><li><label><span>Se pysyy <span class=\"math-glue\"><span><math><semantics><mrow><mn>0</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>:</span>ssa, koska vesi on jo kylmää.</span></label></li><li><label><span>Se hyppää heti ulkolämpötilaan, koska eriste ei toimi ilman jäätä.</span></label></li><li><label><span>Se laskee, koska sulanut jää jäähdyttää vettä.</span></label></li></ul><div class=\"choice-actions\"></div><output></output></fieldset>",
@@ -4547,7 +4547,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-16:check-c2",
-     "number": "Itsearvio: 3. Käsitetehtävä: Sulamislämpö kylmälaukussa",
+     "number": "Testaa ja arvioi: 3. Käsitetehtävä: Sulamislämpö kylmälaukussa",
      "level": 0,
      "lesson": true,
      "html": "<fieldset class=\"choice list\"><p>Kylmälaukkuun voi laittaa joko <span><math><semantics><mrow><mn>1</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>0</mn> <mtext>kg</mtext></mrow></semantics></math></span> jäätä tai <span><math><semantics><mrow><mn>1</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>0</mn> <mtext>kg</mtext></mrow></semantics></math></span> vettä, kumpikin lämpötilassa <span class=\"math-glue\"><span><math><semantics><mrow><mn>0</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>.</span> Kumpi pitää laukun sisällön kylmänä pidempään, ja miksi?</p><ul class=\"choices\"><li><label><span>Vesi, koska vesi johtaa lämpöä paremmin ja jäähdyttää ruoat nopeammin.</span></label></li><li><label><span>Yhtä kauan, koska kumpikin on lämpötilassa <span class=\"math-glue\"><span><math><semantics><mrow><mn>0</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>.</span></span></label></li><li><label><span>Jää, koska jää on kylmempää kuin vesi.</span></label></li><li><label><span>Jää, koska sen sulaminen sitoo noin <span><math><semantics><mrow><mn>334</mn> <mtext>kJ</mtext></mrow></semantics></math></span> ennen kuin lämpötila alkaa nousta.</span></label></li></ul><div class=\"choice-actions\"></div><output></output></fieldset>",
@@ -4555,7 +4555,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-16:check-2",
-     "number": "Itsearvio: 4. Laskutehtävä: Kaksi energian kohdetta",
+     "number": "Testaa ja arvioi: 4. Laskutehtävä: Kaksi energian kohdetta",
      "level": 0,
      "lesson": true,
      "html": "<div class=\"numeric\"><p class=\"task scenario\">Pakastimesta otettu <span class=\"math-glue\"><span><math><semantics><mrow><mn>0</mn><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mn>60</mn> <mtext>kg</mtext></mrow></semantics></math></span>:</span>n jääpussi on <span class=\"math-glue\"><span><math><semantics><mrow><mo>−</mo><mn>10</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>:</span>ssa.</p><p class=\"task ask\">Kuinka paljon energiaa tarvitaan, jotta jää lämpenee <span class=\"math-glue\"><span><math><semantics><mrow><mn>0</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>:</span>seen ja sulaa kokonaan vedeksi, jonka lämpötila on <span class=\"math-glue\"><span><math><semantics><mrow><mn>0</mn> <msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow></semantics></math></span>?</span> Jään ominaislämpökapasiteetti on <span class=\"math-glue\"><span><math><semantics><mrow><mn>2100</mn> <mfrac><mtext>J</mtext><mrow><mtext>kg</mtext><mo>⋅</mo><mtext>K</mtext></mrow></mfrac></mrow></semantics></math></span>.</span> Vastaa kilojouleina.</p></div>",
@@ -4563,7 +4563,7 @@ var RL_COURSE = {
     },
     {
      "id": "fy3-16:check-3",
-     "number": "Itsearvio: 5. Selitystehtävä: Selitä ja siirrä",
+     "number": "Testaa ja arvioi: 5. Selitystehtävä: Selitä ja siirrä",
      "level": 0,
      "lesson": true,
      "html": "<div class=\"explain\"><p class=\"task scenario\">Löylyvettä heitetään <span class=\"math-glue\"><span><math><semantics><mrow><mn>25</mn> <mtext>kg</mtext></mrow></semantics></math></span>:</span>n kiuaskiville. Selitä energian säilymisen ja olomuodon muutoksen avulla, miksi kivien lämpötila laskee heti ja miksi löyly tuntuu kuumalta iholla.</p><p class=\"task ask\">Miksi tämä ei toimisi, jos veden höyrystyminen ei vaatisi energiaa?</p><div class=\"choice-actions\"></div></div>",
