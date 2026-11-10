@@ -762,7 +762,7 @@ def self_statements(chapter, lang):
 
 
 def sa_goals_html(chapter, inquiry, md, lang):
-    """The start of Itsearvio (teacher 2026-11-06: goals first, then the tasks): the chapter's goals as statements ("Opin erottamaan painon ja massan"), or the
+    """The end of Testaa ja arvioi (teacher 2026-11-10: the tasks first, then this card; its start until then): the chapter's goals as statements ("Opin erottamaan painon ja massan"), or the
     chapter's own statements of what the tasks did not measure (inquiry.json "self_extra"), on the same scale."""
     extra = inquiry.get("self_extra") or self_statements(chapter, lang)
     items = [(f"tavoite-{i + 1}", x) for i, x in enumerate(extra)] if extra else [(f"tavoite-{i + 1}", T("inquiry.sa_goal_prefix") + " " + x) for i, x in enumerate(inquiry.get("learn") or [])]
@@ -891,8 +891,8 @@ def render(folder, inquiry, parts, md):
             inner = (flow(items[:si]) + f'<div class="lab"><div class="lab-side">{act(items[si])}</div>'
                      f'<div class="lab-main">{flow(items[si + 1:])}{more}</div></div>')
         else: inner = flow(items) + more
-        if sid == "tarkista" and parts.get("selfassess"):   # the goals first, then the tasks with their own ratings (teacher 2026-11-06 evening)
-            inner = sa_goals_html(lid, inquiry, md, courses.lang_of(folder)) + inner   # no separate key: the chosen level's text shows under the scale (teacher 2026-11-06)
+        if sid == "tarkista" and parts.get("selfassess"):   # Testaa ja arvioi (teacher 2026-11-10): the tasks first, then the goals' self-assessment, so the student assesses with the tasks' feedback in hand (the goals first until then, 2026-11-06)
+            inner = inner + sa_goals_html(lid, inquiry, md, courses.lang_of(folder))   # no separate key: the chosen level's text shows under the scale (teacher 2026-11-06)
         if sid == cards_at: inner += parts["cards"]       # the chapter's concept cards close Esimerkit (teacher 2026-11-05)
         if sid == "ennusta":                           # closed at first; reopened later, the answers are still there
             k = sum(1 for a in items if a["type"] == "choice")
