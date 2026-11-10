@@ -173,18 +173,18 @@ All the matter around us consists of **atoms**. Atoms can join together to form 
   <circle cx="66" cy="154" r="4" fill="#c92a2a" stroke="#ffffff" stroke-width="1.5"/>
   <circle cx="87" cy="142" r="4" fill="#1971c2" stroke="#ffffff" stroke-width="1.5"/>
   <circle cx="48" cy="169" r="4" fill="#1971c2" stroke="#ffffff" stroke-width="1.5"/>
-  <circle cx="72" cy="251" r="6.4" fill="#c4ccd4" stroke="#6c7075" stroke-width="1.5"/>
-  <circle cx="74" cy="214.5" r="6.4" fill="#c92a2a" stroke="#7d1a1a" stroke-width="1.5"/>
-  <circle cx="49" cy="239" r="6.4" fill="#c4ccd4" stroke="#6c7075" stroke-width="1.5"/>
-  <circle cx="82.5" cy="238" r="6.4" fill="#c4ccd4" stroke="#6c7075" stroke-width="1.5"/>
-  <circle cx="58.5" cy="217.5" r="6.4" fill="#c92a2a" stroke="#7d1a1a" stroke-width="1.5"/>
-  <circle cx="62" cy="246.5" r="6.4" fill="#c4ccd4" stroke="#6c7075" stroke-width="1.5"/>
-  <circle cx="78" cy="224.5" r="6.4" fill="#c92a2a" stroke="#7d1a1a" stroke-width="1.5"/>
-  <circle cx="53.5" cy="230" r="6.4" fill="#c92a2a" stroke="#7d1a1a" stroke-width="1.5"/>
-  <circle cx="73" cy="241" r="6.4" fill="#c4ccd4" stroke="#6c7075" stroke-width="1.5"/>
-  <circle cx="67" cy="222.5" r="6.4" fill="#c92a2a" stroke="#7d1a1a" stroke-width="1.5"/>
-  <circle cx="60.5" cy="237" r="6.4" fill="#c4ccd4" stroke="#6c7075" stroke-width="1.5"/>
-  <circle cx="70" cy="232" r="6.4" fill="#c92a2a" stroke="#7d1a1a" stroke-width="1.5"/>
+  <circle cx="82.5" cy="239" r="8.4" fill="#c92a2a" stroke="#7d1a1a" stroke-width="1.5"/>
+  <circle cx="73" cy="248.5" r="8.4" fill="#c4ccd4" stroke="#6c7075" stroke-width="1.5"/>
+  <circle cx="59" cy="248.5" r="8.4" fill="#c92a2a" stroke="#7d1a1a" stroke-width="1.5"/>
+  <circle cx="49.5" cy="239" r="8.4" fill="#c4ccd4" stroke="#6c7075" stroke-width="1.5"/>
+  <circle cx="49.5" cy="225" r="8.4" fill="#c92a2a" stroke="#7d1a1a" stroke-width="1.5"/>
+  <circle cx="59" cy="215.5" r="8.4" fill="#c4ccd4" stroke="#6c7075" stroke-width="1.5"/>
+  <circle cx="73" cy="215.5" r="8.4" fill="#c92a2a" stroke="#7d1a1a" stroke-width="1.5"/>
+  <circle cx="82.5" cy="225" r="8.4" fill="#c4ccd4" stroke="#6c7075" stroke-width="1.5"/>
+  <circle cx="72" cy="238" r="8.4" fill="#c4ccd4" stroke="#6c7075" stroke-width="1.5"/>
+  <circle cx="60" cy="238" r="8.4" fill="#c92a2a" stroke="#7d1a1a" stroke-width="1.5"/>
+  <circle cx="60" cy="226" r="8.4" fill="#c4ccd4" stroke="#6c7075" stroke-width="1.5"/>
+  <circle cx="72" cy="226" r="8.4" fill="#c92a2a" stroke="#7d1a1a" stroke-width="1.5"/>
   <circle cx="66" cy="310" r="30" fill="#ffc078" stroke="#e8590c" stroke-width="2.5"/>
   <circle cx="66" cy="295.5" r="6.6" fill="#c92a2a" stroke="#ffffff" stroke-width="1.5"/>
   <circle cx="78.5" cy="317" r="6.6" fill="#2b8a3e" stroke="#ffffff" stroke-width="1.5"/>
@@ -366,18 +366,18 @@ Structures stay together and change because of **interactions**. All known inter
   <foreignObject x="350.5" y="127.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{nucleus}$</div></foreignObject>
   <foreignObject x="462" y="125.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{electron}$</div></foreignObject>
   <foreignObject x="337" y="173.5" width="220" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{atom stays together}$</div></foreignObject>
-  <circle cx="97.5" cy="354" r="8" fill="#c4ccd4" stroke="#6c7075" stroke-width="1.5"/>
-  <circle cx="100.5" cy="308" r="8" fill="#c92a2a" stroke="#7d1a1a" stroke-width="1.5"/>
-  <circle cx="68.5" cy="339" r="8" fill="#c4ccd4" stroke="#6c7075" stroke-width="1.5"/>
-  <circle cx="110.5" cy="337.5" r="8" fill="#c4ccd4" stroke="#6c7075" stroke-width="1.5"/>
-  <circle cx="80.5" cy="312" r="8" fill="#c92a2a" stroke="#7d1a1a" stroke-width="1.5"/>
-  <circle cx="85" cy="348.5" r="8" fill="#c4ccd4" stroke="#6c7075" stroke-width="1.5"/>
-  <circle cx="105" cy="320.5" r="8" fill="#c92a2a" stroke="#7d1a1a" stroke-width="1.5"/>
-  <circle cx="74.5" cy="327" r="8" fill="#c92a2a" stroke="#7d1a1a" stroke-width="1.5"/>
-  <circle cx="98.5" cy="341" r="8" fill="#c4ccd4" stroke="#6c7075" stroke-width="1.5"/>
-  <circle cx="91" cy="318" r="8" fill="#c92a2a" stroke="#7d1a1a" stroke-width="1.5"/>
-  <circle cx="83" cy="336" r="8" fill="#c4ccd4" stroke="#6c7075" stroke-width="1.5"/>
-  <circle cx="95.5" cy="330" r="8" fill="#c92a2a" stroke="#7d1a1a" stroke-width="1.5"/>
+  <circle cx="110.5" cy="338.5" r="10.5" fill="#c92a2a" stroke="#7d1a1a" stroke-width="1.5"/>
+  <circle cx="98.5" cy="350.5" r="10.5" fill="#c4ccd4" stroke="#6c7075" stroke-width="1.5"/>
+  <circle cx="81.5" cy="350.5" r="10.5" fill="#c92a2a" stroke="#7d1a1a" stroke-width="1.5"/>
+  <circle cx="69.5" cy="338.5" r="10.5" fill="#c4ccd4" stroke="#6c7075" stroke-width="1.5"/>
+  <circle cx="69.5" cy="321.5" r="10.5" fill="#c92a2a" stroke="#7d1a1a" stroke-width="1.5"/>
+  <circle cx="81.5" cy="309.5" r="10.5" fill="#c4ccd4" stroke="#6c7075" stroke-width="1.5"/>
+  <circle cx="98.5" cy="309.5" r="10.5" fill="#c92a2a" stroke="#7d1a1a" stroke-width="1.5"/>
+  <circle cx="110.5" cy="321.5" r="10.5" fill="#c4ccd4" stroke="#6c7075" stroke-width="1.5"/>
+  <circle cx="97.5" cy="337.5" r="10.5" fill="#c4ccd4" stroke="#6c7075" stroke-width="1.5"/>
+  <circle cx="82.5" cy="337.5" r="10.5" fill="#c92a2a" stroke="#7d1a1a" stroke-width="1.5"/>
+  <circle cx="82.5" cy="322.5" r="10.5" fill="#c4ccd4" stroke="#6c7075" stroke-width="1.5"/>
+  <circle cx="97.5" cy="322.5" r="10.5" fill="#c92a2a" stroke="#7d1a1a" stroke-width="1.5"/>
   <line x1="104" y1="316" x2="180" y2="286" stroke="#6b7480" stroke-width="1.25" stroke-linecap="butt" stroke-dasharray="5 4"/>
   <line x1="104" y1="324" x2="180" y2="366" stroke="#6b7480" stroke-width="1.25" stroke-linecap="butt" stroke-dasharray="5 4"/>
   <circle cx="102" cy="320" r="6" fill="none" stroke="#e8590c" stroke-width="2"/>

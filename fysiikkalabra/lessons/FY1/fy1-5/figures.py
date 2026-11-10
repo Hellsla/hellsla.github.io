@@ -163,20 +163,67 @@ def lightning():
     return f.svg()
 
 
+def _limb(f, pts, color, w):
+    """A limb as one round-capped polyline, outlined by a slightly wider darker copy under it."""
+    d = "M" + " L".join(f"{n(x)},{n(y)}" for x, y in pts)
+    f.path(d, stroke=S.dark(color, 0.35), w=w + 2.5, extra='stroke-linecap="round"')
+    f.path(d, stroke=color, w=w, extra='stroke-linecap="round"')
+
+
+def _person(f, x, yf, coat, hair, hurry=False):
+    """A walker in side view heading right, feet on yf, about 150 px tall: far limbs a shade darker, the near leg forward
+    and the near arm back; hurry leans the body forward and lengthens the stride and the arm swing."""
+    st, lean = (1.3, 9) if hurry else (1.0, 3)
+    skin, trousers, shoe = "#f1d3b3", "#3f4c5a", "#2b3138"
+    hip = (x, yf - 78); sh = (x + lean, yf - 136); head = (x + lean + 3, yf - 160)
+    far_t, far_c = S.dark(trousers, 0.25), S.dark(coat, 0.2)
+    def shoe_at(fx, fy):
+        f.path(f"M{n(fx - 7)},{n(fy)} h18 q4,0 4,-4 q0,-5 -8,-6 h-12 q-3,0 -3,3 Z", shoe, S.dark(shoe, 0.2), 1)
+    # far leg back, far arm forward
+    bk = (x - 22 * st, yf - 3); _limb(f, [hip, (x - 10 * st, yf - 40), bk], far_t, 12); shoe_at(bk[0], yf)
+    _limb(f, [(sh[0], sh[1] + 6), (sh[0] + 14 * st, sh[1] + 30), (sh[0] + 26 * st, sh[1] + 46)], far_c, 10)
+    f.circle(sh[0] + 26 * st, sh[1] + 48, 5.5, skin, S.dark(skin, 0.3), 1)
+    # near leg forward
+    fw = (x + 24 * st, yf - 3); _limb(f, [hip, (x + 16 * st, yf - 42), fw], trousers, 12); shoe_at(fw[0], yf)
+    # body: a rounded coat from the hip to the shoulder
+    _limb(f, [(hip[0], hip[1] - 4), sh], coat, 26)
+    # near arm back
+    _limb(f, [(sh[0], sh[1] + 6), (sh[0] - 10 * st, sh[1] + 30), (sh[0] - 22 * st, sh[1] + 44)], coat, 10)
+    f.circle(sh[0] - 22 * st, sh[1] + 46, 5.5, skin, S.dark(skin, 0.3), 1)
+    # neck, head and hair
+    f.line(sh[0] + 1, sh[1] - 6, head[0], head[1] + 10, skin, 8, cap="round")
+    f.circle(head[0], head[1], 13, skin, S.dark(skin, 0.3), 1)
+    hx, hy = head
+    f.path(f"M{n(hx - 13)},{n(hy + 3)} Q{n(hx - 15)},{n(hy - 15)} {n(hx + 1)},{n(hy - 14)} Q{n(hx + 13)},{n(hy - 13)} {n(hx + 13)},{n(hy - 4)} "
+           f"Q{n(hx + 2)},{n(hy - 7)} {n(hx - 3)},{n(hy + 4)} Z", hair, S.dark(hair, 0.3), 1)
+    f.circle(hx + 7, hy - 1, 1.6, "#2b3138")
+
+
 def two_friends():
     """Task illustration (fy1-5-L3-03): two friends set off from the school door along a straight street; no numbers."""
     f = S.scene("fy15-friends", "Kuvitus: kaksi ystävää lähtee koulun ovelta samaa suoraa katua pitkin samaan suuntaan. Edellä kävelee toinen, "
                 "ja ovelta lähtee perään toinen, joka pitää kiirettä.")
     H.sky(f, "fy15f", 360)
-    f.rect(0, 120, 220, 160, "#e5c9a3", S.dark("#e5c9a3", 0.35), S.W_OBJ)                    # the school
-    for x in (20, 80, 150): f.rect(x, 140, 44, 40, "#cfe3f3", S.dark("#e5c9a3", 0.35), 1.25)
-    f.rect(96, 200, 56, 80, "#7a5236", S.dark("#7a5236", 0.35), S.W_OBJ)
-    f.rect(0, 110, 230, 14, "#9a4a3a")
-    f.rect(0, 280, 600, 80, "#b9bfc6"); f.rect(0, 276, 600, 6, "#9aa3ad")
-    for x in range(0, 600, 60): f.line(x, 282, x - 20, 360, "#a8afb7", 1.25)
-    for x in (300, 470): H.birch(f, x + 60, 276, 110)
-    H.walker(f, 430, 304, coat="#2b8a3e", trousers="#3a4350", sc=0.4)
-    H.walker(f, 250, 304, coat="#e8590c", trousers="#3a4350", sc=0.4, lean=0.15, stride=1.3)
+    wall, roof = "#e5c9a3", "#9a4a3a"
+    f.rect(0, 118, 230, 168, wall, S.dark(wall, 0.35), S.W_OBJ)                              # the school
+    f.rect(-4, 106, 242, 16, roof, S.dark(roof, 0.3), S.W_OBJ, 2)
+    for x in (18, 166):
+        f.rect(x, 140, 46, 44, "#cfe3f3", S.dark(wall, 0.4), S.W_DETAIL, 2)
+        f.line(x + 23, 140, x + 23, 184, S.dark(wall, 0.4), S.W_DETAIL)
+    f.rect(92, 196, 60, 90, "#7a5236", S.dark("#7a5236", 0.35), S.W_OBJ, 2)                  # the door
+    f.line(122, 196, 122, 286, S.dark("#7a5236", 0.35), S.W_DETAIL)
+    f.circle(114, 244, 2.5, "#e9c46a"); f.circle(130, 244, 2.5, "#e9c46a")
+    f.rect(84, 146, 76, 26, WHITE, S.dark(wall, 0.4), S.W_DETAIL, 3)                         # a blank sign over the door
+    for x in (330, 560):                                                                      # street lamps
+        f.line(x, 286, x, 150, "#5c6670", 4, cap="round")
+        f.path(f"M{x},{150} q0,-14 -16,-14", stroke="#5c6670", w=4, extra='stroke-linecap="round"')
+        f.path(f"M{x - 26},{140} h20 l-4,8 h-12 Z", "#ffe8a3", S.dark("#5c6670", 0.2), 1)
+    f.rect(0, 286, 600, 74, "#c3c8ce")                                                        # pavement and kerb
+    f.rect(0, 286, 600, 3, S.dark("#c3c8ce", 0.15))
+    for x in range(40, 600, 80): f.line(x, 289, x - 12, 360, S.dark("#c3c8ce", 0.08), S.W_DETAIL)
+    f.rect(0, 340, 600, 20, "#8d959e")
+    _person(f, 430, 318, "#2b8a3e", "#5a3e2b")
+    _person(f, 200, 318, "#e8590c", "#2b3138", hurry=True)
     return f.svg()
 
 

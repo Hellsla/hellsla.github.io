@@ -146,10 +146,10 @@ def vt_graph():
 
 
 def same_fall():
-    f = Fig("fy16-same", 360, "Kaavakuva: kaksi teräspalloa, 1 kg ja 5 kg, putoavat levosta yhtä aikaa ilman ilmanvastusta; raskaampi pallo on "
+    f = Fig("fy16-same", 440, "Kaavakuva: kaksi teräspalloa, 1 kg ja 5 kg, putoavat levosta yhtä aikaa ilman ilmanvastusta; raskaampi pallo on "
             "suurempi. Pallot ovat jokaisella hetkellä, 0, 1 ja 2 sekuntia, samalla korkeudella, ja niiden nopeusnuolet ovat yhtä pitkät: "
             "0; 9,81 ja 19,6 metriä sekunnissa. Katkoviiva kulkee molempien nuolten kärkien kautta.")
-    top, ppm, k = 100, 7.4, 1.8
+    top, ppm, k = 100, 11.5, 1.8                                # 4,9 m apart at t = 1 s: the 5 kg balls stay clear of each other
     xl, xr = 238, 392
     f.rect(xl - 40, top - 40, xr - xl + 80, 10, IRON, dark(IRON), W_OBJ, 2)
     for x in (xl, xr): f.line(x, top - 30, x, top - 21, dark(IRON), 3)

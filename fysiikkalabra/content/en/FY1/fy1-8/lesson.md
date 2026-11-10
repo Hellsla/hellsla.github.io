@@ -230,60 +230,118 @@ A **variable** is a quantity or other factor that can vary in an investigation. 
 
 If two variables change at the same time, for example the distance and the batteries, you cannot tell what caused the change in the result. That is why an experiment is fair only when just the independent variable changes.
 
-<svg data-fig="setup" data-style="house" viewBox="0 0 600 330" role="img" aria-label="Diagram of the experimental set-up: a toy car runs along a level track on a table from a start line to a finish line. Beside the track is a distance scale in metres, and the gap between the start line and the finish line is the independent variable, the distance s. A hand stopwatch measures the time t, which is the dependent variable. The car, the surface and the batteries are kept constant. The scale is accurate: 150 units in the picture correspond to one metre." style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy18-wood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
+<svg data-fig="setup" data-style="house" viewBox="0 0 600 414" role="img" aria-label="Diagram of the experimental set-up: a battery toy car runs on a table from a start line to a finish line with a chequered flag. A tape measure with a scale in metres runs along the edge of the table, and the gap between the start line and the finish line is the independent variable, the distance s. A stopwatch measures the time t, which is the dependent variable. The car, the surface and the batteries are kept constant. The scale is accurate: 150 units in the picture correspond to one metre." style="max-width:100%;font-size:24px">
   <foreignObject x="24" y="13.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{independent: } s$</div></foreignObject>
   <foreignObject x="24" y="47.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{dependent: } t$</div></foreignObject>
   <foreignObject x="24" y="81.5" width="420" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{constant: car, surface, batteries}$</div></foreignObject>
-  <rect x="514" y="20" width="12" height="12" rx="2" fill="#ffffff" stroke="#3a4350" stroke-width="1.75"/>
-  <circle cx="520" cy="66" r="30" fill="#ffffff" stroke="#3a4350" stroke-width="1.75"/>
-  <line x1="520" y1="44" x2="520" y2="39" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="531" y1="47" x2="533.5" y2="42.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="539" y1="55" x2="543.5" y2="52.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="542" y1="66" x2="547" y2="66" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="539" y1="77" x2="543.5" y2="79.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="531" y1="85" x2="533.5" y2="89.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="520" y1="88" x2="520" y2="93" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="509" y1="85" x2="506.5" y2="89.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="501" y1="77" x2="496.5" y2="79.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="498" y1="66" x2="493" y2="66" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="501" y1="55" x2="496.5" y2="52.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="509" y1="47" x2="506.5" y2="42.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="520" y1="66" x2="536" y2="52" stroke="#e8590c" stroke-width="3" stroke-linecap="round"/>
-  <circle cx="520" cy="66" r="3.5" fill="#1f2933"/>
-  <foreignObject x="510" y="103.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$t$</div></foreignObject>
-  <rect x="40" y="200" width="520" height="16" fill="url(#fy18-wood)" stroke="#3a4350" stroke-width="1.75"/>
-  <line x1="72" y1="216" x2="72" y2="224" stroke="#1f2933" stroke-width="1.75" stroke-linecap="butt"/>
-  <foreignObject x="62" y="227.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$0$</div></foreignObject>
-  <line x1="147" y1="216" x2="147" y2="224" stroke="#1f2933" stroke-width="1.75" stroke-linecap="butt"/>
-  <foreignObject x="124.5" y="227.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$0.5$</div></foreignObject>
-  <line x1="222" y1="216" x2="222" y2="224" stroke="#1f2933" stroke-width="1.75" stroke-linecap="butt"/>
-  <foreignObject x="212" y="227.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$1$</div></foreignObject>
-  <line x1="297" y1="216" x2="297" y2="224" stroke="#1f2933" stroke-width="1.75" stroke-linecap="butt"/>
-  <foreignObject x="274.5" y="227.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$1.5$</div></foreignObject>
-  <line x1="372" y1="216" x2="372" y2="224" stroke="#1f2933" stroke-width="1.75" stroke-linecap="butt"/>
-  <foreignObject x="362" y="227.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$2$</div></foreignObject>
-  <line x1="447" y1="216" x2="447" y2="224" stroke="#1f2933" stroke-width="1.75" stroke-linecap="butt"/>
-  <foreignObject x="424.5" y="227.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$2.5$</div></foreignObject>
-  <foreignObject x="475" y="227.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$s\ (\text{m})$</div></foreignObject>
-  <line x1="72" y1="140" x2="72" y2="200" stroke="#6b7480" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <foreignObject x="37" y="111.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{start}$</div></foreignObject>
-  <line x1="372" y1="140" x2="372" y2="200" stroke="#6b7480" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <foreignObject x="330.5" y="111.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{finish}$</div></foreignObject>
-  <path d="M88,190 V174 Q90,164 104,162 L116,146 H142 L156,162 Q168,163 170,174 V190 Z" fill="#d6402f" stroke="#80261c" stroke-width="1.75" stroke-linejoin="round"/>
-  <path d="M120,150 H139 L149,162 H112 Z" fill="#dbe9f5" stroke="#80261c" stroke-width="1.25" stroke-linejoin="round"/>
-  <path d="M92,172 H166" fill="none" stroke="#e48378" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="108" cy="191" r="9" fill="#3a4350"/>
-  <circle cx="108" cy="191" r="3.5" fill="#c4ccd4"/>
-  <circle cx="150" cy="191" r="9" fill="#3a4350"/>
-  <circle cx="150" cy="191" r="3.5" fill="#c4ccd4"/>
-  <line x1="176" y1="160" x2="238" y2="160" stroke="#1971c2" stroke-width="3.25" stroke-linecap="butt"/>
-  <path d="M250,160 L233.5,167.5 L238,160 L233.5,152.5 Z" fill="#1971c2" stroke-linejoin="round"/>
-  <foreignObject x="264" y="145.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$v$</div></foreignObject>
-  <line x1="72" y1="272" x2="372" y2="272" stroke="#6b7480" stroke-width="1.25"/>
-  <line x1="72" y1="266" x2="72" y2="278" stroke="#6b7480" stroke-width="1.25"/>
-  <line x1="372" y1="266" x2="372" y2="278" stroke="#6b7480" stroke-width="1.25"/>
-  <foreignObject x="168" y="277.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$s = 2.00\,\text{m}$</div></foreignObject>
+  <rect x="412" y="88" width="28" height="15" rx="3" fill="#2b3138" stroke="#1b1e23" stroke-width="1"/>
+  <rect x="430" y="88" width="10" height="15" rx="2" fill="#fab005" stroke="#966a03" stroke-width="1"/>
+  <rect x="440" y="92" width="3" height="7" rx="1" fill="#adb5bd"/>
+  <rect x="446" y="88" width="28" height="15" rx="3" fill="#2b3138" stroke="#1b1e23" stroke-width="1"/>
+  <rect x="464" y="88" width="10" height="15" rx="2" fill="#fab005" stroke="#966a03" stroke-width="1"/>
+  <rect x="474" y="92" width="3" height="7" rx="1" fill="#adb5bd"/>
+  <rect x="531" y="32.5" width="9.5" height="7" rx="3" fill="#6c757d" stroke="#43494e" stroke-width="1.75"/>
+  <rect x="534" y="39" width="4" height="4" fill="#6c757d"/>
+  <circle cx="536" cy="72" r="30" fill="#c4ccd4" stroke="#6c7075" stroke-width="1.75"/>
+  <circle cx="536" cy="72" r="24.6" fill="#ffffff" stroke="#3a4350" stroke-width="1.75"/>
+  <line x1="536" y1="51.5" x2="536" y2="48.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="546" y1="54.5" x2="547.5" y2="51.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="553.5" y1="62" x2="556.5" y2="60.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="556.5" y1="72" x2="559.5" y2="72" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="553.5" y1="82" x2="556.5" y2="83.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="546" y1="89.5" x2="547.5" y2="92.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="536" y1="92.5" x2="536" y2="95.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="526" y1="89.5" x2="524.5" y2="92.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="518.5" y1="82" x2="515.5" y2="83.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="515.5" y1="72" x2="512.5" y2="72" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="518.5" y1="62" x2="515.5" y2="60.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="526" y1="54.5" x2="524.5" y2="51.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="536" y1="72" x2="549.5" y2="57.5" stroke="#c92a2a" stroke-width="2.1" stroke-linecap="round"/>
+  <circle cx="536" cy="72" r="2.4" fill="#1f2933"/>
+  <foreignObject x="526" y="117.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$t$</div></foreignObject>
+  <rect x="38" y="270" width="16" height="120" fill="#ab7d4c" stroke="#6f5132" stroke-width="1.75"/>
+  <rect x="556" y="270" width="16" height="120" fill="#ab7d4c" stroke="#6f5132" stroke-width="1.75"/>
+  <rect x="30" y="240" width="540" height="30" rx="3" fill="#c9935a" stroke="#6f5132" stroke-width="1.75"/>
+  <rect x="30" y="240" width="540" height="5" fill="#d9b38c"/>
+  <rect x="44" y="250" width="512" height="15" rx="2" fill="#ffe066" stroke="#8c7b38" stroke-width="1"/>
+  <line x1="72" y1="250" x2="72" y2="265" stroke="#3a4350" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="87" y1="250" x2="87" y2="257" stroke="#3a4350" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="102" y1="250" x2="102" y2="257" stroke="#3a4350" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="117" y1="250" x2="117" y2="257" stroke="#3a4350" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="132" y1="250" x2="132" y2="257" stroke="#3a4350" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="147" y1="250" x2="147" y2="265" stroke="#3a4350" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="162" y1="250" x2="162" y2="257" stroke="#3a4350" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="177" y1="250" x2="177" y2="257" stroke="#3a4350" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="192" y1="250" x2="192" y2="257" stroke="#3a4350" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="207" y1="250" x2="207" y2="257" stroke="#3a4350" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="222" y1="250" x2="222" y2="265" stroke="#3a4350" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="237" y1="250" x2="237" y2="257" stroke="#3a4350" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="252" y1="250" x2="252" y2="257" stroke="#3a4350" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="267" y1="250" x2="267" y2="257" stroke="#3a4350" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="282" y1="250" x2="282" y2="257" stroke="#3a4350" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="297" y1="250" x2="297" y2="265" stroke="#3a4350" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="312" y1="250" x2="312" y2="257" stroke="#3a4350" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="327" y1="250" x2="327" y2="257" stroke="#3a4350" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="342" y1="250" x2="342" y2="257" stroke="#3a4350" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="357" y1="250" x2="357" y2="257" stroke="#3a4350" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="372" y1="250" x2="372" y2="265" stroke="#3a4350" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="387" y1="250" x2="387" y2="257" stroke="#3a4350" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="402" y1="250" x2="402" y2="257" stroke="#3a4350" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="417" y1="250" x2="417" y2="257" stroke="#3a4350" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="432" y1="250" x2="432" y2="257" stroke="#3a4350" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="447" y1="250" x2="447" y2="265" stroke="#3a4350" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="62" y="277.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$0$</div></foreignObject>
+  <foreignObject x="124.5" y="277.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$0.5$</div></foreignObject>
+  <foreignObject x="212" y="277.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$1$</div></foreignObject>
+  <foreignObject x="274.5" y="277.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$1.5$</div></foreignObject>
+  <foreignObject x="362" y="277.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$2$</div></foreignObject>
+  <foreignObject x="424.5" y="277.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$2.5$</div></foreignObject>
+  <foreignObject x="475" y="277.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$s\ (\text{m})$</div></foreignObject>
+  <rect x="69" y="237" width="6" height="6" rx="1" fill="#1971c2"/>
+  <rect x="369" y="237" width="6" height="6" rx="1" fill="#1971c2"/>
+  <line x1="372" y1="238" x2="372" y2="180" stroke="#5c6670" stroke-width="2.5" stroke-linecap="round"/>
+  <rect x="373" y="180" width="8" height="8" fill="#ffffff"/>
+  <rect x="373" y="188" width="8" height="8" fill="#2b3138"/>
+  <rect x="381" y="180" width="8" height="8" fill="#2b3138"/>
+  <rect x="381" y="188" width="8" height="8" fill="#ffffff"/>
+  <rect x="389" y="180" width="8" height="8" fill="#ffffff"/>
+  <rect x="389" y="188" width="8" height="8" fill="#2b3138"/>
+  <rect x="397" y="180" width="8" height="8" fill="#2b3138"/>
+  <rect x="397" y="188" width="8" height="8" fill="#ffffff"/>
+  <rect x="373" y="180" width="32" height="16" fill="none" stroke="#2b3138" stroke-width="1"/>
+  <foreignObject x="41" y="123.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{start}$</div></foreignObject>
+  <foreignObject x="334.5" y="145.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{finish}$</div></foreignObject>
+  <line x1="102" y1="192" x2="94" y2="164" stroke="#3a4350" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="94" cy="162" r="3.5" fill="#ffd43b" stroke="#3a4350" stroke-width="1"/>
+  <path d="M110,198 Q114,174 136,174 H146 Q164,174 170,198 Z" fill="#d0ebff" stroke="#3a4350" stroke-width="1.75" stroke-linejoin="round"/>
+  <line x1="140" y1="175" x2="140" y2="198" stroke="#3a4350" stroke-width="1" stroke-linecap="butt"/>
+  <path d="M126,180 q6,-3 12,-2" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M80,222 V204 Q80,196 90,196 H178 Q192,198 194,212 V222 Q194,226 188,226 H86 Q80,226 80,222 Z" fill="#e03131" stroke="#861d1d" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M86,210 H188" fill="none" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="137" cy="216" r="7" fill="#ffffff" stroke="#861d1d" stroke-width="1.25"/>
+  <circle cx="137" cy="216" r="3" fill="#e03131"/>
+  <path d="M188,202 h6 v7 h-8 Z" fill="#ffd43b" stroke="#997f23" stroke-width="1" stroke-linejoin="round"/>
+  <rect x="77" y="216" width="6" height="9" rx="2" fill="#5c6670"/>
+  <rect x="191" y="218" width="6" height="8" rx="2" fill="#5c6670"/>
+  <circle cx="104" cy="224" r="14" fill="#2b3138"/>
+  <circle cx="104" cy="224" r="7" fill="#e9ecef" stroke="#868e96" stroke-width="1"/>
+  <circle cx="107" cy="227" r="1.2" fill="#868e96"/>
+  <circle cx="101" cy="227" r="1.2" fill="#868e96"/>
+  <circle cx="101" cy="221" r="1.2" fill="#868e96"/>
+  <circle cx="107" cy="221" r="1.2" fill="#868e96"/>
+  <circle cx="170" cy="224" r="14" fill="#2b3138"/>
+  <circle cx="170" cy="224" r="7" fill="#e9ecef" stroke="#868e96" stroke-width="1"/>
+  <circle cx="173" cy="227" r="1.2" fill="#868e96"/>
+  <circle cx="167" cy="227" r="1.2" fill="#868e96"/>
+  <circle cx="167" cy="221" r="1.2" fill="#868e96"/>
+  <circle cx="173" cy="221" r="1.2" fill="#868e96"/>
+  <line x1="204" y1="194" x2="258" y2="194" stroke="#1971c2" stroke-width="3.25" stroke-linecap="butt"/>
+  <path d="M270,194 L253.5,201.5 L258,194 L253.5,186.5 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <foreignObject x="284" y="179.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$v$</div></foreignObject>
+  <line x1="72" y1="332" x2="372" y2="332" stroke="#6b7480" stroke-width="1.25"/>
+  <line x1="72" y1="326" x2="72" y2="338" stroke="#6b7480" stroke-width="1.25"/>
+  <line x1="372" y1="326" x2="372" y2="338" stroke="#6b7480" stroke-width="1.25"/>
+  <foreignObject x="168" y="337.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$s = 2.00\,\text{m}$</div></foreignObject>
 </svg>
 
 ### Planning before measuring

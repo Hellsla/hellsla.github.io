@@ -198,7 +198,7 @@ def gold_bar():
 
 def sinker():
     """Task illustration (fy1-7-L1-08): a fishing line with a float and a lead sinker under the water surface; no numbers."""
-    f = S.scene("fy17-sinker", "Kuvitus: onkisiima järvessä. Pinnalla kelluu punavalkoinen koho, ja siiman alapäässä veden alla on harmaa "
+    f = S.scene("fy17-sinker", "Kuvitus: onkisiima järvessä. Pinnalla kelluu koho, jonka punainen yläosa on veden yläpuolella ja valkoinen alaosa veden alla, ja siiman alapäässä veden alla on harmaa "
                 "pisaranmuotoinen lyijypaino ja koukku.")
     f.rect(0, 0, 600, 120, "#e3eef6")
     f.path("M0,104 C120,96 200,100 300,96 C420,92 520,98 600,96 V120 H0 Z", "#9db8a4")
@@ -206,15 +206,19 @@ def sinker():
     f.rect(0, 250, 600, 110, S.light(WATER, 0.2), extra='opacity="0.5"')
     f.path("M0,120 H600", stroke=S.light(WATER, 0.7), w=3)
     for x in (60, 180, 420, 520): f.path(f"M{x},{126} q14,-5 28,0", stroke="#ffffff", w=2, extra='opacity="0.7"')
-    f.path("M190,0 C230,40 290,80 300,104", stroke=S.SOFT_INK, w=1.25)           # line from the rod above
-    f.path("M300,96 C292,96 288,104 288,112 C288,122 300,128 300,128 C300,128 312,122 312,112 C312,104 308,96 300,96 Z", "#ffffff", S.SOFT_INK, 1.5)
-    f.path("M288,112 C288,122 300,128 300,128 C300,128 312,122 312,112 Z", "#d6402f", S.dark("#d6402f", 0.4), 1.5)
-    f.line(300, 84, 300, 96, S.SOFT_INK, 2)
-    f.line(300, 128, 300, 250, S.SOFT_INK, 1.25)
-    f.path("M300,250 C290,252 286,266 290,276 C294,286 306,286 310,276 C314,266 310,252 300,250 Z", "#7d8590", S.dark("#7d8590", 0.4), S.W_OBJ)
-    f.path("M295,260 q-2,8 1,14", stroke="#c4ccd4", w=2.5, extra='stroke-linecap="round"')
-    f.line(300, 286, 300, 312, S.SOFT_INK, 1.25)
-    f.path("M300,312 v16 a8,8 0 0 1 -16,0 l4,-4", stroke="#5b636d", w=2.5, extra='stroke-linecap="round"')
+    f.path("M190,0 C230,40 290,80 300,90", stroke=S.SOFT_INK, w=1.25)            # line from the rod above
+    # the float: red top above the surface, white bottom under it (the water drawn over it, see-through)
+    body = "M300,102 C290,102 286,112 286,120 C286,132 300,142 300,142 C300,142 314,132 314,120 C314,112 310,102 300,102 Z"
+    f.path(body, "#ffffff", S.SOFT_INK, 1.5)
+    f.path("M300,102 C290,102 286,112 286,120 H314 C314,112 310,102 300,102 Z", "#d6402f", S.dark("#d6402f", 0.4), 1.5)
+    f.line(300, 88, 300, 102, "#d6402f", 3, cap="round")
+    f.path(body.replace("M300,102", "M286,120").split(" C286,132")[0] + " C286,132 300,142 300,142 C300,142 314,132 314,120 Z",
+           S.light(WATER, 0.45), extra='opacity="0.45"')
+    f.line(300, 142, 300, 222, S.SOFT_INK, 1.25)
+    f.path("M300,222 C290,224 286,238 290,248 C294,258 306,258 310,248 C314,238 310,224 300,222 Z", "#7d8590", S.dark("#7d8590", 0.4), S.W_OBJ)
+    f.path("M295,232 q-2,8 1,14", stroke="#c4ccd4", w=2.5, extra='stroke-linecap="round"')
+    f.line(300, 258, 300, 284, S.SOFT_INK, 1.25)
+    f.path("M300,284 v16 a8,8 0 0 1 -16,0 l4,-4", stroke="#5b636d", w=2.5, extra='stroke-linecap="round"')
     for x, y, r in ((120, 220, 4), (128, 206, 3), (470, 300, 5), (478, 284, 3)): f.circle(x, y, r, "none", "#ffffff", 1.5)
     f.path("M0,330 C150,320 300,336 600,326 V360 H0 Z", "#c9b48a")
     return f.svg()

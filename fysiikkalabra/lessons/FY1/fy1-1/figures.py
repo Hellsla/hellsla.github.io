@@ -139,12 +139,14 @@ def _proton(f, x, y, r):
 
 
 def _nucleus(f, x, y, r, N=12, Z=6):
-    """A nucleus: N nucleons packed in a disc of radius r, protons red and neutrons grey."""
-    nr = r * 0.82 / math.sqrt(N)
-    for i in range(N - 1, -1, -1):
-        rr = (r - nr) * math.sqrt((i + 0.5) / N); a = i * 2.39996
-        pr = (i * 0.6180339) % 1 < Z / N
-        f.circle(x + rr * math.cos(a), y + rr * math.sin(a), round(nr, 1), HOT if pr else ALUMINIUM, INK, 1.5)
+    """A nucleus of 12 nucleons: an inner ring of 4 and an outer ring of 8, protons (red) and neutrons (grey)
+    alternating in both rings and offset between them, so the two kinds are evenly mixed. N and Z are kept for the
+    call sites; the drawing is always 6 + 6."""
+    nr = r * 0.5
+    outer = [(x + 1.32 * nr * math.cos(math.radians(22.5 + 45 * k)), y + 1.32 * nr * math.sin(math.radians(22.5 + 45 * k)), k % 2 == 0) for k in range(8)]
+    inner = [(x + 0.62 * nr * math.cos(math.radians(45 + 90 * k)), y + 0.62 * nr * math.sin(math.radians(45 + 90 * k)), k % 2 == 1) for k in range(4)]
+    for px, py, pr in outer + inner:
+        f.circle(round(px, 1), round(py, 1), round(nr * 0.62, 1), HOT if pr else ALUMINIUM, INK, 1.5)
 
 
 def matter_ladder():

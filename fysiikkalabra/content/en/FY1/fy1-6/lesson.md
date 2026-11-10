@@ -522,8 +522,8 @@ The change in speed per unit of time is called **acceleration**. The acceleratio
 ### Mass does not affect falling
 When there is no air resistance, all objects fall with the same acceleration regardless of their mass. In a vacuum a hammer and a feather fall equally fast, and a ball with a mass of $5\,\text{kg}$ has at every moment the same speed as a ball with a mass of $1\,\text{kg}$. The reason is explained later in connection with forces. In this chapter it is taken as an experimental result that you investigate yourself.
 
-<svg data-fig="same-fall" data-style="house" viewBox="0 0 600 360" role="img" aria-label="Diagram: two steel balls, 1 kg and 5 kg, fall from rest at the same time without air resistance; the heavier ball is larger. At every moment, 0, 1 and 2 seconds, the balls are at the same height and their velocity arrows are equally long: 0, 9.81 and 19.6 metres per second. A dashed line passes through the tips of both arrows." style="max-width:100%;font-size:24px">
-  <defs><clipPath id="fy16-sl0"><circle cx="238" cy="100" r="11"/></clipPath><clipPath id="fy16-sh0"><circle cx="392" cy="100" r="19"/></clipPath><clipPath id="fy16-sl1"><circle cx="238" cy="136.5" r="11"/></clipPath><clipPath id="fy16-sh1"><circle cx="392" cy="136.5" r="19"/></clipPath><clipPath id="fy16-sl2"><circle cx="238" cy="245" r="11"/></clipPath><clipPath id="fy16-sh2"><circle cx="392" cy="245" r="19"/></clipPath></defs>
+<svg data-fig="same-fall" data-style="house" viewBox="0 0 600 440" role="img" aria-label="Diagram: two steel balls, 1 kg and 5 kg, fall from rest at the same time without air resistance; the heavier ball is larger. At every moment, 0, 1 and 2 seconds, the balls are at the same height and their velocity arrows are equally long: 0, 9.81 and 19.6 metres per second. A dashed line passes through the tips of both arrows." style="max-width:100%;font-size:24px">
+  <defs><clipPath id="fy16-sl0"><circle cx="238" cy="100" r="11"/></clipPath><clipPath id="fy16-sh0"><circle cx="392" cy="100" r="19"/></clipPath><clipPath id="fy16-sl1"><circle cx="238" cy="156.5" r="11"/></clipPath><clipPath id="fy16-sh1"><circle cx="392" cy="156.5" r="19"/></clipPath><clipPath id="fy16-sl2"><circle cx="238" cy="325.5" r="11"/></clipPath><clipPath id="fy16-sh2"><circle cx="392" cy="325.5" r="19"/></clipPath></defs>
   <rect x="198" y="60" width="234" height="10" rx="2" fill="#6c757d" stroke="#545b62" stroke-width="1.75"/>
   <line x1="238" y1="70" x2="238" y2="79" stroke="#545b62" stroke-width="3" stroke-linecap="butt"/>
   <line x1="392" y1="70" x2="392" y2="79" stroke="#545b62" stroke-width="3" stroke-linecap="butt"/>
@@ -539,37 +539,37 @@ When there is no air resistance, all objects fall with the same acceleration reg
   <circle cx="400" cy="108" r="20" fill="none" stroke="#889099" stroke-width="10.5" clip-path="url(#fy16-sh0)" opacity="0.55"/>
   <ellipse cx="385" cy="92.5" rx="5.5" ry="4" transform="rotate(-35 385 92.5)" fill="#ffffff" opacity="0.8"/>
   <circle cx="392" cy="100" r="19" fill="none" stroke="#697076" stroke-width="1.75"/>
-  <foreignObject x="112" y="122" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$t = 1\,\text{s}$</div></foreignObject>
-  <line x1="192" y1="136.5" x2="452" y2="136.5" stroke="#e7e2d7" stroke-width="1" stroke-linecap="butt"/>
-  <circle cx="238" cy="136.5" r="11" fill="#aab4bf"/>
-  <circle cx="242.5" cy="141" r="11.5" fill="none" stroke="#889099" stroke-width="6" clip-path="url(#fy16-sl1)" opacity="0.55"/>
-  <ellipse cx="234" cy="132" rx="3.5" ry="2" transform="rotate(-35 234 132)" fill="#ffffff" opacity="0.8"/>
-  <circle cx="238" cy="136.5" r="11" fill="none" stroke="#697076" stroke-width="1.75"/>
-  <circle cx="392" cy="136.5" r="19" fill="#aab4bf"/>
-  <circle cx="400" cy="144.5" r="20" fill="none" stroke="#889099" stroke-width="10.5" clip-path="url(#fy16-sh1)" opacity="0.55"/>
-  <ellipse cx="385" cy="128.5" rx="5.5" ry="4" transform="rotate(-35 385 128.5)" fill="#ffffff" opacity="0.8"/>
-  <circle cx="392" cy="136.5" r="19" fill="none" stroke="#697076" stroke-width="1.75"/>
-  <line x1="238" y1="149.5" x2="238" y2="159.5" stroke="#1971c2" stroke-width="3.25" stroke-linecap="butt"/>
-  <path d="M238,167 L233,156.5 L238,159.5 L243,156.5 Z" fill="#1971c2" stroke-linejoin="round"/>
-  <line x1="392" y1="157.5" x2="392" y2="167.5" stroke="#1971c2" stroke-width="3.25" stroke-linecap="butt"/>
-  <path d="M392,175 L387,164.5 L392,167.5 L397,164.5 Z" fill="#1971c2" stroke-linejoin="round"/>
-  <line x1="222" y1="175" x2="438" y2="175" stroke="#1971c2" stroke-width="1.25" stroke-linecap="butt" stroke-dasharray="5 4"/>
-  <foreignObject x="112" y="230.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$t = 2\,\text{s}$</div></foreignObject>
-  <line x1="192" y1="245" x2="452" y2="245" stroke="#e7e2d7" stroke-width="1" stroke-linecap="butt"/>
-  <circle cx="238" cy="245" r="11" fill="#aab4bf"/>
-  <circle cx="242.5" cy="250" r="11.5" fill="none" stroke="#889099" stroke-width="6" clip-path="url(#fy16-sl2)" opacity="0.55"/>
-  <ellipse cx="234" cy="241" rx="3.5" ry="2" transform="rotate(-35 234 241)" fill="#ffffff" opacity="0.8"/>
-  <circle cx="238" cy="245" r="11" fill="none" stroke="#697076" stroke-width="1.75"/>
-  <circle cx="392" cy="245" r="19" fill="#aab4bf"/>
-  <circle cx="400" cy="253" r="20" fill="none" stroke="#889099" stroke-width="10.5" clip-path="url(#fy16-sh2)" opacity="0.55"/>
-  <ellipse cx="385" cy="237.5" rx="5.5" ry="4" transform="rotate(-35 385 237.5)" fill="#ffffff" opacity="0.8"/>
-  <circle cx="392" cy="245" r="19" fill="none" stroke="#697076" stroke-width="1.75"/>
-  <line x1="238" y1="258" x2="238" y2="281.5" stroke="#1971c2" stroke-width="3.25" stroke-linecap="butt"/>
-  <path d="M238,293.5 L230.5,277 L238,281.5 L245.5,277 Z" fill="#1971c2" stroke-linejoin="round"/>
-  <line x1="392" y1="266" x2="392" y2="289.5" stroke="#1971c2" stroke-width="3.25" stroke-linecap="butt"/>
-  <path d="M392,301.5 L384.5,285 L392,289.5 L399.5,285 Z" fill="#1971c2" stroke-linejoin="round"/>
-  <line x1="222" y1="301.5" x2="438" y2="301.5" stroke="#1971c2" stroke-width="1.25" stroke-linecap="butt" stroke-dasharray="5 4"/>
-  <foreignObject x="255" y="311" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$\text{same speed}$</div></foreignObject>
+  <foreignObject x="112" y="142" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$t = 1\,\text{s}$</div></foreignObject>
+  <line x1="192" y1="156.5" x2="452" y2="156.5" stroke="#e7e2d7" stroke-width="1" stroke-linecap="butt"/>
+  <circle cx="238" cy="156.5" r="11" fill="#aab4bf"/>
+  <circle cx="242.5" cy="161" r="11.5" fill="none" stroke="#889099" stroke-width="6" clip-path="url(#fy16-sl1)" opacity="0.55"/>
+  <ellipse cx="234" cy="152" rx="3.5" ry="2" transform="rotate(-35 234 152)" fill="#ffffff" opacity="0.8"/>
+  <circle cx="238" cy="156.5" r="11" fill="none" stroke="#697076" stroke-width="1.75"/>
+  <circle cx="392" cy="156.5" r="19" fill="#aab4bf"/>
+  <circle cx="400" cy="164.5" r="20" fill="none" stroke="#889099" stroke-width="10.5" clip-path="url(#fy16-sh1)" opacity="0.55"/>
+  <ellipse cx="385" cy="149" rx="5.5" ry="4" transform="rotate(-35 385 149)" fill="#ffffff" opacity="0.8"/>
+  <circle cx="392" cy="156.5" r="19" fill="none" stroke="#697076" stroke-width="1.75"/>
+  <line x1="238" y1="169.5" x2="238" y2="179.5" stroke="#1971c2" stroke-width="3.25" stroke-linecap="butt"/>
+  <path d="M238,187 L233,176.5 L238,179.5 L243,176.5 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <line x1="392" y1="177.5" x2="392" y2="187.5" stroke="#1971c2" stroke-width="3.25" stroke-linecap="butt"/>
+  <path d="M392,195 L387,184.5 L392,187.5 L397,184.5 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <line x1="222" y1="195" x2="438" y2="195" stroke="#1971c2" stroke-width="1.25" stroke-linecap="butt" stroke-dasharray="5 4"/>
+  <foreignObject x="112" y="311" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$t = 2\,\text{s}$</div></foreignObject>
+  <line x1="192" y1="325.5" x2="452" y2="325.5" stroke="#e7e2d7" stroke-width="1" stroke-linecap="butt"/>
+  <circle cx="238" cy="325.5" r="11" fill="#aab4bf"/>
+  <circle cx="242.5" cy="330" r="11.5" fill="none" stroke="#889099" stroke-width="6" clip-path="url(#fy16-sl2)" opacity="0.55"/>
+  <ellipse cx="234" cy="321" rx="3.5" ry="2" transform="rotate(-35 234 321)" fill="#ffffff" opacity="0.8"/>
+  <circle cx="238" cy="325.5" r="11" fill="none" stroke="#697076" stroke-width="1.75"/>
+  <circle cx="392" cy="325.5" r="19" fill="#aab4bf"/>
+  <circle cx="400" cy="333.5" r="20" fill="none" stroke="#889099" stroke-width="10.5" clip-path="url(#fy16-sh2)" opacity="0.55"/>
+  <ellipse cx="385" cy="318" rx="5.5" ry="4" transform="rotate(-35 385 318)" fill="#ffffff" opacity="0.8"/>
+  <circle cx="392" cy="325.5" r="19" fill="none" stroke="#697076" stroke-width="1.75"/>
+  <line x1="238" y1="338.5" x2="238" y2="362" stroke="#1971c2" stroke-width="3.25" stroke-linecap="butt"/>
+  <path d="M238,374 L230.5,357 L238,362 L245.5,357 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <line x1="392" y1="346.5" x2="392" y2="370" stroke="#1971c2" stroke-width="3.25" stroke-linecap="butt"/>
+  <path d="M392,382 L384.5,365 L392,370 L399.5,365 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <line x1="222" y1="382" x2="438" y2="382" stroke="#1971c2" stroke-width="1.25" stroke-linecap="butt" stroke-dasharray="5 4"/>
+  <foreignObject x="255" y="391.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$\text{same speed}$</div></foreignObject>
 </svg>
 
 In air the situation is different. Air slows a light, wide object, such as a feather or a sheet of paper, clearly more than a small, dense object, such as a stone or a steel ball. This is why at home a feather falls more slowly than a hammer. The difference is caused by the air, not by mass as such.

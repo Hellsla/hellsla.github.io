@@ -2,6 +2,7 @@
 from figlib import Fig, Axes, INK, MUTED, WHITE, RULE, SAND, SAND_DARK, SAND_LIGHT, ALUMINIUM, METAL_EDGE, COLD, GOOD, GOOD_LIGHT, HEAT, fi
 from figlib import GLASS, HEAT_LIGHT, HOT, PAPER
 import herolib as H
+import math
 from figlib import GRAIN, HOT_LIGHT, n
 from herolib import grad
 from figstyle import Fig, Axes            # the house illustration style (docs/illustration-style.md)
@@ -43,51 +44,71 @@ def hero():
     return f.svg()
 
 
+def _toy_car(f, x, yb, body="#e03131"):
+    """A chunky battery toy car in side view, rear at x, wheels on yb, heading right: big wheels with hubcaps, a bubble
+    cabin, a stripe, a headlight and an antenna."""
+    ed = S.dark(body, 0.4)
+    f.line(x + 22, yb - 46, x + 14, yb - 74, "#3a4350", 2, cap="round"); f.circle(x + 14, yb - 76, 3.5, "#ffd43b", "#3a4350", 1)
+    f.path(f"M{x + 30},{yb - 40} Q{x + 34},{yb - 64} {x + 56},{yb - 64} H{x + 66} Q{x + 84},{yb - 64} {x + 90},{yb - 40} Z",
+           "#d0ebff", "#3a4350", S.W_OBJ)                                                       # the bubble cabin
+    f.line(x + 60, yb - 63, x + 60, yb - 40, "#3a4350", S.W_DETAIL)
+    f.path(f"M{x + 46},{yb - 58} q6,-3 12,-2", stroke=WHITE, w=2.5, extra='stroke-linecap="round"')
+    f.path(f"M{x},{yb - 16} V{yb - 34} Q{x},{yb - 42} {x + 10},{yb - 42} H{x + 98} Q{x + 112},{yb - 40} {x + 114},{yb - 26} "
+           f"V{yb - 16} Q{x + 114},{yb - 12} {x + 108},{yb - 12} H{x + 6} Q{x},{yb - 12} {x},{yb - 16} Z", body, ed, S.W_OBJ)
+    f.path(f"M{x + 6},{yb - 28} H{x + 108}", stroke=WHITE, w=4, extra='stroke-linecap="round"')          # racing stripe
+    f.circle(x + 57, yb - 22, 7, WHITE, ed, 1.25); f.circle(x + 57, yb - 22, 3, body)              # a round sticker
+    f.path(f"M{x + 108},{yb - 36} h6 v7 h-8 Z", "#ffd43b", S.dark("#ffd43b", 0.4), 1)             # headlight
+    f.rect(x - 3, yb - 22, 6, 9, "#5c6670", rx=2); f.rect(x + 111, yb - 20, 6, 8, "#5c6670", rx=2)  # bumpers
+    for wx in (x + 24, x + 90):
+        f.circle(wx, yb - 14, 14, "#2b3138"); f.circle(wx, yb - 14, 7, "#e9ecef", "#868e96", 1)
+        for k in range(4):
+            a = math.pi / 4 + k * math.pi / 2
+            f.circle(wx + 4 * math.cos(a), yb - 14 + 4 * math.sin(a), 1.2, "#868e96")
+
+
 def setup():
-    f = Fig("fy18-setup", 330, "Kaavakuva kokeen asetelmasta: leluauto ajaa pöydän tasaisella radalla lähtöviivalta maaliviivalle. "
-            "Radan vieressä on matka-asteikko metreinä, ja lähtöviivan ja maaliviivan väli on muutettava muuttuja, matka s. "
-            "Käsikello mittaa aikaa t, joka on mitattava muuttuja. Vakioina pysyvät auto, alusta ja paristot. "
+    f = Fig("fy18-setup", 414, "Kaavakuva kokeen asetelmasta: paristokäyttöinen leluauto ajaa pöydällä lähtöviivalta maaliviivalle, jossa on "
+            "ruutulippu. Pöydän reunassa on mittanauha, jonka asteikko on metreinä, ja lähtöviivan ja maaliviivan väli on muutettava "
+            "muuttuja, matka s. Sekuntikello mittaa aikaa t, joka on mitattava muuttuja. Vakioina pysyvät auto, alusta ja paristot. "
             "Asteikko on mittakaavassa: 150 yksikköä kuvassa vastaa metriä.")
-    f.defs_add(f'<linearGradient id="fy18-wood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{SAND_LIGHT}"/><stop offset="1" stop-color="{SAND}"/></linearGradient>')
-    # key of the three kinds of variable
+    # key of the three kinds of variable, two AA cells after "paristot"
     f.tex(24, 28, r"\text{muutettava: } s", "start")
     f.tex(24, 62, r"\text{mitattava: } t", "start")
     f.tex(24, 96, r"\text{vakiona: auto, alusta, paristot}", "start", w=420)
-    # stopwatch
-    cx, cy = 520, 66
-    f.rect(cx - 6, cy - 46, 12, 12, WHITE, INK, 2, 2)
-    f.circle(cx, cy, 30, WHITE, INK, 3)
-    for k in range(12):
-        import math
-        a = k * math.pi / 6
-        f.line(cx + 22 * math.sin(a), cy - 22 * math.cos(a), cx + 27 * math.sin(a), cy - 27 * math.cos(a), MUTED, 1.5)
-    f.line(cx, cy, cx + 16, cy - 14, HEAT, 3, cap="round")
-    f.circle(cx, cy, 3.5, INK)
-    f.tex(cx, 118, "t", "middle")
-    # table and ruler (150 units per metre, 0 at x = 72)
-    x0, per = 72, 150
-    f.rect(40, 200, 520, 16, "url(#fy18-wood)", INK, 2.5)
+    for k in range(2):
+        bx = 412 + 34 * k
+        f.rect(bx, 88, 28, 15, "#2b3138", "#1f2933", 1, 3); f.rect(bx + 18, 88, 10, 15, "#fab005", S.dark("#fab005", 0.4), 1, 2)
+        f.rect(bx + 28, 92, 3, 7, "#adb5bd", rx=1)
+    H.stopwatch(f, 536, 72, 30, 0.12)
+    f.tex(536, 132, "t", "middle")
+    # table: top board with a tape measure on its front edge (150 units per metre, 0 at x = 72), two legs
+    x0, per, yt = 72, 150, 240
+    tw = "#c9935a"
+    for lx in (38, 556): f.rect(lx, yt + 30, 16, 120, S.dark(tw, 0.15), S.dark(tw, 0.45), S.W_OBJ)
+    f.rect(30, yt, 540, 30, tw, S.dark(tw, 0.45), S.W_OBJ, 3)
+    f.rect(30, yt, 540, 5, S.light(tw, 0.3))
+    f.rect(44, yt + 10, 512, 15, "#ffe066", S.dark("#ffe066", 0.45), S.W_DETAIL, 2)
+    for k in range(26):
+        x = x0 + per * 0.1 * k
+        if x > 552: break
+        f.line(x, yt + 10, x, yt + (25 if k % 5 == 0 else 17), "#3a4350", S.W_DETAIL if k % 5 else 1.5)
     for k in range(6):
-        x = x0 + per * 0.5 * k
-        f.line(x, 216, x, 224, INK, 2)
-        f.tex(x, 242, fi(0.5 * k), "middle")
-    f.tex(x0 + per * 2.5 + 28, 242, r"s\ (\text{m})", "start")
-    # start and finish lines
-    for x, name in ((x0, r"\text{lähtö}"), (x0 + per * 2.0, r"\text{maali}")):
-        f.line(x, 140, x, 200, MUTED, 2, "6 5")
-        f.tex(x, 126, name, "middle")
-    # car, moving right
-    car = "#d6402f"
-    f.path("M88,190 V174 Q90,164 104,162 L116,146 H142 L156,162 Q168,163 170,174 V190 Z", car, S.dark(car, 0.4), S.W_OBJ)
-    f.path("M120,150 H139 L149,162 H112 Z", "#dbe9f5", S.dark(car, 0.4), 1.25)
-    f.path("M92,172 H166", stroke=S.light(car, 0.35), w=3, extra='stroke-linecap="round"')
-    for wx in (108, 150):
-        f.circle(wx, 191, 9, "#3a4350"); f.circle(wx, 191, 3.5, "#c4ccd4")
-    f.arrow(176, 160, 250, 160, COLD, 3, 14)                 # velocity is always blue
-    f.tex(264, 160, "v", "start", color=COLD)
-    # bracket for the distance
+        f.tex(x0 + per * 0.5 * k, yt + 52, fi(0.5 * k), "middle")
+    f.tex(x0 + per * 2.5 + 28, yt + 52, r"s\ (\text{m})", "start")
+    # start and finish: tape marks on the table, a chequered flag at the finish
     xe = x0 + per * 2.0
-    f.dim_h(x0, xe, 272, r"s = 2{,}00\,\text{m}", MUTED)          # neutral grey: blue is kept for the velocity
+    for x in (x0, xe): f.rect(x - 3, yt - 3, 6, 6, "#1971c2", rx=1)
+    f.line(xe, yt - 2, xe, yt - 60, "#5c6670", 2.5, cap="round")
+    for i in range(4):
+        for j in range(2):
+            f.rect(xe + 1 + 8 * i, yt - 60 + 8 * j, 8, 8, "#2b3138" if (i + j) % 2 else WHITE)
+    f.rect(xe + 1, yt - 60, 32, 16, "none", "#2b3138", 1)
+    f.tex(x0 + 4, yt - 102, r"\text{lähtö}", "middle")
+    f.tex(xe + 4, yt - 80, r"\text{maali}", "middle")
+    _toy_car(f, x0 + 8, yt - 2)
+    f.arrow(204, yt - 46, 270, yt - 46, COLD, 3, 14)                 # velocity is always blue
+    f.tex(284, yt - 46, "v", "start", color=COLD)
+    f.dim_h(x0, xe, yt + 92, r"s = 2{,}00\,\text{m}", MUTED)          # neutral grey: blue is kept for the velocity
     return f.svg()
 
 
@@ -135,15 +156,37 @@ def ramp_ball():
 
 
 def two_balls_ramp():
-    """Task illustration (fy1-8-L2-05): a light and a heavy ball wait at the start line of the same ramp; no numbers."""
-    f = S.scene("fy18-balls", "Kuvitus: saman puisen rinteen yläpäässä lähtöviivalla on kaksi palloa, pieni kevyt muovipallo ja suurempi raskas "
-                "teräskuula. Rinteen alapäässä on maaliviiva.")
+    """Task illustration (fy1-8-L2-05): the same ramp is tried with two balls one at a time: the light ball waits behind a
+    ruler at the start, the heavy ball waits its turn on the table; a finish line and a stopper at the bottom; no numbers."""
+    f = S.scene("fy18-balls", "Kuvitus: puinen rinne nojaa kirjapinoon. Rinteen yläpäässä pystyssä olevan viivaimen takana odottaa kevyt "
+                "oranssi muovipallo, ja rinteen alapäässä on sininen maaliviiva, pieni sininen lippu ja puinen pysäytin. Pöydällä rinteen vieressä odottaa "
+                "vuoroaan raskas teräskuula. Oikealla ylhäällä on sekuntikello.")
     f.rect(0, 0, 600, 360, "#f3efe6")
-    _ramp(f, "fy18b")
-    f.line(110, 210, 116, 236, "#c92a2a", 3)                                   # start and finish lines across the ramp
-    f.line(500, 263, 506, 290, "#c92a2a", 3)
-    f.ball("fy18b-light", 132, 213, 10, "#ffc078")
-    f.ball("fy18b-heavy", 160, 208, 17, "#aab4bf")
+    H.wood(f, 0, 300, 600, 60, "fy18b-top")
+    for k, (w_, c) in enumerate(((150, "#2f74b5"), (140, "#c92a2a"), (146, "#2b8a3e"))):     # books under the top end
+        f.rect(40 + (150 - w_) / 2, 300 - 22 * (k + 1), w_, 22, c, S.dark(c, 0.35), S.W_OBJ, 2)
+        f.rect(46 + (150 - w_) / 2, 300 - 22 * (k + 1) + 6, w_ - 12, 4, S.light(c, 0.5))
+    wood = "#d9b26a"                                                                       # a shorter, steeper ramp
+    x1, ya, yb = 430, 214, 290
+    def top(x): return ya + (x - 60) * (yb - ya) / (x1 - 60)
+    f.path(f"M60,{ya + 10} L{x1},{yb + 10} L{x1},{yb + 14} L60,{ya + 14} Z", S.dark(wood, 0.12), S.dark(wood, 0.4), S.W_OBJ)
+    f.path(f"M60,{ya} L{x1},{yb} L{x1},{yb + 10} L60,{ya + 10} Z", wood, S.dark(wood, 0.4), S.W_OBJ)
+    f.rect(x1 + 2, 270, 22, 30, "#a87443", S.dark("#a87443", 0.4), S.W_OBJ, 2)              # stopper block
+    xf = 392                                                                               # finish line: blue tape across the ramp
+    f.path(f"M{xf - 4},{n(top(xf - 4))} L{xf + 4},{n(top(xf + 4))} L{xf + 4},{n(top(xf + 4) + 10)} L{xf - 4},{n(top(xf - 4) + 10)} Z", "#1971c2")
+    f.line(xf, top(xf), xf, top(xf) - 44, "#5c6670", 2, cap="round")                       # a small flag marks the finish
+    f.path(f"M{xf},{n(top(xf) - 44)} l22,7 l-22,7 Z", "#1971c2", S.dark("#1971c2", 0.35), 1)
+    # the ruler held upright across the ramp as a start gate, the light ball behind it
+    xg = 122
+    f.rect(xg, top(xg) - 58, 8, 60, "#ffe066", S.dark("#ffe066", 0.45), S.W_DETAIL, 1.5)
+    for k in range(1, 6): f.line(xg, top(xg) - 58 + 10 * k, xg + 4, top(xg) - 58 + 10 * k, "#3a4350", 1)
+    f.ball("fy18b-light", xg - 15, top(xg - 15) - 14, 14, "#ff922b")
+    # faint dashed path of the run to the finish line
+    f.path(f"M{xg + 16},{n(top(xg + 16) - 14)} L{xf - 20},{n(top(xf - 20) - 14)}", stroke="#adb5bd", w=S.W_GUIDE, extra=f'stroke-dasharray="{S.GUIDE_DASH}"')
+    # the heavy ball waiting its turn on the table, on a small ring so it does not roll
+    f.add('<ellipse cx="530" cy="300" rx="24" ry="5" fill="#8a6a43" opacity="0.35"/>')
+    f.ball("fy18b-heavy", 530, 281, 18, "#aab4bf")
+    H.stopwatch(f, 520, 110, 40, 0.0)
     return f.svg()
 
 
