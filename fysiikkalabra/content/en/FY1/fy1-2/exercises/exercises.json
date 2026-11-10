@@ -77,6 +77,7 @@
       "id": "fy1-2-L1-07",
       "level": 1,
       "text": "A cyclist's speed is $18\\,\\text{km/h}$. Give the speed in the unit $\\text{m/s}$.",
+      "figure": "fy1-2/cyclist",
       "kind": [
         "model"
       ],
@@ -269,6 +270,7 @@
       "level": 2,
       "core": true,
       "text": "A tap fills a bucket at a steady flow rate $q = 0.20\\,\\textsf{l}/\\text{s}$. A student calculates how long it takes to fill a $12\\,\\textsf{l}$ bucket.\n\nThe student's solution is: “The time is the product of the flow rate and the volume, $t = qV = 0.20\\,\\textsf{l}/\\text{s}\\cdot12\\,\\textsf{l} = 2.4$.” The student concludes that the bucket fills in $2.4$ seconds.\n\nCheck the units of the student's calculation and explain what a unit check reveals about the error. Then calculate the correct time in minutes.",
+      "figure": "fy1-2/tap-bucket",
       "kind": [
         "error",
         "reasoning"
