@@ -1,22 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: a5edc3be87e46462
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: ee0df94fab51094e
+Mode: light (teacher 2026-11-10, "kevyt katselmointi": the FY8 error-check fix diff since origin/main only)
 
 ## Blocking
-(none)
-
-## Fixed
-- fi-easy lesson.md, cloud-chamber caption: "Emme tiedä, mikä ydin hajoaa seuraavaksi" (we do not know) -> "Sitä ei voi ennustaa, mikä ydin hajoaa seuraavaksi" (cannot be predicted), as in fi and en; the claim is about principle, not about our knowledge.
+- none
 
 ## Polish
-- inquiry.json tarkistus-3 criteria: "in a year hundreds of half-lives pass" vs model ~1460 half-lives; "over a thousand half-lives" (carried from the earlier report; in fi, not edited here).
-- inquiry.json tarkistus-3 model: "dropped to zero" -> "practically zero" (carried, in fi).
+- The note now gives 8,02 d twice ("käytetään vakiintunutta arvoa" and "Tämän luvun laskuissa käytetään arvoa"); one of the two could go. Not blocking.
 
 ## Checked
-- figures.json change (four new option-figure descriptions of the (t,A) graph) checked against lessons/FY8/fy8-9/figures.py and the data: A line 800 -> 400 kBq at 2 h -> 0 at 4 h; B 800(1 - t^2/8) = 400 at 2 h, zero at sqrt 8 = 2.83 h (about 2.8 h), steeper; C 400/200/100/50 kBq at 2/4/6/8 h; D 800 e^-1 = 294 (about 290), 800 e^-2 = 108 (110), 800 e^-4 = 14.7 (15). All description numbers right, axes (0-8 h, 0-900 kBq, grids) as drawn.
-- Descriptions give a reader who cannot see the figure the same data without naming the right graph; consistent with fy8-9-L1-09 text, feedback and solution (A zero at 4 h, B steeper, D lacks ln 2).
-- en and fi-easy figures.json: same four keys as fi, values correct in each language (en decimal point).
-- New photos: cloud-chamber alpha tracks of radon (random positions and directions) and a Geiger-Mueller survey meter; captions physically right: count rate proportional to activity at a fixed position (detector efficiency and geometry constant); licences in photos.json (CC BY-SA 4.0, public domain).
-- Rest of the lesson unchanged by the diff; earlier PASS findings stand: decay law, lambda = ln2/T, A = lambda N, fit values, sim model values.
-- check_i18n: nothing for fy8-9; build.py fy8-9 succeeds.
+- Diff only: the I-131 source note (8,021-8,025 d matches evaluations of about 8,0207-8,0252 d; rounding to 8,03 d is correct) and its new last sentence: a more precise value changes the results only in the third significant figure. That is true: the worked example gives 97,66-97,86 MBq instead of 97,65 MBq, exercise 1 gives 0,999·10^-6 1/s and the I-131/Cs-137 exercise gives 6,99 % instead of 6,97 %. Worked example: 550 MBq·(1/2)^(20,0/8,02) = 550 MBq·0,17754 = 97,648 MBq, so \approx 97,65 MBq is correct and the result 97,6 MBq (3 s.f.) stands.

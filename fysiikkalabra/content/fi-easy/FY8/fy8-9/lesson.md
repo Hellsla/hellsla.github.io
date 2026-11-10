@@ -442,7 +442,7 @@ Jokaisella ytimellä on sama hajoamistodennäköisyys. Siksi tietyssä ajassa ha
 | hiili-14 | $5700\,\text{a}$ | radiohiiliajoitus |
 | uraani-238 | $4{,}47 \cdot 10^{9}\,\text{a}$ | kallioperä |
 
-Lähde: kirjallisuusarvot NNDC NuDat 3 -tietokannasta (Brookhaven National Laboratory), pyöristetty kolmeen merkitsevään numeroon.
+Lähde: kirjallisuusarvot NNDC NuDat 3 -tietokannasta (Brookhaven National Laboratory), pyöristetty kolmeen merkitsevään numeroon. Jodi-131:lle käytetään vakiintunutta arvoa $8{,}02\,\text{d}$. Eri arvioinneissa sen puoliintumisaika on noin $8{,}021$–$8{,}025\,\text{d}$. Siksi pyöristys voi antaa myös $8{,}03\,\text{d}$. Tämän luvun laskuissa käytetään arvoa $8{,}02\,\text{d}$. Tarkempi arvo muuttaisi tuloksia vain vähän, kolmannessa merkitsevässä numerossa.
 
 <figure class="unit-photo"><img src="pics/fy8/geiger-counter.webp" alt="Vanha säteilymittari pöydällä. Siinä on viisarinäyttö ja johdolla kiinni oleva pyöreä anturi."><figcaption>Geiger-mittari laskee hiukkasia, jotka osuvat anturiin. Kun mittari on aina samassa paikassa, pulssien määrä sekunnissa on verrannollinen lähteen aktiivisuuteen.</figcaption></figure>
 
@@ -637,7 +637,7 @@ A = A_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}}
 &= 550\,\text{MBq} \cdot \left(\tfrac{1}{2}\right)^{20{,}0\,\text{d} / 8{,}02\,\text{d}} \\
 &= 550\,\text{MBq} \cdot \left(\tfrac{1}{2}\right)^{2{,}4938} \\
 &= 550\,\text{MBq} \cdot 0{,}17754 \\
-&= 97{,}65\,\text{MBq}
+&\approx 97{,}65\,\text{MBq}
 \end{aligned}
 ```
 
