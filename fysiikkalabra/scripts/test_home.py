@@ -278,7 +278,7 @@ for lang in i18n.languages():
         f = out / f"{code}.html"
         if not f.is_file(): continue
         want = bool(concept_cards.cards_of(code, lang))
-        expect(f"{lang} {code}.html: {'Kertauspakkasi' if want else 'no deck (no cards in this language)'}", ('class="kc-deck"' in f.read_text()) == want)
+        expect(f"{lang} {code}.html: {'Kertauspakkasi' if want else 'no deck (no cards in this language)'}", bool(re.search(r'class="kc-deck[ "]', f.read_text())) == want)
     wrong = []
     for code, m in curriculum.items():
         for l in m["lessons"]:
