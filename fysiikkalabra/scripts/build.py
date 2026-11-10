@@ -60,6 +60,8 @@ if booklets.DIR.is_dir():                                      # Vihkot: the pri
     for f in booklets.DIR.glob("*.pdf"): shutil.copy2(f, SITE / booklets.PUBLISHED / f.name)
 if (ROOT / "assets/shared/ahjo/aloitus").is_dir():             # Ahjo's starter files (scripts/ahjo.py STARTERS): models, sketches, templates
     shutil.copytree(ROOT / "assets/shared/ahjo/aloitus", SITE / "ahjo-aloitus", dirs_exist_ok=True)
+if (ROOT / "assets/shared/laskuri").is_dir():                 # the school's standalone countdown page, ruukkilab.fi/laskuri (teacher 2026-11-10)
+    shutil.copytree(ROOT / "assets/shared/laskuri", SITE / "laskuri", dirs_exist_ok=True)
 if (ROOT / "assets/shared/brand").is_dir():                   # the Ruukkilabra logos and favicon (scripts/brand_logos.py); test copies may leave them out
     shutil.copytree(ROOT / "assets/shared/brand", SITE / "brand", dirs_exist_ok=True)
 if (ROOT / "assets/units").is_dir():                          # the local courses' unit components (scripts/units.py)
