@@ -448,7 +448,7 @@ def numeric_html(a, md, aid):
     sol = (f'<details class="solution"><summary>{T("inquiry.show_solution")}</summary><div class="steps">'
            f'{mathlayout.steps_html(md(mathlayout.solution_md(a["solution"], T("lesson.solution_display_steps"))), T("lesson.solution_answer_step"))}</div></details>' if a.get("solution") else "")
     shown = answers_shown.shown(a.get("solution") or "", T("lesson.solution_answer_step"), a["answer"], a.get("tolerance", 0.02))
-    st = answers_shown.step(shown, a["answer"]) if shown else None    # ±1 in the shown answer's last digit (lesson.js part 1)
+    st = answers_shown.step(shown, a["answer"]) if shown else None    # one unit in the shown answer's last digit; the check allows half of it (lesson.js part 1)
     return (f'<div class="numeric">{task_text(inline(md, a["prompt"]), pid=f"{aid}-q")}{fig_of(a)}'
             f'<form class="check" data-answer="{a["answer"]}" data-tol="{a.get("tolerance", 0.02)}"' + (f' data-step="{st:g}"' if st else "") + f' data-mistakes=\'{mistakes}\' novalidate>'
             f'<input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="{esc(answer_label(a.get("unit", "")))}" aria-describedby="{esc(aid)}-q" placeholder="?">'

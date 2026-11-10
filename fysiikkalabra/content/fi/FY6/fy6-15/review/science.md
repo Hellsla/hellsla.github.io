@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: a362da4bacf76398
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: bd66f3fde94bfd46
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- content/fi/FY6/fy6-15/lesson.md:408 — the sentence says the potential difference between the feet is very small but not why. Optional: add "koska johtimen resistanssi jalkojen välillä on hyvin pieni". This is C-level and not a finding.
 
 ## Checked
-- Suojamaadoitus (lesson, summary, inquiry explain model and criterion, figure maadoitus aria-label and figures.py): in the TN system the fault current returns through the protective conductor to the supply; fuse or MCB trips; RCD may also trip; scope stated as the TN system. Correct; the person-to-earth path without PE is also right (returns via the supply earthing).
-- Maallikon sähkötyöt (lesson, summary, exit ticket): fixed installations for professionals; laypeople only specifically permitted minor work and only if they can do it safely; examples within Tukes's list; uncertain cases to a professional.
-- P = UI condition (in-phase / power factor ≈ 1, active power depends on phase in general); 230 · 10 = 2300 W, 230 · 16 = 3680 W recomputed.
-- Lint: no physics warnings.
-- Round 3 (hash 17a65fd2157d29ea): layman paragraph and summary bullet checked against the Tukes list the teacher pasted; FAIL because "yksivaiheisen" was missing from the cord examples.
-- Round 4 (git diff HEAD, hash a362da4bacf76398): lesson.md:461 now says "yksivaiheisen jatkojohdon korjaaminen, sähkölaitteen rikkoutuneen yksivaiheisen liitäntäjohdon ja pistotulpan vaihtaminen"; the exit ticket says "korjata yksivaiheisen jatkojohdon"; the summary bullet (line 578) says "varsinaiset sähköasennustyöt kuuluvat sähköalan ammattilaisille", matching the paragraph. Every example is now on the Tukes list with its condition; Blocking resolved.
+- Previous blocking item (internal consistency, bird): lesson.md:408 (Suurjännitejohdot) and :570 (Yleinen virhekäsitys) now say "lähes samassa potentiaalissa / potentiaaliero hyvin pieni / vain erittäin pieni virta". This matches ennuste-2's correct option and all four of its feedbacks (inquiry.json:91–100). A grep finds no remaining "ei jännitettä / ei kulje virtaa" claim in the lesson, the inquiry, the exit ticket or the figure labels.
+- ennuste-2: exactly one correct option. Each distractor is really wrong and its feedback says why (feet conduct; the current divides between parallel paths; the conductors are bare). The correct option's feedback names the wing-to-second-conductor or wing-to-pylon case correctly.
+- ennuste-1, kertaus, virhe, tarkistus-1, tarkistus-2: exactly one correct option each, and the distractor feedback is right.
+- Recomputed in one script with my own formulas, compared with lesson-answers.py: 2300 W and 3680 W limits; 8,70 A; kitchen 13,9 A, all devices 22,6 A; skin 1,15, 11,5 and 230 mA (ratio 200); example 19,6 A (9,57 + 4,35 + 5,65), estimate 22,5 A; virhe 12,6 A; siirto 14,8 A, 131 W, 8,87 V drop; mistakes 0,0719, 45,4 W, 88,2 kW; exit 2,56. All agree, and the rounding is justified.
+- Models and conditions: P = UI with rms values for in-phase loads (power factor about 1 is stated); E_max·d only in a uniform field; the TN system is named for the fault-current path; the body-current table is tied to 50 Hz, about 1 s and IEC 60479-1; the shoes condition is given in the theory and in the iho task.
+- Mechanisms: the fuse protects the cable through RI²; the RCD compares the line and neutral currents (its L–N limit is stated); the step voltage comes from the ground's potential gradient.
+- Model answers (johtopaatos, tarkistus-3) and the exit ticket say what the theory says.
+- Scope is within the FY6 content on electrical safety.
+- Hash identical at start and end.

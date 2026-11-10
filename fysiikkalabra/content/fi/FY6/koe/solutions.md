@@ -251,7 +251,7 @@
 **Kaava:** $P = UI$ ja $\dfrac{E_\text{k}}{t} = N \cdot \tfrac{1}{2}mv^2$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $P = 1100\,\text{V} \cdot 1{,}76\,\text{A} \approx 1940\,\text{W}$ ja $N \cdot \tfrac{1}{2}mv^2 = 1{,}10 \cdot 10^{19} \cdot 1{,}76 \cdot 10^{-16}\,\text{J/s} \approx 1940\,\text{W}$
-**Vastaus:** Ionien kiihdyttämiseen tarvitaan noin $1{,}9\,\text{kW}$:n teho. Ionien sekunnissa saama liike-energia on sama $1{,}9\,\text{kJ}$, koska jokainen hiloilta lähtevä ioni saa energian $eU$.
+**Vastaus:** Ionien kiihdyttämiseen tarvittava teho on noin $1{,}9\,\text{kW}$. Yhden sekunnin aikana ionien saama liike-energia on noin $1{,}9\,\text{kJ}$. Siten liike-energian kasvunopeus on $1{,}9\,\text{kJ/s} = 1{,}9\,\text{kW}$, koska jokainen hiloilta lähtevä ioni saa energian $eU$.
 **Järkevyys:** Tulokset ovat samat, koska $N \cdot eU = \tfrac{I}{e} \cdot eU = UI$. Teho on samaa suuruusluokkaa kuin vedenkeittimen, ja sen voi tuottaa luotaimen aurinkopaneeleilla.
 
 ### Yleisiä virheitä

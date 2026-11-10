@@ -1,10 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: a6883821eb80f9b4
+CONTENT-HASH: 6ae3ad27fa3e6cca
 
 ## Blocking
 
 ## Polish
-- lesson.md Yleinen virhekäsitys: "muuttaa sähköenergiaa sisäenergiakseen" is correct physics. "vastuksen sisäenergiaksi" would match line 107 and the explain model answer word for word (wording only).
+- content/fi/FY6/fy6-5/lesson.md:303 — the wrong branch current $0{,}30\,\text{A}$ happens to equal the correct total $I_1 = 0{,}30\,\text{A}$, and the paragraph no longer says why the source-voltage method is visibly wrong. Optionally add the check the Etsi virhe feedback uses (the wrong branch currents $0{,}30\,\text{A} + 0{,}15\,\text{A} = 0{,}45\,\text{A}$ come to more than the $0{,}30\,\text{A}$ that enters the junction), and say "kuvan piirissä" so the reader knows which circuit this is.
 
 ## Checked
-batch delta review: the wording changes "lämmöksi" -> "(vastuksen / hehkulangan) sisäenergiaksi" in lesson.md (Kirchhoffin virtalaki paragraph, Yleinen virhekäsitys) and inquiry.json (the lamp choice's correct and wrong feedback, explain model answer). Each matches the heat guardrail and fy6-3/fy6-4. "joka siirtyy lämpönä ympäristöön" holds at steady state, which the paragraph assumes (constant currents). The lamp choice keeps exactly one correct option (0,40 A); the distractor feedback still says why it is wrong. The explain criteria are unaffected. No numbers changed.
+- Full packet (reason: a changed line has numbers). I focused on the diff (Yleinen virhekäsitys, second paragraph). The rest is unchanged since the last PASS (a6883821eb80f9b4).
+- Recomputed with my own formulas: R23 = 1/(1/30 + 1/60) = 20 Ω, I1 = 9,0 V : 30 Ω = 0,30 A, U1 = 3,0 V, branch voltage 6,0 V, I2 = 0,20 A, I3 = 0,10 A, sum 0,30 A. Wrong method 9,0 V : 30 Ω = 0,30 A. All match the paragraph and lesson-answers.py (sim-*, virhe-*).
+- Labels: I2 for the 30 Ω branch and I3 for the 60 Ω branch match the theory figure, the potential graph, the sim's load state and the Etsi virhe item.
+- Physics: the branch voltage is the source voltage minus the series voltage (the voltage law), and the current law is checked correctly. The third-misconception sentence is unchanged and correct.
+- Consistency: the same numbers as Ydinajatus, the Kirchhoffin jännitelaki paragraph (3,0 V + 6,0 V) and the error-spotting feedback. Nothing contradicts the worked example (12 V circuit).
+- Hash identical at start and end.

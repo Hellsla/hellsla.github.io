@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 707724903355c33d
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: 54bf1031ed79eec6
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- content/en/FY6/fy6-15/lesson.md:408 — the sentence says the potential difference between the feet is very small but not why. Optional: add "because the resistance of the conductor between the feet is very small". This is C-level and not a finding.
 
 ## Checked
-- Protective earth: frame connected to the protective conductor; fault current returns along it to the supply; fuse/MCB trips; RCD can also trip; TN-system caveat; distribution-board sentence (PE bonded to earthing and the incoming conductor) — all = fi and correct for TN.
-- Fuse-myth paragraph and summary bullet: 'frame fault … back to the supply'. Remaining 'to the ground' uses are the touch current through a person and fallen-line step voltage, which are correct.
-- Laypeople: fixed installations mainly for professionals; only specifically permitted minor jobs and only if they can do them safely; the earlier light-fitting item removed (= fi). Exit ticket says the same.
-- P = UI paragraph conditioned on in-phase/power factor ≈ 1; 2300 W and 3680 W recomputed. maadoitus aria-label text only.
-- Diff since origin/main compared sentence by sentence with the Finnish source change; content hash checked at start and end.
-- Round 3 (git diff HEAD~2, layman paragraph and summary bullet): matches the fi change and the Tukes page the teacher pasted. Actual installation work only by registered professionals; laypersons only permitted minor jobs, only if they can do them safely; work always de-energised. Every example is on the Tukes list: fuse, lamp, resetting a tripped MCB or RCD, repairing an extension cord, replacing an appliance's broken single-phase cord and plug, luminaire with a connector block. Term: layperson.
-- Round 4 (uncommitted diff): the extension cord is now single-phase in the body and in the exit ticket, matching the Tukes list. "Light fitting with a lighting connector block" fits the Tukes interior-luminaire item. The summary bullet now says "actual electrical installation work belongs to electrical professionals", the same as the body. Both round-3 Polish items are resolved. The exit ticket example (a new wall socket for professionals) is correct.
+- Previous blocking item (internal consistency, bird): lesson.md:408 (High-voltage lines) and :570 (Common misconception) now say "almost the same potential / potential difference very small / only a very small current". This matches ennuste-2's correct option and all four of its feedbacks (inquiry.json:91–100). No "no voltage / no current" claim remains in the lesson, the inquiry or the exit ticket.
+- ennuste-1, ennuste-2, kertaus, virhe, tarkistus-1, tarkistus-2: exactly one correct option each, and the distractor feedback is right.
+- Compared with fi by script: in inquiry.json the answers, tolerances, mistake values, correct flags, figures and reveal order are identical. The numeric content of lesson.md, inquiry.json and exit-ticket.json is the same set as in fi.
+- Recomputed in one script with my own formulas (shared lesson-answers.py): 2300 W and 3680 W limits; 8.70 A; kitchen 13.9 A, all devices 22.6 A; skin 1.15, 11.5 and 230 mA; example 19.6 A, estimate 22.5 A; virhe 12.6 A; siirto 14.8 A and 131 W; mistakes 0.0719, 45.4 W, 88.2 kW; exit 2.56. All agree.
+- Models and conditions: rms values for in-phase loads; E_max·d in a uniform field; the TN system is named; the effect table is tied to 50 Hz, duration and IEC 60479-1; the shoes condition is stated; the protective extra-low voltage limits are 50 V AC and 120 V DC.
+- Mechanisms: the fuse protects the cable through RI²; the RCD compares the line and neutral currents, with its L–N limitation; the step voltage comes from the ground's potential gradient.
+- Model answers and the exit ticket agree with the theory.
+- Hash identical at start and end.

@@ -1,19 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 1aa37f5477fae930
+CONTENT-HASH: 66175cc0749d903c
 
 ## Blocking
 
 ## Polish
-- content/fi-easy/FY6/fy6-13/inquiry.json:113 (simulaatio `model`) — the Mallin oletukset box says how a disconnected capacitor behaves at breakdown but not that, connected, the sim keeps showing the ideal $Q = CU_0$ and $W$; the new readout note (lang/fi-easy.json:2017 `sims.fy6-13.mallirajaus`) says it only on screen — optionally add the same sentence to the box so theory and sim boxes say the same.
-- lang/fi-easy.json:2017 — the note could name what stays ideal: "the shown $Q$ and $W$ are the ideal model's values" (C-level, not a finding).
+- assets/sims/fy6/fy6-13/sim.js:81 — the code comment still says "the ideal model's values before it"; for the next sim edit, align it with the new label ("at this voltage, as if no breakdown occurred"). It is a code comment, so students never see it.
+- inquiry.json simulation `model` (Mallin oletukset) — still does not say that, while the source is connected, the readout keeps the ideal $Q = CU_0$ and $W$ at breakdown. The readout itself now says this correctly, so this is optional.
 
 ## Checked
-- Diff: `mallirajaus` appended after the bold breakdown text only when `S.lap && !S.burnt` (connected); its claim is right (breakdown violates the ideal-dielectric assumption; a source-sustained arc current is not modelled) and it removes the risk of reading the displayed $Q$, $W$ as physical during breakdown.
-- Browser (preview, fi-easy): d = 1,0 mm air, U0 = 3,0 kV → E = 3,00 MV/m, no breakdown; 3,1 kV → lapilyonti 1, Q 549 nC, note shown; then irrotettu → Q = 0, purkautui text, no note.
-- Recomputed in one script with own formulas: sim load 88,5 pF / 88,5 nC / 44,3 µJ; koe 1–4 Q, W, U, E (lasi 0,179 kV, 7,9 µJ; kytketty lasi 496 nC, 248 µJ); koe 5 U_max 3,0 kV; paper 160 V; example 6,75 J, 6,75 kW, 3,4 s; kertaus 150 kV/m; virhe 0,034 J; siirto 190,35 µJ; TV 12 J; exit 1,2 mC — all match lesson-answers.py and the texts.
-- Predictions 1–2, kertaus, virhe, tarkistus 1–2: exactly one correct option each; distractor feedback right.
-- Experiments: each isolates its varied parameter (locked lists correct); simState gives every measured key.
-- Models and conditions: plate formula (small gap, filled gap), U_max = E_max d, half-energy loss stated as a result of this charging model, kytketty/irrotettu table and its mechanism.
-- Scope: charging/discharging qualitative only, no capacitor connections.
-- Numbers, setups and correct options identical to the fi version.
-- Hash identical at start and end.
+- Previous Blocking fixed: lang/fi-easy.json `sims.fy6-13.lukemat_lap` now reads "Ideaalimallilla lasketut arvot tällä jännitteellä, jos läpilyöntiä ei tapahtuisi", which is what sim.js computes ($Q = CU_0$, $W = \tfrac{1}{2}QU_0$ at the set voltage). fi and en carry the same meaning.
+- Browser (fi-easy preview, air, $A = 200\,\text{cm}^2$, $d = 1{,}0\,\text{mm}$): at 3,0 kV there is no breakdown and the normal readout shows C 177 pF, Q 531 nC, W 797 µJ; at 4,0 kV lapilyonti = 1, and the new label shows Q 708 nC and W 1417 µJ with the breakdown and model-limit notes.
+- Recomputed in one script: C 88,5 pF; koe-1 Q 44,3/88,5/133/177 nC and W 11,1/44,3/99,6/177 µJ; koe-2 C ∝ 1/d; koe-3 glass U 0,179 kV, W 7,9 µJ; koe-4 495,8 nC, 248 µJ; paper 160 V; example 6,75 J, 6,75 kW, Q 0,045 C, 3,4 s; kertaus 150 kV/m; virhe 0,034 J; siirto 190,35 µJ; TV 12,0 J; exit 1,2 mC. All match the texts and the feedback.
+- Predictions 1–2, kertaus, virhe, tarkistus 1–2: each has exactly one correct option, and each distractor's feedback is right.
+- Experiments isolate the varied parameter, and simState gives every measured key (Q, W, C, E, U, lapilyonti); koe-5 starts below breakdown (2 MV/m).
+- Models and conditions: the plate formula (small gap, gap filled), $U_\text{max} = E_\text{max} d$, the half-energy loss stated as a result of this charging model, the connected/disconnected table and its mechanism; charging is treated qualitatively only, with no capacitor connections (scope kept).

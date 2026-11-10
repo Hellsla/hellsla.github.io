@@ -88,20 +88,20 @@
       "choices": [
         {
           "text": "The bird's dry feet insulate it from the conductor.",
-          "feedback": "The bird's feet conduct electricity, and the bird sits safe even when wet. What matters is that both feet are at the same potential: there is no voltage between the feet, so no current flows through the bird."
+          "feedback": "The bird's feet conduct electricity, and the bird sits safe even when wet. What matters is that the feet are on the same conductor at almost the same potential: the potential difference between the feet is very small, so only a very small electric current flows through the bird."
         },
         {
-          "text": "There is no voltage between the bird's feet, so no current flows through it.",
+          "text": "The potential difference between the bird's feet is very small, so only a very small electric current flows through it.",
           "correct": true,
-          "feedback": "The theory supports this: a current flows through a body only when the body connects two points at different potentials. The bird's feet are on the same conductor at almost the same potential. If a wing touched another conductor or an earthed pole at the same time, a current would flow through the bird."
+          "feedback": "The theory supports this: a dangerous current flows through a body only when the body connects two points with a large potential difference. The bird's feet are on the same conductor at almost the same potential, so only a very small electric current flows through the bird. If a wing touched another conductor or an earthed pole at the same time, a large current would flow through the bird."
         },
         {
           "text": "The current flows entirely in the conductor, because it always chooses the path of least resistance.",
-          "feedback": "In parallel paths the current divides among all the paths and does not choose just one. No significant current flows through the bird because there is no voltage between its feet: the feet are on the same conductor at almost the same potential."
+          "feedback": "In parallel paths the current divides among all the paths and does not choose just one. A current flows through the bird too, but only a very small one, because the feet are on the same conductor at almost the same potential and the potential difference between them is very small."
         },
         {
           "text": "A high-voltage conductor has a thin insulating sheath around it that protects the bird.",
-          "feedback": "High-voltage conductors are bare metal conductors, insulated only by the surrounding air. The bird is safe because both its feet are at the same potential, so no current flows through it."
+          "feedback": "High-voltage conductors are bare metal conductors, insulated only by the surrounding air. The bird is safe because the potential difference between its feet is very small, so only a very small electric current flows through it."
         }
       ]
     },
