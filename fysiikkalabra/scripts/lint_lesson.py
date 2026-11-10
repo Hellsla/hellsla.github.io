@@ -184,6 +184,21 @@ def first_row_has_numbers(frag):
     return bool(has_digit and has_unit)
 
 
+def house_tints(colours):
+    """The colours of a house-style figure (scripts/figstyle.py) that are a palette colour darkened towards black or
+    lightened towards white (its outlines and shading): not new colours."""
+    rgb = lambda c: [int(c[i:i + 2], 16) for i in (1, 3, 5)]
+    out = set()
+    for c in colours:
+        x = rgb(c)
+        for p in PALETTE:
+            q = rgb(p)
+            for end in ((0, 0, 0), (255, 255, 255)):
+                ts = [(xi - qi) / (ei - qi) for xi, qi, ei in zip(x, q, end) if ei != qi]
+                if ts and all(-0.02 <= t <= 1 for t in ts) and max(ts) - min(ts) < 0.04: out.add(c)
+    return out
+
+
 def check_figures(L, text):
     """Figures as textbook illustrations (CLAUDE.md "Lesson page" 9, NOTES.md §3): text at least 24 px in the 600-unit
     figure, colours from the figure palette, not a monochrome currentColor sketch."""
@@ -195,7 +210,8 @@ def check_figures(L, text):
             L.page("lesson.md", line + svg.count("\n", 0, t.start()), f"figure label in <text>: every label in a figure is LaTeX in a fig-tex foreignObject, words as \\text{{}} (teacher's rule 2026-10-26, NOTES 3): {re.sub(r'<[^>]+>', '', t.group(1)).strip()[:40]}")
         colours = {c.lower() for c in re.findall(r"#[0-9a-fA-F]{6}\b", svg)}
         if not colours: L.page("lesson.md", line, "monochrome figure (currentColor only): draw it as a textbook illustration with the figure palette, materials you can recognise and colour that carries meaning (NOTES 3)")
-        elif colours - PALETTE: L.warn("lesson.md", line, f"colours outside the figure palette: {', '.join(sorted(colours - PALETTE))} (NOTES 3)")
+        elif colours - PALETTE - (house_tints(colours) if 'data-style="house"' in svg[:400] else set()):
+            L.warn("lesson.md", line, f"colours outside the figure palette: {', '.join(sorted(colours - PALETTE - (house_tints(colours) if 'data-style=\"house\"' in svg[:400] else set())))} (NOTES 3)")
 
 
 def check_lesson_form(L, text):

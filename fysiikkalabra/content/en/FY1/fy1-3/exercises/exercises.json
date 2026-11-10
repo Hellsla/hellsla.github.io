@@ -235,6 +235,7 @@
       "id": "fy1-3-L2-07",
       "level": 2,
       "text": "The period of a pendulum is about $1.5\\,\\text{s}$. In hand timing, starting and stopping the clock cause, because of reaction time, an uncertainty of about $0.2\\,\\text{s}$ in the whole measured time (an estimate that does not depend on the length of the measured time).\n\nYou plan a measurement in which $N$ consecutive swings are timed at once and the time is divided by $N$.\n\nAt least how many swings must be timed so that the relative uncertainty of the period is at most $1\\,\\%$? Also explain why timing a longer time reduces the effect of reaction time.",
+      "figure": "fy1-3/pendulum-timing",
       "kind": [
         "experiment",
         "model"
@@ -323,6 +324,7 @@
       "id": "fy1-3-L3-02",
       "level": 3,
       "text": "There are 250 similar sheets in a stack of paper. The thickness of the stack is measured with a ruler whose smallest scale division is $1.0\\,\\text{mm}$, and the uncertainty of the reading is estimated to be half of a scale division. What is the error estimate of the thickness of one sheet, when all the sheets are equally thick? Give the answer in micrometres, where one micrometre is a thousandth of a millimetre.",
+      "figure": "fy1-3/paper-stack",
       "answer": 2.0,
       "unit": "µm",
       "tolerance": 0.02

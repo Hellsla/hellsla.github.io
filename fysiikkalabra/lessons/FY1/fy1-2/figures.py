@@ -6,11 +6,13 @@ from figlib import SAND_DARK
 import herolib as H
 from figlib import COPPER, METAL_EDGE
 from herolib import grad
+from figstyle import Fig, Axes            # the house illustration style (docs/illustration-style.md)
+import figstyle as S
 
 
 def hero():
     """The chapter's opening illustration: one distance from the Sun to Voyager 2, measured against three rulers of different steps."""
-    f = H.hero("fy12-hero", "Kuvitus: avaruudessa Aurinko vasemmalla ja Voyager 2 -luotain oikealla, välissä katkoviiva ja planeettoja. "
+    f = S.hero("fy12-hero", "Kuvitus: avaruudessa Aurinko vasemmalla ja Voyager 2 -luotain oikealla, välissä katkoviiva ja planeettoja. "
                "Viivan alla kolme samanpituista viivainta, joiden jakoviivat ovat eri tiheässä: sama matka kolmella eri yksiköllä.")
     H.space(f, seed=3, count=110)
     f.add(f'<path d="M0,120 Q600,40 1200,160 L1200,230 Q600,120 0,200 Z" fill="{COLD_LIGHT}" fill-opacity="0.08"/>')   # the Milky Way's faint band
@@ -109,19 +111,14 @@ def conversion():
     f.defs_add(f'<radialGradient id="fy12-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="{HEAT_LIGHT}"/><stop offset="1" stop-color="{HEAT}"/></radialGradient>')
     f.defs_add(f'<radialGradient id="fy12-earth" cx="0.4" cy="0.35" r="0.75"><stop offset="0" stop-color="{WATER_LIGHT}"/><stop offset="1" stop-color="{WATER}"/></radialGradient>')
     f.defs_add(f'<linearGradient id="fy12-ray" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{HEAT_LIGHT}"/><stop offset="1" stop-color="{HEAT}"/></linearGradient>')
-    for k in range(12):
-        a = k * math.pi / 6 + math.pi / 12
-        f.path(f"M{n(76 + math.cos(a) * 54 - math.sin(a) * 6)},{n(140 + math.sin(a) * 54 + math.cos(a) * 6)} L{n(76 + math.cos(a) * 72)},{n(140 + math.sin(a) * 72)} "
-               f"L{n(76 + math.cos(a) * 54 + math.sin(a) * 6)},{n(140 + math.sin(a) * 54 - math.cos(a) * 6)} Z", HEAT_LIGHT)
+    f.add(f'<circle cx="76" cy="140" r="64" fill="{HEAT_LIGHT}" opacity="0.35"/><circle cx="76" cy="140" r="54" fill="{HEAT_LIGHT}" opacity="0.45"/>')
     f.circle(76, 140, 46, "url(#fy12-sun)", INK, 2.5)
     f.circle(530, 140, 20, "url(#fy12-earth)", INK, 2.5)
     f.path("M134,130 H430 V118 L478,140 L430,162 V150 H134 Z", "url(#fy12-ray)")
-    f.tex(76, 216, r"\text{Aurinko}", "middle", w=110)
-    f.tex(530, 216, r"\text{Maa}", "middle", w=70)
+    f.tex(76, 222, r"\text{Aurinko}", "middle", w=110)
+    f.tex(530, 222, r"\text{Maa}", "middle", w=70)
     f.tex(300, 100, r"\text{valo}", "middle", HEAT, w=80)
-    f.line(76, 190, 76, 206, INK, 2); f.line(530, 190, 530, 206, INK, 2)
-    f.arrow(300, 198, 76, 198, INK, 2.5, 12); f.arrow(300, 198, 530, 198, INK, 2.5, 12)
-    f.tex(300, 198, "s", "middle", bg=True, w=40)
+    f.dim_h(76, 530, 190, "s", below=False)
     f.line(12, 244, 588, 244, RULE_LIGHT, 1.5)
     f.tex(300, 282, r"s = 1{,}496\cdot10^{8}\,\text{km}", "middle", w=330)
     f.tex(300, 322, r"= 1\,\text{AU}", "middle", w=140)
@@ -148,9 +145,51 @@ def ruler_read():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "quantity": quantity, "prefixes": prefixes, "conversion": conversion, "ruler-read": ruler_read}
+def tap_bucket():
+    """Task illustration (fy1-2-L2-07): a tap fills a bucket with a steady stream; no numbers."""
+    f = S.scene("fy12-tap", "Kuvitus: vesihana täyttää sinkkiämpäriä tasaisella vesisuihkulla. Ämpäri on lattialla puoliksi täynnä vettä.")
+    f.rect(0, 0, 600, 360, "#eef1ee")
+    for y in range(0, 280, 40):
+        for x in range(0 if (y // 40) % 2 else 30, 600, 60): f.rect(x, y, 58, 38, "#e3e8e4", "#d3dad5", 1, 1)
+    f.rect(0, 280, 600, 80, "#cfc7b6"); f.line(0, 280, 600, 280, "#b5ab97", 2)
+    metal = "#b9c2cb"
+    f.rect(150, 66, 150, 22, metal, None, 0, 4); f.rect(150, 66, 150, 8, S.light(metal, 0.4), None, 0, 4)       # pipe from the wall
+    f.rect(136, 52, 22, 50, metal, S.dark(metal, 0.4), S.W_OBJ, 4)
+    f.path("M290,62 h40 a12,12 0 0 1 12,12 v34 h-26 v-20 h-26 Z", metal, S.dark(metal, 0.4), S.W_OBJ)            # spout
+    f.rect(296, 40, 30, 12, "#c92a2a", S.dark("#c92a2a", 0.4), S.W_OBJ, 4); f.line(311, 52, 311, 62, S.dark(metal, 0.4), 4)
+    f.add(f'<path d="M318,108 C318,170 322,210 324,236 h10 C332,210 334,170 336,108 Z" fill="{WATER_LIGHT}" opacity="0.85"/>')
+    f.add(f'<path d="M322,120 C322,170 325,206 327,230" stroke="#ffffff" stroke-width="2" opacity="0.7" fill="none"/>')
+    bx, by, bw, bh = 330, 196, 150, 100                                                                        # bucket
+    f.path(f"M{bx - bw / 2},{by} L{bx - bw / 2 + 16},{by + bh} H{bx + bw / 2 - 16} L{bx + bw / 2},{by} Z", "#c8d0d8", S.dark("#c8d0d8", 0.4), S.W_OBJ)
+    f.path(f"M{bx - bw / 2 + 8},{by + 34} L{bx - bw / 2 + 16},{by + bh - 2} H{bx + bw / 2 - 16} L{bx + bw / 2 - 8},{by + 34} Z", S.light(WATER, 0.3), None)
+    f.add(f'<ellipse cx="{bx}" cy="{by + 34}" rx="{bw / 2 - 8}" ry="9" fill="{S.light(WATER, 0.5)}"/>')
+    f.add(f'<ellipse cx="{bx}" cy="{by}" rx="{bw / 2}" ry="12" fill="none" stroke="{S.dark("#c8d0d8", 0.4)}" stroke-width="{S.W_OBJ}"/>')
+    f.path(f"M{bx + bw / 2 - 30},{by + 6} L{bx + bw / 2 - 22},{by + bh - 4}", stroke="#ffffff", w=5, extra='opacity="0.5" stroke-linecap="round"')
+    f.path(f"M{bx - bw / 2},{by} C{bx - bw / 2 + 10},{by - 70} {bx + bw / 2 - 10},{by - 70} {bx + bw / 2},{by}", stroke="#7b8591", w=3)
+    for dx in (-12, 0, 12): f.add(f'<circle cx="{bx + dx + 5}" cy="{by + 30}" r="3" fill="#ffffff" opacity="0.8"/>')
+    f.add(f'<ellipse cx="{bx}" cy="{by + bh + 4}" rx="{bw / 2}" ry="7" fill="#a89f8c" opacity="0.6"/>')
+    return f.svg()
+
+
+def cyclist():
+    """Task illustration (fy1-2-L1-07): a cyclist on a road beside a field; no numbers."""
+    f = S.scene("fy12-bike", "Kuvitus: pyöräilijä ajaa kypärä päässä tasaista maantietä pellon ja koivujen ohi.")
+    H.sky(f, "fy12b", 360)
+    H.hills(f, "fy12b", 200, ["#b7d39a", "#a2c784"], amp=24, seed=3)
+    for x, h in ((80, 120), (140, 96), (470, 130), (540, 104)): H.birch(f, x, 236, h)
+    f.rect(0, 236, 600, 124, "#9cc97a")
+    f.path("M0,268 H600 V318 H0 Z", "#7d858f"); f.line(0, 293, 600, 293, "#ffffff", 3, dash="26 18")
+    H.rider(f, 236, 356, 290, 36)
+    for y in (214, 236, 258): f.add(f'<line x1="{140}" y1="{y}" x2="{192}" y2="{y}" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>')
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "quantity": quantity, "prefixes": prefixes, "conversion": conversion, "ruler-read": ruler_read,
+           "tap-bucket": tap_bucket, "cyclist": cyclist}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
+    "tap-bucket": "safe: the situation only, a tap filling a bucket; no numbers",
+    "cyclist": "safe: the situation only, a cyclist on a road; no numbers",
     "quantity": "reveals: the reading l = 12,0 cm",
     "prefixes": "reveals: every prefix's power of ten",
     "conversion": "reveals: 1 AU = 1,496·10^8 km and the light time 499 s",

@@ -51,5 +51,7 @@
  "ydin pysyy koossa": "nucleus stays together",
  "-hajoaminen": " decay",
  "Kaavakuva: koon d kymmenpotenssiakseli, jolla on kaksi nimettyä kohdetta. Akseli kulkee arvosta 10 potenssiin −12 metriä arvoon 10 potenssiin 2 metriä, ja jokaisen kymmenpotenssin kohdalla on pystyviiva. Numerot on merkitty joka toisen viivan kohdalle (−12, −10, −8, …, 2). Kohteet ovat vetyatomi ja muurahainen, kumpikin viivan kohdalla, ja askelten väli on mittakaavassa.": "Diagram: an axis of powers of ten for the size d, with two named objects. The axis runs from 10 to the power −12 metres to 10 to the power 2 metres, and there is a vertical line at each power of ten. Numbers are marked at every second line (−12, −10, −8, …, 2). The objects are the hydrogen atom and the ant, each at a line, and the spacing of the steps is to scale.",
- "muurahainen": "ant"
+ "muurahainen": "ant",
+ "Kuvitus: täydellinen auringonpimennys järven yllä. Kuun musta kiekko peittää Auringon juuri ja juuri kokonaan, ja kiekon ympärillä näkyy Auringon vaalea kehä. Taivas on hämärä, ja rannalla on havumetsää.": "Illustration: a total solar eclipse over a lake. The Moon's black disc just covers the Sun, and the Sun's pale halo shows around the disc. The sky is dim, and there is a spruce forest on the shore.",
+ "Kuvitus: sadekuuro jalkapallokentän yllä. Harmaa pilvi peittää taivaan, ja vinot sadeviivat putoavat vihreälle kentälle, jolla on valkoiset rajaviivat ja maalit.": "Illustration: a rain shower over a football field. Grey clouds cover the sky, and slanting streaks of rain fall on the green field with its white lines and goals."
 }
