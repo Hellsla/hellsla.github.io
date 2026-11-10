@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 394bea7d94af7b8e
+CONTENT-HASH: 54084e2f5c5c5fad
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] lesson.md Miksi — "näppätty kitaran kieli" → "kitaran näppätty kieli".
 
 ## Checked
-- light delta review (teacher 2026-11-07): I captured and opened two changed paragraphs at 390 px from the rebuilt preview. One is "Aalto ja sen heijastus", with the new assumption "aalto ei menetä energiaa heijastuessaan". The other is "Solmut ja kuvut", with the new closing "Todellisuudessa … Siksi solmutkin värähtelevät hiukan." I also opened the first one at 1280 px beside its three-instant figure, and the row stays balanced. The paragraphs are 100 and 83 words. The λ/2 and λ/4 fractions stay on one line, and the Finnish is natural. Nothing is clipped, and a scan found no inline formula that wraps.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: rewritten Miksi question (blockquote) and the new tube-displacement model sentence; no wrap at 390; captures fy5-13-fi-easy-390-miksi.png, -1280-miksi.png, -390-model.png, -1280-model.png. Built preview, own Playwright captures (deviceScaleFactor 1) under /tmp/claude-0/-home-user/61da6444-3d3b-5f0d-8dfa-1c431aff38b7/scratchpad/visual/; inline-KaTeX wrap/overflow check on every changed passage at 390 px: none.

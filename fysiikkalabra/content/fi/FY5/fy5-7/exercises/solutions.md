@@ -97,7 +97,7 @@
 **Kaava:** $f = \dfrac{1}{T}$, josta $T = \dfrac{1}{f}$
 **Muunnokset:** $f = 900\,\tfrac{1}{\text{min}} = \dfrac{900}{60\,\text{s}} = 15\,\text{Hz}$; lopuksi $1\,\text{s} = 1000\,\text{ms}$.
 **Sijoitus:** $T = \dfrac{1}{15\,\tfrac{1}{\text{s}}} = 0{,}06667\,\text{s} = 0{,}06667 \cdot 1000\,\text{ms} = 66{,}67\,\text{ms}$
-**Vastaus:** $67\,\text{ms}$, kaksi merkitsevää numeroa, koska tahti $900$ kertaa minuutissa on ilmoitettu pyöreänä lukuna.
+**Vastaus:** $66{,}7\,\text{ms}$. Lukumäärä $900$ kertaa minuutissa on tarkka, joten tulos pyöristetään tavalliseen kolmeen merkitsevään numeroon.
 **Järkevyys:** Toinen reitti: minuutissa on $60\,000\,\text{ms}$, ja se jakautuu $900$ liikkeelle, joten yksi kestää $\tfrac{60\,000\,\text{ms}}{900} \approx 67\,\text{ms}$. Neula liikkuu siis noin $15$ kertaa sekunnissa, mikä sopii ompelukoneen nopeaan surinaan.
 
 ## fy5-7-L2-04
@@ -180,7 +180,7 @@
 **Kaava:** $T = \dfrac{t_6}{6}$, $f = \dfrac{1}{T}$ ja $p = \dfrac{f_{\text{rasitus}} - f_{\text{lepo}}}{f_{\text{lepo}}} \cdot 100\,\%$
 **Muunnokset:** Pulssi minuutissa: $1\,\text{Hz} = 60\,\tfrac{1}{\text{min}}$. Prosentin laskussa yksiköt supistuvat.
 **Sijoitus:** Levossa $T_{\text{lepo}} = \dfrac{4{,}96\,\text{s}}{6} = 0{,}8267\,\text{s}$ ja $f_{\text{lepo}} = \dfrac{1}{0{,}8267\,\text{s}} = 1{,}210\,\text{Hz} = 72{,}6\,\tfrac{1}{\text{min}}$. Rasituksen jälkeen $T_{\text{rasitus}} = \dfrac{2{,}77\,\text{s}}{6} = 0{,}4617\,\text{s}$ ja $f_{\text{rasitus}} = \dfrac{1}{0{,}4617\,\text{s}} = 2{,}166\,\text{Hz} = 130\,\tfrac{1}{\text{min}}$. Kasvu on $p = \dfrac{2{,}166\,\text{Hz} - 1{,}210\,\text{Hz}}{1{,}210\,\text{Hz}} \cdot 100\,\% = 79{,}06\,\%$.
-**Vastaus:** $79\,\%$, kaksi merkitsevää numeroa. Kohdan c) perustelu: yksittäinen väli vaihtelee ($0{,}81\,\text{s}$ … $0{,}85\,\text{s}$ levossa), mutta kuuden välin kokonaisaika jaettuna kuudella tasoittaa vaihtelun, ja ajanottovirhe jakautuu kuudelle välille.
+**Vastaus:** $79{,}1\,\%$, kolme merkitsevää numeroa kuten ajoissa $4{,}96\,\text{s}$ ja $2{,}77\,\text{s}$. Kohdan c) perustelu: yksittäinen väli vaihtelee ($0{,}81\,\text{s}$ … $0{,}85\,\text{s}$ levossa), mutta kuuden välin kokonaisaika jaettuna kuudella tasoittaa vaihtelun, ja ajanottovirhe jakautuu kuudelle välille.
 **Järkevyys:** Lepopulssi $72{,}6\,\tfrac{1}{\text{min}}$ on tavallinen aikuisen lepopulssi ja $130\,\tfrac{1}{\text{min}}$ uskottava heti rasituksen jälkeen. Lyöntiväli lyheni noin $0{,}83\,\text{s}$:sta $0{,}46\,\text{s}$:iin, eli väli on noin $0{,}56$-kertainen, ja $\tfrac{1}{0{,}56} = 1{,}79$ vastaa kasvua $79\,\%$.
 
 ## fy5-7-L3-05

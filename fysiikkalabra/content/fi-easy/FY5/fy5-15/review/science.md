@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 05966b3286289439
+CONTENT-HASH: 8fe46662a2c9c370
 
 ## Blocking
 
 ## Polish
-- lesson.md:271 (Mitä mittari mittaa) — 'mittarin lukemaa käsitellään intensiteettitasona' could say 'painottamatonta lukemaa', since the previous paragraph says ordinary meters show dB(A).
+- The lesson still says the rule fails for two loudspeakers playing the same tone 'in phase'; the sim model now says 'the same tone at different places', which is the more general condition (any fixed phase relation interferes). Optional: drop 'in phase' in the lesson too. Not an error.
 
 ## Checked
-- light delta review (teacher 2026-11-07), after fixes 2: HEAD~1 diff: the decibel section now opens with 'Intensiteetin vaihteluväli on siis hyvin laaja. Siksi …', tying the log scale to the 10¹² range of the previous paragraph; physics unchanged and correct; the old meter-reading Polish item still applies.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: Checked the added coherent-vs-independent statements (lesson and the sim model, including the later working-tree rewording 'loudspeakers at different places playing the same tone'): independent sources add intensities, coherent ones interfere so the level varies from place to place; consistent with the 70 dB + 60 dB example and the interference chapter.

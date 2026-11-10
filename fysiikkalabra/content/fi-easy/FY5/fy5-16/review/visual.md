@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: f3a92ad89167f2ed
+CONTENT-HASH: 86fddac9576823e7
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] lesson.md "Työmelu laissa": the corrected paragraph is about 142 words (about 870 px at 390 px), well over the roughly 120-word limit, and it holds three ideas: the values, that they are not safe limits, and weighting/peaks/leisure. Fix: start new paragraphs at "Toiminta-arvoihin sen sijaan verrataan …" and at "Arvot ovat A-painotettuja …".
+- [Minor] lesson.md, new sentence — "Tarkalleen intensiteetin …" → "Tarkasti laskettuna intensiteetin kaksinkertaistuminen nostaa tasoa …"
 
 ## Checked
-- light delta review (teacher 2026-11-07): review/shots was missing, so I made a fresh capture set with screenshot.py; the preview build needed a local workaround that skipped the en inquiry's learn-length error (not in fi-easy). I opened fig-5-390 (the bar chart, now "vertailuaika" in its alt text), the new heading "Melualtistuksen vertailuaika", the changed paragraphs (annos, the law, the formula introduction, the symbol definitions with dB(A), Vertailuaika ei ole sallittu), the torjunta sentence, the two Tiivistelmä bullets, the learning goal, the Ennuste, Tutki and Johtopäätös prompts, the transfer task, the opened exit ticket and example-390-1 and -2, plus the law and Vertailuaika paragraphs at 1280 px. The symbol t_v and the term "vertailuaika" are consistent, no "sallittu aika" remains, and a page scan at 390 px found no inline formula that wraps in the changed lesson text.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: new sentence $10\,\text{dB} \cdot \lg 2 \approx 3{,}01\,\text{dB}$ stays on one line at 390 (\cdot used, decimal comma in fi), "likimain" in the model note; captures fy5-16-fi-easy-390/1280-teoria.png, -model.png. Built preview, own Playwright captures (deviceScaleFactor 1) under /tmp/claude-0/-home-user/61da6444-3d3b-5f0d-8dfa-1c431aff38b7/scratchpad/visual/; inline-KaTeX wrap/overflow check on every changed passage at 390 px: none.

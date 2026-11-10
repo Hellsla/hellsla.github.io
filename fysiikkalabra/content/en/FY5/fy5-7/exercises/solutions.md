@@ -97,7 +97,7 @@
 **Formula:** $f = \dfrac{1}{T}$, from which $T = \dfrac{1}{f}$
 **Conversions:** $f = 900\,\tfrac{1}{\text{min}} = \dfrac{900}{60\,\text{s}} = 15\,\text{Hz}$; finally $1\,\text{s} = 1000\,\text{ms}$.
 **Substitution:** $T = \dfrac{1}{15\,\tfrac{1}{\text{s}}} = 0.06667\,\text{s} = 0.06667 \cdot 1000\,\text{ms} = 66.67\,\text{ms}$
-**Answer:** $67\,\text{ms}$, two significant figures, because the rate $900$ times a minute is given as a round number.
+**Answer:** $66.7\,\text{ms}$. The count of $900$ a minute is exact, so the result is rounded to the usual three significant figures.
 **Reasonableness:** Another route: a minute has $60\,000\,\text{ms}$, and it is divided among $900$ motions, so one takes $\tfrac{60\,000\,\text{ms}}{900} \approx 67\,\text{ms}$. So the needle moves about $15$ times a second, which fits the fast whirr of a sewing machine.
 
 ## fy5-7-L2-04
@@ -179,7 +179,7 @@
 **Formula:** $T = \dfrac{t_6}{6}$, $f = \dfrac{1}{T}$ and $p = \dfrac{f_{\text{exercise}} - f_{\text{rest}}}{f_{\text{rest}}} \cdot 100\,\%$
 **Conversions:** Pulse per minute: $1\,\text{Hz} = 60\,\tfrac{1}{\text{min}}$. In the calculation of the percentage the units cancel.
 **Substitution:** At rest $T_{\text{rest}} = \dfrac{4.96\,\text{s}}{6} = 0.8267\,\text{s}$ and $f_{\text{rest}} = \dfrac{1}{0.8267\,\text{s}} = 1.210\,\text{Hz} = 72.6\,\tfrac{1}{\text{min}}$. After exercise $T_{\text{exercise}} = \dfrac{2.77\,\text{s}}{6} = 0.4617\,\text{s}$ and $f_{\text{exercise}} = \dfrac{1}{0.4617\,\text{s}} = 2.166\,\text{Hz} = 130\,\tfrac{1}{\text{min}}$. The increase is $p = \dfrac{2.166\,\text{Hz} - 1.210\,\text{Hz}}{1.210\,\text{Hz}} \cdot 100\,\% = 79.06\,\%$.
-**Answer:** $79\,\%$, two significant figures. The explanation for part c): a single interval varies ($0.81\,\text{s}$ … $0.85\,\text{s}$ at rest), but the total time of six intervals divided by six evens out the variation, and the timing error is shared among six intervals.
+**Answer:** $79.1\,\%$, three significant figures like the times $4.96\,\text{s}$ and $2.77\,\text{s}$. The explanation for part c): a single interval varies ($0.81\,\text{s}$ … $0.85\,\text{s}$ at rest), but the total time of six intervals divided by six evens out the variation, and the timing error is shared among six intervals.
 **Reasonableness:** The resting pulse $72.6\,\tfrac{1}{\text{min}}$ is a usual resting pulse of an adult, and $130\,\tfrac{1}{\text{min}}$ is believable right after exercise. The beat interval became shorter from about $0.83\,\text{s}$ to $0.46\,\text{s}$, that is, the interval is about $0.56$ times the earlier, and $\tfrac{1}{0.56} = 1.79$ corresponds to an increase of $79\,\%$.
 
 ## fy5-7-L3-05

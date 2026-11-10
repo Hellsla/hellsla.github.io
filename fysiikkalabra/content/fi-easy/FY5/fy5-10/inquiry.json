@@ -114,7 +114,7 @@
       "type": "sim",
       "text": "Paina *Käynnistä* ja katso, miten aalto syntyy narun vasemmasta päästä. Seuraa samalla merkittyä kohtaa $P$ ja sen kuvaajaa.",
       "howto": "Paina *Käynnistä*. Vasemman pään kahva alkaa liikkua, ja aalto etenee oikealle. Ylempi kuva on aallon valokuva. Siinä näkyy koko naru tai jousi yhdellä hetkellä. Viivaimen lukemat ovat metrejä. Alempi kuvaaja näyttää merkityn kohdan $P$ poikkeaman $y$ ajan funktiona. Siinä näkyvät viimeiset $4\\,\\text{s}$. Valitse *Aalto*-valikosta poikittainen aalto narussa tai pitkittäinen aalto kierrejousessa. Valitse *Lähde*-valikosta jatkuva aalto tai yksi pulssi. Valitse *Jännitys*-valikosta suuri tai pieni jännitys. Liukusäädin muuttaa lähteen taajuutta $f$. Kun muutat jotakin arvoa, aalto alkaa alusta. *Alusta* tekee saman. Jatkuvassa aallossa kahden harjan (tai tihentymän) väli on merkitty $\\lambda$:lla. *Nopeus* muuttaa vain animaation tahtia. Se ei muuta aallon nopeutta $v$.",
-      "model": "Narun tai jousen jokainen kohta toistaa lähteen liikkeen viiveellä. Viive on kohdan etäisyys lähteestä jaettuna aallon nopeudella. Rintaman edellä väliaine on levossa. Aallon nopeus riippuu vain jännityksestä. Suurella jännityksellä $v = 2{,}0\\,\\text{m/s}$ ja pienellä $1{,}0\\,\\text{m/s}$. Amplitudi on $5{,}0\\,\\text{cm}$. Narun kuvassa poikkeama on piirretty suurennettuna. Jousen kuvassa se on piirretty viivaimen mittakaavassa. Pitkittäisessä aallossa poikkeama $y$ on jousen suuntainen. Tummennettu alue näyttää tihentymät, joissa kierrokset ovat tavallista lähempänä toisiaan. Kohta $P$ on kohdassa $x = 1{,}00\\,\\text{m}$. Väliaine jatkuu kuvan oikealle puolelle niin pitkälle, ettei heijastunut aalto palaa kuvaan. Aalto ei myöskään vaimene. Luvut ovat mallin arvoja, eivät mittauksia.",
+      "model": "Narun tai jousen jokainen kohta toistaa lähteen liikkeen viiveellä. Viive on kohdan etäisyys lähteestä jaettuna aallon nopeudella. Rintaman edellä väliaine on levossa. Mallissa narun massa pituusyksikköä kohti pysyy samana. Siksi aallon nopeus riippuu vain jännityksestä. Suurella jännityksellä $v = 2{,}0\\,\\text{m/s}$ ja pienellä $1{,}0\\,\\text{m/s}$. Amplitudi on $5{,}0\\,\\text{cm}$. Narun kuvassa poikkeama on piirretty suurennettuna. Jousen kuvassa se on piirretty viivaimen mittakaavassa. Pitkittäisessä aallossa poikkeama $y$ on jousen suuntainen. Tummennettu alue näyttää tihentymät, joissa kierrokset ovat tavallista lähempänä toisiaan. Kohta $P$ on kohdassa $x = 1{,}00\\,\\text{m}$. Väliaine jatkuu kuvan oikealle puolelle niin pitkälle, ettei heijastunut aalto palaa kuvaan. Aalto ei myöskään vaimene. Luvut ovat mallin arvoja, eivät mittauksia.",
       "calc": "Kohdan $x$ poikkeama hetkellä $t$ on lähteen poikkeama hetkellä $t - \\tfrac{x}{v}$:\n\n$$y = A \\sin\\left(2\\pi f \\left(t - \\frac{x}{v}\\right)\\right)$$\n\nTämä pätee, kun $t - \\tfrac{x}{v} \\ge 0$. Muuten $y = 0$. Pulssissa lähde liikkuu vain puolen jaksonajan $\\tfrac{T}{2}$. Pulssi on siis yksi harja, jonka pituus on $\\tfrac{\\lambda}{2}$. Lukemissa $T = \\tfrac{1}{f}$, $\\lambda = \\tfrac{v}{f}$ ja aallon etenemä matka on $x = vt$. Kohdan $P$ suurin poikkeama poikittain ja pitkittäin on suurin $|y|$, joka on esiintynyt käynnistyksen jälkeen."
     },
     {
@@ -226,7 +226,7 @@
       "id": "koe-3",
       "stage": "tutki",
       "type": "experiment",
-      "title": "Koe 3: vain väliaine muuttuu",
+      "title": "Koe 3: vain narun jännitys muuttuu",
       "intro": "Nyt taajuus pysyy $1{,}0\\,\\text{Hz}$:ssä, ja muutat narun jännitystä. Kirjaa mittaus suurella ja pienellä jännityksellä. Mikä muuttuu ja mikä pysyy?",
       "initial": {
         "aalto": "poik",
@@ -288,12 +288,12 @@
         "koe-3"
       ],
       "prompt": "Kirjoita taulukoidesi perusteella. Kuinka kauas aalto eteni kokeessa 1? Kuinka paljon ja mihin suuntaan kohta $P$ liikkui poikittaisessa ja pitkittäisessä aallossa? Laske kokeen 2 jokaiselta riviltä tulo $f\\lambda$ ja vertaa sitä nopeuteen $v$. Mikä muutti aallon nopeutta kokeessa 3, ja mitä silloin tapahtui aallonpituudelle?",
-      "model": "Kokeessa 1 aalto eteni kolmessa sekunnissa noin $6\\,\\text{m}$. Kohdan $P$ suurin poikkeama oli kuitenkin vain $5{,}0\\,\\text{cm}$ eli aallon amplitudi. Poikittaisessa aallossa $P$ liikkui narua vastaan kohtisuoraan ylös ja alas. Pitkittäisessä aallossa se liikkui jousen suuntaisesti edestakaisin. Kummassakaan se ei kulkenut aallon mukana. Aalto kuljettaa siis energiaa, ei ainetta. Kokeessa 2 aallonpituus oli $2{,}0\\,\\text{m}$ taajuudella $1{,}0\\,\\text{Hz}$ ja $1{,}0\\,\\text{m}$ taajuudella $2{,}0\\,\\text{Hz}$. Tulo $f\\lambda$ oli joka rivillä $2{,}0\\,\\text{m/s}$, sama kuin nopeus $v$. Kokeessa 3 pienempi jännitys pienensi nopeuden $1{,}0\\,\\text{m/s}$:iin. Aallonpituus lyheni $1{,}0\\,\\text{m}$:iin, kun taajuus pysyi samana. Väliaine määrää nopeuden ja lähde taajuuden. Lisäksi $v = f\\lambda$. Luvut ovat mallin arvoja.",
+      "model": "Kokeessa 1 aalto eteni kolmessa sekunnissa noin $6\\,\\text{m}$. Kohdan $P$ suurin poikkeama oli kuitenkin vain $5{,}0\\,\\text{cm}$ eli aallon amplitudi. Poikittaisessa aallossa $P$ liikkui narua vastaan kohtisuoraan ylös ja alas. Pitkittäisessä aallossa se liikkui jousen suuntaisesti edestakaisin. Kummassakaan se ei kulkenut aallon mukana. Aalto kuljettaa siis energiaa, ei ainetta. Kokeessa 2 aallonpituus oli $2{,}0\\,\\text{m}$ taajuudella $1{,}0\\,\\text{Hz}$ ja $1{,}0\\,\\text{m}$ taajuudella $2{,}0\\,\\text{Hz}$. Tulo $f\\lambda$ oli joka rivillä $2{,}0\\,\\text{m/s}$, sama kuin nopeus $v$. Kokeessa 3 pienempi jännitys pienensi nopeuden $1{,}0\\,\\text{m/s}$:iin. Aallonpituus lyheni $1{,}0\\,\\text{m}$:iin, kun taajuus pysyi samana. Väliaineen ominaisuudet määräävät nopeuden. Narussa niitä ovat narun jännitys ja narun massa pituusyksikköä kohti. Lähde määrää taajuuden. Lisäksi $v = f\\lambda$. Luvut ovat mallin arvoja.",
       "criteria": [
         "Vastaus vertaa aallon etenemää matkaa kohdan $P$ suurimpaan poikkeamaan ja päättelee, ettei narun aine kulje aallon mukana.",
         "Vastaus kertoo, että $P$ liikkui poikittaisessa aallossa kohtisuoraan ja pitkittäisessä aallossa etenemissuunnan suuntaisesti.",
         "Vastaus laskee tulon $f\\lambda$ ja toteaa sen yhtä suureksi kuin $v$ joka rivillä.",
-        "Vastaus kertoo, että nopeutta muutti jännitys eli väliaine, ei taajuus."
+        "Vastaus kertoo, että samassa narussa nopeutta muutti narun jännitys eikä taajuus. Aallonpituus muuttui nopeuden mukana, kun taajuus pysyi samana."
       ]
     },
     {

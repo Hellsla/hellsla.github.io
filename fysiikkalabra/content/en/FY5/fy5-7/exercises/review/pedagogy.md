@@ -1,19 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: caa49ffb8ee68be0
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 428b1dee26536b75
 
 ## Blocking
-(none)
-
-## Fixed
-(none needed)
 
 ## Polish
-(none)
 
 ## Checked
-- fy5-7-L1-09: the pedagogy of the Finnish task is kept (situation first, question last; misconception-based distractors or statements; each feedback names the same error as fi and does not give the answer away before the student acts).
-- Solution keeps the Find / Principle / Model answer structure with the calculation staged step by step.
-- English reads naturally and uses the chapter's terms; no Finnish left.
-- Option figures pick-a3-t1, pick-a3-t05, pick-a15-t05, pick-a3-t2: en figures.json descriptions match lessons/FY5/fy5-7/figures.py (peaks, periods, first peak times) and the choice-to-figure mapping equals fi.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: the answers 66.7 ms (sewing machine) and 79.1 % (ECG), whose tolerance 0.02 still accepts 67 and 79, and their significant-figure lines; the L2-03 line now says that the exact count lets the result be rounded to the usual three figures, which a student can follow.

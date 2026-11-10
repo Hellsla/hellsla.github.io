@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: d1f04d839bde9393
+CONTENT-HASH: 6d9e753be2010433
 
 ## Blocking
-(none)
 
 ## Polish
-- lesson.md:422 — "Ultraääni ei silti ole vaaratonta vain siksi" reads awkwardly — "Se ei silti tee ultraäänestä vaaratonta." / "Ultraääni ei silti ole vaaraton."
 
 ## Checked
-light delta review (teacher 2026-11-07): only the changed passages were judged, in context of the surrounding text, tasks, feedback and solutions; no full review even where the tooling asks for one; physics left to the science review; reflection-percentage hedge and the safety sentences keep the gel and non-ionising points intact.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: the numeric answer 3.08 → 3.1 cm (tolerance 0.03 still accepts the full-precision value) and the rewritten answer line of the solution that explains why two significant figures from the graph reading. Selkeä suomi: the answer line is split into short sentences.

@@ -1,8 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: bdfbb79adbe6821f
+CONTENT-HASH: 146da54b10752e46
+
 ## Blocking
 
 ## Polish
 
 ## Checked
-batch delta review: the diff is a renamed lesson title and updated chapter cross-references; every reference matches the new titles, no stale old title remains in the lesson, inquiry or exercises, and the sentences read correctly. No figures, numbers or symbols changed.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: the narrowed right-hand slit of the diffraction figure: it is now visibly narrower than the wavelength, matching its b < λ label and description.

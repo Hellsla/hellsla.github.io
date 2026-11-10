@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: e960fc0ad1c58628
+CONTENT-HASH: 46c2c34f09efa7c0
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- light delta review (teacher 2026-11-07): I captured and opened two changed paragraphs at 390 px from the rebuilt preview. One is Yleinen virhekäsitys, with the new sentence "Suurilla heilahduskulmilla heilurin jaksonaika kasvaa hieman." The other is the Vaimeneminen paragraph on the pendulum clock (constant small amplitude, "ei edistä eikä jätätä"). They are 49 and 60 words, logically ordered and in natural Finnish (edistää/jätättää are the right clock verbs). Nothing is clipped, and a page scan at 390 px found no inline formula that wraps or scrolls.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: pendulum force diagram (heiluri): the dashed path arc now ends exactly at the bob (α = 35°, symmetric), no clash with labels, legible at 390; captures fy5-9-fi-easy-390-heiluri.png, -1280-heiluri.png. Built preview, own Playwright captures (deviceScaleFactor 1) under /tmp/claude-0/-home-user/61da6444-3d3b-5f0d-8dfa-1c431aff38b7/scratchpad/visual/; inline-KaTeX wrap/overflow check on every changed passage at 390 px: none.

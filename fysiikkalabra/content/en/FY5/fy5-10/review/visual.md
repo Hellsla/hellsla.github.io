@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 82182e756639fe8e
+CONTENT-HASH: 582c5df6e9d91c3f
 
 ## Blocking
 
 ## Polish
-- [Minor] lesson.md, The speed depends on the medium — "The very long wave of a tsunami, again, travels the faster the deeper the sea is." reads awkwardly — "A tsunami, whose wavelength is very long, travels faster the deeper the sea is."
 
 ## Checked
-light delta review (teacher 2026-11-07): changed passages only (travelling disturbance, speed/dispersion paragraph, summary, exit ticket); own 390 px element captures of the current built page preview/en/fy5-10.html (hash unchanged since the stamped review/shots), inline KaTeX wrap scan of the whole page: none wraps; long paragraphs still readable at 390 px.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: theory, Periaate step, "Nopeuden voi muuttaa vain …", sim model note, Koe 3 title, result text, rubric line, exercise feedback/solutions with the new "jännitys ja massa pituusyksikköä kohti" wording; units LaTeX, no inline formula wraps at 390; captures fy5-10-en-390/1280-teoria, -periaate, -vain, -model, -koe3, -tulos, -rubric.png. Built preview, own Playwright captures (deviceScaleFactor 1) under /tmp/claude-0/-home-user/61da6444-3d3b-5f0d-8dfa-1c431aff38b7/scratchpad/visual/; inline-KaTeX wrap/overflow check on every changed passage at 390 px: none.

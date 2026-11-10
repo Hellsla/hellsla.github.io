@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 7d00c1710ea5520b
+CONTENT-HASH: fa4b921e0f83747b
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-light delta review (teacher 2026-11-07): only the passages changed against origin/main were judged, in context; no full review was done even where the tooling asks for one. Cavendish 1798: measured the Earth's mean density from the attraction of lead spheres, γ derivable from his result: historically and physically correct (the photo and caption were already on main).
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: Recomputed the Kuu-koe numbers: $4\pi^2 r/T^2 = 2.724\cdot10^{-3}$ m/s² = 2.72 mm/s²; 0.00272 is both the m/s² value and the km-left value converted to mm/s², and 2.72e-6 is km left and not converted, so both rewritten mistake feedbacks are right.

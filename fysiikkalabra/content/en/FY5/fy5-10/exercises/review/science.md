@@ -1,19 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 05a22a67824fc9ac
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: d0e0aaa9ca173d93
 
 ## Blocking
-(none)
-
-## Fixed
-(none needed)
 
 ## Polish
-(none)
 
 ## Checked
-- New task fy5-10-L1-09 (five true/false statements on a rope wave (f = 1.5 Hz, v = 1.8 m/s, 3 to 5 false)) compared with content/fi: answer, unit, tolerance, correct flags, choices/statements/order, every number and formula identical; English decimal point used; wording natural.
-- Recomputed independently: answers and all numbers in the task and its solution agree with fi.
-- solutions.md section for fy5-10-L1-09: same structure and numbers as fi; the physics and its conditions unchanged.
-- check_i18n.py: no errors for fy5-10; build.py fy5-10 succeeds.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: Checked L1-07 option feedback, L1-09 statement 4 feedback and both solutions: speed depends on the rope's tension and mass per unit length, not on frequency; 'the rope and its tension stay the same' justifies v = 1.8 m/s and λ = 1.8/3.0 = 0.60 m; consistent with the lesson and the tension-data task.

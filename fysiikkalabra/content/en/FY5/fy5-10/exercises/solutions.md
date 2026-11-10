@@ -127,7 +127,7 @@
 
 ## fy5-10-L1-07
 **Find:** what happens to the wave when the shaking frequency of the rope is doubled and the rope and its tension stay the same.
-**Principle:** The speed of a wave is determined by the medium, that is, the rope and its tension, not by the frequency of the source. The frequency is determined by the source. From the fundamental equation of wave motion $v = f\lambda$ it follows that $\lambda = v/f$.
+**Principle:** The speed of a wave is determined by the properties of the rope, its tension and its mass per unit length, not by the frequency of the source. The frequency is determined by the source. From the fundamental equation of wave motion $v = f\lambda$ it follows that $\lambda = v/f$.
 **Model answer:** The rope and the tension do not change, so the speed of the wave stays the same. When the frequency doubles, the wavelength $\lambda = v/f$ halves. The hand now sends twice as many crests in the same time, but the crests still travel the same distance, so they fit closer together. The statement that the speed doubles is a common misconception, because shaking more often does not drive the wave forward faster. The statement that the wavelength stays the same forgets that the wavelength depends on the frequency as well as on the speed, and the statement that the wavelength grows contradicts the fundamental equation.
 
 ## fy5-10-L1-08
@@ -242,7 +242,7 @@ The total time is $t = 2.5\,\text{s} + 2.4\,\text{s} = 4.9\,\text{s}$.
 
 ## fy5-10-L1-09
 **Find:** which of the five statements about a wave travelling along a taut rope and a ribbon tied to the rope are true.
-**Principle:** The frequency is the number of oscillations per second, and in a photograph the distance between successive crests is the wavelength $\lambda$. The speed of the wave is obtained from the basic equation $v = f\lambda$. The speed depends on the medium, that is, on the rope and its tension, and the frequency on the source, that is, on the shaking hand. A wave carries energy but not matter.
+**Principle:** The frequency is the number of oscillations per second, and in a photograph the distance between successive crests is the wavelength $\lambda$. The speed of the wave is obtained from the basic equation $v = f\lambda$. The speed depends on the properties of the rope, its tension and its mass per unit length, and the frequency on the source, that is, on the shaking hand. A wave carries energy but not matter.
 **Model answer:** The frequency and the period are
 
 $f = \dfrac{12}{8.0\,\text{s}} = 1.5\,\text{Hz}$
@@ -259,6 +259,6 @@ $v = f\lambda = 1.5\,\text{Hz} \cdot 1.2\,\text{m}$, that is, $v = 1.8\,\text{m/
 
 3 false: a wave does not carry matter. The ribbon and the point of the rope oscillate up and down around their equilibrium positions, but they do not travel forward. It is energy that moves forward.
 
-4 false: with the same tension the rope is the same medium, so the speed stays $1.8\,\text{m/s}$. Double the frequency $3.0\,\text{Hz}$ halves the wavelength: $\lambda = \tfrac{1.8\,\text{m/s}}{3.0\,\text{Hz}} = 0.60\,\text{m}$.
+4 false: the rope and its tension stay the same, so the speed stays $1.8\,\text{m/s}$. Double the frequency $3.0\,\text{Hz}$ halves the wavelength: $\lambda = \tfrac{1.8\,\text{m/s}}{3.0\,\text{Hz}} = 0.60\,\text{m}$.
 
 5 false: the horizontal axis of the $(t, y)$ graph is time, so the distance between the peaks is the period $T \approx 0.67\,\text{s}$, not the wavelength $1.2\,\text{m}$.

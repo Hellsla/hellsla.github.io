@@ -1,12 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: c74d89688be36f47
+CONTENT-HASH: 04e865d86ab662a1
 
 ## Blocking
-(none)
 
 ## Polish
-- lesson.md:218 — the park photo caption carries four sentences of A-weighting caveats; keep "Näyttö kertoo äänitason desibeleinä" and the 62 dB comparison, and leave the explanation to "Mitä mittari mittaa".
-- lesson.md:271 — "niiden energiavirrat kumoavat osittain toisiaan" is a hard idea and not needed; "joten äänenpainetaso voi olla suurempi kuin intensiteettitaso" is enough.
 
 ## Checked
-light delta review (teacher 2026-11-07), after fixes 2: Desibeliasteikko now opens "Laajan vaihteluvälin vuoksi ...", so the reason for the dB scale is explicit and the hedge no longer reads as the reason; earlier Polish resolved.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: the rule paragraph in the lesson (same tone in phase reinforces at some places and weakens at others, chapter cited by name) and the corrected sim model note, which now puts the interfering loudspeakers at different places, so it no longer contradicts the co-located setup or suggests that interference always gives a pattern.

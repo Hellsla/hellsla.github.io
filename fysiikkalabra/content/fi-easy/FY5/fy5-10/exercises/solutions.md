@@ -127,7 +127,7 @@
 
 ## fy5-10-L1-07
 **Kysytty:** mitä aallolle tapahtuu, kun narun heilutustaajuus kaksinkertaistetaan ja naru sekä sen jännitys pysyvät samoina.
-**Periaate:** Aallon nopeus riippuu väliaineesta eli narusta ja sen jännityksestä. Se ei riipu lähteen taajuudesta. Taajuuden määrää lähde. Aaltoliikkeen perusyhtälöstä $v = f\lambda$ seuraa $\lambda = v/f$.
+**Periaate:** Aallon nopeus riippuu narun ominaisuuksista: narun jännityksestä ja narun massasta pituusyksikköä kohti. Se ei riipu lähteen taajuudesta. Taajuuden määrää lähde. Aaltoliikkeen perusyhtälöstä $v = f\lambda$ seuraa $\lambda = v/f$.
 **Mallivastaus:** Naru ja jännitys eivät muutu, joten aallon nopeus pysyy samana. Kun taajuus kaksinkertaistuu, aallonpituus $\lambda = v/f$ puolittuu. Käsi lähettää nyt kaksi kertaa niin monta harjaa samassa ajassa. Harjat etenevät silti yhtä pitkän matkan, joten ne mahtuvat lähemmäs toisiaan. Väite nopeuden kaksinkertaistumisesta on yleinen virhekäsitys. Tiheämpi heilutus ei vie aaltoa nopeammin eteenpäin. Väite aallonpituuden pysymisestä samana unohtaa, että aallonpituus riippuu myös taajuudesta. Väite aallonpituuden kasvusta on perusyhtälön vastainen.
 
 ## fy5-10-L1-08
@@ -242,7 +242,7 @@ Kokonaisaika on $t = 2{,}5\,\text{s} + 2{,}4\,\text{s} = 4{,}9\,\text{s}$.
 
 ## fy5-10-L1-09
 **Kysytty:** mitkä viidestä väitteestä kireässä köydessä etenevästä aallosta ja köyteen solmitusta nauhasta ovat tosia.
-**Periaate:** Taajuus on värähdysten määrä sekunnissa. Valokuvassa peräkkäisten harjojen väli on aallonpituus $\lambda$. Aallon nopeus saadaan perusyhtälöstä $v = f\lambda$. Nopeus riippuu väliaineesta eli köydestä ja sen jännityksestä. Taajuus riippuu lähteestä eli heiluttavasta kädestä. Aalto kuljettaa energiaa mutta ei ainetta.
+**Periaate:** Taajuus on värähdysten määrä sekunnissa. Valokuvassa peräkkäisten harjojen väli on aallonpituus $\lambda$. Aallon nopeus saadaan perusyhtälöstä $v = f\lambda$. Nopeus riippuu köyden ominaisuuksista: köyden jännityksestä ja köyden massasta pituusyksikköä kohti. Taajuus riippuu lähteestä eli heiluttavasta kädestä. Aalto kuljettaa energiaa mutta ei ainetta.
 **Mallivastaus:** Taajuus ja jaksonaika ovat
 
 $f = \dfrac{12}{8{,}0\,\text{s}} = 1{,}5\,\text{Hz}$
@@ -259,6 +259,6 @@ $v = f\lambda = 1{,}5\,\text{Hz} \cdot 1{,}2\,\text{m}$, eli $v = 1{,}8\,\text{m
 
 3 epätosi: aalto ei kuljeta ainetta. Nauha ja köyden kohta värähtelevät ylös ja alas tasapainoasemansa ympärillä. Ne eivät kulje eteenpäin. Eteenpäin siirtyy energia.
 
-4 epätosi: samalla jännityksellä köysi on sama väliaine, joten nopeus pysyy $1{,}8\,\text{m/s}$:na. Kaksinkertainen taajuus $3{,}0\,\text{Hz}$ puolittaa aallonpituuden: $\lambda = \tfrac{1{,}8\,\text{m/s}}{3{,}0\,\text{Hz}} = 0{,}60\,\text{m}$.
+4 epätosi: köysi ja sen jännitys pysyvät samoina, joten nopeus pysyy $1{,}8\,\text{m/s}$:na. Kaksinkertainen taajuus $3{,}0\,\text{Hz}$ puolittaa aallonpituuden: $\lambda = \tfrac{1{,}8\,\text{m/s}}{3{,}0\,\text{Hz}} = 0{,}60\,\text{m}$.
 
 5 epätosi: $(t, y)$-kuvaajan vaaka-akselilla on aika, joten huippujen väli on jaksonaika $T \approx 0{,}67\,\text{s}$. Se ei ole aallonpituus $1{,}2\,\text{m}$.

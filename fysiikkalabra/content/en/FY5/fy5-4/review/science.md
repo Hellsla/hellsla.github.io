@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: fc9fa4138773d48d
+CONTENT-HASH: 58a4c5c0f1e45d4a
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-light delta review (teacher 2026-11-07): only the passages changed against origin/main were judged, in context; no full review was done even where the tooling asks for one. Δv direction (towards the centre from the midpoint of the interval, not from the start or end position; limit gives the instantaneous centripetal acceleration) correct; centrifugal force now 'no real force' in the ground frame and a fictitious force only in the rotating frame, consistently in lesson, summary, inquiry model and exit ticket; FBDs stay in the ground frame.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: Checked the added note in the car sim model: kinetic friction is usually smaller than the maximum static friction, and tyre rolling and steering also matter, which states the condition of the model's use of $\mu_0 mg$ during a skid; physics correct and the same in all three languages.

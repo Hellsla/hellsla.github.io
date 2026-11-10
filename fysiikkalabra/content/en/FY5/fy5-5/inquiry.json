@@ -234,11 +234,11 @@
         "mistakes": [
           {
             "value": 0.00272,
-            "feedback": "Your number is correct in metres per second squared. The answer is asked in $\\text{mm/s}^2$: $1\\,\\text{m/s}^2 = 1000\\,\\text{mm/s}^2$."
+            "feedback": "Your number is the correct acceleration in $\\text{m/s}^2$, or the distance was left in kilometres. Check that you substituted $r = 3.844 \\cdot 10^{8}\\,\\text{m}$, and give the answer in $\\text{mm/s}^2$: $1\\,\\text{m/s}^2 = 1000\\,\\text{mm/s}^2$."
           },
           {
             "value": 2.72e-06,
-            "feedback": "The distance was left in kilometres. Convert $r = 384\\,400\\,\\text{km} = 3.844 \\cdot 10^{8}\\,\\text{m}$ before substituting."
+            "feedback": "The distance was left in kilometres, and the result was not converted to $\\text{mm/s}^2$. Convert $r = 384\\,400\\,\\text{km} = 3.844 \\cdot 10^{8}\\,\\text{m}$ before substituting."
           }
         ],
         "solution": "**Given:** mean distance of the Moon $r = 384\\,400\\,\\text{km}$, orbital period $T = 27.32\\,\\text{d}$; for comparison $g = 9.80\\,\\text{m/s}^2$ and $R = 6378\\,\\text{km}$\n\n**Find:** the centripetal acceleration of the Moon $a_\\text{n}$ in $\\text{mm/s}^2$\n\n**Principle:** The Moon moves round the Earth at a nearly constant speed along a nearly circular path, so it has a centripetal acceleration towards the Earth's centre. The orbital speed is obtained from the distance and the time of one revolution.\n\n**Formula:** $a_\\text{n} = \\tfrac{v^2}{r}$ and $v = \\tfrac{2\\pi r}{T}$, so $a_\\text{n} = \\dfrac{4\\pi^2 r}{T^2}$\n\n**Conversions:** $r = 384\\,400\\,\\text{km} = 3.844 \\cdot 10^{8}\\,\\text{m}$; $T = 27.32 \\cdot 24 \\cdot 3600\\,\\text{s} = 2.3604 \\cdot 10^{6}\\,\\text{s}$; finally $1\\,\\text{m/s}^2 = 1000\\,\\text{mm/s}^2$\n\n**Substitution:** $a_\\text{n} = \\dfrac{4\\pi^2 \\cdot 3.844 \\cdot 10^{8}\\,\\text{m}}{(2.3604 \\cdot 10^{6}\\,\\text{s})^2} = 2.724 \\cdot 10^{-3}\\,\\text{m/s}^2 = 2.724\\,\\text{mm/s}^2$\n\n**Answer:** $2.72\\,\\text{mm/s}^2$, three significant figures as in the distance and the period.\n\n**Reasonableness:** The prediction of the inverse-square law is $g \\cdot \\left(\\tfrac{R}{r}\\right)^2 = 9.80\\,\\text{m/s}^2 \\cdot \\left(\\tfrac{6378}{384\\,400}\\right)^2 \\approx 2.70\\,\\text{mm/s}^2$. The values differ by less than one per cent, so the same pull of the Earth that makes the apple fall is enough to explain the motion of the Moon."

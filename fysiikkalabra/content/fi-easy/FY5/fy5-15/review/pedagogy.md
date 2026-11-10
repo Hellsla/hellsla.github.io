@@ -1,12 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 05966b3286289439
+CONTENT-HASH: 8fe46662a2c9c370
 
 ## Blocking
-(none)
 
 ## Polish
-- lesson.md:218 — the photo caption has five sentences on A-weighting, repeating the new section; keep "Näyttö kertoo äänitason desibeleinä. 62 dB on noin tavallisen puheen voimakkuus."
-- lesson.md:271 — "niiden energiavirrat kumoavat osittain toisiaan" is opaque for S2; "Ne tuovat energiaa moneen suuntaan, ja osa siitä kulkee vastakkain."
 
 ## Checked
-light delta review (teacher 2026-11-07), after fixes 2: Desibeliasteikko now opens "Intensiteetin vaihteluväli on siis hyvin laaja. Siksi ...", two short sentences that restate the reason before "Siksi"; earlier Blocking resolved.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: the rule paragraph in the lesson (same tone in phase reinforces at some places and weakens at others, chapter cited by name) and the corrected sim model note, which now puts the interfering loudspeakers at different places, so it no longer contradicts the co-located setup or suggests that interference always gives a pattern. Selkeä suomi: three short sentences.

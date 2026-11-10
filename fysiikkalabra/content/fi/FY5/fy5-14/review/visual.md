@@ -1,12 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 9ce07eadddb4ab87
+CONTENT-HASH: db677c39e34ffbb6
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-- light delta review (teacher 2026-11-07), LOPS extension marking: opening at 360 and 1280 px (second list "Voit myös syventää osaamistasi"/"You can also go further and learn to" under the goals, one -malla/-mällä or to-infinitive item, muted markers), the Lisätiedoksi/Further information box opened (tag, both Doppler formulas, symbol lists, sign rule) and the three Syventävä/Extension example boxes at 360 and 1280 px, the moved sentences (moving source/listener paragraphs end on higher/lower, summary bullet) at 360 px; tags not clipped, no LaTeX breakage, scrollWidth = viewport with every box open.
-- light delta review (teacher 2026-11-07): the worked example's Periaate and Tulos stages (all stages revealed) at 390 px; $341\,\text{Hz}$ and $286\,\text{Hz}$ stay on one line; scrollWidth 390.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: beat graph (huojunta-tehtava): rendered axis has grid lines every 0,1 s and numbers every 0,2 s, now as the aria-label says (checked in the built page); captures fy5-14-fi-390-huojunta.png, -1280-huojunta.png. Built preview, own Playwright captures (deviceScaleFactor 1) under /tmp/claude-0/-home-user/61da6444-3d3b-5f0d-8dfa-1c431aff38b7/scratchpad/visual/; inline-KaTeX wrap/overflow check on every changed passage at 390 px: none.

@@ -176,7 +176,7 @@
       "type": "explain",
       "title": "Johtopäätös: mitä taulukot kertovat?",
       "prompt": "Kirjoita taulukoiden perusteella: miten vertailuaika muuttuu, kun melutaso nousee $3\\,\\text{dB}$, ja miksi? Mitä luokan mittaus kertoo siitä, miksi kovapintainen tila on meluisa?",
-      "model": "Kun taso nousee $3\\,\\text{dB}$, intensiteetti kaksinkertaistuu ja aika puolittuu. Intensiteetin ja ajan tulo eli korvaan tuleva energia pysyy samana. Siksi jo tasolla $94\\,\\text{dB}$ sama annos kertyy tunnissa. Luokassa taso pieneni $8\\,\\text{m}$:n matkalla vain $7\\,\\text{dB}$, kun kentällä se pieneni $18\\,\\text{dB}$. Kovat pinnat heijastavat ääntä, ja heijastunut ääni täyttää huoneen. Kaukanakaan lähteestä ei siis ole hiljaista. Luvut ovat nyrkkisäännön laskemia arvoja ja keksittyä esimerkkiaineistoa, eivät todellisia mittauksia.",
+      "model": "Kun taso nousee $3\\,\\text{dB}$, intensiteetti likimain kaksinkertaistuu ja aika puolittuu. Intensiteetin ja ajan tulo eli korvaan tuleva energia pysyy samana. Siksi jo tasolla $94\\,\\text{dB}$ sama annos kertyy tunnissa. Luokassa taso pieneni $8\\,\\text{m}$:n matkalla vain $7\\,\\text{dB}$, kun kentällä se pieneni $18\\,\\text{dB}$. Kovat pinnat heijastavat ääntä, ja heijastunut ääni täyttää huoneen. Kaukanakaan lähteestä ei siis ole hiljaista. Luvut ovat nyrkkisäännön laskemia arvoja ja keksittyä esimerkkiaineistoa, eivät todellisia mittauksia.",
       "criteria": [
         "Sanon, että $3\\,\\text{dB}$:n nousu kaksinkertaistaa intensiteetin ja puolittaa ajan.",
         "Perustelen sen annoksella: intensiteetin ja ajan tulo pysyy samana.",

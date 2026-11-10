@@ -1,18 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 6409de3a6a38bfc3
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 26062dd6590a92c6
 
 ## Blocking
-(none)
-
-## Fixed
-(none needed)
 
 ## Polish
-(none)
 
 ## Checked
-- fy5-10-L1-09: the pedagogy of the Finnish task is kept (situation first, question last; misconception-based distractors or statements; each feedback names the same error as fi and does not give the answer away before the student acts).
-- Solution keeps the Find / Principle / Model answer structure with the calculation staged step by step.
-- fi-easy sentences are short, terms are explained, no change in content.
+- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: the replacement of 'väliaine eli naru/köysi ja sen jännitys' by the rope's properties (tension and mass per unit length) in two statement feedbacks and two solution principles, and the reworded statement-4 solution; each feedback still names the misconception (frequency sets the speed) and repairs it. Selkeä suomi: short sentences.

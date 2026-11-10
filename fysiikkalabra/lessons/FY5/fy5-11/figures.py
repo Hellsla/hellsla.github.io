@@ -101,7 +101,7 @@ def diffraction():
     f.tex(150, 22, r"b \approx 4\lambda", "middle")
     f.tex(450, 22, r"b < \lambda", "middle")
     f.line(300, 40, 300, 348, RULE, 2, "6 6")
-    for k, (x0, half) in enumerate(((12, 2 * lam), (312, lam / 2))):
+    for k, (x0, half) in enumerate(((12, 2 * lam), (312, 0.35 * lam))):
         cid = f"fy511-diffclip{k}"
         f.defs_add(f'<clipPath id="{cid}"><rect x="{x0}" y="44" width="276" height="292" rx="8"/></clipPath>')
         f.rect(x0, 44, 276, 292, GLASS, rx=8)

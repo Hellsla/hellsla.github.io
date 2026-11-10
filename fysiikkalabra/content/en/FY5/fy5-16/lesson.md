@@ -135,7 +135,7 @@ In Finland, noise at work is regulated by Government Decree 85/2006 on the prote
 
 ## Formula: Reference time for noise exposure
 
-The upper action value corresponds to eight hours of exposure to a level of $85\,\text{dB(A)}$. The same energy dose can be received in a shorter time at a higher level, and every rise of $3\,\text{dB}$ halves the time. This rule of thumb follows from the fact that noise exposure is calculated as an average of energy. In this chapter the calculated time in which the energy dose of the upper action value builds up is called the reference time. The daily reference time is
+The upper action value corresponds to eight hours of exposure to a level of $85\,\text{dB(A)}$. The same energy dose can be received in a shorter time at a higher level, and every rise of $3\,\text{dB}$ halves the time. This rule of thumb follows from the fact that noise exposure is calculated as an average of energy. Exactly, doubling the intensity raises the level by $10\,\text{dB} \cdot \lg 2 \approx 3.01\,\text{dB}$, so the round $3\,\text{dB}$ is a practical rule for calculation. In this chapter the calculated time in which the energy dose of the upper action value builds up is called the reference time. The daily reference time is
 
 ```latex
 t_\text{ref} = \frac{t_0}{2^{\,n}}

@@ -90,7 +90,7 @@
         },
         {
           "text": "The speed of the wave doubles, because more frequent shaking pushes the wave forward faster",
-          "feedback": "This is a common misconception. The speed is determined by the medium, that is, the rope and its tension, and the frequency does not change it. The frequency changes the wavelength."
+          "feedback": "This is a common misconception. The speed is determined by the properties of the rope, its tension and its mass per unit length, and the frequency does not change it. The frequency changes the wavelength."
         },
         {
           "text": "The wavelength stays the same, because the wavelength is determined by the material of the rope and not by the movement of the hand",
@@ -140,7 +140,7 @@
         {
           "text": "With the same tension, shaking twice as fast increases the speed to $3.6\\,\\text{m/s}$.",
           "true": false,
-          "feedback": "False: the speed of a wave depends on the medium, that is, on the rope and its tension, not on the frequency. The speed stays $1.8\\,\\text{m/s}$, and the wavelength shortens to $0.60\\,\\text{m}$."
+          "feedback": "False: the speed of a wave depends on the properties of the rope, its tension and its mass per unit length, not on the frequency. The speed stays $1.8\\,\\text{m/s}$, and the wavelength shortens to $0.60\\,\\text{m}$."
         },
         {
           "text": "In the $(t, y)$ graph of the ribbon the distance between successive peaks is $1.2\\,\\text{m}$.",

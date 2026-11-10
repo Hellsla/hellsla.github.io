@@ -264,7 +264,7 @@ def beats_task():
     """A recording of two tuning forks, 440 Hz and 444 Hz, over 1,0 s: the vibration is too dense to draw one by one,
     so the band between the envelope ±2A|cos(π Δf t)| is filled (lesson-answers huojunta-*). Loud moments 0,25 s apart."""
     f = Fig("fy514-huoj", 300, "Kuvaaja: kahden yhtä aikaa soivan ääniraudan yhteinen ääni mikrofonilla mitattuna, paine ajan funktiona "
-            "nollasta yhteen sekuntiin. Aika-akselilla apuviivat ja lukuarvot 0,1 sekunnin välein. Värähtely on niin tiheää, "
+            "nollasta yhteen sekuntiin. Aika-akselilla apuviivat 0,1 sekunnin välein ja lukuarvot 0,2 sekunnin välein. Värähtely on niin tiheää, "
             "että se näkyy täytettynä sinisenä alueena. Alueen leveys vaihtelee: se on suurimmillaan hetkillä 0, 0,25, 0,50, "
             "0,75 ja 1,00 sekuntia ja kapenee lähes nollaan näiden puolivälissä.")
     ax = Axes(f, (80, 262), (480, 64), x=(0, 1.0), y=(-1.2, 1.2), xticks=[0.1 * k for k in range(1, 11)], yticks=[],
