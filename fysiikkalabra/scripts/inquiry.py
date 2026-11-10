@@ -642,7 +642,7 @@ def split_prompt(html, words=28):
 def legend_html(html):
     """A choice's prompt in its legend (the group's accessible name), split like task_text into two blocks."""
     sp = split_prompt(html)
-    return f'<span class="scenario">{sp[0]}</span> <span class="ask">{sp[1]}</span>' if sp else html
+    return f'<span class="scenario">{sp[0]}</span><span class="ask">{sp[1]}</span>' if sp else html
 
 
 def task_text(html, cls="task", pid=None):
