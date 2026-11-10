@@ -2014,6 +2014,7 @@
       "lapilyonti": "$\\text{breakdown}$",
       "purkautui": "$\\text{discharged}$",
       "lapilyonti-teksti": "Breakdown: the field exceeds the dielectric strength, the dielectric starts to conduct and a spark discharges between the plates.",
+      "mallirajaus": "When breakdown occurs, the assumptions of the ideal capacitor model no longer hold. The simulation shows the breakdown limit but does not model the discharge current maintained by the connected voltage source.",
       "purkautui-teksti": "The capacitor discharged in the breakdown. Connect the source again to charge it."
     },
     "fy6-11": {

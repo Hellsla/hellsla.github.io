@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 554d2c2e0c21f9e2
+CONTENT-HASH: 5d937e42ff5cf67a
 
 ## Blocking
 (none)
 
 ## Polish
-- The misconception text "samaan tapaan kuin akku olisi täynnä varausta" compares one misconception to another. Replace it with "kuin säiliö täynnä varausta", or drop the comparison.
-- The "puolet" caveat is good. One clause on when it fails (e.g. gradual charging) is optional for FY6.
+- lang/fi.json:1949 — "Simulaatio osoittaa läpilyöntirajan": "näyttää" is plainer for 16-year-olds. The note is two sentences in the readout, while CLAUDE.md Lesson page 4 wants little text there; accepted because the teacher asked for it, but a shorter first sentence would help on a phone.
+- Earlier polish (misconception wording about 'akku') remains optional.
 
 ## Checked
-Follow-up delta (2c31ff041): the Etsi virhe feedback now names the condition ("Kun tyhjä kondensaattori ladataan vakiojännitelähteellä"), matching the lesson's qualified half-energy statement. It still repairs the error and names the real one (µF not converted). Earlier: the +Q/−Q correction is sound, and the photo captions are useful.
+Full review forced by the sim change; lesson text, inquiry, example stages, figures and exit ticket unchanged since the last PASS (hash differs only by sim.js/lang). New: the model-limitation note shows on its own line under the bold breakdown text only with the source connected (sim.js:82). It is correct for a learner: it says the ideal model fails at breakdown and the sim does not model the sustained discharge current, so a student does not read the readout as real physics. It does not disclose any answer or break an experiment. Deterministic checks (inquiry 116/0, layouts 360/768/1280) pass.

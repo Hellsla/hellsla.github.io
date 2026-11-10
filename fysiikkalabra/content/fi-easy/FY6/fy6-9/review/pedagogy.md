@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 7175c5ba2fa9ab75
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: d7c11d1238ff4641
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- "täyden latauksen verran energiaa" is a long sentence for S2; consider splitting it in two.
 
 ## Checked
-- Diff since origin/main for fy6-9 lesson (fi-easy) read against the teacher's brief items that touch it; the changed text says what the brief intends, is consistent between lesson, inquiry, exercises, solutions and feedback, and introduces no new misconception.
-- Standing rules in the changed lines: LaTeX maths and units, decimal comma, no bold in task statements, no lesson ids shown.
-- NOTES.md §12: same physics as the Finnish; new terms (kytkentämuutos, irradianssi, tehokerroin, vaihe-ero, pätöteho, mitoitettu, vakiovirtalähde etc.) are explained in the sentence where first used; whole natural sentences, one action per sentence in instructions.
+batch delta review: inquiry step "siirto" question reworded; it now asks for the energy in units of full phone charges with losses included and says "Vastaa latauskertoina"/equivalent, which removes the 1,68 vs one-whole-charge ambiguity. Numbers, answer 1,68, unit and solution unchanged, so the solution and hints still match; the prompt gives the situation first and the question last.

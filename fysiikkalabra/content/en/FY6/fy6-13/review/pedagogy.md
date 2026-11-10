@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: bb96c17a45e037f6
+CONTENT-HASH: e808871f5f949aef
 
 ## Blocking
 (none)
 
 ## Polish
-- Misconception: "as if it were filled with charge" compares one misconception to another. Use "as if it were a tank filled with charge", or drop it.
-- The half-energy caveat is good; optionally add one clause on when it fails.
+- lang/en.json:2017 — "does not model the discharge current maintained by the connected voltage source" is dense; "does not model the current a connected source would keep driving through the dielectric" is clearer.
+- Two sentences in the readout is more text than Lesson page 4 prefers; accepted as the teacher's request.
 
 ## Checked
-Follow-up delta (2c31ff041): the Find-the-error feedback now states the condition ("When an empty capacitor is charged from a constant-voltage source"), consistent with the lesson. It still repairs the error and names the µF slip. Earlier: the +Q/−Q correction is sound, and the captions are useful.
+Full review forced by the sim change; lesson text, inquiry, example stages, figures and exit ticket unchanged since the last PASS (hash differs only by sim.js/lang). New: the model-limitation note shows on its own line under the bold breakdown text only with the source connected (sim.js:82). It is correct for a learner: it says the ideal model fails at breakdown and the sim does not model the sustained discharge current, so a student does not read the readout as real physics. It does not disclose any answer or break an experiment. Deterministic checks (inquiry 116/0, layouts 360/768/1280) pass.

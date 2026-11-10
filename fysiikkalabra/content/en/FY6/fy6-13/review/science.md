@@ -1,21 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: bb96c17a45e037f6
-
-Follow-up review of the fix commit 2c31ff041 (delta from 5473a624fb5e15a2, whose full review is kept below). Change: inquiry.json:471, Find the error option "The factor ½ is unnecessary" feedback.
+CONTENT-HASH: e808871f5f949aef
 
 ## Blocking
 
-None.
-
 ## Polish
-- Lesson: the half "is transferred to the surroundings as heat"; in a real circuit a little also leaves as radiation (C).
-- Worked example: $6.75\,\text{J}$ could keep three figures; "two significant figures" follows from $t = 1.0\,\text{ms}$ only for the power.
+- content/en/FY6/fy6-13/inquiry.json:113 (simulaatio `model`) — the Mallin oletukset box says how a disconnected capacitor behaves at breakdown but not that, connected, the sim keeps showing the ideal $Q = CU_0$ and $W$; the new readout note (lang/en.json:2017 `sims.fy6-13.mallirajaus`) says it only on screen — optionally add the same sentence to the box so theory and sim boxes say the same.
+- lang/en.json:2017 — the note could name what stays ideal: "the shown $Q$ and $W$ are the ideal model's values" (C-level, not a finding).
 
 ## Checked
-- Earlier blocking item resolved: "When an empty capacitor is charged from a constant-voltage source, the source delivers the energy $QU$, but only half of it is stored …" — correct (half dissipated for any series $R$) and matches the Formula section (:333, "initially uncharged … constant-voltage source … not a general law for every way of charging").
-- Consistency: grep of "half"/"$QU$" — lesson.md:333, transfer hints/mistakes/solution (:490–507) and this feedback state the same model.
-- Total charge zero ($+Q$, $-Q$) in Key idea and misconception, consistent with Summary.
-- Recomputed: $C = 88.5\,\text{pF}$; prediction 1 $44 \to 89\,\text{nC}$, $11 \to 44\,\mu\text{J}$; glass $0.179\,\text{kV}$, $7.9\,\mu\text{J}$; breakdown $3.0\,\text{kV}$; worked example $6.75\,\text{J}$, $6750\,\text{W}$, $0.045\,\text{C}$, $\ge 3.4\,\text{s}$; paper $160\,\text{V}$; retrieval $150\,\text{kV/m}$; error item $0.034\,\text{J}$; transfer $190\,\mu\text{J}$ (mistakes 381, 0, 42.3); check 3 $12\,\text{J}$; exit $1.2\,\text{mC}$. All agree with lesson-answers.py.
-- Dielectric mechanism and table: correct. Every choice has exactly one correct option.
-- sim.js implements $C = \varepsilon_0\varepsilon_\text{r}A/d$, connected/disconnected and breakdown as the model box says; photos correct.
-- Hash at start and end: bb96c17a45e037f6.
+- Diff: `mallirajaus` appended after the bold breakdown text only when `S.lap && !S.burnt` (connected); its claim is right (breakdown violates the ideal-dielectric assumption; a source-sustained arc current is not modelled) and it removes the risk of reading the displayed $Q$, $W$ as physical during breakdown.
+- Browser (preview, en): d = 1,0 mm air, U0 = 3,0 kV → E = 3,00 MV/m, no breakdown; 3,1 kV → lapilyonti 1, Q 549 nC, note shown; then irrotettu → Q = 0, purkautui text, no note.
+- Recomputed in one script with own formulas: sim load 88,5 pF / 88,5 nC / 44,3 µJ; koe 1–4 Q, W, U, E (lasi 0,179 kV, 7,9 µJ; kytketty lasi 496 nC, 248 µJ); koe 5 U_max 3,0 kV; paper 160 V; example 6,75 J, 6,75 kW, 3,4 s; kertaus 150 kV/m; virhe 0,034 J; siirto 190,35 µJ; TV 12 J; exit 1,2 mC — all match lesson-answers.py and the texts.
+- Predictions 1–2, kertaus, virhe, tarkistus 1–2: exactly one correct option each; distractor feedback right.
+- Experiments: each isolates its varied parameter (locked lists correct); simState gives every measured key.
+- Models and conditions: plate formula (small gap, filled gap), U_max = E_max d, half-energy loss stated as a result of this charging model, kytketty/irrotettu table and its mechanism.
+- Scope: charging/discharging qualitative only, no capacitor connections.
+- Numbers, setups and correct options identical to the fi version.
+- Hash identical at start and end.

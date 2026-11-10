@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 0ae1676575670854
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: f4d5434820adfe77
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- [Minor] none.
 
 ## Checked
-- Real Li-ion charging paragraph, 'yksinkertaistettu' wording in the circuit paragraph and summary bullet; fy6-9 inquiry model answer; maths unchanged.
-- Source-only delta review (no screenshots needed: figure changes are aria-label texts only); Finnish language, maths typography (LaTeX, \cdot, decimal comma, number+unit LaTeX) and no lesson ids shown to students.
+batch delta review: opened the rendered Esimerkki 3 / transfer task at 390 px (fi): situation and question split onto their own lines, units in LaTeX, answer unit fits the reworded question, solution block intact.

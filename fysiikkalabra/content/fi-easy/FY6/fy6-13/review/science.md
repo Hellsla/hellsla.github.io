@@ -1,20 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: fda82020fb029110
-
-Follow-up review of the fix commit 2c31ff041 (delta from ac40aeea284452d7). Changes: lesson.md:333 glosses "vakiojännitelähteestä eli lähteestä, jonka jännite pysyy samana"; inquiry.json:471 Etsi virhe feedback now starts "Kun tyhjä kondensaattori ladataan lähteellä, jonka jännite pysyy samana, lähde antaa energian $QU$."
+CONTENT-HASH: 1aa37f5477fae930
 
 ## Blocking
 
 ## Polish
+- content/fi-easy/FY6/fy6-13/inquiry.json:113 (simulaatio `model`) — the Mallin oletukset box says how a disconnected capacitor behaves at breakdown but not that, connected, the sim keeps showing the ideal $Q = CU_0$ and $W$; the new readout note (lang/fi-easy.json:2017 `sims.fy6-13.mallirajaus`) says it only on screen — optionally add the same sentence to the box so theory and sim boxes say the same.
+- lang/fi-easy.json:2017 — the note could name what stays ideal: "the shown $Q$ and $W$ are the ideal model's values" (C-level, not a finding).
 
 ## Checked
-- Both changes are physically right: the half holds for an empty capacitor and an ideal constant-voltage source, independent of $R$; the gloss defines the term correctly.
-- Consistency: grep of "puolet"/"$QU$" — lesson.md:333 ("ei yleinen laki"), siirto hints, mistakes and solution (:490–507) and the Etsi virhe feedback say the same.
-- Total charge: theory, misconception and Tiivistelmä agree ($+Q$, $-Q$, total zero, energy in the field).
-- Dielectric table and reasons; polarisation mechanism checked.
-- Plate formula conditions stated; $U_\text{max} = E_\text{max}d$, paper 160 V.
-- Worked example: $W = 6{,}75\,\text{J}$, $P = 6{,}75\,\text{kW}$, $Q = 0{,}045\,\text{C}$, 3,4 s at 2 W.
-- Sim numbers: $C = 88{,}5\,\text{pF}$; 44/89 nC, 11/44 µJ; glass 0,18 kV, 7,9 µJ; breakdown above 3 kV/mm; lesson-answers.py agrees.
-- Kertaus 150 kV/m, Etsi virhe 0,034 J, transfer 190 µJ (mistakes 381, 0, 42,3), TV 12 J, exit 1,2 mC.
-- Each choice has exactly one correct option; captions correct.
-- Hash same at start and end.
+- Diff: `mallirajaus` appended after the bold breakdown text only when `S.lap && !S.burnt` (connected); its claim is right (breakdown violates the ideal-dielectric assumption; a source-sustained arc current is not modelled) and it removes the risk of reading the displayed $Q$, $W$ as physical during breakdown.
+- Browser (preview, fi-easy): d = 1,0 mm air, U0 = 3,0 kV → E = 3,00 MV/m, no breakdown; 3,1 kV → lapilyonti 1, Q 549 nC, note shown; then irrotettu → Q = 0, purkautui text, no note.
+- Recomputed in one script with own formulas: sim load 88,5 pF / 88,5 nC / 44,3 µJ; koe 1–4 Q, W, U, E (lasi 0,179 kV, 7,9 µJ; kytketty lasi 496 nC, 248 µJ); koe 5 U_max 3,0 kV; paper 160 V; example 6,75 J, 6,75 kW, 3,4 s; kertaus 150 kV/m; virhe 0,034 J; siirto 190,35 µJ; TV 12 J; exit 1,2 mC — all match lesson-answers.py and the texts.
+- Predictions 1–2, kertaus, virhe, tarkistus 1–2: exactly one correct option each; distractor feedback right.
+- Experiments: each isolates its varied parameter (locked lists correct); simState gives every measured key.
+- Models and conditions: plate formula (small gap, filled gap), U_max = E_max d, half-energy loss stated as a result of this charging model, kytketty/irrotettu table and its mechanism.
+- Scope: charging/discharging qualitative only, no capacitor connections.
+- Numbers, setups and correct options identical to the fi version.
+- Hash identical at start and end.

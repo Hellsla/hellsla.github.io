@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 0ae1676575670854
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: f4d5434820adfe77
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-
+- The unit field still reads "kertaa" while the question says "latauskertoina"; harmless.
 
 ## Checked
-- Real Li-ion charging (about constant current, then constant voltage) now stated, and the circuit model labelled simplified in the lesson, the circuit-derivation sentence, the summary and the inquiry model text. The old claim that the charger holds constant voltage in the final phase is consistent with the new one.
-- Reasoning path (voltage difference drives current, so charging slows) kept intact.
+batch delta review: inquiry step "siirto" question reworded; it now asks for the energy in units of full phone charges with losses included and says "Vastaa latauskertoina"/equivalent, which removes the 1,68 vs one-whole-charge ambiguity. Numbers, answer 1,68, unit and solution unchanged, so the solution and hints still match; the prompt gives the situation first and the question last.
