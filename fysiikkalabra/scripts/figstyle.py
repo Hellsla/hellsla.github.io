@@ -120,5 +120,17 @@ class Axes(figlib.Axes):
         return super().line(pts, color, W_DATA if w >= 3 else w, dash)
 
 
+def limb(f, p, q, w1, w2, col, edge=0.35, sw=1.0):
+    """A tapered body part (thigh, shin, sleeve) from p (width w1) to q (width w2) with round ends, outlined in a darker
+    tint of its own colour: the building block of the house style's people."""
+    dx, dy = q[0] - p[0], q[1] - p[1]; L = math.hypot(dx, dy) or 1; ux, uy = -dy / L, dx / L
+    pts = [(p[0] + ux * w1 / 2, p[1] + uy * w1 / 2), (q[0] + ux * w2 / 2, q[1] + uy * w2 / 2),
+           (q[0] - ux * w2 / 2, q[1] - uy * w2 / 2), (p[0] - ux * w1 / 2, p[1] - uy * w1 / 2)]
+    ed = dark(col, edge)
+    f.circle(p[0], p[1], w1 / 2, col, ed, sw); f.circle(q[0], q[1], w2 / 2, col, ed, sw)
+    f.path("M" + " L".join(f"{n(x)},{n(y)}" for x, y in pts) + " Z", col, ed, sw)
+    f.circle(p[0], p[1], max(w1 / 2 - sw * 0.6, 0.5), col); f.circle(q[0], q[1], max(w2 / 2 - sw * 0.6, 0.5), col)
+
+
 def hero(fid, label): return Fig(fid, 600, label, width=1200, hero=True)
 def scene(fid, label): return Fig(fid, 360, label)

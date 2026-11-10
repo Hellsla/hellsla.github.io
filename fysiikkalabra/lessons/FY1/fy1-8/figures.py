@@ -9,6 +9,57 @@ from figstyle import Fig, Axes            # the house illustration style (docs/i
 import figstyle as S
 
 
+def _student(f, x, yf, h, top, trousers, hair, skin, hold=None, glasses=False, ponytail=False):
+    """A student standing facing us, feet on yf and h tall, drawn from shaped parts (figstyle.limb): legs and trainers,
+    a hoodie with a pocket and strings, sleeves with hands, a face with eyes, brows and a smile, ears and hair.
+    hold=(hx, hy) lifts the right-hand arm (the viewer's side given by the sign of hx - x) to hold something there."""
+    u = h / 160
+    sk = S.dark(skin, 0.35)
+    for sgn in (-1, 1):                                                            # legs and trainers
+        S.limb(f, (x + 8 * u * sgn, yf - 76 * u), (x + 9 * u * sgn, yf - 8 * u), 15 * u, 11 * u, trousers, sw=1.25)
+        f.path(f"M{n(x + 9 * u * sgn - 9 * u)},{n(yf - 2 * u)} q0,-9 {n(9 * u)},-9 q{n(9 * u)},0 {n(9 * u)},9 v{n(3 * u)} h{n(-18 * u)} Z",
+               "#364152", S.dark("#364152", 0.4), 1.25)
+        f.path(f"M{n(x + 9 * u * sgn - 9 * u)},{n(yf + u)} h{n(18 * u)}", stroke="#f1f3f5", w=2.5 * u, extra='stroke-linecap="round"')
+    sh = (x, yf - 126 * u)
+    arms = {}
+    for sgn in (-1, 1):
+        s0 = (x + 19 * u * sgn, yf - 120 * u)
+        if hold and (hold[0] - x) * sgn > 0:
+            el = (s0[0] + (hold[0] - s0[0]) * 0.45 + 6 * u * sgn, s0[1] + (hold[1] - s0[1]) * 0.45 + 10 * u)
+            arms[sgn] = (s0, el, hold)
+        else:
+            arms[sgn] = (s0, (x + 23 * u * sgn, yf - 98 * u), (x + 22 * u * sgn, yf - 76 * u))
+    td = S.dark(top, 0.35)
+    # hoodie body with the hood behind the neck
+    f.path(f"M{n(x - 15 * u)},{n(yf - 136 * u)} Q{n(x)},{n(yf - 146 * u)} {n(x + 15 * u)},{n(yf - 136 * u)} L{n(x + 10 * u)},{n(yf - 126 * u)} H{n(x - 10 * u)} Z",
+           S.dark(top, 0.12), td, 1.25)
+    f.path(f"M{n(x - 22 * u)},{n(yf - 118 * u)} Q{n(x - 22 * u)},{n(yf - 130 * u)} {n(x - 10 * u)},{n(yf - 130 * u)} H{n(x + 10 * u)} "
+           f"Q{n(x + 22 * u)},{n(yf - 130 * u)} {n(x + 22 * u)},{n(yf - 118 * u)} L{n(x + 19 * u)},{n(yf - 72 * u)} H{n(x - 19 * u)} Z", top, td, 1.5)
+    f.path(f"M{n(x - 19 * u)},{n(yf - 78 * u)} H{n(x + 19 * u)}", stroke=td, w=1.25)              # waistband
+    f.path(f"M{n(x - 11 * u)},{n(yf - 80 * u)} L{n(x - 8 * u)},{n(yf - 96 * u)} H{n(x + 8 * u)} L{n(x + 11 * u)},{n(yf - 80 * u)}",
+           stroke=td, w=1.25)                                                                     # front pocket
+    for sgn in (-1, 1): f.line(x + 4 * u * sgn, yf - 128 * u, x + 5 * u * sgn, yf - 112 * u, WHITE, 1.6 * u, cap="round")   # hood strings
+    for sgn in (-1, 1):                                                            # sleeves and hands
+        s0, el, wr = arms[sgn]
+        S.limb(f, s0, el, 12 * u, 10 * u, top, sw=1.25); S.limb(f, el, wr, 10 * u, 9 * u, top, sw=1.25)
+        f.circle(wr[0], wr[1] + (0 if hold and wr == hold else 4 * u), 5.5 * u, skin, sk, 1.25)
+    # neck, head, ears, hair and face
+    f.rect(x - 5 * u, yf - 140 * u, 10 * u, 12 * u, S.dark(skin, 0.08))
+    hy = yf - 152 * u
+    for sgn in (-1, 1): f.add(f'<ellipse cx="{n(x + 13 * u * sgn)}" cy="{n(hy + 2 * u)}" rx="{n(3 * u)}" ry="{n(4 * u)}" fill="{skin}" stroke="{sk}" stroke-width="1.25"/>')
+    if ponytail:
+        f.path(f"M{n(x + 10 * u)},{n(hy - 8 * u)} q{n(14 * u)},{n(2 * u)} {n(12 * u)},{n(22 * u)} q{n(-6 * u)},{n(-6 * u)} {n(-10 * u)},{n(-14 * u)} Z", hair, S.dark(hair, 0.3), 1.25)
+    f.add(f'<ellipse cx="{n(x)}" cy="{n(hy)}" rx="{n(13 * u)}" ry="{n(15 * u)}" fill="{skin}" stroke="{sk}" stroke-width="1.25"/>')
+    f.path(f"M{n(x - 14 * u)},{n(hy + 2 * u)} Q{n(x - 15 * u)},{n(hy - 18 * u)} {n(x)},{n(hy - 17 * u)} Q{n(x + 15 * u)},{n(hy - 18 * u)} {n(x + 14 * u)},{n(hy + 2 * u)} "
+           f"Q{n(x + 10 * u)},{n(hy - 8 * u)} {n(x + 2 * u)},{n(hy - 8 * u)} Q{n(x - 8 * u)},{n(hy - 9 * u)} {n(x - 14 * u)},{n(hy + 2 * u)} Z", hair, S.dark(hair, 0.3), 1.25)
+    for sgn in (-1, 1):
+        f.circle(x + 5 * u * sgn, hy + u, 1.5 * u, "#2b3138")
+        f.line(x + 3 * u * sgn, hy - 3 * u, x + 8 * u * sgn, hy - 3.5 * u, S.dark(hair, 0.2), 1.3 * u, cap="round")
+        if glasses: f.circle(x + 5 * u * sgn, hy + u, 4 * u, "none", "#3a4350", 1.3)
+    if glasses: f.line(x - u, hy + u, x + u, hy + u, "#3a4350", 1.3)
+    f.path(f"M{n(x - 4 * u)},{n(hy + 7 * u)} q{n(4 * u)},{n(3 * u)} {n(8 * u)},0", stroke=sk, w=1.4 * u, extra='stroke-linecap="round"')
+
+
 def hero():
     """The chapter's opening illustration: one toy car on a track, two groups timing it with their own tape and stopwatch."""
     f = S.hero("fy18-hero", "Kuvitus: luokan lattialla rata, jolla leluauto kulkee mittanauhan vieressä. Radan molemmin puolin on ryhmä: "
@@ -33,13 +84,14 @@ def hero():
     for wx in (x - 46, x + 50): f.circle(wx, y + 10, 18, INK); f.circle(wx, y + 10, 8, ALUMINIUM)
     for k, (dx, dy) in enumerate(((150, -20), (130, -2), (160, 14))): f.line(x - dx, y + dy, x - dx + 40, y + dy, MUTED, 3, cap="round")
     # two groups, each with its own stopwatch held up
-    for gx, shirts, turn in ((150, (COLD, GOOD), 0.27), (1050, (HEAT, COLD), 0.34)):
+    groups = ((150, ((COLD, "#2b3138", "#f1d3b3", False, False), (GOOD, "#7a4b2a", "#c99a72", True, True)), 0.27),
+              (1050, ((HEAT, "#c08a3e", "#f1d3b3", False, True), (COLD, "#2b3138", "#8d5b3c", False, False)), 0.34))
+    for gx, (holder, other), turn in groups:
         sgn = 1 if gx < 600 else -1
-        H.person(f, gx - 40 * sgn, 390, shirts[1], INK, 0.66)
-        H.person(f, gx + 40 * sgn, 396, shirts[0], INK, 0.7)
         wx = gx + 110 * sgn
-        f.line(gx + 40 * sgn + 20 * sgn, 396 - 236 * 0.7, wx, 276, shirts[0], 16, cap="round")   # the arm holds the watch out
-        f.rect(wx - 12, 262, 24, 30, SAND_LIGHT, INK, 2, 10)
+        _student(f, gx - 40 * sgn, 390, 236 * 0.66, other[0], "#3f4c5a", other[1], other[2], glasses=other[3], ponytail=other[4])
+        _student(f, gx + 40 * sgn, 396, 236 * 0.7, holder[0], "#364a63", holder[1], holder[2], hold=(wx, 270),
+                 glasses=holder[3], ponytail=holder[4])
         H.stopwatch(f, wx, 222, 44, turn)
     return f.svg()
 

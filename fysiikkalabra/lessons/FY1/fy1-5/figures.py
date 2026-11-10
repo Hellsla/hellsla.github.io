@@ -163,15 +163,7 @@ def lightning():
     return f.svg()
 
 
-def _seg(f, p, q, w1, w2, col):
-    """A tapered limb part from p (width w1) to q (width w2) with round ends, outlined in a darker tint."""
-    dx, dy = q[0] - p[0], q[1] - p[1]; L = math.hypot(dx, dy) or 1; ux, uy = -dy / L, dx / L
-    pts = [(p[0] + ux * w1 / 2, p[1] + uy * w1 / 2), (q[0] + ux * w2 / 2, q[1] + uy * w2 / 2),
-           (q[0] - ux * w2 / 2, q[1] - uy * w2 / 2), (p[0] - ux * w1 / 2, p[1] - uy * w1 / 2)]
-    ed = S.dark(col, 0.35)
-    f.circle(p[0], p[1], w1 / 2, col, ed, 1); f.circle(q[0], q[1], w2 / 2, col, ed, 1)
-    f.path("M" + " L".join(f"{n(x)},{n(y)}" for x, y in pts) + " Z", col, ed, 1)
-    f.circle(p[0], p[1], w1 / 2 - 0.6, col); f.circle(q[0], q[1], w2 / 2 - 0.6, col)      # hide the seams at the joints
+_seg = S.limb
 
 
 def _shoe(f, ax, ay, col, tilt=0.0):
