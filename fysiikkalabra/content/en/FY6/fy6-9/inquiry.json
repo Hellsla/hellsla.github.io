@@ -322,7 +322,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Apply to a new situation",
-      "prompt": "The capacity of a power bank is marked $10\\,000\\,\\text{mAh}$, and the nominal voltage of its cells is $3.7\\,\\text{V}$. The capacity of a phone battery is $4000\\,\\text{mAh}$ and its nominal voltage is $3.85\\,\\text{V}$. In the transfer $30\\,\\%$ of the energy becomes internal energy of the voltage converter, the wires and the batteries. How many times does the power bank charge an empty phone battery full?",
+      "prompt": "The capacity of a power bank is marked $10\\,000\\,\\text{mAh}$, and the nominal voltage of its cells is $3.7\\,\\text{V}$. The capacity of a phone battery is $4000\\,\\text{mAh}$ and its nominal voltage is $3.85\\,\\text{V}$. In the transfer $30\\,\\%$ of the energy becomes internal energy of the voltage converter, the wires and the batteries. How many full charges of the phone battery does the energy from the power bank correspond to when the losses are taken into account? Give the answer as a number of charges.",
       "answer": 1.68,
       "unit": "kertaa",
       "tolerance": 0.02,

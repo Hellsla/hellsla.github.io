@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 7175c5ba2fa9ab75
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: d7c11d1238ff4641
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- [Minor] none.
 
 ## Checked
-- Word-level diff since origin/main of the fi-easy fy6-9 lesson files and neighbouring text; decimal convention (comma, Finnish), number+unit in LaTeX, \cdot, no bold in task statements, no lesson ids; wording compared with the Finnish intent for the brief's items.
+batch delta review: opened the rendered Esimerkki 3 / transfer task at 390 px (fi-easy): situation and question split onto their own lines, units in LaTeX, answer unit fits the reworded question, solution block intact.

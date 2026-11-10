@@ -322,7 +322,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Sovella uuteen tilanteeseen",
-      "prompt": "Varavirtalähteen kapasiteetiksi on merkitty $10\\,000\\,\\text{mAh}$, ja sen kennojen nimellisjännite on $3{,}7\\,\\text{V}$. Puhelimen akun kapasiteetti on $4000\\,\\text{mAh}$ ja nimellisjännite $3{,}85\\,\\text{V}$. Siirrossa $30\\,\\%$ energiasta muuttuu jännitteenmuuntimen, johtojen ja akkujen sisäenergiaksi. Kuinka monta kertaa varavirtalähde lataa tyhjän puhelimen akun täyteen?",
+      "prompt": "Varavirtalähteen kapasiteetiksi on merkitty $10\\,000\\,\\text{mAh}$, ja sen kennojen nimellisjännite on $3{,}7\\,\\text{V}$. Puhelimen akun kapasiteetti on $4000\\,\\text{mAh}$ ja nimellisjännite $3{,}85\\,\\text{V}$. Siirrossa $30\\,\\%$ energiasta muuttuu jännitteenmuuntimen, johtojen ja akkujen sisäenergiaksi. Kuinka monen puhelimen akun täyden latauksen verran energiaa varavirtalähteestä saadaan, kun häviöt otetaan huomioon? Vastaa latauskertoina.",
       "answer": 1.68,
       "unit": "kertaa",
       "tolerance": 0.02,

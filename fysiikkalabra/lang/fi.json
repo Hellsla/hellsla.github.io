@@ -1946,6 +1946,7 @@
       "lapilyonti": "$\\text{läpilyönti}$",
       "purkautui": "$\\text{purkautui}$",
       "lapilyonti-teksti": "Läpilyönti: kenttä ylittää eristeen läpilyöntilujuuden, eriste alkaa johtaa ja levyjen välillä purkautuu kipinä.",
+      "mallirajaus": "Läpilyönnin tapahtuessa ideaalisen kondensaattorimallin oletukset eivät enää päde. Simulaatio osoittaa läpilyöntirajan, mutta ei mallinna kytketyn jännitelähteen ylläpitämää purkausvirtaa.",
       "purkautui-teksti": "Kondensaattori purkautui läpilyönnissä. Kytke lähde uudelleen ladataksesi sen."
     },
     "fy8-5": {
