@@ -30,6 +30,7 @@
     "breadcrumb": "Path",
     "footer": "Ruukkilabra",
     "copyright": "© 2026 Lauri Hellsten",
+    "rights": "All rights reserved.",
     "back_to_course": "← {{course}} module",
     "course_type_required": "Compulsory",
     "course_type_optional": "Optional",
