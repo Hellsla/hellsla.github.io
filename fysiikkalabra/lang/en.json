@@ -20,6 +20,8 @@
     "subtitle": "Upper secondary physics",
     "logo": "ruukkilabra-logo-en.svg",
     "main_menu": "Main menu",
+    "menu": "Menu",
+    "skip": "Skip to content",
     "modules": "Modules",
     "reading_tips": "Book tips",
     "booklets": "Booklets",

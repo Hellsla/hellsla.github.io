@@ -81,26 +81,36 @@ header.top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items
 .brand-name{display:flex;flex-direction:column;font:800 1.14rem/1.1 var(--sans);letter-spacing:-.01em;color:var(--brand-green);overflow-wrap:break-word}
 .brand-name small{font:700 .68rem/1.3 var(--sans);letter-spacing:.16em;text-transform:uppercase;margin-top:2px}
 header.top nav{display:flex;align-items:center;gap:4px;flex:none;margin-left:auto}
-header.top nav>a,.lang-menu>summary{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;font:600 var(--fs-ui) var(--sans);color:var(--ink-2);text-decoration:none;border-radius:999px}
-header.top nav>a:hover,.lang-menu>summary:hover{color:var(--ink);background:var(--bg-tint)}
+header.top nav>a,.lang-menu>summary,.nav-menu>summary{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;font:600 var(--fs-ui) var(--sans);color:var(--ink-2);text-decoration:none;border-radius:999px}
+header.top nav>a:hover,.lang-menu>summary:hover,.nav-menu>summary:hover{color:var(--ink);background:var(--bg-tint)}
 header.top nav>a:active,.lang-menu>summary:active{background:var(--line)}
-@media (max-width:29.99rem){header.top nav>a.nav-modules{display:none}.brand-name small{letter-spacing:.06em}.lang-menu>summary{padding:0 10px}}
-@media (max-width:39.99rem){header.top nav>a.nav-reading,header.top nav>a.nav-study,header.top nav>a.nav-booklets{display:none}}   /* Lukuvinkit gives way first on a phone; the footer of every page links to it */
-@media (max-width:51.99rem){header.top nav>a.nav-about{display:none}}   /* Sivustosta (front page only) needs about 800 px to keep the header on one row; the footer links it */
-@media (max-width:49.99rem){header.top nav>a.nav-modules~a.nav-study{display:none}}   /* Näin opiskelet beside Moduulit (every page but the front, teacher 2026-11-08) needs about 800 px for one header row in English; the front page, without Moduulit, keeps it from 640 px */
+@media (max-width:29.99rem){.brand{gap:8px}.brand-mark{width:34px;height:34px}.brand-name small{letter-spacing:.06em;max-width:7.5rem}.lang-menu>summary{padding:0 6px;gap:.3rem}header.top{column-gap:8px}header.top nav{gap:2px}}   /* room for the menu button beside "Selkeä suomi" and under "Upper secondary physics" (two lines) at 360 px */
+/* Valikko (design audit 2026-11-10, P0-1): under 52rem the header's links no longer disappear one by one; they all give
+   way to one menu button beside the language control (a <details>, no script, like the language menu), so every page
+   of the header is reachable on a phone. From 52rem the links show and the button is gone. */
+.nav-menu{display:none;position:relative;margin:0}
+@media (max-width:51.99rem){header.top nav>a{display:none}.nav-menu{display:block}}
+/* on a phone the word gives way to the three bars (the button keeps its name for a screen reader): "Selkeä suomi" and
+   "English" beside the brand leave no room for it at 360 px */
+@media (max-width:29.99rem){.nav-menu-t{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  .nav-menu>summary{justify-content:center;width:44px;padding:0}
+  .nav-menu>summary::after{content:"";width:18px;height:2px;border-radius:1px;background:currentColor;box-shadow:0 -6px 0 currentColor,0 6px 0 currentColor}}
 header.top nav>a[aria-current="page"]{color:var(--accent-deep);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:.4em}
+/* Siirry sisältöön: the first stop of the keyboard, visible only when focused */
+.skip{position:absolute;left:8px;top:-4rem;z-index:100;padding:.6rem 1rem;background:var(--surface);color:var(--accent-deep);font:700 var(--fs-ui) var(--sans);border:2px solid var(--accent-deep);border-radius:8px}
+.skip:focus{top:8px}
 .visually-hidden{position:absolute!important;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 /* the language control: the current language on a quiet button, the others in a small panel (a <details>, no script) */
 .lang-menu{position:relative;margin:0}
-.lang-menu>summary{gap:.4rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);list-style:none}
-.lang-menu>summary::-webkit-details-marker{display:none}
-.lang-menu>summary::before,.lang-menu[open]>summary::before{content:none;display:none}
+.lang-menu>summary,.nav-menu>summary{gap:.4rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);list-style:none}
+.lang-menu>summary::-webkit-details-marker,.nav-menu>summary::-webkit-details-marker{display:none}
+.lang-menu>summary::before,.lang-menu[open]>summary::before,.nav-menu>summary::before,.nav-menu[open]>summary::before{content:none;display:none}
 .lang-menu>summary::after{content:"";width:.45rem;height:.45rem;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(-2px) rotate(45deg);flex:none}
 .lang-menu[open]>summary::after{transform:translateY(2px) rotate(-135deg)}
-.lang-list{position:absolute;right:0;top:calc(100% + 6px);z-index:50;list-style:none;margin:0;padding:.35rem;min-width:13.5rem;max-width:min(18rem,calc(100vw - 32px));background:var(--surface);border:1px solid var(--line);border-radius:12px;box-shadow:0 10px 28px rgba(20,23,30,.12)}
-.lang-list li{margin:0}
-.lang-list a.lang{display:flex;align-items:center;min-height:44px;padding:0 .75rem;border-radius:8px;color:var(--ink);font:600 var(--fs-ui) var(--sans);text-decoration:none}
-.lang-list a.lang:hover{background:var(--bg-tint);color:var(--accent-deep)}
+.lang-list,.nav-list{position:absolute;right:0;top:calc(100% + 6px);z-index:50;list-style:none;margin:0;padding:.35rem;min-width:13.5rem;max-width:min(18rem,calc(100vw - 32px));background:var(--surface);border:1px solid var(--line);border-radius:12px;box-shadow:0 10px 28px rgba(20,23,30,.12)}
+.lang-list li,.nav-list li{margin:0}
+.lang-list a.lang,.nav-list a{display:flex;align-items:center;min-height:44px;padding:0 .75rem;border-radius:8px;color:var(--ink);font:600 var(--fs-ui) var(--sans);text-decoration:none}
+.lang-list a.lang:hover,.nav-list a:hover{background:var(--bg-tint);color:var(--accent-deep)}
 .lang-list a.lang:active{background:var(--line)}
 .lang-note{display:block;padding:0 .75rem .45rem;margin-top:-.3rem;font-size:.8125rem;line-height:1.35;color:var(--ink-2)}
 .crumbs{font-size:var(--fs-small);color:var(--ink-2);margin:.4rem 0 1.2rem;display:flex;flex-wrap:wrap;align-items:center;gap:0 .25rem}

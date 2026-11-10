@@ -17,15 +17,16 @@
 <link rel="stylesheet" href="site.css">
 {{strings}}
 </head><body>
+<a class="skip" href="#sisalto">{{t:site.skip}}</a>
 <div class="page lesson-page">
 <header class="top">
   <a class="brand" href="index.html" aria-label="{{t:site.home_aria}}"><img class="brand-mark" src="brand/ruukkilabra-symboli.svg" alt="" width="40" height="40"><span class="brand-name">{{t:site.name}}<small>{{t:site.subtitle}}</small></span></a>
-  <nav aria-label="{{t:site.main_menu}}"><a class="nav-modules" href="index.html#moduulit">{{t:site.modules}}</a><a class="nav-study" href="nain-opiskelet.html">{{t:site.study}}</a><a class="nav-reading" href="lukuvinkit.html">{{t:site.reading_tips}}</a><a class="nav-booklets" href="vihkot.html">{{t:site.booklets}}</a>{{languages}}</nav>
+  <nav aria-label="{{t:site.main_menu}}"><a class="nav-modules" href="index.html#moduulit">{{t:site.modules}}</a><a class="nav-study" href="nain-opiskelet.html">{{t:site.study}}</a><a class="nav-reading" href="lukuvinkit.html">{{t:site.reading_tips}}</a><a class="nav-booklets" href="vihkot.html">{{t:site.booklets}}</a><details class="nav-menu"><summary><span class="nav-menu-t">{{t:site.menu}}</span></summary><ul class="nav-list"><li><a href="index.html#moduulit">{{t:site.modules}}</a></li><li><a href="nain-opiskelet.html">{{t:site.study}}</a></li><li><a href="lukuvinkit.html">{{t:site.reading_tips}}</a></li><li><a href="vihkot.html">{{t:site.booklets}}</a></li><li><a href="tietoa.html">{{t:site.about}}</a></li></ul></details>{{languages}}</nav>
 </header>
 <nav class="crumbs" aria-label="{{t:site.breadcrumb}}"><a href="index.html">{{t:site.name}}</a> › <a href="{{course}}.html">{{course}}</a> › {{title}}</nav>
 {{notice}}
 <nav class="toc" aria-label="{{t:lesson.steps_nav}}"><p class="toc-head"><span>{{course}}</span>{{title}}</p>{{toc}}</nav>
-<main class="reading lesson">
+<main class="reading lesson" id="sisalto">
 {{main}}
 </main>
 <footer class="bottom"><span>{{t:site.footer}}</span><a href="{{course}}.html">{{back_to_course}}</a><a href="tietosuoja.html">{{t:site.privacy}}</a><span class="copyright">{{t:site.copyright}}</span><span class="rights">{{t:site.rights}}</span></footer>

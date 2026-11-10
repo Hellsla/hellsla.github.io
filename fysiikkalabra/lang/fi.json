@@ -20,6 +20,8 @@
     "subtitle": "Lukion fysiikka",
     "logo": "ruukkilabra-logo-fi.svg",
     "main_menu": "Päävalikko",
+    "menu": "Valikko",
+    "skip": "Siirry sisältöön",
     "modules": "Moduulit",
     "reading_tips": "Kirjavinkit",
     "booklets": "Vihkot",

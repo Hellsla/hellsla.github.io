@@ -117,13 +117,13 @@ for lang in i18n.languages():
     psrc = next((f for f in (ROOT / "content" / lang / "tietosuoja.md", ROOT / "content" / "fi" / "tietosuoja.md") if f.is_file()), None)
     pheads = re.findall(r"^#+ (.+)$", psrc.read_text(), re.M) if psrc else []
     expect(f"{lang}: Tietosuoja shows content/{lang}/tietosuoja.md with all its headings (teacher 2026-11-04)",
-           '<main class="reading privacy-page">' in priv and bool(pheads) and all(_h.escape(h) in priv for h in pheads), pheads)
+           '<main class="reading privacy-page" id="sisalto">' in priv and bool(pheads) and all(_h.escape(h) in priv for h in pheads), pheads)
     expect(f"{lang}: no page sets a cookie (Tietosuoja says the site uses none)",
            not [f.name for f in (ROOT / "templates").glob("*.js") if "document.cookie" in f.read_text(errors="ignore")])
     about = (out / "tietoa.html").read_text() if (out / "tietoa.html").is_file() else ""
     expect(f"{lang}: tietoa.html exists", bool(about))
     expect(f"{lang}: Sivustosta opens with Kiviruukin lukio's logo in the school's colours (teacher 2026-11-04)",
-           '<main class="reading about-page">' in about and (SITE / "brand/kiviruukin-lukio-oikea-valkoinen.svg").is_file()
+           '<main class="reading about-page" id="sisalto">' in about and (SITE / "brand/kiviruukin-lukio-oikea-valkoinen.svg").is_file()
            and f'src="{"" if out == SITE else "../"}brand/kiviruukin-lukio-oikea-valkoinen.svg"' in about)
     leaks = sorted(str(f.relative_to(out)) for f in out.glob("*.html") if ('href="' + "../" * len(out.relative_to(ROOT.parent).parts) + 'index.html"') in f.read_text())
     expect(f"{lang}: no page links out of the site to the teacher's portfolio (teacher 2026-11-04)", not leaks, leaks[:5])
