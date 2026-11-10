@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 9f98868b9f13e666
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: 5c84c3bbd0a47dd8
+Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-11-09: diff since origin/main only)
 
 ## Blocking
 - none
@@ -9,7 +9,6 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff sin
 - none
 
 ## Checked
-- 15 km/s * 9e4 s = 1,35e6 km = 3,5 * 3,84e5 km: 'kolmen ja puolen Maa-Kuu-etäisyyden' correct.
-- 'Laite' -> 'virtalähde' in the energy task and its solution: consistent with the task text (power banks feeding a device at the table power); t = E/P recomputed: A 0,65 kWh/85,0 W = 7,65 h, B 2,20 MJ/100 W = 6,11 h, difference 1,5 h; answer unchanged.
-- Sun/Moon: 1,4e6/3,5e3 = 400 Moon diameters, wording now compares diameters correctly; 'Kuvan lukeminen' label and table header text are cosmetic.
-- fi-easy wording is clear plain Finnish and says the same as the Finnish fix.
+- fy1-2-L3-02: question now asks for a ratio (how many times one screen width), so it no longer reads as a count of whole screens (675); answer 674.4, tolerance 0.02 unchanged; unit "" as in other ratio tasks.
+- Kysytty, Periaate, Vastaus describe the same ratio N; Järkevyys still fits.
+- Language version fi-easy judged from the diff against origin/main; notation (LaTeX numbers with units, decimal comma/point, \cdot) checked in changed lines.

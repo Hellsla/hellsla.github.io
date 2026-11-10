@@ -156,12 +156,12 @@
 
 ## fy1-2-L3-02
 **Given:** screen width $W = 1920\,\text{px}$ (exact number); diameter of the Moon $D = 3474\,\text{km} = 1\,\text{px}$; distance $a = 30.07\,\text{AU}$; $1\,\text{AU} = 1.496\cdot10^{8}\,\text{km}$
-**Find:** the number of screens $N$
-**Principle:** The picture is drawn to scale, so kilometres become pixels when divided by the diameter of the Moon. The number of screens is the number of pixels divided by the width of one screen.
+**Find:** how many times the width of one screen the distance is in the picture, the ratio $N$
+**Principle:** The picture is drawn to scale, so kilometres become pixels when divided by the diameter of the Moon. The ratio $N$ is the number of pixels divided by the width of one screen.
 **Formula:** $N = \dfrac{a}{D}\cdot\dfrac{1\,\text{px}}{W}$
 **Conversions:** The distance in kilometres: $a = 30.07\,\text{AU} = 30.07\cdot 1.496\cdot10^{8}\,\text{km} = 4.498\cdot10^{9}\,\text{km}$. Every $3474\,\text{km}$ is one pixel, so the number of pixels is $4.498\cdot10^{9}\,\text{km} : 3474\,\text{km} = 1.295\cdot10^{6}$.
 **Substitution:** $N = \dfrac{1.295\cdot10^{6}\,\text{px}}{1920\,\text{px}} = 674.4$
-**Answer:** $674.4$ screen widths, four significant figures like the data $30.07\,\text{AU}$, $1.496\cdot10^{8}\,\text{km}$ and $3474\,\text{km}$; the screen width $1920\,\text{px}$ is an exact number and does not limit the precision.
+**Answer:** about $674.4$ times, that is $674.4$ screen widths, four significant figures like the data $30.07\,\text{AU}$, $1.496\cdot10^{8}\,\text{km}$ and $3474\,\text{km}$; the screen width $1920\,\text{px}$ is an exact number and does not limit the precision.
 **Reasonableness:** Neptune is about 1.3 million pixels away, and 1.3 million divided by two thousand is about 650. The result is of the same order of magnitude. So the distance cannot be seen in the picture at a glance: it has to be scrolled through hundreds of screen widths.
 
 ## fy1-2-L3-03

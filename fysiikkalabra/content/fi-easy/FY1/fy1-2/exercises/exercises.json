@@ -290,9 +290,9 @@
     {
       "id": "fy1-2-L3-02",
       "level": 3,
-      "text": "Näytön leveys on tarkalleen $1920\\,\\text{px}$. Kuvassa Kuun halkaisija, $3474\\,\\text{km}$, on yksi kuvapiste. Auringosta Neptunukseen on $30{,}07\\,\\text{AU}$ ja $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$. Kuinka monta näytön leveyttä peräkkäin tarvitaan, jotta matka Auringosta Neptunukseen mahtuu kuvaan?",
+      "text": "Näytön leveys on tarkalleen $1920\\,\\text{px}$. Kuvassa Kuun halkaisija, $3474\\,\\text{km}$, on yksi kuvapiste. Auringosta Neptunukseen on $30{,}07\\,\\text{AU}$ ja $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$. Kuinka moninkertainen Auringon ja Neptunuksen välinen etäisyys olisi tässä mittakaavassa yhden näytön leveyteen verrattuna?",
       "answer": 674.4,
-      "unit": "kpl",
+      "unit": "",
       "tolerance": 0.02
     },
     {

@@ -446,6 +446,7 @@ def plain_tex(s):
     def one(m):
         f = re.sub(r"\\frac\{([^{}]*)\}\{([^{}]*)\}", r"\1/\2", m.group(1))
         for tex, uni in (("\\Delta", "Δ"), ("\\rho", "ρ"), ("\\mu", "µ"), ("\\cdot", "·")): f = f.replace(tex + " ", uni).replace(tex, uni)
+        f = re.sub(r"\\[,;:!]", "", f)   # a thin space between factors is no comma in the tab: "v = g\\,t" -> "v = gt"
         return f.replace("\\", "")
     return re.sub(r"\$([^$]+)\$", one, s)
 

@@ -1,12 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 78a3e394be6ece37
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: 50b79f966167569c
+Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-11-09: diff since origin/main only)
 
 ## Blocking
 - none
 
 ## Polish
-- none beyond wording; checked units/decimal comma/\,\text notation in all changed lines ($2{,}4\,\text{t}$, $1{,}8\,\text{t}$ etc. correct).
+- none
 
 ## Checked
-- Exercise and solution diff read for notation (decimal comma, thin-space units, \text) and readable language; no figures changed.
+- fy1-8-L3-04: the general rule 'a difference can be shown only if the intervals do not overlap' is removed; Periaate now states the data-specific conclusion (intervals overlap, no reliable conclusion, hand-timing uncertainty to be considered); Järkevyys softened to 'ei erotu luotettavasti'.
+- d = 0,04 s, k = 3,75 ≈ 3,8 and the overlap 3,08–3,12 s unchanged.
+- Language version fi judged from the diff against origin/main; notation (LaTeX numbers with units, decimal comma/point, \cdot) checked in changed lines.

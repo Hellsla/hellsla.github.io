@@ -290,9 +290,9 @@
     {
       "id": "fy1-2-L3-02",
       "level": 3,
-      "text": "The width of a screen is exactly $1920\\,\\text{px}$. In a picture the diameter of the Moon, $3474\\,\\text{km}$, is one pixel. From the Sun to Neptune is $30.07\\,\\text{AU}$ and $1\\,\\text{AU} = 1.496\\cdot10^{8}\\,\\text{km}$. How many screen widths side by side are needed for the distance from the Sun to Neptune to fit in the picture?",
+      "text": "The width of a screen is exactly $1920\\,\\text{px}$. In a picture the diameter of the Moon, $3474\\,\\text{km}$, is one pixel. From the Sun to Neptune is $30.07\\,\\text{AU}$ and $1\\,\\text{AU} = 1.496\\cdot10^{8}\\,\\text{km}$. At this scale, how many times the width of one screen would the distance from the Sun to Neptune be?",
       "answer": 674.4,
-      "unit": "screen widths",
+      "unit": "",
       "tolerance": 0.02
     },
     {
