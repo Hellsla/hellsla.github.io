@@ -142,7 +142,7 @@
 
 ## The big picture {Kokonaiskuva}
 
-Almost every matriculation exam in physics has a problem that gives a set of measurement data and asks for a quantity to be determined from it. The solution always proceeds in the same order: the measurement results and their uncertainty, the graph, the fit, the interpretation of the fit and finally the result with its uncertainty. Points can be gained or lost at every step.
+Almost every matriculation exam in physics has a problem that gives a set of measurement data and asks for a quantity to be determined from it. Processing measurement data often proceeds from the measurement results and their uncertainties to a graph, where needed to fitting a model and interpreting it, and finally to the result with its uncertainty. Not every problem requires every step. Points can be gained or lost at every step.
 
 <svg data-fig="kartta" viewBox="0 0 600 448" role="img" aria-label="Diagram: from measurement to result in five steps joined by downward arrows. 1 Measure: reading, uncertainty Δx and precision. 2 Graph: quantity and unit on the axes. 3 Fit: straight line or linearisation. 4 Interpret: slope k and constant term b with their units. 5 Result: k ± Δk and the range of validity of the model." style="max-width:100%;font-size:26px">
   <rect x="14" y="14" width="572" height="64" rx="10" fill="#ffffff" stroke="#1971c2" stroke-width="2.5"/>

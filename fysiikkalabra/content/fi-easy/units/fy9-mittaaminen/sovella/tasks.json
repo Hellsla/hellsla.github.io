@@ -105,22 +105,22 @@
           "id": "d",
           "kind": "word",
           "points": 3,
-          "text": "Arvioi, millainen systemaattinen virhe tässä ajanotossa on. Miten se vaikuttaa a-kohdan nopeuteen? Miksi kolmen kellon keskiarvo ei poista virhettä?",
+          "text": "Arvioi käsiajanoton systemaattisia virhelähteitä. Voiko tehtävän tiedoista päätellä varmasti, onko mitattu aika pidempi vai lyhyempi kuin todellinen aika? Perustele. Selitä myös, miksi usean ajanottajan keskiarvo ei välttämättä poista systemaattista virhettä.",
           "criteria": [
             {
               "key": "error_sources",
               "points": 1,
-              "detail": "Ajanottaja reagoi lähtömerkkiin myöhässä, reaktioajan verran. Maalissa ajanottaja näkee juoksijan tulevan ja pysäyttää kellon melkein oikeaan aikaan."
+              "detail": "Käynnistyksen ja pysäytyksen reaktioviiveet käsitellään erikseen. Kello käynnistyy viiveen $\\tau_\\text{k}$ myöhässä lähtömerkistä. Myös pysäytykseen liittyy viive $\\tau_\\text{p}$. Se voi olla lyhyempi, koska ajanottaja näkee juoksijan tulevan maaliin."
             },
             {
-              "text": "Siksi mitattu aika on lyhyempi kuin todellinen aika, ja laskettu nopeus on suurempi kuin todellinen nopeus.",
+              "text": "Mitattu aika on $t_\\text{mitattu} = t_\\text{tod} + \\tau_\\text{p} - \\tau_\\text{k}$. Virheen suunta riippuu siis viiveiden erotuksesta. Tehtävän tiedoista suuntaa ei voi päätellä varmasti. Myös fysikaalisesti perusteltu arvio suunnasta hyväksytään, kun oletus kerrotaan.",
               "tag": "experiment",
               "points": 1
             },
             {
               "key": "conclusion",
               "points": 1,
-              "detail": "Virhe on jokaisessa kellossa samaan suuntaan. Siksi keskiarvo ei poista sitä. Virheen poistaa esimerkiksi sähköinen ajanotto, joka on kytketty lähtölaitteeseen."
+              "detail": "Viiveiden keskimääräinen osa on kaikilla ajanottajilla samaan suuntaan. Siksi systemaattinen virhe säilyy keskiarvossa. Satunnaisvirheen vaikutus yleensä pienenee, kun tuloksista lasketaan keskiarvo."
             }
           ]
         }

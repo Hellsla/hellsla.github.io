@@ -1,17 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: b346ed8b9e1ca0c5
+CONTENT-HASH: c07484c136b4b42f
 
-Pedagogy review, round 3, of the English translation of fy9-energia.
+Delta review of the FY9 audit fixes (2026-11-10). Previous PASS hash: b346ed8b9e1ca0c5. The hash was the same at the start and the end of this review.
 
 ## Blocking
-None (rounds 1 and 2 had none).
-
-## Changes since round 2
-- The concept map now has English branch headings (power, efficiency, source of energy), so it matches the chapter names used in the theory summary and the *Review if needed* links; this removes the Finnish headings that an English reader could not use as a study aid.
-
-## Checks done
-- Structure, timing, task counts (6 tasks, 90 points), rubric criteria and per-misconception feedback unchanged since round 2 (check_i18n.py: no errors for this unit).
-- teacher.md stage and task names still match lang/en.json and the page titles.
+None.
 
 ## Polish
 None.
+
+## Checked
+- The change is the Tutki graph axis geometry only; no text, question or answer changed, so the learning path is unaffected. Axis and arrowhead now lie inside the viewBox (diff checked).

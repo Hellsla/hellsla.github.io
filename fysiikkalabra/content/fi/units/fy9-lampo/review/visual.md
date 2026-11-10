@@ -1,24 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 321eee9838d818f2
+CONTENT-HASH: d8139b17655a26ab
 
-Round 2 (delta review of round 1 fixes; round 1 hash c908c7c1c4a5b48e)
+Delta review of the FY9 audit fixes (2026-11-10). Previous PASS hash: 321eee9838d818f2. The hash was the same at the start and the end of this review.
 
 ## Blocking
-(none in round 1, none now)
+None.
 
-## Round 1 polish — verified
-1. melting-curve label size: shared catalog figure, left under Shared issues (developer.md). Accepted.
-2. Flat sub-heading hierarchy: template CSS, under Shared issues. Accepted.
-3. Plain units: fixed; preview text has no plain "(K)", "(kg)", "(°C)", "(1/K)".
-4. Desktop column: house layout.
-5. kayra labels 14 px: at the brief's minimum, accepted.
-
-## Changed text checked in the preview
-s5 b Vastaus (mug estimate, 1890 J : 25,7 K ≈ 70 J/K renders correctly at 390), s1 water-layer wording, "vakiopaineessa", Miksi question, exit ticket item 2, aineisto solution. Finnish is fine.
+## Polish
+- [Minor] Older, out of scope: with every <details> forced open at 360 px the page is wider than the viewport (long substitution chains in some collapsed model answers); not caused by these fixes, and the changed parts themselves fit.
 
 ## Checked
-python3 scripts/build.py fy9-lampo; Playwright at 390 and 1280 with all details open: scrollWidth 390/1280 (no horizontal overflow), 0 .katex-error, no raw $, no console errors.
-
-## Shared issues
-- fy3-7/melting-curve labels ≈ 13 px at 390 px.
-- Template: ### under ## Kaava should be visibly smaller.
+- s1 source note reads 'Ruiskutetun vesikerroksen paksuus ...' (en: 'sprayed water layer'); grammatical, consistent with the task; plain text, no layout impact.
+- Language checked: fi wording of the changed sentences is natural and consistent with the glossary.

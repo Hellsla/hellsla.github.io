@@ -1,11 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 73381a386f867cdd
+CONTENT-HASH: aae7ae491db4c2dd
 
-Pedagogy review, round 3, of the English translation of fy9-lampo. Structure, task counts, hints, misconception feedback, rubrics (6 tasks, 95 points) and the 75-minute plan are carried over unchanged from the reviewed Finnish unit. Every student-facing text, solutions and teacher.md are translated; chapter links use English chapter names; option lengths stay balanced; the exam register is consistent. The round-2 obstacle (Finnish concept-map headings, visual.md Blocking 1) is fixed: the Theory summary map now reads heating / change of state / thermal expansion / heat transfer.
+Delta review of the FY9 audit fixes (2026-11-10). Previous PASS hash: 73381a386f867cdd. The hash was the same at the start and the end of this review.
 
 ## Blocking
 None.
 
 ## Polish
-1. s3 d: criterion "about 12 %" vs model answer "about 13 %" — en is faithful to fi at each place; the mismatch is in the source (check_i18n blocks a one-sided en change). Fix in fi first.
-2. teacher.md: "Fast students / slower students" could read "students who finish quickly / students who need more support" (optional).
+None.
+
+## Checked
+- s1 source note now says 'Ruiskutettu vesikerros' instead of 'Jääkerros', matching what the task describes (water sprayed that freezes); the note stays an honest statement that the numbers are invented.

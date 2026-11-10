@@ -1,23 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: a1fbe68e2eac6dea
+CONTENT-HASH: abf071f03933f894
 
-Round 2 science review of the English translation of fy9-mittaaminen against the Finnish source (all three source reviews PASS).
+Delta review of the FY9 audit fixes (2026-11-10). Previous PASS hash: a1fbe68e2eac6dea. The hash was the same at the start and the end of this review.
 
 ## Blocking
-
 None.
 
 ## Polish
-
-1. sovella/solutions.md, s2 a) Conversions: "$1\,\text{mm} = 1000\,\mu\text{m}$" is stated twice in one sentence. Inherited from the Finnish source (still there in content/fi); fix there first, then re-extract. Not a translation fault.
+- Older, not from these fixes: the en and fi-easy 'big picture' paragraph still opens with 'Almost every matriculation exam ...' / 'Melkein jokaisessa ...', which the fi page softened in an earlier correction.
 
 ## Checked
-
-- Round-1 Polish 1 is fixed: inquiry.json Starting point 6 choice 2 now reads "Extending the line gives only an estimate, since forces above $10\,\text{N}$ were not measured."
-- Diff since round 1 (figures.json, inquiry.json, solutions.md, teacher.md, unit.md) changes text only: no number, answer, tolerance, formula or correct flag changed.
-- `python3 scripts/check_i18n.py`: 0 errors for fy9-mittaaminen (the remaining en errors belong to other units).
-- Round-1 numerical checks (densities, slopes, k, θ0, s1–s6 results) still hold; the kartta figure's aria description matches its new step names.
-
-## Shared issues
-
-None.
+- s1 d task text, criteria, model answer and Hyväksytään myös: t_meas = t_true + tau_stop - tau_start is the correct model (a late start shortens, a late stop lengthens the measured time); the direction therefore depends on the delay difference and cannot be concluded for certain from the task data, as the criterion says.
+- The 'most likely the start delay is larger' estimate is labelled as an assumption and accepted only with its assumption stated; the new Yleisiä virheitä entry penalises a certain-direction claim. The rubric asks only what the task asks.
+- Averaging: the common (mean) part of the delays is systematic and survives the mean; random error's effect usually decreases. Physically right and stated with the correct hedge.
+- Points still 3 (1+1+1). The older accepted alternative (pistol sound over 100 m about 0.3 s) is consistent with the new model: 100 m / 343 m/s = 0.29 s of extra start delay.
+- unit.md: the processing order is now 'often' with 'not every problem requires every step'; no physics claim left over-absolute in that sentence.
+- Preview built with no KaTeX errors.
+- Language version checked: en; the change is the same as in fi, in translation.

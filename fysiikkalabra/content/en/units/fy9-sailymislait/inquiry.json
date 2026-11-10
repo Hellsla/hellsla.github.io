@@ -34,7 +34,7 @@
         },
         {
           "text": "By a factor of four, because the speed is squared.",
-          "feedback": "Correct. $E_\\text{k} = \\tfrac12 mv^2$, so the factor is $\\left(\\tfrac{80}{40}\\right)^2 = 4$. That is why the braking distance also becomes four times as long. Review this if needed in the chapter *Kinetic energy, potential energy and mechanical energy*.",
+          "feedback": "Correct. $E_\\text{k} = \\tfrac12 mv^2$, so the factor is $\\left(\\tfrac{80}{40}\\right)^2 = 4$. If the average deceleration stays the same, the braking distance also becomes four times as long. Review this if needed in the chapter *Kinetic energy, potential energy and mechanical energy*.",
           "correct": true
         },
         {

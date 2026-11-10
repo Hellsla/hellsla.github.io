@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: b346ed8b9e1ca0c5
+CONTENT-HASH: c07484c136b4b42f
 
-Science review, round 3, of the English translation of fy9-energia (source content/fi/units/fy9-energia/, already passed).
+Delta review of the FY9 audit fixes (2026-11-10). Previous PASS hash: b346ed8b9e1ca0c5. The hash was the same at the start and the end of this review.
 
 ## Blocking
-None (rounds 1 and 2 had none).
-
-## Changes since round 2
-- The only content change is the redrawn concept map in unit.md: its branch headings are now `\textbf{power}`, `\textbf{efficiency}`, `\textbf{source of energy}`, which are correct physics English. No formula, number, answer or correct flag changed (commit 433d9adba diff for this unit: only foreignObject widths and the three heading texts in unit.md).
-
-## Checks done
-- python3 scripts/check_i18n.py: no errors for fy9-energia (the one en error reported is in fy9-lampo, another unit).
-- python3 scripts/units.py check and python3 scripts/practice.py check: en/units/fy9-energia OK, 6 tasks, 90 points.
-- Round-1 recomputations (chain 198 MW, pumped storage 75 %, kettle 83.4 %, pellets 3.7 t, January extrapolation 230 kWh, k ≈ −4.9 kWh/°C) still stand; the concept map formulas (P = ΔE/Δt, E = Pt, 1 kWh = 3.6 MJ, η = E_a/E_o, E_o = E_a + E_h, η = η1 η2 η3, E = Hm, W = Fs, W = mgh) match the Finnish.
+None.
 
 ## Polish
 None.
+
+## Checked
+- Tutki graph (energy chain of a condensing plant): the x axis line now ends at x2=384 and the arrowhead path is M396,296 L383,302 L383,290, so the tip lies inside the 400-wide viewBox; the largest x coordinate in the SVG is 390 (gridlines).
+- The SVG in inquiry.json is byte-identical to figures.py tehot() output (imported and compared), so the generator and the page agree.
+- Built preview at 360 px: the arrowhead is visible, bars still read P0 = 400, P1 = 350, P2 = 150, P3 = 140 MW on the 50 MW grid, matching the aria-label; the to-scale claim and the efficiencies are unaffected.
+- Only coordinates of the axis changed; no physics text changed.
+- Language version checked: en; the change is the same as in fi, in translation.

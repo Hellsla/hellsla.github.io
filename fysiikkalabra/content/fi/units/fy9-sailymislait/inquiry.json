@@ -34,7 +34,7 @@
     },
     {
      "text": "Nelinkertaiseksi, koska nopeus on toisessa potenssissa.",
-     "feedback": "Oikein. $E_\\text{k} = \\tfrac12 mv^2$, joten kerroin on $\\left(\\tfrac{80}{40}\\right)^2 = 4$. Siksi myös jarrutusmatka nelinkertaistuu. Kertaa tarvittaessa luvussa *Liike-energia, potentiaalienergia ja mekaaninen energia*.",
+     "feedback": "Oikein. $E_\\text{k} = \\tfrac12 mv^2$, joten kerroin on $\\left(\\tfrac{80}{40}\\right)^2 = 4$. Jos keskimääräinen hidastuvuus pysyy samana, myös jarrutusmatka nelinkertaistuu. Kertaa tarvittaessa luvussa *Liike-energia, potentiaalienergia ja mekaaninen energia*.",
      "correct": true
     },
     {

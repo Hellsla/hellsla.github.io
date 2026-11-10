@@ -105,22 +105,22 @@
      "id": "d",
      "kind": "word",
      "points": 3,
-     "text": "Arvioi, millainen systemaattinen virhe tässä ajanotossa on ja miten se vaikuttaa a-kohdan nopeuteen. Miksi kolmen kellon keskiarvo ei poista virhettä?",
+     "text": "Arvioi käsiajanoton systemaattisia virhelähteitä. Voidaanko tehtävän tietojen perusteella päätellä varmasti, onko mitattu aika todellista pidempi vai lyhyempi? Perustele. Selitä myös, miksi usean ajanottajan keskiarvo ei välttämättä poista systemaattista virhettä.",
      "criteria": [
       {
        "key": "error_sources",
        "points": 1,
-       "detail": "Lähtömerkkiin reagoidaan reaktioajan verran myöhässä, mutta maaliintulon ajanottaja näkee ennalta ja pysäyttää kellon lähes ajallaan."
+       "detail": "Käynnistyksen ja pysäytyksen reaktioviiveet käsitellään erikseen: kello käynnistyy viiveen $\\tau_\\text{k}$ myöhässä lähtömerkistä, ja pysäytykseenkin liittyy viive $\\tau_\\text{p}$, joka voi olla lyhyempi, koska maaliintulon näkee ennalta."
       },
       {
-       "text": "Mitattu aika on siksi todellista lyhyempi ja laskettu nopeus todellista suurempi.",
+       "text": "Mitattu aika on $t_\\text{mitattu} = t_\\text{tod} + \\tau_\\text{p} - \\tau_\\text{k}$, joten virheen suunta riippuu viiveiden erotuksesta, eikä sitä voi tehtävän tiedoista päätellä varmasti. Myös fysikaalisesti perusteltu arvio suunnasta hyväksytään, kun sen oletus kerrotaan.",
        "tag": "experiment",
        "points": 1
       },
       {
        "key": "conclusion",
        "points": 1,
-       "detail": "Virhe on joka kellossa samaan suuntaan, joten keskiarvo ei poista sitä; sen poistaa esimerkiksi lähtölaitteeseen kytketty sähköinen ajanotto."
+       "detail": "Viiveiden keskimääräinen osa on kaikilla ajanottajilla samansuuntainen, joten systemaattinen virhe säilyy keskiarvossa; satunnaisvirheen vaikutus yleensä pienenee keskiarvoistettaessa."
       }
      ]
     }

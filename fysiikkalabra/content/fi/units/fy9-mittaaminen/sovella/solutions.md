@@ -26,14 +26,15 @@
 **Mallivastaus:** Miran keskiarvo on $\bar{t} = (13{,}80 + 14{,}12 + 13{,}96)\,\text{s} : 3 = 13{,}96\,\text{s}$ ja epävarmuus $(14{,}12 - 13{,}80)\,\text{s} : 2 = 0{,}16\,\text{s}$, joten Miran aika on $(13{,}96 \pm 0{,}16)\,\text{s}$ ja Liisan $(13{,}71 \pm 0{,}19)\,\text{s}$. Liisan väli on $13{,}52$–$13{,}90\,\text{s}$ ja Miran $13{,}80$–$14{,}12\,\text{s}$, joten välit menevät päällekkäin. Ero $0{,}25\,\text{s}$ on samaa suuruusluokkaa kuin epävarmuudet. Näillä mittauksilla ei siis voida osoittaa, että Liisa oli nopeampi, vaikka hänen keskiarvonsa on pienempi. Se ei kuitenkaan tarkoita, että juoksijat olisivat yhtä nopeita: eron osoittaminen vaatisi tarkemman ajanoton, esimerkiksi maalikameran.
 
 ### d)
-**Kysytty:** ajanoton systemaattinen virhe, sen vaikutus nopeuteen ja miksi keskiarvo ei poista sitä
-**Periaate:** Systemaattinen virhe siirtää jokaista tulosta samaan suuntaan. Sitä ei näe tulosten hajonnasta, ja toistaminen tai keskiarvo ei poista sitä.
-**Mallivastaus:** Ajanottaja käynnistää kellon vasta, kun hän on nähnyt lipun laskevan ja reagoinut siihen. Kello käynnistyy siksi reaktioajan verran myöhässä, tyypillisesti sekunnin kymmenyksiä. Maaliintuloa ajanottaja taas näkee ennalta, joten hän pysäyttää kellon lähes ajallaan. Mitattu aika on siten todellista lyhyempi, ja a-kohdan nopeus on todellista suurempi. Sama myöhästyminen tapahtuu jokaisella kolmella ajanottajalla, joten kaikki kellot näyttävät liian lyhyttä aikaa ja myös keskiarvo on liian pieni. Keskiarvo vaimentaa vain satunnaista vaihtelua kellojen välillä. Virheen poistaa esimerkiksi sähköinen ajanotto, joka käynnistyy lähtömerkistä itse.
+**Kysytty:** käsiajanoton systemaattiset virhelähteet, voiko virheen suunnan päätellä varmasti ja miksi keskiarvo ei välttämättä poista systemaattista virhettä
+**Periaate:** Systemaattinen virhe siirtää jokaista tulosta samaan suuntaan. Sitä ei näe tulosten hajonnasta, ja toistaminen tai keskiarvo ei poista sitä. Satunnaisvirheen vaikutus sen sijaan yleensä pienenee, kun tuloksia keskiarvoistetaan.
+**Mallivastaus:** Ajanottaja käynnistää kellon vasta, kun hän on nähnyt lipun laskevan ja reagoinut siihen. Kello käynnistyy siksi viiveen $\tau_\text{k}$ myöhässä, tyypillisesti sekunnin kymmenyksiä. Myös pysäyttämiseen liittyy viive $\tau_\text{p}$. Maaliintulon ajanottaja näkee ennalta, joten tämä viive voi olla lyhyempi, mutta hän voi myös pysäyttää kellon hieman liian aikaisin tai myöhässä. Mitattu aika on $t_\text{mitattu} = t_\text{tod} + \tau_\text{p} - \tau_\text{k}$, missä $t_\text{tod}$ on todellinen aika. Mitattu aika on siis todellista lyhyempi, jos $\tau_\text{k} > \tau_\text{p}$, ja pidempi, jos $\tau_\text{p} > \tau_\text{k}$. Tehtävän tiedoista viiveitä ei tunneta, joten suuntaa ei voi päätellä varmasti. Todennäköisintä on, että lähtöviive on suurempi, jolloin aika on hieman liian lyhyt ja a-kohdan nopeus liian suuri. Kolme ajanottajaa toimii samalla tavalla, joten viiveiden keskimääräinen osa on kaikilla samansuuntainen. Se on systemaattinen virhe, joka säilyy myös keskiarvossa. Keskiarvo pienentää yleensä vain satunnaisvirheen eli kellojen välisen vaihtelun vaikutusta. Systemaattisen virheen poistaa esimerkiksi sähköinen ajanotto, joka käynnistyy lähtömerkistä itse.
 
 ### Hyväksytään myös
 - b-kohdassa nopeuden suhteellinen epävarmuus ajan ja matkan suhteellisten epävarmuuksien summana: $\tfrac{0{,}19}{13{,}71} + \tfrac{0{,}3}{100{,}0} \approx 0{,}0169$, jolloin $\Delta v \approx 0{,}0169 \cdot 7{,}294\,\text{m/s} \approx 0{,}12\,\text{m/s}$.
 - b-kohdassa ajan epävarmuudeksi käsiajanoton tyypillinen $0{,}2\,\text{s}$, kun valinta perustellaan. Myös $\Delta v \approx 0{,}1\,\text{m/s}$ ja $v = (7{,}3 \pm 0{,}1)\,\text{m/s}$ hyväksytään.
 - d-kohdassa maininta, että lähtöpistoolin ääneen reagoiva ajanottaja $100\,\text{m}$:n päässä käynnistäisi kellon vielä myöhemmin, koska ääni kulkee matkan noin $0{,}3\,\text{s}$:ssa.
+- d-kohdassa perusteltu arvio virheen suunnasta, esimerkiksi että mitattu aika on todennäköisesti todellista lyhyempi, kun vastauksessa todetaan, että päätelmä perustuu oletukseen viiveiden suuruudesta.
 
 ### Yleisiä virheitä
 - Aikana käytetään yhtä kelloa tai nopeinta aikaa keskiarvon sijasta.
@@ -41,6 +42,7 @@
 - Nopeus ilmoitetaan laskimen tarkkuudella $7{,}2939\,\text{m/s}$ tai epävarmuus ja nopeus eri tarkkuudella.
 - c-kohdassa päätellään keskiarvojen erosta, että Liisa oli nopeampi, tai päällekkäisistä väleistä, että juoksijat olivat yhtä nopeita.
 - d-kohdassa reaktioajan sanotaan aiheuttavan vain satunnaisvirheen; sen keskimääräinen osa on systemaattinen.
+- d-kohdassa väitetään varmaksi, että mitattu aika on todellista lyhyempi tai pidempi, vaikka suunta riippuu käynnistys- ja pysäytysviiveen erotuksesta.
 
 ## fy9-mittaaminen-s2
 
