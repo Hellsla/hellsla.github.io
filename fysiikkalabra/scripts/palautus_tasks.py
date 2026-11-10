@@ -114,7 +114,7 @@ EXTRACT = r"""(id) => {
       [...li.querySelectorAll('.fig, figure')].filter((f) => !f.parentElement.closest('.fig, figure')).forEach((f, i) => f.setAttribute('data-rl-fig', String(i)));
       const c = li.cloneNode(true);
       c.querySelectorAll('[data-rl-fig]').forEach((f) => { const i = f.getAttribute('data-rl-fig'); const img = document.createElement('img'); const lab = f.querySelector('[aria-label]'); img.setAttribute('alt', lab ? lab.getAttribute('aria-label') : ''); img.setAttribute('src', 'FIG:' + i); img.className = 'fig'; f.replaceWith(img); });
-      c.querySelectorAll('h3, .sa-rate, .exp-table, .exp-status, .exp-controls, .exp-buttons, .practice-hint, .hints, .model, .crit-result, ul.criteria, .lock-note, .act-core, .pending, .revise, .my-predictions, textarea, select, .tf-opts, .ord-right, .copy-notes, .explain-status, .drew').forEach((e) => e.remove());
+      c.querySelectorAll('h3, .sa-rate, .exp-pred, .exp-table, .exp-status, .exp-controls, .exp-buttons, .practice-hint, .hints, .model, .crit-result, ul.criteria, .lock-note, .act-core, .pending, .revise, .my-predictions, textarea, select, .tf-opts, .ord-right, .copy-notes, .explain-status, .drew').forEach((e) => e.remove());
       c.querySelectorAll('legend').forEach((l) => { const q = document.createElement('p'); q.innerHTML = l.innerHTML; l.replaceWith(q); });   // a lesson choice's question is its legend
       strip(c);
       return { id: window.flSubmissionTaskId(li), dom: li.id, number: [stageOf(li), nameOf(li)].filter(Boolean).join(': '), level: 0, lesson: true, html: c.innerHTML.replace(/\s+/g, ' ').trim(), answer: '' };
