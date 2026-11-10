@@ -106,6 +106,7 @@
    "id": "fy1-7-L1-08",
    "level": 1,
    "text": "Ongen lyijypainon tilavuus on $5{,}00\\,\\text{cm}^3$. Lyijyn tiheys on $11{,}3\\,\\text{g/cm}^3$. Kuinka suuri on lyijypainon massa? Anna vastaus grammoina.",
+   "figure": "fy1-7/sinker",
    "kind": [
     "model"
    ],
@@ -119,6 +120,7 @@
    "id": "fy1-7-L2-01",
    "level": 2,
    "text": "Kultaharkon mitat ovat $10{,}0\\,\\text{cm} \\cdot 5{,}0\\,\\text{cm} \\cdot 2{,}0\\,\\text{cm}$. Kullan tiheys on $19\\,300\\,\\text{kg/m}^3$. Kuinka suuri on harkon massa? Anna vastaus kilogrammoina.",
+   "figure": "fy1-7/gold-bar",
    "answer": 1.9,
    "unit": "kg",
    "tolerance": 0.02

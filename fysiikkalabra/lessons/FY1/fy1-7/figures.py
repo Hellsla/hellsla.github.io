@@ -99,15 +99,16 @@ def m_v_graph():
             "jossa tilavuus kasvaa 20 cm³ ja massa noin 157 g.")
     ax = Axes(f, (96, 316), (440, 72), x=(0, 50), y=(0, 420), xticks=[10, 20, 30, 40, 50], yticks=[100, 200, 300, 400],
               xlabel=r"V\ (\text{cm}^3)", ylabel=r"m\ (\text{g})")
+    # slope triangle on the iron line, 20 cm3 -> 40 cm3
+    a, b = (20, 7.87 * 20), (40, 7.87 * 40)
+    f.path(f"M{n(ax.X(a[0]))},{n(ax.Y(a[1]))} L{n(ax.X(b[0]))},{n(ax.Y(a[1]))} L{n(ax.X(b[0]))},{n(ax.Y(b[1]))} Z", fill=S.light(IRON, 0.85))
+    f.line(ax.X(a[0]), ax.Y(a[1]), ax.X(b[0]), ax.Y(a[1]), IRON, 1.5)
+    f.line(ax.X(b[0]), ax.Y(a[1]), ax.X(b[0]), ax.Y(b[1]), IRON, 1.5)
     for name, rho, col in (("vesi", 1.00, WATER), ("alumiini", 2.70, METAL_EDGE), ("rauta", 7.87, IRON)):
         ax.line([(0, 0), (50, rho * 50)], col, 3)
         for v in (10, 20, 30, 40, 50):
             ax.point(v, rho * v, col)
         f.tex(448, ax.Y(rho * 50), r"\text{" + name + "}", "start", col, w=120)
-    # slope triangle on the iron line, 20 cm3 -> 40 cm3
-    a, b = (20, 7.87 * 20), (40, 7.87 * 40)
-    f.line(ax.X(a[0]), ax.Y(a[1]), ax.X(b[0]), ax.Y(a[1]), MUTED, 1.5, "6 5")
-    f.line(ax.X(b[0]), ax.Y(a[1]), ax.X(b[0]), ax.Y(b[1]), MUTED, 1.5, "6 5")
     f.tex((ax.X(a[0]) + ax.X(b[0])) / 2, ax.Y(a[1]) - 20, r"\Delta V", "middle", w=50)
     f.tex(ax.X(b[0]) + 10, (ax.Y(a[1]) + ax.Y(b[1])) / 2, r"\Delta m", "start", w=50)
     f.tex(ax.X(a[0]) - 8, ax.Y(b[1]), r"\rho = \dfrac{\Delta m}{\Delta V}", "end", w=110)
@@ -135,16 +136,15 @@ def displacement():
             f.line(x0 - 9 if k % 20 == 0 else x0 - 5, yy, x0, yy, INK, 2 if k % 20 == 0 else 1.5)
         for k in (20, 60, 100):
             f.tex(x0 - 14, bot - k * per, str(k), "end", MUTED, w=48)
-    cyl(120, 40, False)
-    cyl(380, 70, True)
+    cyl(110, 40, False)
+    cyl(330, 70, True)
     y1, y2 = bot - 40 * per, bot - 70 * per
-    f.line(155, y1, 440, y1, MUTED, 1.5, "6 5")
-    f.line(415, y2, 440, y2, MUTED, 1.5, "6 5")
-    f.path(f"M448,{n(y2)} H456 V{n(y1)} H448", stroke=HEAT, w=2.5)
-    f.tex(466, (y1 + y2) / 2 - 16, r"V = V_2 - V_1", "start", HEAT, w=130)
-    f.tex(466, (y1 + y2) / 2 + 16, r"= 30\,\text{ml}", "start", HEAT, w=120)
-    f.tex(120, 346, r"V_1 = 40\,\text{ml}", "middle", w=170)
-    f.tex(380, 346, r"V_2 = 70\,\text{ml}", "middle", w=170)
+    f.line(145, y1, 384, y1, MUTED, 1.5, "6 5")
+    f.line(365, y2, 384, y2, MUTED, 1.5, "6 5")
+    f.dim_v(392, y2, y1, r"V = V_2 - V_1", HEAT)
+    f.tex(404, (y1 + y2) / 2 + 30, r"= 30\,\text{ml}", "start", HEAT)
+    f.tex(110, 346, r"V_1 = 40\,\text{ml}", "middle", w=170)
+    f.tex(330, 346, r"V_2 = 70\,\text{ml}", "middle", w=170)
     return f.svg()
 
 
@@ -177,11 +177,57 @@ def cylinders_read():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "cubes": cubes, "graph": m_v_graph, "displacement": displacement, "cylinders-read": cylinders_read}
+def gold_bar():
+    """Task illustration (fy1-7-L2-01): a gold bar with its three edges dimensioned; no mass or density."""
+    f = Fig("fy17-gold", 330, "Kuvitus: kultaharkko pöydällä, harkon mitat 10,0 cm, 5,0 cm ja 2,0 cm on merkitty mittaviivoin.")
+    gold, side, top_ = "#e2b23c", "#b9861c", "#f3d27a"
+    x0, y0, L, D, H_ = 120, 150, 300, 110, 60          # front face width L, depth drawn at 30° as D·(cos, sin)
+    dx, dy = D * 0.82, -D * 0.5
+    f.add(f'<ellipse cx="{x0 + L / 2 + dx / 2}" cy="{y0 + H_ + 8}" rx="{L / 2 + 70}" ry="12" fill="#d9d2c3" opacity="0.7"/>')
+    f.path(f"M{x0},{y0} L{x0 + dx},{y0 + dy} H{x0 + L + dx} L{x0 + L},{y0} Z", top_, S.dark(gold, 0.45), S.W_OBJ)
+    f.path(f"M{x0 + L},{y0} L{x0 + L + dx},{y0 + dy} V{y0 + dy + H_} L{x0 + L},{y0 + H_} Z", side, S.dark(gold, 0.45), S.W_OBJ)
+    f.rect(x0, y0, L, H_, gold, S.dark(gold, 0.45), S.W_OBJ)
+    f.path(f"M{x0 + 24},{y0 + 14} H{x0 + 120}", stroke="#fff3c4", w=4, extra='stroke-linecap="round" opacity="0.8"')
+    f.dim_h(x0, x0 + L, y0 + H_ + 34, r"10{,}0\,\text{cm}")
+    f.dim_v(x0 - 22, y0, y0 + H_, r"2{,}0\,\text{cm}", side="left")
+    f.line(x0 + L + 18, y0 + H_ + 4, x0 + L + dx + 18, y0 + H_ + dy + 4, INK, 1.25)
+    for t in (0, 1): f.line(x0 + L + 18 + dx * t - 5, y0 + H_ + dy * t + 4 - 5, x0 + L + 18 + dx * t + 5, y0 + H_ + dy * t + 4 + 5, INK, 1.25)
+    f.tex(x0 + L + dx / 2 + 34, y0 + H_ + dy / 2 + 14, r"5{,}0\,\text{cm}", "start")
+    return f.svg()
+
+
+def sinker():
+    """Task illustration (fy1-7-L1-08): a fishing line with a float and a lead sinker under the water surface; no numbers."""
+    f = S.scene("fy17-sinker", "Kuvitus: onkisiima järvessä. Pinnalla kelluu punavalkoinen koho, ja siiman alapäässä veden alla on harmaa "
+                "pisaranmuotoinen lyijypaino ja koukku.")
+    f.rect(0, 0, 600, 120, "#e3eef6")
+    f.path("M0,104 C120,96 200,100 300,96 C420,92 520,98 600,96 V120 H0 Z", "#9db8a4")
+    f.rect(0, 120, 600, 240, S.light(WATER, 0.45))
+    f.rect(0, 250, 600, 110, S.light(WATER, 0.2), extra='opacity="0.5"')
+    f.path("M0,120 H600", stroke=S.light(WATER, 0.7), w=3)
+    for x in (60, 180, 420, 520): f.path(f"M{x},{126} q14,-5 28,0", stroke="#ffffff", w=2, extra='opacity="0.7"')
+    f.path("M190,0 C230,40 290,80 300,104", stroke=S.SOFT_INK, w=1.25)           # line from the rod above
+    f.path("M300,96 C292,96 288,104 288,112 C288,122 300,128 300,128 C300,128 312,122 312,112 C312,104 308,96 300,96 Z", "#ffffff", S.SOFT_INK, 1.5)
+    f.path("M288,112 C288,122 300,128 300,128 C300,128 312,122 312,112 Z", "#d6402f", S.dark("#d6402f", 0.4), 1.5)
+    f.line(300, 84, 300, 96, S.SOFT_INK, 2)
+    f.line(300, 128, 300, 250, S.SOFT_INK, 1.25)
+    f.path("M300,250 C290,252 286,266 290,276 C294,286 306,286 310,276 C314,266 310,252 300,250 Z", "#7d8590", S.dark("#7d8590", 0.4), S.W_OBJ)
+    f.path("M295,260 q-2,8 1,14", stroke="#c4ccd4", w=2.5, extra='stroke-linecap="round"')
+    f.line(300, 286, 300, 312, S.SOFT_INK, 1.25)
+    f.path("M300,312 v16 a8,8 0 0 1 -16,0 l4,-4", stroke="#5b636d", w=2.5, extra='stroke-linecap="round"')
+    for x, y, r in ((120, 220, 4), (128, 206, 3), (470, 300, 5), (478, 284, 3)): f.circle(x, y, r, "none", "#ffffff", 1.5)
+    f.path("M0,330 C150,320 300,336 600,326 V360 H0 Z", "#c9b48a")
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "cubes": cubes, "graph": m_v_graph, "displacement": displacement, "cylinders-read": cylinders_read,
+           "gold-bar": gold_bar, "sinker": sinker}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "cubes": "reveals: the masses 5,0 g, 27 g and 79 g of 10 cm³ cubes",
     "graph": "reveals: the densities of water, aluminium and iron",
     "displacement": "reveals: the volume 30 ml",
+    "gold-bar": "safe: the bar's edges 10,0 cm, 5,0 cm and 2,0 cm (given in the task), no mass",
+    "sinker": "safe: the situation only, a lead sinker on a fishing line under water; no numbers",
     "cylinders-read": "safe: two measuring cylinders before and after, levels to be read from a fine scale (displacement is the lesson figure)",
 }
