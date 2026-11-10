@@ -463,6 +463,35 @@
     });
   });
 
+  // 5b. the prediction at its experiment (teacher 2026-11-10, the stage memo's "Ennusta" and "Tutki"): learning happens
+  // where the prediction meets the observation, so the experiment a prediction waits for (fieldset[data-reveal]) shows
+  // it under its heading: "Ennustit: …", then "tee vielä mittaukset" until the experiment's measurements are in, then
+  // whether they supported it, in the same words as Palaa ennusteisiisi. Without a prediction: a link to make it.
+  // Nothing new is stored; the box reads the answers the page already keeps.
+  const predAt = {};
+  document.querySelectorAll('fieldset.choice[data-reveal]').forEach((fs) => { (predAt[fs.dataset.reveal] = predAt[fs.dataset.reveal] || []).push(fs); });
+  Object.keys(predAt).forEach((expId) => {
+    const exp = document.getElementById(expId), h = exp && exp.querySelector(':scope > h3');
+    if (!exp) return;
+    const box = document.createElement('div'); box.className = 'exp-pred';
+    if (h) h.after(box); else exp.prepend(box);      // an optional experiment has no heading of its own (its box's summary names it)
+    const fill = () => {
+      box.innerHTML = '';
+      predAt[expId].forEach((fs) => {
+        const act = fs.closest('.activity'), saved = act && store.get(act.id), p = document.createElement('p');
+        const name = act && act.querySelector(':scope > h3');      // "Ennuste 2: kun pito pettää", when two predictions wait for one experiment
+        if (name && predAt[expId].length > 1) { const n = document.createElement('span'); n.className = 'exp-pred-name'; n.textContent = name.textContent.trim(); box.appendChild(n); }
+        if (saved) {
+          const ok = fs.querySelectorAll('input[type=radio]')[saved.choice]?.dataset.correct === '1', revealed = fs.dataset.state !== undefined;
+          p.innerHTML = msg('reflect_you_predicted', { text: saved.html || saved.text }) + (revealed ? ` — ${ok ? msg('reflect_supported') : msg('reflect_not_supported')}` : msg('reflect_measure_first'));
+        } else if (act) p.innerHTML = msg('reflect_not_answered', { href: '#' + act.id });
+        box.appendChild(p);
+      });
+      if (window.flMath) window.flMath(box);
+    };
+    fill(); bus.addEventListener('fl:answered', fill); bus.addEventListener('fl:measured', fill);
+  });
+
   // 6. reflection: the student's own predictions beside the evidence
   document.querySelectorAll('.reflect').forEach((r) => {
     const ids = JSON.parse(r.dataset.predictions), list = r.querySelector('.my-predictions');

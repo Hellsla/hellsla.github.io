@@ -106,6 +106,11 @@ with sync_playwright() as pw:
                 n = pg.evaluate("document.querySelectorAll('#ennusta fieldset.choice:not(details.opt *)').length")
                 pg.evaluate("[...document.querySelectorAll('#ennusta fieldset.choice:not(details.opt *)')].slice(0, -1).forEach(fs => { fs.querySelector('input[type=radio]').checked = true; fs.querySelector('button.commit').click(); })")
                 pg.wait_for_timeout(100)
+                # the prediction at its experiment (teacher 2026-11-10): the experiment a prediction waits for shows it under its heading
+                pe = pg.evaluate("""() => [...document.querySelectorAll('#ennusta fieldset.choice[data-reveal]')].map(fs => { const box = document.querySelector('[id="' + fs.dataset.reveal + '"] .exp-pred');
+                    const sel = fs.querySelector('input:checked'), given = !!fs.dataset.committed; const txt = box ? box.textContent : null;
+                    return { box: !!box, given, shows: given && !!sel && !!txt && txt.includes(sel.parentElement.textContent.trim().slice(0, 25)), asks: !given && !!box && !!box.querySelector('a[href="#' + fs.closest('.activity').id + '"]') }; })""")
+                expect(f"{tag}: each experiment shows the prediction made for it, and a link to make the one still missing", all(x["box"] and (x["shows"] if x["given"] else x["asks"]) for x in pe), pe)
                 expect(f"{tag}: Ennusta is not done before every prediction is given", n < 2 or "#ennusta" not in pg.evaluate(DONE), pg.evaluate(DONE))
                 wait = pg.evaluate("(() => { const r = document.querySelector('#ennusta + nav.next-stage'), a = r.querySelector('a'); return [r.classList.contains('is-waiting'), a.getAttribute('href'), a.textContent.trim() === document.querySelector('#ennusta .fold-title').textContent.trim(), !!document.querySelector('nav.toc a[href=\"#tutki\"]').offsetParent]; })()")
                 expect(f"{tag}: until then the row after Ennusta asks for the predictions and does not lead on, while the stage bar still does", wait == [True, "#ennusta", True, True], wait)
