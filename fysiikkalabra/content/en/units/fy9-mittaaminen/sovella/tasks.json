@@ -105,22 +105,22 @@
           "id": "d",
           "kind": "word",
           "points": 3,
-          "text": "Assess what systematic error this timing has and how it affects the speed in part a. Why does the mean of three watches not remove the error?",
+          "text": "Assess the systematic sources of error in hand timing. Can you conclude for certain from the information in the problem whether the measured time is longer or shorter than the true time? Justify your answer. Also explain why the mean of several timekeepers does not necessarily remove a systematic error.",
           "criteria": [
             {
               "key": "error_sources",
               "points": 1,
-              "detail": "The timekeepers react to the start signal one reaction time late, but the timekeeper at the finish sees the runner coming and stops the watch almost on time."
+              "detail": "The reaction delays of starting and stopping are treated separately: the watch starts with a delay $\\tau_\\text{start}$ after the start signal, and stopping also has a delay $\\tau_\\text{stop}$, which can be shorter because the finish can be seen coming."
             },
             {
-              "text": "The measured time is therefore shorter than the true time, and the calculated speed larger than the true speed.",
+              "text": "The measured time is $t_\\text{meas} = t_\\text{true} + \\tau_\\text{stop} - \\tau_\\text{start}$, so the direction of the error depends on the difference of the delays and cannot be concluded for certain from the information given. A physically justified estimate of the direction is also accepted when its assumption is stated.",
               "tag": "experiment",
               "points": 1
             },
             {
               "key": "conclusion",
               "points": 1,
-              "detail": "The error is in the same direction in every watch, so the mean does not remove it; it is removed, for example, by electronic timing connected to the starting device."
+              "detail": "The average part of the delays is in the same direction for every timekeeper, so the systematic error remains in the mean; the effect of random error usually decreases when results are averaged."
             }
           ]
         }

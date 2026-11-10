@@ -1,13 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: a5ce41b2c877ab0d
+CONTENT-HASH: 1ebdec5cbf0f0961
 
-Science review, round 3, of the en translation of fy9-sailymislait, 2026-11-04.
-
-Round 2 found no Blocking science issue. Since round 2, scripts/figlib.py translate() also translates \textbf{} contents, and the en figures were redrawn. The only change in this unit's content is the three concept-map branch headings (energy, momentum, applications). No number, answer, tolerance, formula or correct flag changed. All figure numbers still use a decimal point (1.6 m/s, 0.80 m/s, 41 kJ, 20 kJ, 51 200 kg·m/s, k ≈ 0.080 s²/m, t_r ≈ 0.86 s). check_i18n.py: en 0 errors. units.py check: 77 units ok. practice.py check: en/units/fy9-sailymislait OK, 6 tasks, 95 points.
+Delta review of the FY9 audit fixes (2026-11-10). Previous PASS hash: a5ce41b2c877ab0d. The hash was the same at the start and the end of this review.
 
 ## Blocking
 None.
 
 ## Polish
-1. Not changed: stopping distance is written $s_\text{p}$ (unit.md, sovella/solutions.md, s3 graph labels), while English fy4-11 uses $s_\text{stop}$. A figures.json key "p" would also rename $E_\text{p}$, so this needs a change in figures.py. Left as it is so text and graphs agree.
-2. Not changed: the ratio colon ($|\Delta p| : \Delta t$, $\mu = a : g$) is a project-wide typography question.
+None.
+
+## Checked
+- s1 b recomputed: W = 1/2 m v^2 - m g h = 9225 J - 28 959,1 J = -19 734 J = -19,73 kJ; F = |W| / 410 m = 48,13 N; share 68,1 %; a) v = sqrt(2gh) = 26,58 m/s.
+- tasks.json answer W = -19.73 kJ (tolerance 0.02) and F = 48.13 N agree with answers.py (-19.734, 48.13) and with the solution (W_muut = -19,7 kJ, F = 48,1 N); answers.py runs and its new assert W < 0 < F holds. The sign now matches the concept criterion (work negative) and the units_precision criterion (negative sign).
+- Ennusta lt-1 feedback: the braking distance quadruples only if the mean decelerating force (deceleration) is the same; the condition is now stated, closing a B-type gap (s = v^2/(2a)).
+- Preview built with no KaTeX errors.
+- Language version checked: en; the change is the same as in fi, in translation.

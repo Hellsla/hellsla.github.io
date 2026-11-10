@@ -1,24 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 5d7daab35c8d643b
+CONTENT-HASH: 96c26f38f6eaa964
 
-Delta review of the course rename FY12 → FY9 (commit 3052d352). Previous all-PASS hash: d64ab1c8503f8cb7. The hash was the same at the start and the end of this review.
-
-I checked that the change is only the rename: every file of `content/fi/units/fy9-energia/` and `lessons/units/fy9-energia/` (review/ excluded) at 3052d352 equals the file at 47782fdd with `fy12` → `fy9` and `FY12` → `FY9` replaced, and nothing else. No `fy12`/`FY12` remains in the unit's sources or in the built preview.
+Delta review of the FY9 audit fixes (2026-11-10). Previous PASS hash: 5d7daab35c8d643b. The hash was the same at the start and the end of this review.
 
 ## Blocking
-
-- none
+None.
 
 ## Polish
-
-None new. The Polish items of the previous visual report still apply.
+- [Minor] Older, out of scope: with every <details> forced open at 360 px the page is wider than the viewport (long substitution chains in some collapsed model answers); not caused by these fixes, and the changed parts themselves fit.
 
 ## Checked
-
-- `python3 scripts/build.py fy9-energia` (preview only; site/ untouched). Playwright at 390 and 1280 with every details element open: no `.katex-error`, no raw `$`, no page errors, no broken images, no horizontal scroll (scrollWidth = viewport).
-- SVG ids: every `url(#…)` and `href=\"#…\"` in the preview resolves to an id on the page; renamed `data-fig` ids match the generators (`python3 scripts/units.py figures fy9-energia`: up to date).
-- All `*.html` links in the preview point to existing pages.
-
-## Shared issues
-
-None.
+- Tutki graph at 360/1280 px (fi, en, fi-easy, 2x captures): x axis ends at 384, arrowhead tip at 396 fully inside the 400-wide viewBox, clear of the P3 bar; y axis, ticks, labels, P (MW) and 0 unchanged and uncramped.
+- Language checked: fi wording of the changed sentences is natural and consistent with the glossary.

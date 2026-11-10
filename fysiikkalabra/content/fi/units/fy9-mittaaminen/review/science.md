@@ -1,18 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 9cb7ac294de60476
+CONTENT-HASH: b94deaffcbe23152
 
-Delta review of the editorial correction 57b67249 in unit.md "Kokonaiskuva": "Lähes jokaisessa fysiikan ylioppilaskokeessa on tehtävä, jossa annetaan mittausaineisto …" → "Mittausaineistojen käsittely ja kuvaajien tulkinta ovat keskeisiä ja usein esiintyviä fysiikan ylioppilaskokeen taitoja. Tyypillisessä tehtävässä annetaan mittausaineisto …". Nothing else changed.
+Delta review of the FY9 audit fixes (2026-11-10). Previous PASS hash: 9cb7ac294de60476. The hash was the same at the start and the end of this review.
 
 ## Blocking
-
 None.
 
 ## Polish
-
-1. The unchanged next sentence still says the solution "etenee aina samassa järjestyksessä". After the hedge, "yleensä" or "tällainen ratkaisu etenee" would match it better; a fitted line is not needed in every data task. Not a wrong picture at this level (C).
+- Older, not from these fixes: the en and fi-easy 'big picture' paragraph still opens with 'Almost every matriculation exam ...' / 'Melkein jokaisessa ...', which the fi page softened in an earlier correction.
 
 ## Checked
-
-- Exam facts: the new wording replaces an unverifiable frequency claim ("lähes jokaisessa") with a true, general one. Data handling and graph interpretation are central skills of the YTL physics exam (Osa III is made of data tasks), so the sentence is not a false claim about the exam.
-- Consistency with the "kartta" figure (mittaus → kuvaaja → sovitus → tulkinta → tulos) and the rest of the unit: unchanged and consistent.
-- No number, formula or task changed; the earlier recomputation stands.
+- s1 d task text, criteria, model answer and Hyväksytään myös: t_meas = t_true + tau_stop - tau_start is the correct model (a late start shortens, a late stop lengthens the measured time); the direction therefore depends on the delay difference and cannot be concluded for certain from the task data, as the criterion says.
+- The 'most likely the start delay is larger' estimate is labelled as an assumption and accepted only with its assumption stated; the new Yleisiä virheitä entry penalises a certain-direction claim. The rubric asks only what the task asks.
+- Averaging: the common (mean) part of the delays is systematic and survives the mean; random error's effect usually decreases. Physically right and stated with the correct hedge.
+- Points still 3 (1+1+1). The older accepted alternative (pistol sound over 100 m about 0.3 s) is consistent with the new model: 100 m / 343 m/s = 0.29 s of extra start delay.
+- unit.md: the processing order is now 'often' with 'not every problem requires every step'; no physics claim left over-absolute in that sentence.
+- Preview built with no KaTeX errors.
+- Language version checked: fi; the change is the same as in fi, in translation.

@@ -188,7 +188,10 @@ def tehot():
         x0, x1 = ax.X(k + 0.18), ax.X(k + 0.82)
         f.rect(x0, ax.Y(v), x1 - x0, ax.y0 - ax.Y(v), col, INK, 2)
         f.tex((x0 + x1) / 2, ax.y0 + 24, name, "middle")
-    return f.svg()
+    # the x axis stops before the 400-unit viewBox edge (Axes leaves 26 units of arrow room on both axes): the arrow
+    # tip at 396, clear of the last bar (right edge 375,5); the y axis keeps its room above the 450 MW gridline
+    return f.svg().replace('x2="404" y2="296"', 'x2="384" y2="296"').replace('d="M416,296 L403,302 L403,290 Z"',
+                                                                           'd="M396,296 L383,302 L383,290 Z"')
 
 
 def paste_tehot():

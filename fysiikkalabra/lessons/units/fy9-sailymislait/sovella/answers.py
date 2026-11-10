@@ -23,10 +23,13 @@ W1 = Ek1 - Ep1                                      # J, the work of the resisti
 F1 = -W1 / L1                                       # N, mean resistive force along the cable
 F_brake = m1 * v_end / t_brake                      # N, mean horizontal force of the brake
 out.update({f"{S}-s1-a": round(v_free, 3), f"{S}-s1-a-kmh": round(v_free / kmh, 1),
-            f"{S}-s1-b-W": round(-W1 / 1000, 3), f"{S}-s1-b-F": round(F1, 2), f"{S}-s1-Ep": round(Ep1, 1), f"{S}-s1-Ek": Ek1,
+            f"{S}-s1-b-W": round(W1 / 1000, 3), f"{S}-s1-b-F": round(F1, 2), f"{S}-s1-Ep": round(Ep1, 1), f"{S}-s1-Ek": Ek1,
             f"{S}-s1-share": round(-W1 / Ep1, 4),
             f"{S}-s1-c": round(F_brake, 2), f"{S}-s1-weight": round(m1 * g, 1), f"{S}-s1-ratio": round(F_brake / (m1 * g), 3),
             f"{S}-s1-p": m1 * v_end})
+# the resistive forces' work is negative (energy principle) and the mean force a magnitude (FY9 audit 2026-11-10):
+# practice.py check compares signed values, so tasks.json must carry the same signs
+assert out[f"{S}-s1-b-W"] < 0 < out[f"{S}-s1-b-F"], "s1 b: W_muut must be negative and F positive"
 
 # s2: curling (example data); both stones 19,0 kg
 m2, v0, v1, s0 = 19.0, 2.40, 0.62, 27.0
