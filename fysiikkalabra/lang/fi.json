@@ -423,6 +423,8 @@
     "stage_done": "tehty",
     "toc_stage": "Vaihe",
     "next_stage": "Seuraavaksi",
+    "ex_core_done": "Ydintehtävät {{n}}/{{total}} tehty",
+    "ex_level_done": "{{n}}/{{total}} tehty",
     "ra_settings": "Kuuntelun asetukset",
     "ra_no_lang_voice": "Laitteessa ei ole suomenkielistä puheääntä.",
     "check_near": "Lähellä – tarkista pyöristys ja merkitsevät numerot.",

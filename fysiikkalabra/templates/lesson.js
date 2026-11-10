@@ -58,6 +58,32 @@
       m[d.id] = r; localStorage.setItem(CHECKED, JSON.stringify(m));
     } catch (err) { /* no storage here */ }
   });
+  // Where the exercises stand (teacher 2026-11-10, work queue E "opiskelijan etenemisen selkeys"): Tehtävät opens with
+  // "Ydintehtävät 2/4 tehty" and each level's heading says how many of its tasks are done, so the 21 tasks behind three
+  // closed levels show their state before a level is opened. A task counts as on the module page (tehty.js): every
+  // Tarkista and Vastaa of it checked once (ruukkilabra:tarkistettu, above), or a solution saved in its editor
+  // (ruukkilabra:ratkaistu, padstore.js). Read only; nothing new is stored. A chapter with assigned tasks keeps its own
+  // line "3/5 annettua tehtävää tehty" (tehty.js) and gets only the levels' counts.
+  (() => {
+    const box = document.querySelector('#exercises .act-exercises'); if (!box) return;
+    const levels = [...box.querySelectorAll('details.level')]; if (!levels.length) return;
+    const map = (k) => { try { return JSON.parse(localStorage.getItem(k) || '{}') || {}; } catch (e) { return {}; } };
+    const core = [...box.querySelectorAll('li.core[id]')], assigned = !!box.querySelector('li.assigned');
+    let line = null;
+    if (core.length && !assigned) { line = document.createElement('p'); line.className = 'ex-progress'; line.setAttribute('aria-live', 'polite'); box.prepend(line); }
+    const marks = levels.map((d) => { const m = document.createElement('span'); m.className = 'level-done'; m.hidden = true; d.querySelector('summary').append(' ', m); return m; });
+    const draw = () => {
+      const checked = map(CHECKED), saved = map('ruukkilabra:ratkaistu');
+      const done = (li) => !!(checked[li.id] && checked[li.id].done) || typeof saved[li.id] === 'string';
+      if (line) line.textContent = msg('ex_core_done', { n: core.filter(done).length, total: core.length });
+      levels.forEach((d, k) => { const all = [...d.querySelectorAll('ol > li[id]')], n = all.filter(done).length;
+        marks[k].hidden = n === 0; marks[k].textContent = msg('ex_level_done', { n, total: all.length }); marks[k].classList.toggle('is-all', n === all.length && n > 0); });
+    };
+    draw();
+    document.addEventListener('fl:attempt', () => setTimeout(draw, 0));
+    document.addEventListener('fl:pad-change', () => setTimeout(draw, 0));
+    window.addEventListener('storage', draw);
+  })();
   // Accepted (teacher 2026-11-03, rounding half a unit 2026-11-10): within 2 % of the model answer or half a unit in
   // its shown last significant digit (data-step is one unit), whichever is larger, or the task's own wider tolerance; 2–5 % away is "Lähellä", not a rejection.
   document.querySelectorAll('form.check').forEach((form) => {

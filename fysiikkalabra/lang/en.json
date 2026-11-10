@@ -423,6 +423,8 @@
     "stage_done": "done",
     "toc_stage": "Stage",
     "next_stage": "Next",
+    "ex_core_done": "Core tasks {{n}}/{{total}} done",
+    "ex_level_done": "{{n}}/{{total}} done",
     "ra_settings": "Listening settings",
     "ra_no_lang_voice": "Your device has no English voice.",
     "check_near": "Close – check the rounding and the significant figures.",
