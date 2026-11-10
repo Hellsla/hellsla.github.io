@@ -155,15 +155,17 @@ def lesson_nav(T):
     return f'<a href="#kertaa-kasitteet" class="toc-sub toc-concepts"><span class="toc-label">{T("cards.nav")}</span></a>'
 
 
-def module_section(code, T, lang, titles, img=""):
-    """The module page's "Kertauspakkasi", or "" when the module has no cards in this language."""
+def module_section(code, T, lang, titles, svg=""):
+    """The module page's "Kertauspakkasi" tile (teacher 2026-11-03; a tile since 2026-11-10), or "" when the module has
+    no cards in this language. It links to the module's cards; kortit.js turns its count into the deck's and its link
+    into "?pakka=oma" when the student has marked cards to review."""
     cards = cards_of(code, lang)
     if not cards: return ""
+    import cardgrid
     slim = [{"id": c["id"], "luku": c["luku"]} for c in cards]
-    return (f'<section class="kc-deck me-card" data-moduuli="{code}" aria-labelledby="h-deck">{img}<h2 id="h-deck">{T("cards.deck_title")}</h2>'
-            f'<div class="kc-deck-body"><p>{T("cards.deck_empty")}</p></div>'
-            f'<p class="kc-more"><a href="{app_href(code)}">{T("cards.module_all")}</a></p>'
-            + data_block(T, lang, slim, {"moduuli": code, "chapters": titles}, APP) + '<script src="kortit.js"></script></section>')
+    tile = cardgrid.card(T.count("cards.tile_cards", len(cards)), T("cards.deck_title"), app_href(code), svg=svg,
+                         cls=" me-tile kc-deck", attrs=f' data-moduuli="{code}"')
+    return tile[:-len("</li>")] + data_block(T, lang, slim, {"moduuli": code, "chapters": titles}, APP) + '<script src="kortit.js"></script></li>'
 
 
 def practice_section(code, T, lang):
