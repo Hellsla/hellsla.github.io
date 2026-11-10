@@ -1,17 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: a5edc3be87e46462
-Mode: delta (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: ee0df94fab51094e
+Mode: light (teacher 2026-11-10, "kevyt katselmointi": the FY8 error-check fix diff since origin/main only)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- Earlier delta items still open in the Finnish source (inquiry reveal of ennuste-2 waits only for koe-3, ln reminder, fit tool note, workload); not changed here.
-- The Geiger caption speaks of "pulses per second" in fi-easy and "count rate" in en: both fine.
+- none
 
 ## Checked
-- Diff judged: two photos placed at the paragraphs they illustrate (random decays at Key idea; the counter beside the Activity paragraph); each has meaningful alt text and a caption that ties it to the lesson idea; no answer disclosed.
-- Four new option-figure descriptions: a reader without sight can compare the options from the points listed; neutral wording, no hint of which is correct; units and axes given.
-- fy8-9-L1-09 figure needed to answer (curves differ only in shape) and legible; earlier PASS findings unchanged.
-- Fixed fi-easy caption "Emme tiedä, mikä ydin..." to "Sitä ei voi ennustaa..." (clearer and correct).
+- Diff since origin/main: changed exit-ticket questions and answers (fy8-2, fy8-12, fy8-14) and the fy8-9 source note and worked-example sign read clearly for a 16-19-year-old; questions remain answerable from the lesson; model answers match the question.
+- fi-easy: short plain sentences, no new jargon; en matches fi; no bold in task statements, decimal convention kept.

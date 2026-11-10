@@ -5,6 +5,6 @@
   },
   {
     "q": "Lääkintätarvikkeet steriloidaan gammasäteilyllä. Muuttuvatko ne radioaktiivisiksi?",
-    "a": "Eivät. Gammasäteily ionisoi atomeja ja tappaa mikrobit katkaisemalla niiden molekyylejä, mutta se ei muuta ytimiä. Radioaktiivisuutta voi syntyä lähinnä neutronisäteilystä. Vaarallista on vain radioaktiivinen aine itse, jos sitä joutuu iholle tai elimistöön."
+    "a": "Eivät. Gammasäteily ionisoi atomeja ja tappaa mikrobit katkaisemalla niiden molekyylejä. Tavanomaisessa steriloinnissa, esimerkiksi koboltti-60:n gammasäteilyllä, fotonien energia ei riitä muuttamaan ytimiä, joten tarvikkeet eivät muutu radioaktiivisiksi. Radioaktiivisuutta voi syntyä lähinnä neutronisäteilystä. Gammasäteily voi silti olla vaarallista ilman radioaktiivista kontaminaatiota: voimakkaan gammalähteen lähellä koko keho altistuu läpäisevälle ulkoiselle säteilylle, vaikka radioaktiivista ainetta ei joutuisi iholle tai elimistöön. Siksi sterilointilaitoksen lähde on paksun suojauksen takana."
   }
 ]

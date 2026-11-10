@@ -5,6 +5,6 @@
   },
   {
     "q": "What do the principles of justification and optimisation mean in the medical use of radiation?",
-    "a": "Justification: the benefit from an examination or treatment must be greater than the harm from the radiation, so it is done only when the result affects the care. Optimisation: the dose is kept as low as is practically possible while the image still answers the question. Too small a dose can force the scan to be repeated."
+    "a": "Justification: the benefit from an examination or treatment must be greater than the harm from the radiation, so it is done only when the result affects the care. Optimisation means different things in imaging and in radiotherapy. In imaging the dose is kept as low as is practically possible while the image quality is still good enough to answer the question; too small a dose can force the scan to be repeated. In radiotherapy the tumour needs a large enough treatment dose, but the radiation is aimed so that the exposure of the surrounding healthy tissue stays as small as possible."
   }
 ]
