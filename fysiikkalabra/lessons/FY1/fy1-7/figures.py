@@ -6,6 +6,8 @@ from figlib import PAPER
 import herolib as H
 from figlib import COLD_LIGHT, GOOD_LIGHT, HEAT_LIGHT
 from herolib import grad, steel
+from figstyle import Fig, Axes            # the house illustration style (docs/illustration-style.md)
+import figstyle as S
 
 # densities in g/cm3 (the lesson's table) and the cube of 10 cm3 (edge about 2,15 cm)
 RHO = {"mänty": 0.50, "alumiini": 2.70, "rauta": 7.87}
@@ -13,7 +15,7 @@ RHO = {"mänty": 0.50, "alumiini": 2.70, "rauta": 7.87}
 
 def hero():
     """The chapter's opening illustration: two cubes of the same size tip a balance, a measuring cylinder waits beside them."""
-    f = H.hero("fy17-hero", "Kuvitus: laboratorion pöydällä vaaka, jonka kupeissa on kaksi samankokoista metallikuutiota, vaalea ja tumma. "
+    f = S.hero("fy17-hero", "Kuvitus: laboratorion pöydällä vaaka, jonka kupeissa on kaksi samankokoista metallikuutiota, vaalea ja tumma. "
                "Vaaka kallistuu tumman kuution puolelle. Vieressä mittalasi, jossa on vettä.")
     H.tiles(f, 430)
     H.window(f, 60, 50, 220, 230, "fy17h-win")

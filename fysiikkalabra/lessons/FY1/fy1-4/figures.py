@@ -5,6 +5,8 @@ from figlib import COLD_LIGHT, GLASS, HEAT_LIGHT, HOT_LIGHT, METAL_EDGE, SAND_DA
 import herolib as H
 from figlib import ALUMINIUM, GOOD_LIGHT, GRAIN, IRON, SAND
 from herolib import grad, rnd
+from figstyle import Fig, Axes            # the house illustration style (docs/illustration-style.md)
+import figstyle as S
 
 # the cart data of the lesson's first simulation case (t in s, s in m) and the line fitted to it
 CART = [(1, 0.6), (2, 0.8), (3, 1.6), (4, 2.1), (5, 2.4), (6, 2.9)]
@@ -14,7 +16,7 @@ KETTLE = [(0, 20.8), (1, 27.9), (2, 36.5), (3, 43.8), (4, 52.4), (5, 59.6)]
 
 def hero():
     """The chapter's opening illustration: measured points on grid paper, scattered a little, and a ruler laid along the one line that fits them."""
-    f = H.hero("fy14-hero", "Kuvitus: ruutupaperi työpöydällä. Paperilla on mittauspisteitä virhepalkkeineen; ne eivät osu täsmälleen samalle "
+    f = S.hero("fy14-hero", "Kuvitus: ruutupaperi työpöydällä. Paperilla on mittauspisteitä virhepalkkeineen; ne eivät osu täsmälleen samalle "
                "suoralle, ja niiden poikki on vedetty yksi suora viivaimen avulla. Vieressä lyijykynä, pyyhekumi ja laskin.")
     f.rect(0, 0, 1200, 600, grad(f, "fy14h-desk", SAND_DARK, SAND, horizontal=True))
     for k in range(10): f.path(f"M0,{24 + k * 64} q300,{n(-10 + 20 * rnd(k, 3))} 600,0 t600,0", stroke=GRAIN, w=1.5, extra='stroke-opacity="0.5"')

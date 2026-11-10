@@ -3,11 +3,13 @@ import math
 from figlib import (Fig, INK, MUTED, RULE_LIGHT, WHITE, GLASS, COLD, COLD_LIGHT, HEAT, HEAT_LIGHT, HOT, HOT_LIGHT, ALUMINIUM, GOOD, GOOD_LIGHT,
                     WATER, WATER_LIGHT, ICE, SAND, SAND_LIGHT, IRON, PAPER, fi, n)
 import herolib as H
+from figstyle import Fig, Axes            # the house illustration style (docs/illustration-style.md)
+import figstyle as S
 
 
 def hero():
     """The chapter's opening illustration: five zoom lenses side by side, each showing a larger thing than the one on its left (a schematic, not to scale)."""
-    f = H.hero("fy11-hero", "Kuvitus: viisi kehystä vierekkäin, joista jokainen näyttää edellistä suuremman kohteen. Vasemmalta oikealle: "
+    f = S.hero("fy11-hero", "Kuvitus: viisi kehystä vierekkäin, joista jokainen näyttää edellistä suuremman kohteen. Vasemmalta oikealle: "
                "atomi, punasolu, ihminen, Maa ja galaksi. Kehysten välissä oranssit nuolet osoittavat oikealle: zoomaus ulospäin.")
     f.rect(0, 0, 1200, 600, PAPER)
     cy = 300

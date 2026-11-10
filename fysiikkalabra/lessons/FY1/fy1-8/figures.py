@@ -4,11 +4,13 @@ from figlib import GLASS, HEAT_LIGHT, HOT, PAPER
 import herolib as H
 from figlib import GRAIN, HOT_LIGHT
 from herolib import grad
+from figstyle import Fig, Axes            # the house illustration style (docs/illustration-style.md)
+import figstyle as S
 
 
 def hero():
     """The chapter's opening illustration: one toy car on a track, two groups timing it with their own tape and stopwatch."""
-    f = H.hero("fy18-hero", "Kuvitus: luokan lattialla rata, jolla leluauto kulkee mittanauhan vieressä. Radan molemmin puolin on ryhmä: "
+    f = S.hero("fy18-hero", "Kuvitus: luokan lattialla rata, jolla leluauto kulkee mittanauhan vieressä. Radan molemmin puolin on ryhmä: "
                "kummallakin on oma sekuntikello, ja kellojen viisarit ovat pysähtyneet eri kohtiin.")
     f.rect(0, 0, 1200, 600, PAPER)
     H.window(f, 120, 40, 200, 170, "fy18h-w1"); H.window(f, 880, 40, 200, 170, "fy18h-w2")

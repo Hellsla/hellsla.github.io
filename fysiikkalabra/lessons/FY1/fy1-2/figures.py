@@ -6,11 +6,13 @@ from figlib import SAND_DARK
 import herolib as H
 from figlib import COPPER, METAL_EDGE
 from herolib import grad
+from figstyle import Fig, Axes            # the house illustration style (docs/illustration-style.md)
+import figstyle as S
 
 
 def hero():
     """The chapter's opening illustration: one distance from the Sun to Voyager 2, measured against three rulers of different steps."""
-    f = H.hero("fy12-hero", "Kuvitus: avaruudessa Aurinko vasemmalla ja Voyager 2 -luotain oikealla, välissä katkoviiva ja planeettoja. "
+    f = S.hero("fy12-hero", "Kuvitus: avaruudessa Aurinko vasemmalla ja Voyager 2 -luotain oikealla, välissä katkoviiva ja planeettoja. "
                "Viivan alla kolme samanpituista viivainta, joiden jakoviivat ovat eri tiheässä: sama matka kolmella eri yksiköllä.")
     H.space(f, seed=3, count=110)
     f.add(f'<path d="M0,120 Q600,40 1200,160 L1200,230 Q600,120 0,200 Z" fill="{COLD_LIGHT}" fill-opacity="0.08"/>')   # the Milky Way's faint band

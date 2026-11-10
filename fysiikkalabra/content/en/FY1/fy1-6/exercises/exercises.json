@@ -13,6 +13,7 @@
       "id": "fy1-6-L1-02",
       "level": 1,
       "text": "An apple comes off a branch and falls from rest to the ground in $0.80\\,\\text{s}$. Air resistance is ignored. What is the speed of the apple when it hits the ground?",
+      "figure": "fy1-6/apple",
       "answer": 7.848,
       "unit": "m/s",
       "tolerance": 0.02
@@ -245,6 +246,7 @@
       "id": "fy1-6-L2-07",
       "level": 2,
       "text": "Students measure the acceleration of free fall with two light gates placed one below the other vertically. The speed of an object $5.0\\,\\text{cm}$ long, dropped from rest, is obtained at each gate from the length of the object and the time $\\Delta t_\\text{light}$ for which the light is blocked.\n\nThe moment of the drop is not known accurately, but a clock measures the moments $t$ when the blocking of the light is halfway in time. At that moment the speed of the object equals its average speed during the blocking.\n\nCalculate the acceleration of free fall from the measurements in the table. Explain why $g$ can be obtained from the speeds at the two gates even though the moment of the drop is not known.",
+      "figure": "fy1-6/light-gates",
       "kind": [
         "data",
         "model"

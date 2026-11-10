@@ -4,11 +4,13 @@ from figlib import PAPER, SAND, SAND_DARK, n
 import herolib as H
 from figlib import HEAT, SAND_LIGHT
 from herolib import rnd, steel
+from figstyle import Fig, Axes            # the house illustration style (docs/illustration-style.md)
+import figstyle as S
 
 
 def hero():
     """The chapter's opening illustration: one ball rolling down a ramp, ten hands with stopwatches stopped at slightly different times."""
-    f = H.hero("fy13-hero", "Kuvitus: luokan pöydällä kalteva alumiinikouru, jota pitkin teräskuula vierii. Etualalla kymmenen kättä pitää "
+    f = S.hero("fy13-hero", "Kuvitus: luokan pöydällä kalteva alumiinikouru, jota pitkin teräskuula vierii. Etualalla kymmenen kättä pitää "
                "sekuntikelloja; niiden viisarit ovat pysähtyneet hieman eri kohtiin, vaikka ne mittasivat samaa vierimistä.")
     f.rect(0, 0, 1200, 600, PAPER)
     H.window(f, 70, 40, 220, 200, "fy13h-win")
