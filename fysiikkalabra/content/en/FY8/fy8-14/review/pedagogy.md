@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 1ce5bb8ad3c9c515
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 7ca8af81a83eed0d
+Mode: light (teacher 2026-11-10, "kevyt katselmointi": the FY8 error-check fix diff since origin/main only)
 
 ## Blocking
 - none
@@ -9,4 +9,5 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correct
 - none
 
 ## Checked
-- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.
+- Diff since origin/main: changed exit-ticket questions and answers (fy8-2, fy8-12, fy8-14) and the fy8-9 source note and worked-example sign read clearly for a 16-19-year-old; questions remain answerable from the lesson; model answers match the question.
+- fi-easy: short plain sentences, no new jargon; en matches fi; no bold in task statements, decimal convention kept.

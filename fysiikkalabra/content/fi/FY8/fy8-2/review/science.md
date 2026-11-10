@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: bbebc74dd0fcffbb
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 7346d9cf9e68d361
+Mode: light (teacher 2026-11-10, "kevyt katselmointi": the FY8 error-check fix diff since origin/main only)
 
 ## Blocking
 - none
@@ -9,4 +9,4 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correct
 - none
 
 ## Checked
-- Word-level diff since origin/main of this part checked for physics: values, units and significant figures, definitions (gamma decay, beta atomic masses, Hubble time, w_R and effective dose scope, conservation of B and L, photon interactions, ITER and Onkalo facts), worked solutions recomputed where numbers changed; formulas identical across languages (check_i18n).
+- Exit ticket Q2 diff: the question is now limited to ordinary (Stokes) fluorescence, one photon in and one out, with no extra energy. E = hc/λ gives 2,76 eV (450 nm) < 3,10 eV (400 nm), so "cannot" is the one correct answer. The exception (extra energy from elsewhere, e.g. two absorbed photons) is stated correctly and matches the question's condition; nothing says shorter-wavelength emission is never possible.

@@ -1,21 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 167a7e1ffcb6d0db
+CONTENT-HASH: 1f0567f0e6823b02
 
-Pedagogy review of the fi-easy (Selkeä suomi) translation of fy9-mittaaminen (NOTES.md §12).
+Delta review of the FY9 audit fixes (2026-11-10). Previous PASS hash: 167a7e1ffcb6d0db. The hash was the same at the start and the end of this review.
 
 ## Blocking
 None.
 
 ## Polish
-1. [Minor] "kääntäen verrannollinen" is never explained (inquiry.json activities/5 choice 3 feedback, activities/10 choice 3 feedback, sovella/tasks.json s6 a, teacher.md). §12.3 asks for the explanation inside the sentence the first time it appears. Fix (first time, activities/5 choice 3): "…kun $ on kääntäen verrannollinen $:ään eli $ pienenee samassa suhteessa kuin $ kasvaa, kuten Boylen laissa."
-2. [Minor] Also "suoraan verrannollinen" (inquiry.json prior/2, the first place it appears) could get a short explanation: "eli kun tilavuus kaksinkertaistuu, myös massa kaksinkertaistuu".
-3. [Minor] unit.md "Yleisiä virheitä" items 1 and 4 and solutions.md "Yleisiä virheitä" lists begin a second sentence with "Tai …", which reads as a fragment. Fix: join them with a comma ("…, tai suora pakotetaan…"), or write two whole sentences.
-4. [Minor] sovella/tasks.json s4 text: "Vaa'an näyttö näyttää kokonaiset grammat" repeats the verb. Fix: "Vaaka näyttää massan kokonaisina grammoina."
+- Criterion 2 ('experiment') quotes the formula with the tau symbols, which the task text does not introduce. Suggest 'mitattu aika on todellinen aika + pysäytysviive - käynnistysviive (sanoin tai kaavalla)' so a verbal answer clearly earns the point.
+- The model answer says the direction cannot be concluded and then 'todennäköisintä on' that the start delay is larger; this is covered by the accepted-alternative line, but the contrast could be one sentence shorter.
+- Older: the task text puts all three timekeepers at the finish, yet they start the watch on seeing the flag; it is unclear how they see it from 100 m (the solution's pistol remark touches this).
 
 ## Checked
-- Same physics: there are 316 JSON strings plus unit.md, teacher.md and solutions.md, and every number, formula, answer, tolerance, correct flag, point and rubric criterion is the source's. check_i18n.py gives 0 errors. No solution step was dropped; the steps are split into short sentences.
-- The language is natural Selkeä suomi. Sentences are short and connected, and they use common words. Physics terms stay and are often explained: "lomaan eli niiden väliin", "kumoavat toisensa eli poistavat toistensa vaikutuksen", "lineaarisesti eli suoran mukaan", "päällekkäin eli osittain samalle alueelle", "jäykkä eli sen tilavuus ei muutu". The tone is not childish and has no padding.
-- The instructions are clear: the opening question, the Tutki steps ("Sovita ensin…, Lue sitten…, Mieti lopuksi…"), the multi-part task texts and the feedback each say what to do and in which order.
-- key_concepts: 5 central concepts (mittausepävarmuus, systemaattinen virhe, suoran sovitus, kulmakerroin, ekstrapolointi), each explained in 1–2 plain sentences of 25 words or fewer, with LaTeX for the symbols. The component renders after the opening, with the fixed lead and no note fields.
-- teacher.md is fully translated, and it adds a short S2 note (go through the key concepts before Tutki). The plan, the timing (75 min) and the task counts are the source's.
-- Rubrics: the criteria are observable and the points are the source's. The self-assessment UI texts are in Finnish.
+- Task d now asks three things (sources, can the direction be concluded, why the mean may not remove it); the 3 points map one to one: error_sources (separate start and stop delays), experiment (t_mitattu formula, direction undetermined, justified estimate accepted when assumption stated), conclusion (systematic part survives the mean, random part usually shrinks).
+- Task text, criteria, model answer, 'Hyväksytään myös' and 'Yleisiä virheitä' agree with each other; the formula t_mitattu = t_tod + tau_p - tau_k is correct and the sign logic (shorter if tau_k > tau_p) is right.
+- Fair to a student: the old one-sided answer (always shorter) no longer earns the middle point unless the assumption is stated, and the task text now asks the question that the criteria reward. A student answering in words without the tau symbols is not required to use them.
+- unit.md 'Kokonaiskuva' softened wording is correct and consistent with the five-step map beside it.
+- fi-easy reading level: short sentences, one idea each; 'viiveiden erotus' is the heaviest phrase and is explained by the formula and the two if-sentences. Acceptable.

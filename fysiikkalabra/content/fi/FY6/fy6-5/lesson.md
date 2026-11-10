@@ -300,7 +300,7 @@ Jännitelähteen jännite on $12\,\text{V}$. Lähteen plusnavasta virta kulkee v
 ## Yleinen virhekäsitys
 Moni ajattelee, että vastus kuluttaa virtaa, joten virta olisi vastuksen jälkeen pienempi kuin ennen sitä. Vastus muuttaa sähköenergiaa sisäenergiakseen, mutta varauksia ei katoa: virtamittari näyttää vastuksen kummallakin puolella saman lukeman. Vastuksessa pienenee potentiaali, ei virta.
 
-Toinen yleinen virhe on käyttää haaran virran laskemisessa lähteen jännitettä. Jos edellä esimerkissä laskettaisiin $I_3 = 12\,\text{V} : 30\,\Omega = 0{,}40\,\text{A}$, haaroihin lähtisi yhteensä enemmän virtaa kuin haarautumispisteeseen tulee. Haaran jännite on lähteen jännite miinus sarjaan kytkettyjen vastusten jännitteet, tässä $6{,}0\,\text{V}$. Kolmas virhe on ajatella, että jännite on jonkin kohdan ominaisuus: jännite on aina kahden kohdan välinen potentiaaliero.
+Toinen yleinen virhe on käyttää haaran virran laskemisessa koko lähteen jännitettä. Jos $30\,\Omega$:n haaran virta laskettaisiin virheellisesti jännitteestä $9{,}0\,\text{V}$, saataisiin $0{,}30\,\text{A}$. Haaran todellinen jännite on kuitenkin $6{,}0\,\text{V}$, joten $I_2 = 0{,}20\,\text{A}$. Toisessa haarassa $I_3 = 6{,}0\,\text{V} : 60\,\Omega = 0{,}10\,\text{A}$. Kirchhoffin virtalaki toteutuu: $0{,}20\,\text{A} + 0{,}10\,\text{A} = 0{,}30\,\text{A}$. Kolmas virhe on ajatella, että jännite on jonkin kohdan ominaisuus: jännite on aina kahden kohdan välinen potentiaaliero.
 
 ## Tiivistelmä
 - Kirchhoffin virtalaki: haarautumispisteeseen tulevien virtojen summa on yhtä suuri kuin siitä lähtevien virtojen summa, koska varaus säilyy. Virta ei kulu vastuksessa.

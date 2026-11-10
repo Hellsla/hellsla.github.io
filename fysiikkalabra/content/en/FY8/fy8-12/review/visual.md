@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 4c881d9b6b28f8be
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 94cf5abbb8d01c59
+Mode: light (teacher 2026-11-10, "kevyt katselmointi": the FY8 error-check fix diff since origin/main only)
 
 ## Blocking
 - none
@@ -9,4 +9,4 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correct
 - none
 
 ## Checked
-- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.
+- Source-level read of the diff: Finnish/English wording, LaTeX number+unit typography (thin space, \text units, decimal comma in fi/fi-easy, \cdot), the aligned block with \approx in fy8-9 where applicable; no inline formula wrapping, no new figures. No render made.

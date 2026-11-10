@@ -1,15 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 420ce725ea6b827f
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
-
+CONTENT-HASH: 8abfa7ae354d5e31
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- solutions.md L3-05 b) — the new RCD sentence is correct and clearer; if desired state the reason in one phrase (the limit is 30 mA, and smaller currents already hurt) so the student sees why the device is only additional protection.
 
 ## Checked
-- Diff since origin/main for fy6-15 exercises (fi-easy) read against the teacher's brief items that touch it; the changed text says what the brief intends, is consistent between lesson, inquiry, exercises, solutions and feedback, and introduces no new misconception.
-- Standing rules in the changed lines: LaTeX maths and units, decimal comma, no bold in task statements, no lesson ids shown.
-- NOTES.md §12: same physics as the Finnish; new terms (kytkentämuutos, irradianssi, tehokerroin, vaihe-ero, pätöteho, mitoitettu, vakiovirtalähde etc.) are explained in the sentence where first used; whole natural sentences, one action per sentence in instructions.
-- Check question, answer, options, feedback and model answer all say the fault current returns along the protective conductor to the supply; laypeople answer lists permitted minor jobs with the 'only if able to do safely' condition.
+- Delta judged: only the L3-05 answer text changed. It now calls the RCD an additional protective device, says it does not remove every danger, and gives the action (earthing and insulation in order, no use of a faulty device).
+- Consistent with the week-by-week currents in the substitution (week 7: 17.0 mA, above the let-go threshold, no trip).
+- Level, order and counts of the set unaffected.

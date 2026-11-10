@@ -716,7 +716,7 @@ def exercise_html(e, solution_html, read=None, core=False, num=None):
     check = ""
     if numeric:
         unit = esc(e.get("unit", ""))
-        st = answers_shown.step(ans.strip("$"), e["answer"]) if ans.startswith("$") else None   # ±1 in the shown answer's last digit
+        st = answers_shown.step(ans.strip("$"), e["answer"]) if ans.startswith("$") else None   # one unit in the shown answer's last digit; the check allows half of it
         check = (f'<form class="check" data-answer="{e["answer"]}" data-tol="{e.get("tolerance", 0.02)}"' + (f' data-step="{st:g}"' if st else "") + ' novalidate>'
                  f'<input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="{esc(inquiry.answer_label(e.get("unit", "")))}" aria-describedby="{esc(e["id"])}-q" placeholder="?">'
                  + (f'<span class="unit">{unit}</span>' if unit else "")

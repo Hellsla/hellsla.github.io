@@ -88,20 +88,20 @@
       "choices": [
         {
           "text": "Linnun kuivat jalat eristävät sen johtimesta.",
-          "feedback": "Linnun jalat johtavat sähköä, ja märkänäkin lintu istuu turvassa. Ratkaisevaa on, että molemmat jalat ovat samassa potentiaalissa. Potentiaali tarkoittaa tässä sitä, kuinka suuri sähköinen jännite paikassa on maahan verrattuna. Jalkojen välillä ei ole jännitettä, joten linnun kautta ei kulje virtaa."
+          "feedback": "Linnun jalat johtavat sähköä, ja märkänäkin lintu istuu turvassa. Ratkaisevaa on, että jalat ovat samalla johtimella lähes samassa potentiaalissa. Potentiaali tarkoittaa tässä sitä, kuinka suuri sähköinen jännite paikassa on maahan verrattuna. Jalkojen välinen potentiaaliero on hyvin pieni. Siksi linnun kautta kulkee vain erittäin pieni sähkövirta."
         },
         {
-          "text": "Linnun jalkojen välillä ei ole jännitettä, joten sen kautta ei kulje virtaa.",
+          "text": "Linnun jalkojen välinen potentiaaliero on hyvin pieni, joten sen kautta kulkee vain erittäin pieni sähkövirta.",
           "correct": true,
-          "feedback": "Teoria tukee tätä: kehon läpi kulkee virta vain, kun keho yhdistää kaksi kohtaa, joiden potentiaali on eri. Linnun jalat ovat samalla johtimella lähes samassa potentiaalissa. Jos siipi koskettaisi samalla toista johdinta tai maadoitettua pylvästä, virta kulkisi linnun kautta."
+          "feedback": "Teoria tukee tätä: kehon läpi kulkee vaarallinen virta vain, kun keho yhdistää kaksi kohtaa, joiden potentiaaliero on suuri. Linnun jalat ovat samalla johtimella lähes samassa potentiaalissa. Siksi linnun kautta kulkee vain erittäin pieni sähkövirta. Jos siipi koskettaisi samalla toista johdinta tai maadoitettua pylvästä, linnun kautta kulkisi suuri virta."
         },
         {
           "text": "Virta kulkee kokonaan johtimessa, koska se valitsee aina pienimmän resistanssin reitin.",
-          "feedback": "Rinnakkaisissa reiteissä virta jakautuu kaikkiin reitteihin. Se ei valitse vain yhtä. Linnun kautta ei kulje merkittävää virtaa siksi, että sen jalkojen välillä ei ole jännitettä: jalat ovat samalla johtimella lähes samassa potentiaalissa."
+          "feedback": "Rinnakkaisissa reiteissä virta jakautuu kaikkiin reitteihin. Se ei valitse vain yhtä. Myös linnun kautta kulkee virtaa, mutta se on erittäin pieni. Jalat ovat samalla johtimella lähes samassa potentiaalissa, joten niiden välinen potentiaaliero on hyvin pieni."
         },
         {
           "text": "Suurjännitejohtimen ympärillä on ohut eristekuori, joka suojaa lintua.",
-          "feedback": "Suurjännitejohtimet ovat paljaita metallijohtimia, ja niitä eristää vain ympäröivä ilma. Lintu on turvassa, koska sen molemmat jalat ovat samassa potentiaalissa. Siksi sen kautta ei kulje virtaa."
+          "feedback": "Suurjännitejohtimet ovat paljaita metallijohtimia, ja niitä eristää vain ympäröivä ilma. Lintu on turvassa, koska sen jalkojen välinen potentiaaliero on hyvin pieni. Siksi sen kautta kulkee vain erittäin pieni sähkövirta."
         }
       ]
     },

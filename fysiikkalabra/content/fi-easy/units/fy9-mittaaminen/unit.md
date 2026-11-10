@@ -142,7 +142,7 @@
 
 ## Kokonaiskuva
 
-Melkein jokaisessa fysiikan ylioppilaskokeessa on tehtävä, jossa annetaan mittausaineisto. Tehtävässä kysytään suuretta, joka määritetään aineistosta. Ratkaisu etenee aina samassa järjestyksessä. Ensin ovat mittaustulokset ja niiden epävarmuus. Sitten tulevat kuvaaja, sovitus ja sovituksen tulkinta. Lopuksi ilmoitetaan tulos epävarmuuksineen. Jokaisessa vaiheessa voi saada tai menettää pisteitä.
+Melkein jokaisessa fysiikan ylioppilaskokeessa on tehtävä, jossa annetaan mittausaineisto. Tehtävässä kysytään suuretta, joka määritetään aineistosta. Ratkaisu etenee usein samassa järjestyksessä. Ensin ovat mittaustulokset ja niiden epävarmuudet. Sitten tulee kuvaaja. Tarvittaessa siihen sovitetaan malli, ja malli tulkitaan. Lopuksi ilmoitetaan tulos epävarmuuksineen. Kaikissa tehtävissä ei tarvita jokaista vaihetta. Jokaisessa vaiheessa voi saada tai menettää pisteitä.
 
 <svg data-fig="kartta" viewBox="0 0 600 448" role="img" aria-label="Kaavio: mittauksesta tulokseen viidessä vaiheessa. Vaiheet on yhdistetty nuolilla, jotka osoittavat alaspäin. 1 Mittaus: lukema, epävarmuus Δx ja tarkkuus. 2 Kuvaaja: akseleilla suure ja yksikkö. 3 Sovitus: suora tai linearisointi. 4 Tulkinta: kulmakerroin k ja vakiotermi b yksiköineen. 5 Tulos: k ± Δk ja alue, jolla malli pätee." style="max-width:100%;font-size:26px">
   <rect x="14" y="14" width="572" height="64" rx="10" fill="#ffffff" stroke="#1971c2" stroke-width="2.5"/>

@@ -405,7 +405,7 @@ Johtojen muovikuori, pistotulpan runko ja suurjännitejohtojen eristimet erottav
 ### Suurjännitejohdot ja askeljännite
 Sähkö siirretään voimalaitoksilta suurella jännitteellä, kantaverkossa jopa $400\,\text{kV}$:lla, koska samalla teholla suuri jännite tarkoittaa pientä virtaa ja siten pieniä lämpöhäviöitä $RI^2$ johdoissa. Suurjännitejohtimet ovat paljaita, ja niitä eristää ympäröivä ilma. Ilman läpilyöntilujuus on noin $3\,\text{MV/m}$, joten johdinta ei tarvitse koskettaa saadakseen iskun: valokaari voi hypätä johtimesta lähelle tuotuun esineeseen, kuten nostokoneen puomiin, onkivapaan tai leijan naruun. Junien ajojohdossa jännite on $25\,\text{kV}$, joten vaunujen katolle ei kiivetä.
 
-Lintu voi istua paljaalla johtimella, koska sen molemmat jalat ovat samassa potentiaalissa: jalkojen välillä ei ole jännitettä, eikä linnun kautta kulje virtaa. Vaara syntyy, kun keho yhdistää kaksi eri potentiaalissa olevaa kohtaa, esimerkiksi johtimen ja maan.
+Lintu voi istua paljaalla johtimella, koska sen molemmat jalat ovat lähes samassa potentiaalissa: jalkojen välinen potentiaaliero on hyvin pieni, joten linnun kautta kulkee vain erittäin pieni virta. Vaara syntyy, kun keho yhdistää kaksi eri potentiaalissa olevaa kohtaa, esimerkiksi johtimen ja maan.
 
 Jos johdin putoaa maahan, virta leviää maaperään. Maan potentiaali on suurin kosketuskohdassa ja pienenee etäisyyden kasvaessa, joten eri kohtien välillä on jännite. Ihmisen jalkojen välistä jännitettä kutsutaan **askeljännitteeksi**: se on sitä suurempi, mitä lähempänä kosketuskohtaa ollaan ja mitä pidempi askel on. Pudonneen johtimen luota poistutaan lyhyin askelin jalat yhdessä tai tasajalkaa hyppien, johdinta ei lähestytä, ja vahingosta ilmoitetaan hätänumeroon $112$.
 
@@ -567,7 +567,7 @@ I &= \frac{P_1 + P_2 + P_3}{U} \\
 ## Yleinen virhekäsitys
 Moni ajattelee, että sulake suojaa ihmistä sähköiskulta. Sulake suojaa johtoja: sen nimellisvirta on $10\,\text{A}$ tai $16\,\text{A}$, kun taas jo noin $50\,\text{mA}$:n virta kehon läpi voi aiheuttaa sydämen kammiovärinän. Sulake ei huomaa ihmisen kautta kulkevaa niin pientä virtaa lainkaan. Ihmistä se suojaa vain yhdessä suojamaadoituksen kanssa: runkoviassa suuri vikavirta kulkee suojajohdinta pitkin takaisin sähkönsyöttöön, ja sulake katkaisee sen. Ihmisen kautta kulkevan pienen virran katkaisee vikavirtasuoja, joka laukeaa noin $30\,\text{mA}$:n vikavirrasta.
 
-Toinen virhe on ajatella, että suuri jännite yksin on vaarallinen tai pieni jännite aina turvallinen. Vahingon tekee kehon läpi kulkeva virta, joka riippuu sekä jännitteestä että virtatien resistanssista. Lintu istuu turvassa $20\,\text{kV}$:n johtimella, koska sen jalkojen välillä ei ole jännitettä, mutta märkä iho voi tehdä pienemmästäkin jännitteestä vaarallisen.
+Toinen virhe on ajatella, että suuri jännite yksin on vaarallinen tai pieni jännite aina turvallinen. Vahingon tekee kehon läpi kulkeva virta, joka riippuu sekä jännitteestä että virtatien resistanssista. Lintu istuu turvassa $20\,\text{kV}$:n johtimella, koska sen jalkojen välinen potentiaaliero on hyvin pieni, mutta märkä iho voi tehdä pienemmästäkin jännitteestä vaarallisen.
 
 ## Tiivistelmä
 - Saman ryhmän laitteet ovat rinnan, joten sulakkeen läpi kulkee niiden yhteinen virta $I = (P_1 + P_2 + \dots) : U$. Sulake suojaa johtoa ylikuumenemiselta, koska johdon lämpöteho on $RI^2$.

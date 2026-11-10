@@ -1,17 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 4720559b0d9eefa0
+CONTENT-HASH: fc7192b27f2ce4e5
+Mode: light (teacher 2026-11-10, "kevyt katselmointi": the FY8 error-check fix diff since origin/main only)
 
 ## Blocking
+- none
 
 ## Polish
-- inquiry.json "hook" — still shows 740 → 370 → 185 MBq, the pattern ennuste-1 asks for; drop the third value.
-- inquiry.json "ennuste-2" — `reveal.after` should list koe-2 and koe-3, as its feedback cites both.
-- lesson.md "Puoliintumisaika" — "neljäsosa eikä mitään" -> "neljäsosa eikä tyhjää".
-- inquiry.json "tarkistus-3" — criterion "satoja" vs model answer ~1460: write "tuhansia puoliintumisaikoja".
-- inquiry.json "sovitus" — add a fallback for a student without Graphical Analysis Pro.
+- none
 
 ## Checked
-- Delta: johtopäätös model answer $10^15$ -> $10^{15}$; renders correctly as 10^15, content unchanged.
-- The rest of the lesson is as passed in the previous round; polish items from it remain open but are not blocking.
-- Model answer still consistent with the criteria (halving, 20 vs 1600 spread, random yet lawful).
-- Hash unchanged at end: 4720559b0d9eefa0.
+- Diff since origin/main: changed exit-ticket questions and answers (fy8-2, fy8-12, fy8-14) and the fy8-9 source note and worked-example sign read clearly for a 16-19-year-old; questions remain answerable from the lesson; model answers match the question.
+- fi-easy: short plain sentences, no new jargon; en matches fi; no bold in task statements, decimal convention kept.

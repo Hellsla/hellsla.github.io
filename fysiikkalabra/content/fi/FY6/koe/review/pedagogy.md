@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 75644e4be115aed6
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: b5bb5b56528e46c5
 
 ## Blocking
-- none
 
 ## Polish
-- k7-d model rubric: "suuren energiamäärän akustossa oikosulku on erityisen vaarallinen" is clumsy Finnish; "akustoon varastoituneen suuren energian vuoksi oikosulku on erityisen vaarallinen" reads better.
+- tasks.json fy6-k4 d: "Näytä, että ionien sekunnissa saama liike-energia on yhtä suuri" leaves open what it equals. Better: "...on yhtä suuri kuin tämä teho." Then the 1,9 kJ in the rubric (energy in one second) and 1,9 kW (power) are visibly the same statement.
+- solutions.md k4-d Annettu: "1,76 · 10^-16 J" vs b) "1,8 · 10^-16 J"; keep one rounding.
 
 ## Checked
-- k7-d: the touch-safety claim is gone; the task asks why nominal voltage versus the 120 V limit is not enough, and the solution, rubric and common mistake agree (6 kA hazards, competence and manufacturer instructions). Wording not a trap: the student can answer from the lesson.
-- k5 (task text, solution, common mistake): control electronics keeps 15 mW constant down to 2,0 V; numbers unchanged (3,82 J, 255 s).
-- k3-b (I, dI) and k5-b (W, t) are answer lists; values recomputed: dI = 0,01355 * (0,0349/2,98 + 0,05) = 0,00084 A; W = 0,5 * 0,47 * (4,5^2 - 2,0^2) = 3,82 J, t = 3,82 / 0,015 = 255 s; the questions ask for both quantities.
-- k6-e detail (Coulomb law, r at least 5 cm) consistent with the lesson.
+- Changed part (k4 d answer): power P = UI = 1,9 kW and the kinetic energy gained in one second N·eU = 1,9 kJ are now stated separately, then identified as one rate (1,9 kJ/s = 1,9 kW); the justification N = I/e gives N·eU = UI. A student can follow it and the rubric (equation, units/precision, communication) matches the three steps.
+- The task still demands independent application: unfamiliar ion thruster, four connected parts of rising demand (field and force, speed via work-energy, ion count and propellant use, power balance); no formula named in the prompts.
+- Common mistakes are real (unit conversion, missing 1/2, speed from acceleration without distance, wrong day length); the accepted alternative route for b is fair.
+- Other tasks in the exam unchanged since the last PASS; variety across k1-k7 stands.

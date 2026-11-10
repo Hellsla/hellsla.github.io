@@ -1,22 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: a1fbe68e2eac6dea
+CONTENT-HASH: abf071f03933f894
 
-Round 2 visual and editorial review of the English translation of fy9-mittaaminen. Built with `python3 scripts/build.py fy9-mittaaminen` (preview/en/fy9-mittaaminen.html) and checked in Playwright (Chromium) at 390 and 1280 with every details element opened.
+Delta review of the FY9 audit fixes (2026-11-10). Previous PASS hash: a1fbe68e2eac6dea. The hash was the same at the start and the end of this review.
 
 ## Blocking
-
 None.
 
 ## Polish
-
-None.
+- [Minor] Older, out of scope: with every <details> forced open at 360 px the page is wider than the viewport (long substitution chains in some collapsed model answers); not caused by these fixes, and the changed parts themselves fit.
 
 ## Checked
-
-- Round-1 Blocking 1 (kartta labels overlapping) is fixed: figures.json now maps Mittaus → "Measure" and Tulkinta → "Interpret", unit.md carries the re-applied figure, and the aria description uses the new names. Measured rendered widths of the left-column labels vs their boxes: at 390 Measure 54/76 px, Interpret 58/76 px; at 1280 Measure 94/131 px, Interpret 101/131 px; all other labels fit too. Screenshot at 390 (2×) confirms no overlap with the right column.
-- Page at 390 and 1280: scrollWidth equals the viewport, 0 `.katex-error`, no raw `$`, no `d,d` decimal commas, no SVG/table/display maths wider than the viewport, no page or console errors.
-- Other figures and tables are unchanged since round 1 (text-only diff), where they were checked at both widths.
-
-## Shared issues
-
-None.
+- s1 d (task, hints, criteria, model answer) and unit.md opening at 360 and 1280 px: tau_k/tau_p (en: tau_start/tau_stop) and t_mitattu = t_tod + tau_p - tau_k render as KaTeX, upright subscripts, no clipping, no overflow of the changed text; order principle - formula - direction - averaging reads logically; unit.md softer sentence reads naturally.
+- Language checked: en wording of the changed sentences is natural and consistent with the glossary.

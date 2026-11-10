@@ -5,6 +5,6 @@
   },
   {
     "q": "Medical supplies are sterilised with gamma radiation. Do they become radioactive?",
-    "a": "No. Gamma radiation ionises atoms and kills microbes by breaking their molecules, but it does not change nuclei. Radioactivity can arise mainly from neutron radiation. Only the radioactive material itself is dangerous, if it gets onto the skin or into the body."
+    "a": "No. Gamma radiation ionises atoms and kills microbes by breaking their molecules. In ordinary sterilisation, for example with the gamma radiation of cobalt-60, the photon energy is not enough to change nuclei, so the supplies do not become radioactive. Radioactivity can arise mainly from neutron radiation. Gamma radiation can still be dangerous without radioactive contamination: near a strong gamma source the whole body is exposed to penetrating external radiation, even if no radioactive material gets onto the skin or into the body. That is why the source of a sterilisation plant is behind thick shielding."
   }
 ]

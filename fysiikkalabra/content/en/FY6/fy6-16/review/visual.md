@@ -1,12 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: f7da803daeac7f68
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: db324a986b213d71
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- Word-level diff since origin/main of the en fy6-16 lesson files and neighbouring text; decimal convention (point), number+unit in LaTeX, \cdot, no bold in task statements, no lesson ids; wording compared with the Finnish intent for the brief's items.
+- batch delta review: fy6-16 tarkistus-1 option and feedback opened at 390 px: long option wraps cleanly, correct-state feedback inside the card.

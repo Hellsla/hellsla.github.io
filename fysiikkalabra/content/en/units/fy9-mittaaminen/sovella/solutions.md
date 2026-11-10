@@ -26,14 +26,15 @@
 **Model answer:** Mira's mean is $\bar{t} = (13.80 + 14.12 + 13.96)\,\text{s} : 3 = 13.96\,\text{s}$ and the uncertainty $(14.12 - 13.80)\,\text{s} : 2 = 0.16\,\text{s}$, so Mira's time is $(13.96 \pm 0.16)\,\text{s}$ and Liisa's $(13.71 \pm 0.19)\,\text{s}$. Liisa's interval is $13.52$–$13.90\,\text{s}$ and Mira's $13.80$–$14.12\,\text{s}$, so the intervals overlap. The difference $0.25\,\text{s}$ is of the same order of magnitude as the uncertainties. So these measurements cannot show that Liisa was faster, although her mean is smaller. This does not, however, mean that the runners are equally fast: showing a difference would require more precise timing, for example a photo-finish camera.
 
 ### d)
-**Find:** the systematic error of the timing, its effect on the speed and why the mean does not remove it
-**Principle:** A systematic error shifts every result in the same direction. It cannot be seen from the spread of the results, and repetition or the mean does not remove it.
-**Model answer:** The timekeeper starts the watch only after seeing the flag drop and reacting to it. The watch therefore starts one reaction time late, typically a few tenths of a second. The finish, on the other hand, the timekeeper sees coming, so the watch is stopped almost on time. The measured time is thus shorter than the true time, and the speed in part a is larger than the true speed. The same delay happens with all three timekeepers, so all the watches show too short a time and the mean is too small as well. The mean only reduces the random variation between the watches. The error is removed, for example, by electronic timing that starts itself from the start signal.
+**Find:** the systematic sources of error in hand timing, whether the direction of the error can be concluded for certain and why the mean does not necessarily remove a systematic error
+**Principle:** A systematic error shifts every result in the same direction. It cannot be seen from the spread of the results, and repetition or the mean does not remove it. The effect of random error, on the other hand, usually decreases when the results are averaged.
+**Model answer:** The timekeeper starts the watch only after seeing the flag drop and reacting to it. The watch therefore starts with a delay $\tau_\text{start}$, typically a few tenths of a second. Stopping the watch also has a delay $\tau_\text{stop}$. The timekeeper sees the finish coming, so this delay can be shorter, but the watch may also be stopped slightly too early or too late. The measured time is $t_\text{meas} = t_\text{true} + \tau_\text{stop} - \tau_\text{start}$, where $t_\text{true}$ is the true time. The measured time is thus shorter than the true time if $\tau_\text{start} > \tau_\text{stop}$, and longer if $\tau_\text{stop} > \tau_\text{start}$. The delays are not known from the information in the problem, so the direction cannot be concluded for certain. Most likely the start delay is larger, so the time is slightly too short and the speed in part a too large. The three timekeepers work in the same way, so the average part of the delays is in the same direction for all of them. It is a systematic error, and it remains in the mean as well. The mean usually reduces only the effect of random error, that is, the variation between the watches. The systematic error is removed, for example, by electronic timing that starts itself from the start signal.
 
 ### Hyväksytään myös
 - In part b, the relative uncertainty of the speed as the sum of the relative uncertainties of the time and the distance: $\tfrac{0.19}{13.71} + \tfrac{0.3}{100.0} \approx 0.0169$, so $\Delta v \approx 0.0169 \cdot 7.294\,\text{m/s} \approx 0.12\,\text{m/s}$.
 - In part b, the typical $0.2\,\text{s}$ of hand timing as the uncertainty of the time, when the choice is justified. Then $\Delta v \approx 0.1\,\text{m/s}$ and $v = (7.3 \pm 0.1)\,\text{m/s}$ are also accepted.
 - In part d, a mention that a timekeeper $100\,\text{m}$ away who reacts to the sound of a starting pistol would start the watch even later, because sound travels the distance in about $0.3\,\text{s}$.
+- In part d, a justified estimate of the direction of the error, for example that the measured time is probably shorter than the true time, when the answer states that the conclusion rests on an assumption about the sizes of the delays.
 
 ### Yleisiä virheitä
 - One watch or the fastest time is used as the time instead of the mean.
@@ -41,6 +42,7 @@
 - The speed is given to calculator precision, $7.2939\,\text{m/s}$, or the uncertainty and the speed to different precisions.
 - In part c, it is concluded from the difference of the means that Liisa was faster, or from the overlapping intervals that the runners were equally fast.
 - In part d, the reaction time is said to cause only a random error; its average part is systematic.
+- In part d, it is claimed as certain that the measured time is shorter or longer than the true time, although the direction depends on the difference between the start and stop delays.
 
 ## fy9-mittaaminen-s2
 

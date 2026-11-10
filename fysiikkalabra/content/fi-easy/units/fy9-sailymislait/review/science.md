@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: c1b7d026abcd2b8a
+CONTENT-HASH: 7685c54b69a24389
 
-Science review of the Selkeä suomi translation of fy9-sailymislait (source content/fi/units/fy9-sailymislait/, reviewed PASS at c2716084d9c1d0b9, still current). Reviewer 2026-11-04.
-
-Checks: `check_i18n.py` fi-easy 0 errors; `practice.py check` OK (6 tasks, 95 points, same as fi). A script compared every `$…$` formula and every bare number in unit.md, teacher.md and sovella/solutions.md with the source: none missing and none added, and the heading count is the same. All JSON values that are not text (answers, tolerances, correct flags, points, criteria keys, ids) are identical. I read every changed string in inquiry.json, exit-ticket.json and tasks.json beside the Finnish one. No sentence changes the physics, a condition or a direction of reasoning. The rewordings keep the conditions: impulse "niin pieni, ettei sillä ole merkitystä", "kun vain paino tekee työtä", nimellisteho, and the constant-deceleration assumption. figures.json keeps every number with a decimal comma.
+Delta review of the FY9 audit fixes (2026-11-10). Previous PASS hash: c1b7d026abcd2b8a. The hash was the same at the start and the end of this review.
 
 ## Blocking
 None.
 
 ## Polish
-1. unit.json key_concepts, "liikemäärä": "Törmäyksessä kokonaisliikemäärä säilyy" leaves out the condition. The unit names this exact mistake ("Liikemäärän säilymistä käytetään ilman ehtoa", Yleisiä virheitä). Fix: "Kun ulkoisten voimien impulssi on törmäyksen aikana pieni, kokonaisliikemäärä säilyy eli pysyy samana." That is still under 25 words.
-2. sovella/tasks.json s6 d), criteria[3] detail: "osa energiasta muuttuu ääneksi ja järkäleen energiaksi" is vague and does not match solutions.md ("järkäleen sisäenergiaksi"). Fix: "järkäleen sisäenergiaksi".
-3. teacher.md, 15–25 min ("liike-energiasta katoaa lähes osuus"), and solutions.md s5 b) ("katosi noin puolet liike-energiasta"): energy does not disappear. For S2 readers, write "muuttuu muiksi energiamuodoiksi". The Finnish source has the same wording, so this is optional.
+None.
+
+## Checked
+- s1 b recomputed: W = 1/2 m v^2 - m g h = 9225 J - 28 959,1 J = -19 734 J = -19,73 kJ; F = |W| / 410 m = 48,13 N; share 68,1 %; a) v = sqrt(2gh) = 26,58 m/s.
+- tasks.json answer W = -19.73 kJ (tolerance 0.02) and F = 48.13 N agree with answers.py (-19.734, 48.13) and with the solution (W_muut = -19,7 kJ, F = 48,1 N); answers.py runs and its new assert W < 0 < F holds. The sign now matches the concept criterion (work negative) and the units_precision criterion (negative sign).
+- Ennusta lt-1 feedback: the braking distance quadruples only if the mean decelerating force (deceleration) is the same; the condition is now stated, closing a B-type gap (s = v^2/(2a)).
+- Preview built with no KaTeX errors.
+- Language version checked: fi-easy; the change is the same as in fi, in translation.

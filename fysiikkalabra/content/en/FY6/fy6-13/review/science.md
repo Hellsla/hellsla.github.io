@@ -1,19 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: e808871f5f949aef
+CONTENT-HASH: d3bbbfc30db75858
 
 ## Blocking
 
 ## Polish
-- content/en/FY6/fy6-13/inquiry.json:113 (simulaatio `model`) — the Mallin oletukset box says how a disconnected capacitor behaves at breakdown but not that, connected, the sim keeps showing the ideal $Q = CU_0$ and $W$; the new readout note (lang/en.json:2017 `sims.fy6-13.mallirajaus`) says it only on screen — optionally add the same sentence to the box so theory and sim boxes say the same.
-- lang/en.json:2017 — the note could name what stays ideal: "the shown $Q$ and $W$ are the ideal model's values" (C-level, not a finding).
+- assets/sims/fy6/fy6-13/sim.js:81 — the code comment still says "the ideal model's values before it". It is not shown to students and is optional to update. This is C-level.
 
 ## Checked
-- Diff: `mallirajaus` appended after the bold breakdown text only when `S.lap && !S.burnt` (connected); its claim is right (breakdown violates the ideal-dielectric assumption; a source-sustained arc current is not modelled) and it removes the risk of reading the displayed $Q$, $W$ as physical during breakdown.
-- Browser (preview, en): d = 1,0 mm air, U0 = 3,0 kV → E = 3,00 MV/m, no breakdown; 3,1 kV → lapilyonti 1, Q 549 nC, note shown; then irrotettu → Q = 0, purkautui text, no note.
-- Recomputed in one script with own formulas: sim load 88,5 pF / 88,5 nC / 44,3 µJ; koe 1–4 Q, W, U, E (lasi 0,179 kV, 7,9 µJ; kytketty lasi 496 nC, 248 µJ); koe 5 U_max 3,0 kV; paper 160 V; example 6,75 J, 6,75 kW, 3,4 s; kertaus 150 kV/m; virhe 0,034 J; siirto 190,35 µJ; TV 12 J; exit 1,2 mC — all match lesson-answers.py and the texts.
-- Predictions 1–2, kertaus, virhe, tarkistus 1–2: exactly one correct option each; distractor feedback right.
-- Experiments: each isolates its varied parameter (locked lists correct); simState gives every measured key.
-- Models and conditions: plate formula (small gap, filled gap), U_max = E_max d, half-energy loss stated as a result of this charging model, kytketty/irrotettu table and its mechanism.
-- Scope: charging/discharging qualitative only, no capacitor connections.
-- Numbers, setups and correct options identical to the fi version.
-- Hash identical at start and end.
+- batch delta review: the packet's wording diff is empty. The only change is lang/en.json:2014 `sims.fy6-13.lukemat_lap` (it is outside the content hash, which is unchanged) and now reads "Values of the ideal model at this voltage, as if no breakdown occurred". sim.js:62–64 confirms that, connected and in breakdown, U = U0 (the voltage shown on the line above), Q = C·U0 and W = ½·Q·U0. "At this voltage" is therefore exact, and last round's Polish item is resolved. Example: d = 1.0 mm in air, C = 177 pF, U0 = 3.1 kV gives 549 nC and 851 µJ. The label and the mallirajaus note agree; the label is used only when S.lap && !S.burnt; no simState key or calculation changed; it says the same as fi. Hash identical at start and end.

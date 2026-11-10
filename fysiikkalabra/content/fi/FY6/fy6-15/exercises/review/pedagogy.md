@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: c288158df2f47ea5
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: c650c557cc001a60
 
 ## Blocking
-- none
 
 ## Polish
-- Distractor feedback "Maadoitus tekee päinvastoin: se yhdistää rungon suojajohtimeen" is fine, but check that the distractor it answers really says the earthing insulates the casing.
+- solutions.md L3-05 Vastaus: optional, tie the closing claim to the data once ("viikolla 7 virta 17 mA ylittää irrottamiskynnyksen, vaikka suoja ei laukea"); the new sentences are otherwise clear.
 
 ## Checked
-- Correct option, feedback, principle and model answer now say the fault current returns through the protective conductor to the supply; the false options still have a feedback that names their error.
-- The washing-machine task (task 333) about RCD and a person is unaffected.
+- Delta only: the final RCD sentences replace the earlier "suojaa vasta kun virta on lähellä kammiovärinän vaaraa"; the new wording is accurate, consistent with the lesson's 30 mA / 10 mA / 50 mA table and with the data (week 7 17 mA, no trip).
+- The closing advice (suojamaadoitus ja eristys kunnossa, viallista laitetta ei käytetä) is actionable and follows from the data.
+- Finnish grammar and terms fine; no numbers or symbols changed.

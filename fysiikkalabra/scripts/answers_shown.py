@@ -45,8 +45,8 @@ def shown(block, label, answer, tolerance=0.02):
 
 
 def step(tex, answer):
-    """One unit in the last significant digit of the shown answer (teacher 2026-11-03: the check accepts ±2 % or ±1 in
-    the last digit, whichever is larger), in the unit of `answer`; None when no number of `tex` is that answer.
+    """One unit in the last significant digit of the shown answer (teacher 2026-11-03, 2026-11-10: the check accepts ±2 %
+    or half of this unit, whichever is larger), in the unit of `answer`; None when no number of `tex` is that answer.
     A whole number's trailing zeros count as significant, so 7000 gives 1, never 1000."""
     for v, mant, half, mhalf in numbers(tex or ""):
         if answer and abs(v - answer) <= 0.05 * abs(answer): return round(2 * half, 12)
