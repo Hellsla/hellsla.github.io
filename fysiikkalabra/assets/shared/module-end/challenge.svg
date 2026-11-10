@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+  <defs><linearGradient id="me-ch-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><linearGradient id="me-ch-rock" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8a96a3"/><stop offset="1" stop-color="#5c6773"/></linearGradient><linearGradient id="me-ch-ground" gradientUnits="userSpaceOnUse" x1="0" y1="480" x2="0" y2="600"><stop offset="0" stop-color="#8fc28a"/><stop offset="1" stop-color="#5f9460"/></linearGradient></defs>
+  <rect x="0" y="0" width="1200" height="600" fill="url(#me-ch-sky)"/>
+  <circle cx="1010" cy="120" r="54" fill="#f5c542" stroke="#e8590c" stroke-width="3"/>
+  <path d="M60 140 h90 a26 26 0 0 0 -50 -18 a34 34 0 0 0 -40 18 Z" fill="#ffffff"/>
+  <path d="M220 470 L420 260 L540 380 L620 300 L760 470 Z" fill="#bcdcf3" stroke="#1f2933" stroke-width="2" stroke-linejoin="round" opacity="0.9"/>
+  <path d="M330 510 L610 120 L900 510 Z" fill="url(#me-ch-rock)" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M610 120 L676 212 L648 232 L620 206 L590 236 L560 214 L544 212 Z" fill="#ffffff" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M760 510 L900 330 L1060 510 Z" fill="#6b7480" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M450 506 L560 448 L520 396 L600 350 L566 300 L618 262 L606 210" fill="none" stroke="#fffdf8" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2 20"/>
+  <line x1="610" y1="120" x2="610" y2="46" stroke="#1f2933" stroke-width="5" stroke-linecap="round"/>
+  <path d="M612 48 L680 64 L612 84 Z" fill="#b8622d" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="0" y="490" width="1200" height="110" fill="url(#me-ch-ground)"/>
+  <path d="M0 490 Q300 470 600 492 T1200 486 L1200 500 L0 500 Z" fill="#8fc28a"/>
+  <g stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round">
+    <path d="M150 500 L180 430 L210 500 Z" fill="#2f6b3f"/><path d="M200 506 L236 420 L272 506 Z" fill="#1a4d2e"/>
+    <path d="M960 504 L996 420 L1032 504 Z" fill="#1a4d2e"/><path d="M1020 500 L1050 436 L1080 500 Z" fill="#2f6b3f"/>
+  </g>
+  <g stroke="#1f2933" stroke-width="2.5"><line x1="180" y1="500" x2="180" y2="514"/><line x1="236" y1="506" x2="236" y2="520"/><line x1="996" y1="504" x2="996" y2="518"/><line x1="1050" y1="500" x2="1050" y2="514"/></g>
+</svg>

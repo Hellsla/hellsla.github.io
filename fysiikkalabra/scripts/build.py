@@ -862,6 +862,18 @@ def course_text(code, mod):
     return out
 
 
+# Moduulin loppuosiot (teacher 2026-11-10, "omat kortit, samat kaikilla kursseilla"): Kertauspakkasi, Esimerkkikoe,
+# Haastetehtävät and Moduulin tavoitteet are cards with one shared illustration each (assets/shared/module-end/, the
+# chapter tiles' 2:1 flat style, no text), the same on every module page and in every language; decorative (alt "").
+END_DIR = ROOT / "assets/shared/module-end"
+def end_img(name):
+    f = END_DIR / f"{name}.svg"
+    if not f.is_file(): return ""   # test copies (test_reviews.py) may leave the shared assets out
+    svg = f.read_text(encoding="utf-8").strip()
+    svg = svg.replace("<svg", '<svg aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid slice"', 1)
+    return f'<div class="me-img">{svg}</div>'
+
+
 def chapter_nav(out, modules, built_ids, practice_built, exam_built=()):
     """Edellinen luku / Seuraava luku under every lesson and Sovella page of this language (teacher 2026-10-29). The
     order is the module's lesson order in curriculum.json (the teaching order: FY3 is not numeric), only published
@@ -1228,12 +1240,12 @@ def build_language(lang):
                 f'<p class="mod-status">{main_label}{(" · " + extra_label) if extra_label else ""}</p>'
                 + progress_section(code, lang, mod)
                 + f'<h2>{T("site.course_lessons")}</h2>{items}<div class="mod-more">'
-                + concept_cards.module_section(code, T, lang, chapter_titles(code, built_ids))   # Kertauspakkasi: the student's deck of the module (teacher 2026-11-03); order deck, exam, Haastetehtävät (teacher 2026-11-05)
-                + (f'<section><h2>{T("exam.title")}</h2><p>{T("exam.course_lead")}</p><ul class="lessons practice-link"><li class="live">'
+                + concept_cards.module_section(code, T, lang, chapter_titles(code, built_ids), end_img("deck"))   # Kertauspakkasi: the student's deck of the module (teacher 2026-11-03); order deck, exam, Haastetehtävät (teacher 2026-11-05)
+                + (f'<section class="me-card">{end_img("exam")}<h2>{T("exam.title")}</h2><p>{T("exam.course_lead")}</p><ul class="lessons practice-link"><li class="live">'
                    f'<a href="{practice.page_name(code + practice.EXAM)}">{T("exam.title")}</a> <span class="count">{exam_built[code]}</span></li></ul></section>' if code in exam_built else "")
-                + (f'<section><h2>{T("practice.title")}</h2><p>{T("practice.course_lead")}</p><ul class="lessons practice-link"><li class="live">'
+                + (f'<section class="me-card">{end_img("challenge")}<h2>{T("practice.title")}</h2><p>{T("practice.course_lead")}</p><ul class="lessons practice-link"><li class="live">'
                    f'<a href="{practice.page_name(code)}">{T("practice.title")}</a> <span class="count">{practice_built[code]}</span></li></ul></section>' if code in practice_built else "")
-                + (f'<section><h2>{T("site.course_goals")}</h2><details class="goals"><summary>{T.count("site.course_goals_show", len(mod.get("tavoitteet", [])))}</summary>'
+                + (f'<section class="me-card me-goals">{end_img("goals")}<h2>{T("site.course_goals")}</h2><details class="goals"><summary>{T.count("site.course_goals_show", len(mod.get("tavoitteet", [])))}</summary>'
                    f'<p>{T("site.course_goals_lead")}</p><ul>{goals}</ul></details></section>' if goals else "") + "</div>")
         desc = T("site.course_description", code=code, title=mod["title"], done=done, n=len(slots))
         (out / f"{code}.html").write_text(page(T("site.course_title", code=code, title=mod["title"]), body,

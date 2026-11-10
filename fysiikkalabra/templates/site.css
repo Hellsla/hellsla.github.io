@@ -343,6 +343,30 @@ main.module-page ol.lessons li.ch-card.soon>.ch-box{padding:.6rem;margin-bottom:
 }
 .mod-more{display:grid;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr));gap:0 2.5rem;margin-top:1.4rem}
 .mod-more>section>h2:first-child{margin-top:1rem}
+/* Moduulin loppuosiot (teacher 2026-11-10): Kertauspakkasi, Esimerkkikoe, Haastetehtävät and Moduulin tavoitteet as
+   cards in the chapter tiles' style, each with its shared illustration on top (build.py end_img): one column on a
+   phone, two from 40rem, four in a row from 64rem. Open goals take the whole row, so no card is left stretched. */
+.mod-more:has(>.me-card){grid-template-columns:minmax(0,1fr);gap:1rem;margin-top:2rem}
+@container content (min-width:40rem){.mod-more:has(>.me-card){grid-template-columns:repeat(2,minmax(0,1fr))}}
+@container content (min-width:64rem){.mod-more:has(>.me-card){grid-template-columns:repeat(4,minmax(0,1fr))}.mod-more:has(>.me-card:nth-child(3):last-child){grid-template-columns:repeat(3,minmax(0,1fr))}}
+.mod-more>.me-card{display:flex;flex-direction:column;min-width:0;padding:0 1rem 1rem;border:1px solid var(--line);border-radius:12px;background:var(--surface);box-shadow:0 1px 2px rgba(20,23,30,.04);overflow:hidden}
+.mod-more>.me-card:has(details[open]){grid-column:1/-1}
+.me-card .me-img{margin:0 -1rem;aspect-ratio:2/1;overflow:hidden;background:var(--bg-tint);border-bottom:1px solid var(--line-2)}
+.me-card .me-img svg{display:block;width:100%;height:100%}
+.mod-more>.me-card>h2{margin:.85rem 0 .4rem;font-size:1.25rem}
+.me-card>p,.me-card .kc-deck-body p{font-size:var(--fs-small);line-height:1.5;color:var(--ink-2);margin:0 0 .6rem}
+.me-card>ul.practice-link,.me-card>p.kc-more{margin:auto 0 0}
+.me-card details.goals{margin-top:auto}
+.me-card ul.practice-link li{display:flex;flex-wrap:wrap;align-items:center;column-gap:.5rem}
+.me-card ul.practice-link .count{white-space:nowrap}
+.me-card .kc-deck-body .kc-button{margin-bottom:.6rem}
+/* the open goals take the whole row: the picture stays a tile at the left, the list beside it at reading width */
+@container content (min-width:40rem){
+  .mod-more>.me-card:has(details[open]){display:grid;grid-template-columns:15rem minmax(0,var(--measure));grid-template-rows:auto 1fr;column-gap:1.5rem;padding:0 1rem 0 0}
+  .mod-more>.me-card:has(details[open])>.me-img{grid-row:1/span 2;margin:0;align-self:start;border-bottom:0;border-right:1px solid var(--line-2)}
+  .mod-more>.me-card:has(details[open])>h2,.mod-more>.me-card:has(details[open])>details{grid-column:2}
+  .mod-more>.me-card:has(details[open])>details{padding-bottom:1rem}
+}
 /* Lukiokohtaiset opintojaksot (teacher 2026-10-30, scripts/local_courses.py): on the front page their own section after
    the national modules, rows as the catalogue's; the course page reuses the module page's parts (eyebrow, notes,
    the numbered list with "suunnitteilla" tags) and adds plain lists for goals, ways of working, the report sections

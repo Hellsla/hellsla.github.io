@@ -155,12 +155,12 @@ def lesson_nav(T):
     return f'<a href="#kertaa-kasitteet" class="toc-sub toc-concepts"><span class="toc-label">{T("cards.nav")}</span></a>'
 
 
-def module_section(code, T, lang, titles):
+def module_section(code, T, lang, titles, img=""):
     """The module page's "Kertauspakkasi", or "" when the module has no cards in this language."""
     cards = cards_of(code, lang)
     if not cards: return ""
     slim = [{"id": c["id"], "luku": c["luku"]} for c in cards]
-    return (f'<section class="kc-deck" data-moduuli="{code}" aria-labelledby="h-deck"><h2 id="h-deck">{T("cards.deck_title")}</h2>'
+    return (f'<section class="kc-deck me-card" data-moduuli="{code}" aria-labelledby="h-deck">{img}<h2 id="h-deck">{T("cards.deck_title")}</h2>'
             f'<div class="kc-deck-body"><p>{T("cards.deck_empty")}</p></div>'
             f'<p class="kc-more"><a href="{app_href(code)}">{T("cards.module_all")}</a></p>'
             + data_block(T, lang, slim, {"moduuli": code, "chapters": titles}, APP) + '<script src="kortit.js"></script></section>')
