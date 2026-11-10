@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 1b817f82ae4a1465
+CONTENT-HASH: da7489bd041cfbff
 
 ## Blocking
 - none
@@ -10,6 +10,7 @@ CONTENT-HASH: 1b817f82ae4a1465
 - Open from round 1 (not part of this diff, still unchanged): lesson.md Ydinajatus "keskimääräiseen liike-energiaan" (E_k is FY4 scope); sim first-load average shown as measurement; hero/fig 5 balloons unlabelled or non-teaching; Tutki holds nine items (make taulukko optional).
 
 ## Checked
+- delta review 2026-11-10 (measurement window reset, teacher's FY3 brief): slider change of N, T or V now empties the average, 0,5 s settling note replaces the value, bar keeps axis and hides its number; Nollaa mittaus still works (tAvg 0,15 settling); howto and 'paina Nollaa mittaus ja odota ~2 s' remain valid and the note tells the student why to wait; measured/predicted stays 0,93-1,06 after settling so N, T, V experiments can still confirm or refute predictions; no value is shown that could be misread. No blocking findings.
 - delta review 2026-11-07 round 2 (follow-up consistency edits): the 'Etsi virhe' feedback on the pressure and volume options now says the units must fit R's unit (Pa with m³, kPa with l, 1 kPa·l = 1 J) instead of calling the pascal the only correct unit; each still ends 'the error is elsewhere' without disclosing it, so it repairs the misconception and matches the lesson's new 1 kPa·l = 1 J text.
 - delta review 2026-11-07 (teacher's proofread replacement texts): the symbol list of $pV = nRT$ and the new unit paragraph (R in J/(mol·K), so pV in joules; Pa·m³ usual, kPa·l also gives J; be consistent) are clear and agree with the worked example and the Sekoitetut yksiköt misconception; inquiry and exit-ticket edits are unit typesetting only.
 - Round 2 Polish on check-2 fixed: "pV = NkT" is gone; Periaate now derives p ∝ NT/V from the stated pV = nRT and says N is proportional to n, so k is no longer needed and a student can follow it.

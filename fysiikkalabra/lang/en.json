@@ -674,6 +674,7 @@
       "lampotila": "Temperature $T = {{t}}\\,\\text{K}$",
       "tilavuus": "Volume $V = {{vrel}}\\,\\%$",
       "mitattu_paine_keskiarvo": "Measured pressure <strong>$p/p_\\text{ref} = {{pm}}$</strong> (mean over ${{tavg}}\\,\\text{s}$)",
+      "mittaus_tasaantuu": "Measured pressure: <strong>measurement settling…</strong> (mean over ${{tavg}}\\,\\text{s}$)",
       "osumia_seiniin_sekunnissa": "<br>Hits on the walls <strong>${{hitrate}}$</strong> per second",
       "hidas": "$\\text{slow}$",
       "osuma_seinaan": "$\\text{hit on the wall}$",
@@ -760,7 +761,8 @@
       "lampotila": "Temperature $T = {{t}}\\,\\text{K}$",
       "tilavuus": "Volume $V = {{v}}\\,\\text{dm}^3$",
       "hiukkasten_keskinopeus": "<br>Mean speed of the particles: $v = {{math}} \\cdot v_{300\\,\\text{K}}$",
-      "paine_suhteellinen_ja": "<br><strong>Pressure $p \\approx {{prel}}$</strong> (relative, $100$ = $300\\,\\text{K}$ and $1.0\\,\\text{dm}^3$), theory ${{ptheory}}$"
+      "paine_suhteellinen_ja": "<br><strong>Pressure $p \\approx {{prel}}$</strong> (relative, $100$ = $300\\,\\text{K}$ and $1.0\\,\\text{dm}^3$), theory ${{ptheory}}$",
+      "paine_tasaantuu": "<br><strong>Pressure: measurement settling…</strong> (relative, $100$ = $300\\,\\text{K}$ and $1.0\\,\\text{dm}^3$), theory ${{ptheory}}$"
     },
     "fy3-4": {
       "bensiini": "petrol",

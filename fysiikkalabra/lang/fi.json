@@ -674,6 +674,7 @@
       "lampotila": "Lämpötila $T = {{t}}\\,\\text{K}$",
       "tilavuus": "Tilavuus $V = {{vrel}}\\,\\%$",
       "mitattu_paine_keskiarvo": "Mitattu paine <strong>$p/p_\\text{ref} = {{pm}}$</strong> (keskiarvo ${{tavg}}\\,\\text{s}$:n ajalta)",
+      "mittaus_tasaantuu": "Mitattu paine: <strong>mittaus tasaantuu…</strong> (keskiarvo ${{tavg}}\\,\\text{s}$:n ajalta)",
       "osumia_seiniin_sekunnissa": "<br>Osumia seiniin <strong>${{hitrate}}$</strong> sekunnissa",
       "hidas": "$\\text{hidas}$",
       "osuma_seinaan": "$\\text{osuma seinään}$",
@@ -760,7 +761,8 @@
       "lampotila": "Lämpötila $T = {{t}}\\,\\text{K}$",
       "tilavuus": "Tilavuus $V = {{v}}\\,\\text{dm}^3$",
       "hiukkasten_keskinopeus": "<br>Hiukkasten keskinopeus: $v = {{math}} \\cdot v_{300\\,\\text{K}}$",
-      "paine_suhteellinen_ja": "<br><strong>Paine $p \\approx {{prel}}$</strong> (suhteellinen, $100$ = $300\\,\\text{K}$ ja $1{,}0\\,\\text{dm}^3$), teoria ${{ptheory}}$"
+      "paine_suhteellinen_ja": "<br><strong>Paine $p \\approx {{prel}}$</strong> (suhteellinen, $100$ = $300\\,\\text{K}$ ja $1{,}0\\,\\text{dm}^3$), teoria ${{ptheory}}$",
+      "paine_tasaantuu": "<br><strong>Paine: mittaus tasaantuu…</strong> (suhteellinen, $100$ = $300\\,\\text{K}$ ja $1{,}0\\,\\text{dm}^3$), teoria ${{ptheory}}$"
     },
     "fy3-4": {
       "bensiini": "bensiini",
