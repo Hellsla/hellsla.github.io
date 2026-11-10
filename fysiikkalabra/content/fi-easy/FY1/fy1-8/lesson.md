@@ -2,19 +2,19 @@
 
 > **Miksi** kaksi ryhmää saa samalle leluautolle eri nopeuden, vaikka kumpikin mittaa huolellisesti?
 
-<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: luokan lattialla on rata. Leluauto kulkee radalla mittanauhan vieressä. Radan kummallakin puolella on ryhmä. Kummallakin ryhmällä on oma sekuntikello. Kellojen viisarit ovat pysähtyneet eri kohtiin." class="fig-hero" style="max-width:100%;font-size:24px">
+<svg data-fig="hero" data-style="house" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: luokan lattialla on rata. Leluauto kulkee radalla mittanauhan vieressä. Radan kummallakin puolella on ryhmä. Kummallakin ryhmällä on oma sekuntikello. Kellojen viisarit ovat pysähtyneet eri kohtiin." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy18h-w1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#d0e6fb"/></linearGradient><linearGradient id="fy18h-w2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#d0e6fb"/></linearGradient><linearGradient id="fy18h-floor" gradientUnits="userSpaceOnUse" x1="0" y1="300" x2="0" y2="600"><stop offset="0" stop-color="#d9b26a"/><stop offset="1" stop-color="#e9c98a"/></linearGradient><linearGradient id="fy18h-track" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient><linearGradient id="fy18h-car" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2a69c"/><stop offset="1" stop-color="#c92a2a"/></linearGradient></defs>
   <rect x="0" y="0" width="1200" height="600" fill="#f6f1e6"/>
-  <rect x="120" y="40" width="200" height="170" rx="4" fill="url(#fy18h-w1)" stroke="#1f2933" stroke-width="3"/>
+  <rect x="120" y="40" width="200" height="170" rx="4" fill="url(#fy18h-w1)" stroke="#3a4350" stroke-width="3"/>
   <path d="M164,119.5 Q163,106 179,107.5 Q185.5,93 201.5,98 Q216,90 224,105 Q238.5,106.5 237,119.5 Z" fill="#ffffff" stroke-linejoin="round"/>
   <line x1="220" y1="40" x2="220" y2="210" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
   <line x1="120" y1="125" x2="320" y2="125" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="108" y="210" width="224" height="14" rx="3" fill="#c9c2b2" stroke="#1f2933" stroke-width="3"/>
-  <rect x="880" y="40" width="200" height="170" rx="4" fill="url(#fy18h-w2)" stroke="#1f2933" stroke-width="3"/>
+  <rect x="108" y="210" width="224" height="14" rx="3" fill="#c9c2b2" stroke="#6f6b62" stroke-width="3"/>
+  <rect x="880" y="40" width="200" height="170" rx="4" fill="url(#fy18h-w2)" stroke="#3a4350" stroke-width="3"/>
   <path d="M924,119.5 Q923,106 939,107.5 Q945.5,93 961.5,98 Q976,90 984,105 Q998.5,106.5 997,119.5 Z" fill="#ffffff" stroke-linejoin="round"/>
   <line x1="980" y1="40" x2="980" y2="210" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
   <line x1="880" y1="125" x2="1080" y2="125" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="868" y="210" width="224" height="14" rx="3" fill="#c9c2b2" stroke="#1f2933" stroke-width="3"/>
+  <rect x="868" y="210" width="224" height="14" rx="3" fill="#c9c2b2" stroke="#6f6b62" stroke-width="3"/>
   <rect x="0" y="300" width="1200" height="300" fill="url(#fy18h-floor)"/>
   <line x1="240" y1="300" x2="-840" y2="600" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="300" y1="300" x2="-600" y2="600" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
@@ -30,11 +30,11 @@
   <line x1="900" y1="300" x2="1800" y2="600" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="960" y1="300" x2="2040" y2="600" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="0" y1="300" x2="1200" y2="300" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M180,500 L1020,500 L940,400 L260,400 Z" fill="url(#fy18h-track)" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M180,500 L1020,500 L940,400 L260,400 Z" fill="url(#fy18h-track)" stroke="#3a4350" stroke-width="3" stroke-linejoin="round"/>
   <path d="M260,400 H940" fill="none" stroke="#ffffff" stroke-width="2" stroke-linejoin="round"/>
   <line x1="300" y1="400" x2="276" y2="500" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt" stroke-dasharray="10 8"/>
   <line x1="900" y1="400" x2="876" y2="500" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt" stroke-dasharray="10 8"/>
-  <rect x="170" y="504" width="860" height="30" rx="4" fill="#ffc078" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="170" y="504" width="860" height="30" rx="4" fill="#ffc078" stroke="#8c6a42" stroke-width="2.5"/>
   <line x1="178" y1="504" x2="178" y2="522" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="188" y1="504" x2="188" y2="511" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="197.5" y1="504" x2="197.5" y2="511" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
@@ -122,10 +122,10 @@
   <line x1="1001" y1="504" x2="1001" y2="511" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="1011" y1="504" x2="1011" y2="516" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="1021" y1="504" x2="1021" y2="511" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <path d="M530,474 V444 Q538,434 566,432 L586,400 H644 L668,432 Q692,436 694,452 V474 Z" fill="url(#fy18h-car)" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M594,408 H640 L656,430 H580 Z" fill="#eef5f9" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M530,474 V444 Q538,434 566,432 L586,400 H644 L668,432 Q692,436 694,452 V474 Z" fill="url(#fy18h-car)" stroke="#3a4350" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M594,408 H640 L656,430 H580 Z" fill="#eef5f9" stroke="#3a4350" stroke-width="2" stroke-linejoin="round"/>
   <line x1="618" y1="408" x2="618" y2="430" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <rect x="680" y="444" width="12" height="8" rx="2" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="680" y="444" width="12" height="8" rx="2" fill="#ffc078" stroke="#8c6a42" stroke-width="1.5"/>
   <circle cx="564" cy="476" r="18" fill="#1f2933"/>
   <circle cx="564" cy="476" r="8" fill="#c4ccd4"/>
   <circle cx="660" cy="476" r="18" fill="#1f2933"/>
@@ -152,11 +152,11 @@
   <circle cx="190" cy="189" r="21" fill="#f1dfb5"/>
   <path d="M168.5,189 Q169,163.5 190,165 Q212.5,165 211.5,186 Q194,177.5 168.5,189 Z" fill="#1f2933" stroke-linejoin="round"/>
   <line x1="210" y1="231" x2="260" y2="276" stroke="#1971c2" stroke-width="16" stroke-linecap="round"/>
-  <rect x="248" y="262" width="24" height="30" rx="10" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
-  <rect x="253" y="164" width="14" height="10.5" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="248" y="262" width="24" height="30" rx="10" fill="#f1dfb5" stroke="#857b64" stroke-width="2"/>
+  <rect x="253" y="164" width="14" height="10.5" rx="3" fill="#6c757d" stroke="#43494e" stroke-width="2"/>
   <rect x="257" y="173.5" width="6" height="6" fill="#6c757d"/>
-  <circle cx="260" cy="222" r="44" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
-  <circle cx="260" cy="222" r="36.08" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="260" cy="222" r="44" fill="#c4ccd4" stroke="#6c7075" stroke-width="3"/>
+  <circle cx="260" cy="222" r="36.08" fill="#ffffff" stroke="#3a4350" stroke-width="2"/>
   <line x1="260" y1="192" x2="260" y2="187.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
   <line x1="275" y1="196" x2="277" y2="192.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
   <line x1="286" y1="207" x2="289.5" y2="205" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
@@ -190,11 +190,11 @@
   <circle cx="1010" cy="189" r="21" fill="#f1dfb5"/>
   <path d="M988.5,189 Q989,163.5 1010,165 Q1032.5,165 1031.5,186 Q1014,177.5 988.5,189 Z" fill="#1f2933" stroke-linejoin="round"/>
   <line x1="990" y1="231" x2="940" y2="276" stroke="#e8590c" stroke-width="16" stroke-linecap="round"/>
-  <rect x="928" y="262" width="24" height="30" rx="10" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
-  <rect x="933" y="164" width="14" height="10.5" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="928" y="262" width="24" height="30" rx="10" fill="#f1dfb5" stroke="#857b64" stroke-width="2"/>
+  <rect x="933" y="164" width="14" height="10.5" rx="3" fill="#6c757d" stroke="#43494e" stroke-width="2"/>
   <rect x="937" y="173.5" width="6" height="6" fill="#6c757d"/>
-  <circle cx="940" cy="222" r="44" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
-  <circle cx="940" cy="222" r="36.08" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="940" cy="222" r="44" fill="#c4ccd4" stroke="#6c7075" stroke-width="3"/>
+  <circle cx="940" cy="222" r="36.08" fill="#ffffff" stroke="#3a4350" stroke-width="2"/>
   <line x1="940" y1="192" x2="940" y2="187.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
   <line x1="955" y1="196" x2="957" y2="192.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
   <line x1="966" y1="207" x2="969.5" y2="205" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
@@ -230,13 +230,13 @@ Tutkimuskysymys on kysymys, johon mittaus voi vastata. Esimerkki on "Miten lelua
 
 Joskus kaksi muuttujaa muuttuu yhtä aikaa, esimerkiksi matka ja paristot. Silloin ei voi päätellä, mikä muutti tulosta. Siksi koe on reilu vasta, kun vain muutettava muuttuja vaihtuu.
 
-<svg data-fig="setup" viewBox="0 0 600 330" role="img" aria-label="Kaavakuva kokeen asetelmasta. Leluauto ajaa pöydällä tasaisella radalla lähtöviivalta maaliviivalle. Radan vieressä on matka-asteikko metreinä. Lähtöviivan ja maaliviivan väli on muutettava muuttuja, matka s. Käsikello mittaa aikaa t. Aika on mitattava muuttuja. Vakioina pysyvät auto, alusta ja paristot. Asteikko on mittakaavassa: 150 yksikköä kuvassa vastaa metriä." style="max-width:100%;font-size:24px">
+<svg data-fig="setup" data-style="house" viewBox="0 0 600 330" role="img" aria-label="Kaavakuva kokeen asetelmasta. Leluauto ajaa pöydällä tasaisella radalla lähtöviivalta maaliviivalle. Radan vieressä on matka-asteikko metreinä. Lähtöviivan ja maaliviivan väli on muutettava muuttuja, matka s. Käsikello mittaa aikaa t. Aika on mitattava muuttuja. Vakioina pysyvät auto, alusta ja paristot. Asteikko on mittakaavassa: 150 yksikköä kuvassa vastaa metriä." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy18-wood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
   <foreignObject x="24" y="13.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{muutettava: } s$</div></foreignObject>
   <foreignObject x="24" y="47.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{mitattava: } t$</div></foreignObject>
   <foreignObject x="24" y="81.5" width="420" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{vakiona: auto, alusta, paristot}$</div></foreignObject>
-  <rect x="514" y="20" width="12" height="12" rx="2" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="520" cy="66" r="30" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <rect x="514" y="20" width="12" height="12" rx="2" fill="#ffffff" stroke="#3a4350" stroke-width="1.75"/>
+  <circle cx="520" cy="66" r="30" fill="#ffffff" stroke="#3a4350" stroke-width="1.75"/>
   <line x1="520" y1="44" x2="520" y2="39" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="531" y1="47" x2="533.5" y2="42.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="539" y1="55" x2="543.5" y2="52.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
@@ -252,35 +252,38 @@ Joskus kaksi muuttujaa muuttuu yhtä aikaa, esimerkiksi matka ja paristot. Sillo
   <line x1="520" y1="66" x2="536" y2="52" stroke="#e8590c" stroke-width="3" stroke-linecap="round"/>
   <circle cx="520" cy="66" r="3.5" fill="#1f2933"/>
   <foreignObject x="510" y="103.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$t$</div></foreignObject>
-  <rect x="40" y="200" width="520" height="16" fill="url(#fy18-wood)" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="72" y1="216" x2="72" y2="224" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="40" y="200" width="520" height="16" fill="url(#fy18-wood)" stroke="#3a4350" stroke-width="1.75"/>
+  <line x1="72" y1="216" x2="72" y2="224" stroke="#1f2933" stroke-width="1.75" stroke-linecap="butt"/>
   <foreignObject x="62" y="227.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$0$</div></foreignObject>
-  <line x1="147" y1="216" x2="147" y2="224" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="147" y1="216" x2="147" y2="224" stroke="#1f2933" stroke-width="1.75" stroke-linecap="butt"/>
   <foreignObject x="124.5" y="227.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$0{,}5$</div></foreignObject>
-  <line x1="222" y1="216" x2="222" y2="224" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="222" y1="216" x2="222" y2="224" stroke="#1f2933" stroke-width="1.75" stroke-linecap="butt"/>
   <foreignObject x="212" y="227.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$1$</div></foreignObject>
-  <line x1="297" y1="216" x2="297" y2="224" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="297" y1="216" x2="297" y2="224" stroke="#1f2933" stroke-width="1.75" stroke-linecap="butt"/>
   <foreignObject x="274.5" y="227.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$1{,}5$</div></foreignObject>
-  <line x1="372" y1="216" x2="372" y2="224" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="372" y1="216" x2="372" y2="224" stroke="#1f2933" stroke-width="1.75" stroke-linecap="butt"/>
   <foreignObject x="362" y="227.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$2$</div></foreignObject>
-  <line x1="447" y1="216" x2="447" y2="224" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="447" y1="216" x2="447" y2="224" stroke="#1f2933" stroke-width="1.75" stroke-linecap="butt"/>
   <foreignObject x="424.5" y="227.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$2{,}5$</div></foreignObject>
   <foreignObject x="475" y="227.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$s\ (\text{m})$</div></foreignObject>
   <line x1="72" y1="140" x2="72" y2="200" stroke="#6b7480" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <foreignObject x="37" y="111.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{lähtö}$</div></foreignObject>
   <line x1="372" y1="140" x2="372" y2="200" stroke="#6b7480" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <foreignObject x="337" y="111.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{maali}$</div></foreignObject>
-  <rect x="92" y="166" width="68" height="22" rx="6" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="108" y="148" width="36" height="18" rx="5" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
-  <circle cx="110" cy="191" r="9" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="144" cy="191" r="9" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <line x1="176" y1="160" x2="237" y2="160" stroke="#1971c2" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M250,160 L236,166.5 L236,153.5 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <path d="M88,190 V174 Q90,164 104,162 L116,146 H142 L156,162 Q168,163 170,174 V190 Z" fill="#d6402f" stroke="#80261c" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M120,150 H139 L149,162 H112 Z" fill="#dbe9f5" stroke="#80261c" stroke-width="1.25" stroke-linejoin="round"/>
+  <path d="M92,172 H166" fill="none" stroke="#e48378" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="108" cy="191" r="9" fill="#3a4350"/>
+  <circle cx="108" cy="191" r="3.5" fill="#c4ccd4"/>
+  <circle cx="150" cy="191" r="9" fill="#3a4350"/>
+  <circle cx="150" cy="191" r="3.5" fill="#c4ccd4"/>
+  <line x1="176" y1="160" x2="238" y2="160" stroke="#1971c2" stroke-width="3.25" stroke-linecap="butt"/>
+  <path d="M250,160 L233.5,167.5 L238,160 L233.5,152.5 Z" fill="#1971c2" stroke-linejoin="round"/>
   <foreignObject x="264" y="145.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$v$</div></foreignObject>
-  <line x1="72" y1="268" x2="372" y2="268" stroke="#6b7480" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="72" y1="258" x2="72" y2="278" stroke="#6b7480" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="372" y1="258" x2="372" y2="278" stroke="#6b7480" stroke-width="2.5" stroke-linecap="butt"/>
-  <foreignObject x="168" y="285.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$s = 2{,}00\,\text{m}$</div></foreignObject>
+  <line x1="72" y1="272" x2="372" y2="272" stroke="#6b7480" stroke-width="1.25"/>
+  <line x1="72" y1="266" x2="72" y2="278" stroke="#6b7480" stroke-width="1.25"/>
+  <line x1="372" y1="266" x2="372" y2="278" stroke="#6b7480" stroke-width="1.25"/>
+  <foreignObject x="168" y="277.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$s = 2{,}00\,\text{m}$</div></foreignObject>
 </svg>
 
 ### Suunnittelu ennen mittausta
@@ -335,37 +338,37 @@ t &\ge \frac{\Delta t}{\varepsilon_\text{max}}
 ```
 missä $\varepsilon$ on suhteellinen epävarmuus (ilmoitetaan usein prosentteina), $\Delta t$ ajan epävarmuus (s) ja $t$ mitattu aika (s). Esimerkki: epävarmuus on $\Delta t = 0{,}2\,\text{s}$ ja raja on $5\,\%$. Silloin aikaa pitää olla vähintään $4\,\text{s}$.
 
-<svg data-fig="epavarmuus" viewBox="0 0 600 340" role="img" aria-label="Kuvaaja näyttää suhteellisen epävarmuuden ajan funktiona. Ajan epävarmuus on 0,2 s. Kun aika on 1 s, epävarmuus on 20 %. Kun aika on 4 s, epävarmuus on 5,0 %. Kun aika on 10 s, epävarmuus on 2,0 %. Vihreä alue näyttää mittaukset, joiden epävarmuus on enintään 5,0 %. Ne vaativat vähintään 4 s:n ajan. Kuvaaja on mittakaavassa." style="max-width:100%;font-size:24px">
-  <line x1="176" y1="286" x2="176" y2="54" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="256" y1="286" x2="256" y2="54" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="336" y1="286" x2="336" y2="54" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="416" y1="286" x2="416" y2="54" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="496" y1="286" x2="496" y2="54" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="96" y1="237.5" x2="496" y2="237.5" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="96" y1="189.5" x2="496" y2="189.5" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="96" y1="141" x2="496" y2="141" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="96" y1="92.5" x2="496" y2="92.5" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="95" y1="286" x2="510" y2="286" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M522,286 L509,292 L509,280 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <line x1="96" y1="287" x2="96" y2="40" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M96,28 L102,41 L90,41 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <line x1="176" y1="286" x2="176" y2="293" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+<svg data-fig="epavarmuus" data-style="house" viewBox="0 0 600 340" role="img" aria-label="Kuvaaja näyttää suhteellisen epävarmuuden ajan funktiona. Ajan epävarmuus on 0,2 s. Kun aika on 1 s, epävarmuus on 20 %. Kun aika on 4 s, epävarmuus on 5,0 %. Kun aika on 10 s, epävarmuus on 2,0 %. Vihreä alue näyttää mittaukset, joiden epävarmuus on enintään 5,0 %. Ne vaativat vähintään 4 s:n ajan. Kuvaaja on mittakaavassa." style="max-width:100%;font-size:24px">
+  <line x1="176" y1="286" x2="176" y2="54" stroke="#e7e2d7" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="256" y1="286" x2="256" y2="54" stroke="#e7e2d7" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="336" y1="286" x2="336" y2="54" stroke="#e7e2d7" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="416" y1="286" x2="416" y2="54" stroke="#e7e2d7" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="496" y1="286" x2="496" y2="54" stroke="#e7e2d7" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="96" y1="237.5" x2="496" y2="237.5" stroke="#e7e2d7" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="96" y1="189.5" x2="496" y2="189.5" stroke="#e7e2d7" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="96" y1="141" x2="496" y2="141" stroke="#e7e2d7" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="96" y1="92.5" x2="496" y2="92.5" stroke="#e7e2d7" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="95" y1="286" x2="514" y2="286" stroke="#1f2933" stroke-width="1.75" stroke-linecap="butt"/>
+  <path d="M522,286 L510.5,291 L514,286 L510.5,281 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="96" y1="287" x2="96" y2="36" stroke="#1f2933" stroke-width="1.75" stroke-linecap="butt"/>
+  <path d="M96,28 L101,39.5 L96,36 L91,39.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="176" y1="286" x2="176" y2="293" stroke="#1f2933" stroke-width="1.75" stroke-linecap="butt"/>
   <foreignObject x="166" y="295.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$2$</div></foreignObject>
-  <line x1="256" y1="286" x2="256" y2="293" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="256" y1="286" x2="256" y2="293" stroke="#1f2933" stroke-width="1.75" stroke-linecap="butt"/>
   <foreignObject x="246" y="295.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$4$</div></foreignObject>
-  <line x1="336" y1="286" x2="336" y2="293" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="336" y1="286" x2="336" y2="293" stroke="#1f2933" stroke-width="1.75" stroke-linecap="butt"/>
   <foreignObject x="326" y="295.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$6$</div></foreignObject>
-  <line x1="416" y1="286" x2="416" y2="293" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="416" y1="286" x2="416" y2="293" stroke="#1f2933" stroke-width="1.75" stroke-linecap="butt"/>
   <foreignObject x="406" y="295.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$8$</div></foreignObject>
-  <line x1="496" y1="286" x2="496" y2="293" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="496" y1="286" x2="496" y2="293" stroke="#1f2933" stroke-width="1.75" stroke-linecap="butt"/>
   <foreignObject x="479.5" y="295.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10$</div></foreignObject>
-  <line x1="89" y1="237.5" x2="96" y2="237.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="89" y1="237.5" x2="96" y2="237.5" stroke="#1f2933" stroke-width="1.75" stroke-linecap="butt"/>
   <foreignObject x="64" y="223" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$5$</div></foreignObject>
-  <line x1="89" y1="189.5" x2="96" y2="189.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="89" y1="189.5" x2="96" y2="189.5" stroke="#1f2933" stroke-width="1.75" stroke-linecap="butt"/>
   <foreignObject x="51" y="175" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$10$</div></foreignObject>
-  <line x1="89" y1="141" x2="96" y2="141" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="89" y1="141" x2="96" y2="141" stroke="#1f2933" stroke-width="1.75" stroke-linecap="butt"/>
   <foreignObject x="51" y="126.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$15$</div></foreignObject>
-  <line x1="89" y1="92.5" x2="96" y2="92.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="89" y1="92.5" x2="96" y2="92.5" stroke="#1f2933" stroke-width="1.75" stroke-linecap="butt"/>
   <foreignObject x="51" y="78" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$20$</div></foreignObject>
   <foreignObject x="66" y="291.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0$</div></foreignObject>
   <foreignObject x="528" y="271.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$t\ (\text{s})$</div></foreignObject>
@@ -373,9 +376,9 @@ missä $\varepsilon$ on suhteellinen epävarmuus (ilmoitetaan usein prosentteina
   <polygon points="256,286 496,286 496,237.5 256,237.5" fill="#b2f2bb" fill-opacity="0.7"/>
   <line x1="96" y1="237.5" x2="496" y2="237.5" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt" stroke-dasharray="8 6"/>
   <polyline points="136,92.5 139,106 142,118 145,128 148,137.5 151,145.5 154,152.5 157,159 160,165 163,170.5 166,175.5 169,180 172,184 175,188 178,191.5 181,195 184,198 187,201 190,203.5 193,206.5 196,208.5 199,211 202,213 205,215 208,217 211,219 214,220.5 217,222 220,223.5 223,225 226,226.5 229,228 232,229 235,230.5 238,231.5 241,232.5 244,233.5 247,235 250,236 253,236.5 256,237.5 259,238.5 262,239.5 265,240 268,241 271,242 274,242.5 277,243.5 280,244 283,244.5 286,245.5 289,246 292,246.5 295,247 298,247.5 301,248.5 304,249 307,249.5 310,250 313,250.5 316,251 319,251.5 322,252 325,252 328,252.5 331,253 334,253.5 337,254 340,254.5 343,254.5 346,255 349,255.5 352,256 355,256 358,256.5 361,257 364,257 367,257.5 370,258 373,258 376,258.5 379,258.5 382,259 385,259 388,259.5 391,260 394,260 397,260.5 400,260.5 403,261 406,261 409,261.5 412,261.5 415,262 418,262 421,262 424,262.5 427,262.5 430,263 433,263 436,263.5 439,263.5 442,263.5 445,264 448,264 451,264 454,264.5 457,264.5 460,265 463,265 466,265 469,265.5 472,265.5 475,265.5 478,266 481,266 484,266 487,266 490,266.5 493,266.5 496,266.5" fill="none" stroke="#1971c2" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <line x1="256" y1="237.5" x2="256" y2="286" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <line x1="96" y1="237.5" x2="256" y2="237.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <circle cx="256" cy="237.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <line x1="256" y1="237.5" x2="256" y2="286" stroke="#6b7480" stroke-width="1.25" stroke-linecap="butt" stroke-dasharray="5 4"/>
+  <line x1="96" y1="237.5" x2="256" y2="237.5" stroke="#6b7480" stroke-width="1.25" stroke-linecap="butt" stroke-dasharray="5 4"/>
+  <circle cx="256" cy="237.5" r="5.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="304" y="188.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#2b8a3e">$\varepsilon \le 5\,\%$</div></foreignObject>
   <foreignObject x="184" y="73.5" width="180" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\varepsilon = \dfrac{0{,}2\,\text{s}}{t}$</div></foreignObject>
 </svg>

@@ -2,7 +2,7 @@
 from figlib import Fig, Axes, INK, MUTED, WHITE, RULE, SAND, SAND_DARK, SAND_LIGHT, ALUMINIUM, METAL_EDGE, COLD, GOOD, GOOD_LIGHT, HEAT, fi
 from figlib import GLASS, HEAT_LIGHT, HOT, PAPER
 import herolib as H
-from figlib import GRAIN, HOT_LIGHT
+from figlib import GRAIN, HOT_LIGHT, n
 from herolib import grad
 from figstyle import Fig, Axes            # the house illustration style (docs/illustration-style.md)
 import figstyle as S
@@ -77,18 +77,17 @@ def setup():
         f.line(x, 140, x, 200, MUTED, 2, "6 5")
         f.tex(x, 126, name, "middle")
     # car, moving right
-    f.rect(92, 166, 68, 22, ALUMINIUM, INK, 2.5, 6)
-    f.rect(108, 148, 36, 18, "#eef5f9", INK, 2.5, 5)
-    for wx in (110, 144):
-        f.circle(wx, 191, 9, INK, WHITE, 2)
+    car = "#d6402f"
+    f.path("M88,190 V174 Q90,164 104,162 L116,146 H142 L156,162 Q168,163 170,174 V190 Z", car, S.dark(car, 0.4), S.W_OBJ)
+    f.path("M120,150 H139 L149,162 H112 Z", "#dbe9f5", S.dark(car, 0.4), 1.25)
+    f.path("M92,172 H166", stroke=S.light(car, 0.35), w=3, extra='stroke-linecap="round"')
+    for wx in (108, 150):
+        f.circle(wx, 191, 9, "#3a4350"); f.circle(wx, 191, 3.5, "#c4ccd4")
     f.arrow(176, 160, 250, 160, COLD, 3, 14)                 # velocity is always blue
     f.tex(264, 160, "v", "start", color=COLD)
     # bracket for the distance
     xe = x0 + per * 2.0
-    f.line(x0, 268, xe, 268, MUTED, 2.5)                       # neutral grey: blue is kept for the velocity
-    f.line(x0, 258, x0, 278, MUTED, 2.5)
-    f.line(xe, 258, xe, 278, MUTED, 2.5)
-    f.tex((x0 + xe) / 2, 300, r"s = 2{,}00\,\text{m}", "middle")
+    f.dim_h(x0, xe, 272, r"s = 2{,}00\,\text{m}", MUTED)          # neutral grey: blue is kept for the velocity
     return f.svg()
 
 
@@ -109,9 +108,50 @@ def epavarmuus():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "setup": setup, "epavarmuus": epavarmuus}
+def _ramp(f, gid):
+    """A wooden ramp on a book stack, sloping down to the right; returns (x, y) of its top end and the slope."""
+    H.wood(f, 0, 300, 600, 60, gid + "-top")
+    for k, (w_, c) in enumerate(((150, "#2f74b5"), (140, "#c92a2a"), (146, "#2b8a3e"))):     # books under the top end
+        f.rect(40 + (150 - w_) / 2, 300 - 22 * (k + 1), w_, 22, c, S.dark(c, 0.35), S.W_OBJ, 2)
+        f.rect(46 + (150 - w_) / 2, 300 - 22 * (k + 1) + 6, w_ - 12, 4, S.light(c, 0.5))
+    wood = "#d9b26a"
+    f.path("M60,228 L560,296 L560,304 L60,236 Z", S.dark(wood, 0.12), S.dark(wood, 0.4), S.W_OBJ)
+    f.path("M60,218 L560,286 L560,296 L60,228 Z", wood, S.dark(wood, 0.4), S.W_OBJ)
+    return (60, 218), (500 / 68)
+
+
+def ramp_ball():
+    """Task illustration (fy1-8-L1-01): a ball rolls down a ramp, a hand holds a stopwatch; no numbers."""
+    f = S.scene("fy18-ramp", "Kuvitus: kuula vierii kirjapinon varaan nojaavaa puista rinnettä alas, ja haaleat välikuvat näyttävät sen aiemmat paikat. "
+                "Oikealla ylhäällä on sekuntikello.")
+    f.rect(0, 0, 600, 360, "#f3efe6")
+    _ramp(f, "fy18r")
+    for k, (x, op) in enumerate(((150, 0.25), (230, 0.45), (330, 1))):
+        y = 218 + (x - 60) * 68 / 500 - 14
+        if op < 1: f.add(f'<circle cx="{x}" cy="{n(y)}" r="14" fill="#9aa3ad" opacity="{op}"/>')
+        else: f.ball("fy18r-ball", x, y, 14, "#aab4bf")
+    H.stopwatch(f, 500, 110, 40, 0.0)
+    return f.svg()
+
+
+def two_balls_ramp():
+    """Task illustration (fy1-8-L2-05): a light and a heavy ball wait at the start line of the same ramp; no numbers."""
+    f = S.scene("fy18-balls", "Kuvitus: saman puisen rinteen yläpäässä lähtöviivalla on kaksi palloa, pieni kevyt muovipallo ja suurempi raskas "
+                "teräskuula. Rinteen alapäässä on maaliviiva.")
+    f.rect(0, 0, 600, 360, "#f3efe6")
+    _ramp(f, "fy18b")
+    f.line(110, 210, 116, 236, "#c92a2a", 3)                                   # start and finish lines across the ramp
+    f.line(500, 263, 506, 290, "#c92a2a", 3)
+    f.ball("fy18b-light", 132, 213, 10, "#ffc078")
+    f.ball("fy18b-heavy", 160, 208, 17, "#aab4bf")
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "setup": setup, "epavarmuus": epavarmuus, "ramp-ball": ramp_ball, "two-balls-ramp": two_balls_ramp}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
+    "ramp-ball": "safe: the situation only, a ball rolling down a ramp and a stopwatch; no numbers",
+    "two-balls-ramp": "safe: the situation only, a light and a heavy ball at the start of one ramp; no numbers",
     "setup": "safe: the setup with its variables, no results",
     "epavarmuus": "reveals: the relative uncertainty for 1, 4 and 10 s",
 }
