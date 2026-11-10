@@ -13,7 +13,7 @@ the read-aloud model repository; its folders supertonic3-v1/ and ort/ are publis
 the pages, so no CORS). Without --models the models/ folder already in OUT is kept as it is.
 
 Added beside the pages: CNAME (the custom domain), .nojekyll (serve the files as they are), robots.txt and
-sitemap.xml. Then two gates, and the script exits 1 (nothing is pushed) if either fails:
+sitemap.xml (robots.txt refuses AI crawlers), LICENSE (all rights reserved). Then two gates, and the script exits 1 (nothing is pushed) if either fails:
 - privacy: no published text file may name the teacher's other sites (hellsla.github.io, github.com/Hellsla);
   Ruukkilabra must never lead to them (teacher 2026-11-04);
 - links: every relative href/src in the pages and every url() in the stylesheets resolves to a file inside the
@@ -54,10 +54,22 @@ def pages(out):
     return sorted(p for p in out.rglob("*.html") if ".git" not in p.parts and "models" not in p.relative_to(out).parts)
 
 
+# AI training and scraping crawlers are refused; search engines and people keep full access (teacher 2026-11-10)
+AI_CRAWLERS = ("GPTBot", "OAI-SearchBot", "CCBot", "ClaudeBot", "anthropic-ai", "Claude-Web", "Google-Extended",
+               "Applebot-Extended", "PerplexityBot", "Bytespider", "Meta-ExternalAgent", "FacebookBot", "Amazonbot",
+               "cohere-ai", "Diffbot", "Omgilibot", "ImagesiftBot", "Timpibot")
+
+
+def robots(base):
+    ai = "".join(f"User-agent: {b}\n" for b in AI_CRAWLERS)
+    return f"{ai}Disallow: /\n\nUser-agent: *\nAllow: /\n\nSitemap: {base}sitemap.xml\n"
+
+
 def write_extras(out):
     (out / "CNAME").write_text(DOMAIN + "\n")
     (out / ".nojekyll").write_text("")
-    (out / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {BASE}sitemap.xml\n")
+    (out / "robots.txt").write_text(robots(BASE))
+    shutil.copyfile(ROOT.parent / "LICENSE", out / "LICENSE")
     urls = []
     for p in pages(out):
         rel = p.relative_to(out).as_posix()

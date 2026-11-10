@@ -482,7 +482,7 @@ details.sim-box>div{font-size:var(--fs-ui);padding:0 0 .6rem 1.2rem}details.sim-
 
 footer.bottom{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:var(--fs-small);color:var(--ink-2);display:flex;flex-wrap:wrap;align-items:center;gap:.2rem 1.2rem}
 footer.bottom a{display:inline-flex;align-items:center;min-height:44px}
-footer.bottom .copyright{white-space:nowrap}
+footer.bottom .copyright,footer.bottom .rights{white-space:nowrap}
 .crumbs:empty{display:none}
 /* A chapter page's path goes from chapter to chapter (teacher 2026-11-08, build.py chapter_crumbs): its last part is the
    chapter menu (a <details>), Edellinen / Seuraava at the row's right end; "FY3 · Luku 13" over the title then only on paper. */

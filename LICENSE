@@ -1,0 +1,43 @@
+Tekijänoikeus © 2026 Lauri Hellsten. Kaikki oikeudet pidätetään.
+
+Tämän repositorion ja Ruukkilabra-sivuston (https://ruukkilab.fi/) sisältö on
+tekijänoikeuslailla suojattua: oppituntien tekstit, tehtävät ja malliratkaisut,
+kuvat ja kuvaajat, simulaatiot, ohjelmakoodi, tarkistusskriptit ja muistiinpanot.
+
+Saat käyttää sivustoa opiskeluun ja opetukseen sellaisenaan, linkittää siihen ja
+näyttää sitä oppitunnilla. Ilman tekijän kirjallista lupaa et saa kopioida,
+ladata kokonaan, julkaista uudelleen, muokata, myydä tai käyttää sisältöä
+tekoälymallien koulutukseen tai muiden materiaalien pohjana. Tämä koskee myös
+repositorion kloonaamista tai lataamista näihin tarkoituksiin.
+
+Poikkeukset (näihin pätevät niiden omat lisenssit):
+- Kolmansien osapuolten kirjastot ja fontit kansioissa templates/vendor/ ja
+  muissa vendor-kansioissa (esim. KaTeX, p5.js, Abitti-editori, fontit):
+  lisenssit ovat tiedostojen vieressä.
+- Valokuvat ja muut lainatut kuvat (esim. Wikimedia Commons): lisenssi ja
+  tekijä on merkitty kuvan yhteyteen tai kuvaluetteloon.
+- Lauri Hellstenin kurssitiivistelmät FY01FY02_K2026.pdf, FY03_K2026.pdf,
+  FY04_K2026.pdf ja FY07_K2026.pdf: CC BY-SA 4.0.
+
+Lupaa voi kysyä tekijältä.
+
+---
+
+Copyright © 2026 Lauri Hellsten. All rights reserved.
+
+The contents of this repository and of the Ruukkilabra website
+(https://ruukkilab.fi/) are protected by copyright: lesson texts, exercises and
+model solutions, figures and graphs, simulations, program code, check scripts
+and notes.
+
+You may use the website as it is for studying and teaching, link to it and show
+it in class. Without the author's written permission you may not copy, download
+in full, republish, modify, sell or use the content to train AI models or as the
+basis of other materials. This also applies to cloning or downloading the
+repository for these purposes.
+
+Exceptions (their own licences apply): third-party libraries and fonts in vendor
+folders (licences next to the files); photographs and other borrowed images
+(licence and author credited with the image or in the image catalogue); the
+author's course summaries FY01FY02_K2026.pdf, FY03_K2026.pdf, FY04_K2026.pdf
+and FY07_K2026.pdf: CC BY-SA 4.0.
