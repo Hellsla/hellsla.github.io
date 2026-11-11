@@ -139,5 +139,5 @@ Kuvia 137. Asteikko 1–5: F fysiikka, P pedagogiikka, V visuaalinen laatu, T ty
 | [`fy6-koe/fy6-k1-charging`](catalog/FY6.html#fy6-koe-fy6-k1-charging) | FY6 Sovella itsenäisesti; kuvaaja: soveltava tehtävä tai koe | 5 | 4 | 4 | 4 | PIDÄ |  |  | ODOTTAA |
 | [`fy6-koe/fy6-k3-circuits`](catalog/FY6.html#fy6-koe-fy6-k3-circuits) | FY6 Sovella itsenäisesti; kaavio: soveltava tehtävä tai koe | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy6-koe/fy6-k6-setup`](catalog/FY6.html#fy6-koe-fy6-k6-setup) | FY6 Sovella itsenäisesti; kaavio: soveltava tehtävä tai koe | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
-| [`fy6-koe/fy6-k2-graph`](catalog/FY6.html#fy6-koe-fy6-k2-graph) | FY6 Sovella itsenäisesti; kuvaaja: ratkaisu | 5 | 4 | 3 | 4 | KEVYT KORJAUS | "UR ≈ 3,4 V", "UL ≈ 2,6 V" ja "lamppu" ovat ruudukon ja katkoviivojen päällä ilman taustaa. |  | ODOTTAA |
+| [`fy6-koe/fy6-k2-graph`](catalog/FY6.html#fy6-koe-fy6-k2-graph) | FY6 Sovella itsenäisesti; kuvaaja: ratkaisu | 5 | 4 | 3 | 4 | KEVYT KORJAUS | "UR ≈ 3,4 V", "UL ≈ 2,6 V" ja "lamppu" ovat ruudukon ja katkoviivojen päällä ilman taustaa. |  | KEVYT KORJAUS hyväksytty (opettaja 2026-11-11) |
 | [`fy6-koe/fy6-k6-graph`](catalog/FY6.html#fy6-koe-fy6-k6-graph) | FY6 Sovella itsenäisesti; kuvaaja: ratkaisu | 5 | 4 | 4 | 4 | PIDÄ |  |  | ODOTTAA |
