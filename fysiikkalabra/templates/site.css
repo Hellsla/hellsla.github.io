@@ -2179,7 +2179,8 @@ main.home>.resume{margin:0 0 1rem}
   nav.toc.has-now{flex-wrap:wrap;overflow-x:visible;row-gap:0;background-image:linear-gradient(var(--accent),var(--accent));background-repeat:no-repeat;background-position:left bottom;background-size:calc(var(--p,0) * 100%) 3px}
   nav.toc.has-now>.toc-now{order:0;display:inline-flex;align-items:center;gap:.5rem;min-height:44px;min-width:0;flex:0 1 auto;padding:0 .9rem 0 .7rem;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink);font:700 var(--fs-ui) var(--sans);cursor:pointer}
   .toc-now-n{font-variant-numeric:tabular-nums;color:var(--accent-deep)}
-  .toc-now-l{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .toc-now-l{flex:0 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  nav.toc.has-now>.toc-now{max-width:calc(100% - 5.75rem)}   /* a long section name (an investigation's, an exam part's) is cut with an ellipsis; without the limit the button pushed Kuuntele onto a second row and the taller bar covered the heading it had scrolled to (check_layout at 360 px, 2026-11-11) */
   .toc-now::after{content:"";flex:none;width:.45rem;height:.45rem;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(-2px) rotate(45deg)}
   .toc-now[aria-expanded=true]::after{transform:translateY(2px) rotate(-135deg)}
   nav.toc.has-now>.toc-tools{order:1;position:static;margin-right:0;padding-right:0;box-shadow:none;background:none}
