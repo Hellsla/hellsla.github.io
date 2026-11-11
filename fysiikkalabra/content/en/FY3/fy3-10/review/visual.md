@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 72918ee2d2e88fc2
+CONTENT-HASH: 77345b49fdf269d8
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy3-10 sim canvas, settling state: the bar still shows a (noisy) height and the gauge needle moves while the number is hidden; acceptable as the readout says the value is settling, optionally lighten the bar until settled.
-- [Minor] fy3-10 photo — the balloon burner photo sits beside the combined-gas-law paragraph and is only loosely tied to it — optional: place it next to the first mention of the open balloon mouth.
+- [Minor] fy3-10 sim, first moments after load or reset: no capture shows the axis before the first settled average (carried from round 1; judged from source and settled captures). Optional glance at the first second after a reset.
+- [Minor] Carried over: bar height and gauge needle keep moving while the number is hidden during settling; the readout says it is settling, so acceptable.
 
 ## Checked
-- delta review 2026-11-10 (measurement window reset, teacher's FY3 brief): opened en-fy3-10 settling captures (360 and 1280 px; en and fi-easy included in the set): readout 'mittaus tasaantuu…' with KaTeX '0,1 s' and upright unit, wraps cleanly at 360 px, number label above the bar hidden and axis unchanged, no clipping or overlap; settled captures consistent. Decimal comma on canvas is allowed.
-- delta review 2026-11-07 round 2 (follow-up consistency edits): inquiry.json "Etsi virhe" feedback for the pressure and volume rows: no longer calls the pascal the only correct unit; Pa with m³ or kPa with l, $1\,\text{kPa}\cdot\textsf{l} = 1\,\text{J}$, litre now \textsf{l} as elsewhere. Text-only (no capture of these feedbacks); KaTeX and wording checked in source, sentences consistent with the unchanged lesson text.
-- delta re-review 2026-11-07 (ml fix): verified in the inquiry.json diff that the Boyle recall prompt now writes $60\,\text{ml}$ and $30\,\text{ml}$ (thin space, upright unit, matching the feedback); nothing else changed. The earlier Major finding is resolved.
-- delta review 2026-11-07 (teacher's proofread replacement texts): the rewritten "missä"-paragraph, the new displays ($R$, $1\,\text{Pa}\cdot\text{m}^3 = … = 1\,\text{J}$, $1\,\text{kPa}\cdot\textsf{l} = 1\,\text{J}$) and the typeset kPa/mol values in inquiry and exit ticket; opened fy3-10-en-a-390 and -1280 (displays fit at 390 px, decimal separators right; the capture starts just below the $R$ display, which was read from source).
-- batch delta review: opened fy3-10-1280-0, fy3-10-360-0; photo loads, no clipping or horizontal overflow, credit line under the caption, alt text and caption natural English and consistent with the picture and the paragraph, no number with a unit in the new text.
+- Delta round 2: the diff is one numeric field in `inquiry.json` (exp-2 question `tolerance` 0.02 to 0.1). No visible text, figure, formula or layout changed, so there is nothing new to capture. The tolerance is a hidden checking value, not shown to the student.
+- The previous visual PASS (sim captures `fy3-10-sim-390.png` and `fy3-10-sim-1280.png` opened in round 1) is unaffected, because the sim and text are untouched.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

@@ -245,7 +245,7 @@
         "prompt": "The temperature was doubled to $600\\,\\text{K}$. With what number of particles does the pressure stay at $p/p_\\text{ref} = 1.00$?",
         "answer": 50,
         "unit": "",
-        "tolerance": 0.02,
+        "tolerance": 0.1,
         "hints": [
           "Did raising the temperature increase the pressure, and by what factor? Look at the row $N = 100$.",
           "According to experiment 1 the pressure is proportional to the number of particles. How much must the number of particles be changed for the doubled pressure to return to its original value?",
