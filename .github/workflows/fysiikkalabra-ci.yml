@@ -2,9 +2,20 @@
 # tests, check answer positions, carried reviews and the committed site. No AI task repeats these checks.
 # This repository serves GitHub Pages from its root branch (the teacher's other sites). Ruukkilabra itself is published at
 # https://ruukkilab.fi/ by .github/workflows/ruukkilabra-deploy.yml after this workflow has passed on main (teacher 2026-11-04).
-# On a pull request the three browser steps (simulations, inquiry tests, layout at eight widths) test only the pages the
+# On a pull request the three browser checks (simulations, inquiry tests, layout at eight widths) test only the pages the
 # change can alter (scripts/ci_scope.py; teacher 2026-11-01); a change to anything shared runs them in full. Every other
 # check, and the whole run on main, weekly and on a manual run, is full. A newer push to a pull request cancels its older run.
+#
+# Jobs (2026-11-11; the same commands, pages, widths and verdicts as the one job this workflow was until then):
+#   plan                    which pages the browser checks test, and in how many jobs (scripts/ci_scope.py, ci_parallel.py plan)
+#   checks-1, -2, -3        every check that is not one of the three browser checks, in their old order, in three jobs
+#   sims, layout, inquiry   the browser checks: scripts/ci_parallel.py runs the unchanged test_sims.py, check_layout.py
+#                           and test_inquiry.py page by page on every core; a full run has four simulation jobs and
+#                           one layout job for each width
+#   qa                      the required check: passes only when every job above passed and the browser jobs' reports
+#                           show that every planned page was tested exactly once and passed (ci_parallel.py gate)
+# The checks need about 20 core-hours for the whole site. As one job on one core a full run did not fit into the six
+# hours a job may take, and a failing simulation kept every later check from running. Each job fails on its own now.
 name: fysiikkalabra-ci
 on:
   push:
@@ -18,24 +29,40 @@ permissions: { contents: read }
 concurrency:
   group: fysiikkalabra-ci-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+defaults: { run: { working-directory: fysiikkalabra } }
 jobs:
-  qa:
+  plan:
     runs-on: ubuntu-latest
-    defaults: { run: { working-directory: fysiikkalabra } }
+    timeout-minutes: 15
+    outputs:
+      pages: ${{ steps.scope.outputs.pages }}
+      sims: ${{ steps.scope.outputs.sims }}
+      layout: ${{ steps.scope.outputs.layout }}
+      inquiry: ${{ steps.scope.outputs.inquiry }}
     steps:
       - uses: actions/checkout@v4
-        with: { fetch-depth: 0 }   # reviews.py verify re-derives carried reviews from history
+        with: { fetch-depth: 0 }   # ci_scope.py compares with the base branch
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install markdown playwright numpy
+      - name: which pages the browser checks test (a pull request - the pages it can change, or full; scripts/ci_scope.py, teacher 2026-11-01)
+        id: scope
+        run: |
+          if [ "${{ github.event_name }}" = pull_request ]; then pages=$(python scripts/ci_scope.py "origin/${{ github.base_ref }}" 2> /tmp/scope.txt) || { pages=full; echo "scripts/ci_scope.py failed: full run" >> /tmp/scope.txt; }; else pages=full; echo "full run (${{ github.event_name }})" > /tmp/scope.txt; fi
+          echo "pages=$pages" >> "$GITHUB_OUTPUT"
+          python scripts/ci_parallel.py plan --pages "$pages" | tee -a "$GITHUB_OUTPUT"
+          { echo "### Browser checks: ${pages:-no page changed}"; sed 's/^/    /' /tmp/scope.txt; } | tee -a "$GITHUB_STEP_SUMMARY"
+  checks-1:   # the sources, the build and the built pages
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }   # reviews.py verify re-derives carried reviews from history, and the build reads the exercises' reviewed version from it
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - uses: actions/setup-node@v4
         with: { node-version: "22" }
       - run: pip install markdown playwright numpy && playwright install --with-deps chromium
-      - name: which pages the browser steps test (a pull request - the pages it can change, or full; scripts/ci_scope.py, teacher 2026-11-01)
-        id: scope
-        run: |
-          if [ "${{ github.event_name }}" = pull_request ]; then pages=$(python scripts/ci_scope.py "origin/${{ github.base_ref }}" 2> /tmp/scope.txt) || { pages=full; echo "scripts/ci_scope.py failed: full run" >> /tmp/scope.txt; }; else pages=full; echo "full run (${{ github.event_name }})" > /tmp/scope.txt; fi
-          echo "pages=$pages" >> "$GITHUB_OUTPUT"
-          { echo "### Browser steps: ${pages:-no page changed}"; sed 's/^/    /' /tmp/scope.txt; } | tee -a "$GITHUB_STEP_SUMMARY"
       - run: python scripts/lint_lesson.py --all
       - name: every worked example and exercise has a complete model solution (teacher 2026-10-27)
         run: python scripts/check_solutions.py --all
@@ -62,6 +89,8 @@ jobs:
       - name: competency coverage reports are current (docs/coverage/)
         run: python scripts/coverage.py --all --check
       - run: python scripts/build.py --all
+      - name: the browser checks' runner and gate (plan, shards, verdicts; a page not tested, tested twice or failed fails the gate; scripts/ci_parallel.py, 2026-11-11)
+        run: python scripts/test_ci_parallel.py
       - name: built pages are accessible as static HTML (field names, aria references, unique ids, figure text alternatives, button names, page language; teacher 2026-10-30)
         run: python scripts/check_a11y.py site
       - name: a figure shown twice on a page has its own SVG ids (teacher 2026-10-29)
@@ -82,6 +111,18 @@ jobs:
         run: python scripts/kilparobo.py && python scripts/test_kilparobo.py
       - name: LUMA-tutor's pages (five parts, 23 · 75 min, workshop cards and filters, ten templates, nothing stored, print, widths; teacher 2026-11-09)
         run: python scripts/lumatutor.py && python scripts/test_lumatutor.py
+  checks-2:   # the page components in a browser, the review rules, the inquiry engine
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }   # reviews.py verify re-derives carried reviews from history, and the build reads the exercises' reviewed version from it
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - uses: actions/setup-node@v4
+        with: { node-version: "22" }
+      - run: pip install markdown playwright numpy && playwright install --with-deps chromium
+      - run: python scripts/build.py --all
       - name: the solution editor under every exercise (Abitti's Digabi editor, loaded on the first click; copy for L'Math; teacher 2026-11-01)
         run: python scripts/test_writepad.py
       - name: submission and grading trial, FY3-1 (Lataa ratkaisut, Apps Script import and grading view against a mock; teacher 2026-11-05)
@@ -94,6 +135,18 @@ jobs:
       - run: python scripts/test_inquiry.py
       - name: the answer check reads typed numbers and accepts half a unit in the shown last digit (templates/lesson.js part 1, teacher 2026-11-10)
         run: python scripts/test_answer_check.py
+  checks-3:   # carried reviews, the course and language pipelines, answer positions, the committed site, LaTeX
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }   # reviews.py verify re-derives carried reviews from history, and the build reads the exercises' reviewed version from it
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - uses: actions/setup-node@v4
+        with: { node-version: "22" }
+      - run: pip install markdown playwright numpy && playwright install --with-deps chromium
+      - run: python scripts/build.py --all
       - run: python scripts/reviews.py verify
       - name: a temporary FY4 course through the whole pipeline (nothing is published)
         run: python scripts/test_courses.py
@@ -108,23 +161,6 @@ jobs:
       - name: which lessons this pull request touches, and which review each needs
         if: github.event_name == 'pull_request'
         run: python scripts/reviews.py impact "origin/${{ github.base_ref }}" | tee -a "$GITHUB_STEP_SUMMARY"
-      - name: simulations (every page, or the pull request's pages)
-        if: steps.scope.outputs.pages != ''
-        env: { PAGES: "${{ steps.scope.outputs.pages }}" }
-        run: if [ "$PAGES" = full ]; then python scripts/test_sims.py; else python scripts/test_sims.py $PAGES; fi
-      - name: inquiry tests of every lesson with inquiry.json, or of the pull request's pages (gating, locks, reveal, options and feedback as rendered, navigation, 360 px)
-        if: steps.scope.outputs.pages != ''
-        env: { PAGES: "${{ steps.scope.outputs.pages }}" }
-        run: |
-          fail=0
-          for f in content/fi/*/*/inquiry.json; do
-            case "$f" in content/fi/units/*) continue;; esac   # course units (FY12) are checked by units.py check, as FY14's are
-            id=$(basename "$(dirname "$f")")
-            if [ "$PAGES" != full ]; then case " $PAGES " in *" $id "*) ;; *) continue;; esac; fi
-            if python scripts/test_inquiry.py "$id" > "/tmp/inquiry-$id.txt" 2>&1; then tail -1 "/tmp/inquiry-$id.txt" | sed "s/^/$id: /"
-            else fail=1; echo "::error::inquiry tests failed for $id"; grep -E "^FAIL" "/tmp/inquiry-$id.txt" || tail -20 "/tmp/inquiry-$id.txt"; fi
-          done
-          exit $fail
       - name: correct options are spread over the positions in every course (as the pages show them)
         run: python scripts/check_choices.py --all
       - name: committed site/ is exactly a fresh render of the reviewed sources and templates
@@ -133,16 +169,101 @@ jobs:
           if [ -n "$(git status --porcelain site/)" ]; then echo "site/ is not a fresh render of the reviewed sources (run build.py and commit):"; git status --short site/; exit 1; fi
       - name: the copy published at https://ruukkilab.fi/ (site/ at the root) names none of the teacher's other sites and has no broken relative link (scripts/deploy_site.py, teacher 2026-11-04)
         run: python scripts/deploy_site.py /tmp/ruukkilab
-      - name: "every published page at eight widths (640 = 1280 px at 200 % zoom), closed, with hints and solutions open and with everything open; no overflow, overlap, empty column beside an opened card or a figure, cards out of order, over-long lines, small text or controls, or headings under the sticky navigation (NOTES.md §8)"
-        if: steps.scope.outputs.pages != ''
-        env: { PAGES: "${{ steps.scope.outputs.pages }}" }
-        run: |
-          fail=0
-          if [ "$PAGES" = full ]; then only=""; else only="$PAGES"; fi
-          for w in 360 390 640 768 1024 1280 1440 1920; do python scripts/check_layout.py $only --site --width $w > "/tmp/layout-$w.txt" 2>&1 || { fail=1; echo "::error::layout check failed at $w px"; grep -v "^OK" "/tmp/layout-$w.txt"; }; done
-          exit $fail
       - run: |
           for d in content/fi/*/*/; do
             case "$d" in *_gold*) continue;; esac
             python scripts/check_latex.py "$d"
           done
+
+  sims:
+    name: simulations ${{ matrix.shard }} (every page, or the pull request's pages)
+    needs: plan
+    if: needs.plan.outputs.pages != ''
+    strategy: { fail-fast: false, matrix: { shard: "${{ fromJSON(needs.plan.outputs.sims) }}" } }
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }   # the build reads the exercises' reviewed version from history
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - uses: actions/setup-node@v4
+        with: { node-version: "22" }
+      - run: pip install markdown playwright numpy && playwright install --with-deps chromium
+      - run: python scripts/build.py --all
+      - name: simulations (scripts/test_sims.py page by page on every core; scripts/ci_parallel.py)
+        env: { PAGES: "${{ needs.plan.outputs.pages }}" }
+        run: python scripts/ci_parallel.py sims --pages "$PAGES" --shard "${{ matrix.shard }}" --report "${{ runner.temp }}/report/sims-${{ strategy.job-index }}.json"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: { name: "report-sims-${{ strategy.job-index }}", path: "${{ runner.temp }}/report", if-no-files-found: error, retention-days: 14 }
+  inquiry:
+    name: inquiry tests ${{ matrix.shard }} of every lesson with inquiry.json, or of the pull request's pages (gating, locks, reveal, options and feedback as rendered, navigation, 360 px)
+    needs: plan
+    if: needs.plan.outputs.pages != ''
+    strategy: { fail-fast: false, matrix: { shard: "${{ fromJSON(needs.plan.outputs.inquiry) }}" } }
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }   # the build reads the exercises' reviewed version from history
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - uses: actions/setup-node@v4
+        with: { node-version: "22" }
+      - run: pip install markdown playwright numpy && playwright install --with-deps chromium
+      - run: python scripts/build.py --all
+      - name: inquiry tests (scripts/test_inquiry.py <id> lesson by lesson on every core, each worker in its own work tree; scripts/ci_parallel.py)
+        env: { PAGES: "${{ needs.plan.outputs.pages }}" }
+        run: python scripts/ci_parallel.py inquiry --pages "$PAGES" --shard "${{ matrix.shard }}" --report "${{ runner.temp }}/report/inquiry-${{ strategy.job-index }}.json"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: { name: "report-inquiry-${{ strategy.job-index }}", path: "${{ runner.temp }}/report", if-no-files-found: error, retention-days: 14 }
+  layout:
+    name: "layout ${{ matrix.job.name }} px: every published page at eight widths (640 = 1280 px at 200 % zoom), closed, with hints and solutions open and with everything open; no overflow, overlap, empty column beside an opened card or a figure, cards out of order, over-long lines, small text or controls, or headings under the sticky navigation (NOTES.md §8)"
+    needs: plan
+    if: needs.plan.outputs.pages != ''
+    strategy: { fail-fast: false, matrix: { job: "${{ fromJSON(needs.plan.outputs.layout) }}" } }
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4   # the committed site/ is what this check opens (checks-3 fails unless it is a fresh render): no history, no build
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install markdown playwright numpy && playwright install --with-deps chromium
+      - name: layout (scripts/check_layout.py --site page by page on every core; scripts/ci_parallel.py)
+        env: { PAGES: "${{ needs.plan.outputs.pages }}" }
+        run: python scripts/ci_parallel.py layout --widths "${{ matrix.job.widths }}" --pages "$PAGES" --report "${{ runner.temp }}/report/layout-${{ strategy.job-index }}.json"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: { name: "report-layout-${{ strategy.job-index }}", path: "${{ runner.temp }}/report", if-no-files-found: error, retention-days: 14 }
+  qa:   # the required check of a pull request, and the run ruukkilabra-deploy.yml waits for on main
+    needs: [plan, checks-1, checks-2, checks-3, sims, inquiry, layout]
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install markdown
+      - uses: actions/download-artifact@v4
+        with: { pattern: "report-*", path: "${{ runner.temp }}/reports" }
+      - name: every planned page was tested exactly once and passed (scripts/ci_parallel.py gate)
+        env: { PAGES: "${{ needs.plan.outputs.pages }}", PLAN: "${{ needs.plan.result }}" }
+        run: |
+          [ "$PLAN" = success ] || { echo "::error::the plan job did not pass: nothing can be said about the browser checks"; exit 1; }
+          mkdir -p "${{ runner.temp }}/reports"
+          python scripts/ci_parallel.py gate "${{ runner.temp }}/reports" --pages "$PAGES"
+      - name: every job passed (a browser job is skipped only when no page changed)
+        if: always()
+        env: { NEEDS: "${{ toJSON(needs) }}", PAGES: "${{ needs.plan.outputs.pages }}" }
+        run: |
+          python - <<'EOF'
+          import json, os, sys
+          needs, none = json.loads(os.environ["NEEDS"]), os.environ["PAGES"] == ""
+          bad = [f"{k}: {v['result']}" for k, v in needs.items()
+                 if v["result"] != "success" and not (none and k in ("sims", "inquiry", "layout") and v["result"] == "skipped" and needs["plan"]["result"] == "success")]
+          print("\n".join(bad) or "every job passed")
+          sys.exit(1 if bad else 0)
+          EOF
