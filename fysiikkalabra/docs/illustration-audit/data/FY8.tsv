@@ -1,112 +1,112 @@
 fy8-1/hero|5|5|5|5|PIDA||
-fy8-1/ilmio|||||KESKEN|Ei vielä arvioitu.|
-fy8-1/energia|||||KESKEN|Ei vielä arvioitu.|
-fy8-1/kuvaaja|||||KESKEN|Ei vielä arvioitu.|
+fy8-1/ilmio|5|5|5|5|PIDA|
+fy8-1/energia|5|5|5|5|PIDA|Kolme aallonpituutta irrotustyön alla, kohdalla ja yllä.|
+fy8-1/kuvaaja|5|5|5|5|PIDA|Rajataajuudet ja kulmakerroin tarkistettu.|
 fy8-10/hero|5|4|4|4|KEVYT|Pöydän alla valkoinen kaista: lattia puuttuu.|
-fy8-10/massat|||||KESKEN|Ei vielä arvioitu.|
-fy8-10/energia|||||KESKEN|Ei vielä arvioitu.|
-fy8-10/kayra|||||KESKEN|Ei vielä arvioitu.|
-fy8-10/reaktio|||||KESKEN|Ei vielä arvioitu.|
-fy8-10/kayra-points|||||KESKEN|Ei vielä arvioitu.|
+fy8-10/massat|5|5|5|5|PIDA|Massat ja massavaje tarkistettu; katkaistu akseli merkitty.|
+fy8-10/energia|5|5|5|5|PIDA|
+fy8-10/kayra|5|5|4|5|PIDA|
+fy8-10/reaktio|5|5|5|5|PIDA|Massat ja Q = 4,27 MeV tarkistettu.|
+fy8-10/kayra-points|5|4|4|5|PIDA|
 fy8-11/hero|5|5|5|5|PIDA||
-fy8-11/sidosenergia|||||KESKEN|Ei vielä arvioitu.|
-fy8-11/fissio|||||KESKEN|Ei vielä arvioitu.|
-fy8-11/ketju|||||KESKEN|Ei vielä arvioitu.|
-fy8-11/fuusio|||||KESKEN|Ei vielä arvioitu.|
-fy8-11/massat|||||KESKEN|Ei vielä arvioitu.|
-fy8-11/reaktori|||||KESKEN|Ei vielä arvioitu.|
-fy8-11/onkalo|||||KESKEN|Ei vielä arvioitu.|
-fy8-11/sidosenergia-luku|||||KESKEN|Ei vielä arvioitu.|
+fy8-11/sidosenergia|5|5|4|4|KEVYT|Sama käyrä kuin fy8-10/kayra, mutta fuusion nuoli on tässä vihreä ja siellä oranssi.|
+fy8-11/fissio|5|5|5|5|PIDA|
+fy8-11/ketju|5|5|5|5|PIDA|Kolme kerrointa sukupolvittain: ketjureaktion tila laskettavissa palloista.|
+fy8-11/fuusio|5|5|5|5|PIDA|
+fy8-11/massat|5|5|5|5|PIDA|Massat ja Q ≈ 173 MeV tarkistettu.|
+fy8-11/reaktori|5|5|5|5|PIDA|
+fy8-11/onkalo|5|5|5|5|PIDA|
+fy8-11/sidosenergia-luku|5|4|4|5|PIDA|
 fy8-12/hero|5|4|4|4|KEVYT|Pöydän alla valkoinen kaista: lattia puuttuu.|
-fy8-12/energia|||||KESKEN|Ei vielä arvioitu.|
-fy8-12/jaljet|||||KESKEN|Ei vielä arvioitu.|
-fy8-12/lapaisy|||||KESKEN|Ei vielä arvioitu.|
-fy8-12/gm|||||KESKEN|Ei vielä arvioitu.|
-fy8-12/vaimeneminen|||||KESKEN|Ei vielä arvioitu.|
-fy8-12/tuntematon|||||KESKEN|Ei vielä arvioitu.|
+fy8-12/energia|5|5|4|5|PIDA|
+fy8-12/jaljet|5|5|4|5|PIDA|
+fy8-12/lapaisy|5|5|5|5|PIDA|
+fy8-12/gm|5|5|5|5|PIDA|
+fy8-12/vaimeneminen|5|5|5|5|PIDA|Puoliintumispaksuuden kerrannaiset oikein.|
+fy8-12/tuntematon|5|4|4|5|PIDA|
 fy8-13/hero|5|5|5|5|PIDA||
-fy8-13/lahteet|||||KESKEN|Ei vielä arvioitu.|
-fy8-13/painotus|||||KESKEN|Ei vielä arvioitu.|
-fy8-13/etaisyys|||||KESKEN|Ei vielä arvioitu.|
-fy8-13/suoja|||||KESKEN|Ei vielä arvioitu.|
-fy8-13/vaimennus|||||KESKEN|Ei vielä arvioitu.|
+fy8-13/lahteet|5|5|5|5|PIDA|Vastaa STUKin keskimääräistä annosta (yhteensä 5,9 mSv).|
+fy8-13/painotus|5|5|5|5|PIDA|
+fy8-13/etaisyys|5|5|5|5|PIDA|
+fy8-13/suoja|5|5|4|5|PIDA||
+fy8-13/vaimennus|5|4|4|5|PIDA|
 fy8-14/hero|5|5|5|5|PIDA||
-fy8-14/rontgen|||||KESKEN|Ei vielä arvioitu.|
-fy8-14/pet|||||KESKEN|Ei vielä arvioitu.|
-fy8-14/sadehoito|||||KESKEN|Ei vielä arvioitu.|
-fy8-14/mittari|||||KESKEN|Ei vielä arvioitu.|
-fy8-14/kontrasti|||||KESKEN|Ei vielä arvioitu.|
+fy8-14/rontgen|5|5|5|5|PIDA|
+fy8-14/pet|5|5|5|5|PIDA|
+fy8-14/sadehoito|5|5|5|5|PIDA|Keilat risteävät kasvaimessa: annos kertyy sinne.|
+fy8-14/mittari|5|5|4|5|KEVYT|"säätö" on laskurin laatikon reunan päällä.|
+fy8-14/kontrasti|5|5|4|5|PIDA|
 fy8-15/hero|5|5|5|5|PIDA||
-fy8-15/skaalat|||||KESKEN|Ei vielä arvioitu.|
-fy8-15/taulukko|||||KESKEN|Ei vielä arvioitu.|
-fy8-15/hadronit|||||KESKEN|Ei vielä arvioitu.|
-fy8-15/annihilaatio|||||KESKEN|Ei vielä arvioitu.|
-fy8-15/valittaja|||||KESKEN|Ei vielä arvioitu.|
-fy8-15/beeta|||||KESKEN|Ei vielä arvioitu.|
+fy8-15/skaalat|5|5|5|5|PIDA|
+fy8-15/taulukko|5|5|5|5|PIDA|Varaukset ja sukupolvet oikein, ryhmät erotettu värillä ja selitteellä.|
+fy8-15/hadronit|5|5|5|5|PIDA|
+fy8-15/annihilaatio|5|5|5|5|PIDA|
+fy8-15/valittaja|5|5|5|5|PIDA|
+fy8-15/beeta|5|5|5|5|PIDA|
 fy8-16/hero|5|5|5|5|PIDA||
-fy8-16/spektri|||||KESKEN|Ei vielä arvioitu.|
-fy8-16/laajeneminen|||||KESKEN|Ei vielä arvioitu.|
-fy8-16/aikajana|||||KESKEN|Ei vielä arvioitu.|
-fy8-16/alkuaineet|||||KESKEN|Ei vielä arvioitu.|
-fy8-16/kierto|||||KESKEN|Ei vielä arvioitu.|
-fy8-16/koostumus|||||KESKEN|Ei vielä arvioitu.|
-fy8-16/hubble|||||KESKEN|Ei vielä arvioitu.|
-fy8-16/hubble-t|||||KESKEN|Ei vielä arvioitu.|
-fy8-2/hero|5|5|5|5|PIDA||
-fy8-2/spectra|||||KESKEN|Ei vielä arvioitu.|
-fy8-2/fluorescence|||||KESKEN|Ei vielä arvioitu.|
-fy8-2/levels|||||KESKEN|Ei vielä arvioitu.|
-fy8-2/greenhouse|||||KESKEN|Ei vielä arvioitu.|
-fy8-2/lamp-spectrum|||||KESKEN|Ei vielä arvioitu.|
-fy8-2/pick-kaksi|||||KESKEN|Ei vielä arvioitu.|
-fy8-2/pick-emissio|||||KESKEN|Ei vielä arvioitu.|
-fy8-2/pick-kolme|||||KESKEN|Ei vielä arvioitu.|
-fy8-2/pick-kaista|||||KESKEN|Ei vielä arvioitu.|
+fy8-16/spektri|5|5|5|5|PIDA|
+fy8-16/laajeneminen|5|5|5|5|PIDA|Etäisyys ja loittonemisnopeus kasvavat samassa suhteessa: Hubblen laki pituuksina.|
+fy8-16/aikajana|5|5|4|5|PIDA|
+fy8-16/alkuaineet|5|5|4|5|PIDA|
+fy8-16/kierto|5|5|5|5|PIDA|
+fy8-16/koostumus|5|5|4|5|PIDA|
+fy8-16/hubble|5|5|5|5|PIDA|
+fy8-16/hubble-t|5|4|4|5|PIDA|
+fy8-2/hero|5|5|5|4|KEVYT|Ikkunan Aurinko sädekehällä.|
+fy8-2/spectra|5|5|5|5|PIDA|Jatkuva, emissio- ja absorptiospektri kohdakkain samalla asteikolla.|
+fy8-2/fluorescence|5|5|5|5|PIDA|Energiat vastaavat aallonpituuksia (tarkistettu).|
+fy8-2/levels|5|5|4|5|PIDA|
+fy8-2/greenhouse|5|5|4|3|KEVYT|Kolmas piirros kasvihuoneilmiöstä sarjassa (fy2-8/greenhouse, fy3-12/energy-balance, tämä). Tämä on niistä selkein: molekyyli ja uudelleensäteily näkyvät.|
+fy8-2/lamp-spectrum|5|4|4|5|PIDA|
+fy8-2/pick-kaksi|5|4|4|5|PIDA|
+fy8-2/pick-emissio|5|4|4|5|PIDA|
+fy8-2/pick-kolme|5|4|4|5|PIDA|
+fy8-2/pick-kaista|5|4|4|5|PIDA|
 fy8-3/hero|5|5|5|5|PIDA||
-fy8-3/levels|||||KESKEN|Ei vielä arvioitu.|
-fy8-3/absorption|||||KESKEN|Ei vielä arvioitu.|
-fy8-3/bohr|||||KESKEN|Ei vielä arvioitu.|
-fy8-3/spectrum|||||KESKEN|Ei vielä arvioitu.|
-fy8-3/levels-task|||||KESKEN|Ei vielä arvioitu.|
+fy8-3/levels|5|5|5|5|PIDA|
+fy8-3/absorption|5|5|5|5|PIDA|Sopiva, sopimaton ja ionisoiva fotoni rinnakkain.|
+fy8-3/bohr|5|5|4|5|KEVYT|Ratojen säteet suhteessa 1 : 4 : 9 (oikein), mutta sisin rata on niin pieni, että "n = 1" näyttää osoittavan ydintä.|
+fy8-3/spectrum|5|5|4|5|PIDA|
+fy8-3/levels-task|5|4|4|5|PIDA|
 fy8-4/hero|5|5|5|5|PIDA||
-fy8-4/buildup|||||KESKEN|Ei vielä arvioitu.|
-fy8-4/patterns|||||KESKEN|Ei vielä arvioitu.|
-fy8-4/compton|||||KESKEN|Ei vielä arvioitu.|
+fy8-4/buildup|5|5|5|5|PIDA|Osumat kertyvät interferenssikuvioksi: sarjan parhaita kuvia.|
+fy8-4/patterns|5|5|5|5|PIDA|
+fy8-4/compton|5|5|5|5|PIDA|Liikemäärien kolmio sulkeutuu.|
 fy8-5/hero|5|5|5|5|PIDA||
-fy8-5/string|||||KESKEN|Ei vielä arvioitu.|
-fy8-5/nodes|||||KESKEN|Ei vielä arvioitu.|
-fy8-5/cloud|||||KESKEN|Ei vielä arvioitu.|
-fy8-5/levels|||||KESKEN|Ei vielä arvioitu.|
+fy8-5/string|5|5|5|5|PIDA|
+fy8-5/nodes|5|5|5|5|PIDA|Seisovan aallon solmut ja orbitaalien solmupinnat samalla ajatuksella.|
+fy8-5/cloud|5|5|5|5|PIDA|Havainnot kertyvät todennäköisyyspilveksi.|
+fy8-5/levels|5|5|4|5|PIDA|
 fy8-6/hero|5|4|4|4|KEVYT|Pöydän alla valkoinen kaista: lattia puuttuu.|
-fy8-6/vyot|||||KESKEN|Ei vielä arvioitu.|
-fy8-6/spektrit|||||KESKEN|Ei vielä arvioitu.|
-fy8-6/iu|||||KESKEN|Ei vielä arvioitu.|
-fy8-6/sovitus|||||KESKEN|Ei vielä arvioitu.|
-fy8-6/ryhma|||||KESKEN|Ei vielä arvioitu.|
+fy8-6/vyot|5|5|4|5|PIDA|
+fy8-6/spektrit|5|5|4|5|PIDA|
+fy8-6/iu|5|5|5|5|PIDA|
+fy8-6/sovitus|5|5|4|5|PIDA|
+fy8-6/ryhma|5|4|4|5|PIDA|
 fy8-7/hero|5|5|5|5|PIDA||
-fy8-7/processes|||||KESKEN|Ei vielä arvioitu.|
-fy8-7/inversion|||||KESKEN|Ei vielä arvioitu.|
-fy8-7/cavity|||||KESKEN|Ei vielä arvioitu.|
-fy8-7/qdots|||||KESKEN|Ei vielä arvioitu.|
-fy8-7/rate-graph|||||KESKEN|Ei vielä arvioitu.|
-fy8-7/tunnel|||||KESKEN|Ei vielä arvioitu.|
+fy8-7/processes|5|5|5|5|PIDA|Absorptio, spontaani ja stimuloitu emissio samalla rakenteella.|
+fy8-7/inversion|5|5|5|5|PIDA|
+fy8-7/cavity|5|5|5|5|PIDA|
+fy8-7/qdots|5|5|4|5|PIDA|
+fy8-7/rate-graph|5|4|3|4|KEVYT|Pystyakselin nimi N/t ja yksikkö 1/s ovat pieninä pystymurtoina, lukukelvottomia puhelimella. Arvot oikein (tarkistettu).|
+fy8-7/tunnel|5|5|5|5|PIDA|
 fy8-8/hero|5|4|4|4|KEVYT|Yläreunassa valkoinen kaista: katto puuttuu.|
-fy8-8/isotopes|||||KESKEN|Ei vielä arvioitu.|
-fy8-8/chart|||||KESKEN|Ei vielä arvioitu.|
-fy8-8/decays|||||KESKEN|Ei vielä arvioitu.|
-fy8-8/levels|||||KESKEN|Ei vielä arvioitu.|
-fy8-8/shifts|||||KESKEN|Ei vielä arvioitu.|
-fy8-8/spectrum|||||KESKEN|Ei vielä arvioitu.|
+fy8-8/isotopes|5|5|5|5|PIDA|
+fy8-8/chart|5|5|5|5|PIDA|Hajoamistavat oikeilla puolilla pysyvyyskaistaa.|
+fy8-8/decays|5|5|5|5|PIDA|
+fy8-8/levels|5|5|3|5|KEVYT|Tytärytimen nimi (Ni-60) leikkautuu kuva-alan alareunaan, ja emoytimen nimi (Co-60) on kiinni yläreunassa. Energiat oikein.|
+fy8-8/shifts|5|5|4|5|PIDA|Siirtymät (N, Z)-kartalla oikeisiin suuntiin.|
+fy8-8/spectrum|5|5|4|5|PIDA|
 fy8-9/hero|5|4|4|4|KEVYT|Pöydän alla valkoinen kaista: lattia puuttuu.|
-fy8-9/ydin|||||KESKEN|Ei vielä arvioitu.|
-fy8-9/kuvaaja|||||KESKEN|Ei vielä arvioitu.|
-fy8-9/sovitus|||||KESKEN|Ei vielä arvioitu.|
-fy8-9/pa-points|||||KESKEN|Ei vielä arvioitu.|
-fy8-9/aktiivisuus|||||KESKEN|Ei vielä arvioitu.|
-fy8-9/pick-puolittuu|||||KESKEN|Ei vielä arvioitu.|
-fy8-9/pick-suora|||||KESKEN|Ei vielä arvioitu.|
-fy8-9/pick-e|||||KESKEN|Ei vielä arvioitu.|
-fy8-9/pick-kiihtyy|||||KESKEN|Ei vielä arvioitu.|
-fy8-sovella/fy8-s1-levels|||||KESKEN|Ei vielä arvioitu.|
-fy8-sovella/fy8-s3-inv|||||KESKEN|Ei vielä arvioitu.|
-fy8-sovella/fy8-s3-lin|||||KESKEN|Ei vielä arvioitu.|
+fy8-9/ydin|5|5|5|5|PIDA|Sama ydinjoukko kolmella hetkellä; satunnaisuus näkyy luvuissa 52 ja 28.|
+fy8-9/kuvaaja|5|5|5|5|PIDA|
+fy8-9/sovitus|5|5|4|5|PIDA|
+fy8-9/pa-points|5|4|4|5|PIDA|
+fy8-9/aktiivisuus|5|4|4|5|PIDA|
+fy8-9/pick-puolittuu|5|4|4|5|PIDA|
+fy8-9/pick-suora|5|4|4|5|PIDA|
+fy8-9/pick-e|5|4|4|5|PIDA|
+fy8-9/pick-kiihtyy|5|4|4|5|PIDA|
+fy8-sovella/fy8-s1-levels|5|4|4|4|PIDA|
+fy8-sovella/fy8-s3-inv|5|4|4|4|PIDA|
+fy8-sovella/fy8-s3-lin|5|4|4|4|PIDA|
