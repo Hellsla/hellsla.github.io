@@ -307,43 +307,63 @@ Voimalan nimellisteho on suurin teho, jolla se voi toimia. Tuulivoimala ei tuota
 ### Suuruusluokat
 Yhden voimalan teho voi olla tuhatta kertaa suurempi kuin toisen. Siksi suuruusluokkia vertaillaan kymmenen potensseilla. Kuvan vaaka-akselilla jokainen askel pystyviivalta seuraavalle on kymmenkertainen, joten pisteiden välimatka kertoo, montako kertaa kymmenen teho kasvaa.
 
-<svg data-fig="unit-power" viewBox="0 0 600 372" role="img" aria-label="Pistekuvaaja yksittäisten voimalaitosten tehoista logaritmisella asteikolla, jossa jokainen pystyviiva on kymmenkertainen edelliseen: omakotitalon aurinkopaneelit noin 5 kW, tuulivoimala noin 5 MW, suuri vesivoimalaitos noin 100 MW ja Olkiluoto 3 noin 1600 MW. Pisteen paikka kertoo tehon kymmenen potenssin, joten Olkiluoto 3 on noin 320 kertaa tuulivoimalaa suurempi, vaikka sen piste on vain kaksi ja puoli askelta oikeammalla." style="max-width:100%;font-size:24px">
-  <foreignObject x="40" y="3.5" width="330" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$P\ (\text{W})$</div></foreignObject>
-  <line x1="40" y1="44" x2="40" y2="300" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="110" y1="44" x2="110" y2="300" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="180" y1="44" x2="180" y2="300" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="250" y1="44" x2="250" y2="300" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="320" y1="44" x2="320" y2="300" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="390" y1="44" x2="390" y2="300" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="460" y1="44" x2="460" y2="300" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="44" y="41.5" width="300" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{omakotitalon aurinkopaneelit}$</div></foreignObject>
-  <circle cx="89" cy="84" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="103" y="69.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$5\,\text{kW}$</div></foreignObject>
-  <foreignObject x="44" y="105.5" width="300" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{tuulivoimala}$</div></foreignObject>
-  <circle cx="299" cy="148" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="313" y="133.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$5\,\text{MW}$</div></foreignObject>
-  <foreignObject x="44" y="169.5" width="300" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{suuri vesivoimalaitos}$</div></foreignObject>
-  <circle cx="390" cy="212" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="404" y="197.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$100\,\text{MW}$</div></foreignObject>
-  <foreignObject x="44" y="233.5" width="300" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Olkiluoto 3}$</div></foreignObject>
-  <circle cx="474.5" cy="276" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="488.5" y="261.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$1600\,\text{MW}$</div></foreignObject>
-  <line x1="40" y1="300" x2="488" y2="300" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M500,300 L487,306 L487,294 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <line x1="40" y1="42" x2="40" y2="302" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <foreignObject x="10" y="313.5" width="60" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$10^{3}$</div></foreignObject>
-  <line x1="110" y1="300" x2="110" y2="307" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="80" y="313.5" width="60" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$10^{4}$</div></foreignObject>
-  <line x1="180" y1="300" x2="180" y2="307" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="150" y="313.5" width="60" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$10^{5}$</div></foreignObject>
-  <line x1="250" y1="300" x2="250" y2="307" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="220" y="313.5" width="60" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$10^{6}$</div></foreignObject>
-  <line x1="320" y1="300" x2="320" y2="307" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="290" y="313.5" width="60" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$10^{7}$</div></foreignObject>
-  <line x1="390" y1="300" x2="390" y2="307" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="360" y="313.5" width="60" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$10^{8}$</div></foreignObject>
-  <line x1="460" y1="300" x2="460" y2="307" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="430" y="313.5" width="60" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$10^{9}$</div></foreignObject>
+<svg data-fig="unit-power" viewBox="0 0 600 368" role="img" aria-label="Yksittäisten voimalaitosten tehot yhdellä vaakasuoralla logaritmisella akselilla, jossa jokainen väli on kymmenkertainen edelliseen: omakotitalon aurinkopaneelit noin 5 kW, tuulivoimala noin 5 MW, suuri vesivoimalaitos noin 100 MW ja Olkiluoto 3 noin 1600 MW. Jokaisen laitoksen nimi on viiteviivan päässä oman pisteensä yläpuolella. Pisteen paikka kertoo tehon kymmenen potenssin, joten Olkiluoto 3 on noin 320 kertaa tuulivoimalaa suurempi, vaikka sen piste on vain kaksi ja puoli väliä oikeammalla." style="max-width:100%;font-size:24px">
+  <line x1="44" y1="24" x2="44" y2="292" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="122" y1="24" x2="122" y2="292" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="200" y1="24" x2="200" y2="292" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="278" y1="24" x2="278" y2="292" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="356" y1="24" x2="356" y2="292" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="434" y1="24" x2="434" y2="292" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="512" y1="24" x2="512" y2="292" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="528" y1="292" x2="528" y2="68" stroke="#6b7480" stroke-width="1.25" stroke-linecap="butt"/>
+  <path d="M505.92135864716215,64 V48 Q517.9213586471622,28 529.9213586471622,48 V64 Z" fill="#ffffff" stroke="#1f2933" stroke-width="1.75" stroke-linejoin="round"/>
+  <rect x="530" y="50" width="20" height="14" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.75"/>
+  <foreignObject x="196" y="31" width="300" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$\text{Olkiluoto 3}$</div></foreignObject>
+  <foreignObject x="376" y="55" width="120" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px;color:#e8590c">$1600\,\text{MW}$</div></foreignObject>
+  <circle cx="528" cy="292" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <line x1="98.5" y1="292" x2="98.5" y2="122" stroke="#6b7480" stroke-width="1.25" stroke-linecap="butt"/>
+  <path d="M78.51966033820946,106 L88.51966033820946,88 H118.51966033820946 L108.51966033820946,106 Z" fill="#2f74b5" stroke="#1f2933" stroke-width="1.75" stroke-linejoin="round"/>
+  <line x1="88.5" y1="106" x2="98.5" y2="88" stroke="#ffffff" stroke-width="1.2" stroke-linecap="butt"/>
+  <line x1="98.5" y1="106" x2="108.5" y2="88" stroke="#ffffff" stroke-width="1.2" stroke-linecap="butt"/>
+  <line x1="83.5" y1="97" x2="113.5" y2="97" stroke="#ffffff" stroke-width="1.2" stroke-linecap="butt"/>
+  <foreignObject x="126.5" y="85" width="300" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$\text{omakotitalon aurinkopaneelit}$</div></foreignObject>
+  <foreignObject x="126.5" y="109" width="120" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px;color:#e8590c">$5\,\text{kW}$</div></foreignObject>
+  <circle cx="98.5" cy="292" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <line x1="434" y1="292" x2="434" y2="176" stroke="#6b7480" stroke-width="1.25" stroke-linecap="butt"/>
+  <rect x="410" y="150" width="18" height="20" fill="#a9d1f0"/>
+  <path d="M410.0,150 H428.0" fill="none" stroke="#2f74b5" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M428.0,144 H436.0 L446.0,170 H428.0 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M446.0,167 q6,3 12,0" fill="none" stroke="#2f74b5" stroke-width="2" stroke-linejoin="round"/>
+  <foreignObject x="102" y="139" width="300" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$\text{suuri vesivoimalaitos}$</div></foreignObject>
+  <foreignObject x="282" y="163" width="120" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px;color:#e8590c">$100\,\text{MW}$</div></foreignObject>
+  <circle cx="434" cy="292" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <line x1="332.5" y1="292" x2="332.5" y2="230" stroke="#6b7480" stroke-width="1.25" stroke-linecap="butt"/>
+  <path d="M329.51966033820946,226 L331.51966033820946,204 H333.51966033820946 L335.51966033820946,226 Z" fill="#ffffff" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <line x1="332.5" y1="204" x2="332.5" y2="189" stroke="#1f2933" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="332.5" y1="204" x2="319.5" y2="211.5" stroke="#1f2933" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="332.5" y1="204" x2="345.5" y2="211.5" stroke="#1f2933" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="332.5" cy="204" r="2.4" fill="#1f2933"/>
+  <foreignObject x="9.5" y="193" width="300" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$\text{tuulivoimala}$</div></foreignObject>
+  <foreignObject x="189.5" y="217" width="120" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px;color:#e8590c">$5\,\text{MW}$</div></foreignObject>
+  <circle cx="332.5" cy="292" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <line x1="44" y1="292" x2="546" y2="292" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M558,292 L545,298 L545,286 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="44" y1="292" x2="44" y2="299" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="14" y="305" width="60" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px;color:#6b7480">$10^{3}$</div></foreignObject>
+  <line x1="122" y1="292" x2="122" y2="299" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="92" y="305" width="60" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px;color:#6b7480">$10^{4}$</div></foreignObject>
+  <line x1="200" y1="292" x2="200" y2="299" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="170" y="305" width="60" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px;color:#6b7480">$10^{5}$</div></foreignObject>
+  <line x1="278" y1="292" x2="278" y2="299" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="248" y="305" width="60" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px;color:#6b7480">$10^{6}$</div></foreignObject>
+  <line x1="356" y1="292" x2="356" y2="299" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="326" y="305" width="60" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px;color:#6b7480">$10^{7}$</div></foreignObject>
+  <line x1="434" y1="292" x2="434" y2="299" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="404" y="305" width="60" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px;color:#6b7480">$10^{8}$</div></foreignObject>
+  <line x1="512" y1="292" x2="512" y2="299" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="482" y="305" width="60" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px;color:#6b7480">$10^{9}$</div></foreignObject>
+  <foreignObject x="514" y="305" width="80" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$P\ (\text{W})$</div></foreignObject>
+  <foreignObject x="44" y="338" width="330" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px;color:#6b7480">$\text{jokainen väli on 10-kertainen}$</div></foreignObject>
 </svg>
 
 ## Esimerkki

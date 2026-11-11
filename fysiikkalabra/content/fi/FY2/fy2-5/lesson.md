@@ -113,26 +113,49 @@
 ## Ydinajatus
 Tässä luvussa polttoaine tarkoittaa kemiallista polttoainetta: ainetta, jonka kemiallista energiaa vapautetaan polttamalla. Myös ydinvoimalan uraania sanotaan polttoaineeksi, mutta ydinpolttoaine ei pala: sen energia on ydinenergiaa (luku *Energialajit ja energian säilyminen*). Kemiallinen energia on energiaa, joka on varastoituna aineen atomien ja molekyylien väliseen rakenteeseen. Kun polttoaine palaa, rakenne muuttuu ja energiaa vapautuu lämpönä ja valona. Energiaa ei synny tyhjästä, vaan kemiallinen energia muuntuu toiseen muotoon. Sama pätee ruokaan: elimistö "polttaa" ravinnon hitaasti ja vapauttaa siitä energiaa.
 
-<svg data-fig="energia" viewBox="0 0 600 330" role="img" aria-label="Periaatekuva, ei mittakaavassa: kasa polttopuuta sisältää kemiallista energiaa. Palaessaan puu muuttuu liekiksi, jossa kemiallinen energia vapautuu lämpönä ja valona. Vapautuva energia saadaan kertomalla polttoaineen massa lämpöarvolla." style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy25-heat" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient><linearGradient id="fy25-heatv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
-  <rect x="28" y="188" width="150" height="40" rx="20" fill="#d9b26a" stroke="#1f2933" stroke-width="2.5"/>
-  <ellipse cx="48" cy="208" rx="16" ry="16" fill="#f1dfb5" stroke="#a97a35" stroke-width="2"/>
-  <circle cx="48" cy="208" r="6" fill="none" stroke="#a97a35" stroke-width="1.5"/>
-  <rect x="28" y="144" width="150" height="40" rx="20" fill="#d9b26a" stroke="#1f2933" stroke-width="2.5"/>
-  <ellipse cx="48" cy="164" rx="16" ry="16" fill="#f1dfb5" stroke="#a97a35" stroke-width="2"/>
-  <circle cx="48" cy="164" r="6" fill="none" stroke="#a97a35" stroke-width="1.5"/>
-  <rect x="28" y="100" width="150" height="40" rx="20" fill="#d9b26a" stroke="#1f2933" stroke-width="2.5"/>
-  <ellipse cx="48" cy="120" rx="16" ry="16" fill="#f1dfb5" stroke="#a97a35" stroke-width="2"/>
-  <circle cx="48" cy="120" r="6" fill="none" stroke="#a97a35" stroke-width="1.5"/>
-  <foreignObject x="8" y="247.5" width="190" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kemiallinen}$</div></foreignObject>
-  <foreignObject x="8" y="277.5" width="190" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{energia}$</div></foreignObject>
-  <path d="M214,201 L338,201 L338,213 L372,190 L338,167 L338,179 L214,179 Z" fill="url(#fy25-heat)" stroke-linejoin="round"/>
-  <foreignObject x="208" y="121.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{palaminen}$</div></foreignObject>
-  <foreignObject x="238" y="229.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$E = Hm$</div></foreignObject>
-  <path d="M484,102 C497.5,141 529,173.5 529,206 C529,238 439,238 439,206 C439,173.5 475,147.5 484,102 Z" fill="#e8590c" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M484,167 C493,190 506.5,203 506.5,222 C506.5,232 461.5,232 461.5,222 C461.5,203 475,190 484,167 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <rect x="420" y="238" width="128" height="10" rx="3" fill="#1f2933"/>
-  <foreignObject x="384" y="261.5" width="200" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{lämpö ja valo}$</div></foreignObject>
+<svg data-fig="energia" viewBox="0 0 600 330" role="img" aria-label="Vertailukuva, energiat mittakaavassa: kilogramma ilmakuivaa polttopuuta ja kilogramma bensiiniä. Kummankin vieressä on palamisessa vapautuva energia vaakapalkkina samalla asteikolla: polttopuusta 15 megajoulea, bensiinistä 43 megajoulea. Sama massa, eri energia: ero on polttoaineen lämpöarvossa. Vapautuva energia saadaan kertomalla polttoaineen massa lämpöarvolla." style="max-width:100%;font-size:24px">
+  <foreignObject x="6" y="13" width="180" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px;color:#6b7480">$\text{sama massa}$</div></foreignObject>
+  <foreignObject x="268" y="13" width="330" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px;color:#6b7480">$\text{palaessa vapautuva energia}$</div></foreignObject>
+  <line x1="268" y1="50" x2="268" y2="262" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="248" y="266" width="40" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#6b7480">$0$</div></foreignObject>
+  <line x1="337" y1="50" x2="337" y2="262" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="317" y="266" width="40" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#6b7480">$10$</div></foreignObject>
+  <line x1="406" y1="50" x2="406" y2="262" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="386" y="266" width="40" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#6b7480">$20$</div></foreignObject>
+  <line x1="475" y1="50" x2="475" y2="262" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="455" y="266" width="40" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#6b7480">$30$</div></foreignObject>
+  <line x1="544" y1="50" x2="544" y2="262" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="524" y="266" width="40" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#6b7480">$40$</div></foreignObject>
+  <foreignObject x="474.5" y="294" width="90" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:20px;color:#6b7480">$E\ (\text{MJ})$</div></foreignObject>
+  <ellipse cx="32" cy="118" rx="6" ry="14" fill="#e9c98a" stroke="#1f2933" stroke-width="1.75"/>
+  <rect x="32" y="104" width="44" height="28" fill="#ffffff" stroke="#1f2933" stroke-width="1.75"/>
+  <rect x="40" y="104" width="9" height="3" fill="#1f2933"/>
+  <rect x="58" y="118" width="9" height="3" fill="#1f2933"/>
+  <ellipse cx="76" cy="118" rx="6" ry="14" fill="#f1dfb5" stroke="#1f2933" stroke-width="1.75"/>
+  <ellipse cx="80" cy="118" rx="6" ry="14" fill="#e9c98a" stroke="#1f2933" stroke-width="1.75"/>
+  <rect x="80" y="104" width="44" height="28" fill="#ffffff" stroke="#1f2933" stroke-width="1.75"/>
+  <rect x="88" y="104" width="9" height="3" fill="#1f2933"/>
+  <rect x="106" y="118" width="9" height="3" fill="#1f2933"/>
+  <ellipse cx="124" cy="118" rx="6" ry="14" fill="#f1dfb5" stroke="#1f2933" stroke-width="1.75"/>
+  <ellipse cx="56" cy="88" rx="6" ry="14" fill="#e9c98a" stroke="#1f2933" stroke-width="1.75"/>
+  <rect x="56" y="74" width="44" height="28" fill="#ffffff" stroke="#1f2933" stroke-width="1.75"/>
+  <rect x="64" y="74" width="9" height="3" fill="#1f2933"/>
+  <rect x="82" y="88" width="9" height="3" fill="#1f2933"/>
+  <ellipse cx="100" cy="88" rx="6" ry="14" fill="#f1dfb5" stroke="#1f2933" stroke-width="1.75"/>
+  <foreignObject x="140" y="83" width="110" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$\text{polttopuu}$</div></foreignObject>
+  <foreignObject x="140" y="109" width="110" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$m = 1\,\text{kg}$</div></foreignObject>
+  <rect x="268" y="86" width="103.5" height="44" rx="3" fill="#ffc078" stroke="#e8590c" stroke-width="2"/>
+  <foreignObject x="383.5" y="93.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$15\,\text{MJ}$</div></foreignObject>
+  <path d="M44,238 V190 L58,176 H112 V238 Z" fill="#f2a69c" stroke="#1f2933" stroke-width="1.75" stroke-linejoin="round"/>
+  <rect x="74" y="179" width="28" height="8" rx="3" fill="#1f2933"/>
+  <path d="M49,190 L37,168 L45,164 L56,184" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M56,200 L100,228 M100,200 L56,228" fill="none" stroke="#c92a2a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+  <foreignObject x="140" y="183" width="110" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$\text{bensiini}$</div></foreignObject>
+  <foreignObject x="140" y="209" width="110" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$m = 1\,\text{kg}$</div></foreignObject>
+  <rect x="268" y="186" width="296.5" height="44" rx="3" fill="#ffc078" stroke="#e8590c" stroke-width="2"/>
+  <foreignObject x="452.5" y="193.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#e8590c">$43\,\text{MJ}$</div></foreignObject>
+  <line x1="268" y1="48" x2="268" y2="264" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="41" y="291.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$E = Hm$</div></foreignObject>
 </svg>
 
 Eri polttoaineet sisältävät massaansa nähden eri määrän kemiallista energiaa. Suure, joka kertoo tämän, on lämpöarvo $H$. Se on polttoaineen palaessa vapautuva energia yhtä kilogrammaa kohti, ja sen yksikkö on esimerkiksi $\text{MJ/kg}$. Bensiinin lämpöarvo on noin $43\,\text{MJ/kg}$ eli yhdestä kilogrammasta vapautuu noin $43\,\text{MJ}$ (noin $43 \cdot 10^{6}\,\text{J}$). Ilmakuivan polttopuun (kosteus $20\text{–}25\,\%$) lämpöarvo on vain noin $15\,\text{MJ/kg}$, joten saman energian saamiseksi puuta tarvitaan lähes kolminkertainen massa.

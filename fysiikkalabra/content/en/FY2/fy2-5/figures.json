@@ -17,5 +17,8 @@
  "Periaatekuva ravintoarvomerkinnästä, esimerkki eikä todellinen tuote: pakkauksessa lukee energia 2200 kJ sadassa grammassa. Kun energia muutetaan megajouleiksi ja massa kilogrammoiksi, saadaan ruoan energiasisältö 22 MJ/kg.": "Schematic illustration of a nutrition label, an example and not a real product: the package says energy 2200 kJ per hundred grams. When the energy is converted to megajoules and the mass to kilograms, you get the energy content of the food, 22 MJ/kg.",
  "Ravintoarvo": "Nutritional value",
  "sadassa grammassa": "per 100 g",
- "esimerkki": "example"
+ "esimerkki": "example",
+ "Vertailukuva, energiat mittakaavassa: kilogramma ilmakuivaa polttopuuta ja kilogramma bensiiniä. Kummankin vieressä on palamisessa vapautuva energia vaakapalkkina samalla asteikolla: polttopuusta 15 megajoulea, bensiinistä 43 megajoulea. Sama massa, eri energia: ero on polttoaineen lämpöarvossa. Vapautuva energia saadaan kertomalla polttoaineen massa lämpöarvolla.": "Comparison, energies to scale: a kilogram of air-dry firewood and a kilogram of petrol. Beside each, the energy released in burning is a horizontal bar on the same scale: 15 megajoules from the firewood, 43 megajoules from the petrol. The same mass, a different energy: the difference is the fuel's heating value. The energy released is the mass of the fuel times its heating value.",
+ "sama massa": "the same mass",
+ "palaessa vapautuva energia": "energy released in burning"
 }

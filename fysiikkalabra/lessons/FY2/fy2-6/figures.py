@@ -112,27 +112,53 @@ def fi_bars():
 
 
 def unit_power():
-    f = Fig("fy26-up", 372, "Pistekuvaaja yksittäisten voimalaitosten tehoista logaritmisella asteikolla, jossa jokainen pystyviiva on "
+    """Four power plants as points on one horizontal logarithmic axis (like fy2-2/tikapuut): each name with its small
+    picture sits at the end of a leader from its own point, so name, value and place read as one thing."""
+    f = Fig("fy26-up", 368, "Yksittäisten voimalaitosten tehot yhdellä vaakasuoralla logaritmisella akselilla, jossa jokainen väli on "
             "kymmenkertainen edelliseen: omakotitalon aurinkopaneelit noin 5 kW, tuulivoimala noin 5 MW, suuri vesivoimalaitos noin "
-            "100 MW ja Olkiluoto 3 noin 1600 MW. Pisteen paikka kertoo tehon kymmenen potenssin, joten Olkiluoto 3 on noin 320 kertaa "
-            "tuulivoimalaa suurempi, vaikka sen piste on vain kaksi ja puoli askelta oikeammalla.")
-    x0, per = 40, 70                    # one decade = 70 units, the axis starts at 10^3 W
-    f.tex(x0, 18, r"P\ (\text{W})", "start", size=24, w=330)
+            "100 MW ja Olkiluoto 3 noin 1600 MW. Jokaisen laitoksen nimi on viiteviivan päässä oman pisteensä yläpuolella. Pisteen "
+            "paikka kertoo tehon kymmenen potenssin, joten Olkiluoto 3 on noin 320 kertaa tuulivoimalaa suurempi, vaikka sen piste "
+            "on vain kaksi ja puoli väliä oikeammalla.")
+    x0, per, ya = 44, 78, 292           # one decade = 78 units, the axis starts at 10^3 W
+    X = lambda p: x0 + (math.log10(p) - 3) * per
+    for k in range(0, 7): f.line(x0 + k * per, 24, x0 + k * per, ya, RULE_LIGHT, 1.5)
+
+    def panel(x, y):
+        f.path(f"M{x},{y + 18} L{x + 10},{y} H{x + 40} L{x + 30},{y + 18} Z", WATER, INK, 1.75)
+        for d in (10, 20): f.line(x + d, y + 18, x + d + 10, y, WHITE, 1.2)
+        f.line(x + 5, y + 9, x + 35, y + 9, WHITE, 1.2)
+    def turbine(x, y):
+        f.path(f"M{x + 12},{y + 30} L{x + 14},{y + 8} H{x + 16} L{x + 18},{y + 30} Z", WHITE, INK, 1.5)
+        for a in (90, 210, 330):
+            f.line(x + 15, y + 8, x + 15 + 15 * math.cos(math.radians(a)), y + 8 - 15 * math.sin(math.radians(a)), INK, 2.2, cap="round")
+        f.circle(x + 15, y + 8, 2.4, INK)
+    def dam(x, y):
+        f.rect(x, y + 8, 18, 20, WATER_LIGHT, None); f.path(f"M{x},{y + 8} H{x + 18}", stroke=WATER, w=2)
+        f.path(f"M{x + 18},{y + 2} H{x + 26} L{x + 36},{y + 28} H{x + 18} Z", ALUMINIUM, INK, 1.75)
+        f.path(f"M{x + 36},{y + 25} q6,3 12,0", stroke=WATER, w=2)
+    def reactor(x, y):
+        f.path(f"M{x + 2},{y + 30} V{y + 14} Q{x + 14},{y - 6} {x + 26},{y + 14} V{y + 30} Z", WHITE, INK, 1.75)
+        f.rect(x + 26, y + 16, 20, 14, ALUMINIUM, INK, 1.75)
+
+    # name, power, value label, the row of the label, its picture and the picture's width, text on the left or right
+    rows = [("Olkiluoto 3", 1.6e9, "1600\\,\\text{MW}", 52, reactor, 48, "end"),
+            ("omakotitalon aurinkopaneelit", 5e3, "5\\,\\text{kW}", 106, panel, 40, "start"),
+            ("suuri vesivoimalaitos", 1e8, "100\\,\\text{MW}", 160, dam, 48, "end"),
+            ("tuulivoimala", 5e6, "5\\,\\text{MW}", 214, turbine, 30, "end")]
+    for name, p, lab, ly, icon, iw, side in rows:
+        x = X(p)
+        f.line(x, ya, x, ly + 16, MUTED, 1.25)
+        icon(x - iw / 2, ly - 18)
+        tx = x + iw / 2 + 8 if side == "start" else x - iw / 2 - 8
+        f.tex(tx, ly - 8, r"\text{" + name + "}", side, size=22, w=300)
+        f.tex(tx, ly + 16, lab, side, HEAT, size=22, w=120)
+        f.circle(x, ya, 6.5, HEAT, WHITE, 2)
+    f.arrow(x0, ya, x0 + 6 * per + 46, ya, INK, 2.5, 13)
     for k in range(0, 7):
-        f.line(x0 + k * per, 44, x0 + k * per, 300, RULE_LIGHT, 1.5)
-    rows = [("omakotitalon aurinkopaneelit", 5e3, "5\\,\\text{kW}"), ("tuulivoimala", 5e6, "5\\,\\text{MW}"),
-            ("suuri vesivoimalaitos", 1e8, "100\\,\\text{MW}"), ("Olkiluoto 3", 1.6e9, "1600\\,\\text{MW}")]
-    for i, (name, p, lab) in enumerate(rows):
-        y = 44 + 64 * i
-        x = x0 + (math.log10(p) - 3) * per
-        f.tex(x0 + 4, y + 12, r"\text{" + name + "}", "start", size=24, w=300)
-        f.circle(x, y + 40, 6.5, HEAT, WHITE, 2)
-        f.tex(x + 14, y + 40, lab, "start", size=24, w=110)
-    f.arrow(x0, 300, x0 + 6 * per + 40, 300, INK, 2.5, 13)
-    f.line(x0, 42, x0, 302, INK, 2.5)
-    for k in range(0, 7):
-        if k: f.line(x0 + k * per, 300, x0 + k * per, 307, INK, 2)
-        f.tex(x0 + k * per, 328, "10^{" + str(3 + k) + "}", "middle", MUTED, size=24, w=60)
+        f.line(x0 + k * per, ya, x0 + k * per, ya + 7, INK, 2)
+        f.tex(x0 + k * per, ya + 26, "10^{" + str(3 + k) + "}", "middle", MUTED, size=22, w=60)
+    f.tex(x0 + 6 * per + 82, ya + 26, r"P\ (\text{W})", "end", size=22, w=80)
+    f.tex(x0, ya + 58, r"\text{jokainen väli on 10-kertainen}", "start", MUTED, size=20, w=330)
     return f.svg()
 
 

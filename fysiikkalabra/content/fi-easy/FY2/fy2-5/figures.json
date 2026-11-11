@@ -17,5 +17,6 @@
  "Periaatekuva ravintoarvomerkinnästä, esimerkki eikä todellinen tuote: pakkauksessa lukee energia 2200 kJ sadassa grammassa. Kun energia muutetaan megajouleiksi ja massa kilogrammoiksi, saadaan ruoan energiasisältö 22 MJ/kg.": "Periaatekuva ravintoarvomerkinnästä. Se on esimerkki eikä oikea tuote. Pakkauksessa lukee energia 2200 kJ sadassa grammassa. Muuta energia megajouleiksi ja massa kilogrammoiksi. Silloin saadaan ruoan energiasisältö 22 MJ/kg.",
  "Ravintoarvo": "Ravintoarvo",
  "sadassa grammassa": "sadassa grammassa",
- "esimerkki": "esimerkki"
+ "esimerkki": "esimerkki",
+ "Vertailukuva, energiat mittakaavassa: kilogramma ilmakuivaa polttopuuta ja kilogramma bensiiniä. Kummankin vieressä on palamisessa vapautuva energia vaakapalkkina samalla asteikolla: polttopuusta 15 megajoulea, bensiinistä 43 megajoulea. Sama massa, eri energia: ero on polttoaineen lämpöarvossa. Vapautuva energia saadaan kertomalla polttoaineen massa lämpöarvolla.": "Vertailukuva. Energiat ovat mittakaavassa. Kuvassa on kilogramma polttopuuta ja kilogramma bensiiniä. Kummankin vieressä on palkki. Palkki näyttää, kuinka paljon energiaa vapautuu, kun aine palaa: polttopuusta 15 megajoulea ja bensiinistä 43 megajoulea. Massa on sama, mutta energia on eri. Ero johtuu polttoaineen lämpöarvosta. Vapautuva energia on massa kertaa lämpöarvo."
 }
