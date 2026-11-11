@@ -739,11 +739,12 @@ SA_LEVELS = ("d", "c", "b", "a", "x")   # reddish on the left, dark green on the
 
 
 def sa_fieldset(chapter, sid, label, md_label, legend):
-    """One self-assessment row of Tarkista osaamisesi (teacher 2026-11-06): the five levels as radio buttons, the
-    chosen level's description under them (inquiry.js part 8). sid: the item's id in the submission file
+    """One self-assessment row of Tarkista osaamisesi (teacher 2026-11-06): the five levels as radio buttons, each
+    with its short name in view (design audit 2026-11-10: a colour alone told a touch-screen reader nothing before the
+    choice), the chosen level's full description under them (inquiry.js part 8). sid: the item's id in the submission file
     (an activity id, or "tavoite-<n>"); label: the item's plain text for the teacher's grading view."""
     opts = "".join(f'<label class="sa-opt" data-level="{v}" title="{esc(T("inquiry.sa_" + v))}"><input type="radio" name="sa-{esc(sid)}" value="{v}">'
-                   f'<span class="sa-sw" aria-hidden="true">{T("inquiry.sa_x_short") if v == "x" else ""}</span><span class="sa-text">{T("inquiry.sa_" + v)}</span></label>' for v in SA_LEVELS)
+                   f'<span class="sa-sw" aria-hidden="true">{T("inquiry.sa_" + v + "_short")}</span><span class="sa-text">{T("inquiry.sa_" + v)}</span></label>' for v in SA_LEVELS)
     return (f'<fieldset class="sa-rate" data-chapter="{esc(chapter)}" data-sa="{esc(sid)}" data-label="{esc(label)}">'
             f'<legend>{md_label if md_label else legend}</legend><div class="sa-opts">{opts}</div><p class="sa-desc" aria-live="polite"></p></fieldset>')
 
@@ -761,7 +762,7 @@ def self_statements(chapter, lang):
 
 
 def sa_goals_html(chapter, inquiry, md, lang):
-    """The start of Itsearvio (teacher 2026-11-06: goals first, then the tasks): the chapter's goals as statements ("Opin erottamaan painon ja massan"), or the
+    """The end of Testaa ja arvioi (teacher 2026-11-10: the tasks first, then this card; its start until then): the chapter's goals as statements ("Opin erottamaan painon ja massan"), or the
     chapter's own statements of what the tasks did not measure (inquiry.json "self_extra"), on the same scale."""
     extra = inquiry.get("self_extra") or self_statements(chapter, lang)
     items = [(f"tavoite-{i + 1}", x) for i, x in enumerate(extra)] if extra else [(f"tavoite-{i + 1}", T("inquiry.sa_goal_prefix") + " " + x) for i, x in enumerate(inquiry.get("learn") or [])]
@@ -849,7 +850,12 @@ def render(folder, inquiry, parts, md):
             content = content.replace("<output aria-live=\"polite\"></output></fieldset>", f'<output aria-live="polite"></output>{hint}</fieldset>') if t == "choice" else content[:-len("</div>")] + hint + "</div>"
         hints = hints_html([md(mathlayout.display_chains(h)) for h in a.get("hints", [])]) if t not in ("numeric",) else ""
         sa = ""
-        if parts.get("selfassess") and a.get("stage") == "tarkista" and t in ("choice", "numeric", "explain", "exit"):   # every task of Tarkista osaamisesi (teacher 2026-11-06)
+        # the open tasks of Testaa ja arvioi only (teacher 2026-11-10): the reflection (exit) and a written explanation, which
+        # the page cannot judge. A choice or a number is checked by the page, which says whether it was right, so a rating
+        # row under it asked the same thing twice (every task had one from 2026-11-06). A level given earlier under such a
+        # task stays in the browser's record (ruukkilabra:itsearvio:<chapter>) and in the work file, untouched; it is
+        # only no longer shown. The submission and the grading view have always carried the goals' levels only.
+        if parts.get("selfassess") and a.get("stage") == "tarkista" and t in ("explain", "exit"):
             sa = sa_fieldset(lid, aid, plain(_h.unescape(shown.get(aid) or "") or a.get("title") or exit_title()), "", T("inquiry.sa_legend"))   # one plain question (teacher 2026-11-06)
         hints += sa
         if a.get("optional") or a.get("fold") or t == "reflect":   # a closed box, named, that a student may open or leave; "fold": a
@@ -890,8 +896,8 @@ def render(folder, inquiry, parts, md):
             inner = (flow(items[:si]) + f'<div class="lab"><div class="lab-side">{act(items[si])}</div>'
                      f'<div class="lab-main">{flow(items[si + 1:])}{more}</div></div>')
         else: inner = flow(items) + more
-        if sid == "tarkista" and parts.get("selfassess"):   # the goals first, then the tasks with their own ratings (teacher 2026-11-06 evening)
-            inner = sa_goals_html(lid, inquiry, md, courses.lang_of(folder)) + inner   # no separate key: the chosen level's text shows under the scale (teacher 2026-11-06)
+        if sid == "tarkista" and parts.get("selfassess"):   # Testaa ja arvioi (teacher 2026-11-10): the tasks first, then the goals' self-assessment, so the student assesses with the tasks' feedback in hand (the goals first until then, 2026-11-06)
+            inner = inner + sa_goals_html(lid, inquiry, md, courses.lang_of(folder))   # no separate key: the chosen level's text shows under the scale (teacher 2026-11-06)
         if sid == cards_at: inner += parts["cards"]       # the chapter's concept cards close Esimerkit (teacher 2026-11-05)
         if sid == "ennusta":                           # closed at first; reopened later, the answers are still there
             k = sum(1 for a in items if a["type"] == "choice")

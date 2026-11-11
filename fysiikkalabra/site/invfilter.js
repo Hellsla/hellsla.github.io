@@ -23,10 +23,13 @@
         && (!picked || picked.has(li));
       li.hidden = !ok; shown += ok;
     }
-    // a bank in topic sections (FY10, scripts/cardgrid.py): each topic's label goes on its first card still shown
+    // a bank in topic sections (FY10, scripts/cardgrid.py theme_row; teacher 2026-11-10): each topic is a row of its own
+    // over its cards; a topic with no card shown is hidden with its row, and the row's count follows what is shown
     for (const lab of labels) {
-      const first = items.find((li) => !li.hidden && li.dataset.topic === lab.dataset.topicLabel);
-      if (first) first.prepend(lab); else lab.remove();
+      const n = items.filter((li) => !li.hidden && li.dataset.topic === lab.dataset.topicLabel).length;
+      lab.hidden = n === 0;
+      const c = lab.querySelector('[data-topic-count]');
+      if (c) c.textContent = (n === 1 ? c.dataset.one : c.dataset.other).replace('{{n}}', n);
     }
     none.hidden = shown > 0;
     count.textContent = count.dataset.template.replace('{shown}', shown).replace('{total}', items.length);

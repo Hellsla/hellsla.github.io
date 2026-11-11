@@ -58,6 +58,32 @@
       m[d.id] = r; localStorage.setItem(CHECKED, JSON.stringify(m));
     } catch (err) { /* no storage here */ }
   });
+  // Where the exercises stand (teacher 2026-11-10, work queue E "opiskelijan etenemisen selkeys"): Tehtävät opens with
+  // "Ydintehtävät 2/4 tehty" and each level's heading says how many of its tasks are done, so the 21 tasks behind three
+  // closed levels show their state before a level is opened. A task counts as on the module page (tehty.js): every
+  // Tarkista and Vastaa of it checked once (ruukkilabra:tarkistettu, above), or a solution saved in its editor
+  // (ruukkilabra:ratkaistu, padstore.js). Read only; nothing new is stored. A chapter with assigned tasks keeps its own
+  // line "3/5 annettua tehtävää tehty" (tehty.js) and gets only the levels' counts.
+  (() => {
+    const box = document.querySelector('#exercises .act-exercises'); if (!box) return;
+    const levels = [...box.querySelectorAll('details.level')]; if (!levels.length) return;
+    const map = (k) => { try { return JSON.parse(localStorage.getItem(k) || '{}') || {}; } catch (e) { return {}; } };
+    const core = [...box.querySelectorAll('li.core[id]')], assigned = !!box.querySelector('li.assigned');
+    let line = null;
+    if (core.length && !assigned) { line = document.createElement('p'); line.className = 'ex-progress'; line.setAttribute('aria-live', 'polite'); box.prepend(line); }
+    const marks = levels.map((d) => { const m = document.createElement('span'); m.className = 'level-done'; m.hidden = true; d.querySelector('summary').append(' ', m); return m; });
+    const draw = () => {
+      const checked = map(CHECKED), saved = map('ruukkilabra:ratkaistu');
+      const done = (li) => !!(checked[li.id] && checked[li.id].done) || typeof saved[li.id] === 'string';
+      if (line) line.textContent = msg('ex_core_done', { n: core.filter(done).length, total: core.length });
+      levels.forEach((d, k) => { const all = [...d.querySelectorAll('ol > li[id]')], n = all.filter(done).length;
+        marks[k].hidden = n === 0; marks[k].textContent = msg('ex_level_done', { n, total: all.length }); marks[k].classList.toggle('is-all', n === all.length && n > 0); });
+    };
+    draw();
+    document.addEventListener('fl:attempt', () => setTimeout(draw, 0));
+    document.addEventListener('fl:pad-change', () => setTimeout(draw, 0));
+    window.addEventListener('storage', draw);
+  })();
   // Accepted (teacher 2026-11-03, rounding half a unit 2026-11-10): within 2 % of the model answer or half a unit in
   // its shown last significant digit (data-step is one unit), whichever is larger, or the task's own wider tolerance; 2–5 % away is "Lähellä", not a rejection.
   document.querySelectorAll('form.check').forEach((form) => {
@@ -135,7 +161,40 @@
     const links = [...toc.querySelectorAll('a[href^="#"]')];
     const pairs = links.map((a) => [a, document.getElementById(decodeURIComponent(a.getAttribute('href').slice(1)))]).filter((p) => p[1]);
     const targets = pairs.map((p) => p[1]);
-    let pinned = null, reading = null, current = null;
+    let pinned = null, reading = null, current = null, onMark = null;
+    // The bar on a phone (design audit 2026-11-10, step 2 of docs/audits/2026-11-10-vaiheiden-kayttoliittyma.md): under
+    // 700 px only three of the seven chips fitted, with no sign that the bar scrolled. There the bar is now one button,
+    // "3/7 Tutki", that opens the whole list with its ticks under the bar (site.css nav.toc.has-now); the thin line
+    // under the bar is the share of done stages (--p). From 700 px the chips show as before. Without JavaScript the
+    // bar stays the list of links that scrolls sideways.
+    let now = null;
+    if (pairs.length >= 3) {
+      now = document.createElement('button'); now.type = 'button'; now.className = 'toc-now'; now.setAttribute('aria-expanded', 'false');
+      now.innerHTML = '<span class="visually-hidden"></span><span class="toc-now-n"></span><span class="toc-now-l"></span>';
+      now.firstChild.textContent = msg('toc_stage') + ' ';
+      toc.insertBefore(now, toc.firstChild); toc.classList.add('has-now');
+      const open = (on) => { toc.classList.toggle('is-open', on); now.setAttribute('aria-expanded', String(on)); };
+      now.addEventListener('click', () => open(!toc.classList.contains('is-open')));
+      toc.addEventListener('click', (e) => { if (e.target.closest('a[href^="#"]')) open(false); });
+      document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && toc.classList.contains('is-open')) { open(false); now.focus(); } });
+      document.addEventListener('click', (e) => { if (!toc.contains(e.target)) open(false); });
+    }
+    const showNow = (a) => {
+      if (!now || !a) return;
+      const k = pairs.findIndex((p) => p[0] === a);
+      now.querySelector('.toc-now-n').textContent = (k + 1) + '/' + pairs.length;
+      now.querySelector('.toc-now-l').textContent = ((a.querySelector('.toc-label') || a).textContent || '').replace(/\s*\(.*\)\s*$/, '').trim();
+    };
+    // Seuraavaksi: at the end of every part of the page that has a later one, a link to the next (a <nav>, so the
+    // read-aloud skips it). The page is long, and this is where the reader decides to go on.
+    pairs.forEach(([, t], k) => {
+      const nx = pairs[k + 1]; if (!nx || !t.matches('section')) return;
+      const row = document.createElement('nav'); row.className = 'next-stage'; row.setAttribute('aria-label', msg('next_stage'));
+      const a = document.createElement('a'); a.href = '#' + nx[1].id;
+      const lab = document.createElement('span'); lab.className = 'next-stage-l'; lab.textContent = msg('next_stage');
+      const name = document.createElement('strong'); name.textContent = ((nx[0].querySelector('.toc-label') || nx[0]).textContent || '').trim();
+      a.append(lab, name); row.append(a); t.after(row);   // after the section, not in it: a stage's own last part stays its last child
+    });
     const keepInView = (a) => {
       if (toc.scrollWidth <= toc.clientWidth + 1 || getComputedStyle(toc).flexDirection === 'column') return;
       const tools = toc.querySelector('.toc-tools'), right = toc.clientWidth - (tools ? tools.offsetWidth : 0);
@@ -146,9 +205,10 @@
     const mark = (id) => {
       if (!id || id === current) return;
       current = id;
+      if (onMark) onMark(id);
       links.forEach((a) => {
         const on = a.getAttribute('href') === '#' + id;
-        if (on) { a.setAttribute('aria-current', 'step'); keepInView(a); } else a.removeAttribute('aria-current');
+        if (on) { a.setAttribute('aria-current', 'step'); keepInView(a); showNow(a); } else a.removeAttribute('aria-current');
       });
     };
     const inView = new Set();
@@ -194,10 +254,47 @@
       : u.matches('form') ? /^(ok|no|close)$/.test((u.querySelector('output') || {}).dataset?.state || '') : u.hidden);
     const unitKey = (u) => { const host = u.closest('[id]'); const all = [...host.querySelectorAll(REQUIRED)]; return host.id + ':' + all.indexOf(u); };
     const stages = pairs.filter(([, t]) => t.matches('section.stage')).map(([a, t]) => ({ a, t, units: required(t) }));
+    // Jatka (design audit 2026-11-10, P0-3; templates/jatka.js): the number of stages is kept beside the done ones, and
+    // the chapter opened last with the stage on screen in ruukkilabra:viimeisin { pre, file, title, num ("FY5 · Luku 4"), stage, label,
+    // n, of, t }, so that the module page and the front page can say where to go on. This browser only, nothing sent.
+    if (stages.length) {
+      saved.of = stages.length;
+      const pre = (location.pathname.match(/(?:^|\/)((?:en|fi-easy|fr|sv)\/)[^/]*$/) || [])[1] || '';
+      const file = location.pathname.split('/').pop() || '';
+      const h1 = document.querySelector('main h1'), num = document.querySelector('.crumbs .ch-menu > summary .t');
+      const mod = ((toc.querySelector('.toc-head span') || {}).textContent || '').trim();
+      const visit = (id) => {
+        const k = stages.findIndex((s) => s.t.id === id || s.t.contains(document.getElementById(id)));
+        if (k < 0 || !/\.html$/.test(file)) return;
+        const label = ((stages[k].a.querySelector('.toc-label') || {}).textContent || '').trim();
+        try { localStorage.setItem('ruukkilabra:viimeisin', JSON.stringify({ pre, file, title: h1 ? h1.textContent.trim() : document.title,
+          num: [mod, num ? (num.firstChild.textContent || '').trim() : ''].filter(Boolean).join(' · '), stage: stages[k].t.id, label, n: k + 1, of: stages.length, t: Date.now() })); } catch (e) { /* no storage */ }
+      };
+      onMark = visit; if (current) visit(current);
+    }
     const DONE = msg('stage_done');
+    // Seuraavaksi after Ennusta waits for the predictions (teacher 2026-11-10): until the stage's required predictions
+    // are given, the row after it says "Tee ennusteet ennen tutkimista" and opens the prediction box instead of
+    // leading on. Nothing else is locked: the stage bar and scrolling take the reader anywhere, as before.
+    const lockNext = (s) => {
+      const row = s.t.nextElementSibling, fold = s.t.querySelector('details.fold'), title = fold && fold.querySelector('.fold-title');
+      if (!row || !row.matches('nav.next-stage') || !title || row._go) return;
+      const a = row.querySelector('a'); row._go = { href: a.getAttribute('href'), kids: [...a.childNodes] };
+      const st = document.createElement('strong'); st.textContent = title.textContent.trim();
+      a.replaceChildren(st); a.setAttribute('href', '#' + s.t.id); row.classList.add('is-waiting');
+      a.addEventListener('click', row._open = (e) => { e.preventDefault(); fold.open = true; fold.scrollIntoView({ block: 'start' }); const f = fold.querySelector('input, button, textarea'); if (f) f.focus({ preventScroll: true }); });
+    };
+    function unlockNext(s) {
+      const row = s.t.nextElementSibling; if (!row || !row._go) return;
+      const a = row.querySelector('a'); a.removeEventListener('click', row._open); a.replaceChildren(...row._go.kids); a.setAttribute('href', row._go.href);
+      row.classList.remove('is-waiting'); row._go = null;
+    }
+    stages.forEach((s) => { if (s.t.id === 'ennusta' && s.units.length && !saved.done.includes(s.t.id)) lockNext(s); });
     const show = (s) => {
       if (s.a.classList.contains('is-done')) return;
       s.a.classList.add('is-done');
+      unlockNext(s);
+      toc.style.setProperty('--p', String(toc.querySelectorAll('a.is-done').length / Math.max(1, stages.length)));
       const sr = document.createElement('span'); sr.className = 'visually-hidden'; sr.textContent = ' (' + DONE + ')'; s.a.append(sr);
     };
     const inside = (r) => r.height > 0 && r.bottom >= 0 && r.bottom <= window.innerHeight;   // its end is on screen

@@ -81,26 +81,36 @@ header.top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items
 .brand-name{display:flex;flex-direction:column;font:800 1.14rem/1.1 var(--sans);letter-spacing:-.01em;color:var(--brand-green);overflow-wrap:break-word}
 .brand-name small{font:700 .68rem/1.3 var(--sans);letter-spacing:.16em;text-transform:uppercase;margin-top:2px}
 header.top nav{display:flex;align-items:center;gap:4px;flex:none;margin-left:auto}
-header.top nav>a,.lang-menu>summary{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;font:600 var(--fs-ui) var(--sans);color:var(--ink-2);text-decoration:none;border-radius:999px}
-header.top nav>a:hover,.lang-menu>summary:hover{color:var(--ink);background:var(--bg-tint)}
+header.top nav>a,.lang-menu>summary,.nav-menu>summary{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;font:600 var(--fs-ui) var(--sans);color:var(--ink-2);text-decoration:none;border-radius:999px}
+header.top nav>a:hover,.lang-menu>summary:hover,.nav-menu>summary:hover{color:var(--ink);background:var(--bg-tint)}
 header.top nav>a:active,.lang-menu>summary:active{background:var(--line)}
-@media (max-width:29.99rem){header.top nav>a.nav-modules{display:none}.brand-name small{letter-spacing:.06em}.lang-menu>summary{padding:0 10px}}
-@media (max-width:39.99rem){header.top nav>a.nav-reading,header.top nav>a.nav-study,header.top nav>a.nav-booklets{display:none}}   /* Lukuvinkit gives way first on a phone; the footer of every page links to it */
-@media (max-width:51.99rem){header.top nav>a.nav-about{display:none}}   /* Sivustosta (front page only) needs about 800 px to keep the header on one row; the footer links it */
-@media (max-width:49.99rem){header.top nav>a.nav-modules~a.nav-study{display:none}}   /* Näin opiskelet beside Moduulit (every page but the front, teacher 2026-11-08) needs about 800 px for one header row in English; the front page, without Moduulit, keeps it from 640 px */
+@media (max-width:29.99rem){.brand{gap:8px}.brand-mark{width:34px;height:34px}.brand-name small{letter-spacing:.06em;max-width:7.5rem}.lang-menu>summary{padding:0 6px;gap:.3rem}header.top{column-gap:8px}header.top nav{gap:2px}}   /* room for the menu button beside "Selkeä suomi" and under "Upper secondary physics" (two lines) at 360 px */
+/* Valikko (design audit 2026-11-10, P0-1): under 52rem the header's links no longer disappear one by one; they all give
+   way to one menu button beside the language control (a <details>, no script, like the language menu), so every page
+   of the header is reachable on a phone. From 52rem the links show and the button is gone. */
+.nav-menu{display:none;position:relative;margin:0}
+@media (max-width:51.99rem){header.top nav>a{display:none}.nav-menu{display:block}}
+/* on a phone the word gives way to the three bars (the button keeps its name for a screen reader): "Selkeä suomi" and
+   "English" beside the brand leave no room for it at 360 px */
+@media (max-width:29.99rem){.nav-menu-t{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  .nav-menu>summary{justify-content:center;width:44px;padding:0}
+  .nav-menu>summary::after{content:"";width:18px;height:2px;border-radius:1px;background:currentColor;box-shadow:0 -6px 0 currentColor,0 6px 0 currentColor}}
 header.top nav>a[aria-current="page"]{color:var(--accent-deep);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:.4em}
+/* Siirry sisältöön: the first stop of the keyboard, visible only when focused */
+.skip{position:absolute;left:8px;top:-4rem;z-index:100;padding:.6rem 1rem;background:var(--surface);color:var(--accent-deep);font:700 var(--fs-ui) var(--sans);border:2px solid var(--accent-deep);border-radius:8px}
+.skip:focus{top:8px}
 .visually-hidden{position:absolute!important;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 /* the language control: the current language on a quiet button, the others in a small panel (a <details>, no script) */
 .lang-menu{position:relative;margin:0}
-.lang-menu>summary{gap:.4rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);list-style:none}
-.lang-menu>summary::-webkit-details-marker{display:none}
-.lang-menu>summary::before,.lang-menu[open]>summary::before{content:none;display:none}
+.lang-menu>summary,.nav-menu>summary{gap:.4rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);list-style:none}
+.lang-menu>summary::-webkit-details-marker,.nav-menu>summary::-webkit-details-marker{display:none}
+.lang-menu>summary::before,.lang-menu[open]>summary::before,.nav-menu>summary::before,.nav-menu[open]>summary::before{content:none;display:none}
 .lang-menu>summary::after{content:"";width:.45rem;height:.45rem;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(-2px) rotate(45deg);flex:none}
 .lang-menu[open]>summary::after{transform:translateY(2px) rotate(-135deg)}
-.lang-list{position:absolute;right:0;top:calc(100% + 6px);z-index:50;list-style:none;margin:0;padding:.35rem;min-width:13.5rem;max-width:min(18rem,calc(100vw - 32px));background:var(--surface);border:1px solid var(--line);border-radius:12px;box-shadow:0 10px 28px rgba(20,23,30,.12)}
-.lang-list li{margin:0}
-.lang-list a.lang{display:flex;align-items:center;min-height:44px;padding:0 .75rem;border-radius:8px;color:var(--ink);font:600 var(--fs-ui) var(--sans);text-decoration:none}
-.lang-list a.lang:hover{background:var(--bg-tint);color:var(--accent-deep)}
+.lang-list,.nav-list{position:absolute;right:0;top:calc(100% + 6px);z-index:50;list-style:none;margin:0;padding:.35rem;min-width:13.5rem;max-width:min(18rem,calc(100vw - 32px));background:var(--surface);border:1px solid var(--line);border-radius:12px;box-shadow:0 10px 28px rgba(20,23,30,.12)}
+.lang-list li,.nav-list li{margin:0}
+.lang-list a.lang,.nav-list a{display:flex;align-items:center;min-height:44px;padding:0 .75rem;border-radius:8px;color:var(--ink);font:600 var(--fs-ui) var(--sans);text-decoration:none}
+.lang-list a.lang:hover,.nav-list a:hover{background:var(--bg-tint);color:var(--accent-deep)}
 .lang-list a.lang:active{background:var(--line)}
 .lang-note{display:block;padding:0 .75rem .45rem;margin-top:-.3rem;font-size:.8125rem;line-height:1.35;color:var(--ink-2)}
 .crumbs{font-size:var(--fs-small);color:var(--ink-2);margin:.4rem 0 1.2rem;display:flex;flex-wrap:wrap;align-items:center;gap:0 .25rem}
@@ -1408,16 +1418,18 @@ html #exercises .ex-focus .pad .rich-text-editor-toolbar-root>div,html.tasks-spl
 .sa-opts [data-level=x]{--sa:var(--sa-x);--sa-on:#14171e}
 .sa-rate{margin:1rem 0 0;padding:.7rem 0 0;border:0;border-top:1px dashed var(--line);min-width:0}
 .sa-rate legend{float:left;width:100%;margin:0 0 .45rem;padding:0;font-size:var(--fs-body);color:var(--ink)}
-.sa-opts{clear:both;display:flex;align-items:stretch;gap:3px;max-width:26rem}
-.sa-opt{position:relative;flex:1 1 0;display:flex;min-height:44px;cursor:pointer}
-.sa-opt[data-level=d] .sa-sw{border-radius:999px 0 0 999px}.sa-opt[data-level=a] .sa-sw{border-radius:0 999px 999px 0}
-.sa-opt[data-level=x]{flex:0 0 auto;margin-left:.6rem}
-.sa-opt[data-level=x] .sa-sw{border-radius:999px;padding:0 .9rem;color:var(--ink-2);font:600 var(--fs-ui)/1 var(--sans);white-space:nowrap}
+/* Named levels (design audit 2026-11-10, P0-2): each level is a chip with its short name, quiet until chosen; the
+   chosen one takes its level's colour (the same colours as the module page's fingerprint) and a tick, so the colour is
+   never the only sign. Two chips in a row on a phone, four from about 36rem; "Ei vielä" stays apart on its own row. */
+.sa-opts{clear:both;display:grid;grid-template-columns:repeat(auto-fit,minmax(8.5rem,1fr));gap:6px;max-width:38rem}
+.sa-opt{position:relative;display:flex;min-height:44px;cursor:pointer}
+.sa-opt[data-level=x]{grid-column:1/-1;justify-self:start}
 .sa-opt input{position:absolute;inset:0;opacity:0;width:100%;height:100%;margin:0;cursor:pointer;z-index:1}
-.sa-sw{flex:1;display:flex;align-items:center;justify-content:center;background:var(--sa);transition:opacity .15s}
-.sa-opts:has(input:checked) .sa-sw{opacity:.4}
-.sa-opt input:checked+.sa-sw{opacity:1;box-shadow:inset 0 0 0 3px var(--surface),0 0 0 2px var(--ink)}
-.sa-opt:not([data-level=x]) input:checked+.sa-sw::after{content:"\2713";color:var(--sa-on);font:700 1.15rem/1 var(--sans)}
+.sa-sw{flex:1;display:flex;align-items:center;justify-content:center;gap:.35em;padding:.45rem .7rem;text-align:center;background:var(--surface);color:var(--ink);border:1.5px solid var(--ink-2);border-radius:10px;font:600 var(--fs-ui)/1.25 var(--sans);transition:background-color .15s,color .15s}
+.sa-opt[data-level=x] .sa-sw{border-color:var(--line);color:var(--ink-2);border-radius:999px;padding:0 .9rem;white-space:nowrap}
+.sa-opt:hover .sa-sw{background:var(--bg-tint)}
+.sa-opt input:checked+.sa-sw{background:var(--sa);border-color:var(--sa);color:var(--sa-on)}
+.sa-opt input:checked+.sa-sw::before{content:"\2713";font-weight:700}
 .sa-opt input:focus-visible+.sa-sw{outline:3px solid var(--accent);outline-offset:3px}
 .sa-opt .sa-text{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .sa-desc{margin:.45rem 0 0;font-size:var(--fs-inner);color:var(--ink-2);min-height:1.5em}
@@ -2135,3 +2147,92 @@ main.kr-team{max-width:68rem}
 }
 .lt-nav a[aria-current="true"]{background:var(--kr-navy);color:#fff}
 .lt-workload th{hyphens:manual;-webkit-hyphens:manual}
+
+/* Jatka (design audit 2026-11-10, P0-3; templates/jatka.js): one quiet row with the next thing to do, over the chapter
+   tiles and on the front page, only for a reader who has started a chapter; and the state of a started chapter on its
+   tile. */
+.resume{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem 1.25rem;margin:1.2rem 0 0;padding:.7rem 1rem;background:var(--accent-soft);border-radius:12px}
+.resume[hidden]{display:none}
+.resume-text{margin:0;display:flex;flex-wrap:wrap;align-items:baseline;gap:.1rem .6rem;min-width:0;font-size:var(--fs-body);line-height:1.35}
+.resume-label{font:700 var(--fs-small)/1.2 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--accent-deep)}
+.resume-stage{color:var(--ink-2);font-size:var(--fs-ui)}
+.resume-go{display:inline-flex;align-items:center;min-height:44px;padding:0 1.1rem;border-radius:999px;background:var(--accent-deep);color:#fff;font:700 var(--fs-ui) var(--sans);text-decoration:none;white-space:nowrap}
+.resume-go:hover{background:var(--accent)}
+main.home>.resume{margin:0 0 1rem}
+.ch-state{text-transform:none;letter-spacing:0;font-weight:700;color:var(--ink-2);white-space:nowrap}
+.ch-state.is-done{color:var(--accent-deep)}
+.ch-state.is-done::before{content:"\2713\00a0"}
+@media print{.resume,.ch-state{display:none!important}}
+
+/* The theory's two heading levels apart, and one text face in the lesson (design audit 2026-11-10, problem 6;
+   docs/audits/2026-11-10-vaiheiden-kayttoliittyma.md, step 1). A theory section's heading (## in lesson.md) was 18 px
+   and its subheading (###) 17 px in the same weight, so "Ydinajatus" and the point under it read as equals: the
+   section heading is now 20 px with clearly more room over it than the subheading has. Pohdinta's opening paragraph
+   is set in the reading face like the rest of the lesson; Fraunces stays for the title, the Miksi question and the
+   stage's own question. */
+.act-theory h3.theory-h{font-size:1.25rem;letter-spacing:-.01em;margin-top:2.6rem}
+.act-theory>h3.theory-h:first-child{margin-top:.4rem}
+.act-theory h4{margin-top:1.4rem}
+.hook{font-family:var(--sans)}
+
+/* The stage bar on a phone and Seuraavaksi (design audit 2026-11-10; docs/audits/2026-11-10-vaiheiden-kayttoliittyma.md
+   step 2; lesson.js part 2). Under 700 px the chips give way to one button, "3/7 Tutki", beside Kuuntele; it opens the
+   whole list under the bar, each stage on its own 44 px row with its tick. The line under the bar is the share of done
+   stages. Without JavaScript (no .has-now) the bar is the scrolling list as before. */
+.toc-now{display:none}
+@media (max-width:699.98px){
+  nav.toc.has-now{flex-wrap:wrap;overflow-x:visible;row-gap:0;background-image:linear-gradient(var(--accent),var(--accent));background-repeat:no-repeat;background-position:left bottom;background-size:calc(var(--p,0) * 100%) 3px}
+  nav.toc.has-now>.toc-now{order:0;display:inline-flex;align-items:center;gap:.5rem;min-height:44px;min-width:0;flex:0 1 auto;padding:0 .9rem 0 .7rem;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink);font:700 var(--fs-ui) var(--sans);cursor:pointer}
+  .toc-now-n{font-variant-numeric:tabular-nums;color:var(--accent-deep)}
+  .toc-now-l{flex:0 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  nav.toc.has-now>.toc-now{max-width:calc(100% - 5.75rem)}   /* a long section name (an investigation's, an exam part's) is cut with an ellipsis; without the limit the button pushed Kuuntele onto a second row and the taller bar covered the heading it had scrolled to (check_layout at 360 px, 2026-11-11) */
+  .toc-now::after{content:"";flex:none;width:.45rem;height:.45rem;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(-2px) rotate(45deg)}
+  .toc-now[aria-expanded=true]::after{transform:translateY(2px) rotate(-135deg)}
+  nav.toc.has-now>.toc-tools{order:1;position:static;margin-right:0;padding-right:0;box-shadow:none;background:none}
+  nav.toc.has-now>a{order:2;display:none;flex:1 0 100%;min-height:44px;border-radius:10px;font-size:var(--fs-ui)}
+  nav.toc.has-now.is-open>a{display:flex}
+  nav.toc.has-now.is-open>a:first-of-type{margin-top:.4rem}
+  nav.toc.has-now.is-open{padding-bottom:.6rem;background-color:var(--bg);box-shadow:0 10px 24px rgba(20,23,30,.12);max-height:100dvh;overflow-y:auto}
+  nav.toc.has-now .toc-label{max-width:none}
+}
+.next-stage{margin:1.8rem 0 0;max-width:var(--measure)}
+.next-stage a{display:flex;align-items:center;gap:.6rem;min-height:48px;padding:.4rem 1rem;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--ink);text-decoration:none;font-size:var(--fs-body)}
+.next-stage a::after{content:"\2192";margin-left:auto;color:var(--accent-deep);font-weight:700}
+/* a long name (an investigation's "Tutkimuskysymyksestä mitattaviksi suureiksi") goes under the label on a phone instead of pushing the page wider (found at 360 px, 2026-11-10) */
+.next-stage a{flex-wrap:wrap}.next-stage a strong{flex:1 1 12rem;min-width:0;overflow-wrap:break-word}
+.next-stage a:hover{border-color:var(--accent-deep);background:var(--accent-soft)}
+.next-stage.is-waiting a{border-style:dashed;background:transparent}.next-stage.is-waiting a::after{content:"\2191"}
+.next-stage-l{font:700 var(--fs-small)/1.2 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--accent-deep)}
+html.tasks-split #exercises+.next-stage{display:none}   /* in the side panel the exercises are beside the lesson, not before the next stage */
+@media print{.next-stage{display:none!important}}
+
+/* A theme on its own row over its tiles (teacher 2026-11-10, variant B of the module page comparison; cardgrid.py
+   theme_row, the module pages FY1-FY8). The row spans the grid: a rule, the theme's name in the text face and its
+   chapters' range. Every theme starts a new row of tiles, so a short theme leaves room at its row's end on a wide
+   screen; on a phone (two tiles in a row) at most one place per theme. The tiles and their illustrations are as they
+   were; without a label of their own they are plain blocks, no subgrid row for it. */
+ol.lessons li.ch-theme-row{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:baseline;gap:.1rem .75rem;margin:1.1rem 0 .55rem;padding:.7rem 0 0;border:0;border-top:1px solid var(--line)}
+ol.lessons li.ch-theme-row:first-child{margin-top:.2rem}
+ol.lessons li.ch-theme-row[hidden]{display:none}
+ol.lessons li.ch-theme-row>h3.ch-theme{margin:0;font:700 1.0625rem/1.3 var(--sans);letter-spacing:0;text-transform:none;color:var(--accent-deep)}
+ol.lessons li.ch-theme-row>.ch-range{font:500 var(--fs-small)/1.3 var(--sans);color:var(--ink-2)}
+/* with theme rows a card has no label row of its own: a plain flex cell, its box as tall as the row's tallest (also
+   FY9, FY14 and the FY10 bank, teacher 2026-11-10) */
+ol.lessons.ch-cards:has(>li.ch-theme-row)>li.ch-card{display:flex;align-items:stretch;grid-row:auto;grid-template-rows:none}
+ol.lessons.ch-cards:has(>li.ch-theme-row)>li.ch-card[hidden]{display:none}
+ol.lessons.ch-cards:has(>li.ch-theme-row)>li.ch-card>.ch-box{flex:1;min-width:0}
+
+/* The prediction at its experiment (teacher 2026-11-10; inquiry.js part 5b): under the experiment's heading, what the
+   student predicted and, once the measurements are in, whether they supported it. */
+.exp-pred{margin:.3rem 0 .9rem;padding:.5rem .8rem;border-left:3px solid var(--accent);background:var(--accent-soft);border-radius:0 8px 8px 0;font-size:var(--fs-inner);line-height:1.5}
+.exp-pred p{margin:0}.exp-pred p+.exp-pred-name{margin-top:.5rem}
+.exp-pred-name{display:block;font:700 var(--fs-small)/1.3 var(--sans);color:var(--accent-deep)}
+@media print{.exp-pred{display:none}}
+
+/* Where the exercises stand (teacher 2026-11-10; lesson.js): the core tasks' count over the levels, and each level's
+   own count of done tasks in its heading, once one is done. */
+.ex-progress{margin:0 0 .7rem;font:600 var(--fs-ui)/1.4 var(--sans);color:var(--ink-2)}
+.level-done{margin-left:.4rem;padding:.05rem .5rem;border-radius:999px;background:var(--accent-soft);color:var(--accent-deep);font:600 var(--fs-small)/1.5 var(--sans);white-space:nowrap}
+.level-done[hidden]{display:none}
+.level-done.is-all::before{content:"\2713\00a0"}
+@media print{.ex-progress,.level-done{display:none}}

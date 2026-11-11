@@ -90,6 +90,15 @@ for lang in i18n.languages():
                [re.findall(r'href="([^"]+)"', c)[:1] for c in cards if 'class="ch-why"' not in c or "ch-img" not in c][:3])
         themes = [t["first"] for t in curriculum[code].get("themes", [])]
         expect(f"{lang} {code}: the chapters are under the module's {len(themes)} themes", mod.count('class="ch-theme"') == len(themes))
+        # each theme on a row of its own over its tiles, with its chapters' range (teacher 2026-11-10, variant B)
+        rows = re.findall(r'<li class="ch-theme-row"><h3 class="ch-theme">([^<]+)</h3><span class="ch-range">([^<]+)</span></li>(.*?)(?=<li class="ch-theme-row"|</ol>)', mod, re.S)
+        firsts = [re.search(r'href="([^"]+)\.html"', r[2]) for r in rows]
+        live_first = [t for t in themes if (out / f"{t}.html").is_file()]
+        ranges = [[int(x) for x in re.findall(r"\d+", r[1])] for r in rows]
+        expect(f"{lang} {code}: each theme is a row of its own before its first chapter, with the range of its chapters",
+               len(rows) == len(themes) and [f.group(1) for f, t in zip(firsts, themes) if f and t in live_first] == live_first
+               and all(len(r) in (1, 2) for r in ranges) and (not ranges or (ranges[0][0] == 1 and ranges[-1][-1] == len(curriculum[code]["lessons"])
+               and all(b[0] == a[-1] + 1 for a, b in zip(ranges, ranges[1:])))), [(r[0], r[1]) for r in rows])
         expect(f"{lang} {code}: lessons before the goals, goals behind a disclosure",
                mod.find('class="lessons"') < mod.find('class="goals"') or 'class="goals"' not in mod)
     main_html = re.search(r"<main.*?</main>", home, re.S).group(0)
@@ -117,13 +126,13 @@ for lang in i18n.languages():
     psrc = next((f for f in (ROOT / "content" / lang / "tietosuoja.md", ROOT / "content" / "fi" / "tietosuoja.md") if f.is_file()), None)
     pheads = re.findall(r"^#+ (.+)$", psrc.read_text(), re.M) if psrc else []
     expect(f"{lang}: Tietosuoja shows content/{lang}/tietosuoja.md with all its headings (teacher 2026-11-04)",
-           '<main class="reading privacy-page">' in priv and bool(pheads) and all(_h.escape(h) in priv for h in pheads), pheads)
+           '<main class="reading privacy-page" id="sisalto">' in priv and bool(pheads) and all(_h.escape(h) in priv for h in pheads), pheads)
     expect(f"{lang}: no page sets a cookie (Tietosuoja says the site uses none)",
            not [f.name for f in (ROOT / "templates").glob("*.js") if "document.cookie" in f.read_text(errors="ignore")])
     about = (out / "tietoa.html").read_text() if (out / "tietoa.html").is_file() else ""
     expect(f"{lang}: tietoa.html exists", bool(about))
     expect(f"{lang}: Sivustosta opens with Kiviruukin lukio's logo in the school's colours (teacher 2026-11-04)",
-           '<main class="reading about-page">' in about and (SITE / "brand/kiviruukin-lukio-oikea-valkoinen.svg").is_file()
+           '<main class="reading about-page" id="sisalto">' in about and (SITE / "brand/kiviruukin-lukio-oikea-valkoinen.svg").is_file()
            and f'src="{"" if out == SITE else "../"}brand/kiviruukin-lukio-oikea-valkoinen.svg"' in about)
     leaks = sorted(str(f.relative_to(out)) for f in out.glob("*.html") if ('href="' + "../" * len(out.relative_to(ROOT.parent).parts) + 'index.html"') in f.read_text())
     expect(f"{lang}: no page links out of the site to the teacher's portfolio (teacher 2026-11-04)", not leaks, leaks[:5])
@@ -178,12 +187,21 @@ for lang in i18n.languages():
                 expect(f"{lang} {code}: every investigation in the bank has topic, F, E and modes ({len(items)})", len(items) == len(ihrefs), len(items))
                 expect(f"{lang} {code}: the filter form starts hidden (all shown without scripts)", '<form class="bank-filter" id="bank-filter" hidden' in pg)
                 cards = re.findall(r'<li class="live ch-card bank-item"[^>]*>(.*?)</li>', inv.group(1), re.S)
+                trows = re.findall(r'<li class="ch-theme-row" data-topic-label="(\w+)"><h3 class="ch-theme">[^<]+</h3><span class="ch-range"><span data-topic-count[^>]*>(\d+)[^<]*</span></span></li>(.*?)(?=<li class="ch-theme-row"|$)', inv.group(1), re.S)
+                expect(f"{lang} {code}: each topic is a row of its own before its investigations, with their count, and no topic is empty (teacher 2026-11-10)",
+                       bool(trows) and all(int(n) == len(re.findall(r'data-topic="' + t + '"', body)) > 0 and len(re.findall(r'class="live ch-card bank-item"', body)) == int(n) for t, n, body in trows)
+                       and sum(int(n) for _, n, _ in trows) == len(ihrefs), [(t, n) for t, n, _ in trows])
                 expect(f"{lang} {code}: every investigation is a card with its opening illustration and its question (teacher 2026-11-04)",
                        len(cards) == len(ihrefs) and all('class="ch-img"><svg aria-hidden="true"' in c and 'class="ch-why"' in c for c in cards))
             if local[code].get("chapters"):  # units as cards under the course's chapters (teacher 2026-11-04, scripts/cardgrid.py)
                 uc = re.search(r'<ol class="lessons ch-cards" id="unit-cards">(.*?)</ol>', pg, re.S)
                 live = re.findall(r'<li class="live ch-card">(.*?)</li>', uc.group(1), re.S) if uc else []
                 expect(f"{lang} {code}: one section per chapter, its heading without the question (teacher 2026-11-08)", uc and uc.group(1).count('class="ch-theme"') == len(local[code]["chapters"]) and 'class="ch-theme-q"' not in uc.group(1))
+                crows = re.findall(r'<li class="ch-theme-row"><h3 class="ch-theme"[^>]*>(\d+) · [^<]+</h3><span class="ch-range">(\d+)[^<]*</span></li>(.*?)(?=<li class="ch-theme-row"|$)', uc.group(1) if uc else "", re.S)
+                expect(f"{lang} {code}: each chapter is a row of its own before its units, in order, with their count (teacher 2026-11-10)",
+                       [int(k) for k, _, _ in crows] == list(range(1, len(local[code]["chapters"]) + 1))
+                       and [int(n) for _, n, _ in crows] == [len(ch["units"]) for ch in local[code]["chapters"]]
+                       and all(len(re.findall(r'<li class="(?:live|soon) ch-card">', body)) == int(n) for _, n, body in crows), [(k, n) for k, n, _ in crows])
                 expect(f"{lang} {code}: every published unit is a card with one link, its opening illustration and its question ({len(live)})",
                        all(len(re.findall(r"<a ", c)) == 1 and 'class="ch-img"><svg aria-hidden="true"' in c and 'class="ch-why"' in c for c in live)
                        and all((out / h).resolve().is_file() for c in live for h in re.findall(r'href="([^"]+)"', c)))
@@ -340,6 +358,15 @@ with sync_playwright() as pw:
                     total = pg.evaluate("document.querySelectorAll('.bank-item').length")
                     pg.focus("#bank-q"); pg.keyboard.type("zzzz-ei-ole")
                     hidden = pg.evaluate("[...document.querySelectorAll('.bank-item')].every(li => li.hidden) && !document.getElementById('bank-none').hidden")
+                    # each topic is a row of its own over its cards (teacher 2026-11-10): a topic with nothing shown is hidden, its count follows the filter
+                    norows = pg.evaluate("[...document.querySelectorAll('#bank-list .ch-theme-row')].every(r => r.hidden && !r.offsetParent)")
+                    pg.fill("#bank-q", ""); pg.select_option('#bank-filter select[name="topic"]', index=1); pg.wait_for_timeout(30)
+                    one = pg.evaluate("""(() => { const rows = [...document.querySelectorAll('#bank-list .ch-theme-row')].filter(r => !r.hidden), shown = [...document.querySelectorAll('.bank-item:not([hidden])')];
+                      const all = [...document.querySelectorAll('#bank-list > li')].filter(li => !li.hidden);
+                      return { rows: rows.length, first: all[0] === rows[0], same: shown.every(li => li.dataset.topic === rows[0].dataset.topicLabel), n: shown.length,
+                        count: parseInt(rows[0].querySelector('[data-topic-count]').textContent, 10), over: document.documentElement.scrollWidth > innerWidth }; })()""")
+                    expect(f"{lang}/{name} at {w} px: no topic row shows over an empty topic; one topic chosen leaves its row first, over its own investigations, with their count",
+                           norows and one["rows"] == 1 and one["first"] and one["same"] and one["n"] == one["count"] > 0 and not one["over"], (norows, one))
                     pg.keyboard.press("Tab"); pg.keyboard.press("ArrowDown")      # topic select by keyboard: the first topic
                     pg.click(".bank-reset"); pg.wait_for_timeout(30)
                     back = pg.evaluate("document.querySelectorAll('.bank-item:not([hidden])').length")
