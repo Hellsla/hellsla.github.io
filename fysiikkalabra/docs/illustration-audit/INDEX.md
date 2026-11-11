@@ -32,7 +32,7 @@ Tila 2026-11-11: **kaikki piirretyt opetuskuvat arvioitu** (1150 kuvaa). Tämä 
 
 ## Tulos
 
-Pidä 940, kevyt korjaus 203, piirrä uudelleen 5, korvaa uudella 2, fysiikan virhe 0.
+Pidä 940, kevyt korjaus 202, piirrä uudelleen 6, korvaa uudella 2, fysiikan virhe 0. (`fy7-11/observer` nostettu opettajan päätöksellä kevyestä korjauksesta uudelleen piirrettäväksi.)
 
 Fysiikan virheitä ei löytynyt. Kaksi kuvaa on merkitty fysiikasta arvosanalla 4: `fy5-6/cannon` (liian nopean
 kappaleen rata piirretty ympyränä) ja `fy10-induktio/flux` (kenttäviivat ilman suuntaa ja napoja).
