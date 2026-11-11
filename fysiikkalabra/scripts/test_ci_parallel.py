@@ -126,5 +126,30 @@ huge = " ".join(f"p-{i:03}" for i in range(300))
 rc, text = gate(reports(huge), huge); check("gate: two layout shards per width pass", rc == 0 and len(cp.plan(huge)["layout"]) == 16, text[-300:])
 r = reports(huge); del r["layout-5"]; rc, text = gate(r, huge); check("gate: a missing layout shard of one width fails", rc == 1 and "layout 640 px: reports of shards ['0/2']" in text, text[-300:])
 
+# which pages a pull request tests (scripts/ci_scope.py): the workflow file lies outside fysiikkalabra/
+import ci_scope
+
+
+def scoped(names, workflow=()):
+    """ci_scope.scope() of a pull request that changed these files of fysiikkalabra/ and these of .github/."""
+    real = ci_scope.git
+    def fake(*a):
+        if a[0] == "rev-parse": return "/repo\n"
+        if a[0] == "diff" and "--relative" in a: return "\n".join(names)
+        if a[0] == "diff": return "\n".join(workflow)
+        return real(*a)
+    ci_scope.git = fake
+    try: return ci_scope.scope("origin/main")
+    finally: ci_scope.git = real
+
+
+WF = ".github/workflows/fysiikkalabra-ci.yml"
+check("scope: the workflow file alone runs the browser checks in full", scoped([], [WF])[0] == "full", str(scoped([], [WF])))
+check("scope: the workflow file with a lesson is still full", scoped(["content/fi/FY3/fy3-1/lesson.md"], [WF])[0] == "full")
+check("scope: a document alone tests no page", scoped(["docs/audits/2026-11-10-vaiheiden-kayttoliittyma.md"]) == ("pages", {}), str(scoped(["docs/audits/2026-11-10-vaiheiden-kayttoliittyma.md"])))
+check("scope: nothing changed tests no page", scoped([]) == ("pages", {}))
+k, w = scoped(["content/fi/FY3/fy3-1/lesson.md"]); check("scope: a lesson's text tests that lesson only", k == "pages" and list(w) == ["fy3-1"], f"{k} {w}")
+check("scope: a script is shared by every page", scoped(["scripts/build.py"])[0] == "full")
+
 print(f"\n{passed} passed, {failed} failed")
 sys.exit(1 if failed else 0)
