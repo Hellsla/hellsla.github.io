@@ -1,0 +1,43 @@
+# Diagnostics for a simulation whose labels overlap on the CI machine only (fy1-1, 2026-11-11). Not a gate and not part
+# of fysiikkalabra-ci: it runs scripts/test_sims.py for the named pages alone (three language versions, 360, 390 and
+# 1280 px), with the reporting .github/diag/sim_labels.py adds in memory, and keeps the log and the screenshots as an
+# artifact. Runs by hand (Actions -> fysiikkalabra-sim-diag -> Run workflow), and on a pull request that changes these
+# two files, so that the diagnostics can be read before anything is merged. A red result means the test failed, which
+# is what the diagnostics are for.
+name: fysiikkalabra-sim-diag
+on:
+  workflow_dispatch:
+    inputs:
+      pages: { description: "Page ids for scripts/test_sims.py, space separated", default: "fy1-1", required: true }
+  pull_request:
+    paths: [".github/diag/**", ".github/workflows/fysiikkalabra-sim-diag.yml"]
+permissions: { contents: read }
+concurrency: { group: "fysiikkalabra-sim-diag-${{ github.ref }}", cancel-in-progress: true }
+defaults: { run: { working-directory: fysiikkalabra } }
+jobs:
+  diag:
+    name: simulation label diagnostics
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      # the same set-up as the sims job of fysiikkalabra-ci
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - uses: actions/setup-node@v4
+        with: { node-version: "22" }
+      - run: pip install markdown playwright numpy && playwright install --with-deps chromium
+      - run: python scripts/build.py --all
+      - name: scripts/test_sims.py for the named pages, with diagnostics (.github/diag/sim_labels.py)
+        env:
+          PAGES: "${{ github.event.inputs.pages || 'fy1-1' }}"
+          DIAG_DIR: "${{ runner.temp }}/sim-diag"
+        run: |
+          case "$PAGES" in *[!A-Za-z0-9\ _-]*) echo "page ids only (letters, digits, - and _)"; exit 2;; esac
+          mkdir -p "$DIAG_DIR"
+          set -o pipefail
+          python ../.github/diag/sim_labels.py $PAGES 2>&1 | tee "$DIAG_DIR/log.txt"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: { name: sim-diag, path: "${{ runner.temp }}/sim-diag", if-no-files-found: warn, retention-days: 14 }
