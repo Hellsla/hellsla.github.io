@@ -1678,6 +1678,7 @@ main.kr-team{max-width:68rem}
 .kr-head{padding-bottom:.75rem;border-bottom:4px solid var(--kr-pink)}
 .kr-head h1{margin:.1rem 0 .4rem;font-size:clamp(1.6rem,1.25rem + 1.4vw,2.35rem);line-height:1.15}
 .kr-head .lead{margin:0}
+.kr-head .ahjo-eyebrow{max-width:44rem}                           /* a line of text is at most 44rem (check_layout.py) */
 .kr-team h3{font-size:1.125rem;margin:1.25rem 0 .4rem}
 .kr-team .ahjo-sec>h2{margin-top:0}
 .kr-quick ol{display:grid;grid-template-columns:repeat(auto-fit,minmax(11.5rem,1fr));gap:.6rem;margin:0 0 2.25rem;padding:0;list-style:none}
@@ -2062,6 +2063,7 @@ main.kr-team{max-width:68rem}
 .lt-safety-box ul{margin:0}
 .lt-timeline{margin:0;padding:0;list-style:none}
 .lt-timeline>li{display:grid;grid-template-columns:4.6rem 1fr;gap:.8rem;padding:.7rem 0;border-bottom:1px solid var(--line-2)}
+@media(max-width:47.99rem){.lt-timeline>li{grid-template-columns:1fr;gap:.25rem}.lt-tl-time{justify-self:start}}   /* a narrow screen: the time above its step, the whole width for the text */
 .lt-tl-time{align-self:start;padding:.15rem .4rem;border-radius:8px;background:var(--kr-navy);color:#fff;font:700 var(--fs-small)/1.4 var(--ahjo-head);text-align:center;white-space:nowrap}
 .lt-tl-body h4{margin:0 0 .2rem;font:900 1.0625rem/1.3 var(--ahjo-head);color:var(--kr-navy)}
 .lt-tl-body p{margin:0}
