@@ -1,0 +1,8 @@
+# Simulation changes that only place or draw (teacher 2026-11-11; scripts/reviews.py "presentation_only").
+# One row per approved change: the file and the hashes of its text before and after. Written by
+# `python scripts/reviews.py approve-presentation <sim.js> [<base-ref>]`, which prints the diff and refuses a change
+# that does more than draw. The teacher approves a row by merging the pull request that adds it; with the row,
+# the science and pedagogy reviews carry over and the visual reviewer looks at the change (delta).
+date	file	before	after	note
+2026-11-11	assets/sims/fy2/fy2-1/sim.js	5dada323be68aa1b	8cefd57b83e05759	nimiön sijoittelu mitatun leveyden mukaan (360 px)
+2026-11-11	assets/sims/fy5/fy5-8/sim.js	e44d9da30b22e0d3	2e0d1b4931a40463	nimiön sijoittelu mitatun leveyden mukaan (360 px)

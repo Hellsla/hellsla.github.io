@@ -972,15 +972,22 @@ def presentation_rows():
 
 
 def presentation_approved(rel, a, b):
-    """The change of the simulation file `rel` from text `a` to text `b` only draws, and exactly this change is recorded."""
+    """The change of the simulation file `rel` from text `a` to text `b` only draws, and exactly this change is recorded.
+    `a` and `b` are the file as written (Source.read), the same for every language version."""
     return rel.endswith(".js") and (rel, _pres_hash(a), _pres_hash(b)) in presentation_rows() and presentation_only(a, b)
+
+
+def presentation_change(old, new, rel):
+    """presentation_approved() of the file `rel` between two states of the project (Commit, WorkTree), read as written.
+    Source.source() puts a language's texts into a simulation's __('key') calls, so the same change of sim.js would
+    have another hash in every language version (fi, en, fi-easy); the JavaScript all of them run is the file itself."""
+    return rel.endswith(".js") and presentation_approved(rel, old.read(rel), new.read(rel))
 
 
 def approve_presentation(rel, base="origin/main", note=""):
     """Show the change of a simulation file since `base` and, when it only places or draws, add its row."""
     rel = (pathlib.Path(rel).resolve().relative_to(ROOT)).as_posix() if pathlib.Path(rel).exists() else rel
-    old, new = Commit(base).source(rel, False), WorkTree().source(rel, False)
-    a, b = _view(old, rel, False), _view(new, rel, False)
+    a, b = Commit(base).read(rel), WorkTree().read(rel)   # the file as written, not a language's view of it: one row holds for every language
     print("\n".join(difflib.unified_diff((a or "").splitlines(), (b or "").splitlines(), f"a/{rel}", f"b/{rel}", lineterm="", n=2)))
     if not presentation_only(a, b):
         sys.exit(f"\n{rel}: this change does more than place or draw (or is no change): it stays in the category \"simulation\" and needs the full reviews")
@@ -1025,7 +1032,7 @@ def changes(folder, base, part="lesson", split=False):
                 if rel.endswith("/lesson.md"): ra, rb = a2, b2
                 a, b = a2, b2
         if rel.startswith("tests/sims/"): cats.add(test_change(rel, base)); diff.append(f"--- {rel}: simulation assertions changed"); continue
-        if not binary and presentation_approved(rel, a, b):   # where or how the sim draws, the exact change approved: the visual reviewer sees the diff
+        if not binary and presentation_change(old, new, rel):   # where or how the sim draws, the exact change of the file approved (one row for every language): the visual reviewer sees the diff
             cats.add("presentation-only"); n += 1
             diff += list(difflib.unified_diff((a or "").splitlines(), (b or "").splitlines(), f"a/{rel}", f"b/{rel}", lineterm="", n=2)); continue
         if binary: cats.add("simulation" if "/sims/" in f"/{rel}" else "photo" if _is_photo(rel) else "figure"); diff.append(f"--- {rel}: binary file {'added' if a is None else 'removed' if b is None else 'changed'}"); continue

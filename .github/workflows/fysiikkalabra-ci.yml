@@ -2,6 +2,8 @@
 # tests, check answer positions, carried reviews and the committed site. No AI task repeats these checks.
 # This repository serves GitHub Pages from its root branch (the teacher's other sites). Ruukkilabra itself is published at
 # https://ruukkilab.fi/ by .github/workflows/ruukkilabra-deploy.yml after this workflow has passed on main (teacher 2026-11-04).
+# Since 2026-11-11 a push to main is scoped like a pull request (against the commit main had before the push), and a shared
+# change tests a fixed sample of pages (ci_scope.py SMOKE) instead of the whole site; the whole site is tested weekly and by hand.
 # On a pull request the three browser checks (simulations, inquiry tests, layout at eight widths) test only the pages the
 # change can alter (scripts/ci_scope.py; teacher 2026-11-01); a change to anything shared runs them in full. Every other
 # check, and the whole run on main, weekly and on a manual run, is full. A newer push to a pull request cancels its older run.
@@ -55,7 +57,9 @@ jobs:
       - name: which pages the browser checks test (a pull request - the pages it can change, or full; scripts/ci_scope.py, teacher 2026-11-01)
         id: scope
         run: |
-          if [ "${{ github.event_name }}" = pull_request ]; then pages=$(python scripts/ci_scope.py "origin/${{ github.base_ref }}" 2> /tmp/scope.txt) || { pages=full; echo "scripts/ci_scope.py failed: full run" >> /tmp/scope.txt; }; else pages=full; echo "full run (${{ github.event_name }})" > /tmp/scope.txt; fi
+          if [ "${{ github.event_name }}" = pull_request ]; then pages=$(python scripts/ci_scope.py "origin/${{ github.base_ref }}" 2> /tmp/scope.txt) || { pages=full; echo "scripts/ci_scope.py failed: full run" >> /tmp/scope.txt; }
+          elif [ "${{ github.event_name }}" = push ] && [ -n "${{ github.event.before }}" ] && git cat-file -e "${{ github.event.before }}^{commit}" 2> /dev/null; then pages=$(python scripts/ci_scope.py "${{ github.event.before }}" 2> /tmp/scope.txt) || { pages=full; echo "scripts/ci_scope.py failed: full run" >> /tmp/scope.txt; }   # a push to main: what changed since the commit main had before it (every commit of the push); an unknown commit falls through to a full run
+          else pages=full; echo "full run (${{ github.event_name }})" > /tmp/scope.txt; fi
           echo "pages=$pages" >> "$GITHUB_OUTPUT"
           python scripts/ci_parallel.py plan --pages "$pages" | tee -a "$GITHUB_OUTPUT"
           { echo "### Browser checks: ${pages:-no page changed}"; sed 's/^/    /' /tmp/scope.txt; } | tee -a "$GITHUB_STEP_SUMMARY"

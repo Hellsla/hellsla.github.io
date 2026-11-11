@@ -476,6 +476,26 @@ try:
     _bad = _sim.replace("g = 9.81", "g = 9.0"); rv.presentation_rows = lambda: {("assets/sims/x/sim.js", rv._pres_hash(_sim), rv._pres_hash(_bad))}
     expect("... and a row cannot approve a change of the model", not rv.presentation_approved("assets/sims/x/sim.js", _sim, _bad))
 finally: rv.presentation_rows = _rows
+# one row holds for every language version: the approval is of the file as written, not of a language's view of it
+class _State(rv.Source):
+    """A project state with one simulation file and each language's texts for it."""
+    TEXTS = {"fi": "aika", "en": "time", "fi-easy": "kulunut aika"}
+    def __init__(self, js, lang): self.js, self.lang = js, lang
+    def read(self, rel, binary=False):
+        return self.js if rel.endswith(".js") else json.dumps({"sims": {"x": {"nimi": self.TEXTS[self.lang]}}}) if rel == f"lang/{self.lang}.json" else None
+_rel = "assets/sims/k/x/sim.js"
+_old = _sim.replace(_axis, "    lab(__('nimi'), 20, 20, 'l', fh, INKC);\n" + _axis); _new2 = _old.replace(_axis, _axis2); _bad2 = _old.replace("g = 9.81", "g = 9.0")
+_views = {l: _State(_old, l).source(_rel) for l in _State.TEXTS}
+expect("a simulation's view differs by language (its texts are put in), the file does not", len(set(_views.values())) == 3 and all("__('nimi')" not in v for v in _views.values()), str({l: v.count("aika") for l, v in _views.items()}))
+try:
+    rv.presentation_rows = lambda: {(_rel, rv._pres_hash(_old), rv._pres_hash(_new2)), (_rel, rv._pres_hash(_old), rv._pres_hash(_bad2))}
+    for _l in _State.TEXTS:
+        expect(f"presentation-only in {_l}: the one row of the file's change holds", rv.presentation_change(_State(_old, _l), _State(_new2, _l), _rel))
+        expect(f"... and in {_l} a change of the model is not presentation-only, row or no row", not rv.presentation_change(_State(_old, _l), _State(_bad2, _l), _rel))
+    rv.presentation_rows = lambda: set()
+    expect("... and without the row no language has it", not any(rv.presentation_change(_State(_old, l), _State(_new2, l), _rel) for l in _State.TEXTS))
+finally: rv.presentation_rows = _rows
+expect("presentation-only still sends the change to the visual reviewer", rv.RULES["presentation-only"][2] == "delta" and rv.MODES.index("delta") > rv.MODES.index("none"))
 expect("presentation-only: science and pedagogy carry over, the visual reviewer looks", rv.RULES["presentation-only"] == ("none", "none", "delta"))
 expect("a simulation change without approval still needs the full science and pedagogy reviews", rv.RULES["simulation"] == ("full", "full", "delta"))
 expect("real project untouched", snapshot() == REAL)

@@ -144,12 +144,21 @@ def scoped(names, workflow=()):
 
 
 WF = ".github/workflows/fysiikkalabra-ci.yml"
-check("scope: the workflow file alone runs the browser checks in full", scoped([], [WF])[0] == "full", str(scoped([], [WF])))
-check("scope: the workflow file with a lesson is still full", scoped(["content/fi/FY3/fy3-1/lesson.md"], [WF])[0] == "full")
+# teacher 2026-11-11: a shared change tests the fixed sample, never the whole site (that is the weekly and the manual run)
+SM = set(ci_scope.SMOKE)
+k, w = scoped([], [WF]); check("scope: the workflow file alone is not skipped: it tests the sample", k == "pages" and set(w) == SM, f"{k} {sorted(w)}")
+k, w = scoped(["content/fi/FY3/fy3-1/lesson.md"], [WF]); check("scope: the workflow file with a lesson tests the sample and that lesson", k == "pages" and set(w) == SM | {"fy3-1"}, f"{k} {sorted(w)}")
+k, w = scoped(["templates/site.css"] + [f"site/{p}.html" for p in ("fy1-2", "fy4-3", "fy6-5", "index")]); check("scope: a style sheet change tests the sample, not every page it re-rendered", k == "pages" and set(w) == SM, f"{k} {sorted(w)}")
+k, w = scoped(["templates/sim-embed.js", "assets/sims/fy4/fy4-1/sim.js", "site/fy6-5.html"]); check("scope: a shared file with one simulation tests the sample and that simulation's lesson", k == "pages" and set(w) == SM | {"fy4-1"}, f"{k} {sorted(w)}")
+check("scope: the sample fits one job per check", 0 < len(ci_scope.SMOKE) <= 12 and len(SM) == len(ci_scope.SMOKE))
+check("scope: the review system's own files test no page", scoped(["scripts/reviews.py", "scripts/test_reviews.py", "docs/presentation-only.tsv"]) == ("pages", {}), str(scoped(["scripts/reviews.py"])))
+k, w = scoped(["scripts/reviews.py", "assets/sims/fy4/fy4-1/sim.js", "site/sims/fy4/fy4-1/sim.js", "site/fy4-1.html"]); check("scope: a review rule with one simulation tests that lesson only", k == "pages" and set(w) == {"fy4-1"}, f"{k} {sorted(w)}")
+check("scope: the file that decides what publishes is still a full run", scoped(["docs/visual-baseline.tsv"])[0] == "full")
+k, w = scoped(["site/fy4-3.html", "site/en/fy4-3.html"]); check("scope: without a shared change a re-rendered page is tested", k == "pages" and set(w) == {"fy4-3"}, f"{k} {sorted(w)}")
 check("scope: a document alone tests no page", scoped(["docs/audits/2026-11-10-vaiheiden-kayttoliittyma.md"]) == ("pages", {}), str(scoped(["docs/audits/2026-11-10-vaiheiden-kayttoliittyma.md"])))
 check("scope: nothing changed tests no page", scoped([]) == ("pages", {}))
 k, w = scoped(["content/fi/FY3/fy3-1/lesson.md"]); check("scope: a lesson's text tests that lesson only", k == "pages" and list(w) == ["fy3-1"], f"{k} {w}")
-check("scope: a script is shared by every page", scoped(["scripts/build.py"])[0] == "full")
+k, w = scoped(["scripts/build.py"]); check("scope: a script shared by every page tests the sample", k == "pages" and set(w) == SM, f"{k} {sorted(w)}")
 
 print(f"\n{passed} passed, {failed} failed")
 sys.exit(1 if failed else 0)
