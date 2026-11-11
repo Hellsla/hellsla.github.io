@@ -6,18 +6,6 @@
   <defs><linearGradient id="frca-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><radialGradient id="frca-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></radialGradient><linearGradient id="frca-glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfe4f5"/><stop offset="1" stop-color="#7fb0d8"/></linearGradient><linearGradient id="frca-door" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a7c8e6"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><linearGradient id="frca-ground" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#e9c98a"/></linearGradient></defs>
   <rect x="0" y="0" width="1200" height="600" fill="url(#frca-sky)"/>
   <circle cx="1060" cy="96" r="77" fill="#ffffff" fill-opacity="0.5"/>
-  <path d="M1115.5,118 L1140.5,117.5 L1119.5,104.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1097,143 L1119,155 L1107,133 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1068.5,155.5 L1081.5,176.5 L1082,151.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1038,151.5 L1038.5,176.5 L1051.5,155.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1013,133 L1001,155 L1023,143 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1000.5,104.5 L979.5,117.5 L1004.5,118 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1004.5,74 L979.5,74.5 L1000.5,87.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1023,49 L1001,37 L1013,59 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1051.5,36.5 L1038.5,15.5 L1038,40.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1082,40.5 L1081.5,15.5 L1068.5,36.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1107,59 L1119,37 L1097,49 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1119.5,87.5 L1140.5,74.5 L1115.5,74 Z" fill="#ffc078" stroke-linejoin="round"/>
   <circle cx="1060" cy="96" r="48" fill="url(#frca-sun)"/>
   <path d="M206,86 Q205,65.5 229,68 Q238.5,46.5 262.5,53.5 Q284,41.5 296,64.5 Q317.5,67 315,86 Z" fill="#ffffff" stroke-linejoin="round"/>
   <path d="M0,270 Q100,211 200,273 Q300,249.5 400,265 Q500,239.5 600,267 Q700,213.5 800,272.5 Q900,208.5 1000,273.5 Q1100,200.5 1200,275 Q1300,223.5 1400,270.5 V600 H0 Z" fill="#e9e2cf" stroke-linejoin="round"/>

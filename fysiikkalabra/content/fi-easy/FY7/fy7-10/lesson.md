@@ -9,18 +9,6 @@
   <line x1="300" y1="60" x2="300" y2="360" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
   <line x1="120" y1="210" x2="480" y2="210" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
   <circle cx="400" cy="130" r="54.5" fill="#ffffff" fill-opacity="0.5"/>
-  <path d="M439,147.5 L457,145.5 L442.5,134 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M425,165 L442,172 L435,155 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M404,172.5 L415.5,187 L417.5,169 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M382.5,169 L384.5,187 L396,172.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M365,155 L358,172 L375,165 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M357.5,134 L343,145.5 L361,147.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M361,112.5 L343,114.5 L357.5,126 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M375,95 L358,88 L365,105 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M396,87.5 L384.5,73 L382.5,91 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M417.5,91 L415.5,73 L404,87.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M435,105 L442,88 L425,95 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M442.5,126 L457,114.5 L439,112.5 Z" fill="#ffc078" stroke-linejoin="round"/>
   <circle cx="400" cy="130" r="34" fill="url(#fy710h-sun)"/>
   <rect x="0" y="440" width="1200" height="160" fill="url(#fy710h-table)"/>
   <line x1="0" y1="440" x2="1200" y2="440" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>

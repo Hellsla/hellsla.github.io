@@ -6,18 +6,6 @@
   <defs><linearGradient id="frn-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><radialGradient id="frn-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></radialGradient><linearGradient id="frn-square" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#e9c98a"/></linearGradient></defs>
   <rect x="0" y="0" width="1200" height="600" fill="url(#frn-sky)"/>
   <circle cx="1080" cy="92" r="73.5" fill="#ffffff" fill-opacity="0.5"/>
-  <path d="M1133.5,113.5 L1157.5,112.5 L1137,100 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1115.5,137.5 L1136.5,148.5 L1125.5,127.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1088,149 L1100.5,169.5 L1101.5,145.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1058.5,145.5 L1059.5,169.5 L1072,149 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1034.5,127.5 L1023.5,148.5 L1044.5,137.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1023,100 L1002.5,112.5 L1026.5,113.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1026.5,70.5 L1002.5,71.5 L1023,84 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1044.5,46.5 L1023.5,35.5 L1034.5,56.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1072,35 L1059.5,14.5 L1058.5,38.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1101.5,38.5 L1100.5,14.5 L1088,35 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1125.5,56.5 L1136.5,35.5 L1115.5,46.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1137,84 L1157.5,71.5 L1133.5,70.5 Z" fill="#ffc078" stroke-linejoin="round"/>
   <circle cx="1080" cy="92" r="46" fill="url(#frn-sun)"/>
   <path d="M250.5,91 Q249.5,72.5 271.5,74.5 Q280,54.5 302,61.5 Q322,50.5 333,71 Q353,73.5 350.5,91 Z" fill="#ffffff" stroke-linejoin="round"/>
   <rect x="0" y="150" width="300" height="270" fill="#e7c27d" stroke="#1f2933" stroke-width="2"/>

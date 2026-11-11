@@ -395,7 +395,7 @@ Esimerkiksi toisen kertaluvun punaiselle viivalle $k\lambda = 2 \cdot 656{,}28\,
   <line x1="83" y1="50" x2="90" y2="50" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <foreignObject x="60" y="375.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0$</div></foreignObject>
   <foreignObject x="502" y="355.5" width="87" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$k\lambda\ (\text{nm})$</div></foreignObject>
-  <foreignObject x="80" y="-6.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\sin\theta$</div></foreignObject>
+  <foreignObject x="104" y="15.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\sin\theta$</span></div></foreignObject>
   <polyline points="90,370 470,71" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
   <circle cx="268" cy="230" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <circle cx="222" cy="266" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>

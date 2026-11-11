@@ -6,18 +6,6 @@
   <defs><linearGradient id="fs-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7c98b"/><stop offset="1" stop-color="#5b7fa8"/></linearGradient><radialGradient id="fs-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></radialGradient></defs>
   <rect x="0" y="0" width="1200" height="600" fill="url(#fs-sky)"/>
   <circle cx="250" cy="300" r="73.5" fill="#ffffff" fill-opacity="0.5"/>
-  <path d="M303.5,321.5 L327.5,320.5 L307,308 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M285.5,345.5 L306.5,356.5 L295.5,335.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M258,357 L270.5,377.5 L271.5,353.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M228.5,353.5 L229.5,377.5 L242,357 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M204.5,335.5 L193.5,356.5 L214.5,345.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M193,308 L172.5,320.5 L196.5,321.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M196.5,278.5 L172.5,279.5 L193,292 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M214.5,254.5 L193.5,243.5 L204.5,264.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M242,243 L229.5,222.5 L228.5,246.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M271.5,246.5 L270.5,222.5 L258,243 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M295.5,264.5 L306.5,243.5 L285.5,254.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M307,292 L327.5,279.5 L303.5,278.5 Z" fill="#ffc078" stroke-linejoin="round"/>
   <circle cx="250" cy="300" r="46" fill="url(#fs-sun)"/>
   <path d="M679,108 Q677,77.5 713,81 Q727.5,48.5 763.5,59.5 Q796,41.5 814,75.5 Q846.5,79 843,108 Z" fill="#e9eef3" stroke-linejoin="round"/>
   <path d="M977,164 Q975.5,140 1003.5,143 Q1015,118 1043,126 Q1068,112 1082,139 Q1107,141.5 1104.5,164 Z" fill="#e9eef3" stroke-linejoin="round"/>

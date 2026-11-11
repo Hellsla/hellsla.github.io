@@ -73,7 +73,7 @@ and fails if the change was not what the row says. A reviewer whose last verdict
 """
 import collections, datetime, difflib, functools, hashlib, html, json, os, pathlib, re, subprocess, sys, tempfile
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-import courses, figcat, i18n, inquiry
+import courses, figcat, figlib, i18n, inquiry
 
 ROOT = courses.ROOT
 REVIEWS = ("science", "pedagogy", "visual")      # the three independent reviewers (visual & editorial since 2026-10-31)
@@ -808,16 +808,29 @@ ITEM_CODE = ("tutkimukset", "tvt", "units")       # lessons/<dir>/<id>/figures.p
 
 def _item_figures(oid):
     """figures.py of an investigation, guide or unit `oid` (they are not in the figure catalog), or None."""
+    if oid.endswith("-sovella"):                       # the task set of a unit: lessons/units/<unit>/sovella/figures.py
+        f = ROOT / "lessons" / "units" / oid[:-8] / "sovella" / "figures.py"
+        if f.is_file(): return f
     return next((ROOT / "lessons" / d / oid / "figures.py" for d in ITEM_CODE if (ROOT / "lessons" / d / oid / "figures.py").is_file()), None)
+
+
+def _own_language(code):
+    """Put figlib in the state a figures.py draws in: Finnish decimal comma, or the decimal sign the file itself sets at
+    import (the units of an English course: `figlib.set_language({}, ".")`). figlib keeps that state for the process,
+    so without this a figure's drawing would depend on which figures were drawn before it."""
+    m = re.search(r'^figlib\.set_language\(\{\}, "(.)"\)', code or "", re.M)
+    figlib.set_language({}, m.group(1) if m else ",")
 
 
 def figure_hash(fid):
     """Hash of figure `fid` as figures.py draws it now in Finnish (what an approval row names)."""
+    figlib.set_language({}, ",")                       # the Finnish drawing, whatever was drawn before in this process
     try: svg = figcat.render(fid)
     except KeyError:
         oid, name = fid.split("/", 1); f = _item_figures(oid)
         if f is None: raise
-        svg = figcat.module(str(f.parent)).FIGURES[name]()
+        fn = figcat.module(str(f.parent)).FIGURES[name]
+        _own_language(f.read_text()); svg = fn()
     return hashlib.sha256(svg.encode()).hexdigest()[:16]
 
 
@@ -885,20 +898,31 @@ def _item(kind, iid):
     raise SystemExit(f"carry-item: kind must be one of {', '.join(ITEM_KINDS)}")
 
 
-def item_view(kind, iid, lang, src):
-    """What an item's reviews judge apart from its teacher-approved figures, as `src` (WorkTree or Commit) has it."""
-    m, key, oid = _item(kind, iid)
+def _figure_free(folder, code_folder, texts, code_names, oid, src):
+    """The texts with the approved figures of owner `oid` taken out, the other code as it is, each not-approved figure as drawn."""
     rel = lambda p: p.relative_to(ROOT).as_posix()
-    out = [(n, normalized(_strip_approved_svgs(src.read(rel(m.folder(key, lang) / n)) or "", oid), n)) for n in m.TEXTS]
-    for n in getattr(m, "CODE", ("figures.py",)):
-        code = src.read(rel(m.code_folder(key) / n))
+    out = [(n, normalized(_strip_approved_svgs(src.read(rel(folder / n)) or "", oid), n)) for n in texts]
+    for n in code_names:
+        code = src.read(rel(code_folder / n))
         if n != "figures.py" or not code: out.append((n, code or "")); continue
-        figs = figcat.module_from(code).FIGURES
+        mod = type(sys)("figures_at_commit"); mod.__file__ = str(code_folder / n)   # a figures.py may read files beside it
+        exec(compile(code, n, "exec"), mod.__dict__); figs = mod.FIGURES
         out.append((n, sorted(figs)))
-        out += [(f"figure {name}", hashlib.sha256(figs[name]().encode()).hexdigest()) for name in sorted(figs) if not approved(f"{oid}/{name}")]
-    if kind == "unit" and m.has_tasks(key, lang):          # the unit's own task set is reviewed with it: no carry over a change in it
+        for name in sorted(figs):
+            if approved(f"{oid}/{name}"): continue
+            _own_language(code); out.append((f"figure {name}", hashlib.sha256(figs[name]().encode()).hexdigest()))
+    return out
+
+
+def item_view(kind, iid, lang, src):
+    """What an item's reviews judge apart from its teacher-approved figures, as `src` (WorkTree or Commit) has it. A
+    unit's own task set is reviewed with the unit: the same view of it, its figures owned by "<unit>-sovella"."""
+    m, key, oid = _item(kind, iid)
+    out = _figure_free(m.folder(key, lang), m.code_folder(key), m.TEXTS, getattr(m, "CODE", ("figures.py",)), oid, src)
+    if kind == "unit" and m.has_tasks(key, lang):
         import practice
-        out.append(("sovella", practice.content_hash(m.task_key(key), lang, read=src.read)))
+        tk = m.task_key(key)
+        out += [("sovella", _figure_free(practice.folder(tk, lang), practice.code_folder(tk), practice.TEXTS, practice.CODE, f"{key}-sovella", src))]
     return out
 
 

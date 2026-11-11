@@ -388,7 +388,7 @@ Two nuclei are both positive, so they repel each other. To fuse, they must come 
   <foreignObject x="9" y="34.5" width="49" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:26px">$0.6$</div></foreignObject>
   <foreignObject x="38" y="364.5" width="22" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:26px">$0$</div></foreignObject>
   <foreignObject x="502" y="344.5" width="80" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px">$r\ (\text{fm})$</div></foreignObject>
-  <foreignObject x="60" y="-7.5" width="93" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px">$U\ (\text{MeV})$</div></foreignObject>
+  <foreignObject x="84" y="14.5" width="93" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$U\ (\text{MeV})$</span></div></foreignObject>
   <rect x="72" y="359.5" width="54" height="22" fill="#b2f2bb"/>
   <line x1="130" y1="112" x2="126" y2="382" stroke="#2b8a3e" stroke-width="3" stroke-linecap="butt"/>
   <line x1="74" y1="382" x2="126" y2="382" stroke="#2b8a3e" stroke-width="3" stroke-linecap="butt"/>

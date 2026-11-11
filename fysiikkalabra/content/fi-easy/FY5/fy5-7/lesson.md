@@ -6,18 +6,6 @@
   <defs><linearGradient id="fy57h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><radialGradient id="fy57h-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></radialGradient><linearGradient id="fy57h-grass" gradientUnits="userSpaceOnUse" x1="0" y1="430" x2="0" y2="1500"><stop offset="0" stop-color="#b2f2bb"/><stop offset="1" stop-color="#2b8a3e"/></linearGradient></defs>
   <rect x="0" y="0" width="1200" height="600" fill="url(#fy57h-sky)"/>
   <circle cx="1080" cy="96" r="64" fill="#ffffff" fill-opacity="0.5"/>
-  <path d="M1126,115.5 L1147,114 L1129.5,102 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1110,136 L1129,145 L1120,126 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1086,145.5 L1098,163 L1099.5,142 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1060.5,142 L1062,163 L1074,145.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1040,126 L1031,145 L1050,136 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1030.5,102 L1013,114 L1034,115.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1034,76.5 L1013,78 L1030.5,90 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1050,56 L1031,47 L1040,66 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1074,46.5 L1062,29 L1060.5,50 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1099.5,50 L1098,29 L1086,46.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1120,66 L1129,47 L1110,56 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1129.5,90 L1147,78 L1126,76.5 Z" fill="#ffc078" stroke-linejoin="round"/>
   <circle cx="1080" cy="96" r="40" fill="url(#fy57h-sun)"/>
   <path d="M169,110 Q167,79.5 203,83 Q217.5,50.5 253.5,61.5 Q286,43.5 304,77.5 Q336.5,81 333,110 Z" fill="#ffffff" stroke-linejoin="round"/>
   <path d="M697,78 Q695.5,54 723.5,57 Q735,32 763,40 Q788,26 802,53 Q827,55.5 824.5,78 Z" fill="#ffffff" stroke-linejoin="round"/>
