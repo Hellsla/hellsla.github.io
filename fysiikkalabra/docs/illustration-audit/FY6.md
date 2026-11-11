@@ -70,7 +70,7 @@ Kuvia 137. Asteikko 1–5: F fysiikka, P pedagogiikka, V visuaalinen laatu, T ty
 | [`fy6-15/merkki-2`](catalog/FY6.html#fy6-15-merkki-2) | Sähköturvallisuus kotona ja työssä; kuvitus: tutkimusvaihe | 5 | 4 | 4 | 4 | PIDÄ |  |  | ODOTTAA |
 | [`fy6-15/merkki-3`](catalog/FY6.html#fy6-15-merkki-3) | Sähköturvallisuus kotona ja työssä; kuvitus: tutkimusvaihe | 5 | 4 | 4 | 4 | PIDÄ |  |  | ODOTTAA |
 | [`fy6-16/hero`](catalog/FY6.html#fy6-16-hero) | Soveltava luku: sähköauto ja kodin sähköjärjestelmä; avauskuva | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
-| [`fy6-16/koti`](catalog/FY6.html#fy6-16-koti) | Soveltava luku: sähköauto ja kodin sähköjärjestelmä; kaavio: teoria | 5 | 5 | 4 | 5 | KEVYT KORJAUS | Sulakkeiden arvot (3 · 25 A, 3 · 16 A, 16 A) ovat johdinten päällä valkoisilla taustalaatikoilla; ahdas vasen yläkulma. |  | ODOTTAA |
+| [`fy6-16/koti`](catalog/FY6.html#fy6-16-koti) | Soveltava luku: sähköauto ja kodin sähköjärjestelmä; kaavio: teoria | 5 | 5 | 4 | 5 | KEVYT KORJAUS | Sulakkeiden arvot (3 · 25 A, 3 · 16 A, 16 A) ovat johdinten päällä valkoisilla taustalaatikoilla; ahdas vasen yläkulma. |  | KEVYT KORJAUS hyväksytty (opettaja 2026-11-11) |
 | [`fy6-16/vaiheet`](catalog/FY6.html#fy6-16-vaiheet) | Soveltava luku: sähköauto ja kodin sähköjärjestelmä; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ | Vaiheiden kuormat pinottuina pääsulakkeen rajaa vasten. |  | ODOTTAA |
 | [`fy6-16/kayra`](catalog/FY6.html#fy6-16-kayra) | Soveltava luku: sähköauto ja kodin sähköjärjestelmä; kuvaaja: teoria | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy6-16/lataus-ex`](catalog/FY6.html#fy6-16-lataus-ex) | Soveltava luku: sähköauto ja kodin sähköjärjestelmä; kuvaaja: tehtävä | 5 | 4 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
@@ -93,7 +93,7 @@ Kuvia 137. Asteikko 1–5: F fysiikka, P pedagogiikka, V visuaalinen laatu, T ty
 | [`fy6-4/hero`](catalog/FY6.html#fy6-4-hero) | Vastusten sarja- ja rinnankytkennät; avauskuva | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy6-4/series`](catalog/FY6.html#fy6-4-series) | Vastusten sarja- ja rinnankytkennät; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy6-4/parallel`](catalog/FY6.html#fy6-4-parallel) | Vastusten sarja- ja rinnankytkennät; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
-| [`fy6-4/graph`](catalog/FY6.html#fy6-4-graph) | Vastusten sarja- ja rinnankytkennät; kuvaaja: teoria | 5 | 5 | 4 | 5 | KEVYT KORJAUS | "rinnan" on akselin nuolenkärjen ja käyrän pään päällä oikeassa alakulmassa. |  | ODOTTAA |
+| [`fy6-4/graph`](catalog/FY6.html#fy6-4-graph) | Vastusten sarja- ja rinnankytkennät; kuvaaja: teoria | 5 | 5 | 4 | 5 | KEVYT KORJAUS | "rinnan" on akselin nuolenkärjen ja käyrän pään päällä oikeassa alakulmassa. |  | KEVYT KORJAUS hyväksytty (opettaja 2026-11-11) |
 | [`fy6-4/mixed`](catalog/FY6.html#fy6-4-mixed) | Vastusten sarja- ja rinnankytkennät; kaavio: teoria | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy6-4/task-mixed`](catalog/FY6.html#fy6-4-task-mixed) | Vastusten sarja- ja rinnankytkennät; kaavio: tehtävä | 5 | 4 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy6-4/siirto-mixed`](catalog/FY6.html#fy6-4-siirto-mixed) | Vastusten sarja- ja rinnankytkennät; kaavio: tutkimusvaihe | 5 | 4 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
