@@ -1,9 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: db677c39e34ffbb6
+CONTENT-HASH: 3cdc03e66d7d0dbd
 
 ## Blocking
 
 ## Polish
+- [Minor] lesson.md, Sijoitus (vaihe 5/7) — the units in the two substitution fractions are now stacked `\tfrac{m}{s}`, which renders small and makes the denominator tall. The step 6 text, stage 1 and the check in stage 7 still use `m/s` — optional: use one notation throughout, e.g. `\text{m/s}` in the fraction.
 
 ## Checked
-- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: beat graph (huojunta-tehtava): rendered axis has grid lines every 0,1 s and numbers every 0,2 s, now as the aria-label says (checked in the built page); captures fy5-14-fi-390-huojunta.png, -1280-huojunta.png. Built preview, own Playwright captures (deviceScaleFactor 1) under /tmp/claude-0/-home-user/61da6444-3d3b-5f0d-8dfa-1c431aff38b7/scratchpad/visual/; inline-KaTeX wrap/overflow check on every changed passage at 390 px: none.
+- Delta (only the two substitution rows of the worked example changed). Opened fy5-14-example-390-1.png and fy5-14-example-390-2.png: both substitution rows render as aligned rows with no clipping or horizontal overflow at 390 px. The rest of the example (stages 1–7) kept its layout. Hash unchanged at the end.
+
+## Scores
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

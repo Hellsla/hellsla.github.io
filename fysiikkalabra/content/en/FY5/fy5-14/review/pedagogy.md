@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: cfa0054dcd039150
+CONTENT-HASH: 7ed4bfd7f2bf21d2
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: the corrected beats figure description (grid lines every 0.1 s, numbers every 0.2 s); the reading data stay the same and do not give the answer away.
+- Delta review: the worked example's Doppler unit fractions changed from m/s to \tfrac{m}{s} in the f_1 and f_2 lines; the numbers, symbols and steps are unchanged.
+- The change only affects the layout of the units in the formula, and the stage order and the step-by-step staging are intact.
+- Nothing in the diff discloses an answer or touches the inquiry, figures or exercises.

@@ -865,6 +865,7 @@ details.fold>summary{min-height:56px;gap:.2rem .7rem;flex-wrap:wrap;font:700 var
 details.fold>summary .fold-status,details.fold>summary .more-count{font:400 var(--fs-small) var(--sans);color:var(--ink-2)}
 details.fold[open]>summary{border-bottom:1px solid var(--line);margin-bottom:1.1rem}
 details.fold[open]{padding-bottom:.1rem}
+@media (max-width:26rem){details.fold>.fold-body{margin-inline:-.7rem}details.fold .task-card{padding-inline:.45rem}}   /* a phone: a task card inside a fold stood 37 px in from each edge (the fold's padding and border, then the card's), so a table with a formula column no longer fitted (fy8-15, fy5-6 at 360 px); the fold's heading keeps its place, its body and the cards in it reach closer to the edge */
 @media print{.fold-status{display:none}}
 details.fold.more{margin:0 0 1.25rem}   /* Tutki: the investigations after the first one (teacher 2026-11-06) */
 

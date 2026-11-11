@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: db677c39e34ffbb6
+CONTENT-HASH: 3cdc03e66d7d0dbd
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: the corrected beats figure description (grid lines every 0.1 s, numbers every 0.2 s); the reading data stay the same and do not give the answer away.
+- delta review round 1: the Doppler worked example (lesson.md ~l.588-595) now writes the speeds as stacked fractions (\tfrac{m}{s}) inside the quotient; numbers, symbols, steps and results (341,10 Hz; 285,78 Hz) unchanged.
+- the unit fractions make the cancelling of m/s visible in the ratio v/(v-v_s); legibility is not harmed in a display equation, and the staging of the example is unchanged.
+- nothing else in the lesson was touched; the earlier PASS stands.

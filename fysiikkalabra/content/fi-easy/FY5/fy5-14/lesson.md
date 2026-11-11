@@ -587,10 +587,10 @@ f_2 &= f_0 \cdot \frac{v}{v + v_\text{s}} \\
 ```latex
 \begin{aligned}
 &f_1 = f_0 \cdot \frac{v}{v - v_\text{s}} \\
-&\quad = 311\,\text{Hz} \cdot \frac{340\,\text{m/s}}{(340 - 30{,}0)\,\text{m/s}} \\
+&\quad = 311\,\text{Hz} \cdot \frac{340\,\tfrac{\text{m}}{\text{s}}}{(340 - 30{,}0)\,\tfrac{\text{m}}{\text{s}}} \\
 &\quad = 341{,}10\,\text{Hz} \\[6pt]
 &f_2 = f_0 \cdot \frac{v}{v + v_\text{s}} \\
-&\quad = 311\,\text{Hz} \cdot \frac{340\,\text{m/s}}{(340 + 30{,}0)\,\text{m/s}} \\
+&\quad = 311\,\text{Hz} \cdot \frac{340\,\tfrac{\text{m}}{\text{s}}}{(340 + 30{,}0)\,\tfrac{\text{m}}{\text{s}}} \\
 &\quad = 285{,}78\,\text{Hz} \\[6pt]
 &\Delta f = f_1 - f_2 \\
 &\quad = 341{,}10\,\text{Hz} - 285{,}78\,\text{Hz} \\
