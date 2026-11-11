@@ -55,6 +55,12 @@
 @media (max-width:600px){:root{--card-pad:1rem 1rem;--stage-space:2.25rem}}
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
+/* A wide screen reads from the back of the classroom (UI audit 2026-11-10, teacher 2026-11-11): from 1600 px the root
+   size grows evenly with the window, so the 17 px body text is 20 px at 1920 px and stays there on a wider screen.
+   Every size and width of the site is in rem, so the page keeps its proportions (the 80rem page is 1506 px at 1920).
+   The size is a share of the reader's own default (100 %), never a fixed pixel size. */
+@media (min-width:1600px){html{font-size:clamp(100%,calc(100% + (100vw - 1600px)*.0088),117.65%)}}
+@media print{html{font-size:100%}}
 body{margin:0;font:var(--sim-fs)/var(--sim-lh) var(--sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;
   background-image:radial-gradient(circle at 18% 8%,rgba(26,77,46,.06),transparent 32rem),radial-gradient(circle at 90% 0,rgba(26,77,46,.04),transparent 28rem);background-repeat:no-repeat}
 /* the front page's background shape (teacher 2026-11-04): Kiviruukin lukio's hero blob shape (his path, viewBox 0 0 1000 900)
@@ -85,11 +91,12 @@ header.top nav>a,.lang-menu>summary,.nav-menu>summary{display:inline-flex;align-
 header.top nav>a:hover,.lang-menu>summary:hover,.nav-menu>summary:hover{color:var(--ink);background:var(--bg-tint)}
 header.top nav>a:active,.lang-menu>summary:active{background:var(--line)}
 @media (max-width:29.99rem){.brand{gap:8px}.brand-mark{width:34px;height:34px}.brand-name small{letter-spacing:.06em;max-width:7.5rem}.lang-menu>summary{padding:0 6px;gap:.3rem}header.top{column-gap:8px}header.top nav{gap:2px}}   /* room for the menu button beside "Selkeä suomi" and under "Upper secondary physics" (two lines) at 360 px */
-/* Valikko (design audit 2026-11-10, P0-1): under 52rem the header's links no longer disappear one by one; they all give
+/* Valikko (design audit 2026-11-10, P0-1): under 58rem the header's links no longer disappear one by one; they all give
    way to one menu button beside the language control (a <details>, no script, like the language menu), so every page
-   of the header is reachable on a phone. From 52rem the links show and the button is gone. */
+   of the header is reachable on a phone. From 58rem the links show and the button is gone. The limit was 52rem until
+   Opettajalle joined the links (2026-11-11): the English header then needs 904 px to stay on one row. */
 .nav-menu{display:none;position:relative;margin:0}
-@media (max-width:51.99rem){header.top nav>a{display:none}.nav-menu{display:block}}
+@media (max-width:57.99rem){header.top nav>a{display:none}.nav-menu{display:block}}
 /* on a phone the word gives way to the three bars (the button keeps its name for a screen reader): "Selkeä suomi" and
    "English" beside the brand leave no room for it at 360 px */
 @media (max-width:29.99rem){.nav-menu-t{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
@@ -201,6 +208,7 @@ main.home+footer.bottom{margin-top:1.4rem}   /* 1.75rem left the Finnish page 2 
 .mod-row:focus-visible{outline-offset:0}
 .mod-row.coming .mod-code,.mod-row.coming .mod-title,.mod-row.coming .mod-q{color:var(--text-muted)}
 .mod-row.coming .mod-name{font-weight:500}
+.mod-soon{display:inline-block;margin-left:.35rem;padding:0 .45rem;border:1px solid var(--line);border-radius:999px;font:600 .75rem/1.5 var(--sans);letter-spacing:.02em;color:var(--ink-2);vertical-align:.08em}   /* a planned course says it is coming; the row keeps its height */
 .mod-row.coming .mod-icon{filter:grayscale(1);opacity:.55}
 .plan-list{margin-top:1.4rem}.mod-row.planned{cursor:default}
 .mod-row.coming:hover{background:none}.mod-row.coming:hover .mod-go{opacity:0}.mod-row.coming:hover .mod-title{color:var(--text-muted)}
@@ -356,6 +364,7 @@ main.module-page ol.lessons li.ch-card.soon>.ch-box{padding:.6rem;margin-bottom:
    is a count. The goals tile is a <details>: open, it takes the whole row, the tile at the left and the list beside it
    from 40rem, the list under it on a phone. */
 main.module-page ol#moduulin-loppu{margin-top:1.5rem}
+main.module-page ol#moduulin-loppu>li.ch-card{align-items:stretch}   /* the four tiles start level and end level (UI audit 2026-11-10, finding 12): on the list's baseline alignment the goals tile, whose first line is its picture, stood 19 px above the others, and a count of two lines made its tile taller */
 main.module-page li.me-goals>details{grid-row:2;margin:0 0 .6rem;border:1px solid var(--line);border-radius:12px;background:var(--surface);box-shadow:0 1px 2px rgba(20,23,30,.04);overflow:hidden}
 main.module-page li.me-goals>details>summary{display:block;list-style:none;cursor:pointer;padding:0 0 .6rem;min-height:0}
 main.module-page li.me-goals>details>summary::-webkit-details-marker{display:none}
@@ -419,7 +428,7 @@ ul.local-prepare a:hover{text-decoration:underline}
 ol.bank-list li.bank-item[hidden]{display:none}
 .bank-meta{display:flex;flex-wrap:wrap;align-items:center;gap:.2rem .7rem;flex-basis:100%;margin:.2rem 0 .45rem;font-size:var(--fs-small);line-height:1.45;color:var(--ink-2)}
 .bank-topic{font-weight:700;color:var(--accent-deep)}
-.bank-level{font-weight:700;color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:0 .5rem;font-variant-numeric:tabular-nums}
+.bank-level{font-weight:700;color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:0 .5rem;font-variant-numeric:tabular-nums}.bank-level{white-space:nowrap}.bank-level .bank-word{font-weight:500;color:var(--ink-2)}   /* "fysiikka F1–F2": the word lighter than its code, the chip never split over two lines */
 .tvt-used{margin:.6rem 0 0;font-size:var(--fs-ui)}
 .tvt-used a{font-weight:600}
 article.guide{padding-bottom:60vh} /* a short guide page: room below its last section, so following its link in the stage navigation brings that heading to the top */

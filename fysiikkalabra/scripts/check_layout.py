@@ -41,6 +41,11 @@ JS = """() => {
   if (window.flFitTables) window.flFitTables();   // lesson.js: a table still too wide for its box is stacked
   const out = [], V = (e) => e.checkVisibility();
   const el = document.scrollingElement, vw = document.documentElement.clientWidth;
+  // From 1600 px the whole page is drawn larger (site.css, 2026-11-11: the root size grows to 117.65 % at 1920 px, every
+  // size of the site is in rem). K is that enlargement, 1 under 1600 px. The two limits below that are a length of the
+  // drawing itself (a label overlap of 1 px, 240 px empty beside a column) are counted in the page's own scale, so the
+  // same layout passes or fails alike at 1280 px and enlarged at 1920 px; every other limit stays in real pixels.
+  const K = Math.max(1, parseFloat(getComputedStyle(document.documentElement).fontSize) / 16);
   if (el.scrollWidth > el.clientWidth + 1) out.push({what: 'page', over: el.scrollWidth - el.clientWidth, text: ''});
   for (const d of document.querySelectorAll('.katex-display')) {
     if (!d.checkVisibility()) continue;
@@ -90,7 +95,7 @@ JS = """() => {
       out.push({what: 'svg-text', over: Math.round(Math.max(r.left - x.b.left, x.b.right - r.right, r.top - x.b.top, x.b.bottom - r.bottom)), text: `"${x.t}" leaves the figure`});
     for (let i = 0; i < T.length; i++) for (let j = i + 1; j < T.length; j++) { const a = T[i].b, b = T[j].b;
       const ox = Math.min(a.right, b.right) - Math.max(a.left, b.left), oy = Math.min(a.bottom, b.bottom) - Math.max(a.top, b.top);
-      if (ox > 1 && oy > 1) out.push({what: 'svg-text', over: Math.round(Math.min(ox, oy)), text: `"${T[i].t}" overlaps "${T[j].t}"`}); }
+      if (ox > K && oy > K) out.push({what: 'svg-text', over: Math.round(Math.min(ox, oy)), text: `"${T[i].t}" overlaps "${T[j].t}"`}); }
   }
   const rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
   for (const c of document.querySelectorAll('.lab > *, .fig-row > *, .intro-row > *, .example > *'))
@@ -127,7 +132,7 @@ JS = """() => {
     for (const c of g.children) { if (!V(c) || getComputedStyle(c).position === 'sticky') continue; const k = Math.round(R(c).top); (rows[k] = rows[k] || []).push(R(c).height); }
     for (const hs of Object.values(rows)) if (hs.length > 1) {
       const hi = Math.max(...hs), lo = Math.min(...hs);
-      if (hi - lo > 240 && lo < 0.55 * hi) out.push({what: 'gap', over: Math.round(hi - lo), text: `${name(g)}: ${Math.round(hi - lo)} px empty beside the shorter column`});
+      if (hi - lo > 240 * K && lo < 0.55 * hi) out.push({what: 'gap', over: Math.round(hi - lo), text: `${name(g)}: ${Math.round(hi - lo)} px empty beside the shorter column`});
     }
   }
   // small: reading text keeps its size on a phone, and every control is big enough to hit

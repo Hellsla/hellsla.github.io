@@ -458,6 +458,11 @@ def texts(html):
     html = re.sub(r"\{\{t:([\w.]+)\}\}", lambda m: esc(T(m.group(1))), html)
     if grading_file():   # Työkalut in every language's footers (teacher 2026-11-08)
         html = html.replace('<a href="tietosuoja.html">', f'<a href="{TEACHER_PAGE}">{esc(T("site.tools"))}</a><a href="tietosuoja.html">', 1)
+        # Opettajalle in every page's header and phone menu (UI audit 2026-11-10, finding 15; teacher 2026-11-11): the classroom
+        # screen and the grading page were only behind the footer's small Työkalut link. The footer link stays.
+        link = f'<a href="{TEACHER_PAGE}">{esc(T("site.teacher_nav"))}</a>'
+        html = re.sub(r'(<a class="nav-booklets" [^>]*>[^<]*</a>)', lambda m: m.group(1) + link.replace("<a ", '<a class="nav-teacher" ', 1), html, count=1)
+        html = re.sub(r'(<li><a href="vihkot\.html">[^<]*</a></li>)', lambda m: m.group(1) + f"<li>{link}</li>", html, count=1)
     return html
 
 
@@ -480,7 +485,8 @@ def planned_row(p):
     the course has no content yet."""
     q = esc(p["text"])
     return (f'<li><div class="mod-row coming planned">{module_icons.img(p["icon"], 40)}'
-            f'<span class="mod-text"><span class="mod-name"><span class="mod-title">{esc(p["title"])}</span></span>'
+            # "tulossa" in words (UI audit 2026-11-10, finding 14): grey alone read as a broken link
+            f'<span class="mod-text"><span class="mod-name"><span class="mod-title">{esc(p["title"])}</span> <span class="mod-soon">{esc(T("site.upcoming").lower())}</span></span>'
             f'<span class="mod-q" title="{q}">{q}</span></span></div></li>')
 
 
@@ -1555,6 +1561,7 @@ for _page in SITE.rglob("*.html"):
     if "vendor" in _page.relative_to(SITE).parts: continue
     _old = _page.read_text(); _new = _ref.sub(lambda m: f'{m[1]}{m[2]}?v={_ver[m[2]]}"', _old)
     if "<table" in _new: _new = tablefit.fit(_new, re.search(r'<html[^>]*\blang="fi\b', _new[:400]) is not None)   # no table scrolls sideways (2026-11-08)
+    if 'class="ch-box"' in _new: _new = tablefit.cards(_new, re.search(r'<html[^>]*\blang="fi\b', _new[:400]) is not None)   # a card's very long word breaks at a syllable (2026-11-11)
     if _new != _old: _page.write_text(_new)
 if SITE.name == "site.tmp":                      # check the render, then swap it in; the old site comes back if the swap fails
     expected += ["site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js", "jatka.js", "ahjo.js", "lumatutor.js"] + card_files + assets

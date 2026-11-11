@@ -51,5 +51,31 @@ def fit(html, finnish):
     return CELL.sub(lambda m: m.group(1) + _cell(m.group(2).replace(SHY, ""), finnish) + m.group(3), html)
 
 
+CARD_TITLE = re.compile(r'(<div class="ch-box">(?:(?!</li>).)*?(?:<a href="[^"]*">|<span class="ch-title">))(.*?)(</a>|</span>)', re.S)
+CARD_WORD = re.compile(r"[A-Za-zÅÄÖåäö]{14,}")     # a card's title column holds about 14 letters: a shorter word goes whole to the next line
+
+
+PARTS = re.compile(r"(?<=[a-zåäö]{3})(?=(?:energia|asteikko|aalto|aallo|aika|uuni|ääni|aktiivi|ulottei))")
+
+
+def hyphenate_card(word):
+    """hyphenate_fi with the joints of a compound whose later part begins with a vowel: the syllable rule alone never
+    breaks before a vowel, so it would give "potentiaa-lienergia" and "puoliintumi-saika". The parts listed are the
+    ones the card titles have; a part not listed is simply not broken at its joint."""
+    return SHY.join(hyphenate_fi(part) for part in PARTS.split(word))
+
+
+def cards(html, finnish):
+    """The title of every chapter, unit and investigation card (cardgrid.py) on a Finnish page: soft hyphens in its
+    very long words, so that "Liukukitkakertoimen" breaks at a syllable with a hyphen and not in the middle of one
+    without (UI audit 2026-11-10, finding 16; site.css asks for hyphens:auto, which Chromium has no Finnish
+    dictionary for). Running it again changes nothing."""
+    if not finnish: return html
+    def one(m):
+        parts = SKIP.split(m.group(2).replace(SHY, ""))
+        return m.group(1) + "".join(p if i % 2 else CARD_WORD.sub(lambda w: hyphenate_card(w.group(0)), p) for i, p in enumerate(parts)) + m.group(3)
+    return CARD_TITLE.sub(one, html)
+
+
 if __name__ == "__main__":
     for w in sys.argv[1:]: print(hyphenate_fi(w).replace(SHY, "-"))
