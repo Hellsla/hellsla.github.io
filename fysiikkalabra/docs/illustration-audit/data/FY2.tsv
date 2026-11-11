@@ -1,0 +1,35 @@
+fy2-1/hero|5|5|5|5|PIDA|Pomppujen madaltuminen ja lämpömerkit kertovat energian muuntumisen.|
+fy2-1/energialajit|5|5|4|5|PIDA|
+fy2-1/energian-muuttuminen|5|4|3|5|KEVYT|"sähköenergia" leijuu pariston vieressä eikä kiinnity nuoleen.|
+fy2-1/sailyminen|5|5|5|5|PIDA|Summat täsmäävät; lämpö erottuu rasterilla eikä vain värillä.|
+fy2-1/kitka-pylvaat|5|4|3|5|KEVYT|Akselin nimi E (J) on kiinni rampin piirroksessa ja C-merkinnässä.|
+fy2-2/hero|5|5|5|4|KEVYT|Aurinko sädekehällä; talotyylissä pelkkä kiekko.|
+fy2-2/ketju|5|4|4|5|PIDA|
+fy2-2/tikapuut|5|5|3|5|KEVYT|Paikat oikein. "omena metrin ylös" menee tulitikun viiteviivan päälle; yläosa tyhjä.|
+fy2-2/sailyminen|5|5|4|3|KEVYT|Virtakaavio eri piirrostavalla kuin fy2-4/lamp (vaaleat tasavärit, ei harmaata tuloa).|
+fy2-2/tikapuut-kohteet|5|4|4|5|PIDA|
+fy2-3/hero|5|4|5|5|PIDA|
+fy2-3/bars|5|5|4|4|KEVYT|Pylväissä liukuväri, jolla ei ole merkitystä; fy2-6/fi-bars käyttää tasaväriä.|
+fy2-3/graph|5|5|5|5|PIDA|
+fy2-3/graph-ab|5|4|5|5|PIDA|
+fy2-4/hero|5|5|5|5|PIDA|
+fy2-4/lamp|5|5|5|5|PIDA|Malli energiavirtakaavioille: harmaa tulo, vihreä hyöty, oranssi lämpö, leveydet mittakaavassa.|
+fy2-4/pair|5|5|5|5|PIDA|Kaksi lamppua samassa mittakaavassa.|
+fy2-4/grid|5|5|4|5|PIDA|
+fy2-5/hero|5|4|5|5|PIDA|
+fy2-5/energia|5|3|4|5|PIDA|Lähinnä koristeellinen, mutta kantaa kaavan E = Hm.|
+fy2-5/lampoarvot|5|5|4|4|KEVYT|Liukuväri pylväissä, ks. fy2-3/bars.|
+fy2-5/etiketti|5|4|4|5|PIDA|
+fy2-6/hero|5|4|5|4|PIDA|Voimalaitosmaisema toistuu sarjassa kahdeksan kertaa; tämä on niistä perustelluin.|
+fy2-6/plants|5|5|4|5|PIDA|
+fy2-6/fi-bars|5|5|4|5|KEVYT|Vuosi 2024 ja lähde ovat vain leipätekstissä; kuva lainataan tehtäviin ja tieto vanhenee.|
+fy2-6/unit-power|5|3|3|4|KEVYT|Nimet ovat vasemmassa reunassa ja pisteet kaukana oikealla; ensimmäinen nimi on akseliviivan päällä.|
+fy2-7/hero|5|5|5|5|PIDA|
+fy2-7/grid|5|5|4|5|PIDA|
+fy2-7/district|5|5|4|5|KEVYT|"lämpölaitos" on kiinni kuvan vasemmassa reunassa.|
+fy2-7/storage|5|4|3|5|KEVYT|"pumppuvoimala" menee jakoviivan päälle.|
+fy2-7/sankey|5|4|3|3|KEVYT|Kolmas piirrostapa energiavirtakaavioille (tumma tasaväri ilman ääriviivaa).|
+fy2-8/hero|5|4|5|4|KEVYT|Aurinko sädekehällä; talotyylissä pelkkä kiekko.|
+fy2-8/greenhouse|5|5|4|4|KEVYT|Aurinko sädekehällä. Muuten sopiva yksinkertaistus.|
+fy2-8/emissions|5|5|5|5|PIDA|
+fy2-koe/fy2-k4-bars|5|4|4|4|PIDA|

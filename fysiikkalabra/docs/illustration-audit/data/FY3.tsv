@@ -1,0 +1,111 @@
+fy3-1/hero|5|4|5|5|PIDA|
+fy3-1/scene|5|5|5|5|PIDA|Sama punnus jousessa Maassa ja Kuussa: paino muuttuu, massa ei. Malliesimerkki tilannekuvasta, joka kantaa fysiikan.|
+fy3-1/forcemeter|4|5|4|4|KEVYT|Painon nuoli alkaa kappaleen alareunasta, kun saman luvun pick-kuvissa se alkaa keskeltä. Vaikutuspiste yhdenmukaiseksi (massakeskipiste).|
+fy3-1/force-extension|5|5|4|5|PIDA|
+fy3-1/weight-mass|5|5|5|5|PIDA|Kulmakertoimet vastaavat putoamiskiihtyvyyksiä (tarkistettu).|
+fy3-1/spring-points|5|4|4|5|PIDA|
+fy3-1/pick-rest|5|4|3|3|KEVYT|Vastausvaihtoehto. Kuva-ala on kolme kertaa sisältöä suurempi, ääriviiva ja nuolet vanhaa paksua tyyliä, voimien nimet ilman yläviivaa.|
+fy3-1/pick-weight-only|5|4|3|3|KEVYT|Ks. fy3-1/pick-rest.|
+fy3-1/pick-long-pull|5|4|3|3|KEVYT|Ks. fy3-1/pick-rest.|
+fy3-1/pick-extra|5|4|3|3|KEVYT|Ks. fy3-1/pick-rest.|
+fy3-10/hero|5|4|3|4|KEVYT|Harva sommittelu: kaksi ilmapalloa ja ikkuna, puolet pinnasta tyhjää.|
+fy3-10/scene|5|4|5|5|PIDA|
+fy3-10/mole-masses|5|5|5|5|PIDA|
+fy3-10/helium-ilma|5|5|4|5|PIDA|
+fy3-10/paine-ja-tekijat|5|5|4|5|PIDA|
+fy3-10/pt-suorat|5|4|4|5|PIDA|Suorien jatkeet kulkevat origon kautta (tarkistettu).|
+fy3-11/hero|5|4|5|4|PIDA|Voimalaitosmaisema toistuu sarjassa.|
+fy3-11/piston-work|5|5|5|4|KEVYT|Voimanuoli oranssi; paletissa oranssi on energian ja lämmön virta, voima punainen (fy3-1).|
+fy3-11/heat-engine|5|5|4|5|PIDA|
+fy3-11/heat-pump|5|5|3|4|KEVYT|Merkinnät hajallaan: Q_ulko nuolen alla, "leveys kuvaa tehoa" irrallaan oikeassa alakulmassa. Sama rakenne kuin heat-engine-kuvassa selkeyttäisi.|
+fy3-11/pv-work|5|5|5|5|PIDA|
+fy3-11/pv-isobaari|5|4|4|5|PIDA|
+fy3-12/hero|5|5|5|5|PIDA|
+fy3-12/scene|5|4|5|5|PIDA|
+fy3-12/heat-transfer|5|5|4|5|PIDA|
+fy3-12/energy-balance|5|5|4|3|KEVYT|Sama asia kuin fy2-8/greenhouse, mutta piirretty eri tavalla (ilmakehä, nuolet, Aurinko). Yksi yhteinen esitystapa molempiin.|
+fy3-12/wall-temperature|5|5|5|5|PIDA|Lämpötilaprofiili seinän läpi on täsmälleen se, mitä kaava kuvaa.|
+fy3-12/earth-flows|5|4|3|4|KEVYT|Maapallo on nimetty ympyrä, vaikka saman luvun avauskuvassa on piirretty Maa. Käytä samaa Maata.|
+fy3-13/hero|5|5|5|5|PIDA|Koelaitteisto kolmessa lämpötilassa.|
+fy3-14/hero|5|4|3|4|KEVYT|Lasi ja jääpalamuotti keskellä tyhjää pöytää; kaksi kolmasosaa kuvasta on taustaa.|
+fy3-14/energy-bars|5|5|4|5|PIDA|
+fy3-15/hero|5|4|3|4|KEVYT|Alapuolisko on tyhjää lunta; kaukolämpöputket katkeavat kuvan reunaan.|
+fy3-15/scene|5|4|4|5|PIDA|
+fy3-15/chain-bars|5|4|4|4|PIDA|
+fy3-16/hero|5|4|5|4|KEVYT|Aurinko sädekehällä; talotyylissä pelkkä kiekko.|
+fy3-2/hero|5|4|4|5|PIDA|
+fy3-2/carry-lift|5|5|4|4|KEVYT|Voimanuoli oranssi (ks. fy3-11/piston-work).|
+fy3-2/joule|5|5|4|5|PIDA|Joulen koe tunnistettavana laitteena.|
+fy3-2/work-graphs|5|4|3|5|KEVYT|Akselilla s on sekä akselin nimenä että asteikkomerkkinä vierekkäin, samoin F: lukija ei erota suuretta ja sen arvoa.|
+fy3-2/spring-work|5|5|5|5|PIDA|
+fy3-2/lift-work|5|5|3|4|KEVYT|F on oranssi ja G musta samassa voimakuviossa; neljä kaavaa irrallaan oikealla.|
+fy3-2/pull-steps|5|4|4|5|PIDA|
+fy3-3/hero|5|4|4|4|KEVYT|Lämpömittari seisoo tiellä ilman tukea, ja Aurinko on sädekehällä. Saman luvun scene-kuvassa mittari on tolpassa.|
+fy3-3/scene|5|4|5|5|PIDA|
+fy3-3/system|5|5|5|5|PIDA|Systeemi, rajapinta ja ympäristö nimetty viiteviivoin todelliseen laitteeseen.|
+fy3-3/micro-model|5|5|4|5|PIDA|
+fy3-3/kelvin-scale|5|5|4|5|PIDA|Asteikot mittakaavassa (tarkistettu).|
+fy3-3/extrapolation|5|5|3|5|KEVYT|"p = 0" on katkoviivan päällä, ja akselin vasen merkki on −270, vaikka piste on kohdassa −273.|
+fy3-3/extrapolation-points|5|4|4|5|PIDA|
+fy3-4/hero|5|5|5|5|PIDA|
+fy3-4/scene|5|4|5|5|PIDA|
+fy3-4/pressure-area|5|5|4|4|KEVYT|Voimanuolet mustia; FY3:ssa voima on piirretty kolmella värillä (punainen fy3-1, oranssi fy3-2 ja fy3-11, musta tässä).|
+fy3-4/water-column|5|5|4|4|KEVYT|Painon nuoli musta, ks. fy3-4/pressure-area.|
+fy3-4/pressure-depth|5|5|5|5|PIDA|
+fy3-4/two-liquids|5|4|4|5|PIDA|
+fy3-5/hero|5|5|5|5|PIDA|Pumpun lämpeneminen näkyy värinä ja lämpöviivoina; sarjan parhaita avauskuvia.|
+fy3-5/two-ways|5|5|5|5|PIDA|
+fy3-5/energy-balance|5|5|4|5|PIDA|Lohkokaavio on tässä oikea valinta: asia on merkkisääntö, ei laite.|
+fy3-5/work-sign|5|5|4|5|PIDA|
+fy3-5/piston-force|5|4|4|5|PIDA|
+fy3-6/hero|5|5|5|4|KEVYT|Avauskuvien malli, mutta Aurinko on sädekehällä.|
+fy3-6/scene|5|4|5|5|PIDA|
+fy3-6/water-sand|5|5|5|5|PIDA|Sama Q, eri ΔT mittakaavassa, hakasulkeilla merkitty.|
+fy3-6/c-bars|5|5|4|5|PIDA|
+fy3-6/calorimeter|5|5|4|5|PIDA|
+fy3-6/heating-line|5|4|4|5|PIDA|
+fy3-7/hero|5|5|5|5|PIDA|
+fy3-7/scene|5|4|4|5|PIDA|
+fy3-7/micro-model|5|5|5|5|PIDA|
+fy3-7/heating-curve|5|5|4|5|PIDA|Tasanteiden pituudet ja kaltevuudet oikeassa suhteessa.|
+fy3-7/phase-diagram|5|5|4|5|KEVYT|Kiinteän ja nesteen alueilla on sama vaaleansininen täyttö; alueet erottuvat vain rajaviivasta.|
+fy3-7/melting-curve|5|4|4|5|PIDA|
+fy3-8/hero|5|5|5|5|PIDA|
+fy3-8/scene|5|4|5|4|KEVYT|Aurinko sädekehällä.|
+fy3-8/particles|5|5|4|5|PIDA|
+fy3-8/rod-expansion|5|5|5|5|PIDA|
+fy3-8/volume-expansion|5|5|4|5|PIDA|
+fy3-8/length-graph|5|4|4|5|PIDA|
+fy3-9/hero|5|5|5|5|PIDA|
+fy3-9/micro-boyle|5|5|5|5|PIDA|Törmäysmerkit seinällä tekevät paineen näkyväksi.|
+fy3-9/boyle-graphs|5|5|4|5|PIDA|
+fy3-9/absolute-zero|5|5|4|5|KEVYT|"−273°C" ilman väliä luvun ja yksikön välissä.|
+fy3-9/iso-processes|5|5|4|5|PIDA|
+fy3-9/boyle-points|5|4|4|5|PIDA|
+fy3-9/pick-boyle|5|4|3|5|KEVYT|Akselin nimi p (kPa) on kiinni kuvan yläreunassa.|
+fy3-9/pick-line|5|4|3|5|KEVYT|Ks. fy3-9/pick-boyle.|
+fy3-9/pick-flat|5|4|3|5|KEVYT|Ks. fy3-9/pick-boyle.|
+fy3-9/pick-rising|5|4|3|5|KEVYT|Ks. fy3-9/pick-boyle.|
+fy3-13/~inquiry-1|5|4|3|3|KEVYT|Käsin upotettu kuvaaja: ei nuolenkärkiä, akselin nimi kuvaajan sisällä, eri asteikkotyyli kuin muissa kuvaajissa.|
+fy3-13/~inquiry-2|5|4|3|3|KEVYT|Ks. fy3-13/~inquiry-1.|
+fy3-13/~inquiry-3|5|4|3|3|KEVYT|Ks. fy3-13/~inquiry-1.|
+fy3-13/~inquiry-4|5|4|3|3|KEVYT|Ks. fy3-13/~inquiry-1.|
+fy3-13/~inquiry-5|5|4|3|3|KEVYT|Ks. fy3-13/~inquiry-1.|
+fy3-13/~lesson-2|5|5|4|4|PIDA|Kaasulämpömittari laitteena. Käsin upotettu.|
+fy3-13/~lesson-3|5|5|4|3|KEVYT|Ks. fy3-13/~inquiry-1; sisältö hyvä (epävarmuusviuhka).|
+fy3-14/~lesson-2|5|5|4|5|PIDA|
+fy3-14/~lesson-3|5|5|3|4|KEVYT|Oikean yläkulman tekstit ovat kiinni kuvan reunassa.|
+fy3-14/~lesson-4|5|4|4|4|PIDA|
+fy3-15/~lesson-2|5|5|4|3|KEVYT|Energiavirtakaavio neljännellä piirrostavalla (tumma oranssi ja musta); "polttoaine 500 MW" kiinni vasemmassa reunassa. Summat täsmäävät.|
+fy3-15/~lesson-3|5|4|4|4|PIDA|
+fy3-15/~lesson-4|5|5|4|4|PIDA|
+fy3-15/~lesson-5|5|5|4|5|PIDA|
+fy3-16/~inquiry-1|5|4|4|4|PIDA|
+fy3-16/~lesson-2|5|5|4|5|PIDA|
+fy3-16/~lesson-3|5|4|4|5|PIDA|
+fy3-16/~lesson-4|5|5|4|5|PIDA|Jäähdytyskierto tunnistettavina osina.|
+fy3-sovella/fy3-s1-graph|5|4|3|3|KEVYT|Koekuvaajien poikkeava piirrostapa; yksikkö K/min pienenä pystymurtona.|
+fy3-koe/fy3-k1-work|5|4|4|3|KEVYT|Koekuvaajien poikkeava piirrostapa (ks. fy1-koe/fy1-k1-walk).|
+fy3-koe/fy3-k1-heating|5|4|4|3|KEVYT|Ks. fy3-koe/fy3-k1-work.|
+fy3-koe/fy3-k2-graph|5|4|3|3|KEVYT|Ks. fy3-koe/fy3-k1-work; lisäksi "θ0 ≈ −273 °C" on katkoviivan päällä.|
+fy3-koe/fy3-k6-graph|5|4|4|3|KEVYT|Ks. fy3-koe/fy3-k1-work.|
