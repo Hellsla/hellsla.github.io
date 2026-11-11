@@ -1,27 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 72918ee2d2e88fc2
+CONTENT-HASH: 77345b49fdf269d8
 
 ## Blocking
-- none
 
 ## Polish
-- sim.js (delta 2026-11-10): while the pressure says 'mittaus tasaantuu', the hit rate is still shown as a number from the same < 0,5 s window (about ±25 % at 0,1 s with N = 100). Hiding it too, or showing it only after SETTLE, would match the pressure readout; exp-1/exp-2 use hitRate.
-- inquiry.json:106 (punnitus, Reasonableness): "5.00 · 0.041 ≈ 0.21 mol of any gas" uses the molar volume before the lesson has given it, so it assumes the result the activity is building towards. Check backwards only, or say that the number comes from later.
-- inquiry.json:326 (laske-r, Principle): "the same for all ideal gases, because the gas laws do not depend on the type of gas" is still close to circular. Name the evidence: "because m/M was the same for every gas at the same p, V and T".
-- inquiry.json:393 (virhe, third option feedback): `\text{l}` should be `\textsf{l}`, as everywhere else.
-- inquiry.json:168 (kokeile, model box): "A change in volume does not change the speeds … so the temperature stays the same" is true of the model. Consider adding "(as in a slow compression in which the gas keeps the temperature of its surroundings)", so the student does not conclude that a real gas compressed quickly stays at the same temperature.
-- lesson.md:230: "the temperature in kelvins is directly proportional to the mean kinetic energy". For point particles this is right (C). "Mean kinetic energy of the motion from place to place" would match the guardrail wording used in the other chapters.
+- lesson.md:322 — "directly proportional to the mean kinetic energy of the particles": air, N₂ and CO₂ also rotate. — use the guardrail wording, "the mean kinetic energy of the particles' motion from place to place".
+- inquiry.json punnitus solution, Reasonableness — "$5.00 \cdot 0.041$" has no unit or source. — "about $0.041\,\text{mol}$ per litre ($1/24\,\textsf{l/mol}$)".
+- inquiry.json taulukko — row 3 is $3.91$, $2\,\%$ low; my sim run gave $3.98$. It is within the noise, so optional.
 
 ## Checked
-- delta review 2026-11-10 (measurement window reset, teacher's FY3 brief): sim.js sync() empties the average before any state change and advance() runs after it, so every averaged hit belongs to the new (N, T, V); particles keep positions and velocities apart from the existing √T rescale, N thermalize and isothermal piston squeeze, so the reset fakes nothing: pMeasured is still impulse/perimeter/time. Measurements: ratio 0,93–1,06 at 0,7–2 s after a change, long-run means 0,987–1,019 at six states (p ∝ NT/V emerges). Bar clamped at 1,05·top and the axis frozen while settling, no number shown; simState.settling = tAvg < 0,5 s; 'Nollaa mittaus ja odota' in the inquiry stays valid. Hashes equal at start and end.
-- delta review 2026-11-07 round 2 (follow-up consistency edits): inquiry 'Find the error' feedbacks: pressure in Pa with m³ (1 Pa·m³ = 1 J) and litres only with kPa (1 kPa·l = 1 J) are correct and match the lesson's 1 kPa·l = 1 J; kPa with m³ gives a factor 1000 error, right; each feedback still says the error is elsewhere, consistent with the step's correct option; litre as \textsf{l} as in the lesson. Hashes equal at start and end.
-- delta review 2026-11-07 (teacher's proofread replacement texts): p = absolute pressure, T kelvin temperature; unit argument Pa·m³ = N·m = J and kPa·l = 1000 Pa·0,001 m³ = 1 J are correct and consistent with R = 8,31 J/(mol·K); inquiry and exit-ticket edits are typesetting only, numbers unchanged (exit ticket n = 0,601 mol rechecked). English text carries the same meaning as fi.
-- Both blocking items of round 1 are fixed. Key idea now uses a rigid glass flask pumped empty, which matches punnitus. The check-2 Principle now reads "From pV = nRT the average pressure satisfies p ∝ NT/V", with no k and no "at every moment".
-- I recomputed every number in one script and it agrees with the lesson and with lesson-answers.py. The checks were the masses against n = pV/(RT) (scatter ≤ 0.022 g), m/M (spread 0.56 %) and the mean 0.2071 mol giving R 8.32. Also checked were laske-r 8.302 with its mistakes 121.7, 8302 and 0.008302, the worked example (0.2073 mol, 0.83 g, 6.0 g, 24.1 l/mol) and virhe (1.2 and 0.083 mol). Siirto gives 91 200 mol and 2645 kg, with mistakes 9870 and 2.64, and 3360 → 2640 kg. The rest are check-c2 1.068, check-2 3.0 (mistakes 2.25 and 1.69), exp-2 50 (mistakes 200, 71 and 25), the exit ticket 0.601 mol and kertaus 200 kPa.
-- The taulukko values pV/(NT) are 1.05, 1.00, 0.98, 0.98 and 0.99, and every row can be set with the sliders' steps.
-- sim.js: total impulse divided by the perimeter equals NkT/(LxLy). P_REF is consistent with this, the temperature scales as v ∝ √T, the thermalisation after a change of N is exact, and a change of volume leaves the speeds unchanged.
-- exp-1 and exp-2 lock T and V and vary N, and simState gives pMeasured and hitRate.
-- Every choice item has exactly one correct option. Each distractor's feedback is right, including the pred-1 argument "more frequent but weaker hits".
-- Figures: the speed arrows are 2.67 : 1 against √(29/4) = 2.69. The 2T arrows are 1.39× (√2 is 1.41). The particle counts and the halved volume in paine-ja-tekijat are right, and the mole-mass bars are to scale.
-- The model's conditions are stated: point particles, no interaction energy, failure at high p and low T, T in kelvins.
-- Scope: the FY3 content "ideaalikaasun tilanyhtälö".
+- Recomputed every number in one script with my own formulas, and all match: the four m/M values, R from the mean (8.32) and from He (8.302) with the C/l/kPa mistakes, the worked example (0.2073 mol, 0.83 g, air 6.0 g, 24 l/mol), virhe, siirto (2645 kg; mistakes 9870 and 2.64; the 3360·293/373 check), check-c2 (1.068), check-2 (3.0, 2.25, 1.69), the exit ticket (0.601 mol), exp-2 (50, 70.7, 4.00, 0.50) and every pV/(NT) entry in taulukko.
+- Sim physics: 2D kinetic theory p = NkT/A, the impulse per perimeter length, ⟨vx²⟩ = ⟨vy²⟩ = kT/m kept exactly, v ∝ √T, and an isothermal change of V (stated in the model box).
+- Ran the preview in Playwright with simAdvance(20): measured/model is 0.975–1.046 over 9 states, including exp-1, exp-2 and check-2's state. At N = 20 the 2 s averages vary by ±14 % (sd 6 %), so the "≈ ±10 %" claim holds.
+- exp-1 and exp-2 lock T and V and vary only N, and simState gives pMeasured and hitRate. The new exp-2 tolerance of 0.1 accepts only N = 50 on the step-10 slider.
+- Figures to scale: the He/air arrows are 2.67 against √(29/4) = 2.69, the mole bars 7.25 and 11.0, the 2T arrows √2 longer, 2N has twice the particles, V/2 half the height.
+- Exactly one correct option in each choice. The distractors' feedback names the real mechanism (hit rate against momentum per hit, no particle collisions).
+- Limits (high p, low T), absolute pressure, kelvins and 1 kPa·l = 1 J are stated where they are used, and the lesson stays within FY3's central contents.
+- The weighing data is labelled invented, and the sim's numbers are called model values.

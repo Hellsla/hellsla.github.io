@@ -245,7 +245,7 @@
         "prompt": "Lämpötila kaksinkertaistettiin $600\\,\\text{K}$:iin. Millä hiukkasmäärällä paine pysyy arvossa $p/p_\\text{ref} = 1{,}00$?",
         "answer": 50,
         "unit": "",
-        "tolerance": 0.02,
+        "tolerance": 0.1,
         "hints": [
           "Kasvattiko lämpötilan nousu painetta? Kuinka moninkertaiseksi? Katso rivi $N = 100$.",
           "Kokeen 1 mukaan paine on verrannollinen hiukkasmäärään. Kuinka paljon hiukkasmäärää pitää muuttaa, jotta kaksinkertainen paine palaa ennalleen?",
