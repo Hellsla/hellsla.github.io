@@ -28,7 +28,7 @@ Kuvia 155. Asteikko 1–5: F fysiikka, P pedagogiikka, V visuaalinen laatu, T ty
 | [`fy5-12/kuvio`](catalog/FY5.html#fy5-12-kuvio) | Aaltojen yhteisvaikutus: superpositio ja interferenssi; kaavio: teoria | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy5-12/matkaero`](catalog/FY5.html#fy5-12-matkaero) | Aaltojen yhteisvaikutus: superpositio ja interferenssi; kaavio: teoria | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy5-12/ehdot`](catalog/FY5.html#fy5-12-ehdot) | Aaltojen yhteisvaikutus: superpositio ja interferenssi; kaavio: teoria | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
-| [`fy5-12/fourier`](catalog/FY5.html#fy5-12-fourier) | Aaltojen yhteisvaikutus: superpositio ja interferenssi; kuvaaja: teoria | 5 | 5 | 3 | 5 | KEVYT KORJAUS | "signaali" on käyrän huipun alla kiinni käyrässä. |  | ODOTTAA |
+| [`fy5-12/fourier`](catalog/FY5.html#fy5-12-fourier) | Aaltojen yhteisvaikutus: superpositio ja interferenssi; kuvaaja: teoria | 5 | 5 | 3 | 5 | KEVYT KORJAUS | "signaali" on käyrän huipun alla kiinni käyrässä. |  | KEVYT KORJAUS hyväksytty (opettaja 2026-11-11) |
 | [`fy5-13/hero`](catalog/FY5.html#fy5-13-hero) | Seisova aalto: solmut, kuvut ja ominaistaajuudet; avauskuva | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy5-13/superpositio`](catalog/FY5.html#fy5-13-superpositio) | Seisova aalto: solmut, kuvut ja ominaistaajuudet; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy5-13/solmut`](catalog/FY5.html#fy5-13-solmut) | Seisova aalto: solmut, kuvut ja ominaistaajuudet; kaavio: teoria | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
