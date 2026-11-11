@@ -156,6 +156,7 @@ new p5((p) => {
     };
     p.background(250);
     const v = pm;                                                // one scale (1, 2 or 5 · 10ⁿ) for the gauge and the bars
+    if (!top) [top, tStep] = scale(1);                           // before the first settled average: the axis of the starting state, so no tick is drawn at 0/0
     if (!settling && (v * 1.05 > top || v < 0.4 * top)) [top, tStep] = scale(v);
     const nT = Math.round(top / tStep), yT = 8 + ts(14);
 
