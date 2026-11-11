@@ -32,7 +32,7 @@ def co2():
     f = Fig("lt-co2", 380, f"Kuvaaja: hiilidioksidin vuosikeskiarvo Mauna Loalla vuosina {y0}–{y1} miljoonasosina (ppm). "
             "Vaaka-akselilla on vuosi, pystyakselilla pitoisuus, ja pystyakseli alkaa arvosta 300 ppm. Käyrä nousee koko ajan "
             "ja jyrkkenee loppua kohti. Arvot voi lukea kuvaajasta, ja ne ovat myös ladattavassa aineistossa.")
-    ax = Axes(f, (96, 320), (500, 50), x=(1955, 2030), y=(300, 440), xticks=[1960, 1980, 2000, 2020], yticks=[300, 320, 340, 360, 380, 400, 420, 440],
+    ax = Axes(f, (96, 320), (490, 64), x=(1955, 2030), y=(300, 440), xticks=[1960, 1980, 2000, 2020], yticks=[300, 320, 340, 360, 380, 400, 420, 440],
               xlabel=r"\text{vuosi}", ylabel=r"\mathrm{CO_2}\ (\text{ppm})", origin_label=False, xfmt=lambda v: str(int(v)))
     f.tex(96 - 12, 320, "300", "end")
     y_break(f, 96, 320)
@@ -46,14 +46,14 @@ def lampotila():
             "(NASA GISTEMP v4). Jokainen vuosi on pylväs: punainen pylväs on vertailujaksoa lämpimämpi vuosi, sininen kylmempi. "
             "Musta vaakaviiva on kunkin vuosikymmenen keskiarvo. Pylväät vaihtelevat vuodesta toiseen, mutta vuosikymmenten "
             "keskiarvot nousevat 1970-luvulta alkaen joka vuosikymmen.")
-    ax = Axes(f, (96, 340), (500, 60), x=(1875, 2030), y=(-0.6, 1.4), xticks=[1880, 1920, 1960, 2000], yticks=[-0.6, -0.3, 0, 0.3, 0.6, 0.9, 1.2],
+    ax = Axes(f, (96, 340), (490, 60), x=(1875, 2030), y=(-0.6, 1.4), xticks=[1900, 1940, 1980, 2020], yticks=[-0.6, -0.3, 0, 0.3, 0.6, 0.9, 1.2],
               xlabel=r"\text{vuosi}", ylabel=r"\Delta T\ (^\circ\text{C})", origin_label=False, xfmt=lambda v: str(int(v)), yfmt=lambda v: fi(v, 1))
     f.tex(96 - 12, 340, fi(-0.6, 1), "end")
     w = (ax.X(1) - ax.X(0)) * 0.78
     for y, v in s:
         top, bot = (ax.Y(v), ax.Y(0)) if v >= 0 else (ax.Y(0), ax.Y(v))
         f.rect(ax.X(y) - w / 2, top, w, max(bot - top, 0.5), HOT if v >= 0 else COLD)
-    f.line(96, ax.Y(0), 500, ax.Y(0), INK, 1.5)
+    f.line(96, ax.Y(0), 490, ax.Y(0), INK, 1.5)
     for d, m, k in decades(s):
         ax.line([(d - 0.4, m), (d + k - 0.6, m)], INK, 3.5)
     f.line(112, 80, 140, 80, INK, 3.5); f.tex(148, 80, r"\text{vuosikymmenen keskiarvo}", size=20)
@@ -148,7 +148,7 @@ def _disk(f, cx, cy, r_out, r_letters, r_in, label):
         f.line(cx + (r_in or r_letters - 20) * math.cos(a), cy + (r_in or r_letters - 20) * math.sin(a), cx + r_out * math.cos(a), cy + r_out * math.sin(a), RULE, 1.2)
     for i, ch in enumerate(ALPHABET):
         a = math.radians(-90 + i * 360 / k)
-        f.tex(cx + r_letters * math.cos(a), cy + r_letters * math.sin(a), r"\text{" + ch + "}", "middle", size=17, w=18)
+        f.tex(cx + r_letters * math.cos(a), cy + r_letters * math.sin(a), r"\text{" + ch + "}", "middle", size=17, w=16)
     f.line(cx - 6, cy, cx + 6, cy, INK, 1.5); f.line(cx, cy - 6, cx, cy + 6, INK, 1.5)
     f.tex(cx, cy + r_out + 22, label, "middle", size=20)
 
@@ -158,7 +158,7 @@ def salakiekko():
             "29 kirjainta A:sta Ö:hön myötäpäivään. Oikealla pienempi sisäkiekko, jonka reunalla ovat samat kirjaimet. Kiekot "
             "leikataan irti, pieni asetetaan ison päälle ja keskelle pannaan nasta, jolloin sisäkiekkoa voi kääntää.")
     _disk(f, 165, 172, 160, 143, 126, r"\text{ulkokiekko}")
-    _disk(f, 462, 172, 122, 104, 0, r"\text{sisäkiekko}")
+    _disk(f, 462, 172, 122, 110, 0, r"\text{sisäkiekko}")
     return f.svg()
 
 

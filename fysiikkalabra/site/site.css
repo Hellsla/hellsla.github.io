@@ -1672,13 +1672,12 @@ main.kr-theme{font-family:"Work Sans",var(--sans)}
    and section headings, cards that wrap to one column on a phone; nothing scrolls sideways */
 :root:has(main.kr-team){--ahjo-head:"Lato",var(--sans);--ahjo-text:"Work Sans",var(--sans)}
 main.kr-team{max-width:68rem}
-.kr-team :is(p,ul,ol){max-width:46rem}
+.kr-team :is(p,ul,ol){max-width:44rem}
 .kr-team .kr-stage-index,.kr-team .kr-cards,.kr-team .kr-ahjo,.kr-team .kr-roles,.kr-team .kr-stage-grid,.kr-team .kr-two,.kr-team .kr-quick ol,.kr-team .kr-phases{max-width:none}
 .kr-nav{margin-top:1rem}
 .kr-head{padding-bottom:.75rem;border-bottom:4px solid var(--kr-pink)}
 .kr-head h1{margin:.1rem 0 .4rem;font-size:clamp(1.6rem,1.25rem + 1.4vw,2.35rem);line-height:1.15}
 .kr-head .lead{margin:0}
-.kr-head .ahjo-eyebrow{max-width:44rem}                           /* a line of text is at most 44rem (check_layout.py) */
 .kr-team h3{font-size:1.125rem;margin:1.25rem 0 .4rem}
 .kr-team .ahjo-sec>h2{margin-top:0}
 .kr-quick ol{display:grid;grid-template-columns:repeat(auto-fit,minmax(11.5rem,1fr));gap:.6rem;margin:0 0 2.25rem;padding:0;list-style:none}
@@ -1927,7 +1926,7 @@ main.kr-team{max-width:68rem}
    rather than a textbook page. Mobile first, one column on a phone; the workshop cards, templates and the participant's
    material print cleanly (the participant's material on its own page, a single template alone with Tulosta). */
 .lt-course :is(.lt-glance-list,.lt-path,.lt-wcards,.lt-qcards,.lt-meetings,.lt-portfolio,.lt-steps3,.lt-task,.lt-timeline,.lt-tpl-index,.lt-models,.lt-own,.lt-observe,.lt-goals,.lt-req,.lt-checks){max-width:none}
-.lt-course .lt-form :is(p,ul){max-width:46rem}
+.lt-course .lt-form :is(p,ul){max-width:44rem}
 .lt-glance{margin:1.25rem 0 1.75rem}
 .lt-glance>h2{margin:0 0 .6rem;font-size:1.25rem}
 .lt-glance-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(11.5rem,1fr));gap:.6rem;margin:0;padding:0;list-style:none}
@@ -2062,6 +2061,7 @@ main.kr-team{max-width:68rem}
 .lt-safety-box .ahjo-icon{flex:none;color:var(--kr-navy)}
 .lt-safety-box ul{margin:0}
 .lt-timeline{margin:0;padding:0;list-style:none}
+.lt-timeline,.lt-own,.lt-observe{max-width:44rem}                 /* a line of text is at most 44rem (check_layout.py) */
 .lt-timeline>li{display:grid;grid-template-columns:4.6rem 1fr;gap:.8rem;padding:.7rem 0;border-bottom:1px solid var(--line-2)}
 @media(max-width:47.99rem){.lt-timeline>li{grid-template-columns:1fr;gap:.25rem}.lt-tl-time{justify-self:start}}   /* a narrow screen: the time above its step, the whole width for the text */
 .lt-tl-time{align-self:start;padding:.15rem .4rem;border-radius:8px;background:var(--kr-navy);color:#fff;font:700 var(--fs-small)/1.4 var(--ahjo-head);text-align:center;white-space:nowrap}
