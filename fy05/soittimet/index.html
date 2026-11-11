@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seisova aalto soittimessa · FY05</title>
+<style>
+  /* ---------- yhteinen ulkoasu (sama kaikissa FY05-simulaatioissa) ----------
+     Mitoitus on tehty luokkahuoneen näyttöä varten: peruskoko seuraa ikkunan kokoa
+     (16:9-upotuksessa noin 4 % korkeudesta) ja kaikki mitat ovat em-yksiköissä,
+     joten koko käyttöliittymä skaalautuu kuin kalvo. ?koko=1,2 suurentaa kaiken 20 %. */
+  :root{
+    --bg:#ffffff; --panel:#f6f6f3;
+    --ink:#2b2e33; --ink-2:#555a61; --ink-3:#858a91;
+    --line:#e2e2de; --line-2:#c6c6c0;
+    --accent:#2f6f9f; --accent-soft:#e3edf6;
+    --c-blue:#2a7aab; --c-red:#c2404f; --c-orange:#d8761f; --c-green:#35895a; --c-violet:#7a62b0;
+    --font:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    --koko:1;
+  }
+  *{box-sizing:border-box}
+  html{font-size:calc(clamp(12px,min(2.75vw,4vh),60px) * var(--koko))}
+  html,body{margin:0;height:100%;overflow:hidden;background:var(--bg);color:var(--ink);
+    -webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+  body{font-family:var(--font);font-size:1rem;line-height:1.3}
+  .app{position:fixed;inset:0;display:grid;grid-template-columns:minmax(0,1fr) auto}
+  .app.is-bottom{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto}
+  .stage{position:relative;min-width:0;min-height:0;overflow:hidden}
+  #cv{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none;
+    user-select:none;-webkit-user-select:none}
+  .panel{width:13.4em;background:var(--panel);border-left:1px solid var(--line);
+    padding:.55em .7em .5em;display:flex;flex-direction:column;gap:.35em;overflow:hidden}
+  .app.is-bottom .panel{width:auto;font-size:.92em;border-left:0;border-top:1px solid var(--line);flex-direction:row;
+    flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.35em 1.2em;padding:.4em 1em .5em}
+  .group{display:flex;flex-direction:column;gap:.15em;min-width:0}
+  .ctl{display:flex;flex-direction:column;gap:0}
+  .ctl-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:0 .5em;font-size:.88em;line-height:1.2;color:var(--ink-2);white-space:nowrap}
+  .ctl-head b{font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap;margin-left:auto}
+  .sym{font-style:italic}
+  sub{font-size:.72em;line-height:0}
+  input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:1.3em;margin:0;background:transparent;
+    cursor:pointer;font-size:inherit;--p:50%}
+  input[type=range]:focus{outline:none}
+  input[type=range]:focus-visible{outline:2px solid var(--accent-soft);outline-offset:1px;border-radius:.4em}
+  input[type=range]::-webkit-slider-runnable-track{height:.28em;border-radius:.2em;
+    background:linear-gradient(to right,var(--accent) 0 var(--p),var(--line-2) var(--p) 100%)}
+  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:1.05em;height:1.05em;margin-top:-.385em;border-radius:50%;
+    background:#fff;border:.1em solid var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.14)}
+  input[type=range]::-moz-range-track{height:.28em;border-radius:.2em;background:var(--line-2)}
+  input[type=range]::-moz-range-progress{height:.28em;border-radius:.2em;background:var(--accent)}
+  input[type=range]::-moz-range-thumb{width:.95em;height:.95em;border-radius:50%;background:#fff;border:.1em solid var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.14)}
+  .chk{display:flex;align-items:center;gap:.45em;font-size:.9em;line-height:1.2;cursor:pointer;user-select:none;min-height:1.5em;white-space:nowrap}
+  .chk input{font-size:inherit;width:1.05em;height:1.05em;margin:0;accent-color:var(--accent);cursor:pointer;flex:none}
+  .chk.wrap{white-space:normal;align-items:flex-start}
+  .chk.wrap input{margin-top:.1em}
+  .btns{display:flex;gap:.3em;flex-wrap:wrap}
+  .btns .btn{flex:1 1 0}
+  .btn{font:inherit;font-size:.9em;line-height:1;display:inline-flex;align-items:center;justify-content:center;gap:.35em;
+    min-height:2.05em;padding:0 .55em;border-radius:.5em;border:1px solid var(--line-2);background:#fff;color:var(--ink);
+    cursor:pointer;touch-action:manipulation;white-space:nowrap}
+  .btn:hover{border-color:var(--ink-3)}
+  .btn:active{background:#f1f1ee}
+  .btn svg{width:1em;height:1em;flex:none}
+  .btn.primary{background:var(--ink);border-color:var(--ink);color:#fff}
+  .btn.primary:hover{background:#1c1f23}
+  .btn.wide{width:100%}
+  .btn[aria-pressed=true]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+  .btn:disabled{opacity:.45;cursor:default}
+  .seg{display:inline-flex;border:1px solid var(--line-2);border-radius:.5em;overflow:hidden;background:#fff}
+  .seg button{font:inherit;font-size:.9em;border:0;background:transparent;padding:0 .7em;min-height:2.0em;color:var(--ink-2);
+    cursor:pointer;touch-action:manipulation}
+  .seg button+button{border-left:1px solid var(--line-2)}
+  .seg button[aria-pressed=true]{background:var(--accent-soft);color:var(--accent);font-weight:600}
+  .key{display:inline-block;width:1.4em;height:.7em;flex:none;position:relative}
+  .key::before{content:"";position:absolute;left:0;right:.35em;top:calc(50% - .08em);height:.16em;background:var(--c)}
+  .key::after{content:"";position:absolute;right:0;top:calc(50% - .3em);border-left:.5em solid var(--c);
+    border-top:.3em solid transparent;border-bottom:.3em solid transparent}
+  .key.none{visibility:hidden}
+  .legend{display:flex;flex-direction:column;gap:.15em;font-size:.85em;line-height:1.25;color:var(--ink-2)}
+  .legend span{display:flex;align-items:center;gap:.5em}
+  .legend[hidden]{display:none}
+  @media (max-aspect-ratio:4/5),(max-width:560px){      /* puhelin pystyasennossa: säätimet kuvan alla */
+    html{font-size:calc(clamp(13px,3.7vw,18px) * var(--koko))}
+    html,body{overflow:auto}
+    .app{position:static;min-height:100%;grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto}
+    .stage{height:58vh;min-height:300px}
+    .app .panel,.app.is-bottom .panel{width:auto;border-left:0;border-top:1px solid var(--line);overflow:visible}
+  }
+
+  /* ---------- tämän simulaation omat ---------- */
+  .seg.wide{display:flex;width:100%}
+  .seg.wide button{flex:1 1 0;padding:0 .25em;white-space:nowrap}
+  .lbl{font-size:.82em;color:var(--ink-2);line-height:1.2}
+  .panel [hidden]{display:none !important}
+  .hint{margin:0;font-size:.8em;line-height:1.3;color:var(--ink-3)}
+  @media (max-height:420px){.hint{display:none}}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="stage">
+    <canvas id="cv" role="img" aria-label="Seisovan aallon muodostuminen soittimessa: kitaran kielessä, molemmista päistä avoimessa putkessa ja toisesta päästä suljetussa putkessa. Aalto lähtee vasemmasta päästä, heijastuu toisesta päästä ja vahvistuu muutaman kierroksen aikana seisovaksi aalloksi, jossa on solmuja ja kupuja."></canvas>
+  </div>
+
+  <div class="panel" aria-label="Säätimet">
+    <div class="seg wide" id="mode" role="group" aria-label="Soitin">
+      <button type="button" data-v="string">Kieli</button>
+      <button type="button" data-v="open">Avoin</button>
+      <button type="button" data-v="closed">Suljettu</button>
+    </div>
+    <button class="btn primary wide" id="play" type="button"></button>
+    <div class="btns">
+      <button class="btn" id="reset" type="button" title="Väliaine lepoon">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.3 8.2a4.7 4.7 0 1 0 1.5-3.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M2.6 2.4v3.4H6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Alusta</button>
+      <button class="btn" id="slow" type="button" aria-pressed="false" title="Animaatio neljäsosanopeudella">Hidastus</button>
+    </div>
+    <div class="group">
+      <span class="lbl">Värähtelymuoto <span class="sym">n</span></span>
+      <div class="seg wide" id="harm" role="group" aria-label="Harmoninen värähtelymuoto">
+        <button type="button">1</button><button type="button">2</button><button type="button">3</button><button type="button">4</button><button type="button">5</button>
+      </div>
+    </div>
+    <div class="group">
+      <label class="ctl"><span class="ctl-head"><span>Pituus <span class="sym">L</span></span><b data-for="L"></b></span>
+        <input id="L" type="range" min="0.3" max="1" step="0.05" value="0.65" aria-label="Kielen tai putken pituus"></label>
+      <label class="ctl" id="c-v"><span class="ctl-head"><span>Aallon nopeus <span class="sym">v</span></span><b data-for="v"></b></span>
+        <input id="v" type="range" min="100" max="450" step="10" value="200" aria-label="Aallon nopeus kielessä (kiristys)"></label>
+    </div>
+    <div class="group">
+      <label class="chk"><input type="checkbox" id="showComp"><span class="key none"></span>Etenevät aallot</label>
+      <label class="chk"><input type="checkbox" id="showMarks"><span class="key none"></span>Solmut ja kuvut</label>
+      <label class="chk" id="k-air"><input type="checkbox" id="showAir"><span class="key none"></span>Ilmahiukkaset</label>
+      <label class="chk"><input type="checkbox" id="showVal"><span class="key none"></span>Arvot</label>
+    </div>
+    <p class="hint" id="hint"></p>
+  </div>
+</div>
+
+<script>
+(() => {
+'use strict';
+
+/* =====================================================================
+   Yhteiset apufunktiot
+   ===================================================================== */
+const FONT = 'system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
+const MINUS = '−', NBSP = ' ';
+const css = (n) => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const COL = { ink: css('--ink'), ink2: css('--ink-2'), ink3: css('--ink-3'), line: css('--line'), line2: css('--line-2'),
+  blue: css('--c-blue'), red: css('--c-red'), orange: css('--c-orange'), green: css('--c-green'), violet: css('--c-violet') };
+
+/** Luku suomalaisittain: desimaalipilkku, oikea miinusmerkki, ei "−0,0". */
+function fmt(x, d = 1) {
+  if (!Number.isFinite(x)) return '–';
+  const s = Math.abs(x).toFixed(d);
+  const neg = x < 0 && +s !== 0;
+  let [ip, fp] = s.split('.');
+  if (ip.length > 4) ip = ip.replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+  return (neg ? MINUS : '') + ip + (fp ? ',' + fp : '');
+}
+/** Luku n merkitsevällä numerolla (esim. 160, 32,0, 2,67, 0,100). */
+function fmtSig(x, n = 3) {
+  if (!Number.isFinite(x)) return '–';
+  if (x === 0) return '0';
+  const d = Math.max(0, n - 1 - Math.floor(Math.log10(Math.abs(x)) + 1e-9));
+  return fmt(x, Math.min(d, 6));
+}
+const clamp = (x, a, b) => Math.min(b, Math.max(a, x));
+
+/* Pieni merkintäkieli kanvastekstille:
+   {F} = kursiivinen suureen tunnus, {->v} = vektori (kursiivi + nuoli),
+   _1 tai _{ab} = alaindeksi, ^2 tai ^{ab} = yläindeksi. */
+const richCache = new Map();
+function rich(src) {
+  let out = richCache.get(src);
+  if (out) return out;
+  out = []; let buf = '';
+  const flush = () => { if (buf) { out.push({ t: buf }); buf = ''; } };
+  for (let i = 0; i < src.length; i++) {
+    const c = src[i];
+    if (c === '{') {
+      const j = src.indexOf('}', i), body = src.slice(i + 1, j);
+      flush();
+      out.push(body.startsWith('->') ? { t: body.slice(2), it: true, vec: true } : { t: body, it: true });
+      i = j;
+    } else if ((c === '_' || c === '^') && i + 1 < src.length) {
+      flush();
+      let body;
+      if (src[i + 1] === '{') { const j = src.indexOf('}', i + 1); body = src.slice(i + 2, j); i = j; }
+      else { body = src[i + 1]; i++; }
+      out.push(c === '_' ? { t: body, sub: true } : { t: body, sup: true });
+    } else buf += c;
+  }
+  flush();
+  richCache.set(src, out);
+  return out;
+}
+/** Piirtää rikastetun tekstin; palauttaa leveyden. */
+function drawRich(ctx, src, x, y, o = {}) {
+  const size = o.size || 15, parts = rich(src), weight = o.weight || 400;
+  const fontOf = (p) => `${p.it ? 'italic ' : ''}${weight} ${(p.sub || p.sup) ? Math.round(size * 0.72) : size}px ${FONT}`;
+  let w = 0;
+  const ws = parts.map((p) => { ctx.font = fontOf(p); const pw = ctx.measureText(p.t).width + (p.it ? size * 0.06 : 0); w += pw; return pw; });
+  if (o.measure) return w;
+  let cx = o.align === 'center' ? x - w / 2 : o.align === 'right' ? x - w : x;
+  ctx.textBaseline = 'middle'; ctx.textAlign = 'left';
+  parts.forEach((p, k) => {
+    ctx.font = fontOf(p);
+    const dy = p.sub ? size * 0.3 : p.sup ? -size * 0.36 : 0;
+    if (o.halo) {
+      ctx.lineWidth = 4; ctx.lineJoin = 'round';
+      ctx.strokeStyle = typeof o.halo === 'string' ? o.halo : 'rgba(255,255,255,0.92)';
+      ctx.strokeText(p.t, cx, y + dy);
+    }
+    ctx.fillStyle = o.color || COL.ink;
+    ctx.fillText(p.t, cx, y + dy);
+    if (p.vec) {                                   // vektorinuoli kirjaimen yläpuolelle
+      const ax0 = cx + size * 0.12, ax1 = cx + ws[k] + size * 0.02, ay = y - size * 0.62;
+      ctx.strokeStyle = o.color || COL.ink; ctx.lineWidth = Math.max(1, size / 13);
+      ctx.beginPath(); ctx.moveTo(ax0, ay); ctx.lineTo(ax1, ay);
+      ctx.moveTo(ax1 - size * 0.2, ay - size * 0.12); ctx.lineTo(ax1, ay); ctx.lineTo(ax1 - size * 0.2, ay + size * 0.12);
+      ctx.stroke();
+    }
+    cx += ws[k];
+  });
+  return w;
+}
+/** Vektorinuoli (ohut varsi, kapea kärki). */
+function arrow(ctx, x1, y1, x2, y2, color, o = {}) {
+  const w = o.width || 2.4, L = Math.hypot(x2 - x1, y2 - y1);
+  if (L < 0.5) return;
+  const ux = (x2 - x1) / L, uy = (y2 - y1) / L;
+  const hl = Math.min(o.head || 10 + w * 1.2, L * 0.8), hw = hl * 0.58;
+  const bx = x2 - ux * hl, by = y2 - uy * hl;
+  ctx.strokeStyle = color; ctx.fillStyle = color; ctx.lineWidth = w; ctx.lineCap = 'butt';
+  ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(bx + ux, by + uy); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(x2, y2);
+  ctx.lineTo(bx - uy * hw, by + ux * hw); ctx.lineTo(bx + uy * hw, by - ux * hw); ctx.closePath(); ctx.fill();
+}
+/** ?koko=1,2 (tai ?scale=) suurentaa koko käyttöliittymän: luokan näytölle voi valita sopivan koon. */
+(() => {
+  const q = new URLSearchParams(location.search), raw = q.get('koko') || q.get('scale') || q.get('zoom');
+  const k = raw ? parseFloat(raw.replace(',', '.')) : NaN;
+  if (k >= 0.5 && k <= 3) document.documentElement.style.setProperty('--koko', String(k));
+})();
+/** Kanvas, joka seuraa elementin kokoa ja näytön tarkkuutta.
+    Piirtäminen tehdään loogisina pikseleinä: u = sivun peruskoko / 15 px. Kun ikkuna kasvaa
+    (esim. luokan näyttö), myös tekstit, viivat ja merkit suurenevat samassa suhteessa.
+    Kuvapuskuri on vähintään 2-kertainen, jotta kuva pysyy terävänä, kun esitysohjelma
+    (esim. Slides.com) suurentaa upotuksen koko ruudulle. */
+function setupCanvas(cv, onResize) {
+  const view = { ctx: cv.getContext('2d'), W: 1, H: 1, dpr: 1, u: 1 };
+  const resize = () => {
+    const r = cv.getBoundingClientRect();
+    const base = parseFloat(getComputedStyle(document.documentElement).fontSize) || 15;
+    const boost = r.width * r.height <= 1.2e6 ? 2 : 1.5;
+    const dev = Math.min(3, Math.max(window.devicePixelRatio || 1, boost));
+    view.u = base / 15;
+    view.W = Math.max(1, r.width / view.u); view.H = Math.max(1, r.height / view.u);
+    view.dpr = dev * view.u;                       // looginen pikseli → laitepikseli
+    cv.width = Math.round(r.width * dev); cv.height = Math.round(r.height * dev);
+    if (onResize) onResize(view);
+  };
+  /** Osoittimen paikka loogisina pikseleinä. */
+  view.pt = (e) => { const r = cv.getBoundingClientRect(); return { x: (e.clientX - r.left) / view.u, y: (e.clientY - r.top) / view.u }; };
+  new ResizeObserver(resize).observe(cv);
+  window.addEventListener('resize', resize);       // peruskoko voi muuttua, vaikka kanvaksen koko ei muuttuisi
+  resize();
+  return view;
+}
+/** Liukusäädin + arvonäyttö. */
+function bindRange(id, show, onInput) {
+  const el = document.getElementById(id), out = document.querySelector(`[data-for="${id}"]`);
+  const paint = () => {
+    const v = +el.value, a = +el.min, b = +el.max;
+    el.style.setProperty('--p', ((v - a) / (b - a) * 100) + '%');
+    if (out) out.textContent = show(v);
+  };
+  el.addEventListener('input', () => { paint(); onInput(+el.value); });
+  paint();
+  return { el, set(v) { el.value = v; paint(); }, get v() { return +el.value; }, repaint: paint };
+}
+/** Kiinteän aika-askeleen silmukka: fysiikka ei riipu näytön virkistystaajuudesta. */
+function startLoop({ dt, step, draw, running }) {
+  let last = performance.now(), acc = 0;
+  const frame = (ts) => {
+    requestAnimationFrame(frame);
+    const real = clamp((ts - last) / 1000, 0, 0.1);   // pitkä tauko (esim. välilehti piilossa) ei aiheuta hyppyä
+    last = ts;
+    if (running()) {
+      acc += real;
+      let n = 0;
+      while (acc >= dt && n++ < 1000) { step(dt); acc -= dt; }
+    }
+    draw();
+  };
+  requestAnimationFrame(frame);
+}
+
+/* =====================================================================
+   Fysiikka: seisovan aallon muodostuminen soittimessa
+   Vasemmasta päästä lähtee aalto (kielen värähtelijä tai puhallus), joka heijastuu oikeasta päästä,
+   palaa ja heijastuu taas vasemmasta päästä. Paikka x mitataan vasemmasta päästä (0 ≤ x ≤ L).
+   Kierroksen m jälkeen (m = 0, 1, 2, …) oikealle etenevä aalto on a·qᵐ·sin(ωt − kx − 2mkL) ja
+   vasemmalle etenevä a·R_o·qᵐ·sin(ωt + kx − 2kL − 2mkL); kukin aalto vaikuttaa vasta saavuttuaan.
+   q = ρ·R_v·R_o, missä R_v ja R_o ovat päiden heijastuskertoimet poikkeamalle ja ρ = 0,6 kuvaa
+   häviöitä yhden edestakaisen kierroksen aikana:
+        kiinteä kielen pää ja suljettu putken pää  R = −1   (solmu)
+        avoin putken pää                            R = +1   (kupu)
+   Aallot summataan geometrisena sarjana. Ne vahvistavat toisiaan, kun R_v·R_o·e^(−2ikL) = 1:
+        kieli ja avoin putki:   L = nλ/2,  fₙ = n·v/(2L),  n = 1, 2, 3, …
+        suljettu putki:         L = nλ/4,  fₙ = n·v/(4L),  n = 1, 3, 5, …
+   Valittu värähtelymuoto on aina tällainen ominaistaajuus, joten seisova aalto kasvaa muutaman
+   kierroksen aikana amplitudiin 2a/(1 − ρ) = 1. Putkessa käyrä kuvaa ilman pitkittäistä siirtymää.
+   Valmiissa tilassa kielen vasen pää on solmu: palaava aalto kumoaa siellä lähtevän aallon.
+   Animaatio on hidastettu (kieli 200-kertaisesti, putket 450-kertaisesti).
+   ===================================================================== */
+const TAU = 2 * Math.PI, RHO = 0.6, AD = (1 - RHO) / 2, LMAX = 1;   // häviökerroin, lähtevän aallon amplitudi
+const MODES = {
+  string: { RL: -1, RR: -1, odd: false, slow: 200, Lr: [0.3, 1], name: 'kitaran kieli' },
+  open: { RL: 1, RR: 1, odd: false, slow: 450, Lr: [0.2, 1], name: 'avoin putki (huilu)' },
+  closed: { RL: 1, RR: -1, odd: true, slow: 450, Lr: [0.2, 1], name: 'suljettu putki (panhuilu)' },
+};
+const S = {
+  mode: 'string', m: 1, L: { string: 0.65, open: 0.6, closed: 0.6 }, vs: 200, t: 0, running: false, slow: false,
+  show: { comp: false, marks: false, air: false, val: false },
+};
+const VAIR = 340;
+const MO = () => MODES[S.mode];
+const nOf = () => (MO().odd ? 2 * S.m - 1 : S.m);                    // harmoninen n
+const vReal = () => (S.mode === 'string' ? S.vs : VAIR);
+const Lnow = () => S.L[S.mode];
+const lamOf = () => (MO().odd ? 4 : 2) * Lnow() / nOf();
+const fOf = () => vReal() / lamOf();
+/** Oikealle ja vasemmalle etenevä aalto kohdassa x (m) hetkellä t (animaation aikaa). */
+function waves(x, t) {
+  const mo = MO(), L = Lnow(), lam = lamOf(), k = TAU / lam, v = vReal() / mo.slow, w = k * v, d = v * t;
+  const q = RHO * mo.RL * mo.RR, zr = q * Math.cos(2 * k * L), zi = -q * Math.sin(2 * k * L);   // z = q·e^(−2ikL)
+  // Σ_{m=0}^{M} zᵐ = (1 − z^{M+1})/(1 − z)
+  const series = (M) => {
+    const mag = Math.pow(Math.abs(q), M + 1), ang = (M + 1) * Math.atan2(zi, zr);
+    const nr = 1 - mag * Math.cos(ang), ni = -mag * Math.sin(ang), dr = 1 - zr, di = -zi, dd = dr * dr + di * di;
+    return [(nr * dr + ni * di) / dd, (ni * dr - nr * di) / dd];
+  };
+  let F = 0, B = 0;
+  if (d >= x) { const [sr, si] = series(Math.floor((d - x) / (2 * L))), th = w * t - k * x; F = AD * (Math.sin(th) * sr + Math.cos(th) * si); }
+  if (d >= 2 * L - x) { const [sr, si] = series(Math.floor((d - 2 * L + x) / (2 * L))), th = w * t + k * x - 2 * k * L; B = AD * mo.RR * (Math.sin(th) * sr + Math.cos(th) * si); }
+  return [F, B];
+}
+/** Valmiin seisovan aallon amplitudi kohdassa x (solmuissa 0, kuvuissa 1). */
+const envelope = (x) => { const k = TAU / lamOf(); return S.mode === 'string' ? Math.abs(Math.sin(k * x)) : Math.abs(Math.cos(k * x)); };
+function step(dt) { S.t += S.slow ? dt * 0.25 : dt; }
+
+/* =====================================================================
+   Piirtäminen
+   ===================================================================== */
+const cv = document.getElementById('cv');
+let L = {};
+const view = setupCanvas(cv, (v) => {
+  const fs = clamp(Math.min(v.W / 30, v.H / 16), 12, 18);
+  L = { W: v.W, H: v.H, fs, pad: fs * 0.9, band: 12 + fs * 0.85 * 1.4 };
+});
+const CF = COL.blue, CB = COL.green, CY = COL.ink;
+function polyline(ctx, n, fx, fy, color, width, dash) {
+  ctx.strokeStyle = color; ctx.lineWidth = width; ctx.lineJoin = 'round'; ctx.setLineDash(dash || []);
+  ctx.beginPath(); for (let i = 0; i <= n; i++) { if (i) ctx.lineTo(fx(i), fy(i)); else ctx.moveTo(fx(i), fy(i)); } ctx.stroke(); ctx.setLineDash([]);
+}
+
+function draw() {
+  const { ctx, dpr } = view, { W, H, fs, pad, band } = L, mo = MO(), Lm = Lnow(), pipe = S.mode !== 'string';
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  ctx.clearRect(0, 0, W, H);
+  const gx0 = pad + fs * 2.6, gx1 = W - pad - fs * 1.6, x0 = gx0, x1 = gx0 + (gx1 - gx0) * Lm / LMAX;
+  const yc = band + (H - band - pad) * 0.52, A0 = clamp((H - band - pad) * 0.24, fs * 2, fs * 9);
+  // putken puolikorkeus suhteessa pisimpään putkeen (1 m): putki näyttää putkelta eikä laatikolta
+  const th = pipe ? clamp((gx1 - gx0) * 0.17, fs * 2.2, A0 + fs * 0.8) : 0, A = pipe ? th - fs * 0.6 : A0;
+  const X = (x) => x0 + x / Lm * (x1 - x0), n = Math.max(2, Math.round(x1 - x0)), xs = (i) => i / n * Lm;
+  const at = (i) => waves(xs(i), S.t);
+
+  // putki: seinät, suljettu pää; kieli: satula ja talla
+  if (pipe) {
+    ctx.fillStyle = '#eef1f4'; ctx.fillRect(x0, yc - th, x1 - x0, 2 * th);
+    ctx.fillStyle = '#7d848c';
+    ctx.fillRect(x0, yc - th - 6, x1 - x0, 6); ctx.fillRect(x0, yc + th, x1 - x0, 6);
+    if (mo.RR < 0) ctx.fillRect(x1, yc - th - 6, 8, 2 * th + 12);    // suljettu pää
+    // puhallus vasemmasta päästä
+    ctx.strokeStyle = COL.ink3; ctx.lineWidth = 2;
+    for (const dy of [-0.35, 0, 0.35]) { ctx.beginPath(); ctx.moveTo(x0 - fs * 2.2, yc + dy * th); ctx.bezierCurveTo(x0 - fs * 1.6, yc + dy * th - 6, x0 - fs * 1.0, yc + dy * th + 6, x0 - fs * 0.4, yc + dy * th); ctx.stroke(); }
+    arrow(ctx, x0 - fs * 0.9, yc + 0.35 * th, x0 - fs * 0.2, yc + 0.35 * th, COL.ink3, { width: 2, head: 7 });
+  } else {
+    ctx.fillStyle = '#5d4632'; ctx.fillRect(x1, yc - fs * 0.9, 7, fs * 1.8); ctx.fillRect(x0 - 7, yc - fs * 0.9, 7, fs * 1.8);   // satula ja talla
+  }
+  ctx.strokeStyle = COL.line2; ctx.lineWidth = 1; ctx.setLineDash([3, 5]); ctx.beginPath(); ctx.moveTo(x0, yc); ctx.lineTo(x1, yc); ctx.stroke(); ctx.setLineDash([]);
+
+  // valmiin seisovan aallon verhokäyrä sekä solmut (S) ja kuvut (K)
+  if (S.show.marks) {
+    polyline(ctx, n, (i) => X(xs(i)), (i) => yc - A * envelope(xs(i)), COL.ink3, 1.4, [6, 5]);
+    polyline(ctx, n, (i) => X(xs(i)), (i) => yc + A * envelope(xs(i)), COL.ink3, 1.4, [6, 5]);
+    const q = lamOf() / 4, pts = [];
+    for (let j = 0; j * q <= Lm + 1e-9; j++) pts.push(j * q);
+    for (const x of pts) {
+      const node = envelope(x) < 0.5, px = X(x);
+      if (node) {
+        ctx.fillStyle = COL.red; ctx.beginPath(); ctx.arc(px, yc, 5, 0, TAU); ctx.fill();
+        drawRich(ctx, 'S', px, yc + A + fs * (pipe ? 1.6 : 0.9), { size: fs * 0.9, color: COL.red, weight: 700, align: 'center', halo: true });
+      } else drawRich(ctx, 'K', px, yc - A - fs * (pipe ? 1.6 : 0.9), { size: fs * 0.9, color: COL.violet, weight: 700, align: 'center', halo: true });
+    }
+  }
+  // ilmahiukkaset: pitkittäinen siirtymä (putket)
+  if (pipe && S.show.air) {
+    const sp = Math.max(7, fs * 0.55), cols = Math.floor((x1 - x0) / sp), rows = 5;
+    ctx.fillStyle = 'rgba(70,80,95,0.55)';
+    for (let c = 0; c <= cols; c++) {
+      const x = c / cols * Lm, [F, B] = waves(x, S.t), dx = (F + B) * sp * 1.2;
+      for (let r = 0; r < rows; r++) { ctx.beginPath(); ctx.arc(X(x) + dx, yc - th * 0.8 + r / (rows - 1) * th * 1.6, 2.2, 0, TAU); ctx.fill(); }
+    }
+  }
+  // menevä ja palaava aalto sekä niiden summa
+  if (S.show.comp) {
+    polyline(ctx, n, (i) => X(xs(i)), (i) => yc - A * at(i)[0], CF, 2.2, [8, 5]);
+    polyline(ctx, n, (i) => X(xs(i)), (i) => yc - A * at(i)[1], CB, 2.2, [8, 5]);
+  }
+  polyline(ctx, n, (i) => X(xs(i)), (i) => { const [F, B] = at(i); return yc - A * (F + B); }, CY, pipe ? 3 : 3.6);
+
+  // mitta L ja tunnisteet
+  const yl = yc + A + fs * (pipe ? 3.0 : 2.4);
+  arrow(ctx, (x0 + x1) / 2, yl, x0, yl, COL.ink2, { width: 1.6, head: 8 }); arrow(ctx, (x0 + x1) / 2, yl, x1, yl, COL.ink2, { width: 1.6, head: 8 });
+  drawRich(ctx, `{L} = ${fmt(Lm, 2)}${NBSP}m`, (x0 + x1) / 2, yl + fs * 0.85, { size: fs * 0.9, color: COL.ink2, align: 'center', halo: true });
+  if (S.show.comp) {
+    const ly = yc - A - fs * (pipe ? 2.8 : 2.0);
+    let lx = x0;
+    for (const [c, t, dash] of [[CF, 'oikealle etenevä', true], [CB, 'vasemmalle etenevä', true], [CY, 'summa', false]]) {
+      ctx.strokeStyle = c; ctx.lineWidth = dash ? 2.2 : 3.2; ctx.setLineDash(dash ? [6, 4] : []); ctx.beginPath(); ctx.moveTo(lx, ly); ctx.lineTo(lx + fs * 1.4, ly); ctx.stroke(); ctx.setLineDash([]);
+      lx += fs * 1.7 + drawRich(ctx, t, lx + fs * 1.7, ly, { size: fs * 0.8, color: COL.ink2, halo: true }) + fs * 1.0;
+    }
+  }
+  if (S.show.val) {
+    const nn = nOf(), odd = mo.odd, t = `{n} = ${nn}:   {λ}_${nn} = ${odd ? 4 : 2}{L}/${nn} = ${fmt(lamOf(), 3)}${NBSP}m,   {f}_${nn} = {v}/{λ} = ${fmt(fOf(), 0)}${NBSP}Hz   ({v} = ${fmt(vReal(), 0)}${NBSP}m/s)`;
+    const ef = fs * 0.85, w = drawRich(ctx, t, 0, 0, { size: ef, measure: true }), sz = w > W - 28 ? ef * (W - 28) / w : ef;
+    drawRich(ctx, t, 14, 12 + sz * 0.6, { size: sz, color: COL.ink2, halo: true });
+  }
+}
+
+/* =====================================================================
+   Käyttöliittymä
+   ===================================================================== */
+const $ = (id) => document.getElementById(id);
+const playBtn = $('play'), slowBtn = $('slow'), hint = $('hint');
+const ICON_PLAY = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.6v10.8l9-5.4z" fill="currentColor"/></svg>';
+const ICON_PAUSE = '<svg viewBox="0 0 16 16" aria-hidden="true"><rect x="3.5" y="2.6" width="3.2" height="10.8" rx=".8" fill="currentColor"/><rect x="9.3" y="2.6" width="3.2" height="10.8" rx=".8" fill="currentColor"/></svg>';
+function paintPlay() { playBtn.innerHTML = S.running ? ICON_PAUSE + 'Tauko' : ICON_PLAY + 'Käynnistä'; }
+playBtn.addEventListener('click', () => { S.running = !S.running; paintPlay(); });
+$('reset').addEventListener('click', () => { S.t = 0; S.running = false; paintPlay(); });
+slowBtn.addEventListener('click', () => { S.slow = !S.slow; slowBtn.setAttribute('aria-pressed', String(S.slow)); });
+const HINTS = {
+  string: 'Aalto lähtee kielen vasemmasta päästä ja heijastuu kielen päistä. Animaatio on hidastettu.',
+  open: 'Aalto lähtee putken avoimesta päästä ja heijastuu toisesta avoimesta päästä. Animaatio on hidastettu.',
+  closed: 'Aalto lähtee putken avoimesta päästä ja heijastuu suljetusta päästä. Animaatio on hidastettu.',
+};
+const ctlL = bindRange('L', (x) => `${fmt(x, 2)}${NBSP}m`, (x) => { S.L[S.mode] = x; });
+bindRange('v', (x) => `${fmt(x, 0)}${NBSP}m/s`, (x) => { S.vs = x; });
+function paintModes() {
+  for (const b of document.querySelectorAll('#mode button')) b.setAttribute('aria-pressed', String(b.dataset.v === S.mode));
+  document.querySelectorAll('#harm button').forEach((b, i) => { b.textContent = String(MO().odd ? 2 * i + 1 : i + 1); b.setAttribute('aria-pressed', String(i + 1 === S.m)); });
+}
+/** Uusi tilanne tai värähtelymuoto: aalto lähtee uudelleen liikkeelle, ajo jatkuu ennallaan. */
+function setMode(m) {
+  S.mode = m; S.t = 0;
+  const mo = MO(), el = ctlL.el;
+  el.min = mo.Lr[0]; el.max = mo.Lr[1]; ctlL.set(S.L[m]);
+  $('c-v').hidden = m !== 'string'; $('k-air').hidden = m === 'string';
+  hint.textContent = HINTS[m];
+  paintModes();
+}
+for (const b of document.querySelectorAll('#mode button')) b.addEventListener('click', () => setMode(b.dataset.v));
+document.querySelectorAll('#harm button').forEach((b, i) => b.addEventListener('click', () => { S.m = i + 1; S.t = 0; paintModes(); }));
+for (const [id, key] of [['showComp', 'comp'], ['showMarks', 'marks'], ['showAir', 'air'], ['showVal', 'val']]) {
+  const el = $(id);
+  S.show[key] = el.checked;
+  el.addEventListener('change', () => { S.show[key] = el.checked; });
+}
+/* ?soitin=kieli | avoin | suljettu ja ?n=1…5 (suljetussa putkessa 1, 3, 5, 7, 9) valitsevat aloitustilanteen. */
+(() => {
+  const q = new URLSearchParams(location.search), map = { kieli: 'string', kitara: 'string', avoin: 'open', huilu: 'open', suljettu: 'closed', panhuilu: 'closed' };
+  const mode = map[(q.get('soitin') || '').toLowerCase()] || 'string', n = Math.round(+q.get('n'));
+  if (MODES[mode].odd ? n >= 1 && n <= 9 && n % 2 : n >= 1 && n <= 5) S.m = MODES[mode].odd ? (n + 1) / 2 : n;
+  setMode(mode);
+})();
+paintPlay();
+startLoop({ dt: 1 / 120, step, draw, running: () => S.running });
+})();
+</script>
+</body>
+</html>
