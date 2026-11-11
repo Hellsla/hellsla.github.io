@@ -120,14 +120,14 @@ Kuvia 137. Asteikko 1–5: F fysiikka, P pedagogiikka, V visuaalinen laatu, T ty
 | [`fy6-8/model`](catalog/FY6.html#fy6-8-model) | Lähdejännite ja sisäinen resistanssi; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy6-8/potential`](catalog/FY6.html#fy6-8-potential) | Lähdejännite ja sisäinen resistanssi; kuvaaja: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy6-8/ui-graph`](catalog/FY6.html#fy6-8-ui-graph) | Lähdejännite ja sisäinen resistanssi; kuvaaja: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
-| [`fy6-8/connections`](catalog/FY6.html#fy6-8-connections) | Lähdejännite ja sisäinen resistanssi; kaavio: teoria | 5 | 5 | 3 | 5 | KEVYT KORJAUS | Merkinnät E ja Rs ovat katkoviivakehysten päällä, ja rinnankytkennän toisesta paristosta ne puuttuvat. |  | ODOTTAA |
+| [`fy6-8/connections`](catalog/FY6.html#fy6-8-connections) | Lähdejännite ja sisäinen resistanssi; kaavio: teoria | 5 | 5 | 3 | 5 | KEVYT KORJAUS | Merkinnät E ja Rs ovat katkoviivakehysten päällä, ja rinnankytkennän toisesta paristosta ne puuttuvat. |  | KEVYT KORJAUS hyväksytty (opettaja 2026-11-11) |
 | [`fy6-8/ex-graph`](catalog/FY6.html#fy6-8-ex-graph) | Lähdejännite ja sisäinen resistanssi; kuvaaja: tehtävä | 5 | 4 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy6-8/check-graph`](catalog/FY6.html#fy6-8-check-graph) | Lähdejännite ja sisäinen resistanssi; kuvaaja: tutkimusvaihe | 5 | 4 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy6-9/hero`](catalog/FY6.html#fy6-9-hero) | Akut ja latauspiiri; avauskuva | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy6-9/purku-lataus`](catalog/FY6.html#fy6-9-purku-lataus) | Akut ja latauspiiri; kaavio: teoria | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy6-9/kapasiteetti`](catalog/FY6.html#fy6-9-kapasiteetti) | Akut ja latauspiiri; kuvaaja: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy6-9/latauspiiri`](catalog/FY6.html#fy6-9-latauspiiri) | Akut ja latauspiiri; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ | Virta akun plusnapaan: lataussuunta oikein. |  | ODOTTAA |
-| [`fy6-9/potentiaali`](catalog/FY6.html#fy6-9-potentiaali) | Akut ja latauspiiri; kuvaaja: teoria | 5 | 5 | 3 | 5 | KEVYT KORJAUS | Jännitteiden summa on nolla (tarkistettu), mutta arvot 3,62 V, −0,88 V ja −0,22 V ovat ahtaasti käyrän ja toistensa päällä. |  | ODOTTAA |
+| [`fy6-9/potentiaali`](catalog/FY6.html#fy6-9-potentiaali) | Akut ja latauspiiri; kuvaaja: teoria | 5 | 5 | 3 | 5 | KEVYT KORJAUS | Jännitteiden summa on nolla (tarkistettu), mutta arvot 3,62 V, −0,88 V ja −0,22 V ovat ahtaasti käyrän ja toistensa päällä. |  | KEVYT KORJAUS hyväksytty (opettaja 2026-11-11) |
 | [`fy6-9/energia`](catalog/FY6.html#fy6-9-energia) | Akut ja latauspiiri; kaavio: teoria | 5 | 5 | 4 | 3 | KEVYT KORJAUS | Energiavirtakaavio liukuvärillä ilman harmaata tuloa; malli fy2-4/lamp. Summa täsmää (9,0 = 7,6 + 1,1 + 0,3). |  | KEVYT KORJAUS hyväksytty, ryhmä C (opettaja 2026-11-11) |
 | [`fy6-9/ex-current`](catalog/FY6.html#fy6-9-ex-current) | Akut ja latauspiiri; kuvaaja: tehtävä | 5 | 4 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy6-sovella/fy6-s1-circuit`](catalog/FY6.html#fy6-sovella-fy6-s1-circuit) | FY6 Sovella itsenäisesti; kaavio: soveltava tehtävä tai koe | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |

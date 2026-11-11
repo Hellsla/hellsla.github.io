@@ -114,14 +114,14 @@ fy6-8/hero|5|5|5|5|PIDA||
 fy6-8/model|5|5|5|5|PIDA|
 fy6-8/potential|5|5|5|5|PIDA|
 fy6-8/ui-graph|5|5|5|5|PIDA|
-fy6-8/connections|5|5|3|5|KEVYT|Merkinnät E ja Rs ovat katkoviivakehysten päällä, ja rinnankytkennän toisesta paristosta ne puuttuvat.|
+fy6-8/connections|5|5|3|5|KEVYT|Merkinnät E ja Rs ovat katkoviivakehysten päällä, ja rinnankytkennän toisesta paristosta ne puuttuvat.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11)
 fy6-8/ex-graph|5|4|4|5|PIDA|
 fy6-8/check-graph|5|4|4|5|PIDA|
 fy6-9/hero|5|5|5|5|PIDA||
 fy6-9/purku-lataus|5|5|4|5|PIDA|
 fy6-9/kapasiteetti|5|5|5|5|PIDA|
 fy6-9/latauspiiri|5|5|5|5|PIDA|Virta akun plusnapaan: lataussuunta oikein.|
-fy6-9/potentiaali|5|5|3|5|KEVYT|Jännitteiden summa on nolla (tarkistettu), mutta arvot 3,62 V, −0,88 V ja −0,22 V ovat ahtaasti käyrän ja toistensa päällä.|
+fy6-9/potentiaali|5|5|3|5|KEVYT|Jännitteiden summa on nolla (tarkistettu), mutta arvot 3,62 V, −0,88 V ja −0,22 V ovat ahtaasti käyrän ja toistensa päällä.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11)
 fy6-9/energia|5|5|4|3|KEVYT|Energiavirtakaavio liukuvärillä ilman harmaata tuloa; malli fy2-4/lamp. Summa täsmää (9,0 = 7,6 + 1,1 + 0,3).||KEVYT KORJAUS hyväksytty, ryhmä C (opettaja 2026-11-11)
 fy6-9/ex-current|5|4|4|5|PIDA|
 fy6-sovella/fy6-s1-circuit|5|5|4|5|PIDA||
