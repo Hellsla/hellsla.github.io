@@ -34,7 +34,7 @@ fy5-14/pitkittainen|5|5|5|5|PIDA|Hiukkastiheys ja painekuvaaja kohdakkain.|
 fy5-14/alueet|5|5|4|5|PIDA||
 fy5-14/sointi|5|5|4|5|PIDA||
 fy5-14/huojunta|5|5|4|5|PIDA||
-fy5-14/doppler|5|5|3|4|KEVYT|Fysiikka oikein (rintamat tihenevät lähteen edessä). "kuulija liikkuu" on aaltorintaman alla, ja kuulijat ovat tikku-ukkoja, kun sarjan muut ihmiset ovat piirrettyjä hahmoja.|
+fy5-14/doppler|5|5|3|4|KEVYT|Fysiikka oikein (rintamat tihenevät lähteen edessä). "kuulija liikkuu" on aaltorintaman alla, ja kuulijat ovat tikku-ukkoja, kun sarjan muut ihmiset ovat piirrettyjä hahmoja.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11)
 fy5-14/spektri-tehtava|5|5|4|5|PIDA||
 fy5-14/huojunta-tehtava|5|5|4|5|PIDA||
 fy5-15/hero|5|5|5|5|PIDA||
@@ -105,7 +105,7 @@ fy5-5/planeetat|5|5|5|5|PIDA|
 fy5-5/rakenteet|5|4|4|5|PIDA|
 fy5-6/hero|5|5|5|5|PIDA||
 fy5-6/orbit|5|5|4|5|PIDA||
-fy5-6/cannon|4|5|4|5|KEVYT|"Liian nopea" rata on piirretty ympyränä; lähtöpisteestä liian nopeasti lähtevä kappale kulkee ellipsirataa, jonka lähin piste on lähtöpiste. Piirrä ellipsi.|
+fy5-6/cannon|4|5|4|5|KEVYT|"Liian nopea" rata on piirretty ympyränä; lähtöpisteestä liian nopeasti lähtevä kappale kulkee ellipsirataa, jonka lähin piste on lähtöpiste. Piirrä ellipsi.||KEVYT KORJAUS hyväksytty: liian nopean kappaleen rata ellipsiksi (opettaja 2026-11-11)
 fy5-6/vr|5|5|4|5|PIDA|Ratanopeudet vastaavat kaavaa (tarkistettu).|
 fy5-6/paino|5|5|5|5|PIDA|Painottomuus: sama gravitaatio, tukivoima puuttuu.|
 fy5-6/radat|5|5|4|5|PIDA||
