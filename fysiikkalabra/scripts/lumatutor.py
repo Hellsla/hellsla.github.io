@@ -493,7 +493,7 @@ def tokens(w, d, lang):
     if w.get("data"):
         cd = climate(); co2 = dict((y, v) for y, v in cd["co2"]["series"]); temp = dict((y, v) for y, v in cd["temp"]["series"])
         ppm = lambda v: f"${round(v)}\\,\\text{{ppm}}$"
-        deg = lambda v, sign=True: f"${num(v, 2, lang, sign)}\\,^\\circ\\text{{C}}$"
+        deg = lambda v, sign=True: f"${num(v, 2, lang, sign)}\\,{{}}^\\circ\\text{{C}}$"
         for y in co2: t[f"co2:{y}"] = ppm(co2[y])
         for a in co2:
             for b in (1990, 2020):
@@ -548,7 +548,7 @@ def decades_table(d, lang):
     u = d["ui"]; rows = ""
     for k, (m, n_, a, b) in decade_means().items():
         label = u["decade_label"].replace("{d}", str(k)) if n_ == 10 else u["decade_partial"].replace("{a}", str(a)).replace("{b}", str(b))
-        rows += f'<tr><th scope="row">{esc(label)}</th><td>${num(m, 2, lang, True)}\\,^\\circ\\text{{C}}$</td></tr>'
+        rows += f'<tr><th scope="row">{esc(label)}</th><td>${num(m, 2, lang, True)}\\,{{}}^\\circ\\text{{C}}$</td></tr>'
     return (f'<table class="lt-table lt-decades"><caption>{esc(u["decade_h"])}</caption><thead><tr><th scope="col">{esc(u["decade_col"])}</th>'
             f'<th scope="col">{esc(u["mean_col"])}</th></tr></thead><tbody>{rows}</tbody></table>')
 

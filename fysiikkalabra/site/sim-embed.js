@@ -172,6 +172,22 @@
           widths.set(key, w);
           return w;
         };
+        // p5 measures a font's ascent and descent by putting elements on the page and reading their position, which lays
+        // the whole lesson out again at every call; a sim that records its label boxes (lab(): textAscent and textDescent
+        // per label) then spends seconds on a frame of a long page. Both depend only on the font, its style and its
+        // size, so each is measured once per such state and emptied when a font finishes loading (2026-11-11).
+        const metrics = new Map(); let metricsGen = fontGen;
+        for (const fn of ['textAscent', 'textDescent']) {
+          const measure = p[fn];
+          p[fn] = function () {
+            if (metricsGen !== fontGen) { metrics.clear(); metricsGen = fontGen; }
+            const r = p._renderer, f = r && r._textFont, key = fn + '|' + p.textSize() + '|' + (r && r._textStyle) + '|' + (f && typeof f === 'object' ? 'obj' : f);
+            if (f && typeof f === 'object') return measure.call(p);      // a loaded font file: p5 reads its own table, no layout
+            let v = metrics.get(key);
+            if (v === undefined) { if (metrics.size >= 200) metrics.clear(); v = measure.call(p); metrics.set(key, v); }
+            return v;
+          };
+        }
         // read by scripts/test_sims.py: how the sim is drawn, and the label-width cache
         window.flSimInfo = () => ({ name, onDemand: onDemand && !animated, animated, draws: p.__flDraws, looping: p.isLooping(),
                                     widths: widths.size, widthsMax: WIDTHS_MAX });
