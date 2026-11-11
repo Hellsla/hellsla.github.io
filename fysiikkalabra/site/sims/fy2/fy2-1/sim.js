@@ -239,7 +239,11 @@ new p5((p) => {
     p.noStroke(); p.fill(60);
     p.triangle(CH.x1 + 18, CH.y0, CH.x1 + 9, CH.y0 - 4.5, CH.x1 + 9, CH.y0 + 4.5); p.triangle(CH.x0, Y(1500) - 18, CH.x0 - 4.5, Y(1500) - 9, CH.x0 + 4.5, Y(1500) - 9);
     for (const t of [0, 4, 8, 12, 16]) { p.stroke(60); p.strokeWeight(1.5); p.line(X(t), CH.y0, X(t), CH.y0 + 5); lab(`$${t}$`, X(t), CH.y0 + 6 + fh, 'c', fh); }
-    for (const e of [0, 1000]) { p.stroke(60); p.strokeWeight(1.5); p.line(CH.x0 - 5, Y(e), CH.x0, Y(e)); lab(`$${tj(e)}$`, CH.x0 - 8, Y(e) + fh * 0.36, 'r', fh); }
+    for (const e of [0, 1000]) {   // on a phone "1 000" is wider than the room left of the axis: it then ends nearer the axis, without its tick (the gridline marks the value)
+      p.textSize(fh); const tickTex = `$${tj(e)}$`, tickRight = Math.min(Math.max(CH.x0 - 8, 4 + p.textWidth(tickTex)), CH.x0 - 2);
+      if (tickRight <= CH.x0 - 8) { p.stroke(60); p.strokeWeight(1.5); p.line(CH.x0 - 5, Y(e), CH.x0, Y(e)); }
+      lab(tickTex, tickRight, Y(e) + fh * 0.36, 'r', fh);
+    }
     lab(__('akseli_t'), CH.x1 + 22, CH.y0 + fh * 0.36, 'l', fh);
     lab(__('akseli_e'), CH.x0 + 12, Y(1500) - 14, 'l', fh);
   }

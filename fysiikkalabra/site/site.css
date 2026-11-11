@@ -672,6 +672,7 @@ form.check output[data-state=close]{color:#7a5a00;font-weight:600}form.check out
 .act-theory>.example:first-child{margin-top:0}
 .worked{margin:.8rem 0 1rem}
 .worked .step{border-left:3px solid var(--accent-soft);padding:.1rem 0 .1rem 1rem;margin:.7rem 0}
+@media (min-width:390px) and (max-width:26rem){.worked .step .katex-display{padding-inline:.5rem}}   /* a 390 px phone: the narrow-phone rules above stop at 389 px, and a worked example's widest substitution row was 4 px too wide for its box with CI's fonts (fy5-14); the box keeps its frame, the formula its size, 16 px more room */
 .worked .step:focus{outline:none}
 .worked .eq-chain{width:auto;margin:.5rem 0 .7rem}.worked .eq-chain:not(.lead){grid-template-columns:fit-content(min(55vw,24rem)) minmax(0,max-content);justify-content:center}   /* a calculation in rows as wide as the step's display formulas, centred like them (a long left side on its own line stays at the left) */
 .worked .step-label{margin:0 0 .2rem;font:700 var(--fs-small) var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--accent-deep)}
