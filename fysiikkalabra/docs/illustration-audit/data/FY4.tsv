@@ -1,0 +1,149 @@
+fy4-1/hero|5|4|5|5|PIDA|
+fy4-1/displacement|5|5|5|5|PIDA|Siirtymän suunta ja etumerkki samassa kuvassa kahdesti.|
+fy4-1/round-trip|5|5|4|5|PIDA|
+fy4-1/graph-slope|5|5|4|5|PIDA|
+fy4-1/jogger-graph|5|4|4|5|PIDA|
+fy4-1/pick-falling|5|4|3|5|KEVYT|Akselin nimi x (m) ulottuu kuva-alan yläreunan yli. Sama vika kaikissa korkeissa kuvaajissa (yhteinen syy: akselin nimen paikka).|
+fy4-1/pick-rising|5|4|3|5|KEVYT|Ks. fy4-1/pick-falling.|
+fy4-1/pick-flat|5|4|3|5|KEVYT|Ks. fy4-1/pick-falling.|
+fy4-1/pick-origin|5|4|3|5|KEVYT|Ks. fy4-1/pick-falling.|
+fy4-1/~inquiry-1|5|4|4|5|PIDA|Käsin upotettu.|
+fy4-1/~inquiry-2|5|4|4|5|PIDA|Käsin upotettu.|
+fy4-10/hero|5|5|5|5|PIDA|
+fy4-10/vuorovaikutus|5|5|4|5|PIDA|
+fy4-10/tarra|5|5|5|5|PIDA|Liikemäärän nuoli säilyy, nopeuden nuoli puolittuu: säilymislaki näkyy pituuksina.|
+fy4-10/tyypit|5|5|4|5|PIDA|
+fy4-11/hero|5|5|5|5|PIDA|
+fy4-11/pysahtyminen|5|5|4|5|PIDA|Reaktio- ja jarrutusmatkat mittakaavassa.|
+fy4-11/jarrutus|5|5|4|5|PIDA|Tilannekuva ja siitä erotettu voimakuvio rinnakkain: sarjan malli voimakuvioille.|
+fy4-11/tormays|5|5|4|5|PIDA|
+fy4-11/tv|5|5|5|5|PIDA|
+fy4-11/tF|5|5|4|5|PIDA|Pinta-alat (impulssit) yhtä suuret (tarkistettu).|
+fy4-12/hero|5|4|5|4|KEVYT|Aurinko sädekehällä.|
+fy4-12/tilanne|5|5|4|5|PIDA|
+fy4-12/kohtaus|5|5|4|5|PIDA|
+fy4-12/kaava|5|5|4|5|PIDA|
+fy4-12/vt|5|5|5|5|PIDA|
+fy4-12/esimerkki|5|4|4|5|PIDA|
+fy4-12/kaksi-karrya|5|4|4|5|PIDA|
+fy4-12/ei-kohtaa|5|4|4|5|PIDA|
+fy4-12/pick-oikea|5|4|4|5|PIDA|
+fy4-12/pick-kohtaus|5|4|4|5|PIDA|
+fy4-12/pick-alku|5|4|4|5|PIDA|
+fy4-12/pick-kaari|5|4|4|5|PIDA|
+fy4-13/hero|5|5|5|5|PIDA|
+fy4-13/tilanne|5|5|4|5|PIDA|
+fy4-13/esimerkki|5|5|4|4|PIDA|Lähes sama kuva kuin fy4-13/tilanne; perusteltu, koska esimerkki käyttää samaa asetelmaa.|
+fy4-13/atwood|5|5|4|5|PIDA|Jännitysvoimat yhtä pitkät, nettovoimat kiihtyvyyksien suuntaan (tarkistettu).|
+fy4-13/virhe|5|5|4|5|PIDA|Tarkoituksella virheellinen kuvio virheen tunnistamiseen.|
+fy4-13/malli-atwood|5|5|4|5|PIDA|
+fy4-13/malli-ketju|5|5|4|5|PIDA|
+fy4-14/hero|5|5|5|5|PIDA|
+fy4-14/pudotus|5|5|4|4|KEVYT|OPETTAJAN TARKISTETTAVA. Ilmanvastus on piirretty työntönä: nuoli on kappaleen ulkopuolella kärki alapinnassa. Luvussa fy4-3 (auto, kone) sama voima alkaa kappaleen pinnasta ja osoittaa poispäin. Molemmat ovat puolustettavia, mutta sarjassa on kaksi esitystapaa samalle voimalle, ja voimakuvio-ohjeen sanamuoto on "nuoli alkaa kappaleesta".|
+fy4-14/vt|5|5|4|5|PIDA|
+fy4-14/ylos|4|5|4|4|KEVYT|Ks. fy4-14/pudotus. Kokonaisvoima on ohjeen mukaisesti erillään ja eri tyylillä.|
+fy4-14/varjo|4|5|4|4|KEVYT|Ks. fy4-14/pudotus: ensimmäisessä vaiheessa nuolen kärki on pinnassa, kahdessa muussa nuoli alkaa pinnasta.|
+fy4-14/esimerkki|5|5|4|5|PIDA|
+fy4-14/valitse-a|4|4|4|4|KEVYT|Ks. fy4-14/pudotus.|
+fy4-14/valitse-b|4|4|4|4|KEVYT|Ks. fy4-14/pudotus.|
+fy4-14/valitse-c|4|4|4|4|KEVYT|Ks. fy4-14/pudotus.|
+fy4-14/valitse-d|5|4|4|5|PIDA|
+fy4-14/malli-alas|4|4|3|4|KEVYT|Ks. fy4-14/pudotus. Lisäksi kuva-alan yläosa on tyhjä ja kuvio on työnnetty alareunaan.|
+fy4-14/ex-tangentti|5|4|4|5|PIDA|
+fy4-15/hero|5|4|5|5|PIDA|
+fy4-15/vesivoimala|5|5|5|5|PIDA|Leikkauskuva, jossa energian muodot on merkitty paikkoihin, joissa ne esiintyvät.|
+fy4-15/ilmalierio|5|5|4|5|PIDA|
+fy4-15/tehokayra|5|5|4|5|PIDA|
+fy4-15/tehokayra-pisteet|5|4|4|5|PIDA|
+fy4-16/hero|5|4|5|5|PIDA|
+fy4-16/kolme|5|5|4|5|PIDA|
+fy4-16/kitkatyo|5|5|4|5|PIDA|
+fy4-16/esimerkki|5|5|5|5|PIDA|Kaltevan tason voimakuvio komponentit katkoviivalla ja akselit sivussa: tämä on se kuva, jonka käsitekortin fy4-kalteva-taso.svg pitäisi olla.|
+fy4-16/malli-laukku|5|5|4|5|PIDA|
+fy4-16/hissi-kuvaaja|5|4|4|5|PIDA|
+fy4-16/ex-hissi|5|4|4|5|PIDA|
+fy4-2/hero|5|5|5|5|PIDA|
+fy4-2/strobe|5|5|5|5|PIDA|Nopeusnuolet kasvavat ja kiihtyvyysnuolet pysyvät: tasainen kiihtyvyys näkyy ilman kaavaa.|
+fy4-2/tv-graph|5|5|4|5|PIDA|
+fy4-2/tangent|5|5|4|5|PIDA|
+fy4-2/area|5|5|4|5|PIDA|
+fy4-2/fall-points|5|4|4|5|PIDA|
+fy4-2/ex-tv|5|4|4|5|PIDA|
+fy4-2/ex-tangent|5|4|4|5|PIDA|
+fy4-2/check-tv|5|4|4|5|PIDA|
+fy4-3/hero|5|5|5|5|PIDA|
+fy4-3/curling|5|5|4|5|PIDA|
+fy4-3/luistelijat|5|5|4|5|PIDA|Voima ja vastavoima eri kappaleiden kuvioissa, nimet alaindeksein.|
+fy4-3/auto|5|5|4|4|KEVYT|Ilmanvastus alkaa kappaleen pinnasta; luvussa fy4-14 se on piirretty työntönä kärki pinnassa. Ks. fy4-14/pudotus.|
+fy4-3/kone|5|5|4|4|KEVYT|Ks. fy4-3/auto.|
+fy4-3/anturit|5|5|4|5|PIDA|
+fy4-3/malli-lamppu|5|5|4|5|PIDA|
+fy4-4/hero|5|5|5|5|PIDA|
+fy4-4/kokonaisvoima|5|5|4|5|PIDA|
+fy4-4/kuvaaja|5|5|4|5|PIDA|
+fy4-4/nosturi|5|5|4|5|PIDA|Neljä liiketilaa, voimien pituudet vastaavat kiihtyvyyttä joka kohdassa.|
+fy4-4/esimerkki|5|5|4|5|PIDA|
+fy4-4/valitse-a|5|4|4|4|PIDA|
+fy4-4/valitse-b|5|4|4|4|PIDA|
+fy4-4/valitse-c|5|4|4|4|PIDA|
+fy4-4/valitse-d|5|4|4|4|PIDA|
+fy4-4/malli-kirja|5|5|4|5|PIDA|
+fy4-5/hero|5|5|5|5|PIDA|
+fy4-5/tilanne|5|5|4|5|PIDA|
+fy4-5/suunnat|5|5|4|5|PIDA|Tukivoima neljään eri suuntaan, heliumpallo katossa mukana.|
+fy4-5/komponentit|5|5|4|5|PIDA|
+fy4-5/esimerkki|5|5|5|5|PIDA|Komponentit katkoviivalla ja avoimin kärjin, akselit sivussa.|
+fy4-5/virhe|5|5|4|5|PIDA|
+fy4-5/hissi-a|5|4|3|3|KEVYT|Hissin matkustaja on piirretty kolmella tavalla: paksuviivainen hahmo tässä, ohuempi fy4-5/malli-hississä ja yksityiskohtaisempi fy4-16/kolme-kuvassa. Yksi hahmo kaikkiin.|
+fy4-5/hissi-b|5|4|3|3|KEVYT|Ks. fy4-5/hissi-a.|
+fy4-5/hissi-c|5|4|3|3|KEVYT|Ks. fy4-5/hissi-a.|
+fy4-5/hissi-d|5|4|3|3|KEVYT|Ks. fy4-5/hissi-a.|
+fy4-5/malli-tyonto|5|5|4|5|PIDA|
+fy4-5/malli-pulkka|5|5|4|5|PIDA|
+fy4-5/malli-hissi|5|5|4|4|KEVYT|Ks. fy4-5/hissi-a.|
+fy4-5/ruutu|5|5|5|5|PIDA|Voimat ruudukolla ja mittakaavajana: kokonaisvoima luettavissa.|
+fy4-5/pick-tasainen|5|4|3|4|KEVYT|Tukivoiman nimi on kappaleen yläreunan ja nuolen päällä.|
+fy4-5/pick-pitka|5|4|3|4|KEVYT|Ks. fy4-5/pick-tasainen.|
+fy4-5/pick-lisa|5|4|3|4|KEVYT|Ks. fy4-5/pick-tasainen.|
+fy4-5/pick-nopeus|5|4|3|4|KEVYT|Ks. fy4-5/pick-tasainen.|
+fy4-6/hero|5|4|4|4|KEVYT|Taivaalla on kehystetty pikkukuva laatikosta rampilla ja nuolesta: kuva kuvassa, ainoa laatuaan avauskuvissa. Tilanne näkyy jo rampista.|
+fy4-6/kitka|5|5|5|5|PIDA|Lepokitkan kasvu, enimmäisarvo ja pudotus liikekitkaan yhdessä kuvaajassa.|
+fy4-6/kuorma|5|5|4|5|PIDA|Kitka kuormaan eteenpäin: yleisen virhekäsityksen purkava kuva.|
+fy4-6/kalteva-ydin|5|5|5|5|PIDA|
+fy4-6/kalteva|5|5|5|5|PIDA|
+fy4-6/esimerkki|5|5|5|5|PIDA|
+fy4-6/virhe|5|5|4|5|PIDA|
+fy4-6/valitse-a|5|4|4|4|PIDA|
+fy4-6/valitse-b|5|4|4|4|PIDA|
+fy4-6/valitse-c|5|4|4|4|PIDA|
+fy4-6/valitse-d|5|4|4|4|PIDA|
+fy4-6/malli-veto|5|5|4|5|PIDA|
+fy4-6/mittaus|5|4|4|5|PIDA|
+fy4-7/hero|5|4|4|2|KEVYT|Sarjan ainoa avauskuva, jossa on merkintöjä (v, v/2, v = 0, h/4, 3h/4). Ne eivät erotu moduulisivun laatassa ja rikkovat avauskuvien tekstittömyyden. Sisältö on oikein; merkitty versio kuuluu teoriakuvaksi.|
+fy4-7/ramppi|5|5|4|5|PIDA|
+fy4-7/polut|5|5|5|5|PIDA|Kolme reittiä, sama korkeus, sama nopeus: energiaperiaate ilman laskua.|
+fy4-7/nollataso|5|5|4|5|PIDA|
+fy4-7/ek-kuvaaja|5|5|4|5|PIDA|
+fy4-7/pallo-ek|5|4|4|5|PIDA|
+fy4-8/hero|5|5|5|4|KEVYT|Aurinko sädekehällä.|
+fy4-8/laakso|5|5|4|5|PIDA|
+fy4-8/tyo|5|5|5|5|PIDA|
+fy4-8/palkit|5|5|4|5|PIDA|
+fy4-9/hero|5|5|5|5|PIDA|
+fy4-9/liikemaara|5|5|5|5|PIDA|Sama liikemäärä kevyellä nopealla ja raskaalla hitaalla pallolla; arvot tarkistettu.|
+fy4-9/pysaytys|5|5|4|5|PIDA|
+fy4-9/keskivoima|5|5|5|5|PIDA|
+fy4-9/kimpoaminen|5|5|4|5|PIDA|
+fy4-9/ex-potku|5|4|4|5|PIDA|
+fy4-9/tarkistus-kolmio|5|4|4|5|PIDA|
+fy4-sovella/fy4-s1-graph|5|4|3|3|KEVYT|Koekuvaajien poikkeava piirrostapa; yksiköt pieninä pystymurtoina; "voide B" -teksti on katkoviivan ja pisteiden päällä.|
+fy4-sovella/fy4-s1-drag|5|4|3|3|KEVYT|Koekuvaajien poikkeava piirrostapa; yksikkö pienenä pystymurtona.|
+fy4-sovella/fy4-s1-fbd|5|4|2|2|UUSI|Voimakuvio on kunnossa, mutta tilannekuvan hiihtäjä on tikku-ukko (pallopää, sininen soikio, viivajalat) ja rinne väritön monikulmio. Sarjan muut ihmiset (fy4-16/esimerkki, fy4-5/hero) ovat piirrettyjä hahmoja, joten tämä erottuu selvästi heikompana.|Piirrä tilannekuvan puolisko uudelleen: laskettelija sivusta laskuasennossa (polvet koukussa, sauvat takana) samalla hahmotyylillä kuin fy4-16/esimerkin pulkkailija (pipo, takki, täytetyt muodot, ohut tummanharmaa ääriviiva). Rinne lumenvalkoisena kiilana, jossa vaalea sininen varjoreuna ja kaltevuuskulma merkittynä kuten fy4-16/esimerkissä. Nopeusnuoli sininen rinteen suuntaan hahmon vieressä. Voimakuvion puolisko säilyy ennallaan.
+fy4-sovella/fy4-s3-collision|5|5|4|5|PIDA|
+fy4-koe/fy4-k1-graphs|5|4|4|4|PIDA|
+fy4-koe/fy4-k1-fbd|5|5|4|5|PIDA|
+fy4-koe/fy4-k1-impulse|5|4|4|3|KEVYT|Koekuvaajien poikkeava piirrostapa (ks. fy1-koe/fy1-k1-walk).|
+fy4-koe/fy4-k2-graph|5|4|4|3|KEVYT|Ks. fy4-koe/fy4-k1-impulse; yksiköt pystymurtoina.|
+fy4-koe/fy4-k3-fbd|5|5|4|5|PIDA|
+fy4-koe/fy4-k6-graph|5|4|4|3|KEVYT|Ks. fy4-koe/fy4-k1-impulse.|
+fy4-koe/fy4-k7-pulse|5|4|4|3|KEVYT|Ks. fy4-koe/fy4-k1-impulse; yksikkö pystymurtona.|
