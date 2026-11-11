@@ -74,7 +74,7 @@ check("inquiry: nothing checked fails", not V("inquiry", [], None, 0, "\n0 passe
 
 
 # the gate
-def unit(i, w=None, ok=True, alone=False): return {"id": i, "width": w, "rc": 0 if ok else 1, "ok": ok, "seconds": 1.0, "problems": [], "pages": 3, "slow": 0, "alone": alone}
+def unit(i, w=None, ok=True, alone=False): return {"id": i, "width": w, "rc": 0 if ok else 1, "ok": ok, "seconds": 1.0, "problems": [], "pages": 3, "slow": 0, "alone": alone, "hung": False}
 
 
 def reports(pages="a-1 a-2 a-3"):
@@ -106,6 +106,13 @@ r = reports(); r["inquiry-0"]["units"][1]["ok"] = False; rc, text = gate(r); che
 r = reports(); r["sims-0"]["units"].append(unit("a-2", ok=False, alone=True)); rc, text = gate(r); check("gate: a unit that failed when run again alone fails", rc == 1 and "sims: failed: a-2" in text)
 r = reports(); del r["inquiry-0"]; rc, text = gate(r); check("gate: a missing report fails", rc == 1 and "inquiry: reports of shards []" in text)
 r = reports(); del r["layout-0"]; rc, text = gate(r); check("gate: a missing layout report fails at every width", rc == 1 and text.count("reports of shards []") == 8)
+r = reports(); r["sims-0"]["units"][0].update(ok=False, rc=124, hung=True); rc, text = gate(r); check("gate: a unit that hung and was not run again fails", rc == 1 and "sims: failed: a-1" in text, text[-300:])
+r = reports(); r["sims-0"]["units"][0].update(ok=False, rc=124, hung=True); r["sims-0"]["units"].append(unit("a-1", alone=True)); rc, text = gate(r)
+check("gate: a unit that hung and passed when run again passes, and the summary names it", rc == 0 and "note: sims: no verdict at first (hung), run again alone: a-1" in text, text[-300:])
+r = reports(); r["sims-0"]["units"][0].update(ok=False, rc=124, hung=True); r["sims-0"]["units"].append(dict(unit("a-1", ok=False, alone=True), hung=True)); rc, text = gate(r)
+check("gate: a unit that hung twice fails", rc == 1 and "sims: failed: a-1" in text)
+r = reports(); r["sims-0"]["units"][0].update(ok=False, rc=124, hung=True); r["sims-0"]["units"].append(unit("a-1", ok=False, alone=True)); rc, text = gate(r)
+check("gate: a unit that hung and failed when run again fails", rc == 1 and "sims: failed: a-1" in text)
 rc, text = gate({}); check("gate: no report at all fails", rc == 1)
 rc, text = gate({}, pages=""); check("gate: no page changed and no report passes", rc == 0 and "nothing to test" in text, text[-200:])
 rc, text = gate(reports(), pages=""); check("gate: a report although nothing was planned fails", rc == 1)

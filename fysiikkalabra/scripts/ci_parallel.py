@@ -34,6 +34,11 @@ more, never less: test_sims.py does not judge an assertion that failed while fra
 2026-11-10); a unit with such lines is run once more alone after the others, when the machine is idle, and it passes
 only if both runs passed.
 
+A browser that hangs gives no verdict (2026-11-11: check_layout.py on fy8-5 at 390 px stood still for 55 minutes on a
+runner and ran in seconds elsewhere). A unit is stopped after TIMEOUT seconds, several times what the slowest unit
+needs, and run once more alone; that second run is its verdict, and a second hang fails it. The log and the gate's
+summary name every unit that hung.
+
 The inquiry test builds its page into preview/ (build.py <id>, which also copies the shared files again), so its
 workers do not share a folder: each gets its own git work tree of HEAD (the same files and the same history, which the
 build reads for the exercises' reviewed version) and runs the test there. With uncommitted changes in the folder the
@@ -42,7 +47,7 @@ work trees would not show what is being tested, so the tests then run one at a t
 The report (JSON) lists the universe and every unit's verdict; `gate` reads the reports of all jobs of a run and fails
 unless every planned check reported, the jobs agree on the universe, every unit of it was tested exactly once and every
 unit passed. So a page no job tested fails the run."""
-import argparse, concurrent.futures as cf, json, math, os, pathlib, re, shutil, subprocess, sys, tempfile, threading, time
+import argparse, concurrent.futures as cf, json, math, os, pathlib, re, shutil, signal, subprocess, sys, tempfile, threading, time
 
 HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parent
@@ -50,6 +55,7 @@ PY = sys.executable
 WIDTHS = "360 390 640 768 1024 1280 1440 1920"   # the eight widths of the layout check (NOTES.md §8)
 SIMS_SHARDS, INQUIRY_SHARDS, LAYOUT_SHARDS, SMALL = 8, 4, 2, 12   # the jobs of a full run (layout: per width); up to SMALL pages run in one job per check
 SLOW = "slow: not judged"
+TIMEOUT = {"sims": 2400, "layout": 600, "inquiry": 1500}   # seconds a unit may take; the slowest measured: 750, 60 and 410 (fy3-10)
 
 
 def languages():
@@ -124,6 +130,7 @@ def run(kind, args):
     tasks = [(u, w) for w in widths for u in mine]
     workers = max(1, min(args.workers or (os.cpu_count() or 2) // 2, len(tasks) or 1))
     lock, results, t0, c0 = threading.Lock(), [], time.time(), cpu_seconds()
+    limit = args.timeout or TIMEOUT[kind]
     tmp, top = None, None
     if kind == "inquiry" and workers > 1 and tasks:   # a folder of its own for every worker (see the docstring)
         g = lambda *a: subprocess.run(["git", *a], cwd=ROOT, capture_output=True, text=True)
@@ -144,16 +151,17 @@ def run(kind, args):
         with lock: n = free.pop()
         root = tmp / f"w{n}" / rel if tmp else ROOT
         t = time.time()
+        proc = subprocess.Popen(command(kind, uid, w, root), cwd=root, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True,
+                                env={**os.environ, "PYTHONUNBUFFERED": "1"}, start_new_session=True)   # its own process group: a hung browser is stopped with it
         try:
-            r = subprocess.run(command(kind, uid, w, root), cwd=root, capture_output=True, text=True,
-                               env={**os.environ, "PYTHONUNBUFFERED": "1"}, timeout=args.timeout)
-            rc, text = r.returncode, r.stdout + r.stderr
-        except subprocess.TimeoutExpired as e:
-            rc, text = 124, f"{e.stdout or ''}{e.stderr or ''}\ntimed out after {args.timeout} s"
-            if isinstance(text, bytes): text = text.decode(errors="replace")
+            text, rc = proc.communicate(timeout=limit)[0], proc.returncode
+        except subprocess.TimeoutExpired:
+            try: os.killpg(proc.pid, signal.SIGKILL)
+            except ProcessLookupError: pass
+            rc, text = 124, f"{proc.communicate()[0] or ''}\nno verdict: stopped after {limit} s"
         ok, problems = verdict(kind, units[uid], w, rc, text)
         res = {"id": uid, "width": w, "rc": rc, "ok": ok, "seconds": round(time.time() - t, 1), "problems": problems,
-               "pages": len(units[uid]) or 1, "slow": text.count(SLOW), "alone": alone}
+               "pages": len(units[uid]) or 1, "slow": text.count(SLOW), "alone": alone, "hung": rc == 124}
         with lock:
             free.append(n); results.append(res)
             name = uid + (f" at {w} px" if w else "") + (" (again, alone)" if alone else "")
@@ -167,18 +175,20 @@ def run(kind, args):
 
     print(f"{kind}: {len(tasks)} of {len(ids) * len(widths)} units (shard {args.shard}), {workers} workers", flush=True)
     with cf.ThreadPoolExecutor(workers) as ex: first = list(ex.map(one, tasks))
-    again = [(r["id"], r["width"]) for r in first if r["slow"]] if kind == "sims" else []
+    again = [(r["id"], r["width"]) for r in first if r["hung"] or (kind == "sims" and r["slow"])]
+    hung = [r["id"] + (f"@{r['width']}" if r["width"] else "") for r in first if r["hung"]]
     if again:
-        print(f"{len(again)} units had assertions not judged on a busy machine; once more, one at a time", flush=True)
+        print(f"{len(again)} units gave no verdict ({len(hung)} hung) or had assertions not judged on a busy machine; once more, one at a time", flush=True)
+        if hung: print(f"{'::warning::' if os.environ.get('GITHUB_ACTIONS') else 'WARNING: '}no verdict in {limit} s, run again alone: {' '.join(hung)}", flush=True)
         for t in again: one(t, alone=True)
     if tmp:
         for n in range(workers): subprocess.run(["git", "worktree", "remove", "--force", str(tmp / f"w{n}")], cwd=ROOT, capture_output=True)
         shutil.rmtree(tmp, ignore_errors=True)
     wall, cpu = time.time() - t0, cpu_seconds() - c0
-    failed = sorted({r["id"] + (f"@{r['width']}" if r["width"] else "") for r in results if not r["ok"]})
+    failed = sorted({r["id"] + (f"@{r['width']}" if r["width"] else "") for r in results if not r["ok"] and (r["alone"] or not r["hung"])})
     still = sum(r["slow"] for r in results if r["alone"])
     report = {"kind": kind, "shard": args.shard, "pages": args.pages, "widths": [w for w in widths if w], "universe": ids, "units": results,
-              "workers": workers, "cores": os.cpu_count(), "wall": round(wall, 1), "cpu": round(cpu, 1), "failed": failed}
+              "workers": workers, "cores": os.cpu_count(), "wall": round(wall, 1), "cpu": round(cpu, 1), "failed": failed, "hung": hung}
     if args.report:
         p = pathlib.Path(args.report); p.parent.mkdir(parents=True, exist_ok=True); p.write_text(json.dumps(report, indent=1))
     pages = sum(r["pages"] for r in results if not r["alone"])
@@ -204,7 +214,7 @@ def plan(pages):
 
 
 def gate(args):
-    want, bad, rows = plan(args.pages), [], []
+    want, bad, rows, notes = plan(args.pages), [], [], []
     reports = [json.loads(f.read_text()) for f in sorted(pathlib.Path(args.dir).rglob("*.json"))]
     groups = [("sims", None, want["sims"]), ("inquiry", None, want["inquiry"])] + \
              [("layout", int(w), [j["shard"] for j in want["layout"] if w in j["widths"].split()]) for w in WIDTHS.split() if want["layout"]]
@@ -225,7 +235,10 @@ def gate(args):
             miss, dup = sorted(set(uni) - set(tested)), sorted({t for t in tested if tested.count(t) > 1})
             bad.append(f"{name}: {len(tested)} units tested, {len(uni)} listed" + (f"; not tested: {' '.join(miss[:20])}" if miss else "") + (f"; twice: {' '.join(dup[:20])}" if dup else ""))
         every = [u for r in rs for u in r["units"] if width is None or u["width"] == width]
-        fails = sorted({u["id"] for u in every if not u["ok"]})
+        fails = sorted({u["id"] for u in every if not u["ok"] and (u["alone"] or not u.get("hung"))}
+                       | {u["id"] for u in units if u.get("hung") and not any(v["alone"] and v["id"] == u["id"] for v in every)})   # a hang without its second run
+        hangs = sorted({u["id"] for u in units if u.get("hung")})
+        if hangs: notes.append(f"{name}: no verdict at first (hung), run again alone: {' '.join(hangs)}")
         if fails: bad.append(f"{name}: failed: {' '.join(fails)}")
         rows.append((name, len(rs), len(uni), sum(u["pages"] for u in units), len(fails), sum(u["seconds"] for u in every) / 60, max(r["wall"] for r in rs) / 60))
     if args.pages == "full":   # a full run's lists are compared with the committed site and sources, read here again
@@ -238,7 +251,7 @@ def gate(args):
     out += [f"| {a} | {b} | {c} | {d} | {e} | {f:.1f} | {g:.1f} |" for a, b, c, d, e, f, g in rows]
     if rows: out.append(f"| total | {sum(r[1] for r in rows)} | {sum(r[2] for r in rows)} | {sum(r[3] for r in rows)} | {sum(r[4] for r in rows)} | {sum(r[5] for r in rows):.1f} | {max(r[6] for r in rows):.1f} |")
     if not any(want.values()): out.append("no page changed: the browser checks had nothing to test")
-    out += [""] + [f"- {b}" for b in bad]
+    out += [""] + [f"- {b}" for b in bad] + [f"- note: {n}" for n in notes]
     text = "\n".join(out); print(text)
     if os.environ.get("GITHUB_STEP_SUMMARY"): open(os.environ["GITHUB_STEP_SUMMARY"], "a").write(text + "\n")
     sys.exit(1 if bad else 0)
@@ -249,7 +262,7 @@ if __name__ == "__main__":
     ap.add_argument("kind", choices=["plan", "sims", "layout", "inquiry", "gate"])
     ap.add_argument("dir", nargs="?")
     ap.add_argument("--pages", default="full"); ap.add_argument("--shard", default="0/1"); ap.add_argument("--widths", default=WIDTHS)
-    ap.add_argument("--workers", type=int, default=0); ap.add_argument("--report"); ap.add_argument("--timeout", type=int, default=3600)
+    ap.add_argument("--workers", type=int, default=0); ap.add_argument("--report"); ap.add_argument("--timeout", type=int, default=0)
     a = ap.parse_args()
     a.pages = " ".join(a.pages.split())
     if a.kind == "plan":
