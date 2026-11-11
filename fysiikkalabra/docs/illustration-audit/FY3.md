@@ -14,7 +14,7 @@ Kuvia 111. Asteikko 1–5: F fysiikka, P pedagogiikka, V visuaalinen laatu, T ty
 | [`fy3-1/pick-weight-only`](catalog/FY3.html#fy3-1-pick-weight-only) | Voima vuorovaikutuksen mittana ja paino $G = mg$; kaavio: tehtävä | 5 | 4 | 3 | 3 | KEVYT KORJAUS | Ks. fy3-1/pick-rest. |  | KEVYT KORJAUS hyväksytty, ryhmä E (opettaja 2026-11-11) |
 | [`fy3-1/pick-long-pull`](catalog/FY3.html#fy3-1-pick-long-pull) | Voima vuorovaikutuksen mittana ja paino $G = mg$; kaavio: tehtävä | 5 | 4 | 3 | 3 | KEVYT KORJAUS | Ks. fy3-1/pick-rest. |  | KEVYT KORJAUS hyväksytty, ryhmä E (opettaja 2026-11-11) |
 | [`fy3-1/pick-extra`](catalog/FY3.html#fy3-1-pick-extra) | Voima vuorovaikutuksen mittana ja paino $G = mg$; kaavio: tehtävä | 5 | 4 | 3 | 3 | KEVYT KORJAUS | Ks. fy3-1/pick-rest. |  | KEVYT KORJAUS hyväksytty, ryhmä E (opettaja 2026-11-11) |
-| [`fy3-10/hero`](catalog/FY3.html#fy3-10-hero) | Ideaalikaasun tilanyhtälö $pV = nRT$; avauskuva | 5 | 4 | 3 | 4 | KEVYT KORJAUS | Harva sommittelu: kaksi ilmapalloa ja ikkuna, puolet pinnasta tyhjää. |  | ODOTTAA |
+| [`fy3-10/hero`](catalog/FY3.html#fy3-10-hero) | Ideaalikaasun tilanyhtälö $pV = nRT$; avauskuva | 5 | 4 | 3 | 4 | KEVYT KORJAUS | Harva sommittelu: kaksi ilmapalloa ja ikkuna, puolet pinnasta tyhjää. |  | KEVYT KORJAUS hyväksytty (opettaja 2026-11-11) |
 | [`fy3-10/scene`](catalog/FY3.html#fy3-10-scene) | Ideaalikaasun tilanyhtälö $pV = nRT$; kuvitus: teoria | 5 | 4 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy3-10/mole-masses`](catalog/FY3.html#fy3-10-mole-masses) | Ideaalikaasun tilanyhtälö $pV = nRT$; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy3-10/helium-ilma`](catalog/FY3.html#fy3-10-helium-ilma) | Ideaalikaasun tilanyhtälö $pV = nRT$; kaavio: teoria | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
