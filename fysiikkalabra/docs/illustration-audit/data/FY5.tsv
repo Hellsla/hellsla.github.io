@@ -1,155 +1,155 @@
 fy5-1/hero|5|5|5|5|PIDA||
-fy5-1/ovi|||||KESKEN|Ei vielä arvioitu.|
-fy5-1/varsi|||||KESKEN|Ei vielä arvioitu.|
-fy5-1/suunta|||||KESKEN|Ei vielä arvioitu.|
-fy5-1/kulma|||||KESKEN|Ei vielä arvioitu.|
-fy5-1/ruutu|||||KESKEN|Ei vielä arvioitu.|
+fy5-1/ovi|5|5|5|5|PIDA|Sama voima kolmessa kohdassa ja suunnassa: momentin kaksi tekijää näkyvät.|
+fy5-1/varsi|5|5|5|5|PIDA|Vaikutussuora ja varsi piirretty todelliseen työkaluun.|
+fy5-1/suunta|5|5|4|5|PIDA||
+fy5-1/kulma|5|5|4|5|PIDA||
+fy5-1/ruutu|5|5|4|5|PIDA||
 fy5-10/hero|5|5|5|5|PIDA||
-fy5-10/scene|||||KESKEN|Ei vielä arvioitu.|
-fy5-10/types|||||KESKEN|Ei vielä arvioitu.|
-fy5-10/birth|||||KESKEN|Ei vielä arvioitu.|
-fy5-10/graphs|||||KESKEN|Ei vielä arvioitu.|
-fy5-10/valokuva|||||KESKEN|Ei vielä arvioitu.|
-fy5-10/yt-kuvaaja|||||KESKEN|Ei vielä arvioitu.|
+fy5-10/scene|5|5|4|5|PIDA||
+fy5-10/types|5|5|4|5|PIDA||
+fy5-10/birth|5|5|5|5|PIDA|Aallon synty neljänä hetkenä; rintama etenee neljännesaallonpituuden kerrallaan.|
+fy5-10/graphs|5|5|4|5|PIDA||
+fy5-10/valokuva|5|5|4|5|PIDA||
+fy5-10/yt-kuvaaja|5|5|4|5|PIDA||
 fy5-11/hero|5|5|5|5|PIDA||
-fy5-11/rintamat|||||KESKEN|Ei vielä arvioitu.|
-fy5-11/koysi|||||KESKEN|Ei vielä arvioitu.|
-fy5-11/diffraktio|||||KESKEN|Ei vielä arvioitu.|
-fy5-11/heijastuslaki|||||KESKEN|Ei vielä arvioitu.|
-fy5-11/huygens|||||KESKEN|Ei vielä arvioitu.|
+fy5-11/rintamat|5|5|5|5|PIDA|
+fy5-11/koysi|5|5|5|5|PIDA|Kiinteä pää kääntää pulssin, vapaa ei.|
+fy5-11/diffraktio|5|5|5|5|PIDA|
+fy5-11/heijastuslaki|5|5|4|5|PIDA||
+fy5-11/huygens|5|4|4|5|PIDA|Raskas konstruktio, mutta kaikki osat nimetty.|
 fy5-12/hero|5|5|5|5|PIDA||
-fy5-12/pulssit|||||KESKEN|Ei vielä arvioitu.|
-fy5-12/kuvio|||||KESKEN|Ei vielä arvioitu.|
-fy5-12/matkaero|||||KESKEN|Ei vielä arvioitu.|
-fy5-12/ehdot|||||KESKEN|Ei vielä arvioitu.|
-fy5-12/fourier|||||KESKEN|Ei vielä arvioitu.|
+fy5-12/pulssit|5|5|5|5|PIDA|
+fy5-12/kuvio|5|5|4|5|PIDA||
+fy5-12/matkaero|5|5|4|5|PIDA||
+fy5-12/ehdot|5|5|4|5|PIDA||
+fy5-12/fourier|5|5|3|5|KEVYT|"signaali" on käyrän huipun alla kiinni käyrässä.|
 fy5-13/hero|5|5|5|5|PIDA||
-fy5-13/superpositio|||||KESKEN|Ei vielä arvioitu.|
-fy5-13/solmut|||||KESKEN|Ei vielä arvioitu.|
-fy5-13/kieli|||||KESKEN|Ei vielä arvioitu.|
-fy5-13/putket|||||KESKEN|Ei vielä arvioitu.|
-fy5-13/kuvio-tehtava|||||KESKEN|Ei vielä arvioitu.|
+fy5-13/superpositio|5|5|5|5|PIDA|
+fy5-13/solmut|5|5|4|5|PIDA||
+fy5-13/kieli|5|5|4|5|PIDA||
+fy5-13/putket|5|5|5|5|PIDA|Avoimen ja suljetun pään ehdot oikein.|
+fy5-13/kuvio-tehtava|5|5|4|5|PIDA||
 fy5-14/hero|5|4|4|4|KEVYT|Ambulanssi ja kuulija ovat kuvassa, mutta Dopplerin ilmiö ei: aaltorintamat puuttuvat (tiheämmät auton edessä, harvemmat takana).|
-fy5-14/pitkittainen|||||KESKEN|Ei vielä arvioitu.|
-fy5-14/alueet|||||KESKEN|Ei vielä arvioitu.|
-fy5-14/sointi|||||KESKEN|Ei vielä arvioitu.|
-fy5-14/huojunta|||||KESKEN|Ei vielä arvioitu.|
-fy5-14/doppler|||||KESKEN|Ei vielä arvioitu.|
-fy5-14/spektri-tehtava|||||KESKEN|Ei vielä arvioitu.|
-fy5-14/huojunta-tehtava|||||KESKEN|Ei vielä arvioitu.|
+fy5-14/pitkittainen|5|5|5|5|PIDA|Hiukkastiheys ja painekuvaaja kohdakkain.|
+fy5-14/alueet|5|5|4|5|PIDA||
+fy5-14/sointi|5|5|4|5|PIDA||
+fy5-14/huojunta|5|5|4|5|PIDA||
+fy5-14/doppler|5|5|3|4|KEVYT|Fysiikka oikein (rintamat tihenevät lähteen edessä). "kuulija liikkuu" on aaltorintaman alla, ja kuulijat ovat tikku-ukkoja, kun sarjan muut ihmiset ovat piirrettyjä hahmoja.|
+fy5-14/spektri-tehtava|5|5|4|5|PIDA||
+fy5-14/huojunta-tehtava|5|5|4|5|PIDA||
 fy5-15/hero|5|5|5|5|PIDA||
-fy5-15/kartio|||||KESKEN|Ei vielä arvioitu.|
-fy5-15/asteikko|||||KESKEN|Ei vielä arvioitu.|
-fy5-15/kuvaaja|||||KESKEN|Ei vielä arvioitu.|
-fy5-15/summa|||||KESKEN|Ei vielä arvioitu.|
+fy5-15/kartio|5|5|5|5|PIDA|Pinta-ala 1, 4, 9 ruutuina: käänteinen neliölaki laskettavissa kuvasta.|
+fy5-15/asteikko|5|5|4|5|PIDA||
+fy5-15/kuvaaja|5|5|4|5|PIDA|−6 dB etäisyyden kaksinkertaistuessa (tarkistettu).|
+fy5-15/summa|5|5|5|5|PIDA|
 fy5-16/hero|5|5|5|5|PIDA||
-fy5-16/scale|||||KESKEN|Ei vielä arvioitu.|
-fy5-16/exposure|||||KESKEN|Ei vielä arvioitu.|
-fy5-16/control|||||KESKEN|Ei vielä arvioitu.|
-fy5-16/room|||||KESKEN|Ei vielä arvioitu.|
-fy5-16/decay|||||KESKEN|Ei vielä arvioitu.|
-fy5-16/anc|||||KESKEN|Ei vielä arvioitu.|
-fy5-16/transducers|||||KESKEN|Ei vielä arvioitu.|
+fy5-16/scale|5|5|4|4|PIDA|Toinen desibeliasteikko eri värityksellä kuin fy5-15/asteikko; perusteltu, koska tässä väri kertoo vaaran.|
+fy5-16/exposure|5|5|4|5|PIDA||
+fy5-16/control|5|5|4|5|PIDA||
+fy5-16/room|5|5|4|5|PIDA||
+fy5-16/decay|5|5|4|5|PIDA||
+fy5-16/anc|5|5|4|5|PIDA||
+fy5-16/transducers|5|5|4|5|PIDA||
 fy5-17/hero|5|5|5|5|PIDA||
-fy5-17/kaiku|||||KESKEN|Ei vielä arvioitu.|
-fy5-17/taajuus|||||KESKEN|Ei vielä arvioitu.|
-fy5-17/maapallo|||||KESKEN|Ei vielä arvioitu.|
-fy5-17/kulkuaika|||||KESKEN|Ei vielä arvioitu.|
-fy5-17/tsunami|||||KESKEN|Ei vielä arvioitu.|
-fy5-17/a-scan|||||KESKEN|Ei vielä arvioitu.|
-fy5-17/seismogrammit|||||KESKEN|Ei vielä arvioitu.|
-fy5-17/seismogrammi-ex|||||KESKEN|Ei vielä arvioitu.|
+fy5-17/kaiku|5|5|5|5|PIDA|
+fy5-17/taajuus|5|5|4|5|PIDA||
+fy5-17/maapallo|5|5|5|5|PIDA|S-aallot pysähtyvät nestemäiseen ulkoytimeen, varjoalue merkitty.|
+fy5-17/kulkuaika|5|5|4|5|PIDA||
+fy5-17/tsunami|5|5|4|5|PIDA|Arvot vastaavat kaavaa v = √(gh) (tarkistettu).|
+fy5-17/a-scan|5|5|4|5|PIDA||
+fy5-17/seismogrammit|5|5|5|5|PIDA|
+fy5-17/seismogrammi-ex|5|5|4|5|PIDA||
 fy5-2/hero|5|5|5|5|PIDA||
-fy5-2/pari|||||KESKEN|Ei vielä arvioitu.|
-fy5-2/kaatuu|||||KESKEN|Ei vielä arvioitu.|
-fy5-2/lankku|||||KESKEN|Ei vielä arvioitu.|
-fy5-2/komponentit|||||KESKEN|Ei vielä arvioitu.|
-fy5-2/hirsi|||||KESKEN|Ei vielä arvioitu.|
-fy5-2/virhe|||||KESKEN|Ei vielä arvioitu.|
-fy5-2/lauta|||||KESKEN|Ei vielä arvioitu.|
-fy5-2/lauta-voimat|||||KESKEN|Ei vielä arvioitu.|
-fy5-2/keinu-voimat|||||KESKEN|Ei vielä arvioitu.|
-fy5-2/hylly|||||KESKEN|Ei vielä arvioitu.|
-fy5-2/kyltti|||||KESKEN|Ei vielä arvioitu.|
+fy5-2/pari|5|5|5|5|PIDA|
+fy5-2/kaatuu|5|5|5|5|PIDA|Painon vaikutussuora tukipinnan sisällä ja ulkona.|
+fy5-2/lankku|5|5|4|5|PIDA||
+fy5-2/komponentit|5|5|4|5|PIDA||
+fy5-2/hirsi|5|5|4|5|PIDA||
+fy5-2/virhe|5|5|4|5|PIDA|Tarkoituksella virheellinen kuvio.|
+fy5-2/lauta|5|5|5|5|PIDA|
+fy5-2/lauta-voimat|5|5|4|5|PIDA||
+fy5-2/keinu-voimat|5|5|4|5|PIDA||
+fy5-2/hylly|5|5|4|5|PIDA|Murtolukumerkinnät h/2 ja d/2 ovat pieniä puhelimella.|
+fy5-2/kyltti|5|5|5|5|PIDA|
 fy5-3/hero|5|4|4|4|KEVYT|Aurinko sädekehällä.|
-fy5-3/tangent|||||KESKEN|Ei vielä arvioitu.|
-fy5-3/release|||||KESKEN|Ei vielä arvioitu.|
-fy5-3/dv|||||KESKEN|Ei vielä arvioitu.|
-fy5-3/two-radii|||||KESKEN|Ei vielä arvioitu.|
-fy5-3/opt-tangent|||||KESKEN|Ei vielä arvioitu.|
-fy5-3/opt-radial|||||KESKEN|Ei vielä arvioitu.|
-fy5-3/opt-curve|||||KESKEN|Ei vielä arvioitu.|
-fy5-3/opt-between|||||KESKEN|Ei vielä arvioitu.|
+fy5-3/tangent|5|5|4|5|PIDA||
+fy5-3/release|5|5|5|5|PIDA|Narun katketessa kappale jatkaa suoraan: jälkikuvat tekevät liikkeen näkyväksi.|
+fy5-3/dv|5|5|4|5|PIDA||
+fy5-3/two-radii|5|5|4|5|PIDA||
+fy5-3/opt-tangent|5|4|4|5|PIDA|
+fy5-3/opt-radial|5|4|4|5|PIDA|
+fy5-3/opt-curve|5|4|4|5|PIDA|
+fy5-3/opt-between|5|4|4|5|PIDA|
 fy5-4/hero|5|5|5|5|PIDA||
-fy5-4/muutos|||||KESKEN|Ei vielä arvioitu.|
-fy5-4/kaarre|||||KESKEN|Ei vielä arvioitu.|
-fy5-4/kuvaaja|||||KESKEN|Ei vielä arvioitu.|
-fy5-4/nyppyla|||||KESKEN|Ei vielä arvioitu.|
-fy5-4/esimerkki|||||KESKEN|Ei vielä arvioitu.|
-fy5-4/virhe|||||KESKEN|Ei vielä arvioitu.|
-fy5-4/valitse-a|||||KESKEN|Ei vielä arvioitu.|
-fy5-4/valitse-b|||||KESKEN|Ei vielä arvioitu.|
-fy5-4/valitse-c|||||KESKEN|Ei vielä arvioitu.|
-fy5-4/valitse-d|||||KESKEN|Ei vielä arvioitu.|
-fy5-4/malli-kiekko|||||KESKEN|Ei vielä arvioitu.|
-fy5-4/pick-alas|||||KESKEN|Ei vielä arvioitu.|
-fy5-4/pick-keskipako|||||KESKEN|Ei vielä arvioitu.|
-fy5-4/pick-ylos|||||KESKEN|Ei vielä arvioitu.|
-fy5-4/pick-nopeus|||||KESKEN|Ei vielä arvioitu.|
+fy5-4/muutos|5|5|4|5|PIDA||
+fy5-4/kaarre|5|5|5|5|PIDA|Tilannekuva ylhäältä ja voimakuvio takaa: kitka kohti keskipistettä.|
+fy5-4/kuvaaja|5|5|4|4|KEVYT|Akselien yksiköt pystymurtoina (m/s² ja m/s), kun muissa lukujen kuvaajissa ne ovat rivillä.|
+fy5-4/nyppyla|5|5|5|5|PIDA|
+fy5-4/esimerkki|5|5|4|5|PIDA||
+fy5-4/virhe|5|5|4|5|PIDA|Tarkoituksella virheellinen kuvio (keskipakovoima voimana).|
+fy5-4/valitse-a|5|4|4|4|PIDA|
+fy5-4/valitse-b|5|4|4|4|PIDA|
+fy5-4/valitse-c|5|4|4|4|PIDA|
+fy5-4/valitse-d|5|4|4|4|PIDA|
+fy5-4/malli-kiekko|5|5|4|5|PIDA||
+fy5-4/pick-alas|5|4|4|4|PIDA|
+fy5-4/pick-keskipako|5|4|4|4|PIDA|
+fy5-4/pick-ylos|5|4|4|4|PIDA|
+fy5-4/pick-nopeus|5|4|4|4|PIDA|
 fy5-5/hero|5|5|5|5|PIDA||
-fy5-5/vuorovaikutus|||||KESKEN|Ei vielä arvioitu.|
-fy5-5/kaava|||||KESKEN|Ei vielä arvioitu.|
-fy5-5/kuvaaja|||||KESKEN|Ei vielä arvioitu.|
-fy5-5/kentta|||||KESKEN|Ei vielä arvioitu.|
-fy5-5/planeetat|||||KESKEN|Ei vielä arvioitu.|
-fy5-5/rakenteet|||||KESKEN|Ei vielä arvioitu.|
+fy5-5/vuorovaikutus|5|5|5|5|PIDA|Yhtä pitkät voimat, hyvin eri kiihtyvyydet.|
+fy5-5/kaava|5|5|4|5|PIDA||
+fy5-5/kuvaaja|5|5|4|5|PIDA|Arvot vastaavat gravitaatiolakia (tarkistettu).|
+fy5-5/kentta|5|5|4|5|PIDA||
+fy5-5/planeetat|5|5|5|5|PIDA|
+fy5-5/rakenteet|5|4|4|5|PIDA|
 fy5-6/hero|5|5|5|5|PIDA||
-fy5-6/orbit|||||KESKEN|Ei vielä arvioitu.|
-fy5-6/cannon|||||KESKEN|Ei vielä arvioitu.|
-fy5-6/vr|||||KESKEN|Ei vielä arvioitu.|
-fy5-6/paino|||||KESKEN|Ei vielä arvioitu.|
-fy5-6/radat|||||KESKEN|Ei vielä arvioitu.|
-fy5-6/malli|||||KESKEN|Ei vielä arvioitu.|
+fy5-6/orbit|5|5|4|5|PIDA||
+fy5-6/cannon|4|5|4|5|KEVYT|"Liian nopea" rata on piirretty ympyränä; lähtöpisteestä liian nopeasti lähtevä kappale kulkee ellipsirataa, jonka lähin piste on lähtöpiste. Piirrä ellipsi.|
+fy5-6/vr|5|5|4|5|PIDA|Ratanopeudet vastaavat kaavaa (tarkistettu).|
+fy5-6/paino|5|5|5|5|PIDA|Painottomuus: sama gravitaatio, tukivoima puuttuu.|
+fy5-6/radat|5|5|4|5|PIDA||
+fy5-6/malli|5|5|4|5|PIDA||
 fy5-7/hero|5|4|4|4|KEVYT|Aurinko sädekehällä.|
-fy5-7/osat|||||KESKEN|Ei vielä arvioitu.|
-fy5-7/kuvaaja|||||KESKEN|Ei vielä arvioitu.|
-fy5-7/ympyra|||||KESKEN|Ei vielä arvioitu.|
-fy5-7/sovitus|||||KESKEN|Ei vielä arvioitu.|
-fy5-7/l1-kuvaaja|||||KESKEN|Ei vielä arvioitu.|
-fy5-7/l2-kuvaaja|||||KESKEN|Ei vielä arvioitu.|
-fy5-7/tarkistus-kuvaaja|||||KESKEN|Ei vielä arvioitu.|
-fy5-7/pick-a3-t05|||||KESKEN|Ei vielä arvioitu.|
-fy5-7/pick-a15-t05|||||KESKEN|Ei vielä arvioitu.|
-fy5-7/pick-a3-t1|||||KESKEN|Ei vielä arvioitu.|
-fy5-7/pick-a3-t2|||||KESKEN|Ei vielä arvioitu.|
+fy5-7/osat|5|5|5|5|PIDA|
+fy5-7/kuvaaja|5|5|4|5|PIDA||
+fy5-7/ympyra|5|5|4|5|PIDA||
+fy5-7/sovitus|5|5|4|5|PIDA||
+fy5-7/l1-kuvaaja|5|4|4|5|PIDA|
+fy5-7/l2-kuvaaja|5|4|4|5|PIDA|
+fy5-7/tarkistus-kuvaaja|5|4|4|5|PIDA|
+fy5-7/pick-a3-t05|5|4|4|5|PIDA|
+fy5-7/pick-a15-t05|5|4|4|5|PIDA|
+fy5-7/pick-a3-t1|5|4|4|5|PIDA|
+fy5-7/pick-a3-t2|5|4|4|5|PIDA|
 fy5-8/hero|5|4|4|4|KEVYT|Flipperin yläosan kohteet leikkautuvat kuvan reunaan; jousi ja kuula eivät ole kuvan keskellä.|
-fy5-8/suunta|||||KESKEN|Ei vielä arvioitu.|
-fy5-8/pari|||||KESKEN|Ei vielä arvioitu.|
-fy5-8/kulmakerroin|||||KESKEN|Ei vielä arvioitu.|
-fy5-8/pinta-ala|||||KESKEN|Ei vielä arvioitu.|
-fy5-8/esimerkki|||||KESKEN|Ei vielä arvioitu.|
-fy5-8/virhe|||||KESKEN|Ei vielä arvioitu.|
-fy5-8/malli-laatikko|||||KESKEN|Ei vielä arvioitu.|
-fy5-8/mittaus|||||KESKEN|Ei vielä arvioitu.|
-fy5-8/ex-suora|||||KESKEN|Ei vielä arvioitu.|
-fy5-8/ex-kaksi|||||KESKEN|Ei vielä arvioitu.|
+fy5-8/suunta|5|5|5|5|PIDA|Jousivoima kolmessa tilassa samalla akselilla.|
+fy5-8/pari|5|5|4|5|PIDA||
+fy5-8/kulmakerroin|5|5|4|5|PIDA||
+fy5-8/pinta-ala|5|5|5|5|PIDA|Kaksinkertainen venymä, nelinkertainen energia pinta-aloina.|
+fy5-8/esimerkki|5|5|5|5|PIDA|
+fy5-8/virhe|5|5|4|5|PIDA|Tarkoituksella virheellinen kuvio.|
+fy5-8/malli-laatikko|5|5|4|5|PIDA||
+fy5-8/mittaus|5|4|4|5|PIDA|
+fy5-8/ex-suora|5|4|4|5|PIDA|
+fy5-8/ex-kaksi|5|4|4|5|PIDA|
 fy5-9/hero|5|5|5|5|PIDA||
-fy5-9/jousi|||||KESKEN|Ei vielä arvioitu.|
-fy5-9/xt|||||KESKEN|Ei vielä arvioitu.|
-fy5-9/heiluri|||||KESKEN|Ei vielä arvioitu.|
-fy5-9/energia|||||KESKEN|Ei vielä arvioitu.|
-fy5-9/vaimeneva|||||KESKEN|Ei vielä arvioitu.|
-fy5-9/kuvaaja-k|||||KESKEN|Ei vielä arvioitu.|
-fy5-sovella/fy5-s1-crane|||||KESKEN|Ei vielä arvioitu.|
-fy5-sovella/fy5-s1-fbd|||||KESKEN|Ei vielä arvioitu.|
-fy5-sovella/fy5-s2-graph|||||KESKEN|Ei vielä arvioitu.|
-fy5-sovella/fy5-s3-graph|||||KESKEN|Ei vielä arvioitu.|
-fy5-sovella/fy5-s4-signal|||||KESKEN|Ei vielä arvioitu.|
-fy5-koe/fy5-k1-osc|||||KESKEN|Ei vielä arvioitu.|
-fy5-koe/fy5-k1-doppler|||||KESKEN|Ei vielä arvioitu.|
-fy5-koe/fy5-k2-board|||||KESKEN|Ei vielä arvioitu.|
-fy5-koe/fy5-k2-fbd|||||KESKEN|Ei vielä arvioitu.|
-fy5-koe/fy5-k3-fbd|||||KESKEN|Ei vielä arvioitu.|
-fy5-koe/fy5-k4-graph|||||KESKEN|Ei vielä arvioitu.|
-fy5-koe/fy5-k5-modes|||||KESKEN|Ei vielä arvioitu.|
-fy5-koe/fy5-k6-graph|||||KESKEN|Ei vielä arvioitu.|
+fy5-9/jousi|5|5|5|5|PIDA|Voima, kiihtyvyys ja nopeus kolmessa kohdassa: missä kukin on suurin ja missä nolla.|
+fy5-9/xt|5|5|4|5|PIDA||
+fy5-9/heiluri|5|5|5|5|PIDA|
+fy5-9/energia|5|5|5|5|PIDA|
+fy5-9/vaimeneva|5|5|4|5|PIDA||
+fy5-9/kuvaaja-k|5|4|3|5|KEVYT|Aika-akselin numerot ovat kuvaajan sisällä käyrän päällä.|
+fy5-sovella/fy5-s1-crane|5|5|4|5|PIDA||
+fy5-sovella/fy5-s1-fbd|5|4|4|4|PIDA|
+fy5-sovella/fy5-s2-graph|5|4|3|3|KEVYT|Akselien yksiköt sisäkkäisinä pieninä murtolukuina (1/r, 10^-9/m): ei luettavissa puhelimella. Koekuvaajien poikkeava piirrostapa.|
+fy5-sovella/fy5-s3-graph|5|4|4|3|KEVYT|Koekuvaajien poikkeava piirrostapa (ks. fy1-koe/fy1-k1-walk).|
+fy5-sovella/fy5-s4-signal|5|4|4|3|KEVYT|Ks. fy5-sovella/fy5-s3-graph.|
+fy5-koe/fy5-k1-osc|5|4|4|4|PIDA|
+fy5-koe/fy5-k1-doppler|5|4|4|4|PIDA|
+fy5-koe/fy5-k2-board|5|4|2|2|UUSI|Hyppääjä on tikku-ukko, vesi sininen suorakaide ja allas beige laatikko. Sama tilanne on piirretty kunnolla kuvassa fy5-2/lauta (hahmo, pultti, tuki, vesi).|Piirrä samalla piirrolla kuin fy5-2/lauta: betonireunus, pultti päässä A ja tuki kohdassa B, punainen lauta, piirretty hyppääjä laudan päässä ja vesi aaltoviivoin. Mitat 1,2 m (A–B) ja 4,0 m (A–hyppääjä) mittaviivoin laudan ylä- ja alapuolella kuten nyt, pisteiden nimet A ja B säilyvät. Eri mitat ja pisteiden nimet riittävät erottamaan kuvan luvun kuvasta.
+fy5-koe/fy5-k2-fbd|5|5|4|5|PIDA||
+fy5-koe/fy5-k3-fbd|5|5|4|5|PIDA||
+fy5-koe/fy5-k4-graph|5|4|4|3|KEVYT|Ks. fy5-sovella/fy5-s3-graph.|
+fy5-koe/fy5-k5-modes|5|5|4|5|PIDA||
+fy5-koe/fy5-k6-graph|5|4|4|3|KEVYT|Ks. fy5-sovella/fy5-s3-graph.|
