@@ -416,6 +416,16 @@ expect("... on the baseline for its hash: reviewed", rv.item_status("investigati
 expect("... a changed hash is not covered", rv.item_status("investigation", "x", "fi", d, "2222222222222222")["state"] == "draft")
 (d / "review/visual.md").write_text("VERDICT: FAIL\nCONTENT-HASH: 1111111111111111\n")
 expect("... a visual FAIL (an audit) leaves the baseline in force", rv.item_status("investigation", "x", "fi", d, "1111111111111111")["state"] == "reviewed")
+
+# item carry (teacher 2026-11-11): an investigation's PASS carries over a carry row for exactly the two hashes, no other
+import tempfile as _tf, pathlib as _pl
+_d = _pl.Path(_tf.mkdtemp()); (_d / "review").mkdir()
+for _n in rv.REVIEWS: (_d / "review" / f"{_n}.md").write_text("VERDICT: PASS\nCONTENT-HASH: aaaaaaaaaaaaaaaa\n")
+expect("an item whose hash changed is a draft", rv.item_status("investigation", "y", "fi", _d, "bbbbbbbbbbbbbbbb")["state"] == "draft")
+(_d / "review" / "carry.tsv").write_text("\t".join(rv.CARRY_COLS) + "\n" + "".join(
+    f"2026-11-11\t{_n}\taaaaaaaaaaaaaaaa\tbbbbbbbbbbbbbbbb\t000000000000\tteacher-figure\n" for _n in rv.REVIEWS))
+expect("... with carry rows over teacher-approved figures: reviewed", rv.item_status("investigation", "y", "fi", _d, "bbbbbbbbbbbbbbbb")["state"] == "reviewed")
+expect("... the rows carry to that hash only", rv.item_status("investigation", "y", "fi", _d, "cccccccccccccccc")["state"] == "draft")
 rv.BASELINE, rv.VISUAL_GATE = keep
 
 hero = '<svg data-fig="hero" viewBox="0 0 1200 600" role="img">\n  <rect x="0" y="0" width="1200" height="600" fill="#f6f1e6"/>\n</svg>'

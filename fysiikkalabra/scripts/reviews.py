@@ -6,6 +6,9 @@
   python scripts/reviews.py scope <id> [--exercises]   per reviewer: none, delta or full, from what changed since its PASS
   python scripts/reviews.py carry <id> [--exercises]   record that a reviewer's PASS carries over a change it need not see
   python scripts/reviews.py approve-figures <id> …     record that the teacher approved the lesson's figures as drawn now
+  python scripts/reviews.py carry-item investigation|sovella|koe <id> [--lang en]
+                                             the same carry for an investigation (its id), a Sovella set or an example
+                                             exam (the course, FY4): only over figures the teacher approved as drawn
   python scripts/reviews.py approve-presentation <sim.js> [<base-ref>]   show a simulation file's change since <base-ref>
                                              (default origin/main) and, when it only places or draws, record it for the
                                              teacher's approval (docs/presentation-only.tsv)
@@ -32,8 +35,9 @@ visual reviewer need not see (tests, comments, a translation's copied force diag
 change needs a genuine visual PASS, in full, since the rest of the part was never visually reviewed. Rows are only
 ever removed: `verify` fails on a row that the file's first commit did not have. The exercise set's fallback
 (published_exercises) treats a baseline hash as the visual PASS of that version, so unreviewed exercise edits never
-replace the exercises published before. Investigations, TVT guides and Sovella sets (`item_status`) have no carry
-rows: a baseline row counts for its exact hash only.
+replace the exercises published before. Investigations, TVT guides, units, Sovella sets and example exams
+(`item_status`) have one carry only: over figures the teacher approved as drawn (`carry-item`, teacher 2026-11-11);
+otherwise a report or a baseline row counts for its exact hash only.
 
 Two parts are reviewed apart (teacher 2026-10-28, README "Exercises"): the *lesson* (its texts, simulation, figures
 and lesson-answers.py, reports in review/) and its *exercises* (exercises/exercises.json, exercises/solutions.md and
@@ -320,13 +324,16 @@ def gate():
 
 
 def item_status(kind, iid, lang, folder, h):
-    """The state of a part without carry rows (an investigation, a TVT guide, a Sovella set): reviewed when every
-    reviewer of the gate passed this hash, the visual one or a baseline row for exactly this hash."""
+    """The state of an investigation, a TVT guide, a unit, a Sovella set or an example exam: reviewed when every
+    reviewer of the gate passed this hash, the visual one or a baseline row for exactly this hash. The one carry
+    such a part has is over figures the teacher approved (`carry-item`, "Item carry" below; teacher 2026-11-11)."""
     reports = {}
     for name in REVIEWS:
         r = report(folder, name)
         reports[name] = "missing" if r is None else r[0] if r[1] == h else "stale"
-    base = reports[VISUAL] != "PASS" and h in baseline_hashes(kind, lang, iid)
+        if r and r[0] == "PASS" and r[1] != h and carried(folder, name, r[1], h): reports[name] = "PASS"   # item carry, below
+    bl = baseline_hashes(kind, lang, iid)
+    base = reports[VISUAL] != "PASS" and (h in bl or any(carried(folder, VISUAL, b, h) for b in bl))
     ok = all(reports[n] == "PASS" or (n == VISUAL and base) for n in gate())
     return {"state": "reviewed" if ok else "draft", "hash": h, "reports": reports, "baseline": base}
 
@@ -795,9 +802,22 @@ VECTOR = re.compile(r"\\(?:mathbf|vec)\{([A-Za-z])\}")
 # no reviewer must see (check_layout.py checks the page it sits on). The row holds the hash of the rendered Finnish SVG,
 # so any later change to the drawing, or to the shared style it is drawn with, needs a new approval or the reviews.
 
+ITEM_CODE = ("tutkimukset", "tvt", "units")       # lessons/<dir>/<id>/figures.py of the parts figcat does not list
+
+
+def _item_figures(oid):
+    """figures.py of an investigation, guide or unit `oid` (they are not in the figure catalog), or None."""
+    return next((ROOT / "lessons" / d / oid / "figures.py" for d in ITEM_CODE if (ROOT / "lessons" / d / oid / "figures.py").is_file()), None)
+
+
 def figure_hash(fid):
     """Hash of figure `fid` as figures.py draws it now in Finnish (what an approval row names)."""
-    return hashlib.sha256(figcat.render(fid).encode()).hexdigest()[:16]
+    try: svg = figcat.render(fid)
+    except KeyError:
+        oid, name = fid.split("/", 1); f = _item_figures(oid)
+        if f is None: raise
+        svg = figcat.module(str(f.parent)).FIGURES[name]()
+    return hashlib.sha256(svg.encode()).hexdigest()[:16]
 
 
 @functools.lru_cache(maxsize=None)
@@ -835,6 +855,97 @@ def approve_figures(lid):
         for fid, h in new: f.write(f"{datetime.date.today()}\t{fid}\t{h}\n")
     teacher_figures.cache_clear(); approved.cache_clear()
     print(f"{lid}: {len(new)} figure(s) recorded as approved")
+
+
+# ------------------------------------------------------------ item carry (teacher 2026-11-11, "laajenna kevyt hyväksyntä")
+# A lesson's reviews carry over a figure the teacher approved as drawn (above). An investigation, a Sovella set and an
+# example exam had no carry at all, so one redrawn figure took the page off the site until three new reviews. Now their
+# PASS (or visual baseline row) carries over exactly one kind of change: the drawing of figures that have a row in
+# docs/teacher-figures.tsv for their current drawing. `carry-item` writes review/carry.tsv (the lesson's columns) when
+# item_view() of the commit that held the passed version equals item_view() of the working tree: every text with the
+# approved figures' SVGs taken out, the other code as it is, and each not-approved figure as figures.py of that
+# version draws it. So anything a reader sees outside the approved figures is what the reviewers passed, and a change
+# to a helper that moves another figure, or to the shared figure library, does not carry. `verify` re-derives it.
+ITEM_KINDS = ("investigation", "sovella", "koe")
+
+
+def _item(kind, iid):
+    """(module, key, owner id of its figures) of an item: its script's own folder, hash and texts."""
+    if kind == "investigation":
+        import investigations as m; return m, iid, iid
+    if kind in ("sovella", "koe"):
+        import practice as m
+        key = iid if kind == "sovella" or m.is_exam(iid) else iid + m.EXAM
+        return m, key, f"{courses.slug(m.course_of(key))}-{kind}"
+    raise SystemExit(f"carry-item: kind must be one of {', '.join(ITEM_KINDS)}")
+
+
+def item_view(kind, iid, lang, src):
+    """What an item's reviews judge apart from its teacher-approved figures, as `src` (WorkTree or Commit) has it."""
+    m, key, oid = _item(kind, iid)
+    rel = lambda p: p.relative_to(ROOT).as_posix()
+    out = [(n, normalized(_strip_approved_svgs(src.read(rel(m.folder(key, lang) / n)) or "", oid), n)) for n in m.TEXTS]
+    for n in getattr(m, "CODE", ("figures.py",)):
+        code = src.read(rel(m.code_folder(key) / n))
+        if n != "figures.py" or not code: out.append((n, code or "")); continue
+        figs = figcat.module_from(code).FIGURES
+        out.append((n, sorted(figs)))
+        out += [(f"figure {name}", hashlib.sha256(figs[name]().encode()).hexdigest()) for name in sorted(figs) if not approved(f"{oid}/{name}")]
+    return out
+
+
+def _item_base(kind, iid, lang, frm):
+    """The newest commit whose version of the item has hash `frm`, or None."""
+    m, key, _ = _item(kind, iid)
+    paths = [p.relative_to(ROOT).as_posix() for p in (m.folder(key, lang), m.code_folder(key))]
+    for c in (git("log", "--format=%H", "-n", "80", "--", *paths) or "").split():
+        if m.content_hash(key, lang, read=Commit(c).read) == frm: return c
+    return None
+
+
+def item_carry(kind, iid, lang=i18n.SOURCE):
+    """Write review/carry.tsv rows of an item for every reviewer whose PASS holds over teacher-approved figures."""
+    m, key, oid = _item(kind, iid)
+    folder, h = m.folder(key, lang), m.content_hash(key, lang)
+    rows, now, added = carries(folder), None, []
+    for name in REVIEWS:
+        rep = report(folder, name)
+        frm = rep[1] if rep and rep[0] == "PASS" else next(iter(sorted(baseline_hashes(kind, lang, key))), None) if name == VISUAL else None
+        if frm is None: print(f"{name}: no earlier PASS, review needed"); continue
+        if frm == h or carried(folder, name, frm, h): print(f"{name}: already current"); continue
+        base = _item_base(kind, iid, lang, frm)
+        if base is None: print(f"{name}: the version it passed is not in git history, review needed"); continue
+        now = now or item_view(kind, iid, lang, WorkTree())
+        if item_view(kind, iid, lang, Commit(base)) != now: print(f"{name}: more than teacher-approved figures changed, review needed"); continue
+        rows.append({"date": str(datetime.date.today()), "reviewer": name, "from": frm, "to": h, "base": base[:12], "categories": "teacher-figure"})
+        added.append(name); print(f"{name}: carried over ({WHY['teacher-figure']})")
+    if added:
+        (folder / "review").mkdir(exist_ok=True)
+        (folder / "review" / "carry.tsv").write_text("\t".join(CARRY_COLS) + "\n" + "".join("\t".join(r[c] for c in CARRY_COLS) + "\n" for r in rows))
+    print(f"{lang}/{key}: {m.status(key, lang)['state']}")
+
+
+def verify_item_carries(kind, iid, lang):
+    """Errors for an item's carry rows in use: the base must hold the passed version, and nothing but approved figures may differ."""
+    m, key, _ = _item(kind, iid)
+    folder, h, errs = m.folder(key, lang), m.content_hash(key, lang), []
+    for name in REVIEWS:
+        rep = report(folder, name)
+        froms = [rep[1]] if rep and rep[0] == "PASS" and rep[1] != h else sorted(baseline_hashes(kind, lang, key) - {h}) if name == VISUAL and not (rep and rep[0] == "PASS") else []
+        c = next((x for f in froms if (x := carried(folder, name, f, h))), None)
+        if not c: continue
+        what = f"{lang}/{key}: carry of {name}"
+        if git("rev-parse", "--verify", "-q", f"{c['base']}^{{commit}}") is None: errs.append(f"{what} names commit {c['base']}, not in history (CI needs fetch-depth: 0)"); continue
+        if m.content_hash(key, lang, read=Commit(c["base"]).read) != c["from"]: errs.append(f"{what}: commit {c['base']} does not hold hash {c['from']}"); continue
+        if item_view(kind, iid, lang, Commit(c["base"])) != item_view(kind, iid, lang, WorkTree()): errs.append(f"{what} covers more than figures the teacher approved")
+    return errs
+
+
+def items(lang):
+    """[(kind, id)] of every item of a language that can carry."""
+    import investigations, practice
+    return [("investigation", i) for i in investigations.ids(lang)] + [("sovella", c) for c in practice.courses_with(lang)] + \
+           [("koe", c) for c in practice.exams(lang)]
 
 
 SVG_BLOCK = re.compile(r'<svg\b[^>]*\bdata-fig="([^"]+)".*?</svg>', re.S)
@@ -1303,6 +1414,7 @@ if __name__ == "__main__":
     elif a[0] == "legacy": write_legacy(find_lesson(a[1]))
     elif a[0] == "scope": print_scope(find_lesson(a[1]), part)
     elif a[0] == "carry": carry(find_lesson(a[1]), part)
+    elif a[0] == "carry-item": item_carry(a[1], a[2], globals().get("LANG", i18n.SOURCE))
     elif a[0] == "approve-figures": [approve_figures(x) for x in a[1:]]
     elif a[0] == "approve-presentation": approve_presentation(a[1], *(a[2:3] or ["origin/main"]), note=" ".join(a[3:]))
     elif a[0] == "impact": impact(a[1] if len(a) > 1 else "origin/main")
@@ -1314,6 +1426,9 @@ if __name__ == "__main__":
             except ValueError as e: print("ERROR", e); bad += 1; continue
             for p in ("lesson", "exercises"):
                 for e in verify_carries(f, p): print("ERROR", e); bad += 1
+        for lang in i18n.languages():
+            for kind, iid in items(lang):
+                for e in verify_item_carries(kind, iid, lang): print("ERROR", e); bad += 1
         for e in verify_baseline(): print("ERROR", e); bad += 1
         sys.exit(1 if bad else 0)
     else: sys.exit(__doc__)

@@ -53,14 +53,19 @@ def ids(lang=i18n.SOURCE):
 def load(iid, lang=i18n.SOURCE): return json.loads((folder(iid, lang) / "investigation.json").read_text())
 
 
-def content_hash(iid, lang=i18n.SOURCE):
+def content_hash(iid, lang=i18n.SOURCE, read=None):
+    """The hash the reviews are for. read(relpath, binary) gives a file as a commit had it (reviews.Commit.read, for a
+    carry over a teacher-approved figure); default the working tree."""
     from reviews import normalized
+    def get(path, binary=False):
+        if read: return read(path.relative_to(ROOT).as_posix(), binary)
+        return (path.read_bytes() if binary else path.read_text()) if path.is_file() else None
     h = hashlib.sha256()
     for name in TEXTS:
-        p = folder(iid, lang) / name
-        if p.is_file(): h.update(name.encode() + b"\0" + normalized(p.read_text(), name).encode() + b"\0")
-    p = code_folder(iid) / "figures.py"
-    if p.is_file(): h.update(b"figures.py\0" + p.read_bytes() + b"\0")
+        t = get(folder(iid, lang) / name)
+        if t is not None: h.update(name.encode() + b"\0" + normalized(t, name).encode() + b"\0")
+    b = get(code_folder(iid) / "figures.py", True)
+    if b is not None: h.update(b"figures.py\0" + b + b"\0")
     return h.hexdigest()[:16]
 
 
