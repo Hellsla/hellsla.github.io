@@ -1,13 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: f0465f9b9d84a4b5
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: 09da6a2ea3b09622
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] sim label row at 390 px, view of width 10^17 m — "radius of the Oort cloud", "distance to Proxima Centauri" and "Orion Nebula" sit only a few px apart. They do not overlap, and the weakest label ("1 light-year") is dropped as designed. Optionally shorten the new label (for example "distance to Proxima") to give more air.
+- [Minor] sim-390.png — "human" and "blue whale" labels are about 4 px apart; no overlap.
 
 ## Checked
-- Rendered fy1-1 scale ladder (10^n m labels, width 96 on 100 px pitch) and interactions panel (beta^- label) at 390 and 1000 px: no clipping or overlap; label reads beta^- -hajoaminen / beta^- decay; sqrt(10) rule and beta-minus notation read correctly.
-- Notation in changed passages is LaTeX with thin-space units; decimal comma/point correct for the language.
+- Delta: only lang/en.json sims.fy1-1.o_proxima changed ("distance to Proxima Centauri"). The packet's hash is unchanged (lang texts are not hashed) and its diff is empty, and the stock captures show no Proxima view. So I rendered the English page myself with the Proxima object selected (390 and 1280 px canvas shots in the scratchpad: prox390.png, prox1280.png).
+- Both widths: the label row is legible, with no overlap or clipping. The values are LaTeX with units. At 1280 px the spacing is comfortable.
+- Re-opened fy1-1-sim-390.png and fy1-1-sim-1280.png (default view): intact.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 (English text reviewed) · accessibility 4
