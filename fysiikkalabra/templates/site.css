@@ -55,6 +55,12 @@
 @media (max-width:600px){:root{--card-pad:1rem 1rem;--stage-space:2.25rem}}
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
+/* A wide screen reads from the back of the classroom (UI audit 2026-11-10, teacher 2026-11-11): from 1600 px the root
+   size grows evenly with the window, so the 17 px body text is 20 px at 1920 px and stays there on a wider screen.
+   Every size and width of the site is in rem, so the page keeps its proportions (the 80rem page is 1506 px at 1920).
+   The size is a share of the reader's own default (100 %), never a fixed pixel size. */
+@media (min-width:1600px){html{font-size:clamp(100%,calc(100% + (100vw - 1600px)*.0088),117.65%)}}
+@media print{html{font-size:100%}}
 body{margin:0;font:var(--sim-fs)/var(--sim-lh) var(--sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;
   background-image:radial-gradient(circle at 18% 8%,rgba(26,77,46,.06),transparent 32rem),radial-gradient(circle at 90% 0,rgba(26,77,46,.04),transparent 28rem);background-repeat:no-repeat}
 /* the front page's background shape (teacher 2026-11-04): Kiviruukin lukio's hero blob shape (his path, viewBox 0 0 1000 900)

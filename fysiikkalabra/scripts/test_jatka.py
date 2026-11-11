@@ -61,6 +61,10 @@ with sync_playwright() as pw:
             pg.set_viewport_size({"width": w, "height": 900}); pg.wait_for_timeout(150)
             row = pg.evaluate("(() => { const h = document.querySelector('header.top'), n = h.querySelector('nav'), v = [...n.children].filter(c => c.getBoundingClientRect().width > 0); return [new Set(v.map(c => Math.round(c.getBoundingClientRect().top))).size, Math.abs(n.getBoundingClientRect().top - h.querySelector('.brand').getBoundingClientRect().top) < 30, document.documentElement.scrollWidth <= innerWidth, !!n.querySelector('a.nav-teacher') && n.querySelector('a.nav-teacher').getBoundingClientRect().width > 0]; })()")
             expect(f"{name} at {w} px: the header is one row, {'links' if w == 928 else 'the menu button'}", row[0] == 1 and row[1] and row[2] and row[3] == (w == 928), row)
+        for w, px in ((1599, 16), (1760, 17.41), (1920, 18.82), (2560, 18.82)):   # a wide screen reads from the back of the classroom (site.css, 2026-11-11): the root size grows from 1600 px, 17 px text is 20 px at 1920 px and no larger beyond
+            pg.set_viewport_size({"width": w, "height": 1000}); pg.wait_for_timeout(150)
+            got = pg.evaluate("[parseFloat(getComputedStyle(document.documentElement).fontSize), document.documentElement.scrollWidth <= innerWidth, Math.round(document.querySelector('.page').getBoundingClientRect().width)]")
+            expect(f"{name} at {w} px: root size {px} px, the page 80rem wide, no sideways scroll", abs(got[0] - px) < 0.06 and got[1] and abs(got[2] - min(80 * got[0], w - 32)) < 2, got)
         pg.set_viewport_size({"width": 1440, "height": 900})
         pg.keyboard.press("Tab")
         first = pg.evaluate("(() => { const a = document.activeElement; const r = a.getBoundingClientRect(); return [a.className, a.getAttribute('href'), r.top >= 0 && r.height > 20, !!document.querySelector('main#sisalto')]; })()")
