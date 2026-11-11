@@ -1,70 +1,70 @@
-fy14-atom-models/hero|||||KESKEN|Ei vielä arvioitu.|
-fy14-atom-models/scatter|||||KESKEN|Ei vielä arvioitu.|
-fy14-atom-models/lines|||||KESKEN|Ei vielä arvioitu.|
-fy14-atom-models/levels|||||KESKEN|Ei vielä arvioitu.|
-fy14-big-machines/hero|||||KESKEN|Ei vielä arvioitu.|
-fy14-big-machines/heating|||||KESKEN|Ei vielä arvioitu.|
-fy14-big-machines/budget|||||KESKEN|Ei vielä arvioitu.|
-fy14-binding-energy/hero|||||KESKEN|Ei vielä arvioitu.|
-fy14-binding-energy/ladder|||||KESKEN|Ei vielä arvioitu.|
-fy14-binding-energy/qbars|||||KESKEN|Ei vielä arvioitu.|
-fy14-classical-limits/hero|||||KESKEN|Ei vielä arvioitu.|
-fy14-classical-limits/spectrum|||||KESKEN|Ei vielä arvioitu.|
-fy14-classical-limits/curves|||||KESKEN|Ei vielä arvioitu.|
-fy14-classical-limits/catastrophe|||||KESKEN|Ei vielä arvioitu.|
-fy14-confinement-concepts/hero|||||KESKEN|Ei vielä arvioitu.|
-fy14-confinement-concepts/pinch|||||KESKEN|Ei vielä arvioitu.|
-fy14-confinement-concepts/icf|||||KESKEN|Ei vielä arvioitu.|
-fy14-confinement-concepts/energy|||||KESKEN|Ei vielä arvioitu.|
-fy14-confinement-concepts/aspect|||||KESKEN|Ei vielä arvioitu.|
-fy14-fotoni/hero|||||KESKEN|Ei vielä arvioitu.|
-fy14-fotoni/em|||||KESKEN|Ei vielä arvioitu.|
-fy14-fotoni/fit|||||KESKEN|Ei vielä arvioitu.|
-fy14-fr-bonjour/hero|||||KESKEN|Ei vielä arvioitu.|
-fy14-fr-cadarache/hero|||||KESKEN|Ei vielä arvioitu.|
-fy14-fr-cadarache/map|||||KESKEN|Ei vielä arvioitu.|
-fy14-fr-cadarache/plan|||||KESKEN|Ei vielä arvioitu.|
-fy14-fr-cafe/hero|||||KESKEN|Ei vielä arvioitu.|
-fy14-fr-lire/hero|||||KESKEN|Ei vielä arvioitu.|
-fy14-fr-nombres/hero|||||KESKEN|Ei vielä arvioitu.|
-fy14-fusion-debate/hero|||||KESKEN|Ei vielä arvioitu.|
-fy14-fusion-reactions/hero|||||KESKEN|Ei vielä arvioitu.|
-fy14-fusion-reactions/ppchain|||||KESKEN|Ei vielä arvioitu.|
-fy14-fusion-reactions/barrier|||||KESKEN|Ei vielä arvioitu.|
-fy14-fusion-society/hero|||||KESKEN|Ei vielä arvioitu.|
-fy14-fusion-society/cycle|||||KESKEN|Ei vielä arvioitu.|
-fy14-fusion-timeline/hero|||||KESKEN|Ei vielä arvioitu.|
-fy14-global-fusion-explorer/hero|||||KESKEN|Ei vielä arvioitu.|
-fy14-inside-iter/hero|||||KESKEN|Ei vielä arvioitu.|
-fy14-inside-iter/power|||||KESKEN|Ei vielä arvioitu.|
-fy14-iron-curtain/hero|||||KESKEN|Ei vielä arvioitu.|
-fy14-iron-curtain/thomson|||||KESKEN|Ei vielä arvioitu.|
-fy14-iter-media/hero|||||KESKEN|Ei vielä arvioitu.|
-fy14-iter-project/hero|||||KESKEN|Ei vielä arvioitu.|
-fy14-iter-project/schedule|||||KESKEN|Ei vielä arvioitu.|
-fy14-iter-video/hero|||||KESKEN|Ei vielä arvioitu.|
-fy14-magnetic-confinement/hero|||||KESKEN|Ei vielä arvioitu.|
-fy14-magnetic-confinement/lorentz|||||KESKEN|Ei vielä arvioitu.|
-fy14-magnetic-confinement/mirror|||||KESKEN|Ei vielä arvioitu.|
-fy14-magnetic-confinement/torus|||||KESKEN|Ei vielä arvioitu.|
-fy14-nucleus/hero|||||KESKEN|Ei vielä arvioitu.|
-fy14-nucleus/notation|||||KESKEN|Ei vielä arvioitu.|
-fy14-nucleus/hydrogen|||||KESKEN|Ei vielä arvioitu.|
-fy14-nucleus/ranges|||||KESKEN|Ei vielä arvioitu.|
-fy14-photoelectric/hero|||||KESKEN|Ei vielä arvioitu.|
-fy14-photoelectric/energy|||||KESKEN|Ei vielä arvioitu.|
-fy14-photoelectric/usf|||||KESKEN|Ei vielä arvioitu.|
-fy14-plasma/hero|||||KESKEN|Ei vielä arvioitu.|
-fy14-plasma/ionisation|||||KESKEN|Ei vielä arvioitu.|
-fy14-plasma/pressure|||||KESKEN|Ei vielä arvioitu.|
-fy14-quantum-tunnelling/hero|||||KESKEN|Ei vielä arvioitu.|
-fy14-quantum-tunnelling/slits|||||KESKEN|Ei vielä arvioitu.|
-fy14-quantum-tunnelling/barrier|||||KESKEN|Ei vielä arvioitu.|
-fy14-quantum-tunnelling/sunbarrier|||||KESKEN|Ei vielä arvioitu.|
-fy14-secret-fusion/hero|||||KESKEN|Ei vielä arvioitu.|
-fy14-secret-fusion/pinch|||||KESKEN|Ei vielä arvioitu.|
-fy14-secret-fusion/neutrons|||||KESKEN|Ei vielä arvioitu.|
-fy14-sun-puzzle/hero|||||KESKEN|Ei vielä arvioitu.|
-fy14-sun-puzzle/estimates|||||KESKEN|Ei vielä arvioitu.|
-fy14-tokamak-stellarator/hero|||||KESKEN|Ei vielä arvioitu.|
-fy14-tokamak-stellarator/toroidal|||||KESKEN|Ei vielä arvioitu.|
+fy14-atom-models/hero|5|5|5|5|PIDA|
+fy14-atom-models/scatter|5|5|5|5|PIDA|Radat taipuvat ytimestä poispäin sitä jyrkemmin, mitä lähempää ne kulkevat.|
+fy14-atom-models/lines|5|5|5|5|PIDA|
+fy14-atom-models/levels|5|5|4|5|PIDA|
+fy14-big-machines/hero|5|4|5|5|PIDA|
+fy14-big-machines/heating|5|4|3|4|KEVYT|Tekstit selvästi suurempia kuin muissa kuvissa ja kolme lämmitystapaa hajallaan; radioaaltojen lähde on nimetön laatikko.|
+fy14-big-machines/budget|5|5|4|5|PIDA|
+fy14-binding-energy/hero|5|4|5|5|PIDA|
+fy14-binding-energy/ladder|5|5|5|5|PIDA|
+fy14-binding-energy/qbars|5|5|4|5|PIDA|Sidosenergiat ja Q-arvot tarkistettu; kuva sanoo itse, että paneeleilla on oma asteikko.|
+fy14-classical-limits/hero|5|4|5|4|KEVYT|Aurinko sädekehällä.|
+fy14-classical-limits/spectrum|5|5|5|5|PIDA|
+fy14-classical-limits/curves|5|5|3|5|KEVYT|"4000 K" on käyrän päällä ja "model values" leijuu irrallaan.|
+fy14-classical-limits/catastrophe|5|5|5|5|PIDA|
+fy14-confinement-concepts/hero|5|4|5|5|PIDA|
+fy14-confinement-concepts/pinch|5|5|5|5|PIDA|Kentän ja voiman suunnat tarkistettu oikean käden säännöllä.|
+fy14-confinement-concepts/icf|5|5|5|5|PIDA|
+fy14-confinement-concepts/energy|5|5|5|5|PIDA|Kolme energiaa samassa mittakaavassa: miksi "nettoenergia" on harhaanjohtava sana.|
+fy14-confinement-concepts/aspect|5|5|4|5|PIDA|
+fy14-fotoni/hero|5|5|5|5|PIDA|
+fy14-fotoni/em|5|5|4|4|KEVYT|Voiman suunta oikein (tarkistettu). Merkinnät noin kaksi kertaa niin suuria kuin sarjan muissa kuvissa.|
+fy14-fotoni/fit|5|5|3|4|KEVYT|Akselin nimi leikkautuu yläreunaan, tekstit ruudukon päällä ja selvästi suurempia kuin muissa kuvaajissa.|
+fy14-fr-bonjour/hero|5|4|5|4|KEVYT|Aurinko sädekehällä.|
+fy14-fr-cadarache/hero|5|4|5|4|KEVYT|Aurinko sädekehällä.|
+fy14-fr-cadarache/map|5|5|4|5|KEVYT|"l'étang de Berre" on järven reunaviivan päällä.|
+fy14-fr-cadarache/plan|5|5|5|5|PIDA|
+fy14-fr-cafe/hero|5|4|5|5|PIDA|
+fy14-fr-lire/hero|5|4|5|5|PIDA|
+fy14-fr-nombres/hero|5|4|5|4|KEVYT|Aurinko sädekehällä.|
+fy14-fusion-debate/hero|5|4|5|5|PIDA|
+fy14-fusion-reactions/hero|5|5|5|5|PIDA|
+fy14-fusion-reactions/ppchain|5|5|5|5|PIDA|Energiat ja summa 26,7 MeV tarkistettu.|
+fy14-fusion-reactions/barrier|5|5|3|5|KEVYT|Akselin nimi leikkautuu yläreunaan; "tunnelling" ja "fast nucleus" ovat käyrän päällä. Vallin korkeus 0,48 MeV oikein.|
+fy14-fusion-society/hero|5|4|5|4|PIDA|Voimalaitosmaisema toistuu sarjassa.|
+fy14-fusion-society/cycle|5|5|4|5|KEVYT|"D" on vaipan reunaviivan päällä.|
+fy14-fusion-timeline/hero|5|4|5|4|KEVYT|Aurinko sädekehällä.|
+fy14-global-fusion-explorer/hero|5|4|5|5|PIDA|
+fy14-inside-iter/hero|5|5|5|5|PIDA|
+fy14-inside-iter/power|5|5|5|5|PIDA|Lämmitys, fuusioteho ja verkosta otettu sähkö samalla asteikolla.|
+fy14-iron-curtain/hero|5|4|5|5|PIDA|
+fy14-iron-curtain/thomson|5|5|4|5|PIDA|
+fy14-iter-media/hero|5|4|5|5|PIDA|
+fy14-iter-project/hero|5|4|5|4|KEVYT|Aurinko sädekehällä.|
+fy14-iter-project/schedule|5|5|4|5|KEVYT|Alempi "D–T" on nuolen kärjen päällä.|
+fy14-iter-video/hero|5|4|5|5|PIDA|
+fy14-magnetic-confinement/hero|5|5|5|5|PIDA|
+fy14-magnetic-confinement/lorentz|5|5|4|5|KEVYT|Voimien suunnat tarkistettu ristitulosta. Ylemmän nopeusnuolen nimen päällä on kentän ⊗-merkki.|
+fy14-magnetic-confinement/mirror|5|5|4|5|KEVYT|Nopeuden komponenttien nimet ja kulma θ ovat ahtaasti kenttäviivojen päällä.|
+fy14-magnetic-confinement/torus|5|5|5|5|PIDA|
+fy14-nucleus/hero|5|5|5|5|PIDA|
+fy14-nucleus/notation|5|5|5|5|PIDA|
+fy14-nucleus/hydrogen|5|5|5|5|PIDA|
+fy14-nucleus/ranges|5|5|4|5|PIDA|
+fy14-photoelectric/hero|5|5|5|5|PIDA|
+fy14-photoelectric/energy|5|5|5|5|PIDA|Fotonien energiat ja liike-energia tarkistettu.|
+fy14-photoelectric/usf|5|5|4|5|PIDA|
+fy14-plasma/hero|5|5|5|5|PIDA|Neljä plasmaa neljässä ruudussa: revontulet, salama, Aurinko, tokamak.|
+fy14-plasma/ionisation|5|5|5|5|PIDA|
+fy14-plasma/pressure|5|5|4|5|PIDA|
+fy14-quantum-tunnelling/hero|5|4|5|5|PIDA|
+fy14-quantum-tunnelling/slits|5|5|5|5|PIDA|
+fy14-quantum-tunnelling/barrier|5|5|4|5|PIDA|
+fy14-quantum-tunnelling/sunbarrier|5|5|4|5|PIDA|Arvot 720 keV ja 1060 fm tarkistettu.|
+fy14-secret-fusion/hero|5|4|5|5|PIDA|
+fy14-secret-fusion/pinch|5|5|4|3|KEVYT|Sama asia kuin fy14-confinement-concepts/pinch, mutta eri piirros (oranssi plasma ja kiertävät kenttänuolet, toisessa pinkki plasma ja ⊙/⊗-merkit). Yksi piirros molempiin yksiköihin.|
+fy14-secret-fusion/neutrons|5|5|5|5|PIDA|
+fy14-sun-puzzle/hero|5|5|5|4|KEVYT|Aurinko sädekehällä; tässä Aurinko on kuvan aihe, joten talotyylin kiekko hohteella sopii erityisen hyvin.|
+fy14-sun-puzzle/estimates|5|5|4|5|PIDA|
+fy14-tokamak-stellarator/hero|5|5|5|5|PIDA|
+fy14-tokamak-stellarator/toroidal|5|5|5|5|PIDA|Kenttä kääntäen verrannollinen säteeseen (tarkistettu kolmesta arvosta).|
