@@ -1,19 +1,27 @@
 VERDICT: PASS
-CONTENT-HASH: da7489bd041cfbff
+CONTENT-HASH: 42bda478c0fafe59
 
 ## Blocking
-- none
+
+(none)
 
 ## Polish
-- Resolved round 2: the 'Pascal on oikea yksikkö' feedback is rewritten (units must fit R).
-- inquiry.json check-1 "solution", Periaate — "todelliset kaasut noudattavat niitä hyvin, kun kaasu on harvaa" — fine, but "niitä" refers back to "kaasulait"; consider "noudattavat kaasulakeja hyvin" for clarity.
-- Open from round 1 (not part of this diff, still unchanged): lesson.md Ydinajatus "keskimääräiseen liike-energiaan" (E_k is FY4 scope); sim first-load average shown as measurement; hero/fig 5 balloons unlabelled or non-teaching; Tutki holds nine items (make taulukko optional).
+
+- (Round 2: exp-2 tolerance widened to 0.1, now 45–55; item resolved.)
+- inquiry.json `pred-1` — "Päättele: kaksi palloa" sits in Tutki after the weighing, so the opening balloon question is never committed to before the evidence; Ennusta only covers N vs p. Fix: either move a version of this question into Ennusta, or rename the reflect prompt so it does not call it a prediction.
+- inquiry.json Tutki — nine activities (weighing, comparison, pred-1, sim, two experiments, table, laske-r, explain) plus the later stages make more than an hour. `taulukko` and `laske-r` overlap with exp-1/2 and the Kaava derivation. Fix: mark `taulukko` optional, or merge it with `laske-r`.
+- lesson.md Ydinajatus paragraph 1 (about 140 words) and the sim paragraph (about 130 words) go over the 120-word guide; "liike-energia" is FY4 scope, so write "hiukkasten keskimääräinen vauhti" or "liike". The balloon photo sits between the sim and the combined-gas-law paragraph, which it does not explain; move it next to the siirto task or the example.
+- `siirto` solution — "tämä ero kantaa pallon" brings in buoyancy without a step; say "nosteen perusta, jota ei tässä lasketa" or drop the sentence.
 
 ## Checked
-- delta review 2026-11-10 (measurement window reset, teacher's FY3 brief): slider change of N, T or V now empties the average, 0,5 s settling note replaces the value, bar keeps axis and hides its number; Nollaa mittaus still works (tAvg 0,15 settling); howto and 'paina Nollaa mittaus ja odota ~2 s' remain valid and the note tells the student why to wait; measured/predicted stays 0,93-1,06 after settling so N, T, V experiments can still confirm or refute predictions; no value is shown that could be misread. No blocking findings.
-- delta review 2026-11-07 round 2 (follow-up consistency edits): the 'Etsi virhe' feedback on the pressure and volume options now says the units must fit R's unit (Pa with m³, kPa with l, 1 kPa·l = 1 J) instead of calling the pascal the only correct unit; each still ends 'the error is elsewhere' without disclosing it, so it repairs the misconception and matches the lesson's new 1 kPa·l = 1 J text.
-- delta review 2026-11-07 (teacher's proofread replacement texts): the symbol list of $pV = nRT$ and the new unit paragraph (R in J/(mol·K), so pV in joules; Pa·m³ usual, kPa·l also gives J; be consistent) are clear and agree with the worked example and the Sekoitetut yksiköt misconception; inquiry and exit-ticket edits are unit typesetting only.
-- Round 2 Polish on check-2 fixed: "pV = NkT" is gone; Periaate now derives p ∝ NT/V from the stated pV = nRT and says N is proportional to n, so k is no longer needed and a student can follow it.
-- Check-1 Periaate no longer claims "harvat todelliset kaasut" follow the laws; the new wording (dilute gas) is accurate and matches the glossary on ideaalikaasu.
-- Numbers, steps and sanity check in both solutions are unchanged; the diff touches only the Periaate lines.
-- Hash unchanged at start and end (e0f90cf823e55c4a).
+
+- Learning path: weighing, then m/M for four gases, then R, then pV = nRT. The slot goal "ratkaiseminen tilanyhtälöstä" is met by the example, `siirto` and `check-2`, with no extra scope beyond the points above.
+- The weighing data is consistent (m/M 0,2064–0,2076 mol); noise is declared, and the feedback states the measurement-precision argument rather than just the answer.
+- pred-n: four options, each wrong one with misconception feedback; exp-1 can refute it (N is varied, T and V locked); the reveal comes after two rows.
+- exp-2 is a challenge with distinct mistake feedback (√2, N×4, N/4); the hint ladder is progressive.
+- The simulation capture at 390 px is legible: text sits behind Käyttöohje, Mallin oletukset and Laskennan selitys, and there is a speed control.
+- The worked example has seven stages with units converted first and a reasonableness check that returns to the opening question.
+- `virhe` and `check-c2` test the Celsius/Kelvin and unit-mix misconceptions with misconception-based distractors; the exit ticket tests n = pV/RT.
+- `johtopaatos` and `check-3` criteria are observable and match what is asked; the model values are separated from the example data.
+- Finnish: terms agree with the glossary; no case errors found in the sample.
+- Hash unchanged at the end of the review. Exercises not judged (reviewed separately).
