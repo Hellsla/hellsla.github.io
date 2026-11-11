@@ -42,7 +42,7 @@ Kuvia 137. Asteikko 1–5: F fysiikka, P pedagogiikka, V visuaalinen laatu, T ty
 | [`fy6-12/tasapotentiaali`](catalog/FY6.html#fy6-12-tasapotentiaali) | Potentiaalienergia ja potentiaali sähkökentässä; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy6-12/energia`](catalog/FY6.html#fy6-12-energia) | Potentiaalienergia ja potentiaali sähkökentässä; kaavio: teoria | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy6-12/vx-graph`](catalog/FY6.html#fy6-12-vx-graph) | Potentiaalienergia ja potentiaali sähkökentässä; kuvaaja: teoria | 5 | 5 | 3 | 5 | KEVYT KORJAUS | Akselin nimi V (V) on kiinni kuva-alan yläreunassa (sama yhteinen vika kuin fy4-1/pick-falling). |  | KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11) |
-| [`fy6-12/ex-vgraph`](catalog/FY6.html#fy6-12-ex-vgraph) | Potentiaalienergia ja potentiaali sähkökentässä; kuvaaja: tutkimusvaihe, tehtävä | 5 | 4 | 3 | 5 | KEVYT KORJAUS | Ks. fy6-12/vx-graph. |  | ODOTTAA |
+| [`fy6-12/ex-vgraph`](catalog/FY6.html#fy6-12-ex-vgraph) | Potentiaalienergia ja potentiaali sähkökentässä; kuvaaja: tutkimusvaihe, tehtävä | 5 | 4 | 3 | 5 | KEVYT KORJAUS | Ks. fy6-12/vx-graph. |  | KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11) |
 | [`fy6-13/hero`](catalog/FY6.html#fy6-13-hero) | Kondensaattori ja sen energia; avauskuva | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy6-13/rakenne`](catalog/FY6.html#fy6-13-rakenne) | Kondensaattori ja sen energia; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy6-13/lataus`](catalog/FY6.html#fy6-13-lataus) | Kondensaattori ja sen energia; kuvaaja: teoria | 5 | 5 | 5 | 5 | PIDÄ | Jännite ja virta samalla aika-akselilla, virran suunnan vaihto näkyy. |  | ODOTTAA |

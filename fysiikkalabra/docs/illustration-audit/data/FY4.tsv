@@ -4,9 +4,9 @@ fy4-1/round-trip|5|5|4|5|PIDA|
 fy4-1/graph-slope|5|5|4|5|PIDA|
 fy4-1/jogger-graph|5|4|4|5|PIDA|
 fy4-1/pick-falling|5|4|3|5|KEVYT|Akselin nimi x (m) ulottuu kuva-alan yläreunan yli. Sama vika kaikissa korkeissa kuvaajissa (yhteinen syy: akselin nimen paikka).||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11)
-fy4-1/pick-rising|5|4|3|5|KEVYT|Ks. fy4-1/pick-falling.|
-fy4-1/pick-flat|5|4|3|5|KEVYT|Ks. fy4-1/pick-falling.|
-fy4-1/pick-origin|5|4|3|5|KEVYT|Ks. fy4-1/pick-falling.|
+fy4-1/pick-rising|5|4|3|5|KEVYT|Ks. fy4-1/pick-falling.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11)
+fy4-1/pick-flat|5|4|3|5|KEVYT|Ks. fy4-1/pick-falling.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11)
+fy4-1/pick-origin|5|4|3|5|KEVYT|Ks. fy4-1/pick-falling.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11)
 fy4-1/~inquiry-1|5|4|4|5|PIDA|Käsin upotettu.|
 fy4-1/~inquiry-2|5|4|4|5|PIDA|Käsin upotettu.|
 fy4-10/hero|5|5|5|5|PIDA|
@@ -103,9 +103,9 @@ fy4-5/malli-pulkka|5|5|4|5|PIDA|
 fy4-5/malli-hissi|5|5|4|4|KEVYT|Ks. fy4-5/hissi-a.||KEVYT KORJAUS hyväksytty, ryhmä E (opettaja 2026-11-11)
 fy4-5/ruutu|5|5|5|5|PIDA|Voimat ruudukolla ja mittakaavajana: kokonaisvoima luettavissa.|
 fy4-5/pick-tasainen|5|4|3|4|KEVYT|Tukivoiman nimi on kappaleen yläreunan ja nuolen päällä.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11)
-fy4-5/pick-pitka|5|4|3|4|KEVYT|Ks. fy4-5/pick-tasainen.|
-fy4-5/pick-lisa|5|4|3|4|KEVYT|Ks. fy4-5/pick-tasainen.|
-fy4-5/pick-nopeus|5|4|3|4|KEVYT|Ks. fy4-5/pick-tasainen.|
+fy4-5/pick-pitka|5|4|3|4|KEVYT|Ks. fy4-5/pick-tasainen.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11)
+fy4-5/pick-lisa|5|4|3|4|KEVYT|Ks. fy4-5/pick-tasainen.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11)
+fy4-5/pick-nopeus|5|4|3|4|KEVYT|Ks. fy4-5/pick-tasainen.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11)
 fy4-6/hero|5|4|4|4|KEVYT|Taivaalla on kehystetty pikkukuva laatikosta rampilla ja nuolesta: kuva kuvassa, ainoa laatuaan avauskuvissa. Tilanne näkyy jo rampista.|
 fy4-6/kitka|5|5|5|5|PIDA|Lepokitkan kasvu, enimmäisarvo ja pudotus liikekitkaan yhdessä kuvaajassa.|
 fy4-6/kuorma|5|5|4|5|PIDA|Kitka kuormaan eteenpäin: yleisen virhekäsityksen purkava kuva.|
