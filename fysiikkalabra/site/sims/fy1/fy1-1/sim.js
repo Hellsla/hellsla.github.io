@@ -245,14 +245,18 @@ new p5((p) => {
     // the faintest label (the one fading in or out) gives way and the row is laid out again
     let lfh = fh;
     for (;;) {
-      const need = cols.reduce((s, cl) => s + cl.w0 + 4, 0), fs = clamp(584 / Math.max(need, 1), 0.8, 1); lfh = fh * fs;
-      cols.forEach((cl) => { cl.w = cl.w0 * fs; cl.cx = clamp(cl.ax, 8 + cl.w / 2, 592 - cl.w / 2); });
+      const need = cols.reduce((s, cl) => s + cl.w0 + 4, 0), fs = clamp(584 / Math.max(need, 1), 0.8, 1);
+      // a shrunken label is measured at its own size (in half-unit steps, so the widths stay cached): the browser's
+      // glyph widths are not exactly proportional to the font size, and a row laid out from scaled widths can overlap
+      lfh = fs < 1 ? Math.floor(fh * fs * 2) / 2 : fh; p.textSize(lfh);
+      cols.forEach((cl) => { cl.w = lfh < fh ? Math.max(p.textWidth(cl.nm), p.textWidth(cl.vl)) + 6 * lfh / fh : cl.w0; cl.cx = clamp(cl.ax, 8 + cl.w / 2, 592 - cl.w / 2); });
       for (let i = 1; i < cols.length; i++) cols[i].cx = Math.max(cols[i].cx, cols[i - 1].cx + (cols[i - 1].w + cols[i].w) / 2 + 4);
       for (let i = cols.length - 1; i >= 0; i--) { const lim = i === cols.length - 1 ? 592 - cols[i].w / 2 : cols[i + 1].cx - (cols[i + 1].w + cols[i].w) / 2 - 4; cols[i].cx = Math.min(cols[i].cx, lim); }
       if (cols.length < 2 || cols[0].cx - cols[0].w / 2 >= 8) break;
       const weak = cols.reduce((a, b) => (b.la < a.la || (b.la === a.la && b.it.S < a.it.S) ? b : a));
       cols = cols.filter((cl) => cl !== weak);
     }
+    p.textSize(fh);
     cols.forEach((cl) => {
       const bracket = cl.it.S >= 14 && cl.it.o.dim !== 'none' && cl.it.o.dim !== 'r' && cl.it.o.dim !== 'h' && cl.it.x0 > 4 && cl.it.x1 < 596;
       if (Math.abs(cl.cx - cl.ax) > 3 || cl.it.S < 30) {
