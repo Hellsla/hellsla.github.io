@@ -163,8 +163,10 @@ def bank(T, items, lang=i18n.SOURCE):
     for i, d in sorted(items, key=lambda x: order[x[1]["topic"]]):
         fl, el = levels(d, "physics"), levels(d, "experiment")
         words = " ".join([d["title"], d["question"]] + d.get("equipment", [])).lower()
-        num = (f'<span class="bank-level" title="{T("investigation.level_physics")}">{span(fl)}</span> '
-               f'<span class="bank-level" title="{T("investigation.level_experiment")}">{span(el)}</span>')
+        # the word with the code (UI audit 2026-11-10, finding 18): "fysiikka F1–F2", "koe E2" say what F and E are on the
+        # card itself; before, the words were only a title that a phone never shows, and the codes were explained once at the top
+        num = (f'<span class="bank-level"><span class="bank-word">{T("investigation.level_physics")}</span> {span(fl)}</span> '
+               f'<span class="bank-level"><span class="bank-word">{T("investigation.level_experiment")}</span> {span(el)}</span>')
         meta = (f'<span class="bank-meta"><span class="bank-modes">{", ".join(T("investigation.mode_short_" + m) for m in d["modes"])}</span>'
                 f'<span class="bank-mods">{T("investigation.builds_on")} {", ".join(d.get("modules", []))}</span></span>')
         if d["topic"] not in seen:    # the topic on a row of its own with the count of its investigations (teacher 2026-11-10); the filter hides a topic with none shown and keeps the count (invfilter.js)

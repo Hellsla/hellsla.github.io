@@ -202,6 +202,7 @@ main.home+footer.bottom{margin-top:1.4rem}   /* 1.75rem left the Finnish page 2 
 .mod-row:focus-visible{outline-offset:0}
 .mod-row.coming .mod-code,.mod-row.coming .mod-title,.mod-row.coming .mod-q{color:var(--text-muted)}
 .mod-row.coming .mod-name{font-weight:500}
+.mod-soon{display:inline-block;margin-left:.35rem;padding:0 .45rem;border:1px solid var(--line);border-radius:999px;font:600 .75rem/1.5 var(--sans);letter-spacing:.02em;color:var(--ink-2);vertical-align:.08em}   /* a planned course says it is coming; the row keeps its height */
 .mod-row.coming .mod-icon{filter:grayscale(1);opacity:.55}
 .plan-list{margin-top:1.4rem}.mod-row.planned{cursor:default}
 .mod-row.coming:hover{background:none}.mod-row.coming:hover .mod-go{opacity:0}.mod-row.coming:hover .mod-title{color:var(--text-muted)}
@@ -357,6 +358,7 @@ main.module-page ol.lessons li.ch-card.soon>.ch-box{padding:.6rem;margin-bottom:
    is a count. The goals tile is a <details>: open, it takes the whole row, the tile at the left and the list beside it
    from 40rem, the list under it on a phone. */
 main.module-page ol#moduulin-loppu{margin-top:1.5rem}
+main.module-page ol#moduulin-loppu>li.ch-card{align-items:stretch}   /* the four tiles start level and end level (UI audit 2026-11-10, finding 12): on the list's baseline alignment the goals tile, whose first line is its picture, stood 19 px above the others, and a count of two lines made its tile taller */
 main.module-page li.me-goals>details{grid-row:2;margin:0 0 .6rem;border:1px solid var(--line);border-radius:12px;background:var(--surface);box-shadow:0 1px 2px rgba(20,23,30,.04);overflow:hidden}
 main.module-page li.me-goals>details>summary{display:block;list-style:none;cursor:pointer;padding:0 0 .6rem;min-height:0}
 main.module-page li.me-goals>details>summary::-webkit-details-marker{display:none}
@@ -420,7 +422,7 @@ ul.local-prepare a:hover{text-decoration:underline}
 ol.bank-list li.bank-item[hidden]{display:none}
 .bank-meta{display:flex;flex-wrap:wrap;align-items:center;gap:.2rem .7rem;flex-basis:100%;margin:.2rem 0 .45rem;font-size:var(--fs-small);line-height:1.45;color:var(--ink-2)}
 .bank-topic{font-weight:700;color:var(--accent-deep)}
-.bank-level{font-weight:700;color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:0 .5rem;font-variant-numeric:tabular-nums}
+.bank-level{font-weight:700;color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:0 .5rem;font-variant-numeric:tabular-nums}.bank-level{white-space:nowrap}.bank-level .bank-word{font-weight:500;color:var(--ink-2)}   /* "fysiikka F1–F2": the word lighter than its code, the chip never split over two lines */
 .tvt-used{margin:.6rem 0 0;font-size:var(--fs-ui)}
 .tvt-used a{font-weight:600}
 article.guide{padding-bottom:60vh} /* a short guide page: room below its last section, so following its link in the stage navigation brings that heading to the top */

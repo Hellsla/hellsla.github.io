@@ -48,5 +48,17 @@ for out in [root] + sorted(p for p in root.iterdir() if p.is_dir() and (p / "ind
             arrows = dict(re.findall(r'<a class="(prev|next)" href="([^"]+)"', crumbs.group(1)))
             check(f"{out.name}/{name} path arrows = links under the page", arrows == links, f"{arrows} != {links}")
 check("FY3 follows the teaching order (fy3-3 → fy3-13)", 'href="fy3-13.html" rel="next"' in (root / "fy3-3.html").read_text() if (root / "fy3-3.html").is_file() and (root / "fy3-13.html").is_file() else True)
+# a card's very long word breaks at a syllable or at a compound's joint, never elsewhere (UI audit 2026-11-10, finding 16; tablefit.cards)
+import tablefit
+_h = lambda w: tablefit.hyphenate_card(w).replace(tablefit.SHY, "-")
+check("card title: syllables", _h("Liukukitkakertoimen") == "Liu-ku-kit-ka-ker-toi-men", _h("Liukukitkakertoimen"))
+for _w, _want in (("Potentiaalienergia", "Po-ten-tiaa-li-ener-gia"), ("puoliintumisaika", "puo-liin-tu-mis-ai-ka"), ("desibeliasteikko", "de-si-be-li-as-teik-ko"), ("mikroaaltouunilla", "mik-ro-aal-to-uu-nil-la")):
+    check(f"card title: the joint of the compound {_w}", _h(_w) == _want, _h(_w))
+_card = '<li><div class="ch-box"><span class="l-num">1</span><a href="a.html">Liukukitkakertoimen määrittäminen $F_\\text{kitkakerroinkitkakerroin}$</a></div></li>'
+_out = tablefit.cards(_card, True)
+check("card title: only the very long word gets soft hyphens, a formula and the link are left alone", _out.replace(tablefit.SHY, "") == _card and _out.count(tablefit.SHY) == 6 and "määrittäminen $F" in _out, _out.replace(tablefit.SHY, "-"))
+check("card title: a second pass changes nothing, another language is left alone", tablefit.cards(_out, True) == _out and tablefit.cards(_card, False) == _card)
+if (root / "FY10.html").is_file():
+    check("FY10: the long card titles of the built page carry soft hyphens", "Liu\u00adku\u00adkit\u00adka\u00adker\u00adtoi\u00admen" in (root / "FY10.html").read_text())
 check("pages were checked", pages > 0)
 print(f"{pages} pages, {fails} failure(s)"); sys.exit(1 if fails else 0)
