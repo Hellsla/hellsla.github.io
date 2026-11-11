@@ -35,7 +35,7 @@ fy6-12/hero|5|5|5|5|PIDA||
 fy6-12/kentta|5|5|5|5|PIDA|Painovoimakentän ja sähkökentän rinnastus samalla rakenteella.|
 fy6-12/tasapotentiaali|5|5|5|5|PIDA|
 fy6-12/energia|5|5|4|5|PIDA|
-fy6-12/vx-graph|5|5|3|5|KEVYT|Akselin nimi V (V) on kiinni kuva-alan yläreunassa (sama yhteinen vika kuin fy4-1/pick-falling).|
+fy6-12/vx-graph|5|5|3|5|KEVYT|Akselin nimi V (V) on kiinni kuva-alan yläreunassa (sama yhteinen vika kuin fy4-1/pick-falling).||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11)
 fy6-12/ex-vgraph|5|4|3|5|KEVYT|Ks. fy6-12/vx-graph.|
 fy6-13/hero|5|5|5|5|PIDA||
 fy6-13/rakenne|5|5|5|5|PIDA|
@@ -43,7 +43,7 @@ fy6-13/lataus|5|5|5|5|PIDA|Jännite ja virta samalla aika-akselilla, virran suun
 fy6-13/eriste|5|5|5|5|PIDA|
 fy6-13/energia|5|5|5|5|PIDA|Portaat näyttävät, miksi energia on puolet tulosta QU.|
 fy6-13/ex-qu|5|4|4|5|PIDA|
-fy6-14/hero|5|4|4|4|KEVYT|Ikkunan Aurinko sädekehällä.|
+fy6-14/hero|5|4|4|4|KEVYT|Ikkunan Aurinko sädekehällä.||KEVYT KORJAUS hyväksytty, ryhmä B (opettaja 2026-11-11)
 fy6-14/suunnat|5|5|5|5|PIDA|
 fy6-14/ominaiskayra|5|5|4|5|PIDA|
 fy6-14/kenno|5|5|4|5|PIDA||
@@ -91,7 +91,7 @@ fy6-4/graph|5|5|4|5|KEVYT|"rinnan" on akselin nuolenkärjen ja käyrän pään p
 fy6-4/mixed|5|5|4|5|PIDA||
 fy6-4/task-mixed|5|4|4|5|PIDA|
 fy6-4/siirto-mixed|5|4|4|5|PIDA|
-fy6-5/hero|5|4|4|4|KEVYT|Aurinko sädekehällä.|
+fy6-5/hero|5|4|4|4|KEVYT|Aurinko sädekehällä.||KEVYT KORJAUS hyväksytty, ryhmä B (opettaja 2026-11-11)
 fy6-5/junction|5|5|5|5|PIDA|Nuolten leveydet 3 : 2 : 1 vastaavat virtoja (tarkistettu).|
 fy6-5/junction-q|5|4|4|5|PIDA|
 fy6-5/circuit|5|5|5|5|PIDA|Potentiaalit merkitty pisteisiin; arvot tarkistettu.|
@@ -101,7 +101,7 @@ fy6-5/ex-graph|5|4|4|5|PIDA|
 fy6-5/ex-branch|5|4|4|5|PIDA|
 fy6-5/ex-branch2|5|4|4|5|PIDA|
 fy6-6/hero|5|4|4|4|KORVAA|Sama aihe kuin fy6-3/hero (leivänpaahdin), ja paahdin on kolmannen kerran kuvassa fy6-15/hero. Saman moduulin laatat näyttävät samalta.|Keittiön liesi edestä: yksi hehkuva keraaminen keittoalue (lämmön oranssi → punainen hehku) ja sen päällä teräskattila, josta nousee höyryä; vieressä kylmä, tumma keittoalue vertailuna. Taustalla sama kaakeliseinä ja työtaso kuin fy6-3/hero ja fy3-7/hero. Havainnollistaa sähkötehon muuttumista lämmöksi vastuksessa. Ei tekstiä.|KORVAA ehdotetulla kuvalla (liesi ja kattila) (opettaja 2026-11-11)
-fy6-6/energia|5|5|4|4|KEVYT|Alarivin yksiköt pystymurtoina (J/C, C/s, J/s) ovat pieniä; rivillä luettavampia.|
+fy6-6/energia|5|5|4|4|KEVYT|Alarivin yksiköt pystymurtoina (J/C, C/s, J/s) ovat pieniä; rivillä luettavampia.||KEVYT KORJAUS hyväksytty, ryhmä F (opettaja 2026-11-11)
 fy6-6/jako|5|5|4|4|KEVYT|Pylväissä liukuväri (ks. fy2-3/bars). Arvot oikein.|
 fy6-6/lampo|5|5|4|5|PIDA||
 fy6-6/graph|5|5|3|5|KEVYT|"4,0 W" on käyrän ja katkoviivan päällä.|
@@ -122,7 +122,7 @@ fy6-9/purku-lataus|5|5|4|5|PIDA|
 fy6-9/kapasiteetti|5|5|5|5|PIDA|
 fy6-9/latauspiiri|5|5|5|5|PIDA|Virta akun plusnapaan: lataussuunta oikein.|
 fy6-9/potentiaali|5|5|3|5|KEVYT|Jännitteiden summa on nolla (tarkistettu), mutta arvot 3,62 V, −0,88 V ja −0,22 V ovat ahtaasti käyrän ja toistensa päällä.|
-fy6-9/energia|5|5|4|3|KEVYT|Energiavirtakaavio liukuvärillä ilman harmaata tuloa; malli fy2-4/lamp. Summa täsmää (9,0 = 7,6 + 1,1 + 0,3).|
+fy6-9/energia|5|5|4|3|KEVYT|Energiavirtakaavio liukuvärillä ilman harmaata tuloa; malli fy2-4/lamp. Summa täsmää (9,0 = 7,6 + 1,1 + 0,3).||KEVYT KORJAUS hyväksytty, ryhmä C (opettaja 2026-11-11)
 fy6-9/ex-current|5|4|4|5|PIDA|
 fy6-sovella/fy6-s1-circuit|5|5|4|5|PIDA||
 fy6-sovella/fy6-s1-graph|5|4|4|4|PIDA|

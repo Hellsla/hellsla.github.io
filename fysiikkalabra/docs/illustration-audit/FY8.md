@@ -58,7 +58,7 @@ Kuvia 112. Asteikko 1–5: F fysiikka, P pedagogiikka, V visuaalinen laatu, T ty
 | [`fy8-16/koostumus`](catalog/FY8.html#fy8-16-koostumus) | Maailmankaikkeuden kehitys; kaavio: teoria | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy8-16/hubble`](catalog/FY8.html#fy8-16-hubble) | Maailmankaikkeuden kehitys; kuvaaja: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy8-16/hubble-t`](catalog/FY8.html#fy8-16-hubble-t) | Maailmankaikkeuden kehitys; kuvaaja: tutkimusvaihe | 5 | 4 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
-| [`fy8-2/hero`](catalog/FY8.html#fy8-2-hero) | Spektrit paljastavat atomin energiatasot; avauskuva | 5 | 5 | 5 | 4 | KEVYT KORJAUS | Ikkunan Aurinko sädekehällä. |  | ODOTTAA |
+| [`fy8-2/hero`](catalog/FY8.html#fy8-2-hero) | Spektrit paljastavat atomin energiatasot; avauskuva | 5 | 5 | 5 | 4 | KEVYT KORJAUS | Ikkunan Aurinko sädekehällä. |  | KEVYT KORJAUS hyväksytty, ryhmä B (opettaja 2026-11-11) |
 | [`fy8-2/spectra`](catalog/FY8.html#fy8-2-spectra) | Spektrit paljastavat atomin energiatasot; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ | Jatkuva, emissio- ja absorptiospektri kohdakkain samalla asteikolla. |  | ODOTTAA |
 | [`fy8-2/fluorescence`](catalog/FY8.html#fy8-2-fluorescence) | Spektrit paljastavat atomin energiatasot; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ | Energiat vastaavat aallonpituuksia (tarkistettu). |  | ODOTTAA |
 | [`fy8-2/levels`](catalog/FY8.html#fy8-2-levels) | Spektrit paljastavat atomin energiatasot; kaavio: teoria | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
@@ -94,13 +94,13 @@ Kuvia 112. Asteikko 1–5: F fysiikka, P pedagogiikka, V visuaalinen laatu, T ty
 | [`fy8-7/inversion`](catalog/FY8.html#fy8-7-inversion) | Laser ja kvanttirakenteet; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy8-7/cavity`](catalog/FY8.html#fy8-7-cavity) | Laser ja kvanttirakenteet; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy8-7/qdots`](catalog/FY8.html#fy8-7-qdots) | Laser ja kvanttirakenteet; kaavio: teoria | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
-| [`fy8-7/rate-graph`](catalog/FY8.html#fy8-7-rate-graph) | Laser ja kvanttirakenteet; kuvaaja: teoria | 5 | 4 | 3 | 4 | KEVYT KORJAUS | Pystyakselin nimi N/t ja yksikkö 1/s ovat pieninä pystymurtoina, lukukelvottomia puhelimella. Arvot oikein (tarkistettu). |  | ODOTTAA |
+| [`fy8-7/rate-graph`](catalog/FY8.html#fy8-7-rate-graph) | Laser ja kvanttirakenteet; kuvaaja: teoria | 5 | 4 | 3 | 4 | KEVYT KORJAUS | Pystyakselin nimi N/t ja yksikkö 1/s ovat pieninä pystymurtoina, lukukelvottomia puhelimella. Arvot oikein (tarkistettu). |  | KEVYT KORJAUS hyväksytty, ryhmä F (opettaja 2026-11-11) |
 | [`fy8-7/tunnel`](catalog/FY8.html#fy8-7-tunnel) | Laser ja kvanttirakenteet; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy8-8/hero`](catalog/FY8.html#fy8-8-hero) | Atomiydin ja radioaktiivinen hajoaminen; avauskuva | 5 | 4 | 4 | 4 | KEVYT KORJAUS | Yläreunassa valkoinen kaista: katto puuttuu. |  | ODOTTAA |
 | [`fy8-8/isotopes`](catalog/FY8.html#fy8-8-isotopes) | Atomiydin ja radioaktiivinen hajoaminen; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy8-8/chart`](catalog/FY8.html#fy8-8-chart) | Atomiydin ja radioaktiivinen hajoaminen; kuvaaja: teoria | 5 | 5 | 5 | 5 | PIDÄ | Hajoamistavat oikeilla puolilla pysyvyyskaistaa. |  | ODOTTAA |
 | [`fy8-8/decays`](catalog/FY8.html#fy8-8-decays) | Atomiydin ja radioaktiivinen hajoaminen; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
-| [`fy8-8/levels`](catalog/FY8.html#fy8-8-levels) | Atomiydin ja radioaktiivinen hajoaminen; kaavio: teoria | 5 | 5 | 3 | 5 | KEVYT KORJAUS | Tytärytimen nimi (Ni-60) leikkautuu kuva-alan alareunaan, ja emoytimen nimi (Co-60) on kiinni yläreunassa. Energiat oikein. |  | ODOTTAA |
+| [`fy8-8/levels`](catalog/FY8.html#fy8-8-levels) | Atomiydin ja radioaktiivinen hajoaminen; kaavio: teoria | 5 | 5 | 3 | 5 | KEVYT KORJAUS | Tytärytimen nimi (Ni-60) leikkautuu kuva-alan alareunaan, ja emoytimen nimi (Co-60) on kiinni yläreunassa. Energiat oikein. |  | KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11) |
 | [`fy8-8/shifts`](catalog/FY8.html#fy8-8-shifts) | Atomiydin ja radioaktiivinen hajoaminen; kaavio: teoria | 5 | 5 | 4 | 5 | PIDÄ | Siirtymät (N, Z)-kartalla oikeisiin suuntiin. |  | ODOTTAA |
 | [`fy8-8/spectrum`](catalog/FY8.html#fy8-8-spectrum) | Atomiydin ja radioaktiivinen hajoaminen; kuvaaja: tutkimusvaihe | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy8-9/hero`](catalog/FY8.html#fy8-9-hero) | Hajoamislaki ja puoliintumisaika; avauskuva | 5 | 4 | 4 | 4 | KEVYT KORJAUS | Pöydän alla valkoinen kaista: lattia puuttuu. |  | ODOTTAA |

@@ -10,7 +10,7 @@ Kuvia 55. Asteikko 1–5: F fysiikka, P pedagogiikka, V visuaalinen laatu, T tyy
 | [`fy9-aallot/ominais`](catalog/FY9.html#fy9-aallot-ominais) | fy9-aallot; lukiokohtainen jakso | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy9-energia/hero`](catalog/FY9.html#fy9-energia-hero) | fy9-energia; avauskuva | 5 | 4 | 5 | 4 | PIDÄ | Voimalaitosmaisema toistuu sarjassa. |  | ODOTTAA |
 | [`fy9-energia/kartta`](catalog/FY9.html#fy9-energia-kartta) | fy9-energia; lukiokohtainen jakso | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
-| [`fy9-energia/ketju`](catalog/FY9.html#fy9-energia-ketju) | fy9-energia; lukiokohtainen jakso | 5 | 5 | 3 | 3 | KEVYT KORJAUS | Summat täsmäävät. "248 MW" ja "4 MW" ovat kiinni toisissaan, ja värit (beige tulo, harmaat häviöt) poikkeavat mallista fy2-4/lamp. |  | ODOTTAA |
+| [`fy9-energia/ketju`](catalog/FY9.html#fy9-energia-ketju) | fy9-energia; lukiokohtainen jakso | 5 | 5 | 3 | 3 | KEVYT KORJAUS | Summat täsmäävät. "248 MW" ja "4 MW" ovat kiinni toisissaan, ja värit (beige tulo, harmaat häviöt) poikkeavat mallista fy2-4/lamp. |  | KEVYT KORJAUS hyväksytty, ryhmä C (opettaja 2026-11-11) |
 | [`fy9-harjoituskoe/hero`](catalog/FY9.html#fy9-harjoituskoe-hero) | fy9-harjoituskoe; avauskuva | 5 | 4 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy9-harjoituskoe/plan`](catalog/FY9.html#fy9-harjoituskoe-plan) | fy9-harjoituskoe; lukiokohtainen jakso | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy9-kaasut/hero`](catalog/FY9.html#fy9-kaasut-hero) | fy9-kaasut; avauskuva | 5 | 4 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
@@ -27,7 +27,7 @@ Kuvia 55. Asteikko 1–5: F fysiikka, P pedagogiikka, V visuaalinen laatu, T tyy
 | [`fy9-lampo/kartta`](catalog/FY9.html#fy9-lampo-kartta) | fy9-lampo; lukiokohtainen jakso | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy9-lampo/kayra`](catalog/FY9.html#fy9-lampo-kayra) | fy9-lampo; lukiokohtainen jakso | 5 | 5 | 4 | 5 | PIDÄ | Arvot 334 kJ ja 419 kJ tarkistettu. |  | ODOTTAA |
 | [`fy9-liike/hero`](catalog/FY9.html#fy9-liike-hero) | fy9-liike; avauskuva | 5 | 4 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
-| [`fy9-liike/kartta`](catalog/FY9.html#fy9-liike-kartta) | fy9-liike; lukiokohtainen jakso | 5 | 5 | 4 | 4 | KEVYT KORJAUS | Nuolten vieressä olevat Δx/Δt ja Δv/Δt ovat pieniä pystymurtoja; idea (kulmakerroin alas, pinta-ala ylös) on erinomainen. |  | ODOTTAA |
+| [`fy9-liike/kartta`](catalog/FY9.html#fy9-liike-kartta) | fy9-liike; lukiokohtainen jakso | 5 | 5 | 4 | 4 | KEVYT KORJAUS | Nuolten vieressä olevat Δx/Δt ja Δv/Δt ovat pieniä pystymurtoja; idea (kulmakerroin alas, pinta-ala ylös) on erinomainen. |  | KEVYT KORJAUS hyväksytty, ryhmä F (opettaja 2026-11-11) |
 | [`fy9-liike/kuvaajat`](catalog/FY9.html#fy9-liike-kuvaajat) | fy9-liike; lukiokohtainen jakso | 5 | 5 | 5 | 5 | PIDÄ | Paikan ja nopeuden kuvaajat kohdakkain, pinta-ala ja tangentti yhdistetty. |  | ODOTTAA |
 | [`fy9-magnetismi-valo/hero`](catalog/FY9.html#fy9-magnetismi-valo-hero) | fy9-magnetismi-valo; avauskuva | 5 | 4 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy9-magnetismi-valo/kartta`](catalog/FY9.html#fy9-magnetismi-valo-kartta) | fy9-magnetismi-valo; lukiokohtainen jakso | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
@@ -36,11 +36,11 @@ Kuvia 55. Asteikko 1–5: F fysiikka, P pedagogiikka, V visuaalinen laatu, T tyy
 | [`fy9-mittaaminen/hero`](catalog/FY9.html#fy9-mittaaminen-hero) | fy9-mittaaminen; avauskuva | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy9-mittaaminen/kartta`](catalog/FY9.html#fy9-mittaaminen-kartta) | fy9-mittaaminen; lukiokohtainen jakso | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy9-mittaaminen/anatomia`](catalog/FY9.html#fy9-mittaaminen-anatomia) | fy9-mittaaminen; lukiokohtainen jakso | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
-| [`fy9-mittaaminen/linearisointi`](catalog/FY9.html#fy9-mittaaminen-linearisointi) | fy9-mittaaminen; lukiokohtainen jakso | 5 | 5 | 4 | 5 | KEVYT KORJAUS | Kulmakertoimen merkintä k = a/2 on pieni pystymurto. |  | ODOTTAA |
+| [`fy9-mittaaminen/linearisointi`](catalog/FY9.html#fy9-mittaaminen-linearisointi) | fy9-mittaaminen; lukiokohtainen jakso | 5 | 5 | 4 | 5 | KEVYT KORJAUS | Kulmakertoimen merkintä k = a/2 on pieni pystymurto. |  | KEVYT KORJAUS hyväksytty, ryhmä F (opettaja 2026-11-11) |
 | [`fy9-moderni/hero`](catalog/FY9.html#fy9-moderni-hero) | fy9-moderni; avauskuva | 5 | 4 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy9-moderni/kartta`](catalog/FY9.html#fy9-moderni-kartta) | fy9-moderni; lukiokohtainen jakso | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy9-moderni/fotonit`](catalog/FY9.html#fy9-moderni-fotonit) | fy9-moderni; lukiokohtainen jakso | 5 | 5 | 3 | 4 | KEVYT KORJAUS | Lähes sama kuva kuin fy8-12/energia, mutta ahtaampi: "ei ionisoi | ionisoi", "punainen LED" ja hakaset ovat päällekkäin akselin ympärillä. | ODOTTAA |
-| [`fy9-moderni/puolitus`](catalog/FY9.html#fy9-moderni-puolitus) | fy9-moderni; lukiokohtainen jakso | 5 | 5 | 3 | 4 | KEVYT KORJAUS | Selite "n = t/T½ tai n = d/d½" on pieninä pystymurtoina kuvaajan sisällä; lukukelvoton puhelimella. |  | ODOTTAA |
+| [`fy9-moderni/puolitus`](catalog/FY9.html#fy9-moderni-puolitus) | fy9-moderni; lukiokohtainen jakso | 5 | 5 | 3 | 4 | KEVYT KORJAUS | Selite "n = t/T½ tai n = d/d½" on pieninä pystymurtoina kuvaajan sisällä; lukukelvoton puhelimella. |  | KEVYT KORJAUS hyväksytty, ryhmä F (opettaja 2026-11-11) |
 | [`fy9-sahkokentta/hero`](catalog/FY9.html#fy9-sahkokentta-hero) | fy9-sahkokentta; avauskuva | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy9-sahkokentta/kartta`](catalog/FY9.html#fy9-sahkokentta-kartta) | fy9-sahkokentta; lukiokohtainen jakso | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy9-sahkokentta/kipina`](catalog/FY9.html#fy9-sahkokentta-kipina) | fy9-sahkokentta; lukiokohtainen jakso | 5 | 5 | 5 | 5 | PIDÄ | Arkinen kipinä laskettuna: kentän suunta ja suuruusluokat oikein. |  | ODOTTAA |

@@ -4,10 +4,10 @@ fy3-1/forcemeter|4|5|4|4|KEVYT|Painon nuoli alkaa kappaleen alareunasta, kun sam
 fy3-1/force-extension|5|5|4|5|PIDA|
 fy3-1/weight-mass|5|5|5|5|PIDA|Kulmakertoimet vastaavat putoamiskiihtyvyyksiä (tarkistettu).|
 fy3-1/spring-points|5|4|4|5|PIDA|
-fy3-1/pick-rest|5|4|3|3|KEVYT|Vastausvaihtoehto. Kuva-ala on kolme kertaa sisältöä suurempi, ääriviiva ja nuolet vanhaa paksua tyyliä, voimien nimet ilman yläviivaa.|
-fy3-1/pick-weight-only|5|4|3|3|KEVYT|Ks. fy3-1/pick-rest.|
-fy3-1/pick-long-pull|5|4|3|3|KEVYT|Ks. fy3-1/pick-rest.|
-fy3-1/pick-extra|5|4|3|3|KEVYT|Ks. fy3-1/pick-rest.|
+fy3-1/pick-rest|5|4|3|3|KEVYT|Vastausvaihtoehto. Kuva-ala on kolme kertaa sisältöä suurempi, ääriviiva ja nuolet vanhaa paksua tyyliä, voimien nimet ilman yläviivaa.||KEVYT KORJAUS hyväksytty, ryhmä E (opettaja 2026-11-11)
+fy3-1/pick-weight-only|5|4|3|3|KEVYT|Ks. fy3-1/pick-rest.||KEVYT KORJAUS hyväksytty, ryhmä E (opettaja 2026-11-11)
+fy3-1/pick-long-pull|5|4|3|3|KEVYT|Ks. fy3-1/pick-rest.||KEVYT KORJAUS hyväksytty, ryhmä E (opettaja 2026-11-11)
+fy3-1/pick-extra|5|4|3|3|KEVYT|Ks. fy3-1/pick-rest.||KEVYT KORJAUS hyväksytty, ryhmä E (opettaja 2026-11-11)
 fy3-10/hero|5|4|3|4|KEVYT|Harva sommittelu: kaksi ilmapalloa ja ikkuna, puolet pinnasta tyhjää.|
 fy3-10/scene|5|4|5|5|PIDA|
 fy3-10/mole-masses|5|5|5|5|PIDA|
@@ -32,7 +32,7 @@ fy3-14/energy-bars|5|5|4|5|PIDA|
 fy3-15/hero|5|4|3|4|KEVYT|Alapuolisko on tyhjää lunta; kaukolämpöputket katkeavat kuvan reunaan.|
 fy3-15/scene|5|4|4|5|PIDA|
 fy3-15/chain-bars|5|4|4|4|PIDA|
-fy3-16/hero|5|4|5|4|KEVYT|Aurinko sädekehällä; talotyylissä pelkkä kiekko.|
+fy3-16/hero|5|4|5|4|KEVYT|Aurinko sädekehällä; talotyylissä pelkkä kiekko.||KEVYT KORJAUS hyväksytty, ryhmä B (opettaja 2026-11-11)
 fy3-2/hero|5|4|4|5|PIDA|
 fy3-2/carry-lift|5|5|4|4|KEVYT|Voimanuoli oranssi (ks. fy3-11/piston-work).|
 fy3-2/joule|5|5|4|5|PIDA|Joulen koe tunnistettavana laitteena.|
@@ -40,7 +40,7 @@ fy3-2/work-graphs|5|4|3|5|KEVYT|Akselilla s on sekä akselin nimenä että astei
 fy3-2/spring-work|5|5|5|5|PIDA|
 fy3-2/lift-work|5|5|3|4|KEVYT|F on oranssi ja G musta samassa voimakuviossa; neljä kaavaa irrallaan oikealla.|
 fy3-2/pull-steps|5|4|4|5|PIDA|
-fy3-3/hero|5|4|4|4|KEVYT|Lämpömittari seisoo tiellä ilman tukea, ja Aurinko on sädekehällä. Saman luvun scene-kuvassa mittari on tolpassa.|
+fy3-3/hero|5|4|4|4|KEVYT|Lämpömittari seisoo tiellä ilman tukea, ja Aurinko on sädekehällä. Saman luvun scene-kuvassa mittari on tolpassa.||KEVYT KORJAUS hyväksytty, ryhmä B (opettaja 2026-11-11)
 fy3-3/scene|5|4|5|5|PIDA|
 fy3-3/system|5|5|5|5|PIDA|Systeemi, rajapinta ja ympäristö nimetty viiteviivoin todelliseen laitteeseen.|
 fy3-3/micro-model|5|5|4|5|PIDA|
@@ -58,7 +58,7 @@ fy3-5/two-ways|5|5|5|5|PIDA|
 fy3-5/energy-balance|5|5|4|5|PIDA|Lohkokaavio on tässä oikea valinta: asia on merkkisääntö, ei laite.|
 fy3-5/work-sign|5|5|4|5|PIDA|
 fy3-5/piston-force|5|4|4|5|PIDA|
-fy3-6/hero|5|5|5|4|KEVYT|Avauskuvien malli, mutta Aurinko on sädekehällä.|
+fy3-6/hero|5|5|5|4|KEVYT|Avauskuvien malli, mutta Aurinko on sädekehällä.||KEVYT KORJAUS hyväksytty, ryhmä B (opettaja 2026-11-11)
 fy3-6/scene|5|4|5|5|PIDA|
 fy3-6/water-sand|5|5|5|5|PIDA|Sama Q, eri ΔT mittakaavassa, hakasulkeilla merkitty.|
 fy3-6/c-bars|5|5|4|5|PIDA|
@@ -71,7 +71,7 @@ fy3-7/heating-curve|5|5|4|5|PIDA|Tasanteiden pituudet ja kaltevuudet oikeassa su
 fy3-7/phase-diagram|5|5|4|5|KEVYT|Kiinteän ja nesteen alueilla on sama vaaleansininen täyttö; alueet erottuvat vain rajaviivasta.|
 fy3-7/melting-curve|5|4|4|5|PIDA|
 fy3-8/hero|5|5|5|5|PIDA|
-fy3-8/scene|5|4|5|4|KEVYT|Aurinko sädekehällä.|
+fy3-8/scene|5|4|5|4|KEVYT|Aurinko sädekehällä.||KEVYT KORJAUS hyväksytty, ryhmä B (opettaja 2026-11-11)
 fy3-8/particles|5|5|4|5|PIDA|
 fy3-8/rod-expansion|5|5|5|5|PIDA|
 fy3-8/volume-expansion|5|5|4|5|PIDA|
@@ -82,7 +82,7 @@ fy3-9/boyle-graphs|5|5|4|5|PIDA|
 fy3-9/absolute-zero|5|5|4|5|KEVYT|"−273°C" ilman väliä luvun ja yksikön välissä.|
 fy3-9/iso-processes|5|5|4|5|PIDA|
 fy3-9/boyle-points|5|4|4|5|PIDA|
-fy3-9/pick-boyle|5|4|3|5|KEVYT|Akselin nimi p (kPa) on kiinni kuvan yläreunassa.|
+fy3-9/pick-boyle|5|4|3|5|KEVYT|Akselin nimi p (kPa) on kiinni kuvan yläreunassa.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11)
 fy3-9/pick-line|5|4|3|5|KEVYT|Ks. fy3-9/pick-boyle.|
 fy3-9/pick-flat|5|4|3|5|KEVYT|Ks. fy3-9/pick-boyle.|
 fy3-9/pick-rising|5|4|3|5|KEVYT|Ks. fy3-9/pick-boyle.|
@@ -96,7 +96,7 @@ fy3-13/~lesson-3|5|5|4|3|KEVYT|Ks. fy3-13/~inquiry-1; sisältö hyvä (epävarmu
 fy3-14/~lesson-2|5|5|4|5|PIDA|
 fy3-14/~lesson-3|5|5|3|4|KEVYT|Oikean yläkulman tekstit ovat kiinni kuvan reunassa.|
 fy3-14/~lesson-4|5|4|4|4|PIDA|
-fy3-15/~lesson-2|5|5|4|3|KEVYT|Energiavirtakaavio neljännellä piirrostavalla (tumma oranssi ja musta); "polttoaine 500 MW" kiinni vasemmassa reunassa. Summat täsmäävät.|
+fy3-15/~lesson-2|5|5|4|3|KEVYT|Energiavirtakaavio neljännellä piirrostavalla (tumma oranssi ja musta); "polttoaine 500 MW" kiinni vasemmassa reunassa. Summat täsmäävät.||KEVYT KORJAUS hyväksytty, ryhmä C (opettaja 2026-11-11)
 fy3-15/~lesson-3|5|4|4|4|PIDA|
 fy3-15/~lesson-4|5|5|4|4|PIDA|
 fy3-15/~lesson-5|5|5|4|5|PIDA|
@@ -104,8 +104,8 @@ fy3-16/~inquiry-1|5|4|4|4|PIDA|
 fy3-16/~lesson-2|5|5|4|5|PIDA|
 fy3-16/~lesson-3|5|4|4|5|PIDA|
 fy3-16/~lesson-4|5|5|4|5|PIDA|Jäähdytyskierto tunnistettavina osina.|
-fy3-sovella/fy3-s1-graph|5|4|3|3|KEVYT|Koekuvaajien poikkeava piirrostapa; yksikkö K/min pienenä pystymurtona.|
-fy3-koe/fy3-k1-work|5|4|4|3|KEVYT|Koekuvaajien poikkeava piirrostapa (ks. fy1-koe/fy1-k1-walk).|
-fy3-koe/fy3-k1-heating|5|4|4|3|KEVYT|Ks. fy3-koe/fy3-k1-work.|
-fy3-koe/fy3-k2-graph|5|4|3|3|KEVYT|Ks. fy3-koe/fy3-k1-work; lisäksi "θ0 ≈ −273 °C" on katkoviivan päällä.|
-fy3-koe/fy3-k6-graph|5|4|4|3|KEVYT|Ks. fy3-koe/fy3-k1-work.|
+fy3-sovella/fy3-s1-graph|5|4|3|3|KEVYT|Koekuvaajien poikkeava piirrostapa; yksikkö K/min pienenä pystymurtona.||KEVYT KORJAUS hyväksytty, ryhmä D+F (opettaja 2026-11-11)
+fy3-koe/fy3-k1-work|5|4|4|3|KEVYT|Koekuvaajien poikkeava piirrostapa (ks. fy1-koe/fy1-k1-walk).||KEVYT KORJAUS hyväksytty, ryhmä D (opettaja 2026-11-11)
+fy3-koe/fy3-k1-heating|5|4|4|3|KEVYT|Ks. fy3-koe/fy3-k1-work.||KEVYT KORJAUS hyväksytty, ryhmä D (opettaja 2026-11-11)
+fy3-koe/fy3-k2-graph|5|4|3|3|KEVYT|Ks. fy3-koe/fy3-k1-work; lisäksi "θ0 ≈ −273 °C" on katkoviivan päällä.||KEVYT KORJAUS hyväksytty, ryhmä D (opettaja 2026-11-11)
+fy3-koe/fy3-k6-graph|5|4|4|3|KEVYT|Ks. fy3-koe/fy3-k1-work.||KEVYT KORJAUS hyväksytty, ryhmä D (opettaja 2026-11-11)

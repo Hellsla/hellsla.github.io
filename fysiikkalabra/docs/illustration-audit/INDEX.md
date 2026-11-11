@@ -84,3 +84,11 @@ akselin nimen leikkautuminen.
 3. Jokainen merkintä saa oman tilansa kuva-alan sisällä, ja yksikkö on samassa muodossa kuin leipätekstissä.
 4. Toistuva kohde (ihminen, hissi, Maa, magneetti, lämpömittari) piirretään yhdellä yhteisellä piirrolla.
 5. Kaikki kuvat `figures.py`:n kautta talotyylillä, myös tutkimusvaiheen ja kokeiden kuvaajat.
+
+## Opettajan ryhmäpäätökset (2026-11-11)
+
+Hyväksytty korjattaviksi: A akselin nimi leikkautuu yläreunaan, B Aurinko sädekehällä, C energiavirtakaaviot mallin
+`fy2-4/lamp` mukaan (`fy2-2/sailyminen`, `fy2-7/sankey`, `fy3-15/~lesson-2`, `fy6-9/energia`, `fy9-energia/ketju`),
+D kokeiden ja soveltavien tehtävien kuvaajat lukujen piirrostapaan, E vanha paksu viivatyyli talotyyliin,
+F yksiköt pystymurroista rivimuotoon. Ryhmä on merkitty kunkin kuvan päätössarakkeeseen. Toteutus tehdään vasta, kun
+kaikki päätökset on annettu.

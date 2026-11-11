@@ -30,7 +30,7 @@ fy1-4/spring-masses|5|5|5|5|PIDA|Koelaitteisto tunnistettavana, ei laatikkokaavi
 fy1-4/scatter|5|5|4|5|PIDA|
 fy1-4/slope|5|5|3|5|KEVYT|Δx on katkoviivan alla kaukana kolmiosta ja kaava k = Δy/Δx ahtaasti oikeassa alakulmassa.|
 fy1-4/kettle|5|5|4|5|PIDA|
-fy1-4/scatter-points|5|4|4|5|KEVYT|Akselin nimi s (m) on kiinni kuvan yläreunassa.|
+fy1-4/scatter-points|5|4|4|5|KEVYT|Akselin nimi s (m) on kiinni kuvan yläreunassa.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11)
 fy1-4/~inquiry-1|5|4|4|5|PIDA|Käsin upotettu kuva (ei figures.py:ssä), ks. INDEX.|
 fy1-5/hero|5|4|5|4|KEVYT|Ks. fy1-2/hero: sama aihepiiri kahdessa saman moduulin laatassa.|
 fy1-5/lightning|5|4|5|5|PIDA|
@@ -51,7 +51,7 @@ fy1-6/apple|5|4|5|5|PIDA|
 fy1-6/light-gates|5|5|5|5|PIDA|Mittausasetelma, josta laite tunnistuu.|
 fy1-6/~inquiry-1|5|4|4|5|KEVYT|"sovitettu suora" ulottuu kuvaajan oikeaan reunaan asti. Käsin upotettu kuva.|
 fy1-7/hero|5|5|5|5|PIDA|Sama tilavuus, vaaka kallistuu raudan puolelle: tiheys näkyy.|
-fy1-7/cubes|5|5|4|5|KEVYT|Tiheyden yksikkö murtolukuna (g/cm³) on niin pieni, ettei sitä lue puhelimella.|
+fy1-7/cubes|5|5|4|5|KEVYT|Tiheyden yksikkö murtolukuna (g/cm³) on niin pieni, ettei sitä lue puhelimella.||KEVYT KORJAUS hyväksytty, ryhmä F (opettaja 2026-11-11)
 fy1-7/graph|5|5|5|5|PIDA|Kulmakertoimet vastaavat tiheyksiä (tarkistettu).|
 fy1-7/displacement|5|5|4|4|KEVYT|Asteikossa numerot 20, 60 ja 100, kun fy1-7/cylinders-read käyttää 20, 40, 60, 80, 100; V1 = 40 ml osuu numeroimattomaan viivaan.|
 fy1-7/cylinders-read|5|5|4|5|PIDA|
@@ -63,9 +63,9 @@ fy1-8/epavarmuus|5|5|5|5|PIDA|
 fy1-8/ramp-ball|5|4|5|5|PIDA|
 fy1-8/two-balls-ramp|5|4|5|5|PIDA|
 fy1-8/~inquiry-1|5|5|4|5|PIDA|Virhepalkit ja luettava piste selkeästi. Käsin upotettu kuva.|
-fy1-sovella/fy1-s1-graph|5|4|3|3|KEVYT|"ramppi" on akselin ja katkoviivojen päällä, ja kaava peittää ruudukkoa. Kuvaajan piirrostapa (mustat pisteet, paksut akselit, beige ruudukko) poikkeaa lukujen kuvaajista.|
-fy1-koe/fy1-k1-walk|5|4|4|3|KEVYT|Koekuvaajien piirrostapa poikkeaa lukujen kuvaajista: paksummat akselit, isot nuolenkärjet, musta data.|
-fy1-koe/fy1-k2-graph|5|4|4|3|KEVYT|Sama kuin fy1-k1-walk.|
-fy1-koe/fy1-k3-graph|5|4|4|3|KEVYT|Sama kuin fy1-k1-walk.|
-fy1-koe/fy1-k6-graph|5|4|4|3|KEVYT|Sama kuin fy1-k1-walk; lisäksi yksikkö murtolukuna (m/s pystymurtona), kun luvuissa se on m/s.|
-fy1-koe/fy1-k7-graph|5|4|4|3|KEVYT|Sama kuin fy1-k1-walk.|
+fy1-sovella/fy1-s1-graph|5|4|3|3|KEVYT|"ramppi" on akselin ja katkoviivojen päällä, ja kaava peittää ruudukkoa. Kuvaajan piirrostapa (mustat pisteet, paksut akselit, beige ruudukko) poikkeaa lukujen kuvaajista.||KEVYT KORJAUS hyväksytty, ryhmä D (opettaja 2026-11-11)
+fy1-koe/fy1-k1-walk|5|4|4|3|KEVYT|Koekuvaajien piirrostapa poikkeaa lukujen kuvaajista: paksummat akselit, isot nuolenkärjet, musta data.||KEVYT KORJAUS hyväksytty, ryhmä D (opettaja 2026-11-11)
+fy1-koe/fy1-k2-graph|5|4|4|3|KEVYT|Sama kuin fy1-k1-walk.||KEVYT KORJAUS hyväksytty, ryhmä D (opettaja 2026-11-11)
+fy1-koe/fy1-k3-graph|5|4|4|3|KEVYT|Sama kuin fy1-k1-walk.||KEVYT KORJAUS hyväksytty, ryhmä D (opettaja 2026-11-11)
+fy1-koe/fy1-k6-graph|5|4|4|3|KEVYT|Sama kuin fy1-k1-walk; lisäksi yksikkö murtolukuna (m/s pystymurtona), kun luvuissa se on m/s.||KEVYT KORJAUS hyväksytty, ryhmä D+F (opettaja 2026-11-11)
+fy1-koe/fy1-k7-graph|5|4|4|3|KEVYT|Sama kuin fy1-k1-walk.||KEVYT KORJAUS hyväksytty, ryhmä D (opettaja 2026-11-11)

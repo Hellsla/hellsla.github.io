@@ -10,10 +10,10 @@ Kuvia 111. Asteikko 1–5: F fysiikka, P pedagogiikka, V visuaalinen laatu, T ty
 | [`fy3-1/force-extension`](catalog/FY3.html#fy3-1-force-extension) | Voima vuorovaikutuksen mittana ja paino $G = mg$; kuvaaja: teoria | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy3-1/weight-mass`](catalog/FY3.html#fy3-1-weight-mass) | Voima vuorovaikutuksen mittana ja paino $G = mg$; kuvaaja: teoria | 5 | 5 | 5 | 5 | PIDÄ | Kulmakertoimet vastaavat putoamiskiihtyvyyksiä (tarkistettu). |  | ODOTTAA |
 | [`fy3-1/spring-points`](catalog/FY3.html#fy3-1-spring-points) | Voima vuorovaikutuksen mittana ja paino $G = mg$; kuvaaja: tehtävä | 5 | 4 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
-| [`fy3-1/pick-rest`](catalog/FY3.html#fy3-1-pick-rest) | Voima vuorovaikutuksen mittana ja paino $G = mg$; kaavio: tehtävä | 5 | 4 | 3 | 3 | KEVYT KORJAUS | Vastausvaihtoehto. Kuva-ala on kolme kertaa sisältöä suurempi, ääriviiva ja nuolet vanhaa paksua tyyliä, voimien nimet ilman yläviivaa. |  | ODOTTAA |
-| [`fy3-1/pick-weight-only`](catalog/FY3.html#fy3-1-pick-weight-only) | Voima vuorovaikutuksen mittana ja paino $G = mg$; kaavio: tehtävä | 5 | 4 | 3 | 3 | KEVYT KORJAUS | Ks. fy3-1/pick-rest. |  | ODOTTAA |
-| [`fy3-1/pick-long-pull`](catalog/FY3.html#fy3-1-pick-long-pull) | Voima vuorovaikutuksen mittana ja paino $G = mg$; kaavio: tehtävä | 5 | 4 | 3 | 3 | KEVYT KORJAUS | Ks. fy3-1/pick-rest. |  | ODOTTAA |
-| [`fy3-1/pick-extra`](catalog/FY3.html#fy3-1-pick-extra) | Voima vuorovaikutuksen mittana ja paino $G = mg$; kaavio: tehtävä | 5 | 4 | 3 | 3 | KEVYT KORJAUS | Ks. fy3-1/pick-rest. |  | ODOTTAA |
+| [`fy3-1/pick-rest`](catalog/FY3.html#fy3-1-pick-rest) | Voima vuorovaikutuksen mittana ja paino $G = mg$; kaavio: tehtävä | 5 | 4 | 3 | 3 | KEVYT KORJAUS | Vastausvaihtoehto. Kuva-ala on kolme kertaa sisältöä suurempi, ääriviiva ja nuolet vanhaa paksua tyyliä, voimien nimet ilman yläviivaa. |  | KEVYT KORJAUS hyväksytty, ryhmä E (opettaja 2026-11-11) |
+| [`fy3-1/pick-weight-only`](catalog/FY3.html#fy3-1-pick-weight-only) | Voima vuorovaikutuksen mittana ja paino $G = mg$; kaavio: tehtävä | 5 | 4 | 3 | 3 | KEVYT KORJAUS | Ks. fy3-1/pick-rest. |  | KEVYT KORJAUS hyväksytty, ryhmä E (opettaja 2026-11-11) |
+| [`fy3-1/pick-long-pull`](catalog/FY3.html#fy3-1-pick-long-pull) | Voima vuorovaikutuksen mittana ja paino $G = mg$; kaavio: tehtävä | 5 | 4 | 3 | 3 | KEVYT KORJAUS | Ks. fy3-1/pick-rest. |  | KEVYT KORJAUS hyväksytty, ryhmä E (opettaja 2026-11-11) |
+| [`fy3-1/pick-extra`](catalog/FY3.html#fy3-1-pick-extra) | Voima vuorovaikutuksen mittana ja paino $G = mg$; kaavio: tehtävä | 5 | 4 | 3 | 3 | KEVYT KORJAUS | Ks. fy3-1/pick-rest. |  | KEVYT KORJAUS hyväksytty, ryhmä E (opettaja 2026-11-11) |
 | [`fy3-10/hero`](catalog/FY3.html#fy3-10-hero) | Ideaalikaasun tilanyhtälö $pV = nRT$; avauskuva | 5 | 4 | 3 | 4 | KEVYT KORJAUS | Harva sommittelu: kaksi ilmapalloa ja ikkuna, puolet pinnasta tyhjää. |  | ODOTTAA |
 | [`fy3-10/scene`](catalog/FY3.html#fy3-10-scene) | Ideaalikaasun tilanyhtälö $pV = nRT$; kuvitus: teoria | 5 | 4 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy3-10/mole-masses`](catalog/FY3.html#fy3-10-mole-masses) | Ideaalikaasun tilanyhtälö $pV = nRT$; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
@@ -38,7 +38,7 @@ Kuvia 111. Asteikko 1–5: F fysiikka, P pedagogiikka, V visuaalinen laatu, T ty
 | [`fy3-15/hero`](catalog/FY3.html#fy3-15-hero) | Energiantuotanto ja voimalaitosten hyötysuhde; avauskuva | 5 | 4 | 3 | 4 | KEVYT KORJAUS | Alapuolisko on tyhjää lunta; kaukolämpöputket katkeavat kuvan reunaan. |  | ODOTTAA |
 | [`fy3-15/scene`](catalog/FY3.html#fy3-15-scene) | Energiantuotanto ja voimalaitosten hyötysuhde; kuvitus: teoria | 5 | 4 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy3-15/chain-bars`](catalog/FY3.html#fy3-15-chain-bars) | Energiantuotanto ja voimalaitosten hyötysuhde; kuvaaja: tehtävä | 5 | 4 | 4 | 4 | PIDÄ |  |  | ODOTTAA |
-| [`fy3-16/hero`](catalog/FY3.html#fy3-16-hero) | Soveltava tunti: lämpöilmiöt arjessa; avauskuva | 5 | 4 | 5 | 4 | KEVYT KORJAUS | Aurinko sädekehällä; talotyylissä pelkkä kiekko. |  | ODOTTAA |
+| [`fy3-16/hero`](catalog/FY3.html#fy3-16-hero) | Soveltava tunti: lämpöilmiöt arjessa; avauskuva | 5 | 4 | 5 | 4 | KEVYT KORJAUS | Aurinko sädekehällä; talotyylissä pelkkä kiekko. |  | KEVYT KORJAUS hyväksytty, ryhmä B (opettaja 2026-11-11) |
 | [`fy3-2/hero`](catalog/FY3.html#fy3-2-hero) | Työ ja energia; avauskuva | 5 | 4 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy3-2/carry-lift`](catalog/FY3.html#fy3-2-carry-lift) | Työ ja energia; kaavio: teoria | 5 | 5 | 4 | 4 | KEVYT KORJAUS | Voimanuoli oranssi (ks. fy3-11/piston-work). |  | ODOTTAA |
 | [`fy3-2/joule`](catalog/FY3.html#fy3-2-joule) | Työ ja energia; kaavio: teoria | 5 | 5 | 4 | 5 | PIDÄ | Joulen koe tunnistettavana laitteena. |  | ODOTTAA |
@@ -46,7 +46,7 @@ Kuvia 111. Asteikko 1–5: F fysiikka, P pedagogiikka, V visuaalinen laatu, T ty
 | [`fy3-2/spring-work`](catalog/FY3.html#fy3-2-spring-work) | Työ ja energia; kuvaaja: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy3-2/lift-work`](catalog/FY3.html#fy3-2-lift-work) | Työ ja energia; kaavio: teoria | 5 | 5 | 3 | 4 | KEVYT KORJAUS | F on oranssi ja G musta samassa voimakuviossa; neljä kaavaa irrallaan oikealla. |  | ODOTTAA |
 | [`fy3-2/pull-steps`](catalog/FY3.html#fy3-2-pull-steps) | Työ ja energia; kuvaaja: tehtävä | 5 | 4 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
-| [`fy3-3/hero`](catalog/FY3.html#fy3-3-hero) | Termodynaaminen systeemi, tilanmuuttujat ja lämpötila; avauskuva | 5 | 4 | 4 | 4 | KEVYT KORJAUS | Lämpömittari seisoo tiellä ilman tukea, ja Aurinko on sädekehällä. Saman luvun scene-kuvassa mittari on tolpassa. |  | ODOTTAA |
+| [`fy3-3/hero`](catalog/FY3.html#fy3-3-hero) | Termodynaaminen systeemi, tilanmuuttujat ja lämpötila; avauskuva | 5 | 4 | 4 | 4 | KEVYT KORJAUS | Lämpömittari seisoo tiellä ilman tukea, ja Aurinko on sädekehällä. Saman luvun scene-kuvassa mittari on tolpassa. |  | KEVYT KORJAUS hyväksytty, ryhmä B (opettaja 2026-11-11) |
 | [`fy3-3/scene`](catalog/FY3.html#fy3-3-scene) | Termodynaaminen systeemi, tilanmuuttujat ja lämpötila; kuvitus: teoria | 5 | 4 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy3-3/system`](catalog/FY3.html#fy3-3-system) | Termodynaaminen systeemi, tilanmuuttujat ja lämpötila; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ | Systeemi, rajapinta ja ympäristö nimetty viiteviivoin todelliseen laitteeseen. |  | ODOTTAA |
 | [`fy3-3/micro-model`](catalog/FY3.html#fy3-3-micro-model) | Termodynaaminen systeemi, tilanmuuttujat ja lämpötila; kaavio: teoria | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
@@ -64,7 +64,7 @@ Kuvia 111. Asteikko 1–5: F fysiikka, P pedagogiikka, V visuaalinen laatu, T ty
 | [`fy3-5/energy-balance`](catalog/FY3.html#fy3-5-energy-balance) | Sisäenergia, lämpömäärä ja energian säilyminen; kaavio: teoria | 5 | 5 | 4 | 5 | PIDÄ | Lohkokaavio on tässä oikea valinta: asia on merkkisääntö, ei laite. |  | ODOTTAA |
 | [`fy3-5/work-sign`](catalog/FY3.html#fy3-5-work-sign) | Sisäenergia, lämpömäärä ja energian säilyminen; kaavio: teoria | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy3-5/piston-force`](catalog/FY3.html#fy3-5-piston-force) | Sisäenergia, lämpömäärä ja energian säilyminen; kuvaaja: tehtävä | 5 | 4 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
-| [`fy3-6/hero`](catalog/FY3.html#fy3-6-hero) | Aineen lämpeneminen ja jäähtyminen: $Q = cm\Delta T$; avauskuva | 5 | 5 | 5 | 4 | KEVYT KORJAUS | Avauskuvien malli, mutta Aurinko on sädekehällä. |  | ODOTTAA |
+| [`fy3-6/hero`](catalog/FY3.html#fy3-6-hero) | Aineen lämpeneminen ja jäähtyminen: $Q = cm\Delta T$; avauskuva | 5 | 5 | 5 | 4 | KEVYT KORJAUS | Avauskuvien malli, mutta Aurinko on sädekehällä. |  | KEVYT KORJAUS hyväksytty, ryhmä B (opettaja 2026-11-11) |
 | [`fy3-6/scene`](catalog/FY3.html#fy3-6-scene) | Aineen lämpeneminen ja jäähtyminen: $Q = cm\Delta T$; kuvitus: teoria | 5 | 4 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy3-6/water-sand`](catalog/FY3.html#fy3-6-water-sand) | Aineen lämpeneminen ja jäähtyminen: $Q = cm\Delta T$; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ | Sama Q, eri ΔT mittakaavassa, hakasulkeilla merkitty. |  | ODOTTAA |
 | [`fy3-6/c-bars`](catalog/FY3.html#fy3-6-c-bars) | Aineen lämpeneminen ja jäähtyminen: $Q = cm\Delta T$; kaavio: teoria | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
@@ -77,7 +77,7 @@ Kuvia 111. Asteikko 1–5: F fysiikka, P pedagogiikka, V visuaalinen laatu, T ty
 | [`fy3-7/phase-diagram`](catalog/FY3.html#fy3-7-phase-diagram) | Olomuodon muutokset; kuvaaja: teoria | 5 | 5 | 4 | 5 | KEVYT KORJAUS | Kiinteän ja nesteen alueilla on sama vaaleansininen täyttö; alueet erottuvat vain rajaviivasta. |  | ODOTTAA |
 | [`fy3-7/melting-curve`](catalog/FY3.html#fy3-7-melting-curve) | Olomuodon muutokset; kuvaaja: tutkimusvaihe, tehtävä | 5 | 4 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy3-8/hero`](catalog/FY3.html#fy3-8-hero) | Lämpölaajeneminen; avauskuva | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
-| [`fy3-8/scene`](catalog/FY3.html#fy3-8-scene) | Lämpölaajeneminen; kuvitus: teoria | 5 | 4 | 5 | 4 | KEVYT KORJAUS | Aurinko sädekehällä. |  | ODOTTAA |
+| [`fy3-8/scene`](catalog/FY3.html#fy3-8-scene) | Lämpölaajeneminen; kuvitus: teoria | 5 | 4 | 5 | 4 | KEVYT KORJAUS | Aurinko sädekehällä. |  | KEVYT KORJAUS hyväksytty, ryhmä B (opettaja 2026-11-11) |
 | [`fy3-8/particles`](catalog/FY3.html#fy3-8-particles) | Lämpölaajeneminen; kaavio: teoria | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy3-8/rod-expansion`](catalog/FY3.html#fy3-8-rod-expansion) | Lämpölaajeneminen; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy3-8/volume-expansion`](catalog/FY3.html#fy3-8-volume-expansion) | Lämpölaajeneminen; kaavio: teoria | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
@@ -88,7 +88,7 @@ Kuvia 111. Asteikko 1–5: F fysiikka, P pedagogiikka, V visuaalinen laatu, T ty
 | [`fy3-9/absolute-zero`](catalog/FY3.html#fy3-9-absolute-zero) | Kaasujen tilanmuutokset ja Boylen laki; kuvaaja: teoria | 5 | 5 | 4 | 5 | KEVYT KORJAUS | "−273°C" ilman väliä luvun ja yksikön välissä. |  | ODOTTAA |
 | [`fy3-9/iso-processes`](catalog/FY3.html#fy3-9-iso-processes) | Kaasujen tilanmuutokset ja Boylen laki; kaavio: teoria | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy3-9/boyle-points`](catalog/FY3.html#fy3-9-boyle-points) | Kaasujen tilanmuutokset ja Boylen laki; kuvaaja: tehtävä | 5 | 4 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
-| [`fy3-9/pick-boyle`](catalog/FY3.html#fy3-9-pick-boyle) | Kaasujen tilanmuutokset ja Boylen laki; kuvaaja: tehtävä | 5 | 4 | 3 | 5 | KEVYT KORJAUS | Akselin nimi p (kPa) on kiinni kuvan yläreunassa. |  | ODOTTAA |
+| [`fy3-9/pick-boyle`](catalog/FY3.html#fy3-9-pick-boyle) | Kaasujen tilanmuutokset ja Boylen laki; kuvaaja: tehtävä | 5 | 4 | 3 | 5 | KEVYT KORJAUS | Akselin nimi p (kPa) on kiinni kuvan yläreunassa. |  | KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11) |
 | [`fy3-9/pick-line`](catalog/FY3.html#fy3-9-pick-line) | Kaasujen tilanmuutokset ja Boylen laki; kuvaaja: tehtävä | 5 | 4 | 3 | 5 | KEVYT KORJAUS | Ks. fy3-9/pick-boyle. |  | ODOTTAA |
 | [`fy3-9/pick-flat`](catalog/FY3.html#fy3-9-pick-flat) | Kaasujen tilanmuutokset ja Boylen laki; kuvaaja: tehtävä | 5 | 4 | 3 | 5 | KEVYT KORJAUS | Ks. fy3-9/pick-boyle. |  | ODOTTAA |
 | [`fy3-9/pick-rising`](catalog/FY3.html#fy3-9-pick-rising) | Kaasujen tilanmuutokset ja Boylen laki; kuvaaja: tehtävä | 5 | 4 | 3 | 5 | KEVYT KORJAUS | Ks. fy3-9/pick-boyle. |  | ODOTTAA |
@@ -102,7 +102,7 @@ Kuvia 111. Asteikko 1–5: F fysiikka, P pedagogiikka, V visuaalinen laatu, T ty
 | [`fy3-14/~lesson-2`](catalog/FY3.html#fy3-14-lesson-2) | Lämpötasapaino olomuodon muuttuessa; kaavio: ei käytössä | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy3-14/~lesson-3`](catalog/FY3.html#fy3-14-lesson-3) | Lämpötasapaino olomuodon muuttuessa; kaavio: ei käytössä | 5 | 5 | 3 | 4 | KEVYT KORJAUS | Oikean yläkulman tekstit ovat kiinni kuvan reunassa. |  | ODOTTAA |
 | [`fy3-14/~lesson-4`](catalog/FY3.html#fy3-14-lesson-4) | Lämpötasapaino olomuodon muuttuessa; kuvaaja: ei käytössä | 5 | 4 | 4 | 4 | PIDÄ |  |  | ODOTTAA |
-| [`fy3-15/~lesson-2`](catalog/FY3.html#fy3-15-lesson-2) | Energiantuotanto ja voimalaitosten hyötysuhde; kaavio: ei käytössä | 5 | 5 | 4 | 3 | KEVYT KORJAUS | Energiavirtakaavio neljännellä piirrostavalla (tumma oranssi ja musta); "polttoaine 500 MW" kiinni vasemmassa reunassa. Summat täsmäävät. |  | ODOTTAA |
+| [`fy3-15/~lesson-2`](catalog/FY3.html#fy3-15-lesson-2) | Energiantuotanto ja voimalaitosten hyötysuhde; kaavio: ei käytössä | 5 | 5 | 4 | 3 | KEVYT KORJAUS | Energiavirtakaavio neljännellä piirrostavalla (tumma oranssi ja musta); "polttoaine 500 MW" kiinni vasemmassa reunassa. Summat täsmäävät. |  | KEVYT KORJAUS hyväksytty, ryhmä C (opettaja 2026-11-11) |
 | [`fy3-15/~lesson-3`](catalog/FY3.html#fy3-15-lesson-3) | Energiantuotanto ja voimalaitosten hyötysuhde; kuvaaja: ei käytössä | 5 | 4 | 4 | 4 | PIDÄ |  |  | ODOTTAA |
 | [`fy3-15/~lesson-4`](catalog/FY3.html#fy3-15-lesson-4) | Energiantuotanto ja voimalaitosten hyötysuhde; kuvaaja: ei käytössä | 5 | 5 | 4 | 4 | PIDÄ |  |  | ODOTTAA |
 | [`fy3-15/~lesson-5`](catalog/FY3.html#fy3-15-lesson-5) | Energiantuotanto ja voimalaitosten hyötysuhde; kaavio: ei käytössä | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
@@ -110,8 +110,8 @@ Kuvia 111. Asteikko 1–5: F fysiikka, P pedagogiikka, V visuaalinen laatu, T ty
 | [`fy3-16/~lesson-2`](catalog/FY3.html#fy3-16-lesson-2) | Soveltava tunti: lämpöilmiöt arjessa; kaavio: ei käytössä | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy3-16/~lesson-3`](catalog/FY3.html#fy3-16-lesson-3) | Soveltava tunti: lämpöilmiöt arjessa; kuvaaja: ei käytössä | 5 | 4 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy3-16/~lesson-4`](catalog/FY3.html#fy3-16-lesson-4) | Soveltava tunti: lämpöilmiöt arjessa; kaavio: ei käytössä | 5 | 5 | 4 | 5 | PIDÄ | Jäähdytyskierto tunnistettavina osina. |  | ODOTTAA |
-| [`fy3-sovella/fy3-s1-graph`](catalog/FY3.html#fy3-sovella-fy3-s1-graph) | FY3 Sovella itsenäisesti; kuvaaja: ratkaisu | 5 | 4 | 3 | 3 | KEVYT KORJAUS | Koekuvaajien poikkeava piirrostapa; yksikkö K/min pienenä pystymurtona. |  | ODOTTAA |
-| [`fy3-koe/fy3-k1-work`](catalog/FY3.html#fy3-koe-fy3-k1-work) | FY3 Sovella itsenäisesti; kuvaaja: soveltava tehtävä tai koe | 5 | 4 | 4 | 3 | KEVYT KORJAUS | Koekuvaajien poikkeava piirrostapa (ks. fy1-koe/fy1-k1-walk). |  | ODOTTAA |
-| [`fy3-koe/fy3-k1-heating`](catalog/FY3.html#fy3-koe-fy3-k1-heating) | FY3 Sovella itsenäisesti; kuvaaja: soveltava tehtävä tai koe | 5 | 4 | 4 | 3 | KEVYT KORJAUS | Ks. fy3-koe/fy3-k1-work. |  | ODOTTAA |
-| [`fy3-koe/fy3-k2-graph`](catalog/FY3.html#fy3-koe-fy3-k2-graph) | FY3 Sovella itsenäisesti; kuvaaja: ratkaisu | 5 | 4 | 3 | 3 | KEVYT KORJAUS | Ks. fy3-koe/fy3-k1-work; lisäksi "θ0 ≈ −273 °C" on katkoviivan päällä. |  | ODOTTAA |
-| [`fy3-koe/fy3-k6-graph`](catalog/FY3.html#fy3-koe-fy3-k6-graph) | FY3 Sovella itsenäisesti; kuvaaja: ratkaisu | 5 | 4 | 4 | 3 | KEVYT KORJAUS | Ks. fy3-koe/fy3-k1-work. |  | ODOTTAA |
+| [`fy3-sovella/fy3-s1-graph`](catalog/FY3.html#fy3-sovella-fy3-s1-graph) | FY3 Sovella itsenäisesti; kuvaaja: ratkaisu | 5 | 4 | 3 | 3 | KEVYT KORJAUS | Koekuvaajien poikkeava piirrostapa; yksikkö K/min pienenä pystymurtona. |  | KEVYT KORJAUS hyväksytty, ryhmä D+F (opettaja 2026-11-11) |
+| [`fy3-koe/fy3-k1-work`](catalog/FY3.html#fy3-koe-fy3-k1-work) | FY3 Sovella itsenäisesti; kuvaaja: soveltava tehtävä tai koe | 5 | 4 | 4 | 3 | KEVYT KORJAUS | Koekuvaajien poikkeava piirrostapa (ks. fy1-koe/fy1-k1-walk). |  | KEVYT KORJAUS hyväksytty, ryhmä D (opettaja 2026-11-11) |
+| [`fy3-koe/fy3-k1-heating`](catalog/FY3.html#fy3-koe-fy3-k1-heating) | FY3 Sovella itsenäisesti; kuvaaja: soveltava tehtävä tai koe | 5 | 4 | 4 | 3 | KEVYT KORJAUS | Ks. fy3-koe/fy3-k1-work. |  | KEVYT KORJAUS hyväksytty, ryhmä D (opettaja 2026-11-11) |
+| [`fy3-koe/fy3-k2-graph`](catalog/FY3.html#fy3-koe-fy3-k2-graph) | FY3 Sovella itsenäisesti; kuvaaja: ratkaisu | 5 | 4 | 3 | 3 | KEVYT KORJAUS | Ks. fy3-koe/fy3-k1-work; lisäksi "θ0 ≈ −273 °C" on katkoviivan päällä. |  | KEVYT KORJAUS hyväksytty, ryhmä D (opettaja 2026-11-11) |
+| [`fy3-koe/fy3-k6-graph`](catalog/FY3.html#fy3-koe-fy3-k6-graph) | FY3 Sovella itsenäisesti; kuvaaja: ratkaisu | 5 | 4 | 4 | 3 | KEVYT KORJAUS | Ks. fy3-koe/fy3-k1-work. |  | KEVYT KORJAUS hyväksytty, ryhmä D (opettaja 2026-11-11) |

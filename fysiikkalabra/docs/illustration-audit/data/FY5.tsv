@@ -71,7 +71,7 @@ fy5-2/lauta-voimat|5|5|4|5|PIDA||
 fy5-2/keinu-voimat|5|5|4|5|PIDA||
 fy5-2/hylly|5|5|4|5|PIDA|Murtolukumerkinnät h/2 ja d/2 ovat pieniä puhelimella.|
 fy5-2/kyltti|5|5|5|5|PIDA|
-fy5-3/hero|5|4|4|4|KEVYT|Aurinko sädekehällä.|
+fy5-3/hero|5|4|4|4|KEVYT|Aurinko sädekehällä.||KEVYT KORJAUS hyväksytty, ryhmä B (opettaja 2026-11-11)
 fy5-3/tangent|5|5|4|5|PIDA||
 fy5-3/release|5|5|5|5|PIDA|Narun katketessa kappale jatkaa suoraan: jälkikuvat tekevät liikkeen näkyväksi.|
 fy5-3/dv|5|5|4|5|PIDA||
@@ -83,7 +83,7 @@ fy5-3/opt-between|5|4|4|5|PIDA|
 fy5-4/hero|5|5|5|5|PIDA||
 fy5-4/muutos|5|5|4|5|PIDA||
 fy5-4/kaarre|5|5|5|5|PIDA|Tilannekuva ylhäältä ja voimakuvio takaa: kitka kohti keskipistettä.|
-fy5-4/kuvaaja|5|5|4|4|KEVYT|Akselien yksiköt pystymurtoina (m/s² ja m/s), kun muissa lukujen kuvaajissa ne ovat rivillä.|
+fy5-4/kuvaaja|5|5|4|4|KEVYT|Akselien yksiköt pystymurtoina (m/s² ja m/s), kun muissa lukujen kuvaajissa ne ovat rivillä.||KEVYT KORJAUS hyväksytty, ryhmä F (opettaja 2026-11-11)
 fy5-4/nyppyla|5|5|5|5|PIDA|
 fy5-4/esimerkki|5|5|4|5|PIDA||
 fy5-4/virhe|5|5|4|5|PIDA|Tarkoituksella virheellinen kuvio (keskipakovoima voimana).|
@@ -110,7 +110,7 @@ fy5-6/vr|5|5|4|5|PIDA|Ratanopeudet vastaavat kaavaa (tarkistettu).|
 fy5-6/paino|5|5|5|5|PIDA|Painottomuus: sama gravitaatio, tukivoima puuttuu.|
 fy5-6/radat|5|5|4|5|PIDA||
 fy5-6/malli|5|5|4|5|PIDA||
-fy5-7/hero|5|4|4|4|KEVYT|Aurinko sädekehällä.|
+fy5-7/hero|5|4|4|4|KEVYT|Aurinko sädekehällä.||KEVYT KORJAUS hyväksytty, ryhmä B (opettaja 2026-11-11)
 fy5-7/osat|5|5|5|5|PIDA|
 fy5-7/kuvaaja|5|5|4|5|PIDA||
 fy5-7/ympyra|5|5|4|5|PIDA||
@@ -142,14 +142,14 @@ fy5-9/vaimeneva|5|5|4|5|PIDA||
 fy5-9/kuvaaja-k|5|4|3|5|KEVYT|Aika-akselin numerot ovat kuvaajan sisällä käyrän päällä.|
 fy5-sovella/fy5-s1-crane|5|5|4|5|PIDA||
 fy5-sovella/fy5-s1-fbd|5|4|4|4|PIDA|
-fy5-sovella/fy5-s2-graph|5|4|3|3|KEVYT|Akselien yksiköt sisäkkäisinä pieninä murtolukuina (1/r, 10^-9/m): ei luettavissa puhelimella. Koekuvaajien poikkeava piirrostapa.|
-fy5-sovella/fy5-s3-graph|5|4|4|3|KEVYT|Koekuvaajien poikkeava piirrostapa (ks. fy1-koe/fy1-k1-walk).|
-fy5-sovella/fy5-s4-signal|5|4|4|3|KEVYT|Ks. fy5-sovella/fy5-s3-graph.|
+fy5-sovella/fy5-s2-graph|5|4|3|3|KEVYT|Akselien yksiköt sisäkkäisinä pieninä murtolukuina (1/r, 10^-9/m): ei luettavissa puhelimella. Koekuvaajien poikkeava piirrostapa.||KEVYT KORJAUS hyväksytty, ryhmä D (opettaja 2026-11-11)
+fy5-sovella/fy5-s3-graph|5|4|4|3|KEVYT|Koekuvaajien poikkeava piirrostapa (ks. fy1-koe/fy1-k1-walk).||KEVYT KORJAUS hyväksytty, ryhmä D (opettaja 2026-11-11)
+fy5-sovella/fy5-s4-signal|5|4|4|3|KEVYT|Ks. fy5-sovella/fy5-s3-graph.||KEVYT KORJAUS hyväksytty, ryhmä D (opettaja 2026-11-11)
 fy5-koe/fy5-k1-osc|5|4|4|4|PIDA|
 fy5-koe/fy5-k1-doppler|5|4|4|4|PIDA|
 fy5-koe/fy5-k2-board|5|4|2|2|UUSI|Hyppääjä on tikku-ukko, vesi sininen suorakaide ja allas beige laatikko. Sama tilanne on piirretty kunnolla kuvassa fy5-2/lauta (hahmo, pultti, tuki, vesi).|Piirrä samalla piirrolla kuin fy5-2/lauta: betonireunus, pultti päässä A ja tuki kohdassa B, punainen lauta, piirretty hyppääjä laudan päässä ja vesi aaltoviivoin. Mitat 1,2 m (A–B) ja 4,0 m (A–hyppääjä) mittaviivoin laudan ylä- ja alapuolella kuten nyt, pisteiden nimet A ja B säilyvät. Eri mitat ja pisteiden nimet riittävät erottamaan kuvan luvun kuvasta.|PIIRRÄ UUDELLEEN (opettaja 2026-11-11)
 fy5-koe/fy5-k2-fbd|5|5|4|5|PIDA||
 fy5-koe/fy5-k3-fbd|5|5|4|5|PIDA||
-fy5-koe/fy5-k4-graph|5|4|4|3|KEVYT|Ks. fy5-sovella/fy5-s3-graph.|
+fy5-koe/fy5-k4-graph|5|4|4|3|KEVYT|Ks. fy5-sovella/fy5-s3-graph.||KEVYT KORJAUS hyväksytty, ryhmä D (opettaja 2026-11-11)
 fy5-koe/fy5-k5-modes|5|5|4|5|PIDA||
-fy5-koe/fy5-k6-graph|5|4|4|3|KEVYT|Ks. fy5-sovella/fy5-s3-graph.|
+fy5-koe/fy5-k6-graph|5|4|4|3|KEVYT|Ks. fy5-sovella/fy5-s3-graph.||KEVYT KORJAUS hyväksytty, ryhmä D (opettaja 2026-11-11)

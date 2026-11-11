@@ -52,7 +52,7 @@ fy8-16/kierto|5|5|5|5|PIDA|
 fy8-16/koostumus|5|5|4|5|PIDA|
 fy8-16/hubble|5|5|5|5|PIDA|
 fy8-16/hubble-t|5|4|4|5|PIDA|
-fy8-2/hero|5|5|5|4|KEVYT|Ikkunan Aurinko sädekehällä.|
+fy8-2/hero|5|5|5|4|KEVYT|Ikkunan Aurinko sädekehällä.||KEVYT KORJAUS hyväksytty, ryhmä B (opettaja 2026-11-11)
 fy8-2/spectra|5|5|5|5|PIDA|Jatkuva, emissio- ja absorptiospektri kohdakkain samalla asteikolla.|
 fy8-2/fluorescence|5|5|5|5|PIDA|Energiat vastaavat aallonpituuksia (tarkistettu).|
 fy8-2/levels|5|5|4|5|PIDA|
@@ -88,13 +88,13 @@ fy8-7/processes|5|5|5|5|PIDA|Absorptio, spontaani ja stimuloitu emissio samalla 
 fy8-7/inversion|5|5|5|5|PIDA|
 fy8-7/cavity|5|5|5|5|PIDA|
 fy8-7/qdots|5|5|4|5|PIDA|
-fy8-7/rate-graph|5|4|3|4|KEVYT|Pystyakselin nimi N/t ja yksikkö 1/s ovat pieninä pystymurtoina, lukukelvottomia puhelimella. Arvot oikein (tarkistettu).|
+fy8-7/rate-graph|5|4|3|4|KEVYT|Pystyakselin nimi N/t ja yksikkö 1/s ovat pieninä pystymurtoina, lukukelvottomia puhelimella. Arvot oikein (tarkistettu).||KEVYT KORJAUS hyväksytty, ryhmä F (opettaja 2026-11-11)
 fy8-7/tunnel|5|5|5|5|PIDA|
 fy8-8/hero|5|4|4|4|KEVYT|Yläreunassa valkoinen kaista: katto puuttuu.|
 fy8-8/isotopes|5|5|5|5|PIDA|
 fy8-8/chart|5|5|5|5|PIDA|Hajoamistavat oikeilla puolilla pysyvyyskaistaa.|
 fy8-8/decays|5|5|5|5|PIDA|
-fy8-8/levels|5|5|3|5|KEVYT|Tytärytimen nimi (Ni-60) leikkautuu kuva-alan alareunaan, ja emoytimen nimi (Co-60) on kiinni yläreunassa. Energiat oikein.|
+fy8-8/levels|5|5|3|5|KEVYT|Tytärytimen nimi (Ni-60) leikkautuu kuva-alan alareunaan, ja emoytimen nimi (Co-60) on kiinni yläreunassa. Energiat oikein.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11)
 fy8-8/shifts|5|5|4|5|PIDA|Siirtymät (N, Z)-kartalla oikeisiin suuntiin.|
 fy8-8/spectrum|5|5|4|5|PIDA|
 fy8-9/hero|5|4|4|4|KEVYT|Pöydän alla valkoinen kaista: lattia puuttuu.|

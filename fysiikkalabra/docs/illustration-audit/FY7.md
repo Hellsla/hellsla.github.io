@@ -13,13 +13,13 @@ Kuvia 126. Asteikko 1–5: F fysiikka, P pedagogiikka, V visuaalinen laatu, T ty
 | [`fy7-1/inclination`](catalog/FY7.html#fy7-1-inclination) | Magneetit, magneettinen dipoli ja magneettikenttä; kaavio: teoria | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy7-1/scene`](catalog/FY7.html#fy7-1-scene) | Magneetit, magneettinen dipoli ja magneettikenttä; kuvitus: teoria | 5 | 4 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy7-1/two-magnets`](catalog/FY7.html#fy7-1-two-magnets) | Magneetit, magneettinen dipoli ja magneettikenttä; kuvitus: tutkimusvaihe | 5 | 4 | 4 | 5 | PIDÄ | Tehtäväkuva: navat tarkoituksella nimeämättä. |  | ODOTTAA |
-| [`fy7-10/hero`](catalog/FY7.html#fy7-10-hero) | Valon heijastuminen ja taittuminen; avauskuva | 5 | 4 | 4 | 4 | KEVYT KORJAUS | Ikkunan Aurinko sädekehällä. |  | ODOTTAA |
+| [`fy7-10/hero`](catalog/FY7.html#fy7-10-hero) | Valon heijastuminen ja taittuminen; avauskuva | 5 | 4 | 4 | 4 | KEVYT KORJAUS | Ikkunan Aurinko sädekehällä. |  | KEVYT KORJAUS hyväksytty, ryhmä B (opettaja 2026-11-11) |
 | [`fy7-10/interface`](catalog/FY7.html#fy7-10-interface) | Valon heijastuminen ja taittuminen; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy7-10/wavefronts`](catalog/FY7.html#fy7-10-wavefronts) | Valon heijastuminen ja taittuminen; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ | Aallonpituus lyhenee vedessä, rintamat kääntyvät: taittumisen syy näkyy. |  | ODOTTAA |
 | [`fy7-10/depth`](catalog/FY7.html#fy7-10-depth) | Valon heijastuminen ja taittuminen; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy7-10/graph`](catalog/FY7.html#fy7-10-graph) | Valon heijastuminen ja taittuminen; kuvaaja: teoria | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy7-10/scene`](catalog/FY7.html#fy7-10-scene) | Valon heijastuminen ja taittuminen; kuvitus: teoria | 5 | 4 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
-| [`fy7-10/fit`](catalog/FY7.html#fy7-10-fit) | Valon heijastuminen ja taittuminen; kuvaaja: tutkimusvaihe | 5 | 4 | 3 | 5 | KEVYT KORJAUS | Akselin nimi sin α1 on kiinni kuva-alan yläreunassa. |  | ODOTTAA |
+| [`fy7-10/fit`](catalog/FY7.html#fy7-10-fit) | Valon heijastuminen ja taittuminen; kuvaaja: tutkimusvaihe | 5 | 4 | 3 | 5 | KEVYT KORJAUS | Akselin nimi sin α1 on kiinni kuva-alan yläreunassa. |  | KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11) |
 | [`fy7-10/protractor`](catalog/FY7.html#fy7-10-protractor) | Valon heijastuminen ja taittuminen; kaavio: tehtävä | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy7-11/hero`](catalog/FY7.html#fy7-11-hero) | Dispersio: prisma ja sateenkaari; avauskuva | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy7-11/prism`](catalog/FY7.html#fy7-11-prism) | Dispersio: prisma ja sateenkaari; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
@@ -39,18 +39,18 @@ Kuvia 126. Asteikko 1–5: F fysiikka, P pedagogiikka, V visuaalinen laatu, T ty
 | [`fy7-13/hero`](catalog/FY7.html#fy7-13-hero) | Valon interferenssi ja diffraktio; avauskuva | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy7-13/slit`](catalog/FY7.html#fy7-13-slit) | Valon interferenssi ja diffraktio; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy7-13/young`](catalog/FY7.html#fy7-13-young) | Valon interferenssi ja diffraktio; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
-| [`fy7-13/pattern`](catalog/FY7.html#fy7-13-pattern) | Valon interferenssi ja diffraktio; kuvaaja: teoria | 5 | 5 | 4 | 5 | KEVYT KORJAUS | Vaaka-akselin nimi Δs/λ on pieni pystymurto akselin päässä; vaikea lukea puhelimella. |  | ODOTTAA |
+| [`fy7-13/pattern`](catalog/FY7.html#fy7-13-pattern) | Valon interferenssi ja diffraktio; kuvaaja: teoria | 5 | 5 | 4 | 5 | KEVYT KORJAUS | Vaaka-akselin nimi Δs/λ on pieni pystymurto akselin päässä; vaikea lukea puhelimella. |  | KEVYT KORJAUS hyväksytty, ryhmä F (opettaja 2026-11-11) |
 | [`fy7-13/white`](catalog/FY7.html#fy7-13-white) | Valon interferenssi ja diffraktio; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ | Punainen taipuu eniten: hilan ja prisman ero näkyy. |  | ODOTTAA |
 | [`fy7-13/geometry`](catalog/FY7.html#fy7-13-geometry) | Valon interferenssi ja diffraktio; kaavio: teoria | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy7-13/setup`](catalog/FY7.html#fy7-13-setup) | Valon interferenssi ja diffraktio; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy7-13/scene`](catalog/FY7.html#fy7-13-scene) | Valon interferenssi ja diffraktio; kuvitus: teoria | 5 | 4 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
-| [`fy7-14/hero`](catalog/FY7.html#fy7-14-hero) | Ohuen kalvon interferenssi; avauskuva | 5 | 4 | 4 | 4 | KEVYT KORJAUS | Aurinko sädekehällä. |  | ODOTTAA |
+| [`fy7-14/hero`](catalog/FY7.html#fy7-14-hero) | Ohuen kalvon interferenssi; avauskuva | 5 | 4 | 4 | 4 | KEVYT KORJAUS | Aurinko sädekehällä. |  | KEVYT KORJAUS hyväksytty, ryhmä B (opettaja 2026-11-11) |
 | [`fy7-14/reflections`](catalog/FY7.html#fy7-14-reflections) | Ohuen kalvon interferenssi; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ | Vaihesiirto vain ylemmässä heijastuksessa (oikein). |  | ODOTTAA |
 | [`fy7-14/phase`](catalog/FY7.html#fy7-14-phase) | Ohuen kalvon interferenssi; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy7-14/bands`](catalog/FY7.html#fy7-14-bands) | Ohuen kalvon interferenssi; kaavio: teoria | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy7-14/graph`](catalog/FY7.html#fy7-14-graph) | Ohuen kalvon interferenssi; kuvaaja: teoria | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy7-14/scene`](catalog/FY7.html#fy7-14-scene) | Ohuen kalvon interferenssi; kuvitus: teoria | 5 | 4 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
-| [`fy7-15/hero`](catalog/FY7.html#fy7-15-hero) | Valon polarisaatio; avauskuva | 5 | 4 | 4 | 4 | KEVYT KORJAUS | Aurinko sädekehällä. |  | ODOTTAA |
+| [`fy7-15/hero`](catalog/FY7.html#fy7-15-hero) | Valon polarisaatio; avauskuva | 5 | 4 | 4 | 4 | KEVYT KORJAUS | Aurinko sädekehällä. |  | KEVYT KORJAUS hyväksytty, ryhmä B (opettaja 2026-11-11) |
 | [`fy7-15/polariser`](catalog/FY7.html#fy7-15-polariser) | Valon polarisaatio; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy7-15/sheets`](catalog/FY7.html#fy7-15-sheets) | Valon polarisaatio; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy7-15/glare`](catalog/FY7.html#fy7-15-glare) | Valon polarisaatio; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
@@ -127,6 +127,6 @@ Kuvia 126. Asteikko 1–5: F fysiikka, P pedagogiikka, V visuaalinen laatu, T ty
 | [`fy7-sovella/fy7-s1-implanter`](catalog/FY7.html#fy7-sovella-fy7-s1-implanter) | FY7 Sovella itsenäisesti; kaavio: soveltava tehtävä tai koe | 5 | 5 | 4 | 5 | PIDÄ | Kaartumissuunta positiiviselle ionille oikein. |  | ODOTTAA |
 | [`fy7-sovella/fy7-s1-forces`](catalog/FY7.html#fy7-sovella-fy7-s1-forces) | FY7 Sovella itsenäisesti; kaavio: ratkaisu | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy7-sovella/fy7-s2-signal`](catalog/FY7.html#fy7-sovella-fy7-s2-signal) | FY7 Sovella itsenäisesti; kuvaaja: soveltava tehtävä tai koe | 5 | 4 | 4 | 4 | PIDÄ |  |  | ODOTTAA |
-| [`fy7-sovella/fy7-s4-spectrum`](catalog/FY7.html#fy7-sovella-fy7-s4-spectrum) | FY7 Sovella itsenäisesti; kuvaaja: soveltava tehtävä tai koe | 5 | 4 | 3 | 3 | KEVYT KORJAUS | Pystyakselin nimi "suhteellinen intensiteetti" on kuva-alan yläreunan päällä; koekuvaajien poikkeava piirrostapa. |  | ODOTTAA |
+| [`fy7-sovella/fy7-s4-spectrum`](catalog/FY7.html#fy7-sovella-fy7-s4-spectrum) | FY7 Sovella itsenäisesti; kuvaaja: soveltava tehtävä tai koe | 5 | 4 | 3 | 3 | KEVYT KORJAUS | Pystyakselin nimi "suhteellinen intensiteetti" on kuva-alan yläreunan päällä; koekuvaajien poikkeava piirrostapa. |  | KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11) |
 | [`fy7-sovella/fy7-s4-fibre`](catalog/FY7.html#fy7-sovella-fy7-s4-fibre) | FY7 Sovella itsenäisesti; kaavio: ratkaisu | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
-| [`fy7-sovella/fy7-s5-graph`](catalog/FY7.html#fy7-sovella-fy7-s5-graph) | FY7 Sovella itsenäisesti; kuvaaja: ratkaisu | 5 | 4 | 3 | 3 | KEVYT KORJAUS | Akselin nimi sin θ on kuva-alan yläreunan päällä; koekuvaajien poikkeava piirrostapa. |  | ODOTTAA |
+| [`fy7-sovella/fy7-s5-graph`](catalog/FY7.html#fy7-sovella-fy7-s5-graph) | FY7 Sovella itsenäisesti; kuvaaja: ratkaisu | 5 | 4 | 3 | 3 | KEVYT KORJAUS | Akselin nimi sin θ on kuva-alan yläreunan päällä; koekuvaajien poikkeava piirrostapa. |  | KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11) |

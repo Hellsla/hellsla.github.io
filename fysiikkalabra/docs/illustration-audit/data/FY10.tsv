@@ -1,10 +1,10 @@
 fy10-aanennopeus/hero|5|5|5|5|PIDA|
 fy10-aanennopeus/setup|5|5|5|5|PIDA|
 fy10-aanennopeus/signal|5|5|5|5|PIDA|Aikaero luetaan kahdesta signaalista: täsmälleen se, mitä opiskelija tekee.|
-fy10-aanennopeus/model|5|5|3|5|KEVYT|Akselin nimi d leikkautuu kuva-alan yläreunaan. Sama vika toistuu FY10:n mallikuvaajissa (yhteinen syy).|
+fy10-aanennopeus/model|5|5|3|5|KEVYT|Akselin nimi d leikkautuu kuva-alan yläreunaan. Sama vika toistuu FY10:n mallikuvaajissa (yhteinen syy).||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11)
 fy10-heiluri/hero|5|5|5|5|PIDA|
 fy10-heiluri/setup|5|5|3|5|KEVYT|"ripustuskohta" on heilurin langan päällä.|
-fy10-heiluri/model|5|5|3|5|KEVYT|Akselin nimi T² leikkautuu yläreunaan.|
+fy10-heiluri/model|5|5|3|5|KEVYT|Akselin nimi T² leikkautuu yläreunaan.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11)
 fy10-hissi/hero|5|5|5|5|PIDA|
 fy10-hissi/vaiheet|5|5|5|5|PIDA|
 fy10-hissi/malli|5|5|5|5|PIDA|Kiihtyvyys, nopeus ja matka kohdakkain; pinta-alat nimetty.|
@@ -16,7 +16,7 @@ fy10-hitausmomentti/model|5|5|4|5|PIDA|
 fy10-hiuksen-paksuus/hero|5|5|5|5|PIDA|
 fy10-hiuksen-paksuus/pattern|5|5|5|5|PIDA|
 fy10-hiuksen-paksuus/geometry|5|5|5|5|PIDA|
-fy10-hiuksen-paksuus/model|5|5|4|5|KEVYT|Akselin nimi x_m on kiinni yläreunassa.|
+fy10-hiuksen-paksuus/model|5|5|4|5|KEVYT|Akselin nimi x_m on kiinni yläreunassa.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11)
 fy10-hyppy/hero|5|5|5|5|PIDA|
 fy10-hyppy/forces|5|5|3|4|KEVYT|Painon nimi on voimalevyn reunan päällä, ja molemmat voimat on piirretty kappaleen sisään vierekkäin; FY4:n käytäntö on paino keskeltä alas ja tukivoima kosketuspinnasta ylös.|
 fy10-hyppy/model|5|5|5|5|PIDA|Voimalevyn käyrä vaiheittain numeroituna; impulssit väritetty.|
@@ -30,8 +30,8 @@ fy10-jaahtyminen/model|5|5|5|5|PIDA|
 fy10-jaahtyminen/linear|5|5|4|5|PIDA|
 fy10-jousivakio/hero|5|5|5|5|PIDA|
 fy10-jousivakio/setup|5|5|3|5|KEVYT|"ilman kuormaa" ja "kuormitettuna" ovat molemmat oikean jousen vieressä porrastettuina; ensimmäinen kuuluu vasemman jousen alle. Jousivoiman nimi on jousen päällä.|
-fy10-jousivakio/model|5|5|3|5|KEVYT|Akselin nimi F leikkautuu yläreunaan.|
-fy10-jousivakio/oscillation|5|5|3|5|KEVYT|Akselin nimi T² leikkautuu yläreunaan ja "vakiotermi" on suoran päällä.|
+fy10-jousivakio/model|5|5|3|5|KEVYT|Akselin nimi F leikkautuu yläreunaan.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11)
+fy10-jousivakio/oscillation|5|5|3|5|KEVYT|Akselin nimi T² leikkautuu yläreunaan ja "vakiotermi" on suoran päällä.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11)
 fy10-kaasu/hero|5|5|5|5|PIDA|
 fy10-kaasu/setup|5|5|4|5|PIDA|
 fy10-kaasu/boyle|5|5|4|5|PIDA|
@@ -39,11 +39,11 @@ fy10-kaasu/isokoori|5|5|5|5|PIDA|Mittausalue ja jatke erotettu: ekstrapolointi n
 fy10-kondensaattori/hero|5|5|5|5|PIDA|
 fy10-kondensaattori/circuit|5|5|3|5|KEVYT|Kytkimen asennon nimi A on johtimen päällä.|
 fy10-kondensaattori/model|5|5|5|5|PIDA|
-fy10-kondensaattori/linear|5|5|3|5|KEVYT|Akselin nimi ln u leikkautuu yläreunaan.|
+fy10-kondensaattori/linear|5|5|3|5|KEVYT|Akselin nimi ln u leikkautuu yläreunaan.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11)
 fy10-lammonjohtuminen/hero|5|5|5|5|PIDA|
 fy10-lammonjohtuminen/emission|5|5|5|5|PIDA|Kiiltävä ja matta pinta samassa lämpötilassa: miksi sauvat teipataan.|
 fy10-lammonjohtuminen/setup|5|5|5|5|PIDA|
-fy10-lammonjohtuminen/model|5|5|3|5|KEVYT|Akselin nimi T leikkautuu yläreunaan.|
+fy10-lammonjohtuminen/model|5|5|3|5|KEVYT|Akselin nimi T leikkautuu yläreunaan.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11)
 fy10-leikkiauto/hero|5|5|5|5|PIDA|
 fy10-leikkiauto/setup|5|5|5|5|PIDA|
 fy10-leikkiauto/model-v|5|5|4|5|PIDA|
@@ -67,15 +67,15 @@ fy10-muotokerroin/model|5|5|4|5|PIDA|
 fy10-muotokerroin/mass|5|5|4|5|PIDA|
 fy10-muuntaja/hero|5|5|5|5|PIDA|
 fy10-muuntaja/setup|5|5|5|5|PIDA|
-fy10-muuntaja/model|5|5|3|5|KEVYT|Akselin nimi U2/U1 leikkautuu yläreunaan.|
+fy10-muuntaja/model|5|5|3|5|KEVYT|Akselin nimi U2/U1 leikkautuu yläreunaan.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11)
 fy10-paristo/hero|5|5|5|5|PIDA|
 fy10-paristo/model|5|5|4|5|PIDA|
 fy10-paristo/circuit|5|5|5|5|PIDA|
-fy10-paristo/curve|5|5|3|5|KEVYT|Akselin nimi U leikkautuu yläreunaan.|
+fy10-paristo/curve|5|5|3|5|KEVYT|Akselin nimi U leikkautuu yläreunaan.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11)
 fy10-planck/hero|5|5|5|5|PIDA|
 fy10-planck/setup|5|5|5|5|PIDA|
-fy10-planck/iu|5|5|3|5|KEVYT|Akselin nimi I leikkautuu yläreunaan.|
-fy10-planck/model|5|5|3|5|KEVYT|Akselin nimi Uk leikkautuu yläreunaan.|
+fy10-planck/iu|5|5|3|5|KEVYT|Akselin nimi I leikkautuu yläreunaan.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11)
+fy10-planck/model|5|5|3|5|KEVYT|Akselin nimi Uk leikkautuu yläreunaan.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11)
 fy10-planck/grating|5|5|5|5|PIDA|
 fy10-pomppukorkeus/hero|5|5|5|5|PIDA|
 fy10-pomppukorkeus/setup|5|5|5|5|PIDA|
@@ -84,8 +84,8 @@ fy10-resonanssi/hero|5|5|5|5|PIDA|
 fy10-resonanssi/setup|5|5|5|5|PIDA|
 fy10-resonanssi/standing|5|5|5|5|PIDA|Kupu avoimessa päässä, solmu männällä: oikein.|
 fy10-resonanssi/resonances|5|5|5|5|PIDA|Päätykorjaus e näkyy kuvassa, ja peräkkäisten resonanssien väli on puoli aallonpituutta.|
-fy10-resonanssi/model|5|5|3|5|KEVYT|Akselin nimi L leikkautuu yläreunaan.|
-fy10-resonanssi/frequency|5|5|3|5|KEVYT|Akselin nimi λ leikkautuu yläreunaan.|
+fy10-resonanssi/model|5|5|3|5|KEVYT|Akselin nimi L leikkautuu yläreunaan.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11)
+fy10-resonanssi/frequency|5|5|3|5|KEVYT|Akselin nimi λ leikkautuu yläreunaan.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11)
 fy10-taitekerroin/hero|5|5|5|5|PIDA|
 fy10-taitekerroin/setup|5|5|4|5|KEVYT|"kappale" on tulevan säteen päällä. Taittuminen normaalista poispäin oikein.|
 fy10-taitekerroin/model|5|5|4|5|PIDA|
@@ -94,12 +94,12 @@ fy10-tuulivoimala/circuit|5|5|4|5|PIDA|
 fy10-tuulivoimala/swept|5|5|5|5|PIDA|
 fy10-uppokuumennin/hero|5|5|5|5|PIDA|
 fy10-uppokuumennin/setup|5|5|5|5|PIDA|
-fy10-uppokuumennin/model|5|5|3|5|KEVYT|Akselin nimi Q leikkautuu yläreunaan.|
-fy10-uppokuumennin/heating|5|5|3|5|KEVYT|Akselin nimi T leikkautuu yläreunaan.|
+fy10-uppokuumennin/model|5|5|3|5|KEVYT|Akselin nimi Q leikkautuu yläreunaan.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11)
+fy10-uppokuumennin/heating|5|5|3|5|KEVYT|Akselin nimi T leikkautuu yläreunaan.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11)
 fy10-valaistus/hero|5|5|5|5|PIDA|
 fy10-valaistus/setup|5|5|5|5|PIDA|
 fy10-valaistus/spread|5|5|5|5|PIDA|
-fy10-valaistus/model|5|5|3|5|KEVYT|Akselin nimi E leikkautuu yläreunaan.|
+fy10-valaistus/model|5|5|3|5|KEVYT|Akselin nimi E leikkautuu yläreunaan.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11)
 fy10-vesivoima/hero|5|5|5|5|PIDA|
 fy10-vesivoima/setup|5|5|4|4|KEVYT|Mittarien ja generaattorin kirjaimet A, V ja G ovat kursiivilla; muissa kytkentäkaavioissa piirrosmerkkien kirjaimet ovat pystykirjaimia.|
 fy10-vesivoima/eta|5|5|4|5|PIDA|

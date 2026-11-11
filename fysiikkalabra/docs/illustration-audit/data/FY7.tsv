@@ -7,13 +7,13 @@ fy7-1/vector-sum|5|5|4|5|PIDA||
 fy7-1/inclination|5|5|4|5|PIDA||
 fy7-1/scene|5|4|4|5|PIDA|
 fy7-1/two-magnets|5|4|4|5|PIDA|Tehtäväkuva: navat tarkoituksella nimeämättä.|
-fy7-10/hero|5|4|4|4|KEVYT|Ikkunan Aurinko sädekehällä.|
+fy7-10/hero|5|4|4|4|KEVYT|Ikkunan Aurinko sädekehällä.||KEVYT KORJAUS hyväksytty, ryhmä B (opettaja 2026-11-11)
 fy7-10/interface|5|5|5|5|PIDA|
 fy7-10/wavefronts|5|5|5|5|PIDA|Aallonpituus lyhenee vedessä, rintamat kääntyvät: taittumisen syy näkyy.|
 fy7-10/depth|5|5|5|5|PIDA|
 fy7-10/graph|5|5|4|5|PIDA||
 fy7-10/scene|5|4|4|5|PIDA|
-fy7-10/fit|5|4|3|5|KEVYT|Akselin nimi sin α1 on kiinni kuva-alan yläreunassa.|
+fy7-10/fit|5|4|3|5|KEVYT|Akselin nimi sin α1 on kiinni kuva-alan yläreunassa.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11)
 fy7-10/protractor|5|5|5|5|PIDA|
 fy7-11/hero|5|5|5|5|PIDA||
 fy7-11/prism|5|5|5|5|PIDA|
@@ -33,18 +33,18 @@ fy7-12/scene|5|4|5|5|PIDA|
 fy7-13/hero|5|5|5|5|PIDA||
 fy7-13/slit|5|5|5|5|PIDA|
 fy7-13/young|5|5|5|5|PIDA|
-fy7-13/pattern|5|5|4|5|KEVYT|Vaaka-akselin nimi Δs/λ on pieni pystymurto akselin päässä; vaikea lukea puhelimella.|
+fy7-13/pattern|5|5|4|5|KEVYT|Vaaka-akselin nimi Δs/λ on pieni pystymurto akselin päässä; vaikea lukea puhelimella.||KEVYT KORJAUS hyväksytty, ryhmä F (opettaja 2026-11-11)
 fy7-13/white|5|5|5|5|PIDA|Punainen taipuu eniten: hilan ja prisman ero näkyy.|
 fy7-13/geometry|5|5|4|5|PIDA||
 fy7-13/setup|5|5|5|5|PIDA|
 fy7-13/scene|5|4|5|5|PIDA|
-fy7-14/hero|5|4|4|4|KEVYT|Aurinko sädekehällä.|
+fy7-14/hero|5|4|4|4|KEVYT|Aurinko sädekehällä.||KEVYT KORJAUS hyväksytty, ryhmä B (opettaja 2026-11-11)
 fy7-14/reflections|5|5|5|5|PIDA|Vaihesiirto vain ylemmässä heijastuksessa (oikein).|
 fy7-14/phase|5|5|5|5|PIDA|
 fy7-14/bands|5|5|4|5|PIDA||
 fy7-14/graph|5|5|4|5|PIDA||
 fy7-14/scene|5|4|5|5|PIDA|
-fy7-15/hero|5|4|4|4|KEVYT|Aurinko sädekehällä.|
+fy7-15/hero|5|4|4|4|KEVYT|Aurinko sädekehällä.||KEVYT KORJAUS hyväksytty, ryhmä B (opettaja 2026-11-11)
 fy7-15/polariser|5|5|5|5|PIDA|
 fy7-15/sheets|5|5|5|5|PIDA|
 fy7-15/glare|5|5|5|5|PIDA|
@@ -121,6 +121,6 @@ fy7-9/spectrum-task|5|4|4|5|PIDA|
 fy7-sovella/fy7-s1-implanter|5|5|4|5|PIDA|Kaartumissuunta positiiviselle ionille oikein.|
 fy7-sovella/fy7-s1-forces|5|5|5|5|PIDA|
 fy7-sovella/fy7-s2-signal|5|4|4|4|PIDA|
-fy7-sovella/fy7-s4-spectrum|5|4|3|3|KEVYT|Pystyakselin nimi "suhteellinen intensiteetti" on kuva-alan yläreunan päällä; koekuvaajien poikkeava piirrostapa.|
+fy7-sovella/fy7-s4-spectrum|5|4|3|3|KEVYT|Pystyakselin nimi "suhteellinen intensiteetti" on kuva-alan yläreunan päällä; koekuvaajien poikkeava piirrostapa.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11)
 fy7-sovella/fy7-s4-fibre|5|5|4|5|PIDA|
-fy7-sovella/fy7-s5-graph|5|4|3|3|KEVYT|Akselin nimi sin θ on kuva-alan yläreunan päällä; koekuvaajien poikkeava piirrostapa.|
+fy7-sovella/fy7-s5-graph|5|4|3|3|KEVYT|Akselin nimi sin θ on kuva-alan yläreunan päällä; koekuvaajien poikkeava piirrostapa.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11)

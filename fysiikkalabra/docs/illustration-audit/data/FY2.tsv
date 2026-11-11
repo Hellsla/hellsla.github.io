@@ -3,10 +3,10 @@ fy2-1/energialajit|5|5|4|5|PIDA|
 fy2-1/energian-muuttuminen|5|4|3|5|KEVYT|"sähköenergia" leijuu pariston vieressä eikä kiinnity nuoleen.|
 fy2-1/sailyminen|5|5|5|5|PIDA|Summat täsmäävät; lämpö erottuu rasterilla eikä vain värillä.|
 fy2-1/kitka-pylvaat|5|4|3|5|KEVYT|Akselin nimi E (J) on kiinni rampin piirroksessa ja C-merkinnässä.|
-fy2-2/hero|5|5|5|4|KEVYT|Aurinko sädekehällä; talotyylissä pelkkä kiekko.|
+fy2-2/hero|5|5|5|4|KEVYT|Aurinko sädekehällä; talotyylissä pelkkä kiekko.||KEVYT KORJAUS hyväksytty, ryhmä B (opettaja 2026-11-11)
 fy2-2/ketju|5|4|4|5|PIDA|
 fy2-2/tikapuut|5|5|3|5|KEVYT|Paikat oikein. "omena metrin ylös" menee tulitikun viiteviivan päälle; yläosa tyhjä.|
-fy2-2/sailyminen|5|5|4|3|KEVYT|Virtakaavio eri piirrostavalla kuin fy2-4/lamp (vaaleat tasavärit, ei harmaata tuloa).|
+fy2-2/sailyminen|5|5|4|3|KEVYT|Virtakaavio eri piirrostavalla kuin fy2-4/lamp (vaaleat tasavärit, ei harmaata tuloa).||KEVYT KORJAUS hyväksytty, ryhmä C (opettaja 2026-11-11)
 fy2-2/tikapuut-kohteet|5|4|4|5|PIDA|
 fy2-3/hero|5|4|5|5|PIDA|
 fy2-3/bars|5|5|4|4|KEVYT|Pylväissä liukuväri, jolla ei ole merkitystä; fy2-6/fi-bars käyttää tasaväriä.|
@@ -28,8 +28,8 @@ fy2-7/hero|5|5|5|5|PIDA|
 fy2-7/grid|5|5|4|5|PIDA|
 fy2-7/district|5|5|4|5|KEVYT|"lämpölaitos" on kiinni kuvan vasemmassa reunassa.|
 fy2-7/storage|5|4|3|5|KEVYT|"pumppuvoimala" menee jakoviivan päälle.|
-fy2-7/sankey|5|4|3|3|KEVYT|Kolmas piirrostapa energiavirtakaavioille (tumma tasaväri ilman ääriviivaa).|
-fy2-8/hero|5|4|5|4|KEVYT|Aurinko sädekehällä; talotyylissä pelkkä kiekko.|
-fy2-8/greenhouse|5|5|4|4|KEVYT|Aurinko sädekehällä. Muuten sopiva yksinkertaistus.|
+fy2-7/sankey|5|4|3|3|KEVYT|Kolmas piirrostapa energiavirtakaavioille (tumma tasaväri ilman ääriviivaa).||KEVYT KORJAUS hyväksytty, ryhmä C (opettaja 2026-11-11)
+fy2-8/hero|5|4|5|4|KEVYT|Aurinko sädekehällä; talotyylissä pelkkä kiekko.||KEVYT KORJAUS hyväksytty, ryhmä B (opettaja 2026-11-11)
+fy2-8/greenhouse|5|5|4|4|KEVYT|Aurinko sädekehällä. Muuten sopiva yksinkertaistus.||KEVYT KORJAUS hyväksytty, ryhmä B (opettaja 2026-11-11)
 fy2-8/emissions|5|5|5|5|PIDA|
 fy2-koe/fy2-k4-bars|5|4|4|4|PIDA|
