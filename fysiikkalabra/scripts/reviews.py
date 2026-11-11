@@ -6,9 +6,10 @@
   python scripts/reviews.py scope <id> [--exercises]   per reviewer: none, delta or full, from what changed since its PASS
   python scripts/reviews.py carry <id> [--exercises]   record that a reviewer's PASS carries over a change it need not see
   python scripts/reviews.py approve-figures <id> …     record that the teacher approved the lesson's figures as drawn now
-  python scripts/reviews.py carry-item investigation|sovella|koe <id> [--lang en]
-                                             the same carry for an investigation (its id), a Sovella set or an example
-                                             exam (the course, FY4): only over figures the teacher approved as drawn
+  python scripts/reviews.py carry-item investigation|sovella|koe|unit|guide <id> [--lang en]
+                                             the same carry for an investigation, a unit or a TVT guide (its id), a
+                                             Sovella set or an example exam (the course, FY4): only over figures the
+                                             teacher approved as drawn
   python scripts/reviews.py approve-presentation <sim.js> [<base-ref>]   show a simulation file's change since <base-ref>
                                              (default origin/main) and, when it only places or draws, record it for the
                                              teacher's approval (docs/presentation-only.tsv)
@@ -858,21 +859,25 @@ def approve_figures(lid):
 
 
 # ------------------------------------------------------------ item carry (teacher 2026-11-11, "laajenna kevyt hyväksyntä")
-# A lesson's reviews carry over a figure the teacher approved as drawn (above). An investigation, a Sovella set and an
-# example exam had no carry at all, so one redrawn figure took the page off the site until three new reviews. Now their
+# A lesson's reviews carry over a figure the teacher approved as drawn (above). An investigation, a unit, a TVT guide,
+# a Sovella set and an example exam had no carry at all, so one redrawn figure took the page off the site until three new reviews. Now their
 # PASS (or visual baseline row) carries over exactly one kind of change: the drawing of figures that have a row in
 # docs/teacher-figures.tsv for their current drawing. `carry-item` writes review/carry.tsv (the lesson's columns) when
 # item_view() of the commit that held the passed version equals item_view() of the working tree: every text with the
 # approved figures' SVGs taken out, the other code as it is, and each not-approved figure as figures.py of that
 # version draws it. So anything a reader sees outside the approved figures is what the reviewers passed, and a change
 # to a helper that moves another figure, or to the shared figure library, does not carry. `verify` re-derives it.
-ITEM_KINDS = ("investigation", "sovella", "koe")
+ITEM_KINDS = ("investigation", "sovella", "koe", "unit", "guide")
 
 
 def _item(kind, iid):
     """(module, key, owner id of its figures) of an item: its script's own folder, hash and texts."""
     if kind == "investigation":
         import investigations as m; return m, iid, iid
+    if kind == "unit":
+        import units as m; return m, iid, iid
+    if kind == "guide":
+        import guides as m; return m, iid, iid
     if kind in ("sovella", "koe"):
         import practice as m
         key = iid if kind == "sovella" or m.is_exam(iid) else iid + m.EXAM
@@ -891,6 +896,9 @@ def item_view(kind, iid, lang, src):
         figs = figcat.module_from(code).FIGURES
         out.append((n, sorted(figs)))
         out += [(f"figure {name}", hashlib.sha256(figs[name]().encode()).hexdigest()) for name in sorted(figs) if not approved(f"{oid}/{name}")]
+    if kind == "unit" and m.has_tasks(key, lang):          # the unit's own task set is reviewed with it: no carry over a change in it
+        import practice
+        out.append(("sovella", practice.content_hash(m.task_key(key), lang, read=src.read)))
     return out
 
 
@@ -943,9 +951,9 @@ def verify_item_carries(kind, iid, lang):
 
 def items(lang):
     """[(kind, id)] of every item of a language that can carry."""
-    import investigations, practice
+    import investigations, practice, units, guides
     return [("investigation", i) for i in investigations.ids(lang)] + [("sovella", c) for c in practice.courses_with(lang)] + \
-           [("koe", c) for c in practice.exams(lang)]
+           [("koe", c) for c in practice.exams(lang)] + [("unit", u) for u in units.ids(lang)] + [("guide", g) for g in guides.ids(lang)]
 
 
 SVG_BLOCK = re.compile(r'<svg\b[^>]*\bdata-fig="([^"]+)".*?</svg>', re.S)
@@ -1426,7 +1434,8 @@ if __name__ == "__main__":
             except ValueError as e: print("ERROR", e); bad += 1; continue
             for p in ("lesson", "exercises"):
                 for e in verify_carries(f, p): print("ERROR", e); bad += 1
-        for lang in i18n.languages():
+        import units as _units
+        for lang in sorted(set(i18n.languages()) | set(_units.languages())):
             for kind, iid in items(lang):
                 for e in verify_item_carries(kind, iid, lang): print("ERROR", e); bad += 1
         for e in verify_baseline(): print("ERROR", e); bad += 1
