@@ -2,95 +2,138 @@
 
 > **Miksi** leivänpaahtimen vastuslangat hehkuvat punaisina, mutta paahtimen johto pysyy viileänä, vaikka molempien läpi kulkee sama virta?
 
-<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: keittiön työtaso laattaseinää vasten. Työtasolla on metallinen leivänpaahdin. Paahtimen kahdesta aukosta näkyy punaoranssina hehkuvia vastuslankoja. Niiden yllä väreilee kuuma ilma. Paahtimesta kulkee musta johto työtason yli seinän pistorasiaan. Johto on tavallisen värinen eikä hehku." class="fig-hero" style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy66h-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy66h-cab" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy66h-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a96a3"/><stop offset="0.25" stop-color="#ffffff"/><stop offset="0.6" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient><radialGradient id="fy66h-glow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ffc078"/><stop offset="0.55" stop-color="#e8590c" stop-opacity="0.8"/><stop offset="1" stop-color="#e8590c" stop-opacity="0"/></radialGradient></defs>
-  <rect x="0" y="0" width="1200" height="430" fill="#f6f1e6"/>
-  <line x1="0" y1="0" x2="0" y2="430" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="75" y1="0" x2="75" y2="430" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="150" y1="0" x2="150" y2="430" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="225" y1="0" x2="225" y2="430" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="300" y1="0" x2="300" y2="430" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="375" y1="0" x2="375" y2="430" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="450" y1="0" x2="450" y2="430" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="525" y1="0" x2="525" y2="430" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="600" y1="0" x2="600" y2="430" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="675" y1="0" x2="675" y2="430" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="750" y1="0" x2="750" y2="430" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="825" y1="0" x2="825" y2="430" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="900" y1="0" x2="900" y2="430" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="975" y1="0" x2="975" y2="430" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1050" y1="0" x2="1050" y2="430" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1125" y1="0" x2="1125" y2="430" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1200" y1="0" x2="1200" y2="430" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus, lähikuva: leivänpaahdin on keittiön työtasolla. Se näkyy yläviistosta. Paahtimen kahdessa aukossa hehkuvat punaoranssit vastuslangat. Niiden yllä väreilee kuuma ilma. Etualalla paahtimen musta johto kulkee työtason yli seinän pistorasiaan. Johto on tavallisen värinen. Se ei hehku." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy66h-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy66h-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a96a3"/><stop offset="0.25" stop-color="#ffffff"/><stop offset="0.6" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient><linearGradient id="fy66h-topface" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dfe4e9"/><stop offset="1" stop-color="#f4f6f8"/></linearGradient><radialGradient id="fy66h-glow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ffc078"/><stop offset="0.55" stop-color="#e8590c" stop-opacity="0.8"/><stop offset="1" stop-color="#e8590c" stop-opacity="0"/></radialGradient></defs>
+  <rect x="0" y="0" width="1200" height="380" fill="#f6f1e6"/>
+  <line x1="0" y1="0" x2="0" y2="380" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="95" y1="0" x2="95" y2="380" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="190" y1="0" x2="190" y2="380" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="285" y1="0" x2="285" y2="380" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="380" y1="0" x2="380" y2="380" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="475" y1="0" x2="475" y2="380" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="570" y1="0" x2="570" y2="380" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="665" y1="0" x2="665" y2="380" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="760" y1="0" x2="760" y2="380" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="855" y1="0" x2="855" y2="380" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="950" y1="0" x2="950" y2="380" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1045" y1="0" x2="1045" y2="380" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1140" y1="0" x2="1140" y2="380" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
   <line x1="0" y1="0" x2="1200" y2="0" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="0" y1="75" x2="1200" y2="75" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="0" y1="150" x2="1200" y2="150" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="0" y1="225" x2="1200" y2="225" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="0" y1="300" x2="1200" y2="300" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="0" y1="375" x2="1200" y2="375" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <rect x="-10" y="430" width="1220" height="40" rx="4" fill="url(#fy66h-top)" stroke="#1f2933" stroke-width="3"/>
-  <path d="M0,440 q305,-2.5 610,0 t590,0" fill="none" stroke="#a97a35" stroke-width="1.5" stroke-linejoin="round" stroke-opacity="0.6"/>
-  <path d="M0,450 q305,-2.5 610,0 t590,0" fill="none" stroke="#a97a35" stroke-width="1.5" stroke-linejoin="round" stroke-opacity="0.6"/>
-  <path d="M0,460 q305,-2.5 610,0 t590,0" fill="none" stroke="#a97a35" stroke-width="1.5" stroke-linejoin="round" stroke-opacity="0.6"/>
-  <rect x="0" y="470" width="1200" height="130" fill="url(#fy66h-cab)" stroke="#1f2933" stroke-width="3"/>
-  <line x1="300" y1="470" x2="300" y2="600" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="230" y="500" width="26" height="8" rx="3" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
-  <rect x="344" y="500" width="26" height="8" rx="3" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
-  <line x1="600" y1="470" x2="600" y2="600" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="530" y="500" width="26" height="8" rx="3" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
-  <rect x="644" y="500" width="26" height="8" rx="3" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
-  <line x1="900" y1="470" x2="900" y2="600" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="830" y="500" width="26" height="8" rx="3" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
-  <rect x="944" y="500" width="26" height="8" rx="3" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
-  <rect x="978" y="252" width="124" height="124" rx="14" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
-  <circle cx="1040" cy="314" r="44" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
-  <circle cx="1024" cy="314" r="6" fill="#1f2933"/>
-  <circle cx="1056" cy="314" r="6" fill="#1f2933"/>
-  <rect x="1016" y="296" width="48" height="52" rx="10" fill="#6c757d" stroke="#1f2933" stroke-width="3"/>
-  <path d="M1040,348 C1040,410 1020,424 960,428 C890,432 850,424 816,404" fill="none" stroke="#1f2933" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M300,430 L300,230 Q300,180 350,180 L770,180 Q820,180 820,230 L820,430 Z" fill="url(#fy66h-steel)" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <rect x="310" y="420" width="500" height="14" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="330" y="430" width="40" height="10" rx="3" fill="#1f2933"/>
-  <rect x="750" y="430" width="40" height="10" rx="3" fill="#1f2933"/>
-  <rect x="816" y="270" width="34" height="18" rx="5" fill="#1f2933"/>
-  <circle cx="560" cy="350" r="26" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
-  <line x1="560" y1="350" x2="576" y2="334" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <ellipse cx="440" cy="182" rx="124" ry="38" fill="url(#fy66h-glow)"/>
-  <rect x="370" y="173" width="140" height="18" rx="9" fill="#1f2933"/>
-  <path d="M384,178 q4,4 0,8" fill="none" stroke="#c92a2a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M387,181 q3,3 0,5" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M402,178 q4,4 0,8" fill="none" stroke="#c92a2a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M405,181 q3,3 0,5" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M420,178 q4,4 0,8" fill="none" stroke="#c92a2a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M423,181 q3,3 0,5" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M438,178 q4,4 0,8" fill="none" stroke="#c92a2a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M441,181 q3,3 0,5" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M456,178 q4,4 0,8" fill="none" stroke="#c92a2a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M459,181 q3,3 0,5" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M474,178 q4,4 0,8" fill="none" stroke="#c92a2a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M477,181 q3,3 0,5" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M492,178 q4,4 0,8" fill="none" stroke="#c92a2a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M495,181 q3,3 0,5" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-  <ellipse cx="670" cy="182" rx="124" ry="38" fill="url(#fy66h-glow)"/>
-  <rect x="600" y="173" width="140" height="18" rx="9" fill="#1f2933"/>
-  <path d="M614,178 q4,4 0,8" fill="none" stroke="#c92a2a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M617,181 q3,3 0,5" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M632,178 q4,4 0,8" fill="none" stroke="#c92a2a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M635,181 q3,3 0,5" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M650,178 q4,4 0,8" fill="none" stroke="#c92a2a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M653,181 q3,3 0,5" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M668,178 q4,4 0,8" fill="none" stroke="#c92a2a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M671,181 q3,3 0,5" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M686,178 q4,4 0,8" fill="none" stroke="#c92a2a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M689,181 q3,3 0,5" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M704,178 q4,4 0,8" fill="none" stroke="#c92a2a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M707,181 q3,3 0,5" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M722,178 q4,4 0,8" fill="none" stroke="#c92a2a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M725,181 q3,3 0,5" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M405,156 q-12,-20 0,-40 t0,-40 t0,-40" fill="none" stroke="#e8590c" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
-  <path d="M475,156 q-12,-20 0,-40 t0,-40 t0,-40" fill="none" stroke="#e8590c" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
-  <path d="M635,156 q-12,-20 0,-40 t0,-40 t0,-40" fill="none" stroke="#e8590c" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
-  <path d="M705,156 q-12,-20 0,-40 t0,-40 t0,-40" fill="none" stroke="#e8590c" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
+  <line x1="0" y1="95" x2="1200" y2="95" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="190" x2="1200" y2="190" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="285" x2="1200" y2="285" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="380" x2="1200" y2="380" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="-10" y="380" width="1220" height="230" rx="4" fill="url(#fy66h-top)" stroke="#1f2933" stroke-width="3"/>
+  <path d="M0,437.5 q305,-14 610,0 t590,0" fill="none" stroke="#a97a35" stroke-width="1.5" stroke-linejoin="round" stroke-opacity="0.6"/>
+  <path d="M0,495 q305,-14 610,0 t590,0" fill="none" stroke="#a97a35" stroke-width="1.5" stroke-linejoin="round" stroke-opacity="0.6"/>
+  <path d="M0,552.5 q305,-14 610,0 t590,0" fill="none" stroke="#a97a35" stroke-width="1.5" stroke-linejoin="round" stroke-opacity="0.6"/>
+  <line x1="0" y1="380" x2="1200" y2="380" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="972" y="150" width="132" height="132" rx="14" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <circle cx="1038" cy="216" r="46" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="1010" y="190" width="56" height="62" rx="12" fill="#6c757d" stroke="#1f2933" stroke-width="3"/>
+  <path d="M130,330 L770,330 L770,600 L130,600 Z" fill="url(#fy66h-steel)" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M130,330 L770,330 L700.0,170 L200.0,170 Z" fill="url(#fy66h-topface)" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linejoin="round"/>
+  <rect x="766" y="430" width="40" height="24" rx="6" fill="#1f2933"/>
+  <circle cx="450" cy="500" r="34" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <line x1="450" y1="500" x2="472" y2="478" stroke="#1f2933" stroke-width="4" stroke-linecap="round"/>
+  <ellipse cx="450" cy="230" rx="330" ry="120" fill="url(#fy66h-glow)" fill-opacity="0.85"/>
+  <path d="M244.5,196 L655.5,196 L672,234 L228,234 Z" fill="#1f2933" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linejoin="round"/>
+  <path d="M254,201 L238,229" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M254,203 L238,227" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M272.5,201 L258.5,229" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M272.5,203 L258.5,227" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M291.5,201 L278.5,229" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M291.5,203 L278.5,227" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M310,201 L298.5,229" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M310,203 L298.5,227" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M328.5,201 L319,229" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M328.5,203 L319,227" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M347.5,201 L339,229" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M347.5,203 L339,227" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M366,201 L359,229" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M366,203 L359,227" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M384.5,201 L379.5,229" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M384.5,203 L379.5,227" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M403.5,201 L399.5,229" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M403.5,203 L399.5,227" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M422,201 L419.5,229" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M422,203 L419.5,227" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M440.5,201 L440,229" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M440.5,203 L440,227" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M459.5,201 L460,229" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M459.5,203 L460,227" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M478,201 L480.5,229" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M478,203 L480.5,227" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M496.5,201 L500.5,229" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M496.5,203 L500.5,227" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M515.5,201 L520.5,229" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M515.5,203 L520.5,227" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M534,201 L541,229" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M534,203 L541,227" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M552.5,201 L561,229" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M552.5,203 L561,227" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M571.5,201 L581,229" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M571.5,203 L581,227" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M590,201 L601.5,229" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M590,203 L601.5,227" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M608.5,201 L621.5,229" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M608.5,203 L621.5,227" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M627.5,201 L641.5,229" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M627.5,203 L641.5,227" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M646,201 L662,229" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M646,203 L662,227" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M216,262 L684,262 L702.5,304 L197.5,304 Z" fill="#1f2933" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linejoin="round"/>
+  <path d="M226.5,267 L209,299" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M226.5,269 L209,297" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M247.5,267 L232,299" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M247.5,269 L232,297" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M269,267 L255,299" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M269,269 L255,297" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M290.5,267 L278,299" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M290.5,269 L278,297" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M311.5,267 L300.5,299" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M311.5,269 L300.5,297" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M333,267 L323.5,299" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M333,269 L323.5,297" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M354,267 L346.5,299" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M354,269 L346.5,297" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M375.5,267 L369.5,299" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M375.5,269 L369.5,297" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M397,267 L392.5,299" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M397,269 L392.5,297" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M418,267 L415.5,299" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M418,269 L415.5,297" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M439.5,267 L438.5,299" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M439.5,269 L438.5,297" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M460.5,267 L461.5,299" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M460.5,269 L461.5,297" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M482,267 L484.5,299" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M482,269 L484.5,297" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M503,267 L507.5,299" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M503,269 L507.5,297" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M524.5,267 L530.5,299" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M524.5,269 L530.5,297" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M546,267 L553.5,299" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M546,269 L553.5,297" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M567,267 L576.5,299" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M567,269 L576.5,297" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M588.5,267 L599.5,299" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M588.5,269 L599.5,297" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M609.5,267 L622,299" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M609.5,269 L622,297" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M631,267 L645,299" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M631,269 L645,297" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M652.5,267 L668,299" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M652.5,269 L668,297" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M673.5,267 L691,299" fill="none" stroke="#c92a2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M673.5,269 L691,297" fill="none" stroke="#ffc078" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M270,162 q-12,-20 0,-40 t0,-40 t0,-40" fill="none" stroke="#e8590c" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
+  <path d="M360,162 q-12,-20 0,-40 t0,-40 t0,-40" fill="none" stroke="#e8590c" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
+  <path d="M450,162 q-12,-20 0,-40 t0,-40 t0,-40" fill="none" stroke="#e8590c" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
+  <path d="M540,162 q-12,-20 0,-40 t0,-40 t0,-40" fill="none" stroke="#e8590c" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
+  <path d="M630,162 q-12,-20 0,-40 t0,-40 t0,-40" fill="none" stroke="#e8590c" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
+  <path d="M770,548 C880,580 880,470 960,468 C1040,466 1040,360 1038,252" fill="none" stroke="#1f2933" stroke-width="18" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M770,548 C880,580 880,470 960,468 C1040,466 1040,360 1038,252" fill="none" stroke="#6b7480" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.7"/>
 </svg>
 
 ## Ydinajatus
