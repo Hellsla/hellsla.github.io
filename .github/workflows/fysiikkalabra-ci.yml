@@ -10,8 +10,9 @@
 #   plan                    which pages the browser checks test, and in how many jobs (scripts/ci_scope.py, ci_parallel.py plan)
 #   checks-1, -2, -3        every check that is not one of the three browser checks, in their old order, in three jobs
 #   sims, layout, inquiry   the browser checks: scripts/ci_parallel.py runs the unchanged test_sims.py, check_layout.py
-#                           and test_inquiry.py page by page on every core; a full run has four simulation jobs and
-#                           one layout job for each width
+#                           and test_inquiry.py page by page, two at a time (each browser keeps the cores it had
+#                           when it ran alone); a full run has eight simulation jobs, two layout jobs for each
+#                           width and four inquiry jobs
 #   qa                      the required check: passes only when every job above passed and the browser jobs' reports
 #                           show that every planned page was tested exactly once and passed (ci_parallel.py gate)
 # The checks need about 20 core-hours for the whole site. As one job on one core a full run did not fit into the six
@@ -191,7 +192,7 @@ jobs:
         with: { node-version: "22" }
       - run: pip install markdown playwright numpy && playwright install --with-deps chromium
       - run: python scripts/build.py --all
-      - name: simulations (scripts/test_sims.py page by page on every core; scripts/ci_parallel.py)
+      - name: simulations (scripts/test_sims.py page by page, two at a time; scripts/ci_parallel.py)
         env: { PAGES: "${{ needs.plan.outputs.pages }}" }
         run: python scripts/ci_parallel.py sims --pages "$PAGES" --shard "${{ matrix.shard }}" --report "${{ runner.temp }}/report/sims-${{ strategy.job-index }}.json"
       - uses: actions/upload-artifact@v4
@@ -213,14 +214,14 @@ jobs:
         with: { node-version: "22" }
       - run: pip install markdown playwright numpy && playwright install --with-deps chromium
       - run: python scripts/build.py --all
-      - name: inquiry tests (scripts/test_inquiry.py <id> lesson by lesson on every core, each worker in its own work tree; scripts/ci_parallel.py)
+      - name: inquiry tests (scripts/test_inquiry.py <id> lesson by lesson, two at a time, each worker in its own work tree; scripts/ci_parallel.py)
         env: { PAGES: "${{ needs.plan.outputs.pages }}" }
         run: python scripts/ci_parallel.py inquiry --pages "$PAGES" --shard "${{ matrix.shard }}" --report "${{ runner.temp }}/report/inquiry-${{ strategy.job-index }}.json"
       - uses: actions/upload-artifact@v4
         if: always()
         with: { name: "report-inquiry-${{ strategy.job-index }}", path: "${{ runner.temp }}/report", if-no-files-found: error, retention-days: 14 }
   layout:
-    name: "layout ${{ matrix.job.name }} px: every published page at eight widths (640 = 1280 px at 200 % zoom), closed, with hints and solutions open and with everything open; no overflow, overlap, empty column beside an opened card or a figure, cards out of order, over-long lines, small text or controls, or headings under the sticky navigation (NOTES.md §8)"
+    name: "layout ${{ matrix.job.name }}: every published page at eight widths (640 = 1280 px at 200 % zoom), closed, with hints and solutions open and with everything open; no overflow, overlap, empty column beside an opened card or a figure, cards out of order, over-long lines, small text or controls, or headings under the sticky navigation (NOTES.md §8)"
     needs: plan
     if: needs.plan.outputs.pages != ''
     strategy: { fail-fast: false, matrix: { job: "${{ fromJSON(needs.plan.outputs.layout) }}" } }
@@ -231,9 +232,9 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - run: pip install markdown playwright numpy && playwright install --with-deps chromium
-      - name: layout (scripts/check_layout.py --site page by page on every core; scripts/ci_parallel.py)
+      - name: layout (scripts/check_layout.py --site page by page, two at a time; scripts/ci_parallel.py)
         env: { PAGES: "${{ needs.plan.outputs.pages }}" }
-        run: python scripts/ci_parallel.py layout --widths "${{ matrix.job.widths }}" --pages "$PAGES" --report "${{ runner.temp }}/report/layout-${{ strategy.job-index }}.json"
+        run: python scripts/ci_parallel.py layout --widths "${{ matrix.job.widths }}" --pages "$PAGES" --shard "${{ matrix.job.shard }}" --report "${{ runner.temp }}/report/layout-${{ strategy.job-index }}.json"
       - uses: actions/upload-artifact@v4
         if: always()
         with: { name: "report-layout-${{ strategy.job-index }}", path: "${{ runner.temp }}/report", if-no-files-found: error, retention-days: 14 }

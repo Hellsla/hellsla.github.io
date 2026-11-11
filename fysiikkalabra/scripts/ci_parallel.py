@@ -21,7 +21,12 @@ are run, not what they check:
             run takes from them the pages scripts/ci_scope.py names
   shard     --shard i/n takes every n-th unit of the sorted universe, starting from the i-th: the n jobs of a matrix
             test each unit exactly once
-  workers   N units at a time (default: the machine's cores), each in its own process and browser
+  workers   N units at a time, each in its own process and browser. Default: half the machine's cores, because the
+            checks wait fixed times for a page to settle and the simulations run in real time: one test's browser used
+            0.9-1.3 cores when it had the whole four-core runner (measured 2026-11-11), so two at a time leave every
+            browser the room it had alone. With four at a time the runner was saturated (3.8 of 4 cores) and inquiry
+            tests that pass alone failed (fy4-14, fy8-12: "simState gives ..."). More speed comes from more jobs,
+            never from more workers than that.
 
 A unit passes when its script exits 0 AND printed its verdict line for every page file it had to test (a page a script
 skipped without a word fails here). Nothing is retried to turn a failure into a pass. One thing is run again, to judge
@@ -43,7 +48,7 @@ HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parent
 PY = sys.executable
 WIDTHS = "360 390 640 768 1024 1280 1440 1920"   # the eight widths of the layout check (NOTES.md §8)
-SIMS_SHARDS, SMALL = 4, 12                        # a full run's simulation jobs; up to SMALL pages run in one job per check
+SIMS_SHARDS, INQUIRY_SHARDS, LAYOUT_SHARDS, SMALL = 8, 4, 2, 12   # the jobs of a full run (layout: per width); up to SMALL pages run in one job per check
 SLOW = "slow: not judged"
 
 
@@ -117,7 +122,7 @@ def run(kind, args):
     ids, mine = select(units, args.pages, args.shard)
     widths = [int(w) for w in args.widths.split()] if kind == "layout" else [None]
     tasks = [(u, w) for w in widths for u in mine]
-    workers = max(1, min(args.workers or os.cpu_count() or 1, len(tasks) or 1))
+    workers = max(1, min(args.workers or (os.cpu_count() or 2) // 2, len(tasks) or 1))
     lock, results, t0, c0 = threading.Lock(), [], time.time(), cpu_seconds()
     tmp, top = None, None
     if kind == "inquiry" and workers > 1 and tasks:   # a folder of its own for every worker (see the docstring)
@@ -178,28 +183,31 @@ def run(kind, args):
         p = pathlib.Path(args.report); p.parent.mkdir(parents=True, exist_ok=True); p.write_text(json.dumps(report, indent=1))
     pages = sum(r["pages"] for r in results if not r["alone"])
     print(f"\n{kind} shard {args.shard}: {len(tasks)} units, {pages} page checks, {len(failed)} failed; {wall / 60:.1f} min wall, "
-          f"{cpu / 60:.1f} core-min, {workers} workers on {os.cpu_count()} cores"
+          f"{cpu / 60:.1f} core-min ({cpu / wall if wall else 0:.1f} of {os.cpu_count()} cores busy on average), {workers} workers"
           + (f"; {len(again)} units run again alone, {still} assertions still not judged" if again else ""))
     if failed: print("failed: " + " ".join(failed))
     sys.exit(1 if failed else 0)
 
 
 def plan(pages):
-    """The jobs of a run. A full run: SIMS_SHARDS simulation jobs, one layout job per width, one inquiry job.
-    A few pages: one job per check. No page: no browser job."""
+    """The jobs of a run. A full run: SIMS_SHARDS simulation jobs, LAYOUT_SHARDS layout jobs for each width,
+    INQUIRY_SHARDS inquiry jobs. A few pages: one job per check. No page: no browser job."""
     n = None if pages == "full" else len(pages.split())
     if n == 0: return {"sims": [], "layout": [], "inquiry": []}
-    small = n is not None and n <= SMALL
-    sims = 1 if small else SIMS_SHARDS if n is None else min(SIMS_SHARDS, math.ceil(n / 40))
-    layout = [{"name": "all", "widths": WIDTHS}] if small else [{"name": w, "widths": w} for w in WIDTHS.split()]
-    return {"sims": [f"{i}/{sims}" for i in range(sims)], "layout": layout, "inquiry": ["0/1"]}
+    if n is not None and n <= SMALL:
+        return {"sims": ["0/1"], "layout": [{"name": "all widths", "widths": WIDTHS, "shard": "0/1"}], "inquiry": ["0/1"]}
+    sims = SIMS_SHARDS if n is None else min(SIMS_SHARDS, math.ceil(n / 12))
+    inq = INQUIRY_SHARDS if n is None else min(INQUIRY_SHARDS, math.ceil(n / 30))
+    lay = LAYOUT_SHARDS if n is None else min(LAYOUT_SHARDS, math.ceil(n / 140))
+    return {"sims": [f"{i}/{sims}" for i in range(sims)], "inquiry": [f"{i}/{inq}" for i in range(inq)],
+            "layout": [{"name": f"{w} px {i}/{lay}", "widths": w, "shard": f"{i}/{lay}"} for w in WIDTHS.split() for i in range(lay)]}
 
 
 def gate(args):
     want, bad, rows = plan(args.pages), [], []
     reports = [json.loads(f.read_text()) for f in sorted(pathlib.Path(args.dir).rglob("*.json"))]
     groups = [("sims", None, want["sims"]), ("inquiry", None, want["inquiry"])] + \
-             [("layout", int(w), ["0/1"]) for j in want["layout"] for w in j["widths"].split()]
+             [("layout", int(w), [j["shard"] for j in want["layout"] if w in j["widths"].split()]) for w in WIDTHS.split() if want["layout"]]
     for kind, width, shards in groups:
         name = kind + (f" {width} px" if width else "")
         rs = [r for r in reports if r["kind"] == kind and (width is None or width in r["widths"])]

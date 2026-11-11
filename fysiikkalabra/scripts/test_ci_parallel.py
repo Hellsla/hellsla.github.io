@@ -22,11 +22,13 @@ def check(name, ok, detail=""):
 
 # the plan
 full, few, many, none = cp.plan("full"), cp.plan("fy3-4 fy1-1"), cp.plan(" ".join(f"p-{i}" for i in range(60))), cp.plan("")
-check("a full run has every width once, one job each", " ".join(j["widths"] for j in full["layout"]) == cp.WIDTHS and len(full["layout"]) == 8)
+check("a full run has every width in LAYOUT_SHARDS jobs, shards 0/n … n-1/n", [(j["widths"], j["shard"]) for j in full["layout"]] == [(w, f"{i}/{cp.LAYOUT_SHARDS}") for w in cp.WIDTHS.split() for i in range(cp.LAYOUT_SHARDS)])
+check("a full run's inquiry shards are 0/n … n-1/n", full["inquiry"] == [f"{i}/{cp.INQUIRY_SHARDS}" for i in range(cp.INQUIRY_SHARDS)])
+check("job names of a matrix are unique", len({j["name"] for j in full["layout"]}) == len(full["layout"]))
 check("the widths are the eight of NOTES.md §8", cp.WIDTHS.split() == "360 390 640 768 1024 1280 1440 1920".split())
 check("a full run's simulation shards are 0/n … n-1/n", full["sims"] == [f"{i}/{cp.SIMS_SHARDS}" for i in range(cp.SIMS_SHARDS)])
-check("a few pages: one job per check, all eight widths in it", few == {"sims": ["0/1"], "layout": [{"name": "all", "widths": cp.WIDTHS}], "inquiry": ["0/1"]})
-check("many pages: every width still planned", sorted(w for j in many["layout"] for w in j["widths"].split()) == sorted(cp.WIDTHS.split()) and len(many["sims"]) == 2)
+check("a few pages: one job per check, all eight widths in it", few == {"sims": ["0/1"], "layout": [{"name": "all widths", "widths": cp.WIDTHS, "shard": "0/1"}], "inquiry": ["0/1"]})
+check("many pages: every width still planned", sorted(w for j in many["layout"] for w in j["widths"].split()) == sorted(cp.WIDTHS.split()) and len(many["sims"]) == 5 and len(many["inquiry"]) == 2)
 check("no page: no browser job", none == {"sims": [], "layout": [], "inquiry": []})
 
 # the shards: every unit exactly once, for any number of shards
@@ -77,11 +79,13 @@ def unit(i, w=None, ok=True, alone=False): return {"id": i, "width": w, "rc": 0 
 
 def reports(pages="a-1 a-2 a-3"):
     uni = sorted(pages.split()); p = cp.plan(pages)
-    out = {f"sims-{k}": {"kind": "sims", "shard": s, "pages": pages, "widths": [], "universe": uni, "units": [unit(i) for i in uni[k::len(p["sims"])]], "wall": 5} for k, s in enumerate(p["sims"])}
-    out["inquiry-0"] = {"kind": "inquiry", "shard": "0/1", "pages": pages, "widths": [], "universe": uni, "units": [unit(i) for i in uni], "wall": 5}
+    out = {}
+    for kind in ("sims", "inquiry"):
+        for k, sh in enumerate(p[kind]):
+            out[f"{kind}-{k}"] = {"kind": kind, "shard": sh, "pages": pages, "widths": [], "universe": uni, "units": [unit(i) for i in uni[k::len(p[kind])]], "wall": 5}
     for k, j in enumerate(p["layout"]):
-        ws = [int(w) for w in j["widths"].split()]
-        out[f"layout-{k}"] = {"kind": "layout", "shard": "0/1", "pages": pages, "widths": ws, "universe": uni, "units": [unit(i, w) for w in ws for i in uni], "wall": 5}
+        ws = [int(w) for w in j["widths"].split()]; i0, n = (int(x) for x in j["shard"].split("/"))
+        out[f"layout-{k}"] = {"kind": "layout", "shard": j["shard"], "pages": pages, "widths": ws, "universe": uni, "units": [unit(i, w) for w in ws for i in uni[i0::n]], "wall": 5}
     return out
 
 
@@ -107,10 +111,13 @@ rc, text = gate({}, pages=""); check("gate: no page changed and no report passes
 rc, text = gate(reports(), pages=""); check("gate: a report although nothing was planned fails", rc == 1)
 rc, text = gate(reports(), pages="a-1 a-2 a-3 a-4"); check("gate: reports of another page list fail", rc == 1 and "another page list" in text)
 big = " ".join(f"p-{i:02}" for i in range(60))
-rc, text = gate(reports(big), big); check("gate: two simulation shards and a layout job per width pass", rc == 0, text[-300:])
-r = reports(big); del r["sims-1"]; rc, text = gate(r, big); check("gate: a missing shard fails", rc == 1 and "sims: reports of shards ['0/2']" in text)
+rc, text = gate(reports(big), big); check("gate: five simulation shards, two inquiry shards and a layout job per width pass", rc == 0, text[-300:])
+r = reports(big); del r["sims-1"]; rc, text = gate(r, big); check("gate: a missing shard fails", rc == 1 and "sims: reports of shards ['0/5', '2/5', '3/5', '4/5']" in text, text[-300:])
 r = reports(big); r["sims-1"]["universe"] = r["sims-1"]["universe"][:-1]; rc, text = gate(r, big); check("gate: jobs that list different pages fail", rc == 1 and "different pages" in text)
 r = reports("full"); rc, text = gate(r, "full"); check("gate: a full run whose list is not the checkout's fails", rc == 1 and "the checkout has" in text)
+huge = " ".join(f"p-{i:03}" for i in range(300))
+rc, text = gate(reports(huge), huge); check("gate: two layout shards per width pass", rc == 0 and len(cp.plan(huge)["layout"]) == 16, text[-300:])
+r = reports(huge); del r["layout-5"]; rc, text = gate(r, huge); check("gate: a missing layout shard of one width fails", rc == 1 and "layout 640 px: reports of shards ['0/2']" in text, text[-300:])
 
 print(f"\n{passed} passed, {failed} failed")
 sys.exit(1 if failed else 0)
