@@ -12,10 +12,10 @@ fy1-1/scale-marks|5|4|5|5|PIDA|Tehtäväversio, josta eksponentit luetaan.|
 fy1-2/hero|5|4|5|4|KEVYT|Hyvä kuva, mutta lähes sama aihe kuin fy1-5/hero (Aurinko, planeetat, luotain): moduulisivun laatat sekoittuvat.|
 fy1-2/quantity|5|5|5|5|PIDA|Sarjan malliesimerkki: mittaus ja merkintä samassa kuvassa, mittakaavassa.|
 fy1-2/prefixes|5|5|5|5|PIDA|Etuliiteketju luettavissa yhdellä silmäyksellä.|
-fy1-2/conversion|5|4|3|5|KEVYT|Alaosan kolme riviä ovat eri tavoin sisennettyjä; "= 1 AU" jää irralleen.|
-fy1-2/ruler-read|5|5|4|5|KEVYT|Yksikkö "cm" leijuu kaukana oikeassa alakulmassa; kuuluu asteikon päähän.|
+fy1-2/conversion|5|4|3|5|KEVYT|Alaosan kolme riviä ovat eri tavoin sisennettyjä; "= 1 AU" jää irralleen.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11)
+fy1-2/ruler-read|5|5|4|5|KEVYT|Yksikkö "cm" leijuu kaukana oikeassa alakulmassa; kuuluu asteikon päähän.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11)
 fy1-2/tap-bucket|5|4|5|5|PIDA|Tunnistettavat materiaalit, ei lukuarvoja.|
-fy1-2/cyclist|5|4|3|4|KEVYT|Pyöräilijän vartalo on viivahahmo, muu kuva täytettyä kuvitusta; hahmo erottuu heikompana kuin fy4- ja fy5-avauskuvien ihmiset.|
+fy1-2/cyclist|5|4|3|4|KEVYT|Pyöräilijän vartalo on viivahahmo, muu kuva täytettyä kuvitusta; hahmo erottuu heikompana kuin fy4- ja fy5-avauskuvien ihmiset.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11)
 fy1-3/hero|5|5|5|5|PIDA|Kymmenen kelloa ja eri lukemat kertovat hajonnan sanomatta sanaakaan.|
 fy1-3/paper-stack|5|4|5|5|PIDA|
 fy1-3/pendulum-timing|5|4|5|5|PIDA|
