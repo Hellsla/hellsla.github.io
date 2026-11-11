@@ -427,6 +427,57 @@ rv.chapter_titles.cache_clear()
 tex = next(t for t in rv.chapter_titles() if "\\" in t)            # a current title with LaTeX, e.g. "Teho: $P = \\Delta E/\\Delta t$"
 expect("a JSON line's escaped LaTeX title counts as a current chapter reference",
        rv._chapter_refs_renamed('"feedback": "Ks. (luku *Vanha nimi*)."', '"feedback": "Ks. (luku *' + tex.replace("\\", "\\\\") + '*)."'))
+# a simulation's change that only places or draws (teacher 2026-11-11): the check, and the recorded approval it needs
+_sim = """new p5((p) => {
+  const g = 9.81, CH = { x0: 60 }, gx1 = 500;
+  let v = 0, running = false, fh = 13;
+  const restart = () => { v = 0; running = false; };
+  p.draw = () => {
+    if (running) v += g * Math.min(p.deltaTime, 100) / 1000;
+    for (const e of [0, 1000]) { p.stroke(60); p.line(CH.x0 - 5, Y(e), CH.x0, Y(e)); lab(`$${tj(e)}$`, CH.x0 - 8, Y(e) + fh * 0.36, 'r', fh); }
+    lab('$x\\\\ (\\\\text{m})$', gx1 + 24, Y(0) + fh * 0.35, 'l', fh, INKC);
+    window.simState = { v, running };
+  };
+});"""
+_tick = "    for (const e of [0, 1000]) { p.stroke(60); p.line(CH.x0 - 5, Y(e), CH.x0, Y(e)); lab(`$${tj(e)}$`, CH.x0 - 8, Y(e) + fh * 0.36, 'r', fh); }"
+_axis = "    lab('$x\\\\ (\\\\text{m})$', gx1 + 24, Y(0) + fh * 0.35, 'l', fh, INKC);"
+assert _tick in _sim and _axis in _sim
+_tick2 = """    for (const e of [0, 1000]) {   // the number ends nearer the axis where it would not fit
+      p.textSize(fh); const tickS = `$${tj(e)}$`, tickX = Math.min(Math.max(CH.x0 - 8, 4 + p.textWidth(tickS)), CH.x0 - 2);
+      if (tickX <= CH.x0 - 8) { p.stroke(60); p.line(CH.x0 - 5, Y(e), CH.x0, Y(e)); }
+      lab(tickS, tickX, Y(e) + fh * 0.36, 'r', fh);
+    }"""
+_axis2 = """    {   // above the axis end where it would cross the edge
+      p.textSize(fh); const axS = '$x\\\\ (\\\\text{m})$', axW = p.textWidth(axS), axFits = gx1 + 24 + axW <= 594;
+      lab(axS, axFits ? gx1 + 24 : 594 - axW, axFits ? Y(0) + fh * 0.35 : Y(0) - 10, 'l', fh, INKC);
+    }"""
+po = rv.presentation_only
+expect("presentation-only: a label moved", po(_sim, _sim.replace("gx1 + 24, Y(0)", "gx1 + 12, Y(0)")))
+expect("presentation-only: a tick number placed by its measured width, with new local names", po(_sim, _sim.replace(_tick, _tick2)))
+expect("presentation-only: an axis name placed by its measured width", po(_sim, _sim.replace(_axis, _axis2)))
+expect("presentation-only: both placements at once", po(_sim, _sim.replace(_tick, _tick2).replace(_axis, _axis2)))
+expect("not presentation-only: a constant of the model changed", not po(_sim, _sim.replace("g = 9.81", "g = 9.0")))
+expect("not presentation-only: the integration changed", not po(_sim, _sim.replace("v += g *", "v += 2 * g *")))
+expect("not presentation-only: the state the sim reports changed", not po(_sim, _sim.replace("{ v, running }", "{ v, running, g }")))
+expect("not presentation-only: a drawing line that also sets state", not po(_sim, _sim.replace(_axis, _axis + " running = false;")))
+expect("not presentation-only: a drawing line that calls the model", not po(_sim, _sim.replace(_axis, _axis + " restart();")))
+expect("not presentation-only: a new local that takes the name of an existing one", not po(_sim, _sim.replace(_axis, "    { const v = 3; lab('$x$', v, 0, 'l', fh, INKC); }")))
+expect("not presentation-only: a function defined in the change", not po(_sim, _sim.replace(_axis, "    const f2 = () => 1; " + _axis.strip())))
+expect("not presentation-only: a comment alone (that is the category comments)", not po(_sim, _sim.replace(_axis, _axis + "   // the axis name")))
+expect("not presentation-only: no change", not po(_sim, _sim))
+_new = _sim.replace(_axis, _axis2); _rows = rv.presentation_rows
+try:
+    rv.presentation_rows = lambda: set()
+    expect("presentation-only needs its recorded approval: without the row the change is not approved", not rv.presentation_approved("assets/sims/x/sim.js", _sim, _new))
+    rv.presentation_rows = lambda: {("assets/sims/x/sim.js", rv._pres_hash(_sim), rv._pres_hash(_new))}
+    expect("... with the row of exactly this change it is", rv.presentation_approved("assets/sims/x/sim.js", _sim, _new))
+    expect("... a row does not cover another file", not rv.presentation_approved("assets/sims/y/sim.js", _sim, _new))
+    expect("... nor a later edit of the same file", not rv.presentation_approved("assets/sims/x/sim.js", _sim, _new.replace("594", "590")))
+    _bad = _sim.replace("g = 9.81", "g = 9.0"); rv.presentation_rows = lambda: {("assets/sims/x/sim.js", rv._pres_hash(_sim), rv._pres_hash(_bad))}
+    expect("... and a row cannot approve a change of the model", not rv.presentation_approved("assets/sims/x/sim.js", _sim, _bad))
+finally: rv.presentation_rows = _rows
+expect("presentation-only: science and pedagogy carry over, the visual reviewer looks", rv.RULES["presentation-only"] == ("none", "none", "delta"))
+expect("a simulation change without approval still needs the full science and pedagogy reviews", rv.RULES["simulation"] == ("full", "full", "delta"))
 expect("real project untouched", snapshot() == REAL)
 print("\n" + ("all review tests passed" if not failures else f"{len(failures)} FAILED: " + ", ".join(failures)))
 sys.exit(1 if failures else 0)
