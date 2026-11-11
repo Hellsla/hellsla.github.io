@@ -1,6 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: d31ac21fe18b06ba
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: c82a3b21eb6adbee
+
+Mode: delta (sim.js label-row measurement; lesson.md figures teacher-approved)
 
 ## Blocking
 - none
@@ -9,5 +10,7 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff sin
 - none
 
 ## Checked
-- Rendered fy1-1 scale ladder (10^n m labels, width 96 on 100 px pitch) and interactions panel (beta^- label) at 390 and 1000 px: no clipping or overlap; label reads beta^- -hajoaminen / beta^- decay; sqrt(10) rule and beta-minus notation read correctly.
-- Notation in changed passages is LaTeX with thin-space units; decimal comma/point correct for the language.
+- fy1-1-sim-390.png and fy1-1-sim-1280.png: label row (name and value per object) under the canvas, including the shrunken 390 px layout: no overlap or clipping, leader lines readable, dimmed far object legible, LaTeX values with thin-space units, bottom scale map intact, controls and readout intact.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4
