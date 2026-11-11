@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 72918ee2d2e88fc2
+CONTENT-HASH: 1d8ca5724c6f80b9
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy3-10 sim canvas, settling state: the bar still shows a (noisy) height and the gauge needle moves while the number is hidden; acceptable as the readout says the value is settling, optionally lighten the bar until settled.
-- [Minor] fy3-10 photo — the balloon burner photo sits beside the combined-gas-law paragraph and is only loosely tied to it — optional: place it next to the first mention of the open balloon mouth.
+- [Minor] fy3-10 sim, first moments after load or reset: the diff (`if (!top) [top, tStep] = scale(1)`) changes only the axis shown before the first settled average. No capture shows that moment, because the screenshots are taken after settling. I judged it from the source and the settled captures. The pressure axis is 0 to 1.5 in the settled state, so the 1, 2 or 5 · 10ⁿ scale rule gives a sensible starting axis. If it can be checked cheaply, glance at the first second after a reset to confirm the bar and gauge are not clipped.
+- [Minor] Carried over from the previous report and still open: the bar height and gauge needle keep moving while the number is hidden during settling. The readout says it is settling, so this is acceptable.
 
 ## Checked
-- delta review 2026-11-10 (measurement window reset, teacher's FY3 brief): opened en-fy3-10 settling captures (360 and 1280 px; en and fi-easy included in the set): readout 'mittaus tasaantuu…' with KaTeX '0,1 s' and upright unit, wraps cleanly at 360 px, number label above the bar hidden and axis unchanged, no clipping or overlap; settled captures consistent. Decimal comma on canvas is allowed.
-- delta review 2026-11-07 round 2 (follow-up consistency edits): inquiry.json "Etsi virhe" feedback for the pressure and volume rows: no longer calls the pascal the only correct unit; Pa with m³ or kPa with l, $1\,\text{kPa}\cdot\textsf{l} = 1\,\text{J}$, litre now \textsf{l} as elsewhere. Text-only (no capture of these feedbacks); KaTeX and wording checked in source, sentences consistent with the unchanged lesson text.
-- delta re-review 2026-11-07 (ml fix): verified in the inquiry.json diff that the Boyle recall prompt now writes $60\,\text{ml}$ and $30\,\text{ml}$ (thin space, upright unit, matching the feedback); nothing else changed. The earlier Major finding is resolved.
-- delta review 2026-11-07 (teacher's proofread replacement texts): the rewritten "missä"-paragraph, the new displays ($R$, $1\,\text{Pa}\cdot\text{m}^3 = … = 1\,\text{J}$, $1\,\text{kPa}\cdot\textsf{l} = 1\,\text{J}$) and the typeset kPa/mol values in inquiry and exit ticket; opened fy3-10-en-a-390 and -1280 (displays fit at 390 px, decimal separators right; the capture starts just below the $R$ display, which was read from source).
-- batch delta review: opened fy3-10-1280-0, fy3-10-360-0; photo loads, no clipping or horizontal overflow, credit line under the caption, alt text and caption natural English and consistent with the picture and the paragraph, no number with a unit in the new text.
+- Delta review: the diff is a single line in `lessons/FY3/fy3-10/sim.js` (the axis before the first settled average).
+- Opened `fy3-10-sim-390.png` and `fy3-10-sim-1280.png`. At both widths the axis labels (0, 0,5, 1,0, 1,5) are present, with a decimal comma on the canvas, which is allowed. The "1,04" label sits above the bar, the dashed reference line is at 1,0, and the gauge, legend, "hits/s" label and V arrow are intact. There is no clipping or overlap. The slider labels and readout render as KaTeX with upright units. The collapsible boxes are in order and nothing overflows horizontally.
+- Text, figures and exercises are unchanged, so I did not reopen them.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

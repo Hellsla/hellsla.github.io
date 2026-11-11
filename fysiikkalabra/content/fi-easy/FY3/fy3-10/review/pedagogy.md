@@ -1,14 +1,23 @@
-VERDICT: PASS
-CONTENT-HASH: 1f48965343916086
+VERDICT: FAIL
+CONTENT-HASH: 657d9c21afc1fe02
 
 ## Blocking
-- none
+- inquiry.json exp-2 question (answer 50, tolerance 0.02) — the student reads N from a noisy 2 s average (about ±6 % at N = 50, the lab capture shows 0,98 and 1,93 instead of 1,00 and 2,00), yet only 49–51 counts as right. A student who measures honestly and reports 46 or 54 is told they are wrong. Fix: tolerance about 0.12 (45–56), or ask for the ratio "puolet" as a choice. Also say in the feedback that noise is expected.
 
 ## Polish
-- Resolved round 2: the 'Pascal on oikea yksikkö' feedback is rewritten (units must fit R).
+- inquiry.json `taulukko` — the last column cannot be reproduced from the raw columns (N, T in K, V in %); it is really $(p/p_\text{ref})(V/100\,\%)/((N/100)(T/300\,\text{K}))$. State that formula in the text.
+- inquiry.json Tutki stage — nine required tasks (punnitus, vertailu, pred-1, kokeile, exp-1, exp-2, taulukko, laske-r, johtopäätös) plus the prediction, two checks and the exercises is more than an hour. Make `taulukko` or `laske-r` optional. The sim never isolates V in an experiment; the table covers it, which is acceptable.
+- lesson.md "Kelvinlämpötila on suoraan verrannollinen hiukkasten keskimääräiseen liike-energiaan" — liike-energia is an FY4 term (scope note). Fix: "Mitä korkeampi kelvinlämpötila, sitä nopeammin hiukkaset keskimäärin liikkuvat."
+- lesson.md "Tilavuus 5,0 l rajoittaa ainemäärää. Massaa rajoittaa myös moolimassa" — awkward. Fix: "Tilavuudessa ja moolimassassa on kaksi numeroa, joten tulokset annetaan kahdella merkitsevällä numerolla."
+- lesson.md "5,0 l : 24 l/mol" and moolimassa 4,0 / 4,00 mixed — use a fraction and one precision for helium.
 
 ## Checked
-- delta review 2026-11-10 (measurement window reset, teacher's FY3 brief): slider change of N, T or V now empties the average, 0,5 s settling note replaces the value, bar keeps axis and hides its number; Nollaa mittaus still works (tAvg 0,15 settling); howto and 'paina Nollaa mittaus ja odota ~2 s' remain valid and the note tells the student why to wait; measured/predicted stays 0,93-1,06 after settling so N, T, V experiments can still confirm or refute predictions; no value is shown that could be misread. No blocking findings.
-- delta review 2026-11-07 round 2 (follow-up consistency edits): the 'Etsi virhe' feedback on the pressure and volume options now says the units must fit R's unit (Pa with m³, kPa with l, 1 kPa·l = 1 J) instead of calling the pascal the only correct unit; each still ends 'the error is elsewhere' without disclosing it, so it repairs the misconception and matches the lesson's new 1 kPa·l = 1 J text.
-- delta review 2026-11-07 (teacher's proofread replacement texts): the symbol list of $pV = nRT$ and the new unit paragraph (R in J/(mol·K), so pV in joules; Pa·m³ usual, kPa·l also gives J; be consistent) are clear and agree with the worked example and the Sekoitetut yksiköt misconception; inquiry and exit-ticket edits are unit typesetting only. fi-easy: the paragraph is in short imperative/declarative sentences ('Käytä…', 'Silloin…'), clear.
-batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.
+- Hook: the question is not answered before the student commits; the answer appears only in the theory.
+- Predictions (pred-n, pred-1): distractors are real misconceptions (mass = amount, particle collisions, helium packs tighter); each feedback repairs its own.
+- exp-1 and exp-2 lock the controlled variables, the measured pressure emerges from counted hits, and the prediction can be refuted.
+- Weighing data are consistent (m/M 0,2064–0,2076) and labelled as invented example values.
+- The worked example has seven stages; its principle and reasonableness check are explained.
+- The transfer task (hot-air balloon) is a new context; its mistakes list real unit errors.
+- The Tarkista concept checks (volume to pressure, Celsius vs Kelvin) are misconception-based.
+- Exit ticket tests the core idea (n = pV/RT, units).
+- The 390 and 1280 px captures of the sim and the lab are legible and uncluttered. The exercise set was not judged here.
