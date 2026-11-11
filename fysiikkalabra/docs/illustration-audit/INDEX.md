@@ -92,3 +92,10 @@ Hyväksytty korjattaviksi: A akselin nimi leikkautuu yläreunaan, B Aurinko säd
 D kokeiden ja soveltavien tehtävien kuvaajat lukujen piirrostapaan, E vanha paksu viivatyyli talotyyliin,
 F yksiköt pystymurroista rivimuotoon. Ryhmä on merkitty kunkin kuvan päätössarakkeeseen. Toteutus tehdään vasta, kun
 kaikki päätökset on annettu.
+
+## Opettajan linjaukset esitystavoista (2026-11-11)
+
+- **Ilmanvastus** piirretään luvun `fy4-14` tavalla: työntönä liikkeen suuntaa vastaan, nuolen kärki siinä pinnassa,
+  johon ilma painaa. `fy4-3/auto` ja `fy4-3/kone` muutetaan tähän; luvun `fy4-14` kuvat pidetään.
+- **Voima on punainen myös FY3:ssa**: `fy3-2/carry-lift`, `fy3-2/lift-work`, `fy3-11/piston-work`,
+  `fy3-4/pressure-area`, `fy3-4/water-column`.

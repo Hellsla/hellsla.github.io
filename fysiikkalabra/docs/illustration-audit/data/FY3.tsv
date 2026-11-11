@@ -15,7 +15,7 @@ fy3-10/helium-ilma|5|5|4|5|PIDA|
 fy3-10/paine-ja-tekijat|5|5|4|5|PIDA|
 fy3-10/pt-suorat|5|4|4|5|PIDA|Suorien jatkeet kulkevat origon kautta (tarkistettu).|
 fy3-11/hero|5|4|5|4|PIDA|Voimalaitosmaisema toistuu sarjassa.|
-fy3-11/piston-work|5|5|5|4|KEVYT|Voimanuoli oranssi; paletissa oranssi on energian ja lämmön virta, voima punainen (fy3-1).|
+fy3-11/piston-work|5|5|5|4|KEVYT|Voimanuoli oranssi; paletissa oranssi on energian ja lämmön virta, voima punainen (fy3-1).||KEVYT KORJAUS hyväksytty: voima punaiseksi (opettaja 2026-11-11)
 fy3-11/heat-engine|5|5|4|5|PIDA|
 fy3-11/heat-pump|5|5|3|4|KEVYT|Merkinnät hajallaan: Q_ulko nuolen alla, "leveys kuvaa tehoa" irrallaan oikeassa alakulmassa. Sama rakenne kuin heat-engine-kuvassa selkeyttäisi.|
 fy3-11/pv-work|5|5|5|5|PIDA|
@@ -34,11 +34,11 @@ fy3-15/scene|5|4|4|5|PIDA|
 fy3-15/chain-bars|5|4|4|4|PIDA|
 fy3-16/hero|5|4|5|4|KEVYT|Aurinko sädekehällä; talotyylissä pelkkä kiekko.||KEVYT KORJAUS hyväksytty, ryhmä B (opettaja 2026-11-11)
 fy3-2/hero|5|4|4|5|PIDA|
-fy3-2/carry-lift|5|5|4|4|KEVYT|Voimanuoli oranssi (ks. fy3-11/piston-work).|
+fy3-2/carry-lift|5|5|4|4|KEVYT|Voimanuoli oranssi (ks. fy3-11/piston-work).||KEVYT KORJAUS hyväksytty: voima punaiseksi (opettaja 2026-11-11)
 fy3-2/joule|5|5|4|5|PIDA|Joulen koe tunnistettavana laitteena.|
 fy3-2/work-graphs|5|4|3|5|KEVYT|Akselilla s on sekä akselin nimenä että asteikkomerkkinä vierekkäin, samoin F: lukija ei erota suuretta ja sen arvoa.|
 fy3-2/spring-work|5|5|5|5|PIDA|
-fy3-2/lift-work|5|5|3|4|KEVYT|F on oranssi ja G musta samassa voimakuviossa; neljä kaavaa irrallaan oikealla.|
+fy3-2/lift-work|5|5|3|4|KEVYT|F on oranssi ja G musta samassa voimakuviossa; neljä kaavaa irrallaan oikealla.||KEVYT KORJAUS hyväksytty: voima punaiseksi (opettaja 2026-11-11)
 fy3-2/pull-steps|5|4|4|5|PIDA|
 fy3-3/hero|5|4|4|4|KEVYT|Lämpömittari seisoo tiellä ilman tukea, ja Aurinko on sädekehällä. Saman luvun scene-kuvassa mittari on tolpassa.||KEVYT KORJAUS hyväksytty, ryhmä B (opettaja 2026-11-11)
 fy3-3/scene|5|4|5|5|PIDA|
@@ -49,8 +49,8 @@ fy3-3/extrapolation|5|5|3|5|KEVYT|"p = 0" on katkoviivan päällä, ja akselin v
 fy3-3/extrapolation-points|5|4|4|5|PIDA|
 fy3-4/hero|5|5|5|5|PIDA|
 fy3-4/scene|5|4|5|5|PIDA|
-fy3-4/pressure-area|5|5|4|4|KEVYT|Voimanuolet mustia; FY3:ssa voima on piirretty kolmella värillä (punainen fy3-1, oranssi fy3-2 ja fy3-11, musta tässä).|
-fy3-4/water-column|5|5|4|4|KEVYT|Painon nuoli musta, ks. fy3-4/pressure-area.|
+fy3-4/pressure-area|5|5|4|4|KEVYT|Voimanuolet mustia; FY3:ssa voima on piirretty kolmella värillä (punainen fy3-1, oranssi fy3-2 ja fy3-11, musta tässä).||KEVYT KORJAUS hyväksytty: voima punaiseksi (opettaja 2026-11-11)
+fy3-4/water-column|5|5|4|4|KEVYT|Painon nuoli musta, ks. fy3-4/pressure-area.||KEVYT KORJAUS hyväksytty: voima punaiseksi (opettaja 2026-11-11)
 fy3-4/pressure-depth|5|5|5|5|PIDA|
 fy3-4/two-liquids|5|4|4|5|PIDA|
 fy3-5/hero|5|5|5|5|PIDA|Pumpun lämpeneminen näkyy värinä ja lämpöviivoina; sarjan parhaita avauskuvia.|

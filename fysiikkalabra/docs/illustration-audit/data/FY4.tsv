@@ -39,14 +39,14 @@ fy4-13/virhe|5|5|4|5|PIDA|Tarkoituksella virheellinen kuvio virheen tunnistamise
 fy4-13/malli-atwood|5|5|4|5|PIDA|
 fy4-13/malli-ketju|5|5|4|5|PIDA|
 fy4-14/hero|5|5|5|5|PIDA|
-fy4-14/pudotus|5|5|4|4|KEVYT|OPETTAJAN TARKISTETTAVA. Ilmanvastus on piirretty työntönä: nuoli on kappaleen ulkopuolella kärki alapinnassa. Luvussa fy4-3 (auto, kone) sama voima alkaa kappaleen pinnasta ja osoittaa poispäin. Molemmat ovat puolustettavia, mutta sarjassa on kaksi esitystapaa samalle voimalle, ja voimakuvio-ohjeen sanamuoto on "nuoli alkaa kappaleesta".|
+fy4-14/pudotus|5|5|4|4|KEVYT|OPETTAJAN TARKISTETTAVA. Ilmanvastus on piirretty työntönä: nuoli on kappaleen ulkopuolella kärki alapinnassa. Luvussa fy4-3 (auto, kone) sama voima alkaa kappaleen pinnasta ja osoittaa poispäin. Molemmat ovat puolustettavia, mutta sarjassa on kaksi esitystapaa samalle voimalle, ja voimakuvio-ohjeen sanamuoto on "nuoli alkaa kappaleesta".||PIDÄ: esitystapa vahvistettu sarjan malliksi (opettaja 2026-11-11)
 fy4-14/vt|5|5|4|5|PIDA|
-fy4-14/ylos|4|5|4|4|KEVYT|Ks. fy4-14/pudotus. Kokonaisvoima on ohjeen mukaisesti erillään ja eri tyylillä.|
-fy4-14/varjo|4|5|4|4|KEVYT|Ks. fy4-14/pudotus: ensimmäisessä vaiheessa nuolen kärki on pinnassa, kahdessa muussa nuoli alkaa pinnasta.|
+fy4-14/ylos|4|5|4|4|KEVYT|Ks. fy4-14/pudotus. Kokonaisvoima on ohjeen mukaisesti erillään ja eri tyylillä.||PIDÄ: esitystapa vahvistettu sarjan malliksi (opettaja 2026-11-11)
+fy4-14/varjo|4|5|4|4|KEVYT|Ks. fy4-14/pudotus: ensimmäisessä vaiheessa nuolen kärki on pinnassa, kahdessa muussa nuoli alkaa pinnasta.||PIDÄ: esitystapa vahvistettu sarjan malliksi (opettaja 2026-11-11)
 fy4-14/esimerkki|5|5|4|5|PIDA|
-fy4-14/valitse-a|4|4|4|4|KEVYT|Ks. fy4-14/pudotus.|
-fy4-14/valitse-b|4|4|4|4|KEVYT|Ks. fy4-14/pudotus.|
-fy4-14/valitse-c|4|4|4|4|KEVYT|Ks. fy4-14/pudotus.|
+fy4-14/valitse-a|4|4|4|4|KEVYT|Ks. fy4-14/pudotus.||PIDÄ: esitystapa vahvistettu sarjan malliksi (opettaja 2026-11-11)
+fy4-14/valitse-b|4|4|4|4|KEVYT|Ks. fy4-14/pudotus.||PIDÄ: esitystapa vahvistettu sarjan malliksi (opettaja 2026-11-11)
+fy4-14/valitse-c|4|4|4|4|KEVYT|Ks. fy4-14/pudotus.||PIDÄ: esitystapa vahvistettu sarjan malliksi (opettaja 2026-11-11)
 fy4-14/valitse-d|5|4|4|5|PIDA|
 fy4-14/malli-alas|4|4|3|4|KEVYT|Ks. fy4-14/pudotus. Lisäksi kuva-alan yläosa on tyhjä ja kuvio on työnnetty alareunaan.|
 fy4-14/ex-tangentti|5|4|4|5|PIDA|
@@ -74,8 +74,8 @@ fy4-2/check-tv|5|4|4|5|PIDA|
 fy4-3/hero|5|5|5|5|PIDA|
 fy4-3/curling|5|5|4|5|PIDA|
 fy4-3/luistelijat|5|5|4|5|PIDA|Voima ja vastavoima eri kappaleiden kuvioissa, nimet alaindeksein.|
-fy4-3/auto|5|5|4|4|KEVYT|Ilmanvastus alkaa kappaleen pinnasta; luvussa fy4-14 se on piirretty työntönä kärki pinnassa. Ks. fy4-14/pudotus.|
-fy4-3/kone|5|5|4|4|KEVYT|Ks. fy4-3/auto.|
+fy4-3/auto|5|5|4|4|KEVYT|Ilmanvastus alkaa kappaleen pinnasta; luvussa fy4-14 se on piirretty työntönä kärki pinnassa. Ks. fy4-14/pudotus.||KEVYT KORJAUS hyväksytty: ilmanvastus luvun fy4-14 tyyliin (työntönä, liikkeen suuntaa vastaan) (opettaja 2026-11-11)
+fy4-3/kone|5|5|4|4|KEVYT|Ks. fy4-3/auto.||KEVYT KORJAUS hyväksytty: ilmanvastus luvun fy4-14 tyyliin (työntönä, liikkeen suuntaa vastaan) (opettaja 2026-11-11)
 fy4-3/anturit|5|5|4|5|PIDA|
 fy4-3/malli-lamppu|5|5|4|5|PIDA|
 fy4-4/hero|5|5|5|5|PIDA|

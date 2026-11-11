@@ -21,7 +21,7 @@ Kuvia 111. Asteikko 1–5: F fysiikka, P pedagogiikka, V visuaalinen laatu, T ty
 | [`fy3-10/paine-ja-tekijat`](catalog/FY3.html#fy3-10-paine-ja-tekijat) | Ideaalikaasun tilanyhtälö $pV = nRT$; kaavio: teoria | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy3-10/pt-suorat`](catalog/FY3.html#fy3-10-pt-suorat) | Ideaalikaasun tilanyhtälö $pV = nRT$; kuvaaja: tutkimusvaihe, tehtävä | 5 | 4 | 4 | 5 | PIDÄ | Suorien jatkeet kulkevat origon kautta (tarkistettu). |  | ODOTTAA |
 | [`fy3-11/hero`](catalog/FY3.html#fy3-11-hero) | Kaasun tekemä työ ja lämpövoimakone; avauskuva | 5 | 4 | 5 | 4 | PIDÄ | Voimalaitosmaisema toistuu sarjassa. |  | ODOTTAA |
-| [`fy3-11/piston-work`](catalog/FY3.html#fy3-11-piston-work) | Kaasun tekemä työ ja lämpövoimakone; kaavio: teoria | 5 | 5 | 5 | 4 | KEVYT KORJAUS | Voimanuoli oranssi; paletissa oranssi on energian ja lämmön virta, voima punainen (fy3-1). |  | ODOTTAA |
+| [`fy3-11/piston-work`](catalog/FY3.html#fy3-11-piston-work) | Kaasun tekemä työ ja lämpövoimakone; kaavio: teoria | 5 | 5 | 5 | 4 | KEVYT KORJAUS | Voimanuoli oranssi; paletissa oranssi on energian ja lämmön virta, voima punainen (fy3-1). |  | KEVYT KORJAUS hyväksytty: voima punaiseksi (opettaja 2026-11-11) |
 | [`fy3-11/heat-engine`](catalog/FY3.html#fy3-11-heat-engine) | Kaasun tekemä työ ja lämpövoimakone; kaavio: teoria | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy3-11/heat-pump`](catalog/FY3.html#fy3-11-heat-pump) | Kaasun tekemä työ ja lämpövoimakone; kaavio: teoria | 5 | 5 | 3 | 4 | KEVYT KORJAUS | Merkinnät hajallaan: Q_ulko nuolen alla, "leveys kuvaa tehoa" irrallaan oikeassa alakulmassa. Sama rakenne kuin heat-engine-kuvassa selkeyttäisi. |  | ODOTTAA |
 | [`fy3-11/pv-work`](catalog/FY3.html#fy3-11-pv-work) | Kaasun tekemä työ ja lämpövoimakone; kuvaaja: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
@@ -40,11 +40,11 @@ Kuvia 111. Asteikko 1–5: F fysiikka, P pedagogiikka, V visuaalinen laatu, T ty
 | [`fy3-15/chain-bars`](catalog/FY3.html#fy3-15-chain-bars) | Energiantuotanto ja voimalaitosten hyötysuhde; kuvaaja: tehtävä | 5 | 4 | 4 | 4 | PIDÄ |  |  | ODOTTAA |
 | [`fy3-16/hero`](catalog/FY3.html#fy3-16-hero) | Soveltava tunti: lämpöilmiöt arjessa; avauskuva | 5 | 4 | 5 | 4 | KEVYT KORJAUS | Aurinko sädekehällä; talotyylissä pelkkä kiekko. |  | KEVYT KORJAUS hyväksytty, ryhmä B (opettaja 2026-11-11) |
 | [`fy3-2/hero`](catalog/FY3.html#fy3-2-hero) | Työ ja energia; avauskuva | 5 | 4 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
-| [`fy3-2/carry-lift`](catalog/FY3.html#fy3-2-carry-lift) | Työ ja energia; kaavio: teoria | 5 | 5 | 4 | 4 | KEVYT KORJAUS | Voimanuoli oranssi (ks. fy3-11/piston-work). |  | ODOTTAA |
+| [`fy3-2/carry-lift`](catalog/FY3.html#fy3-2-carry-lift) | Työ ja energia; kaavio: teoria | 5 | 5 | 4 | 4 | KEVYT KORJAUS | Voimanuoli oranssi (ks. fy3-11/piston-work). |  | KEVYT KORJAUS hyväksytty: voima punaiseksi (opettaja 2026-11-11) |
 | [`fy3-2/joule`](catalog/FY3.html#fy3-2-joule) | Työ ja energia; kaavio: teoria | 5 | 5 | 4 | 5 | PIDÄ | Joulen koe tunnistettavana laitteena. |  | ODOTTAA |
 | [`fy3-2/work-graphs`](catalog/FY3.html#fy3-2-work-graphs) | Työ ja energia; kuvaaja: teoria | 5 | 4 | 3 | 5 | KEVYT KORJAUS | Akselilla s on sekä akselin nimenä että asteikkomerkkinä vierekkäin, samoin F: lukija ei erota suuretta ja sen arvoa. |  | ODOTTAA |
 | [`fy3-2/spring-work`](catalog/FY3.html#fy3-2-spring-work) | Työ ja energia; kuvaaja: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
-| [`fy3-2/lift-work`](catalog/FY3.html#fy3-2-lift-work) | Työ ja energia; kaavio: teoria | 5 | 5 | 3 | 4 | KEVYT KORJAUS | F on oranssi ja G musta samassa voimakuviossa; neljä kaavaa irrallaan oikealla. |  | ODOTTAA |
+| [`fy3-2/lift-work`](catalog/FY3.html#fy3-2-lift-work) | Työ ja energia; kaavio: teoria | 5 | 5 | 3 | 4 | KEVYT KORJAUS | F on oranssi ja G musta samassa voimakuviossa; neljä kaavaa irrallaan oikealla. |  | KEVYT KORJAUS hyväksytty: voima punaiseksi (opettaja 2026-11-11) |
 | [`fy3-2/pull-steps`](catalog/FY3.html#fy3-2-pull-steps) | Työ ja energia; kuvaaja: tehtävä | 5 | 4 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy3-3/hero`](catalog/FY3.html#fy3-3-hero) | Termodynaaminen systeemi, tilanmuuttujat ja lämpötila; avauskuva | 5 | 4 | 4 | 4 | KEVYT KORJAUS | Lämpömittari seisoo tiellä ilman tukea, ja Aurinko on sädekehällä. Saman luvun scene-kuvassa mittari on tolpassa. |  | KEVYT KORJAUS hyväksytty, ryhmä B (opettaja 2026-11-11) |
 | [`fy3-3/scene`](catalog/FY3.html#fy3-3-scene) | Termodynaaminen systeemi, tilanmuuttujat ja lämpötila; kuvitus: teoria | 5 | 4 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
@@ -55,8 +55,8 @@ Kuvia 111. Asteikko 1–5: F fysiikka, P pedagogiikka, V visuaalinen laatu, T ty
 | [`fy3-3/extrapolation-points`](catalog/FY3.html#fy3-3-extrapolation-points) | Termodynaaminen systeemi, tilanmuuttujat ja lämpötila; kuvaaja: tutkimusvaihe, tehtävä | 5 | 4 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy3-4/hero`](catalog/FY3.html#fy3-4-hero) | Paine ja hydrostaattinen paine; avauskuva | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy3-4/scene`](catalog/FY3.html#fy3-4-scene) | Paine ja hydrostaattinen paine; kuvitus: teoria | 5 | 4 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
-| [`fy3-4/pressure-area`](catalog/FY3.html#fy3-4-pressure-area) | Paine ja hydrostaattinen paine; kaavio: teoria | 5 | 5 | 4 | 4 | KEVYT KORJAUS | Voimanuolet mustia; FY3:ssa voima on piirretty kolmella värillä (punainen fy3-1, oranssi fy3-2 ja fy3-11, musta tässä). |  | ODOTTAA |
-| [`fy3-4/water-column`](catalog/FY3.html#fy3-4-water-column) | Paine ja hydrostaattinen paine; kaavio: teoria | 5 | 5 | 4 | 4 | KEVYT KORJAUS | Painon nuoli musta, ks. fy3-4/pressure-area. |  | ODOTTAA |
+| [`fy3-4/pressure-area`](catalog/FY3.html#fy3-4-pressure-area) | Paine ja hydrostaattinen paine; kaavio: teoria | 5 | 5 | 4 | 4 | KEVYT KORJAUS | Voimanuolet mustia; FY3:ssa voima on piirretty kolmella värillä (punainen fy3-1, oranssi fy3-2 ja fy3-11, musta tässä). |  | KEVYT KORJAUS hyväksytty: voima punaiseksi (opettaja 2026-11-11) |
+| [`fy3-4/water-column`](catalog/FY3.html#fy3-4-water-column) | Paine ja hydrostaattinen paine; kaavio: teoria | 5 | 5 | 4 | 4 | KEVYT KORJAUS | Painon nuoli musta, ks. fy3-4/pressure-area. |  | KEVYT KORJAUS hyväksytty: voima punaiseksi (opettaja 2026-11-11) |
 | [`fy3-4/pressure-depth`](catalog/FY3.html#fy3-4-pressure-depth) | Paine ja hydrostaattinen paine; kuvaaja: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy3-4/two-liquids`](catalog/FY3.html#fy3-4-two-liquids) | Paine ja hydrostaattinen paine; kuvaaja: tehtävä | 5 | 4 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy3-5/hero`](catalog/FY3.html#fy3-5-hero) | Sisäenergia, lämpömäärä ja energian säilyminen; avauskuva | 5 | 5 | 5 | 5 | PIDÄ | Pumpun lämpeneminen näkyy värinä ja lämpöviivoina; sarjan parhaita avauskuvia. |  | ODOTTAA |
