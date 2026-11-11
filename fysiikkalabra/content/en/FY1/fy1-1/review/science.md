@@ -1,15 +1,16 @@
-VERDICT: PASS
-CONTENT-HASH: f0465f9b9d84a4b5
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+VERDICT: FAIL
+CONTENT-HASH: 09da6a2ea3b09622
 
 ## Blocking
-- none
+1. **A, simulation label (lang/en.json `sims.fy1-1.o_proxima`).** The English name is "Proxima Centauri", but the object's value $4.0\cdot10^{16}\,\text{m}$ is the *distance* to the star. The Finnish source has it right ("etäisyys Proxima Centauriin"). As it stands, the readout says "Object closest in size: Proxima Centauri, size $4.0\cdot10^{16}\,\text{m}$", and the canvas label says the same. That gives a star a size of 4 light-years, about $2\cdot10^{8}$ times its real diameter. It also clashes with the lesson's object-type axis, where stars are about $10^{9}\,\text{m}$. Fix: "distance to Proxima Centauri", which parallels "radius of Neptune's orbit" and "distance of the heliopause".
 
 ## Polish
-- none
+- inquiry `menetelmat`: the list opens "No size in the simulation…" and gives "Nearest star, $4.0\cdot10^{16}\,\text{m}$: … parallax". Parallax measures a distance, so "Distance to the nearest star" would remove the same size/distance blur.
+- sim-spec.md says objects show from about 1/2000 of the view, while the `calc` box says 1/1000. The code (fade-in about 0.25–0.7 px, visible at $a \ge 0.5$) supports about 1/1000. Only the spec is off, and students never see it.
+- `tunnista` black-hole feedback: "known stellar black holes … about three solar masses or heavier" is fine at this level. The lightest candidates are about $2.5$–$3\,M_\odot$, so "about" covers it.
 
 ## Checked
-- Order-of-magnitude rule now uses the limit sqrt(10) ~ 3,16, the logarithmic midpoint between 10^n and 10^(n+1): correct, and consistent with the examples 1,7 m -> 10^0 m and 8,8e3 m -> 10^4 m (exercise solutions' 'factor below about 3' stays consistent).
-- 'beetahajoaminen' -> 'beetamiinushajoaminen ($\beta^{-}$-hajoaminen)' in theory, both inquiry feedbacks (K-40 is beta-minus: n -> p + e- + antineutrino) and the fy11-forces figure label/aria; no 'beetahajoaminen' left in lesson, inquiry or exit ticket.
-- Ladder figure labels now carry the unit (10^-15 m ... 10^-10 m): values unchanged and match the aria-label (5 steps, factor 10^5).
-- The en text says the same as the Finnish fix.
+- I recomputed every number with my own script: example $k = 6.47\cdot10^{4} \to 6.5\cdot10^{4}$ (2 s.f. justified); exp-1 Δn 5; exp-2 Δn 8 (Neptune $4.5\cdot10^{12}$ → $10^{13}$, Milky Way $10^{21}$); exp-3 midpoint −4, which matches hair ($7.0\cdot10^{-5}\,\text{m}$, `kohdeExp` −4); siirto $d = 1.273\cdot10^{4}\,\text{km}$ (and 13 000 is within the 3 % tolerance); check-2 $5.79\cdot10^{4}$; check-1 order $10^{17}$; Sgr A* horizon $2.54\cdot10^{10}\,\text{m}$; $F_e/F_g$ for two protons $1.2\cdot10^{36}$; 93 billion light-years; Sun/Earth 109; reflect 42 and 62. All agree.
+- Sim: in `mainObj` the nearest object (about 150 px wide) at the initial states L = −9, 7.7 and 27.5 is the water molecule, Earth and the observable universe, as the intros say (the exp-1 capture confirms it). `kohdeExp = round(log10 m)` is the same as the lesson's $\sqrt{10}$ rule. The 560 px view and the 62 px atom in `calc` are correct, and the 43 object sizes are sound literature values. The model box states the limits (orbits labelled by radius but drawn by diameter, nucleus drawn too large, Planck grid is symbolic).
+- Scale-axis and object-types figures: their positions are to scale, checked from the SVG coordinates (11.8 and 26 px per decade). The cosmic-address orders are correct, and the matter ladder and atom–stadium analogy (ratio 4·10⁴) are consistent.
+- Theory (definitions, light-year as a length, heliopause vs Oort cloud, observable universe and expansion, beta-minus decay, residual strong force, why gravity dominates at large scale): no A or B findings. Each choice item has exactly one correct option, and every distractor's feedback is right. The exit ticket and model answer are consistent with the theory. The content stays within FY1 scope and the teacher's brief.
