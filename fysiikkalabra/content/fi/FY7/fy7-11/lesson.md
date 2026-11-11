@@ -153,33 +153,89 @@ Pieni sadepisara on lähes pallon muotoinen. Auringonvalo taittuu pisaraan, heij
 ### Miksi punainen on ulkoreunalla
 Kun aurinko on selän takana, auringonsäteet kulkevat pään ohi kohti **vastapistettä**, joka on oman pään varjon kohdalla horisontin alapuolella. Silmään tulee punaista valoa niistä pisaroista, jotka näkyvät $42^\circ$:n kulmassa vastapisteen suunnasta, ja violettia niistä, jotka näkyvät $40{,}6^\circ$:n kulmassa. Samassa kulmassa olevat pisarat muodostavat ympyrän, jonka keskipiste on vastapiste. Punaisen ympyrä on suurempi, joten punainen on kaaren ulkoreunalla. Eri värit lähtevät pisarasta voimakkaimpina hieman eri suuntiin. Siksi katsojan silmään tulee kustakin pisarasta erityisen voimakkaasti tietyn väristä valoa, ja pisaran muiden värien voimakkaimmat suunnat kulkevat silmän ohi. Siksi jokainen katsoja näkee oman sateenkaarensa.
 
-<svg data-fig="observer" viewBox="0 0 600 372" role="img" aria-label="Periaatekuva sivulta, kulmat eivät ole mittakaavassa: tarkkailija seisoo oikealla selkä aurinkoon päin, ja auringonsäteet tulevat oikealta ylhäältä vinosti alas. Silmästä lähtee katkoviiva auringonsäteiden suuntaan alas vasemmalle kohti vastapistettä, joka on tarkkailijan pään varjon kohdalla horisontin alapuolella. Ylempi pisara on 42 asteen kulmassa tästä suunnasta, ja siitä silmään tulee punainen valo; sen violetti valo kulkee silmän yläpuolelta ohi. Alempi pisara on noin 40,6 asteen kulmassa, ja siitä silmään tulee violetti valo; sen punainen valo osuu maahan tarkkailijan eteen." style="max-width:100%;font-size:24px">
+<svg data-fig="observer" viewBox="0 0 600 380" role="img" aria-label="Periaatekuva sivulta, kulmat eivät ole mittakaavassa: katsoja seisoo oikealla selkä aurinkoon päin, ja auringonsäteet tulevat oikealta ylhäältä vinosti alas vasemmalla olevaan sadekuuroon. Silmästä lähtee katkoviiva auringonsäteiden suuntaan alas vasemmalle kohti vastapistettä, joka on katsojan pään varjon kohdalla horisontin alapuolella. Ylempi pisara on 42 asteen kulmassa tästä suunnasta, ja siitä silmään tulee punainen valo; sen violetti valo kulkee silmän yläpuolelta ohi. Alempi pisara on noin 40,6 asteen kulmassa, ja siitä silmään tulee violetti valo; sen punainen valo osuu maahan katsojan eteen." style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy711o-rain" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d0e6fb" stop-opacity="0"/><stop offset="0.5" stop-color="#d0e6fb" stop-opacity="0.8"/><stop offset="1" stop-color="#d0e6fb" stop-opacity="0"/></linearGradient></defs>
+  <rect x="92" y="40" width="200" height="260" fill="url(#fy711o-rain)"/>
+  <line x1="108" y1="64" x2="104" y2="78" stroke="#2f74b5" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="161" y1="101" x2="157" y2="115" stroke="#2f74b5" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="214" y1="138" x2="210" y2="152" stroke="#2f74b5" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="267" y1="175" x2="263" y2="189" stroke="#2f74b5" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="150" y1="212" x2="146" y2="226" stroke="#2f74b5" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="203" y1="249" x2="199" y2="263" stroke="#2f74b5" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="256" y1="72" x2="252" y2="86" stroke="#2f74b5" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="139" y1="109" x2="135" y2="123" stroke="#2f74b5" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="192" y1="146" x2="188" y2="160" stroke="#2f74b5" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="245" y1="183" x2="241" y2="197" stroke="#2f74b5" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="128" y1="220" x2="124" y2="234" stroke="#2f74b5" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="181" y1="257" x2="177" y2="271" stroke="#2f74b5" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="234" y1="80" x2="230" y2="94" stroke="#2f74b5" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="117" y1="117" x2="113" y2="131" stroke="#2f74b5" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="170" y1="154" x2="166" y2="168" stroke="#2f74b5" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="223" y1="191" x2="219" y2="205" stroke="#2f74b5" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="276" y1="228" x2="272" y2="242" stroke="#2f74b5" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="159" y1="265" x2="155" y2="279" stroke="#2f74b5" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="212" y1="88" x2="208" y2="102" stroke="#2f74b5" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="265" y1="125" x2="261" y2="139" stroke="#2f74b5" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="148" y1="162" x2="144" y2="176" stroke="#2f74b5" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="201" y1="199" x2="197" y2="213" stroke="#2f74b5" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="254" y1="236" x2="250" y2="250" stroke="#2f74b5" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="137" y1="273" x2="133" y2="287" stroke="#2f74b5" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="190" y1="96" x2="186" y2="110" stroke="#2f74b5" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="243" y1="133" x2="239" y2="147" stroke="#2f74b5" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M134,52.5 Q133,31.5 158,34 Q167.5,11.5 192.5,19 Q215,6.5 227,30 Q249.5,32.5 247,52.5 Z" fill="#c4ccd4" stroke-linejoin="round"/>
   <rect x="12" y="300" width="576" height="46" fill="#f1dfb5"/>
-  <line x1="12" y1="300" x2="588" y2="300" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <circle cx="508" cy="232" r="15" fill="#d9b26a" stroke="#1f2933" stroke-width="2"/>
-  <path d="M494,249 h28 l4,40 h-36 Z" fill="#1971c2" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M502,289 V300 M516,289 V300" fill="none" stroke="#1f2933" stroke-width="4" stroke-linejoin="round"/>
-  <line x1="582" y1="34" x2="503" y2="62.5" stroke="#e8590c" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M495.5,65.5 L506.5,55 L511,66.5 Z" fill="#e8590c" stroke-linejoin="round"/>
-  <line x1="582" y1="92" x2="503" y2="120.5" stroke="#e8590c" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M495.5,123.5 L506.5,113 L511,124.5 Z" fill="#e8590c" stroke-linejoin="round"/>
-  <foreignObject x="430" y="125.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{auringonvalo}$</div></foreignObject>
-  <line x1="500" y1="232" x2="258" y2="320" stroke="#6b7480" stroke-width="2" stroke-linecap="butt" stroke-dasharray="7 6"/>
-  <line x1="207" y1="113.5" x2="479.5" y2="224" stroke="#c92a2a" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M479.5,224 L464.5,224.5 L469,212.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <line x1="192" y1="161" x2="478.5" y2="227" stroke="#7048e8" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M478.5,227 L463.5,230 L466.5,218 Z" fill="#7048e8" stroke-linejoin="round"/>
-  <line x1="207.5" y1="111.5" x2="486.5" y2="176" stroke="#7048e8" stroke-width="2" stroke-linecap="butt" stroke-dasharray="8 6"/>
-  <line x1="191.5" y1="163" x2="530.5" y2="300" stroke="#c92a2a" stroke-width="2" stroke-linecap="butt" stroke-dasharray="8 6"/>
-  <circle cx="194" cy="108.5" r="13" fill="#a9d1f0" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="178.5" cy="158" r="13" fill="#a9d1f0" stroke="#2f74b5" stroke-width="2"/>
-  <path d="M342,289.5 A168,168 0 0 1 344,169" fill="none" stroke="#c92a2a" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M389,272.5 A118,118 0 0 1 385,205.5" fill="none" stroke="#7048e8" stroke-width="2" stroke-linejoin="round"/>
-  <foreignObject x="279.5" y="214" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$42^\circ$</div></foreignObject>
-  <foreignObject x="387" y="218.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#7048e8">$40{,}6^\circ$</div></foreignObject>
-  <foreignObject x="216" y="90" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$\text{punainen}$</div></foreignObject>
-  <foreignObject x="50.5" y="145.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#7048e8">$\text{violetti}$</div></foreignObject>
-  <foreignObject x="111" y="311.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{vastapiste}$</div></foreignObject>
+  <line x1="12" y1="300" x2="588" y2="300" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="448" y1="14" x2="213.5" y2="99.5" stroke="#e8590c" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M382.5,38 L393.5,27 L398,39 Z" fill="#e8590c" stroke-linejoin="round"/>
+  <line x1="554.5" y1="14" x2="199.5" y2="143" stroke="#e8590c" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M488.5,38 L499.5,27 L504,39 Z" fill="#e8590c" stroke-linejoin="round"/>
+  <foreignObject x="430" y="89.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#e8590c">$\text{auringonvalo}$</div></foreignObject>
+  <line x1="470" y1="214" x2="173.5" y2="322" stroke="#6b7480" stroke-width="2" stroke-linecap="butt" stroke-dasharray="7 6"/>
+  <circle cx="173.5" cy="322" r="4.5" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <path d="M214,108 L484,170.5" fill="none" stroke="#7048e8" stroke-width="1.75" stroke-linejoin="round" stroke-dasharray="6 6" stroke-opacity="0.6"/>
+  <path d="M198.5,156 L448,300" fill="none" stroke="#c92a2a" stroke-width="1.75" stroke-linejoin="round" stroke-dasharray="6 6" stroke-opacity="0.6"/>
+  <line x1="213" y1="110" x2="464.5" y2="212" stroke="#c92a2a" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M338.5,161 L323,161.5 L327.5,149.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <line x1="200" y1="151.5" x2="464" y2="212.5" stroke="#7048e8" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M331.5,182 L316.5,185 L319.5,173 Z" fill="#7048e8" stroke-linejoin="round"/>
+  <circle cx="199.5" cy="104.5" r="14" fill="#a9d1f0" stroke="#2f74b5" stroke-width="2"/>
+  <path d="M192.5,101.5 q2,-6 8,-7" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="185.5" cy="148.5" r="14" fill="#a9d1f0" stroke="#2f74b5" stroke-width="2"/>
+  <path d="M178.5,145.5 q2,-6 8,-7" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="479" cy="261" r="6" fill="#3a4350" stroke="#262c34" stroke-width="1.25"/>
+  <circle cx="480" cy="295" r="4.5" fill="#3a4350" stroke="#262c34" stroke-width="1.25"/>
+  <path d="M473,261 L475.5,295 L484.5,295 L485,261 Z" fill="#3a4350" stroke="#262c34" stroke-width="1.25" stroke-linejoin="round"/>
+  <circle cx="479" cy="261" r="5.25" fill="#3a4350"/>
+  <circle cx="480" cy="295" r="3.75" fill="#3a4350"/>
+  <rect x="470" y="293" width="15" height="7" rx="3" fill="#1f2933"/>
+  <circle cx="488" cy="261" r="6" fill="#3a4350" stroke="#262c34" stroke-width="1.25"/>
+  <circle cx="489" cy="295" r="4.5" fill="#3a4350" stroke="#262c34" stroke-width="1.25"/>
+  <path d="M482,261 L484.5,295 L493.5,295 L494,261 Z" fill="#3a4350" stroke="#262c34" stroke-width="1.25" stroke-linejoin="round"/>
+  <circle cx="488" cy="261" r="5.25" fill="#3a4350"/>
+  <circle cx="489" cy="295" r="3.75" fill="#3a4350"/>
+  <rect x="479" y="293" width="15" height="7" rx="3" fill="#1f2933"/>
+  <circle cx="483" cy="235" r="11.5" fill="#1971c2" stroke="#10497e" stroke-width="1.25"/>
+  <circle cx="484" cy="263" r="10.5" fill="#1971c2" stroke="#10497e" stroke-width="1.25"/>
+  <path d="M471.5,235.5 L473.5,263.5 L494.5,262.5 L494.5,234.5 Z" fill="#1971c2" stroke="#10497e" stroke-width="1.25" stroke-linejoin="round"/>
+  <circle cx="483" cy="235" r="10.75" fill="#1971c2"/>
+  <circle cx="484" cy="263" r="9.75" fill="#1971c2"/>
+  <circle cx="482" cy="237" r="4.5" fill="#1971c2" stroke="#10497e" stroke-width="1.25"/>
+  <circle cx="478" cy="265" r="4" fill="#1971c2" stroke="#10497e" stroke-width="1.25"/>
+  <path d="M477.5,236.5 L474,264.5 L482,265.5 L486.5,237.5 Z" fill="#1971c2" stroke="#10497e" stroke-width="1.25" stroke-linejoin="round"/>
+  <circle cx="482" cy="237" r="3.75" fill="#1971c2"/>
+  <circle cx="478" cy="265" r="3.25" fill="#1971c2"/>
+  <circle cx="478" cy="268" r="4.5" fill="#f3d2b3" stroke="#b98a5e" stroke-width="1"/>
+  <rect x="479" y="224" width="8" height="8" fill="#f3d2b3"/>
+  <circle cx="482" cy="215" r="13" fill="#f3d2b3" stroke="#b98a5e" stroke-width="1.25"/>
+  <path d="M475,204 Q486,196 495,209 Q498,221 491,225 Q489,211 475,204 Z" fill="#3a4350" stroke-linejoin="round"/>
+  <path d="M278.5,284 A204,204 0 0 1 281,137.5" fill="none" stroke="#c92a2a" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M361,253.5 A116,116 0 0 1 357,188" fill="none" stroke="#7048e8" stroke-width="2" stroke-linejoin="round"/>
+  <foreignObject x="212" y="232.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$42^\circ$</span></div></foreignObject>
+  <foreignObject x="281" y="224" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#7048e8"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$40{,}6^\circ$</span></div></foreignObject>
+  <foreignObject x="69.5" y="84" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#c92a2a"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{punainen}$</span></div></foreignObject>
+  <foreignObject x="55.5" y="142" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#7048e8"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{violetti}$</span></div></foreignObject>
+  <foreignObject x="187.5" y="347.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{vastapiste}$</div></foreignObject>
+  <line x1="177.5" y1="327" x2="189.5" y2="350" stroke="#6b7480" stroke-width="1.25" stroke-linecap="butt"/>
 </svg>
 
 <figure class="unit-photo"><img src="pics/fy7/rainbow-glen-coe.webp" alt="Vihreä vuoristolaakso, jossa virtaa puro; laakson yllä näkyy sateenkaari pilvisen taivaan alla."><figcaption>Sateenkaari Glen Coen laaksossa Skotlannissa. Aurinko paistaa katsojan selän takaa, ja valo taittuu ja heijastuu vesipisaroissa, jotka hajottavat sen väreiksi.</figcaption></figure>
