@@ -25,3 +25,4 @@ CONTENT-HASH: 09da6a2ea3b09622
 - Figure object-types (#19): legible at 390 px, the description gives the data without naming the answer, colour is not used alone.
 - Workload: about one lesson, since exp-3, siirto, virhe and check-3 are optional; the lesson text is dense but kept in short paragraphs under subheadings.
 - Not judged: the exercise set (reviewed apart), and the other figure captures at 28×28 px, which are empty and look like capture artefacts.
+- Round 2 delta: label o_proxima is now "distance to Proxima Centauri"; the packet diff is empty and the hash is unchanged. The label now says what the size is, which fits the glossary and check-1 (a distance, not an object). No new finding.

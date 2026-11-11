@@ -24,3 +24,4 @@ CONTENT-HASH: eee3497ff21144ab
 - Tarkista: the concept item (a>3 rounds up) and the difference item (5 vs 10^5) test real misconceptions. The explain criteria are observable.
 - Exit ticket tests the core ideas (strong force range, testing models).
 - Workload: the core path is 2 predictions, 2 experiments, 3 transfer items and 3 checks, which fits an hour. Everything else is optional.
+- Round 2 (delta): label "etäisyys Proxima Centauriin" is correct (the value is a distance, as in check-1); the content hash is unchanged and the diff is empty. PASS stands.

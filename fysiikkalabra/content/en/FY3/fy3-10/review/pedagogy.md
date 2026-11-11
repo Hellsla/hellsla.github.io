@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 1d8ca5724c6f80b9
+CONTENT-HASH: 77345b49fdf269d8
 
 ## Blocking
 (none)
@@ -15,7 +15,7 @@ CONTENT-HASH: 1d8ca5724c6f80b9
 - Path: the opening question about the helium and air balloons is answered only after the student commits (weighing → deduction), and the slot's goals (equation of state, solving for a quantity) are met without extra scope.
 - Prerequisite retrieval (Boyle's law) is optional and has misconception-based distractors.
 - `pred-n` can be refuted by Experiment 1, locks T and V, and has a `min` of 2; its options name real misconceptions (collisions, crowding), and each has its own feedback.
-- Experiment 2 uses emergent hit-count pressure, not the formula, and its mistakes feedback (200, 71, 25) is diagnostic.
+- Experiment 2 uses emergent hit-count pressure, not the formula; its tolerance 0.1 (45–55) fits a noisy read of N and still rejects the mistake values 25, 71 and 200.
 - Worked example has exactly seven stages, with symbols before numbers, a unit-conversion stage and a reasonableness check.
 - Figures in the lesson text come directly after the paragraphs they explain; the theory figures do not give away the weighing result before the student has acted.
 - Simulation at 390 px and 1280 px: the readout is understandable, the controls are legible, and the explanations sit behind Käyttöohje, Mallin oletukset and Laskennan selitys. The lead is under 30 words.
