@@ -76,13 +76,13 @@ def energia():
             "Kummankin vieressä on palamisessa vapautuva energia vaakapalkkina samalla asteikolla: polttopuusta 15 megajoulea, "
             "bensiinistä 43 megajoulea. Sama massa, eri energia: ero on polttoaineen lämpöarvossa. Vapautuva energia saadaan "
             "kertomalla polttoaineen massa lämpöarvolla.")
-    x0, per = 268, 6.9                                    # the bars start at x0; 1 MJ = 6.9 units
-    f.tex(96, 26, r"\text{sama massa}", "middle", MUTED, size=22, w=180)
-    f.tex(x0, 26, r"\text{palaessa vapautuva energia}", "start", MUTED, size=22, w=330)
+    x0, per = 286, 6.4                                    # the bars start at x0; 1 MJ = 6.4 units
+    f.tex(20, 26, r"\text{sama massa}", "start", MUTED, size=24, w=180)
+    f.tex(x0, 26, r"\text{palaessa vapautuva energia}", "start", MUTED, size=24, w=330)
     for k in range(0, 5):
         f.line(x0 + k * 10 * per, 50, x0 + k * 10 * per, 262, RULE_LIGHT, 1.5)
-        f.tex(x0 + k * 10 * per, 278, str(k * 10), "middle", MUTED, size=20, w=40)
-    f.tex(x0 + 43 * per, 306, r"E\ (\text{MJ})", "end", MUTED, size=20, w=90)
+        f.tex(x0 + k * 10 * per, 278, str(k * 10), "middle", MUTED, size=24, w=40)
+    f.tex(x0 + 43 * per, 306, r"E\ (\text{MJ})", "end", MUTED, size=24, w=90)
     # firewood: three split birch logs, as in the opening illustration
     for dx, dy in ((-24, 0), (24, 0), (0, -30)):
         cx, y = 78 + dx, 118 + dy
@@ -90,8 +90,8 @@ def energia():
         f.rect(cx - 22, y - 14, 44, 28, WHITE, INK, 1.75)
         for j in range(2): f.rect(cx - 14 + 18 * j, y - 14 + j * 14, 9, 3, INK)
         f.add(f'<ellipse cx="{n(cx + 22)}" cy="{n(y)}" rx="6" ry="14" fill="{SAND_LIGHT}" stroke="{INK}" stroke-width="1.75"/>')
-    f.tex(140, 96, r"\text{polttopuu}", "start", size=22, w=110)
-    f.tex(140, 122, r"m = 1\,\text{kg}", "start", size=22, w=110)
+    f.tex(138, 94, r"\text{polttopuu}", "start", size=24, w=110)
+    f.tex(138, 124, r"m = 1\,\text{kg}", "start", size=24, w=110)
     f.rect(x0, 86, 15 * per, 44, HEAT_LIGHT, HEAT, 2, 3)
     f.tex(x0 + 15 * per + 12, 108, r"15\,\text{MJ}", "start", HEAT, size=24, w=100)
     # petrol: the red can of the opening illustration
@@ -100,8 +100,8 @@ def energia():
     f.rect(cx - 4, top + 3, 28, 8, INK, None, 0, 3)
     f.path(f"M{cx - 29},{top + 14} L{cx - 41},{top - 8} L{cx - 33},{top - 12} L{cx - 22},{top + 8}", ALUMINIUM, INK, 1.75)
     f.path(f"M{cx - 22},{top + 24} L{cx + 22},{top + 52} M{cx + 22},{top + 24} L{cx - 22},{top + 52}", stroke=HOT, w=4, extra='stroke-linecap="round"')
-    f.tex(140, 196, r"\text{bensiini}", "start", size=22, w=110)
-    f.tex(140, 222, r"m = 1\,\text{kg}", "start", size=22, w=110)
+    f.tex(138, 194, r"\text{bensiini}", "start", size=24, w=110)
+    f.tex(138, 224, r"m = 1\,\text{kg}", "start", size=24, w=110)
     f.rect(x0, 186, 43 * per, 44, HEAT_LIGHT, HEAT, 2, 3)
     f.tex(x0 + 43 * per - 12, 208, r"43\,\text{MJ}", "end", HEAT, size=24, w=100)
     f.line(x0, 48, x0, 264, INK, 2)

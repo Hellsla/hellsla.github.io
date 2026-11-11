@@ -114,19 +114,19 @@
 In this chapter a fuel means a chemical fuel: a substance whose chemical energy is released by burning it. The uranium in a nuclear power plant is also called a fuel, but nuclear fuel does not burn: its energy is nuclear energy (chapter *Forms of energy and conservation of energy*). Chemical energy is energy stored in the structure of the atoms and molecules of a substance. When a fuel burns, the structure changes and energy is released as heat and light. Energy does not appear out of nothing: chemical energy is transformed into another form. The same is true of food: your body slowly "burns" food and releases energy from it.
 
 <svg data-fig="energia" viewBox="0 0 600 330" role="img" aria-label="Comparison, energies to scale: a kilogram of air-dry firewood and a kilogram of petrol. Beside each, the energy released in burning is a horizontal bar on the same scale: 15 megajoules from the firewood, 43 megajoules from the petrol. The same mass, a different energy: the difference is the fuel&#x27;s heating value. The energy released is the mass of the fuel times its heating value." style="max-width:100%;font-size:24px">
-  <foreignObject x="6" y="13" width="180" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px;color:#6b7480">$\text{the same mass}$</div></foreignObject>
-  <foreignObject x="268" y="13" width="330" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px;color:#6b7480">$\text{energy released in burning}$</div></foreignObject>
-  <line x1="268" y1="50" x2="268" y2="262" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="248" y="266" width="40" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#6b7480">$0$</div></foreignObject>
-  <line x1="337" y1="50" x2="337" y2="262" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="317" y="266" width="40" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#6b7480">$10$</div></foreignObject>
-  <line x1="406" y1="50" x2="406" y2="262" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="386" y="266" width="40" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#6b7480">$20$</div></foreignObject>
-  <line x1="475" y1="50" x2="475" y2="262" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="455" y="266" width="40" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#6b7480">$30$</div></foreignObject>
-  <line x1="544" y1="50" x2="544" y2="262" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="524" y="266" width="40" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#6b7480">$40$</div></foreignObject>
-  <foreignObject x="474.5" y="294" width="90" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:20px;color:#6b7480">$E\ (\text{MJ})$</div></foreignObject>
+  <foreignObject x="20" y="11.5" width="180" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{the same mass}$</div></foreignObject>
+  <foreignObject x="286" y="11.5" width="330" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{energy released in burning}$</div></foreignObject>
+  <line x1="286" y1="50" x2="286" y2="262" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="266" y="263.5" width="40" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$0$</div></foreignObject>
+  <line x1="350" y1="50" x2="350" y2="262" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="330" y="263.5" width="40" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$10$</div></foreignObject>
+  <line x1="414" y1="50" x2="414" y2="262" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="394" y="263.5" width="40" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$20$</div></foreignObject>
+  <line x1="478" y1="50" x2="478" y2="262" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="458" y="263.5" width="40" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$30$</div></foreignObject>
+  <line x1="542" y1="50" x2="542" y2="262" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="522" y="263.5" width="40" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$40$</div></foreignObject>
+  <foreignObject x="471" y="291.5" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$E\ (\text{MJ})$</div></foreignObject>
   <ellipse cx="32" cy="118" rx="6" ry="14" fill="#e9c98a" stroke="#1f2933" stroke-width="1.75"/>
   <rect x="32" y="104" width="44" height="28" fill="#ffffff" stroke="#1f2933" stroke-width="1.75"/>
   <rect x="40" y="104" width="9" height="3" fill="#1f2933"/>
@@ -142,19 +142,19 @@ In this chapter a fuel means a chemical fuel: a substance whose chemical energy 
   <rect x="64" y="74" width="9" height="3" fill="#1f2933"/>
   <rect x="82" y="88" width="9" height="3" fill="#1f2933"/>
   <ellipse cx="100" cy="88" rx="6" ry="14" fill="#f1dfb5" stroke="#1f2933" stroke-width="1.75"/>
-  <foreignObject x="140" y="83" width="110" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$\text{firewood}$</div></foreignObject>
-  <foreignObject x="140" y="109" width="110" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$m = 1\,\text{kg}$</div></foreignObject>
-  <rect x="268" y="86" width="103.5" height="44" rx="3" fill="#ffc078" stroke="#e8590c" stroke-width="2"/>
-  <foreignObject x="383.5" y="93.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$15\,\text{MJ}$</div></foreignObject>
+  <foreignObject x="138" y="79.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{firewood}$</div></foreignObject>
+  <foreignObject x="138" y="109.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$m = 1\,\text{kg}$</div></foreignObject>
+  <rect x="286" y="86" width="96" height="44" rx="3" fill="#ffc078" stroke="#e8590c" stroke-width="2"/>
+  <foreignObject x="394" y="93.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$15\,\text{MJ}$</div></foreignObject>
   <path d="M44,238 V190 L58,176 H112 V238 Z" fill="#f2a69c" stroke="#1f2933" stroke-width="1.75" stroke-linejoin="round"/>
   <rect x="74" y="179" width="28" height="8" rx="3" fill="#1f2933"/>
   <path d="M49,190 L37,168 L45,164 L56,184" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.75" stroke-linejoin="round"/>
   <path d="M56,200 L100,228 M100,200 L56,228" fill="none" stroke="#c92a2a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
-  <foreignObject x="140" y="183" width="110" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$\text{petrol}$</div></foreignObject>
-  <foreignObject x="140" y="209" width="110" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$m = 1\,\text{kg}$</div></foreignObject>
-  <rect x="268" y="186" width="296.5" height="44" rx="3" fill="#ffc078" stroke="#e8590c" stroke-width="2"/>
-  <foreignObject x="452.5" y="193.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#e8590c">$43\,\text{MJ}$</div></foreignObject>
-  <line x1="268" y1="48" x2="268" y2="264" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="138" y="179.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{petrol}$</div></foreignObject>
+  <foreignObject x="138" y="209.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$m = 1\,\text{kg}$</div></foreignObject>
+  <rect x="286" y="186" width="275" height="44" rx="3" fill="#ffc078" stroke="#e8590c" stroke-width="2"/>
+  <foreignObject x="449" y="193.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#e8590c">$43\,\text{MJ}$</div></foreignObject>
+  <line x1="286" y1="48" x2="286" y2="264" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <foreignObject x="41" y="291.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$E = Hm$</div></foreignObject>
 </svg>
 

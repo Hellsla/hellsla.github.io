@@ -150,15 +150,15 @@ def unit_power():
         f.line(x, ya, x, ly + 16, MUTED, 1.25)
         icon(x - iw / 2, ly - 18)
         tx = x + iw / 2 + 8 if side == "start" else x - iw / 2 - 8
-        f.tex(tx, ly - 8, r"\text{" + name + "}", side, size=22, w=300)
-        f.tex(tx, ly + 16, lab, side, HEAT, size=22, w=120)
+        f.tex(tx, ly - 8, r"\text{" + name + "}", side, size=24, w=300)
+        f.tex(tx, ly + 16, lab, side, HEAT, size=24, w=120)
         f.circle(x, ya, 6.5, HEAT, WHITE, 2)
     f.arrow(x0, ya, x0 + 6 * per + 46, ya, INK, 2.5, 13)
     for k in range(0, 7):
         f.line(x0 + k * per, ya, x0 + k * per, ya + 7, INK, 2)
-        f.tex(x0 + k * per, ya + 26, "10^{" + str(3 + k) + "}", "middle", MUTED, size=22, w=60)
-    f.tex(x0 + 6 * per + 82, ya + 26, r"P\ (\text{W})", "end", size=22, w=80)
-    f.tex(x0, ya + 58, r"\text{jokainen väli on 10-kertainen}", "start", MUTED, size=20, w=330)
+        f.tex(x0 + k * per, ya + 26, "10^{" + str(3 + k) + "}", "middle", MUTED, size=24, w=60)
+    f.tex(x0 + 6 * per + 46, ya + 58, r"P\ (\text{W})", "end", size=24, w=80)
+    f.tex(x0, ya + 58, r"\text{jokainen väli on 10-kertainen}", "start", MUTED, size=24, w=330)
     return f.svg()
 
 
