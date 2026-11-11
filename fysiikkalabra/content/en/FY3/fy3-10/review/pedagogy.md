@@ -1,27 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: 72918ee2d2e88fc2
+CONTENT-HASH: 77345b49fdf269d8
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- Resolved round 2: the 'The pascal is the correct unit' feedback is rewritten (units must fit R).
-- lesson.md Key idea ("the temperature in kelvins is directly proportional to the mean kinetic energy of the particles") — mean kinetic energy is FY4 per the FY3 scope and nothing in the investigation uses it (carried from round 1). Fix: "the particles move faster the higher the temperature in kelvins", as the figures show.
-- inquiry.json workload — the core path still has about ten Tutki items (3 weighing items, pred-1, sim, two experiments, taulukko, laske-r, conclusion). Fix: mark `taulukko` optional; it repeats exp-1/exp-2 and laske-r.
-- inquiry.json pred-1 / reflect — pred-1 is a deduction after the weighing data, yet reflect lists it under "your predictions". Fix: retitle it a deduction and keep only pred-n in reflect, or put a short "same number of particles?" prediction before `punnitus`.
-- inquiry.json lahtolippu / exit-ticket.json — the exit ticket tests only the calculation; the core idea (same p, V, T gives same n for any gas) sits only in the optional check-3. Fix: add a second exit question on it, or make check-3 non-optional.
-- Simulation English text (fy3-10-sim-390.png): decimal commas ("1,17", "1,5", "0,0 s") and "Speed: normal (0.5x)" beside a "mean over 0,0 s" reading that confuses before the first run. Fix: English decimal points; show "–" until a mean exists.
+- inquiry.json (activities `tutki`) — Tutki holds nine tasks (weighing ×3, sim, two experiments, table, R calculation, conclusion), and the `taulukko` table repeats what Experiments 1–2 have already shown. That is heavy for one hour. Mark `taulukko` optional, or fold its last-column idea into the conclusion.
+- inquiry.json `exp-1`/`exp-2` — the volume is locked in both experiments, yet `check-2` and the "p ∝ NT/V" paragraph require the 1/V dependence. Only the table row `V = 50` and `V = 25` hints at it. Add a short optional third run (or a table-reading question) that varies V, so the student has seen V before the formula uses it.
+- inquiry.json `pred-n`, wrong-option feedback — it says "In measurements the pressure grew …". The student has not measured yet when they first read it (they reopen the box after the experiment, so it is acceptable). Reword it as "The experiment shows …" so the wording agrees with the reveal.
+- lesson.md:102 — "The gas laws in the chapter … applied to a fixed amount of gas": use "apply" (a rule that still holds) or "concerned a fixed amount of gas".
+- inquiry.json `pred-1` — a "Deduce" task placed in Tutki after the data is a question to reason from the evidence, not a prediction. That is fine, but the title "Prediction" in the reflect list may confuse. Call it "Deduce" in `reflect` as well.
 
 ## Checked
-- delta review 2026-11-10 (measurement window reset, teacher's FY3 brief): slider change of N, T or V now empties the average, 0,5 s settling note replaces the value, bar keeps axis and hides its number; Nollaa mittaus still works (tAvg 0,15 settling); howto and 'paina Nollaa mittaus ja odota ~2 s' remain valid and the note tells the student why to wait; measured/predicted stays 0,93-1,06 after settling so N, T, V experiments can still confirm or refute predictions; no value is shown that could be misread. No blocking findings.
-- delta review 2026-11-07 round 2 (follow-up consistency edits): the 'Etsi virhe' feedback on the pressure and volume options now says the units must fit R's unit (Pa with m³, kPa with l, 1 kPa·l = 1 J) instead of calling the pascal the only correct unit; each still ends 'the error is elsewhere' without disclosing it, so it repairs the misconception and matches the lesson's new 1 kPa·l = 1 J text.
-- delta review 2026-11-07 (teacher's proofread replacement texts): the symbol list of $pV = nRT$ and the new unit paragraph (R in J/(mol·K), so pV in joules; Pa·m³ usual, kPa·l also gives J; be consistent) are clear and agree with the worked example and the Sekoitetut yksiköt misconception; inquiry and exit-ticket edits are unit typesetting only. en: the translation keeps the meaning.
-- Round 1 blocking resolved: check-2 solution now uses p ∝ NT/V and N ∝ n; no undefined k.
-- Learning path follows the slot goals (solve for a quantity from pV = nRT, gas laws combined, particle-level pressure); the balloon question is answered only after the weighing data and the student's commitment.
-- pred-n is refutable by exp-1 (initial state set, T and V locked, min 2 rows); every wrong option's feedback repairs its misconception, and the closed Ennusta box reads sensibly afterwards.
-- exp-2 gives a real challenge (find N for p = 1.00 at 600 K) whose result emerges from counted hits; hints and mistakes[] match real errors.
-- Worked example: seven stages, one step each, with conversions and reasonableness; it differs from siirto and the exercises.
-- check-1 and check-c2 distractors are misconception-based (Celsius doubling, degrees as percent); explain criteria are observable.
-- Figures (#3-#7) are uncluttered, labelled and legible at 390 px; the lab at 1280 px shows sim beside the experiments; the readings table fits at 390 px.
-- Phone usability: sim controls, readout and the three explanation boxes are readable at 390 px; nothing clipped.
-- Exercises and Finnish are out of scope for this packet.
+- Path: the opening question about the helium and air balloons is answered only after the student commits (weighing → deduction), and the slot's goals (equation of state, solving for a quantity) are met without extra scope.
+- Prerequisite retrieval (Boyle's law) is optional and has misconception-based distractors.
+- `pred-n` can be refuted by Experiment 1, locks T and V, and has a `min` of 2; its options name real misconceptions (collisions, crowding), and each has its own feedback.
+- Experiment 2 uses emergent hit-count pressure, not the formula; its tolerance 0.1 (45–55) fits a noisy read of N and still rejects the mistake values 25, 71 and 200.
+- Worked example has exactly seven stages, with symbols before numbers, a unit-conversion stage and a reasonableness check.
+- Figures in the lesson text come directly after the paragraphs they explain; the theory figures do not give away the weighing result before the student has acted.
+- Simulation at 390 px and 1280 px: the readout is understandable, the controls are legible, and the explanations sit behind Käyttöohje, Mallin oletukset and Laskennan selitys. The lead is under 30 words.
+- Tarkista checks: concept (the three distractors are real misconceptions), temperature in °C versus kelvins, a numeric prediction, and an explain item with observable criteria. The exit ticket tests unit and kelvin handling.
+- Exercises are not judged here (a separate review).
