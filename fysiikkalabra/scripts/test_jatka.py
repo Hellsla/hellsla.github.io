@@ -72,6 +72,15 @@ with sync_playwright() as pw:
             if pg.is_visible(".toc-now"):
                 pg.click(".toc-now"); pg.wait_for_timeout(100); opened = pg.evaluate("document.documentElement.scrollWidth - innerWidth")
             expect(f"{name} at {w} px: no sideways scroll, with the stage list closed and open", closed <= 0 and (opened is None or opened <= 0), (closed, opened))
+            if opened is not None:      # the closed bar stays one row high whatever stage is on screen, so a heading scrolled to is not under it
+                pg.keyboard.press("Escape")
+                tall = pg.evaluate("""async () => { const n = document.querySelector('nav.toc'), out = [];
+                    for (const a of n.querySelectorAll('a[href^="#"]')) { const t = document.getElementById(decodeURIComponent(a.getAttribute('href').slice(1))); if (!t) continue;
+                      t.scrollIntoView(); await new Promise((f) => setTimeout(f, 250)); const h = Math.round(n.getBoundingClientRect().height);
+                      const head = t.matches('h1,h2,h3') ? t : t.querySelector('h2,h3'); const under = head ? Math.round(n.getBoundingClientRect().bottom - head.getBoundingClientRect().top) : 0;
+                      if (h > 64 || under > 2) out.push([a.getAttribute('href'), h, under]); }
+                    return out; }""")
+                expect(f"{name} at {w} px: at every stage the bar is one row high and the stage's heading is not under it", not tall, tall)
             pg.close()
     # 2. the self-assessment levels by name
     pg = b.new_page(viewport={"width": 390, "height": 844}); pg.goto((SITE / f"{OPEN}.html").as_uri()); pg.wait_for_timeout(300)
