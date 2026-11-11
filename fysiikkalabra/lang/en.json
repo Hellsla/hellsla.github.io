@@ -1090,7 +1090,7 @@
       "o_au": "radius of Earth's orbit (1 AU)",
       "o_neptune": "radius of Neptune's orbit",
       "o_ly": "1 light-year",
-      "o_proxima": "Proxima Centauri",
+      "o_proxima": "distance to Proxima Centauri",
       "o_milky": "Milky Way",
       "o_universe": "observable universe",
       "o_quark": "quark",
