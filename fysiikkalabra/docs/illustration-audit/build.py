@@ -39,6 +39,8 @@ def use(fid):
     f = FIGS.get(fid, {})
     if fid.endswith("/hero"):
         return "avauskuva"
+    if fid not in FIGS:
+        return "lukiokohtainen jakso"
     used = " ".join(f.get("used_in", []))
     where = [w for k, w in (("lesson.md", "teoria"), ("inquiry.json", "tutkimusvaihe"), ("exercises.json", "tehtävä"),
                             ("solutions.md", "ratkaisu"), ("tasks.json", "soveltava tehtävä tai koe")) if k in used]
@@ -63,6 +65,14 @@ def fig_svg(fid):
         n = int(name.rsplit("-", 1)[1])
         tags = list(re.finditer(r"<svg\b[^>]*>", src))
         return next((m.group(0) for m in ms if m.start() == tags[n - 1].start()), "") if n <= len(tags) else ""
+    if fid not in FIGS:   # a local course (FY9, FY10, FY14, TVT, Ahjo): not in the catalog, drawn straight from its figures.py
+        code = "import sys,importlib.util;sys.path.insert(0,'scripts');s=importlib.util.spec_from_file_location('f',sys.argv[1]);" \
+               "m=importlib.util.module_from_spec(s);s.loader.exec_module(m);print(m.FIGURES[sys.argv[2]]())"
+        owner, name = fid.split("/", 1)
+        path = next((ROOT / "lessons" / d / owner / "figures.py" for d in ("units", "tutkimukset", "tvt", "ahjo")
+                     if (ROOT / "lessons" / d / owner / "figures.py").is_file()), None)
+        out = subprocess.run([sys.executable, "-c", code, str(path), name], capture_output=True, text=True, cwd=ROOT).stdout if path else ""
+        return out[out.find("<svg"):] if "<svg" in out else ""
     out = subprocess.run([sys.executable, "scripts/figcat.py", "render", fid], capture_output=True, text=True, cwd=ROOT).stdout
     return out[out.find("<svg"):] if "<svg" in out else ""
 
@@ -122,7 +132,7 @@ def catalog(course, rs):
 def counts():
     L = ["| Kurssi | Kuvia | Arvioitu | Pidä | Kevyt korjaus | Piirrä uudelleen | Korvaa | Fysiikan virhe | Arvioimatta |", "|---|---|---|---|---|---|---|---|---|"]
     tot = [0] * 8
-    for p in sorted((HERE / "data").glob("*.tsv"), key=lambda p: int(re.sub(r"\D", "", p.stem))):
+    for p in sorted((HERE / "data").glob("*.tsv"), key=lambda p: (int(re.sub(r"\D", "", p.stem) or 99), p.stem)):
         rs = rows(p.stem)
         c = [len(rs), sum(r["rec"] != "KESKEN" for r in rs)] + [sum(r["rec"] == k for r in rs) for k in ("PIDA", "KEVYT", "UUSI", "KORVAA", "VIRHE", "KESKEN")]
         tot = [a + b for a, b in zip(tot, c)]
