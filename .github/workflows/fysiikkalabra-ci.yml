@@ -68,11 +68,9 @@ jobs:
         with: { fetch-depth: 0 }   # reviews.py verify re-derives carried reviews from history, and the build reads the exercises' reviewed version from it
       - run: git config --global --add safe.directory "$GITHUB_WORKSPACE"   # the container runs as root; the checkout belongs to the runner's user
         working-directory: .
-      - uses: actions/setup-python@v5
-        with: { python-version: "3.12" }
       - uses: actions/setup-node@v4
         with: { node-version: "22" }
-      - run: pip install markdown numpy playwright==1.65.0   # the browser and its system packages are in the job's container (same Playwright version)
+      - run: python --version && python -m pip --version && python -m pip install markdown numpy playwright==1.65.0   # the container's own Python 3.12 (actions/setup-python's build does not run in it); the browser and its system packages are in the image (same Playwright version)
       - run: python scripts/lint_lesson.py --all
       - name: every worked example and exercise has a complete model solution (teacher 2026-10-27)
         run: python scripts/check_solutions.py --all
@@ -130,11 +128,9 @@ jobs:
         with: { fetch-depth: 0 }   # reviews.py verify re-derives carried reviews from history, and the build reads the exercises' reviewed version from it
       - run: git config --global --add safe.directory "$GITHUB_WORKSPACE"   # the container runs as root; the checkout belongs to the runner's user
         working-directory: .
-      - uses: actions/setup-python@v5
-        with: { python-version: "3.12" }
       - uses: actions/setup-node@v4
         with: { node-version: "22" }
-      - run: pip install markdown numpy playwright==1.65.0   # the browser and its system packages are in the job's container (same Playwright version)
+      - run: python --version && python -m pip --version && python -m pip install markdown numpy playwright==1.65.0   # the container's own Python 3.12 (actions/setup-python's build does not run in it); the browser and its system packages are in the image (same Playwright version)
       - run: python scripts/build.py --all
       - name: the solution editor under every exercise (Abitti's Digabi editor, loaded on the first click; copy for L'Math; teacher 2026-11-01)
         run: python scripts/test_writepad.py
@@ -157,11 +153,9 @@ jobs:
         with: { fetch-depth: 0 }   # reviews.py verify re-derives carried reviews from history, and the build reads the exercises' reviewed version from it
       - run: git config --global --add safe.directory "$GITHUB_WORKSPACE"   # the container runs as root; the checkout belongs to the runner's user
         working-directory: .
-      - uses: actions/setup-python@v5
-        with: { python-version: "3.12" }
       - uses: actions/setup-node@v4
         with: { node-version: "22" }
-      - run: pip install markdown numpy playwright==1.65.0   # the browser and its system packages are in the job's container (same Playwright version)
+      - run: python --version && python -m pip --version && python -m pip install markdown numpy playwright==1.65.0   # the container's own Python 3.12 (actions/setup-python's build does not run in it); the browser and its system packages are in the image (same Playwright version)
       - run: python scripts/build.py --all
       - run: python scripts/reviews.py verify
       - name: a temporary FY4 course through the whole pipeline (nothing is published)
@@ -204,11 +198,9 @@ jobs:
         with: { fetch-depth: 0 }   # the build reads the exercises' reviewed version from history
       - run: git config --global --add safe.directory "$GITHUB_WORKSPACE"   # the container runs as root; the checkout belongs to the runner's user
         working-directory: .
-      - uses: actions/setup-python@v5
-        with: { python-version: "3.12" }
       - uses: actions/setup-node@v4
         with: { node-version: "22" }
-      - run: pip install markdown numpy playwright==1.65.0   # the browser and its system packages are in the job's container (same Playwright version)
+      - run: python --version && python -m pip --version && python -m pip install markdown numpy playwright==1.65.0   # the container's own Python 3.12 (actions/setup-python's build does not run in it); the browser and its system packages are in the image (same Playwright version)
       - run: python scripts/build.py --all
       - name: simulations (scripts/test_sims.py page by page, two at a time; scripts/ci_parallel.py)
         env: { PAGES: "${{ needs.plan.outputs.pages }}" }
@@ -229,11 +221,9 @@ jobs:
         with: { fetch-depth: 0 }   # the build reads the exercises' reviewed version from history
       - run: git config --global --add safe.directory "$GITHUB_WORKSPACE"   # the container runs as root; the checkout belongs to the runner's user
         working-directory: .
-      - uses: actions/setup-python@v5
-        with: { python-version: "3.12" }
       - uses: actions/setup-node@v4
         with: { node-version: "22" }
-      - run: pip install markdown numpy playwright==1.65.0   # the browser and its system packages are in the job's container (same Playwright version)
+      - run: python --version && python -m pip --version && python -m pip install markdown numpy playwright==1.65.0   # the container's own Python 3.12 (actions/setup-python's build does not run in it); the browser and its system packages are in the image (same Playwright version)
       - run: python scripts/build.py --all
       - name: inquiry tests (scripts/test_inquiry.py <id> lesson by lesson, two at a time, each worker in its own work tree; scripts/ci_parallel.py)
         env: { PAGES: "${{ needs.plan.outputs.pages }}" }
@@ -253,9 +243,7 @@ jobs:
       - uses: actions/checkout@v4   # the committed site/ is what this check opens (checks-3 fails unless it is a fresh render): no history, no build
       - run: git config --global --add safe.directory "$GITHUB_WORKSPACE"   # the container runs as root; the checkout belongs to the runner's user
         working-directory: .
-      - uses: actions/setup-python@v5
-        with: { python-version: "3.12" }
-      - run: pip install markdown numpy playwright==1.65.0   # the browser and its system packages are in the job's container (same Playwright version)
+      - run: python --version && python -m pip --version && python -m pip install markdown numpy playwright==1.65.0   # the container's own Python 3.12 (actions/setup-python's build does not run in it); the browser and its system packages are in the image (same Playwright version)
       - name: layout (scripts/check_layout.py --site page by page, two at a time; scripts/ci_parallel.py)
         env: { PAGES: "${{ needs.plan.outputs.pages }}" }
         run: python scripts/ci_parallel.py layout --widths "${{ matrix.job.widths }}" --pages "$PAGES" --shard "${{ matrix.job.shard }}" --report "$GITHUB_WORKSPACE/ci-report/layout-${{ strategy.job-index }}.json"
