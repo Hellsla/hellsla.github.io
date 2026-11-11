@@ -1,35 +1,35 @@
-fy2-1/hero|5|5|5|5|PIDA|Pomppujen madaltuminen ja lämpömerkit kertovat energian muuntumisen.|
-fy2-1/energialajit|5|5|4|5|PIDA|
-fy2-1/energian-muuttuminen|5|4|3|5|KEVYT|"sähköenergia" leijuu pariston vieressä eikä kiinnity nuoleen.|
-fy2-1/sailyminen|5|5|5|5|PIDA|Summat täsmäävät; lämpö erottuu rasterilla eikä vain värillä.|
-fy2-1/kitka-pylvaat|5|4|3|5|KEVYT|Akselin nimi E (J) on kiinni rampin piirroksessa ja C-merkinnässä.|
-fy2-2/hero|5|5|5|4|KEVYT|Aurinko sädekehällä; talotyylissä pelkkä kiekko.||KEVYT KORJAUS hyväksytty, ryhmä B (opettaja 2026-11-11)
-fy2-2/ketju|5|4|4|5|PIDA|
+fy2-1/hero|5|5|5|5|PIDA|Pomppujen madaltuminen ja lämpömerkit kertovat energian muuntumisen.||
+fy2-1/energialajit|5|5|4|5|PIDA|||
+fy2-1/energian-muuttuminen|5|4|3|5|KEVYT|"sähköenergia" leijuu pariston vieressä eikä kiinnity nuoleen.||
+fy2-1/sailyminen|5|5|5|5|PIDA|Summat täsmäävät; lämpö erottuu rasterilla eikä vain värillä.||
+fy2-1/kitka-pylvaat|5|4|3|5|KEVYT|Akselin nimi E (J) on kiinni rampin piirroksessa ja C-merkinnässä.||
+fy2-2/hero|5|5|5|4|KEVYT|Aurinko sädekehällä; talotyylissä pelkkä kiekko.||KEVYT KORJAUS hyväksytty, ryhmä B (opettaja 2026-11-11); yhteinen korjaus TEHTY ja hyväksytty 2026-11-11
+fy2-2/ketju|5|4|4|5|PIDA|||
 fy2-2/tikapuut|5|5|3|5|KEVYT|Paikat oikein. "omena metrin ylös" menee tulitikun viiteviivan päälle; yläosa tyhjä.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11)
 fy2-2/sailyminen|5|5|4|3|KEVYT|Virtakaavio eri piirrostavalla kuin fy2-4/lamp (vaaleat tasavärit, ei harmaata tuloa).||KEVYT KORJAUS hyväksytty, ryhmä C (opettaja 2026-11-11)
-fy2-2/tikapuut-kohteet|5|4|4|5|PIDA|
-fy2-3/hero|5|4|5|5|PIDA|
+fy2-2/tikapuut-kohteet|5|4|4|5|PIDA|||
+fy2-3/hero|5|4|5|5|PIDA|||
 fy2-3/bars|5|5|4|4|KEVYT|Pylväissä liukuväri, jolla ei ole merkitystä; fy2-6/fi-bars käyttää tasaväriä.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11)
-fy2-3/graph|5|5|5|5|PIDA|
-fy2-3/graph-ab|5|4|5|5|PIDA|
-fy2-4/hero|5|5|5|5|PIDA|
-fy2-4/lamp|5|5|5|5|PIDA|Malli energiavirtakaavioille: harmaa tulo, vihreä hyöty, oranssi lämpö, leveydet mittakaavassa.|
-fy2-4/pair|5|5|5|5|PIDA|Kaksi lamppua samassa mittakaavassa.|
-fy2-4/grid|5|5|4|5|PIDA|
-fy2-5/hero|5|4|5|5|PIDA|
-fy2-5/energia|5|2|4|5|KORVAA|Kolme halkoa, nuoli ja liekki toistavat kaavan E = Hm kuvakkeina, mutta eivät näytä, mitä lämpöarvo tarkoittaa. Kuva on koriste.|Vertailukuva kahdesta polttoaineesta samalla massalla: vasemmalla 1 kg polttopuuta, oikealla 1 kg bensiiniä (kanisteri), kummankin alla vapautuva energia vaakapalkkina samassa mittakaavassa (15 MJ ja 43 MJ, tasaväri, lämmön oranssi). Otsikkona "sama massa m = 1 kg". Opiskelija näkee, että lämpöarvo on energia kilogrammaa kohti. Esineet avauskuvan fy2-5/hero piirrostavalla; säilytä kaava E = Hm palkkien alla.|KORVAA ehdotetulla vertailukuvalla (opettaja 2026-11-11)
+fy2-3/graph|5|5|5|5|PIDA|||
+fy2-3/graph-ab|5|4|5|5|PIDA|||
+fy2-4/hero|5|5|5|5|PIDA|||
+fy2-4/lamp|5|5|5|5|PIDA|Malli energiavirtakaavioille: harmaa tulo, vihreä hyöty, oranssi lämpö, leveydet mittakaavassa.||
+fy2-4/pair|5|5|5|5|PIDA|Kaksi lamppua samassa mittakaavassa.||
+fy2-4/grid|5|5|4|5|PIDA|||
+fy2-5/hero|5|4|5|5|PIDA|||
+fy2-5/energia|5|2|4|5|KORVAA|Kolme halkoa, nuoli ja liekki toistavat kaavan E = Hm kuvakkeina, mutta eivät näytä, mitä lämpöarvo tarkoittaa. Kuva on koriste.|Vertailukuva kahdesta polttoaineesta samalla massalla: vasemmalla 1 kg polttopuuta, oikealla 1 kg bensiiniä (kanisteri), kummankin alla vapautuva energia vaakapalkkina samassa mittakaavassa (15 MJ ja 43 MJ, tasaväri, lämmön oranssi). Otsikkona "sama massa m = 1 kg". Opiskelija näkee, että lämpöarvo on energia kilogrammaa kohti. Esineet avauskuvan fy2-5/hero piirrostavalla; säilytä kaava E = Hm palkkien alla.|KORVAA ehdotetulla vertailukuvalla (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-11
 fy2-5/lampoarvot|5|5|4|4|KEVYT|Liukuväri pylväissä, ks. fy2-3/bars.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11)
-fy2-5/etiketti|5|4|4|5|PIDA|
-fy2-6/hero|5|4|5|4|PIDA|Voimalaitosmaisema toistuu sarjassa kahdeksan kertaa; tämä on niistä perustelluin.|
-fy2-6/plants|5|5|4|5|PIDA|
-fy2-6/fi-bars|5|5|4|5|KEVYT|Vuosi 2024 ja lähde ovat vain leipätekstissä; kuva lainataan tehtäviin ja tieto vanhenee.|
-fy2-6/unit-power|5|3|3|4|UUSI|Nimet ovat vasemmassa reunassa ja pisteet kaukana oikealla, joten nimi ja piste eivät yhdisty; ensimmäinen nimi on akseliviivan päällä. Kuvan ajatus (logaritminen tehoasteikko) on oikea, toteutus ei toimi.|Sama esitystapa kuin fy2-2/tikapuut: vaakasuora logaritminen akseli 1 kW – 10 GW, jokainen laitos pisteenä akselilla ja nimi viiteviivan päässä pisteen yläpuolella porrastettuna (aurinkopaneelit 5 kW, tuulivoimala 5 MW, vesivoimalaitos 100 MW, Olkiluoto 3 1600 MW). Jokaisen nimen viereen pieni talotyylin kuvake (paneeli, roottori, pato, reaktorirakennus). Alle harmaalla "jokainen väli on 10-kertainen". Säilytä arvot ja akselin yksikkö.|PIIRRÄ UUDELLEEN (opettaja 2026-11-11)
-fy2-7/hero|5|5|5|5|PIDA|
-fy2-7/grid|5|5|4|5|PIDA|
+fy2-5/etiketti|5|4|4|5|PIDA|||
+fy2-6/hero|5|4|5|4|PIDA|Voimalaitosmaisema toistuu sarjassa kahdeksan kertaa; tämä on niistä perustelluin.||
+fy2-6/plants|5|5|4|5|PIDA|||
+fy2-6/fi-bars|5|5|4|5|KEVYT|Vuosi 2024 ja lähde ovat vain leipätekstissä; kuva lainataan tehtäviin ja tieto vanhenee.||
+fy2-6/unit-power|5|3|3|4|UUSI|Nimet ovat vasemmassa reunassa ja pisteet kaukana oikealla, joten nimi ja piste eivät yhdisty; ensimmäinen nimi on akseliviivan päällä. Kuvan ajatus (logaritminen tehoasteikko) on oikea, toteutus ei toimi.|Sama esitystapa kuin fy2-2/tikapuut: vaakasuora logaritminen akseli 1 kW – 10 GW, jokainen laitos pisteenä akselilla ja nimi viiteviivan päässä pisteen yläpuolella porrastettuna (aurinkopaneelit 5 kW, tuulivoimala 5 MW, vesivoimalaitos 100 MW, Olkiluoto 3 1600 MW). Jokaisen nimen viereen pieni talotyylin kuvake (paneeli, roottori, pato, reaktorirakennus). Alle harmaalla "jokainen väli on 10-kertainen". Säilytä arvot ja akselin yksikkö.|PIIRRÄ UUDELLEEN (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-11
+fy2-7/hero|5|5|5|5|PIDA|||
+fy2-7/grid|5|5|4|5|PIDA|||
 fy2-7/district|5|5|4|5|KEVYT|"lämpölaitos" on kiinni kuvan vasemmassa reunassa.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11)
 fy2-7/storage|5|4|3|5|KEVYT|"pumppuvoimala" menee jakoviivan päälle.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11)
 fy2-7/sankey|5|4|3|3|KEVYT|Kolmas piirrostapa energiavirtakaavioille (tumma tasaväri ilman ääriviivaa).||KEVYT KORJAUS hyväksytty, ryhmä C (opettaja 2026-11-11)
-fy2-8/hero|5|4|5|4|KEVYT|Aurinko sädekehällä; talotyylissä pelkkä kiekko.||KEVYT KORJAUS hyväksytty, ryhmä B (opettaja 2026-11-11)
+fy2-8/hero|5|4|5|4|KEVYT|Aurinko sädekehällä; talotyylissä pelkkä kiekko.||KEVYT KORJAUS hyväksytty, ryhmä B (opettaja 2026-11-11); yhteinen korjaus TEHTY ja hyväksytty 2026-11-11
 fy2-8/greenhouse|5|5|4|4|KEVYT|Aurinko sädekehällä. Muuten sopiva yksinkertaistus.||KEVYT KORJAUS hyväksytty, ryhmä B (opettaja 2026-11-11)
-fy2-8/emissions|5|5|5|5|PIDA|
-fy2-koe/fy2-k4-bars|5|4|4|4|PIDA|
+fy2-8/emissions|5|5|5|5|PIDA|||
+fy2-koe/fy2-k4-bars|5|4|4|4|PIDA|||

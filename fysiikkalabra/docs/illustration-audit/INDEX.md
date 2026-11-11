@@ -104,3 +104,17 @@ kaikki päätökset on annettu.
 
 Kuvaa muutetaan vain, jos opettaja on sen erikseen sanonut: päätössarakkeessa on hyväksyntä. Kuva, jonka päätös on
 ODOTTAA, jätetään ennalleen, vaikka luettelossa olisi muutosehdotus.
+
+## Toteutuksen tila (2026-11-11, haara `claude/kuvituskorjaukset`)
+
+- Kaikki kahdeksan uudelleen piirrettävää tai korvattavaa kuvaa on tehty ja opettaja on hyväksynyt ne. `fy6-6/hero`
+  piirrettiin lähikuvaksi samasta paahtimesta eikä vaihdettu lieteen: luvun Miksi-kysymys koskee paahdinta.
+- Yhteinen korjaus on tehty: akselin nimi nuolen viereen (67 kuvaajaa) ja Aurinko ilman sädekehää (23 kuvaa), lisäksi
+  yksikön `fy9-liike` tehtäväsarjan kuvaaja. Opettaja hyväksyi myös 36 kuvaa, jotka arvioin alun perin pidettäviksi.
+- `fy6-6/energia`: yksikkökorjaus peruttu, murtoluvut näyttävät yksiköiden supistumisen.
+- Ryhmä F (yksiköt pystymurtoina) ei ole yhteistä koodia vaan 13 kuvakohtaista korjausta kurssikierroksille. Samoin
+  ryhmän A viisi käsin sijoitettua nimeä (`fy4-5/pick-*`, `fy8-8/levels`) ja ryhmän B kaksi omaa aurinkoa
+  (`fy2-8/greenhouse`, `fy3-6/hero`).
+- Kevyt hyväksyntä (`reviews.py carry-item`) kattaa nyt myös tutkimukset, yksiköt, TVT-ohjeet, Sovella-sivut ja
+  esimerkkikokeet.
+- Havainto: luvun `fy3-2` sivulle upotettu kuva `joule` poikkeaa siitä, minkä `figures.py` piirtää. Ei korjattu.

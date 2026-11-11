@@ -58,7 +58,7 @@ Kuvia 112. Asteikko 1–5: F fysiikka, P pedagogiikka, V visuaalinen laatu, T ty
 | [`fy8-16/koostumus`](catalog/FY8.html#fy8-16-koostumus) | Maailmankaikkeuden kehitys; kaavio: teoria | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy8-16/hubble`](catalog/FY8.html#fy8-16-hubble) | Maailmankaikkeuden kehitys; kuvaaja: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy8-16/hubble-t`](catalog/FY8.html#fy8-16-hubble-t) | Maailmankaikkeuden kehitys; kuvaaja: tutkimusvaihe | 5 | 4 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
-| [`fy8-2/hero`](catalog/FY8.html#fy8-2-hero) | Spektrit paljastavat atomin energiatasot; avauskuva | 5 | 5 | 5 | 4 | KEVYT KORJAUS | Ikkunan Aurinko sädekehällä. |  | KEVYT KORJAUS hyväksytty, ryhmä B (opettaja 2026-11-11) |
+| [`fy8-2/hero`](catalog/FY8.html#fy8-2-hero) | Spektrit paljastavat atomin energiatasot; avauskuva | 5 | 5 | 5 | 4 | KEVYT KORJAUS | Ikkunan Aurinko sädekehällä. |  | KEVYT KORJAUS hyväksytty, ryhmä B (opettaja 2026-11-11); yhteinen korjaus TEHTY ja hyväksytty 2026-11-11 |
 | [`fy8-2/spectra`](catalog/FY8.html#fy8-2-spectra) | Spektrit paljastavat atomin energiatasot; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ | Jatkuva, emissio- ja absorptiospektri kohdakkain samalla asteikolla. |  | ODOTTAA |
 | [`fy8-2/fluorescence`](catalog/FY8.html#fy8-2-fluorescence) | Spektrit paljastavat atomin energiatasot; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ | Energiat vastaavat aallonpituuksia (tarkistettu). |  | ODOTTAA |
 | [`fy8-2/levels`](catalog/FY8.html#fy8-2-levels) | Spektrit paljastavat atomin energiatasot; kaavio: teoria | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |

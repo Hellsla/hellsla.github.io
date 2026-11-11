@@ -1,14 +1,14 @@
-ahjo-3d-mallinnus/csg|5|5|5|5|PIDA|
-ahjo-3d-mallinnus/pidike|5|5|4|5|PIDA|
-ahjo-3d-mallinnus/sovitekoe|5|5|5|5|PIDA|
-ahjo-3d-tulostus/suunta|5|5|5|5|PIDA|Kerrosten suunta ja kuorma: miksi tulostussuunta ratkaisee lujuuden.|
-ahjo-3d-tulostus/ensikerros|5|5|5|5|PIDA|
-ahjo-arduino/kytkenta|5|5|5|5|PIDA|Virran suunta ja LEDin napaisuus oikein.|
-ahjo-arduino/koekytkentalevy|5|5|5|5|PIDA|Sama kytkentä levyllä kuin kaaviossa; johtavat rivit korostettu.|
-ahjo-harjarobotti/robotti|5|5|4|5|PIDA|
-ahjo-led-piiri/kytkenta|5|5|5|5|PIDA|
-ahjo-led-piiri/sarja-rinnan|5|5|4|5|PIDA|
-ahjo-sarjaplotteri/kytkenta|5|5|4|5|PIDA|
-ahjo-savelma/kytkenta|5|5|5|5|PIDA|
-ahjo-servo/kytkenta|5|5|4|5|PIDA|
-ahjo-valokortti/kortti|5|5|5|5|PIDA|
+ahjo-3d-mallinnus/csg|5|5|5|5|PIDA|||
+ahjo-3d-mallinnus/pidike|5|5|4|5|PIDA|||
+ahjo-3d-mallinnus/sovitekoe|5|5|5|5|PIDA|||
+ahjo-3d-tulostus/suunta|5|5|5|5|PIDA|Kerrosten suunta ja kuorma: miksi tulostussuunta ratkaisee lujuuden.||
+ahjo-3d-tulostus/ensikerros|5|5|5|5|PIDA|||
+ahjo-arduino/kytkenta|5|5|5|5|PIDA|Virran suunta ja LEDin napaisuus oikein.||
+ahjo-arduino/koekytkentalevy|5|5|5|5|PIDA|Sama kytkentä levyllä kuin kaaviossa; johtavat rivit korostettu.||
+ahjo-harjarobotti/robotti|5|5|4|5|PIDA|||
+ahjo-led-piiri/kytkenta|5|5|5|5|PIDA|||
+ahjo-led-piiri/sarja-rinnan|5|5|4|5|PIDA|||
+ahjo-sarjaplotteri/kytkenta|5|5|4|5|PIDA|||
+ahjo-savelma/kytkenta|5|5|5|5|PIDA|||
+ahjo-servo/kytkenta|5|5|4|5|PIDA|||
+ahjo-valokortti/kortti|5|5|5|5|PIDA|||

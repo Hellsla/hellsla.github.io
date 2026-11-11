@@ -1,68 +1,68 @@
-fy1-1/hero|5|4|5|5|PIDA|Zoomaus atomista galaksiin kantaa luvun ajatuksen ilman tekstiä.|
-fy1-1/scale-axis|5|4|3|5|KEVYT|Paikat oikein, mutta nimet ovat kolmessa kerroksessa ja Maa–Aurinko sekä hius–ihminen ahtautuvat; 360 px:ssä vaikea lukea.|
-fy1-1/ladder|5|5|4|5|PIDA|Viisi kymmenkertaista askelta näkyy ja lasketaan auki; sanoo itse olevansa kaavamainen.|
-fy1-1/eclipse|5|4|5|5|PIDA|Tehtävän tilannekuva, ei lukuarvoja.|
-fy1-1/rain-field|5|4|4|5|PIDA|Tilanne tunnistuu heti.|
-fy1-1/matter-ladder|5|5|4|5|PIDA|Rakenteet ja koot rinnakkain; pienet kuvakkeet riittävät.|
-fy1-1/atom-stadium|5|5|4|5|PIDA|Vertaus toimii ja kuva myöntää herneen olevan liian suuri.|
-fy1-1/cosmic-address|5|4|4|4|PIDA|Sisäkkäiset kehykset ovat selkeä ratkaisu; ainoa kuva tällä esitystavalla.|
-fy1-1/object-types|4|4|4|5|KEVYT|"musta aukko" on kohdassa noin 10^10 m, mikä vastaa vain supermassiivista mustaa aukkoa; tähtimassainen olisi 10^4–10^5 m. Täsmennä nimi tai paikka.|
-fy1-1/interactions|5|4|4|5|PIDA|Neljä vuorovaikutusta samalla rakenteella; voimanuoli yläviivalla.|
-fy1-1/scale-marks|5|4|5|5|PIDA|Tehtäväversio, josta eksponentit luetaan.|
-fy1-2/hero|5|4|5|4|KEVYT|Hyvä kuva, mutta lähes sama aihe kuin fy1-5/hero (Aurinko, planeetat, luotain): moduulisivun laatat sekoittuvat.|
-fy1-2/quantity|5|5|5|5|PIDA|Sarjan malliesimerkki: mittaus ja merkintä samassa kuvassa, mittakaavassa.|
-fy1-2/prefixes|5|5|5|5|PIDA|Etuliiteketju luettavissa yhdellä silmäyksellä.|
+fy1-1/hero|5|4|5|5|PIDA|Zoomaus atomista galaksiin kantaa luvun ajatuksen ilman tekstiä.||
+fy1-1/scale-axis|5|4|3|5|KEVYT|Paikat oikein, mutta nimet ovat kolmessa kerroksessa ja Maa–Aurinko sekä hius–ihminen ahtautuvat; 360 px:ssä vaikea lukea.||
+fy1-1/ladder|5|5|4|5|PIDA|Viisi kymmenkertaista askelta näkyy ja lasketaan auki; sanoo itse olevansa kaavamainen.||
+fy1-1/eclipse|5|4|5|5|PIDA|Tehtävän tilannekuva, ei lukuarvoja.||
+fy1-1/rain-field|5|4|4|5|PIDA|Tilanne tunnistuu heti.||
+fy1-1/matter-ladder|5|5|4|5|PIDA|Rakenteet ja koot rinnakkain; pienet kuvakkeet riittävät.||
+fy1-1/atom-stadium|5|5|4|5|PIDA|Vertaus toimii ja kuva myöntää herneen olevan liian suuri.||
+fy1-1/cosmic-address|5|4|4|4|PIDA|Sisäkkäiset kehykset ovat selkeä ratkaisu; ainoa kuva tällä esitystavalla.||
+fy1-1/object-types|4|4|4|5|KEVYT|"musta aukko" on kohdassa noin 10^10 m, mikä vastaa vain supermassiivista mustaa aukkoa; tähtimassainen olisi 10^4–10^5 m. Täsmennä nimi tai paikka.||
+fy1-1/interactions|5|4|4|5|PIDA|Neljä vuorovaikutusta samalla rakenteella; voimanuoli yläviivalla.||
+fy1-1/scale-marks|5|4|5|5|PIDA|Tehtäväversio, josta eksponentit luetaan.||
+fy1-2/hero|5|4|5|4|KEVYT|Hyvä kuva, mutta lähes sama aihe kuin fy1-5/hero (Aurinko, planeetat, luotain): moduulisivun laatat sekoittuvat.||
+fy1-2/quantity|5|5|5|5|PIDA|Sarjan malliesimerkki: mittaus ja merkintä samassa kuvassa, mittakaavassa.||
+fy1-2/prefixes|5|5|5|5|PIDA|Etuliiteketju luettavissa yhdellä silmäyksellä.||
 fy1-2/conversion|5|4|3|5|KEVYT|Alaosan kolme riviä ovat eri tavoin sisennettyjä; "= 1 AU" jää irralleen.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11)
 fy1-2/ruler-read|5|5|4|5|KEVYT|Yksikkö "cm" leijuu kaukana oikeassa alakulmassa; kuuluu asteikon päähän.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11)
-fy1-2/tap-bucket|5|4|5|5|PIDA|Tunnistettavat materiaalit, ei lukuarvoja.|
+fy1-2/tap-bucket|5|4|5|5|PIDA|Tunnistettavat materiaalit, ei lukuarvoja.||
 fy1-2/cyclist|5|4|3|4|KEVYT|Pyöräilijän vartalo on viivahahmo, muu kuva täytettyä kuvitusta; hahmo erottuu heikompana kuin fy4- ja fy5-avauskuvien ihmiset.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11)
-fy1-3/hero|5|5|5|5|PIDA|Kymmenen kelloa ja eri lukemat kertovat hajonnan sanomatta sanaakaan.|
-fy1-3/paper-stack|5|4|5|5|PIDA|
-fy1-3/pendulum-timing|5|4|5|5|PIDA|
-fy1-3/error-types|5|5|5|5|PIDA|Sama mittaus kahdesti samalla akselilla: ero näkyy suoraan.|
-fy1-3/range-half|5|5|5|5|PIDA|
-fy1-3/zero-scale|5|5|4|5|PIDA|
-fy1-3/example-plot|5|4|4|5|PIDA|
-fy1-3/pendulum-dots|5|4|4|5|PIDA|
-fy1-4/hero|5|5|5|5|PIDA|
-fy1-4/candle|5|4|5|5|PIDA|
-fy1-4/spring-masses|5|5|5|5|PIDA|Koelaitteisto tunnistettavana, ei laatikkokaaviona.|
-fy1-4/scatter|5|5|4|5|PIDA|
-fy1-4/slope|5|5|3|5|KEVYT|Δx on katkoviivan alla kaukana kolmiosta ja kaava k = Δy/Δx ahtaasti oikeassa alakulmassa.|
-fy1-4/kettle|5|5|4|5|PIDA|
-fy1-4/scatter-points|5|4|4|5|KEVYT|Akselin nimi s (m) on kiinni kuvan yläreunassa.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11)
-fy1-4/~inquiry-1|5|4|4|5|PIDA|Käsin upotettu kuva (ei figures.py:ssä), ks. INDEX.|
-fy1-5/hero|5|4|5|4|KEVYT|Ks. fy1-2/hero: sama aihepiiri kahdessa saman moduulin laatassa.|
-fy1-5/lightning|5|4|5|5|PIDA|
-fy1-5/two-friends|5|4|4|5|PIDA|
-fy1-5/motion|5|5|5|5|PIDA|Yhtä pitkät välit yhtä pitkissä ajoissa näkyvät ilman kaavaa.|
-fy1-5/graph|5|5|4|5|PIDA|
-fy1-5/line-read|5|4|4|5|PIDA|
-fy1-5/pick-back|5|4|4|5|PIDA|Vastausvaihtoehto, tarkoituksella pelkistetty.|
-fy1-5/pick-away|5|4|4|5|PIDA|
-fy1-5/pick-distance|5|4|4|5|PIDA|
-fy1-5/pick-vt|5|4|4|5|PIDA|
-fy1-6/hero|5|5|5|5|PIDA|
-fy1-6/free-fall|5|5|4|5|PIDA|Matkat 4,9, 14,7 ja 24,5 m sekä nopeusnuolet ovat mittakaavassa (tarkistettu).|
-fy1-6/vt-graph|5|5|4|5|PIDA|
-fy1-6/same-fall|5|5|4|5|PIDA|Putoamismatkat 1 : 4 oikein.|
-fy1-6/two-planets|5|4|4|5|PIDA|
-fy1-6/apple|5|4|5|5|PIDA|
-fy1-6/light-gates|5|5|5|5|PIDA|Mittausasetelma, josta laite tunnistuu.|
-fy1-6/~inquiry-1|5|4|4|5|KEVYT|"sovitettu suora" ulottuu kuvaajan oikeaan reunaan asti. Käsin upotettu kuva.|
-fy1-7/hero|5|5|5|5|PIDA|Sama tilavuus, vaaka kallistuu raudan puolelle: tiheys näkyy.|
+fy1-3/hero|5|5|5|5|PIDA|Kymmenen kelloa ja eri lukemat kertovat hajonnan sanomatta sanaakaan.||
+fy1-3/paper-stack|5|4|5|5|PIDA|||
+fy1-3/pendulum-timing|5|4|5|5|PIDA|||
+fy1-3/error-types|5|5|5|5|PIDA|Sama mittaus kahdesti samalla akselilla: ero näkyy suoraan.||
+fy1-3/range-half|5|5|5|5|PIDA|||
+fy1-3/zero-scale|5|5|4|5|PIDA|||
+fy1-3/example-plot|5|4|4|5|PIDA|||
+fy1-3/pendulum-dots|5|4|4|5|PIDA|||
+fy1-4/hero|5|5|5|5|PIDA|||
+fy1-4/candle|5|4|5|5|PIDA|||
+fy1-4/spring-masses|5|5|5|5|PIDA|Koelaitteisto tunnistettavana, ei laatikkokaaviona.||
+fy1-4/scatter|5|5|4|5|PIDA|||
+fy1-4/slope|5|5|3|5|KEVYT|Δx on katkoviivan alla kaukana kolmiosta ja kaava k = Δy/Δx ahtaasti oikeassa alakulmassa.||
+fy1-4/kettle|5|5|4|5|PIDA|||
+fy1-4/scatter-points|5|4|4|5|KEVYT|Akselin nimi s (m) on kiinni kuvan yläreunassa.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11); yhteinen korjaus TEHTY ja hyväksytty 2026-11-11
+fy1-4/~inquiry-1|5|4|4|5|PIDA|Käsin upotettu kuva (ei figures.py:ssä), ks. INDEX.||
+fy1-5/hero|5|4|5|4|KEVYT|Ks. fy1-2/hero: sama aihepiiri kahdessa saman moduulin laatassa.||
+fy1-5/lightning|5|4|5|5|PIDA|||
+fy1-5/two-friends|5|4|4|5|PIDA|||
+fy1-5/motion|5|5|5|5|PIDA|Yhtä pitkät välit yhtä pitkissä ajoissa näkyvät ilman kaavaa.||
+fy1-5/graph|5|5|4|5|PIDA|||
+fy1-5/line-read|5|4|4|5|PIDA|||
+fy1-5/pick-back|5|4|4|5|PIDA|Vastausvaihtoehto, tarkoituksella pelkistetty.||
+fy1-5/pick-away|5|4|4|5|PIDA|||
+fy1-5/pick-distance|5|4|4|5|PIDA|||
+fy1-5/pick-vt|5|4|4|5|PIDA|||
+fy1-6/hero|5|5|5|5|PIDA|||
+fy1-6/free-fall|5|5|4|5|PIDA|Matkat 4,9, 14,7 ja 24,5 m sekä nopeusnuolet ovat mittakaavassa (tarkistettu).||
+fy1-6/vt-graph|5|5|4|5|PIDA|||
+fy1-6/same-fall|5|5|4|5|PIDA|Putoamismatkat 1 : 4 oikein.||
+fy1-6/two-planets|5|4|4|5|PIDA|||
+fy1-6/apple|5|4|5|5|PIDA|||
+fy1-6/light-gates|5|5|5|5|PIDA|Mittausasetelma, josta laite tunnistuu.||
+fy1-6/~inquiry-1|5|4|4|5|KEVYT|"sovitettu suora" ulottuu kuvaajan oikeaan reunaan asti. Käsin upotettu kuva.||
+fy1-7/hero|5|5|5|5|PIDA|Sama tilavuus, vaaka kallistuu raudan puolelle: tiheys näkyy.||
 fy1-7/cubes|5|5|4|5|KEVYT|Tiheyden yksikkö murtolukuna (g/cm³) on niin pieni, ettei sitä lue puhelimella.||KEVYT KORJAUS hyväksytty, ryhmä F (opettaja 2026-11-11)
-fy1-7/graph|5|5|5|5|PIDA|Kulmakertoimet vastaavat tiheyksiä (tarkistettu).|
-fy1-7/displacement|5|5|4|4|KEVYT|Asteikossa numerot 20, 60 ja 100, kun fy1-7/cylinders-read käyttää 20, 40, 60, 80, 100; V1 = 40 ml osuu numeroimattomaan viivaan.|
-fy1-7/cylinders-read|5|5|4|5|PIDA|
-fy1-7/gold-bar|5|4|4|5|PIDA|
-fy1-7/sinker|5|4|4|5|PIDA|
-fy1-8/hero|5|4|5|5|PIDA|
-fy1-8/setup|5|5|3|5|KEVYT|Muuttujaluettelo, paristokuvakkeet ja kello leijuvat irrallaan asetelman yllä; paristoilla ei ole selitettä.|
-fy1-8/epavarmuus|5|5|5|5|PIDA|
-fy1-8/ramp-ball|5|4|5|5|PIDA|
-fy1-8/two-balls-ramp|5|4|5|5|PIDA|
-fy1-8/~inquiry-1|5|5|4|5|PIDA|Virhepalkit ja luettava piste selkeästi. Käsin upotettu kuva.|
+fy1-7/graph|5|5|5|5|PIDA|Kulmakertoimet vastaavat tiheyksiä (tarkistettu).||
+fy1-7/displacement|5|5|4|4|KEVYT|Asteikossa numerot 20, 60 ja 100, kun fy1-7/cylinders-read käyttää 20, 40, 60, 80, 100; V1 = 40 ml osuu numeroimattomaan viivaan.||
+fy1-7/cylinders-read|5|5|4|5|PIDA|||
+fy1-7/gold-bar|5|4|4|5|PIDA|||
+fy1-7/sinker|5|4|4|5|PIDA|||
+fy1-8/hero|5|4|5|5|PIDA|||
+fy1-8/setup|5|5|3|5|KEVYT|Muuttujaluettelo, paristokuvakkeet ja kello leijuvat irrallaan asetelman yllä; paristoilla ei ole selitettä.||
+fy1-8/epavarmuus|5|5|5|5|PIDA|||
+fy1-8/ramp-ball|5|4|5|5|PIDA|||
+fy1-8/two-balls-ramp|5|4|5|5|PIDA|||
+fy1-8/~inquiry-1|5|5|4|5|PIDA|Virhepalkit ja luettava piste selkeästi. Käsin upotettu kuva.||
 fy1-sovella/fy1-s1-graph|5|4|3|3|KEVYT|"ramppi" on akselin ja katkoviivojen päällä, ja kaava peittää ruudukkoa. Kuvaajan piirrostapa (mustat pisteet, paksut akselit, beige ruudukko) poikkeaa lukujen kuvaajista.||KEVYT KORJAUS hyväksytty, ryhmä D (opettaja 2026-11-11)
 fy1-koe/fy1-k1-walk|5|4|4|3|KEVYT|Koekuvaajien piirrostapa poikkeaa lukujen kuvaajista: paksummat akselit, isot nuolenkärjet, musta data.||KEVYT KORJAUS hyväksytty, ryhmä D (opettaja 2026-11-11)
 fy1-koe/fy1-k2-graph|5|4|4|3|KEVYT|Sama kuin fy1-k1-walk.||KEVYT KORJAUS hyväksytty, ryhmä D (opettaja 2026-11-11)
