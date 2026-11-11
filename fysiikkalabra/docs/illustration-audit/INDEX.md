@@ -99,3 +99,8 @@ kaikki päätökset on annettu.
   johon ilma painaa. `fy4-3/auto` ja `fy4-3/kone` muutetaan tähän; luvun `fy4-14` kuvat pidetään.
 - **Voima on punainen myös FY3:ssa**: `fy3-2/carry-lift`, `fy3-2/lift-work`, `fy3-11/piston-work`,
   `fy3-4/pressure-area`, `fy3-4/water-column`.
+
+## Toteutuksen sääntö (opettaja 2026-11-11)
+
+Kuvaa muutetaan vain, jos opettaja on sen erikseen sanonut: päätössarakkeessa on hyväksyntä. Kuva, jonka päätös on
+ODOTTAA, jätetään ennalleen, vaikka luettelossa olisi muutosehdotus.
