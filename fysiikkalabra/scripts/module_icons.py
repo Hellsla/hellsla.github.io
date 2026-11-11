@@ -5,8 +5,9 @@ assets/shared/module-icons/<code>.svg, published as site/module-icons/ and shown
 One family: a 48 x 48 tile (cream, a thin line), forest green strokes of 2.5–2.75 units with round caps, one terracotta
 accent for the physics (the force, the photon, the data points), no text, recognisable at 40–48 px. Each picture is the
 module's physics, drawn correctly: FY4 a force acting on a body (its point of application marked), FY5 a mass on a
-spring at its turning point beside the sinusoidal trace of its position, FY7 closed field lines from pole to pole, FY8 an
-electron's transition between energy levels and the emitted photon.
+spring at its turning point beside the sinusoidal trace of its position, FY7 a bar magnet moving into a coil, FY8 a
+nucleus emitting a particle. The teacher chose the present set on 2026-11-11 (FY2, FY7–FY10, FY14, Kilparobotiikka,
+LUMA-tutor and Myytinmurtajat redrawn; the others kept).
 
 An icon beside its module's name is decorative (alt=""): the name is already text, a screen reader says it once.
 Usage: python scripts/module_icons.py check"""
@@ -19,22 +20,22 @@ PUBLISHED = "module-icons"          # site/module-icons/<code>.svg
 # the registry: module code -> what the icon shows (the SVG's own <title>, for anyone opening the file)
 ICONS = {
     "FY1": "työntömitta mittaa kappaleen paksuutta",
-    "FY2": "tuulivoimala",
+    "FY2": "aurinko ja aurinkopaneeli",
     "FY3": "lämpömittari",
     "FY4": "kappale ja siihen vaikuttava voima",
     "FY5": "jousivärähtelijä ja sen paikan kuvaaja",
     "FY6": "virtapiiri, jossa paristo ja lamppu",
-    "FY7": "sauvamagneetti ja kenttäviivat",
-    "FY8": "energiatasot ja fotonin emissio",
-    "FY10": "mittauskuvaaja",
-    "FY9": "koepaperi, jossa ratkaisu, kuvaaja ja tarkistusmerkki",
-    "FY14": "tokamakin rengasplasma ja magneettikelat",
+    "FY7": "sauvamagneetti liikkuu käämiin (induktio)",
+    "FY8": "atomiydin lähettää hiukkasen",
+    "FY10": "sekuntikello",
+    "FY9": "ylioppilaslakki",
+    "FY14": "kaksi kevyttä ydintä yhdistyy (fuusio)",
     # the school's planned courses, shown greyed out on the front page (teacher 2026-11-04; local_courses.planned)
-    "LUMATUTOR": "tiedetutori ja koeputki",
+    "LUMATUTOR": "tutori ja oppija",
     "AHJO1": "3D-tulostin Ahjon alasimella (scripts/ahjo.py course_icon_svg)",
     "AHJO2": "idean hehkulamppu Ahjon alasimella (scripts/ahjo.py course_icon_svg)",
-    "KILPAROBO": "pyörillä liikkuva robotti",
-    "MYYTIT": "suurennuslasi ja kysymysmerkki",
+    "KILPAROBO": "robottikäsi tarttuu pelipalloon",
+    "MYYTIT": "halkeava puhekupla",
 }
 
 
