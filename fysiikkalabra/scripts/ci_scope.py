@@ -59,9 +59,11 @@ def page_of(course, lid):
 def scope(base):
     """("full", reason) or ("pages", {page id: [why, ...]})."""
     names = git("diff", "--name-only", "--relative", f"{base}...HEAD").split()
-    if not names: return "pages", {}
+    # the workflow first: it lies outside fysiikkalabra/, so a pull request that changes nothing else has no name above,
+    # and returning "no page" for it skipped every browser check of a change to how they are run (2026-11-11)
     wf = git("diff", "--name-only", f"{base}...HEAD", "--", f"{git('rev-parse', '--show-toplevel').strip()}/.github/").split()
     if wf: return "full", f"workflow changed: {wf[0]}"
+    if not names: return "pages", {}
     deps, pages = courses.deps(), {}
     add = lambda p, n: pages.setdefault(p, []).append(n)
     for n in names:
