@@ -1,137 +1,137 @@
 fy6-1/hero|5|5|5|5|PIDA||
-fy6-1/piiri|||||KESKEN|Ei vielä arvioitu.|
-fy6-1/johdin|||||KESKEN|Ei vielä arvioitu.|
-fy6-1/symbolit|||||KESKEN|Ei vielä arvioitu.|
-fy6-1/kaavio|||||KESKEN|Ei vielä arvioitu.|
-fy6-1/virta|||||KESKEN|Ei vielä arvioitu.|
-fy6-1/jannite|||||KESKEN|Ei vielä arvioitu.|
-fy6-1/virta-kuvaaja|||||KESKEN|Ei vielä arvioitu.|
-fy6-1/kaavio-malli|||||KESKEN|Ei vielä arvioitu.|
-fy6-1/virhe-kaavio|||||KESKEN|Ei vielä arvioitu.|
-fy6-1/valinta-a|||||KESKEN|Ei vielä arvioitu.|
-fy6-1/valinta-b|||||KESKEN|Ei vielä arvioitu.|
-fy6-1/valinta-c|||||KESKEN|Ei vielä arvioitu.|
+fy6-1/piiri|5|5|5|5|PIDA|Todellinen piiri ennen kytkentäkaaviota; virran suunta plusnavasta miinusnapaan joka sivulla (tarkistettu).|
+fy6-1/johdin|5|5|5|5|PIDA|Virran ja elektronien suunnat vastakkain samassa kuvassa.|
+fy6-1/symbolit|5|5|5|5|PIDA|
+fy6-1/kaavio|5|5|4|5|PIDA||
+fy6-1/virta|5|5|4|5|PIDA||
+fy6-1/jannite|5|5|4|5|PIDA||
+fy6-1/virta-kuvaaja|5|4|4|5|PIDA|
+fy6-1/kaavio-malli|5|5|4|5|PIDA||
+fy6-1/virhe-kaavio|5|5|4|5|PIDA|Tarkoituksella virheellinen kytkentä.|
+fy6-1/valinta-a|5|4|4|5|PIDA|
+fy6-1/valinta-b|5|4|4|5|PIDA|
+fy6-1/valinta-c|5|4|4|5|PIDA|
 fy6-10/hero|5|4|4|4|KEVYT|Tuoli ja punainen kangas eivät tunnistu; kampa paperinpaloineen ja ilmapallo riittävät kertomaan varauksesta.|
-fy6-10/hankaus|||||KESKEN|Ei vielä arvioitu.|
-fy6-10/influenssi|||||KESKEN|Ei vielä arvioitu.|
-fy6-10/kentta|||||KESKEN|Ei vielä arvioitu.|
-fy6-10/coulomb|||||KESKEN|Ei vielä arvioitu.|
-fy6-10/kuvaaja|||||KESKEN|Ei vielä arvioitu.|
-fy6-10/check-graph|||||KESKEN|Ei vielä arvioitu.|
+fy6-10/hankaus|5|5|5|5|PIDA|
+fy6-10/influenssi|5|5|5|5|PIDA|Johde ja eriste rinnakkain; varausten paikat ja voimien suunnat oikein.|
+fy6-10/kentta|5|5|4|5|PIDA||
+fy6-10/coulomb|5|5|4|5|PIDA||
+fy6-10/kuvaaja|5|5|4|5|PIDA|
+fy6-10/check-graph|5|4|4|5|PIDA|
 fy6-11/hero|5|5|5|5|PIDA||
-fy6-11/test|||||KESKEN|Ei vielä arvioitu.|
-fy6-11/lines|||||KESKEN|Ei vielä arvioitu.|
-fy6-11/plates|||||KESKEN|Ei vielä arvioitu.|
-fy6-11/work|||||KESKEN|Ei vielä arvioitu.|
-fy6-11/profile|||||KESKEN|Ei vielä arvioitu.|
-fy6-11/electron|||||KESKEN|Ei vielä arvioitu.|
-fy6-11/abc|||||KESKEN|Ei vielä arvioitu.|
-fy6-11/fq-graph|||||KESKEN|Ei vielä arvioitu.|
-fy6-11/pick-alas|||||KESKEN|Ei vielä arvioitu.|
-fy6-11/pick-ylos|||||KESKEN|Ei vielä arvioitu.|
-fy6-11/pick-nopeus|||||KESKEN|Ei vielä arvioitu.|
-fy6-11/pick-ilman|||||KESKEN|Ei vielä arvioitu.|
+fy6-11/test|5|5|4|5|PIDA||
+fy6-11/lines|5|5|5|5|PIDA|
+fy6-11/plates|5|5|4|5|PIDA||
+fy6-11/work|5|5|4|5|PIDA||
+fy6-11/profile|5|5|4|5|PIDA||
+fy6-11/electron|5|5|5|5|PIDA|
+fy6-11/abc|5|4|4|5|PIDA|
+fy6-11/fq-graph|5|4|4|5|PIDA|
+fy6-11/pick-alas|5|4|4|4|PIDA|
+fy6-11/pick-ylos|5|4|4|4|PIDA|
+fy6-11/pick-nopeus|5|4|4|4|PIDA|
+fy6-11/pick-ilman|5|4|4|4|PIDA|
 fy6-12/hero|5|5|5|5|PIDA||
-fy6-12/kentta|||||KESKEN|Ei vielä arvioitu.|
-fy6-12/tasapotentiaali|||||KESKEN|Ei vielä arvioitu.|
-fy6-12/energia|||||KESKEN|Ei vielä arvioitu.|
-fy6-12/vx-graph|||||KESKEN|Ei vielä arvioitu.|
-fy6-12/ex-vgraph|||||KESKEN|Ei vielä arvioitu.|
+fy6-12/kentta|5|5|5|5|PIDA|Painovoimakentän ja sähkökentän rinnastus samalla rakenteella.|
+fy6-12/tasapotentiaali|5|5|5|5|PIDA|
+fy6-12/energia|5|5|4|5|PIDA|
+fy6-12/vx-graph|5|5|3|5|KEVYT|Akselin nimi V (V) on kiinni kuva-alan yläreunassa (sama yhteinen vika kuin fy4-1/pick-falling).|
+fy6-12/ex-vgraph|5|4|3|5|KEVYT|Ks. fy6-12/vx-graph.|
 fy6-13/hero|5|5|5|5|PIDA||
-fy6-13/rakenne|||||KESKEN|Ei vielä arvioitu.|
-fy6-13/lataus|||||KESKEN|Ei vielä arvioitu.|
-fy6-13/eriste|||||KESKEN|Ei vielä arvioitu.|
-fy6-13/energia|||||KESKEN|Ei vielä arvioitu.|
-fy6-13/ex-qu|||||KESKEN|Ei vielä arvioitu.|
+fy6-13/rakenne|5|5|5|5|PIDA|
+fy6-13/lataus|5|5|5|5|PIDA|Jännite ja virta samalla aika-akselilla, virran suunnan vaihto näkyy.|
+fy6-13/eriste|5|5|5|5|PIDA|
+fy6-13/energia|5|5|5|5|PIDA|Portaat näyttävät, miksi energia on puolet tulosta QU.|
+fy6-13/ex-qu|5|4|4|5|PIDA|
 fy6-14/hero|5|4|4|4|KEVYT|Ikkunan Aurinko sädekehällä.|
-fy6-14/suunnat|||||KESKEN|Ei vielä arvioitu.|
-fy6-14/ominaiskayra|||||KESKEN|Ei vielä arvioitu.|
-fy6-14/kenno|||||KESKEN|Ei vielä arvioitu.|
-fy6-14/etuvastus|||||KESKEN|Ei vielä arvioitu.|
-fy6-14/teho|||||KESKEN|Ei vielä arvioitu.|
-fy6-14/ex-led|||||KESKEN|Ei vielä arvioitu.|
-fy6-14/ex-kenno|||||KESKEN|Ei vielä arvioitu.|
+fy6-14/suunnat|5|5|5|5|PIDA|
+fy6-14/ominaiskayra|5|5|4|5|PIDA|
+fy6-14/kenno|5|5|4|5|PIDA||
+fy6-14/etuvastus|5|5|5|5|PIDA|Jännitteen jakautuminen pylväänä kytkennän vieressä.|
+fy6-14/teho|5|5|5|5|PIDA|
+fy6-14/ex-led|5|4|4|5|PIDA|
+fy6-14/ex-kenno|5|4|4|5|PIDA|
 fy6-15/hero|5|5|5|5|PIDA||
-fy6-15/ryhma|||||KESKEN|Ei vielä arvioitu.|
-fy6-15/pistorasia|||||KESKEN|Ei vielä arvioitu.|
-fy6-15/maadoitus|||||KESKEN|Ei vielä arvioitu.|
-fy6-15/luokat|||||KESKEN|Ei vielä arvioitu.|
-fy6-15/vikavirtasuoja|||||KESKEN|Ei vielä arvioitu.|
-fy6-15/askel|||||KESKEN|Ei vielä arvioitu.|
-fy6-15/vaikutukset|||||KESKEN|Ei vielä arvioitu.|
-fy6-15/ex-askel|||||KESKEN|Ei vielä arvioitu.|
-fy6-15/merkki-1|||||KESKEN|Ei vielä arvioitu.|
-fy6-15/merkki-2|||||KESKEN|Ei vielä arvioitu.|
-fy6-15/merkki-3|||||KESKEN|Ei vielä arvioitu.|
+fy6-15/ryhma|5|5|4|5|PIDA||
+fy6-15/pistorasia|5|5|5|5|PIDA|Johdinten värit oikein (ruskea, sininen, keltavihreä).|
+fy6-15/maadoitus|5|5|5|5|PIDA|Sama vika ilman ja kanssa suojamaadoituksen: virran reitti näkyy.|
+fy6-15/luokat|5|5|4|5|PIDA||
+fy6-15/vikavirtasuoja|5|5|5|5|PIDA|
+fy6-15/askel|5|5|5|5|PIDA|
+fy6-15/vaikutukset|5|5|4|5|PIDA||
+fy6-15/ex-askel|5|4|4|5|PIDA|
+fy6-15/merkki-1|5|4|4|4|PIDA|Vastausvaihtoehto; viiva tarkoituksella paksu, koska kyse on merkistä.|
+fy6-15/merkki-2|5|4|4|4|PIDA|
+fy6-15/merkki-3|5|4|4|4|PIDA|
 fy6-16/hero|5|5|5|5|PIDA||
-fy6-16/koti|||||KESKEN|Ei vielä arvioitu.|
-fy6-16/vaiheet|||||KESKEN|Ei vielä arvioitu.|
-fy6-16/kayra|||||KESKEN|Ei vielä arvioitu.|
-fy6-16/lataus-ex|||||KESKEN|Ei vielä arvioitu.|
+fy6-16/koti|5|5|4|5|KEVYT|Sulakkeiden arvot (3 · 25 A, 3 · 16 A, 16 A) ovat johdinten päällä valkoisilla taustalaatikoilla; ahdas vasen yläkulma.|
+fy6-16/vaiheet|5|5|5|5|PIDA|Vaiheiden kuormat pinottuina pääsulakkeen rajaa vasten.|
+fy6-16/kayra|5|5|4|5|PIDA||
+fy6-16/lataus-ex|5|4|4|5|PIDA|
 fy6-2/hero|5|5|5|5|PIDA||
-fy6-2/connections|||||KESKEN|Ei vielä arvioitu.|
-fy6-2/multimeter|||||KESKEN|Ei vielä arvioitu.|
-fy6-2/wrong|||||KESKEN|Ei vielä arvioitu.|
-fy6-2/error-bands|||||KESKEN|Ei vielä arvioitu.|
+fy6-2/connections|5|5|5|5|PIDA|
+fy6-2/multimeter|5|5|5|5|PIDA|Mittari laitteena, osat nimetty viiteviivoin.|
+fy6-2/wrong|5|5|5|5|PIDA|
+fy6-2/error-bands|5|5|4|5|PIDA|
 fy6-3/hero|5|5|5|5|PIDA||
-fy6-3/measure-circuit|||||KESKEN|Ei vielä arvioitu.|
-fy6-3/micro|||||KESKEN|Ei vielä arvioitu.|
-fy6-3/curves|||||KESKEN|Ei vielä arvioitu.|
-fy6-3/wire|||||KESKEN|Ei vielä arvioitu.|
-fy6-3/lamp-curve|||||KESKEN|Ei vielä arvioitu.|
-fy6-3/resistor-points|||||KESKEN|Ei vielä arvioitu.|
-fy6-3/pick-k2|||||KESKEN|Ei vielä arvioitu.|
-fy6-3/pick-k05|||||KESKEN|Ei vielä arvioitu.|
-fy6-3/pick-curve|||||KESKEN|Ei vielä arvioitu.|
-fy6-3/pick-flat|||||KESKEN|Ei vielä arvioitu.|
+fy6-3/measure-circuit|5|5|5|5|PIDA|
+fy6-3/micro|5|5|5|5|PIDA|
+fy6-3/curves|5|5|4|5|PIDA||
+fy6-3/wire|5|5|5|5|PIDA|Pituus ja poikkipinta-ala mittakaavassa, resistanssi vieressä.|
+fy6-3/lamp-curve|5|4|4|5|PIDA|
+fy6-3/resistor-points|5|4|4|5|PIDA|
+fy6-3/pick-k2|5|4|4|5|PIDA|
+fy6-3/pick-k05|5|4|4|5|PIDA|
+fy6-3/pick-curve|5|4|4|5|PIDA|
+fy6-3/pick-flat|5|4|4|5|PIDA|
 fy6-4/hero|5|5|5|5|PIDA||
-fy6-4/series|||||KESKEN|Ei vielä arvioitu.|
-fy6-4/parallel|||||KESKEN|Ei vielä arvioitu.|
-fy6-4/graph|||||KESKEN|Ei vielä arvioitu.|
-fy6-4/mixed|||||KESKEN|Ei vielä arvioitu.|
-fy6-4/task-mixed|||||KESKEN|Ei vielä arvioitu.|
-fy6-4/siirto-mixed|||||KESKEN|Ei vielä arvioitu.|
+fy6-4/series|5|5|5|5|PIDA|
+fy6-4/parallel|5|5|5|5|PIDA|
+fy6-4/graph|5|5|4|5|KEVYT|"rinnan" on akselin nuolenkärjen ja käyrän pään päällä oikeassa alakulmassa.|
+fy6-4/mixed|5|5|4|5|PIDA||
+fy6-4/task-mixed|5|4|4|5|PIDA|
+fy6-4/siirto-mixed|5|4|4|5|PIDA|
 fy6-5/hero|5|4|4|4|KEVYT|Aurinko sädekehällä.|
-fy6-5/junction|||||KESKEN|Ei vielä arvioitu.|
-fy6-5/junction-q|||||KESKEN|Ei vielä arvioitu.|
-fy6-5/circuit|||||KESKEN|Ei vielä arvioitu.|
-fy6-5/circuit-q|||||KESKEN|Ei vielä arvioitu.|
-fy6-5/potential-graph|||||KESKEN|Ei vielä arvioitu.|
-fy6-5/ex-graph|||||KESKEN|Ei vielä arvioitu.|
-fy6-5/ex-branch|||||KESKEN|Ei vielä arvioitu.|
-fy6-5/ex-branch2|||||KESKEN|Ei vielä arvioitu.|
+fy6-5/junction|5|5|5|5|PIDA|Nuolten leveydet 3 : 2 : 1 vastaavat virtoja (tarkistettu).|
+fy6-5/junction-q|5|4|4|5|PIDA|
+fy6-5/circuit|5|5|5|5|PIDA|Potentiaalit merkitty pisteisiin; arvot tarkistettu.|
+fy6-5/circuit-q|5|4|4|5|PIDA|
+fy6-5/potential-graph|5|5|5|5|PIDA|Potentiaali kierroksen varrella: Kirchhoffin jännitelaki kuvana.|
+fy6-5/ex-graph|5|4|4|5|PIDA|
+fy6-5/ex-branch|5|4|4|5|PIDA|
+fy6-5/ex-branch2|5|4|4|5|PIDA|
 fy6-6/hero|5|4|4|4|KORVAA|Sama aihe kuin fy6-3/hero (leivänpaahdin), ja paahdin on kolmannen kerran kuvassa fy6-15/hero. Saman moduulin laatat näyttävät samalta.|Keittiön liesi edestä: yksi hehkuva keraaminen keittoalue (lämmön oranssi → punainen hehku) ja sen päällä teräskattila, josta nousee höyryä; vieressä kylmä, tumma keittoalue vertailuna. Taustalla sama kaakeliseinä ja työtaso kuin fy6-3/hero ja fy3-7/hero. Havainnollistaa sähkötehon muuttumista lämmöksi vastuksessa. Ei tekstiä.
-fy6-6/energia|||||KESKEN|Ei vielä arvioitu.|
-fy6-6/jako|||||KESKEN|Ei vielä arvioitu.|
-fy6-6/lampo|||||KESKEN|Ei vielä arvioitu.|
-fy6-6/graph|||||KESKEN|Ei vielä arvioitu.|
-fy6-6/ex-pi|||||KESKEN|Ei vielä arvioitu.|
+fy6-6/energia|5|5|4|4|KEVYT|Alarivin yksiköt pystymurtoina (J/C, C/s, J/s) ovat pieniä; rivillä luettavampia.|
+fy6-6/jako|5|5|4|4|KEVYT|Pylväissä liukuväri (ks. fy2-3/bars). Arvot oikein.|
+fy6-6/lampo|5|5|4|5|PIDA||
+fy6-6/graph|5|5|3|5|KEVYT|"4,0 W" on käyrän ja katkoviivan päällä.|
+fy6-6/ex-pi|5|4|4|5|PIDA|
 fy6-7/hero|5|5|5|5|PIDA||
-fy6-7/power-time|||||KESKEN|Ei vielä arvioitu.|
-fy6-7/kwh|||||KESKEN|Ei vielä arvioitu.|
-fy6-7/washer|||||KESKEN|Ei vielä arvioitu.|
+fy6-7/power-time|5|5|5|5|PIDA|Sama energia kapeana korkeana ja leveänä matalana pinta-alana.|
+fy6-7/kwh|5|5|5|5|PIDA|Kilowattitunti esineinä: lämmitin kertaa tunti on mittarin lukema.|
+fy6-7/washer|5|4|4|5|PIDA|
 fy6-8/hero|5|5|5|5|PIDA||
-fy6-8/model|||||KESKEN|Ei vielä arvioitu.|
-fy6-8/potential|||||KESKEN|Ei vielä arvioitu.|
-fy6-8/ui-graph|||||KESKEN|Ei vielä arvioitu.|
-fy6-8/connections|||||KESKEN|Ei vielä arvioitu.|
-fy6-8/ex-graph|||||KESKEN|Ei vielä arvioitu.|
-fy6-8/check-graph|||||KESKEN|Ei vielä arvioitu.|
+fy6-8/model|5|5|5|5|PIDA|
+fy6-8/potential|5|5|5|5|PIDA|
+fy6-8/ui-graph|5|5|5|5|PIDA|
+fy6-8/connections|5|5|3|5|KEVYT|Merkinnät E ja Rs ovat katkoviivakehysten päällä, ja rinnankytkennän toisesta paristosta ne puuttuvat.|
+fy6-8/ex-graph|5|4|4|5|PIDA|
+fy6-8/check-graph|5|4|4|5|PIDA|
 fy6-9/hero|5|5|5|5|PIDA||
-fy6-9/purku-lataus|||||KESKEN|Ei vielä arvioitu.|
-fy6-9/kapasiteetti|||||KESKEN|Ei vielä arvioitu.|
-fy6-9/latauspiiri|||||KESKEN|Ei vielä arvioitu.|
-fy6-9/potentiaali|||||KESKEN|Ei vielä arvioitu.|
-fy6-9/energia|||||KESKEN|Ei vielä arvioitu.|
-fy6-9/ex-current|||||KESKEN|Ei vielä arvioitu.|
-fy6-sovella/fy6-s1-circuit|||||KESKEN|Ei vielä arvioitu.|
-fy6-sovella/fy6-s1-graph|||||KESKEN|Ei vielä arvioitu.|
-fy6-sovella/fy6-s2-circuit|||||KESKEN|Ei vielä arvioitu.|
-fy6-sovella/fy6-s3-field|||||KESKEN|Ei vielä arvioitu.|
-fy6-koe/fy6-k1-switch|||||KESKEN|Ei vielä arvioitu.|
-fy6-koe/fy6-k1-battery|||||KESKEN|Ei vielä arvioitu.|
-fy6-koe/fy6-k1-charging|||||KESKEN|Ei vielä arvioitu.|
-fy6-koe/fy6-k3-circuits|||||KESKEN|Ei vielä arvioitu.|
-fy6-koe/fy6-k6-setup|||||KESKEN|Ei vielä arvioitu.|
-fy6-koe/fy6-k2-graph|||||KESKEN|Ei vielä arvioitu.|
-fy6-koe/fy6-k6-graph|||||KESKEN|Ei vielä arvioitu.|
+fy6-9/purku-lataus|5|5|4|5|PIDA|
+fy6-9/kapasiteetti|5|5|5|5|PIDA|
+fy6-9/latauspiiri|5|5|5|5|PIDA|Virta akun plusnapaan: lataussuunta oikein.|
+fy6-9/potentiaali|5|5|3|5|KEVYT|Jännitteiden summa on nolla (tarkistettu), mutta arvot 3,62 V, −0,88 V ja −0,22 V ovat ahtaasti käyrän ja toistensa päällä.|
+fy6-9/energia|5|5|4|3|KEVYT|Energiavirtakaavio liukuvärillä ilman harmaata tuloa; malli fy2-4/lamp. Summa täsmää (9,0 = 7,6 + 1,1 + 0,3).|
+fy6-9/ex-current|5|4|4|5|PIDA|
+fy6-sovella/fy6-s1-circuit|5|5|4|5|PIDA||
+fy6-sovella/fy6-s1-graph|5|4|4|4|PIDA|
+fy6-sovella/fy6-s2-circuit|5|5|4|5|PIDA||
+fy6-sovella/fy6-s3-field|5|5|4|5|PIDA||
+fy6-koe/fy6-k1-switch|5|5|4|5|PIDA||
+fy6-koe/fy6-k1-battery|5|4|4|4|PIDA|
+fy6-koe/fy6-k1-charging|5|4|4|4|PIDA|
+fy6-koe/fy6-k3-circuits|5|5|4|5|PIDA||
+fy6-koe/fy6-k6-setup|5|5|5|5|PIDA|
+fy6-koe/fy6-k2-graph|5|4|3|4|KEVYT|"UR ≈ 3,4 V", "UL ≈ 2,6 V" ja "lamppu" ovat ruudukon ja katkoviivojen päällä ilman taustaa.|
+fy6-koe/fy6-k6-graph|5|4|4|4|PIDA|
