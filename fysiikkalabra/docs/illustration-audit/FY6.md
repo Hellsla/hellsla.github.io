@@ -17,7 +17,7 @@ Kuvia 137. Asteikko 1–5: F fysiikka, P pedagogiikka, V visuaalinen laatu, T ty
 | [`fy6-1/valinta-a`](catalog/FY6.html#fy6-1-valinta-a) | Virtapiiri, sähkövirta ja jännite; kuvitus: tutkimusvaihe | 5 | 4 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy6-1/valinta-b`](catalog/FY6.html#fy6-1-valinta-b) | Virtapiiri, sähkövirta ja jännite; kuvitus: tutkimusvaihe | 5 | 4 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy6-1/valinta-c`](catalog/FY6.html#fy6-1-valinta-c) | Virtapiiri, sähkövirta ja jännite; kuvitus: tutkimusvaihe | 5 | 4 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
-| [`fy6-10/hero`](catalog/FY6.html#fy6-10-hero) | Sähkövaraus ja Coulombin laki; avauskuva | 5 | 4 | 4 | 4 | KEVYT KORJAUS | Tuoli ja punainen kangas eivät tunnistu; kampa paperinpaloineen ja ilmapallo riittävät kertomaan varauksesta. |  | ODOTTAA |
+| [`fy6-10/hero`](catalog/FY6.html#fy6-10-hero) | Sähkövaraus ja Coulombin laki; avauskuva | 5 | 4 | 4 | 4 | KEVYT KORJAUS | Tuoli ja punainen kangas eivät tunnistu; kampa paperinpaloineen ja ilmapallo riittävät kertomaan varauksesta. |  | KEVYT KORJAUS hyväksytty (opettaja 2026-11-11) |
 | [`fy6-10/hankaus`](catalog/FY6.html#fy6-10-hankaus) | Sähkövaraus ja Coulombin laki; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy6-10/influenssi`](catalog/FY6.html#fy6-10-influenssi) | Sähkövaraus ja Coulombin laki; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ | Johde ja eriste rinnakkain; varausten paikat ja voimien suunnat oikein. |  | ODOTTAA |
 | [`fy6-10/kentta`](catalog/FY6.html#fy6-10-kentta) | Sähkövaraus ja Coulombin laki; kaavio: teoria | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
