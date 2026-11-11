@@ -2055,6 +2055,7 @@ main.kr-team{max-width:68rem}
 .lt-participant .lt-side-badge{background:var(--kr-pink);color:var(--kr-navy)}
 .lt-side-note{margin:0 0 1rem;color:var(--ink-2);font-size:var(--fs-small)}
 .lt-part{margin:0 0 1.75rem}
+.lt-part :is(p,li){max-width:44rem}                                /* a line of text is at most 44rem (check_layout.py) */
 .lt-part>h3{display:flex;align-items:center;gap:.5rem;margin:0 0 .4rem;padding-bottom:.3rem;border-bottom:2px solid var(--kr-pink);font-size:1.2rem}
 .lt-part ul:not([class]){padding-left:1.2rem}.lt-part li+li{margin-top:.3rem}
 .lt-safety-box{display:flex;gap:.6rem;align-items:flex-start;padding:.8rem 1rem;border-left:5px solid var(--kr-navy);border-radius:0 12px 12px 0;background:var(--kr-pink-soft)}
