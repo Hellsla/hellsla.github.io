@@ -161,16 +161,26 @@
         p.textWidth = function (str) {           // the width of a $…$ label as KaTeX draws it, in sketch units
           if (typeof str !== 'string' || !str.includes('$') || !window.katex) return textWidth.call(p, str);
           if (widthsGen !== fontGen) { widths.clear(); widthsGen = fontGen; }
-          const key = p.textSize() + '|' + str;
+          // measured at the size the label is drawn at (p.text above: the canvas scale, the phone rule and the 10 px floor)
+          // and turned back into sketch units. A browser's glyph widths are not proportional to the font size: one that
+          // rounds glyph advances to whole pixels (Chromium 158 on the CI machine) draws a label at 11,76 px about 5 %
+          // wider than its width at 24 px scaled down, so a row laid out from the scaled width overlapped (fy1-1 at
+          // 360 px: laid out 199,9 px, drawn 210 px; measured by .github/diag/sim_labels.py, 2026-11-11).
+          let fsz = p.textSize(), per = 1;
+          if (p.canvas && p.drawingContext && p.drawingContext.getTransform) {
+            const m = p.drawingContext.getTransform(), u = Math.hypot(m.a, m.b) / p.pixelDensity(), k = (p.canvas.clientWidth || p.width) / p.width;
+            if (u > 0 && k > 0) { const sz = p.textSize() * u; fsz = +Math.max(sz * (k < 1 ? Math.sqrt(k) : k), Math.min(sz, 10)).toFixed(2); per = u * k; }
+          }
+          const key = fsz + '|' + str;
           let w = widths.get(key);
           if (w === undefined) {
             if (!meter) { meter = document.createElement('div'); meter.className = 'sim-tex'; meter.style.cssText = 'position:absolute;visibility:hidden;left:-9999px;top:0'; document.body.appendChild(meter); }
-            meter.style.fontSize = p.textSize() + 'px'; mixed(meter, str);
+            meter.style.fontSize = fsz + 'px'; mixed(meter, str);
             w = meter.getBoundingClientRect().width;
             if (widths.size >= WIDTHS_MAX) widths.delete(widths.keys().next().value);
           } else widths.delete(key);             // re-inserted below: the most recently used last
           widths.set(key, w);
-          return w;
+          return w / per;
         };
         // p5 measures a font's ascent and descent by putting elements on the page and reading their position, which lays
         // the whole lesson out again at every call; a sim that records its label boxes (lab(): textAscent and textDescent
