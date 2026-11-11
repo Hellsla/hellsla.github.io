@@ -144,22 +144,29 @@ def scene():
 
 def earth_flows():
     """Task figure (no lesson.md block): the radiation power per square metre at the top of the atmosphere, with the
-    thermal radiation to space left as a question mark. In 341 W/m², reflected 102 W/m² (balance: 239 W/m² out)."""
+    thermal radiation to space left as a question mark. In 341 W/m², reflected 102 W/m² (balance: 239 W/m² out).
+    Redrawn (teacher 2026-11-11, illustration audit): the Earth of the opening illustration, the Sun as a plain disc,
+    and the two given arrows to scale (shaft 1 unit per 10 W/m²); the asked arrow is a dashed outline, not to scale."""
     f = Fig("fy312-flows", 280, "Kaavakuva maapallon energiavirroista neliömetriä kohti ilmakehän ylärajalla. Auringosta tulee maapalloon "
-            "säteilyä 341 W/m², ja siitä 102 W/m² heijastuu takaisin avaruuteen. Avaruuteen lähtevän lämpösäteilyn tehoa ei ole annettu. "
+            "säteilyä 341 W/m², ja siitä 102 W/m² heijastuu takaisin avaruuteen. Näiden kahden nuolen leveydet ovat mittakaavassa. "
+            "Avaruuteen lähtevän lämpösäteilyn tehoa ei ole annettu: sen nuoli on katkoviivalla eikä mittakaavassa. "
             "Maapallo on energiatasapainossa, joten sen lämpötila pysyy vakiona.", width=640)
-    f.circle(56, 140, 26, "#ffe8cc", HEAT, 2.5)
-    f.tex(56, 190, r"\text{Aurinko}", "middle")
-    f.circle(300, 140, 62, COLD_LIGHT, INK, 3)
-    f.tex(300, 140, r"\text{maapallo}", "middle")
-    f.block_arrow(98, 140, 232, 140, HEAT, 14, 34, 26)
-    f.tex(165, 104, r"341\,\text{W/m}^2", "middle")
-    f.block_arrow(350, 90, 438, 36, HEAT_LIGHT, 12, 30, 22)
-    f.tex(448, 30, r"102\,\text{W/m}^2", "start")
-    f.tex(448, 64, r"\text{heijastuu}", "start")
-    f.block_arrow(366, 176, 452, 214, HOT, 14, 34, 26)
-    f.tex(462, 190, r"?\,\text{W/m}^2", "start")
-    f.tex(462, 224, r"\text{lämpösäteily}", "start")
+    f.defs_add(f'<radialGradient id="fy312f-glow"><stop offset="0.62" stop-color="{HEAT_LIGHT}" stop-opacity="0.7"/>'
+               f'<stop offset="1" stop-color="{HEAT_LIGHT}" stop-opacity="0"/></radialGradient>')
+    f.circle(-4, 150, 84, "url(#fy312f-glow)"); f.circle(-4, 150, 52, HEAT_LIGHT, HEAT, 2.5)
+    f.tex(8, 232, r"\text{Aurinko}", "start")
+    H.earth(f, "fy312f", 304, 150, 62)
+    f.tex(304, 236, r"\text{Maa}", "middle")
+    f.block_arrow(84, 150, 234, 150, HEAT, 34, 58, 34)
+    f.tex(150, 196, r"341\,\text{W/m}^2", "middle")
+    f.block_arrow(262, 102, 176, 50, HEAT_LIGHT, 10, 26, 22)
+    f.tex(168, 34, r"102\,\text{W/m}^2", "end")
+    f.tex(168, 64, r"\text{heijastuu}", "end")
+    x1, x2, y, sh, hd, hl = 376, 560, 150, 24, 46, 32
+    f.path(f"M{x1},{y - sh / 2} H{x2 - hl} V{y - hd / 2} L{x2},{y} L{x2 - hl},{y + hd / 2} V{y + sh / 2} H{x1} Z", WHITE, HOT, 2.5,
+           extra='stroke-dasharray="7 5" stroke-linejoin="round"')
+    f.tex(468, 104, r"?\,\text{W/m}^2", "middle", HOT)
+    f.tex(468, 198, r"\text{lämpösäteily}", "middle", HOT)
     return f.svg()
 
 
@@ -169,5 +176,5 @@ REUSE = {
     "heat-transfer": "reveals: which mechanism is which",
     "energy-balance": "safe: the Earth's energy flows, no values",
     "wall-temperature": "reveals: the temperature drop is mostly in the insulation",
-    "earth-flows": "safe: incoming 341 and reflected 102 W/m2 as labels; the outgoing thermal radiation is a question mark",
+    "earth-flows": "safe: incoming 341 and reflected 102 W/m2 as labels and arrows to scale; the outgoing thermal radiation is a question mark on a dashed arrow that is not to scale",
 }

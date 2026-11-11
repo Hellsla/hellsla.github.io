@@ -5,6 +5,7 @@ red, velocity blue, acceleration orange; no point-particle diagrams."""
 import math
 from figlib import Fig, Axes, INK, MUTED, RULE, WHITE, COLD, COLD_LIGHT, WATER_LIGHT, SAND_LIGHT, fi
 from fbd import FBD, ground
+import herolib as H
 
 g = 9.81
 gamma = 6.674e-11
@@ -84,23 +85,27 @@ def board():
     y0, th = 150, 16
     xB, xt = BX0 + 1.2 * PXM, BX0 + 4.0 * PXM
     yd = y0 + th / 2 + 30                                      # the deck, below the board
+    # the pool: water with a surface and ripples, then the concrete edge with its coping over the water
+    f.defs_add(f'<linearGradient id="fy5k2-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{WATER_LIGHT}"/>'
+               f'<stop offset="1" stop-color="#7fb4e0"/></linearGradient>')
+    f.rect(236, yd + 34, 344, 66, "url(#fy5k2-water)", None)
+    f.line(236, yd + 34, 580, yd + 34, "#2f74b5", 2)
+    for wx, wy in ((290, 14), (372, 26), (452, 12), (520, 30), (330, 44), (486, 48)):
+        f.path(f"M{wx},{yd + 34 + wy} q9,-5 18,0 t18,0", stroke=WHITE, w=2, extra='stroke-opacity="0.75" stroke-linecap="round"')
     f.rect(20, yd, 230, 100, SAND_LIGHT, INK, 2)               # the pool edge
-    f.rect(250, yd + 40, 330, 34, WATER_LIGHT, None)           # water
-    f.rect(BX0 - 7, y0 + th / 2, 14, 30, "#c4ccd4", INK, 2)    # the stand at A
-    f.path(f"M{xB},{y0 + th / 2} L{xB - 16},{yd} L{xB + 16},{yd} Z", fill=MUTED)
-    f.rect(BX0, y0 - th / 2, xt - BX0, th, "#f6f1e6", INK, 2.5)
-    f.circle(BX0, y0, 5, INK)                                  # the bolt
-    hx = xt - 14                                               # the diver
-    f.circle(hx, y0 - 92, 11, INK)
-    f.line(hx, y0 - 80, hx, y0 - 40, INK, 5, cap="round")
-    f.line(hx, y0 - 40, hx - 7, y0 - th / 2, INK, 5, cap="round"); f.line(hx, y0 - 40, hx + 7, y0 - th / 2, INK, 5, cap="round")
-    f.line(hx, y0 - 70, hx - 14, y0 - 46, INK, 4, cap="round"); f.line(hx, y0 - 70, hx + 14, y0 - 46, INK, 4, cap="round")
+    f.rect(20, yd, 238, 10, "#e3dccb", INK, 1.75)              # its coping, a little over the water
+    f.rect(BX0 - 8, y0 + th / 2, 16, 30, "#c4ccd4", INK, 2)    # the stand at A
+    f.path(f"M{xB},{y0 + th / 2} L{xB - 16},{yd} L{xB + 16},{yd} Z", "#c4ccd4", INK, 2)   # the support at B
+    f.rect(BX0, y0 - th / 2, xt - BX0, th, "#f2a69c", INK, 2.5, 3)   # the board
+    for k in range(1, 6): f.line(xt - 14 * k, y0 - th / 2 + 3, xt - 14 * k, y0 + th / 2 - 3, "#c92a2a", 1.25)   # grip strips at the tip
+    f.circle(BX0, y0, 5, WHITE, INK, 2); f.line(BX0 - 3, y0, BX0 + 3, y0, INK, 1.5)       # the bolt
+    H.person(f, xt - 16, y0 - th / 2, shirt="#2f74b5", trousers="#3a4350", sc=0.27)      # the diver, a drawn figure as in the lessons
     f.tex(BX0 + 4, y0 - 32, r"\text{A}", "middle")
     f.tex(xB, y0 - 30, r"\text{B}", "middle")
     _dim(f, BX0, xB, 318, r"1{,}2\,\text{m}", above=True)
     f.line(BX0, yd + 6, BX0, 328, MUTED, 1.5, "4 4"); f.line(xB, yd + 6, xB, 328, MUTED, 1.5, "4 4")
-    _dim(f, BX0, xt, 52, r"4{,}0\,\text{m}", above=True)
-    f.line(BX0, 40, BX0, y0 - 46, MUTED, 1.5, "4 4"); f.line(xt, 40, xt, y0 - 108, MUTED, 1.5, "4 4")
+    _dim(f, BX0, xt, 40, r"4{,}0\,\text{m}", above=True)
+    f.line(BX0, 28, BX0, y0 - 46, MUTED, 1.5, "4 4"); f.line(xt, 28, xt, y0 - 14, MUTED, 1.5, "4 4")
     return f.svg()
 
 
