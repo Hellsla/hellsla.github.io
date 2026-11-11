@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: fb3e5a0833951d6e
+CONTENT-HASH: fdb52cc8dedcff71
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: the corrected beats figure description (grid lines every 0.1 s, numbers every 0.2 s); the reading data stay the same and do not give the answer away.
+- light delta review, round 1: the worked example's Doppler lines (lesson.md 590 and 593) now write m/s as a stacked fraction (\tfrac) inside the big fraction; the numbers, symbols and steps are unchanged.
+- The change is notation only: it is more legible than a slash inside a fraction and matches the unit style on lines 582 and 607. No effect on staging, the answer or the Finnish.

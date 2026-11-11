@@ -6,6 +6,9 @@
   python scripts/reviews.py scope <id> [--exercises]   per reviewer: none, delta or full, from what changed since its PASS
   python scripts/reviews.py carry <id> [--exercises]   record that a reviewer's PASS carries over a change it need not see
   python scripts/reviews.py approve-figures <id> …     record that the teacher approved the lesson's figures as drawn now
+  python scripts/reviews.py approve-presentation <sim.js> [<base-ref>]   show a simulation file's change since <base-ref>
+                                             (default origin/main) and, when it only places or draws, record it for the
+                                             teacher's approval (docs/presentation-only.tsv)
   python scripts/reviews.py impact [<ref>]   which lessons a change since <ref> (default origin/main) touches, and
                                              which review each needs; shared simulations count for every user
   python scripts/reviews.py verify           CI: every lesson's state; exit 1 on a malformed report or an invalid carry
@@ -73,6 +76,7 @@ VISUAL = "visual"
 VISUAL_GATE = True    # the activation switch of the third mandatory review (teacher's brief 2026-10-31, module docstring)
 BASELINE = ROOT / "docs" / "visual-baseline.tsv"   # what was published before the gate: hash-bound, rows only ever removed
 BASELINE_COLS = ["kind", "lang", "id", "part", "hash", "date"]
+PRESENTATION = ROOT / "docs" / "presentation-only.tsv"      # simulation changes that only place or draw, approved diff by diff (teacher 2026-11-11)
 TEACHER_FIGURES = ROOT / "docs" / "teacher-figures.tsv"   # figures the teacher approved as drawn (teacher 2026-11-10)
 CONTENT = ("meta.json", "lesson.md", "exercises.json", "solutions.md", "answers.py", "exit-ticket.json", "sim.js", "sim-spec.md", "inquiry.json")
 EXERCISE_CONTENT = ("exercises.json", "solutions.md", "answers.py")
@@ -109,6 +113,7 @@ RULES = {                       # category: (science, pedagogy, visual)
     "illustration":   ("none",  "delta", "delta"),   # an illustration (data-fig="hero" or "scene"): no text, no physics claim (teacher 2026-10-26)
     "core-mark":      ("none",  "none", "none"),    # an exercise or lesson activity marked core (`"core": true`) or unmarked, nothing else: the module's core path as a whole is reviewed in docs/core-path/ (teacher 2026-11-05)
     "paragraphs":     ("none",  "none", "none"),    # a task text cut into paragraphs (a blank line, "\\n\\n" in the JSON string), its words unchanged: build.exercise_text renders them, check_layout checks them (teacher 2026-11-04)
+    "presentation-only": ("none", "none", "delta"),  # a simulation's code changed only in where or how it draws (an axis name, a label's place), the exact change approved in docs/presentation-only.tsv: the visual reviewer looks, test_sims.py runs
     "teacher-figure": ("none",  "none", "none"),    # a figure the teacher approved as drawn (docs/teacher-figures.tsv, its exact Finnish SVG), its words in a translation, a task given it by "figure": the layout is check_layout's (teacher 2026-11-10)
     "split":          ("none",  "none", "none"),    # passed as one lesson before the split; this part's files moved, unchanged (answers.py: line for line)
 }
@@ -128,6 +133,7 @@ WHY = {"core-mark": "exercises or activities marked core or unmarked, nothing el
        "simulation": "the simulation's code changed", "figure": "a figure or picture changed",
        "illustration": "the illustrations only",
        "teacher-figure": "figures the teacher approved as drawn (docs/teacher-figures.tsv)",
+       "presentation-only": "a simulation's drawing only, the change approved in docs/presentation-only.tsv",
        "split": "the exercises moved to their own folder, every file as it was passed (answers.py split line for line)"}
 
 
@@ -881,6 +887,124 @@ def _approved_change(rel, a, b, oid):
     return a, b, False
 
 
+# A simulation's change that only places or draws (teacher 2026-11-11: an axis name or a label moved is no reason for a
+# full science and pedagogy review). Two things must both hold, or the change is "simulation" as before:
+#   1. presentation_only(old, new): every changed line of code is drawing or placing. A changed line may call the canvas
+#      text and shape functions, Math, the sim's lab() and helpers with a name of at most three letters (X, Y, tx, tj);
+#      it may declare new local names; it may not assign to anything else, define or return from a function, touch
+#      simState, the adapter, the controls, events, time, randomness, window or document, or call any other function.
+#      A name it declares must be new to the file, unless the same declaration stood on a removed line.
+#   2. docs/presentation-only.tsv has a row with the hashes of exactly this file before and after. The row is written by
+#      `reviews.py approve-presentation`, which prints the diff; the teacher approves it by merging the pull request
+#      that carries the row. Any later edit of the file changes its hash, and the row no longer applies.
+# The visual reviewer still looks (delta), and test_sims.py checks the labels and the sim's assertions as always.
+PRES_FORBID = re.compile(r"simState|simAdapter|defineSimAdapter|deltaTime|frameCount|millis\(|Math\.random|create[A-Z]\w*\(|addEventListener|"
+                         r"\bfunction\b|\breturn\b|\bwindow\b|\bdocument\b|localStorage|\+\+|--|=>|\bnew\b|\bawait\b|\bwhile\b")
+PRES_CALLS = {"text", "textSize", "textWidth", "textAlign", "textStyle", "textAscent", "textDescent", "line", "rect", "triangle", "ellipse", "circle",
+              "arc", "quad", "point", "stroke", "noStroke", "strokeWeight", "fill", "noFill", "push", "pop", "lab", "if", "for"}
+PRES_ASSIGN = re.compile(r"(?<![=!<>])=(?!=)")
+PRES_STRING = re.compile(r"`[^`]*`|'(?:[^'\\]|\\.)*'|\"(?:[^\"\\]|\\.)*\"")
+
+
+def _pres_code(line):
+    """A line of JavaScript without its strings and its trailing comment."""
+    return re.sub(r"//.*$", "", PRES_STRING.sub('""', line)).strip()
+
+
+def _pres_declared(stmt):
+    """The names a `const` or `let` statement (or a `for (const x of …` head) declares; None when it is neither."""
+    m = re.match(r"(?:for\s*\(\s*)?(?:const|let)\s+(.*)$", stmt, re.S)
+    if not m: return None
+    depth, names, part = 0, [], ""
+    for ch in m.group(1) + ",":                       # split at the commas outside brackets
+        if ch in "([{": depth += 1
+        elif ch in ")]}": depth -= 1
+        if ch == "," and depth <= 0:
+            n = re.match(r"\s*([A-Za-z_$][\w$]*)\s*(?:=|\bof\b|$)", part)
+            if not n: return None
+            names.append(n.group(1)); part = ""
+        else: part += ch
+    return names
+
+
+def presentation_only(old, new):
+    """True when the change from `old` to `new` (a simulation's JavaScript) only places or draws: see the rule above."""
+    if old is None or new is None or old == new: return False
+    rem, add = [], []
+    for l in difflib.ndiff(old.splitlines(), new.splitlines()):
+        if l.startswith("- "): rem.append(_pres_code(l[2:]))
+        elif l.startswith("+ "): add.append(_pres_code(l[2:]))
+    if [c for c in rem if c] == [c for c in add if c]: return False   # the code is the same (comments only): the category "comments" covers that
+    stmts = lambda code: [x.strip() for x in re.split(r"[;{}]", code) if x.strip()]
+    removed = {x for c in rem for x in stmts(c)}
+    old_names = set(re.findall(r"[A-Za-z_$][\w$]*", PRES_STRING.sub('""', old)))
+    for code in rem + add:
+        if PRES_FORBID.search(code): return False
+        for call in re.finditer(r"(?:\b(p|Math)\s*\.\s*)?\b([A-Za-z_$][\w$]*)\s*\(", code):
+            owner, name = call.groups()
+            if owner == "Math" or (owner == "p" and name in PRES_CALLS) or (owner is None and (name in PRES_CALLS or len(name) <= 3)): continue
+            return False
+    for code in add:
+        for st in stmts(code):
+            names = _pres_declared(st)
+            if names is None:
+                if PRES_ASSIGN.search(st) or re.search(r"[-+*/%]=", st): return False
+            elif st not in removed and any(n in old_names for n in names): return False
+    for code in rem:                                     # a removed line may not take state with it either
+        for st in stmts(code):
+            if _pres_declared(st) is None and (PRES_ASSIGN.search(st) or re.search(r"[-+*/%]=", st)): return False
+    return True
+
+
+def _pres_hash(text):
+    return hashlib.sha256((text or "").encode()).hexdigest()[:16]
+
+
+@functools.lru_cache(maxsize=None)
+def presentation_rows():
+    """{(file, hash before, hash after)} from docs/presentation-only.tsv."""
+    rows = set()
+    if PRESENTATION.is_file():
+        for l in PRESENTATION.read_text().splitlines():
+            c = l.split("\t")
+            if len(c) >= 4 and not l.startswith(("#", "date")): rows.add((c[1], c[2], c[3]))
+    return rows
+
+
+def presentation_approved(rel, a, b):
+    """The change of the simulation file `rel` from text `a` to text `b` only draws, and exactly this change is recorded.
+    `a` and `b` are the file as written (Source.read), the same for every language version."""
+    return rel.endswith(".js") and (rel, _pres_hash(a), _pres_hash(b)) in presentation_rows() and presentation_only(a, b)
+
+
+def presentation_change(old, new, rel):
+    """presentation_approved() of the file `rel` between two states of the project (Commit, WorkTree), read as written.
+    Source.source() puts a language's texts into a simulation's __('key') calls, so the same change of sim.js would
+    have another hash in every language version (fi, en, fi-easy); the JavaScript all of them run is the file itself."""
+    return rel.endswith(".js") and presentation_approved(rel, old.read(rel), new.read(rel))
+
+
+def approve_presentation(rel, base="origin/main", note=""):
+    """Show the change of a simulation file since `base` and, when it only places or draws, add its row."""
+    rel = (pathlib.Path(rel).resolve().relative_to(ROOT)).as_posix() if pathlib.Path(rel).exists() else rel
+    a, b = Commit(base).read(rel), WorkTree().read(rel)   # the file as written, not a language's view of it: one row holds for every language
+    print("\n".join(difflib.unified_diff((a or "").splitlines(), (b or "").splitlines(), f"a/{rel}", f"b/{rel}", lineterm="", n=2)))
+    if not presentation_only(a, b):
+        sys.exit(f"\n{rel}: this change does more than place or draw (or is no change): it stays in the category \"simulation\" and needs the full reviews")
+    row = (rel, _pres_hash(a), _pres_hash(b))
+    if row in presentation_rows(): print(f"\n{rel}: this change is already recorded"); return
+    if not PRESENTATION.is_file():
+        PRESENTATION.write_text("# Simulation changes that only place or draw (teacher 2026-11-11; scripts/reviews.py \"presentation_only\").\n"
+                                "# One row per approved change: the file and the hashes of its text before and after. Written by\n"
+                                "# `python scripts/reviews.py approve-presentation <sim.js> [<base-ref>]`, which prints the diff and refuses a change\n"
+                                "# that does more than draw. The teacher approves a row by merging the pull request that adds it; with the row,\n"
+                                "# the science and pedagogy reviews carry over and the visual reviewer looks at the change (delta).\n"
+                                "date\tfile\tbefore\tafter\tnote\n")
+    with PRESENTATION.open("a") as f: f.write(f"{datetime.date.today().isoformat()}\t{rel}\t{row[1]}\t{row[2]}\t{note}\n")
+    presentation_rows.cache_clear()
+    print(f"\nrecorded in {PRESENTATION.relative_to(ROOT)}: {rel} {row[1]} -> {row[2]}")
+
+
 def changes(folder, base, part="lesson", split=False):
     """(categories, unified diff, changed line count) of `part` between commit `base` and the working tree, over every
     source its hash covers, as the base saw them and as they are now. Formatting the hash ignores is not a change here
@@ -908,6 +1032,9 @@ def changes(folder, base, part="lesson", split=False):
                 if rel.endswith("/lesson.md"): ra, rb = a2, b2
                 a, b = a2, b2
         if rel.startswith("tests/sims/"): cats.add(test_change(rel, base)); diff.append(f"--- {rel}: simulation assertions changed"); continue
+        if not binary and presentation_change(old, new, rel):   # where or how the sim draws, the exact change of the file approved (one row for every language): the visual reviewer sees the diff
+            cats.add("presentation-only"); n += 1
+            diff += list(difflib.unified_diff((a or "").splitlines(), (b or "").splitlines(), f"a/{rel}", f"b/{rel}", lineterm="", n=2)); continue
         if binary: cats.add("simulation" if "/sims/" in f"/{rel}" else "photo" if _is_photo(rel) else "figure"); diff.append(f"--- {rel}: binary file {'added' if a is None else 'removed' if b is None else 'changed'}"); continue
         lines = list(difflib.unified_diff((a or "").splitlines(), (b or "").splitlines(), f"a/{rel}", f"b/{rel}", lineterm="", n=2))
         if not binary and rb and FBD_SPEC.search(rb):         # drawn force diagrams: the science reviewer checks each spec
@@ -1177,6 +1304,7 @@ if __name__ == "__main__":
     elif a[0] == "scope": print_scope(find_lesson(a[1]), part)
     elif a[0] == "carry": carry(find_lesson(a[1]), part)
     elif a[0] == "approve-figures": [approve_figures(x) for x in a[1:]]
+    elif a[0] == "approve-presentation": approve_presentation(a[1], *(a[2:3] or ["origin/main"]), note=" ".join(a[3:]))
     elif a[0] == "impact": impact(a[1] if len(a) > 1 else "origin/main")
     elif a[0] == "baseline": baseline_init() if a[1:2] == ["init"] else baseline_report()
     elif a[0] == "verify":

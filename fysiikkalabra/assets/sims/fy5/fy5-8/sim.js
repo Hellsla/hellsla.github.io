@@ -164,7 +164,10 @@ new p5((p) => {
     // tick numbers on the frame: x under the plot, F_v left of it
     for (const v of [-0.2, -0.1, 0.1, 0.2]) if (k <= 1.5 || Math.abs(v) > 0.15) lab(`$${tx(v, 1)}$`, X(v), gb + fh + 2, 'c', fh, MUTEDC);
     for (const v of [-15, -10, -5, 5, 10, 15]) if (k <= 1.5 || Math.abs(v) === 10) lab(`$${tx(v, 0)}$`, gx0 - 8, Y(v) + fh * 0.35, 'r', fh, MUTEDC);
-    lab('$x\\ (\\text{m})$', gx1 + 24, Y(0) + fh * 0.35, 'l', fh, INKC);
+    {   // the axis name stands after the arrow tip; where a phone's larger text would cross the picture's edge, it stands above the axis end
+      p.textSize(fh); const axisTex = '$x\\ (\\text{m})$', axisWide = p.textWidth(axisTex), axisFits = gx1 + 24 + axisWide <= 594;
+      lab(axisTex, axisFits ? gx1 + 24 : 594 - axisWide, axisFits ? Y(0) + fh * 0.35 : Y(0) - 10, 'l', fh, INKC);
+    }
     lab('$F_\\text{v}\\ (\\text{N})$', X(0) + 10, gt - 4, 'l', fh, INKC);
     // the points set for this spring, the current one in red
     p.stroke(255); p.strokeWeight(2);

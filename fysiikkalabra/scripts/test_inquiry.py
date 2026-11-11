@@ -60,7 +60,20 @@ FASTEST = """() => { const own = new Set(Object.values(window.simAdapter.params)
     const i = s ? [...s.options].findIndex((o) => /nopea/i.test(o.text)) : -1;     // the speed control (NOTES 4), never a physics parameter
     if (i >= 0 && !own.has(s) && !s.disabled) { s.selectedIndex = i; s.dispatchEvent(new Event('input', {bubbles: true})); s.dispatchEvent(new Event('change', {bubbles: true})); } }); }"""
 RUN = """() => { const b = document.querySelector('#sim-root button');   // the sim's main button comes first (NOTES 4)
+  if ((window.simState || {}).running === true) return null;   // a run in progress is left alone: the same button pauses it (fy4-14: the 40 s jump was paused every other wait and did not finish on a busy machine, 2026-11-11)
   if (b && !b.disabled && !/…$/.test(b.textContent.trim())) { b.click(); return b.textContent.trim(); } return null; }"""
+RUN_STUB = """<div id="sim-root"><button id="b">Käynnistä</button></div>
+<script>window.simState = { running: false }; window.clicks = 0;
+document.getElementById('b').addEventListener('click', () => { window.clicks++; window.simState.running = !window.simState.running; });</script>"""
+
+
+def run_helper_selftest(browser):
+    """The helper that presses a sim's main button for the student: it starts a sim that stands still and never presses
+    the button of one that reports simState.running, since a start button that is also the pause button would stop it."""
+    q = browser.new_page(); q.set_content(RUN_STUB)
+    first = q.evaluate(RUN); second = q.evaluate(RUN); third = q.evaluate(RUN)
+    state = q.evaluate("[window.clicks, window.simState.running]"); q.close()
+    check("the run helper starts a sim once and leaves a running sim alone", first == "Käynnistä" and second is None and third is None and state == [1, True], f"{first!r} {second!r} {third!r} {state}")
 CONTROL = "(k) => { const p = window.simAdapter.params[k]; return typeof p.input === 'string' ? document.querySelector(p.input) : p.input; }"
 OLD_NAMES = ("Herätä kiinnostus", "Lähtölippu", "Selitä", "Teoriatiivistelmä", "Theory summary", "Exit ticket", "Tarkista osaamisesi")     # replaced by Pohdinta, Exit ticket, Teoriatiivistelmä (2026-10-26), then Teoria (2026-11-05), Pohdintatehtävä and Itsearvio (2026-11-06)
 SPLIT = """async () => {   // lesson.js part 9: the exercises beside the theory, opened by the button, closed again (teacher 2026-11-05)
@@ -256,6 +269,7 @@ def generic(lid):
     url = page_file.as_uri()
     with sync_playwright() as pw:
         b = launch(pw); pg = b.new_page(viewport={"width": 1280, "height": 900})
+        run_helper_selftest(b)
         errors = []; pg.on("pageerror", lambda x: errors.append(str(x))); pg.on("console", lambda m: errors.append(m.text) if m.type == "error" else None)
         pg.goto(url); pg.evaluate("try { localStorage.clear() } catch (e) {}"); pg.goto(url)
         has_sim = 'id="sim-root"' in page

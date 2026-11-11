@@ -2,6 +2,8 @@
 # tests, check answer positions, carried reviews and the committed site. No AI task repeats these checks.
 # This repository serves GitHub Pages from its root branch (the teacher's other sites). Ruukkilabra itself is published at
 # https://ruukkilab.fi/ by .github/workflows/ruukkilabra-deploy.yml after this workflow has passed on main (teacher 2026-11-04).
+# Since 2026-11-11 a push to main is scoped like a pull request (against the commit main had before the push), and a shared
+# change tests a fixed sample of pages (ci_scope.py SMOKE) instead of the whole site; the whole site is tested weekly and by hand.
 # On a pull request the three browser checks (simulations, inquiry tests, layout at eight widths) test only the pages the
 # change can alter (scripts/ci_scope.py; teacher 2026-11-01); a change to anything shared runs them in full. Every other
 # check, and the whole run on main, weekly and on a manual run, is full. A newer push to a pull request cancels its older run.
@@ -15,6 +17,12 @@
 #                           width and four inquiry jobs
 #   qa                      the required check: passes only when every job above passed and the browser jobs' reports
 #                           show that every planned page was tested exactly once and passed (ci_parallel.py gate)
+# The jobs that open a browser (checks-1 to -3, sims, inquiry, layout) run in Playwright's own container image, pinned to
+# the version of the Python package they install (v1.65.0: Chromium 158, as before): Chromium and its system packages are
+# in the image. Until 2026-11-11 every job ran `playwright install --with-deps chromium`, which downloads Ubuntu packages;
+# when the runners could not resolve the package servers, 14 jobs of two pull requests died before any check ran. To move
+# to a newer Playwright, change the image tag and the pip version together. The jobs' reports are written under the
+# work space (ci-report), where the container and the upload step see the same path.
 # The checks need about 20 core-hours for the whole site. As one job on one core a full run did not fit into the six
 # hours a job may take, and a failing simulation kept every later check from running. Each job fails on its own now.
 name: fysiikkalabra-ci
@@ -30,7 +38,7 @@ permissions: { contents: read }
 concurrency:
   group: fysiikkalabra-ci-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
-defaults: { run: { working-directory: fysiikkalabra } }
+defaults: { run: { working-directory: fysiikkalabra, shell: "bash -e {0}" } }   # bash as before: a container job would otherwise run its steps with sh
 jobs:
   plan:
     runs-on: ubuntu-latest
@@ -49,21 +57,24 @@ jobs:
       - name: which pages the browser checks test (a pull request - the pages it can change, or full; scripts/ci_scope.py, teacher 2026-11-01)
         id: scope
         run: |
-          if [ "${{ github.event_name }}" = pull_request ]; then pages=$(python scripts/ci_scope.py "origin/${{ github.base_ref }}" 2> /tmp/scope.txt) || { pages=full; echo "scripts/ci_scope.py failed: full run" >> /tmp/scope.txt; }; else pages=full; echo "full run (${{ github.event_name }})" > /tmp/scope.txt; fi
+          if [ "${{ github.event_name }}" = pull_request ]; then pages=$(python scripts/ci_scope.py "origin/${{ github.base_ref }}" 2> /tmp/scope.txt) || { pages=full; echo "scripts/ci_scope.py failed: full run" >> /tmp/scope.txt; }
+          elif [ "${{ github.event_name }}" = push ] && [ -n "${{ github.event.before }}" ] && git cat-file -e "${{ github.event.before }}^{commit}" 2> /dev/null; then pages=$(python scripts/ci_scope.py "${{ github.event.before }}" 2> /tmp/scope.txt) || { pages=full; echo "scripts/ci_scope.py failed: full run" >> /tmp/scope.txt; }   # a push to main: what changed since the commit main had before it (every commit of the push); an unknown commit falls through to a full run
+          else pages=full; echo "full run (${{ github.event_name }})" > /tmp/scope.txt; fi
           echo "pages=$pages" >> "$GITHUB_OUTPUT"
           python scripts/ci_parallel.py plan --pages "$pages" | tee -a "$GITHUB_OUTPUT"
           { echo "### Browser checks: ${pages:-no page changed}"; sed 's/^/    /' /tmp/scope.txt; } | tee -a "$GITHUB_STEP_SUMMARY"
   checks-1:   # the sources, the build and the built pages
     runs-on: ubuntu-latest
+    container: { image: "mcr.microsoft.com/playwright/python:v1.65.0-noble", options: "--ipc=host" }   # Chromium and its system packages preinstalled (see the header)
     timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
         with: { fetch-depth: 0 }   # reviews.py verify re-derives carried reviews from history, and the build reads the exercises' reviewed version from it
-      - uses: actions/setup-python@v5
-        with: { python-version: "3.12" }
+      - run: git config --global --add safe.directory "$GITHUB_WORKSPACE"   # the container runs as root; the checkout belongs to the runner's user
+        working-directory: .
       - uses: actions/setup-node@v4
         with: { node-version: "22" }
-      - run: pip install markdown playwright numpy && playwright install --with-deps chromium
+      - run: python --version && python -m pip --version && python -m pip install markdown numpy playwright==1.65.0   # the container's own Python 3.12 (actions/setup-python's build does not run in it); the browser and its system packages are in the image (same Playwright version)
       - run: python scripts/lint_lesson.py --all
       - name: every worked example and exercise has a complete model solution (teacher 2026-10-27)
         run: python scripts/check_solutions.py --all
@@ -114,15 +125,16 @@ jobs:
         run: python scripts/lumatutor.py && python scripts/test_lumatutor.py
   checks-2:   # the page components in a browser, the review rules, the inquiry engine
     runs-on: ubuntu-latest
+    container: { image: "mcr.microsoft.com/playwright/python:v1.65.0-noble", options: "--ipc=host" }   # Chromium and its system packages preinstalled (see the header)
     timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
         with: { fetch-depth: 0 }   # reviews.py verify re-derives carried reviews from history, and the build reads the exercises' reviewed version from it
-      - uses: actions/setup-python@v5
-        with: { python-version: "3.12" }
+      - run: git config --global --add safe.directory "$GITHUB_WORKSPACE"   # the container runs as root; the checkout belongs to the runner's user
+        working-directory: .
       - uses: actions/setup-node@v4
         with: { node-version: "22" }
-      - run: pip install markdown playwright numpy && playwright install --with-deps chromium
+      - run: python --version && python -m pip --version && python -m pip install markdown numpy playwright==1.65.0   # the container's own Python 3.12 (actions/setup-python's build does not run in it); the browser and its system packages are in the image (same Playwright version)
       - run: python scripts/build.py --all
       - name: the solution editor under every exercise (Abitti's Digabi editor, loaded on the first click; copy for L'Math; teacher 2026-11-01)
         run: python scripts/test_writepad.py
@@ -140,15 +152,16 @@ jobs:
         run: python scripts/test_answer_check.py
   checks-3:   # carried reviews, the course and language pipelines, answer positions, the committed site, LaTeX
     runs-on: ubuntu-latest
+    container: { image: "mcr.microsoft.com/playwright/python:v1.65.0-noble", options: "--ipc=host" }   # Chromium and its system packages preinstalled (see the header)
     timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
         with: { fetch-depth: 0 }   # reviews.py verify re-derives carried reviews from history, and the build reads the exercises' reviewed version from it
-      - uses: actions/setup-python@v5
-        with: { python-version: "3.12" }
+      - run: git config --global --add safe.directory "$GITHUB_WORKSPACE"   # the container runs as root; the checkout belongs to the runner's user
+        working-directory: .
       - uses: actions/setup-node@v4
         with: { node-version: "22" }
-      - run: pip install markdown playwright numpy && playwright install --with-deps chromium
+      - run: python --version && python -m pip --version && python -m pip install markdown numpy playwright==1.65.0   # the container's own Python 3.12 (actions/setup-python's build does not run in it); the browser and its system packages are in the image (same Playwright version)
       - run: python scripts/build.py --all
       - run: python scripts/reviews.py verify
       - name: a temporary FY4 course through the whole pipeline (nothing is published)
@@ -184,62 +197,65 @@ jobs:
     if: needs.plan.outputs.pages != ''
     strategy: { fail-fast: false, matrix: { shard: "${{ fromJSON(needs.plan.outputs.sims) }}" } }
     runs-on: ubuntu-latest
+    container: { image: "mcr.microsoft.com/playwright/python:v1.65.0-noble", options: "--ipc=host" }   # Chromium and its system packages preinstalled (see the header)
     timeout-minutes: 150
     steps:
       - uses: actions/checkout@v4
         with: { fetch-depth: 0 }   # the build reads the exercises' reviewed version from history
-      - uses: actions/setup-python@v5
-        with: { python-version: "3.12" }
+      - run: git config --global --add safe.directory "$GITHUB_WORKSPACE"   # the container runs as root; the checkout belongs to the runner's user
+        working-directory: .
       - uses: actions/setup-node@v4
         with: { node-version: "22" }
-      - run: pip install markdown playwright numpy && playwright install --with-deps chromium
+      - run: python --version && python -m pip --version && python -m pip install markdown numpy playwright==1.65.0   # the container's own Python 3.12 (actions/setup-python's build does not run in it); the browser and its system packages are in the image (same Playwright version)
       - run: python scripts/build.py --all
       - name: simulations (scripts/test_sims.py page by page, two at a time; scripts/ci_parallel.py)
         env: { PAGES: "${{ needs.plan.outputs.pages }}" }
-        run: python scripts/ci_parallel.py sims --pages "$PAGES" --shard "${{ matrix.shard }}" --report "${{ runner.temp }}/report/sims-${{ strategy.job-index }}.json"
+        run: python scripts/ci_parallel.py sims --pages "$PAGES" --shard "${{ matrix.shard }}" --report "$GITHUB_WORKSPACE/ci-report/sims-${{ strategy.job-index }}.json"
       - uses: actions/upload-artifact@v4
         if: always()
-        with: { name: "report-sims-${{ strategy.job-index }}", path: "${{ runner.temp }}/report", if-no-files-found: error, retention-days: 14 }
+        with: { name: "report-sims-${{ strategy.job-index }}", path: "ci-report", if-no-files-found: error, retention-days: 14 }
   inquiry:
     name: inquiry tests ${{ matrix.shard }} of every lesson with inquiry.json, or of the pull request's pages (gating, locks, reveal, options and feedback as rendered, navigation, 360 px)
     needs: plan
     if: needs.plan.outputs.pages != ''
     strategy: { fail-fast: false, matrix: { shard: "${{ fromJSON(needs.plan.outputs.inquiry) }}" } }
     runs-on: ubuntu-latest
+    container: { image: "mcr.microsoft.com/playwright/python:v1.65.0-noble", options: "--ipc=host" }   # Chromium and its system packages preinstalled (see the header)
     timeout-minutes: 150
     steps:
       - uses: actions/checkout@v4
         with: { fetch-depth: 0 }   # the build reads the exercises' reviewed version from history
-      - uses: actions/setup-python@v5
-        with: { python-version: "3.12" }
+      - run: git config --global --add safe.directory "$GITHUB_WORKSPACE"   # the container runs as root; the checkout belongs to the runner's user
+        working-directory: .
       - uses: actions/setup-node@v4
         with: { node-version: "22" }
-      - run: pip install markdown playwright numpy && playwright install --with-deps chromium
+      - run: python --version && python -m pip --version && python -m pip install markdown numpy playwright==1.65.0   # the container's own Python 3.12 (actions/setup-python's build does not run in it); the browser and its system packages are in the image (same Playwright version)
       - run: python scripts/build.py --all
       - name: inquiry tests (scripts/test_inquiry.py <id> lesson by lesson, two at a time, each worker in its own work tree; scripts/ci_parallel.py)
         env: { PAGES: "${{ needs.plan.outputs.pages }}" }
-        run: python scripts/ci_parallel.py inquiry --pages "$PAGES" --shard "${{ matrix.shard }}" --report "${{ runner.temp }}/report/inquiry-${{ strategy.job-index }}.json"
+        run: python scripts/ci_parallel.py inquiry --pages "$PAGES" --shard "${{ matrix.shard }}" --report "$GITHUB_WORKSPACE/ci-report/inquiry-${{ strategy.job-index }}.json"
       - uses: actions/upload-artifact@v4
         if: always()
-        with: { name: "report-inquiry-${{ strategy.job-index }}", path: "${{ runner.temp }}/report", if-no-files-found: error, retention-days: 14 }
+        with: { name: "report-inquiry-${{ strategy.job-index }}", path: "ci-report", if-no-files-found: error, retention-days: 14 }
   layout:
     name: "layout ${{ matrix.job.name }}: every published page at eight widths (640 = 1280 px at 200 % zoom), closed, with hints and solutions open and with everything open; no overflow, overlap, empty column beside an opened card or a figure, cards out of order, over-long lines, small text or controls, or headings under the sticky navigation (NOTES.md §8)"
     needs: plan
     if: needs.plan.outputs.pages != ''
     strategy: { fail-fast: false, matrix: { job: "${{ fromJSON(needs.plan.outputs.layout) }}" } }
     runs-on: ubuntu-latest
+    container: { image: "mcr.microsoft.com/playwright/python:v1.65.0-noble", options: "--ipc=host" }   # Chromium and its system packages preinstalled (see the header)
     timeout-minutes: 150
     steps:
       - uses: actions/checkout@v4   # the committed site/ is what this check opens (checks-3 fails unless it is a fresh render): no history, no build
-      - uses: actions/setup-python@v5
-        with: { python-version: "3.12" }
-      - run: pip install markdown playwright numpy && playwright install --with-deps chromium
+      - run: git config --global --add safe.directory "$GITHUB_WORKSPACE"   # the container runs as root; the checkout belongs to the runner's user
+        working-directory: .
+      - run: python --version && python -m pip --version && python -m pip install markdown numpy playwright==1.65.0   # the container's own Python 3.12 (actions/setup-python's build does not run in it); the browser and its system packages are in the image (same Playwright version)
       - name: layout (scripts/check_layout.py --site page by page, two at a time; scripts/ci_parallel.py)
         env: { PAGES: "${{ needs.plan.outputs.pages }}" }
-        run: python scripts/ci_parallel.py layout --widths "${{ matrix.job.widths }}" --pages "$PAGES" --shard "${{ matrix.job.shard }}" --report "${{ runner.temp }}/report/layout-${{ strategy.job-index }}.json"
+        run: python scripts/ci_parallel.py layout --widths "${{ matrix.job.widths }}" --pages "$PAGES" --shard "${{ matrix.job.shard }}" --report "$GITHUB_WORKSPACE/ci-report/layout-${{ strategy.job-index }}.json"
       - uses: actions/upload-artifact@v4
         if: always()
-        with: { name: "report-layout-${{ strategy.job-index }}", path: "${{ runner.temp }}/report", if-no-files-found: error, retention-days: 14 }
+        with: { name: "report-layout-${{ strategy.job-index }}", path: "ci-report", if-no-files-found: error, retention-days: 14 }
   qa:   # the required check of a pull request, and the run ruukkilabra-deploy.yml waits for on main
     needs: [plan, checks-1, checks-2, checks-3, sims, inquiry, layout]
     if: always()

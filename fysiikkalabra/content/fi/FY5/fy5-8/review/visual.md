@@ -1,10 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 24c25170fb094132
+CONTENT-HASH: a0ec89c3324f1648
+
 ## Blocking
 (none)
 
 ## Polish
-- Kuva on pystykuva ja kapeampi kuin muut; asettuu silti siististi oikealle 1280 px:ssä.
+(none)
 
 ## Checked
-batch delta review: opened captures at 360 and 1280 px; photo loads, floats right beside the text at 1280 px and fills the column at 360 px, no clipping or horizontal overflow; alt text and caption natural Finnish, factual, consistent with the image and neighbouring paragraph; credit line present under the caption; numbers with units in LaTeX.
+- Delta (sim.js, axis name placement in the graph). Opened fy5-8-sim-390.png and fy5-8-sim-1280.png.
+- 390 px: "x (m)" stands fully inside the canvas after the arrow tip, LaTeX, same size and colour as "F_v (N)"; not clipped, no overlap with ticks or the grid. 1280 px unchanged, label after the arrow tip.
+- Layout around the graph (picture, slider, readout) survived.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

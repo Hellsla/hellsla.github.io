@@ -13,7 +13,7 @@ import re, sys
 SHY = "\u00ad"
 VOWELS = set("aeiouyäöåAEIOUYÄÖÅ")
 MIN_WORD = 9                                       # shorter words fit a phone's narrowest column as they are
-CELL = re.compile(r"(<(?:t[hd]|caption)\b[^>]*>)(.*?)(</(?:t[hd]|caption)>)", re.S)
+CELL = re.compile(r"(<(?:t[hd]|caption)\b[^>]*>)(.*?)(<\\?/(?:t[hd]|caption)>)", re.S)   # <\/td>: a cell inside a script's JSON string (a simulation's table text) ends there, not at the page's next real </td>
 SKIP = re.compile(r"(<[^>]*>|\$\$.*?\$\$|\$[^$]*\$|\\\(.*?\\\)|&[#\w]+;)", re.S)   # tags, formulas, entities
 WORD = re.compile(r"[A-Za-zÅÄÖåäö]{%d,}" % MIN_WORD)
 

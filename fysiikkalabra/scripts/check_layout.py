@@ -82,7 +82,7 @@ JS = """() => {
   }
   for (const s of document.querySelectorAll('main svg')) {
     const r = s.getBoundingClientRect();
-    if (!r.width || s.closest('.kx-wide, .eq-chain')) continue;   // a root sign inside a wide formula's own scrolling line (lesson.js kx-wide) scrolls with it
+    if (!r.width || !V(s) || s.closest('.kx-wide, .eq-chain')) continue;   // a root sign inside a wide formula's own scrolling line (lesson.js kx-wide) scrolls with it; a picture in a closed <details> has a box but is not drawn (content-visibility), and the 'open' state measures it once it shows (2026-11-11: the root sign of a display formula in fy1-4's closed sim box, laid out at the closed box's width)
     const card = s.closest('.kc-card'), lim = card ? card.getBoundingClientRect().right : vw;   // a concept card's own box is the limit
     if (r.right > lim + 1) out.push({what: 'svg', over: Math.round(r.right - lim), text: s.getAttribute('aria-label') || ''});
     const T = [...s.querySelectorAll('text'), ...s.querySelectorAll('foreignObject')].map((t) => ({t: t.textContent.trim().slice(0, 40), b: (t.querySelector('.katex, div') || t).getBoundingClientRect()})).filter((x) => x.t);
