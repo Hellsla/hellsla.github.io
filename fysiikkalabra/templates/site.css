@@ -85,11 +85,12 @@ header.top nav>a,.lang-menu>summary,.nav-menu>summary{display:inline-flex;align-
 header.top nav>a:hover,.lang-menu>summary:hover,.nav-menu>summary:hover{color:var(--ink);background:var(--bg-tint)}
 header.top nav>a:active,.lang-menu>summary:active{background:var(--line)}
 @media (max-width:29.99rem){.brand{gap:8px}.brand-mark{width:34px;height:34px}.brand-name small{letter-spacing:.06em;max-width:7.5rem}.lang-menu>summary{padding:0 6px;gap:.3rem}header.top{column-gap:8px}header.top nav{gap:2px}}   /* room for the menu button beside "Selkeä suomi" and under "Upper secondary physics" (two lines) at 360 px */
-/* Valikko (design audit 2026-11-10, P0-1): under 52rem the header's links no longer disappear one by one; they all give
+/* Valikko (design audit 2026-11-10, P0-1): under 58rem the header's links no longer disappear one by one; they all give
    way to one menu button beside the language control (a <details>, no script, like the language menu), so every page
-   of the header is reachable on a phone. From 52rem the links show and the button is gone. */
+   of the header is reachable on a phone. From 58rem the links show and the button is gone. The limit was 52rem until
+   Opettajalle joined the links (2026-11-11): the English header then needs 904 px to stay on one row. */
 .nav-menu{display:none;position:relative;margin:0}
-@media (max-width:51.99rem){header.top nav>a{display:none}.nav-menu{display:block}}
+@media (max-width:57.99rem){header.top nav>a{display:none}.nav-menu{display:block}}
 /* on a phone the word gives way to the three bars (the button keeps its name for a screen reader): "Selkeä suomi" and
    "English" beside the brand leave no room for it at 360 px */
 @media (max-width:29.99rem){.nav-menu-t{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}

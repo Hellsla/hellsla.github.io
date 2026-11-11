@@ -458,6 +458,11 @@ def texts(html):
     html = re.sub(r"\{\{t:([\w.]+)\}\}", lambda m: esc(T(m.group(1))), html)
     if grading_file():   # Työkalut in every language's footers (teacher 2026-11-08)
         html = html.replace('<a href="tietosuoja.html">', f'<a href="{TEACHER_PAGE}">{esc(T("site.tools"))}</a><a href="tietosuoja.html">', 1)
+        # Opettajalle in every page's header and phone menu (UI audit 2026-11-10, finding 15; teacher 2026-11-11): the classroom
+        # screen and the grading page were only behind the footer's small Työkalut link. The footer link stays.
+        link = f'<a href="{TEACHER_PAGE}">{esc(T("site.teacher_nav"))}</a>'
+        html = re.sub(r'(<a class="nav-booklets" [^>]*>[^<]*</a>)', lambda m: m.group(1) + link.replace("<a ", '<a class="nav-teacher" ', 1), html, count=1)
+        html = re.sub(r'(<li><a href="vihkot\.html">[^<]*</a></li>)', lambda m: m.group(1) + f"<li>{link}</li>", html, count=1)
     return html
 
 
