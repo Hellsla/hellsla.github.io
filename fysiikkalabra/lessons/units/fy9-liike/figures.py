@@ -117,7 +117,7 @@ def kartta():
     rows = [(r"(t,x)", "paikka", lambda u: 0.75 * u, lambda u: 0.15 * u + 0.85 * u * u, INK),
             (r"(t,v)", "nopeus", lambda u: 0.55, lambda u: 0.12 + 0.8 * u, COLD),
             (r"(t,a)", "kiihtyvyys", lambda u: 0.0, lambda u: 0.55, HEAT)]
-    bx, bw, bh, gap, top = 92, 216, 136, 52, 14
+    bx, bw, bh, gap, top = 80, 208, 136, 52, 14
     for k, (name, word, flat, accel, col) in enumerate(rows):
         y = top + k * (bh + gap)
         f.rect(bx, y, bw, bh, WHITE, MUTED, 2, 10)
@@ -132,10 +132,11 @@ def kartta():
         f.add(f'<polyline points="{pts(accel)}" fill="none" stroke="{col}" stroke-width="3" stroke-dasharray="9 6" stroke-linecap="round"/>')
         if k < 2:                                                               # the arrows to the next box
             ya, yb = y + bh + 6, y + bh + gap - 6
-            f.arrow(bx + bw + 30, ya, bx + bw + 30, yb, INK, 3, 13)
-            f.arrow(bx - 30, yb, bx - 30, ya, GOOD, 3, 13)
-            f.tex(bx + bw + 44, (ya + yb) / 2, r"\tfrac{\Delta x}{\Delta t}" if k == 0 else r"\tfrac{\Delta v}{\Delta t}", "start", INK)
-            f.tex(bx - 44, (ya + yb) / 2, r"\Delta x" if k == 0 else r"\Delta v", "end", GOOD)
+            f.arrow(bx + bw + 24, ya, bx + bw + 24, yb, INK, 3, 13)
+            f.arrow(bx - 24, yb, bx - 24, ya, GOOD, 3, 13)
+            # the slope on one line, as in the text (v = Δx/Δt), not as a small vertical fraction
+            f.tex(bx + bw + 36, (ya + yb) / 2, r"\Delta x/\Delta t" if k == 0 else r"\Delta v/\Delta t", "start", INK)
+            f.tex(bx - 36, (ya + yb) / 2, r"\Delta x" if k == 0 else r"\Delta v", "end", GOOD)
     yk = top + 3 * (bh + gap) - gap + 26                                        # the key
     f.line(14, yk - 18, 386, yk - 18, RULE_LIGHT, 1.5)
     f.tex(14, yk + 6, r"\downarrow\ \text{kulmakerroin}", "start", INK)

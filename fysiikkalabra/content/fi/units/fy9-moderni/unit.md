@@ -459,7 +459,7 @@ Tästä saadaan vastaus alun kysymykseen. Kasvivalon punaisen fotonin ($660\,\te
 <svg data-fig="fotonit" viewBox="0 0 600 392" role="img" aria-label="Kaavakuva, energia-akseli logaritmisessa mittakaavassa: fotonin energia elektronivoltteina kymmenesosasta kymmeneen miljoonaan, jokainen jakoväli kymmenkertainen. Näkyvä valo on kapea värikaista 1,7–3,3 elektronivolttia, ja punaisen LED-valon fotoni on 1,9 elektronivolttia. Katkoviiva kohdassa 12,6 elektronivolttia on vesimolekyylin ionisaatioenergia: sen vasemmalla puolella fotoni ei ionisoi vettä, oikealla puolella ionisoi. Hammasröntgenin fotoni, noin 60 kiloelektronivolttia, ja cesium-137:n gammafotoni, 662 kiloelektronivolttia, ovat kaukana oikealla. Akselin alla hakasulkeet: atomin elektronien energiatasojen erot ovat elektronivolttien luokkaa, ytimen tasojen erot kilo- ja megaelektronivolttien." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy9mo-vis" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#c92a2a"/><stop offset="0.35" stop-color="#e8590c"/><stop offset="0.6" stop-color="#2b8a3e"/><stop offset="1" stop-color="#1971c2"/></linearGradient></defs>
   <rect x="184" y="92" width="374" height="104" fill="#f2a69c" fill-opacity="0.28"/>
-  <rect x="130.5" y="184" width="18" height="24" fill="url(#fy9mo-vis)" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="130.5" y="182" width="18" height="28" fill="url(#fy9mo-vis)" stroke="#1f2933" stroke-width="1.5"/>
   <line x1="40" y1="196" x2="576" y2="196" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M588,196 L575,202 L575,190 Z" fill="#1f2933" stroke-linejoin="round"/>
   <line x1="54" y1="196" x2="54" y2="204" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
@@ -476,14 +476,14 @@ Tästä saadaan vastaus alun kysymykseen. Kasvivalon punaisen fotonin ($660\,\te
   <foreignObject x="465.5" y="211.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10^{6}$</div></foreignObject>
   <line x1="550" y1="196" x2="550" y2="204" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <foreignObject x="514" y="161.5" width="74" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$E\ (\text{eV})$</div></foreignObject>
-  <line x1="184" y1="54" x2="184" y2="218" stroke="#1f2933" stroke-width="2" stroke-linecap="butt" stroke-dasharray="7 6"/>
+  <line x1="184" y1="48" x2="184" y2="212" stroke="#1f2933" stroke-width="2" stroke-linecap="butt" stroke-dasharray="7 6"/>
   <foreignObject x="192" y="13.5" width="370" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{veden ionisaatioenergia } 12{,}6\,\text{eV}$</div></foreignObject>
-  <foreignObject x="56" y="55.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#2b8a3e">$\text{ei ionisoi}$</div></foreignObject>
-  <foreignObject x="192" y="55.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$\text{ionisoi}$</div></foreignObject>
-  <line x1="133" y1="196" x2="133" y2="150" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <circle cx="133" cy="196" r="7.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="12" y="89.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{punainen LED}$</div></foreignObject>
-  <foreignObject x="12" y="119.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$1{,}9\,\text{eV}$</div></foreignObject>
+  <foreignObject x="50" y="55.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#2b8a3e">$\text{ei ionisoi}$</div></foreignObject>
+  <foreignObject x="198" y="55.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$\text{ionisoi}$</div></foreignObject>
+  <line x1="133" y1="182" x2="133" y2="160" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <circle cx="133" cy="182" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <foreignObject x="12" y="97.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{punainen LED}$</div></foreignObject>
+  <foreignObject x="12" y="127.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$1{,}9\,\text{eV}$</div></foreignObject>
   <line x1="412" y1="196" x2="412" y2="150" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <circle cx="412" cy="196" r="7.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="350.5" y="89.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{röntgen}$</div></foreignObject>
@@ -492,11 +492,11 @@ Tästä saadaan vastaus alun kysymykseen. Kasvivalon punaisen fotonin ($660\,\te
   <circle cx="477" cy="196" r="7.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="464" y="89.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{gamma}$</div></foreignObject>
   <foreignObject x="451.5" y="119.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$662\,\text{keV}$</div></foreignObject>
-  <path d="M116,262 V270 H240 V262" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <foreignObject x="74" y="281.5" width="208" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{elektronien tasot}$</div></foreignObject>
-  <path d="M364,262 V270 H550 V262" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <foreignObject x="384.5" y="281.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{ytimen tasot}$</div></foreignObject>
-  <foreignObject x="124.5" y="309.5" width="258" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{näkyvä valo } 1{,}7\text{–}3{,}3\,\text{eV}$</div></foreignObject>
+  <path d="M116,254 V262 H240 V254" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <foreignObject x="74" y="271.5" width="208" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{elektronien tasot}$</div></foreignObject>
+  <path d="M364,254 V262 H550 V254" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <foreignObject x="384.5" y="271.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{ytimen tasot}$</div></foreignObject>
+  <foreignObject x="124.5" y="311.5" width="258" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{näkyvä valo } 1{,}7\text{–}3{,}3\,\text{eV}$</div></foreignObject>
   <foreignObject x="330" y="347.5" width="258" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$\text{logaritminen asteikko}$</div></foreignObject>
 </svg>
 
@@ -579,7 +579,8 @@ missä $N$ on hajoamattomien ytimien määrä hetkellä $t$, $N_0$ määrä alus
   <circle cx="322" cy="281" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
   <circle cx="100" cy="62" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="336" y="252" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\tfrac18$</div></foreignObject>
-  <foreignObject x="263" y="82.5" width="253" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$n = \tfrac{t}{T_{1/2}}\ \text{tai}\ n = \tfrac{d}{d_{1/2}}$</div></foreignObject>
+  <foreignObject x="277.5" y="79" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$n = t/T_{1/2}$</span></div></foreignObject>
+  <foreignObject x="277.5" y="110" width="149" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{tai}\ n = d/d_{1/2}$</span></div></foreignObject>
 </svg>
 
 ### Säteily ja annos

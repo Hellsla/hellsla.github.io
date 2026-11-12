@@ -153,7 +153,7 @@ def fotonit():
     # the visible band
     f.defs_add('<linearGradient id="fy9mo-vis" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#c92a2a"/>'
                '<stop offset="0.35" stop-color="#e8590c"/><stop offset="0.6" stop-color="#2b8a3e"/><stop offset="1" stop-color="#1971c2"/></linearGradient>')
-    f.rect(X(1.7), ya - 12, X(3.3) - X(1.7), 24, "url(#fy9mo-vis)", INK, 1.5)
+    f.rect(X(1.7), ya - 14, X(3.3) - X(1.7), 28, "url(#fy9mo-vis)", INK, 1.5)
     # the axis with decade ticks
     f.arrow(40, ya, 588, ya, INK, 2.5, 13)
     for p in range(-1, 8):
@@ -162,25 +162,31 @@ def fotonit():
             f.tex(X(10 ** p), ya + 30, "1" if p == 0 else rf"10^{{{p}}}", "middle", INK, size=24)
     f.tex(588, ya - 20, r"E\ (\text{eV})", "end", INK)
     # the ionisation line
-    f.line(X(E_ION), 54, X(E_ION), ya + 22, INK, 2, dash="7 6")
+    f.line(X(E_ION), 48, X(E_ION), ya + 16, INK, 2, dash="7 6")
     f.tex(X(E_ION) + 8, 28, r"\text{veden ionisaatioenergia } 12{,}6\,\text{eV}", "start", INK, size=24)
-    f.tex(X(E_ION) - 8, 70, r"\text{ei ionisoi}", "end", GOOD, size=24)
-    f.tex(X(E_ION) + 8, 70, r"\text{ionisoi}", "start", HOT, size=24)
+    f.tex(X(E_ION) - 14, 70, r"\text{ei ionisoi}", "end", GOOD, size=24)
+    f.tex(X(E_ION) + 14, 70, r"\text{ionisoi}", "start", HOT, size=24)
     # the photons
     for E, name, val, xl in ((E_RED, r"\text{punainen LED}", r"1{,}9\,\text{eV}", 0), (E_XRAY, r"\text{röntgen}", r"60\,\text{keV}", -14),
                               (E_CS, r"\text{gamma}", r"662\,\text{keV}", 22)):
         x = X(E)
+        if E == E_RED:
+            # the LED's point on the top edge of the visible strip, so that the strip stays in view; its label
+            # under 'ei ionisoi' with room between them
+            f.line(x, ya - 14, x, 160, MUTED, 1.5)
+            f.circle(x, ya - 14, 6.5, INK, WHITE, 2)
+            f.tex(12, 112, name, "start", INK, size=24)
+            f.tex(12, 142, val, "start", INK, size=24)
+            continue
         f.line(x, ya, x, 150, MUTED, 1.5)
         f.circle(x, ya, 7.5, INK, WHITE, 2)
-        anchor = "start" if E == E_RED else "middle"
-        xx = 12 if E == E_RED else x + xl
-        f.tex(xx, 104, name, anchor, INK, size=24)
-        f.tex(xx, 134, val, anchor, INK, size=24)
+        f.tex(x + xl, 104, name, "middle", INK, size=24)
+        f.tex(x + xl, 134, val, "middle", INK, size=24)
     # where the levels lie
     for a, b, word in ((1.0, 100.0, r"\text{elektronien tasot}"), (1e4, 1e7, r"\text{ytimen tasot}")):
-        f.path(f"M{n(X(a))},{ya + 66} V{ya + 74} H{n(X(b))} V{ya + 66}", "none", INK, 2)
-        f.tex((X(a) + X(b)) / 2, ya + 100, word, "middle", INK, size=24)
-    f.tex(X(1.7) - 6, ya + 128, r"\text{näkyvä valo } 1{,}7\text{–}3{,}3\,\text{eV}", "start", MUTED, size=24)
+        f.path(f"M{n(X(a))},{ya + 58} V{ya + 66} H{n(X(b))} V{ya + 58}", "none", INK, 2)
+        f.tex((X(a) + X(b)) / 2, ya + 90, word, "middle", INK, size=24)
+    f.tex(X(1.7) - 6, ya + 130, r"\text{näkyvä valo } 1{,}7\text{–}3{,}3\,\text{eV}", "start", MUTED, size=24)
     f.tex(588, ya + 166, r"\text{logaritminen asteikko}", "end", MUTED, size=24)
     return f.svg()
 
@@ -202,7 +208,9 @@ def puolitus():
         ax.point(k, 0.5 ** k, HEAT)
     ax.point(0, 1.0, HEAT)
     f.tex(ax.X(3) + 14, ax.Y(0.125) - 14, r"\tfrac18", "start", INK, size=24)
-    f.tex(ax.X(2.2), ax.Y(0.86), r"n = \tfrac{t}{T_{1/2}}\ \text{tai}\ n = \tfrac{d}{d_{1/2}}", "start", INK, size=24)
+    # what n is, on one line each as in the text (not small vertical fractions), on a white ground over the grid
+    f.tex(ax.X(2.4), ax.Y(0.875), r"n = t/T_{1/2}", "start", INK, size=24, bg=True)
+    f.tex(ax.X(2.4), ax.Y(0.75), r"\text{tai}\ n = d/d_{1/2}", "start", INK, size=24, bg=True)
     return f.svg()
 
 
