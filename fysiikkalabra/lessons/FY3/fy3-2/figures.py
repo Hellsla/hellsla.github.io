@@ -1,5 +1,5 @@
 """Figures of this lesson (scripts/figlib.py); `python3 scripts/figures.py fy3-2` writes them into lesson.md."""
-from figlib import Fig, Axes, INK, MUTED, WHITE, RULE, RULE_LIGHT, HEAT, HEAT_LIGHT, SAND_LIGHT, SAND, SAND_DARK, GRAIN, IRON, \
+from figlib import Fig, Axes, INK, MUTED, WHITE, RULE, RULE_LIGHT, HEAT, HEAT_LIGHT, HOT, SAND_LIGHT, SAND, SAND_DARK, GRAIN, IRON, \
     ALUMINIUM, METAL_EDGE, WATER, WATER_LIGHT, GLASS, COPPER, fi
 import herolib as H
 
@@ -21,15 +21,15 @@ def carry_lift():
     f.line(300, 20, 300, 300, RULE, 2, "6 6")
     # left: carrying, motion sideways, force up
     backpack(f, 110, 140)
-    f.arrow(150, 114, 150, 62, HEAT, 5, 22)
-    f.tex(166, 84, "F", "start")
+    f.arrow(150, 127, 150, 75, HOT, 5, 22)                    # a force is red and starts on the body: the loop (teacher 2026-11-11)
+    f.tex(166, 99, "F", "start", HOT)
     f.arrow(70, 240, 214, 240, MUTED, 3, 18)
     f.tex(142, 266, r"\text{liike}", "middle")
     f.tex(150, 306, r"W = 0", "middle")
     # right: lifting, motion upwards, force up
     backpack(f, 410, 140)
-    f.arrow(450, 114, 450, 62, HEAT, 5, 22)
-    f.tex(434, 84, "F", "end")
+    f.arrow(450, 127, 450, 75, HOT, 5, 22)
+    f.tex(434, 99, "F", "end", HOT)
     f.arrow(520, 232, 520, 86, MUTED, 3, 18)
     f.tex(534, 160, r"\text{liike}", "start")
     f.tex(450, 306, r"W = F\,s", "middle")
@@ -72,32 +72,44 @@ def joule():
 
 
 def work_graphs():
-    f = Fig("fy32-wgraphs", 340, "Kaavakuva kahdesta (s,F)-kuvaajasta. Vasemmalla voima on vakio, ja työ on suorakulmion "
+    """Two (s,F) graphs. The values F and s are drawn as dimension lines beside the axes (teacher 2026-11-11,
+    illustration audit), so they read as the height and the width of the area, apart from the axes' names s and F at
+    the arrow ends."""
+    f = Fig("fy32-wgraphs", 346, "Kaavakuva kahdesta (s,F)-kuvaajasta. Vasemmalla voima on vakio, ja työ on suorakulmion "
             "pinta-ala F · s. Oikealla voima ensin kasvaa tasaisesti ja pysyy sitten vakiona; työ on kolmion pinta-ala A₁ "
             "plus suorakulmion pinta-ala A₂.")
+
+    def dims(ax, xs, yf):
+        """The value s as a dimension line under the s axis, the value F as one left of the F axis."""
+        y = ax.y0 + 22
+        f.line(ax.X(0), y, ax.X(xs), y, INK, 1.5)
+        for x in (ax.X(0), ax.X(xs)): f.line(x, y - 7, x, y + 7, INK, 1.5)
+        f.tex((ax.X(0) + ax.X(xs)) / 2, y + 24, "s", "middle")
+        x = ax.x0 - 22
+        f.line(x, ax.Y(0), x, ax.Y(yf), INK, 1.5)
+        for yy in (ax.Y(0), ax.Y(yf)): f.line(x - 7, yy, x + 7, yy, INK, 1.5)
+        f.tex(x - 12, (ax.Y(0) + ax.Y(yf)) / 2, "F", "end")
     # constant force
-    a = Axes(f, (60, 240), (230, 80), x=(0, 10), y=(0, 10), xticks=[], yticks=[], xlabel="s", ylabel="F", grid=False,
+    a = Axes(f, (80, 240), (250, 80), x=(0, 10), y=(0, 10), xticks=[], yticks=[], xlabel="s", ylabel="F", grid=False,
              origin_label=False)
     a.area([(0, 0), (0, 6), (8, 6), (8, 0)], HEAT_LIGHT, 0.55)
     a.guide(8, 6)
     a.line([(0, 6), (8, 6)], HEAT, 4)
-    f.tex(a.x0 - 12, a.Y(6), "F", "end")
-    f.tex(a.X(8), a.y0 + 24, "s", "middle")
+    dims(a, 8, 6)
     f.tex(a.X(4), a.Y(3), r"W = F\,s", "middle")
-    f.tex(a.X(4), 306, r"\text{vakiovoima}", "middle")
+    f.tex(a.X(4), 322, r"\text{vakiovoima}", "middle")
     # force growing then constant
-    b = Axes(f, (350, 240), (520, 80), x=(0, 10), y=(0, 10), xticks=[], yticks=[], xlabel="s", ylabel="F", grid=False,
+    b = Axes(f, (370, 240), (540, 80), x=(0, 10), y=(0, 10), xticks=[], yticks=[], xlabel="s", ylabel="F", grid=False,
              origin_label=False)
     b.area([(0, 0), (4, 6), (4, 0)], HEAT, 0.4)
     b.area([(4, 0), (4, 6), (9, 6), (9, 0)], HEAT_LIGHT, 0.55)
     b.guide(9, 6)
     b.line([(4, 6), (4, 0)], MUTED, 1.5, "6 5")
     b.line([(0, 0), (4, 6), (9, 6)], HEAT, 4)
-    f.tex(b.x0 - 12, b.Y(6), "F", "end")
-    f.tex(b.X(9), b.y0 + 24, "s", "middle")
+    dims(b, 9, 6)
     f.tex(b.X(3), b.Y(1.6), "A_1", "middle")
     f.tex(b.X(6.5), b.Y(3), "A_2", "middle")
-    f.tex(b.X(4.5), 306, r"\text{muuttuva voima}", "middle")
+    f.tex(b.X(4.5), 322, r"\text{muuttuva voima}", "middle")
     return f.svg()
 
 
@@ -134,10 +146,10 @@ def lift_work():
     crate(232, True)
     crate(92)
     # forces of equal length on the raised crate
-    f.arrow(180, 92, 180, 34, HEAT, 5, 22)
-    f.tex(196, 54, "F", "start")
-    f.arrow(180, 152, 180, 210, INK, 5, 22)
-    f.tex(196, 190, "G", "start")
+    f.arrow(180, 92, 180, 34, HOT, 5, 22)                      # forces red (teacher 2026-11-11)
+    f.tex(196, 54, "F", "start", HOT)
+    f.arrow(180, 152, 180, 210, HOT, 5, 22)
+    f.tex(196, 190, "G", "start", HOT)
     # the motion, and the height h between the crate's bottoms
     f.arrow(90, 262, 90, 126, MUTED, 3, 18)
     f.tex(78, 196, r"\text{liike}", "end")

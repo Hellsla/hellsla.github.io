@@ -5,9 +5,10 @@
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: a tall glass of a cold drink stands on a table, with ice cubes and a straw floating in it. Water droplets have condensed on the outside of the glass, and a box of ice cubes stands next to the glass." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy314h-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f6f1e6"/></linearGradient><linearGradient id="fy314h-drink" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d0e6fb"/><stop offset="1" stop-color="#a9d1f0"/></linearGradient></defs>
   <rect x="0" y="0" width="1200" height="600" fill="#f6f1e6"/>
-  <rect x="0" y="0" width="1200" height="380" fill="url(#fy314h-wall)"/>
-  <rect x="0" y="470" width="1200" height="130" fill="#c9c2b2"/>
-  <line x1="0" y1="470" x2="1200" y2="470" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="0" y="0" width="1200" height="430" fill="url(#fy314h-wall)"/>
+  <rect x="0" y="520" width="1200" height="80" fill="#c9c2b2"/>
+  <line x1="0" y1="520" x2="1200" y2="520" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <g transform="matrix(1.2 0 0 1.2 -180 -46)">
   <path d="M500,110 L520,460 Q522,474 536,474 H664 Q678,474 680,460 L700,110 Z" fill="#eef5f9" stroke-linejoin="round"/>
   <path d="M506,190 L521,458 Q523,470 536,470 H664 Q677,470 679,458 L694,190 Z" fill="url(#fy314h-drink)" stroke-linejoin="round"/>
   <path d="M640,60 L600,440" fill="none" stroke="#1971c2" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
@@ -33,13 +34,14 @@
   <ellipse cx="604.5" cy="240" rx="4" ry="6" fill="#ffffff" stroke="#4f8fbf" stroke-width="1.5"/>
   <ellipse cx="568.5" cy="261.5" rx="4" ry="6" fill="#ffffff" stroke="#4f8fbf" stroke-width="1.5"/>
   <ellipse cx="632.5" cy="366" rx="4" ry="6" fill="#ffffff" stroke="#4f8fbf" stroke-width="1.5"/>
-  <rect x="800" y="430" width="260" height="40" rx="6" fill="#d0e6fb" stroke="#1f2933" stroke-width="3"/>
-  <rect x="816" y="420" width="42" height="30" rx="5" fill="#a5d8ff" stroke="#4f8fbf" stroke-width="2"/>
-  <rect x="872" y="420" width="42" height="30" rx="5" fill="#a5d8ff" stroke="#4f8fbf" stroke-width="2"/>
-  <rect x="928" y="420" width="42" height="30" rx="5" fill="#a5d8ff" stroke="#4f8fbf" stroke-width="2"/>
-  <rect x="984" y="420" width="42" height="30" rx="5" fill="#a5d8ff" stroke="#4f8fbf" stroke-width="2"/>
+  <rect x="760" y="430" width="260" height="40" rx="6" fill="#d0e6fb" stroke="#1f2933" stroke-width="3"/>
+  <rect x="776" y="420" width="42" height="30" rx="5" fill="#a5d8ff" stroke="#4f8fbf" stroke-width="2"/>
+  <rect x="832" y="420" width="42" height="30" rx="5" fill="#a5d8ff" stroke="#4f8fbf" stroke-width="2"/>
+  <rect x="888" y="420" width="42" height="30" rx="5" fill="#a5d8ff" stroke="#4f8fbf" stroke-width="2"/>
+  <rect x="944" y="420" width="42" height="30" rx="5" fill="#a5d8ff" stroke="#4f8fbf" stroke-width="2"/>
   <path d="M430,200 c-14,30 14,60 0,90 s14,60 0,90" fill="none" stroke="#d0e6fb" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M760,200 c-14,30 14,60 0,90 s14,60 0,90" fill="none" stroke="#d0e6fb" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M730,200 c-14,30 14,60 0,90 s14,60 0,90" fill="none" stroke="#d0e6fb" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+  </g>
 </svg>
 
 ## Key idea

@@ -128,9 +128,9 @@ Kannat reppua vaakasuoraan tasaisella vauhdilla. Reppua kannatteleva voimasi oso
   <rect x="122" y="184" width="56" height="26" rx="6" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
   <path d="M110,170 Q150,192 190,170" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
   <path d="M132,140 Q150,114 168,140" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <line x1="150" y1="114" x2="150" y2="83" stroke="#e8590c" stroke-width="5" stroke-linecap="butt"/>
-  <path d="M150,62 L160,84 L140,84 Z" fill="#e8590c" stroke-linejoin="round"/>
-  <foreignObject x="166" y="69.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$F$</div></foreignObject>
+  <line x1="150" y1="127" x2="150" y2="96" stroke="#c92a2a" stroke-width="5" stroke-linecap="butt"/>
+  <path d="M150,75 L160,97 L140,97 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="166" y="84.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$F$</div></foreignObject>
   <line x1="70" y1="240" x2="197" y2="240" stroke="#6b7480" stroke-width="3" stroke-linecap="butt"/>
   <path d="M214,240 L196,248 L196,232 Z" fill="#6b7480" stroke-linejoin="round"/>
   <foreignObject x="107" y="251.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{liike}$</div></foreignObject>
@@ -139,9 +139,9 @@ Kannat reppua vaakasuoraan tasaisella vauhdilla. Reppua kannatteleva voimasi oso
   <rect x="422" y="184" width="56" height="26" rx="6" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
   <path d="M410,170 Q450,192 490,170" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
   <path d="M432,140 Q450,114 468,140" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <line x1="450" y1="114" x2="450" y2="83" stroke="#e8590c" stroke-width="5" stroke-linecap="butt"/>
-  <path d="M450,62 L460,84 L440,84 Z" fill="#e8590c" stroke-linejoin="round"/>
-  <foreignObject x="414" y="69.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$F$</div></foreignObject>
+  <line x1="450" y1="127" x2="450" y2="96" stroke="#c92a2a" stroke-width="5" stroke-linecap="butt"/>
+  <path d="M450,75 L460,97 L440,97 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="414" y="84.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#c92a2a">$F$</div></foreignObject>
   <line x1="520" y1="232" x2="520" y2="103" stroke="#6b7480" stroke-width="3" stroke-linecap="butt"/>
   <path d="M520,86 L528,104 L512,104 Z" fill="#6b7480" stroke-linejoin="round"/>
   <foreignObject x="534" y="145.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{liike}$</div></foreignObject>
@@ -192,38 +192,50 @@ missä $W$ on työ (J), $F$ voiman suuruus (N) ja $s$ kappaleen kulkema matka (m
 
 Jos voima muuttuu matkan aikana, työ on $(s,F)$-kuvaajassa pinta-ala. Se on voimakäyrän ja $s$-akselin välissä oleva alue. Vakiovoimalla alue on suorakulmio, jonka ala on $F \cdot s$. Sama laskusääntö toimii siis molemmissa tapauksissa. Monimutkaisen kuvaajan pinta-alan voi laskea jakamalla kuvaaja osiin. Osat ovat suorakulmioita, kolmioita ja puolisuunnikkaita.
 
-<svg data-fig="work-graphs" viewBox="0 0 600 340" role="img" aria-label="Kaavakuva kahdesta (s,F)-kuvaajasta. Vasemmalla voima on vakio. Työ on suorakulmion pinta-ala F · s. Oikealla voima ensin kasvaa tasaisesti. Sitten voima pysyy vakiona. Työ on kolmion pinta-ala A₁ plus suorakulmion pinta-ala A₂." style="max-width:100%;font-size:24px">
-  <line x1="59" y1="240" x2="244" y2="240" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M256,240 L243,246 L243,234 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <line x1="60" y1="241" x2="60" y2="66" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M60,54 L66,67 L54,67 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <foreignObject x="262" y="225.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$s$</div></foreignObject>
-  <foreignObject x="50" y="23.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$F$</div></foreignObject>
-  <polygon points="60,240 60,144 196,144 196,240" fill="#ffc078" fill-opacity="0.55"/>
-  <line x1="196" y1="144" x2="196" y2="240" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <line x1="60" y1="144" x2="196" y2="144" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <polyline points="60,144 196,144" fill="none" stroke="#e8590c" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
-  <foreignObject x="28" y="129.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$F$</div></foreignObject>
-  <foreignObject x="186" y="249.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$s$</div></foreignObject>
-  <foreignObject x="93" y="177.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$W = F\,s$</div></foreignObject>
-  <foreignObject x="61.5" y="291.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{vakiovoima}$</div></foreignObject>
-  <line x1="349" y1="240" x2="534" y2="240" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M546,240 L533,246 L533,234 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <line x1="350" y1="241" x2="350" y2="66" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M350,54 L356,67 L344,67 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <foreignObject x="552" y="225.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$s$</div></foreignObject>
-  <foreignObject x="340" y="23.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$F$</div></foreignObject>
-  <polygon points="350,240 418,144 418,240" fill="#e8590c" fill-opacity="0.4"/>
-  <polygon points="418,240 418,144 503,144 503,240" fill="#ffc078" fill-opacity="0.55"/>
-  <line x1="503" y1="144" x2="503" y2="240" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <line x1="350" y1="144" x2="503" y2="144" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <polyline points="418,144 418,240" fill="none" stroke="#6b7480" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="6 5"/>
-  <polyline points="350,240 418,144 503,144" fill="none" stroke="#e8590c" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
-  <foreignObject x="318" y="129.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$F$</div></foreignObject>
-  <foreignObject x="493" y="249.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$s$</div></foreignObject>
-  <foreignObject x="384.5" y="200" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$A_1$</div></foreignObject>
-  <foreignObject x="444" y="177.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$A_2$</div></foreignObject>
-  <foreignObject x="341.5" y="291.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{muuttuva voima}$</div></foreignObject>
+<svg data-fig="work-graphs" viewBox="0 0 600 346" role="img" aria-label="Kaavakuva kahdesta (s,F)-kuvaajasta. Vasemmalla voima on vakio. Työ on suorakulmion pinta-ala F · s. Oikealla voima ensin kasvaa tasaisesti. Sitten voima pysyy vakiona. Työ on kolmion pinta-ala A₁ plus suorakulmion pinta-ala A₂." style="max-width:100%;font-size:24px">
+  <line x1="79" y1="240" x2="264" y2="240" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M276,240 L263,246 L263,234 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="80" y1="241" x2="80" y2="66" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M80,54 L86,67 L74,67 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="282" y="225.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$s$</div></foreignObject>
+  <foreignObject x="70" y="23.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$F$</div></foreignObject>
+  <polygon points="80,240 80,144 216,144 216,240" fill="#ffc078" fill-opacity="0.55"/>
+  <line x1="216" y1="144" x2="216" y2="240" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <line x1="80" y1="144" x2="216" y2="144" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <polyline points="80,144 216,144" fill="none" stroke="#e8590c" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="80" y1="262" x2="216" y2="262" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="80" y1="255" x2="80" y2="269" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="216" y1="255" x2="216" y2="269" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="138" y="271.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$s$</div></foreignObject>
+  <line x1="58" y1="240" x2="58" y2="144" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="51" y1="240" x2="65" y2="240" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="51" y1="144" x2="65" y2="144" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="26" y="177.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$F$</div></foreignObject>
+  <foreignObject x="113" y="177.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$W = F\,s$</div></foreignObject>
+  <foreignObject x="81.5" y="307.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{vakiovoima}$</div></foreignObject>
+  <line x1="369" y1="240" x2="554" y2="240" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M566,240 L553,246 L553,234 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="370" y1="241" x2="370" y2="66" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M370,54 L376,67 L364,67 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="572" y="225.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$s$</div></foreignObject>
+  <foreignObject x="360" y="23.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$F$</div></foreignObject>
+  <polygon points="370,240 438,144 438,240" fill="#e8590c" fill-opacity="0.4"/>
+  <polygon points="438,240 438,144 523,144 523,240" fill="#ffc078" fill-opacity="0.55"/>
+  <line x1="523" y1="144" x2="523" y2="240" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <line x1="370" y1="144" x2="523" y2="144" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <polyline points="438,144 438,240" fill="none" stroke="#6b7480" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="6 5"/>
+  <polyline points="370,240 438,144 523,144" fill="none" stroke="#e8590c" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="370" y1="262" x2="523" y2="262" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="370" y1="255" x2="370" y2="269" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="523" y1="255" x2="523" y2="269" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="436.5" y="271.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$s$</div></foreignObject>
+  <line x1="348" y1="240" x2="348" y2="144" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="341" y1="240" x2="355" y2="240" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="341" y1="144" x2="355" y2="144" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="316" y="177.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$F$</div></foreignObject>
+  <foreignObject x="404.5" y="200" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$A_1$</div></foreignObject>
+  <foreignObject x="464" y="177.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$A_2$</div></foreignObject>
+  <foreignObject x="361.5" y="307.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{muuttuva voima}$</div></foreignObject>
 </svg>
 
 Nostat kappaleen ylös tasaisella nopeudella. Silloin nostovoima on yhtä suuri kuin kappaleen paino $G = mg$ (luku *Voima vuorovaikutuksen mittana ja paino*). Nostotyö korkeudelle $h$ on siis:
@@ -241,12 +253,12 @@ missä $G$ on paino (N), $m$ massa (kg), $g = 9{,}81\,\text{m/s}^2$ ja $h$ nosto
   <rect x="150" y="102" width="60" height="40" fill="#f1dfb5" stroke="#1f2933" stroke-width="1.5"/>
   <line x1="150" y1="102" x2="210" y2="142" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="210" y1="102" x2="150" y2="142" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="180" y1="92" x2="180" y2="55" stroke="#e8590c" stroke-width="5" stroke-linecap="butt"/>
-  <path d="M180,34 L190,56 L170,56 Z" fill="#e8590c" stroke-linejoin="round"/>
-  <foreignObject x="196" y="39.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$F$</div></foreignObject>
-  <line x1="180" y1="152" x2="180" y2="189" stroke="#1f2933" stroke-width="5" stroke-linecap="butt"/>
-  <path d="M180,210 L170,188 L190,188 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <foreignObject x="196" y="175.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$G$</div></foreignObject>
+  <line x1="180" y1="92" x2="180" y2="55" stroke="#c92a2a" stroke-width="5" stroke-linecap="butt"/>
+  <path d="M180,34 L190,56 L170,56 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="196" y="39.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$F$</div></foreignObject>
+  <line x1="180" y1="152" x2="180" y2="189" stroke="#c92a2a" stroke-width="5" stroke-linecap="butt"/>
+  <path d="M180,210 L170,188 L190,188 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="196" y="175.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$G$</div></foreignObject>
   <line x1="90" y1="262" x2="90" y2="143" stroke="#6b7480" stroke-width="3" stroke-linecap="butt"/>
   <path d="M90,126 L98,144 L82,144 Z" fill="#6b7480" stroke-linejoin="round"/>
   <foreignObject x="8" y="181.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{liike}$</div></foreignObject>

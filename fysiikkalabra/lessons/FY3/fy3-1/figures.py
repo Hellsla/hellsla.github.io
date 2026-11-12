@@ -2,6 +2,7 @@
 from fbd import FBD
 from figlib import Fig, Axes, INK, MUTED, WHITE, RULE, HEAT_LIGHT, HOT, ALUMINIUM, METAL_EDGE, IRON, WATER, COPPER, GRAIN, fi
 import herolib as H
+from figstyle import Fig as HouseFig
 
 
 def forcemeter():
@@ -157,20 +158,22 @@ def spring_points():
 # Voimakuvion valinta (task fy3-1-L1-09, docs/exercise-types.md type 3): a body of 0,50 kg hangs at rest from a force
 # meter that reads 4,9 N, so its weight G = mg = 4,9 N and the meter's pull F = 4,9 N. Four option diagrams to one
 # scale (14 units per newton); only "pick-rest" is right. FY3 writes forces without the vector overline (FY4 adds it).
-PICK_G, PICK_SCALE, PICK_BODY = 4.9, 14, (150, 206, 120, 70)
-PICK_TOP, PICK_BOTTOM = (150, 206 - 35), (150, 206 + 35)
+# House style and a frame fitted to the four options together (teacher 2026-11-11, illustration audit group E): one
+# 200 x 306 frame for all four keeps them to one scale, from the long pull's tip at the top to F_k's tip at the bottom.
+PICK_G, PICK_SCALE, PICK_BODY = 4.9, 14, (100, 188, 120, 70)
+PICK_TOP, PICK_BOTTOM = (100, 188 - 35), (100, 188 + 35)
 
 
 def pick_fbd(fid, label, pull=PICK_G, extra=False, wrong=None):
     """One option: the hanging body as a rectangle, its weight G from the centre and the meter's pull F from the top face,
     where the hook is attached; extra adds the body's own pull on the meter, F_k, which acts on the meter, not on the body."""
-    f = Fig(fid, 320, label, width=300)
+    f = HouseFig(fid, 306, label, width=200)
     d = FBD(f, scale=PICK_SCALE, body=PICK_BODY, a_dir=(0, 0), wrong=wrong)
     d.force("G", (0, -PICK_G), PICK_BODY[:2], kind="gravity", tex="G", lab=(-22, 8))
     if pull:
         d.force("F", (0, pull), PICK_TOP, kind="tension", rope=(0, 1), tex="F", lab=(22, 4))
     if extra:
-        d.force("F_k", (0, -PICK_G), (190, PICK_BOTTOM[1]), kind="other", tex=r"F_\text{k}", lab=(28, -30))
+        d.force("F_k", (0, -PICK_G), (140, PICK_BOTTOM[1]), kind="other", tex=r"F_\text{k}", lab=(28, -30))
     d.draw()
     return f.svg()
 

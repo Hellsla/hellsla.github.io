@@ -19,19 +19,19 @@
   <line x1="840" y1="500" x2="800" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
   <line x1="960" y1="500" x2="920" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
   <line x1="1080" y1="500" x2="1040" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <rect x="80" y="110" width="240" height="260" rx="4" fill="url(#fy310h-sky)" stroke="#1f2933" stroke-width="3"/>
-  <path d="M135,210 Q134,193 154,195 Q162,177 182,183 Q200,173 210,192 Q228,194 226,210 Z" fill="#ffffff" stroke-linejoin="round"/>
-  <line x1="200" y1="110" x2="200" y2="370" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="80" y1="240" x2="320" y2="240" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M560,218 Q476,182 480,112 Q486,30 560,28 Q634,30 640,112 Q644,182 560,218 Z" fill="#1971c2" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M550,230 L560,216 L570,230 Z" fill="#1971c2" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <ellipse cx="526" cy="78" rx="16" ry="26" transform="rotate(30 526 78)" fill="#ffffff" fill-opacity="0.8"/>
-  <path d="M560,230 C540,300 590,360 560,420 S570,470 556,480" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M860,494 Q776,458 780,388 Q786,306 860,304 Q934,306 940,388 Q944,458 860,494 Z" fill="#e9c98a" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M850,506 L860,492 L870,506 Z" fill="#e9c98a" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <ellipse cx="826" cy="354" rx="16" ry="26" transform="rotate(30 826 354)" fill="#ffffff" fill-opacity="0.8"/>
-  <ellipse cx="860" cy="500" rx="74" ry="10" fill="#6b7480" fill-opacity="0.35"/>
-  <path d="M870,506 C900,520 940,512 990,522" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <rect x="210" y="96" width="260" height="280" rx="4" fill="url(#fy310h-sky)" stroke="#1f2933" stroke-width="3"/>
+  <path d="M260.5,201 Q259.5,182.5 281.5,184.5 Q290,164.5 312,171.5 Q332,160.5 343,181 Q363,183.5 360.5,201 Z" fill="#ffffff" stroke-linejoin="round"/>
+  <line x1="340" y1="96" x2="340" y2="376" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="210" y1="236" x2="470" y2="236" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M590,292.4 Q472.4,242 478,144 Q486.4,29.2 590,26.4 Q693.6,29.2 702,144 Q707.6,242 590,292.4 Z" fill="#1971c2" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M576,309.2 L590,289.6 L604,309.2 Z" fill="#1971c2" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <ellipse cx="542.4" cy="96.4" rx="22.4" ry="36.4" transform="rotate(30 542.4 96.4)" fill="#ffffff" fill-opacity="0.8"/>
+  <path d="M590,309 C570,360 618,400 590,440 S600,474 586,484" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M850,483.4 Q732.4,433 738,335 Q746.4,220.2 850,217.4 Q953.6,220.2 962,335 Q967.6,433 850,483.4 Z" fill="#e9c98a" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M836,500.2 L850,480.6 L864,500.2 Z" fill="#e9c98a" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <ellipse cx="802.4" cy="287.4" rx="22.4" ry="36.4" transform="rotate(30 802.4 287.4)" fill="#ffffff" fill-opacity="0.8"/>
+  <ellipse cx="850" cy="500" rx="100" ry="12" fill="#6b7480" fill-opacity="0.35"/>
+  <path d="M862,504 C900,522 950,512 1010,524" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
 </svg>
 
 ## Ydinajatus
