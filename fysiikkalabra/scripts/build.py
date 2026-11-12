@@ -474,10 +474,15 @@ def texts(html):
 HOME_COMING = tuple(curriculum.get("_front_page", {}).get("coming", []))
 
 
-def home_row(code, title, question, coming=False):
+def home_row(code, title, question, coming=False, tag=None):
     """A front page row: one link over the whole row with the module's icon, code, title and Miksi question; the arrow
-    appears on hover and focus only. The question is cut to one line in two columns, so it is whole in title too."""
+    appears on hover and focus only. The question is cut to one line in two columns, so it is whole in title too. A
+    course without a course code may give its name as the tag in the code's place, with a short title after it, like
+    Ahjo's rows (local-courses.json "front_title", teacher 2026-11-12)."""
     q = esc(question)
+    if tag: return (f'<li><a class="mod-row{" coming" if coming else ""}" href="{code}.html">{module_icons.img(code, 40)}'
+                    f'<span class="mod-text"><span class="mod-name"><span class="mod-code">{esc(tag)}</span> <span class="mod-title">{esc(title)}</span></span>'
+                    f'<span class="mod-q" title="{q}">{q}</span></span><span class="mod-go" aria-hidden="true">→</span></a></li>')
     return (f'<li><a class="mod-row{" coming" if coming else ""}" href="{code}.html">{module_icons.img(code, 40)}'
             f'<span class="mod-text"><span class="mod-name">{('<span class="mod-code">' + code + '</span> ') if local_courses.label(code) else ""}<span class="mod-title">{esc(title)}</span></span>'
             f'<span class="mod-q" title="{q}">{q}</span></span><span class="mod-go" aria-hidden="true">→</span></a></li>')
@@ -1361,7 +1366,8 @@ def build_language(lang):
         for u, ls in unit_pub.items():                   # (id, the language linked, href): this language's version, else the source's
             ul = lang if lang in ls else units.lang_of(u) if units.lang_of(u) in ls else None
             if ul and units.load(u, ul)["course"] == code: cu.append((u, ul, os.path.relpath(OUTS[ul] / f"{u}.html", out).replace(os.sep, "/")))
-        local_rows += home_row(code, c["title"], c.get("front_line") or c["subtitle"])
+        local_rows += (home_row(code, c["front_title"], c.get("front_line") or c["subtitle"], tag=c["title"]) if c.get("front_title")
+                       else home_row(code, c["title"], c.get("front_line") or c["subtitle"]))
         kr = kilparobo.load(lang) if code == kilparobo.CODE else None   # Kilparobotiikka's team pages (teacher 2026-11-09, scripts/kilparobo.py)
         lt = lumatutor.load(lang) if code == lumatutor.CODE else None   # LUMA-tutor's pages (teacher 2026-11-09, scripts/lumatutor.py)
         if lt:

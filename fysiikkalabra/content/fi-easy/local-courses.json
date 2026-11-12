@@ -153,6 +153,7 @@
   },
   "KILPAROBO": {
     "title": "Kilparobotiikka",
+    "front_title": "Rakenna, ohjelmoi ja kilpaile",
     "subtitle": "Rakennat ja ohjelmoit VEX V5 -robotteja yhdessä joukkueen kanssa.",
     "school": "Kiviruukin lukio",
     "description": "Kiviruukin lukion robotiikkajoukkue rakentaa ja ohjelmoi VEX V5 -robotteja kilpailuihin. Voit tulla mukaan, vaikka et osaisi vielä mitään robotiikasta. Kokeneemmat opiskelijat auttavat sinua.",
@@ -192,6 +193,7 @@
   },
   "LUMATUTOR": {
     "title": "LUMA-tutor",
+    "front_title": "Tiede kuuluu kaikille",
     "subtitle": "Tiede kuuluu kaikille.",
     "front_line": "Olet tiedetutori. Suunnittelet tiedetapahtumia ja olet mukana niissä.",
     "school": "Kiviruukin lukio",
