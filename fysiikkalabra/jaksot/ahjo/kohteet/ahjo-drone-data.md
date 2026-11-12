@@ -126,7 +126,7 @@ Liitä projektipäiväkirjaan
 ## Opettajalle: valmistelu
 
 - Asenna Python ja matplotlib ja aja aloitusohjelma esimerkkiaineistolla ennen tuntia. Ohjelma on kokeiltu esimerkkiaineistolla ilman kuvaajakirjastoa; kuvaajan piirto kannattaa kokeilla koulun koneella.
-- Raspberry Pi 5 tarvitsee virtalähteen, muistikortin, näytön, näppäimistön ja hiiren. Jos niitä ei ole, työn voi tehdä millä tahansa koneella, jossa on Python.
+- Raspberry Pi 5 -tietokoneita on 10. Raspberry Pi 5 tarvitsee virtalähteen, muistikortin, näytön, näppäimistön ja hiiren. Jos niitä ei ole, työn voi tehdä millä tahansa koneella, jossa on Python.
 - Konenäköprojekti tarvitsee kameran, joka on erillinen hankinta.
 - Kokoa ryhmien mittaustiedostot yhteiseen kansioon, jotta ryhmät voivat verrata tuloksia.
 - Videoanalyysiin sopii video, jossa kamera pysyy paikallaan, drone liikkuu kuvan tasossa ja kuvassa näkyy mittakaava.

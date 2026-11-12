@@ -31,12 +31,13 @@ toistaiseksi vain suomeksi, ja muut kielet näyttävät suomenkielisen ohjeen.
 
 ## Kalusto ja oletukset
 
-- **Air:bit 2** (MakeKit): sarjojen ja micro:bitien määrä on avoin. Suunnitelma olettaa yhden sarjan 3–4 opiskelijan
-  ryhmää kohti ja kaksi micro:bitiä sarjaa kohti (dronessa V2).
+- **Air:bit 2** (MakeKit): 10 sarjaa ja 20 micro:bitiä eli kaksi sarjaa kohti; sarjoissa on potkurisuojat (opettaja
+  12.11.2026). Ryhmät ovat 2–3 opiskelijaa sarjaa kohti. Tarkistettava vielä, että dronessa käytettävät micro:bitit
+  ovat versiota V2.
 - **Kameradronet:** 2 × DJI Neo 2 Motion Fly More Combo (lasit Goggles N3, liikeohjain RC Motion 3). Toimeksiannossa
   luki "DJI Neo FPV": mallin on oletettu olevan sama kuin aiemmin ilmoitettu Neo 2. Sivuston teksteissä mallinimeä ei
   mainita, kuten ei Ahjon muussakaan laitteistossa.
-- **Raspberry Pi 5 (8 Gt):** määrä avoin. Vain datan ja videon käsittelyyn, ei lento-ohjaimeksi.
+- **Raspberry Pi 5 (8 Gt):** 10 kpl (opettaja 12.11.2026). Vain datan ja videon käsittelyyn, ei lento-ohjaimeksi.
 - **Oppitunnin pituus:** 75 min, kuten Ahjo 1:ssä.
 
 Kaikilla ei ole omaa dronea. Lentotunnit on suunniteltu kiertopisteiksi: lento, mittaaminen ja kirjaus, datan
@@ -136,8 +137,7 @@ ole siteerattu); Traficomin ilmatilasovelluksen osoite.
 
 ## Avoinna opettajalle
 
-- Air:bit 2 -sarjojen, micro:bitien ja Raspberry Pien määrä; ryhmäkoko.
-- Onko Air:bit-sarjoissa potkurisuojat.
+- Ovatko dronessa käytettävät micro:bitit versiota V2; Raspberry Pien oheislaitteet (näyttö, näppäimistö, muistikortti).
 - Laajuus 2 op ja opintojakson hyväksyminen.
 - Tunnin 8 säätökoe: mitä arvoja saa muuttaa ja kuinka paljon. Opettajan kokeiltava ensin itse.
 - Turvallisuusaiheet ovat tilassa "valmisteilla", kunnes koulun vastuuhenkilöt hyväksyvät ne.

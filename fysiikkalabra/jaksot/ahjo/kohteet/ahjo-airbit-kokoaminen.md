@@ -122,6 +122,8 @@ Liitä projektipäiväkirjaan
 - Valmistajan aika-arvio on 2–3 tuntia kokoamiseen ja 3–4 tuntia ohjaimen ohjelmointiin.
 - Ohjeen sivujärjestyksessä potkurit kiinnitetään ennen ohjelmointia, mutta ohjeen turvallisuussivu neuvoo kiinnittämään ne vasta, kun rakentaminen ja ohjelmointi on tehty ja moottorien käynnistys ja pysäytys on kokeiltu. Pidä potkurit itselläsi lentotunteihin asti.
 - Lataa droneohjelma micro:biteille etukäteen ja numeroi sarjat, micro:bitit ja radioryhmät ryhmittäin.
+- Koulun sarjoissa on potkurisuojat. Ne kiinnitetään valmistajan ohjeen mukaan lentotunnilla samalla kuin potkurit.
+- Sarjoja on 10 ja micro:bitejä 20, eli kaksi jokaista sarjaa kohti. Tarkista, että dronessa käytettävät ovat versiota V2.
 - Eniten kuluvat potkurit ja moottorit. Varaa varaosia.
 - Dronen massaa ja lentoaikaa valmistaja ei ilmoita: ne mitataan itse.
 - Tiedot on luettu valmistajan ohjeesta 12.11.2026.

@@ -122,6 +122,8 @@ Attach to your project diary
 - The manufacturer's time estimate is 2–3 hours for the assembly and 3–4 hours for programming the controller.
 - In the page order of the instructions the propellers are fitted before the programming, but the safety page of the instructions advises fitting them only when the building and programming are done and starting and stopping the motors has been tried. Keep the propellers yourself until the flying lessons.
 - Upload the drone program to the micro:bits beforehand and number the kits, micro:bits and radio groups by group.
+- The school's kits have propeller guards. They are fitted according to the manufacturer's guide in the flying lesson, together with the propellers.
+- There are 10 kits and 20 micro:bits, two for each kit. Check that the ones used on the drone are version V2.
 - Propellers and motors wear out the most. Have spare parts in reserve.
 - The manufacturer does not state the drone's mass or flight time: they are measured yourself.
 - The information was read from the manufacturer's instructions on 12 November 2026.

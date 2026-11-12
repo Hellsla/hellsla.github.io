@@ -126,7 +126,7 @@ Attach to your project diary
 ## For the teacher: preparation
 
 - Install Python and matplotlib and run the starter program with the example data before the lesson. The program has been tried with the example data without the graph library; drawing the graph is worth trying on a school computer.
-- The Raspberry Pi 5 needs a power supply, a memory card, a display, a keyboard and a mouse. If they are not available, the work can be done on any computer that has Python.
+- There are 10 Raspberry Pi 5 computers. The Raspberry Pi 5 needs a power supply, a memory card, a display, a keyboard and a mouse. If they are not available, the work can be done on any computer that has Python.
 - A computer vision project needs a camera, which is a separate purchase.
 - Collect the groups' measurement files in a shared folder so that the groups can compare results.
 - A video that suits video analysis is one in which the camera stays still, the drone moves in the plane of the picture and a scale is visible in the picture.
