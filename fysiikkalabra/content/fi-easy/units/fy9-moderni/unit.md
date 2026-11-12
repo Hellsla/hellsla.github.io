@@ -613,7 +613,7 @@ Pistemäinen lähde säteilee tasaisesti joka suuntaan. Ilma ei vaimenna eli hei
   <foreignObject x="3.5" y="210.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{pistelähde}$</div></foreignObject>
   <foreignObject x="254" y="170.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\dot{H}_1$</span></div></foreignObject>
   <foreignObject x="424" y="170.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\dot{H}_2$</span></div></foreignObject>
-  <foreignObject x="374.5" y="8.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{pallon pinta}$</div></foreignObject>
+  <foreignObject x="445" y="8.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$\text{pallon pinta}$</div></foreignObject>
 </svg>
 
 ```johda

@@ -1,11 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 96879e786dd25506
-Delta review (Johda itse round 2, 2026-11-12) of the version passed at 642fe5007889fe0b.
+CONTENT-HASH: 1e419ff3121bd689
+Delta review (figure label moved, 2026-11-12) of the version passed at 96879e786dd25506.
 
-Blocking
-None.
-
-Polish
-1. Polish: H = Ḣt is marked Lisätieto, the model sentence defines t and constant dose rate; the removed Johda itse is not missed. The worked solution [16] derives its result in a step from MAFY laws.
-
-Checked: git diff 3ec8cc24 for this unit and language (unit.md, inquiry.json, figures); fi-easy and en match fi in content.
+Blocking: none.
+Polish: none.
+Checked: the diff is one label in figure `pallo`, moved to the right edge and end-anchored. The meaning is unchanged. It is muted text, and the label sits clear of the dose-rate labels and the cone. The longer English text now fits inside the figure. Nothing else in the lesson changed.

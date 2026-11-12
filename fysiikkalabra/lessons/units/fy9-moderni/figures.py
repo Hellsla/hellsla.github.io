@@ -254,7 +254,7 @@ def pallo():
     # the dose rates at the two distances, inside the cone on a white ground
     f.tex(P(r1, 0)[0] + 14, cy, r"\dot{H}_1", "start", COLD, bg=True)
     f.tex(P(r2, 0)[0] + 14, cy, r"\dot{H}_2", "start", COLD, bg=True)
-    f.tex(P(r2, -30)[0] + 10, P(r2, -30)[1] + 8, r"\text{pallon pinta}", "start", MUTED)
+    f.tex(590, P(r2, -30)[1] + 8, r"\text{pallon pinta}", "end", MUTED)   # end-anchored at the right edge: the English words are longer
     return f.svg()
 
 
