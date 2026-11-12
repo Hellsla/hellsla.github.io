@@ -232,3 +232,24 @@ b) Tuulipuisto: $E_\text{kok} = 289\,080\,\text{MWh} \cdot 25 = 7\,227\,000\,\te
 c) Tuulipuisto: $289\,080\,000\,\text{kWh} \cdot 12\,\text{g/kWh} = 3{,}469 \cdot 10^{9}\,\text{g} = 3469\,\text{t}$. Ydinvoimala: $9\,460\,800\,000\,\text{kWh} \cdot 12\,\text{g/kWh} = 1{,}135 \cdot 10^{11}\,\text{g} = 113\,500\,\text{t}$.
 **Vastaus:** Tuulipuiston rakennuskustannus on $17\,\text{euroa/MWh}$ (laskettu arvo $16{,}6$; kaksi merkitsevää numeroa kuten osuudessa $33\,\%$) ja ydinvoimalan $11\,\text{euroa/MWh}$. Vuosienergiat ovat $2{,}9 \cdot 10^{5}\,\text{MWh}$ ja $9{,}5 \cdot 10^{6}\,\text{MWh}$, ja vuoden tuotannolle kuuluvat elinkaaripäästöt noin $3500\,\text{t}$ ja $114\,000\,\text{t}$. Päästöt energiaa kohti ovat samat ($12\,\text{g/kWh}$), joten ydinvoimalan suuret vuosipäästöt johtuvat vain suuresta tuotannosta. Rakennuskustannus energiaa kohti on tässä aineistossa ydinvoimalla pienempi, koska se tuottaa suuremmalla osuudella nimellistehosta ja kauemmin. Ydinvoima on tasaista perusvoimaa, mutta ei säädettävissä nopeasti, ja siihen liittyy ydinjäte. Tuulivoima on sääriippuvaista, joten se tarvitsee säätövoimaa tai varastoja rinnalleen. Perusteltu suositus on yhdistelmä: päästöjen perusteella kumpikin kelpaa, ja kustannuksen perusteella ydinvoima on edullisempi, mutta sääriippuvainen tuulivoima sopii täydentämään sitä, kun säätövoimaa on riittävästi. Suositus on kuitenkin vain tämän esimerkkiaineiston ja pelkän rakennuskustannuksen varassa.
 **Järkevyys:** Ydinvoimala tuottaa vuodessa $9\,460\,800 : 289\,080 \approx 33$ kertaa enemmän kuin tuulipuisto, ja päästöt ovat $113\,500 : 3469 \approx 33$ kertaa suuremmat, mikä vastaa tuotannon suhdetta, koska päästökerroin on kummallakin sama $12\,\text{g/kWh}$. Täydellä teholla koko vuoden tuulipuisto tuottaisi $100\,\text{MW} \cdot 8760\,\text{h} = 876\,000\,\text{MWh}$, ja $289\,080 : 876\,000 = 0{,}33$.
+
+## fy2-6-L1-10
+**Annettu:** teho $P = 2{,}0\,\text{MW}$, aika $t = 1\,\text{h}$; jyrsinturpeen lämpöarvo MAFY-taulukosta (Polttoaineiden LHV-lämpöarvoja, jyrsinturve) $H = 10\,\tfrac{\text{MJ}}{\text{kg}}$
+**Kysytty:** palavan turpeen massa $m$ kilogrammoina
+**Periaate:** Voimalan tunnissa tuottama energia on $E = Pt$. Sama energia vapautuu polttoaineen palaessa, ja palamisessa vapautuva energia on $E = Hm$, joten massa saadaan ratkaisemalla $m$.
+**Kaava:** $E = Pt$ ja $E = Hm \Rightarrow m = \dfrac{Pt}{H}$
+**Muunnokset:** $2{,}0\,\text{MW} = 2{,}0\,\tfrac{\text{MJ}}{\text{s}}$ ja $1\,\text{h} = 3600\,\text{s}$, joten $E = 2{,}0\,\tfrac{\text{MJ}}{\text{s}} \cdot 3600\,\text{s} = 7200\,\text{MJ}$.
+**Sijoitus:** $m = \dfrac{7200\,\text{MJ}}{10\,\tfrac{\text{MJ}}{\text{kg}}} = 720\,\text{kg}$
+**Vastaus:** $m \approx 720\,\text{kg}$, kaksi merkitsevää numeroa kuten tehossa $2{,}0\,\text{MW}$. Lämpöarvo $10\,\tfrac{\text{MJ}}{\text{kg}}$ on MAFY-taulukosta (Polttoaineiden LHV-lämpöarvoja); eri taulukoiden arvot poikkeavat hieman, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Järkevyys:** Turpeen lämpöarvo on pieni, joten sitä palaa paljon: noin $0{,}7$ tonnia tunnissa, eli noin $12\,\text{kg}$ minuutissa. Se sopii pienen $2\,\text{MW}$:n laitoksen kokoluokkaan.
+
+## fy2-6-L2-08
+**Annettu:** tuulivoiman vuosituotanto $E$ luetaan kuvasta; aika $t = 8784\,\text{h}$
+**Kysytty:** keskiteho $P$ gigawatteina
+**Periaate:** Keskiteho on tuotettu energia jaettuna ajalla, joten käytetään tuotetun energian kaavaa $E = Pt$ ratkaistuna tehon suhteen.
+**Kuvaajan lukeminen:** Tuulivoiman pylvään päässä on luku $20{,}2$. Vaaka-akselin yksikkö on $\text{TWh}$, joten $E = 20{,}2\,\text{TWh}$.
+**Kaava:** $E = Pt \Rightarrow P = \dfrac{E}{t}$
+**Muunnokset:** $20{,}2\,\text{TWh} = 20\,200\,\text{GWh}$, koska $1\,\text{TWh} = 1000\,\text{GWh}$.
+**Sijoitus:** $P = \dfrac{20\,200\,\text{GWh}}{8784\,\text{h}} = 2{,}30\,\text{GW}$
+**Vastaus:** $P \approx 2{,}30\,\text{GW}$, kolme merkitsevää numeroa kuten luetussa tuotannossa $20{,}2\,\text{TWh}$.
+**Järkevyys:** Tarkistus: $2{,}30\,\text{GW} \cdot 8784\,\text{h} \approx 20\,200\,\text{GWh}$. Teho on suuri verrattuna yhteen $4\,\text{MW}$:n voimalaan, mutta Suomessa tuulivoimaloita on satoja.

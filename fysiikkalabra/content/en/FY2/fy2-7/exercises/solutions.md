@@ -212,3 +212,24 @@ H_4 &= 0.055 \cdot 330 = 18.15\,\text{MWh}
 The sum of the energies fed in is $1016\,\text{MWh}$ and the sum of the losses $42.09\,\text{MWh}$. So $p = \dfrac{42.09\,\text{MWh}}{1016\,\text{MWh}} = 0.0414 = 4.1\,\%$
 **Answer:** $4.1\,\%$, two significant figures as in the loss shares (example data set). The result is close to the loss of about $4\,\%$ in the Finnish electricity grid (Finnish Energy, 2024), that is, of the same order of magnitude. The lost energy is greatest in the period 19–24, when $18.15\,\text{MWh}$ is lost, about $43\,\%$ of the loss of the whole day. A greater power requires a greater current, and the loss grows faster than the current (a doubled current gives about a fourfold loss), so the loss grows faster than the power fed in, and its share increases.
 **Reasonableness:** The ordinary average of the loss shares of the periods would be $3.7\,\%$, which is too small, because a lot of energy is fed in during the evening and the share is then the greatest. The result $4.1\,\%$ lies between the shares $1.5\,\%$ and $5.5\,\%$, and $0.041 \cdot 1016\,\text{MWh} \approx 42\,\text{MWh}$ matches the sum $42.09\,\text{MWh}$.
+
+## fy2-7-L1-09
+**Given:** energy fed into the grid $E_\text{in} = 500\,\text{kWh}$; loss $4.0\,\%$ of the energy fed in; conversion from the MAFY table (Yksikkömuunnoksia, energy/work, kilowatt-hour) $1\,\text{kWh} = 3.6 \cdot 10^{6}\,\text{J}$
+**Find:** the energy lost $E_\text{loss}$ in megajoules
+**Principle:** The loss is a given share of the energy fed into the grid. We first calculate it in kilowatt-hours and then convert it to joules.
+**Formula:** $E_\text{loss} = 0.040 \cdot E_\text{in}$
+**Conversions:** $4.0\,\% = 0.040$ and $1\,\text{kWh} = 3.6 \cdot 10^{6}\,\text{J} = 3.6\,\text{MJ}$.
+**Substitution:** $E_\text{loss} = 0.040 \cdot 500\,\text{kWh} = 20\,\text{kWh}$ and $20\,\text{kWh} \cdot 3.6\,\tfrac{\text{MJ}}{\text{kWh}} = 72\,\text{MJ}$
+**Answer:** $72\,\text{MJ}$, two significant figures like the loss percentage $4.0\,\%$. The conversion factor is from the MAFY table (Yksikkömuunnoksia); different tables differ slightly, and the answer is accepted within about $\pm 4\,\%$.
+**Reasonableness:** One kilowatt-hour is $3.6\,\text{MJ}$, so $20\,\text{kWh}$ is about $20 \cdot 4 = 80\,\text{MJ}$ reduced a little. The result $72\,\text{MJ}$ fits.
+
+## fy2-7-L2-09
+**Given:** energy fed into each network $E_\text{in} = 250\,\text{MWh}$; the loss shares are read from the figure
+**Find:** the difference of the losses $\Delta E$ in megawatt-hours
+**Principle:** The loss is a share of the energy fed into the network. We calculate the loss of each network and subtract the loss of the electricity grid from that of the district heating network.
+**Reading the graph:** From the flow of the electricity grid $4\,\%$ branches off as a loss, and from the flow of the district heating network $9\,\%$. The energy fed in is $100\,\%$ in both, so the shares can be used directly.
+**Formula:** $E_\text{loss} = p \cdot E_\text{in}$ and $\Delta E = E_\text{loss,dh} - E_\text{loss,el}$
+**Conversions:** $9\,\% = 0.09$ and $4\,\% = 0.04$.
+**Substitution:** $E_\text{loss,dh} = 0.09 \cdot 250\,\text{MWh} = 22.5\,\text{MWh}$ and $E_\text{loss,el} = 0.04 \cdot 250\,\text{MWh} = 10.0\,\text{MWh}$, so $\Delta E = 22.5\,\text{MWh} - 10.0\,\text{MWh} = 12.5\,\text{MWh}$
+**Answer:** $\Delta E \approx 12.5\,\text{MWh}$, three significant figures like the energy fed in, $250\,\text{MWh}$.
+**Reasonableness:** The difference of the shares is $9\,\% - 4\,\% = 5\,\%$, and $5\,\%$ of $250\,\text{MWh}$ is $12.5\,\text{MWh}$. More is lost in the district heating network, as the wider loss flow in the figure shows.

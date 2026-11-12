@@ -110,6 +110,18 @@
       "answer": 480,
       "unit": "kg",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-8-L1-09",
+      "level": 1,
+      "text": "On a winter day, $2.0\\,\\text{kg}$ of natural gas is burnt in a gas boiler. Look up the heat of combustion of natural gas in the MAFY table (mafytaulukot.fi). The emission factor of burning natural gas is $55\\,\\text{g/MJ}$ (Statistics Finland, fuel classification 2024). How much carbon dioxide is produced when the gas burns? Give the answer in kilograms.",
+      "lookup": "MAFY",
+      "answer": 5.17,
+      "unit": "kg",
+      "tolerance": 0.04,
+      "hints": [
+        "The value is in the MAFY table *Polttoaineiden LHV-lämpöarvoja*."
+      ]
     }
   ],
   "level2": [
@@ -328,6 +340,15 @@
           "feedback": "Reading the wrong column. The number $1000\\,\\text{GWh}$ belongs to the column $E$, which tells the energy produced. The emission is in the column $m$, and there the value decreased from $520\\,\\text{kt}$ to $420\\,\\text{kt}$. The same production and a smaller emission mean a smaller emission per energy produced."
         }
       ]
+    },
+    {
+      "id": "fy2-8-L2-09",
+      "level": 2,
+      "text": "An example school uses $20.0\\,\\text{MWh}$ of electricity a year. The electricity is now produced with coal. Read the lifecycle emission factors of coal and natural gas from the bar chart in the figure. By how many tonnes would the yearly emission fall if the electricity were produced with natural gas? Give the answer in tonnes.",
+      "figure": "fy2-8/emissions",
+      "answer": 6.6,
+      "unit": "t",
+      "tolerance": 0.03
     }
   ],
   "level3": [

@@ -93,6 +93,18 @@
       "answer": 200,
       "unit": "kW",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-4-L1-09",
+      "level": 1,
+      "text": "An oil boiler burns $2.5\\,\\text{kg}$ of light fuel oil. The energy taken into the boiler is $E_\\text{o} = Hm$, where $H$ is the heating value of the fuel and $m$ is the mass of the fuel. The boiler gives useful energy of $80\\,\\text{MJ}$ to heat the house. Look up the heating value of light fuel oil in the MAFY table (mafytaulukot.fi). What is the efficiency of the boiler? Give the answer as a percentage.",
+      "lookup": "MAFY",
+      "answer": 78.8,
+      "unit": "%",
+      "tolerance": 0.04,
+      "hints": [
+        "The value is in the MAFY table *Polttoaineiden LHV-lämpöarvoja* (lower heating values of fuels)."
+      ]
     }
   ],
   "level2": [
@@ -284,6 +296,15 @@
           "feedback": "There is an error on line 4. The result $167\\,\\%$ is over $100\\,\\%$, which is impossible, because the useful energy cannot be larger than the energy taken. Lines 1–3 are correct."
         }
       ]
+    },
+    {
+      "id": "fy2-4-L2-09",
+      "level": 2,
+      "text": "The figure shows the energy flow diagram of an electric motor on squared paper. The thicknesses of the arrows are drawn to scale, and the energy going into the motor is marked in the figure. Read the thicknesses of the arrows in squares. What is the efficiency of the motor? Give the answer as a percentage.",
+      "figure": "fy2-4/grid",
+      "answer": 25,
+      "unit": "%",
+      "tolerance": 0.02
     }
   ],
   "level3": [

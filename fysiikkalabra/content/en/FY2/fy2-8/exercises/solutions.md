@@ -203,3 +203,24 @@ c) If all the coal electricity were replaced with wind, the new sum would be $14
 **Find:** which conclusion is the one that the data in the table and the given uncertainty $\Delta m = 10\,\text{kt}$ support.
 **Principle:** The difference of two measured values can be considered real only when it is clearly larger than the uncertainty of the values. The data show only what is in them: they do not tell the cause, and predicting outside them is uncertain. The conclusion must read the right column.
 **Model answer:** The emission is in the column $m$. The difference between the years $2020$ and $2024$ is $520\,\text{kt} - 420\,\text{kt} = 100\,\text{kt}$, which is ten times the uncertainty $10\,\text{kt}$, so the decrease is probably real. The uncertainty ranges $510$–$530\,\text{kt}$ and $410$–$430\,\text{kt}$ are also separate and do not overlap. The other conclusions do not hold. The difference $520\,\text{kt} - 515\,\text{kt} = 5\,\text{kt}$ stays within the uncertainty $10\,\text{kt}$, so a decrease between the years $2020$ and $2021$ cannot be shown. The table has no information about the fuel, so the cause cannot be concluded. A prediction for the year $2034$ would continue the line $10$ years beyond the data of five years. The production $1000\,\text{GWh}$ is in a different column from the emission, and the emission changed although the production did not.
+
+## fy2-8-L1-09
+**Given:** mass of natural gas $m = 2.0\,\text{kg}$; heat of combustion from the MAFY table (Polttoaineiden LHV-lämpöarvoja, maakaasu) $H = 47\,\tfrac{\text{MJ}}{\text{kg}}$; emission factor $e = 55\,\tfrac{\text{g}}{\text{MJ}}$ (Statistics Finland, fuel classification 2024)
+**Find:** the mass of carbon dioxide produced, $m_\text{CO2}$, in kilograms
+**Principle:** The emission is proportional to the energy released in burning: the emission factor gives the emission per unit of energy. We first calculate the energy released using the heat of combustion and then the emission.
+**Formula:** $E = Hm$ and $m_\text{CO2} = eE$
+**Conversions:** $5170\,\text{g} = 5.17\,\text{kg}$, because $1000\,\text{g} = 1\,\text{kg}$.
+**Substitution:** $E = 47\,\tfrac{\text{MJ}}{\text{kg}} \cdot 2.0\,\text{kg} = 94\,\text{MJ}$ and $m_\text{CO2} = 55\,\tfrac{\text{g}}{\text{MJ}} \cdot 94\,\text{MJ} = 5170\,\text{g} = 5.17\,\text{kg}$
+**Answer:** $m_\text{CO2} \approx 5.2\,\text{kg}$, two significant figures like the mass $2.0\,\text{kg}$. The heat of combustion $47\,\tfrac{\text{MJ}}{\text{kg}}$ is from the MAFY table (Polttoaineiden LHV-lämpöarvoja); different tables differ slightly, and the answer is accepted within about $\pm 4\,\%$.
+**Reasonableness:** A kilogram of natural gas produces about $2.6\,\text{kg}$ of carbon dioxide, about $2.6$ times its mass. This is typical of hydrocarbons, where the carbon combines with oxygen in burning.
+
+## fy2-8-L2-09
+**Given:** electricity use $E = 20.0\,\text{MWh}$; the emission factors are read from the figure
+**Find:** the decrease of the emission $\Delta m$ in tonnes
+**Principle:** The emission is the emission factor times the electrical energy, $m = eE$. We calculate the emission for each way of producing electricity and subtract.
+**Reading the graph:** The number $820$ is printed at the end of the coal bar and $490$ at the natural gas bar. The unit on the horizontal axis is $\text{g CO}_2\text{-eq./kWh}$, so $e_\text{coal} = 820\,\tfrac{\text{g}}{\text{kWh}}$ and $e_\text{gas} = 490\,\tfrac{\text{g}}{\text{kWh}}$.
+**Formula:** $\Delta m = (e_\text{coal} - e_\text{gas})E$
+**Conversions:** $20.0\,\text{MWh} = 20\,000\,\text{kWh}$; finally $1\,\text{t} = 10^{6}\,\text{g}$.
+**Substitution:** $\Delta m = (820 - 490)\,\tfrac{\text{g}}{\text{kWh}} \cdot 20\,000\,\text{kWh} = 6.6 \cdot 10^{6}\,\text{g} = 6.6\,\text{t}$
+**Answer:** $\Delta m \approx 6.6\,\text{t}$, two significant figures, because the difference of the emission factors, $330\,\tfrac{\text{g}}{\text{kWh}}$, is a difference of two read values.
+**Reasonableness:** With coal the emission is $820 \cdot 20\,000\,\text{g} = 16.4\,\text{t}$ and with gas $490 \cdot 20\,000\,\text{g} = 9.8\,\text{t}$. The difference $16.4\,\text{t} - 9.8\,\text{t} = 6.6\,\text{t}$ matches the result, and it is about $40\,\%$ of the coal emission.

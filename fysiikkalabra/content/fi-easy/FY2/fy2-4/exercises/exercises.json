@@ -93,6 +93,18 @@
       "answer": 200,
       "unit": "kW",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-4-L1-09",
+      "level": 1,
+      "text": "Öljykattilassa poltetaan $2{,}5\\,\\text{kg}$ kevyttä polttoöljyä. Kattilaan otettu energia on $E_\\text{o} = Hm$, missä $H$ on polttoaineen lämpöarvo ja $m$ polttoaineen massa. Kattila antaa talon lämmitykseen hyötyenergiaa $80\\,\\text{MJ}$. Hae kevyen polttoöljyn lämpöarvo MAFY-taulukosta (mafytaulukot.fi). Kuinka suuri on kattilan hyötysuhde? Anna vastaus prosentteina.",
+      "lookup": "MAFY",
+      "answer": 78.8,
+      "unit": "%",
+      "tolerance": 0.04,
+      "hints": [
+        "Arvo löytyy MAFY-taulukon taulukosta *Polttoaineiden LHV-lämpöarvoja*."
+      ]
     }
   ],
   "level2": [
@@ -284,6 +296,15 @@
           "feedback": "Laskussa on virhe rivillä 4. Tulos $167\\,\\%$ on yli $100\\,\\%$. Se on mahdoton, koska hyötyenergia ei voi olla suurempi kuin otettu energia. Rivit 1–3 ovat oikein."
         }
       ]
+    },
+    {
+      "id": "fy2-4-L2-09",
+      "level": 2,
+      "text": "Kuvassa on sähkömoottorin energiavirtakuvio ruutupaperilla. Nuolten paksuudet on piirretty mittakaavaan, ja moottoriin tuleva energia on merkitty kuvaan. Lue nuolten paksuudet ruutuina. Kuinka suuri on moottorin hyötysuhde? Anna vastaus prosentteina.",
+      "figure": "fy2-4/grid",
+      "answer": 25,
+      "unit": "%",
+      "tolerance": 0.02
     }
   ],
   "level3": [

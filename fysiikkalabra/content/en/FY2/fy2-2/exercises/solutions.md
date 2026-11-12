@@ -204,3 +204,24 @@
 **Substitution:** The meals together are $1.4 + 3.2 + 0.65 + 4.2 + 0.90 = 10.35$, so $E_\text{food} = 10.35\,\text{MJ}$. The use is $E_\text{use} = 10.2\,\text{MJ} + 1.25\,\text{MJ} = 11.45\,\text{MJ}$. The deficit is $\Delta E = 11.45\,\text{MJ} - 10.35\,\text{MJ} = 1.10\,\text{MJ}$ per day. The deficit of thirty days is $30 \cdot 1.10\,\text{MJ} = 33\,\text{MJ}$, and $m = 33\,\text{MJ} : 37\,\text{MJ/kg} = 0.89\,\text{kg}$.
 **Answer:** About $0.89\,\text{kg}$ of fat is used up in a month. The chemical energy of the fat does not disappear: it turns into the motion of the muscles and mostly into thermal energy, which is transferred to the surroundings as heat. Two significant figures as in the data.
 **Reasonableness:** The deficit is only about $10\,\%$ of the day's energy, so losing a little under a kilogram in a month is believable. Estimate: $30 \cdot 1 : 37 \approx 0.8$. The tolerance of five percent covers the rounding of the deficit $1.10\,\text{MJ}$.
+
+## fy2-2-L1-10
+**Given:** energy $E = 180\,\text{kcal}$; from the table (MAFY table, unit conversions, energy/work, calorie) $1\,\text{cal} = 4.1868\,\text{J}$
+**Asked:** the energy $E$ in kilojoules
+**Principle:** The calorie is an old unit of energy, and its size in joules has been agreed. Energy is converted from calories to joules by multiplying the number of calories by the energy of one calorie. A kilocalorie is a thousand calories.
+**Formula:** $E = N \cdot 4.1868\,\text{J}$, where $N$ is the number of calories
+**Conversions:** $180\,\text{kcal} = 180 \cdot 1000\,\text{cal} = 180\,000\,\text{cal}$ and finally $\text{J} \to \text{kJ}$: $1\,\text{kJ} = 1000\,\text{J}$.
+**Substitution:** $E = 180\,000 \cdot 4.1868\,\text{J} = 753\,624\,\text{J} = 753.624\,\text{kJ} \approx 754\,\text{kJ}$
+**Answer:** The bar contains about $754\,\text{kJ}$, or about $0.75\,\text{MJ}$. The value $4.1868\,\text{J}$ of the calorie is from the MAFY table (unit conversions); tables differ slightly, and an answer within about $\pm 4\,\%$ is accepted.
+**Reasonableness:** One kilocalorie is about $4.2\,\text{kJ}$, so $180 \cdot 4.2\,\text{kJ} \approx 756\,\text{kJ}$. Joules are small, so the kilojoule figure is about four times the kilocalorie figure.
+
+## fy2-2-L1-11
+**Given:** the point of boiling tea water read from the figure; the marks of the scale $1\,\text{J}$, $1\,\text{kJ}$, $1\,\text{MJ}$, $1\,\text{GJ}$ and $1\,\text{TJ}$
+**Asked:** the energy $E$ needed to boil tea water, in kilojoules
+**Principle:** On a power-of-ten scale each small step is ten times the previous, so the energy is found by multiplying the starting value by ten once for every step.
+**Reading the graph:** The tea-water point is two small steps to the right of the mark $1\,\text{kJ}$. The first step makes the value ten times larger: $10\,\text{kJ}$. The second makes it ten times larger again: $100\,\text{kJ}$.
+**Formula:** $E = 1\,\text{kJ} \cdot 10 \cdot 10$
+**Conversions:** The value read is directly in kilojoules, so no conversions are needed. Check in joules: $100\,\text{kJ} = 100 \cdot 1000\,\text{J} = 10^{5}\,\text{J}$.
+**Substitution:** $E = 1\,\text{kJ} \cdot 10 \cdot 10 = 100\,\text{kJ}$
+**Answer:** Boiling the tea water takes about $100\,\text{kJ}$. The result is an order of magnitude, because the energies in the figure are orders of magnitude.
+**Reasonableness:** A home kettle of power $2\,\text{kW}$ converts $2\,\text{kJ}$ of electricity every second, so $100\,\text{kJ}$ takes about a minute. That fits boiling a cup.

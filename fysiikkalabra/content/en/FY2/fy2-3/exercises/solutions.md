@@ -204,3 +204,24 @@ The sum is $800 + 280 + 300 + 400 + 180 = 1960\,\text{Wh}$, so $E_\text{tot} = 1
 The second time $P_2 = 6.0\,\text{kWh} : 1.5\,\text{h} = 4.0\,\text{kW}$.
 
 So the power doubles: $P_2 : P_1 = 4.0\,\text{kW} : 2.0\,\text{kW} = 2.0$. When the time is halved and the energy stays the same, the power doubles. The power is not halved, because the time is in the denominator and not a factor. It does not stay the same, because power describes the rate of the transformation and not the energy alone. It does not quadruple, because the time was halved only once.
+
+## fy2-3-L1-09
+**Given:** power $P = 5.0\,\text{hp}$ and time $\Delta t = 30\,\text{min}$; from the table (MAFY table, unit conversions, power, horsepower) $1\,\text{hp} = 735.5\,\text{W}$
+**Asked:** the energy converted $\Delta E$ in megajoules
+**Principle:** Power tells how much energy is converted per second. When the power is steady, the energy converted is power times time. Power and time must first be converted to SI units, watts and seconds.
+**Formula:** $P = \dfrac{\Delta E}{\Delta t}$, so $\Delta E = P\,\Delta t$
+**Conversions:** $P = 5.0 \cdot 735.5\,\text{W} = 3677.5\,\text{W}$ and $\Delta t = 30 \cdot 60\,\text{s} = 1800\,\text{s}$. Finally $1\,\text{MJ} = 10^{6}\,\text{J}$.
+**Substitution:** $\Delta E = 3677.5\,\text{W} \cdot 1800\,\text{s} = 6\,619\,500\,\text{J} \approx 6.6\,\text{MJ}$
+**Answer:** The motor converts about $6.6\,\text{MJ}$ of energy. The value $735.5\,\text{W}$ of the horsepower is from the MAFY table (unit conversions); tables differ slightly, and an answer within about $\pm 4\,\%$ is accepted.
+**Reasonableness:** A rough estimate: $3.7\,\text{kW} \cdot 1800\,\text{s} \approx 6.7\,\text{MJ}$. The power is about $3.7\,\text{kW}$, a little more than a kettle, and in half an hour about $1.8\,\text{kWh}$ is converted, which is a sensible amount.
+
+## fy2-3-L1-10
+**Given:** points read from the less steep line B: $(0\,\text{s};\ 0\,\text{kJ})$ and $(80\,\text{s};\ 40\,\text{kJ})$
+**Asked:** the power $P$ of device B in watts
+**Principle:** When a device converts energy steadily, the slope of the line in the energy-time graph is the power of the device: power is the energy converted divided by the time.
+**Reading the graph:** The less steep line is B. It starts at the origin and passes through the point $(80\,\text{s};\ 40\,\text{kJ})$. The point is at a crossing of gridlines, so the values can be read exactly.
+**Formula:** $P = \dfrac{\Delta E}{\Delta t}$
+**Conversions:** $\Delta E = 40\,\text{kJ} = 40 \cdot 1000\,\text{J} = 40\,000\,\text{J}$.
+**Substitution:** $P = \dfrac{40\,000\,\text{J}}{80\,\text{s}} = 500\,\text{W}$
+**Answer:** The power of device B is $500\,\text{W}$, or $0.50\,\text{kW}$.
+**Reasonableness:** The other point $(40\,\text{s};\ 20\,\text{kJ})$ gives $20\,000\,\text{J} : 40\,\text{s} = 500\,\text{W}$, the same. Device A rises more steeply and has the greater power, so the smaller power of B fits the graph.

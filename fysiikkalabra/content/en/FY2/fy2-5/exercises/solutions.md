@@ -203,3 +203,24 @@ Firewood: $E = 15\,\tfrac{\text{MJ}}{\text{kg}} \cdot 5.0\,\text{kg} = 75\,\text
 Coal: $E = 26\,\tfrac{\text{MJ}}{\text{kg}} \cdot 4.0\,\text{kg} = 104\,\text{MJ}$
 Milled peat: $E = 10\,\tfrac{\text{MJ}}{\text{kg}} \cdot 12\,\text{kg} = 120\,\text{MJ}$
 From smallest to greatest: petrol, firewood, coal, milled peat. By mass the order would be petrol ($1.5\,\text{kg}$), coal ($4.0\,\text{kg}$), firewood ($5.0\,\text{kg}$), milled peat ($12\,\text{kg}$), so firewood and coal swap places: the greater heat of combustion of coal makes up for its smaller mass. Estimate: petrol has more than $40\,\text{MJ}$ per kilogram but only a small amount, so its energy is the smallest, which agrees.
+
+## fy2-5-L1-09
+**Given:** mass of ethanol $m = 0.50\,\text{kg}$; heat of combustion from the MAFY table (Polttoaineiden LHV-lämpöarvoja, ethanol) $H = 26.7\,\tfrac{\text{MJ}}{\text{kg}}$
+**Find:** the energy $E$ released, in megajoules
+**Principle:** The energy released in burning is proportional to the mass of fuel burnt, and the constant of proportionality is the heat of combustion. Ethanol is not in the textbook's own table, so the value is looked up in the MAFY table.
+**Formula:** $E = Hm$
+**Conversions:** Not needed: the mass is in kilograms and the heat of combustion in megajoules per kilogram.
+**Substitution:** $E = 26.7\,\tfrac{\text{MJ}}{\text{kg}} \cdot 0.50\,\text{kg} = 13.35\,\text{MJ}$
+**Answer:** $E \approx 13\,\text{MJ}$, two significant figures like the mass $0.50\,\text{kg}$. The value $26.7\,\tfrac{\text{MJ}}{\text{kg}}$ is from the MAFY table (Polttoaineiden LHV-lämpöarvoja); different tables differ slightly, and the answer is accepted within about $\pm 4\,\%$.
+**Reasonableness:** The heat of combustion of ethanol is about two thirds of that of petrol, $43\,\tfrac{\text{MJ}}{\text{kg}}$. Rough estimate: $25\,\tfrac{\text{MJ}}{\text{kg}} \cdot 0.5\,\text{kg} \approx 12\,\text{MJ}$, so the result is of the right size.
+
+## fy2-5-L2-09
+**Given:** mass of petrol $m_\text{p} = 12\,\text{kg}$; heats of combustion read from the figure: petrol $H_\text{p} = 43\,\tfrac{\text{MJ}}{\text{kg}}$, firewood $H_\text{w} = 15\,\tfrac{\text{MJ}}{\text{kg}}$
+**Find:** the mass of firewood $m_\text{w}$ that releases the same energy
+**Principle:** The energy released by each fuel is $E = Hm$. The energies must be equal, so we first calculate the energy of the petrol and then solve for the mass of firewood.
+**Reading the graph:** The heats of combustion are printed at the ends of the bars: $43$ at the petrol bar and $15$ at the firewood bar. The unit on the horizontal axis is $\text{MJ/kg}$, so $H_\text{p} = 43\,\tfrac{\text{MJ}}{\text{kg}}$ and $H_\text{w} = 15\,\tfrac{\text{MJ}}{\text{kg}}$.
+**Formula:** $H_\text{w}m_\text{w} = H_\text{p}m_\text{p} \Rightarrow m_\text{w} = \dfrac{H_\text{p}m_\text{p}}{H_\text{w}}$
+**Conversions:** Not needed: the masses are in kilograms.
+**Substitution:** $E = 43\,\tfrac{\text{MJ}}{\text{kg}} \cdot 12\,\text{kg} = 516\,\text{MJ}$, so $m_\text{w} = \dfrac{516\,\text{MJ}}{15\,\tfrac{\text{MJ}}{\text{kg}}} = 34.4\,\text{kg}$
+**Answer:** $m_\text{w} \approx 34\,\text{kg}$, two significant figures like the mass $12\,\text{kg}$.
+**Reasonableness:** The heat of combustion of petrol is about three times that of firewood ($43 : 15 \approx 2.9$), so about three times the mass of wood is needed: $3 \cdot 12\,\text{kg} \approx 36\,\text{kg}$. The result fits.

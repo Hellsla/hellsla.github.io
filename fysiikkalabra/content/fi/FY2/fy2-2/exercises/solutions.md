@@ -204,3 +204,24 @@
 **Sijoitus:** Ateriat yhteensä ovat $1{,}4 + 3{,}2 + 0{,}65 + 4{,}2 + 0{,}90 = 10{,}35$, joten $E_\text{ruoka} = 10{,}35\,\text{MJ}$. Kulutus on $E_\text{kulutus} = 10{,}2\,\text{MJ} + 1{,}25\,\text{MJ} = 11{,}45\,\text{MJ}$. Vaje on $\Delta E = 11{,}45\,\text{MJ} - 10{,}35\,\text{MJ} = 1{,}10\,\text{MJ}$ päivässä. Kolmenkymmenen vuorokauden vaje on $30 \cdot 1{,}10\,\text{MJ} = 33\,\text{MJ}$, ja $m = 33\,\text{MJ} : 37\,\text{MJ/kg} = 0{,}89\,\text{kg}$.
 **Vastaus:** Rasvaa kuluu noin $0{,}89\,\text{kg}$ kuukaudessa. Rasvan kemiallinen energia ei katoa: se muuttuu lihasten liikkeeksi ja suurimmaksi osaksi lämpöenergiaksi, joka siirtyy lämpönä ympäristöön. Kaksi merkitsevää numeroa kuten tiedoissa.
 **Järkevyys:** Vaje on vain noin $10\,\%$ päivän energiasta, joten vähän alle kilon laihtuminen kuukaudessa on uskottava. Arvio: $30 \cdot 1 : 37 \approx 0{,}8$. Viiden prosentin toleranssi kattaa vajeen $1{,}10\,\text{MJ}$ pyöristyksen.
+
+## fy2-2-L1-10
+**Annettu:** energia $E = 180\,\text{kcal}$; taulukosta (MAFY-taulukko, yksikkömuunnoksia, energia/työ, kalori) $1\,\text{cal} = 4{,}1868\,\text{J}$
+**Kysytty:** energia $E$ kilojouleina
+**Periaate:** Kalori on vanha energian yksikkö, ja sen suuruus jouleina on sovittu. Energia muutetaan kaloreista jouleiksi kertomalla kalorien lukumäärä yhden kalorin energialla. Kilokalori on tuhat kaloria.
+**Kaava:** $E = N \cdot 4{,}1868\,\text{J}$, missä $N$ on kalorien lukumäärä
+**Muunnokset:** $180\,\text{kcal} = 180 \cdot 1000\,\text{cal} = 180\,000\,\text{cal}$ ja lopuksi $\text{J} \to \text{kJ}$: $1\,\text{kJ} = 1000\,\text{J}$.
+**Sijoitus:** $E = 180\,000 \cdot 4{,}1868\,\text{J} = 753\,624\,\text{J} = 753{,}624\,\text{kJ} \approx 754\,\text{kJ}$
+**Vastaus:** Patukka sisältää energiaa noin $754\,\text{kJ}$ eli noin $0{,}75\,\text{MJ}$. Kalorin arvo $4{,}1868\,\text{J}$ on MAFY-taulukosta (yksikkömuunnoksia); eri taulukoiden arvot poikkeavat hieman toisistaan, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Järkevyys:** Yksi kilokalori on noin $4{,}2\,\text{kJ}$, joten $180 \cdot 4{,}2\,\text{kJ} \approx 756\,\text{kJ}$. Joulut ovat pieniä, joten kilojoulelukema on noin nelinkertainen kilokalorilukemaan verrattuna.
+
+## fy2-2-L1-11
+**Annettu:** kuvasta luettu teeveden kiehautuksen piste asteikolla; asteikon kohdat $1\,\text{J}$, $1\,\text{kJ}$, $1\,\text{MJ}$, $1\,\text{GJ}$ ja $1\,\text{TJ}$
+**Kysytty:** teeveden kiehauttamisen energia $E$ kilojouleina
+**Periaate:** Kymmenpotenssiasteikolla jokainen pieni väli on kymmenkertainen, joten energia saadaan kertomalla lähtökohdan arvo kymmenellä aina yhden välin verran.
+**Kuvaajan lukeminen:** Teeveden piste on kaksi pientä väliä kohdan $1\,\text{kJ}$ oikealla puolella. Ensimmäinen väli kymmenkertaistaa arvon: $10\,\text{kJ}$. Toinen väli kymmenkertaistaa sen uudelleen: $100\,\text{kJ}$.
+**Kaava:** $E = 1\,\text{kJ} \cdot 10 \cdot 10$
+**Muunnokset:** Luettu arvo on suoraan kilojouleina, joten muunnoksia ei tarvita. Tarkistus jouleina: $100\,\text{kJ} = 100 \cdot 1000\,\text{J} = 10^{5}\,\text{J}$.
+**Sijoitus:** $E = 1\,\text{kJ} \cdot 10 \cdot 10 = 100\,\text{kJ}$
+**Vastaus:** Teeveden kiehauttaminen vaatii noin $100\,\text{kJ}$. Tulos on suuruusluokka, koska kuvan energiat ovat suuruusluokkia.
+**Järkevyys:** Kodin vedenkeitin, jonka teho on $2\,\text{kW}$, muuntaa sähköä $2\,\text{kJ}$ sekunnissa, joten $100\,\text{kJ}$ vaatii noin minuutin. Se sopii kupillisen kiehautukseen.

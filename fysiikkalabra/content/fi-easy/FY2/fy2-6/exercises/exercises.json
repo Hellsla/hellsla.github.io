@@ -139,6 +139,18 @@
           "feedback": "Näin käy, jos lasketaan nimellisteholla $3{,}0\\,\\text{MW}$ keskitehon $0{,}33 \\cdot 3{,}0\\,\\text{MW}$ sijaan. Silloin vuosienergia on noin $2{,}6 \\cdot 10^{7}\\,\\text{kWh}$ ja taloja tulee noin $5000$. Voimala ei kuitenkaan tuota nimellisteholla koko vuotta, koska tuuli ei puhalla koko ajan. Siksi vuosienergia lasketaan keskiteholla."
         }
       ]
+    },
+    {
+      "id": "fy2-6-L1-10",
+      "level": 1,
+      "text": "Turvevoimala tuottaa polttamalla jyrsinturvetta lämpöenergiaa teholla $2{,}0\\,\\text{MW}$ tunnin ajan. Hae jyrsinturpeen lämpöarvo MAFY-taulukosta (mafytaulukot.fi). Kuinka monta kilogrammaa turvetta tunnin aikana palaa? Anna vastaus kilogrammoina.",
+      "lookup": "MAFY",
+      "answer": 720,
+      "unit": "kg",
+      "tolerance": 0.04,
+      "hints": [
+        "Arvo löytyy MAFY-taulukon taulukosta *Polttoaineiden LHV-lämpöarvoja*."
+      ]
     }
   ],
   "level2": [
@@ -296,6 +308,15 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy2-6-L2-08",
+      "level": 2,
+      "text": "Kuvan pylväskaaviossa on Suomen sähköntuotanto vuonna 2024 energialähteittäin (Tilastokeskus). Lue kuvasta tuulivoiman tuotanto. Mikä oli Suomen tuulivoimaloiden yhteenlaskettu keskiteho vuonna 2024, kun vuodessa oli $8784\\,\\text{h}$? Anna vastaus gigawatteina.",
+      "figure": "fy2-6/fi-bars",
+      "answer": 2.3,
+      "unit": "GW",
+      "tolerance": 0.02
     }
   ],
   "level3": [

@@ -35,4 +35,6 @@ a["fy2-2-L3-04"] = round(max(Ek) / min(Ek), -3)    # 3,2e6 : 64,8 = 49 383 -> 49
 E_in = 1.4 + 3200 / 1000 + 650 / 1000 + 0.0042 * 1000 + 900 / 1000   # 10,35 MJ
 E_out = 10.2 + 5.0 * 250 / 1000                    # 11,45 MJ
 a["fy2-2-L3-05"] = round(30 * (E_out - E_in) / 37, 2)   # 33 MJ : 37 MJ/kg = 0,89 kg of fat
+a["fy2-2-L1-10"] = 180 * 1000 * 4.1868 / 1000      # 180 kcal = 180 000 cal; 1 cal = 4,1868 J (MAFY) -> 753 624 J = 753,6 kJ
+a["fy2-2-L1-11"] = 1 * 10 * 10                    # read off fy2-2/tikapuut-kohteet: tea water is two decades above 1 kJ = 100 kJ
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

@@ -124,6 +124,27 @@
           "feedback": "Here the direction of the prefixes has been reversed: giga is greater than mega, so a gigajoule is a thousand megajoules. This value is $1000\\,\\text{GJ} = 1\\,000\\,000\\,\\text{MJ}$."
         }
       ]
+    },
+    {
+      "id": "fy2-2-L1-10",
+      "level": 1,
+      "text": "A chocolate bar wrapper says that the energy content of the bar is $180\\,\\text{kcal}$. Energy is sometimes given in calories ($\\text{cal}$), although the SI unit is the joule. Look up the conversion of one calorie ($1\\,\\text{cal}$) to joules in the MAFY table (mafytaulukot.fi). How much energy does the bar contain, in kilojoules?",
+      "lookup": "MAFY",
+      "answer": 753.6,
+      "unit": "kJ",
+      "tolerance": 0.04,
+      "hints": [
+        "The value is in the MAFY table *Yksikkömuunnoksia* (unit conversions)."
+      ]
+    },
+    {
+      "id": "fy2-2-L1-11",
+      "level": 1,
+      "text": "Three things are marked on the power-of-ten scale of the figure with the order of magnitude of their energy, and each small step is ten times the previous one. Read from the figure how much energy it takes to bring tea water to the boil. Give the answer in kilojoules.",
+      "figure": "fy2-2/tikapuut-kohteet",
+      "answer": 100,
+      "unit": "kJ",
+      "tolerance": 0.02
     }
   ],
   "level2": [

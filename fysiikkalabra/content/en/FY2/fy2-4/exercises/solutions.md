@@ -199,3 +199,24 @@ In a year the lamp takes the energy $E_\text{o,y} = 0.0090\,\text{kW} \cdot 1095
 Line 2: $E_\text{o} = 2500\,\text{W} \cdot 240\,\text{s}$, that is $E_\text{o} = 600\,000\,\text{J} = 600\,\text{kJ}$ is correct.
 Line 3: $E_\text{h} = 600\,\text{kJ} - 360\,\text{kJ} = 240\,\text{kJ}$ is correct.
 Line 4 is wrong, because the energies have been divided the wrong way round. The correct calculation is $\eta = \dfrac{E_\text{a}}{E_\text{o}} = \dfrac{360\,\text{kJ}}{600\,\text{kJ}} = 0.60 = 60\,\%$. Check: an efficiency of $167\,\%$ would be over $100\,\%$, and the correct result fits line 3, because $240\,\text{kJ} : 600\,\text{kJ} = 0.40$ and $60\,\% + 40\,\% = 100\,\%$. So the correct answer is line 4.
+
+## fy2-4-L1-09
+**Given:** mass of oil $m = 2.5\,\text{kg}$ and useful energy $E_\text{a} = 80\,\text{MJ}$; from the table (MAFY table, heating values of fuels, fuel oil, light) $H = 40.6\,\text{MJ/kg}$
+**Asked:** the efficiency $\eta$ as a percentage
+**Principle:** Efficiency is the share of the energy taken into a device that becomes useful energy. The energy taken in is the chemical energy released when the fuel burns, found from the heating value and the mass.
+**Formula:** $E_\text{o} = Hm$ and $\eta = \dfrac{E_\text{a}}{E_\text{o}}$
+**Conversions:** All energies are in megajoules, so no conversions are needed. As a percentage $\eta \cdot 100\,\%$.
+**Substitution:** $E_\text{o} = 40.6\,\dfrac{\text{MJ}}{\text{kg}} \cdot 2.5\,\text{kg} = 101.5\,\text{MJ}$ and $\eta = \dfrac{80\,\text{MJ}}{101.5\,\text{MJ}} = 0.788 = 78.8\,\%$
+**Answer:** The efficiency of the boiler is about $79\,\%$. The heating value $H = 40.6\,\text{MJ/kg}$ is from the MAFY table (heating values of fuels, light fuel oil); tables differ slightly, and an answer within about $\pm 4\,\%$ is accepted.
+**Reasonableness:** The efficiency is below $100\,\%$, as it must be. A rough estimate: $40 \cdot 2.5 = 100\,\text{MJ}$ taken in, and $80 : 100 = 0.80$. The remaining $21\,\text{MJ}$ or so goes to losses, for example with the flue gases.
+
+## fy2-4-L2-09
+**Given:** read from the figure: the incoming arrow is $8$ squares thick, the useful (kinetic) energy arrow is $2$ squares thick, the incoming energy is $E_\text{o} = 240\,\text{J}$
+**Asked:** the efficiency $\eta$ of the motor as a percentage
+**Principle:** The thickness of an arrow is proportional to the energy on the scale of the figure, so the efficiency is the ratio of the thickness of the useful arrow to the thickness of the incoming arrow. The same ratio comes from the energies.
+**Reading the graph:** The incoming arrow covers $8$ squares and the green useful arrow $2$ squares. The thicknesses are read from the lines of the squared paper.
+**Formula:** $\eta = \dfrac{E_\text{a}}{E_\text{o}} = \dfrac{\text{thickness of the useful arrow}}{\text{thickness of the incoming arrow}}$
+**Conversions:** The squares need not be converted to joules, because the ratio of the thicknesses is a pure number. As a percentage $\eta \cdot 100\,\%$.
+**Substitution:** $\eta = \dfrac{2}{8} = 0.25 = 25\,\%$
+**Answer:** The efficiency of the motor is $25\,\%$.
+**Reasonableness:** The useful energy is $0.25 \cdot 240\,\text{J} = 60\,\text{J}$. The loss arrow is $6$ squares thick, and $2 + 6 = 8$ squares, so energy is conserved. The efficiency is below $100\,\%$, as it must be.

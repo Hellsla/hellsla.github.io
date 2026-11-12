@@ -88,6 +88,18 @@
       "answer": 72,
       "unit": "kW",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-7-L1-09",
+      "level": 1,
+      "text": "Sähköverkkoon lähtee vuorokaudessa $500\\,\\text{kWh}$ sähköenergiaa, ja verkossa häviää $4{,}0\\,\\%$ lähtevästä energiasta. Muunna häviö jouleiksi: hae kilowattitunnin ja joulen välinen muunnos MAFY-taulukosta (mafytaulukot.fi). Kuinka paljon energiaa häviää? Anna vastaus megajouleina.",
+      "lookup": "MAFY",
+      "answer": 72,
+      "unit": "MJ",
+      "tolerance": 0.04,
+      "hints": [
+        "Arvo löytyy MAFY-taulukon taulukosta *Yksikkömuunnoksia*."
+      ]
     }
   ],
   "level2": [
@@ -281,6 +293,15 @@
           "feedback": "Energia siirtyy sähköverkossa todella nopeasti, mutta nopeus ei selitä häviön suuruutta. Häviö syntyy, kun johtimet lämpenevät. Sen määrän saa osuudesta ja lähtevästä energiasta."
         }
       ]
+    },
+    {
+      "id": "fy2-7-L2-09",
+      "level": 2,
+      "text": "Kuvassa on sähköverkon ja kaukolämpöverkon energiavirrat. Sekä sähköverkkoon että kaukolämpöverkkoon lähtee viikossa $250\\,\\text{MWh}$ energiaa. Lue kuvasta, kuinka suuri osa lähtevästä energiasta häviää kummassakin verkossa. Kuinka paljon enemmän energiaa häviää viikossa kaukolämpöverkossa kuin sähköverkossa? Anna vastaus megawattitunteina.",
+      "figure": "fy2-7/sankey",
+      "answer": 12.5,
+      "unit": "MWh",
+      "tolerance": 0.03
     }
   ],
   "level3": [

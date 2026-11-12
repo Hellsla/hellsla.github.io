@@ -199,3 +199,24 @@ Vuodessa lamppu ottaa energian $E_\text{o,v} = 0{,}0090\,\text{kW} \cdot 1095\,\
 Rivi 2: $E_\text{o} = 2500\,\text{W} \cdot 240\,\text{s}$, eli $E_\text{o} = 600\,000\,\text{J} = 600\,\text{kJ}$ on oikein.
 Rivi 3: $E_\text{h} = 600\,\text{kJ} - 360\,\text{kJ} = 240\,\text{kJ}$ on oikein.
 Rivi 4 on väärin, koska energiat on jaettu väärinpäin. Oikein $\eta = \dfrac{E_\text{a}}{E_\text{o}} = \dfrac{360\,\text{kJ}}{600\,\text{kJ}} = 0{,}60 = 60\,\%$. Tarkistus: hyötysuhde $167\,\%$ olisi yli $100\,\%$. Oikea tulos sopii myös riviin 3, sillä $240\,\text{kJ} : 600\,\text{kJ} = 0{,}40$ ja $60\,\% + 40\,\% = 100\,\%$. Oikea vastaus on siis rivi 4.
+
+## fy2-4-L1-09
+**Annettu:** polttoöljyn massa $m = 2{,}5\,\text{kg}$ ja hyötyenergia $E_\text{a} = 80\,\text{MJ}$; taulukosta (MAFY-taulukko, polttoaineiden lämpöarvot, polttoöljy, kevyt) $H = 40{,}6\,\text{MJ/kg}$
+**Kysytty:** hyötysuhde $\eta$ prosentteina
+**Periaate:** Hyötysuhde on hyötyenergian osuus laitteeseen otetusta energiasta. Otettu energia on polttoaineen palamisessa vapautuva kemiallinen energia, joka saadaan lämpöarvosta ja massasta.
+**Kaava:** $E_\text{o} = Hm$ ja $\eta = \dfrac{E_\text{a}}{E_\text{o}}$
+**Muunnokset:** Kaikki energiat ovat megajouleina, joten muunnoksia ei tarvita. Prosentteina $\eta \cdot 100\,\%$.
+**Sijoitus:** $E_\text{o} = 40{,}6\,\dfrac{\text{MJ}}{\text{kg}} \cdot 2{,}5\,\text{kg} = 101{,}5\,\text{MJ}$ ja $\eta = \dfrac{80\,\text{MJ}}{101{,}5\,\text{MJ}} = 0{,}788 = 78{,}8\,\%$
+**Vastaus:** Kattilan hyötysuhde on noin $79\,\%$. Lämpöarvo $H = 40{,}6\,\text{MJ/kg}$ on MAFY-taulukosta (polttoaineiden lämpöarvot, kevyt polttoöljy); eri taulukoiden arvot poikkeavat hieman toisistaan, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Järkevyys:** Hyötysuhde on alle $100\,\%$, kuten pitääkin. Karkea arvio: $40 \cdot 2{,}5 = 100\,\text{MJ}$ otettua energiaa, ja $80 : 100 = 0{,}80$. Loput noin $21\,\text{MJ}$ menee häviöihin, esimerkiksi savukaasujen mukana.
+
+## fy2-4-L2-09
+**Annettu:** kuvasta luettu: tuleva nuoli $8$ ruutua paksu, hyötyenergian (liike-energian) nuoli $2$ ruutua paksu, tuleva energia $E_\text{o} = 240\,\text{J}$
+**Kysytty:** moottorin hyötysuhde $\eta$ prosentteina
+**Periaate:** Nuolen paksuus on mittakaavassa verrannollinen energiaan, joten hyötysuhde on hyötynuolen ja tulevan nuolen paksuuksien suhde. Sama suhde saadaan myös energioista.
+**Kuvaajan lukeminen:** Tuleva nuoli kattaa $8$ ruutua ja vihreä hyötynuoli $2$ ruutua. Nuolten paksuudet luetaan ruutupaperin viivoista.
+**Kaava:** $\eta = \dfrac{E_\text{a}}{E_\text{o}} = \dfrac{\text{hyötynuolen paksuus}}{\text{tulevan nuolen paksuus}}$
+**Muunnokset:** Ruutuja ei tarvitse muuttaa jouleiksi, koska paksuuksien suhde on lukuarvo. Prosentteina $\eta \cdot 100\,\%$.
+**Sijoitus:** $\eta = \dfrac{2}{8} = 0{,}25 = 25\,\%$
+**Vastaus:** Moottorin hyötysuhde on $25\,\%$.
+**Järkevyys:** Hyötyenergia on $0{,}25 \cdot 240\,\text{J} = 60\,\text{J}$. Häviönuolen paksuus on $6$ ruutua, ja $2 + 6 = 8$ ruutua, joten energia säilyy. Hyötysuhde on alle $100\,\%$, kuten pitääkin.
