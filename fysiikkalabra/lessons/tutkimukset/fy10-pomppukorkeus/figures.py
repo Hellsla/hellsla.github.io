@@ -80,7 +80,7 @@ def model():
     ax.line([(0, 0), (9.5, 5.7)], INK)
     f.tex(ax.X(7.4), ax.Y(9.3), r"h_1 = h_0", "end", MUTED)
     f.tex(ax.X(9.6), ax.Y(5.7) + 70, r"h_1 = a h_0", "end")
-    f.tex(ax.X(0.6), ax.Y(9.2), r"a = \dfrac{h_1}{h_0} < 1", "start")
+    f.tex(ax.X(0.6), ax.Y(8.8), r"a = \dfrac{h_1}{h_0} < 1", "start")   # clear of the axis name beside the arrow tip
     return f.svg()
 
 

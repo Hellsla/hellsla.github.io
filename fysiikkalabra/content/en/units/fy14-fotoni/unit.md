@@ -405,7 +405,7 @@ The graph shows the five points and the line that a spreadsheet fits through the
   <circle cx="201" cy="219" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <circle cx="244.5" cy="193.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <circle cx="311" cy="148" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="96.5" y="40.5" width="168" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:28px;color:#6b7480"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{example data}$</span></div></foreignObject>
+  <foreignObject x="175.5" y="274.5" width="168" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:28px;color:#6b7480"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{example data}$</span></div></foreignObject>
   <foreignObject x="96.5" y="82" width="357" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:28px;color:#1971c2"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{fit: slope} = 3.96 \cdot 10^{-15}\,\text{V} \cdot \text{s}$</span></div></foreignObject>
 </svg>
 
