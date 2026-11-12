@@ -153,7 +153,7 @@
 
 Tunnin tehtävät alkavat samasta ajatuksesta: **varaus synnyttää ympärilleen sähkökentän, ja kenttä kohdistaa toiseen varaukseen voiman** $\overline{F} = q\overline{E}$. Positiiviseen varaukseen voima osoittaa kentän suuntaan ja negatiiviseen kenttää vastaan. Kun kenttä siirtää varausta, se tekee työtä, ja varauksen potentiaalienergia muuttuu kuten pallon korkeusenergia painovoimakentässä. Kondensaattori varastoi energiaa levyjensä väliseen kenttään. Puolijohdekomponentit ja sähköturvallisuus palaavat samoihin suureisiin: jännite, virta ja eristeen kestämä kenttä.
 
-<svg data-fig="kartta" viewBox="0 0 380 780" role="img" aria-label="Käsitekartta. Ylhäällä solmu: varaus synnyttää sähkökentän, ja kenttä kohdistaa varaukseen voiman F = q E. Siitä lähtee alas neljä haaraa. Varaus ja voima: varaus Q = n e, Coulombin laki F E = k kertaa varausten tulo jaettuna r toiseen ja voimien vektorisumma. Kenttä ja potentiaali: homogeeninen kenttä U = E kertaa d, kentän työ W = Q U ja kiihdytyksessä liike-energia E k = puoli m v toiseen. Kondensaattori: kapasitanssi Q = C U, levykondensaattori C = epsilon nolla epsilon r A jaettuna d:llä ja energia E = puoli C U toiseen. Komponentit ja turvallisuus: etuvastus Kirchhoffin 2. laista, summa delta V = 0, aurinkokennon hyötysuhde eta = P a jaettuna P o:lla ja kehon läpi kulkeva virta I = U jaettuna R:llä." style="max-width:100%;font-size:22px">
+<svg data-fig="kartta" viewBox="0 0 380 780" role="img" aria-label="Käsitekartta. Ylhäällä solmu: varaus synnyttää sähkökentän, ja kenttä kohdistaa varaukseen voiman F = q E. Siitä lähtee alas neljä haaraa. Varaus ja voima: varaus Q = n e, Coulombin laki F E = k kertaa varausten tulo jaettuna r toiseen ja voimien vektorisumma. Kenttä ja potentiaali: homogeeninen kenttä U = E kertaa d, kentän työ W = Q U ja kiihdytyksessä liike-energia E k = puoli m v toiseen. Kondensaattori: kapasitanssi Q = C U, levykondensaattori C = epsilon nolla epsilon r A jaettuna d:llä ja energia E = puoli C U toiseen. Komponentit ja turvallisuus: etuvastus Kirchhoffin 2. laista, summa delta V = 0, aurinkokennon hyötysuhde eta = P jaettuna G A:lla ja kehon läpi kulkeva virta I = U jaettuna R:llä." style="max-width:100%;font-size:22px">
   <line x1="24" y1="80" x2="24" y2="638" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="2.5"/>
   <foreignObject x="66" y="17" width="248" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$\text{varaus synnyttää kentän}$</div></foreignObject>
@@ -194,7 +194,7 @@ Tunnin tehtävät alkavat samasta ajatuksesta: **varaus synnyttää ympärilleen
   <line x1="54" y1="658" x2="362" y2="658" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="58" y="669" width="65" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$\Sigma \Delta V = 0$</div></foreignObject>
   <foreignObject x="274" y="672" width="88" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{etuvastus}$</div></foreignObject>
-  <foreignObject x="58" y="706" width="88" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$\eta = P_\text{a}/P_\text{o}$</div></foreignObject>
+  <foreignObject x="58" y="706" width="100" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$\eta = P/(GA)$</div></foreignObject>
   <foreignObject x="310" y="709" width="52" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{kenno}$</div></foreignObject>
   <foreignObject x="58" y="743" width="54" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$U = RI$</div></foreignObject>
   <foreignObject x="266" y="746" width="96" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{kehon virta}$</div></foreignObject>
@@ -404,10 +404,13 @@ Sama päättely antaa alun kipinän jännitteen: ilmavälin $d$ yli voi olla eni
 ### Komponentit ja turvallisuus
 
 ```kaavat
+\eta = \frac{P}{GA}
 jännitehäviö johtimessa :: U = RI
 ```
 
-missä $U$ on jännite ($\text{V}$), $R$ resistanssi ($\Omega$) ja $I$ virta ($\text{A}$). Yhtälöstä saadaan kehon läpi kulkeva virta $I = \tfrac{U}{R}$, kun $U$ on kosketusjännite ja $R$ koko virtatien resistanssi. Diodi johtaa vain päästösuuntaan, kun sen jännite ylittää kynnysjännitteen. Sulake suojaa johtoa, vikavirtasuoja ihmistä.
+missä $\eta$ on aurinkokennon hyötysuhde, $P$ kennon sähköteho maksimitehopisteessä ($\text{W}$), $G$ kennoon tulevan valon voimakkuus eli teho pinta-alaa kohti ($\text{W/m}^2$) ja $A$ kennon pinta-ala ($\text{m}^2$). Hyötysuhteen yhtälö pätee, kun valo tulee kohtisuoraan kennoon.
+
+Jännitehäviön yhtälössä $U$ on jännite ($\text{V}$), $R$ resistanssi ($\Omega$) ja $I$ virta ($\text{A}$). Yhtälöstä saadaan kehon läpi kulkeva virta $I = \tfrac{U}{R}$, kun $U$ on kosketusjännite ja $R$ koko virtatien resistanssi. Diodi johtaa vain päästösuuntaan, kun sen jännite ylittää kynnysjännitteen. Sulake suojaa johtoa, vikavirtasuoja ihmistä.
 
 LED kytketään jännitelähteeseen $U$ ($\text{V}$) sarjaan etuvastuksen $R$ ($\Omega$) kanssa, joka rajoittaa virran $I$ ($\text{A}$) sopivaksi. Johtavan LEDin jännite $U_\text{D}$ ($\text{V}$) pysyy lähes samana virrasta riippumatta.
 
@@ -448,24 +451,6 @@ Ratkaistaan resistanssi:
 $$R = \frac{U - U_\text{D}}{I}$$
 
 Vastuksen yli on siis vain se osa lähteen jännitteestä, joka ei jää LEDin yli. Lähteen sisäinen resistanssi on oletettu pieneksi.
-```
-
-Aurinkokennon pinta-ala on $A$ ($\text{m}^2$), ja siihen tulevan valon voimakkuus eli teho pinta-alaa kohti on $G$ ($\text{W/m}^2$). Kenno antaa maksimitehopisteessä sähkötehon $P = UI$ ($\text{W}$), ja sen hyötysuhde $\eta$ kertoo, kuinka suuri osa valon tehosta muuttuu sähköksi.
-
-```johda
-Aurinkokennon pinta-ala on $A$, siihen tulevan valon voimakkuus on $G$, ja kenno antaa sähkötehon $P$. Johda kennon hyötysuhde $\eta$.
----
-Hyötysuhde on antotehon $P_\text{a}$ ja ottotehon $P_\text{o}$ suhde:
-
-$$\eta = \frac{P_\text{a}}{P_\text{o}}$$
-
-Antoteho on kennon sähköteho, $P_\text{a} = P$. Ottoteho on kennoon tulevan valon teho. Valon voimakkuus $G$ on teho pinta-alaa kohti, joten koko pinnalle tulee teho
-
-$$P_\text{o} = GA$$
-
-Sijoitetaan tehot hyötysuhteeseen:
-
-$$\eta = \frac{P}{GA}$$
 ```
 
 ## Yleisiä virheitä {Virheet}

@@ -586,26 +586,13 @@ missä $N$ on hajoamattomien ytimien määrä hetkellä $t$, $N_0$ määrä alus
 ```kaavat
 D = \frac{E}{m}
 ekvivalenttiannos :: H = w_\text{R} D
++ H = \dot{H} t
 heikennyslaki :: I = I_0 e^{-\mu x}
 ```
 
 missä $D$ on absorboitunut annos ($\text{Gy}$), $E$ absorboitunut energia, $m$ kudoksen massa, $H$ ekvivalenttiannos ($\text{Sv}$), $w_\text{R}$ säteilyn painotuskerroin (alfa $20$, beeta ja gamma $1$), $I_0$ väliaineen pintaan tulevan ja $I$ läpi tulleen säteilyn intensiteetti, $\mu$ heikennyskerroin ($1/\text{m}$) ja $x$ väliaineen paksuus. Puoliintumispaksuus on $d_{1/2} = \tfrac{\ln 2}{\mu}$. Se koskee fotonisäteilyä, koska alfa- ja beetasäteilyllä on kantama. Galaksien etääntymisnopeus on $v = H_0 d$, ja pienellä punasiirtymällä $v = cz$.
 
-**Annosnopeus** $\dot{H}$ ($\text{Sv/h}$) on ekvivalenttiannos aikayksikköä kohti. Suojan takana annosnopeus pienenee kuten $\dot{H} = \dot{H}_0 \left(\tfrac12\right)^{x/d_{1/2}}$.
-
-```johda
-Annosnopeus $\dot{H}$ pysyy vakiona. Johda ekvivalenttiannos $H$, jonka ihminen saa ajassa $t$.
----
-Annosnopeuden määritelmän mukaan annosnopeus on ekvivalenttiannos jaettuna ajalla, jossa annos kertyy:
-
-$$\dot{H} = \frac{H}{t}$$
-
-Kerrotaan yhtälön molemmat puolet ajalla $t$:
-
-$$H = \dot{H} t$$
-
-Yksiköt sopivat yhteen, kun aika on samassa yksikössä kuin annosnopeuden nimittäjä: $\text{Sv/h}$ kertaa $\text{h}$ on $\text{Sv}$.
-```
+**Annosnopeus** $\dot{H}$ ($\text{Sv/h}$) on ekvivalenttiannos aikayksikköä kohti, ja $t$ on aika, jonka kuluessa annos kertyy vakioannosnopeudella. Suojan takana annosnopeus pienenee kuten $\dot{H} = \dot{H}_0 \left(\tfrac12\right)^{x/d_{1/2}}$. Kaava $H = \dot{H} t$ on lisätietoa: sitä ei ole MAFY-taulukoissa, ja kokeessa se annetaan tehtävässä, jos sitä tarvitaan.
 
 Pistemäinen lähde säteilee tasaisesti joka suuntaan, eikä ilma vaimenna säteilyä. Etäisyydellä $r_1$ ($\text{m}$) lähteestä annosnopeus on $\dot{H}_1$ ja etäisyydellä $r_2$ annosnopeus on $\dot{H}_2$.
 

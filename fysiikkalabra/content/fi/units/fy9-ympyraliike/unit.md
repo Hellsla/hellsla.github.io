@@ -313,6 +313,14 @@ missä $v$ on ratanopeus ($\text{m/s}$), $r$ radan säde ($\text{m}$), $\omega =
 
 Newtonin 2. lain mukaan kappaleeseen vaikuttava kokonaisvoima $\Sigma F$ ($\text{N}$) antaa sille normaalikiihtyvyyden, joten kokonaisvoima osoittaa keskipisteeseen. Normaalikiihtyvyys $a_\text{n} = \tfrac{v^2}{r}$ pätee myös hetkellisesti, kun vauhti muuttuu: radan ylimmässä ja alimmassa kohdassa tangentin suuntaista voimaa ei ole. Liikeyhtälössä keskipisteeseen osoittavat voimat ovat positiivisia, ja kohtisuoraan ratatasoa vastaan voimien summa on nolla.
 
+```johda
+Kappale, jonka massa on $m$, on tasaisessa ympyräliikkeessä vauhdilla $v$ radalla, jonka säde on $r$. Johda Newtonin 2. laista ja keskeiskiihtyvyydestä kappaleeseen vaikuttava kokonaisvoima $\Sigma F$.
+---
+Newtonin 2. laki $\Sigma\overline{F} = m\overline{a}$ pätee myös ympyräliikkeessä. Tasaisessa ympyräliikkeessä kiihtyvyys on keskeiskiihtyvyys $a_\text{n} = \tfrac{v^2}{r}$, joka osoittaa radan keskipisteeseen. Kokonaisvoima osoittaa siis keskipisteeseen, ja sen suuruus on
+
+$$\Sigma F = ma_\text{n} = m\frac{v^2}{r}$$
+```
+
 <svg data-fig="kaarre" viewBox="0 0 380 280" role="img" aria-label="Voimakuvio, ei lukuarvoja: auto vaakasuoran tien kaarteessa takaa katsottuna suorakulmiona. Kaarteen keskipiste on vasemmalla. Paino G lähtee keskipisteestä alas, ja yhtä pitkä tukivoima N lähtee tien pinnasta ylös. Tien pinta on katkoviiva. Kitkavoima F myy lähtee auton vasemmasta alakulmasta vasemmalle tien suuntaisesti, kohti kaarteen keskipistettä. Auton vieressä oranssi kiihtyvyysnuoli osoittaa vasemmalle kohti keskipistettä. Nopeus on poispäin katsojasta, piirretty ympyränä, jonka sisällä on risti." style="max-width:100%;font-size:20px">
   <line x1="16" y1="206" x2="364" y2="206" stroke="#6b7480" stroke-width="2" stroke-linecap="butt" stroke-dasharray="8 6"/>
   <foreignObject x="12" y="23" width="186" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px;color:#6b7480">$\leftarrow \text{kaarteen keskipiste}$</div></foreignObject>
@@ -336,13 +344,9 @@ Newtonin 2. lain mukaan kappaleeseen vaikuttava kokonaisvoima $\Sigma F$ ($\text
 </svg>
 
 ```johda
-Kappale, jonka massa on $m$, on tasaisessa ympyräliikkeessä vauhdilla $v$ radalla, jonka säde on $r$. Johda kappaleeseen vaikuttava kokonaisvoima $\Sigma F$. Sovella tulosta autoon vaakasuoran tien kaarteessa: kuinka suuri kitkavoima tarvitaan, ja millä vauhdilla auto vielä pysyy tiellä, kun lepokitkakerroin on $\mu_0$?
+Auto, jonka massa on $m$, ajaa vauhdilla $v$ vaakasuoran tien kaarteessa, jonka säde on $r$. Tien kitka antaa autolle keskeisvoiman. Johda, kuinka suuri kitkavoima tarvitaan ja millä suurimmalla vauhdilla auto vielä pysyy tiellä, kun lepokitkakerroin on $\mu_0$.
 ---
-Newtonin 2. laki $\Sigma\overline{F} = m\overline{a}$ pätee myös ympyräliikkeessä. Tasaisessa ympyräliikkeessä kiihtyvyys on keskeiskiihtyvyys $a_\text{n} = \tfrac{v^2}{r}$, joka osoittaa radan keskipisteeseen. Kokonaisvoima osoittaa siis keskipisteeseen, ja sen suuruus on
-
-$$\Sigma F = ma_\text{n} = m\frac{v^2}{r}$$
-
-Kaarteessa autoon vaikuttavat paino $G = mg$, tien tukivoima $N$ ja tien kitkavoima $F_\mu$ (kuva). Pystysuunnassa kiihtyvyyttä ei ole, joten $N = mg$. Vaakasuunnassa ainoa voima on kitka, joten se on kokonaisvoima:
+Kaarteessa autoon vaikuttavat paino $G = mg$, tien tukivoima $N$ ja tien kitkavoima $F_\mu$ (kuva). Pystysuunnassa kiihtyvyyttä ei ole, joten $N = mg$. Vaakasuunnassa ainoa voima on kitka, joten se on kokonaisvoima. Tasaisessa ympyräliikkeessä kokonaisvoima on $\Sigma F = m\tfrac{v^2}{r}$, joten
 
 $$F_\mu = m\frac{v^2}{r}$$
 
@@ -376,7 +380,7 @@ Kappaleen massa $m$ supistuu:
 
 $$g = \gamma\frac{M}{r^2}$$
 
-Kentän voimakkuus ei riipu kappaleen massasta, joten kaikki kappaleet putoavat samalla kiihtyvyydellä. Maan pinnalla $r = R$, ja kauempana $g$ pienenee etäisyyden neliön mukaan.
+Kentän voimakkuus ei riipu kappaleen massasta, joten kaikki kappaleet putoavat samalla kiihtyvyydellä. Ilmanvastus jätetään huomioimatta. Maan pinnalla $r = R$, ja kauempana $g$ pienenee etäisyyden neliön mukaan.
 ```
 
 Satelliitti kiertää keskuskappaletta ympyräradalla, jonka säde on $r$, ratanopeudella $v$ ($\text{m/s}$). Siihen vaikuttaa vain gravitaatiovoima, ja se antaa satelliitille normaalikiihtyvyyden. Maan satelliitille $r = R + h$, missä $R = 6371\,\text{km}$ ja $h$ korkeus maanpinnasta, ja kiertoaika on $T = \tfrac{2\pi r}{v}$.

@@ -313,6 +313,14 @@ where $v$ is the orbital speed ($\text{m/s}$), $r$ the radius of the path ($\tex
 
 By Newton's second law the net force $\Sigma F$ ($\text{N}$) on the body gives it the centripetal acceleration, so the net force points to the centre. The centripetal acceleration $a_\text{n} = \tfrac{v^2}{r}$ also holds at an instant when the speed changes: at the highest and the lowest point of the path there is no force along the tangent. In the equation of motion the forces pointing to the centre are positive, and perpendicular to the plane of the path the sum of the forces is zero.
 
+```johda
+A body of mass $m$ is in uniform circular motion at the speed $v$ on a path of radius $r$. Derive the net force $\Sigma F$ on the body from Newton's second law and the centripetal acceleration.
+---
+Newton's second law $\Sigma\overline{F} = m\overline{a}$ also holds in circular motion. In uniform circular motion the acceleration is the centripetal acceleration $a_\text{n} = \tfrac{v^2}{r}$, which points to the centre of the path. So the net force points to the centre, and its magnitude is
+
+$$\Sigma F = ma_\text{n} = m\frac{v^2}{r}$$
+```
+
 <svg data-fig="kaarre" viewBox="0 0 380 280" role="img" aria-label="Free-body diagram, no numerical values: a car in a curve of a horizontal road seen from behind, as a rectangle. The centre of the curve is to the left. The weight G starts from the centre point and points down, and the normal force N, equally long, starts from the road surface and points up. The road surface is a dashed line. The friction force F mu starts from the lower left corner of the car and points to the left along the road, towards the centre of the curve. Beside the car an orange acceleration arrow points to the left towards the centre. The velocity points away from the viewer, drawn as a circle with a cross inside." style="max-width:100%;font-size:20px">
   <line x1="16" y1="206" x2="364" y2="206" stroke="#6b7480" stroke-width="2" stroke-linecap="butt" stroke-dasharray="8 6"/>
   <foreignObject x="12" y="23" width="167" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px;color:#6b7480">$\leftarrow \text{centre of the curve}$</div></foreignObject>
@@ -336,13 +344,9 @@ By Newton's second law the net force $\Sigma F$ ($\text{N}$) on the body gives i
 </svg>
 
 ```johda
-A body of mass $m$ is in uniform circular motion at the speed $v$ on a path of radius $r$. Derive the net force $\Sigma F$ on the body. Apply the result to a car in a curve of a horizontal road: how large a friction force is needed, and up to what speed does the car stay on the road when the coefficient of static friction is $\mu_0$?
+A car of mass $m$ drives at the speed $v$ in a curve of a horizontal road with radius $r$. The friction of the road gives the car its centripetal force. Derive how large a friction force is needed and the greatest speed at which the car still stays on the road when the coefficient of static friction is $\mu_0$.
 ---
-Newton's second law $\Sigma\overline{F} = m\overline{a}$ also holds in circular motion. In uniform circular motion the acceleration is the centripetal acceleration $a_\text{n} = \tfrac{v^2}{r}$, which points to the centre of the path. So the net force points to the centre, and its magnitude is
-
-$$\Sigma F = ma_\text{n} = m\frac{v^2}{r}$$
-
-In the curve the forces on the car are the weight $G = mg$, the normal force $N$ of the road and the friction force $F_\mu$ of the road (figure). There is no vertical acceleration, so $N = mg$. The only horizontal force is friction, so it is the net force:
+In the curve the forces on the car are the weight $G = mg$, the normal force $N$ of the road and the friction force $F_\mu$ of the road (figure). There is no vertical acceleration, so $N = mg$. The only horizontal force is friction, so it is the net force. In uniform circular motion the net force is $\Sigma F = m\tfrac{v^2}{r}$, so
 
 $$F_\mu = m\frac{v^2}{r}$$
 
@@ -376,7 +380,7 @@ The mass $m$ of the body cancels:
 
 $$g = \gamma\frac{M}{r^2}$$
 
-The field strength does not depend on the mass of the body, so all bodies fall with the same acceleration. At the Earth's surface $r = R$, and further away $g$ decreases with the square of the distance.
+The field strength does not depend on the mass of the body, so all bodies fall with the same acceleration. Air resistance is neglected. At the Earth's surface $r = R$, and further away $g$ decreases with the square of the distance.
 ```
 
 A satellite orbits a central body on a circular orbit of radius $r$ at the orbital speed $v$ ($\text{m/s}$). The only force on it is the gravitational force, which gives it the centripetal acceleration. For an Earth satellite $r = R + h$, where $R = 6371\,\text{km}$ and $h$ is the height above the surface, and the period is $T = \tfrac{2\pi r}{v}$.

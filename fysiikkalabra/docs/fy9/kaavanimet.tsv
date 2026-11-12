@@ -86,6 +86,7 @@ fy9-moderni	516	\Delta m = m_\text{lähtöaineet} - m_\text{tuotteet}	\Delta m =
 fy9-moderni	516	E = \Delta m c^2	E = \Delta m c^2	ydinreaktiossa vapautuva energia	energy released in a nuclear reaction	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	
 fy9-moderni	586	D = \frac{E}{m}	D = \frac{E}{m}			ei MAFY:ssa		ei MAFY:n kaavoissa
 fy9-moderni	586	H = w_\text{R} D	H = w_\text{R} D	ekvivalenttiannos	equivalent dose	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	
+fy9-moderni	586	H = \dot{H} t	H = \dot{H} t	+	+	lisätieto		ei MAFY:ssa; annetaan lisätietona (opettaja 2026-11-12)
 fy9-moderni	586	I = I_0 e^{-\mu x}	I = I_0 e^{-\mu x}	heikennyslaki	attenuation law	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	
 fy9-sahkokentta	267	Q = ne	Q = ne			ei MAFY:ssa		ei MAFY:ssa
 fy9-sahkokentta	267	F_E = k\,\frac{Q_1 Q_2}{r^2}	F_E = k\,\frac{Q_1 Q_2}{r^2}	Coulombin voiman suuruus	magnitude of the Coulomb force	MAFY	Sähköstatiikan kaavoja	
@@ -96,6 +97,7 @@ fy9-sahkokentta	351	W = QU	W = QU	sähkökentän tekemä työ	work done by an el
 fy9-sahkokentta	380	Q = CU	Q = CU	kondensaattorilaki	capacitor law	MAFY	Virtapiirien kaavoja	
 fy9-sahkokentta	380	C = \varepsilon_0\varepsilon_\text{r}\,\frac{A}{d}	C = \varepsilon_0\varepsilon_\text{r}\,\frac{A}{d}	levykondensaattorin kapasitanssi	capacitance of a parallel-plate capacitor	MAFY	Virtapiirien kaavoja	
 fy9-sahkokentta	380	E = \tfrac12 CU^2	E = \tfrac12 CU^2	kondensaattorin energia	energy of a capacitor	MAFY	Virtapiirien kaavoja	
+fy9-sahkokentta	406	\eta = \frac{P}{GA}	\eta = \frac{P}{GA}			ei MAFY:ssa		ei MAFY:ssa; annetaan lisätietona (opettaja 2026-11-12)
 fy9-sahkokentta	406	U = RI	U = RI	jännitehäviö johtimessa	voltage drop across a conductor	MAFY	Virtapiirien kaavoja	kirjoitettu MAFY:n muotoon 2026-11-12 (docs/fy9/mafy-tunnukset.tsv)
 fy9-sailymislait	306	E_\text{k} = \tfrac{1}{2}\,mv^2	E_\text{k} = \tfrac{1}{2}\,mv^2	liike-energia	kinetic energy	MAFY	Mekaniikan kaavoja	
 fy9-sailymislait	306	E_\text{p} = mgh	E_\text{p} = mgh	painovoimaan liittyvä potentiaalienergia maanpinnalla	gravitational potential energy near the Earth's surface	MAFY	Mekaniikan kaavoja	

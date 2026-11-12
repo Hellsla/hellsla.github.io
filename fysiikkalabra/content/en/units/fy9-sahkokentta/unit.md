@@ -153,7 +153,7 @@
 
 The tasks of the lesson start from the same idea: **a charge creates an electric field around itself, and the field exerts a force on another charge**, $\overline{F} = q\overline{E}$. On a positive charge the force points in the direction of the field and on a negative charge against the field. When the field moves a charge, it does work, and the potential energy of the charge changes like the gravitational potential energy of a ball in the gravitational field. A capacitor stores energy in the field between its plates. Semiconductor components and electrical safety return to the same quantities: voltage, current and the field a dielectric can withstand.
 
-<svg data-fig="kartta" viewBox="0 0 380 780" role="img" aria-label="Concept map. At the top is the node: a charge creates an electric field, and the field exerts a force on a charge, F = q E. Four branches go down from it. Charge and force: charge Q = n e, Coulomb&#x27;s law F E = k times the product of the charges divided by r squared, and the vector sum of the forces. Field and potential: uniform field U = E times d, work done by the field W = Q U and in acceleration the kinetic energy E k = one half m v squared. Capacitor: capacitance Q = C U, parallel-plate capacitor C = epsilon zero epsilon r A divided by d and energy E = one half C U squared. Components and safety: series resistor from Kirchhoff&#x27;s second law, sum of delta V = 0, efficiency of a solar cell eta = P a divided by P o, and current through the body I = U divided by R." style="max-width:100%;font-size:22px">
+<svg data-fig="kartta" viewBox="0 0 380 780" role="img" aria-label="Concept map. At the top is the node: a charge creates an electric field, and the field exerts a force on a charge, F = q E. Four branches go down from it. Charge and force: charge Q = n e, Coulomb&#x27;s law F E = k times the product of the charges divided by r squared, and the vector sum of the forces. Field and potential: uniform field U = E times d, work done by the field W = Q U and in acceleration the kinetic energy E k = one half m v squared. Capacitor: capacitance Q = C U, parallel-plate capacitor C = epsilon zero epsilon r A divided by d and energy E = one half C U squared. Components and safety: series resistor from Kirchhoff&#x27;s second law, sum of delta V = 0, efficiency of a solar cell eta = P divided by G A, and current through the body I = U divided by R." style="max-width:100%;font-size:22px">
   <line x1="24" y1="80" x2="24" y2="638" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="2.5"/>
   <foreignObject x="71.5" y="17" width="237" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$\text{a charge creates a field}$</div></foreignObject>
@@ -194,7 +194,7 @@ The tasks of the lesson start from the same idea: **a charge creates an electric
   <line x1="54" y1="658" x2="362" y2="658" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="58" y="669" width="65" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$\Sigma \Delta V = 0$</div></foreignObject>
   <foreignObject x="230" y="672" width="132" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{series resistor}$</div></foreignObject>
-  <foreignObject x="58" y="706" width="88" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$\eta = P_\text{a}/P_\text{o}$</div></foreignObject>
+  <foreignObject x="58" y="706" width="100" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$\eta = P/(GA)$</div></foreignObject>
   <foreignObject x="319" y="709" width="43" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{cell}$</div></foreignObject>
   <foreignObject x="58" y="743" width="54" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$U = RI$</div></foreignObject>
   <foreignObject x="257" y="746" width="105" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{body current}$</div></foreignObject>
@@ -404,10 +404,13 @@ The same reasoning gives the voltage of the spark at the start: across an air ga
 ### Components and safety
 
 ```kaavat
+\eta = \frac{P}{GA}
 voltage drop across a conductor :: U = RI
 ```
 
-where $U$ is the voltage ($\text{V}$), $R$ the resistance ($\Omega$) and $I$ the current ($\text{A}$). The equation gives the current through the body, $I = \tfrac{U}{R}$, when $U$ is the touch voltage and $R$ the resistance of the whole current path. A diode conducts only in the forward direction, when its voltage exceeds the threshold voltage. A fuse protects the cable, a residual current device the person.
+where $\eta$ is the efficiency of the solar cell, $P$ the electric power of the cell at the maximum power point ($\text{W}$), $G$ the intensity of the light falling on the cell, that is the power per unit area ($\text{W/m}^2$), and $A$ the area of the cell ($\text{m}^2$). The equation for the efficiency holds when the light falls perpendicular to the cell.
+
+In the equation for the voltage drop $U$ is the voltage ($\text{V}$), $R$ the resistance ($\Omega$) and $I$ the current ($\text{A}$). The equation gives the current through the body, $I = \tfrac{U}{R}$, when $U$ is the touch voltage and $R$ the resistance of the whole current path. A diode conducts only in the forward direction, when its voltage exceeds the threshold voltage. A fuse protects the cable, a residual current device the person.
 
 An LED is connected to a voltage source $U$ ($\text{V}$) in series with a series resistor $R$ ($\Omega$), which limits the current $I$ ($\text{A}$) to a suitable value. The voltage $U_\text{D}$ ($\text{V}$) of a conducting LED stays almost the same whatever the current.
 
@@ -448,24 +451,6 @@ Solve for the resistance:
 $$R = \frac{U - U_\text{D}}{I}$$
 
 Across the resistor there is therefore only the part of the source voltage that is not across the LED. The internal resistance of the source is assumed to be small.
-```
-
-A solar cell has the area $A$ ($\text{m}^2$), and the light falling on it has the intensity, the power per unit area, $G$ ($\text{W/m}^2$). At the maximum power point the cell gives the electric power $P = UI$ ($\text{W}$), and its efficiency $\eta$ tells what fraction of the power of the light becomes electric power.
-
-```johda
-A solar cell has the area $A$, the light falling on it has the intensity $G$, and the cell gives the electric power $P$. Derive the efficiency $\eta$ of the cell.
----
-The efficiency is the ratio of the output power $P_\text{a}$ to the input power $P_\text{o}$:
-
-$$\eta = \frac{P_\text{a}}{P_\text{o}}$$
-
-The output power is the electric power of the cell, $P_\text{a} = P$. The input power is the power of the light falling on the cell. The intensity $G$ is power per unit area, so the power falling on the whole surface is
-
-$$P_\text{o} = GA$$
-
-Substitute the powers into the efficiency:
-
-$$\eta = \frac{P}{GA}$$
 ```
 
 ## Common mistakes {Virheet}

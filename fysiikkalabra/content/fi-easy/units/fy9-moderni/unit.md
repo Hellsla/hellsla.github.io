@@ -586,26 +586,13 @@ Kaavoissa $N$ on niiden ytimien määrä, jotka eivät ole vielä hajonneet hetk
 ```kaavat
 D = \frac{E}{m}
 ekvivalenttiannos :: H = w_\text{R} D
++ H = \dot{H} t
 heikennyslaki :: I = I_0 e^{-\mu x}
 ```
 
 Kaavoissa $D$ on absorboitunut annos ($\text{Gy}$), $E$ absorboitunut energia ja $m$ kudoksen massa. $H$ on ekvivalenttiannos ($\text{Sv}$). $w_\text{R}$ on säteilyn painotuskerroin: alfa $20$, beeta ja gamma $1$. Heikennyslaissa $I_0$ on säteilyn intensiteetti, kun säteily tulee väliaineen pintaan, ja $I$ on intensiteetti, kun säteily on mennyt väliaineen läpi. $\mu$ on heikennyskerroin ($1/\text{m}$) ja $x$ väliaineen paksuus. Puoliintumispaksuus on $d_{1/2} = \tfrac{\ln 2}{\mu}$. Puoliintumispaksuus koskee fotonisäteilyä, koska alfa- ja beetasäteilyllä on kantama eli matka, jonka jälkeen ne pysähtyvät. Galaksien etääntymisnopeus on $v = H_0 d$, ja pienellä punasiirtymällä $v = cz$.
 
-**Annosnopeus** $\dot{H}$ ($\text{Sv/h}$) on ekvivalenttiannos aikayksikköä kohti. Annosnopeus pienenee suojan takana näin: $\dot{H} = \dot{H}_0 \left(\tfrac12\right)^{x/d_{1/2}}$.
-
-```johda
-Annosnopeus $\dot{H}$ pysyy samana koko ajan. Johda ekvivalenttiannos $H$, jonka ihminen saa ajassa $t$.
----
-Käytetään annosnopeuden määritelmää. Annosnopeus on ekvivalenttiannos jaettuna ajalla, jossa annos kertyy:
-
-$$\dot{H} = \frac{H}{t}$$
-
-Kerrotaan yhtälön molemmat puolet ajalla $t$:
-
-$$H = \dot{H} t$$
-
-Ajan pitää olla samassa yksikössä kuin annosnopeuden nimittäjä. Esimerkiksi $\text{Sv/h}$ kertaa $\text{h}$ on $\text{Sv}$.
-```
+**Annosnopeus** $\dot{H}$ ($\text{Sv/h}$) on ekvivalenttiannos aikayksikköä kohti. $t$ on aika, jonka kuluessa annos kertyy. Kaavassa $H = \dot{H} t$ annosnopeus pysyy koko ajan samana. Annosnopeus pienenee suojan takana näin: $\dot{H} = \dot{H}_0 \left(\tfrac12\right)^{x/d_{1/2}}$. Kaava $H = \dot{H} t$ on lisätietoa. Sitä ei ole MAFY-taulukoissa. Kokeessa kaava annetaan tehtävässä, jos sitä tarvitaan.
 
 Pistemäinen lähde säteilee tasaisesti joka suuntaan. Ilma ei vaimenna eli heikennä säteilyä. Etäisyydellä $r_1$ ($\text{m}$) lähteestä annosnopeus on $\dot{H}_1$. Etäisyydellä $r_2$ annosnopeus on $\dot{H}_2$.
 

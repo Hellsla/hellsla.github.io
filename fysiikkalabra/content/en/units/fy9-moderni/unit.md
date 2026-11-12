@@ -586,26 +586,13 @@ where $N$ is the number of undecayed nuclei at the time $t$, $N_0$ the number at
 ```kaavat
 D = \frac{E}{m}
 equivalent dose :: H = w_\text{R} D
++ H = \dot{H} t
 attenuation law :: I = I_0 e^{-\mu x}
 ```
 
 where $D$ is the absorbed dose ($\text{Gy}$), $E$ the absorbed energy, $m$ the mass of the tissue, $H$ the equivalent dose ($\text{Sv}$), $w_\text{R}$ the radiation weighting factor (alpha $20$, beta and gamma $1$), $I_0$ the intensity of the radiation arriving at the surface of the medium and $I$ the intensity of the radiation that passes through, $\mu$ the attenuation coefficient ($1/\text{m}$) and $x$ the thickness of the medium. The half-value thickness is $d_{1/2} = \tfrac{\ln 2}{\mu}$. It applies to photon radiation, because alpha and beta radiation have a range. The recession speed of galaxies is $v = H_0 d$, and for a small redshift $v = cz$.
 
-The **dose rate** $\dot{H}$ ($\text{Sv/h}$) is the equivalent dose per unit time. Behind a shield the dose rate decreases as $\dot{H} = \dot{H}_0 \left(\tfrac12\right)^{x/d_{1/2}}$.
-
-```johda
-The dose rate $\dot{H}$ stays constant. Derive the equivalent dose $H$ that a person receives in the time $t$.
----
-By the definition of the dose rate, it is the equivalent dose divided by the time in which the dose builds up:
-
-$$\dot{H} = \frac{H}{t}$$
-
-Multiply both sides of the equation by the time $t$:
-
-$$H = \dot{H} t$$
-
-The units match when the time is in the same unit as the denominator of the dose rate: $\text{Sv/h}$ times $\text{h}$ is $\text{Sv}$.
-```
+The **dose rate** $\dot{H}$ ($\text{Sv/h}$) is the equivalent dose per unit time, and $t$ is the time over which the dose accumulates at a constant dose rate. Behind a shield the dose rate decreases as $\dot{H} = \dot{H}_0 \left(\tfrac12\right)^{x/d_{1/2}}$. The formula $H = \dot{H} t$ is extra information: it is not in the MAFY tables, and an exam gives it in the task when it is needed.
 
 A point source radiates evenly in all directions, and the air does not attenuate the radiation. At the distance $r_1$ ($\text{m}$) from the source the dose rate is $\dot{H}_1$, and at the distance $r_2$ it is $\dot{H}_2$.
 

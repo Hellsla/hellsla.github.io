@@ -163,7 +163,7 @@ def kartta():
         ("kondensaattori", [(r"Q = CU", "kapasitanssi"), (r"C = \varepsilon_0\varepsilon_\text{r}A/d", "levyt"),
                             (r"E = \tfrac12 CU^2", "energia")]),
         ("komponentit ja turvallisuus", [(r"\Sigma \Delta V = 0", "etuvastus"),
-                                         (r"\eta = P_\text{a}/P_\text{o}", "kenno"), (r"U = RI", "kehon virta")]),
+                                         (r"\eta = P/(GA)", "kenno"), (r"U = RI", "kehon virta")]),
     ]
     hub_y, hub_h, x_box, gh, top = 8, 72, 44, 156, 100
     height = top + 4 * (gh + 16) - 8
@@ -172,8 +172,8 @@ def kartta():
             "jaettuna r toiseen ja voimien vektorisumma. Kenttä ja potentiaali: homogeeninen kenttä U = E kertaa d, kentän "
             "työ W = Q U ja kiihdytyksessä liike-energia E k = puoli m v toiseen. Kondensaattori: kapasitanssi Q = C U, "
             "levykondensaattori C = epsilon nolla epsilon r A jaettuna d:llä ja energia E = puoli C U toiseen. Komponentit "
-            "ja turvallisuus: etuvastus Kirchhoffin 2. laista, summa delta V = 0, aurinkokennon hyötysuhde eta = P a "
-            "jaettuna P o:lla ja kehon läpi kulkeva virta I = U jaettuna R:llä.", width=380, size=22)
+            "ja turvallisuus: etuvastus Kirchhoffin 2. laista, summa delta V = 0, aurinkokennon hyötysuhde eta = P jaettuna "
+            "G A:lla ja kehon läpi kulkeva virta I = U jaettuna R:llä.", width=380, size=22)
     spine = 24
     f.line(spine, hub_y + hub_h, spine, top + 3 * (gh + 16) + 22, RULE, 3)
     f.rect(8, hub_y, 364, hub_h, GOOD_LIGHT, GOOD, 2.5, 12)
