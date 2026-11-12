@@ -124,20 +124,24 @@ def hero():
     f.rect(0, 0, 1200, 24, H.WHITE); f.line(0, 24, 1200, 24, H.RULE, 3)
     f.rect(0, 500, 1200, 100, H.RULE); f.line(0, 500, 1200, 500, H.INK, 3)
     for x in range(0, 1200, 120): f.line(x, 500, x - 40, 600, H.RULE_LIGHT, 2)
+    # Composition tightened (teacher 2026-11-11, illustration audit): the two balloons larger and side by side in the
+    # middle third, the window close behind them, so the subject fills the picture instead of half of it being wall.
     # window
-    f.rect(80, 110, 240, 260, H.grad(f, "fy310h-sky", H.ICE, H.GLASS), H.INK, 3, 4)
-    H.cloud(f, 180, 200, 0.5)
-    f.line(200, 110, 200, 370, H.INK, 3); f.line(80, 240, 320, 240, H.INK, 3)
+    f.rect(210, 96, 260, 280, H.grad(f, "fy310h-sky", H.ICE, H.GLASS), H.INK, 3, 4)
+    H.cloud(f, 310, 190, 0.55)
+    f.line(340, 96, 340, 376, H.INK, 3); f.line(210, 236, 470, 236, H.INK, 3)
 
-    def balloon(cx, cy, fill, light):
-        f.path(f"M{cx},{cy + 96} Q{cx - 84},{cy + 60} {cx - 80},{cy - 10} Q{cx - 74},{cy - 92} {cx},{cy - 94} Q{cx + 74},{cy - 92} {cx + 80},{cy - 10} Q{cx + 84},{cy + 60} {cx},{cy + 96} Z", fill, H.INK, 3)
-        f.path(f"M{cx - 10},{cy + 108} L{cx},{cy + 94} L{cx + 10},{cy + 108} Z", fill, H.INK, 2.5)
-        f.add(f'<ellipse cx="{cx - 34}" cy="{cy - 44}" rx="16" ry="26" transform="rotate(30 {cx - 34} {cy - 44})" fill="{light}" fill-opacity="0.8"/>')
-    balloon(560, 122, H.COLD, H.WHITE)
-    f.path("M560,230 C540,300 590,360 560,420 S570,470 556,480", stroke=H.INK, w=2.5)
-    balloon(860, 398, H.SAND_DARK, H.WHITE)
-    f.add(f'<ellipse cx="860" cy="500" rx="74" ry="10" fill="{H.MUTED}" fill-opacity="0.35"/>')
-    f.path("M870,506 C900,520 940,512 990,522", stroke=H.INK, w=2.5)
+    def balloon(cx, cy, fill, light, s=1.4):
+        P = lambda dx, dy: f"{cx + dx * s:g},{cy + dy * s:g}"
+        f.path(f"M{P(0, 96)} Q{P(-84, 60)} {P(-80, -10)} Q{P(-74, -92)} {P(0, -94)} Q{P(74, -92)} {P(80, -10)} Q{P(84, 60)} {P(0, 96)} Z", fill, H.INK, 3)
+        f.path(f"M{P(-10, 108)} L{P(0, 94)} L{P(10, 108)} Z", fill, H.INK, 2.5)
+        ex, ey = cx - 34 * s, cy - 44 * s
+        f.add(f'<ellipse cx="{ex:g}" cy="{ey:g}" rx="{16 * s:g}" ry="{26 * s:g}" transform="rotate(30 {ex:g} {ey:g})" fill="{light}" fill-opacity="0.8"/>')
+    balloon(590, 158, H.COLD, H.WHITE)                    # helium: its top at the ceiling
+    f.path("M590,309 C570,360 618,400 590,440 S600,474 586,484", stroke=H.INK, w=2.5)
+    balloon(850, 349, H.SAND_DARK, H.WHITE)               # air: its knot on the floor
+    f.add(f'<ellipse cx="850" cy="500" rx="100" ry="12" fill="{H.MUTED}" fill-opacity="0.35"/>')
+    f.path("M862,504 C900,522 950,512 1010,524", stroke=H.INK, w=2.5)
     return f.svg()
 
 

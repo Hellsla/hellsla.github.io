@@ -1,5 +1,5 @@
 """Figures of this lesson (scripts/figlib.py); `python scripts/figures.py fy3-4` writes them into lesson.md."""
-from figlib import Fig, Axes, INK, MUTED, WHITE, RULE, WATER, WATER_LIGHT, GLASS, HEAT, HEAT_LIGHT, COPPER, SAND, SAND_LIGHT, GRAIN, fi
+from figlib import Fig, Axes, INK, MUTED, WHITE, RULE, WATER, WATER_LIGHT, GLASS, HEAT, HEAT_LIGHT, HOT, COPPER, SAND, SAND_LIGHT, GRAIN, fi
 import herolib as H
 
 
@@ -18,8 +18,8 @@ def pressure_area():
         top = ground - bh
         f.tex(cx, 24, title, "middle")
         f.rect(cx - bw / 2, top, bw, bh, COPPER, INK, 2.5, 3)
-        f.arrow(cx, top - 62, cx, top - 3, INK, 4, 18)                  # equal force arrows, equal length
-        f.tex(cx + 14, top - 34, "F", "start")
+        f.arrow(cx, top - 62, cx, top - 3, HOT, 4, 18)                  # equal force arrows, equal length; a force is red (teacher 2026-11-11)
+        f.tex(cx + 14, top - 34, "F", "start", HOT)
         f.line(cx - bw / 2, ground + 1, cx + bw / 2, ground + 1, HEAT, 6)  # the contact area
         by = ground + 36                                                # bracket marking the area A
         f.path(f"M{n_(cx - bw / 2)},{by - 6} V{by + 6} M{n_(cx - bw / 2)},{by} H{n_(cx + bw / 2)} M{n_(cx + bw / 2)},{by - 6} V{by + 6}", stroke=INK, w=2)
@@ -44,8 +44,8 @@ def water_column():
     f.tex(44, 34, r"\text{vesipinta}", "start")
     f.rect(170, 50, 80, 170, WATER, INK, 2, extra='fill-opacity="0.3" stroke-dasharray="7 5"')
     f.line(170, 220, 250, 220, INK, 6)
-    f.arrow(210, 80, 210, 214, INK, 4, 26)
-    f.tex(160, 135, "G", "end", size=30)
+    f.arrow(210, 80, 210, 214, HOT, 4, 26)                                 # a force is red (teacher 2026-11-11)
+    f.tex(160, 135, "G", "end", HOT, size=30)
     f.tex(210, 252, "A", "middle", size=30)
     f.line(275, 50, 275, 220, INK, 2)
     f.line(267, 50, 283, 50, INK, 2)

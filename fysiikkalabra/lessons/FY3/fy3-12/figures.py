@@ -1,5 +1,6 @@
 """Figures of this lesson (scripts/figlib.py); `python scripts/figures.py fy3-12` writes them into lesson.md."""
-from figlib import (Fig, INK, MUTED, WHITE, RULE, RULE_LIGHT, HEAT, HEAT_LIGHT, HOT, HOT_LIGHT, COLD, COLD_LIGHT,
+import math
+from figlib import (Fig, n, GOOD, GOOD_LIGHT, IRON, INK, MUTED, WHITE, RULE, RULE_LIGHT, HEAT, HEAT_LIGHT, HOT, HOT_LIGHT, COLD, COLD_LIGHT,
                     ALUMINIUM, METAL_EDGE, WATER, WATER_LIGHT, SAND, SAND_LIGHT, GRAIN, GLASS)
 
 import herolib as H
@@ -51,31 +52,50 @@ def heat_transfer():
     return f.svg()
 
 
+def _wavy(f, x1, y1, x2, y2, color, w=3, waves=3.5, amp=7, head=14):
+    """A ray of radiation: a wavy line from (x1, y1) with a filled arrowhead at (x2, y2). A copy of fy8-2's wavy(), so
+    the greenhouse effect is drawn the same way in both courses (teacher 2026-11-11, illustration audit)."""
+    L = math.hypot(x2 - x1, y2 - y1); ux, uy = (x2 - x1) / L, (y2 - y1) / L; px, py = -uy, ux
+    run = L - head
+    pts = []
+    for i in range(0, 81):
+        s = run * i / 80
+        o = amp * math.sin(2 * math.pi * waves * s / run) * min(1, s / 10, (run - s) / 10 + 0.2)
+        pts.append(f"{n(x1 + ux * s + px * o)},{n(y1 + uy * s + py * o)}")
+    f.path("M" + " L".join(pts), stroke=color, w=w, extra='stroke-linecap="round"')
+    bx, by = x2 - ux * head, y2 - uy * head; hw = head * 0.5
+    f.path(f"M{n(x2)},{n(y2)} L{n(bx + px * hw)},{n(by + py * hw)} L{n(bx - px * hw)},{n(by - py * hw)} Z", fill=color)
+
+
 def energy_balance():
-    f = Fig("fy312-balance", 300, "Maapallon energiatasapaino, periaatekuva. Auringosta tuleva säteily kulkee ilmakehän "
+    """Drawn as fy8-2/greenhouse, the series' model of the greenhouse effect (teacher 2026-11-11, illustration audit):
+    the sky as the atmosphere, the Sun as a disc, radiation as wavy rays, a greenhouse-gas molecule that sends part of
+    the thermal radiation back down. The content is this chapter's: sunlight in, a part reflected, thermal radiation
+    up, a part of it back."""
+    f = Fig("fy312-balance", 340, "Maapallon energiatasapaino, periaatekuva. Auringosta tuleva säteily kulkee ilmakehän "
             "läpi maanpintaan; osa siitä heijastuu takaisin avaruuteen. Maanpinta säteilee lämpösäteilyä ylöspäin, ja "
             "ilmakehän kasvihuonekaasut säteilevät osan siitä takaisin alas.")
-    f.defs_add(f'<linearGradient id="fy312-ground" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{SAND}"/>'
-               f'<stop offset="1" stop-color="{SAND_LIGHT}"/></linearGradient>')
-    f.defs_add(f'<linearGradient id="fy312-air" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{WHITE}"/>'
-               f'<stop offset="1" stop-color="{COLD_LIGHT}"/></linearGradient>')
-    f.defs_add(f'<radialGradient id="fy312-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="{WHITE}"/>'
-               f'<stop offset="1" stop-color="{HEAT_LIGHT}"/></radialGradient>')
-    f.rect(12, 116, 576, 54, "url(#fy312-air)", MUTED, 2, 0, 'stroke-dasharray="7 5"')
-    f.rect(12, 236, 576, 52, "url(#fy312-ground)", INK, 2.5)
-    f.tex(300, 262, r"\text{maanpinta}", "middle")
-    f.tex(300, 143, r"\text{ilmakehä}", "middle")
-    # sunlight on the left: in, and the reflected part out
-    f.circle(50, 52, 26, "url(#fy312-sun)", HEAT, 2.5)
-    f.tex(88, 36, r"\text{Aurinko}", "start")
-    f.block_arrow(72, 86, 132, 226, HEAT, 12, 30, 24)
-    f.block_arrow(176, 112, 230, 44, HEAT_LIGHT, 10, 28, 22)
-    f.tex(246, 56, r"\text{heijastuu}", "start")
-    # infrared on the right: thermal radiation up, back radiation down
-    f.block_arrow(390, 228, 390, 34, HOT, 12, 30, 24)
-    f.tex(412, 70, r"\text{lämpösäteily}", "start")
-    f.block_arrow(450, 176, 450, 226, HOT_LIGHT, 12, 30, 22)
-    f.tex(472, 201, r"\text{takaisin}", "start")
+    f.defs_add(f'<linearGradient id="fy312-air" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{COLD_LIGHT}"/><stop offset="1" stop-color="{GLASS}"/></linearGradient>')
+    f.rect(12, 12, 576, 262, "url(#fy312-air)")
+    f.rect(12, 274, 576, 54, GOOD_LIGHT, None)
+    f.line(12, 274, 588, 274, GOOD, 3)
+    f.tex(300, 304, r"\text{maanpinta}", "middle", w=140)
+    f.tex(24, 246, r"\text{ilmakehä}", "start", w=110)
+    # sunlight: in to the ground, and the reflected part back out to space
+    H.sun(f, "fy312-sun", 70, 66, r=30, rays=False)
+    f.tex(122, 50, r"\text{Aurinko}", "start", w=110)
+    _wavy(f, 98, 98, 190, 266, HEAT, 3.5, 4, 8)
+    _wavy(f, 214, 266, 290, 40, HEAT_LIGHT, 3.5, 4, 8)
+    f.tex(302, 52, r"\text{heijastuu}", "start", w=120)
+    # thermal radiation up to a greenhouse-gas molecule (O=C=O), which sends it on up and back down
+    _wavy(f, 330, 268, 416, 150, HOT, 3.5, 5, 9)
+    f.tex(370, 250, r"\text{lämpösäteily}", "start", w=150)
+    cx, cy = 450, 118
+    f.circle(cx - 30, cy, 14, HOT_LIGHT, INK, 2); f.circle(cx + 30, cy, 14, HOT_LIGHT, INK, 2); f.circle(cx, cy, 16, IRON, INK, 2)
+    f.tex(cx, cy - 40, r"\text{CO}_2", "middle")
+    _wavy(f, cx + 34, cy + 22, 562, 266, HOT, 3.5, 5, 9)
+    f.tex(496, 192, r"\text{takaisin}", "end", w=100)
+    _wavy(f, cx + 40, cy - 10, 572, 40, HOT, 3.5, 3, 8)
     return f.svg()
 
 

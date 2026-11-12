@@ -32,18 +32,18 @@ Kun voima jakautuu pinnalle, sen vaikutus riippuu pinta-alasta eli siitä, kuink
   <line x1="300" y1="30" x2="300" y2="330" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="7 6"/>
   <foreignObject x="96" y="9.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{pystyssä}$</div></foreignObject>
   <rect x="130" y="120" width="40" height="120" rx="3" fill="#b8622d" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="150" y1="58" x2="150" y2="100" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M150,117 L142,99 L158,99 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <foreignObject x="164" y="71.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$F$</div></foreignObject>
+  <line x1="150" y1="58" x2="150" y2="100" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M150,117 L142,99 L158,99 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="164" y="71.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$F$</div></foreignObject>
   <line x1="130" y1="241" x2="170" y2="241" stroke="#e8590c" stroke-width="6" stroke-linecap="butt"/>
   <path d="M130,270 V282 M130,276 H170 M170,270 V282" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
   <foreignObject x="133.5" y="285.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$A_1$</div></foreignObject>
   <foreignObject x="115" y="317" width="70" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$p_1 = \dfrac{F}{A_1}$</div></foreignObject>
   <foreignObject x="383.5" y="9.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kyljellään}$</div></foreignObject>
   <rect x="390" y="200" width="120" height="40" rx="3" fill="#b8622d" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="450" y1="138" x2="450" y2="180" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M450,197 L442,179 L458,179 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <foreignObject x="464" y="151.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$F$</div></foreignObject>
+  <line x1="450" y1="138" x2="450" y2="180" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M450,197 L442,179 L458,179 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="464" y="151.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$F$</div></foreignObject>
   <line x1="390" y1="241" x2="510" y2="241" stroke="#e8590c" stroke-width="6" stroke-linecap="butt"/>
   <path d="M390,270 V282 M390,276 H510 M510,270 V282" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
   <foreignObject x="408.5" y="285.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$A_2 = 3A_1$</div></foreignObject>
@@ -63,9 +63,9 @@ Tarkastellaan nestettä, joka on levossa. Pinnan alla on vaakasuora pinta, jonka
   <foreignObject x="44" y="19.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{vesipinta}$</div></foreignObject>
   <rect x="170" y="50" width="80" height="170" fill="#2f74b5" stroke="#1f2933" stroke-width="2" fill-opacity="0.3" stroke-dasharray="7 5"/>
   <line x1="170" y1="220" x2="250" y2="220" stroke="#1f2933" stroke-width="6" stroke-linecap="butt"/>
-  <line x1="210" y1="80" x2="210" y2="189" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M210,214 L198.5,188 L221.5,188 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <foreignObject x="136" y="117" width="24" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:30px">$G$</div></foreignObject>
+  <line x1="210" y1="80" x2="210" y2="189" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M210,214 L198.5,188 L221.5,188 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="136" y="117" width="24" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:30px;color:#c92a2a">$G$</div></foreignObject>
   <foreignObject x="198" y="234" width="24" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px">$A$</div></foreignObject>
   <line x1="275" y1="50" x2="275" y2="220" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <line x1="267" y1="50" x2="283" y2="50" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>

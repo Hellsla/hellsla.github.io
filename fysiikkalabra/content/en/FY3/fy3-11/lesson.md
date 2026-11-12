@@ -44,9 +44,9 @@ When a gas expands and pushes a piston, it does work. The gas pushes the piston 
   <rect x="104" y="64" width="458" height="6" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
   <rect x="104" y="190" width="458" height="6" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
   <rect x="413" y="71" width="14" height="118" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="429" y1="130" x2="515" y2="130" stroke="#e8590c" stroke-width="5" stroke-linecap="butt"/>
-  <path d="M536,130 L514,140 L514,120 Z" fill="#e8590c" stroke-linejoin="round"/>
-  <foreignObject x="449" y="85.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$F = pA$</div></foreignObject>
+  <line x1="429" y1="130" x2="515" y2="130" stroke="#c92a2a" stroke-width="5" stroke-linecap="butt"/>
+  <path d="M536,130 L514,140 L514,120 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="449" y="85.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$F = pA$</div></foreignObject>
   <foreignObject x="143" y="115.5" width="74" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{gas},\ p$</div></foreignObject>
   <foreignObject x="318.5" y="115.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\Delta V$</span></div></foreignObject>
   <line x1="76" y1="130" x2="76" y2="82" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
@@ -96,18 +96,21 @@ In combined production of electricity and heat, the heat $Q_2$ of the condenser 
 ### Refrigerator and heat pump
 A refrigerator and a heat pump work the opposite way to a heat engine: they use electrical energy to transfer heat from a cold place to a warm one. A refrigerator transfers heat from inside the cabinet to the room, and an air-source heat pump from the outdoor air to the inside. The heat given out indoors is the sum of the heat taken from outside and the electricity used, so a pump can heat a house with, for example, three times as much heating power as the electric power it uses. The ratio of the heating power to the electric power is called the coefficient of performance. The coefficient of performance is not an efficiency: it can be greater than 1, because part of the heat that comes indoors is transferred from the outdoor air and does not come from the electricity. The pump does not create energy; it transfers it.
 
-<svg data-fig="heat-pump" viewBox="0 0 600 270" role="img" aria-label="The energy flows of a heat pump as arrows whose width shows the power: the electrical energy E_el and the heat Q_outdoors taken from the outdoor air enter the pump, and the pump gives out indoors the heat Q_indoors, which is their sum. The widths of the arrows are to scale: E_el is 20, Q_outdoors is 40 and Q_indoors is 60 units, so the arrow going indoors is as wide as the two incoming arrows together and three times as wide as the electricity arrow." style="max-width:100%;font-size:24px">
-  <rect x="230" y="76" width="130" height="126" rx="12" fill="#eef5f9" stroke="#1f2933" stroke-width="3"/>
-  <foreignObject x="266" y="124.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{pump}$</div></foreignObject>
-  <path d="M16,120 L208,120 L208,124 L230,110 L208,96 L208,100 L16,100 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <path d="M16,178 L208,178 L208,182 L230,158 L208,134 L208,138 L16,138 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M360,169 L532,169 L532,174 L560,139 L532,104 L532,109 L360,109 Z" fill="#e8590c" stroke-linejoin="round"/>
-  <foreignObject x="16" y="59.5" width="186" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{electricity}\ E_\text{el}$</div></foreignObject>
-  <foreignObject x="16" y="191.5" width="233" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{heat from outdoor air}$</div></foreignObject>
-  <foreignObject x="16" y="223.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$Q_\text{outdoors}$</div></foreignObject>
-  <foreignObject x="387.5" y="77.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{heat indoors}$</div></foreignObject>
-  <foreignObject x="406" y="177.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$Q_\text{indoors}$</div></foreignObject>
-  <foreignObject x="393" y="237.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{width shows power}$</div></foreignObject>
+<svg data-fig="heat-pump" viewBox="0 0 600 340" role="img" aria-label="The energy flows of a heat pump as arrows whose width shows the power: the electrical energy E_el and the heat Q_outdoors taken from the outdoor air enter the pump, and the pump gives out indoors the heat Q_indoors, which is their sum. The widths of the arrows are to scale: E_el is 20, Q_outdoors is 40 and Q_indoors is 60 units, so the arrow going indoors is as wide as the two incoming arrows together and three times as wide as the electricity arrow." style="max-width:100%;font-size:24px">
+  <rect x="150" y="12" width="300" height="52" rx="10" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
+  <foreignObject x="208.5" y="23.5" width="183" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{cold outdoor air}$</div></foreignObject>
+  <rect x="150" y="276" width="300" height="52" rx="10" fill="#f2a69c" stroke="#c92a2a" stroke-width="2.5"/>
+  <foreignObject x="202.5" y="287.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{warm indoor space}$</div></foreignObject>
+  <rect x="225" y="118" width="150" height="98" rx="12" fill="#eef5f9" stroke="#1f2933" stroke-width="3"/>
+  <foreignObject x="271" y="152.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{pump}$</div></foreignObject>
+  <path d="M280,64 L280,96 L270,96 L300,118 L330,96 L320,96 L320,64 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M30,177 L203,177 L203,183 L225,167 L203,151 L203,157 L30,157 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <path d="M270,216 L270,250 L258,250 L300,274 L342,250 L330,250 L330,216 Z" fill="#e8590c" stroke-linejoin="round"/>
+  <foreignObject x="344" y="77.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$Q_\text{outdoors}$</div></foreignObject>
+  <foreignObject x="29" y="119.5" width="186" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{electricity}\ E_\text{el}$</div></foreignObject>
+  <foreignObject x="354" y="230.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$Q_\text{indoors}$</div></foreignObject>
+  <foreignObject x="451" y="137.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{arrow width}$</div></foreignObject>
+  <foreignObject x="451" y="167.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{shows power}$</div></foreignObject>
 </svg>
 
 ## Formula: Work done by a gas and efficiency

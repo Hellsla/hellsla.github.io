@@ -28,22 +28,27 @@ def heat_engine():
 
 
 def heat_pump():
-    f = Fig("fy311-pump", 270, "Lämpöpumpun energiavirrat nuolina, joiden leveys kuvaa tehoa: sähköenergia E_s ja "
+    f = Fig("fy311-pump", 340, "Lämpöpumpun energiavirrat nuolina, joiden leveys kuvaa tehoa: sähköenergia E_s ja "
             "ulkoilmasta otettu lämpö Q_ulko tulevat pumppuun, ja pumppu luovuttaa sisälle lämmön Q_sisälle, joka on "
             "niiden summa. Nuolten leveydet ovat mittakaavassa: E_s 20, Q_ulko 40 ja Q_sisälle 60 yksikköä, joten "
             "sisälle lähtevä nuoli on yhtä leveä kuin kaksi tulevaa nuolta yhteensä ja kolme kertaa niin leveä "
             "kuin sähkön nuoli.")
-    f.rect(230, 76, 130, 126, GLASS, INK, 3, 12)
-    f.tex(295, 139, r"\text{pumppu}", "middle")
-    f.block_arrow(16, 110, 230, 110, INK, 20, 28, 22)          # Es: width 20
-    f.block_arrow(16, 158, 230, 158, HEAT_LIGHT, 40, 48, 22)   # Qulko: width 40
-    f.block_arrow(360, 139, 560, 139, HEAT, 60, 70, 28)        # Qsisälle: width 60
-    f.tex(16, 74, r"\text{sähkö}\ E_\text{s}", "start")
-    f.tex(16, 206, r"\text{ulkoilman lämpö}", "start")
-    f.tex(16, 238, r"Q_\text{ulko}", "start")
-    f.tex(460, 92, r"\text{lämpö sisälle}", "middle")
-    f.tex(460, 192, r"Q_\text{sisälle}", "middle")
-    f.tex(588, 252, r"\text{leveys kuvaa tehoa}", "end")
+    # The same structure as heat_engine (teacher 2026-11-11, illustration audit): the source above, the machine in the
+    # middle, the receiver below, each flow's symbol beside its arrow and the note on widths apart on the free side.
+    f.rect(150, 12, 300, 52, COLD_LIGHT, COLD, 2.5, 10)
+    f.tex(300, 38, r"\text{kylmä ulkoilma}", "middle")
+    f.rect(150, 276, 300, 52, HOT_LIGHT, HOT, 2.5, 10)
+    f.tex(300, 302, r"\text{lämmin sisätila}", "middle")
+    f.rect(225, 118, 150, 98, GLASS, INK, 3, 12)
+    f.tex(300, 167, r"\text{pumppu}", "middle")
+    f.block_arrow(300, 64, 300, 118, HEAT_LIGHT, 40, 60, 22)   # Qulko: width 40
+    f.block_arrow(30, 167, 225, 167, INK, 20, 32, 22)          # Es: width 20
+    f.block_arrow(300, 216, 300, 274, HEAT, 60, 84, 24)        # Qsisälle: width 60
+    f.tex(344, 92, r"Q_\text{ulko}", "start")
+    f.tex(122, 134, r"\text{sähkö}\ E_\text{s}", "middle")
+    f.tex(354, 245, r"Q_\text{sisälle}", "start")
+    f.tex(584, 152, r"\text{nuolen leveys}", "end")
+    f.tex(584, 182, r"\text{kuvaa tehoa}", "end")
     return f.svg()
 
 
@@ -83,8 +88,8 @@ def piston_work():
     f.rect(x0 - 6, top - 6, 458, 6, ALUMINIUM, INK, 2.5)
     f.rect(x0 - 6, bot, 458, 6, ALUMINIUM, INK, 2.5)
     f.rect(p2 - 7, top + 1, 14, bot - top - 2, IRON, INK, 2.5)
-    f.arrow(p2 + 9, 130, 536, 130, HEAT, 5, 22)
-    f.tex(478, 100, r"F = pA", "middle")
+    f.arrow(p2 + 9, 130, 536, 130, HOT, 5, 22)                                       # a force is red (teacher 2026-11-11)
+    f.tex(478, 100, r"F = pA", "middle", HOT)
     f.tex(180, 130, r"\text{kaasu},\ p", "middle")
     f.tex(335, 130, r"\Delta V", "middle", bg=True)
     # A: the piston's area, as the height of the cylinder

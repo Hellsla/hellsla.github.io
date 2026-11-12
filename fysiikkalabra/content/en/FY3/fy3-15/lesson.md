@@ -5,6 +5,7 @@
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: a combined heat and power plant in winter. Steam rises from the chimney and the plant, power lines carry electricity away, and district heating pipes run to the city: the red flow pipe carries hot water and the blue return pipe carries cooled water. The windows of the apartment buildings glow warm." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy315h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d0e6fb"/><stop offset="1" stop-color="#ffffff"/></linearGradient><linearGradient id="fy315h-chimney" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#c4ccd4"/></linearGradient><linearGradient id="fy315h-stack" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#c4ccd4"/></linearGradient></defs>
   <rect x="0" y="0" width="1200" height="600" fill="url(#fy315h-sky)"/>
+  <g transform="matrix(1.15 0 0 1.15 -40 4)">
   <path d="M0,380 L15,336 L30.5,380 L39.5,357.5 L48.5,380 L59.5,351.5 L70,380 L85,337.5 L100,380 L115.5,334.5 L131,380 L148,330.5 L164.5,380 L178,343 L191,380 L205,339.5 L219.5,380 L236,330.5 L253,380 L266.5,341 L280.5,380 L293.5,343.5 L306.5,380 L318,347.5 L330,380 L345.5,335 L361,380 L375,340.5 L389,380 L404.5,335.5 L419.5,380 L435.5,333.5 L451.5,380 L464.5,344.5 L477,380 L492.5,335.5 L507.5,380 L523,336.5 L538,380 L551.5,342 L565,380 L575.5,352 L586.5,380 L600.5,340 L614.5,380 L623.5,357.5 L632.5,380 L642,356.5 L651.5,380 L662.5,351.5 L673,380 L690,331 L706.5,380 L717,351.5 L728,380 L741.5,342 L755,380 L766.5,349.5 L777.5,380 L792,339.5 L806,380 L818.5,344.5 L831.5,380 L847.5,333.5 L863.5,380 L880,331 L896.5,380 L911.5,337.5 L926,380 L941,338 L955.5,380 L966.5,350.5 L977.5,380 L990,345.5 L1002.5,380 L1018.5,333 L1034.5,380 L1047.5,343 L1061,380 L1072.5,349.5 L1084,380 L1096.5,344.5 L1109.5,380 L1126,331.5 L1142.5,380 L1158.5,333 L1174.5,380 L1191.5,331 L1208,380 V440 H0 Z" fill="#c4ccd4" stroke-linejoin="round"/>
   <path d="M0,420 Q600,380 1200,420 V600 H0 Z" fill="#ffffff" stroke-linejoin="round"/>
   <rect x="260" y="70" width="50" height="330" fill="url(#fy315h-chimney)" stroke="#1f2933" stroke-width="3"/>
@@ -22,8 +23,8 @@
   <rect x="470" y="210" width="40" height="90" fill="url(#fy315h-stack)" stroke="#1f2933" stroke-width="3"/>
   <path d="M60,420 L80,190 L100,420 M50,220 H110" fill="none" stroke="#1f2933" stroke-width="4" stroke-linejoin="round"/>
   <path d="M0,240 Q40,250 70,220 M110,220 Q130,250 150,262" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M540,390 C700,390 760,470 1200,470" fill="none" stroke="#c92a2a" stroke-width="16" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M540,410 C700,410 760,500 1200,500" fill="none" stroke="#1971c2" stroke-width="16" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M540,390 C660,390 700,456 790,456 H884 V430" fill="none" stroke="#c92a2a" stroke-width="16" stroke-linejoin="round" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M540,410 C650,410 690,476 790,476 H912 V430" fill="none" stroke="#1971c2" stroke-width="16" stroke-linejoin="round" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
   <rect x="860" y="240" width="120" height="200" fill="#e3dccb" stroke="#1f2933" stroke-width="3"/>
   <rect x="876" y="260" width="22" height="26" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
   <rect x="876" y="304" width="22" height="26" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
@@ -67,6 +68,7 @@
   <rect x="1172" y="324" width="22" height="26" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
   <rect x="1172" y="368" width="22" height="26" fill="#eef5f9" stroke="#1f2933" stroke-width="1.5"/>
   <rect x="1172" y="412" width="22" height="26" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
+  </g>
 </svg>
 
 ## Key idea
@@ -76,25 +78,24 @@ A power plant does not produce energy but converts it. The chemical energy of fu
 
 In a condensing power plant the chain is fuel, boiler, turbine and condenser, generator and transformer, electricity grid. In the boiler the energy of the fuel is transferred to steam, and part of it leaves with the flue gases. In the turbine the steam expands and turns the generator, and in the condenser the steam condenses back into water. About half of the energy of the fuel is transferred to the sea through the condenser. The figure shows an example plant whose band widths are drawn to scale.
 
-<svg viewBox="0 0 600 400" role="img" aria-label="Flow diagram (Sankey) of the energy chain of a condensing power plant. The fuel power of 500 MW flows from left to right as a band that narrows step by step. In the boiler 40 MW goes away with the flue gases, in the turbine and condenser 248 MW goes to the sea as heat, and in the generator and transformer 12 MW is lost. The electricity obtained is 200 MW, that is 40 per cent of the fuel power. The widths of the bands and arrows are to scale, 100 MW is 40 pixels." style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy315-loss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#ffc078"/></linearGradient><clipPath id="fy315-work"><rect x="349.4" y="0" width="400" height="400"/></clipPath></defs>
-  <path d="M160,270 C168,270 168,254 176,254 V300 H160 Z" fill="url(#fy315-loss)" stroke="#e8590c" stroke-width="1.5"/><polygon points="148,300 188,300 168,324" fill="#ffc078" stroke="#e8590c" stroke-width="1.5"/>
-  <path d="M250,254 C300,254 299.4,154.6 349.4,154.6 V330 H250 Z" fill="url(#fy315-loss)" stroke="#e8590c" stroke-width="1.5"/><polygon points="236,330 363.4,330 299.7,366" fill="#ffc078" stroke="#e8590c" stroke-width="1.5"/>
-  <path d="M430,154.6 C432,154.6 431.7,150 434.7,150 V250 H430 Z" fill="#ffc078" stroke="#e8590c" stroke-width="1.5"/><polygon points="420,250 444.7,250 432.3,272" fill="#ffc078" stroke="#e8590c" stroke-width="1.5"/>
-  <path d="M20,70 H510 V150 H434.7 C431.7,150 432,154.6 430,154.6 H349.4 C299.4,154.6 300,254 250,254 H176 C168,254 168,270 160,270 H20 Z" fill="#e8590c"/>
-  <path d="M20,70 H510 V150 H434.7 C431.7,150 432,154.6 430,154.6 H349.4 C299.4,154.6 300,254 250,254 H176 C168,254 168,270 160,270 H20 Z" fill="#1f2933" clip-path="url(#fy315-work)"/>
-  <polygon points="510,56 510,164 550,110" fill="#1f2933"/>
-  <foreignObject x="10" y="12" width="320" height="44"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$\text{fuel } 500\,\text{MW}$</div></foreignObject>
-  <foreignObject x="330" y="12" width="262" height="44"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:right">$\text{electricity } 200\,\text{MW}$</div></foreignObject>
-  <foreignObject x="4" y="276" width="148" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:right">$\text{flue gases}$</div></foreignObject>
-  <foreignObject x="4" y="316" width="148" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:right">$40\,\text{MW}$</div></foreignObject>
-  <foreignObject x="372" y="290" width="224" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$\text{condenser}$</div></foreignObject>
-  <foreignObject x="372" y="328" width="224" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$248\,\text{MW}$</div></foreignObject>
-  <foreignObject x="446" y="160" width="154" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$\text{generator and}$</div></foreignObject>
-  <foreignObject x="446" y="196" width="154" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$\text{transformer}$</div></foreignObject>
-  <foreignObject x="446" y="232" width="150" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$12\,\text{MW}$</div></foreignObject>
-  <path d="M20,386 H60 M20,378 V394 M60,378 V394" stroke="#1f2933" stroke-width="2.5" fill="none"/>
-  <foreignObject x="70" y="368" width="200" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$=100\,\text{MW}$</div></foreignObject>
+<svg data-fig="sankey" viewBox="0 0 600 420" role="img" aria-label="Flow diagram (Sankey) of the energy chain of a condensing power plant. The fuel power of 500 MW flows from left to right as a band that narrows step by step. In the boiler 40 MW goes away with the flue gases, in the turbine and condenser 248 MW goes to the sea as heat, and in the generator and transformer 12 MW is lost. The electricity obtained is 200 MW, that is 40 per cent of the fuel power. The widths of the bands and arrows are to scale, 100 MW is 40 pixels." style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy315s-in" gradientUnits="userSpaceOnUse" x1="30" y1="0" x2="440" y2="0"><stop offset="0" stop-color="#e3dccb"/><stop offset="1" stop-color="#c9c2b2"/></linearGradient><linearGradient id="fy315s-ok" gradientUnits="userSpaceOnUse" x1="440" y1="0" x2="566" y2="0"><stop offset="0" stop-color="#b2f2bb"/><stop offset="1" stop-color="#2b8a3e"/></linearGradient><linearGradient id="fy315s-loss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
+  <path d="M30,76 H440 V156 L400,156 L400,160.8 L230,160.8 L230,260 L120,260 L120,276 L30,276 Z" fill="url(#fy315s-in)" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M120,260 A36,36 0 0 1 156,296 V322 H164 L148,337.92 L132,322 H140 V296 A20,20 0 0 0 120,276 Z" fill="url(#fy315s-loss)" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M230,160.8 A119.2,119.2 0 0 1 349.2,280 V334 H357.2 L299.6,359.904 L242,334 H250 V280 A20,20 0 0 0 230,260 Z" fill="url(#fy315s-loss)" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M400,156 A24.8,24.8 0 0 1 424.8,180.8 V236 H432.8 L422.4,250.576 L412,236 H420 V180.8 A20,20 0 0 0 400,160.8 Z" fill="url(#fy315s-loss)" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M440,76 H536 V68 L566,116 L536,164 V156 H440 Z" fill="url(#fy315s-ok)" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <foreignObject x="30" y="19.5" width="250" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{fuel } 500\,\text{MW}$</div></foreignObject>
+  <foreignObject x="346" y="19.5" width="230" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#2b8a3e">$\text{electricity } 200\,\text{MW}$</div></foreignObject>
+  <foreignObject x="73" y="353.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{flue gases}$</div></foreignObject>
+  <foreignObject x="93" y="385.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$40\,\text{MW}$</div></foreignObject>
+  <foreignObject x="366" y="285.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{condenser}$</div></foreignObject>
+  <foreignObject x="366" y="319.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$248\,\text{MW}$</div></foreignObject>
+  <foreignObject x="450" y="181.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{generator and}$</div></foreignObject>
+  <foreignObject x="450" y="213.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{transformer}$</div></foreignObject>
+  <foreignObject x="450" y="245.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$12\,\text{MW}$</div></foreignObject>
+  <path d="M410,400 H450 M410,392 V408 M450,392 V408" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <foreignObject x="460" y="385.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$= 100\,\text{MW}$</div></foreignObject>
 </svg>
 
 The biggest loss is not mainly caused by friction or poor technology. Most of it is the waste heat of the steam cycle, which a heat engine cannot avoid completely: part of the heat must be released to a colder environment, as was seen in the chapter Work done by a gas and the heat engine. A hydropower plant, a wind turbine and a solar panel are not heat engines, so they do not have this compulsory loss: the efficiency of a hydropower plant is about $90\,\%$, of a wind turbine $40$–$45\,\%$ and of a solar panel about $20\,\%$. However, the denominator of these numbers is the power of flowing water, wind or radiation and not bought fuel, so they cannot be compared directly with the efficiency of a combustion plant.

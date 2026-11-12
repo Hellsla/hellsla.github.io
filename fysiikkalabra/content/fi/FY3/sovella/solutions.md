@@ -46,24 +46,24 @@
   <foreignObject x="70" y="13.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$T\ ({}^\circ\text{C})$</div></foreignObject>
   <foreignObject x="35" y="355.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$10$</div></foreignObject>
   <foreignObject x="70" y="379.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$0$</div></foreignObject>
-  <polyline points="80,310 83,307.5 86.5,304.5 89.5,302 92.5,299 96,296.5 99,294 102,291.5 105,288.5 108.5,286 111.5,283.5 114.5,281 118,278.5 121,276 124,273.5 127.5,271 130.5,268.5 133.5,266 136.5,263.5 140,261.5 143,259 146,256.5 149.5,254.5 152.5,252 155.5,249.5 159,247.5 162,245 165,243 168,240.5 171.5,238.5 174.5,236.5 177.5,234 181,232 184,230 187,227.5 190.5,225.5 193.5,223.5 196.5,221.5 200,219.5 203,217 206,215 209,213 212.5,211 215.5,209 218.5,207 222,205.5 225,203.5 228,201.5 231.5,199.5 234.5,197.5 237.5,195.5 240.5,194 244,192 247,190 250,188.5 253.5,186.5 256.5,184.5 259.5,183 263,181 266,179.5 269,177.5 272,176 275.5,174 278.5,172.5 281.5,171 285,169 288,167.5 291,166 294.5,164 297.5,162.5 300.5,161 304,159.5 307,157.5 310,156 313,154.5 316.5,153 319.5,151.5 322.5,150 326,148.5 329,147 332,145.5 335.5,144 338.5,142.5 341.5,141 344.5,139.5 348,138 351,136.5 354,135 357.5,134 360.5,132.5 363.5,131 367,129.5 370,128 373,127 376,125.5 379.5,124 382.5,123 385.5,121.5 389,120.5 392,119 395,117.5 398.5,116.5 401.5,115 404.5,114 408,112.5 411,111.5 414,110 417,109 420.5,107.5 423.5,106.5 426.5,105.5 430,104 433,103 436,102 439.5,100.5 442.5,99.5 445.5,98.5 448.5,97 452,96 455,95 458,94" fill="none" stroke="#6b7480" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
-  <polyline points="80,310 269,147" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="9 6"/>
+  <polyline points="80,310 83,307.5 86.5,304.5 89.5,302 92.5,299 96,296.5 99,294 102,291.5 105,288.5 108.5,286 111.5,283.5 114.5,281 118,278.5 121,276 124,273.5 127.5,271 130.5,268.5 133.5,266 136.5,263.5 140,261.5 143,259 146,256.5 149.5,254.5 152.5,252 155.5,249.5 159,247.5 162,245 165,243 168,240.5 171.5,238.5 174.5,236.5 177.5,234 181,232 184,230 187,227.5 190.5,225.5 193.5,223.5 196.5,221.5 200,219.5 203,217 206,215 209,213 212.5,211 215.5,209 218.5,207 222,205.5 225,203.5 228,201.5 231.5,199.5 234.5,197.5 237.5,195.5 240.5,194 244,192 247,190 250,188.5 253.5,186.5 256.5,184.5 259.5,183 263,181 266,179.5 269,177.5 272,176 275.5,174 278.5,172.5 281.5,171 285,169 288,167.5 291,166 294.5,164 297.5,162.5 300.5,161 304,159.5 307,157.5 310,156 313,154.5 316.5,153 319.5,151.5 322.5,150 326,148.5 329,147 332,145.5 335.5,144 338.5,142.5 341.5,141 344.5,139.5 348,138 351,136.5 354,135 357.5,134 360.5,132.5 363.5,131 367,129.5 370,128 373,127 376,125.5 379.5,124 382.5,123 385.5,121.5 389,120.5 392,119 395,117.5 398.5,116.5 401.5,115 404.5,114 408,112.5 411,111.5 414,110 417,109 420.5,107.5 423.5,106.5 426.5,105.5 430,104 433,103 436,102 439.5,100.5 442.5,99.5 445.5,98.5 448.5,97 452,96 455,95 458,94" fill="none" stroke="#e8590c" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="80,310 269,147" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="9 6"/>
   <polyline points="281,168 458,91.5" fill="none" stroke="#1971c2" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="9 6"/>
-  <circle cx="80" cy="310" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="109.5" cy="285.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="139" cy="262" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="168.5" cy="240.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="198" cy="220" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="227.5" cy="202" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="257.5" cy="184.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="287" cy="167" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="316.5" cy="153" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="346" cy="139" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="375.5" cy="126" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="405" cy="113" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="434.5" cy="102" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="92" y="97.5" width="233" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$\text{tangentti: } 0{,}85\,\tfrac{\text{K}}{\text{min}}$</div></foreignObject>
-  <foreignObject x="350" y="163.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#1971c2">$0{,}43\,\tfrac{\text{K}}{\text{min}}$</div></foreignObject>
+  <circle cx="80" cy="310" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="109.5" cy="285.5" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="139" cy="262" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="168.5" cy="240.5" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="198" cy="220" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="227.5" cy="202" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="257.5" cy="184.5" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="287" cy="167" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="316.5" cy="153" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="346" cy="139" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="375.5" cy="126" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="405" cy="113" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="434.5" cy="102" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <foreignObject x="92" y="97.5" width="258" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{tangentti: } 0{,}85\,\text{K/min}$</div></foreignObject>
+  <foreignObject x="325" y="163.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#1971c2">$0{,}43\,\text{K/min}$</div></foreignObject>
 </svg>
 
 **Mallivastaus:** Pisteet eivät ole suoralla: lämpötila nousee aluksi noin $0{,}8\,\text{K}$ minuutissa, mutta lopussa enää noin $0{,}4\,\text{K}$ minuutissa. Siksi pisteiden kautta piirretään tasainen, loiveneva käyrä eikä suoraa tai murtoviivaa. Kuvaan on piirretty myös b- ja d-kohdan apusuorat.
