@@ -85,36 +85,40 @@ def hero():
 
 
 def emtube():
-    """The e/m tube seen along the axis of the coils: B out of the page, the beam on a circle, v and F."""
-    f = Fig("fy14fo-em", 380, "Sketch, not to scale: the glass bulb of the e/m tube seen along the axis of the two coils. "
+    """The e/m tube seen along the axis of the coils: B out of the page, the beam on a circle, v and F.
+    Light correction (teacher 2026-11-11, illustration audit): the labels were about twice the series' size, because the
+    figure was drawn 420 units wide with 28 px text and the page widens it to the column. Now the same drawing on the
+    series' 600-unit width (every coordinate times k), its labels at 24 px."""
+    k = 600 / 420
+    f = Fig("fy14fo-em", 543, "Sketch, not to scale: the glass bulb of the e/m tube seen along the axis of the two coils. "
             "The magnetic field points out of the page, shown by green circles with a dot and labelled B. An electron leaves "
             "the electron gun at the bottom moving to the right and travels on a circle of radius r. At one point of the "
             "circle a blue arrow shows its velocity v along the circle and a red arrow shows the magnetic force F, which "
-            "points to the centre of the circle.", width=420, size=28)
-    cx, cy, R, r = 210, 195, 172, 98
-    f.add(f'<circle cx="{cx}" cy="{cy}" r="{R}" fill="{GLASS}" fill-opacity="0.5" stroke="{METAL_EDGE}" stroke-width="3"/>')
+            "points to the centre of the circle.", width=600, size=24)
+    cx, cy, R, r = 210 * k, 195 * k, 172 * k, 98 * k
+    f.add(f'<circle cx="{n(cx)}" cy="{n(cy)}" r="{n(R)}" fill="{GLASS}" fill-opacity="0.5" stroke="{METAL_EDGE}" stroke-width="3"/>')
     for x, y in ((92, 108), (290, 62), (80, 230), (150, 50), (330, 290), (100, 312)):
-        f.add(f'<circle cx="{x}" cy="{y}" r="12" fill="{WHITE}" stroke="{GOOD}" stroke-width="3"/>')
-        f.circle(x, y, 4, GOOD)
-    f.tex(274, 64, r"\overline{B}", "end", color=GOOD)
+        f.add(f'<circle cx="{n(x * k)}" cy="{n(y * k)}" r="15" fill="{WHITE}" stroke="{GOOD}" stroke-width="3"/>')
+        f.circle(x * k, y * k, 5, GOOD)
+    f.tex(290 * k - 26, 62 * k, r"\overline{B}", "end", color=GOOD)
     # the beam: a circle that starts at the gun's exit at the bottom
-    oy = cy + 88                                  # the lowest point of the orbit, where the beam leaves the gun
+    oy = cy + 88 * k                              # the lowest point of the orbit, where the beam leaves the gun
     ocx, ocy = cx, oy - r
-    f.add(f'<circle cx="{ocx}" cy="{n(ocy)}" r="{r}" fill="none" stroke="{BEAM}" stroke-width="10" stroke-opacity="0.3"/>')
-    f.add(f'<circle cx="{ocx}" cy="{n(ocy)}" r="{r}" fill="none" stroke="{BEAM}" stroke-width="3.5"/>')
-    f.rect(cx - 44, oy - 9, 40, 18, IRON, INK, 2, 3)            # the gun, firing to the right
-    f.tex(cx - 24, oy + 36, r"\text{gun}", "middle")
+    f.add(f'<circle cx="{n(ocx)}" cy="{n(ocy)}" r="{n(r)}" fill="none" stroke="{BEAM}" stroke-width="12" stroke-opacity="0.3"/>')
+    f.add(f'<circle cx="{n(ocx)}" cy="{n(ocy)}" r="{n(r)}" fill="none" stroke="{BEAM}" stroke-width="4"/>')
+    f.rect(cx - 44 * k, oy - 9 * k, 40 * k, 18 * k, IRON, INK, 2, 4)      # the gun, firing to the right
+    f.tex(cx - 24 * k, oy + 42, r"\text{gun}", "middle")
     # radius
-    f.circle(ocx, ocy, 4, INK)
+    f.circle(ocx, ocy, 5, INK)
     f.line(ocx, ocy, ocx - r, ocy, INK, 2, "7 5")
-    f.tex(ocx - r / 2, ocy - 20, "r", "middle")
+    f.tex(ocx - r / 2, ocy - 22, "r", "middle")
     # velocity and force at the rightmost point of the orbit
     px, py = ocx + r, ocy
-    f.circle(px, py, 7, COLD, WHITE, 2)
-    f.arrow(px, py, px, py - 80, COLD, 4, 16)
-    f.tex(px + 12, py - 66, r"\overline{v}", "start", color=COLD)
-    f.arrow(px, py, px - 66, py, HOT, 4, 16)
-    f.tex(px - 36, py + 26, r"\overline{F}", "middle", color=HOT)
+    f.circle(px, py, 8, COLD, WHITE, 2)
+    f.arrow(px, py, px, py - 80 * k, COLD, 4, 16)
+    f.tex(px + 14, py - 66 * k, r"\overline{v}", "start", color=COLD)
+    f.arrow(px, py, px - 66 * k, py, HOT, 4, 16)
+    f.tex(px - 36 * k, py + 30, r"\overline{F}", "middle", color=HOT)
     return f.svg()
 
 

@@ -56,14 +56,16 @@ def hero():
 
 
 def heating():
-    """A tokamak cross-section and the three ways to heat its plasma: the current (ohmic), a neutral beam, radio waves."""
-    f = Fig("fy14bm-heating", 560, "Diagram of three ways to heat a tokamak plasma, drawn on a cross-section of the plasma ring "
+    """A tokamak cross-section and the three ways to heat its plasma: the current (ohmic), a neutral beam, radio waves.
+    Light correction (teacher 2026-11-11, illustration audit): labels at the series' 24 px, each method's label at its
+    own source, the radio-wave source named as an antenna, the figure tightened around the ring."""
+    f = Fig("fy14bm-heating", 492, "Diagram of three ways to heat a tokamak plasma, drawn on a cross-section of the plasma ring "
             "seen from above. In the middle, an orange ring of plasma. A dark arrow along the ring shows the plasma current: "
             "ohmic heating. From the right, outside the ring, a box labelled neutral beam sends a short arrow and a row of dark dots, fast neutral "
             "atoms, into the plasma band, where the dots fade out: the atoms are caught in the plasma. From the lower left, an antenna sends curved wave lines into the plasma: radio waves.",
-            width=600, size=28)
-    f.rect(0, 0, 600, 560, WHITE)
-    cx, cy, rx, ry = 260, 290, 180, 150                 # the plasma band reaches from rx - 32 to rx + 32 (x 408-472 at the right)
+            width=600, size=24)
+    f.rect(0, 0, 600, 492, WHITE)
+    cx, cy, rx, ry = 260, 250, 180, 150                 # the plasma band reaches from rx - 32 to rx + 32 (x 408-472 at the right)
     f.add(f'<ellipse cx="{cx}" cy="{cy}" rx="{rx}" ry="{ry}" fill="none" stroke="{HEAT_LIGHT}" stroke-width="64"/>')
     f.add(f'<ellipse cx="{cx}" cy="{cy}" rx="{rx}" ry="{ry}" fill="none" stroke="{HEAT}" stroke-width="6" stroke-opacity="0.5"/>')
     # current arrow along the ring (ohmic heating)
@@ -71,21 +73,21 @@ def heating():
     f.path("M" + " L".join(f"{n(x)},{n(y)}" for x, y in pts), stroke=INK, w=5)
     x2, y2 = pts[-1]; x1, y1 = pts[-3]
     f.arrow(x1, y1, x2 + (x2 - x1) * 0.8, y2 + (y2 - y1) * 0.8, INK, 5, 20)
-    f.tex(cx, cy - 210, r"\text{current: ohmic heating}", "middle", size=28, w=420)
-    # neutral beam from the right
+    f.tex(cx, 38, r"\text{current: ohmic heating}", "middle", w=360)      # just above the band (outer top y 68)
     # neutral beam: the injector box stands outside the ring; the fast atoms fly into the plasma band and are caught there
-    f.rect(500, 255, 90, 70, IRON, INK, 2, 6)
-    f.tex(545, 196, r"\text{neutral}", "middle", size=28, w=110)
-    f.tex(545, 230, r"\text{beam}", "middle", size=28, w=110)
-    f.arrow(500, 290, 478, 290, INK, 4, 14)
+    f.rect(500, cy - 35, 90, 70, IRON, INK, 2, 6)
+    f.tex(545, cy - 92, r"\text{neutral}", "middle", w=100)
+    f.tex(545, cy - 62, r"\text{beam}", "middle", w=100)
+    f.arrow(500, cy, 478, cy, INK, 4, 14)
     for k, x in enumerate((462, 446, 430, 414)):     # inside the band (x 408-472); fading: ionised and caught
-        f.add(f'<circle cx="{x}" cy="290" r="8" fill="{INK}" fill-opacity="{1 - 0.22 * k:.2f}"/>')
-    # radio waves from the lower left
-    f.rect(20, 470, 90, 34, COPPER, INK, 2, 4)
+        f.add(f'<circle cx="{x}" cy="{cy}" r="8" fill="{INK}" fill-opacity="{1 - 0.22 * k:.2f}"/>')
+    # radio waves from the lower left: the antenna, named, and its waves running into the band
+    ay = 440
+    f.rect(20, ay, 90, 34, COPPER, INK, 2, 4)
     for k in range(3):
         r = 50 + 34 * k
-        f.add(f'<path d="M{n(65 + r * 0.30)},{n(470 - r * 0.95)} A{r},{r} 0 0,1 {n(65 + r * 0.95)},{n(470 - r * 0.30)}" fill="none" stroke="{COPPER}" stroke-width="4"/>')
-    f.tex(130, 534, r"\text{radio waves}", size=28, w=220)
+        f.add(f'<path d="M{n(65 + r * 0.30)},{n(ay - r * 0.95)} A{r},{r} 0 0,1 {n(65 + r * 0.95)},{n(ay - r * 0.30)}" fill="none" stroke="{COPPER}" stroke-width="4"/>')
+    f.tex(124, ay + 17, r"\text{antenna: radio waves}", w=260)
     return f.svg()
 
 

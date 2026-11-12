@@ -180,11 +180,11 @@ A big project has a **baseline**: the official plan for its schedule and cost. I
   <line x1="535.5" y1="226" x2="535.5" y2="300" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 5"/>
   <circle cx="414" cy="226" r="11" fill="#1971c2" stroke="#ffffff" stroke-width="2.5"/>
   <path d="M535.5,212 L549.5,226 L535.5,240 L521.5,226 Z" fill="#c92a2a" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round"/>
-  <foreignObject x="511" y="176.5" width="49" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px;color:#c92a2a"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{D–T}$</span></div></foreignObject>
+  <foreignObject x="511" y="246.5" width="49" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px;color:#c92a2a"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{D–T}$</span></div></foreignObject>
   <foreignObject x="200.5" y="66.5" width="157" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px;color:#1971c2"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{first plasma}$</span></div></foreignObject>
   <foreignObject x="315" y="246.5" width="197" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px;color:#1971c2"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{research starts}$</span></div></foreignObject>
-  <line x1="446" y1="132" x2="504" y2="192" stroke="#c92a2a" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M511.5,200 L499.5,195 L507,187.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <line x1="446" y1="132" x2="515" y2="203" stroke="#c92a2a" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M522.5,211 L510.5,206 L518,198.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="358" y="159.5" width="107" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:26px;color:#c92a2a"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$+4\ \text{years}$</span></div></foreignObject>
   <foreignObject x="181" y="10.5" width="116" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px;color:#6b7480"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{Nov. 2026}$</span></div></foreignObject>
 </svg>

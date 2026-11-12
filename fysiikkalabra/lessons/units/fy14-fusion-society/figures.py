@@ -105,10 +105,10 @@ def cycle():
     f.rect(4, 86, 92, 44, COLD_LIGHT, COLD, 2, 4)
     f.tex(50, 108, r"\text{water}", "middle")
     f.arrow(96, 118, 186, 170, COLD, 3)
-    f.tex(158, 112, r"\text{D}", "middle", COLD)
+    f.tex(100, 160, r"\text{D}", "middle", COLD)     # under the arrow, outside the blanket (light correction 2026-11-11: was on its outline)
     # heat out to the right
     f.block_arrow(520, 190, 594, 190, HEAT_LIGHT, 18, 34, 18)
-    f.tex(596, 150, r"\text{heat}", "end", HEAT)
+    f.tex(588, 150, r"\text{heat}", "end", HEAT)
     # the breeding reaction under the blanket
     f.tex(300, 400, r"\text{in the blanket:}", "middle", GOOD)
     f.tex(300, 440, r"\text{n} + {}^{6}_{3}\text{Li} \to \text{T} + {}^{4}_{2}\text{He}", "middle", GOOD)
