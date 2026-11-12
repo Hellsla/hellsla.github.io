@@ -123,6 +123,8 @@ jobs:
         run: python scripts/kilparobo.py && python scripts/test_kilparobo.py
       - name: LUMA-tutor's pages (five parts, 23 · 75 min, workshop cards and filters, ten templates, nothing stored, print, widths; teacher 2026-11-09)
         run: python scripts/lumatutor.py && python scripts/test_lumatutor.py
+      - name: the units outside the physics modules share one folder layout (jaksot/, scripts/jaksot.py)
+        run: python scripts/jaksot.py && python scripts/test_jaksot.py
   checks-2:   # the page components in a browser, the review rules, the inquiry engine
     runs-on: ubuntu-latest
     container: { image: "mcr.microsoft.com/playwright/python:v1.65.0-noble", options: "--ipc=host" }   # Chromium and its system packages preinstalled (see the header)

@@ -5,7 +5,7 @@ teacher's file byte for byte: never redrawn, recoloured or cropped; LOGO_SHA256 
 shows only the mark (rays and anvil, teacher 2026-11-08) on the same white rounded square as the module icons: MARK,
 cut from the logo by mark_svg() with its paths copied unchanged and the name's two paths left out.
 
-ahjo.json is the source (Finnish); content/<lang>/ahjo.json has the same ids in another language, and a language
+jaksot/ahjo/jakso.json is the source (Finnish; "ahjo.json" below, the layout is scripts/jaksot.py's); jaksot/ahjo/<lang>/jakso.json has the same ids in another language, and a language
 without one shows the Finnish (fi-easy). build.py renders three pages in every language:
   ahjo.html               the start page: what Ahjo is, Ahjo 1 and Ahjo 2, the bank's topics, the equipment, safety,
                           and the studies linked to Ahjo
@@ -28,7 +28,7 @@ Fields of ahjo.json (texts in the file's language):
                              {id, category, title, text, status, courses, subjects?}
                                                                     an Ahjo guide "ahjo-<name>": "planned" is listed as
                                                                     coming and has no page; "draft" and "ready" need
-                                                                    their text in content/<lang>/ahjo/<id>.md and become
+                                                                    their text in jaksot/ahjo/[<lang>/]kohteet/<id>.md and become
                                                                     <id>.html. "draft" (teacher 2026-11-08) is a written
                                                                     guide nobody has yet tried on Ahjo's own devices: the
                                                                     page and every list mark it "Luonnos", and only the
@@ -45,7 +45,7 @@ Fields of ahjo.json (texts in the file's language):
   equipment                [{id, icon, title, items}]: equipment groups; what the school's list names, no models
   safety                   [{id, title, covers, status?, approved_by?, date?}]: the safety topics. Status
                            "valmisteilla" (default) shows the topic as being prepared; "hyvaksytty" needs approved_by,
-                           date and the text in content/<lang>/ahjo/turvallisuus/<id>.md (the Finnish as fallback).
+                           date and the text in jaksot/ahjo/[<lang>/]kohteet/turvallisuus/<id>.md (the Finnish as fallback).
                            Only the school's responsible staff approve a topic; nothing here is an approval system
   projects                 [{id, status, title, summary, problem, skills, materials, success, next, level, lessons, courses,
                            subjects, inspiration: [{source, title, url}]}]: the project bank's cards (teacher 2026-11-08),
@@ -59,9 +59,10 @@ Fields of ahjo.json (texts in the file's language):
 import hashlib, json, re, sys, pathlib, html as _h
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from courses import ROOT
-import i18n
+import i18n, jaksot
 
-SOURCE = ROOT / "ahjo.json"
+JAKSO = "ahjo"                         # jaksot/ahjo/ (scripts/jaksot.py)
+SOURCE = jaksot.source(JAKSO)
 LOGO = ROOT / "assets/shared/brand/ahjo-makerspace-logo.svg"
 LOGO_SRC = "brand/ahjo-makerspace-logo.svg"
 LOGO_SHA256 = "53cb75c6c45b7adef3d57c59c75cdc2bb220d25ccf75faa71858a27d59823e26"   # Ahjo_Makerspace_logo.svg as the teacher gave it (2026-11-08)
@@ -177,21 +178,13 @@ def art(name):
 
 
 def icon(name, cls="ahjo-icon"):
-    return (f'<svg class="{cls}" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">'
-            f'<path d="{ICONS[name]}"/></svg>')
+    return jaksot.icon_svg(ICONS, name, cls)
 
 
-def data_file(lang=i18n.SOURCE):
-    f = ROOT / "content" / lang / "ahjo.json"
-    return f if lang != i18n.SOURCE and f.is_file() else SOURCE
-
-
-def load(lang=i18n.SOURCE):
-    return json.loads(data_file(lang).read_text()) if SOURCE.is_file() else None
-
-
-def guide_file(gid, lang): return next((f for f in (ROOT / "content" / lang / "ahjo" / f"{gid}.md", ROOT / "content" / i18n.SOURCE / "ahjo" / f"{gid}.md") if f.is_file()), None)
-def safety_file(sid, lang): return next((f for f in (ROOT / "content" / lang / "ahjo" / "turvallisuus" / f"{sid}.md", ROOT / "content" / i18n.SOURCE / "ahjo" / "turvallisuus" / f"{sid}.md") if f.is_file()), None)
+def data_file(lang=i18n.SOURCE): return jaksot.data_file(JAKSO, lang)
+def load(lang=i18n.SOURCE): return jaksot.load(JAKSO, lang)
+def guide_file(gid, lang): return jaksot.item_file(JAKSO, f"{gid}.md", lang)                      # jaksot/ahjo/[<lang>/]kohteet/<id>.md, the Finnish as fallback
+def safety_file(sid, lang): return jaksot.item_file(JAKSO, f"turvallisuus/{sid}.md", lang)
 
 
 def item_name(it): return it if isinstance(it, str) else it["name"]
@@ -222,7 +215,7 @@ def validate(lessons, investigations, guides, planned_codes, local_codes, module
                        [len(g["items"]) for g in d["equipment"]], [(len(c.get("goals", [])), len(c.get("lessons", [])), [(l.get("guides", []), bool(l.get("milestone")), bool(l.get("start")), sorted(l.get("levels", {})), bool(l.get("output_plus")), bool(l.get("final"))) for l in c.get("lessons", [])], len(c.get("deepening", [])), (c["start"]["minutes"], len(c["start"]["materials"]), len(c["start"]["steps"])) if c.get("start") else None, len(c["final"]["options"]) if c.get("final") else None, [x["minutes"] for x in c["snacks"]["items"]] if c.get("snacks") else None, bool(c.get("flex")), [len(x["lessons"]) for x in c.get("units", [])], [(len(l.get("needs", [])), l.get("safety"), bool(l.get("safety_note")), bool(l.get("peer")), l.get("starters", []), bool(l.get("goal")), bool(l.get("wait"))) for l in c.get("lessons", [])], bool(c.get("pitch")), len(c.get("assessment", {}).get("items", [])), len(d["ui"].get("license_check", []))) for c in d["courses"]], [s["id"] for s in d["safety"]], [(f["id"], f["file"]) for f in d.get("starters", [])], [l["course"] for l in d["links"]], sorted(d["ui"]),
                        [(p["id"], p.get("art"), p["status"], p["level"], p["lessons"], p["courses"], [i["url"] for i in p["inspiration"]], len(p["skills"]), len(p["materials"]), len(p["subjects"])) for p in d.get("projects", [])],
                        [(x["id"], x["minutes"], x["lesson"], bool(x.get("induction")), len(x["subjects"]), len(x["materials"]), sorted(x["levels"]), x.get("guide")) for x in d.get("challenges", [])])
-    files = [SOURCE] + sorted((ROOT / "content").glob("*/ahjo.json"))
+    files = [SOURCE] + jaksot.translations(JAKSO)
     for f in files:
         name = f.relative_to(ROOT)
         try: d = json.loads(f.read_text())
@@ -299,7 +292,7 @@ def validate(lessons, investigations, guides, planned_codes, local_codes, module
                 if r.get("status") in PAGED:
                     lang = "fi" if f == SOURCE else f.parent.name
                     g = guide_file(rid, lang)
-                    if not g: errs.append(f"{name}: {rid}: {r['status']} but content/fi/ahjo/{rid}.md is missing"); continue
+                    if not g: errs.append(f"{name}: {rid}: {r['status']} but jaksot/ahjo/kohteet/{rid}.md is missing"); continue
                     if g.parent.parent.name != lang: continue     # falls back to the Finnish text
                     heads = re.findall(r"^## (.+?)\s*$", g.read_text(), re.M)
                     if heads != [d["ui"]["guide_quick"]] + d["ui"]["guide_sections"]:
@@ -322,7 +315,7 @@ def validate(lessons, investigations, guides, planned_codes, local_codes, module
             st = s.get("status", "valmisteilla")
             if st not in SAFETY_STATUSES: errs.append(f"{name}: safety {s['id']}: status must be one of {SAFETY_STATUSES}")
             if st == "hyvaksytty" and not (s.get("approved_by") and s.get("date") and safety_file(s["id"], i18n.SOURCE)):
-                errs.append(f"{name}: safety {s['id']}: approved needs approved_by, date and content/fi/ahjo/turvallisuus/{s['id']}.md")
+                errs.append(f"{name}: safety {s['id']}: approved needs approved_by, date and jaksot/ahjo/kohteet/turvallisuus/{s['id']}.md")
         cids = [x.get("id") for x in d.get("challenges", [])]
         if len(set(cids)) != len(cids): errs.append(f"{name}: repeated challenge ids")
         for x in d.get("challenges", []):
@@ -892,9 +885,9 @@ def figure_module(gid):
 
 
 def figure_texts(gid, lang):
-    """{Finnish text: translation} of a guide's figures in `lang` (content/<lang>/ahjo/<id>.figures.json), or None."""
-    f = ROOT / "content" / lang / "ahjo" / f"{gid}.figures.json"
-    return json.loads(f.read_text()) if lang != i18n.SOURCE and f.is_file() else None
+    """{Finnish text: translation} of a guide's figures in `lang` (jaksot/ahjo/<lang>/kohteet/<id>.figures.json), or None."""
+    f = jaksot.item_file(JAKSO, f"{gid}.figures.json", lang, fallback=False) if lang != i18n.SOURCE else None
+    return json.loads(f.read_text()) if f else None
 
 
 def draw(gid, name, lang, mod=None):

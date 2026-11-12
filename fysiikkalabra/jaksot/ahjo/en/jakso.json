@@ -1,4 +1,5 @@
 {
+  "jakso": {"id": "ahjo", "status": "live", "theme": "ahjo"},
   "title": "Ahjo Makerspace",
   "eyebrow": "Kiviruukin lukio's makerspace",
   "lead": "Ahjo is Kiviruukin lukio's shared space for making: a cross-curricular STEAM learning environment where ideas become models, prototypes and solutions.",
@@ -1649,7 +1650,8 @@
       "title": "Robotics",
       "items": [
         "LEGO and/or VEX robotics kits",
-        "Robotics solutions based on Arduino and Raspberry Pi"
+        "Robotics solutions based on Arduino and Raspberry Pi",
+        "Light C0-class camera drones with FPV goggles and motion controllers (2)"
       ]
     },
     {

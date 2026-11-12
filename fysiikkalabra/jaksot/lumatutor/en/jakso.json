@@ -1,4 +1,5 @@
 {
+  "jakso": {"id": "lumatutor", "status": "live", "theme": "kiviruukki"},
   "_note": "LUMA tutor in English, translated from lumatutor.json (the Finnish source). Same shape; ids, numbers, links and file names stay as in the Finnish.",
   "ui": {
     "nav_label": "Parts of LUMA tutor",

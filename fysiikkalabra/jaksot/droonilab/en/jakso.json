@@ -1,0 +1,12 @@
+{
+  "jakso": {
+    "id": "droonilab",
+    "status": "planned",
+    "theme": "kiviruukki"
+  },
+  "front": {
+    "icon": "DROONILAB",
+    "title": "Droonilab",
+    "text": "Build, program and fly a drone."
+  }
+}
