@@ -56,7 +56,7 @@ fy1-5	387	+ 0{,}0088602\,\tfrac{\text{AU}}{\text{vrk}} \cdot 2922\,\text{vrk}	+ 
 fy1-5	387	= 119{,}0\,\text{AU} + 25{,}89\,\text{AU}	= 119.0\,\text{AU} + 25.89\,\text{AU}					
 fy1-5	387	= 144{,}89\,\text{AU}	= 144.89\,\text{AU}					
 fy1-6	580	a = \frac{\Delta v}{\Delta t}	a = \frac{\Delta v}{\Delta t}	keskikiihtyvyys	average acceleration	MAFY	Mekaniikan kaavoja	MAFY vektorina; opettaja 2026-11-12: lisätään, vektorimerkintä jätetään pois
-fy1-6	580	v = a\,t	v = a\,t					
+fy1-6	580	\Delta v = a\,\Delta t	\Delta v = a\,\Delta t	=	=			
 fy1-6	586	v = g\,t	v = g\,t					
 fy1-6	657	v = g\,t	v = g\,t					
 fy1-6	668	v = g\,t	v = g\,t					
