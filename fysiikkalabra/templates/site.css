@@ -155,6 +155,7 @@ li{margin:.4rem 0}
 .fig-tex{font-size:.85em;line-height:1.25;color:inherit;white-space:nowrap}.fig-tex .katex{font-size:1.1em}
 .fig-tex[style*="font-size"] .katex{font-size:1em}   /* a figlib label (scripts/figlib.py) is exactly as large as the font-size its box sets */
 article svg{max-width:100%;height:auto;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:.4rem}
+article.unit svg[data-fig="kartta"][viewBox^="0 0 380 "]{width:420px}article.unit svg[data-fig="kartta"][viewBox^="0 0 400 "]{width:440px}   /* a unit's concept map is drawn phone-wide (380 or 400 units) and would otherwise fill the column, its labels 1,6 times body size on a laptop; at about 1,1 times its drawing the labels match the text, and the inline max-width:100% still shrinks it on a phone (teacher 2026-11-12) */
 article svg.fig-hero{display:block;width:100%;padding:0;margin:0 0 1.4rem;background:#f6f1e6}   /* the chapter's opening illustration under the Miksi question (figlib Fig hero) */
 article .katex svg{max-width:none;height:inherit;background:none;border:0;border-radius:0;padding:0}   /* KaTeX draws \sqrt and stretchy arrows as svg: the figure frame above must not box them (2026-10-29, fy4-2) */
 
