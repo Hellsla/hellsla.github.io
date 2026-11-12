@@ -158,7 +158,7 @@ Moduulin ilmiöt liittyvät kahteen kenttään. **Magneettikenttä** $\overline{
 
 Kokeen tehtävissä kannattaa ensin kysyä: mikä muuttuu? Jos vuo ei muutu, jännitettä ei synny. Kun valo siirtyy aineesta toiseen, taajuus säilyy eli pysyy samana. Nopeus ja aallonpituus kuitenkin muuttuvat. Valon värit sekä kirkkaat ja tummat kohdat selittyvät joko taittumisella tai interferenssillä. Interferenssi tarkoittaa, että aallot yhdistyvät ja vahvistavat tai heikentävät toisiaan. Tehtävässä on tunnistettava, kummasta ilmiöstä on kyse.
 
-Nyt voimme vastata alun kysymykseen. Kaapelia pitkin siirretään mantereelta $40\,\text{kW}$:n teho. Kaapelin resistanssi on $0{,}50\,\Omega$. Jos jännite olisi $230\,\text{V}$, kaapelissa kulkisi virta $I = \tfrac{P}{U} \approx 174\,\text{A}$. Silloin lämmöksi muuttuisi $RI^2 \approx 15\,\text{kW}$ eli $38\,\%$ tehosta. Jännitteellä $20\,\text{kV}$ virta on vain $2{,}0\,\text{A}$, ja häviö on $2{,}0\,\text{W}$. Häviö tarkoittaa tehoa, joka muuttuu lämmöksi eikä tule perille. Muuntajat nostavat jännitteen mantereella ja laskevat sen saaressa.
+Nyt voimme vastata alun kysymykseen. Kaapelia pitkin siirretään mantereelta $40\,\text{kW}$:n teho. Kaapelin resistanssi on $0{,}50\,\Omega$. Jos jännite olisi $230\,\text{V}$, kaapelissa kulkisi virta $I = \tfrac{P}{U} \approx 174\,\text{A}$. Silloin kaapelin resistanssissa lämmöksi muuttuisi noin $15\,\text{kW}$ eli $38\,\%$ tehosta. Häviöteho johdetaan kohdassa *Induktio ja vaihtovirta*. Jännitteellä $20\,\text{kV}$ virta on vain $2{,}0\,\text{A}$, ja häviö on $2{,}0\,\text{W}$. Häviö tarkoittaa tehoa, joka muuttuu lämmöksi eikä tule perille. Muuntajat nostavat jännitteen mantereella ja laskevat sen saaressa.
 
 <svg data-fig="siirto" viewBox="0 0 600 360" role="img" aria-label="Kaavakuva mittakaavassa: sama 40 kilowatin teho siirretään kaapelilla. Kaapelin resistanssi on 0,50 ohmia. Ylempi palkki: jännitteellä 230 volttia virta on 174 ampeeria. Palkin ruskeanpunainen osa on teho, joka muuttuu kaapelissa lämmöksi. Se on 15 kilowattia eli 38 prosenttia koko palkista. Alempi palkki: jännitteellä 20 kilovolttia virta on 2,0 ampeeria. Lämmöksi muuttuu vain 2,0 wattia eli 0,005 prosenttia. Palkissa tämä osa on ohuempi kuin viiva." style="max-width:100%;font-size:24px">
   <foreignObject x="194.5" y="7.5" width="211" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$P = 40\,\text{kW},\ R = 0{,}50\,\Omega$</div></foreignObject>
@@ -185,13 +185,14 @@ Nyt voimme vastata alun kysymykseen. Kaapelia pitkin siirretään mantereelta $4
 
 ```kaavat
 varattuun hiukkaseen kohdistuva magneettinen voima :: F_\text{M} = QvB_\perp
-r = \frac{mv}{QB}
 suoraan johtimeen kohdistuva magneettinen voima :: F_\text{M} = I\ell B_\perp
 suoran virtajohtimen magneettivuon tiheys :: B = \frac{\mu_0}{2\pi r}\,I
 pitkän käämin magneettivuon tiheys :: B = N\,\frac{\mu_0}{\ell}\,I
 ```
 
-missä $F_\text{M}$ on magneettinen voima ($\text{N}$), $Q$ varaus ($\text{C}$), $v$ vauhti ($\text{m/s}$), $B$ magneettivuon tiheys ($\text{T}$), $\alpha$ nopeuden tai johtimen ja kentän välinen kulma, $B_\perp = B\sin\alpha$ se osa kentästä, joka on kohtisuorassa nopeutta tai johdinta vastaan, $m$ massa ($\text{kg}$), $r$ ympyräradan säde tai etäisyys johtimesta ($\text{m}$), $I$ virta ($\text{A}$), $\ell$ johtimen tai käämin pituus ($\text{m}$), $N$ kierrosten lukumäärä ja $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$. Säteen kaava pätee, kun nopeus on kohtisuorassa homogeenista kenttää vastaan. Homogeeninen kenttä on joka kohdassa samanlainen. Lisäksi nopeuden on oltava pieni verrattuna valon nopeuteen. Magneettinen voima ei muuta vauhtia. Johtimen kaava pätee pitkälle suoralle johtimelle. Käämin kaava pätee pitkän käämin keskellä.
+missä $F_\text{M}$ on magneettinen voima ($\text{N}$), $Q$ varaus ($\text{C}$), $v$ vauhti ($\text{m/s}$), $B$ magneettivuon tiheys ($\text{T}$), $\alpha$ nopeuden tai johtimen ja kentän välinen kulma, $B_\perp = B\sin\alpha$ se osa kentästä, joka on kohtisuorassa nopeutta tai johdinta vastaan, $r$ etäisyys johtimesta ($\text{m}$), $I$ virta ($\text{A}$), $\ell$ johtimen tai käämin pituus ($\text{m}$), $N$ kierrosten lukumäärä ja $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$. Magneettinen voima ei muuta vauhtia. Johtimen kaava pätee pitkälle suoralle johtimelle. Käämin kaava pätee pitkän käämin keskellä.
+
+Varattu hiukkanen liikkuu homogeenisessa magneettikentässä. Homogeeninen kenttä on joka kohdassa samanlainen. Hiukkasen massa on $m$ ($\text{kg}$), varaus $Q$ ja vauhti $v$. Nopeus on kohtisuorassa kenttää vastaan. Silloin magneettinen voima on koko ajan kohtisuorassa nopeutta vastaan, ja hiukkanen kulkee ympyrärataa. Radan säde on $r$ ($\text{m}$).
 
 <svg data-fig="ympyra" viewBox="0 0 600 420" role="img" aria-label="Kaavakuva: positiivinen hiukkanen homogeenisessa magneettikentässä. Kenttä osoittaa paperiin sisään (vihreät ristit). Hiukkasen rata on ympyrä, joka on piirretty katkoviivalla. Hiukkanen kiertää ympyrää vastapäivään. Radalla on neljä kohtaa. Niissä sininen nopeusnuoli on radan suuntainen. Punainen nuoli on magneettinen voima. Se osoittaa ympyrän keskipisteeseen, kohtisuoraan nopeutta vastaan. Säde r on merkitty keskipisteestä rataan." style="max-width:100%;font-size:24px">
   <line x1="33" y1="27" x2="47" y2="41" stroke="#2b8a3e" stroke-width="2.4" stroke-linecap="butt"/>
@@ -280,10 +281,27 @@ missä $F_\text{M}$ on magneettinen voima ($\text{N}$), $Q$ varaus ($\text{C}$),
   <circle cx="110" cy="214" r="12" fill="#f2a69c" stroke="#1f2933" stroke-width="2"/>
   <foreignObject x="101" y="202" width="18" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$+$</div></foreignObject>
   <foreignObject x="334" y="343.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\overline{v}$</div></foreignObject>
-  <foreignObject x="264" y="299.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_\text{m}$</div></foreignObject>
+  <foreignObject x="264" y="299.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_\text{M}$</div></foreignObject>
   <foreignObject x="453" y="387.5" width="137" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#2b8a3e"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\overline{B}\ \text{paperiin}$</span></div></foreignObject>
-  <foreignObject x="470" y="25.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$r = mv/(qB)$</div></foreignObject>
 </svg>
+
+```johda
+Varattu hiukkanen liikkuu vauhdilla $v$ kohtisuoraan homogeenista magneettikenttää $B$ vastaan. Hiukkasen massa on $m$ ja varaus $Q$. Johda hiukkasen ympyräradan säde $r$.
+---
+Magneettinen voima on kohtisuorassa nopeutta vastaan. Siksi voima ei muuta vauhtia. Se muuttaa vain liikkeen suuntaa. Hiukkanen on siis tasaisessa ympyräliikkeessä. Magneettinen voima on ainoa voima, joka vaikuttaa hiukkaseen. Newtonin 2. lain mukaan voima antaa hiukkaselle keskeiskiihtyvyyden $a_\text{n} = \tfrac{v^2}{r}$:
+
+$$F_\text{M} = ma_\text{n} = m\frac{v^2}{r}$$
+
+Nopeus on kohtisuorassa kenttää vastaan. Siksi $B_\perp = B$. Varattuun hiukkaseen kohdistuva magneettinen voima on silloin $F_\text{M} = QvB$. Sijoitetaan voima yhtälöön:
+
+$$QvB = m\frac{v^2}{r}$$
+
+Jaetaan yhtälön molemmat puolet $v$:llä. Sitten ratkaistaan säde:
+
+$$r = \frac{mv}{QB}$$
+
+Tässä $Q$ on varauksen itseisarvo. Tulos pätee, kun vauhti on pieni verrattuna valon nopeuteen. Lisäksi painovoiman pitää olla hyvin pieni verrattuna magneettiseen voimaan.
+```
 
 ### Induktio ja vaihtovirta
 
@@ -292,10 +310,29 @@ käämiin indusoituva jännite :: e = -N\frac{\Delta\Phi}{\Delta t}
 generaattorissa käämiin indusoituvan sinimuotoisen vaihtojännitteen huippuarvo :: u_0 = NAB\cdot 2\pi f
 sinimuotoisen vaihtojännitteen tehollinen arvo :: U_\text{eff} = \frac{u_0}{\sqrt{2}}
 muuntaja :: \frac{N_1}{N_2} = \frac{U_1}{U_2} \approx \frac{I_2}{I_1}
-P_\text{h} = RI^2
 ```
 
-missä $e$ on induktiojännite ($\text{V}$), $\Phi = BA$ magneettivuo ($\text{Wb}$), kun kenttä on kohtisuorassa pintaa $A$ vastaan, $u_0$ generaattorin jännitteen huippuarvo, $f$ pyörimistaajuus ($\text{Hz}$), $U_\text{eff}$ ja $u_0$ tehollinen arvo ja huippuarvo, indeksit $1$ ja $2$ muuntajan ensiö- ja toisiopuoli ja $P_\text{h}$ siirtojohdon häviöteho, kun $I = \tfrac{P}{U}$. Miinusmerkki on Lenzin laki: induktiovirta vastustaa vuon muutosta. Kun tanko liikkuu kentässä, sen jännite on $e = vBl$. Muuntajan yhtälö koskee vaihtojännitettä. Virtojen suhde on tasan yhtä suuri vain ideaalisessa muuntajassa. Ideaalisessa muuntajassa ei ole häviöitä.
+missä $e$ on induktiojännite ($\text{V}$), $\Phi = BA$ magneettivuo ($\text{Wb}$), kun kenttä on kohtisuorassa pintaa $A$ vastaan, $u_0$ generaattorin jännitteen huippuarvo, $f$ pyörimistaajuus ($\text{Hz}$), $U_\text{eff}$ ja $u_0$ tehollinen arvo ja huippuarvo, indeksit $1$ ja $2$ muuntajan ensiö- ja toisiopuoli. Miinusmerkki on Lenzin laki: induktiovirta vastustaa vuon muutosta. Kun tanko liikkuu kentässä, sen jännite on $e = vBl$. Muuntajan yhtälö koskee vaihtojännitettä. Virtojen suhde on tasan yhtä suuri vain ideaalisessa muuntajassa. Ideaalisessa muuntajassa ei ole häviöitä.
+
+Siirtojohtoa pitkin siirretään teho $P$ ($\text{W}$). Siirtojännite on $U$ ($\text{V}$), ja johdon resistanssi on $R$ ($\Omega$). Osa tehosta muuttuu johdossa lämmöksi. Tätä tehoa kutsutaan häviötehoksi $P_\text{h}$ ($\text{W}$). Häviöteho riippuu virrasta, joka kulkee johdossa.
+
+```johda
+Siirtojohtoa pitkin siirretään teho $P$ jännitteellä $U$. Johdon resistanssi on $R$. Johda johdon häviöteho $P_\text{h}$ ensin virran $I$ avulla ja sitten tehon $P$ ja jännitteen $U$ avulla.
+---
+Johdossa kulkeva virta saadaan siirrettävästä tehosta. Tehonkulutus johtimessa on $P = UI$. Siksi
+
+$$I = \frac{P}{U}$$
+
+Siirtojännite $U$ ei ole johdon yli. Johdon päiden välinen jännite on jännitehäviö johtimessa eli $RI$. Johdossa lämmöksi muuttuva teho on tämän jännitteen ja virran tulo:
+
+$$P_\text{h} = RI \cdot I = RI^2$$
+
+Sijoitetaan virta tähän yhtälöön:
+
+$$P_\text{h} = R\left(\frac{P}{U}\right)^2 = \frac{RP^2}{U^2}$$
+
+Häviö on kääntäen verrannollinen siirtojännitteen neliöön. Oletetaan, että muuntaja nostaa siirtojännitteen $10$-kertaiseksi. Silloin virta pienenee kymmenesosaan, ja häviö pienenee sadasosaan.
+```
 
 ### Valo
 
@@ -303,19 +340,62 @@ missä $e$ on induktiojännite ($\text{V}$), $\Phi = BA$ magneettivuo ($\text{Wb
 aaltoliikkeen perusyhtälö :: c = f\lambda
 Wienin siirtymälaki :: \lambda_\text{max} = \frac{b}{T}
 taittumislaki (Snellin laki) :: \frac{\sin\alpha_1}{\sin\alpha_2} = \frac{v_1}{v_2} = \frac{n_2}{n_1}
-\sin\alpha_\text{r} = \frac{n_2}{n_1}
 hilayhtälö :: d\sin\alpha = n\lambda
 I = I_0\cos^2\theta
 ```
 
-missä $c = 3{,}00 \cdot 10^8\,\text{m/s}$, $f$ taajuus, $\lambda$ aallonpituus, $T$ absoluuttinen lämpötila ($\text{K}$), $b = 2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}$, $n = \tfrac{c}{v}$ taitekerroin ja $v$ valon nopeus aineessa, $\alpha_1$ tulokulma ja $\alpha_2$ taitekulma normaalista, $\alpha_\text{r}$ rajakulma, kun $n_1 > n_2$, $d$ hilavakio, hilayhtälössä $\alpha$ maksimin suunta ja $n = 0, 1, 2, \ldots$ kertaluku ja $I_0$ polarisoituneen valon intensiteetti ennen analysaattoria. Normaali on suora, joka on kohtisuorassa rajapintaa vastaan. Malusin laissa $\theta$ on kahden suunnan välinen kulma: polarisaation suunnan ja analysaattorin läpäisysuunnan. Ohuessa kalvossa matkaero on $2nd$, kun valo tulee lähes kohtisuoraan. Jos vain toinen heijastus kääntää aallon, $2nd = \left(k + \tfrac12\right)\lambda$ antaa vahvistavan interferenssin. Jos molemmat heijastukset kääntävät aallon, ehto on $2nd = k\lambda$.
+missä $c = 3{,}00 \cdot 10^8\,\text{m/s}$, $f$ taajuus, $\lambda$ aallonpituus, $T$ absoluuttinen lämpötila ($\text{K}$), $b = 2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}$, $n = \tfrac{c}{v}$ taitekerroin ja $v$ valon nopeus aineessa, $\alpha_1$ tulokulma ja $\alpha_2$ taitekulma normaalista, $d$ hilavakio, hilayhtälössä $\alpha$ maksimin suunta ja $n = 0, 1, 2, \ldots$ kertaluku ja $I_0$ polarisoituneen valon intensiteetti ennen analysaattoria. Normaali on suora, joka on kohtisuorassa rajapintaa vastaan. Malusin laissa $\theta$ on kahden suunnan välinen kulma: polarisaation suunnan ja analysaattorin läpäisysuunnan. Ohuessa kalvossa matkaero on $2nd$, kun valo tulee lähes kohtisuoraan. Jos vain toinen heijastus kääntää aallon, $2nd = \left(k + \tfrac12\right)\lambda$ antaa vahvistavan interferenssin. Jos molemmat heijastukset kääntävät aallon, ehto on $2nd = k\lambda$.
+
+Valo voi tulla aineesta, jossa taitekerroin on suurempi, aineeseen, jossa taitekerroin on pienempi ($n_1 > n_2$). Silloin taitekulma on suurempi kuin tulokulma. Rajakulma $\alpha_\text{r}$ on se tulokulma, jolla taitekulma on $90^\circ$. Kun tulokulma on suurempi kuin rajakulma, valo kokonaisheijastuu eli heijastuu kokonaan takaisin.
+
+<svg data-fig="rajakulma" viewBox="0 0 600 330" role="img" aria-label="Kaavakuva, ei lukuarvoja. Alhaalla on aine, jonka taitekerroin n 1 on suurempi. Ylhäällä on aine, jonka taitekerroin n 2 on pienempi. Pohjalla on lamppu. Se lähettää kaksi valonsädettä rajapintaan. Kohtiin, joissa säteet osuvat pintaan, on piirretty pinnan normaali katkoviivana. Vasemman säteen tulokulma on rajakulma alfa r. Sen taittunut säde kulkee pitkin rajapintaa. Taitekulma alfa 2 on siis 90 astetta. Heikko osa valosta heijastuu takaisin. Oikean säteen tulokulma on suurempi kuin rajakulma. Valo ei taitu ylempään aineeseen. Koko säde heijastuu takaisin. Tätä kutsutaan kokonaisheijastumiseksi." style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy9mv-rk-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient></defs>
+  <rect x="12" y="150" width="576" height="168" fill="url(#fy9mv-rk-water)"/>
+  <line x1="12" y1="150" x2="588" y2="150" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="269.5" y1="56" x2="269.5" y2="236" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <path d="M110,290 L269.5,150" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M194.5,216 L188.5,229 L180.5,220 Z" fill="#e64980"/>
+  <line x1="424.5" y1="56" x2="424.5" y2="236" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <path d="M110,290 L424.5,150" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M272.5,217.5 L263.5,228.5 L258.5,217.5 Z" fill="#e64980"/>
+  <path d="M269.5,147 L394.5,147" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M338,147 L325,153 L325,141 Z" fill="#e64980"/>
+  <path d="M269.5,150 L315,189.5" fill="none" stroke="#e64980" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.6"/>
+  <path d="M239.5,176.5 A40,40 0 0,0 269.5,190" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <foreignObject x="226" y="195.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\alpha_\text{r}$</div></foreignObject>
+  <path d="M269.5,116 A34,34 0 0,1 303.5,150" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <foreignObject x="309.5" y="81.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\alpha_2 = 90^\circ$</div></foreignObject>
+  <path d="M424.5,150 L584,221" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M509.5,188 L495.5,188 L500.5,177 Z" fill="#e64980"/>
+  <path d="M393.5,164 A34,34 0 0,0 424.5,184" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <foreignObject x="389.5" y="19.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\alpha_1 > \alpha_\text{r}$</div></foreignObject>
+  <rect x="94" y="288" width="32" height="18" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="110" cy="286" r="11" fill="#ffc078" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="24" y="85.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$n_2$</div></foreignObject>
+  <foreignObject x="24" y="171.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$n_1$</div></foreignObject>
+  <foreignObject x="314" y="275.5" width="270" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#ffffff">$\text{kokonaisheijastuminen}$</div></foreignObject>
+</svg>
+
+```johda
+Valo tulee aineesta, jonka taitekerroin on $n_1$. Se osuu rajapintaan, jonka toisella puolella on aine, jonka taitekerroin on $n_2 < n_1$. Johda kokonaisheijastumisen rajakulma $\alpha_\text{r}$.
+---
+Taittumislaki (Snellin laki) kertoo, miten tulokulma $\alpha_1$ ja taitekulma $\alpha_2$ liittyvät toisiinsa:
+
+$$\frac{\sin\alpha_1}{\sin\alpha_2} = \frac{n_2}{n_1}$$
+
+Rajakulmalla taittunut säde kulkee pitkin rajapintaa. Silloin $\alpha_1 = \alpha_\text{r}$ ja $\alpha_2 = 90^\circ$. Tiedetään, että $\sin 90^\circ = 1$. Siksi saadaan
+
+$$\sin\alpha_\text{r} = \frac{n_2}{n_1}$$
+
+Jos tulokulma on suurempi, taittumislaista tulisi $\sin\alpha_2 > 1$. Se on mahdotonta. Silloin valo ei taitu toiseen aineeseen. Se heijastuu kokonaan takaisin.
+```
 
 ## Yleisiä virheitä {Virheet}
 
 - **Voima kentän suuntaan.** Magneettinen voima on kohtisuorassa nopeutta ja kenttää vastaan. Negatiiviseen varaukseen voima osoittaa vastakkaiseen suuntaan.
 - **Suuri kenttä, suuri jännite.** Induktiojännite riippuu siitä, kuinka nopeasti vuo muuttuu. Se ei riipu vuon suuruudesta.
 - **Lenz vastustaa kenttää.** Induktiovirta vastustaa vuon muutosta. Esimerkiksi rengas vetää magneettia, joka loittonee eli menee kauemmas.
-- **Häviö kaavasta $\tfrac{U^2}{R}$.** Siirtojännite ei ole johdon yli. Laske ensin $I = \tfrac{P}{U}$ ja sitten $RI^2$.
+- **Häviö kaavasta $\tfrac{U^2}{R}$.** Siirtojännite ei ole johdon yli. Laske ensin virta $I = \tfrac{P}{U}$. Laske sitten häviöteho johdon resistanssista ja virrasta.
 - **Huippuarvo ja tehollinen arvo sekaisin.** Pistorasian $230\,\text{V}$ on tehollinen arvo.
 - **Kulma pinnasta.** Tulokulma ja taitekulma mitataan normaalista.
 - **Pieni kulma hilassa.** Laske kulma ensin tangentista $\tan\theta = \tfrac{x}{L}$. Laske sini vasta sitten.

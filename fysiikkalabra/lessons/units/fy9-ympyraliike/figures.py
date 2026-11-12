@@ -11,12 +11,14 @@ geo         the hook answered to scale, seen from above the North Pole: the Eart
             same line 6 h later turned with the Earth
 tilanteet   three force diagrams for the Kaava section: a plank on two supports (at rest), a car at the top of a bump
             and a satellite (only gravity), each with what the forces add up to
+kaarre      the car in a flat curve for "Johda itse", seen from behind: the weight, the normal force and the static
+            friction towards the centre of the curve, the acceleration towards the centre, the velocity into the page
 """
 import math
 import figlib
 from figlib import (Fig, INK, MUTED, WHITE, RULE, RULE_LIGHT, GLASS, SAND_LIGHT, SAND, SAND_DARK, HEAT_LIGHT, HEAT, HOT,
                     COLD, COLD_LIGHT, ICE, IRON, ALUMINIUM, METAL_EDGE, COPPER, n)
-from fbd import FBD
+from fbd import FBD, ground, VELOCITY
 import herolib as H
 
 figlib.set_language({}, ",")
@@ -100,20 +102,21 @@ def hero():
 
 def kartta():
     """The concept map, stacked for a phone: the method at the top, a spine down the left and three boxes (equilibrium,
-    circular motion, gravitation), each with three laws and a grey word beside each."""
+    circular motion, gravitation), each with three rows and a grey word beside each (teacher 2026-11-12: only MAFY's
+    formulas; the net force in circular motion, the field strength g and the orbital speed are "Johda itse" tasks)."""
     f = Fig("fy9yl-kartta", 620, "Käsitekartta. Ylhäällä solmu: voimakuvio ensin, sitten Newtonin toinen laki summa F = m a. Siitä lähtee alas "
             "kolme haaraa. Tasapaino: momentti M = F r, voimien summa on nolla, joten kappale ei etene, ja momenttien summa "
             "on nolla, joten se ei kierry. Ympyräliike: ratanopeus v = omega r, normaalikiihtyvyys a n = v toiseen jaettuna "
-            "r:llä osoittaa keskipisteeseen, ja liikeyhtälö summa F = m v toiseen jaettuna r:llä. Gravitaatio: vetovoima F "
-            "g = gamma m 1 m 2 jaettuna r toiseen, kentän voimakkuus g = gamma M jaettuna r toiseen ja satelliitin "
-            "ratanopeus v = neliöjuuri gamma M jaettuna r:llä.", width=380, size=20)
+            "r:llä osoittaa keskipisteeseen, ja liikeyhtälössä kokonaisvoima antaa normaalikiihtyvyyden. Gravitaatio: "
+            "vetovoima F g = gamma m 1 m 2 jaettuna r toiseen, paino G = m g vektoreina, ja satelliitille gravitaatiovoima "
+            "antaa normaalikiihtyvyyden.", width=380, size=20)
     groups = [
         ("tasapaino", [(r"M = Fr", "momentti"), (r"\Sigma\overline{F} = \overline{0}", "ei etene"),
                        (r"\Sigma M = 0", "ei kierry")]),
         ("ympyräliike", [(r"v = \omega r", "ratanopeus"), (r"a_\text{n} = v^2/r", "keskipisteeseen"),
-                         (r"\Sigma F = mv^2/r", "liikeyhtälö")]),
-        ("gravitaatio", [(r"F_\text{g} = \gamma m_1 m_2/r^2", "vetovoima"), (r"g = \gamma M/r^2", "kenttä"),
-                         (r"v = \sqrt{\gamma M/r}", "satelliitti")]),
+                         (r"\Sigma F \text{ antaa } a_\text{n}", "liikeyhtälö")]),
+        ("gravitaatio", [(r"F_\text{g} = \gamma m_1 m_2/r^2", "vetovoima"), (r"\overline{G} = m\overline{g}", "paino"),
+                         (r"\text{satelliitti: } F_\text{g} \text{ antaa } a_\text{n}", "")]),
     ]
     hub_y, hub_h, x_box, gh, top = 8, 72, 44, 156, 100
     spine = 24
@@ -236,7 +239,34 @@ def tilanteet():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "kartta": kartta, "geo": geo, "tilanteet": tilanteet}
+def kaarre():
+    """The car in a flat curve as a force diagram, seen from behind, the centre of the curve to the left: the weight
+    from the centre, the normal force up from the road (apart from the weight), the static friction from the
+    bottom-left corner towards the centre; the acceleration beside the body towards the centre, the velocity into the
+    page (a circled cross). Schematic, no numbers: N = G, and the friction is the whole net force."""
+    f = Fig("fy9yl-kaarre", 280, "Voimakuvio, ei lukuarvoja: auto vaakasuoran tien kaarteessa takaa katsottuna suorakulmiona. "
+            "Kaarteen keskipiste on vasemmalla. Paino G lähtee keskipisteestä alas, ja yhtä pitkä tukivoima N lähtee "
+            "tien pinnasta ylös. Tien pinta on katkoviiva. Kitkavoima F myy lähtee auton vasemmasta alakulmasta vasemmalle tien suuntaisesti, kohti "
+            "kaarteen keskipistettä. Auton vieressä oranssi kiihtyvyysnuoli osoittaa vasemmalle kohti keskipistettä. "
+            "Nopeus on poispäin katsojasta, piirretty ympyränä, jonka sisällä on risti.", width=380, size=20)
+    cx, cy, w, h, yr = 200, 168, 130, 76, 206
+    f.line(16, yr, 364, yr, MUTED, 2, "8 6")                                  # the road, behind the diagram
+    f.tex(12, 34, r"\leftarrow \text{kaarteen keskipiste}", "start", MUTED, size=18)
+    d = FBD(f, 1.0, body=(cx, cy, w, h), a_dir=(-1, 0))
+    d.force("G", (0, -80), (cx, cy), "gravity", lab=(-20, 4))
+    d.force("N", (0, 80), (cx + 32, yr), "normal", surface=0, lab=(20, -14))
+    d.force("F_mu", (-58, 0), (cx - w / 2, yr), "friction", surface=0, lab=(-2, 24))
+    d.motion(r"\overline{a}", (-1, 0), (cx - w / 2 - 16, cy - 26), length=70, lab=(-2, -22))
+    d.draw()
+    vx, vy = cx + w / 2 + 40, cy - 20
+    f.circle(vx, vy, 13, WHITE, VELOCITY, 2.5)
+    f.line(vx - 9, vy - 9, vx + 9, vy + 9, VELOCITY, 2.5); f.line(vx - 9, vy + 9, vx + 9, vy - 9, VELOCITY, 2.5)
+    f.tex(vx + 22, vy, r"\overline{v}", "start", VELOCITY)
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "kartta": kartta, "geo": geo, "tilanteet": tilanteet, "kaarre": kaarre}
 REUSE = {"kartta": "reveals: the key laws of FY5 equilibrium, circular motion and gravitation",
          "geo": "reveals: the geostationary orbit to scale (r ≈ 6,6 R) and why the dish keeps pointing at the satellite",
-         "tilanteet": "reveals: model force diagrams of a plank on two supports, a car at the top of a bump and a satellite"}
+         "tilanteet": "reveals: model force diagrams of a plank on two supports, a car at the top of a bump and a satellite",
+         "kaarre": "safe: the force diagram of a car in a flat curve (G, N, friction to the centre), no numbers"}

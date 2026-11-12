@@ -153,7 +153,7 @@
 
 Tunnin tehtävät alkavat samasta ajatuksesta: **varaus synnyttää ympärilleen sähkökentän, ja kenttä kohdistaa toiseen varaukseen voiman** $\overline{F} = q\overline{E}$. Positiiviseen varaukseen voima osoittaa kentän suuntaan ja negatiiviseen kenttää vastaan. Kun kenttä siirtää varausta, se tekee työtä, ja varauksen potentiaalienergia muuttuu kuten pallon korkeusenergia painovoimakentässä. Kondensaattori varastoi energiaa levyjensä väliseen kenttään. Puolijohdekomponentit ja sähköturvallisuus palaavat samoihin suureisiin: jännite, virta ja eristeen kestämä kenttä.
 
-<svg data-fig="kartta" viewBox="0 0 380 780" role="img" aria-label="Käsitekartta. Ylhäällä solmu: varaus synnyttää sähkökentän, ja kenttä kohdistaa varaukseen voiman F = q E. Siitä lähtee alas neljä haaraa. Varaus ja voima: varaus Q = n e, Coulombin laki F E = k kertaa varausten tulo jaettuna r toiseen ja voimien vektorisumma. Kenttä ja potentiaali: homogeeninen kenttä U = E kertaa d, kentän työ W = Q U ja kiihdytys puoli m v toiseen = varaus kertaa U. Kondensaattori: kapasitanssi Q = C U, levykondensaattori C = epsilon nolla epsilon r A jaettuna d:llä ja energia E = puoli C U toiseen. Komponentit ja turvallisuus: etuvastus R = U miinus U D jaettuna I:llä, aurinkokennon hyötysuhde eta = P jaettuna G A:lla ja kehon läpi kulkeva virta I = U jaettuna R:llä." style="max-width:100%;font-size:22px">
+<svg data-fig="kartta" viewBox="0 0 380 780" role="img" aria-label="Käsitekartta. Ylhäällä solmu: varaus synnyttää sähkökentän, ja kenttä kohdistaa varaukseen voiman F = q E. Siitä lähtee alas neljä haaraa. Varaus ja voima: varaus Q = n e, Coulombin laki F E = k kertaa varausten tulo jaettuna r toiseen ja voimien vektorisumma. Kenttä ja potentiaali: homogeeninen kenttä U = E kertaa d, kentän työ W = Q U ja kiihdytyksessä liike-energia E k = puoli m v toiseen. Kondensaattori: kapasitanssi Q = C U, levykondensaattori C = epsilon nolla epsilon r A jaettuna d:llä ja energia E = puoli C U toiseen. Komponentit ja turvallisuus: etuvastus Kirchhoffin 2. laista, summa delta V = 0, aurinkokennon hyötysuhde eta = P a jaettuna P o:lla ja kehon läpi kulkeva virta I = U jaettuna R:llä." style="max-width:100%;font-size:22px">
   <line x1="24" y1="80" x2="24" y2="638" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="2.5"/>
   <foreignObject x="66" y="17" width="248" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$\text{varaus synnyttää kentän}$</div></foreignObject>
@@ -176,7 +176,7 @@ Tunnin tehtävät alkavat samasta ajatuksesta: **varaus synnyttää ympärilleen
   <foreignObject x="248" y="328" width="114" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{homogeeninen}$</div></foreignObject>
   <foreignObject x="58" y="362" width="54" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$W = QU$</div></foreignObject>
   <foreignObject x="274" y="365" width="88" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{kentän työ}$</div></foreignObject>
-  <foreignObject x="58" y="399" width="134" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$\tfrac12 mv^2 = |Q|U$</div></foreignObject>
+  <foreignObject x="58" y="399" width="111" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$E_\text{k} = \tfrac12 mv^2$</div></foreignObject>
   <foreignObject x="274" y="402" width="88" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{kiihdytys}$</div></foreignObject>
   <line x1="24" y1="466" x2="44" y2="466" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="44" y="444" width="328" height="156" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
@@ -192,9 +192,9 @@ Tunnin tehtävät alkavat samasta ajatuksesta: **varaus synnyttää ympärilleen
   <rect x="44" y="616" width="328" height="156" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
   <foreignObject x="58" y="625" width="305" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$\textbf{komponentit ja turvallisuus}$</div></foreignObject>
   <line x1="54" y1="658" x2="362" y2="658" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="669" width="122" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$R = (U - U_\text{D})/I$</div></foreignObject>
+  <foreignObject x="58" y="669" width="65" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$\Sigma \Delta V = 0$</div></foreignObject>
   <foreignObject x="274" y="672" width="88" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{etuvastus}$</div></foreignObject>
-  <foreignObject x="58" y="706" width="100" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$\eta = P/(GA)$</div></foreignObject>
+  <foreignObject x="58" y="706" width="88" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$\eta = P_\text{a}/P_\text{o}$</div></foreignObject>
   <foreignObject x="310" y="709" width="52" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{kenno}$</div></foreignObject>
   <foreignObject x="58" y="743" width="54" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$U = RI$</div></foreignObject>
   <foreignObject x="266" y="746" width="96" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{kehon virta}$</div></foreignObject>
@@ -204,7 +204,7 @@ Alun kipinä ratkeaa näillä laeilla. Kun kävelet villamatolla, kehoosi kertyy
 
 Jännite on suuri, mutta keho on pieni kondensaattori, jonka kapasitanssi on noin $100\,\text{pF}$, joten varausta on vain noin $0{,}9\,\mu\text{C}$ ja energiaa noin $4\,\text{mJ}$. Purkaus kestää noin mikrosekunnin. Vaarallinen virta, noin $50\,\text{mA}$ sekunnin ajan, kuljettaisi kehon läpi $0{,}05\,\text{C}$, yli $50\,000$ kertaa enemmän varausta.
 
-<svg data-fig="kipina" viewBox="0 0 600 540" role="img" aria-label="Kaavakuva, ei mittakaavassa. Vasemmalla sormenpää, jonka pinnalla on negatiivisia varauksia. Oikealla oven kahvan metallilevy, jonka sormen puoleiselle pinnalle on influenssin vuoksi siirtynyt positiivisia varauksia. Niiden välissä on noin 3 millimetrin ilmaväli, jonka poikki kulkee vihreitä kenttäviivoja levystä sormeen ja kirkas sinivalkoinen kipinä; kenttä on noin 3 MV/m, ilman läpilyöntilujuus. Alla laskelma: jännite U = E max kertaa d on noin 9 kV, keho on kondensaattori, jonka kapasitanssi on noin 100 pF, joten varaus Q = C U on noin 0,9 mikrocoulombia ja energia W = puoli C U toiseen noin 4 millijoulea." style="max-width:100%;font-size:24px">
+<svg data-fig="kipina" viewBox="0 0 600 540" role="img" aria-label="Kaavakuva, ei mittakaavassa. Vasemmalla sormenpää, jonka pinnalla on negatiivisia varauksia. Oikealla oven kahvan metallilevy, jonka sormen puoleiselle pinnalle on influenssin vuoksi siirtynyt positiivisia varauksia. Niiden välissä on noin 3 millimetrin ilmaväli, jonka poikki kulkee vihreitä kenttäviivoja levystä sormeen ja kirkas sinivalkoinen kipinä; kenttä on noin 3 MV/m, ilman läpilyöntilujuus. Alla laskelma: jännite U = E kertaa d on noin 9 kV, keho on kondensaattori, jonka kapasitanssi on noin 100 pF, joten varaus Q = C U on noin 0,9 mikrocoulombia ja energia W = puoli C U toiseen noin 4 millijoulea." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy9sk-plate" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e8c66e"/><stop offset="1" stop-color="#c9a046"/></linearGradient><radialGradient id="fy9sk-kglow"><stop offset="0" stop-color="#ffffff" stop-opacity="0.9"/><stop offset="0.5" stop-color="#d0e6fb" stop-opacity="0.6"/><stop offset="1" stop-color="#d0e6fb" stop-opacity="0"/></radialGradient></defs>
   <path d="M10,70 L190,70 Q262,70 262,140 Q262,210 190,210 L10,210 Z" fill="#f1c9a5" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
   <path d="M150,100 Q200,94 222,118" fill="none" stroke="#d9a47c" stroke-width="2.5" stroke-linejoin="round"/>
@@ -255,7 +255,7 @@ Jännite on suuri, mutta keho on pieni kondensaattori, jonka kapasitanssi on noi
   <foreignObject x="69.5" y="223" width="81" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:28px;color:#6b7480">$\text{sormi}$</div></foreignObject>
   <foreignObject x="464.5" y="253" width="81" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:28px;color:#6b7480">$\text{kahva}$</div></foreignObject>
   <line x1="10" y1="302" x2="590" y2="302" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 6"/>
-  <foreignObject x="14" y="319.5" width="432" height="41" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:34px">$U = E_\text{max}d \approx 3\,\text{MV/m} \cdot 3\,\text{mm} \approx 9\,\text{kV}$</div></foreignObject>
+  <foreignObject x="14" y="319.5" width="379" height="41" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:34px">$U = Ed \approx 3\,\text{MV/m} \cdot 3\,\text{mm} \approx 9\,\text{kV}$</div></foreignObject>
   <foreignObject x="14" y="381.5" width="397" height="41" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:34px">$Q = CU \approx 100\,\text{pF} \cdot 9\,\text{kV} \approx 0{,}9\,\mu\text{C}$</div></foreignObject>
   <foreignObject x="14" y="443" width="238" height="82" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:34px">$W = \dfrac12 CU^2 \approx 4\,\text{mJ}$</div></foreignObject>
 </svg>
@@ -351,10 +351,29 @@ missä $n$ on alkeisvarausten lukumäärä, $e = 1{,}602 \cdot 10^{-19}\,\text{C
 ```kaavat
 sähkökentän potentiaali :: V = \frac{E_\text{p}}{Q}
 sähkökentän tekemä työ :: W = QU
-\tfrac12 mv^2 = \lvert Q \rvert U
 ```
 
-missä $V$ on kohdan potentiaali ($\text{V}$) valittuun nollakohtaan nähden, $E_\text{p}$ varauksen $Q$ sähköinen potentiaalienergia ($\text{J}$), $W$ kentän tekemä työ ($\text{J}$), kun varaus $Q$ siirtyy pisteestä A pisteeseen B, ja $U = U_{AB} = V_A - V_B$ pisteiden välinen jännite. Työ ei riipu reitistä. Kenttä osoittaa suuremmasta potentiaalista pienempään, ja levosta lähtevä varaus liikkuu suuntaan, jossa sen potentiaalienergia pienenee. Viimeinen yhtälö pätee levosta lähtevälle hiukkaselle, kun vain sähköinen voima tekee työtä. Energian yksikkö $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$.
+missä $V$ on kohdan potentiaali ($\text{V}$) valittuun nollakohtaan nähden, $E_\text{p}$ varauksen $Q$ sähköinen potentiaalienergia ($\text{J}$), $W$ kentän tekemä työ ($\text{J}$), kun varaus $Q$ siirtyy pisteestä A pisteeseen B, ja $U = U_{AB} = V_A - V_B$ pisteiden välinen jännite. Työ ei riipu reitistä. Kenttä osoittaa suuremmasta potentiaalista pienempään, ja levosta lähtevä varaus liikkuu suuntaan, jossa sen potentiaalienergia pienenee. Energian yksikkö $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$.
+
+Kun hiukkanen, jonka massa on $m$ ($\text{kg}$) ja varaus $Q$, lähtee levosta ja kiihtyy sähkökentässä jännitteen $U$ läpi, kentän tekemä työ muuttuu hiukkasen liike-energiaksi. Hiukkasen vauhti lopussa on $v$ ($\text{m/s}$).
+
+```johda
+Hiukkanen (massa $m$, varaus $Q$) lähtee levosta ja kiihtyy sähkökentässä kahden pisteen välillä, joiden välinen jännite on $U$. Vain sähköinen voima tekee työtä. Johda yhtälö hiukkasen loppuvauhdille $v$.
+---
+Mekaniikan energiaperiaatteen mukaan hiukkaseen tehty työ muuttaa sen liike-energiaa. Vain sähköinen voima tekee työtä, ja hiukkanen lähtee levosta, joten liike-energia alussa on nolla:
+
+$$W = E_\text{k} - 0 = \tfrac12 mv^2$$
+
+Sähkökentän tekemä työ on $W = QU$. Levosta lähtevä varaus liikkuu aina suuntaan, jossa kenttä tekee positiivista työtä, joten työn suuruus on $\lvert Q \rvert U$, kun $U$ on jännitteen suuruus:
+
+$$\tfrac12 mv^2 = \lvert Q \rvert U$$
+
+Ratkaistaan vauhti:
+
+$$v = \sqrt{\frac{2\lvert Q \rvert U}{m}}$$
+
+Esimerkiksi alkeisvaraus saa jännitteen $1\,\text{V}$ läpi liike-energian $1\,\text{eV}$.
+```
 
 ### Kondensaattori
 
@@ -362,20 +381,92 @@ missä $V$ on kohdan potentiaali ($\text{V}$) valittuun nollakohtaan nähden, $E
 kondensaattorilaki :: Q = CU
 levykondensaattorin kapasitanssi :: C = \varepsilon_0\varepsilon_\text{r}\,\frac{A}{d}
 kondensaattorin energia :: E = \tfrac12 CU^2
-U_\text{max} = E_\text{max}d
 ```
 
-missä $C$ on kapasitanssi ($\text{F}$), $A$ levyn pinta-ala ($\text{m}^2$), $\varepsilon_0 = 8{,}854 \cdot 10^{-12}\,\text{F/m}$, $\varepsilon_\text{r}$ eristeen suhteellinen permittiivisyys, $E$ kondensaattoriin varastoitunut energia ($\text{J}$), myös $E = \tfrac12 QU$, ja $E_\text{max}$ eristeen läpilyöntilujuus ($\text{V/m}$). Levykondensaattorin kaava pätee, kun $d$ on pieni levyjen kokoon verrattuna ja eriste täyttää välin. Lähteeseen kytketyn kondensaattorin jännite pysyy samana, irrotetun varaus.
+missä $C$ on kapasitanssi ($\text{F}$), $A$ levyn pinta-ala ($\text{m}^2$), $\varepsilon_0 = 8{,}854 \cdot 10^{-12}\,\text{F/m}$, $\varepsilon_\text{r}$ eristeen suhteellinen permittiivisyys, $E$ kondensaattoriin varastoitunut energia ($\text{J}$), myös $E = \tfrac12 QU$. Levykondensaattorin kaava pätee, kun $d$ on pieni levyjen kokoon verrattuna ja eriste täyttää välin. Lähteeseen kytketyn kondensaattorin jännite pysyy samana, irrotetun varaus.
+
+Eristeen läpilyöntilujuus $E_\text{max}$ ($\text{V/m}$) on suurin sähkökentän voimakkuus, jonka eriste kestää. Jos kenttä kasvaa suuremmaksi, eriste alkaa johtaa ja levyjen välillä tapahtuu läpilyönti, joten kondensaattorin jännitteellä on suurin arvo $U_\text{max}$ ($\text{V}$).
+
+```johda
+Levykondensaattorin levyjen etäisyys on $d$, ja levyjen välin täyttävän eristeen läpilyöntilujuus on $E_\text{max}$. Johda suurin jännite $U_\text{max}$, jonka kondensaattori kestää.
+---
+Levyjen välissä kenttä on homogeeninen, joten jännite homogeenisessa sähkökentässä on
+
+$$U = Ed$$
+
+Kun jännite kasvaa, kenttä kasvaa samassa suhteessa. Läpilyönti tapahtuu, kun kenttä saavuttaa läpilyöntilujuuden, eli $E = E_\text{max}$:
+
+$$U_\text{max} = E_\text{max}d$$
+
+Sama päättely antaa alun kipinän jännitteen: ilmavälin $d$ yli voi olla enintään jännite, jolla kenttä on ilman läpilyöntilujuus.
+```
 
 ### Komponentit ja turvallisuus
 
 ```kaavat
-R = \frac{U - U_\text{D}}{I}
-\eta = \frac{P}{GA}
 jännitehäviö johtimessa :: U = RI
 ```
 
-missä $R$ on LEDin etuvastus ($\Omega$), $U_\text{D}$ LEDin jännite ($\text{V}$), $P = UI$ aurinkokennon sähköteho maksimitehopisteessä ($\text{W}$) ja $G$ valon voimakkuus ($\text{W/m}^2$). Viimeisestä yhtälöstä saadaan kehon läpi kulkeva virta $I = \tfrac{U}{R}$, kun $U$ on kosketusjännite ja $R$ koko virtatien resistanssi. Diodi johtaa vain päästösuuntaan, kun sen jännite ylittää kynnysjännitteen. Sulake suojaa johtoa, vikavirtasuoja ihmistä.
+missä $U$ on jännite ($\text{V}$), $R$ resistanssi ($\Omega$) ja $I$ virta ($\text{A}$). Yhtälöstä saadaan kehon läpi kulkeva virta $I = \tfrac{U}{R}$, kun $U$ on kosketusjännite ja $R$ koko virtatien resistanssi. Diodi johtaa vain päästösuuntaan, kun sen jännite ylittää kynnysjännitteen. Sulake suojaa johtoa, vikavirtasuoja ihmistä.
+
+LED kytketään jännitelähteeseen $U$ ($\text{V}$) sarjaan etuvastuksen $R$ ($\Omega$) kanssa, joka rajoittaa virran $I$ ($\text{A}$) sopivaksi. Johtavan LEDin jännite $U_\text{D}$ ($\text{V}$) pysyy lähes samana virrasta riippumatta.
+
+<svg data-fig="etuvastus" viewBox="0 0 600 300" role="img" aria-label="Kytkentäkaavio, ei lukuarvoja. Vasemmalla jännitelähde, jonka jännite on U ja plusnapa ylhäällä. Ylempään johtimeen on kytketty etuvastus R. Oikealla on LED päästösuuntaan: sen kolmio osoittaa alaspäin, plusnavan puolelta miinusnavan puolelle, ja siitä lähtee kaksi pientä valon nuolta. LEDin jännite on U D. Violetti virta I kulkee plusnavasta vastuksen ja LEDin kautta takaisin miinusnapaan." style="max-width:100%;font-size:24px">
+  <polyline points="140,152 140,70 250,70" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="330,70 440,70 440,142" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="440,176 440,250 140,250 140,168" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="114" y1="152" x2="166" y2="152" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="127" y1="168" x2="153" y2="168" stroke="#1f2933" stroke-width="7" stroke-linecap="butt"/>
+  <foreignObject x="174" y="123" width="19" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$+$</div></foreignObject>
+  <foreignObject x="86" y="145.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$U$</div></foreignObject>
+  <rect x="250" y="58" width="80" height="24" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <foreignObject x="280" y="19.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$R$</div></foreignObject>
+  <path d="M422,142 L458,142 L440,174 Z" fill="#ffffff" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <line x1="420" y1="176" x2="460" y2="176" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="464" y1="156" x2="483.5" y2="136.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M490,130 L486,140.5 L479.5,134 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="468" y1="170" x2="487.5" y2="150.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M494,144 L490,154.5 L483.5,148 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="502" y="170" width="39" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px;color:#6b7480">$\text{LED}$</div></foreignObject>
+  <line x1="400" y1="186" x2="400" y2="143" stroke="#6b7480" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M400,132 L405.5,144 L394.5,144 Z" fill="#6b7480" stroke-linejoin="round"/>
+  <foreignObject x="355" y="145.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$U_\text{D}$</div></foreignObject>
+  <path d="M225,70 L205,62 L205,78 Z" fill="#7048e8" stroke-linejoin="round"/>
+  <path d="M280,250 L300,242 L300,258 Z" fill="#7048e8" stroke-linejoin="round"/>
+  <foreignObject x="205" y="29.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#7048e8">$I$</div></foreignObject>
+</svg>
+
+```johda
+LED ja etuvastus on kytketty sarjaan jännitelähteeseen, jonka jännite on $U$. LEDin jännite on $U_\text{D}$, ja piirissä halutaan kulkevan virta $I$. Johda etuvastuksen resistanssi $R$.
+---
+Kierretään piiri kerran virran suuntaan Kirchhoffin 2. lailla. Potentiaali nousee lähteessä jännitteen $U$ verran. Se laskee vastuksessa jännitehäviön $RI$ verran (jännitehäviö johtimessa) ja LEDissä jännitteen $U_\text{D}$ verran:
+
+$$U - RI - U_\text{D} = 0$$
+
+Ratkaistaan resistanssi:
+
+$$R = \frac{U - U_\text{D}}{I}$$
+
+Vastuksen yli on siis vain se osa lähteen jännitteestä, joka ei jää LEDin yli. Lähteen sisäinen resistanssi on oletettu pieneksi.
+```
+
+Aurinkokennon pinta-ala on $A$ ($\text{m}^2$), ja siihen tulevan valon voimakkuus eli teho pinta-alaa kohti on $G$ ($\text{W/m}^2$). Kenno antaa maksimitehopisteessä sähkötehon $P = UI$ ($\text{W}$), ja sen hyötysuhde $\eta$ kertoo, kuinka suuri osa valon tehosta muuttuu sähköksi.
+
+```johda
+Aurinkokennon pinta-ala on $A$, siihen tulevan valon voimakkuus on $G$, ja kenno antaa sähkötehon $P$. Johda kennon hyötysuhde $\eta$.
+---
+Hyötysuhde on antotehon $P_\text{a}$ ja ottotehon $P_\text{o}$ suhde:
+
+$$\eta = \frac{P_\text{a}}{P_\text{o}}$$
+
+Antoteho on kennon sähköteho, $P_\text{a} = P$. Ottoteho on kennoon tulevan valon teho. Valon voimakkuus $G$ on teho pinta-alaa kohti, joten koko pinnalle tulee teho
+
+$$P_\text{o} = GA$$
+
+Sijoitetaan tehot hyötysuhteeseen:
+
+$$\eta = \frac{P}{GA}$$
+```
 
 ## Yleisiä virheitä {Virheet}
 

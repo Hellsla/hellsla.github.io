@@ -9,9 +9,11 @@ hero        the Why scene: a winter evening in a hallway, a hand in a knitted sl
 kartta      the concept map of the review: charge makes a field, F = qE, then four boxes (charge and force, field and
             potential, the capacitor, components and safety), each with three laws
 kipina      the hook answered: the fingertip and the handle's metal plate 3 mm apart, the induced charges and the green
-            field across the gap, and the numbers U = E_max d, Q = CU and W = 1/2 C U^2 beside it
+            field across the gap, and the numbers U = Ed (E the breakdown strength), Q = CU and W = 1/2 C U^2 beside it
 levyt       the Kaava figure: two plates at 200 V and 0 V, the green uniform field, dashed equipotentials every 50 V,
             a proton with its red force along the field and an electron with its red force against it
+etuvastus   the LED circuit for "Johda itse": a source U, the series resistor R and an LED in the forward direction
+            in one loop, the LED's voltage U_D and the violet current I (no numbers)
 """
 import math
 import figlib
@@ -21,6 +23,7 @@ import herolib as H
 
 figlib.set_language({}, ",")
 FIELD, FORCE = GOOD, HOT
+CUR = "#7048e8"     # conventional current (FY6: violet)
 
 # the hook (computed here and quoted in unit.md, inquiry.json and teacher.md)
 E_AIR = 3e6                  # V/m, the breakdown strength of air
@@ -156,21 +159,21 @@ def kartta():
         ("varaus ja voima", [(r"Q = ne", "alkeisvaraus"), (r"F_E = k\,Q_1 Q_2/r^2", "Coulomb"),
                              (r"\overline{F} = \overline{F}_1 + \overline{F}_2", "summa")]),
         ("kenttä ja potentiaali", [(r"U = Ed", "homogeeninen"), (r"W = QU", "kentän työ"),
-                                   (r"\tfrac12 mv^2 = |Q|U", "kiihdytys")]),
+                                   (r"E_\text{k} = \tfrac12 mv^2", "kiihdytys")]),
         ("kondensaattori", [(r"Q = CU", "kapasitanssi"), (r"C = \varepsilon_0\varepsilon_\text{r}A/d", "levyt"),
                             (r"E = \tfrac12 CU^2", "energia")]),
-        ("komponentit ja turvallisuus", [(r"R = (U - U_\text{D})/I", "etuvastus"), (r"\eta = P/(GA)", "kenno"),
-                                         (r"U = RI", "kehon virta")]),
+        ("komponentit ja turvallisuus", [(r"\Sigma \Delta V = 0", "etuvastus"),
+                                         (r"\eta = P_\text{a}/P_\text{o}", "kenno"), (r"U = RI", "kehon virta")]),
     ]
     hub_y, hub_h, x_box, gh, top = 8, 72, 44, 156, 100
     height = top + 4 * (gh + 16) - 8
     f = Fig("fy9sk-kartta", height, "Käsitekartta. Ylhäällä solmu: varaus synnyttää sähkökentän, ja kenttä kohdistaa varaukseen voiman F = q E. "
             "Siitä lähtee alas neljä haaraa. Varaus ja voima: varaus Q = n e, Coulombin laki F E = k kertaa varausten tulo "
             "jaettuna r toiseen ja voimien vektorisumma. Kenttä ja potentiaali: homogeeninen kenttä U = E kertaa d, kentän "
-            "työ W = Q U ja kiihdytys puoli m v toiseen = varaus kertaa U. Kondensaattori: kapasitanssi Q = C U, "
+            "työ W = Q U ja kiihdytyksessä liike-energia E k = puoli m v toiseen. Kondensaattori: kapasitanssi Q = C U, "
             "levykondensaattori C = epsilon nolla epsilon r A jaettuna d:llä ja energia E = puoli C U toiseen. Komponentit "
-            "ja turvallisuus: etuvastus R = U miinus U D jaettuna I:llä, aurinkokennon hyötysuhde eta = P jaettuna G A:lla "
-            "ja kehon läpi kulkeva virta I = U jaettuna R:llä.", width=380, size=22)
+            "ja turvallisuus: etuvastus Kirchhoffin 2. laista, summa delta V = 0, aurinkokennon hyötysuhde eta = P a "
+            "jaettuna P o:lla ja kehon läpi kulkeva virta I = U jaettuna R:llä.", width=380, size=22)
     spine = 24
     f.line(spine, hub_y + hub_h, spine, top + 3 * (gh + 16) + 22, RULE, 3)
     f.rect(8, hub_y, 364, hub_h, GOOD_LIGHT, GOOD, 2.5, 12)
@@ -197,7 +200,7 @@ def kipina():
             "Oikealla oven kahvan metallilevy, jonka sormen puoleiselle pinnalle on influenssin vuoksi siirtynyt positiivisia "
             "varauksia. Niiden välissä on noin 3 millimetrin ilmaväli, jonka poikki kulkee vihreitä kenttäviivoja levystä sormeen ja "
             "kirkas sinivalkoinen kipinä; "
-            "kenttä on noin 3 MV/m, ilman läpilyöntilujuus. Alla laskelma: jännite U = E max kertaa d on noin 9 kV, keho on "
+            "kenttä on noin 3 MV/m, ilman läpilyöntilujuus. Alla laskelma: jännite U = E kertaa d on noin 9 kV, keho on "
             "kondensaattori, jonka kapasitanssi on noin 100 pF, joten varaus Q = C U on noin 0,9 mikrocoulombia ja energia "
             "W = puoli C U toiseen noin 4 millijoulea.", size=24)
     # the fingertip (left) and the plate (right)
@@ -234,7 +237,7 @@ def kipina():
     # the three numbers
     y0 = 326
     f.line(10, y0 - 24, 590, y0 - 24, RULE, 1.5, "6 6")
-    f.tex(14, y0 + 14, r"U = E_\text{max}d \approx 3\,\text{MV/m} \cdot 3\,\text{mm} \approx 9\,\text{kV}", "start", INK, size=34)
+    f.tex(14, y0 + 14, r"U = Ed \approx 3\,\text{MV/m} \cdot 3\,\text{mm} \approx 9\,\text{kV}", "start", INK, size=34)
     f.tex(14, y0 + 76, r"Q = CU \approx 100\,\text{pF} \cdot 9\,\text{kV} \approx 0{,}9\,\mu\text{C}", "start", INK, size=34)
     f.tex(14, y0 + 158, r"W = \dfrac12 CU^2 \approx 4\,\text{mJ}", "start", INK, size=34)
     return f.svg()
@@ -278,7 +281,48 @@ def levyt():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "kartta": kartta, "kipina": kipina, "levyt": levyt}
+def etuvastus():
+    """The LED with its series resistor, no numbers (IEC symbols as in fy9-tasavirta): the source U on the left (long
+    plate +, at the top), the resistor R in the top wire, the LED on the right in the forward direction (the triangle
+    points down, from + towards -) with two small arrows for its light; the LED's voltage U_D as a grey arrow beside it
+    and the violet current I in the loop."""
+    f = Fig("fy9sk-etuvastus", 300, "Kytkentäkaavio, ei lukuarvoja. Vasemmalla jännitelähde, jonka jännite on U ja plusnapa "
+            "ylhäällä. Ylempään johtimeen on kytketty etuvastus R. Oikealla on LED päästösuuntaan: sen kolmio osoittaa "
+            "alaspäin, plusnavan puolelta miinusnavan puolelle, ja siitä lähtee kaksi pientä valon nuolta. LEDin jännite "
+            "on U D. Violetti virta I kulkee plusnavasta vastuksen ja LEDin kautta takaisin miinusnapaan.", size=24)
+    xs, xR, xL, yt, yb, ys, yl = 140, 290, 440, 70, 250, 160, 160
+    wire = lambda *pts: f.add('<polyline points="' + " ".join(f"{n(x)},{n(y)}" for x, y in pts) + f'" fill="none" '
+                              f'stroke="{INK}" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>')
+    wire((xs, ys - 8), (xs, yt), (xR - 40, yt))
+    wire((xR + 40, yt), (xL, yt), (xL, yl - 18))
+    wire((xL, yl + 16), (xL, yb), (xs, yb), (xs, ys + 8))
+    # the source: long plate + at the top, short thick plate - below
+    f.line(xs - 26, ys - 8, xs + 26, ys - 8, INK, 3)
+    f.line(xs - 13, ys + 8, xs + 13, ys + 8, INK, 7)
+    f.tex(xs + 34, ys - 24, r"+", "start", INK, size=22)
+    f.tex(xs - 34, ys, r"U", "end", INK)
+    # the series resistor
+    f.rect(xR - 40, yt - 12, 80, 24, WHITE, INK, 3)
+    f.tex(xR, yt - 36, r"R", "middle", INK)
+    # the LED: a filled triangle pointing down and a bar, two light arrows
+    f.path(f"M{xL - 18},{yl - 18} L{xL + 18},{yl - 18} L{xL},{yl + 14} Z", WHITE, INK, 3)
+    f.line(xL - 20, yl + 16, xL + 20, yl + 16, INK, 3)
+    f.arrow(xL + 24, yl - 4, xL + 50, yl - 30, INK, 2, 10)
+    f.arrow(xL + 28, yl + 10, xL + 54, yl - 16, INK, 2, 10)
+    f.tex(xL + 62, yl + 22, r"\text{LED}", "start", MUTED, size=20)
+    f.arrow(xL - 40, yl + 26, xL - 40, yl - 28, MUTED, 2.5, 12)
+    f.tex(xL - 52, yl, r"U_\text{D}", "end", MUTED)
+    # the current
+    for x, y, d in ((215, yt, "r"), (290, yb, "l")):
+        s_ = 10
+        pts = [(x + s_, y), (x - s_, y - 8), (x - s_, y + 8)] if d == "r" else [(x - s_, y), (x + s_, y - 8), (x + s_, y + 8)]
+        f.path("M" + " L".join(f"{n(a)},{n(b)}" for a, b in pts) + " Z", CUR)
+    f.tex(215, yt - 26, r"I", "middle", CUR)
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "kartta": kartta, "kipina": kipina, "levyt": levyt, "etuvastus": etuvastus}
 REUSE = {"kartta": "reveals: the key laws of FY6 charge, field, potential, capacitor, components and safety",
          "kipina": "reveals: a door-handle spark of about 3 mm means about 9 kV, 0,9 µC and 4 mJ (C about 100 pF)",
-         "levyt": "reveals: a uniform field between plates at 200 V and 0 V, equipotentials, F = qE along E for a proton and against E for an electron"}
+         "levyt": "reveals: a uniform field between plates at 200 V and 0 V, equipotentials, F = qE along E for a proton and against E for an electron",
+         "etuvastus": "safe: a source U, a series resistor R and an LED with U_D in one loop, no numbers"}

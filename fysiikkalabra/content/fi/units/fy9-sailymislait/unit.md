@@ -217,7 +217,7 @@
 
 Mekaniikan kokeen tehtävistä suuri osa ratkeaa kahdella säilymislailla. **Energia säilyy aina**: mekaaninen energia muuttuu sisäenergiaksi, kun kitka, ilmanvastus tai kappaleen muodonmuutos tekee työtä, mutta kokonaisenergia pysyy samana. **Liikemäärä säilyy**, kun systeemiin vaikuttavien ulkoisten voimien summa on nolla tai niiden impulssi on törmäyksen aikana merkityksettömän pieni.
 
-<svg data-fig="kartta" viewBox="0 0 380 604" role="img" aria-label="Käsitekartta. Ylhäällä solmu säilymislait: energia ja liikemäärä. Siitä lähtee alas kolme haaraa. Energia: liike-energia E k = puolet m v toiseen, potentiaalienergia E p = m g h ja energiaperiaate, jossa alun mekaaninen energia ja muiden voimien työ on yhtä suuri kuin lopun mekaaninen energia. Liikemäärä: p = m v vektoreina, impulssiperiaate impulssi I = delta p ja liikemäärän säilyminen törmäyksessä. Sovellukset: törmäyksessä liikemäärä säilyy mutta liike-energia vain kimmoisassa, pysähtymismatka on reaktiomatka ja jarrutusmatka, ja vesivoimalan teho on eeta rho Q g h." style="max-width:100%;font-size:20px">
+<svg data-fig="kartta" viewBox="0 0 380 604" role="img" aria-label="Käsitekartta. Ylhäällä solmu säilymislait: energia ja liikemäärä. Siitä lähtee alas kolme haaraa. Energia: liike-energia E k = puolet m v toiseen, potentiaalienergia E p = m g h ja energiaperiaate, jossa alun mekaaninen energia ja muiden voimien työ on yhtä suuri kuin lopun mekaaninen energia. Liikemäärä: p = m v vektoreina, impulssiperiaate impulssi I = delta p ja liikemäärän säilyminen törmäyksessä. Sovellukset: törmäyksessä liikemäärä säilyy mutta liike-energia vain kimmoisassa, pysähtymismatka tasaisesti kiihtyvän liikkeen paikasta x = x 0 + v 0 t + puolet a t toiseen, ja voimaloiden sähköteho hyötysuhteesta eeta = P a per P o." style="max-width:100%;font-size:20px">
   <line x1="24" y1="80" x2="24" y2="454" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
   <foreignObject x="123.5" y="18" width="133" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\text{säilymislait}$</div></foreignObject>
@@ -246,10 +246,10 @@ Mekaniikan kokeen tehtävistä suuri osa ratkeaa kahdella säilymislailla. **Ene
   <foreignObject x="58" y="442" width="133" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{sovellukset}$</div></foreignObject>
   <line x1="54" y1="474" x2="362" y2="474" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="58" y="487" width="233" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$\text{törmäys: } p \text{ säilyy, } E_\text{k} \text{ ei aina}$</div></foreignObject>
-  <foreignObject x="58" y="521" width="158" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$s_\text{p} = v_0 t_\text{r} + v_0^2/(2a)$</div></foreignObject>
+  <foreignObject x="58" y="520" width="164" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$x = x_0 + v_0 t + \tfrac12 at^2$</div></foreignObject>
   <foreignObject x="248" y="522" width="114" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{pysähtyminen}$</div></foreignObject>
-  <foreignObject x="58" y="554" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$P = \eta\rho Qgh$</div></foreignObject>
-  <foreignObject x="274" y="556" width="88" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{vesivoima}$</div></foreignObject>
+  <foreignObject x="58" y="554" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\eta = P_\text{a}/P_\text{o}$</div></foreignObject>
+  <foreignObject x="283" y="556" width="79" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{voimalat}$</div></foreignObject>
 </svg>
 
 Ratkaisu alkaa siitä, että valitset lain tilanteen mukaan. Kun kysytään nopeutta tai korkeutta eri kohdissa ja tunnetaan voimien tekemä työ, käytä energiaperiaatetta. Kun kappaleet törmäävät tai työntävät toisiaan, käytä liikemäärän säilymistä. Kun kysytään voimaa ja tunnetaan aika, käytä impulssiperiaatetta. Moni tehtävä yhdistää ne: ensin energia, sitten törmäys, sitten taas energia.
@@ -334,17 +334,131 @@ Kimmoisassa törmäyksessä myös liike-energia säilyy. Täysin kimmottomassa k
 
 ### Sovellukset
 
-Vaakasuoralla tiellä auton pysähtymismatka on reaktiomatka ja jarrutusmatka:
+Auton pysähtymismatka $s_\text{p}$ ($\text{m}$) vaakasuoralla tiellä on reaktiomatkan ja jarrutusmatkan summa. Reaktioajan $t_\text{r}$ ($\text{s}$) auto kulkee vakionopeudella $v_0$ ($\text{m/s}$), ja jarrutuksessa nopeus pienenee nollaan vakiohidastuvuudella $a$ ($\text{m/s}^2$); lukkojarrutuksen rajalla $a = \mu g$.
 
-```latex
-\begin{aligned}
-s_\text{p} &= v_0\,t_\text{r} + \frac{v_0^2}{2a} \\
-P_\text{vesi} &= \eta\rho Qgh \\
-P_\text{tuuli} &= \tfrac12\eta\rho Av^3
-\end{aligned}
+<svg data-fig="pysahtyminen" viewBox="0 0 600 360" role="img" aria-label="Kaavakuva, ei lukuarvoja: auton nopeus v ajan t funktiona. Reaktioajan t r nopeus pysyy lähtönopeutena v 0, joten kuvaaja on vaakasuora, ja sen alla on sininen suorakulmio, reaktiomatka s r. Sitten jarrutuksen aikana t j nopeus pienenee tasaisesti nollaan, joten kuvaaja on laskeva suora, ja sen alla on hiekanvärinen kolmio, jarrutusmatka s j. Auto pysähtyy hetkellä t r + t j." style="max-width:100%;font-size:24px">
+  <line x1="89" y1="300" x2="484" y2="300" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M496,300 L483,306 L483,294 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="90" y1="301" x2="90" y2="56" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M90,44 L96,57 L84,57 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="60" y="305.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0$</div></foreignObject>
+  <foreignObject x="502" y="285.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$t$</div></foreignObject>
+  <foreignObject x="80" y="13.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$v$</div></foreignObject>
+  <polygon points="90,300 90,127.5 185,127.5 185,300" fill="#d0e6fb" fill-opacity="0.9"/>
+  <polygon points="185,300 185,127.5 394,300" fill="#f1dfb5" fill-opacity="0.9"/>
+  <polyline points="185,300 185,127.5" fill="none" stroke="#6b7480" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="6 5"/>
+  <polyline points="90,127.5 185,127.5 394,300" fill="none" stroke="#1f2933" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+  <foreignObject x="45" y="113" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$v_0$</div></foreignObject>
+  <foreignObject x="168.5" y="311.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$t_\text{r}$</div></foreignObject>
+  <foreignObject x="359" y="311.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$t_\text{r} + t_\text{j}$</div></foreignObject>
+  <foreignObject x="121" y="199" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$s_\text{r}$</div></foreignObject>
+  <foreignObject x="238" y="228" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$s_\text{j}$</div></foreignObject>
+  <foreignObject x="97" y="93.5" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#6b7480">$\text{reaktio}$</div></foreignObject>
+  <foreignObject x="306.5" y="161.5" width="91" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px;color:#6b7480">$\text{jarrutus}$</div></foreignObject>
+</svg>
+
+```johda
+Auton nopeus on $v_0$, kun kuljettaja huomaa esteen. Johda pysähtymismatka $s_\text{p}$, kun reaktioaika on $t_\text{r}$ ja jarrutuksen hidastuvuus $a$ on vakio.
+---
+Reaktioajan auto liikkuu tasaisella nopeudella. Paikka tasaisesti kiihtyvässä suoraviivaisessa liikkeessä antaa kiihtyvyydellä nolla reaktiomatkan:
+
+$$s_\text{r} = v_0\,t_\text{r}$$
+
+Jarrutuksessa kiihtyvyys on $-a$. Nopeus tasaisesti kiihtyvässä liikkeessä antaa jarrutusajan $t_\text{j}$, kun loppunopeus on nolla:
+
+$$0 = v_0 - a\,t_\text{j} \quad\Rightarrow\quad t_\text{j} = \frac{v_0}{a}$$
+
+Sijoitetaan jarrutusaika paikan lausekkeeseen. Jarrutusmatka on
+
+$$s_\text{j} = v_0\,t_\text{j} - \tfrac12\,a\,t_\text{j}^2 = \frac{v_0^2}{a} - \frac{v_0^2}{2a} = \frac{v_0^2}{2a}$$
+
+Pysähtymismatka on reaktiomatkan ja jarrutusmatkan summa:
+
+$$s_\text{p} = s_\text{r} + s_\text{j} = v_0\,t_\text{r} + \frac{v_0^2}{2a}$$
+
+Saman jarrutusmatkan antaa energiaperiaate: Newtonin 2. lain mukaan jarruttava kokonaisvoima on $ma$, ja sen työ $-ma\,s_\text{j}$ vie koko liike-energian $\tfrac12 mv_0^2$. Kuvaajassa matkat ovat pinta-aloja: reaktiomatka on suorakulmio ja jarrutusmatka kolmio, jonka ala on $\tfrac12\,v_0 t_\text{j}$.
 ```
 
-missä $t_\text{r}$ on reaktioaika ($\text{s}$) ja $a$ hidastuvuus ($\text{m/s}^2$), oletettu vakioksi; lukkojarrutuksen rajalla $a = \mu g$. Voimaloiden sähkötehoissa $\eta$ on hyötysuhde ja $\rho$ veden tai ilman tiheys; vesivoimalassa $Q$ on virtaama ($\text{m}^3\text{/s}$) ja $h$ putouskorkeus ($\text{m}$), tuulivoimalassa $A$ on roottorin pyyhkäisemä pinta-ala ($\text{m}^2$) ja $v$ tuulen nopeus. Tuulen tehon lauseke pätee, kun hyötysuhde pysyy vakiona ja voimala toimii nimellistehoaan pienemmällä teholla.
+Vesivoimalan sähköteho $P_\text{vesi}$ ($\text{W}$) on osa siitä potentiaalienergiasta, jonka putoava vesi menettää aikayksikössä, ja hyötysuhde $\eta$ kertoo, kuinka suuri osa. Vettä, jonka tiheys on $\rho$ ($\text{kg/m}^3$), virtaa voimalan läpi virtaamalla $Q$ ($\text{m}^3\text{/s}$) eli tilavuus sekunnissa, ja se putoaa putouskorkeuden $h$ ($\text{m}$).
+
+```johda
+Vesivoimalan läpi virtaa vettä virtaamalla $Q$, ja putouskorkeus on $h$. Johda voimalan sähköteho $P_\text{vesi}$, kun hyötysuhde on $\eta$.
+---
+Ajassa $\Delta t$ voimalan läpi virtaa vettä tilavuus $V = Q\,\Delta t$. Tiheyden määritelmän $\rho = \tfrac{m}{V}$ mukaan sen massa on
+
+$$m = \rho V = \rho Q\,\Delta t$$
+
+Kun tämä vesi putoaa korkeuden $h$, sen painovoimaan liittyvä potentiaalienergia pienenee määrän
+
+$$\Delta E = mgh = \rho Q\,\Delta t\,gh$$
+
+Veden nopeus on putouksen alussa ja lopussa likimain sama, joten tämä energia tulee voimalalle. Teho on energian muutos aikayksikköä kohden, joten vesi tuo voimalaan tehon
+
+$$P_\text{o} = \frac{\Delta E}{\Delta t} = \rho Qgh$$
+
+Hyötysuhde $\eta = \tfrac{P_\text{a}}{P_\text{o}}$ kertoo, mikä osa tästä tehosta saadaan sähkönä:
+
+$$P_\text{vesi} = \eta P_\text{o} = \eta\rho Qgh$$
+```
+
+Tuulivoimalan sähköteho $P_\text{tuuli}$ ($\text{W}$) on vastaavasti osa siitä liike-energiasta, jonka ilma tuo roottorin läpi aikayksikössä. Ilma, jonka tiheys on $\rho$, virtaa nopeudella $v$ ($\text{m/s}$) kohtisuoraan roottorin pyyhkäisemän pinta-alan $A$ ($\text{m}^2$) läpi.
+
+<svg data-fig="tuuli" viewBox="0 0 600 420" role="img" aria-label="Kaavakuva sivulta, ei lukuarvoja. Oikealla tuulivoimala: torni, konehuone ja kolme lapaa. Roottorin pyyhkäisemä pinta-ala A on piirretty soikiona. Tuuli puhaltaa vasemmalta nopeudella v, siniset nuolet. Roottorin vasemmalla puolella on vaaleansininen ilmalieriö, jonka pohja on ala A ja pituus v kertaa delta t: se ilma, joka kulkee roottorin läpi ajassa delta t." style="max-width:100%;font-size:24px">
+  <line x1="20" y1="400" x2="580" y2="400" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M464,204 L456,400 L484,400 L476,204 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M150,80 L420,80 A26,110 0 0 1 420,300 L150,300 A26,110 0 0 1 150,80 Z" fill="#d0e6fb" stroke-linejoin="round" fill-opacity="0.75"/>
+  <line x1="150" y1="80" x2="420" y2="80" stroke="#1971c2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="8 6"/>
+  <line x1="150" y1="300" x2="420" y2="300" stroke="#1971c2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="8 6"/>
+  <path d="M150,80 A26,110 0 1 0 150,300 A26,110 0 1 0 150,80 Z" fill="none" stroke="#1971c2" stroke-width="2" stroke-linejoin="round" stroke-dasharray="8 6"/>
+  <line x1="190" y1="130" x2="287" y2="130" stroke="#1971c2" stroke-width="3.5" stroke-linecap="butt"/>
+  <path d="M300,130 L286,136.5 L286,123.5 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <line x1="190" y1="190" x2="287" y2="190" stroke="#1971c2" stroke-width="3.5" stroke-linecap="butt"/>
+  <path d="M300,190 L286,196.5 L286,183.5 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <line x1="190" y1="250" x2="287" y2="250" stroke="#1971c2" stroke-width="3.5" stroke-linecap="butt"/>
+  <path d="M300,250 L286,256.5 L286,243.5 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <foreignObject x="235" y="93.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$v$</div></foreignObject>
+  <path d="M420,80 A26,110 0 1 0 420,300 A26,110 0 1 0 420,80 Z" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <rect x="426" y="176" width="76" height="28" rx="8" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="420" y1="190" x2="420" y2="86.5" stroke="#1f2933" stroke-width="7" stroke-linecap="round"/>
+  <line x1="420" y1="190" x2="420" y2="86.5" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <line x1="420" y1="190" x2="399" y2="241.5" stroke="#1f2933" stroke-width="7" stroke-linecap="round"/>
+  <line x1="420" y1="190" x2="399" y2="241.5" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <line x1="420" y1="190" x2="441" y2="241.5" stroke="#1f2933" stroke-width="7" stroke-linecap="round"/>
+  <line x1="420" y1="190" x2="441" y2="241.5" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="420" cy="190" r="10" fill="#1f2933"/>
+  <foreignObject x="458" y="73.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$A$</div></foreignObject>
+  <line x1="150" y1="318" x2="150" y2="334" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="420" y1="318" x2="420" y2="334" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="150" y1="326" x2="420" y2="326" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="256" y="335.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$v\,\Delta t$</div></foreignObject>
+  <foreignObject x="146" y="44" width="143" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px;color:#6b7480">$\text{ilmaa ajassa } \Delta t$</div></foreignObject>
+</svg>
+
+```johda
+Tuuli puhaltaa nopeudella $v$ kohtisuoraan roottoria vastaan, ja roottorin pyyhkäisemä pinta-ala on $A$. Johda tuulivoimalan sähköteho $P_\text{tuuli}$, kun hyötysuhde on $\eta$.
+---
+Ajassa $\Delta t$ ilma kulkee matkan $v\,\Delta t$. Roottorin läpi kulkee siis ilmalieriö, jonka pohjan ala on $A$ ja pituus $v\,\Delta t$ (kuva). Tiheyden määritelmän mukaan sen massa on
+
+$$m = \rho V = \rho A v\,\Delta t$$
+
+Ilmalieriön liike-energia on
+
+$$E_\text{k} = \tfrac12\,mv^2 = \tfrac12\,\rho A v\,\Delta t \cdot v^2$$
+
+Sievennetään:
+
+$$E_\text{k} = \tfrac12\,\rho A v^3\,\Delta t$$
+
+Teho on energia aikayksikköä kohden, joten ilma tuo roottorille tehon
+
+$$P_\text{o} = \frac{E_\text{k}}{\Delta t} = \tfrac12\,\rho A v^3$$
+
+Hyötysuhteen $\eta = \tfrac{P_\text{a}}{P_\text{o}}$ avulla sähköteho on
+
+$$P_\text{tuuli} = \eta P_\text{o} = \tfrac12\,\eta\rho A v^3$$
+
+Nopeus on kolmannessa potenssissa, koska nopeampi tuuli tuo roottorin läpi sekä enemmän ilmaa että enemmän energiaa jokaista ilmakilogrammaa kohden. Tulos olettaa hyötysuhteen vakioksi, joten se pätee, kun voimala toimii nimellistehoaan pienemmällä teholla.
+```
 
 ## Yleisiä virheitä {Virheet}
 
