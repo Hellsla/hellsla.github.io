@@ -72,8 +72,8 @@ def home():
             "joihin on kytketty vedenkeitin. Alin ryhmä on latausaseman oma kolmivaiheinen ryhmä: siinä on 16 ampeerin "
             "johdonsuojakatkaisija ja vikavirtasuoja, jonka laukaisuvirta on 30 milliampeeria. Kolmivaiheiset johdot on piirretty "
             "kolmena viivana, yksivaiheinen yhtenä.")
-    # the distribution board
-    f.rect(20, 64, 232, 302, H.grad(f, "fy616s-board", WHITE, ALUMINIUM), INK, 3, 8)
+    # the distribution board, wide enough that every rating sits above its own module, on the board, off the conductors
+    f.rect(20, 64, 276, 302, H.grad(f, "fy616s-board", WHITE, ALUMINIUM), INK, 3, 8)
     # supply from the grid: three phase conductors into the main fuses
     for k, x in enumerate((48, 72, 96)):
         f.line(x, 14, x, 82, INK, 2)
@@ -81,7 +81,7 @@ def home():
         f.rect(x - 9, 82, 18, 7, METAL_EDGE, INK, 1.5, 2)
         f.rect(x - 9, 115, 18, 7, METAL_EDGE, INK, 1.5, 2)
     f.tex(112, 30, r"\text{sähköverkosta}", "start", w=180)
-    f.tex(120, 102, r"3 \cdot 25\,\text{A}", "start", w=98, bg=True)
+    f.tex(120, 102, r"3 \cdot 25\,\text{A}", "start", w=98)
     # three bus bars
     for x in (48, 72, 96): f.line(x, 122, x, 344, COPPER, 3)
     rows = [(176, 3, r"3 \cdot 16\,\text{A}", r"\text{kiuas}", stove_icon),
@@ -92,19 +92,19 @@ def home():
         for x in taps:
             yo = y + ((x - 72) / 4 if ph == 3 else 0)
             f.circle(x, yo, 4, COPPER)
-            f.line(x, yo, 117, yo, INK, 2)
-        breaker(f, 134, y)
-        f.tex(134, y - 40, rating, "middle", w=98, bg=True)
+            f.line(x, yo, 133, yo, INK, 2)
+        breaker(f, 150, y)
+        f.tex(150, y - 40, rating, "middle", w=98)
         if name == r"\text{latausasema}":
-            cable(f, 151, y, 199, y, 3)
-            rcd(f, 222, y)
-            f.tex(224, y - 40, r"30\,\text{mA}", "middle", w=74, bg=True)
-            cable(f, 245, y, 486, y, 3)
-            f.tex(356, y - 26, name, "middle", w=150)
+            cable(f, 167, y, 227, y, 3)
+            rcd(f, 250, y)
+            f.tex(250, y - 40, r"30\,\text{mA}", "middle", w=74)
+            cable(f, 273, y, 486, y, 3)
+            f.tex(392, y - 26, name, "middle", w=150)
             icon(f, 528, y - 6)
         else:
-            cable(f, 151, y, 486, y, ph)
-            f.tex(356, y - 26, name, "middle", w=150)
+            cable(f, 167, y, 486, y, ph)
+            f.tex(392, y - 26, name, "middle", w=150)
             icon(f, 528, y + (6 if ph == 1 else 6))
     return f.svg()
 

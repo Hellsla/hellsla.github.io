@@ -101,7 +101,7 @@ def graph():
     ax.curve(lambda r: 100 * r / (100 + r), 0, 200, HEAT, 3)
     ax.point(100, 200, WATER); ax.point(100, 50, HEAT)
     f.tex(ax.X(160), ax.Y(292), r"\text{sarjaan}", "end", WATER)
-    f.tex(ax.X(200), ax.Y(30), r"\text{rinnan}", "end", HEAT)
+    f.tex(ax.X(200) + 10, ax.Y(200 / 3), r"\text{rinnan}", "start", HEAT)      # at the curve's end, clear of the axis arrow
     f.tex(ax.X(170), ax.Y(100), r"R_1", "middle", MUTED, bg=True)
     return f.svg()
 
