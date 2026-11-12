@@ -276,8 +276,8 @@ where $G$ is the weight (N), $m$ is the mass (kg), $g = 9.81\,\text{m/s}^2$ and 
 </svg>
 
 Power is work divided by the time it takes. In motion at a steady speed, where the force is in the direction of motion, power can also be found as the product of force and speed, because $s/t = v$:
-```latex
-P = \frac{W}{t} = F v
+```kaavat
+power :: P = \frac{W}{t} = F v
 ```
 where $P$ is the power (W), $t$ is the time (s) and $v$ is the speed (m/s). One watt is one joule per second: $1\,\text{W} = 1\,\text{J/s}$.
 

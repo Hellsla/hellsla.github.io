@@ -92,8 +92,8 @@ pressure caused by a force :: p = \frac{F}{A}
 where $p$ is the pressure (Pa), $F$ the force perpendicular to the surface (N) and $A$ the area (m²). One pascal is a force of one newton on an area of one square metre: $1\,\text{Pa} = 1\,\text{N/m}^2$.
 
 In a liquid at depth $h$ the pressure is
-```latex
-p = p_0 + \rho g h
+```kaavat
+hydrostatic pressure :: p = p_0 + \rho g h
 ```
 where $p_0$ is the pressure at the surface of the liquid, usually atmospheric pressure (Pa), $\rho$ the density of the liquid (kg/m³), $g$ = $9.81\,\text{m/s}^2$ and $h$ the depth below the surface (m). The term $\rho g h$ is the hydrostatic pressure, that is, the gauge pressure $\Delta p = p - p_0$, which tells how much greater the pressure is than the pressure at the surface. The graph $(h, p)$ is a straight line whose slope is $\rho g$ and whose constant term is $p_0$, as in the linear model $y = kx + b$ of FY1. For water $\rho$ = $1000\,\text{kg/m}^3$, so the pressure grows by $9.81\,\text{kPa}$ for every metre.
 

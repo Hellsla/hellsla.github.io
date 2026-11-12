@@ -1,7 +1,7 @@
 # FY3:n kaavojen nimet (opettaja 2026-11-12: nimi vain kaavalle, joka on MAFY-taulukoissa samoin tunnuksin; ladontaero sallitaan).
 # = on yllä nimetyn kaavan toinen muoto, + on lisätieto. Rivit tunnin tekstin järjestyksessä.
 tunti	rivi	kaava	kaava_en	nimi	name_en	lähde	MAFY-sivu	huomio
-fy3-1	213	G = m g	G = m g					
+fy3-1	213	G = m g	G = m g	kappaleeseen vaikuttava painovoima Maan pinnalla	gravitational force on a body at the Earth's surface	MAFY	Mekaniikan kaavoja	MAFY vektorina G = mg; opettaja 2026-11-12: vektorimerkintä voidaan jättää pois
 fy3-1	285	G_\text{Maa} = m g_\text{Maa}	G_\text{Earth} = m g_\text{Earth}					
 fy3-1	285	G_\text{Mars} = m g_\text{Mars}	G_\text{Mars} = m g_\text{Mars}					
 fy3-1	299	G_\text{Maa} = m g_\text{Maa}	G_\text{Earth} = m g_\text{Earth}					
@@ -12,7 +12,7 @@ fy3-1	299	= 1{,}20 \cdot 10^2\,\text{kg} \cdot 3{,}71\,\text{m/s}^2	= 1.20 \cdot
 fy3-1	299	= 445{,}2\,\text{N}	= 445.2\,\text{N}					
 fy3-2	188	W = F s	W = F s	voiman tekemä työ	work done by a force	MAFY	Mekaniikan kaavoja	
 fy3-2	242	W = G h = m g h	W = G h = m g h					
-fy3-2	279	P = \frac{W}{t} = F v	P = \frac{W}{t} = F v					
+fy3-2	279	P = \frac{W}{t} = F v	P = \frac{W}{t} = F v	teho	power	MAFY	Mekaniikan kaavoja	MAFY: P = W/Δt ja hetkellinen teho P = Fv; opettaja 2026-11-12: tunnin merkintä pidetään
 fy3-2	338	W = A_\text{kolmio}	W = A_\text{triangle}					
 fy3-2	338	= \frac{1}{2} F_\text{max}\, s	= \frac{1}{2} F_\text{max}\, s					
 fy3-2	352	W = A_\text{kolmio}	W = A_\text{triangle}					
@@ -34,7 +34,7 @@ fy3-3	345	[6pt] \theta_0 = -\frac{p_0}{k}	[6pt] \theta_0 = -\frac{p_0}{k}
 fy3-3	345	= -\frac{100\,\text{kPa}}{0{,}37\,\tfrac{\text{kPa}}{{}^\circ\text{C}}}	= -\frac{100\,\text{kPa}}{0.37\,\tfrac{\text{kPa}}{{}^\circ\text{C}}}					
 fy3-3	345	= -270{,}27\,{}^\circ\text{C}	= -270.27\,{}^\circ\text{C}					
 fy3-4	89	p = \frac{F}{A}	p = \frac{F}{A}	voiman aiheuttama paine	pressure caused by a force	MAFY	Mekaniikan kaavoja	
-fy3-4	95	p = p_0 + \rho g h	p = p_0 + \rho g h					
+fy3-4	95	p = p_0 + \rho g h	p = p_0 + \rho g h	hydrostaattinen paine	hydrostatic pressure	MAFY	Mekaniikan kaavoja	MAFY: p = ρgh; opettaja 2026-11-12: tunnin merkintä pidetään
 fy3-4	159	p = p_0 + \rho g h	p = p_0 + \rho g h					
 fy3-4	159	F = \rho g h \cdot A	F = \rho g h \cdot A					
 fy3-4	173	\rho g h	\rho g h					
@@ -57,28 +57,28 @@ fy3-5	174	= -40\,\text{J} + 150\,\text{J}	= -40\,\text{J} + 150\,\text{J}
 fy3-5	174	= 110\,\text{J}	= 110\,\text{J}					
 fy3-6	165	Q = c m \Delta T	Q = c m \Delta T	siirtynyt lämpömäärä	heat transferred	MAFY	Termodynamiikan kaavoja	MAFY: Q = CΔT = cmΔT
 fy3-6	165	\Delta T = T_\text{loppu} - T_\text{alku}	\Delta T = T_\text{final} - T_\text{initial}					
-fy3-6	174	C = c m	C = c m	lämpökapasiteetti	heat capacity	MAFY	Termodynamiikan kaavoja	
-fy3-6	180	c_1 m_1 (T_1 - T) = c_2 m_2 (T - T_2)	c_1 m_1 (T_1 - T) = c_2 m_2 (T - T_2)					
-fy3-6	186	c_1 m_1 T_1 - c_1 m_1 T	c_1 m_1 T_1 - c_1 m_1 T					
-fy3-6	186	= c_2 m_2 T - c_2 m_2 T_2	= c_2 m_2 T - c_2 m_2 T_2					
-fy3-6	186	[6pt] c_1 m_1 T_1 + c_2 m_2 T_2	[6pt] c_1 m_1 T_1 + c_2 m_2 T_2					
-fy3-6	186	= c_1 m_1 T + c_2 m_2 T	= c_1 m_1 T + c_2 m_2 T					
-fy3-6	186	= (c_1 m_1 + c_2 m_2)\,T	= (c_1 m_1 + c_2 m_2)\,T					
-fy3-6	196	T = \frac{c_1 m_1 T_1 + c_2 m_2 T_2}{c_1 m_1 + c_2 m_2}	T = \frac{c_1 m_1 T_1 + c_2 m_2 T_2}{c_1 m_1 + c_2 m_2}					
-fy3-6	263	c_\text{m} m_\text{m} (T_\text{m} - T)	c_\text{m} m_\text{m} (T_\text{m} - T)					
-fy3-6	263	= c_\text{v} m_\text{v} (T - T_\text{v})	= c_\text{w} m_\text{w} (T - T_\text{w})					
-fy3-6	263	[6pt] c_\text{m} = \frac{c_\text{v} m_\text{v} (T - T_\text{v})}{m_\text{m} (T_\text{m} - T)}	[6pt] c_\text{m} = \frac{c_\text{w} m_\text{w} (T - T_\text{w})}{m_\text{m} (T_\text{m} - T)}					
-fy3-6	278	Q_\text{v} = c_\text{v} m_\text{v} (T - T_\text{v})	Q_\text{w} = c_\text{w} m_\text{w} (T - T_\text{w})					
-fy3-6	278	= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}300\,\text{kg} \cdot 4{,}5\,\text{K}	= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.300\,\text{kg} \cdot 4.5\,\text{K}					
-fy3-6	278	= 5656{,}5\,\text{J}	= 5656.5\,\text{J}					
-fy3-6	278	[6pt] c_\text{m} = \frac{Q_\text{v}}{m_\text{m} (T_\text{m} - T)}	[6pt] c_\text{m} = \frac{Q_\text{w}}{m_\text{m} (T_\text{m} - T)}					
-fy3-6	278	= \frac{5656{,}5\,\text{J}}{0{,}200\,\text{kg} \cdot 75{,}5\,\text{K}}	= \frac{5656.5\,\text{J}}{0.200\,\text{kg} \cdot 75.5\,\text{K}}					
-fy3-6	278	= 374{,}6\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}	= 374.6\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}					
-fy3-6	299	1{,}0\,\text{kg} \cdot (80\,{}^\circ\text{C} - T)	1.0\,\text{kg} \cdot (80\,{}^\circ\text{C} - T)					
-fy3-6	299	= 3{,}0\,\text{kg} \cdot (T - 20\,{}^\circ\text{C})	= 3.0\,\text{kg} \cdot (T - 20\,{}^\circ\text{C})					
-fy3-6	299	[6pt] 80\,{}^\circ\text{C} - T = 3T - 60\,{}^\circ\text{C}	[6pt] 80\,{}^\circ\text{C} - T = 3T - 60\,{}^\circ\text{C}					
-fy3-6	299	140\,{}^\circ\text{C} = 4T	140\,{}^\circ\text{C} = 4T					
-fy3-6	299	T = 35\,{}^\circ\text{C}	T = 35\,{}^\circ\text{C}					
+fy3-6	172	C = c m	C = c m	lämpökapasiteetti	heat capacity	MAFY	Termodynamiikan kaavoja	
+fy3-6	178	c_1 m_1 (T_1 - T) = c_2 m_2 (T - T_2)	c_1 m_1 (T_1 - T) = c_2 m_2 (T - T_2)					
+fy3-6	184	c_1 m_1 T_1 - c_1 m_1 T	c_1 m_1 T_1 - c_1 m_1 T					
+fy3-6	184	= c_2 m_2 T - c_2 m_2 T_2	= c_2 m_2 T - c_2 m_2 T_2					
+fy3-6	184	[6pt] c_1 m_1 T_1 + c_2 m_2 T_2	[6pt] c_1 m_1 T_1 + c_2 m_2 T_2					
+fy3-6	184	= c_1 m_1 T + c_2 m_2 T	= c_1 m_1 T + c_2 m_2 T					
+fy3-6	184	= (c_1 m_1 + c_2 m_2)\,T	= (c_1 m_1 + c_2 m_2)\,T					
+fy3-6	194	T = \frac{c_1 m_1 T_1 + c_2 m_2 T_2}{c_1 m_1 + c_2 m_2}	T = \frac{c_1 m_1 T_1 + c_2 m_2 T_2}{c_1 m_1 + c_2 m_2}					
+fy3-6	261	c_\text{m} m_\text{m} (T_\text{m} - T)	c_\text{m} m_\text{m} (T_\text{m} - T)					
+fy3-6	261	= c_\text{v} m_\text{v} (T - T_\text{v})	= c_\text{w} m_\text{w} (T - T_\text{w})					
+fy3-6	261	[6pt] c_\text{m} = \frac{c_\text{v} m_\text{v} (T - T_\text{v})}{m_\text{m} (T_\text{m} - T)}	[6pt] c_\text{m} = \frac{c_\text{w} m_\text{w} (T - T_\text{w})}{m_\text{m} (T_\text{m} - T)}					
+fy3-6	276	Q_\text{v} = c_\text{v} m_\text{v} (T - T_\text{v})	Q_\text{w} = c_\text{w} m_\text{w} (T - T_\text{w})					
+fy3-6	276	= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}300\,\text{kg} \cdot 4{,}5\,\text{K}	= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.300\,\text{kg} \cdot 4.5\,\text{K}					
+fy3-6	276	= 5656{,}5\,\text{J}	= 5656.5\,\text{J}					
+fy3-6	276	[6pt] c_\text{m} = \frac{Q_\text{v}}{m_\text{m} (T_\text{m} - T)}	[6pt] c_\text{m} = \frac{Q_\text{w}}{m_\text{m} (T_\text{m} - T)}					
+fy3-6	276	= \frac{5656{,}5\,\text{J}}{0{,}200\,\text{kg} \cdot 75{,}5\,\text{K}}	= \frac{5656.5\,\text{J}}{0.200\,\text{kg} \cdot 75.5\,\text{K}}					
+fy3-6	276	= 374{,}6\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}	= 374.6\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}					
+fy3-6	297	1{,}0\,\text{kg} \cdot (80\,{}^\circ\text{C} - T)	1.0\,\text{kg} \cdot (80\,{}^\circ\text{C} - T)					
+fy3-6	297	= 3{,}0\,\text{kg} \cdot (T - 20\,{}^\circ\text{C})	= 3.0\,\text{kg} \cdot (T - 20\,{}^\circ\text{C})					
+fy3-6	297	[6pt] 80\,{}^\circ\text{C} - T = 3T - 60\,{}^\circ\text{C}	[6pt] 80\,{}^\circ\text{C} - T = 3T - 60\,{}^\circ\text{C}					
+fy3-6	297	140\,{}^\circ\text{C} = 4T	140\,{}^\circ\text{C} = 4T					
+fy3-6	297	T = 35\,{}^\circ\text{C}	T = 35\,{}^\circ\text{C}					
 fy3-7	187	Q = s m	Q = s m	sulamislämpö	heat of fusion	MAFY	Termodynamiikan kaavoja	
 fy3-7	187	Q = r m	Q = r m	höyrystymislämpö	heat of vaporisation	MAFY	Termodynamiikan kaavoja	
 fy3-7	239	Pt = r\,\Delta m	Pt = r\,\Delta m					
@@ -105,7 +105,8 @@ fy3-9	441	V_2 = \frac{p_1 V_1}{p_2}	V_2 = \frac{p_1 V_1}{p_2}
 fy3-9	455	V_2 = \frac{p_1 V_1}{p_2}	V_2 = \frac{p_1 V_1}{p_2}					
 fy3-9	455	= \frac{101\,\text{kPa} \cdot 0{,}80\,\textsf{l}}{78\,\text{kPa}}	= \frac{101\,\text{kPa} \cdot 0.80\,\textsf{l}}{78\,\text{kPa}}					
 fy3-9	455	= 1{,}036\,\textsf{l}	= 1.036\,\textsf{l}					
-fy3-10	157	n = \frac{N}{N_\text{A}} = \frac{m}{M}	n = \frac{N}{N_\text{A}} = \frac{m}{M}					
+fy3-10	157	n = \frac{N}{N_\text{A}}	n = \frac{N}{N_\text{A}}	ainemäärä Avogadron vakion avulla	amount of substance from the Avogadro constant	MAFY	Kemian laskukaavoja	
+fy3-10	157	n = \frac{m}{M}	n = \frac{m}{M}	ainemäärä	amount of substance	MAFY	Kemian laskukaavoja	
 fy3-10	234	R = \frac{pV}{nT}	R = \frac{pV}{nT}					
 fy3-10	234	= \frac{101\,000\,\text{Pa} \cdot 0{,}00500\,\text{m}^3}{0{,}2071\,\text{mol} \cdot 293{,}15\,\text{K}}	= \frac{101\,000\,\text{Pa} \cdot 0.00500\,\text{m}^3}{0.2071\,\text{mol} \cdot 293.15\,\text{K}}					
 fy3-10	234	\approx 8{,}3\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}	\approx 8.3\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}					

@@ -276,8 +276,8 @@ missä $G$ on paino (N), $m$ massa (kg), $g = 9{,}81\,\text{m/s}^2$ ja $h$ nosto
 </svg>
 
 Teho on työ jaettuna siihen kuluneella ajalla. Tasaisessa liikkeessä, jossa voima on liikkeen suuntainen, teho saadaan myös voiman ja nopeuden tulona, koska $s/t = v$:
-```latex
-P = \frac{W}{t} = F v
+```kaavat
+teho :: P = \frac{W}{t} = F v
 ```
 missä $P$ on teho (W), $t$ aika (s) ja $v$ nopeus (m/s). Yksi watti on yksi joule sekunnissa: $1\,\text{W} = 1\,\text{J/s}$.
 

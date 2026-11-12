@@ -156,8 +156,9 @@ Täytetään $5{,}00$ litran pallo. Paine on $101\,\text{kPa}$ ja lämpötila $2
 </svg>
 
 Pienessäkin kaasumäärässä on valtavasti hiukkasia. Siksi niitä ei lasketa yksitellen. Ne lasketaan mooleina, samaan tapaan kuin kananmunia lasketaan tusinoina. Yksi mooli on ${6{,}022 \cdot 10^{23}}$ hiukkasta. Luku ${N_\text{A} = 6{,}022 \cdot 10^{23}\,\text{1/mol}}$ on Avogadron vakio. Ainemäärä $n$ kertoo, montako moolia hiukkasia on. Yhden moolin massa on aineen moolimassa $M$. Heliumin moolimassa on $4{,}00\,\text{g/mol}$, ilman keskimäärin $29{,}0\,\text{g/mol}$ ja hiilidioksidin $44{,}0\,\text{g/mol}$. Ainemäärän voi siis laskea kahdella tavalla: hiukkasmäärästä tai massasta.
-```latex
-n = \frac{N}{N_\text{A}} = \frac{m}{M}
+```kaavat
+ainemäärä Avogadron vakion avulla :: n = \frac{N}{N_\text{A}}
+ainemäärä :: n = \frac{m}{M}
 ```
 Tässä $N$ on hiukkasten lukumäärä, $m$ massa (g tai kg) ja $M$ moolimassa (g/mol tai kg/mol).
 

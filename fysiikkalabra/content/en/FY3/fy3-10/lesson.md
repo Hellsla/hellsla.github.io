@@ -154,8 +154,9 @@ The gas laws in the chapter *Changes of state of a gas and Boyle's law* applied 
 </svg>
 
 Even a small amount of gas contains an enormous number of particles. So we do not count them one by one but in moles, in the same way as eggs are counted in dozens. One mole is ${6.022 \cdot 10^{23}}$ particles, and the number ${N_\text{A} = 6.022 \cdot 10^{23}\,\text{1/mol}}$ is called the Avogadro constant. The amount of substance $n$ tells you how many moles of particles there are. The mass of one mole is the molar mass $M$ of the substance: $4.00\,\text{g/mol}$ for helium, $29.0\,\text{g/mol}$ for air on average and $44.0\,\text{g/mol}$ for carbon dioxide. So you can get the amount of substance both from the number of particles and from the mass:
-```latex
-n = \frac{N}{N_\text{A}} = \frac{m}{M}
+```kaavat
+amount of substance from the Avogadro constant :: n = \frac{N}{N_\text{A}}
+amount of substance :: n = \frac{m}{M}
 ```
 where $N$ is the number of particles, $m$ is the mass (g or kg) and $M$ is the molar mass (g/mol or kg/mol).
 

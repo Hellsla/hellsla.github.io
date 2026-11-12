@@ -94,8 +94,8 @@ voiman aiheuttama paine :: p = \frac{F}{A}
 Tässä $p$ on paine (Pa), $F$ on pintaa vastaan kohtisuora voima (N) ja $A$ on pinta-ala (m²). Yksi pascal on yhden newtonin voima yhden neliömetrin alalle: $1\,\text{Pa} = 1\,\text{N/m}^2$.
 
 Nesteessä syvyydessä $h$ paine on
-```latex
-p = p_0 + \rho g h
+```kaavat
+hydrostaattinen paine :: p = p_0 + \rho g h
 ```
 Tässä $p_0$ on paine nesteen pinnalla, yleensä ilmanpaine (Pa). Lisäksi $\rho$ on nesteen tiheys (kg/m³), $g$ = $9{,}81\,\text{m/s}^2$ ja $h$ on syvyys pinnasta (m). Termi $\rho g h$ on hydrostaattinen paine eli ylipaine $\Delta p = p - p_0$. Ylipaine kertoo, kuinka paljon paine on suurempi kuin paine pinnalla. Kuvaaja $(h, p)$ on suora. Suoran kulmakerroin on $\rho g$ ja vakiotermi on $p_0$. Vakiotermi on paine pinnalla, jossa syvyys on nolla. Malli on samanlainen kuin FY1:n lineaarinen malli $y = kx + b$. Vedelle $\rho$ = $1000\,\text{kg/m}^3$. Silloin paine kasvaa $9{,}81\,\text{kPa}$ jokaista metriä kohti.
 
