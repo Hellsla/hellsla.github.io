@@ -8,8 +8,6 @@
  "keskipisteeseen": "keskipisteeseen",
  "liikeyhtälö": "liikeyhtälö",
  "vetovoima": "vetovoima",
- "kenttä": "kenttä",
- "satelliitti": "satelliitti",
  "Kaavakuva pohjoisnavan suunnasta, säteet mittakaavassa. Keskellä Maa, jonka ympäri kulkee katkoviivalla geostationaarinen rata. Radan säde r on noin 42 200 km eli noin 6,6 Maan sädettä. Maa pyörii ja satelliitti kiertää samaan suuntaan, vastapäivään, ja kumpikin tekee kierroksen ajassa T = 23 h 56 min. Satelliitin sininen nopeusnuoli on radan tangentin suuntainen ja punainen gravitaatiovoiman nuoli osoittaa Maan keskipisteeseen. Maan pinnalla on antennin paikka, josta katkoviiva kulkee satelliittiin. Kuuden tunnin kuluttua antenni ja satelliitti ovat kumpikin kiertyneet neljänneskierroksen: himmeästi piirretty uusi näkösuora on sama viiva kiertyneenä.": "Kaavakuva pohjoisnavan suunnasta. Säteet ovat mittakaavassa. Keskellä on Maa. Maan ympäri kulkee katkoviivana geostationaarinen rata. Radan säde r on noin 42 200 km eli noin 6,6 Maan sädettä. Maa pyörii ja satelliitti kiertää samaan suuntaan, vastapäivään. Kumpikin tekee kierroksen ajassa T = 23 h 56 min. Satelliitin sininen nopeusnuoli on radan tangentin suuntainen. Punainen gravitaatiovoiman nuoli osoittaa Maan keskipisteeseen. Maan pinnalla on antennin paikka. Antennista kulkee katkoviiva satelliittiin. Kuuden tunnin kuluttua antenni ja satelliitti ovat kumpikin kiertyneet neljänneskierroksen. Uusi näkösuora on piirretty himmeästi. Se on sama viiva kiertyneenä.",
  "antenni": "antenni",
  "6 h myöhemmin": "6 h myöhemmin",

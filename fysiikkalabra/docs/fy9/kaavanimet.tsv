@@ -104,9 +104,6 @@ fy9-sailymislait	321	\overline{p} = m\overline{v}	\overline{p} = m\overline{v}	l
 fy9-sailymislait	321	\overline{I} = \overline{F}\Delta t	\overline{I} = \overline{F}\Delta t	voiman impulssi	impulse of a force	MAFY	Mekaniikan kaavoja	
 fy9-sailymislait	321	\overline{I} = \Delta\overline{p}	\overline{I} = \Delta\overline{p}	impulssi-liikemääräperiaate	impulse-momentum principle	MAFY	Mekaniikan kaavoja	
 fy9-sailymislait	329	m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'	m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'			ei MAFY:ssa		ei MAFY:ssa
-fy9-sailymislait	339	s_\text{p} = v_0\,t_\text{r} + \frac{v_0^2}{2a}	s_\text{p} = v_0\,t_\text{r} + \frac{v_0^2}{2a}			ei MAFY:ssa		ei MAFY:ssa
-fy9-sailymislait	339	P_\text{vesi} = \eta\rho Qgh	P_\text{hydro} = \eta\rho Qgh			ei MAFY:ssa		ei MAFY:ssa
-fy9-sailymislait	339	P_\text{tuuli} = \tfrac12\eta\rho Av^3	P_\text{wind} = \tfrac12\eta\rho Av^3			ei MAFY:ssa		ei MAFY:ssa
 fy9-tasavirta	253	I = \frac{\Delta Q}{\Delta t}	I = \frac{\Delta Q}{\Delta t}	sähkövirta	electric current	MAFY	Sähkömagnetismin kaavoja	kirjoitettu MAFY:n muotoon 2026-11-12 (docs/fy9/mafy-tunnukset.tsv)
 fy9-tasavirta	253	U = RI	U = RI	jännitehäviö johtimessa	voltage drop across a conductor	MAFY	Virtapiirien kaavoja	
 fy9-tasavirta	253	R = \rho\,\frac{\ell}{A}	R = \rho\,\frac{\ell}{A}	johtimen resistanssi	resistance of a conductor	MAFY	Virtapiirien kaavoja	tunnukset vaihdettu MAFY:n mukaisiksi 2026-11-12 (docs/fy9/mafy-tunnukset.tsv)
@@ -123,12 +120,9 @@ fy9-voimat	190	\overline{F}_{AB} = -\overline{F}_{BA}	\overline{F}_{AB} = -\over
 fy9-voimat	200	\overline{G} = m\overline{g}	\overline{G} = m\overline{g}	kappaleeseen vaikuttava painovoima Maan pinnalla	weight of a body at the Earth's surface	MAFY	Mekaniikan kaavoja	
 fy9-voimat	200	F_\mu = \mu N	F_\mu = \mu N	liukukitka	kinetic friction	MAFY	Mekaniikan kaavoja	
 fy9-voimat	200	F_{\mu_0} = \mu_0 N	F_{\mu_0} = \mu_0 N	lähtökitka, eli täysin kehittynyt lepokitka	limiting static friction	MAFY	Mekaniikan kaavoja	kirjoitettu MAFY:n muotoon 2026-11-12 (docs/fy9/mafy-tunnukset.tsv)
-fy9-ympyraliike	254	M = Fr	M = Fr	voiman momentti	moment of a force	MAFY	Mekaniikan kaavoja	
-fy9-ympyraliike	254	\Sigma\overline{F} = \overline{0}	\Sigma\overline{F} = \overline{0}			ei MAFY:ssa		ei MAFY:ssa
-fy9-ympyraliike	254	\Sigma M = 0	\Sigma M = 0			ei MAFY:ssa		ei MAFY:ssa
-fy9-ympyraliike	308	v = \omega r	v = \omega r	ratanopeus	orbital speed	MAFY	Mekaniikan kaavoja	
-fy9-ympyraliike	308	a_\text{n} = \frac{v^2}{r} = \omega^2 r	a_\text{n} = \frac{v^2}{r} = \omega^2 r	keskeiskiihtyvyys	centripetal acceleration	MAFY	Mekaniikan kaavoja	
-fy9-ympyraliike	308	\Sigma F = m\frac{v^2}{r}	\Sigma F = m\frac{v^2}{r}			ei MAFY:ssa	Mekaniikan kaavoja	MAFY:ssa Newtonin 2. laki yleisenä
-fy9-ympyraliike	318	F_\text{g} = \gamma\frac{m_1 m_2}{r^2}	F_\text{g} = \gamma\frac{m_1 m_2}{r^2}	Newtonin gravitaatiolaki	Newton's law of gravitation	MAFY	Mekaniikan kaavoja	
-fy9-ympyraliike	318	g = \gamma\frac{M}{r^2}	g = \gamma\frac{M}{r^2}			ei MAFY:ssa		ei MAFY:ssa
-fy9-ympyraliike	318	v = \sqrt{\frac{\gamma M}{r}}	v = \sqrt{\frac{\gamma M}{r}}			ei MAFY:ssa		ei MAFY:ssa
+fy9-ympyraliike	253	M = Fr	M = Fr	voiman momentti	moment of a force	MAFY	Mekaniikan kaavoja	
+fy9-ympyraliike	253	\Sigma\overline{F} = \overline{0}	\Sigma\overline{F} = \overline{0}			ei MAFY:ssa		ei MAFY:ssa
+fy9-ympyraliike	253	\Sigma M = 0	\Sigma M = 0			ei MAFY:ssa		ei MAFY:ssa
+fy9-ympyraliike	307	v = \omega r	v = \omega r	ratanopeus	orbital speed	MAFY	Mekaniikan kaavoja	
+fy9-ympyraliike	307	a_\text{n} = \frac{v^2}{r} = \omega^2 r	a_\text{n} = \frac{v^2}{r} = \omega^2 r	keskeiskiihtyvyys	centripetal acceleration	MAFY	Mekaniikan kaavoja	
+fy9-ympyraliike	358	F_\text{g} = \gamma\frac{m_1 m_2}{r^2}	F_\text{g} = \gamma\frac{m_1 m_2}{r^2}	Newtonin gravitaatiolaki	Newton's law of gravitation	MAFY	Mekaniikan kaavoja	

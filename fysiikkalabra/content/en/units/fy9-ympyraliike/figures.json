@@ -8,8 +8,6 @@
  "keskipisteeseen": "to the centre",
  "liikeyhtälö": "equation of motion",
  "vetovoima": "attraction",
- "kenttä": "field",
- "satelliitti": "satellite",
  "Kaavakuva pohjoisnavan suunnasta, säteet mittakaavassa. Keskellä Maa, jonka ympäri kulkee katkoviivalla geostationaarinen rata. Radan säde r on noin 42 200 km eli noin 6,6 Maan sädettä. Maa pyörii ja satelliitti kiertää samaan suuntaan, vastapäivään, ja kumpikin tekee kierroksen ajassa T = 23 h 56 min. Satelliitin sininen nopeusnuoli on radan tangentin suuntainen ja punainen gravitaatiovoiman nuoli osoittaa Maan keskipisteeseen. Maan pinnalla on antennin paikka, josta katkoviiva kulkee satelliittiin. Kuuden tunnin kuluttua antenni ja satelliitti ovat kumpikin kiertyneet neljänneskierroksen: himmeästi piirretty uusi näkösuora on sama viiva kiertyneenä.": "Diagram seen from the direction of the North Pole, radii to scale. In the middle is the Earth, round which the geostationary orbit runs as a dashed line. The radius r of the orbit is about 42 200 km, about 6.6 Earth radii. The Earth rotates and the satellite orbits in the same direction, anticlockwise, and each makes one revolution in the time T = 23 h 56 min. The blue velocity arrow of the satellite is along the tangent of the orbit, and the red arrow of the gravitational force points to the centre of the Earth. On the Earth's surface is the position of the dish, from which a dashed line runs to the satellite. Six hours later the dish and the satellite have each turned a quarter of a revolution: the new line of sight, drawn faintly, is the same line turned.",
  "antenni": "dish",
  "6 h myöhemmin": "6 h later",
