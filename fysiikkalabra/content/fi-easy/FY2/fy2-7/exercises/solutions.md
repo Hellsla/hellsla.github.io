@@ -216,20 +216,20 @@ Syötettyjen energioiden summa on $1016\,\text{MWh}$ ja häviöiden summa $42{,}
 ## fy2-7-L1-09
 **Annettu:** verkkoon lähtevä energia $E_\text{lähtö} = 500\,\text{kWh}$; häviö $4{,}0\,\%$ lähtevästä energiasta; muunnos MAFY-taulukosta (Yksikkömuunnoksia, energia/työ, kilowattitunti) $1\,\text{kWh} = 3{,}6 \cdot 10^{6}\,\text{J}$
 **Kysytty:** häviävä energia $E_\text{häviö}$ megajouleina
-**Periaate:** Häviö on tietty osuus verkkoon lähtevästä energiasta. Lasketaan se ensin kilowattitunteina ja muunnetaan sitten jouleiksi.
+**Periaate:** Häviö on osa verkkoon lähtevästä energiasta. Lasketaan ensin häviö kilowattitunteina. Sitten muutetaan se jouleiksi.
 **Kaava:** $E_\text{häviö} = 0{,}040 \cdot E_\text{lähtö}$
 **Muunnokset:** $4{,}0\,\% = 0{,}040$ ja $1\,\text{kWh} = 3{,}6 \cdot 10^{6}\,\text{J} = 3{,}6\,\text{MJ}$.
 **Sijoitus:** $E_\text{häviö} = 0{,}040 \cdot 500\,\text{kWh} = 20\,\text{kWh}$ ja $20\,\text{kWh} \cdot 3{,}6\,\tfrac{\text{MJ}}{\text{kWh}} = 72\,\text{MJ}$
-**Vastaus:** $72\,\text{MJ}$, kaksi merkitsevää numeroa kuten häviöprosentissa $4{,}0\,\%$. Muunnoskerroin on MAFY-taulukosta (Yksikkömuunnoksia); eri taulukoiden arvot poikkeavat hieman, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
-**Järkevyys:** Yksi kilowattitunti on $3{,}6\,\text{MJ}$, joten $20\,\text{kWh}$ on noin $20 \cdot 4 = 80\,\text{MJ}$ hieman pienennettynä. Tulos $72\,\text{MJ}$ sopii tähän.
+**Vastaus:** $72\,\text{MJ}$, kaksi merkitsevää numeroa kuten häviöprosentissa $4{,}0\,\%$. Muunnoskerroin on MAFY-taulukosta (Yksikkömuunnoksia). Eri taulukoiden arvot eroavat vähän. Vastaus kelpaa, kun se on noin $\pm 4\,\%$ sisällä.
+**Järkevyys:** Yksi kilowattitunti on $3{,}6\,\text{MJ}$. Siis $20\,\text{kWh}$ on noin $20 \cdot 4 = 80\,\text{MJ}$, hieman vähemmän. Tulos $72\,\text{MJ}$ sopii tähän.
 
 ## fy2-7-L2-09
 **Annettu:** kumpaankin verkkoon lähtevä energia $E_\text{lähtö} = 250\,\text{MWh}$; häviöosuudet luetaan kuvasta
 **Kysytty:** häviöiden erotus $\Delta E$ megawattitunteina
-**Periaate:** Häviö on osuus verkkoon lähtevästä energiasta. Lasketaan kummankin verkon häviö ja vähennetään sähköverkon häviö kaukolämpöverkon häviöstä.
-**Kuvaajan lukeminen:** Sähköverkon virrasta $4\,\%$ haarautuu häviöksi ja kaukolämpöverkon virrasta $9\,\%$. Lähtevä energia on molemmissa $100\,\%$, joten osuudet voi käyttää suoraan.
+**Periaate:** Häviö on osa verkkoon lähtevästä energiasta. Lasketaan kummankin verkon häviö. Sitten vähennetään sähköverkon häviö kaukolämpöverkon häviöstä.
+**Kuvaajan lukeminen:** Sähköverkon virrasta $4\,\%$ menee häviöön. Kaukolämpöverkon virrasta $9\,\%$ menee häviöön. Lähtevä energia on molemmissa $100\,\%$, joten osuudet voi käyttää suoraan.
 **Kaava:** $E_\text{häviö} = p \cdot E_\text{lähtö}$ ja $\Delta E = E_\text{häviö,kl} - E_\text{häviö,s}$
 **Muunnokset:** $9\,\% = 0{,}09$ ja $4\,\% = 0{,}04$.
-**Sijoitus:** $E_\text{häviö,kl} = 0{,}09 \cdot 250\,\text{MWh} = 22{,}5\,\text{MWh}$ ja $E_\text{häviö,s} = 0{,}04 \cdot 250\,\text{MWh} = 10{,}0\,\text{MWh}$, joten $\Delta E = 22{,}5\,\text{MWh} - 10{,}0\,\text{MWh} = 12{,}5\,\text{MWh}$
+**Sijoitus:** $E_\text{häviö,kl} = 0{,}09 \cdot 250\,\text{MWh} = 22{,}5\,\text{MWh}$ ja $E_\text{häviö,s} = 0{,}04 \cdot 250\,\text{MWh} = 10{,}0\,\text{MWh}$. Siis $\Delta E = 22{,}5\,\text{MWh} - 10{,}0\,\text{MWh} = 12{,}5\,\text{MWh}$
 **Vastaus:** $\Delta E \approx 12{,}5\,\text{MWh}$, kolme merkitsevää numeroa kuten lähtevässä energiassa $250\,\text{MWh}$.
-**Järkevyys:** Osuuksien erotus on $9\,\% - 4\,\% = 5\,\%$, ja $5\,\%$ luvusta $250\,\text{MWh}$ on $12{,}5\,\text{MWh}$. Kaukolämpöverkossa häviää enemmän, kuten kuvan leveämpi häviövirta näyttää.
+**Järkevyys:** Osuuksien erotus on $9\,\% - 4\,\% = 5\,\%$. Luvusta $250\,\text{MWh}$ osuus $5\,\%$ on $12{,}5\,\text{MWh}$. Kaukolämpöverkossa häviää enemmän, kuten kuvan leveämpi häviövirta näyttää.

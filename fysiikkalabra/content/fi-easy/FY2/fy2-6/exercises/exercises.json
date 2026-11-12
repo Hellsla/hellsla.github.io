@@ -143,13 +143,13 @@
     {
       "id": "fy2-6-L1-10",
       "level": 1,
-      "text": "Turvevoimala tuottaa polttamalla jyrsinturvetta lämpöenergiaa teholla $2{,}0\\,\\text{MW}$ tunnin ajan. Hae jyrsinturpeen lämpöarvo MAFY-taulukosta (mafytaulukot.fi). Kuinka monta kilogrammaa turvetta tunnin aikana palaa? Anna vastaus kilogrammoina.",
+      "text": "Turvevoimala polttaa jyrsinturvetta ja tuottaa lämpöenergiaa teholla $2{,}0\\,\\text{MW}$. Voimala toimii yhden tunnin. Etsi jyrsinturpeen lämpöarvo MAFY-taulukosta (mafytaulukot.fi). Kuinka monta kilogrammaa turvetta palaa tunnissa? Anna vastaus kilogrammoina.",
       "lookup": "MAFY",
       "answer": 720,
       "unit": "kg",
       "tolerance": 0.04,
       "hints": [
-        "Arvo löytyy MAFY-taulukon taulukosta *Polttoaineiden LHV-lämpöarvoja*."
+        "Arvo löytyy MAFY-taulukosta, taulukon nimi on *Polttoaineiden LHV-lämpöarvoja*."
       ]
     }
   ],
@@ -312,7 +312,7 @@
     {
       "id": "fy2-6-L2-08",
       "level": 2,
-      "text": "Kuvan pylväskaaviossa on Suomen sähköntuotanto vuonna 2024 energialähteittäin (Tilastokeskus). Lue kuvasta tuulivoiman tuotanto. Mikä oli Suomen tuulivoimaloiden yhteenlaskettu keskiteho vuonna 2024, kun vuodessa oli $8784\\,\\text{h}$? Anna vastaus gigawatteina.",
+      "text": "Kuvassa on pylväskaavio Suomen sähköntuotannosta vuonna 2024 (Tilastokeskus). Pylväät näyttävät, paljonko sähköä kukin energialähde tuotti. Lue kuvasta tuulivoiman tuotanto. Vuodessa oli $8784\\,\\text{h}$. Mikä oli Suomen tuulivoimaloiden yhteinen keskiteho vuonna 2024? Anna vastaus gigawatteina.",
       "figure": "fy2-6/fi-bars",
       "answer": 2.3,
       "unit": "GW",

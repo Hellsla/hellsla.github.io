@@ -114,13 +114,13 @@
     {
       "id": "fy2-8-L1-09",
       "level": 1,
-      "text": "Kaasukattilassa poltetaan talvipäivänä $2{,}0\\,\\text{kg}$ maakaasua. Hae maakaasun lämpöarvo MAFY-taulukosta (mafytaulukot.fi). Maakaasun palamisen päästökerroin on $55\\,\\text{g/MJ}$ (Tilastokeskus, polttoaineluokitus 2024). Kuinka paljon hiilidioksidia kaasun palamisessa syntyy? Anna vastaus kilogrammoina.",
+      "text": "Kaasukattilassa poltetaan talvipäivänä $2{,}0\\,\\text{kg}$ maakaasua. Etsi maakaasun lämpöarvo MAFY-taulukosta (mafytaulukot.fi). Maakaasun palamisen päästökerroin on $55\\,\\text{g/MJ}$ (Tilastokeskus, polttoaineluokitus 2024). Päästökerroin kertoo, kuinka monta grammaa päästöä syntyy yhtä megajoulea kohti. Kuinka paljon hiilidioksidia syntyy, kun kaasu palaa? Anna vastaus kilogrammoina.",
       "lookup": "MAFY",
       "answer": 5.17,
       "unit": "kg",
       "tolerance": 0.04,
       "hints": [
-        "Arvo löytyy MAFY-taulukon taulukosta *Polttoaineiden LHV-lämpöarvoja*."
+        "Arvo löytyy MAFY-taulukosta, taulukon nimi on *Polttoaineiden LHV-lämpöarvoja*."
       ]
     }
   ],
@@ -344,7 +344,7 @@
     {
       "id": "fy2-8-L2-09",
       "level": 2,
-      "text": "Esimerkkikoulu käyttää sähköä $20{,}0\\,\\text{MWh}$ vuodessa. Sähkö tuotetaan nyt kivihiilellä. Lue kuvan pylväskaaviosta kivihiilen ja maakaasun elinkaaren päästökertoimet. Kuinka paljon vuotuinen päästö pienenisi tonneina, jos sähkö tuotettaisiin maakaasulla? Anna vastaus tonneina.",
+      "text": "Esimerkkikoulu käyttää sähköä $20{,}0\\,\\text{MWh}$ vuodessa. Sähkö tuotetaan nyt kivihiilellä. Lue kuvan pylväskaaviosta kivihiilen ja maakaasun elinkaaren päästökertoimet. Elinkaaren päästö tarkoittaa kaikkia päästöjä rakentamisesta polttoon asti. Kuinka paljon vuotuinen päästö pienenisi, jos sähkö tuotettaisiin maakaasulla? Anna vastaus tonneina.",
       "figure": "fy2-8/emissions",
       "answer": 6.6,
       "unit": "t",

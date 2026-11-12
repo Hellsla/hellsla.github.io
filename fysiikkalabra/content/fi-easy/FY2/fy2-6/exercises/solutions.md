@@ -236,20 +236,20 @@ c) Tuulipuisto: $289\,080\,000\,\text{kWh} \cdot 12\,\text{g/kWh} = 3{,}469 \cdo
 ## fy2-6-L1-10
 **Annettu:** teho $P = 2{,}0\,\text{MW}$, aika $t = 1\,\text{h}$; jyrsinturpeen lämpöarvo MAFY-taulukosta (Polttoaineiden LHV-lämpöarvoja, jyrsinturve) $H = 10\,\tfrac{\text{MJ}}{\text{kg}}$
 **Kysytty:** palavan turpeen massa $m$ kilogrammoina
-**Periaate:** Voimalan tunnissa tuottama energia on $E = Pt$. Sama energia vapautuu polttoaineen palaessa, ja palamisessa vapautuva energia on $E = Hm$, joten massa saadaan ratkaisemalla $m$.
+**Periaate:** Voimalan tunnissa tuottama energia on $E = Pt$. Sama energia vapautuu, kun turve palaa. Palamisessa vapautuva energia on $E = Hm$. Kun tämä ratkaistaan massan suhteen, saadaan $m$.
 **Kaava:** $E = Pt$ ja $E = Hm \Rightarrow m = \dfrac{Pt}{H}$
-**Muunnokset:** $2{,}0\,\text{MW} = 2{,}0\,\tfrac{\text{MJ}}{\text{s}}$ ja $1\,\text{h} = 3600\,\text{s}$, joten $E = 2{,}0\,\tfrac{\text{MJ}}{\text{s}} \cdot 3600\,\text{s} = 7200\,\text{MJ}$.
+**Muunnokset:** $2{,}0\,\text{MW} = 2{,}0\,\tfrac{\text{MJ}}{\text{s}}$ ja $1\,\text{h} = 3600\,\text{s}$. Siis $E = 2{,}0\,\tfrac{\text{MJ}}{\text{s}} \cdot 3600\,\text{s} = 7200\,\text{MJ}$.
 **Sijoitus:** $m = \dfrac{7200\,\text{MJ}}{10\,\tfrac{\text{MJ}}{\text{kg}}} = 720\,\text{kg}$
-**Vastaus:** $m \approx 720\,\text{kg}$, kaksi merkitsevää numeroa kuten tehossa $2{,}0\,\text{MW}$. Lämpöarvo $10\,\tfrac{\text{MJ}}{\text{kg}}$ on MAFY-taulukosta (Polttoaineiden LHV-lämpöarvoja); eri taulukoiden arvot poikkeavat hieman, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
-**Järkevyys:** Turpeen lämpöarvo on pieni, joten sitä palaa paljon: noin $0{,}7$ tonnia tunnissa, eli noin $12\,\text{kg}$ minuutissa. Se sopii pienen $2\,\text{MW}$:n laitoksen kokoluokkaan.
+**Vastaus:** $m \approx 720\,\text{kg}$, kaksi merkitsevää numeroa kuten tehossa $2{,}0\,\text{MW}$. Lämpöarvo $10\,\tfrac{\text{MJ}}{\text{kg}}$ on MAFY-taulukosta (Polttoaineiden LHV-lämpöarvoja). Eri taulukoiden arvot eroavat vähän. Vastaus kelpaa, kun se on noin $\pm 4\,\%$ sisällä.
+**Järkevyys:** Turpeen lämpöarvo on pieni, joten sitä palaa paljon: noin $0{,}7$ tonnia tunnissa, eli noin $12\,\text{kg}$ minuutissa. Se sopii pieneen $2\,\text{MW}$:n voimalaan.
 
 ## fy2-6-L2-08
 **Annettu:** tuulivoiman vuosituotanto $E$ luetaan kuvasta; aika $t = 8784\,\text{h}$
 **Kysytty:** keskiteho $P$ gigawatteina
-**Periaate:** Keskiteho on tuotettu energia jaettuna ajalla, joten käytetään tuotetun energian kaavaa $E = Pt$ ratkaistuna tehon suhteen.
-**Kuvaajan lukeminen:** Tuulivoiman pylvään päässä on luku $20{,}2$. Vaaka-akselin yksikkö on $\text{TWh}$, joten $E = 20{,}2\,\text{TWh}$.
+**Periaate:** Keskiteho kertoo, paljonko energiaa tuotetaan keskimäärin aikayksikössä. Käytetään kaavaa $E = Pt$ ja ratkaistaan siitä teho.
+**Kuvaajan lukeminen:** Tuulivoiman pylvään päässä on luku $20{,}2$. Akselin yksikkö on $\text{TWh}$. Siis $E = 20{,}2\,\text{TWh}$.
 **Kaava:** $E = Pt \Rightarrow P = \dfrac{E}{t}$
 **Muunnokset:** $20{,}2\,\text{TWh} = 20\,200\,\text{GWh}$, koska $1\,\text{TWh} = 1000\,\text{GWh}$.
 **Sijoitus:** $P = \dfrac{20\,200\,\text{GWh}}{8784\,\text{h}} = 2{,}30\,\text{GW}$
 **Vastaus:** $P \approx 2{,}30\,\text{GW}$, kolme merkitsevää numeroa kuten luetussa tuotannossa $20{,}2\,\text{TWh}$.
-**Järkevyys:** Tarkistus: $2{,}30\,\text{GW} \cdot 8784\,\text{h} \approx 20\,200\,\text{GWh}$. Teho on suuri verrattuna yhteen $4\,\text{MW}$:n voimalaan, mutta Suomessa tuulivoimaloita on satoja.
+**Järkevyys:** Tarkistus: $2{,}30\,\text{GW} \cdot 8784\,\text{h} \approx 20\,200\,\text{GWh}$. Teho on suuri yhteen $4\,\text{MW}$:n voimalaan verrattuna. Suomessa on kuitenkin satoja tuulivoimaloita.

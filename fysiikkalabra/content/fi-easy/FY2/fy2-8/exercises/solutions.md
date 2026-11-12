@@ -207,20 +207,20 @@ c) Jos koko kivihiilisähkö korvattaisiin tuulella, uusi summa olisi $14\,700\,
 ## fy2-8-L1-09
 **Annettu:** maakaasun massa $m = 2{,}0\,\text{kg}$; lämpöarvo MAFY-taulukosta (Polttoaineiden LHV-lämpöarvoja, maakaasu) $H = 47\,\tfrac{\text{MJ}}{\text{kg}}$; päästökerroin $e = 55\,\tfrac{\text{g}}{\text{MJ}}$ (Tilastokeskus, polttoaineluokitus 2024)
 **Kysytty:** syntyvän hiilidioksidin massa $m_\text{CO2}$ kilogrammoina
-**Periaate:** Päästö on verrannollinen palamisessa vapautuvaan energiaan: päästökerroin kertoo päästön energiayksikköä kohti. Lasketaan ensin vapautuva energia lämpöarvon avulla ja sitten päästö.
+**Periaate:** Päästö kasvaa samassa suhteessa kuin vapautuva energia. Päästökerroin kertoo päästön yhtä energiayksikköä kohti. Lasketaan ensin energia lämpöarvolla. Sitten lasketaan päästö.
 **Kaava:** $E = Hm$ ja $m_\text{CO2} = eE$
 **Muunnokset:** $5170\,\text{g} = 5{,}17\,\text{kg}$, koska $1000\,\text{g} = 1\,\text{kg}$.
 **Sijoitus:** $E = 47\,\tfrac{\text{MJ}}{\text{kg}} \cdot 2{,}0\,\text{kg} = 94\,\text{MJ}$ ja $m_\text{CO2} = 55\,\tfrac{\text{g}}{\text{MJ}} \cdot 94\,\text{MJ} = 5170\,\text{g} = 5{,}17\,\text{kg}$
-**Vastaus:** $m_\text{CO2} \approx 5{,}2\,\text{kg}$, kaksi merkitsevää numeroa kuten massassa $2{,}0\,\text{kg}$. Lämpöarvo $47\,\tfrac{\text{MJ}}{\text{kg}}$ on MAFY-taulukosta (Polttoaineiden LHV-lämpöarvoja); eri taulukoiden arvot poikkeavat hieman, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
-**Järkevyys:** Kilogramma maakaasua tuottaa noin $2{,}6\,\text{kg}$ hiilidioksidia, eli noin $2{,}6$-kertaisen massan. Se on tyypillistä hiilivedyille, joiden palamisessa hiili yhtyy happeen.
+**Vastaus:** $m_\text{CO2} \approx 5{,}2\,\text{kg}$, kaksi merkitsevää numeroa kuten massassa $2{,}0\,\text{kg}$. Lämpöarvo $47\,\tfrac{\text{MJ}}{\text{kg}}$ on MAFY-taulukosta (Polttoaineiden LHV-lämpöarvoja). Eri taulukoiden arvot eroavat vähän. Vastaus kelpaa, kun se on noin $\pm 4\,\%$ sisällä.
+**Järkevyys:** Yhdestä kilogrammasta maakaasua syntyy noin $2{,}6\,\text{kg}$ hiilidioksidia. Hiilidioksidia syntyy siis noin $2{,}6$-kertainen massa. Näin käy hiilivedyillä, koska palaessa hiili yhtyy happeen.
 
 ## fy2-8-L2-09
 **Annettu:** sähkönkulutus $E = 20{,}0\,\text{MWh}$; päästökertoimet luetaan kuvasta
 **Kysytty:** päästön pieneneminen $\Delta m$ tonneina
-**Periaate:** Päästö on päästökerroin kerrottuna sähköenergialla, $m = eE$. Lasketaan päästö kummallakin tuotantotavalla ja vähennetään.
-**Kuvaajan lukeminen:** Kivihiilen pylvään päässä on luku $820$ ja maakaasun pylvään päässä $490$. Vaaka-akselin yksikkö on $\text{g CO}_2\text{-ekv./kWh}$, joten $e_\text{kivihiili} = 820\,\tfrac{\text{g}}{\text{kWh}}$ ja $e_\text{kaasu} = 490\,\tfrac{\text{g}}{\text{kWh}}$.
+**Periaate:** Päästö on päästökerroin kerrottuna sähköenergialla: $m = eE$. Lasketaan päästö kummallakin tuotantotavalla. Sitten vähennetään.
+**Kuvaajan lukeminen:** Kivihiilen pylvään päässä on luku $820$ ja maakaasun pylvään päässä $490$. Akselin yksikkö on $\text{g CO}_2\text{-ekv./kWh}$. Siis $e_\text{kivihiili} = 820\,\tfrac{\text{g}}{\text{kWh}}$ ja $e_\text{kaasu} = 490\,\tfrac{\text{g}}{\text{kWh}}$.
 **Kaava:** $\Delta m = (e_\text{kivihiili} - e_\text{kaasu})E$
 **Muunnokset:** $20{,}0\,\text{MWh} = 20\,000\,\text{kWh}$; lopuksi $1\,\text{t} = 10^{6}\,\text{g}$.
 **Sijoitus:** $\Delta m = (820 - 490)\,\tfrac{\text{g}}{\text{kWh}} \cdot 20\,000\,\text{kWh} = 6{,}6 \cdot 10^{6}\,\text{g} = 6{,}6\,\text{t}$
-**Vastaus:** $\Delta m \approx 6{,}6\,\text{t}$, kaksi merkitsevää numeroa, koska päästökertoimien erotus $330\,\tfrac{\text{g}}{\text{kWh}}$ on luettu kahden luvun erotuksena.
-**Järkevyys:** Kivihiilellä päästö on $820 \cdot 20\,000\,\text{g} = 16{,}4\,\text{t}$ ja kaasulla $490 \cdot 20\,000\,\text{g} = 9{,}8\,\text{t}$. Erotus $16{,}4\,\text{t} - 9{,}8\,\text{t} = 6{,}6\,\text{t}$ vastaa tulosta, ja se on noin $40\,\%$ kivihiilen päästöstä.
+**Vastaus:** $\Delta m \approx 6{,}6\,\text{t}$, kaksi merkitsevää numeroa, koska päästökertoimien erotus $330\,\tfrac{\text{g}}{\text{kWh}}$ on kahden luetun luvun erotus.
+**Järkevyys:** Kivihiilellä päästö on $820 \cdot 20\,000\,\text{g} = 16{,}4\,\text{t}$ ja kaasulla $490 \cdot 20\,000\,\text{g} = 9{,}8\,\text{t}$. Erotus $16{,}4\,\text{t} - 9{,}8\,\text{t} = 6{,}6\,\text{t}$ vastaa tulosta. Se on noin $40\,\%$ kivihiilen päästöstä.

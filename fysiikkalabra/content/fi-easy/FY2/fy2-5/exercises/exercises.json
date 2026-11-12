@@ -98,13 +98,13 @@
     {
       "id": "fy2-5-L1-09",
       "level": 1,
-      "text": "Etanolia poltetaan polttoaineena $0{,}50\\,\\text{kg}$. Hae etanolin lämpöarvo MAFY-taulukosta (mafytaulukot.fi). Kuinka paljon energiaa etanolin palaessa vapautuu? Anna vastaus megajouleina.",
+      "text": "Polttoaineena poltetaan etanolia. Etanolia on $0{,}50\\,\\text{kg}$. Etsi etanolin lämpöarvo MAFY-taulukosta (mafytaulukot.fi). Kuinka paljon energiaa vapautuu, kun etanoli palaa? Anna vastaus megajouleina.",
       "lookup": "MAFY",
       "answer": 13.35,
       "unit": "MJ",
       "tolerance": 0.04,
       "hints": [
-        "Arvo löytyy MAFY-taulukon taulukosta *Polttoaineiden LHV-lämpöarvoja*."
+        "Arvo löytyy MAFY-taulukosta, taulukon nimi on *Polttoaineiden LHV-lämpöarvoja*."
       ]
     }
   ],
@@ -291,7 +291,7 @@
     {
       "id": "fy2-5-L2-09",
       "level": 2,
-      "text": "Kuvan pylväskaaviossa on polttoaineiden lämpöarvoja. Lue kuvasta bensiinin ja ilmakuivan polttopuun lämpöarvot. Kuinka monta kilogrammaa polttopuuta pitäisi polttaa, jotta vapautuisi yhtä paljon energiaa kuin $12\\,\\text{kg}$:sta bensiiniä? Anna vastaus kilogrammoina.",
+      "text": "Kuvassa on pylväskaavio polttoaineiden lämpöarvoista. Lue kuvasta bensiinin lämpöarvo ja ilmakuivan polttopuun lämpöarvo. Bensiiniä palaa $12\\,\\text{kg}$. Kuinka monta kilogrammaa polttopuuta pitää polttaa, jotta energiaa vapautuu yhtä paljon? Anna vastaus kilogrammoina.",
       "figure": "fy2-5/lampoarvot",
       "answer": 34.4,
       "unit": "kg",
