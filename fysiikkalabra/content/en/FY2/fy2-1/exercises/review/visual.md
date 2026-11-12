@@ -1,20 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 191d9a7966bb3115
-SCOPE: delta added-exercise from f2c0a93ba89108b4 base 141dc47a8c70
+CONTENT-HASH: a17ecdadf7d4e05c
+SCOPE: delta round 3, L1-10 heating value 43.4 MJ/kg (E about 87 MJ)
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] L1-10 task: "mafytaulukot.fi" is plain text; it is a site name, so left as is (optional).
+- [Minor] L1-10 task: "mafytaulukot.fi" is plain text (a site name; optional).
 
 ## Checked
-- Delta: fy2-1-L1-10 (shown 1-10) and fy2-1-L2-08 (shown 1-18).
-- Opened review/shots/fy2-1-open-exercises-1280-9.png and -10.png (L1-10 card, answer field, full solution).
-- Opened fy2-1-open-exercises-L2-1280-8.png, -9.png, -10.png (L2-08 card, bar-chart figure, full solution).
-- L1-10: KaTeX renders, units upright with thin space, symbolic first, neat fraction, boxed answer, clear reasonableness block.
-- L2-08 figure: axis E (J), ticks every 100 J, E_p/E_k legend, bars readable at 700, 300/300, 500 J; not misleading (physics left to science).
-- English reads naturally and fits the set's voice. 390/360 px captures not opened; layout judged from 1280 px captures.
+- Opened fy2-1-open-exercises-1280-9.png and -10.png (content/en/FY2/fy2-1/review/shots/): L1-10 card with the answer field, the locked solution, and the full opened solution.
+- Changed values render cleanly: H = 43.4 MJ/kg in Given, the fraction chain 43.4 MJ/kg · 2.0 kg = 86.8 MJ, boxed E ≈ 87 MJ, and 87 MJ in the reasonableness block.
+- Units upright with thin spaces, decimal point in English, no red KaTeX source, nothing clipped, the card layout intact.
+- Significant figures are consistent: the substitution shows 86.8 MJ, the answer 87 MJ with its two-figure justification. 390 px captures not opened.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish n/a (English page) · accessibility 4
+illustrations n/a · typography 5 · English 4 · accessibility 4

@@ -1,19 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 191d9a7966bb3115
-SCOPE: delta added-exercise from f2c0a93ba89108b4 base 141dc47a8c70
+CONTENT-HASH: a17ecdadf7d4e05c
 
 ## Blocking
 
 ## Polish
-- fy2-1-L2-08 — same half-pipe scenario and figure as L1-03 (and L3-01 is a third); the Level 2 step (point B, percentage share) is real, but varying the context (sledge, roller coaster) would add variety. Optional.
-- fy2-1-L1-10 — the answer is a table lookup with a +-4 % tolerance; the hint names the table and row, which is enough. Optionally state in the solution that the MAFY table row gives about 43-44 MJ/kg so a student who reads 44 sees it is accepted.
+- fy2-1-L2-08 — same half-pipe scenario as L1-03 and L3-01; vary the context (sledge, roller coaster) if convenient. Optional.
 
 ## Checked
-- L1-10: E = Hm is inside the FY2 scope (the Q = cmDeltaT problem from round 1 is gone); one lookup, one multiplication, level 1 fits.
-- L1-10: situation first, question last as its own sentence; the formula and the meaning of H are given in the text, so no trap.
-- L1-10: solution follows given, asked, principle, formula, conversions, substitution, answer, reasonableness; arithmetic correct (43 * 2.0 = 86 MJ); the kWh check (24 kWh) uses 1 kWh = 3.6 MJ from the worksheet.
-- L1-10: invented situation marked with "Imagine"; the heating value is a named-source table value, not a statistic.
-- L2-08: "to the nearest percent" now states the target; the figure gives A 700/0 and B 300/300 J, no thermal energy or total, so the answer is not disclosed.
-- L2-08: solution is stepwise, reads the graph explicitly, 100 J / 700 J = 14.3 % correct, check 600 + 100 = 700 J sound.
-- Whole set: 10/8/5 exercises exceed the minimums 5/4/3; the mix of figure, table, concept, reasoning, error analysis and lookup is good; neither new task repeats the worked example.
-- Phone captures: not re-judged in this delta.
+- L1-10: answer 86.8 MJ = 43.4 MJ/kg x 2.0 kg is correct and matches solutions.md and answers.py; tolerance 4 % (83.3-90.3 MJ) accepts a student who reads 43 or 44 MJ/kg, which resolves my earlier polish note.
+- L1-10: solution is consistent throughout (substitution 86.8 MJ, answer rounded to 87 MJ with two significant figures, kWh check 87/3.6 = 24 kWh correct).
+- L1-10: still one lookup, one multiplication; E = Hm is within FY2 scope; the hint names the table and row; no trap.
+- Rest of the set unchanged from the PASS; counts 10/8/5 exceed 5/4/3.
