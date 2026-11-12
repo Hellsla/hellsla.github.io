@@ -1836,12 +1836,12 @@
             "tvt-kuvaaja"
           ],
           "needs": [
-            "Raspberry Pi tai muu tietokone, jossa on Python",
+            "oma tietokone, jossa on Python",
             "ryhmän mittaustiedostot",
             "lentovideo, joka on kuvattu aiemmin"
           ],
           "safety": [],
-          "safety_note": "Tällä tunnilla et lennätä dronea. Käsittele videoita vain koulun laitteilla. Älä jaa videoita muille.",
+          "safety_note": "Tällä tunnilla et lennätä dronea. Käytä vain videoita, joissa näkyy lentoalue ja drone. Videoissa ei saa näkyä ihmisiä. Älä jaa videoita muille. Poista videot koneeltasi, kun työ on valmis.",
           "starters": [
             "lentoanalyysi",
             "lentodata-esimerkki"
@@ -1856,7 +1856,7 @@
           ],
           "teacher": {
             "time": "Valmis ohjelma ja esimerkkiaineisto 15 min, oma data ja kuvaaja 35 min, vertailu tai video 15 min, koonti 10 min.",
-            "prep": "Asenna Python ja kuvaajakirjasto koneille ja kokeile aloitusohjelma. Kokoa ryhmien mittaustiedostot yhteen kansioon. Videoanalyysi vaatii videon, jossa kamera pysyy paikallaan ja mittakaava näkyy kuvassa."
+            "prep": "Analyysi tehdään opiskelijoiden omilla tietokoneilla: pyydä asentamaan Python ja kuvaajakirjasto ennen tuntia ja kokeile aloitusohjelma itse. Kokoa ryhmien mittaustiedostot yhteen kansioon. Videoanalyysi vaatii videon, jossa kamera pysyy paikallaan ja mittakaava näkyy kuvassa."
           },
           "status": "valmis"
         },
@@ -3442,7 +3442,7 @@
       "materials": [
         "puhelin ja jalusta",
         "mittakaava kuvaan (esimerkiksi metrin mitta)",
-        "Raspberry Pi tai muu tietokone, jossa on Python",
+        "oma tietokone, jossa on Python",
         "lentovideo, joka on kuvattu aiemmin, tai uusi lentovideo"
       ],
       "steps": [
@@ -3453,7 +3453,7 @@
       ],
       "success": "Ryhmä on mitannut paikan vähintään kymmenestä kuvasta. Ryhmä on piirtänyt nopeuden kuvaajan. Ryhmä on verrannut tulosta keskinopeuteen, joka on mitattu sekuntikellolla ja mittanauhalla.",
       "next": "Kiihtyvyyden arviointi jarrutuksesta. Ohjelma, joka tunnistaa dronen paikan videolta.",
-      "safety": "Kuvaa videolle vain lentoalue ja drone. Käsittele videot koulun laitteilla. Älä julkaise videoita.",
+      "safety": "Kuvaa videolle vain lentoalue ja drone. Videoissa ei saa näkyä ihmisiä. Älä jaa tai julkaise videoita. Poista videot, kun työ on valmis.",
       "level": 2,
       "lessons": 3,
       "courses": [

@@ -40,18 +40,18 @@ You do not need to know Python beforehand: you start from a ready-made program a
 
 | Supply | Note |
 |---|---|
-| Raspberry Pi 5 or another computer | You need Python and, for graphs, the matplotlib library. |
-| Display, keyboard and mouse | For the Raspberry Pi. |
+| Your own computer | You need Python and, for graphs, the matplotlib library. |
 | The group's measurements | From the flight log. |
 | Flight video | Only for the Challenge yourself task. |
 
-Here the Raspberry Pi is a computer with which data is processed. It does not control the drone, and it is not attached to the drone.
+The analysis is done on your own computer. If you do not have a computer or cannot install Python, tell the teacher.
 
 ## Safety and induction
 
 There is no flying in this work. See the topic [filming and privacy](ahjo-turvallisuus.html#drone-yksityisyys). It is in preparation until the school has approved it.
 
-- Handle videos only on the school's devices. Do not transfer them to your own phone and do not publish them.
+- Use only videos that show the flight area and the drone, not people.
+- Do not share or publish the videos, and delete them from your computer when the work is done.
 - If people are visible in a video, tell the teacher before you use it.
 
 ## Steps
@@ -125,8 +125,9 @@ Attach to your project diary
 
 ## For the teacher: preparation
 
-- Install Python and matplotlib and run the starter program with the example data before the lesson. The program has been tried with the example data without the graph library; drawing the graph is worth trying on a school computer.
-- There are 10 Raspberry Pi 5 computers. The Raspberry Pi 5 needs a power supply, a memory card, a display, a keyboard and a mouse. If they are not available, the work can be done on any computer that has Python.
+- The analysis is done on the students' own computers. Ask them to install Python and matplotlib before the lesson, and reserve time at the start of the lesson for checking the installations.
+- Run the starter program yourself with the example data before the lesson. The program has been tried with the example data without the graph library, so drawing the graph is worth trying.
+- The school's ten Raspberry Pi 5 computers are a reserve for those who have no computer of their own, and for the machine vision project.
 - A computer vision project needs a camera, which is a separate purchase.
 - Collect the groups' measurement files in a shared folder so that the groups can compare results.
 - A video that suits video analysis is one in which the camera stays still, the drone moves in the plane of the picture and a scale is visible in the picture.

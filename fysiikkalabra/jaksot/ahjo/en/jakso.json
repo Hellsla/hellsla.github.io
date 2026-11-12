@@ -1835,12 +1835,12 @@
             "tvt-kuvaaja"
           ],
           "needs": [
-            "a Raspberry Pi or another computer with Python",
+            "your own computer with Python",
             "the group's measurement files",
             "a flight video filmed earlier"
           ],
           "safety": [],
-          "safety_note": "There is no flying in this lesson. Handle the videos only on the school's devices, and do not share them with anyone.",
+          "safety_note": "There is no flying in this lesson. Use only videos that show the flight area and the drone, not people. Do not share or publish them, and delete them from your computer when the work is done.",
           "starters": [
             "lentoanalyysi",
             "lentodata-esimerkki"
@@ -1855,7 +1855,7 @@
           ],
           "teacher": {
             "time": "Ready-made program and example data 15 min, own data and graph 35 min, comparison or video 15 min, summary 10 min.",
-            "prep": "Install Python and the plotting library on the computers and try out the starter program. Collect the groups' measurement files in one folder. Video analysis requires a video in which the camera stays still and a scale is visible in the picture."
+            "prep": "The analysis is done on the students' own computers: ask them to install Python and the plotting library before the lesson, and try out the starter program yourself. Collect the groups' measurement files in one folder. Video analysis requires a video in which the camera stays still and a scale is visible in the picture."
           },
           "status": "valmis"
         },
@@ -3441,7 +3441,7 @@
       "materials": [
         "a phone and a tripod",
         "a scale in the picture (for example a metre rule)",
-        "a Raspberry Pi or another computer with Python",
+        "your own computer with Python",
         "a flight video filmed earlier or a new one"
       ],
       "steps": [
@@ -3452,7 +3452,7 @@
       ],
       "success": "The position has been measured from at least ten frames, the speed graph has been drawn and the result has been compared with the average speed obtained with a stopwatch and a tape measure.",
       "next": "Estimating the acceleration from braking. Detecting the drone's position in the video with a program.",
-      "safety": "Only the flight area and the drone are filmed. The videos are handled on the school's devices and are not published.",
+      "safety": "Only the flight area and the drone are filmed. There are no people in the videos, they are not shared or published, and they are deleted when the work is done.",
       "level": 2,
       "lessons": 3,
       "courses": [

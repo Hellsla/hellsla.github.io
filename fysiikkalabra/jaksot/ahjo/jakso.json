@@ -1836,12 +1836,12 @@
             "tvt-kuvaaja"
           ],
           "needs": [
-            "Raspberry Pi tai muu tietokone, jossa on Python",
+            "oma tietokone, jossa on Python",
             "ryhmän mittaustiedostot",
             "aiemmin kuvattu lentovideo"
           ],
           "safety": [],
-          "safety_note": "Tällä tunnilla ei lennätetä. Käsittele videoita vain koulun laitteilla, äläkä jaa niitä eteenpäin.",
+          "safety_note": "Tällä tunnilla ei lennätetä. Käytä vain videoita, joissa näkyy lentoalue ja drone, ei ihmisiä. Älä jaa tai julkaise niitä, ja poista ne koneeltasi, kun työ on valmis.",
           "starters": [
             "lentoanalyysi",
             "lentodata-esimerkki"
@@ -1856,7 +1856,7 @@
           ],
           "teacher": {
             "time": "Valmis ohjelma ja esimerkkiaineisto 15 min, oma data ja kuvaaja 35 min, vertailu tai video 15 min, koonti 10 min.",
-            "prep": "Asenna Python ja kuvaajakirjasto koneille ja kokeile aloitusohjelma. Kokoa ryhmien mittaustiedostot yhteen kansioon. Videoanalyysi vaatii videon, jossa kamera pysyy paikallaan ja mittakaava näkyy kuvassa."
+            "prep": "Analyysi tehdään opiskelijoiden omilla tietokoneilla: pyydä asentamaan Python ja kuvaajakirjasto ennen tuntia ja kokeile aloitusohjelma itse. Kokoa ryhmien mittaustiedostot yhteen kansioon. Videoanalyysi vaatii videon, jossa kamera pysyy paikallaan ja mittakaava näkyy kuvassa."
           },
           "status": "valmis"
         },
@@ -3442,7 +3442,7 @@
       "materials": [
         "puhelin ja jalusta",
         "mittakaava kuvaan (esimerkiksi metrin mitta)",
-        "Raspberry Pi tai muu tietokone, jossa on Python",
+        "oma tietokone, jossa on Python",
         "aiemmin kuvattu tai uusi lentovideo"
       ],
       "steps": [
@@ -3453,7 +3453,7 @@
       ],
       "success": "Paikka on mitattu vähintään kymmenestä kuvasta, nopeuden kuvaaja on piirretty ja tulosta on verrattu sekuntikellolla ja mittanauhalla saatuun keskinopeuteen.",
       "next": "Kiihtyvyyden arviointi jarrutuksesta. Dronen paikan tunnistaminen videolta ohjelmallisesti.",
-      "safety": "Videolle kuvataan vain lentoalue ja drone. Videot käsitellään koulun laitteilla, eikä niitä julkaista.",
+      "safety": "Videolle kuvataan vain lentoalue ja drone. Videoissa ei näy ihmisiä, niitä ei jaeta eikä julkaista, ja ne poistetaan, kun työ on valmis.",
       "level": 2,
       "lessons": 3,
       "courses": [

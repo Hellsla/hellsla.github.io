@@ -40,18 +40,18 @@ Pythonia ei tarvitse osata etukäteen: aloitat valmiista ohjelmasta ja muutat si
 
 | Tarvike | Huomaa |
 |---|---|
-| Raspberry Pi 5 tai muu tietokone | Tarvitset Pythonin ja kuvaajia varten matplotlib-kirjaston. |
-| Näyttö, näppäimistö ja hiiri | Raspberry Pitä varten. |
+| Oma tietokone | Tarvitset Pythonin ja kuvaajia varten matplotlib-kirjaston. |
 | Ryhmän mittaukset | Lentopöytäkirjasta. |
 | Lentovideo | Vain Haasta itsesi -tehtävään. |
 
-Raspberry Pi on tässä tietokone, jolla käsitellään dataa. Se ei ohjaa dronea, eikä sitä kiinnitetä droneen.
+Analyysi tehdään omalla tietokoneella. Jos sinulla ei ole konetta tai Pythonin asennus ei onnistu, kerro opettajalle.
 
 ## Turvallisuus ja perehdytys
 
 Tässä työssä ei lennätetä. Katso aihe [kuvaaminen ja yksityisyys](ahjo-turvallisuus.html#drone-yksityisyys). Se on valmisteilla, kunnes koulu on hyväksynyt sen.
 
-- Käsittele videoita vain koulun laitteilla. Älä siirrä niitä omaan puhelimeesi äläkä julkaise niitä.
+- Käytä vain videoita, joissa näkyy lentoalue ja drone, ei ihmisiä.
+- Älä jaa tai julkaise videoita, ja poista ne koneeltasi, kun työ on valmis.
 - Jos videossa näkyy ihmisiä, kerro opettajalle ennen kuin käytät sitä.
 
 ## Työvaiheet
@@ -125,8 +125,9 @@ Liitä projektipäiväkirjaan
 
 ## Opettajalle: valmistelu
 
-- Asenna Python ja matplotlib ja aja aloitusohjelma esimerkkiaineistolla ennen tuntia. Ohjelma on kokeiltu esimerkkiaineistolla ilman kuvaajakirjastoa; kuvaajan piirto kannattaa kokeilla koulun koneella.
-- Raspberry Pi 5 -tietokoneita on 10. Raspberry Pi 5 tarvitsee virtalähteen, muistikortin, näytön, näppäimistön ja hiiren. Jos niitä ei ole, työn voi tehdä millä tahansa koneella, jossa on Python.
+- Analyysi tehdään opiskelijoiden omilla tietokoneilla. Pyydä asentamaan Python ja matplotlib ennen tuntia ja varaa tunnin alkuun aikaa asennusten tarkistamiseen.
+- Aja aloitusohjelma itse esimerkkiaineistolla ennen tuntia. Ohjelma on kokeiltu esimerkkiaineistolla ilman kuvaajakirjastoa, joten kuvaajan piirto kannattaa kokeilla.
+- Koulun kymmenen Raspberry Pi 5 -tietokonetta ovat varalla niille, joilla ei ole omaa konetta, ja konenäköprojektin käytössä.
 - Konenäköprojekti tarvitsee kameran, joka on erillinen hankinta.
 - Kokoa ryhmien mittaustiedostot yhteiseen kansioon, jotta ryhmät voivat verrata tuloksia.
 - Videoanalyysiin sopii video, jossa kamera pysyy paikallaan, drone liikkuu kuvan tasossa ja kuvassa näkyy mittakaava.
