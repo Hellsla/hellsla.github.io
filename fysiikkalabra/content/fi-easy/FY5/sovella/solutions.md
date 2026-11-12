@@ -118,36 +118,36 @@ Pystysuunnassa kuorma ei kiihdy. Jännitysvoiman pystykomponentti on siis yhtä 
 Vaaka-akselille valitaan $\tfrac{1}{r}$ ja pystyakselille $v^2$.
 
 <svg data-fig="fy5-s2-graph" viewBox="0 0 600 420" role="img" aria-label="Kuvaaja: kuiden ratanopeuden neliö v toiseen radan säteen käänteisarvon 1 per r funktiona. Viisi mustaa pistettä: Kallisto (0,53; 0,67), Ganymedes (0,93; 1,18), Europa (1,49; 1,89), Io (2,37; 3,01) ja Amalthea (5,51; 7,01). Vaaka-akselin yksikkö on 10 potenssiin miinus 9 per metri ja pystyakselin yksikkö on 10 potenssiin 8 neliömetriä per sekunnin neliö. Pisteisiin on sovitettu suora, joka kulkee origon kautta. Suoralta on merkitty piste (5,0; 6,35). Suoran kulmakerroin on 1,27 kertaa 10 potenssiin 17 kuutiometriä per sekunnin neliö." style="max-width:100%;font-size:24px">
-  <line x1="143.5" y1="370" x2="143.5" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="196.5" y1="370" x2="196.5" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="250" y1="370" x2="250" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="303.5" y1="370" x2="303.5" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="356.5" y1="370" x2="356.5" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="410" y1="370" x2="410" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="90" y1="331" x2="410" y2="331" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="90" y1="292.5" x2="410" y2="292.5" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="90" y1="254" x2="410" y2="254" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="90" y1="215" x2="410" y2="215" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="90" y1="176" x2="410" y2="176" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="90" y1="137.5" x2="410" y2="137.5" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="90" y1="99" x2="410" y2="99" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="90" y1="60" x2="410" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="89" y1="370" x2="424" y2="370" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M436,370 L423,376 L423,364 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="140" y1="370" x2="140" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="190" y1="370" x2="190" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="240" y1="370" x2="240" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="290" y1="370" x2="290" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="340" y1="370" x2="340" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="390" y1="370" x2="390" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="90" y1="331" x2="390" y2="331" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="90" y1="292.5" x2="390" y2="292.5" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="90" y1="254" x2="390" y2="254" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="90" y1="215" x2="390" y2="215" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="90" y1="176" x2="390" y2="176" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="90" y1="137.5" x2="390" y2="137.5" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="90" y1="99" x2="390" y2="99" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="90" y1="60" x2="390" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="89" y1="370" x2="404" y2="370" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M416,370 L403,376 L403,364 Z" fill="#1f2933" stroke-linejoin="round"/>
   <line x1="90" y1="371" x2="90" y2="46" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M90,34 L96,47 L84,47 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <line x1="143.5" y1="370" x2="143.5" y2="377" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="133.5" y="379.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$1$</div></foreignObject>
-  <line x1="196.5" y1="370" x2="196.5" y2="377" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="186.5" y="379.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$2$</div></foreignObject>
-  <line x1="250" y1="370" x2="250" y2="377" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="240" y="379.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$3$</div></foreignObject>
-  <line x1="303.5" y1="370" x2="303.5" y2="377" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="293.5" y="379.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$4$</div></foreignObject>
-  <line x1="356.5" y1="370" x2="356.5" y2="377" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="346.5" y="379.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$5$</div></foreignObject>
-  <line x1="410" y1="370" x2="410" y2="377" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="400" y="379.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$6$</div></foreignObject>
+  <line x1="140" y1="370" x2="140" y2="377" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="130" y="379.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$1$</div></foreignObject>
+  <line x1="190" y1="370" x2="190" y2="377" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="180" y="379.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$2$</div></foreignObject>
+  <line x1="240" y1="370" x2="240" y2="377" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="230" y="379.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$3$</div></foreignObject>
+  <line x1="290" y1="370" x2="290" y2="377" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="280" y="379.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$4$</div></foreignObject>
+  <line x1="340" y1="370" x2="340" y2="377" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="330" y="379.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$5$</div></foreignObject>
+  <line x1="390" y1="370" x2="390" y2="377" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="380" y="379.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$6$</div></foreignObject>
   <line x1="83" y1="331" x2="90" y2="331" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <line x1="83" y1="292.5" x2="90" y2="292.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <foreignObject x="58" y="278" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$2$</div></foreignObject>
@@ -161,21 +161,21 @@ Vaaka-akselille valitaan $\tfrac{1}{r}$ ja pystyakselille $v^2$.
   <line x1="83" y1="60" x2="90" y2="60" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <foreignObject x="58" y="45.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$8$</div></foreignObject>
   <foreignObject x="60" y="375.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0$</div></foreignObject>
-  <foreignObject x="442" y="355.5" width="174" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$1/r\ (10^{-9}\,\text{m}^{-1})$</div></foreignObject>
+  <foreignObject x="422" y="355.5" width="174" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$1/r\ (10^{-9}\,\text{m}^{-1})$</div></foreignObject>
   <foreignObject x="80" y="3.5" width="174" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$v^2\ (10^{8}\,\text{m}^2/\text{s}^2)$</div></foreignObject>
-  <polyline points="90,370 410,74.5" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="384" cy="98.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="216.5" cy="253.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="169.5" cy="297" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="140" cy="324" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="118.5" cy="344" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="398" y="102" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{Amalthea}$</div></foreignObject>
-  <foreignObject x="230.5" y="257" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{Io}$</div></foreignObject>
-  <foreignObject x="183.5" y="300.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{Europa}$</div></foreignObject>
-  <line x1="356.5" y1="124" x2="356.5" y2="370" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <line x1="90" y1="124" x2="356.5" y2="124" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <circle cx="356.5" cy="124" r="8" fill="none" stroke="#c92a2a" stroke-width="2.5"/>
-  <foreignObject x="203.5" y="87.5" width="137" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$(5{,}0;\ 6{,}35)$</span></div></foreignObject>
+  <polyline points="90,370 390,74.5" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="365.5" cy="98.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="208.5" cy="253.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="164.5" cy="297" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="136.5" cy="324" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="116.5" cy="344" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <foreignObject x="379.5" y="102" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{Amalthea}$</div></foreignObject>
+  <foreignObject x="222.5" y="257" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{Io}$</div></foreignObject>
+  <foreignObject x="178.5" y="300.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{Europa}$</div></foreignObject>
+  <line x1="340" y1="124" x2="340" y2="370" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <line x1="90" y1="124" x2="340" y2="124" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <circle cx="340" cy="124" r="8" fill="none" stroke="#c92a2a" stroke-width="2.5"/>
+  <foreignObject x="187" y="87.5" width="137" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$(5{,}0;\ 6{,}35)$</span></div></foreignObject>
 </svg>
 
 **Mallivastaus:** Kaikki viisi pistettä ovat samalla suoralla, joka kulkee origon kautta. Ympyrämalli, jossa gravitaatio on keskeisvoima, kuvaa siis kuiden liikettä hyvin. Suora kulkee origon kautta, koska mallin mukaan äärettömän kaukana ($\tfrac{1}{r} = 0$) ratanopeus olisi nolla. Suoran kulmakerroin on mallin mukaan $\gamma M$. Se on sama kaikille kuille, vaikka kuiden massat ovat hyvin erilaiset.

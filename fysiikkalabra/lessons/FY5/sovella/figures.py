@@ -134,7 +134,7 @@ def moons_graph():
             "vaaka-akselilla yksikkönä 10 potenssiin miinus 9 per metri ja pystyakselilla 10 potenssiin 8 neliömetriä per sekunnin "
             "neliö. Pisteisiin on sovitettu origon kautta kulkeva suora, jolta on merkitty piste (5,0; 6,35). Suoran kulmakerroin on "
             "1,27 kertaa 10 potenssiin 17 kuutiometriä per sekunnin neliö.")
-    ax = Axes(f, (90, 370), (410, 60), x=(0, 6), y=(0, 8), xticks=[0, 1, 2, 3, 4, 5, 6], yticks=[0, 1, 2, 3, 4, 5, 6, 7, 8],
+    ax = Axes(f, (90, 370), (390, 60), x=(0, 6), y=(0, 8), xticks=[0, 1, 2, 3, 4, 5, 6], yticks=[0, 1, 2, 3, 4, 5, 6, 7, 8],
               xlabel=r"1/r\ (10^{-9}\,\text{m}^{-1})", ylabel=r"v^2\ (10^{8}\,\text{m}^2/\text{s}^2)",
               yfmt=lambda v: str(v) if v % 2 == 0 else "")
     ax.line([(0, 0), (6, 6 * 1.27)], INK, 3)

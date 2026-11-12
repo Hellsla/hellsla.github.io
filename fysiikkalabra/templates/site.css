@@ -2254,3 +2254,4 @@ ol.lessons.ch-cards:has(>li.ch-theme-row)>li.ch-card>.ch-box{flex:1;min-width:0}
 .level-done[hidden]{display:none}
 .level-done.is-all::before{content:"\2713\00a0"}
 @media print{.ex-progress,.level-done{display:none}}
+@media (min-width:600px) and (max-width:699.98px){nav.toc.has-now>.toc-now{max-width:calc(100% - 11.5rem)}}   /* from 600 px Kuuntele shows its word (about 170 px, not the icon's 5.75rem): a long section name pushed it onto a second row and the 98 px bar covered the heading it had scrolled to (fy10-kondensaattori at 640 px, check_layout 2026-11-12) */

@@ -283,7 +283,7 @@ Yksi mahdollinen kytkentä: vaihtokytkimen asennossa A kondensaattori varautuu j
   <circle cx="230" cy="130" r="6" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
   <circle cx="290" cy="95" r="6" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
   <line x1="286" y1="91" x2="236" y2="64" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <foreignObject x="220" y="17.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{A}$</div></foreignObject>
+  <foreignObject x="194" y="45.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{A}$</div></foreignObject>
   <foreignObject x="194" y="115.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{B}$</div></foreignObject>
   <circle cx="230" cy="290" r="5" fill="#1f2933"/>
   <line x1="296" y1="95" x2="320" y2="95" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>

@@ -84,7 +84,7 @@ def circuit():
     f.line(230, 130, 230, 290, INK, W)
     f.circle(230, 60, 6, WHITE, INK, 2.5); f.circle(230, 130, 6, WHITE, INK, 2.5); f.circle(290, 95, 6, WHITE, INK, 2.5)
     f.line(286, 91, 236, 64, INK, W)                       # the blade, now at A
-    f.tex(230, 32, r"\text{A}", "middle"); f.tex(214, 130, r"\text{B}", "end")
+    f.tex(214, 60, r"\text{A}", "end"); f.tex(214, 130, r"\text{B}", "end")
     f.circle(230, 290, 5, INK)
     # common terminal to the resistor and on to the capacitor
     f.line(296, 95, 320, 95, INK, W); f.rect(320, 80, 90, 30, WHITE, INK, W); f.line(410, 95, 470, 95, INK, W)
