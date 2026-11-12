@@ -131,6 +131,27 @@
           "feedback": "A longer distance does not take more time, because the force of the spring is greater farther from the equilibrium position and the body moves faster. The period does not get longer but stays the same."
         }
       ]
+    },
+    {
+      "id": "fy5-9-L1-09",
+      "level": 1,
+      "text": "A mathematical pendulum of length $1.00\\,\\text{m}$ swings on the surface of Mars with small swings. Look up the free-fall acceleration on the surface of Mars in the MAFY table (mafytaulukot.fi). Calculate the period of the pendulum.",
+      "lookup": "MAFY",
+      "answer": 3.26,
+      "unit": "s",
+      "tolerance": 0.04,
+      "hints": [
+        "The value is found in the MAFY table under *Aurinkokunta* (the Solar System)."
+      ]
+    },
+    {
+      "id": "fy5-9-L1-10",
+      "level": 1,
+      "text": "The graph shows the position of a body oscillating on a spring as a function of time. The spring constant of the spring is $120\\,\\text{N/m}$. Calculate the energy of the oscillation.",
+      "figure": "fy5-9/kuvaaja-k",
+      "answer": 0.054,
+      "unit": "J",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -339,6 +360,15 @@
           "feedback": "The claim is true, but it does not explain the answer. The extension only tells where the equilibrium position is. The period depends on how the force changes with the displacement, and that is the same spring constant $k$ in both places."
         }
       ]
+    },
+    {
+      "id": "fy5-9-L2-09",
+      "level": 2,
+      "text": "The graph shows the position of a body oscillating on a spring as a function of time. The mass of the body is $0.150\\,\\text{kg}$. Calculate the spring constant of the spring. Give the answer in newtons per metre.",
+      "figure": "fy5-9/kuvaaja-k",
+      "answer": 37.0,
+      "unit": "N/m",
+      "tolerance": 0.02
     }
   ],
   "level3": [
