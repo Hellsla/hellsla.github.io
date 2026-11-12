@@ -164,12 +164,10 @@ Jokaisella puhtaalla aineella on tietyssä olomuodossa, lämpötilassa ja painee
 
 Aineen tiheys on massan ja tilavuuden suhde. Kaavasta voi ratkaista myös massan ja tilavuuden eli kirjoittaa sen niin, että massa tai tilavuus on yksin yhtälön vasemmalla puolella. Silloin saadaan kaksi muuta muotoa:
 
-```latex
-\begin{aligned}
-\rho &= \frac{m}{V} \\
-m &= \rho V \\
-V &= \frac{m}{\rho}
-\end{aligned}
+```kaavat
+tiheys :: \rho = \frac{m}{V}
+m = \rho V
+V = \frac{m}{\rho}
 ```
 
 Tässä $\rho$ on tiheys (SI-yksikkö $\text{kg/m}^3$), $m$ massa (kg) ja $V$ tilavuus ($\text{m}^3$). Muoto $m = \rho V$ on suoraan verrannollisuuden malli $y = kx$. Massa $m$ on $y$, tilavuus $V$ on $x$ ja tiheys $\rho$ on kulmakerroin $k$.

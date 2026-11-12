@@ -1,5 +1,5 @@
 """Named formulas (```kaavat, scripts/kaavat.py; teacher 2026-11-12): the fence's parsing and HTML, what the checks
-read, and the review view that lets reviews carry over approved FY9 formula names and nothing else.
+read, and the review view that lets reviews carry over approved formula names (FY9 units, FY1–FY8 lessons) and nothing else.
 
   python scripts/test_kaavat.py
 """
@@ -58,7 +58,12 @@ ok(kaavat.review_view(OLD, OK) != kaavat.review_view(NEW.replace("v_0\\,t\n", "v
 ok(kaavat.review_view(OLD, OK) != kaavat.review_view(NEW.replace("Teksti välissä", "Toinen teksti"), OK), "review view: changed prose does not carry")
 merged = NEW.replace("```\n\nTeksti välissä.\n\n```kaavat\n", "")
 ok(kaavat.review_view(OLD, OK) != kaavat.review_view(merged, OK), "review view: formulas regrouped into other blocks do not carry")
-ok(kaavat.write(check=True), "docs/fy9/kaavanimet.tsv and the FY9 texts agree (kaavat.py write --check)")
+ok(kaavat.write(check=True), "every docs/*/kaavanimet.tsv and its texts agree (kaavat.py write --check)")
+ok(("tiheys", "\\rho = \\frac{m}{V}") in kaavat.approved("fy1-7", "fi") and ("density", "\\rho = \\frac{m}{V}") in kaavat.approved("fy1-7", "en"),
+   "a lesson's names come from its module's list (docs/fy1/kaavanimet.tsv), in each language")
+stray = [(f.relative_to(kaavat.ROOT).as_posix(), n) for l in kaavat.LANGS for f in sorted((kaavat.ROOT / "content" / l).glob("FY*/*/lesson.md"))
+         for n, t in kaavat.names_of(f.read_text(encoding="utf-8")) if (n, " ".join(t.split())) not in kaavat.approved(f.parent.name, l)]
+ok(not stray, "every formula name in a lesson is in its module's approved list" + (f": {stray[:3]}" if stray else ""))
 missing = [(l, u) for l in kaavat.LANGS for u in units.ids(l) if u.startswith("fy9-") and "```latex" in (units.folder(u, l) / "unit.md").read_text()
            and any(r["yksikkö"] == u and r[kaavat.LANGS[l]] for r in kaavat.table())]
 ok(not missing or all(u == "fy9-koe" for _, u in missing), "every FY9 display formula with a name in the table is named in every language (the koe unit's calculation stays a ```latex block)")

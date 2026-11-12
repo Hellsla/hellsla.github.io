@@ -10,8 +10,11 @@ beside the formula, above it on a phone):
 The name is plain text (inline `$...$` allowed); the formula is display LaTeX as in a ```latex fence. The FY9 names
 follow the formula tables of mafytaulukot.fi, or are proposals in their style; docs/fy9/kaavanimet.tsv lists every
 FY9 formula with its name in each language and is the teacher's approval of the names (reviews.py "formula names").
+The modules FY1–FY8 follow one at a time (teacher 2026-11-12, "nimeä ainoastaan kaavat jotka ovat mafyssa"): only a
+formula that is in the MAFY tables gets a name, MAFY's own; docs/<fy1>/kaavanimet.tsv lists every display formula of
+the module's lessons (first column `tunti`) as the FY9 table lists the units' (first column `yksikkö`).
 
-  python scripts/kaavat.py write [--check]   write the names of docs/fy9/kaavanimet.tsv into the FY9 unit texts
+  python scripts/kaavat.py write [--check]   write the names of every docs/*/kaavanimet.tsv into the texts
 """
 import html
 import re
@@ -22,6 +25,11 @@ ROOT = Path(__file__).resolve().parent.parent
 FENCE = re.compile(r"```kaavat\n(.*?)```", re.S)
 SEP = " :: "
 NAMES = ROOT / "docs" / "fy9" / "kaavanimet.tsv"
+
+
+def tables():
+    """Every approved list: docs/fy9/kaavanimet.tsv (units) and docs/<module>/kaavanimet.tsv (lessons)."""
+    return sorted((ROOT / "docs").glob("*/kaavanimet.tsv"))
 
 
 def rows(body):
@@ -89,24 +97,40 @@ def names_of(text):
     return [(n, t) for m in FENCE.finditer(text) for n, t in rows(m.group(1)) if n]
 
 
-# ------------------------------------------------------------------ FY9: names of docs/fy9/kaavanimet.tsv into the texts
+# ------------------------------------------------------------------ names of the docs/*/kaavanimet.tsv into the texts
 LANGS = {"fi": "nimi", "fi-easy": "nimi", "en": "name_en"}
+KEYS = ("yksikkö", "tunti")          # the first column: a unit of FY9 or a lesson of FY1–FY8
 
 
-def table():
-    """The rows of docs/fy9/kaavanimet.tsv as dicts."""
-    lines = [l for l in NAMES.read_text(encoding="utf-8").split("\n") if l and not l.startswith("#")]
-    head = lines[0].split("\t")
-    return [dict(zip(head, l.split("\t"))) for l in lines[1:]]
+def table(path=None):
+    """The rows of one list (docs/fy9/kaavanimet.tsv by default), or of every list (path "all"), as dicts; "_key" is
+    the unit or lesson id, "_kind" its column (yksikkö, tunti)."""
+    out = []
+    for p in (tables() if path == "all" else [path or NAMES]):
+        lines = [l for l in p.read_text(encoding="utf-8").split("\n") if l and not l.startswith("#")]
+        head = lines[0].split("\t")
+        for l in lines[1:]:
+            r = dict(zip(head, l.split("\t"))); r["_kind"] = head[0]; r["_key"] = r[head[0]]; out.append(r)
+    return out
 
 
-def approved(unit, lang):
-    """{(name, canonical formula)} the teacher approved for a unit in a language: what reviews.py lets carry."""
+def text_file(kind, key, lang):
+    """The text a row's formulas are in: a unit's unit.md, a lesson's lesson.md (None when the language has none)."""
+    if kind == "yksikkö":
+        import units
+        f = units.folder(key, lang) / "unit.md"
+    else:
+        f = next(iter(sorted((ROOT / "content" / lang).glob(f"*/{key}/lesson.md"))), None)
+    return f if f and f.is_file() else None
+
+
+def approved(key, lang):
+    """{(name, canonical formula)} the teacher approved for a unit or a lesson in a language: what reviews.py lets carry."""
     col = LANGS.get(lang)
-    if not col or not NAMES.is_file(): return set()
+    if not col: return set()
     out = set()
-    for r in table():
-        if r["yksikkö"] != unit or not r.get(col): continue
+    for r in table("all"):
+        if r["_key"] != key or not r.get(col): continue
         tex = r["kaava"] if lang != "en" else r.get("kaava_en", "")
         out.add((r[col], " ".join(tex.split())))
     return out
@@ -124,16 +148,15 @@ def _blocks(text):
 
 
 def write(check=False):
-    """Rewrite every FY9 display block that has names in the table as a ```kaavat fence. The table's rows are in text
-    order per unit; the formulas must match the text's, or nothing is written."""
-    import units
+    """Rewrite every display block that has names in a list as a ```kaavat fence. A list's rows are in text order per
+    unit or lesson; the formulas must match the text's, or nothing is written."""
     rows_by = {}
-    for r in table(): rows_by.setdefault(r["yksikkö"], []).append(r)
+    for r in table("all"): rows_by.setdefault((r["_kind"], r["_key"]), []).append(r)
     changed, errs = [], []
     for lang, col in LANGS.items():
-        for uid, rs in rows_by.items():
-            f = units.folder(uid, lang) / "unit.md"
-            if not f.is_file(): continue
+        for (kind, uid), rs in rows_by.items():
+            f = text_file(kind, uid, lang)
+            if f is None: continue
             text = f.read_text(encoding="utf-8")
             out, pos, k = [], 0, 0
             for m, parts in _blocks(text):

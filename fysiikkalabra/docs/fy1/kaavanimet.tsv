@@ -1,25 +1,25 @@
-# FY1:n kaavojen nimet MAFY-taulukoiden mukaan (luonnos 2026-11-12, mafytaulukot.fi), odottaa opettajan hyväksyntää.
+# FY1:n kaavojen nimet (opettaja 2026-11-12: nimetään vain kaavat, jotka ovat mafytaulukot.fi:n taulukoissa; nimi MAFY:n mukaan).
 # Rivit tunnin tekstin järjestyksessä; jokainen erillinen kaavarivi (```latex) omalla rivillään. Nimettömät rivit ovat esimerkkien laskuja ja yksikkömuunnoksia, ja ne jäävät ennalleen.
 tunti	rivi	kaava	kaava_en	nimi	name_en	lähde	MAFY-sivu	huomio
-fy1-1	102	k = \frac{d_\text{suurempi}}{d_\text{pienempi}}	k = \frac{d_\text{larger}}{d_\text{smaller}}	kokojen suhde	ratio of sizes	ehdotus		ei MAFY:ssa; "kuinka monta kertaa suurempi"
+fy1-1	102	k = \frac{d_\text{suurempi}}{d_\text{pienempi}}	k = \frac{d_\text{larger}}{d_\text{smaller}}					
 fy1-1	424	k = \frac{d_\text{atomi}}{d_\text{protoni}}	k = \frac{d_\text{atom}}{d_\text{proton}}					
 fy1-1	436	k = \frac{d_\text{atomi}}{d_\text{protoni}}	k = \frac{d_\text{atom}}{d_\text{proton}}					
 fy1-1	436	= \frac{1{,}1\cdot10^{-10}\,\text{m}}{1{,}7\cdot10^{-15}\,\text{m}}	= \frac{1.1\cdot10^{-10}\,\text{m}}{1.7\cdot10^{-15}\,\text{m}}					
 fy1-1	436	= 6{,}47\ldots\cdot10^{4}	= 6.47\ldots\cdot10^{4}					
 fy1-1	436	\approx 6{,}5\cdot10^{4}	\approx 6.5\cdot10^{4}					
 fy1-2	498	4{,}2\,\text{km} = 4{,}2\cdot1000\,\text{m} = 4200\,\text{m}	4.2\,\text{km} = 4.2\cdot1000\,\text{m} = 4200\,\text{m}					
-fy1-2	508	t = \frac{s}{c}	t = \frac{s}{c}	valon kulkuaika	light travel time	ehdotus		ei MAFY:ssa; vrt. keskivauhti $v = s/t$ (Mekaniikan kaavoja)
-fy1-2	546	t = \frac{s}{c}	t = \frac{s}{c}	valon kulkuaika	light travel time	ehdotus		ei MAFY:ssa; vrt. keskivauhti $v = s/t$ (Mekaniikan kaavoja)
-fy1-2	558	t = \frac{s}{c}	t = \frac{s}{c}	valon kulkuaika	light travel time	ehdotus		ei MAFY:ssa; vrt. keskivauhti $v = s/t$ (Mekaniikan kaavoja)
+fy1-2	508	t = \frac{s}{c}	t = \frac{s}{c}					
+fy1-2	546	t = \frac{s}{c}	t = \frac{s}{c}					
+fy1-2	558	t = \frac{s}{c}	t = \frac{s}{c}					
 fy1-2	558	= \frac{4{,}503\cdot10^{9}\,\text{km}}{2{,}998\cdot10^{5}\,\text{km/s}}	= \frac{4.503\cdot10^{9}\,\text{km}}{2.998\cdot10^{5}\,\text{km/s}}					
 fy1-2	558	= 1{,}502\cdot10^{4}\,\text{s}	= 1.502\cdot10^{4}\,\text{s}					
 fy1-2	558	= (1{,}502\cdot10^{4} : 3600)\,\text{h} = 4{,}17\,\text{h}	= (1.502\cdot10^{4} : 3600)\,\text{h} = 4.17\,\text{h}					
 fy1-3	395	\bar{x} = \frac{x_1 + x_2 + \dots + x_n}{n}	\bar{x} = \frac{x_1 + x_2 + \dots + x_n}{n}	keskiarvo	mean	MAFY	Tilastollisia tunnuslukuja	sama nimi kuin FY9:ssä
-fy1-3	401	\Delta x = \frac{x_\text{max} - x_\text{min}}{2}	\Delta x = \frac{x_\text{max} - x_\text{min}}{2}	mittaustuloksen epävarmuus	uncertainty of a measurement	ehdotus		sama nimi kuin FY9:ssä; MAFY:ssa vain vaihteluvälin pituus
-fy1-3	439	\Delta x = \frac{d}{2}	\Delta x = \frac{d}{2}	asteikon lukemisen epävarmuus	reading uncertainty of a scale	ehdotus		ei MAFY:ssa; $d$ on pienin asteikkoväli
-fy1-3	445	\varepsilon = \frac{\Delta x}{\bar{x}} \cdot 100\,\%	\varepsilon = \frac{\Delta x}{\bar{x}} \cdot 100\,\%	suhteellinen epävarmuus	relative uncertainty	ehdotus		sama nimi kuin FY9:ssä
-fy1-3	451	\Delta x_\text{sys} = \bar{x}_\text{vertailu} - x_\text{oikea}	\Delta x_\text{sys} = \bar{x}_\text{ref} - x_\text{true}	systemaattinen virhe	systematic error	ehdotus		ei MAFY:ssa
-fy1-3	455	x = x_\text{lukema} - \Delta x_\text{sys}	x = x_\text{reading} - \Delta x_\text{sys}	korjattu mittaustulos	corrected measurement	ehdotus		ei MAFY:ssa
+fy1-3	401	\Delta x = \frac{x_\text{max} - x_\text{min}}{2}	\Delta x = \frac{x_\text{max} - x_\text{min}}{2}					
+fy1-3	439	\Delta x = \frac{d}{2}	\Delta x = \frac{d}{2}					
+fy1-3	445	\varepsilon = \frac{\Delta x}{\bar{x}} \cdot 100\,\%	\varepsilon = \frac{\Delta x}{\bar{x}} \cdot 100\,\%					
+fy1-3	451	\Delta x_\text{sys} = \bar{x}_\text{vertailu} - x_\text{oikea}	\Delta x_\text{sys} = \bar{x}_\text{ref} - x_\text{true}					
+fy1-3	455	x = x_\text{lukema} - \Delta x_\text{sys}	x = x_\text{reading} - \Delta x_\text{sys}					
 fy1-3	491	\bar{t} = \frac{t_1 + t_2 + \dots + t_n}{n}	\bar{t} = \frac{t_1 + t_2 + \dots + t_n}{n}					
 fy1-3	491	\Delta t = \frac{t_\text{max} - t_\text{min}}{2}	\Delta t = \frac{t_\text{max} - t_\text{min}}{2}					
 fy1-3	491	\varepsilon = \frac{\Delta t}{\bar{t}} \cdot 100\,\%	\varepsilon = \frac{\Delta t}{\bar{t}} \cdot 100\,\%					
@@ -32,7 +32,7 @@ fy1-3	506	= 0{,}12\,\text{s}	= 0.12\,\text{s}
 fy1-3	506	[4pt] \varepsilon = \frac{\Delta t}{\bar{t}} \cdot 100\,\%	[4pt] \varepsilon = \frac{\Delta t}{\bar{t}} \cdot 100\,\%					
 fy1-3	506	= \frac{0{,}12\,\text{s}}{3{,}1817\,\text{s}} \cdot 100\,\%	= \frac{0.12\,\text{s}}{3.1817\,\text{s}} \cdot 100\,\%					
 fy1-3	506	= 3{,}8\,\%	= 3.8\,\%					
-fy1-4	230	y = kx + b	y = kx + b	suoran yhtälö	equation of a line	ehdotus	Suora	MAFY:n Suora-sivulla muoto $y - y_0 = k(x - x_0)$ (yhden pisteen kaava), ei nimeä muodolle $y = kx + b$
+fy1-4	230	y = kx + b	y = kx + b					
 fy1-4	234	k = \frac{\Delta y}{\Delta x} = \frac{y_2 - y_1}{x_2 - x_1}	k = \frac{\Delta y}{\Delta x} = \frac{y_2 - y_1}{x_2 - x_1}	kulmakerroin	slope	MAFY	Suora	sama nimi kuin FY9:ssä
 fy1-4	370	k = \frac{T_2 - T_1}{t_2 - t_1}	k = \frac{T_2 - T_1}{t_2 - t_1}					
 fy1-4	370	b = T_1 - k t_1	b = T_1 - k t_1					
@@ -46,23 +46,25 @@ fy1-4	385	= 20\,{}^\circ\text{C}	= 20\,{}^\circ\text{C}
 fy1-4	385	[6pt] t = \frac{T - b}{k}	[6pt] t = \frac{T - b}{k}					
 fy1-4	385	= \frac{40\,{}^\circ\text{C} - 20\,{}^\circ\text{C}}{8{,}0\,\tfrac{{}^\circ\text{C}}{\text{min}}}	= \frac{40\,{}^\circ\text{C} - 20\,{}^\circ\text{C}}{8.0\,\tfrac{{}^\circ\text{C}}{\text{min}}}					
 fy1-4	385	= 2{,}5\,\text{min}	= 2.5\,\text{min}					
-fy1-5	303	s = s_0 + v t	s = s_0 + v t	paikka tasaisessa suoraviivaisessa liikkeessä	position in uniform linear motion	ehdotus	Mekaniikan kaavoja	sama nimi kuin FY9:ssä; MAFY:ssa vain tasaisesti kiihtyvä liike
+fy1-5	303	s = s_0 + v t	s = s_0 + v t					
 fy1-5	310	v = \frac{\Delta s}{\Delta t}	v = \frac{\Delta s}{\Delta t}	keskinopeus	average velocity	MAFY	Mekaniikan kaavoja	tasaisessa liikkeessä keskinopeus on sama kuin nopeus; vaihtoehto: "nopeus tasaisessa liikkeessä" (ehdotus)
-fy1-5	376	s = s_0 + v t	s = s_0 + v t	paikka tasaisessa suoraviivaisessa liikkeessä	position in uniform linear motion	ehdotus	Mekaniikan kaavoja	sama nimi kuin FY9:ssä; MAFY:ssa vain tasaisesti kiihtyvä liike
-fy1-5	387	s = s_0 + v t	s = s_0 + v t	paikka tasaisessa suoraviivaisessa liikkeessä	position in uniform linear motion	ehdotus	Mekaniikan kaavoja	sama nimi kuin FY9:ssä; MAFY:ssa vain tasaisesti kiihtyvä liike
+fy1-5	376	s = s_0 + v t	s = s_0 + v t					
+fy1-5	387	s = s_0 + v t	s = s_0 + v t					
 fy1-5	387	= 119{,}0\,\text{AU}	= 119.0\,\text{AU}					
 fy1-5	387	+ 0{,}0088602\,\tfrac{\text{AU}}{\text{vrk}} \cdot 2922\,\text{vrk}	+ 0.0088602\,\tfrac{\text{AU}}{\text{day}} \cdot 2922\,\text{days}					
 fy1-5	387	= 119{,}0\,\text{AU} + 25{,}89\,\text{AU}	= 119.0\,\text{AU} + 25.89\,\text{AU}					
 fy1-5	387	= 144{,}89\,\text{AU}	= 144.89\,\text{AU}					
-fy1-6	580	v = g\,t	v = g\,t	vapaan pudotuksen nopeus	speed in free fall	ehdotus	Mekaniikan kaavoja	MAFY: nopeus tasaisesti kiihtyvässä suoraviivaisessa liikkeessä $v = v_0 + at$, tässä $v_0 = 0$ ja $a = g$; nimi kuten tunnin otsikko
-fy1-6	651	v = g\,t	v = g\,t	vapaan pudotuksen nopeus	speed in free fall	ehdotus	Mekaniikan kaavoja	MAFY: nopeus tasaisesti kiihtyvässä suoraviivaisessa liikkeessä $v = v_0 + at$, tässä $v_0 = 0$ ja $a = g$; nimi kuten tunnin otsikko
-fy1-6	662	v = g\,t	v = g\,t	vapaan pudotuksen nopeus	speed in free fall	ehdotus	Mekaniikan kaavoja	MAFY: nopeus tasaisesti kiihtyvässä suoraviivaisessa liikkeessä $v = v_0 + at$, tässä $v_0 = 0$ ja $a = g$; nimi kuten tunnin otsikko
+fy1-6	580	v = g\,t	v = g\,t					
+fy1-6	651	v = g\,t	v = g\,t					
+fy1-6	662	v = g\,t	v = g\,t					
 fy1-6	662	= 9{,}81\,\text{m/s}^2 \cdot 1{,}5\,\text{s}	= 9.81\,\text{m/s}^2 \cdot 1.5\,\text{s}					
 fy1-6	662	= 14{,}715\,\text{m/s}	= 14.715\,\text{m/s}					
 fy1-6	662	[4pt] v = 14{,}715 \cdot 1\,\text{m/s}	[4pt] v = 14.715 \cdot 1\,\text{m/s}					
 fy1-6	662	= 14{,}715 \cdot 3{,}6\,\text{km/h}	= 14.715 \cdot 3.6\,\text{km/h}					
 fy1-6	662	= 52{,}97\,\text{km/h}	= 52.97\,\text{km/h}					
-fy1-7	167	\rho = \frac{m}{V}	\rho = \frac{m}{V}	tiheys	density	MAFY	Mekaniikan kaavoja	ratkaistut muodot $m = ho V$ ja $V = m/ho$ samassa lohkossa nimettä
+fy1-7	167	\rho = \frac{m}{V}	\rho = \frac{m}{V}	tiheys	density	MAFY	Mekaniikan kaavoja	ratkaistut muodot $m = 
+ho V$ ja $V = m/
+ho$ samassa lohkossa nimettä
 fy1-7	167	m = \rho V	m = \rho V					
 fy1-7	167	V = \frac{m}{\rho}	V = \frac{m}{\rho}					
 fy1-7	247	1\,\tfrac{\text{g}}{\text{cm}^3} = \frac{10^{-3}\,\text{kg}}{10^{-6}\,\text{m}^3} = 1000\,\tfrac{\text{kg}}{\text{m}^3}	1\,\tfrac{\text{g}}{\text{cm}^3} = \frac{10^{-3}\,\text{kg}}{10^{-6}\,\text{m}^3} = 1000\,\tfrac{\text{kg}}{\text{m}^3}					
@@ -72,8 +74,8 @@ fy1-7	359	m = \rho a^2 L	m = \rho a^2 L
 fy1-7	359	= 7870\,\tfrac{\text{kg}}{\text{m}^3} \cdot (0{,}040\,\text{m})^2 \cdot 1{,}20\,\text{m}	= 7870\,\tfrac{\text{kg}}{\text{m}^3} \cdot (0.040\,\text{m})^2 \cdot 1.20\,\text{m}					
 fy1-7	359	= 7870\,\tfrac{\text{kg}}{\text{m}^3} \cdot 1{,}92 \cdot 10^{-3}\,\text{m}^3	= 7870\,\tfrac{\text{kg}}{\text{m}^3} \cdot 1.92 \cdot 10^{-3}\,\text{m}^3					
 fy1-7	359	\approx 15{,}11\,\text{kg}	\approx 15.11\,\text{kg}					
-fy1-8	549	\varepsilon = \frac{\Delta t}{t}	\varepsilon = \frac{\Delta t}{t}	suhteellinen epävarmuus	relative uncertainty	ehdotus		sama nimi kuin FY3:n kaavalla
-fy1-8	549	t \ge \frac{\Delta t}{\varepsilon_\text{max}}	t \ge \frac{\Delta t}{\varepsilon_\text{max}}	pienin mittausaika	shortest measuring time	ehdotus		ei MAFY:ssa
+fy1-8	549	\varepsilon = \frac{\Delta t}{t}	\varepsilon = \frac{\Delta t}{t}					
+fy1-8	549	t \ge \frac{\Delta t}{\varepsilon_\text{max}}	t \ge \frac{\Delta t}{\varepsilon_\text{max}}					
 fy1-8	618	t_\text{min} = \frac{\Delta t}{\varepsilon_\text{max}}	t_\text{min} = \frac{\Delta t}{\varepsilon_\text{max}}					
 fy1-8	618	s_\text{min} = v\, t_\text{min} = \frac{v\,\Delta t}{\varepsilon_\text{max}}	s_\text{min} = v\, t_\text{min} = \frac{v\,\Delta t}{\varepsilon_\text{max}}					
 fy1-8	632	t_\text{min} = \frac{\Delta t}{\varepsilon_\text{max}}	t_\text{min} = \frac{\Delta t}{\varepsilon_\text{max}}					

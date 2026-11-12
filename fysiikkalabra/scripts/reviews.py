@@ -132,7 +132,7 @@ RULES = {                       # category: (science, pedagogy, visual)
     "core-mark":      ("none",  "none", "none"),    # an exercise or lesson activity marked core (`"core": true`) or unmarked, nothing else: the module's core path as a whole is reviewed in docs/core-path/ (teacher 2026-11-05)
     "paragraphs":     ("none",  "none", "none"),    # a task text cut into paragraphs (a blank line, "\\n\\n" in the JSON string), its words unchanged: build.exercise_text renders them, check_layout checks them (teacher 2026-11-04)
     "presentation-only": ("none", "none", "delta"),  # a simulation's code changed only in where or how it draws (an axis name, a label's place), the exact change approved in docs/presentation-only.tsv: the visual reviewer looks, test_sims.py runs
-    "formula-names": ("none",  "none", "none"),    # FY9 formulas given the names of docs/fy9/kaavanimet.tsv (```kaavat), nothing else changed (teacher 2026-11-12)
+    "formula-names": ("none",  "none", "none"),    # formulas given the names of a docs/*/kaavanimet.tsv (```kaavat; FY9 units, FY1–FY8 lessons), nothing else changed (teacher 2026-11-12)
     "teacher-figure": ("none",  "none", "none"),    # a figure the teacher approved as drawn (docs/teacher-figures.tsv, its exact Finnish SVG), its words in a translation, a task given it by "figure": the layout is check_layout's (teacher 2026-11-10)
     "split":          ("none",  "none", "none"),    # passed as one lesson before the split; this part's files moved, unchanged (answers.py: line for line)
     "added-exercise": ("delta", "delta", "delta"),   # whole exercises added or replaced, every other exercise of the set as it was passed (added_exercises; teacher 2026-11-12)
@@ -153,7 +153,7 @@ WHY = {"core-mark": "exercises or activities marked core or unmarked, nothing el
        "simulation": "the simulation's code changed", "figure": "a figure or picture changed",
        "illustration": "the illustrations only",
        "teacher-figure": "figures the teacher approved as drawn (docs/teacher-figures.tsv)",
-       "formula-names": "formula names the teacher approved (docs/fy9/kaavanimet.tsv)",
+       "formula-names": "formula names the teacher approved (docs/*/kaavanimet.tsv)",
        "presentation-only": "a simulation's drawing only, the change approved in docs/presentation-only.tsv",
        "split": "the exercises moved to their own folder, every file as it was passed (answers.py split line for line)",
        "added-exercise": "whole exercises added or replaced, every other exercise of the set unchanged"}
@@ -1311,6 +1311,10 @@ def changes(folder, base, part="lesson", split=False, new=None):
                 if a2 == b2: continue
                 if rel.endswith("/lesson.md"): ra, rb = a2, b2
                 a, b = a2, b2
+        if rel.endswith("/lesson.md") and a and b and kaavat.names_of(a) != kaavat.names_of(b):   # formula names of a docs/<module>/kaavanimet.tsv
+            ok = frozenset(kaavat.approved(folder.name, rel.split("/")[1]))
+            if ok and kaavat.review_view(a, ok) == kaavat.review_view(b, ok):
+                cats.add("formula-names"); diff.append(f"--- {rel}: formula names the teacher approved"); continue
         if rel.startswith("tests/sims/"): cats.add(test_change(rel, base, new)); diff.append(f"--- {rel}: simulation assertions changed"); continue
         if not binary and presentation_change(old, new, rel):   # where or how the sim draws, the exact change of the file approved (one row for every language): the visual reviewer sees the diff
             cats.add("presentation-only"); n += 1
