@@ -101,12 +101,12 @@ def hero():
 def kartta():
     """The concept map, stacked for a phone: the method at the top, a spine down the left and three boxes (equilibrium,
     circular motion, gravitation), each with three laws and a grey word beside each."""
-    f = Fig("fy9yl-kartta", 620, "Käsitekartta. Ylhäällä solmu: voimakuvio ensin, sitten Newtonin toinen laki summa F = m a. "
-            "Siitä lähtee alas kolme haaraa. Tasapaino: momentti M = F r, voimien summa on nolla, joten kappale ei etene, ja "
-            "momenttien summa on nolla, joten se ei kierry. Ympyräliike: ratanopeus v = 2 pii r jaettuna T:llä, normaalikiihtyvyys "
-            "a n = v toiseen jaettuna r:llä osoittaa keskipisteeseen, ja liikeyhtälö summa F = m v toiseen jaettuna r:llä. "
-            "Gravitaatio: vetovoima F = gamma m 1 m 2 jaettuna r toiseen, kentän voimakkuus g = gamma M jaettuna r toiseen ja "
-            "satelliitin ratanopeus v = neliöjuuri gamma M jaettuna r:llä.", width=380, size=20)
+    f = Fig("fy9yl-kartta", 620, "Käsitekartta. Ylhäällä solmu: voimakuvio ensin, sitten Newtonin toinen laki summa F = m a. Siitä lähtee alas "
+            "kolme haaraa. Tasapaino: momentti M = F r, voimien summa on nolla, joten kappale ei etene, ja momenttien summa "
+            "on nolla, joten se ei kierry. Ympyräliike: ratanopeus v = omega r, normaalikiihtyvyys a n = v toiseen jaettuna "
+            "r:llä osoittaa keskipisteeseen, ja liikeyhtälö summa F = m v toiseen jaettuna r:llä. Gravitaatio: vetovoima F "
+            "g = gamma m 1 m 2 jaettuna r toiseen, kentän voimakkuus g = gamma M jaettuna r toiseen ja satelliitin "
+            "ratanopeus v = neliöjuuri gamma M jaettuna r:llä.", width=380, size=20)
     groups = [
         ("tasapaino", [(r"M = Fr", "momentti"), (r"\Sigma\overline{F} = \overline{0}", "ei etene"),
                        (r"\Sigma M = 0", "ei kierry")]),

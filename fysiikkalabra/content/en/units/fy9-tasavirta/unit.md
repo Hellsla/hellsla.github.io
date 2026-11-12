@@ -166,7 +166,7 @@
 
 In a direct-current circuit the source maintains a **voltage**, and the voltage drives a **current** through the circuit. The size of the current is set by the resistance of the whole circuit, so the same battery gives different currents to different loads. Current is not used up in a component: the component transforms the electrical energy carried by the charges into light, motion or internal energy. **Power** tells how fast energy is transformed.
 
-<svg data-fig="kartta" viewBox="0 0 380 912" role="img" aria-label="Concept map. At the top the node direct-current circuit: voltage U, current I and resistance R. Four branches lead down from it. Current and resistance, the quantities of the circuit: current I = Q over t, Ohm&#x27;s law U = R I and the resistance of a wire R = rho l over A. Connections, Kirchhoff&#x27;s laws: series connection R = R1 + R2, parallel connection 1 over R = 1 over R1 + 1 over R2 and the sum of the changes in potential around a loop is zero. Power and energy, Joule&#x27;s law: P = U I, for a resistor P = R I squared = U squared over R, and energy E = P t. Source, battery and accumulator: terminal voltage U = E minus R s I, current I = E over R plus R s, and the capacity of the battery Q = I t." style="max-width:100%;font-size:20px">
+<svg data-fig="kartta" viewBox="0 0 380 912" role="img" aria-label="Concept map. At the top the node direct-current circuit: voltage U, current I and resistance R. Four branches lead down from it. Current and resistance, the quantities of the circuit: current I = delta Q over delta t, Ohm&#x27;s law U = R I and the resistance of a wire R = rho l over A. Connections, Kirchhoff&#x27;s laws: series connection R = R1 + R2, parallel connection 1 over R = 1 over R1 + 1 over R2 and the sum of the changes in potential around a loop is zero. Power and energy, Joule&#x27;s law: P = U I, for a resistor P = R I squared = U squared over R, and energy E = P t. Source, battery and accumulator: terminal voltage U = E minus R s I, current I = E over R plus R s, and the capacity of the battery Q = I t." style="max-width:100%;font-size:20px">
   <line x1="24" y1="80" x2="24" y2="734" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
   <foreignObject x="77" y="18" width="226" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\text{direct-current circuit}$</div></foreignObject>
@@ -176,7 +176,7 @@ In a direct-current circuit the source maintains a **voltage**, and the voltage 
   <foreignObject x="58" y="110" width="206" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{current, resistance}$</div></foreignObject>
   <foreignObject x="266" y="112" width="96" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{quantities}$</div></foreignObject>
   <line x1="54" y1="142" x2="362" y2="142" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="156" width="60" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$I = Q/t$</div></foreignObject>
+  <foreignObject x="58" y="157" width="74" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$I = \Delta Q/\Delta t$</div></foreignObject>
   <foreignObject x="292" y="158" width="70" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{current}$</div></foreignObject>
   <foreignObject x="58" y="206" width="50" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$U = RI$</div></foreignObject>
   <foreignObject x="327" y="208" width="35" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{Ohm}$</div></foreignObject>
@@ -255,12 +255,12 @@ This answers the opening question. The devices of the cottage are connected to t
 ### Current, voltage and resistance
 
 ```kaavat
-electric current :: I = \frac{Q}{t}
-voltage drop across a conductor :: R = \frac{U}{I}
+electric current :: I = \frac{\Delta Q}{\Delta t}
+voltage drop across a conductor :: U = RI
 resistance of a conductor :: R = \rho\,\frac{l}{A}
 ```
 
-where $I$ is the current ($\text{A}$), $Q$ the charge that has passed through a cross-section ($\text{C}$), $t$ the time ($\text{s}$), $U$ the voltage across the component ($\text{V}$), $R$ the resistance ($\Omega$), $\rho$ the resistivity ($\Omega\cdot\text{m}$), $l$ the length of the wire ($\text{m}$) and $A$ the cross-sectional area ($\text{m}^2$). By Ohm's law the resistance of a metal conductor is constant when the temperature stays the same. The resistance of a filament lamp increases as the filament heats up. An ammeter is connected in series and a voltmeter in parallel.
+where $I$ is the current ($\text{A}$), $\Delta Q$ the charge that has passed through a cross-section ($\text{C}$), $\Delta t$ the time ($\text{s}$), $U$ the voltage across the component ($\text{V}$), $R$ the resistance ($\Omega$), $\rho$ the resistivity ($\Omega\cdot\text{m}$), $l$ the length of the wire ($\text{m}$) and $A$ the cross-sectional area ($\text{m}^2$). By Ohm's law the resistance of a metal conductor is constant when the temperature stays the same. The resistance of a filament lamp increases as the filament heats up. An ammeter is connected in series and a voltmeter in parallel.
 
 ### Connections and Kirchhoff's laws
 
@@ -288,7 +288,7 @@ where $P$ is the power ($\text{W}$) and $E$ the electrical energy transformed in
 ```kaavat
 terminal voltage of a source :: U = E - R_\text{s} I
 current in a closed circuit :: I = \frac{E}{R + R_\text{s}}
-electric current :: Q = It
+charge stored in a battery (capacity) :: Q = It
 ```
 
 where $E$ is the emf ($\text{V}$), $R_\text{s}$ the internal resistance ($\Omega$), $U$ the terminal voltage ($\text{V}$), $R$ the resistance of the external circuit ($\Omega$) and $Q$ the capacity of the battery ($\text{Ah}$ or $\text{C}$). The model assumes that $E$ and $R_\text{s}$ stay constant. The energy of a battery is $W = UQ$, where $U$ is the rated voltage, and during charging the terminal voltage is $U = E + R_\text{s} I$.

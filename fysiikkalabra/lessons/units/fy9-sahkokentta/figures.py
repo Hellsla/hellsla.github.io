@@ -164,13 +164,13 @@ def kartta():
     ]
     hub_y, hub_h, x_box, gh, top = 8, 72, 44, 156, 100
     height = top + 4 * (gh + 16) - 8
-    f = Fig("fy9sk-kartta", height, "Käsitekartta. Ylhäällä solmu: varaus synnyttää sähkökentän, ja kenttä kohdistaa varaukseen "
-            "voiman F = q E. Siitä lähtee alas neljä haaraa. Varaus ja voima: varaus Q = n e, Coulombin laki F = k kertaa varausten "
-            "tulon itseisarvo jaettuna r toiseen ja voimien vektorisumma. Kenttä ja potentiaali: homogeeninen kenttä E = U jaettuna "
-            "d:llä, kentän työ W = q U ja kiihdytys puoli m v toiseen = varaus kertaa U. Kondensaattori: kapasitanssi C = Q jaettuna "
-            "U:lla, levykondensaattori C = epsilon nolla epsilon r A jaettuna d:llä ja energia W = puoli C U toiseen. Komponentit ja "
-            "turvallisuus: etuvastus R = U miinus U D jaettuna I:llä, aurinkokennon hyötysuhde eta = P jaettuna G A:lla ja kehon "
-            "läpi kulkeva virta I = U jaettuna R:llä.", width=380, size=22)
+    f = Fig("fy9sk-kartta", height, "Käsitekartta. Ylhäällä solmu: varaus synnyttää sähkökentän, ja kenttä kohdistaa varaukseen voiman F = q E. "
+            "Siitä lähtee alas neljä haaraa. Varaus ja voima: varaus Q = n e, Coulombin laki F E = k kertaa varausten tulo "
+            "jaettuna r toiseen ja voimien vektorisumma. Kenttä ja potentiaali: homogeeninen kenttä U = E kertaa d, kentän "
+            "työ W = Q U ja kiihdytys puoli m v toiseen = varaus kertaa U. Kondensaattori: kapasitanssi Q = C U, "
+            "levykondensaattori C = epsilon nolla epsilon r A jaettuna d:llä ja energia E = puoli C U toiseen. Komponentit "
+            "ja turvallisuus: etuvastus R = U miinus U D jaettuna I:llä, aurinkokennon hyötysuhde eta = P jaettuna G A:lla "
+            "ja kehon läpi kulkeva virta I = U jaettuna R:llä.", width=380, size=22)
     spine = 24
     f.line(spine, hub_y + hub_h, spine, top + 3 * (gh + 16) + 22, RULE, 3)
     f.rect(8, hub_y, 364, hub_h, GOOD_LIGHT, GOOD, 2.5, 12)

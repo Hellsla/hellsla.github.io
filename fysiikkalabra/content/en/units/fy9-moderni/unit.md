@@ -411,7 +411,7 @@
 
 What joins the phenomena of the module is **quantised energy**. Light exchanges energy with matter as photons whose energy is $E = hf$, and one photon gives its energy to one electron. The electrons of an atom and the nucleons of a nucleus can only be in certain energy states, so in transitions a photon of a definite energy is created or disappears. The differences between electron levels are electronvolts, the energies of nuclear levels and nuclear reactions millions of electronvolts. In the nucleus mass and energy are linked: $E = mc^2$.
 
-<svg data-fig="kartta" viewBox="0 0 380 744" role="img" aria-label="Concept map. At the top is the node quantised energy: the photon energy E = h f and the link between mass and energy E = m c squared. Three branches lead down from it. The photon and the atom, the world of electronvolts: the photoelectric equation h f = W + E k max, the photon of a spectral line h f = E u minus E l and the threshold voltage of an LED e U k approximately h f. The nucleus, the world of megaelectronvolts: the decay law N = N 0 times one half to the power t over T half, the activity A = lambda N and the reaction energy Q = the mass difference times c squared. Radiation and people, dose: the absorbed dose D = E over m, the equivalent dose H T = w R times D T and the inverse square law of distance. At the bottom, a rule joining all the branches: first one particle, then the number." style="max-width:min(100%,420px);font-size:20px">
+<svg data-fig="kartta" viewBox="0 0 380 744" role="img" aria-label="Concept map. At the top is the node quantised energy: the photon energy E = h f and the link between mass and energy E = m c squared. Three branches lead down from it. The photon and the atom, the world of electronvolts: the photoelectric equation h f = W + E k max, the photon of a spectral line h f = E u minus E l and the threshold voltage of an LED e U k approximately h f. The nucleus, the world of megaelectronvolts: the decay law N = N 0 times e to the power minus lambda t, the activity A = lambda N and the reaction energy E = the mass difference times c squared. Radiation and people, dose: the absorbed dose D = E over m, the equivalent dose H = w R times D and the inverse square law of distance. At the bottom, a rule joining all the branches: first one particle, then the number." style="max-width:min(100%,420px);font-size:20px">
   <line x1="24" y1="80" x2="24" y2="530" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
   <foreignObject x="108" y="18" width="164" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\text{quantised energy}$</div></foreignObject>
@@ -432,11 +432,11 @@ What joins the phenomena of the module is **quantised energy**. Light exchanges 
   <foreignObject x="58" y="314" width="122" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{the nucleus}$</div></foreignObject>
   <foreignObject x="327" y="316" width="35" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{MeV}$</div></foreignObject>
   <line x1="54" y1="346" x2="362" y2="346" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="361" width="167" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$N = N_0 \left(\tfrac12\right)^{t/T_{1/2}}$</div></foreignObject>
+  <foreignObject x="58" y="360" width="91" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$N = N_0 e^{-\lambda t}$</div></foreignObject>
   <foreignObject x="310" y="362" width="52" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{decay}$</div></foreignObject>
   <foreignObject x="58" y="412" width="50" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$A = \lambda N$</div></foreignObject>
   <foreignObject x="283" y="414" width="79" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{activity}$</div></foreignObject>
-  <foreignObject x="58" y="464" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$Q = \Delta m\,c^2$</div></foreignObject>
+  <foreignObject x="58" y="464" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$E = \Delta m\,c^2$</div></foreignObject>
   <foreignObject x="283" y="466" width="79" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{reaction}$</div></foreignObject>
   <line x1="24" y1="530" x2="44" y2="530" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="44" y="508" width="328" height="188" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
@@ -445,7 +445,7 @@ What joins the phenomena of the module is **quantised energy**. Light exchanges 
   <line x1="54" y1="550" x2="362" y2="550" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="58" y="564" width="60" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$D = E/m$</div></foreignObject>
   <foreignObject x="283" y="566" width="79" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{absorbed}$</div></foreignObject>
-  <foreignObject x="58" y="617" width="74" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$H_\text{T} = w_\text{R} D_\text{T}$</div></foreignObject>
+  <foreignObject x="58" y="616" width="60" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$H = w_\text{R} D$</div></foreignObject>
   <foreignObject x="283" y="618" width="79" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{weighted}$</div></foreignObject>
   <foreignObject x="58" y="668" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\dot{H} \propto 1/r^2$</div></foreignObject>
   <foreignObject x="283" y="670" width="79" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{distance}$</div></foreignObject>
@@ -508,7 +508,7 @@ This answers the opening question. The energy of a red photon of a grow light ($
 photon energy :: E = hf = \frac{hc}{\lambda}
 photoelectric effect :: hf = W + E_\text{k,max}
 energy of a photon emitted or absorbed by an atom :: hf = E_\text{u} - E_\text{l}
-photon momentum :: p = \frac{h}{\lambda}
+photon momentum :: p = \frac{E}{c} = \frac{h}{\lambda}
 ```
 
 where $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$ is the Planck constant, $f$ the frequency, $\lambda$ the wavelength, $W$ the work function of the metal, $E_\text{k,max}$ the largest kinetic energy of an emitted electron, $E_\text{u}$ and $E_\text{l}$ the energies of the upper and the lower energy state and $p$ the momentum of the photon. Electrons are emitted only when $hf \geq W$. An atom absorbs only a photon whose energy is exactly the difference of levels, unless the photon ionises the atom. For hydrogen $E_n = -\tfrac{13.6\,\text{eV}}{n^2}$. At the threshold voltage of an LED $eU_\text{k} \approx hf$. Conversions: $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$ and $hc \approx 1240\,\text{eV}\,\text{nm}$.
@@ -516,13 +516,14 @@ where $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$ is the Planck constant, $f$
 ### The nucleus and decay
 
 ```kaavat
-law of radioactive decay :: N = N_0 \left(\tfrac12\right)^{t/T_{1/2}}
+law of radioactive decay :: N = N_0 e^{-\lambda t}
 activity :: A = \lambda N
 decay constant :: \lambda = \frac{\ln 2}{T_{1/2}}
-energy released in a nuclear reaction :: Q = (m_\text{initial} - m_\text{final})\,c^2
+mass difference in a nuclear reaction :: \Delta m = m_\text{reactants} - m_\text{products}
+energy released in a nuclear reaction :: E = \Delta m c^2
 ```
 
-where $N$ is the number of undecayed nuclei at the time $t$, $T_{1/2}$ the half-life, $A$ the activity ($\text{Bq}$), $\lambda$ the decay constant and $Q$ the reaction energy. In a decay equation the mass number and the charge number are conserved: in alpha decay $Z$ decreases by two and $A$ by four, in beta minus decay $Z$ increases by one. The decay law describes a large set of nuclei. The binding energy is $E_\text{B} = \Delta m\,c^2$, and $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$. Fission and fusion release energy, because the binding energy per nucleon of the products is larger.
+where $N$ is the number of undecayed nuclei at the time $t$, $N_0$ the number at the start, $T_{1/2}$ the half-life, $A$ the activity ($\text{Bq}$), $\lambda$ the decay constant, $\Delta m$ the mass difference and $E$ the energy released in the reaction. Because $e^{-\lambda T_{1/2}} = \tfrac12$, the decay law can also be written $N = N_0 \left(\tfrac12\right)^{t/T_{1/2}}$, and the same law holds for the activity, $A = A_0 e^{-\lambda t}$. In a decay equation the mass number and the charge number are conserved: in alpha decay $Z$ decreases by two and $A$ by four, in beta minus decay $Z$ increases by one. The decay law describes a large set of nuclei. The binding energy is $E_\text{B} = \Delta m\,c^2$, and $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$. Fission and fusion release energy, because the binding energy per nucleon of the products is larger.
 
 <svg data-fig="puolitus" viewBox="0 0 600 380" role="img" aria-label="Graph to scale: the remaining fraction as a function of the number n of half-lives or half-value thicknesses, n from zero to five. The curve starts at 1 and falls ever more gently. Dashed lines show that n = 1 gives a half, n = 2 a quarter and n = 3 an eighth. The curve approaches zero but does not reach it: decay and the attenuation of gamma radiation have no end point." style="max-width:100%;font-size:26px">
   <line x1="174" y1="312" x2="174" y2="62" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -585,13 +586,13 @@ where $N$ is the number of undecayed nuclei at the time $t$, $T_{1/2}$ the half-
 
 ```kaavat
 absorbed dose :: D = \frac{E}{m}
-equivalent dose :: H_\text{T} = w_\text{R} D_\text{T}
+equivalent dose :: H = w_\text{R} D
 dose from the dose rate :: H = \dot{H} t
 dose rate as a function of distance :: \dot{H}_2 = \dot{H}_1 \left(\frac{r_1}{r_2}\right)^2
-attenuation law :: \dot{H} = \dot{H}_0 \left(\tfrac12\right)^{d/d_{1/2}}
+attenuation law :: I = I_0 e^{-\mu x}
 ```
 
-where $D$ is the absorbed dose ($\text{Gy}$), $E$ the absorbed energy, $m$ the mass of the tissue, $H_\text{T}$ the equivalent dose ($\text{Sv}$), $w_\text{R}$ the radiation weighting factor (alpha $20$, beta and gamma $1$), $\dot{H}$ the dose rate, $t$ the time, $r$ the distance and $d_{1/2}$ the half-value thickness. The inverse square law holds for a point source when the air does not attenuate the radiation. The half-value thickness applies to photon radiation, because alpha and beta radiation have a range. The recession speed of galaxies is $v = H_0 d$, and for a small redshift $v = cz$.
+where $D$ is the absorbed dose ($\text{Gy}$), $E$ the absorbed energy, $m$ the mass of the tissue, $H$ the equivalent dose ($\text{Sv}$), $w_\text{R}$ the radiation weighting factor (alpha $20$, beta and gamma $1$), $\dot{H}$ the dose rate, $t$ the time, $r$ the distance, $I_0$ the intensity of the radiation arriving at the surface of the medium and $I$ the intensity of the radiation that passes through, $\mu$ the attenuation coefficient ($1/\text{m}$) and $x$ the thickness of the medium. The half-value thickness is $d_{1/2} = \tfrac{\ln 2}{\mu}$, so behind a shield the dose rate decreases as $\dot{H} = \dot{H}_0 \left(\tfrac12\right)^{x/d_{1/2}}$. The inverse square law holds for a point source when the air does not attenuate the radiation. The half-value thickness applies to photon radiation, because alpha and beta radiation have a range. The recession speed of galaxies is $v = H_0 d$, and for a small redshift $v = cz$.
 
 ## Common mistakes {Virheet}
 

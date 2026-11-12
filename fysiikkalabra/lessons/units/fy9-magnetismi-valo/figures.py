@@ -101,13 +101,13 @@ def hero():
 def kartta():
     """The concept map, stacked for a phone: the magnetic field at the top, a spine down the left and three boxes
     (forces in a field, induction, light), each with three laws and a grey word beside each."""
-    f = Fig("fy9mv-kartta", 704, "Käsitekartta. Ylhäällä solmu magneettikenttä: magneettivuon tiheys B ja magneettivuo "
-            "fii = B A. Siitä lähtee alas kolme haaraa. Voimat kentässä, liikkuva varaus: magneettinen voima F = q v B "
-            "sini alfa, virtajohtimeen kohdistuva voima F = I l B sini alfa ja suoran johtimen kenttä B = myy nolla I per "
-            "2 pii r. Induktio, muuttuva vuo: induktiolaki e = miinus N delta fii per delta t, generaattorin huippujännite "
-            "e 0 = N B A kertaa 2 pii f ja muuntaja U 1 per U 2 = N 1 per N 2. Valo, sähkömagneettinen aalto: "
-            "taittumislaki n 1 sini alfa 1 = n 2 sini alfa 2, hilayhtälö d sini theeta = k lambda ja Malusin laki "
-            "I = I 0 kertaa kosini toiseen theeta.", width=380, size=20)
+    f = Fig("fy9mv-kartta", 704, "Käsitekartta. Ylhäällä solmu magneettikenttä: magneettivuon tiheys B ja magneettivuo fii = B A. Siitä lähtee "
+            "alas kolme haaraa. Voimat kentässä, liikkuva varaus: magneettinen voima F M = Q v B kohtisuora, virtajohtimeen "
+            "kohdistuva voima F M = I l B kohtisuora ja suoran johtimen kenttä B = myy nolla I per 2 pii r. Induktio, "
+            "muuttuva vuo: induktiolaki e = miinus N delta fii per delta t, generaattorin huippujännite u 0 = N A B kertaa "
+            "2 pii f ja muuntaja N 1 per N 2 = U 1 per U 2. Valo, sähkömagneettinen aalto: taittumislaki sini alfa 1 per "
+            "sini alfa 2 = n 2 per n 1, hilayhtälö d sini alfa = n lambda ja Malusin laki I = I 0 kertaa kosini toiseen "
+            "theeta.", width=380, size=20)
     groups = [
         ("voimat kentässä", "liike tai virta", [(r"F_\text{M} = QvB_\perp", "varaus"), (r"F_\text{M} = I\ell B_\perp", "johdin"),
                                                 (r"B = \mu_0 I/(2\pi r)", "johtimen kenttä")]),

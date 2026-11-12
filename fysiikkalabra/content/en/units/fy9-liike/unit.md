@@ -299,10 +299,10 @@ This answers the opening question. The velocity tells you how many metres the tr
 The average velocity is the displacement divided by the time it took:
 
 ```kaavat
-average velocity :: v_\text{av} = \frac{\Delta x}{\Delta t}
+average velocity :: \overline{v}_\text{k} = \frac{\Delta\overline{x}}{\Delta t}
 ```
 
-where $\Delta x = x_2 - x_1$ is the displacement ($\text{m}$) and $\Delta t$ the time ($\text{s}$). When the velocity $v$ is constant and the body is at the position $x_0$ at $t = 0$,
+where $\Delta\overline{x}$ is the displacement ($\text{m}$) and $\Delta t$ the time elapsed ($\text{s}$). In linear motion the signed displacement $\Delta x = x_2 - x_1$ is enough, and the average velocity is $v_\text{k} = \tfrac{\Delta x}{\Delta t}$. When the velocity $v$ is constant and the body is at the position $x_0$ at $t = 0$,
 
 ```kaavat
 position in uniform linear motion :: x = x_0 + v\,t
@@ -315,7 +315,7 @@ This is the straight line of the $(t,x)$ graph: $x_0$ is its intercept on the po
 Acceleration is the change in velocity per unit of time:
 
 ```kaavat
-average acceleration :: a = \frac{\Delta v}{\Delta t}
+average acceleration :: \overline{a}_\text{k} = \frac{\Delta\overline{v}}{\Delta t}
 ```
 
 When the acceleration is constant and the motion rectilinear, the velocity and the position at time $t$ are

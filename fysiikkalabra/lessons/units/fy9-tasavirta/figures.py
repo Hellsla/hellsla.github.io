@@ -137,12 +137,12 @@ def hero():
 def kartta():
     """The concept map, stacked for a phone: the circuit at the top, a spine down the left and four boxes, each with
     three laws and a grey word beside each."""
-    f = Fig("fy9tv-kartta", 912, "Käsitekartta. Ylhäällä solmu tasavirtapiiri: jännite U, virta I ja resistanssi R. Siitä lähtee "
-            "alas neljä haaraa. Virta ja resistanssi, piirin suureet: virta I = Q per t, Ohmin laki U = R I ja johtimen "
-            "resistanssi R = rho l per A. Kytkennät, Kirchhoffin lait: sarjaankytkentä R = R1 + R2, rinnankytkentä 1 per R = "
-            "1 per R1 + 1 per R2 ja silmukan potentiaalin muutosten summa nolla. Teho ja energia, Joulen laki: P = U I, "
-            "vastukselle P = R I toiseen = U toiseen per R ja energia E = P t. Lähde, paristo ja akku: napajännite U = E miinus "
-            "R s I, virta I = E per R plus R s ja akun kapasiteetti Q = I t.", width=380, size=20)
+    f = Fig("fy9tv-kartta", 912, "Käsitekartta. Ylhäällä solmu tasavirtapiiri: jännite U, virta I ja resistanssi R. Siitä lähtee alas neljä "
+            "haaraa. Virta ja resistanssi, piirin suureet: virta I = delta Q per delta t, Ohmin laki U = R I ja johtimen "
+            "resistanssi R = rho l per A. Kytkennät, Kirchhoffin lait: sarjaankytkentä R = R1 + R2, rinnankytkentä 1 per R "
+            "= 1 per R1 + 1 per R2 ja silmukan potentiaalin muutosten summa nolla. Teho ja energia, Joulen laki: P = U I, "
+            "vastukselle P = R I toiseen = U toiseen per R ja energia E = P t. Lähde, paristo ja akku: napajännite U = E "
+            "miinus R s I, virta I = E per R plus R s ja akun kapasiteetti Q = I t.", width=380, size=20)
     groups = [
         ("virta ja resistanssi", "suureet", [(r"I = \Delta Q/\Delta t", "virta"), (r"U = RI", "Ohm"), (r"R = \rho l/A", "johdin")]),
         ("kytkennät", "Kirchhoff", [(r"R = R_1 + R_2", "sarja"), (r"1/R = 1/R_1 + 1/R_2", "rinnan"), (r"\sum \Delta V = 0", "silmukka")]),

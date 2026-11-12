@@ -217,7 +217,7 @@
 
 A large share of the mechanics problems in the exam can be solved with two conservation laws. **Energy is always conserved**: mechanical energy is transformed into internal energy when friction, air resistance or the deformation of a body does work, but the total energy stays the same. **Momentum is conserved** when the sum of the external forces on the system is zero or their impulse during the collision is negligible.
 
-<svg data-fig="kartta" viewBox="0 0 380 604" role="img" aria-label="Concept map. At the top is the node conservation laws: energy and momentum. Three branches lead down from it. Energy: kinetic energy E k = half m v squared, potential energy E p = m g h and the work–energy principle, in which the initial mechanical energy plus the work done by other forces equals the final mechanical energy. Momentum: p = m v as vectors, the impulse–momentum principle sum of F times delta t = delta p, and conservation of momentum in a collision. Applications: in a collision momentum is conserved but kinetic energy only in an elastic one, the stopping distance is the reaction distance plus the braking distance, and the power of a hydropower plant is eta rho Q g h." style="max-width:100%;font-size:20px">
+<svg data-fig="kartta" viewBox="0 0 380 604" role="img" aria-label="Concept map. At the top is the node conservation laws: energy and momentum. Three branches lead down from it. Energy: kinetic energy E k = half m v squared, potential energy E p = m g h and the work–energy principle, in which the initial mechanical energy plus the work done by other forces equals the final mechanical energy. Momentum: p = m v as vectors, the impulse–momentum principle impulse I = delta p, and conservation of momentum in a collision. Applications: in a collision momentum is conserved but kinetic energy only in an elastic one, the stopping distance is the reaction distance plus the braking distance, and the power of a hydropower plant is eta rho Q g h." style="max-width:100%;font-size:20px">
   <line x1="24" y1="80" x2="24" y2="454" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
   <foreignObject x="103" y="18" width="174" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\text{conservation laws}$</div></foreignObject>
@@ -230,14 +230,14 @@ A large share of the mechanics problems in the exam can be solved with two conse
   <foreignObject x="239" y="156" width="123" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{kinetic energy}$</div></foreignObject>
   <foreignObject x="58" y="188" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$E_\text{p} = mgh$</div></foreignObject>
   <foreignObject x="221" y="190" width="141" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{potential energy}$</div></foreignObject>
-  <foreignObject x="58" y="223" width="214" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$E_\text{mech,1} + W_\text{other} = E_\text{mech,2}$</div></foreignObject>
+  <foreignObject x="58" y="223" width="148" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$</div></foreignObject>
   <line x1="24" y1="288" x2="44" y2="288" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="44" y="266" width="328" height="150" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
   <foreignObject x="58" y="276" width="102" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{momentum}$</div></foreignObject>
   <line x1="54" y1="308" x2="362" y2="308" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="58" y="320" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\overline{p} = m\overline{v}$</div></foreignObject>
   <foreignObject x="266" y="322" width="96" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{definition}$</div></foreignObject>
-  <foreignObject x="58" y="355" width="102" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$\Sigma\overline{F}\,\Delta t = \Delta\overline{p}$</div></foreignObject>
+  <foreignObject x="58" y="354" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\overline{I} = \Delta\overline{p}$</div></foreignObject>
   <foreignObject x="292" y="356" width="70" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{impulse}$</div></foreignObject>
   <foreignObject x="58" y="389" width="158" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$\overline{p}_\text{before} = \overline{p}_\text{after}$</div></foreignObject>
   <foreignObject x="248" y="390" width="114" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{conservation}$</div></foreignObject>
@@ -311,19 +311,20 @@ gravitational potential energy near the Earth's surface :: E_\text{p} = mgh
 where $m$ is the mass ($\text{kg}$), $v$ the speed ($\text{m/s}$), $g = 9.81\,\text{m/s}^2$ and $h$ the height above the chosen zero level ($\text{m}$). $E_\text{p} = mgh$ holds near the Earth's surface. The work–energy principle is
 
 ```kaavat
-work-energy principle of mechanics :: E_{\text{k},1} + E_{\text{p},1} + W_\text{other} = E_{\text{k},2} + E_{\text{p},2}
+work-energy principle of mechanics :: E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}
 ```
 
-where $W_\text{other}$ is the work done by forces other than the weight ($\text{J}$). The work done by a constant force is $W = F_\parallel\,s$, where $F_\parallel$ is the component of the force along the motion; the work done by friction and air resistance is negative. When $W_\text{other} = 0$, mechanical energy is conserved.
+where the index $0$ means the initial state and $W$ is the work done by forces other than the weight ($\text{J}$). The work done by a constant force is $W = F_\parallel\,s$, where $F_\parallel$ is the component of the force along the motion; the work done by friction and air resistance is negative. When $W = 0$, mechanical energy is conserved: $E_{\text{p}0} + E_{\text{k}0} = E_\text{p} + E_\text{k}$.
 
 ### Momentum and impulse
 
 ```kaavat
 momentum :: \overline{p} = m\overline{v}
-impulse-momentum principle :: \Sigma\overline{F}\,\Delta t = \Delta\overline{p}
+impulse of a force :: \overline{I} = \overline{F}\Delta t
+impulse-momentum principle :: \overline{I} = \Delta\overline{p}
 ```
 
-where $\overline{p}$ is the momentum ($\text{kg} \cdot \text{m/s}$) and $\Sigma\overline{F}$ a constant net force acting for the time interval $\Delta t$. For a varying force the average force is $F_\text{avg} = |\Delta p| : \Delta t$. In one dimension a positive direction is chosen, and velocities pointing in the opposite direction are negative. When the impulse of the external forces is negligible,
+where $\overline{p}$ is the momentum ($\text{kg} \cdot \text{m/s}$), $\overline{I}$ the impulse ($\text{N} \cdot \text{s}$) and $\overline{F}$ a constant force acting for the time interval $\Delta t$. The change in momentum is caused by the impulse of the net force, $\Sigma\overline{F}\,\Delta t = \Delta\overline{p}$. For a varying force the average force is $F_\text{avg} = |\Delta p| : \Delta t$. In one dimension a positive direction is chosen, and velocities pointing in the opposite direction are negative. When the impulse of the external forces is negligible,
 
 ```kaavat
 conservation of momentum :: m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'

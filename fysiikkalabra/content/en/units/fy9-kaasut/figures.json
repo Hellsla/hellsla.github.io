@@ -1,6 +1,5 @@
 {
  "Kuvitus: pakkasaamu pihalla. Vasemmalla autotalli, jonka ovi on auki ja jonka sisällä palaa lämmin valo; seinällä roikkuu paineilmaletku. Pihalla seisoo auto, joka on ollut ulkona koko yön: sen katolla ja ikkunoissa on huurretta. Autotallin ulkoseinän lämpömittarin punainen pylväs on matalalla. Taustalla lumiset kuuset ja vaalea aamutaivas.": "Illustration: a frosty morning in a yard. On the left a garage whose door is open and in which a warm light is on; a compressed-air hose hangs on the wall. In the yard stands a car that has been outside all night: there is frost on its roof and windows. The red column of the thermometer on the outer wall of the garage is low. In the background snowy spruces and a pale morning sky.",
- "Käsitekartta. Ylhäällä solmu paine: p = F / A. Siitä lähtee alas kolme haaraa. Neste: paine syvyydellä p = p0 + ρ g h, ylipaine ρ g h ja kokonaispaine, joka on ilmanpaine ja ylipaine yhteensä. Kaasu: tilanyhtälö p V = n R T, yhdistetty kaasulaki p1 V1 / T1 = p2 V2 / T2 ja kelvinlämpötila T = θ + 273,15 K. Lämpövoimakone: kaasun työ W = p ΔV, energian säilyminen W = Q1 − Q2 ja hyötysuhde eeta = W / Q1.": "Concept map. At the top the node pressure: p = F / A. Three branches go down from it. Liquid: pressure at depth p = p0 + ρ g h, gauge pressure ρ g h and total pressure, which is the air pressure and the gauge pressure together. Gas: the ideal gas law p V = n R T, the combined gas law p1 V1 / T1 = p2 V2 / T2 and the kelvin temperature T = θ + 273.15 K. Heat engine: work done by a gas W = p ΔV, conservation of energy W = Q1 − Q2 and efficiency eta = W / Q1.",
  "paine": "pressure",
  "syvyydellä": "at depth",
  "ylipaine": "gauge pressure",
@@ -26,5 +25,7 @@
  "k": "g",
  "neste": "liquid",
  "kaasu": "gas",
- "lämpövoimakone": "heat engine"
+ "lämpövoimakone": "heat engine",
+ "vakio": "constant",
+ "Käsitekartta. Ylhäällä solmu paine: p = F / A. Siitä lähtee alas kolme haaraa. Neste: paine syvyydellä p = p0 + ρ g h, ylipaine ρ g h ja kokonaispaine, joka on ilmanpaine ja ylipaine yhteensä. Kaasu: tilanyhtälö p V = n R T, yhdistetty kaasulaki p V / T = vakio ja kelvinlämpötila T = θ + 273,15 K. Lämpövoimakone: kaasun työ W = p ΔV, energian säilyminen W = Q1 − Q2 ja hyötysuhde eeta = W / Q1.": "Concept map. At the top the node pressure: p = F / A. Three branches go down from it. Liquid: pressure at depth p = p0 + ρ g h, gauge pressure ρ g h and total pressure, which is the air pressure and the gauge pressure together. Gas: the ideal gas law p V = n R T, the combined gas law p V / T = constant and the kelvin temperature T = θ + 273.15 K. Heat engine: work done by a gas W = p ΔV, conservation of energy W = Q1 − Q2 and efficiency eta = W / Q1."
 }

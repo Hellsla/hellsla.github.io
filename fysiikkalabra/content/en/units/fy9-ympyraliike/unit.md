@@ -172,7 +172,7 @@
 
 The problems of this lesson start in the same way as mechanics problems usually do: **choose the body, draw the free-body diagram and write Newton's second law**. The situation tells what the acceleration is. In equilibrium the body at rest neither starts to move nor starts to turn, so both the sum of the forces and the sum of the moments are zero. In uniform circular motion the acceleration points to the centre of the path, so the sum of the forces points there too. Only gravitation acts on a satellite, so the gravitational force is itself the net force.
 
-<svg data-fig="kartta" viewBox="0 0 380 620" role="img" aria-label="Concept map. At the top a node: free-body diagram first, then Newton&#x27;s second law, sum of F = m a. Three branches lead down from it. Equilibrium: moment M = F r, the sum of the forces is zero, so the body does not start to move, and the sum of the moments is zero, so it does not turn. Circular motion: orbital speed v = 2 pi r divided by T, centripetal acceleration a n = v squared divided by r points to the centre, and the equation of motion sum of F = m v squared divided by r. Gravitation: attraction F = gamma m 1 m 2 divided by r squared, field strength g = gamma M divided by r squared and the orbital speed of a satellite v = square root of gamma M divided by r." style="max-width:100%;font-size:20px">
+<svg data-fig="kartta" viewBox="0 0 380 620" role="img" aria-label="Concept map. At the top a node: free-body diagram first, then Newton&#x27;s second law, sum of F = m a. Three branches lead down from it. Equilibrium: moment M = F r, the sum of the forces is zero, so the body does not start to move, and the sum of the moments is zero, so it does not turn. Circular motion: orbital speed v = omega r, centripetal acceleration a n = v squared divided by r points to the centre, and the equation of motion sum of F = m v squared divided by r. Gravitation: attraction F g = gamma m 1 m 2 divided by r squared, field strength g = gamma M divided by r squared and the orbital speed of a satellite v = square root of gamma M divided by r." style="max-width:100%;font-size:20px">
   <line x1="24" y1="80" x2="24" y2="466" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
   <foreignObject x="77" y="18" width="226" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\text{free-body diagram first}$</div></foreignObject>
@@ -191,7 +191,7 @@ The problems of this lesson start in the same way as mechanics problems usually 
   <rect x="44" y="272" width="328" height="156" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
   <foreignObject x="58" y="282" width="164" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{circular motion}$</div></foreignObject>
   <line x1="54" y1="314" x2="362" y2="314" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="326" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$v = 2\pi r/T$</div></foreignObject>
+  <foreignObject x="58" y="326" width="50" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$v = \omega r$</div></foreignObject>
   <foreignObject x="248" y="328" width="114" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{orbital speed}$</div></foreignObject>
   <foreignObject x="58" y="363" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$a_\text{n} = v^2/r$</div></foreignObject>
   <foreignObject x="257" y="365" width="105" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{to the centre}$</div></foreignObject>
@@ -201,7 +201,7 @@ The problems of this lesson start in the same way as mechanics problems usually 
   <rect x="44" y="444" width="328" height="156" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
   <foreignObject x="58" y="454" width="133" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{gravitation}$</div></foreignObject>
   <line x1="54" y1="486" x2="362" y2="486" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="498" width="112" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$F = \gamma m_1 m_2/r^2$</div></foreignObject>
+  <foreignObject x="58" y="498" width="122" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$F_\text{g} = \gamma m_1 m_2/r^2$</div></foreignObject>
   <foreignObject x="266" y="500" width="96" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{attraction}$</div></foreignObject>
   <foreignObject x="58" y="535" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$g = \gamma M/r^2$</div></foreignObject>
   <foreignObject x="310" y="537" width="52" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{field}$</div></foreignObject>
@@ -306,22 +306,22 @@ where $M$ is the moment of the force ($\text{Nm}$), $F$ the size of the force ($
 ### Uniform circular motion
 
 ```kaavat
-orbital speed :: v = \frac{2\pi r}{T} = 2\pi r f
-centripetal acceleration :: a_\text{n} = \frac{v^2}{r}
+orbital speed :: v = \omega r
+centripetal acceleration :: a_\text{n} = \frac{v^2}{r} = \omega^2 r
 Newton's second law in circular motion :: \Sigma F = m\frac{v^2}{r}
 ```
 
-where $v$ is the orbital speed ($\text{m/s}$), $r$ the radius of the path ($\text{m}$), $T$ the period ($\text{s}$), $f = \tfrac{1}{T}$ the rotation frequency ($\tfrac{1}{\text{s}}$), $a_\text{n}$ the centripetal acceleration ($\text{m/s}^2$) and $\Sigma F$ the net force pointing to the centre ($\text{N}$). In uniform circular motion the speed is constant. The centripetal acceleration $a_\text{n} = \tfrac{v^2}{r}$ also holds at an instant when the speed changes: at the highest and the lowest point of the path there is no force along the tangent, so the net force points to the centre. The velocity is along the tangent of the path. In the equation of motion the forces pointing to the centre are positive, and perpendicular to the plane of the path the sum of the forces is zero.
+where $v$ is the orbital speed ($\text{m/s}$), $r$ the radius of the path ($\text{m}$), $\omega = \tfrac{2\pi}{T} = 2\pi f$ the angular velocity ($\text{rad/s}$), $T$ the period ($\text{s}$) and $f = \tfrac{1}{T}$ the rotation frequency ($\tfrac{1}{\text{s}}$), so $v = \tfrac{2\pi r}{T} = 2\pi r f$; $a_\text{n}$ the centripetal acceleration ($\text{m/s}^2$) and $\Sigma F$ the net force pointing to the centre ($\text{N}$). In uniform circular motion the speed is constant. The centripetal acceleration $a_\text{n} = \tfrac{v^2}{r}$ also holds at an instant when the speed changes: at the highest and the lowest point of the path there is no force along the tangent, so the net force points to the centre. The velocity is along the tangent of the path. In the equation of motion the forces pointing to the centre are positive, and perpendicular to the plane of the path the sum of the forces is zero.
 
 ### Gravitation and satellites
 
 ```kaavat
-Newton's law of gravitation :: F = \gamma\frac{m_1 m_2}{r^2}
+Newton's law of gravitation :: F_\text{g} = \gamma\frac{m_1 m_2}{r^2}
 gravitational field strength :: g = \gamma\frac{M}{r^2}
 orbital speed of a satellite :: v = \sqrt{\frac{\gamma M}{r}}
 ```
 
-where $\gamma = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$ is the gravitational constant, $m_1$ and $m_2$ the masses of the bodies ($\text{kg}$), $M$ the mass of the central body ($\text{kg}$) and $r$ the distance between the centres ($\text{m}$). The law holds for point-like and spherically symmetric bodies. The orbital speed of a satellite comes from the condition $\gamma\tfrac{Mm}{r^2} = m\tfrac{v^2}{r}$, and it holds for a circular orbit when the central body is much more massive than the satellite. For an Earth satellite $r = R + h$, where $R = 6371\,\text{km}$, and the period is $T = \tfrac{2\pi r}{v}$.
+where $\gamma = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$ is the gravitational constant, $F_\text{g}$ the magnitude of the gravitational force ($\text{N}$), $m_1$ and $m_2$ the masses of the bodies ($\text{kg}$), $M$ the mass of the central body ($\text{kg}$) and $r$ the distance between the centres ($\text{m}$). The law holds for point-like and spherically symmetric bodies. The orbital speed of a satellite comes from the condition $\gamma\tfrac{Mm}{r^2} = m\tfrac{v^2}{r}$, and it holds for a circular orbit when the central body is much more massive than the satellite. For an Earth satellite $r = R + h$, where $R = 6371\,\text{km}$, and the period is $T = \tfrac{2\pi r}{v}$.
 
 ## Common mistakes {Virheet}
 

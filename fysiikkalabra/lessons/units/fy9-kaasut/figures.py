@@ -94,11 +94,10 @@ def hero():
 def kartta():
     """The concept map, stacked for a phone: pressure at the top, a spine down the left and three branches (liquid,
     gas, heat engine), each a box of three laws with a grey word beside each."""
-    f = Fig("fy9ka-kartta", 596, "Käsitekartta. Ylhäällä solmu paine: p = F / A. Siitä lähtee alas kolme haaraa. Neste: "
-            "paine syvyydellä p = p0 + ρ g h, ylipaine ρ g h ja kokonaispaine, joka on ilmanpaine ja ylipaine yhteensä. "
-            "Kaasu: tilanyhtälö p V = n R T, yhdistetty kaasulaki p1 V1 / T1 = p2 V2 / T2 ja kelvinlämpötila "
-            "T = θ + 273,15 K. Lämpövoimakone: kaasun työ W = p ΔV, energian säilyminen W = Q1 − Q2 ja hyötysuhde "
-            "eeta = W / Q1.", width=380, size=21)
+    f = Fig("fy9ka-kartta", 596, "Käsitekartta. Ylhäällä solmu paine: p = F / A. Siitä lähtee alas kolme haaraa. Neste: paine syvyydellä p = p0 "
+            "+ ρ g h, ylipaine ρ g h ja kokonaispaine, joka on ilmanpaine ja ylipaine yhteensä. Kaasu: tilanyhtälö p V = n "
+            "R T, yhdistetty kaasulaki p V / T = vakio ja kelvinlämpötila T = θ + 273,15 K. Lämpövoimakone: kaasun työ W = "
+            "p ΔV, energian säilyminen W = Q1 − Q2 ja hyötysuhde eeta = W / Q1.", width=380, size=21)
     groups = [
         ("neste", [(r"p = p_0 + \rho g h", "syvyydellä"), (r"\Delta p = \rho g h", "ylipaine"),
                    (r"p = p_0 + \Delta p", "kokonaispaine")]),

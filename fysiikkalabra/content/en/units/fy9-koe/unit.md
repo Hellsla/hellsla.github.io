@@ -293,12 +293,12 @@ The stages of the example are the same as the headings of the model answers: *Gi
 
 **Rearranged formula.** The unknown is already alone on the left-hand side:
 ```kaavat
-heat transferred :: Q = cm(T_2 - T_1)
+heat transferred :: Q = cm\Delta T
 ```
 
 <!-- vaihe -->
 
-**Unit conversions.** A temperature difference is the same in kelvins and in degrees Celsius: $T_2 - T_1 = 28.0\,\text{K}$. Finally the joules are converted to kilowatt-hours: $1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3.6 \cdot 10^{6}\,\text{J}$.
+**Unit conversions.** A temperature difference is the same in kelvins and in degrees Celsius: $\Delta T = T_2 - T_1 = 28.0\,\text{K}$. Finally the joules are converted to kilowatt-hours: $1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3.6 \cdot 10^{6}\,\text{J}$.
 
 <!-- vaihe -->
 

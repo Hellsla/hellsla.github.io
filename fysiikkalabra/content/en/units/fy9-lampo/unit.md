@@ -112,7 +112,7 @@ In thermal physics three concepts must be kept apart. **Temperature** describes 
 
 Every problem of the lesson comes back to conservation of energy. Heat transferred to a substance either raises its temperature or changes its state, and as the temperature rises the substance also expands. In an isolated system the heat released by the hot part equals the heat received by the cold part. The temperature of a house stays constant when the power coming in equals the power going out.
 
-<svg data-fig="kartta" viewBox="0 0 380 636" role="img" aria-label="Concept map. At the top is the node energy is conserved: in an isolated system the quantity of heat released equals the quantity received. Four branches lead down from it. Heating: Q = c m ΔT when the state does not change, and the kelvin temperature T = θ + 273.15. Change of state: melting Q = s m and vaporisation Q = r m at constant temperature. Thermal expansion: length ΔL = α L0 ΔT and volume ΔV = γ V0 ΔT. Heat transfer: conduction, convection and radiation, and the power conducted through a wall P = U A ΔT." style="max-width:100%;font-size:21px">
+<svg data-fig="kartta" viewBox="0 0 380 636" role="img" aria-label="Concept map. At the top is the node energy is conserved: in an isolated system the quantity of heat released equals the quantity received. Four branches lead down from it. Heating: Q = c m ΔT when the state does not change, and the kelvin temperature T = θ + 273.15. Change of state: melting Q = s m and vaporisation Q = r m at constant temperature. Thermal expansion: length l = l0 times 1 + α ΔT and volume V = V0 times 1 + γ ΔT. Heat transfer: conduction, convection and radiation, and the power conducted through a wall P = U A ΔT." style="max-width:100%;font-size:21px">
   <line x1="24" y1="84" x2="24" y2="522" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="76" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
   <foreignObject x="93" y="17.5" width="194" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:21px">$\text{energy is conserved}$</div></foreignObject>
@@ -137,9 +137,9 @@ Every problem of the lesson comes back to conservation of energy. Heat transferr
   <rect x="44" y="368" width="328" height="120" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
   <foreignObject x="58" y="377.5" width="194" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\textbf{thermal expansion}$</div></foreignObject>
   <line x1="54" y1="410" x2="362" y2="410" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="419.5" width="106" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\Delta L = \alpha L_0\,\Delta T$</div></foreignObject>
+  <foreignObject x="58" y="419.5" width="128" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$l = l_0(1 + \alpha\Delta T)$</div></foreignObject>
   <foreignObject x="298" y="421" width="64" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{length}$</div></foreignObject>
-  <foreignObject x="58" y="453.5" width="106" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\Delta V = \gamma V_0\,\Delta T$</div></foreignObject>
+  <foreignObject x="58" y="453.5" width="128" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$V = V_0(1 + \gamma\Delta T)$</div></foreignObject>
   <foreignObject x="298" y="455" width="64" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{volume}$</div></foreignObject>
   <line x1="24" y1="522" x2="44" y2="522" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="44" y="500" width="328" height="120" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
@@ -267,11 +267,11 @@ When ice and water are mixed, first compare whether the heat the water releases 
 ### Expansion and heat transfer
 
 ```kaavat
-linear thermal expansion :: \Delta L = \alpha L_0 \Delta T
-volume thermal expansion :: \Delta V = \gamma V_0 \Delta T
+linear thermal expansion :: l = l_0(1 + \alpha\Delta T)
+volume thermal expansion :: V = V_0(1 + \gamma\Delta T)
 ```
 
-where $\alpha$ and $\gamma$ are the coefficients of linear and volume expansion ($1/\text{K}$) and $L_0$ and $V_0$ the original length and volume. For solids the formulas hold up to a change in temperature of about $100\,\text{K}$, and the $\gamma$ of a liquid is usable only near the temperature given in the table. Water is an exception: its density is greatest at about $4\,{}^\circ\text{C}$.
+where $\alpha$ and $\gamma$ are the coefficients of linear and volume expansion ($1/\text{K}$), $l_0$ and $V_0$ the original length and volume and $l$ and $V$ the length and volume after the change in temperature $\Delta T$. The changes are $\Delta l = \alpha l_0 \Delta T$ and $\Delta V = \gamma V_0 \Delta T$. For solids the formulas hold up to a change in temperature of about $100\,\text{K}$, and the $\gamma$ of a liquid is usable only near the temperature given in the table. Water is an exception: its density is greatest at about $4\,{}^\circ\text{C}$.
 
 Heat is transferred by conduction, convection and radiation, with a net flow from the warmer body to the colder one. The power conducted through a building element is
 

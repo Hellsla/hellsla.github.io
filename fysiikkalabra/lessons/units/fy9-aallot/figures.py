@@ -108,12 +108,13 @@ def hero():
 def kartta():
     """The concept map, stacked for a phone: periodic motion at the top, a spine down the left and three boxes
     (oscillators, waves, sound), each with three laws and a grey word beside each."""
-    f = Fig("fy9aa-kartta", 704, "Käsitekartta. Ylhäällä solmu jaksollinen liike: jaksonaika T, taajuus f = 1 per T ja amplitudi A. "
-            "Siitä lähtee alas kolme haaraa. Värähtelijät, toistuva liike: jousen voima F = miinus k x, jousivärähtelijän jaksonaika T = 2 pii "
-            "kertaa neliöjuuri m per k ja heilurin jaksonaika T = 2 pii kertaa neliöjuuri l per g. Aallot, värähtely etenee: aaltoliikkeen "
-            "perusyhtälö v = f lambda, vahvistava interferenssi, kun matkaero on n lambda, ja kielen ominaistaajuudet f n = n v "
-            "per 2 L. Ääni, aalto ilmassa: huojunta f h = f 1 miinus f 2 itseisarvona, Dopplerin ilmiö liikkuvalle lähteelle ja intensiteettitaso "
-            "L = 10 desibeliä kertaa logaritmi I per I 0.", width=380, size=20)
+    f = Fig("fy9aa-kartta", 704, "Käsitekartta. Ylhäällä solmu jaksollinen liike: jaksonaika T, taajuus f = 1 per T ja amplitudi A. Siitä lähtee "
+            "alas kolme haaraa. Värähtelijät, toistuva liike: jousen voima F = miinus k x vektoreina, jousivärähtelijän "
+            "jaksonaika T = 2 pii kertaa neliöjuuri m per k ja heilurin jaksonaika T = 2 pii kertaa neliöjuuri l per g. "
+            "Aallot, värähtely etenee: aaltoliikkeen perusyhtälö v = f lambda, vahvistava interferenssi, kun matkaero on n "
+            "lambda, ja kielen ominaistaajuudet f n = n v per 2 L. Ääni, aalto ilmassa: huojunta f H = f 1 miinus f 2 "
+            "itseisarvona, Dopplerin ilmiö lähteen liikkuessa kohti havaitsijaa ja intensiteettitaso L = 10 desibeliä "
+            "kertaa logaritmi I per I 0.", width=380, size=20)
     groups = [
         ("värähtelijät", "toistuva liike", [(r"\overline{F} = -k\overline{x}", "jousen voima"), (r"T = 2\pi\sqrt{m/k}", "jousi"), (r"T = 2\pi\sqrt{l/g}", "heiluri")]),
         ("aallot", "värähtely etenee", [(r"v = f\lambda", "eteneminen"), (r"\Delta s = n\lambda", "vahvistava"), (r"f_n = n \cdot v/(2L)", "seisova aalto")]),

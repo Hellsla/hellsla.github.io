@@ -153,7 +153,7 @@
 
 The tasks of the lesson start from the same idea: **a charge creates an electric field around itself, and the field exerts a force on another charge**, $\overline{F} = q\overline{E}$. On a positive charge the force points in the direction of the field and on a negative charge against the field. When the field moves a charge, it does work, and the potential energy of the charge changes like the gravitational potential energy of a ball in the gravitational field. A capacitor stores energy in the field between its plates. Semiconductor components and electrical safety return to the same quantities: voltage, current and the field a dielectric can withstand.
 
-<svg data-fig="kartta" viewBox="0 0 380 780" role="img" aria-label="Concept map. At the top is the node: a charge creates an electric field, and the field exerts a force on a charge, F = q E. Four branches go down from it. Charge and force: charge Q = n e, Coulomb&#x27;s law F = k times the absolute value of the product of the charges divided by r squared, and the vector sum of the forces. Field and potential: uniform field E = U divided by d, work done by the field W = q U and acceleration one half m v squared = charge times U. Capacitor: capacitance C = Q divided by U, parallel-plate capacitor C = epsilon zero epsilon r A divided by d and energy W = one half C U squared. Components and safety: series resistor R = U minus U D divided by I, efficiency of a solar cell eta = P divided by G A, and current through the body I = U divided by R." style="max-width:100%;font-size:22px">
+<svg data-fig="kartta" viewBox="0 0 380 780" role="img" aria-label="Concept map. At the top is the node: a charge creates an electric field, and the field exerts a force on a charge, F = q E. Four branches go down from it. Charge and force: charge Q = n e, Coulomb&#x27;s law F E = k times the product of the charges divided by r squared, and the vector sum of the forces. Field and potential: uniform field U = E times d, work done by the field W = Q U and acceleration one half m v squared = charge times U. Capacitor: capacitance Q = C U, parallel-plate capacitor C = epsilon zero epsilon r A divided by d and energy E = one half C U squared. Components and safety: series resistor R = U minus U D divided by I, efficiency of a solar cell eta = P divided by G A, and current through the body I = U divided by R." style="max-width:100%;font-size:22px">
   <line x1="24" y1="80" x2="24" y2="638" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="2.5"/>
   <foreignObject x="71.5" y="17" width="237" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$\text{a charge creates a field}$</div></foreignObject>
@@ -164,7 +164,7 @@ The tasks of the lesson start from the same idea: **a charge creates an electric
   <line x1="54" y1="142" x2="362" y2="142" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="58" y="153" width="54" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$Q = ne$</div></foreignObject>
   <foreignObject x="213" y="156" width="149" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{elementary charge}$</div></foreignObject>
-  <foreignObject x="58" y="190" width="157" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$F = k\,|q_1 q_2|/r^2$</div></foreignObject>
+  <foreignObject x="58" y="190" width="145" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$F_E = k\,Q_1 Q_2/r^2$</div></foreignObject>
   <foreignObject x="292" y="193" width="70" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{Coulomb}$</div></foreignObject>
   <foreignObject x="58" y="227" width="122" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$\overline{F} = \overline{F}_1 + \overline{F}_2$</div></foreignObject>
   <foreignObject x="327" y="230" width="35" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{sum}$</div></foreignObject>
@@ -172,21 +172,21 @@ The tasks of the lesson start from the same idea: **a charge creates an electric
   <rect x="44" y="272" width="328" height="156" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
   <foreignObject x="58" y="281" width="214" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$\textbf{field and potential}$</div></foreignObject>
   <line x1="54" y1="314" x2="362" y2="314" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="325" width="65" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$E = U/d$</div></foreignObject>
+  <foreignObject x="58" y="325" width="54" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$U = Ed$</div></foreignObject>
   <foreignObject x="292" y="328" width="70" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{uniform}$</div></foreignObject>
-  <foreignObject x="58" y="362" width="54" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$W = qU$</div></foreignObject>
+  <foreignObject x="58" y="362" width="54" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$W = QU$</div></foreignObject>
   <foreignObject x="230" y="365" width="132" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{work of the field}$</div></foreignObject>
-  <foreignObject x="58" y="399" width="134" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$\tfrac12 mv^2 = |q|U$</div></foreignObject>
+  <foreignObject x="58" y="399" width="134" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$\tfrac12 mv^2 = |Q|U$</div></foreignObject>
   <foreignObject x="248" y="402" width="114" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{acceleration}$</div></foreignObject>
   <line x1="24" y1="466" x2="44" y2="466" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="44" y="444" width="328" height="156" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
   <foreignObject x="58" y="453" width="122" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$\textbf{capacitor}$</div></foreignObject>
   <line x1="54" y1="486" x2="362" y2="486" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="497" width="65" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$C = Q/U$</div></foreignObject>
+  <foreignObject x="58" y="497" width="54" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$Q = CU$</div></foreignObject>
   <foreignObject x="257" y="500" width="105" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{capacitance}$</div></foreignObject>
   <foreignObject x="58" y="534" width="111" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$C = \varepsilon_0\varepsilon_\text{r}A/d$</div></foreignObject>
   <foreignObject x="301" y="537" width="61" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{plates}$</div></foreignObject>
-  <foreignObject x="58" y="571" width="100" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$W = \tfrac12 CU^2$</div></foreignObject>
+  <foreignObject x="58" y="571" width="100" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$E = \tfrac12 CU^2$</div></foreignObject>
   <foreignObject x="301" y="574" width="61" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{energy}$</div></foreignObject>
   <line x1="24" y1="638" x2="44" y2="638" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="44" y="616" width="328" height="156" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
@@ -266,12 +266,12 @@ The voltage is large, but the body is a small capacitor with a capacitance of ab
 
 ```kaavat
 charge as a multiple of the elementary charge :: Q = ne
-magnitude of the Coulomb force :: F = k\,\frac{\lvert q_1 q_2 \rvert}{r^2}
-electric field strength :: \overline{F} = q\overline{E}
-voltage in a uniform electric field :: E = \frac{U}{d}
+magnitude of the Coulomb force :: F_E = k\,\frac{Q_1 Q_2}{r^2}
+electric field strength :: E = \frac{F_E}{Q}
+voltage in a uniform electric field :: U = Ed
 ```
 
-where $n$ is the number of elementary charges, $e = 1.602 \cdot 10^{-19}\,\text{C}$ the elementary charge, $F$ the force ($\text{N}$), $q_1$ and $q_2$ the charges ($\text{C}$), $r$ their distance ($\text{m}$), $k = 8.988 \cdot 10^{9}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{C}^2}$, $\overline{E}$ the electric field strength ($\text{N/C} = \text{V/m}$), $U$ the voltage between the plates ($\text{V}$) and $d$ the distance between the plates ($\text{m}$). Charge is conserved. Coulomb's law holds for point charges and uniformly charged spheres, and the forces of several charges are added as vectors. The field $E = \tfrac{U}{d}$ holds only between large parallel plates, where the field is uniform.
+where $n$ is the number of elementary charges, $e = 1.602 \cdot 10^{-19}\,\text{C}$ the elementary charge, $F_E$ the magnitude of the electric force ($\text{N}$), $Q_1$ and $Q_2$ the magnitudes of the charges ($\text{C}$), $r$ their distance ($\text{m}$), $k = 8.988 \cdot 10^{9}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{C}^2}$, $E$ the electric field strength ($\text{N/C} = \text{V/m}$) at the charge $Q$, $U$ the voltage between the plates ($\text{V}$) and $d$ the distance between the plates ($\text{m}$). The force on a positive charge is along the field, on a negative one opposite to it; as vectors $\overline{F}_E = Q\overline{E}$. Charge is conserved. Coulomb's law holds for point charges and uniformly charged spheres, and the forces of several charges are added as vectors. The relation $U = Ed$ holds only between large parallel plates, where the field is uniform.
 
 <svg data-fig="levyt" viewBox="0 0 600 440" role="img" aria-label="Schematic: two horizontal plates. The upper plate is positive and its potential is 200 V; the lower, negative plate is the zero, 0 V. Between the plates there are five green vertical field lines pointing down: the field is uniform. Grey dashed lines are the equipotential surfaces 150 V, 100 V and 50 V. On the left a proton, whose red force arrow points down in the direction of the field. On the right an electron, whose red force arrow points up against the field, towards the higher potential." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy9sk-pl1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dfe4ea"/><stop offset="1" stop-color="#aeb8c2"/></linearGradient><linearGradient id="fy9sk-pl2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dfe4ea"/><stop offset="1" stop-color="#aeb8c2"/></linearGradient></defs>
@@ -349,23 +349,23 @@ where $n$ is the number of elementary charges, $e = 1.602 \cdot 10^{-19}\,\text{
 ### Potential and energy
 
 ```kaavat
-electric potential :: E_\text{p} = qV
-work done by an electric field :: W_{AB} = qU_{AB}
-kinetic energy of a particle accelerated in an electric field :: \tfrac12 mv^2 = \lvert q \rvert U
+electric potential :: V = \frac{E_\text{p}}{Q}
+work done by an electric field :: W = QU
+kinetic energy of a particle accelerated in an electric field :: \tfrac12 mv^2 = \lvert Q \rvert U
 ```
 
-where $V$ is the potential at a point ($\text{V}$) relative to a chosen zero, $U_{AB} = V_A - V_B$ and $W_{AB}$ the work done by the field ($\text{J}$). The work does not depend on the path. The field points from higher potential to lower, and a charge starting from rest moves in the direction in which its potential energy decreases. The last equation holds for a particle starting from rest when only the electric force does work. The energy unit $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$.
+where $V$ is the potential at a point ($\text{V}$) relative to a chosen zero, $E_\text{p}$ the electric potential energy of the charge $Q$ ($\text{J}$), $W$ the work done by the field ($\text{J}$) when the charge $Q$ moves from the point A to the point B, and $U = U_{AB} = V_A - V_B$ the voltage between the points. The work does not depend on the path. The field points from higher potential to lower, and a charge starting from rest moves in the direction in which its potential energy decreases. The last equation holds for a particle starting from rest when only the electric force does work. The energy unit $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$.
 
 ### The capacitor
 
 ```kaavat
-capacitor law :: C = \frac{Q}{U}
-capacitance of a parallel-plate capacitor :: C = \frac{\varepsilon_0\varepsilon_\text{r}A}{d}
-energy of a capacitor :: W = \tfrac12 QU = \tfrac12 CU^2
+capacitor law :: Q = CU
+capacitance of a parallel-plate capacitor :: C = \varepsilon_0\varepsilon_\text{r}\,\frac{A}{d}
+energy of a capacitor :: E = \tfrac12 CU^2
 breakdown voltage :: U_\text{max} = E_\text{max}d
 ```
 
-where $C$ is the capacitance ($\text{F}$), $A$ the area of a plate ($\text{m}^2$), $\varepsilon_0 = 8.854 \cdot 10^{-12}\,\text{F/m}$, $\varepsilon_\text{r}$ the relative permittivity of the dielectric, $W$ the energy ($\text{J}$) and $E_\text{max}$ the dielectric strength of the dielectric ($\text{V/m}$). The formula of the parallel-plate capacitor holds when $d$ is small compared with the size of the plates and the dielectric fills the gap. For a capacitor connected to a source the voltage stays the same; for a disconnected one, the charge.
+where $C$ is the capacitance ($\text{F}$), $A$ the area of a plate ($\text{m}^2$), $\varepsilon_0 = 8.854 \cdot 10^{-12}\,\text{F/m}$, $\varepsilon_\text{r}$ the relative permittivity of the dielectric, $E$ the energy stored in the capacitor ($\text{J}$), also $E = \tfrac12 QU$, and $E_\text{max}$ the dielectric strength of the dielectric ($\text{V/m}$). The formula of the parallel-plate capacitor holds when $d$ is small compared with the size of the plates and the dielectric fills the gap. For a capacitor connected to a source the voltage stays the same; for a disconnected one, the charge.
 
 ### Components and safety
 
