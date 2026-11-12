@@ -1384,11 +1384,9 @@ def build_language(lang):
             ref = lambda rid: (chapters[rid][1], f"{rid}.html") if rid in chapters and rid in built_ids else None
             diary = "ahjo-projektipaivakirja.html" if ahjo_data and "ahjo-projektipaivakirja" in ahjo.ready_guides(ahjo_data) else None
             crumb = f'<a href="index.html">{T("site.name")}</a> › <a href="{code}.html">{esc(c["title"])}</a> › '
-            for name, title, sub in ((kilparobo.PATH, kr["path"]["title"], kilparobo.path_body(kr, ref)),
-                                     (kilparobo.SEASON, kr["season"]["title"], kilparobo.season_body(kr, diary)),
-                                     (kilparobo.MENTOR, kr["mentor"]["title"], kilparobo.mentor_body(kr)),
-                                     (kilparobo.SAFETY, kr["safety"]["title"], kilparobo.safety_body(kr, ahjo.SAFETY if ahjo_data else None))):
-                lead = {kilparobo.PATH: kr["path"], kilparobo.SEASON: kr["season"], kilparobo.MENTOR: kr["mentor"], kilparobo.SAFETY: kr["safety"]}[name]["lead"]
+            for name, sub in ((kilparobo.PATH, kilparobo.path_body(kr, ref)), (kilparobo.SEASON, kilparobo.season_body(kr, diary)),
+                              (kilparobo.MENTOR, kilparobo.mentor_body(kr)), (kilparobo.SAFETY, kilparobo.safety_body(kr, ahjo.SAFETY if ahjo_data else None))):
+                title, lead = kilparobo.page(kr, name)["title"], kilparobo.page(kr, name)["lead"]   # the unit's pages are jakso.json's (scripts/jaksot.py)
                 (out / name).write_text(ahjo.kiviruukki_mark(page(title, sub + '<script src="ahjo.js"></script>', crumb + esc(title), name, lead,
                                                                   main_class="reading module-page local-course kr-theme kr-team")))
                 kr_built.append(name)

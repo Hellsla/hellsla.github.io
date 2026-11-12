@@ -39,6 +39,19 @@ for lang in i18n.languages():
 expect("Droonilab has no pages and no page module: a planned unit is a folder", not jaksot.generic(jaksot.load("droonilab")) and jaksot.pages("droonilab") == [] and jaksot.front_row("droonilab") is None)
 expect("Droonilab's icon is in the module icons", "DROONILAB" in module_icons.ICONS and module_icons.file("DROONILAB").is_file() and "MYYTIT" not in module_icons.ICONS)
 
+# 1b. Kilparobotiikka is written as pages of blocks: its five pages are drawn by jaksot.py from jakso.json alone
+kd = jaksot.load("kilparobo")
+expect("Kilparobotiikka: pages of blocks, the first the course page of the registry", jaksot.generic(kd) and kd["jakso"].get("course") == kilparobo.CODE
+       and [p["file"] for p in kd["pages"]] == [kilparobo.PAGE, *kilparobo.SUBPAGES] and jaksot.front_row("kilparobo") is None)
+expect("Kilparobotiikka: every block is of the shared library, and the module draws nothing itself", {b["type"] for _, b in jaksot.blocks_of(kd)} <= set(jaksot.BLOCKS)
+       and not re.search(r"<(?:section|div|ul|ol|p|h[1-6])\b", pathlib.Path(kilparobo.__file__).read_text()))
+body = kilparobo.path_body(kd, lambda rid: None)
+expect("Kilparobotiikka: a page's body is the unit's menu with this page marked and its blocks in order", f'<a href="{kilparobo.PATH}" aria-current="page">' in body
+       and body.count('<section class="kr-stage"') == 5 and body.index('class="kr-stage-index"') < body.index('id="ohjeet"'))
+expect("Kilparobotiikka: a sentence that leads to a page is left out where that page is not built", "ahjo-projektipaivakirja.html" not in kilparobo.season_body(kd)
+       and "ahjo-projektipaivakirja.html" in kilparobo.season_body(kd, "ahjo-projektipaivakirja.html") and kilparobo.block(kd, "paivakirja")["more"] not in kilparobo.season_body(kd))
+expect("Kilparobotiikka: the start page takes its title block from the course registry", kilparobo.hub_body(kd, '<header id="x"><p class="local-desc">kuvaus</p></header>', "", "").startswith('<header id="x"></header><nav class="ahjo-nav kr-nav"'))
+
 # 2. a unit without a page module, in a copy of the fixture
 T = pathlib.Path(tempfile.mkdtemp(prefix="fysiikkalabra-jaksot-"))
 real = jaksot.DIR
