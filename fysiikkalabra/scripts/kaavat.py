@@ -33,15 +33,19 @@ def tables():
 
 
 CONT = ":: "        # a line `:: m = \\rho V`: another form of the named formula above it, shown under its name
+EXTRA = "+ "        # a line `+ H = \\dot{H} t`: extra information, not in MAFY's tables; an exam gives it when a task needs it
 
 
 def parse(body):
     """[(name, tex, continued)] of a fence's body: a line without ` :: ` is a formula without a name (not in the MAFY
-    tables), a line starting with `:: ` another form of the formula above (`continued`), shown under its name."""
+    tables), a line starting with `:: ` another form of the formula above (`continued` True), shown under its name, a
+    line starting with `+ ` extra information (`continued` "lisa", teacher 2026-11-12: "lisätieto", a formula an exam
+    gives when a task needs it), shown with the word Lisätieto in the name column."""
     out = []
     for line in body.strip().split("\n"):
         if not line.strip(): continue
         if line.startswith(CONT): out.append(("", line[len(CONT):].strip(), True)); continue
+        if line.startswith(EXTRA): out.append(("", line[len(EXTRA):].strip(), "lisa")); continue
         name, tex = line.split(SEP, 1) if SEP in line else ("", line)
         out.append((name.strip(), tex.strip(), False))
     return out
@@ -83,12 +87,14 @@ def as_display(text, names=True):
     return FENCE.sub(one, text)
 
 
-def as_html(text):
+def as_html(text, extra="Lisätieto"):
     """Each ```kaavat fence as the formula table's HTML (build.py, before markdown): a `<dl class="kaavat">` whose rows
     are a `<dt>` name and a `<dd>` with the formula as `$$...$$`, typeset by KaTeX in the browser like every formula."""
     def one(m):
         out = []
         for n, t, cont in parse(m.group(1)):
+            if cont == "lisa":
+                out.append(f'<div class="kaava-rivi lisatieto"><dt>{html.escape(extra, quote=False)}</dt><dd>$${t}$$</dd></div>'); continue
             name = f"<dt>{html.escape(n, quote=False)}</dt>" if n else ""
             out.append(f'<div class="kaava-rivi{"" if n else " nimeton jatko" if cont else " nimeton"}">{name}<dd>$${t}$$</dd></div>')
         return '\n<dl class="kaavat">' + "".join(out) + "</dl>\n"
@@ -136,7 +142,8 @@ def names_of(text):
 # ------------------------------------------------------------------ names of the docs/*/kaavanimet.tsv into the texts
 LANGS = {"fi": "nimi", "fi-easy": "nimi", "en": "name_en"}
 KEYS = ("yksikkö", "tunti")
-SAME = "="                           # in a list's name column: another form of the named formula above (`:: ` in the text)          # the first column: a unit of FY9 or a lesson of FY1–FY8
+SAME = "="                           # in a list's name column: another form of the named formula above (`:: ` in the text)
+PLUS = "+"                           # in a list's name column: extra information, not MAFY's (`+ ` in the text)          # the first column: a unit of FY9 or a lesson of FY1–FY8
 
 
 def table(path=None):
@@ -167,7 +174,7 @@ def approved(key, lang):
     if not col: return set()
     out = set()
     for r in table("all"):
-        if r["_key"] != key or not r.get(col) or r[col] == SAME: continue
+        if r["_key"] != key or not r.get(col) or r[col] in (SAME, PLUS): continue
         tex = r["kaava"] if lang != "en" else r.get("kaava_en", "")
         out.add((r[col], " ".join(tex.split())))
     return out
@@ -207,7 +214,7 @@ def write(check=False):
                     fence = "```latex\n" + (want[0] if len(want) == 1 else
                                              "\\begin{aligned}\n" + " \\\\\n".join("&" + w for w in want) + "\n\\end{aligned}") + "\n```"
                 else:
-                    fence = "```kaavat\n" + "".join(f"{CONT}{t}\n" if n == SAME else f"{n}{SEP}{t}\n" if n else f"{t}\n" for n, t in zip(names, want)) + "```"
+                    fence = "```kaavat\n" + "".join(f"{CONT}{t}\n" if n == SAME else f"{EXTRA}{t}\n" if n == PLUS else f"{n}{SEP}{t}\n" if n else f"{t}\n" for n, t in zip(names, want)) + "```"
                 if fence == m.group(0): continue
                 out.append(text[pos:m.start()] + fence); pos = m.end()
             else:

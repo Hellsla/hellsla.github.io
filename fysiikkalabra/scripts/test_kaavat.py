@@ -51,6 +51,10 @@ ok('<dl class="kaavat">' in h and "<dt>$\\beta^-$-hajoaminen &lt;b&gt;</dt><dd>$
 ok('class="kaava-rivi nimeton"><dd>$$y = 2$$</dd>' in h, "HTML: an unnamed formula has no <dt> (not in the MAFY tables)")
 ok(kaavat.parse("tiheys :: \\rho = m/V\n:: m = \\rho V\ny = 2\n") == [("tiheys", "\\rho = m/V", False), ("", "m = \\rho V", True), ("", "y = 2", False)],
    "a line ':: tex' is another form of the named formula above, a plain line a formula without a name")
+ok(kaavat.parse("+ H = \\dot{H} t\n") == [("", "H = \\dot{H} t", "lisa")] and kaavat.names_of("```kaavat\n+ H = \\dot{H} t\n```") == [],
+   "a line '+ tex' is extra information, not a named formula")
+ok('<div class="kaava-rivi lisatieto"><dt>Lisätieto</dt><dd>$$H = \\dot{H} t$$</dd></div>' in kaavat.as_html("```kaavat\n+ H = \\dot{H} t\n```", "Lisätieto"),
+   "HTML: extra information shows the word Lisätieto in the name column")
 ok('class="kaava-rivi nimeton jatko"><dd>$$m = \\rho V$$</dd>' in kaavat.as_html("```kaavat\ntiheys :: \\rho = m/V\n:: m = \\rho V\n```"), "HTML: another form of a named formula is a continued row")
 ok(not any(n == kaavat.SAME for n, _ in kaavat.approved("fy1-7", "fi")), "the list's '=' (another form of the formula above) is no name")
 ok(NEW.count("\n") == kaavat.as_display(NEW).count("\n"), "as_display keeps the line count (the checks' line numbers)")

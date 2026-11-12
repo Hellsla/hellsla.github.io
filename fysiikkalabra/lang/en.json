@@ -191,6 +191,7 @@
     "solution": "Show the solution",
     "derive": "Derive it yourself",
     "derive_show": "Show the derivation",
+    "extra_formula": "Extra information",
     "solution_display_steps": [
       "Formula",
       "Conversions",

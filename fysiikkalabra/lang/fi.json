@@ -191,6 +191,7 @@
     "solution": "Näytä ratkaisu",
     "derive": "Johda itse",
     "derive_show": "Näytä johto",
+    "extra_formula": "Lisätieto",
     "solution_display_steps": [
       "Kaava",
       "Muunnokset",
