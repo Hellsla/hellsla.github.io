@@ -37,7 +37,7 @@
 ## fy2-1-L1-05
 **Given:** potential energy of the sledge at the top $E_\text{p} = 600\,\text{J}$, energy changed into thermal energy by friction $E_\text{thermal} = 90\,\text{J}$, potential energy at the bottom of the hill $0\,\text{J}$
 **Find:** kinetic energy $E_\text{k}$ at the bottom of the hill in $\text{J}$
-**Principle:** The sledge, the hill and the surroundings form an isolated system, so energy is conserved: $E_\text{initial} = E_\text{final}$. At the start all the energy is potential energy, and at the end it is kinetic energy and thermal energy, into which friction has changed part of it.
+**Principle:** The skater, the half-pipe and the surroundings form an isolated system, so energy is conserved: $E_\text{initial} = E_\text{final}$. At the start all the energy is potential energy, and at the end it is kinetic energy and thermal energy, into which friction has changed part of it.
 **Formula:** $E_\text{p} = E_\text{k} + E_\text{thermal}$, so $E_\text{k} = E_\text{p} - E_\text{thermal}$
 **Conversions:** All energies are in joules, so no conversions are needed.
 **Substitution:** $E_\text{k} = 600\,\text{J} - 90\,\text{J} = 510\,\text{J}$
@@ -147,8 +147,8 @@
 ## fy2-1-L2-08
 **Given:** energies read from the figure: at A $E_\text{p,A} = 700\,\text{J}$ and $E_\text{k,A} = 0\,\text{J}$, at B $E_\text{p,B} = 300\,\text{J}$ and $E_\text{k,B} = 300\,\text{J}$
 **Asked:** the share of the initial energy that has changed into thermal energy by point B, as a percentage
-**Principle:** The sledge, the hill and the surroundings form an isolated system, so energy is conserved. Friction changes mechanical energy into thermal energy, so the thermal energy is the difference between the initial energy and the mechanical energy at B.
-**Reading the graph:** At A there is only a potential-energy bar, whose top is at the gridline $700\,\text{J}$, and the kinetic energy is zero because the sledge is at rest. At B the potential-energy bar and the kinetic-energy bar each reach the gridline $300\,\text{J}$.
+**Principle:** The skater, the half-pipe and the surroundings form an isolated system, so energy is conserved. Friction changes mechanical energy into thermal energy, so the thermal energy is the difference between the initial energy and the mechanical energy at B.
+**Reading the graph:** At A there is only a potential-energy bar, whose top is at the gridline $700\,\text{J}$, and the kinetic energy is zero because the skater is at rest. At B the potential-energy bar and the kinetic-energy bar each reach the gridline $300\,\text{J}$.
 **Formula:** $E_\text{A} = E_\text{B} + E_\text{thermal}$, so $E_\text{thermal} = E_\text{A} - E_\text{B}$, and the share is $p = \dfrac{E_\text{thermal}}{E_\text{A}} \cdot 100\,\%$
 **Conversions:** All energies are in joules, so no conversions are needed.
 **Substitution:** $E_\text{thermal} = (700\,\text{J} + 0\,\text{J}) - (300\,\text{J} + 300\,\text{J}) = 100\,\text{J}$, and $p = \dfrac{100\,\text{J}}{700\,\text{J}} \cdot 100\,\% = 14.3\,\%$

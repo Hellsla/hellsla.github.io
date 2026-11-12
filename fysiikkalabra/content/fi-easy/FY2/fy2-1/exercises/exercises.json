@@ -286,7 +286,7 @@
     {
       "id": "fy2-1-L2-08",
       "level": 2,
-      "text": "Kelkka lähtee levosta mäen kohdasta A. Se liukuu rinnettä, jossa on kitkaa, kohdan B kautta alas kohtaan C. Kuvan pylväät näyttävät kelkan ja kuljettajan potentiaalienergian ja liike-energian kussakin kohdassa. Alapää C on potentiaalienergian nollataso.\n\nLue energiat kuvasta. Kuinka monta prosenttia alkuperäisestä energiasta kitka on muuttanut lämpöenergiaksi kohtaan B mennessä? Anna vastaus prosentin tarkkuudella.",
+      "text": "Skeittari on half-pipen reunalla, kohdassa A, levossa. Hän liukuu alas rinnettä, jossa on kitkaa. Hän ohittaa kohdan B ja tulee pohjalle, kohtaan C. Pylväät kuvassa näyttävät hänen potentiaalienergiansa ja liike-energiansa joka kohdassa. Pohja C on potentiaalienergian nollataso.\n\nLue energiat kuvasta. Kuinka monta prosenttia alkuperäisestä energiasta kitka on muuttanut lämpöenergiaksi kohtaan B mennessä? Anna vastaus prosentin tarkkuudella.",
       "figure": "fy2-1/kitka-pylvaat",
       "answer": 14.3,
       "unit": "%",

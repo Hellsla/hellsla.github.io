@@ -147,8 +147,8 @@
 ## fy2-1-L2-08
 **Annettu:** kuvasta luetut energiat: kohdassa A $E_\text{p,A} = 700\,\text{J}$ ja $E_\text{k,A} = 0\,\text{J}$, kohdassa B $E_\text{p,B} = 300\,\text{J}$ ja $E_\text{k,B} = 300\,\text{J}$
 **Kysytty:** kohtaan B mennessä lämpöenergiaksi muuttuneen energian osuus alkuperäisestä energiasta prosentteina
-**Periaate:** Kelkka, mäki ja ympäristö muodostavat eristetyn systeemin, joten energia säilyy. Kitka muuttaa mekaanista energiaa lämpöenergiaksi, joten lämpöenergia on alkuenergian ja kohdan B mekaanisen energian erotus.
-**Kuvaajan lukeminen:** Kohdassa A on vain potentiaalienergian pylväs, jonka yläreuna on ruudukon viivalla $700\,\text{J}$, ja liike-energia on nolla, koska kelkka on levossa. Kohdassa B potentiaalienergian ja liike-energian pylväät yltävät kumpikin viivalle $300\,\text{J}$.
+**Periaate:** Skeittari, half-pipe ja ympäristö muodostavat eristetyn systeemin, joten energia säilyy. Kitka muuttaa mekaanista energiaa lämpöenergiaksi, joten lämpöenergia on alkuenergian ja kohdan B mekaanisen energian erotus.
+**Kuvaajan lukeminen:** Kohdassa A on vain potentiaalienergian pylväs, jonka yläreuna on ruudukon viivalla $700\,\text{J}$, ja liike-energia on nolla, koska skeittari on levossa. Kohdassa B potentiaalienergian ja liike-energian pylväät yltävät kumpikin viivalle $300\,\text{J}$.
 **Kaava:** $E_\text{A} = E_\text{B} + E_\text{lämpö}$, joten $E_\text{lämpö} = E_\text{A} - E_\text{B}$, ja osuus on $p = \dfrac{E_\text{lämpö}}{E_\text{A}} \cdot 100\,\%$
 **Muunnokset:** Kaikki energiat ovat jouleina, joten muunnoksia ei tarvita.
 **Sijoitus:** $E_\text{lämpö} = (700\,\text{J} + 0\,\text{J}) - (300\,\text{J} + 300\,\text{J}) = 100\,\text{J}$, ja $p = \dfrac{100\,\text{J}}{700\,\text{J}} \cdot 100\,\% = 14{,}3\,\%$
