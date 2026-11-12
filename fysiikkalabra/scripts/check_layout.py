@@ -42,8 +42,9 @@ JS = """() => {
   const out = [], V = (e) => e.checkVisibility();
   const el = document.scrollingElement, vw = document.documentElement.clientWidth;
   // From 1600 px the whole page is drawn larger (site.css, 2026-11-11: the root size grows to 117.65 % at 1920 px, every
-  // size of the site is in rem). K is that enlargement, 1 under 1600 px. The two limits below that are a length of the
-  // drawing itself (a label overlap of 1 px, 240 px empty beside a column) are counted in the page's own scale, so the
+  // size of the site is in rem). K is that enlargement, 1 under 1600 px. The limits below that are a length of the
+  // drawing itself (a figure label 1 px over the figure's edge or over another label, 240 px empty beside a column) are
+  // counted in the page's own scale, so the
   // same layout passes or fails alike at 1280 px and enlarged at 1920 px; every other limit stays in real pixels.
   const K = Math.max(1, parseFloat(getComputedStyle(document.documentElement).fontSize) / 16);
   if (el.scrollWidth > el.clientWidth + 1) out.push({what: 'page', over: el.scrollWidth - el.clientWidth, text: ''});
@@ -91,7 +92,11 @@ JS = """() => {
     const card = s.closest('.kc-card'), lim = card ? card.getBoundingClientRect().right : vw;   // a concept card's own box is the limit
     if (r.right > lim + 1) out.push({what: 'svg', over: Math.round(r.right - lim), text: s.getAttribute('aria-label') || ''});
     const T = [...s.querySelectorAll('text'), ...s.querySelectorAll('foreignObject')].map((t) => ({t: t.textContent.trim().slice(0, 40), b: (t.querySelector('.katex, div') || t).getBoundingClientRect()})).filter((x) => x.t);
-    for (const x of T) if (x.b.left < r.left - 1 || x.b.right > r.right + 1 || x.b.top < r.top - 1 || x.b.bottom > r.bottom + 1)
+    // the 1 px allowance in the page's own scale (K), like the overlap below; an enlarged drawing is also placed on whole
+    // pixels again, which moved a label 0.09 px past K (FY4-sovella, 0.92 px at 1280 px, 1.27 px at 1920 px), so the
+    // enlarged page gets a quarter pixel for that. Under 1600 px the allowance is 1 px as before.
+    const E = K > 1 ? K + 0.25 : 1;
+    for (const x of T) if (x.b.left < r.left - E || x.b.right > r.right + E || x.b.top < r.top - E || x.b.bottom > r.bottom + E)
       out.push({what: 'svg-text', over: Math.round(Math.max(r.left - x.b.left, x.b.right - r.right, r.top - x.b.top, x.b.bottom - r.bottom)), text: `"${x.t}" leaves the figure`});
     for (let i = 0; i < T.length; i++) for (let j = i + 1; j < T.length; j++) { const a = T[i].b, b = T[j].b;
       const ox = Math.min(a.right, b.right) - Math.max(a.left, b.left), oy = Math.min(a.bottom, b.bottom) - Math.max(a.top, b.top);
