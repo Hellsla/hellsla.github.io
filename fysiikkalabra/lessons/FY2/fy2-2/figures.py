@@ -118,7 +118,7 @@ def tikapuut():
     f.tex(300, 354, r"\text{jokainen väli on 10-kertainen}", "middle", MUTED, w=340)
     # each label in two lines (name, value) in its own row: a leader never crosses a label (teacher 2026-11-11,
     # illustration audit); omena and Olkiluoto share the top row, the rows step down from there
-    items = [(0, 0, r"\text{omena metrin ylös}", r"1\,\text{J}", "start", 260), (14.14, 0, r"\text{Olkiluoto 3, vrk}", r"140\,\text{TJ}", "end", 240),
+    items = [(0, 0, r"\text{omena metrin ylös}", r"1\,\text{J}", "start", 234), (14.14, 0, r"\text{Olkiluoto 3, vrk}", r"140\,\text{TJ}", "end", 208),
              (9.2, 1, r"\text{bensiinitankki}", r"1{,}6\,\text{GJ}", "end", 220), (7, 2, r"\text{päivän ruoka}", r"10\,\text{MJ}", "end", 200),
              (3, 3, r"\text{tulitikku}", r"1\,\text{kJ}", "start", 150)]
     for k, row, name, val, anc, wd in items:
