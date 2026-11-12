@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 215745c92316249f
+CONTENT-HASH: 103dbcbc76a0699e
 
 ## Blocking
-- none
+None. Built preview/fi-easy/fy3-11.html and looked at 390 and 1280 px: formula tables (named rows, upright subscripts a, o, h, A), changed figures, opened solutions; no horizontal overflow; no leftover old symbols (L, P_0, P_hyöty, Q_sisälle, E_s, W_k) in the lesson, inquiry, exit ticket or exercises of this part.
 
 ## Polish
-- none
+1. fy3-11 lesson.md, first-law paragraph: W now means three things in one chapter (work done by the gas in W = pΔV, work done on the gas in ΔU = Q + W, the engine's or pump's work). Each is stated in words, so not blocking; a one-line reminder at the heat-engine section that W is there the work the machine does would help a first-time reader.
 
-## Checked
-- batch delta review: "Luvun tärkeät käsitteet" panel captured from preview/fi-easy/fy3-11.html at 390 and 1280 px (the review/shots set has no capture of it) and opened — between the opening and stage 1, term bold over its explanation at 390 px, two-column at 1280 px, no clipping, no horizontal overflow, no KaTeX error; top-390 opened in a montage (read-aloud "Kuuntele" button under the title, layout intact).
+(Captures: /tmp/claude-0/-home-user-hellsla-github-io/729392a7-96f2-578c-8869-36f18714a66f/scratchpad/review-fy3/)

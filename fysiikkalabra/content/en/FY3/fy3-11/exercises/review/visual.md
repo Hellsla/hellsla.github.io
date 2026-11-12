@@ -1,19 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 73e42d2dc825c95e
-Mode: delta (exercises, en), round 1. Changed: new task L2-08, situation/question paragraph splits, solutions.md for L2-08.
+CONTENT-HASH: 2ba6163d92a5063d
 
 ## Blocking
-(none)
+None. Built preview/en/fy3-11.html and looked at 390 and 1280 px: formula tables (named rows, upright subscripts a, o, h, A), changed figures, opened solutions; no horizontal overflow; no leftover old symbols (L, P_0, P_hyöty, Q_sisälle, E_s, W_k) in the lesson, inquiry, exit ticket or exercises of this part.
 
 ## Polish
-- (none)
+1. solutions.md: volume unit 'l' (litre) now sits beside the length symbol l in other chapters; consider $\text{L}$ for the litre (project-wide, not for this change).
 
-## Checked
-- Rendered preview/en/fy3-11.html at 390 px with my own script (scratch trvis3x): fy3-11-L2-08 (efficiency, choice then reason) and the split tasks L2-01, L3-01..04, in default and answered/opened state.
-- The new L2-08 card opened in full: task text, options or statements, feedback blocks, Vastaus/Answer and model solution; formulas, units, fractions and the units with \cdot render as KaTeX, no red source, no clipping or horizontal overflow.
-- The paragraph splits read as situation, then data, then the question; nothing sideways when feedback opens.
-- Fluent, consistent terms (efficiency, absorbed heat, latent heat); one instructional voice; decimal point and thin-space units set as maths.
-- Figure and graph tasks were not changed by the diff; contact sheets are not used in this exercises-only delta.
-
-## Scores
-illustrations 4 · typography 5 · English 4 · accessibility 4
+(Captures: /tmp/claude-0/-home-user-hellsla-github-io/729392a7-96f2-578c-8869-36f18714a66f/scratchpad/review-fy3/)

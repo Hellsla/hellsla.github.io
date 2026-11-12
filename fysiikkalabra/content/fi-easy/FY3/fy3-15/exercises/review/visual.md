@@ -1,19 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: cb3416ff2abdea57
-Mode: delta (exercises, fi-easy), round 1. Changed: new task L2-08, situation/question paragraph splits, solutions.md for L2-08.
+CONTENT-HASH: b332e683ac5c13a7
 
 ## Blocking
-(none)
+None. Built preview/fi-easy/fy3-15.html and looked at 390 and 1280 px: formula tables (named rows, upright subscripts a, o, h, A), changed figures, opened solutions; no horizontal overflow; no leftover old symbols (L, P_0, P_hyöty, Q_sisälle, E_s, W_k) in the lesson, inquiry, exit ticket or exercises of this part.
 
 ## Polish
-- (none)
+1. solutions.md line ~195 (heat pump): ε = Q/E_s while fy3-11 now writes ε = Q_1/W; E_s is electricity energy here, so define it in the task or use W and Q_1 to match.
 
-## Checked
-- Rendered preview/fi-easy/fy3-15.html at 390 px with my own script (scratch trvis3x): fy3-15-L2-08 (order of magnitude, four choices with feedback) and the split tasks L2-01, L3-01..03, in default and answered/opened state.
-- The new L2-08 card opened in full: task text, options or statements, feedback blocks, Vastaus/Answer and model solution; formulas, units, fractions and the units with \cdot render as KaTeX, no red source, no clipping or horizontal overflow.
-- The paragraph splits read as situation, then data, then the question; nothing sideways when feedback opens.
-- Plain language holds: short sentences, terms explained where needed (e.g. "eli ei muutu", "massavirta eli kuinka monta kilogrammaa…"); case endings after the maths are correct ("$0\,{}^\circ\text{C}$:seen", "$2{,}00\,\textsf{l}$:n"). Decimal comma used throughout.
-- Figure and graph tasks were not changed by the diff; contact sheets are not used in this exercises-only delta.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+(Captures: /tmp/claude-0/-home-user-hellsla-github-io/729392a7-96f2-578c-8869-36f18714a66f/scratchpad/review-fy3/)

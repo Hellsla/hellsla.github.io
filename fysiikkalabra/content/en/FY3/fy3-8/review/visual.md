@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: a108eeb3424496c2
+CONTENT-HASH: 46b77a909c77c9dc
 
 ## Blocking
-
+None. Built preview/en/fy3-8.html and looked at 390 and 1280 px: formula tables (named rows, upright subscripts a, o, h, A), changed figures, opened solutions; no horizontal overflow; no leftover old symbols (L, P_0, P_hyöty, Q_sisälle, E_s, W_k) in the lesson, inquiry, exit ticket or exercises of this part.
 
 ## Polish
+1. Sim canvas and figure show T_0 for the cold state; consistent with the lesson, nothing to change.
 
-
-## Checked
-- batch delta review: opened fy3-8-1280-0, fy3-8-360-0; photo loads, no clipping or horizontal overflow, credit line under the caption, alt text and caption natural English and consistent with the picture and the paragraph, no number with a unit in the new text.
+(Captures: /tmp/claude-0/-home-user-hellsla-github-io/729392a7-96f2-578c-8869-36f18714a66f/scratchpad/review-fy3/)

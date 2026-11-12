@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: e2ff1d4d343dd5ab
+CONTENT-HASH: fd5256866c60f33c
 
 ## Blocking
-
+None. Built preview/en/fy3-11.html and looked at 390 and 1280 px: formula tables (named rows, upright subscripts a, o, h, A), changed figures, opened solutions; no horizontal overflow; no leftover old symbols (L, P_0, P_hyöty, Q_sisälle, E_s, W_k) in the lesson, inquiry, exit ticket or exercises of this part.
 
 ## Polish
+1. fy3-11 lesson.md, first-law paragraph: W now means three things in one chapter (work done by the gas in W = pΔV, work done on the gas in ΔU = Q + W, the engine's or pump's work). Each is stated in words, so not blocking; a one-line reminder at the heat-engine section that W is there the work the machine does would help a first-time reader.
 
-
-## Checked
-- batch delta review: opened fy3-11-1280-0, fy3-11-360-0; photo loads, no clipping or horizontal overflow, credit line under the caption, alt text and caption natural English and consistent with the picture and the paragraph, no number with a unit in the new text.
+(Captures: /tmp/claude-0/-home-user-hellsla-github-io/729392a7-96f2-578c-8869-36f18714a66f/scratchpad/review-fy3/)

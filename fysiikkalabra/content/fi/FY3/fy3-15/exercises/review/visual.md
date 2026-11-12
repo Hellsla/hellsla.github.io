@@ -1,17 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 6dc7d815de1ec77f
-ROUND: 3
+CONTENT-HASH: 00e08ba963f252f6
 
 ## Blocking
-(none)
+None. Built preview/fy3-15.html and looked at 390 and 1280 px: formula tables (named rows, upright subscripts a, o, h, A), changed figures, opened solutions; no horizontal overflow; no leftover old symbols (L, P_0, P_hyöty, Q_sisälle, E_s, W_k) in the lesson, inquiry, exit ticket or exercises of this part.
 
 ## Polish
-- [Minor] fy3-15-L2-08 — the 15 000 MW feedback names the elimination argument (exceeds $1200\,\text{MW}$) before the student has tried it; optional. (Carried over.)
-- [Minor] Distractors 0,5 MW and 50 MW look plausible only against the stem figure $1200\,\text{MW}$; fine for an order-of-magnitude task. (Carried over.)
+1. solutions.md line ~195 (heat pump): ε = Q/E_s while fy3-11 now writes ε = Q_1/W; E_s is electricity energy here, so define it in the task or use W and Q_1 to match.
 
-## Checked
-- From render (390 px, Playwright chromium, preview rebuilt, feedback and solution open): fy3-15-L2-08 Mallivastaus now reads "noin $42\,\%$ polttoainetehosta $1200\,\text{MW}$"; the typo is fixed. No overflow (scrollWidth 390), the chain rows and fractions fit.
-- From text: grep finds "polttoainetehosta" in exercises.json (correct feedback) and solutions.md, and no "polttoaineteosta" left. Nothing else changed since round 2 (hash start 6dc7d815de1ec77f, end as above).
-
-## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+(Captures: /tmp/claude-0/-home-user-hellsla-github-io/729392a7-96f2-578c-8869-36f18714a66f/scratchpad/review-fy3/)

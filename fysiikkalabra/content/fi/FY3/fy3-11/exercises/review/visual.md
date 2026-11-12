@@ -1,15 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: b06084335558b3a5
+CONTENT-HASH: 2b666f0278dfd4e9
 
 ## Blocking
+None. Built preview/fy3-11.html and looked at 390 and 1280 px: formula tables (named rows, upright subscripts a, o, h, A), changed figures, opened solutions; no horizontal overflow; no leftover old symbols (L, P_0, P_hyöty, Q_sisälle, E_s, W_k) in the lesson, inquiry, exit ticket or exercises of this part.
 
 ## Polish
-- [Minor] fy3-11-L2-08 reasons — the fixed reason ("... $Q_1$ ... $W = Q_1 - Q_2$") now carries a formula like the correct one, so the round-1 form cue is gone; nothing further needed.
+1. solutions.md: volume unit 'l' (litre) now sits beside the length symbol l in other chapters; consider $\text{L}$ for the litre (project-wide, not for this change).
 
-## Checked
-- Round 2 (delta). The only change is the wording of reason 2 (symbol $Q_1$ and $W = Q_1 - Q_2$ as maths, one clause). Text-only check of that line: LaTeX, no plain quantity, fluent Finnish, similar length to the other reasons.
-- Rendered fy3-11 at 390 px (task, answer and reason feedback, solution; images opened, round-1 render plus a re-render with the new build): no overflow (scrollWidth 390), solution fractions set in rows. I did not zoom in on the reworded reason itself; it is judged from text.
-- Hash at start and end the same.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+(Captures: /tmp/claude-0/-home-user-hellsla-github-io/729392a7-96f2-578c-8869-36f18714a66f/scratchpad/review-fy3/)
