@@ -94,3 +94,10 @@ Polish:
 - Not changed: pedagogy 6 (weightlessness repeated; review repetition is intended), pedagogy 8 (set-up sketches for s1, s5, s6: not cheap), visual s1 a inline fractions (house style for Järkevyys), catalog figure label size and 1280 column (shared files).
 
 Checks rerun: practice.py figures/check OK (6 tasks, 95 p), units.py figures/check OK, build OK, check_layout 360 and 1280 OK, Playwright at 390 and 1280: no console errors, no `.katex-error`, no raw `$`; the tilanteet figure was inspected at 390.
+
+## Ratkaisutavan tarkistus (2026-11-12)
+- s1 a), c): varsille symbolit $r_\text{t}$, $r_\text{v}$, $r_\text{k}$ (ei lukuja momenttiyhtälössä); aisapaino $m_\text{a}=F/g$ ja $\Delta x$ ratkaistu symboleilla.
+- s2 b): osuus $q = F/(mg) = \gamma M/(g r^2)$ ratkaistu symboleilla.
+- s5 a): varret $d_\text{p}$, $d_\text{k}$, $d_\text{m}$ symboleina; niiden lasku terän paikasta Muunnokset-kohtaan.
+- inquiry lumilapio ja tarkistus-2: varret symboleina.
+- Vastaukset eivät muuttuneet. fi-easy ja en vastaavasti.

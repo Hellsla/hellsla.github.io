@@ -51,7 +51,7 @@
 **Annettu:** heittokorkeus $y_{0\text{A}} = 1{,}5\,\text{m}$, alkunopeus $v_0 = 12{,}0\,\text{m/s}$ ylöspäin, $g = 9{,}81\,\text{m/s}^2$; ylös positiivinen, ilmanvastus jätetään huomiotta
 **Kysytty:** lakipisteen korkeus $y_\text{l}$ lattiasta
 **Periaate:** Pallon kiihtyvyys on koko lennon ajan $g$ alaspäin, joten liike on tasaisesti kiihtyvää. Lakipisteessä pallon nopeus on hetken nolla, vaikka kiihtyvyys ei ole (luku *Kiihtyvyys ja tasaisesti kiihtyvä liike*).
-**Kaava:** $v = v_0 - g\,t_\text{l} = 0$, joten $t_\text{l} = \dfrac{v_0}{g}$, ja $y_\text{l} = y_{0\text{A}} + v_0\,t_\text{l} - \tfrac{1}{2}\,g\,t_\text{l}^2$
+**Kaava:** $v = v_0 - g\,t_\text{l} = 0$, joten $t_\text{l} = \dfrac{v_0}{g}$, ja $y_\text{l} = y_{0\text{A}} + v_0\,t_\text{l} - \tfrac{1}{2}\,g\,t_\text{l}^2 = y_{0\text{A}} + \dfrac{v_0^2}{2g}$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $t_\text{l} = \dfrac{12{,}0\,\text{m/s}}{9{,}81\,\text{m/s}^2} = 1{,}223\,\text{s}$; $y_\text{l} = 1{,}5\,\text{m} + 12{,}0\,\text{m/s} \cdot 1{,}223\,\text{s} - \tfrac{1}{2} \cdot 9{,}81\,\text{m/s}^2 \cdot (1{,}223\,\text{s})^2 = 1{,}5\,\text{m} + 14{,}68\,\text{m} - 7{,}34\,\text{m} = 8{,}84\,\text{m}$
 **Vastaus:** $y_\text{l} \approx 8{,}8\,\text{m}$, kymmenesosien tarkkuudella, koska heittokorkeus $1{,}5\,\text{m}$ tunnetaan kymmenesosien tarkkuudella.
@@ -266,7 +266,7 @@
 **Annettu:** matka $x = 1{,}20\,\text{m}$ levosta, aika $t = 1{,}6\,\text{s}$, ajanoton epävarmuus $\Delta t = 0{,}2\,\text{s}$
 **Kysytty:** ryhmän laskema kiihtyvyys $a$ ja sen vaihteluväli ajanoton epävarmuuden takia
 **Periaate:** Ryhmä olettaa liikkeen tasaisesti kiihtyväksi. Levosta lähtevän kappaleen paikka on silloin $x = \tfrac{1}{2}\,a\,t^2$ (luku *Kiihtyvyys ja tasaisesti kiihtyvä liike*). Epävarmuuden vaikutus arvioidaan laskemalla tulos ajan ääriarvoilla $t \pm \Delta t$ (luku *Mittaaminen ja mittauksen luotettavuus*).
-**Kaava:** $x = \tfrac{1}{2}\,a\,t^2$, joten $a = \dfrac{2x}{t^2}$
+**Kaava:** $x = \tfrac{1}{2}\,a\,t^2$, joten $a = \dfrac{2x}{t^2}$; ajanoton epävarmuuden ääriarvot ovat $a_\text{min} = \dfrac{2x}{(t + \Delta t)^2}$ ja $a_\text{max} = \dfrac{2x}{(t - \Delta t)^2}$
 **Muunnokset:** Matka on metreinä ja aika sekunteina, joten muunnoksia ei tarvita.
 **Sijoitus:** $a = \dfrac{2 \cdot 1{,}20\,\text{m}}{(1{,}6\,\text{s})^2} = \dfrac{2{,}40\,\text{m}}{2{,}56\,\text{s}^2} = 0{,}9375\,\text{m/s}^2$; ääriarvot $\dfrac{2{,}40\,\text{m}}{(1{,}8\,\text{s})^2} = 0{,}741\,\text{m/s}^2$ ja $\dfrac{2{,}40\,\text{m}}{(1{,}4\,\text{s})^2} = 1{,}224\,\text{m/s}^2$
 **Vastaus:** $a \approx 0{,}94\,\text{m/s}^2$, mutta epävarmuuden takia tulos on välillä $0{,}74$…$1{,}22\,\text{m/s}^2$, eli $a \approx (0{,}9 \pm 0{,}3)\,\text{m/s}^2$. Tulos kannattaa ilmoittaa yhdellä tai kahdella merkitsevällä numerolla, koska epävarmuus on suuri.

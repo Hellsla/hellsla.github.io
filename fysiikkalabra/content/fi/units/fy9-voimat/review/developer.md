@@ -75,3 +75,9 @@ s1 G 2746,8 N, G_x 664,5 N, N 2665,2 N, F_μ 666,3 N, b 1330,8 N; c α0 19,29° 
 4. `voimakuvio` blocks cannot label static friction `F_{μ0}` (`scripts/fbdspec.py` `tex_of`: a subscript like `mu0` is not mapped to `\mu 0`).
 
 Content hash after Round 1: db8ff4439951f193.
+
+## Ratkaisutavan tarkistus (2026-11-12)
+- s5 a): Kaavaan keskiarvo $\alpha_\text{ka}$ ja epävarmuus $\Delta\mu_0$ symboleilla (ennen vain $\mu_0=\tan\alpha_\text{ka}$ ja luvut sijoituksessa).
+- s3 d): lisäpunnus saa symbolin $m_\text{x}$; ennusteen $k'$ ja $F_0'$ kaavat Kaavaan (ennen vain Vastauksessa).
+- inquiry tarkistus-2: $a$ ratkaistu symboleilla ennen sijoitusta.
+- Vastaukset eivät muuttuneet. fi-easy ja en vastaavasti.
