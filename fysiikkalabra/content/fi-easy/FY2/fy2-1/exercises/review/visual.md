@@ -1,23 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 2c9fdf155f72e6a3
-Mode: delta (packet regenerated as full; judged the exercises' delta: new L1-09, split task paragraphs, solutions, plus the 390 px layout)
-Round: 2
+CONTENT-HASH: 075d17656120eb22
+SCOPE: delta added-exercise from 2c9fdf155f72e6a3 base 141dc47a8c70
+Round: 1
 
 ## Blocking
 (none)
 
-## Fixed
-- fi-easy L2-05 Järkevyys: now `60 % + 17,5 % = 77,5 %`, `15 % + 7,5 % = 22,5 %`, `77,5 % + 22,5 % = 100 %`; page scroll width at 390 px is 390 (was 405). Confirmed in a render.
-
 ## Polish
-- [Minor] fy2-1 L2-05, L3-04, L3-05 solutions at 390 px (follow-up, older unchanged content) — sideways-scrolling `eq-chain` boxes (the site's pattern) hold sums wider than the box (L3-04 449 px in 302 px, L3-05 368, L2-05 327), so the last terms are off-screen until scrolled; the page itself does not scroll sideways — split the longest sums (L3-04) at a `+` the way the Järkevyys line was split.
-- [Minor] fy2-1 L2-05 Kaava box also scrolls (308 px in 302 px, `E_sauna` just cut) — same follow-up.
-- [Minor] Exercise captures at 390 px are not in the packet's list; I rendered them myself.
+- [Minor] L2-08 figure at 390 px — the bar chart is about 300 px wide, so the axis ticks and the A, B, C labels are small; values still readable against the 100 J grid. Larger tick text would help, no change required.
+- [Minor] L1-10 text — "(mafytaulukot.fi)" could be set as a link or the address left out; wording is otherwise clear.
+- [Minor] L1-10 and L2-08 follow the earlier pattern, so the set reads as one.
 
 ## Checked
-- Own Playwright render at 390 px of preview/fi-easy/fy2-1.html (all details open, choices answered): page scroll width 390; overflow metrics for every KaTeX display, table and svg in the exercises.
-- Opened renders: L2-05 solution (end, Järkevyys) and the L1-09 card (round 1, content unchanged since).
-- Text only: L3-04 and L3-05 chains judged from metrics, not opened this round; 1280 px captures and figures not re-opened (outside this delta).
+- Own Playwright render at 390 px of preview/fi-easy/fy2-1.html (details open): page scroll width 390; opened the full cards of fy2-1-L1-10 and fy2-1-L2-08 (task, figure, input, whole solution).
+- The packet's capture list is for the fi lesson, not the exercises, so I rendered the cards myself. 1280 px and the other 21 exercises not re-opened (outside the delta).
+- L2-08: figure shows E_p and E_k at A, B and C; the description gives the same values and does not give the answer (no thermal energy shown). Units, decimal comma, \cdot and thin spaces are correct in both solutions; no chain overflows.
 
 ## Scores
-illustrations n/a · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4
