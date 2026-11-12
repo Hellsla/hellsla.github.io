@@ -1,0 +1,55 @@
+fy9-aallot/hero|5|5|5|5|PIDA|||
+fy9-aallot/kartta|5|5|4|5|PIDA|Käsitekartta: kaavat ryhmiteltyinä, sama rakenne kaikissa FY9-yksiköissä.||
+fy9-aallot/pilli|5|5|4|5|PIDA|Aallonpituudet ilmassa ja vedessä samassa mittakaavassa (tarkistettu).||
+fy9-aallot/ominais|5|5|4|5|PIDA|||
+fy9-energia/hero|5|4|5|4|PIDA|Voimalaitosmaisema toistuu sarjassa.||
+fy9-energia/kartta|5|5|4|5|PIDA|||
+fy9-energia/ketju|5|5|3|3|KEVYT|Summat täsmäävät. "248 MW" ja "4 MW" ovat kiinni toisissaan, ja värit (beige tulo, harmaat häviöt) poikkeavat mallista fy2-4/lamp.||KEVYT KORJAUS hyväksytty, ryhmä C (opettaja 2026-11-11)
+fy9-harjoituskoe/hero|5|4|5|5|PIDA|||
+fy9-harjoituskoe/plan|5|5|4|5|PIDA|||
+fy9-kaasut/hero|5|4|5|5|PIDA|||
+fy9-kaasut/kartta|5|5|4|5|PIDA|||
+fy9-kaasut/rengas|5|5|4|5|PIDA|||
+fy9-kaasut/kone|5|5|5|5|PIDA|||
+fy9-koe/hero|5|4|5|5|PIDA|||
+fy9-koe/steps|5|5|4|5|PIDA|||
+fy9-koe/graph|5|5|4|5|PIDA|||
+fy9-kokeellisuus/hero|5|5|5|5|PIDA|||
+fy9-kokeellisuus/kartta|5|5|4|5|PIDA|||
+fy9-kokeellisuus/virhe|5|5|4|5|PIDA|Systemaattinen virhe näkyy leikkauspisteenä.||
+fy9-lampo/hero|5|4|5|5|PIDA|||
+fy9-lampo/kartta|5|5|4|5|PIDA|||
+fy9-lampo/kayra|5|5|4|5|PIDA|Arvot 334 kJ ja 419 kJ tarkistettu.||
+fy9-liike/hero|5|4|5|5|PIDA|||
+fy9-liike/kartta|5|5|4|4|KEVYT|Nuolten vieressä olevat Δx/Δt ja Δv/Δt ovat pieniä pystymurtoja; idea (kulmakerroin alas, pinta-ala ylös) on erinomainen.||KEVYT KORJAUS hyväksytty, ryhmä F (opettaja 2026-11-11)
+fy9-liike/kuvaajat|5|5|5|5|PIDA|Paikan ja nopeuden kuvaajat kohdakkain, pinta-ala ja tangentti yhdistetty.||
+fy9-magnetismi-valo/hero|5|4|5|5|PIDA|||
+fy9-magnetismi-valo/kartta|5|5|4|5|PIDA|||
+fy9-magnetismi-valo/siirto|5|5|4|5|PIDA|||
+fy9-magnetismi-valo/ympyra|5|5|5|5|PIDA|Voiman ja kiertosuunnan tarkistin ristitulosta.||
+fy9-mittaaminen/hero|5|5|5|5|PIDA|||
+fy9-mittaaminen/kartta|5|5|4|5|PIDA|||
+fy9-mittaaminen/anatomia|5|5|4|5|PIDA|||
+fy9-mittaaminen/linearisointi|5|5|4|5|KEVYT|Kulmakertoimen merkintä k = a/2 on pieni pystymurto.||KEVYT KORJAUS hyväksytty, ryhmä F (opettaja 2026-11-11)
+fy9-moderni/hero|5|4|5|5|PIDA|||
+fy9-moderni/kartta|5|5|4|5|PIDA|||
+fy9-moderni/fotonit|5|5|3|4|KEVYT|Lähes sama kuva kuin fy8-12/energia, mutta ahtaampi: "ei ionisoi | ionisoi", "punainen LED" ja hakaset ovat päällekkäin akselin ympärillä.|KEVYT KORJAUS hyväksytty (opettaja 2026-11-11)
+fy9-moderni/puolitus|5|5|3|4|KEVYT|Selite "n = t/T½ tai n = d/d½" on pieninä pystymurtoina kuvaajan sisällä; lukukelvoton puhelimella.||KEVYT KORJAUS hyväksytty, ryhmä F (opettaja 2026-11-11)
+fy9-sahkokentta/hero|5|5|5|5|PIDA|||
+fy9-sahkokentta/kartta|5|5|4|5|PIDA|||
+fy9-sahkokentta/kipina|5|5|5|5|PIDA|Arkinen kipinä laskettuna: kentän suunta ja suuruusluokat oikein.||
+fy9-sahkokentta/levyt|5|5|5|5|PIDA|||
+fy9-sailymislait/hero|5|4|5|5|PIDA|||
+fy9-sailymislait/kartta|5|5|4|5|PIDA|||
+fy9-sailymislait/tormays|5|5|5|5|PIDA|Liikemäärä säilyy, liike-energia puolittuu; arvot tarkistettu.||
+fy9-tasavirta/hero|5|4|5|5|PIDA|||
+fy9-tasavirta/kartta|5|5|4|5|PIDA|||
+fy9-tasavirta/mokki|5|5|4|5|PIDA|Virrat tarkistettu.||
+fy9-tasavirta/napa|5|5|4|5|PIDA|||
+fy9-voimat/hero|5|4|5|5|PIDA|||
+fy9-voimat/kartta|5|5|4|5|PIDA|||
+fy9-voimat/kalteva|5|5|4|5|PIDA|||
+fy9-ympyraliike/hero|5|4|5|5|PIDA|||
+fy9-ympyraliike/kartta|5|5|4|5|PIDA|||
+fy9-ympyraliike/geo|5|5|4|5|PIDA|||
+fy9-ympyraliike/tilanteet|5|5|4|5|PIDA|||

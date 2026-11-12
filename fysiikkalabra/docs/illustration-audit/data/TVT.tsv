@@ -1,0 +1,10 @@
+tvt-epavarmuus/lines|5|5|4|5|PIDA|||
+tvt-kulmakerroin/slope|5|5|5|5|PIDA|||
+tvt-kuvaaja/good-bad|5|5|5|5|PIDA|Puutteellinen ja hyvä kuvaaja samasta aineistosta.||
+tvt-mittausohjelma/sampling|5|5|5|5|PIDA|Harva näytteenotto hukkaa huipun: asia näkyy ilman selitystä.||
+tvt-nopeus-datasta/strips|5|5|5|5|PIDA|||
+tvt-suoran-sovitus/fit|5|5|4|5|PIDA|||
+tvt-suoran-sovitus/linearise|5|5|4|5|PIDA|||
+tvt-taulukkolaskenta/sheet|5|5|5|5|PIDA|||
+tvt-tyoselostus/page|5|5|5|5|PIDA|||
+tvt-videoanalyysi/setup|5|4|3|4|KEVYT|Niukka: kamera on pieni laatikko ja "väärä paikka" katkoviivasuorakaide. Kameran kuvakulman rajat (kaksi katkoviivaa kamerasta liiketason päihin) näyttäisivät, miksi mitta-asteikon pitää olla liiketasossa.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11)
