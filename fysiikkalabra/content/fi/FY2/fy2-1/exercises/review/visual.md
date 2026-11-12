@@ -1,19 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 598982a9db689aad
-SCOPE: delta added-exercise from a5e3a606c3d94d47 base 141dc47a8c70
+CONTENT-HASH: 1b1e4f5288cc758f
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] L1-10 Vastaus — for science: confirm that 43,4 MJ/kg is the MAFY value for petrol (not checked by me).
+- none
 
 ## Checked
-- Captures are current (stamp.txt: exercises 598982a9db689aad), in content/fi/FY2/fy2-1/review/shots/.
-- fy2-1-open-exercises-1280-9: new L1-10 task text, answer box (MJ), start of the solution; quantities in LaTeX.
-- fy2-1-open-exercises-1280-10: Kaava, Muunnokset, Sijoitus (dfrac, \cdot, rows aligned at =), Vastaus, Jarkevyys; units upright, decimal comma, nothing clipped.
-- fy2-1-open-exercises-L2-1280-9: L2-08 figure (bars A, B, C, axis E (J), legend) and solution; new wording matches the figure and answer 14 %.
-- 360 px layout from the packet's layout check only.
+- fy2-1-open-exercises-1280-9: task 1-10 with the new "Vihje" box (title, italic table name, inside the card above the answer row), situation and question in separate paragraphs, quantities in LaTeX.
+- fy2-1-open-exercises-1280-10: solution (Kaava, Muunnokset, Sijoitus aligned at =, Vastaus, Järkevyys) unchanged and intact.
+- Delta covers the one changed task (hint moved from the text to hints). 360 px from the packet's layout check only.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4
