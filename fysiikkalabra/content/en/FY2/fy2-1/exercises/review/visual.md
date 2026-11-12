@@ -1,22 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: f2c0a93ba89108b4
-Mode: delta (packet regenerated as full; judged the exercises' delta: new L1-09, split task paragraphs, solutions, plus the 390 px layout)
-Round: 2
+CONTENT-HASH: 191d9a7966bb3115
+SCOPE: delta added-exercise from f2c0a93ba89108b4 base 141dc47a8c70
 
 ## Blocking
 (none)
 
-## Fixed
-- (en had no page overflow in round 1.)
-
 ## Polish
-- [Minor] fy2-1 L2-05, L3-04, L3-05 solutions at 390 px (follow-up, older unchanged content) — sideways-scrolling `eq-chain` boxes (the site's pattern) hold sums wider than the box (L3-04 449 px in 302 px, L3-05 368, L2-05 327), so the last terms are off-screen until scrolled; the page itself does not scroll sideways — split the longest sums (L3-04) at a `+` the way the Järkevyys line was split.
-- [Minor] Exercise captures at 390 px are not in the packet's list; I rendered them myself.
+- [Minor] L1-10 task: "mafytaulukot.fi" is plain text; it is a site name, so left as is (optional).
 
 ## Checked
-- Own Playwright render at 390 px of preview/en/fy2-1.html (all details open, choices answered): page scroll width 390; overflow metrics for every KaTeX display, table and svg in the exercises.
-- Opened renders: L2-05 solution and the L1-09 card (round 1, content unchanged since).
-- Text only: L3-04 and L3-05 chains judged from metrics, not opened this round; 1280 px captures and figures not re-opened (outside this delta).
+- Delta: fy2-1-L1-10 (shown 1-10) and fy2-1-L2-08 (shown 1-18).
+- Opened review/shots/fy2-1-open-exercises-1280-9.png and -10.png (L1-10 card, answer field, full solution).
+- Opened fy2-1-open-exercises-L2-1280-8.png, -9.png, -10.png (L2-08 card, bar-chart figure, full solution).
+- L1-10: KaTeX renders, units upright with thin space, symbolic first, neat fraction, boxed answer, clear reasonableness block.
+- L2-08 figure: axis E (J), ticks every 100 J, E_p/E_k legend, bars readable at 700, 300/300, 500 J; not misleading (physics left to science).
+- English reads naturally and fits the set's voice. 390/360 px captures not opened; layout judged from 1280 px captures.
 
 ## Scores
-illustrations n/a · typography 4 · Finnish n/a (English page) · accessibility 4
+illustrations 4 · typography 4 · Finnish n/a (English page) · accessibility 4

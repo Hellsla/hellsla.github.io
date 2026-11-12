@@ -1,20 +1,20 @@
-VERDICT: FAIL
-CONTENT-HASH: 90ecbf52970d1698
+VERDICT: PASS
+CONTENT-HASH: d08caf4c2d0b85dc
+SCOPE: delta added-exercise from a5e3a606c3d94d47 base 141dc47a8c70
 Mode: delta
-Round: 1
+Round: 2
 
 ## Blocking
-- content/fi/FY2/fy2-1/exercises/exercises.json:156 (solutions.md:67, answers.py L1-10) — A, scope: L1-10 rests on $E = c\,m\,\Delta T$, which the FY2 scope notes exclude ("FY2 has no Q = c m Delta T"; FY3 teaches it) and the brief's lesson does not teach. Giving the formula in the task does not bring it into scope. The solution also calls the water "eristetty" while electrical energy flows into it, which contradicts the lesson's definition. — Fix: remove L1-10 from fy2-1 (it belongs in the FY3 heat-capacity chapter, with the condition "no change of state"), or replace it with a MAFY lookup task that uses only $E_\text{alussa} = E_\text{lopussa}$.
 
 ## Polish
-- solutions.md:147 (L2-08 Järkevyys) — "B on rinteen puolivälissä" does not match the figure: B is at 3/7 of the rim height (57 % of the drop, about 39 % of the path), and friction's share need not follow either. Drop that reason and keep the sum check.
-- solutions.md L2-08 Vastaus — a reading to the nearest 100 J does not support "kaksi merkitsevää numeroa"; "pyöristetään kokonaisiin prosentteihin" is more honest.
-- Earlier items (L1-09 "likimain eristetyn", L3-04 c), L1-07 option 3) still open.
+- solutions.md L1-10 Järkevyys: "puuhun, jonka lämpöarvo on noin $16\,\text{MJ/kg}$". The chapter *Polttoaineet ja lämpöarvo* gives air-dry firewood $15\,\text{MJ/kg}$ (pellets 17). Fix: write "ilmakuivaan polttopuuhun (noin $15\,\text{MJ/kg}$)" so the numbers match between chapters.
+- Earlier items (L1-09 "likimain eristetyn", L3-04 c), L1-07 option 3) are still open. They are outside this delta.
 
 ## Checked
-- Hash 90ecbf52970d1698 at start and end; only L1-10 and L2-08 judged.
-- L1-10 recomputed: $4{,}19 \cdot 0{,}50 \cdot 40 = 83{,}8\,\text{kJ}$ (83,6 kJ with 4,18), and 84 kJ is within tolerance. The 2 kW check gives 41,9 s, which is correct. The arithmetic is fine; scope is the issue.
-- L2-08 recomputed: $700 - (300+300) = 100\,\text{J}$, $p = 14{,}29\,\%$, and 14 % is within 2,1 % (tolerance 3 %). The C check gives 200 J = 28,6 % ≈ 29 %, which is correct.
-- answers.py prints 83.8 and 14.285714, the same as exercises.json.
-- Figure kitka-pylvaat: the FRICTION data match the solution's readings, B's drawn height (u² = 3/7) matches 300 J of 700 J, and the description carries the same values. No thermal-energy bar or total is drawn, so the figure does not give the answer away.
-- L2-08 physics: the system is isolated and friction converts mechanical energy into thermal energy without creating any, as in the brief's worked example. The formula is solved symbolically first.
+- Hash d08caf4c2d0b85dc at the start and the end. I judged only the added L1-10 and L2-08.
+- L1-10 replaces the round-1 $c\,m\,\Delta T$ task (blocking item resolved). $E = Hm$ is inside the FY2 scope notes and the task text gives it. The task is marked as invented ("Kuvitellaan"). There is no isolated-system claim, and the chemical energy → kinetic + thermal chain is correct.
+- L1-10 recomputed: $43\,\text{MJ/kg} \cdot 2{,}0\,\text{kg} = 86\,\text{MJ}$, the same as answers.py (86.0). A table value of 42 or 44 MJ/kg gives 84 or 88 MJ, within ±2,3 % and inside the 4 % tolerance. H = 43 MJ/kg agrees with the fy2-5 heating-value figure (bensiini 43). Two significant figures follow from m = 2,0 kg. The check 86 MJ ≈ 24 kWh is correct.
+- L1-10 solution: the formula is given before the substitution, the no-conversion statement is correct, and the order-of-magnitude estimate is a real check.
+- L2-08 recomputed: $700 - (300+300) = 100\,\text{J}$, $p = 14{,}29\,\%$, the same as answers.py (14.285714). The answer 14 % is 2,0 % away, inside the 3 % tolerance.
+- L2-08 round-1 polish items are fixed. The "puolivälissä" reasoning is gone, the answer is rounded to whole percents with the right reason (readings to 100 J), and the check is the energy sum 600 J + 100 J = 700 J.
+- L2-08 physics: the system is isolated (as in the worked example), friction converts mechanical energy into thermal energy and creates none, and the unknown is solved symbolically first. The figure kitka-pylvaat gives A and B as the solution reads them and does not reveal the answer.

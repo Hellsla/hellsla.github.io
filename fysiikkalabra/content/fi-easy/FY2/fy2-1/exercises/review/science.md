@@ -1,17 +1,20 @@
-VERDICT: FAIL
-CONTENT-HASH: 075d17656120eb22
+VERDICT: PASS
+CONTENT-HASH: 1398dc519f5045f4
+SCOPE: delta added-exercise from 2c9fdf155f72e6a3 base 141dc47a8c70
 
 ## Blocking
-- exercises.json:158 (fy2-1-L1-10), solutions.md:67-75 — A, scope: the task rests on $E = c\,m\,\Delta T$ and specific heat capacity. The FY2 scope notes exclude $Q = cm\Delta T$ (it is FY3 content), and the brief's lesson does not teach it. Stating the formula in the task does not fix this. — Fix: replace it with an in-scope MAFY lookup (e.g. heating value $H$ with $E = Hm$, or 1 kWh = 3,6 MJ), or drop the exercise.
-- solutions.md:70 (fy2-1-L1-10) — A, model: "Kaikki sähköenergia siirtyy veteen …, joten systeemi on eristetty" is wrong. Kettle and water are not isolated, because electrical energy comes in from the grid. — Fix (if any version is kept): say that energy is conserved and, with no losses, the electrical energy taken in equals the increase in the water's thermal energy. Also state that the water does not boil (guardrail: $Q = cm\Delta T$ holds only while the state does not change).
 
 ## Polish
-- solutions.md:156 (fy2-1-L2-08) — "B on rinteen puolivälissä, joten noin puolet" is a weak check. B is at 3/7 of the rim height, and friction losses need not scale that way. — Keep only the sum check $600 + 100 = 700\,\text{J}$, or call the half a rough expectation.
-- solutions.md:155 (fy2-1-L2-08) — a 100 J difference of values read to 100 J has about one significant figure, so "noin 14 %" would be more honest. Acceptable at this level.
+- solutions.md:75 (fy2-1-L1-10): the check gives wood "noin 16 MJ/kg", but the course's fy2-5 figure uses 15 MJ/kg for air-dry firewood. Fix: write "ilmakuivan polttopuun, noin 15 MJ/kg" so the course says the same thing everywhere.
+- exercises.json:156 (fy2-1-L1-10): "Se muuttuu liike-energiaksi ja lämpöenergiaksi" leaves out the step in between, where combustion first makes thermal energy and the engine turns part of it into kinetic energy. This simplification suits level 1 (C), so it is not an error. Fix (optional): "suurin osa muuttuu lämpöenergiaksi, osa liike-energiaksi".
 
 ## Checked
-- L2-08: recomputed 100·(700 − 600)/700 = 14,29 % → answers.py 14.3; 14 is within the 3 % tolerance.
-- L2-08: figures.py FRICTION (700/0, 300/300, 0/500) matches the solution's readings and the alt text; B's height u² = 3/7 matches E_p,B; there is no thermal or total bar, so the answer is not given away.
-- L2-08: the physics holds (isolated skater + half-pipe + surroundings; thermal = E_A − E_B); at C 200 J = 29 %, consistent with L1-03.
-- L1-10: 4,19·0,50·40 = 83,8 kJ (4,18 → 83,6 kJ, also within tolerance); ΔT °C = K; 2 kW → 42 s. Only the scope and the system claim fail.
-- Hash 075d17656120eb22 at the start and at the end.
+- L1-10, scope: the task states E = Hm, which is in FY2 scope (the scope notes list E = Hm). The c·m·ΔT physics and the wrong claim that the system is isolated are both gone, so the two blocking items from round 1 are fixed.
+- L1-10, numbers: H = 43 MJ/kg × 2,0 kg = 86 MJ. answers.py gives 86.0, the same as exercises.json. The unit is MJ, and 2 significant figures follow from m = 2,0 kg.
+- L1-10, lookup: 43 MJ/kg agrees with the course's own fy2-5 heating-value data (bensiini 43). The ±4 % tolerance accepts 82,6 to 89,4 MJ, which covers table values of about 41 to 45 MJ/kg. A higher heating value of about 46 to 47 MJ/kg would be outside it, but MAFY gives the lower value, so this is acceptable.
+- L1-10, checks: 86 MJ / 3,6 = 23,9 ≈ 24 kWh is correct. The order-of-magnitude estimate is sound.
+- L1-10, solution: it is complete (Annettu, Kysytty, Periaate, Kaava, Sijoitus, Vastaus with sig-fig reason, Järkevyys) and symbolic before numbers. The Periaate (chemical energy converts, the amount is conserved) is correct.
+- L2-08, numbers: I recomputed 100·(700 − 600)/700 = 14,29 %. answers.py gives 14.285714, and exercises.json gives 14.3 with tolerance 3 %, so 14 is accepted (lower limit 13,87).
+- L2-08, round-1 polish: the weak "puolivälissä" check is removed. Only the sum check 600 J + 100 J = 700 J remains. The answer is now "noin 14 %" and gives the 100 J reading accuracy as the reason.
+- L2-08, figure and physics: figures.py FRICTION (A 700/0, B 300/300) matches the readings and the alt text. The figure has no thermal or total bar, so it does not give the answer away. The isolated system (skater, half-pipe and surroundings) is stated.
+- Hash 1398dc519f5045f4 at the start and at the end.
