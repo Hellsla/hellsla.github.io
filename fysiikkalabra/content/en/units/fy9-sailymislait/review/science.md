@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 24d9964a0d3037dc
-Delta review (formulas in MAFY form, 2026-11-12) of the version passed at 1ebdec5cbf0f0961.
+CONTENT-HASH: bedac2c705f34dec
+Delta review (solution practice, 2026-11-12) of the version passed before.
 
 ## Blocking
 (none)
 
 ## Polish
-1. `inquiry.json` and Sovella write $W_\text{other}$, while the theory writes $W$ with the same meaning. Fix: align them.
+(none)
 
 ## Checked
-$E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$ is MAFY's form, with $W$ the work of the forces other than the weight and the conserved case written out. $\overline{I} = \overline{F}\Delta t$ (N·s), and $\overline{I} = \Delta\overline{p}$, with the sentence stating that the impulse is that of the net force. The map's $\overline{I} = \Delta\overline{p}$ matches. The English text says the same physics as fi. The other rows are unchanged.
+s1 c ($G = mg$, ratio 0,956), s2 b ($E_\text{k}'/E_\text{k}$ = 0,852), s3 c, s4 a ($P_2/P_1 = (v_2/v_1)^3$ = 3,375) and c ($P'/P = h'/h$), s5 a (−6,3 %), s6 d ($N k E_\text{h}/(c m_\text{t})$ = 7,14 K), both inquiry shares (41,7 %; $1 - v^2/(2gh)$ = 53,6 %) and the exit ticket ($v' = m_1v_1/(m_1+m_2)$ = 2,0 m/s) recomputed. The fi, fi-easy and en diffs carry identical mathematics (every changed formula compared token by token); answers.py run; `units.py check` passes.

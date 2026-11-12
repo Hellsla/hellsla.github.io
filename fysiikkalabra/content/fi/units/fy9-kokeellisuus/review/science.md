@@ -1,24 +1,12 @@
-VERDICT: PASS
-CONTENT-HASH: efa8bd3da48f16e0
-
-Delta review of the course rename FY12 → FY9 (commit 3052d352). Previous all-PASS hash: e198735ef8b8ce03. The hash was the same at the start and the end of this review.
-
-I checked that the change is only the rename: every file of `content/fi/units/fy9-kokeellisuus/` and `lessons/units/fy9-kokeellisuus/` (review/ excluded) at 3052d352 equals the file at 47782fdd with `fy12` → `fy9` and `FY12` → `FY9` replaced, and nothing else. No `fy12`/`FY12` remains in the unit's sources or in the built preview.
+VERDICT: FAIL
+CONTENT-HASH: e4232d6393f7c87c
+Delta review (solution practice, 2026-11-12) of the version passed before.
 
 ## Blocking
-
-None.
+1. (A) `sovella/tasks.json` s5 a, criterion `units_precision`: it awards "$\rho \approx 2680\,\text{kg/m}^3$", but the model answer now gives $\rho \approx 2{,}7 \cdot 10^3\,\text{kg/m}^3$ and says three figures are too many without the uncertainty (b gives ±80 kg/m³). Rubric and solution contradict. Fix: "$\rho \approx 2{,}7 \cdot 10^3\,\text{kg/m}^3$ (two figures, $V = 70\,\text{cm}^3$), or $(2680 \pm 80)\,\text{kg/m}^3$ with the uncertainty".
 
 ## Polish
-
-None new. The Polish items of the previous science report still apply as written there.
+(none)
 
 ## Checked
-
-- No number, formula, unit or model text changed; the earlier full recomputation (previous report at e198735ef8b8ce03) stands.
-- `lessons/units/fy9-kokeellisuus/sovella/answers.py` runs without error after the rename, and `python3 scripts/practice.py check units/fy9-kokeellisuus` passes with the same point total as before.
-- Task ids follow `fy9-kokeellisuus-s<n>` in tasks.json, solutions.md headings and the preview (`id`/`data-id`).
-
-## Shared issues
-
-- `docs/figures/catalog.json` still lists sources under `fi:units/fy12-*/inquiry.json` (outside the unit; regenerate the catalog).
+s5 a: 2677 kg/m³, two figures from $V = 70\,\text{cm}^3$ is a sound reason; b (78 kg/m³) unchanged. s6 b–d with the unrounded $a = 4{,}1667\,\text{m/s}^2$: $\mu_0 \ge 0{,}4247$, $a_\text{true}$ = 3,779 m/s², +10,25 %; the component equations in c (positive direction stated) are right. All agree with answers.py. The fi, fi-easy and en diffs carry identical mathematics (every changed formula compared token by token); answers.py run; `units.py check` passes.

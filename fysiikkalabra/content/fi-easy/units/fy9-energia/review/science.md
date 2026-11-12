@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: dfa1148a0e9a3ae8
-Delta review (formulas in MAFY form, 2026-11-12) of the version passed at 5aa92a29303dc6ae.
+CONTENT-HASH: 274a46355e2a7fcc
+Delta review (solution practice, 2026-11-12) of the version passed before.
 
 ## Blocking
 (none)
 
 ## Polish
-1. `inquiry.json`, `sovella/tasks.json`, `sovella/solutions.md` and the glossary explanation in `unit.json` ("Energia on $E = Hm$") still write $E = Hm$, while the theory and the map use $Q = Hm$. Fix: change them to $Q = Hm$.
+(none)
 
 ## Checked
-$Q = Hm$ is MAFY's form. $Q$ is defined in J, and the conditions (complete burning, the heating value for the actual moisture) are kept. The map's fuel node says $Q = Hm$. No other formula changed. The fi-easy text says the same physics as fi. The other rows are unchanged.
+s3 c ($E = E_0 + k(T - T_0)$ = 230,2 kWh), s3 d ($T = (E_\text{muu} - E_0)/k$ = 16,5 °C), s4 a ($P_\text{ka} = kNP_\text{nim}$ = 0,60 MW, 5,3 GWh) recomputed; agree with answers.py and the rubric. The fi, fi-easy and en diffs carry identical mathematics (every changed formula compared token by token); answers.py run; `units.py check` passes.
