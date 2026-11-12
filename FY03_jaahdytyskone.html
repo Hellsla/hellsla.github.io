@@ -4,24 +4,22 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Jäähdytyskone</title>
+<link rel="stylesheet" href="simulaatio-theme.css" />
 <style>
 :root{
   --ink:#2B2A27;
   --soft:#6F6C66;
-  --hot:#F28C28;
+  --hot:var(--sim-orange);
   --hot-fill:#FFE4B8;
-  --cold:#2E86A6;
+  --cold:var(--sim-blue);
   --cold-fill:#DCEFF4;
-  --work:#4A8B5C;
+  --work:var(--sim-green);
 }
 *{box-sizing:border-box}
 html,body{
-  margin:0;
-  width:100%;
-  height:100%;
-  background:#fff;
+  background:var(--sim-bg);
   color:var(--ink);
-  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-family:var(--sim-font);
 }
 body{overflow:hidden}
 .sim{
