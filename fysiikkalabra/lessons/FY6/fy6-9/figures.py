@@ -191,7 +191,7 @@ def potential():
     # the changes under the curve between gridlines, each under its own step; B's potential above its point
     f.tex(ax.X(1) + 10, ax.Y(1.5), r"+4{,}5\,\text{V}", "start", w=100)
     f.tex(ax.X(3.1), ax.Y(2.5), r"-0{,}88\,\text{V}", "middle", w=100)
-    f.tex(ax.X(4.3), ax.Y(4.5), r"3{,}62\,\text{V}", "middle", POT, w=90)
+    f.tex(ax.X(4.3), ax.Y(4.2), r"3{,}62\,\text{V}", "middle", POT, w=90)
     f.tex(ax.X(5.5), ax.Y(2.5), r"-0{,}22\,\text{V}", "middle", w=100)
     f.tex(ax.X(6.8) - 10, ax.Y(1.5), r"-3{,}40\,\text{V}", "end", w=100, bg=True)
     return f.svg()
