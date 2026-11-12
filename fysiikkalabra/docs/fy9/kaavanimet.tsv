@@ -81,20 +81,18 @@ fy9-mittaaminen	305	\Delta k = \frac{k_\text{max} - k_\text{min}}{2}	\Delta k = 
 fy9-mittaaminen	315	s = \tfrac{a}{2} \cdot t^2	s = \tfrac{a}{2} \cdot t^2			ei MAFY:ssa		linearisoinnin esimerkki; voi jättää nimettä
 fy9-mittaaminen	315	p = C \cdot \tfrac{1}{V}	p = C \cdot \tfrac{1}{V}			ei MAFY:ssa		linearisoinnin esimerkki; MAFY:ssa osana tilanyhtälöä
 fy9-mittaaminen	315	m = \rho V + m_0	m = \rho V + m_0			ei MAFY:ssa		linearisoinnin esimerkki; voi jättää nimettä
-fy9-moderni	507	E = hf = \frac{hc}{\lambda}	E = hf = \frac{hc}{\lambda}	fotonin energia	photon energy	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	
-fy9-moderni	507	hf = W + E_\text{k,max}	hf = W + E_\text{k,max}			ei MAFY:ssa		ei MAFY:n kaavoissa (MAFY:ssa irrotustöiden taulukko)
-fy9-moderni	507	hf = E_\text{y} - E_\text{a}	hf = E_\text{u} - E_\text{l}			ei MAFY:ssa		ei MAFY:ssa (MAFY:ssa vetyatomin energiatasot)
-fy9-moderni	507	p = \frac{E}{c} = \frac{h}{\lambda}	p = \frac{E}{c} = \frac{h}{\lambda}	fotonin liikemäärä	photon momentum	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	
-fy9-moderni	518	N = N_0 e^{-\lambda t}	N = N_0 e^{-\lambda t}	hajoamislaki	law of radioactive decay	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	
-fy9-moderni	518	A = \lambda N	A = \lambda N	aktiivisuus	activity	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	
-fy9-moderni	518	\lambda = \frac{\ln 2}{T_{1/2}}	\lambda = \frac{\ln 2}{T_{1/2}}	hajoamisvakio	decay constant	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	
-fy9-moderni	518	\Delta m = m_\text{lähtöaineet} - m_\text{tuotteet}	\Delta m = m_\text{reactants} - m_\text{products}	ydinreaktion massaero	mass difference in a nuclear reaction	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	
-fy9-moderni	518	E = \Delta m c^2	E = \Delta m c^2	ydinreaktiossa vapautuva energia	energy released in a nuclear reaction	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	
-fy9-moderni	587	D = \frac{E}{m}	D = \frac{E}{m}			ei MAFY:ssa		ei MAFY:n kaavoissa
-fy9-moderni	587	H = w_\text{R} D	H = w_\text{R} D	ekvivalenttiannos	equivalent dose	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	
-fy9-moderni	587	H = \dot{H} t	H = \dot{H} t			ei MAFY:ssa		ei MAFY:ssa
-fy9-moderni	587	\dot{H}_2 = \dot{H}_1 \left(\frac{r_1}{r_2}\right)^2	\dot{H}_2 = \dot{H}_1 \left(\frac{r_1}{r_2}\right)^2			ei MAFY:ssa		ei MAFY:ssa
-fy9-moderni	587	I = I_0 e^{-\mu x}	I = I_0 e^{-\mu x}	heikennyslaki	attenuation law	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	
+fy9-moderni	505	E = hf = \frac{hc}{\lambda}	E = hf = \frac{hc}{\lambda}	fotonin energia	photon energy	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	
+fy9-moderni	505	hf = W + E_\text{k,max}	hf = W + E_\text{k,max}			ei MAFY:ssa		ei MAFY:n kaavoissa (MAFY:ssa irrotustöiden taulukko)
+fy9-moderni	505	hf = E_\text{y} - E_\text{a}	hf = E_\text{u} - E_\text{l}			ei MAFY:ssa		ei MAFY:ssa (MAFY:ssa vetyatomin energiatasot)
+fy9-moderni	505	p = \frac{E}{c} = \frac{h}{\lambda}	p = \frac{E}{c} = \frac{h}{\lambda}	fotonin liikemäärä	photon momentum	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	
+fy9-moderni	516	N = N_0 e^{-\lambda t}	N = N_0 e^{-\lambda t}	hajoamislaki	law of radioactive decay	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	
+fy9-moderni	516	A = \lambda N	A = \lambda N	aktiivisuus	activity	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	
+fy9-moderni	516	\lambda = \frac{\ln 2}{T_{1/2}}	\lambda = \frac{\ln 2}{T_{1/2}}	hajoamisvakio	decay constant	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	
+fy9-moderni	516	\Delta m = m_\text{lähtöaineet} - m_\text{tuotteet}	\Delta m = m_\text{reactants} - m_\text{products}	ydinreaktion massaero	mass difference in a nuclear reaction	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	
+fy9-moderni	516	E = \Delta m c^2	E = \Delta m c^2	ydinreaktiossa vapautuva energia	energy released in a nuclear reaction	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	
+fy9-moderni	586	D = \frac{E}{m}	D = \frac{E}{m}			ei MAFY:ssa		ei MAFY:n kaavoissa
+fy9-moderni	586	H = w_\text{R} D	H = w_\text{R} D	ekvivalenttiannos	equivalent dose	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	
+fy9-moderni	586	I = I_0 e^{-\mu x}	I = I_0 e^{-\mu x}	heikennyslaki	attenuation law	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	
 fy9-sahkokentta	267	Q = ne	Q = ne			ei MAFY:ssa		ei MAFY:ssa
 fy9-sahkokentta	267	F_E = k\,\frac{Q_1 Q_2}{r^2}	F_E = k\,\frac{Q_1 Q_2}{r^2}	Coulombin voiman suuruus	magnitude of the Coulomb force	MAFY	Sähköstatiikan kaavoja	
 fy9-sahkokentta	267	E = \frac{F_E}{Q}	E = \frac{F_E}{Q}	sähkökentän voimakkuus	electric field strength	MAFY	Sähköstatiikan kaavoja	

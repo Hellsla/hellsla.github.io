@@ -411,7 +411,7 @@
 
 What joins the phenomena of the module is **quantised energy**. Light exchanges energy with matter as photons whose energy is $E = hf$, and one photon gives its energy to one electron. The electrons of an atom and the nucleons of a nucleus can only be in certain energy states, so in transitions a photon of a definite energy is created or disappears. The differences between electron levels are electronvolts, the energies of nuclear levels and nuclear reactions millions of electronvolts. In the nucleus mass and energy are linked: $E = mc^2$.
 
-<svg data-fig="kartta" viewBox="0 0 380 744" role="img" aria-label="Concept map. At the top is the node quantised energy: the photon energy E = h f and the link between mass and energy E = m c squared. Three branches lead down from it. The photon and the atom, the world of electronvolts: the photoelectric equation h f = W + E k max, the photon of a spectral line h f = E u minus E l and the threshold voltage of an LED e U k approximately h f. The nucleus, the world of megaelectronvolts: the decay law N = N 0 times e to the power minus lambda t, the activity A = lambda N and the reaction energy E = the mass difference times c squared. Radiation and people, dose: the absorbed dose D = E over m, the equivalent dose H = w R times D and the inverse square law of distance. At the bottom, a rule joining all the branches: first one particle, then the number." style="max-width:min(100%,420px);font-size:20px">
+<svg data-fig="kartta" viewBox="0 0 380 692" role="img" aria-label="Concept map. At the top is the node quantised energy: the photon energy E = h f and the link between mass and energy E = m c squared. Three branches lead down from it. The photon and the atom, the world of electronvolts: the photoelectric equation h f = W + E k max, the photon of a spectral line h f = E u minus E l and the threshold voltage of an LED e U k approximately h f. The nucleus, the world of megaelectronvolts: the decay law N = N 0 times e to the power minus lambda t, the activity A = lambda N and the reaction energy E = the mass difference times c squared. Radiation and people, dose: the absorbed dose D = E over m and the equivalent dose H = w R times D. At the bottom, a rule joining all the branches: first one particle, then the number." style="max-width:min(100%,420px);font-size:20px">
   <line x1="24" y1="80" x2="24" y2="530" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
   <foreignObject x="108" y="18" width="164" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\text{quantised energy}$</div></foreignObject>
@@ -439,7 +439,7 @@ What joins the phenomena of the module is **quantised energy**. Light exchanges 
   <foreignObject x="58" y="464" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$E = \Delta m\,c^2$</div></foreignObject>
   <foreignObject x="283" y="466" width="79" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{reaction}$</div></foreignObject>
   <line x1="24" y1="530" x2="44" y2="530" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="44" y="508" width="328" height="188" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <rect x="44" y="508" width="328" height="136" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
   <foreignObject x="58" y="518" width="206" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{radiation and people}$</div></foreignObject>
   <foreignObject x="319" y="520" width="43" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{dose}$</div></foreignObject>
   <line x1="54" y1="550" x2="362" y2="550" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -447,9 +447,7 @@ What joins the phenomena of the module is **quantised energy**. Light exchanges 
   <foreignObject x="283" y="566" width="79" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{absorbed}$</div></foreignObject>
   <foreignObject x="58" y="616" width="60" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$H = w_\text{R} D$</div></foreignObject>
   <foreignObject x="283" y="618" width="79" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{weighted}$</div></foreignObject>
-  <foreignObject x="58" y="668" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\dot{H} \propto 1/r^2$</div></foreignObject>
-  <foreignObject x="283" y="670" width="79" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{distance}$</div></foreignObject>
-  <foreignObject x="13.5" y="714" width="353" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px">$\text{in every branch: one particle, then the number}$</div></foreignObject>
+  <foreignObject x="13.5" y="662" width="353" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px">$\text{in every branch: one particle, then the number}$</div></foreignObject>
 </svg>
 
 In a modern physics problem in the exam it pays to ask first what one particle does: what is the energy of one photon, which transition or decay happens and which numbers are conserved. Only then do you calculate how many photons or nuclei there are, that is the power, the activity or the dose.
@@ -588,12 +586,66 @@ where $N$ is the number of undecayed nuclei at the time $t$, $N_0$ the number at
 ```kaavat
 D = \frac{E}{m}
 equivalent dose :: H = w_\text{R} D
-H = \dot{H} t
-\dot{H}_2 = \dot{H}_1 \left(\frac{r_1}{r_2}\right)^2
 attenuation law :: I = I_0 e^{-\mu x}
 ```
 
-where $D$ is the absorbed dose ($\text{Gy}$), $E$ the absorbed energy, $m$ the mass of the tissue, $H$ the equivalent dose ($\text{Sv}$), $w_\text{R}$ the radiation weighting factor (alpha $20$, beta and gamma $1$), $\dot{H}$ the dose rate, $t$ the time, $r$ the distance, $I_0$ the intensity of the radiation arriving at the surface of the medium and $I$ the intensity of the radiation that passes through, $\mu$ the attenuation coefficient ($1/\text{m}$) and $x$ the thickness of the medium. The half-value thickness is $d_{1/2} = \tfrac{\ln 2}{\mu}$, so behind a shield the dose rate decreases as $\dot{H} = \dot{H}_0 \left(\tfrac12\right)^{x/d_{1/2}}$. The inverse square law holds for a point source when the air does not attenuate the radiation. The half-value thickness applies to photon radiation, because alpha and beta radiation have a range. The recession speed of galaxies is $v = H_0 d$, and for a small redshift $v = cz$.
+where $D$ is the absorbed dose ($\text{Gy}$), $E$ the absorbed energy, $m$ the mass of the tissue, $H$ the equivalent dose ($\text{Sv}$), $w_\text{R}$ the radiation weighting factor (alpha $20$, beta and gamma $1$), $I_0$ the intensity of the radiation arriving at the surface of the medium and $I$ the intensity of the radiation that passes through, $\mu$ the attenuation coefficient ($1/\text{m}$) and $x$ the thickness of the medium. The half-value thickness is $d_{1/2} = \tfrac{\ln 2}{\mu}$. It applies to photon radiation, because alpha and beta radiation have a range. The recession speed of galaxies is $v = H_0 d$, and for a small redshift $v = cz$.
+
+The **dose rate** $\dot{H}$ ($\text{Sv/h}$) is the equivalent dose per unit time. Behind a shield the dose rate decreases as $\dot{H} = \dot{H}_0 \left(\tfrac12\right)^{x/d_{1/2}}$.
+
+```johda
+The dose rate $\dot{H}$ stays constant. Derive the equivalent dose $H$ that a person receives in the time $t$.
+---
+By the definition of the dose rate, it is the equivalent dose divided by the time in which the dose builds up:
+
+$$\dot{H} = \frac{H}{t}$$
+
+Multiply both sides of the equation by the time $t$:
+
+$$H = \dot{H} t$$
+
+The units match when the time is in the same unit as the denominator of the dose rate: $\text{Sv/h}$ times $\text{h}$ is $\text{Sv}$.
+```
+
+A point source radiates evenly in all directions, and the air does not attenuate the radiation. At the distance $r_1$ ($\text{m}$) from the source the dose rate is $\dot{H}_1$, and at the distance $r_2$ it is $\dot{H}_2$.
+
+<svg data-fig="pallo" viewBox="0 0 530 372" role="img" aria-label="Schematic, no numerical values. On the left is a point source from which radiation leaves evenly in all directions. Around the source are two sphere surfaces, the nearer one at the distance r 1 and the farther one at the distance r 2. A beam of radiation from the source meets both surfaces. Farther away the same radiation is spread over a larger area. At the nearer surface the dose rate is H dot 1 and at the farther surface H dot 2." style="max-width:100%;font-size:24px">
+  <path d="M217,100 A170,170 0 0 1 217,270" fill="none" stroke="#6b7480" stroke-width="2.5" stroke-linejoin="round" stroke-dasharray="9 7"/>
+  <path d="M364.5,15 A340,340 0 0 1 364.5,355" fill="none" stroke="#6b7480" stroke-width="2.5" stroke-linejoin="round" stroke-dasharray="9 7"/>
+  <line x1="70" y1="185" x2="428.5" y2="122" stroke="#c92a2a" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="70" y1="185" x2="428.5" y2="248" stroke="#c92a2a" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M237.5,155.5 A170,170 0 0 1 237.5,214.5" fill="none" stroke="#1971c2" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M405,126 A340,340 0 0 1 405,244" fill="none" stroke="#1971c2" stroke-width="7" stroke-linejoin="round"/>
+  <line x1="83" y1="180" x2="213.5" y2="127" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M224,123 L215,132.5 L211,122.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="125" y="120" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$r_1$</div></foreignObject>
+  <line x1="83" y1="190" x2="371.5" y2="306.5" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M381.5,311 L368.5,311.5 L372.5,301.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="149.5" y="233" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$r_2$</div></foreignObject>
+  <circle cx="70" cy="185" r="9" fill="#c92a2a" stroke="#ffffff" stroke-width="2"/>
+  <foreignObject x="-2.5" y="210.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{point source}$</div></foreignObject>
+  <foreignObject x="254" y="170.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\dot{H}_1$</span></div></foreignObject>
+  <foreignObject x="424" y="170.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\dot{H}_2$</span></div></foreignObject>
+  <foreignObject x="374.5" y="8.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{sphere surface}$</div></foreignObject>
+</svg>
+
+```johda
+A point source radiates evenly in all directions. The dose rate is $\dot{H}_1$ at the distance $r_1$. Derive the dose rate $\dot{H}_2$ at the distance $r_2$.
+---
+The source radiates the power $P$ evenly in all directions. At the distance $r$ the radiation is spread over a sphere of area $A = 4\pi r^2$. The intensity is the power per unit area:
+
+$$I = \frac{P}{A} = \frac{P}{4\pi r^2}$$
+
+The dose rate is proportional to the intensity, because the greater the intensity, the more radiation energy reaches the tissue per unit time. Form the ratio of the dose rates, so that $P$ and $4\pi$ cancel:
+
+$$\frac{\dot{H}_2}{\dot{H}_1} = \frac{I_2}{I_1} = \frac{P/(4\pi r_2^2)}{P/(4\pi r_1^2)} = \frac{r_1^2}{r_2^2}$$
+
+Solve for $\dot{H}_2$:
+
+$$\dot{H}_2 = \dot{H}_1 \left(\frac{r_1}{r_2}\right)^2$$
+
+When the distance doubles, the dose rate falls to a quarter.
+```
 
 ## Common mistakes {Virheet}
 
