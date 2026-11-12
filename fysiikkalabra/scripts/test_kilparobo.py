@@ -47,7 +47,7 @@ for lang in i18n.languages():
     expect(f"{lang}: the start page keeps every Otarobo 2026 photo and the students' quotes",
            all(re.search(rf'src="(?:\.\./)?{re.escape(p["src"])}"', hub) for p in c.get("photos", [])) and all(local_courses.esc(q["paragraphs"][0]) in hub for q in c.get("quotes", [])))
     expect(f"{lang}: the five quick answers come first", hub.find('class="kr-quick"') < hub.find('id="tule-mukaan"') and hub.count('class="kr-quick-n"') == 5)
-    expect(f"{lang}: with no news written, 'now' says so (nothing invented)", bool(d["now"]["text"]) or local_courses.esc(d["ui"]["now_empty"]) in hub)
+    expect(f"{lang}: with no news written, 'now' says so (nothing invented)", bool(kilparobo.block(d, "nyt")["text"]) or local_courses.esc(d["ui"]["now_empty"]) in hub)
     path = (out / kilparobo.PATH).read_text()
     expect(f"{lang}: five stages, each with a goal, a practice, a mentor's tip and a way to show it",
            len(re.findall(r'<section class="kr-stage"', path)) == 5 and all(path.count(k) == 5 for k in ('class="kr-goal"', 'kr-box-practice', 'kr-box-mentor', 'kr-box-show')))
@@ -56,7 +56,7 @@ for lang in i18n.languages():
     expect(f"{lang}: no dates on the season page", not re.search(r"\b\d{1,2}\.\d{1,2}\.\d{4}\b", re.sub(r"<[^>]+>", " ", season[season.find("<main"):season.find("</main>")])))
     safety = (out / kilparobo.SAFETY).read_text()
     expect(f"{lang}: safety keeps the mentor's and the teacher's parts apart and is a draft", 'kr-role-mentor' in safety and 'kr-role-teacher' in safety
-           and safety.count('class="kr-teacher"') == len(d["safety"]["topics"]) and local_courses.esc(d["safety"]["draft"]) in safety)
+           and safety.count('class="kr-teacher"') == len(kilparobo.block(d, "turva-aiheet")["topics"]) and local_courses.esc(kilparobo.block(d, "varoitukset")["draft"]) in safety)
 
 # In a browser: nothing scrolls sideways at a phone's, a tablet's or a laptop's width
 try:
