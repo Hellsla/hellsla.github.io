@@ -1,12 +1,13 @@
-VERDICT: FAIL
-CONTENT-HASH: ca31abd20e3d66b5
-Delta review (formulas in MAFY form, 2026-11-12) of the version passed at 47fff9ff6ab0e619.
+VERDICT: PASS
+CONTENT-HASH: 7c3a27204eeae8fd
+Delta review (formulas in MAFY form, 2026-11-12) of the fix to the version reviewed at ca31abd20e3d66b5 (FAIL).
 
 ## Blocking
-1. **B, undefined symbol.** `unit.md`, "Uniformly accelerated motion": no sentence after the new row $\overline{a}_\text{k} = \frac{\Delta\overline{v}}{\Delta t}$ defines $\overline{a}_\text{k}$ or $\Delta\overline{v}$, and neither has a unit. The next rows use a scalar $a$ without the one-dimensional step given for $v$. Fix: add "where $\Delta\overline{v}$ is the change in velocity (m/s) and $\overline{a}_\text{k}$ the average acceleration (m/s²). In linear motion the signed $a = \tfrac{\Delta v}{\Delta t}$ is enough."
+(none)
 
 ## Polish
-2. Sovella writes $v_\text{ka}$, while the theory writes $v_\text{k}$, and the English text never explains the subscript k. Fix: align them, and note that k is MAFY's subscript for average (keskimääräinen).
+1. Sovella writes $v_\text{ka}$, while the theory writes $v_\text{k}$, and the English text never explains the subscript k. Fix: align them, and note that k is MAFY's subscript for average (keskimääräinen).
 
 ## Checked
-$\overline{v}_\text{k} = \Delta\overline{x}/\Delta t$ is MAFY's form, followed by its signed one-dimensional form. $\overline{a}_\text{k}$ is also MAFY's form, but it lacks the definition in Blocking 1. The English text says the same physics as fi. The other rows are unchanged.
+1. The previous Blocking item is fixed (commit c4e866703). The new sentence after the keskikiihtyvyys block defines $\Delta\overline{v}$ (m/s), $\Delta t$ (s) and $\overline{a}_\text{k}$ (m/s²). It gives the signed scalar $a = \Delta v/\Delta t$ for rectilinear motion and says that at constant acceleration the average equals the instantaneous acceleration. All of this is correct, and it fits the rows $v = v_0 + at$ and $x = x_0 + v_0 t + \tfrac12 at^2$ that follow.
+2. $\overline{v}_\text{k} = \Delta\overline{x}/\Delta t$ and $\overline{a}_\text{k}$ are MAFY's forms. The English text says the same physics as fi. Nothing else changed.

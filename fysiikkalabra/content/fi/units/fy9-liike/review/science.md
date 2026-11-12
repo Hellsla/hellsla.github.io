@@ -1,12 +1,13 @@
-VERDICT: FAIL
-CONTENT-HASH: f4bb3ba46d2d1cef
-Delta review (formulas in MAFY form, 2026-11-12) of the version passed at d1021d5831c47cfe.
+VERDICT: PASS
+CONTENT-HASH: 560ecb7e9c19d6a1
+Delta review (formulas in MAFY form, 2026-11-12) of the fix to the version reviewed at f4bb3ba46d2d1cef (FAIL).
 
 ## Blocking
-1. **B, undefined symbol.** `unit.md`, "Tasaisesti kiihtyvä liike": no sentence after the new row $\overline{a}_\text{k} = \frac{\Delta\overline{v}}{\Delta t}$ defines $\overline{a}_\text{k}$ or $\Delta\overline{v}$, and neither has a unit. The next rows switch to a scalar $a$ without the one-dimensional step that the average-velocity sentence gives for $v$. Fix: after the block add "missä $\Delta\overline{v}$ on nopeuden muutos (m/s) ja $\overline{a}_\text{k}$ keskikiihtyvyys (m/s²). Suoraviivaisessa liikkeessä riittää etumerkillinen $a = \tfrac{\Delta v}{\Delta t}$."
+(none)
 
 ## Polish
-2. `sovella/tasks.json` and `solutions.md` write $v_\text{ka}$, while the theory writes $v_\text{k}$. Fix: align them.
+1. `sovella/tasks.json` and `solutions.md` write $v_\text{ka}$, while the theory writes $v_\text{k}$. Fix: align them.
 
 ## Checked
-$\overline{v}_\text{k} = \Delta\overline{x}/\Delta t$ is MAFY's form, followed by its signed one-dimensional form. $\overline{a}_\text{k}$ is also MAFY's form, but it lacks the definition in Blocking 1. The other rows are unchanged.
+1. The previous Blocking item is fixed (commit c4e866703). The new sentence after the keskikiihtyvyys block defines $\Delta\overline{v}$ (m/s), $\Delta t$ (s) and $\overline{a}_\text{k}$ (m/s²). It gives the signed scalar $a = \Delta v/\Delta t$ for rectilinear motion and says that at constant acceleration the average equals the instantaneous acceleration. All of this is correct, and it fits the rows $v = v_0 + at$ and $x = x_0 + v_0 t + \tfrac12 at^2$ that follow.
+2. $\overline{v}_\text{k} = \Delta\overline{x}/\Delta t$ and $\overline{a}_\text{k}$ are MAFY's forms. Nothing else changed.
