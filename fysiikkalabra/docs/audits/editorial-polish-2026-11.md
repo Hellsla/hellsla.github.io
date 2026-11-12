@@ -1,7 +1,7 @@
 # Ruukkilabra – koko oppikirjasarjan toimituksellinen viimeistelyauditointi
 
 **Päiväys:** 13.11.2026  
-**Tarkastettu lähtötaso:** \`Hellsla/hellsla.github.io\` / \`main\`, commit \`761b6673e1c9cd5a00d4a8d7cf1ece7e95c9427e\`.  
+**Tarkastettu lähtötaso:** `Hellsla/hellsla.github.io` / `main`, commit `761b6673e1c9cd5a00d4a8d7cf1ece7e95c9427e`.  
 **Tämä on vain VAIHE 1: riippumaton toimituksellinen auditointi.** Tiedosto on tarkoitettu opettajan hyväksyttäväksi, ei automaattisesti sovellettavaksi korjaussarjaksi.
 
 ## 1. Kokonaisarvio ja johtopäätös
@@ -12,11 +12,11 @@ Ruukkilabran nykyisessä aineistossa on laajasti kustannustoimituksellisesti kä
 
 ### Menetelmä ja rehellinen kattavuusrajaus
 
-- Luettu repositorion \`CLAUDE.md\`, \`NOTES.md\`, \`docs/EDITORIAL_QUALITY_STANDARD.md\`, \`docs/physics-guardrails.md\` sekä aiemmat FY1–FY3-fysiikan ja FY1–FY4-työmäärän auditoinnit. Erottelu \`main\`-haaran ja avoinna olevien PR:ien välillä on tärkeää: erityisesti PR #521, #522 ja #523 koskettavat samanaikaisesti materiaaleja/merkintöjä.
-- Kartoitettu **kaikkien 113 FY1–FY8-luvun** \`lesson.md\`-tekstien rakenne, \`inquiry.json\`-vaiheet ja \`exercises/exercises.json\`-tehtävälajit; tarkastettu myös kaikkien 113 luvun \`solutions.md\`-tiedostojen vastausosioiden lukumäärä. Kaikissa osioita oli yhtä monta kuin tehtäviä (yleensä 21, yhdessä FY8-luvussa 22). Tämä on **rakenne- ja kattavuustarkistus**, ei väite kaikkien yksittäisten lukuarvojen laskemisesta uudelleen.
+- Luettu repositorion `CLAUDE.md`, `NOTES.md`, `docs/EDITORIAL_QUALITY_STANDARD.md`, `docs/physics-guardrails.md` sekä aiemmat FY1–FY3-fysiikan ja FY1–FY4-työmäärän auditoinnit. Erottelu `main`-haaran ja avoinna olevien PR:ien välillä on tärkeää: erityisesti PR #521, #522 ja #523 koskettavat samanaikaisesti materiaaleja/merkintöjä.
+- Kartoitettu **kaikkien 113 FY1–FY8-luvun** `lesson.md`-tekstien rakenne, `inquiry.json`-vaiheet ja `exercises/exercises.json`-tehtävälajit; tarkastettu myös kaikkien 113 luvun `solutions.md`-tiedostojen vastausosioiden lukumäärä. Kaikissa osioita oli yhtä monta kuin tehtäviä (yleensä 21, yhdessä FY8-luvussa 22). Tämä on **rakenne- ja kattavuustarkistus**, ei väite kaikkien yksittäisten lukuarvojen laskemisesta uudelleen.
 - Luettu tarkemmin priorisoitujen lukujen teoriaa, tutkimusasetelmia ja valittuja malliratkaisuja. FY9:n 16 yksikön rakenteet sekä FY10:n 27 tutkimustekstin sisältörakenne käytiin läpi; FY14:n 29 englanninkielisen yksikön teemat ja valitut fysiikkakohdat tarkastettiin.
-- Ahjo 1, Ahjo 2 ja Dronelabra tarkastettiin \`jaksot/ahjo/jakso.json\`-tuntirakenteista. Käännösten vastaavuutta verrattiin kansiorakenteiden ja valittujen \`inquiry.json\`-näytteiden tasolla. FY1-8:sta viisi pistokoetta (FY1-7, FY2-5, FY4-1, FY7-11, FY8-12) tuottivat samat aktiviteetti-ID:t ja pakollisuusvalinnat suomessa, englannissa ja selkosuomessa. Täydellistä lausekohtaista käännöstarkistusta ei tehty.
-- Simulaatioiden laskentaa, renderöintiä, oikeaa laitteistoa tai \`reviews.py verify\` -ketjua **ei ajettu**. Raportti ei muuta yhtäkään sisältö- tai kuva-/simulaatiotiedostoa. Sen havainnot ovat tarkistettavia toimituksellisia ehdotuksia, eivät automaattisesti hyväksyttyjä korjauksia.
+- Ahjo 1, Ahjo 2 ja Dronelabra tarkastettiin `jaksot/ahjo/jakso.json`-tuntirakenteista. Käännösten vastaavuutta verrattiin kansiorakenteiden ja valittujen `inquiry.json`-näytteiden tasolla. FY1-8:sta viisi pistokoetta (FY1-7, FY2-5, FY4-1, FY7-11, FY8-12) tuottivat samat aktiviteetti-ID:t ja pakollisuusvalinnat suomessa, englannissa ja selkosuomessa. Täydellistä lausekohtaista käännöstarkistusta ei tehty.
+- Simulaatioiden laskentaa, renderöintiä, oikeaa laitteistoa tai `reviews.py verify` -ketjua **ei ajettu**. Raportti ei muuta yhtäkään sisältö- tai kuva-/simulaatiotiedostoa. Sen havainnot ovat tarkistettavia toimituksellisia ehdotuksia, eivät automaattisesti hyväksyttyjä korjauksia.
 
 ### Merkittävimmät vahvuudet
 
@@ -24,15 +24,15 @@ Ruukkilabran nykyisessä aineistossa on laajasti kustannustoimituksellisesti kä
 2. FY1–FY8-tehtäväsarjat sisältävät käsitteellisiä, graafisia, data-, virhe-, malli- ja päättelytehtäviä eivätkä muodostu vain sijoituslaskuista.
 3. Mallivastausten kattavuus on rakenteellisesti hyvä, ja fysiikan periaatteen perustelu toistuu johdonmukaisena ratkaisuvaiheena.
 4. FY10:n tutkimuksissa erotetaan jo ohjattu, osittain ohjattu ja itsenäinen työtapa. Esimerkiksi pariston oikosulkua ja mikroaaltouunin käyttöä koskevat turvarajaukset on kirjoitettu nimenomaisesti.
-5. FY14 erottaa ITERin plasmahyötysuhteen \`Q\`:n koko voimalaitoksen sähköenergiataseesta ja ilmoittaa suunnitelmien päivämäärät.
+5. FY14 erottaa ITERin plasmahyötysuhteen `Q`:n koko voimalaitoksen sähköenergiataseesta ja ilmoittaa suunnitelmien päivämäärät.
 
 ### Kymmenen merkittävintä toistuvaa ongelmatyyppiä (ei laskennallinen frekvenssiranking)
 
 | # | Ongelmatyyppi | Varmennettu esimerkki | Yhteinen ratkaisu |
 |---|---|---|---|
 | 1 | Liian monta pakollista tutkimusta | FY4-1, FY4-2, FY5-9 | Yksi päämittaus tunnille, muu valinnaiseksi |
-| 2 | Ennusteen selitys näkyy ennen näyttöä | FY1-7, FY2-5 ja FY2-7 | \`reveal.after\` todelliseen havaintoon |
-| 3 | Ehdottomat sanat mallin ulkopuolella | FY4-8 \`aina\`, FY7-11 \`aina\`, FY8-12 \`läpäisee\` | Mallin ehdot jo Miksi-kysymykseen |
+| 2 | Ennusteen selitys näkyy ennen näyttöä | FY1-7, FY2-5 ja FY2-7 | `reveal.after` todelliseen havaintoon |
+| 3 | Ehdottomat sanat mallin ulkopuolella | FY4-8 `aina`, FY7-11 `aina`, FY8-12 `läpäisee` | Mallin ehdot jo Miksi-kysymykseen |
 | 4 | Yksittäisen tunnin sisällöllinen kaksoisaihe | FY5-16, FY7-16 | Selkeä ydinpolku ja syventävä polku |
 | 5 | Kertauspolun kaikki tehtävät merkitty pakollisiksi | FY9-liike, FY9-koe | Diagnostiikasta 2–3 ydintehtävää |
 | 6 | Tutkimuskysymys lupaa mitata ominaisuuden, jota mitataan vain epäsuorasti | FY10-lammonjohtuminen | Nimeä mitattava suure ja mallin rajat |
@@ -43,7 +43,7 @@ Ruukkilabran nykyisessä aineistossa on laajasti kustannustoimituksellisesti kä
 
 ### Tuntityömäärän toimituksellinen vertailuarvo
 
-\`75 min\` ei tarkoita, että kaikki harjoitustehtävät tehtäisiin tunnilla. Suositeltu **tarkastuksen vertailupolku**, ei kaikille tunneille määrätty aikataulu: Pohdinta 5 min; Ennusta 6 min; Tutki ja yhteinen havainto 22 min; Teoria 12 min; malliesimerkki 10 min; kaksi ydintehtävää 15 min; Testaa ja arvioi 5 min. Loput ydintehtävät voidaan osoittaa kotityöksi tai itsenäisen harjoittelun poluksi, mikäli sivuston pakollisuusmerkinnät eivät johda harhaan.
+`75 min` ei tarkoita, että kaikki harjoitustehtävät tehtäisiin tunnilla. Suositeltu **tarkastuksen vertailupolku**, ei kaikille tunneille määrätty aikataulu: Pohdinta 5 min; Ennusta 6 min; Tutki ja yhteinen havainto 22 min; Teoria 12 min; malliesimerkki 10 min; kaksi ydintehtävää 15 min; Testaa ja arvioi 5 min. Loput ydintehtävät voidaan osoittaa kotityöksi tai itsenäisen harjoittelun poluksi, mikäli sivuston pakollisuusmerkinnät eivät johda harhaan.
 
 ## 2. Moduulikohtainen arvio ja korjaustyön laajuus
 
@@ -69,7 +69,7 @@ Arviot ovat karkea toimituksellisen **hyväksyttyjen ehdotusten toteutuksen** he
 
 ## 3. Tarkat muutoshavainnot
 
-Jokaisessa havaintorivissä polku on **suhteessa \`fysiikkalabra/\`-hakemistoon**. Tekstimuutokset ovat opettajan hyväksyntää odottavia ehdotuksia. Rakennemuutoksissa nykyinen pakollisuusmerkintä on osa havaittua tekstiä ja uusi arvo on täsmällinen toteutusohje.
+Jokaisessa havaintorivissä polku on **suhteessa `fysiikkalabra/`-hakemistoon**. Tekstimuutokset ovat opettajan hyväksyntää odottavia ehdotuksia. Rakennemuutoksissa nykyinen pakollisuusmerkintä on osa havaittua tekstiä ja uusi arvo on täsmällinen toteutusohje.
 
 ### 01 · FY1 — fy1-3 Mittaaminen ja mittauksen luotettavuus · P1
 
@@ -313,17 +313,17 @@ Jokaisessa havaintorivissä polku on **suhteessa \`fysiikkalabra/\`-hakemistoon*
 
 ## 4. Yhteiset ohjeet, joilla ratkaistaan toistuvat ongelmat
 
-**Ohje Y1 – Ennuste ei ole monivalintatesti.** Jokainen ennustetehtävä on opiskelijan ennen tutkimusta tekemä perusteltu arvio. Oikea/virheellinen-palaute ja fysiikan oikea selitys avautuvat vasta asiaan liittyvän havainnon ja johtopäätöksen jälkeen. Varmista \`reveal.after\`-viitteen olemassaolo; älä näytä käsitteellistä oikeaa vastausta jo ennustekortissa. Kaikki ennusteet eivät tarvitse numeerista oikeaa vastausta.
+**Ohje Y1 – Ennuste ei ole monivalintatesti.** Jokainen ennustetehtävä on opiskelijan ennen tutkimusta tekemä perusteltu arvio. Oikea/virheellinen-palaute ja fysiikan oikea selitys avautuvat vasta asiaan liittyvän havainnon ja johtopäätöksen jälkeen. Varmista `reveal.after`-viitteen olemassaolo; älä näytä käsitteellistä oikeaa vastausta jo ennustekortissa. Kaikki ennusteet eivät tarvitse numeerista oikeaa vastausta.
 
-**Ohje Y2 – Pakollisen 75 minuutin ydinpolun budjetti.** Yhdellä tunnilla on pääsääntöisesti yksi riittävän perusteellinen mittaus tai simulaatiokokonaisuus. Vertailututkimukset, toiset parametrisarjat ja lisäsovellukset voivat olla valinnaisia. Lause \`tehtävät\`-vaiheessa EI tarkoita kaikkia 21 tehtävää tunnilla; erottele tunnin minimit, itsenäinen eteneminen ja kotiin sopivat tehtävät.
+**Ohje Y2 – Pakollisen 75 minuutin ydinpolun budjetti.** Yhdellä tunnilla on pääsääntöisesti yksi riittävän perusteellinen mittaus tai simulaatiokokonaisuus. Vertailututkimukset, toiset parametrisarjat ja lisäsovellukset voivat olla valinnaisia. Lause `tehtävät`-vaiheessa EI tarkoita kaikkia 21 tehtävää tunnilla; erottele tunnin minimit, itsenäinen eteneminen ja kotiin sopivat tehtävät.
 
-**Ohje Y3 – Ehdoton väite vaatii ehdottoman fysiikan.** Etsi \`aina\`, \`ei koskaan\`, \`kaikki\`, \`ei vaurioita\`, \`läpäisee\` sekä vastaavat ilmaukset aloituskysymyksistä ja tiivistelmistä. Korvaa ehdollisuudella vain, kun fysiikan mallin rajoitus sitä todella edellyttää. Älä muuta oikeita yleislakeja varovaisiksi vain varovaisuuden vuoksi.
+**Ohje Y3 – Ehdoton väite vaatii ehdottoman fysiikan.** Etsi `aina`, `ei koskaan`, `kaikki`, `ei vaurioita`, `läpäisee` sekä vastaavat ilmaukset aloituskysymyksistä ja tiivistelmistä. Korvaa ehdollisuudella vain, kun fysiikan mallin rajoitus sitä todella edellyttää. Älä muuta oikeita yleislakeja varovaisiksi vain varovaisuuden vuoksi.
 
 **Ohje Y4 – Tutkimuskysymyksessä yksi mitattava riippuvuus.** Kokeellisessa tehtävässä erota havaittu suure, sen avulla pääteltävä malli ja mallin rajoitukset. Toiset suureet ja eri mittausjärjestelyt laajennukseen; säilytä epävarmuuden arvio ja aineistoon perustuva johtopäätös.
 
-**Ohje Y5 – Malliratkaisu ei saa muuttua lomakkeen täyttämiseksi.** Säilytä fysiikan periaate, kaavan ratkaiseminen, yksiköt ja vastaus. Käytä \`järkevyys\`-vaiheessa vain oikeasti toista arviointiperustetta tai tilanteeseen sopivaa suuruusluokkaa. Älä toista edeltävää sijoitusta eri sanoin. Älä muuta sovittuja MAFY-/taulukkokirjan merkintätapoja tämän auditoinnin yhteydessä.
+**Ohje Y5 – Malliratkaisu ei saa muuttua lomakkeen täyttämiseksi.** Säilytä fysiikan periaate, kaavan ratkaiseminen, yksiköt ja vastaus. Käytä `järkevyys`-vaiheessa vain oikeasti toista arviointiperustetta tai tilanteeseen sopivaa suuruusluokkaa. Älä toista edeltävää sijoitusta eri sanoin. Älä muuta sovittuja MAFY-/taulukkokirjan merkintätapoja tämän auditoinnin yhteydessä.
 
-**Ohje Y6 – Kieliversioiden merkityssynkronointi.** Kun suomenkielisen tehtävän fysiikan malli, oikea vaihtoehto, pakollisuus tai vaiheistus muuttuu, vertaa vastaavat \`id\`-kohdat \`content/en\`- ja \`content/fi-easy\`-tiedostoihin sekä niiden mallivastauksiin. Ahjo-tunneilla vertaa \`courses[].lessons[]\` vastaavan koodin ja numeron perusteella. FY14:n päivättävät tiedot pidetään lähdeviitteineen yhdessä ensisijaisessa paikassa.
+**Ohje Y6 – Kieliversioiden merkityssynkronointi.** Kun suomenkielisen tehtävän fysiikan malli, oikea vaihtoehto, pakollisuus tai vaiheistus muuttuu, vertaa vastaavat `id`-kohdat `content/en`- ja `content/fi-easy`-tiedostoihin sekä niiden mallivastauksiin. Ahjo-tunneilla vertaa `courses[].lessons[]` vastaavan koodin ja numeron perusteella. FY14:n päivättävät tiedot pidetään lähdeviitteineen yhdessä ensisijaisessa paikassa.
 
 ## 5. Priorisoitu hyväksyntäehdotus
 
@@ -346,7 +346,7 @@ Jokaisessa havaintorivissä polku on **suhteessa \`fysiikkalabra/\`-hakemistoon*
 
 - FY14:n aikataulukertauksen keskittäminen ja päivättyjen suunnitelmatietojen yhdenmukaistus (havainto 28). Älä heikennä lukujen luettavuutta itsenäisinä kokonaisuuksina.
 
-**Korjausten toteutustapa hyväksynnän jälkeen:** muuta vain hyväksytyt \`content/\`- ja \`jaksot/\`-lähdetiedostot, päivitä niihin sidotut ratkaisut ja tarvittavat kieliversiot, suorita fysiikan, pedagogiikan sekä toimituksellinen tarkastus ja repositorion normaalit testit ja \`reviews.py verify\`. Älä merkitse hyväksyntöjä suoritetuiksi ilman toteutusta. Tee muutos-PR:t moduuleittain erilleen; **älä yhdistä automaattisesti**.
+**Korjausten toteutustapa hyväksynnän jälkeen:** muuta vain hyväksytyt `content/`- ja `jaksot/`-lähdetiedostot, päivitä niihin sidotut ratkaisut ja tarvittavat kieliversiot, suorita fysiikan, pedagogiikan sekä toimituksellinen tarkastus ja repositorion normaalit testit ja `reviews.py verify`. Älä merkitse hyväksyntöjä suoritetuiksi ilman toteutusta. Tee muutos-PR:t moduuleittain erilleen; **älä yhdistä automaattisesti**.
 
 ## 6. Opettajan hyväksyntä
 
