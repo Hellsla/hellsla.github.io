@@ -262,3 +262,24 @@ $v = f\lambda = 1{,}5\,\text{Hz} \cdot 1{,}2\,\text{m}$, eli $v = 1{,}8\,\text{m
 4 epätosi: köysi ja sen jännitys pysyvät samoina, joten nopeus pysyy $1{,}8\,\text{m/s}$:na. Kaksinkertainen taajuus $3{,}0\,\text{Hz}$ puolittaa aallonpituuden: $\lambda = \tfrac{1{,}8\,\text{m/s}}{3{,}0\,\text{Hz}} = 0{,}60\,\text{m}$.
 
 5 epätosi: $(t, y)$-kuvaajan vaaka-akselilla on aika, joten huippujen väli on jaksonaika $T \approx 0{,}67\,\text{s}$. Se ei ole aallonpituus $1{,}2\,\text{m}$.
+
+## fy5-10-L1-10
+**Annettu:** taajuus $f = 1{,}00\,\text{kHz}$. Tangon lämpötila on $20\,{}^\circ\text{C}$. Taulukosta (MAFY, *Äänen nopeuksia eri väliaineissa: Kiinteät aineet*, rauta) äänen nopeus on $v = 5120\,\text{m/s}$.
+**Kysytty:** aallonpituus $\lambda$ metreinä
+**Periaate:** Aaltoliikkeen perusyhtälö $v = f\lambda$ pätee kaikille jaksollisille aalloille. Nopeus riippuu väliaineesta. Tässä väliaine on rauta, ja nopeus luetaan taulukosta. Taajuus tulee lähteestä. Siksi taajuudesta ja nopeudesta saadaan aallonpituus.
+**Kaava:** $v = f\lambda$, josta $\lambda = \dfrac{v}{f}$
+**Muunnokset:** $1{,}00\,\text{kHz} = 1{,}00 \cdot 1000\,\text{Hz} = 1000\,\text{Hz}$. Lisäksi $1\,\text{Hz} = 1\,\text{s}^{-1}$.
+**Sijoitus:** $\lambda = \dfrac{5120\,\text{m/s}}{1000\,\text{Hz}} = \dfrac{5120\,\text{m/s}}{1000\,\text{s}^{-1}} = 5{,}12\,\text{m}$
+**Vastaus:** $5{,}12\,\text{m}$. Vastauksessa on kolme merkitsevää numeroa, koska taulukkoarvossa $5120\,\text{m/s}$ ja taajuudessa $1{,}00\,\text{kHz}$ on kolme.
+**Järkevyys:** Ilmassa saman taajuuden aallonpituus olisi $\tfrac{343\,\text{m/s}}{1000\,\text{Hz}} = 0{,}34\,\text{m}$. Raudassa ääni etenee noin $15$ kertaa nopeammin. Siksi aallonpituus on myös noin $15$ kertaa pidempi: $\tfrac{5{,}12\,\text{m}}{0{,}34\,\text{m}} \approx 15$. Taajuus pysyy samana, kun aalto siirtyy väliaineesta toiseen.
+
+## fy5-10-L2-08
+**Annettu:** narun valokuva eli $(x, y)$-kuvaaja (kuva). Heilutustaajuus on $f = 2{,}4\,\text{Hz}$.
+**Kysytty:** aallon nopeus $v$
+**Periaate:** Valokuvan vaaka-akselilla on paikka. Siksi kahden peräkkäisen harjan väli on aallonpituus $\lambda$. Narun jokainen kohta värähtelee käden taajuudella. Aaltoliikkeen perusyhtälön mukaan nopeus on taajuus kertaa aallonpituus.
+**Kuvaajan lukeminen:** Harjat ovat ruudukon viivoilla kohdissa $0{,}5\,\text{m}$, $2{,}0\,\text{m}$ ja $3{,}5\,\text{m}$. Kahden peräkkäisen harjan väli on $2{,}0\,\text{m} - 0{,}5\,\text{m} = 1{,}5\,\text{m}$. Sama väli on kohtien $2{,}0\,\text{m}$ ja $3{,}5\,\text{m}$ välillä. Siis $\lambda = 1{,}5\,\text{m}$. Amplitudia $4\,\text{cm}$ ei tarvita.
+**Kaava:** $v = f\lambda$
+**Muunnokset:** Ei tarvita. Aallonpituus on metreinä, ja $1\,\text{Hz} = 1\,\text{s}^{-1}$. Siksi tulos tulee yksikössä $\text{m/s}$.
+**Sijoitus:** $v = 2{,}4\,\text{Hz} \cdot 1{,}5\,\text{m} = 2{,}4\,\text{s}^{-1} \cdot 1{,}5\,\text{m} = 3{,}6\,\text{m/s}$
+**Vastaus:** $3{,}6\,\text{m/s}$. Vastauksessa on kaksi merkitsevää numeroa, koska taajuudessa $2{,}4\,\text{Hz}$ ja kuvasta luetussa aallonpituudessa $1{,}5\,\text{m}$ on kaksi.
+**Järkevyys:** Jaksonaika on $T = \tfrac{1}{2{,}4\,\text{Hz}} = 0{,}417\,\text{s}$. Siinä ajassa aalto etenee $3{,}6\,\text{m/s} \cdot 0{,}417\,\text{s} = 1{,}5\,\text{m}$. Se on yksi aallonpituus. Muutama metri sekunnissa on narussa etenevälle aallolle tavallinen nopeus.

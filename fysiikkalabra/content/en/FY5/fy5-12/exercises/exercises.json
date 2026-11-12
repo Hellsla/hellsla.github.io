@@ -315,6 +315,18 @@
           "feedback": "There is an error in the calculation. Compare the conclusion of line 4 with the conditions of interference: the ratio $2.0$ is a whole number, so it satisfies the condition $\\Delta s = n\\lambda$ and not the condition $\\Delta s = \\left(n + \\tfrac{1}{2}\\right)\\lambda$."
         }
       ]
+    },
+    {
+      "id": "fy5-12-L2-09",
+      "level": 2,
+      "kind": [
+        "graph"
+      ],
+      "text": "The figure shows two loudspeakers in phase, $S_1$ and $S_2$, and a point P on a grid. Read the values you need from the figure. What is the path difference $\\Delta s = |s_1 - s_2|$ at the point P? Give the answer in metres.",
+      "figure": "fy5-12/ruudukko-tehtava",
+      "answer": 0.5,
+      "unit": "m",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -382,6 +394,19 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy5-12-L3-06",
+      "level": 3,
+      "kind": [
+        "graph",
+        "reasoning"
+      ],
+      "text": "The figure shows two loudspeakers in phase, $S_1$ and $S_2$, and a point P on a grid. The loudspeakers play the same sine tone, and the speed of sound is $340\\,\\text{m/s}$. Assume that the sound is not reflected from anywhere. Read the values you need from the figure. What is the lowest frequency at which the interference at the point P is destructive? Give the answer in hertz.",
+      "figure": "fy5-12/ruudukko-tehtava",
+      "answer": 340,
+      "unit": "Hz",
+      "tolerance": 0.02
     }
   ]
 }
