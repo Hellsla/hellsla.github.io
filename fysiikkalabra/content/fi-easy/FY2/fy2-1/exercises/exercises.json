@@ -151,6 +151,15 @@
           "feedback": "Oikein: potentiaalienergia muuttui pomppujen aikana liike-energian kautta lämpöenergiaksi. Lämpöenergia on nyt pallossa, lattiassa ja ilmassa. Sillä ei voi enää helposti nostaa palloa takaisin ylös."
         }
       ]
+    },
+    {
+      "id": "fy2-1-L1-10",
+      "level": 1,
+      "text": "Vedenkeitin muuttaa sähköenergiaa lämpöenergiaksi. Oletetaan, että kaikki sähköenergia siirtyy veteen eikä lämpöä karkaa ympäristöön. Keittimessä on $0{,}50\\,\\text{kg}$ vettä. Veden lämpötila nousee $20\\,^\\circ\\text{C}$:sta $60\\,^\\circ\\text{C}$:een. Veden lämpöenergian kasvu lasketaan kaavalla $E = c\\,m\\,\\Delta T$. Tässä $c$ on veden ominaislämpökapasiteetti (se kertoo, kuinka paljon energiaa yhden kilogramman lämmittäminen yhdellä asteella vaatii), $m$ on massa ja $\\Delta T$ on lämpötilan muutos.\n\nHae veden ominaislämpökapasiteetti MAFY-taulukosta (mafytaulukot.fi). Vihje: arvo on lämpöopin ominaislämpökapasiteettien taulukossa, vesi-rivillä. Kuinka paljon sähköenergiaa keitin muuttaa lämpöenergiaksi?",
+      "lookup": "MAFY",
+      "answer": 83.8,
+      "unit": "kJ",
+      "tolerance": 0.03
     }
   ],
   "level2": [
@@ -273,6 +282,15 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy2-1-L2-08",
+      "level": 2,
+      "text": "Skeittari lähtee levosta half-pipen reunalta kohdasta A. Hän laskee rinnettä, jossa on kitkaa, kohdan B kautta pohjalle kohtaan C. Kuvan pylväät näyttävät hänen potentiaalienergiansa ja liike-energiansa kussakin kohdassa. Pohja on potentiaalienergian nollataso.\n\nLue energiat kuvasta. Kuinka monta prosenttia skeittarin alkuperäisestä energiasta kitka on muuttanut lämpöenergiaksi kohtaan B mennessä?",
+      "figure": "fy2-1/kitka-pylvaat",
+      "answer": 14.3,
+      "unit": "%",
+      "tolerance": 0.03
     }
   ],
   "level3": [

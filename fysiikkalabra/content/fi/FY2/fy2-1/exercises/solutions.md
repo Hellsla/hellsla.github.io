@@ -64,6 +64,16 @@
 **Periaate:** Energiaa ei synny eikä katoa, vaan se muuttaa muotoa: eristetyssä systeemissä $E_\text{alussa} = E_\text{lopussa}$. Summaan kuuluvat kaikki energialajit, myös lämpöenergia. Törmäyksessä ja ilmanvastuksen takia mekaanista energiaa muuttuu lämpöenergiaksi.
 **Mallivastaus:** Väitteet 1, 3 ja 5 ovat tosia. Mekaaninen energia $E_\text{p} + E_\text{k}$ pienenee jokaisessa pompussa, mutta pallon, lattian ja ilman kokonaisenergia pysyy samana. Lopussa pallolla ei ole enää liike-energiaa eikä lattiaa korkeammalta saatua potentiaalienergiaa, ja sama energia on lämpöenergiana pallossa, lattiassa ja ilmassa. Väitteet 2 ja 4 ovat epätosia: energia ei kulu loppuun, ja lämpöenergia on osa kokonaisenergiaa, joten kokonaisenergia ei vähene.
 
+## fy2-1-L1-10
+**Annettu:** veden massa $m = 0{,}50\,\text{kg}$, lämpötila alussa $20\,^\circ\text{C}$ ja lopussa $60\,^\circ\text{C}$; taulukosta (MAFY-taulukko, ominaislämpökapasiteetit, vesi) $c = 4{,}19\,\text{kJ/(kg}\cdot\text{K)}$
+**Kysytty:** keittimen lämpöenergiaksi muuttama sähköenergia $E$ yksikössä $\text{kJ}$
+**Periaate:** Kaikki sähköenergia siirtyy veteen eikä ympäristöön karkaa lämpöä, joten systeemi on eristetty ja energia säilyy: sähköenergian vähennys on yhtä suuri kuin veden lämpöenergian kasvu. Veden lämpöenergian kasvu on $E = c\,m\,\Delta T$.
+**Kaava:** $E_\text{sähkö} = E_\text{lämpö}$, ja $E_\text{lämpö} = c\,m\,\Delta T$, joten $E = c\,m\,\Delta T$
+**Muunnokset:** Lämpötilan muutos on sama celsiusasteina ja kelvineinä: $\Delta T = 60\,^\circ\text{C} - 20\,^\circ\text{C} = 40\,^\circ\text{C} = 40\,\text{K}$. Ominaislämpökapasiteetti on jo yksikössä $\text{kJ/(kg}\cdot\text{K)}$, joten vastaus tulee kilojouleina.
+**Sijoitus:** $E = 4{,}19\,\dfrac{\text{kJ}}{\text{kg}\cdot\text{K}} \cdot 0{,}50\,\text{kg} \cdot 40\,\text{K} = 83{,}8\,\text{kJ}$
+**Vastaus:** $E \approx 84\,\text{kJ}$, kaksi merkitsevää numeroa kuten massassa $0{,}50\,\text{kg}$. Taulukkoarvo $c = 4{,}19\,\text{kJ/(kg}\cdot\text{K)}$ on MAFY-taulukosta (kohta ominaislämpökapasiteetit, vesi); toisen taulukon pyöristys, esimerkiksi $4{,}18$, antaisi saman tuloksen kahden numeron tarkkuudella.
+**Järkevyys:** Karkea arvio: $4\,\text{kJ} \cdot 0{,}5 \cdot 40 = 80\,\text{kJ}$, joten tulos on oikean kokoluokan. Kilo vettä vaatii noin $4\,\text{kJ}$ yhtä astetta kohti, ja puoli litraa vettä lämpenee 40 astetta noin $84\,\text{kJ}$:lla eli keittimellä, jonka teho on $2\,\text{kW}$, noin $42\,\text{s}$:ssa, mikä on arkikokemukseen sopiva.
+
 ## fy2-1-L2-01
 **Annettu:** akusta vapautuva kemiallinen energia $E_\text{kem} = 3{,}00\,\text{kJ}$, potkulaudan ja kuljettajan liike-energia $E_\text{k} = 2150\,\text{J}$
 **Kysytty:** lämpöenergiaksi muuttuva energia $E_\text{lämpö}$ yksikössä $\text{J}$
@@ -133,6 +143,17 @@
 **Sijoitus:** $E_\text{lämpö,hehku} = 216\,\text{kJ} - 11\,\text{kJ} = 205\,\text{kJ}$ ja $E_\text{lämpö,LED} = 216\,\text{kJ} - 54\,\text{kJ} = 162\,\text{kJ}$, joten $\Delta E_\text{lämpö} = 205\,\text{kJ} - 162\,\text{kJ} = 43\,\text{kJ}$
 **Vastaus:** $43\,\text{kJ}$ enemmän lämpöenergiaa hehkulampulla. Kaksi merkitsevää numeroa vastaa valon energian $11\,\text{kJ}$ tarkkuutta.
 **Järkevyys:** Hehkulampun lämpöenergia on suurempi, koska sen valon osuus on pienempi ($11\,\text{kJ}$ on vain $5\,\%$ sähköenergiasta, LEDin $54\,\text{kJ}$ on $25\,\%$). Takaisinlasku: LED $54\,\text{kJ} + 162\,\text{kJ} = 216\,\text{kJ}$. Perustelu: kun valoa halutaan yhtä paljon, LED-lamppu tarvitsee vähemmän sähköenergiaa, ja vähemmän energiaa muuttuu hyödyttömäksi lämpöenergiaksi, joten LED on viisaampi valinta energian kannalta.
+
+## fy2-1-L2-08
+**Annettu:** kuvasta luetut energiat: kohdassa A $E_\text{p,A} = 700\,\text{J}$ ja $E_\text{k,A} = 0\,\text{J}$, kohdassa B $E_\text{p,B} = 300\,\text{J}$ ja $E_\text{k,B} = 300\,\text{J}$
+**Kysytty:** kohtaan B mennessä lämpöenergiaksi muuttuneen energian osuus alkuperäisestä energiasta prosentteina
+**Periaate:** Skeittari, half-pipe ja ympäristö muodostavat eristetyn systeemin, joten energia säilyy. Kitka muuttaa mekaanista energiaa lämpöenergiaksi, joten lämpöenergia on alkuenergian ja kohdan B mekaanisen energian erotus.
+**Kuvaajan lukeminen:** Kohdassa A on vain potentiaalienergian pylväs, jonka yläreuna on ruudukon viivalla $700\,\text{J}$, ja liike-energia on nolla, koska skeittari on levossa. Kohdassa B potentiaalienergian ja liike-energian pylväät yltävät kumpikin viivalle $300\,\text{J}$.
+**Kaava:** $E_\text{A} = E_\text{B} + E_\text{lämpö}$, joten $E_\text{lämpö} = E_\text{A} - E_\text{B}$, ja osuus on $p = \dfrac{E_\text{lämpö}}{E_\text{A}} \cdot 100\,\%$
+**Muunnokset:** Kaikki energiat ovat jouleina, joten muunnoksia ei tarvita.
+**Sijoitus:** $E_\text{lämpö} = (700\,\text{J} + 0\,\text{J}) - (300\,\text{J} + 300\,\text{J}) = 100\,\text{J}$, ja $p = \dfrac{100\,\text{J}}{700\,\text{J}} \cdot 100\,\% = 14{,}3\,\%$
+**Vastaus:** $p \approx 14\,\%$, kaksi merkitsevää numeroa, koska energiat luetaan sadan joulen tarkkuudella.
+**Järkevyys:** Osuus on pienempi kuin $100\,\%$ ja positiivinen, kuten kitkan kohdalla pitää. Kohtaan C mennessä lämpöenergiaksi on muuttunut $200\,\text{J}$ eli $29\,\%$, joten kohtaan B mennessä noin puolet siitä on järkevä, koska B on rinteen puolivälissä. Tarkistus: $600\,\text{J} + 100\,\text{J} = 700\,\text{J}$.
 
 ## fy2-1-L3-01
 **Annettu:** kohdassa A $E_\text{p} = 900\,\text{J}$ ja $E_\text{k} = 0\,\text{J}$; kohdassa B $E_\text{p} = 400\,\text{J}$ ja $E_\text{k} = 480\,\text{J}$; kohdassa C $E_\text{p} = 0\,\text{J}$ ja $E_\text{k} = 750\,\text{J}$

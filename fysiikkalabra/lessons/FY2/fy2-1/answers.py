@@ -11,6 +11,7 @@ a["fy2-1-L1-02"] = 245.0 - 6.0                       # leaf: 245 J of radiation 
 a["fy2-1-L1-03"] = (700.0 + 0.0) - (0.0 + 500.0)
 # fy2-1-L1-04 is answered in words (naming the forms): no number; L1-06 and L1-07 are multiple choice and L1-08 words: no number
 a["fy2-1-L1-05"] = 600.0 - 90.0                      # sledge: E_p 600 J = E_k + 90 J -> E_k = 510 J
+a["fy2-1-L1-10"] = 4.19 * 0.50 * (60 - 20)           # kettle: MAFY c(water) = 4,19 kJ/(kg K), m 0,50 kg, dT 40 K -> 83,8 kJ
 # Level 2: a conversion, a rearrangement or two steps
 a["fy2-1-L2-01"] = 3.00 * 1000 - 2150                # scooter: 3,00 kJ = 3000 J; thermal = 3000 − 2150 = 850 J
 a["fy2-1-L2-02"] = 2400 * 0.001 + 0.60               # slide: 2400 J = 2,4 kJ; E_p = E_k + E_lämpö = 2,4 kJ + 0,60 kJ = 3,0 kJ
@@ -19,6 +20,7 @@ a["fy2-1-L2-04"] = (360 - 331) * 1000                # kettle: 360 kJ − 331 kJ
 a["fy2-1-L2-05"] = 100 * 36.0 / (36.0 + 10.5 + 9.0 + 4.5)   # home: total 60,0 GJ, heating share 60 %
 a["fy2-1-L2-06"] = 100 - 80                          # perpetual-motion claim: 100 J from the generator − 80 J to the pump = 20 J created
 a["fy2-1-L2-07"] = (216 - 11) - (216 - 54)            # filament 205 kJ thermal, LED 162 kJ -> 43 kJ more
+a["fy2-1-L2-08"] = 100 * ((700 + 0) - (300 + 300)) / (700 + 0)   # skater at B: 100 J thermal of 700 J -> 14,3 %
 # Level 3: reasoning or an unfamiliar context
 a["fy2-1-L3-01"] = (900 - 0 - 750) - (900 - 400 - 480)   # thermal at C 150 J, at B 20 J -> 130 J between B and C
 a["fy2-1-L3-02"] = (5.00 - 4.00) - (4.00 - 3.20)     # thermal in bounce 1: 1,00 J, in bounce 2: 0,80 J -> 0,20 J more in the first
