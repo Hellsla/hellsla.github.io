@@ -206,5 +206,5 @@
 **Kaava:** $m = kV = \rho V$
 **Muunnokset:** $2{,}70\cdot10^{3}\,\text{kg/m}^3 = 2{,}70\,\text{g/cm}^3$, koska $1\,\text{kg} = 10^{3}\,\text{g}$ ja $1\,\text{m}^3 = 10^{6}\,\text{cm}^3$. Silloin tilavuus voidaan käyttää kuutiosenttimetreinä, ja massa tulee grammoina.
 **Sijoitus:** $m = 2{,}70\,\dfrac{\text{g}}{\text{cm}^3} \cdot 45\,\text{cm}^3 = 121{,}5\,\text{g}$
-**Vastaus:** $m \approx 1{,}2\cdot10^{2}\,\text{g}$ (laskettu arvo $121{,}5\,\text{g}$), kaksi merkitsevää numeroa kuten tilavuudessa $45\,\text{cm}^3$. Tiheys on MAFY-taulukosta (kiinteiden aineiden tiheyksiä). Vastaus hyväksytään, kun virhe on enintään noin $4\,\%$.
+**Vastaus:** $m \approx 1{,}2\cdot10^{2}\,\text{g}$ (laskettu arvo $121{,}5\,\text{g}$), kaksi merkitsevää numeroa kuten tilavuudessa $45\,\text{cm}^3$. Tiheys on MAFY-taulukosta (kiinteiden aineiden tiheyksiä). Vastaus hyväksytään, kun se on enintään noin $\pm 4\,\%$ oikeasta arvosta.
 **Järkevyys:** Alumiini on noin kolme kertaa vettä tiheämpää. Vettä $45\,\text{cm}^3$ painaisi noin $45\,\text{g}$. Tulos $121{,}5\,\text{g}$ on noin $2{,}7$-kertainen siihen nähden.

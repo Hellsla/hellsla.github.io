@@ -117,7 +117,7 @@
     {
       "id": "fy1-4-L1-09",
       "level": 1,
-      "text": "Alumiinikappaleen massa–tilavuuskuvaaja on origon kautta kulkeva suora $m = kV$, jonka kulmakerroin $k$ on aineen tiheys. Hae alumiinin tiheys MAFY-taulukosta (mafytaulukot.fi). Kuinka suuri on massa kappaleella, jonka tilavuus on $45\\,\\text{cm}^3$? Anna vastaus yksikössä $\\text{g}$.",
+      "text": "Alumiinikappaleen massa on suoraan verrannollinen tilavuuteen: $m = kV$, missä kerroin $k$ on aineen tiheys. Hae alumiinin tiheys MAFY-taulukosta (mafytaulukot.fi). Kuinka suuri on massa kappaleella, jonka tilavuus on $45\\,\\text{cm}^3$? Anna vastaus yksikössä $\\text{g}$.",
       "lookup": "MAFY",
       "answer": 121.5,
       "unit": "g",

@@ -155,6 +155,7 @@ RULES = {                       # category: (science, pedagogy, visual)
     "formula-names": ("none",  "none", "none"),    # FY9 formulas given the names of docs/fy9/kaavanimet.tsv (```kaavat), nothing else changed (teacher 2026-11-12)
     "teacher-figure": ("none",  "none", "none"),    # a figure the teacher approved as drawn (docs/teacher-figures.tsv, its exact Finnish SVG), its words in a translation, a task given it by "figure": the layout is check_layout's (teacher 2026-11-10)
     "split":          ("none",  "none", "none"),    # passed as one lesson before the split; this part's files moved, unchanged (answers.py: line for line)
+    "figure-words-added": ("none", "none", "none"),   # a translation's figures.json only gained entries (a new figure variant for a task); every existing entry as it was (teacher 2026-11-12)
     "added-exercise": ("delta", "delta", "delta"),   # whole exercises added or replaced, every other exercise of the set as it was passed (added_exercises; teacher 2026-11-12)
 }
 WHY = {"core-mark": "exercises or activities marked core or unmarked, nothing else", "paragraphs": "a task text cut into paragraphs, its words unchanged", "photo": "a licensed illustration photograph added, moved or recaptioned", "typography": "formulas re-set (spacing, fraction style, decimal comma) or a symbol set as maths, or blank lines, without a change of meaning", "tests": "simulation tests added or tightened", "comments": "comments only", "style": "figure or sim styling only",
@@ -176,6 +177,7 @@ WHY = {"core-mark": "exercises or activities marked core or unmarked, nothing el
        "formula-names": "formula names the teacher approved (docs/fy9/kaavanimet.tsv)",
        "presentation-only": "a simulation's drawing only, the change approved in docs/presentation-only.tsv",
        "split": "the exercises moved to their own folder, every file as it was passed (answers.py split line for line)",
+       "figure-words-added": "the translation's figures.json only gained entries for a new figure (every existing entry unchanged)",
        "added-exercise": "whole exercises added or replaced, every other exercise of the set unchanged",
        "translation-of-passed": "a translation of the Finnish exercise set, its numbers, answers and formulas the same: the Finnish set's science PASS for its current hash carries over (teacher 2026-11-12)"}
 # Not a RULES category: "translation-of-passed" is never found by `changes`; `scope` grants it to the science reviewer of a
@@ -1482,6 +1484,11 @@ def changes(folder, base, part="lesson", split=False, new=None):
             if HERO.findall(a or "") != HERO.findall(b or ""): cats.add("illustration")
             if a2 != b2: cats |= classify(rel, list(difflib.unified_diff((a2 or "").splitlines(), (b2 or "").splitlines(), lineterm="", n=2)), folder.name)
             n += sum(1 for l in lines if l.startswith(("+", "-")) and not l.startswith(("+++", "---"))); diff += lines; continue
+        if rel.endswith("/figures.json") and ra and rb:   # entries only added: the words of a new figure (a task's variant); check_i18n
+            try: fa, fb = json.loads(ra), json.loads(rb)   # keeps every figure already drawn fully translated, so no drawn word changes
+            except json.JSONDecodeError: fa = fb = None
+            if isinstance(fa, dict) and isinstance(fb, dict) and len(fb) > len(fa) and all(k in fb and fb[k] == v for k, v in fa.items()):
+                cats.add("figure-words-added"); n += sum(1 for l in lines if l.startswith(("+", "-")) and not l.startswith(("+++", "---"))); diff += lines; continue
         if rel.endswith("/figures.json") and a and b:   # a translation's words: an illustration's description is part of the illustration
             heroes = {html.unescape(x) for s in (old.source(courses.lesson_rel(folder, "lesson.md")), new.source(courses.lesson_rel(folder, "lesson.md")))
                       for x in re.findall(r'<svg\b[^>]*data-fig="(?:hero|scene)"[^>]*aria-label="([^"]*)"', s or "")}

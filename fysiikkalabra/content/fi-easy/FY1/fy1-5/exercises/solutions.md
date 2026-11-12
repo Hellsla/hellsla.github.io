@@ -209,7 +209,7 @@
 **Kysytty:** kuljettu matka $s$ yksikössä $\text{km}$
 **Periaate:** Ääni kulkee vedessä tasaisella nopeudella. Silloin liike on tasaista. Matka on nopeus kerrottuna ajalla.
 **Kaava:** $s = vt$
-**Muunnokset:** $1\,\text{km} = 1000\,\text{m}$. Metrit muutetaan kilometreiksi jakamalla luvulla $1000$.
+**Muunnokset:** $1\,\text{km} = 1000\,\text{m}$. Matka $s$ muutetaan metreistä kilometreiksi jakamalla luvulla $1000$.
 **Sijoitus:** $s = 1482{,}3\,\tfrac{\text{m}}{\text{s}} \cdot 2{,}0\,\text{s} = 2964{,}6\,\text{m} = 2{,}9646\,\text{km}$
-**Vastaus:** $3{,}0\,\text{km}$ (tarkemmin $2{,}96\,\text{km}$). Aika on annettu kahdella merkitsevällä numerolla, joten vastauskin on. Vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Vastaus:** $3{,}0\,\text{km}$ (tarkemmin $2{,}96\,\text{km}$). Aika $2{,}0\,\text{s}$ on annettu kahdella merkitsevällä numerolla, joten vastauskin on. Vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
 **Järkevyys:** Ääni kulkee vedessä noin $1{,}5\,\text{km}$ sekunnissa. Ilmassa se kulkee noin $343\,\text{m/s}$, joten vedessä ääni on yli neljä kertaa nopeampi. Kahdessa sekunnissa matka on noin $3\,\text{km}$.

@@ -211,5 +211,5 @@
 **Kaava:** $k = \dfrac{d_\text{A}}{d_\text{M}} = \dfrac{2r_\text{A}}{2r_\text{M}} = \dfrac{r_\text{A}}{r_\text{M}}$
 **Muunnokset:** Molemmat säteet ovat jo kilometreinä, joten muunnoksia ei tarvita. Luku $2$ supistuu pois.
 **Sijoitus:** $k = \dfrac{695\,700\,\text{km}}{6\,378\,\text{km}} = 109{,}08$
-**Vastaus:** $k \approx 109$, kolme merkitsevää numeroa kuten taulukon arvoissa. Arvot ovat MAFY-taulukosta (Aurinkokunta). Vastaus hyväksytään, kun virhe on enintään noin $4\,\%$.
+**Vastaus:** $k \approx 109$, kolme merkitsevää numeroa kuten taulukon arvoissa. Arvot ovat MAFY-taulukosta (Aurinkokunta). Vastaus hyväksytään, kun se on enintään noin $\pm 4\,\%$ oikeasta arvosta.
 **Järkevyys:** Suuruusluokat ovat $10^{5}\,\text{km}$ ja $10^{3}\,\text{km}$, joten suhde on noin $10^{2}$. Tulos $109$ sopii siihen. Aurinko on noin sata kertaa Maata leveämpi.

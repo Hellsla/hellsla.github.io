@@ -289,7 +289,7 @@ t &= \frac{5378\,\text{m}}{1.2\,\text{m/s}} \\
 **Find:** the orbital speed $v$ of the Earth in the unit $\text{km/s}$
 **Principle:** The orbit is modelled as a circle with the radius $r$ and the Earth moves along it uniformly, so the orbital speed is the circumference divided by the period.
 **Formula:** $v = \dfrac{2\pi r}{T}$
-**Conversions:** $T = 365\cdot 24\cdot 3600\,\text{s} = 3.15\cdot 10^{7}\,\text{s}$. The distance is converted to kilometres only at the end: $r = 150\cdot 10^{6}\,\text{km}$ can be left as it is, because the answer is wanted in $\text{km/s}$.
+**Conversions:** $T = 365\cdot 24\cdot 3600\,\text{s} = 3.15\cdot 10^{7}\,\text{s}$. The distance can be left in kilometres, because the answer is wanted in $\text{km/s}$.
 **Substitution:** $v = \dfrac{2\pi\cdot 150\cdot 10^{6}\,\text{km}}{3.15\cdot 10^{7}\,\text{s}} = 29.89\,\text{km/s}$
 **Answer:** $29.9\,\text{km/s}$, three significant figures like the data. The values of different tables differ slightly, and the answer is accepted within about $\pm 4\,\%$.
 **Reasonableness:** The Earth travels about $940\cdot 10^{6}\,\text{km}$ in a year. This is $30\,\text{km}$ every second, about a hundred times the speed of a jet plane, and that is the speed known for the Earth.

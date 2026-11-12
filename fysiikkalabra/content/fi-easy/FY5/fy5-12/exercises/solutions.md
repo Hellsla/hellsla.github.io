@@ -208,7 +208,7 @@ Oikea vastaus on rivi 4. Tarkistus: heikentävän interferenssin matkaerot olisi
 **Muunnokset:** Ruudut metreiksi: $12 \cdot 0{,}50\,\text{m} = 6{,}0\,\text{m}$ ja $5 \cdot 0{,}50\,\text{m} = 2{,}5\,\text{m}$.
 **Sijoitus:** $s_2 = \sqrt{(6{,}0\,\text{m})^2 + (2{,}5\,\text{m})^2} = \sqrt{42{,}25\,\text{m}^2} = 6{,}5\,\text{m}$ ja $\Delta s = 6{,}5\,\text{m} - 6{,}0\,\text{m} = 0{,}50\,\text{m}$
 **Vastaus:** $0{,}50\,\text{m}$. Vastauksessa on kaksi merkitsevää numeroa, koska ruudun koossa $0{,}50\,\text{m}$ on kaksi.
-**Järkevyys:** Kolmion sivut ruutuina ovat $5$, $12$ ja $13$, koska $5^2 + 12^2 = 13^2$. Siis $s_2 = 13 \cdot 0{,}50\,\text{m} = 6{,}5\,\text{m}$. Matkaero ei voi olla suurempi kuin kaiuttimien väli $2{,}5\,\text{m}$. Tulos $0{,}50\,\text{m}$ on pienempi, joten se sopii.
+**Järkevyys:** Kolmion sivut ruutuina ovat $5$, $12$ ja $13$, koska $5^2 + 12^2 = 13^2$. Siis $s_2 = 13 \cdot 0{,}50\,\text{m} = 6{,}5\,\text{m}$. Matkaero ei voi olla suurempi kuin kaiuttimien väli $2{,}5\,\text{m}$. Tulos täyttää ehdon $0{,}50\,\text{m} < 2{,}5\,\text{m}$.
 
 ## fy5-12-L3-06
 **Annettu:** ruudukko (kuva). Yksi ruutu on $0{,}50\,\text{m}$. Kaiuttimet ovat samassa vaiheessa. Äänen nopeus on $v = 340\,\text{m/s}$. Heijastuksia ei ole.

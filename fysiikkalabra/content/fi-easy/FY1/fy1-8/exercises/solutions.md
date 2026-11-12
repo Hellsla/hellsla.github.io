@@ -189,7 +189,7 @@
 **Kysytty:** lyhin mitattava matka $s$ yksikössä $\text{km}$
 **Periaate:** Suhteellinen epävarmuus on $\Delta t : t$. Sen pitää olla enintään $\varepsilon_\text{max}$. Siksi mitatun ajan pitää olla vähintään $\Delta t : \varepsilon_\text{max}$. Ääni kulkee tasaisella nopeudella. Tätä aikaa vastaava matka on $s = vt$.
 **Kaava:** $t_\text{min} = \dfrac{\Delta t}{\varepsilon_\text{max}}$ ja $s = vt_\text{min}$
-**Muunnokset:** $1\,\text{km} = 1000\,\text{m}$. Metrit muutetaan kilometreiksi jakamalla luvulla $1000$.
+**Muunnokset:** $1\,\text{km} = 1000\,\text{m}$. Matka $s$ muutetaan metreistä kilometreiksi jakamalla luvulla $1000$.
 **Sijoitus:** $t_\text{min} = \dfrac{0{,}2\,\text{s}}{0{,}05} = 4{,}0\,\text{s}$ ja $s = 343{,}4\,\tfrac{\text{m}}{\text{s}} \cdot 4{,}0\,\text{s} = 1373{,}6\,\text{m} = 1{,}3736\,\text{km}$
-**Vastaus:** $1{,}4\,\text{km}$ (tarkemmin $1{,}37\,\text{km}$). Epävarmuus on annettu kahdella merkitsevällä numerolla, joten vastauskin on. Vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Vastaus:** $1{,}4\,\text{km}$ (tarkemmin $1{,}37\,\text{km}$). Epävarmuus $0{,}2\,\text{s}$ on annettu kahdella merkitsevällä numerolla, joten vastauskin on. Vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
 **Järkevyys:** Tarkistus takaisin: $0{,}2\,\text{s} : 4{,}0\,\text{s} = 0{,}05 = 5\,\%$. Ääni kulkee neljässä sekunnissa noin $1{,}4\,\text{km}$. Käsin ajanotolla matkan täytyy siis olla pitkä.

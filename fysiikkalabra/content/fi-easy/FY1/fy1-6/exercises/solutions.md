@@ -207,5 +207,5 @@ $$\begin{aligned} \text{vaje} &= \dfrac{2{,}434\,\text{m/s}}{3{,}924\,\text{m/s}
 **Kaava:** $v = g\,t$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä. Muunnoksia ei tarvita.
 **Sijoitus:** $v = 1{,}622\,\tfrac{\text{m}}{\text{s}^2} \cdot 3{,}0\,\text{s} = 4{,}866\,\tfrac{\text{m}}{\text{s}}$
-**Vastaus:** $4{,}9\,\text{m/s}$. Aika on annettu kahdella merkitsevällä numerolla, joten vastauskin on. Vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Vastaus:** $4{,}9\,\text{m/s}$. Aika $3{,}0\,\text{s}$ on annettu kahdella merkitsevällä numerolla, joten vastauskin on. Vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
 **Järkevyys:** Maassa nopeus olisi $9{,}81\,\text{m/s}^2 \cdot 3{,}0\,\text{s} = 29{,}4\,\text{m/s}$. Kuun putoamiskiihtyvyys on noin kuudesosa Maan arvosta. Siksi myös nopeus on noin kuudesosa: $29{,}4\,\text{m/s} : 6 \approx 4{,}9\,\text{m/s}$.

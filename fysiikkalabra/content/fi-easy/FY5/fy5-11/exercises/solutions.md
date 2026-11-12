@@ -265,7 +265,7 @@ Pelkkä raon leveys ei ratkaise järjestystä. Kapein rako on C:ssä, mutta B:n 
 ## fy5-11-L2-10
 **Annettu:** aaltoaltaan pohjan ruudukko (kuva). Yksi ruutu on $2{,}0\,\text{cm}$. Taajuus kaksinkertaistuu, $f' = 2f$, ja nopeus $v$ pysyy samana.
 **Kysytty:** raon leveyden ja uuden aallonpituuden suhde $\tfrac{b}{\lambda'}$ (ei yksikköä)
-**Periaate:** Aallon nopeus riippuu väliaineesta, tässä veden syvyydestä. Se ei riipu taajuudesta. Nopeus pysyy samana ja $v = f\lambda$. Siksi kaksinkertainen taajuus puolittaa aallonpituuden. Raon leveys ei muutu.
+**Periaate:** Aallon nopeus riippuu väliaineesta, tässä veden syvyydestä. Se ei riipu taajuudesta. Kun $v$ pysyy samana ja $v = f\lambda$, kaksinkertainen taajuus puolittaa aallonpituuden. Raon leveys ei muutu.
 **Kuvaajan lukeminen:** Seinän vasemmalla puolella aaltorintamat ovat pystyviivoilla $1$ ja $5$. Siis $\lambda = 4 \cdot 2{,}0\,\text{cm} = 8{,}0\,\text{cm}$. Raon reunat ovat vaakaviivoilla $1$ ja $7$. Rako on $7 - 1 = 6$ ruudun levyinen, joten $b = 6 \cdot 2{,}0\,\text{cm} = 12\,\text{cm}$.
 **Kaava:** $v = f\lambda = 2f\lambda'$, joten $\lambda' = \dfrac{\lambda}{2}$ ja $\dfrac{b}{\lambda'} = \dfrac{2b}{\lambda}$
 **Muunnokset:** Ruudut senttimetreiksi: $4 \cdot 2{,}0\,\text{cm} = 8{,}0\,\text{cm}$ ja $6 \cdot 2{,}0\,\text{cm} = 12\,\text{cm}$. Suhteessa pituuksien yksiköt supistuvat.

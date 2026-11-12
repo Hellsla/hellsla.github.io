@@ -360,7 +360,7 @@ def hero():
 def tank_gap():
     """Task figure (exercises L2-09, L2-10): a wave tank from above on a 2,0 cm grid. Plane fronts at the vertical gridlines 1 and 5
     (λ = 4 squares = 8,0 cm); a wall at line 9 with a gap between the horizontal gridlines 1 and 7 (b = 6 squares = 12 cm)."""
-    f = Fig("fy511-tank", 340, "Kuva mittakaavassa: aaltoaltaan pohja ylhäältä katsottuna ruudukkona, jossa yksi ruutu on 2,0 cm. "
+    f = Fig("fy511-tank", 372, "Kuva mittakaavassa: aaltoaltaan pohja ylhäältä katsottuna ruudukkona, jossa yksi ruutu on 2,0 cm. "
             "Ruudukossa on 16 ruutua vaakasuunnassa ja 8 ruutua pystysuunnassa. Vasemmalta oikealle etenevän tasoaallon kaksi "
             "aaltorintamaa ovat pystysuoria viivoja ruudukon pystyviivoilla 1 ja 5 vasemmasta reunasta laskettuna. Pystyviivalla 9 on "
             "seinä, jossa on rako: raon reunat ovat ruudukon vaakaviivoilla 1 ja 7 ylhäältä laskettuna. Raon takana aaltorintamat "
@@ -385,8 +385,8 @@ def tank_gap():
     f.arrow(x0 + 10, y0 - 14, x0 + 90, y0 - 14, COLD, 3, 13)
     f.tex(x0 + 100, y0 - 14, r"\text{aaltojen suunta}", "start", w=220)
     f.tex(xw, y0 + rows * sq + 22, r"\text{seinä}", "middle", w=90)
-    f.rect(x0, 318, sq, sq * 0.2, INK)
-    f.tex(x0 + sq + 12, 320, r"\text{1 ruutu} = 2{,}0\,\text{cm}", "start", w=240)
+    f.rect(x0, 350, sq, sq * 0.2, INK)
+    f.tex(x0 + sq + 12, 352, r"\text{1 ruutu} = 2{,}0\,\text{cm}", "start", w=240)
     return f.svg()
 
 

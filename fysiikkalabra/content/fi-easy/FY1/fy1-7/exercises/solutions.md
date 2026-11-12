@@ -233,5 +233,5 @@ Kappale B kelluisi vedessä ja muut uppoaisivat. Massan mukaan järjestys olisi 
 **Kaava:** $\rho = \dfrac{m}{V}$, josta $m = \rho V$
 **Muunnokset:** $1\,\text{cm}^3 = 10^{-6}\,\text{m}^3$. Siksi $V = 50 \cdot 10^{-6}\,\text{m}^3 = 5{,}0 \cdot 10^{-5}\,\text{m}^3$.
 **Sijoitus:** $m = 8{,}96 \cdot 10^3\,\tfrac{\text{kg}}{\text{m}^3} \cdot 5{,}0 \cdot 10^{-5}\,\text{m}^3 = 0{,}448\,\text{kg}$
-**Vastaus:** $0{,}45\,\text{kg}$ (tarkemmin $0{,}448\,\text{kg}$). Tilavuus on annettu kahdella merkitsevällä numerolla, joten vastauskin on. Vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Vastaus:** $0{,}45\,\text{kg}$ (tarkemmin $0{,}448\,\text{kg}$). Tilavuus $50\,\text{cm}^3$ on annettu kahdella merkitsevällä numerolla, joten vastauskin on. Vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
 **Järkevyys:** Kupari on noin $9$ kertaa vettä tiheämpää. Vettä $50\,\text{cm}^3$ painaa $50\,\text{g}$. Kuparia on siis noin $9 \cdot 50\,\text{g} = 450\,\text{g} = 0{,}45\,\text{kg}$.
