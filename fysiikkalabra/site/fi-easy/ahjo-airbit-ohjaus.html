@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Air:bit 2:n radio-ohjain ja ohjausohjelma — Ruukkilabra</title>
+<meta name="description" content="micro:bit toimii radio-ohjaimena MakeCodessa. Opit myös lukemaan dronen ohjausohjelmaa: anturit, säätö ja moottorit.">
+<link rel="canonical" href="https://ruukkilab.fi/fi-easy/ahjo-airbit-ohjaus.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ruukkilabra">
+<meta property="og:locale" content="fi_FI">
+<meta property="og:title" content="Air:bit 2:n radio-ohjain ja ohjausohjelma">
+<meta property="og:description" content="micro:bit toimii radio-ohjaimena MakeCodessa. Opit myös lukemaan dronen ohjausohjelmaa: anturit, säätö ja moottorit.">
+<meta property="og:url" content="https://ruukkilab.fi/fi-easy/ahjo-airbit-ohjaus.html">
+<meta name="theme-color" content="#f7f3ec">
+<link rel="icon" href="../brand/ahjo-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="../brand/ahjo-makerspace-merkki.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../brand/ahjo-180.png">
+<link rel="stylesheet" href="../vendor/katex/katex.min.css">
+<link rel="stylesheet" href="../site.css?v=483be19a">
+</head><body>
+<a class="skip" href="#sisalto">Siirry sisältöön</a>
+<div class="page">
+<header class="top">
+  <a class="brand" href="index.html" aria-label="Ruukkilabra, etusivu"><img class="brand-mark" src="../brand/ruukkilabra-symboli-kiviruukki.svg" alt="" width="40" height="40"><span class="brand-name">Ruukkilabra<small>Lukion fysiikka</small></span></a>
+  <nav aria-label="Päävalikko"><a class="nav-modules" href="index.html#moduulit">Moduulit</a><a class="nav-study" href="nain-opiskelet.html">Näin opiskelet</a><a class="nav-reading" href="lukuvinkit.html">Kirjavinkit</a><a class="nav-booklets" href="vihkot.html">Vihkot</a><a class="nav-teacher" href="tyokalut.html">Opettajalle</a><details class="nav-menu"><summary><span class="nav-menu-t">Valikko</span></summary><ul class="nav-list"><li><a href="index.html#moduulit">Moduulit</a></li><li><a href="nain-opiskelet.html">Näin opiskelet</a></li><li><a href="lukuvinkit.html">Kirjavinkit</a></li><li><a href="vihkot.html">Vihkot</a></li><li><a href="tyokalut.html">Opettajalle</a></li><li><a href="tietoa.html">Sivustosta</a></li></ul></details><details class="lang-menu"><summary><span class="visually-hidden">Kieli: </span><span class="lang-current">Selkeä suomi</span></summary><ul class="lang-list" aria-label="Valitse kieli"><li><a class="lang" href="../ahjo-airbit-ohjaus.html" hreflang="fi" lang="fi">Suomi</a></li><li><a class="lang" href="../en/ahjo-airbit-ohjaus.html" hreflang="en" lang="en">English</a></li></ul></details></nav>
+</header>
+<nav class="crumbs" aria-label="Polku"><a href="index.html">Ruukkilabra</a> › <a href="ahjo.html">Ahjo Makerspace</a> › <a href="ahjo-materiaalit.html">Materiaalipankki</a> › Air:bit 2:n radio-ohjain ja ohjausohjelma</nav>
+<main class="reading ahjo-page" id="sisalto"><header class="ahjo-hero"><img class="ahjo-logo" src="../brand/ahjo-makerspace-logo.svg" alt="Ahjo – Kiviruukin Makerspace" width="124" height="124"><div class="ahjo-hero-text"><p class="ahjo-eyebrow">Kiviruukin lukion makerspace</p><h1>Air:bit 2:n radio-ohjain ja ohjausohjelma</h1><p class="ahjo-lead">micro:bit toimii radio-ohjaimena MakeCodessa. Opit myös lukemaan dronen ohjausohjelmaa: anturit, säätö ja moottorit.</p></div></header><nav class="ahjo-nav" aria-label="Ahjo Makerspace"><ul><li><a href="ahjo.html">Ahjo</a></li><li><a href="ahjo.html#opintojaksot">Opintojaksot</a></li><li><a href="ahjo-materiaalit.html" aria-current="page">Materiaalipankki</a></li><li><a href="ahjo-projektit.html">Projektit</a></li><li><a href="ahjo.html#laitteisto">Laitteisto</a></li><li><a href="ahjo-turvallisuus.html">Turvallisuus</a></li></ul></nav><p class="ahjo-from" hidden><a class="ahjo-cta ahjo-cta-quiet" href="ahjo-1.html"><span aria-hidden="true">← </span>Takaisin oppituntiin</a></p><p class="ahjo-draft" role="note"><svg class="ahjo-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M6 3h11a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H6zM9 3v18M12 8h3.5M12 12h3.5"/></svg><span><strong>Luonnos.</strong> Tätä ohjetta ei ole vielä kokeiltu Ahjon omilla laitteilla. Laitemallit, asetukset ja ajat tarkentuvat, kun laitteet on hankittu. Noudata aina opettajan antamia ohjeita ja laitekohtaista perehdytystä.</span></p><article class="ahjo-guide"><section class="ahjo-quick" aria-labelledby="pikastartti"><h2 id="pikastartti">Pikastartti</h2>
+<p>Air:bit 2:ta ohjataan toisella micro:bitillä, joka lähettää komennot radiolla. Ohjaimen ohjelmoit itse MakeCodessa. Dronen oma ohjelma on valmis, ja sitä opetellaan lukemaan.</p>
+<ol>
+<li>Avaa MakeCode ja tee uusi projekti.</li>
+<li>Aseta radioryhmäksi ryhmäsi oma numero.</li>
+<li>Lähetä kallistus, kaasu ja käynnistyslupa radiolla nimettyinä arvoina.</li>
+<li>Testaa pöydällä toisella micro:bitillä, että arvot tulevat perille.</li>
+</ol>
+<h3>Kokeile</h3>
+<p>Ohjelmoi ohjain, joka lähettää kallistuksen ja kaasun. Näytä vastaanottavalla micro:bitillä, että arvot muuttuvat.</p>
+<h3>Muokkaa</h3>
+<p>Lisää käynnistysvarmistus: A ja B yhtä aikaa vaihtaa käynnistysluvan ja nollaa kaasun. Lisää ravistus, joka pysäyttää moottorit.</p>
+<h3>Haasta itsesi</h3>
+<p>Lue dronen ohjelmasta, miten se jakaa tehon neljälle moottorille, ja selitä, miksi drone kallistuu eteenpäin.</p>
+</section><div class="ahjo-more-band"><h2 id="opi-lisaa">Opi lisää</h2><p>Tässä osassa työ tehdään perusteellisesti: miksi se toimii, tarkat työvaiheet, mittaukset ja ongelmien ratkaisu.</p></div><h2>Haaste</h2>
+<p>Ohjain ja drone eivät tunne toisiaan: ne vain lähettävät ja kuuntelevat samaa radioryhmää. Jos kaksi ryhmää käyttää samaa numeroa, toisen ohjain ohjaa toisen dronea. Tavoite on ohjain, joka toimii luotettavasti ja jonka tilan näet yhdellä vilkaisulla.</p>
+<p>Valmistaja arvioi ohjaimen ohjelmointiin kolmesta neljään tuntia. Jos oma ohjelma ei valmistu, käytössä on valmistajan valmis ohjainohjelma.</p>
+<h2>Oppimistavoitteet</h2>
+<p>Työn jälkeen osaat</p>
+<ul>
+<li>lähettää ja vastaanottaa arvoja micro:bitin radiolla</li>
+<li>ohjelmoida ohjaimen, jossa on kaasu, kallistus, käynnistysvarmistus ja hätäpysäytys</li>
+<li>kertoa, mitä dronen ohjelman pääosat tekevät</li>
+<li>kuvata vakautuksen takaisinkytkentänä.</li>
+</ul>
+<h2>Lähtötaso ja ennakkotaidot</h2>
+<p>MakeCoden lohko-ohjelmointi riittää. Muuttujat ja ehtolause kerrataan tunnilla. Drone pitää olla koottu ohjeen <a href="ahjo-airbit-kokoaminen.html">Air:bit 2:n kokoaminen ja toimintakokeet</a> mukaan ennen kuin ohjainta kokeillaan sillä.</p>
+<h2>Laitteet ja materiaalit</h2>
+<table>
+<thead>
+<tr>
+<th>Tarvike</th>
+<th>Määrä</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>micro:bit oh­jai­mek­si (V1 tai V2) ja pa­ris­to­ko­te­lo</td>
+<td>1</td>
+</tr>
+<tr>
+<td>micro:bit vas­taa­not­ta­jak­si pöy­tä­tes­tiin</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Tie­to­ko­ne, jossa MakeCode toimii se­lai­mes­sa</td>
+<td>1</td>
+</tr>
+<tr>
+<td>USB-kaapeli</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Koottu Air:bit 2 ilman pot­ku­rei­ta</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h2>Turvallisuus ja perehdytys</h2>
+<p>Katso aihe <a href="ahjo-turvallisuus.html#drone-potkurit">potkurit ja moottorit</a>. Se on valmisteilla, kunnes koulu on hyväksynyt sen.</p>
+<ul>
+<li>Jokainen uusi tai muutettu ohjelma testataan ensin pöydällä ja sitten dronella <strong>ilman potkureita</strong>.</li>
+<li>Käynnistysvarmistus ja ravistuspysäytys pidetään ohjelmassa aina.</li>
+<li>Dronen ohjelmasta ei muuteta lentoon vaikuttavia arvoja ilman opettajan lupaa. Alkuperäinen ohjelma tallennetaan ennen muutoksia.</li>
+</ul>
+<h2>Työvaiheet</h2>
+<p>Ohjain lähettää viisi arvoa. Valmistajan muistisääntö on PARTY.</p>
+<table>
+<thead>
+<tr>
+<th>Kirjain</th>
+<th>Arvo</th>
+<th>Alue</th>
+<th>Miten oh­jai­mel­la</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P</td>
+<td>pitch, kal­lis­tus eteen ja taakse</td>
+<td>$-45$ … $45$</td>
+<td>kallista ohjainta</td>
+</tr>
+<tr>
+<td>A</td>
+<td>arm, käyn­nis­tys­lu­pa</td>
+<td>0 tai 1</td>
+<td>A ja B yhtä aikaa</td>
+</tr>
+<tr>
+<td>R</td>
+<td>roll, kal­lis­tus sivulle</td>
+<td>$-45$ … $45$</td>
+<td>kallista ohjainta</td>
+</tr>
+<tr>
+<td>T</td>
+<td>throttle, kaasu</td>
+<td>0 … 100</td>
+<td>A pie­nen­tää, B kas­vat­taa</td>
+</tr>
+<tr>
+<td>Y</td>
+<td>yaw, kääntö pys­tyak­se­lin ympäri</td>
+<td>$-30$ … $30$</td>
+<td>li­sä­teh­tä­vä</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>Tee muuttujat käynnistysluvalle, kaasulle ja kallistuksille.</li>
+<li>Aseta radioryhmä ohjelman alussa ja näytä numero näytöllä.</li>
+<li>A-nappi pienentää kaasua viidellä ja B-nappi kasvattaa viidellä. Kun kaasu on yli 40, askel on yksi: leijuntaa säädetään tarkasti.</li>
+<li>A ja B yhtä aikaa vaihtaa käynnistysluvan arvojen 0 ja 1 välillä ja nollaa kaasun.</li>
+<li>Ravistus asettaa käynnistysluvan ja kaasun nollaan. Tämä on hätäpysäytys.</li>
+<li>Lue kallistukset micro:bitin asentoanturista ja rajaa ne taulukon alueelle.</li>
+<li>Lähetä arvot ikuisessa silmukassa nimettyinä arvoina, kullakin oma iso kirjaimensa.</li>
+<li>Näytä tila näytöllä: käynnistyslupa, kaasun taso ja kallistuksen piste.</li>
+<li>Testaa pöydällä vastaanottavalla micro:bitillä, sitten dronella ilman potkureita.</li>
+</ol>
+<h2>Kuvat ja esimerkkikoodi</h2>
+<p>Aloitusohjelman saat tunnin 5 sivulta. Tässä on sen ydin. Liitä ohjelma MakeCoden JavaScript-näkymään, niin näet sen myös lohkoina.</p>
+<pre><code class="language-typescript">let radioGroup = 7      // vaihda ryhmäsi omaksi numeroksi
+let arm = 0
+let throttle = 0
+
+radio.setGroup(radioGroup)
+
+input.onButtonPressed(Button.AB, function () {
+    arm = arm == 0 ? 1 : 0
+    throttle = 0
+})
+
+input.onGesture(Gesture.Shake, function () {
+    arm = 0
+    throttle = 0
+})
+
+basic.forever(function () {
+    radio.sendValue(&quot;A&quot;, arm)
+    radio.sendValue(&quot;T&quot;, throttle)
+    radio.sendValue(&quot;P&quot;, Math.constrain(input.rotation(Rotation.Pitch), -45, 45))
+    radio.sendValue(&quot;R&quot;, Math.constrain(input.rotation(Rotation.Roll), -45, 45))
+})
+</code></pre>
+<h3>Miten dronen ohjelma toimii</h3>
+<p>Air:bit 2:ssa vakautus lasketaan micro:bitissä, ja ohjelma on avointa MakeCode-koodia. Sen pääsilmukka toistaa samat vaiheet monta kertaa sekunnissa:</p>
+<ol>
+<li><strong>Mittaa.</strong> Ohjelma lukee ohjainkortin gyroskoopin ja kiihtyvyysanturin ja laskee niistä dronen asennon.</li>
+<li><strong>Vertaa.</strong> Ohjelma vertaa mitattua asentoa siihen asentoon, jota ohjain pyytää. Ero on virhe.</li>
+<li><strong>Korjaa.</strong> Säädin laskee virheestä korjauksen jokaiselle akselille.</li>
+<li><strong>Jaa teho.</strong> Ohjelma laskee jokaisen moottorin tehon kaasusta ja korjauksista. Kun drone kallistuu eteenpäin, kaksi takamoottoria saa lisää tehoa ja kaksi etumoottoria vähemmän.</li>
+<li><strong>Varmista.</strong> Moottorit käyvät vain, kun käynnistyslupa on annettu ja anturit toimivat.</li>
+</ol>
+<p>Tämä on takaisinkytkentä: mittaus vaikuttaa ohjaukseen, ja ohjaus muuttaa sitä, mitä seuraavaksi mitataan.</p>
+<h2>Testaa ja mittaa</h2>
+<ul>
+<li>Pöytätesti: muuttuvatko vastaanottajan näyttämät arvot, kun kallistat ohjainta ja painat nappeja?</li>
+<li>Kantama: kuinka kaukaa viesti vielä tulee perille luokassa? Mittaa etäisyys.</li>
+<li>Dronetesti ilman potkureita: käynnistyvätkö moottorit vain käynnistysluvalla, ja pysähtyvätkö ne ravistuksesta joka kerta kymmenestä?</li>
+</ul>
+<h2>Jos jokin ei toimi</h2>
+<ul>
+<li><strong>Arvot eivät tule perille:</strong> tarkista, että kummassakin micro:bitissä on sama radioryhmä.</li>
+<li><strong>Naapuriryhmän ohjain vaikuttaa droneesi:</strong> teillä on sama radioryhmä. Vaihda omaanne.</li>
+<li><strong>Drone reagoi väärään suuntaan:</strong> vaihda kallistusarvon etumerkki ohjaimen ohjelmassa ja testaa uudelleen ilman potkureita.</li>
+<li><strong>Kaasu hyppii:</strong> tarkista, ettei A-napin ja B-napin käsittelijä laukea myös silloin, kun painat molempia.</li>
+<li><strong>Oma ohjelma ei valmistu:</strong> lataa valmistajan valmis ohjainohjelma ja jatka omaa ohjelmaa myöhemmin.</li>
+</ul>
+<h2>Jatkotehtävä</h2>
+<p>Valmistajan lisätehtävässä kääntö (Y) tehdään kosketusnapeilla. Suunnittele oma tapa antaa kääntökomento ja testaa se pöydällä. Toinen vaihtoehto: tee micro:bitistä vastaanotin, joka piirtää ohjaimen lähettämät arvot kuvaajaksi MakeCoden datanäkymään.</p>
+<h2>Dokumentoi</h2>
+<p>Liitä projektipäiväkirjaan</p>
+<ul>
+<li>kuvakaappaus ohjainohjelmasta</li>
+<li>ryhmän radioryhmän numero</li>
+<li>pöytätestin ja dronetestin tulokset</li>
+<li>lukukartta dronen ohjelman vaiheista.</li>
+</ul>
+<h2>Opettajalle: valmistelu</h2>
+<ul>
+<li>Valmiit ohjelmat ovat valmistajan sivulla <a href="https://www.makekit.no/en/docs/airbit-docs/">Air:bit-dokumentit</a>: ohjaimen hex-tiedosto ja dronen ohjelma. Avaa dronen ohjelma MakeCodessa koulun koneella ennen tuntia.</li>
+<li>Jaa jokaiselle ryhmälle oma radioryhmä väliltä 0–255. Valmiin ohjelman oletus on 7.</li>
+<li>Valmistajan ohje ei sisällä säätöarvojen muuttamista. Dronen ohjelman lukeminen ja vakauskokeet ovat koulun omia tehtäviä: kokeile ne itse ja päätä, mitä arvoja opiskelijat saavat muuttaa ja kuinka paljon. Säätöarvoja ei ole kirjattu tähän ohjeeseen, koska ne voivat muuttua ohjelman version mukana.</li>
+<li>Aloitusohjelma on testaamaton luonnos. Kokeile se ilman potkureita ja tarkista kallistuksen suunta.</li>
+<li>Python: valmistaja tarjoaa Air:bit 2:lle Python-version vain ohjaimesta, ei dronen ohjelmasta.</li>
+<li>Tiedot on luettu valmistajan ohjeesta 12.11.2026.</li>
+</ul></article><script src="../ahjo.js?v=d1ddcb7c"></script></main>
+<footer class="bottom"><span>Ruukkilabra</span><a href="tyokalut.html">Työkalut</a><a href="tietosuoja.html">Tietosuoja</a><span class="copyright">© 2026 Lauri Hellsten</span><span class="rights">Älä kopioi ilman lupaa.</span></footer>
+</div>
+<script src="../vendor/katex/katex.min.js"></script><script src="../vendor/katex/contrib/auto-render.min.js" onload="renderMathInElement(document.querySelector('main'),{delimiters:[{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+</body></html>

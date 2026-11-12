@@ -2,7 +2,8 @@
   "_note": "Selkosuomen tekstit local-courses.json-tiedostoon (scripts/local_courses.py).",
   "_planned": [
     {"icon": "AHJO1", "title": "Ahjo 1", "text": "Opit 3D-mallintamaan ja tulostamaan sekä elektroniikan ja robotiikan perusteita."},
-    {"icon": "AHJO2", "title": "Ahjo 2", "text": "Suunnittelet, teet ja testaat oman prototyypin."}
+    {"icon": "AHJO2", "title": "Ahjo 2", "text": "Suunnittelet, teet ja testaat oman prototyypin."},
+    {"icon": "DRONELABRA", "title": "Dronelabra", "text": "Rakennat dronen, lennät turvallisesti ja teet oman droneprojektin."}
   ],
   "FY14": {
     "subtitle": "Modernin fysiikan synnystä ITERiin.",

@@ -314,6 +314,125 @@ A2 = {
               + person(40, 82, PD).replace("40 82", "40 82")
               + "".join(f'<circle cx="{x}" cy="132" r="7" fill="{M}"/>' for x in (150, 170, 190, 210))),
 }
+
+
+def drone(x, y, s=1.0, guards=False):
+    """A small quadcopter seen from the side: body, camera eye, two arms and their propellers."""
+    g = (f'<path d="M-44 -2H44" stroke="{N}" stroke-width="7" stroke-linecap="round"/><path d="M-44 -2v-10M44 -2v-10" stroke="{N}" stroke-width="6" stroke-linecap="round"/>'
+         f'<path d="M-66 -16h44M22 -16h44" stroke="{P}" stroke-width="6" stroke-linecap="round"/>'
+         f'<path d="M-10 14l-8 16M10 14l8 16" stroke="{N}" stroke-width="5" stroke-linecap="round"/>'
+         f'<rect x="-20" y="-12" width="40" height="28" rx="9" fill="{N}"/><circle cx="0" cy="4" r="6" fill="{P}"/>')
+    if guards: g += f'<path d="M-70 -24h52M18 -24h52" stroke="{M}" stroke-width="3" stroke-linecap="round"/>'
+    return f'<g transform="translate({x} {y}) scale({s})">{g}</g>'
+
+
+def microbit(x, y, s=1.0):
+    dots = "".join(f'<circle cx="{14 + 8 * i}" cy="{12 + 6 * j}" r="1.8" fill="{PD if (i, j) in ((1, 1), (3, 1), (0, 3), (4, 3), (1, 4), (2, 4), (3, 4)) else L}"/>' for i in range(5) for j in range(5))
+    return (f'<g transform="translate({x} {y}) scale({s})"><rect width="60" height="48" rx="6" fill="{N}"/>{dots}'
+            f'<circle cx="6" cy="24" r="3" fill="{M}"/><circle cx="54" cy="24" r="3" fill="{M}"/><path d="M6 44h48" stroke="#e9c46a" stroke-width="5" stroke-dasharray="6 5"/></g>')
+
+
+def pad(cx, cy, r=34):
+    """A landing mark on the floor, seen at a slant."""
+    return (f'<ellipse cx="{cx}" cy="{cy}" rx="{r}" ry="{r * .3:.1f}" fill="{PS}" stroke="{N}" stroke-width="3"/>'
+            f'<ellipse cx="{cx}" cy="{cy}" rx="{r * .45:.1f}" ry="{r * .135:.1f}" fill="{P}"/>')
+
+
+def dronelabra():
+    b = (bench(16, 250, 196) + microbit(40, 140) + f'<rect x="120" y="170" width="70" height="20" rx="4" fill="{M}" {s2}/><path d="M190 180h22" {s2}/>'
+         + screen(126, 84, 100, 66, chart(140, 96, 72, 40, [(0, .2), (.25, .6), (.5, .45), (.75, .7), (1, .65)]))
+         + f'<path d="M286 214h170" stroke="{L}" stroke-width="4" stroke-dasharray="10 8" stroke-linecap="round"/>' + pad(372, 204, 44)
+         + f'<path d="M372 116v62" stroke="{PD}" stroke-width="3" stroke-dasharray="3 7" stroke-linecap="round"/>' + drone(372, 84, 1.25, guards=True)
+         + rays(372, 60, 60, 74, n=5, a0=230, a1=310, col=P, w=4))
+    return svg(480, 240, b)
+
+
+def drone_top(cx, cy, r=34, props=True):
+    """The quadcopter from above: an X frame, the board in the middle, a motor at each end, two propellers of each kind."""
+    d = r * .707
+    g = (f'<path d="M{cx - d:.1f} {cy - d:.1f}L{cx + d:.1f} {cy + d:.1f}M{cx + d:.1f} {cy - d:.1f}L{cx - d:.1f} {cy + d:.1f}" stroke="{N}" stroke-width="7" stroke-linecap="round"/>'
+         f'<rect x="{cx - 11}" y="{cy - 11}" width="22" height="22" rx="5" fill="{N}"/><circle cx="{cx}" cy="{cy}" r="4" fill="{P}"/>')
+    for i, (sx, sy) in enumerate(((-1, -1), (1, -1), (1, 1), (-1, 1))):
+        x, y = cx + sx * d, cy + sy * d
+        g += (f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{r * .42:.1f}" fill="{PS if i % 2 == 0 else W}" stroke="{PD if i % 2 == 0 else M}" stroke-width="2.5"/>' if props else "") + f'<circle cx="{x:.1f}" cy="{y:.1f}" r="5" fill="{N2}"/>'
+    return g
+
+
+def arrow(x1, y1, x2, y2, col, w=4, head=8):
+    import math
+    t = math.atan2(y2 - y1, x2 - x1)
+    h = "".join(f'L{x2 - head * math.cos(t + k):.1f} {y2 - head * math.sin(t + k):.1f}M{x2} {y2}' for k in (.5, -.5))
+    return f'<path d="M{x1} {y1}L{x2} {y2}M{x2} {y2}{h}" stroke="{col}" stroke-width="{w}" fill="none" stroke-linecap="round" stroke-linejoin="round"/>'
+
+
+def goggles(x, y, s=1.0):
+    return (f'<g transform="translate({x} {y}) scale({s})"><path d="M0 18H-12M92 18h12" stroke="{N2}" stroke-width="6" stroke-linecap="round"/><rect width="92" height="50" rx="16" fill="{N}"/>'
+            f'<rect x="10" y="10" width="32" height="26" rx="8" fill="{P}"/><rect x="50" y="10" width="32" height="26" rx="8" fill="{P}"/></g>')
+
+
+def sheet(x, y, w=72, h=96, lines=3):
+    return (f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="4" fill="{W}" {S}/>'
+            + "".join(f'<path d="M{x + 12} {y + 20 + 14 * i}h{w - 24 - (12 if i % 2 else 0)}" stroke="{L}" stroke-width="5" stroke-linecap="round"/>' for i in range(lines)))
+
+
+def tick(cx, cy, r=14):
+    return f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="{N}"/><path d="M{cx - r * .5:.1f} {cy}l{r * .36:.1f} {r * .36:.1f} {r * .64:.1f}-{r * .72:.1f}" stroke="{W}" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>'
+
+
+WARN = f'<path d="M22 2l22 38H0z" fill="#ffd166" stroke="{N}" stroke-width="3" stroke-linejoin="round"/><path d="M22 16v12" stroke="{N}" stroke-width="4" stroke-linecap="round"/><circle cx="22" cy="34" r="2.4" fill="{N}"/>'
+
+DL = {   # Dronelabra (teacher 2026-11-12, "haluan että nuo vaihtuvat tunnista tuntiin"): one picture for each lesson
+    # 1 the flight area and its rules
+    1: lambda: sc(f'<rect x="36" y="96" width="168" height="40" rx="4" fill="none" stroke="{PD}" stroke-width="4" stroke-dasharray="10 7"/>' + pad(120, 116, 26) + drone(120, 52) + f'<g transform="translate(14 22)">{WARN}</g>'),
+    # 2 the forces of a hover: lift up, weight down, and the propellers' turning directions
+    2: lambda: sc(drone(120, 78, 1.1) + arrow(120, 96, 120, 138, N, 5, 10) + arrow(48, 56, 48, 20, PD, 5, 10) + arrow(192, 56, 192, 20, PD, 5, 10)
+                  + f'<path d="M30 70a18 7 0 1 0 36 0" stroke="{M}" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M210 70a18 7 0 1 1-36 0" stroke="{M}" stroke-width="3" fill="none" stroke-linecap="round"/>'),
+    # 3 the parts: the frame from above, the micro:bit, the battery
+    3: lambda: sc(drone_top(84, 76, 44) + microbit(162, 26, .9) + f'<rect x="164" y="92" width="52" height="26" rx="5" fill="{PS}" {s2}/><path d="M216 100v10" stroke="{N}" stroke-width="5" stroke-linecap="round"/><path d="M176 105h10M181 100v10M196 105h10" stroke="{N}" stroke-width="2.5" stroke-linecap="round"/>'),
+    # 4 assembled and tested without propellers
+    4: lambda: sc(drone_top(92, 74, 44, props=False) + f'<path d="M158 112l38-38" stroke="{N2}" stroke-width="6" stroke-linecap="round"/><path d="M196 74l14-14" stroke="{PD}" stroke-width="10" stroke-linecap="round"/>' + tick(190, 116, 15)),
+    # 5 two micro:bits talking over the radio
+    5: lambda: sc(microbit(22, 52) + microbit(158, 52) + "".join(f'<path d="M{96 + 12 * i} {64 - 4 * i}q{8 + 3 * i} {12 + 4 * i} 0 {24 + 8 * i}" stroke="{PD if i < 2 else P}" stroke-width="4" fill="none" stroke-linecap="round"/>' for i in range(3))
+                  + f'<path d="M40 112l-10 12M64 112l10 12" stroke="{M}" stroke-width="4" stroke-linecap="round"/>'),
+    # 6 reading the program: blocks on a screen under a magnifier
+    6: lambda: sc(screen(26, 18, 150, 96, f'<rect x="42" y="32" width="70" height="12" rx="4" fill="{N2}"/><rect x="52" y="48" width="88" height="12" rx="4" fill="{P}"/><rect x="52" y="64" width="60" height="12" rx="4" fill="{M}"/><rect x="42" y="80" width="80" height="12" rx="4" fill="{N2}"/>')
+                  + f'<circle cx="182" cy="78" r="24" fill="{W}" fill-opacity=".7" stroke="{N}" stroke-width="5"/><path d="M199 96l18 20" stroke="{N}" stroke-width="8" stroke-linecap="round"/>'),
+    # 7 the first hover, low over a soft mat
+    7: lambda: sc(f'<rect x="40" y="118" width="160" height="14" rx="7" fill="{M}"/>' + f'<path d="M120 80v30" stroke="{PD}" stroke-width="3" stroke-dasharray="3 6" stroke-linecap="round"/>' + drone(120, 56)
+                  + f'<path d="M196 76v40M190 76h12M190 116h12" stroke="{N}" stroke-width="3" stroke-linecap="round"/>' + rays(120, 34, 50, 62, n=5, a0=235, a1=305, col=P, w=3)),
+    # 8 stability: how far the drone drifts from its mark
+    8: lambda: sc(f'<path d="M62 106v28M48 120h28" stroke="{N}" stroke-width="4" stroke-linecap="round"/>' + f'<g opacity=".35">{drone(62, 58, .9)}</g>' + drone(164, 54, .9) + arrow(92, 58, 126, 56, PD, 4, 9)
+                  + f'<path d="M62 132h102M164 126v12" stroke="{N2}" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 7"/>'),
+    # 9 FPV: the goggles, and the observer's eye on the drone
+    9: lambda: sc(goggles(26, 60) + drone(182, 40, .7) + f'<path d="M132 82L160 54" stroke="{PD}" stroke-width="3" stroke-dasharray="3 7" stroke-linecap="round"/>' + person(196, 100, N2)),
+    # 10 precision landing: where the landings fell around the mark
+    10: lambda: sc(f'<ellipse cx="100" cy="100" rx="78" ry="34" fill="{W}" stroke="{N}" stroke-width="3"/><ellipse cx="100" cy="100" rx="50" ry="22" fill="{PS}" stroke="{M}" stroke-width="2"/><ellipse cx="100" cy="100" rx="22" ry="10" fill="{P}"/>'
+                   + "".join(f'<circle cx="{x}" cy="{y}" r="5" fill="{N}"/>' for x, y in ((88, 96), (122, 106), (70, 112), (108, 86), (140, 92))) + drone(184, 36, .7)
+                   + f'<path d="M100 100L140 92" stroke="{PD}" stroke-width="2.5"/>'),
+    # 11 the data: a table turned into a graph
+    11: lambda: sc(f'<rect x="20" y="30" width="78" height="92" rx="4" fill="{W}" {S}/><path d="M20 52h78M20 74h78M20 96h78M46 30v92" stroke="{M}" stroke-width="2"/>' + arrow(106, 76, 126, 76, N, 4, 8)
+                   + f'<rect x="134" y="26" width="90" height="100" rx="8" fill="{W}" {S}/><path d="M148 112V40M148 112h64" {s2}/>'
+                   + "".join(f'<circle cx="{162 + 14 * i}" cy="{y}" r="4" fill="{PD}"/>' for i, y in enumerate((92, 74, 82, 58))) + f'<path d="M154 76h56" stroke="{N}" stroke-width="2.5" stroke-dasharray="5 4"/>'),
+    # 12 feedback: measure, compare, correct, and round again
+    12: lambda: sc("".join(f'<rect x="{x}" y="34" width="52" height="34" rx="8" fill="{c}" {s2}/>' for x, c in ((22, W), (94, P), (166, W))) + arrow(76, 51, 90, 51, N, 4, 7) + arrow(148, 51, 162, 51, N, 4, 7)
+                   + f'<path d="M192 70v42H48V78" stroke="{PD}" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M40 86l8-10 8 10" stroke="{PD}" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>'
+                   + drone(192, 50, .34) + f'<path d="M36 51h24M48 43v16" stroke="{N}" stroke-width="3" stroke-linecap="round"/><circle cx="120" cy="51" r="7" fill="{N}"/>'),
+    # 13 the plan: an idea and a sketch on paper
+    13: lambda: sc(f'<g transform="rotate(-4 90 76)">{sheet(40, 22, 104, 110, 2)}<path d="M62 100h60M74 100v-12M110 100v-12M62 86h24M98 86h24" stroke="{N2}" stroke-width="3" stroke-dasharray="5 4" stroke-linecap="round"/></g>'
+                   + f'<circle cx="186" cy="52" r="18" fill="{P}" {s2}/><path d="M179 74h14M181 81h10" {s2}/>' + rays(186, 52, 24, 34, n=5, a0=200, a1=340, col=PD, w=3)),
+    # 14 building and programming the project
+    14: lambda: sc(gear(58, 58, 30, N2) + gear(100, 94, 20, PD) + microbit(140, 24, .8) + drone(176, 108, .7)),
+    # 15 test, improve, test again
+    15: lambda: sc(f'<rect x="24" y="22" width="110" height="100" rx="8" fill="{W}" {S}/><path d="M40 106V36M40 106h80" {s2}/>'
+                   + "".join(f'<rect x="{50 + 22 * i}" y="{106 - h}" width="14" height="{h}" rx="2" fill="{c}"/>' for i, (h, c) in enumerate(((26, M), (40, M), (58, PD))))
+                   + f'<path d="M210 96a34 34 0 1 1-10-46" stroke="{N}" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M190 42l12 8-4 13" stroke="{N}" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>' + drone(178, 78, .45)),
+    # 16 Drone Challenge: through the gate to the finish
+    16: lambda: sc(f'<path d="M52 136V62a50 50 0 0 1 100 0v74" stroke="{PD}" stroke-width="9" fill="none" stroke-linecap="round"/><path d="M52 136V62a50 50 0 0 1 100 0v74" stroke="{W}" stroke-width="9" fill="none" stroke-dasharray="12 12"/>'
+                   + drone(102, 86, .8) + f'<path d="M196 136V40" stroke="{N}" stroke-width="5" stroke-linecap="round"/>' + "".join(f'<rect x="{198 + 9 * i}" y="{42 + 9 * j}" width="9" height="9" fill="{N if (i + j) % 2 == 0 else W}"/>' for i in range(3) for j in range(3))
+                   + f'<rect x="198" y="42" width="27" height="27" fill="none" stroke="{N}" stroke-width="2"/>'),
+}
+ART["dronelabra"] = dronelabra
+for k, f in DL.items(): ART[f"dronelabra-{k}"] = f
 for k, f in A1.items(): ART[f"ahjo1-{k}"] = f
 for k, f in A2.items(): ART[f"ahjo2-{k}"] = f
 

@@ -32,7 +32,7 @@ for lang in i18n.languages():
         head = html[:html.find("</head>")]
         expect(f"{lang} {name}: Ahjo's mark as the tab icon, not Ruukkilabra's", "ruukkilabra-32.png" not in head and "ruukkilabra-symboli.svg" not in head
                and all(re.search(rf'href="(?:\.\./)*{re.escape(i)}"', head) and (SITE / i).is_file() for i in ahjo.TAB_ICONS.values()))
-        lesson = re.match(r"ahjo-\d-tunti-\d+\.html$", name) is not None   # a lesson's page has Ahjo's mark in its top bar instead
+        lesson = re.search(r"-tunti-\d+\.html$", name) is not None   # a lesson's page has Ahjo's mark in its top bar instead
         expect(f"{lang} {name}: the original logo with its name as alt", lesson and 'class="ahjo-ltop-home"' in main and 'alt="' in main or re.search(r'<img class="ahjo-logo[^"]*" src="(?:\.\./)?brand/ahjo-makerspace-logo\.svg" alt="[^"]+"', main) is not None)
         expect(f"{lang} {name}: the section's navigation marks this page", lesson or (f'aria-current="page"' in main and 'class="ahjo-nav"' in main))
         expect(f"{lang} {name}: no laser cutter or CNC anywhere", not ahjo.FORBIDDEN.search(re.sub(r"<[^>]+>", " ", main)))
@@ -40,7 +40,8 @@ for lang in i18n.languages():
         for href in re.findall(r'href="([^"]+)"', main):
             if re.match(r"[a-z]+:", href):      # Ahjo links only inside Ruukkilabra, but for a project card's inspiration (a known site)
                 ext = re.match(r"https://([^/]+)/", href)
-                if not (name == ahjo.PROJECTS and ext and ext.group(1) in ahjo.SOURCE_HOSTS): bad.append(href)
+                official = name[:-5] in guides and ext and ext.group(1) in ahjo.OFFICIAL_HOSTS   # a guide's sources: the authority's rules, the maker's documents (Dronelabra, 2026-11-12)
+                if not (name == ahjo.PROJECTS and ext and ext.group(1) in ahjo.SOURCE_HOSTS) and not official: bad.append(href)
                 continue
             path, _, frag = href.partition("#"); path = path.split("?")[0]   # a guide opened from a lesson: ?tunti=... (ahjo.js)
             target = (out / path).resolve() if path else f
@@ -51,8 +52,14 @@ for lang in i18n.languages():
     expect(f"{lang}: the project bank shows every card once", [c[1] for c in cards] == [p["id"] for p in sorted(d["projects"], key=lambda p: p["status"] != "hyvaksytty")], [c[1] for c in cards])
     expect(f"{lang}: a card is approved only where the teacher marked it (approved_by, date)",
            all(bool(a) == (p["status"] == "hyvaksytty" and bool(p.get("approved_by"))) for a, pid in cards for p in d["projects"] if p["id"] == pid))
-    expect(f"{lang}: every card has its status badge, a measure of success and an inspiration link marked external",
-           all(re.search(rf'id="{p["id"]}".*?ahjo-badge.*?{re.escape(ahjo.esc(d["ui"]["proj_success"]))}.*?rel="external noopener".*?ahjo-ext', pr, re.S) for p in d["projects"]))
+    card = {pid: x for x, pid in ((mm.group(0), mm.group(1)) for mm in re.finditer(r'<article class="ahjo-proj[^"]*" id="([^"]+)".*?</article>', pr, re.S))}
+    expect(f"{lang}: every card has its status badge and a measure of success, and an inspiration link marked external when a page inspired it (a project of our own has none, 2026-11-12)",
+           all(re.search(rf'ahjo-badge.*?{re.escape(ahjo.esc(d["ui"]["proj_success"]))}', card.get(p["id"], ""), re.S)
+               and bool(p.get("inspiration")) == bool(re.search(r'rel="external noopener".*?ahjo-ext', card.get(p["id"], ""), re.S)) for p in d["projects"]))
+    drone = [p for p in d["projects"] if p["id"].startswith("drone-")]
+    expect(f"{lang}: Dronelabra's eight project cards each show steps, safety limits and what the project needs",
+           len(drone) == 8 and all(p.get("steps") and p.get("safety") and p.get("need") and ahjo.esc(p["safety"]) in card.get(p["id"], "") and ahjo.esc(d["ui"]["proj_steps"]) in card.get(p["id"], "")
+                                   and ahjo.esc(d["ui"]["lesson_status"][p["need"]]) in card.get(p["id"], "") for p in drone), len(drone))
     expect(f"{lang}: the project page says the cards are proposals", ahjo.esc(d["ui"]["projects_note"]) in pr)
     expect(f"{lang}: a project card shows its picture, name, line, level and length first and opens for the rest (teacher 2026-11-09)",
            all(re.search(rf'<article class="ahjo-proj[^"]*" id="{p["id"]}"[^>]* data-level="{p["level"]}"><div class="ahjo-pcard-art"><svg.*?<h3[^>]*>{re.escape(ahjo.esc(p["title"]))}</h3>'
@@ -105,7 +112,7 @@ for lang in i18n.languages():
         expect(f"{lang} {c['code']}: the banner has the course's logo, a one-sentence pitch and one button to the first task ({first})",
                'class="ahjo-logo ahjo-course-logo"' in hd and ahjo.esc(c["pitch"]) in hd and cta is not None and cta.group(1) == first
                and (not st or ahjo.esc(st["title"]) in cta.group(2)), cta.group(1) if cta else None)
-        lessons_h = [h for h in re.findall(r'href="(ahjo-\d-tunti-\d+\.html)"', m)]
+        lessons_h = [h for h in re.findall(r'href="([a-z0-9-]+-tunti-\d+\.html)"', m)]
         order = list(dict.fromkeys(lessons_h))
         expect(f"{lang} {c['code']}: every lesson opens its own page, in order", order[:16] == [ahjo.lesson_page(c["code"], i) for i in range(1, 17)] and len(ls) == 16, order[:5])
         expect(f"{lang} {c['code']}: the old lesson anchors (#tunti-N) and the back links' anchors (#kortti-N) are on the page",
@@ -119,6 +126,16 @@ for lang in i18n.languages():
                    len(units) == len(c["units"]) == 5 and len(cards) == 16 and all('class="ahjo-art"' in x and 'class="ahjo-lcard-t"' in x and 'class="ahjo-lcard-x"' in x for _, _, x in cards)
                    and [int(n) for n, _, _ in cards] == list(range(1, 17)), len(cards))
             expect(f"{lang} AHJO1: each part names its lessons (1–2, 3–6, 7–11, 12–13, 14–16)", [x["lessons"] for x in c["units"]] == [[1, 2], [3, 4, 5, 6], [7, 8, 9, 10, 11], [12, 13], [14, 15, 16]])
+        elif c["code"] == "DRONELABRA":   # Ahjo's third course (teacher 2026-11-12): the same cards in parts as Ahjo 1
+            cards = re.findall(r'<a class="ahjo-lcard" id="kortti-(\d+)" href="([^"]+)">(.*?)</a>', m, re.S)
+            expect(f"{lang} DRONELABRA: the 16 lessons in five parts, each a card with a picture",
+                   len(c["units"]) == 5 and m.count('<section class="ahjo-unit"') == 5 and len(cards) == 16 and all('class="ahjo-art"' in x for _, _, x in cards), len(cards))
+            expect(f"{lang} DRONELABRA: every lesson says what it needs beyond the present equipment, what goes into the diary and the teacher's timing and preparation",
+                   all(l.get("status") in u["lesson_status"] and l.get("diary") and l.get("teacher") for l in ls)
+                   and all(ahjo.esc(u["lesson_status"][l["status"]]) in (out / ahjo.lesson_page("DRONELABRA", i)).read_text() and ahjo.esc(l["teacher"]["prep"]) in (out / ahjo.lesson_page("DRONELABRA", i)).read_text() for i, l in enumerate(ls, 1)))
+            fly = [l for l in ls if any(x in l.get("safety", []) for x in ("drone-lentoalue", "drone-fpv"))]
+            expect(f"{lang} DRONELABRA: every lesson with flying needs the teacher's safety approval and has something to do while waiting or a peer task",
+                   len(fly) >= 8 and all(l["status"] == "hyvaksynta" and l.get("safety_note") and (l.get("wait") or l.get("peer")) for l in fly), len(fly))
         else:
             path = re.search(r'<ol class="ahjo-path">(.*)</ol>', m, re.S)
             steps = re.findall(r'<li class="ahjo-path-step">', m)
@@ -147,7 +164,8 @@ for lang in i18n.languages():
         expect(f"{lang} {c['code']}: the licence's skills checklist only on Ahjo 1", bool(c.get("license")) == ('class="ahjo-check"' in ab)
                and (not c.get("license") or all(ahjo.esc(x) in ab for x in u["license_check"])))
         fin = c.get("final")
-        l14 = (out / ahjo.lesson_page(c["code"], 14)).read_text() if (out / ahjo.lesson_page(c["code"], 14)).is_file() else ""
+        nfin = next((i for i, l in enumerate(ls, 1) if l.get("final")), 14)   # Ahjo 1: lesson 14; Dronelabra: its last lesson
+        l14 = (out / ahjo.lesson_page(c["code"], nfin)).read_text() if (out / ahjo.lesson_page(c["code"], nfin)).is_file() else ""
         expect(f"{lang} {c['code']}: the mini project options are on lesson 14's page (teacher 2026-11-08)",
                not fin or ('id="miniprojekti"' in l14 and all(ahjo.esc(t) in l14 for t, _ in fin["options"])))
         expect(f"{lang} {c['code']}: the course page reaches Ahjo's materials, projects and safety by the section's navigation, not by big cards",
@@ -244,7 +262,7 @@ for lang in i18n.languages():
     expect(f"{lang}: the licence's skills checklist covers coin cells, the multimeter, the printer's hot parts, tools and robots, and testing, and says it does not replace a device permit",
            all(any(re.search(w, x, re.I) for x in u["license_check"]) for w in (r"nappiparist|coin cell", r"rinnan|parallel", r"kuum|hot", r"robot", r"testaa|test")) and re.search(r"lupa|permit", u["license_check_note"], re.I))
     expect(f"{lang}: both courses list what is assessed, and say a failed prototype or attempt can show excellent skills",
-           [len(c["assessment"]["items"]) for c in d["courses"]] == [6, 7] and all(re.search(r"epäonnist|ei onnistunut|ei toiminut|fail", c["assessment"]["note"], re.I) for c in d["courses"]))
+           [len(c["assessment"]["items"]) for c in d["courses"]] == [6, 7, 7] and all(re.search(r"epäonnist|ei onnistunut|ei toiminut|fail", c["assessment"]["note"], re.I) for c in d["courses"]))
     hand = [l for c in d["courses"] for l in c["lessons"] if l.get("milestone")]
     expect(f"{lang}: the peer practices add no hand-ins (still five, all in Ahjo 2)", len(hand) == 5 and all(not l.get("milestone") for l in d["courses"][0]["lessons"]))
     for g in ("ahjo-led-piiri", "ahjo-sarjaplotteri", "ahjo-servo"):
@@ -258,7 +276,7 @@ for lang in i18n.languages():
 fi, easy = ahjo.load(), ahjo.load("fi-easy")
 key = lambda d: [(l.get("start"), l.get("example"), l.get("peer"), l.get("safety_note"), tuple(l.get("levels", {}).values())) for c in d["courses"] for l in c["lessons"]]
 diff = sum(a != b for a, b in zip(key(fi), key(easy)))
-expect("fi-easy: the key student instructions are rewritten in selkosuomi (not the Finnish text copied)", ahjo.data_file("fi-easy") != ahjo.SOURCE and diff == 32, diff)
+expect("fi-easy: the key student instructions are rewritten in selkosuomi (not the Finnish text copied)", ahjo.data_file("fi-easy") != ahjo.SOURCE and diff == 48, diff)   # 32 lessons of Ahjo 1 and 2, and Dronelabra's 16 (2026-11-12)
 expect("fi-easy: shorter sentences than the Finnish in the lessons' instructions",
        (lambda w: w(easy) < w(fi))(lambda d: sum(len(s.split()) for x in key(d) for v in x for s in re.split(r"[.?!]", " ".join(v) if isinstance(v, tuple) else (v or "")) if s.strip())
                                     / max(1, sum(1 for x in key(d) for v in x for s in re.split(r"[.?!]", " ".join(v) if isinstance(v, tuple) else (v or "")) if s.strip()))))

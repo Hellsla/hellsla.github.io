@@ -75,6 +75,16 @@
       "omin ideoin",
       "valinnainen"
     ],
+    "lesson_status": {
+      "valmis": "Onnistuu nykyisellä kalustolla",
+      "ohjain": "Vaatii tietyn ohjaimen tai lisälaitteen",
+      "hankinta": "Vaatii lisähankinnan",
+      "hyvaksynta": "Vaatii opettajan turvallisuushyväksynnän"
+    },
+    "lesson_diary_h": "Kirjaa projektipäiväkirjaan",
+    "lesson_teacher": "Opettajalle: valmistelut ja ajankäyttö",
+    "lesson_time": "Ajankäyttö",
+    "lesson_prep": "Valmistelut",
     "lesson_levels": [
       "Kokeile",
       "Muokkaa",
@@ -173,6 +183,7 @@
     "unit_lesson": "Tunti {a}",
     "course_about": "Lisätietoa opintojaksosta",
     "course_about_lead": "Tavoitteet, ajokortti ja jatkomahdollisuudet.",
+    "course_about_lead_plain": "Tavoitteet, sisällöt ja arviointi.",
     "guide_back": "Takaisin oppituntiin",
     "deepening_h": "Syventävät osat",
     "deepening_lead": "Valinnaisia lisätöitä niille, jotka ehtivät pidemmälle tai haluavat syventyä. Ne eivät kuulu kaikille yhteiseen runkoon.",
@@ -245,6 +256,9 @@
     "proj_materials": "Tarvikkeet",
     "proj_success": "Onnistumisen mittari",
     "proj_next": "Jatkokehitys",
+    "proj_steps": "Työvaiheet",
+    "proj_safety": "Turvallisuusrajat",
+    "proj_need": "Toteutettavuus",
     "proj_subjects": "Muut oppiaineet",
     "proj_inspiration": "Inspiraationa",
     "proj_external": "englanninkielinen sivu toisella sivustolla",
@@ -1309,6 +1323,801 @@
         ],
         "note": "Tekninen näyttävyys tai valmiin tuotteen onnistuminen ei yksin ratkaise arviota. Epäonnistunut prototyyppi voi osoittaa erinomaista osaamista, kun suunnittelu, testaus, havaintojen analysointi ja kehittämispäätökset on perusteltu. Jokainen osoittaa oman osuutensa palautuksissa. Arviointi on luonnos, ja painotuksista päättää opettaja."
       }
+    },
+    {
+      "code": "DRONELABRA",
+      "subtitle": "Lennä, ohjelmoi ja tutki",
+      "pitch": "Rakenna ohjelmoitava drone, opettele lentämään sitä turvallisesti ja tutki mittaamalla, miksi se pysyy ilmassa. Lopuksi teet oman droneprojektin.",
+      "units": [
+        {
+          "title": "Tutustu ja lennä turvallisesti",
+          "lessons": [
+            1,
+            2
+          ]
+        },
+        {
+          "title": "Rakenna ja ohjelmoi Air:bit",
+          "lessons": [
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "title": "Lentokokeet ja lentovakaus",
+          "lessons": [
+            7,
+            8
+          ]
+        },
+        {
+          "title": "FPV, mittaaminen ja data",
+          "lessons": [
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "title": "Oma droneprojekti",
+          "lessons": [
+            13,
+            14,
+            15,
+            16
+          ]
+        }
+      ],
+      "topics": [
+        "Dronen rakenne, moottorit, anturit ja ohjaus",
+        "Lentämisen fysiikka: voimat, momentit ja lentovakaus",
+        "micro:bit, MakeCode ja radio-ohjaus",
+        "Takaisinkytkentä ja säätö",
+        "Kokeellinen tutkimus: mittaaminen, toistot ja virhelähteet",
+        "Mittausdatan ja videon analysointi Pythonilla",
+        "Turvallinen ja vastuullinen lennättäminen"
+      ],
+      "goals": [
+        "lennättämään dronea turvallisesti ja toimimaan lentäjänä, tähystäjänä ja turvavastaavana",
+        "selittämään voimien ja momenttien avulla, miksi nelikopteri leijuu, kallistuu ja kääntyy",
+        "kokoamaan ohjelmoitavan dronen ja tarkastamaan sen toiminnan ennen lentoa",
+        "ohjelmoimaan micro:bitin radio-ohjaimeksi ja lukemaan dronen ohjausohjelmaa",
+        "suunnittelemaan lentokokeen, toistamaan mittauksen ja arvioimaan virhelähteet",
+        "käsittelemään mittausdataa Pythonilla ja perustelemaan johtopäätökset kuvaajalla",
+        "suunnittelemaan, toteuttamaan ja dokumentoimaan oman teknisen ratkaisun"
+      ],
+      "lessons": [
+        {
+          "title": "Droneihin tutustuminen ja lentoturvallisuus",
+          "make": "Lentoalueen säännöt ja roolit",
+          "text": "Dronen osat, lentoalueen rajaaminen ja kolme roolia: lentäjä, tähystäjä ja turvavastaava.",
+          "start": "Katso opettajan lennättämää dronea ja kirjoita ylös kolme asiaa, jotka voisivat mennä pieleen. Vertaa listaa parin kanssa.",
+          "levels": {
+            "try": "Tee ryhmän kanssa lentoa edeltävä tarkistuslista ja piirrä luokan lentoalue: lähtöpaikka, turvaraja ja katsojien paikka. Harjoitelkaa roolit ja huudot Lähtö, Seis ja Laskeudu ilman dronea.",
+            "modify": "Lisää tarkistuslistaan kohta jokaisesta vaarasta, jonka kirjoitit aloituksessa, ja testaa lista toisella ryhmällä.",
+            "challenge": "Selvitä Traficomin Miehittämätön ilmailu -sivuilta, mitä alle 250 gramman kameradronen lennättäjältä vaaditaan. Kirjaa kolme sääntöä ja sivu, jolta ne löytyvät."
+          },
+          "output": "Ryhmän tarkistuslista ja lentoalueen piirros, joita käytetään koko opintojakson ajan.",
+          "output_plus": "Kolme lennättämisen sääntöä lähteineen omin sanoin.",
+          "guides": [
+            "ahjo-drone-perehdytys"
+          ],
+          "needs": [
+            "paperia ja kyniä",
+            "maalarinteippiä lentoalueen rajaamiseen",
+            "suojalasit turvavastaavalle",
+            "opettajan lennättämä drone"
+          ],
+          "safety": [
+            "drone-potkurit",
+            "drone-lentoalue",
+            "drone-saannot"
+          ],
+          "safety_note": "Tällä tunnilla dronea lennättää vain opettaja. Pysy turvarajan takana, kun potkurit pyörivät.",
+          "peer": "Vaihtakaa tarkistuslistat toisen ryhmän kanssa. Löytyykö listasta kohta, jota oma ryhmäsi ei huomannut?",
+          "goal": "Tunnet dronen pääosat ja osaat toimia lentoalueella omassa roolissasi.",
+          "diary": [
+            "ryhmän tarkistuslista",
+            "lentoalueen piirros ja roolit",
+            "yksi asia, joka yllätti"
+          ],
+          "teacher": {
+            "time": "Aloitus ja esittelylento 15 min, tarkistuslista ja lentoalue 30 min, roolien harjoittelu 20 min, koonti 10 min.",
+            "prep": "Varaa tila, jossa on vapaata lattiaa, ja sovi tilan käytöstä koulun kanssa. Lataa akut ja tarkasta drone. Tulosta perehdytysohje. Tunnilla ei jaeta laitteita opiskelijoille."
+          },
+          "status": "hyvaksynta"
+        },
+        {
+          "title": "Miksi drone lentää? Voimat ja momentit",
+          "make": "Leijunnan voimakuvio",
+          "text": "Paino, nostovoima ja potkurien pyörimissuunnat: miten nelikopteri nousee, kallistuu ja kääntyy.",
+          "start": "Leikkaa paperista helikopteri opettajan mallin mukaan ja pudota se kolme kertaa. Mittaa putoamisaika sekuntikellolla.",
+          "levels": {
+            "try": "Piirrä leijuvan dronen voimakuvio ja laske, kuinka suuri nostovoima yhden potkurin pitää tuottaa, kun tiedät dronen massan. Merkitse kuvaan potkurien pyörimissuunnat.",
+            "modify": "Muuta paperihelikopterin lavan pituutta ja mittaa putoamisaika viidellä pudotuksella. Miten lavan pituus vaikuttaa?",
+            "challenge": "Selitä voimien ja momenttien avulla, miksi drone kääntyy pystyakselinsa ympäri, kun kaksi vastakkaista potkuria pyörii muita nopeammin."
+          },
+          "output": "Voimakuvio leijuvasta dronesta ja laskettu yhden potkurin nostovoima.",
+          "output_plus": "Selitys dronen kääntymisestä momenttien avulla.",
+          "guides": [
+            "fy4-5",
+            "fy5-1"
+          ],
+          "needs": [
+            "paperia ja sakset",
+            "sekuntikello tai puhelin",
+            "viivain",
+            "laskin",
+            "dronen massa (opettajalta tai vaa'alta)"
+          ],
+          "safety": [],
+          "safety_note": "Tällä tunnilla ei lennätetä. Dronet pysyvät laatikoissaan.",
+          "peer": "Vertaa voimakuviotasi parin kuvioon. Ovatko voimien pituudet oikeassa suhteessa?",
+          "goal": "Selität leijunnan voimien tasapainona ja kallistumisen momenttien avulla.",
+          "diary": [
+            "voimakuvio ja lasku",
+            "paperihelikopterin mittaustulokset",
+            "mikä tulos poikkesi odotuksesta ja miksi"
+          ],
+          "teacher": {
+            "time": "Paperihelikopteri 15 min, teoria ja voimakuvio 25 min, mittaukset 25 min, koonti 10 min.",
+            "prep": "Tulosta paperihelikopterin malli ja punnitse yksi drone valmiiksi. Kertaa tarvittaessa Newtonin lait ja momentti."
+          },
+          "status": "valmis"
+        },
+        {
+          "title": "Air:bit 2:n rakenne ja komponentit",
+          "make": "Dronen osakartta",
+          "text": "Runko, ohjainkortti, moottorit, potkurit, akku ja micro:bit: mitä kukin osa tekee.",
+          "start": "Avaa rakennussarja ja lajittele osat ryhmiin ennen kuin luet ohjetta. Arvaa jokaisen ryhmän tehtävä.",
+          "levels": {
+            "try": "Tunnista ohjainkortilta micro:bitin liitin, moottoriliitännät, akkuliitin ja latausliitin. Piirrä osakartta, jossa näkyy, mistä virta ja ohjaus kulkevat.",
+            "modify": "Selvitä potkureista, kumpaan suuntaan kunkin pitää pyöriä, ja merkitse suunnat osakarttaan.",
+            "challenge": "Punnitse sarjan osat ja laske koko dronen massa. Arvioi, kuinka suuri osa massasta on akkua, ja pohdi, miksi sillä on merkitystä."
+          },
+          "output": "Osakartta, johon on nimetty dronen osat ja niiden tehtävät.",
+          "output_plus": "Massataulukko ja akun osuus dronen massasta.",
+          "guides": [
+            "ahjo-airbit-kokoaminen"
+          ],
+          "needs": [
+            "Air:bit 2 -rakennussarja ryhmää kohti",
+            "micro:bit",
+            "keittiövaaka",
+            "paperia ja kyniä"
+          ],
+          "safety": [
+            "drone-akut"
+          ],
+          "safety_note": "Akkua ei vielä kytketä. Älä taivuta tai paina akkua, ja kerro opettajalle heti, jos akku on turvonnut tai vaurioitunut.",
+          "peer": "Selitä parille yhden osan tehtävä niin, että hän osaa näyttää sen osakartasta.",
+          "goal": "Nimeät dronen osat ja kerrot, mitä kukin niistä tekee.",
+          "diary": [
+            "osakartta",
+            "kysymys, johon et vielä tiedä vastausta"
+          ],
+          "teacher": {
+            "time": "Lajittelu 10 min, osien tunnistus ja osakartta 35 min, potkurit ja punnitus 20 min, koonti 10 min.",
+            "prep": "Tarkista, että jokaisessa sarjassa on kaikki osat, ja numeroi sarjat ja micro:bitit ryhmittäin. Lataa akut valmiiksi seuraavaa kertaa varten valmistajan ohjeen mukaan."
+          },
+          "status": "valmis"
+        },
+        {
+          "title": "Dronen kokoaminen ja toimintakokeet",
+          "make": "Koottu ja testattu drone",
+          "text": "Rungon ja moottorien kokoaminen sekä käynnistystesti ilman potkureita.",
+          "start": "Kiinnitä yksi moottori runkoon ohjeen mukaan ja näytä se opettajalle. Jatka vasta sen jälkeen.",
+          "levels": {
+            "try": "Kokoa drone ohjeen mukaan, mutta jätä potkurit kiinnittämättä. Käynnistä drone tasaisella alustalla ja kirjaa, mitkä kirjaimet micro:bitin näyttö näyttää käynnistyksen aikana.",
+            "modify": "Tee moottoritesti ilman potkureita ja tarkista osakartastasi, että jokainen moottori on oikeassa paikassa.",
+            "challenge": "Kirjoita vianetsintäkortti: mitä teet, jos näyttö ilmoittaa, että gyroskooppia tai moottoriohjainta ei löydy?"
+          },
+          "output": "Koottu drone, joka käynnistyy ja läpäisee moottoritestin ilman potkureita.",
+          "output_plus": "Vianetsintäkortti kahdelle käynnistysvirheelle.",
+          "guides": [
+            "ahjo-airbit-kokoaminen"
+          ],
+          "needs": [
+            "Air:bit 2 -rakennussarja",
+            "micro:bit V2",
+            "ladattu akku",
+            "pieni ristipääruuvitaltta",
+            "USB-kaapeli"
+          ],
+          "safety": [
+            "drone-potkurit",
+            "drone-akut"
+          ],
+          "safety_note": "Potkureita ei kiinnitetä tällä tunnilla. Akku kytketään vasta, kun opettaja on tarkastanut kokoamisen.",
+          "wait": "Kun odotat opettajan tarkastusta, täydennä osakarttaasi tai auta toista ryhmää lukemaan ohjetta.",
+          "peer": "Tarkasta toisen ryhmän drone tarkistuslistan avulla ennen kuin opettaja katsoo sen.",
+          "goal": "Kokoat dronen ohjeen mukaan ja testaat sen toiminnan turvallisesti.",
+          "diary": [
+            "valokuva kootusta dronesta",
+            "käynnistyksen vaiheet ja näytön merkit",
+            "mikä kokoamisessa oli vaikeinta"
+          ],
+          "teacher": {
+            "time": "Ensimmäinen moottori 10 min, kokoaminen 40 min, käynnistys- ja moottoritesti 15 min, koonti 10 min. Varaa tarvittaessa lisäaikaa: valmistaja arvioi kokoamiseen 2–3 tuntia.",
+            "prep": "Lataa akut. Lataa droneohjelma micro:biteille etukäteen tai varaa siihen aikaa. Valmistajan ohjeessa potkurit kiinnitetään jo kokoamisluvun lopussa: ohita se vaihe ja säilytä potkurit itselläsi lentotunteihin asti."
+          },
+          "status": "valmis"
+        },
+        {
+          "title": "micro:bit, MakeCode ja radio-ohjaus",
+          "make": "Oma radio-ohjain",
+          "text": "Kaksi micro:bitiä viestii radiolla: toinen on ohjain, toinen vastaanottaa.",
+          "start": "Lataa micro:bitille ohjelma, joka lähettää luvun radiolla, kun painat A-nappia. Kokeile parin micro:bitillä, tuleeko luku perille.",
+          "levels": {
+            "try": "Ohjelmoi micro:bit lähettämään kallistuksensa ja nappien tilan radiolla nimettyinä arvoina. Näytä vastaanottavalla micro:bitillä, että arvot muuttuvat, kun kallistat ohjainta.",
+            "modify": "Vaihda radioryhmä ryhmäsi omaksi ja lisää ohjaimeen kaasun säätö A- ja B-napeilla niin, että arvo pysyy välillä 0–100.",
+            "challenge": "Lisää turvaominaisuus: ohjain lähettää käynnistysluvan vain, kun A ja B painetaan yhtä aikaa, ja näyttää tilan selvästi."
+          },
+          "output": "Ohjainohjelma, joka lähettää kallistuksen ja kaasun radiolla ryhmän omalla kanavalla.",
+          "output_plus": "Ohjain, jossa on kahden napin käynnistysvarmistus.",
+          "guides": [
+            "ahjo-airbit-ohjaus"
+          ],
+          "needs": [
+            "kaksi micro:bitiä ryhmää kohti",
+            "tietokone ja MakeCode",
+            "USB-kaapeli",
+            "paristokotelo ohjaimelle"
+          ],
+          "safety": [],
+          "safety_note": "Tällä tunnilla ohjelmoidaan ja testataan pöydällä. Dronen akku ei ole kytkettynä.",
+          "peer": "Kokeile parin ohjainta ja kerro yksi asia, joka tekisi siitä helpomman käyttää.",
+          "goal": "Ohjelmoit micro:bitin lähettämään ohjauskomentoja radiolla.",
+          "diary": [
+            "kuvakaappaus ohjelmasta",
+            "ryhmän radioryhmän numero",
+            "miten testasit, että viesti menee perille"
+          ],
+          "teacher": {
+            "time": "Ensimmäinen radioviesti 10 min, ohjainohjelma 40 min, radioryhmät ja kaasu 15 min, koonti 10 min. Valmistaja arvioi ohjaimen ohjelmointiin 3–4 tuntia, joten työ jatkuu seuraavalla kerralla.",
+            "prep": "Jaa jokaiselle ryhmälle oma radioryhmän numero. Pidä valmistajan valmis ohjainohjelma varalla ryhmille, joiden oma ohjelma ei valmistu."
+          },
+          "status": "valmis",
+          "starters": [
+            "airbit-ohjain"
+          ]
+        },
+        {
+          "title": "Dronen ohjausohjelman tutkiminen ja muokkaaminen",
+          "make": "Ohjelman lukukartta",
+          "text": "Miten droneohjelma lukee anturit, laskee asennon ja jakaa tehon neljälle moottorille.",
+          "start": "Avaa dronen ohjelma MakeCodessa ja etsi kohta, jossa radioviesti otetaan vastaan. Mitkä viisi arvoa ohjain lähettää?",
+          "levels": {
+            "try": "Seuraa ohjelman pääsilmukkaa ja tee lukukartta: antureiden luku, asennon laskenta, säätö ja moottorien nopeudet. Merkitse, missä kohdassa moottorit pysäytetään turvallisuussyistä.",
+            "modify": "Muuta jotakin, mikä ei vaikuta lentoon: esimerkiksi mitä näytöllä näkyy tai milloin akun varoitus tulee näkyviin. Testaa muutos ilman potkureita.",
+            "challenge": "Selitä moottorien nopeuksien laskukaavasta, miksi eteenpäin kallistuessa kahden moottorin teho kasvaa ja kahden pienenee."
+          },
+          "output": "Lukukartta droneohjelman vaiheista ja turvatoiminnoista.",
+          "output_plus": "Selitys siitä, miten ohjelma jakaa tehon neljälle moottorille.",
+          "guides": [
+            "ahjo-airbit-ohjaus"
+          ],
+          "needs": [
+            "tietokone ja MakeCode",
+            "dronen micro:bit",
+            "USB-kaapeli",
+            "koottu drone ilman potkureita"
+          ],
+          "safety": [
+            "drone-potkurit"
+          ],
+          "safety_note": "Kaikki muutokset testataan ilman potkureita. Lentoon vaikuttavia arvoja ei muuteta vielä.",
+          "wait": "Jos kone tai drone on varattu, viimeistele ohjainohjelmasi tai kirjoita lukukartta puhtaaksi.",
+          "peer": "Selitä parille lukukartastasi yksi vaihe. Pari kysyy yhden kysymyksen, johon etsitte vastauksen ohjelmasta.",
+          "goal": "Luet valmista ohjelmaa ja kerrot, mitä sen osat tekevät.",
+          "diary": [
+            "lukukartta",
+            "tekemäsi muutos ja miten testasit sen",
+            "kohta ohjelmasta, jota et vielä ymmärrä"
+          ],
+          "teacher": {
+            "time": "Radiokäsittelijän etsiminen 10 min, lukukartta 35 min, oma muutos ja testi 20 min, koonti 10 min.",
+            "prep": "Varmista, että droneohjelma aukeaa MakeCodessa koulun koneilla. Tallenna alkuperäinen ohjelma talteen, jotta sen voi palauttaa."
+          },
+          "status": "valmis"
+        },
+        {
+          "title": "Air:bit 2:n ensimmäiset lentokokeet",
+          "make": "Ensimmäinen leijunta",
+          "text": "Tarkistuslista, kalibrointi ja lyhyet leijunnat rajatulla lentoalueella.",
+          "start": "Käy ryhmän tarkistuslista läpi ääneen ja jaa roolit: lentäjä, turvavastaava ja kirjaaja. Näytä lista opettajalle ennen kuin potkurit kiinnitetään.",
+          "levels": {
+            "try": "Kiinnitä potkurit opettajan valvonnassa ja anna dronen kalibroitua paikallaan tasaisella alustalla. Tee kolme lyhyttä leijuntaa: nosta kaasua askel kerrallaan, kunnes drone leijuu 10–30 cm:n korkeudella. Kirjaa jokaisesta lennosta kesto ja se, mihin suuntaan drone ajautui.",
+            "modify": "Vaihda rooleja ja toista koe. Muuttuiko ajautumisen suunta, kun lentäjä vaihtui tai kun drone kalibroitiin uudelleen?",
+            "challenge": "Suunnittele koe, jolla selvität, johtuuko ajautuminen dronesta vai lentäjästä. Kirjoita, mitä pidät vakiona ja mitä muutat."
+          },
+          "output": "Lentopöytäkirja kolmesta leijunnasta: kesto, ajautuminen ja havainnot.",
+          "output_plus": "Koesuunnitelma ajautumisen syyn selvittämiseksi.",
+          "guides": [
+            "ahjo-drone-lentokokeet",
+            "ahjo-drone-perehdytys"
+          ],
+          "needs": [
+            "koottu ja testattu Air:bit 2",
+            "ohjaimeksi ohjelmoitu micro:bit",
+            "ladatut akut",
+            "potkurit ja potkurisuojat",
+            "suojalasit",
+            "sekuntikello",
+            "mittanauha",
+            "maalarinteippi",
+            "pehmeä alusta, esimerkiksi matto, lentoalueen lattialle"
+          ],
+          "safety": [
+            "drone-potkurit",
+            "drone-akut",
+            "drone-lentoalue",
+            "drone-hatapysaytys"
+          ],
+          "safety_note": "Dronessa ei ole korkeuden tai paikan pitoa: lentäjä ohjaa itse korkeutta koko ajan. Lennetään matalalla pehmeän alustan päällä, yksi drone kerrallaan lentoalueella. Hätäpysäytys on ohjaimen ravistus, ja se kokeillaan ennen kuin potkurit kiinnitetään.",
+          "starters": [
+            "lentopoytakirja"
+          ],
+          "wait": "Kun toinen ryhmä lentää, toimi kirjaajana tai mittaa videolta heidän leijuntansa kesto.",
+          "peer": "Anna lentäjälle yksi kehu ja yksi neuvo jokaisen lennon jälkeen.",
+          "goal": "Teet lentoa edeltävät tarkastukset ja lennätät dronea lyhyesti hallitusti.",
+          "diary": [
+            "lentopöytäkirja",
+            "mikä tarkistuslistan kohta oli tärkein",
+            "mitä muuttaisit seuraavalla kerralla"
+          ],
+          "teacher": {
+            "time": "Tarkistuslista ja roolit 10 min, potkurit ja kalibrointi 15 min, lentovuorot 40 min, koonti 10 min.",
+            "prep": "Tarkasta lentotila ja rajaa lentoalue. Lataa akut ja varaa varapotkureita. Päätä lentovuorojen pituus ja kuinka monta dronea on kerralla käynnissä. Hyväksy jokaisen ryhmän tarkistuslista ennen lentoa."
+          },
+          "status": "hyvaksynta"
+        },
+        {
+          "title": "Lentovakauden tutkiminen ja ohjelman kehittäminen",
+          "make": "Vakauskoe",
+          "text": "Miten säätimen arvot vaikuttavat siihen, kuinka vakaasti drone leijuu.",
+          "start": "Katso edellisen kerran lentopöytäkirjasta, kuinka paljon drone ajautui. Aseta ryhmälle tavoite: mitä tarkoittaisi vakaampi leijunta, ja miten sen mittaisi?",
+          "levels": {
+            "try": "Tee vertailukoe alkuperäisillä säätöarvoilla: kolme leijuntaa, joista mittaat ajautumisen lähtöpisteestä tietyssä ajassa. Laske keskiarvo ja vaihteluväli.",
+            "modify": "Muuta opettajan luvalla yhtä säätöarvoa pienin askelin ja toista sama koe. Kirjaa arvo ennen ja jälkeen. Palauta alkuperäinen arvo, jos drone alkaa heilua.",
+            "challenge": "Selitä havaintojesi avulla, mitä säätimen vahvistus tekee: miksi liian pieni arvo tekee dronesta laiskan ja liian suuri saa sen värähtelemään?"
+          },
+          "output": "Vertailukokeen tulokset: ajautumisen keskiarvo ja vaihteluväli alkuperäisillä arvoilla.",
+          "output_plus": "Toinen mittaussarja muutetulla arvolla ja perusteltu johtopäätös.",
+          "guides": [
+            "ahjo-drone-lentokokeet",
+            "ahjo-airbit-ohjaus"
+          ],
+          "needs": [
+            "lentokuntoinen Air:bit 2 ja ohjain",
+            "tietokone ja MakeCode",
+            "ladatut akut",
+            "mittanauha",
+            "sekuntikello",
+            "suojalasit",
+            "lattiaan teipattu lähtöpiste"
+          ],
+          "safety": [
+            "drone-potkurit",
+            "drone-akut",
+            "drone-lentoalue",
+            "drone-hatapysaytys"
+          ],
+          "safety_note": "Säätöarvoa muutetaan yksi kerrallaan ja vain opettajan hyväksymissä rajoissa. Muutettu ohjelma testataan ensin ilman potkureita.",
+          "starters": [
+            "lentopoytakirja",
+            "lentoanalyysi"
+          ],
+          "wait": "Kun drone on toisella ryhmällä, syötä mittauksesi taulukkoon ja laske keskiarvot.",
+          "peer": "Vertaa tuloksiasi toisen ryhmän kanssa. Mittasitteko ajautumisen samalla tavalla?",
+          "goal": "Teet vertailukokeen ja perustelet mittauksilla, paraniko lentovakaus.",
+          "diary": [
+            "koejärjestely ja mitä pidit vakiona",
+            "mittaustaulukko ja keskiarvot",
+            "muutetut arvot ja alkuperäiset arvot"
+          ],
+          "teacher": {
+            "time": "Tavoite ja koejärjestely 15 min, vertailukoe 25 min, muutos ja toistokoe 25 min, koonti 10 min.",
+            "prep": "Päätä etukäteen, mitä arvoja saa muuttaa ja kuinka paljon. Tallenna alkuperäinen ohjelma jokaiselle ryhmälle. Lataa akut: lentoaika vaikuttaa tuloksiin, joten sovi, että mittaukset tehdään täydellä akulla. Valmistajan ohje ei sisällä säätöarvojen muuttamista, joten tehtävä on koulun oma: kokeile se itse ennen tuntia."
+          },
+          "status": "hyvaksynta"
+        },
+        {
+          "title": "FPV-lentämisen perusteet",
+          "make": "Ensimmäinen FPV-lento",
+          "text": "Lennetään kameradronea laseilla ja liikeohjaimella Normal-tilassa. Tähystäjä seisoo lentäjän vieressä.",
+          "start": "Pidä liikeohjainta kädessä laitteen ollessa sammutettuna ja harjoittele opettajan näyttämät liikkeet: jarrutus ja leijunta, nousu, käännös ja laskeutuminen.",
+          "levels": {
+            "try": "Tee kiertopisteessä yksi FPV-lento: nousu, leijunta, hidas lento merkille ja takaisin sekä laskeutuminen. Toimi myös kerran tähystäjänä ja kerran turvavastaavana.",
+            "modify": "Lennä sama reitti ilman laseja ja katso dronea suoraan. Kumpi tapa oli tarkempi, ja miksi?",
+            "challenge": "Kuvaile, mitä tietoa lasien näkymä antaa lentäjälle ja mitä tietoa vain tähystäjä näkee."
+          },
+          "output": "Yksi hallittu FPV-lento ja kokemus jokaisesta kolmesta roolista.",
+          "output_plus": "Vertailu FPV-lennon ja suoran näköyhteyden välillä.",
+          "guides": [
+            "ahjo-fpv-lento",
+            "ahjo-drone-perehdytys"
+          ],
+          "needs": [
+            "kameradrone potkurisuojineen",
+            "FPV-lasit ja liikeohjain",
+            "ladatut akut",
+            "merkkikartiot tai teippimerkit",
+            "suojalasit turvavastaavalle"
+          ],
+          "safety": [
+            "drone-fpv",
+            "drone-lentoalue",
+            "drone-hatapysaytys",
+            "drone-yksityisyys",
+            "drone-akut"
+          ],
+          "safety_note": "Lasit päässä et näe ympärillesi. Tähystäjä seisoo vieressäsi, pitää dronen koko ajan näkyvissään ilman apuvälineitä ja sanoo Seis, jos jotain tulee lentoalueelle. Lennetään vain Normal-tilassa. Lopeta heti, jos sinua alkaa huimata tai tulee huono olo.",
+          "wait": "Kun et ole lentovuorossa, harjoittele ohjausliikkeitä sammutetulla ohjaimella tai suunnittele seuraavan kerran tarkkuusrata.",
+          "peer": "Tähystäjä kertoo lentäjälle lennon jälkeen yhden asian, jonka lentäjä ei laseista nähnyt.",
+          "goal": "Lennät FPV-dronea hallitusti ja toimit tähystäjänä.",
+          "diary": [
+            "roolit, joissa toimit",
+            "miltä FPV-lento tuntui verrattuna suoraan näköyhteyteen",
+            "tähystäjän havainnot"
+          ],
+          "teacher": {
+            "time": "Ohjausliikkeet ja säännöt 15 min, kiertopisteet 50 min, koonti 10 min. Kahdella dronella ehtii noin neljän opiskelijan ryhmä lentää pistettä kohti.",
+            "prep": "Lue laitteen käyttöohje ja turvallisuusohje. Valmistaja ilmoittaa, ettei tuotetta ole tarkoitettu lapsille, eikä anna ikärajaa: käytöstä opetuksessa päättää koulu. Tarkista, kuka on rekisteröitynyt käyttäjä (operaattori) ja että tunnus on merkitty droneihin. Sovi tilan käytöstä ja kuvaamisen säännöistä. Kiinnitä potkurisuojat, lataa akut ja varmista, että lentotila on valoisa ja väljä: ahtaassa tai hämärässä tilassa drone voi menettää paikannuksen ja ajautua. Sport-tilaa ja Easy ACRO -temppuja ei käytetä, koska esteiden väistö on niissä pois päältä. Puhdista lasit käyttäjien välillä. Järjestä muulle ryhmälle rinnakkainen tehtävä."
+          },
+          "status": "hyvaksynta"
+        },
+        {
+          "title": "Tarkkuuslentokoe ja lentoradan mittaaminen",
+          "make": "Tarkkuuslaskeutumisen mittaussarja",
+          "text": "Kuinka tarkasti laskeutuminen osuu merkkiin, ja kuinka paljon tulokset vaihtelevat?",
+          "start": "Teippaa lattiaan laskeutumismerkki ja sovi ryhmässä, mistä pisteestä osumatarkkuus mitataan. Kirjoita sääntö ylös ennen ensimmäistä lentoa.",
+          "levels": {
+            "try": "Lennä lähtöpisteestä merkille ja laskeudu viisi kertaa. Mittaa jokaisen laskeutumisen etäisyys merkin keskipisteestä ja kirjaa tulokset taulukkoon.",
+            "modify": "Muuta yhtä asiaa, esimerkiksi lähtöetäisyyttä tai lentäjää, ja toista viiden laskeutumisen sarja. Pidä kaikki muu samana.",
+            "challenge": "Kuvaa lento sivusta jalustalla olevalla puhelimella ja mittaa videolta lentoaika lähdöstä laskeutumiseen. Laske dronen keskinopeus."
+          },
+          "output": "Mittaustaulukko viidestä laskeutumisesta ja niiden keskiarvo.",
+          "output_plus": "Toinen mittaussarja, jossa yksi asia on muutettu, tai videolta laskettu keskinopeus.",
+          "guides": [
+            "ahjo-drone-lentokokeet",
+            "ahjo-fpv-lento",
+            "tvt-videoanalyysi"
+          ],
+          "needs": [
+            "kameradrone potkurisuojineen ja ohjain",
+            "ladatut akut",
+            "mittanauha",
+            "maalarinteippi",
+            "puhelin ja jalusta videointiin",
+            "suojalasit turvavastaavalle"
+          ],
+          "safety": [
+            "drone-fpv",
+            "drone-lentoalue",
+            "drone-hatapysaytys",
+            "drone-yksityisyys"
+          ],
+          "safety_note": "Videolle kuvataan vain lentoalue ja drone. Ketään ei kuvata ilman lupaa, eikä videoita julkaista.",
+          "starters": [
+            "lentopoytakirja"
+          ],
+          "wait": "Kun drone on toisella ryhmällä, mittaa ja kirjaa heidän laskeutumisensa tai syötä omat tuloksesi taulukkoon.",
+          "peer": "Toinen ryhmä mittaa yhden laskeutumisenne. Saatteko saman tuloksen?",
+          "goal": "Toistat mittauksen ja kuvaat tulosten vaihtelun keskiarvolla ja vaihteluvälillä.",
+          "diary": [
+            "mittaussääntö ja koejärjestely",
+            "mittaustaulukko",
+            "suurin virhelähde ja miten pienentäisit sitä"
+          ],
+          "teacher": {
+            "time": "Koejärjestely ja mittaussääntö 15 min, mittaussarjat kiertopisteissä 45 min, tulosten kirjaus ja koonti 15 min.",
+            "prep": "Rajaa kaksi lentoaluetta, jos tila riittää. Varaa mittanauhat ja jalusta. Muistuta kuvaamisen säännöistä. Muu ryhmä voi mitata Air:bit-leijuntoja tai analysoida aiempaa dataa."
+          },
+          "status": "hyvaksynta"
+        },
+        {
+          "title": "Lentovideon ja mittausdatan analysointi Pythonilla",
+          "make": "Kuvaaja omasta mittausdatasta",
+          "text": "Mittaukset taulukosta Pythoniin: keskiarvo, hajonta ja kuvaaja, josta johtopäätös näkyy.",
+          "start": "Aja valmis Python-ohjelma esimerkkiaineistolla ja katso, minkä kuvaajan se piirtää. Vaihda sitten tilalle oman ryhmäsi mittaustiedosto.",
+          "levels": {
+            "try": "Lue ryhmäsi mittaukset tiedostosta, laske keskiarvo ja keskihajonta ja piirrä kuvaaja, jossa näkyvät kaikki mittaukset ja keskiarvo.",
+            "modify": "Vertaa kahta mittaussarjaa samassa kuvaajassa ja kirjoita yksi lause siitä, onko ero suurempi kuin mittausten vaihtelu.",
+            "challenge": "Mittaa videolta dronen paikka muutamasta kuvasta ja laske nopeus eri hetkillä. Vertaa tulosta sekuntikellolla saatuun keskinopeuteen."
+          },
+          "output": "Kuvaaja omasta mittausdatasta sekä keskiarvo ja keskihajonta.",
+          "output_plus": "Kahden mittaussarjan vertailu tai videolta mitattu nopeus.",
+          "guides": [
+            "ahjo-drone-data",
+            "tvt-kuvaaja"
+          ],
+          "needs": [
+            "oma tietokone, jossa on Python",
+            "ryhmän mittaustiedostot",
+            "aiemmin kuvattu lentovideo"
+          ],
+          "safety": [],
+          "safety_note": "Tällä tunnilla ei lennätetä. Käytä vain videoita, joissa näkyy lentoalue ja drone, ei ihmisiä. Älä jaa tai julkaise niitä, ja poista ne koneeltasi, kun työ on valmis.",
+          "starters": [
+            "lentoanalyysi",
+            "lentodata-esimerkki"
+          ],
+          "wait": "Jos kone on varattu, tarkista mittaustaulukkosi: onko jokaisella luvulla yksikkö ja onko poikkeavat arvot merkitty?",
+          "peer": "Näytä kuvaajasi parille ilman selitystä. Mitä hän päättelee siitä?",
+          "goal": "Käsittelet mittausdataa Pythonilla ja perustelet johtopäätöksen kuvaajalla.",
+          "diary": [
+            "kuvaaja ja tunnusluvut",
+            "johtopäätös yhdellä lauseella",
+            "mitä mittaisit toisin"
+          ],
+          "teacher": {
+            "time": "Valmis ohjelma ja esimerkkiaineisto 15 min, oma data ja kuvaaja 35 min, vertailu tai video 15 min, koonti 10 min.",
+            "prep": "Analyysi tehdään opiskelijoiden omilla tietokoneilla: pyydä asentamaan Python ja kuvaajakirjasto ennen tuntia ja kokeile aloitusohjelma itse. Kokoa ryhmien mittaustiedostot yhteen kansioon. Videoanalyysi vaatii videon, jossa kamera pysyy paikallaan ja mittakaava näkyy kuvassa."
+          },
+          "status": "valmis"
+        },
+        {
+          "title": "Dronen säätötekniikka ja lentokokeiden vertailu",
+          "make": "Säätökokeen raportti",
+          "text": "Takaisinkytkentä: anturi mittaa, ohjelma vertaa ja moottorit korjaavat. Kootaan lentokokeiden tulokset.",
+          "start": "Pidä dronea kädessä ilman potkureita ja kallista sitä hitaasti. Katso moottoritestin tai näytön avulla, mihin suuntaan ohjelma yrittää korjata.",
+          "levels": {
+            "try": "Piirrä dronen säätöpiiri lohkokaaviona: tavoiteasento, anturit, säädin, moottorit ja drone. Liitä kaavioon ryhmäsi vakauskokeen tulokset.",
+            "modify": "Vertaa vähintään kahden ryhmän vakaustuloksia ja selitä, mistä erot voivat johtua: dronesta, akusta, lentäjästä vai mittaustavasta.",
+            "challenge": "Tee toinen säätökoe eri arvolla kuin tunnilla 8 ja piirrä tulokset samaan kuvaajaan aiempien kanssa. Millä arvolla leijunta oli vakain?"
+          },
+          "output": "Lohkokaavio dronen säätöpiiristä ja yhteenveto vakauskokeen tuloksista.",
+          "output_plus": "Kuvaaja, jossa vertaillaan vähintään kahta säätöarvoa.",
+          "guides": [
+            "ahjo-airbit-ohjaus",
+            "ahjo-drone-lentokokeet",
+            "ahjo-drone-data"
+          ],
+          "needs": [
+            "Air:bit 2 ja ohjain",
+            "tietokone",
+            "aiemmat mittaustulokset",
+            "ladatut akut ja suojalasit, jos lennetään"
+          ],
+          "safety": [
+            "drone-potkurit",
+            "drone-akut",
+            "drone-lentoalue",
+            "drone-hatapysaytys"
+          ],
+          "safety_note": "Kädessä pidettävä koe tehdään aina ilman potkureita. Lentokokeessa noudatetaan samoja rajoja kuin tunnilla 8.",
+          "starters": [
+            "lentoanalyysi"
+          ],
+          "wait": "Jos drone on varattu, viimeistele lohkokaavio ja kirjoita tulosten yhteenveto.",
+          "peer": "Selitä lohkokaaviosi parille sormella seuraten yksi kierros: mitä tapahtuu, kun tuuli kallistaa dronea?",
+          "goal": "Kuvaat dronen vakautuksen takaisinkytkentänä ja vertailet koetuloksia.",
+          "diary": [
+            "lohkokaavio",
+            "tulosten yhteenveto ja kuvaaja",
+            "idea omaan projektiin"
+          ],
+          "teacher": {
+            "time": "Kädessä pidettävä koe 10 min, lohkokaavio 25 min, tulosten vertailu tai toinen säätökoe 30 min, koonti 10 min.",
+            "prep": "Kokoa ryhmien vakaustulokset yhteen taulukkoon. Päätä, lennetäänkö tällä kerralla. Esittele lopuksi projektipankki seuraavaa kertaa varten."
+          },
+          "status": "hyvaksynta"
+        },
+        {
+          "title": "Oman projektin ideointi ja suunnittelu",
+          "make": "Projektisuunnitelma",
+          "text": "Valitaan aihe projektipankista tai oma idea ja kirjoitetaan suunnitelma, jonka onnistumisen voi mitata.",
+          "start": "Lue projektipankin kortit ja valitse kaksi kiinnostavinta. Kirjoita kummastakin yksi kysymys, johon projekti vastaisi.",
+          "levels": {
+            "try": "Kirjoita ryhmän projektisuunnitelma: tutkimuskysymys tai ongelma, tarvittavat laitteet, työvaiheet, mitattava onnistumiskriteeri ja turvallisuus. Hyväksytä suunnitelma opettajalla.",
+            "modify": "Lisää suunnitelmaan varasuunnitelma: mitä teette, jos laite on varattu tai ensimmäinen ratkaisu ei toimi?",
+            "challenge": "Ehdota omaa projektia, jota pankissa ei ole. Perustele, miksi se onnistuu koulun laitteilla ja miten sen onnistuminen mitataan."
+          },
+          "output": "Opettajan hyväksymä projektisuunnitelma, jossa on mitattava onnistumiskriteeri.",
+          "output_plus": "Varasuunnitelma tai oma, perusteltu projekti-idea.",
+          "guides": [
+            "ahjo-projektipaivakirja"
+          ],
+          "needs": [
+            "projektipankki",
+            "projektipäiväkirja",
+            "tietokone"
+          ],
+          "safety": [
+            "drone-saannot"
+          ],
+          "safety_note": "Projektia, jossa lennetään, ei aloiteta ennen kuin opettaja on hyväksynyt suunnitelman turvallisuusosan.",
+          "starters": [
+            "testisuunnitelma"
+          ],
+          "peer": "Esittele suunnitelma toiselle ryhmälle kahdessa minuutissa. He kysyvät: mistä tiedätte, että onnistuitte?",
+          "goal": "Rajaat projektin, jonka onnistumisen voi mitata.",
+          "diary": [
+            "projektisuunnitelma",
+            "onnistumiskriteeri",
+            "työnjako ja aikataulu kolmelle kerralle"
+          ],
+          "teacher": {
+            "time": "Projektipankki 15 min, suunnitelma 40 min, esittely toiselle ryhmälle 10 min, hyväksynnät 10 min.",
+            "prep": "Tarkista, mitkä projektit onnistuvat nykyisellä kalustolla ja mitkä vaativat lisähankinnan. Varaa aikaa suunnitelmien hyväksymiseen ja laitteiden varauslistan tekemiseen."
+          },
+          "status": "valmis"
+        },
+        {
+          "title": "Projektin rakentaminen ja ohjelmointi",
+          "make": "Ensimmäinen toimiva versio",
+          "text": "Projekti rakennetaan tai ohjelmoidaan niin pitkälle, että sitä voi kokeilla.",
+          "start": "Lue suunnitelmasta tämän kerran tavoite ja jaa työt. Jokaisella ryhmän jäsenellä on tehtävä ensimmäisen viiden minuutin aikana.",
+          "levels": {
+            "try": "Rakenna tai ohjelmoi projektin ensimmäinen versio ja tee sillä yksi koe, vaikka kaikki ei vielä toimisi. Kirjaa, mitä tapahtui.",
+            "modify": "Paranna yhtä asiaa ensimmäisen kokeen perusteella ja kirjaa, mitä muutit ja miksi.",
+            "challenge": "Valmistele mittaus seuraavaa kertaa varten: tee mittaustaulukko ja päätä, montako toistoa tarvitaan."
+          },
+          "output": "Projektin ensimmäinen versio ja kirjaus ensimmäisestä kokeesta.",
+          "output_plus": "Yksi perusteltu parannus tai valmis mittaussuunnitelma.",
+          "guides": [
+            "ahjo-projektipaivakirja",
+            "ahjo-drone-lentokokeet"
+          ],
+          "needs": [
+            "projektisuunnitelman mukaiset laitteet",
+            "projektipäiväkirja",
+            "ladatut akut, jos lennetään"
+          ],
+          "safety": [
+            "drone-potkurit",
+            "drone-akut",
+            "drone-lentoalue",
+            "drone-hatapysaytys"
+          ],
+          "safety_note": "Noudata suunnitelmasi turvallisuusosaa. Jos suunnitelma muuttuu niin, että lennetään eri tavalla, pyydä uusi hyväksyntä.",
+          "wait": "Jos tarvitsemasi laite on varattu, tee projektin toista osaa: mittaustaulukkoa, 3D-mallia tai dokumentointia.",
+          "peer": "Näytä keskeneräinen työsi toiselle ryhmälle ja kysy yksi kysymys, johon tarvitset apua.",
+          "goal": "Toteutat suunnitelmasi ensimmäisen version ja kokeilet sitä.",
+          "diary": [
+            "mitä tehtiin ja kuka teki",
+            "ensimmäisen kokeen tulos",
+            "seuraavan kerran tavoite"
+          ],
+          "teacher": {
+            "time": "Työnjako 5 min, rakentaminen ja ohjelmointi 55 min, päiväkirja ja siivous 15 min.",
+            "prep": "Tee laitteiden varauslista ryhmien suunnitelmista. Lataa akut. Sovi, missä lentävät ryhmät työskentelevät ja milloin."
+          },
+          "status": "hyvaksynta"
+        },
+        {
+          "title": "Projektin testaaminen ja parantaminen",
+          "make": "Mittaustulokset ja parannettu versio",
+          "text": "Projekti testataan mittaamalla, sitä parannetaan ja se testataan uudelleen.",
+          "start": "Lue onnistumiskriteerisi ääneen ja tee heti yksi mittaus, joka kertoo, kuinka kaukana siitä olette.",
+          "levels": {
+            "try": "Tee suunniteltu mittaussarja, kirjaa tulokset ja vertaa niitä onnistumiskriteeriin. Tee yksi muutos ja mittaa uudelleen.",
+            "modify": "Piirrä tuloksista kuvaaja ennen ja jälkeen muutoksen ja kirjoita, paransiko muutos tulosta.",
+            "challenge": "Arvioi mittaustesi suurin virhelähde ja ehdota, miten sitä voisi pienentää."
+          },
+          "output": "Mittaustulokset ennen ja jälkeen yhden muutoksen. Myös epäonnistunut muutos hyväksytään, kun se on mitattu ja perusteltu.",
+          "output_plus": "Kuvaaja tuloksista tai virhelähteiden arvio.",
+          "guides": [
+            "ahjo-drone-lentokokeet",
+            "ahjo-drone-data",
+            "ahjo-projektipaivakirja"
+          ],
+          "needs": [
+            "projektin laitteet",
+            "mittausvälineet",
+            "tietokone",
+            "ladatut akut, jos lennetään"
+          ],
+          "safety": [
+            "drone-potkurit",
+            "drone-akut",
+            "drone-lentoalue",
+            "drone-hatapysaytys"
+          ],
+          "safety_note": "Muutettu drone tai ohjelma testataan ensin ilman potkureita tai matalalla, kuten aiemmilla tunneilla.",
+          "starters": [
+            "lentopoytakirja",
+            "lentoanalyysi"
+          ],
+          "wait": "Jos laite on varattu, käsittele jo kerätty data ja aloita esityksen kokoaminen.",
+          "peer": "Toinen ryhmä toistaa yhden mittauksenne. Mistä ero heidän ja teidän tuloksenne välillä johtuu?",
+          "goal": "Testaat ratkaisusi mittaamalla ja parannat sitä tulosten perusteella.",
+          "diary": [
+            "mittaustulokset ja kuvaaja",
+            "tehty muutos ja sen vaikutus",
+            "mitä tekisit, jos aikaa olisi lisää"
+          ],
+          "teacher": {
+            "time": "Ensimmäinen mittaus 10 min, mittaussarja 25 min, muutos ja uusi mittaus 25 min, päiväkirja 15 min.",
+            "prep": "Varaa mittausvälineet ja lentovuorot. Muistuta, että arvioinnissa painaa mitattu ja perusteltu kehittäminen, ei pelkkä toimiva lopputulos."
+          },
+          "status": "hyvaksynta"
+        },
+        {
+          "title": "Drone Challenge, esittely ja itsearviointi",
+          "make": "Projektin esittely",
+          "text": "Projektit esitellään, yhteinen Drone Challenge lennetään ja oma työ arvioidaan.",
+          "start": "Aseta projektisi esille ja kirjoita kortille yksi lause: mitä tutkitte tai ratkaisitte ja mikä oli tärkein tulos.",
+          "levels": {
+            "try": "Esittele projekti: ongelma, ratkaisu, mittaustulokset ja mitä opit. Vastaa yhteen kysymykseen ja täytä itsearviointi.",
+            "modify": "Osallistu Drone Challengeen ryhmäsi kanssa valitsemassanne roolissa ja kirjaa ryhmän tulos.",
+            "challenge": "Kirjoita jatkokehitysehdotus: mitä seuraava ryhmä voisi tehdä projektillasi?"
+          },
+          "output": "Esitelty projekti, valmis projektipäiväkirja ja itsearviointi.",
+          "output_plus": "Drone Challengen tulos tai jatkokehitysehdotus.",
+          "guides": [
+            "ahjo-projektipaivakirja",
+            "ahjo-drone-perehdytys"
+          ],
+          "needs": [
+            "projekti ja sen tulokset",
+            "projektipäiväkirja",
+            "itsearviointilomake",
+            "Drone Challengen rata ja laitteet"
+          ],
+          "safety": [
+            "drone-fpv",
+            "drone-lentoalue",
+            "drone-hatapysaytys",
+            "drone-yksityisyys"
+          ],
+          "safety_note": "Drone Challengessa on katsojia: he pysyvät turvarajan takana, ja jokaisella lennolla on nimetty tähystäjä ja turvavastaava.",
+          "peer": "Anna jokaiselle esitykselle yksi kysymys tai kehu kortilla.",
+          "goal": "Esittelet projektisi tulokset ja arvioit omaa työskentelyäsi.",
+          "diary": [
+            "esityksen pääkohdat",
+            "saatu palaute",
+            "itsearviointi"
+          ],
+          "teacher": {
+            "time": "Näyttely ja esittelyt 35 min, Drone Challenge 25 min, itsearviointi ja palaute 15 min.",
+            "prep": "Rakenna Drone Challengen rata ja rajaa katsojien alue. Tulosta itsearviointilomakkeet. Päätä, mitkä tehtävät radalla lennetään: tarkkuuslaskeutuminen onnistuu kaikilta, esterata vaatii enemmän lentokokemusta."
+          },
+          "status": "hyvaksynta",
+          "final": true
+        }
+      ],
+      "final": {
+        "title": "Drone Challenge",
+        "text": "Opintojakson päätteeksi jokainen ryhmä esittelee oman projektinsa ja osallistuu yhteiseen Drone Challengeen. Tehtävät valitaan niin, että jokainen ryhmä voi onnistua omalla tasollaan.",
+        "options": [
+          [
+            "Tarkkuuslaskeutuminen",
+            "Viisi laskeutumista merkille. Tulos on etäisyyksien keskiarvo, ei paras yksittäinen osuma."
+          ],
+          [
+            "Esterata",
+            "Kierros merkityn radan läpi tähystäjän ohjeilla. Tulos on aika ja kosketusten määrä."
+          ],
+          [
+            "Vakain leijunta",
+            "Air:bit pysyy merkityn alueen sisällä mahdollisimman pitkään."
+          ],
+          [
+            "Paras mittaus",
+            "Ryhmä esittää mittaustuloksen, jonka luotettavuuden se osaa perustella."
+          ]
+        ],
+        "own": "Oman tehtävän voi ehdottaa, kun opettaja on hyväksynyt sen säännöt ja turvallisuuden."
+      },
+      "plan_status": "draft",
+      "assessment": {
+        "lead": "Arvio perustuu tuntien tuotoksiin, projektipäiväkirjaan, projektiin ja opettajan havaintoihin. Arvioinnissa huomioidaan:",
+        "items": [
+          "turvallinen ja vastuullinen toiminta kaikissa rooleissa",
+          "ohjelmoinnin ja teknisen toteutuksen ymmärtäminen",
+          "suunnitelmallinen kokeellinen työskentely",
+          "mittaustulosten analysointi ja johtopäätösten perustelu",
+          "kehittäminen palautteen ja mittausten perusteella",
+          "projektin dokumentointi",
+          "ryhmätyötaidot ja itsearviointi"
+        ],
+        "note": "Hyvä lentotaito ei yksin ratkaise arviointia. Myös epäonnistunut prototyyppi voi osoittaa erinomaista osaamista, kun työ on suunnitelmallista, testattua ja perustellusti dokumentoitua. Laajuus 2 op on alustava ehdotus, kunnes opintojakso on hyväksytty."
+      }
     }
   ],
   "categories": [
@@ -1613,6 +2422,66 @@
       "subjects": [
         "lukiodiplomit"
       ]
+    },
+    {
+      "id": "ahjo-drone-perehdytys",
+      "category": "turvallisuus",
+      "title": "Dronelabran turvallisuusperehdytys",
+      "text": "Potkurit, akut, lentoalue, roolit, hätäpysäytys, FPV-lento ja lennättämisen säännöt ennen ensimmäistä lentoa.",
+      "status": "draft",
+      "courses": [
+        "DRONELABRA"
+      ]
+    },
+    {
+      "id": "ahjo-airbit-kokoaminen",
+      "category": "robotiikka",
+      "title": "Air:bit 2:n kokoaminen ja toimintakokeet",
+      "text": "Rakennussarjan osat, kokoaminen, akun lataus ja käynnistystesti ilman potkureita.",
+      "status": "draft",
+      "courses": [
+        "DRONELABRA"
+      ]
+    },
+    {
+      "id": "ahjo-airbit-ohjaus",
+      "category": "robotiikka",
+      "title": "Air:bit 2:n radio-ohjain ja ohjausohjelma",
+      "text": "micro:bit radio-ohjaimena MakeCodessa ja dronen ohjausohjelman lukeminen: anturit, säätö ja moottorit.",
+      "status": "draft",
+      "courses": [
+        "DRONELABRA"
+      ]
+    },
+    {
+      "id": "ahjo-drone-lentokokeet",
+      "category": "robotiikka",
+      "title": "Lentokokeet ja mittaaminen",
+      "text": "Lentopöytäkirja, leijunnan ja laskeutumisen mittaaminen, toistot ja virhelähteet.",
+      "status": "draft",
+      "courses": [
+        "DRONELABRA"
+      ]
+    },
+    {
+      "id": "ahjo-fpv-lento",
+      "category": "robotiikka",
+      "title": "FPV-lento laseilla ja liikeohjaimella",
+      "text": "Kameradronen lennättäminen laseilla: ohjaimen toiminnot, tähystäjän tehtävä ja kiertopisteen kulku.",
+      "status": "draft",
+      "courses": [
+        "DRONELABRA"
+      ]
+    },
+    {
+      "id": "ahjo-drone-data",
+      "category": "robotiikka",
+      "title": "Lentodatan analysointi Pythonilla",
+      "text": "Mittaukset tiedostosta Pythoniin: keskiarvo, keskihajonta, kuvaaja ja nopeus videolta.",
+      "status": "draft",
+      "courses": [
+        "DRONELABRA"
+      ]
     }
   ],
   "equipment_status": "tuleva",
@@ -1766,6 +2635,46 @@
       "id": "onnettomuus",
       "title": "Toiminta onnettomuus- ja vaaratilanteissa",
       "covers": "Ensiapu, hälytys, laitteiden pysäyttäminen ja tilanteesta ilmoittaminen."
+    },
+    {
+      "id": "drone-potkurit",
+      "title": "Dronet: potkurit ja moottorit",
+      "covers": "Milloin potkurit saa kiinnittää, moottorien kokeilu ilman potkureita, suojalasit, etäisyys pyöriviin potkureihin ja potkurisuojien käyttö."
+    },
+    {
+      "id": "drone-akut",
+      "title": "Dronet: akkujen lataus ja säilytys",
+      "covers": "Litiumakkujen lataus valvottuna, vaurioituneen tai turvonneen akun käsittely, säilytys, kuljetus ja toiminta akun kuumetessa tai savutessa."
+    },
+    {
+      "id": "drone-tarkastus",
+      "title": "Dronet: lentoa edeltävä tarkastus",
+      "covers": "Tarkistuslista ennen jokaista lentoa: runko, potkurit, akku, ohjaimen yhteys, kalibrointi tasaisella alustalla ja lentoalue."
+    },
+    {
+      "id": "drone-lentoalue",
+      "title": "Dronet: lentoalue ja roolit",
+      "covers": "Lentoalueen rajaaminen ja turvaraja, katsojien paikka, lentäjän, tähystäjän ja turvavastaavan tehtävät sekä kuinka monta dronea saa olla ilmassa."
+    },
+    {
+      "id": "drone-hatapysaytys",
+      "title": "Dronet: hätäpysäytys ja poikkeustilanteet",
+      "covers": "Miten kukin drone pysäytetään hätätilanteessa, yhteiset huudot, toiminta törmäyksen tai yhteyden katkeamisen jälkeen ja vahingoista ilmoittaminen."
+    },
+    {
+      "id": "drone-fpv",
+      "title": "Dronet: FPV-lento ja tähystäjä",
+      "covers": "Lasien käyttö, tähystäjän paikka ja tehtävä, sallitut lentotilat, tauot ja pahoinvointi, lasien puhdistus ja ketkä eivät voi käyttää laseja."
+    },
+    {
+      "id": "drone-saannot",
+      "title": "Dronet: säännöt sisällä ja ulkona",
+      "covers": "Mitä koulun tiloissa saa lennättää ja kenen luvalla, mitä ulkona lennättäminen vaatii (rekisteröityminen, tunnus, ilmatilavyöhykkeet, dronen luokka) ja kuka vastaa lennosta."
+    },
+    {
+      "id": "drone-yksityisyys",
+      "title": "Dronet: kuvaaminen ja yksityisyys",
+      "covers": "Mitä dronen kameralla saa kuvata, kuvaamisen luvat, tallenteiden säilytys ja poistaminen sekä julkaisemisen säännöt koulussa."
     }
   ],
   "projects": [
@@ -2321,6 +3230,320 @@
           "url": "https://www.teachengineering.org/activities/cub-2825-creative-engineering-electric-vehicle-design"
         }
       ]
+    },
+    {
+      "id": "drone-tarkkuuslaskeutuminen",
+      "status": "ehdotus",
+      "title": "Tarkkuuslaskeutuminen",
+      "art": "dronelabra-10",
+      "need": "hyvaksynta",
+      "summary": "Kuinka tarkasti drone laskeutuu merkille, ja mikä tarkkuuteen vaikuttaa?",
+      "problem": "Tutkimuskysymys: miten lähtöetäisyys, lentäjä tai ohjaustapa vaikuttaa siihen, kuinka kauas merkin keskipisteestä drone laskeutuu?",
+      "skills": [
+        "koejärjestelyn suunnittelu",
+        "toistomittaukset",
+        "keskiarvo ja hajonta",
+        "virhelähteiden arviointi"
+      ],
+      "materials": [
+        "kameradrone tai Air:bit 2",
+        "teipattu laskeutumismerkki",
+        "mittanauha",
+        "lentopöytäkirja"
+      ],
+      "steps": [
+        "Päätä, mitä yhtä asiaa muutat ja mitä pidät samana.",
+        "Tee vähintään viisi laskeutumista kummallakin asetuksella.",
+        "Mittaa etäisyys merkin keskipisteestä aina samalla säännöllä.",
+        "Laske keskiarvot ja hajonnat ja piirrä kuvaaja."
+      ],
+      "success": "Kaksi vähintään viiden laskeutumisen sarjaa on mitattu, ja ryhmä perustelee keskiarvojen ja hajonnan avulla, onko sarjojen välillä eroa.",
+      "next": "Laskeutuminen liikkuvalle tai korotetulle alustalle. Tulosten vertailu toisen ryhmän kanssa samalla mittaussäännöllä.",
+      "safety": "Rajattu lentoalue, lento matalalla, tähystäjä ja turvavastaava jokaisella lennolla. Laskeutumista ei mitata ennen kuin potkurit ovat pysähtyneet.",
+      "level": 1,
+      "lessons": 3,
+      "courses": [
+        "DRONELABRA"
+      ],
+      "subjects": [
+        "fysiikka",
+        "matematiikka"
+      ]
+    },
+    {
+      "id": "drone-esterata",
+      "status": "ehdotus",
+      "title": "FPV-esterata",
+      "art": "dronelabra-16",
+      "need": "hyvaksynta",
+      "summary": "Suunnittele rata ja tutki, miten lentäjän ja tähystäjän yhteistyö vaikuttaa aikaan ja virheisiin.",
+      "problem": "Tutkimuskysymys: lyheneekö rata-aika ja väheneekö kosketusten määrä, kun sama lentäjä lentää radan useita kertoja tai kun tähystäjän ohjeet sovitaan etukäteen?",
+      "skills": [
+        "radan suunnittelu ja mitoitus",
+        "roolityöskentely ja viestintä",
+        "ajanotto ja virheiden kirjaus",
+        "oppimiskäyrän piirtäminen"
+      ],
+      "materials": [
+        "kameradrone potkurisuojineen",
+        "FPV-lasit ja liikeohjain",
+        "pahviportit tai merkkikartiot",
+        "sekuntikello"
+      ],
+      "steps": [
+        "Piirrä rata mittoineen ja hyväksytä se opettajalla.",
+        "Sopikaa tähystäjän ohjeet ja pysäytyskäsky.",
+        "Lentäkää rata vähintään viisi kertaa ja kirjatkaa aika ja kosketukset.",
+        "Piirtäkää kuvaaja ajasta kierroksen funktiona."
+      ],
+      "success": "Rata on lennetty vähintään viisi kertaa, jokaisesta kierroksesta on aika ja kosketusten määrä, ja ryhmä kuvaa kehityksen kuvaajalla.",
+      "next": "Kahden eri reitin vertailu. Radan osien 3D-tulostus tai pahvirakenteet.",
+      "safety": "Vain Normal-tila ja potkurisuojat. Tähystäjä lentäjän vieressä koko ajan. Portit kevyestä materiaalista. Kukaan ei ole radalla lennon aikana.",
+      "level": 2,
+      "lessons": 3,
+      "courses": [
+        "DRONELABRA"
+      ],
+      "subjects": [
+        "fysiikka",
+        "liikunta"
+      ]
+    },
+    {
+      "id": "drone-ohjainohjelma",
+      "status": "ehdotus",
+      "title": "Air:bitin oma ohjainohjelma",
+      "art": "dronelabra-5",
+      "need": "valmis",
+      "summary": "Kehitä micro:bit-ohjaimeen ominaisuus, joka tekee lentämisestä helpompaa tai turvallisempaa.",
+      "problem": "Ongelma: perusohjaimella kaasun säätö on karkeaa ja ohjaimen tila näkyy huonosti. Millainen muutos parantaa ohjattavuutta, ja miten sen voi osoittaa?",
+      "skills": [
+        "MakeCode-ohjelmointi",
+        "radioviestit",
+        "käyttöliittymän suunnittelu",
+        "testaus ennen lentoa"
+      ],
+      "materials": [
+        "kaksi micro:bitiä",
+        "tietokone ja MakeCode",
+        "Air:bit 2 testaukseen"
+      ],
+      "steps": [
+        "Valitse yksi parannus, esimerkiksi kaasun hienosäätö, tilanäyttö tai äänimerkki.",
+        "Ohjelmoi muutos ja testaa se vastaanottavalla micro:bitillä pöydällä.",
+        "Testaa dronella ilman potkureita.",
+        "Vertaa vanhaa ja uutta ohjainta samalla lentotehtävällä."
+      ],
+      "success": "Muutos toimii pöytätestissä ja ilman potkureita, ja vähintään kolme käyttäjää on kokeillut kumpaakin ohjainta samalla tehtävällä ja tulokset on kirjattu.",
+      "next": "Kääntöohjaus kosketusnapeilla valmistajan lisätehtävän tapaan. Ohjain, joka näyttää dronen akun tilan.",
+      "safety": "Ohjelma testataan aina ensin ilman potkureita. Käynnistysvarmistus ja ravistuspysäytys säilyvät ohjelmassa.",
+      "level": 2,
+      "lessons": 3,
+      "courses": [
+        "DRONELABRA"
+      ],
+      "subjects": [
+        "tietotekniikka"
+      ]
+    },
+    {
+      "id": "drone-lentovakaus",
+      "status": "ehdotus",
+      "title": "Lentovakauden tutkimus",
+      "art": "dronelabra-8",
+      "need": "hyvaksynta",
+      "summary": "Tutki mittaamalla, mikä saa Air:bitin leijumaan vakaammin.",
+      "problem": "Tutkimuskysymys: miten yksi muutos, esimerkiksi säätöarvo, akun varaus tai massan paikka, vaikuttaa siihen, kuinka paljon drone ajautuu leijunnassa?",
+      "skills": [
+        "vertailukokeen suunnittelu",
+        "takaisinkytkennän ymmärtäminen",
+        "mittausten toisto",
+        "tulosten esittäminen kuvaajana"
+      ],
+      "materials": [
+        "Air:bit 2 ja ohjain",
+        "tietokone ja MakeCode",
+        "mittanauha ja sekuntikello",
+        "teipattu lähtöpiste"
+      ],
+      "steps": [
+        "Valitse yksi muutettava asia ja kirjaa alkuperäinen tilanne.",
+        "Mittaa ajautuminen vähintään kolmella leijunnalla ennen muutosta.",
+        "Tee muutos pienin askelin ja testaa ensin ilman potkureita.",
+        "Toista mittaukset ja vertaa tuloksia."
+      ],
+      "success": "Ajautuminen on mitattu vähintään kolmesti ennen ja jälkeen muutoksen samalla tavalla, ja johtopäätös perustellaan keskiarvoilla ja vaihteluvälillä.",
+      "next": "Useamman arvon mittaussarja ja kuvaaja. Leijunnan kuvaaminen ylhäältä ja ajautumisen mittaaminen videolta.",
+      "safety": "Säätöarvoja muutetaan vain opettajan hyväksymissä rajoissa, yksi kerrallaan. Alkuperäinen ohjelma on tallessa. Lento matalalla pehmeän alustan päällä.",
+      "level": 3,
+      "lessons": 4,
+      "courses": [
+        "DRONELABRA"
+      ],
+      "subjects": [
+        "fysiikka",
+        "matematiikka"
+      ]
+    },
+    {
+      "id": "drone-3d-osa",
+      "status": "ehdotus",
+      "title": "3D-mallinnettu osa tai laskeutumisalusta",
+      "art": "3d",
+      "need": "valmis",
+      "summary": "Suunnittele ja tulosta droneen tai lentoalueelle osa, joka ratkaisee todellisen ongelman.",
+      "problem": "Ongelma: dronen säilytys, laskeutuminen tai mittaaminen kaipaa apuvälinettä. Millainen osa ratkaisee ongelman, ja paljonko se saa painaa?",
+      "skills": [
+        "mittaaminen ja 3D-mallinnus",
+        "3D-tulostus",
+        "massan vaikutuksen arviointi",
+        "sovituksen testaus ja korjaus"
+      ],
+      "materials": [
+        "CAD-ohjelma",
+        "3D-tulostin ja filamentti",
+        "työntömitta",
+        "vaaka"
+      ],
+      "steps": [
+        "Mittaa kohde ja piirrä luonnos mittoineen.",
+        "Mallinna osa ja tulosta ensimmäinen versio.",
+        "Testaa sovitus, punnitse osa ja kirjaa puutteet.",
+        "Korjaa malli ja tulosta toinen versio."
+      ],
+      "success": "Osa täyttää ryhmän asettaman mittavaatimuksen (esimerkiksi sovitus tai suurin massa), ja muutos ensimmäisestä versiosta toiseen on perusteltu mittauksella.",
+      "next": "Laskeutumisalusta, jossa on mittausasteikko. Oman rungon suunnittelu valmistajan julkaisemien mittapiirrosten pohjalta.",
+      "safety": "Droneen kiinnitettävä osa ei saa osua potkureihin eikä peittää antureita. Opettaja tarkastaa osan ennen lentoa, ja ensimmäinen lento sen kanssa tehdään matalalla.",
+      "level": 2,
+      "lessons": 4,
+      "courses": [
+        "DRONELABRA",
+        "AHJO1"
+      ],
+      "subjects": [
+        "fysiikka",
+        "kuvataide"
+      ]
+    },
+    {
+      "id": "drone-videoanalyysi",
+      "status": "ehdotus",
+      "title": "Lentovideon analyysi Pythonilla",
+      "art": "dronelabra-11",
+      "need": "valmis",
+      "summary": "Mittaa dronen liike videolta ja laske nopeus ja kiihtyvyys.",
+      "problem": "Tutkimuskysymys: millainen on dronen nopeus nousun, vaakalennon tai jarrutuksen aikana, ja kuinka tarkasti sen voi mitata videolta?",
+      "skills": [
+        "videon kuvaaminen mittausta varten",
+        "paikan mittaaminen kuvista",
+        "nopeuden laskeminen datasta",
+        "Python ja kuvaajat"
+      ],
+      "materials": [
+        "puhelin ja jalusta",
+        "mittakaava kuvaan (esimerkiksi metrin mitta)",
+        "oma tietokone, jossa on Python",
+        "aiemmin kuvattu tai uusi lentovideo"
+      ],
+      "steps": [
+        "Kuvaa lento sivusta paikallaan pysyvällä kameralla niin, että mittakaava näkyy.",
+        "Mittaa dronen paikka tasaisin aikavälein.",
+        "Laske nopeus peräkkäisistä paikoista Pythonilla.",
+        "Piirrä paikan ja nopeuden kuvaajat ja arvioi tarkkuus."
+      ],
+      "success": "Paikka on mitattu vähintään kymmenestä kuvasta, nopeuden kuvaaja on piirretty ja tulosta on verrattu sekuntikellolla ja mittanauhalla saatuun keskinopeuteen.",
+      "next": "Kiihtyvyyden arviointi jarrutuksesta. Dronen paikan tunnistaminen videolta ohjelmallisesti.",
+      "safety": "Videolle kuvataan vain lentoalue ja drone. Videoissa ei näy ihmisiä, niitä ei jaeta eikä julkaista, ja ne poistetaan, kun työ on valmis.",
+      "level": 2,
+      "lessons": 3,
+      "courses": [
+        "DRONELABRA",
+        "FY4"
+      ],
+      "subjects": [
+        "fysiikka",
+        "matematiikka",
+        "tietotekniikka"
+      ]
+    },
+    {
+      "id": "drone-laskeutumismerkki",
+      "status": "ehdotus",
+      "title": "Konenäkö tunnistaa laskeutumismerkin",
+      "art": "dronelabra-13",
+      "need": "hankinta",
+      "summary": "Raspberry Pi tunnistaa kamerakuvasta laskeutumismerkin ja kertoo, missä kohdassa kuvaa se on.",
+      "problem": "Ongelma: miten tietokone löytää kuvasta laskeutumismerkin, ja kuinka luotettavasti tunnistus toimii eri etäisyyksillä ja valaistuksessa?",
+      "skills": [
+        "Python-ohjelmointi",
+        "kuvan käsittelyn perusteet",
+        "tunnistuksen luotettavuuden testaus",
+        "tulosten taulukointi"
+      ],
+      "materials": [
+        "Raspberry Pi 5",
+        "kameramoduuli tai USB-kamera (erillinen hankinta)",
+        "tulostettu laskeutumismerkki",
+        "mittanauha"
+      ],
+      "steps": [
+        "Suunnittele selkeä merkki ja tulosta se.",
+        "Ota merkistä kuvia eri etäisyyksiltä ja eri valaistuksessa.",
+        "Ohjelmoi tunnistus ja tulosta merkin paikka kuvassa.",
+        "Testaa, kuinka monessa kuvassa tunnistus onnistuu."
+      ],
+      "success": "Ohjelma tunnistaa merkin vähintään 8 kuvasta 10:stä sovitulla etäisyydellä, ja epäonnistuneet tapaukset on kirjattu syineen.",
+      "next": "Tunnistus liikkuvasta videosta. Merkin etäisyyden arviointi sen koosta kuvassa.",
+      "safety": "Raspberry Pi ei ohjaa dronea eikä sitä kiinnitetä droneen: kamera kuvaa merkkiä pöydältä tai jalustalta. Kuvissa ei ole ihmisiä.",
+      "level": 3,
+      "lessons": 4,
+      "courses": [
+        "DRONELABRA"
+      ],
+      "subjects": [
+        "tietotekniikka",
+        "matematiikka"
+      ]
+    },
+    {
+      "id": "drone-lentoaika",
+      "status": "ehdotus",
+      "title": "Energiankulutus ja lentoaika",
+      "art": "elektroniikka",
+      "need": "hyvaksynta",
+      "summary": "Tutki, kuinka kauan drone lentää yhdellä latauksella ja mikä lentoaikaan vaikuttaa.",
+      "problem": "Tutkimuskysymys: miten lisämassa tai lentotapa vaikuttaa leijunta-aikaan, ja kuinka suuri on dronen keskimääräinen teho, kun akun energia tiedetään?",
+      "skills": [
+        "energian ja tehon laskeminen",
+        "mittaussarjan suunnittelu",
+        "akun turvallinen käsittely",
+        "tulosten vertailu valmistajan tietoihin"
+      ],
+      "materials": [
+        "Air:bit 2 tai kameradrone",
+        "täyteen ladatut akut",
+        "sekuntikello",
+        "vaaka ja pieniä lisäpainoja"
+      ],
+      "steps": [
+        "Kirjaa akun jännite ja kapasiteetti akun merkinnöistä ja laske sen energia.",
+        "Mittaa leijunta-aika täydellä akulla akun varoitukseen asti.",
+        "Toista mittaus lisämassalla tai toisella lentotavalla.",
+        "Laske keskimääräinen teho ja vertaa tuloksia."
+      ],
+      "success": "Leijunta-aika on mitattu vähintään kahdella asetuksella täydestä akusta varoitukseen, ja keskimääräinen teho on laskettu yksiköineen.",
+      "next": "Lentoajan kuvaaja lisämassan funktiona. Vertailu toiseen droneen.",
+      "safety": "Lento lopetetaan heti akun varoitukseen. Akkuja ei ladata heti lennon jälkeen eikä ilman valvontaa. Lisäpaino kiinnitetään niin, ettei se voi irrota tai osua potkureihin.",
+      "level": 2,
+      "lessons": 3,
+      "courses": [
+        "DRONELABRA",
+        "FY2"
+      ],
+      "subjects": [
+        "fysiikka",
+        "matematiikka"
+      ]
     }
   ],
   "challenges": [
@@ -2638,6 +3861,14 @@
       "categories": [
         "dokumentointi"
       ]
+    },
+    {
+      "course": "DRONELABRA",
+      "text": "Dronet: rakentaminen, ohjelmointi, lentokokeet ja turvallinen lennättäminen.",
+      "categories": [
+        "robotiikka",
+        "turvallisuus"
+      ]
     }
   ],
   "starters": [
@@ -2700,6 +3931,30 @@
       "file": "testisuunnitelma.csv",
       "title": "Testisuunnitelman pohja (CSV)",
       "note": "pohja taulukkolaskentaan"
+    },
+    {
+      "id": "airbit-ohjain",
+      "file": "airbit-ohjain.ts",
+      "title": "Air:bit-ohjaimen aloitusohjelma (MakeCode, JavaScript)",
+      "note": "testaamaton luonnos: opettaja kokeilee ilman potkureita ennen käyttöä"
+    },
+    {
+      "id": "lentopoytakirja",
+      "file": "lentopoytakirja.csv",
+      "title": "Lentopöytäkirja (CSV)",
+      "note": "pohja taulukkolaskentaan"
+    },
+    {
+      "id": "lentodata-esimerkki",
+      "file": "lentodata-esimerkki.csv",
+      "title": "Esimerkkiaineisto: kaksi laskeutumissarjaa (CSV)",
+      "note": "harjoituspohja: keksitty aineisto, ei mitattu oikealla dronella"
+    },
+    {
+      "id": "lentoanalyysi",
+      "file": "lentoanalyysi.py",
+      "title": "Mittaussarjojen analyysi (Python)",
+      "note": "testaamaton luonnos kuvaajan osalta; tunnusluvut kokeiltu esimerkkiaineistolla"
     }
   ]
 }
