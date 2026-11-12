@@ -28,7 +28,7 @@ stay in their lesson folders and keep their <id>-sim.js URLs.
 """
 import hashlib, json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status, published_exercises, WorkTree
-import ahjo, answers_shown, jaksot, kaavat, kilparobo, lumatutor, assigned, booklets, cardgrid, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, svgids, units, tablefit
+import ahjo, answers_shown, figsize, jaksot, kaavat, kilparobo, lumatutor, assigned, booklets, cardgrid, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, svgids, units, tablefit
 from i18n import t as T
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
@@ -779,8 +779,9 @@ removed = []   # lessons on the live site that this build leaves out
 def rebase(html):
     """A page of another language lives in site/<lang>/ and shares the assets of site/ (style, scripts, vendor/, the
     simulations and pictures): every relative src, href and data-base that is not a page gets the prefix ../ .
-    Every page passes here, so here a figure shown twice gets its own definition ids (svgids.py, teacher 2026-10-29)."""
-    html = svgids.namespace(html)
+    Every page passes here, so here a figure shown twice gets its own definition ids (svgids.py, teacher 2026-10-29)
+    and a figure is never drawn larger than it was designed (figsize.py, teacher 2026-11-12)."""
+    html = figsize.natural(svgids.namespace(html))
     if svgids.duplicates(html): sys.exit(f"ERROR: repeated ids on a page: {', '.join(svgids.duplicates(html))} (scripts/svgids.py)")
     if not UP: return html
     keep = lambda v: re.match(r"[a-z]+:|#|/|\.\./", v) or re.match(r"[\w.-]+\.html([#?]|$)", v)
