@@ -196,7 +196,7 @@ The tasks of the lesson start from the same idea: **a charge creates an electric
   <foreignObject x="230" y="672" width="132" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{series resistor}$</div></foreignObject>
   <foreignObject x="58" y="706" width="100" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$\eta = P/(GA)$</div></foreignObject>
   <foreignObject x="319" y="709" width="43" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{cell}$</div></foreignObject>
-  <foreignObject x="58" y="743" width="65" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$I = U/R$</div></foreignObject>
+  <foreignObject x="58" y="743" width="54" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$U = RI$</div></foreignObject>
   <foreignObject x="257" y="746" width="105" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{body current}$</div></foreignObject>
 </svg>
 
@@ -369,15 +369,13 @@ where $C$ is the capacitance ($\text{F}$), $A$ the area of a plate ($\text{m}^2$
 
 ### Components and safety
 
-```latex
-\begin{aligned}
-R &= \frac{U - U_\text{D}}{I} \\
-\eta &= \frac{P}{GA} \\
-I &= \frac{U}{R}
-\end{aligned}
+```kaavat
+R = \frac{U - U_\text{D}}{I}
+\eta = \frac{P}{GA}
+voltage drop across a conductor :: U = RI
 ```
 
-where $R$ is the series resistor of an LED ($\Omega$), $U_\text{D}$ the voltage of the LED ($\text{V}$), $P = UI$ the electric power of a solar cell at the maximum power point ($\text{W}$) and $G$ the light intensity ($\text{W/m}^2$). The last equation gives the current through the body when $U$ is the touch voltage and $R$ the resistance of the whole current path. A diode conducts only in the forward direction, when its voltage exceeds the threshold voltage. A fuse protects the cable, a residual current device the person.
+where $R$ is the series resistor of an LED ($\Omega$), $U_\text{D}$ the voltage of the LED ($\text{V}$), $P = UI$ the electric power of a solar cell at the maximum power point ($\text{W}$) and $G$ the light intensity ($\text{W/m}^2$). The last equation gives the current through the body, $I = \tfrac{U}{R}$, when $U$ is the touch voltage and $R$ the resistance of the whole current path. A diode conducts only in the forward direction, when its voltage exceeds the threshold voltage. A fuse protects the cable, a residual current device the person.
 
 ## Common mistakes {Virheet}
 

@@ -202,7 +202,7 @@ Tasavirtapiirissä lähde pitää yllä **jännitettä**. Jännite ajaa piirin l
   <foreignObject x="319" y="566" width="43" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{teho}$</div></foreignObject>
   <foreignObject x="58" y="614" width="112" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$P = RI^2 = U^2/R$</div></foreignObject>
   <foreignObject x="301" y="616" width="61" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{vastus}$</div></foreignObject>
-  <foreignObject x="58" y="664" width="50" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$E = Pt$</div></foreignObject>
+  <foreignObject x="58" y="664" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$P = W/\Delta t$</div></foreignObject>
   <foreignObject x="292" y="666" width="70" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{energia}$</div></foreignObject>
   <line x1="24" y1="734" x2="44" y2="734" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="44" y="712" width="328" height="188" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
@@ -213,7 +213,7 @@ Tasavirtapiirissä lähde pitää yllä **jännitettä**. Jännite ajaa piirin l
   <foreignObject x="257" y="770" width="105" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{napajännite}$</div></foreignObject>
   <foreignObject x="58" y="819" width="102" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$I = E/(R + R_\text{s})$</div></foreignObject>
   <foreignObject x="310" y="820" width="52" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{virta}$</div></foreignObject>
-  <foreignObject x="58" y="868" width="50" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$Q = It$</div></foreignObject>
+  <foreignObject x="58" y="869" width="74" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$I = \Delta Q/\Delta t$</div></foreignObject>
   <foreignObject x="248" y="870" width="114" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{kapasiteetti}$</div></foreignObject>
 </svg>
 
@@ -278,22 +278,20 @@ Ensimmäinen kaava antaa sarjaan kytkettyjen vastusten kokonaisresistanssin $R_\
 ```kaavat
 tehonkulutus johtimessa :: P = UI
 P = RI^2 = \frac{U^2}{R}
-E = Pt
+teho :: P = \frac{W}{\Delta t}
 ```
 
-missä $P$ on teho ($\text{W}$) ja $E$ sähköenergia, joka on muuttunut ajassa $t$ ($\text{J}$ tai $\text{kWh}$). Kaava $P = UI$ pätee kaikille komponenteille. Joulen lain muodot pätevät vain vastukselle. Sarjaankytkennässä suurempi resistanssi saa suuremman tehon. Rinnankytkennässä pienempi resistanssi saa suuremman tehon. Energian yksiköt muunnetaan sijoittamalla: $1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}$. Jos samassa tehtävässä on myös lähdejännite $E$, energialle käytetään kirjainta $W$.
+missä $P$ on teho ($\text{W}$) ja $W$ sähköenergia, joka on muuttunut ajassa $\Delta t$ ($\text{J}$ tai $\text{kWh}$). Kaava $P = UI$ pätee kaikille komponenteille. Joulen lain muodot pätevät vain vastukselle. Sarjaankytkennässä suurempi resistanssi saa suuremman tehon. Rinnankytkennässä pienempi resistanssi saa suuremman tehon. Energian yksiköt muunnetaan sijoittamalla: $1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}$. Energialle käytetään kirjainta $W$, koska $E$ tarkoittaa lähdejännitettä.
 
 ### Paristo ja akku
 
-```latex
-\begin{aligned}
-U &= E - R_\text{s} I \\
-I &= \frac{E}{R + R_\text{s}} \\
-Q &= It
-\end{aligned}
+```kaavat
+U = E - R_\text{s} I
+I = \frac{E}{R + R_\text{s}}
+sähkövirta :: I = \frac{\Delta Q}{\Delta t}
 ```
 
-missä $E$ on lähdejännite ($\text{V}$), $R_\text{s}$ sisäinen resistanssi ($\Omega$), $U$ napajännite ($\text{V}$), $R$ ulkoisen piirin resistanssi ($\Omega$) ja $Q$ akun kapasiteetti ($\text{Ah}$ tai $\text{C}$). Napajännite on pariston napojen välinen jännite. Malli olettaa, että $E$ ja $R_\text{s}$ pysyvät vakioina. Akun energia on $W = UQ$, missä $U$ on nimellisjännite eli akkuun merkitty jännite. Latauksen aikana napajännite on $U = E + R_\text{s} I$.
+missä $E$ on lähdejännite ($\text{V}$), $R_\text{s}$ sisäinen resistanssi ($\Omega$), $U$ napajännite ($\text{V}$), $R$ ulkoisen piirin resistanssi ($\Omega$) ja $Q$ akun kapasiteetti ($\text{Ah}$ tai $\text{C}$) eli varaus $\Delta Q$, jonka akku antaa ajassa $\Delta t$. Napajännite on pariston napojen välinen jännite. Malli olettaa, että $E$ ja $R_\text{s}$ pysyvät vakioina. Akun energia on $W = UQ$, missä $U$ on nimellisjännite eli akkuun merkitty jännite. Latauksen aikana napajännite on $U = E + R_\text{s} I$.
 
 Pariston $(I, U)$-kuvaaja on laskeva suora. Suora leikkaa pystyakselin kohdassa, jossa jännite on lähdejännite $E$. Vaaka-akselin se leikkaa oikosulkuvirran $I_\text{k} = \tfrac{E}{R_\text{s}}$ kohdalla. Suoran kulmakerroin on $-R_\text{s}$.
 

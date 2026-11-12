@@ -270,7 +270,7 @@
   <foreignObject x="274" y="672" width="88" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{etuvastus}$</div></foreignObject>
   <foreignObject x="58" y="706" width="100" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$\eta = P/(GA)$</div></foreignObject>
   <foreignObject x="310" y="709" width="52" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{kenno}$</div></foreignObject>
-  <foreignObject x="58" y="743" width="65" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$I = U/R$</div></foreignObject>
+  <foreignObject x="58" y="743" width="54" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$U = RI$</div></foreignObject>
   <foreignObject x="266" y="746" width="96" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{kehon virta}$</div></foreignObject>
 </svg></div></div>
 <p>Alun kipinä selittyy näillä laeilla. Kun kävelet villamatolla, kehoosi kertyy varausta. Influenssin vuoksi kahvan metallilevyn lähimpään pintaan siirtyy varaus, jonka merkki on vastakkainen. Influenssi tarkoittaa, että varattu kappale siirtää johteen varauksia, vaikka kappaleet eivät kosketa. Kipinä hyppää, kun ilmavälin kenttä on suurempi kuin ilman läpilyöntilujuus. Se on noin $3\,\text{MV/m}$. Noin $3\,\text{mm}$:n kipinä kertoo siis, että jännite on noin $9\,\text{kV}$.</p>
@@ -414,12 +414,9 @@
 
 <p>missä $C$ on kapasitanssi ($\text{F}$), $A$ levyn pinta-ala ($\text{m}^2$), $\varepsilon_0 = 8{,}854 \cdot 10^{-12}\,\text{F/m}$, $\varepsilon_\text{r}$ eristeen suhteellinen permittiivisyys, $E$ kondensaattoriin varastoitunut energia ($\text{J}$), myös $E = \tfrac12 QU$, ja $E_\text{max}$ eristeen läpilyöntilujuus ($\text{V/m}$). Läpilyöntilujuus on suurin kenttä, jonka eriste kestää. Levykondensaattorin kaava pätee, kun $d$ on pieni levyjen kokoon verrattuna ja eriste täyttää koko välin. Kun kondensaattori on kytketty lähteeseen, sen jännite pysyy samana. Kun kondensaattori on irrotettu lähteestä, sen varaus pysyy samana.</p>
 <h4>Komponentit ja turvallisuus</h4>
-<p>$$\begin{aligned}
-R &= \frac{U - U_\text{D}}{I} \\
-\eta &= \frac{P}{GA} \\
-I &= \frac{U}{R}
-\end{aligned}$$</p>
-<p>missä $R$ on LEDin etuvastus ($\Omega$), $U_\text{D}$ LEDin jännite ($\text{V}$), $P = UI$ aurinkokennon sähköteho maksimitehopisteessä ($\text{W}$) ja $G$ valon voimakkuus ($\text{W/m}^2$). Viimeinen yhtälö antaa kehon läpi kulkevan virran. Siinä $U$ on kosketusjännite ja $R$ koko virtatien resistanssi. Diodi johtaa vain päästösuuntaan, kun sen jännite on suurempi kuin kynnysjännite. Sulake suojaa johtoa, ja vikavirtasuoja suojaa ihmistä.</p>
+<dl class="kaavat"><div class="kaava-rivi nimeton"><dd>$$R = \frac{U - U_\text{D}}{I}$$</dd></div><div class="kaava-rivi nimeton"><dd>$$\eta = \frac{P}{GA}$$</dd></div><div class="kaava-rivi"><dt>jännitehäviö johtimessa</dt><dd>$$U = RI$$</dd></div></dl>
+
+<p>missä $R$ on LEDin etuvastus ($\Omega$), $U_\text{D}$ LEDin jännite ($\text{V}$), $P = UI$ aurinkokennon sähköteho maksimitehopisteessä ($\text{W}$) ja $G$ valon voimakkuus ($\text{W/m}^2$). Viimeisestä yhtälöstä saadaan kehon läpi kulkeva virta $I = \tfrac{U}{R}$. Siinä $U$ on kosketusjännite ja $R$ koko virtatien resistanssi. Diodi johtaa vain päästösuuntaan, kun sen jännite on suurempi kuin kynnysjännite. Sulake suojaa johtoa, ja vikavirtasuoja suojaa ihmistä.</p>
 <h3 class="theory-h">Yleisiä virheitä</h3>
 <ul>
 <li><strong>Kenttä ja voima ovat aina samaan suuntaan.</strong> Negatiiviseen varaukseen, esimerkiksi elektroniin, voima osoittaa kenttää vastaan.</li>

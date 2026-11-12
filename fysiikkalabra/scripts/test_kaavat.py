@@ -74,6 +74,8 @@ ok(kaavat.write_symbols(check=True), "the FY9 texts and figures have MAFY's symb
 ok(kaavat.apply_symbols("fy9-energia", "fi", "inquiry.json", '"$\\\\eta = E_\\\\text{a}$"') == '"$\\\\eta = W_\\\\text{a}$"' and kaavat.apply_symbols("fy9-energia", "fi", "unit.md", "$E_\\text{a}$") == "$W_\\text{a}$",
    "a replacement is made as written in a text and as JSON writes it in a .json file")
 ok(kaavat.apply_symbols("fy9-tasavirta", None, "figures.py", "$l$ johtimen pituus") == "$l$ johtimen pituus", "figures.py takes only the replacements of every language")
+ok(all(old not in new for k in {r["_key"] for r in kaavat.table()} for l in [None, *kaavat.LANGS] for old, new in kaavat.symbol_rows(k, l)),
+   "no MAFY replacement keeps its old text inside the new one (kaavat.py symbols can run twice)")
 bare = [(f.relative_to(kaavat.ROOT).as_posix(), kaavat.rows(m.group(1))[0][1])
         for l in kaavat.LANGS for f in sorted((kaavat.ROOT / "content" / l).glob("**/*.md"))
         for m in kaavat.FENCE.finditer(f.read_text(encoding="utf-8")) if not any(n for n, _ in kaavat.rows(m.group(1)))]

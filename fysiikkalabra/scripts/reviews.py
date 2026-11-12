@@ -1015,13 +1015,13 @@ def _figure_free(folder, code_folder, texts, code_names, oid, src, names=frozens
     """The texts with the approved figures of owner `oid` taken out, the other code as it is, each not-approved figure as
     drawn; a .md text as kaavat.review_view sees it, so formula names in `names` (approved by the teacher) carry too.
     `tx(name, text)` / `code_tx(text)`: the teacher's exact replacements made on a passed version (MAFY's symbols,
-    docs/fy9/mafy-tunnukset.tsv). `drawn`: a label box's place and size in a text's figure are left out (they follow the
+    docs/fy9/mafy-tunnukset.tsv). `drawn`: a label box's place and size and its font size in a text's figure are left out (they follow the
     size of the formula in it; figures.py's drawing is judged in full, and units.py figures --check holds the text to it)."""
     rel = lambda p: p.relative_to(ROOT).as_posix()
     md = lambda n, t: kaavat.review_view(t, names) if n.endswith(".md") else t
     read = lambda n: (tx or (lambda _, t: t))(n, src.read(rel(folder / n)) or "")
-    fit = lambda t: re.sub(r"<foreignObject\b[^>]*>", lambda m: re.sub(r'\s(?:x|y|width|height)="[\d.]+"', "", m.group(0)), t) if drawn else t   # a label box follows its formula's size
-    after = lambda n, t: tx(n, t) if tx and n.endswith(".md") else t   # a replacement also on the canonical formulas (an aligned block of the passed version)
+    fit = lambda t: re.sub(r"font-size:\d+px", "", re.sub(r"<foreignObject\b[^>]*>", lambda m: re.sub(r'\s(?:x|y|width|height)="[\d.]+"', "", m.group(0)), t)) if drawn else t   # a label box follows its formula's size
+    after = lambda n, t: tx(n, t, True) if tx and n.endswith(".md") else t   # a replacement also on the canonical formulas (an aligned block of the passed version)
     out = [(n, after(n, md(n, normalized(fit(_strip_approved_svgs(read(n), oid)), n)))) for n in texts]
     for n in code_names:
         code = src.read(rel(code_folder / n))
@@ -1042,7 +1042,7 @@ def item_view(kind, iid, lang, src, passed=False):
     m, key, oid = _item(kind, iid)
     names = (kaavat.ANY if passed else frozenset(kaavat.approved(key, lang))) if kind == "unit" else frozenset()   # a passed version's names may be taken out
     sym = kind == "unit" and bool(kaavat.symbol_rows(key, lang))     # MAFY's symbols (docs/fy9/mafy-tunnukset.tsv)
-    tx = (lambda n, t: kaavat.apply_symbols(key, lang, n, t)) if sym and passed else None
+    tx = (lambda n, t, canonical=False: kaavat.apply_symbols(key, lang, n, t, canonical)) if sym and passed else None
     code_tx = (lambda t: kaavat.apply_symbols(key, None, "figures.py", t)) if sym and passed else None
     out = _figure_free(m.folder(key, lang), m.code_folder(key), m.TEXTS, getattr(m, "CODE", ("figures.py",)), oid, src, names, tx, code_tx, drawn=sym)
     if kind == "unit" and m.has_tasks(key, lang):

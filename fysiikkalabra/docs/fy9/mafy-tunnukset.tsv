@@ -1,6 +1,6 @@
 # FY9:n kaavat ja tunnukset samoin kuin MAFY-taulukoissa (opettaja 2026-11-12: "FY9 olisi kyl oleellista että kaavat on samoin kuin MAFY koska siellä treenataan yo-kokeisiin").
 # Jokainen rivi on tarkka korvaus yksikön teksteissä (unit.md, unit.json, inquiry.json, teacher.md; JSONissa sama merkkijono JSON-muodossa) ja, kun kielet on fi,fi-easy,en, myös sen figures.py:ssä.
-# python scripts/kaavat.py symbols kirjoittaa korvaukset; reviews.py antaa katselmointien siirtyä, kun ainoa muutos on nämä korvaukset (kategoria mafy-symbols). Korvaukset tehdään rivien järjestyksessä.
+# ⏎ on rivinvaihto (kaavan oma rivi lohkossa). python scripts/kaavat.py symbols kirjoittaa korvaukset; reviews.py antaa katselmointien siirtyä, kun ainoa muutos on nämä korvaukset (kategoria mafy-symbols). Korvaukset tehdään rivien järjestyksessä.
 yksikkö	kielet	vanha	uusi	huomio
 fy9-energia	fi,fi-easy,en	E_\text{a}	W_\text{a}	MAFY: hyötysuhde η = W_a/W_o = P_a/P_o
 fy9-energia	fi,fi-easy,en	E_\text{o}	W_\text{o}
@@ -22,3 +22,27 @@ fy9-aallot	fi,fi-easy,en	L = 10\,\text{dB} \cdot \lg \frac{I}{I_0}	L = 10\lg\lef
 fy9-aallot	fi,fi-easy,en	L = 10\,\text{dB} \cdot \lg(I/I_0)	L = 10\lg(I/I_0)\,\text{dB}	kaavakartta
 fy9-magnetismi-valo	fi,fi-easy,en	B = \frac{\mu_0 I}{2\pi r}	B = \frac{\mu_0}{2\pi r}\,I	MAFY: suoran virtajohtimen magneettivuon tiheys
 fy9-kokeellisuus	fi,fi-easy,en	\bar{x} = \frac{x_1 + x_2 + \dots + x_n}{n}	\bar{x} = \frac{\sum_{i=1}^{n} x_i}{n}	MAFY: keskiarvo
+fy9-tasavirta	fi,fi-easy,en	⏎E = Pt⏎	⏎P = \frac{W}{\Delta t}⏎	MAFY: teho P = W/Δt; kaavan oma rivi (ratkaisujen E = Pt ennallaan)
+fy9-tasavirta	fi,fi-easy,en	$E = Pt$</div>	$P = W/\Delta t$</div>	kaavakartta
+fy9-tasavirta	fi,fi-easy,en	(r"E = Pt", "energia")	(r"P = W/\Delta t", "energia")	kaavakartta (figures.py)
+fy9-tasavirta	fi	ja $E$ ajassa $t$ muuttunut sähköenergia	ja $W$ ajassa $\Delta t$ muuttunut sähköenergia	
+fy9-tasavirta	fi	 Kun samassa tehtävässä on myös lähdejännite $E$, energialle käytetään kirjainta $W$.	 Energialle käytetään kirjainta $W$, koska $E$ tarkoittaa lähdejännitettä.	
+fy9-tasavirta	fi-easy	ja $E$ sähköenergia, joka on muuttunut ajassa $t$	ja $W$ sähköenergia, joka on muuttunut ajassa $\Delta t$	
+fy9-tasavirta	fi-easy	 Jos samassa tehtävässä on myös lähdejännite $E$, energialle käytetään kirjainta $W$.	 Energialle käytetään kirjainta $W$, koska $E$ tarkoittaa lähdejännitettä.	
+fy9-tasavirta	en	and $E$ the electrical energy transformed in the time $t$	and $W$ the electrical energy transformed in the time $\Delta t$	
+fy9-tasavirta	en	 When the same problem also has an emf $E$, the letter $W$ is used for energy.	 The letter $W$ is used for energy, because $E$ is the emf.	
+fy9-tasavirta	fi,fi-easy,en	Q &= It	I &= \frac{\Delta Q}{\Delta t}	MAFY: sähkövirta I = ΔQ/Δt
+fy9-tasavirta	fi,fi-easy,en	$Q = It$</div>	$I = \Delta Q/\Delta t$</div>	kaavakartta
+fy9-tasavirta	fi,fi-easy,en	(r"Q = It", "kapasiteetti")	(r"I = \Delta Q/\Delta t", "kapasiteetti")	kaavakartta (figures.py)
+fy9-tasavirta	fi,fi-easy	ja $Q$ akun kapasiteetti ($\text{Ah}$ tai $\text{C}$).	ja $Q$ akun kapasiteetti ($\text{Ah}$ tai $\text{C}$) eli varaus $\Delta Q$, jonka akku antaa ajassa $\Delta t$.	
+fy9-tasavirta	en	and $Q$ the capacity of the battery ($\text{Ah}$ or $\text{C}$).	and $Q$ the capacity of the battery ($\text{Ah}$ or $\text{C}$), the charge $\Delta Q$ it gives in the time $\Delta t$.	
+fy9-sahkokentta	fi,fi-easy,en	I &= \frac{U}{R}	U &= RI	MAFY: jännitehäviö johtimessa U = RI
+fy9-sahkokentta	fi,fi-easy,en	$I = U/R$</div>	$U = RI$</div>	kaavakartta
+fy9-sahkokentta	fi,fi-easy,en	(r"I = U/R", "kehon virta")	(r"U = RI", "kehon virta")	kaavakartta (figures.py)
+fy9-sahkokentta	fi	Viimeinen yhtälö antaa kehon läpi kulkevan virran, kun $U$ on	Viimeisestä yhtälöstä saadaan kehon läpi kulkeva virta $I = \tfrac{U}{R}$, kun $U$ on	
+fy9-sahkokentta	fi-easy	Viimeinen yhtälö antaa kehon läpi kulkevan virran. Siinä $U$	Viimeisestä yhtälöstä saadaan kehon läpi kulkeva virta $I = \tfrac{U}{R}$. Siinä $U$	
+fy9-sahkokentta	en	The last equation gives the current through the body when	The last equation gives the current through the body, $I = \tfrac{U}{R}$, when	
+fy9-voimat	fi,fi-easy,en	F_{\mu 0} \le \mu_0 N	F_{\mu_0} = \mu_0 N	MAFY: lähtökitka, eli täysin kehittynyt lepokitka F_μ0 = μ0N (myös kaavakartta)
+fy9-voimat	fi	Lepokitka on vain niin suuri kuin tilanne vaatii, ja se	Lepokitka on vain niin suuri kuin tilanne vaatii, enintään lähtökitkan $F_{\mu_0}$ suuruinen, ja se	
+fy9-voimat	fi-easy	Lepokitka on vain niin suuri kuin tilanne vaatii. Se vastustaa	Lepokitka on vain niin suuri kuin tilanne vaatii. Se on enintään yhtä suuri kuin lähtökitka $F_{\mu_0}$. Se vastustaa	
+fy9-voimat	en	Static friction is only as large as the situation requires, and it	Static friction is only as large as the situation requires, at most the limiting friction $F_{\mu_0}$, and it	

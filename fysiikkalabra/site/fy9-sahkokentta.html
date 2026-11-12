@@ -270,7 +270,7 @@
   <foreignObject x="274" y="672" width="88" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{etuvastus}$</div></foreignObject>
   <foreignObject x="58" y="706" width="100" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$\eta = P/(GA)$</div></foreignObject>
   <foreignObject x="310" y="709" width="52" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{kenno}$</div></foreignObject>
-  <foreignObject x="58" y="743" width="65" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$I = U/R$</div></foreignObject>
+  <foreignObject x="58" y="743" width="54" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$U = RI$</div></foreignObject>
   <foreignObject x="266" y="746" width="96" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{kehon virta}$</div></foreignObject>
 </svg></div></div>
 <p>Alun kipinä ratkeaa näillä laeilla. Kun kävelet villamatolla, kehoosi kertyy varausta, ja kahvan metallilevyn lähipinnalle siirtyy influenssin vuoksi vastakkaismerkkinen varaus. Kipinä hyppää, kun ilmavälin kenttä ylittää ilman läpilyöntilujuuden noin $3\,\text{MV/m}$. Noin $3\,\text{mm}$:n kipinä kertoo siis noin $9\,\text{kV}$:n jännitteestä.</p>
@@ -414,12 +414,9 @@
 
 <p>missä $C$ on kapasitanssi ($\text{F}$), $A$ levyn pinta-ala ($\text{m}^2$), $\varepsilon_0 = 8{,}854 \cdot 10^{-12}\,\text{F/m}$, $\varepsilon_\text{r}$ eristeen suhteellinen permittiivisyys, $E$ kondensaattoriin varastoitunut energia ($\text{J}$), myös $E = \tfrac12 QU$, ja $E_\text{max}$ eristeen läpilyöntilujuus ($\text{V/m}$). Levykondensaattorin kaava pätee, kun $d$ on pieni levyjen kokoon verrattuna ja eriste täyttää välin. Lähteeseen kytketyn kondensaattorin jännite pysyy samana, irrotetun varaus.</p>
 <h4>Komponentit ja turvallisuus</h4>
-<p>$$\begin{aligned}
-R &= \frac{U - U_\text{D}}{I} \\
-\eta &= \frac{P}{GA} \\
-I &= \frac{U}{R}
-\end{aligned}$$</p>
-<p>missä $R$ on LEDin etuvastus ($\Omega$), $U_\text{D}$ LEDin jännite ($\text{V}$), $P = UI$ aurinkokennon sähköteho maksimitehopisteessä ($\text{W}$) ja $G$ valon voimakkuus ($\text{W/m}^2$). Viimeinen yhtälö antaa kehon läpi kulkevan virran, kun $U$ on kosketusjännite ja $R$ koko virtatien resistanssi. Diodi johtaa vain päästösuuntaan, kun sen jännite ylittää kynnysjännitteen. Sulake suojaa johtoa, vikavirtasuoja ihmistä.</p>
+<dl class="kaavat"><div class="kaava-rivi nimeton"><dd>$$R = \frac{U - U_\text{D}}{I}$$</dd></div><div class="kaava-rivi nimeton"><dd>$$\eta = \frac{P}{GA}$$</dd></div><div class="kaava-rivi"><dt>jännitehäviö johtimessa</dt><dd>$$U = RI$$</dd></div></dl>
+
+<p>missä $R$ on LEDin etuvastus ($\Omega$), $U_\text{D}$ LEDin jännite ($\text{V}$), $P = UI$ aurinkokennon sähköteho maksimitehopisteessä ($\text{W}$) ja $G$ valon voimakkuus ($\text{W/m}^2$). Viimeisestä yhtälöstä saadaan kehon läpi kulkeva virta $I = \tfrac{U}{R}$, kun $U$ on kosketusjännite ja $R$ koko virtatien resistanssi. Diodi johtaa vain päästösuuntaan, kun sen jännite ylittää kynnysjännitteen. Sulake suojaa johtoa, vikavirtasuoja ihmistä.</p>
 <h3 class="theory-h">Yleisiä virheitä</h3>
 <ul>
 <li><strong>Kenttä ja voima samaan suuntaan aina.</strong> Negatiiviseen varaukseen, kuten elektroniin, voima osoittaa kenttää vastaan.</li>

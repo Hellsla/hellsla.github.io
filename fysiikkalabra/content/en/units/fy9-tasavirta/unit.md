@@ -202,7 +202,7 @@ In a direct-current circuit the source maintains a **voltage**, and the voltage 
   <foreignObject x="310" y="566" width="52" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{power}$</div></foreignObject>
   <foreignObject x="58" y="614" width="112" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$P = RI^2 = U^2/R$</div></foreignObject>
   <foreignObject x="283" y="616" width="79" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{resistor}$</div></foreignObject>
-  <foreignObject x="58" y="664" width="50" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$E = Pt$</div></foreignObject>
+  <foreignObject x="58" y="664" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$P = W/\Delta t$</div></foreignObject>
   <foreignObject x="301" y="666" width="61" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{energy}$</div></foreignObject>
   <line x1="24" y1="734" x2="44" y2="734" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="44" y="712" width="328" height="188" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
@@ -213,7 +213,7 @@ In a direct-current circuit the source maintains a **voltage**, and the voltage 
   <foreignObject x="221" y="770" width="141" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{terminal voltage}$</div></foreignObject>
   <foreignObject x="58" y="819" width="102" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$I = E/(R + R_\text{s})$</div></foreignObject>
   <foreignObject x="292" y="820" width="70" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{current}$</div></foreignObject>
-  <foreignObject x="58" y="868" width="50" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$Q = It$</div></foreignObject>
+  <foreignObject x="58" y="869" width="74" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$I = \Delta Q/\Delta t$</div></foreignObject>
   <foreignObject x="283" y="870" width="79" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{capacity}$</div></foreignObject>
 </svg>
 
@@ -278,22 +278,20 @@ The first is the total resistance $R_\text{tot}$ of resistors connected in serie
 ```kaavat
 power consumed in a conductor :: P = UI
 P = RI^2 = \frac{U^2}{R}
-E = Pt
+power :: P = \frac{W}{\Delta t}
 ```
 
-where $P$ is the power ($\text{W}$) and $E$ the electrical energy transformed in the time $t$ ($\text{J}$ or $\text{kWh}$). The form $P = UI$ holds for every component, the forms of Joule's law only for a resistor. In series the larger resistance gets the larger power, in parallel the smaller. Units of energy are converted by substitution: $1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3.6\,\text{MJ}$. When the same problem also has an emf $E$, the letter $W$ is used for energy.
+where $P$ is the power ($\text{W}$) and $W$ the electrical energy transformed in the time $\Delta t$ ($\text{J}$ or $\text{kWh}$). The form $P = UI$ holds for every component, the forms of Joule's law only for a resistor. In series the larger resistance gets the larger power, in parallel the smaller. Units of energy are converted by substitution: $1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3.6\,\text{MJ}$. The letter $W$ is used for energy, because $E$ is the emf.
 
 ### Battery and accumulator
 
-```latex
-\begin{aligned}
-U &= E - R_\text{s} I \\
-I &= \frac{E}{R + R_\text{s}} \\
-Q &= It
-\end{aligned}
+```kaavat
+U = E - R_\text{s} I
+I = \frac{E}{R + R_\text{s}}
+electric current :: I = \frac{\Delta Q}{\Delta t}
 ```
 
-where $E$ is the emf ($\text{V}$), $R_\text{s}$ the internal resistance ($\Omega$), $U$ the terminal voltage ($\text{V}$), $R$ the resistance of the external circuit ($\Omega$) and $Q$ the capacity of the battery ($\text{Ah}$ or $\text{C}$). The model assumes that $E$ and $R_\text{s}$ stay constant. The energy of a battery is $W = UQ$, where $U$ is the rated voltage, and during charging the terminal voltage is $U = E + R_\text{s} I$.
+where $E$ is the emf ($\text{V}$), $R_\text{s}$ the internal resistance ($\Omega$), $U$ the terminal voltage ($\text{V}$), $R$ the resistance of the external circuit ($\Omega$) and $Q$ the capacity of the battery ($\text{Ah}$ or $\text{C}$), the charge $\Delta Q$ it gives in the time $\Delta t$. The model assumes that $E$ and $R_\text{s}$ stay constant. The energy of a battery is $W = UQ$, where $U$ is the rated voltage, and during charging the terminal voltage is $U = E + R_\text{s} I$.
 
 The $(I, U)$ graph of a battery is a falling straight line. It crosses the vertical axis at the emf $E$ and the horizontal axis at the short-circuit current $I_\text{k} = \tfrac{E}{R_\text{s}}$, and its slope is $-R_\text{s}$.
 

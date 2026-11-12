@@ -108,7 +108,7 @@ fy9-sahkokentta	361	E = \tfrac12 CU^2	E = \tfrac12 CU^2	kondensaattorin energia	
 fy9-sahkokentta	361	U_\text{max} = E_\text{max}d	U_\text{max} = E_\text{max}d			ei MAFY:ssa		ei MAFY:n kaavoissa (MAFY:ssa läpilyöntikestävyyksien taulukko)
 fy9-sahkokentta	372	R = \frac{U - U_\text{D}}{I}	R = \frac{U - U_\text{D}}{I}			ei MAFY:ssa		ei MAFY:ssa
 fy9-sahkokentta	372	\eta = \frac{P}{GA}	\eta = \frac{P}{GA}			ei MAFY:ssa		ei MAFY:ssa
-fy9-sahkokentta	372	I = \frac{U}{R}	I = \frac{U}{R}			ei MAFY:ssa	Virtapiirien kaavoja	MAFY:ssa $U = RI$ nimellä jännitehäviö johtimessa
+fy9-sahkokentta	372	U = RI	U = RI	jännitehäviö johtimessa	voltage drop across a conductor	MAFY	Virtapiirien kaavoja	kirjoitettu MAFY:n muotoon 2026-11-12 (docs/fy9/mafy-tunnukset.tsv)
 fy9-sailymislait	306	E_\text{k} = \tfrac{1}{2}\,mv^2	E_\text{k} = \tfrac{1}{2}\,mv^2	liike-energia	kinetic energy	MAFY	Mekaniikan kaavoja	
 fy9-sailymislait	306	E_\text{p} = mgh	E_\text{p} = mgh	painovoimaan liittyvä potentiaalienergia maanpinnalla	gravitational potential energy near the Earth's surface	MAFY	Mekaniikan kaavoja	
 fy9-sailymislait	313	E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}	E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}	mekaniikan energiaperiaate	work-energy principle of mechanics	MAFY	Mekaniikan kaavoja	
@@ -128,16 +128,16 @@ fy9-tasavirta	267	\Sigma I_\text{t} = \Sigma I_\text{l}	\Sigma I_\text{in} = \Si
 fy9-tasavirta	267	\Sigma \Delta V = 0	\Sigma \Delta V = 0	Kirchhoffin 2. laki	Kirchhoff's second law	MAFY	Virtapiirien kaavoja	
 fy9-tasavirta	278	P = UI	P = UI	tehonkulutus johtimessa	power consumed in a conductor	MAFY	Virtapiirien kaavoja	
 fy9-tasavirta	278	P = RI^2 = \frac{U^2}{R}	P = RI^2 = \frac{U^2}{R}			ei MAFY:ssa	Virtapiirien kaavoja	MAFY:ssa vain $P = UI$
-fy9-tasavirta	278	E = Pt	E = Pt			ei MAFY:ssa	Mekaniikan kaavoja	MAFY:ssa teho $P = \frac{\Delta E}{\Delta t}$
+fy9-tasavirta	278	P = \frac{W}{\Delta t}	P = \frac{W}{\Delta t}	teho	power	MAFY	Mekaniikan kaavoja	kirjoitettu MAFY:n muotoon 2026-11-12 (docs/fy9/mafy-tunnukset.tsv)
 fy9-tasavirta	288	U = E - R_\text{s} I	U = E - R_\text{s} I			ei MAFY:ssa		ei MAFY:ssa
 fy9-tasavirta	288	I = \frac{E}{R + R_\text{s}}	I = \frac{E}{R + R_\text{s}}			ei MAFY:ssa		ei MAFY:ssa
-fy9-tasavirta	288	Q = It	Q = It			ei MAFY:ssa		ei MAFY:ssa (MAFY:ssa sähkövirta $I = \Delta Q/\Delta t$)
+fy9-tasavirta	288	I = \frac{\Delta Q}{\Delta t}	I = \frac{\Delta Q}{\Delta t}	sähkövirta	electric current	MAFY	Sähkömagnetismin kaavoja	kirjoitettu MAFY:n muotoon 2026-11-12 (docs/fy9/mafy-tunnukset.tsv)
 fy9-voimat	190	\Sigma\overline{F} = \overline{0} \ \Leftrightarrow\ \overline{v} = \text{vakio}	\Sigma\overline{F} = \overline{0} \ \Leftrightarrow\ \overline{v} = \text{constant}			ei MAFY:ssa		ei MAFY:ssa
 fy9-voimat	190	\Sigma\overline{F} = m\overline{a}	\Sigma\overline{F} = m\overline{a}	Newtonin 2. laki (dynamiikan peruslaki)	Newton's second law (fundamental law of dynamics)	MAFY	Mekaniikan kaavoja	
 fy9-voimat	190	\overline{F}_{AB} = -\overline{F}_{BA}	\overline{F}_{AB} = -\overline{F}_{BA}			ei MAFY:ssa		ei MAFY:ssa
 fy9-voimat	200	\overline{G} = m\overline{g}	\overline{G} = m\overline{g}	kappaleeseen vaikuttava painovoima Maan pinnalla	weight of a body at the Earth's surface	MAFY	Mekaniikan kaavoja	
 fy9-voimat	200	F_\mu = \mu N	F_\mu = \mu N	liukukitka	kinetic friction	MAFY	Mekaniikan kaavoja	
-fy9-voimat	200	F_{\mu 0} \le \mu_0 N	F_{\mu 0} \le \mu_0 N			ei MAFY:ssa	Mekaniikan kaavoja	MAFY: lähtökitka, eli täysin kehittynyt lepokitka $F_{\mu_0} = \mu_0 N$; tässä epäyhtälö
+fy9-voimat	200	F_{\mu_0} = \mu_0 N	F_{\mu_0} = \mu_0 N	lähtökitka, eli täysin kehittynyt lepokitka	limiting static friction	MAFY	Mekaniikan kaavoja	kirjoitettu MAFY:n muotoon 2026-11-12 (docs/fy9/mafy-tunnukset.tsv)
 fy9-ympyraliike	254	M = Fr	M = Fr	voiman momentti	moment of a force	MAFY	Mekaniikan kaavoja	
 fy9-ympyraliike	254	\Sigma\overline{F} = \overline{0}	\Sigma\overline{F} = \overline{0}			ei MAFY:ssa		ei MAFY:ssa
 fy9-ympyraliike	254	\Sigma M = 0	\Sigma M = 0			ei MAFY:ssa		ei MAFY:ssa

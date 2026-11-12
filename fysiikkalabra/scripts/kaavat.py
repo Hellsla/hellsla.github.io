@@ -201,6 +201,7 @@ def write(check=False):
 # ------------------------------------------------------------------ FY9: formulas and symbols as in MAFY (docs/fy9/mafy-tunnukset.tsv)
 SYMBOLS = ROOT / "docs" / "fy9" / "mafy-tunnukset.tsv"
 ALL_LANGS = set(LANGS)
+NL = "⏎"            # a line break in the table's old and new text (a formula's own line in a block)
 
 
 def symbol_rows(key, lang=None):
@@ -212,16 +213,17 @@ def symbol_rows(key, lang=None):
     for l in lines[1:]:
         r = dict(zip(head, l.split("\t")))
         langs = set(r["kielet"].split(","))
-        if r["yksikkö"] == key and (langs >= ALL_LANGS if lang is None else lang in langs): out.append((r["vanha"], r["uusi"]))
+        if r["yksikkö"] == key and (langs >= ALL_LANGS if lang is None else lang in langs): out.append((r["vanha"].replace(NL, "\n"), r["uusi"].replace(NL, "\n")))
     return out
 
 
-def apply_symbols(key, lang, name, text):
+def apply_symbols(key, lang, name, text, canonical=False):
     """`text` (a unit's file `name`; figures.py when lang is None) with the replacements made, in the table's order;
-    in a .json file each string is replaced as JSON writes it."""
+    in a .json file each string is replaced as JSON writes it; `canonical`: as canonical() writes formulas (reviews)."""
     import json
     if not text: return text
     for old, new in symbol_rows(key, lang):
+        if canonical: old, new = old.replace("&", "").replace(NL, "\n").strip(), new.replace("&", "").strip()   # canonical(): no alignment marks, a formula per line
         if name.endswith(".json"): old, new = json.dumps(old, ensure_ascii=False)[1:-1], json.dumps(new, ensure_ascii=False)[1:-1]
         text = text.replace(old, new)
     return text

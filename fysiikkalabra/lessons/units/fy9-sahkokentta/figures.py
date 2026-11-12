@@ -160,7 +160,7 @@ def kartta():
         ("kondensaattori", [(r"Q = CU", "kapasitanssi"), (r"C = \varepsilon_0\varepsilon_\text{r}A/d", "levyt"),
                             (r"E = \tfrac12 CU^2", "energia")]),
         ("komponentit ja turvallisuus", [(r"R = (U - U_\text{D})/I", "etuvastus"), (r"\eta = P/(GA)", "kenno"),
-                                         (r"I = U/R", "kehon virta")]),
+                                         (r"U = RI", "kehon virta")]),
     ]
     hub_y, hub_h, x_box, gh, top = 8, 72, 44, 156, 100
     height = top + 4 * (gh + 16) - 8

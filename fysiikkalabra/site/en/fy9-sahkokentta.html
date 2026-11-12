@@ -270,7 +270,7 @@
   <foreignObject x="230" y="672" width="132" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{series resistor}$</div></foreignObject>
   <foreignObject x="58" y="706" width="100" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$\eta = P/(GA)$</div></foreignObject>
   <foreignObject x="319" y="709" width="43" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{cell}$</div></foreignObject>
-  <foreignObject x="58" y="743" width="65" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$I = U/R$</div></foreignObject>
+  <foreignObject x="58" y="743" width="54" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$U = RI$</div></foreignObject>
   <foreignObject x="257" y="746" width="105" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{body current}$</div></foreignObject>
 </svg></div></div>
 <p>The spark of the opening is solved with these laws. When you walk on a woollen rug, charge builds up on your body, and because of induction a charge of opposite sign moves to the nearby surface of the metal plate of the handle. The spark jumps when the field in the air gap exceeds the dielectric strength of air, about $3\,\text{MV/m}$. A spark of about $3\,\text{mm}$ therefore tells of a voltage of about $9\,\text{kV}$.</p>
@@ -414,12 +414,9 @@
 
 <p>where $C$ is the capacitance ($\text{F}$), $A$ the area of a plate ($\text{m}^2$), $\varepsilon_0 = 8.854 \cdot 10^{-12}\,\text{F/m}$, $\varepsilon_\text{r}$ the relative permittivity of the dielectric, $E$ the energy stored in the capacitor ($\text{J}$), also $E = \tfrac12 QU$, and $E_\text{max}$ the dielectric strength of the dielectric ($\text{V/m}$). The formula of the parallel-plate capacitor holds when $d$ is small compared with the size of the plates and the dielectric fills the gap. For a capacitor connected to a source the voltage stays the same; for a disconnected one, the charge.</p>
 <h4>Components and safety</h4>
-<p>$$\begin{aligned}
-R &= \frac{U - U_\text{D}}{I} \\
-\eta &= \frac{P}{GA} \\
-I &= \frac{U}{R}
-\end{aligned}$$</p>
-<p>where $R$ is the series resistor of an LED ($\Omega$), $U_\text{D}$ the voltage of the LED ($\text{V}$), $P = UI$ the electric power of a solar cell at the maximum power point ($\text{W}$) and $G$ the light intensity ($\text{W/m}^2$). The last equation gives the current through the body when $U$ is the touch voltage and $R$ the resistance of the whole current path. A diode conducts only in the forward direction, when its voltage exceeds the threshold voltage. A fuse protects the cable, a residual current device the person.</p>
+<dl class="kaavat"><div class="kaava-rivi nimeton"><dd>$$R = \frac{U - U_\text{D}}{I}$$</dd></div><div class="kaava-rivi nimeton"><dd>$$\eta = \frac{P}{GA}$$</dd></div><div class="kaava-rivi"><dt>voltage drop across a conductor</dt><dd>$$U = RI$$</dd></div></dl>
+
+<p>where $R$ is the series resistor of an LED ($\Omega$), $U_\text{D}$ the voltage of the LED ($\text{V}$), $P = UI$ the electric power of a solar cell at the maximum power point ($\text{W}$) and $G$ the light intensity ($\text{W/m}^2$). The last equation gives the current through the body, $I = \tfrac{U}{R}$, when $U$ is the touch voltage and $R$ the resistance of the whole current path. A diode conducts only in the forward direction, when its voltage exceeds the threshold voltage. A fuse protects the cable, a residual current device the person.</p>
 <h3 class="theory-h">Common mistakes</h3>
 <ul>
 <li><strong>The field and the force always in the same direction.</strong> On a negative charge, such as an electron, the force points against the field.</li>

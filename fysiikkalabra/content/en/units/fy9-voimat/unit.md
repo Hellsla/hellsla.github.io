@@ -167,7 +167,7 @@ Every task in this lesson is solved in the same way: **first the free-body diagr
   <foreignObject x="301" y="362" width="61" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{weight}$</div></foreignObject>
   <foreignObject x="58" y="393.5" width="63" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$F_\mu = \mu N$</div></foreignObject>
   <foreignObject x="221" y="396" width="141" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{kinetic friction}$</div></foreignObject>
-  <foreignObject x="58" y="427.5" width="84" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$F_{\mu 0} \le \mu_0 N$</div></foreignObject>
+  <foreignObject x="58" y="427.5" width="84" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$F_{\mu_0} = \mu_0 N$</div></foreignObject>
   <foreignObject x="230" y="430" width="132" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{static friction}$</div></foreignObject>
   <line x1="24" y1="494" x2="44" y2="494" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="44" y="472" width="328" height="150" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
@@ -200,10 +200,10 @@ where $\Sigma\overline{F}$ is the sum of the forces acting on the object ($\text
 ```kaavat
 weight of a body at the Earth's surface :: \overline{G} = m\overline{g}
 kinetic friction :: F_\mu = \mu N
-F_{\mu 0} \le \mu_0 N
+limiting static friction :: F_{\mu_0} = \mu_0 N
 ```
 
-where $\overline{g}$ is the acceleration due to gravity, $g = 9.81\,\text{m/s}^2$, so the magnitude of the weight is $G = mg$, $N$ is the normal force ($\text{N}$), $\mu$ the coefficient of kinetic friction and $\mu_0$ the coefficient of static friction. Static friction is only as large as the situation requires, and it opposes the sliding of the surfaces relative to each other, not always the motion. The formulas are experimental models for dry surfaces. In free-body diagrams $\overline{F}_\mu$ stands for either kind of friction, static or kinetic.
+where $\overline{g}$ is the acceleration due to gravity, $g = 9.81\,\text{m/s}^2$, so the magnitude of the weight is $G = mg$, $N$ is the normal force ($\text{N}$), $\mu$ the coefficient of kinetic friction and $\mu_0$ the coefficient of static friction. Static friction is only as large as the situation requires, at most the limiting friction $F_{\mu_0}$, and it opposes the sliding of the surfaces relative to each other, not always the motion. The formulas are experimental models for dry surfaces. In free-body diagrams $\overline{F}_\mu$ stands for either kind of friction, static or kinetic.
 
 On a slope with the angle of inclination $\alpha$, the components of the weight are $G_x = mg\sin\alpha$ down the slope and $G_y = mg\cos\alpha$ towards the slope. When only the weight and the normal force act perpendicular to the surface, $N = mg\cos\alpha$. The components are not new forces: they are drawn with dashed lines and replace the weight in the calculation.
 
