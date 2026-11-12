@@ -311,7 +311,13 @@ def hash_of(folder, src, part="lesson"):
 
 
 def content_hash(folder, part="lesson"): return hash_of(folder, WorkTree(), part)
-def hash_at(commit, folder, part="lesson"): return hash_of(folder, Commit(commit), part)
+_HASH_AT = {}
+def hash_at(commit, folder, part="lesson"):
+    """The hash of `part` in a commit; a commit never changes, so it is computed once per run (scope walks the same
+    history once for every version a reviewer passed)."""
+    k = (commit, str(folder), part)
+    if k not in _HASH_AT: _HASH_AT[k] = hash_of(folder, Commit(commit), part)
+    return _HASH_AT[k]
 
 
 def report(folder, name, part="lesson"):
