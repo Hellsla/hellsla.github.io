@@ -155,11 +155,14 @@
     {
       "id": "fy2-1-L1-10",
       "level": 1,
-      "text": "Imagine that $2.0\\,\\text{kg}$ of petrol (gasoline) is burned in a car. The chemical energy of the petrol is released in combustion and changes into kinetic and thermal energy. The heating value $H$ of a fuel tells how much energy is released when one kilogram burns, and the released energy is $E = Hm$.\n\nLook up the heating value of petrol in the MAFY table (mafytaulukot.fi). Hint: the value is in the table of heating values of fuels, on the row for petrol. How much chemical energy is released from the petrol?",
+      "text": "Imagine that $2.0\\,\\text{kg}$ of petrol (gasoline) is burned in a car. The chemical energy of the petrol is released in combustion and changes into kinetic and thermal energy. The heating value $H$ of a fuel tells how much energy is released when one kilogram burns, and the released energy is $E = Hm$.\n\nLook up the heating value of petrol in the MAFY table (mafytaulukot.fi). How much chemical energy is released from the petrol?",
       "lookup": "MAFY",
       "answer": 86.8,
       "unit": "MJ",
-      "tolerance": 0.04
+      "tolerance": 0.04,
+      "hints": [
+        "The value is in the MAFY table *Polttoaineiden LHV-lämpöarvoja* (lower heating values of fuels)."
+      ]
     }
   ],
   "level2": [
