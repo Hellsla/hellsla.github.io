@@ -65,11 +65,11 @@
 **Model answer:** Statements 1, 3 and 5 are true. The mechanical energy $E_\text{p} + E_\text{k}$ decreases in every bounce, but the total energy of the ball, the floor and the air stays the same. At the end the ball has no kinetic energy and no potential energy gained from being above the floor, and the same energy is thermal energy in the ball, the floor and the air. Statements 2 and 4 are false: energy is not used up, and thermal energy is part of the total energy, so the total energy does not decrease.
 
 ## fy2-1-L1-10
-**Given:** mass of water $m = 0.50\,\text{kg}$, temperature at the start $20\,^\circ\text{C}$ and at the end $60\,^\circ\text{C}$; from the table (MAFY table, specific heat capacities, water) $c = 4.19\,\text{kJ/(kg}\cdot\text{K)}$
+**Given:** mass of water $m = 0.50\,\text{kg}$, temperature at the start $20\,{}^\circ\text{C}$ and at the end $60\,{}^\circ\text{C}$; from the table (MAFY table, specific heat capacities, water) $c = 4.19\,\text{kJ/(kg}\cdot\text{K)}$
 **Asked:** the electrical energy $E$ that the kettle changes into thermal energy, in $\text{kJ}$
 **Principle:** All of the electrical energy goes into the water and no heat escapes, so the system is isolated and energy is conserved: the decrease in electrical energy equals the increase in the thermal energy of the water. That increase is $E = c\,m\,\Delta T$.
 **Formula:** $E_\text{elec} = E_\text{thermal}$, and $E_\text{thermal} = c\,m\,\Delta T$, so $E = c\,m\,\Delta T$
-**Conversions:** The change in temperature is the same in degrees Celsius and kelvins: $\Delta T = 60\,^\circ\text{C} - 20\,^\circ\text{C} = 40\,^\circ\text{C} = 40\,\text{K}$. The specific heat capacity is already in $\text{kJ/(kg}\cdot\text{K)}$, so the answer comes out in kilojoules.
+**Conversions:** The change in temperature is the same in degrees Celsius and kelvins: $\Delta T = 60\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 40\,{}^\circ\text{C} = 40\,\text{K}$. The specific heat capacity is already in $\text{kJ/(kg}\cdot\text{K)}$, so the answer comes out in kilojoules.
 **Substitution:** $E = 4.19\,\dfrac{\text{kJ}}{\text{kg}\cdot\text{K}} \cdot 0.50\,\text{kg} \cdot 40\,\text{K} = 83.8\,\text{kJ}$
 **Answer:** $E \approx 84\,\text{kJ}$, two significant figures as in the mass $0.50\,\text{kg}$. The table value $c = 4.19\,\text{kJ/(kg}\cdot\text{K)}$ is from the MAFY table (specific heat capacities, water); another table's rounding, for example $4.18$, gives the same result to two figures.
 **Reasonableness:** A rough estimate: $4\,\text{kJ} \cdot 0.5 \cdot 40 = 80\,\text{kJ}$, so the result is of the right order of magnitude. A kilogram of water needs about $4\,\text{kJ}$ per degree, and half a litre warms by 40 degrees with about $84\,\text{kJ}$, which a $2\,\text{kW}$ kettle supplies in about $42\,\text{s}$, matching everyday experience.
@@ -152,7 +152,7 @@
 **Formula:** $E_\text{A} = E_\text{B} + E_\text{thermal}$, so $E_\text{thermal} = E_\text{A} - E_\text{B}$, and the share is $p = \dfrac{E_\text{thermal}}{E_\text{A}} \cdot 100\,\%$
 **Conversions:** All energies are in joules, so no conversions are needed.
 **Substitution:** $E_\text{thermal} = (700\,\text{J} + 0\,\text{J}) - (300\,\text{J} + 300\,\text{J}) = 100\,\text{J}$, and $p = \dfrac{100\,\text{J}}{700\,\text{J}} \cdot 100\,\% = 14.3\,\%$
-**Answer:** $p \approx 14\,\%$, two significant figures, because the energies are read to the nearest $100\,\text{J}$.
+**Answer:** $p \approx 14\,\%$, two significant figures, because the energies are read to the nearest hundred joules.
 **Reasonableness:** The share is positive and below $100\,\%$, as it should be with friction. By point C, $200\,\text{J}$ or $29\,\%$ has changed into thermal energy, so about half of that by B is reasonable, because B is halfway down the slope. Check: $600\,\text{J} + 100\,\text{J} = 700\,\text{J}$.
 
 ## fy2-1-L3-01

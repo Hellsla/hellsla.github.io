@@ -155,7 +155,7 @@
     {
       "id": "fy2-1-L1-10",
       "level": 1,
-      "text": "Vedenkeitin muuttaa sähköenergiaa lämpöenergiaksi. Oletetaan, että kaikki sähköenergia siirtyy veteen eikä lämpöä karkaa ympäristöön. Keittimessä on $0{,}50\\,\\text{kg}$ vettä. Veden lämpötila nousee $20\\,^\\circ\\text{C}$:sta $60\\,^\\circ\\text{C}$:een. Veden lämpöenergian kasvu lasketaan kaavalla $E = c\\,m\\,\\Delta T$. Tässä $c$ on veden ominaislämpökapasiteetti (se kertoo, kuinka paljon energiaa yhden kilogramman lämmittäminen yhdellä asteella vaatii), $m$ on massa ja $\\Delta T$ on lämpötilan muutos.\n\nHae veden ominaislämpökapasiteetti MAFY-taulukosta (mafytaulukot.fi). Vihje: arvo on lämpöopin ominaislämpökapasiteettien taulukossa, vesi-rivillä. Kuinka paljon sähköenergiaa keitin muuttaa lämpöenergiaksi?",
+      "text": "Vedenkeitin muuttaa sähköenergiaa lämpöenergiaksi. Oletetaan, että kaikki sähköenergia siirtyy veteen eikä lämpöä karkaa ympäristöön. Keittimessä on $0{,}50\\,\\text{kg}$ vettä. Veden lämpötila nousee $20\\,{}^\\circ\\text{C}$:sta $60\\,{}^\\circ\\text{C}$:een. Veden lämpöenergian kasvu lasketaan kaavalla $E = c\\,m\\,\\Delta T$. Tässä $c$ on veden ominaislämpökapasiteetti (se kertoo, kuinka paljon energiaa yhden kilogramman lämmittäminen yhdellä asteella vaatii), $m$ on massa ja $\\Delta T$ on lämpötilan muutos.\n\nHae veden ominaislämpökapasiteetti MAFY-taulukosta (mafytaulukot.fi). Vihje: arvo on lämpöopin ominaislämpökapasiteettien taulukossa, vesi-rivillä. Kuinka paljon sähköenergiaa keitin muuttaa lämpöenergiaksi?",
       "lookup": "MAFY",
       "answer": 83.8,
       "unit": "kJ",

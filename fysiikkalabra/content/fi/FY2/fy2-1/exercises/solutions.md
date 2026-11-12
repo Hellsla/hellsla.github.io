@@ -65,11 +65,11 @@
 **Mallivastaus:** Väitteet 1, 3 ja 5 ovat tosia. Mekaaninen energia $E_\text{p} + E_\text{k}$ pienenee jokaisessa pompussa, mutta pallon, lattian ja ilman kokonaisenergia pysyy samana. Lopussa pallolla ei ole enää liike-energiaa eikä lattiaa korkeammalta saatua potentiaalienergiaa, ja sama energia on lämpöenergiana pallossa, lattiassa ja ilmassa. Väitteet 2 ja 4 ovat epätosia: energia ei kulu loppuun, ja lämpöenergia on osa kokonaisenergiaa, joten kokonaisenergia ei vähene.
 
 ## fy2-1-L1-10
-**Annettu:** veden massa $m = 0{,}50\,\text{kg}$, lämpötila alussa $20\,^\circ\text{C}$ ja lopussa $60\,^\circ\text{C}$; taulukosta (MAFY-taulukko, ominaislämpökapasiteetit, vesi) $c = 4{,}19\,\text{kJ/(kg}\cdot\text{K)}$
+**Annettu:** veden massa $m = 0{,}50\,\text{kg}$, lämpötila alussa $20\,{}^\circ\text{C}$ ja lopussa $60\,{}^\circ\text{C}$; taulukosta (MAFY-taulukko, ominaislämpökapasiteetit, vesi) $c = 4{,}19\,\text{kJ/(kg}\cdot\text{K)}$
 **Kysytty:** keittimen lämpöenergiaksi muuttama sähköenergia $E$ yksikössä $\text{kJ}$
 **Periaate:** Kaikki sähköenergia siirtyy veteen eikä ympäristöön karkaa lämpöä, joten systeemi on eristetty ja energia säilyy: sähköenergian vähennys on yhtä suuri kuin veden lämpöenergian kasvu. Veden lämpöenergian kasvu on $E = c\,m\,\Delta T$.
 **Kaava:** $E_\text{sähkö} = E_\text{lämpö}$, ja $E_\text{lämpö} = c\,m\,\Delta T$, joten $E = c\,m\,\Delta T$
-**Muunnokset:** Lämpötilan muutos on sama celsiusasteina ja kelvineinä: $\Delta T = 60\,^\circ\text{C} - 20\,^\circ\text{C} = 40\,^\circ\text{C} = 40\,\text{K}$. Ominaislämpökapasiteetti on jo yksikössä $\text{kJ/(kg}\cdot\text{K)}$, joten vastaus tulee kilojouleina.
+**Muunnokset:** Lämpötilan muutos on sama celsiusasteina ja kelvineinä: $\Delta T = 60\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 40\,{}^\circ\text{C} = 40\,\text{K}$. Ominaislämpökapasiteetti on jo yksikössä $\text{kJ/(kg}\cdot\text{K)}$, joten vastaus tulee kilojouleina.
 **Sijoitus:** $E = 4{,}19\,\dfrac{\text{kJ}}{\text{kg}\cdot\text{K}} \cdot 0{,}50\,\text{kg} \cdot 40\,\text{K} = 83{,}8\,\text{kJ}$
 **Vastaus:** $E \approx 84\,\text{kJ}$, kaksi merkitsevää numeroa kuten massassa $0{,}50\,\text{kg}$. Taulukkoarvo $c = 4{,}19\,\text{kJ/(kg}\cdot\text{K)}$ on MAFY-taulukosta (kohta ominaislämpökapasiteetit, vesi); toisen taulukon pyöristys, esimerkiksi $4{,}18$, antaisi saman tuloksen kahden numeron tarkkuudella.
 **Järkevyys:** Karkea arvio: $4\,\text{kJ} \cdot 0{,}5 \cdot 40 = 80\,\text{kJ}$, joten tulos on oikean kokoluokan. Kilo vettä vaatii noin $4\,\text{kJ}$ yhtä astetta kohti, ja puoli litraa vettä lämpenee 40 astetta noin $84\,\text{kJ}$:lla eli keittimellä, jonka teho on $2\,\text{kW}$, noin $42\,\text{s}$:ssa, mikä on arkikokemukseen sopiva.
