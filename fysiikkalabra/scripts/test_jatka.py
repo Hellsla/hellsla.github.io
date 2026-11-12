@@ -71,7 +71,7 @@ with sync_playwright() as pw:
         expect(f"{name}: the first Tab stop is the skip link, in view, to the main content", first == ["skip", "#sisalto", True, True], first)
         pg.close()
     # 1b. no page built from the lesson template scrolls sideways on a phone, closed or with its stage list open: the long
-    # section names of an investigation or a guide go on the stage button and on the Seuraavaksi links (2026-11-10)
+    # section names of an investigation or a guide go on the stage button (2026-11-10)
     kinds = [n for n in (f"{OPEN}.html", "fy10-heiluri.html", "tvt-kuvaaja.html", f"{COURSE}-koe.html", f"{COURSE}-sovella.html", "en/fy14-plasma.html", f"fi-easy/{OPEN}.html") if (SITE / n).exists()]
     for name in kinds:
         for w in (320, 360):

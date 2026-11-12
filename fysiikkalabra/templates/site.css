@@ -2210,9 +2210,7 @@ main.home>.resume{margin:0 0 1rem}
 /* a long name (an investigation's "Tutkimuskysymyksestä mitattaviksi suureiksi") goes under the label on a phone instead of pushing the page wider (found at 360 px, 2026-11-10) */
 .next-stage a{flex-wrap:wrap}.next-stage a strong{flex:1 1 12rem;min-width:0;overflow-wrap:break-word}
 .next-stage a:hover{border-color:var(--accent-deep);background:var(--accent-soft)}
-.next-stage.is-waiting a{border-style:dashed;background:transparent}.next-stage.is-waiting a::after{content:"\2191"}
-.next-stage-l{font:700 var(--fs-small)/1.2 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--accent-deep)}
-html.tasks-split #exercises+.next-stage{display:none}   /* in the side panel the exercises are beside the lesson, not before the next stage */
+.next-stage.is-waiting a{border-style:dashed;background:transparent}.next-stage.is-waiting a::after{content:"\2191"}   /* the only such row since 2026-11-12: the reminder after Ennusta while its predictions are missing (lesson.js lockNext) */
 @media print{.next-stage{display:none!important}}
 
 /* A theme on its own row over its tiles (teacher 2026-11-10, variant B of the module page comparison; cardgrid.py

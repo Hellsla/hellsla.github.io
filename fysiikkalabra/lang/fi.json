@@ -423,7 +423,6 @@
     "ra_fallback": "Puheääntä ei voitu ladata, joten selain lukee laitteen omalla äänellä.",
     "stage_done": "tehty",
     "toc_stage": "Vaihe",
-    "next_stage": "Seuraavaksi",
     "ex_core_done": "Ydintehtävät {{n}}/{{total}} tehty",
     "ex_level_done": "{{n}}/{{total}} tehty",
     "ra_settings": "Kuuntelun asetukset",
