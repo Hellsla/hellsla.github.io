@@ -37,7 +37,7 @@
 ## fy2-1-L1-05
 **Given:** potential energy of the sledge at the top $E_\text{p} = 600\,\text{J}$, energy changed into thermal energy by friction $E_\text{thermal} = 90\,\text{J}$, potential energy at the bottom of the hill $0\,\text{J}$
 **Find:** kinetic energy $E_\text{k}$ at the bottom of the hill in $\text{J}$
-**Principle:** The skater, the half-pipe and the surroundings form an isolated system, so energy is conserved: $E_\text{initial} = E_\text{final}$. At the start all the energy is potential energy, and at the end it is kinetic energy and thermal energy, into which friction has changed part of it.
+**Principle:** The sledge, the hill and the surroundings form an isolated system, so energy is conserved: $E_\text{initial} = E_\text{final}$. At the start all the energy is potential energy, and at the end it is kinetic energy and thermal energy, into which friction has changed part of it.
 **Formula:** $E_\text{p} = E_\text{k} + E_\text{thermal}$, so $E_\text{k} = E_\text{p} - E_\text{thermal}$
 **Conversions:** All energies are in joules, so no conversions are needed.
 **Substitution:** $E_\text{k} = 600\,\text{J} - 90\,\text{J} = 510\,\text{J}$

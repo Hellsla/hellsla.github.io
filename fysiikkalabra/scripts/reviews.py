@@ -433,6 +433,18 @@ def _passed_before(folder, name, part="exercises", n=40):
     return out
 
 
+def _last_pass(folder, name, part="lesson", n=40):
+    """The CONTENT-HASH of the newest PASS report this reviewer wrote for `part` in the last n commits of its report
+    file, or None (scope after a FAIL)."""
+    rel = (review_dir(folder, part) / f"{name}.md").relative_to(ROOT).as_posix()
+    for c in (git("log", "--format=%H", "-n", str(n), "--", rel) or "").split():
+        lines = (git("show", f"{c}:./{rel}") or "").splitlines()[:3]
+        if lines and lines[0].strip() == "VERDICT: PASS":
+            h = next((l.split(":", 1)[1].strip() for l in lines if l.startswith("CONTENT-HASH:")), None)
+            if h: return h
+    return None
+
+
 def write_legacy(folder):
     s = status(folder)                               # the lesson only: an exercise set is reviewed or not shown
     if s["state"] == "reviewed": sys.exit(f"{folder.name} is reviewed by the two-review pipeline; it needs no legacy marker")
@@ -1384,6 +1396,12 @@ def scope(folder, part="lesson"):
     for name in REVIEWS:
         rep = report(folder, name, part)
         full = lambda why: {"mode": "full", "base": None, "from": None, "why": why, "diff": "", "categories": []}
+        if rep is not None and rep[0] != "PASS":
+            # a FAIL of a later round: the scope is measured from the newest version this reviewer passed, so a fix
+            # round after a delta FAIL stays a delta (its packet still carries the FAIL report as the previous report);
+            # without an earlier PASS it is full as before (teacher 2026-11-12, the exercise bank's added tasks)
+            last = _last_pass(folder, name, part)
+            if last: rep = ("PASS", last)
         if rep is None or rep[0] != "PASS":
             bl = baseline_hashes("lesson", courses.lang_of(folder), folder.name, part) if name == VISUAL else set()
             if not bl: out[name] = full("no earlier PASS"); continue
