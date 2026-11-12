@@ -125,3 +125,10 @@ Visual
 Checks rerun: practice.py figures/check (6 tasks, 95 p), units.py figures/check (OK), build fy9-tasavirta, check_layout 360 and 1280 OK, Playwright at 390 and 1280: no console errors, no raw $, no .katex-error, scroll width equals viewport.
 
 Shared issues (round 1): the source-note badge should use a smaller border radius when the note wraps to several lines (visual P1).
+
+## Ratkaisutavan tarkistus (2026-11-12)
+- s2 d): hinnalle symboli $a$ Annettuun; muunnos $436{,}8\,\text{Wh}$ vastaa Sijoitusta.
+- s3 b): Kaava määrittelee $U(0)$, $\Delta U$, $\Delta I$ ja yhden pariston arvot $E_1$, $R_{\text{s}1}$.
+- s3 d): osuus ratkaistu symbolein $P/(EI) = R/(R+R_\text{s})$.
+- s6 a): Kaavaan $Pt = Q = cm\Delta T$, koska Sijoitus laskee $Q$:n.
+- inquiry (vedenkeitin): symbolit $n$, $t_1$, $N$ ja $t = Nnt_1$ Kaavaan.

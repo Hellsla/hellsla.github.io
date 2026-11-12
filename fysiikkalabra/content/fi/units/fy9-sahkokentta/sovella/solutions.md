@@ -287,7 +287,7 @@
 **Kysytty:** suoran ja pystyakselin leikkauspiste $b$, sen tulkinta ja mallin pätevyysalue
 **Periaate:** Leikkauspiste on suoran arvo, kun $\tfrac{1}{d} \to 0$ eli levyt ovat hyvin kaukana toisistaan. Silloin levyjen keskinäinen kapasitanssi häviää, ja jäljelle jää se osa, jonka mittari mittaa joka tapauksessa. Levykondensaattorin malli edellyttää homogeenista kenttää, joten etäisyyden on oltava pieni levyjen kokoon verrattuna (luvut *Graafinen esitys ja suoran sovittaminen* ja *Kondensaattori ja sen energia*).
 **Kuvaajan lukeminen:** Suoran katkoviivajatke leikkaa pystyakselin noin $22\,\text{pF}$:n kohdalla, joka on kuvaajassa merkitty oranssilla pisteellä.
-**Kaava:** $C = k \cdot \tfrac{1}{d} + b$, joten $b = C_1 - k \cdot \tfrac{1}{d_1}$
+**Kaava:** $C = k \cdot \tfrac{1}{d} + b$, joten $b = C_1 - k \cdot \tfrac{1}{d_1}$, missä $\left(\tfrac{1}{d_1};\ C_1\right)$ on suoran piste
 **Muunnokset:** Ei tarvita: kulmakerroin ja suureen $\tfrac{1}{d}$ arvo ovat yksiköissä $\text{pF}\cdot\text{mm}$ ja $\tfrac{1}{\text{mm}}$, joten tulo on pikofaradeina.
 **Sijoitus:** $b = 93\,\text{pF} - 353{,}8\,\text{pF}\cdot\text{mm} \cdot 0{,}20\,\tfrac{1}{\text{mm}} = 93\,\text{pF} - 70{,}8\,\text{pF} = 22{,}2\,\text{pF}$
 **Vastaus:** $b \approx 22\,\text{pF}$, kaksi merkitsevää numeroa, koska se on kahden lähes yhtä suuren luvun erotus.
