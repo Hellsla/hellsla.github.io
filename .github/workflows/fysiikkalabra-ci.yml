@@ -106,7 +106,7 @@ jobs:
       - name: built pages are accessible as static HTML (field names, aria references, unique ids, figure text alternatives, button names, page language; teacher 2026-10-30)
         run: python scripts/check_a11y.py site
       - name: a figure shown twice on a page has its own SVG ids (teacher 2026-10-29)
-        run: python scripts/test_svgids.py && python scripts/svgids.py site
+        run: python scripts/test_svgids.py && python scripts/svgids.py site && python scripts/test_figsize.py
       - name: force diagrams obey their physics (scripts/fbd.py, docs/force-diagrams.md)
         run: python scripts/test_fbd.py
       - name: every "Voimakuvio" step of a model solution shows a drawn force diagram, and every ```voimakuvio spec draws with its physics checked (scripts/fbdspec.py, teacher 2026-10-30)
