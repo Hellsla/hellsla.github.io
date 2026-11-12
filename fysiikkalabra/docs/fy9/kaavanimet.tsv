@@ -1,0 +1,139 @@
+yksikkö	rivi	kaava	nimi	lähde	MAFY-sivu	huomio
+fy9-aallot	236	f = \frac{1}{T}	taajuus	MAFY	Aaltoliikkeen kaavoja	
+fy9-aallot	236	F = -kx	harmoninen voima	MAFY, eri muoto	Mekaniikan kaavoja	MAFY vektorina: $\overline F = -k\overline x$
+fy9-aallot	236	T = 2\pi\sqrt{\frac{m}{k}}	harmonisen värähtelijän jaksonaika	MAFY	Aaltoliikkeen kaavoja	
+fy9-aallot	236	T = 2\pi\sqrt{\frac{l}{g}}	matemaattisen heilurin jaksonaika	MAFY	Aaltoliikkeen kaavoja	
+fy9-aallot	249	v = f\lambda	aaltoliikkeen perusyhtälö	MAFY	Aaltoliikkeen kaavoja	
+fy9-aallot	249	\Delta s = n\lambda	vahvistava interferenssi	ehdotus		ei MAFY:ssa
+fy9-aallot	249	\Delta s = \left(n + \tfrac12\right)\lambda	heikentävä interferenssi	ehdotus		ei MAFY:ssa
+fy9-aallot	295	f_\text{h} = |f_1 - f_2|	huojunta	MAFY	Aaltoliikkeen kaavoja	MAFY: $f_H$
+fy9-aallot	295	f = f_0 \cdot \frac{v}{v \mp v_\text{s}}	Dopplerin ilmiö, äänilähde liikkuu	MAFY, eri muoto	Aaltoliikkeen kaavoja	MAFY:ssa kaksi riviä: äänilähde liikkuu kohti havaitsijaa ($-$) / pois päin havaitsijasta ($+$); lähteen nopeus $v_L$
+fy9-aallot	295	f = f_0 \cdot \frac{v \pm v_\text{h}}{v}	Dopplerin ilmiö, havaitsija liikkuu	MAFY, eri muoto	Aaltoliikkeen kaavoja	MAFY:ssa kaksi riviä: havaitsija liikkuu kohti äänilähdettä ($+$) / pois päin äänilähteestä ($-$); $v_H$
+fy9-aallot	295	I = \frac{P}{4\pi r^2}	intensiteetti	MAFY, eri muoto	Aaltoliikkeen kaavoja	MAFY: $I = \frac{P}{A}$; tässä pistelähde, $A = 4\pi r^2$
+fy9-aallot	295	L = 10\,\text{dB} \cdot \lg \frac{I}{I_0}	äänen intensiteettitaso	MAFY	Aaltoliikkeen kaavoja	
+fy9-energia	261	E_\text{alussa} = E_\text{lopussa}	energian säilymislaki	ehdotus		MAFY:ssa vain mekaanisen energian säilymislaki
+fy9-energia	267	P = \frac{\Delta E}{\Delta t}	teho	MAFY	Mekaniikan kaavoja	MAFY: $P = \frac{W}{\Delta t} = \frac{\Delta E}{\Delta t}$
+fy9-energia	273	1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}	kilowattitunti jouleina	ehdotus	Yksikkömuunnoksia	yksikkömuunnos (MAFY: energia/työ, kilowattitunti); voi jättää nimettä
+fy9-energia	279	\eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}	hyötysuhde	MAFY	Mekaniikan kaavoja	MAFY: $\eta = \frac{W_a}{W_o} = \frac{P_a}{P_o}$
+fy9-energia	287	\eta = \eta_1\,\eta_2\,\eta_3	energiaketjun kokonaishyötysuhde	ehdotus		ei MAFY:ssa
+fy9-energia	328	E = Hm	palamisessa vapautuva lämpö	MAFY, eri muoto	Termodynamiikan kaavoja	MAFY: $Q = Hm$
+fy9-energia	328	W = Fs	voiman tekemä työ	MAFY	Mekaniikan kaavoja	
+fy9-kaasut	251	p = \frac{F}{A}	voiman aiheuttama paine	MAFY	Mekaniikan kaavoja	
+fy9-kaasut	257	p = p_0 + \rho g h	hydrostaattinen paine	MAFY, eri muoto	Mekaniikan kaavoja	MAFY: $p = \rho g h$ ilman ulkoista painetta $p_0$; vaihtoehto: paine nesteessä syvyydellä $h$
+fy9-kaasut	265	pV = nRT	ideaalikaasun tilanyhtälö	MAFY	Termodynamiikan kaavoja	
+fy9-kaasut	271	\frac{p_1 V_1}{T_1} = \frac{p_2 V_2}{T_2}	tilanyhtälö vakioainemäärälle	MAFY, eri muoto	Termodynamiikan kaavoja	MAFY: $\frac{pV}{T} = \text{vakio}$
+fy9-kaasut	277	T = \theta + 273{,}15\,\text{K}	lämpötila kelvineinä	ehdotus	Yksikkömuunnoksia	MAFY: lämpötila, $0\,°\text{C} = 273{,}15\,\text{K}$
+fy9-kaasut	287	W_\text{k} = p\,\Delta V	kaasun tekemä laajenemistyö / kaasuun tehty puristustyö	MAFY, eri muoto	Termodynamiikan kaavoja	MAFY: $W = p\Delta V$
+fy9-kaasut	293	\Delta U = Q - W_\text{k}	lämpöopin 1. pääsääntö	MAFY, eri muoto	Termodynamiikan kaavoja	MAFY: $\Delta U = Q + W$, jossa $W$ on kaasuun tehty työ; tässä $W_\text{k}$ on kaasun tekemä työ (eri etumerkki)
+fy9-kaasut	299	W = Q_1 - Q_2	lämpövoimakoneen tekemä työ	ehdotus	Termodynamiikan kaavoja	MAFY:ssa osana lämpövoimakoneen hyötysuhdetta $\eta = \frac{Q_1 - Q_2}{Q_1}$
+fy9-kaasut	305	\eta = \frac{W}{Q_1}	lämpövoimakoneen hyötysuhde	MAFY	Termodynamiikan kaavoja	
+fy9-koe	295	Q = cm(T_2 - T_1)	siirtynyt lämpömäärä	MAFY, eri muoto	Termodynamiikan kaavoja	esimerkin kaava; MAFY: $Q = cm\Delta T$
+fy9-koe	306	Q = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 145\,\text{kg} \cdot 28{,}0\,\text{K} \\ = 17\,011\,400\,\text{J} \\ = \frac{17\,011\,400\,\text{J}}{3{,}6 \cdot 10^{6}\,\text{J/kWh}} \\ = 4{,}7254\,\text{kWh}		ei nimetä		esimerkin sijoitus ja lasku, ei kaava
+fy9-kokeellisuus	200	\bar{x} = \frac{x_1 + x_2 + \dots + x_n}{n}	keskiarvo	MAFY	Tilastollisia tunnuslukuja	
+fy9-kokeellisuus	200	\Delta x = \frac{x_\text{max} - x_\text{min}}{2}	mittaustuloksen epävarmuus	ehdotus		ei MAFY:ssa (MAFY:ssa vaihteluvälin pituus $\Delta$)
+fy9-kokeellisuus	209	\varepsilon = \frac{\Delta x}{\bar{x}}	suhteellinen epävarmuus	ehdotus		ei MAFY:ssa
+fy9-kokeellisuus	218	y = kx + b	suoran yhtälö	ehdotus	Suora	MAFY:n Suora-sivulla ei ratkaistua muotoa $y = kx + b$
+fy9-lampo	159	T = \theta + 273{,}15	lämpötila kelvineinä	ehdotus	Yksikkömuunnoksia	MAFY: lämpötila, $0\,°\text{C} = 273{,}15\,\text{K}$
+fy9-lampo	165	\Delta U = Q + W	lämpöopin 1. pääsääntö	MAFY	Termodynamiikan kaavoja	
+fy9-lampo	173	Q = cm\Delta T	siirtynyt lämpömäärä	MAFY	Termodynamiikan kaavoja	MAFY: $Q = C\Delta T = cm\Delta T$
+fy9-lampo	179	Q = sm	sulamislämpö	MAFY	Termodynamiikan kaavoja	
+fy9-lampo	179	Q = rm	höyrystymislämpö	MAFY	Termodynamiikan kaavoja	
+fy9-lampo	260	Q_\text{luovutettu} = Q_\text{vastaanotettu}	lämpötase	ehdotus		ei MAFY:ssa; vaihtoehto: luovutettu lämpö = vastaanotettu lämpö
+fy9-lampo	268	\Delta L = \alpha L_0 \Delta T	pituuden lämpölaajeneminen	MAFY, eri muoto	Termodynamiikan kaavoja	MAFY: $l = l_0(1 + \alpha\Delta T)$
+fy9-lampo	268	\Delta V = \gamma V_0 \Delta T	tilavuuden lämpölaajeneminen	MAFY, eri muoto	Termodynamiikan kaavoja	MAFY: $V = V_0(1 + \gamma\Delta T)$
+fy9-lampo	276	P = UA\Delta T	rakennusosan läpi johtuva lämpöteho	ehdotus		ei MAFY:ssa
+fy9-liike	301	v_\text{ka} = \frac{\Delta x}{\Delta t}	keskinopeus	MAFY, eri muoto	Mekaniikan kaavoja	MAFY: $\bar v_k = \frac{\Delta\bar x}{\Delta t}$
+fy9-liike	307	x = x_0 + v\,t	paikka tasaisessa suoraviivaisessa liikkeessä	ehdotus	Mekaniikan kaavoja	MAFY:n nimeämistapaan; MAFY:ssa vain tasaisesti kiihtyvä
+fy9-liike	317	a = \frac{\Delta v}{\Delta t}	keskikiihtyvyys	MAFY, eri muoto	Mekaniikan kaavoja	MAFY vektorina: $\overline a_k = \frac{\Delta\overline v}{\Delta t}$
+fy9-liike	323	v = v_0 + a\,t	nopeus tasaisesti kiihtyvässä suoraviivaisessa liikkeessä	MAFY	Mekaniikan kaavoja	
+fy9-liike	323	x = x_0 + v_0\,t + \tfrac{1}{2}\,a\,t^2	paikka tasaisesti kiihtyvässä suoraviivaisessa liikkeessä	MAFY	Mekaniikan kaavoja	
+fy9-liike	336	\Delta x = \frac{v_0 + v}{2}\,t	siirtymä tasaisesti kiihtyvässä suoraviivaisessa liikkeessä	ehdotus		ei MAFY:ssa (keskinopeuden avulla)
+fy9-liike	389	x_\text{A}(t) = x_\text{B}(t)	kohtaamisehto	ehdotus		ehto, ei kaava; voi jättää nimettä
+fy9-magnetismi-valo	186	F = qvB\sin\alpha	varattuun hiukkaseen kohdistuva magneettinen voima	MAFY, eri muoto	Sähkömagnetismin kaavoja	MAFY: $F_M = QvB_\perp$
+fy9-magnetismi-valo	186	r = \frac{mv}{qB}	varatun hiukkasen ympyräradan säde magneettikentässä	ehdotus		ei MAFY:ssa
+fy9-magnetismi-valo	186	F = IlB\sin\alpha	suoraan johtimeen kohdistuva magneettinen voima	MAFY, eri muoto	Sähkömagnetismin kaavoja	MAFY: $F_M = I\ell B_\perp$
+fy9-magnetismi-valo	186	B = \frac{\mu_0 I}{2\pi r}	suoran virtajohtimen magneettivuon tiheys	MAFY	Sähkömagnetismin kaavoja	
+fy9-magnetismi-valo	186	B = \mu_0 \frac{NI}{l}	pitkän käämin magneettivuon tiheys	MAFY	Sähkömagnetismin kaavoja	
+fy9-magnetismi-valo	292	e = -N\frac{\Delta\Phi}{\Delta t}	käämiin indusoituva jännite	MAFY	Sähkömagnetismin kaavoja	MAFY:ssa myös induktiolaki ilman $N$:ää
+fy9-magnetismi-valo	292	e_0 = NBA \cdot 2\pi f	generaattorissa käämiin indusoituvan sinimuotoisen vaihtojännitteen huippuarvo	MAFY, eri muoto	Sähkömagnetismin kaavoja	MAFY: $u_0 = NAB\cdot 2\pi f$
+fy9-magnetismi-valo	292	U = \frac{U_0}{\sqrt{2}}	sinimuotoisen vaihtojännitteen tehollinen arvo	MAFY, eri muoto	Sähkömagnetismin kaavoja	MAFY: $U_\text{eff} = \frac{u_0}{\sqrt2}$
+fy9-magnetismi-valo	292	\frac{U_1}{U_2} = \frac{N_1}{N_2} = \frac{I_2}{I_1}	muuntaja	MAFY, eri muoto	Sähkömagnetismin kaavoja	MAFY: virroille $\approx$; tässä ideaalinen muuntaja
+fy9-magnetismi-valo	292	P_\text{h} = RI^2	siirtojohdon tehohäviö	ehdotus		ei MAFY:ssa
+fy9-magnetismi-valo	306	c = f\lambda	aaltoliikkeen perusyhtälö	MAFY	Aaltoliikkeen kaavoja	valolle
+fy9-magnetismi-valo	306	\lambda_\text{max} T = b	Wienin siirtymälaki	MAFY, eri muoto	Atomi-, säteily- ja ydinfysiikan kaavoja	MAFY: $\lambda_\text{max} = \frac{b}{T}$
+fy9-magnetismi-valo	306	n_1\sin\alpha_1 = n_2\sin\alpha_2	taittumislaki (Snellin laki)	MAFY, eri muoto	Aaltoliikkeen kaavoja	MAFY: $\frac{\sin\alpha_1}{\sin\alpha_2} = \frac{v_1}{v_2} = \frac{n_2}{n_1}$
+fy9-magnetismi-valo	306	\sin\alpha_\text{r} = \frac{n_2}{n_1}	kokonaisheijastuksen rajakulma	ehdotus		ei MAFY:ssa
+fy9-magnetismi-valo	306	d\sin\theta = k\lambda	hilayhtälö	MAFY, eri muoto	Aaltoliikkeen kaavoja	MAFY: $d\sin\alpha = n\lambda$
+fy9-magnetismi-valo	306	I = I_0\cos^2\theta	Malusin laki	ehdotus		ei MAFY:ssa
+fy9-mittaaminen	204	\Delta x = \frac{x_\text{max} - x_\text{min}}{2}	mittaustuloksen epävarmuus	ehdotus		ei MAFY:ssa
+fy9-mittaaminen	204	\varepsilon = \frac{\Delta x}{\bar{x}} \cdot 100\,\%	suhteellinen epävarmuus	ehdotus		ei MAFY:ssa
+fy9-mittaaminen	219	y = kx + b	suoran yhtälö	ehdotus	Suora	MAFY:n Suora-sivulla ei ratkaistua muotoa $y = kx + b$
+fy9-mittaaminen	219	k = \frac{\Delta y}{\Delta x}	kulmakerroin	MAFY	Suora	
+fy9-mittaaminen	306	\Delta k = \frac{k_\text{max} - k_\text{min}}{2}	kulmakertoimen epävarmuus	ehdotus		ei MAFY:ssa
+fy9-mittaaminen	316	s = \tfrac{a}{2} \cdot t^2	matka levosta tasaisesti kiihtyvässä liikkeessä	ehdotus		linearisoinnin esimerkki; voi jättää nimettä
+fy9-mittaaminen	316	p = C \cdot \tfrac{1}{V}	Boylen laki	ehdotus		linearisoinnin esimerkki; MAFY:ssa osana tilanyhtälöä
+fy9-mittaaminen	316	m = \rho V + m_0	astian ja nesteen yhteinen massa	ehdotus		linearisoinnin esimerkki; voi jättää nimettä
+fy9-moderni	507	E = hf = \frac{hc}{\lambda}	fotonin energia	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	
+fy9-moderni	507	hf = W + E_\text{k,max}	valosähköinen ilmiö	ehdotus		ei MAFY:n kaavoissa (MAFY:ssa irrotustöiden taulukko)
+fy9-moderni	507	hf = E_\text{y} - E_\text{a}	atomin lähettämän tai absorboiman fotonin energia	ehdotus		ei MAFY:ssa (MAFY:ssa vetyatomin energiatasot)
+fy9-moderni	507	p = \frac{h}{\lambda}	fotonin liikemäärä	MAFY, eri muoto	Atomi-, säteily- ja ydinfysiikan kaavoja	MAFY: $p = \frac{E}{c} = \frac{h}{\lambda}$
+fy9-moderni	520	N = N_0 \left(\tfrac12\right)^{t/T_{1/2}}	hajoamislaki	MAFY, eri muoto	Atomi-, säteily- ja ydinfysiikan kaavoja	MAFY: $N = N_0 e^{-\lambda t}$
+fy9-moderni	520	A = \lambda N	aktiivisuus	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	
+fy9-moderni	520	\lambda = \frac{\ln 2}{T_{1/2}}	hajoamisvakio	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	
+fy9-moderni	520	Q = (m_\text{alku} - m_\text{loppu})\,c^2	ydinreaktiossa vapautuva energia	MAFY, eri muoto	Atomi-, säteily- ja ydinfysiikan kaavoja	MAFY: $E = \Delta m c^2$, $\Delta m = m_\text{lähtöaineet} - m_\text{tuotteet}$
+fy9-moderni	589	D = \frac{E}{m}	absorboitunut annos	ehdotus		ei MAFY:n kaavoissa
+fy9-moderni	589	H_\text{T} = w_\text{R} D_\text{T}	ekvivalenttiannos	MAFY, eri muoto	Atomi-, säteily- ja ydinfysiikan kaavoja	MAFY: $H = w_R D$
+fy9-moderni	589	H = \dot{H} t	annos annosnopeudesta	ehdotus		ei MAFY:ssa
+fy9-moderni	589	\dot{H}_2 = \dot{H}_1 \left(\frac{r_1}{r_2}\right)^2	annosnopeus etäisyyden funktiona	ehdotus		ei MAFY:ssa
+fy9-moderni	589	\dot{H} = \dot{H}_0 \left(\tfrac12\right)^{d/d_{1/2}}	heikennyslaki	MAFY, eri muoto	Atomi-, säteily- ja ydinfysiikan kaavoja	MAFY: $I = I_0 e^{-\mu x}$; tässä puoliintumispaksuuden avulla
+fy9-sahkokentta	267	Q = ne	varaus alkeisvarauksen monikertana	ehdotus		ei MAFY:ssa
+fy9-sahkokentta	267	F = k\,\frac{\lvert q_1 q_2 \rvert}{r^2}	Coulombin voiman suuruus	MAFY, eri muoto	Sähköstatiikan kaavoja	MAFY: $F_E = k\,\frac{Q_1 Q_2}{r^2}$
+fy9-sahkokentta	267	\overline{F} = q\overline{E}	sähkökentän voimakkuus	MAFY, eri muoto	Sähköstatiikan kaavoja	MAFY: $E = \frac{F_E}{Q}$
+fy9-sahkokentta	267	E = \frac{U}{d}	jännite homogeenisessa sähkökentässä	MAFY, eri muoto	Sähköstatiikan kaavoja	MAFY: $U = Ed$
+fy9-sahkokentta	353	E_\text{p} = qV	sähkökentän potentiaali	MAFY, eri muoto	Sähköstatiikan kaavoja	MAFY: $V = \frac{E_p}{Q}$
+fy9-sahkokentta	353	W_{AB} = qU_{AB}	sähkökentän tekemä työ	MAFY, eri muoto	Sähköstatiikan kaavoja	MAFY: $W = QU$
+fy9-sahkokentta	353	\tfrac12 mv^2 = \lvert q \rvert U	sähkökentässä kiihdytetyn hiukkasen liike-energia	ehdotus		ei MAFY:ssa (työperiaate)
+fy9-sahkokentta	365	C = \frac{Q}{U}	kondensaattorilaki	MAFY, eri muoto	Virtapiirien kaavoja	MAFY: $Q = CU$
+fy9-sahkokentta	365	C = \frac{\varepsilon_0\varepsilon_\text{r}A}{d}	levykondensaattorin kapasitanssi	MAFY	Virtapiirien kaavoja	
+fy9-sahkokentta	365	W = \tfrac12 QU = \tfrac12 CU^2	kondensaattorin energia	MAFY, eri muoto	Virtapiirien kaavoja	MAFY: $E = \frac12 CU^2$
+fy9-sahkokentta	365	U_\text{max} = E_\text{max}d	läpilyöntijännite	ehdotus		ei MAFY:n kaavoissa (MAFY:ssa läpilyöntikestävyyksien taulukko)
+fy9-sahkokentta	378	R = \frac{U - U_\text{D}}{I}	LEDin etuvastus	ehdotus		ei MAFY:ssa
+fy9-sahkokentta	378	\eta = \frac{P}{GA}	aurinkokennon hyötysuhde	ehdotus		ei MAFY:ssa
+fy9-sahkokentta	378	I = \frac{U}{R}	kehon läpi kulkeva virta	ehdotus	Virtapiirien kaavoja	MAFY:ssa $U = RI$ nimellä jännitehäviö johtimessa
+fy9-sailymislait	306	E_\text{k} = \tfrac{1}{2}\,mv^2	liike-energia	MAFY	Mekaniikan kaavoja	
+fy9-sailymislait	306	E_\text{p} = mgh	painovoimaan liittyvä potentiaalienergia maanpinnalla	MAFY	Mekaniikan kaavoja	
+fy9-sailymislait	315	E_{\text{k},1} + E_{\text{p},1} + W_\text{muut} = E_{\text{k},2} + E_{\text{p},2}	mekaniikan energiaperiaate	MAFY, eri muoto	Mekaniikan kaavoja	MAFY: $E_{p0} + E_{k0} + W = E_p + E_k$
+fy9-sailymislait	323	\overline{p} = m\overline{v}	liikemäärä	MAFY	Mekaniikan kaavoja	
+fy9-sailymislait	323	\Sigma\overline{F}\,\Delta t = \Delta\overline{p}	impulssi-liikemääräperiaate	MAFY, eri muoto	Mekaniikan kaavoja	MAFY: $\bar I = \bar F\Delta t$ (voiman impulssi) ja $\bar I = \Delta\bar p$
+fy9-sailymislait	332	m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'	liikemäärän säilymislaki	ehdotus		ei MAFY:ssa
+fy9-sailymislait	342	s_\text{p} = v_0\,t_\text{r} + \frac{v_0^2}{2a}	pysähtymismatka	ehdotus		ei MAFY:ssa
+fy9-sailymislait	342	P_\text{vesi} = \eta\rho Qgh	vesivoimalan teho	ehdotus		ei MAFY:ssa
+fy9-sailymislait	342	P_\text{tuuli} = \tfrac12\eta\rho Av^3	tuulivoimalan teho	ehdotus		ei MAFY:ssa
+fy9-tasavirta	257	I = \frac{Q}{t}	sähkövirta	MAFY, eri muoto	Sähkömagnetismin kaavoja	MAFY: $I = \frac{\Delta Q}{\Delta t}$
+fy9-tasavirta	257	R = \frac{U}{I}	jännitehäviö johtimessa	MAFY, eri muoto	Virtapiirien kaavoja	MAFY: $U = RI$
+fy9-tasavirta	257	R = \rho\,\frac{l}{A}	johtimen resistanssi	MAFY	Virtapiirien kaavoja	
+fy9-tasavirta	269	R = R_1 + R_2 + \dots	sarjaan kytkettyjen vastusten kokonaisresistanssi	MAFY	Virtapiirien kaavoja	
+fy9-tasavirta	269	\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \dots	rinnan kytkettyjen vastusten kokonaisresistanssi	MAFY	Virtapiirien kaavoja	
+fy9-tasavirta	269	\sum I_\text{tulevat} = \sum I_\text{lähtevät}	Kirchhoffin 1. laki	MAFY	Virtapiirien kaavoja	
+fy9-tasavirta	269	\sum \Delta V = 0	Kirchhoffin 2. laki	MAFY	Virtapiirien kaavoja	
+fy9-tasavirta	282	P = UI	tehonkulutus johtimessa	MAFY	Virtapiirien kaavoja	
+fy9-tasavirta	282	P = RI^2 = \frac{U^2}{R}	tehonkulutus resistanssin avulla	ehdotus	Virtapiirien kaavoja	MAFY:ssa vain $P = UI$
+fy9-tasavirta	282	E = Pt	sähkölaitteen kuluttama energia	ehdotus	Mekaniikan kaavoja	MAFY:ssa teho $P = \frac{\Delta E}{\Delta t}$
+fy9-tasavirta	294	U = E - R_\text{s} I	jännitelähteen napajännite	ehdotus		ei MAFY:ssa
+fy9-tasavirta	294	I = \frac{E}{R + R_\text{s}}	virta suljetussa virtapiirissä	ehdotus		ei MAFY:ssa
+fy9-tasavirta	294	Q = It	sähkövirta	MAFY, eri muoto	Sähkömagnetismin kaavoja	MAFY: $I = \frac{\Delta Q}{\Delta t}$
+fy9-voimat	190	\Sigma\overline{F} = \overline{0} \ \Leftrightarrow\ \overline{v} = \text{vakio}	Newtonin 1. laki (jatkavuuden laki)	ehdotus		ei MAFY:ssa
+fy9-voimat	190	\Sigma\overline{F} = m\overline{a}	Newtonin 2. laki (dynamiikan peruslaki)	MAFY	Mekaniikan kaavoja	
+fy9-voimat	190	\overline{F}_{AB} = -\overline{F}_{BA}	Newtonin 3. laki (voiman ja vastavoiman laki)	ehdotus		ei MAFY:ssa
+fy9-voimat	202	G = mg	kappaleeseen vaikuttava painovoima Maan pinnalla	MAFY, eri muoto	Mekaniikan kaavoja	MAFY vektorina: $\overline G = m\overline g$
+fy9-voimat	202	F_\mu = \mu N	liukukitka	MAFY	Mekaniikan kaavoja	
+fy9-voimat	202	F_{\mu 0} \le \mu_0 N	lepokitka	ehdotus	Mekaniikan kaavoja	MAFY: lähtökitka, eli täysin kehittynyt lepokitka $F_{\mu_0} = \mu_0 N$; tässä epäyhtälö
+fy9-ympyraliike	254	M = Fr	voiman momentti	MAFY	Mekaniikan kaavoja	
+fy9-ympyraliike	254	\Sigma\overline{F} = \overline{0}	voimien tasapainoehto	ehdotus		ei MAFY:ssa
+fy9-ympyraliike	254	\Sigma M = 0	momenttien tasapainoehto	ehdotus		ei MAFY:ssa
+fy9-ympyraliike	310	v = \frac{2\pi r}{T} = 2\pi r f	ratanopeus	MAFY, eri muoto	Mekaniikan kaavoja	MAFY: $v = \omega r$
+fy9-ympyraliike	310	a_\text{n} = \frac{v^2}{r}	keskeiskiihtyvyys	MAFY, eri muoto	Mekaniikan kaavoja	MAFY: $a_n = \frac{v^2}{r} = \omega^2 r$
+fy9-ympyraliike	310	\Sigma F = m\frac{v^2}{r}	Newtonin 2. laki ympyräliikkeessä	ehdotus	Mekaniikan kaavoja	MAFY:ssa Newtonin 2. laki yleisenä
+fy9-ympyraliike	322	F = \gamma\frac{m_1 m_2}{r^2}	Newtonin gravitaatiolaki	MAFY, eri muoto	Mekaniikan kaavoja	MAFY: $F_g = \gamma\frac{m_1 m_2}{r^2}$
+fy9-ympyraliike	322	g = \gamma\frac{M}{r^2}	gravitaatiokentän voimakkuus	ehdotus		ei MAFY:ssa
+fy9-ympyraliike	322	v = \sqrt{\frac{\gamma M}{r}}	satelliitin ratanopeus	ehdotus		ei MAFY:ssa
