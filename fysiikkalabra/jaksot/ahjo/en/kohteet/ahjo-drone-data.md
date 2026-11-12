@@ -127,7 +127,7 @@ Attach to your project diary
 
 - The analysis is done on the students' own computers. Ask them to install Python and matplotlib before the lesson, and reserve time at the start of the lesson for checking the installations.
 - Run the starter program yourself with the example data before the lesson. The program has been tried with the example data without the graph library, so drawing the graph is worth trying.
-- The school's ten Raspberry Pi 5 computers are a reserve for those who have no computer of their own, and for the machine vision project.
+- The Raspberry Pi computers are not used in this work. They are for the machine vision project.
 - A computer vision project needs a camera, which is a separate purchase.
 - Collect the groups' measurement files in a shared folder so that the groups can compare results.
 - A video that suits video analysis is one in which the camera stays still, the drone moves in the plane of the picture and a scale is visible in the picture.

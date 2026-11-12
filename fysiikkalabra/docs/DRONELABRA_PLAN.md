@@ -36,7 +36,7 @@ toistaiseksi vain suomeksi, ja muut kielet näyttävät suomenkielisen ohjeen.
 - **Kameradronet:** 2 × DJI Neo 2 Motion Fly More Combo (lasit Goggles N3, liikeohjain RC Motion 3). Toimeksiannossa
   luki "DJI Neo FPV": mallin on oletettu olevan sama kuin aiemmin ilmoitettu Neo 2. Sivuston teksteissä mallinimeä ei
   mainita, kuten ei Ahjon muussakaan laitteistossa.
-- **Raspberry Pi 5 (8 Gt):** 10 kpl (opettaja 12.11.2026). Ei lento-ohjaimeksi. Data-analyysi tehdään opiskelijoiden omilla tietokoneilla (opettaja 12.11.2026); Raspberry Pit ovat varalla ja konenäköprojektin käytössä.
+- **Raspberry Pi 5 (8 Gt):** 10 kpl (opettaja 12.11.2026). Ei lento-ohjaimeksi. Data-analyysi tehdään opiskelijoiden omilla tietokoneilla (opettaja 12.11.2026); Raspberry Pit ovat vain konenäköprojektin käytössä, eivät varakoneina.
 - **Oppitunnin pituus:** 75 min, kuten Ahjo 1:ssä.
 
 Kaikilla ei ole omaa dronea. Lentotunnit on suunniteltu kiertopisteiksi: lento, mittaaminen ja kirjaus, datan

@@ -127,7 +127,7 @@ Liitä projektipäiväkirjaan
 
 - Analyysi tehdään opiskelijoiden omilla tietokoneilla. Pyydä asentamaan Python ja matplotlib ennen tuntia ja varaa tunnin alkuun aikaa asennusten tarkistamiseen.
 - Aja aloitusohjelma itse esimerkkiaineistolla ennen tuntia. Ohjelma on kokeiltu esimerkkiaineistolla ilman kuvaajakirjastoa, joten kuvaajan piirto kannattaa kokeilla.
-- Koulun kymmenen Raspberry Pi 5 -tietokonetta ovat varalla niille, joilla ei ole omaa konetta, ja konenäköprojektin käytössä.
+- Raspberry Pi -tietokoneita ei käytetä tässä työssä. Ne ovat konenäköprojektin käytössä.
 - Konenäköprojekti tarvitsee kameran, joka on erillinen hankinta.
 - Kokoa ryhmien mittaustiedostot yhteiseen kansioon, jotta ryhmät voivat verrata tuloksia.
 - Videoanalyysiin sopii video, jossa kamera pysyy paikallaan, drone liikkuu kuvan tasossa ja kuvassa näkyy mittakaava.
