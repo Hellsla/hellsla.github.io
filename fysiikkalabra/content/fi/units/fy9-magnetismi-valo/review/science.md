@@ -1,23 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 3197e5705c13d2c3
-
-# fy9-magnetismi-valo: science review
-
-Round 2 (delta review of round 1 fixes; round 1 hash 26e396a49ac8db69)
+CONTENT-HASH: 8ec3012519ae6bf9
+Delta review (formulas in MAFY form, 2026-11-12) of the version passed at 3197e5705c13d2c3.
 
 ## Blocking
-None.
-
-## Verified
-1. **Round 1 Blocking 1 (hook: 40 kW sent vs used): fixed.** `inquiry.json` hook.text: "kaapelia pitkin siirretään mantereelta enintään 40 kW:n teho"; `unit.md` Ydinajatus answer paragraph: "Kaapelia pitkin siirretään mantereelta 40 kW:n teho". No "käyttävät … 40 kW" remains. The `siirto` figure (P = 40 kW sent; 230 V: 174 A, 15 kW = 38 % lost, "perille 25 kW"; 20 kV: 2,0 A, 2,0 W, "perille lähes 40 kW") now agrees with the text. Recomputed: I = 173,9 A, RI² = 15,1 kW (37,8 %), delivered 24,9 kW; 2,0 A, 2,0 W (0,005 %).
-2. Polish 2: Malus θ defined separately from the grating θ in Kaava: Valo. Done.
-3. Polish 3: "kun valo tulee lähes kohtisuoraan" added for 2nd. Done.
-4. Polish 4: `sirius` 9.925 feedback now "Käytit kerrointa 10⁻⁶, joka kuuluu mikrometreille". Done.
-5. Polish 5: s2 a) Vastaus and units_precision rubric. Recomputed α_r for Δn = 0,014/0,015/0,016: 82,09°/81,81°/81,54°, so about 0,3° per 0,001, as stated; rubric accepts 81,8°/8,2° or 82°/8°. s2 b) unchanged (68,6 µs, about 0,7 µs extra).
-6. Polish 6: `lt-1` feedback "Tässä tilanteessa vauhtia voisi muuttaa vain sähkökenttä." Done.
-7. New `lue-kuvaaja` options: 50 Hz with 8,5 V and 25 Hz with 12 V; the feedback correctly names which half is right (T = 40 ms, f = 25 Hz, U = 12 V/√2 = 8,49 V).
-8. `ympyra` redrawn with inline r = mv/(qB): directions still correct (positive charge, B into page, F = qv × B toward the centre, counterclockwise).
-9. Build: 0 .katex-error, 0 raw $, 0 console errors with all details open at 390 and 1280.
+(none)
 
 ## Polish
-None new. The numbers and physics checked in round 1 are unchanged.
+1. `unit.md`, the sentence after the light block: in the same sentence $n$ is the refractive index and also the order in the grating equation, and the thin-film condition then writes the order as $k$. Both meanings are defined, but they clash. Fix: "hilayhtälössä $n$ on kertaluku (ei taitekerroin)", and say that the thin film uses $k$ because $n$ is its refractive index.
+2. `unit.md`: $e = vBl$ still uses $l$, while the block now writes the length as $\ell$. Fix: write $e = vB\ell$.
+3. `inquiry.json`, `sovella/tasks.json` (and the exit ticket) still use $d\sin\theta = k\lambda$, $qvB$, $e_0$ and $U_0$. They are defined there, but they differ from the theory. Fix: align them in the next task pass.
+
+## Checked
+$F_\text{M} = QvB_\perp$ with $B_\perp = B\sin\alpha$. $r = mv/(QB)$. $B = N\mu_0 I/\ell$. $u_0 = NAB\cdot 2\pi f$: I recomputed it with N = 100, A = 0.01 m², B = 0.2 T and f = 50 Hz, giving 62.8 V, and $U_\text{eff}$ = 44.4 V. The transformer is written with ≈ for the currents and the ideal-transformer condition. $\lambda_\text{max} = b/T$. For Snell's law I recomputed $\sin\alpha_1/\sin\alpha_2 = v_1/v_2 = n_2/n_1$ = 1.5. $d\sin\alpha = n\lambda$. All are MAFY's forms with their conditions, and the map matches. The other rows are unchanged.

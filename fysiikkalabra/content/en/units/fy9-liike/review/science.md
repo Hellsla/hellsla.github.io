@@ -1,15 +1,12 @@
-VERDICT: PASS
-CONTENT-HASH: 47fff9ff6ab0e619
-
-Science review of the English translation of fy9-liike, round 2 (source content/fi/units/fy9-liike/, reviewed PASS).
-
-## Checked
-- Round-1 science review had no Blocking findings. The fixes since then (git diff against the checkpoint) change words only: trolley → cart, gendered pronouns → neutral wording, "average velocity" → "average speed" in s4 (round-1 Polish 1, taken), "Tasks" → "Exercises" in teacher.md, one sentence in unit.md Common mistakes, and the s3 figure label "braking distance" → "braking dist.". No number, formula, unit or answer changed.
-- Structure of inquiry.json, exit-ticket.json, sovella/tasks.json and unit.json compared to the Finnish again: every non-text field (answers, correct flags, tolerances, points, ids) identical. `check_i18n.py`: en 0 errors; `practice.py check`: en/units/fy9-liike 6 tasks, 95 points, OK.
-- s4 "average speed": on the straight 3.0 km road it is the displacement (= distance) divided by the time, so the wording "average speed is the displacement divided by the time" stays correct; the instantaneous quantity is still called velocity, consistent with the source's distinction.
+VERDICT: FAIL
+CONTENT-HASH: ca31abd20e3d66b5
+Delta review (formulas in MAFY form, 2026-11-12) of the version passed at 47fff9ff6ab0e619.
 
 ## Blocking
-(none)
+1. **B, undefined symbol.** `unit.md`, "Uniformly accelerated motion": no sentence after the new row $\overline{a}_\text{k} = \frac{\Delta\overline{v}}{\Delta t}$ defines $\overline{a}_\text{k}$ or $\Delta\overline{v}$, and neither has a unit. The next rows use a scalar $a$ without the one-dimensional step given for $v$. Fix: add "where $\Delta\overline{v}$ is the change in velocity (m/s) and $\overline{a}_\text{k}$ the average acceleration (m/s²). In linear motion the signed $a = \tfrac{\Delta v}{\Delta t}$ is enough."
 
 ## Polish
-1. Coordinates such as "(12 s; 85 km/h)" still use the Finnish semicolon separator; a comma is the usual English form with a decimal point (inquiry.json, s3 task/solution, figure description). Not wrong.
+2. Sovella writes $v_\text{ka}$, while the theory writes $v_\text{k}$, and the English text never explains the subscript k. Fix: align them, and note that k is MAFY's subscript for average (keskimääräinen).
+
+## Checked
+$\overline{v}_\text{k} = \Delta\overline{x}/\Delta t$ is MAFY's form, followed by its signed one-dimensional form. $\overline{a}_\text{k}$ is also MAFY's form, but it lacks the definition in Blocking 1. The English text says the same physics as fi. The other rows are unchanged.

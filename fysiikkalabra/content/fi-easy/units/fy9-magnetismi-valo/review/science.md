@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: b053cd2d9ea1dacc
-
-Science review of the Selkeä suomi translation of fy9-magnetismi-valo against content/fi/units/fy9-magnetismi-valo/ (already reviewed). Checked: unit.json, unit.md, inquiry.json, exit-ticket.json, teacher.md, sovella/tasks.json, sovella/solutions.md, figures.json.
-
-Method: `check_i18n.py` (fi-easy: 0 errors), `practice.py check` (fi-easy: 6 tasks, 95 points, same as fi). A script compared every `$…$` formula and every number in all text files with the source: nothing is missing or changed (inquiry.json has one added `$\sin\theta$` in an explanation of "verrannollinen", which is correct). Correct options, tolerances, points and criteria are the source's. All key results recomputed in one Python call with my own formulas: 174 A / 38 % / 2,0 W; 19 mW and 35 mW; 0,45 s; 0,39 V; 9 925 K; 3,4 m; 580 nm (1 740, 348); 0,24 A; 455 A, 830 kW; 565 V/400 V, 0,225 %, 844 kW; 81,8°, 0,71 µs, 0,897 mW; k = 2,42 µT·m, µ0 = 1,268·10⁻⁶, b = 10,9 µT, 15,7 µT; 24,0° and 14,5°; 533/532 nm, 562/692 nm, x3 = 2,7 m; 18,3 MHz, 3,91·10⁷ m/s, 0,34 m, 4,37 µs, 4,5·10¹⁵ m/s². All agree.
-
-Every sentence I compared keeps the source's physics. The added explanations are correct: "keskeisvoima eli voima, joka osoittaa ympyrän keskipisteeseen", "vastapiste on katsojan pään varjon suunta", "alkeisvaraus eli pienin vapaa varaus", "pyörrevirrat eli virrat, jotka kiertävät putken seinässä", "ferromagneettinen eli magneetti ei vedä sitä", and the verrannollinen and kääntäen verrannollinen examples (the doubling/halving examples are right).
+CONTENT-HASH: 154e845f80e129c9
+Delta review (formulas in MAFY form, 2026-11-12) of the version passed at b053cd2d9ea1dacc.
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-1. unit.json `key_concepts` "magneettivuo": "$\Phi = BA$" is given without its condition. unit.md says "kun kenttä on kohtisuorassa pintaa $A$ vastaan". Fix: "…pinnan läpi. Kun kenttä on kohtisuorassa pintaa vastaan, $\Phi = BA$." (still under 25 words), or leave the formula out of the explanation.
-2. unit.json `key_concepts` "taitekerroin": "Kertoo, kuinka paljon valo hidastuu aineessa" is acceptable with $n = \frac{c}{v}$ next to it. Clearer: "Kertoo, kuinka monta kertaa hitaammin valo kulkee aineessa kuin tyhjiössä: $n = \frac{c}{v}$."
-3. unit.md Ydinajatus: "Kohdistaa tarkoittaa, että voima vaikuttaa niihin" is physically fine but loose: the field exerts the force. See pedagogy finding 1 for a better wording.
+1. `unit.md`, the sentence after the light block: in the same sentence $n$ is the refractive index and also the order in the grating equation, and the thin-film condition then writes the order as $k$. Both meanings are defined, but they clash. Fix: "hilayhtälössä $n$ on kertaluku (ei taitekerroin)", and say that the thin film uses $k$ because $n$ is its refractive index.
+2. `unit.md`: $e = vBl$ still uses $l$, while the block now writes the length as $\ell$. Fix: write $e = vB\ell$.
+3. `inquiry.json`, `sovella/tasks.json` (and the exit ticket) still use $d\sin\theta = k\lambda$, $qvB$, $e_0$ and $U_0$. They are defined there, but they differ from the theory. Fix: align them in the next task pass.
+
+## Checked
+$F_\text{M} = QvB_\perp$ with $B_\perp = B\sin\alpha$. $r = mv/(QB)$. $B = N\mu_0 I/\ell$. $u_0 = NAB\cdot 2\pi f$: I recomputed it with N = 100, A = 0.01 m², B = 0.2 T and f = 50 Hz, giving 62.8 V, and $U_\text{eff}$ = 44.4 V. The transformer is written with ≈ for the currents and the ideal-transformer condition. $\lambda_\text{max} = b/T$. For Snell's law I recomputed $\sin\alpha_1/\sin\alpha_2 = v_1/v_2 = n_2/n_1$ = 1.5. $d\sin\alpha = n\lambda$. All are MAFY's forms with their conditions, and the map matches. The fi-easy text says the same physics as fi. The other rows are unchanged.
