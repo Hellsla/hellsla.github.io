@@ -183,3 +183,13 @@
 **Sijoitus:** $r = \dfrac{80{,}0\,{}^\circ\text{C} - 74{,}0\,{}^\circ\text{C}}{3{,}0\,\text{min}} = \dfrac{6{,}0\,\text{K}}{3{,}0\,\text{min}} = 2{,}0\,\text{K/min}$. Sitten $T_\text{lasku} \ge \dfrac{1{,}0\,\text{K}}{0{,}050} = 20\,\text{K}$, joten $t = \dfrac{20\,\text{K}}{2{,}0\,\text{K/min}} = 10\,\text{min}$.
 **Vastaus:** vähintään $10\,\text{min}$, kaksi merkitsevää numeroa kuten aikavälissä $3{,}0\,\text{min}$ ja epävarmuudessa $1{,}0\,\text{K}$. Vakioitavia suureita: vesimäärä (muuten lämpökapasiteetti ja pinta-ala muuttuvat), veden alkulämpötila (jäähtymisnopeus riippuu lämpötilaerosta huoneeseen) ja ympäristö eli huoneen lämpötila ja ilmavirta sekä se, onko astiassa kansi. Käyrät piirretään samaan kuvaajaan. Niitä verrataan alun kulmakertoimilla (laskunopeus samalla lämpötilan laskulla $T_\text{lasku}$, esimerkiksi ensimmäisen $20\,\text{K}$ laskun aikana) ja otetaan epävarmuus huomioon.
 **Järkevyys:** Lämpötilan laskun pitää olla $20\,\text{K}$. Se on 20 kertaa epävarmuus $1{,}0\,\text{K}$, joten suhteellinen epävarmuus on $\tfrac{1}{20} = 5\,\%$. Todellisuudessa jäähtyminen hidastuu (vrt. aiempi jäähtymistehtävä), ja hitaimmin jäähtyvässä astiassa lasku on pienempi. Siksi $10\,\text{min}$ on alaraja: jakso kannattaa suunnitella pidemmäksi ja tarkistaa esikokeella.
+
+## fy1-8-L1-10
+**Annettu:** ajanoton epävarmuus $\Delta t = 0{,}2\,\text{s}$, suurin sallittu suhteellinen epävarmuus $\varepsilon_\text{max} = 5\,\% = 0{,}05$; taulukosta (MAFY-taulukko, Äänen nopeuksia eri väliaineissa, ilma $20\,{}^\circ\text{C}$) äänen nopeus $v = 343{,}4\,\text{m/s}$
+**Kysytty:** lyhin mitattava matka $s$ yksikössä $\text{km}$
+**Periaate:** Suhteellinen epävarmuus on $\Delta t : t$. Sen pitää olla enintään $\varepsilon_\text{max}$. Siksi mitatun ajan pitää olla vähintään $\Delta t : \varepsilon_\text{max}$. Ääni kulkee tasaisella nopeudella. Tätä aikaa vastaava matka on $s = vt$.
+**Kaava:** $t_\text{min} = \dfrac{\Delta t}{\varepsilon_\text{max}}$ ja $s = vt_\text{min}$
+**Muunnokset:** $1\,\text{km} = 1000\,\text{m}$. Metrit muutetaan kilometreiksi jakamalla luvulla $1000$.
+**Sijoitus:** $t_\text{min} = \dfrac{0{,}2\,\text{s}}{0{,}05} = 4{,}0\,\text{s}$ ja $s = 343{,}4\,\tfrac{\text{m}}{\text{s}} \cdot 4{,}0\,\text{s} = 1373{,}6\,\text{m} = 1{,}3736\,\text{km}$
+**Vastaus:** $1{,}4\,\text{km}$ (tarkemmin $1{,}37\,\text{km}$). Epävarmuus on annettu kahdella merkitsevällä numerolla, joten vastauskin on. Vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Järkevyys:** Tarkistus takaisin: $0{,}2\,\text{s} : 4{,}0\,\text{s} = 0{,}05 = 5\,\%$. Ääni kulkee neljässä sekunnissa noin $1{,}4\,\text{km}$. Käsin ajanotolla matkan täytyy siis olla pitkä.

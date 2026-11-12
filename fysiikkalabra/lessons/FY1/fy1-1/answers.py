@@ -40,4 +40,5 @@ rain = 5.0e-3 * 6.0e3 * (10 / 60)                    # 5,0 mm/h on 6,0·10³ m²
 a["fy1-1-L3-04"] = round(rain / drop / 1e9, 2)       # drops: 5,0 m³ / 4,19·10⁻⁹ m³ = 1,19·10⁹ -> 1,19 billion (milliard)
 v_voy = 15.341; AU_km = 1.496e8; yr = 3.156e7        # Voyager 2: 15,341 km/s, 1 AU = 1,496·10⁸ km (as in the task), 1 a = 3,156·10⁷ s
 a["fy1-1-L3-05"] = round(119.0 + v_voy * 7.25 * yr / AU_km, 1)   # model d = d0 + v t (d0 = 119,0 AU at the heliopause crossing, Burlaga et al. 2019): 15,341 km/s · 7,25 a = 3,510·10⁹ km = 23,46 AU -> 119,0 + 23,46 = 142,46 -> 142,5 AU
+a["fy1-1-L1-10"] = 695700 / 6378                       # MAFY table (Aurinkokunta): Sun mean radius 695 700 km, Earth equatorial radius 6 378 km: k = 109,08
 print(json.dumps(a))

@@ -126,6 +126,18 @@
           "feedback": "This is about $39\\,000$ times the distance of the Moon, although the diameter of the Sun is only about $400$ times the diameter of the Moon. That far away, the apparent diameter of the Sun would be about a hundredth of the apparent diameter of the Moon. The Moon would then easily cover the Sun completely, so the assumption of approximately equal apparent diameters would not hold."
         }
       ]
+    },
+    {
+      "id": "fy1-1-L1-10",
+      "level": 1,
+      "text": "The Sun and the Earth are approximately spherical. Look up the Sun's mean radius and the Earth's radius at the equator in the MAFY table (mafytaulukot.fi). How many times as large as the Earth's diameter is the Sun's diameter? The ratio of the diameters is $k = d_\\text{larger}/d_\\text{smaller}$.",
+      "lookup": "MAFY",
+      "answer": 109.08,
+      "unit": "times",
+      "tolerance": 0.04,
+      "hints": [
+        "The values are in the MAFY table *Aurinkokunta* (the Solar System)."
+      ]
     }
   ],
   "level2": [

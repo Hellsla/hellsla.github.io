@@ -113,6 +113,18 @@
       "answer": 35.316,
       "unit": "km/h",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-6-L1-09",
+      "level": 1,
+      "text": "An astronaut drops a hammer from rest on the surface of the Moon. There is no air resistance. Look up the free-fall acceleration on the surface of the Moon in the MAFY table (mafytaulukot.fi). What is the speed of the hammer $3.0\\,\\text{s}$ after the drop begins?",
+      "lookup": "MAFY",
+      "answer": 4.866,
+      "unit": "m/s",
+      "tolerance": 0.04,
+      "hints": [
+        "The value is found in the MAFY table under *Aurinkokunta* (the Solar System)."
+      ]
     }
   ],
   "level2": [

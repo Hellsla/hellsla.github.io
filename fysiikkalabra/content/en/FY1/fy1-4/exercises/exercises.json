@@ -113,6 +113,18 @@
       "answer": 2.5,
       "unit": "cm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-4-L1-09",
+      "level": 1,
+      "text": "The mass–volume graph of an aluminium object is a straight line through the origin, $m = kV$, whose slope $k$ is the density of the material. Look up the density of aluminium in the MAFY table (mafytaulukot.fi). What is the mass of an object whose volume is $45\\,\\text{cm}^3$? Give the answer in $\\text{g}$.",
+      "lookup": "MAFY",
+      "answer": 121.5,
+      "unit": "g",
+      "tolerance": 0.04,
+      "hints": [
+        "The value is in the MAFY table *Tiheyksiä: Kiinteiden aineiden tiheyksiä* (densities of solids)."
+      ]
     }
   ],
   "level2": [

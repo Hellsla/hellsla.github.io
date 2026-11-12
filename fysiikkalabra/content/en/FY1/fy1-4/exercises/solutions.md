@@ -198,3 +198,13 @@
 **Find:** on which line the calculation of the slope has an error.
 **Principle:** The slope is $k = \dfrac{\Delta y}{\Delta x}$, and it is calculated from two chosen points of the fitted line. The change in both the numerator and the denominator is the final value minus the initial value of the same pair of points. The unit of the slope is the unit of $y$ divided by the unit of $x$, here $\tfrac{\textsf{l}}{\text{min}}$.
 **Model answer:** The error is on line 3. The change in time is $\Delta t = 10.0\,\text{min} - 2.0\,\text{min} = 8.0\,\text{min}$, not $12.0\,\text{min}$. The number $12.0$ arises when the times are added or when the number of the change in volume is copied into the denominator. Lines 1 and 2 are correct: the points are read from the fitted line far apart, and $\Delta V = 17.0\,\textsf{l} - 5.0\,\textsf{l} = 12.0\,\textsf{l}$. The formula and the division on line 4 are correct, but it uses the wrong number from line 3. The correct slope is $k = \dfrac{12.0\,\textsf{l}}{8.0\,\text{min}} = 1.5\,\tfrac{\textsf{l}}{\text{min}}$. Check: $1.5\,\tfrac{\textsf{l}}{\text{min}} \cdot 8.0\,\text{min} = 12.0\,\textsf{l}$, which matches the change in volume, whereas $1.0\,\tfrac{\textsf{l}}{\text{min}} \cdot 8.0\,\text{min} = 8.0\,\textsf{l}$ does not.
+
+## fy1-4-L1-09
+**Given:** volume $V = 45\,\text{cm}^3$; from the table (MAFY table, densities of solids, aluminium) $\rho = 2.70\cdot10^{3}\,\text{kg/m}^3$
+**Asked:** the mass $m$ of the object in $\text{g}$
+**Principle:** The line of a mass–volume graph passes through the origin, so $m = kV$, and the slope $k$ is the density $\rho$ of the material. The density of aluminium is read from the table and used as the slope.
+**Formula:** $m = kV = \rho V$
+**Conversions:** $2.70\cdot10^{3}\,\text{kg/m}^3 = 2.70\,\text{g/cm}^3$, because $1\,\text{kg} = 10^{3}\,\text{g}$ and $1\,\text{m}^3 = 10^{6}\,\text{cm}^3$. This way the volume can be used in cubic centimetres and the mass comes out in grams.
+**Substitution:** $m = 2.70\,\dfrac{\text{g}}{\text{cm}^3} \cdot 45\,\text{cm}^3 = 121.5\,\text{g}$
+**Answer:** $m \approx 1.2\cdot10^{2}\,\text{g}$ (calculated value $121.5\,\text{g}$), two significant figures as in the volume $45\,\text{cm}^3$. The density is from the MAFY table (densities of solids); an answer within about $\pm 4\,\%$ is accepted.
+**Reasonableness:** Aluminium is about three times as dense as water, and $45\,\text{cm}^3$ of water would have a mass of about $45\,\text{g}$. The result $121.5\,\text{g}$ is about $2.7$ times that.

@@ -146,6 +146,18 @@
           "feedback": "Aika on nimittäjässä toiseen potenssiin eli neliönä, joten yksikkö on $\\text{km/h}^2$. Se on kiihtyvyyden tyyppinen yksikkö eikä nopeuden yksikkö. Nopeuden nimittäjässä aika on vain ensimmäisessä potenssissa."
         }
       ]
+    },
+    {
+      "id": "fy1-2-L1-10",
+      "level": 1,
+      "text": "Kuun pinnalla oleva laite lähettää radiosignaalin Maahan. Signaali kulkee valon nopeudella $c = 2{,}998\\cdot10^{8}\\,\\text{m/s}$. Hae MAFY-taulukosta (mafytaulukot.fi) Kuun keskietäisyys Maasta. Laske, kuinka kauan signaali kulkee Maahan. Kulkuaika on $t = s/c$. Muuta matka ensin metreiksi.",
+      "lookup": "MAFY",
+      "answer": 1.28,
+      "unit": "s",
+      "tolerance": 0.04,
+      "hints": [
+        "Arvo on MAFY-taulukon taulukossa *Aurinkokunta*."
+      ]
     }
   ],
   "level2": [

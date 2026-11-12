@@ -203,3 +203,13 @@
 **Periaate:** $(t, s)$-kuvaajan korkeus on paikka ja kulmakerroin $\Delta s : \Delta t$ on nopeus. Kun kappale on paikallaan, $\Delta s = 0$ ja viiva on vaakasuora. Tasaisessa liikkeessä viiva on suora; jos paikka kasvaa, suora nousee, ja jos paikka pienenee, suora laskee. Suoran jyrkkyys kertoo vauhdin eli nopeuden suuruuden. Kun paikka pienenee, kulmakerroin eli nopeus on negatiivinen.
 **Mallivastaus:** Oikea on kuvaaja C. Aluksi paikka on koko ajan $s = 6{,}0\,\text{m}$, joten viiva on vaakasuora tällä korkeudella. Paluumatka $6{,}0\,\text{m}$ kestää $\Delta t = 6{,}0\,\text{m} : 1{,}0\,\text{m/s} = 6{,}0\,\text{s}$, joten kävelijä on lähtöpisteessä hetkellä $4{,}0\,\text{s} + 6{,}0\,\text{s} = 10\,\text{s}$. Paikka pienenee, joten suora laskee, ja sen jyrkkyys vastaa vauhtia $6{,}0\,\text{m} : 6{,}0\,\text{s} = 1{,}0\,\text{m/s}$. Kuvaajassa A suora nousee, eli paikka kasvaisi ja kävelijä menisi poispäin. Kuvaaja B on $(t, v)$-kuvaaja, jossa on nopeus eikä paikka. Kuvaaja D esittää kuljettua matkaa $\Delta s$, joka alkaa nollasta, vaikka kävelijän paikka on alussa $6{,}0\,\text{m}$.
 **Kuvaajan lukeminen:** Kuvaajista luetaan, mistä paikasta viiva alkaa hetkellä $t = 0$, onko se aikavälillä $0\text{–}4{,}0\,\text{s}$ vaakasuora ja nouseeko vai laskeeko se sen jälkeen. Lisäksi tarkistetaan pystyakselin suure: kuvaajassa B se on nopeus $v$. Vain kuvaajassa C viiva alkaa kohdasta $6{,}0\,\text{m}$, pysyy siinä hetkeen $4{,}0\,\text{s}$ ja laskee sitten pisteeseen $(10\,\text{s};\ 0\,\text{m})$.
+
+## fy1-5-L1-09
+**Annettu:** aika $t = 2{,}0\,\text{s}$; taulukosta (MAFY-taulukko, Äänen nopeuksia eri väliaineissa, nesteet, vesi $20\,{}^\circ\text{C}$) äänen nopeus $v = 1482{,}3\,\text{m/s}$
+**Kysytty:** kuljettu matka $s$ yksikössä $\text{km}$
+**Periaate:** Ääni etenee vedessä tasaisella nopeudella, joten liike on tasaista ja matka on nopeus kerrottuna ajalla.
+**Kaava:** $s = vt$
+**Muunnokset:** $1\,\text{km} = 1000\,\text{m}$, joten $s$ muunnetaan metreistä kilometreiksi jakamalla luvulla $1000$.
+**Sijoitus:** $s = 1482{,}3\,\tfrac{\text{m}}{\text{s}} \cdot 2{,}0\,\text{s} = 2964{,}6\,\text{m} = 2{,}9646\,\text{km}$
+**Vastaus:** $3{,}0\,\text{km}$ (tarkemmin $2{,}96\,\text{km}$), kaksi merkitsevää numeroa kuten ajassa $2{,}0\,\text{s}$. Taulukon arvosta riippuen vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Järkevyys:** Ääni kulkee vedessä noin $1{,}5\,\text{km}$ sekunnissa eli ilmaa (noin $343\,\text{m/s}$) yli neljä kertaa nopeammin, joten kahdessa sekunnissa matka on noin $3\,\text{km}$.

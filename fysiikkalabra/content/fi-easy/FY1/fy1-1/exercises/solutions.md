@@ -203,3 +203,13 @@
 **Periaate:** Kohde näyttää yhtä suurelta, kun sen etäisyys on yhtä monta kertaa Kuun etäisyys kuin sen halkaisija on Kuun halkaisija. Tehtävässä oletetaan pimennys, jossa Aurinko ja Kuu näyttävät suunnilleen yhtä suurilta. Siksi etäisyyksien suhde on suunnilleen sama kuin halkaisijoiden suhde.
 **Mallivastaus:** Halkaisijoiden suhde on $\dfrac{1{,}39\cdot10^{9}\,\text{m}}{3{,}47\cdot10^{6}\,\text{m}}\approx400$. Siksi $d_\text{A}\approx400\cdot3{,}84\cdot10^{8}\,\text{m}\approx1{,}5\cdot10^{11}\,\text{m}$. Se on oikea vastaus. Arvo $1{,}5\cdot10^{8}\,\text{m}$ on alle puolet Kuun etäisyydestä, joten Aurinko olisi Kuuta lähempänä. Arvo $1{,}5\cdot10^{9}\,\text{m}$ on vain noin $4$ kertaa Kuun etäisyys. Arvo $1{,}5\cdot10^{13}\,\text{m}$ on noin $39\,000$ kertaa Kuun etäisyys. Kumpikaan ei vastaa kerrointa $400$.
 **Järkevyys:** Valo kulkee matkan $1{,}5\cdot10^{11}\,\text{m} : 3{,}0\cdot10^{8}\,\text{m/s} = 5{,}0\cdot10^{2}\,\text{s}$ eli noin $8\,\text{min}$. Se on Auringon valon tunnettu kulkuaika.
+
+## fy1-1-L1-10
+**Annettu:** taulukosta (MAFY-taulukko, Aurinkokunta) Auringon keskimääräinen säde $r_\text{A} = 695\,700\,\text{km}$ ja Maan säde päiväntasaajalla $r_\text{M} = 6\,378\,\text{km}$
+**Kysytty:** Auringon ja Maan halkaisijoiden suhde $k$
+**Periaate:** Pallon halkaisija on kaksi kertaa säde, $d = 2r$. Suhde saadaan, kun suurempi koko jaetaan pienemmällä. Kun molemmat ovat samassa yksikössä, yksiköt supistuvat pois.
+**Kaava:** $k = \dfrac{d_\text{A}}{d_\text{M}} = \dfrac{2r_\text{A}}{2r_\text{M}} = \dfrac{r_\text{A}}{r_\text{M}}$
+**Muunnokset:** Molemmat säteet ovat jo kilometreinä, joten muunnoksia ei tarvita. Luku $2$ supistuu pois.
+**Sijoitus:** $k = \dfrac{695\,700\,\text{km}}{6\,378\,\text{km}} = 109{,}08$
+**Vastaus:** $k \approx 109$, kolme merkitsevää numeroa kuten taulukon arvoissa. Arvot ovat MAFY-taulukosta (Aurinkokunta). Vastaus hyväksytään, kun virhe on enintään noin $4\,\%$.
+**Järkevyys:** Suuruusluokat ovat $10^{5}\,\text{km}$ ja $10^{3}\,\text{km}$, joten suhde on noin $10^{2}$. Tulos $109$ sopii siihen. Aurinko on noin sata kertaa Maata leveämpi.

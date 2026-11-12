@@ -94,6 +94,18 @@
       "answer": 100,
       "unit": "times",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-3-L1-09",
+      "level": 1,
+      "text": "The density of water was measured five times at $20\\,{}^\\circ\\text{C}$. The results were $1.004$; $1.012$; $1.008$; $1.014$ and $1.012$, all in $\\text{g/cm}^3$. Look up the density of water at $20\\,{}^\\circ\\text{C}$ in the MAFY table (mafytaulukot.fi). By how many percent does the mean $\\bar{x}$ of the measurements differ from the table value? The deviation is $\\dfrac{\\bar{x} - \\rho_\\text{table}}{\\rho_\\text{table}}\\cdot100\\,\\%$.",
+      "lookup": "MAFY",
+      "answer": 1.18,
+      "unit": "%",
+      "tolerance": 0.04,
+      "hints": [
+        "The value is in the MAFY table *Veden tiheys eri lämpötiloissa* (density of water at different temperatures)."
+      ]
     }
   ],
   "level2": [

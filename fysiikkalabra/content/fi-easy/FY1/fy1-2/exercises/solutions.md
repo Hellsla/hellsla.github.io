@@ -193,3 +193,13 @@
 **Sijoitus:** $t_\text{A} = \dfrac{2{,}34\cdot10^{6}\,\text{J}}{85{,}0\,\text{W}} = 2{,}753\cdot10^{4}\,\text{s} = 7{,}647\,\text{h}$ ja $t_\text{B} = \dfrac{2{,}20\cdot10^{6}\,\text{J}}{100\,\text{W}} = 2{,}20\cdot10^{4}\,\text{s} = 6{,}111\,\text{h}$. Erotus $7{,}647\,\text{h} - 6{,}111\,\text{h} = 1{,}54\,\text{h} \approx 1{,}5\,\text{h}$
 **Vastaus:** virtalähde A toimii kauemmin, noin $1{,}5\,\text{h}$, kaksi merkitsevää numeroa kuten energiassa $0{,}65\,\text{kWh}$. Virtalähteen B energia on vain $0{,}61\,\text{kWh}$, ja sen teho on suurempi. Väite ei siis ole oikein.
 **Järkevyys:** Virtalähteen A energia $650\,\text{Wh}$ jaettuna tehon $85\,\text{W}$ arviolla $90\,\text{W}$ antaa noin $7\,\text{h}$. Virtalähteen B energia on $2{,}2:3{,}6 = 0{,}61\,\text{kWh}$, ja $610\,\text{Wh} : 100\,\text{W}$ on noin $6\,\text{h}$.
+
+## fy1-2-L1-10
+**Annettu:** taulukosta (MAFY-taulukko, Aurinkokunta) Kuun keskietäisyys Maasta $s = 384\,400\,\text{km}$; valon nopeus $c = 2{,}998\cdot10^{8}\,\text{m/s}$
+**Kysytty:** signaalin kulkuaika $t$ yksikössä $\text{s}$
+**Periaate:** Radiosignaali kulkee tyhjiössä aina nopeudella $c$. Kulkuaika on matka jaettuna nopeudella.
+**Kaava:** $t = \dfrac{s}{c}$
+**Muunnokset:** Nopeus on yksikössä $\text{m/s}$, joten matka muutetaan metreiksi: $s = 384\,400\,\text{km} = 384\,400\cdot10^{3}\,\text{m} = 3{,}844\cdot10^{8}\,\text{m}$.
+**Sijoitus:** $t = \dfrac{3{,}844\cdot10^{8}\,\text{m}}{2{,}998\cdot10^{8}\,\text{m/s}} = 1{,}28\,\text{s}$
+**Vastaus:** $t \approx 1{,}3\,\text{s}$ (laskettu arvo $1{,}28\,\text{s}$). Etäisyys on MAFY-taulukosta (Aurinkokunta). Vastaus hyväksytään, kun virhe on enintään noin $4\,\%$.
+**Järkevyys:** Valo kulkee noin $3\cdot10^{8}\,\text{m}$ sekunnissa. Kuun etäisyys on noin $4\cdot10^{8}\,\text{m}$. Siksi kulkuaika on vähän yli sekunnin. Tulos sopii siihen.

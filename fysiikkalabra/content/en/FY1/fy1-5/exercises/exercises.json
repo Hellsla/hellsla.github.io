@@ -94,6 +94,18 @@
       "answer": 2.5,
       "unit": "m/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-5-L1-09",
+      "level": 1,
+      "text": "A loudspeaker's sound travels through water at a constant speed for $2.0\\,\\text{s}$. Look up the speed of sound in water ($20\\,{}^\\circ\\text{C}$) in the MAFY table (mafytaulukot.fi). How far does the sound travel? Give the answer in km.",
+      "lookup": "MAFY",
+      "answer": 2.9646,
+      "unit": "km",
+      "tolerance": 0.04,
+      "hints": [
+        "The value is found in the MAFY table under *Äänen nopeuksia eri väliaineissa* (speeds of sound in different media)."
+      ]
     }
   ],
   "level2": [
