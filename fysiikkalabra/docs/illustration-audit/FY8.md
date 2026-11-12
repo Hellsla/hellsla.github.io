@@ -8,14 +8,14 @@ Kuvia 112. Asteikko 1–5: F fysiikka, P pedagogiikka, V visuaalinen laatu, T ty
 | [`fy8-1/ilmio`](catalog/FY8.html#fy8-1-ilmio) | Valosähköinen ilmiö ja fotoni; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy8-1/energia`](catalog/FY8.html#fy8-1-energia) | Valosähköinen ilmiö ja fotoni; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ | Kolme aallonpituutta irrotustyön alla, kohdalla ja yllä. |  | ODOTTAA |
 | [`fy8-1/kuvaaja`](catalog/FY8.html#fy8-1-kuvaaja) | Valosähköinen ilmiö ja fotoni; kuvaaja: teoria | 5 | 5 | 5 | 5 | PIDÄ | Rajataajuudet ja kulmakerroin tarkistettu. |  | ODOTTAA |
-| [`fy8-10/hero`](catalog/FY8.html#fy8-10-hero) | Massavaje ja ytimen sidosenergia; avauskuva | 5 | 4 | 4 | 4 | KEVYT KORJAUS | Pöydän alla valkoinen kaista: lattia puuttuu. |  | KEVYT KORJAUS hyväksytty (opettaja 2026-11-11) |
+| [`fy8-10/hero`](catalog/FY8.html#fy8-10-hero) | Massavaje ja ytimen sidosenergia; avauskuva | 5 | 4 | 4 | 4 | KEVYT KORJAUS | Pöydän alla valkoinen kaista: lattia puuttuu. |  | KEVYT KORJAUS hyväksytty (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12 |
 | [`fy8-10/massat`](catalog/FY8.html#fy8-10-massat) | Massavaje ja ytimen sidosenergia; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ | Massat ja massavaje tarkistettu; katkaistu akseli merkitty. |  | ODOTTAA |
 | [`fy8-10/energia`](catalog/FY8.html#fy8-10-energia) | Massavaje ja ytimen sidosenergia; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy8-10/kayra`](catalog/FY8.html#fy8-10-kayra) | Massavaje ja ytimen sidosenergia; kuvaaja: teoria | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy8-10/reaktio`](catalog/FY8.html#fy8-10-reaktio) | Massavaje ja ytimen sidosenergia; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ | Massat ja Q = 4,27 MeV tarkistettu. |  | ODOTTAA |
 | [`fy8-10/kayra-points`](catalog/FY8.html#fy8-10-kayra-points) | Massavaje ja ytimen sidosenergia; kuvaaja: tutkimusvaihe | 5 | 4 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy8-11/hero`](catalog/FY8.html#fy8-11-hero) | Fissio, fuusio ja ydinvoima; avauskuva | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
-| [`fy8-11/sidosenergia`](catalog/FY8.html#fy8-11-sidosenergia) | Fissio, fuusio ja ydinvoima; kuvaaja: teoria | 5 | 5 | 4 | 4 | KEVYT KORJAUS | Sama käyrä kuin fy8-10/kayra, mutta fuusion nuoli on tässä vihreä ja siellä oranssi. |  | KEVYT KORJAUS hyväksytty (opettaja 2026-11-11) |
+| [`fy8-11/sidosenergia`](catalog/FY8.html#fy8-11-sidosenergia) | Fissio, fuusio ja ydinvoima; kuvaaja: teoria | 5 | 5 | 4 | 4 | KEVYT KORJAUS | Sama käyrä kuin fy8-10/kayra, mutta fuusion nuoli on tässä vihreä ja siellä oranssi. |  | KEVYT KORJAUS hyväksytty (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12 |
 | [`fy8-11/fissio`](catalog/FY8.html#fy8-11-fissio) | Fissio, fuusio ja ydinvoima; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy8-11/ketju`](catalog/FY8.html#fy8-11-ketju) | Fissio, fuusio ja ydinvoima; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ | Kolme kerrointa sukupolvittain: ketjureaktion tila laskettavissa palloista. |  | ODOTTAA |
 | [`fy8-11/fuusio`](catalog/FY8.html#fy8-11-fuusio) | Fissio, fuusio ja ydinvoima; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
@@ -23,7 +23,7 @@ Kuvia 112. Asteikko 1–5: F fysiikka, P pedagogiikka, V visuaalinen laatu, T ty
 | [`fy8-11/reaktori`](catalog/FY8.html#fy8-11-reaktori) | Fissio, fuusio ja ydinvoima; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy8-11/onkalo`](catalog/FY8.html#fy8-11-onkalo) | Fissio, fuusio ja ydinvoima; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy8-11/sidosenergia-luku`](catalog/FY8.html#fy8-11-sidosenergia-luku) | Fissio, fuusio ja ydinvoima; kuvaaja: tutkimusvaihe | 5 | 4 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
-| [`fy8-12/hero`](catalog/FY8.html#fy8-12-hero) | Ionisoiva säteily ja elimistö; avauskuva | 5 | 4 | 4 | 4 | KEVYT KORJAUS | Pöydän alla valkoinen kaista: lattia puuttuu. |  | KEVYT KORJAUS hyväksytty (opettaja 2026-11-11) |
+| [`fy8-12/hero`](catalog/FY8.html#fy8-12-hero) | Ionisoiva säteily ja elimistö; avauskuva | 5 | 4 | 4 | 4 | KEVYT KORJAUS | Pöydän alla valkoinen kaista: lattia puuttuu. |  | KEVYT KORJAUS hyväksytty (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12 |
 | [`fy8-12/energia`](catalog/FY8.html#fy8-12-energia) | Ionisoiva säteily ja elimistö; kaavio: teoria | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy8-12/jaljet`](catalog/FY8.html#fy8-12-jaljet) | Ionisoiva säteily ja elimistö; kaavio: teoria | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy8-12/lapaisy`](catalog/FY8.html#fy8-12-lapaisy) | Ionisoiva säteily ja elimistö; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
@@ -40,7 +40,7 @@ Kuvia 112. Asteikko 1–5: F fysiikka, P pedagogiikka, V visuaalinen laatu, T ty
 | [`fy8-14/rontgen`](catalog/FY8.html#fy8-14-rontgen) | Säteily lääketieteessä ja teknologiassa; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy8-14/pet`](catalog/FY8.html#fy8-14-pet) | Säteily lääketieteessä ja teknologiassa; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy8-14/sadehoito`](catalog/FY8.html#fy8-14-sadehoito) | Säteily lääketieteessä ja teknologiassa; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ | Keilat risteävät kasvaimessa: annos kertyy sinne. |  | ODOTTAA |
-| [`fy8-14/mittari`](catalog/FY8.html#fy8-14-mittari) | Säteily lääketieteessä ja teknologiassa; kaavio: teoria | 5 | 5 | 4 | 5 | KEVYT KORJAUS | "säätö" on laskurin laatikon reunan päällä. |  | KEVYT KORJAUS hyväksytty (opettaja 2026-11-11) |
+| [`fy8-14/mittari`](catalog/FY8.html#fy8-14-mittari) | Säteily lääketieteessä ja teknologiassa; kaavio: teoria | 5 | 5 | 4 | 5 | KEVYT KORJAUS | "säätö" on laskurin laatikon reunan päällä. |  | KEVYT KORJAUS hyväksytty (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12 |
 | [`fy8-14/kontrasti`](catalog/FY8.html#fy8-14-kontrasti) | Säteily lääketieteessä ja teknologiassa; kuvaaja: teoria | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy8-15/hero`](catalog/FY8.html#fy8-15-hero) | Standardimalli: perushiukkaset ja vuorovaikutukset; avauskuva | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy8-15/skaalat`](catalog/FY8.html#fy8-15-skaalat) | Standardimalli: perushiukkaset ja vuorovaikutukset; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
@@ -71,7 +71,7 @@ Kuvia 112. Asteikko 1–5: F fysiikka, P pedagogiikka, V visuaalinen laatu, T ty
 | [`fy8-3/hero`](catalog/FY8.html#fy8-3-hero) | Vetyatomin energiatasot ja Bohrin malli; avauskuva | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy8-3/levels`](catalog/FY8.html#fy8-3-levels) | Vetyatomin energiatasot ja Bohrin malli; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy8-3/absorption`](catalog/FY8.html#fy8-3-absorption) | Vetyatomin energiatasot ja Bohrin malli; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ | Sopiva, sopimaton ja ionisoiva fotoni rinnakkain. |  | ODOTTAA |
-| [`fy8-3/bohr`](catalog/FY8.html#fy8-3-bohr) | Vetyatomin energiatasot ja Bohrin malli; kaavio: teoria | 5 | 5 | 4 | 5 | KEVYT KORJAUS | Ratojen säteet suhteessa 1 : 4 : 9 (oikein), mutta sisin rata on niin pieni, että "n = 1" näyttää osoittavan ydintä. |  | KEVYT KORJAUS hyväksytty (opettaja 2026-11-11) |
+| [`fy8-3/bohr`](catalog/FY8.html#fy8-3-bohr) | Vetyatomin energiatasot ja Bohrin malli; kaavio: teoria | 5 | 5 | 4 | 5 | KEVYT KORJAUS | Ratojen säteet suhteessa 1 : 4 : 9 (oikein), mutta sisin rata on niin pieni, että "n = 1" näyttää osoittavan ydintä. |  | KEVYT KORJAUS hyväksytty (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12 |
 | [`fy8-3/spectrum`](catalog/FY8.html#fy8-3-spectrum) | Vetyatomin energiatasot ja Bohrin malli; kaavio: teoria | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy8-3/levels-task`](catalog/FY8.html#fy8-3-levels-task) | Vetyatomin energiatasot ja Bohrin malli; kaavio: tehtävä | 5 | 4 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy8-4/hero`](catalog/FY8.html#fy8-4-hero) | Valo ja elektroni aaltoina ja hiukkasina; avauskuva | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
@@ -83,7 +83,7 @@ Kuvia 112. Asteikko 1–5: F fysiikka, P pedagogiikka, V visuaalinen laatu, T ty
 | [`fy8-5/nodes`](catalog/FY8.html#fy8-5-nodes) | Aaltomekaaninen atomimalli ja orbitaalit; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ | Seisovan aallon solmut ja orbitaalien solmupinnat samalla ajatuksella. |  | ODOTTAA |
 | [`fy8-5/cloud`](catalog/FY8.html#fy8-5-cloud) | Aaltomekaaninen atomimalli ja orbitaalit; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ | Havainnot kertyvät todennäköisyyspilveksi. |  | ODOTTAA |
 | [`fy8-5/levels`](catalog/FY8.html#fy8-5-levels) | Aaltomekaaninen atomimalli ja orbitaalit; kaavio: teoria | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
-| [`fy8-6/hero`](catalog/FY8.html#fy8-6-hero) | LEDin valo ja Planckin vakion mittaaminen; avauskuva | 5 | 4 | 4 | 4 | KEVYT KORJAUS | Pöydän alla valkoinen kaista: lattia puuttuu. |  | KEVYT KORJAUS hyväksytty (opettaja 2026-11-11) |
+| [`fy8-6/hero`](catalog/FY8.html#fy8-6-hero) | LEDin valo ja Planckin vakion mittaaminen; avauskuva | 5 | 4 | 4 | 4 | KEVYT KORJAUS | Pöydän alla valkoinen kaista: lattia puuttuu. |  | KEVYT KORJAUS hyväksytty (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12 |
 | [`fy8-6/vyot`](catalog/FY8.html#fy8-6-vyot) | LEDin valo ja Planckin vakion mittaaminen; kaavio: teoria | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy8-6/spektrit`](catalog/FY8.html#fy8-6-spektrit) | LEDin valo ja Planckin vakion mittaaminen; kuvaaja: teoria | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy8-6/iu`](catalog/FY8.html#fy8-6-iu) | LEDin valo ja Planckin vakion mittaaminen; kuvaaja: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
@@ -94,16 +94,16 @@ Kuvia 112. Asteikko 1–5: F fysiikka, P pedagogiikka, V visuaalinen laatu, T ty
 | [`fy8-7/inversion`](catalog/FY8.html#fy8-7-inversion) | Laser ja kvanttirakenteet; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy8-7/cavity`](catalog/FY8.html#fy8-7-cavity) | Laser ja kvanttirakenteet; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy8-7/qdots`](catalog/FY8.html#fy8-7-qdots) | Laser ja kvanttirakenteet; kaavio: teoria | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
-| [`fy8-7/rate-graph`](catalog/FY8.html#fy8-7-rate-graph) | Laser ja kvanttirakenteet; kuvaaja: teoria | 5 | 4 | 3 | 4 | KEVYT KORJAUS | Pystyakselin nimi N/t ja yksikkö 1/s ovat pieninä pystymurtoina, lukukelvottomia puhelimella. Arvot oikein (tarkistettu). |  | KEVYT KORJAUS hyväksytty, ryhmä F (opettaja 2026-11-11) |
+| [`fy8-7/rate-graph`](catalog/FY8.html#fy8-7-rate-graph) | Laser ja kvanttirakenteet; kuvaaja: teoria | 5 | 4 | 3 | 4 | KEVYT KORJAUS | Pystyakselin nimi N/t ja yksikkö 1/s ovat pieninä pystymurtoina, lukukelvottomia puhelimella. Arvot oikein (tarkistettu). |  | KEVYT KORJAUS hyväksytty, ryhmä F (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12 |
 | [`fy8-7/tunnel`](catalog/FY8.html#fy8-7-tunnel) | Laser ja kvanttirakenteet; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
-| [`fy8-8/hero`](catalog/FY8.html#fy8-8-hero) | Atomiydin ja radioaktiivinen hajoaminen; avauskuva | 5 | 4 | 4 | 4 | KEVYT KORJAUS | Yläreunassa valkoinen kaista: katto puuttuu. |  | KEVYT KORJAUS hyväksytty (opettaja 2026-11-11) |
+| [`fy8-8/hero`](catalog/FY8.html#fy8-8-hero) | Atomiydin ja radioaktiivinen hajoaminen; avauskuva | 5 | 4 | 4 | 4 | KEVYT KORJAUS | Yläreunassa valkoinen kaista: katto puuttuu. |  | KEVYT KORJAUS hyväksytty (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12 |
 | [`fy8-8/isotopes`](catalog/FY8.html#fy8-8-isotopes) | Atomiydin ja radioaktiivinen hajoaminen; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy8-8/chart`](catalog/FY8.html#fy8-8-chart) | Atomiydin ja radioaktiivinen hajoaminen; kuvaaja: teoria | 5 | 5 | 5 | 5 | PIDÄ | Hajoamistavat oikeilla puolilla pysyvyyskaistaa. |  | ODOTTAA |
 | [`fy8-8/decays`](catalog/FY8.html#fy8-8-decays) | Atomiydin ja radioaktiivinen hajoaminen; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
-| [`fy8-8/levels`](catalog/FY8.html#fy8-8-levels) | Atomiydin ja radioaktiivinen hajoaminen; kaavio: teoria | 5 | 5 | 3 | 5 | KEVYT KORJAUS | Tytärytimen nimi (Ni-60) leikkautuu kuva-alan alareunaan, ja emoytimen nimi (Co-60) on kiinni yläreunassa. Energiat oikein. |  | KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11) |
+| [`fy8-8/levels`](catalog/FY8.html#fy8-8-levels) | Atomiydin ja radioaktiivinen hajoaminen; kaavio: teoria | 5 | 5 | 3 | 5 | KEVYT KORJAUS | Tytärytimen nimi (Ni-60) leikkautuu kuva-alan alareunaan, ja emoytimen nimi (Co-60) on kiinni yläreunassa. Energiat oikein. |  | KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12 |
 | [`fy8-8/shifts`](catalog/FY8.html#fy8-8-shifts) | Atomiydin ja radioaktiivinen hajoaminen; kaavio: teoria | 5 | 5 | 4 | 5 | PIDÄ | Siirtymät (N, Z)-kartalla oikeisiin suuntiin. |  | ODOTTAA |
 | [`fy8-8/spectrum`](catalog/FY8.html#fy8-8-spectrum) | Atomiydin ja radioaktiivinen hajoaminen; kuvaaja: tutkimusvaihe | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
-| [`fy8-9/hero`](catalog/FY8.html#fy8-9-hero) | Hajoamislaki ja puoliintumisaika; avauskuva | 5 | 4 | 4 | 4 | KEVYT KORJAUS | Pöydän alla valkoinen kaista: lattia puuttuu. |  | KEVYT KORJAUS hyväksytty (opettaja 2026-11-11) |
+| [`fy8-9/hero`](catalog/FY8.html#fy8-9-hero) | Hajoamislaki ja puoliintumisaika; avauskuva | 5 | 4 | 4 | 4 | KEVYT KORJAUS | Pöydän alla valkoinen kaista: lattia puuttuu. |  | KEVYT KORJAUS hyväksytty (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12 |
 | [`fy8-9/ydin`](catalog/FY8.html#fy8-9-ydin) | Hajoamislaki ja puoliintumisaika; kaavio: teoria | 5 | 5 | 5 | 5 | PIDÄ | Sama ydinjoukko kolmella hetkellä; satunnaisuus näkyy luvuissa 52 ja 28. |  | ODOTTAA |
 | [`fy8-9/kuvaaja`](catalog/FY8.html#fy8-9-kuvaaja) | Hajoamislaki ja puoliintumisaika; kuvaaja: teoria | 5 | 5 | 5 | 5 | PIDÄ |  |  | ODOTTAA |
 | [`fy8-9/sovitus`](catalog/FY8.html#fy8-9-sovitus) | Hajoamislaki ja puoliintumisaika; kuvaaja: teoria | 5 | 5 | 4 | 5 | PIDÄ |  |  | ODOTTAA |
