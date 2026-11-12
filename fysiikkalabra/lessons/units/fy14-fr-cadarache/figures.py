@@ -115,7 +115,7 @@ def map_():
     lx, ly = P(5.24, 43.90)
     f.tex(lx, ly + 34, r"\text{la Durance}", "middle", color=WATER)
     f.tex(22, 148, r"\text{le Rhône}", "start", color=WATER)
-    f.tex(cx, cy - 0.07 * KY * PX - 14, r"\text{l'étang de Berre}", "middle", color=WATER)
+    f.tex(cx, cy - 0.07 * KY * PX - 26, r"\text{l'étang de Berre}", "middle", color=WATER)
     # scale bar and north arrow
     x0, y0 = 40, HGT - 70
     f.rect(x0, y0, 20 * PX, 10, INK)

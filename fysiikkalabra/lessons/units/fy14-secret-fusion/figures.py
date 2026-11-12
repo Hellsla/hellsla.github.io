@@ -79,51 +79,54 @@ def ring_point(cx, cy, rx, ry, deg):
     return cx + rx * math.cos(t), cy + ry * math.sin(t), -rx * math.sin(t), ry * math.cos(t)
 
 
+# One drawing for the two pinches in both units (teacher 2026-11-11, illustration audit): copied from
+# fy14-confinement-concepts/figures.py pinches(), its colours and its field symbols, so that the two units show the same picture.
+PF_COL, PB_COL, PI_COL = "#c92a2a", "#2b8a3e", "#7048e8"
+PPLASMA, PPLASMA_LIGHT = "#e64980", "#fcc2d7"
+
+
+def p_odot(f, x, y, r=9):
+    f.circle(x, y, r, WHITE, PB_COL, 2.2); f.circle(x, y, 2.6, PB_COL)
+
+
+def p_otimes(f, x, y, r=9):
+    f.circle(x, y, r, WHITE, PB_COL, 2.2)
+    d = r * 0.68
+    f.line(x - d, y - d, x + d, y + d, PB_COL, 2.2); f.line(x - d, y + d, x + d, y - d, PB_COL, 2.2)
+
+
 def pinch():
-    """Two kinds of pinch, one above the other: a Z-pinch (current along the column, field circling it) and a theta
-    pinch (current in a coil around the column, field along the axis). Force arrows red and pointing inwards."""
-    f = Fig("fy14sf-pinch", 640, "Diagram of two kinds of pinch. Top, the Z-pinch: a horizontal orange plasma column with an "
-            "arrow for the current I flowing along it, from left to right. Green rings around the column show the magnetic "
-            "field B circling the current, with arrowheads showing its direction (downwards on the front of each ring). Red arrows above and below the column point inwards, towards its axis: the "
-            "magnetic force F squeezes the plasma. Bottom, the theta pinch: the same kind of column inside a copper coil whose "
-            "turns carry the current I around the column (an arrowhead on the last turn shows the direction). A green arrow along the axis shows the magnetic field B pointing "
-            "along the column, and red arrows again point inwards.", width=600, size=28)
-    f.rect(0, 0, 600, 640, WHITE)
-    # --- Z-pinch
-    f.tex(16, 30, r"\text{Z-pinch: current along the plasma}", size=28, w=568)
-    cy = 170
-    for x in (140, 280, 420):                           # back halves of the field rings, behind the column
-        f.path(f"M{x},{cy - 62} A18,62 0 0 0 {x},{cy + 62}", stroke=GOOD, w=3, extra='stroke-opacity="0.45"')
-    f.rect(60, cy - 30, 440, 60, H.grad(f, "sf-pl1", HEAT_LIGHT, HEAT), None, 2, 30)
-    f.arrow(90, cy, 470, cy, INK, 4, 18)
-    f.tex(512, cy, r"I", size=30)
-    for x in (140, 280, 420):                           # front halves, with the right-hand-rule direction (down at the front)
-        f.path(f"M{x},{cy - 62} A18,62 0 0 1 {x},{cy + 62}", stroke=GOOD, w=3.5)
-        px, py, dx, dy = ring_point(x, cy, 18, 62, 50)
-        head(f, px, py, dx, dy, GOOD, 20)
-    f.tex(96, cy - 74, r"\overline{B}", color=GOOD, size=30)
-    for x in (210, 350):
-        f.arrow(x, cy - 92, x, cy - 40, HOT, 4, 14)
-        f.arrow(x, cy + 92, x, cy + 40, HOT, 4, 14)
-    f.tex(364, cy - 84, r"\overline{F}", color=HOT, size=30)
-    f.tex(300, cy + 122, r"\text{The field circles the current.}", "middle", size=28, w=580)
-    # --- theta pinch
-    f.line(16, 332, 584, 332, RULE, 2)
-    f.tex(16, 366, r"\text{Theta pinch: current in a coil}", size=28, w=568)
-    cy = 500
-    f.rect(60, cy - 30, 440, 60, H.grad(f, "sf-pl2", HEAT_LIGHT, HEAT), None, 2, 30)
-    for k in range(9):                                  # coil turns: copper ellipses around the column
-        x = 90 + 50 * k
-        f.add(f'<ellipse cx="{x}" cy="{cy}" rx="10" ry="52" fill="none" stroke="{COPPER}" stroke-width="7"/>')
-    px, py, dx, dy = ring_point(490, cy, 10, 52, 45)    # current in the front of the last turn flows down
-    head(f, px + 4, py + 14, dx, dy, COPPER, 24)
-    f.arrow(80, cy, 520, cy, GOOD, 4, 18)
-    f.tex(530, cy, r"\overline{B}", color=GOOD, size=30)
-    for x in (165, 365):
-        f.arrow(x, cy - 104, x, cy - 36, HOT, 5, 14)
-        f.arrow(x, cy + 104, x, cy + 36, HOT, 5, 14)
-    f.tex(180, cy - 96, r"\overline{F}", color=HOT, size=30)
-    f.tex(470, cy - 80, r"I\ \text{in the coil}", "middle", color=COPPER, size=28, w=180)
+    """Z-pinch and theta-pinch: where the current flows, where its magnetic field points, and the inward force; the same
+    drawing as fy14-confinement-concepts/pinch."""
+    f = Fig("fy14sf-pinch", 400, "Two diagrams, one above the other. Top, Z-pinch: a horizontal column of plasma carries a "
+            "violet current I to the right. Above the column its magnetic field points out of the page (green dotted circles), "
+            "below it into the page (green crossed circles): the field circles the column. Red force arrows on the top and bottom "
+            "surfaces point inward, squeezing the column. Bottom, theta-pinch: a coil wound around a tube carries a current around "
+            "it; inside, a green magnetic field arrow points along the axis, and red arrows squeeze the plasma inward from all sides.")
+    f.tex(14, 22, r"\text{Z-pinch}", "start")
+    y0 = 110
+    f.rect(70, y0 - 28, 460, 56, PPLASMA_LIGHT, PPLASMA, 2.5, 28)
+    f.arrow(110, y0, 500, y0, PI_COL, 4, 16); f.tex(300, y0 + 4, r"I", "middle", color=PI_COL, bg=True)
+    for x in range(100, 520, 70):
+        p_odot(f, x, y0 - 52); p_otimes(f, x, y0 + 52)
+    for x in (135, 275, 415):
+        f.arrow(x, y0 - 82, x, y0 - 32, PF_COL, 4, 14)
+        f.arrow(x, y0 + 82, x, y0 + 32, PF_COL, 4, 14)
+    f.tex(548, y0 - 52, r"\overline{B}", "start", color=PB_COL)
+    f.tex(423, y0 - 70, r"\overline{F}", "start", color=PF_COL, bg=True)
+    f.tex(14, 222, r"\text{theta-pinch}", "start")
+    y1 = 310
+    f.add(f'<rect x="60" y="{y1 - 44}" width="480" height="88" rx="44" fill="{GLASS}" stroke="{METAL_EDGE}" stroke-width="3"/>')
+    f.rect(100, y1 - 18, 400, 36, PPLASMA_LIGHT, PPLASMA, 2.5, 18)
+    for k in range(10):
+        x = 92 + k * 46
+        f.add(f'<ellipse cx="{x}" cy="{y1}" rx="9" ry="56" fill="none" stroke="{PI_COL}" stroke-width="5"/>')
+    f.arrow(196, y1 - 70, 236, y1 - 62, PI_COL, 3, 12)
+    f.tex(244, y1 - 82, r"I\ \text{around the tube}", "start", color=PI_COL)
+    f.arrow(180, y1, 420, y1, PB_COL, 4, 16); f.tex(430, y1 + 2, r"\overline{B}", "start", color=PB_COL, bg=True)
+    for x in (207, 345):
+        f.arrow(x, y1 - 66, x, y1 - 22, PF_COL, 4, 14)
+        f.arrow(x, y1 + 66, x, y1 + 22, PF_COL, 4, 14)
     return f.svg()
 
 

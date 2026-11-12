@@ -71,21 +71,23 @@ def heating():
     f.path("M" + " L".join(f"{n(x)},{n(y)}" for x, y in pts), stroke=INK, w=5)
     x2, y2 = pts[-1]; x1, y1 = pts[-3]
     f.arrow(x1, y1, x2 + (x2 - x1) * 0.8, y2 + (y2 - y1) * 0.8, INK, 5, 20)
-    f.tex(cx, cy - 210, r"\text{current: ohmic heating}", "middle", size=28, w=420)
-    # neutral beam from the right
+    # every method named at its source, 24 units like the series' other figures (teacher 2026-11-11, illustration audit)
+    f.tex(cx, cy - ry - 58, r"\text{current: ohmic heating}", "middle", size=24, w=360)
     # neutral beam: the injector box stands outside the ring; the fast atoms fly into the plasma band and are caught there
     f.rect(500, 255, 90, 70, IRON, INK, 2, 6)
-    f.tex(545, 196, r"\text{neutral}", "middle", size=28, w=110)
-    f.tex(545, 230, r"\text{beam}", "middle", size=28, w=110)
+    f.tex(545, 208, r"\text{neutral}", "middle", size=24, w=100)
+    f.tex(545, 236, r"\text{beam}", "middle", size=24, w=100)
     f.arrow(500, 290, 478, 290, INK, 4, 14)
     for k, x in enumerate((462, 446, 430, 414)):     # inside the band (x 408-472); fading: ionised and caught
         f.add(f'<circle cx="{x}" cy="290" r="8" fill="{INK}" fill-opacity="{1 - 0.22 * k:.2f}"/>')
-    # radio waves from the lower left
-    f.rect(20, 470, 90, 34, COPPER, INK, 2, 4)
+    # radio waves: an antenna below the ring at the lower left, its wave fronts reaching into the plasma band
+    ax0, ay0 = 52, 486                                # the antenna's emitting face (its upper right corner)
+    f.rect(ax0 - 40, ay0, 46, 40, COPPER, INK, 2, 4)
+    for k in range(4): f.line(ax0 - 32 + 10 * k, ay0 + 8, ax0 - 32 + 10 * k, ay0 + 32, INK, 1.5)
     for k in range(3):
-        r = 50 + 34 * k
-        f.add(f'<path d="M{n(65 + r * 0.30)},{n(470 - r * 0.95)} A{r},{r} 0 0,1 {n(65 + r * 0.95)},{n(470 - r * 0.30)}" fill="none" stroke="{COPPER}" stroke-width="4"/>')
-    f.tex(130, 534, r"\text{radio waves}", size=28, w=220)
+        r = 54 + 34 * k
+        f.add(f'<path d="M{n(ax0 + r * 0.26)},{n(ay0 - r * 0.97)} A{r},{r} 0 0,1 {n(ax0 + r * 0.97)},{n(ay0 - r * 0.26)}" fill="none" stroke="{COPPER}" stroke-width="4"/>')
+    f.tex(ax0 + 20, ay0 + 36, r"\text{antenna: radio waves}", size=24, w=280)
     return f.svg()
 
 

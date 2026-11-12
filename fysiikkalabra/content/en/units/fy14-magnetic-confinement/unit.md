@@ -88,9 +88,6 @@ The force is always **perpendicular** both to $\overline{v}$ and to $\overline{B
   <circle cx="436" cy="36" r="8" fill="#ffffff" stroke="#2b8a3e" stroke-width="2.2"/>
   <line x1="430.5" y1="30.5" x2="441.5" y2="41.5" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
   <line x1="430.5" y1="41.5" x2="441.5" y2="30.5" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <circle cx="436" cy="98" r="8" fill="#ffffff" stroke="#2b8a3e" stroke-width="2.2"/>
-  <line x1="430.5" y1="92.5" x2="441.5" y2="103.5" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="430.5" y1="103.5" x2="441.5" y2="92.5" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
   <circle cx="503" cy="36" r="8" fill="#ffffff" stroke="#2b8a3e" stroke-width="2.2"/>
   <line x1="497.5" y1="30.5" x2="508.5" y2="41.5" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
   <line x1="497.5" y1="41.5" x2="508.5" y2="30.5" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
@@ -179,7 +176,7 @@ In a **magnetic mirror** the field is stronger at both ends. As a particle moves
 ```
 Particles with smaller pitch angles, inside the **loss cone**, escape through the ends.
 
-<svg data-fig="mirror" viewBox="0 0 600 360" role="img" aria-label="Side view of a magnetic mirror. Green field lines run from left to right; they are spread out in the middle and squeezed together at both ends, where two coils make the field four times stronger. A particle path spirals around the axis, moving to the right, and turns back before the right-hand coil. In the middle, the particle&#x27;s velocity arrow, blue, is split into a part along the field, v parallel, and a part across it, v perpendicular; the angle between the velocity and the field is the pitch angle theta." style="max-width:100%;font-size:24px">
+<svg data-fig="mirror" viewBox="0 0 600 480" role="img" aria-label="Side view of a magnetic mirror. Green field lines run from left to right; they are spread out in the middle and squeezed together at both ends, where two coils make the field four times stronger. A particle path spirals around the axis, moving to the right, and turns back before the right-hand coil. In the middle, the particle&#x27;s velocity is drawn again under the mirror, joined to the path by a dotted line: the blue arrow is split into a part along the field, v parallel, and a part across it, v perpendicular; the angle between the velocity and the field is the pitch angle theta." style="max-width:100%;font-size:24px">
   <path d="M20,124 L30,124 L40,124 L50,124 L60,122.5 L70,120.5 L80,118.5 L90,116.5 L100,114.5 L110,112 L120,110 L130,107.5 L140,105 L150,102.5 L160,99.5 L170,97 L180,94 L190,91 L200,88 L210,85 L220,82 L230,79 L240,76.5 L250,74 L260,72 L270,70.5 L280,69 L290,68.5 L300,68 L310,68.5 L320,69 L330,70.5 L340,72 L350,74 L360,76.5 L370,79 L380,82 L390,85 L400,88 L410,91 L420,94 L430,97 L440,99.5 L450,102.5 L460,105 L470,107.5 L480,110 L490,112 L500,114.5 L510,116.5 L520,118.5 L530,120.5 L540,122.5 L550,124 L560,124 L570,124 L580,124" fill="none" stroke="#2b8a3e" stroke-width="2.5" stroke-linejoin="round"/>
   <line x1="220" y1="82" x2="229.5" y2="79.5" stroke="#2b8a3e" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M240,76.5 L230,85 L227,74.5 Z" fill="#2b8a3e" stroke-linejoin="round"/>
@@ -207,17 +204,19 @@ Particles with smaller pitch angles, inside the **loss cone**, escape through th
   <line x1="407" y1="110" x2="378" y2="110" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M367,110 L379,104.5 L379,115.5 Z" fill="#1f2933" stroke-linejoin="round"/>
   <foreignObject x="327" y="73.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{turns back}$</span></div></foreignObject>
-  <line x1="210" y1="219" x2="254.5" y2="283" stroke="#1971c2" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M262.5,294.5 L248.5,286 L259.5,278 Z" fill="#1971c2" stroke-linejoin="round"/>
-  <line x1="210" y1="219" x2="262.5" y2="219" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt" stroke-dasharray="7 5"/>
-  <line x1="262.5" y1="219" x2="262.5" y2="292.5" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt" stroke-dasharray="7 5"/>
+  <line x1="210" y1="228" x2="210" y2="327" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="2 4"/>
+  <line x1="210" y1="336" x2="254.5" y2="400" stroke="#1971c2" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M262.5,411.5 L248.5,403 L259.5,395 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <line x1="210" y1="336" x2="262.5" y2="336" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt" stroke-dasharray="7 5"/>
+  <line x1="262.5" y1="336" x2="262.5" y2="409.5" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt" stroke-dasharray="7 5"/>
   <circle cx="210" cy="219" r="8" fill="#c2255c" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="272.5" y="274" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\overline{v}$</span></div></foreignObject>
-  <foreignObject x="220" y="186.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$v_{\parallel}$</span></div></foreignObject>
-  <foreignObject x="272.5" y="238" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$v_{\perp}$</span></div></foreignObject>
-  <path d="M244,219 A34,34 0 0 1 229.5,247" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <foreignObject x="184" y="244.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\theta$</div></foreignObject>
-  <foreignObject x="127.5" y="319.5" width="345" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$B_{\max} = 4B_0\text{: reflected if } \sin^2\theta \geq B_0 / B_{\max}$</div></foreignObject>
+  <circle cx="210" cy="336" r="8" fill="#c2255c" stroke="#ffffff" stroke-width="2"/>
+  <foreignObject x="274.5" y="401" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\overline{v}$</div></foreignObject>
+  <foreignObject x="220" y="299.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$v_{\parallel}$</div></foreignObject>
+  <foreignObject x="274.5" y="359" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$v_{\perp}$</div></foreignObject>
+  <path d="M240,336 A30,30 0 0 1 227,360.5" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <foreignObject x="240" y="343.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\theta$</div></foreignObject>
+  <foreignObject x="127.5" y="437.5" width="345" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$B_{\max} = 4B_0\text{: reflected if } \sin^2\theta \geq B_0 / B_{\max}$</div></foreignObject>
 </svg>
 
 The Earth's magnetic field is a natural mirror: it traps charged particles in the radiation belts, where they bounce between the north and the south. Particles that do reach the upper air near the poles make the northern lights.

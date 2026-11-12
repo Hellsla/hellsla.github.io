@@ -121,21 +121,25 @@ In Princeton, the **Princeton Large Torus (PLT)** started in December 1975. With
   <path d="M89,243.5 L92.5,235 L97,226 L102.5,217.5 L108,209.5 L114.5,202 L121.5,194.5 L129,187.5 L137,180.5 L145.5,174.5 L154,168.5 L163.5,163.5 L173.5,158.5 L183.5,154.5 L193.5,150.5 L204.5,147.5 L215,144.5 L226.5,142.5 L237.5,141 L248.5,140.5 L260,140 L271.5,140.5 L282.5,141 L293.5,142.5 L305,144.5 L315.5,147.5 L326.5,150.5 L336.5,154.5 L346.5,158.5 L356.5,163.5 L366,168.5" fill="none" stroke="#1f2933" stroke-width="5" stroke-linejoin="round"/>
   <line x1="346.5" y1="158.5" x2="364.5" y2="168" stroke="#1f2933" stroke-width="5" stroke-linecap="butt"/>
   <path d="M381,176.5 L359,175.5 L367.5,159.5 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <foreignObject x="50" y="63" width="420" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:28px">$\text{current: ohmic heating}$</div></foreignObject>
+  <foreignObject x="80" y="67.5" width="360" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{current: ohmic heating}$</div></foreignObject>
   <rect x="500" y="255" width="90" height="70" rx="6" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <foreignObject x="490" y="179" width="110" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:28px">$\text{neutral}$</div></foreignObject>
-  <foreignObject x="490" y="213" width="110" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:28px">$\text{beam}$</div></foreignObject>
+  <foreignObject x="495" y="193.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{neutral}$</div></foreignObject>
+  <foreignObject x="495" y="221.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{beam}$</div></foreignObject>
   <line x1="500" y1="290" x2="491" y2="290" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
   <path d="M478,290 L492,283.5 L492,296.5 Z" fill="#1f2933" stroke-linejoin="round"/>
   <circle cx="462" cy="290" r="8" fill="#1f2933" fill-opacity="1.00"/>
   <circle cx="446" cy="290" r="8" fill="#1f2933" fill-opacity="0.78"/>
   <circle cx="430" cy="290" r="8" fill="#1f2933" fill-opacity="0.56"/>
   <circle cx="414" cy="290" r="8" fill="#1f2933" fill-opacity="0.34"/>
-  <rect x="20" y="470" width="90" height="34" rx="4" fill="#b8622d" stroke="#1f2933" stroke-width="2"/>
-  <path d="M80,422.5 A50,50 0 0,1 112.5,455" fill="none" stroke="#b8622d" stroke-width="4"/>
-  <path d="M90,390 A84,84 0 0,1 145,445" fill="none" stroke="#b8622d" stroke-width="4"/>
-  <path d="M100.5,358 A118,118 0 0,1 177,434.5" fill="none" stroke="#b8622d" stroke-width="4"/>
-  <foreignObject x="130" y="517" width="220" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:28px">$\text{radio waves}$</div></foreignObject>
+  <rect x="12" y="486" width="46" height="40" rx="4" fill="#b8622d" stroke="#1f2933" stroke-width="2"/>
+  <line x1="20" y1="494" x2="20" y2="518" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="30" y1="494" x2="30" y2="518" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="40" y1="494" x2="40" y2="518" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="50" y1="494" x2="50" y2="518" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <path d="M66,433.5 A54,54 0 0,1 104.5,472" fill="none" stroke="#b8622d" stroke-width="4"/>
+  <path d="M75,400.5 A88,88 0 0,1 137.5,463" fill="none" stroke="#b8622d" stroke-width="4"/>
+  <path d="M83.5,367.5 A122,122 0 0,1 170.5,454.5" fill="none" stroke="#b8622d" stroke-width="4"/>
+  <foreignObject x="72" y="507.5" width="280" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{antenna: radio waves}$</div></foreignObject>
 </svg>
 
 ## Stronger magnets {Magnets}

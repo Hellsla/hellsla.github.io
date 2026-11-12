@@ -127,7 +127,7 @@ def curves():
             "curve. The visible band from 380 to 750 nanometres is shaded. Three curves, each rising steeply from zero, "
             "reaching one peak and falling slowly: 6000 K is the highest curve with its peak at 483 nanometres; 5000 K is lower "
             "with its peak at 580 nanometres; 4000 K is the lowest with its peak at 724 nanometres. A dashed vertical line "
-            "marks each peak.")
+            "marks each peak. A key at the upper right names the curves by colour.")
     ax = Axes(f, (84, 330), (470, 60), x=(0, 2000), y=(0, 1.1), xticks=[500, 1000, 1500, 2000], yticks=[0.25, 0.5, 0.75, 1.0],
               xlabel=r"\lambda\ (\text{nm})", ylabel=r"\text{relative power}", yfmt=lambda v: f"{v:g}")
     f.rect(ax.X(380), ax.Y(1.1), ax.X(750) - ax.X(380), ax.Y(0) - ax.Y(1.1), "#e7f0ff", extra='fill-opacity="0.8"')
@@ -139,11 +139,15 @@ def curves():
         yp = planck(lp, T) / top
         f.line(ax.X(lp), ax.Y(yp), ax.X(lp), ax.Y(0), col, 1.8, "6 5")
         ax.point(lp, yp, col)
-        if T == 4000:     # in the gap between the 5000 K curve and the 4000 K peak, without a white box over the curves
-            f.tex(ax.X(lx), ax.Y(ly), rf"{T}\ \text{{K}}", "start", color=col, size=22)
-        else:
-            f.tex(ax.X(lx) + 12, ax.Y(ly), rf"{T}\ \text{{K}}", "start", color=col, bg=True)
-    f.tex(ax.X(1450), ax.Y(0.85), r"\text{model values}", "middle", color=MUTED, bg=True)
+    # a key in the free upper right, under its heading "model values" (teacher 2026-11-11, illustration audit: "4000 K" was
+    # on its curve and "model values" floated; the gaps between the curves are under 20 units, too narrow for a 24 label)
+    kx, ky = ax.X(1120), ax.Y(0.98)
+    f.tex(kx, ky, r"\text{model values}", "start", color=MUTED, bg=True)
+    for k, (T, col) in enumerate(((6000, COLD), (5000, GOOD), (4000, HOT))):
+        y = ky + 34 * (k + 1)
+        f.add(f'<rect x="{n(kx - 4)}" y="{n(y - 14)}" width="148" height="28" fill="{WHITE}"/>')
+        f.line(kx, y, kx + 34, y, col, 3)
+        f.tex(kx + 44, y, rf"{T}\ \text{{K}}", "start", color=col)
     return f.svg()
 
 

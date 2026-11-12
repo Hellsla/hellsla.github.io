@@ -276,60 +276,83 @@ A fusion fuel must be heated to many millions of degrees, so it becomes a **plas
 
 In a **pinch**, a strong current flows through the plasma itself. The current makes a magnetic field that circles around it, and the magnetic force on the moving charges squeezes the plasma towards the axis. In a **Z-pinch** the current flows along the plasma column. In a **theta pinch** a current in an outer coil flows *around* the column, and the field along the axis squeezes it. British teams at Harwell and Aldermaston built ring-shaped pinches, and James Tuck at Los Alamos built one he called the *Perhapsatron*. The squeezed column was unstable: it bent sideways (the **kink instability**) or narrowed in places like a chain of sausages (the **sausage instability**) and touched the wall in a tiny fraction of a second.
 
-<svg data-fig="pinch" viewBox="0 0 600 640" role="img" aria-label="Diagram of two kinds of pinch. Top, the Z-pinch: a horizontal orange plasma column with an arrow for the current I flowing along it, from left to right. Green rings around the column show the magnetic field B circling the current, with arrowheads showing its direction (downwards on the front of each ring). Red arrows above and below the column point inwards, towards its axis: the magnetic force F squeezes the plasma. Bottom, the theta pinch: the same kind of column inside a copper coil whose turns carry the current I around the column (an arrowhead on the last turn shows the direction). A green arrow along the axis shows the magnetic field B pointing along the column, and red arrows again point inwards." style="max-width:100%;font-size:28px">
-  <defs><linearGradient id="sf-pl1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient><linearGradient id="sf-pl2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
-  <rect x="0" y="0" width="600" height="640" fill="#ffffff"/>
-  <foreignObject x="16" y="13" width="568" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:28px">$\text{Z-pinch: current along the plasma}$</div></foreignObject>
-  <path d="M140,108 A18,62 0 0 0 140,232" fill="none" stroke="#2b8a3e" stroke-width="3" stroke-linejoin="round" stroke-opacity="0.45"/>
-  <path d="M280,108 A18,62 0 0 0 280,232" fill="none" stroke="#2b8a3e" stroke-width="3" stroke-linejoin="round" stroke-opacity="0.45"/>
-  <path d="M420,108 A18,62 0 0 0 420,232" fill="none" stroke="#2b8a3e" stroke-width="3" stroke-linejoin="round" stroke-opacity="0.45"/>
-  <rect x="60" y="140" width="440" height="60" rx="30" fill="url(#sf-pl1)"/>
-  <line x1="90" y1="170" x2="453" y2="170" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M470,170 L452,178 L452,162 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <foreignObject x="512" y="152" width="24" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px">$I$</div></foreignObject>
-  <path d="M140,108 A18,62 0 0 1 140,232" fill="none" stroke="#2b8a3e" stroke-width="3.5" stroke-linejoin="round"/>
-  <path d="M151.6,217.5 L148.7,195.3 L167.6,201.9 Z" fill="#2b8a3e" stroke-linejoin="round"/>
-  <path d="M280,108 A18,62 0 0 1 280,232" fill="none" stroke="#2b8a3e" stroke-width="3.5" stroke-linejoin="round"/>
-  <path d="M291.6,217.5 L288.7,195.3 L307.6,201.9 Z" fill="#2b8a3e" stroke-linejoin="round"/>
-  <path d="M420,108 A18,62 0 0 1 420,232" fill="none" stroke="#2b8a3e" stroke-width="3.5" stroke-linejoin="round"/>
-  <path d="M431.6,217.5 L428.7,195.3 L447.6,201.9 Z" fill="#2b8a3e" stroke-linejoin="round"/>
-  <foreignObject x="96" y="78" width="39" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px;color:#2b8a3e">$\overline{B}$</div></foreignObject>
-  <line x1="210" y1="78" x2="210" y2="117" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M210,130 L203.5,116 L216.5,116 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <line x1="210" y1="262" x2="210" y2="223" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M210,210 L216.5,224 L203.5,224 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <line x1="350" y1="78" x2="350" y2="117" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M350,130 L343.5,116 L356.5,116 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <line x1="350" y1="262" x2="350" y2="223" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M350,210 L356.5,224 L343.5,224 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="364" y="68" width="39" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px;color:#c92a2a">$\overline{F}$</div></foreignObject>
-  <foreignObject x="10" y="275" width="580" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:28px">$\text{The field circles the current.}$</div></foreignObject>
-  <line x1="16" y1="332" x2="584" y2="332" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="16" y="349" width="568" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:28px">$\text{Theta pinch: current in a coil}$</div></foreignObject>
-  <rect x="60" y="470" width="440" height="60" rx="30" fill="url(#sf-pl2)"/>
-  <ellipse cx="90" cy="500" rx="10" ry="52" fill="none" stroke="#b8622d" stroke-width="7"/>
-  <ellipse cx="140" cy="500" rx="10" ry="52" fill="none" stroke="#b8622d" stroke-width="7"/>
-  <ellipse cx="190" cy="500" rx="10" ry="52" fill="none" stroke="#b8622d" stroke-width="7"/>
-  <ellipse cx="240" cy="500" rx="10" ry="52" fill="none" stroke="#b8622d" stroke-width="7"/>
-  <ellipse cx="290" cy="500" rx="10" ry="52" fill="none" stroke="#b8622d" stroke-width="7"/>
-  <ellipse cx="340" cy="500" rx="10" ry="52" fill="none" stroke="#b8622d" stroke-width="7"/>
-  <ellipse cx="390" cy="500" rx="10" ry="52" fill="none" stroke="#b8622d" stroke-width="7"/>
-  <ellipse cx="440" cy="500" rx="10" ry="52" fill="none" stroke="#b8622d" stroke-width="7"/>
-  <ellipse cx="490" cy="500" rx="10" ry="52" fill="none" stroke="#b8622d" stroke-width="7"/>
-  <path d="M501.1,550.8 L493.8,524.9 L517.4,529.5 Z" fill="#b8622d" stroke-linejoin="round"/>
-  <line x1="80" y1="500" x2="503" y2="500" stroke="#2b8a3e" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M520,500 L502,508 L502,492 Z" fill="#2b8a3e" stroke-linejoin="round"/>
-  <foreignObject x="530" y="482" width="39" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px;color:#2b8a3e">$\overline{B}$</div></foreignObject>
-  <line x1="165" y1="396" x2="165" y2="451" stroke="#c92a2a" stroke-width="5" stroke-linecap="butt"/>
-  <path d="M165,464 L158.5,450 L171.5,450 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <line x1="165" y1="604" x2="165" y2="549" stroke="#c92a2a" stroke-width="5" stroke-linecap="butt"/>
-  <path d="M165,536 L171.5,550 L158.5,550 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <line x1="365" y1="396" x2="365" y2="451" stroke="#c92a2a" stroke-width="5" stroke-linecap="butt"/>
-  <path d="M365,464 L358.5,450 L371.5,450 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <line x1="365" y1="604" x2="365" y2="549" stroke="#c92a2a" stroke-width="5" stroke-linecap="butt"/>
-  <path d="M365,536 L371.5,550 L358.5,550 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="180" y="386" width="39" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px;color:#c92a2a">$\overline{F}$</div></foreignObject>
-  <foreignObject x="380" y="403" width="180" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:28px;color:#b8622d">$I\ \text{in the coil}$</div></foreignObject>
+<svg data-fig="pinch" viewBox="0 0 600 400" role="img" aria-label="Two diagrams, one above the other. Top, Z-pinch: a horizontal column of plasma carries a violet current I to the right. Above the column its magnetic field points out of the page (green dotted circles), below it into the page (green crossed circles): the field circles the column. Red force arrows on the top and bottom surfaces point inward, squeezing the column. Bottom, theta-pinch: a coil wound around a tube carries a current around it; inside, a green magnetic field arrow points along the axis, and red arrows squeeze the plasma inward from all sides." style="max-width:100%;font-size:24px">
+  <foreignObject x="14" y="7.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Z-pinch}$</div></foreignObject>
+  <rect x="70" y="82" width="460" height="56" rx="28" fill="#fcc2d7" stroke="#e64980" stroke-width="2.5"/>
+  <line x1="110" y1="110" x2="485" y2="110" stroke="#7048e8" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M500,110 L484,117 L484,103 Z" fill="#7048e8" stroke-linejoin="round"/>
+  <foreignObject x="290" y="99.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#7048e8"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$I$</span></div></foreignObject>
+  <circle cx="100" cy="58" r="9" fill="#ffffff" stroke="#2b8a3e" stroke-width="2.2"/>
+  <circle cx="100" cy="58" r="2.6" fill="#2b8a3e"/>
+  <circle cx="100" cy="162" r="9" fill="#ffffff" stroke="#2b8a3e" stroke-width="2.2"/>
+  <line x1="94" y1="156" x2="106" y2="168" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
+  <line x1="94" y1="168" x2="106" y2="156" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
+  <circle cx="170" cy="58" r="9" fill="#ffffff" stroke="#2b8a3e" stroke-width="2.2"/>
+  <circle cx="170" cy="58" r="2.6" fill="#2b8a3e"/>
+  <circle cx="170" cy="162" r="9" fill="#ffffff" stroke="#2b8a3e" stroke-width="2.2"/>
+  <line x1="164" y1="156" x2="176" y2="168" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
+  <line x1="164" y1="168" x2="176" y2="156" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
+  <circle cx="240" cy="58" r="9" fill="#ffffff" stroke="#2b8a3e" stroke-width="2.2"/>
+  <circle cx="240" cy="58" r="2.6" fill="#2b8a3e"/>
+  <circle cx="240" cy="162" r="9" fill="#ffffff" stroke="#2b8a3e" stroke-width="2.2"/>
+  <line x1="234" y1="156" x2="246" y2="168" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
+  <line x1="234" y1="168" x2="246" y2="156" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
+  <circle cx="310" cy="58" r="9" fill="#ffffff" stroke="#2b8a3e" stroke-width="2.2"/>
+  <circle cx="310" cy="58" r="2.6" fill="#2b8a3e"/>
+  <circle cx="310" cy="162" r="9" fill="#ffffff" stroke="#2b8a3e" stroke-width="2.2"/>
+  <line x1="304" y1="156" x2="316" y2="168" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
+  <line x1="304" y1="168" x2="316" y2="156" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
+  <circle cx="380" cy="58" r="9" fill="#ffffff" stroke="#2b8a3e" stroke-width="2.2"/>
+  <circle cx="380" cy="58" r="2.6" fill="#2b8a3e"/>
+  <circle cx="380" cy="162" r="9" fill="#ffffff" stroke="#2b8a3e" stroke-width="2.2"/>
+  <line x1="374" y1="156" x2="386" y2="168" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
+  <line x1="374" y1="168" x2="386" y2="156" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
+  <circle cx="450" cy="58" r="9" fill="#ffffff" stroke="#2b8a3e" stroke-width="2.2"/>
+  <circle cx="450" cy="58" r="2.6" fill="#2b8a3e"/>
+  <circle cx="450" cy="162" r="9" fill="#ffffff" stroke="#2b8a3e" stroke-width="2.2"/>
+  <line x1="444" y1="156" x2="456" y2="168" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
+  <line x1="444" y1="168" x2="456" y2="156" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
+  <line x1="135" y1="28" x2="135" y2="65" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M135,78 L128.5,64 L141.5,64 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <line x1="135" y1="192" x2="135" y2="155" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M135,142 L141.5,156 L128.5,156 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <line x1="275" y1="28" x2="275" y2="65" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M275,78 L268.5,64 L281.5,64 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <line x1="275" y1="192" x2="275" y2="155" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M275,142 L281.5,156 L268.5,156 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <line x1="415" y1="28" x2="415" y2="65" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M415,78 L408.5,64 L421.5,64 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <line x1="415" y1="192" x2="415" y2="155" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M415,142 L421.5,156 L408.5,156 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="548" y="43.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#2b8a3e">$\overline{B}$</div></foreignObject>
+  <foreignObject x="423" y="25.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\overline{F}$</span></div></foreignObject>
+  <foreignObject x="14" y="207.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{theta-pinch}$</div></foreignObject>
+  <rect x="60" y="266" width="480" height="88" rx="44" fill="#eef5f9" stroke="#8a96a3" stroke-width="3"/>
+  <rect x="100" y="292" width="400" height="36" rx="18" fill="#fcc2d7" stroke="#e64980" stroke-width="2.5"/>
+  <ellipse cx="92" cy="310" rx="9" ry="56" fill="none" stroke="#7048e8" stroke-width="5"/>
+  <ellipse cx="138" cy="310" rx="9" ry="56" fill="none" stroke="#7048e8" stroke-width="5"/>
+  <ellipse cx="184" cy="310" rx="9" ry="56" fill="none" stroke="#7048e8" stroke-width="5"/>
+  <ellipse cx="230" cy="310" rx="9" ry="56" fill="none" stroke="#7048e8" stroke-width="5"/>
+  <ellipse cx="276" cy="310" rx="9" ry="56" fill="none" stroke="#7048e8" stroke-width="5"/>
+  <ellipse cx="322" cy="310" rx="9" ry="56" fill="none" stroke="#7048e8" stroke-width="5"/>
+  <ellipse cx="368" cy="310" rx="9" ry="56" fill="none" stroke="#7048e8" stroke-width="5"/>
+  <ellipse cx="414" cy="310" rx="9" ry="56" fill="none" stroke="#7048e8" stroke-width="5"/>
+  <ellipse cx="460" cy="310" rx="9" ry="56" fill="none" stroke="#7048e8" stroke-width="5"/>
+  <ellipse cx="506" cy="310" rx="9" ry="56" fill="none" stroke="#7048e8" stroke-width="5"/>
+  <line x1="196" y1="240" x2="225" y2="246" stroke="#7048e8" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M236,248 L223,251 L225.5,240.5 Z" fill="#7048e8" stroke-linejoin="round"/>
+  <foreignObject x="244" y="213.5" width="186" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#7048e8">$I\ \text{around the tube}$</div></foreignObject>
+  <line x1="180" y1="310" x2="405" y2="310" stroke="#2b8a3e" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M420,310 L404,317 L404,303 Z" fill="#2b8a3e" stroke-linejoin="round"/>
+  <foreignObject x="430" y="297.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#2b8a3e"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\overline{B}$</span></div></foreignObject>
+  <line x1="207" y1="244" x2="207" y2="275" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M207,288 L200.5,274 L213.5,274 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <line x1="207" y1="376" x2="207" y2="345" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M207,332 L213.5,346 L200.5,346 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <line x1="345" y1="244" x2="345" y2="275" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M345,288 L338.5,274 L351.5,274 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <line x1="345" y1="376" x2="345" y2="345" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M345,332 L351.5,346 L338.5,346 Z" fill="#c92a2a" stroke-linejoin="round"/>
 </svg>
 
 In 1951 **Lyman Spitzer**, a Princeton astronomer, read about Richter's claim and doubted it. He then designed a different magnetic bottle, the **stellarator**: a tube bent into a figure-eight, so that the slow sideways drift of the particles in one half of the loop cancels the drift in the other half. The Atomic Energy Commission gave him 50,000 dollars, and his secret Project Matterhorn later became the Princeton Plasma Physics Laboratory. Its first small machine, Model A, ran in 1953. In Moscow, Tamm and Sakharov's ring became the **tokamak**, a ring with both a strong magnetic field from outside coils and a current in the plasma. The first true tokamak, T-1, started at the end of 1958.

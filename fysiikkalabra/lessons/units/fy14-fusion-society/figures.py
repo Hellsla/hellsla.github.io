@@ -105,7 +105,7 @@ def cycle():
     f.rect(4, 86, 92, 44, COLD_LIGHT, COLD, 2, 4)
     f.tex(50, 108, r"\text{water}", "middle")
     f.arrow(96, 118, 186, 170, COLD, 3)
-    f.tex(158, 112, r"\text{D}", "middle", COLD)
+    f.tex(104, 152, r"\text{D}", "middle", COLD)              # under the arrow, clear of the blanket (illustration audit 2026-11-11)
     # heat out to the right
     f.block_arrow(520, 190, 594, 190, HEAT_LIGHT, 18, 34, 18)
     f.tex(596, 150, r"\text{heat}", "end", HEAT)

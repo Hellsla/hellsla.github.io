@@ -75,6 +75,7 @@ def lorentz():
             x, y = 34 + i * 67, 36 + j * 62
             d = math.hypot(x - cx, y - cy)
             if d < r + 40 or (x < 200 and y < 110) or (cx < x < cx + 160 and y > cy + r - 40): continue
+            if math.hypot(x - (cx + r + 30), y - (cy - 96)) < 40: continue     # room for the upper v's name (audit 2026-11-11)
             otimes(f, x, y, 8)
     f.add(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{INK}" stroke-width="2.5" stroke-dasharray="8 7"/>')
     f.line(cx, cy, cx + r * math.cos(math.radians(-135)), cy + r * math.sin(math.radians(-135)), MUTED, 2)
@@ -105,10 +106,10 @@ def lorentz():
 def mirror():
     """Side view of a magnetic mirror: field lines converge at both ends (B up to 4 B0); a particle with a large pitch
     angle spirals and turns back; the velocity split into v_par and v_perp at one point."""
-    f = Fig("fy14mc-mirror", 360, "Side view of a magnetic mirror. Green field lines run from left to right; they are spread "
+    f = Fig("fy14mc-mirror", 480, "Side view of a magnetic mirror. Green field lines run from left to right; they are spread "
             "out in the middle and squeezed together at both ends, where two coils make the field four times stronger. A particle "
             "path spirals around the axis, moving to the right, and turns back before the right-hand coil. In the middle, the "
-            "particle's velocity arrow, blue, is split into a part along the field, v parallel, and a part across it, v perpendicular; "
+            "particle's velocity is drawn again under the mirror, joined to the path by a dotted line: the blue arrow is split into a part along the field, v parallel, and a part across it, v perpendicular; "
             "the angle between the velocity and the field is the pitch angle theta.")
     L, xm, y0 = 250, 300, 180
     w = lambda x: 1 / math.sqrt(1 + 3 * min(1, ((x - xm) / L) ** 2))      # field-line spread ∝ 1/sqrt(B), B = B0 (1 + 3 (x/L)^2)
@@ -137,18 +138,21 @@ def mirror():
     f.path("M" + " L".join(f"{n(a)},{n(b)}" for a, b in pts), stroke=INK, w=2, extra='stroke-opacity="0.75"')
     f.arrow(xr + 6, y0 - 70, xr - 34, y0 - 70, INK, 2.5, 12)
     f.tex(xr - 14, y0 - 92, r"\text{turns back}", "middle", bg=True)
-    # velocity components at the middle
+    # velocity components (teacher 2026-11-11, illustration audit: the names and θ were cramped on the field lines): the
+    # particle stays on the path, and its velocity is drawn split under the mirror, joined to it by a dotted leader
     px, py = pts[round(2 / turns * N)]
     th = math.radians(55); vl = 92
-    f.arrow(px, py, px + vl * math.cos(th), py + vl * math.sin(th), V_COL, 4, 15)
-    f.line(px, py, px + vl * math.cos(th), py, V_COL, 2.5, "7 5"); f.line(px + vl * math.cos(th), py, px + vl * math.cos(th), py + vl * math.sin(th) - 2, V_COL, 2.5, "7 5")
-    f.circle(px, py, 8, ION, WHITE, 2)
-    f.tex(px + vl * math.cos(th) + 10, py + vl * math.sin(th) - 6, r"\overline{v}", "start", color=V_COL, bg=True)
-    f.tex(px + vl * math.cos(th) / 2, py - 18, r"v_{\parallel}", "middle", color=V_COL, bg=True)
-    f.tex(px + vl * math.cos(th) + 10, py + vl * math.sin(th) / 2 - 4, r"v_{\perp}", "start", color=V_COL, bg=True)
-    f.path(f"M{n(px + 34)},{n(py)} A34,34 0 0 1 {n(px + 34 * math.cos(th))},{n(py + 34 * math.sin(th))}", stroke=INK, w=2)
-    f.tex(px - 6, py + 40, r"\theta", "end")
-    f.tex(xm, 334, r"B_{\max} = 4B_0\text{: reflected if } \sin^2\theta \geq B_0 / B_{\max}", "middle")
+    ox, oy = px, 336
+    f.line(px, py + 9, ox, oy - 9, MUTED, 1.5, "2 4")
+    f.arrow(ox, oy, ox + vl * math.cos(th), oy + vl * math.sin(th), V_COL, 4, 15)
+    f.line(ox, oy, ox + vl * math.cos(th), oy, V_COL, 2.5, "7 5"); f.line(ox + vl * math.cos(th), oy, ox + vl * math.cos(th), oy + vl * math.sin(th) - 2, V_COL, 2.5, "7 5")
+    f.circle(px, py, 8, ION, WHITE, 2); f.circle(ox, oy, 8, ION, WHITE, 2)
+    f.tex(ox + vl * math.cos(th) + 12, oy + vl * math.sin(th) + 4, r"\overline{v}", "start", color=V_COL)
+    f.tex(ox + vl * math.cos(th) / 2, oy - 22, r"v_{\parallel}", "middle", color=V_COL)
+    f.tex(ox + vl * math.cos(th) + 12, oy + vl * math.sin(th) / 2, r"v_{\perp}", "start", color=V_COL)
+    f.path(f"M{n(ox + 30)},{n(oy)} A30,30 0 0 1 {n(ox + 30 * math.cos(th))},{n(oy + 30 * math.sin(th))}", stroke=INK, w=2)
+    f.tex(ox + 40, oy + 22, r"\theta", "middle")              # inside the angle, beyond its arc
+    f.tex(xm, 452, r"B_{\max} = 4B_0\text{: reflected if } \sin^2\theta \geq B_0 / B_{\max}", "middle")
     return f.svg()
 
 
