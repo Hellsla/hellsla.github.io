@@ -55,17 +55,19 @@ fy1-5	387	= 119{,}0\,\text{AU}	= 119.0\,\text{AU}
 fy1-5	387	+ 0{,}0088602\,\tfrac{\text{AU}}{\text{vrk}} \cdot 2922\,\text{vrk}	+ 0.0088602\,\tfrac{\text{AU}}{\text{day}} \cdot 2922\,\text{days}					
 fy1-5	387	= 119{,}0\,\text{AU} + 25{,}89\,\text{AU}	= 119.0\,\text{AU} + 25.89\,\text{AU}					
 fy1-5	387	= 144{,}89\,\text{AU}	= 144.89\,\text{AU}					
-fy1-6	580	v = g\,t	v = g\,t					
-fy1-6	651	v = g\,t	v = g\,t					
-fy1-6	662	v = g\,t	v = g\,t					
-fy1-6	662	= 9{,}81\,\text{m/s}^2 \cdot 1{,}5\,\text{s}	= 9.81\,\text{m/s}^2 \cdot 1.5\,\text{s}					
-fy1-6	662	= 14{,}715\,\text{m/s}	= 14.715\,\text{m/s}					
-fy1-6	662	[4pt] v = 14{,}715 \cdot 1\,\text{m/s}	[4pt] v = 14.715 \cdot 1\,\text{m/s}					
-fy1-6	662	= 14{,}715 \cdot 3{,}6\,\text{km/h}	= 14.715 \cdot 3.6\,\text{km/h}					
-fy1-6	662	= 52{,}97\,\text{km/h}	= 52.97\,\text{km/h}					
+fy1-6	580	a = \frac{\Delta v}{\Delta t}	a = \frac{\Delta v}{\Delta t}	keskikiihtyvyys	average acceleration	MAFY	Mekaniikan kaavoja	MAFY vektorina; opettaja 2026-11-12: lisätään, vektorimerkintä jätetään pois
+fy1-6	580	v = a\,t	v = a\,t					
+fy1-6	586	v = g\,t	v = g\,t					
+fy1-6	657	v = g\,t	v = g\,t					
+fy1-6	668	v = g\,t	v = g\,t					
+fy1-6	668	= 9{,}81\,\text{m/s}^2 \cdot 1{,}5\,\text{s}	= 9.81\,\text{m/s}^2 \cdot 1.5\,\text{s}					
+fy1-6	668	= 14{,}715\,\text{m/s}	= 14.715\,\text{m/s}					
+fy1-6	668	[4pt] v = 14{,}715 \cdot 1\,\text{m/s}	[4pt] v = 14.715 \cdot 1\,\text{m/s}					
+fy1-6	668	= 14{,}715 \cdot 3{,}6\,\text{km/h}	= 14.715 \cdot 3.6\,\text{km/h}					
+fy1-6	668	= 52{,}97\,\text{km/h}	= 52.97\,\text{km/h}					
 fy1-7	167	\rho = \frac{m}{V}	\rho = \frac{m}{V}	tiheys	density	MAFY	Mekaniikan kaavoja	ratkaistut muodot $m = 
-ho V$ ja $V = m/
-ho$ samassa lohkossa nimettä
+ho V$ ja $V = m/								
+ho$ samassa lohkossa nimettä								
 fy1-7	167	m = \rho V	m = \rho V	=	=			tiheyden muu muoto, nimen alla
 fy1-7	167	V = \frac{m}{\rho}	V = \frac{m}{\rho}	=	=			tiheyden muu muoto, nimen alla
 fy1-7	247	1\,\tfrac{\text{g}}{\text{cm}^3} = \frac{10^{-3}\,\text{kg}}{10^{-6}\,\text{m}^3} = 1000\,\tfrac{\text{kg}}{\text{m}^3}	1\,\tfrac{\text{g}}{\text{cm}^3} = \frac{10^{-3}\,\text{kg}}{10^{-6}\,\text{m}^3} = 1000\,\tfrac{\text{kg}}{\text{m}^3}					

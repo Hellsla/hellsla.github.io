@@ -575,7 +575,14 @@ When there is no air resistance, all objects fall with the same acceleration reg
 In air the situation is different. Air slows a light, wide object, such as a feather or a sheet of paper, clearly more than a small, dense object, such as a stone or a steel ball. This is why at home a feather falls more slowly than a hammer. The difference is caused by the air, not by mass as such.
 
 ## Formula: Speed in free fall
-Because the speed increases by the same amount every second, the speed is directly proportional to time. When the object starts from rest, its speed at the moment $t$ is
+Acceleration tells how fast the velocity changes: it is the change in velocity divided by the time interval in which the change happens. When the acceleration is constant and the object starts from rest, the speed at the moment $t$ is the acceleration times the time:
+
+```kaavat
+average acceleration :: a = \frac{\Delta v}{\Delta t}
+v = a\,t
+```
+
+where $a$ is the acceleration ($\text{m/s}^2$), $\Delta v$ the change in velocity ($\text{m/s}$) in the time interval $\Delta t$ ($\text{s}$) and $v$ the speed at the moment $t$. In free fall the acceleration is the acceleration of free fall $g$. So the speed increases by the same amount every second and is directly proportional to time:
 
 ```latex
 v = g\,t

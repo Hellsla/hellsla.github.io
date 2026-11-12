@@ -575,7 +575,14 @@ Kun ilmanvastusta ei ole, kaikki kappaleet putoavat samalla kiihtyvyydellä riip
 Ilmassa tilanne on toinen. Ilma hidastaa kevyttä ja leveää kappaletta, kuten höyhentä tai paperiarkkia, selvästi enemmän kuin pientä ja tiheää kappaletta, kuten kiveä tai teräskuulaa. Siksi kotona höyhen putoaa hitaammin kuin vasara. Eron aiheuttaa ilma, ei massa sellaisenaan.
 
 ## Kaava: Vapaan pudotuksen nopeus
-Koska nopeus kasvaa joka sekunti yhtä paljon, nopeus on suoraan verrannollinen aikaan. Kun kappale lähtee levosta, sen nopeus hetkellä $t$ on
+Kiihtyvyys kertoo, kuinka nopeasti nopeus muuttuu: se on nopeuden muutos jaettuna aikavälillä, jossa muutos tapahtuu. Kun kiihtyvyys on vakio ja kappale lähtee levosta, nopeus hetkellä $t$ on kiihtyvyys kertaa aika:
+
+```kaavat
+keskikiihtyvyys :: a = \frac{\Delta v}{\Delta t}
+v = a\,t
+```
+
+missä $a$ on kiihtyvyys ($\text{m/s}^2$), $\Delta v$ nopeuden muutos ($\text{m/s}$) aikavälillä $\Delta t$ ($\text{s}$) ja $v$ nopeus hetkellä $t$. Vapaassa pudotuksessa kiihtyvyys on putoamiskiihtyvyys $g$. Nopeus kasvaa siis joka sekunti yhtä paljon, ja se on suoraan verrannollinen aikaan:
 
 ```latex
 v = g\,t
