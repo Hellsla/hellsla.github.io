@@ -115,12 +115,12 @@ Jäähdytyskone ja lämpöpumppu toimivat päinvastoin kuin lämpövoimakone: ne
 
 ## Kaava: Kaasun työ ja hyötysuhde
 Kun kaasun paine pysyy vakiona, kaasun tekemä laajenemistyö on
-```latex
-W = p\,\Delta V
+```kaavat
+kaasun tekemä laajenemistyö / kaasuun tehty puristustyö :: W = p\,\Delta V
 ```
 missä $W$ on kaasun tekemä työ (J), $p$ kaasun paine (Pa) ja $\Delta V$ kaasun tilavuuden muutos (m³). Kun kaasua puristetaan, sama kaava antaa ympäristön kaasuun tekemän puristustyön. Kaasun sisäenergian muutoksen antaa lämpöopin ensimmäinen pääsääntö
-```latex
-\Delta U = Q + W
+```kaavat
+lämpöopin 1. pääsääntö :: \Delta U = Q + W
 ```
 missä $Q$ on kaasuun siirtynyt lämpö (J) ja $W$ kaasuun tehty työ (J), kuten luvussa *Sisäenergia, lämpömäärä ja energian säilyminen*. Pääsäännössä $W$ on siis kaasuun tehty työ: kun kaasu laajenee ja tekee työn $p\,\Delta V$, siihen tehty työ on $W = -p\,\Delta V$, joten $\Delta U = Q - p\,\Delta V$.
 
@@ -166,8 +166,8 @@ missä $Q_1$ on kuumasta lähteestä koneeseen siirtynyt lämpö (J), $Q_2$ kylm
 </svg>
 
 Lämpöpumppu luovuttaa sisälle lämmön $Q_1$, joka on ulkoilmasta otetun lämmön $Q_2$ ja pumpun käyttämän sähköenergian $W$ summa. Energia säilyy, joten pumpun käyttämä sähköenergia on $W = Q_1 - Q_2$. Lämpökerroin kertoo, kuinka moninkertaisen lämmön pumppu luovuttaa sisälle käyttämäänsä sähköenergiaan verrattuna:
-```latex
-\varepsilon = \frac{Q_1}{W} = \frac{Q_1}{Q_1 - Q_2}
+```kaavat
+lämpöpumpun suorituskyky :: \varepsilon = \frac{Q_1}{W} = \frac{Q_1}{Q_1 - Q_2}
 ```
 missä $Q_1$ on lämpimälle puolelle eli sisälle luovutettu lämpö (J), $Q_2$ kylmältä puolelta eli ulkoilmasta otettu lämpö (J), $W$ pumpun käyttämä sähköenergia eli työ (J) ja $\varepsilon$ lämpökerroin. Lämpökerroin voidaan laskea samalla tavalla tehoista.
 
@@ -187,11 +187,11 @@ Biovoimalaitoksen kattilaan syötetään puuhakkeen energiaa teholla $500\,\text
 **Kaava ratkaistuna.** Ratkaistaan kysytyt suureet symboleilla ennen lukuja:
 ```latex
 \begin{aligned}
-\eta &= \frac{P_\text{hyöty}}{P_1} \\
-P_2 &= P_1 - P_\text{hyöty}
+\eta &= \frac{P_\text{a}}{P_1} \\
+P_2 &= P_1 - P_\text{a}
 \end{aligned}
 ```
-Pelkälle sähkölle $P_\text{hyöty} = P_\text{s}$ ja yhteistuotannolle $P_\text{hyöty} = P_\text{s} + P_\text{k}$.
+Pelkälle sähkölle $P_\text{a} = P_\text{s}$ ja yhteistuotannolle $P_\text{a} = P_\text{s} + P_\text{k}$.
 
 <!-- vaihe -->
 

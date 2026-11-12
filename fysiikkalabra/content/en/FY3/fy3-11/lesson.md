@@ -115,12 +115,12 @@ A refrigerator and a heat pump work the opposite way to a heat engine: they use 
 
 ## Formula: Work done by a gas and efficiency
 When the pressure of a gas stays constant, the work done by the gas in expanding is
-```latex
-W = p\,\Delta V
+```kaavat
+work done by a gas in expansion / on a gas in compression :: W = p\,\Delta V
 ```
 where $W$ is the work done by the gas (J), $p$ the pressure of the gas (Pa) and $\Delta V$ the change in the volume of the gas (m³). When the gas is compressed, the same formula gives the compression work done on the gas by the surroundings. The change in the internal energy of the gas is given by the first law of thermodynamics
-```latex
-\Delta U = Q + W
+```kaavat
+first law of thermodynamics :: \Delta U = Q + W
 ```
 where $Q$ is the quantity of heat transferred to the gas (J) and $W$ the work done on the gas (J), as in the chapter *Internal energy, heat and conservation of energy*. So in the first law $W$ is the work done on the gas: when the gas expands and does the work $p\,\Delta V$, the work done on it is $W = -p\,\Delta V$, so $\Delta U = Q - p\,\Delta V$.
 
@@ -166,8 +166,8 @@ where $Q_1$ is the heat transferred to the engine from the hot source (J), $Q_2$
 </svg>
 
 A heat pump gives out indoors the heat $Q_1$, which is the sum of the heat $Q_2$ taken from the outdoor air and the electrical energy $W$ used by the pump. Energy is conserved, so the electrical energy used by the pump is $W = Q_1 - Q_2$. The coefficient of performance tells how many times as much heat the pump gives out indoors as the electrical energy it uses:
-```latex
-\varepsilon = \frac{Q_1}{W} = \frac{Q_1}{Q_1 - Q_2}
+```kaavat
+coefficient of performance of a heat pump :: \varepsilon = \frac{Q_1}{W} = \frac{Q_1}{Q_1 - Q_2}
 ```
 where $Q_1$ is the heat given out to the warm side, that is, indoors (J), $Q_2$ the heat taken from the cold side, that is, from the outdoor air (J), $W$ the electrical energy, that is, the work used by the pump (J) and $\varepsilon$ the coefficient of performance. The coefficient of performance can be calculated in the same way from powers.
 
@@ -187,11 +187,11 @@ Wood chip energy is fed into the boiler of a biopower plant at a power of $500\,
 **Rearranged formula.** Solve for the quantities asked for, with symbols before numbers:
 ```latex
 \begin{aligned}
-\eta &= \frac{P_\text{useful}}{P_1} \\
-P_2 &= P_1 - P_\text{useful}
+\eta &= \frac{P_\text{a}}{P_1} \\
+P_2 &= P_1 - P_\text{a}
 \end{aligned}
 ```
-For electricity alone $P_\text{useful} = P_\text{e}$, and for combined production $P_\text{useful} = P_\text{e} + P_\text{dh}$.
+For electricity alone $P_\text{a} = P_\text{e}$, and for combined production $P_\text{a} = P_\text{e} + P_\text{dh}$.
 
 <!-- vaihe -->
 

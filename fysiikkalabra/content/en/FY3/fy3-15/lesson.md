@@ -150,8 +150,8 @@ The overall efficiency rises in combined production to as much as 85–$90\,\%$,
 
 ## Formula: Efficiency of a power plant
 The efficiency of one step or of the whole plant is the ratio of the useful energy obtained, the output work, to the energy brought in, the input work. The same ratio follows from the powers: the output power divided by the input power. The power of waste heat is the part of the input power that is not put to use:
-```latex
-\eta = \frac{W_\text{a}}{W_\text{o}} = \frac{P_\text{a}}{P_\text{o}}
+```kaavat
+efficiency :: \eta = \frac{W_\text{a}}{W_\text{o}} = \frac{P_\text{a}}{P_\text{o}}
 ```
 ```latex
 P_\text{h} = P_\text{o} - P_\text{a}

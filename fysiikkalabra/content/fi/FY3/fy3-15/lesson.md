@@ -150,8 +150,8 @@ Kokonaishyötysuhde nousee yhteistuotannossa jopa 85–$90\,\%$:iin, mutta sähk
 
 ## Kaava: Voimalaitoksen hyötysuhde
 Yhden vaiheen tai koko laitoksen hyötysuhde on hyödyksi saadun energian eli antotyön suhde sisään tuotuun energiaan eli ottotyöhön. Sama suhde saadaan tehoista: antotehon suhde ottotehoon. Hukkalämmön teho on se osa ottotehosta, joka ei tule hyödyksi:
-```latex
-\eta = \frac{W_\text{a}}{W_\text{o}} = \frac{P_\text{a}}{P_\text{o}}
+```kaavat
+hyötysuhde :: \eta = \frac{W_\text{a}}{W_\text{o}} = \frac{P_\text{a}}{P_\text{o}}
 ```
 ```latex
 P_\text{h} = P_\text{o} - P_\text{a}

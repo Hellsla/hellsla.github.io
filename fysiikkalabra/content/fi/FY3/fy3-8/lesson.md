@@ -170,8 +170,8 @@ Vesi on poikkeus: $0\,{}^\circ\text{C}$:n ja $4\,{}^\circ\text{C}$:n välillä s
 
 ## Kaava: Pituuden ja tilavuuden lämpölaajeneminen
 Kun kappaleen lämpötila muuttuu $\Delta T$, sen pituus on
-```latex
-l = l_0(1 + \alpha \Delta T)
+```kaavat
+pituuden lämpölaajeneminen :: l = l_0(1 + \alpha \Delta T)
 ```
 missä $l$ on pituus lämpötilan muutoksen jälkeen (m), $l_0$ alkuperäinen pituus (m), $\alpha$ pituuden lämpötilakerroin (1/K) ja $\Delta T$ lämpötilan muutos (K). Pituuden lämpötilakerroin $\alpha$ kertoo, kuinka suuren osan pituudestaan kappale pitenee, kun sen lämpötila nousee $1\,\text{K}$. Taulukon luku 12 tarkoittaa, että $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$.
 
@@ -182,8 +182,8 @@ Kun alkuperäinen pituus vähennetään uudesta pituudesta, saadaan pituuden muu
 Muutos on siis verrannollinen alkuperäiseen pituuteen: kaksi kertaa pidemmässä sauvassa on kaksi kertaa enemmän hiukkasvälejä, joten se pitenee kaksi kertaa enemmän. Jäähtyessä $\Delta T$ on negatiivinen, joten myös $\Delta l$ on negatiivinen eli kappale lyhenee.
 
 Nesteiden (ja vakiopaineessa kaasujen) tilavuus lasketaan samalla tavalla:
-```latex
-V = V_0(1 + \gamma \Delta T)
+```kaavat
+tilavuuden lämpölaajeneminen :: V = V_0(1 + \gamma \Delta T)
 ```
 missä $V$ on tilavuus lämpötilan muutoksen jälkeen (m³), $V_0$ alkuperäinen tilavuus (m³) ja $\gamma$ tilavuuden lämpötilakerroin (1/K). Tilavuuden muutos on vastaavasti $\Delta V = V - V_0 = \gamma V_0 \Delta T$. Kiinteällä aineella $\gamma \approx 3\alpha$, koska kappale laajenee kaikkiin kolmeen suuntaan: pituus, leveys ja korkeus kasvavat kukin suhteessa $\alpha \Delta T$, ja kun muutokset ovat pieniä, tilavuuden suhteellinen kasvu on lähes näiden summa $3\alpha \Delta T$. Kaavat ovat hyviä malleja, kun lämpötilan muutos on kohtuullinen. Kiinteillä aineilla se tarkoittaa esimerkiksi enintään noin sataa kelviniä. Nesteiden, varsinkin veden, kerroin $\gamma$ muuttuu selvästi lämpötilan mukana, joten taulukon $20\,{}^\circ\text{C}$:n arvoja käytetään vain lähellä $20\,{}^\circ\text{C}$:ta.
 

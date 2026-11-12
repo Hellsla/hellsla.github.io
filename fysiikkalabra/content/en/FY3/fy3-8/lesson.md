@@ -170,8 +170,8 @@ Water is an exception: between $0\,{}^\circ\text{C}$ and $4\,{}^\circ\text{C}$ i
 
 ## Formula: Thermal expansion of length and volume
 When the temperature of an object changes by $\Delta T$, its length is
-```latex
-l = l_0(1 + \alpha \Delta T)
+```kaavat
+linear thermal expansion :: l = l_0(1 + \alpha \Delta T)
 ```
 where $l$ is the length after the change in temperature (m), $l_0$ is the original length (m), $\alpha$ is the coefficient of linear expansion (1/K) and $\Delta T$ is the change in temperature (K). The coefficient of linear expansion $\alpha$ tells you what fraction of its length an object lengthens when its temperature rises by $1\,\text{K}$. The number 12 in the table means that $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$.
 
@@ -182,8 +182,8 @@ Subtracting the original length from the new length gives the change in length, 
 So the change is proportional to the original length: a rod twice as long has twice as many gaps between particles, so it lengthens twice as much. When the object cools, $\Delta T$ is negative, so $\Delta l$ is also negative, that is, the object gets shorter.
 
 The volume of liquids (and of gases at constant pressure) is calculated in the same way:
-```latex
-V = V_0(1 + \gamma \Delta T)
+```kaavat
+volume thermal expansion :: V = V_0(1 + \gamma \Delta T)
 ```
 where $V$ is the volume after the change in temperature (m³), $V_0$ is the original volume (m³) and $\gamma$ is the coefficient of volume expansion (1/K). Likewise, the change in volume is $\Delta V = V - V_0 = \gamma V_0 \Delta T$.
 

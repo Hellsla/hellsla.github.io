@@ -87,14 +87,15 @@ fy3-7	253	r = \frac{Pt}{\Delta m}	r = \frac{Pt}{\Delta m}
 fy3-7	253	= \frac{1000\,\text{W} \cdot 300\,\text{s}}{0{,}128\,\text{kg}}	= \frac{1000\,\text{W} \cdot 300\,\text{s}}{0.128\,\text{kg}}					
 fy3-7	253	= \frac{300\,000\,\text{J}}{0{,}128\,\text{kg}}	= \frac{300\,000\,\text{J}}{0.128\,\text{kg}}					
 fy3-7	253	= 2\,343\,750\,\tfrac{\text{J}}{\text{kg}}	= 2\,343\,750\,\tfrac{\text{J}}{\text{kg}}					
-fy3-8	173	\Delta L = \alpha L_0 \Delta T	\Delta L = \alpha L_0 \Delta T					
-fy3-8	179	\Delta V = \gamma V_0 \Delta T	\Delta V = \gamma V_0 \Delta T					
-fy3-8	270	\Delta L = \alpha L_0 \Delta T	\Delta L = \alpha L_0 \Delta T					
-fy3-8	270	\Delta T = T_\text{max} - T_\text{min}	\Delta T = T_\text{max} - T_\text{min}					
-fy3-8	284	\Delta L = \alpha L_0 \Delta T	\Delta L = \alpha L_0 \Delta T					
-fy3-8	284	= 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 120\,\text{m} \cdot 60\,\text{K}	= 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 120\,\text{m} \cdot 60\,\text{K}					
-fy3-8	284	= 0{,}0864\,\text{m}	= 0.0864\,\text{m}					
-fy3-8	284	= 86{,}4\,\text{mm}	= 86.4\,\text{mm}					
+fy3-8	173	l = l_0(1 + \alpha \Delta T)	l = l_0(1 + \alpha \Delta T)	pituuden lämpölaajeneminen	linear thermal expansion	MAFY	Termodynamiikan kaavoja	kirjoitettu MAFY:n muotoon 2026-11-12
+fy3-8	179	\Delta l = l - l_0 = \alpha l_0 \Delta T	\Delta l = l - l_0 = \alpha l_0 \Delta T					
+fy3-8	185	V = V_0(1 + \gamma \Delta T)	V = V_0(1 + \gamma \Delta T)	tilavuuden lämpölaajeneminen	volume thermal expansion	MAFY	Termodynamiikan kaavoja	kirjoitettu MAFY:n muotoon 2026-11-12
+fy3-8	276	\Delta l = \alpha l_0 \Delta T	\Delta l = \alpha l_0 \Delta T					
+fy3-8	276	\Delta T = T_\text{max} - T_\text{min}	\Delta T = T_\text{max} - T_\text{min}					
+fy3-8	290	\Delta l = \alpha l_0 \Delta T	\Delta l = \alpha l_0 \Delta T					
+fy3-8	290	= 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 120\,\text{m} \cdot 60\,\text{K}	= 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 120\,\text{m} \cdot 60\,\text{K}					
+fy3-8	290	= 0{,}0864\,\text{m}	= 0.0864\,\text{m}					
+fy3-8	290	= 86{,}4\,\text{mm}	= 86.4\,\text{mm}					
 fy3-9	245	p_1 V_1 = p_2 V_2	p_1 V_1 = p_2 V_2					
 fy3-9	249	p = \text{vakio} \cdot \frac{1}{V}	p = \text{constant} \cdot \frac{1}{V}					
 fy3-9	339	\frac{V_1}{T_1} = \frac{V_2}{T_2}	\frac{V_1}{T_1} = \frac{V_2}{T_2}					
@@ -122,26 +123,25 @@ fy3-10	453	= 0{,}2073\,\text{mol} \approx 0{,}21\,\text{mol}	= 0.2073\,\text{mol
 fy3-10	464	m = nM	m = nM					
 fy3-10	464	= 0{,}2073\,\text{mol} \cdot 4{,}0\,\text{g/mol}	= 0.2073\,\text{mol} \cdot 4.0\,\text{g/mol}					
 fy3-10	464	\approx 0{,}83\,\text{g}	\approx 0.83\,\text{g}					
-fy3-11	118	W_\text{k} = p\,\Delta V	W_\text{g} = p\,\Delta V					
-fy3-11	122	\Delta U = Q - W_\text{k}	\Delta U = Q - W_\text{g}					
+fy3-11	118	W = p\,\Delta V	W = p\,\Delta V	kaasun tekemä laajenemistyö / kaasuun tehty puristustyö	work done by a gas in expansion / on a gas in compression	MAFY	Termodynamiikan kaavoja	kirjoitettu MAFY:n muotoon 2026-11-12
+fy3-11	122	\Delta U = Q + W	\Delta U = Q + W	lämpöopin 1. pääsääntö	first law of thermodynamics	MAFY	Termodynamiikan kaavoja	kirjoitettu MAFY:n muotoon 2026-11-12
 fy3-11	128	W = Q_1 - Q_2	W = Q_1 - Q_2					
-fy3-11	131	\eta = \frac{W}{Q_1}	\eta = \frac{W}{Q_1}	lämpövoimakoneen hyötysuhde	efficiency of a heat engine	MAFY	Termodynamiikan kaavoja	MAFY: η = W/Q₁ = (Q₁ − Q₂)/Q₁
-fy3-11	169	Q_\text{sisälle} = Q_\text{ulko} + E_\text{s}	Q_\text{indoors} = Q_\text{outdoors} + E_\text{el}					
-fy3-11	173	\varepsilon = \frac{Q_\text{sisälle}}{E_\text{s}}	\varepsilon = \frac{Q_\text{indoors}}{E_\text{el}}					
-fy3-11	192	\eta = \frac{P_\text{hyöty}}{P_1}	\eta = \frac{P_\text{useful}}{P_1}					
-fy3-11	192	P_2 = P_1 - P_\text{hyöty}	P_2 = P_1 - P_\text{useful}					
-fy3-11	207	\eta_1 = \frac{P_\text{s}}{P_1}	\eta_1 = \frac{P_\text{e}}{P_1}					
-fy3-11	207	= \frac{190\,\text{MW}}{500\,\text{MW}}	= \frac{190\,\text{MW}}{500\,\text{MW}}					
-fy3-11	207	= 0{,}380	= 0.380					
-fy3-11	207	P_{2,1} = P_1 - P_\text{s}	P_{2,1} = P_1 - P_\text{e}					
-fy3-11	207	= 500\,\text{MW} - 190\,\text{MW}	= 500\,\text{MW} - 190\,\text{MW}					
-fy3-11	207	= 310\,\text{MW}	= 310\,\text{MW}					
-fy3-11	207	[6pt] \eta_2 = \frac{P_\text{s} + P_\text{k}}{P_1}	[6pt] \eta_2 = \frac{P_\text{e} + P_\text{dh}}{P_1}					
-fy3-11	207	= \frac{150\,\text{MW} + 290\,\text{MW}}{500\,\text{MW}}	= \frac{150\,\text{MW} + 290\,\text{MW}}{500\,\text{MW}}					
-fy3-11	207	= 0{,}880	= 0.880					
-fy3-11	207	P_{2,2} = P_1 - (P_\text{s} + P_\text{k})	P_{2,2} = P_1 - (P_\text{e} + P_\text{dh})					
-fy3-11	207	= 500\,\text{MW} - 440\,\text{MW}	= 500\,\text{MW} - 440\,\text{MW}					
-fy3-11	207	= 60\,\text{MW}	= 60\,\text{MW}					
+fy3-11	131	\eta = \frac{W}{Q_1} = \frac{Q_1 - Q_2}{Q_1}	\eta = \frac{W}{Q_1} = \frac{Q_1 - Q_2}{Q_1}	lämpövoimakoneen hyötysuhde	efficiency of a heat engine	MAFY	Termodynamiikan kaavoja	kirjoitettu MAFY:n muotoon 2026-11-12
+fy3-11	169	\varepsilon = \frac{Q_1}{W} = \frac{Q_1}{Q_1 - Q_2}	\varepsilon = \frac{Q_1}{W} = \frac{Q_1}{Q_1 - Q_2}	lämpöpumpun suorituskyky	coefficient of performance of a heat pump	MAFY	Termodynamiikan kaavoja	kirjoitettu MAFY:n muotoon 2026-11-12
+fy3-11	188	\eta = \frac{P_\text{a}}{P_1}	\eta = \frac{P_\text{a}}{P_1}					
+fy3-11	188	P_2 = P_1 - P_\text{a}	P_2 = P_1 - P_\text{a}					
+fy3-11	203	\eta_1 = \frac{P_\text{s}}{P_1}	\eta_1 = \frac{P_\text{e}}{P_1}					
+fy3-11	203	= \frac{190\,\text{MW}}{500\,\text{MW}}	= \frac{190\,\text{MW}}{500\,\text{MW}}					
+fy3-11	203	= 0{,}380	= 0.380					
+fy3-11	203	P_{2,1} = P_1 - P_\text{s}	P_{2,1} = P_1 - P_\text{e}					
+fy3-11	203	= 500\,\text{MW} - 190\,\text{MW}	= 500\,\text{MW} - 190\,\text{MW}					
+fy3-11	203	= 310\,\text{MW}	= 310\,\text{MW}					
+fy3-11	203	[6pt] \eta_2 = \frac{P_\text{s} + P_\text{k}}{P_1}	[6pt] \eta_2 = \frac{P_\text{e} + P_\text{dh}}{P_1}					
+fy3-11	203	= \frac{150\,\text{MW} + 290\,\text{MW}}{500\,\text{MW}}	= \frac{150\,\text{MW} + 290\,\text{MW}}{500\,\text{MW}}					
+fy3-11	203	= 0{,}880	= 0.880					
+fy3-11	203	P_{2,2} = P_1 - (P_\text{s} + P_\text{k})	P_{2,2} = P_1 - (P_\text{e} + P_\text{dh})					
+fy3-11	203	= 500\,\text{MW} - 440\,\text{MW}	= 500\,\text{MW} - 440\,\text{MW}					
+fy3-11	203	= 60\,\text{MW}	= 60\,\text{MW}					
 fy3-12	197	P = U A \Delta T	P = U A \Delta T					
 fy3-12	238	P = (U_\text{s} A_\text{s}	P = (U_\text{s} A_\text{s}					
 fy3-12	238	+ U_\text{i} A_\text{i})\,\Delta T	+ U_\text{i} A_\text{i})\,\Delta T					
@@ -194,18 +194,18 @@ fy3-14	253	= 6{,}05\,{}^\circ\text{C}	= 6.05\,{}^\circ\text{C}
 fy3-14	280	T = \frac{c_\text{v} m_\text{v} T_\text{v} + c_\text{v} m_\text{j} T_\text{j}}{c_\text{v} (m_\text{v} + m_\text{j})}	T = \frac{c_\text{w} m_\text{w} T_\text{w} + c_\text{w} m_\text{i} T_\text{i}}{c_\text{w} (m_\text{w} + m_\text{i})}					
 fy3-14	280	= \frac{0{,}30\,\text{kg} \cdot 20\,{}^\circ\text{C}}{0{,}40\,\text{kg}}	= \frac{0.30\,\text{kg} \cdot 20\,{}^\circ\text{C}}{0.40\,\text{kg}}					
 fy3-14	280	= 15\,{}^\circ\text{C}	= 15\,{}^\circ\text{C}					
-fy3-15	153	\eta = \frac{P_\text{hyöty}}{P_0}	\eta = \frac{P_\text{useful}}{P_0}					
-fy3-15	156	P_\text{h} = P_0 - P_\text{hyöty}	P_\text{h} = P_0 - P_\text{useful}					
-fy3-15	160	P_1 = \eta_1 P_0	P_1 = \eta_1 P_0					
+fy3-15	153	\eta = \frac{W_\text{a}}{W_\text{o}} = \frac{P_\text{a}}{P_\text{o}}	\eta = \frac{W_\text{a}}{W_\text{o}} = \frac{P_\text{a}}{P_\text{o}}	hyötysuhde	efficiency	MAFY	Mekaniikan kaavoja	kirjoitettu MAFY:n muotoon 2026-11-12
+fy3-15	156	P_\text{h} = P_\text{o} - P_\text{a}	P_\text{h} = P_\text{o} - P_\text{a}					
+fy3-15	160	P_1 = \eta_1 P_\text{o}	P_1 = \eta_1 P_\text{o}					
 fy3-15	160	P_2 = \eta_2 P_1	P_2 = \eta_2 P_1					
 fy3-15	160	P_3 = \eta_3 P_2	P_3 = \eta_3 P_2					
-fy3-15	168	\eta = \frac{P_3}{P_0} = \eta_1\,\eta_2\,\eta_3	\eta = \frac{P_3}{P_0} = \eta_1\,\eta_2\,\eta_3					
-fy3-15	203	\eta_\text{kok} = \frac{P_\text{s} + P_\text{k}}{P_0}	\eta_\text{tot} = \frac{P_\text{s} + P_\text{k}}{P_0}					
+fy3-15	168	\eta = \frac{P_3}{P_\text{o}} = \eta_1\,\eta_2\,\eta_3	\eta = \frac{P_3}{P_\text{o}} = \eta_1\,\eta_2\,\eta_3					
+fy3-15	203	\eta_\text{kok} = \frac{P_\text{s} + P_\text{k}}{P_\text{o}}	\eta_\text{tot} = \frac{P_\text{s} + P_\text{k}}{P_\text{o}}					
 fy3-15	207	P_\text{L} = c\,q_m\,\Delta T	P_\text{L} = c\,q_m\,\Delta T					
-fy3-15	245	P_3 = \eta_1\,\eta_2\,\eta_3\,P_0	P_3 = \eta_1\,\eta_2\,\eta_3\,P_0					
-fy3-15	245	\eta = \frac{P_3}{P_0}	\eta = \frac{P_3}{P_0}					
-fy3-15	245	P_\text{h} = P_0 - P_3	P_\text{h} = P_0 - P_3					
-fy3-15	260	P_3 = \eta_1\,\eta_2\,\eta_3\,P_0	P_3 = \eta_1\,\eta_2\,\eta_3\,P_0					
+fy3-15	245	P_3 = \eta_1\,\eta_2\,\eta_3\,P_\text{o}	P_3 = \eta_1\,\eta_2\,\eta_3\,P_\text{o}					
+fy3-15	245	\eta = \frac{P_3}{P_\text{o}}	\eta = \frac{P_3}{P_\text{o}}					
+fy3-15	245	P_\text{h} = P_\text{o} - P_3	P_\text{h} = P_\text{o} - P_3					
+fy3-15	260	P_3 = \eta_1\,\eta_2\,\eta_3\,P_\text{o}	P_3 = \eta_1\,\eta_2\,\eta_3\,P_\text{o}					
 fy3-15	260	= 0{,}38038 \cdot 600\,\text{MW}	= 0.38038 \cdot 600\,\text{MW}					
 fy3-15	260	= 228{,}228\,\text{MW}	= 228.228\,\text{MW}					
 fy3-16	85	Pt = Q_1 + Q_2 + \dots	Pt = Q_1 + Q_2 + \dots					

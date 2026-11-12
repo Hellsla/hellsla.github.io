@@ -92,7 +92,7 @@
 ## fy3-11-L3-01
 **Given:** in combined production fuel power $P_\text{CHP} = 320\,\text{MW}$, electric power $P_\text{e} = 96\,\text{MW}$, district heating power $P_\text{dh} = 180\,\text{MW}$; in separate production the efficiency of the condensing plant $\eta_\text{cond} = 0.400$ and of the heating plant $\eta_\text{h} = 0.900$
 **Find:** the additional fuel power $\Delta P$ needed by separate production in megawatts, and a justification for the difference in efficiencies
-**Principle:** The same electric and heating powers are produced in two separate plants, and the fuel power of each is obtained from the efficiency: $P_\text{in} = P_\text{useful}/\eta$. The comparison is fair because the useful powers are the same in both cases.
+**Principle:** The same electric and heating powers are produced in two separate plants, and the fuel power of each is obtained from the efficiency: $P_\text{in} = P_\text{a}/\eta$. The comparison is fair because the useful powers are the same in both cases.
 **Formula:** $P_\text{cond} = \dfrac{P_\text{e}}{\eta_\text{cond}}$ and $P_\text{hp} = \dfrac{P_\text{dh}}{\eta_\text{h}}$, so $\Delta P = \dfrac{P_\text{e}}{\eta_\text{cond}} + \dfrac{P_\text{dh}}{\eta_\text{h}} - P_\text{CHP}$
 **Conversions:** The efficiencies are $40.0\,\% = 0.400$ and $90.0\,\% = 0.900$. All powers are in megawatts, so no other conversion is needed.
 **Substitution:** $\Delta P = \dfrac{96\,\text{MW}}{0.400} + \dfrac{180\,\text{MW}}{0.900} - 320\,\text{MW} = 240\,\text{MW} + 200\,\text{MW} - 320\,\text{MW} = 120\,\text{MW}$
