@@ -1,17 +1,20 @@
 VERDICT: FAIL
-CONTENT-HASH: 7db9426afc47ccfe
+CONTENT-HASH: 191d9a7966bb3115
 
 ## Blocking
-- content/en/FY2/fy2-1/exercises/exercises.json:156 (fy2-1-L1-10), solutions.md:67 — **A (scope)**: the task gives the student $E = c\,m\,\Delta T$ to use and asks for a table value of $c$. The FY2 scope notes say "FY2 has no ... Q = c m Delta T"; that formula and specific heat capacity belong to FY3, which builds on FY2. The physics and the number are right ($4.19 \cdot 0.50 \cdot 40 = 83.8\,\text{kJ}$), but the task is outside the course. — Fix: replace it with a FY2-level MAFY lookup task, e.g. a heating value with $E = Hm$ (taught later in FY2, so better placed in that chapter) or one inside this chapter's content (energy forms and conservation with given energies). Alternatively move this task to the FY3 chapter on heat.
+- content/en/FY2/fy2-1/exercises/solutions.md:67–90 (fy2-1-L1-10), exercises.json:166 (`answer`), lessons/FY2/fy2-1/answers.py:179. **A (quantitative, data)**: the task sends the student to the MAFY table, but the solution and answers.py quote $H = 43\,\text{MJ/kg}$ for petrol "from the MAFY table". The current table (mafytaulukot.fi, *Polttoaineiden LHV-lämpöarvoja*, row *bensiini*) gives $43{,}4\,\text{MJ/kg}$. A student who reads the table correctly gets $E = 43{,}4 \cdot 2{,}0 = 86{,}8 \approx 87\,\text{MJ}$, and the model solution then shows a different table value and a different answer ($86\,\text{MJ}$). The check still accepts 87 (1 % off, inside 0.04), but the solution misquotes its named source. Fix: $H = 43.4\,\text{MJ/kg}$ in Given and Substitution, `a["fy2-1-L1-10"] = 43.4 * 2.0`, `answer` 86.8, Answer "$E \approx 87\,\text{MJ}$ (two significant figures, from $m = 2.0\,\text{kg}$)", and about $24\,\text{kWh}$ in the check (still right). Keep tolerance 0.04, because other tables give 42–44 MJ/kg.
 
 ## Polish
-- solutions.md:67 (L1-10) — "the system is isolated": electrical energy comes into the kettle from the mains, so kettle and water are not an isolated system unless the wiring and grid are included. "No energy escapes to the surroundings, so all the electrical energy becomes thermal energy of the water" says it more exactly.
-- solutions.md:147 (L2-08), Reasonableness — "B is halfway down the slope": B is at $3/7$ of the height ($E_\text{p}$ drops from 700 to 300 J of 700 J), and friction losses depend on the path length, not the height. Better: "B lies about halfway between A and C, and half of the loss by C comes before B", or check only $600 + 100 = 700\,\text{J}$ and $0 < p < 100\,\%$.
+- solutions.md (L1-10), Reasonableness: the table's wood value is $16{,}2\,\text{MJ/kg}$ (dry wood). "About $16\,\text{MJ/kg}$ for dry wood" names the row the student would look up.
+- exercises.json (L1-10): "changes into kinetic and thermal energy". In an engine most of the chemical energy ends up as thermal energy and only part becomes kinetic energy. "mostly thermal energy, part of it kinetic energy" would be more exact. This is level C, not a finding.
 
 ## Checked
-- Hash 7db9426afc47ccfe at the start and at the end (`--exercises --lang en`).
-- L2-08: the figure's data FRICTION has B = (300 J, 300 J) and A = (700 J, 0 J), the same as the solution and the alt description. B's place on the track (u² = 300/700) matches its $E_\text{p}$, so the drawing is to scale. The figure does not show the thermal energy or a total, so it does not give the answer away.
-- Recomputed L2-08 myself: $E_\text{thermal} = 700 - 600 = 100\,\text{J}$, $p = 14.29\,\%$, the same as answers.py. The rounded answer 14 % is 2 % off, inside tolerance 0.03. Two significant figures fits values read on 100 J gridlines.
-- L2-08 physics: friction turns mechanical energy into thermal energy and conservation is applied to skater, half-pipe and surroundings, as the guardrail requires (no energy is created). It does not contradict L1-03 (200 J by C, 29 %).
-- Recomputed L1-10: $83.8\,\text{kJ}$, the same as answers.py. With $c = 4.18$ the result is 83.6 kJ, inside tolerance. The 2 kW kettle check gives 42 s, which is right. The temperature stays between 20 and 60 °C with no change of state, so $cm\Delta T$ applies. Unit kJ, rounding to 2 sig. figs from 0.50 kg is justified.
-- Both solutions are complete in all seven stages and solve symbolically before substituting.
+- Hash 191d9a7966bb3115 (`--exercises --lang en`) at the start and the end.
+- The L1-10 scope finding from round 1 is fixed. $E = Hm$ is in FY2's scope notes, and the task gives the formula and defines $H$. A level-1 task with one formula is FY2-level content.
+- I fetched the MAFY table *Polttoaineiden lämpöarvoja* from mafytaulukot.fi: bensiini 43,4, petroli 43, kuiva puu 16,2 MJ/kg (LHV).
+- Recomputed L1-10: $2.0 \cdot 43 = 86$ (answers.py 86.0) and $2.0 \cdot 43.4 = 86.8$. The heating values 42–44 MJ/kg all fall inside ±2.3 % of 86, so the unit (MJ) and tolerance are sound.
+- L1-10 physics: the heating value is the energy released per kilogram burned, as the guardrail says. Energy conservation is stated without saying energy is created.
+- Recomputed L2-08 from the figure data (A 700/0 J, B 300/300 J): 100 J thermal, $p = 14.29\,\%$, matching answers.py. The rounded 14 % is 2 % off, inside 0.03.
+- The L2-08 Polish item from round 1 is fixed. Reasonableness now checks $0 < p < 100\,\%$ and $600 + 100 = 700\,\text{J}$, with no claim that B is halfway.
+- L2-08 isolated system (skater, half-pipe, surroundings): friction turns mechanical energy into thermal energy, as the guardrail requires. Consistent with L1-03 (200 J by C).
+- Both solutions have all seven stages and solve symbolically before substituting.

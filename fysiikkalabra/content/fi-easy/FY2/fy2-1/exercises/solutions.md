@@ -65,14 +65,14 @@
 **Mallivastaus:** Väitteet 1, 3 ja 5 ovat tosia. Mekaaninen energia $E_\text{p} + E_\text{k}$ pienenee jokaisessa pompussa. Pallon, lattian ja ilman kokonaisenergia pysyy kuitenkin samana. Lopussa pallolla ei ole enää liike-energiaa. Sillä ei ole myöskään potentiaalienergiaa, jonka se sai olemalla lattiaa korkeammalla. Sama energia on lämpöenergiana pallossa, lattiassa ja ilmassa. Väitteet 2 ja 4 ovat epätosia. Energia ei kulu loppuun. Lämpöenergia kuuluu kokonaisenergiaan, joten kokonaisenergia ei vähene.
 
 ## fy2-1-L1-10
-**Annettu:** polttoaineen massa $m = 2{,}0\,\text{kg}$ (bensiini); taulukosta (MAFY-taulukko, polttoaineiden lämpöarvot, bensiini) $H = 43\,\text{MJ/kg}$
+**Annettu:** polttoaineen massa $m = 2{,}0\,\text{kg}$ (bensiini); taulukosta (MAFY-taulukko, polttoaineiden lämpöarvot, bensiini) $H = 43{,}4\,\text{MJ/kg}$
 **Kysytty:** palamisessa vapautuva kemiallinen energia $E$ yksikössä $\text{MJ}$
 **Periaate:** Energiaa ei synny eikä katoa, vaan se muuttaa muotoa. Palamisessa bensiinin kemiallinen energia muuttuu liike-energiaksi ja lämpöenergiaksi, ja muuttuvan energian määrä on yhtä suuri kuin vapautuva kemiallinen energia. Lämpöarvo $H$ kertoo vapautuvan energian yhtä massayksikköä kohti.
 **Kaava:** $E = Hm$
 **Muunnokset:** Lämpöarvo on jo yksikössä $\text{MJ/kg}$ ja massa kilogrammoina, joten vastaus tulee suoraan megajouleina eikä muunnoksia tarvita.
-**Sijoitus:** $E = 43\,\dfrac{\text{MJ}}{\text{kg}} \cdot 2{,}0\,\text{kg} = 86\,\text{MJ}$
-**Vastaus:** $E \approx 86\,\text{MJ}$, kaksi merkitsevää numeroa kuten massassa $2{,}0\,\text{kg}$. Lämpöarvo $H = 43\,\text{MJ/kg}$ on MAFY-taulukosta (polttoaineiden lämpöarvot, bensiini); eri taulukoiden arvot poikkeavat hieman toisistaan, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
-**Järkevyys:** Karkea arvio: $40\,\text{MJ/kg} \cdot 2\,\text{kg} = 80\,\text{MJ}$, joten tulos on oikean kokoluokan. Koska $1\,\text{kWh} = 3{,}6\,\text{MJ}$, $86\,\text{MJ}$ on noin $24\,\text{kWh}$, ja bensiinin energiatiheys on suuri verrattuna esimerkiksi puuhun, jonka lämpöarvo on noin $16\,\text{MJ/kg}$.
+**Sijoitus:** $E = 43{,}4\,\dfrac{\text{MJ}}{\text{kg}} \cdot 2{,}0\,\text{kg} = 86{,}8\,\text{MJ}$
+**Vastaus:** $E \approx 87\,\text{MJ}$, kaksi merkitsevää numeroa kuten massassa $2{,}0\,\text{kg}$. Lämpöarvo $H = 43{,}4\,\text{MJ/kg}$ on MAFY-taulukosta (polttoaineiden lämpöarvot, bensiini); eri taulukoiden arvot poikkeavat hieman toisistaan, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Järkevyys:** Karkea arvio: $40\,\text{MJ/kg} \cdot 2\,\text{kg} = 80\,\text{MJ}$, joten tulos on oikean kokoluokan. Koska $1\,\text{kWh} = 3{,}6\,\text{MJ}$, $87\,\text{MJ}$ on noin $24\,\text{kWh}$, ja bensiinin energiatiheys on suuri verrattuna esimerkiksi puuhun, jonka lämpöarvo on noin $16\,\text{MJ/kg}$.
 
 ## fy2-1-L2-01
 **Annettu:** akusta vapautuva kemiallinen energia $E_\text{kem} = 3{,}00\,\text{kJ}$, potkulaudan ja kuljettajan liike-energia $E_\text{k} = 2150\,\text{J}$

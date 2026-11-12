@@ -157,7 +157,7 @@
       "level": 1,
       "text": "Autossa poltetaan $2{,}0\\,\\text{kg}$ bensiiniä. Bensiinin kemiallinen energia vapautuu palamisessa. Se muuttuu liike-energiaksi ja lämpöenergiaksi. Polttoaineen lämpöarvo $H$ kertoo, kuinka paljon energiaa vapautuu, kun yksi kilogramma palaa. Vapautuva energia on $E = Hm$.\n\nHae bensiinin lämpöarvo MAFY-taulukosta (mafytaulukot.fi). Vihje: arvo on polttoaineiden lämpöarvojen taulukossa, bensiini-rivillä. Kuinka paljon kemiallista energiaa bensiinistä vapautuu?",
       "lookup": "MAFY",
-      "answer": 86.0,
+      "answer": 86.8,
       "unit": "MJ",
       "tolerance": 0.04
     }

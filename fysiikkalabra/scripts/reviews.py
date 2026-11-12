@@ -1430,9 +1430,22 @@ def scope(folder, part="lesson"):
         cats, diff, n = cache[base, split]
         i = REVIEWS.index(name)
         mode = max((RULES[c][i] for c in cats), key=MODES.index, default="delta")
+        frm = rep[1]
+        if mode == "full" and part == "exercises":
+            # an exercise added in this round and passed, then fixed: measured from that PASS it is a surviving exercise
+            # that changed (full); measured from an earlier version the same reviewer passed it may still be only added
+            # exercises (delta). Take the lightest mode an earlier PASS of this reviewer allows (verify_scopes accepts
+            # any hash the reviewer passed; teacher 2026-11-12)
+            for h2 in sorted(_passed_before(folder, name, part) - {rep[1]}):
+                b2, s2 = passed_at(log, folder, part, h2)
+                if b2 is None: continue
+                if (b2, s2) not in cache: cache[b2, s2] = changes(folder, b2, part, s2)
+                c2, d2, n2 = cache[b2, s2]
+                m2 = max((RULES[c][i] for c in c2), key=MODES.index, default="delta")
+                if MODES.index(m2) < MODES.index(mode): mode, base, frm, cats, diff, n = m2, b2, h2, c2, d2, n2
         strict = sorted(c for c in cats if RULES[c][i] == mode)
         why = "; ".join(WHY[c] for c in strict) if strict else f"{n} changed line(s)"
-        out[name] = {"mode": mode, "base": base, "from": rep[1], "why": why, "diff": diff, "categories": sorted(cats)}
+        out[name] = {"mode": mode, "base": base, "from": frm, "why": why, "diff": diff, "categories": sorted(cats)}
     return out
 
 
