@@ -331,11 +331,7 @@ Tässä $v_0$ on alkunopeus ($\text{m/s}$) ja $a$ on kiihtyvyys ($\text{m/s}^2$)
 
 ### Kulmakerroin ja pinta-ala
 
-Kun $(t,x)$-kuvaaja on kaareva, hetkellinen nopeus on tangentin kulmakerroin $k$. Tangentti on suora, joka sivuaa eli koskettaa käyrää yhdessä pisteessä. Jos suhde lasketaan käyrän kahden pisteen kautta, saadaan keskinopeus. Siirtymä on $(t,v)$-kuvaajan ja aika-akselin välinen pinta-ala. Akselin alapuolella oleva osa lasketaan negatiivisena. Tasaisesti kiihtyvässä liikkeessä alue on puolisuunnikas. Siksi keskinopeus on alkunopeuden ja loppunopeuden keskiarvo:
-
-```latex
-\Delta x = \frac{v_0 + v}{2}\,t
-```
+Kun $(t,x)$-kuvaaja on kaareva, hetkellinen nopeus on tangentin kulmakerroin $k$. Tangentti on suora, joka sivuaa eli koskettaa käyrää yhdessä pisteessä. Jos suhde lasketaan käyrän kahden pisteen kautta, saadaan keskinopeus. Siirtymä on $(t,v)$-kuvaajan ja aika-akselin välinen pinta-ala. Akselin alapuolella oleva osa lasketaan negatiivisena.
 
 <svg data-fig="kuvaajat" viewBox="0 0 440 650" role="img" aria-label="Kaavakuva: yksi liike kahtena kuvaajana. Kuvaajilla on sama aika-akseli. Alhaalla on nopeuden kuvaaja. Nopeus kasvaa nollasta tasaisesti hetkeen t1 asti. Se pysyy vakiona hetkeen t2 asti. Sitten se pienenee tasaisesti nollaan hetkellä t3. Kuvaajan alle jäävä alue on vihreä. Sen pinta-ala on siirtymä Δx. Ylhäällä on paikan kuvaaja. Ensin on käyrä, joka kaartuu ylöspäin. Sitten on nouseva suora. Lopuksi on käyrä, joka loivenee vaakasuoraksi. Paikka kasvaa koko liikkeen aikana yhteensä Δx. Käyrän pisteeseen P on piirretty sininen tangentti. Sen kulmakerroin k on nopeus v_P. Sama arvo on merkitty myös alempaan kuvaajaan." style="max-width:100%;font-size:21px">
   <line x1="49" y1="280" x2="370" y2="280" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
@@ -381,6 +377,51 @@ Kun $(t,x)$-kuvaaja on kaareva, hetkellinen nopeus on tangentin kulmakerroin $k$
   <foreignObject x="21" y="597.5" width="19" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px">$0$</div></foreignObject>
   <foreignObject x="21" y="287.5" width="19" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px">$0$</div></foreignObject>
 </svg>
+
+Tasaisesti kiihtyvässä liikkeessä nopeus muuttuu tasaisesti. Ajassa $t$ ($\text{s}$) nopeus muuttuu alkunopeudesta $v_0$ loppunopeuteen $v$ ($\text{m/s}$). Silloin $(t,v)$-kuvaaja on suora, ja sen alle jäävä alue on puolisuunnikas.
+
+<svg data-fig="puolisuunnikas" viewBox="0 0 440 330" role="img" aria-label="Kaavakuva tasaisesti kiihtyvän liikkeen nopeuden kuvaajasta. Kuvassa ei ole lukuarvoja. Nopeus kasvaa tasaisesti. Hetkellä 0 nopeus on alkunopeus v0, ja hetkellä t nopeus on v. Siksi kuvaaja on nouseva suora. Kuvaajan ja aika-akselin välissä on vihreä puolisuunnikas. Sen pinta-ala on siirtymä Δx. Puolisuunnikkaan yhdensuuntaiset sivut ovat v0 ja v. Sivujen välimatka on t." style="max-width:100%;font-size:21px">
+  <line x1="59" y1="280" x2="370" y2="280" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M382,280 L369,286 L369,274 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="60" y1="281" x2="60" y2="40" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M60,28 L66,41 L54,41 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="317" y1="280" x2="317" y2="287" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="388" y="267.5" width="19" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$t$</div></foreignObject>
+  <foreignObject x="50" y="-0.5" width="19" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$v$</div></foreignObject>
+  <polygon points="60,280 60,206 317,94.5 317,280" fill="#b2f2bb" fill-opacity="0.8"/>
+  <line x1="317" y1="94.5" x2="317" y2="280" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <line x1="60" y1="94.5" x2="317" y2="94.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <polyline points="60,206 317,94.5" fill="none" stroke="#1971c2" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="60" cy="206" r="7" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="317" cy="94.5" r="7" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <foreignObject x="18" y="193.5" width="30" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px">$v_0$</div></foreignObject>
+  <foreignObject x="29" y="82" width="19" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px">$v$</div></foreignObject>
+  <foreignObject x="307.5" y="291.5" width="19" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:21px">$t$</div></foreignObject>
+  <foreignObject x="31" y="287.5" width="19" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px">$0$</div></foreignObject>
+  <foreignObject x="173.5" y="223" width="30" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:21px;color:#2b8a3e">$\Delta x$</div></foreignObject>
+</svg>
+
+```johda
+Kappale liikkuu suoraa rataa tasaisesti kiihtyvästi. Ajassa $t$ sen nopeus muuttuu alkunopeudesta $v_0$ nopeuteen $v$. Johda kappaleen siirtymä $\Delta x$ nopeuksien $v_0$ ja $v$ sekä ajan $t$ avulla.
+---
+Siirtymä on $\Delta x = x - x_0$. Käytetään kaavaa paikka tasaisesti kiihtyvässä suoraviivaisessa liikkeessä. Se antaa siirtymän alkunopeuden, kiihtyvyyden ja ajan avulla:
+
+$$\Delta x = x - x_0 = v_0\,t + \tfrac{1}{2}\,a\,t^2$$
+
+Kysytyssä tuloksessa ei ole kiihtyvyyttä. Siksi kiihtyvyys lausutaan nopeuksien avulla. Käytetään kaavaa nopeus tasaisesti kiihtyvässä suoraviivaisessa liikkeessä, $v = v_0 + a\,t$. Siitä saadaan
+
+$$a\,t = v - v_0$$
+
+Viimeinen termi kirjoitetaan muotoon $\tfrac{1}{2}\,(a\,t)\,t$. Siihen sijoitetaan $a\,t$:
+
+$$\Delta x = v_0\,t + \tfrac{1}{2}\,(v - v_0)\,t$$
+
+Puretaan sulkeet. Sitten yhdistetään termit, joissa on alkunopeus:
+
+$$\Delta x = \tfrac{1}{2}\,v_0\,t + \tfrac{1}{2}\,v\,t = \frac{v_0 + v}{2}\,t$$
+
+Sama tulos saadaan myös $(t,v)$-kuvaajan pinta-alana. Puolisuunnikkaan yhdensuuntaiset sivut ovat $v_0$ ja $v$, ja sen korkeus on $t$. Puolisuunnikkaan ala on sivujen keskiarvo kertaa korkeus. Tasaisesti kiihtyvässä liikkeessä keskinopeus on siis alkunopeuden ja loppunopeuden keskiarvo.
+```
 
 ### Kaksi kappaletta ja mittausaineisto
 

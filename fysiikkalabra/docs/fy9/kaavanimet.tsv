@@ -20,9 +20,8 @@ fy9-energia	261	E_\text{alussa} = E_\text{lopussa}	E_\text{initial} = E_\text{fi
 fy9-energia	267	P = \frac{\Delta E}{\Delta t}	P = \frac{\Delta E}{\Delta t}	teho	power	MAFY	Mekaniikan kaavoja	MAFY: $P = \frac{W}{\Delta t} = \frac{\Delta E}{\Delta t}$
 fy9-energia	273	1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}	1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3.6\,\text{MJ}			ei MAFY:ssa	Yksikkömuunnoksia	yksikkömuunnos (MAFY: energia/työ, kilowattitunti); voi jättää nimettä
 fy9-energia	279	\eta = \frac{W_\text{a}}{W_\text{o}} = \frac{P_\text{a}}{P_\text{o}}	\eta = \frac{W_\text{a}}{W_\text{o}} = \frac{P_\text{a}}{P_\text{o}}	hyötysuhde	efficiency	MAFY	Mekaniikan kaavoja	tunnukset vaihdettu MAFY:n mukaisiksi 2026-11-12 (docs/fy9/mafy-tunnukset.tsv)
-fy9-energia	287	\eta = \eta_1\,\eta_2\,\eta_3	\eta = \eta_1\,\eta_2\,\eta_3			ei MAFY:ssa		ei MAFY:ssa
-fy9-energia	328	Q = Hm	Q = Hm	palamisessa vapautuva lämpö	heat released in combustion	MAFY	Termodynamiikan kaavoja	
-fy9-energia	328	W = Fs	W = Fs	voiman tekemä työ	work done by a force	MAFY	Mekaniikan kaavoja	
+fy9-energia	342	Q = Hm	Q = Hm	palamisessa vapautuva lämpö	heat released in combustion	MAFY	Termodynamiikan kaavoja	
+fy9-energia	342	W = Fs	W = Fs	voiman tekemä työ	work done by a force	MAFY	Mekaniikan kaavoja	
 fy9-kaasut	251	p = \frac{F}{A}	p = \frac{F}{A}	voiman aiheuttama paine	pressure caused by a force	MAFY	Mekaniikan kaavoja	
 fy9-kaasut	257	p = \rho g h	p = \rho g h	hydrostaattinen paine	hydrostatic pressure	MAFY	Mekaniikan kaavoja	kokonaispaine $p_0 + \rho g h$ tekstissä
 fy9-kaasut	265	pV = nRT	pV = nRT	ideaalikaasun tilanyhtälö	ideal gas law	MAFY	Termodynamiikan kaavoja	
@@ -30,8 +29,7 @@ fy9-kaasut	271	\frac{pV}{T} = \text{vakio}	\frac{pV}{T} = \text{constant}	tilany
 fy9-kaasut	277	T = \theta + 273{,}15\,\text{K}	T = \theta + 273.15\,\text{K}			ei MAFY:ssa	Yksikkömuunnoksia	MAFY: lämpötila, $0\,°\text{C} = 273{,}15\,\text{K}$
 fy9-kaasut	287	W = p\Delta V	W = p\Delta V	kaasun tekemä laajenemistyö / kaasuun tehty puristustyö	work done by an expanding gas / on a compressed gas	MAFY	Termodynamiikan kaavoja	
 fy9-kaasut	293	\Delta U = Q + W	\Delta U = Q + W	lämpöopin 1. pääsääntö	first law of thermodynamics	MAFY	Termodynamiikan kaavoja	$W$ kaasuun tehty työ; laajenemisessa $W = -p\Delta V$ (tekstissä)
-fy9-kaasut	299	W = Q_1 - Q_2	W = Q_1 - Q_2			ei MAFY:ssa	Termodynamiikan kaavoja	MAFY:ssa osana lämpövoimakoneen hyötysuhdetta $\eta = \frac{Q_1 - Q_2}{Q_1}$
-fy9-kaasut	305	\eta = \frac{W}{Q_1}	\eta = \frac{W}{Q_1}	lämpövoimakoneen hyötysuhde	efficiency of a heat engine	MAFY	Termodynamiikan kaavoja	
+fy9-kaasut	301	\eta = \frac{W}{Q_1}	\eta = \frac{W}{Q_1}	lämpövoimakoneen hyötysuhde	efficiency of a heat engine	MAFY	Termodynamiikan kaavoja	
 fy9-koe	295	Q = cm\Delta T	Q = cm\Delta T	siirtynyt lämpömäärä	heat transferred	MAFY	Termodynamiikan kaavoja	
 fy9-koe	306	Q = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 145\,\text{kg} \cdot 28{,}0\,\text{K}	Q = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 145\,\text{kg} \cdot 28.0\,\text{K}			ei nimetä		esimerkin sijoitus ja lasku, ei kaava
 fy9-koe	306	= 17\,011\,400\,\text{J}	= 17\,011\,400\,\text{J}			ei nimetä		esimerkin sijoitus ja lasku, ei kaava
@@ -53,10 +51,9 @@ fy9-lampo	278	P = UA\Delta T	P = UA\Delta T			ei MAFY:ssa		ei MAFY:ssa
 fy9-liike	301	\overline{v}_\text{k} = \frac{\Delta\overline{x}}{\Delta t}	\overline{v}_\text{k} = \frac{\Delta\overline{x}}{\Delta t}	keskinopeus	average velocity	MAFY	Mekaniikan kaavoja	
 fy9-liike	307	x = x_0 + v\,t	x = x_0 + v\,t			ei MAFY:ssa	Mekaniikan kaavoja	MAFY:n nimeämistapaan; MAFY:ssa vain tasaisesti kiihtyvä
 fy9-liike	317	\overline{a}_\text{k} = \frac{\Delta\overline{v}}{\Delta t}	\overline{a}_\text{k} = \frac{\Delta\overline{v}}{\Delta t}	keskikiihtyvyys	average acceleration	MAFY	Mekaniikan kaavoja	
-fy9-liike	323	v = v_0 + a\,t	v = v_0 + a\,t	nopeus tasaisesti kiihtyvässä suoraviivaisessa liikkeessä	velocity in uniformly accelerated linear motion	MAFY	Mekaniikan kaavoja	
-fy9-liike	323	x = x_0 + v_0\,t + \tfrac{1}{2}\,a\,t^2	x = x_0 + v_0\,t + \tfrac{1}{2}\,a\,t^2	paikka tasaisesti kiihtyvässä suoraviivaisessa liikkeessä	position in uniformly accelerated linear motion	MAFY	Mekaniikan kaavoja	
-fy9-liike	334	\Delta x = \frac{v_0 + v}{2}\,t	\Delta x = \frac{v_0 + v}{2}\,t			ei MAFY:ssa		ei MAFY:ssa (keskinopeuden avulla)
-fy9-liike	387	x_\text{A}(t) = x_\text{B}(t)	x_\text{A}(t) = x_\text{B}(t)			ei MAFY:ssa		ehto, ei kaava; voi jättää nimettä
+fy9-liike	325	v = v_0 + a\,t	v = v_0 + a\,t	nopeus tasaisesti kiihtyvässä suoraviivaisessa liikkeessä	velocity in uniformly accelerated linear motion	MAFY	Mekaniikan kaavoja	
+fy9-liike	325	x = x_0 + v_0\,t + \tfrac{1}{2}\,a\,t^2	x = x_0 + v_0\,t + \tfrac{1}{2}\,a\,t^2	paikka tasaisesti kiihtyvässä suoraviivaisessa liikkeessä	position in uniformly accelerated linear motion	MAFY	Mekaniikan kaavoja	
+fy9-liike	430	x_\text{A}(t) = x_\text{B}(t)	x_\text{A}(t) = x_\text{B}(t)			ei MAFY:ssa		ehto, ei kaava; voi jättää nimettä
 fy9-magnetismi-valo	186	F_\text{M} = QvB_\perp	F_\text{M} = QvB_\perp	varattuun hiukkaseen kohdistuva magneettinen voima	magnetic force on a charged particle	MAFY	Sähkömagnetismin kaavoja	
 fy9-magnetismi-valo	186	r = \frac{mv}{QB}	r = \frac{mv}{QB}			ei MAFY:ssa		ei MAFY:ssa
 fy9-magnetismi-valo	186	F_\text{M} = I\ell B_\perp	F_\text{M} = I\ell B_\perp	suoraan johtimeen kohdistuva magneettinen voima	magnetic force on a straight conductor	MAFY	Sähkömagnetismin kaavoja	

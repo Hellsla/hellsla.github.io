@@ -211,7 +211,7 @@ All the problems of this lesson start from the same principle: **energy is conse
 
 Three questions branch off from the conservation law, and the energy problems of the exam come back to them. **How fast** is energy transformed? Power tells that. **How large a share** is useful? Efficiency tells that. **Where** does the energy come from? From the heat of combustion of a fuel, from the work done by a force, or from flowing water, the wind and the sun.
 
-<svg data-fig="kartta" viewBox="0 0 380 596" role="img" aria-label="Concept map. At the top is the node energy is conserved: E initial equals E final. Three branches lead down from it. Power: P = ΔE / Δt, energy from power E = P t and the kilowatt-hour 1 kWh = 3.6 MJ. Efficiency: eta = E a / E o, losses E o = E a + E h and the energy chain, in which eta is the product of the efficiencies of the stages, eta 1 eta 2 eta 3. Source of energy: fuel Q = H m, work W = F s and work of lifting W = m g h." style="max-width:100%;font-size:21px">
+<svg data-fig="kartta" viewBox="0 0 380 596" role="img" aria-label="Concept map. At the top is the node energy is conserved: E initial equals E final. Three branches lead down from it. Power: P = ΔE / Δt, energy from power E = P t and the kilowatt-hour 1 kWh = 3.6 MJ. Efficiency: eta = W a / W o, losses W o = W a + W h and from powers eta = P a / P o. Source of energy: fuel Q = H m, work W = F s and work of lifting W = m g h." style="max-width:100%;font-size:21px">
   <line x1="24" y1="80" x2="24" y2="454" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
   <foreignObject x="93" y="16.5" width="194" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:21px">$\text{energy is conserved}$</div></foreignObject>
@@ -234,8 +234,8 @@ Three questions branch off from the conservation law, and the energy problems of
   <foreignObject x="260" y="321" width="102" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{definition}$</div></foreignObject>
   <foreignObject x="58" y="353.5" width="95" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$W_\text{o} = W_\text{a} + W_\text{h}$</div></foreignObject>
   <foreignObject x="298" y="355" width="64" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{losses}$</div></foreignObject>
-  <foreignObject x="58" y="387.5" width="117" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\eta = \eta_1\,\eta_2\,\eta_3$</div></foreignObject>
-  <foreignObject x="251" y="389" width="111" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{energy chain}$</div></foreignObject>
+  <foreignObject x="58" y="387.5" width="84" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\eta = P_\text{a}/P_\text{o}$</div></foreignObject>
+  <foreignObject x="260" y="389" width="102" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{from powers}$</div></foreignObject>
   <line x1="24" y1="454" x2="44" y2="454" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="44" y="432" width="328" height="150" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
   <foreignObject x="58" y="441.5" width="172" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\textbf{source of energy}$</div></foreignObject>
@@ -282,13 +282,7 @@ efficiency :: \eta = \frac{W_\text{a}}{W_\text{o}} = \frac{P_\text{a}}{P_\text{o
 
 where $\eta$ is the efficiency, $W_\text{a}$ and $P_\text{a}$ the useful energy and power given, and $W_\text{o}$ and $P_\text{o}$ the energy and power taken in. The ratio of the powers can be used when the device runs steadily. Energy is conserved, so $W_\text{o} = W_\text{a} + W_\text{h}$, where $W_\text{h}$ is the losses. The efficiency is at most $100\,\%$; it depends on what is defined as useful.
 
-In successive stages the useful power of each stage is the power taken in by the next, so the efficiencies are multiplied:
-
-```latex
-\eta = \eta_1\,\eta_2\,\eta_3
-```
-
-In the example plant in the figure $\eta = 0.90 \cdot 0.45 \cdot 0.98 \approx 0.40$: of the fuel power of $500\,\text{MW}$, $198\,\text{MW}$ becomes electricity. The widths of the bands are to scale, and the outgoing bands are together as wide as the incoming one.
+An energy chain has successive stages, and the useful power given by each stage is the power taken in by the next. The example plant in the figure has three stages with the efficiencies $\eta_1$, $\eta_2$ and $\eta_3$. Of the fuel power of $500\,\text{MW}$, $198\,\text{MW}$ becomes electricity, so the efficiency of the whole plant is $\eta = \tfrac{198\,\text{MW}}{500\,\text{MW}} \approx 0.40$. The widths of the bands are to scale, and the outgoing bands are together as wide as the incoming one.
 
 <svg data-fig="ketju" viewBox="0 0 420 476" role="img" aria-label="A to-scale energy flow diagram of a condensing power plant. From the left comes the fuel power of 500 MW as a wide grey band. In the first stage, the boiler, the efficiency is 0.90: an orange loss band of 50 MW turns down from the band, and 450 MW remains. In the second stage, the steam cycle, the efficiency is 0.45: a wide loss band of 248 MW turns down, and 203 MW remains. In the third stage, the generator and the transformer, the efficiency is 0.98 and the loss only 4 MW. A green band of electricity leaves to the right, 198 MW, that is, about 40 per cent of the fuel power. The losses become waste heat." style="max-width:100%;font-size:20px">
   <defs><linearGradient id="fy9en-in" gradientUnits="userSpaceOnUse" x1="8" y1="0" x2="298" y2="0"><stop offset="0" stop-color="#e3dccb"/><stop offset="1" stop-color="#c9c2b2"/></linearGradient><linearGradient id="fy9en-ok" gradientUnits="userSpaceOnUse" x1="298" y1="0" x2="408" y2="0"><stop offset="0" stop-color="#b2f2bb"/><stop offset="1" stop-color="#2b8a3e"/></linearGradient><linearGradient id="fy9en-heat" gradientUnits="userSpaceOnUse" x1="0" y1="56" x2="0" y2="316"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
@@ -322,6 +316,24 @@ In the example plant in the figure $\eta = 0.90 \cdot 0.45 \cdot 0.98 \approx 0.
   <foreignObject x="8" y="404" width="136" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\eta_2\ \text{steam cycle}$</div></foreignObject>
   <foreignObject x="8" y="432" width="271" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\eta_3\ \text{generator and transformer}$</div></foreignObject>
 </svg>
+
+```johda
+An energy chain has three successive stages with the efficiencies $\eta_1$, $\eta_2$ and $\eta_3$. Derive the efficiency $\eta$ of the whole chain in terms of the efficiencies of the stages.
+---
+By the definition of efficiency the efficiency of the whole chain is $\eta = \tfrac{P_\text{a}}{P_\text{o}}$, where $P_\text{o}$ is the power taken in by the first stage and $P_\text{a}$ the useful power given by the last stage. Denote the powers given by the stages $P_1$, $P_2$ and $P_3 = P_\text{a}$. The efficiency gives the power given by each stage from the power it takes in, and the power a stage takes in is the power given by the stage before it:
+
+$$P_1 = \eta_1 P_\text{o}, \quad P_2 = \eta_2 P_1, \quad P_3 = \eta_3 P_2$$
+
+Substitute the powers one after another:
+
+$$P_\text{a} = P_3 = \eta_3\,\eta_2\,\eta_1\,P_\text{o}$$
+
+Divide by the power taken in:
+
+$$\eta = \frac{P_\text{a}}{P_\text{o}} = \eta_1\,\eta_2\,\eta_3$$
+
+The efficiencies are multiplied. Each of them is less than $1$, so the efficiency of the whole chain is smaller than that of any single stage.
+```
 
 ### Sources of energy
 

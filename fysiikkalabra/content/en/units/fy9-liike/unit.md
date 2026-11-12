@@ -331,11 +331,7 @@ where $v_0$ is the initial velocity ($\text{m/s}$) and $a$ the acceleration ($\t
 
 ### Slope and area
 
-The instantaneous velocity on a curved $(t,x)$ graph is the slope $k$ of the tangent. A ratio calculated through two points of the curve is the average velocity. The displacement is the area between the $(t,v)$ graph and the time axis, and the part below the axis is counted as negative. In uniformly accelerated motion the region is a trapezium, so the average velocity is the mean of the initial and final velocities:
-
-```latex
-\Delta x = \frac{v_0 + v}{2}\,t
-```
+The instantaneous velocity on a curved $(t,x)$ graph is the slope $k$ of the tangent. A ratio calculated through two points of the curve is the average velocity. The displacement is the area between the $(t,v)$ graph and the time axis, and the part below the axis is counted as negative.
 
 <svg data-fig="kuvaajat" viewBox="0 0 440 650" role="img" aria-label="Schematic of one motion as two graphs with the same time axis. Below, the velocity graph: the velocity grows uniformly from zero until t1, stays constant until t2 and falls uniformly to zero at t3. The region under the graph is coloured green, and its area is the displacement Δx. Above, the position graph: first a curve bending upwards, then a rising straight line and finally a curve that levels off to horizontal. Over the whole motion the position grows by Δx in total. A blue tangent is drawn at the point P of the curve; its slope k is the velocity v_P, and the same value is marked in the lower graph." style="max-width:100%;font-size:21px">
   <line x1="49" y1="280" x2="370" y2="280" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
@@ -381,6 +377,51 @@ The instantaneous velocity on a curved $(t,x)$ graph is the slope $k$ of the tan
   <foreignObject x="21" y="597.5" width="19" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px">$0$</div></foreignObject>
   <foreignObject x="21" y="287.5" width="19" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px">$0$</div></foreignObject>
 </svg>
+
+In uniformly accelerated motion the velocity changes uniformly from the initial velocity $v_0$ to the final velocity $v$ ($\text{m/s}$) in the time $t$ ($\text{s}$). The $(t,v)$ graph is then a straight line, and the region under it is a trapezium.
+
+<svg data-fig="puolisuunnikas" viewBox="0 0 440 330" role="img" aria-label="Schematic of the velocity graph of uniformly accelerated motion, no numerical values. The velocity grows uniformly from the initial velocity v0 at the instant 0 to the velocity v at the instant t, so the graph is a rising straight line. Between the graph and the time axis there is a green trapezium, whose area is the displacement Δx. The parallel sides of the trapezium are v0 and v, and the distance between them is t." style="max-width:100%;font-size:21px">
+  <line x1="59" y1="280" x2="370" y2="280" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M382,280 L369,286 L369,274 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="60" y1="281" x2="60" y2="40" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M60,28 L66,41 L54,41 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="317" y1="280" x2="317" y2="287" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="388" y="267.5" width="19" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$t$</div></foreignObject>
+  <foreignObject x="50" y="-0.5" width="19" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$v$</div></foreignObject>
+  <polygon points="60,280 60,206 317,94.5 317,280" fill="#b2f2bb" fill-opacity="0.8"/>
+  <line x1="317" y1="94.5" x2="317" y2="280" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <line x1="60" y1="94.5" x2="317" y2="94.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <polyline points="60,206 317,94.5" fill="none" stroke="#1971c2" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="60" cy="206" r="7" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="317" cy="94.5" r="7" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <foreignObject x="18" y="193.5" width="30" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px">$v_0$</div></foreignObject>
+  <foreignObject x="29" y="82" width="19" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px">$v$</div></foreignObject>
+  <foreignObject x="307.5" y="291.5" width="19" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:21px">$t$</div></foreignObject>
+  <foreignObject x="31" y="287.5" width="19" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px">$0$</div></foreignObject>
+  <foreignObject x="173.5" y="223" width="30" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:21px;color:#2b8a3e">$\Delta x$</div></foreignObject>
+</svg>
+
+```johda
+A body moves along a straight line with uniform acceleration, and its velocity changes from the initial velocity $v_0$ to $v$ in the time $t$. Derive the displacement $\Delta x$ of the body in terms of the velocities $v_0$ and $v$ and the time $t$.
+---
+The displacement is $\Delta x = x - x_0$. The position in uniformly accelerated linear motion gives it in terms of the initial velocity, the acceleration and the time:
+
+$$\Delta x = x - x_0 = v_0\,t + \tfrac{1}{2}\,a\,t^2$$
+
+The acceleration is not in the result asked for, so it is expressed in terms of the velocities. The velocity in uniformly accelerated linear motion is $v = v_0 + a\,t$, so
+
+$$a\,t = v - v_0$$
+
+Write the last term as $\tfrac{1}{2}\,(a\,t)\,t$ and substitute $a\,t$ into it:
+
+$$\Delta x = v_0\,t + \tfrac{1}{2}\,(v - v_0)\,t$$
+
+Expand the bracket and combine the terms with the initial velocity:
+
+$$\Delta x = \tfrac{1}{2}\,v_0\,t + \tfrac{1}{2}\,v\,t = \frac{v_0 + v}{2}\,t$$
+
+The same result is the area under the $(t,v)$ graph: the parallel sides of the trapezium are $v_0$ and $v$, its height is $t$, and its area is the mean of the sides times the height. In uniformly accelerated motion the average velocity is therefore the mean of the initial and final velocities.
+```
 
 ### Two bodies and measurement data
 
