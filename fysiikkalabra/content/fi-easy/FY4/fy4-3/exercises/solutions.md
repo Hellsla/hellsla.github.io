@@ -299,3 +299,25 @@ $F_\text{k} = \dfrac{10{,}2\,\text{N}}{3} = 3{,}40\,\text{N}$.
 **Kysytty:** kuinka suuri on henkilöauton voima kuorma-autoon $F_{\text{HK}}$ verrattuna kuorma-auton voimaan henkilöautoon $F_{\text{KH}}$ törmäyksen aikana, ja miksi. Merkinnöissä K on kuorma-auto ja H henkilöauto.
 **Periaate:** Voima kuvaa kahden kappaleen vuorovaikutusta. Törmäyksessä autot koskettavat toisiaan, joten kyse on yhdestä vuorovaikutuksesta. Sen kaksi voimaa vaikuttavat eri kappaleisiin. Newtonin kolmannen lain mukaan $\overline{F}_{\text{KH}} = -\overline{F}_{\text{HK}}$. Voimat ovat siis yhtä suuret ja vastakkaissuuntaiset autojen massoista riippumatta. Sillä ei ole väliä, kumpi auto liikkui.
 **Mallivastaus:** Voimat ovat yhtä suuret, $F_{\text{HK}} = F_{\text{KH}}$, koska ne ovat saman vuorovaikutuksen voima ja vastavoima. Kuorma-auto työntää henkilöautoa taaksepäin peruutuksen suuntaan. Henkilöauto työntää kuorma-autoa yhtä suurella voimalla vastakkaiseen suuntaan koko törmäyksen ajan. Massat $12\,\text{t}$ ja $1{,}2\,\text{t}$ eivät muuta tätä. Vastaus $F_{\text{HK}} = \tfrac{1}{10}\,F_{\text{KH}}$ pitää voimaa kappaleen ominaisuutena, joka kasvaa massan mukana. Vastaus $F_{\text{HK}} = 0$ olettaa, että vain liikkuva kappale voi työntää. Voima kuitenkin syntyy kosketuksesta, eikä se vaadi liikettä. Perustelu ”voimat kumoavat toisensa” on väärä, vaikka voimat ovatkin yhtä suuret. Voima $\overline{F}_{\text{KH}}$ vaikuttaa henkilöautoon ja voima $\overline{F}_{\text{HK}}$ kuorma-autoon. Eri kappaleisiin vaikuttavia voimia ei lasketa yhteen. Henkilöauton liikkeen muutoksen ratkaisevat vain henkilöautoon vaikuttavat voimat. Tarkistus: jos henkilöauton voima olisi pienempi, vuorovaikutuksella olisi kaksi eri suuruista puolta. Se on ristiriidassa kolmannen lain kanssa.
+
+## fy4-3-L1-09
+**Annettu:** kuvaajasta hetkellä $t = 0{,}10\,\text{s}$ kärryyn B kohdistuvan voiman lukema on noin $+4{,}0\,\text{N}$ ja kärryyn A kohdistuvan voiman lukema noin $-4{,}0\,\text{N}$
+**Kysytty:** voiman suuruus, jolla kärry A työntää kärryä B ($F_{AB}$), yksikössä $\text{N}$
+**Periaate:** Kärry A työntää kärryä B, ja samalla kärry B työntää kärryä A. Tämä on vuorovaikutus. Newtonin kolmannen lain mukaan voimat ovat yhtä suuret ja vastakkaiset. Ne vaikuttavat eri kappaleisiin.
+**Kuvaajan lukeminen:** Hetkellä $0{,}10\,\text{s}$ punainen sarja (kärryyn B kohdistuva voima) on noin $+4{,}0\,\text{N}$. Tumma sarja (kärryyn A kohdistuva voima) on noin $-4{,}0\,\text{N}$. Merkit ovat vastakkaiset, koska voimat osoittavat eri suuntiin. Suuruudet ovat samat.
+**Kaava:** $F_{AB} = F_{BA}$. Kärryyn B kohdistuva voima on anturin B lukema, joten $F_{AB} = |F_B|$
+**Muunnokset:** Lukemat ovat jo newtoneina. Muunnoksia ei tarvita.
+**Sijoitus:** $F_{AB} = |{+4{,}0\,\text{N}}| = 4{,}0\,\text{N}$
+**Vastaus:** $4{,}0\,\text{N}$ oikealle. Vastauksessa on kaksi merkitsevää numeroa, kuten kuvaajasta luetuissa arvoissa.
+**Järkevyys:** Molemmat anturit näyttävät saman suuruuden, vaikka kärryjen massat ovat erilaiset. Kolmas laki ei riipu massoista. Suunnat ovat vastakkaiset (A negatiivinen, B positiivinen), kuten kolmannen lain voimaparissa kuuluu olla.
+
+## fy4-3-L2-09
+**Annettu:** kuvaajasta molempien anturien lukema on nolla hetkeen $t_1 = 0{,}05\,\text{s}$ asti. Lukema palaa nollaan hetkellä $t_2 = 0{,}15\,\text{s}$.
+**Kysytty:** voiman vaikutusaika $\Delta t$ yksikössä $\text{s}$
+**Periaate:** Kärryt vaikuttavat toisiinsa voimalla vain silloin, kun ne ovat kosketuksissa. Kolmannen lain mukaan voimat ovat vuorovaikutuksen pari. Ne vaikuttavat tasan yhtä kauan. Siksi kummankin anturin lukema on nollasta poikkeava samalla aikavälillä.
+**Kuvaajan lukeminen:** Tumma ja punainen sarja ovat nollassa hetkeen $t_1 = 0{,}05\,\text{s}$ asti. Sitten ne kasvavat (tumma sarja pienenee) kohti arvoa $\pm 4{,}0\,\text{N}$ hetkellä $0{,}10\,\text{s}$. Hetkellä $t_2 = 0{,}15\,\text{s}$ ne ovat taas nollassa. Kosketus alkaa hetkellä $t_1$ ja päättyy hetkellä $t_2$.
+**Kaava:** $\Delta t = t_2 - t_1$
+**Muunnokset:** Ajat ovat jo sekunteina. Muunnoksia ei tarvita.
+**Sijoitus:** $\Delta t = 0{,}15\,\text{s} - 0{,}05\,\text{s} = 0{,}10\,\text{s}$
+**Vastaus:** $0{,}10\,\text{s}$. Kuvaajan pisteet ovat $0{,}01\,\text{s}$ välein, joten aika luetaan noin sadasosasekunnin tarkkuudella.
+**Järkevyys:** Kärryjen törmäys kestää vain osan sekunnista. Voima on suurin ($4{,}0\,\text{N}$) kosketuksen puolivälissä hetkellä $0{,}10\,\text{s}$, eli välin $0{,}05\,\text{s}\ldots 0{,}15\,\text{s}$ keskellä. Aika on sama kummallekin kärrylle, koska voimat ovat kolmannen lain pari.

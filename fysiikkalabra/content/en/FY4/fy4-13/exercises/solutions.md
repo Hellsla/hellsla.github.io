@@ -420,3 +420,45 @@ $$\begin{aligned}
 \end{aligned}$$
 
 So the tension stays the same, about $3.1\,\text{N}$. Reason: in the formula $T = \tfrac{m_1 m_2}{m_1 + m_2}\,g$ the product and the sum of the masses do not change when the masses swap places. The acceleration becomes four times as large, because the weight of the hanging mass, which accelerates the system, becomes four times as large, so $T = m_1 a$ does not decrease although the mass of the trolley becomes a quarter. In both experiments $T$ is smaller than the weight of the hanging mass ($3.9\,\text{N}$ and $15.7\,\text{N}$), as it must be for an accelerating hanging mass.
+
+## fy4-13-L2-09
+**Given:** mass of the cart $m_1 = 0.80\,\text{kg}$ and the measured points of the graph for a cart starting from rest; friction and air resistance are neglected, the string and the pulley are light
+**Find:** the tension $T$ in the string in $\text{N}$
+**Principle:** In the horizontal direction only the string acts on the cart, so the equation of motion of the cart $T = m_1 a$ gives the tension once the acceleration is known. The acceleration is the slope of the $(t,v)$ graph. The mass of the hanging weight is not needed.
+**Free-body diagram:** The cart as a rectangle, positive direction along the string. In the vertical direction the weight $\overline{G}_1$ and the normal force $\overline{N}$ cancel, and in the horizontal direction only $\overline{T}_1$ acts.
+```voimakuvio
+pinta 0
+G_1 7,848
+N 7,848
+T_1 1,56 oikea
+a oikea
+```
+**Reading the graph:** The points lie on a straight line through the origin: the speed grows by about $1.0\,\text{m/s}$ in every half second. The acceleration is therefore constant. We read the farthest point $(2.0\,\text{s};\, 3.9\,\text{m/s})$ and the starting point $(0\,\text{s};\, 0\,\text{m/s})$. The farthest point gives the most accurate slope.
+**Formula:** $a = \dfrac{\Delta v}{\Delta t}$ and $T = m_1 a$
+**Conversions:** The speeds are in $\text{m/s}$, the times in seconds and the mass in kilograms, so no conversions are needed.
+**Substitution:** $a = \dfrac{3.9\,\text{m/s} - 0\,\text{m/s}}{2.0\,\text{s} - 0\,\text{s}} = 1.95\,\text{m/s}^2$ and $T = 0.80\,\text{kg} \cdot 1.95\,\text{m/s}^2 = 1.56\,\text{N}$
+**Answer:** $T \approx 1.6\,\text{N}$, two significant figures, because the mass $0.80\,\text{kg}$ and the speeds read are given to two figures.
+**Reasonableness:** The acceleration $1.95\,\text{m/s}^2$ is smaller than $g$, as it must be when the hanging weight also accelerates the cart. The tension is the product of the mass and the acceleration, and about $0.8\,\text{kg}$ and about $2\,\text{m/s}^2$ give about $1.6\,\text{N}$.
+
+## fy4-13-L3-06
+**Given:** hanging mass $m_2 = 0.20\,\text{kg}$ and the measured points of the graph for a cart starting from rest; $g = 9.81\,\text{m/s}^2$; friction and air resistance are neglected, the string and the pulley are light
+**Find:** a) the mass $m_1$ of the cart in $\text{kg}$; b) whether the tension $T$ is greater than, smaller than or equal to the weight $m_2 g$ of the hanging mass
+**Principle:** Each body gets its own equation of motion. The string is inextensible, so the bodies have the same magnitude of acceleration $a$, and a light string and a light, frictionless pulley give tensions of the same size $T$. The acceleration is read from the graph, so the mass of the cart is the only unknown.
+**Free-body diagram:** The cart as a rectangle, positive direction along the string: $\overline{G}_1$ and $\overline{N}$ cancel, and in the horizontal direction only $\overline{T}_1$ acts. The hanging mass as a rectangle, positive direction down: $\overline{G}_2$ down and $\overline{T}_2$ up, shorter than the weight.
+```voimakuvio
+pinta 0
+G_1 7,907
+N 7,907
+T_1 1,572 oikea
+a oikea
+---
+G_2 1,962
+T_2 1,572 ylös
+a alas
+```
+**Reading the graph:** The points lie on a straight line through the origin, so the acceleration is constant. The farthest point $(2.0\,\text{s};\, 3.9\,\text{m/s})$ and the starting point $(0\,\text{s};\, 0\,\text{m/s})$ give the slope $a = \dfrac{3.9\,\text{m/s}}{2.0\,\text{s}} = 1.95\,\text{m/s}^2$. The point $(1.0\,\text{s};\, 2.0\,\text{m/s})$ gives almost the same, $2.0\,\text{m/s}^2$.
+**Formula:** Cart: $T = m_1 a$. Hanging mass: $m_2 g - T = m_2 a$. From the equations $m_2 g = (m_1 + m_2)\,a$, so $m_1 = m_2\left(\dfrac{g}{a} - 1\right)$
+**Conversions:** All quantities are in SI units, so no conversions are needed.
+**Substitution:** a) $m_1 = 0.20\,\text{kg} \cdot \left(\dfrac{9.81\,\text{m/s}^2}{1.95\,\text{m/s}^2} - 1\right) = 0.20\,\text{kg} \cdot 4.031 = 0.806\,\text{kg}$. b) $T = m_1 a = 0.806\,\text{kg} \cdot 1.95\,\text{m/s}^2 = 1.57\,\text{N}$ and $m_2 g = 0.20\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 1.96\,\text{N}$
+**Answer:** a) $m_1 \approx 0.81\,\text{kg}$, two significant figures, because the hanging mass $0.20\,\text{kg}$ and the acceleration read are given to two figures. b) The tension $1.6\,\text{N}$ is smaller than the weight $2.0\,\text{N}$ of the hanging mass. The hanging mass accelerates downward, so its net force $m_2 g - T = m_2 a$ points down and $T < m_2 g$. The tension would equal the weight only if the acceleration were zero.
+**Reasonableness:** The cart is about four times as heavy as the hanging mass. Check: $a = \dfrac{m_2 g}{m_1 + m_2} = \dfrac{1.962\,\text{N}}{1.006\,\text{kg}} = 1.95\,\text{m/s}^2$, which agrees with the value read from the graph.

@@ -364,3 +364,14 @@ $40{,}2\,\text{m} - 39{,}5\,\text{m} = 0{,}7\,\text{m}$
 Ne ovat pienempiä kuin $2\Delta x = 2{,}0\,\text{m}$, joten epävarmuusvälit menevät päällekkäin. Raskaampi pulkka kulki korkeudelta $2{,}00\,\text{m}$ pidemmälle mutta korkeudelta $4{,}00\,\text{m}$ lyhyemmälle. Aineisto ei siis osoita, että raskaampi pulkka kulkisi kauemmas. Se ei kuitenkaan todista, ettei massa vaikuta lainkaan, koska alle $2\,\text{m}$:n vaikutus hukkuisi epävarmuuteen. Tulos sopii malliin $x = \tfrac{h}{\mu}$, jossa massa supistuu pois.
 
 Matka $80\,\text{m}$ korkeudelta $8{,}00\,\text{m}$ olisi mittausalueen ulkopuolelle jatkettu arvio. Se olettaa saman kitkakertoimen koko matkalle, joten se ei ole varma tulos. Tulos on järkevä: suhde $h : x \approx 0{,}10$ on joka rivillä lähes sama ja sopii lumen ja pulkan liikekitkakertoimeksi.
+
+## fy4-16-L2-09
+**Annettu:** $m = 60{,}0\,\text{kg}$; kuvaajasta tukivoima hidastusvaiheessa $N = 550\,\text{N}$; $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** hissin kiihtyvyyden suuruus $a$ yksikössä $\text{m/s}^2$
+**Periaate:** Ihmiseen vaikuttavat paino alas ja tukivoima ylös. Newtonin toisen lain mukaan niiden summa antaa kiihtyvyyden. Levyn lukema on yhtä suuri kuin paino vain silloin, kun hissi ei kiihdy. Siksi kiihtyvyys saadaan lukeman ja painon erotuksesta.
+**Kuvaajan lukeminen:** Alussa ja tasaisessa liikkeessä lukema on noin $589\,\text{N}$. Se on ihmisen paino. Hetkestä $9{,}0\,\text{s}$ alkaen lukema on ruudukkoviivalla $550\,\text{N}$. Se on painoa pienempi ja pysyy siinä noin hetkeen $12{,}2\,\text{s}$. Silloin kiihtyvyys osoittaa alas: ylöspäin liikkuva hissi hidastaa.
+**Kaava:** positiivinen suunta on ylös, $N - mg = ma$, joten $a = \dfrac{N - mg}{m}$
+**Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
+**Sijoitus:** $a = \dfrac{550\,\text{N} - 60{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2}{60{,}0\,\text{kg}} = \dfrac{550\,\text{N} - 588{,}6\,\text{N}}{60{,}0\,\text{kg}} = -0{,}643\,\text{m/s}^2$
+**Vastaus:** kiihtyvyyden suuruus on $0{,}643\,\text{m/s}^2$ ja suunta on alas. Vastauksessa on kolme merkitsevää numeroa, koska massa $60{,}0\,\text{kg}$ on annettu kolmella numerolla.
+**Järkevyys:** Lukema on vain noin $7\,\%$ painoa pienempi. Siksi kiihtyvyys on pieni osa putoamiskiihtyvyydestä: $0{,}643 : 9{,}81 \approx 0{,}066$. Hissi hidastaa yleensä noin $0{,}5\ldots1\,\text{m/s}^2$, joten tulos sopii.

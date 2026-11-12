@@ -320,6 +320,32 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy4-8-L2-08",
+      "level": 2,
+      "text": "The graph shows the kinetic energy of a ball as a function of the speed of the ball. The ball is thrown straight up from the ground at $6.0\\,\\text{m/s}$. Air resistance is neglected. At what height above the ground is the speed of the ball $4.0\\,\\text{m/s}$?",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 1.0,
+      "unit": "m",
+      "tolerance": 0.04,
+      "figure": "fy4-7/pallo-ek"
+    },
+    {
+      "id": "fy4-8-L2-09",
+      "level": 2,
+      "text": "The figure shows the energies of a sled at the top and at the bottom of a slope. The sled starts from rest and slides a distance of $6.0\\,\\text{m}$ along the slope. The weight and the normal force are not the only forces: a constant friction force against the slope also acts on the sled. Air resistance is neglected. How large is the friction force?",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 2.5,
+      "unit": "N",
+      "tolerance": 0.05,
+      "figure": "fy4-8/palkit-asteikko"
     }
   ],
   "level3": [

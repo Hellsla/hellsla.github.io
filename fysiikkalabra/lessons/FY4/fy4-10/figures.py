@@ -2,7 +2,7 @@
 Colours: velocity blue (#1971c2), force red (#c92a2a), momentum purple (#7048e8, its own colour in FY4, distinct from
 velocity, force and acceleration)."""
 import math
-from figlib import (Fig, INK, MUTED, WHITE, RULE, RULE_LIGHT, HEAT, HEAT_LIGHT, HOT, HOT_LIGHT, COLD, COLD_LIGHT, GOOD,
+from figlib import (Fig, Axes, INK, MUTED, WHITE, RULE, RULE_LIGHT, HEAT, HEAT_LIGHT, HOT, HOT_LIGHT, COLD, COLD_LIGHT, GOOD,
                     GOOD_LIGHT, ALUMINIUM, METAL_EDGE, IRON, COPPER, SAND_LIGHT, SAND, SAND_DARK, GLASS, ICE, PAPER, n)
 import herolib as H
 
@@ -170,9 +170,45 @@ def hero():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "vuorovaikutus": vuorovaikutus, "tarra": tarra, "tyypit": tyypit}
+def ex_vt_kaarryt():
+    """Exercise L2-09: the velocities of two gliders against time through a collision at t = 2,0 s (nothing shaded)."""
+    f = Fig("fy410-ex-vt-kaarryt", 340, "Kuvaaja mittakaavassa: kahden ilmatyynyradan vaunun A ja B nopeus ajan funktiona, positiivinen suunta "
+            "oikealle. Ennen törmäystä hetkeen 2,0 sekuntia vaunun A nopeus on 0,8 metriä sekunnissa ja vaunun B nopeus on "
+            "miinus 0,4 metriä sekunnissa. Törmäys tapahtuu hetkellä 2,0 sekuntia. Törmäyksen jälkeen vaunun A nopeus on "
+            "0,2 metriä sekunnissa ja vaunun B nopeus on 0,6 metriä sekunnissa. Vaaka-akselilla aika 0–4 sekuntia 0,5 sekunnin välein, "
+            "pystyakselilla nopeus −0,6–1,0 metriä sekunnissa 0,2 metrin välein sekunnissa.")
+    ax = Axes(f, (96, 296), (478, 52), x=(0, 4), y=(-0.6, 1.0), xticks=[0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4],
+              yticks=[-0.6, -0.4, -0.2, 0, 0.2, 0.4, 0.6, 0.8, 1.0], xlabel=r"t\ (\text{s})", ylabel=r"v\ (\text{m/s})",
+              x_at=0, origin_label=False)
+    ax.line([(0, 0.8), (1.96, 0.8), (2.04, 0.2), (4, 0.2)], BLUE, 3)
+    ax.line([(0, -0.4), (1.96, -0.4), (2.04, 0.6), (4, 0.6)], COPPER, 3)
+    f.tex(ax.X(0.9), ax.Y(0.8) - 20, r"\text{A}", "middle", BLUE)
+    f.tex(ax.X(0.9), ax.Y(-0.4) + 22, r"\text{B}", "middle", COPPER)
+    return f.svg()
+
+
+def ex_xt_tarra():
+    """Exercise L3-06: positions of two gliders against time; they stick together at t = 1,0 s (nothing shaded)."""
+    f = Fig("fy410-ex-xt-tarra", 340, "Kuvaaja mittakaavassa: kahden ilmatyynyradan vaunun A ja B paikka x ajan funktiona, positiivinen suunta "
+            "oikealle. Vaunu B on levossa paikassa 0,60 metriä. Vaunu A lähtee paikasta 0 hetkellä 0 ja kulkee tasaisella "
+            "nopeudella paikkaan 0,60 metriä hetkeen 1,0 sekuntia mennessä. Silloin vaunut törmäävät ja jäävät kiinni toisiinsa. "
+            "Yhdessä ne kulkevat tasaisella nopeudella paikkaan 1,00 metriä hetkeen 3,0 sekuntia mennessä. Vaaka-akselilla aika "
+            "0–3 sekuntia 0,5 sekunnin välein, pystyakselilla paikka 0–1,2 metriä 0,2 metrin välein.")
+    ax = Axes(f, (96, 296), (478, 52), x=(0, 3), y=(0, 1.2), xticks=[0, 0.5, 1, 1.5, 2, 2.5, 3], yticks=[0, 0.2, 0.4, 0.6, 0.8, 1.0, 1.2],
+              xlabel=r"t\ (\text{s})", ylabel=r"x\ (\text{m})")
+    ax.line([(0, 0), (1, 0.6), (3, 1.0)], BLUE, 3)
+    ax.line([(0, 0.6), (1, 0.6)], COPPER, 3)
+    f.tex(ax.X(0.5) - 22, ax.Y(0.3) - 6, r"\text{A}", "middle", BLUE)
+    f.tex(ax.X(0.5), ax.Y(0.6) - 20, r"\text{B}", "middle", COPPER)
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "vuorovaikutus": vuorovaikutus, "tarra": tarra, "tyypit": tyypit,
+           "ex-vt-kaarryt": ex_vt_kaarryt, "ex-xt-tarra": ex_xt_tarra}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
+    "ex-vt-kaarryt": "safe: (t, v) graph of two gliders through a collision, velocities readable at grid crossings, nothing shaded",
+    "ex-xt-tarra": "safe: (t, x) graph of a glider hitting a resting one and sticking, slopes readable, nothing shaded",
     "vuorovaikutus": "reveals: equal and opposite impulses in a collision, Δp1 = −Δp2",
     "tarra": "reveals: a perfectly inelastic collision of equal masses halves the velocity and keeps the momentum",
     "tyypit": "reveals: what happens to the momenta and to E_k in elastic, perfectly inelastic collisions and an explosion",

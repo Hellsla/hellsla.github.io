@@ -26,4 +26,8 @@ a["fy4-3-L2-05"] = max([0.9, 2.6, 4.8, 3.4, 1.2])   # rope at rest: wall on rope
 a["fy4-3-L2-06"] = round(sum([0.51, 0.50, 0.49, 0.50, 0.51, 0.49]) / 6 * 6.0, 1)   # v_ka = 3,00/6 = 0,500 m/s; s = 0,500 m/s * 6,0 s = 3,0 m
 a["fy4-3-L3-04"] = (410 + 40) + 30           # cart: T = 410 + 40 = 450 N; III: cart pulls horse back T; horse: F_t = 450 + 30 = 480 N
 a["fy4-3-L3-05"] = round(sum([3.4, 3.5, 3.3]) / 3, 1)   # constant v from t = 4 s: F_k = F_ka = 10,2 N / 3 = 3,40 N
+# Figure tasks (fy4-3/anturit): third law pair at t = 0,10 s, and the duration of the contact
+a["fy4-3-L1-09"] = 4.0                       # read |F_B| = |F_A| ≈ 4,0 N at 0,10 s (third law)
+a["fy4-3-L2-09"] = round(0.15 - 0.05, 2)     # forces zero up to 0,05 s and again from 0,15 s: Δt = 0,10 s
+
 print(json.dumps(a))

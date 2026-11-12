@@ -1,6 +1,6 @@
 """Figures of this lesson (scripts/figlib.py); `python scripts/figures.py fy4-8` writes them into lesson.md."""
 import math
-from figlib import (Fig, INK, MUTED, WHITE, RULE, RULE_LIGHT, HEAT, HEAT_LIGHT, HOT, HOT_LIGHT, COLD, COLD_LIGHT, GOOD,
+from figlib import (Fig, Axes, fi, INK, MUTED, WHITE, RULE, RULE_LIGHT, HEAT, HEAT_LIGHT, HOT, HOT_LIGHT, COLD, COLD_LIGHT, GOOD,
                     GOOD_LIGHT, ALUMINIUM, METAL_EDGE, IRON, SAND_LIGHT, SAND, GLASS, ICE, PAPER, n)
 import herolib as H
 
@@ -179,10 +179,26 @@ def hero():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "laakso": laakso, "tyo": tyo, "palkit": palkit}
+def palkit_asteikko():
+    """Task figure: two energy bars on a joule scale, E_p,1 = 40 J at the start and E_k,2 = 25 J at the end; no friction bar."""
+    f = Fig("fy48-palkitasteikko", 350, "Energiapalkit mittakaavassa, pystyakselilla energia jouleina nollasta 50:een. Kelkka laskee "
+            "rinteen alas levosta. Vasemmanpuoleinen vihreä palkki on kelkan potentiaalienergia E_p,1 alussa, ylhäällä: se ulottuu "
+            "40 jouleen. Oikeanpuoleinen sininen palkki on kelkan liike-energia E_k,2 lopussa, alhaalla: se ulottuu 25 jouleen. "
+            "Alussa liike-energia on nolla ja lopussa potentiaalienergia on nolla. Muiden voimien työn palkkia ei ole piirretty.")
+    ax = Axes(f, (92, 290), (496, 60), x=(0, 4), y=(0, 50), xticks=[], yticks=list(range(5, 51, 5)),
+              xlabel="", ylabel=r"E\ (\text{J})", yfmt=lambda v: fi(v) if v % 10 == 0 else "")
+    for x, val, c, s in ((1.0, 40, GREEN, r"E_{\text{p},1}"), (2.8, 25, BLUE, r"E_{\text{k},2}")):
+        f.rect(ax.X(x - 0.35), ax.Y(val), ax.X(x + 0.35) - ax.X(x - 0.35), ax.Y(0) - ax.Y(val), c)
+        f.tex(ax.X(x), 316, s, "middle", c)
+    f.tex(ax.X(1.0), 336, r"\text{alussa}", "middle"); f.tex(ax.X(2.8), 336, r"\text{lopussa}", "middle")
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "laakso": laakso, "tyo": tyo, "palkit": palkit, "palkit-asteikko": palkit_asteikko}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "laakso": "reveals: mechanical energy is conserved without friction (equal bar totals, the same height on both sides)",
     "tyo": "reveals: the sign of the work of a force along, against and perpendicular to the motion",
     "palkit": "reveals: the energy principle E_k1 + E_p1 + W_muut = E_k2 + E_p2 as bars",
+    "palkit-asteikko": "safe: E_p,1 = 40 J and E_k,2 = 25 J as bars on a joule scale; the work of the other forces is not drawn",
 }

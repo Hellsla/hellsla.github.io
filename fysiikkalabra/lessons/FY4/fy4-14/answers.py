@@ -29,4 +29,7 @@ a["fy4-14-L3-03"] = 0.150 * (g - at)                # mg − F_v = ma → F_v = 
 a_j = (15.5 - 33.0) / (1.5 - 0.5)                   # jumper table at 0,5 s and 1,5 s, positive down: a = −17,5 m/s² (up)
 a["fy4-14-L3-04"] = 82.0 * (g - a_j)                # mg − F_v = ma → F_v = m(g − a) = 82,0 · 27,31 = 2239,4 N (2,78 · mg; terminal: mg = 804,4 N)
 a["fy4-14-L3-05"] = (2 * g * 1500) ** 0.5           # raindrop without air resistance: v² = 2gh → v = √(2 · 9,81 · 1500) = 171,55 m/s (a: F_v = mg = 1,373·10⁻⁴ N)
+# Figure task (skydiver's (t, v) points, down positive: (6 s; 40,4 m/s) and (10 s; 46,4 m/s))
+a_h = (46.4 - 40.4) / (10.0 - 6.0)                  # average acceleration over 6,0–10,0 s, about the acceleration at 8,0 s: 1,50 m/s²
+a["fy4-14-L2-08"] = 75.0 * (9.81 - a_h)             # mg − F_v = ma → F_v = m(g − a) = 75,0 · 8,31 = 623,25 N (mg = 735,75 N, F_v/G = 0,847)
 print(json.dumps(a))

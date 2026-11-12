@@ -217,3 +217,25 @@ $E_\text{k} \approx 31\,\text{kJ}$
 The car would stop only at the starting height of $20\,\text{m}$.
 
 5 false. Friction would decrease the mechanical energy of the car, but an equal amount of energy would be transferred to the internal energy of the track, the wheels and the air. The total energy is conserved.
+
+## fy4-8-L2-08
+**Given:** points read from the graph: $(4.0\,\text{m/s};\,4.0\,\text{J})$ and $(6.0\,\text{m/s};\,9.0\,\text{J})$; $g = 9.81\,\text{m/s}^2$; the zero level is the ground, so at the start $E_{\text{p},1} = 0$
+**Find:** the height $h$ in $\text{m}$
+**Principle:** Only the weight acts on the ball, so the mechanical energy is conserved: $E_{\text{k},1} + E_{\text{p},1} = E_{\text{k},2} + E_{\text{p},2}$. The decrease in kinetic energy equals the increase in potential energy. The mass of the ball is needed for the potential energy, and it comes from a point of the graph.
+**Reading the graph:** At the speed $6.0\,\text{m/s}$ the kinetic energy is $E_{\text{k},1} = 9.0\,\text{J}$ and at the speed $4.0\,\text{m/s}$ it is $E_{\text{k},2} = 4.0\,\text{J}$. The mass: $m = \dfrac{2E_{\text{k}}}{v^2} = \dfrac{2 \cdot 4.0\,\text{J}}{(4.0\,\text{m/s})^2} = 0.50\,\text{kg}$.
+**Formula:** $E_{\text{k},1} = E_{\text{k},2} + mgh$, so $h = \dfrac{E_{\text{k},1} - E_{\text{k},2}}{mg}$
+**Conversions:** All quantities are in SI units, so no conversions are needed.
+**Substitution:** $h = \dfrac{9.0\,\text{J} - 4.0\,\text{J}}{0.50\,\text{kg} \cdot 9.81\,\text{m/s}^2} = \dfrac{5.0\,\text{J}}{4.905\,\text{N}} = 1.02\,\text{m}$
+**Answer:** $1.0\,\text{m}$, two significant figures, like the values read from the graph and the speeds.
+**Reasonableness:** The mass cancels: $h = \dfrac{v_1^2 - v_2^2}{2g} = \dfrac{(6.0\,\text{m/s})^2 - (4.0\,\text{m/s})^2}{2 \cdot 9.81\,\text{m/s}^2} = 1.02\,\text{m}$, the same result. The whole rise from the speed $6.0\,\text{m/s}$ to a stop would be $1.8\,\text{m}$, so $1.0\,\text{m}$ is part of it.
+
+## fy4-8-L2-09
+**Given:** the energies read from the figure: at the start $E_{\text{k},1} = 0$ and $E_{\text{p},1} = 40\,\text{J}$, at the end $E_{\text{k},2} = 25\,\text{J}$ and $E_{\text{p},2} = 0$; distance $s = 6.0\,\text{m}$
+**Find:** the magnitude of the friction force $F_\mu$ in $\text{N}$
+**Principle:** The normal force is perpendicular to the motion and does no work, so the other force is friction. By the energy principle $E_{\text{k},1} + E_{\text{p},1} + W_\text{other} = E_{\text{k},2} + E_{\text{p},2}$. Friction points against the motion, so its work is negative, $W_\text{other} = -F_\mu s$.
+**Reading the graph:** The green bar reaches the $40\,\text{J}$ line of the scale and the blue bar the $25\,\text{J}$ line. At the start there is no kinetic energy and at the end there is no potential energy, so both are zero.
+**Formula:** $W_\text{other} = (E_{\text{k},2} + E_{\text{p},2}) - (E_{\text{k},1} + E_{\text{p},1})$ and $W_\text{other} = -F_\mu s$, so $F_\mu = \dfrac{(E_{\text{k},1} + E_{\text{p},1}) - (E_{\text{k},2} + E_{\text{p},2})}{s}$
+**Conversions:** $1\,\text{J} = 1\,\text{N}\cdot\text{m}$, so joules and metres give newtons directly.
+**Substitution:** $W_\text{other} = 25\,\text{J} - 40\,\text{J} = -15\,\text{J}$, and $F_\mu = \dfrac{15\,\text{J}}{6.0\,\text{m}} = 2.5\,\text{N}$
+**Answer:** $2.5\,\text{N}$, two significant figures, like the distance $6.0\,\text{m}$.
+**Reasonableness:** The mechanical energy decreased by $15\,\text{J}$, the difference between the bars $40\,\text{J}$ and $25\,\text{J}$, and $2.5\,\text{N} \cdot 6.0\,\text{m} = 15\,\text{J}$. The work of friction is negative, because friction opposes the motion.

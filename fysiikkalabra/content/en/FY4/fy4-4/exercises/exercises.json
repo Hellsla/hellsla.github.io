@@ -96,6 +96,27 @@
       "answer": 400,
       "unit": "kg",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-4-L1-09",
+      "level": 1,
+      "text": "A spacecraft of mass $15\\,000\\,\\text{kg}$ landing on the Moon slows its descent with a rocket-engine thrust that points upward. The spacecraft's acceleration is $0.50\\,\\text{m/s}^2$ upward. Besides its weight, only the thrust acts on it. Look up the free-fall acceleration on the surface of the Moon in the MAFY table (mafytaulukot.fi). How large is the thrust?",
+      "lookup": "MAFY",
+      "answer": 31.83,
+      "unit": "kN",
+      "tolerance": 0.04,
+      "hints": [
+        "The value is found in the MAFY table under *Aurinkokunta* (the Solar System)."
+      ]
+    },
+    {
+      "id": "fy4-4-L1-10",
+      "level": 1,
+      "text": "The graph shows the acceleration of two carts A and B against the net force. The masses of the carts are not given. What is the mass of cart A?",
+      "answer": 0.5,
+      "unit": "kg",
+      "tolerance": 0.02,
+      "figure": "fy4-4/kuvaaja-ab"
     }
   ],
   "level2": [
@@ -265,6 +286,15 @@
           "feedback": "There is an error on line 4: the weight $G$ has been used in place of the mass $m$. On a horizontal floor the normal force cancels the weight, and the acceleration is reduced by the mass, not by the weight."
         }
       ]
+    },
+    {
+      "id": "fy4-4-L2-09",
+      "level": 2,
+      "text": "The graph shows the acceleration of two carts A and B against the net force. The masses of the carts are not given. A horizontal net force of $2.4\\,\\text{N}$ acts on cart B. What is the acceleration of cart B?",
+      "answer": 2.4,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "figure": "fy4-4/kuvaaja-ab"
     }
   ],
   "level3": [

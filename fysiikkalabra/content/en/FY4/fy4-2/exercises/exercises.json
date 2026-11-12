@@ -115,6 +115,18 @@
           "feedback": "When air resistance is small, all bodies fall with the same acceleration $g$, so the mass has no place in the calculation of this problem."
         }
       ]
+    },
+    {
+      "id": "fy4-2-L1-09",
+      "level": 1,
+      "text": "A stone is dropped from rest from a height of $20\\,\\text{m}$ on Jupiter toward the surface. Air resistance is ignored. Look up the free-fall acceleration on the surface of Jupiter in the MAFY table (mafytaulukot.fi). How long does the fall take?",
+      "lookup": "MAFY",
+      "answer": 1.2703,
+      "unit": "s",
+      "tolerance": 0.04,
+      "hints": [
+        "The value is found in the MAFY table under *Aurinkokunta* (the Solar System)."
+      ]
     }
   ],
   "level2": [

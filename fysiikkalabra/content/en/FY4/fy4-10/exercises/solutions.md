@@ -229,3 +229,25 @@ c) The momentum before the collision is $0.40 \cdot 1.50\,\text{kg}\cdot\text{m/
 **Answer:** $1.2\,\text{N}$, two significant figures like the velocities and masses. The corresponding coefficient of sliding friction is $\mu = \dfrac{F_\mu}{(m_\text{A} + m_\text{B})\,g} = 0.20$.
 **Reasonableness:** The friction force $1.2\,\text{N}$ is $20\,\%$ of the weight of the pair of carts, $0.60 \cdot 9.81\,\text{N} = 5.9\,\text{N}$, which is a typical size for a coefficient of sliding friction. The pair of carts would stop in a time $\dfrac{1.00\,\text{m/s}}{1.96\,\text{m/s}^2} = 0.51\,\text{s}$, so the measurement ends before the stop, as it should.
 **Model answer on the error:** The student's reasoning was wrong, because the first measurement point is at $0.06\,\text{s}$ after the collision, and by then friction has already had time to slow the carts. The law of conservation of momentum applies to the moments just before and just after the collision, not to a later moment when external friction has acted. When the velocity is extrapolated to the moment $t = 0$, we get $1.00\,\text{m/s}$ and momentum is conserved. The decrease in momentum the student observed was due to the impulse of friction over the measurement interval, not to the collision itself.
+
+## fy4-10-L2-09
+**Given:** $m_\text{A} = 0.50\,\text{kg}$; from the graph the velocities of the gliders before and after the collision
+**Find:** the mass of glider B, $m_\text{B}$, in $\text{kg}$
+**Principle:** During the collision the force between the gliders is an internal force, and the impulse of friction during the short collision is negligible, so the total momentum is conserved. Directions are taken into account with signs.
+**Reading the graph:** At the collision, $2.0\,\text{s}$, the velocities change. Before: $v_\text{A} = 0.8\,\text{m/s}$ and $v_\text{B} = -0.4\,\text{m/s}$ (glider B moves to the left, so its velocity is negative). After: $v_\text{A}' = 0.2\,\text{m/s}$ and $v_\text{B}' = 0.6\,\text{m/s}$.
+**Formula:** $m_\text{A} v_\text{A} + m_\text{B} v_\text{B} = m_\text{A} v_\text{A}' + m_\text{B} v_\text{B}'$, so $m_\text{B} = \dfrac{m_\text{A}(v_\text{A} - v_\text{A}')}{v_\text{B}' - v_\text{B}}$
+**Conversions:** None needed: all quantities are in SI units.
+**Substitution:** $m_\text{B} = \dfrac{0.50\,\text{kg} \cdot (0.8 - 0.2)\,\text{m/s}}{(0.6 - (-0.4))\,\text{m/s}} = \dfrac{0.30\,\text{kg}\cdot\text{m/s}}{1.0\,\text{m/s}} = 0.30\,\text{kg}$
+**Answer:** $0.30\,\text{kg}$, two significant figures like the mass $0.50\,\text{kg}$.
+**Reasonableness:** Check: the momentum before is $0.50 \cdot 0.8 + 0.30 \cdot (-0.4) = 0.28\,\text{kg}\cdot\text{m/s}$ and after $0.50 \cdot 0.2 + 0.30 \cdot 0.6 = 0.28\,\text{kg}\cdot\text{m/s}$. The mass is of the same order as the mass of glider A, as the changes of velocity in the graph suggest. If the sign of the velocity of glider B were forgotten, the result would be $\dfrac{0.30}{0.2}\,\text{kg} = 1.5\,\text{kg}$, and the momentum would not be conserved.
+
+## fy4-10-L3-06
+**Given:** $m_\text{A} = 0.30\,\text{kg}$, glider B is at rest at first and the gliders stick together; from the graph the position as a function of time
+**Find:** the decrease of kinetic energy $\Delta E_\text{k}$ in the collision in $\text{J}$
+**Principle:** The slope of a position–time graph is the velocity. During the collision the impulse of friction is negligible, so momentum is conserved, and it gives the mass of glider B. The kinetic energies are calculated before and after, and their difference is the energy changed into other forms in the collision.
+**Reading the graph:** Glider A moves from position $0$ to $0.60\,\text{m}$ in $1.0\,\text{s}$, so $v = \dfrac{0.60\,\text{m}}{1.0\,\text{s}} = 0.60\,\text{m/s}$. The collision happens at $1.0\,\text{s}$ at the position $0.60\,\text{m}$, where glider B is at rest. Together the gliders move from $0.60\,\text{m}$ to $1.00\,\text{m}$ in $2.0\,\text{s}$, so $v' = \dfrac{0.40\,\text{m}}{2.0\,\text{s}} = 0.20\,\text{m/s}$.
+**Formula:** $m_\text{A} v = (m_\text{A} + m_\text{B})\,v'$, so $m_\text{B} = m_\text{A}\left(\dfrac{v}{v'} - 1\right)$; $\Delta E_\text{k} = \tfrac{1}{2} m_\text{A} v^2 - \tfrac{1}{2}(m_\text{A} + m_\text{B})\,v'^2$
+**Conversions:** None needed: all quantities are in SI units.
+**Substitution:** $m_\text{B} = 0.30\,\text{kg} \cdot \left(\dfrac{0.60}{0.20} - 1\right) = 0.60\,\text{kg}$ and $\Delta E_\text{k} = \tfrac{1}{2} \cdot 0.30\,\text{kg} \cdot (0.60\,\text{m/s})^2 - \tfrac{1}{2} \cdot 0.90\,\text{kg} \cdot (0.20\,\text{m/s})^2 = 0.054\,\text{J} - 0.018\,\text{J} = 0.036\,\text{J}$
+**Answer:** $0.036\,\text{J}$, two significant figures like the mass $0.30\,\text{kg}$.
+**Reasonableness:** Of the kinetic energy $0.054\,\text{J}$, $0.036\,\text{J}$ is changed, two thirds, which fits a perfectly inelastic collision (bodies that stick together lose the fraction $m_\text{B}/(m_\text{A} + m_\text{B}) = 0.60/0.90$ of the kinetic energy). Energy cannot increase, and the result is positive, as it should be.

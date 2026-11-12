@@ -43,4 +43,10 @@ vs = math.sqrt(2 * 0.60 * g * 8.0)                      # skid after the collisi
 a["fy4-10-L3-04"] = (1100 + 1400) * vs / 1100 * 3.6     # momentum: v_A = (mA+mB)v'/mA = 22,06 m/s = 79,4 km/h
 acc = (0.88 - 0.41) / (0.30 - 0.06)                     # deceleration from the first and last table rows: 1,958 m/s²
 a["fy4-10-L3-05"] = (0.40 + 0.20) * acc                 # friction force F = (mA+mB)·a = 1,175 N
+# Figure tasks (L2-09 reads fy4-10/ex-vt-kaarryt, L3-06 reads fy4-10/ex-xt-tarra)
+mA, vA, vB, vA2, vB2 = 0.50, 0.8, -0.4, 0.2, 0.6      # velocity graph: A and B before and after
+a["fy4-10-L2-09"] = mA * (vA - vA2) / (vB2 - vB)      # m_B = 0,30 kg (momentum before = after = 0,28 kg·m/s)
+mA, v, v2 = 0.30, 0.60 / 1.0, 0.40 / 2.0              # position graph: slopes 0,60 and 0,20 m/s
+mB = mA * (v / v2 - 1)                                # 0,60 kg
+a["fy4-10-L3-06"] = 0.5 * mA * v**2 - 0.5 * (mA + mB) * v2**2   # 0,054 - 0,018 = 0,036 J
 print(json.dumps(a))

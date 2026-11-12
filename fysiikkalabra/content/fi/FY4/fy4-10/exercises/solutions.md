@@ -229,3 +229,25 @@ c) Liikemäärä ennen törmäystä on $0{,}40 \cdot 1{,}50\,\text{kg}\cdot\text
 **Vastaus:** $1{,}2\,\text{N}$, kaksi merkitsevää numeroa kuten nopeuksissa ja massoissa. Vastaava liukukitkakerroin on $\mu = \dfrac{F_\mu}{(m_\text{A} + m_\text{B})\,g} = 0{,}20$.
 **Järkevyys:** Kitkavoima $1{,}2\,\text{N}$ on $20\,\%$ vaunuparin painosta $0{,}60 \cdot 9{,}81\,\text{N} = 5{,}9\,\text{N}$, mikä on tavallinen liukukitkakertoimen suuruus. Vaunupari pysähtyisi ajassa $\dfrac{1{,}00\,\text{m/s}}{1{,}96\,\text{m/s}^2} = 0{,}51\,\text{s}$, joten mittaus loppuu ennen pysähtymistä, kuten pitää.
 **Mallivastaus virheestä:** Oppilaan päättely oli väärin, koska ensimmäinen mittauspiste on hetkellä $0{,}06\,\text{s}$ törmäyksen jälkeen, ja siihen mennessä kitka on jo ehtinyt hidastaa vaunuja. Liikemäärän säilymislaki koskee hetkiä juuri ennen ja juuri jälkeen törmäyksen, ei myöhempää hetkeä, jolloin ulkoinen kitka on vaikuttanut. Kun nopeus ekstrapoloidaan hetkeen $t = 0$, saadaan $1{,}00\,\text{m/s}$ ja liikemäärä säilyy. Oppilaan havaitsema liikemäärän pieneneminen johtui kitkan impulssista mittausvälillä, ei itse törmäyksestä.
+
+## fy4-10-L2-09
+**Annettu:** $m_\text{A} = 0{,}50\,\text{kg}$; kuvaajasta vaunujen nopeudet ennen ja jälkeen törmäyksen
+**Kysytty:** vaunun B massa $m_\text{B}$ yksikössä $\text{kg}$
+**Periaate:** Törmäyksen aikana vaunujen välinen voima on sisäinen voima, ja kitkan impulssi on lyhyen törmäyksen aikana merkityksettömän pieni, joten kokonaisliikemäärä säilyy. Suunnat otetaan huomioon etumerkeillä.
+**Kuvaajan lukeminen:** Törmäyshetkellä $2{,}0\,\text{s}$ nopeudet vaihtuvat. Ennen: $v_\text{A} = 0{,}8\,\text{m/s}$ ja $v_\text{B} = -0{,}4\,\text{m/s}$ (vaunu B liikkuu vasemmalle, joten nopeus on negatiivinen). Jälkeen: $v_\text{A}' = 0{,}2\,\text{m/s}$ ja $v_\text{B}' = 0{,}6\,\text{m/s}$.
+**Kaava:** $m_\text{A} v_\text{A} + m_\text{B} v_\text{B} = m_\text{A} v_\text{A}' + m_\text{B} v_\text{B}'$, joten $m_\text{B} = \dfrac{m_\text{A}(v_\text{A} - v_\text{A}')}{v_\text{B}' - v_\text{B}}$
+**Muunnokset:** Ei tarvita: kaikki suureet ovat SI-yksiköissä.
+**Sijoitus:** $m_\text{B} = \dfrac{0{,}50\,\text{kg} \cdot (0{,}8 - 0{,}2)\,\text{m/s}}{(0{,}6 - (-0{,}4))\,\text{m/s}} = \dfrac{0{,}30\,\text{kg}\cdot\text{m/s}}{1{,}0\,\text{m/s}} = 0{,}30\,\text{kg}$
+**Vastaus:** $0{,}30\,\text{kg}$, kaksi merkitsevää numeroa kuten massassa $0{,}50\,\text{kg}$.
+**Järkevyys:** Tarkistus: liikemäärä ennen on $0{,}50 \cdot 0{,}8 + 0{,}30 \cdot (-0{,}4) = 0{,}28\,\text{kg}\cdot\text{m/s}$ ja jälkeen $0{,}50 \cdot 0{,}2 + 0{,}30 \cdot 0{,}6 = 0{,}28\,\text{kg}\cdot\text{m/s}$. Massa on samaa suuruusluokkaa kuin vaunun A massa, kuten kuvaajan nopeuksien muutoksista voi odottaa. Jos vaunun B nopeuden etumerkki unohdettaisiin, tulokseksi tulisi $\dfrac{0{,}30}{0{,}2}\,\text{kg} = 1{,}5\,\text{kg}$, ja liikemäärä ei säilyisi.
+
+## fy4-10-L3-06
+**Annettu:** $m_\text{A} = 0{,}30\,\text{kg}$, vaunu B on aluksi levossa ja vaunut jäävät kiinni toisiinsa; kuvaajasta paikka ajan funktiona
+**Kysytty:** liike-energian pieneneminen $\Delta E_\text{k}$ törmäyksessä yksikössä $\text{J}$
+**Periaate:** Paikka–aika-kuvaajan kulmakerroin on nopeus. Törmäyksen aikana kitkan impulssi on merkityksettömän pieni, joten liikemäärä säilyy, ja siitä saadaan vaunun B massa. Liike-energiat lasketaan ennen ja jälkeen, ja niiden erotus on törmäyksessä muuksi energiaksi muuttunut energia.
+**Kuvaajan lukeminen:** Vaunu A kulkee paikasta $0$ paikkaan $0{,}60\,\text{m}$ ajassa $1{,}0\,\text{s}$, joten $v = \dfrac{0{,}60\,\text{m}}{1{,}0\,\text{s}} = 0{,}60\,\text{m/s}$. Törmäys tapahtuu hetkellä $1{,}0\,\text{s}$ paikassa $0{,}60\,\text{m}$, jossa vaunu B on levossa. Yhdessä vaunut kulkevat paikasta $0{,}60\,\text{m}$ paikkaan $1{,}00\,\text{m}$ ajassa $2{,}0\,\text{s}$, joten $v' = \dfrac{0{,}40\,\text{m}}{2{,}0\,\text{s}} = 0{,}20\,\text{m/s}$.
+**Kaava:** $m_\text{A} v = (m_\text{A} + m_\text{B})\,v'$, joten $m_\text{B} = m_\text{A}\left(\dfrac{v}{v'} - 1\right)$; $\Delta E_\text{k} = \tfrac{1}{2} m_\text{A} v^2 - \tfrac{1}{2}(m_\text{A} + m_\text{B})\,v'^2$
+**Muunnokset:** Ei tarvita: kaikki suureet ovat SI-yksiköissä.
+**Sijoitus:** $m_\text{B} = 0{,}30\,\text{kg} \cdot \left(\dfrac{0{,}60}{0{,}20} - 1\right) = 0{,}60\,\text{kg}$ ja $\Delta E_\text{k} = \tfrac{1}{2} \cdot 0{,}30\,\text{kg} \cdot (0{,}60\,\text{m/s})^2 - \tfrac{1}{2} \cdot 0{,}90\,\text{kg} \cdot (0{,}20\,\text{m/s})^2 = 0{,}054\,\text{J} - 0{,}018\,\text{J} = 0{,}036\,\text{J}$
+**Vastaus:** $0{,}036\,\text{J}$, kaksi merkitsevää numeroa kuten massassa $0{,}30\,\text{kg}$.
+**Järkevyys:** Liike-energiasta $0{,}054\,\text{J}$ muuttuu $0{,}036\,\text{J}$ eli kaksi kolmasosaa, mikä sopii täysin kimmottomaan törmäykseen (yhteen jäävät kappaleet menettävät massojen suhteessa $m_\text{B}/(m_\text{A} + m_\text{B}) = 0{,}60/0{,}90$ liike-energiasta). Energia ei voi kasvaa, ja tulos on positiivinen, kuten pitää.

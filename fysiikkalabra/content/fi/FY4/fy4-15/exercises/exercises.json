@@ -87,6 +87,18 @@
       "answer": 180.0,
       "unit": "kJ",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-15-L1-09",
+      "level": 1,
+      "text": "Pakkaspäivänä ilman lämpötila on $0\\,{}^\\circ\\text{C}$. Tuulivoimalan roottorin halkaisija on $82\\,\\text{m}$, tuulen nopeus $9{,}0\\,\\text{m/s}$ ja voimalan hyötysuhde $0{,}45$. Hae ilman tiheys lämpötilassa $0\\,{}^\\circ\\text{C}$ MAFY-taulukosta (mafytaulukot.fi). Kuinka suuri on voimalan sähköteho?",
+      "lookup": "MAFY",
+      "answer": 1117.4223,
+      "unit": "kW",
+      "tolerance": 0.04,
+      "hints": [
+        "Tiheys löytyy MAFY-taulukon taulukosta *Tiheyksiä: Kaasujen tiheyksiä*."
+      ]
     }
   ],
   "level2": [
@@ -256,6 +268,24 @@
           "feedback": "Tulos syntyy, kun nopeus sijoitetaan lukuna $36$ muuntamatta sitä yksikköön $\\text{m/s}$. Koska $36\\,\\text{km/h} = 10\\,\\text{m/s}$ ja $36^3 : 10^3 \\approx 47$, teho tulee noin $47$ kertaa liian suureksi."
         }
       ]
+    },
+    {
+      "id": "fy4-15-L2-09",
+      "level": 2,
+      "text": "Kuvaajassa on tuulivoimalan valmistajan ilmoittama tehokäyrä pisteinä. Tuuli puhaltaa tasaisesti nopeudella $7\\,\\text{m/s}$ viiden vuorokauden ajan eli $120\\,\\text{h}$. Lue kuvaajasta voimalan sähköteho tällä nopeudella. Kuinka paljon sähköenergiaa voimala tuottaa tänä aikana megawattitunteina?",
+      "figure": "fy4-15/tehokayra-pisteet",
+      "answer": 61.32,
+      "unit": "MWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-15-L2-10",
+      "level": 2,
+      "text": "Kuvaajassa on tuulivoimalan valmistajan ilmoittama tehokäyrä pisteinä. Tuulen nopeus kasvaa arvosta $9\\,\\text{m/s}$ arvoon $12\\,\\text{m/s}$. Lue kuvaajasta sähköteho molemmilla nopeuksilla ja laske, kuinka monta kertaa suuremmaksi teho kasvaa. Vertaa tulosta arvoon, jonka antaisi teho verrannollisena nopeuden kolmanteen potenssiin, ja selitä ero.",
+      "figure": "fy4-15/tehokayra-pisteet",
+      "answer": 1.6096,
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level3": [

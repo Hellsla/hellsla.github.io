@@ -49,4 +49,7 @@ rounded_ok(a["fy4-7-L2-05"], 1.0); rounded_ok(a["fy4-7-L2-06"], -470)
 a["fy4-7-L3-04"] = sf(0.058 * g * (1.50 - 0.42), 2)     # bouncing ball: E_mek = m g h at the tops, ΔE = m g (h_0 − h_4) = 0,614 J -> 0,61 J
 em = [0.5 * 48 * v ** 2 + 48 * g * h for h, v in [(18.0, 1.5), (14.0, 8.3), (10.0, 11.5), (6.0, 14.0), (2.0, 15.8)]]   # sledge run, E_mek at the 5 points
 a["fy4-7-L3-05"] = sf((em[0] - em[4]) / 1000, 2)        # ΔE = 8530 J − 6933 J = 1597 J -> 1,6 kJ
+# Added exercises (figure tasks)
+a["fy4-7-L2-08"] = 9.0 - 1.0                                       # pallo-ek: E_k(6,0 m/s) = 9,0 J, E_k(2,0 m/s) = 1,0 J → ΔE_k = 8,0 J
+a["fy4-7-L2-09"] = sf(39 / (g * 2.0), 2)                           # ep-kuvaaja: E_p = 39 J at h = 2,0 m → m = E_p/(g h) = 1,99 kg
 print(json.dumps(a))

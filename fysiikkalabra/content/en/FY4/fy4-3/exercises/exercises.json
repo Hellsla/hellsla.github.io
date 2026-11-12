@@ -112,6 +112,15 @@
       "answer": 38,
       "unit": "N",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-3-L1-09",
+      "level": 1,
+      "text": "Two carts collide on an air track. The graph shows the readings of both carts' force sensors against time: sensor A measures the force on cart A and sensor B the force on cart B. The positive direction is to the right. With what force does cart A push cart B at $0.10\\,\\text{s}$?",
+      "answer": 4.0,
+      "unit": "N",
+      "tolerance": 0.04,
+      "figure": "fy4-3/anturit"
     }
   ],
   "level2": [
@@ -317,6 +326,15 @@
           "feedback": "Correct: the collision is one interaction, and by Newton's third law its forces are equally large and opposite in direction, although the masses and speeds of the vehicles differ."
         }
       ]
+    },
+    {
+      "id": "fy4-3-L2-09",
+      "level": 2,
+      "text": "Two carts collide on an air track. The graph shows the readings of both carts' force sensors against time: sensor A measures the force on cart A and sensor B the force on cart B. The force is zero before the carts touch and after they separate. For how long does the force between the carts act?",
+      "answer": 0.1,
+      "unit": "s",
+      "tolerance": 0.1,
+      "figure": "fy4-3/anturit"
     }
   ],
   "level3": [

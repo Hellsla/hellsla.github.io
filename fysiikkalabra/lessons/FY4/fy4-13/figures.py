@@ -4,7 +4,7 @@ is drawn. A situation is a separate pictorial situation picture (tilannekuva); n
 Two bodies joined by a light string over a light, frictionless pulley: each body has its own diagram, the string pulls both
 with a force of the same size T (a different arrow on each body)."""
 import math
-from figlib import Fig, INK, MUTED, WHITE, RULE, RULE_LIGHT, SAND_LIGHT, SAND, SAND_DARK, GRAIN, ICE, GLASS, COLD, COLD_LIGHT, IRON, ALUMINIUM, METAL_EDGE, COPPER, HOT, GOOD, n
+from figlib import Fig, Axes, INK, MUTED, WHITE, RULE, RULE_LIGHT, SAND_LIGHT, SAND, SAND_DARK, GRAIN, ICE, GLASS, COLD, COLD_LIGHT, IRON, ALUMINIUM, METAL_EDGE, COPPER, HOT, GOOD, n, fi
 from fbd import FBD, ground
 import herolib as H
 from herolib import grad, rnd
@@ -248,7 +248,23 @@ def malli_ketju():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "tilanne": tilanne, "esimerkki": esimerkki, "atwood": atwood, "virhe": virhe, "malli-atwood": malli_atwood, "malli-ketju": malli_ketju}
+# Exercise figure (L2-09, L3-06): the measured speed of a cart pulled along a frictionless track by a hanging weight, points only.
+KARRY_VT = [(0.0, 0.0), (0.5, 1.0), (1.0, 2.0), (1.5, 2.9), (2.0, 3.9)]
+
+
+def karry_vt_points():
+    """Exercise graph: (t, v) points of a cart pulled by a hanging weight from rest (the tasks read the acceleration off them)."""
+    f = Fig("fy413-karry-vt", 330, "Kuvaaja mittakaavassa: kärryn nopeus v ajan t funktiona, kun kärry päästetään levosta ja sitä vetää langan päässä riippuva punnus. "
+            "Viisi mittauspistettä ilman piirrettyä suoraa: (0 s; 0 m/s), (0,5 s; 1,0 m/s), (1,0 s; 2,0 m/s), (1,5 s; 2,9 m/s) ja (2,0 s; 3,9 m/s). "
+            "Vaaka-akselin ruudukon väli on 0,5 sekuntia ja pystyakselin 0,5 metriä sekunnissa.")
+    ax = Axes(f, (92, 280), (450, 56), x=(0, 2.5), y=(0, 4.5), xticks=[0.5, 1, 1.5, 2, 2.5], yticks=[0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5],
+              xlabel=r"t\ (\text{s})", ylabel=r"v\ (\text{m/s})", yfmt=lambda v: fi(v) if v == int(v) else "")
+    for t, v in KARRY_VT:
+        ax.point(t, v, COLD)
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "tilanne": tilanne, "esimerkki": esimerkki, "atwood": atwood, "virhe": virhe, "malli-atwood": malli_atwood, "malli-ketju": malli_ketju, "karry-vt-points": karry_vt_points}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "esimerkki": "reveals: the situation picture and the two force diagrams of the worked example (cart 1,5 kg, weight 0,60 kg)",
@@ -256,5 +272,6 @@ REUSE = {
     "atwood": "reveals: the situation picture and the two force diagrams of two bodies hanging over a pulley (a theory figure)",
     "virhe": "safe: a deliberately wrong diagram (the hanging weight's weight drawn as a force on the cart) for error-finding; its description lists the arrows, not the error",
     "malli-atwood": "reveals: the model diagrams of two bodies of 0,40 kg and 0,80 kg over a pulley (shown after the drawing attempt)",
+    "karry-vt-points": "safe: (t, v) points of a cart accelerating from rest, no line drawn and no mass or acceleration given; the tasks read the acceleration off the points",
     "malli-ketju": "reveals: the model diagrams of two crates hanging one under the other and lifted with acceleration (shown in the solution)",
 }

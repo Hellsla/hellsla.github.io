@@ -164,6 +164,23 @@ def kuvaaja():
     return f.svg()
 
 
+def kuvaaja_ab():
+    """Exercises: the same lines as `kuvaaja` for two carts A and B without masses, dashed guides or point values of the answer."""
+    f = Fig("fy44-kuvaaja-ab", 360, "Kuvaaja mittakaavassa: vaaka-akselilla kokonaisvoima newtoneina 0–3, pystyakselilla kiihtyvyys 0–6 metriä "
+            "sekunnin neliölle. Kaksi suoraa origon kautta, kummallakin kolme pistettä. Kärryn A pisteet ovat 1 N ja 2, 2 N ja 4 sekä "
+            "3 N ja 6. Kärryn B pisteet ovat 1 N ja 1, 2 N ja 2 sekä 3 N ja 3. Massoja ei ole annettu.")
+    ax = Axes(f, (90, 300), (380, 70), x=(0, 3), y=(0, 6), xticks=[0, 0.5, 1, 1.5, 2, 2.5, 3], yticks=[1, 2, 3, 4, 5, 6],
+              xlabel=r"\Sigma F\ (\text{N})", ylabel=r"a\ (\text{m/s}^2)",
+              xfmt=lambda v: "" if v != int(v) else str(int(v)))
+    ax.line([(0, 0), (3, 6)], INK)
+    ax.line([(0, 0), (3, 3)], COPPER)
+    for F in (1, 2, 3):
+        ax.point(F, F / 0.50, INK); ax.point(F, F / 1.0, COPPER)
+    f.tex(ax.X(3) + 14, ax.Y(6), r"\text{kärry A}", "start")
+    f.tex(ax.X(3) + 14, ax.Y(3), r"\text{kärry B}", "start", COPPER)
+    return f.svg()
+
+
 def _hang(f, ox, oy, title, Tk, v, a):
     """One panel of the crane figure: the crate on the crane's rope (situation picture, left) and its force diagram (right), with
     the velocity (blue) and the acceleration (orange) beside the diagram. Tk = T/G; v, a: +1 up, −1 down, 0 none."""
@@ -285,12 +302,13 @@ def malli_kirja():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "kokonaisvoima": kokonaisvoima, "kuvaaja": kuvaaja, "nosturi": nosturi, "esimerkki": esimerkki,
+FIGURES = {"hero": hero, "kokonaisvoima": kokonaisvoima, "kuvaaja": kuvaaja, "kuvaaja-ab": kuvaaja_ab, "nosturi": nosturi, "esimerkki": esimerkki,
            "valitse-a": valitse_a, "valitse-b": valitse_b, "valitse-c": valitse_c, "valitse-d": valitse_d, "malli-kirja": malli_kirja}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "kokonaisvoima": "reveals: the force diagrams of a box at rest and of a box pulled against friction, with the net force",
     "kuvaaja": "reveals: a against the net force for 0,50 kg and 1,0 kg (lines through the origin)",
+    "kuvaaja-ab": "safe: a against the net force for two carts A and B, masses not given (the student reads the slopes)",
     "nosturi": "reveals: the force diagrams of a crate on a crane's rope at rest, rising steadily, speeding up and slowing down",
     "esimerkki": "reveals: the force diagram of the worked example (crane lifting a concrete element, accelerating up)",
     "valitse-a": "reveals: the right diagram for a crate lowered and slowing down (T > G; an option figure)",
