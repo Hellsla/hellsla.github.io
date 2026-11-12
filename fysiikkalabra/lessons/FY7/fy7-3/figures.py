@@ -174,7 +174,7 @@ def wire_graph():
 def coil_dims():
     f = Fig("fy73-dims", 330, "Kaavakuva, ei mittakaavassa: käämi sivulta. Käämissä on N kierrosta kuparijohdinta pituudella l. "
             "Johtimen päistä kulkee virta I, joka on merkitty violetilla nuolella. Käämin sisällä vihreä nuoli osoittaa "
-            "akselin suuntaan; nuolen alkupään yläpuolella on merkintä B.")
+            "akselin suuntaan; sen merkintä B on käämin vasemmalla puolella nuolen kohdalla.")
     x0, x1, yc, rr = 120, 410, 150, 58
     xm = (x0 + x1) / 2
     f.rect(x0, yc - rr * 0.8, x1 - x0, rr * 1.6, GLASS, METAL_EDGE, 1.5)
@@ -184,7 +184,7 @@ def coil_dims():
         x = x0 + (i + 0.5) * st
         f.add(f'<line x1="{n(x + st * 0.3)}" y1="{yc - rr}" x2="{n(x - st * 0.3)}" y2="{yc + rr}" stroke="{COPPER}" stroke-width="2" stroke-opacity="0.45"/>')
     f.arrow(x0 + 30, yc, x1 - 30, yc, FIELD, 4, 18)
-    f.tex(x0 + 44, yc - 26, r"\overline{B}", "middle", FIELD, bg=True)
+    f.tex(x0 - 14, yc, r"\overline{B}", "end", FIELD)
     for i in range(turns):
         x = x0 + (i + 0.5) * st
         f.add(f'<line x1="{n(x - st * 0.3)}" y1="{yc - rr}" x2="{n(x + st * 0.3)}" y2="{yc + rr}" stroke="{COPPER}" stroke-width="4" stroke-linecap="round"/>')
