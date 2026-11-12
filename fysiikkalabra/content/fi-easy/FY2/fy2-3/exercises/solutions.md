@@ -206,22 +206,22 @@ Toisella kerralla $P_2 = 6{,}0\,\text{kWh} : 1{,}5\,\text{h} = 4{,}0\,\text{kW}$
 Teho on siis kaksinkertainen: $P_2 : P_1 = 4{,}0\,\text{kW} : 2{,}0\,\text{kW} = 2{,}0$. Kun aika puolittuu ja energia pysyy samana, teho kasvaa kaksinkertaiseksi. Teho ei puolitu, koska aika on jakajana eikä kertoimena. Teho ei myöskään pysy samana, koska teho kertoo muuntumisen vauhdin eikä vain energiaa. Teho ei nelinkertaistu, koska aika puolittui vain yhden kerran.
 
 ## fy2-3-L1-09
-**Annettu:** teho $P = 5{,}0\,\text{hp}$ ja aika $\Delta t = 30\,\text{min}$; taulukosta (MAFY-taulukko, yksikkömuunnoksia, teho, hevosvoima) $1\,\text{hp} = 735{,}5\,\text{W}$
+**Annettu:** teho $P = 5{,}0\,\text{hp}$ ja aika $\Delta t = 30\,\text{min}$. Taulukosta (MAFY-taulukko, yksikkömuunnoksia, teho, hevosvoima): $1\,\text{hp} = 735{,}5\,\text{W}$
 **Kysytty:** muuntunut energia $\Delta E$ megajouleina
-**Periaate:** Teho kertoo, kuinka paljon energiaa muuntuu sekunnissa. Kun teho on tasainen, muuntunut energia on teho kerrottuna ajalla. Teho ja aika on ensin muutettava SI-yksiköihin, watteihin ja sekunteihin.
+**Periaate:** Teho kertoo, kuinka paljon energiaa muuntuu sekunnissa. Kun teho on tasainen, energia on teho kerrottuna ajalla. Muuta ensin teho watteiksi ja aika sekunneiksi.
 **Kaava:** $P = \dfrac{\Delta E}{\Delta t}$, josta $\Delta E = P\,\Delta t$
 **Muunnokset:** $P = 5{,}0 \cdot 735{,}5\,\text{W} = 3677{,}5\,\text{W}$ ja $\Delta t = 30 \cdot 60\,\text{s} = 1800\,\text{s}$. Lopuksi $1\,\text{MJ} = 10^{6}\,\text{J}$.
 **Sijoitus:** $\Delta E = 3677{,}5\,\text{W} \cdot 1800\,\text{s} = 6\,619\,500\,\text{J} \approx 6{,}6\,\text{MJ}$
-**Vastaus:** Moottori muuntaa energiaa noin $6{,}6\,\text{MJ}$. Hevosvoiman arvo $735{,}5\,\text{W}$ on MAFY-taulukosta (yksikkömuunnoksia); eri taulukoiden arvot poikkeavat hieman toisistaan, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
-**Järkevyys:** Karkea arvio: $3{,}7\,\text{kW} \cdot 1800\,\text{s} \approx 6{,}7\,\text{MJ}$. Teho on noin $3{,}7\,\text{kW}$, vähän vedenkeittimen tehoa suurempi, ja puolessa tunnissa energiaa muuntuu noin $1{,}8\,\text{kWh}$, mikä on järkevä määrä.
+**Vastaus:** Moottori muuntaa energiaa noin $6{,}6\,\text{MJ}$. Hevosvoiman arvo $735{,}5\,\text{W}$ on MAFY-taulukosta (yksikkömuunnoksia). Eri taulukoiden arvot poikkeavat vähän toisistaan. Vastaus hyväksytään, kun se on noin $\pm 4\,\%$ sisällä.
+**Järkevyys:** Tee karkea arvio: $3{,}7\,\text{kW} \cdot 1800\,\text{s} \approx 6{,}7\,\text{MJ}$. Teho on noin $3{,}7\,\text{kW}$. Se on vähän suurempi kuin vedenkeittimen teho. Puolessa tunnissa energiaa muuntuu noin $1{,}8\,\text{kWh}$. Se on järkevä määrä.
 
 ## fy2-3-L1-10
-**Annettu:** kuvaajasta luetut pisteet loivemmalta suoralta B: $(0\,\text{s};\ 0\,\text{kJ})$ ja $(80\,\text{s};\ 40\,\text{kJ})$
+**Annettu:** pisteet, jotka on luettu loivemmalta suoralta B: $(0\,\text{s};\ 0\,\text{kJ})$ ja $(80\,\text{s};\ 40\,\text{kJ})$
 **Kysytty:** laitteen B teho $P$ watteina
-**Periaate:** Kun laite muuntaa energiaa tasaisesti, energia-aikakuvaajan suoran kulmakerroin on laitteen teho: teho on muuntunut energia jaettuna ajalla.
-**Kuvaajan lukeminen:** Loivempi suora on B. Se alkaa origosta ja kulkee pisteen $(80\,\text{s};\ 40\,\text{kJ})$ kautta. Piste on ruudukon leikkauskohdassa, joten arvot voi lukea tarkasti.
+**Periaate:** Laite muuntaa energiaa tasaisesti. Silloin suoran jyrkkyys energia-aikakuvaajassa on laitteen teho. Teho on muuntunut energia jaettuna ajalla.
+**Kuvaajan lukeminen:** Loivempi suora on B. Se alkaa origosta ja kulkee pisteen $(80\,\text{s};\ 40\,\text{kJ})$ kautta. Piste on ruudukon viivojen risteyksessä. Arvot voi siis lukea tarkasti.
 **Kaava:** $P = \dfrac{\Delta E}{\Delta t}$
 **Muunnokset:** $\Delta E = 40\,\text{kJ} = 40 \cdot 1000\,\text{J} = 40\,000\,\text{J}$.
 **Sijoitus:** $P = \dfrac{40\,000\,\text{J}}{80\,\text{s}} = 500\,\text{W}$
-**Vastaus:** Laitteen B teho on $500\,\text{W}$ eli $0{,}50\,\text{kW}$.
-**Järkevyys:** Toisen pisteen $(40\,\text{s};\ 20\,\text{kJ})$ antama teho on $20\,000\,\text{J} : 40\,\text{s} = 500\,\text{W}$, sama. Laite A nousee jyrkemmin, ja sen teho on suurempi, joten B:n pienempi teho sopii kuvaajaan.
+**Vastaus:** Laitteen B teho on $500\,\text{W}$. Se on $0{,}50\,\text{kW}$.
+**Järkevyys:** Toinen piste $(40\,\text{s};\ 20\,\text{kJ})$ antaa saman tehon: $20\,000\,\text{J} : 40\,\text{s} = 500\,\text{W}$. Laite A nousee jyrkemmin. Sen teho on suurempi. Siksi B:n pienempi teho sopii kuvaajaan.

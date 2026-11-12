@@ -128,7 +128,7 @@
     {
       "id": "fy2-2-L1-10",
       "level": 1,
-      "text": "Suklaapatukan pakkauksessa lukee, että patukan energiasisältö on $180\\,\\text{kcal}$. Energiaa ilmoitetaan joskus kaloreina ($\\text{cal}$), vaikka SI-yksikkö on joule. Hae kalorin ($1\\,\\text{cal}$) muunnos jouleiksi MAFY-taulukosta (mafytaulukot.fi). Kuinka paljon energiaa patukka sisältää kilojouleina?",
+      "text": "Suklaapatukan pakkauksessa lukee: energiaa $180\\,\\text{kcal}$. Kcal tarkoittaa kilokaloria. Kalori ($\\text{cal}$) on vanha energian yksikkö. SI-yksikkö on joule. Hae kalorin ($1\\,\\text{cal}$) muunnos jouleiksi MAFY-taulukosta (mafytaulukot.fi). Kuinka paljon energiaa patukka sisältää? Anna vastaus kilojouleina.",
       "lookup": "MAFY",
       "answer": 753.6,
       "unit": "kJ",
@@ -140,7 +140,7 @@
     {
       "id": "fy2-2-L1-11",
       "level": 1,
-      "text": "Kuvan kymmenpotenssiasteikolle on merkitty kolmen asian energian suuruusluokka, ja jokainen pieni väli on kymmenkertainen. Lue kuvasta, kuinka paljon energiaa teeveden kiehauttaminen vaatii. Anna vastaus kilojouleina.",
+      "text": "Kuvassa on kymmenpotenssiasteikko. Siihen on merkitty kolmen asian energian suuruusluokka. Jokainen pieni väli on kymmenkertainen. Lue kuvasta, kuinka paljon energiaa teeveden kiehauttaminen vaatii. Anna vastaus kilojouleina.",
       "figure": "fy2-2/tikapuut-kohteet",
       "answer": 100,
       "unit": "kJ",

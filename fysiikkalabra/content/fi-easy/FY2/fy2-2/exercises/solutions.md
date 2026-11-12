@@ -206,22 +206,22 @@
 **Järkevyys:** Vaje on vain noin $10\,\%$ päivän energiasta. Vähän alle kilon laihtuminen kuukaudessa on siis uskottava. Tee arvio: $30 \cdot 1 : 37 \approx 0{,}8$. Viiden prosentin toleranssi kattaa vajeen $1{,}10\,\text{MJ}$ pyöristyksen.
 
 ## fy2-2-L1-10
-**Annettu:** energia $E = 180\,\text{kcal}$; taulukosta (MAFY-taulukko, yksikkömuunnoksia, energia/työ, kalori) $1\,\text{cal} = 4{,}1868\,\text{J}$
+**Annettu:** energia $E = 180\,\text{kcal}$. Taulukosta (MAFY-taulukko, yksikkömuunnoksia, energia/työ, kalori): $1\,\text{cal} = 4{,}1868\,\text{J}$
 **Kysytty:** energia $E$ kilojouleina
-**Periaate:** Kalori on vanha energian yksikkö, ja sen suuruus jouleina on sovittu. Energia muutetaan kaloreista jouleiksi kertomalla kalorien lukumäärä yhden kalorin energialla. Kilokalori on tuhat kaloria.
+**Periaate:** Kalori on vanha energian yksikkö. Sen suuruus jouleina on sovittu. Kerro kalorien lukumäärä yhden kalorin energialla. Silloin saat joulet. Kilokalori on tuhat kaloria.
 **Kaava:** $E = N \cdot 4{,}1868\,\text{J}$, missä $N$ on kalorien lukumäärä
-**Muunnokset:** $180\,\text{kcal} = 180 \cdot 1000\,\text{cal} = 180\,000\,\text{cal}$ ja lopuksi $\text{J} \to \text{kJ}$: $1\,\text{kJ} = 1000\,\text{J}$.
+**Muunnokset:** $180\,\text{kcal} = 180 \cdot 1000\,\text{cal} = 180\,000\,\text{cal}$. Lopuksi $\text{J} \to \text{kJ}$: $1\,\text{kJ} = 1000\,\text{J}$.
 **Sijoitus:** $E = 180\,000 \cdot 4{,}1868\,\text{J} = 753\,624\,\text{J} = 753{,}624\,\text{kJ} \approx 754\,\text{kJ}$
-**Vastaus:** Patukka sisältää energiaa noin $754\,\text{kJ}$ eli noin $0{,}75\,\text{MJ}$. Kalorin arvo $4{,}1868\,\text{J}$ on MAFY-taulukosta (yksikkömuunnoksia); eri taulukoiden arvot poikkeavat hieman toisistaan, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
-**Järkevyys:** Yksi kilokalori on noin $4{,}2\,\text{kJ}$, joten $180 \cdot 4{,}2\,\text{kJ} \approx 756\,\text{kJ}$. Joulut ovat pieniä, joten kilojoulelukema on noin nelinkertainen kilokalorilukemaan verrattuna.
+**Vastaus:** Patukka sisältää energiaa noin $754\,\text{kJ}$. Se on noin $0{,}75\,\text{MJ}$. Kalorin arvo $4{,}1868\,\text{J}$ on MAFY-taulukosta (yksikkömuunnoksia). Eri taulukoiden arvot poikkeavat vähän toisistaan. Vastaus hyväksytään, kun se on noin $\pm 4\,\%$ sisällä.
+**Järkevyys:** Yksi kilokalori on noin $4{,}2\,\text{kJ}$. Siis $180 \cdot 4{,}2\,\text{kJ} \approx 756\,\text{kJ}$. Joulut ovat pieniä. Siksi kilojoulelukema on noin nelinkertainen kilokalorilukemaan verrattuna.
 
 ## fy2-2-L1-11
-**Annettu:** kuvasta luettu teeveden kiehautuksen piste asteikolla; asteikon kohdat $1\,\text{J}$, $1\,\text{kJ}$, $1\,\text{MJ}$, $1\,\text{GJ}$ ja $1\,\text{TJ}$
+**Annettu:** kuvasta luettu teeveden kiehautuksen piste asteikolla. Asteikon kohdat ovat $1\,\text{J}$, $1\,\text{kJ}$, $1\,\text{MJ}$, $1\,\text{GJ}$ ja $1\,\text{TJ}$
 **Kysytty:** teeveden kiehauttamisen energia $E$ kilojouleina
-**Periaate:** Kymmenpotenssiasteikolla jokainen pieni väli on kymmenkertainen, joten energia saadaan kertomalla lähtökohdan arvo kymmenellä aina yhden välin verran.
+**Periaate:** Asteikolla jokainen pieni väli on kymmenkertainen. Kerro lähtöarvo kymmenellä aina yhden välin verran.
 **Kuvaajan lukeminen:** Teeveden piste on kaksi pientä väliä kohdan $1\,\text{kJ}$ oikealla puolella. Ensimmäinen väli kymmenkertaistaa arvon: $10\,\text{kJ}$. Toinen väli kymmenkertaistaa sen uudelleen: $100\,\text{kJ}$.
 **Kaava:** $E = 1\,\text{kJ} \cdot 10 \cdot 10$
-**Muunnokset:** Luettu arvo on suoraan kilojouleina, joten muunnoksia ei tarvita. Tarkistus jouleina: $100\,\text{kJ} = 100 \cdot 1000\,\text{J} = 10^{5}\,\text{J}$.
+**Muunnokset:** Luettu arvo on jo kilojouleina. Muunnoksia ei tarvita. Tarkistus jouleina: $100\,\text{kJ} = 100 \cdot 1000\,\text{J} = 10^{5}\,\text{J}$.
 **Sijoitus:** $E = 1\,\text{kJ} \cdot 10 \cdot 10 = 100\,\text{kJ}$
 **Vastaus:** Teeveden kiehauttaminen vaatii noin $100\,\text{kJ}$. Tulos on suuruusluokka, koska kuvan energiat ovat suuruusluokkia.
-**Järkevyys:** Kodin vedenkeitin, jonka teho on $2\,\text{kW}$, muuntaa sähköä $2\,\text{kJ}$ sekunnissa, joten $100\,\text{kJ}$ vaatii noin minuutin. Se sopii kupillisen kiehautukseen.
+**Järkevyys:** Kodin vedenkeitin muuntaa sähköä $2\,\text{kJ}$ sekunnissa, kun sen teho on $2\,\text{kW}$. Silloin $100\,\text{kJ}$ kestää noin minuutin. Se sopii kupillisen kiehautukseen.
