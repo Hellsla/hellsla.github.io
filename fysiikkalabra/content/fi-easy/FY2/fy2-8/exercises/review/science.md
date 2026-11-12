@@ -1,21 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 753ff998604d8f0a
-Mode: delta (new task fy2-8-L2-08 only)
-Round: 2
+CONTENT-HASH: 5adb89f5eac07ee8
+SCOPE: delta added-exercise from 753ff998604d8f0a base 611fb7d5c174
 
 ## Blocking
-- none
-
-## Fixed
-- exercises.json L2-08 stem: the added sentence defined life-cycle emission as emission over the plant's whole lifetime, which contradicts "vuosittainen" and the Finnish; now "Elinkaaripäästö sisältää kaikki päästöt polttoaineen hankinnasta sähköntuotantoon asti."
+(none)
 
 ## Polish
-- none
+- exercises.json fy2-8-L2-09 — the S2 version adds a definition that the Finnish lacks: "Elinkaaren päästö tarkoittaa kaikkia päästöjä rakentamisesta polttoon asti". The same set defines it in L2-08 as "polttoaineen hankinnasta sähköntuotantoon asti". A life-cycle factor also includes fuel extraction and decommissioning. — Fix: use one wording in both tasks, e.g. "kaikki päästöt voimalan rakentamisesta ja polttoaineen hankinnasta sähköntuotantoon ja purkamiseen asti".
 
 ## Checked
-- fy2-8-L2-08 (exercises.json and solutions.md) against the reviewed Finnish: same table (5 rows, E and m), uncertainty 10 kt, correct option (2020 to 2024, 100 kt = 10 x 10 kt), exactly one correct flag, same five choices in the same order, tolerance and kinds equal.
-- Recomputed: 520 - 420 = 100 kt; 520 - 515 = 5 kt < 10 kt; intervals 510-530 and 410-430 kt do not overlap (2020/2021 intervals 510-530 and 505-525 do); slope -25 kt/a x 10 a from 420 gives 170 kt for 2034; 1000 GWh in both years sits in column E.
-- Each distractor still has one error and feedback that names it (wrong uncertainty comparison, unsupported cause, extrapolation, wrong column); no feedback gives a false number.
-- Solutions section keeps Find / Principle / Model answer as in fi; numbers equal.
-- NOTES.md §12: short sentences, one idea each, same terms as fi (epävarmuus, epävarmuusväli); the added sentence "Aineisto tukee päätelmää, kun taulukon luvut riittävät sen perusteluksi" explains the stem without hinting the answer.
-- check_i18n.py: nothing for fy2-8; build.py fy2-8 succeeds.
+- Hash taken at the start and at the end with `--lang fi-easy`; it did not change.
+- fy2-8-L1-09: E = Hm = 47 MJ/kg × 2,0 kg = 94 MJ, and m = eE = 55 g/MJ × 94 MJ = 5170 g = 5,17 kg. My recomputation, answers.py and exercises.json agree. The answer is given to two significant figures, as the data allow. The check of about 2,6 kg CO₂ per kg of gas is consistent: pure methane gives 44/16 = 2,75. The cause given (the carbon in the fuel combines with oxygen) is right. The unnamed source of the emission factor is not reported (teacher's decision 2026-11-12).
+- fy2-8-L2-09: `fy2-8/emissions` prints 820 for coal and 490 for gas (g CO₂-ekv./kWh). (820 − 490) × 20 000 kWh = 6,6 × 10⁶ g = 6,6 t. The intermediate values (16,4 t and 9,8 t) are right. The solution forms Δm = (e₁ − e₂)E symbolically first. The 3 % tolerance fits.
+- Compared with the reviewed Finnish: answer, unit, tolerance, figure, lookup, level and every number in the task text and the solution are identical. The added explanations of "päästökerroin" and "elinkaaren päästö" keep the physics; see Polish.

@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: ce4d78b324133976
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: ff05584a8eb5bd9a
+SCOPE: delta added-exercise from ce4d78b324133976 base c7f5e91173b0
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- Diff `git diff origin/main...HEAD` of exercises/exercises.json, exercises/solutions.md (en); content hash recomputed and equal to the brief's.
-- L2-07: $(820-12)\,\text{g/kWh}\cdot2{,}0\cdot10^{9}\,\text{kWh} = 1{,}616\cdot10^{12}\,\text{g} = 1{,}6\cdot10^{6}\,\text{t}$ CO2-eq recomputed; check $1{,}64\cdot10^{6}\,\text{t}$, ratio $0{,}99$. L3-05 c: wording now "tonnes of CO2-equivalent"; numbers unchanged. CO2 vs CO2-eq now consistent between exercises.json and solutions.md (life-cycle factors are CO2-eq).
-- English changes match the fi source in substance (CO2 equivalent, internal energy vs heat, accounting assumption).
+- L1-10: E = Pt = 2.0 MJ/s x 3600 s = 7200 MJ, m = Pt/H = 720 kg (milled peat 10 MJ/kg); 'rate of release' correctly the fuel power, not electrical.
+- L2-08: 20.2 TWh (fy2-6/fi-bars, Statistics Finland 2024), 2024 a leap year 8784 h, P = 2.30 GW; capacity-factor estimate (~1/3) labelled as the chapter's model, order of magnitude of turbines sensible.
+- check script (one run): every added answer recomputed from the task text with my own formulas, equal to answers.py and exercises.json; answer, unit, tolerance, figure and lookup identical to the reviewed Finnish; every number of the task texts and solutions identical en/fi.
+- MAFY lookup values agree with docs/mafy-arvot.tsv (VERIFIED 2026-11-12).
+- No scope breach, no guardrail break (A or B) found.

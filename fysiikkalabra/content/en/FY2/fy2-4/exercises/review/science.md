@@ -1,19 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: eddb481aa99052bc
-Mode: full
-Round: 3
+CONTENT-HASH: 0742e66b95ebc481
+SCOPE: delta added-exercise from eddb481aa99052bc base 611fb7d5c174
 
 ## Blocking
 (none)
 
-## Fixed
-- none needed.
-
 ## Polish
-- none
+(none)
 
 ## Checked
-- L2-08 after the split of the formula chain: correct-option feedback now reads eta = E_a : E_o, then eta = 360 kJ : 600 kJ = 0.60, then 60 % (joined by 'that is'/'which is' or 'eli'); solutions.md Rivi/Line 2 split likewise. Same numbers, formulas and correct option as the reviewed Finnish.
-- Recomputed: E_o = 2500 W * 240 s = 600 kJ, E_h = 240 kJ, eta = 0.60, 240/600 = 0.40, 60 % + 40 % = 100 %.
-- check_i18n.py shows nothing for fy2-4; build.py fy2-4 succeeds. Hash taken at start and end: unchanged.
-- Physics unchanged: steady-power E = P t, conservation, eta <= 100 %.
+- L1-09: E_o = Hm = 40.6 x 2.5 = 101.5 MJ, eta = 80/101.5 = 78.8 %; E_o = Hm given in the task; eta < 100 %; losses with flue gases a right cause.
+- L2-09: fy2-4/grid arrows 8, 2, 6 squares; eta = 2/8 = 25 %; conservation check 2 + 6 = 8; figure's 'kinetic energy' label translated.
+- Efficiency of one device only (no chain): in scope.
+- check script (one run): every added answer recomputed from the task text with my own formulas, equal to answers.py and exercises.json; answer, unit, tolerance, figure and lookup identical to the reviewed Finnish; every number of the task texts and solutions identical en/fi.
+- MAFY lookup values agree with docs/mafy-arvot.tsv (VERIFIED 2026-11-12).
+- No scope breach, no guardrail break (A or B) found.
