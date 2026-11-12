@@ -56,8 +56,8 @@ def sidosenergia():
         ax.point(A, v, HEAT)
         f.tex(ax.X(A) + dx, ax.Y(v) + dy, tex, anc)
     # fusion: from the light nuclei up and right towards the peak; fission: from uranium up and left to the middle
-    f.block_arrow(ax.X(24), ax.Y(2.4), ax.X(56), ax.Y(6.4), GOOD_LIGHT, 14, 30, 22)
-    f.tex(ax.X(46), ax.Y(3.0), r"\text{fuusio}", "start", GOOD)
+    f.block_arrow(ax.X(24), ax.Y(2.4), ax.X(56), ax.Y(6.4), HEAT_LIGHT, 14, 30, 22)
+    f.tex(ax.X(46), ax.Y(3.0), r"\text{fuusio}", "start", HEAT)
     f.block_arrow(ax.X(226), ax.Y(5.4), ax.X(156), ax.Y(6.1), HEAT_LIGHT, 14, 30, 22)
     f.tex(ax.X(192), ax.Y(4.5), r"\text{fissio}", "middle", HEAT)
     return f.svg()

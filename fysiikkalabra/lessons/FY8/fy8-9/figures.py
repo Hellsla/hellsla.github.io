@@ -112,6 +112,9 @@ def hero():
                "hajoamattomia, osa harmaita renkaita eli jo hajonneita, ja kahdesta lähtee juuri säde. Vieressä on "
                "säteilymittari, jonka anturi osoittaa pulloa ja jonka viisari värähtää. Seinällä on kello.")
     H.tiles(f, 470, 75, RULE_LIGHT, PAPER)
+    f.rect(0, 470, 1200, 130, H.grad(f, "fy89h-floor", RULE_LIGHT, RULE, y1=470, y2=600))   # the floor under the table
+    f.add(f'<ellipse cx="95" cy="588" rx="30" ry="5" fill="{MUTED}" fill-opacity="0.3"/>')
+    f.add(f'<ellipse cx="1105" cy="588" rx="30" ry="5" fill="{MUTED}" fill-opacity="0.3"/>')
     H.wood(f, 40, 470, 1120, 40, "fy89h-table")
     f.rect(80, 510, 30, 76, IRON, INK, 3); f.rect(1090, 510, 30, 76, IRON, INK, 3)
     # wall clock (left)
