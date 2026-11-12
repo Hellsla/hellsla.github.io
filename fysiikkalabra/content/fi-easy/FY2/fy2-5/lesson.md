@@ -188,32 +188,31 @@ Taulukossa on yleisten polttoaineiden lämpöarvoja. Ne ovat tehollisia lämpöa
 Lähteet: polttopuu ($13\text{–}15\,\text{GJ/t}$, kosteus $20\text{–}25\,\%$) ja jyrsinturve ($9\text{–}11\,\text{GJ/t}$, kosteus $40\text{–}50\,\%$): Tilastokeskus, *Polttoaineluokitus, määritelmät* (2017). Maakaasu $48{,}0\,\text{MJ/kg}$: IPCC, *2006 Guidelines for National Greenhouse Gas Inventories*, osa 2, oletuslämpöarvojen taulukko (2006). Tyypillisiä arvoja: kivihiili (IPCC 2006: $25{,}8\,\text{MJ/kg}$), diesel (IPCC 2006: $43{,}0\,\text{MJ/kg}$), bensiini ($43\,\text{MJ/kg}$) ja puupelletti (julkaistu tyypillinen arvo). Puhtaan bensiinin IPCC 2006 -arvo on $44{,}3\,\text{MJ/kg}$. Suomalaisessa bensiinissä on kuitenkin etanolia, jonka lämpöarvo on pienempi. Arvot on pyöristetty.
 
 <svg data-fig="lampoarvot" viewBox="0 0 600 372" role="img" aria-label="Vaakapylväskaavio polttoaineiden lämpöarvoista yksikössä MJ/kg, pyöristettyjä arvoja: maakaasu 48, bensiini 43, diesel 43, kivihiili 26, puupelletti 17, polttopuu (ilmakuiva) 15 ja turve 10. Pylväiden pituudet ovat mittakaavassa. Maakaasun pylväs on noin viisi kertaa turpeen pylvään pituinen." style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy25-heat" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient><linearGradient id="fy25-heatv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
   <foreignObject x="150" y="9.5" width="190" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$H\ \left(\text{MJ/kg}\right)$</div></foreignObject>
   <line x1="224" y1="48" x2="224" y2="320" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="292" y1="48" x2="292" y2="320" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="360" y1="48" x2="360" y2="320" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="428" y1="48" x2="428" y2="320" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="496" y1="48" x2="496" y2="320" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <rect x="156" y="52" width="326.5" height="26" rx="3" fill="url(#fy25-heat)" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="156" y="52" width="326.5" height="26" rx="3" fill="#ffc078" stroke="#e8590c" stroke-width="1.5"/>
   <foreignObject x="4" y="50.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{maakaasu}$</div></foreignObject>
   <foreignObject x="492.5" y="50.5" width="44" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$48$</div></foreignObject>
-  <rect x="156" y="90" width="292.5" height="26" rx="3" fill="url(#fy25-heat)" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="156" y="90" width="292.5" height="26" rx="3" fill="#ffc078" stroke="#e8590c" stroke-width="1.5"/>
   <foreignObject x="4" y="88.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{bensiini}$</div></foreignObject>
   <foreignObject x="458.5" y="88.5" width="44" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$43$</div></foreignObject>
-  <rect x="156" y="128" width="292.5" height="26" rx="3" fill="url(#fy25-heat)" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="156" y="128" width="292.5" height="26" rx="3" fill="#ffc078" stroke="#e8590c" stroke-width="1.5"/>
   <foreignObject x="4" y="126.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{diesel}$</div></foreignObject>
   <foreignObject x="458.5" y="126.5" width="44" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$43$</div></foreignObject>
-  <rect x="156" y="166" width="177" height="26" rx="3" fill="url(#fy25-heat)" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="156" y="166" width="177" height="26" rx="3" fill="#ffc078" stroke="#e8590c" stroke-width="1.5"/>
   <foreignObject x="4" y="164.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{kivihiili}$</div></foreignObject>
   <foreignObject x="343" y="164.5" width="44" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$26$</div></foreignObject>
-  <rect x="156" y="204" width="115.5" height="26" rx="3" fill="url(#fy25-heat)" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="156" y="204" width="115.5" height="26" rx="3" fill="#ffc078" stroke="#e8590c" stroke-width="1.5"/>
   <foreignObject x="4" y="202.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{puupelletti}$</div></foreignObject>
   <foreignObject x="281.5" y="202.5" width="44" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$17$</div></foreignObject>
-  <rect x="156" y="242" width="102" height="26" rx="3" fill="url(#fy25-heat)" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="156" y="242" width="102" height="26" rx="3" fill="#ffc078" stroke="#e8590c" stroke-width="1.5"/>
   <foreignObject x="4" y="240.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{polttopuu}$</div></foreignObject>
   <foreignObject x="268" y="240.5" width="44" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$15$</div></foreignObject>
-  <rect x="156" y="280" width="68" height="26" rx="3" fill="url(#fy25-heat)" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="156" y="280" width="68" height="26" rx="3" fill="#ffc078" stroke="#e8590c" stroke-width="1.5"/>
   <foreignObject x="4" y="278.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{turve}$</div></foreignObject>
   <foreignObject x="234" y="278.5" width="44" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$10$</div></foreignObject>
   <line x1="156" y1="320" x2="514" y2="320" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>

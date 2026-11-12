@@ -116,31 +116,61 @@ def tikapuut():
     for k, lab in ((0, r"1\,\text{J}"), (3, r"1\,\text{kJ}"), (6, r"1\,\text{MJ}"), (9, r"1\,\text{GJ}"), (12, r"1\,\text{TJ}")):
         f.tex(X(k), y0 + 30, lab, "middle", w=90)
     f.tex(300, 354, r"\text{jokainen väli on 10-kertainen}", "middle", MUTED, w=340)
-    items = [(0, 252, r"\text{omena metrin ylös}\ 1\,\text{J}", "start", 240), (3, 214, r"\text{tulitikku}\ 1\,\text{kJ}", "end", 190),
-             (7, 176, r"\text{päivän ruoka}\ 10\,\text{MJ}", "end", 260), (9.2, 138, r"\text{bensiinitankki}\ 1{,}6\,\text{GJ}", "end", 300),
-             (14.14, 100, r"\text{Olkiluoto 3, vrk}\ 140\,\text{TJ}", "end", 340)]
-    for k, y, lab, anc, wd in items:
-        f.line(X(k), y + 12, X(k), y0, MUTED, 1.5, "5 4")
+    # each label in two lines (name, value) in its own row: a leader never crosses a label (teacher 2026-11-11,
+    # illustration audit); omena and Olkiluoto share the top row, the rows step down from there
+    items = [(0, 0, r"\text{omena metrin ylös}", r"1\,\text{J}", "start", 234), (14.14, 0, r"\text{Olkiluoto 3, vrk}", r"140\,\text{TJ}", "end", 208),
+             (9.2, 1, r"\text{bensiinitankki}", r"1{,}6\,\text{GJ}", "end", 220), (7, 2, r"\text{päivän ruoka}", r"10\,\text{MJ}", "end", 200),
+             (3, 3, r"\text{tulitikku}", r"1\,\text{kJ}", "start", 150)]
+    for k, row, name, val, anc, wd in items:
+        y = 42 + 62 * row
+        f.line(X(k), y - 12, X(k), y0, MUTED, 1.5, "5 4")
         f.circle(X(k), y0, 7, HEAT, WHITE, 2)
-        f.tex(X(k) + (10 if anc == "start" else -10), y, lab, anc, w=wd)
+        off = 10 if anc == "start" else -10
+        f.tex(X(k) + off, y, name, anc, w=wd)
+        f.tex(X(k) + off, y + 28, val, anc, w=110)
     return f.svg()
 
 
+def lamp_grad(f, gid, x0, x1, c0, c1):
+    """A horizontal gradient along the flow (a copy of fy2-4's grad, the energy-flow model)."""
+    f.defs_add(f'<linearGradient id="{gid}" gradientUnits="userSpaceOnUse" x1="{x0}" y1="0" x2="{x1}" y2="0">'
+               f'<stop offset="0" stop-color="{c0}"/><stop offset="1" stop-color="{c1}"/></linearGradient>')
+    return f"url(#{gid})"
+
+
+def lamp_flow(f, tag, x0, ytop, H, eta, xs, xend, yloss):
+    """The three arrows of an energy-flow diagram drawn as fy2-4/lamp (a copy of its flow, without the device box):
+    grey input of thickness H from x0 to the split at xs, green useful arrow (eta * H) on the top edge to xend, orange
+    loss arrow ((1 - eta) * H) bending down so that its top edge is at yloss."""
+    Ta, Th = H * eta, H * (1 - eta)
+    tip = xend + 30
+    gi = lamp_grad(f, f"{tag}-in", x0, xs, RULE_LIGHT, RULE)
+    go = lamp_grad(f, f"{tag}-ok", xs, tip, GOOD_LIGHT, GOOD)
+    gl = lamp_grad(f, f"{tag}-loss", xs, tip, HEAT_LIGHT, HEAT)
+    e = 8
+    f.path(f"M{x0},{ytop} L{xs},{ytop} L{xs},{ytop + H} L{x0},{ytop + H} Z", fill=gi, stroke=INK, w=2)
+    f.path(f"M{xs},{ytop} L{xend},{ytop} L{xend},{ytop - e} L{tip},{n(ytop + Ta / 2)} L{xend},{n(ytop + Ta + e)} L{xend},{n(ytop + Ta)} L{xs},{n(ytop + Ta)} Z",
+           fill=go, stroke=INK, w=2)
+    cx = xs + 90
+    f.path(f"M{xs},{n(ytop + Ta)} C{cx},{n(ytop + Ta)} {xs + 30},{yloss} {cx + 40},{yloss} L{xend},{yloss} L{xend},{yloss - e} L{tip},{n(yloss + Th / 2)} "
+           f"L{xend},{n(yloss + Th + e)} L{xend},{n(yloss + Th)} L{cx + 40},{n(yloss + Th)} C{xs + 30},{n(yloss + Th)} {cx},{ytop + H} {xs},{ytop + H} Z",
+           fill=gl, stroke=INK, w=2)
+
+
 def sailyminen():
+    """Redrawn in the energy-flow style of fy2-4/lamp (teacher 2026-11-11, illustration audit group C): grey input,
+    green useful energy, orange heat; the widths stay to scale (0,12 px per kJ)."""
     f = Fig("fy22-sailyminen", 350, "Kaavakuva mittakaavassa (esimerkki): pyöräilijän aamupuuron kemiallisesta energiasta 800 kJ lihakset muuttavat "
             "liikkeeksi 200 kJ ja lämpöenergiaksi 600 kJ. Nuolten leveys on verrannollinen energiaan, ja haarojen yhteinen leveys on yhtä suuri kuin alkuperäisen nuolen leveys.")
     k = 0.12   # px per kJ
-    hin, hm, hl = 800 * k, 200 * k, 600 * k
-    top = 112
-    f.rect(40, top, 192, hin, HEAT_LIGHT, HEAT, 2)
-    f.path(f"M232,{n(top)} L400,{n(top)} L400,{n(top - 14)} L452,{n(top + hm / 2)} L400,{n(top + hm + 14)} L400,{n(top + hm)} L232,{n(top + hm)} Z", fill=HEAT_LIGHT, stroke=HEAT, w=2)
-    xr = 232 + hl
-    f.path(f"M232,{n(top + hm)} L{n(xr)},{n(top + hm)} L{n(xr)},262 L{n(xr + 22)},262 L{n((232 + xr) / 2)},302 L{n(232 - 22)},262 L232,262 Z", fill=HOT_LIGHT, stroke=HOT, w=2)
+    hin = 800 * k
+    top, xs, xend, yloss = 100, 232, 500, 190
+    lamp_flow(f, "fy22s", 40, top, hin, 200 / 800, xs, xend, yloss)
     f.tex(300, 38, r"800\,\text{kJ} = 200\,\text{kJ} + 600\,\text{kJ}", "middle", w=400)
-    f.tex(52, 144, r"\text{kemiallinen}", "start", w=170)
-    f.tex(52, 182, r"800\,\text{kJ}", "start", w=140)
-    f.tex(244, 78, r"\text{liike: }200\,\text{kJ}", "start", w=220)
-    f.tex(xr + 36, 232, r"\text{lämpö: }600\,\text{kJ}", "start", w=220)
+    f.tex(52, 132, r"\text{kemiallinen}", "start", w=170)
+    f.tex(52, 168, r"800\,\text{kJ}", "start", w=140)
+    f.tex(400, 74, r"\text{liike: }200\,\text{kJ}", "middle", GOOD, w=220)
+    f.tex(400, 296, r"\text{lämpö: }600\,\text{kJ}", "middle", w=220)
     f.tex(300, 332, r"\text{nuolen leveys kuvaa energian määrää}", "middle", MUTED, w=460)
     return f.svg()
 

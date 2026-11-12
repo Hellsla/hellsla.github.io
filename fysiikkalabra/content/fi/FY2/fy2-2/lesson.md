@@ -418,14 +418,15 @@ Pyöräilijän ketju alkaa Auringosta. Säteilyenergia sitoutuu kasvissa kemiall
 Joka vaiheessa osa energiasta muuttuu lämpöenergiaksi, joka siirtyy lämpönä ympäristöön ja hajaantuu. Energiaa ei silti katoa: kuten luvussa *Energialajit ja energian säilyminen* todettiin, ketjun alussa ja lopussa sitä on yhtä paljon. Kuvan esimerkissä puuron $800\,\text{kJ}$ jakautuu liikkeeksi ja lämpöenergiaksi, ja osat ovat yhteensä yhtä paljon kuin alussa. Lämpöenergia hajaantuu niin laajalle, ettei sitä ole enää helppo käyttää hyödyksi, ja siksi energia tuntuu "kuluvan loppuun".
 
 <svg data-fig="sailyminen" viewBox="0 0 600 350" role="img" aria-label="Kaavakuva mittakaavassa (esimerkki): pyöräilijän aamupuuron kemiallisesta energiasta 800 kJ lihakset muuttavat liikkeeksi 200 kJ ja lämpöenergiaksi 600 kJ. Nuolten leveys on verrannollinen energiaan, ja haarojen yhteinen leveys on yhtä suuri kuin alkuperäisen nuolen leveys." style="max-width:100%;font-size:24px">
-  <rect x="40" y="112" width="192" height="96" fill="#ffc078" stroke="#e8590c" stroke-width="2"/>
-  <path d="M232,112 L400,112 L400,98 L452,124 L400,150 L400,136 L232,136 Z" fill="#ffc078" stroke="#e8590c" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M232,136 L304,136 L304,262 L326,262 L268,302 L210,262 L232,262 Z" fill="#f2a69c" stroke="#c92a2a" stroke-width="2" stroke-linejoin="round"/>
+  <defs><linearGradient id="fy22s-in" gradientUnits="userSpaceOnUse" x1="40" y1="0" x2="232" y2="0"><stop offset="0" stop-color="#e3dccb"/><stop offset="1" stop-color="#c9c2b2"/></linearGradient><linearGradient id="fy22s-ok" gradientUnits="userSpaceOnUse" x1="232" y1="0" x2="530" y2="0"><stop offset="0" stop-color="#b2f2bb"/><stop offset="1" stop-color="#2b8a3e"/></linearGradient><linearGradient id="fy22s-loss" gradientUnits="userSpaceOnUse" x1="232" y1="0" x2="530" y2="0"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
+  <path d="M40,100 L232,100 L232,196.0 L40,196.0 Z" fill="url(#fy22s-in)" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M232,100 L500,100 L500,92 L530,112 L500,132 L500,124 L232,124 Z" fill="url(#fy22s-ok)" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M232,124 C322,124 262,190 362,190 L500,190 L500,182 L530,226 L500,270 L500,262 L362,262 C262,262 322,196.0 232,196.0 Z" fill="url(#fy22s-loss)" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
   <foreignObject x="100" y="23.5" width="400" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$800\,\text{kJ} = 200\,\text{kJ} + 600\,\text{kJ}$</div></foreignObject>
-  <foreignObject x="52" y="129.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{kemiallinen}$</div></foreignObject>
-  <foreignObject x="52" y="167.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$800\,\text{kJ}$</div></foreignObject>
-  <foreignObject x="244" y="63.5" width="220" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{liike: }200\,\text{kJ}$</div></foreignObject>
-  <foreignObject x="340" y="217.5" width="220" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{lämpö: }600\,\text{kJ}$</div></foreignObject>
+  <foreignObject x="52" y="117.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{kemiallinen}$</div></foreignObject>
+  <foreignObject x="52" y="153.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$800\,\text{kJ}$</div></foreignObject>
+  <foreignObject x="290" y="59.5" width="220" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#2b8a3e">$\text{liike: }200\,\text{kJ}$</div></foreignObject>
+  <foreignObject x="290" y="281.5" width="220" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{lämpö: }600\,\text{kJ}$</div></foreignObject>
   <foreignObject x="70" y="317.5" width="460" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{nuolen leveys kuvaa energian määrää}$</div></foreignObject>
 </svg>
 
@@ -474,21 +475,26 @@ Arjen energioiden suuruusluokat on koottu kuvaan, jossa jokainen väli on kymmen
   <foreignObject x="350" y="307.5" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$1\,\text{GJ}$</div></foreignObject>
   <foreignObject x="449.5" y="307.5" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$1\,\text{TJ}$</div></foreignObject>
   <foreignObject x="130" y="339.5" width="340" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{jokainen väli on 10-kertainen}$</div></foreignObject>
-  <line x1="96" y1="264" x2="96" y2="292" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
+  <line x1="96" y1="30" x2="96" y2="292" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
   <circle cx="96" cy="292" r="7" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="106" y="237.5" width="240" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{omena metrin ylös}\ 1\,\text{J}$</div></foreignObject>
-  <line x1="195.5" y1="226" x2="195.5" y2="292" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
-  <circle cx="195.5" cy="292" r="7" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="-4.5" y="199.5" width="190" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{tulitikku}\ 1\,\text{kJ}$</div></foreignObject>
-  <line x1="328.5" y1="188" x2="328.5" y2="292" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
-  <circle cx="328.5" cy="292" r="7" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="58.5" y="161.5" width="260" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{päivän ruoka}\ 10\,\text{MJ}$</div></foreignObject>
-  <line x1="401.5" y1="150" x2="401.5" y2="292" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
-  <circle cx="401.5" cy="292" r="7" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="91.5" y="123.5" width="300" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{bensiinitankki}\ 1{,}6\,\text{GJ}$</div></foreignObject>
-  <line x1="565.5" y1="112" x2="565.5" y2="292" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
+  <foreignObject x="106" y="27.5" width="234" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{omena metrin ylös}$</div></foreignObject>
+  <foreignObject x="106" y="55.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$1\,\text{J}$</div></foreignObject>
+  <line x1="565.5" y1="30" x2="565.5" y2="292" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
   <circle cx="565.5" cy="292" r="7" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="215.5" y="85.5" width="340" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{Olkiluoto 3, vrk}\ 140\,\text{TJ}$</div></foreignObject>
+  <foreignObject x="347.5" y="27.5" width="208" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{Olkiluoto 3, vrk}$</div></foreignObject>
+  <foreignObject x="445.5" y="55.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$140\,\text{TJ}$</div></foreignObject>
+  <line x1="401.5" y1="92" x2="401.5" y2="292" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
+  <circle cx="401.5" cy="292" r="7" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <foreignObject x="171.5" y="89.5" width="220" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{bensiinitankki}$</div></foreignObject>
+  <foreignObject x="281.5" y="117.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$1{,}6\,\text{GJ}$</div></foreignObject>
+  <line x1="328.5" y1="154" x2="328.5" y2="292" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
+  <circle cx="328.5" cy="292" r="7" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <foreignObject x="118.5" y="151.5" width="200" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{päivän ruoka}$</div></foreignObject>
+  <foreignObject x="208.5" y="179.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$10\,\text{MJ}$</div></foreignObject>
+  <line x1="195.5" y1="216" x2="195.5" y2="292" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
+  <circle cx="195.5" cy="292" r="7" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <foreignObject x="205.5" y="213.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{tulitikku}$</div></foreignObject>
+  <foreignObject x="205.5" y="241.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$1\,\text{kJ}$</div></foreignObject>
 </svg>
 
 Energian määrä ei vielä kerro, kuinka nopeasti energiaa käytetään. Sitä kuvataan seuraavassa luvussa *Teho*.

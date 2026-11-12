@@ -59,13 +59,12 @@ def bars():
     f = Fig("fy23-bars", 330, "Kuvaaja mittakaavassa: vaakapylväät näyttävät, kuinka paljon energiaa laite muuntaa yhdessä sekunnissa. "
             "Vedenkeitin, jonka teho on 2000 W, muuntaa 2000 J, tosteri 1000 W 1000 J ja televisio 80 W vain 80 J. "
             "Pylvään pituus on suoraan verrannollinen tehoon.")
-    f.defs_add(f'<linearGradient id="fy23-heat" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{HEAT_LIGHT}"/><stop offset="1" stop-color="{HEAT}"/></linearGradient>')
     f.tex(300, 26, r"\text{energiaa muuntuu yhdessä sekunnissa}", "middle")
     scale = 0.2
     for i, (name, p) in enumerate((("vedenkeitin", 2000), ("tosteri", 1000), ("televisio", 80))):
         y = 90 + i * 84
         f.tex(30, y, rf"\text{{{name}}},\ P = {p}\,\text{{W}}", "start")
-        f.rect(30, y + 18, p * scale, 32, "url(#fy23-heat)", INK, 2)
+        f.rect(30, y + 18, p * scale, 32, HEAT_LIGHT, HEAT, 1.5, 3)   # one flat colour, as fy2-6/fi-bars (teacher 2026-11-11)
         f.tex(30 + p * scale + 12, y + 34, rf"{p}\,\text{{J}}", "start")
     f.line(30, 306, 570, 306, "#c9c2b2", 1.5, "6 5")
     return f.svg()

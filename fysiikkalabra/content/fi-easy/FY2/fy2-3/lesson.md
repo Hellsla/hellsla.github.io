@@ -109,16 +109,15 @@ Kun laite muuntaa energiaa, on kaksi tärkeää asiaa: kuinka paljon energiaa mu
 Sitä, kuinka nopeasti energiaa muuntuu tai siirtyy, kutsutaan **tehoksi**. Teho on energia aikayksikköä kohti. Jos laite muuntaa joka sekunti $2000\,\text{J}$, sen teho on $2000\,\text{J/s} = 2000\,\text{W}$.
 
 <svg data-fig="bars" viewBox="0 0 600 330" role="img" aria-label="Kuvaaja mittakaavassa. Vaakapylväät näyttävät, kuinka paljon energiaa laite muuntaa yhdessä sekunnissa. Vedenkeittimen teho on 2000 W, ja se muuntaa 2000 J. Tosterin teho on 1000 W, ja se muuntaa 1000 J. Television teho on 80 W, ja se muuntaa vain 80 J. Pylvään pituus on suoraan verrannollinen tehoon." style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy23-heat" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
   <foreignObject x="96.5" y="11.5" width="407" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{energiaa muuntuu yhdessä sekunnissa}$</div></foreignObject>
   <foreignObject x="30" y="75.5" width="261" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{vedenkeitin},\ P = 2000\,\text{W}$</div></foreignObject>
-  <rect x="30" y="108" width="400" height="32" fill="url(#fy23-heat)" stroke="#1f2933" stroke-width="2"/>
+  <rect x="30" y="108" width="400" height="32" rx="3" fill="#ffc078" stroke="#e8590c" stroke-width="1.5"/>
   <foreignObject x="442" y="109.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$2000\,\text{J}$</div></foreignObject>
   <foreignObject x="30" y="159.5" width="211" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{tosteri},\ P = 1000\,\text{W}$</div></foreignObject>
-  <rect x="30" y="192" width="200" height="32" fill="url(#fy23-heat)" stroke="#1f2933" stroke-width="2"/>
+  <rect x="30" y="192" width="200" height="32" rx="3" fill="#ffc078" stroke="#e8590c" stroke-width="1.5"/>
   <foreignObject x="242" y="193.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$1000\,\text{J}$</div></foreignObject>
   <foreignObject x="30" y="243.5" width="211" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{televisio},\ P = 80\,\text{W}$</div></foreignObject>
-  <rect x="30" y="276" width="16" height="32" fill="url(#fy23-heat)" stroke="#1f2933" stroke-width="2"/>
+  <rect x="30" y="276" width="16" height="32" rx="3" fill="#ffc078" stroke="#e8590c" stroke-width="1.5"/>
   <foreignObject x="58" y="277.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$80\,\text{J}$</div></foreignObject>
   <line x1="30" y1="306" x2="570" y2="306" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
 </svg>

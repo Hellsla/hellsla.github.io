@@ -124,19 +124,8 @@ Aurinko lämmittää maanpintaa. Se lähettää maanpinnalle energiaa säteilyn�
 Kasvihuonekaasut päästävät siis auringon säteilyn läpi, mutta hidastavat lämpösäteilyn pääsyä pois. Maanpinta pysyy lämpimämpänä kuin ilman niitä. Maan yksinkertainen **säteilytasapainomalli** olettaa, että Maa lähettää avaruuteen yhtä paljon energiaa kuin se saa Auringolta. Mallin antama lämpötila on Maan **efektiivinen säteilylämpötila**, noin $-18\,{}^\circ\text{C}$. Maanpinnan keskilämpötila on kuitenkin noin $+15\,{}^\circ\text{C}$. Ero näyttää, kuinka tärkeä **kasvihuoneilmiö** on. Luku $-18\,{}^\circ\text{C}$ ei ole tarkka ennuste pinnan lämpötilasta ilman kasvihuonekaasuja. Silloin muuttuisivat myös esimerkiksi pilvet ja jää. Luonnollinen kasvihuoneilmiö pitää maapallon asuttavana. Ilman sitä merien vesi olisi jäässä.
 
 <svg data-fig="greenhouse" viewBox="0 0 600 440" role="img" aria-label="Periaatekuva, ei mittakaavassa: kasvihuoneilmiö. Auringon säteily (oranssi nuoli) on näkyvää valoa ja lähi-infrapunaa. Se kulkee suurelta osin ilmakehän läpi ja lämmittää maanpinnan. Lämmin maanpinta lähettää lämpösäteilyä ylöspäin (punaiset nuolet). Ilmakehän kasvihuonekaasut imevät sen. Kaasut säteilevät energian uudelleen. Osa energiasta palaa takaisin alas maanpinnalle ja osa karkaa avaruuteen. Nuolten paksuus näyttää suunnan, ei tarkkoja energioita." style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy28-heat" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient><linearGradient id="fy28-ir" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2a69c"/><stop offset="1" stop-color="#c92a2a"/></linearGradient><radialGradient id="fy28-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></radialGradient><linearGradient id="fy28-ground" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
-  <path d="M113.5,85 L130,84.5 L116,75.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M100.5,102 L115.5,109.5 L108,94.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M81.5,110 L90.5,124 L91,107.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M61,107.5 L61.5,124 L70.5,110 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M44,94.5 L36.5,109.5 L51.5,102 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M36,75.5 L22,84.5 L38.5,85 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M38.5,55 L22,55.5 L36,64.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M51.5,38 L36.5,30.5 L44,45.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M70.5,30 L61.5,16 L61,32.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M91,32.5 L90.5,16 L81.5,30 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M108,45.5 L115.5,30.5 L100.5,38 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M116,64.5 L130,55.5 L113.5,55 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <defs><linearGradient id="fy28-heat" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient><linearGradient id="fy28-ir" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2a69c"/><stop offset="1" stop-color="#c92a2a"/></linearGradient><linearGradient id="fy28-ground" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><radialGradient id="fy28-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></radialGradient></defs>
+  <circle cx="76" cy="70" r="51" fill="#ffffff" fill-opacity="0.5"/>
   <circle cx="76" cy="70" r="32" fill="url(#fy28-sun)"/>
   <rect x="12" y="160" width="576" height="60" rx="10" fill="#eef5f9" stroke="#6b7480" stroke-width="2" stroke-dasharray="10 7"/>
   <circle cx="33" cy="186" r="5" fill="#6b7480"/>

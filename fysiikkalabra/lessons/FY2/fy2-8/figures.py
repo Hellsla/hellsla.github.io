@@ -44,17 +44,9 @@ def greenhouse():
             "ei tarkkoja energioita.")
     f.defs_add(f'<linearGradient id="fy28-heat" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{HEAT_LIGHT}"/><stop offset="1" stop-color="{HEAT}"/></linearGradient>')
     f.defs_add(f'<linearGradient id="fy28-ir" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{HOT_LIGHT}"/><stop offset="1" stop-color="{HOT}"/></linearGradient>')
-    f.defs_add(f'<radialGradient id="fy28-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="{HEAT_LIGHT}"/><stop offset="1" stop-color="{HEAT}"/></radialGradient>')
     f.defs_add(f'<linearGradient id="fy28-ground" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{SAND_LIGHT}"/><stop offset="1" stop-color="{SAND}"/></linearGradient>')
-    # the sun with rays
-    sx, sy = 76, 70
-    for k in range(12):
-        a = k * math.pi / 6 + math.pi / 12
-        c, s_ = math.cos(a), math.sin(a)
-        r0, r1, hw = 40, 56, 5
-        f.path(f"M{n(sx + c * r0 - s_ * hw)},{n(sy + s_ * r0 + c * hw)} L{n(sx + c * r1)},{n(sy + s_ * r1)} "
-               f"L{n(sx + c * r0 + s_ * hw)},{n(sy + s_ * r0 - c * hw)} Z", HEAT_LIGHT)
-    f.circle(sx, sy, 32, "url(#fy28-sun)")
+    # the Sun as a plain disc, without rays (teacher 2026-11-11, illustration audit group B; as fy8-2/greenhouse)
+    H.sun(f, "fy28", 76, 70, r=32)
     # the atmosphere with its greenhouse gases (dashed: a layer of gas, not a lid), a few CO2 molecules drawn in
     f.rect(12, 160, 576, 60, GLASS, MUTED, 2, 10, 'stroke-dasharray="10 7"')
     for mx, my in ((46, 186), (98, 206), (512, 184), (555, 206)):
