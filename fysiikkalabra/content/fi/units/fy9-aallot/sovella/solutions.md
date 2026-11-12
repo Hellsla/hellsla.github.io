@@ -14,7 +14,7 @@
 **Annettu:** aallon nopeus kielessä $v = 142{,}56\,\text{m/s}$ (a-kohta), haluttu taajuus $f' = 123{,}5\,\text{Hz}$, koko pituus $L = 648\,\text{mm}$
 **Kysytty:** kielen värähtelevän osan pituus $L'$ ja nauhan etäisyys satulasta
 **Periaate:** Kieli ja sen kireys pysyvät samoina, joten aallon nopeus kielessä ei muutu. Nauha on uusi solmu, joten perustaajuudella värähtelevä osa on puolet uudesta aallonpituudesta (luku *Seisova aalto: solmut, kuvut ja ominaistaajuudet*). Nauhan etäisyys satulasta on koko pituuden ja värähtelevän osan erotus.
-**Kaava:** $f' = \dfrac{v}{2L'}$, joten $L' = \dfrac{v}{2f'}$, ja etäisyys satulasta on $L - L'$
+**Kaava:** $f' = \dfrac{v}{2L'}$, joten $L' = \dfrac{v}{2f'}$, ja etäisyys satulasta on $d = L - L' = L - \dfrac{v}{2f'}$
 **Muunnokset:** Lopuksi $1\,\text{m} = 1000\,\text{mm}$.
 **Sijoitus:** $L' = \dfrac{142{,}56\,\text{m/s}}{2 \cdot 123{,}5\,\tfrac{1}{\text{s}}} = 0{,}5772\,\text{m} = 577{,}2\,\text{mm}$, ja $648\,\text{mm} - 577{,}2\,\text{mm} = 70{,}8\,\text{mm}$
 **Vastaus:** Värähtelevän osan on oltava $L' \approx 577\,\text{mm}$, kolme merkitsevää numeroa kuten lähtötiedot, ja nauha on noin $71\,\text{mm}$:n päässä satulasta. Etäisyys on erotus, joten se tunnetaan millimetrin tarkkuudella.
@@ -256,7 +256,7 @@
 **Kysytty:** mitä vakiotermi kertoo mittauksesta, ja ryhmän tavalla mitattu pituus $l$, jolla $T = 2{,}00\,\text{s}$
 **Periaate:** Jos heilurin todellinen pituus on $l + \Delta l$, malli antaa $T^2 = k(l + \Delta l) = kl + k\Delta l$, joten suora siirtyy ylöspäin ja leikkaa $l$-akselin kohdassa $-\Delta l$ (luku *Mittaaminen ja mittauksen luotettavuus*). Heilurin pituus on kiinnityskohdan ja kuulan painopisteen etäisyys (luku *Jousivärähtelijä ja heiluri*). Haluttu pituus saadaan sovitetun suoran yhtälöstä, jolloin sama systemaattinen virhe on mukana.
 **Kuvaajan lukeminen:** Suoran yhtälö on c-kohdan luetuista pisteistä $T^2 = 4{,}04\,\tfrac{\text{s}^2}{\text{m}} \cdot l + 0{,}056\,\text{s}^2$; se leikkaa $l$-akselin, kun $T^2 = 0$.
-**Kaava:** $T^2 = kl + b$, joten $l = \dfrac{T^2 - b}{k}$ ja $l$-akselin leikkauskohta on $-\dfrac{b}{k}$
+**Kaava:** $T^2 = kl + b$, joten $l$-akselin leikkauskohta on $l_0 = -\dfrac{b}{k}$ ja pituus jaksonajalla $T$ on $l = \dfrac{T^2 - b}{k}$
 **Muunnokset:** Suureet ovat perusyksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $-\dfrac{b}{k} = -\dfrac{0{,}0563\,\text{s}^2}{4{,}0375\,\text{s}^2\text{/m}} = -0{,}014\,\text{m}$ ja $l = \dfrac{(2{,}00\,\text{s})^2 - 0{,}0563\,\text{s}^2}{4{,}0375\,\text{s}^2\text{/m}} = \dfrac{3{,}944\,\text{s}^2}{4{,}0375\,\text{s}^2\text{/m}} = 0{,}9768\,\text{m}$
 **Vastaus:** Suora leikkaa $l$-akselin noin kohdassa $-1{,}4\,\text{cm}$: heilurin todellinen pituus on noin $1{,}4\,\text{cm}$ mitattua suurempi. Pituus mitattiin kuulan yläpintaan eikä keskipisteeseen, joten mittauksessa on systemaattinen virhe, joka on kuulan säteen suuruinen. Ryhmän tavalla mitatun pituuden on oltava noin $0{,}98\,\text{m}$, kaksi merkitsevää numeroa, koska tulos riippuu kuvaajalta luetusta vakiotermistä.
@@ -338,7 +338,7 @@
 **Annettu:** $m = 72{,}0\,\text{kg}$, $L_0 = 18{,}0\,\text{m}$, jousivakio $k = 120\,\text{N/m}$, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** alimman kohdan syvyys sillan alapuolella $L_0 + x$, missä $x$ on nauhan suurin venymä
 **Periaate:** Hyppääjään vaikuttavat paino ja nauhan voima, joka on harmoninen kuin jousen voima. Kumpikin on konservatiivinen, joten mekaaninen energia säilyy koko pudotuksen ajan (luvut *Mekaanisen energian säilyminen ja energiaperiaate* ja *Jousivoima ja jousen energia*). Alimmassa kohdassa nopeus on nolla, joten painon potentiaalienergian muutos koko matkalta $L_0 + x$ on muuttunut nauhan potentiaalienergiaksi. Nollataso valitaan alimpaan kohtaan.
-**Kaava:** $mg(L_0 + x) = \tfrac12 kx^2$, eli $\tfrac12 kx^2 - mgx - mgL_0 = 0$, jonka positiivinen ratkaisu on $x = \dfrac{mg + \sqrt{(mg)^2 + 2kmgL_0}}{k}$
+**Kaava:** $mg(L_0 + x) = \tfrac12 kx^2$, eli $\tfrac12 kx^2 - mgx - mgL_0 = 0$, jonka positiivinen ratkaisu on $x = \dfrac{mg + \sqrt{(mg)^2 + 2kmgL_0}}{k}$, ja syvyys sillan alapuolella on $d = L_0 + x$
 **Muunnokset:** Suureet ovat perusyksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $mg = 72{,}0\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} = 706{,}32\,\text{N}$, $(mg)^2 = (706{,}32\,\text{N})^2 \approx 498\,888\,\text{N}^2$ ja $2kmgL_0 = 2 \cdot 120\,\tfrac{\text{N}}{\text{m}} \cdot 706{,}32\,\text{N} \cdot 18{,}0\,\text{m} \approx 3\,051\,302\,\text{N}^2$, joten neliöjuuri on $\sqrt{3\,550\,190\,\text{N}^2} \approx 1884{,}2\,\text{N}$ ja $x = \dfrac{706{,}32\,\text{N} + 1884{,}2\,\text{N}}{120\,\text{N/m}} = 21{,}59\,\text{m}$ ja syvyys $18{,}0\,\text{m} + 21{,}59\,\text{m} = 39{,}59\,\text{m}$
 **Vastaus:** Hyppääjä putoaa noin $39{,}6\,\text{m}$ sillan alapuolelle, kolme merkitsevää numeroa kuten lähtötiedot.

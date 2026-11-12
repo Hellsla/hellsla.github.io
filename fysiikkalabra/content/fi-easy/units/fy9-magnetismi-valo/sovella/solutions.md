@@ -21,10 +21,10 @@
 **Järkevyys:** Virtojen suhde on $375 : 7{,}50 = 50$. Se on sama kuin kierrosten suhde. Lisäksi $U_2 I_2 = 20\,000\,\text{V} \cdot 7{,}50\,\text{A} = 150\,\text{kW}$, eli teho on sama kuin ensiössä.
 
 ### c)
-**Annettu:** linjan virta $I_2 = 7{,}50\,\text{A}$ (b-kohta), resistanssi $R = 6{,}0\,\Omega$, teho $P = 150\,\text{kW}$; vertailuksi jännite $400\,\text{V}$
+**Annettu:** linjan virta $I_2 = 7{,}50\,\text{A}$ (b-kohta), resistanssi $R = 6{,}0\,\Omega$, linjan jännite $U_2 = 20{,}0\,\text{kV}$, teho $P = 150\,\text{kW}$; vertailuksi jännite $U_1 = 400\,\text{V}$
 **Kysytty:** lämmöksi muuttuvan tehon osuus $\tfrac{P_\text{h}}{P}$ ja mitä tapahtuisi jännitteellä $400\,\text{V}$
 **Periaate:** Linjan resistanssissa sähköenergiaa muuttuu sisäenergiaksi teholla $RI^2$. Siirtojännite $20\,\text{kV}$ ei ole linjan resistanssin yli. Siksi häviö lasketaan virrasta. Virta saadaan siirrettävästä tehosta (luku *Muuntaja ja sähköenergian siirto*).
-**Kaava:** $I = \dfrac{P}{U}$ ja $P_\text{h} = RI^2$, osuus $\dfrac{P_\text{h}}{P}$
+**Kaava:** $I = \dfrac{P}{U}$ ja $P_\text{h} = RI^2$, joten $P_\text{h} = \dfrac{RP^2}{U^2}$ ja häviön osuus siirretystä tehosta $\dfrac{P_\text{h}}{P} = \dfrac{RP}{U^2}$
 **Muunnokset:** Lopuksi osuus muutetaan prosenteiksi: kerrotaan luvulla $100\,\%$.
 **Sijoitus:** $P_\text{h} = 6{,}0\,\Omega \cdot (7{,}50\,\text{A})^2 = 337{,}5\,\text{W}$, joten $\dfrac{P_\text{h}}{P} = \dfrac{337{,}5\,\text{W}}{150\,000\,\text{W}} = 0{,}00225 = 0{,}225\,\%$. Jännitteellä $400\,\text{V}$: $I = 375\,\text{A}$ ja $RI^2 = 6{,}0\,\Omega \cdot (375\,\text{A})^2 = 843\,750\,\text{W} \approx 844\,\text{kW}$
 **Vastaus:** Linjassa muuttuu lämmöksi noin $0{,}23\,\%$ tehosta. Vastauksessa on kaksi merkitsevää numeroa, kuten resistanssissa $6{,}0\,\Omega$. Jännitteellä $400\,\text{V}$ lauseke $RI^2$ antaisi $844\,\text{kW}$. Se on yli viisi kertaa niin paljon kuin siirrettävä teho. Siirto ei siis onnistuisi lainkaan. Jo linjan jännitehäviö $RI = 6{,}0\,\Omega \cdot 375\,\text{A} = 2250\,\text{V}$ olisi suurempi kuin koko jännite.
@@ -67,12 +67,12 @@
 **Järkevyys:** Valo etenee kuidussa nopeudella $\tfrac{3{,}00 \cdot 10^8\,\text{m/s}}{1{,}470} \approx 2{,}04 \cdot 10^8\,\text{m/s}$. Se on noin kaksi kolmasosaa valon nopeudesta tyhjiössä. Ero on noin $1\,\%$. Se vastaa matkojen suhdetta $\tfrac{1}{0{,}9898} \approx 1{,}010$. Jos pulssit lähtisivät tiheämmin kuin noin mikrosekunnin välein, ne voisivat sekoittua.
 
 ### c)
-**Annettu:** vaimennuskerroin $a = 0{,}22\,\text{dB/km}$, pituus $L = 14{,}0\,\text{km}$, neljä jatkosta, joista kukin vaimentaa $0{,}10\,\text{dB}$, lähetysteho $P_0 = 2{,}0\,\text{mW}$
+**Annettu:** vaimennuskerroin $a = 0{,}22\,\text{dB/km}$, pituus $L = 14{,}0\,\text{km}$, neljä jatkosta (lukumäärä $N_\text{j} = 4$), kunkin vaimennus $A_\text{j} = 0{,}10\,\text{dB}$, lähetysteho $P_0 = 2{,}0\,\text{mW}$; desibeliasteikon kerroin $\beta = 10\,\text{dB}$ (määritelmä)
 **Kysytty:** vastaanotettu teho $P$
 **Periaate:** Kuidun lasi vaimentaa eli heikentää valoa samassa suhteessa joka kilometrillä. Vaimennus ilmoitetaan desibeleinä. Peräkkäisten osien ja jatkosten vaimennukset desibeleinä lasketaan yhteen (luku *Soveltava luku: langaton lataus, induktioliesi ja kuituyhteys*).
-**Kaava:** $A = aL + 4 \cdot 0{,}10\,\text{dB}$ ja $A = 10\,\text{dB} \cdot \lg \dfrac{P_0}{P}$, joten $P = P_0 \cdot 10^{-A/(10\,\text{dB})}$
+**Kaava:** $A = aL + N_\text{j}A_\text{j}$ ja $A = \beta \cdot \lg \dfrac{P_0}{P}$, joten $P = P_0 \cdot 10^{-A/\beta}$
 **Muunnokset:** Pituus on jo kilometreinä ja teho milliwatteina, joten muunnoksia ei tarvita.
-**Sijoitus:** $A = 0{,}22\,\tfrac{\text{dB}}{\text{km}} \cdot 14{,}0\,\text{km} + 0{,}40\,\text{dB} = 3{,}08\,\text{dB} + 0{,}40\,\text{dB} = 3{,}48\,\text{dB}$, joten $P = 2{,}0\,\text{mW} \cdot 10^{-0{,}348} = 2{,}0\,\text{mW} \cdot 0{,}4487 = 0{,}897\,\text{mW}$
+**Sijoitus:** $A = 0{,}22\,\tfrac{\text{dB}}{\text{km}} \cdot 14{,}0\,\text{km} + 4 \cdot 0{,}10\,\text{dB} = 3{,}08\,\text{dB} + 0{,}40\,\text{dB} = 3{,}48\,\text{dB}$, joten $P = 2{,}0\,\text{mW} \cdot 10^{-0{,}348} = 2{,}0\,\text{mW} \cdot 0{,}4487 = 0{,}897\,\text{mW}$
 **Vastaus:** Vastaanottimeen saapuu noin $0{,}90\,\text{mW}$. Vastauksessa on kaksi merkitsevää numeroa, kuten lähetystehossa $2{,}0\,\text{mW}$ ja vaimennuskertoimessa $0{,}22\,\text{dB/km}$.
 **Järkevyys:** $3\,\text{dB}$ vastaa suunnilleen sitä, että teho puolittuu. Siksi $3{,}5\,\text{dB}$ jättää vähän alle puolet, $45\,\%$. Tulos on uskottava, koska tietoliikennekuidussa valo kulkee kymmeniä kilometrejä ilman vahvistusta.
 
@@ -331,7 +331,7 @@
 **Annettu:** hilassa on $N = 600$ viivaa millimetrillä, $L = 80{,}0\,\text{cm}$, $x_1 = 27{,}0\,\text{cm}$, $x_2 = 66{,}4\,\text{cm}$
 **Kysytty:** laserin aallonpituus $\lambda$ kummastakin maksimista
 **Periaate:** Hilan maksimit ovat niissä suunnissa, joille $d\sin\theta = k\lambda$. Hilavakio on viivojen välin pituus (luku *Valon interferenssi ja diffraktio*). Kulma saadaan varjostimen suorakulmaisesta kolmiosta: $\tan\theta = \tfrac{x}{L}$. Sini ja tangentti ovat lähes yhtä suuret vain pienillä kulmilla. Siksi kulma lasketaan ensin tangentista. Kulman sini lasketaan vasta sitten.
-**Kaava:** $d = \dfrac{1\,\text{mm}}{N}$, $\theta_k = \tan^{-1}\dfrac{x_k}{L}$ ja $\lambda = \dfrac{d\sin\theta_k}{k}$
+**Kaava:** $d = \dfrac{1}{N}$, missä $N$ on viivojen määrä pituusyksikköä kohti, $\theta_k = \tan^{-1}\dfrac{x_k}{L}$ ja $\lambda = \dfrac{d\sin\theta_k}{k}$, eli $\lambda = \dfrac{1}{kN}\sin\left(\tan^{-1}\dfrac{x_k}{L}\right)$
 **Muunnokset:** $d = \dfrac{1\,\text{mm}}{600} = \dfrac{1 \cdot 10^{-3}\,\text{m}}{600} = 1{,}667 \cdot 10^{-6}\,\text{m}$. Etäisyyksien suhteessa yksiköt supistuvat pois. Lopuksi $1\,\text{m} = 10^9\,\text{nm}$.
 **Sijoitus:** $\tan\theta_1 = \dfrac{27{,}0\,\text{cm}}{80{,}0\,\text{cm}} = 0{,}3375$, joten $\theta_1 = 18{,}65^\circ$ ja $\lambda = 1{,}667 \cdot 10^{-6}\,\text{m} \cdot \sin 18{,}65^\circ = 1{,}667 \cdot 10^{-6}\,\text{m} \cdot 0{,}3198 = 533{,}0\,\text{nm}$. $\tan\theta_2 = \dfrac{66{,}4\,\text{cm}}{80{,}0\,\text{cm}} = 0{,}830$, joten $\theta_2 = 39{,}69^\circ$ ja $\lambda = \dfrac{1{,}667 \cdot 10^{-6}\,\text{m} \cdot 0{,}6386}{2} = 532{,}2\,\text{nm}$
 **Vastaus:** Ensimmäisestä kertaluvusta saadaan $\lambda \approx 533\,\text{nm}$ ja toisesta $\lambda \approx 532\,\text{nm}$. Vastauksissa on kolme merkitsevää numeroa, kuten etäisyyksissä.
