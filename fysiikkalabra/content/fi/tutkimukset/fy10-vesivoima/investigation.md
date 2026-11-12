@@ -205,11 +205,11 @@ Tarkista kirjauksesi tästä. Rajataan järjestelmäksi vesi, turbiini ja genera
   <circle cx="500" cy="210" r="4.5" fill="#1f2933"/>
   <circle cx="500" cy="350" r="4.5" fill="#1f2933"/>
   <circle cx="372" cy="300" r="26" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
-  <foreignObject x="362" y="285.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$G$</div></foreignObject>
+  <foreignObject x="362" y="285.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{G}$</div></foreignObject>
   <circle cx="436" cy="160" r="20" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
-  <foreignObject x="426" y="145.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$A$</div></foreignObject>
+  <foreignObject x="426" y="145.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{A}$</div></foreignObject>
   <circle cx="566" cy="280" r="20" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
-  <foreignObject x="556" y="265.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$V$</div></foreignObject>
+  <foreignObject x="556" y="265.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{V}$</div></foreignObject>
 </svg>
 
 Kun ajassa $\Delta t$ turbiinin läpi virtaa veden massa $\Delta m$, veden potentiaalienergia pienenee määrällä $\Delta m \cdot g h$. Veden voimalaitokselle tuoma teho on siis

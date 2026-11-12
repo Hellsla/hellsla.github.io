@@ -27,29 +27,46 @@ def fall(t_rel):
 
 def hero():
     """The opening illustration: a light ball dropped beside a tall wall scale, drawn at equal time steps: the gaps grow at
-    first and then become equal (the terminal speed); a phone on a tripod films it from far away, at the height of the
-    lower, steady part of the fall."""
-    f = H.hero("fy10m-hero", "Kuvitus: kevyt pallo putoaa seinällä olevan pitkän mitta-asteikon edessä. Pallon paikka on piirretty "
-               "tasaisin aikavälein. Kauempana kolmijalan päällä oleva puhelin kuvaa putoamista videolle.")
+    first and then become equal (the terminal speed); a student films it with a phone on a tripod from across the room,
+    the phone at the height of the lower, steady part of the fall. Recomposed (teacher 2026-11-11, illustration audit:
+    too sparse): the scale and the ball in the middle third, a larger ball, the tripod standing on its legs, the student
+    at the camera, the camera's view towards the steady part, a window for the room."""
+    f = H.hero("fy10m-hero", "Kuvitus: kevyt pallo putoaa luokan seinällä olevan pitkän mitta-asteikon edessä. Pallon paikka on "
+               "piirretty tasaisin aikavälein: välit kasvavat ensin ja tasaantuvat sitten. Huoneen toisella puolella opiskelija "
+               "kuvaa putoamista videolle kolmijalan päällä olevalla puhelimella, joka on putoamisen alaosan korkeudella.")
+    floor = 530
     f.rect(0, 0, 1200, 600, grad(f, "fy10mh-wall", GLASS, "#dfe9ef"))
-    f.rect(0, 530, 1200, 70, grad(f, "fy10mh-floor", SAND_DARK, SAND, horizontal=True))
-    for k in range(3): f.line(0, 550 + 20 * k, 1200, 547 + 20 * k, GRAIN, 1.5)
-    f.line(0, 530, 1200, 530, INK, 3)
-    # the scale on the wall, behind the ball
-    f.rect(380, 30, 50, 500, "#ffe8a3", INK, 2.5, rx=3)
+    H.window(f, 100, 110, 210, 230, "fy10mh-win")
+    f.rect(0, floor - 16, 1200, 16, RULE_LIGHT, INK, 2)
+    f.rect(0, floor, 1200, 70, grad(f, "fy10mh-floor", SAND_DARK, SAND, horizontal=True))
+    for k in range(3): f.line(0, floor + 20 + 20 * k, 1200, floor + 17 + 20 * k, GRAIN, 1.5)
+    f.line(0, floor, 1200, floor, INK, 3)
+    # the scale on the wall, behind the ball, in the middle third
+    sx = 500
+    f.rect(sx, 30, 60, 500, "#ffe8a3", INK, 2.5, rx=3)
     for k in range(49):
-        f.line(380, 520 - 10 * k, 380 + (24 if k % 5 == 0 else 12), 520 - 10 * k, INK, 1.5)
+        f.line(sx, 520 - 10 * k, sx + (28 if k % 5 == 0 else 14), 520 - 10 * k, INK, 1.5)
+    # the phone's view: a pale wedge from the lens to the lower, steady part of the fall
+    lens = (921, 384)
+    f.add(f'<path d="M{lens[0]},{lens[1]} L{sx + 60},296 L{sx + 60},516 Z" fill="{WHITE}" opacity="0.55"/>')
     # the ball at equal time steps t/tau = 0, 0.6, ..., 4.8: the last gaps are nearly equal (v close to v_r)
-    r, y0, y_end = 19, 60, 530 - 19 - 8
+    r, y0, y_end = 23, 60, floor - 23 - 8
     steps = [0.6 * k for k in range(9)]
     L = (y_end - y0) / fall(steps[-1])
     for i, t in enumerate(steps):
-        ball(f, 410, y0 + L * fall(t), r, 1.0 if i in (0, len(steps) - 1) else 0.45)
-    # a phone on a tripod, far away, at the height of the steady part
-    f.line(1000, 530, 975, 420, INK, 4); f.line(1000, 530, 1025, 420, INK, 4); f.line(972, 530, 1000, 420, INK, 4)
-    f.line(1000, 420, 1000, 380, INK, 4)
-    f.rect(992, 300, 16, 100, IRON, INK, 2.5, rx=4)        # seen from the side, the camera towards the ball
-    f.circle(992, 318, 5, INK)
+        ball(f, sx + 34, y0 + L * fall(t), r, 1.0 if i in (0, len(steps) - 1) else 0.45)
+    # the tripod on its three legs and the phone, seen from the side, its camera towards the ball
+    hx, hy = 930, 446
+    f.line(hx, hy, 936, floor - 2, IRON, 4)                 # the back leg
+    f.line(hx, hy, 884, floor - 2, INK, 4); f.line(hx, hy, 976, floor - 2, INK, 4)
+    f.line(hx, hy, hx, 436, INK, 5); f.rect(914, 430, 32, 10, IRON, INK, 2, rx=2)
+    f.rect(921, 368, 16, 64, IRON, INK, 2.5, rx=4)
+    f.circle(lens[0], lens[1], 5, INK)
+    # the student behind the camera, facing the ball: the side-view walker mirrored about x = 1030
+    k = len(f.body)
+    H.walker(f, 1030, floor, sc=0.85, lean=-6, hand=(2 * 1030 - 940, 402), stride=0.6)
+    group = f.body[k:]; del f.body[k:]
+    f.add('<g transform="translate(2060,0) scale(-1,1)">' + "".join(group) + "</g>")
     return f.svg()
 
 

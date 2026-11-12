@@ -125,9 +125,9 @@ def setup():
     f.line(500, 210, 566, 210, INK, 2.5); f.line(500, 350, 566, 350, INK, 2.5)
     f.line(566, 210, 566, 258, INK, 2.5); f.line(566, 302, 566, 350, INK, 2.5)
     for (x, y) in [(500, 210), (500, 350)]: f.circle(x, y, 4.5, INK)
-    f.circle(gx, gy, 26, WHITE, INK, 2.5); f.tex(gx, gy, r"G", "middle")
-    f.circle(436, 160, 20, WHITE, INK, 2.5); f.tex(436, 160, r"A", "middle")
-    f.circle(566, 280, 20, WHITE, INK, 2.5); f.tex(566, 280, r"V", "middle")
+    f.circle(gx, gy, 26, WHITE, INK, 2.5); f.tex(gx, gy, r"\text{G}", "middle")
+    f.circle(436, 160, 20, WHITE, INK, 2.5); f.tex(436, 160, r"\text{A}", "middle")
+    f.circle(566, 280, 20, WHITE, INK, 2.5); f.tex(566, 280, r"\text{V}", "middle")
     return f.svg()
 
 

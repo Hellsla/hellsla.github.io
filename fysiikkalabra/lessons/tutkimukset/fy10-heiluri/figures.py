@@ -86,7 +86,9 @@ def setup():
     f.line(xd, py, xd, py + L, INK, 2); f.line(xd - 10, py, xd + 10, py, INK, 2); f.line(xd - 10, py + L, xd + 10, py + L, INK, 2)
     f.line(xd + 10, py + L, px - r - 4, py + L, MUTED, 1.5, "4 4")
     f.tex(xd - 12, py + L / 2, r"l", "end")
-    f.tex(px + 24, py - 4, r"\text{ripustuskohta}", "start", MUTED)
+    # the suspension point named away from the thread, with a leader to the point (illustration audit 2026-11-11)
+    f.line(px + 3, py + 2, 352, 84, MUTED, 1); f.circle(px + 1.5, py + 1, 2.2, MUTED)
+    f.tex(358, 90, r"\text{ripustuskohta}", "start", MUTED)
     f.tex(px, py + L + r + 22, r"\text{kuulan keskipiste}", "middle", MUTED)
     return f.svg()
 
