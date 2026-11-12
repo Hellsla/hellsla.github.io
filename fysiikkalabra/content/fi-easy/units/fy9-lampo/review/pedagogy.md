@@ -1,13 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 48b023ee6d41d8e1
+CONTENT-HASH: 7f6e94d645eab67a
 
-Delta review of the FY9 audit fixes (2026-11-10). Previous PASS hash: f527223788565a17. The hash was the same at the start and the end of this review.
+Delta review (formulas in MAFY form, 2026-11-12) of the version passed at 48b023ee6d41d8e1.
 
-## Blocking
-None.
+Blocking: none. The new symbols are defined in the sentence after each formula block, the tasks' forms are still derivable from the theory, and the unit stays coherent for a student.
 
-## Polish
-None.
-
-## Checked
-- s1 source note now says 'Ruiskutettu vesikerros' instead of 'Jääkerros', matching what the task describes (water sprayed that freezes); the note stays an honest statement that the numbers are invented.
+1. Polish: the unit's inquiry solutions use Delta L = alpha L_0 Delta T, while the theory now writes l = l_0(1 + alpha Delta T) and Delta l = alpha l_0 Delta T. Add a note in the solution that L_0, Delta L are the same as l_0, Delta l, or rename them.

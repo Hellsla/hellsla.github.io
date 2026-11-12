@@ -1,17 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: ccfacb064cf5f007
+CONTENT-HASH: 73830490b1b3a881
 
-Visual & editorial review, round 2, of preview/fi-easy/fy9-kaasut.html (python3 scripts/build.py fy9-kaasut),
-Playwright at 390 and 1280 px with all details opened.
-
-- scrollWidth 390 / 1280: no horizontal scroll; no svg/img wider than the viewport; 0 KaTeX errors; no raw $…$;
-  no console errors.
-- 10 figures render, 298–358 px wide at 390 and 440–608 px at 1280, labels translated, decimal comma.
-- The round-2 fixes render as intended (tuhat kertaa väärä, Kelvinasteikko alkaa, tiivistyy eli muuttuu vedeksi,
-  Noin neljännes ilmasta); new bullets in Yleisiä virheitä keep LaTeX and decimal comma.
+Delta review (formulas in MAFY form, 2026-11-12) of the version passed at ccfacb064cf5f007.
 
 ## Blocking
-None.
+None. Built at 390 and 1280 px: KaTeX renders without errors, no horizontal overflow, upright subscripts, \overline vectors and spacing correct, formula map text fits its boxes, the new definition sentences read naturally.
 
 ## Polish
-None.
+1. Plain text units in the definition sentences ('(Pa)', '(N)', '(m²)', '(kg/m³)', '(m³)', '(J)'; carried over from the reviewed text): write them as $\text{...}$.
+
+## Checked
+I did not open this pair's rendered sheet. The verdict rests on the overflow and KaTeX-error scan of the built page at 390 and 1280 px, the diff text, and the fi version's sheet (same LaTeX, same map layout; only label words differ).

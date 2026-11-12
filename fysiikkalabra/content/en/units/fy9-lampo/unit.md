@@ -112,7 +112,7 @@ In thermal physics three concepts must be kept apart. **Temperature** describes 
 
 Every problem of the lesson comes back to conservation of energy. Heat transferred to a substance either raises its temperature or changes its state, and as the temperature rises the substance also expands. In an isolated system the heat released by the hot part equals the heat received by the cold part. The temperature of a house stays constant when the power coming in equals the power going out.
 
-<svg data-fig="kartta" viewBox="0 0 380 636" role="img" aria-label="Concept map. At the top is the node energy is conserved: in an isolated system the quantity of heat released equals the quantity received. Four branches lead down from it. Heating: Q = c m ΔT when the state does not change, and the kelvin temperature T = θ + 273.15. Change of state: melting Q = s m and vaporisation Q = r m at constant temperature. Thermal expansion: length ΔL = α L0 ΔT and volume ΔV = γ V0 ΔT. Heat transfer: conduction, convection and radiation, and the power conducted through a wall P = U A ΔT." style="max-width:100%;font-size:21px">
+<svg data-fig="kartta" viewBox="0 0 380 636" role="img" aria-label="Concept map. At the top is the node energy is conserved: in an isolated system the quantity of heat released equals the quantity received. Four branches lead down from it. Heating: Q = c m ΔT when the state does not change, and the kelvin temperature T = θ + 273.15. Change of state: melting Q = s m and vaporisation Q = r m at constant temperature. Thermal expansion: length l = l0 times 1 + α ΔT and volume V = V0 times 1 + γ ΔT. Heat transfer: conduction, convection and radiation, and the power conducted through a wall P = U A ΔT." style="max-width:100%;font-size:21px">
   <line x1="24" y1="84" x2="24" y2="522" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="76" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
   <foreignObject x="93" y="17.5" width="194" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:21px">$\text{energy is conserved}$</div></foreignObject>
@@ -137,9 +137,9 @@ Every problem of the lesson comes back to conservation of energy. Heat transferr
   <rect x="44" y="368" width="328" height="120" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
   <foreignObject x="58" y="377.5" width="194" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\textbf{thermal expansion}$</div></foreignObject>
   <line x1="54" y1="410" x2="362" y2="410" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="419.5" width="106" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\Delta L = \alpha L_0\,\Delta T$</div></foreignObject>
+  <foreignObject x="58" y="419.5" width="128" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$l = l_0(1 + \alpha\Delta T)$</div></foreignObject>
   <foreignObject x="298" y="421" width="64" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{length}$</div></foreignObject>
-  <foreignObject x="58" y="453.5" width="106" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\Delta V = \gamma V_0\,\Delta T$</div></foreignObject>
+  <foreignObject x="58" y="453.5" width="128" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$V = V_0(1 + \gamma\Delta T)$</div></foreignObject>
   <foreignObject x="298" y="455" width="64" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{volume}$</div></foreignObject>
   <line x1="24" y1="522" x2="44" y2="522" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="44" y="500" width="328" height="120" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
@@ -156,28 +156,29 @@ In the exam, follow the energy first: where it comes from, where it goes and whe
 
 ### Temperature and internal energy
 
-```latex
-T = \theta + 273.15
+```kaavat
+temperature in kelvins :: T = \theta + 273.15
 ```
 
 where $T$ is the temperature in kelvins ($\text{K}$) and $\theta$ in degrees Celsius (${}^\circ\text{C}$). A temperature difference is the same in kelvins and in degrees Celsius, but ratios of temperatures are calculated in kelvins. Internal energy is changed by heat and work:
 
-```latex
-\Delta U = Q + W
+```kaavat
+first law of thermodynamics :: \Delta U = Q + W
 ```
 
 where $\Delta U$ is the change in internal energy, $Q$ the quantity of heat transferred to the system and $W$ the work done on the system, all in joules. Energy coming into the system is positive. The equation holds when the kinetic and potential energy of the system do not change.
 
 ### Heating and change of state
 
-```latex
-Q = cm\Delta T
+```kaavat
+heat transferred :: Q = cm\Delta T
 ```
 
 where $c$ is the specific heat capacity ($\text{J/(kg}\cdot\text{K)}$), $m$ the mass ($\text{kg}$) and $\Delta T$ the change in temperature ($\text{K}$). The formula holds only when the state does not change. In melting and vaporisation
 
-```latex
-Q = sm \qquad Q = rm
+```kaavat
+heat of fusion :: Q = sm
+heat of vaporisation :: Q = rm
 ```
 
 where $s$ is the specific latent heat of fusion and $r$ the specific latent heat of vaporisation ($\text{J/kg}$). At constant pressure the temperature of a pure substance stays constant during the change, because the energy increases the interaction energy of the particles. The same energy is released in solidification and condensation. For water $c = 4190\,\text{J/(kg}\cdot\text{K)}$, for ice $c = 2100\,\text{J/(kg}\cdot\text{K)}$, $s = 334\,\text{kJ/kg}$ and $r = 2260\,\text{kJ/kg}$.
@@ -257,24 +258,25 @@ This gives the answer to the opening question. Warming a kilogram of snow from $
 
 In an insulated container energy is conserved:
 
-```latex
-Q_\text{released} = Q_\text{received}
+```kaavat
+heat balance :: Q_\text{released} = Q_\text{received}
 ```
 
 When ice and water are mixed, first compare whether the heat the water releases as it cools to $0\,{}^\circ\text{C}$ is enough to warm the ice to $0\,{}^\circ\text{C}$ and melt it. If it is, all the ice melts and the final temperature is at least $0\,{}^\circ\text{C}$. If it is not, some ice is left and the temperature is exactly $0\,{}^\circ\text{C}$. Very cold ice can also freeze some or all of the water.
 
 ### Expansion and heat transfer
 
-```latex
-\Delta L = \alpha L_0 \Delta T \qquad \Delta V = \gamma V_0 \Delta T
+```kaavat
+linear thermal expansion :: l = l_0(1 + \alpha\Delta T)
+volume thermal expansion :: V = V_0(1 + \gamma\Delta T)
 ```
 
-where $\alpha$ and $\gamma$ are the coefficients of linear and volume expansion ($1/\text{K}$) and $L_0$ and $V_0$ the original length and volume. For solids the formulas hold up to a change in temperature of about $100\,\text{K}$, and the $\gamma$ of a liquid is usable only near the temperature given in the table. Water is an exception: its density is greatest at about $4\,{}^\circ\text{C}$.
+where $\alpha$ and $\gamma$ are the coefficients of linear and volume expansion ($1/\text{K}$), $l_0$ and $V_0$ the original length and volume and $l$ and $V$ the length and volume after the change in temperature $\Delta T$. The changes are $\Delta l = \alpha l_0 \Delta T$ and $\Delta V = \gamma V_0 \Delta T$. For solids the formulas hold up to a change in temperature of about $100\,\text{K}$, and the $\gamma$ of a liquid is usable only near the temperature given in the table. Water is an exception: its density is greatest at about $4\,{}^\circ\text{C}$.
 
 Heat is transferred by conduction, convection and radiation, with a net flow from the warmer body to the colder one. The power conducted through a building element is
 
-```latex
-P = UA\Delta T
+```kaavat
+heat flow through a building element :: P = UA\Delta T
 ```
 
 where $U$ is the U-value ($\text{W/(m}^2\cdot\text{K)}$), $A$ the area ($\text{m}^2$) and $\Delta T$ the difference between the indoor and outdoor temperatures ($\text{K}$). The formula holds when the temperatures stay constant.

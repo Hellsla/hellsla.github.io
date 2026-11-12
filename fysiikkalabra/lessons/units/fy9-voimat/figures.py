@@ -72,15 +72,16 @@ def hero():
 def kartta():
     """The concept map, stacked for a phone: the method (one line of steps) at the top, a spine down the left and three
     boxes: Newton's laws, the forces, and three special cases, each law with a grey word beside it."""
-    f = Fig("fy9vo-kartta", 640, "Käsitekartta. Ylhäällä solmu voimakuvio ensin: valitse kappale, etsi vuorovaikutukset, piirrä "
-            "voimakuvio, valitse akselit ja kirjoita liikeyhtälöt. Siitä lähtee alas kolme haaraa. Newtonin lait: ensimmäinen "
-            "laki, summa F on nolla, kun nopeus on vakio; toinen laki summa F = m a; kolmas laki F A B = − F B A. Voimat: paino "
-            "G = m g, liikekitka F myy = myy N ja lepokitka enintään myy nolla N, ilmanvastus vastustaa liikettä. Erikoistilanteet: "
-            "rinteessä G x = m g sin alfa, kytketyillä kappaleilla oma yhtälö kullekin ja rajanopeudella F v = G.", width=380, size=21)
+    f = Fig("fy9vo-kartta", 640, "Käsitekartta. Ylhäällä solmu voimakuvio ensin: valitse kappale, etsi vuorovaikutukset, piirrä voimakuvio, "
+            "valitse akselit ja kirjoita liikeyhtälöt. Siitä lähtee alas kolme haaraa. Newtonin lait: ensimmäinen laki, "
+            "summa F on nolla, kun nopeus on vakio; toinen laki summa F = m a; kolmas laki F A B = − F B A. Voimat: paino G "
+            "= m g vektoreina, liikekitka F myy = myy N ja lepokitka enintään myy nolla N, ilmanvastus vastustaa liikettä. "
+            "Erikoistilanteet: rinteessä G x = m g sin alfa, kytketyillä kappaleilla oma yhtälö kullekin ja rajanopeudella "
+            "F v = G.", width=380, size=21)
     groups = [
         ("Newtonin lait", [(r"\Sigma\overline{F} = \overline{0}", "I: lepo tai vakionopeus"), (r"\Sigma\overline{F} = m\overline{a}", "II"),
                            (r"\overline{F}_{AB} = -\overline{F}_{BA}", "III")]),
-        ("voimat", [(r"G = mg", "paino"), (r"F_\mu = \mu N", "liikekitka"), (r"F_{\mu 0} \le \mu_0 N", "lepokitka")]),
+        ("voimat", [(r"\overline{G} = m\overline{g}", "paino"), (r"F_\mu = \mu N", "liikekitka"), (r"F_{\mu 0} \le \mu_0 N", "lepokitka")]),
         ("erikoistilanteet", [(r"G_x = mg\sin\alpha", "rinne"), (r"\Sigma F_x = m_i a_x", "kytketyt"), (r"F_\text{v} = G", "rajanopeus")]),
     ]
     hub_y, hub_h, x_box, gh, top = 8, 112, 44, 150, 140

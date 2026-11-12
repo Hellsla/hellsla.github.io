@@ -98,16 +98,16 @@ def hero():
 def kartta():
     """The concept map, stacked for a phone: two conservation laws at the top, a spine down the left and three boxes
     (energy, momentum, the applications), each with three laws and a grey word beside each."""
-    f = Fig("fy9sl-kartta", 604, "Käsitekartta. Ylhäällä solmu säilymislait: energia ja liikemäärä. Siitä lähtee alas kolme "
-            "haaraa. Energia: liike-energia E k = puolet m v toiseen, potentiaalienergia E p = m g h ja energiaperiaate, jossa "
-            "alun mekaaninen energia ja muiden voimien työ on yhtä suuri kuin lopun mekaaninen energia. Liikemäärä: p = m v vektoreina, "
-            "impulssiperiaate summa F kertaa delta t = delta p ja liikemäärän säilyminen törmäyksessä. Sovellukset: törmäyksessä liikemäärä "
-            "säilyy mutta liike-energia vain kimmoisassa, pysähtymismatka on reaktiomatka ja jarrutusmatka, ja vesivoimalan teho "
-            "on eeta rho Q g h.", width=380, size=20)
+    f = Fig("fy9sl-kartta", 604, "Käsitekartta. Ylhäällä solmu säilymislait: energia ja liikemäärä. Siitä lähtee alas kolme haaraa. Energia: "
+            "liike-energia E k = puolet m v toiseen, potentiaalienergia E p = m g h ja energiaperiaate, jossa alun "
+            "mekaaninen energia ja muiden voimien työ on yhtä suuri kuin lopun mekaaninen energia. Liikemäärä: p = m v "
+            "vektoreina, impulssiperiaate impulssi I = delta p ja liikemäärän säilyminen törmäyksessä. Sovellukset: "
+            "törmäyksessä liikemäärä säilyy mutta liike-energia vain kimmoisassa, pysähtymismatka on reaktiomatka ja "
+            "jarrutusmatka, ja vesivoimalan teho on eeta rho Q g h.", width=380, size=20)
     groups = [
         ("energia", [(r"E_\text{k} = \tfrac12 mv^2", "liike-energia"), (r"E_\text{p} = mgh", "potentiaalienergia"),
-                     (r"E_\text{mek,1} + W_\text{muut} = E_\text{mek,2}", "")]),
-        ("liikemäärä", [(r"\overline{p} = m\overline{v}", "määritelmä"), (r"\Sigma\overline{F}\,\Delta t = \Delta\overline{p}", "impulssi"),
+                     (r"E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}", "")]),
+        ("liikemäärä", [(r"\overline{p} = m\overline{v}", "määritelmä"), (r"\overline{I} = \Delta\overline{p}", "impulssi"),
                         (r"\overline{p}_\text{ennen} = \overline{p}_\text{jälkeen}", "säilyminen")]),
         ("sovellukset", [(r"\text{törmäys: } p \text{ säilyy, } E_\text{k} \text{ ei aina}", ""),
                       (r"s_\text{p} = v_0 t_\text{r} + v_0^2/(2a)", "pysähtyminen"), (r"P = \eta\rho Qgh", "vesivoima")]),

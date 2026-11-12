@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 3e3f4a33c6a16ade
-
-Science review, round 3, of the English translation of fy9-moderni (source content/fi/units/fy9-moderni/).
-
-Since round 2 the only content change is the redrawn concept map in unit.md (`<svg data-fig="kartta">`): the three
-branch headings are now English and its formulas are unchanged (`hf = W + E_\text{k,max}`, `hf = E_\text{u} - E_\text{l}`,
-`eU_\text{k} \approx hf`, `N = N_0 (1/2)^{t/T_{1/2}}`, `A = \lambda N`, `Q = \Delta m c^2`, `D = E/m`,
-`H_\text{T} = w_\text{R} D_\text{T}`, `\dot H \propto 1/r^2`). Text, tasks, numbers, correct options, tolerances and
-answers are as verified in rounds 1 and 2. check_i18n.py: en 0 errors; units.py check: 77 units ok;
-practice.py check: en/units/fy9-moderni 6 tasks, 95 points.
+CONTENT-HASH: 9dfe588468827c1b
+Delta review (formulas in MAFY form, 2026-11-12) of the version passed at 3e3f4a33c6a16ade.
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-None.
+1. `unit.md`: $\lambda$ is now both the wavelength and the decay constant on the same page. Fix: add "(here $\lambda$ is the decay constant, not the wavelength)".
+2. `unit.md`: $\dot{H}_0$ is not named. Fix: add "$\dot{H}_0$ the dose rate without the shield".
+3. `inquiry.json` writes the reaction energy as $Q = (\dots)c^2$, while the theory uses $E = \Delta m c^2$. Fix: align them.
+
+## Checked
+$N = N_0e^{-\lambda t}$ with $\lambda = \ln 2/T_{1/2}$ ($e^{-\lambda T_{1/2}} = 0.5$ exactly). The half-life form $N_0(\tfrac12)^{t/T_{1/2}}$ is still given, as the tasks need. $\Delta m$ = reactants − products and $E = \Delta m c^2$ are consistent with $E_\text{B}$. $p = E/c = h/\lambda$. $H = w_\text{R} D$. For $I = I_0 e^{-\mu x}$ with $d_{1/2} = \ln 2/\mu$ I recomputed $e^{-1.5}$ = 0.2231 = $0.5^{x/d_{1/2}}$. The map matches. The English text says the same physics as fi. The other rows are unchanged.

@@ -1,18 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: cc71cb661f7317ac
-
-## Delta review (2026-11-04)
-
-The only change since the previous PASS: in figure "tilanteet" the muted "Earth" label moved from x 300 to x 328 (unit.md foreignObject x 270 -> 298; lessons figures.py f.tex 300 -> 328). `git diff HEAD` on content/en/units/fy9-ympyraliike and lessons/units/fy9-ympyraliike shows nothing else. No physics changes: the satellite panel still shows the gravitational force F̄ and acceleration ā pointing down toward Earth (the centre), v̄ tangential, and the equation γMm/r² = mv²/r. The label still names the Earth arc. Verdict stays PASS.
-
-## Earlier report
-
-Science review of the English translation of fy9-ympyraliike, round 3 (source content/fi/units/fy9-ympyraliike/ PASS at 678dc353273487b6). Reviewer 2026-11-04.
-
-Since round 2 the only changes are figure texts in the concept map: the redrawn figure (after the shared figlib.translate() fix for \textbf{}) and the round-2 Polish 1 wording, which this reviewer applied. No number, formula, answer, tolerance or correct flag has changed; the round-1/2 checks still hold (geostationary r = 42 160 km, h = 35 790 km, polar satellite 7438 m/s and 101.4 min, loop 22.76 m/s and 3696 N, trailer 445 N / 45.3 kg, exit ticket 2.51 m/s). check_i18n.py: en 0 errors; units.py check: 77 units ok; practice.py check en/units/fy9-ympyraliike: OK, 6 tasks, 95 points.
+CONTENT-HASH: 324dc435792c3e27
+Delta review (formulas in MAFY form, 2026-11-12) of the version passed at cc71cb661f7317ac.
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-1. Round-2 Polish 1 fixed: figures.json "ei etene" now "does not start to move" (concept map beside $\Sigma\overline{F} = \overline{0}$), and the alt text says "so the body does not start to move", consistent with the "Key idea". Figure redrawn with units.py figures --lang en; label fits at 390 px.
+(none)
+
+## Checked
+$v = \omega r$, with $\omega = 2\pi/T = 2\pi f$ in rad/s and $v = 2\pi r/T$ kept. $a_\text{n} = v^2/r = \omega^2 r$: I recomputed r = 2 m and T = 3 s, giving 4.189 m/s and 8.773 m/s² both ways. $F_\text{g}$ is defined. These are MAFY's forms, and the map matches. The English text says the same physics as fi. The other rows are unchanged.

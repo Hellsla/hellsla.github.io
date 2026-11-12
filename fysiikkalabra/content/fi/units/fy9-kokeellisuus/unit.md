@@ -197,17 +197,15 @@ Satunnaisvirhe näkyy toistettujen tulosten hajontana, ja keskiarvossa sen vaiku
 ## Kaava: Mittaustuloksen käsittely
 Toistettujen mittausten paras arvio on keskiarvo, ja tässä kurssissa hajonnan arvio on vaihteluvälin puolikas:
 
-```latex
-\begin{aligned}
-\bar{x} &= \frac{x_1 + x_2 + \dots + x_n}{n} \\
-\Delta x &= \frac{x_\text{max} - x_\text{min}}{2}
-\end{aligned}
+```kaavat
+keskiarvo :: \bar{x} = \frac{x_1 + x_2 + \dots + x_n}{n}
+mittaustuloksen epävarmuus :: \Delta x = \frac{x_\text{max} - x_\text{min}}{2}
 ```
 
 missä $n$ on mittausten lukumäärä, $x_\text{max}$ suurin ja $x_\text{min}$ pienin tulos. Tulos ilmoitetaan muodossa $\bar{x} \pm \Delta x$, ja virhearvio pyöristetään yhteen merkitsevään numeroon (kahteen, jos ensimmäinen numero on 1). Suhteellinen epävarmuus
 
-```latex
-\varepsilon = \frac{\Delta x}{\bar{x}}
+```kaavat
+suhteellinen epävarmuus :: \varepsilon = \frac{\Delta x}{\bar{x}}
 ```
 
 kertoo, onko epävarmuus tuloksen kokoon nähden pieni. Mittausalue valitaan niin suureksi, että $\varepsilon$ jää pieneksi: aika mitataan esimerkiksi kymmenestä heilahduksesta.
@@ -215,8 +213,8 @@ kertoo, onko epävarmuus tuloksen kokoon nähden pieni. Mittausalue valitaan nii
 ### Tulos kuvaajan kulmakertoimesta
 Kun mallin mukaan suureet riippuvat toisistaan lineaarisesti, mittauspisteisiin sovitetaan suora
 
-```latex
-y = kx + b
+```kaavat
+suoran yhtälö :: y = kx + b
 ```
 
 missä $k = \tfrac{\Delta y}{\Delta x}$ on kulmakerroin, joka luetaan suoran kahdesta kaukana toisistaan olevasta pisteestä, ja $b$ on suoran ja pystyakselin leikkauskohta. Malli pätee vain mitatulla alueella, ja suoraa jatketaan sen ulkopuolelle vain perustellusti. Kun haettu suure saadaan kulmakertoimesta, kaikki pisteet vaikuttavat tulokseen ja yksittäisen pisteen satunnaisvirhe vähemmän.

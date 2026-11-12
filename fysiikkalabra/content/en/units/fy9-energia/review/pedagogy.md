@@ -1,13 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: c07484c136b4b42f
+CONTENT-HASH: e1fa40ffe398b11f
 
-Delta review of the FY9 audit fixes (2026-11-10). Previous PASS hash: b346ed8b9e1ca0c5. The hash was the same at the start and the end of this review.
+Delta review (formulas in MAFY form, 2026-11-12) of the version passed at c07484c136b4b42f.
 
-## Blocking
-None.
+Blocking: none. The new symbols are defined in the sentence after each formula block, the tasks' forms are still derivable from the theory, and the unit stays coherent for a student.
 
-## Polish
-None.
-
-## Checked
-- The change is the Tutki graph axis geometry only; no text, question or answer changed, so the learning path is unaffected. Axis and arrowhead now lie inside the viewBox (diff checked).
+No Polish.

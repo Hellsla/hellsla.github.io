@@ -211,7 +211,7 @@ Kaikki tämän tunnin tehtävät perustuvat samaan periaatteeseen: **energia sä
 
 Säilymislaista lähtee kolme kysymystä. Kokeen energiatehtävät perustuvat niihin. **Kuinka nopeasti** energiaa muuttuu? Sen kertoo teho. **Kuinka suuri osa** energiasta tulee hyödyksi? Sen kertoo hyötysuhde. **Mistä** energia tulee? Se voi tulla polttoaineesta, voiman tekemästä työstä tai virtaavasta vedestä, tuulesta ja auringosta. Polttoaineen energian kertoo sen lämpöarvo.
 
-<svg data-fig="kartta" viewBox="0 0 380 596" role="img" aria-label="Käsitekartta. Ylhäällä on solmu energia säilyy: E alussa on yhtä suuri kuin E lopussa. Solmusta lähtee alas kolme haaraa. Ensimmäinen haara on teho: P = ΔE / Δt, energia tehosta E = P t ja kilowattitunti 1 kWh = 3,6 MJ. Toinen haara on hyötysuhde: eeta = E a / E o, häviöt E o = E a + E h ja energiaketju. Energiaketjussa eeta on vaiheiden hyötysuhteiden tulo eeta 1 eeta 2 eeta 3. Kolmas haara on energian lähde: polttoaine E = H m, työ W = F s ja nostotyö W = m g h." style="max-width:100%;font-size:21px">
+<svg data-fig="kartta" viewBox="0 0 380 596" role="img" aria-label="Käsitekartta. Ylhäällä on solmu energia säilyy: E alussa on yhtä suuri kuin E lopussa. Solmusta lähtee alas kolme haaraa. Ensimmäinen haara on teho: P = ΔE / Δt, energia tehosta E = P t ja kilowattitunti 1 kWh = 3,6 MJ. Toinen haara on hyötysuhde: eeta = E a / E o, häviöt E o = E a + E h ja energiaketju. Energiaketjussa eeta on vaiheiden hyötysuhteiden tulo eeta 1 eeta 2 eeta 3. Kolmas haara on energian lähde: polttoaine Q = H m, työ W = F s ja nostotyö W = m g h." style="max-width:100%;font-size:21px">
   <line x1="24" y1="80" x2="24" y2="454" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
   <foreignObject x="115" y="16.5" width="150" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:21px">$\text{energia säilyy}$</div></foreignObject>
@@ -240,7 +240,7 @@ Säilymislaista lähtee kolme kysymystä. Kokeen energiatehtävät perustuvat ni
   <rect x="44" y="432" width="328" height="150" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
   <foreignObject x="58" y="441.5" width="161" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\textbf{energian lähde}$</div></foreignObject>
   <line x1="54" y1="474" x2="362" y2="474" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="485.5" width="52" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$E = Hm$</div></foreignObject>
+  <foreignObject x="58" y="485.5" width="52" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$Q = Hm$</div></foreignObject>
   <foreignObject x="260" y="487" width="102" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{polttoaine}$</div></foreignObject>
   <foreignObject x="58" y="519.5" width="52" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$W = Fs$</div></foreignObject>
   <foreignObject x="326" y="521" width="36" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{työ}$</div></foreignObject>
@@ -258,34 +258,34 @@ Nyt voimme vastata alun kysymykseen. Kymmenessä litrassa bensiiniä on energiaa
 
 Eristetty systeemi on systeemi, johon energiaa ei tule ja josta energiaa ei lähde. Eristetyssä systeemissä kokonaisenergia pysyy samana:
 
-```latex
-E_\text{alussa} = E_\text{lopussa}
+```kaavat
+energian säilymislaki :: E_\text{alussa} = E_\text{lopussa}
 ```
 
 Yhtälön kummallakin puolella on kaikkien energialajien summa. Myös lämpöenergia on mukana. Teho kertoo, kuinka paljon energiaa muuttuu tai siirtyy aikayksikössä:
 
-```latex
-P = \frac{\Delta E}{\Delta t}
+```kaavat
+teho :: P = \frac{\Delta E}{\Delta t}
 ```
 
 Kaavassa $P$ on teho (W), $\Delta E$ energia (J) ja $\Delta t$ aika (s). Jos teho vaihtelee, kaava antaa keskitehon. Jos teho pysyy samana, $E = P\,t$. Kilowattitunti on energian yksikkö. Se muunnetaan jouleiksi sijoittamalla:
 
-```latex
-1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}
+```kaavat
+kilowattitunti jouleina :: 1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}
 ```
 
 ### Hyötysuhde ja energiaketju
 
-```latex
-\eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}
+```kaavat
+hyötysuhde :: \eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}
 ```
 
 Kaavassa $\eta$ on hyötysuhde. $E_\text{a}$ on annettu hyötyenergia ja $P_\text{a}$ annettu hyötyteho. $E_\text{o}$ on otettu energia ja $P_\text{o}$ otettu teho. Tehojen suhdetta voi käyttää, kun laite toimii tasaisesti. Energia säilyy, joten $E_\text{o} = E_\text{a} + E_\text{h}$. Tässä $E_\text{h}$ on häviöt eli energia, joka ei tule hyödyksi. Hyötysuhde on enintään $100\,\%$. Hyötysuhde riippuu siitä, mitä pidetään hyötynä.
 
 Energiaketjussa on monta vaihetta peräkkäin. Jokaisen vaiheen hyötyteho on seuraavan vaiheen otettu teho. Siksi hyötysuhteet kerrotaan:
 
-```latex
-\eta = \eta_1\,\eta_2\,\eta_3
+```kaavat
+energiaketjun kokonaishyötysuhde :: \eta = \eta_1\,\eta_2\,\eta_3
 ```
 
 Kuvan esimerkkilaitoksessa $\eta = 0{,}90 \cdot 0{,}45 \cdot 0{,}98 \approx 0{,}40$. Polttoainetehosta $500\,\text{MW}$ tulee siis sähköksi $198\,\text{MW}$. Kuvan kaistojen leveydet ovat mittakaavassa. Lähtevät kaistat ovat yhteensä yhtä leveät kuin tuleva kaista.
@@ -325,14 +325,12 @@ Kuvan esimerkkilaitoksessa $\eta = 0{,}90 \cdot 0{,}45 \cdot 0{,}98 \approx 0{,}
 
 Polttoaineesta vapautuva energia ja voiman tekemä työ ovat
 
-```latex
-\begin{aligned}
-E &= Hm \\
-W &= Fs
-\end{aligned}
+```kaavat
+palamisessa vapautuva lämpö :: Q = Hm
+voiman tekemä työ :: W = Fs
 ```
 
-Ensimmäisessä kaavassa $H$ on lämpöarvo ($\text{MJ/kg}$) ja $m$ palanut massa (kg). Kaava $E = Hm$ pätee, kun polttoaine palaa kokonaan. Lisäksi lämpöarvon $H$ täytyy vastata polttoaineen todellista kosteutta. Toisessa kaavassa $F$ on vakiovoima (N), joka on liikkeen suuntainen, ja $s$ on matka (m). Kun kappale nostetaan tasaisella nopeudella, työ on $W = mgh$. Siinä $g = 9{,}81\,\text{m/s}^2$ ja $h$ on nostokorkeus.
+Ensimmäisessä kaavassa $Q$ on vapautuva lämpö (J), $H$ on lämpöarvo ($\text{MJ/kg}$) ja $m$ palanut massa (kg). Kaava $Q = Hm$ pätee, kun polttoaine palaa kokonaan. Lisäksi lämpöarvon $H$ täytyy vastata polttoaineen todellista kosteutta. Toisessa kaavassa $F$ on vakiovoima (N), joka on liikkeen suuntainen, ja $s$ on matka (m). Kun kappale nostetaan tasaisella nopeudella, työ on $W = mgh$. Siinä $g = 9{,}81\,\text{m/s}^2$ ja $h$ on nostokorkeus.
 
 ## Yleisiä virheitä {Virheet}
 

@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 7685c54b69a24389
+CONTENT-HASH: e5d0ab5151ff19d0
 
-Delta review of the FY9 audit fixes (2026-11-10). Previous PASS hash: c1b7d026abcd2b8a. The hash was the same at the start and the end of this review.
+Delta review (formulas in MAFY form, 2026-11-12) of the version passed at 7685c54b69a24389.
 
 ## Blocking
-None.
+None. Built at 390 and 1280 px: KaTeX renders without errors, no horizontal overflow, upright subscripts, \overline vectors and spacing correct, formula map text fits its boxes, the new definition sentences read naturally.
 
 ## Polish
-- [Minor] Older, out of scope: with every <details> forced open at 360 px the page is wider than the viewport (long substitution chains in some collapsed model answers); not caused by these fixes, and the changed parts themselves fit.
+None.
 
 ## Checked
-- Ennusta lt-1 feedback reads 'Jos keskimääräinen hidastuvuus pysyy samana, myös jarrutusmatka nelinkertaistuu.' (en equivalent): fluent, one voice; s1 b answer -19,73 kJ shown with the minus sign in the model answer, no typographic problem.
-- Language checked: fi-easy wording of the changed sentences is natural and consistent with the glossary.
+I did not open this pair's rendered sheet. The verdict rests on the overflow and KaTeX-error scan of the built page at 390 and 1280 px, the diff text, and the fi version's sheet (same LaTeX, same map layout; only label words differ).

@@ -211,7 +211,7 @@ All the problems of this lesson start from the same principle: **energy is conse
 
 Three questions branch off from the conservation law, and the energy problems of the exam come back to them. **How fast** is energy transformed? Power tells that. **How large a share** is useful? Efficiency tells that. **Where** does the energy come from? From the heat of combustion of a fuel, from the work done by a force, or from flowing water, the wind and the sun.
 
-<svg data-fig="kartta" viewBox="0 0 380 596" role="img" aria-label="Concept map. At the top is the node energy is conserved: E initial equals E final. Three branches lead down from it. Power: P = ΔE / Δt, energy from power E = P t and the kilowatt-hour 1 kWh = 3.6 MJ. Efficiency: eta = E a / E o, losses E o = E a + E h and the energy chain, in which eta is the product of the efficiencies of the stages, eta 1 eta 2 eta 3. Source of energy: fuel E = H m, work W = F s and work of lifting W = m g h." style="max-width:100%;font-size:21px">
+<svg data-fig="kartta" viewBox="0 0 380 596" role="img" aria-label="Concept map. At the top is the node energy is conserved: E initial equals E final. Three branches lead down from it. Power: P = ΔE / Δt, energy from power E = P t and the kilowatt-hour 1 kWh = 3.6 MJ. Efficiency: eta = E a / E o, losses E o = E a + E h and the energy chain, in which eta is the product of the efficiencies of the stages, eta 1 eta 2 eta 3. Source of energy: fuel Q = H m, work W = F s and work of lifting W = m g h." style="max-width:100%;font-size:21px">
   <line x1="24" y1="80" x2="24" y2="454" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
   <foreignObject x="93" y="16.5" width="194" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:21px">$\text{energy is conserved}$</div></foreignObject>
@@ -240,7 +240,7 @@ Three questions branch off from the conservation law, and the energy problems of
   <rect x="44" y="432" width="328" height="150" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
   <foreignObject x="58" y="441.5" width="172" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\textbf{source of energy}$</div></foreignObject>
   <line x1="54" y1="474" x2="362" y2="474" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="485.5" width="52" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$E = Hm$</div></foreignObject>
+  <foreignObject x="58" y="485.5" width="52" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$Q = Hm$</div></foreignObject>
   <foreignObject x="317" y="487" width="45" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{fuel}$</div></foreignObject>
   <foreignObject x="58" y="519.5" width="52" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$W = Fs$</div></foreignObject>
   <foreignObject x="317" y="521" width="45" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{work}$</div></foreignObject>
@@ -258,34 +258,34 @@ This also answers the opening question. Ten litres of petrol contain about $7.5\
 
 In an isolated system, which no energy enters or leaves, the total energy stays the same:
 
-```latex
-E_\text{initial} = E_\text{final}
+```kaavat
+conservation of energy :: E_\text{initial} = E_\text{final}
 ```
 
 where each side is the sum of all forms of energy, thermal energy included. Power is the energy transformed or transferred per unit time:
 
-```latex
-P = \frac{\Delta E}{\Delta t}
+```kaavat
+power :: P = \frac{\Delta E}{\Delta t}
 ```
 
 where $P$ is the power (W), $\Delta E$ the energy (J) and $\Delta t$ the time (s). For uneven use the formula gives the average power; at constant power $E = P\,t$. The kilowatt-hour is a unit of energy, and it is converted by substitution:
 
-```latex
-1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3.6\,\text{MJ}
+```kaavat
+kilowatt-hour in joules :: 1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3.6\,\text{MJ}
 ```
 
 ### Efficiency and the energy chain
 
-```latex
-\eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}
+```kaavat
+efficiency :: \eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}
 ```
 
 where $\eta$ is the efficiency, $E_\text{a}$ and $P_\text{a}$ the useful energy and power given, and $E_\text{o}$ and $P_\text{o}$ the energy and power taken in. The ratio of the powers can be used when the device runs steadily. Energy is conserved, so $E_\text{o} = E_\text{a} + E_\text{h}$, where $E_\text{h}$ is the losses. The efficiency is at most $100\,\%$; it depends on what is defined as useful.
 
 In successive stages the useful power of each stage is the power taken in by the next, so the efficiencies are multiplied:
 
-```latex
-\eta = \eta_1\,\eta_2\,\eta_3
+```kaavat
+total efficiency of an energy chain :: \eta = \eta_1\,\eta_2\,\eta_3
 ```
 
 In the example plant in the figure $\eta = 0.90 \cdot 0.45 \cdot 0.98 \approx 0.40$: of the fuel power of $500\,\text{MW}$, $198\,\text{MW}$ becomes electricity. The widths of the bands are to scale, and the outgoing bands are together as wide as the incoming one.
@@ -325,14 +325,12 @@ In the example plant in the figure $\eta = 0.90 \cdot 0.45 \cdot 0.98 \approx 0.
 
 The energy released from a fuel and the work done by a force are
 
-```latex
-\begin{aligned}
-E &= Hm \\
-W &= Fs
-\end{aligned}
+```kaavat
+heat released in combustion :: Q = Hm
+work done by a force :: W = Fs
 ```
 
-where $H$ is the heat of combustion ($\text{MJ/kg}$) and $m$ the mass burnt (kg); $E = Hm$ holds when the fuel burns completely and $H$ is the heat of combustion for its actual moisture content. In the work, $F$ is a constant force in the direction of motion (N) and $s$ the distance (m). In steady lifting $W = mgh$, where $g = 9.81\,\text{m/s}^2$ and $h$ is the lifting height.
+where $Q$ is the heat released (J), $H$ the heat of combustion ($\text{MJ/kg}$) and $m$ the mass burnt (kg); $Q = Hm$ holds when the fuel burns completely and $H$ is the heat of combustion for its actual moisture content. In the work, $F$ is a constant force in the direction of motion (N) and $s$ the distance (m). In steady lifting $W = mgh$, where $g = 9.81\,\text{m/s}^2$ and $h$ is the lifting height.
 
 ## Common mistakes {Virheet}
 

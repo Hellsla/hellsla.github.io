@@ -96,18 +96,19 @@ def hero():
 def kartta():
     """The concept map, stacked for a phone: quantised energy at the top, a spine down the left and three boxes
     (photon and atom, the nucleus, radiation and the body), each with three laws and a grey word beside each."""
-    f = Fig("fy9mo-kartta", 744, "Käsitekartta. Ylhäällä solmu kvantittunut energia: fotonin energia E = h f ja massan ja "
-            "energian yhteys E = m c toiseen. Siitä lähtee alas kolme haaraa. Fotoni ja atomi, elektronivolttien maailma: "
-            "valosähköinen yhtälö h f = W + E k max, spektriviivan fotoni h f = E y miinus E a ja LEDin kynnysjännite e U k "
-            "likimain h f. Ydin, megaelektronivolttien maailma: hajoamislaki N = N 0 kertaa puoli potenssiin t per T puoli, "
-            "aktiivisuus A = lambda N ja reaktioenergia Q = massojen erotus kertaa c toiseen. Säteily ja ihminen, annos: "
-            "absorboitunut annos D = E per m, ekvivalenttiannos H T = w R kertaa D T ja etäisyyden neliölaki. Alareunassa kaikkia haaroja yhdistävä ohje: ensin yksi hiukkanen, sitten lukumäärä.", width=380, size=20)
+    f = Fig("fy9mo-kartta", 744, "Käsitekartta. Ylhäällä solmu kvantittunut energia: fotonin energia E = h f ja massan ja energian yhteys E = m "
+            "c toiseen. Siitä lähtee alas kolme haaraa. Fotoni ja atomi, elektronivolttien maailma: valosähköinen yhtälö h "
+            "f = W + E k max, spektriviivan fotoni h f = E y miinus E a ja LEDin kynnysjännite e U k likimain h f. Ydin, "
+            "megaelektronivolttien maailma: hajoamislaki N = N 0 kertaa e potenssiin miinus lambda t, aktiivisuus A = "
+            "lambda N ja reaktioenergia E = massaero kertaa c toiseen. Säteily ja ihminen, annos: absorboitunut annos D = E "
+            "per m, ekvivalenttiannos H = w R kertaa D ja etäisyyden neliölaki. Alareunassa kaikkia haaroja yhdistävä ohje: "
+            "ensin yksi hiukkanen, sitten lukumäärä.", width=380, size=20)
     groups = [
         ("fotoni ja atomi", "eV", [(r"hf = W + E_\text{k,max}", "irtoaminen"), (r"hf = E_\text{y} - E_\text{a}", "spektri"),
                                     (r"eU_\text{k} \approx hf", "LED")]),
-        ("ydin", "MeV", [(r"N = N_0 \left(\tfrac12\right)^{t/T_{1/2}}", "hajoaminen"), (r"A = \lambda N", "aktiivisuus"),
-                         (r"Q = \Delta m\,c^2", "reaktio")]),
-        ("säteily ja ihminen", "annos", [(r"D = E/m", "absorboitunut"), (r"H_\text{T} = w_\text{R} D_\text{T}", "painotettu"),
+        ("ydin", "MeV", [(r"N = N_0 e^{-\lambda t}", "hajoaminen"), (r"A = \lambda N", "aktiivisuus"),
+                         (r"E = \Delta m\,c^2", "reaktio")]),
+        ("säteily ja ihminen", "annos", [(r"D = E/m", "absorboitunut"), (r"H = w_\text{R} D", "painotettu"),
                                          (r"\dot{H} \propto 1/r^2", "etäisyys")]),
     ]
     hub_y, hub_h, x_box, gh, top = 8, 72, 44, 188, 100

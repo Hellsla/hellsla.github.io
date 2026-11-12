@@ -92,16 +92,16 @@ def hero():
 def kartta():
     """The concept map, stacked for a phone: the conservation of energy at the top, a spine down the left and three
     branches (power, efficiency, the source of the energy), each a box of three laws with a grey word beside each."""
-    f = Fig("fy9en-kartta", 596, "Käsitekartta. Ylhäällä solmu energia säilyy: E alussa on yhtä suuri kuin E lopussa. "
-            "Siitä lähtee alas kolme haaraa. Teho: P = ΔE / Δt, energia tehosta E = P t ja kilowattitunti 1 kWh = 3,6 MJ. "
-            "Hyötysuhde: eeta = E a / E o, häviöt E o = E a + E h ja energiaketju, jossa eeta on vaiheiden hyötysuhteiden tulo "
-            "eeta 1 eeta 2 eeta 3. Energian lähde: polttoaine E = H m, työ W = F s ja nostotyö W = m g h.", width=380, size=21)
+    f = Fig("fy9en-kartta", 596, "Käsitekartta. Ylhäällä solmu energia säilyy: E alussa on yhtä suuri kuin E lopussa. Siitä lähtee alas kolme "
+            "haaraa. Teho: P = ΔE / Δt, energia tehosta E = P t ja kilowattitunti 1 kWh = 3,6 MJ. Hyötysuhde: eeta = E a / "
+            "E o, häviöt E o = E a + E h ja energiaketju, jossa eeta on vaiheiden hyötysuhteiden tulo eeta 1 eeta 2 eeta 3. "
+            "Energian lähde: polttoaine Q = H m, työ W = F s ja nostotyö W = m g h.", width=380, size=21)
     groups = [
         ("teho", [(r"P = \Delta E/\Delta t", "määritelmä"), (r"E = P\,t", "energia tehosta"),
                   (r"1\,\text{kWh} = 3{,}6\,\text{MJ}", "kilowattitunti")]),
         ("hyötysuhde", [(r"\eta = E_\text{a}/E_\text{o}", "määritelmä"), (r"E_\text{o} = E_\text{a} + E_\text{h}", "häviöt"),
                         (r"\eta = \eta_1\,\eta_2\,\eta_3", "energiaketju")]),
-        ("energian lähde", [(r"E = Hm", "polttoaine"), (r"W = Fs", "työ"), (r"W = mgh", "nostotyö")]),
+        ("energian lähde", [(r"Q = Hm", "polttoaine"), (r"W = Fs", "työ"), (r"W = mgh", "nostotyö")]),
     ]
     hub_y, hub_h, x_box, gh, top = 8, 72, 44, 150, 100
     spine = 24

@@ -158,7 +158,7 @@
 
 Moduulin kaikki ilmiöt alkavat **värähtelystä**: kappale liikkuu edestakaisin tasapainoasemansa molemmin puolin, ja liikettä kuvaavat jaksonaika $T$, taajuus $f$ ja amplitudi $A$. Jousen ja heilurin jaksonaika määräytyy värähtelijästä itsestään. **Aalto** on värähtely, joka etenee väliaineessa: hiukkaset värähtelevät paikoillaan, ja aalto kuljettaa energiaa mutta ei ainetta. **Ääni** on pitkittäinen paineaalto. Sen korkeus määräytyy taajuudesta ja voimakkuus intensiteetistä.
 
-<svg data-fig="kartta" viewBox="0 0 380 704" role="img" aria-label="Käsitekartta. Ylhäällä solmu jaksollinen liike: jaksonaika T, taajuus f = 1 per T ja amplitudi A. Siitä lähtee alas kolme haaraa. Värähtelijät, toistuva liike: jousen voima F = miinus k x, jousivärähtelijän jaksonaika T = 2 pii kertaa neliöjuuri m per k ja heilurin jaksonaika T = 2 pii kertaa neliöjuuri l per g. Aallot, värähtely etenee: aaltoliikkeen perusyhtälö v = f lambda, vahvistava interferenssi, kun matkaero on n lambda, ja kielen ominaistaajuudet f n = n v per 2 L. Ääni, aalto ilmassa: huojunta f h = f 1 miinus f 2 itseisarvona, Dopplerin ilmiö liikkuvalle lähteelle ja intensiteettitaso L = 10 desibeliä kertaa logaritmi I per I 0." style="max-width:100%;font-size:20px">
+<svg data-fig="kartta" viewBox="0 0 380 704" role="img" aria-label="Käsitekartta. Ylhäällä solmu jaksollinen liike: jaksonaika T, taajuus f = 1 per T ja amplitudi A. Siitä lähtee alas kolme haaraa. Värähtelijät, toistuva liike: jousen voima F = miinus k x vektoreina, jousivärähtelijän jaksonaika T = 2 pii kertaa neliöjuuri m per k ja heilurin jaksonaika T = 2 pii kertaa neliöjuuri l per g. Aallot, värähtely etenee: aaltoliikkeen perusyhtälö v = f lambda, vahvistava interferenssi, kun matkaero on n lambda, ja kielen ominaistaajuudet f n = n v per 2 L. Ääni, aalto ilmassa: huojunta f H = f 1 miinus f 2 itseisarvona, Dopplerin ilmiö lähteen liikkuessa kohti havaitsijaa ja intensiteettitaso L = 10 desibeliä kertaa logaritmi I per I 0." style="max-width:100%;font-size:20px">
   <line x1="24" y1="80" x2="24" y2="530" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
   <foreignObject x="103" y="18" width="174" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\text{jaksollinen liike}$</div></foreignObject>
@@ -168,7 +168,7 @@ Moduulin kaikki ilmiöt alkavat **värähtelystä**: kappale liikkuu edestakaisi
   <foreignObject x="58" y="110" width="143" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{värähtelijät}$</div></foreignObject>
   <foreignObject x="239" y="112" width="123" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{toistuva liike}$</div></foreignObject>
   <line x1="54" y1="142" x2="362" y2="142" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="156" width="60" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$F = -kx$</div></foreignObject>
+  <foreignObject x="58" y="157" width="74" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$\overline{F} = -k\overline{x}$</div></foreignObject>
   <foreignObject x="257" y="158" width="105" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{jousen voima}$</div></foreignObject>
   <foreignObject x="58" y="196" width="91" height="48" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$T = 2\pi\sqrt{m/k}$</div></foreignObject>
   <foreignObject x="310" y="210" width="52" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{jousi}$</div></foreignObject>
@@ -190,9 +190,9 @@ Moduulin kaikki ilmiöt alkavat **värähtelystä**: kappale liikkuu edestakaisi
   <foreignObject x="58" y="518" width="60" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{ääni}$</div></foreignObject>
   <foreignObject x="248" y="520" width="114" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{aalto ilmassa}$</div></foreignObject>
   <line x1="54" y1="550" x2="362" y2="550" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="565" width="102" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$f_\text{h} = |f_1 - f_2|$</div></foreignObject>
+  <foreignObject x="58" y="565" width="102" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$f_\text{H} = |f_1 - f_2|$</div></foreignObject>
   <foreignObject x="283" y="566" width="79" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{huojunta}$</div></foreignObject>
-  <foreignObject x="58" y="617" width="130" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$f = f_0 \cdot v/(v \mp v_\text{s})$</div></foreignObject>
+  <foreignObject x="58" y="617" width="130" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$f = f_0\,v/(v - v_\text{L})$</div></foreignObject>
   <foreignObject x="292" y="618" width="70" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{Doppler}$</div></foreignObject>
   <foreignObject x="58" y="669" width="148" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$L = 10\,\text{dB} \cdot \lg(I/I_0)$</div></foreignObject>
   <foreignObject x="319" y="670" width="43" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{taso}$</div></foreignObject>
@@ -233,25 +233,21 @@ Tästä saadaan vastaus alun kysymykseen. Pilli värähtelee taajuudella $3{,}0\
 
 ### Värähtelijät
 
-```latex
-\begin{aligned}
-f &= \frac{1}{T} \\
-F &= -kx \\
-T &= 2\pi\sqrt{\frac{m}{k}} \\
-T &= 2\pi\sqrt{\frac{l}{g}}
-\end{aligned}
+```kaavat
+taajuus :: f = \frac{1}{T}
+harmoninen voima :: \overline{F} = -k\overline{x}
+harmonisen värähtelijän jaksonaika :: T = 2\pi\sqrt{\frac{m}{k}}
+matemaattisen heilurin jaksonaika :: T = 2\pi\sqrt{\frac{l}{g}}
 ```
 
-missä $f$ on taajuus ($\text{Hz}$), $T$ jaksonaika ($\text{s}$), $F$ jousen voima ($\text{N}$), $k$ jousivakio ($\text{N/m}$), $x$ poikkeama tasapainoasemasta ($\text{m}$), $m$ massa ($\text{kg}$) ja $l$ heilurin pituus ($\text{m}$). Jousen voima pätee, kun jousta ei venytetä liikaa. Heilurin jaksonaika pätee pienillä heilahduksilla, eikä se riipu massasta. Jousen potentiaalienergia on $E_\text{p} = \tfrac12 kx^2$, ja ilman kitkaa värähtelyn energia $\tfrac12 kA^2$ säilyy.
+missä $f$ on taajuus ($\text{Hz}$), $T$ jaksonaika ($\text{s}$), $\overline{F}$ jousen voima ($\text{N}$), $k$ jousivakio ($\text{N/m}$), $\overline{x}$ poikkeama tasapainoasemasta ($\text{m}$); miinusmerkki kertoo, että voima osoittaa kohti tasapainoasemaa, $m$ massa ($\text{kg}$) ja $l$ heilurin pituus ($\text{m}$). Jousen voima pätee, kun jousta ei venytetä liikaa. Heilurin jaksonaika pätee pienillä heilahduksilla, eikä se riipu massasta. Jousen potentiaalienergia on $E_\text{p} = \tfrac12 kx^2$, ja ilman kitkaa värähtelyn energia $\tfrac12 kA^2$ säilyy.
 
 ### Aallot
 
-```latex
-\begin{aligned}
-v &= f\lambda \\
-\Delta s &= n\lambda \\
-\Delta s &= \left(n + \tfrac12\right)\lambda
-\end{aligned}
+```kaavat
+aaltoliikkeen perusyhtälö :: v = f\lambda
+vahvistava interferenssi :: \Delta s = n\lambda
+heikentävä interferenssi :: \Delta s = \left(n + \tfrac12\right)\lambda
 ```
 
 missä $v$ on aallon nopeus ($\text{m/s}$), $\lambda$ aallonpituus ($\text{m}$) ja $\Delta s$ matkaero kahdesta samassa vaiheessa värähtelevästä lähteestä ($\text{m}$), $n = 0, 1, 2, \ldots$ Ensimmäinen ehto antaa vahvistavan ja toinen heikentävän interferenssin. Diffraktio on voimakasta, kun raon tai esteen leveys on aallonpituuden suuruinen tai pienempi. Heijastuksessa tulokulma on heijastuskulman suuruinen, kun kulmat mitataan pinnan normaalista.
@@ -292,17 +288,17 @@ Seisovassa aallossa vierekkäisten solmujen väli on $\tfrac{\lambda}{2}$. Kiele
 
 ### Ääni
 
-```latex
-\begin{aligned}
-f_\text{h} &= |f_1 - f_2| \\
-f &= f_0 \cdot \frac{v}{v \mp v_\text{s}} \\
-f &= f_0 \cdot \frac{v \pm v_\text{h}}{v} \\
-I &= \frac{P}{4\pi r^2} \\
-L &= 10\,\text{dB} \cdot \lg \frac{I}{I_0}
-\end{aligned}
+```kaavat
+huojunta :: f_\text{H} = |f_1 - f_2|
+Dopplerin ilmiö, äänilähde liikkuu kohti havaitsijaa :: f = f_0\,\frac{v}{v - v_\text{L}}
+Dopplerin ilmiö, äänilähde liikkuu pois päin havaitsijasta :: f = f_0\,\frac{v}{v + v_\text{L}}
+Dopplerin ilmiö, havaitsija liikkuu kohti äänilähdettä :: f = f_0\,\frac{v + v_\text{H}}{v}
+Dopplerin ilmiö, havaitsija liikkuu pois päin äänilähteestä :: f = f_0\,\frac{v - v_\text{H}}{v}
+intensiteetti :: I = \frac{P}{A}
+äänen intensiteettitaso :: L = 10\,\text{dB} \cdot \lg \frac{I}{I_0}
 ```
 
-missä $f_\text{h}$ on huojuntataajuus ($\text{Hz}$), $f_0$ lähteen ja $f$ kuultu taajuus ($\text{Hz}$), $v$ äänen nopeus, $v_\text{s}$ lähteen ja $v_\text{h}$ kuulijan nopeus ilman suhteen ($\text{m/s}$). Dopplerin kaavoissa ylempi merkki valitaan lähestyttäessä, ja ne pätevät, kun vain toinen liikkuu ja nopeus on äänen nopeutta pienempi. Intensiteetin lauseke pätee pistemäiselle lähteelle, jonka teho on $P$, etäisyydellä $r$ ilman heijastuksia. $L$ on intensiteettitaso ja $I_0 = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2$. Kaiusta etäisyys on $d = \tfrac{vt}{2}$, koska pulssi kulkee matkan kahdesti.
+missä $f_\text{H}$ on huojuntataajuus ($\text{Hz}$), $f_0$ lähteen ja $f$ kuultu taajuus ($\text{Hz}$), $v$ äänen nopeus, $v_\text{L}$ lähteen ja $v_\text{H}$ havaitsijan nopeus ilman suhteen ($\text{m/s}$). Dopplerin kaavat pätevät, kun vain toinen liikkuu ja nopeus on äänen nopeutta pienempi. Intensiteetti on teho $P$ pinta-alaa $A$ kohti. Pistemäisen lähteen ääni jakautuu etäisyydellä $r$ pallon pinnalle, jonka ala on $A = 4\pi r^2$, kun heijastuksia ei ole. $L$ on intensiteettitaso ja $I_0 = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2$. Kaiusta etäisyys on $d = \tfrac{vt}{2}$, koska pulssi kulkee matkan kahdesti.
 
 ## Yleisiä virheitä {Virheet}
 

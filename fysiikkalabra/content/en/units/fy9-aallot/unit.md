@@ -158,7 +158,7 @@
 
 All the phenomena of the module start from **oscillation**: a body moves back and forth on both sides of its equilibrium position, and the motion is described by the period $T$, the frequency $f$ and the amplitude $A$. The period of a spring and of a pendulum is set by the oscillator itself. A **wave** is an oscillation that travels through a medium: the particles oscillate in place, and the wave carries energy but not matter. **Sound** is a longitudinal pressure wave. Its pitch is set by the frequency and its loudness by the intensity.
 
-<svg data-fig="kartta" viewBox="0 0 380 704" role="img" aria-label="Concept map. At the top the node periodic motion: period T, frequency f = 1 over T and amplitude A. Three branches lead down from it. Oscillators, repeating motion: spring force F = minus k x, period of the mass–spring oscillator T = 2 pi times the square root of m over k and period of the pendulum T = 2 pi times the square root of l over g. Waves, oscillation travels: the wave equation v = f lambda, constructive interference when the path difference is n lambda, and the natural frequencies of a string f n = n v over 2 L. Sound, a wave in air: beats f h = the absolute value of f 1 minus f 2, the Doppler effect for a moving source and the intensity level L = 10 decibels times the logarithm of I over I 0." style="max-width:100%;font-size:20px">
+<svg data-fig="kartta" viewBox="0 0 380 704" role="img" aria-label="Concept map. At the top the node periodic motion: period T, frequency f = 1 over T and amplitude A. Three branches lead down from it. Oscillators, repeating motion: spring force F = minus k x as vectors, period of the mass–spring oscillator T = 2 pi times the square root of m over k and period of the pendulum T = 2 pi times the square root of l over g. Waves, oscillation travels: the wave equation v = f lambda, constructive interference when the path difference is n lambda, and the natural frequencies of a string f n = n v over 2 L. Sound, a wave in air: beats f H = the absolute value of f 1 minus f 2, the Doppler effect for a source moving towards the observer and the intensity level L = 10 decibels times the logarithm of I over I 0." style="max-width:100%;font-size:20px">
   <line x1="24" y1="80" x2="24" y2="530" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
   <foreignObject x="113" y="18" width="154" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\text{periodic motion}$</div></foreignObject>
@@ -168,7 +168,7 @@ All the phenomena of the module start from **oscillation**: a body moves back an
   <foreignObject x="58" y="110" width="133" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{oscillators}$</div></foreignObject>
   <foreignObject x="221" y="112" width="141" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{repeating motion}$</div></foreignObject>
   <line x1="54" y1="142" x2="362" y2="142" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="156" width="60" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$F = -kx$</div></foreignObject>
+  <foreignObject x="58" y="157" width="74" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$\overline{F} = -k\overline{x}$</div></foreignObject>
   <foreignObject x="257" y="158" width="105" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{spring force}$</div></foreignObject>
   <foreignObject x="58" y="196" width="91" height="48" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$T = 2\pi\sqrt{m/k}$</div></foreignObject>
   <foreignObject x="301" y="210" width="61" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{spring}$</div></foreignObject>
@@ -190,9 +190,9 @@ All the phenomena of the module start from **oscillation**: a body moves back an
   <foreignObject x="58" y="518" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{sound}$</div></foreignObject>
   <foreignObject x="266" y="520" width="96" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{a wave in air}$</div></foreignObject>
   <line x1="54" y1="550" x2="362" y2="550" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="565" width="102" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$f_\text{h} = |f_1 - f_2|$</div></foreignObject>
+  <foreignObject x="58" y="565" width="102" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$f_\text{H} = |f_1 - f_2|$</div></foreignObject>
   <foreignObject x="310" y="566" width="52" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{beats}$</div></foreignObject>
-  <foreignObject x="58" y="617" width="130" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$f = f_0 \cdot v/(v \mp v_\text{s})$</div></foreignObject>
+  <foreignObject x="58" y="617" width="130" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$f = f_0\,v/(v - v_\text{L})$</div></foreignObject>
   <foreignObject x="292" y="618" width="70" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{Doppler}$</div></foreignObject>
   <foreignObject x="58" y="669" width="148" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$L = 10\,\text{dB} \cdot \lg(I/I_0)$</div></foreignObject>
   <foreignObject x="310" y="670" width="52" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{level}$</div></foreignObject>
@@ -233,25 +233,21 @@ This gives the answer to the opening question. The whistle vibrates at the frequ
 
 ### Oscillators
 
-```latex
-\begin{aligned}
-f &= \frac{1}{T} \\
-F &= -kx \\
-T &= 2\pi\sqrt{\frac{m}{k}} \\
-T &= 2\pi\sqrt{\frac{l}{g}}
-\end{aligned}
+```kaavat
+frequency :: f = \frac{1}{T}
+harmonic force :: \overline{F} = -k\overline{x}
+period of a harmonic oscillator :: T = 2\pi\sqrt{\frac{m}{k}}
+period of a simple pendulum :: T = 2\pi\sqrt{\frac{l}{g}}
 ```
 
-where $f$ is the frequency ($\text{Hz}$), $T$ the period ($\text{s}$), $F$ the spring force ($\text{N}$), $k$ the spring constant ($\text{N/m}$), $x$ the displacement from the equilibrium position ($\text{m}$), $m$ the mass ($\text{kg}$) and $l$ the length of the pendulum ($\text{m}$). The spring force holds when the spring is not stretched too far. The period of the pendulum holds for small swings, and it does not depend on the mass. The elastic potential energy of a spring is $E_\text{p} = \tfrac12 kx^2$, and without friction the energy of the oscillation $\tfrac12 kA^2$ is conserved.
+where $f$ is the frequency ($\text{Hz}$), $T$ the period ($\text{s}$), $\overline{F}$ the spring force ($\text{N}$), $k$ the spring constant ($\text{N/m}$), $\overline{x}$ the displacement from the equilibrium position ($\text{m}$); the minus sign says that the force points towards the equilibrium position, $m$ the mass ($\text{kg}$) and $l$ the length of the pendulum ($\text{m}$). The spring force holds when the spring is not stretched too far. The period of the pendulum holds for small swings, and it does not depend on the mass. The elastic potential energy of a spring is $E_\text{p} = \tfrac12 kx^2$, and without friction the energy of the oscillation $\tfrac12 kA^2$ is conserved.
 
 ### Waves
 
-```latex
-\begin{aligned}
-v &= f\lambda \\
-\Delta s &= n\lambda \\
-\Delta s &= \left(n + \tfrac12\right)\lambda
-\end{aligned}
+```kaavat
+wave equation :: v = f\lambda
+constructive interference :: \Delta s = n\lambda
+destructive interference :: \Delta s = \left(n + \tfrac12\right)\lambda
 ```
 
 where $v$ is the speed of the wave ($\text{m/s}$), $\lambda$ the wavelength ($\text{m}$) and $\Delta s$ the path difference from two sources oscillating in phase ($\text{m}$), $n = 0, 1, 2, \ldots$ The first condition gives constructive and the second destructive interference. Diffraction is strong when the width of the gap or obstacle is about the wavelength or smaller. In reflection the angle of incidence equals the angle of reflection, when the angles are measured from the normal to the surface.
@@ -292,17 +288,17 @@ In a standing wave the distance between neighbouring nodes is $\tfrac{\lambda}{2
 
 ### Sound
 
-```latex
-\begin{aligned}
-f_\text{h} &= |f_1 - f_2| \\
-f &= f_0 \cdot \frac{v}{v \mp v_\text{s}} \\
-f &= f_0 \cdot \frac{v \pm v_\text{h}}{v} \\
-I &= \frac{P}{4\pi r^2} \\
-L &= 10\,\text{dB} \cdot \lg \frac{I}{I_0}
-\end{aligned}
+```kaavat
+beat frequency :: f_\text{H} = |f_1 - f_2|
+Doppler effect, source moving towards the observer :: f = f_0\,\frac{v}{v - v_\text{L}}
+Doppler effect, source moving away from the observer :: f = f_0\,\frac{v}{v + v_\text{L}}
+Doppler effect, observer moving towards the source :: f = f_0\,\frac{v + v_\text{H}}{v}
+Doppler effect, observer moving away from the source :: f = f_0\,\frac{v - v_\text{H}}{v}
+intensity :: I = \frac{P}{A}
+sound intensity level :: L = 10\,\text{dB} \cdot \lg \frac{I}{I_0}
 ```
 
-where $f_\text{h}$ is the beat frequency ($\text{Hz}$), $f_0$ the frequency of the source and $f$ the heard frequency ($\text{Hz}$), $v$ the speed of sound, $v_\text{s}$ the speed of the source and $v_\text{h}$ the speed of the listener relative to the air ($\text{m/s}$). In the Doppler formulas the upper sign is chosen when they approach, and the formulas hold when only one of them moves and the speed is smaller than the speed of sound. The expression for the intensity holds for a point source of power $P$ at the distance $r$ without reflections. $L$ is the intensity level and $I_0 = 1.0 \cdot 10^{-12}\,\text{W/m}^2$. The distance from an echo is $d = \tfrac{vt}{2}$, because the pulse travels the distance twice.
+where $f_\text{H}$ is the beat frequency ($\text{Hz}$), $f_0$ the frequency of the source and $f$ the heard frequency ($\text{Hz}$), $v$ the speed of sound, $v_\text{L}$ the speed of the source and $v_\text{H}$ the speed of the observer relative to the air ($\text{m/s}$). The Doppler formulas hold when only one of them moves and the speed is smaller than the speed of sound. The intensity is the power $P$ per unit area $A$. The sound of a point source spreads at the distance $r$ over a sphere of area $A = 4\pi r^2$, when there are no reflections. $L$ is the intensity level and $I_0 = 1.0 \cdot 10^{-12}\,\text{W/m}^2$. The distance from an echo is $d = \tfrac{vt}{2}$, because the pulse travels the distance twice.
 
 ## Common mistakes {Virheet}
 

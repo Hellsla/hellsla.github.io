@@ -1,20 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 12867208110cf969
+CONTENT-HASH: fc3483f5b1affd8c
 
-Round 2 (delta review of round 1 fixes; round 1 hash 795ad25aae986918)
+Delta review (formulas in MAFY form, 2026-11-12) of the version passed at 12867208110cf969.
 
-## Blocking
-(none in round 1, none now)
+Blocking: none. The new symbols are defined in the sentence after each formula block, the tasks' forms are still derivable from the theory, and the unit stays coherent for a student.
 
-## Verified (round 1 Polish items)
-1. s1 b now reads "Perustele tulos laskemalla se kahdella eri tavalla.", so the task no longer gives away the method.
-2. and 3. `unit.md` Kaava now has ΔU = Q − W_k with its symbols explained, and a sentence on the temperature difference T₁ − T₂ relative to T₁. Manta and s4 b are now supported by the theory summary.
-4. s6-vaaka and s6-pysty draw the pad in grey with the label "laikka", and the alt texts mention it. Not adding an `fbd: draw` marker to long tasks is acceptable.
-5. Option lengths: in celsius the correct option is now the middle length, and in mittari it is the shortest. The distractor feedback is unchanged and still diagnostic.
-6. The third hints of luukku, pallo and aineisto now set up the step and leave the final substitution to the student.
-7. The Tutki sentence "Mallivastauksessa verrataan …" is gone, from the source and from the preview.
-8. `teacher.md` Sovella row now times it: about 6 min for the choice items and about 14 min for the four calculations, and unfinished ones go home. The 75-minute plan still adds up.
-9. The S3 d rewording (science fix) gives a clear task to explain, and the 2/2/1 rubric has observable criteria. S3 still totals 20 p, and the long tasks total 95 p.
-
-## Polish
-(none new)
+1. Polish: the unit's inquiry worked solution (content/fi/units/fy9-kaasut/inquiry.json, the Delta U task) uses W_k and Delta U = Q - W_k (work done by the gas), while the theory now says Delta U = Q + W with W done on the gas. Add one sentence to that solution ("in the theory table the same is Delta U = Q + W, W = -p Delta V") or switch it to the theory form.

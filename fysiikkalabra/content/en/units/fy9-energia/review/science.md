@@ -1,17 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: c07484c136b4b42f
-
-Delta review of the FY9 audit fixes (2026-11-10). Previous PASS hash: b346ed8b9e1ca0c5. The hash was the same at the start and the end of this review.
+CONTENT-HASH: e1fa40ffe398b11f
+Delta review (formulas in MAFY form, 2026-11-12) of the version passed at c07484c136b4b42f.
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-None.
+1. `inquiry.json`, `sovella/tasks.json` and `sovella/solutions.md` still write $E = Hm$, while the theory and the map use $Q = Hm$. Fix: change them to $Q = Hm$.
 
 ## Checked
-- Tutki graph (energy chain of a condensing plant): the x axis line now ends at x2=384 and the arrowhead path is M396,296 L383,302 L383,290, so the tip lies inside the 400-wide viewBox; the largest x coordinate in the SVG is 390 (gridlines).
-- The SVG in inquiry.json is byte-identical to figures.py tehot() output (imported and compared), so the generator and the page agree.
-- Built preview at 360 px: the arrowhead is visible, bars still read P0 = 400, P1 = 350, P2 = 150, P3 = 140 MW on the 50 MW grid, matching the aria-label; the to-scale claim and the efficiencies are unaffected.
-- Only coordinates of the axis changed; no physics text changed.
-- Language version checked: en; the change is the same as in fi, in translation.
+$Q = Hm$ is MAFY's form. $Q$ is defined in J, and the conditions (complete burning, the heating value for the actual moisture) are kept. The map's fuel node says $Q = Hm$. No other formula changed. The English text says the same physics as fi. The other rows are unchanged.

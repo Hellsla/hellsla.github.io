@@ -153,7 +153,7 @@
 
 Kaikki tunnin tehtävät alkavat samasta ajatuksesta: **varaus synnyttää ympärilleen sähkökentän, ja kenttä kohdistaa toiseen varaukseen voiman** $\overline{F} = q\overline{E}$. Kohdistaa tarkoittaa, että voima vaikuttaa varaukseen. Positiiviseen varaukseen voima osoittaa kentän suuntaan. Negatiiviseen varaukseen voima osoittaa kenttää vastaan. Kun kenttä siirtää varausta, kenttä tekee työtä. Silloin varauksen potentiaalienergia muuttuu samalla tavalla kuin pallon korkeusenergia muuttuu painovoimakentässä. Kondensaattori varastoi energiaa levyjensä väliseen kenttään. Puolijohdekomponentit ja sähköturvallisuus liittyvät samoihin suureisiin: jännitteeseen, virtaan ja kenttään, jonka eriste kestää.
 
-<svg data-fig="kartta" viewBox="0 0 380 780" role="img" aria-label="Käsitekartta. Ylhäällä on solmu: varaus synnyttää sähkökentän, ja kenttä kohdistaa varaukseen voiman F = q E. Siitä lähtee alas neljä haaraa. Ensimmäinen haara on varaus ja voima: varaus Q = n e, Coulombin laki F = k kertaa varausten tulon itseisarvo jaettuna r toiseen, ja voimien vektorisumma. Toinen haara on kenttä ja potentiaali: homogeeninen kenttä E = U jaettuna d:llä, kentän työ W = q U ja kiihdytys puoli m v toiseen = varaus kertaa U. Kolmas haara on kondensaattori: kapasitanssi C = Q jaettuna U:lla, levykondensaattori C = epsilon nolla epsilon r A jaettuna d:llä ja energia W = puoli C U toiseen. Neljäs haara on komponentit ja turvallisuus: etuvastus R = U miinus U D jaettuna I:llä, aurinkokennon hyötysuhde eta = P jaettuna G A:lla ja kehon läpi kulkeva virta I = U jaettuna R:llä." style="max-width:100%;font-size:22px">
+<svg data-fig="kartta" viewBox="0 0 380 780" role="img" aria-label="Käsitekartta. Ylhäällä on solmu: varaus synnyttää sähkökentän, ja kenttä kohdistaa varaukseen voiman F = q E. Siitä lähtee alas neljä haaraa. Ensimmäinen haara on varaus ja voima: varaus Q = n e, Coulombin laki F E = k kertaa varausten tulo jaettuna r toiseen, ja voimien vektorisumma. Toinen haara on kenttä ja potentiaali: homogeeninen kenttä U = E kertaa d, kentän työ W = Q U ja kiihdytys puoli m v toiseen = varaus kertaa U. Kolmas haara on kondensaattori: kapasitanssi Q = C U, levykondensaattori C = epsilon nolla epsilon r A jaettuna d:llä ja energia E = puoli C U toiseen. Neljäs haara on komponentit ja turvallisuus: etuvastus R = U miinus U D jaettuna I:llä, aurinkokennon hyötysuhde eta = P jaettuna G A:lla ja kehon läpi kulkeva virta I = U jaettuna R:llä." style="max-width:100%;font-size:22px">
   <line x1="24" y1="80" x2="24" y2="638" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="2.5"/>
   <foreignObject x="66" y="17" width="248" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$\text{varaus synnyttää kentän}$</div></foreignObject>
@@ -164,7 +164,7 @@ Kaikki tunnin tehtävät alkavat samasta ajatuksesta: **varaus synnyttää ympä
   <line x1="54" y1="142" x2="362" y2="142" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="58" y="153" width="54" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$Q = ne$</div></foreignObject>
   <foreignObject x="248" y="156" width="114" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{alkeisvaraus}$</div></foreignObject>
-  <foreignObject x="58" y="190" width="157" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$F = k\,|q_1 q_2|/r^2$</div></foreignObject>
+  <foreignObject x="58" y="190" width="145" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$F_E = k\,Q_1 Q_2/r^2$</div></foreignObject>
   <foreignObject x="292" y="193" width="70" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{Coulomb}$</div></foreignObject>
   <foreignObject x="58" y="227" width="122" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$\overline{F} = \overline{F}_1 + \overline{F}_2$</div></foreignObject>
   <foreignObject x="310" y="230" width="52" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{summa}$</div></foreignObject>
@@ -172,21 +172,21 @@ Kaikki tunnin tehtävät alkavat samasta ajatuksesta: **varaus synnyttää ympä
   <rect x="44" y="272" width="328" height="156" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
   <foreignObject x="58" y="281" width="237" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$\textbf{kenttä ja potentiaali}$</div></foreignObject>
   <line x1="54" y1="314" x2="362" y2="314" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="325" width="65" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$E = U/d$</div></foreignObject>
+  <foreignObject x="58" y="325" width="54" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$U = Ed$</div></foreignObject>
   <foreignObject x="248" y="328" width="114" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{homogeeninen}$</div></foreignObject>
-  <foreignObject x="58" y="362" width="54" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$W = qU$</div></foreignObject>
+  <foreignObject x="58" y="362" width="54" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$W = QU$</div></foreignObject>
   <foreignObject x="274" y="365" width="88" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{kentän työ}$</div></foreignObject>
-  <foreignObject x="58" y="399" width="134" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$\tfrac12 mv^2 = |q|U$</div></foreignObject>
+  <foreignObject x="58" y="399" width="134" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$\tfrac12 mv^2 = |Q|U$</div></foreignObject>
   <foreignObject x="274" y="402" width="88" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{kiihdytys}$</div></foreignObject>
   <line x1="24" y1="466" x2="44" y2="466" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="44" y="444" width="328" height="156" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
   <foreignObject x="58" y="453" width="180" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$\textbf{kondensaattori}$</div></foreignObject>
   <line x1="54" y1="486" x2="362" y2="486" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="497" width="65" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$C = Q/U$</div></foreignObject>
+  <foreignObject x="58" y="497" width="54" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$Q = CU$</div></foreignObject>
   <foreignObject x="248" y="500" width="114" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{kapasitanssi}$</div></foreignObject>
   <foreignObject x="58" y="534" width="111" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$C = \varepsilon_0\varepsilon_\text{r}A/d$</div></foreignObject>
   <foreignObject x="310" y="537" width="52" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{levyt}$</div></foreignObject>
-  <foreignObject x="58" y="571" width="100" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$W = \tfrac12 CU^2$</div></foreignObject>
+  <foreignObject x="58" y="571" width="100" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$E = \tfrac12 CU^2$</div></foreignObject>
   <foreignObject x="292" y="574" width="70" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{energia}$</div></foreignObject>
   <line x1="24" y1="638" x2="44" y2="638" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="44" y="616" width="328" height="156" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
@@ -264,16 +264,14 @@ Jännite on suuri. Keho on kuitenkin pieni kondensaattori, jonka kapasitanssi on
 
 ### Varaus, voima ja kenttä
 
-```latex
-\begin{aligned}
-Q &= ne \\
-F &= k\,\frac{\lvert q_1 q_2 \rvert}{r^2} \\
-\overline{F} &= q\overline{E} \\
-E &= \frac{U}{d}
-\end{aligned}
+```kaavat
+varaus alkeisvarauksen monikertana :: Q = ne
+Coulombin voiman suuruus :: F_E = k\,\frac{Q_1 Q_2}{r^2}
+sähkökentän voimakkuus :: E = \frac{F_E}{Q}
+jännite homogeenisessa sähkökentässä :: U = Ed
 ```
 
-missä $n$ on alkeisvarausten lukumäärä, $e = 1{,}602 \cdot 10^{-19}\,\text{C}$ alkeisvaraus, $F$ voima ($\text{N}$), $q_1$ ja $q_2$ varaukset ($\text{C}$), $r$ niiden etäisyys ($\text{m}$), $k = 8{,}988 \cdot 10^{9}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{C}^2}$, $\overline{E}$ sähkökentän voimakkuus ($\text{N/C} = \text{V/m}$), $U$ levyjen välinen jännite ($\text{V}$) ja $d$ levyjen etäisyys ($\text{m}$). Varaus säilyy eli sen kokonaismäärä ei muutu. Coulombin laki pätee pistevarauksille ja palloille, joissa varaus on jakautunut tasaisesti. Kun varauksia on monta, niiden voimat lasketaan yhteen vektoreina. Kenttä $E = \tfrac{U}{d}$ pätee vain laajojen yhdensuuntaisten levyjen välissä. Siellä kenttä on homogeeninen eli samanlainen joka kohdassa.
+missä $n$ on alkeisvarausten lukumäärä, $e = 1{,}602 \cdot 10^{-19}\,\text{C}$ alkeisvaraus, $F_E$ sähköisen voiman suuruus ($\text{N}$), $Q_1$ ja $Q_2$ varausten suuruudet ($\text{C}$), $r$ niiden etäisyys ($\text{m}$), $k = 8{,}988 \cdot 10^{9}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{C}^2}$, $E$ sähkökentän voimakkuus ($\text{N/C} = \text{V/m}$) varauksen $Q$ kohdalla, $U$ levyjen välinen jännite ($\text{V}$) ja $d$ levyjen etäisyys ($\text{m}$). Positiiviseen varaukseen kohdistuva voima on kentän suuntainen. Negatiiviseen varaukseen kohdistuva voima on vastakkaissuuntainen. Vektoreina $\overline{F}_E = Q\overline{E}$. Varaus säilyy eli sen kokonaismäärä ei muutu. Coulombin laki pätee pistevarauksille ja palloille, joissa varaus on jakautunut tasaisesti. Kun varauksia on monta, niiden voimat lasketaan yhteen vektoreina. Yhteys $U = Ed$ pätee vain laajojen yhdensuuntaisten levyjen välissä. Siellä kenttä on homogeeninen eli samanlainen joka kohdassa.
 
 <svg data-fig="levyt" viewBox="0 0 600 440" role="img" aria-label="Kaavakuva: kaksi vaakasuoraa levyä. Ylempi levy on positiivinen, ja sen potentiaali on 200 V. Alempi levy on negatiivinen, ja se on nollakohta 0 V. Levyjen välissä on viisi vihreää pystysuoraa kenttäviivaa. Ne osoittavat alas. Kenttä on homogeeninen. Harmaat katkoviivat ovat tasapotentiaalipintoja 150 V, 100 V ja 50 V. Vasemmalla on protoni. Sen punainen voimanuoli osoittaa alas kentän suuntaan. Oikealla on elektroni. Sen punainen voimanuoli osoittaa ylös kenttää vastaan, kohti suurempaa potentiaalia." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy9sk-pl1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dfe4ea"/><stop offset="1" stop-color="#aeb8c2"/></linearGradient><linearGradient id="fy9sk-pl2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dfe4ea"/><stop offset="1" stop-color="#aeb8c2"/></linearGradient></defs>
@@ -350,37 +348,31 @@ missä $n$ on alkeisvarausten lukumäärä, $e = 1{,}602 \cdot 10^{-19}\,\text{C
 
 ### Potentiaali ja energia
 
-```latex
-\begin{aligned}
-E_\text{p} &= qV \\
-W_{AB} &= qU_{AB} \\
-\tfrac12 mv^2 &= \lvert q \rvert U
-\end{aligned}
+```kaavat
+sähkökentän potentiaali :: V = \frac{E_\text{p}}{Q}
+sähkökentän tekemä työ :: W = QU
+sähkökentässä kiihdytetyn hiukkasen liike-energia :: \tfrac12 mv^2 = \lvert Q \rvert U
 ```
 
-missä $V$ on kohdan potentiaali ($\text{V}$) valittuun nollakohtaan nähden, $U_{AB} = V_A - V_B$ ja $W_{AB}$ kentän tekemä työ ($\text{J}$). Työ ei riipu reitistä. Kenttä osoittaa suuremmasta potentiaalista pienempään. Levosta lähtevä varaus liikkuu siihen suuntaan, jossa sen potentiaalienergia pienenee. Viimeinen yhtälö pätee hiukkaselle, joka lähtee levosta, kun vain sähköinen voima tekee työtä. Energian yksikkö on myös $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$.
+missä $V$ on kohdan potentiaali ($\text{V}$) valittuun nollakohtaan nähden ja $E_\text{p}$ varauksen $Q$ sähköinen potentiaalienergia ($\text{J}$). $W$ on kentän tekemä työ ($\text{J}$), kun varaus $Q$ siirtyy pisteestä A pisteeseen B, ja $U = U_{AB} = V_A - V_B$ on pisteiden välinen jännite. Työ ei riipu reitistä. Kenttä osoittaa suuremmasta potentiaalista pienempään. Levosta lähtevä varaus liikkuu siihen suuntaan, jossa sen potentiaalienergia pienenee. Viimeinen yhtälö pätee hiukkaselle, joka lähtee levosta, kun vain sähköinen voima tekee työtä. Energian yksikkö on myös $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$.
 
 ### Kondensaattori
 
-```latex
-\begin{aligned}
-C &= \frac{Q}{U} \\
-C &= \frac{\varepsilon_0\varepsilon_\text{r}A}{d} \\
-W &= \tfrac12 QU = \tfrac12 CU^2 \\
-U_\text{max} &= E_\text{max}d
-\end{aligned}
+```kaavat
+kondensaattorilaki :: Q = CU
+levykondensaattorin kapasitanssi :: C = \varepsilon_0\varepsilon_\text{r}\,\frac{A}{d}
+kondensaattorin energia :: E = \tfrac12 CU^2
+läpilyöntijännite :: U_\text{max} = E_\text{max}d
 ```
 
-missä $C$ on kapasitanssi ($\text{F}$), $A$ levyn pinta-ala ($\text{m}^2$), $\varepsilon_0 = 8{,}854 \cdot 10^{-12}\,\text{F/m}$, $\varepsilon_\text{r}$ eristeen suhteellinen permittiivisyys, $W$ energia ($\text{J}$) ja $E_\text{max}$ eristeen läpilyöntilujuus ($\text{V/m}$). Läpilyöntilujuus on suurin kenttä, jonka eriste kestää. Levykondensaattorin kaava pätee, kun $d$ on pieni levyjen kokoon verrattuna ja eriste täyttää koko välin. Kun kondensaattori on kytketty lähteeseen, sen jännite pysyy samana. Kun kondensaattori on irrotettu lähteestä, sen varaus pysyy samana.
+missä $C$ on kapasitanssi ($\text{F}$), $A$ levyn pinta-ala ($\text{m}^2$), $\varepsilon_0 = 8{,}854 \cdot 10^{-12}\,\text{F/m}$, $\varepsilon_\text{r}$ eristeen suhteellinen permittiivisyys, $E$ kondensaattoriin varastoitunut energia ($\text{J}$), myös $E = \tfrac12 QU$, ja $E_\text{max}$ eristeen läpilyöntilujuus ($\text{V/m}$). Läpilyöntilujuus on suurin kenttä, jonka eriste kestää. Levykondensaattorin kaava pätee, kun $d$ on pieni levyjen kokoon verrattuna ja eriste täyttää koko välin. Kun kondensaattori on kytketty lähteeseen, sen jännite pysyy samana. Kun kondensaattori on irrotettu lähteestä, sen varaus pysyy samana.
 
 ### Komponentit ja turvallisuus
 
-```latex
-\begin{aligned}
-R &= \frac{U - U_\text{D}}{I} \\
-\eta &= \frac{P}{GA} \\
-I &= \frac{U}{R}
-\end{aligned}
+```kaavat
+LEDin etuvastus :: R = \frac{U - U_\text{D}}{I}
+aurinkokennon hyötysuhde :: \eta = \frac{P}{GA}
+kehon läpi kulkeva virta :: I = \frac{U}{R}
 ```
 
 missä $R$ on LEDin etuvastus ($\Omega$), $U_\text{D}$ LEDin jännite ($\text{V}$), $P = UI$ aurinkokennon sähköteho maksimitehopisteessä ($\text{W}$) ja $G$ valon voimakkuus ($\text{W/m}^2$). Viimeinen yhtälö antaa kehon läpi kulkevan virran. Siinä $U$ on kosketusjännite ja $R$ koko virtatien resistanssi. Diodi johtaa vain päästösuuntaan, kun sen jännite on suurempi kuin kynnysjännite. Sulake suojaa johtoa, ja vikavirtasuoja suojaa ihmistä.

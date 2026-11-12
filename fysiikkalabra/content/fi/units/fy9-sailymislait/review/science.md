@@ -1,17 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 7f20b74f0e42076a
-
-Delta review of the FY9 audit fixes (2026-11-10). Previous PASS hash: c2716084d9c1d0b9. The hash was the same at the start and the end of this review.
+CONTENT-HASH: 2a21b90fb748849a
+Delta review (formulas in MAFY form, 2026-11-12) of the version passed at 7f20b74f0e42076a.
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-None.
+1. `inquiry.json`, `sovella/tasks.json` and `solutions.md` write the work of other forces as $W_\text{muut}$, while the theory now writes $W$ with the same meaning. No contradiction. Fix: align them, or add "(teoriassa $W$)".
 
 ## Checked
-- s1 b recomputed: W = 1/2 m v^2 - m g h = 9225 J - 28 959,1 J = -19 734 J = -19,73 kJ; F = |W| / 410 m = 48,13 N; share 68,1 %; a) v = sqrt(2gh) = 26,58 m/s.
-- tasks.json answer W = -19.73 kJ (tolerance 0.02) and F = 48.13 N agree with answers.py (-19.734, 48.13) and with the solution (W_muut = -19,7 kJ, F = 48,1 N); answers.py runs and its new assert W < 0 < F holds. The sign now matches the concept criterion (work negative) and the units_precision criterion (negative sign).
-- Ennusta lt-1 feedback: the braking distance quadruples only if the mean decelerating force (deceleration) is the same; the condition is now stated, closing a B-type gap (s = v^2/(2a)).
-- Preview built with no KaTeX errors.
-- Language version checked: fi; the change is the same as in fi, in translation.
+$E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$ is MAFY's form, with $W$ the work of the forces other than the weight and the conserved case written out. $\overline{I} = \overline{F}\Delta t$ (N·s), and $\overline{I} = \Delta\overline{p}$, with the sentence stating that the impulse is that of the net force. The map's $\overline{I} = \Delta\overline{p}$ matches. The other rows are unchanged.

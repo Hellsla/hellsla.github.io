@@ -166,7 +166,7 @@
 
 Tasavirtapiirissä lähde pitää yllä **jännitettä**, ja jännite ajaa piirin läpi **virran**. Virran suuruuden määrää koko piirin resistanssi, joten sama paristo antaa eri kuormille eri virrat. Virta ei kulu komponentissa: komponentti muuttaa varausten kuljettamaa sähköenergiaa valoksi, liikkeeksi tai sisäenergiaksi. **Teho** kertoo, kuinka nopeasti energiaa muuttuu.
 
-<svg data-fig="kartta" viewBox="0 0 380 912" role="img" aria-label="Käsitekartta. Ylhäällä solmu tasavirtapiiri: jännite U, virta I ja resistanssi R. Siitä lähtee alas neljä haaraa. Virta ja resistanssi, piirin suureet: virta I = Q per t, Ohmin laki U = R I ja johtimen resistanssi R = rho l per A. Kytkennät, Kirchhoffin lait: sarjaankytkentä R = R1 + R2, rinnankytkentä 1 per R = 1 per R1 + 1 per R2 ja silmukan potentiaalin muutosten summa nolla. Teho ja energia, Joulen laki: P = U I, vastukselle P = R I toiseen = U toiseen per R ja energia E = P t. Lähde, paristo ja akku: napajännite U = E miinus R s I, virta I = E per R plus R s ja akun kapasiteetti Q = I t." style="max-width:100%;font-size:20px">
+<svg data-fig="kartta" viewBox="0 0 380 912" role="img" aria-label="Käsitekartta. Ylhäällä solmu tasavirtapiiri: jännite U, virta I ja resistanssi R. Siitä lähtee alas neljä haaraa. Virta ja resistanssi, piirin suureet: virta I = delta Q per delta t, Ohmin laki U = R I ja johtimen resistanssi R = rho l per A. Kytkennät, Kirchhoffin lait: sarjaankytkentä R = R1 + R2, rinnankytkentä 1 per R = 1 per R1 + 1 per R2 ja silmukan potentiaalin muutosten summa nolla. Teho ja energia, Joulen laki: P = U I, vastukselle P = R I toiseen = U toiseen per R ja energia E = P t. Lähde, paristo ja akku: napajännite U = E miinus R s I, virta I = E per R plus R s ja akun kapasiteetti Q = I t." style="max-width:100%;font-size:20px">
   <line x1="24" y1="80" x2="24" y2="734" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
   <foreignObject x="113" y="18" width="154" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\text{tasavirtapiiri}$</div></foreignObject>
@@ -176,7 +176,7 @@ Tasavirtapiirissä lähde pitää yllä **jännitettä**, ja jännite ajaa piiri
   <foreignObject x="58" y="110" width="206" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{virta ja resistanssi}$</div></foreignObject>
   <foreignObject x="292" y="112" width="70" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{suureet}$</div></foreignObject>
   <line x1="54" y1="142" x2="362" y2="142" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="156" width="60" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$I = Q/t$</div></foreignObject>
+  <foreignObject x="58" y="157" width="74" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$I = \Delta Q/\Delta t$</div></foreignObject>
   <foreignObject x="310" y="158" width="52" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{virta}$</div></foreignObject>
   <foreignObject x="58" y="206" width="50" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$U = RI$</div></foreignObject>
   <foreignObject x="327" y="208" width="35" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{Ohm}$</div></foreignObject>
@@ -254,49 +254,41 @@ Tästä saadaan vastaus alun kysymykseen. Mökin laitteet on kytketty akkuun rin
 
 ### Virta, jännite ja resistanssi
 
-```latex
-\begin{aligned}
-I &= \frac{Q}{t} \\
-R &= \frac{U}{I} \\
-R &= \rho\,\frac{l}{A}
-\end{aligned}
+```kaavat
+sähkövirta :: I = \frac{\Delta Q}{\Delta t}
+jännitehäviö johtimessa :: U = RI
+johtimen resistanssi :: R = \rho\,\frac{l}{A}
 ```
 
-missä $I$ on virta ($\text{A}$), $Q$ poikkileikkauksen läpi kulkenut varaus ($\text{C}$), $t$ aika ($\text{s}$), $U$ komponentin jännite ($\text{V}$), $R$ resistanssi ($\Omega$), $\rho$ resistiivisyys ($\Omega\cdot\text{m}$), $l$ johtimen pituus ($\text{m}$) ja $A$ poikkipinta-ala ($\text{m}^2$). Ohmin lain mukaan metallijohtimen resistanssi on vakio, kun lämpötila pysyy samana. Hehkulampun resistanssi kasvaa langan kuumetessa. Virtamittari kytketään sarjaan ja jännitemittari rinnan.
+missä $I$ on virta ($\text{A}$), $\Delta Q$ poikkileikkauksen läpi kulkenut varaus ($\text{C}$), $\Delta t$ aika ($\text{s}$), $U$ komponentin jännite ($\text{V}$), $R$ resistanssi ($\Omega$), $\rho$ resistiivisyys ($\Omega\cdot\text{m}$), $l$ johtimen pituus ($\text{m}$) ja $A$ poikkipinta-ala ($\text{m}^2$). Ohmin lain mukaan metallijohtimen resistanssi on vakio, kun lämpötila pysyy samana. Hehkulampun resistanssi kasvaa langan kuumetessa. Virtamittari kytketään sarjaan ja jännitemittari rinnan.
 
 ### Kytkennät ja Kirchhoffin lait
 
-```latex
-\begin{aligned}
-R &= R_1 + R_2 + \dots \\
-\frac{1}{R} &= \frac{1}{R_1} + \frac{1}{R_2} + \dots \\
-\sum I_\text{tulevat} &= \sum I_\text{lähtevät} \\
-\sum \Delta V &= 0
-\end{aligned}
+```kaavat
+sarjaan kytkettyjen vastusten kokonaisresistanssi :: R = R_1 + R_2 + \dots
+rinnan kytkettyjen vastusten kokonaisresistanssi :: \frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \dots
+Kirchhoffin 1. laki :: \sum I_\text{tulevat} = \sum I_\text{lähtevät}
+Kirchhoffin 2. laki :: \sum \Delta V = 0
 ```
 
 Ensimmäinen on sarjaan ja toinen rinnan kytkettyjen vastusten kokonaisresistanssi $R$. Virtalaki pätee haarautumispisteelle, koska varaus säilyy. Jännitelaki pätee, kun silmukka kierretään kerran: potentiaali $V$ nousee lähteessä miinusnavalta plusnavalle ja laskee vastuksessa virran suuntaan $RI$:n verran. Siksi rinnakkaisten haarojen yli on sama jännite.
 
 ### Teho ja energia
 
-```latex
-\begin{aligned}
-P &= UI \\
-P &= RI^2 = \frac{U^2}{R} \\
-E &= Pt
-\end{aligned}
+```kaavat
+tehonkulutus johtimessa :: P = UI
+tehonkulutus resistanssin avulla :: P = RI^2 = \frac{U^2}{R}
+sähkölaitteen kuluttama energia :: E = Pt
 ```
 
 missä $P$ on teho ($\text{W}$) ja $E$ ajassa $t$ muuttunut sähköenergia ($\text{J}$ tai $\text{kWh}$). Muoto $P = UI$ pätee kaikille komponenteille, Joulen lain muodot vain vastukselle. Sarjassa suurempi resistanssi saa suuremman tehon, rinnan pienempi. Energian yksiköt muunnetaan sijoittamalla: $1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}$. Kun samassa tehtävässä on myös lähdejännite $E$, energialle käytetään kirjainta $W$.
 
 ### Paristo ja akku
 
-```latex
-\begin{aligned}
-U &= E - R_\text{s} I \\
-I &= \frac{E}{R + R_\text{s}} \\
-Q &= It
-\end{aligned}
+```kaavat
+jännitelähteen napajännite :: U = E - R_\text{s} I
+virta suljetussa virtapiirissä :: I = \frac{E}{R + R_\text{s}}
+akun varaus :: Q = It
 ```
 
 missä $E$ on lähdejännite ($\text{V}$), $R_\text{s}$ sisäinen resistanssi ($\Omega$), $U$ napajännite ($\text{V}$), $R$ ulkoisen piirin resistanssi ($\Omega$) ja $Q$ akun kapasiteetti ($\text{Ah}$ tai $\text{C}$). Malli olettaa, että $E$ ja $R_\text{s}$ pysyvät vakioina. Akun energia on $W = UQ$, missä $U$ on nimellisjännite, ja latauksessa napajännite on $U = E + R_\text{s} I$.

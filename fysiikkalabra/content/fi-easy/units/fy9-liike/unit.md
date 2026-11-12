@@ -298,14 +298,14 @@ Nyt voimme vastata alun kysymykseen. Nopeus kertoo, montako metriä vaunu kulkee
 
 Keskinopeus on siirtymä jaettuna ajalla, joka siihen kului:
 
-```latex
-v_\text{ka} = \frac{\Delta x}{\Delta t}
+```kaavat
+keskinopeus :: \overline{v}_\text{k} = \frac{\Delta\overline{x}}{\Delta t}
 ```
 
-Tässä $\Delta x = x_2 - x_1$ on siirtymä ($\text{m}$) ja $\Delta t$ on aika ($\text{s}$). Oletetaan, että nopeus $v$ on vakio ja kappale on hetkellä $t = 0$ paikassa $x_0$. Silloin
+Tässä $\Delta\overline{x}$ on siirtymä ($\text{m}$) ja $\Delta t$ on kulunut aika ($\text{s}$). Kun liike on suoraviivaista, riittää etumerkillinen siirtymä $\Delta x = x_2 - x_1$. Silloin keskinopeus on $v_\text{k} = \tfrac{\Delta x}{\Delta t}$. Oletetaan, että nopeus $v$ on vakio ja kappale on hetkellä $t = 0$ paikassa $x_0$. Silloin
 
-```latex
-x = x_0 + v\,t
+```kaavat
+paikka tasaisessa suoraviivaisessa liikkeessä :: x = x_0 + v\,t
 ```
 
 Tämä on $(t,x)$-kuvaajan suora. $x_0$ on kohta, jossa suora leikkaa paikka-akselin, ja $v$ on suoran kulmakerroin. Paikka on suoraan verrannollinen aikaan vain silloin, kun $x_0 = 0$. Suoraan verrannollinen tarkoittaa, että kun aika kaksinkertaistuu, myös paikka kaksinkertaistuu.
@@ -314,17 +314,17 @@ Tämä on $(t,x)$-kuvaajan suora. $x_0$ on kohta, jossa suora leikkaa paikka-aks
 
 Kiihtyvyys on nopeuden muutos aikayksikköä kohti:
 
-```latex
-a = \frac{\Delta v}{\Delta t}
+```kaavat
+keskikiihtyvyys :: \overline{a}_\text{k} = \frac{\Delta\overline{v}}{\Delta t}
 ```
+
+Tässä $\Delta\overline{v}$ on nopeuden muutos ($\text{m/s}$), $\Delta t$ kulunut aika ($\text{s}$) ja $\overline{a}_\text{k}$ keskikiihtyvyys ($\text{m/s}^2$). Kun kappale liikkuu suoraa viivaa pitkin, riittää kiihtyvyys etumerkin kanssa: $a = \tfrac{\Delta v}{\Delta t}$. Jos kiihtyvyys on vakio, keskikiihtyvyys on sama kuin kiihtyvyys joka hetki.
 
 Oletetaan, että kiihtyvyys on vakio ja kappale liikkuu suoraa viivaa pitkin. Silloin nopeus ja paikka hetkellä $t$ ovat
 
-```latex
-\begin{aligned}
-v &= v_0 + a\,t \\
-x &= x_0 + v_0\,t + \tfrac{1}{2}\,a\,t^2
-\end{aligned}
+```kaavat
+nopeus tasaisesti kiihtyvässä suoraviivaisessa liikkeessä :: v = v_0 + a\,t
+paikka tasaisesti kiihtyvässä suoraviivaisessa liikkeessä :: x = x_0 + v_0\,t + \tfrac{1}{2}\,a\,t^2
 ```
 
 Tässä $v_0$ on alkunopeus ($\text{m/s}$) ja $a$ on kiihtyvyys ($\text{m/s}^2$). Vauhti kasvaa, kun $a$ ja $v$ ovat samansuuntaiset. Vauhti pienenee, kun ne ovat vastakkaissuuntaiset. Vapaassa pudotuksessa $a = g = 9{,}81\,\text{m/s}^2$ alaspäin, kun ilmanvastus on pieni.
@@ -333,8 +333,8 @@ Tässä $v_0$ on alkunopeus ($\text{m/s}$) ja $a$ on kiihtyvyys ($\text{m/s}^2$)
 
 Kun $(t,x)$-kuvaaja on kaareva, hetkellinen nopeus on tangentin kulmakerroin $k$. Tangentti on suora, joka sivuaa eli koskettaa käyrää yhdessä pisteessä. Jos suhde lasketaan käyrän kahden pisteen kautta, saadaan keskinopeus. Siirtymä on $(t,v)$-kuvaajan ja aika-akselin välinen pinta-ala. Akselin alapuolella oleva osa lasketaan negatiivisena. Tasaisesti kiihtyvässä liikkeessä alue on puolisuunnikas. Siksi keskinopeus on alkunopeuden ja loppunopeuden keskiarvo:
 
-```latex
-\Delta x = \frac{v_0 + v}{2}\,t
+```kaavat
+siirtymä tasaisesti kiihtyvässä suoraviivaisessa liikkeessä :: \Delta x = \frac{v_0 + v}{2}\,t
 ```
 
 <svg data-fig="kuvaajat" viewBox="0 0 440 650" role="img" aria-label="Kaavakuva: yksi liike kahtena kuvaajana. Kuvaajilla on sama aika-akseli. Alhaalla on nopeuden kuvaaja. Nopeus kasvaa nollasta tasaisesti hetkeen t1 asti. Se pysyy vakiona hetkeen t2 asti. Sitten se pienenee tasaisesti nollaan hetkellä t3. Kuvaajan alle jäävä alue on vihreä. Sen pinta-ala on siirtymä Δx. Ylhäällä on paikan kuvaaja. Ensin on käyrä, joka kaartuu ylöspäin. Sitten on nouseva suora. Lopuksi on käyrä, joka loivenee vaakasuoraksi. Paikka kasvaa koko liikkeen aikana yhteensä Δx. Käyrän pisteeseen P on piirretty sininen tangentti. Sen kulmakerroin k on nopeus v_P. Sama arvo on merkitty myös alempaan kuvaajaan." style="max-width:100%;font-size:21px">
@@ -386,8 +386,8 @@ Kun $(t,x)$-kuvaaja on kaareva, hetkellinen nopeus on tangentin kulmakerroin $k$
 
 Kahden kappaleen paikat kirjoitetaan samassa koordinaatistossa. Kappaleet kohtaavat eli ovat samassa paikassa, kun
 
-```latex
-x_\text{A}(t) = x_\text{B}(t)
+```kaavat
+kohtaamisehto :: x_\text{A}(t) = x_\text{B}(t)
 ```
 
 $(t,x)$-kuvaajassa kohtaaminen on kohta, jossa viivat leikkaavat eli menevät ristiin. Ylempänä oleva viiva tarkoittaa suurempaa paikkakoordinaattia. Ajatellaan, että takana oleva kappale on aluksi hitaampi ja kiihtyy. Silloin kappaleiden välimatka on suurimmillaan, kun niiden nopeudet ovat yhtä suuret.

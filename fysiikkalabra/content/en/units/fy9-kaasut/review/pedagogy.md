@@ -1,18 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 97b2ac678f09a7f6
+CONTENT-HASH: a689891c9b7cc5f2
 
-Pedagogy review (round 3) of the en translation of fy9-kaasut.
+Delta review (formulas in MAFY form, 2026-11-12) of the version passed at 97b2ac678f09a7f6.
 
-## Blocking
-None.
+Blocking: none. The new symbols are defined in the sentence after each formula block, the tasks' forms are still derivable from the theory, and the unit stays coherent for a student.
 
-## Polish
-None open.
-
-## Round-2 findings
-1. Untranslated concept-map branch headings: fixed. The preview at 390 and 1280 px shows **liquid**, **gas** and **heat engine**, so the class can go through the map branch by branch as the teacher plan asks. The headings now match the figure description (Liquid / Gas / Heat engine).
-2. $P_\text{l}$ (s2 c): fixed in this round. It is now $P_\text{h}$, and the Formula line names both $P_2$ (heat power given away) and $P_\text{h}$ (recovered heat power), so a student can follow the solution without guessing the symbols.
-
-## Checked
-- I built preview/en/fy9-kaasut.html and checked it in Playwright at 390 and 1280 px with every details element open. The only Finnish words in the page text are "Selkeä suomi" in the language menu, which is a language name and correct.
-- The 75-minute plan, task counts, feedback and hints are as in round 2.
+1. Polish: the unit's inquiry worked solution (content/en/units/fy9-kaasut/inquiry.json, the Delta U task) uses W_k and Delta U = Q - W_k (work done by the gas), while the theory now says Delta U = Q + W with W done on the gas. Add one sentence to that solution ("in the theory table the same is Delta U = Q + W, W = -p Delta V") or switch it to the theory form.

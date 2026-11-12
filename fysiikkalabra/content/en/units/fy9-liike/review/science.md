@@ -1,15 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 47fff9ff6ab0e619
-
-Science review of the English translation of fy9-liike, round 2 (source content/fi/units/fy9-liike/, reviewed PASS).
-
-## Checked
-- Round-1 science review had no Blocking findings. The fixes since then (git diff against the checkpoint) change words only: trolley → cart, gendered pronouns → neutral wording, "average velocity" → "average speed" in s4 (round-1 Polish 1, taken), "Tasks" → "Exercises" in teacher.md, one sentence in unit.md Common mistakes, and the s3 figure label "braking distance" → "braking dist.". No number, formula, unit or answer changed.
-- Structure of inquiry.json, exit-ticket.json, sovella/tasks.json and unit.json compared to the Finnish again: every non-text field (answers, correct flags, tolerances, points, ids) identical. `check_i18n.py`: en 0 errors; `practice.py check`: en/units/fy9-liike 6 tasks, 95 points, OK.
-- s4 "average speed": on the straight 3.0 km road it is the displacement (= distance) divided by the time, so the wording "average speed is the displacement divided by the time" stays correct; the instantaneous quantity is still called velocity, consistent with the source's distinction.
+CONTENT-HASH: 7c3a27204eeae8fd
+Delta review (formulas in MAFY form, 2026-11-12) of the fix to the version reviewed at ca31abd20e3d66b5 (FAIL).
 
 ## Blocking
 (none)
 
 ## Polish
-1. Coordinates such as "(12 s; 85 km/h)" still use the Finnish semicolon separator; a comma is the usual English form with a decimal point (inquiry.json, s3 task/solution, figure description). Not wrong.
+1. Sovella writes $v_\text{ka}$, while the theory writes $v_\text{k}$, and the English text never explains the subscript k. Fix: align them, and note that k is MAFY's subscript for average (keskimääräinen).
+
+## Checked
+1. The previous Blocking item is fixed (commit c4e866703). The new sentence after the keskikiihtyvyys block defines $\Delta\overline{v}$ (m/s), $\Delta t$ (s) and $\overline{a}_\text{k}$ (m/s²). It gives the signed scalar $a = \Delta v/\Delta t$ for rectilinear motion and says that at constant acceleration the average equals the instantaneous acceleration. All of this is correct, and it fits the rows $v = v_0 + at$ and $x = x_0 + v_0 t + \tfrac12 at^2$ that follow.
+2. $\overline{v}_\text{k} = \Delta\overline{x}/\Delta t$ and $\overline{a}_\text{k}$ are MAFY's forms. The English text says the same physics as fi. Nothing else changed.

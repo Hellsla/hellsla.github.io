@@ -298,14 +298,14 @@ This answers the opening question. The velocity tells you how many metres the tr
 
 The average velocity is the displacement divided by the time it took:
 
-```latex
-v_\text{av} = \frac{\Delta x}{\Delta t}
+```kaavat
+average velocity :: \overline{v}_\text{k} = \frac{\Delta\overline{x}}{\Delta t}
 ```
 
-where $\Delta x = x_2 - x_1$ is the displacement ($\text{m}$) and $\Delta t$ the time ($\text{s}$). When the velocity $v$ is constant and the body is at the position $x_0$ at $t = 0$,
+where $\Delta\overline{x}$ is the displacement ($\text{m}$) and $\Delta t$ the time elapsed ($\text{s}$). In linear motion the signed displacement $\Delta x = x_2 - x_1$ is enough, and the average velocity is $v_\text{k} = \tfrac{\Delta x}{\Delta t}$. When the velocity $v$ is constant and the body is at the position $x_0$ at $t = 0$,
 
-```latex
-x = x_0 + v\,t
+```kaavat
+position in uniform linear motion :: x = x_0 + v\,t
 ```
 
 This is the straight line of the $(t,x)$ graph: $x_0$ is its intercept on the position axis and $v$ its slope. The position is directly proportional to the time only when $x_0 = 0$.
@@ -314,17 +314,17 @@ This is the straight line of the $(t,x)$ graph: $x_0$ is its intercept on the po
 
 Acceleration is the change in velocity per unit of time:
 
-```latex
-a = \frac{\Delta v}{\Delta t}
+```kaavat
+average acceleration :: \overline{a}_\text{k} = \frac{\Delta\overline{v}}{\Delta t}
 ```
+
+where $\Delta\overline{v}$ is the change in velocity ($\text{m/s}$), $\Delta t$ the elapsed time ($\text{s}$) and $\overline{a}_\text{k}$ the average acceleration ($\text{m/s}^2$). In rectilinear motion the signed acceleration $a = \tfrac{\Delta v}{\Delta t}$ is enough, and with a constant acceleration the average acceleration equals the instantaneous one.
 
 When the acceleration is constant and the motion rectilinear, the velocity and the position at time $t$ are
 
-```latex
-\begin{aligned}
-v &= v_0 + a\,t \\
-x &= x_0 + v_0\,t + \tfrac{1}{2}\,a\,t^2
-\end{aligned}
+```kaavat
+velocity in uniformly accelerated linear motion :: v = v_0 + a\,t
+position in uniformly accelerated linear motion :: x = x_0 + v_0\,t + \tfrac{1}{2}\,a\,t^2
 ```
 
 where $v_0$ is the initial velocity ($\text{m/s}$) and $a$ the acceleration ($\text{m/s}^2$). The speed increases when $a$ and $v$ point in the same direction and decreases when they point in opposite directions. In free fall $a = g = 9.81\,\text{m/s}^2$ downwards when air resistance is small.
@@ -333,8 +333,8 @@ where $v_0$ is the initial velocity ($\text{m/s}$) and $a$ the acceleration ($\t
 
 The instantaneous velocity on a curved $(t,x)$ graph is the slope $k$ of the tangent. A ratio calculated through two points of the curve is the average velocity. The displacement is the area between the $(t,v)$ graph and the time axis, and the part below the axis is counted as negative. In uniformly accelerated motion the region is a trapezium, so the average velocity is the mean of the initial and final velocities:
 
-```latex
-\Delta x = \frac{v_0 + v}{2}\,t
+```kaavat
+displacement in uniformly accelerated linear motion :: \Delta x = \frac{v_0 + v}{2}\,t
 ```
 
 <svg data-fig="kuvaajat" viewBox="0 0 440 650" role="img" aria-label="Schematic of one motion as two graphs with the same time axis. Below, the velocity graph: the velocity grows uniformly from zero until t1, stays constant until t2 and falls uniformly to zero at t3. The region under the graph is coloured green, and its area is the displacement Δx. Above, the position graph: first a curve bending upwards, then a rising straight line and finally a curve that levels off to horizontal. Over the whole motion the position grows by Δx in total. A blue tangent is drawn at the point P of the curve; its slope k is the velocity v_P, and the same value is marked in the lower graph." style="max-width:100%;font-size:21px">
@@ -386,8 +386,8 @@ The instantaneous velocity on a curved $(t,x)$ graph is the slope $k$ of the tan
 
 The positions of two bodies are written in the same coordinate system, and the bodies meet when
 
-```latex
-x_\text{A}(t) = x_\text{B}(t)
+```kaavat
+condition for meeting :: x_\text{A}(t) = x_\text{B}(t)
 ```
 
 In a $(t,x)$ graph a meeting is the crossing point of the lines. The upper line means a greater position coordinate. When the body behind is slower at first and accelerates, the distance between the bodies is at its greatest when their velocities are equal.

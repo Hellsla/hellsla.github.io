@@ -1,17 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 47fff9ff6ab0e619
+CONTENT-HASH: 7c3a27204eeae8fd
 
-Visual & editorial review of the English translation of fy9-liike, round 2.
-
-## Checked
-- Rebuilt with `python3 scripts/build.py fy9-liike` (preview/en/fy9-liike.html) and checked in Playwright at 390 and 1280 px with every box open: no horizontal scroll (scrollWidth = viewport), no element wider than the viewport, 0 KaTeX errors, no unrendered $…$, no page errors.
-- Round-1 Blocking 1 (s3 figure label "braking distance" crossing the braking line and the circled reading point (40 s, 20 km/h)): FIXED. figures.json now has "braking dist." (13 characters, no longer than "jarrutusmatka") and the figure was redrawn (foreignObject x 87, width 158). Own captures of svg[data-fig=fy9-liike-s3-graph] at 390 and 1280: the label lies inside the green area, clear of the braking line and of the circled point; only its first letter reaches a few pixels left of the dashed 10 s line, which is less than the Finnish label does (x 81, width 170) in the passed source.
-- Text-only changes since round 1 (cart, neutral pronouns, average speed, Exercises) read naturally; decimal point and LaTeX rules kept.
+Delta review (definition sentence after the keskikiihtyvyys block, commit c4e866703) of the version passed at ca31abd20e3d66b5.
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-1. [Minor] exit-ticket item 2 answer at 390 px: the chained `\dfrac` wraps tightly onto the next line (same as the Finnish page, shared layout).
-2. [Minor] Coordinates keep the Finnish semicolon "(12 s; 85 km/h)"; a comma is usual in English.
-3. [Minor] review/shots/ captures are from round 1 (stamp e13d8db6ead3da45); regenerate with screenshot.py if a current set is wanted.
+None.
+
+## Checked
+Built the page; overflow and KaTeX-error scan at 390 and 1280 px (clean). Read the new sentence as rendered at 390 px (fi, en) and 1280 px (fi-easy) and the keskikiihtyvyys formula block at 390 px (fi-easy): LaTeX symbols and units upright, \overline vectors and the fraction render correctly, language natural. The other renders of this sentence and block (1280 px for fi and en, 390 px for the rest) were captured but not opened; they came out clean in the scan.

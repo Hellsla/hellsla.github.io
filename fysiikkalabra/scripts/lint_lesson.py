@@ -15,7 +15,7 @@ checks that `lesson-answers.py` (the numbers of the lesson text and inquiry.json
 import json, math, pathlib, re, subprocess, sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status
-import courses, i18n
+import courses, i18n, kaavat
 import check_solutions as solution_rules
 import physics_phrases
 from courses import ROOT
@@ -76,7 +76,7 @@ def fi_float(s): return float(s.replace("−", "-").replace(",", "."))
 def strip_math_and_svg(text):
     """Blank out LaTeX and inline SVG so text rules do not fire inside them (keeps line numbers)."""
     def blank(m): return re.sub(r"[^\n]", " ", m.group(0))
-    text = re.sub(r"```latex\n.*?```", blank, text, flags=re.S)
+    text = re.sub(r"```(?:latex|kaavat)\n.*?```", blank, text, flags=re.S)
     text = re.sub(r"\$\$.*?\$\$", blank, text, flags=re.S)
     text = re.sub(r"\$[^$\n]+?\$", blank, text)
     text = re.sub(r"<svg.*?</svg>", blank, text, flags=re.S)
@@ -86,7 +86,7 @@ def strip_math_and_svg(text):
 def math_fragments(text):
     """(line, LaTeX, display) for every formula. A label inside a figure (foreignObject) counts as display: it sits
     alone in its box, so a full-size \\dfrac there does not break a line of text."""
-    text = re.sub(r"```latex\n(.*?)```", lambda m: "$$" + m.group(1) + "$$", text, flags=re.S)
+    text = kaavat.as_display(re.sub(r"```latex\n(.*?)```", lambda m: "$$" + m.group(1) + "$$", text, flags=re.S), names=False)
     figs = [(m.start(), m.end()) for m in re.finditer(r"<foreignObject.*?</foreignObject>", text, re.S)]
     for m in re.finditer(r"\$\$(.*?)\$\$|\$([^$\n]+?)\$", text, re.S):
         line = text.count("\n", 0, m.start()) + 1
@@ -253,7 +253,7 @@ def check_lesson_md(L, folder):
         L.err("lesson.md", 3, "no opening illustration right under the Miksi question: draw it with H.hero(...) (scripts/herolib.py) in figures.py and place `<svg data-fig=\"hero\"></svg>` under the question (NOTES 3 \"Opening illustration\")")
     for h in ("Ydinajatus", "Kaava", "Esimerkki", "Yleinen virhekäsitys", "Tiivistelmä"):
         if not re.search(rf"^## {h}", text, re.M): L.warn("lesson.md", 1, f"no '## {h}' section (gold structure)")
-    if "$$" not in text and "```latex" not in text:
+    if "$$" not in text and "```latex" not in text and "```kaavat" not in text:
         L.warn("lesson.md", 1, "no display formula; every formula appears once in display LaTeX (CLAUDE.md)")
     check_text_rules(L, "lesson.md", text)
     check_list_start(L, "lesson.md", text)
