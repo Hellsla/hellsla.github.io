@@ -1,12 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 4a03f34fb4a4b052
-Delta review (formulas in MAFY form, 2026-11-12) of the version passed at e8bf91a0dde33d19.
+CONTENT-HASH: daf3229a457bf979
+Delta review (Johda itse, 2026-11-12) of the version passed at 4a03f34fb4a4b052.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+1. `inquiry.json` activities[13] and [19], solution **Kaava:** states $U = E - R_\text{s} I$ without saying where it comes from; activities[15] uses $R = U^2/P$, i.e. the removed $P = U^2/R$. Fix (teacher's call): add "(Kirchhoffin 2. laki, ks. Johda itse)" or one derivation line.
 
 ## Checked
-$I = \Delta Q/\Delta t$ with $\Delta Q$ and $\Delta t$ defined, $U = RI$, and the renamed "akun varaus" $Q = It$ in Ah or C. All are MAFY's forms, the map ($I = \Delta Q/\Delta t$) matches, and nothing in the tasks contradicts them. The fi-easy text says the same physics as fi. The other rows are unchanged.
+1. Johda itse *vastuksen teho*: $P = UI$ with Ohm's law gives $RI^2$ and $U^2/R$; the Ohmic-resistor condition is stated.
+2. Johda itse *napajännite*: the loop $E - R_\text{s}I - RI = 0$ gives $I = E/(R+R_\text{s})$ and $U = RI = E - R_\text{s}I$; the model sentence defines $E$, $R_\text{s}$, $U$, $R$ with units and states constant $E$, $R_\text{s}$. The charging sentence (terminal voltage above the emf) is right.
+3. New figure `piiri`: cell symbol with the long plate +, $R_\text{s}$ in series inside the battery box, current out of + through $R$, $U$ across the terminals. Concept map: only MAFY rows remain ($R_\text{kok} = \Sigma R$, $\Sigma\Delta V = 0$, $P = UI$, $P = W/\Delta t$).
+4. No removed formula is used as given elsewhere in `unit.md`.
+5. Every derivation starts from MAFY laws or a definition stated in the unit; every new symbol is defined with its unit; no removed formula is used as given in `unit.md`. The fi-easy text keeps every step and condition of fi; equations are identical.

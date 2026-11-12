@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 265152a3e3cd6159
-Delta review (formulas in MAFY form, 2026-11-12) of the version passed at 39bbf6b20a75feae.
+CONTENT-HASH: d92213793558adfe
+Delta review (Johda itse, 2026-11-12) of the version passed at 265152a3e3cd6159.
 
 ## Blocking
 (none)
 
 ## Polish
-1. `unit.md`, the intro sentence, and the map hub (`figures.py`, `fy9sk-kartta`) keep $\overline{F} = q\overline{E}$, while the theory and the map's boxes use $Q$. Fix: $\overline{F}_E = Q\overline{E}$.
-2. `unit.md`, the capacitor sentence: $E$ is the energy next to the field strengths $E_\text{max}$ and $E = F_E/Q$. Fix: add "(here $E$ is an energy, $E_\text{max}$ a field strength)".
-3. `inquiry.json` uses $F = qE$, $q_1$ and $qU$. Fix: align them with $Q$.
+1. `inquiry.json` activities[7] (question solution) and [19], **Kaava:** state $\tfrac12mv^2 = eU$ and $U_\text{max} = E_\text{max}d$ without derivation. Fix (teacher's call): add "(ks. Johda itse)".
+2. Johda itse *aurinkokenno*: $P_\text{o} = GA$ assumes light perpendicular to the cell (G measured on the cell plane). Fix: add "when the light falls perpendicular to the cell".
 
 ## Checked
-$F_E = kQ_1Q_2/r^2$ is written for magnitudes, with the vector form $\overline{F}_E = Q\overline{E}$. $E = F_E/Q$. $U = Ed$ only in a uniform field. $V = E_\text{p}/Q$. $W = QU$ with $U = V_A - V_B$ has the right sign. $\tfrac12 mv^2 = |Q|U$. $Q = CU$, $C = \varepsilon_0\varepsilon_\text{r}A/d$ and $E = \tfrac12 CU^2 = \tfrac12 QU$. All conditions are kept, and they are MAFY's forms. The map boxes match. The English text says the same physics as fi. The other rows are unchanged.
+1. Johda itse kiihdytys: work–energy with $v_0 = 0$, $W = QU$, $|Q|U$; $v = \sqrt{2|Q|U/m}$; 1 eV example right.
+2. Johda itse $U_\text{max} = E_\text{max}d$: homogeneous field $U = Ed$, breakdown at $E_\text{max}$; definition of $E_\text{max}$ given. Spark figure aria now says $U = Ed$.
+3. Johda itse etuvastus: loop $U - RI - U_\text{D} = 0$; small internal resistance stated. New figure `etuvastus`: LED in forward direction, current clockwise from +. Correct.
+4. Johda itse hyötysuhde $\eta = P/(GA)$ from $\eta = P_\text{a}/P_\text{o}$; symbols defined with units.
+5. Every derivation starts from MAFY laws or a definition stated in the unit; every new symbol is defined with its unit; no removed formula is used as given in `unit.md`. The English text says the same physics; equations identical (en uses $t_\text{b}$, $s_\text{b}$ where applicable, matching its figure).
