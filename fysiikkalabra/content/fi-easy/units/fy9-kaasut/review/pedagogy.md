@@ -1,15 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: ccfacb064cf5f007
+CONTENT-HASH: 73830490b1b3a881
 
-Pedagogy review, round 2, of the Selkeä suomi translation (NOTES.md §12) of fy9-kaasut.
-Structure and difficulty as in the source; short sentences, difficult words explained in place, physics terms kept;
-key_concepts 5 terms, each explained in short sentences; teacher.md faithful.
+Delta review (formulas in MAFY form, 2026-11-12) of the version passed at ccfacb064cf5f007.
 
-## Blocking
-None (none in round 1 either).
+Blocking: none. The new symbols are defined in the sentence after each formula block, the tasks' forms are still derivable from the theory, and the unit stays coherent for a student.
 
-## Polish
-1. Round-1 polish 1 applied: unit.json description split into three sentences.
-2. Round-1 polish 2 applied: the "Tai …" fragments in Yleisiä virheitä of s1, s3 and s6 are now separate bullets,
-   each a full sentence with its part label.
-3. Optional (unchanged): a one-line reading hint before the s4 brochure quotation.
+1. Polish: the unit's inquiry worked solution (content/fi-easy/units/fy9-kaasut/inquiry.json, the Delta U task) uses W_k and Delta U = Q - W_k (work done by the gas), while the theory now says Delta U = Q + W with W done on the gas. Add one sentence to that solution ("in the theory table the same is Delta U = Q + W, W = -p Delta V") or switch it to the theory form.

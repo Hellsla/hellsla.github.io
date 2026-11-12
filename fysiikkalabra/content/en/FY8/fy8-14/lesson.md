@@ -350,7 +350,7 @@ A household **smoke detector** contains about $37\,\text{kBq}$ of americium-241,
   <foreignObject x="142" y="83.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{detector}$</div></foreignObject>
   <foreignObject x="113" y="243.5" width="137" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{source}\ (\beta^-)$</div></foreignObject>
   <foreignObject x="362" y="199.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{paper web}$</div></foreignObject>
-  <foreignObject x="500" y="45.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{control}$</div></foreignObject>
+  <foreignObject x="428.5" y="5.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{control}$</div></foreignObject>
   <foreignObject x="121.5" y="301.5" width="357" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{thicker paper: less gets through}$</div></foreignObject>
 </svg>
 

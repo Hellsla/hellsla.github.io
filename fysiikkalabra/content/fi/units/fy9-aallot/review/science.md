@@ -1,27 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 87d88a068c43750c
+CONTENT-HASH: 568e3af2d4a962ca
+Delta review (formulas in MAFY form, 2026-11-12) of the version passed at 87d88a068c43750c.
 
-Science review of fy9-aallot. Round 2 (delta review of round 1 fixes; round 1 hash 510226a7fdf49c1d).
+## Blocking
+(none)
 
-## Blocking fixes verified (sources and built preview)
-1. inquiry.json `jousitus` Periaate: now "koriin ja kuljettajaan vaikuttavat paino ja jousten harmoninen voima. Paino vain siirtää tasapainoasemaa …". Consistent with s6 d. Fixed.
-2. s4 a: solutions.md model answer and tasks.json `assumptions` criterion both read "Malli on karkea arvio: ilma ja maasto vaimentavat ääntä, mutta myötätuuli ja heijastukset voivat nostaa tasoa." No "yläraja" left. Fixed.
-3. s4 b: "Bassot eivät välttämättä ole voimakkaampia: vaikka … yhtä voimakkaita, aita vaimentaa korkeat." Fixed.
-4. s5 b: step is $343 - 0{,}6 \cdot 15$ ≈ 334 m/s; answers.py `s5-v5C` = `343 - 0.6 * (20 - 5)` = 334,0. Fixed.
+## Polish
+1. `unit.md`, the sentence after the sound block: $A$ is the amplitude elsewhere in the unit (it is in the summary, the formula map and $\tfrac12 kA^2$) but the area in $I = \tfrac{P}{A}$. The subscript H is the beat frequency in $f_\text{H}$ and the observer in $v_\text{H}$. Both follow MAFY and both are defined, but a student can mix them up. Fix: add "(tässä $A$ on pinta-ala, ei amplitudi)" after the intensity definition.
+2. `inquiry.json` (the Doppler items) writes the source speed as $v_\text{s}$, and `sovella/tasks.json` and `solutions.md` write the beat frequency as $f_\text{h}$. The items define these themselves, so nothing contradicts the theory, but the symbols differ from its $v_\text{L}$ and $f_\text{H}$. Fix: rename them in the next task pass, or add "(teoriassa $v_\text{L}$)" to the first hint.
 
-## Polish fixes verified
-5. s3 c hand timing 0,1–0,2 s (1–2 % of t10 ≈ 10–20 s, 2–4 % of T²); conclusion (0,3 % difference) holds.
-6. s3 intercept: read-off points give b = 0,46 − 4,0375·0,10 = 0,05625 s²; b model "0,055–0,056", d Annettu explains 0,056 vs 0,055; l = 0,9768 m (0,976 with rounded k, b). Consistent.
-7. s5 a: half-range wording as the guardrail asks.
-8. tarkistus-3: "kaava pätee pienillä heilahduksilla".
-9. unit.md Ydinajatus: cause wording fixed.
-10. s2 c: the bat's double role is explained.
-
-## Recomputed (one Python call)
-k = 4,0375 s²/m, g = 9,778 m/s², l-intercept −0,0139 m, l(T = 2,00 s) = 0,9768 m; 343 − 0,6·15 = 334 m/s, difference 2,6 % ≈ 3 %; echo time 2·85/354 = 0,48 s, 0,02 s → 4 %; jousitus k = 110 363 N/m, f = 1,472 Hz. All agree with the page.
-
-## New problems
-None. Build has no errors; Playwright 390 and 1280: no console errors, 0 katex-error, no raw $.
-
-## Polish (optional)
-- s3 d Sijoitus uses 0,0563 s² while Annettu says 0,056 s²; harmless extra digit of an intermediate value.
+## Checked
+I recomputed the four Doppler rows ($f_0 = 440$ Hz, $v = 343$ m/s, a speed of 20 m/s): source towards 467.2 Hz, away 415.8 Hz; observer towards 465.7 Hz, away 414.3 Hz. These are MAFY's forms with its conditions: one of them moves, slower than sound. $\overline{F} = -k\overline{x}$ explains the sign. $I = P/A$ is given with $A = 4\pi r^2$ for a point source without reflections. The map nodes ($\overline{F} = -k\overline{x}$, $f_\text{H}$, $f = f_0 v/(v - v_\text{L})$) match the theory. The other rows are unchanged.

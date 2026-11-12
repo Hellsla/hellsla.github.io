@@ -112,7 +112,7 @@ Lämpöopissa on kolme käsitettä, jotka täytyy erottaa toisistaan. **Lämpöt
 
 Kaikki tunnin tehtävät perustuvat energian säilymiseen. Kun aineeseen siirtyy lämpöä, aineen lämpötila nousee tai sen olomuoto muuttuu. Kun lämpötila nousee, aine myös laajenee eli kasvaa. Eristetyssä systeemissä energia ei pääse ulos. Siellä kuuma osa luovuttaa eli antaa yhtä paljon lämpöä kuin kylmä osa vastaanottaa. Talon lämpötila pysyy samana, kun taloon tulee yhtä suuri teho kuin siitä lähtee.
 
-<svg data-fig="kartta" viewBox="0 0 380 636" role="img" aria-label="Käsitekartta. Ylhäällä on solmu energia säilyy: eristetyssä systeemissä luovutettu lämpömäärä on yhtä suuri kuin vastaanotettu. Solmusta lähtee alas neljä haaraa. Lämpeneminen: Q = c m ΔT, kun olomuoto ei muutu, ja kelvinlämpötila T = θ + 273,15. Olomuodon muutos: sulaminen Q = s m ja höyrystyminen Q = r m, kun lämpötila pysyy samana. Lämpölaajeneminen: pituus ΔL = α L0 ΔT ja tilavuus ΔV = γ V0 ΔT. Lämmön siirtyminen: johtuminen, konvektio ja säteily sekä seinän läpi johtuva teho P = U A ΔT." style="max-width:100%;font-size:21px">
+<svg data-fig="kartta" viewBox="0 0 380 636" role="img" aria-label="Käsitekartta. Ylhäällä on solmu energia säilyy: eristetyssä systeemissä luovutettu lämpömäärä on yhtä suuri kuin vastaanotettu. Solmusta lähtee alas neljä haaraa. Lämpeneminen: Q = c m ΔT, kun olomuoto ei muutu, ja kelvinlämpötila T = θ + 273,15. Olomuodon muutos: sulaminen Q = s m ja höyrystyminen Q = r m, kun lämpötila pysyy samana. Lämpölaajeneminen: pituus l = l0 kertaa 1 + α ΔT ja tilavuus V = V0 kertaa 1 + γ ΔT. Lämmön siirtyminen: johtuminen, konvektio ja säteily sekä seinän läpi johtuva teho P = U A ΔT." style="max-width:100%;font-size:21px">
   <line x1="24" y1="84" x2="24" y2="522" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="76" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
   <foreignObject x="115" y="17.5" width="150" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:21px">$\text{energia säilyy}$</div></foreignObject>
@@ -137,9 +137,9 @@ Kaikki tunnin tehtävät perustuvat energian säilymiseen. Kun aineeseen siirtyy
   <rect x="44" y="368" width="328" height="120" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
   <foreignObject x="58" y="377.5" width="205" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\textbf{lämpölaajeneminen}$</div></foreignObject>
   <line x1="54" y1="410" x2="362" y2="410" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="419.5" width="106" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\Delta L = \alpha L_0\,\Delta T$</div></foreignObject>
+  <foreignObject x="58" y="419.5" width="128" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$l = l_0(1 + \alpha\Delta T)$</div></foreignObject>
   <foreignObject x="298" y="421" width="64" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{pituus}$</div></foreignObject>
-  <foreignObject x="58" y="453.5" width="106" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\Delta V = \gamma V_0\,\Delta T$</div></foreignObject>
+  <foreignObject x="58" y="453.5" width="128" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$V = V_0(1 + \gamma\Delta T)$</div></foreignObject>
   <foreignObject x="279" y="455" width="83" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{tilavuus}$</div></foreignObject>
   <line x1="24" y1="522" x2="44" y2="522" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="44" y="500" width="328" height="120" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
@@ -156,28 +156,29 @@ Seuraa kokeessa ensin energiaa. Mistä energia lähtee? Mihin se menee? Muuttuuk
 
 ### Lämpötila ja sisäenergia
 
-```latex
-T = \theta + 273{,}15
+```kaavat
+lämpötila kelvineinä :: T = \theta + 273{,}15
 ```
 
 Tässä $T$ on lämpötila kelvineinä ($\text{K}$) ja $\theta$ lämpötila celsiusasteina (${}^\circ\text{C}$). Lämpötilaero on sama kelvineinä ja celsiusasteina. Lämpötilojen suhteet lasketaan kuitenkin kelvineinä. Lämpö ja työ muuttavat sisäenergiaa:
 
-```latex
-\Delta U = Q + W
+```kaavat
+lämpöopin 1. pääsääntö :: \Delta U = Q + W
 ```
 
 Tässä $\Delta U$ on sisäenergian muutos, $Q$ systeemiin siirtynyt lämpömäärä ja $W$ systeemiin tehty työ. Kaikki ovat jouleina. Systeemiin tuleva energia on positiivista. Yhtälö pätee, kun systeemin liike-energia ja potentiaalienergia eivät muutu.
 
 ### Lämpeneminen ja olomuodon muutos
 
-```latex
-Q = cm\Delta T
+```kaavat
+siirtynyt lämpömäärä :: Q = cm\Delta T
 ```
 
 Tässä $c$ on ominaislämpökapasiteetti ($\text{J/(kg}\cdot\text{K)}$), $m$ massa ($\text{kg}$) ja $\Delta T$ lämpötilan muutos ($\text{K}$). Kaava pätee vain silloin, kun olomuoto ei muutu. Sulamisessa ja höyrystymisessä käytetään näitä kaavoja:
 
-```latex
-Q = sm \qquad Q = rm
+```kaavat
+sulamislämpö :: Q = sm
+höyrystymislämpö :: Q = rm
 ```
 
 Tässä $s$ on ominaissulamislämpö ja $r$ ominaishöyrystymislämpö ($\text{J/kg}$). Kun paine pysyy samana, puhtaan aineen lämpötila ei muutu olomuodon muutoksen aikana. Energia ei nosta lämpötilaa, vaan se kasvattaa hiukkasten vuorovaikutusenergiaa. Kun aine jähmettyy eli muuttuu kiinteäksi tai tiivistyy eli muuttuu kaasusta nesteeksi, sama energia vapautuu. Vedelle $c = 4190\,\text{J/(kg}\cdot\text{K)}$, jäälle $c = 2100\,\text{J/(kg}\cdot\text{K)}$, $s = 334\,\text{kJ/kg}$ ja $r = 2260\,\text{kJ/kg}$.
@@ -257,24 +258,25 @@ Nyt voimme vastata alun kysymykseen. Kilogramman lumen lämmittäminen $-10\,{}^
 
 Eristetyssä astiassa energia säilyy:
 
-```latex
-Q_\text{luovutettu} = Q_\text{vastaanotettu}
+```kaavat
+lämpötase :: Q_\text{luovutettu} = Q_\text{vastaanotettu}
 ```
 
 Kun jäätä ja vettä sekoitetaan, tee ensin vertailu. Vesi luovuttaa lämpöä, kun se jäähtyy $0\,{}^\circ\text{C}$:seen. Riittääkö tämä lämpö lämmittämään jään $0\,{}^\circ\text{C}$:seen ja sulattamaan sen? Jos riittää, kaikki jää sulaa, ja lopun lämpötila on vähintään $0\,{}^\circ\text{C}$. Jos ei riitä, osa jäästä jää jäljelle, ja lämpötila on tasan $0\,{}^\circ\text{C}$. Hyvin kylmä jää voi myös jäädyttää osan vedestä tai kaiken veden.
 
 ### Laajeneminen ja lämmön siirtyminen
 
-```latex
-\Delta L = \alpha L_0 \Delta T \qquad \Delta V = \gamma V_0 \Delta T
+```kaavat
+pituuden lämpölaajeneminen :: l = l_0(1 + \alpha\Delta T)
+tilavuuden lämpölaajeneminen :: V = V_0(1 + \gamma\Delta T)
 ```
 
-Tässä $\alpha$ on pituuden lämpötilakerroin ja $\gamma$ tilavuuden lämpötilakerroin ($1/\text{K}$). $L_0$ on alkuperäinen pituus ja $V_0$ alkuperäinen tilavuus. Kiinteille aineille kaavat pätevät, kun lämpötila muuttuu enintään noin $100\,\text{K}$. Nesteen $\gamma$ on käyttökelpoinen vain lähellä sitä lämpötilaa, joka on taulukossa. Vesi on poikkeus: sen tiheys on suurin noin $4\,{}^\circ\text{C}$:ssa.
+Tässä $\alpha$ on pituuden lämpötilakerroin ja $\gamma$ tilavuuden lämpötilakerroin ($1/\text{K}$). $l_0$ on alkuperäinen pituus ja $V_0$ alkuperäinen tilavuus. $l$ ja $V$ ovat pituus ja tilavuus, kun lämpötila on muuttunut $\Delta T$. Pituus muuttuu siis $\Delta l = \alpha l_0 \Delta T$ ja tilavuus $\Delta V = \gamma V_0 \Delta T$. Kiinteille aineille kaavat pätevät, kun lämpötila muuttuu enintään noin $100\,\text{K}$. Nesteen $\gamma$ on käyttökelpoinen vain lähellä sitä lämpötilaa, joka on taulukossa. Vesi on poikkeus: sen tiheys on suurin noin $4\,{}^\circ\text{C}$:ssa.
 
 Lämpö siirtyy kolmella tavalla: johtumalla, konvektiona ja säteilynä. Konvektiossa lämmin neste tai kaasu virtaa ja kuljettaa energiaa. Lämpö siirtyy nettomääräisesti eli kaiken kaikkiaan lämpimämmästä kappaleesta kylmempään. Rakennusosan, esimerkiksi seinän, läpi johtuva teho on
 
-```latex
-P = UA\Delta T
+```kaavat
+rakennusosan läpi johtuva lämpöteho :: P = UA\Delta T
 ```
 
 Tässä $U$ on U-arvo ($\text{W/(m}^2\cdot\text{K)}$), $A$ pinta-ala ($\text{m}^2$) ja $\Delta T$ sisälämpötilan ja ulkolämpötilan ero ($\text{K}$). Kaava pätee, kun lämpötilat pysyvät samoina.

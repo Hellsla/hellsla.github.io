@@ -201,11 +201,9 @@ Mittausaineistojen käsittely ja kuvaajien tulkinta ovat keskeisiä ja usein esi
 
 Toistetun mittauksen paras arvio on keskiarvo $\bar{x}$. Tässä kurssissa hajontaa arvioidaan vaihteluvälin puolikkaana, ja tulos ilmoitetaan muodossa $\bar{x} \pm \Delta x$:
 
-```latex
-\begin{aligned}
-\Delta x &= \frac{x_\text{max} - x_\text{min}}{2} \\
-\varepsilon &= \frac{\Delta x}{\bar{x}} \cdot 100\,\%
-\end{aligned}
+```kaavat
+mittaustuloksen epävarmuus :: \Delta x = \frac{x_\text{max} - x_\text{min}}{2}
+suhteellinen epävarmuus :: \varepsilon = \frac{\Delta x}{\bar{x}} \cdot 100\,\%
 ```
 
 missä $x_\text{max}$ ja $x_\text{min}$ ovat suurin ja pienin tulos, $\Delta x$ mittausepävarmuus ja $\varepsilon$ suhteellinen epävarmuus. Kertamittauksessa lukeman epävarmuutta voidaan yksinkertaisessa tilanteessa arvioida puoleksi pienimmästä asteikkovälistä, mutta kokonaisepävarmuuteen vaikuttavat myös menetelmä ja muut virhelähteet. Epävarmuus pyöristetään yhteen merkitsevään numeroon (kahteen, jos ensimmäinen numero on 1), ja tulos samaan desimaaliin. Kerto- ja jakolaskun tulos saa yhtä monta merkitsevää numeroa kuin epätarkin lähtöarvo.
@@ -216,8 +214,9 @@ Toistaminen vaimentaa satunnaisvirheen vaikutusta keskiarvossa, mutta systemaatt
 
 Jos pisteet asettuvat likimain suoralle, niihin sovitetaan suora pisteiden lomaan:
 
-```latex
-y = kx + b, \qquad k = \frac{\Delta y}{\Delta x}
+```kaavat
+suoran yhtälö :: y = kx + b
+kulmakerroin :: k = \frac{\Delta y}{\Delta x}
 ```
 
 missä $k$ on kulmakerroin ja $b$ vakiotermi eli $y$:n arvo, kun $x = 0$. Kulmakerroin luetaan suoran kahdesta kaukana toisistaan olevasta pisteestä, ei mittauspisteistä. Sen yksikkö on pystyakselin yksikkö jaettuna vaaka-akselin yksiköllä, ja sillä on yleensä fysikaalinen merkitys: $(V, m)$-kuvaajassa se on tiheys. Malli on osoitettu päteväksi vain mitatulla alueella, joten ekstrapolointi sen ulkopuolelle on perusteltava.
@@ -303,8 +302,8 @@ missä $k$ on kulmakerroin ja $b$ vakiotermi eli $y$:n arvo, kun $x = 0$. Kulmak
 
 Kulmakertoimen epävarmuutta voi arvioida jyrkimmän ja loivimman suoran avulla, jotka vielä kulkevat epävarmuusjanojen kautta:
 
-```latex
-\Delta k = \frac{k_\text{max} - k_\text{min}}{2}
+```kaavat
+kulmakertoimen epävarmuus :: \Delta k = \frac{k_\text{max} - k_\text{min}}{2}
 ```
 
 Ne rajaavat arvioidun vaihteluvälin, eivät varmoja rajoja.
@@ -313,12 +312,10 @@ Ne rajaavat arvioidun vaihteluvälin, eivät varmoja rajoja.
 
 Kun malli ei ole suora, akseleille valitaan suureet, joiden välinen riippuvuus on suora. Malli kirjoitetaan muotoon $y = kx + b$:
 
-```latex
-\begin{aligned}
-s &= \tfrac{a}{2} \cdot t^2 \\
-p &= C \cdot \tfrac{1}{V} \\
-m &= \rho V + m_0
-\end{aligned}
+```kaavat
+matka levosta tasaisesti kiihtyvässä liikkeessä :: s = \tfrac{a}{2} \cdot t^2
+Boylen laki :: p = C \cdot \tfrac{1}{V}
+astian ja nesteen yhteinen massa :: m = \rho V + m_0
 ```
 
 Levosta tasaisesti kiihtyvässä liikkeessä, kun aika lasketaan liikkeen alusta, $(t^2, s)$-kuvaaja on origon kautta kulkeva suora, jonka kulmakerroin on $\tfrac{a}{2}$. Kun kaasun määrä ja lämpötila pysyvät samoina, Boylen lain mukaan $(\tfrac{1}{V}, p)$-kuvaaja on suora; vakio $C$ on paineen ja tilavuuden tulo. Astiassa punnitun nesteen kokonaismassa $m$ on tilavuuden $V$ suhteen suora, jonka kulmakerroin on tiheys $\rho$ ja vakiotermi astian massa $m_0$.
@@ -382,7 +379,7 @@ Levosta tasaisesti kiihtyvässä liikkeessä, kun aika lasketaan liikkeen alusta
   <circle cx="399" cy="194.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
   <circle cx="426" cy="144" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
   <circle cx="458" cy="82.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="413.5" y="227.5" width="50" height="32" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:27px">$k = \tfrac{a}{2}$</div></foreignObject>
+  <foreignObject x="480" y="133.5" width="78" height="32" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:27px">$k = a/2$</div></foreignObject>
 </svg>
 
 ## Yleisiä virheitä

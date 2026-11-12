@@ -1,39 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: cc10e5fca522a7b1
+CONTENT-HASH: 1f6c69d3b8ae7a2b
 
-## Delta review (2026-11-04, previous hash 678dc353273487b6)
-- Change: in figure tilanteet, "Maa" moved from x=300 to x=328 (figures.py and the inlined SVG in unit.md). `git diff HEAD` shows no other change.
-- The figure was captured from the preview at 360 and 1280 (2x, all details open). "Maa" is grey and sits above the right end of the Earth arc. It is clear of $\overline{a}$; a bounding-box test found no overlap with any other label. It also stays inside the figure.
-- `check_layout.py fy9-ympyraliike`: OK at 360 and at 1280, for fi, en and fi-easy.
-- The page has 0 `.katex-error` and no console errors, and scrollWidth equals the viewport.
+Delta review (formulas in MAFY form, 2026-11-12) of the version passed at cc10e5fca522a7b1.
 
-Still PASS.
+## Blocking
+None. Built at 390 and 1280 px: KaTeX renders without errors, no horizontal overflow, upright subscripts, \overline vectors and spacing correct, formula map text fits its boxes, the new definition sentences read naturally.
 
-Round 2 (delta review of round 1 fixes; round 1 hash fc0aa5da26550049). Visual and editorial review of fy9-ympyraliike.
+## Polish
+None.
 
-## Round 1 Blocking: verified fixed
-- sovella/tasks.json s3 d: "Mikä on lyhin kierrosaika, jolla alustaa saa pyörittää tällä kärryllä ja etäisyydellä?". It is clear and in good Finnish, and it renders in the preview.
-- inquiry.json lumilapio, Sijoitus: "takakäden suhteen". It renders in the built page at 390 and 1280.
-
-## Polish: verified
-- Figure tilanteet, captured at 390 (2x):
-  - $\overline{N}$ sits above the arrow tip, clear of the block;
-  - the panel-title fractions are display size and legible;
-  - "Maa" and the ground arc are grey, so blue is now used only for velocity;
-  - force red, velocity blue and acceleration orange hold.
-- The new unit.md sentence renders cleanly at 390 with inline $\tfrac{v^2}{r}$.
-- The s2 d model answer and the tarkistus-1 feedback are in correct Finnish with LaTeX units.
-
-## Build check
-`build.py fy9-ympyraliike` at 390 and 1280:
-- 0 `.katex-error`;
-- no raw `$`;
-- no console errors;
-- no horizontal overflow (scrollWidth equals the viewport).
-
-## Still open (Polish, not blocking)
-- s1 a: the Järkevyys inline fractions are kept as house style.
-- Shared: the catalog figures fy5-6/vr and fy5-4/kuvaaja have 13 px labels at 390.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+## Checked
+Rendered formula blocks and formula map of this unit read as a contact sheet at 390 px; overflow and KaTeX-error scan of the built page at 390 and 1280 px; diff text read.

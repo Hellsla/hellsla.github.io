@@ -1,15 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 271c1d1ab8c947a2
-
-Science review (round 3) of the English translation of fy9-aallot (source `content/fi/units/fy9-aallot/`). Reviewed 2026-11-04.
-
-## Checks
-- No translation file changed since round 2 (only the shared figlib fix and the figure redraw). Physics, numbers, answers, formulas and tolerances remain as in the round-2 PASS.
-- Redrawn figures checked against the source: concept map formulas (F = -kx, T = 2π√(m/k), T = 2π√(l/g), v = fλ, Δs = nλ, f_n = n·v/(2L), beats, Doppler, L = 10 dB·lg(I/I0)) intact; pilli 350/3000 ≈ 0.12 m and 1500/3000 = 0.50 m; ominais N/A placement correct for string, open and closed tube; s3 slope (3.69 − 0.46)/0.80 ≈ 4.04 s²/m, intercept 0.055 s². Decimal points throughout.
-- `check_i18n.py`: en 0 errors; `practice.py check`: en/units/fy9-aallot 6 tasks, 95 points; `units.py check`: 77 units ok.
+CONTENT-HASH: 79ddac07b1cdc0c8
+Delta review (formulas in MAFY form, 2026-11-12) of the version passed at 271c1d1ab8c947a2.
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-1. `unit.md` and the concept map: $f_\text{h}$ (beat frequency) and $v_\text{h}$ (listener speed) keep the Finnish subscript h. Defined in the text, so clear; optional.
+1. `unit.md`, the sentence after the sound block: $A$ is the amplitude elsewhere in the unit but the area in $I = \tfrac{P}{A}$, and the subscript H means beats in $f_\text{H}$ and the observer in $v_\text{H}$. Fix: add "(here $A$ is an area, not the amplitude)". Also say that L and H are the Finnish initials used by MAFY (lähde = source, havaitsija = observer).
+2. `inquiry.json` (the Doppler items) writes the source speed as $v_\text{s}$, and Sovella writes the beat frequency as $f_\text{h}$. Both are defined there, but they differ from the theory's $v_\text{L}$ and $f_\text{H}$. Fix: rename them, or add "(in the theory $v_\text{L}$)" to the first hint.
+
+## Checked
+I recomputed the four Doppler rows ($f_0 = 440$ Hz, $v = 343$ m/s, a speed of 20 m/s): source towards 467.2 Hz, away 415.8 Hz; observer towards 465.7 Hz, away 414.3 Hz. These are MAFY's forms with its conditions: one of them moves, slower than sound. $\overline{F} = -k\overline{x}$ explains the sign. $I = P/A$ is given with $A = 4\pi r^2$ for a point source without reflections. The map nodes ($\overline{F} = -k\overline{x}$, $f_\text{H}$, $f = f_0 v/(v - v_\text{L})$) match the theory. The English text says the same physics as fi. The other rows are unchanged.

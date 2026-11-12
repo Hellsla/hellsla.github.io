@@ -8,6 +8,10 @@ from figlib import GOOD, HEAT, HOT, HOT_LIGHT, IRON, n
 import herolib as H
 from figlib import COLD, METAL_EDGE
 from herolib import grad, rnd
+from figlib import ALUMINIUM
+from figstyle import limb
+
+SKIN = "#f3d2b3"
 
 g = 9.81
 BOX, BOX_EDGE = SAND_LIGHT, "#a97a35"
@@ -67,11 +71,33 @@ def hand(f, x, y): f.circle(x, y, 8, "#6b7480")
 def rope(f, x1, y1, x2, y2): f.line(x1, y1, x2, y2, "#a97a35", 3, cap="round")
 
 
-def person(f, cx, yfoot, h=120, fill="#d0e6fb"):
-    """A simple standing person: body, head, legs; the centre of mass about at mid-height."""
-    f.rect(cx - 18, yfoot - h * 0.72, 36, h * 0.48, fill, INK, 2.5, rx=10)
-    f.circle(cx, yfoot - h * 0.84, h * 0.11, fill, INK, 2.5)
-    f.line(cx - 9, yfoot - h * 0.26, cx - 9, yfoot, INK, 4, cap="round"); f.line(cx + 9, yfoot - h * 0.26, cx + 9, yfoot, INK, 4, cap="round")
+def person(f, cx, yfoot, h=120, coat="#1971c2"):
+    """The lift passenger, seen from the front, in the house style (fy7-11/observer, figstyle.limb): shaped legs, coat and
+    arms, a head with hair, shoes on the floor at yfoot; h is the height to the top of the head, the centre of mass about at
+    mid-height. One drawing for every lift figure of the chapter."""
+    s = h / 120
+    for dx in (-7, 7):                                             # legs and shoes
+        limb(f, (cx + dx * s, yfoot - 54 * s), (cx + dx * s * 1.1, yfoot - 6 * s), 13 * s, 10 * s, "#3a4350", sw=1.25)
+        f.rect(cx + dx * s * 1.1 - 7 * s + (3 * s if dx > 0 else -3 * s), yfoot - 7 * s, 14 * s, 7 * s, INK, None, 0, 3 * s)
+    f.rect(cx - 4 * s, yfoot - 104 * s, 8 * s, 10 * s, SKIN)                                                 # the neck
+    limb(f, (cx, yfoot - 80 * s), (cx, yfoot - 64 * s), 31 * s, 29 * s, coat, sw=1.25)                     # the coat
+    for sx in (-1, 1):                                             # arms along the sides, hands
+        limb(f, (cx + sx * 15 * s, yfoot - 88 * s), (cx + sx * 18 * s, yfoot - 58 * s), 9 * s, 8 * s, coat, sw=1.25)
+        f.circle(cx + sx * 18 * s, yfoot - 54 * s, 4.5 * s, SKIN, "#b98a5e", 1)
+    hx, hy, r = cx, yfoot - 111 * s, 11 * s
+    f.circle(hx, hy, r, SKIN, "#b98a5e", 1.25)
+    f.path(f"M{n(hx - r)},{n(hy - 2 * s)} Q{n(hx - r)},{n(hy - r - 4 * s)} {n(hx)},{n(hy - r - 2 * s)} "
+           f"Q{n(hx + r)},{n(hy - r - 4 * s)} {n(hx + r)},{n(hy - 2 * s)} Q{n(hx)},{n(hy - r + 7 * s)} {n(hx - r)},{n(hy - 2 * s)} Z", "#3a4350")  # hair
+
+
+def cabin(f, x, y, w, h):
+    """A lift car (fy4-16's, copied; outlined in soft ink like the house style's glass): the cable from above, the walls, a
+    handrail and the floor (its top at y + h - 12)."""
+    f.line(x + w / 2, y - 10, x + w / 2, y, IRON, 3)
+    f.rect(x, y, w, h, GLASS, "#3a4350", 1.75, rx=4)
+    f.rect(x + 6, y + h - 12, w - 12, 8, ALUMINIUM, METAL_EDGE, 1.5)
+    f.line(x + w - 14, y + h * 0.45, x + w - 14, y + h * 0.62, METAL_EDGE, 3)
+    return y + h - 12
 
 
 def axes_hint(f, x, y, label_x=r"x", label_y=r"y", ang=0):
@@ -233,9 +259,8 @@ def _lift(name, N_over_G, desc, wrong=None, v_force=False):
     """An option of the lift question: the lift with the person (situation picture, left) and the person's force diagram,
     the person a rectangle (right)."""
     f = Fig(f"fy45-hissi-{name}", 300, desc, width=300)
-    f.rect(16, 50, 104, 200, "none", RULE, 3, rx=4)
-    ground(f, 19, 117, 230)
-    person(f, 68, 230, 112)
+    floor = cabin(f, 16, 50, 104, 200)
+    person(f, 68, floor, 112)
     f.line(140, 30, 140, 270, RULE, 1.5, "6 6")
     cx, cy, w, h = 214, 150, 48, 80
     G = 70.0
@@ -316,9 +341,8 @@ def malli_hissi_jarru():
             "ja ihminen. Keskellä ihmisen voimakuvio, ihminen suorakulmiona: paino G keskipisteestä alas ja lattian tukivoima N "
             "alapinnasta ylös, lyhyempi kuin paino. Oikealla erillään ohuet nuolet: sininen nopeus v ylös ja oranssi kiihtyvyys a alas. "
             "Ne eivät ole voimia.")
-    f.rect(30, 60, 130, 240, "none", RULE, 3, rx=4)
-    ground(f, 33, 157, 280)
-    person(f, 95, 280, 140)
+    floor = cabin(f, 30, 60, 130, 240)
+    person(f, 95, floor, 140)
     cx, cy, w, h = 300, 170, 44, 90
     d = FBD(f, 0.17, body=(cx, cy, w, h), m=m, a=(0, a))
     d.force("G", (0, -G), (cx, cy), "gravity", lab=(22, -4))
@@ -365,7 +389,7 @@ def pick_push(fid, label, push=PK_F, extra=False, v_force=False, wrong=None):
     f = Fig(fid, 240, label, width=300)
     d = FBD(f, PK_S, body=PK_BODY, a_dir=(0, 0), wrong=wrong)
     d.force("G", (0, -PK_G), (cx, cy), "gravity", lab=(-20, 6))
-    d.force("N", (0, PK_G), (cx + 24, cy + h / 2), "normal", surface=0, lab=(20, 6))
+    d.force("N", (0, PK_G), (cx + 24, cy + h / 2), "normal", surface=0, lab=(24, -14))   # above the body's top edge, clear of the head
     d.force("F", (push, 0), (cx - w / 2, cy - 26), "applied", push=True, lab=(-14, -16))
     d.force("F_mu", (-PK_F, 0), (cx - w / 2, cy + h / 2), "friction", surface=0, lab=(-12, 18))
     if extra:

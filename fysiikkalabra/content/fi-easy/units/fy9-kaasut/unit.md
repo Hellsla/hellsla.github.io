@@ -176,7 +176,7 @@ Tämän tunnin tehtävissä on yksi tärkeä suure: **paine on pintaa vastaan ko
 
 Kokeen kaasutehtävissä tarvitaan kaksi tarkistusta ennen kuin sijoitat luvut. **Lämpötilan on oltava kelvineinä.** Kaasulait ovat verrannollisuuksia, ja ne alkavat absoluuttisesta nollapisteestä. **Paineen on oltava kokonaispaine.** Painemittari näyttää yleensä vain ylipaineen eli sen, kuinka paljon paine on ilmanpainetta suurempi. Kaasun hiukkaset tuottavat kuitenkin koko paineen.
 
-<svg data-fig="kartta" viewBox="0 0 380 596" role="img" aria-label="Käsitekartta. Ylhäällä on solmu paine: p = F / A. Siitä lähtee alas kolme haaraa. Neste: paine syvyydellä p = p0 + ρ g h, ylipaine ρ g h ja kokonaispaine, joka on ilmanpaine ja ylipaine yhteensä. Kaasu: tilanyhtälö p V = n R T, yhdistetty kaasulaki p1 V1 / T1 = p2 V2 / T2 ja kelvinlämpötila T = θ + 273,15 K. Lämpövoimakone: kaasun työ W = p ΔV, energian säilyminen W = Q1 − Q2 ja hyötysuhde eeta = W / Q1." style="max-width:min(100%,440px);font-size:21px">
+<svg data-fig="kartta" viewBox="0 0 380 596" role="img" aria-label="Käsitekartta. Ylhäällä on solmu paine: p = F / A. Siitä lähtee alas kolme haaraa. Neste: paine syvyydellä p = p0 + ρ g h, ylipaine ρ g h ja kokonaispaine, joka on ilmanpaine ja ylipaine yhteensä. Kaasu: tilanyhtälö p V = n R T, yhdistetty kaasulaki p V / T = vakio ja kelvinlämpötila T = θ + 273,15 K. Lämpövoimakone: kaasun työ W = p ΔV, energian säilyminen W = Q1 − Q2 ja hyötysuhde eeta = W / Q1." style="max-width:min(100%,440px);font-size:21px">
   <line x1="24" y1="80" x2="24" y2="454" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
   <foreignObject x="158.5" y="16.5" width="63" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:21px">$\text{paine}$</div></foreignObject>
@@ -197,7 +197,7 @@ Kokeen kaasutehtävissä tarvitaan kaksi tarkistusta ennen kuin sijoitat luvut. 
   <line x1="54" y1="308" x2="362" y2="308" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="58" y="319.5" width="74" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$pV = nRT$</div></foreignObject>
   <foreignObject x="257" y="322" width="105" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{tilanyhtälö}$</div></foreignObject>
-  <foreignObject x="58" y="353.5" width="172" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$p_1V_1/T_1 = p_2V_2/T_2$</div></foreignObject>
+  <foreignObject x="58" y="353.5" width="117" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$pV/T = \text{vakio}$</div></foreignObject>
   <foreignObject x="274" y="356" width="88" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{sama kaasu}$</div></foreignObject>
   <foreignObject x="58" y="387.5" width="139" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$T = \theta + 273{,}15\,\text{K}$</div></foreignObject>
   <foreignObject x="283" y="390" width="79" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{kelvinit}$</div></foreignObject>
@@ -205,7 +205,7 @@ Kokeen kaasutehtävissä tarvitaan kaksi tarkistusta ennen kuin sijoitat luvut. 
   <rect x="44" y="432" width="328" height="150" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
   <foreignObject x="58" y="441.5" width="172" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\textbf{lämpövoimakone}$</div></foreignObject>
   <line x1="54" y1="474" x2="362" y2="474" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="485.5" width="84" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$W_\text{k} = p\,\Delta V$</div></foreignObject>
+  <foreignObject x="58" y="485.5" width="74" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$W = p\,\Delta V$</div></foreignObject>
   <foreignObject x="274" y="488" width="88" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{kaasun työ}$</div></foreignObject>
   <foreignObject x="58" y="519.5" width="84" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$W = Q_1 - Q_2$</div></foreignObject>
   <foreignObject x="266" y="522" width="96" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{säilyminen}$</div></foreignObject>
@@ -248,62 +248,62 @@ Nyt voimme vastata alun kysymykseen näillä kahdella tarkistuksella. Lämpimäs
 
 ### Paine ja nesteen paine
 
-```latex
-p = \frac{F}{A}
+```kaavat
+voiman aiheuttama paine :: p = \frac{F}{A}
 ```
 
 Tässä $p$ on paine (Pa), $F$ on pintaa vastaan kohtisuora voima (N) ja $A$ on pinta-ala (m²). Kun neste on levossa, paine syvyydellä $h$ on
 
-```latex
-p = p_0 + \rho g h
+```kaavat
+hydrostaattinen paine :: p = \rho g h
 ```
 
-Tässä $p_0$ on paine nesteen pinnalla. Se on yleensä ilmanpaine, noin $101\,\text{kPa}$. $\rho$ on nesteen tiheys (kg/m³) ja $g = 9{,}81\,\text{m/s}^2$. Termi $\rho g h$ on ylipaine. Se riippuu vain syvyydestä ja tiheydestä. Astian muoto ei vaikuta siihen. Paineen aiheuttama voima on aina kohtisuorassa pintaa vastaan.
+Tässä $\rho$ on nesteen tiheys (kg/m³) ja $g = 9{,}81\,\text{m/s}^2$. Hydrostaattinen paine on ylipaine. Se riippuu vain syvyydestä ja tiheydestä. Kokonaispaine syvyydellä $h$ on $p_0 + \rho g h$. Tässä $p_0$ on paine nesteen pinnalla. Se on yleensä ilmanpaine, noin $101\,\text{kPa}$. Astian muoto ei vaikuta siihen. Paineen aiheuttama voima on aina kohtisuorassa pintaa vastaan.
 
 ### Kaasun tila
 
-```latex
-pV = nRT
+```kaavat
+ideaalikaasun tilanyhtälö :: pV = nRT
 ```
 
 Tässä $V$ on tilavuus (m³), $n$ on ainemäärä (mol), $R = 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$ ja $T$ on lämpötila kelvineinä. Ainemäärä saadaan massasta: $n = m/M$. Tässä $M$ on moolimassa. Yhtälö pätee eli on voimassa harvalle kaasulle. Kaasu on harvaa, kun paine ei ole kovin suuri eikä lämpötila kovin matala. Kun kaasun määrä pysyy samana,
 
-```latex
-\frac{p_1 V_1}{T_1} = \frac{p_2 V_2}{T_2}
+```kaavat
+tilanyhtälö vakioainemäärälle :: \frac{pV}{T} = \text{vakio}
 ```
 
-Tästä saadaan kolme erikoistapausta. Kun lämpötila on vakio, pätee Boylen laki $p_1V_1 = p_2V_2$. Kun paine on vakio, $V \propto T$. Kun tilavuus on vakio, $p \propto T$. Merkki $\propto$ tarkoittaa, että suureet ovat suoraan verrannolliset. Kelvinlämpötila on
+Kahdessa eri tilassa siis $\tfrac{p_1 V_1}{T_1} = \tfrac{p_2 V_2}{T_2}$. Tästä saadaan kolme erikoistapausta. Kun lämpötila on vakio, pätee Boylen laki $p_1V_1 = p_2V_2$. Kun paine on vakio, $V \propto T$. Kun tilavuus on vakio, $p \propto T$. Merkki $\propto$ tarkoittaa, että suureet ovat suoraan verrannolliset. Kelvinlämpötila on
 
-```latex
-T = \theta + 273{,}15\,\text{K}
+```kaavat
+lämpötila kelvineinä :: T = \theta + 273{,}15\,\text{K}
 ```
 
 Tässä $\theta$ on celsiuslämpötilan lukuarvo. Kokeessa absoluuttinen nollapiste saadaan näin: $(\theta, p)$- tai $(\theta, V)$-suoraa jatketaan nollaan asti. Tulos on mallin ennuste. Todellinen kaasu tiivistyy eli muuttuu nesteeksi jo ennen sitä.
 
 ### Kaasun työ ja lämpövoimakone
 
-Kun kaasu laajenee vakiopaineessa, se tekee työn
+Kun kaasu laajenee vakiopaineessa, se tekee työn. Kun kaasua puristetaan, siihen tehdään työ:
 
-```latex
-W_\text{k} = p\,\Delta V
+```kaavat
+kaasun tekemä laajenemistyö / kaasuun tehty puristustyö :: W = p\Delta V
 ```
 
-Tässä $\Delta V$ on tilavuuden muutos (m³). Työ on ($V$, $p$)-kuvaajan alle jäävä pinta-ala. Termodynamiikan ensimmäinen pääsääntö kertoo, miten kaasun sisäenergia muuttuu:
+Tässä $\Delta V$ on tilavuuden muutoksen suuruus (m³). Työ on ($V$, $p$)-kuvaajan alle jäävä pinta-ala. Termodynamiikan ensimmäinen pääsääntö kertoo, miten kaasun sisäenergia muuttuu:
 
-```latex
-\Delta U = Q - W_\text{k}
+```kaavat
+lämpöopin 1. pääsääntö :: \Delta U = Q + W
 ```
 
-Tässä $Q$ on lämpö, joka siirtyy kaasuun (J), ja $W_\text{k}$ on kaasun tekemä työ. Lämpövoimakone toimii kierroksina. Yhden kierroksen aikana kone ottaa kuumasta lähteestä lämmön $Q_1$. Se tekee työn $W$. Lisäksi se luovuttaa eli antaa lämmön $Q_2$ kylmempään ympäristöön. Energia säilyy, joten
+Tässä $Q$ on lämpö, joka siirtyy kaasuun (J), ja $W$ on työ, joka tehdään kaasuun (J). Kun kaasua puristetaan, $W = p\Delta V$ on positiivinen. Kun kaasu laajenee, se tekee itse työn $p\Delta V$. Silloin $W = -p\Delta V$, ja sisäenergia pienenee tämän verran. Lämpövoimakone toimii kierroksina. Yhden kierroksen aikana kone ottaa kuumasta lähteestä lämmön $Q_1$. Se tekee työn $W$. Lisäksi se luovuttaa eli antaa lämmön $Q_2$ kylmempään ympäristöön. Energia säilyy, joten
 
-```latex
-W = Q_1 - Q_2
+```kaavat
+lämpövoimakoneen tekemä työ :: W = Q_1 - Q_2
 ```
 
 Hyötysuhde on
 
-```latex
-\eta = \frac{W}{Q_1}
+```kaavat
+lämpövoimakoneen hyötysuhde :: \eta = \frac{W}{Q_1}
 ```
 
 Osa lämmöstä on aina annettava kylmempään paikkaan. Siksi lämpövoimakoneen hyötysuhde jää selvästi alle $100\,\%$:n. Verrataan lämpötilaeroa $T_1 - T_2$ kuuman lähteen lämpötilaan $T_1$. Mitä pienempi ero on, sitä pienemmän osan lämmöstä kone voi muuttaa työksi. Voimalaitoksessa hyötysuhde lasketaan tehoista: sähköteho jaetaan polttoaineteholla.

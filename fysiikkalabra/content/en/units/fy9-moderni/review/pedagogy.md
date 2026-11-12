@@ -1,15 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 3e3f4a33c6a16ade
+CONTENT-HASH: 9dfe588468827c1b
 
-Pedagogy review, round 3, of the English translation of fy9-moderni.
+Delta review (formulas in MAFY form, 2026-11-12) of the version passed at 3e3f4a33c6a16ade.
 
-The round-2 cross-reference to the visual Blocking finding is resolved: the concept map that teacher.md walks
-through "one branch at a time" now has English branch headings ("the photon and the atom", "the nucleus",
-"radiation and people"), matching the unit's section structure. Structure, feedback, hints, rubrics (95 points in
-all) and teacher.md are unchanged since round 2.
+Blocking: none. The new symbols are defined in the sentence after each formula block, the tasks' forms are still derivable from the theory, and the unit stays coherent for a student.
 
-## Blocking
-None.
-
-## Polish
-None.
+1. Note: the half-life form (1/2)^(t/T_1/2) is kept and derived in the sentence after the block (e^(-lambda T_1/2) = 1/2), so the inquiry and exit-ticket solutions that use it stay coherent.

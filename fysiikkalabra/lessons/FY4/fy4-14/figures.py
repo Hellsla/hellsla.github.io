@@ -289,16 +289,16 @@ def malli_alas():
     """Model diagram for the drawing task: a ball thrown straight down faster than its terminal speed slows down: F_v > G."""
     m, Fv = 0.40, 6.0
     G = m * g; ay = (Fv - G) / m
-    f = Fig("fy414-malli-alas", 330, "Mallikuvio: pallo on heitetty suoraan alas nopeammin kuin sen rajanopeus, ja se hidastuu. Kuviossa on "
+    f = Fig("fy414-malli-alas", 250, "Mallikuvio: pallo on heitetty suoraan alas nopeammin kuin sen rajanopeus, ja se hidastuu. Kuviossa on "
             "vain pallo suorakulmiona. Keskipisteestä paino G alas ja alapinnasta ilmanvastus F_v ylös, selvästi painoa pidempänä. "
             "Erillään sininen nopeusnuoli alas ja oranssi kiihtyvyysnuoli ylös.")
-    cx, cy, w, h = 290, 170, 100, 46
+    cx, cy, w, h = 250, 90, 100, 46                              # the drawing fills the figure: no empty band above it
     d = FBD(f, 18.0, body=(cx, cy, w, h), m=m, a=(0, ay))
     d.force("G", (0, -G), (cx, cy), "gravity", lab=(24, -4))
     d.force("F_v", (0, Fv), (cx - 20, cy + h / 2), "drag", v_rel=(0, -1), tex=r"\overline{F}_\text{v}", lab=(-34, 0), push=True)
     d.draw()
-    d.motion(r"\overline{v}", (0, -1), (420, 120), 80)
-    d.motion(r"\overline{a}", (0, 1), (480, 200), 60)
+    d.motion(r"\overline{v}", (0, -1), (380, 40), 80)
+    d.motion(r"\overline{a}", (0, 1), (440, 120), 60)
     return f.svg()
 
 

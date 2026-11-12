@@ -88,15 +88,15 @@ def hero():
 def kartta():
     """The concept map, stacked for a phone: energy is conserved at the top (the balance of heats), a spine down the
     left and four branches, each a box of two laws or ideas with a grey word beside each."""
-    f = Fig("fy9la-kartta", 636, "Käsitekartta. Ylhäällä solmu energia säilyy: eristetyssä systeemissä luovutettu lämpömäärä "
-            "on yhtä suuri kuin vastaanotettu. Siitä lähtee alas neljä haaraa. Lämpeneminen: Q = c m ΔT, kun olomuoto ei muutu, ja "
-            "kelvinlämpötila T = θ + 273,15. Olomuodon muutos: sulaminen Q = s m ja höyrystyminen Q = r m vakiolämpötilassa. "
-            "Lämpölaajeneminen: pituus ΔL = α L0 ΔT ja tilavuus ΔV = γ V0 ΔT. Lämmön siirtyminen: johtuminen, konvektio ja "
-            "säteily, sekä seinän läpi johtuva teho P = U A ΔT.", width=380, size=21)
+    f = Fig("fy9la-kartta", 636, "Käsitekartta. Ylhäällä solmu energia säilyy: eristetyssä systeemissä luovutettu lämpömäärä on yhtä suuri kuin "
+            "vastaanotettu. Siitä lähtee alas neljä haaraa. Lämpeneminen: Q = c m ΔT, kun olomuoto ei muutu, ja "
+            "kelvinlämpötila T = θ + 273,15. Olomuodon muutos: sulaminen Q = s m ja höyrystyminen Q = r m "
+            "vakiolämpötilassa. Lämpölaajeneminen: pituus l = l0 kertaa 1 + α ΔT ja tilavuus V = V0 kertaa 1 + γ ΔT. Lämmön "
+            "siirtyminen: johtuminen, konvektio ja säteily, sekä seinän läpi johtuva teho P = U A ΔT.", width=380, size=21)
     groups = [
         ("lämpeneminen", [(r"Q = cm\Delta T", "olomuoto sama"), (r"T = \theta + 273{,}15", "kelvinit")]),
         ("olomuodon muutos", [(r"Q = sm", "sulaminen"), (r"Q = rm", "höyrystyminen")]),
-        ("lämpölaajeneminen", [(r"\Delta L = \alpha L_0\,\Delta T", "pituus"), (r"\Delta V = \gamma V_0\,\Delta T", "tilavuus")]),
+        ("lämpölaajeneminen", [(r"l = l_0(1 + \alpha\Delta T)", "pituus"), (r"V = V_0(1 + \gamma\Delta T)", "tilavuus")]),
         ("lämmön siirtyminen", [(r"P = UA\,\Delta T", "seinän läpi"), (r"\text{johtuminen, konvektio, säteily}", "")]),
     ]
     hub_y, hub_h, x_box, gh, top, gap = 8, 76, 44, 120, 104, 12

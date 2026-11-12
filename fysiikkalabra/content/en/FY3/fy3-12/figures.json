@@ -21,5 +21,6 @@
  "Kaavakuva maapallon energiavirroista neliömetriä kohti ilmakehän ylärajalla. Auringosta tulee maapalloon säteilyä 341 W/m², ja siitä 102 W/m² heijastuu takaisin avaruuteen. Avaruuteen lähtevän lämpösäteilyn tehoa ei ole annettu. Maapallo on energiatasapainossa, joten sen lämpötila pysyy vakiona.": "Schematic diagram of the energy flows of the Earth per square metre at the top of the atmosphere. The Sun delivers 341 W/m² of radiation to the Earth, and 102 W/m² of it is reflected back into space. The power of the thermal radiation leaving into space is not given. The Earth is in energy balance, so its temperature stays constant.",
  "maapallo": "Earth",
  "Kaavakuva maapallon energiavirroista neliömetriä kohti ilmakehän ylärajalla. Auringosta tulee maapalloon säteilyä 341 W/m², ja siitä 102 W/m² heijastuu takaisin avaruuteen. Näiden kahden nuolen leveydet ovat mittakaavassa. Avaruuteen lähtevän lämpösäteilyn tehoa ei ole annettu: sen nuoli on katkoviivalla eikä mittakaavassa. Maapallo on energiatasapainossa, joten sen lämpötila pysyy vakiona.": "Schematic diagram of the energy flows of the Earth per square metre at the top of the atmosphere. The Sun delivers 341 W/m² of radiation to the Earth, and 102 W/m² of it is reflected back into space. The widths of these two arrows are to scale. The power of the thermal radiation leaving into space is not given: its arrow is dashed and not to scale. The Earth is in energy balance, so its temperature stays constant.",
- "Maa": "Earth"
+ "Maa": "Earth",
+ "CO": "CO"
 }

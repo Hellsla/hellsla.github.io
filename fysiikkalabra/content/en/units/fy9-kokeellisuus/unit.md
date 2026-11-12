@@ -197,17 +197,15 @@ A random error shows as the spread of repeated results, and in the mean its effe
 ## Formula: Processing a measurement result
 The best estimate of repeated measurements is the mean, and in this course the estimate of the spread is half the range:
 
-```latex
-\begin{aligned}
-\bar{x} &= \frac{x_1 + x_2 + \dots + x_n}{n} \\
-\Delta x &= \frac{x_\text{max} - x_\text{min}}{2}
-\end{aligned}
+```kaavat
+mean :: \bar{x} = \frac{x_1 + x_2 + \dots + x_n}{n}
+uncertainty of a measurement :: \Delta x = \frac{x_\text{max} - x_\text{min}}{2}
 ```
 
 where $n$ is the number of measurements, $x_\text{max}$ the largest and $x_\text{min}$ the smallest result. The result is given in the form $\bar{x} \pm \Delta x$, and the error estimate is rounded to one significant figure (two if the first digit is 1). The relative uncertainty
 
-```latex
-\varepsilon = \frac{\Delta x}{\bar{x}}
+```kaavat
+relative uncertainty :: \varepsilon = \frac{\Delta x}{\bar{x}}
 ```
 
 tells whether the uncertainty is small compared with the size of the result. The measured range is chosen so large that $\varepsilon$ stays small: the time is measured, for example, from ten swings.
@@ -215,8 +213,8 @@ tells whether the uncertainty is small compared with the size of the result. The
 ### The result from the slope of a graph
 When according to the model the quantities depend linearly on each other, a straight line is fitted to the measurement points
 
-```latex
-y = kx + b
+```kaavat
+equation of a line :: y = kx + b
 ```
 
 where $k = \tfrac{\Delta y}{\Delta x}$ is the slope, read from two points of the line far apart, and $b$ is the point where the line cuts the vertical axis. The model holds only in the measured range, and the line is extended outside it only with good reason. When the quantity sought comes from the slope, all the points affect the result and the random error of a single point less so.

@@ -92,16 +92,16 @@ def hero():
 def kartta():
     """The concept map, stacked for a phone: the conservation of energy at the top, a spine down the left and three
     branches (power, efficiency, the source of the energy), each a box of three laws with a grey word beside each."""
-    f = Fig("fy9en-kartta", 596, "Käsitekartta. Ylhäällä solmu energia säilyy: E alussa on yhtä suuri kuin E lopussa. "
-            "Siitä lähtee alas kolme haaraa. Teho: P = ΔE / Δt, energia tehosta E = P t ja kilowattitunti 1 kWh = 3,6 MJ. "
-            "Hyötysuhde: eeta = E a / E o, häviöt E o = E a + E h ja energiaketju, jossa eeta on vaiheiden hyötysuhteiden tulo "
-            "eeta 1 eeta 2 eeta 3. Energian lähde: polttoaine E = H m, työ W = F s ja nostotyö W = m g h.", width=380, size=21)
+    f = Fig("fy9en-kartta", 596, "Käsitekartta. Ylhäällä solmu energia säilyy: E alussa on yhtä suuri kuin E lopussa. Siitä lähtee alas kolme "
+            "haaraa. Teho: P = ΔE / Δt, energia tehosta E = P t ja kilowattitunti 1 kWh = 3,6 MJ. Hyötysuhde: eeta = E a / "
+            "E o, häviöt E o = E a + E h ja energiaketju, jossa eeta on vaiheiden hyötysuhteiden tulo eeta 1 eeta 2 eeta 3. "
+            "Energian lähde: polttoaine Q = H m, työ W = F s ja nostotyö W = m g h.", width=380, size=21)
     groups = [
         ("teho", [(r"P = \Delta E/\Delta t", "määritelmä"), (r"E = P\,t", "energia tehosta"),
                   (r"1\,\text{kWh} = 3{,}6\,\text{MJ}", "kilowattitunti")]),
         ("hyötysuhde", [(r"\eta = E_\text{a}/E_\text{o}", "määritelmä"), (r"E_\text{o} = E_\text{a} + E_\text{h}", "häviöt"),
                         (r"\eta = \eta_1\,\eta_2\,\eta_3", "energiaketju")]),
-        ("energian lähde", [(r"E = Hm", "polttoaine"), (r"W = Fs", "työ"), (r"W = mgh", "nostotyö")]),
+        ("energian lähde", [(r"Q = Hm", "polttoaine"), (r"W = Fs", "työ"), (r"W = mgh", "nostotyö")]),
     ]
     hub_y, hub_h, x_box, gh, top = 8, 72, 44, 150, 100
     spine = 24
@@ -140,7 +140,7 @@ def ketju():
     generator 0,98. The band narrows at each stage by the loss, which turns down as a grey ribbon with its power under
     the arrowhead; the electricity leaves to the right in green. The stage names are a key under the figure."""
     f = Fig("fy9en-ketju", 476, "Energiavirtakuvio mittakaavassa lauhdevoimalaitoksesta. Vasemmalta tulee polttoaineteho 500 MW "
-            "leveänä kaistana. Ensimmäisessä vaiheessa, kattilassa, hyötysuhde on 0,90: kaistasta kääntyy alas harmaa "
+            "leveänä harmaana kaistana. Ensimmäisessä vaiheessa, kattilassa, hyötysuhde on 0,90: kaistasta kääntyy alas oranssi "
             "häviökaista 50 MW, ja jäljelle jää 450 MW. Toisessa vaiheessa, höyrykierrossa, hyötysuhde on 0,45: alas kääntyy "
             "leveä häviökaista 248 MW, ja jäljelle jää 203 MW. Kolmannessa vaiheessa, generaattorissa ja muuntajassa, "
             "hyötysuhde on 0,98 ja häviö vain 4 MW. Oikealle lähtee vihreä sähkön kaista, 198 MW eli noin 40 prosenttia "
@@ -152,21 +152,37 @@ def ketju():
     yend = 300
     hs = [p * s for p in POWERS]
     xs = (x0,) + bounds + (xend,)
-    for i in range(4):
-        f.rect(xs[i], top, xs[i + 1] - xs[i], hs[i], GOOD_LIGHT if i == 3 else SAND_LIGHT)
-    f.path(f"M{xend},{n(top - 10)} L{xend + 40},{n(top + hs[3] / 2)} L{xend},{n(top + hs[3] + 10)} Z", GOOD_LIGHT, GOOD, 1.5)
-    f.line(x0, top, xend, top, SAND, 1.5)
-    centres = [_loss(f, b, top + hs[i], LOSSES[i] * s, radii[i], yend, ALUMINIUM, IRON) for i, b in enumerate(bounds)]
+    # the colours of the model fy2-4/lamp: the incoming energy grey, the useful energy green, the heat orange,
+    # each a gradient along its flow
+    def grad(gid, x1, y1, x2, y2, c0, c1):
+        f.defs_add(f'<linearGradient id="{gid}" gradientUnits="userSpaceOnUse" x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}">'
+                   f'<stop offset="0" stop-color="{c0}"/><stop offset="1" stop-color="{c1}"/></linearGradient>')
+        return f"url(#{gid})"
+    g_in = grad("fy9en-in", x0, 0, bounds[2], 0, RULE_LIGHT, RULE)
+    g_ok = grad("fy9en-ok", bounds[2], 0, xend + 40, 0, GOOD_LIGHT, GOOD)
+    g_heat = grad("fy9en-heat", 0, top, 0, yend + 16, HEAT_LIGHT, HEAT)
+    band = " ".join(f"L{xs[i + 1]},{n(top + hs[i])} L{xs[i]},{n(top + hs[i])}" for i in reversed(range(3)))
+    f.path(f"M{x0},{top} L{bounds[2]},{top} " + band + " Z", g_in)
+    f.path(f"M{bounds[2]},{top} L{xend},{top} L{xend},{top - 10} L{xend + 40},{n(top + hs[3] / 2)} L{xend},{n(top + hs[3] + 10)} "
+           f"L{xend},{n(top + hs[3])} L{bounds[2]},{n(top + hs[3])} Z", g_ok, INK, 2)
+    f.line(x0, top, bounds[2], top, INK, 2)
+    f.line(x0, top, x0, top + hs[0], INK, 2)
+    for i in range(3):                         # the bottom edge of the grey band, stage by stage
+        f.line(xs[i], top + hs[i], xs[i + 1], top + hs[i], INK, 2)
+    centres = [_loss(f, b, top + hs[i], LOSSES[i] * s, radii[i], yend, g_heat, INK) for i, b in enumerate(bounds)]
     for b, e, k in zip(bounds, ETA, (1, 2, 3)):
-        f.line(b, 34, b, top, MUTED, 1.5, "5 4")
+        f.line(b, 34, b, top - 2, MUTED, 1.5, "5 4")
         f.tex(b, 20, rf"\eta_{k} = {fi(e, 2)}", "middle", INK)
     f.tex(53, top + 100, r"500\,\text{MW}", "middle")
     f.tex(148, top + 100, r"450\,\text{MW}", "middle")
     f.tex(248, top + 36, r"203\,\text{MW}", "middle")
-    f.tex(334, top + hs[3] / 2, r"198\,\text{MW}", "middle")
-    f.tex(400, top + hs[3] + 30, r"\text{sähkö}", "end", GOOD)
-    for xm, L in zip(centres, LOSSES):
-        f.tex(xm, yend + 36, rf"{round(L):d}\,\text{{MW}}", "middle", MUTED)
+    # the electricity's power and name under its arrow, right of the 4 MW ribbon (size 18 keeps 'electricity' clear of it)
+    f.tex(406, top + hs[3] + 32, r"198\,\text{MW}", "end", GOOD, size=18)
+    f.tex(406, top + hs[3] + 60, r"\text{sähkö}", "end", GOOD, size=18)
+    for i, (xm, L) in enumerate(zip(centres, LOSSES)):
+        if i < 2: f.tex(xm, yend + 36, rf"{round(L):d}\,\text{{MW}}", "middle", INK)
+    # the 4 MW loss is beside its own arrowhead, clear of the 248 MW under the wide ribbon
+    f.tex(centres[2] + 16, yend + 4, rf"{round(LOSSES[2]):d}\,\text{{MW}}", "start", INK)
     f.tex(8, yend + 36, r"\text{häviöt:}", "start", MUTED)
     f.line(8, yend + 62, 412, yend + 62, RULE_LIGHT, 1.5)
     for j, (k, name) in enumerate(((1, "kattila"), (2, "höyrykierto"), (3, "generaattori ja muuntaja"))):

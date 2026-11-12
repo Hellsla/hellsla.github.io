@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 72f388e811652451
-
-Delta review of the FY9 audit fixes (2026-11-10). Previous PASS hash: 9c10b36b9630971c. The hash was the same at the start and the end of this review.
+CONTENT-HASH: c1c05cd889ce9c30
+Delta review (formulas in MAFY form, 2026-11-12) of the version passed at 72f388e811652451.
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-None.
+1. `unit.md`, the intro sentence, and the map hub (`lessons/units/fy9-sahkokentta/figures.py`, `fy9sk-kartta`, including its aria text) keep $\overline{F} = q\overline{E}$ with a lowercase $q$. The theory and the map's own boxes now use $Q$ ($Q = ne$, $W = QU$, $\overline{F}_E = Q\overline{E}$). Fix: write $\overline{F}_E = Q\overline{E}$ in both.
+2. `unit.md`, the capacitor sentence: $E$ is the stored energy there, next to $E_\text{max}$, the breakdown field strength, and to $E = F_E/Q$ above. Each is defined, but they clash. Fix: "($E$ tässä energia, $E_\text{max}$ kentän voimakkuus)".
+3. `inquiry.json` uses $F = qE$, $q_1$ and $qU$. They are defined there, but they differ from the theory's $Q$. Fix: align them.
 
 ## Checked
-- s1 b calculation criterion: q = r sqrt(F_s/k) with r = 0,080 m, F_s = 4,93e-4 N, k = 8,988e9 gives q = 1,874e-8 C (answer 18,74 nC) and n = q/e = 1,17e11, about 1,2e11; r is the centre distance 8,0 cm from the task.
-- F_s checked from the task geometry: mg tan(theta) with tan(theta) = 0,040/sqrt(0,400^2 - 0,040^2) gives 4,930e-4 N.
-- Splitting the formula and the value changes no physics; n is kept. Preview built with no KaTeX errors.
-- Language version checked: fi; the change is the same as in fi, in translation.
+$F_E = kQ_1Q_2/r^2$ is written for magnitudes, with the vector form $\overline{F}_E = Q\overline{E}$. $E = F_E/Q$. $U = Ed$ only in a uniform field. $V = E_\text{p}/Q$. $W = QU$ with $U = V_A - V_B$ has the right sign. $\tfrac12 mv^2 = |Q|U$. $Q = CU$, $C = \varepsilon_0\varepsilon_\text{r}A/d$ and $E = \tfrac12 CU^2 = \tfrac12 QU$. All conditions are kept, and they are MAFY's forms. The map boxes match. The other rows are unchanged.

@@ -143,7 +143,7 @@
 
 Every task in this lesson is solved in the same way: **first the free-body diagram, then the equation of motion**. Choose the object, list its interactions and draw one force for each. In the free-body diagram the object is a rectangle, and each force starts from its point of application. Then choose the axes and write Newton's second law along each axis. In the exam, points for the free-body diagram are lost for a missing force, an extra force or a force drawn in the wrong direction.
 
-<svg data-fig="kartta" viewBox="0 0 380 640" role="img" aria-label="Concept map. At the top is the node free-body diagram first: choose the object, find the interactions, draw the free-body diagram, choose the axes and write the equations of motion. Three branches go down from it. Newton&#x27;s laws: first law, sum F is zero when the velocity is constant; second law sum F = m a; third law F A B = − F B A. Forces: weight G = m g, kinetic friction F mu = mu N and static friction at most mu zero N, air resistance opposes the motion. Special cases: on a slope G x = m g sin alpha, connected bodies have an equation each, and at terminal velocity F v = G." style="max-width:100%;font-size:21px">
+<svg data-fig="kartta" viewBox="0 0 380 640" role="img" aria-label="Concept map. At the top is the node free-body diagram first: choose the object, find the interactions, draw the free-body diagram, choose the axes and write the equations of motion. Three branches go down from it. Newton&#x27;s laws: first law, sum F is zero when the velocity is constant; second law sum F = m a; third law F A B = − F B A. Forces: weight G = m g as vectors, kinetic friction F mu = mu N and static friction at most mu zero N, air resistance opposes the motion. Special cases: on a slope G x = m g sin alpha, connected bodies have an equation each, and at terminal velocity F v = G." style="max-width:100%;font-size:21px">
   <line x1="24" y1="120" x2="24" y2="494" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="112" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
   <foreignObject x="66" y="17.5" width="248" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:21px">$\textbf{free-body diagram first}$</div></foreignObject>
@@ -163,7 +163,7 @@ Every task in this lesson is solved in the same way: **first the free-body diagr
   <rect x="44" y="306" width="328" height="150" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
   <foreignObject x="58" y="315.5" width="84" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\textbf{forces}$</div></foreignObject>
   <line x1="54" y1="348" x2="362" y2="348" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="359.5" width="52" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$G = mg$</div></foreignObject>
+  <foreignObject x="58" y="359.5" width="74" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\overline{G} = m\overline{g}$</div></foreignObject>
   <foreignObject x="301" y="362" width="61" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{weight}$</div></foreignObject>
   <foreignObject x="58" y="393.5" width="63" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$F_\mu = \mu N$</div></foreignObject>
   <foreignObject x="221" y="396" width="141" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{kinetic friction}$</div></foreignObject>
@@ -187,27 +187,23 @@ The opening question is settled by the choice of object. The car and the trailer
 
 ### Newton's laws
 
-```latex
-\begin{aligned}
-\Sigma\overline{F} &= \overline{0} \ \Leftrightarrow\ \overline{v} = \text{constant} \\
-\Sigma\overline{F} &= m\overline{a} \\
-\overline{F}_{AB} &= -\overline{F}_{BA}
-\end{aligned}
+```kaavat
+Newton's first law (law of inertia) :: \Sigma\overline{F} = \overline{0} \ \Leftrightarrow\ \overline{v} = \text{constant}
+Newton's second law (fundamental law of dynamics) :: \Sigma\overline{F} = m\overline{a}
+Newton's third law (action and reaction) :: \overline{F}_{AB} = -\overline{F}_{BA}
 ```
 
 where $\Sigma\overline{F}$ is the sum of the forces acting on the object ($\text{N}$), $m$ the mass ($\text{kg}$), $\overline{a}$ the acceleration ($\text{m/s}^2$) and $\overline{F}_{AB}$ the force with which A acts on B. In a calculation the second law is written in components, $\Sigma F_x = ma_x$ and $\Sigma F_y = ma_y$, and the components of an oblique force are $F\cos\alpha$ and $F\sin\alpha$. The net force points in the direction of the acceleration, not always in the direction of the velocity.
 
 ### Weight, friction and the slope
 
-```latex
-\begin{aligned}
-G &= mg \\
-F_\mu &= \mu N \\
-F_{\mu 0} &\le \mu_0 N
-\end{aligned}
+```kaavat
+weight of a body at the Earth's surface :: \overline{G} = m\overline{g}
+kinetic friction :: F_\mu = \mu N
+static friction :: F_{\mu 0} \le \mu_0 N
 ```
 
-where $g = 9.81\,\text{m/s}^2$, $N$ is the normal force ($\text{N}$), $\mu$ the coefficient of kinetic friction and $\mu_0$ the coefficient of static friction. Static friction is only as large as the situation requires, and it opposes the sliding of the surfaces relative to each other, not always the motion. The formulas are experimental models for dry surfaces. In free-body diagrams $\overline{F}_\mu$ stands for either kind of friction, static or kinetic.
+where $\overline{g}$ is the acceleration due to gravity, $g = 9.81\,\text{m/s}^2$, so the magnitude of the weight is $G = mg$, $N$ is the normal force ($\text{N}$), $\mu$ the coefficient of kinetic friction and $\mu_0$ the coefficient of static friction. Static friction is only as large as the situation requires, and it opposes the sliding of the surfaces relative to each other, not always the motion. The formulas are experimental models for dry surfaces. In free-body diagrams $\overline{F}_\mu$ stands for either kind of friction, static or kinetic.
 
 On a slope with the angle of inclination $\alpha$, the components of the weight are $G_x = mg\sin\alpha$ down the slope and $G_y = mg\cos\alpha$ towards the slope. When only the weight and the normal force act perpendicular to the surface, $N = mg\cos\alpha$. The components are not new forces: they are drawn with dashed lines and replace the weight in the calculation.
 

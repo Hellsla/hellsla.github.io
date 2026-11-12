@@ -114,10 +114,11 @@ def schedule():
         f.circle(X(start), yrow, 11, COLD, WHITE, 2.5)
         x = X(dt)
         f.path(f"M{n(x)},{n(yrow - 14)} L{n(x + 14)},{n(yrow)} L{n(x)},{n(yrow + 14)} L{n(x - 14)},{n(yrow)} Z", HOT, WHITE, 2.5)
-        f.tex(x, yrow - 34, r"\text{D–T}", "middle", color=HOT, bg=True)
+        # light correction (teacher 2026-11-11, illustration audit): the lower D–T under its diamond, clear of the arrow's tip
+        f.tex(x, yrow - 34 if yrow == r1 else yrow + 36, r"\text{D–T}", "middle", color=HOT, bg=True)
     f.tex(X(2025) + 6, r1 - 34, r"\text{first plasma}", "start", color=COLD, bg=True)
     f.tex(X(2034), r2 + 36, r"\text{research starts}", "middle", color=COLD, bg=True)
-    f.arrow(X(2035) + 8, r1 + 16, X(2039) - 24, r2 - 26, HOT, 2.5, 12)
+    f.arrow(X(2035) + 8, r1 + 16, X(2039) - 13, r2 - 15, HOT, 2.5, 12)
     f.tex(X(2037) - 22, (r1 + r2) / 2 + 4, r"+4\ \text{years}", "end", color=HOT, bg=True)
     f.tex(xn, 26, r"\text{Nov. 2026}", "middle", color=MUTED, bg=True)
     return f.svg()

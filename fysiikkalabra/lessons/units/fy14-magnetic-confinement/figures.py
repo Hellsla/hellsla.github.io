@@ -75,6 +75,7 @@ def lorentz():
             x, y = 34 + i * 67, 36 + j * 62
             d = math.hypot(x - cx, y - cy)
             if d < r + 40 or (x < 200 and y < 110) or (cx < x < cx + 160 and y > cy + r - 40): continue
+            if cx + r < x < cx + r + 60 and cy - 130 < y < cy - 60: continue     # room for the upper v's label (light correction 2026-11-11)
             otimes(f, x, y, 8)
     f.add(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{INK}" stroke-width="2.5" stroke-dasharray="8 7"/>')
     f.line(cx, cy, cx + r * math.cos(math.radians(-135)), cy + r * math.sin(math.radians(-135)), MUTED, 2)
@@ -105,23 +106,25 @@ def lorentz():
 def mirror():
     """Side view of a magnetic mirror: field lines converge at both ends (B up to 4 B0); a particle with a large pitch
     angle spirals and turns back; the velocity split into v_par and v_perp at one point."""
-    f = Fig("fy14mc-mirror", 360, "Side view of a magnetic mirror. Green field lines run from left to right; they are spread "
+    f = Fig("fy14mc-mirror", 440, "Side view of a magnetic mirror. Green field lines run from left to right; they are spread "
             "out in the middle and squeezed together at both ends, where two coils make the field four times stronger. A particle "
             "path spirals around the axis, moving to the right, and turns back before the right-hand coil. In the middle, the "
             "particle's velocity arrow, blue, is split into a part along the field, v parallel, and a part across it, v perpendicular; "
             "the angle between the velocity and the field is the pitch angle theta.")
-    L, xm, y0 = 250, 300, 180
+    # Light correction (teacher 2026-11-11, illustration audit): the names of the velocity parts and of θ were crammed on
+    # the field lines. Now three field lines instead of five (the outer two further apart, the figure 80 units taller), so the velocity, its parts and θ sit in the free band under the helix, each name in a space of its own.
+    L, xm, y0 = 250, 300, 226
     w = lambda x: 1 / math.sqrt(1 + 3 * min(1, ((x - xm) / L) ** 2))      # field-line spread ∝ 1/sqrt(B), B = B0 (1 + 3 (x/L)^2)
-    for s in (-1, -0.55, 0.55, 1):
-        pts = [(x, y0 + s * 112 * w(x)) for x in range(20, 581, 10)]
+    for s in (-1, 1):
+        pts = [(x, y0 + s * 160 * w(x)) for x in range(20, 581, 10)]
         f.path("M" + " L".join(f"{n(a)},{n(b)}" for a, b in pts), stroke=B_COL, w=2.5)
         f.arrow(pts[20][0], pts[20][1], pts[22][0], pts[22][1], B_COL, 2.5, 12)
     f.line(20, y0, 580, y0, B_COL, 2.5)
     f.arrow(110, y0, 130, y0, B_COL, 2.5, 12)
     f.tex(560, y0 - 20, r"\overline{B}", "end", color=B_COL, bg=True)
     for xc in (xm - L, xm + L):
-        f.rect(xc - 14, y0 - 104, 28, 40, HEAT, INK, 2, 4)
-        f.rect(xc - 14, y0 + 64, 28, 40, HEAT, INK, 2, 4)
+        f.rect(xc - 14, y0 - 128, 28, 40, HEAT, INK, 2, 4)
+        f.rect(xc - 14, y0 + 88, 28, 40, HEAT, INK, 2, 4)
     f.tex(xm - L, 40, r"B_{\max}", "middle")
     f.tex(xm + L, 40, r"B_{\max}", "middle")
     f.tex(xm, 40, r"B_0", "middle")
@@ -138,17 +141,21 @@ def mirror():
     f.arrow(xr + 6, y0 - 70, xr - 34, y0 - 70, INK, 2.5, 12)
     f.tex(xr - 14, y0 - 92, r"\text{turns back}", "middle", bg=True)
     # velocity components at the middle
-    px, py = pts[round(2 / turns * N)]
-    th = math.radians(55); vl = 92
-    f.arrow(px, py, px + vl * math.cos(th), py + vl * math.sin(th), V_COL, 4, 15)
-    f.line(px, py, px + vl * math.cos(th), py, V_COL, 2.5, "7 5"); f.line(px + vl * math.cos(th), py, px + vl * math.cos(th), py + vl * math.sin(th) - 2, V_COL, 2.5, "7 5")
+    px, py = pts[round(3 / turns * N)]                               # the third turn: under it the band is widest
+    th = math.radians(55); vl = 80
+    tx, ty = px + vl * math.cos(th), py + vl * math.sin(th)
+    # the parts drawn from the particle: v_perp straight down, then v_par along the field to the tip of v
+    f.line(px, py, px, ty, V_COL, 2.5, "7 5"); f.line(px, ty, tx - 2, ty, V_COL, 2.5, "7 5")
+    f.arrow(px, py, tx, ty, V_COL, 4, 15)
     f.circle(px, py, 8, ION, WHITE, 2)
-    f.tex(px + vl * math.cos(th) + 10, py + vl * math.sin(th) - 6, r"\overline{v}", "start", color=V_COL, bg=True)
-    f.tex(px + vl * math.cos(th) / 2, py - 18, r"v_{\parallel}", "middle", color=V_COL, bg=True)
-    f.tex(px + vl * math.cos(th) + 10, py + vl * math.sin(th) / 2 - 4, r"v_{\perp}", "start", color=V_COL, bg=True)
+    f.tex(tx + 10, ty - 4, r"\overline{v}", "start", color=V_COL)
+    f.tex(px + vl * math.cos(th) / 2, ty + 24, r"v_{\parallel}", "middle", color=V_COL)
+    f.tex(px - 10, (py + ty) / 2 + 8, r"v_{\perp}", "end", color=V_COL)
+    # θ between the velocity and the field: a short dashed line along the field at the particle, the arc from it to v
+    f.line(px + 10, py, px + 58, py, B_COL, 1.5, "5 4")
     f.path(f"M{n(px + 34)},{n(py)} A34,34 0 0 1 {n(px + 34 * math.cos(th))},{n(py + 34 * math.sin(th))}", stroke=INK, w=2)
-    f.tex(px - 6, py + 40, r"\theta", "end")
-    f.tex(xm, 334, r"B_{\max} = 4B_0\text{: reflected if } \sin^2\theta \geq B_0 / B_{\max}", "middle")
+    f.tex(px + 50 * math.cos(th / 2) + 4, py + 50 * math.sin(th / 2), r"\theta", "middle")
+    f.tex(xm, 416, r"B_{\max} = 4B_0\text{: reflected if } \sin^2\theta \geq B_0 / B_{\max}", "middle")
     return f.svg()
 
 

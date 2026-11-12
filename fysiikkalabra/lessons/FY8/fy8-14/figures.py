@@ -201,7 +201,7 @@ def mittari():
     f.tex(250, 98, r"\text{ilmaisin}", "end")
     f.tex(250, 258, r"\text{lähde}\ (\beta^-)", "end")
     f.tex(362, 214, r"\text{paperirata}", "start")
-    f.tex(500, 60, r"\text{säätö}", "start")
+    f.tex(476, 20, r"\text{säätö}", "middle")   # above the controller: "control" in English is too wide beside it
     f.tex(300, 316, r"\text{paksumpi paperi: vähemmän läpi}", "middle")
     return f.svg()
 

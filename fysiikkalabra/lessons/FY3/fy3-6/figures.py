@@ -147,18 +147,10 @@ def hero():
     f.defs_add(f'<linearGradient id="fy36h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{ICE}"/><stop offset="1" stop-color="{GLASS}"/></linearGradient>')
     f.defs_add(f'<linearGradient id="fy36h-lake" gradientUnits="userSpaceOnUse" x1="0" y1="300" x2="0" y2="600"><stop offset="0" stop-color="{WATER_LIGHT}"/><stop offset="1" stop-color="{WATER}"/></linearGradient>')
     f.defs_add(f'<linearGradient id="fy36h-sand" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{SAND_LIGHT}"/><stop offset="1" stop-color="{SAND}"/></linearGradient>')
-    f.defs_add(f'<radialGradient id="fy36h-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="{HEAT_LIGHT}"/><stop offset="1" stop-color="{HEAT}"/></radialGradient>')
     f.defs_add(f'<pattern id="fy36h-grain" width="22" height="16" patternUnits="userSpaceOnUse"><circle cx="4" cy="4" r="1.8" fill="{GRAIN}"/><circle cx="15" cy="11" r="1.4" fill="{GRAIN}"/><circle cx="12" cy="3" r="1" fill="#8a5f22"/></pattern>')
     # sky, sun and its halo, clouds
     f.rect(0, 0, 1200, 600, "url(#fy36h-sky)")
-    f.add(f'<circle cx="250" cy="118" r="96" fill="{WHITE}" fill-opacity="0.5"/>')
-    for k in range(12):
-        a = k * math.pi / 6 + math.pi / 12
-        c, s_ = math.cos(a), math.sin(a)
-        r0, r1, hw = 74, 104, 7
-        f.path(f"M{n(250 + c * r0 - s_ * hw)},{n(118 + s_ * r0 + c * hw)} L{n(250 + c * r1)},{n(118 + s_ * r1)} "
-               f"L{n(250 + c * r0 + s_ * hw)},{n(118 + s_ * r0 - c * hw)} Z", HEAT_LIGHT)
-    f.circle(250, 118, 60, "url(#fy36h-sun)")
+    H.sun(f, "fy36h", 250, 118, r=60)                  # a plain disc in its halo, no rays (teacher 2026-11-11, group B)
     for cx, cy, sc in ((760, 92, 1.0), (1010, 150, 0.7)):
         f.path(f"M{n(cx - 90 * sc)},{n(cy + 20 * sc)} Q{n(cx - 92 * sc)},{n(cy - 14 * sc)} {n(cx - 52 * sc)},{n(cy - 10 * sc)} "
                f"Q{n(cx - 36 * sc)},{n(cy - 46 * sc)} {n(cx + 4 * sc)},{n(cy - 34 * sc)} Q{n(cx + 40 * sc)},{n(cy - 54 * sc)} {n(cx + 60 * sc)},{n(cy - 16 * sc)} "

@@ -1,34 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: c6971c6b158dd450
-
-## Delta review
-
-Only change since the PASS at ca70b3b450bf3201 (git diff HEAD, content/fi-easy and lessons/units/fy9-ympyraliike): figure "tilanteet", the "Maa" label moved right (f.tex x 300 -> 328; foreignObject x 280.5 -> 308.5), now identical to the fi source. No formula, number, vector, answer or point changed; the physics of the three force diagrams (lankku, nyppylä, satelliitti) is unchanged. Earlier findings still apply. No new findings.
-
-## Earlier review
-
-Science review, round 2, of the Selkeä suomi translation (fi-easy) of fy9-ympyraliike against the reviewed Finnish
-source. Checks rerun: `check_i18n.py` (fi-easy: 0 errors); every `$…$` formula of unit.md (88), teacher.md (16) and
-sovella/solutions.md (371) identical to the source, none lost or added; headings identical; JSON data of inquiry.json,
-unit.json, exit-ticket.json and sovella/tasks.json (answers, tolerances, correct flags, points) identical (field-by-field
-walk, 0 data differences); no decimal point in any formula. The round-1 recomputation of all numbers (GPS 12,0 h,
-72 Nm, 143 N, 27,6 km/h, 98,4 min, 235 N, trailer 444,6 N / 45,3 kg / 5,39 kN, s2 7,44 km/s, s4 21,0 s, s5 114,3 g,
-s6 22,76 m/s, exit 2,5 m/s, geo 42 160 km) still applies: no number changed since round 1.
-
-## Round-1 findings
-
-- Blocking 1 (Lähtötaso 5, wrong definition of "kääntäen verrannollinen"): **fixed**. The feedback now reads "kun
-  toinen kasvaa kaksinkertaiseksi, toinen pienenee puoleen", followed by "Kaksinkertainen etäisyys antaa neljäsosan
-  voimasta", which is correct and directly answers the 1/r misconception.
-- Polish 2 (pallosymmetrinen): fixed: "massa on jakautunut samalla tavalla joka suuntaan keskipisteestä, kuten Maassa."
-- Polish 3 (key_concepts "voiman varsi"): fixed; vaikutussuora is now explained ("suorasta, jonka suuntaan voima
-  vaikuttaa"); both sentences within 25 words; $r = d\sin\alpha$ is correct for the angle between force and arm.
+CONTENT-HASH: 89f1adfdcba2e044
+Delta review (formulas in MAFY form, 2026-11-12) of the version passed at c6971c6b158dd450.
 
 ## Blocking
-
-None.
+(none)
 
 ## Polish
+(none)
 
-1. The new mistake feedback in activities[13] ("varsi on kammen pään vaakasuora etäisyys akselista $d\cos 35^\circ$")
-   is correct and now matches hint 2. No action needed.
+## Checked
+$v = \omega r$, with $\omega = 2\pi/T = 2\pi f$ in rad/s and $v = 2\pi r/T$ kept. $a_\text{n} = v^2/r = \omega^2 r$: I recomputed r = 2 m and T = 3 s, giving 4.189 m/s and 8.773 m/s² both ways. $F_\text{g}$ is defined. These are MAFY's forms, and the map matches. The fi-easy text says the same physics as fi. The other rows are unchanged.

@@ -3,7 +3,7 @@ fy10-aanennopeus/setup|5|5|5|5|PIDA|||
 fy10-aanennopeus/signal|5|5|5|5|PIDA|Aikaero luetaan kahdesta signaalista: täsmälleen se, mitä opiskelija tekee.||
 fy10-aanennopeus/model|5|5|3|5|KEVYT|Akselin nimi d leikkautuu kuva-alan yläreunaan. Sama vika toistuu FY10:n mallikuvaajissa (yhteinen syy).||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11); yhteinen korjaus TEHTY ja hyväksytty 2026-11-11
 fy10-heiluri/hero|5|5|5|5|PIDA|||
-fy10-heiluri/setup|5|5|3|5|KEVYT|"ripustuskohta" on heilurin langan päällä.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11)
+fy10-heiluri/setup|5|5|3|5|KEVYT|"ripustuskohta" on heilurin langan päällä.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12
 fy10-heiluri/model|5|5|3|5|KEVYT|Akselin nimi T² leikkautuu yläreunaan.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11); yhteinen korjaus TEHTY ja hyväksytty 2026-11-11
 fy10-hissi/hero|5|5|5|5|PIDA|||
 fy10-hissi/vaiheet|5|5|5|5|PIDA|||
@@ -29,7 +29,7 @@ fy10-jaahtyminen/setup|5|5|5|5|PIDA|||
 fy10-jaahtyminen/model|5|5|5|5|PIDA|||
 fy10-jaahtyminen/linear|5|5|4|5|PIDA|||
 fy10-jousivakio/hero|5|5|5|5|PIDA|||
-fy10-jousivakio/setup|5|5|3|5|KEVYT|"ilman kuormaa" ja "kuormitettuna" ovat molemmat oikean jousen vieressä porrastettuina; ensimmäinen kuuluu vasemman jousen alle. Jousivoiman nimi on jousen päällä.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11)
+fy10-jousivakio/setup|5|5|3|5|KEVYT|"ilman kuormaa" ja "kuormitettuna" ovat molemmat oikean jousen vieressä porrastettuina; ensimmäinen kuuluu vasemman jousen alle. Jousivoiman nimi on jousen päällä.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12
 fy10-jousivakio/model|5|5|3|5|KEVYT|Akselin nimi F leikkautuu yläreunaan.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11); yhteinen korjaus TEHTY ja hyväksytty 2026-11-11
 fy10-jousivakio/oscillation|5|5|3|5|KEVYT|Akselin nimi T² leikkautuu yläreunaan ja "vakiotermi" on suoran päällä.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11); yhteinen korjaus TEHTY ja hyväksytty 2026-11-11
 fy10-kaasu/hero|5|5|5|5|PIDA|||
@@ -61,7 +61,7 @@ fy10-mikroaaltouuni/hero|5|5|5|5|PIDA|||
 fy10-mikroaaltouuni/standing|5|5|5|5|PIDA|Sulaneet kohdat kupujen alla, väli puoli aallonpituutta.||
 fy10-mikroaaltouuni/spots|5|5|5|5|PIDA|||
 fy10-mikroaaltouuni/model|5|5|4|5|PIDA|||KEVYT KORJAUS hyväksytty: yhteinen korjaus, katselmus (opettaja 2026-11-11); yhteinen korjaus TEHTY ja hyväksytty 2026-11-11
-fy10-muotokerroin/hero|5|4|4|5|KEVYT|Niukka: mittanauha ja jalusta tyhjässä huoneessa, puolet kuvasta taustaa.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11)
+fy10-muotokerroin/hero|5|4|4|5|KEVYT|Niukka: mittanauha ja jalusta tyhjässä huoneessa, puolet kuvasta taustaa.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12
 fy10-muotokerroin/setup|5|5|4|4|PIDA|Ilmanvastus työntönä kärki pinnassa kuten luvussa fy4-14; ks. sarjan esitystapakysymys.||
 fy10-muotokerroin/model|5|5|4|5|PIDA|||
 fy10-muotokerroin/mass|5|5|4|5|PIDA|||KEVYT KORJAUS hyväksytty: yhteinen korjaus, katselmus (opettaja 2026-11-11); yhteinen korjaus TEHTY ja hyväksytty 2026-11-11
@@ -87,7 +87,7 @@ fy10-resonanssi/resonances|5|5|5|5|PIDA|Päätykorjaus e näkyy kuvassa, ja per�
 fy10-resonanssi/model|5|5|3|5|KEVYT|Akselin nimi L leikkautuu yläreunaan.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11); yhteinen korjaus TEHTY ja hyväksytty 2026-11-11
 fy10-resonanssi/frequency|5|5|3|5|KEVYT|Akselin nimi λ leikkautuu yläreunaan.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11); yhteinen korjaus TEHTY ja hyväksytty 2026-11-11
 fy10-taitekerroin/hero|5|5|5|5|PIDA|||
-fy10-taitekerroin/setup|5|5|4|5|KEVYT|"kappale" on tulevan säteen päällä. Taittuminen normaalista poispäin oikein.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11)
+fy10-taitekerroin/setup|5|5|4|5|KEVYT|"kappale" on tulevan säteen päällä. Taittuminen normaalista poispäin oikein.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12
 fy10-taitekerroin/model|5|5|4|5|PIDA|||KEVYT KORJAUS hyväksytty: yhteinen korjaus, katselmus (opettaja 2026-11-11); yhteinen korjaus TEHTY ja hyväksytty 2026-11-11
 fy10-tuulivoimala/hero|5|5|5|5|PIDA|||
 fy10-tuulivoimala/circuit|5|5|4|5|PIDA|||
@@ -101,5 +101,5 @@ fy10-valaistus/setup|5|5|5|5|PIDA|||
 fy10-valaistus/spread|5|5|5|5|PIDA|||
 fy10-valaistus/model|5|5|3|5|KEVYT|Akselin nimi E leikkautuu yläreunaan.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11); yhteinen korjaus TEHTY ja hyväksytty 2026-11-11
 fy10-vesivoima/hero|5|5|5|5|PIDA|||
-fy10-vesivoima/setup|5|5|4|4|KEVYT|Mittarien ja generaattorin kirjaimet A, V ja G ovat kursiivilla; muissa kytkentäkaavioissa piirrosmerkkien kirjaimet ovat pystykirjaimia.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11)
+fy10-vesivoima/setup|5|5|4|4|KEVYT|Mittarien ja generaattorin kirjaimet A, V ja G ovat kursiivilla; muissa kytkentäkaavioissa piirrosmerkkien kirjaimet ovat pystykirjaimia.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12
 fy10-vesivoima/eta|5|5|4|5|PIDA|||

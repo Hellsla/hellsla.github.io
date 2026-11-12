@@ -211,7 +211,7 @@ Kaikki tämän tunnin tehtävät perustuvat samaan periaatteeseen: **energia sä
 
 Säilymislaista lähtee kolme kysymystä. Kokeen energiatehtävät perustuvat niihin. **Kuinka nopeasti** energiaa muuttuu? Sen kertoo teho. **Kuinka suuri osa** energiasta tulee hyödyksi? Sen kertoo hyötysuhde. **Mistä** energia tulee? Se voi tulla polttoaineesta, voiman tekemästä työstä tai virtaavasta vedestä, tuulesta ja auringosta. Polttoaineen energian kertoo sen lämpöarvo.
 
-<svg data-fig="kartta" viewBox="0 0 380 596" role="img" aria-label="Käsitekartta. Ylhäällä on solmu energia säilyy: E alussa on yhtä suuri kuin E lopussa. Solmusta lähtee alas kolme haaraa. Ensimmäinen haara on teho: P = ΔE / Δt, energia tehosta E = P t ja kilowattitunti 1 kWh = 3,6 MJ. Toinen haara on hyötysuhde: eeta = E a / E o, häviöt E o = E a + E h ja energiaketju. Energiaketjussa eeta on vaiheiden hyötysuhteiden tulo eeta 1 eeta 2 eeta 3. Kolmas haara on energian lähde: polttoaine E = H m, työ W = F s ja nostotyö W = m g h." style="max-width:100%;font-size:21px">
+<svg data-fig="kartta" viewBox="0 0 380 596" role="img" aria-label="Käsitekartta. Ylhäällä on solmu energia säilyy: E alussa on yhtä suuri kuin E lopussa. Solmusta lähtee alas kolme haaraa. Ensimmäinen haara on teho: P = ΔE / Δt, energia tehosta E = P t ja kilowattitunti 1 kWh = 3,6 MJ. Toinen haara on hyötysuhde: eeta = E a / E o, häviöt E o = E a + E h ja energiaketju. Energiaketjussa eeta on vaiheiden hyötysuhteiden tulo eeta 1 eeta 2 eeta 3. Kolmas haara on energian lähde: polttoaine Q = H m, työ W = F s ja nostotyö W = m g h." style="max-width:100%;font-size:21px">
   <line x1="24" y1="80" x2="24" y2="454" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
   <foreignObject x="115" y="16.5" width="150" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:21px">$\text{energia säilyy}$</div></foreignObject>
@@ -240,7 +240,7 @@ Säilymislaista lähtee kolme kysymystä. Kokeen energiatehtävät perustuvat ni
   <rect x="44" y="432" width="328" height="150" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
   <foreignObject x="58" y="441.5" width="161" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\textbf{energian lähde}$</div></foreignObject>
   <line x1="54" y1="474" x2="362" y2="474" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="485.5" width="52" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$E = Hm$</div></foreignObject>
+  <foreignObject x="58" y="485.5" width="52" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$Q = Hm$</div></foreignObject>
   <foreignObject x="260" y="487" width="102" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{polttoaine}$</div></foreignObject>
   <foreignObject x="58" y="519.5" width="52" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$W = Fs$</div></foreignObject>
   <foreignObject x="326" y="521" width="36" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{työ}$</div></foreignObject>
@@ -258,62 +258,64 @@ Nyt voimme vastata alun kysymykseen. Kymmenessä litrassa bensiiniä on energiaa
 
 Eristetty systeemi on systeemi, johon energiaa ei tule ja josta energiaa ei lähde. Eristetyssä systeemissä kokonaisenergia pysyy samana:
 
-```latex
-E_\text{alussa} = E_\text{lopussa}
+```kaavat
+energian säilymislaki :: E_\text{alussa} = E_\text{lopussa}
 ```
 
 Yhtälön kummallakin puolella on kaikkien energialajien summa. Myös lämpöenergia on mukana. Teho kertoo, kuinka paljon energiaa muuttuu tai siirtyy aikayksikössä:
 
-```latex
-P = \frac{\Delta E}{\Delta t}
+```kaavat
+teho :: P = \frac{\Delta E}{\Delta t}
 ```
 
 Kaavassa $P$ on teho (W), $\Delta E$ energia (J) ja $\Delta t$ aika (s). Jos teho vaihtelee, kaava antaa keskitehon. Jos teho pysyy samana, $E = P\,t$. Kilowattitunti on energian yksikkö. Se muunnetaan jouleiksi sijoittamalla:
 
-```latex
-1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}
+```kaavat
+kilowattitunti jouleina :: 1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}
 ```
 
 ### Hyötysuhde ja energiaketju
 
-```latex
-\eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}
+```kaavat
+hyötysuhde :: \eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}
 ```
 
 Kaavassa $\eta$ on hyötysuhde. $E_\text{a}$ on annettu hyötyenergia ja $P_\text{a}$ annettu hyötyteho. $E_\text{o}$ on otettu energia ja $P_\text{o}$ otettu teho. Tehojen suhdetta voi käyttää, kun laite toimii tasaisesti. Energia säilyy, joten $E_\text{o} = E_\text{a} + E_\text{h}$. Tässä $E_\text{h}$ on häviöt eli energia, joka ei tule hyödyksi. Hyötysuhde on enintään $100\,\%$. Hyötysuhde riippuu siitä, mitä pidetään hyötynä.
 
 Energiaketjussa on monta vaihetta peräkkäin. Jokaisen vaiheen hyötyteho on seuraavan vaiheen otettu teho. Siksi hyötysuhteet kerrotaan:
 
-```latex
-\eta = \eta_1\,\eta_2\,\eta_3
+```kaavat
+energiaketjun kokonaishyötysuhde :: \eta = \eta_1\,\eta_2\,\eta_3
 ```
 
 Kuvan esimerkkilaitoksessa $\eta = 0{,}90 \cdot 0{,}45 \cdot 0{,}98 \approx 0{,}40$. Polttoainetehosta $500\,\text{MW}$ tulee siis sähköksi $198\,\text{MW}$. Kuvan kaistojen leveydet ovat mittakaavassa. Lähtevät kaistat ovat yhteensä yhtä leveät kuin tuleva kaista.
 
-<svg data-fig="ketju" viewBox="0 0 420 476" role="img" aria-label="Energiavirtakuvio lauhdevoimalaitoksesta. Kuva on mittakaavassa. Vasemmalta tulee polttoaineteho 500 MW leveänä kaistana. Ensimmäinen vaihe on kattila. Sen hyötysuhde on 0,90. Kaistasta kääntyy alas harmaa häviökaista 50 MW, ja jäljelle jää 450 MW. Toinen vaihe on höyrykierto. Sen hyötysuhde on 0,45. Alas kääntyy leveä häviökaista 248 MW, ja jäljelle jää 203 MW. Kolmas vaihe on generaattori ja muuntaja. Sen hyötysuhde on 0,98, ja häviö on vain 4 MW. Oikealle lähtee vihreä sähkön kaista, 198 MW. Se on noin 40 prosenttia polttoainetehosta. Häviöt muuttuvat hukkalämmöksi." style="max-width:100%;font-size:20px">
-  <rect x="8" y="56" width="90" height="180" fill="#f1dfb5"/>
-  <rect x="98" y="56" width="100" height="162" fill="#f1dfb5"/>
-  <rect x="198" y="56" width="100" height="73" fill="#f1dfb5"/>
-  <rect x="298" y="56" width="70" height="71.5" fill="#b2f2bb"/>
-  <path d="M368,46 L408,91.5 L368,137.5 Z" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="1.5" stroke-linejoin="round"/>
-  <line x1="8" y1="56" x2="368" y2="56" stroke="#d9b26a" stroke-width="1.5" stroke-linecap="butt"/>
-  <path d="M98,218 A31,31 0 0 1 129,249 L129,300 L136,300 L120,316 L104,300 L111,300 L111,249 A13,13 0 0 0 98,236 Z" fill="#c4ccd4" stroke="#6c757d" stroke-width="1.5" stroke-linejoin="round"/>
-  <path d="M198,129 A94.5,94.5 0 0 1 292.5,223.5 L292.5,300 L299.5,300 L248,316 L196.5,300 L203.5,300 L203.5,223.5 A5.5,5.5 0 0 0 198,218 Z" fill="#c4ccd4" stroke="#6c757d" stroke-width="1.5" stroke-linejoin="round"/>
-  <path d="M298,127.5 A18.5,18.5 0 0 1 316.5,146 L316.5,300 L326,300 L316,316 L306,300 L315.5,300 L315.5,146 A17.5,17.5 0 0 0 298,129 Z" fill="#c4ccd4" stroke="#6c757d" stroke-width="1.5" stroke-linejoin="round"/>
-  <line x1="98" y1="34" x2="98" y2="56" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
+<svg data-fig="ketju" viewBox="0 0 420 476" role="img" aria-label="Energiavirtakuvio lauhdevoimalaitoksesta. Kuva on mittakaavassa. Vasemmalta tulee polttoaineteho 500 MW leveänä harmaana kaistana. Ensimmäinen vaihe on kattila. Sen hyötysuhde on 0,90. Kaistasta kääntyy alas oranssi häviökaista 50 MW, ja jäljelle jää 450 MW. Toinen vaihe on höyrykierto. Sen hyötysuhde on 0,45. Alas kääntyy leveä häviökaista 248 MW, ja jäljelle jää 203 MW. Kolmas vaihe on generaattori ja muuntaja. Sen hyötysuhde on 0,98, ja häviö on vain 4 MW. Oikealle lähtee vihreä sähkön kaista, 198 MW. Se on noin 40 prosenttia polttoainetehosta. Häviöt muuttuvat hukkalämmöksi." style="max-width:100%;font-size:20px">
+  <defs><linearGradient id="fy9en-in" gradientUnits="userSpaceOnUse" x1="8" y1="0" x2="298" y2="0"><stop offset="0" stop-color="#e3dccb"/><stop offset="1" stop-color="#c9c2b2"/></linearGradient><linearGradient id="fy9en-ok" gradientUnits="userSpaceOnUse" x1="298" y1="0" x2="408" y2="0"><stop offset="0" stop-color="#b2f2bb"/><stop offset="1" stop-color="#2b8a3e"/></linearGradient><linearGradient id="fy9en-heat" gradientUnits="userSpaceOnUse" x1="0" y1="56" x2="0" y2="316"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
+  <path d="M8,56 L298,56 L298,129 L198,129 L198,218 L98,218 L98,236 L8,236 Z" fill="url(#fy9en-in)" stroke-linejoin="round"/>
+  <path d="M298,56 L368,56 L368,46 L408,91.5 L368,137.5 L368,127.5 L298,127.5 Z" fill="url(#fy9en-ok)" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <line x1="8" y1="56" x2="298" y2="56" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="8" y1="56" x2="8" y2="236" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="8" y1="236" x2="98" y2="236" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="98" y1="218" x2="198" y2="218" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="198" y1="129" x2="298" y2="129" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M98,218 A31,31 0 0 1 129,249 L129,300 L136,300 L120,316 L104,300 L111,300 L111,249 A13,13 0 0 0 98,236 Z" fill="url(#fy9en-heat)" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M198,129 A94.5,94.5 0 0 1 292.5,223.5 L292.5,300 L299.5,300 L248,316 L196.5,300 L203.5,300 L203.5,223.5 A5.5,5.5 0 0 0 198,218 Z" fill="url(#fy9en-heat)" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M298,127.5 A18.5,18.5 0 0 1 316.5,146 L316.5,300 L326,300 L316,316 L306,300 L315.5,300 L315.5,146 A17.5,17.5 0 0 0 298,129 Z" fill="url(#fy9en-heat)" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <line x1="98" y1="34" x2="98" y2="54" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
   <foreignObject x="57.5" y="8" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\eta_1 = 0{,}90$</div></foreignObject>
-  <line x1="198" y1="34" x2="198" y2="56" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
+  <line x1="198" y1="34" x2="198" y2="54" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
   <foreignObject x="157.5" y="8" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\eta_2 = 0{,}45$</div></foreignObject>
-  <line x1="298" y1="34" x2="298" y2="56" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
+  <line x1="298" y1="34" x2="298" y2="54" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
   <foreignObject x="257.5" y="8" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\eta_3 = 0{,}98$</div></foreignObject>
   <foreignObject x="18" y="144" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$500\,\text{MW}$</div></foreignObject>
   <foreignObject x="113" y="144" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$450\,\text{MW}$</div></foreignObject>
   <foreignObject x="213" y="80" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$203\,\text{MW}$</div></foreignObject>
-  <foreignObject x="299" y="79.5" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$198\,\text{MW}$</div></foreignObject>
-  <foreignObject x="340" y="145.5" width="60" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:20px;color:#2b8a3e">$\text{sähkö}$</div></foreignObject>
-  <foreignObject x="90" y="324" width="60" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#6b7480">$50\,\text{MW}$</div></foreignObject>
-  <foreignObject x="213" y="324" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#6b7480">$248\,\text{MW}$</div></foreignObject>
-  <foreignObject x="291" y="324" width="50" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#6b7480">$4\,\text{MW}$</div></foreignObject>
+  <foreignObject x="342" y="148.5" width="64" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#2b8a3e">$198\,\text{MW}$</div></foreignObject>
+  <foreignObject x="351" y="176.5" width="55" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#2b8a3e">$\text{sähkö}$</div></foreignObject>
+  <foreignObject x="90" y="324" width="60" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$50\,\text{MW}$</div></foreignObject>
+  <foreignObject x="213" y="324" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$248\,\text{MW}$</div></foreignObject>
+  <foreignObject x="332" y="292" width="50" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$4\,\text{MW}$</div></foreignObject>
   <foreignObject x="8" y="324" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px;color:#6b7480">$\text{häviöt:}$</div></foreignObject>
   <line x1="8" y1="362" x2="412" y2="362" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="8" y="376" width="105" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\eta_1\ \text{kattila}$</div></foreignObject>
@@ -325,14 +327,12 @@ Kuvan esimerkkilaitoksessa $\eta = 0{,}90 \cdot 0{,}45 \cdot 0{,}98 \approx 0{,}
 
 Polttoaineesta vapautuva energia ja voiman tekemä työ ovat
 
-```latex
-\begin{aligned}
-E &= Hm \\
-W &= Fs
-\end{aligned}
+```kaavat
+palamisessa vapautuva lämpö :: Q = Hm
+voiman tekemä työ :: W = Fs
 ```
 
-Ensimmäisessä kaavassa $H$ on lämpöarvo ($\text{MJ/kg}$) ja $m$ palanut massa (kg). Kaava $E = Hm$ pätee, kun polttoaine palaa kokonaan. Lisäksi lämpöarvon $H$ täytyy vastata polttoaineen todellista kosteutta. Toisessa kaavassa $F$ on vakiovoima (N), joka on liikkeen suuntainen, ja $s$ on matka (m). Kun kappale nostetaan tasaisella nopeudella, työ on $W = mgh$. Siinä $g = 9{,}81\,\text{m/s}^2$ ja $h$ on nostokorkeus.
+Ensimmäisessä kaavassa $Q$ on vapautuva lämpö (J), $H$ on lämpöarvo ($\text{MJ/kg}$) ja $m$ palanut massa (kg). Kaava $Q = Hm$ pätee, kun polttoaine palaa kokonaan. Lisäksi lämpöarvon $H$ täytyy vastata polttoaineen todellista kosteutta. Toisessa kaavassa $F$ on vakiovoima (N), joka on liikkeen suuntainen, ja $s$ on matka (m). Kun kappale nostetaan tasaisella nopeudella, työ on $W = mgh$. Siinä $g = 9{,}81\,\text{m/s}^2$ ja $h$ on nostokorkeus.
 
 ## Yleisiä virheitä {Virheet}
 

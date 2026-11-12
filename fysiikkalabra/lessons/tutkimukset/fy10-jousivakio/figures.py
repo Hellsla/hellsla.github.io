@@ -76,10 +76,10 @@ def setup():
     f.line(530, 216, 530, 296, INK, 2); f.line(520, 216, 540, 216, INK, 2); f.line(520, 296, 540, 296, INK, 2)
     f.tex(546, 256, r"x", "start")
     # forces on the body: spring force from the attachment point up, weight from the centre down
-    f.arrow(400, 296, 400, 206, FORCE, 4, 16); f.tex(388, 262, r"\overline{F}", "end", FORCE)
+    f.arrow(400, 296, 400, 206, FORCE, 4, 16); f.tex(374, 262, r"\overline{F}", "end", FORCE)
     f.circle(400, 331, 4, INK)
     f.arrow(400, 331, 400, 421, FORCE, 4, 16); f.tex(388, 406, r"\overline{G}", "end", FORCE)
-    f.tex(150, 300, r"\text{ilman kuormaa}", "middle", MUTED); f.tex(262, 331, r"\text{kuormitettuna}", "middle", MUTED)
+    f.tex(150, 250, r"\text{ilman kuormaa}", "middle", MUTED); f.tex(262, 331, r"\text{kuormitettuna}", "middle", MUTED)
     return f.svg()
 
 

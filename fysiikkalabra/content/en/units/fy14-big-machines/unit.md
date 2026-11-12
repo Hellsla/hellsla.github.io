@@ -114,28 +114,28 @@ The main new method of the 1970s was **neutral beam injection**. Ions of hydroge
 
 In Princeton, the **Princeton Large Torus (PLT)** started in December 1975. With four neutral beam injectors, it reached ion temperatures of about $60$ million kelvin on the night of 24 July 1978. The result was shown at a conference in Innsbruck in August 1978: a tokamak could reach the temperatures a reactor needs. Temperature alone is not enough, though: density and confinement time had to improve too.
 
-<svg data-fig="heating" viewBox="0 0 600 560" role="img" aria-label="Diagram of three ways to heat a tokamak plasma, drawn on a cross-section of the plasma ring seen from above. In the middle, an orange ring of plasma. A dark arrow along the ring shows the plasma current: ohmic heating. From the right, outside the ring, a box labelled neutral beam sends a short arrow and a row of dark dots, fast neutral atoms, into the plasma band, where the dots fade out: the atoms are caught in the plasma. From the lower left, an antenna sends curved wave lines into the plasma: radio waves." style="max-width:100%;font-size:28px">
-  <rect x="0" y="0" width="600" height="560" fill="#ffffff"/>
-  <ellipse cx="260" cy="290" rx="180" ry="150" fill="none" stroke="#ffc078" stroke-width="64"/>
-  <ellipse cx="260" cy="290" rx="180" ry="150" fill="none" stroke="#e8590c" stroke-width="6" stroke-opacity="0.5"/>
-  <path d="M89,243.5 L92.5,235 L97,226 L102.5,217.5 L108,209.5 L114.5,202 L121.5,194.5 L129,187.5 L137,180.5 L145.5,174.5 L154,168.5 L163.5,163.5 L173.5,158.5 L183.5,154.5 L193.5,150.5 L204.5,147.5 L215,144.5 L226.5,142.5 L237.5,141 L248.5,140.5 L260,140 L271.5,140.5 L282.5,141 L293.5,142.5 L305,144.5 L315.5,147.5 L326.5,150.5 L336.5,154.5 L346.5,158.5 L356.5,163.5 L366,168.5" fill="none" stroke="#1f2933" stroke-width="5" stroke-linejoin="round"/>
-  <line x1="346.5" y1="158.5" x2="364.5" y2="168" stroke="#1f2933" stroke-width="5" stroke-linecap="butt"/>
-  <path d="M381,176.5 L359,175.5 L367.5,159.5 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <foreignObject x="50" y="63" width="420" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:28px">$\text{current: ohmic heating}$</div></foreignObject>
-  <rect x="500" y="255" width="90" height="70" rx="6" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <foreignObject x="490" y="179" width="110" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:28px">$\text{neutral}$</div></foreignObject>
-  <foreignObject x="490" y="213" width="110" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:28px">$\text{beam}$</div></foreignObject>
-  <line x1="500" y1="290" x2="491" y2="290" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M478,290 L492,283.5 L492,296.5 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <circle cx="462" cy="290" r="8" fill="#1f2933" fill-opacity="1.00"/>
-  <circle cx="446" cy="290" r="8" fill="#1f2933" fill-opacity="0.78"/>
-  <circle cx="430" cy="290" r="8" fill="#1f2933" fill-opacity="0.56"/>
-  <circle cx="414" cy="290" r="8" fill="#1f2933" fill-opacity="0.34"/>
-  <rect x="20" y="470" width="90" height="34" rx="4" fill="#b8622d" stroke="#1f2933" stroke-width="2"/>
-  <path d="M80,422.5 A50,50 0 0,1 112.5,455" fill="none" stroke="#b8622d" stroke-width="4"/>
-  <path d="M90,390 A84,84 0 0,1 145,445" fill="none" stroke="#b8622d" stroke-width="4"/>
-  <path d="M100.5,358 A118,118 0 0,1 177,434.5" fill="none" stroke="#b8622d" stroke-width="4"/>
-  <foreignObject x="130" y="517" width="220" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:28px">$\text{radio waves}$</div></foreignObject>
+<svg data-fig="heating" viewBox="0 0 600 492" role="img" aria-label="Diagram of three ways to heat a tokamak plasma, drawn on a cross-section of the plasma ring seen from above. In the middle, an orange ring of plasma. A dark arrow along the ring shows the plasma current: ohmic heating. From the right, outside the ring, a box labelled neutral beam sends a short arrow and a row of dark dots, fast neutral atoms, into the plasma band, where the dots fade out: the atoms are caught in the plasma. From the lower left, an antenna sends curved wave lines into the plasma: radio waves." style="max-width:100%;font-size:24px">
+  <rect x="0" y="0" width="600" height="492" fill="#ffffff"/>
+  <ellipse cx="260" cy="250" rx="180" ry="150" fill="none" stroke="#ffc078" stroke-width="64"/>
+  <ellipse cx="260" cy="250" rx="180" ry="150" fill="none" stroke="#e8590c" stroke-width="6" stroke-opacity="0.5"/>
+  <path d="M89,203.5 L92.5,195 L97,186 L102.5,177.5 L108,169.5 L114.5,162 L121.5,154.5 L129,147.5 L137,140.5 L145.5,134.5 L154,128.5 L163.5,123.5 L173.5,118.5 L183.5,114.5 L193.5,110.5 L204.5,107.5 L215,104.5 L226.5,102.5 L237.5,101 L248.5,100.5 L260,100 L271.5,100.5 L282.5,101 L293.5,102.5 L305,104.5 L315.5,107.5 L326.5,110.5 L336.5,114.5 L346.5,118.5 L356.5,123.5 L366,128.5" fill="none" stroke="#1f2933" stroke-width="5" stroke-linejoin="round"/>
+  <line x1="346.5" y1="118.5" x2="364.5" y2="128" stroke="#1f2933" stroke-width="5" stroke-linecap="butt"/>
+  <path d="M381,136.5 L359,135.5 L367.5,119.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="80" y="23.5" width="360" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{current: ohmic heating}$</div></foreignObject>
+  <rect x="500" y="215" width="90" height="70" rx="6" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="495" y="143.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{neutral}$</div></foreignObject>
+  <foreignObject x="495" y="173.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{beam}$</div></foreignObject>
+  <line x1="500" y1="250" x2="491" y2="250" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M478,250 L492,243.5 L492,256.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <circle cx="462" cy="250" r="8" fill="#1f2933" fill-opacity="1.00"/>
+  <circle cx="446" cy="250" r="8" fill="#1f2933" fill-opacity="0.78"/>
+  <circle cx="430" cy="250" r="8" fill="#1f2933" fill-opacity="0.56"/>
+  <circle cx="414" cy="250" r="8" fill="#1f2933" fill-opacity="0.34"/>
+  <rect x="20" y="440" width="90" height="34" rx="4" fill="#b8622d" stroke="#1f2933" stroke-width="2"/>
+  <path d="M80,392.5 A50,50 0 0,1 112.5,425" fill="none" stroke="#b8622d" stroke-width="4"/>
+  <path d="M90,360 A84,84 0 0,1 145,415" fill="none" stroke="#b8622d" stroke-width="4"/>
+  <path d="M100.5,328 A118,118 0 0,1 177,404.5" fill="none" stroke="#b8622d" stroke-width="4"/>
+  <foreignObject x="124" y="442.5" width="260" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{antenna: radio waves}$</div></foreignObject>
 </svg>
 
 ## Stronger magnets {Magnets}

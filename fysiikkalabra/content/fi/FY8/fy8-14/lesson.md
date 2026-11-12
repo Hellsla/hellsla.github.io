@@ -348,7 +348,7 @@ Lääkintätarvikkeet, kuten ruiskut ja leikkauskäsineet, **steriloidaan** valm
   <foreignObject x="142" y="83.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{ilmaisin}$</div></foreignObject>
   <foreignObject x="126" y="243.5" width="124" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{lähde}\ (\beta^-)$</div></foreignObject>
   <foreignObject x="362" y="199.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{paperirata}$</div></foreignObject>
-  <foreignObject x="500" y="45.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{säätö}$</div></foreignObject>
+  <foreignObject x="441" y="5.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{säätö}$</div></foreignObject>
   <foreignObject x="127.5" y="301.5" width="345" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{paksumpi paperi: vähemmän läpi}$</div></foreignObject>
 </svg>
 

@@ -3,7 +3,7 @@
 > **Miksi** helium-4-atomi on kevyempi kuin kaksi vetyatomia ja kaksi neutronia yhteensä, vaikka se koostuu juuri niistä?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: laboratorion pöydällä on vanhanaikainen vaaka. Vasemmassa vaakakupissa on erillään kaksi punaista protonia ja kaksi harmaata neutronia. Se on alempana. Oikeassa kupissa samat neljä hiukkasta ovat tiiviisti yhdessä heliumytimenä. Se on ylempänä. Heliumydin hehkuu ja lähettää kaksi oranssia fotonia. Erilliset hiukkaset painavat enemmän kuin niistä koottu ydin." class="fig-hero" style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy810h-table" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
+  <defs><linearGradient id="fy810h-floor" gradientUnits="userSpaceOnUse" x1="0" y1="470" x2="0" y2="600"><stop offset="0" stop-color="#e3dccb"/><stop offset="1" stop-color="#c9c2b2"/></linearGradient><linearGradient id="fy810h-table" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
   <rect x="0" y="0" width="1200" height="470" fill="#f6f1e6"/>
   <line x1="0" y1="0" x2="0" y2="470" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
   <line x1="75" y1="0" x2="75" y2="470" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
@@ -29,6 +29,9 @@
   <line x1="0" y1="300" x2="1200" y2="300" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
   <line x1="0" y1="375" x2="1200" y2="375" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
   <line x1="0" y1="450" x2="1200" y2="450" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="0" y="470" width="1200" height="130" fill="url(#fy810h-floor)"/>
+  <ellipse cx="95" cy="588" rx="30" ry="5" fill="#6b7480" fill-opacity="0.3"/>
+  <ellipse cx="1105" cy="588" rx="30" ry="5" fill="#6b7480" fill-opacity="0.3"/>
   <rect x="40" y="470" width="1120" height="40" rx="4" fill="url(#fy810h-table)" stroke="#1f2933" stroke-width="3"/>
   <path d="M50,480 q280,-2.5 560,0 t540,0" fill="none" stroke="#a97a35" stroke-width="1.5" stroke-linejoin="round" stroke-opacity="0.6"/>
   <path d="M50,490 q280,-2.5 560,0 t540,0" fill="none" stroke="#a97a35" stroke-width="1.5" stroke-linejoin="round" stroke-opacity="0.6"/>

@@ -4,10 +4,12 @@ exercise set (exercises/: exercise texts; exit-ticket questions and answers), be
 too, and the .md files of the lesson's language-neutral half (lessons/FY3/fy3-2/sim-spec.md).
 Uses the vendored templates/vendor/katex/katex.min.js, so no npm install is needed. Exit code 1 if anything is bad."""
 import re, sys, pathlib, subprocess, json
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); import kaavat
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 folder = pathlib.Path(sys.argv[1])
 
 def fragments(text):
+    text = kaavat.as_display(text)                                  # ```kaavat: the names (inline maths) and the formulas
     text = re.sub(r"```latex\n(.*?)```", lambda m: "$$" + m.group(1) + "$$", text, flags=re.S)
     display = [m.strip() for m in re.findall(r"\$\$(.*?)\$\$", text, re.S)]
     rest = re.sub(r"\$\$.*?\$\$", "", text, flags=re.S)

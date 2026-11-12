@@ -11,7 +11,7 @@ def work():
             "ja pienenee sen jälkeen tasaisesti nollaan matkan ollessa 5,0 m.")
     ax = Axes(f, (80, 310), (500, 60), x=(0, 6), y=(0, 50), xticks=[0, 1, 2, 3, 4, 5, 6], yticks=[0, 10, 20, 30, 40, 50],
               xlabel=r"s\ (\text{m})", ylabel=r"F\ (\text{N})")
-    ax.line([(0, 40), (3, 40), (5, 0)], INK, 3.5)
+    ax.line([(0, 40), (3, 40), (5, 0)], HEAT, 3)  # data in the chapters' colour and width (teacher 2026-11-11, illustration audit group D)
     return f.svg()
 
 
@@ -25,7 +25,7 @@ def heating():
     ax = Axes(f, (90, 320), (480, 60), x=(0, 35), y=(-30, 120), xticks=[0, 5, 10, 15, 20, 25, 30, 35], yticks=[-20, 0, 20, 40, 60, 80, 100, 120],
               xlabel=r"t\ (\text{min})", ylabel=r"T\ ({}^\circ\text{C})", yfmt=dec(0))
     f.tex(ax.X(0), ax.Y(-30) + 24, "0", "middle")
-    ax.line([(0, -20), (t1, 0), (t2, 0), (t3, 100), (t4, 100)], INK, 3.5)
+    ax.line([(0, -20), (t1, 0), (t2, 0), (t3, 100), (t4, 100)], HEAT, 3)  # data in the chapters' colour and width (teacher 2026-11-11, illustration audit group D)
     return f.svg()
 
 
@@ -40,13 +40,14 @@ def zero():
               xlabel=r"\theta\ ({}^\circ\text{C})", ylabel=r"L\ (\text{mm})", xfmt=dec(0))
     k = 17.0 / 80; x0 = -58.0 / k
     f.tex(ax.X(-300), ax.Y(0) + 24, r"-300", "middle")
-    ax.line([(x0, 0), (0, 58.0)], INK, 3, dash="9 6")
-    ax.line([(0, 58.0), (95, 58.0 + k * 95)], INK, 3)
+    ax.line([(x0, 0), (0, 58.0)], HEAT, 3, dash="9 6")  # data in the chapters' colour and width (teacher 2026-11-11, illustration audit group D)
+    ax.line([(0, 58.0), (95, 58.0 + k * 95)], HEAT, 3)
     ax.guide(80, 75.0); ax.point(0, 58.0, MUTED, 5)
-    for th, L in zip(TH2, L2): ax.point(th, L)
-    ax.point(x0, 0, HEAT, 7)
-    f.tex(ax.X(-295), ax.Y(30), r"\theta_0 \approx -273\,{}^\circ\text{C}", "start", HEAT, bg=True)
-    f.tex(ax.X(-295), ax.Y(55), r"k = \dfrac{75{,}0\,\text{mm} - 58{,}0\,\text{mm}}{80\,{}^\circ\text{C}}", "start", bg=True)
+    for th, L in zip(TH2, L2): ax.point(th, L, HEAT)
+    ax.point(x0, 0, INK, 7)
+    # each label in a space of its own, off the lines: theta_0 right of its point under the dashed line, k above it
+    f.tex(ax.X(-224), ax.Y(0) - 18, r"\theta_0 \approx -273\,{}^\circ\text{C}", "start", INK, bg=True)
+    f.tex(ax.X(-295), ax.Y(64), r"k = \dfrac{75{,}0\,\text{mm} - 58{,}0\,\text{mm}}{80\,{}^\circ\text{C}}", "start", bg=True)
     return f.svg()
 
 
@@ -61,9 +62,9 @@ def melt():
     ax = Axes(f, (80, 370), (480, 70), x=(0, 14), y=(0, 50), xticks=[0, 2, 4, 6, 8, 10, 12, 14], yticks=[0, 10, 20, 30, 40, 50],
               xlabel=r"t\ (\text{min})", ylabel=r"T\ ({}^\circ\text{C})")
     ax.line([(0, 0.2), (tm + 0.4, 0.2)], COLD, 3)
-    ax.line([(tm, 0.2), (13.6, 42.9 + k * 0.6)], INK, 3)
+    ax.line([(tm, 0.2), (13.6, 42.9 + k * 0.6)], HEAT, 3)  # data in the chapters' colour and width (teacher 2026-11-11, illustration audit group D)
     ax.guide(13.0, 42.9); ax.guide(9.0, 11.2)
-    for t, T in zip(T6, TH6): ax.point(t, T)
+    for t, T in zip(T6, TH6): ax.point(t, T, HEAT)
     f.tex(ax.X(5.6), ax.Y(6), r"t \approx 7{,}6\,\text{min}", "end", INK, bg=True)
     f.arrow(ax.X(5.7), ax.Y(5.2), ax.X(tm) - 4, ax.Y(0.2) - 6, MUTED, 2, 11)
     f.tex(ax.X(0.4), ax.Y(30), r"k = \dfrac{42{,}9\,{}^\circ\text{C} - 11{,}2\,{}^\circ\text{C}}{4{,}0\,\text{min}}", "start", bg=True)

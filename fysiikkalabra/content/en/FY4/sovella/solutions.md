@@ -4,7 +4,7 @@
 **Find:** the $(t, v)$ graph of both runs and the model fitted to them
 **Graph:** The horizontal axis shows time $t\ (\text{s})$ and the vertical axis shows speed $v\ (\text{m/s})$. The points of each wax are marked with their own markers, for example circles and squares.
 
-<svg data-fig="fy4-s1-graph" viewBox="0 0 600 430" role="img" aria-label="Graph: the skier&#x27;s speed v as a function of time t for two waxes. The points of wax A are black circles and the points of wax B grey squares. A separate rising straight line is fitted to each set of points. The line of wax A passes through the points (0 s; 2.10 m/s) and (8 s; 5.22 m/s), and its slope is 0.39 m/s². The line of wax B passes through the points (0 s; 1.90 m/s) and (8 s; 3.86 m/s), and its slope is 0.245 m/s²." style="max-width:100%;font-size:24px">
+<svg data-fig="fy4-s1-graph" viewBox="0 0 600 430" role="img" aria-label="Graph: the skier&#x27;s speed v as a function of time t for two waxes. The points of wax A are blue circles and the points of wax B blue squares. A separate rising straight line is fitted to each set of points, the line of wax A solid and the line of wax B dashed. The line of wax A passes through the points (0 s; 2.10 m/s) and (8 s; 5.22 m/s), and its slope is 0.39 m/s². The line of wax B passes through the points (0 s; 1.90 m/s) and (8 s; 3.86 m/s), and its slope is 0.245 m/s²." style="max-width:100%;font-size:24px">
   <line x1="124.5" y1="380" x2="124.5" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="169" y1="380" x2="169" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="213.5" y1="380" x2="213.5" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -52,32 +52,32 @@
   <foreignObject x="50" y="385.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0$</div></foreignObject>
   <foreignObject x="512" y="365.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$t\ (\text{s})$</div></foreignObject>
   <foreignObject x="70" y="13.5" width="87" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$v\ (\text{m/s})$</div></foreignObject>
-  <polyline points="80,271 462,98" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
-  <polyline points="80,282 462,173" fill="none" stroke="#6b7480" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="9 6"/>
-  <circle cx="80" cy="271.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="124.5" cy="250" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="169" cy="232" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="213.5" cy="209" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="258" cy="192.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="302" cy="170" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="346.5" cy="152.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="391" cy="129" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="435.5" cy="110" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <rect x="74" y="276" width="12" height="12" fill="#ffffff" stroke="#6b7480" stroke-width="2.5"/>
-  <rect x="118.5" y="264.5" width="12" height="12" fill="#ffffff" stroke="#6b7480" stroke-width="2.5"/>
-  <rect x="163" y="249" width="12" height="12" fill="#ffffff" stroke="#6b7480" stroke-width="2.5"/>
-  <rect x="207.5" y="238.5" width="12" height="12" fill="#ffffff" stroke="#6b7480" stroke-width="2.5"/>
-  <rect x="252" y="224" width="12" height="12" fill="#ffffff" stroke="#6b7480" stroke-width="2.5"/>
-  <rect x="296" y="214.5" width="12" height="12" fill="#ffffff" stroke="#6b7480" stroke-width="2.5"/>
-  <rect x="340.5" y="198.5" width="12" height="12" fill="#ffffff" stroke="#6b7480" stroke-width="2.5"/>
-  <rect x="385" y="188.5" width="12" height="12" fill="#ffffff" stroke="#6b7480" stroke-width="2.5"/>
-  <rect x="429.5" y="174.5" width="12" height="12" fill="#ffffff" stroke="#6b7480" stroke-width="2.5"/>
+  <polyline points="80,271 462,98" fill="none" stroke="#1971c2" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="80,282 462,173" fill="none" stroke="#1971c2" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="9 6"/>
+  <circle cx="80" cy="271.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="124.5" cy="250" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="169" cy="232" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="213.5" cy="209" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="258" cy="192.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="302" cy="170" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="346.5" cy="152.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="391" cy="129" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="435.5" cy="110" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <rect x="74" y="276" width="12" height="12" fill="#ffffff" stroke="#1971c2" stroke-width="2.5"/>
+  <rect x="118.5" y="264.5" width="12" height="12" fill="#ffffff" stroke="#1971c2" stroke-width="2.5"/>
+  <rect x="163" y="249" width="12" height="12" fill="#ffffff" stroke="#1971c2" stroke-width="2.5"/>
+  <rect x="207.5" y="238.5" width="12" height="12" fill="#ffffff" stroke="#1971c2" stroke-width="2.5"/>
+  <rect x="252" y="224" width="12" height="12" fill="#ffffff" stroke="#1971c2" stroke-width="2.5"/>
+  <rect x="296" y="214.5" width="12" height="12" fill="#ffffff" stroke="#1971c2" stroke-width="2.5"/>
+  <rect x="340.5" y="198.5" width="12" height="12" fill="#ffffff" stroke="#1971c2" stroke-width="2.5"/>
+  <rect x="385" y="188.5" width="12" height="12" fill="#ffffff" stroke="#1971c2" stroke-width="2.5"/>
+  <rect x="429.5" y="174.5" width="12" height="12" fill="#ffffff" stroke="#1971c2" stroke-width="2.5"/>
   <circle cx="80" cy="271.5" r="11" fill="none" stroke="#1f2933" stroke-width="1.5"/>
   <circle cx="435.5" cy="110.5" r="11" fill="none" stroke="#1f2933" stroke-width="1.5"/>
   <circle cx="80" cy="282" r="11" fill="none" stroke="#1f2933" stroke-width="1.5"/>
   <circle cx="435.5" cy="180.5" r="11" fill="none" stroke="#1f2933" stroke-width="1.5"/>
-  <foreignObject x="171" y="81.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{wax A: } 0.39\,\tfrac{\text{m}}{\text{s}^2}$</div></foreignObject>
-  <foreignObject x="305.5" y="218" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$\text{wax B: } 0.245\,\tfrac{\text{m}}{\text{s}^2}$</div></foreignObject>
+  <foreignObject x="146" y="81.5" width="183" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#1971c2">$\text{wax A: } 0.39\,\text{m/s}^2$</div></foreignObject>
+  <foreignObject x="280.5" y="298.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#1971c2"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{wax B: } 0.245\,\text{m/s}^2$</span></div></foreignObject>
 </svg>
 
 **Model answer:** The points of both runs are almost on a straight line, so the speed grows steadily and the acceleration is almost constant. A separate straight line is fitted to each set of points, passing between the points, and the points are not joined into a broken line. The small scatter of the points on both sides of the line is the random variation of the measurement. The line of wax A is steeper, so the skier accelerates faster with it.
@@ -194,7 +194,7 @@ komponentit G
 **Find:** the $(v, a)$ graph of the additional measurement, the acceleration without air resistance, and the effect of air resistance on the coefficient of friction $\mu_\text{A}$ of part c
 **Graph:** The speed $v\ (\text{m/s})$ is on the horizontal axis and the acceleration $a\ (\text{m/s}^2)$ on the vertical axis. Each run is marked as a point of its own, and a curved line is fitted to the points and extended as a dashed line to the vertical axis.
 
-<svg data-fig="fy4-s1-drag" viewBox="0 0 600 410" role="img" aria-label="Graph: the skier&#x27;s acceleration a as a function of the speed v with wax A. Six black points at speeds of 2.0–9.0 m/s; the acceleration decreases more and more steeply as the speed increases. A curved line is fitted to the points and extended as a dashed line to the vertical axis. The curve meets the vertical axis at a0 = 0.45 m/s², which is the acceleration without air resistance." style="max-width:100%;font-size:24px">
+<svg data-fig="fy4-s1-drag" viewBox="0 0 600 410" role="img" aria-label="Graph: the skier&#x27;s acceleration a as a function of the speed v with wax A. Six orange points at speeds of 2.0–9.0 m/s; the acceleration decreases more and more steeply as the speed increases. A curved line is fitted to the points and extended as a dashed line to the vertical axis. The curve meets the vertical axis at a0 = 0.45 m/s², which is the acceleration without air resistance." style="max-width:100%;font-size:24px">
   <line x1="121" y1="360" x2="121" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="162" y1="360" x2="162" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="203" y1="360" x2="203" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -242,16 +242,16 @@ komponentit G
   <foreignObject x="50" y="365.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0$</div></foreignObject>
   <foreignObject x="522" y="345.5" width="87" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$v\ (\text{m/s})$</div></foreignObject>
   <foreignObject x="70" y="3.5" width="99" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$a\ (\text{m/s}^2)$</div></foreignObject>
-  <polyline points="145.5,97.5 148.5,98 151,98.5 154,99 156.5,100 159.5,100.5 162,101 164.5,102 167.5,102.5 170,103.5 173,104 175.5,105 178.5,105.5 181,106.5 184,107.5 186.5,108.5 189.5,109 192,110 195,111 197.5,112 200.5,113 203,114 205.5,115 208.5,116 211,117.5 214,118.5 216.5,119.5 219.5,121 222,122 225,123 227.5,124.5 230.5,125.5 233,127 236,128 238.5,129.5 241.5,131 244,132.5 246.5,133.5 249.5,135 252,136.5 255,138 257.5,139.5 260.5,141 263,142.5 266,144 268.5,145.5 271.5,147 274,149 277,150.5 279.5,152 282.5,154 285,155.5 287.5,157.5 290.5,159 293,161 296,162.5 298.5,164.5 301.5,166.5 304,168.5 307,170 309.5,172 312.5,174 315,176 318,178 320.5,180 323.5,182 326,184 328.5,186 331.5,188.5 334,190.5 337,192.5 339.5,195 342.5,197 345,199 348,201.5 350.5,203.5 353.5,206 356,208.5 359,210.5 361.5,213 364.5,215.5 367,218 369.5,220 372.5,222.5 375,225 378,227.5 380.5,230 383.5,232.5 386,235.5 389,238 391.5,240.5 394.5,243 397,246 400,248.5 402.5,251 405.5,254 408,256.5 410.5,259.5 413.5,262.5 416,265 419,268 421.5,271 424.5,273.5 427,276.5 430,279.5 432.5,282.5 435.5,285.5 438,288.5 441,291.5 443.5,294.5 446.5,297.5 449,300.5 451.5,304 454.5,307 457,310 460,313.5 462.5,316.5 465.5,320 468,323 471,326.5 473.5,329.5" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
-  <polyline points="80,91 80.5,91 81,91 81.5,91 82,91 82.5,91 83.5,91 84,91 84.5,91 85,91 85.5,91 86,91 86.5,91 87,91 87.5,91 88,91 88.5,91 89.5,91 90,91 90.5,91 91,91 91.5,91 92,91 92.5,91 93,91 93.5,91 94,91 95,91 95.5,91 96,91 96.5,91 97,91 97.5,91.5 98,91.5 98.5,91.5 99,91.5 99.5,91.5 100,91.5 101,91.5 101.5,91.5 102,91.5 102.5,91.5 103,91.5 103.5,91.5 104,91.5 104.5,91.5 105,92 105.5,92 106,92 107,92 107.5,92 108,92 108.5,92 109,92 109.5,92 110,92 110.5,92 111,92.5 111.5,92.5 112.5,92.5 113,92.5 113.5,92.5 114,92.5 114.5,92.5 115,92.5 115.5,92.5 116,93 116.5,93 117,93 117.5,93 118.5,93 119,93 119.5,93 120,93 120.5,93.5 121,93.5 121.5,93.5 122,93.5 122.5,93.5 123,93.5 123.5,93.5 124.5,94 125,94 125.5,94 126,94 126.5,94 127,94 127.5,94.5 128,94.5 128.5,94.5 129,94.5 129.5,94.5 130.5,94.5 131,95 131.5,95 132,95 132.5,95 133,95 133.5,95 134,95.5 134.5,95.5 135,95.5 136,95.5 136.5,95.5 137,96 137.5,96 138,96 138.5,96 139,96 139.5,96.5 140,96.5 140.5,96.5 141,96.5 142,96.5 142.5,97 143,97 143.5,97 144,97 144.5,97 145,97.5 145.5,97.5" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 6"/>
-  <circle cx="162" cy="102" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="203" cy="114" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="264.5" cy="144" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="326" cy="180" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="387.5" cy="240" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="449" cy="300" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <polyline points="145.5,97.5 148.5,98 151,98.5 154,99 156.5,100 159.5,100.5 162,101 164.5,102 167.5,102.5 170,103.5 173,104 175.5,105 178.5,105.5 181,106.5 184,107.5 186.5,108.5 189.5,109 192,110 195,111 197.5,112 200.5,113 203,114 205.5,115 208.5,116 211,117.5 214,118.5 216.5,119.5 219.5,121 222,122 225,123 227.5,124.5 230.5,125.5 233,127 236,128 238.5,129.5 241.5,131 244,132.5 246.5,133.5 249.5,135 252,136.5 255,138 257.5,139.5 260.5,141 263,142.5 266,144 268.5,145.5 271.5,147 274,149 277,150.5 279.5,152 282.5,154 285,155.5 287.5,157.5 290.5,159 293,161 296,162.5 298.5,164.5 301.5,166.5 304,168.5 307,170 309.5,172 312.5,174 315,176 318,178 320.5,180 323.5,182 326,184 328.5,186 331.5,188.5 334,190.5 337,192.5 339.5,195 342.5,197 345,199 348,201.5 350.5,203.5 353.5,206 356,208.5 359,210.5 361.5,213 364.5,215.5 367,218 369.5,220 372.5,222.5 375,225 378,227.5 380.5,230 383.5,232.5 386,235.5 389,238 391.5,240.5 394.5,243 397,246 400,248.5 402.5,251 405.5,254 408,256.5 410.5,259.5 413.5,262.5 416,265 419,268 421.5,271 424.5,273.5 427,276.5 430,279.5 432.5,282.5 435.5,285.5 438,288.5 441,291.5 443.5,294.5 446.5,297.5 449,300.5 451.5,304 454.5,307 457,310 460,313.5 462.5,316.5 465.5,320 468,323 471,326.5 473.5,329.5" fill="none" stroke="#e8590c" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="80,91 80.5,91 81,91 81.5,91 82,91 82.5,91 83.5,91 84,91 84.5,91 85,91 85.5,91 86,91 86.5,91 87,91 87.5,91 88,91 88.5,91 89.5,91 90,91 90.5,91 91,91 91.5,91 92,91 92.5,91 93,91 93.5,91 94,91 95,91 95.5,91 96,91 96.5,91 97,91 97.5,91.5 98,91.5 98.5,91.5 99,91.5 99.5,91.5 100,91.5 101,91.5 101.5,91.5 102,91.5 102.5,91.5 103,91.5 103.5,91.5 104,91.5 104.5,91.5 105,92 105.5,92 106,92 107,92 107.5,92 108,92 108.5,92 109,92 109.5,92 110,92 110.5,92 111,92.5 111.5,92.5 112.5,92.5 113,92.5 113.5,92.5 114,92.5 114.5,92.5 115,92.5 115.5,92.5 116,93 116.5,93 117,93 117.5,93 118.5,93 119,93 119.5,93 120,93 120.5,93.5 121,93.5 121.5,93.5 122,93.5 122.5,93.5 123,93.5 123.5,93.5 124.5,94 125,94 125.5,94 126,94 126.5,94 127,94 127.5,94.5 128,94.5 128.5,94.5 129,94.5 129.5,94.5 130.5,94.5 131,95 131.5,95 132,95 132.5,95 133,95 133.5,95 134,95.5 134.5,95.5 135,95.5 136,95.5 136.5,95.5 137,96 137.5,96 138,96 138.5,96 139,96 139.5,96.5 140,96.5 140.5,96.5 141,96.5 142,96.5 142.5,97 143,97 143.5,97 144,97 144.5,97 145,97.5 145.5,97.5" fill="none" stroke="#e8590c" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 6"/>
+  <circle cx="162" cy="102" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="203" cy="114" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="264.5" cy="144" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="326" cy="180" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="387.5" cy="240" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="449" cy="300" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
   <circle cx="80" cy="91" r="11" fill="none" stroke="#1f2933" stroke-width="1.5"/>
-  <foreignObject x="100.5" y="50.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$a_0 \approx 0.45\,\tfrac{\text{m}}{\text{s}^2}$</div></foreignObject>
+  <foreignObject x="100.5" y="50.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$a_0 \approx 0.45\,\text{m/s}^2$</span></div></foreignObject>
 </svg>
 
 **Model answer:** The acceleration decreases more and more steeply as the speed increases, so a straight line does not fit the points; a curve does. The friction force does not depend on the speed, but air resistance grows with the speed, so the decrease in the acceleration is caused by air resistance. At a very low speed air resistance is almost zero. When the curve is extended to the speed $v = 0$, it gives the acceleration without air resistance: $a_0 \approx 0.45\,\text{m/s}^2$.

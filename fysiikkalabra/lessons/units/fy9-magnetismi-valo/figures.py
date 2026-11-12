@@ -101,19 +101,19 @@ def hero():
 def kartta():
     """The concept map, stacked for a phone: the magnetic field at the top, a spine down the left and three boxes
     (forces in a field, induction, light), each with three laws and a grey word beside each."""
-    f = Fig("fy9mv-kartta", 704, "Käsitekartta. Ylhäällä solmu magneettikenttä: magneettivuon tiheys B ja magneettivuo "
-            "fii = B A. Siitä lähtee alas kolme haaraa. Voimat kentässä, liikkuva varaus: magneettinen voima F = q v B "
-            "sini alfa, virtajohtimeen kohdistuva voima F = I l B sini alfa ja suoran johtimen kenttä B = myy nolla I per "
-            "2 pii r. Induktio, muuttuva vuo: induktiolaki e = miinus N delta fii per delta t, generaattorin huippujännite "
-            "e 0 = N B A kertaa 2 pii f ja muuntaja U 1 per U 2 = N 1 per N 2. Valo, sähkömagneettinen aalto: "
-            "taittumislaki n 1 sini alfa 1 = n 2 sini alfa 2, hilayhtälö d sini theeta = k lambda ja Malusin laki "
-            "I = I 0 kertaa kosini toiseen theeta.", width=380, size=20)
+    f = Fig("fy9mv-kartta", 704, "Käsitekartta. Ylhäällä solmu magneettikenttä: magneettivuon tiheys B ja magneettivuo fii = B A. Siitä lähtee "
+            "alas kolme haaraa. Voimat kentässä, liikkuva varaus: magneettinen voima F M = Q v B kohtisuora, virtajohtimeen "
+            "kohdistuva voima F M = I l B kohtisuora ja suoran johtimen kenttä B = myy nolla I per 2 pii r. Induktio, "
+            "muuttuva vuo: induktiolaki e = miinus N delta fii per delta t, generaattorin huippujännite u 0 = N A B kertaa "
+            "2 pii f ja muuntaja N 1 per N 2 = U 1 per U 2. Valo, sähkömagneettinen aalto: taittumislaki sini alfa 1 per "
+            "sini alfa 2 = n 2 per n 1, hilayhtälö d sini alfa = n lambda ja Malusin laki I = I 0 kertaa kosini toiseen "
+            "theeta.", width=380, size=20)
     groups = [
-        ("voimat kentässä", "liike tai virta", [(r"F = qvB\sin\alpha", "varaus"), (r"F = IlB\sin\alpha", "johdin"),
+        ("voimat kentässä", "liike tai virta", [(r"F_\text{M} = QvB_\perp", "varaus"), (r"F_\text{M} = I\ell B_\perp", "johdin"),
                                                 (r"B = \mu_0 I/(2\pi r)", "johtimen kenttä")]),
-        ("induktio", "muuttuva vuo", [(r"e = -N\,\Delta\Phi/\Delta t", "induktiolaki"), (r"e_0 = NBA \cdot 2\pi f", "generaattori"),
-                                      (r"U_1/U_2 = N_1/N_2", "muuntaja")]),
-        ("valo", "sm-aalto", [(r"n_1\sin\alpha_1 = n_2\sin\alpha_2", "taittuminen"), (r"d\sin\theta = k\lambda", "hila"),
+        ("induktio", "muuttuva vuo", [(r"e = -N\,\Delta\Phi/\Delta t", "induktiolaki"), (r"u_0 = NAB \cdot 2\pi f", "generaattori"),
+                                      (r"N_1/N_2 = U_1/U_2", "muuntaja")]),
+        ("valo", "sm-aalto", [(r"\sin\alpha_1/\sin\alpha_2 = n_2/n_1", "taittuminen"), (r"d\sin\alpha = n\lambda", "hila"),
                               (r"I = I_0\cos^2\theta", "polarisaatio")]),
     ]
     hub_y, hub_h, x_box, gh, top = 8, 72, 44, 188, 100

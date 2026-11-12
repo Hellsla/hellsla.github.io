@@ -211,7 +211,7 @@ All the problems of this lesson start from the same principle: **energy is conse
 
 Three questions branch off from the conservation law, and the energy problems of the exam come back to them. **How fast** is energy transformed? Power tells that. **How large a share** is useful? Efficiency tells that. **Where** does the energy come from? From the heat of combustion of a fuel, from the work done by a force, or from flowing water, the wind and the sun.
 
-<svg data-fig="kartta" viewBox="0 0 380 596" role="img" aria-label="Concept map. At the top is the node energy is conserved: E initial equals E final. Three branches lead down from it. Power: P = ΔE / Δt, energy from power E = P t and the kilowatt-hour 1 kWh = 3.6 MJ. Efficiency: eta = E a / E o, losses E o = E a + E h and the energy chain, in which eta is the product of the efficiencies of the stages, eta 1 eta 2 eta 3. Source of energy: fuel E = H m, work W = F s and work of lifting W = m g h." style="max-width:100%;font-size:21px">
+<svg data-fig="kartta" viewBox="0 0 380 596" role="img" aria-label="Concept map. At the top is the node energy is conserved: E initial equals E final. Three branches lead down from it. Power: P = ΔE / Δt, energy from power E = P t and the kilowatt-hour 1 kWh = 3.6 MJ. Efficiency: eta = E a / E o, losses E o = E a + E h and the energy chain, in which eta is the product of the efficiencies of the stages, eta 1 eta 2 eta 3. Source of energy: fuel Q = H m, work W = F s and work of lifting W = m g h." style="max-width:100%;font-size:21px">
   <line x1="24" y1="80" x2="24" y2="454" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
   <foreignObject x="93" y="16.5" width="194" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:21px">$\text{energy is conserved}$</div></foreignObject>
@@ -240,7 +240,7 @@ Three questions branch off from the conservation law, and the energy problems of
   <rect x="44" y="432" width="328" height="150" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
   <foreignObject x="58" y="441.5" width="172" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\textbf{source of energy}$</div></foreignObject>
   <line x1="54" y1="474" x2="362" y2="474" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="485.5" width="52" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$E = Hm$</div></foreignObject>
+  <foreignObject x="58" y="485.5" width="52" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$Q = Hm$</div></foreignObject>
   <foreignObject x="317" y="487" width="45" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{fuel}$</div></foreignObject>
   <foreignObject x="58" y="519.5" width="52" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$W = Fs$</div></foreignObject>
   <foreignObject x="317" y="521" width="45" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{work}$</div></foreignObject>
@@ -258,62 +258,64 @@ This also answers the opening question. Ten litres of petrol contain about $7.5\
 
 In an isolated system, which no energy enters or leaves, the total energy stays the same:
 
-```latex
-E_\text{initial} = E_\text{final}
+```kaavat
+conservation of energy :: E_\text{initial} = E_\text{final}
 ```
 
 where each side is the sum of all forms of energy, thermal energy included. Power is the energy transformed or transferred per unit time:
 
-```latex
-P = \frac{\Delta E}{\Delta t}
+```kaavat
+power :: P = \frac{\Delta E}{\Delta t}
 ```
 
 where $P$ is the power (W), $\Delta E$ the energy (J) and $\Delta t$ the time (s). For uneven use the formula gives the average power; at constant power $E = P\,t$. The kilowatt-hour is a unit of energy, and it is converted by substitution:
 
-```latex
-1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3.6\,\text{MJ}
+```kaavat
+kilowatt-hour in joules :: 1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3.6\,\text{MJ}
 ```
 
 ### Efficiency and the energy chain
 
-```latex
-\eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}
+```kaavat
+efficiency :: \eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}
 ```
 
 where $\eta$ is the efficiency, $E_\text{a}$ and $P_\text{a}$ the useful energy and power given, and $E_\text{o}$ and $P_\text{o}$ the energy and power taken in. The ratio of the powers can be used when the device runs steadily. Energy is conserved, so $E_\text{o} = E_\text{a} + E_\text{h}$, where $E_\text{h}$ is the losses. The efficiency is at most $100\,\%$; it depends on what is defined as useful.
 
 In successive stages the useful power of each stage is the power taken in by the next, so the efficiencies are multiplied:
 
-```latex
-\eta = \eta_1\,\eta_2\,\eta_3
+```kaavat
+total efficiency of an energy chain :: \eta = \eta_1\,\eta_2\,\eta_3
 ```
 
 In the example plant in the figure $\eta = 0.90 \cdot 0.45 \cdot 0.98 \approx 0.40$: of the fuel power of $500\,\text{MW}$, $198\,\text{MW}$ becomes electricity. The widths of the bands are to scale, and the outgoing bands are together as wide as the incoming one.
 
-<svg data-fig="ketju" viewBox="0 0 420 476" role="img" aria-label="A to-scale energy flow diagram of a condensing power plant. From the left comes the fuel power of 500 MW as a wide band. In the first stage, the boiler, the efficiency is 0.90: a grey loss band of 50 MW turns down from the band, and 450 MW remains. In the second stage, the steam cycle, the efficiency is 0.45: a wide loss band of 248 MW turns down, and 203 MW remains. In the third stage, the generator and the transformer, the efficiency is 0.98 and the loss only 4 MW. A green band of electricity leaves to the right, 198 MW, that is, about 40 per cent of the fuel power. The losses become waste heat." style="max-width:100%;font-size:20px">
-  <rect x="8" y="56" width="90" height="180" fill="#f1dfb5"/>
-  <rect x="98" y="56" width="100" height="162" fill="#f1dfb5"/>
-  <rect x="198" y="56" width="100" height="73" fill="#f1dfb5"/>
-  <rect x="298" y="56" width="70" height="71.5" fill="#b2f2bb"/>
-  <path d="M368,46 L408,91.5 L368,137.5 Z" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="1.5" stroke-linejoin="round"/>
-  <line x1="8" y1="56" x2="368" y2="56" stroke="#d9b26a" stroke-width="1.5" stroke-linecap="butt"/>
-  <path d="M98,218 A31,31 0 0 1 129,249 L129,300 L136,300 L120,316 L104,300 L111,300 L111,249 A13,13 0 0 0 98,236 Z" fill="#c4ccd4" stroke="#6c757d" stroke-width="1.5" stroke-linejoin="round"/>
-  <path d="M198,129 A94.5,94.5 0 0 1 292.5,223.5 L292.5,300 L299.5,300 L248,316 L196.5,300 L203.5,300 L203.5,223.5 A5.5,5.5 0 0 0 198,218 Z" fill="#c4ccd4" stroke="#6c757d" stroke-width="1.5" stroke-linejoin="round"/>
-  <path d="M298,127.5 A18.5,18.5 0 0 1 316.5,146 L316.5,300 L326,300 L316,316 L306,300 L315.5,300 L315.5,146 A17.5,17.5 0 0 0 298,129 Z" fill="#c4ccd4" stroke="#6c757d" stroke-width="1.5" stroke-linejoin="round"/>
-  <line x1="98" y1="34" x2="98" y2="56" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
+<svg data-fig="ketju" viewBox="0 0 420 476" role="img" aria-label="A to-scale energy flow diagram of a condensing power plant. From the left comes the fuel power of 500 MW as a wide grey band. In the first stage, the boiler, the efficiency is 0.90: an orange loss band of 50 MW turns down from the band, and 450 MW remains. In the second stage, the steam cycle, the efficiency is 0.45: a wide loss band of 248 MW turns down, and 203 MW remains. In the third stage, the generator and the transformer, the efficiency is 0.98 and the loss only 4 MW. A green band of electricity leaves to the right, 198 MW, that is, about 40 per cent of the fuel power. The losses become waste heat." style="max-width:100%;font-size:20px">
+  <defs><linearGradient id="fy9en-in" gradientUnits="userSpaceOnUse" x1="8" y1="0" x2="298" y2="0"><stop offset="0" stop-color="#e3dccb"/><stop offset="1" stop-color="#c9c2b2"/></linearGradient><linearGradient id="fy9en-ok" gradientUnits="userSpaceOnUse" x1="298" y1="0" x2="408" y2="0"><stop offset="0" stop-color="#b2f2bb"/><stop offset="1" stop-color="#2b8a3e"/></linearGradient><linearGradient id="fy9en-heat" gradientUnits="userSpaceOnUse" x1="0" y1="56" x2="0" y2="316"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
+  <path d="M8,56 L298,56 L298,129 L198,129 L198,218 L98,218 L98,236 L8,236 Z" fill="url(#fy9en-in)" stroke-linejoin="round"/>
+  <path d="M298,56 L368,56 L368,46 L408,91.5 L368,137.5 L368,127.5 L298,127.5 Z" fill="url(#fy9en-ok)" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <line x1="8" y1="56" x2="298" y2="56" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="8" y1="56" x2="8" y2="236" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="8" y1="236" x2="98" y2="236" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="98" y1="218" x2="198" y2="218" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="198" y1="129" x2="298" y2="129" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M98,218 A31,31 0 0 1 129,249 L129,300 L136,300 L120,316 L104,300 L111,300 L111,249 A13,13 0 0 0 98,236 Z" fill="url(#fy9en-heat)" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M198,129 A94.5,94.5 0 0 1 292.5,223.5 L292.5,300 L299.5,300 L248,316 L196.5,300 L203.5,300 L203.5,223.5 A5.5,5.5 0 0 0 198,218 Z" fill="url(#fy9en-heat)" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M298,127.5 A18.5,18.5 0 0 1 316.5,146 L316.5,300 L326,300 L316,316 L306,300 L315.5,300 L315.5,146 A17.5,17.5 0 0 0 298,129 Z" fill="url(#fy9en-heat)" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <line x1="98" y1="34" x2="98" y2="54" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
   <foreignObject x="57.5" y="8" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\eta_1 = 0.90$</div></foreignObject>
-  <line x1="198" y1="34" x2="198" y2="56" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
+  <line x1="198" y1="34" x2="198" y2="54" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
   <foreignObject x="157.5" y="8" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\eta_2 = 0.45$</div></foreignObject>
-  <line x1="298" y1="34" x2="298" y2="56" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
+  <line x1="298" y1="34" x2="298" y2="54" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
   <foreignObject x="257.5" y="8" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\eta_3 = 0.98$</div></foreignObject>
   <foreignObject x="18" y="144" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$500\,\text{MW}$</div></foreignObject>
   <foreignObject x="113" y="144" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$450\,\text{MW}$</div></foreignObject>
   <foreignObject x="213" y="80" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$203\,\text{MW}$</div></foreignObject>
-  <foreignObject x="299" y="79.5" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$198\,\text{MW}$</div></foreignObject>
-  <foreignObject x="278" y="145.5" width="122" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:20px;color:#2b8a3e">$\text{electricity}$</div></foreignObject>
-  <foreignObject x="90" y="324" width="60" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#6b7480">$50\,\text{MW}$</div></foreignObject>
-  <foreignObject x="213" y="324" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#6b7480">$248\,\text{MW}$</div></foreignObject>
-  <foreignObject x="291" y="324" width="50" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#6b7480">$4\,\text{MW}$</div></foreignObject>
+  <foreignObject x="342" y="148.5" width="64" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#2b8a3e">$198\,\text{MW}$</div></foreignObject>
+  <foreignObject x="295" y="176.5" width="111" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#2b8a3e">$\text{electricity}$</div></foreignObject>
+  <foreignObject x="90" y="324" width="60" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$50\,\text{MW}$</div></foreignObject>
+  <foreignObject x="213" y="324" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$248\,\text{MW}$</div></foreignObject>
+  <foreignObject x="332" y="292" width="50" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$4\,\text{MW}$</div></foreignObject>
   <foreignObject x="8" y="324" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px;color:#6b7480">$\text{losses:}$</div></foreignObject>
   <line x1="8" y1="362" x2="412" y2="362" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="8" y="376" width="94" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\eta_1\ \text{boiler}$</div></foreignObject>
@@ -325,14 +327,12 @@ In the example plant in the figure $\eta = 0.90 \cdot 0.45 \cdot 0.98 \approx 0.
 
 The energy released from a fuel and the work done by a force are
 
-```latex
-\begin{aligned}
-E &= Hm \\
-W &= Fs
-\end{aligned}
+```kaavat
+heat released in combustion :: Q = Hm
+work done by a force :: W = Fs
 ```
 
-where $H$ is the heat of combustion ($\text{MJ/kg}$) and $m$ the mass burnt (kg); $E = Hm$ holds when the fuel burns completely and $H$ is the heat of combustion for its actual moisture content. In the work, $F$ is a constant force in the direction of motion (N) and $s$ the distance (m). In steady lifting $W = mgh$, where $g = 9.81\,\text{m/s}^2$ and $h$ is the lifting height.
+where $Q$ is the heat released (J), $H$ the heat of combustion ($\text{MJ/kg}$) and $m$ the mass burnt (kg); $Q = Hm$ holds when the fuel burns completely and $H$ is the heat of combustion for its actual moisture content. In the work, $F$ is a constant force in the direction of motion (N) and $s$ the distance (m). In steady lifting $W = mgh$, where $g = 9.81\,\text{m/s}^2$ and $h$ is the lifting height.
 
 ## Common mistakes {Virheet}
 

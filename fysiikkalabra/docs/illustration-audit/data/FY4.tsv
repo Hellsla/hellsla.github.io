@@ -48,7 +48,7 @@ fy4-14/valitse-a|4|4|4|4|KEVYT|Ks. fy4-14/pudotus.||PIDÄ: esitystapa vahvistett
 fy4-14/valitse-b|4|4|4|4|KEVYT|Ks. fy4-14/pudotus.||PIDÄ: esitystapa vahvistettu sarjan malliksi (opettaja 2026-11-11)
 fy4-14/valitse-c|4|4|4|4|KEVYT|Ks. fy4-14/pudotus.||PIDÄ: esitystapa vahvistettu sarjan malliksi (opettaja 2026-11-11)
 fy4-14/valitse-d|5|4|4|5|PIDA|||
-fy4-14/malli-alas|4|4|3|4|KEVYT|Ks. fy4-14/pudotus. Lisäksi kuva-alan yläosa on tyhjä ja kuvio on työnnetty alareunaan.||KEVYT KORJAUS hyväksytty: tyhjä yläosa pois (ilmanvastuksen esitystapa säilyy) (opettaja 2026-11-11)
+fy4-14/malli-alas|4|4|3|4|KEVYT|Ks. fy4-14/pudotus. Lisäksi kuva-alan yläosa on tyhjä ja kuvio on työnnetty alareunaan.||KEVYT KORJAUS hyväksytty: tyhjä yläosa pois (ilmanvastuksen esitystapa säilyy) (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12
 fy4-14/ex-tangentti|5|4|4|5|PIDA|||
 fy4-15/hero|5|4|5|5|PIDA|||
 fy4-15/vesivoimala|5|5|5|5|PIDA|Leikkauskuva, jossa energian muodot on merkitty paikkoihin, joissa ne esiintyvät.||
@@ -74,8 +74,8 @@ fy4-2/check-tv|5|4|4|5|PIDA|||
 fy4-3/hero|5|5|5|5|PIDA|||
 fy4-3/curling|5|5|4|5|PIDA|||
 fy4-3/luistelijat|5|5|4|5|PIDA|Voima ja vastavoima eri kappaleiden kuvioissa, nimet alaindeksein.||
-fy4-3/auto|5|5|4|4|KEVYT|Ilmanvastus alkaa kappaleen pinnasta; luvussa fy4-14 se on piirretty työntönä kärki pinnassa. Ks. fy4-14/pudotus.||KEVYT KORJAUS hyväksytty: ilmanvastus luvun fy4-14 tyyliin (työntönä, liikkeen suuntaa vastaan) (opettaja 2026-11-11)
-fy4-3/kone|5|5|4|4|KEVYT|Ks. fy4-3/auto.||KEVYT KORJAUS hyväksytty: ilmanvastus luvun fy4-14 tyyliin (työntönä, liikkeen suuntaa vastaan) (opettaja 2026-11-11)
+fy4-3/auto|5|5|4|4|KEVYT|Ilmanvastus alkaa kappaleen pinnasta; luvussa fy4-14 se on piirretty työntönä kärki pinnassa. Ks. fy4-14/pudotus.||KEVYT KORJAUS hyväksytty: ilmanvastus luvun fy4-14 tyyliin (työntönä, liikkeen suuntaa vastaan) (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12
+fy4-3/kone|5|5|4|4|KEVYT|Ks. fy4-3/auto.||KEVYT KORJAUS hyväksytty: ilmanvastus luvun fy4-14 tyyliin (työntönä, liikkeen suuntaa vastaan) (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12
 fy4-3/anturit|5|5|4|5|PIDA|||
 fy4-3/malli-lamppu|5|5|4|5|PIDA|||
 fy4-4/hero|5|5|5|5|PIDA|||
@@ -94,19 +94,19 @@ fy4-5/suunnat|5|5|4|5|PIDA|Tukivoima neljään eri suuntaan, heliumpallo katossa
 fy4-5/komponentit|5|5|4|5|PIDA|||
 fy4-5/esimerkki|5|5|5|5|PIDA|Komponentit katkoviivalla ja avoimin kärjin, akselit sivussa.||
 fy4-5/virhe|5|5|4|5|PIDA|||
-fy4-5/hissi-a|5|4|3|3|KEVYT|Hissin matkustaja on piirretty kolmella tavalla: paksuviivainen hahmo tässä, ohuempi fy4-5/malli-hississä ja yksityiskohtaisempi fy4-16/kolme-kuvassa. Yksi hahmo kaikkiin.||KEVYT KORJAUS hyväksytty, ryhmä E (opettaja 2026-11-11)
-fy4-5/hissi-b|5|4|3|3|KEVYT|Ks. fy4-5/hissi-a.||KEVYT KORJAUS hyväksytty, ryhmä E (opettaja 2026-11-11)
-fy4-5/hissi-c|5|4|3|3|KEVYT|Ks. fy4-5/hissi-a.||KEVYT KORJAUS hyväksytty, ryhmä E (opettaja 2026-11-11)
-fy4-5/hissi-d|5|4|3|3|KEVYT|Ks. fy4-5/hissi-a.||KEVYT KORJAUS hyväksytty, ryhmä E (opettaja 2026-11-11)
+fy4-5/hissi-a|5|4|3|3|KEVYT|Hissin matkustaja on piirretty kolmella tavalla: paksuviivainen hahmo tässä, ohuempi fy4-5/malli-hississä ja yksityiskohtaisempi fy4-16/kolme-kuvassa. Yksi hahmo kaikkiin.||KEVYT KORJAUS hyväksytty, ryhmä E (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12
+fy4-5/hissi-b|5|4|3|3|KEVYT|Ks. fy4-5/hissi-a.||KEVYT KORJAUS hyväksytty, ryhmä E (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12
+fy4-5/hissi-c|5|4|3|3|KEVYT|Ks. fy4-5/hissi-a.||KEVYT KORJAUS hyväksytty, ryhmä E (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12
+fy4-5/hissi-d|5|4|3|3|KEVYT|Ks. fy4-5/hissi-a.||KEVYT KORJAUS hyväksytty, ryhmä E (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12
 fy4-5/malli-tyonto|5|5|4|5|PIDA|||
 fy4-5/malli-pulkka|5|5|4|5|PIDA|||
-fy4-5/malli-hissi|5|5|4|4|KEVYT|Ks. fy4-5/hissi-a.||KEVYT KORJAUS hyväksytty, ryhmä E (opettaja 2026-11-11)
+fy4-5/malli-hissi|5|5|4|4|KEVYT|Ks. fy4-5/hissi-a.||KEVYT KORJAUS hyväksytty, ryhmä E (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12
 fy4-5/ruutu|5|5|5|5|PIDA|Voimat ruudukolla ja mittakaavajana: kokonaisvoima luettavissa.||
-fy4-5/pick-tasainen|5|4|3|4|KEVYT|Tukivoiman nimi on kappaleen yläreunan ja nuolen päällä.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11)
-fy4-5/pick-pitka|5|4|3|4|KEVYT|Ks. fy4-5/pick-tasainen.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11)
-fy4-5/pick-lisa|5|4|3|4|KEVYT|Ks. fy4-5/pick-tasainen.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11)
-fy4-5/pick-nopeus|5|4|3|4|KEVYT|Ks. fy4-5/pick-tasainen.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11)
-fy4-6/hero|5|4|4|4|KEVYT|Taivaalla on kehystetty pikkukuva laatikosta rampilla ja nuolesta: kuva kuvassa, ainoa laatuaan avauskuvissa. Tilanne näkyy jo rampista.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11)
+fy4-5/pick-tasainen|5|4|3|4|KEVYT|Tukivoiman nimi on kappaleen yläreunan ja nuolen päällä.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12
+fy4-5/pick-pitka|5|4|3|4|KEVYT|Ks. fy4-5/pick-tasainen.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12
+fy4-5/pick-lisa|5|4|3|4|KEVYT|Ks. fy4-5/pick-tasainen.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12
+fy4-5/pick-nopeus|5|4|3|4|KEVYT|Ks. fy4-5/pick-tasainen.||KEVYT KORJAUS hyväksytty, ryhmä A (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12
+fy4-6/hero|5|4|4|4|KEVYT|Taivaalla on kehystetty pikkukuva laatikosta rampilla ja nuolesta: kuva kuvassa, ainoa laatuaan avauskuvissa. Tilanne näkyy jo rampista.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12
 fy4-6/kitka|5|5|5|5|PIDA|Lepokitkan kasvu, enimmäisarvo ja pudotus liikekitkaan yhdessä kuvaajassa.||
 fy4-6/kuorma|5|5|4|5|PIDA|Kitka kuormaan eteenpäin: yleisen virhekäsityksen purkava kuva.||
 fy4-6/kalteva-ydin|5|5|5|5|PIDA|||
@@ -136,14 +136,14 @@ fy4-9/keskivoima|5|5|5|5|PIDA|||KEVYT KORJAUS hyväksytty: yhteinen korjaus, kat
 fy4-9/kimpoaminen|5|5|4|5|PIDA|||
 fy4-9/ex-potku|5|4|4|5|PIDA|||KEVYT KORJAUS hyväksytty: yhteinen korjaus, katselmus (opettaja 2026-11-11); yhteinen korjaus TEHTY ja hyväksytty 2026-11-11
 fy4-9/tarkistus-kolmio|5|4|4|5|PIDA|||KEVYT KORJAUS hyväksytty: yhteinen korjaus, katselmus (opettaja 2026-11-11); yhteinen korjaus TEHTY ja hyväksytty 2026-11-11
-fy4-sovella/fy4-s1-graph|5|4|3|3|KEVYT|Koekuvaajien poikkeava piirrostapa; yksiköt pieninä pystymurtoina; "voide B" -teksti on katkoviivan ja pisteiden päällä.||KEVYT KORJAUS hyväksytty, ryhmä D+F (opettaja 2026-11-11)
-fy4-sovella/fy4-s1-drag|5|4|3|3|KEVYT|Koekuvaajien poikkeava piirrostapa; yksikkö pienenä pystymurtona.||KEVYT KORJAUS hyväksytty, ryhmä D+F (opettaja 2026-11-11)
+fy4-sovella/fy4-s1-graph|5|4|3|3|KEVYT|Koekuvaajien poikkeava piirrostapa; yksiköt pieninä pystymurtoina; "voide B" -teksti on katkoviivan ja pisteiden päällä.||KEVYT KORJAUS hyväksytty, ryhmä D+F (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12
+fy4-sovella/fy4-s1-drag|5|4|3|3|KEVYT|Koekuvaajien poikkeava piirrostapa; yksikkö pienenä pystymurtona.||KEVYT KORJAUS hyväksytty, ryhmä D+F (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12
 fy4-sovella/fy4-s1-fbd|5|4|2|2|UUSI|Voimakuvio on kunnossa, mutta tilannekuvan hiihtäjä on tikku-ukko (pallopää, sininen soikio, viivajalat) ja rinne väritön monikulmio. Sarjan muut ihmiset (fy4-16/esimerkki, fy4-5/hero) ovat piirrettyjä hahmoja, joten tämä erottuu selvästi heikompana.|Piirrä tilannekuvan puolisko uudelleen: laskettelija sivusta laskuasennossa (polvet koukussa, sauvat takana) samalla hahmotyylillä kuin fy4-16/esimerkin pulkkailija (pipo, takki, täytetyt muodot, ohut tummanharmaa ääriviiva). Rinne lumenvalkoisena kiilana, jossa vaalea sininen varjoreuna ja kaltevuuskulma merkittynä kuten fy4-16/esimerkissä. Nopeusnuoli sininen rinteen suuntaan hahmon vieressä. Voimakuvion puolisko säilyy ennallaan.|PIIRRÄ UUDELLEEN (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-11
 fy4-sovella/fy4-s3-collision|5|5|4|5|PIDA|||
 fy4-koe/fy4-k1-graphs|5|4|4|4|PIDA|||
 fy4-koe/fy4-k1-fbd|5|5|4|5|PIDA|||
-fy4-koe/fy4-k1-impulse|5|4|4|3|KEVYT|Koekuvaajien poikkeava piirrostapa (ks. fy1-koe/fy1-k1-walk).||KEVYT KORJAUS hyväksytty, ryhmä D (opettaja 2026-11-11)
-fy4-koe/fy4-k2-graph|5|4|4|3|KEVYT|Ks. fy4-koe/fy4-k1-impulse; yksiköt pystymurtoina.||KEVYT KORJAUS hyväksytty, ryhmä D+F (opettaja 2026-11-11)
+fy4-koe/fy4-k1-impulse|5|4|4|3|KEVYT|Koekuvaajien poikkeava piirrostapa (ks. fy1-koe/fy1-k1-walk).||KEVYT KORJAUS hyväksytty, ryhmä D (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12
+fy4-koe/fy4-k2-graph|5|4|4|3|KEVYT|Ks. fy4-koe/fy4-k1-impulse; yksiköt pystymurtoina.||KEVYT KORJAUS hyväksytty, ryhmä D+F (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12
 fy4-koe/fy4-k3-fbd|5|5|4|5|PIDA|||
-fy4-koe/fy4-k6-graph|5|4|4|3|KEVYT|Ks. fy4-koe/fy4-k1-impulse.||KEVYT KORJAUS hyväksytty, ryhmä D (opettaja 2026-11-11)
-fy4-koe/fy4-k7-pulse|5|4|4|3|KEVYT|Ks. fy4-koe/fy4-k1-impulse; yksikkö pystymurtona.||KEVYT KORJAUS hyväksytty, ryhmä D+F (opettaja 2026-11-11)
+fy4-koe/fy4-k6-graph|5|4|4|3|KEVYT|Ks. fy4-koe/fy4-k1-impulse.||KEVYT KORJAUS hyväksytty, ryhmä D (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12
+fy4-koe/fy4-k7-pulse|5|4|4|3|KEVYT|Ks. fy4-koe/fy4-k1-impulse; yksikkö pystymurtona.||KEVYT KORJAUS hyväksytty, ryhmä D+F (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12

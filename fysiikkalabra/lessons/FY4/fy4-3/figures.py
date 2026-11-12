@@ -204,8 +204,9 @@ def auto():
     """Kaava, first law: a car at constant velocity; on its diagram the road's forward force and the air's drag cancel."""
     f = Fig("fy43-auto", 330, "Kaksi kuvaa autosta, joka ajaa suoralla tiellä tasaisella nopeudella. Vasemmalla tilannekuva: auto ja sen "
             "yllä ohut sininen nuoli v oikealle. Oikealla auton voimakuvio, auto suorakulmiona. Paino G keskipisteestä alas ja tien "
-            "tukivoima N alapinnasta ylös, yhtä pitkinä. Tien voima F renkaisiin lähtee alapinnan etukulmasta eteenpäin, ja "
-            "ilmanvastus F v lähtee auton takasivulta taaksepäin. Vaakasuorat nuolet ovat yhtä pitkät, joten voimat kumoavat toisensa.")
+            "tukivoima N alapinnasta ylös, yhtä pitkinä. Tien voima F renkaisiin lähtee alapinnan etukulmasta eteenpäin. "
+            "Ilmanvastus F v on työntö taaksepäin: nuoli tulee edestä, ja sen kärki on etupinnassa, johon ilma painaa. Vaakasuorat "
+            "nuolet ovat yhtä pitkät, joten voimat kumoavat toisensa.")
     f.tex(150, 24, r"\text{tilannekuva}", "middle", MUTED)
     f.rect(16, 236, 270, 34, "#c9c2b2", None)
     f.line(16, 236, 286, 236, INK, 2.5, cap="round")
@@ -220,12 +221,12 @@ def auto():
     FBD(f, 1).motion(r"\overline{v}", (1, 0), (124, 128), 76)
     f.line(300, 20, 300, 320, RULE, 1.5, "6 6")
     f.tex(450, 24, r"\text{voimakuvio}", "middle", MUTED)
-    cx, cy, w, h = 446, 170, 120, 48
+    cx, cy, w, h = 420, 170, 120, 48
     d = FBD(f, 1.0, body=(cx, cy, w, h), a_dir=(0, 0))
     d.force("G", (0, -96), (cx, cy), "gravity", lab=(20, -6))
     d.force("N", (0, 96), (cx - 22, cy + h / 2), "normal", surface=0, lab=(-22, 6))
     d.force("F", (52, 0), (cx + w / 2, cy + h / 2), "friction", surface=0, lab=(14, 18))
-    d.force("F_v", (-52, 0), (cx - w / 2, cy - 6), "drag", v_rel=(1, 0), tex=r"\overline{F}_\text{v}", lab=(-6, -22))
+    d.force("F_v", (-52, 0), (cx + w / 2, cy - 10), "drag", v_rel=(1, 0), tex=r"\overline{F}_\text{v}", lab=(8, -24), push=True)  # a push from the air ahead, its tip on the front face (fy4-14)
     d.draw()
     return f.svg()
 
@@ -235,8 +236,8 @@ def kone():
     f = Fig("fy43-kone", 330, "Kaksi kuvaa matkustajakoneesta, joka lentää vaakasuoraan tasaisella nopeudella. Vasemmalla tilannekuva: kone "
             "ja sen yllä ohut sininen nuoli v oikealle. Oikealla koneen voimakuvio, kone suorakulmiona. Paino G keskipisteestä alas ja "
             "siipien nostovoima F nosto ylös, yhtä pitkinä. Kahden moottorin työntövoimat F 1 ja F 2 lähtevät rungon etureunasta "
-            "eteenpäin ja ovat yhtä pitkät. Ilmanvastus F v lähtee takareunasta taaksepäin ja on yhtä pitkä kuin työntövoimat "
-            "yhteensä. Vaakasuorat voimat kumoavat toisensa, ja pystysuorat voimat kumoavat toisensa.")
+            "eteenpäin ja ovat yhtä pitkät. Ilmanvastus F v on työntö taaksepäin: nuoli tulee edestä, sen kärki on etureunassa, "
+            "johon ilma painaa, ja se on yhtä pitkä kuin työntövoimat yhteensä. Vaakasuorat voimat kumoavat toisensa, ja pystysuorat voimat kumoavat toisensa.")
     f.tex(150, 24, r"\text{tilannekuva}", "middle", MUTED)
     f.path("M44,214 Q40,196 62,192 L226,190 Q262,188 276,176 L262,214 Q150,230 44,214 Z", grad(f, "fy43k-body", WHITE, COLD_LIGHT), INK, 2.5)
     f.path("M62,192 L48,150 L74,150 L104,192 Z", COLD, INK, 2)                        # tail fin
@@ -246,13 +247,13 @@ def kone():
     FBD(f, 1).motion(r"\overline{v}", (1, 0), (124, 128), 76)
     f.line(300, 20, 300, 320, RULE, 1.5, "6 6")
     f.tex(450, 24, r"\text{voimakuvio}", "middle", MUTED)
-    cx, cy, w, h = 470, 170, 110, 50
+    cx, cy, w, h = 410, 176, 110, 80
     d = FBD(f, 0.8, body=(cx, cy, w, h), a_dir=(0, 0))
     d.force("G", (0, -100), (cx, cy), "gravity", lab=(-22, -6))
-    d.force("F_nosto", (0, 100), (cx + 30, cy), "other", tex=r"\overline{F}_\text{nosto}", lab=(34, -2))
-    d.force("F_1", (48, 0), (cx + w / 2, cy - 12), "applied", tex=r"\overline{F}_1", lab=(14, -20))
-    d.force("F_2", (48, 0), (cx + w / 2, cy + 12), "applied", tex=r"\overline{F}_2", lab=(14, 20))
-    d.force("F_v", (-96, 0), (cx - w / 2, cy), "drag", v_rel=(1, 0), tex=r"\overline{F}_\text{v}", lab=(-8, -22))
+    d.force("F_nosto", (0, 100), (cx - 20, cy), "other", tex=r"\overline{F}_\text{nosto}", lab=(-40, 2))
+    d.force("F_1", (48, 0), (cx + w / 2, cy + 2), "applied", tex=r"\overline{F}_1", lab=(22, -2))
+    d.force("F_2", (48, 0), (cx + w / 2, cy + 30), "applied", tex=r"\overline{F}_2", lab=(22, 4))
+    d.force("F_v", (-96, 0), (cx + w / 2, cy - 28), "drag", v_rel=(1, 0), tex=r"\overline{F}_\text{v}", lab=(-4, -24), push=True)  # a push from the air ahead, its tip on the front face (fy4-14)
     d.draw()
     return f.svg()
 

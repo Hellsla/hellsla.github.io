@@ -160,7 +160,7 @@ Absorptio eli valon imeytyminen on käänteinen tapahtuma. Atomi absorboi fotoni
 Tanskalainen Niels Bohr esitti vuonna 1913 mallin. Mallin mukaan elektroni kiertää protonia ympyräradalla, mutta vain tietyillä sallituilla radoilla. Sallitulla radalla elektroni ei säteile. Klassisen fysiikan mukaan kiertävän varauksen pitäisi menettää energiaa säteilynä, mutta Bohrin mallissa näin ei tapahdu. Valoa syntyy vain, kun elektroni siirtyy radalta toiselle. Fotonin energia on silloin ratojen energioiden erotus. Radan säde kasvaa kuten $n^2$. Perustilan säde on noin $0{,}053\,\text{nm}$. Radan $n = 2$ säde on neljä kertaa ja radan $n = 3$ säde yhdeksän kertaa niin suuri.
 
 <svg data-fig="bohr" viewBox="0 0 600 360" role="img" aria-label="Bohrin malli vetyatomista. Keskellä on ydin eli protoni. Sen ympärillä ovat elektronin sallitut ympyräradat n = 1, 2 ja 3. Ratojen säteet ovat mittakaavassa suhteessa 1 : 4 : 9. Elektroni siirtyy radalta n = 3 radalle n = 2, ja atomista lähtee fotoni. Fotonin energia hf on tasojen energioiden erotus E3 − E2." style="max-width:100%;font-size:24px">
-  <circle cx="186" cy="180" r="16" fill="none" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="186" cy="180" r="16" fill="none" stroke="#6b7480" stroke-width="2"/>
   <circle cx="186" cy="180" r="64" fill="none" stroke="#6b7480" stroke-width="2"/>
   <circle cx="186" cy="180" r="144" fill="none" stroke="#6b7480" stroke-width="2"/>
   <circle cx="186" cy="180" r="7" fill="#c92a2a" stroke="#1f2933" stroke-width="2"/>
@@ -175,7 +175,8 @@ Tanskalainen Niels Bohr esitti vuonna 1913 mallin. Mallin mukaan elektroni kiert
   <foreignObject x="398" y="221.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$hf = E_3 - E_2$</div></foreignObject>
   <foreignObject x="163.5" y="213.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$n = 2$</div></foreignObject>
   <foreignObject x="163.5" y="281.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$n = 3$</div></foreignObject>
-  <line x1="174" y1="169" x2="74" y2="58" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="174.5" y1="168.5" x2="74" y2="58" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <circle cx="174.5" cy="168.5" r="3" fill="#6b7480"/>
   <foreignObject x="16" y="25.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$n = 1$</div></foreignObject>
   <foreignObject x="207" y="169.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$p^+$</div></foreignObject>
 </svg>

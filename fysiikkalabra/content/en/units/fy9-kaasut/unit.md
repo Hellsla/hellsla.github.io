@@ -176,7 +176,7 @@ The problems of this lesson revolve around one quantity: **pressure is the force
 
 The gas problems of the exam need two checks before the numbers. **The temperature in kelvins**, because the gas laws are proportionalities that start from absolute zero. **The total pressure**, because a pressure gauge usually shows only the gauge pressure, and the particles of the gas produce the whole pressure.
 
-<svg data-fig="kartta" viewBox="0 0 380 596" role="img" aria-label="Concept map. At the top the node pressure: p = F / A. Three branches go down from it. Liquid: pressure at depth p = p0 + ρ g h, gauge pressure ρ g h and total pressure, which is the air pressure and the gauge pressure together. Gas: the ideal gas law p V = n R T, the combined gas law p1 V1 / T1 = p2 V2 / T2 and the kelvin temperature T = θ + 273.15 K. Heat engine: work done by a gas W = p ΔV, conservation of energy W = Q1 − Q2 and efficiency eta = W / Q1." style="max-width:min(100%,440px);font-size:21px">
+<svg data-fig="kartta" viewBox="0 0 380 596" role="img" aria-label="Concept map. At the top the node pressure: p = F / A. Three branches go down from it. Liquid: pressure at depth p = p0 + ρ g h, gauge pressure ρ g h and total pressure, which is the air pressure and the gauge pressure together. Gas: the ideal gas law p V = n R T, the combined gas law p V / T = constant and the kelvin temperature T = θ + 273.15 K. Heat engine: work done by a gas W = p ΔV, conservation of energy W = Q1 − Q2 and efficiency eta = W / Q1." style="max-width:min(100%,440px);font-size:21px">
   <line x1="24" y1="80" x2="24" y2="454" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
   <foreignObject x="142.5" y="16.5" width="95" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:21px">$\text{pressure}$</div></foreignObject>
@@ -197,7 +197,7 @@ The gas problems of the exam need two checks before the numbers. **The temperatu
   <line x1="54" y1="308" x2="362" y2="308" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="58" y="319.5" width="74" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$pV = nRT$</div></foreignObject>
   <foreignObject x="257" y="322" width="105" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{ideal gas law}$</div></foreignObject>
-  <foreignObject x="58" y="353.5" width="172" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$p_1V_1/T_1 = p_2V_2/T_2$</div></foreignObject>
+  <foreignObject x="58" y="353.5" width="150" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$pV/T = \text{constant}$</div></foreignObject>
   <foreignObject x="292" y="356" width="70" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{same gas}$</div></foreignObject>
   <foreignObject x="58" y="387.5" width="139" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$T = \theta + 273.15\,\text{K}$</div></foreignObject>
   <foreignObject x="292" y="390" width="70" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{kelvins}$</div></foreignObject>
@@ -205,7 +205,7 @@ The gas problems of the exam need two checks before the numbers. **The temperatu
   <rect x="44" y="432" width="328" height="150" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
   <foreignObject x="58" y="441.5" width="128" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\textbf{heat engine}$</div></foreignObject>
   <line x1="54" y1="474" x2="362" y2="474" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="485.5" width="84" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$W_\text{g} = p\,\Delta V$</div></foreignObject>
+  <foreignObject x="58" y="485.5" width="74" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$W = p\,\Delta V$</div></foreignObject>
   <foreignObject x="239" y="488" width="123" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{work done by gas}$</div></foreignObject>
   <foreignObject x="58" y="519.5" width="84" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$W = Q_1 - Q_2$</div></foreignObject>
   <foreignObject x="248" y="522" width="114" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{conservation}$</div></foreignObject>
@@ -248,62 +248,62 @@ The opening question is answered with these two checks. In the warm garage ($+20
 
 ### Pressure and pressure in a liquid
 
-```latex
-p = \frac{F}{A}
+```kaavat
+pressure caused by a force :: p = \frac{F}{A}
 ```
 
 where $p$ is the pressure (Pa), $F$ the force perpendicular to the surface (N) and $A$ the area (m²). In a liquid at rest, at the depth $h$
 
-```latex
-p = p_0 + \rho g h
+```kaavat
+hydrostatic pressure :: p = \rho g h
 ```
 
-where $p_0$ is the pressure at the surface, usually the air pressure of about $101\,\text{kPa}$, $\rho$ the density of the liquid (kg/m³) and $g = 9.81\,\text{m/s}^2$. The term $\rho g h$ is the gauge pressure, and it depends only on the depth and the density, not on the shape of the container. The force caused by pressure is always perpendicular to the surface.
+where $\rho$ is the density of the liquid (kg/m³) and $g = 9.81\,\text{m/s}^2$. The hydrostatic pressure is the gauge pressure, and it depends only on the depth and the density, not on the shape of the container. The total pressure at the depth $h$ is $p_0 + \rho g h$, where $p_0$ is the pressure at the surface, usually the air pressure of about $101\,\text{kPa}$. The force caused by pressure is always perpendicular to the surface.
 
 ### The state of a gas
 
-```latex
-pV = nRT
+```kaavat
+ideal gas law :: pV = nRT
 ```
 
 where $V$ is the volume (m³), $n$ the amount of substance (mol), $R = 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$ and $T$ the temperature in kelvins. The amount of substance is obtained from the mass, $n = m/M$, where $M$ is the molar mass. The equation holds for a dilute gas, when the pressure is not very high and the temperature not very low. When the amount of gas stays the same,
 
-```latex
-\frac{p_1 V_1}{T_1} = \frac{p_2 V_2}{T_2}
+```kaavat
+combined gas law (constant amount of gas) :: \frac{pV}{T} = \text{constant}
 ```
 
-and from it follow the special cases: at constant temperature Boyle's law $p_1V_1 = p_2V_2$, at constant pressure $V \propto T$ and at constant volume $p \propto T$. The kelvin temperature is
+that is, for two states $\tfrac{p_1 V_1}{T_1} = \tfrac{p_2 V_2}{T_2}$. From it follow the special cases: at constant temperature Boyle's law $p_1V_1 = p_2V_2$, at constant pressure $V \propto T$ and at constant volume $p \propto T$. The kelvin temperature is
 
-```latex
-T = \theta + 273.15\,\text{K}
+```kaavat
+temperature in kelvins :: T = \theta + 273.15\,\text{K}
 ```
 
 where $\theta$ is the numerical value of the Celsius temperature. In an experiment, absolute zero is obtained by extending the $(\theta, p)$ or $(\theta, V)$ line to zero. It is a prediction of the model: a real gas condenses into a liquid before that.
 
 ### Work done by a gas and the heat engine
 
-A gas expanding at constant pressure does the work
+A gas expanding at constant pressure does work, and work is done on a compressed gas:
 
-```latex
-W_\text{g} = p\,\Delta V
+```kaavat
+work done by an expanding gas / on a compressed gas :: W = p\Delta V
 ```
 
-where $\Delta V$ is the change in volume (m³); the work is the area under the ($V$, $p$) graph. By the first law of thermodynamics the internal energy of the gas changes by
+where $\Delta V$ is the magnitude of the change in volume (m³); the work is the area under the ($V$, $p$) graph. By the first law of thermodynamics the internal energy of the gas changes by
 
-```latex
-\Delta U = Q - W_\text{g}
+```kaavat
+first law of thermodynamics :: \Delta U = Q + W
 ```
 
-where $Q$ is the heat transferred to the gas (J) and $W_\text{g}$ the work done by the gas. In one cycle a heat engine takes the heat $Q_1$ from a hot source, does the work $W$ and gives the heat $Q_2$ to a colder environment. Energy is conserved, so
+where $Q$ is the heat transferred to the gas (J) and $W$ the work done on the gas (J). In a compression $W = p\Delta V$ is positive. An expanding gas itself does the work $p\Delta V$, so then $W = -p\Delta V$ and the internal energy decreases by this amount. In one cycle a heat engine takes the heat $Q_1$ from a hot source, does the work $W$ and gives the heat $Q_2$ to a colder environment. Energy is conserved, so
 
-```latex
-W = Q_1 - Q_2
+```kaavat
+work done by a heat engine :: W = Q_1 - Q_2
 ```
 
 and the efficiency is
 
-```latex
-\eta = \frac{W}{Q_1}
+```kaavat
+efficiency of a heat engine :: \eta = \frac{W}{Q_1}
 ```
 
 Part of the heat must always be given to a colder place, so the efficiency of a heat engine stays well below $100\,\%$. The smaller the temperature difference $T_1 - T_2$ is compared with the temperature $T_1$ of the hot source, the smaller the share of the heat the engine can turn into work. In a power plant the same is calculated from powers: the electrical power divided by the fuel power.

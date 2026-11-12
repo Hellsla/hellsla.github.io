@@ -116,7 +116,7 @@
 
 The phenomena of the module are connected with two fields. A **magnetic field** $\overline{B}$ exerts a force only on a moving charge and on a current-carrying wire, and the force is perpendicular to both the motion and the field. A **changing magnetic flux** produces a voltage: the generator, the transformer, the induction hob and the eddy-current brake are based on this. When the electric and magnetic fields change and produce each other, an **electromagnetic wave** forms, and its visible part is light.
 
-<svg data-fig="kartta" viewBox="0 0 380 704" role="img" aria-label="Concept map. At the top the node magnetic field: magnetic flux density B and magnetic flux phi = B A. Three branches lead down from it. Forces in a field, moving charge: magnetic force F = q v B sine alpha, force on a current-carrying wire F = I l B sine alpha and field of a straight wire B = mu zero I over 2 pi r. Induction, changing flux: law of induction e = minus N delta phi over delta t, peak voltage of a generator e 0 = N B A times 2 pi f and transformer U 1 over U 2 = N 1 over N 2. Light, electromagnetic wave: law of refraction n 1 sine alpha 1 = n 2 sine alpha 2, grating equation d sine theta = k lambda and Malus&#x27;s law I = I 0 times cosine squared theta." style="max-width:100%;font-size:20px">
+<svg data-fig="kartta" viewBox="0 0 380 704" role="img" aria-label="Concept map. At the top the node magnetic field: magnetic flux density B and magnetic flux phi = B A. Three branches lead down from it. Forces in a field, moving charge: magnetic force F M = Q v B perpendicular, force on a current-carrying wire F M = I l B perpendicular and field of a straight wire B = mu zero I over 2 pi r. Induction, changing flux: law of induction e = minus N delta phi over delta t, peak voltage of a generator u 0 = N A B times 2 pi f and transformer N 1 over N 2 = U 1 over U 2. Light, electromagnetic wave: law of refraction sine alpha 1 over sine alpha 2 = n 2 over n 1, grating equation d sine alpha = n lambda and Malus&#x27;s law I = I 0 times cosine squared theta." style="max-width:100%;font-size:20px">
   <line x1="24" y1="80" x2="24" y2="530" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="2.5"/>
   <foreignObject x="118.5" y="18" width="143" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\text{magnetic field}$</div></foreignObject>
@@ -126,9 +126,9 @@ The phenomena of the module are connected with two fields. A **magnetic field** 
   <foreignObject x="58" y="110" width="164" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{forces in a field}$</div></foreignObject>
   <foreignObject x="230" y="112" width="132" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{motion, current}$</div></foreignObject>
   <line x1="54" y1="142" x2="362" y2="142" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="156" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$F = qvB\sin\alpha$</div></foreignObject>
+  <foreignObject x="58" y="156" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$F_\text{M} = QvB_\perp$</div></foreignObject>
   <foreignObject x="301" y="158" width="61" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{charge}$</div></foreignObject>
-  <foreignObject x="58" y="208" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$F = IlB\sin\alpha$</div></foreignObject>
+  <foreignObject x="58" y="208" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$F_\text{M} = I\ell B_\perp$</div></foreignObject>
   <foreignObject x="319" y="210" width="43" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{wire}$</div></foreignObject>
   <foreignObject x="58" y="260" width="122" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$B = \mu_0 I/(2\pi r)$</div></foreignObject>
   <foreignObject x="248" y="262" width="114" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{field of a wire}$</div></foreignObject>
@@ -139,18 +139,18 @@ The phenomena of the module are connected with two fields. A **magnetic field** 
   <line x1="54" y1="346" x2="362" y2="346" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="58" y="360" width="112" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$e = -N\,\Delta\Phi/\Delta t$</div></foreignObject>
   <foreignObject x="230" y="362" width="132" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{law of induction}$</div></foreignObject>
-  <foreignObject x="58" y="412" width="112" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$e_0 = NBA \cdot 2\pi f$</div></foreignObject>
+  <foreignObject x="58" y="412" width="112" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$u_0 = NAB \cdot 2\pi f$</div></foreignObject>
   <foreignObject x="274" y="414" width="88" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{generator}$</div></foreignObject>
-  <foreignObject x="58" y="464" width="122" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$U_1/U_2 = N_1/N_2$</div></foreignObject>
+  <foreignObject x="58" y="464" width="122" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$N_1/N_2 = U_1/U_2$</div></foreignObject>
   <foreignObject x="257" y="466" width="105" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{transformer}$</div></foreignObject>
   <line x1="24" y1="530" x2="44" y2="530" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="44" y="508" width="328" height="188" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
   <foreignObject x="58" y="518" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{light}$</div></foreignObject>
   <foreignObject x="301" y="520" width="61" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{EM wave}$</div></foreignObject>
   <line x1="54" y1="550" x2="362" y2="550" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="556" width="111" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$n_1\sin\alpha_1 = n_2\sin\alpha_2$</div></foreignObject>
+  <foreignObject x="58" y="556" width="130" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$\sin\alpha_1/\sin\alpha_2 = n_2/n_1$</div></foreignObject>
   <foreignObject x="266" y="579" width="96" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{refraction}$</div></foreignObject>
-  <foreignObject x="58" y="616" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$d\sin\theta = k\lambda$</div></foreignObject>
+  <foreignObject x="58" y="616" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$d\sin\alpha = n\lambda$</div></foreignObject>
   <foreignObject x="292" y="618" width="70" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{grating}$</div></foreignObject>
   <foreignObject x="58" y="668" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$I = I_0\cos^2\theta$</div></foreignObject>
   <foreignObject x="248" y="670" width="114" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{polarisation}$</div></foreignObject>
@@ -183,17 +183,15 @@ This gives the answer to the opening question. A power of $40\,\text{kW}$ is tra
 
 ### Magnetic field and forces
 
-```latex
-\begin{aligned}
-F &= qvB\sin\alpha \\
-r &= \frac{mv}{qB} \\
-F &= IlB\sin\alpha \\
-B &= \frac{\mu_0 I}{2\pi r} \\
-B &= \mu_0 \frac{NI}{l}
-\end{aligned}
+```kaavat
+magnetic force on a charged particle :: F_\text{M} = QvB_\perp
+radius of a charged particle's circular path in a magnetic field :: r = \frac{mv}{QB}
+magnetic force on a straight conductor :: F_\text{M} = I\ell B_\perp
+magnetic flux density of a straight current-carrying wire :: B = \frac{\mu_0 I}{2\pi r}
+magnetic flux density of a long solenoid :: B = N\,\frac{\mu_0}{\ell}\,I
 ```
 
-where $q$ is the charge ($\text{C}$), $v$ the speed ($\text{m/s}$), $B$ the magnetic flux density ($\text{T}$), $\alpha$ the angle between the velocity or the wire and the field, $m$ the mass ($\text{kg}$), $r$ the radius of the circular path or the distance from the wire ($\text{m}$), $I$ the current ($\text{A}$), $l$ the length of the wire or the coil ($\text{m}$), $N$ the number of turns and $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$. The formula for the radius holds when the velocity is perpendicular to a uniform field and small compared with the speed of light. The magnetic force does not change the speed. The formula for the wire holds for a long straight wire, and the formula for the coil at the middle of a long coil.
+where $F_\text{M}$ is the magnetic force ($\text{N}$), $Q$ the charge ($\text{C}$), $v$ the speed ($\text{m/s}$), $B$ the magnetic flux density ($\text{T}$), $B_\perp = B\sin\alpha$ its component perpendicular to the velocity or the wire, when $\alpha$ is the angle between the velocity or the wire and the field, $m$ the mass ($\text{kg}$), $r$ the radius of the circular path or the distance from the wire ($\text{m}$), $I$ the current ($\text{A}$), $\ell$ the length of the wire or the coil ($\text{m}$), $N$ the number of turns and $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$. The formula for the radius holds when the velocity is perpendicular to a uniform field and small compared with the speed of light. The magnetic force does not change the speed. The formula for the wire holds for a long straight wire, and the formula for the coil at the middle of a long coil.
 
 <svg data-fig="ympyra" viewBox="0 0 600 420" role="img" aria-label="Diagram: a positive particle in a uniform magnetic field pointing into the paper (green crosses). The path of the particle is a dashed circle, which it goes round anticlockwise. At four points of the path a blue velocity arrow is along the path and a red arrow of the magnetic force points to the centre of the circle, perpendicular to the velocity. The radius r is marked from the centre to the path." style="max-width:100%;font-size:24px">
   <line x1="33" y1="27" x2="47" y2="41" stroke="#2b8a3e" stroke-width="2.4" stroke-linecap="butt"/>
@@ -289,32 +287,28 @@ where $q$ is the charge ($\text{C}$), $v$ the speed ($\text{m/s}$), $B$ the magn
 
 ### Induction and alternating current
 
-```latex
-\begin{aligned}
-e &= -N\frac{\Delta\Phi}{\Delta t} \\
-e_0 &= NBA \cdot 2\pi f \\
-U &= \frac{U_0}{\sqrt{2}} \\
-\frac{U_1}{U_2} &= \frac{N_1}{N_2} = \frac{I_2}{I_1} \\
-P_\text{h} &= RI^2
-\end{aligned}
+```kaavat
+voltage induced in a coil :: e = -N\frac{\Delta\Phi}{\Delta t}
+peak value of the sinusoidal voltage induced in a generator coil :: u_0 = NAB\cdot 2\pi f
+rms value of a sinusoidal alternating voltage :: U_\text{eff} = \frac{u_0}{\sqrt{2}}
+transformer :: \frac{N_1}{N_2} = \frac{U_1}{U_2} \approx \frac{I_2}{I_1}
+power loss in a transmission line :: P_\text{h} = RI^2
 ```
 
-where $e$ is the induced voltage ($\text{V}$), $\Phi = BA$ the magnetic flux ($\text{Wb}$) when the field is perpendicular to the surface $A$, $e_0$ the peak value of the generator voltage, $f$ the rotation frequency ($\text{Hz}$), $U$ and $U_0$ the rms value and the peak value, the indices $1$ and $2$ the primary and secondary side of the transformer, and $P_\text{h}$ the power loss of the transmission line when $I = \tfrac{P}{U}$. The minus sign is Lenz's law: the induced current opposes the change of flux. The voltage of a rod moving in a field is $e = vBl$. The transformer equation applies to an ideal transformer and an alternating voltage.
+where $e$ is the induced voltage ($\text{V}$), $\Phi = BA$ the magnetic flux ($\text{Wb}$) when the field is perpendicular to the surface $A$, $u_0$ the peak value of the generator voltage, $f$ the rotation frequency ($\text{Hz}$), $U_\text{eff}$ and $u_0$ the rms value and the peak value, the indices $1$ and $2$ the primary and secondary side of the transformer, and $P_\text{h}$ the power loss of the transmission line when $I = \tfrac{P}{U}$. The minus sign is Lenz's law: the induced current opposes the change of flux. The voltage of a rod moving in a field is $e = vBl$. The transformer equation applies to an alternating voltage; the ratio of the currents is an equality only in an ideal, lossless transformer.
 
 ### Light
 
-```latex
-\begin{aligned}
-c &= f\lambda \\
-\lambda_\text{max} T &= b \\
-n_1\sin\alpha_1 &= n_2\sin\alpha_2 \\
-\sin\alpha_\text{r} &= \frac{n_2}{n_1} \\
-d\sin\theta &= k\lambda \\
-I &= I_0\cos^2\theta
-\end{aligned}
+```kaavat
+wave equation :: c = f\lambda
+Wien's displacement law :: \lambda_\text{max} = \frac{b}{T}
+law of refraction (Snell's law) :: \frac{\sin\alpha_1}{\sin\alpha_2} = \frac{v_1}{v_2} = \frac{n_2}{n_1}
+critical angle of total internal reflection :: \sin\alpha_\text{r} = \frac{n_2}{n_1}
+grating equation :: d\sin\alpha = n\lambda
+Malus's law :: I = I_0\cos^2\theta
 ```
 
-where $c = 3.00 \cdot 10^8\,\text{m/s}$, $f$ is the frequency, $\lambda$ the wavelength, $T$ the absolute temperature ($\text{K}$), $b = 2.898 \cdot 10^{-3}\,\text{m} \cdot \text{K}$, $n = \tfrac{c}{v}$ the refractive index, $\alpha$ the angles from the normal, $\alpha_\text{r}$ the critical angle when $n_1 > n_2$, $d$ the grating constant, $\theta$ the direction of a maximum of the grating, $k = 0, 1, 2, \ldots$ and $I_0$ the intensity of the polarised light before the analyser. In Malus's law $\theta$ is the angle between the direction of polarisation and the transmission axis of the analyser. In a thin film the path difference is $2nd$ when the light arrives almost perpendicularly. When only one of the reflections inverts the wave, $2nd = \left(k + \tfrac12\right)\lambda$ gives constructive interference; when both invert it, $2nd = k\lambda$.
+where $c = 3.00 \cdot 10^8\,\text{m/s}$, $f$ is the frequency, $\lambda$ the wavelength, $T$ the absolute temperature ($\text{K}$), $b = 2.898 \cdot 10^{-3}\,\text{m} \cdot \text{K}$, $n = \tfrac{c}{v}$ the refractive index and $v$ the speed of light in the material, $\alpha_1$ and $\alpha_2$ the angles of incidence and refraction from the normal, $\alpha_\text{r}$ the critical angle when $n_1 > n_2$, $d$ the grating constant, in the grating equation $\alpha$ the direction of a maximum and $n = 0, 1, 2, \ldots$ its order, and $I_0$ the intensity of the polarised light before the analyser. In Malus's law $\theta$ is the angle between the direction of polarisation and the transmission axis of the analyser. In a thin film the path difference is $2nd$ when the light arrives almost perpendicularly. When only one of the reflections inverts the wave, $2nd = \left(k + \tfrac12\right)\lambda$ gives constructive interference; when both invert it, $2nd = k\lambda$.
 
 ## Common mistakes {Virheet}
 

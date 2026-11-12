@@ -208,8 +208,8 @@ def doppler():
             "Kuulija liikkuu vasemmalle kohti lähdettä, mitä esittää sininen nopeusnuoli; aallonpituus lambda on sama "
             "kaikkiin suuntiin.")
     vT, vsT = 46.0, 18.4
-    f.defs_add('<clipPath id="fy514-clip1"><rect x="26" y="34" width="548" height="140"/></clipPath>'
-               '<clipPath id="fy514-clip2"><rect x="26" y="236" width="548" height="144"/></clipPath>')
+    f.defs_add('<clipPath id="fy514-clip1"><rect x="66" y="34" width="478" height="140"/></clipPath>'
+               '<clipPath id="fy514-clip2"><rect x="26" y="262" width="548" height="118"/></clipPath>')   # below the panel's title
     # top: moving source
     xs, ys = 300, 120
     g = []
@@ -220,8 +220,8 @@ def doppler():
     speaker(f, xs, ys, 0.9)
     f.arrow(xs + 14, ys - 40, xs + 76, ys - 40, VEL, 3, 14)
     f.tex(xs + 84, ys - 40, r"\overline{v}_\text{s}", "start", color=VEL)
-    person(f, 566, ys + 34, 0.8); f.tex(566, 160 + 8, r"\text{A}", "middle")
-    person(f, 34, ys + 34, 0.8); f.tex(34, 160 + 8, r"\text{B}", "middle")
+    H.person(f, 566, ys + 34, IRON, INK, 0.2); f.tex(566, 160 + 8, r"\text{A}", "middle")   # drawn people as in the lessons
+    H.person(f, 34, ys + 34, IRON, INK, 0.2); f.tex(34, 160 + 8, r"\text{B}", "middle")
     ra = [xs - m * vsT + m * vT for m in (2, 3)]
     rb = [xs - m * vsT - m * vT for m in (2, 3)]
     bracket(f, ra[0], ra[1], 184, r"\lambda_\text{A}")
@@ -232,8 +232,8 @@ def doppler():
     g = [f'<circle cx="{xs2}" cy="{ys2}" r="{n(m * vT)}" fill="none" stroke="{MUTED}" stroke-width="2"/>' for m in range(1, 8)]
     f.add(f'<g clip-path="url(#fy514-clip2)">{"".join(g)}</g>')
     speaker(f, xs2, ys2, 0.9)
-    xl = 496
-    person(f, xl, ys2 + 34, 0.8)
+    xl = 483                                                      # between two wavefronts
+    H.person(f, xl, ys2 + 34, IRON, INK, 0.2)
     f.arrow(xl - 14, ys2 - 50, xl - 76, ys2 - 50, VEL, 3, 14)
     f.tex(xl - 84, ys2 - 50, r"\overline{v}_\text{h}", "end", color=VEL)
     bracket(f, xs2 + 3 * vT, xs2 + 4 * vT, 384, r"\lambda", up=False)
@@ -281,7 +281,8 @@ def beats_task():
 def hero():
     """The chapter's opening illustration: an ambulance with its siren on passes a pedestrian at a crossing."""
     f = H.hero("fy514-hero", "Kuvitus: kaupungin katu kesäpäivänä. Valkoinen ambulanssi, jonka katolla palaa sininen hälytysvalo, "
-               "ajaa kadulla vasemmalta oikealle. Oikealla jalkakäytävällä suojatien vieressä seisoo jalankulkija, jonka ohi "
+               "ajaa kadulla vasemmalta oikealle. Sireenistä leviää ääni kaarina, jotka ovat auton edessä tiheässä ja sen takana "
+               "harvassa. Oikealla jalkakäytävällä suojatien vieressä seisoo jalankulkija, jonka ohi "
                "ambulanssi on juuri ajamassa. Taustalla on taloja ja koivu.")
     H.sky(f, "fy514h", 420)
     H.cloud(f, 220, 110, 0.8); H.cloud(f, 860, 80, 0.6)
@@ -294,6 +295,13 @@ def hero():
     f.rect(0, 462, 1200, 138, IRON)
     for k in range(6): f.rect(860 + 0 * k, 476 + 20 * k, 140, 10, WHITE, extra='fill-opacity="0.9"')
     for k in range(8): f.rect(40 + 150 * k, 586, 80, 6, WHITE, extra='fill-opacity="0.8"')
+    # the siren's wavefronts: each crest left the siren from an earlier place (the van moves right at 0,4 times the
+    # speed of sound, as in the doppler figure), so they crowd in front of the van and spread out behind it
+    sx, sy, lam, vs = 360 + 155, 568 - 196, 100.0, 40.0   # the siren on the van's roof (x, yb below)
+    f.defs_add('<clipPath id="fy514h-clip"><rect x="0" y="0" width="1200" height="458"/></clipPath>')
+    rings = [f'<circle cx="{n(sx - m * vs)}" cy="{sy}" r="{n(m * lam)}" fill="none" stroke="{COLD}" stroke-width="5" '
+             f'stroke-opacity="{n(0.6 - 0.05 * m)}"/>' for m in range(1, 9)]
+    f.add('<g clip-path="url(#fy514h-clip)">' + "".join(rings) + "</g>")
     # ambulance
     x, yb = 360, 568
     f.path(f"M{x},{yb} V{yb - 150} Q{x},{yb - 168} {x + 18},{yb - 168} H{x + 300} L{x + 360},{yb - 110} Q{x + 380},{yb - 100} {x + 380},{yb - 80} V{yb} Z",

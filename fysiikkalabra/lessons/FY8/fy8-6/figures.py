@@ -189,6 +189,9 @@ def hero():
                "kytkentälevylle. Levyllä on rinnakkain neljä LEDiä samassa jännitteessä. Punainen ja keltainen LED loistavat "
                "kirkkaasti ja lähettävät valoaan aaltoviivoina, vihreä hehkuu himmeästi, ja sininen LED on pimeä.")
     H.tiles(f, 440, 75, RULE_LIGHT, "#f6f1e6")
+    f.rect(0, 440, 1200, 160, H.grad(f, "fy86h-floor", RULE_LIGHT, RULE, y1=440, y2=600))   # the floor under the table
+    f.add(f'<ellipse cx="85" cy="582" rx="30" ry="5" fill="{MUTED}" fill-opacity="0.3"/>')
+    f.add(f'<ellipse cx="1115" cy="582" rx="30" ry="5" fill="{MUTED}" fill-opacity="0.3"/>')
     H.wood(f, 30, 440, 1140, 40, "fy86h-table")
     f.rect(70, 480, 30, 100, IRON, INK, 3); f.rect(1100, 480, 30, 100, IRON, INK, 3)
     # adjustable power supply: case, a dark display with bars, a knob, two terminals

@@ -118,10 +118,10 @@ def setup():
     arc(f, cx, cy, 62, -be, 0)
     f.tex(cx + 92, cy - 28, r"\beta", "middle")
     # labels
-    f.tex(cx - 72, cy + 100, r"\text{kappale}", "middle", MUTED)
+    f.tex(cx - 50, cy + 80, r"\text{kappale}", "middle", MUTED)
     f.tex(cx + 110, cy + 90, r"\text{ilma}", "middle", MUTED)
-    f.tex(cx + 30, cy + 22, r"\text{normaali}", "start", MUTED, size=20)
-    f.tex(sx - 20, sy + 42, r"\text{laser}", "middle", MUTED, size=20)
+    f.tex(cx + 30, cy + 26, r"\text{normaali}", "start", MUTED)
+    f.tex(sx - 20, sy + 54, r"\text{laser}", "middle", MUTED)
     return f.svg()
 
 

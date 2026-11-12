@@ -93,12 +93,12 @@ def cannon():
             "yläpuolelta kolmella nopeudella. Radat on laskettu gravitaatiolaista. Liian pienellä nopeudella rata kaartuu "
             "jyrkemmin kuin ympyrä ja osuu Maahan. Ympyräradan nopeudella kappale kiertää lähtöpisteen etäisyydellä "
             "pysyvää ympyrää. Suuremmalla nopeudella rata kaartuu loivemmin, ja kappale loittonee kauemmas ja palaa "
-            "lähtöpisteeseen.")
-    cx, cy, R0 = 236, 186, 116           # the Earth's centre and the launch radius in the figure
+            "lähtöpisteeseen. Tämä rata on ellipsi, jonka Maata lähin piste on lähtöpiste.")
+    cx, cy, R0 = 236, 162, 92            # the Earth's centre and the launch radius in the figure (the launch point stays at y 70)
     r0 = 1.0e7; sc = R0 / r0
     earth_disc(f, "fy56c", cx, cy, 0.62 * R0)
     f.tex(cx, cy, r"\text{Maa}", "middle")
-    styles = ((0.82, MUTED, "8 6"), (1.0, INK, None), (1.07, GOOD, "2 5"))
+    styles = ((0.82, MUTED, "8 6"), (1.0, INK, None), (1.17, GOOD, "2 5"))   # 1.17: e = k² − 1 ≈ 0,37, so the ellipse reads as one
     for k, col, dash in styles:
         pts = path(k, r0)
         d = " ".join(f"{n(cx + x * sc)},{n(cy - y * sc)}" for x, y in pts[::10] + [pts[-1]])

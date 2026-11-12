@@ -411,7 +411,7 @@
 
 Moduulin ilmiöt yhdistää **kvantittunut energia**. Valo vaihtaa energiaa aineen kanssa fotoneina, joiden energia on $E = hf$, ja yksi fotoni luovuttaa energiansa yhdelle elektronille. Atomin elektronit ja ytimen nukleonit voivat olla vain tietyissä energiatiloissa, joten siirtymissä syntyy tai katoaa tietyn energian fotoni. Elektronien tasojen erot ovat elektronivoltteja, ytimen tasojen ja ydinreaktioiden energiat miljoonia elektronivoltteja. Ytimessä massa ja energia liittyvät toisiinsa: $E = mc^2$.
 
-<svg data-fig="kartta" viewBox="0 0 380 744" role="img" aria-label="Käsitekartta. Ylhäällä solmu kvantittunut energia: fotonin energia E = h f ja massan ja energian yhteys E = m c toiseen. Siitä lähtee alas kolme haaraa. Fotoni ja atomi, elektronivolttien maailma: valosähköinen yhtälö h f = W + E k max, spektriviivan fotoni h f = E y miinus E a ja LEDin kynnysjännite e U k likimain h f. Ydin, megaelektronivolttien maailma: hajoamislaki N = N 0 kertaa puoli potenssiin t per T puoli, aktiivisuus A = lambda N ja reaktioenergia Q = massojen erotus kertaa c toiseen. Säteily ja ihminen, annos: absorboitunut annos D = E per m, ekvivalenttiannos H T = w R kertaa D T ja etäisyyden neliölaki. Alareunassa kaikkia haaroja yhdistävä ohje: ensin yksi hiukkanen, sitten lukumäärä." style="max-width:min(100%,420px);font-size:20px">
+<svg data-fig="kartta" viewBox="0 0 380 744" role="img" aria-label="Käsitekartta. Ylhäällä solmu kvantittunut energia: fotonin energia E = h f ja massan ja energian yhteys E = m c toiseen. Siitä lähtee alas kolme haaraa. Fotoni ja atomi, elektronivolttien maailma: valosähköinen yhtälö h f = W + E k max, spektriviivan fotoni h f = E y miinus E a ja LEDin kynnysjännite e U k likimain h f. Ydin, megaelektronivolttien maailma: hajoamislaki N = N 0 kertaa e potenssiin miinus lambda t, aktiivisuus A = lambda N ja reaktioenergia E = massaero kertaa c toiseen. Säteily ja ihminen, annos: absorboitunut annos D = E per m, ekvivalenttiannos H = w R kertaa D ja etäisyyden neliölaki. Alareunassa kaikkia haaroja yhdistävä ohje: ensin yksi hiukkanen, sitten lukumäärä." style="max-width:min(100%,420px);font-size:20px">
   <line x1="24" y1="80" x2="24" y2="530" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
   <foreignObject x="87" y="18" width="206" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\text{kvantittunut energia}$</div></foreignObject>
@@ -432,11 +432,11 @@ Moduulin ilmiöt yhdistää **kvantittunut energia**. Valo vaihtaa energiaa aine
   <foreignObject x="58" y="314" width="60" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{ydin}$</div></foreignObject>
   <foreignObject x="327" y="316" width="35" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{MeV}$</div></foreignObject>
   <line x1="54" y1="346" x2="362" y2="346" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="361" width="167" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$N = N_0 \left(\tfrac12\right)^{t/T_{1/2}}$</div></foreignObject>
+  <foreignObject x="58" y="360" width="91" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$N = N_0 e^{-\lambda t}$</div></foreignObject>
   <foreignObject x="266" y="362" width="96" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{hajoaminen}$</div></foreignObject>
   <foreignObject x="58" y="412" width="50" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$A = \lambda N$</div></foreignObject>
   <foreignObject x="257" y="414" width="105" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{aktiivisuus}$</div></foreignObject>
-  <foreignObject x="58" y="464" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$Q = \Delta m\,c^2$</div></foreignObject>
+  <foreignObject x="58" y="464" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$E = \Delta m\,c^2$</div></foreignObject>
   <foreignObject x="292" y="466" width="70" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{reaktio}$</div></foreignObject>
   <line x1="24" y1="530" x2="44" y2="530" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="44" y="508" width="328" height="188" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
@@ -445,7 +445,7 @@ Moduulin ilmiöt yhdistää **kvantittunut energia**. Valo vaihtaa energiaa aine
   <line x1="54" y1="550" x2="362" y2="550" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="58" y="564" width="60" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$D = E/m$</div></foreignObject>
   <foreignObject x="239" y="566" width="123" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{absorboitunut}$</div></foreignObject>
-  <foreignObject x="58" y="617" width="74" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$H_\text{T} = w_\text{R} D_\text{T}$</div></foreignObject>
+  <foreignObject x="58" y="616" width="60" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$H = w_\text{R} D$</div></foreignObject>
   <foreignObject x="266" y="618" width="96" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{painotettu}$</div></foreignObject>
   <foreignObject x="58" y="668" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\dot{H} \propto 1/r^2$</div></foreignObject>
   <foreignObject x="283" y="670" width="79" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{etäisyys}$</div></foreignObject>
@@ -459,7 +459,7 @@ Tästä saadaan vastaus alun kysymykseen. Kasvivalon punaisen fotonin ($660\,\te
 <svg data-fig="fotonit" viewBox="0 0 600 392" role="img" aria-label="Kaavakuva, energia-akseli logaritmisessa mittakaavassa: fotonin energia elektronivoltteina kymmenesosasta kymmeneen miljoonaan, jokainen jakoväli kymmenkertainen. Näkyvä valo on kapea värikaista 1,7–3,3 elektronivolttia, ja punaisen LED-valon fotoni on 1,9 elektronivolttia. Katkoviiva kohdassa 12,6 elektronivolttia on vesimolekyylin ionisaatioenergia: sen vasemmalla puolella fotoni ei ionisoi vettä, oikealla puolella ionisoi. Hammasröntgenin fotoni, noin 60 kiloelektronivolttia, ja cesium-137:n gammafotoni, 662 kiloelektronivolttia, ovat kaukana oikealla. Akselin alla hakasulkeet: atomin elektronien energiatasojen erot ovat elektronivolttien luokkaa, ytimen tasojen erot kilo- ja megaelektronivolttien." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy9mo-vis" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#c92a2a"/><stop offset="0.35" stop-color="#e8590c"/><stop offset="0.6" stop-color="#2b8a3e"/><stop offset="1" stop-color="#1971c2"/></linearGradient></defs>
   <rect x="184" y="92" width="374" height="104" fill="#f2a69c" fill-opacity="0.28"/>
-  <rect x="130.5" y="184" width="18" height="24" fill="url(#fy9mo-vis)" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="130.5" y="182" width="18" height="28" fill="url(#fy9mo-vis)" stroke="#1f2933" stroke-width="1.5"/>
   <line x1="40" y1="196" x2="576" y2="196" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M588,196 L575,202 L575,190 Z" fill="#1f2933" stroke-linejoin="round"/>
   <line x1="54" y1="196" x2="54" y2="204" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
@@ -476,14 +476,14 @@ Tästä saadaan vastaus alun kysymykseen. Kasvivalon punaisen fotonin ($660\,\te
   <foreignObject x="465.5" y="211.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10^{6}$</div></foreignObject>
   <line x1="550" y1="196" x2="550" y2="204" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <foreignObject x="514" y="161.5" width="74" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$E\ (\text{eV})$</div></foreignObject>
-  <line x1="184" y1="54" x2="184" y2="218" stroke="#1f2933" stroke-width="2" stroke-linecap="butt" stroke-dasharray="7 6"/>
+  <line x1="184" y1="48" x2="184" y2="212" stroke="#1f2933" stroke-width="2" stroke-linecap="butt" stroke-dasharray="7 6"/>
   <foreignObject x="192" y="13.5" width="370" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{veden ionisaatioenergia } 12{,}6\,\text{eV}$</div></foreignObject>
-  <foreignObject x="56" y="55.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#2b8a3e">$\text{ei ionisoi}$</div></foreignObject>
-  <foreignObject x="192" y="55.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$\text{ionisoi}$</div></foreignObject>
-  <line x1="133" y1="196" x2="133" y2="150" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <circle cx="133" cy="196" r="7.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="12" y="89.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{punainen LED}$</div></foreignObject>
-  <foreignObject x="12" y="119.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$1{,}9\,\text{eV}$</div></foreignObject>
+  <foreignObject x="50" y="55.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#2b8a3e">$\text{ei ionisoi}$</div></foreignObject>
+  <foreignObject x="198" y="55.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$\text{ionisoi}$</div></foreignObject>
+  <line x1="133" y1="182" x2="133" y2="160" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <circle cx="133" cy="182" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <foreignObject x="12" y="97.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{punainen LED}$</div></foreignObject>
+  <foreignObject x="12" y="127.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$1{,}9\,\text{eV}$</div></foreignObject>
   <line x1="412" y1="196" x2="412" y2="150" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <circle cx="412" cy="196" r="7.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="350.5" y="89.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{röntgen}$</div></foreignObject>
@@ -492,11 +492,11 @@ Tästä saadaan vastaus alun kysymykseen. Kasvivalon punaisen fotonin ($660\,\te
   <circle cx="477" cy="196" r="7.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="464" y="89.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{gamma}$</div></foreignObject>
   <foreignObject x="451.5" y="119.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$662\,\text{keV}$</div></foreignObject>
-  <path d="M116,262 V270 H240 V262" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <foreignObject x="74" y="281.5" width="208" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{elektronien tasot}$</div></foreignObject>
-  <path d="M364,262 V270 H550 V262" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <foreignObject x="384.5" y="281.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{ytimen tasot}$</div></foreignObject>
-  <foreignObject x="124.5" y="309.5" width="258" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{näkyvä valo } 1{,}7\text{–}3{,}3\,\text{eV}$</div></foreignObject>
+  <path d="M116,254 V262 H240 V254" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <foreignObject x="74" y="271.5" width="208" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{elektronien tasot}$</div></foreignObject>
+  <path d="M364,254 V262 H550 V254" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <foreignObject x="384.5" y="271.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{ytimen tasot}$</div></foreignObject>
+  <foreignObject x="124.5" y="311.5" width="258" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{näkyvä valo } 1{,}7\text{–}3{,}3\,\text{eV}$</div></foreignObject>
   <foreignObject x="330" y="347.5" width="258" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$\text{logaritminen asteikko}$</div></foreignObject>
 </svg>
 
@@ -504,28 +504,26 @@ Tästä saadaan vastaus alun kysymykseen. Kasvivalon punaisen fotonin ($660\,\te
 
 ### Fotoni ja atomi
 
-```latex
-\begin{aligned}
-E &= hf = \frac{hc}{\lambda} \\
-hf &= W + E_\text{k,max} \\
-hf &= E_\text{y} - E_\text{a} \\
-p &= \frac{h}{\lambda}
-\end{aligned}
+```kaavat
+fotonin energia :: E = hf = \frac{hc}{\lambda}
+valosähköinen ilmiö :: hf = W + E_\text{k,max}
+atomin lähettämän tai absorboiman fotonin energia :: hf = E_\text{y} - E_\text{a}
+fotonin liikemäärä :: p = \frac{E}{c} = \frac{h}{\lambda}
 ```
 
 missä $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ on Planckin vakio, $f$ taajuus, $\lambda$ aallonpituus, $W$ metallin irrotustyö, $E_\text{k,max}$ irtoavan elektronin suurin liike-energia, $E_\text{y}$ ja $E_\text{a}$ ylemmän ja alemman energiatilan energiat ja $p$ fotonin liikemäärä. Elektroneja irtoaa vain, kun $hf \geq W$. Atomi absorboi vain fotonin, jonka energia on täsmälleen tasojen erotus, ellei fotoni ionisoi atomia. Vedyllä $E_n = -\tfrac{13{,}6\,\text{eV}}{n^2}$. LEDin kynnysjännitteellä $eU_\text{k} \approx hf$. Muunnokset: $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$ ja $hc \approx 1240\,\text{eV}\,\text{nm}$.
 
 ### Ydin ja hajoaminen
 
-```latex
-\begin{aligned}
-N &= N_0 \left(\tfrac12\right)^{t/T_{1/2}} \\
-A &= \lambda N,\quad \lambda = \frac{\ln 2}{T_{1/2}} \\
-Q &= (m_\text{alku} - m_\text{loppu})\,c^2
-\end{aligned}
+```kaavat
+hajoamislaki :: N = N_0 e^{-\lambda t}
+aktiivisuus :: A = \lambda N
+hajoamisvakio :: \lambda = \frac{\ln 2}{T_{1/2}}
+ydinreaktion massaero :: \Delta m = m_\text{lähtöaineet} - m_\text{tuotteet}
+ydinreaktiossa vapautuva energia :: E = \Delta m c^2
 ```
 
-missä $N$ on hajoamattomien ytimien määrä hetkellä $t$, $T_{1/2}$ puoliintumisaika, $A$ aktiivisuus ($\text{Bq}$), $\lambda$ hajoamisvakio ja $Q$ reaktioenergia. Hajoamisyhtälössä massaluku ja varausluku säilyvät: alfahajoamisessa $Z$ pienenee kahdella ja $A$ neljällä, beeta miinus -hajoamisessa $Z$ kasvaa yhdellä. Hajoamislaki kuvaa suurta ydinjoukkoa. Sidosenergia on $E_\text{B} = \Delta m\,c^2$, ja $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$. Fissio ja fuusio vapauttavat energiaa, koska tuotteiden sidosenergia nukleonia kohti on suurempi.
+missä $N$ on hajoamattomien ytimien määrä hetkellä $t$, $N_0$ määrä alussa, $T_{1/2}$ puoliintumisaika, $A$ aktiivisuus ($\text{Bq}$), $\lambda$ hajoamisvakio, $\Delta m$ massaero ja $E$ reaktiossa vapautuva energia. Koska $e^{-\lambda T_{1/2}} = \tfrac12$, hajoamislaki voidaan kirjoittaa myös $N = N_0 \left(\tfrac12\right)^{t/T_{1/2}}$, ja sama laki pätee aktiivisuudelle, $A = A_0 e^{-\lambda t}$. Hajoamisyhtälössä massaluku ja varausluku säilyvät: alfahajoamisessa $Z$ pienenee kahdella ja $A$ neljällä, beeta miinus -hajoamisessa $Z$ kasvaa yhdellä. Hajoamislaki kuvaa suurta ydinjoukkoa. Sidosenergia on $E_\text{B} = \Delta m\,c^2$, ja $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$. Fissio ja fuusio vapauttavat energiaa, koska tuotteiden sidosenergia nukleonia kohti on suurempi.
 
 <svg data-fig="puolitus" viewBox="0 0 600 380" role="img" aria-label="Kuvaaja mittakaavassa: jäljellä oleva osuus puoliintumisaikojen tai puoliintumispaksuuksien lukumäärän n funktiona, n nollasta viiteen. Käyrä alkaa arvosta 1 ja laskee yhä loivemmin. Katkoviivat näyttävät, että n = 1 antaa puolet, n = 2 neljäsosan ja n = 3 kahdeksasosan. Käyrä lähestyy nollaa mutta ei saavuta sitä: hajoamisella ja gammasäteilyn vaimenemisella ei ole loppupistettä." style="max-width:100%;font-size:26px">
   <line x1="174" y1="312" x2="174" y2="62" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -581,21 +579,21 @@ missä $N$ on hajoamattomien ytimien määrä hetkellä $t$, $T_{1/2}$ puoliintu
   <circle cx="322" cy="281" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
   <circle cx="100" cy="62" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="336" y="252" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\tfrac18$</div></foreignObject>
-  <foreignObject x="263" y="82.5" width="253" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$n = \tfrac{t}{T_{1/2}}\ \text{tai}\ n = \tfrac{d}{d_{1/2}}$</div></foreignObject>
+  <foreignObject x="277.5" y="79" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$n = t/T_{1/2}$</span></div></foreignObject>
+  <foreignObject x="277.5" y="110" width="149" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{tai}\ n = d/d_{1/2}$</span></div></foreignObject>
 </svg>
 
 ### Säteily ja annos
 
-```latex
-\begin{aligned}
-D &= \frac{E}{m},\quad H_\text{T} = w_\text{R} D_\text{T} \\
-H &= \dot{H} t \\
-\dot{H}_2 &= \dot{H}_1 \left(\frac{r_1}{r_2}\right)^2 \\
-\dot{H} &= \dot{H}_0 \left(\tfrac12\right)^{d/d_{1/2}}
-\end{aligned}
+```kaavat
+absorboitunut annos :: D = \frac{E}{m}
+ekvivalenttiannos :: H = w_\text{R} D
+annos annosnopeudesta :: H = \dot{H} t
+annosnopeus etäisyyden funktiona :: \dot{H}_2 = \dot{H}_1 \left(\frac{r_1}{r_2}\right)^2
+heikennyslaki :: I = I_0 e^{-\mu x}
 ```
 
-missä $D$ on absorboitunut annos ($\text{Gy}$), $E$ absorboitunut energia, $m$ kudoksen massa, $H_\text{T}$ ekvivalenttiannos ($\text{Sv}$), $w_\text{R}$ säteilyn painotuskerroin (alfa $20$, beeta ja gamma $1$), $\dot{H}$ annosnopeus, $t$ aika, $r$ etäisyys ja $d_{1/2}$ puoliintumispaksuus. Neliölaki pätee pistemäiselle lähteelle, kun ilma ei vaimenna säteilyä. Puoliintumispaksuus koskee fotonisäteilyä, koska alfa- ja beetasäteilyllä on kantama. Galaksien etääntymisnopeus on $v = H_0 d$, ja pienellä punasiirtymällä $v = cz$.
+missä $D$ on absorboitunut annos ($\text{Gy}$), $E$ absorboitunut energia, $m$ kudoksen massa, $H$ ekvivalenttiannos ($\text{Sv}$), $w_\text{R}$ säteilyn painotuskerroin (alfa $20$, beeta ja gamma $1$), $\dot{H}$ annosnopeus, $t$ aika, $r$ etäisyys, $I_0$ väliaineen pintaan tulevan ja $I$ läpi tulleen säteilyn intensiteetti, $\mu$ heikennyskerroin ($1/\text{m}$) ja $x$ väliaineen paksuus. Puoliintumispaksuus on $d_{1/2} = \tfrac{\ln 2}{\mu}$, joten annosnopeus pienenee suojan takana kuten $\dot{H} = \dot{H}_0 \left(\tfrac12\right)^{x/d_{1/2}}$. Neliölaki pätee pistemäiselle lähteelle, kun ilma ei vaimenna säteilyä. Puoliintumispaksuus koskee fotonisäteilyä, koska alfa- ja beetasäteilyllä on kantama. Galaksien etääntymisnopeus on $v = H_0 d$, ja pienellä punasiirtymällä $v = cz$.
 
 ## Yleisiä virheitä {Virheet}
 

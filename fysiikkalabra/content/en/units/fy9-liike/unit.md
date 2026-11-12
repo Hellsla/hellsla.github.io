@@ -246,39 +246,39 @@ Motion is always described in a chosen coordinate system: a straight $x$ axis, a
 The same motion can be shown as three graphs: $(t,x)$, $(t,v)$ and $(t,a)$. You move between the graphs in two ways. Downwards: the **slope** of a graph is the value of the next quantity, so the slope of the $(t,x)$ graph is the velocity and the slope of the $(t,v)$ graph the acceleration. Upwards: the **area** between a graph and the time axis is the change in the previous quantity, so the area of the $(t,v)$ graph is the displacement.
 
 <svg data-fig="kartta" viewBox="0 0 400 600" role="img" aria-label="Concept map of three graphs one above the other. At the top the position graph, with the straight line of uniform motion and the upward-bending curve of uniformly accelerated motion. In the middle the velocity graph, with a horizontal line and a rising line. At the bottom the acceleration graph, with zero and a constant. On the right, arrows pointing down: the slope of a graph is the value of the next quantity, v = Δx/Δt and a = Δv/Δt. The position graphs are black, the velocity graphs blue and the acceleration graphs orange; uniform motion is a solid line and uniformly accelerated motion a dashed line. On the left, arrows pointing up: the area between a graph and the time axis is the change in the previous quantity, Δx and Δv." style="max-width:100%;font-size:21px">
-  <rect x="92" y="14" width="216" height="136" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
-  <foreignObject x="104" y="21.5" width="63" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$(t,x)$</div></foreignObject>
-  <foreignObject x="213" y="23" width="83" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{position}$</div></foreignObject>
-  <line x1="116" y1="134" x2="288" y2="134" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="116" y1="134" x2="116" y2="46" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <polyline points="116,134 124,131 132.5,128 140.5,125 149,122 157,119 165,116 173.5,113 181.5,110 190,107 198,104 206,101 214.5,98 222.5,95 231,92 239,89 247,86 255.5,83 263.5,80 272,77 280,74" fill="none" stroke="#1f2933" stroke-width="3" stroke-linecap="round"/>
-  <polyline points="116,134 124,133 132.5,132 140.5,130.5 149,129 157,127 165,124.5 173.5,121.5 181.5,118.5 190,115 198,111 206,107 214.5,102.5 222.5,97.5 231,92.5 239,87 247,81 255.5,74.5 263.5,68 272,61 280,54" fill="none" stroke="#1f2933" stroke-width="3" stroke-dasharray="9 6" stroke-linecap="round"/>
-  <line x1="338" y1="156" x2="338" y2="184" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M338,196 L332,183 L344,183 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <line x1="62" y1="196" x2="62" y2="168" stroke="#2b8a3e" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M62,156 L68,169 L56,169 Z" fill="#2b8a3e" stroke-linejoin="round"/>
-  <foreignObject x="352" y="163.5" width="30" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\tfrac{\Delta x}{\Delta t}$</div></foreignObject>
-  <foreignObject x="18" y="163.5" width="30" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px;color:#2b8a3e">$\Delta x$</div></foreignObject>
-  <rect x="92" y="202" width="216" height="136" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
-  <foreignObject x="104" y="209.5" width="63" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$(t,v)$</div></foreignObject>
-  <foreignObject x="213" y="211" width="83" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{velocity}$</div></foreignObject>
-  <line x1="116" y1="322" x2="288" y2="322" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="116" y1="322" x2="116" y2="234" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <polyline points="116,278 124,278 132.5,278 140.5,278 149,278 157,278 165,278 173.5,278 181.5,278 190,278 198,278 206,278 214.5,278 222.5,278 231,278 239,278 247,278 255.5,278 263.5,278 272,278 280,278" fill="none" stroke="#1971c2" stroke-width="3" stroke-linecap="round"/>
-  <polyline points="116,312.5 124,309 132.5,306 140.5,303 149,299.5 157,296.5 165,293 173.5,290 181.5,287 190,283.5 198,280.5 206,277 214.5,274 222.5,271 231,267.5 239,264.5 247,261 255.5,258 263.5,255 272,251.5 280,248.5" fill="none" stroke="#1971c2" stroke-width="3" stroke-dasharray="9 6" stroke-linecap="round"/>
-  <line x1="338" y1="344" x2="338" y2="372" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M338,384 L332,371 L344,371 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <line x1="62" y1="384" x2="62" y2="356" stroke="#2b8a3e" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M62,344 L68,357 L56,357 Z" fill="#2b8a3e" stroke-linejoin="round"/>
-  <foreignObject x="352" y="351.5" width="30" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\tfrac{\Delta v}{\Delta t}$</div></foreignObject>
-  <foreignObject x="18" y="351.5" width="30" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px;color:#2b8a3e">$\Delta v$</div></foreignObject>
-  <rect x="92" y="390" width="216" height="136" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
-  <foreignObject x="104" y="397.5" width="63" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$(t,a)$</div></foreignObject>
-  <foreignObject x="176" y="399" width="120" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{acceleration}$</div></foreignObject>
-  <line x1="116" y1="510" x2="288" y2="510" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="116" y1="510" x2="116" y2="422" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <polyline points="116,510 124,510 132.5,510 140.5,510 149,510 157,510 165,510 173.5,510 181.5,510 190,510 198,510 206,510 214.5,510 222.5,510 231,510 239,510 247,510 255.5,510 263.5,510 272,510 280,510" fill="none" stroke="#e8590c" stroke-width="3" stroke-linecap="round"/>
-  <polyline points="116,466 124,466 132.5,466 140.5,466 149,466 157,466 165,466 173.5,466 181.5,466 190,466 198,466 206,466 214.5,466 222.5,466 231,466 239,466 247,466 255.5,466 263.5,466 272,466 280,466" fill="none" stroke="#e8590c" stroke-width="3" stroke-dasharray="9 6" stroke-linecap="round"/>
+  <rect x="80" y="14" width="208" height="136" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="92" y="21.5" width="63" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$(t,x)$</div></foreignObject>
+  <foreignObject x="193" y="23" width="83" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{position}$</div></foreignObject>
+  <line x1="104" y1="134" x2="268" y2="134" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="104" y1="134" x2="104" y2="46" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <polyline points="104,134 112,131 119.5,128 127.5,125 135,122 143,119 151,116 158.5,113 166.5,110 174,107 182,104 190,101 197.5,98 205.5,95 213,92 221,89 229,86 236.5,83 244.5,80 252,77 260,74" fill="none" stroke="#1f2933" stroke-width="3" stroke-linecap="round"/>
+  <polyline points="104,134 112,133 119.5,132 127.5,130.5 135,129 143,127 151,124.5 158.5,121.5 166.5,118.5 174,115 182,111 190,107 197.5,102.5 205.5,97.5 213,92.5 221,87 229,81 236.5,74.5 244.5,68 252,61 260,54" fill="none" stroke="#1f2933" stroke-width="3" stroke-dasharray="9 6" stroke-linecap="round"/>
+  <line x1="312" y1="156" x2="312" y2="184" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M312,196 L306,183 L318,183 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="56" y1="196" x2="56" y2="168" stroke="#2b8a3e" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M56,156 L62,169 L50,169 Z" fill="#2b8a3e" stroke-linejoin="round"/>
+  <foreignObject x="324" y="163.5" width="63" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\Delta x/\Delta t$</div></foreignObject>
+  <foreignObject x="14" y="163.5" width="30" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px;color:#2b8a3e">$\Delta x$</div></foreignObject>
+  <rect x="80" y="202" width="208" height="136" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="92" y="209.5" width="63" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$(t,v)$</div></foreignObject>
+  <foreignObject x="193" y="211" width="83" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{velocity}$</div></foreignObject>
+  <line x1="104" y1="322" x2="268" y2="322" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="104" y1="322" x2="104" y2="234" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <polyline points="104,278 112,278 119.5,278 127.5,278 135,278 143,278 151,278 158.5,278 166.5,278 174,278 182,278 190,278 197.5,278 205.5,278 213,278 221,278 229,278 236.5,278 244.5,278 252,278 260,278" fill="none" stroke="#1971c2" stroke-width="3" stroke-linecap="round"/>
+  <polyline points="104,312.5 112,309 119.5,306 127.5,303 135,299.5 143,296.5 151,293 158.5,290 166.5,287 174,283.5 182,280.5 190,277 197.5,274 205.5,271 213,267.5 221,264.5 229,261 236.5,258 244.5,255 252,251.5 260,248.5" fill="none" stroke="#1971c2" stroke-width="3" stroke-dasharray="9 6" stroke-linecap="round"/>
+  <line x1="312" y1="344" x2="312" y2="372" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M312,384 L306,371 L318,371 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="56" y1="384" x2="56" y2="356" stroke="#2b8a3e" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M56,344 L62,357 L50,357 Z" fill="#2b8a3e" stroke-linejoin="round"/>
+  <foreignObject x="324" y="351.5" width="63" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\Delta v/\Delta t$</div></foreignObject>
+  <foreignObject x="14" y="351.5" width="30" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px;color:#2b8a3e">$\Delta v$</div></foreignObject>
+  <rect x="80" y="390" width="208" height="136" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="92" y="397.5" width="63" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$(t,a)$</div></foreignObject>
+  <foreignObject x="156" y="399" width="120" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{acceleration}$</div></foreignObject>
+  <line x1="104" y1="510" x2="268" y2="510" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="104" y1="510" x2="104" y2="422" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <polyline points="104,510 112,510 119.5,510 127.5,510 135,510 143,510 151,510 158.5,510 166.5,510 174,510 182,510 190,510 197.5,510 205.5,510 213,510 221,510 229,510 236.5,510 244.5,510 252,510 260,510" fill="none" stroke="#e8590c" stroke-width="3" stroke-linecap="round"/>
+  <polyline points="104,466 112,466 119.5,466 127.5,466 135,466 143,466 151,466 158.5,466 166.5,466 174,466 182,466 190,466 197.5,466 205.5,466 213,466 221,466 229,466 236.5,466 244.5,466 252,466 260,466" fill="none" stroke="#e8590c" stroke-width="3" stroke-dasharray="9 6" stroke-linecap="round"/>
   <line x1="14" y1="534" x2="386" y2="534" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="14" y="545.5" width="77" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\downarrow\ \text{slope}$</div></foreignObject>
   <foreignObject x="320" y="545.5" width="66" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px;color:#2b8a3e">$\uparrow\ \text{area}$</div></foreignObject>
@@ -298,14 +298,14 @@ This answers the opening question. The velocity tells you how many metres the tr
 
 The average velocity is the displacement divided by the time it took:
 
-```latex
-v_\text{av} = \frac{\Delta x}{\Delta t}
+```kaavat
+average velocity :: \overline{v}_\text{k} = \frac{\Delta\overline{x}}{\Delta t}
 ```
 
-where $\Delta x = x_2 - x_1$ is the displacement ($\text{m}$) and $\Delta t$ the time ($\text{s}$). When the velocity $v$ is constant and the body is at the position $x_0$ at $t = 0$,
+where $\Delta\overline{x}$ is the displacement ($\text{m}$) and $\Delta t$ the time elapsed ($\text{s}$). In linear motion the signed displacement $\Delta x = x_2 - x_1$ is enough, and the average velocity is $v_\text{k} = \tfrac{\Delta x}{\Delta t}$. When the velocity $v$ is constant and the body is at the position $x_0$ at $t = 0$,
 
-```latex
-x = x_0 + v\,t
+```kaavat
+position in uniform linear motion :: x = x_0 + v\,t
 ```
 
 This is the straight line of the $(t,x)$ graph: $x_0$ is its intercept on the position axis and $v$ its slope. The position is directly proportional to the time only when $x_0 = 0$.
@@ -314,17 +314,17 @@ This is the straight line of the $(t,x)$ graph: $x_0$ is its intercept on the po
 
 Acceleration is the change in velocity per unit of time:
 
-```latex
-a = \frac{\Delta v}{\Delta t}
+```kaavat
+average acceleration :: \overline{a}_\text{k} = \frac{\Delta\overline{v}}{\Delta t}
 ```
+
+where $\Delta\overline{v}$ is the change in velocity ($\text{m/s}$), $\Delta t$ the elapsed time ($\text{s}$) and $\overline{a}_\text{k}$ the average acceleration ($\text{m/s}^2$). In rectilinear motion the signed acceleration $a = \tfrac{\Delta v}{\Delta t}$ is enough, and with a constant acceleration the average acceleration equals the instantaneous one.
 
 When the acceleration is constant and the motion rectilinear, the velocity and the position at time $t$ are
 
-```latex
-\begin{aligned}
-v &= v_0 + a\,t \\
-x &= x_0 + v_0\,t + \tfrac{1}{2}\,a\,t^2
-\end{aligned}
+```kaavat
+velocity in uniformly accelerated linear motion :: v = v_0 + a\,t
+position in uniformly accelerated linear motion :: x = x_0 + v_0\,t + \tfrac{1}{2}\,a\,t^2
 ```
 
 where $v_0$ is the initial velocity ($\text{m/s}$) and $a$ the acceleration ($\text{m/s}^2$). The speed increases when $a$ and $v$ point in the same direction and decreases when they point in opposite directions. In free fall $a = g = 9.81\,\text{m/s}^2$ downwards when air resistance is small.
@@ -333,8 +333,8 @@ where $v_0$ is the initial velocity ($\text{m/s}$) and $a$ the acceleration ($\t
 
 The instantaneous velocity on a curved $(t,x)$ graph is the slope $k$ of the tangent. A ratio calculated through two points of the curve is the average velocity. The displacement is the area between the $(t,v)$ graph and the time axis, and the part below the axis is counted as negative. In uniformly accelerated motion the region is a trapezium, so the average velocity is the mean of the initial and final velocities:
 
-```latex
-\Delta x = \frac{v_0 + v}{2}\,t
+```kaavat
+displacement in uniformly accelerated linear motion :: \Delta x = \frac{v_0 + v}{2}\,t
 ```
 
 <svg data-fig="kuvaajat" viewBox="0 0 440 650" role="img" aria-label="Schematic of one motion as two graphs with the same time axis. Below, the velocity graph: the velocity grows uniformly from zero until t1, stays constant until t2 and falls uniformly to zero at t3. The region under the graph is coloured green, and its area is the displacement Δx. Above, the position graph: first a curve bending upwards, then a rising straight line and finally a curve that levels off to horizontal. Over the whole motion the position grows by Δx in total. A blue tangent is drawn at the point P of the curve; its slope k is the velocity v_P, and the same value is marked in the lower graph." style="max-width:100%;font-size:21px">
@@ -386,8 +386,8 @@ The instantaneous velocity on a curved $(t,x)$ graph is the slope $k$ of the tan
 
 The positions of two bodies are written in the same coordinate system, and the bodies meet when
 
-```latex
-x_\text{A}(t) = x_\text{B}(t)
+```kaavat
+condition for meeting :: x_\text{A}(t) = x_\text{B}(t)
 ```
 
 In a $(t,x)$ graph a meeting is the crossing point of the lines. The upper line means a greater position coordinate. When the body behind is slower at first and accelerates, the distance between the bodies is at its greatest when their velocities are equal.

@@ -74,20 +74,20 @@
   <foreignObject x="512" y="355.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\theta\ ({}^\circ\text{C})$</div></foreignObject>
   <foreignObject x="70" y="13.5" width="74" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$L\ (\text{mm})$</div></foreignObject>
   <foreignObject x="51" y="379.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$-300$</div></foreignObject>
-  <polyline points="107,370 380,152.5" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="9 6"/>
-  <polyline points="380,152.5 475,77" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="107,370 380,152.5" fill="none" stroke="#e8590c" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="9 6"/>
+  <polyline points="380,152.5 475,77" fill="none" stroke="#e8590c" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
   <line x1="460" y1="89" x2="460" y2="370" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <line x1="80" y1="89" x2="460" y2="89" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <circle cx="380" cy="152.5" r="5" fill="#6b7480" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="385" cy="149" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="400" cy="135.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="415" cy="124.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="430" cy="113" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="445" cy="100" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="460" cy="89" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="107" cy="370" r="7" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="85" y="243" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\theta_0 \approx -273\,{}^\circ\text{C}$</span></div></foreignObject>
-  <foreignObject x="85" y="135" width="283" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$k = \dfrac{75{,}0\,\text{mm} - 58{,}0\,\text{mm}}{80\,{}^\circ\text{C}}$</span></div></foreignObject>
+  <circle cx="385" cy="149" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="400" cy="135.5" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="415" cy="124.5" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="430" cy="113" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="445" cy="100" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="460" cy="89" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="107" cy="370" r="7" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <foreignObject x="156" y="337.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\theta_0 \approx -273\,{}^\circ\text{C}$</span></div></foreignObject>
+  <foreignObject x="85" y="101" width="283" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$k = \dfrac{75{,}0\,\text{mm} - 58{,}0\,\text{mm}}{80\,{}^\circ\text{C}}$</span></div></foreignObject>
 </svg>
 
 **Mallivastaus:** Pisteet asettuvat suoralle, joten ilmapatsas pitenee yhtä paljon jokaista lämpötila-astetta kohti. Suora sovitetaan pisteiden joukon keskeltä, eikä pisteitä yhdistetä murtoviivaksi. Mittausalueen ulkopuolelle jatkettu suora leikkaa vaaka-akselin noin kohdassa $-270\,{}^\circ\text{C}$.
@@ -351,25 +351,25 @@ $p_2 = 650\,000\,\text{Pa} - 325\,000\,\text{Pa} = 325\,000\,\text{Pa}$
   <foreignObject x="512" y="355.5" width="87" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$t\ (\text{min})$</div></foreignObject>
   <foreignObject x="70" y="13.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$T\ ({}^\circ\text{C})$</div></foreignObject>
   <polyline points="80,369 309,369" fill="none" stroke="#1971c2" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <polyline points="297.5,369 468.5,84" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="297.5,369 468.5,84" fill="none" stroke="#e8590c" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
   <line x1="451.5" y1="112.5" x2="451.5" y2="370" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <line x1="80" y1="112.5" x2="451.5" y2="112.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <line x1="337" y1="303" x2="337" y2="370" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <line x1="80" y1="303" x2="337" y2="303" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <circle cx="80" cy="369.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="108.5" cy="369.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="137" cy="369" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="165.5" cy="369" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="194.5" cy="369" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="223" cy="368" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="251.5" cy="368" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="280" cy="366.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="308.5" cy="349.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="337" cy="303" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="365.5" cy="255.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="394.5" cy="206" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="423" cy="160" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="451.5" cy="112.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="80" cy="369.5" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="108.5" cy="369.5" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="137" cy="369" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="165.5" cy="369" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="194.5" cy="369" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="223" cy="368" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="251.5" cy="368" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="280" cy="366.5" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="308.5" cy="349.5" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="337" cy="303" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="365.5" cy="255.5" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="394.5" cy="206" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="423" cy="160" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="451.5" cy="112.5" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="120" y="319.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$t \approx 7{,}6\,\text{min}$</span></div></foreignObject>
   <line x1="243" y1="339" x2="284.5" y2="358.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
   <path d="M293.5,363 L281.5,362.5 L285.5,353.5 Z" fill="#6b7480" stroke-linejoin="round"/>

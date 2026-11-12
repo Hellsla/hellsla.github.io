@@ -137,6 +137,17 @@ blockquote p{margin:0}
 li{margin:.4rem 0}
 .katex-display{overflow-x:auto;overflow-y:hidden;padding:.7rem 1rem;margin:1rem 0;background:var(--surface);border:1px solid var(--line);border-radius:12px}
 @media (max-width:389px){.katex-display{padding:.6rem .6rem}.katex-display>.katex{font-size:1.03em}}   /* narrow phone only: display maths a step smaller (1.21em → 1.03em) so the widest rows (fy3-3, fy2-3's kWh in joules) fit 360 px also with CI's fonts; at 390 px and up nothing overflows, so formulas stay full size */
+/* Named formulas (```kaavat, scripts/kaavat.py; teacher 2026-11-12): a formula table like mafytaulukot.fi, the name in bold beside its formula, above it on a phone */
+.kaavat{margin:1rem 0;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.kaava-rivi{display:grid;grid-template-columns:minmax(9rem,2fr) 3fr;align-items:center;gap:.25rem 1.25rem;padding:.55rem 1rem}
+.kaava-rivi+.kaava-rivi{border-top:1px solid var(--line-2)}
+.kaavat dt{font-family:var(--sans);font-size:var(--fs-small);font-weight:700;color:var(--ink);line-height:1.35;margin:0}
+.kaavat dt::first-letter{text-transform:uppercase}
+.kaavat dd{margin:0;min-width:0}
+.kaava-rivi.nimeton dd{grid-column:1/-1}
+.kaavat .katex-display{border:0;background:none;padding:0;margin:0;text-align:left}
+.kaavat .katex-display>.katex{text-align:left}
+@media (max-width:600px){.kaava-rivi{grid-template-columns:minmax(0,1fr);padding:.6rem .8rem}}
 .notice{margin:.8rem 0 0;padding:.6rem .9rem;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;background:var(--surface);font-size:var(--fs-small)}
 .katex{white-space:nowrap}   /* Lauri 2026-11-04: an inline formula never breaks onto two lines; the text wraps before it instead */
 .katex.kx-wide{display:block;width:0;min-width:100%;overflow-x:auto;overflow-y:hidden;padding:.15em 0 .3em;text-align:left}   /* lesson.js: an inline formula wider than its column gets its own line and scrolls, never two lines */
@@ -2243,3 +2254,4 @@ ol.lessons.ch-cards:has(>li.ch-theme-row)>li.ch-card>.ch-box{flex:1;min-width:0}
 .level-done[hidden]{display:none}
 .level-done.is-all::before{content:"\2713\00a0"}
 @media print{.ex-progress,.level-done{display:none}}
+@media (min-width:600px) and (max-width:699.98px){nav.toc.has-now>.toc-now{max-width:calc(100% - 11.5rem)}}   /* from 600 px Kuuntele shows its word (about 170 px, not the icon's 5.75rem): a long section name pushed it onto a second row and the 98 px bar covered the heading it had scrolled to (fy10-kondensaattori at 640 px, check_layout 2026-11-12) */

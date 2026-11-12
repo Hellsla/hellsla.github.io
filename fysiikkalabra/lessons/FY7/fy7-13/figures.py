@@ -150,7 +150,7 @@ def pattern():
             "puolivälissä. Kahdeksan raon hilan käyrä on samoissa kohdissa olevia kapeita ja korkeita huippuja, ja "
             "niiden välissä intensiteetti on lähes nolla. Rakojen leveyden vaikutus on jätetty pois.")
     ax = Axes(f, (96, 290), (480, 70), x=(0, 3.2), y=(0, 1.36), xticks=[0.5 * k for k in range(1, 7)],
-              yticks=[0.25, 0.5, 0.75, 1.0], xlabel=r"\tfrac{\Delta s}{\lambda}", ylabel=r"\text{intensiteetti}",
+              yticks=[0.25, 0.5, 0.75, 1.0], xlabel=r"\Delta s / \lambda", ylabel=r"\text{intensiteetti}",
               xfmt=lambda v: fi(v) if v == int(v) else "", yfmt=lambda v: fi(v, 1) if v in (0.5, 1.0) else "")
     ax.curve(lambda u: math.cos(math.pi * u) ** 2, 0, 3.2, INK, 2.5, 320, "7 6")
 

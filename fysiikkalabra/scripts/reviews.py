@@ -73,7 +73,7 @@ and fails if the change was not what the row says. A reviewer whose last verdict
 """
 import collections, datetime, difflib, functools, hashlib, html, json, os, pathlib, re, subprocess, sys, tempfile
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-import courses, figcat, figlib, i18n, inquiry
+import courses, figcat, figlib, i18n, inquiry, kaavat
 
 ROOT = courses.ROOT
 REVIEWS = ("science", "pedagogy", "visual")      # the three independent reviewers (visual & editorial since 2026-10-31)
@@ -119,6 +119,7 @@ RULES = {                       # category: (science, pedagogy, visual)
     "core-mark":      ("none",  "none", "none"),    # an exercise or lesson activity marked core (`"core": true`) or unmarked, nothing else: the module's core path as a whole is reviewed in docs/core-path/ (teacher 2026-11-05)
     "paragraphs":     ("none",  "none", "none"),    # a task text cut into paragraphs (a blank line, "\\n\\n" in the JSON string), its words unchanged: build.exercise_text renders them, check_layout checks them (teacher 2026-11-04)
     "presentation-only": ("none", "none", "delta"),  # a simulation's code changed only in where or how it draws (an axis name, a label's place), the exact change approved in docs/presentation-only.tsv: the visual reviewer looks, test_sims.py runs
+    "formula-names": ("none",  "none", "none"),    # FY9 formulas given the names of docs/fy9/kaavanimet.tsv (```kaavat), nothing else changed (teacher 2026-11-12)
     "teacher-figure": ("none",  "none", "none"),    # a figure the teacher approved as drawn (docs/teacher-figures.tsv, its exact Finnish SVG), its words in a translation, a task given it by "figure": the layout is check_layout's (teacher 2026-11-10)
     "split":          ("none",  "none", "none"),    # passed as one lesson before the split; this part's files moved, unchanged (answers.py: line for line)
 }
@@ -138,6 +139,7 @@ WHY = {"core-mark": "exercises or activities marked core or unmarked, nothing el
        "simulation": "the simulation's code changed", "figure": "a figure or picture changed",
        "illustration": "the illustrations only",
        "teacher-figure": "figures the teacher approved as drawn (docs/teacher-figures.tsv)",
+       "formula-names": "formula names the teacher approved (docs/fy9/kaavanimet.tsv)",
        "presentation-only": "a simulation's drawing only, the change approved in docs/presentation-only.tsv",
        "split": "the exercises moved to their own folder, every file as it was passed (answers.py split line for line)"}
 
@@ -898,10 +900,12 @@ def _item(kind, iid):
     raise SystemExit(f"carry-item: kind must be one of {', '.join(ITEM_KINDS)}")
 
 
-def _figure_free(folder, code_folder, texts, code_names, oid, src):
-    """The texts with the approved figures of owner `oid` taken out, the other code as it is, each not-approved figure as drawn."""
+def _figure_free(folder, code_folder, texts, code_names, oid, src, names=frozenset()):
+    """The texts with the approved figures of owner `oid` taken out, the other code as it is, each not-approved figure as
+    drawn; a .md text as kaavat.review_view sees it, so formula names in `names` (approved by the teacher) carry too."""
     rel = lambda p: p.relative_to(ROOT).as_posix()
-    out = [(n, normalized(_strip_approved_svgs(src.read(rel(folder / n)) or "", oid), n)) for n in texts]
+    md = lambda n, t: kaavat.review_view(t, names) if n.endswith(".md") else t
+    out = [(n, md(n, normalized(_strip_approved_svgs(src.read(rel(folder / n)) or "", oid), n))) for n in texts]
     for n in code_names:
         code = src.read(rel(code_folder / n))
         if n != "figures.py" or not code: out.append((n, code or "")); continue
@@ -918,7 +922,8 @@ def item_view(kind, iid, lang, src):
     """What an item's reviews judge apart from its teacher-approved figures, as `src` (WorkTree or Commit) has it. A
     unit's own task set is reviewed with the unit: the same view of it, its figures owned by "<unit>-sovella"."""
     m, key, oid = _item(kind, iid)
-    out = _figure_free(m.folder(key, lang), m.code_folder(key), m.TEXTS, getattr(m, "CODE", ("figures.py",)), oid, src)
+    names = frozenset(kaavat.approved(key, lang)) if kind == "unit" else frozenset()
+    out = _figure_free(m.folder(key, lang), m.code_folder(key), m.TEXTS, getattr(m, "CODE", ("figures.py",)), oid, src, names)
     if kind == "unit" and m.has_tasks(key, lang):
         import practice
         tk = m.task_key(key)
@@ -948,13 +953,34 @@ def item_carry(kind, iid, lang=i18n.SOURCE):
         base = _item_base(kind, iid, lang, frm)
         if base is None: print(f"{name}: the version it passed is not in git history, review needed"); continue
         now = now or item_view(kind, iid, lang, WorkTree())
-        if item_view(kind, iid, lang, Commit(base)) != now: print(f"{name}: more than teacher-approved figures changed, review needed"); continue
-        rows.append({"date": str(datetime.date.today()), "reviewer": name, "from": frm, "to": h, "base": base[:12], "categories": "teacher-figure"})
-        added.append(name); print(f"{name}: carried over ({WHY['teacher-figure']})")
+        if item_view(kind, iid, lang, Commit(base)) != now: print(f"{name}: more than teacher-approved figures and formula names changed, review needed"); continue
+        cat = item_category(kind, iid, lang, base)
+        rows.append({"date": str(datetime.date.today()), "reviewer": name, "from": frm, "to": h, "base": base[:12], "categories": cat})
+        added.append(name); print(f"{name}: carried over ({'; '.join(WHY[c] for c in cat.split(','))})")
     if added:
         (folder / "review").mkdir(exist_ok=True)
         (folder / "review" / "carry.tsv").write_text("\t".join(CARRY_COLS) + "\n" + "".join("\t".join(r[c] for c in CARRY_COLS) + "\n" for r in rows))
     print(f"{lang}/{key}: {m.status(key, lang)['state']}")
+
+
+def item_category(kind, iid, lang, base):
+    """What a carried item change was: "formula-names" when the named formulas of its texts changed, "teacher-figure"
+    when anything else did (approved figures), both when both did."""
+    m, key, oid = _item(kind, iid)
+    names_at = lambda src: [kaavat.names_of(src.read((m.folder(key, lang) / n).relative_to(ROOT).as_posix()) or "") for n in m.TEXTS if n.endswith(".md")]
+    cats = []
+    if names_at(Commit(base)) != names_at(WorkTree()): cats.append("formula-names")
+    if _figures_differ(kind, iid, lang, base): cats.append("teacher-figure")
+    return ",".join(cats or ["teacher-figure"])
+
+
+def _figures_differ(kind, iid, lang, base):
+    """Whether an item's approved figures differ between `base` and the working tree (the SVGs or figures.py)."""
+    m, key, oid = _item(kind, iid)
+    texts = lambda src: [src.read((m.folder(key, lang) / n).relative_to(ROOT).as_posix()) or "" for n in m.TEXTS]
+    svgs = lambda src: [x.group(0) for t in texts(src) for x in SVG_BLOCK.finditer(t)]
+    code = lambda src: src.read((m.code_folder(key) / "figures.py").relative_to(ROOT).as_posix())
+    return svgs(Commit(base)) != svgs(WorkTree()) or code(Commit(base)) != code(WorkTree())
 
 
 def verify_item_carries(kind, iid, lang):
@@ -969,7 +995,7 @@ def verify_item_carries(kind, iid, lang):
         what = f"{lang}/{key}: carry of {name}"
         if git("rev-parse", "--verify", "-q", f"{c['base']}^{{commit}}") is None: errs.append(f"{what} names commit {c['base']}, not in history (CI needs fetch-depth: 0)"); continue
         if m.content_hash(key, lang, read=Commit(c["base"]).read) != c["from"]: errs.append(f"{what}: commit {c['base']} does not hold hash {c['from']}"); continue
-        if item_view(kind, iid, lang, Commit(c["base"])) != item_view(kind, iid, lang, WorkTree()): errs.append(f"{what} covers more than figures the teacher approved")
+        if item_view(kind, iid, lang, Commit(c["base"])) != item_view(kind, iid, lang, WorkTree()): errs.append(f"{what} covers more than figures and formula names the teacher approved")
     return errs
 
 

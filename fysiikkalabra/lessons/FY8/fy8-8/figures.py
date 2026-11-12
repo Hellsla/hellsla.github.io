@@ -43,7 +43,7 @@ def hero():
                "kahden metallilevyn välisessä kammiossa on pieni americiumnäyte, josta lähtee lyhyitä violetteja hiukkasratoja "
                "ilmaan. Huoneessa on ikkuna ja kattovalaisin.")
     f.rect(0, 0, 1200, 600, H.grad(f, "fy88h-wall", PAPER, SAND_LIGHT))
-    f.rect(0, 0, 1200, 92, WHITE)                                   # ceiling
+    f.rect(0, 0, 1200, 92, RULE_LIGHT)                              # ceiling
     f.line(0, 92, 1200, 92, RULE, 3)
     H.window(f, 860, 200, 250, 250, "fy88h-win")
     f.rect(0, 540, 1200, 60, H.grad(f, "fy88h-floor", SAND, GRAIN))
@@ -169,7 +169,7 @@ def levels():
     Y = lambda E: y0 - k * E
     # Co-60 level, 2823,1 keV above the Ni-60 ground state (Q value), at left
     f.line(40, Y(2823), 190, Y(2823), INK, 3)
-    f.tex(115, Y(2823) - 22, r"{}^{60}_{27}\text{Co}", "middle")
+    f.tex(100, Y(2823) + 26, r"{}^{60}_{27}\text{Co}", "middle")
     f.arrow(160, Y(2823) + 3, 262, Y(2505.8) - 3, BETA, 3, 13)
     f.tex(170, Y(2650) + 34, r"\beta^-", "start", BETA)
     for E in (2505.8, 1332.5, 0):
@@ -177,7 +177,7 @@ def levels():
     f.tex(440, Y(2505.8), r"2505{,}8\,\text{keV}", "start")
     f.tex(440, Y(1332.5), r"1332{,}5\,\text{keV}", "start")
     f.tex(440, Y(0), r"0", "start")
-    f.tex(340, Y(0) + 24, r"{}^{60}_{28}\text{Ni}", "middle")
+    f.tex(236, Y(0), r"{}^{60}_{28}\text{Ni}", "end")
     photon(f, 300, Y(2505.8) + 3, 300, Y(1332.5) - 2, GAMMA, 3, 6, 14)
     photon(f, 370, Y(1332.5) + 3, 370, Y(0) - 2, GAMMA, 3, 6, 14)
     f.tex(282, Y(1919), r"1173{,}2", "end", GAMMA)
