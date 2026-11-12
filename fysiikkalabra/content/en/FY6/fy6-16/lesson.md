@@ -188,7 +188,7 @@ The cable coming from the electricity grid goes through the meter to the **consu
 
 <svg data-fig="koti" viewBox="0 0 600 380" role="img" aria-label="Diagram, not to scale: the home electrical system. At the top left a cable with three phase conductors comes from the electricity grid to the consumer unit. In the consumer unit come first the main fuses, three of them, 25 amperes each, and below them the busbars from which three circuits leave. The top circuit is three-phase, its miniature circuit breaker is 16 amperes and it feeds the electric sauna heater. The middle circuit is single-phase, 16 amperes, and it feeds the sockets of the kitchen, to which a kettle is connected. The bottom circuit is the charging station&#x27;s own three-phase circuit: it has a 16 ampere miniature circuit breaker and a residual current device (RCD) with a tripping current of 30 milliamperes. The three-phase wires are drawn as three lines, the single-phase one as one." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy616s-board" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#c4ccd4"/></linearGradient><linearGradient id="fy616s-fuse0" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f1dfb5"/></linearGradient><linearGradient id="fy616s-fuse1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f1dfb5"/></linearGradient><linearGradient id="fy616s-fuse2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f1dfb5"/></linearGradient><linearGradient id="fy616s-stove" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#6c757d"/><stop offset="1" stop-color="#1f2933"/></linearGradient><linearGradient id="fy616s-kettle" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a96a3"/><stop offset="0.3" stop-color="#ffffff"/><stop offset="0.65" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient><linearGradient id="fy616s-spout" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a96a3"/><stop offset="0.3" stop-color="#ffffff"/><stop offset="0.65" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient><linearGradient id="fy616s-box" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#c4ccd4"/></linearGradient></defs>
-  <rect x="20" y="64" width="232" height="302" rx="8" fill="url(#fy616s-board)" stroke="#1f2933" stroke-width="3"/>
+  <rect x="20" y="64" width="276" height="302" rx="8" fill="url(#fy616s-board)" stroke="#1f2933" stroke-width="3"/>
   <line x1="48" y1="14" x2="48" y2="82" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <rect x="39" y="82" width="18" height="40" rx="4" fill="url(#fy616s-fuse0)" stroke="#1f2933" stroke-width="2"/>
   <rect x="39" y="82" width="18" height="7" rx="2" fill="#8a96a3" stroke="#1f2933" stroke-width="1.5"/>
@@ -202,23 +202,23 @@ The cable coming from the electricity grid goes through the meter to the **consu
   <rect x="87" y="82" width="18" height="7" rx="2" fill="#8a96a3" stroke="#1f2933" stroke-width="1.5"/>
   <rect x="87" y="115" width="18" height="7" rx="2" fill="#8a96a3" stroke="#1f2933" stroke-width="1.5"/>
   <foreignObject x="112" y="15.5" width="180" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{grid}$</div></foreignObject>
-  <foreignObject x="120" y="87.5" width="98" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$3 \cdot 25\,\text{A}$</span></div></foreignObject>
+  <foreignObject x="120" y="87.5" width="98" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$3 \cdot 25\,\text{A}$</div></foreignObject>
   <line x1="48" y1="122" x2="48" y2="344" stroke="#b8622d" stroke-width="3" stroke-linecap="butt"/>
   <line x1="72" y1="122" x2="72" y2="344" stroke="#b8622d" stroke-width="3" stroke-linecap="butt"/>
   <line x1="96" y1="122" x2="96" y2="344" stroke="#b8622d" stroke-width="3" stroke-linecap="butt"/>
   <circle cx="48" cy="170" r="4" fill="#b8622d"/>
-  <line x1="48" y1="170" x2="117" y2="170" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="48" y1="170" x2="133" y2="170" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <circle cx="72" cy="176" r="4" fill="#b8622d"/>
-  <line x1="72" y1="176" x2="117" y2="176" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="72" y1="176" x2="133" y2="176" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <circle cx="96" cy="182" r="4" fill="#b8622d"/>
-  <line x1="96" y1="182" x2="117" y2="182" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <rect x="117" y="151" width="34" height="50" rx="4" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="128" y="164" width="12" height="18" rx="2" fill="#1f2933"/>
-  <foreignObject x="85" y="121.5" width="98" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$3 \cdot 16\,\text{A}$</span></div></foreignObject>
-  <line x1="151" y1="170" x2="486" y2="170" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="151" y1="176" x2="486" y2="176" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="151" y1="182" x2="486" y2="182" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="281" y="135.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{sauna heater}$</div></foreignObject>
+  <line x1="96" y1="182" x2="133" y2="182" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="133" y="151" width="34" height="50" rx="4" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="144" y="164" width="12" height="18" rx="2" fill="#1f2933"/>
+  <foreignObject x="101" y="121.5" width="98" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$3 \cdot 16\,\text{A}$</div></foreignObject>
+  <line x1="167" y1="170" x2="486" y2="170" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="167" y1="176" x2="486" y2="176" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="167" y1="182" x2="486" y2="182" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="317" y="135.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{sauna heater}$</div></foreignObject>
   <rect x="492" y="168" width="72" height="44" rx="5" fill="url(#fy616s-stove)" stroke="#1f2933" stroke-width="2.5"/>
   <circle cx="504" cy="164" r="11" fill="#8a96a3" stroke="#1f2933" stroke-width="1.5"/>
   <circle cx="524" cy="164" r="13" fill="#6c757d" stroke="#1f2933" stroke-width="1.5"/>
@@ -227,36 +227,36 @@ The cable coming from the electricity grid goes through the meter to the **consu
   <circle cx="536" cy="150" r="10" fill="#8a96a3" stroke="#1f2933" stroke-width="1.5"/>
   <rect x="502" y="192" width="52" height="6" rx="2" fill="#c92a2a"/>
   <circle cx="48" cy="262" r="4" fill="#b8622d"/>
-  <line x1="48" y1="262" x2="117" y2="262" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <rect x="117" y="237" width="34" height="50" rx="4" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="128" y="250" width="12" height="18" rx="2" fill="#1f2933"/>
-  <foreignObject x="85" y="207.5" width="98" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$16\,\text{A}$</span></div></foreignObject>
-  <line x1="151" y1="262" x2="486" y2="262" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="281" y="221.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{sockets}$</div></foreignObject>
+  <line x1="48" y1="262" x2="133" y2="262" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="133" y="237" width="34" height="50" rx="4" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="144" y="250" width="12" height="18" rx="2" fill="#1f2933"/>
+  <foreignObject x="101" y="207.5" width="98" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$16\,\text{A}$</div></foreignObject>
+  <line x1="167" y1="262" x2="486" y2="262" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="317" y="221.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{sockets}$</div></foreignObject>
   <rect x="498" y="290" width="60" height="8" rx="3" fill="#1f2933"/>
   <path d="M504,290 L509,246 Q528,238 547,246 L552,290 Z" fill="url(#fy616s-kettle)" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
   <path d="M547,250 Q572,256 555,284" fill="none" stroke="#1f2933" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
   <path d="M508,258 L490,246 L505,274 Z" fill="url(#fy616s-spout)" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
   <circle cx="48" cy="334" r="4" fill="#b8622d"/>
-  <line x1="48" y1="334" x2="117" y2="334" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="48" y1="334" x2="133" y2="334" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <circle cx="72" cy="340" r="4" fill="#b8622d"/>
-  <line x1="72" y1="340" x2="117" y2="340" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="72" y1="340" x2="133" y2="340" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <circle cx="96" cy="346" r="4" fill="#b8622d"/>
-  <line x1="96" y1="346" x2="117" y2="346" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <rect x="117" y="315" width="34" height="50" rx="4" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="128" y="328" width="12" height="18" rx="2" fill="#1f2933"/>
-  <foreignObject x="85" y="285.5" width="98" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$3 \cdot 16\,\text{A}$</span></div></foreignObject>
-  <line x1="151" y1="334" x2="199" y2="334" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="151" y1="340" x2="199" y2="340" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="151" y1="346" x2="199" y2="346" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <rect x="199" y="315" width="46" height="50" rx="4" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="208" y="328" width="12" height="18" rx="2" fill="#1f2933"/>
-  <circle cx="232" cy="338" r="6" fill="#1971c2" stroke="#1f2933" stroke-width="1.5"/>
-  <foreignObject x="187" y="285.5" width="74" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$30\,\text{mA}$</span></div></foreignObject>
-  <line x1="245" y1="334" x2="486" y2="334" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="245" y1="340" x2="486" y2="340" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="245" y1="346" x2="486" y2="346" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="281" y="299.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{charging station}$</div></foreignObject>
+  <line x1="96" y1="346" x2="133" y2="346" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="133" y="315" width="34" height="50" rx="4" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="144" y="328" width="12" height="18" rx="2" fill="#1f2933"/>
+  <foreignObject x="101" y="285.5" width="98" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$3 \cdot 16\,\text{A}$</div></foreignObject>
+  <line x1="167" y1="334" x2="227" y2="334" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="167" y1="340" x2="227" y2="340" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="167" y1="346" x2="227" y2="346" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="227" y="315" width="46" height="50" rx="4" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="236" y="328" width="12" height="18" rx="2" fill="#1f2933"/>
+  <circle cx="260" cy="338" r="6" fill="#1971c2" stroke="#1f2933" stroke-width="1.5"/>
+  <foreignObject x="213" y="285.5" width="74" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$30\,\text{mA}$</div></foreignObject>
+  <line x1="273" y1="334" x2="486" y2="334" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="273" y1="340" x2="486" y2="340" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="273" y1="346" x2="486" y2="346" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="317" y="299.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{charging station}$</div></foreignObject>
   <rect x="502" y="300" width="52" height="68" rx="8" fill="url(#fy616s-box)" stroke="#1f2933" stroke-width="2.5"/>
   <rect x="514" y="310" width="28" height="12" rx="2" fill="#d0e6fb" stroke="#1f2933" stroke-width="1.5"/>
   <circle cx="528" cy="342" r="9" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>

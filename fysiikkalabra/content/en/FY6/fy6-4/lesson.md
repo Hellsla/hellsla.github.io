@@ -238,7 +238,7 @@ In the graph the resistor $R_1 = 100\,\Omega$ stays the same and $R_2$ changes. 
   <circle cx="288" cy="142.5" r="6.5" fill="#2f74b5" stroke="#ffffff" stroke-width="2"/>
   <circle cx="288" cy="260.5" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="320" y="56" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#2f74b5">$\text{series}$</div></foreignObject>
-  <foreignObject x="372" y="262" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#e8590c">$\text{parallel}$</div></foreignObject>
+  <foreignObject x="490" y="233" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$\text{parallel}$</div></foreignObject>
   <foreignObject x="406" y="207" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$R_1$</span></div></foreignObject>
 </svg>
 

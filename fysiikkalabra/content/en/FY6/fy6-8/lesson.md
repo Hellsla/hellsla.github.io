@@ -314,24 +314,24 @@ where $R_{\text{s}1}$ is the internal resistance of one battery ($\Omega$). Two 
   <foreignObject x="75" y="13.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{series}$</div></foreignObject>
   <circle cx="130" cy="62" r="7" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
   <polyline points="130,69 130,76" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <rect x="90" y="76" width="80" height="100" rx="12" fill="#eef5f9" stroke="#6b7480" stroke-width="2" stroke-dasharray="8 6"/>
+  <rect x="94" y="76" width="104" height="100" rx="12" fill="#eef5f9" stroke="#6b7480" stroke-width="2" stroke-dasharray="8 6"/>
   <polyline points="130,76 130,99" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
   <line x1="106" y1="99" x2="154" y2="99" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
   <line x1="118" y1="113" x2="142" y2="113" stroke="#1f2933" stroke-width="7" stroke-linecap="butt"/>
   <polyline points="130,113 130,128" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
   <rect x="120" y="130" width="20" height="40" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
   <polyline points="130,170 130,176" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <foreignObject x="160" y="91.5" width="30" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$E$</div></foreignObject>
-  <foreignObject x="146" y="135.5" width="44" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$R_\text{s}$</div></foreignObject>
-  <rect x="90" y="176" width="80" height="100" rx="12" fill="#eef5f9" stroke="#6b7480" stroke-width="2" stroke-dasharray="8 6"/>
+  <foreignObject x="162" y="91.5" width="30" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$E$</div></foreignObject>
+  <foreignObject x="148" y="135.5" width="44" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$R_\text{s}$</div></foreignObject>
+  <rect x="94" y="176" width="104" height="100" rx="12" fill="#eef5f9" stroke="#6b7480" stroke-width="2" stroke-dasharray="8 6"/>
   <polyline points="130,176 130,199" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
   <line x1="106" y1="199" x2="154" y2="199" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
   <line x1="118" y1="213" x2="142" y2="213" stroke="#1f2933" stroke-width="7" stroke-linecap="butt"/>
   <polyline points="130,213 130,228" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
   <rect x="120" y="230" width="20" height="40" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
   <polyline points="130,270 130,276" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <foreignObject x="160" y="191.5" width="30" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$E$</div></foreignObject>
-  <foreignObject x="146" y="235.5" width="44" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$R_\text{s}$</div></foreignObject>
+  <foreignObject x="162" y="191.5" width="30" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$E$</div></foreignObject>
+  <foreignObject x="148" y="235.5" width="44" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$R_\text{s}$</div></foreignObject>
   <polyline points="130,276 130,283" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
   <circle cx="130" cy="290" r="7" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
   <foreignObject x="86" y="47.5" width="24" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$+$</div></foreignObject>
@@ -342,22 +342,24 @@ where $R_{\text{s}1}$ is the internal resistance of one battery ($\Omega$). Two 
   <polyline points="445,69 445,96" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
   <circle cx="445" cy="96" r="6" fill="#1f2933"/>
   <polyline points="380,126 380,96 510,96 510,126" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <rect x="340" y="126" width="80" height="100" rx="12" fill="#eef5f9" stroke="#6b7480" stroke-width="2" stroke-dasharray="8 6"/>
+  <rect x="344" y="126" width="104" height="100" rx="12" fill="#eef5f9" stroke="#6b7480" stroke-width="2" stroke-dasharray="8 6"/>
   <polyline points="380,126 380,149" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
   <line x1="356" y1="149" x2="404" y2="149" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
   <line x1="368" y1="163" x2="392" y2="163" stroke="#1f2933" stroke-width="7" stroke-linecap="butt"/>
   <polyline points="380,163 380,178" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
   <rect x="370" y="180" width="20" height="40" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
   <polyline points="380,220 380,226" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <foreignObject x="410" y="141.5" width="30" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$E$</div></foreignObject>
-  <foreignObject x="396" y="185.5" width="44" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$R_\text{s}$</div></foreignObject>
-  <rect x="470" y="126" width="80" height="100" rx="12" fill="#eef5f9" stroke="#6b7480" stroke-width="2" stroke-dasharray="8 6"/>
+  <foreignObject x="412" y="141.5" width="30" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$E$</div></foreignObject>
+  <foreignObject x="398" y="185.5" width="44" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$R_\text{s}$</div></foreignObject>
+  <rect x="474" y="126" width="104" height="100" rx="12" fill="#eef5f9" stroke="#6b7480" stroke-width="2" stroke-dasharray="8 6"/>
   <polyline points="510,126 510,149" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
   <line x1="486" y1="149" x2="534" y2="149" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
   <line x1="498" y1="163" x2="522" y2="163" stroke="#1f2933" stroke-width="7" stroke-linecap="butt"/>
   <polyline points="510,163 510,178" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
   <rect x="500" y="180" width="20" height="40" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
   <polyline points="510,220 510,226" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <foreignObject x="542" y="141.5" width="30" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$E$</div></foreignObject>
+  <foreignObject x="528" y="185.5" width="44" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$R_\text{s}$</div></foreignObject>
   <polyline points="380,226 380,256 510,256 510,226" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
   <circle cx="445" cy="256" r="6" fill="#1f2933"/>
   <polyline points="445,256 445,283" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>

@@ -162,16 +162,17 @@ def ui_graph():
 
 # --- Kaava: cells in series and in parallel -----------------------------------------------------------------------
 def boxed_cell(f, x, y, label=True):
-    """A cell's model in a dashed outline: plates above, R_s below; the outline is 100 high, centred on y."""
-    outline(f, x - 40, y - 50, 80, 100)
+    """A cell's model in a dashed outline: plates above, R_s below; the outline is 100 high, centred on y, and reaches
+    further right than left so that E and R_s sit inside it, clear of its dashed edge."""
+    outline(f, x - 36, y - 50, 104, 100)
     wire(f, (x, y - 50), (x, y - 27))
     cell(f, x, y - 20)
     wire(f, (x, y - 13), (x, y + 2))
     resistor(f, x, y + 24, True, length=40, width=20)
     wire(f, (x, y + 44), (x, y + 50))
     if label:
-        f.tex(x + 30, y - 20, "E", "start", w=30)
-        f.tex(x + 16, y + 24, r"R_\text{s}", "start", w=44)
+        f.tex(x + 32, y - 20, "E", "start", w=30)
+        f.tex(x + 18, y + 24, r"R_\text{s}", "start", w=44)
 
 
 def connections():
@@ -196,7 +197,7 @@ def connections():
     terminal(f, xm, 62); wire(f, (xm, 69), (xm, 96)); node(f, xm, 96)
     wire(f, (xl, 126), (xl, 96), (xr, 96), (xr, 126))
     boxed_cell(f, xl, 176, label=True)
-    boxed_cell(f, xr, 176, label=False)
+    boxed_cell(f, xr, 176, label=True)
     wire(f, (xl, 226), (xl, 256), (xr, 256), (xr, 226))
     node(f, xm, 256); wire(f, (xm, 256), (xm, 283)); terminal(f, xm, 290)
     f.tex(xm - 20, 62, "+", "end", w=24); f.tex(xm - 20, 290, "-", "end", w=24)

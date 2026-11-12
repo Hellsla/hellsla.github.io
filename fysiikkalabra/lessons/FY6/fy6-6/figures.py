@@ -71,13 +71,12 @@ def jako():
               ylabel=None, grid=True)
     rows = [(46, r"\text{sarjaan: sama virta } I = 1{,}0\,\text{A}", None), (88, r"R_1 = 4\,\Omega", 4.0), (130, r"R_2 = 8\,\Omega", 8.0),
             (184, r"\text{rinnan: sama jännite } U = 12\,\text{V}", None), (226, r"R_1 = 4\,\Omega", 36.0), (268, r"R_2 = 8\,\Omega", 18.0)]
-    g = heat_grad(f, "fy66-jako-bar")
     for y, t, P in rows:
         if P is None:
             f.tex(178, y, t, "start", w=360, bg=True)
             continue
         f.tex(158, y, t, "end", w=130)
-        f.rect(ax.X(0), y - 13, ax.X(P) - ax.X(0), 26, g, INK, 2, 3)
+        f.rect(ax.X(0), y - 13, ax.X(P) - ax.X(0), 26, HEAT_LIGHT, HEAT, 1.5, 3)      # flat, as fy2-6/fi-bars: the colour means heat, not a scale
         f.tex(ax.X(P) + 10, y, fi(P, 1) + r"\,\text{W}" if P < 10 else fi(P) + r"\,\text{W}", "start", w=86)
     f.line(24, 157, 576, 157, RULE, 1.5, "6 5")
     return f.svg()
@@ -118,7 +117,7 @@ def graph():
         ax.point(i, p, INK)
     f.tex(ax.X(math.sqrt(5)) - 14, ax.Y(40) + 4, r"R = 8\,\Omega", "end", w=110)
     f.tex(ax.X(2.5) + 8, ax.Y(25), r"R = 4\,\Omega", "start", HEAT, w=96)
-    f.tex(ax.X(1) + 12, ax.Y(4) - 18, r"4{,}0\,\text{W}", "start", HEAT, w=80)
+    f.tex(ax.X(0) + 8, ax.Y(4) - 20, r"4{,}0\,\text{W}", "start", HEAT, w=80)     # over its guide by the axis, clear of the 8 Ω curve
     f.tex(ax.X(2) + 14, ax.Y(16) + 16, r"16\,\text{W}", "start", HEAT, w=70)
     return f.svg()
 

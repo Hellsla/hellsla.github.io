@@ -115,9 +115,13 @@
   <circle cx="383" cy="164.5" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
   <circle cx="415.5" cy="117" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="381.5" y="65" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#1971c2">$\text{vastus}$</div></foreignObject>
-  <foreignObject x="312.5" y="329" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$\text{lamppu}$</div></foreignObject>
-  <foreignObject x="179" y="199.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#1971c2"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$U_R \approx 3{,}4\,\text{V}$</span></div></foreignObject>
-  <foreignObject x="303" y="279.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$U_\text{L} \approx 2{,}6\,\text{V}$</span></div></foreignObject>
+  <foreignObject x="318.5" y="102.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#e8590c"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{lamppu}$</span></div></foreignObject>
+  <line x1="289" y1="239.5" x2="227" y2="239.5" stroke="#6b7480" stroke-width="1" stroke-linecap="butt"/>
+  <circle cx="295" cy="239.5" r="3" fill="#6b7480"/>
+  <foreignObject x="102" y="225" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$U_R \approx 3{,}4\,\text{V}$</span></div></foreignObject>
+  <line x1="301" y1="277.5" x2="423.5" y2="277.5" stroke="#6b7480" stroke-width="1" stroke-linecap="butt"/>
+  <circle cx="295" cy="277.5" r="3" fill="#6b7480"/>
+  <foreignObject x="427.5" y="263" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$U_\text{L} \approx 2{,}6\,\text{V}$</span></div></foreignObject>
   <foreignObject x="303" y="364.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$189\,\text{mA}$</span></div></foreignObject>
 </svg>
 

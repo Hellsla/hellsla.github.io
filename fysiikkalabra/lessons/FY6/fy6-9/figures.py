@@ -188,10 +188,11 @@ def potential():
         f.tex(ax.X(x), 314, name, "middle", w=28)
         v = {0: 0, 4.3: U - RI, 6.4: E, 8: 0}[x]
         ax.point(x, v, POT, 5.5)
+    # the changes under the curve between gridlines, each under its own step; B's potential above its point
     f.tex(ax.X(1) + 10, ax.Y(1.5), r"+4{,}5\,\text{V}", "start", w=100)
-    f.tex(ax.X(3.1), ax.Y(3.0), r"-0{,}88\,\text{V}", "middle", w=100, bg=True)
-    f.tex(ax.X(4.3), ax.Y(U - RI) - 24, r"3{,}62\,\text{V}", "middle", POT, w=90, bg=True)
-    f.tex(ax.X(5.5), ax.Y(3.0), r"-0{,}22\,\text{V}", "middle", w=100, bg=True)
+    f.tex(ax.X(3.1), ax.Y(2.5), r"-0{,}88\,\text{V}", "middle", w=100)
+    f.tex(ax.X(4.3), ax.Y(4.5), r"3{,}62\,\text{V}", "middle", POT, w=90)
+    f.tex(ax.X(5.5), ax.Y(2.5), r"-0{,}22\,\text{V}", "middle", w=100)
     f.tex(ax.X(6.8) - 10, ax.Y(1.5), r"-3{,}40\,\text{V}", "end", w=100, bg=True)
     return f.svg()
 
@@ -205,19 +206,28 @@ def energy_flow():
             "siirtyvät lämpönä ympäristöön.")
     k = 10.0                                    # px per Wh
     y_top, W, Wk, WR, Ws = 96, 9.0, 7.6, 1.12, 0.28
-    H.grad(f, "fy69-flow", HEAT_LIGHT, HEAT, horizontal=True)
     yb = y_top + W * k                          # 186
     x1, x2 = 250, 370                           # where the two losses leave the band
-    pts = [(40, y_top), (520, y_top), (520, y_top - 14), (566, y_top + Wk * k / 2), (520, y_top + Wk * k + 14),
-           (520, y_top + Wk * k), (x2 + Ws * k, y_top + Wk * k), (x2 + Ws * k, 266), (x2 + Ws * k + 8, 266),
-           (x2 + Ws * k / 2, 290), (x2 - 8, 266), (x2, 266), (x2, y_top + Wk * k + Ws * k),
-           (x1 + WR * k, y_top + (W - WR) * k), (x1 + WR * k, 266), (x1 + WR * k + 9, 266), (x1 + WR * k / 2, 292),
-           (x1 - 9, 266), (x1, 266), (x1, yb), (40, yb)]
-    f.path("M" + " L".join(f"{n(a)},{n(b)}" for a, b in pts) + " Z", "url(#fy69-flow)", INK, 1.5)
+    # the colours of fy2-4/lamp (teacher 2026-11-11, group C): grey the charger's electrical energy until the battery,
+    # green the useful part stored in the battery, orange the two losses to internal energy; each gradient runs along
+    # its own flow, and the widths stay to scale
+    def lin(gid, c0, c1, xa, ya, xb, yb_):
+        f.defs_add(f'<linearGradient id="{gid}" gradientUnits="userSpaceOnUse" x1="{n(xa)}" y1="{n(ya)}" x2="{n(xb)}" y2="{n(yb_)}">'
+                   f'<stop offset="0" stop-color="{c0}"/><stop offset="1" stop-color="{c1}"/></linearGradient>')
+        return f"url(#{gid})"
+    yr, yk = y_top + (W - WR) * k, y_top + Wk * k                 # the band's bottom after the first loss; the useful part's bottom
+    def poly(pts, fill): f.path("M" + " L".join(f"{n(a)},{n(b)}" for a, b in pts) + " Z", fill, INK, 1.5)
+    poly([(40, y_top), (x2, y_top), (x2, yr), (x1, yr), (x1, yb), (40, yb)], lin("fy69-flow-in", RULE_LIGHT, RULE, 40, 0, x2, 0))
+    poly([(x2, y_top), (520, y_top), (520, y_top - 14), (566, y_top + Wk * k / 2), (520, yk + 14), (520, yk), (x2, yk)],
+         lin("fy69-flow-ok", GOOD_LIGHT, GOOD, x2, 0, 566, 0))
+    poly([(x1, yr), (x1 + WR * k, yr), (x1 + WR * k, 266), (x1 + WR * k + 9, 266), (x1 + WR * k / 2, 292), (x1 - 9, 266), (x1, 266)],
+         lin("fy69-flow-h1", HEAT_LIGHT, HEAT, 0, yr, 0, 292))
+    poly([(x2, yk), (x2 + Ws * k, yk), (x2 + Ws * k, 266), (x2 + Ws * k + 8, 266), (x2 + Ws * k / 2, 290), (x2 - 8, 266), (x2, 266)],
+         lin("fy69-flow-h2", HEAT_LIGHT, HEAT, 0, yk, 0, 290))
     f.tex(40, y_top - 26, r"W_\text{lat} = 9{,}0\,\text{Wh}", "start", w=200)
     f.tex(40, y_top - 58, r"\text{laturista}", "start", w=120)
-    f.tex(566, y_top - 58, r"\text{akkuun kemiallisena}", "end", w=260)
-    f.tex(566, y_top - 26, r"7{,}6\,\text{Wh}", "end", w=100)
+    f.tex(566, y_top - 58, r"\text{akkuun kemiallisena}", "end", GOOD, w=260)
+    f.tex(566, y_top - 26, r"7{,}6\,\text{Wh}", "end", GOOD, w=100)
     f.tex(x1 + WR * k / 2 - 22, 314, r"1{,}1\,\text{Wh}", "end", w=100)
     f.tex(x1 + WR * k / 2 - 22, 282, r"\text{laturi ja johdot}", "end", w=200)
     f.tex(x2 + Ws * k / 2 + 22, 314, r"0{,}3\,\text{Wh}", "start", w=100)

@@ -174,7 +174,6 @@ Sarjaan kytkettyjen vastusten läpi kulkee sama virta (luku *Vastusten sarja- ja
 Kuvassa samat vastukset $4\,\Omega$ ja $8\,\Omega$ on kytketty $12\,\text{V}$:n lähteeseen. Ensin ne ovat sarjassa ja sitten rinnan. Kummassakin kytkennässä vastusten tehot ovat yhteensä yhtä suuret kuin lähteen antama teho $UI$. Näin on, koska energia säilyy. Sarjaankytkennässä $4{,}0\,\text{W} + 8{,}0\,\text{W} = 12\,\text{W}$. Lähteen teho on $12\,\text{V} \cdot 1{,}0\,\text{A} = 12\,\text{W}$.
 
 <svg data-fig="jako" viewBox="0 0 600 380" role="img" aria-label="Vaakapylväskuvaaja mittakaavassa. Siinä näkyvät vastusten 4 ohmia ja 8 ohmia tehot P watteina, kun ne on kytketty 12 voltin jännitelähteeseen. Ylhäällä on sarjaankytkentä. Molempien läpi kulkee sama virta 1,0 A. Vastuksen 4 ohmia teho on 4,0 W ja vastuksen 8 ohmia teho 8,0 W. Suurempi resistanssi saa siis suuremman tehon. Alhaalla on rinnankytkentä. Molempien yli on sama jännite 12 V. Vastuksen 4 ohmia teho on 36 W ja vastuksen 8 ohmia 18 W. Pienempi resistanssi saa siis suuremman tehon." style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy66-jako-bar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
   <line x1="247.5" y1="318" x2="247.5" y2="24" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="325" y1="318" x2="325" y2="24" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="402.5" y1="318" x2="402.5" y2="24" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -195,17 +194,17 @@ Kuvassa samat vastukset $4\,\Omega$ ja $8\,\Omega$ on kytketty $12\,\text{V}$:n 
   <foreignObject x="512" y="303.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$P\ (\text{W})$</div></foreignObject>
   <foreignObject x="178" y="31.5" width="360" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{sarjaan: sama virta } I = 1{,}0\,\text{A}$</span></div></foreignObject>
   <foreignObject x="28" y="73.5" width="130" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$R_1 = 4\,\Omega$</div></foreignObject>
-  <rect x="170" y="75" width="31" height="26" rx="3" fill="url(#fy66-jako-bar)" stroke="#1f2933" stroke-width="2"/>
+  <rect x="170" y="75" width="31" height="26" rx="3" fill="#ffc078" stroke="#e8590c" stroke-width="1.5"/>
   <foreignObject x="211" y="73.5" width="86" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$4{,}0\,\text{W}$</div></foreignObject>
   <foreignObject x="28" y="115.5" width="130" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$R_2 = 8\,\Omega$</div></foreignObject>
-  <rect x="170" y="117" width="62" height="26" rx="3" fill="url(#fy66-jako-bar)" stroke="#1f2933" stroke-width="2"/>
+  <rect x="170" y="117" width="62" height="26" rx="3" fill="#ffc078" stroke="#e8590c" stroke-width="1.5"/>
   <foreignObject x="242" y="115.5" width="86" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$8{,}0\,\text{W}$</div></foreignObject>
   <foreignObject x="178" y="169.5" width="360" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{rinnan: sama jännite } U = 12\,\text{V}$</span></div></foreignObject>
   <foreignObject x="28" y="211.5" width="130" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$R_1 = 4\,\Omega$</div></foreignObject>
-  <rect x="170" y="213" width="279" height="26" rx="3" fill="url(#fy66-jako-bar)" stroke="#1f2933" stroke-width="2"/>
+  <rect x="170" y="213" width="279" height="26" rx="3" fill="#ffc078" stroke="#e8590c" stroke-width="1.5"/>
   <foreignObject x="459" y="211.5" width="86" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$36\,\text{W}$</div></foreignObject>
   <foreignObject x="28" y="253.5" width="130" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$R_2 = 8\,\Omega$</div></foreignObject>
-  <rect x="170" y="255" width="139.5" height="26" rx="3" fill="url(#fy66-jako-bar)" stroke="#1f2933" stroke-width="2"/>
+  <rect x="170" y="255" width="139.5" height="26" rx="3" fill="#ffc078" stroke="#e8590c" stroke-width="1.5"/>
   <foreignObject x="319.5" y="253.5" width="86" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$18\,\text{W}$</div></foreignObject>
   <line x1="24" y1="157" x2="576" y2="157" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
 </svg>
@@ -301,7 +300,7 @@ Laitteeseen merkitty teho, esimerkiksi $230\,\text{V}$ ja $900\,\text{W}$, on se
   <circle cx="403" cy="113.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="315.5" y="55.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$R = 8\,\Omega$</div></foreignObject>
   <foreignObject x="488" y="141" width="96" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$R = 4\,\Omega$</div></foreignObject>
-  <foreignObject x="261.5" y="247.5" width="80" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$4{,}0\,\text{W}$</div></foreignObject>
+  <foreignObject x="104" y="245.5" width="80" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$4{,}0\,\text{W}$</div></foreignObject>
   <foreignObject x="417" y="210.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$16\,\text{W}$</div></foreignObject>
 </svg>
 

@@ -251,8 +251,10 @@ def check_graph():
 
 # --- the opening illustration -------------------------------------------------------------------------------------
 def hero():
+    """The comb lifting paper bits and the balloon on the wall: the chair and the sweater were dropped (teacher 2026-11-11,
+    illustration audit), and the two remaining scenes moved together into the middle."""
     f = H.hero("fy610-hero", "Kuvitus: huoneen vaalea seinä, jossa sininen ilmapallo pysyy kiinni seinässä ilman "
-               "teippiä, ja sen naru roikkuu alas. Oikealla tuolin selkänojalla roikkuu villapaita. Vasemmalla pöydällä on "
+               "teippiä, ja sen naru roikkuu alas. Vasemmalla pöydällä on "
                "muovikampa, jota kohti pienet paperisilpun palat nousevat pöydältä.")
     f.rect(0, 0, 1200, 600, PAPER)
     f.rect(0, 0, 1200, 430, H.grad(f, "fy610h-wall", GLASS, PAPER))
@@ -261,33 +263,25 @@ def hero():
     for k in range(5):
         f.line(0, 470 + 30 * k, 1200, 470 + 30 * k, SAND_DARK, 2)
     # the balloon on the wall, with a faint shadow and its string
-    f.add(f'<ellipse cx="612" cy="226" rx="98" ry="118" fill="{RULE}" fill-opacity="0.35"/>')
+    bx = 830
+    f.add(f'<ellipse cx="{bx + 12}" cy="226" rx="98" ry="118" fill="{RULE}" fill-opacity="0.35"/>')
     f.defs_add(f'<radialGradient id="fy610h-balloon" cx="0.35" cy="0.3" r="0.85"><stop offset="0" stop-color="{COLD_LIGHT}"/>'
                f'<stop offset="1" stop-color="{COLD}"/></radialGradient>')
-    f.path("M600,346 C590,380 616,410 600,446 C586,480 612,510 598,540", stroke=INK, w=2.5, extra='stroke-linecap="round"')
-    f.path("M590,344 L600,328 L610,344 Z", COLD, INK, 2.5)
-    f.add('<ellipse cx="600" cy="210" rx="98" ry="120" fill="url(#fy610h-balloon)" stroke="#1f2933" stroke-width="3"/>')
-    f.path("M548,140 Q560,112 590,104", stroke=WHITE, w=8, extra='stroke-linecap="round" stroke-opacity="0.7"')
-    # the chair with the wool sweater over its back
-    f.rect(880, 210, 18, 330, H.grad(f, "fy610h-leg1", SAND, GRAIN, horizontal=True), INK, 3, rx=6)
-    f.rect(1060, 210, 18, 330, H.grad(f, "fy610h-leg2", SAND, GRAIN, horizontal=True), INK, 3, rx=6)
-    f.rect(866, 196, 226, 30, SAND, INK, 3, rx=10)
-    f.rect(866, 392, 226, 28, SAND, INK, 3, rx=8)
-    f.path("M880,206 L1080,206 L1102,330 Q1060,346 1040,322 L1020,268 L940,268 L920,322 Q898,346 858,330 Z",
-           H.grad(f, "fy610h-wool", HOT_LIGHT, HOT), INK, 3)
-    for k in range(4):
-        y = 226 + 14 * k
-        f.path(" ".join(f"M{900 + 22 * j},{y} q11,9 22,0" for j in range(8)), stroke=WHITE, w=2,
-               extra='stroke-linecap="round" stroke-opacity="0.55"')
+    f.path(f"M{bx},346 C{bx - 10},380 {bx + 16},410 {bx},446 C{bx - 14},480 {bx + 12},510 {bx - 2},540", stroke=INK, w=2.5, extra='stroke-linecap="round"')
+    f.path(f"M{bx - 10},344 L{bx},328 L{bx + 10},344 Z", COLD, INK, 2.5)
+    f.add(f'<ellipse cx="{bx}" cy="210" rx="98" ry="120" fill="url(#fy610h-balloon)" stroke="#1f2933" stroke-width="3"/>')
+    f.path(f"M{bx - 52},140 Q{bx - 40},112 {bx - 10},104", stroke=WHITE, w=8, extra='stroke-linecap="round" stroke-opacity="0.7"')
     # the table with a comb lifting paper bits
-    f.rect(70, 330, 330, 22, H.grad(f, "fy610h-top", SAND, GRAIN), INK, 3, rx=6)
-    f.rect(96, 352, 18, 190, GRAIN, INK, 3, rx=5); f.rect(356, 352, 18, 190, GRAIN, INK, 3, rx=5)
-    f.rect(190, 220, 150, 22, IRON, INK, 3, rx=6)                        # the comb, held above the table
+    tx = 200
+    f.rect(70 + tx, 330, 330, 22, H.grad(f, "fy610h-top", SAND, GRAIN), INK, 3, rx=6)
+    f.rect(96 + tx, 352, 18, 190, GRAIN, INK, 3, rx=5); f.rect(356 + tx, 352, 18, 190, GRAIN, INK, 3, rx=5)
+    f.rect(190 + tx, 220, 150, 22, IRON, INK, 3, rx=6)                   # the comb, held above the table
     for k in range(12):
-        f.rect(196 + 12 * k, 242, 6, 22, IRON, INK, 1.5, rx=2)
+        f.rect(196 + tx + 12 * k, 242, 6, 22, IRON, INK, 1.5, rx=2)
     bits = [(206, 300, 10), (236, 286, -18), (262, 306, 24), (292, 290, 8), (318, 312, -30), (180, 318, 14),
             (246, 318, -6), (300, 320, 40), (330, 324, -12)]
     for x, y, rot in bits:
+        x += tx
         f.add(f'<rect x="{x - 9}" y="{y - 5}" width="18" height="10" rx="2" fill="{WHITE}" stroke="{INK}" stroke-width="2" '
               f'transform="rotate({rot} {x} {y})"/>')
     return f.svg()

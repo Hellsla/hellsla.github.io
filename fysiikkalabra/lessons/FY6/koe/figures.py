@@ -188,9 +188,16 @@ def characteristics():
     for u, i in zip(U2, IR2): ax.point(i, u, COLD)
     for u, i in zip(U2, IL2): ax.point(i, u, HEAT)
     f.tex(ax.X(345), ax.Y(6.8), r"\text{vastus}", "end", COLD)
-    f.tex(ax.X(205), ax.Y(1.2), r"\text{lamppu}", "start", HEAT)
-    f.tex(ax.X(I2D) - 8, ax.Y(3.95), r"U_R \approx 3{,}4\,\text{V}", "end", COLD, bg=True)
-    f.tex(ax.X(I2D) + 8, ax.Y(2.25), r"U_\text{L} \approx 2{,}6\,\text{V}", "start", HEAT, bg=True)
+    f.tex(ax.X(300) - 14, ax.Y(6.0), r"\text{lamppu}", "end", HEAT, bg=True)          # at the end of its curve
+    # the two readings at 189 mA, each at the height it is read and joined to its point by a thin leader: there is no
+    # room for a label between the 189 mA line and the 300 mA guide
+    for u, x_lab, anchor, tex, col in ((3.4, ax.X(0) + 12, "start", r"U_R \approx 3{,}4\,\text{V}", COLD),
+                                       (2.6, ax.X(300) + 12, "start", r"U_\text{L} \approx 2{,}6\,\text{V}", HEAT)):
+        x0, y0 = ax.X(I2D), ax.Y(u)
+        x_end = x_lab - 4 if x_lab > x0 else x_lab + 125                  # the leader stops short of the label's box
+        f.line(x0 + (6 if x_lab > x0 else -6), y0, x_end, y0, MUTED, 1)
+        f.circle(x0, y0, 3, MUTED)
+        f.tex(x_lab, y0, tex, anchor, col, bg=True)
     f.tex(ax.X(I2D) + 8, ax.Y(0.45), r"189\,\text{mA}", "start", MUTED, bg=True)
     return f.svg()
 
