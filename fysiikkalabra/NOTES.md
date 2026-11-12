@@ -390,6 +390,15 @@ Exam questions are studied for patterns only (§7); every task is original, with
   FIGURES entry and the functions and data it uses), not the rest of that figures.py: a change to that figure stales
   the exercises (category `figure`), a change to another figure does not, and the lesson's own hash is untouched by
   an exercise's figure. Packets carry the figure's description and, for the science reviewer, its code; never an SVG.
+- **Added exercises get a delta review** (teacher 2026-11-12). When the only change to an exercise set is whole
+  exercises added, or one replaced (an id removed and another added, or the same id with its text and solution
+  rewritten), and every other exercise is exactly as passed (exercises.json entry, level, order, core mark, its
+  solutions.md section, its answers.py value, the figures it shows), `reviews.py scope --exercises` gives the category
+  `added-exercise`: delta for all three reviewers. A new figure or variant that only the added exercises show belongs
+  to them; a change to a figure a surviving exercise shows, or any other edit of the set, is classified as before.
+  Keep such a change apart from other edits, or the whole set is reviewed in full. The delta packet carries the added
+  (and replaced) exercises in full and a list of the whole set; the PASS names its base on line 3 (`SCOPE: …`) and
+  `reviews.py verify` re-derives it in CI.
 - **Conceptual checks.** Tarkista osaamisesi has about 2–3 multiple-choice checks of the chapter's key concepts when
   the concepts call for them, each with misconception-based distractors and feedback of its own; prefer converting a
   good exit-ticket question or replacing a redundant task over adding one. `python scripts/assessment.py <COURSE>`

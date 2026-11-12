@@ -28,7 +28,10 @@ An *exercise* packet (`--exercises`, teacher 2026-10-28, README "Exercises") is 
 reviews, hash and scope are its own (`reviews.py ... --exercises`). In place of the lesson's files it carries the
 **exercise brief**: what of the lesson an exercise writer or reviewer needs (the formula sections, the worked example
 not to repeat, the misconception, the summary; figure bodies left out) and the current exercises, so no agent reads
-the lesson text, the inquiry or the simulation to work on exercises.
+the lesson text, the inquiry or the simulation to work on exercises. When the change is only whole exercises added or
+replaced (category `added-exercise`, teacher 2026-11-12; `added_delta`), each reviewer's delta packet holds in place of
+the diff the added exercises in full (entry and solution; for science answers.py and their figures' code), the
+removed ones, a list of the whole set and its previous report, and asks for line 3 `SCOPE: …`, which `verify` checks.
 
 A *visual* packet (teacher 2026-10-31, `.claude/agents/visual-editorial-reviewer.md`) holds what the visual &
 editorial reviewer judges and nothing else: the standard's dimensions 7–10 and severities, NOTES.md §1 and the figure
@@ -227,11 +230,12 @@ def reviewer_rules(role, lid, both=False):
                "\nThe exercise set (exercises/, answers.py) is reviewed apart from the lesson and is not yours to judge here.\n"))
 
 
-def figures_used(folder, role, names=("exercises.json",)):
+def figures_used(folder, role, names=("exercises.json",), text=None):
     """The figures the tasks show by id (scripts/figcat.py): the description and what it gives away for every role, the
-    code that draws it (its data) for the science reviewer. Never an SVG body: the captures show the drawing."""
+    code that draws it (its data) for the science reviewer. Never an SVG body: the captures show the drawing. `text`:
+    only the figures this text refers to (the added exercises of an added-exercise delta), in place of the files."""
     import figcat
-    ids = figcat.refs_in(" ".join(courses.lesson_file(folder, n).read_text() for n in names if courses.lesson_file(folder, n).is_file()))
+    ids = figcat.refs_in(text if text is not None else " ".join(courses.lesson_file(folder, n).read_text() for n in names if courses.lesson_file(folder, n).is_file()))
     if not ids: return ""
     cat = {f["id"]: f for f in figcat.load()["figures"]}
     out = "\n## Figures the tasks show (by id; scripts/figcat.py)\n"
@@ -260,6 +264,50 @@ def figures_available(folder):
             "```\n" + "\n".join(lines) + "\n```\n")
 
 
+def added_delta(folder, role, sc):
+    """The delta of an added-exercise change (reviews.py added_exercises, teacher 2026-11-12) for any reviewer: the
+    added exercises in full (exercises.json entry and solutions.md section; for the science reviewer answers.py and the
+    code of the figures they show, never an SVG), the removed ones if they were replaced, a list of the whole set for
+    fit and progression, and the reviewer's previous report. (section text, figure-reference text of the added
+    exercises), or None when the change is no longer only that (the usual delta packet then)."""
+    import reviews
+    old, new = reviews.Commit(sc["base"]), reviews.WorkTree()
+    ax = reviews.added_exercises(folder, old, new)
+    if ax is None: return None
+    at = lambda n: courses.lesson_rel(folder, n)
+    A, _, _ = reviews._exercise_items(old.source(at("exercises.json"))); B, ob, db = reviews._exercise_items(new.source(at("exercises.json")))
+    SA, SB = dict(reviews._solution_sections(old.source(at("solutions.md")))[1]), dict(reviews._solution_sections(new.source(at("solutions.md")))[1])
+    core = reviews._core(db)
+    one = lambda i, e, sol: (f"\n#### {i}\n```json\n{json.dumps(e, ensure_ascii=False, indent=1)}\n```\n"
+                             f"```markdown\n## {i}\n{sol or '(no solution section)'}\n```\n")
+    prev = (review_dir(folder, "exercises") / f"{role}.md").read_text()
+    what = ("the physics of each added exercise as in a full review (law, conditions, data, answer, unit, tolerance, its solution complete; recompute its answers from answers.py below)"
+            if role == "science" else "each added exercise as in a full review (level, wording, its solution step by step), and from the list of the whole set whether it fits: "
+            "its level, the progression within that level, no repeat of another exercise or of the worked example, the mix of kinds" if role == "pedagogy" else
+            "each added exercise and its solution in their captures (mathematical typography, Finnish, the figure it shows, layout at 360 px), and that the set still reads as one")
+    added = ", ".join(f"`{i}`" for i in ax["added"]); removed = ", ".join(f"`{i}`" for i in ax["removed"])
+    out = (f"\n## Delta review: whole exercises added (teacher 2026-11-12)\nYou passed this exercise set earlier (report below). Since then only whole exercises were "
+           f"added{' or replaced' if ax['removed'] else ''}: {added}" + (f"; removed (replaced): {removed}" if ax["removed"] else "") + ". "
+           "Every other exercise, its solution, its answer and the figures it shows are exactly as you passed them (`scripts/reviews.py added_exercises` checked this), so do not re-review them. "
+           f"Judge {what}. If that cannot be done reliably this way, write `ESCALATE: full review needed` as line 3 of your report (verdict FAIL) and stop.\n"
+           "\n### The added exercises (exercises.json entry and solutions.md section)\n" + "".join(one(i, B[i][1], SB.get(i)) for i in ax["added"]))
+    if ax["removed"]:
+        out += "\n### The removed exercises, as you passed them (replaced by the added ones)\n" + "".join(one(i, A[i][1], SA.get(i)) for i in ax["removed"])
+    first = lambda e: re.sub(r"\s+", " ", str(e.get("text", ""))).strip()[:110]
+    rows = [f"- {lvl[-1]} · `{i}`" + (" · core" if i in core else "") + (f" · {B[i][1]['kind']}" if B[i][1].get("kind") else "")
+            + (" · **new**" if i in ax["added"] else "") + f": {first(B[i][1])}" for lvl in reviews.EXERCISE_LEVELS for i in ob[lvl]]
+    out += (f"\n### The whole set now ({len(rows)} exercises: level · id · core · kind · first words; the page numbers them in this order)\n" + "\n".join(rows) + "\n"
+            f"\n### Your previous report\n```\n{prev.strip()}\n```\n")
+    if role == "science": out += block(courses.lesson_file(folder, "answers.py"), f"{at('answers.py')} (now; the lines of the added exercises are new)")
+    return out, " ".join(json.dumps(B[i][1], ensure_ascii=False) + "\n" + (SB.get(i) or "") for i in ax["added"])
+
+
+def scope_line(sc):
+    """The line 3 a PASS of an added-exercise delta review writes, so `reviews.py verify` can re-derive what it covered."""
+    return (f"\n**Line 3 of a PASS report** (after the hash): `SCOPE: delta added-exercise from {sc['from']} base {sc['base'][:12]}` exactly, so CI "
+            "can check that nothing but the added exercises changed since the version you passed (`reviews.py verify`).\n")
+
+
 def exercise_packet(folder, role, fix=False):
     """The packet of the exercise set (module docstring): reviewers judge exercises.json, solutions.md and answers.py
     from the exercise brief; the developer writes or fixes them from it."""
@@ -273,7 +321,10 @@ def exercise_packet(folder, role, fix=False):
                     f"It is outside your judgement (scripts/reviews.py RULES); `python scripts/reviews.py carry {lid} --exercises` records that your PASS carries over.\n")
         else:
             out += exercise_brief(folder)
-            if mode == "delta":
+            ad = added_delta(folder, role, sc) if mode == "delta" and sc["categories"] == ["added-exercise"] else None
+            if ad:
+                out += ad[0] + figures_used(folder, role, text=ad[1]) + shots(folder, role, "exercises") + exercise_rules(role, lid) + scope_line(sc)
+            elif mode == "delta":
                 prev = (review_dir(folder, "exercises") / f"{role}.md").read_text()
                 out += (f"\n## Delta review\nYou passed this exercise set earlier (report below). Since then only the diff below changed ({sc['why']}). "
                         f"Judge the diff in its context (the current files are on disk if you need more). If the change cannot be judged reliably this way, "
@@ -282,7 +333,7 @@ def exercise_packet(folder, role, fix=False):
             else:
                 if sc["why"] != "no earlier PASS": out += f"\n## Full review\nReason: {sc['why']}.\n"
                 out += "\n## The exercise set\n" + "".join(block(courses.lesson_file(folder, n)) for n in files if role == "science" or n != "answers.py")
-            out += figures_used(folder, role) + shots(folder, role, "exercises") + exercise_rules(role, lid)
+            if not ad: out += figures_used(folder, role) + shots(folder, role, "exercises") + exercise_rules(role, lid)
     else:
         mode = "fix" if fix else "write"
         out, meta = header(folder, role, mode, "exercises")
@@ -491,7 +542,10 @@ def visual_packet(folder, part="lesson"):
     else:
         out += visual_rules()
         both = None
-        if mode == "delta":
+        ad = added_delta(folder, "visual", sc) if part == "exercises" and mode == "delta" and sc["categories"] == ["added-exercise"] else None
+        if ad:
+            out += ad[0] + figures_used(folder, "visual", text=ad[1])
+        elif mode == "delta":
             prev = (review_dir(folder, part) / "visual.md").read_text()
             files = sorted({l[6:] for l in sc["diff"].splitlines() if l.startswith("+++ b/")} | {l[4:].split(":")[0] for l in sc["diff"].splitlines() if l.startswith("--- ") and ":" in l})
             out += (f"\n## Delta review\nYou passed this {'exercise set' if part == 'exercises' else 'lesson'} earlier (report below). Since then only the diff below changed "
@@ -509,6 +563,7 @@ def visual_packet(folder, part="lesson"):
             both = (f"exercises/review/visual.md", f"python3 scripts/reviews.py hash {lid} --exercises{lang_arg}") if both else None
         out += shots_visual(folder / "review", stamp_key, f"python3 scripts/screenshot.py {lid} --if-stale")
         out += visual_report_rules(f"{'exercises/' if part == 'exercises' else ''}review/visual.md", f"python3 scripts/reviews.py hash {lid}{ex_arg}{lang_arg}", both)
+        if ad: out += scope_line(sc)
     f = review_dir(folder, part) / "packet-visual.md"; f.parent.mkdir(parents=True, exist_ok=True); f.write_text(out)
     print(f"{f.relative_to(ROOT)}: {mode}, {len(out.encode())} bytes ≈ {len(out.encode()) // 4} tokens")
     return mode

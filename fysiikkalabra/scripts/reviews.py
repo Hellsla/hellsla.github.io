@@ -70,6 +70,19 @@ tests, and for the science reviewer a figure's style or a label moved without ne
 those). `carry` then writes review/carry.tsv (date, reviewer, from-hash, to-hash, base commit, categories), and
 `status` counts that PASS for the new hash. CI (`verify`) re-derives every carry that is in use from git history
 and fails if the change was not what the row says. A reviewer whose last verdict was FAIL always reviews in full.
+
+Added exercises (teacher 2026-11-12). When the only change to an exercise set since a reviewer's PASS is that whole
+exercises were added, or an exercise was replaced by a new one (its id removed and another added, or the same id with
+its text and its solution rewritten), the category is "added-exercise" alone and all three reviewers review a delta
+(`added_exercises`): every exercise present in both versions is identical in exercises.json (same level, same order
+among the others, same core mark) and in its solutions.md section, solutions.md has nothing else changed, answers.py
+prints the same value for every id but the added and removed ones, and every other changed source belongs to the
+added exercises only (the drawing code of a figure no surviving exercise refers to, a translation's figure words only
+added, a picture no surviving exercise shows). Anything else, or anything that cannot be read, falls back to the
+classification above. The delta packet gives each reviewer the added and removed exercises in full and a list of the
+whole set; its PASS names what it covered on line 3 (`SCOPE: delta added-exercise from <hash> base <commit>`), and
+`verify` re-derives that claim from git history (`verify_scopes`). Content still on the visual baseline gets its
+first visual review in full as before.
 """
 import collections, datetime, difflib, functools, hashlib, html, json, os, pathlib, re, subprocess, sys, tempfile
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
@@ -122,6 +135,7 @@ RULES = {                       # category: (science, pedagogy, visual)
     "formula-names": ("none",  "none", "none"),    # FY9 formulas given the names of docs/fy9/kaavanimet.tsv (```kaavat), nothing else changed (teacher 2026-11-12)
     "teacher-figure": ("none",  "none", "none"),    # a figure the teacher approved as drawn (docs/teacher-figures.tsv, its exact Finnish SVG), its words in a translation, a task given it by "figure": the layout is check_layout's (teacher 2026-11-10)
     "split":          ("none",  "none", "none"),    # passed as one lesson before the split; this part's files moved, unchanged (answers.py: line for line)
+    "added-exercise": ("delta", "delta", "delta"),   # whole exercises added or replaced, every other exercise of the set as it was passed (added_exercises; teacher 2026-11-12)
 }
 WHY = {"core-mark": "exercises or activities marked core or unmarked, nothing else", "paragraphs": "a task text cut into paragraphs, its words unchanged", "photo": "a licensed illustration photograph added, moved or recaptioned", "typography": "formulas re-set (spacing, fraction style, decimal comma) or a symbol set as maths, or blank lines, without a change of meaning", "tests": "simulation tests added or tightened", "comments": "comments only", "style": "figure or sim styling only",
        "label-position": "a figure label nudged, text unchanged", "wording": "wording without numbers or symbols",
@@ -141,7 +155,8 @@ WHY = {"core-mark": "exercises or activities marked core or unmarked, nothing el
        "teacher-figure": "figures the teacher approved as drawn (docs/teacher-figures.tsv)",
        "formula-names": "formula names the teacher approved (docs/fy9/kaavanimet.tsv)",
        "presentation-only": "a simulation's drawing only, the change approved in docs/presentation-only.tsv",
-       "split": "the exercises moved to their own folder, every file as it was passed (answers.py split line for line)"}
+       "split": "the exercises moved to their own folder, every file as it was passed (answers.py split line for line)",
+       "added-exercise": "whole exercises added or replaced, every other exercise of the set unchanged"}
 
 
 FIGURE_TEXTS = {"lesson": ("inquiry.json", "exit-ticket.json"), "exercises": ("exercises.json",)}   # texts whose "figure": "<id>" the hash follows
@@ -720,6 +735,99 @@ def core_marks(old, new):
     return json.dumps(o, ensure_ascii=False) if changed else None
 
 
+# ------------------------------------------------------------------ added exercises (teacher 2026-11-12)
+EXERCISE_LEVELS = ("level1", "level2", "level3")
+REWRITTEN = 0.25          # a same-id exercise counts as replaced when its text and its solution each keep less than this share of words
+
+
+def _exercise_items(text):
+    """({id: (level, exercise)}, {level: [ids]}, data) of an exercises.json text, or None when it is not the three level
+    lists of exercises with unique string ids."""
+    try: d = json.loads(text)
+    except (json.JSONDecodeError, TypeError): return None
+    if not isinstance(d, dict) or set(d) != set(EXERCISE_LEVELS): return None
+    found, order = {}, {}
+    for lvl in EXERCISE_LEVELS:
+        if not isinstance(d[lvl], list): return None
+        order[lvl] = []
+        for e in d[lvl]:
+            if not isinstance(e, dict) or not isinstance(e.get("id"), str) or e["id"] in found: return None
+            found[e["id"]] = (lvl, e); order[lvl].append(e["id"])
+    return found, order, d
+
+
+def _solution_sections(text):
+    """(text before the first `## `, [(id, section)]) of solutions.md, normalized like the hash; None on a repeated heading."""
+    parts = re.split(r"^## (.*)$", normalized(text or "", "solutions.md"), flags=re.M)
+    secs = [(parts[i].strip(), parts[i + 1].strip()) for i in range(1, len(parts), 2)]
+    return (parts[0].strip(), secs) if len({h for h, _ in secs}) == len(secs) else None
+
+
+def _core(d):
+    """The core exercise ids, by scripts/build.py core_ids: marked ones, or by default the first two of levels 1 and 2."""
+    out = set()
+    for lvl in EXERCISE_LEVELS:
+        es = d[lvl]
+        out |= {e["id"] for e in es if e.get("core")} if any("core" in e for e in es) else ({e["id"] for e in es[:2]} if lvl[-1] in "12" else set())
+    return out
+
+
+def _rewritten(a, b, sa, sb):
+    """True when a same-id exercise was rewritten as a whole (a replacement that kept the id): its text and its solution
+    each share less than REWRITTEN of their words with the old ones."""
+    if not all(isinstance(x, str) and x for x in (a.get("text"), b.get("text"), sa, sb)): return False
+    ratio = lambda x, y: difflib.SequenceMatcher(None, x.split(), y.split(), autojunk=False).ratio()
+    return ratio(a["text"], b["text"]) < REWRITTEN and ratio(sa, sb) < REWRITTEN
+
+
+def added_exercises(folder, old, new):
+    """{'added', 'removed', 'replaced', 'kept'} (ids in page order) when the exercise set changed from `old` to `new`
+    (Commit or WorkTree) only by whole exercises added or replaced (module docstring, teacher 2026-11-12); None when
+    anything else changed, nothing was added, or something cannot be read: then the usual classification applies."""
+    at = lambda n: courses.lesson_rel(folder, n)
+    ia, ib = _exercise_items(old.source(at("exercises.json"))), _exercise_items(new.source(at("exercises.json")))
+    sa, sb = _solution_sections(old.source(at("solutions.md"))), _solution_sections(new.source(at("solutions.md")))
+    if not (ia and ib and sa and sb) or sa[0] != sb[0]: return None
+    (A, oa, da), (B, ob, db) = ia, ib
+    SA, SB = dict(sa[1]), dict(sb[1])
+    canon = lambda e: json.dumps(e, sort_keys=True, ensure_ascii=False)
+    replaced = []
+    for i in A.keys() & B.keys():
+        if canon(A[i][1]) == canon(B[i][1]) and SA.get(i) == SB.get(i) and A[i][0] == B[i][0]: continue
+        if A[i][0] == B[i][0] and _rewritten(A[i][1], B[i][1], SA.get(i), SB.get(i)): replaced.append(i); continue
+        return None                                    # a surviving exercise changed
+    kept = [i for lvl in EXERCISE_LEVELS for i in ob[lvl] if i in A and i not in replaced]
+    added = [i for lvl in EXERCISE_LEVELS for i in ob[lvl] if i not in A or i in replaced]
+    removed = [i for lvl in EXERCISE_LEVELS for i in oa[lvl] if i not in B or i in replaced]
+    if not added: return None                          # only removed: not this category
+    ks = set(kept)
+    if any([i for i in oa[lvl] if i in ks] != [i for i in ob[lvl] if i in ks] for lvl in EXERCISE_LEVELS): return None   # reordered
+    if _core(da) & ks != _core(db) & ks: return None   # an insertion moved the default core marks of the others
+    rest = lambda secs, ids: [(h, s) for h, s in secs if h in ks or h not in ids]   # kept exercises' and any other sections, in order
+    if rest(sa[1], A) != rest(sb[1], B): return None
+    ra, rb = old.source(at("answers.py")), new.source(at("answers.py"))
+    if _view(ra, "answers.py", False) != _view(rb, "answers.py", False):
+        va, vb = _run_answers(ra) if ra else {}, _run_answers(rb) if rb else {}
+        if va is None or vb is None: return None
+        if any(va.get(k) != vb.get(k) for k in set(va) | set(vb) if k not in added and k not in removed): return None
+    kept_text = " ".join(canon(B[i][1]) + "\n" + SB.get(i, "") for i in kept)
+    kept_figs, kept_pics = set(figcat.refs_in(kept_text)), set(courses.pic_refs_in([kept_text]))
+    for name, rel, binary in sorted(set(entries(folder, old, "exercises")) | set(entries(folder, new, "exercises"))):
+        if name in EXERCISE_CONTENT: continue
+        x, y = old.source(rel, binary), new.source(rel, binary)
+        if _view(x, rel, binary) == _view(y, rel, binary): continue
+        if name.startswith("figure:"):                 # a figure's drawing code: the added exercises' own, or a surviving one's
+            if name[7:] in kept_figs: return None
+        elif name.startswith("figures.json:"):         # a translation's figure words: only new entries
+            try: fx, fy = json.loads(x) if x else {}, json.loads(y) if y else {}
+            except json.JSONDecodeError: return None
+            if not (isinstance(fx, dict) and isinstance(fy, dict)) or any(k not in fy or fy[k] != v for k, v in fx.items()): return None
+        elif rel == f"assets/{name}":                  # a picture
+            if name in kept_pics: return None
+        else: return None
+    return {"added": added, "removed": removed, "replaced": replaced, "kept": kept}
+
+
 def objective_form(old, new):
     """The old inquiry.json with `learn` replaced by the new one when only the goals' wording changed (the same
     number of goals, each keeping its formulas and numbers: "Osaat laskea … $P = E : t$" → "laskemaan … $P = E : t$");
@@ -733,10 +841,11 @@ def objective_form(old, new):
     return json.dumps(o, ensure_ascii=False)
 
 
-def test_change(rel, base):
-    """'tests' when every assertion of the base version is still there, as strict; 'tests-weakened' otherwise."""
+def test_change(rel, base, now=None):
+    """'tests' when every assertion of the base version is still there, as strict; 'tests-weakened' otherwise. `now`:
+    where the new version is read (the working tree by default)."""
     try:
-        old = json.loads(git("show", f"{base}:./{rel}") or "[]"); new = json.loads((ROOT / rel).read_text()) if (ROOT / rel).exists() else []
+        old = json.loads(git("show", f"{base}:./{rel}") or "[]"); new = json.loads((now or WorkTree()).read(rel) or "[]")
     except json.JSONDecodeError: return "tests-weakened"
     key = lambda a: (a.get("expr"), a.get("setup", ""))
     now = {key(a): a for a in new}
@@ -1174,12 +1283,14 @@ def approve_presentation(rel, base="origin/main", note=""):
     print(f"\nrecorded in {PRESENTATION.relative_to(ROOT)}: {rel} {row[1]} -> {row[2]}")
 
 
-def changes(folder, base, part="lesson", split=False):
+def changes(folder, base, part="lesson", split=False, new=None):
     """(categories, unified diff, changed line count) of `part` between commit `base` and the working tree, over every
     source its hash covers, as the base saw them and as they are now. Formatting the hash ignores is not a change here
     either. `split`: the base's PASS was on the one hash before the split, so the category "split" applies, and when
-    the base still had one answers.py for both parts, each part's answers file is compared with that file."""
-    old, new = Commit(base), WorkTree()
+    the base still had one answers.py for both parts, each part's answers file is compared with that file. `new`: the
+    version compared with the base (the working tree by default; verify_scopes passes the commit a report was for).
+    An exercise set changed only by whole exercises added or replaced is "added-exercise" alone (teacher 2026-11-12)."""
+    old, new = Commit(base), new or WorkTree()
     paths = sorted({(rel, b) for _, rel, b in entries(folder, old, part) + entries(folder, new, part)})
     cats, diff, n = ({"split"} if split else set()), [], 0
     before_split = split and not old.files(courses.exercise_dir(folder).relative_to(ROOT).as_posix())
@@ -1200,7 +1311,7 @@ def changes(folder, base, part="lesson", split=False):
                 if a2 == b2: continue
                 if rel.endswith("/lesson.md"): ra, rb = a2, b2
                 a, b = a2, b2
-        if rel.startswith("tests/sims/"): cats.add(test_change(rel, base)); diff.append(f"--- {rel}: simulation assertions changed"); continue
+        if rel.startswith("tests/sims/"): cats.add(test_change(rel, base, new)); diff.append(f"--- {rel}: simulation assertions changed"); continue
         if not binary and presentation_change(old, new, rel):   # where or how the sim draws, the exact change of the file approved (one row for every language): the visual reviewer sees the diff
             cats.add("presentation-only"); n += 1
             diff += list(difflib.unified_diff((a or "").splitlines(), (b or "").splitlines(), f"a/{rel}", f"b/{rel}", lineterm="", n=2)); continue
@@ -1246,6 +1357,7 @@ def changes(folder, base, part="lesson", split=False):
         else: cats |= classify(rel, lines, folder.name)
         n += sum(1 for l in lines if l.startswith(("+", "-")) and not l.startswith(("+++", "---")))
         diff += lines
+    if part == "exercises" and not split and diff and added_exercises(folder, old, new): cats = {"added-exercise"}   # the diff stays whole, for the packet
     return cats, "\n".join(diff), n
 
 
@@ -1258,11 +1370,16 @@ def passed_at(log, folder, part, h):
     return None, False
 
 
+def _history(folder):
+    """The last 80 commits that touched what a lesson's hashes cover (where scope looks for the version a reviewer passed)."""
+    lid = folder.name; legacy = f"content/{folder.parent.name}/{lid}"     # the folder before the languages (Commit.read)
+    return (git("log", "--format=%H", "-n", "80", "--", folder.relative_to(ROOT).as_posix(), courses.code_dir(folder).relative_to(ROOT).as_posix(),
+                legacy, f"tests/sims/{lid}.json", "assets", f"lang/{courses.lang_of(folder)}.json", *figure_paths(folder)) or "").split()
+
+
 def scope(folder, part="lesson"):
     """For each reviewer of `part`: {'mode': none|delta|full, 'base': commit|None, 'why': ..., 'diff': ..., 'categories': [...]}."""
-    lid = folder.name; legacy = f"content/{folder.parent.name}/{lid}"     # the folder before the languages (Commit.read)
-    log = (git("log", "--format=%H", "-n", "80", "--", folder.relative_to(ROOT).as_posix(), courses.code_dir(folder).relative_to(ROOT).as_posix(),
-               legacy, f"tests/sims/{lid}.json", "assets", f"lang/{courses.lang_of(folder)}.json", *figure_paths(folder)) or "").split()
+    log = _history(folder)
     out, cache, now = {}, {}, content_hash(folder, part)
     for name in REVIEWS:
         rep = report(folder, name, part)
@@ -1341,6 +1458,50 @@ def verify_carries(folder, part="lesson"):
         i = REVIEWS.index(name)
         bad = [x for x in cats if RULES[x][i] != "none"]
         if bad: errs.append(f"{what}: carry of {name} covers changes it must review: {', '.join(WHY[x] for x in bad)}")
+    return errs
+
+
+SCOPE_LINE = re.compile(r"SCOPE: delta ([a-z-]+(?:,[a-z-]+)*) from ([0-9a-f]{16}) base ([0-9a-f]{7,40})")
+
+
+def scope_claim(folder, name, part="lesson"):
+    """(categories, from-hash, base commit) a report names on its `SCOPE:` line (one of its first lines; written from an
+    added-exercise delta packet, teacher 2026-11-12), ("malformed", line) for a bad one, None when it has none."""
+    f = review_dir(folder, part) / f"{name}.md"
+    if not f.exists(): return None
+    for l in f.read_text().splitlines()[:6]:
+        if l.startswith("SCOPE:"):
+            m = SCOPE_LINE.fullmatch(l.strip())
+            return (m.group(1).split(","), m.group(2), m.group(3)) if m else ("malformed", l.strip())
+    return None
+
+
+def verify_scopes(folder, part="lesson"):
+    """Errors for delta PASS reports in use that name what they covered (`SCOPE: delta <categories> from <hash> base
+    <commit>`): the commit must hold the version this reviewer passed before, and the change from it to the version the
+    report passes must, re-derived now, still ask no more of this reviewer than a delta review (as verify_carries does
+    for a carry). So a delta PASS for added exercises stands only while nothing else of the set changed."""
+    errs, now, what = [], content_hash(folder, part), folder.name + (" exercises" if part == "exercises" else "")
+    for name in REVIEWS:
+        rep, claim = report(folder, name, part), scope_claim(folder, name, part)
+        if not claim or not rep or rep[0] != "PASS": continue
+        if claim[0] == "malformed": errs.append(f"{what}: {name}.md has a malformed scope line `{claim[1]}` (SCOPE: delta <categories> from <hash> base <commit>)"); continue
+        _, frm, base = claim
+        if rep[1] == now: target = WorkTree()
+        elif carried(folder, name, rep[1], now, part):  # a carried report: the commit that held the version it passed
+            c = passed_at(_history(folder), folder, part, rep[1])[0]
+            if c is None: errs.append(f"{what}: {name}'s delta PASS for {rep[1]} cannot be re-derived: no commit holds that version"); continue
+            target = Commit(c)
+        else: continue                                 # stale, not in use
+        sha = (git("rev-parse", "--verify", "-q", f"{base}^{{commit}}") or "").strip()
+        if not sha: errs.append(f"{what}: {name}'s delta PASS names commit {base}, not in history (CI needs fetch-depth: 0)"); continue
+        if hash_at(sha, folder, part) != frm: errs.append(f"{what}: {name}'s delta PASS: commit {base} does not hold hash {frm}"); continue
+        passed = _passed_before(folder, name, part, 80) | {c["to"] for c in carries(folder, part) if c["reviewer"] == name}
+        if frm not in passed: errs.append(f"{what}: {name}'s delta PASS starts from {frm}, which {name} never passed"); continue
+        cats, _, _ = changes(folder, sha, part, False, target)
+        i = REVIEWS.index(name)
+        bad = sorted(c for c in cats if RULES[c][i] == "full")
+        if bad: errs.append(f"{what}: {name}'s delta PASS covers changes that need its full review: {', '.join(WHY[c] for c in bad)}")
     return errs
 
 
@@ -1483,7 +1644,7 @@ if __name__ == "__main__":
             try: print(describe(f))
             except ValueError as e: print("ERROR", e); bad += 1; continue
             for p in ("lesson", "exercises"):
-                for e in verify_carries(f, p): print("ERROR", e); bad += 1
+                for e in verify_carries(f, p) + verify_scopes(f, p): print("ERROR", e); bad += 1
         import units as _units
         for lang in sorted(set(i18n.languages()) | set(_units.languages())):
             for kind, iid in items(lang):
