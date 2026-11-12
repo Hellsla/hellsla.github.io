@@ -50,6 +50,7 @@ import json, re, sys, pathlib, html as _h
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from courses import ROOT
 import i18n
+import jaksot
 
 REGISTRY = "local-courses.json"
 STATUSES = ("planning", "building", "ready")        # add one (and its lang key site.local_status_<status>) when a course needs it; "ready" shows no status box (teacher 2026-11-01)
@@ -87,7 +88,7 @@ def planned(lang=i18n.SOURCE):
     out and unlinked on the front page under the school's own courses, as they have no content yet. A language's own
     content/<lang>/local-courses.json "_planned" replaces the Finnish list; a language without one shows the Finnish."""
     for f in ([ROOT / "content" / lang / REGISTRY] if lang != i18n.SOURCE else []) + [ROOT / REGISTRY]:
-        if f.is_file() and "_planned" in (d := json.loads(f.read_text())): return d["_planned"]
+        if f.is_file() and "_planned" in (d := json.loads(f.read_text())): return d["_planned"] + jaksot.planned(lang)   # and the planned units of jaksot/ (scripts/jaksot.py, 2026-11-12)
     return []
 
 

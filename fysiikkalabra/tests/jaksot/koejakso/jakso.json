@@ -1,0 +1,18 @@
+{
+  "jakso": {"id": "koejakso", "status": "live", "theme": "kiviruukki"},
+  "front": {"icon": "DROONILAB", "title": "Koejakso", "text": "Väliaikainen jakso renderöijän kokeiluun."},
+  "title": "Koejakso",
+  "ui": {"status": {"idea": "idea", "luonnos": "luonnos"}, "external": "avautuu uuteen välilehteen"},
+  "pages": [
+    {"file": "koejakso.html", "title": "Koejakso", "nav": "Aloitus", "lead": "Rakenna, ohjelmoi ja lennätä drooni.",
+     "blocks": [
+       {"type": "teksti", "id": "mika", "title": "Mikä tämä on", "text": ["Ensimmäinen kappale kertoo, mistä jaksossa on kyse.", "Toinen kappale kertoo, kenelle se sopii."]},
+       {"type": "lista", "id": "nain", "title": "Näin pääset alkuun", "lead": "Kolme askelta.", "ordered": true, "items": ["Ilmoittaudu jaksolle.", "Tule ensimmäiseen tapaamiseen.", "Valitse ensimmäinen työpaja."]},
+       {"type": "kortit", "id": "tyopajat", "title": "Työpajat", "from": "kohteet"},
+       {"type": "linkit", "id": "lisaa", "title": "Lisää", "links": [{"title": "Turvallisuus", "href": "koejakso-turvallisuus.html"}, {"title": "Traficomin droonisivut", "url": "https://www.droneinfo.fi/"}]}
+     ]},
+    {"file": "koejakso-turvallisuus.html", "title": "Turvallisuus", "lead": "Ennen ensimmäistä lentoa.",
+     "blocks": [{"type": "lista", "id": "saannot", "title": "Säännöt", "items": ["Lennätä vain ohjaajan luvalla.", "Pidä drooni näkyvissä."]},
+                {"type": "kortit", "id": "roolit", "title": "Roolit", "cards": [{"title": "Lentäjä", "text": "Ohjaa droonia."}, {"title": "Tähystäjä", "text": "Seuraa ilmatilaa.", "href": "koejakso.html"}]}]}
+  ]
+}

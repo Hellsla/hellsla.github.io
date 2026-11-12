@@ -1,4 +1,5 @@
 {
+  "jakso": {"id": "kilparobo", "status": "live", "theme": "kiviruukki"},
   "ui": {
     "nav_label": "Competitive robotics pages",
     "nav_home": "Start",

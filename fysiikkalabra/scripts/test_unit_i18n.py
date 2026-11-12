@@ -25,8 +25,8 @@ def snapshot():
 REAL = snapshot()
 
 T = pathlib.Path(tempfile.mkdtemp(prefix="fysiikkalabra-unit-i18n-"))
-for f in ("curriculum.json", "competencies.json", "glossary.json", "local-courses.json", "ahjo.json", "CLAUDE.md", "NOTES.md"): shutil.copy(SRC / f, T / f)
-for d in ("scripts", "templates", "content", "lessons", "lang", "assets", "tests", "kortit", "tips", "news", "tyokalut", "palautus"):
+for f in ("curriculum.json", "competencies.json", "glossary.json", "local-courses.json", "CLAUDE.md", "NOTES.md"): shutil.copy(SRC / f, T / f)
+for d in ("scripts", "templates", "content", "lessons", "lang", "assets", "tests", "kortit", "tips", "news", "tyokalut", "palautus", "jaksot"):   # jaksot/: Ahjo and the other units (scripts/jaksot.py; ahjo.json stood at the root until 2026-11-12)
     if (SRC / d).is_dir(): shutil.copytree(SRC / d, T / d, ignore=shutil.ignore_patterns("__pycache__", "packet-*", "shots*"))
 (T / "docs").mkdir(exist_ok=True); shutil.copy(SRC / "docs/visual-baseline.tsv", T / "docs")
 # The copy starts from the state before FY9 was translated: only this unit has an en version, and FY9 is not yet in

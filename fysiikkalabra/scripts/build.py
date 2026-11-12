@@ -28,7 +28,7 @@ stay in their lesson folders and keep their <id>-sim.js URLs.
 """
 import hashlib, json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status, published_exercises, WorkTree
-import ahjo, answers_shown, kaavat, kilparobo, lumatutor, assigned, booklets, cardgrid, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, svgids, units, tablefit
+import ahjo, answers_shown, jaksot, kaavat, kilparobo, lumatutor, assigned, booklets, cardgrid, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, svgids, units, tablefit
 from i18n import t as T
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
@@ -76,6 +76,8 @@ _ahjo_errs = ahjo.validate({l["id"] for k, m in curriculum.items() if not k.star
                            set(guides.ids()), [p["icon"] for p in local_courses.planned()], list(local_courses.load()),
                            {k: m["title"] for k, m in curriculum.items() if not k.startswith("_")})
 if _ahjo_errs: sys.exit("ERROR: ahjo.json (scripts/ahjo.py):\n" + "\n".join(_ahjo_errs))
+_jk_errs = jaksot.validate(module_icons.ICONS)   # every unit of jaksot/ has the same header (scripts/jaksot.py, teacher 2026-11-12)
+if _jk_errs: sys.exit("ERROR: jaksot/ (scripts/jaksot.py):\n" + "\n".join(_jk_errs))
 _kr_errs = kilparobo.validate({l["id"] for k, m in curriculum.items() if not k.startswith("_") for l in m.get("lessons", [])})
 if _kr_errs: sys.exit("ERROR: kilparobo.json (scripts/kilparobo.py):\n" + "\n".join(_kr_errs))
 _lt_errs = lumatutor.validate({l["id"] for k, m in curriculum.items() if not k.startswith("_") for l in m.get("lessons", [])})
@@ -1398,6 +1400,24 @@ def build_language(lang):
                 (out / name).write_text(ahjo.kiviruukki_mark(page(title, sub, crumb + ws_crumb + esc(title), name, lead,
                                                                   main_class="reading module-page local-course kr-theme kr-team lt-course")))
                 lt_built.append(name)
+    # A unit of jaksot/ written as "pages" (scripts/jaksot.py, teacher 2026-11-12): its pages from jakso.json alone, in its
+    # theme, and its row under the school's courses on the front page. No unit has them yet; Droonilab is planned.
+    jk_built = []
+    for jid in jaksot.ids():
+        row = jaksot.front_row(jid, lang)
+        if not row: continue
+        jd = jaksot.load(jid, lang); theme = jd["jakso"]["theme"]
+        cls = {"kiviruukki": "reading module-page local-course kr-theme kr-team", "ahjo": "reading ahjo-page"}.get(theme, "reading module-page local-course")
+        mark = ahjo.kiviruukki_mark if theme == "kiviruukki" else ahjo.tab_icons if theme == "ahjo" else (lambda h: h)
+        first = jd["pages"][0]
+        for name, title, lead, sub in jaksot.pages(jid, lang):
+            crumb = f'<a href="index.html">{T("site.name")}</a> › ' + ("" if name == first["file"] else f'<a href="{first["file"]}">{esc(jd["title"])}</a> › ')
+            (out / name).write_text(mark(page(title, sub, crumb + esc(title), name, lead, main_class=cls)))
+            jk_built.append(name)
+        q = esc(row["text"])
+        local_rows += (f'<li><a class="mod-row" href="{row["href"]}">{module_icons.img(row["icon"], 40)}'
+                       f'<span class="mod-text"><span class="mod-name"><span class="mod-title">{esc(row["title"])}</span></span>'
+                       f'<span class="mod-q" title="{q}">{q}</span></span><span class="mod-go" aria-hidden="true">→</span></a></li>')
     mixer_built = []                             # the YO-sekoitin (scripts/mixer.py): every language, when a local course asks for it
     mcode = next((code for code, c in local_courses.load().items() if c.get("mixer")), None)
     if mcode:
@@ -1536,7 +1556,7 @@ def build_language(lang):
                 removed.append(lid if lang == i18n.SOURCE else f"{lang}/{lid}")
                 print(f"{'::warning::' if os.environ.get('GITHUB_ACTIONS') else 'WARNING:'} {old_page.relative_to(LIVE)} is on the live site but its reviews are not current ({why}); this build removes it")
     pre = out.relative_to(SITE).as_posix() + "/" if out != SITE else ""
-    expected.extend(pre + n for n in ["index.html", ABOUT] + ([PRIVACY] if priv_md else []) + ([TEACHER_PAGE] if teacher_built else []) + ([concept_cards.APP] if concept_cards.modules(concept_cards.data_lang(lang)) else []) + ([reading_tips.PAGE] if reading_tips.SOURCE.is_file() else []) + [booklets.PAGE, STUDY_PAGE] + ahjo_built + kr_built + lt_built + [f"{c}.html" for c, _ in modules] + [f"{c}.html" for c in local] + [f"{i}.html" for i in built_ids] + [f"{i}.html" for i in inv_built] + [f"{g}.html" for g in guide_built] + [practice.page_name(c) for c in practice_built] + [practice.page_name(c + practice.EXAM) for c in exam_built] + mixer_built
+    expected.extend(pre + n for n in ["index.html", ABOUT] + ([PRIVACY] if priv_md else []) + ([TEACHER_PAGE] if teacher_built else []) + ([concept_cards.APP] if concept_cards.modules(concept_cards.data_lang(lang)) else []) + ([reading_tips.PAGE] if reading_tips.SOURCE.is_file() else []) + [booklets.PAGE, STUDY_PAGE] + ahjo_built + kr_built + lt_built + jk_built + [f"{c}.html" for c, _ in modules] + [f"{c}.html" for c in local] + [f"{i}.html" for i in built_ids] + [f"{i}.html" for i in inv_built] + [f"{g}.html" for g in guide_built] + [practice.page_name(c) for c in practice_built] + [practice.page_name(c + practice.EXAM) for c in exam_built] + mixer_built
                     + [f"{u}.html" for u, ls in unit_pub.items() if lang in ls and not only])
     if SITE.name == "site.tmp" and lang in units.languages():   # a unit that lost its reviews leaves the site only with a warning
         for u in units.ids(lang):

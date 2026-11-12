@@ -7,7 +7,8 @@ accent for the physics (the force, the photon, the data points), no text, recogn
 module's physics, drawn correctly: FY4 a force acting on a body (its point of application marked), FY5 a mass on a
 spring at its turning point beside the sinusoidal trace of its position, FY7 a bar magnet moving into a coil, FY8 a
 nucleus emitting a particle. The teacher chose the present set on 2026-11-11 (FY2, FY7–FY10, FY14, Kilparobotiikka,
-LUMA-tutor and Myytinmurtajat redrawn; the others kept).
+LUMA-tutor and Myytinmurtajat redrawn; the others kept). Myytinmurtajat gave way to Droonilab on 2026-11-12 (the
+teacher's planned course; its icon, a quadcopter from above in the school's colours, is new and awaits the teacher's eye).
 
 An icon beside its module's name is decorative (alt=""): the name is already text, a screen reader says it once.
 Usage: python scripts/module_icons.py check"""
@@ -35,7 +36,7 @@ ICONS = {
     "AHJO1": "3D-tulostin Ahjon alasimella (scripts/ahjo.py course_icon_svg)",
     "AHJO2": "idean hehkulamppu Ahjon alasimella (scripts/ahjo.py course_icon_svg)",
     "KILPAROBO": "robottikäsi tarttuu pelipalloon",
-    "MYYTIT": "halkeava puhekupla",
+    "DROONILAB": "nelikopteri ylhäältä",
 }
 
 

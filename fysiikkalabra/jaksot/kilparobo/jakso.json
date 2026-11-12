@@ -1,4 +1,5 @@
 {
+  "jakso": {"id": "kilparobo", "status": "live", "theme": "kiviruukki"},
   "ui": {
     "nav_label": "Kilparobotiikan sivut",
     "nav_home": "Etusivu",
