@@ -161,20 +161,20 @@ $\tfrac{1}{r}$ is chosen for the horizontal axis and $v^2$ for the vertical axis
   <line x1="83" y1="60" x2="90" y2="60" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <foreignObject x="58" y="45.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$8$</div></foreignObject>
   <foreignObject x="60" y="375.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0$</div></foreignObject>
-  <foreignObject x="442" y="355.5" width="124" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\tfrac{1}{r}\ (\tfrac{10^{-9}}{\text{m}})$</div></foreignObject>
-  <foreignObject x="80" y="3.5" width="137" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$v^2\ (10^{8}\,\tfrac{\text{m}^2}{\text{s}^2})$</div></foreignObject>
-  <polyline points="90,370 410,74.5" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+  <foreignObject x="442" y="355.5" width="174" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$1/r\ (10^{-9}\,\text{m}^{-1})$</div></foreignObject>
+  <foreignObject x="80" y="3.5" width="174" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$v^2\ (10^{8}\,\text{m}^2/\text{s}^2)$</div></foreignObject>
+  <polyline points="90,370 410,74.5" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
   <circle cx="384" cy="98.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <circle cx="216.5" cy="253.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <circle cx="169.5" cy="297" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <circle cx="140" cy="324" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <circle cx="118.5" cy="344" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="398" y="102.5" width="91" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px;color:#6b7480">$\text{Amalthea}$</div></foreignObject>
-  <foreignObject x="230.5" y="257.5" width="29" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px;color:#6b7480">$\text{Io}$</div></foreignObject>
-  <foreignObject x="183.5" y="301" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px;color:#6b7480">$\text{Europa}$</div></foreignObject>
+  <foreignObject x="398" y="102" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{Amalthea}$</div></foreignObject>
+  <foreignObject x="230.5" y="257" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{Io}$</div></foreignObject>
+  <foreignObject x="183.5" y="300.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{Europa}$</div></foreignObject>
   <line x1="356.5" y1="124" x2="356.5" y2="370" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <line x1="90" y1="124" x2="356.5" y2="124" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <circle cx="356.5" cy="124" r="11" fill="none" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="356.5" cy="124" r="8" fill="none" stroke="#c92a2a" stroke-width="2.5"/>
   <foreignObject x="203.5" y="87.5" width="137" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$(5.0;\ 6.35)$</span></div></foreignObject>
 </svg>
 
@@ -286,16 +286,16 @@ $\tfrac{1}{r}$ is chosen for the horizontal axis and $v^2$ for the vertical axis
   <foreignObject x="66" y="375.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0$</div></foreignObject>
   <foreignObject x="512" y="355.5" width="74" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$m\ (\text{kg})$</div></foreignObject>
   <foreignObject x="86" y="3.5" width="87" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$T^2\ (\text{s}^2)$</div></foreignObject>
-  <polyline points="163,305.5 461,67.5" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
-  <polyline points="96,359 163,305.5" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 6"/>
+  <polyline points="163,305.5 461,67.5" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="96,359 163,305.5" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 6"/>
   <circle cx="192" cy="283" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <circle cx="240" cy="243" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <circle cx="288" cy="206.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <circle cx="336" cy="166.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <circle cx="384" cy="130.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <circle cx="432" cy="89.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="192" cy="282.5" r="11" fill="none" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="432" cy="90" r="11" fill="none" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="192" cy="282.5" r="8" fill="none" stroke="#c92a2a" stroke-width="2.5"/>
+  <circle cx="432" cy="90" r="8" fill="none" stroke="#c92a2a" stroke-width="2.5"/>
   <foreignObject x="210" y="292" width="174" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$(0.100;\ 0.226)$</span></div></foreignObject>
   <foreignObject x="240" y="53.5" width="174" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$(0.350;\ 0.722)$</span></div></foreignObject>
 </svg>

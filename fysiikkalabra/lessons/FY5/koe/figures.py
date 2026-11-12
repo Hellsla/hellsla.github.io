@@ -3,7 +3,7 @@ model figures into solutions.md. The task figures fy5-k1-osc, fy5-k1-doppler and
 their ids (fy5-koe/<name>) and carry no answer. Every force diagram is an FBD: the object alone as a plain rectangle, forces
 red, velocity blue, acceleration orange; no point-particle diagrams."""
 import math
-from figlib import Fig, Axes, INK, MUTED, RULE, WHITE, COLD, COLD_LIGHT, WATER_LIGHT, SAND_LIGHT, fi
+from figlib import Fig, Axes, INK, MUTED, RULE, WHITE, COLD, COLD_LIGHT, WATER_LIGHT, SAND_LIGHT, HOT, fi
 from fbd import FBD, ground
 import herolib as H
 
@@ -175,6 +175,7 @@ def pendulum():
     ax.line([(0, b), (1.4, k * 1.4 + b)], INK, 3)
     for P in [(0.10, 0.49), (1.30, 5.31)]: ax.guide(*P)
     for x, y in zip(L4, T2): ax.point(x, y)
+    for P in [(0.10, 0.49), (1.30, 5.31)]: f.circle(ax.X(P[0]), ax.Y(P[1]), 8, "none", HOT, 2.5)
     f.tex(ax.X(0.72), ax.Y(0.8), r"k \approx 4{,}02\,\text{s}^2/\text{m}", "start", INK, bg=True)
     return f.svg()
 
@@ -221,6 +222,7 @@ def echo():
     ax.line([(0, 0), (0.415, v * 0.415)], INK, 3)
     ax.guide(0.40, 134.5)
     for d, t in zip(D6, DT6): ax.point(t, 2 * d)
+    f.circle(ax.X(0.40), ax.Y(134.5), 8, "none", HOT, 2.5)
     f.tex(ax.X(0.23), ax.Y(40), r"v \approx 336\,\text{m/s}", "start", INK, bg=True)
     return f.svg()
 
