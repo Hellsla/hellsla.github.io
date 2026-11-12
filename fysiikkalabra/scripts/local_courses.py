@@ -59,10 +59,17 @@ TEXT_FIELDS = ("title", "subtitle", "school", "description")
 esc = lambda s: _h.escape(str(s), quote=True)
 
 
+# The courses without a course code, in the teacher's order after the numbered ones (teacher 2026-11-12: LUMA-tutor
+# first, then Kilparobotiikka); a code not listed here comes after them.
+UNNUMBERED = ("LUMATUTOR", "KILPAROBO")
+
+
 def order(code):
-    """Sort key of a course code: its letters, then its number as a number (FY9 < FY10 < FY14)."""
+    """Sort key of a course code: its letters, then its number as a number (FY9 < FY10 < FY14); the courses without a
+    number (UNNUMBERED) after them in the teacher's order."""
+    if code in UNNUMBERED: return ("~", UNNUMBERED.index(code))
     m = re.fullmatch(r"([A-Za-z]*)(\d*)", code)
-    return (m.group(1), int(m.group(2) or 0)) if m else (code, 0)
+    return (m.group(1), int(m.group(2) or 0)) if m else ("~~" + code, 0)
 
 
 def label(code):

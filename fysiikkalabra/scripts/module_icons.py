@@ -35,7 +35,7 @@ ICONS = {
     "LUMATUTOR": "tutori ja oppija",
     "AHJO1": "3D-tulostin Ahjon alasimella (scripts/ahjo.py course_icon_svg)",
     "AHJO2": "idean hehkulamppu Ahjon alasimella (scripts/ahjo.py course_icon_svg)",
-    "KILPAROBO": "robottikäsi tarttuu pelipalloon",
+    "KILPAROBO": "robottikäsi Ahjon alasimella (the anvil's paths as in the Ahjo course icons, teacher 2026-11-12)",
     "DRONELABRA": "drone Ahjon alasimen yllä (the anvil's paths as in the Ahjo course icons)",
 }
 
