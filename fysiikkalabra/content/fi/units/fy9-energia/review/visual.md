@@ -1,13 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 237d1351779316d8
+CONTENT-HASH: ad539deba1140d1e
 
-Delta review (formulas in MAFY form, 2026-11-12) of the version passed at 96c26f38f6eaa964.
+Delta review (Johda itse, 2026-11-12) of the version passed at 237d1351779316d8.
 
 ## Blocking
-None. Built at 390 and 1280 px: KaTeX renders without errors, no horizontal overflow, upright subscripts, \overline vectors and spacing correct, formula map text fits its boxes, the new definition sentences read naturally.
+None.
 
 ## Polish
-1. Unit-less plain text units in the sentence after the blocks, e.g. 'teho (W)', 'energia (J)', 'massa (kg)', 'matka (m)' (carried over from the reviewed text, not new): write them as $\text{W}$, $\text{J}$, $\text{kg}$, $\text{m}$ (teacher 2026-11-01).
+1. figures (new figure of the Johda itse task), 390 px: the small captions (e.g. "paristo"/"battery" in the circuit, the sector labels) are close to the minimum legible size; optional: one size step larger.
+2. The Johda itse box: sticky header may cover the box top when scrolled; not a defect of the content.
 
 ## Checked
-Rendered formula blocks and formula map of this unit read as a contact sheet at 390 px; overflow and KaTeX-error scan of the built page at 390 and 1280 px; diff text read.
+Built fy9-energia; Johda itse boxes (closed and open) at 390 and 1280 px in fi: no page or box horizontal overflow, no KaTeX errors, display equations fit a phone, subscripts upright, $\cdot$ and fractions render. New figures opened at 390 px (palette, strokes, FY4 colours force red, velocity blue, acceleration orange, labels not overlapping, LaTeX labels). Language of the new sentences read in the rendered boxes; no plain numbers with units found in the new fences.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

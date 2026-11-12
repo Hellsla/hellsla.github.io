@@ -1,13 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 4a03f34fb4a4b052
+CONTENT-HASH: daf3229a457bf979
 
-Delta review (formulas in MAFY form, 2026-11-12) of the version passed at e8bf91a0dde33d19.
+Delta review (Johda itse, 2026-11-12) of the version passed at 4a03f34fb4a4b052.
 
 ## Blocking
-None. Built at 390 and 1280 px: KaTeX renders without errors, no horizontal overflow, upright subscripts, \overline vectors and spacing correct, formula map text fits its boxes, the new definition sentences read naturally.
-
-## Polish
 None.
 
+## Polish
+1. figures (new figure of the Johda itse task), 390 px: the small captions (e.g. "paristo"/"battery" in the circuit, the sector labels) are close to the minimum legible size; optional: one size step larger.
+2. The Johda itse box: sticky header may cover the box top when scrolled; not a defect of the content.
+
 ## Checked
-I did not open this pair's rendered sheet. The verdict rests on the overflow and KaTeX-error scan of the built page at 390 and 1280 px, the diff text, and the fi version's sheet (same LaTeX, same map layout; only label words differ).
+Built fy9-tasavirta; Johda itse boxes (closed and open) at 390 and 1280 px in fi-easy: no page or box horizontal overflow, no KaTeX errors, display equations fit a phone, subscripts upright, $\cdot$ and fractions render. New figures opened at 390 px (palette, strokes, FY4 colours force red, velocity blue, acceleration orange, labels not overlapping, LaTeX labels). Language of the new sentences read in the rendered boxes; no plain numbers with units found in the new fences.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

@@ -1,13 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 7c3a27204eeae8fd
+CONTENT-HASH: 37680cf38ac85d63
 
-Delta review (definition sentence after the keskikiihtyvyys block, commit c4e866703) of the version passed at ca31abd20e3d66b5.
+Delta review (Johda itse, 2026-11-12) of the version passed at 7c3a27204eeae8fd.
 
 ## Blocking
 None.
 
 ## Polish
-None.
+1. figures (new figure of the Johda itse task), 390 px: the small captions (e.g. "paristo"/"battery" in the circuit, the sector labels) are close to the minimum legible size; optional: one size step larger.
+2. The Johda itse box: sticky header may cover the box top when scrolled; not a defect of the content.
 
 ## Checked
-Built the page; overflow and KaTeX-error scan at 390 and 1280 px (clean). Read the new sentence as rendered at 390 px (fi, en) and 1280 px (fi-easy) and the keskikiihtyvyys formula block at 390 px (fi-easy): LaTeX symbols and units upright, \overline vectors and the fraction render correctly, language natural. The other renders of this sentence and block (1280 px for fi and en, 390 px for the rest) were captured but not opened; they came out clean in the scan.
+Built fy9-liike; Johda itse boxes (closed and open) at 390 and 1280 px in en: no page or box horizontal overflow, no KaTeX errors, display equations fit a phone, subscripts upright, $\cdot$ and fractions render. New figures opened at 390 px (palette, strokes, FY4 colours force red, velocity blue, acceleration orange, labels not overlapping, LaTeX labels). Language of the new sentences read in the rendered boxes; no plain numbers with units found in the new fences.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4
