@@ -150,8 +150,8 @@
 **Formula:** $k = \dfrac{4\pi^2}{g}$, so $g = \dfrac{4\pi^2}{k}$
 **Conversions:** None needed: the lengths are in metres and the times in seconds, so $k$ is in the unit $\tfrac{\text{s}^2}{\text{m}}$ and $g$ in the unit $\text{m/s}^2$.
 **Substitution:** $k = \dfrac{3.68\,\text{s}^2 - 0.46\,\text{s}^2}{0.900\,\text{m} - 0.100\,\text{m}} = \dfrac{3.22\,\text{s}^2}{0.800\,\text{m}} = 4.025\,\tfrac{\text{s}^2}{\text{m}}$ and $g = \dfrac{4\pi^2}{4.025\,\text{s}^2/\text{m}} = 9.808\,\text{m/s}^2$
-**Answer:** $g \approx 9.81\,\text{m/s}^2$, three significant figures like the measured lengths and times.
-**Reasonableness:** The result is very close to the value $9.81\,\text{m/s}^2$. The uncertainty of reading the graph, about $\pm 0.05\,\text{s}^2$ at each point, changes the result by at most about $\pm 0.3\,\text{m/s}^2$.
+**Answer:** $g \approx 9.8\,\text{m/s}^2$, two significant figures, because the value $0.46\,\text{s}^2$ read from the line has two digits.
+**Reasonableness:** The result is close to the value $9.81\,\text{m/s}^2$ (the difference is smaller than the reading uncertainty). The uncertainty of reading the graph, about $\pm 0.05\,\text{s}^2$ at each point, changes the result by at most about $\pm 0.3\,\text{m/s}^2$.
 
 ### d)
 **Find:** why the line does not pass through the origin and whether it affects the result of part c

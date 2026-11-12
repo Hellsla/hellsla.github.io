@@ -57,3 +57,11 @@ Checks rerun:
 - check_layout at 360/390/1280: OK.
 - Playwright at 390/1280: 11 choices and 6 numeric items, all answered "Oikein."; 0 console errors, 0 katex errors, no raw $, no horizontal scroll.
 - lint (plain quantities) is clean.
+
+## Ratkaisutavan tarkistus (2026-11-12)
+- sovella s2 c): Kaavasta pois "1 m²"; johdettu symbolein $\rho = \sigma A/(Ad) = \sigma/d$.
+- s3 e): tuloksen tarkkuuden perustelu tiheyden suhteellisella epävarmuudella (1,3 %), ei tilavuuden numeroilla.
+- s4 b): korjauskaava symbolein $m = m_\text{lukema}/k$.
+- s4 c): kulmakerroin luetaan sovitetulta suoralta, lisätty $m_\text{lukema} \propto m_\text{punnus}$.
+- s5 b): $x = vt + x_0$ ja $v = \Delta x/\Delta t$ symbolein ennen lukuja.
+- unit.md: tarkat määrät eivät rajoita merkitseviä numeroita.

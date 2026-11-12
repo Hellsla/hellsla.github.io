@@ -150,8 +150,8 @@
 **Kaava:** $k = \dfrac{4\pi^2}{g}$, josta $g = \dfrac{4\pi^2}{k}$
 **Muunnokset:** Ei tarvita: pituudet ovat metreinä ja ajat sekunteina, joten $k$ on yksikössä $\tfrac{\text{s}^2}{\text{m}}$ ja $g$ yksikössä $\text{m/s}^2$.
 **Sijoitus:** $k = \dfrac{3{,}68\,\text{s}^2 - 0{,}46\,\text{s}^2}{0{,}900\,\text{m} - 0{,}100\,\text{m}} = \dfrac{3{,}22\,\text{s}^2}{0{,}800\,\text{m}} = 4{,}025\,\tfrac{\text{s}^2}{\text{m}}$ ja $g = \dfrac{4\pi^2}{4{,}025\,\text{s}^2/\text{m}} = 9{,}808\,\text{m/s}^2$
-**Vastaus:** $g \approx 9{,}81\,\text{m/s}^2$, kolme merkitsevää numeroa kuten mitatuissa pituuksissa ja ajoissa.
-**Järkevyys:** Tulos on hyvin lähellä arvoa $9{,}81\,\text{m/s}^2$. Kuvaajan lukemisen epävarmuus, noin $\pm 0{,}05\,\text{s}^2$ kummassakin pisteessä, muuttaa tulosta enintään noin $\pm 0{,}3\,\text{m/s}^2$.
+**Vastaus:** $g \approx 9{,}8\,\text{m/s}^2$, kaksi merkitsevää numeroa, koska suoralta luettu arvo $0{,}46\,\text{s}^2$ on kahden numeron tarkkuudella ja lukemisen epävarmuus on alla vielä arvioitu.
+**Järkevyys:** Tulos on lähellä arvoa $9{,}81\,\text{m/s}^2$. Ero on pienempi kuin lukemisen epävarmuus. Kuvaajan lukemisen epävarmuus, noin $\pm 0{,}05\,\text{s}^2$ kummassakin pisteessä, muuttaa tulosta enintään noin $\pm 0{,}3\,\text{m/s}^2$.
 
 ### d)
 **Kysytty:** miksi suora ei kulje origon kautta ja vaikuttaako se c-kohdan tulokseen

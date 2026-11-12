@@ -172,7 +172,7 @@ $$
 missä $s$ on kuljettu matka, $t$ aika ja $a$ kiihtyvyys. Kaava pätee vain, kun kiihtyvyys on vakio ja alkunopeus nolla.
 
 ### Vastauksen tarkkuus
-Välitulokset pidetään pyöristämättöminä, ja vain lopputulos pyöristetään. Lopputuloksessa on yhtä monta merkitsevää numeroa kuin epätarkimmassa lähtöarvossa. Lopputulos ilman yksikköä ei kerro suuretta, joten se ei ole vastaus.
+Välitulokset pidetään pyöristämättöminä, ja vain lopputulos pyöristetään. Lopputuloksessa on yhtä monta merkitsevää numeroa kuin epätarkimmassa mitatussa lähtöarvossa. Tarkat määrät, kuten kokonaisluvut, lasketut lukumäärät ja muunnoskertoimet ($1\,\text{h} = 3600\,\text{s}$), eivät rajoita tarkkuutta. Lopputulos ilman yksikköä ei kerro suuretta, joten se ei ole vastaus.
 
 ## Tehtäväsanat {Tehtavasanat}
 

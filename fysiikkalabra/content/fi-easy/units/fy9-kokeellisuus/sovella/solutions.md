@@ -238,7 +238,7 @@ Pudotan pallon esimerkiksi viideltä korkeudelta $0{,}5\text{–}3{,}0\,\text{m}
 **Kaava:** $V = V_2 - V_1$ ja $\rho = \dfrac{m}{V} = \dfrac{m}{V_2 - V_1}$
 **Muunnokset:** $1\,\text{m}\textsf{l} = 1\,\text{cm}^3$ ja $1\,\text{g/cm}^3 = 1000\,\text{kg/m}^3$.
 **Sijoitus:** $V = 190\,\text{cm}^3 - 120\,\text{cm}^3 = 70\,\text{cm}^3$ ja $\rho = \dfrac{187{,}4\,\text{g}}{70\,\text{cm}^3} = 2{,}677\,\text{g/cm}^3 = 2{,}677 \cdot 1000\,\text{kg/m}^3 = 2677\,\text{kg/m}^3$
-**Vastaus:** $\rho \approx 2680\,\text{kg/m}^3$. Kolme merkitsevää numeroa, koska tilavuus on kahden kolminumeroisen lukeman erotus; b-kohta näyttää, että jo kolmas numero on epävarma.
+**Vastaus:** $\rho \approx 2{,}7 \cdot 10^{3}\,\text{kg/m}^3$ (laskettu $2677\,\text{kg/m}^3$). Tuloksessa on kaksi merkitsevää numeroa, koska tilavuus $70\,\text{cm}^3$ on lukemien erotus ja kahden numeron luku. Kun epävarmuus lasketaan (b-kohta), tulos kirjoitetaan epävarmuuden desimaaliin: $(2680 \pm 80)\,\text{kg/m}^3$.
 **Järkevyys:** Tiheys on noin $2{,}7$-kertainen veden tiheyteen nähden, mikä on tavallisille kivilajeille tyypillistä: kivi uppoaa, ja kämmenen kokoinen kivi painaa satoja grammoja.
 
 ### b)
@@ -347,27 +347,27 @@ Oletuksen voi testata piirtämällä $(v^2, s)$-kuvaajan. Jos oletus pitää, pi
 
 **Mallivastaus:** Pisteet ovat lähellä origon kautta kulkevaa suoraa, joten vakiohidastuvuuden oletus saa tukea. Suora piirretään origon kautta, koska nollanopeudella jarrutusmatka on nolla. Suoralta luetaan kaukainen piste $(60\,\text{m}^2/\text{s}^2;\ 7{,}2\,\text{m})$, joten kulmakerroin on $k = \tfrac{7{,}2\,\text{m}}{60\,\text{m}^2/\text{s}^2} = 0{,}12\,\text{s}^2/\text{m}$. Koska $s = \tfrac{1}{2a}\, v^2$, kulmakerroin on $k = \tfrac{1}{2a}$ ja hidastuvuus
 
-$a = \tfrac{1}{2k} = \tfrac{1}{2 \cdot 0{,}12\,\text{s}^2/\text{m}} = 4{,}17\,\text{m/s}^2 \approx 4{,}2\,\text{m/s}^2$,
+$a = \tfrac{1}{2k} = \tfrac{1}{2 \cdot 0{,}12\,\text{s}^2/\text{m}} = 4{,}167\,\text{m/s}^2 \approx 4{,}2\,\text{m/s}^2$,
 
 kaksi merkitsevää numeroa kuten jarrutusmatkoissa ja kulmakertoimessa.
 
 ### c)
-**Annettu:** hidastuvuus $a = 4{,}17\,\text{m/s}^2$ (b-kohta), vaakasuora tie, pyörät eivät lukkiudu, $g = 9{,}81\,\text{m/s}^2$
+**Annettu:** hidastuvuus $a = 4{,}1667\,\text{m/s}^2$ (b-kohta), vaakasuora tie, pyörät eivät lukkiudu, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** pienin lepokitkakerroin $\mu_0$ renkaiden ja asfaltin välillä
 **Periaate:** Ilmanvastus jätetään pois. Silloin pyörää ja pyöräilijää hidastaa vaakasuunnassa vain tien kitkavoima renkaisiin. Renkaat eivät luista asfalttia vasten. Siksi kyse on lepokitkasta, joka voi olla enintään $\mu_0 N$. Tie on vaakasuora, joten pystysuunnassa $N = mg$. Newtonin toisen lain mukaan kitkavoiman on oltava $ma$.
-**Kaava:** $ma = F_{\mu 0} \le \mu_0 N = \mu_0 mg$, josta massa supistuu ja $\mu_0 \ge \dfrac{a}{g}$
+**Kaava:** Positiivinen suunta on hidastuvuuden suunta, liikettä vastaan. Vaakasuunnassa $\Sigma F_x = F_{\mu 0} = ma$ ja pystysuunnassa $\Sigma F_y = N - mg = 0$, joten $N = mg$. Lepokitkalle $F_{\mu 0} \le \mu_0 N$, joten $ma \le \mu_0 mg$. Massa supistuu, joten $\mu_0 \ge \dfrac{a}{g}$
 **Muunnokset:** Ei tarvita, kiihtyvyydet ovat yksikössä $\text{m/s}^2$.
-**Sijoitus:** $\mu_0 \ge \dfrac{4{,}17\,\text{m/s}^2}{9{,}81\,\text{m/s}^2} = 0{,}425$
+**Sijoitus:** $\mu_0 \ge \dfrac{4{,}1667\,\text{m/s}^2}{9{,}81\,\text{m/s}^2} = 0{,}4247$
 **Vastaus:** $\mu_0 \ge 0{,}42$, kaksi merkitsevää numeroa kuten hidastuvuudessa $4{,}2\,\text{m/s}^2$. Kitkakertoimella ei ole yksikköä.
 **Järkevyys:** Kuivan asfaltin ja kumin lepokitkakerroin on yleensä selvästi suurempi, noin $0{,}7\text{–}0{,}9$. Siksi jarrutus on mahdollinen niin, että pyörät eivät lukkiudu. Hidastuvuus $4{,}2\,\text{m/s}^2$ on vähän alle puolet putoamiskiihtyvyydestä. Se sopii polkupyörän jarrutukseen.
 
 ### d)
-**Annettu:** sovelluksen nopeus on $5\,\%$ todellista suurempi kaikissa ajoissa: $v_\text{sovellus} = 1{,}05\, v$; b-kohdan hidastuvuus $4{,}17\,\text{m/s}^2$
+**Annettu:** sovelluksen nopeus on $5\,\%$ todellista suurempi kaikissa ajoissa: $v_\text{sovellus} = 1{,}05\, v$; b-kohdan hidastuvuus $4{,}1667\,\text{m/s}^2$
 **Kysytty:** kuinka monta prosenttia ja mihin suuntaan b-kohdan hidastuvuus poikkeaa todellisesta, ja muuttuuko johtopäätös
 **Periaate:** Virhe on systemaattinen: jokainen nopeus on kerrottu samalla luvulla. Kuvaajassa jokainen $v^2$ on siksi kerrottu luvulla $1{,}05^2$, ja suoran kulmakerroin $k = \tfrac{s}{v^2}$ on samassa suhteessa liian pieni. Hidastuvuus on $a = \tfrac{1}{2k}$, joten se on samassa suhteessa liian suuri.
 **Kaava:** $v_\text{sovellus}^2 = 1{,}05^2\, v^2$, joten $k_\text{sovellus} = \dfrac{k}{1{,}05^2}$ ja $a_\text{sovellus} = 1{,}05^2\, a$; poikkeama on $\dfrac{a_\text{sovellus} - a}{a} = 1{,}05^2 - 1$
 **Muunnokset:** Prosentti desimaalilukuna: $5\,\% = 0{,}05$.
-**Sijoitus:** $1{,}05^2 - 1 = 1{,}1025 - 1 = 0{,}1025 = 10{,}25\,\%$ ja todellinen hidastuvuus $a = \dfrac{4{,}17\,\text{m/s}^2}{1{,}1025} = 3{,}78\,\text{m/s}^2$
+**Sijoitus:** $1{,}05^2 - 1 = 1{,}1025 - 1 = 0{,}1025 = 10{,}25\,\%$ ja todellinen hidastuvuus $a = \dfrac{4{,}1667\,\text{m/s}^2}{1{,}1025} = 3{,}779\,\text{m/s}^2$
 **Vastaus:** b-kohdan hidastuvuus on noin $10\,\%$ liian suuri; todellinen hidastuvuus on noin $3{,}8\,\text{m/s}^2$. Tulos ilmoitetaan noin-arvona, koska hidastuvuus $4{,}2\,\text{m/s}^2$ tunnetaan kahden numeron tarkkuudella. Johtopäätös vakiohidastuvuudesta ei muutu. Jokainen $v^2$ muuttuu samassa suhteessa. Siksi pisteet ovat yhä suoralla, joka kulkee origon kautta. Vain suoran kulmakerroin muuttuu.
 **Järkevyys:** Nopeus on kaavassa toisessa potenssissa. Siksi pieni suhteellinen virhe tulee kaksi kertaa suuremmaksi: $2 \cdot 5\,\% = 10\,\%$. Myös c-kohdan pienin kitkakerroin pienenee samassa suhteessa noin $0{,}39$:ään.
 
