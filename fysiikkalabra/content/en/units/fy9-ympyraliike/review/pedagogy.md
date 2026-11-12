@@ -1,8 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 324dc435792c3e27
+CONTENT-HASH: 6049e235711b9b44
 
-Delta review (formulas in MAFY form, 2026-11-12) of the version passed at cc71cb661f7317ac.
+Delta review (Johda itse, 2026-11-12) of the version passed at 324dc435792c3e27.
 
-Blocking: none. The new symbols are defined in the sentence after each formula block, the tasks' forms are still derivable from the theory, and the unit stays coherent for a student.
+Blocking
+None.
 
-No Polish.
+Polish
+1. unit.md, first Johda itse: the question asks for $\Sigma F$ and a car-in-a-bend application; it is long. Consider splitting the car part into its own question or stating it as a follow-up.
+2. inquiry.json activities[16] (Esimerkit solution) derives the speed from the gravitation law: fine.
+
+Checked
+Model sentence states the situation and quantities; the question says what to derive and from what; the derivation starts from MAFY laws and every step is kept; try-first, Näytä johto order works; the text reads as a coherent review without the removed formulas; the number of Johda itse tasks (see above) is fitting for a review unit. en: same content and structure as fi; English is clear.

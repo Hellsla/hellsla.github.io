@@ -1,8 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 31904913655a7b58
+CONTENT-HASH: 642fe5007889fe0b
 
-Delta review (formulas in MAFY form, 2026-11-12) of the version passed at b942c369bb9ab315.
+Delta review (Johda itse, 2026-11-12) of the version passed at 31904913655a7b58.
 
-Blocking: none. The new symbols are defined in the sentence after each formula block, the tasks' forms are still derivable from the theory, and the unit stays coherent for a student.
+Blocking
+None.
 
-1. Note: the half-life form (1/2)^(t/T_1/2) is kept and derived in the sentence after the block (e^(-lambda T_1/2) = 1/2), so the inquiry and exit-ticket solutions that use it stay coherent.
+Polish
+1. inquiry.json activities[16] (Esimerkit solution): "Kaava:" gives the combined dose-rate formula with $(r_1/r_2)^2$ and the half-value factor without derivation. Polish, teacher's decision.
+2. unit.md, first Johda itse ($H=\dot H t$) is almost a definition; it is short, keep it, but it is the weakest of the two.
+
+Checked
+Model sentence states the situation and quantities; the question says what to derive and from what; the derivation starts from MAFY laws and every step is kept; try-first, Näytä johto order works; the text reads as a coherent review without the removed formulas; the number of Johda itse tasks (see above) is fitting for a review unit. 

@@ -1,8 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: fc3483f5b1affd8c
+CONTENT-HASH: 28ee1741c90a7ebf
 
-Delta review (formulas in MAFY form, 2026-11-12) of the version passed at 12867208110cf969.
+Delta review (Johda itse, 2026-11-12) of the version passed at fc3483f5b1affd8c.
 
-Blocking: none. The new symbols are defined in the sentence after each formula block, the tasks' forms are still derivable from the theory, and the unit stays coherent for a student.
+Blocking
+None.
 
-1. Polish: the unit's inquiry worked solution (content/fi/units/fy9-kaasut/inquiry.json, the Delta U task) uses W_k and Delta U = Q - W_k (work done by the gas), while the theory now says Delta U = Q + W with W done on the gas. Add one sentence to that solution ("in the theory table the same is Delta U = Q + W, W = -p Delta V") or switch it to the theory form.
+Polish
+1. unit.md: derivation is clear; no change needed. No Esimerkit solution uses $W=Q_1-Q_2$ undeclared.
+
+Checked
+Model sentence states the situation and quantities; the question says what to derive and from what; the derivation starts from MAFY laws and every step is kept; try-first, Näytä johto order works; the text reads as a coherent review without the removed formulas; the number of Johda itse tasks (see above) is fitting for a review unit. 

@@ -1,8 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: e1fa40ffe398b11f
+CONTENT-HASH: c0bf01805b448a4f
 
-Delta review (formulas in MAFY form, 2026-11-12) of the version passed at c07484c136b4b42f.
+Delta review (Johda itse, 2026-11-12) of the version passed at e1fa40ffe398b11f.
 
-Blocking: none. The new symbols are defined in the sentence after each formula block, the tasks' forms are still derivable from the theory, and the unit stays coherent for a student.
+Blocking
+None.
 
-No Polish.
+Polish
+1. inquiry.json activities[14] (Esimerkit solution): "Kaava:" gives $\eta=\eta_1\eta_2\eta_3\eta_4$ without derivation (four stages, the box has three). Polish, teacher's decision.
+
+Checked
+Model sentence states the situation and quantities; the question says what to derive and from what; the derivation starts from MAFY laws and every step is kept; try-first, Näytä johto order works; the text reads as a coherent review without the removed formulas; the number of Johda itse tasks (see above) is fitting for a review unit. en: same content and structure as fi; English is clear.
