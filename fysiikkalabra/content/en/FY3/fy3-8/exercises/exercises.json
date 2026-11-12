@@ -12,7 +12,7 @@
     {
       "id": "fy3-8-L1-02",
       "level": 1,
-      "text": "An aluminium overhead wire ($\\alpha = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$) between two electricity poles is $50.0\\,\\text{m}$ long at $18\\,{}^\\circ\\text{C}$ on a summer evening. On a frosty night the temperature of the wire drops to $-27\\,{}^\\circ\\text{C}$. Calculate the change in the length of the wire $\\Delta L$ with its sign. Give the answer in millimetres.",
+      "text": "An aluminium overhead wire ($\\alpha = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$) between two electricity poles is $50.0\\,\\text{m}$ long at $18\\,{}^\\circ\\text{C}$ on a summer evening. On a frosty night the temperature of the wire drops to $-27\\,{}^\\circ\\text{C}$. Calculate the change in the length of the wire $\\Delta l$ with its sign. Give the answer in millimetres.",
       "answer": -52,
       "unit": "mm",
       "tolerance": 0.02
@@ -108,7 +108,7 @@
       "kind": [
         "error"
       ],
-      "text": "A student calculated how much a $2.0\\,\\text{m}$ long aluminium rod ($\\alpha = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$) gets longer when its temperature rises from $15\\,{}^\\circ\\text{C}$ to $65\\,{}^\\circ\\text{C}$. The student wrote $\\Delta L = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 2.0\\,\\text{m} \\cdot 65 = 3.0\\,\\text{mm}$ (units left out).\n\nThere is an error here. Calculate the change in the length of the rod correctly. Give the answer in millimetres.",
+      "text": "A student calculated how much a $2.0\\,\\text{m}$ long aluminium rod ($\\alpha = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$) gets longer when its temperature rises from $15\\,{}^\\circ\\text{C}$ to $65\\,{}^\\circ\\text{C}$. The student wrote $\\Delta l = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 2.0\\,\\text{m} \\cdot 65 = 3.0\\,\\text{mm}$ (units left out).\n\nThere is an error here. Calculate the change in the length of the rod correctly. Give the answer in millimetres.",
       "answer": 2.3,
       "unit": "mm",
       "tolerance": 0.02
@@ -143,7 +143,7 @@
     {
       "id": "fy3-8-L2-04",
       "level": 2,
-      "text": "A metal beam used in a bridge structure, with a length of $5.00\\,\\text{m}$ at $20\\,{}^\\circ\\text{C}$, is heated and the change in its length is measured. The graph shows the change in length $\\Delta L$ as a function of temperature.\n\nCalculate the coefficient of linear expansion $\\alpha$ of the material of the beam in the unit $10^{-6}\\,\\tfrac{1}{\\text{K}}$ and use the table in the lesson to work out which metal the beam is made of (steel 12, aluminium 23, copper 17, all in the unit $10^{-6}\\,\\tfrac{1}{\\text{K}}$). Read the values you need from the graph.",
+      "text": "A metal beam used in a bridge structure, with a length of $5.00\\,\\text{m}$ at $20\\,{}^\\circ\\text{C}$, is heated and the change in its length is measured. The graph shows the change in length $\\Delta l$ as a function of temperature.\n\nCalculate the coefficient of linear expansion $\\alpha$ of the material of the beam in the unit $10^{-6}\\,\\tfrac{1}{\\text{K}}$ and use the table in the lesson to work out which metal the beam is made of (steel 12, aluminium 23, copper 17, all in the unit $10^{-6}\\,\\tfrac{1}{\\text{K}}$). Read the values you need from the graph.",
       "figure": "fy3-8/length-graph",
       "answer": 12,
       "unit": "10⁻⁶ 1/K",
@@ -202,7 +202,7 @@
         "data",
         "experiment"
       ],
-      "text": "Example data: a group used a dial gauge to measure the change in length $\\Delta L$ of a $0.800\\,\\text{m}$ long metal rod when the rod was heated from $20\\,{}^\\circ\\text{C}$. The reading accuracy of the dial gauge is $0.01\\,\\text{mm}$.\n\na) Calculate the temperature coefficient of the length $\\alpha$ of the material of the rod in the unit $10^{-6}\\,\\tfrac{1}{\\text{K}}$ using the first and the last point of the table.\n\nb) Work out from the table in the lesson (steel 12, aluminium 23, copper 17, all in the unit $10^{-6}\\,\\tfrac{1}{\\text{K}}$) which metal the rod is made of, and explain why the measurement points do not usually lie exactly on the same straight line.\n\nThe answer field takes the result of part a).",
+      "text": "Example data: a group used a dial gauge to measure the change in length $\\Delta l$ of a $0.800\\,\\text{m}$ long metal rod when the rod was heated from $20\\,{}^\\circ\\text{C}$. The reading accuracy of the dial gauge is $0.01\\,\\text{mm}$.\n\na) Calculate the temperature coefficient of the length $\\alpha$ of the material of the rod in the unit $10^{-6}\\,\\tfrac{1}{\\text{K}}$ using the first and the last point of the table.\n\nb) Work out from the table in the lesson (steel 12, aluminium 23, copper 17, all in the unit $10^{-6}\\,\\tfrac{1}{\\text{K}}$) which metal the rod is made of, and explain why the measurement points do not usually lie exactly on the same straight line.\n\nThe answer field takes the result of part a).",
       "answer": 22.9,
       "unit": "10⁻⁶ 1/K",
       "tolerance": 0.03,
@@ -210,7 +210,7 @@
         "caption": "Change in the length of a metal rod (example data)",
         "columns": [
           "$T\\,({}^\\circ\\text{C})$",
-          "$\\Delta L\\,(\\text{mm})$"
+          "$\\Delta l\\,(\\text{mm})$"
         ],
         "rows": [
           [
@@ -259,30 +259,30 @@
     {
       "id": "fy3-8-L2-08",
       "level": 2,
-      "text": "Example values: steel rods A and B are made of the same steel and are at first at the same temperature. The length of rod A is $4.0\\,\\text{m}$ and its temperature rises by $10\\,\\text{K}$. The length of rod B is $2.0\\,\\text{m}$ and its temperature rises by $30\\,\\text{K}$. Both rods can expand freely.\n\nHow does the change in length $\\Delta L$ change when we move from rod A to rod B?",
+      "text": "Example values: steel rods A and B are made of the same steel and are at first at the same temperature. The length of rod A is $4.0\\,\\text{m}$ and its temperature rises by $10\\,\\text{K}$. The length of rod B is $2.0\\,\\text{m}$ and its temperature rises by $30\\,\\text{K}$. Both rods can expand freely.\n\nHow does the change in length $\\Delta l$ change when we move from rod A to rod B?",
       "kind": [
         "concept",
         "reasoning"
       ],
-      "answer": "Increases: $\\Delta L_\\text{B}$ is $1.5$ times $\\Delta L_\\text{A}$",
+      "answer": "Increases: $\\Delta l_\\text{B}$ is $1.5$ times $\\Delta l_\\text{A}$",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Increases: $\\Delta L_\\text{B}$ is $1.5$ times $\\Delta L_\\text{A}$",
+          "text": "Increases: $\\Delta l_\\text{B}$ is $1.5$ times $\\Delta l_\\text{A}$",
           "correct": true,
-          "feedback": "Correct: $\\Delta L = \\alpha L_0 \\Delta T$, so the change is proportional to both the initial length and the change in temperature. The length is halved (factor $0.5$) and the change in temperature triples (factor $3$), so $\\Delta L_\\text{B} / \\Delta L_\\text{A} = 0.5 \\cdot 3 = 1.5$."
+          "feedback": "Correct: $\\Delta l = \\alpha l_0 \\Delta T$, so the change is proportional to both the initial length and the change in temperature. The length is halved (factor $0.5$) and the change in temperature triples (factor $3$), so $\\Delta l_\\text{B} / \\Delta l_\\text{A} = 0.5 \\cdot 3 = 1.5$."
         },
         {
-          "text": "Increases: $\\Delta L_\\text{B}$ is $3$ times $\\Delta L_\\text{A}$",
+          "text": "Increases: $\\Delta l_\\text{B}$ is $3$ times $\\Delta l_\\text{A}$",
           "feedback": "This takes into account only the change in temperature. The change in length is proportional also to the initial length: rod B has half as many particle spacings, so the same rise in temperature lengthens it less."
         },
         {
-          "text": "Stays the same: $\\Delta L_\\text{B} = \\Delta L_\\text{A}$",
+          "text": "Stays the same: $\\Delta l_\\text{B} = \\Delta l_\\text{A}$",
           "feedback": "This assumes that the same material always expands by the same amount. The material determines only the coefficient $\\alpha$. The change in length also depends on the initial length and the change in temperature, and these change in different ways."
         },
         {
-          "text": "Decreases: $\\Delta L_\\text{B}$ is $0.5$ times $\\Delta L_\\text{A}$",
+          "text": "Decreases: $\\Delta l_\\text{B}$ is $0.5$ times $\\Delta l_\\text{A}$",
           "feedback": "This takes into account only the shorter length. The change in temperature of rod B is three times as large, and it increases the change in length in direct proportion, so even the shorter rod lengthens more."
         }
       ]

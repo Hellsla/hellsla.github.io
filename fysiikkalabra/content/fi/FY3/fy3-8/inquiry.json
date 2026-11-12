@@ -46,7 +46,7 @@
       "stage": "ennusta",
       "type": "choice",
       "title": "Ennuste 1: lämmitetään kuumemmaksi",
-      "prompt": "Teräksisen sauvan pituus on $20\\,{}^\\circ\\text{C}$:ssa $10\\,\\text{m}$. Sauva lämmitetään ensin $70\\,{}^\\circ\\text{C}$:seen ja sitten $120\\,{}^\\circ\\text{C}$:seen. Miten sauvan pituuden muutos $\\Delta L$ (verrattuna $20\\,{}^\\circ\\text{C}$:n pituuteen) on $120\\,{}^\\circ\\text{C}$:ssa verrattuna $70\\,{}^\\circ\\text{C}$:seen?",
+      "prompt": "Teräksisen sauvan pituus on $20\\,{}^\\circ\\text{C}$:ssa $10\\,\\text{m}$. Sauva lämmitetään ensin $70\\,{}^\\circ\\text{C}$:seen ja sitten $120\\,{}^\\circ\\text{C}$:seen. Miten sauvan pituuden muutos $\\Delta l$ (verrattuna $20\\,{}^\\circ\\text{C}$:n pituuteen) on $120\\,{}^\\circ\\text{C}$:ssa verrattuna $70\\,{}^\\circ\\text{C}$:seen?",
       "justify": true,
       "reveal": {
         "after": "exp-1",
@@ -55,20 +55,20 @@
       "choices": [
         {
           "text": "Noin 1,7-kertainen, koska $120\\,{}^\\circ\\text{C}$ on noin 1,7 kertaa $70\\,{}^\\circ\\text{C}$.",
-          "feedback": "Pituuden muutos ei riipu lämpötilan lukemasta vaan siitä, kuinka paljon lämpötila on muuttunut lähtötilanteesta $20\\,{}^\\circ\\text{C}$. Muutokset ovat $\\Delta T = 50\\,\\text{K}$ ja $100\\,\\text{K}$, ja mallin arvot ovat $\\Delta L = 6{,}00\\,\\text{mm}$ ja $12{,}0\\,\\text{mm}$: suhde on 2. Celsiuslukujen suhde ei edes ole fysikaalinen, koska asteikon nollakohta on sovittu."
+          "feedback": "Pituuden muutos ei riipu lämpötilan lukemasta vaan siitä, kuinka paljon lämpötila on muuttunut lähtötilanteesta $20\\,{}^\\circ\\text{C}$. Muutokset ovat $\\Delta T = 50\\,\\text{K}$ ja $100\\,\\text{K}$, ja mallin arvot ovat $\\Delta l = 6{,}00\\,\\text{mm}$ ja $12{,}0\\,\\text{mm}$: suhde on 2. Celsiuslukujen suhde ei edes ole fysikaalinen, koska asteikon nollakohta on sovittu."
         },
         {
           "text": "Kaksinkertainen.",
           "correct": true,
-          "feedback": "Mallin arvot tukevat tätä: $70\\,{}^\\circ\\text{C}$:ssa $\\Delta L = 6{,}00\\,\\text{mm}$ ja $120\\,{}^\\circ\\text{C}$:ssa $12{,}0\\,\\text{mm}$. Lämpötilan muutos kasvoi $50\\,\\text{K}$:stä $100\\,\\text{K}$:iin eli kaksinkertaistui, ja niin kaksinkertaistui pituuden muutoskin."
+          "feedback": "Mallin arvot tukevat tätä: $70\\,{}^\\circ\\text{C}$:ssa $\\Delta l = 6{,}00\\,\\text{mm}$ ja $120\\,{}^\\circ\\text{C}$:ssa $12{,}0\\,\\text{mm}$. Lämpötilan muutos kasvoi $50\\,\\text{K}$:stä $100\\,\\text{K}$:iin eli kaksinkertaistui, ja niin kaksinkertaistui pituuden muutoskin."
         },
         {
           "text": "Alle kaksinkertainen, koska jo lämmenneen teräksen hiukkasvälit eivät enää kasva yhtä helposti.",
-          "feedback": "Mallin arvot näyttävät tasan kaksinkertaistumisen, 6,00 mm → 12,0 mm: jokainen kelvin pidentää sauvaa yhtä paljon. Tällaisilla lämpötilan muutoksilla teräksen $\\alpha$ on käytännössä vakio, ja simulaation malli olettaa sen vakioksi."
+          "feedback": "Mallin arvot näyttävät tasan kaksinkertaistumisen, $6{,}00\\,\\text{mm}$ → $12{,}0\\,\\text{mm}$: jokainen kelvin pidentää sauvaa yhtä paljon. Tällaisilla lämpötilan muutoksilla teräksen $\\alpha$ on käytännössä vakio, ja simulaation malli olettaa sen vakioksi."
         },
         {
           "text": "Sama, koska sauva on samaa terästä ja yhtä pitkä.",
-          "feedback": "Aine ja alkupituus ovat samat, mutta lämpötilan muutos ei: $50\\,\\text{K}$ ja $100\\,\\text{K}$. Mallin arvot ovat 6,00 mm ja 12,0 mm, joten suurempi lämpötilan muutos pidentää sauvaa enemmän."
+          "feedback": "Aine ja alkupituus ovat samat, mutta lämpötilan muutos ei: $50\\,\\text{K}$ ja $100\\,\\text{K}$. Mallin arvot ovat $6{,}00\\,\\text{mm}$ ja $12{,}0\\,\\text{mm}$, joten suurempi lämpötilan muutos pidentää sauvaa enemmän."
         }
       ]
     },
@@ -86,16 +86,16 @@
       "choices": [
         {
           "text": "Yhtä suuri, koska aine ja lämpötilan muutos ovat samat.",
-          "feedback": "Aine ja lämpötilan muutos määräävät *suhteellisen* muutoksen $\\Delta L / L_0 = \\alpha \\Delta T$, joka on mallissa molemmilla $0{,}0600\\,\\%$. Pidemmässä sauvassa on kuitenkin kaksi kertaa enemmän hiukkasvälejä, ja jokainen kasvaa yhtä paljon: A pitenee 6,00 mm, B 12,0 mm."
+          "feedback": "Aine ja lämpötilan muutos määräävät *suhteellisen* muutoksen $\\Delta l / l_0 = \\alpha \\Delta T$, joka on mallissa molemmilla $0{,}0600\\,\\%$. Pidemmässä sauvassa on kuitenkin kaksi kertaa enemmän hiukkasvälejä, ja jokainen kasvaa yhtä paljon: A pitenee $6{,}00\\,\\text{mm}$, B $12{,}0\\,\\text{mm}$."
         },
         {
           "text": "Kaksinkertainen.",
           "correct": true,
-          "feedback": "Mallin arvot tukevat tätä: A pitenee 6,00 mm ja B 12,0 mm, ja suhteellinen muutos $\\Delta L / L_0$ on molemmilla sama $0{,}0600\\,\\%$. Kaksi kertaa pidemmässä sauvassa on kaksi kertaa enemmän hiukkasvälejä, jotka kaikki kasvavat yhtä paljon."
+          "feedback": "Mallin arvot tukevat tätä: A pitenee $6{,}00\\,\\text{mm}$ ja B $12{,}0\\,\\text{mm}$, ja suhteellinen muutos $\\Delta l / l_0$ on molemmilla sama $0{,}0600\\,\\%$. Kaksi kertaa pidemmässä sauvassa on kaksi kertaa enemmän hiukkasvälejä, jotka kaikki kasvavat yhtä paljon."
         },
         {
           "text": "Puolet, koska pitkä sauva lämpenee hitaammin.",
-          "feedback": "Ennuste koskee tilannetta, jossa molemmat sauvat ovat jo 70-asteisia. Lämpenemisen nopeus ei vaikuta lopputilaan. Mallin arvot ovat A: 6,00 mm ja B: 12,0 mm, joten pidempi sauva pitenee enemmän."
+          "feedback": "Ennuste koskee tilannetta, jossa molemmat sauvat ovat jo 70-asteisia. Lämpenemisen nopeus ei vaikuta lopputilaan. Mallin arvot ovat A: $6{,}00\\,\\text{mm}$ ja B: $12{,}0\\,\\text{mm}$, joten pidempi sauva pitenee enemmän."
         }
       ],
       "optional": true
@@ -120,7 +120,7 @@
         {
           "text": "Bea: Hiukkaset värähtelevät voimakkaammin, ja koska niiden on helpompi loitota toisistaan kuin puristua lähemmäs, niiden keskimääräinen etäisyys kasvaa.",
           "correct": true,
-          "feedback": "Tämä sopii malliin. Mikromallissa värähtely voimistuu lämpötilan noustessa, ja hiukkasvälit kasvavat samassa suhteessa kuin koko sauva, $\\Delta L/L_0 = \\alpha \\Delta T$. Värähtely kasvattaa keskimääräistä etäisyyttä vain siksi, että heilahdus kauemmas on pidempi kuin heilahdus lähemmäs. Simulaatio ei näytä tätä epäsymmetriaa, sillä se piirtää värähtelyn symmetrisenä; Teoriatiivistelmä perustelee sen."
+          "feedback": "Tämä sopii malliin. Mikromallissa värähtely voimistuu lämpötilan noustessa, ja hiukkasvälit kasvavat samassa suhteessa kuin koko sauva, $\\Delta l/l_0 = \\alpha \\Delta T$. Värähtely kasvattaa keskimääräistä etäisyyttä vain siksi, että heilahdus kauemmas on pidempi kuin heilahdus lähemmäs. Simulaatio ei näytä tätä epäsymmetriaa, sillä se piirtää värähtelyn symmetrisenä; Teoriatiivistelmä perustelee sen."
         },
         {
           "text": "Cem: Hiukkaset värähtelevät voimakkaammin yhtä paljon kumpaankin suuntaan, ja suurempi heilahdus vie enemmän tilaa.",
@@ -136,9 +136,9 @@
       "id": "simulaatio",
       "stage": "tutki",
       "type": "sim",
-      "text": "Valitse aine, sauvan alkupituus $L_0$ (mitattu $20\\,{}^\\circ\\text{C}$:ssa) ja lämpötila $T$.",
-      "howto": "Vasemmalla mikromalli, oikealla sauva ja $(T, \\Delta L)$-kuvaaja. Muutokset on piirretty sata kertaa liioiteltuina; todelliset muutokset ovat alle $0{,}3\\,\\%$. Hiukkaset eivät suurene, vaan niiden keskimääräinen etäisyys kasvaa. Kuvaajan ohuet suorat ovat muiden aineiden suorat: jyrkin on alumiini, loivin borosilikaattilasi. Katkoviiva on $20\\,{}^\\circ\\text{C}$:n tilanne. *Nopeus* muuttaa vain värähtelyn tahtia, ei pituuksia.",
-      "model": "Lukemat ovat mallin arvoja, joissa kerroin $\\alpha$ oletetaan vakioksi, eivät mittauksia oikeasta sauvasta. Mikromallissa hiukkaset värähtelevät piirroksessa yhtä paljon kumpaankin suuntaan, ja niiden keskimääräinen etäisyys asetetaan suoraan kaavasta $\\Delta L/L_0 = \\alpha \\Delta T$. Malli siis näyttää, *että* etäisyys kasvaa, mutta ei sitä, *miksi*; syy on Teoriatiivistelmässä."
+      "text": "Valitse aine, sauvan alkupituus $l_0$ (mitattu $20\\,{}^\\circ\\text{C}$:ssa) ja lämpötila $T$.",
+      "howto": "Vasemmalla mikromalli, oikealla sauva ja $(T, \\Delta l)$-kuvaaja. Muutokset on piirretty sata kertaa liioiteltuina; todelliset muutokset ovat alle $0{,}3\\,\\%$. Hiukkaset eivät suurene, vaan niiden keskimääräinen etäisyys kasvaa. Kuvaajan ohuet suorat ovat muiden aineiden suorat: jyrkin on alumiini, loivin borosilikaattilasi. Katkoviiva on $20\\,{}^\\circ\\text{C}$:n tilanne. *Nopeus* muuttaa vain värähtelyn tahtia, ei pituuksia.",
+      "model": "Lukemat ovat mallin arvoja, joissa kerroin $\\alpha$ oletetaan vakioksi, eivät mittauksia oikeasta sauvasta. Mikromallissa hiukkaset värähtelevät piirroksessa yhtä paljon kumpaankin suuntaan, ja niiden keskimääräinen etäisyys asetetaan suoraan kaavasta $\\Delta l/l_0 = \\alpha \\Delta T$. Malli siis näyttää, *että* etäisyys kasvaa, mutta ei sitä, *miksi*; syy on Teoriatiivistelmässä."
     },
     {
       "id": "exp-1",
@@ -153,7 +153,7 @@
       },
       "names": {
         "material": "aine",
-        "L0": "alkupituus L₀",
+        "L0": "alkupituus l₀",
         "T": "lämpötila T"
       },
       "values": {
@@ -177,7 +177,7 @@
         },
         {
           "key": "dL",
-          "label": "ΔL (m)"
+          "label": "Δl (m)"
         }
       ],
       "min": 2
@@ -195,7 +195,7 @@
       },
       "names": {
         "material": "aine",
-        "L0": "alkupituus L₀",
+        "L0": "alkupituus l₀",
         "T": "lämpötila T"
       },
       "values": {
@@ -215,11 +215,11 @@
       "measure": [
         {
           "key": "dL",
-          "label": "ΔL (m)"
+          "label": "Δl (m)"
         },
         {
           "key": "rel",
-          "label": "ΔL/L₀"
+          "label": "Δl/l₀"
         }
       ],
       "min": 2,
@@ -233,8 +233,8 @@
       "after": [
         "exp-1"
       ],
-      "prompt": "Kirjoita kokeen 1 taulukon perusteella: miten pituuden muutos $\\Delta L$ riippui lämpötilan muutoksesta $\\Delta T$? Miksi $120\\,{}^\\circ\\text{C}$:ssa muutos oli kaksinkertainen $70\\,{}^\\circ\\text{C}$:seen verrattuna, vaikka $120/70$ ei ole $2$? Mitä pakkaskokeilu näytti, ja miten mikromallin hiukkasten liike selittää havainnon?",
-      "model": "Pituuden muutos oli suoraan verrannollinen lämpötilan muutokseen $20\\,{}^\\circ\\text{C}$:sta: $70\\,{}^\\circ\\text{C}$:ssa $\\Delta T = 50\\,\\text{K}$ ja $\\Delta L = 6{,}0\\,\\text{mm}$, $120\\,{}^\\circ\\text{C}$:ssa $\\Delta T = 100\\,\\text{K}$ ja $\\Delta L = 12{,}0\\,\\text{mm}$. Ratkaisevaa on lämpötilan muutos, ei lämpötila itse. Pakkasessa ($-30\\,{}^\\circ\\text{C}$) $\\Delta T$ ja $\\Delta L$ ovat negatiivisia: sauva lyhenee. Mikromallissa hiukkaset värähtelevät lämmetessään laajemmin, ja koska hiukkaset loittonevat helpommin kuin lähestyvät, niiden keskimääräinen etäisyys kasvaa. Simulaatio laskee $\\Delta L$:n kaavasta ja piirtää muutoksen satakertaisena; oikea $\\alpha$ mitataan esimerkiksi lämmittämällä sauvaa ja mittaamalla pidentyminen mittakellolla.",
+      "prompt": "Kirjoita kokeen 1 taulukon perusteella: miten pituuden muutos $\\Delta l$ riippui lämpötilan muutoksesta $\\Delta T$? Miksi $120\\,{}^\\circ\\text{C}$:ssa muutos oli kaksinkertainen $70\\,{}^\\circ\\text{C}$:seen verrattuna, vaikka $120/70$ ei ole $2$? Mitä pakkaskokeilu näytti, ja miten mikromallin hiukkasten liike selittää havainnon?",
+      "model": "Pituuden muutos oli suoraan verrannollinen lämpötilan muutokseen $20\\,{}^\\circ\\text{C}$:sta: $70\\,{}^\\circ\\text{C}$:ssa $\\Delta T = 50\\,\\text{K}$ ja $\\Delta l = 6{,}0\\,\\text{mm}$, $120\\,{}^\\circ\\text{C}$:ssa $\\Delta T = 100\\,\\text{K}$ ja $\\Delta l = 12{,}0\\,\\text{mm}$. Ratkaisevaa on lämpötilan muutos, ei lämpötila itse. Pakkasessa ($-30\\,{}^\\circ\\text{C}$) $\\Delta T$ ja $\\Delta l$ ovat negatiivisia: sauva lyhenee. Mikromallissa hiukkaset värähtelevät lämmetessään laajemmin, ja koska hiukkaset loittonevat helpommin kuin lähestyvät, niiden keskimääräinen etäisyys kasvaa. Simulaatio laskee $\\Delta l$:n kaavasta ja piirtää muutoksen satakertaisena; oikea $\\alpha$ mitataan esimerkiksi lämmittämällä sauvaa ja mittaamalla pidentyminen mittakellolla.",
       "criteria": [
         "Käytin taulukon lukuja ja lämpötilan muutosta $\\Delta T$.",
         "Selitin, miksi suhde lasketaan $\\Delta T$:stä eikä lämpötilasta.",
@@ -283,7 +283,7 @@
       "stage": "selita",
       "type": "reflect",
       "title": "Palaa ennusteisiisi",
-      "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin ja kaavaan $\\Delta L = \\alpha L_0 \\Delta T$. Palaa sitten alun kysymykseen: mikä saa jäykän teräksen muuttamaan pituuttaan, ja mistä riippuu, kuinka paljon sillan liitoksen on annettava periksi?",
+      "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin ja kaavaan $\\Delta l = \\alpha l_0 \\Delta T$. Palaa sitten alun kysymykseen: mikä saa jäykän teräksen muuttamaan pituuttaan, ja mistä riippuu, kuinka paljon sillan liitoksen on annettava periksi?",
       "predictions": [
         "pred-1",
         "pred-2",
@@ -304,12 +304,12 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Etsi virhe",
-      "prompt": "Alumiiniset tikkaat ($\\alpha = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$) ovat $4{,}0\\,\\text{m}$ pitkät. Opiskelija laskee, kuinka paljon ne pitenevät, kun lämpötila nousee $10\\,{}^\\circ\\text{C}$:sta $30\\,{}^\\circ\\text{C}$:seen:\n\n$\\Delta T = 30 + 273 = 303\\,\\text{K}$, joten $\\Delta L = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 4{,}0\\,\\text{m} \\cdot 303\\,\\text{K} \\approx 0{,}028\\,\\text{m} = 28\\,\\text{mm}$.\n\nMissä on virhe?",
+      "prompt": "Alumiiniset tikkaat ($\\alpha = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$) ovat $4{,}0\\,\\text{m}$ pitkät. Opiskelija laskee, kuinka paljon ne pitenevät, kun lämpötila nousee $10\\,{}^\\circ\\text{C}$:sta $30\\,{}^\\circ\\text{C}$:seen:\n\n$\\Delta T = 30 + 273 = 303\\,\\text{K}$, joten $\\Delta l = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 4{,}0\\,\\text{m} \\cdot 303\\,\\text{K} \\approx 0{,}028\\,\\text{m} = 28\\,\\text{mm}$.\n\nMissä on virhe?",
       "choices": [
         {
-          "text": "Kaavaan kuuluu lämpötilan muutos, ei loppulämpötila kelvineinä: $\\Delta T = 30\\,{}^\\circ\\text{C} - 10\\,{}^\\circ\\text{C} = 20\\,\\text{K}$, ja $\\Delta L \\approx 1{,}8\\,\\text{mm}$.",
+          "text": "Kaavaan kuuluu lämpötilan muutos, ei loppulämpötila kelvineinä: $\\Delta T = 30\\,{}^\\circ\\text{C} - 10\\,{}^\\circ\\text{C} = 20\\,\\text{K}$, ja $\\Delta l \\approx 1{,}8\\,\\text{mm}$.",
           "correct": true,
-          "feedback": "Oikein. Opiskelija sijoitti loppulämpötilan kelvineinä lämpötilan muutoksen paikalle. Oikein $\\Delta L = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 4{,}0\\,\\text{m} \\cdot 20\\,\\text{K} \\approx 1{,}8\\,\\text{mm}$. Järkevyystarkistus: 28 mm olisi $0{,}7\\,\\%$ tikkaiden pituudesta, mikä on lämpölaajenemiselle aivan liikaa."
+          "feedback": "Oikein. Opiskelija sijoitti loppulämpötilan kelvineinä lämpötilan muutoksen paikalle. Oikein $\\Delta l = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 4{,}0\\,\\text{m} \\cdot 20\\,\\text{K} \\approx 1{,}8\\,\\text{mm}$. Järkevyystarkistus: $28\\,\\text{mm}$ olisi $0{,}7\\,\\%$ tikkaiden pituudesta, mikä on lämpölaajenemiselle aivan liikaa."
         },
         {
           "text": "Kerroin $\\alpha$ pitää muuntaa yksikköön 1/°C ennen sijoittamista.",
@@ -321,7 +321,7 @@
         },
         {
           "text": "Laskussa ei ole virhettä.",
-          "feedback": "Tarkista $\\Delta T$. Lämpötila nousee $10\\,{}^\\circ\\text{C}$:sta $30\\,{}^\\circ\\text{C}$:seen eli $20\\,\\text{K}$, mutta opiskelija sijoitti loppulämpötilan kelvineinä. Tulos 28 mm on noin viisitoista kertaa liian suuri."
+          "feedback": "Tarkista $\\Delta T$. Lämpötila nousee $10\\,{}^\\circ\\text{C}$:sta $30\\,{}^\\circ\\text{C}$:seen eli $20\\,\\text{K}$, mutta opiskelija sijoitti loppulämpötilan kelvineinä. Tulos $28\\,\\text{mm}$ on noin viisitoista kertaa liian suuri."
         }
       ],
       "optional": true
@@ -408,26 +408,26 @@
       "stage": "tarkista",
       "type": "numeric",
       "title": "3. Taulukko ja laskeminen",
-      "prompt": "Metallisauvan pituus on $20\\,{}^\\circ\\text{C}$:ssa $2{,}00\\,\\text{m}$. Taulukossa ovat sauvan pituuden muutoksen esimerkkiarvot eri lämpötiloissa (laskettuja arvoja, eivät mittauksia).\n\n| $T$ (°C) | 20 | 60 | 100 |\n|---|---|---|---|\n| $\\Delta L$ (mm) | 0 | 1,84 | 3,68 |\n\nLaske metallin pituuden lämpötilakerroin $\\alpha$. Anna vastaus yksikössä $10^{-6}\\,\\tfrac{1}{\\text{K}}$.",
+      "prompt": "Metallisauvan pituus on $20\\,{}^\\circ\\text{C}$:ssa $2{,}00\\,\\text{m}$. Taulukossa ovat sauvan pituuden muutoksen esimerkkiarvot eri lämpötiloissa (laskettuja arvoja, eivät mittauksia).\n\n| $T$ (°C) | 20 | 60 | 100 |\n|---|---|---|---|\n| $\\Delta l$ (mm) | 0 | 1,84 | 3,68 |\n\nLaske metallin pituuden lämpötilakerroin $\\alpha$. Anna vastaus yksikössä $10^{-6}\\,\\tfrac{1}{\\text{K}}$.",
       "answer": 23,
       "unit": "10⁻⁶ 1/K",
       "tolerance": 0.02,
       "hints": [
-        "Kuinka paljon $\\Delta L$ kasvaa, kun lämpötila nousee $40\\,\\text{K}$? Pysyykö kasvu samana joka välillä?",
-        "Kaavasta $\\Delta L = \\alpha L_0 \\Delta T$ saadaan $\\alpha = \\dfrac{\\Delta L}{L_0 \\Delta T}$. Lämpötilan muutos lasketaan $20\\,{}^\\circ\\text{C}$:sta, jossa $L_0$ on mitattu.",
+        "Kuinka paljon $\\Delta l$ kasvaa, kun lämpötila nousee $40\\,\\text{K}$? Pysyykö kasvu samana joka välillä?",
+        "Kaavasta $\\Delta l = \\alpha l_0 \\Delta T$ saadaan $\\alpha = \\dfrac{\\Delta l}{l_0 \\Delta T}$. Lämpötilan muutos lasketaan $20\\,{}^\\circ\\text{C}$:sta, jossa $l_0$ on mitattu.",
         "Esimerkiksi $60\\,{}^\\circ\\text{C}$:n sarakkeesta: $\\alpha = \\dfrac{1{,}84 \\cdot 10^{-3}\\,\\text{m}}{2{,}00\\,\\text{m} \\cdot 40\\,\\text{K}}$."
       ],
       "mistakes": [
         {
           "value": 46,
-          "feedback": "Jaoit pituuden muutoksen vain lämpötilan muutoksella. Kerroin $\\alpha$ on *suhteellinen* muutos kelviniä kohti, joten jaa myös alkupituudella $L_0 = 2{,}00\\,\\text{m}$."
+          "feedback": "Jaoit pituuden muutoksen vain lämpötilan muutoksella. Kerroin $\\alpha$ on *suhteellinen* muutos kelviniä kohti, joten jaa myös alkupituudella $l_0 = 2{,}00\\,\\text{m}$."
         },
         {
           "value": 15.3,
           "feedback": "Käytit lämpötilaa $60\\,{}^\\circ\\text{C}$ lämpötilan muutoksen paikalla. Pituus on mitattu $20\\,{}^\\circ\\text{C}$:ssa, joten $\\Delta T = 60\\,{}^\\circ\\text{C} - 20\\,{}^\\circ\\text{C} = 40\\,\\text{K}$."
         }
       ],
-      "solution": "**Annettu:** metallisauva, $L_0 = 2{,}00\\,\\text{m}$ lämpötilassa $T_0 = 20\\,{}^\\circ\\text{C}$; taulukosta $\\Delta L = 1{,}84\\,\\text{mm}$ lämpötilassa $60\\,{}^\\circ\\text{C}$ ja $\\Delta L = 3{,}68\\,\\text{mm}$ lämpötilassa $100\\,{}^\\circ\\text{C}$\n\n**Kysytty:** pituuden lämpötilakerroin $\\alpha$ yksikössä $10^{-6}\\,\\tfrac{1}{\\text{K}}$\n\n**Periaate:** Kiinteän aineen pituuden muutos on verrannollinen alkupituuteen ja lämpötilan muutokseen, ja verrannollisuuskerroin $\\alpha$ on aineelle ominainen vakio. Taulukossa $\\Delta L$ kaksinkertaistuu, kun lämpötilan muutos $\\Delta T$ ($40\\,\\text{K} \\to 80\\,\\text{K}$) kaksinkertaistuu, joten verrannollisuus pätee eikä sauva muuta olomuotoaan.\n\n**Kaava:** $\\Delta L = \\alpha L_0 \\Delta T$, josta\n\n$$\\alpha = \\frac{\\Delta L}{L_0 \\Delta T}$$\n\n**Muunnokset:** $\\Delta L = 1{,}84\\,\\text{mm} = 1{,}84 \\cdot 10^{-3}\\,\\text{m}$, jotta pituusyksiköt supistuvat. $\\Delta T = 60\\,{}^\\circ\\text{C} - 20\\,{}^\\circ\\text{C} = 40\\,\\text{K}$, sama kelvineinä. Tulos ilmoitetaan yksikössä $10^{-6}\\,\\tfrac{1}{\\text{K}}$.\n\n**Sijoitus:**\n\n$$\\begin{aligned} \\alpha &= \\frac{1{,}84 \\cdot 10^{-3}\\,\\text{m}}{2{,}00\\,\\text{m} \\cdot 40\\,\\text{K}} \\\\ &= 2{,}3 \\cdot 10^{-5}\\,\\tfrac{1}{\\text{K}} \\\\ &= 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\end{aligned}$$\n\n**Vastaus:** $\\alpha = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$, kaksi merkitsevää numeroa. Rajoittava tieto on lämpötilaero $\\Delta T = 60\\,{}^\\circ\\text{C} - 20\\,{}^\\circ\\text{C} = 40\\,\\text{K}$, joka on kokonaisasteiden erotuksena kahden numeron arvo; $\\Delta L = 1{,}84\\,\\text{mm}$ ja $L_0 = 2{,}00\\,\\text{m}$ ovat kolmen numeron arvoja eivätkä rajoita.\n\n**Järkevyys:** Toinen sarake antaa saman: $\\dfrac{3{,}68 \\cdot 10^{-3}\\,\\text{m}}{2{,}00\\,\\text{m} \\cdot 80\\,\\text{K}} = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$. Arvo on yhtä suuri kuin taulukon alumiinin $\\alpha$ ja metallien tavanomaisella alueella $10$–$25 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$. Jos $\\Delta T$:n paikalla olisi $60\\,\\text{K}$, tulos olisi $15 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$, mikä ei sopisi toiseen sarakkeeseen."
+      "solution": "**Annettu:** metallisauva, $l_0 = 2{,}00\\,\\text{m}$ lämpötilassa $T_0 = 20\\,{}^\\circ\\text{C}$; taulukosta $\\Delta l = 1{,}84\\,\\text{mm}$ lämpötilassa $60\\,{}^\\circ\\text{C}$ ja $\\Delta l = 3{,}68\\,\\text{mm}$ lämpötilassa $100\\,{}^\\circ\\text{C}$\n\n**Kysytty:** pituuden lämpötilakerroin $\\alpha$ yksikössä $10^{-6}\\,\\tfrac{1}{\\text{K}}$\n\n**Periaate:** Kiinteän aineen pituuden muutos on verrannollinen alkupituuteen ja lämpötilan muutokseen, ja verrannollisuuskerroin $\\alpha$ on aineelle ominainen vakio. Taulukossa $\\Delta l$ kaksinkertaistuu, kun lämpötilan muutos $\\Delta T$ ($40\\,\\text{K} \\to 80\\,\\text{K}$) kaksinkertaistuu, joten verrannollisuus pätee eikä sauva muuta olomuotoaan.\n\n**Kaava:** $\\Delta l = \\alpha l_0 \\Delta T$, josta\n\n$$\\alpha = \\frac{\\Delta l}{l_0 \\Delta T}$$\n\n**Muunnokset:** $\\Delta l = 1{,}84\\,\\text{mm} = 1{,}84 \\cdot 10^{-3}\\,\\text{m}$, jotta pituusyksiköt supistuvat. $\\Delta T = 60\\,{}^\\circ\\text{C} - 20\\,{}^\\circ\\text{C} = 40\\,\\text{K}$, sama kelvineinä. Tulos ilmoitetaan yksikössä $10^{-6}\\,\\tfrac{1}{\\text{K}}$.\n\n**Sijoitus:**\n\n$$\\begin{aligned} \\alpha &= \\frac{1{,}84 \\cdot 10^{-3}\\,\\text{m}}{2{,}00\\,\\text{m} \\cdot 40\\,\\text{K}} \\\\ &= 2{,}3 \\cdot 10^{-5}\\,\\tfrac{1}{\\text{K}} \\\\ &= 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\end{aligned}$$\n\n**Vastaus:** $\\alpha = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$, kaksi merkitsevää numeroa. Rajoittava tieto on lämpötilaero $\\Delta T = 60\\,{}^\\circ\\text{C} - 20\\,{}^\\circ\\text{C} = 40\\,\\text{K}$, joka on kokonaisasteiden erotuksena kahden numeron arvo; $\\Delta l = 1{,}84\\,\\text{mm}$ ja $l_0 = 2{,}00\\,\\text{m}$ ovat kolmen numeron arvoja eivätkä rajoita.\n\n**Järkevyys:** Toinen sarake antaa saman: $\\dfrac{3{,}68 \\cdot 10^{-3}\\,\\text{m}}{2{,}00\\,\\text{m} \\cdot 80\\,\\text{K}} = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$. Arvo on yhtä suuri kuin taulukon alumiinin $\\alpha$ ja metallien tavanomaisella alueella $10$–$25 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$. Jos $\\Delta T$:n paikalla olisi $60\\,\\text{K}$, tulos olisi $15 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$, mikä ei sopisi toiseen sarakkeeseen."
     },
     {
       "id": "check-3",

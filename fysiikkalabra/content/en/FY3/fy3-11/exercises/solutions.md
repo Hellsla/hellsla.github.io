@@ -1,20 +1,20 @@
 ## fy3-11-L1-01
 **Given:** the steam pressure stays constant, $p = 480.0\,\text{kPa}$, change in volume $\Delta V = 0.0250\,\text{m}^3$
-**Find:** the work $W_\text{g}$ done by the steam on the piston in kilojoules
+**Find:** the work $W$ done by the steam on the piston in kilojoules
 **Principle:** The pressure stays constant, so the force $F = pA$ that the steam exerts on the piston is the same throughout the motion, and the work is force times distance. Since the change in volume is the area of the piston times the distance, $\Delta V = A s$, the work is the pressure times the change in volume.
-**Formula:** $W_\text{g} = F s = pA s$, so $W_\text{g} = p\,\Delta V$
+**Formula:** $W = F s = pA s$, so $W = p\,\Delta V$
 **Conversions:** $480.0\,\text{kPa} = 480\,000\,\text{Pa}$. The volume is already in cubic metres, so $\text{Pa} \cdot \text{m}^3 = \text{J}$ without further conversion. Finally $1\,\text{kJ} = 1000\,\text{J}$.
-**Substitution:** $W_\text{g} = 480\,000\,\text{Pa} \cdot 0.0250\,\text{m}^3 = 12\,000\,\text{J} = 12.0\,\text{kJ}$
+**Substitution:** $W = 480\,000\,\text{Pa} \cdot 0.0250\,\text{m}^3 = 12\,000\,\text{J} = 12.0\,\text{kJ}$
 **Answer:** $12.0\,\text{kJ}$, three significant figures. Both values, the pressure $480.0\,\text{kPa}$ and the change in volume $0.0250\,\text{m}^3$, are given with at least three figures.
 **Reasonableness:** The unit is correct: $\text{Pa} \cdot \text{m}^3 = \tfrac{\text{N}}{\text{m}^2} \cdot \text{m}^3 = \text{N} \cdot \text{m} = \text{J}$. Estimate: $500\,\text{kPa} \cdot 0.025\,\text{m}^3 \approx 12\,\text{kJ}$. The work is positive because the steam expands and pushes the piston. It would be enough to lift a load of about 1.2 tonnes by a metre, and the pistons of a locomotive do this much work many times a second.
 
 ## fy3-11-L1-02
 **Given:** atmospheric pressure $p = 101\,\text{kPa}$, additional volume taken by the steam $\Delta V = 1.70\,\textsf{l}$
-**Find:** the work $W_\text{g}$ done by the steam against the surrounding air in joules
+**Find:** the work $W$ done by the steam against the surrounding air in joules
 **Principle:** The steam pushes the air out of the way, and the atmospheric pressure stays approximately constant throughout the evaporation. At constant pressure the work done by a gas is the pressure times the change in volume.
-**Formula:** $W_\text{g} = p\,\Delta V$
+**Formula:** $W = p\,\Delta V$
 **Conversions:** $101\,\text{kPa} = 101\,000\,\text{Pa}$ and $1\,\textsf{l} = 10^{-3}\,\text{m}^3$, so $1.70\,\textsf{l} = 0.00170\,\text{m}^3$. Then $\text{Pa} \cdot \text{m}^3 = \text{J}$.
-**Substitution:** $W_\text{g} = 101\,000\,\text{Pa} \cdot 0.00170\,\text{m}^3 = 171.7\,\text{J} \approx 172\,\text{J}$
+**Substitution:** $W = 101\,000\,\text{Pa} \cdot 0.00170\,\text{m}^3 = 171.7\,\text{J} \approx 172\,\text{J}$
 **Answer:** $172\,\text{J}$, three significant figures, like the values $101\,\text{kPa}$ and $1.70\,\textsf{l}$.
 **Reasonableness:** Estimate: $100\,\text{kPa} \cdot 0.0017\,\text{m}^3 = 170\,\text{J}$. Evaporating a gram takes about $2.3\,\text{kJ}$ of heat, so the share of the work is $\tfrac{172\,\text{J}}{2300\,\text{J}} \approx 7.5\,\%$, less than a tenth. The rest of the heat stays as internal energy of the steam. The puff of steam from the sauna stones is exactly this expansion.
 
@@ -30,13 +30,13 @@
 
 ## fy3-11-L1-04
 **Given:** read from the graph, the pressure stays constant at $p = 250\,\text{kPa}$, and the volume grows from $V_1 = 1.0\,\textsf{l}$ to $V_2 = 4.0\,\textsf{l}$
-**Find:** the work $W_\text{g}$ done by the gas in joules
+**Find:** the work $W$ done by the gas in joules
 **Principle:** The pressure is the same throughout the expansion, so the work of the gas is the product of the pressure and the change in volume. The work is positive, because the gas expands and pushes the piston.
 **Reading the graph:** The segment is horizontal and runs along the grid line $p = 250\,\text{kPa}$. Its ends are at grid crossings, $V_1 = 1.0\,\textsf{l}$ and $V_2 = 4.0\,\textsf{l}$, so $\Delta V = V_2 - V_1 = 3.0\,\textsf{l}$.
-**Formula:** $W_\text{g} = p\,\Delta V$
+**Formula:** $W = p\,\Delta V$
 **Conversions:** $p = 250\,\text{kPa} = 250\,000\,\text{Pa}$ and $\Delta V = 3.0\,\textsf{l} = 0.0030\,\text{m}^3$, because $1\,\textsf{l} = 10^{-3}\,\text{m}^3$.
-**Substitution:** $W_\text{g} = 250\,000\,\text{Pa} \cdot 0.0030\,\text{m}^3 = 750\,\text{J}$
-**Answer:** $W_\text{g} = 750\,\text{J}$, two significant figures, because the volumes $1.0\,\textsf{l}$ and $4.0\,\textsf{l}$ are read to two figures. The values are read from the grid lines, so the accepted range is $735$–$765\,\text{J}$.
+**Substitution:** $W = 250\,000\,\text{Pa} \cdot 0.0030\,\text{m}^3 = 750\,\text{J}$
+**Answer:** $W = 750\,\text{J}$, two significant figures, because the volumes $1.0\,\textsf{l}$ and $4.0\,\textsf{l}$ are read to two figures. The values are read from the grid lines, so the accepted range is $735$–$765\,\text{J}$.
 **Reasonableness:** The units match: $1\,\text{Pa} \cdot 1\,\text{m}^3 = 1\,\text{J}$. The result equals the area of the rectangle in the graph: a height of $250\,\text{kPa}$ and a width of $3.0\,\textsf{l}$ give $250 \cdot 3.0 = 750\,\text{kPa}\cdot\textsf{l}$, and $1\,\text{kPa}\cdot\textsf{l} = 1\,\text{J}$. The work is positive in an expansion, as it should be.
 
 ## fy3-11-L1-05
@@ -72,11 +72,11 @@
 ## fy3-11-L2-03
 **Given:** heat transferred to the air $Q = 700.0\,\text{J}$, the pressure stays $p = 125\,\text{kPa}$, increase in volume $\Delta V = 1.60\,\textsf{l}$
 **Find:** the change in internal energy $\Delta U$ in joules with its sign
-**Principle:** Energy is conserved, so the heat supplied to the air is divided into a change in internal energy and the work done by the air: the first law $\Delta U = Q - W_\text{g}$. The piston moves lightly, so the pressure stays constant and the work is $p\,\Delta V$.
-**Formula:** $W_\text{g} = p\,\Delta V$, so $\Delta U = Q - W_\text{g} = Q - p\,\Delta V$
+**Principle:** Energy is conserved, so the heat supplied to the air is divided into a change in internal energy and the work done by the air: the first law $\Delta U = Q + W$, where $W$ is the work done on the air. The piston moves lightly, so the pressure stays constant. The air expands and does the work $p\,\Delta V$, so the work done on it is $W = -p\,\Delta V$.
+**Formula:** $W = -p\,\Delta V$, so $\Delta U = Q + W = Q - p\,\Delta V$
 **Conversions:** $125\,\text{kPa} = 125\,000\,\text{Pa}$ and $1.60\,\textsf{l} = 0.00160\,\text{m}^3$, so $\text{Pa} \cdot \text{m}^3 = \text{J}$.
 **Substitution:** $\Delta U = 700.0\,\text{J} - 125\,000\,\text{Pa} \cdot 0.00160\,\text{m}^3 = 700.0\,\text{J} - 200\,\text{J} = 500\,\text{J}$
-**Answer:** $+500\,\text{J}$, that is, the internal energy grows, three significant figures. The limiting value is the work $W_\text{g} = 200\,\text{J}$, which has three figures and is known to the nearest joule, because the pressure $125\,\text{kPa}$ and the change in volume $1.60\,\textsf{l}$ are given with three figures. In the difference $700.0 - 200$ the less precise number decides the decimals, so the result is known to the nearest joule.
+**Answer:** $+500\,\text{J}$, that is, the internal energy grows, three significant figures. The limiting value is the work done by the air, $p\,\Delta V = 200\,\text{J}$, which has three figures and is known to the nearest joule, because the pressure $125\,\text{kPa}$ and the change in volume $1.60\,\textsf{l}$ are given with three figures. In the difference $700.0 - 200$ the less precise number decides the decimals, so the result is known to the nearest joule.
 **Reasonableness:** Of the heat, $200\,\text{J}$ is used in pushing the piston and the remaining $500\,\text{J}$ raises the temperature of the air, so $\Delta U > 0$ and $\Delta U < Q$. If the work were added to the heat, the result would be $900\,\text{J}$, more than the heat that entered the air, although the air gives up energy as it pushes the piston. So the sign is correct.
 
 ## fy3-11-L2-04
@@ -101,11 +101,11 @@
 
 ## fy3-11-L3-02
 **Given:** yearly heat demand $Q = 16.0\,\text{MWh}$, coefficient of performance of the heat pump $\varepsilon = 2.50$, current heating is direct electric heating
-**Find:** the electrical energy saved $\Delta E$ and the heat taken from the outdoor air $Q_\text{outdoors}$ in megawatt-hours, and a justification for why the pump is not a perpetual motion machine
+**Find:** the electrical energy saved $\Delta E$ and the heat taken from the outdoor air $Q_2$ in megawatt-hours, and a justification for why the pump is not a perpetual motion machine
 **Principle:** The coefficient of performance tells how many times as much heat the pump gives out as the electricity it uses. In direct electric heating the resistors turn practically all the electrical energy into internal energy, which is transferred as heat to the room, so it needs as much electricity as heat. Energy is conserved: the heat entering the house is the pump's electricity and the heat taken from the outdoor air together.
-**Formula:** $\varepsilon = \dfrac{Q}{E_\text{el}}$, so $E_\text{el} = \dfrac{Q}{\varepsilon}$. The saving is $\Delta E = Q - E_\text{el}$ and from conservation of energy $Q_\text{outdoors} = Q - E_\text{el}$, so $\Delta E = Q_\text{outdoors} = Q - \dfrac{Q}{\varepsilon}$.
+**Formula:** $\varepsilon = \dfrac{Q_1}{W}$, where the heat given out to the house is $Q_1 = Q$, so $W = \dfrac{Q}{\varepsilon}$. The saving is $\Delta E = Q - W$ and from conservation of energy $Q_2 = Q - W$, so $\Delta E = Q_2 = Q - \dfrac{Q}{\varepsilon}$.
 **Conversions:** All energies are in megawatt-hours and the coefficient of performance has no unit, so no conversions are needed.
-**Substitution:** $E_\text{el} = \dfrac{16.0\,\text{MWh}}{2.50} = 6.40\,\text{MWh}$, so $\Delta E = Q_\text{outdoors} = 16.0\,\text{MWh} - 6.40\,\text{MWh} = 9.60\,\text{MWh}$, or directly $\Delta E = Q\left(1 - \dfrac{1}{\varepsilon}\right) = 16.0\,\text{MWh} \cdot 0.600 = 9.60\,\text{MWh}$
+**Substitution:** $W = \dfrac{16.0\,\text{MWh}}{2.50} = 6.40\,\text{MWh}$, so $\Delta E = Q_2 = 16.0\,\text{MWh} - 6.40\,\text{MWh} = 9.60\,\text{MWh}$, or directly $\Delta E = Q\left(1 - \dfrac{1}{\varepsilon}\right) = 16.0\,\text{MWh} \cdot 0.600 = 9.60\,\text{MWh}$
 **Answer:** $9.60\,\text{MWh}$ both as electricity saved and as heat taken from the outdoor air, three significant figures. The electricity of the pump, $6.40\,\text{MWh}$, is calculated from the heat demand $16.0\,\text{MWh}$ and is not a separate measurement, so the rule for differences is not used. The result is the product $Q\left(1 - \tfrac{1}{\varepsilon}\right)$, and its figures are limited by the heat demand $16.0\,\text{MWh}$ and the coefficient of performance $2.50$ (both three figures).
 **Reasonableness:** The electricity saved is exactly the heat brought in from the outdoor air, and the pump uses only $\tfrac{1}{2.50} = 40\,\%$ of the electricity. Checking the balance: the heat entering the house is $9.60\,\text{MWh} + 6.40\,\text{MWh} = 16.0\,\text{MWh}$. The pump is not a perpetual motion machine, because it does not create energy but uses electricity to transfer heat from cold to warm.
 
@@ -124,19 +124,19 @@ $$\begin{aligned} P &= \dfrac{5.418 \cdot 10^7\,\text{J}}{4500\,\text{s}} \\ &= 
 
 ## fy3-11-L1-06
 **Find:** how the work done by a gas expanding at constant pressure can be seen in the $(V, p)$ coordinate system.
-**Principle:** At constant pressure the work done by the gas is $W_\text{g} = p\,\Delta V$. In the coordinate system the pressure is the height of the horizontal segment and the change in volume $\Delta V$ is its length, that is, its width, so the product is the area of the rectangle between the segment and the volume axis.
+**Principle:** At constant pressure the work done by the gas is $W = p\,\Delta V$. In the coordinate system the pressure is the height of the horizontal segment and the change in volume $\Delta V$ is its length, that is, its width, so the product is the area of the rectangle between the segment and the volume axis.
 **Model answer:** The work is the area of the rectangle under the segment, because its height is the pressure and its width is the change in volume. The height alone or the length alone is not the work; to get the work you need both the pressure and the change in volume. The work is not zero either, even though the pressure does not change: the piston moves when the volume grows, and the force does work. The unit $\text{Pa} \cdot \text{m}^3$ is the joule.
 
 ## fy3-11-L1-07
 **Find:** why the heat that a heat pump gives out indoors can be greater than the electrical energy it uses without breaking the conservation of energy.
-**Principle:** A heat pump uses electricity to transfer heat from the colder outdoor air to the warmer indoor air. Energy is conserved, so the heat given out indoors is the sum of the heat taken from outdoors and the electrical energy used by the pump: $Q_\text{indoors} = Q_\text{outdoors} + E_\text{el}$.
-**Model answer:** Part of the heat given out indoors has been taken from the outdoor air, so the energy going indoors is the sum of the heat from the outdoor air and the electrical energy. The pump does not produce energy but transfers it, and the outdoor air cools a little. The coefficient of performance $\varepsilon = Q_\text{indoors}/E_\text{el}$ can therefore be over 1, although the efficiency cannot exceed $100\,\%$. Electricity and heat are both energy, so they can be compared with each other.
+**Principle:** A heat pump uses electricity to transfer heat from the colder outdoor air to the warmer indoor air. Energy is conserved, so the heat given out indoors is the sum of the heat taken from outdoors and the electrical energy used by the pump: $Q_1 = Q_2 + W$.
+**Model answer:** Part of the heat given out indoors has been taken from the outdoor air, so the energy going indoors is the sum of the heat from the outdoor air and the electrical energy. The pump does not produce energy but transfers it, and the outdoor air cools a little. The coefficient of performance $\varepsilon = Q_1/W$ can therefore be over 1, although the efficiency cannot exceed $100\,\%$. Electricity and heat are both energy, so they can be compared with each other.
 
 ## fy3-11-L1-08
-**Given:** electric power of the pump $P_\text{el} = 1.20\,\text{kW}$, thermal power given out to the heating circuit $P_\text{indoors} = 3.90\,\text{kW}$
+**Given:** electric power of the pump $P_\text{el} = 1.20\,\text{kW}$, thermal power given out to the heating circuit $P_1 = 3.90\,\text{kW}$
 **Find:** the coefficient of performance $\varepsilon$
 **Principle:** The coefficient of performance tells how many times as much heat the pump gives out indoors as the electrical energy it uses. It can also be calculated from the powers, because both powers are energy in the same time.
-**Formula:** $\varepsilon = \dfrac{Q_\text{indoors}}{E_\text{el}} = \dfrac{P_\text{indoors}}{P_\text{el}}$
+**Formula:** $\varepsilon = \dfrac{Q_1}{W} = \dfrac{P_1}{P_\text{el}}$
 **Conversions:** Both powers are in kilowatts, so the unit cancels and no conversion is needed. The coefficient of performance has no unit.
 **Substitution:** $\varepsilon = \dfrac{3.90\,\text{kW}}{1.20\,\text{kW}} = 3.25$
 **Answer:** $\varepsilon = 3.25$, three significant figures, because both powers are given with three figures.
@@ -167,35 +167,35 @@ For the other loads in the same way: $20.0\,\text{kW}$ gives $21.2\,\%$, $40.0\,
 **Model answer:** The claim is wrong, because the engine can repeat its work only by cooling the gas, and therefore part of the heat must always be given out to the colder surroundings. Energy is indeed conserved, but that does not mean that all the heat could become work: part of the heat is transferred to the surroundings in the cooling. Removing friction improves the efficiency, but the limit does not go away. The size of the engine or the heat of combustion of the fuel does not change this limit.
 
 ## fy3-11-L2-07
-**Given:** electrical energies of the four days in the table $E_\text{el}$: $2.1$, $3.0$, $4.2$ and $3.6\,\text{kWh}$, and the heats given out indoors $Q_\text{indoors}$: $6.4$, $8.1$, $10.0$ and $9.3\,\text{kWh}$
-**Find:** the heat $Q_\text{outdoors}$ taken from the outdoor air in total in the four days
+**Given:** electrical energies of the four days in the table $W$: $2.1$, $3.0$, $4.2$ and $3.6\,\text{kWh}$, and the heats given out indoors $Q_1$: $6.4$, $8.1$, $10.0$ and $9.3\,\text{kWh}$
+**Find:** the heat $Q_2$ taken from the outdoor air in total in the four days
 **Principle:** A heat pump does not produce energy. The heat given out indoors is the sum of the heat taken from the outdoor air and the electrical energy used by the pump, and this holds also for sums over several days.
-**Formula:** $Q_\text{outdoors} = Q_\text{indoors} - E_\text{el}$
+**Formula:** $Q_2 = Q_1 - W$
 **Conversions:** All the energies are given in kilowatt-hours, so no conversions are needed.
-**Substitution:** The sums are $E_\text{el} = 2.1 + 3.0 + 4.2 + 3.6 = 12.9\,\text{kWh}$ and $Q_\text{indoors} = 6.4 + 8.1 + 10.0 + 9.3 = 33.8\,\text{kWh}$. So
+**Substitution:** The sums are $W = 2.1 + 3.0 + 4.2 + 3.6 = 12.9\,\text{kWh}$ and $Q_1 = 6.4 + 8.1 + 10.0 + 9.3 = 33.8\,\text{kWh}$. So
 ```latex
 \begin{aligned}
-Q_\text{outdoors} &= 33.8\,\text{kWh} - 12.9\,\text{kWh} \\
+Q_2 &= 33.8\,\text{kWh} - 12.9\,\text{kWh} \\
 &= 20.9\,\text{kWh}
 \end{aligned}
 ```
 **Answer:** $20.9\,\text{kWh}$, three significant figures, because the energies are given to a tenth and the difference is known to that precision.
-**Reasonableness:** The heat taken from outdoors is less than the heat given out indoors, as it should be. Energy balance: $20.9\,\text{kWh} + 12.9\,\text{kWh} = 33.8\,\text{kWh}$. The outdoor temperatures $T_\text{outdoor}$ are not part of the calculation, because the energy balance does not need them. The coefficient of performance $Q_\text{indoors}/E_\text{el}$ of each day is over 1 ($3.05$; $2.70$; $2.38$; $2.58$) and decreases as the frost gets harder, which fits the fact that it is harder to transfer heat from cold air.
+**Reasonableness:** The heat taken from outdoors is less than the heat given out indoors, as it should be. Energy balance: $20.9\,\text{kWh} + 12.9\,\text{kWh} = 33.8\,\text{kWh}$. The outdoor temperatures $T_\text{outdoor}$ are not part of the calculation, because the energy balance does not need them. The coefficient of performance $Q_1/W$ of each day is over 1 ($3.05$; $2.70$; $2.38$; $2.58$) and decreases as the frost gets harder, which fits the fact that it is harder to transfer heat from cold air.
 
 ## fy3-11-L3-04
 **Given:** monthly heat demands $Q$ and coefficients of performance $\varepsilon$ from the table: November $1.8\,\text{MWh}$ and $3.4$; December $2.6\,\text{MWh}$ and $2.9$; January $4.0\,\text{MWh}$ and $2.4$; February $3.1\,\text{MWh}$ and $2.6$; March $2.2\,\text{MWh}$ and $3.1$
 **Find:** a) the monthly electrical energies and their sum, b) the coefficient of performance of the season $\varepsilon_\text{season}$ (for the answer box), c) why the average is not used, and the saving of electricity compared with direct electric heating
-**Principle:** The coefficient of performance is $\varepsilon = Q_\text{indoors}/E_\text{el}$, so the electrical energy of each month is $E_\text{el} = Q/\varepsilon$. The coefficient of performance of the whole season is defined in the same way from the energies of the whole season: the heat given out during the season divided by the electrical energy of the season. The electricity use of direct electric heating is equal to the heat demand.
-**Formula:** $E_\text{el} = \dfrac{Q}{\varepsilon}$ and $\varepsilon_\text{season} = \dfrac{\sum Q}{\sum E_\text{el}}$
+**Principle:** The coefficient of performance is $\varepsilon = Q_1/W$, and here the heat given out indoors is the heat demand, $Q_1 = Q$, so the electrical energy of each month is $W = Q/\varepsilon$. The coefficient of performance of the whole season is defined in the same way from the energies of the whole season: the heat given out during the season divided by the electrical energy of the season. The electricity use of direct electric heating is equal to the heat demand.
+**Formula:** $W = \dfrac{Q}{\varepsilon}$ and $\varepsilon_\text{season} = \dfrac{\sum Q}{\sum W}$
 **Conversions:** All the energies are in megawatt-hours, so no conversions are needed. The coefficient of performance has no unit.
 **Substitution:** a) Month by month:
 ```latex
 \begin{aligned}
-E_\text{el,Nov} &= \frac{1.8\,\text{MWh}}{3.4} = 0.529\,\text{MWh} \\
-E_\text{el,Dec} &= \frac{2.6\,\text{MWh}}{2.9} = 0.897\,\text{MWh} \\
-E_\text{el,Jan} &= \frac{4.0\,\text{MWh}}{2.4} = 1.667\,\text{MWh} \\
-E_\text{el,Feb} &= \frac{3.1\,\text{MWh}}{2.6} = 1.192\,\text{MWh} \\
-E_\text{el,Mar} &= \frac{2.2\,\text{MWh}}{3.1} = 0.710\,\text{MWh}
+W_\text{Nov} &= \frac{1.8\,\text{MWh}}{3.4} = 0.529\,\text{MWh} \\
+W_\text{Dec} &= \frac{2.6\,\text{MWh}}{2.9} = 0.897\,\text{MWh} \\
+W_\text{Jan} &= \frac{4.0\,\text{MWh}}{2.4} = 1.667\,\text{MWh} \\
+W_\text{Feb} &= \frac{3.1\,\text{MWh}}{2.6} = 1.192\,\text{MWh} \\
+W_\text{Mar} &= \frac{2.2\,\text{MWh}}{3.1} = 0.710\,\text{MWh}
 \end{aligned}
 ```
 The sum of the electrical energies is $4.995\,\text{MWh}$ and the sum of the heat demands $1.8 + 2.6 + 4.0 + 3.1 + 2.2 = 13.7\,\text{MWh}$.
@@ -213,10 +213,10 @@ c) Direct electric heating uses $13.7\,\text{MWh}$ of electricity, so the saving
 
 ## fy3-11-L3-05
 **Given:** cross-sectional area $A = 200\,\text{cm}^2$, constant pressure $p = 125\,\text{kPa}$, power of the resistor $P = 260\,\text{W}$, time $t = 4.0\,\text{s}$, height of the piston $h_1 = 10.0\,\text{cm}$ at the start and $h_2 = 22.0\,\text{cm}$ at the end
-**Find:** a) the heat $Q$ and the work $W_\text{g}$ done by the gas, b) the change in internal energy $\Delta U$ in kilojoules (for the answer box), c) the share that became work, and a justification of why a single expansion is not a heat engine
-**Principle:** The energy of the resistor is transferred to the air as heat, $Q = Pt$. The pressure is constant, so the work done by the air is $W_\text{g} = p\,\Delta V$, and the change in volume is obtained from the displacement of the piston: $\Delta V = A\,\Delta h$. Energy is conserved, so the first law is $\Delta U = Q - W_\text{g}$.
+**Find:** a) the heat $Q$ and the work $W$ done by the gas, b) the change in internal energy $\Delta U$ in kilojoules (for the answer box), c) the share that became work, and a justification of why a single expansion is not a heat engine
+**Principle:** The energy of the resistor is transferred to the air as heat, $Q = Pt$. The pressure is constant, so the work done by the air is $W = p\,\Delta V$, and the change in volume is obtained from the displacement of the piston: $\Delta V = A\,\Delta h$. Energy is conserved: by the first law the internal energy changes by the heat and the work done on the air. The work done on the expanding air is $-p\,\Delta V$, so $\Delta U = Q - p\,\Delta V$.
 **Reading the graph:** From the table the height of the piston grows from $h_1 = 10.0\,\text{cm}$ to $h_2 = 22.0\,\text{cm}$, so $\Delta h = 12.0\,\text{cm}$. The height grows by about the same amount every second ($3.0\,\text{cm/s}$). The pressure is given as constant, and the steady rise fits heating with a constant power.
-**Formula:** $Q = Pt$, $\Delta V = A\,\Delta h$, $W_\text{g} = p\,\Delta V$ and $\Delta U = Q - W_\text{g}$
+**Formula:** $Q = Pt$, $\Delta V = A\,\Delta h$, $W = p\,\Delta V$ and $\Delta U = Q - p\,\Delta V$
 **Conversions:** $A = 200\,\text{cm}^2 = 200 \cdot 10^{-4}\,\text{m}^2 = 0.0200\,\text{m}^2$, $\Delta h = 12.0\,\text{cm} = 0.120\,\text{m}$ and $p = 125\,\text{kPa} = 125\,000\,\text{Pa}$.
 **Substitution:** a)
 ```latex
@@ -225,7 +225,7 @@ Q &= 260\,\text{W} \cdot 4.0\,\text{s} \\
 &= 1040\,\text{J} \\
 \Delta V &= 0.0200\,\text{m}^2 \cdot 0.120\,\text{m} \\
 &= 2.40 \cdot 10^{-3}\,\text{m}^3 \\
-W_\text{g} &= 125\,000\,\text{Pa} \cdot 2.40 \cdot 10^{-3}\,\text{m}^3 \\
+W &= 125\,000\,\text{Pa} \cdot 2.40 \cdot 10^{-3}\,\text{m}^3 \\
 &= 300\,\text{J}
 \end{aligned}
 ```
@@ -237,7 +237,7 @@ b)
 &= 0.74\,\text{kJ}
 \end{aligned}
 ```
-c) The share that became work is $\tfrac{W_\text{g}}{Q} = \tfrac{300\,\text{J}}{1040\,\text{J}} = 0.288 \approx 29\,\%$.
+c) The share that became work is $\tfrac{W}{Q} = \tfrac{300\,\text{J}}{1040\,\text{J}} = 0.288 \approx 29\,\%$.
 **Answer:** b) $\Delta U = 0.74\,\text{kJ}$, two significant figures, because the power $260\,\text{W}$ and the time $4.0\,\text{s}$ are given with two figures. This number goes in the answer box.
 **Justification c):** About $29\,\%$ of the heat became work, and the remaining about $71\,\%$ stayed as the internal energy of the air, so the air warmed up. This fits air: for a diatomic gas at constant pressure the share of the work is about $\tfrac{2}{7} \approx 29\,\%$ of the heat received. A single expansion is not a heat engine, because an engine repeats its work cycle after cycle. To bring the piston back to the start, the air has to be cooled and compressed, and in the cooling heat is transferred to the colder surroundings. The work share $29\,\%$ of one expansion is therefore not the efficiency of a cycle: that is $\eta = W/Q_1$, where the work is $W = Q_1 - Q_2$.
 **Reasonableness:** The change in internal energy is positive and smaller than the heat, $0 < 740\,\text{J} < 1040\,\text{J}$, as it should be when a gas expands and receives heat. Energy balance: $740\,\text{J} + 300\,\text{J} = 1040\,\text{J}$. The speed of the piston, $3.0\,\text{cm/s}$, is slow, so the motion of a lightly moving piston is calm.

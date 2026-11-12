@@ -33,9 +33,9 @@
 </svg>
 
 ## Ydinajatus
-Kun kaasu laajenee ja työntää mäntää, se tekee työtä. Kaasu painaa mäntää voimalla $F = pA$, missä $A$ on männän pinta-ala. Jos mäntä liikkuu matkan $s$ ja paine pysyy samana, kaasun tekemä työ on voima kertaa matka, $pAs$. Tulo $As$ on kaasun tilavuuden muutos $\Delta V$, joten kaasun tekemä työ on $W_\text{k} = p\,\Delta V$. ($V$, $p$)-kuvaajassa se on kuvaajan ja $V$-akselin väliin jäävä pinta-ala, samoin kuin työ ($s$, $F$)-kuvaajassa. Kun kaasua puristetaan, ympäristö tekee työtä kaasuun, ja $W_\text{k}$ on negatiivinen. Työtä tekevä kaasu luovuttaa energiaa, joten tällä tunnilla ensimmäinen pääsääntö kirjoitetaan muodossa $\Delta U = Q - W_\text{k}$.
+Kun kaasu laajenee ja työntää mäntää, se tekee työtä. Kaasu painaa mäntää voimalla $F = pA$, missä $A$ on männän pinta-ala. Jos mäntä liikkuu matkan $s$ ja paine pysyy samana, kaasun tekemä työ on voima kertaa matka, $pAs$. Tulo $As$ on kaasun tilavuuden muutos $\Delta V$, joten kaasun tekemä työ on $W = p\,\Delta V$. ($V$, $p$)-kuvaajassa se on kuvaajan ja $V$-akselin väliin jäävä pinta-ala, samoin kuin työ ($s$, $F$)-kuvaajassa. Kun kaasua puristetaan, ympäristö tekee kaasuun puristustyön, jonka suuruus lasketaan samalla kaavalla. Työtä tekevä kaasu luovuttaa energiaa, joten sen sisäenergia kasvaa vähemmän kuin siihen tuotu lämpö.
 
-<svg data-fig="piston-work" viewBox="0 0 600 330" role="img" aria-label="Kaasun tekemä työ männälle, periaatekuva. Sylinterin poikkipinta-ala on A. Kaasun paine p työntää mäntää voimalla F = pA, ja mäntä siirtyy matkan Δs oikealle. Kaasun tilavuus kasvaa varjostetun osan verran, ΔV = AΔs. Työ on W_k = FΔs = pAΔs = pΔV. Kuva ei ole mittakaavassa." style="max-width:100%;font-size:24px">
+<svg data-fig="piston-work" viewBox="0 0 600 330" role="img" aria-label="Kaasun tekemä työ männälle, periaatekuva. Sylinterin poikkipinta-ala on A. Kaasun paine p työntää mäntää voimalla F = pA, ja mäntä siirtyy matkan Δs oikealle. Kaasun tilavuus kasvaa varjostetun osan verran, ΔV = AΔs. Työ on W = FΔs = pAΔs = pΔV. Kuva ei ole mittakaavassa." style="max-width:100%;font-size:24px">
   <defs><pattern id="fy311-dv" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="12" height="12" fill="#ffc078"/><line x1="0" y1="0" x2="0" y2="12" stroke="#e8590c" stroke-width="2"/></pattern></defs>
   <rect x="110" y="70" width="140" height="120" fill="#ffc078" fill-opacity="0.3"/>
   <rect x="250" y="70" width="170" height="120" fill="url(#fy311-dv)"/>
@@ -61,7 +61,7 @@ Kun kaasu laajenee ja työntää mäntää, se tekee työtä. Kaasu painaa mänt
   <line x1="359" y1="226" x2="408" y2="226" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <path d="M419,226 L407,231.5 L407,220.5 Z" fill="#1f2933" stroke-linejoin="round"/>
   <foreignObject x="318.5" y="211.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\Delta s$</div></foreignObject>
-  <foreignObject x="183.5" y="275.5" width="233" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$W_\text{k} = F\,\Delta s = pA\,\Delta s = p\,\Delta V$</div></foreignObject>
+  <foreignObject x="190" y="275.5" width="220" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$W = F\,\Delta s = pA\,\Delta s = p\,\Delta V$</div></foreignObject>
 </svg>
 
 ### Lämpövoimakone toistaa liikettään
@@ -96,7 +96,7 @@ Sähkön ja lämmön yhteistuotannossa lauhduttimen lämpö $Q_2$ otetaan taltee
 ### Jäähdytyskone ja lämpöpumppu
 Jäähdytyskone ja lämpöpumppu toimivat päinvastoin kuin lämpövoimakone: ne käyttävät sähköenergiaa ja siirtävät sen avulla lämpöä kylmästä paikasta lämpimään. Jääkaappi siirtää lämpöä kaapin sisältä huoneeseen, ja ilmalämpöpumppu ulkoilmasta sisälle. Sisälle luovutettu lämpö on ulkoa otetun lämmön ja käytetyn sähkön summa, joten pumppu voi lämmittää taloa esimerkiksi kolminkertaisella teholla käyttämäänsä sähkötehoon verrattuna. Tätä lämpötehon ja sähkötehon suhdetta sanotaan lämpökertoimeksi. Lämpökerroin ei ole hyötysuhde: se voi olla yli 1, koska osa sisälle tulevasta lämmöstä siirretään ulkoilmasta eikä tule sähköstä. Pumppu ei luo energiaa, vaan siirtää sitä.
 
-<svg data-fig="heat-pump" viewBox="0 0 600 340" role="img" aria-label="Lämpöpumpun energiavirrat nuolina, joiden leveys kuvaa tehoa: sähköenergia E_s ja ulkoilmasta otettu lämpö Q_ulko tulevat pumppuun, ja pumppu luovuttaa sisälle lämmön Q_sisälle, joka on niiden summa. Nuolten leveydet ovat mittakaavassa: E_s 20, Q_ulko 40 ja Q_sisälle 60 yksikköä, joten sisälle lähtevä nuoli on yhtä leveä kuin kaksi tulevaa nuolta yhteensä ja kolme kertaa niin leveä kuin sähkön nuoli." style="max-width:100%;font-size:24px">
+<svg data-fig="heat-pump" viewBox="0 0 600 340" role="img" aria-label="Lämpöpumpun energiavirrat nuolina, joiden leveys kuvaa tehoa: sähköenergia W ja ulkoilmasta otettu lämpö Q_2 tulevat pumppuun, ja pumppu luovuttaa sisälle lämmön Q_1, joka on niiden summa. Nuolten leveydet ovat mittakaavassa: W 20, Q_2 40 ja Q_1 60 yksikköä, joten sisälle lähtevä nuoli on yhtä leveä kuin kaksi tulevaa nuolta yhteensä ja kolme kertaa niin leveä kuin sähkön nuoli." style="max-width:100%;font-size:24px">
   <rect x="150" y="12" width="300" height="52" rx="10" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
   <foreignObject x="215" y="23.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kylmä ulkoilma}$</div></foreignObject>
   <rect x="150" y="276" width="300" height="52" rx="10" fill="#f2a69c" stroke="#c92a2a" stroke-width="2.5"/>
@@ -106,34 +106,34 @@ Jäähdytyskone ja lämpöpumppu toimivat päinvastoin kuin lämpövoimakone: ne
   <path d="M280,64 L280,96 L270,96 L300,118 L330,96 L320,96 L320,64 Z" fill="#ffc078" stroke-linejoin="round"/>
   <path d="M30,177 L203,177 L203,183 L225,167 L203,151 L203,157 L30,157 Z" fill="#1f2933" stroke-linejoin="round"/>
   <path d="M270,216 L270,250 L258,250 L300,274 L342,250 L330,250 L330,216 Z" fill="#e8590c" stroke-linejoin="round"/>
-  <foreignObject x="344" y="77.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$Q_\text{ulko}$</div></foreignObject>
-  <foreignObject x="72.5" y="119.5" width="99" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{sähkö}\ E_\text{s}$</div></foreignObject>
-  <foreignObject x="354" y="230.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$Q_\text{sisälle}$</div></foreignObject>
+  <foreignObject x="344" y="77.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$Q_2$</div></foreignObject>
+  <foreignObject x="78.5" y="119.5" width="87" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{sähkö}\ W$</div></foreignObject>
+  <foreignObject x="354" y="230.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$Q_1$</div></foreignObject>
   <foreignObject x="426" y="137.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{nuolen leveys}$</div></foreignObject>
   <foreignObject x="451" y="167.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{kuvaa tehoa}$</div></foreignObject>
 </svg>
 
 ## Kaava: Kaasun työ ja hyötysuhde
-Kun kaasun paine pysyy vakiona, kaasun tekemä työ on
+Kun kaasun paine pysyy vakiona, kaasun tekemä laajenemistyö on
 ```latex
-W_\text{k} = p\,\Delta V
+W = p\,\Delta V
 ```
-missä $W_\text{k}$ on kaasun tekemä työ (J), $p$ kaasun paine (Pa) ja $\Delta V$ kaasun tilavuuden muutos (m³). Työ on positiivinen, kun kaasu laajenee, ja negatiivinen, kun kaasua puristetaan. Kaasun sisäenergian muutos on
+missä $W$ on kaasun tekemä työ (J), $p$ kaasun paine (Pa) ja $\Delta V$ kaasun tilavuuden muutos (m³). Kun kaasua puristetaan, sama kaava antaa ympäristön kaasuun tekemän puristustyön. Kaasun sisäenergian muutoksen antaa lämpöopin ensimmäinen pääsääntö
 ```latex
-\Delta U = Q - W_\text{k}
+\Delta U = Q + W
 ```
-missä $Q$ on kaasuun siirtynyt lämpö (J). Tämä on luvussa *Sisäenergia, lämpömäärä ja energian säilyminen* esitetty ensimmäinen pääsääntö $\Delta U = Q + W$, jossa $W$ on ympäristön kaasuun tekemä työ: $W = -W_\text{k}$.
+missä $Q$ on kaasuun siirtynyt lämpö (J) ja $W$ kaasuun tehty työ (J), kuten luvussa *Sisäenergia, lämpömäärä ja energian säilyminen*. Pääsäännössä $W$ on siis kaasuun tehty työ: kun kaasu laajenee ja tekee työn $p\,\Delta V$, siihen tehty työ on $W = -p\,\Delta V$, joten $\Delta U = Q - p\,\Delta V$.
 
 Lämpövoimakoneen yhden kierroksen aikana tekemä työ ja hyötysuhde ovat
 ```latex
 W = Q_1 - Q_2
 ```
 ```kaavat
-lämpövoimakoneen hyötysuhde :: \eta = \frac{W}{Q_1}
+lämpövoimakoneen hyötysuhde :: \eta = \frac{W}{Q_1} = \frac{Q_1 - Q_2}{Q_1}
 ```
 missä $Q_1$ on kuumasta lähteestä koneeseen siirtynyt lämpö (J), $Q_2$ kylmempään ympäristöön luovutettu lämpö (J), $W$ koneen kierroksen aikana tekemä työ (J) ja $\eta$ hyötysuhde, joka ilmoitetaan usein prosentteina. Hyötysuhde voidaan laskea samalla tavalla tehoista, esimerkiksi sähköteho jaettuna polttoaineteholla.
 
-<svg data-fig="pv-work" viewBox="0 0 600 330" role="img" aria-label="(V, p)-kuvaaja vakiopaineessa laajenevasta kaasusta: paine p pysyy vakiona, kun tilavuus kasvaa arvosta V_1 arvoon V_2, joten kuvaaja on vaakasuora jana, jonka nuoli osoittaa laajenemisen suuntaa. Janan ja V-akselin väliin jäävä varjostettu suorakulmio, jonka leveys on tilavuuden muutos ΔV ja korkeus p, on kaasun tekemä työ W_k = p ΔV. Kaaviokuva." style="max-width:100%;font-size:24px">
+<svg data-fig="pv-work" viewBox="0 0 600 330" role="img" aria-label="(V, p)-kuvaaja vakiopaineessa laajenevasta kaasusta: paine p pysyy vakiona, kun tilavuus kasvaa arvosta V_1 arvoon V_2, joten kuvaaja on vaakasuora jana, jonka nuoli osoittaa laajenemisen suuntaa. Janan ja V-akselin väliin jäävä varjostettu suorakulmio, jonka leveys on tilavuuden muutos ΔV ja korkeus p, on kaasun tekemä työ W = p ΔV. Kaaviokuva." style="max-width:100%;font-size:24px">
   <line x1="203" y1="270" x2="203" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="363" y1="270" x2="363" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="96" y1="112.5" x2="470" y2="112.5" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -157,7 +157,7 @@ missä $Q_1$ on kuumasta lähteestä koneeseen siirtynyt lämpö (J), $Q_2$ kylm
   <line x1="269" y1="112.5" x2="278" y2="112.5" stroke="#1f2933" stroke-width="4.5" stroke-linecap="butt"/>
   <path d="M297,112.5 L277,121.5 L277,103.5 Z" fill="#1f2933" stroke-linejoin="round"/>
   <foreignObject x="198" y="72" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kaasu laajenee}$</div></foreignObject>
-  <foreignObject x="235.5" y="156" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$W_\text{k} = p\,\Delta V$</div></foreignObject>
+  <foreignObject x="241.5" y="156" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$W = p\,\Delta V$</div></foreignObject>
   <line x1="257" y1="228" x2="218" y2="228" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <path d="M206,228 L219,222 L219,234 Z" fill="#1f2933" stroke-linejoin="round"/>
   <line x1="309" y1="228" x2="348" y2="228" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
@@ -165,15 +165,11 @@ missä $Q_1$ on kuumasta lähteestä koneeseen siirtynyt lämpö (J), $Q_2$ kylm
   <foreignObject x="266.5" y="213.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\Delta V$</div></foreignObject>
 </svg>
 
-Lämpöpumppu luovuttaa sisälle lämmön, joka on ulkoilmasta otetun lämmön ja pumpun käyttämän sähköenergian summa:
+Lämpöpumppu luovuttaa sisälle lämmön $Q_1$, joka on ulkoilmasta otetun lämmön $Q_2$ ja pumpun käyttämän sähköenergian $W$ summa. Energia säilyy, joten pumpun käyttämä sähköenergia on $W = Q_1 - Q_2$. Lämpökerroin kertoo, kuinka moninkertaisen lämmön pumppu luovuttaa sisälle käyttämäänsä sähköenergiaan verrattuna:
 ```latex
-Q_\text{sisälle} = Q_\text{ulko} + E_\text{s}
+\varepsilon = \frac{Q_1}{W} = \frac{Q_1}{Q_1 - Q_2}
 ```
-Lämpökerroin kertoo, kuinka moninkertaisen lämmön pumppu luovuttaa sisälle käyttämäänsä sähköenergiaan verrattuna:
-```latex
-\varepsilon = \frac{Q_\text{sisälle}}{E_\text{s}}
-```
-missä $Q_\text{sisälle}$ on sisälle luovutettu lämpö (J), $Q_\text{ulko}$ ulkoilmasta otettu lämpö (J), $E_\text{s}$ pumpun käyttämä sähköenergia (J) ja $\varepsilon$ lämpökerroin. Lämpökerroin voidaan laskea samalla tavalla tehoista.
+missä $Q_1$ on lämpimälle puolelle eli sisälle luovutettu lämpö (J), $Q_2$ kylmältä puolelta eli ulkoilmasta otettu lämpö (J), $W$ pumpun käyttämä sähköenergia eli työ (J) ja $\varepsilon$ lämpökerroin. Lämpökerroin voidaan laskea samalla tavalla tehoista.
 
 ## Esimerkki
 Biovoimalaitoksen kattilaan syötetään puuhakkeen energiaa teholla $500\,\text{MW}$. Kun laitos tuottaa pelkkää sähköä, sähköteho on $190\,\text{MW}$. Talvella sama laitos toimii yhteistuotantovoimalaitoksena: se tuottaa $150\,\text{MW}$ sähköä ja $290\,\text{MW}$ kaukolämpöä. Mikä on hyötysuhde kummassakin tapauksessa, ja kuinka suuri teho siirtyy ympäristöön hukkalämpönä?
@@ -235,9 +231,9 @@ Moni ajattelee, että parempi tekniikka voisi tehdä lämpövoimakoneesta lähes
 Toinen virhe on pitää lämpöpumppua ikiliikkujana, koska se luovuttaa enemmän lämpöä kuin käyttää sähköä. Ylimääräinen lämpö tulee ulkoilmasta, eikä energiaa synny tyhjästä. Kolmas virhe on ajatella, että paineistettu kaasu tekee työtä jo sillä, että sen paine on suuri. Työtä tehdään vain, kun tilavuus muuttuu ja mäntä liikkuu.
 
 ## Tiivistelmä
-- Vakiopaineessa laajeneva kaasu tekee työn $W_\text{k} = p\,\Delta V$, joka on ($V$, $p$)-kuvaajan alle jäävä pinta-ala. Sisäenergia muuttuu $\Delta U = Q - W_\text{k}$.
+- Vakiopaineessa laajeneva kaasu tekee työn $W = p\,\Delta V$, joka on ($V$, $p$)-kuvaajan alle jäävä pinta-ala. Ensimmäisessä pääsäännössä $\Delta U = Q + W$ työ $W$ on kaasuun tehty työ, joten laajenevalle kaasulle $\Delta U = Q - p\,\Delta V$.
 - Mäntäkone voi toistaa työnsä vain, jos kaasu jäähdytetään ennen kuin mäntä palautetaan; silloin lämpöä siirtyy kylmempään.
 - Lämpövoimakone ottaa lämpöä $Q_1$ kuumasta lähteestä, tekee työn $W$ ja luovuttaa lämmön $Q_2$ kylmempään ympäristöön: $W = Q_1 - Q_2$.
-- Hyötysuhde on $\eta = W/Q_1$. Lämpövoimakone ei voi muuttaa kaikkea lämpöä työksi.
+- Hyötysuhde on $\eta = W/Q_1 = (Q_1 - Q_2)/Q_1$. Lämpövoimakone ei voi muuttaa kaikkea lämpöä työksi.
 - Lauhdevoimalaitoksen sähköntuotannon hyötysuhde on noin $40\,\%$. Sähkön ja lämmön yhteistuotannossa lauhduttimen lämpö käytetään kaukolämpönä, joten kokonaishyötysuhde, jossa hyödyksi lasketaan sähkö ja lämpö, on 85–$90\,\%$.
-- Jäähdytyskone ja lämpöpumppu siirtävät työn avulla lämpöä kylmästä lämpimään. Ne eivät luo energiaa. Lämpöpumpun lämpökerroin $\varepsilon = Q_\text{sisälle}/E_\text{s}$ ei ole hyötysuhde, ja se voi olla yli 1, koska osa lämmöstä tulee ulkoilmasta.
+- Jäähdytyskone ja lämpöpumppu siirtävät työn avulla lämpöä kylmästä lämpimään. Ne eivät luo energiaa. Lämpöpumpun lämpökerroin $\varepsilon = Q_1/(Q_1 - Q_2)$, jossa $Q_1$ on sisälle luovutettu ja $Q_2$ ulkoilmasta otettu lämpö, ei ole hyötysuhde, ja se voi olla yli 1, koska osa lämmöstä tulee ulkoilmasta.

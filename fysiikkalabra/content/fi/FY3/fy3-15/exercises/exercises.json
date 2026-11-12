@@ -28,7 +28,7 @@
     {
       "id": "fy3-15-L1-04",
       "level": 1,
-      "text": "Kuvassa on lauhdevoimalaitoksen teho energiaketjun eri vaiheissa: $P_0$ on polttoaineteho, $P_1$ teho kattilan jälkeen, $P_2$ teho höyrykierron jälkeen ja $P_3$ sähköteho. Missä vaiheessa teho pienenee eniten, ja kuinka suuri teho siirtyy tässä vaiheessa lämpönä ympäristöön? Lue arvot kuvasta. Anna vastaus megawatteina.",
+      "text": "Kuvassa on lauhdevoimalaitoksen teho energiaketjun eri vaiheissa: $P_\\text{o}$ on polttoaineteho, $P_1$ teho kattilan jälkeen, $P_2$ teho höyrykierron jälkeen ja $P_3$ sähköteho. Missä vaiheessa teho pienenee eniten, ja kuinka suuri teho siirtyy tässä vaiheessa lämpönä ympäristöön? Lue arvot kuvasta. Anna vastaus megawatteina.",
       "figure": "fy3-15/chain-bars",
       "answer": 200,
       "unit": "MW",
@@ -175,7 +175,7 @@
       "id": "fy3-15-L2-06",
       "level": 2,
       "core": true,
-      "text": "Taulukossa on kolmen voimalaitoksen polttoaine- tai reaktoriteho $P_0$ ja sähköteho $P_\\text{s}$ (esimerkkiaineisto). Kaikki laitokset ovat lauhdevoimalaitoksia, ja loput energiasta siirtyy hukkalämpönä ympäristöön.\n\na) Laske kunkin laitoksen hyötysuhde.\n\nb) Laske kunkin laitoksen hukkalämmön teho $P_\\text{h}$.\n\nc) Onko heikoimman hyötysuhteen laitoksella myös suurin hukkalämmön teho? Perustele.\n\nAnna b)-kohdassa suurimman hukkalämmön teho vastauslaatikkoon megawatteina.",
+      "text": "Taulukossa on kolmen voimalaitoksen polttoaine- tai reaktoriteho $P_\\text{o}$ ja sähköteho $P_\\text{s}$ (esimerkkiaineisto). Kaikki laitokset ovat lauhdevoimalaitoksia, ja loput energiasta siirtyy hukkalämpönä ympäristöön.\n\na) Laske kunkin laitoksen hyötysuhde.\n\nb) Laske kunkin laitoksen hukkalämmön teho $P_\\text{h}$.\n\nc) Onko heikoimman hyötysuhteen laitoksella myös suurin hukkalämmön teho? Perustele.\n\nAnna b)-kohdassa suurimman hukkalämmön teho vastauslaatikkoon megawatteina.",
       "kind": [
         "data",
         "reasoning"
@@ -187,7 +187,7 @@
         "caption": "Kolmen lauhdevoimalaitoksen tehot (esimerkkiaineisto)",
         "columns": [
           "Laitos",
-          "$P_0\\,(\\text{MW})$",
+          "$P_\\text{o}\\,(\\text{MW})$",
           "$P_\\text{s}\\,(\\text{MW})$"
         ],
         "rows": [
@@ -292,7 +292,7 @@
     {
       "id": "fy3-15-L3-05",
       "level": 3,
-      "text": "Ydinvoimalan reaktorin lämpöteho on $2700\\,\\text{MW}$ ja sähköteho $900\\,\\text{MW}$. Lauhdutinta jäähdyttävän meriveden virtaama on vakio $38{,}0\\,\\text{t/s}$. Veden lämpötilat lauhduttimeen tullessa ja sieltä lähtiessä on mitattu neljänä kuukautena (taulukko, esimerkkiaineisto). Veden ominaislämpökapasiteetti on $4190\\,\\text{J/(kg}\\cdot\\text{K)}$.\n\na) Laske veden lämpötilan nousu $\\Delta T$ kunakin kuukautena ja sen keskiarvo $\\Delta T_\\text{ka}$.\n\nb) Laske lauhduttimeen siirtyvä lämpöteho $P_\\text{L}$ käyttäen keskiarvoa $\\Delta T_\\text{ka}$.\n\nc) Vertaa tulosta laitoksen hukkalämmön tehoon $P_\\text{h} = P_0 - P_\\text{s}$. Mihin loppu hukkalämmöstä siirtyy?\n\nd) Miksi merivettä lämmittävästä lauhduttimen lämmöstä ei voi enää tuottaa sähköä, ja mikä vaikutus lämmöllä on lähiveteen heinäkuussa?\n\nAnna b)-kohdan tulos vastauslaatikkoon megawatteina.",
+      "text": "Ydinvoimalan reaktorin lämpöteho on $2700\\,\\text{MW}$ ja sähköteho $900\\,\\text{MW}$. Lauhdutinta jäähdyttävän meriveden virtaama on vakio $38{,}0\\,\\text{t/s}$. Veden lämpötilat lauhduttimeen tullessa ja sieltä lähtiessä on mitattu neljänä kuukautena (taulukko, esimerkkiaineisto). Veden ominaislämpökapasiteetti on $4190\\,\\text{J/(kg}\\cdot\\text{K)}$.\n\na) Laske veden lämpötilan nousu $\\Delta T$ kunakin kuukautena ja sen keskiarvo $\\Delta T_\\text{ka}$.\n\nb) Laske lauhduttimeen siirtyvä lämpöteho $P_\\text{L}$ käyttäen keskiarvoa $\\Delta T_\\text{ka}$.\n\nc) Vertaa tulosta laitoksen hukkalämmön tehoon $P_\\text{h} = P_\\text{o} - P_\\text{s}$. Mihin loppu hukkalämmöstä siirtyy?\n\nd) Miksi merivettä lämmittävästä lauhduttimen lämmöstä ei voi enää tuottaa sähköä, ja mikä vaikutus lämmöllä on lähiveteen heinäkuussa?\n\nAnna b)-kohdan tulos vastauslaatikkoon megawatteina.",
       "kind": [
         "data",
         "reasoning"

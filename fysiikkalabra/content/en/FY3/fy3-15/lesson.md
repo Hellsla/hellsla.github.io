@@ -141,7 +141,7 @@ In combined heat and power production the heat of the condenser is led into the 
   <foreignObject x="250" y="214" width="200" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\text{electricity } P_\text{s}$</div></foreignObject>
   <foreignObject x="238" y="148" width="230" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\text{district heating } P_\text{k}$</div></foreignObject>
   <foreignObject x="180" y="64" width="220" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\text{waste heat}$</div></foreignObject>
-  <foreignObject x="312" y="8" width="280" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:right">$P_0 = 400\,\text{MW}$</div></foreignObject>
+  <foreignObject x="312" y="8" width="280" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:right">$P_\text{o} = 400\,\text{MW}$</div></foreignObject>
 </svg>
 
 The overall efficiency rises in combined production to as much as 85–$90\,\%$, but electricity and heat are not equally valuable. Electricity can be used for anything, and it can be transmitted hundreds of kilometres. District heating is good only for heating, and its network reaches only a town. That is why the ratio of electricity to heat in a combined heat and power plant is chosen according to the need for heat: in summer little heat is needed and the plant produces almost only electricity, in winter in frosty weather a lot of heat is needed.
@@ -149,28 +149,28 @@ The overall efficiency rises in combined production to as much as 85–$90\,\%$,
 <figure class="unit-photo"><img src="pics/fy3/nesjavellir.webp" alt="White power plant buildings in a green valley among mountains, with a tall white cloud rising from one of them."><figcaption>The Nesjavellir geothermal power plant in Iceland produces electricity and district heat. The cloud rising from the plant is condensed water vapour that carries waste heat to the surroundings.</figcaption></figure>
 
 ## Formula: Efficiency of a power plant
-The efficiency of one step or of the whole plant is the ratio of the useful power to the power brought in, and the power of waste heat is the part that is not put to use:
+The efficiency of one step or of the whole plant is the ratio of the useful energy obtained, the output work, to the energy brought in, the input work. The same ratio follows from the powers: the output power divided by the input power. The power of waste heat is the part of the input power that is not put to use:
 ```latex
-\eta = \frac{P_\text{useful}}{P_0}
+\eta = \frac{W_\text{a}}{W_\text{o}} = \frac{P_\text{a}}{P_\text{o}}
 ```
 ```latex
-P_\text{h} = P_0 - P_\text{useful}
+P_\text{h} = P_\text{o} - P_\text{a}
 ```
-where $\eta$ is the efficiency (often as a percentage), $P_\text{useful}$ is the useful power obtained (W), $P_0$ is the power brought in, for example the fuel power (W), and $P_\text{h}$ is the power of waste heat (W). In a power plant the steps are in series. The output power of each step is the product of its efficiency and the power coming in:
+where $\eta$ is the efficiency (often as a percentage), $W_\text{a}$ is the output work, the useful energy obtained (J), $W_\text{o}$ is the input work, the energy brought in (J), $P_\text{a}$ is the output power, the useful power obtained (W), $P_\text{o}$ is the input power, the power brought in, for example the fuel power (W), and $P_\text{h}$ is the power of waste heat (W). The subscripts follow the Finnish formula tables: a for *anto* (output) and o for *otto* (input); the subscript of $P_\text{o}$ is the letter o, not zero. In a power plant the steps are in series, and the chain starts from the input power $P_\text{o}$. The output power of each step is the product of its efficiency and the power coming in:
 ```latex
 \begin{aligned}
-P_1 &= \eta_1 P_0 \\
+P_1 &= \eta_1 P_\text{o} \\
 P_2 &= \eta_2 P_1 \\
 P_3 &= \eta_3 P_2
 \end{aligned}
 ```
 Substituting the upper equation into the lower one gives the efficiency of the whole chain:
 ```latex
-\eta = \frac{P_3}{P_0} = \eta_1\,\eta_2\,\eta_3
+\eta = \frac{P_3}{P_\text{o}} = \eta_1\,\eta_2\,\eta_3
 ```
-where $\eta_1$, $\eta_2$ and $\eta_3$ are the efficiencies of the steps (boiler, steam cycle, generator and transformer) and $P_3$ is the electric power. The efficiencies are multiplied, not added. In a real power plant every factor is less than 1, so the efficiency of the chain is less than that of the weakest step. In the figure the bars $P_1$, $P_2$ and $P_3$ are obtained from the previous bar by multiplying it by the efficiency of the step, $\eta_1$, $\eta_2$ or $\eta_3$.
+where $\eta_1$, $\eta_2$ and $\eta_3$ are the efficiencies of the steps (boiler, steam cycle, generator and transformer) and $P_3$ is the electric power, the output power $P_\text{a}$ of the plant. The efficiencies are multiplied, not added. In a real power plant every factor is less than 1, so the efficiency of the chain is less than that of the weakest step. In the figure the bars $P_1$, $P_2$ and $P_3$ are obtained from the previous bar by multiplying it by the efficiency of the step, $\eta_1$, $\eta_2$ or $\eta_3$.
 
-<svg viewBox="0 0 600 480" role="img" aria-label="Bar chart of how power decreases along an energy chain. The fuel power P0 is 500 MW, after the boiler P1 is 460 MW, after the steam cycle P2 is 212 MW and after the generator and transformer P3 is 200 MW. Each bar is lower than the previous one, and the pale part on top of a bar, bounded by a dashed line, is the power lost in the previous step; the loss is marked on each: 40 MW in the boiler, 248 MW in the steam cycle and 12 MW in the generator and transformer. The efficiencies of the steps are 0.92, 0.46 and 0.945, and their product is 0.40. The bars are to scale." style="max-width:100%;font-size:24px">
+<svg viewBox="0 0 600 480" role="img" aria-label="Bar chart of how power decreases along an energy chain. The fuel power P_o is 500 MW, after the boiler P1 is 460 MW, after the steam cycle P2 is 212 MW and after the generator and transformer P3 is 200 MW. Each bar is lower than the previous one, and the pale part on top of a bar, bounded by a dashed line, is the power lost in the previous step; the loss is marked on each: 40 MW in the boiler, 248 MW in the steam cycle and 12 MW in the generator and transformer. The efficiencies of the steps are 0.92, 0.46 and 0.945, and their product is 0.40. The bars are to scale." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy315-bar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
   <line x1="30" y1="380" x2="590" y2="380" stroke="#1f2933" stroke-width="3"/>
   <rect x="50" y="130" width="100" height="250" fill="url(#fy315-bar)"/>
@@ -183,7 +183,7 @@ where $\eta_1$, $\eta_2$ and $\eta_3$ are the efficiencies of the steps (boiler,
   <foreignObject x="170" y="8" width="140" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\eta_1 = 0.92$</div></foreignObject>
   <foreignObject x="310" y="8" width="140" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\eta_2 = 0.46$</div></foreignObject>
   <foreignObject x="450" y="8" width="140" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\eta_3 = 0.945$</div></foreignObject>
-  <foreignObject x="40" y="388" width="120" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$P_0$</div></foreignObject>
+  <foreignObject x="40" y="388" width="120" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$P_\text{o}$</div></foreignObject>
   <foreignObject x="40" y="426" width="120" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$500\,\text{MW}$</div></foreignObject>
   <foreignObject x="180" y="388" width="120" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$P_1$</div></foreignObject>
   <foreignObject x="180" y="426" width="120" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$460\,\text{MW}$</div></foreignObject>
@@ -201,7 +201,7 @@ where $\eta_1$, $\eta_2$ and $\eta_3$ are the efficiencies of the steps (boiler,
 
 In a combined heat and power plant both electricity and district heating are obtained as useful output, so the overall efficiency is
 ```latex
-\eta_\text{tot} = \frac{P_\text{s} + P_\text{k}}{P_0}
+\eta_\text{tot} = \frac{P_\text{s} + P_\text{k}}{P_\text{o}}
 ```
 where $P_\text{s}$ is the electric power (W) and $P_\text{k}$ is the district heating power (W). The heat of the condenser warms the cooling water. If a mass $m$ of water flows in a time $t$ and its temperature rises by $\Delta T$, then with the quantity of heat $Q = cm\,\Delta T$ the heat power of the condenser is
 ```latex
@@ -233,20 +233,20 @@ The fuel power of a condensing power plant is $600\,\text{MW}$. The efficiency o
 
 <!-- vaihe -->
 
-**Given and find.** The fuel power is $P_0 = 600\,\text{MW}$ and the efficiencies of the steps are $\eta_1 = 0.910$ (boiler), $\eta_2 = 0.440$ (steam cycle) and $\eta_3 = 0.950$ (generator and transformer). We are asked for the electric power $P_3$, the efficiency of the whole chain $\eta$ and the power of waste heat $P_\text{h}$.
+**Given and find.** The fuel power is $P_\text{o} = 600\,\text{MW}$ and the efficiencies of the steps are $\eta_1 = 0.910$ (boiler), $\eta_2 = 0.440$ (steam cycle) and $\eta_3 = 0.950$ (generator and transformer). We are asked for the electric power $P_3$, the efficiency of the whole chain $\eta$ and the power of waste heat $P_\text{h}$.
 
 <!-- vaihe -->
 
-**Principle.** The steps are in series: the output power of each step is the input power of the next, and each step lets through only its own efficiency's share of the power coming into it. The plant runs steadily and energy is conserved, so the fuel power is either electricity or waste transferred to the surroundings as heat: $P_0 = P_3 + P_\text{h}$.
+**Principle.** The steps are in series: the output power of each step is the input power of the next, and each step lets through only its own efficiency's share of the power coming into it. The plant runs steadily and energy is conserved, so the fuel power is either electricity or waste transferred to the surroundings as heat: $P_\text{o} = P_3 + P_\text{h}$.
 
 <!-- vaihe -->
 
 **Rearranged formula.** The efficiencies are multiplied, and the waste heat is the part that does not turn into electricity:
 ```latex
 \begin{aligned}
-P_3 &= \eta_1\,\eta_2\,\eta_3\,P_0 \\
-\eta &= \frac{P_3}{P_0} \\
-P_\text{h} &= P_0 - P_3
+P_3 &= \eta_1\,\eta_2\,\eta_3\,P_\text{o} \\
+\eta &= \frac{P_3}{P_\text{o}} \\
+P_\text{h} &= P_\text{o} - P_3
 \end{aligned}
 ```
 
@@ -259,7 +259,7 @@ P_\text{h} &= P_0 - P_3
 **Substitution.** The product of the efficiencies is $0.910 \cdot 0.440 \cdot 0.950 = 0.38038$. The electric power is
 ```latex
 \begin{aligned}
-P_3 &= \eta_1\,\eta_2\,\eta_3\,P_0 \\
+P_3 &= \eta_1\,\eta_2\,\eta_3\,P_\text{o} \\
 &= 0.38038 \cdot 600\,\text{MW} \\
 &= 228.228\,\text{MW}
 \end{aligned}
@@ -287,10 +287,10 @@ Another mistake is to add the efficiencies of the steps or to take their mean. W
 
 ## Summary
 - A power plant converts energy step by step in an energy chain, and in each step part of it is transferred to the surroundings as heat.
-- Efficiency is $\eta = P_\text{useful}/P_0$, and the power of waste heat is $P_\text{h} = P_0 - P_\text{useful}$.
+- Efficiency is $\eta = P_\text{a}/P_\text{o}$, and the power of waste heat is $P_\text{h} = P_\text{o} - P_\text{a}$.
 - The efficiency of the chain is the product of the efficiencies of the steps, $\eta = \eta_1\,\eta_2\,\eta_3$, and it is smaller than that of the weakest step.
 - The biggest loss of a condensing power plant is the heat transferred to the condenser of the steam cycle, which a heat engine cannot avoid completely. The efficiency of electricity production is about $40\,\%$ (typically $38$–$42\,\%$).
-- In combined heat and power production the heat of the condenser is led into the district heating network, and the overall efficiency is $\eta_\text{tot} = (P_\text{s} + P_\text{k})/P_0$, about 85–$90\,\%$. Then less electricity is obtained.
+- In combined heat and power production the heat of the condenser is led into the district heating network, and the overall efficiency is $\eta_\text{tot} = (P_\text{s} + P_\text{k})/P_\text{o}$, about 85–$90\,\%$. Then less electricity is obtained.
 - A hydropower plant, a wind turbine and a solar panel are not heat engines, but the denominator of their efficiencies is the power of flowing water, wind or radiation, not bought fuel.
 - The cooling water of the condenser receives the heat power $P_\text{L} = c\,q_m\,\Delta T$, which is most of the waste heat.
 
