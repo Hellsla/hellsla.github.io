@@ -131,7 +131,7 @@ def fitgraph():
     ax.line([(4.2, k * 4.2 + b), (7.9, k * 7.9 + b)], COLD, 3)
     for x, y in zip(F14, US):
         ax.point(x, y, INK)
-    f.tex(ax.X(4.1), ax.Y(2.45), r"\text{example data}", "start", color=MUTED, bg=True)
+    f.tex(ax.X(7.9), ax.Y(0.25), r"\text{example data}", "end", color=MUTED, bg=True)   # in the empty corner under the line: at the top its white box covered the axis name beside the arrow tip
     f.tex(ax.X(4.1), ax.Y(2.06), rf"\text{{fit: slope}} = {k * 1e-14 * 1e15:.2f} \cdot 10^{{-15}}\,\text{{V}} \cdot \text{{s}}", "start", color=COLD, bg=True)
     return f.svg()
 

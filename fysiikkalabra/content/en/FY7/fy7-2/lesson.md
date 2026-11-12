@@ -310,7 +310,7 @@ where $r$ is the radius of the circular path (m) and $m$ the mass of the particl
   <circle cx="424" cy="64" r="6.5" fill="#2f74b5" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="287" y="236" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{proton}$</div></foreignObject>
   <foreignObject x="278" y="47.5" width="130" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#2f74b5">$\text{deuteron}$</div></foreignObject>
-  <foreignObject x="109" y="25.5" width="130" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$B = 0.20\,\text{T}$</div></foreignObject>
+  <foreignObject x="109" y="85.5" width="130" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$B = 0.20\,\text{T}$</span></div></foreignObject>
 </svg>
 
 ## Velocity selector and mass spectrometer {Nopeusvalitsin ja massaspektrometri}

@@ -111,7 +111,7 @@ def r_graph():
         ax.point(v, rp(v), INK); ax.point(v, rd(v), WATER)
     f.tex(ax.X(1.5), ax.Y(rp(1.5)) + 48, r"\text{protoni}", "middle", INK, w=110)
     f.tex(ax.X(2.0) - 16, ax.Y(rd(2.0)) - 2, r"\text{deuteroni}", "end", WATER, w=130)
-    f.tex(ax.X(0.08), 40, r"B = 0{,}20\,\text{T}", "start", w=130)
+    f.tex(ax.X(0.08), ax.Y(17.5), r"B = 0{,}20\,\text{T}", "start", w=130, bg=True)   # under the axis name, which stands beside the arrow tip
     return f.svg()
 
 

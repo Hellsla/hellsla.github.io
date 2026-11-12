@@ -78,7 +78,7 @@ def energia():
             "kertomalla polttoaineen massa lämpöarvolla.")
     x0, per = 286, 6.4                                    # the bars start at x0; 1 MJ = 6.4 units
     f.tex(20, 26, r"\text{sama massa}", "start", MUTED, size=24, w=180)
-    f.tex(x0, 26, r"\text{palaessa vapautuva energia}", "start", MUTED, size=24, w=330)
+    f.tex(594, 26, r"\text{palaessa vapautuva energia}", "end", MUTED, size=24, w=330)   # ends at the figure's right edge: from x0 the text is a few units too long for the figure
     for k in range(0, 5):
         f.line(x0 + k * 10 * per, 50, x0 + k * 10 * per, 262, RULE_LIGHT, 1.5)
         f.tex(x0 + k * 10 * per, 278, str(k * 10), "middle", MUTED, size=24, w=40)
