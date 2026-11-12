@@ -131,6 +131,18 @@
           "correct": true
         }
       ]
+    },
+    {
+      "id": "fy5-17-L1-09",
+      "level": 1,
+      "text": "Pilkkijä mittaa kaikuluotaimella järven syvyyttä jään läpi. Veden lämpötila jään alla on $0\\,{}^\\circ\\text{C}$. Luotain lähettää äänipulssin suoraan alaspäin. Kaiku pohjasta palaa $20\\,\\text{ms}$ kuluttua. Hae äänen nopeus vedessä MAFY-taulukosta (mafytaulukot.fi). Kuinka syvä vesi on? Vastaa metreinä.",
+      "lookup": "MAFY",
+      "answer": 14.0,
+      "unit": "m",
+      "tolerance": 0.04,
+      "hints": [
+        "Arvo löytyy MAFY-taulukon kohdasta *Aaltoliike*, taulukosta *Äänen nopeuksia eri väliaineissa*."
+      ]
     }
   ],
   "level2": [
@@ -315,6 +327,15 @@
           "feedback": "Väite on tosi, mutta se ei selitä vastausta. Se kertoo vain aaltojen saapumisjärjestyksen. Se ei kerro, miten aikaero riippuu etäisyydestä."
         }
       ]
+    },
+    {
+      "id": "fy5-17-L2-09",
+      "level": 2,
+      "text": "Kuvassa on ultraäänilaitteen A-kuvaus reidestä. A-kuvaus näyttää kaiut ajan funktiona. Kaiut A, B ja C tulevat kolmelta kudosrajalta. Ääni etenee kudoksessa nopeudella $1540\\,\\text{m/s}$. Lue kuvasta kaikujen B ja C hetket. Kuinka paksu on kudoskerros, jota rajaavat kaikuja B ja C vastaavat rajapinnat? Anna vastaus senttimetreinä.",
+      "figure": "fy5-17/a-scan",
+      "answer": 3.08,
+      "unit": "cm",
+      "tolerance": 0.02
     }
   ],
   "level3": [

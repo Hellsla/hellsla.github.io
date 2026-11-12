@@ -147,6 +147,15 @@
           "feedback": "Tosi. Loittonevan auton takana aaltorintamat ovat harvemmassa kuin auton seistessä. Siksi aallonpituus on suurempi ja kuultu taajuus on pienempi kuin torven oma taajuus."
         }
       ]
+    },
+    {
+      "id": "fy5-14-L1-10",
+      "level": 1,
+      "text": "Kuvassa on tuntemattoman soittimen äänen FFT-spektri. FFT-spektri näyttää, millä taajuuksilla äänessä on voimakkuutta. Mikä on äänen perustaajuus? Lue tarvittavat tiedot kuvasta.",
+      "figure": "fy5-14/spektri-tehtava",
+      "answer": 200.0,
+      "unit": "Hz",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -276,6 +285,15 @@
       "answer": 548,
       "unit": "Hz",
       "tolerance": 0.002
+    },
+    {
+      "id": "fy5-14-L2-08",
+      "level": 2,
+      "text": "Kuvassa on kahden yhtä aikaa soivan ääniraudan yhteinen ääni mikrofonilla mitattuna. Toisen ääniraudan taajuus on $523\\,\\text{Hz}$, ja se on korkeampi kuin toisen. Mikä on toisen ääniraudan taajuus? Lue tarvittavat tiedot kuvasta.",
+      "figure": "fy5-14/huojunta-tehtava",
+      "answer": 519.0,
+      "unit": "Hz",
+      "tolerance": 0.02
     }
   ],
   "level3": [

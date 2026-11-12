@@ -357,7 +357,40 @@ def hero():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "rintamat": fronts, "koysi": rope, "diffraktio": diffraction, "heijastuslaki": law, "huygens": huygens}
+def tank_gap():
+    """Task figure (exercises L2-09, L2-10): a wave tank from above on a 2,0 cm grid. Plane fronts at the vertical gridlines 1 and 5
+    (λ = 4 squares = 8,0 cm); a wall at line 9 with a gap between the horizontal gridlines 1 and 7 (b = 6 squares = 12 cm)."""
+    f = Fig("fy511-tank", 340, "Kuva mittakaavassa: aaltoaltaan pohja ylhäältä katsottuna ruudukkona, jossa yksi ruutu on 2,0 cm. "
+            "Ruudukossa on 16 ruutua vaakasuunnassa ja 8 ruutua pystysuunnassa. Vasemmalta oikealle etenevän tasoaallon kaksi "
+            "aaltorintamaa ovat pystysuoria viivoja ruudukon pystyviivoilla 1 ja 5 vasemmasta reunasta laskettuna. Pystyviivalla 9 on "
+            "seinä, jossa on rako: raon reunat ovat ruudukon vaakaviivoilla 1 ja 7 ylhäältä laskettuna. Raon takana aaltorintamat "
+            "ovat kaaria raon keskipisteen ympärillä. Aallonpituutta ja raon leveyttä ei ole merkitty.")
+    sq, x0, y0, cols, rows = 30, 40, 50, 16, 8
+    f.defs_add(f'<clipPath id="fy511-tankclip"><rect x="{x0}" y="{y0}" width="{cols * sq}" height="{rows * sq}" rx="6"/></clipPath>')
+    f.rect(x0, y0, cols * sq, rows * sq, GLASS, rx=6)
+    for i in range(1, cols):
+        f.line(x0 + i * sq, y0, x0 + i * sq, y0 + rows * sq, RULE_LIGHT, 1.2)
+    for j in range(1, rows):
+        f.line(x0, y0 + j * sq, x0 + cols * sq, y0 + j * sq, RULE_LIGHT, 1.2)
+    xw, yc = x0 + 9 * sq, y0 + 4 * sq
+    g = ['<g clip-path="url(#fy511-tankclip)">']
+    for col in (1, 5):
+        g.append(f'<line x1="{x0 + col * sq}" y1="{y0}" x2="{x0 + col * sq}" y2="{y0 + rows * sq}" stroke="{WATER}" stroke-width="3.5"/>')
+    for r in (4 * sq, 8 * sq):
+        g.append(f'<path d="M{n(xw)},{n(yc - r)} A{r},{r} 0 0 1 {n(xw)},{n(yc + r)}" fill="none" stroke="{WATER}" stroke-width="3.5" stroke-opacity="{1 - 0.1 * r / sq / 2:.2f}"/>')
+    g.append("</g>")
+    f.add("".join(g))
+    f.rect(xw - 5, y0, 10, sq, ALUMINIUM, INK, 2)
+    f.rect(xw - 5, y0 + 7 * sq, 10, sq, ALUMINIUM, INK, 2)
+    f.arrow(x0 + 10, y0 - 14, x0 + 90, y0 - 14, COLD, 3, 13)
+    f.tex(x0 + 100, y0 - 14, r"\text{aaltojen suunta}", "start", w=220)
+    f.tex(xw, y0 + rows * sq + 22, r"\text{seinä}", "middle", w=90)
+    f.rect(x0, 318, sq, sq * 0.2, INK)
+    f.tex(x0 + sq + 12, 320, r"\text{1 ruutu} = 2{,}0\,\text{cm}", "start", w=240)
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "rintamat": fronts, "koysi": rope, "diffraktio": diffraction, "heijastuslaki": law, "huygens": huygens, "rako-ruudukko": tank_gap}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "rintamat": "safe: plane and circular wavefronts with rays perpendicular to them, λ marked",
@@ -365,4 +398,5 @@ REUSE = {
     "diffraktio": "reveals: a gap about λ wide spreads the wave into the whole region behind it",
     "heijastuslaki": "reveals: α = β measured from the normal, not from the surface",
     "huygens": "reveals: the Huygens construction of the reflected front, α = β",
+    "rako-ruudukko": "safe: a wave-tank grid (1 square = 2,0 cm), plane fronts on gridlines 1 and 5, a wall at line 9 with a gap between horizontal lines 1 and 7; λ and b not marked (REUSE: question-safe variant of rintamat/diffraktio for exercises L2-09, L2-10)",
 }

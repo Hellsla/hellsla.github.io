@@ -209,3 +209,14 @@ Lauseke $M d\sin\alpha$ antaisi suuremman voiman pidemmällä avaimella, vaikka 
 **Sijoitus:** Avain A: $r = 0{,}250\,\text{m}\cdot\sin 90^\circ = 0{,}250\,\text{m}$ ja $F = 60{,}0\,\text{Nm} : 0{,}250\,\text{m} = 240\,\text{N}$. Avain B: $r = 0{,}400\,\text{m}\cdot\sin 65^\circ = 0{,}3625\,\text{m}$ ja $F = 60{,}0\,\text{Nm} : 0{,}3625\,\text{m} = 165{,}5\,\text{N}$. Avain C: $r = 0{,}600\,\text{m}\cdot\sin 30^\circ = 0{,}300\,\text{m}$ ja $F = 60{,}0\,\text{Nm} : 0{,}300\,\text{m} = 200\,\text{N}$.
 **Vastaus:** $166\,\text{N}$ avaimella B, kolme merkitsevää numeroa kuten momentissa ja pituudessa. Vain avain B on käyttökelpoinen, koska avaimet A ja C vaatisivat $240\,\text{N}$ ja $200\,\text{N}$. Pisin avain C ei ole paras, koska sen varsi $0{,}300\,\text{m}$ on vinon vedon takia lyhyempi kuin avaimen B varsi.
 **Järkevyys:** Kohtisuoralla vedolla pisin avain vaatisi vain $60{,}0\,\text{Nm} : 0{,}600\,\text{m} = 100\,\text{N}$, mutta kulma $30^\circ$ puolittaa sen varren. Tarkistus: $165{,}5\,\text{N}\cdot 0{,}3625\,\text{m} = 60{,}0\,\text{Nm}$, ja $166\,\text{N} < 170\,\text{N}$.
+
+## fy5-1-L1-10
+**Annettu:** vaakasuora voima $F$ kohdassa $P$, momentti $M = 21\,\text{Nm}$ akselin $O$ suhteen; ruudukon yksi ruutu on $0{,}10\,\text{m}$
+**Kysytty:** voiman suuruus $F$ yksikössä $\text{N}$
+**Periaate:** Sauva kiertyy akselin $O$ ympäri, joten voiman vääntövaikutuksen kertoo momentti $M = Fr$. Varsi on akselin kohtisuora etäisyys voiman vaikutussuorasta. Se ei ole sauvan pituus $OP$.
+**Kuvaajan lukeminen:** Voima on vaakasuora, joten sen vaikutussuora on vaakasuora katkoviiva kohdan $P$ kautta. Akseli $O$ on kolme ruutua tämän suoran alapuolella. Varsi on siis kolme ruutua. Sauvan pituus, viisi ruutua, ei ole varsi.
+**Kaava:** $M = Fr$, josta $F = \dfrac{M}{r}$
+**Muunnokset:** $r = 3\cdot 0{,}10\,\text{m} = 0{,}30\,\text{m}$
+**Sijoitus:** $F = \dfrac{21\,\text{Nm}}{0{,}30\,\text{m}} = 70\,\text{N}$
+**Vastaus:** $70\,\text{N}$, kaksi merkitsevää numeroa kuten momentissa $21\,\text{Nm}$.
+**Järkevyys:** Jos varreksi otettaisiin sauvan pituus $0{,}50\,\text{m}$, voimaksi tulisi $42\,\text{N}$. Se olisi väärin, koska vaakasuora voima vetää sauvaa osittain sen omaan suuntaan. Oikea voima on suurempi, koska varsi on lyhyempi. Tarkistus: $70\,\text{N}\cdot 0{,}30\,\text{m} = 21\,\text{Nm}$.

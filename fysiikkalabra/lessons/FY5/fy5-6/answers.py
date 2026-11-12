@@ -40,4 +40,9 @@ gm = gam * M_E
 TA = 2 * math.pi * math.sqrt((R_E + 400e3) ** 3 / gm)              # satellite A at 400 km: 5546,0 s
 TB = 2 * math.pi * math.sqrt((R_E + 1000e3) ** 3 / gm)             # satellite B at 1000 km: 6299,3 s
 a["fy5-6-L3-05"] = TA * TB / (TB - TA) / 3600                      # t/T_A − t/T_B = 1: t = 46 379 s = 12,88 h -> 12,9 h
+# Added batch (teacher 2026-11-12): figure tasks and a MAFY table task
+M_sun = 1.99e30                                                    # mass of the Sun, kg
+a["fy5-6-L1-10"] = math.sqrt(gam * M_sun / (0.5 * (147.1e9 + 152.1e9))) / 1e3   # figure: r = (147,1 + 152,1)/2 milj. km = 1,496·10¹¹ m: v = sqrt(γM/r) = 29 796 m/s -> 29,8 km/s
+a["fy5-6-L1-11"] = math.sqrt(gam * 7.346e22 / (1.737e6 + 0.300e6)) / 1e3   # MAFY: Moon M = 7,346·10²² kg, R = 1737 km, h = 300 km: r = 2037 km, v = 1551 m/s -> 1,55 km/s
+a["fy5-6-L2-08"] = math.sqrt(5250 / 88)                            # figure: Halley r_min = 88, r_max = 5250 milj. km: v1/v2 = sqrt(r2/r1) = 7,724 -> 7,72
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

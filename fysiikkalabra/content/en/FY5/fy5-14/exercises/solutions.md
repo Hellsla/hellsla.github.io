@@ -199,3 +199,25 @@ $\begin{aligned} v_\text{b} &= \dfrac{1540\,\text{m/s} \cdot 2470\,\text{Hz}}{8\
 $\begin{aligned} v &= 2 \cdot 0.650\,\text{m} \cdot 196\,\text{Hz} \\ &= 254.8\,\text{m/s} \end{aligned}$
 **Answer:** a) $196\,\text{Hz}$; when plucked in the middle, the even harmonics $392\,\text{Hz}$, $784\,\text{Hz}$ and $1176\,\text{Hz}$ are missing. b) $255\,\text{m/s}$, three significant figures like the length and the frequency. c) The even harmonics have a node in the middle of the string, and a node does not start to vibrate, so they are missing. The odd ones have an antinode in the middle, so they are produced. The sound plucked in the middle is almost a pure fundamental and soft. Near the bridge all the harmonics are produced, for example the amplitude of the third is $0.30$ and that of the sixth $0.09$. The abundant overtones make the sound bright. The pitch is the same, because the fundamental frequency is $196\,\text{Hz}$ in both.
 **Reasonableness:** The wavelength is $\lambda_1 = 2 \cdot 0.650\,\text{m} = 1.30\,\text{m}$, and $1.30\,\text{m} \cdot 196\,\text{Hz} \approx 255\,\text{m/s}$, a typical order of magnitude for a guitar string. The frequency $196\,\text{Hz}$ is the note G3, the third string of a guitar. When plucked in the middle, the amplitudes of the odd harmonics fall roughly like $\tfrac{1}{n^2}$: $\tfrac{1}{9} = 0.11$ and $\tfrac{1}{25} = 0.04$, as in the table.
+
+## fy5-14-L1-10
+**Given:** the spectrum in the figure has five peaks; the frequencies of the peaks are read from the figure
+**Find:** the fundamental frequency of the sound $f_1$ in hertz
+**Principle:** The sound of an instrument consists of the fundamental frequency and its multiples, the overtones, so the peaks of the spectrum are at the frequencies of the harmonic series $f_1, 2f_1, 3f_1, \ldots$ The fundamental frequency is the lowest frequency of the series and equal to the spacing of adjacent peaks. It is not necessarily the strongest peak.
+**Reading the figure:** The peaks are at $200\,\text{Hz}$, $400\,\text{Hz}$, $600\,\text{Hz}$, $800\,\text{Hz}$ and $1000\,\text{Hz}$. The tallest peak is at $400\,\text{Hz}$, and the lowest peak is at $200\,\text{Hz}$. The spacing of adjacent peaks is $200\,\text{Hz}$.
+**Formula:** $f_n = n f_1$, so $f_1 = f_n - f_{n-1}$ and the lowest peak is $f_1$
+**Conversions:** None are needed: the frequencies are read in hertz.
+**Substitution:** $f_1 = 200\,\text{Hz}$ and a check from the spacing: $f_1 = 400\,\text{Hz} - 200\,\text{Hz} = 200\,\text{Hz}$
+**Answer:** $200\,\text{Hz}$, three significant figures like the frequency read from the graph. The strongest peak $400\,\text{Hz}$ is the first overtone, the second harmonic, not the fundamental.
+**Reasonableness:** All the peaks are whole-number multiples of the fundamental frequency: $2 \cdot 200\,\text{Hz} = 400\,\text{Hz}$, $3 \cdot 200\,\text{Hz} = 600\,\text{Hz}$, $4 \cdot 200\,\text{Hz} = 800\,\text{Hz}$ and $5 \cdot 200\,\text{Hz} = 1000\,\text{Hz}$. If the fundamental were $400\,\text{Hz}$, the peak at $200\,\text{Hz}$ would be left unexplained. The pitch heard by the ear corresponds to the fundamental frequency $200\,\text{Hz}$.
+
+## fy5-14-L2-08
+**Given:** the frequency of one fork $f_2 = 523\,\text{Hz}$, higher than that of the other; the beat period is read from the figure
+**Find:** the frequency of the other fork $f_1$ in hertz
+**Principle:** Two sounds of nearly the same frequency beat: the loudness varies, and the number of loud moments per second equals the difference of the frequencies, $f_\text{b} = |f_2 - f_1|$. The difference alone does not tell which sound is higher, but the task says that $523\,\text{Hz}$ is the higher one.
+**Reading the figure:** The sound is loudest at the moments $0$, $0.25\,\text{s}$, $0.50\,\text{s}$, $0.75\,\text{s}$ and $1.00\,\text{s}$. The time between consecutive loud moments, the beat period, is $T_\text{b} = 0.25\,\text{s}$.
+**Formula:** $f_\text{b} = \dfrac{1}{T_\text{b}}$ and $f_\text{b} = f_2 - f_1$, so $f_1 = f_2 - f_\text{b}$
+**Conversions:** None are needed: the period is in seconds, so the beat frequency comes out in hertz.
+**Substitution:** $f_\text{b} = \dfrac{1}{0.25\,\text{s}} = 4.0\,\text{Hz}$, so $f_1 = 523\,\text{Hz} - 4.0\,\text{Hz} = 519\,\text{Hz}$
+**Answer:** $519\,\text{Hz}$, in whole hertz like the given frequency $523\,\text{Hz}$.
+**Reasonableness:** In the figure there are four loud moments in one second after the first, so the beat frequency is $4\,\text{Hz}$, the same as the difference $523\,\text{Hz} - 519\,\text{Hz}$. The difference is small compared with the frequencies, so the beats are heard as a slow variation and not as two separate notes.

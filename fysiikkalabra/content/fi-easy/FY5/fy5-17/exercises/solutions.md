@@ -203,3 +203,24 @@ Suhde on $\tfrac{d_\text{B}}{d_\text{A}} = \tfrac{24{,}0\,\text{s}}{8{,}0\,\text
 **Vastaus:** $57\,\text{min}$, kaksi merkitsevää numeroa kuten syvyyksissä ja osuuksien pituuksissa.
 **Järkevyys:** Koko matka on $420\,\text{km}$, joten keskinopeus on $420\,000\,\text{m} : 3427\,\text{s} = 123\,\text{m/s}$. Se on pienimmän ($22\,\text{m/s}$) ja suurimman ($198\,\text{m/s}$) nopeuden välissä. Se on lähempänä suuria nopeuksia, koska pisin osuus on syvää vettä.
 **Perustelu b-kohtaan:** Osuus 3 on $15$ kertaa lyhyempi kuin osuus 1. Nopeus siellä on vain $22{,}15\,\text{m/s}$, eli noin $9$ kertaa pienempi kuin $198{,}1\,\text{m/s}$. Kulkuaika $903\,\text{s}$ on siksi $903\,\text{s} : 1514\,\text{s} = 0{,}60$ eli yli puolet osuuden 1 ajasta. Kaava käy viimeisellä osuudella, koska aallonpituus on yli $10\,\text{km}$. Se on paljon suurempi kuin syvyys $50\,\text{m}$.
+
+## fy5-17-L1-09
+**Annettu:** taulukosta (MAFY-taulukko, Aaltoliike, Äänen nopeuksia eri väliaineissa, nesteet, vesi $0\,{}^\circ\text{C}$) äänen nopeus vedessä $v = 1402{,}4\,\text{m/s}$; kaiun kulkuaika $t = 20\,\text{ms}$
+**Kysytty:** veden syvyys $d$ metreinä
+**Periaate:** Pulssi kulkee pohjaan ja takaisin samaa reittiä tasaisella nopeudella. Pohjan etäisyys on siksi puolet siitä matkasta, jonka kaiku kulkee. Veden lämpötila on $0\,{}^\circ\text{C}$, joten käytetään taulukon veden arvoa. Kudoksen arvoa $1540\,\text{m/s}$ ei käytetä.
+**Kaava:** $d = \dfrac{v t}{2}$
+**Muunnokset:** $20\,\text{ms} = 20 \cdot 10^{-3}\,\text{s} = 0{,}020\,\text{s}$.
+**Sijoitus:** $d = \dfrac{1402{,}4\,\text{m/s} \cdot 0{,}020\,\text{s}}{2} = 14{,}024\,\text{m}$
+**Vastaus:** $14\,\text{m}$, tarkemmin $14{,}0\,\text{m}$. Aika $20\,\text{ms}$ on sovittu tarkaksi, ja taulukon arvo antaa kolme merkitsevää numeroa. Eri taulukoiden arvot poikkeavat hieman. Vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Järkevyys:** Kaiun kulkema matka on $1402{,}4\,\text{m/s} \cdot 0{,}020\,\text{s} = 28\,\text{m}$, josta puolet on $14\,\text{m}$. Kudoksen arvolla $1540\,\text{m/s}$ tulos olisi $15{,}4\,\text{m}$. Se on noin $10\,\%$ liikaa, joten oikean väliaineen arvo on tärkeä.
+
+## fy5-17-L2-09
+**Annettu:** kuvasta kaikujen hetket, äänen nopeus kudoksessa $v = 1540\,\text{m/s}$
+**Kysytty:** kaikuja B ja C vastaavien rajapintojen välisen kerroksen paksuus $\Delta d$ senttimetreinä
+**Periaate:** Jokainen kaiku tulee yhdeltä rajapinnalta, ja pulssi kulkee rajapintaan ja takaisin. Kerroksen paksuus on kahden syvyyden erotus. Se saadaan siksi kaikujen hetkien erotuksesta samalla kaavalla kuin syvyys.
+**Kuvaajan lukeminen:** Kaiku B on aika-akselilla kohdassa $t_\text{B} = 50\,\mu\text{s}$ ja korkea kaiku C kohdassa $t_\text{C} = 90\,\mu\text{s}$. Ne luetaan piikkien kohdalta apuviivoja vasten. Kerroksessa kulunut aika on $t_\text{C} - t_\text{B} = 40\,\mu\text{s}$.
+**Kaava:** $d = \dfrac{v t}{2}$, joten $\Delta d = d_\text{C} - d_\text{B} = \dfrac{v\,(t_\text{C} - t_\text{B})}{2}$
+**Muunnokset:** $40\,\mu\text{s} = 40 \cdot 10^{-6}\,\text{s}$. Lopuksi $1\,\text{m} = 100\,\text{cm}$.
+**Sijoitus:** $\Delta d = \dfrac{1540\,\text{m/s} \cdot 40 \cdot 10^{-6}\,\text{s}}{2} = 0{,}0308\,\text{m} = 3{,}08\,\text{cm}$
+**Vastaus:** $3{,}08\,\text{cm}$, kolme merkitsevää numeroa kuten nopeudessa $1540\,\text{m/s}$.
+**Järkevyys:** Syvyydet ovat $d_\text{B} = 3{,}85\,\text{cm}$ ja $d_\text{C} = 6{,}93\,\text{cm}$. Niiden erotus on $3{,}08\,\text{cm}$. Reisi on tässä noin $7\,\text{cm}$ syvä, joten kerros mahtuu siihen. Kaiku C on viimeinen, koska sen jälkeen ei ole enää rajapintoja.
