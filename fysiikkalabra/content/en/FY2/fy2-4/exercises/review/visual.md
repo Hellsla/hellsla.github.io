@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 7a19934165da13b5
+CONTENT-HASH: 0742e66b95ebc481
 SCOPE: delta added-exercise from eddb481aa99052bc base 611fb7d5c174
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] L1-09 task: "mafytaulukot.fi" is plain text (a site name; optional).
-- [Minor] L2-09 figure (fy2-4/grid): the arrows' thickness is read in squares, but the fine grid lines are dense at 390 px; keep an eye on it on a phone (not opened).
+- [Minor] L2-09 solution: the block label "Reading the graph" with "Here we read the energy-flow diagram" is slightly redundant; "Reading the diagram" alone would do.
+- [Minor] mafytaulukot.fi is plain text (optional).
 
 ## Checked
-- Opened fy2-4-open-exercises-1280-8 and -9.png and fy2-4-open-exercises-L2-1280-10 and -11.png (content/en/FY2/fy2-4/review/shots/): L1-09 (oil boiler) card with task, "Hint" box under the question, answer row and full solution; L2-09 (motor energy-flow on squared paper) card with figure, answer row and solution.
-- Figure: labels in LaTeX-style serif, E_o = 240 J marked, green useful and orange loss arrows clearly apart, squares readable at 1280 px; the figure does not give the percentage.
-- Maths clean: units upright with thin spaces, decimal point in English, fraction chains in aligned rows, no red KaTeX source, nothing clipped. 390 px captures not opened.
+- Opened fy2-4-open-exercises-1280-9.png and fy2-4-open-exercises-L2-1280-11.png (content/en/FY2/fy2-4/review/shots/): L1-09 Answer and Reasonableness with the reworded sentence; L2-09 solution with "Here we read the energy-flow diagram: …" under the Reading the graph label; layout intact.
+- Delta round 2 at 1280 px only; 390 px captures not opened. Hash unchanged at the end.
 
 ## Scores
 illustrations 4 · typography 5 · English 4 · accessibility 4

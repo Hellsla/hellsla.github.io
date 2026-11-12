@@ -1,20 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 5e336c4606b253ea
-SCOPE: delta added-exercise from 33edaea9b5ea3767 base c7f5e91173b0
+CONTENT-HASH: ee48db80c5b897a8
 
 ## Blocking
 (none)
 
 ## Polish
-- exercises.json fy2-6-L1-10: "tuottaa lämpöenergiaa teholla 2,0 MW" makes the burned fuel's energy equal the heat produced, i.e. efficiency 100 %, without saying so. Fix: "Turvevoimalan kattilassa vapautuu polttoaineesta energiaa teholla 2,0 MW" (or add "Oleta, että kaikki vapautuva energia tuotetaan lämpönä").
-- solutions.md fy2-6-L2-08, Järkevyys: the remark about a 4 MW plant is not needed for the check; optional to cut.
+- solutions.md fy2-6-L2-08, Järkevyys: "Se on tuhansien voimaloiden suuruusluokkaa" does not fit about 1400 plants; "noin tuhannen voimalan suuruusluokkaa".
+- The same check relies on "luvun mallin mukaan" (mean power about a third of nominal); I cannot see the lesson here, so confirm the lesson states it, or say "tuulivoimalan keskiteho on noin kolmasosa nimellistehosta".
 
 ## Checked
-- L1-10: situation, lookup instruction and question last; MAFY hint names only the table (teacher's decision); key 2,0 MW * 3600 s / 10 MJ/kg = 720 kg, tolerance 4 % covers other tables.
-- L1-10 solution is staged (E = Pt, E = Hm, MW to MJ/s and h to s, substitution, sense check 12 kg per minute); level 1 fits (two formulas, one lookup).
-- L2-08: the figure is needed; its description lists every bar value (wind 20,2 TWh) to a reader who cannot see it and does not give the mean power.
-- L2-08 key: 20 200 GWh / 8784 h = 2,30 GW; the solution reads the figure, converts TWh to GWh and checks by multiplying back.
-- L2-08 gives a source (Tilastokeskus) and year, as FY2 data rules require; leap-year hours (8784) are stated.
-- Neither repeats the worked example; both extend the set's mix with a lookup task and a graph task.
-- Finnish clear, short sentences, correct case forms after numbers and units.
-- Hash is the same at the start and the end (5e336c4606b253ea).
+- L1-10: the text now says energy is released by burning at 2,0 MW, so the earlier hidden 100 % efficiency is gone; the question, lookup and key 720 kg are unchanged.
+- L1-10 solution Periaate is consistent with the new text (E = Pt as released energy, then E = Hm).
+- L2-08 sense check: 6,9 GW / 5 MW is about 1400 plants; arithmetic correct.
+- Hash is the same at the start and the end (ee48db80c5b897a8).

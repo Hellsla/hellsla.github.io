@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 93a3cb6259f482e1
+CONTENT-HASH: ff05584a8eb5bd9a
 SCOPE: delta added-exercise from ce4d78b324133976 base c7f5e91173b0
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] L1-10 task: "mafytaulukot.fi" is plain text (a site name; optional).
-- [Minor] L2-08 task: "Finland's wind turbines" and "combined average power" are fine, but "when the year had $8784\,\text{h}$" reads a little abruptly; "in a year of $8784\,\text{h}$" would flow better.
+- [Minor] L2-08 Reasonableness: "a number of the order of thousands" next to about 1400 reads awkwardly; "of the order of a thousand" is more natural.
+- [Minor] mafytaulukot.fi is plain text (optional).
 
 ## Checked
-- Opened fy2-6-open-exercises-1280-9 and -10.png and fy2-6-open-exercises-L2-1280-9 and -10.png (content/en/FY2/fy2-6/review/shots/): L1-10 (peat) card with task, "Hint" box under the question, answer row and full solution; L2-08 (Finnish electricity bar chart) card with figure, answer row and full solution.
-- Figure fy2-6/fi-bars: axis title $E\ (\text{TWh})$ with arrowhead, ticks 10/20/30, gridlines, the value printed at each bar end, bars labelled; legible and unclipped; the wind value is shown, as the task says to read it.
-- Maths clean: units upright with thin spaces, decimal point in English, aligned rows, no red KaTeX source. 390 px captures not opened.
+- Opened fy2-6-open-exercises-1280-9.png and fy2-6-open-exercises-L2-1280-10.png (content/en/FY2/fy2-6/review/shots/): L1-10 reworded peat task with hint and answer row; L2-08 solution with the new Reasonableness paragraph (units upright, $3 \cdot 2.30\,\text{GW}$ chain inline); nothing clipped.
+- Delta round 2 at 1280 px only; 390 px captures not opened. Hash unchanged at the end.
 
 ## Scores
-illustrations 5 · typography 5 · English 4 · accessibility 4
+illustrations 4 · typography 5 · English 4 · accessibility 4

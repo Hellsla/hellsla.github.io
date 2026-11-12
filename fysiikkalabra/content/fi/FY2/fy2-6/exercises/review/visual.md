@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 98de4a30c14d3cf8
+CONTENT-HASH: 70d00e3dd2da41b6
 SCOPE: delta added-exercise from a52283bbb84cf337 base 611fb7d5c174
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] fy2-6-L2-08 Järkevyys — "noin $1400$:aa voimalaa … eli tuhansien voimaloiden suuruusluokkaa" is clumsy: 1400 is about a thousand; write "noin $1400$ voimalaa, eli tuhannen voimalan suuruusluokkaa".
 
 ## Checked
-- fy2-6-open-exercises-1280-10: L1-10 (6-10) solution end (Muunnokset, Sijoitus with stacked units, Vastaus, Järkevyys); upright units, decimal comma, nothing clipped. Its task text and Vihje box judged from source only.
-- fy2-6-open-exercises-L2-1280-9: L2-08 (6-18) task and bar chart (E (TWh) axis, ticks, values at bar ends with decimal comma, labels readable), answer row, solution start.
-- fy2-6-open-exercises-L2-1280-10: L2-08 Kuvaajan lukeminen, Kaava, Muunnokset, Sijoitus, Vastaus, Järkevyys.
-- 360 px from the packet's layout check only.
-
+- fy2-6-open-exercises-1280-10: L1-10 solution end with the changed Periaate context, Muunnokset, Sijoitus, Vastaus, Järkevyys; units upright, nothing clipped.
+- fy2-6-open-exercises-L2-1280-10: L2-08 new Järkevyys (chain with 3 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4
