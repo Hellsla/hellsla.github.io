@@ -2,3 +2,6 @@ date	reviewer	from	to	base	categories
 2026-10-29	science	477e546a5705e822	2a603c37ba2569b5	aff0bfefdeb1	objective-form
 2026-11-03	science	477e546a5705e822	1203286786b17e39	aff0bfefdeb1	objective-form,photo,typography
 2026-11-03	pedagogy	2a603c37ba2569b5	1203286786b17e39	c2afe4b8103b	photo,typography
+2026-11-12	visual	1203286786b17e39	f2f3dd26d092e7b7	b0db3413d750	formula-names
+2026-11-12	science	477e546a5705e822	f2f3dd26d092e7b7	aff0bfefdeb1	formula-names,objective-form,photo,typography
+2026-11-12	pedagogy	2a603c37ba2569b5	f2f3dd26d092e7b7	c2afe4b8103b	formula-names,photo,typography

@@ -128,8 +128,8 @@ During one cycle of a heat engine, the work done and the efficiency are
 ```latex
 W = Q_1 - Q_2
 ```
-```latex
-\eta = \frac{W}{Q_1}
+```kaavat
+efficiency of a heat engine :: \eta = \frac{W}{Q_1}
 ```
 where $Q_1$ is the heat transferred to the engine from the hot source (J), $Q_2$ the heat given up to the colder environment (J), $W$ the work done by the engine during the cycle (J) and $\eta$ the efficiency, which is often given as a percentage. Efficiency can be calculated in the same way from powers, for example the electric power divided by the fuel power.
 

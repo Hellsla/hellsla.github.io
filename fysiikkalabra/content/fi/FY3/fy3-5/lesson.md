@@ -91,8 +91,8 @@ Energia säilyy. Kun systeemiin siirtyy energiaa lämpönä tai työnä eikä sy
 
 ## Kaava: Termodynamiikan ensimmäinen pääsääntö
 Sisäenergian muutos on systeemiin tuodun lämpömäärän ja systeemiin tehdyn työn summa:
-```latex
-\Delta U = Q + W
+```kaavat
+lämpöopin 1. pääsääntö :: \Delta U = Q + W
 ```
 missä $\Delta U$ on sisäenergian muutos (J), $Q$ systeemiin siirtynyt lämpömäärä (J) ja $W$ ympäristön systeemiin tekemä työ (J). Merkit kertovat suunnan: $Q$ on positiivinen, kun lämpöä siirtyy systeemiin, ja negatiivinen, kun sitä siirtyy pois; $W$ on positiivinen, kun ympäristö tekee työtä systeemiin (esimerkiksi puristaa kaasua), ja negatiivinen, kun systeemi tekee työtä ympäristöön (kaasu laajenee ja työntää mäntää). Kaikki termit ovat jouleja, samaa yksikköä kuin työ luvussa *Työ ja energia*, ja männän kaasuun tekemä työ lasketaan samoin kuin siellä, voiman ja matkan tulona.
 

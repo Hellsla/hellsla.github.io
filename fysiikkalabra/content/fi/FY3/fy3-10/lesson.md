@@ -239,8 +239,8 @@ R &= \frac{pV}{nT} \\
 \end{aligned}
 ```
 Tarkat mittaukset antavat kaikille kaasuille arvon $R = 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$, kun paine ei ole kovin suuri eikä lämpötila kovin matala. Lukua sanotaan mooliseksi kaasuvakioksi. Siitä saadaan ideaalikaasun tilanyhtälö
-```latex
-pV = nRT
+```kaavat
+ideaalikaasun tilanyhtälö :: pV = nRT
 ```
 missä $p$ on kaasun absoluuttinen paine, $V$ tilavuus, $n$ ainemäärä, $R$ moolinen kaasuvakio ja $T$ kelvinlämpötila. Kaasun laatu ei näy yhtälössä lainkaan. Celsiusasteina annettu lämpötila $\theta$ muutetaan kelvineiksi lisäämällä lukuarvoon $273{,}15$.
 

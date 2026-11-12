@@ -185,8 +185,8 @@ Kun teet kappaleeseen työtä, energiaa siirtyy: nostetun kappaleen energia kasv
 
 ## Kaava: Työ ja teho
 Kun vakiovoima on liikkeen suuntainen, voiman tekemä työ on voiman ja matkan tulo:
-```latex
-W = F s
+```kaavat
+voiman tekemä työ :: W = F s
 ```
 missä $W$ on työ (J), $F$ voiman suuruus (N) ja $s$ kappaleen kulkema matka (m). Yksi joule on työ, jonka yhden newtonin voima tekee yhden metrin matkalla: $1\,\text{J} = 1\,\text{N} \cdot \text{m}$.
 

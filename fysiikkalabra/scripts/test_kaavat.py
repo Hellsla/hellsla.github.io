@@ -89,6 +89,12 @@ ok('<div class="johda"><p class="johda-q"><strong>Johda itse.</strong> Johda vir
 derived = [(f.relative_to(kaavat.ROOT).as_posix(), t) for l in kaavat.LANGS for f in sorted((kaavat.ROOT / "content" / l / "units").glob("fy9-*/unit.md"))
            for t in ("U = E - R_\\text{s} I", "I = \\frac{E}{R + R_\\text{s}}") if t in kaavat.JOHDA.sub("", f.read_text(encoding="utf-8"))]
 ok(not derived, "FY9: a result derived in a Johda itse task is not given as a formula elsewhere in the text" + (f": {derived[:3]}" if derived else ""))
+import reviews
+A = "Vanha teksti.\n\n```latex\nQ = s m \\qquad \\text{ja} \\qquad Q = r m\n```\n"
+B = "Uusi teksti.\n\n```kaavat\nsulamislämpö :: Q = s m\nhöyrystymislämpö :: Q = r m\n```\n"
+ok(reviews._unnamed(A, B, {("sulamislämpö", "Q = s m"), ("höyrystymislämpö", "Q = r m")}) == "Uusi teksti.\n\n```latex\nQ = s m \\qquad \\text{ja} \\qquad Q = r m\n```\n",
+   "reviews: approved names put back as the passed block, so the other change (the prose) is classified as usual")
+ok(reviews._unnamed(A, B, {("sulamislämpö", "Q = s m")}) is None, "reviews: a name not approved is not put back")
 bare = [(f.relative_to(kaavat.ROOT).as_posix(), kaavat.rows(m.group(1))[0][1])
         for l in kaavat.LANGS for f in sorted((kaavat.ROOT / "content" / l).glob("**/*.md"))
         for m in kaavat.FENCE.finditer(f.read_text(encoding="utf-8")) if not any(n for n, _ in kaavat.rows(m.group(1)))]

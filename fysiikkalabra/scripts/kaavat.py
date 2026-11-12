@@ -101,6 +101,9 @@ def as_html(text, extra="Lisätieto"):
     return FENCE.sub(one, text)
 
 
+JOINERS = {r"\text{ja}", r"\text{and}", r"\text{tai}", r"\text{or}"}
+
+
 def canonical(text):
     """The text with every display formula (```latex or ```kaavat) reduced to its formulas, one per line, without names
     or alignment marks: two versions that differ only in formula names, alignment (`&`, aligned) and a `\\qquad` between
@@ -112,7 +115,7 @@ def canonical(text):
         for line in re.split(r"\\\\", tex):
             for p in re.split(r",?\s*\\q?quad\s*", line.replace("&", "")):
                 p = " ".join(p.split()).rstrip(",").strip()
-                if p: parts.append(p)
+                if p and p not in JOINERS: parts.append(p)   # a joining word between two formulas of a row (Q = sm ja Q = rm) is no formula
         return parts
     def block(texes):
         return "\n<<KAAVAT>>\n" + "\n".join(p for t in texes for p in lines(t)) + "\n<</KAAVAT>>\n"

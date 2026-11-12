@@ -91,8 +91,8 @@ Energy is conserved. When energy is transferred into a system as heat or work an
 
 ## Formula: First law of thermodynamics
 The change in internal energy is the sum of the quantity of heat transferred into the system and the work done on the system:
-```latex
-\Delta U = Q + W
+```kaavat
+first law of thermodynamics :: \Delta U = Q + W
 ```
 where $\Delta U$ is the change in internal energy (J), $Q$ is the quantity of heat transferred into the system (J) and $W$ is the work done on the system by the surroundings (J). The signs tell you the direction: $Q$ is positive when heat is transferred into the system and negative when it is transferred out; $W$ is positive when the surroundings do work on the system (for example, compress a gas) and negative when the system does work on the surroundings (the gas expands and pushes the piston). All the terms are in joules, the same unit as work in chapter *Work and energy*, and the work done by a piston on a gas is calculated in the same way as there, as the product of force and distance.
 

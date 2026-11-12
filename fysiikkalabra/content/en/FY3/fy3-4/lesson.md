@@ -86,8 +86,8 @@ This answers the opening question. Atmospheric pressure acts on both sides of th
 
 ## Formula: Pressure and hydrostatic pressure
 Pressure is the force perpendicular to a surface divided by the area:
-```latex
-p = \frac{F}{A}
+```kaavat
+pressure caused by a force :: p = \frac{F}{A}
 ```
 where $p$ is the pressure (Pa), $F$ the force perpendicular to the surface (N) and $A$ the area (m²). One pascal is a force of one newton on an area of one square metre: $1\,\text{Pa} = 1\,\text{N/m}^2$.
 

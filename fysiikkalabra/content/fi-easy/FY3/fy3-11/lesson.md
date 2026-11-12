@@ -130,8 +130,8 @@ Lämpövoimakoneen yhden kierroksen aikana tekemä työ ja hyötysuhde ovat
 ```latex
 W = Q_1 - Q_2
 ```
-```latex
-\eta = \frac{W}{Q_1}
+```kaavat
+lämpövoimakoneen hyötysuhde :: \eta = \frac{W}{Q_1}
 ```
 missä $Q_1$ on kuumasta lähteestä koneeseen siirtynyt lämpö (J), $Q_2$ kylmempään ympäristöön luovutettu lämpö (J), $W$ koneen kierroksen aikana tekemä työ (J) ja $\eta$ hyötysuhde. Hyötysuhde ilmoitetaan usein prosentteina. Hyötysuhteen voi laskea samalla tavalla tehoista, esimerkiksi sähköteho jaettuna polttoaineteholla.
 

@@ -1297,6 +1297,22 @@ def approve_presentation(rel, base="origin/main", note=""):
     print(f"\nrecorded in {PRESENTATION.relative_to(ROOT)}: {rel} {row[1]} -> {row[2]}")
 
 
+def _unnamed(a, b, ok):
+    """`b` with each ```kaavat block whose names are all approved (`ok`) put back as `a`'s block of the same formulas
+    (a passed version's ```latex or ```kaavat block), so what else changed is classified as usual; None when a name
+    is not approved."""
+    olds = {}
+    for m, parts in kaavat._blocks(a): olds.setdefault(tuple(parts), m.group(0))
+    out, pos = [], 0
+    for m, parts in kaavat._blocks(b):
+        if m.group(1) != "kaavat": continue
+        if any(n and (n, " ".join(t.split())) not in ok for n, t in kaavat.rows(m.group(2))): return None
+        old = olds.get(tuple(parts))
+        if old is None: continue
+        out.append(b[pos:m.start()] + old); pos = m.end()
+    return "".join(out) + b[pos:]
+
+
 def changes(folder, base, part="lesson", split=False, new=None):
     """(categories, unified diff, changed line count) of `part` between commit `base` and the working tree, over every
     source its hash covers, as the base saw them and as they are now. Formatting the hash ignores is not a change here
@@ -1329,6 +1345,10 @@ def changes(folder, base, part="lesson", split=False, new=None):
             ok = frozenset(kaavat.approved(folder.name, rel.split("/")[1]))
             if kaavat.review_view(a, kaavat.ANY) == kaavat.review_view(b, ok):   # names taken out, or approved ones added
                 cats.add("formula-names"); diff.append(f"--- {rel}: formula names the teacher approved"); continue
+            b2 = _unnamed(a, b, ok)                                     # other changes too: classify them with the named blocks as they were
+            if b2 is not None and b2 != b:
+                cats.add("formula-names"); diff.append(f"--- {rel}: formula names the teacher approved"); b = rb = b2
+                if a == b: continue
         if rel.startswith("tests/sims/"): cats.add(test_change(rel, base, new)); diff.append(f"--- {rel}: simulation assertions changed"); continue
         if not binary and presentation_change(old, new, rel):   # where or how the sim draws, the exact change of the file approved (one row for every language): the visual reviewer sees the diff
             cats.add("presentation-only"); n += 1

@@ -239,8 +239,8 @@ R &= \frac{pV}{nT} \\
 \end{aligned}
 ```
 Precise measurements give the value $R = 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$ for all gases, as long as the pressure is not very high and the temperature is not very low. This number is called the molar gas constant. From it we get the equation of state of an ideal gas
-```latex
-pV = nRT
+```kaavat
+ideal gas law :: pV = nRT
 ```
 where $p$ is the absolute pressure of the gas, $V$ the volume, $n$ the amount of substance, $R$ the molar gas constant and $T$ the temperature in kelvins. The type of gas does not appear in the equation at all. A temperature $\theta$ given in degrees Celsius is converted to kelvins by adding $273.15$ to the numerical value.
 

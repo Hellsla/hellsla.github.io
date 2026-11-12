@@ -185,8 +185,8 @@ When you do work on an object, energy is transferred: the energy of a lifted obj
 
 ## Formula: Work and power
 When a constant force is in the direction of motion, the work done by the force is the product of force and distance:
-```latex
-W = F s
+```kaavat
+work done by a force :: W = F s
 ```
 where $W$ is the work (J), $F$ is the magnitude of the force (N) and $s$ is the distance moved by the object (m). One joule is the work done by a force of one newton over a distance of one metre: $1\,\text{J} = 1\,\text{N} \cdot \text{m}$.
 

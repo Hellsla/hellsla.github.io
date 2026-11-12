@@ -88,8 +88,8 @@ Tämä vastaa alun kysymykseen. Ilmanpaine vaikuttaa padon muuriin molemmilta pu
 
 ## Kaava: Paine ja hydrostaattinen paine
 Paine on pintaa vastaan kohtisuora voima jaettuna pinta-alalla:
-```latex
-p = \frac{F}{A}
+```kaavat
+voiman aiheuttama paine :: p = \frac{F}{A}
 ```
 Tässä $p$ on paine (Pa), $F$ on pintaa vastaan kohtisuora voima (N) ja $A$ on pinta-ala (m²). Yksi pascal on yhden newtonin voima yhden neliömetrin alalle: $1\,\text{Pa} = 1\,\text{N/m}^2$.
 
