@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 324dc435792c3e27
+CONTENT-HASH: a56d9a97a70df948
 
-Delta review (formulas in MAFY form, 2026-11-12) of the version passed at cc71cb661f7317ac.
+Delta review (solution practice, 2026-11-12) of the version passed before.
 
-Blocking: none. The new symbols are defined in the sentence after each formula block, the tasks' forms are still derivable from the theory, and the unit stays coherent for a student.
+Lever arms r_t, r_v, r_k, d_p, d_k, d_m and the share q = gamma M/(g r^2) turn the moment solutions into symbols-first answers; conversions show the arms, so the chain stays readable. Same physics and steps as fi in en (numbers match fi).
 
-No Polish.
+Checked: diff since 761b6673, symbols defined, solved expression equals Sijoitus, answers.py output, tasks.json answer/criteria, cross-language number match.

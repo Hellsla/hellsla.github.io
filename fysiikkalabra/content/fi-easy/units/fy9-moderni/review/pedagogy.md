@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 309664676f29146c
+CONTENT-HASH: b9377afd7aefe567
 
-Delta review (formulas in MAFY form, 2026-11-12) of the version passed at 99d9cf49a3fb1eb9.
+Delta review (solution practice, 2026-11-12) of the version passed before.
 
-Blocking: none. The new symbols are defined in the sentence after each formula block, the tasks' forms are still derivable from the theory, and the unit stays coherent for a student.
+s5 a now models a good graph answer: all 11 points, ln N against t shown as points, a fit line, slope from two far points on the line, T = 153 s, with the two-endpoint 151 s as the check. tasks.json answer 153 s, tol. 4 % agrees. Other symbol changes (H_v share, E0, b = -W/e, m_a, m_U) are correct and short. POLISH 1: the accepted range is 145-160 s in the rubric (units_precision), 145-157 s in solutions 'Hyvaksytaan myos' and 147-159 s from tolerance 4 %; use one range. POLISH 2: s5 a Vastaus 'Taustan vahentaminen muuttaa tulosta' is vague; give the numbers (e.g. 155 s -> 153 s) or drop. Same physics and steps as fi in fi-easy (numbers match fi).
 
-1. Note: the half-life form (1/2)^(t/T_1/2) is kept and derived in the sentence after the block (e^(-lambda T_1/2) = 1/2), so the inquiry and exit-ticket solutions that use it stay coherent.
+Checked: diff since 761b6673, symbols defined, solved expression equals Sijoitus, answers.py output, tasks.json answer/criteria, cross-language number match.

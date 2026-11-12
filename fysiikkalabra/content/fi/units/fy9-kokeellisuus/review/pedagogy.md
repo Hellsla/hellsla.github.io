@@ -1,23 +1,8 @@
-VERDICT: PASS
-CONTENT-HASH: efa8bd3da48f16e0
+VERDICT: FAIL
+CONTENT-HASH: e4232d6393f7c87c
 
-Delta review of the course rename FY12 → FY9 (commit 3052d352). Previous all-PASS hash: e198735ef8b8ce03. The hash was the same at the start and the end of this review.
+Delta review (solution practice, 2026-11-12) of the version passed before.
 
-I checked that the change is only the rename: every file of `content/fi/units/fy9-kokeellisuus/` and `lessons/units/fy9-kokeellisuus/` (review/ excluded) at 3052d352 equals the file at 47782fdd with `fy12` → `fy9` and `FY12` → `FY9` replaced, and nothing else. No `fy12`/`FY12` remains in the unit's sources or in the built preview.
+BLOCKING 1: sovella/tasks.json s5 part a, criterion units_precision (line ~495, all three languages) still reads 'rho approx 2680 kg/m3', while solutions.md now answers 2,7e3 kg/m3 (two significant figures; 2680 only as the uncertainty-form in b). Rubric and model solution contradict. Fix: change the detail to 'rho approx 2,7e3 kg/m3 (2677 calculated), two significant figures because V = 70 cm3; 2680 accepted'. The numeric answer 2680 +-2 % still admits 2700. The other changes (unrounded a = 4,1667, force components in s6 c) are good.
 
-## Blocking
-
-None.
-
-## Polish
-
-None new. The Polish items of the previous pedagogy report still apply.
-
-## Checked
-
-- Course mentions in learner-facing text read "FY9" consistently; chapter links (named, never ids) are unchanged and resolve in the preview.
-- Task counts, rubrics, points, skills and the 75-minute plan are unchanged, so the previous verdict on progression and exam style stands.
-
-## Shared issues
-
-None.
+Checked: diff since 761b6673, symbols defined, solved expression equals Sijoitus, answers.py output, tasks.json answer/criteria, cross-language number match.

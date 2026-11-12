@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 265152a3e3cd6159
+CONTENT-HASH: 6937c332c556fe06
 
-Delta review (formulas in MAFY form, 2026-11-12) of the version passed at 39bbf6b20a75feae.
+Delta review (solution practice, 2026-11-12) of the version passed before.
 
-Blocking: none. The new symbols are defined in the sentence after each formula block, the tasks' forms are still derivable from the theory, and the unit stays coherent for a student.
+C_1 defined for the intercept, and the charging time t = sW0/(3 eta U I) with named s, W0 is easy to follow; no rubric change needed. Same physics and steps as fi in en (numbers match fi).
 
-No Polish.
+Checked: diff since 761b6673, symbols defined, solved expression equals Sijoitus, answers.py output, tasks.json answer/criteria, cross-language number match.

@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 7c3a27204eeae8fd
+CONTENT-HASH: ebbb215a743c320e
 
-Delta review (formulas in MAFY form, 2026-11-12), re-checked after commit c4e866703 (a-bar_k sentence): symbols defined, coherent; no findings.
+Delta review (solution practice, 2026-11-12) of the version passed before.
 
-Blocking: none. The new symbols are defined in the sentence after each formula block, the tasks' forms are still derivable from the theory, and the unit stays coherent for a student.
+y_l = y0 + v0^2/(2g) shown, and a_min, a_max in symbols in s5 a: a clean, short improvement. Same physics and steps as fi in en (numbers match fi).
 
-No Polish.
+Checked: diff since 761b6673, symbols defined, solved expression equals Sijoitus, answers.py output, tasks.json answer/criteria, cross-language number match.

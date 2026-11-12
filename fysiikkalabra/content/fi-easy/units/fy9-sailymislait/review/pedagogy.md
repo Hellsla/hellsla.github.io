@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: e5d0ab5151ff19d0
+CONTENT-HASH: ed98ef3e0a32b022
 
-Delta review (formulas in MAFY form, 2026-11-12) of the version passed at 7685c54b69a24389.
+Delta review (solution practice, 2026-11-12) of the version passed before.
 
-Blocking: none. The new symbols are defined in the sentence after each formula block, the tasks' forms are still derivable from the theory, and the unit stays coherent for a student.
+Exit-ticket answers now start from the law (E_k = mv^2/2, p conserved) and keep it short; shares (F/G, Ek'/Ek, dp/p) solved in symbols; N k E_h in d. Good. Same physics and steps as fi in fi-easy (numbers match fi).
 
-1. Polish: if the unit's tasks use E_k1, E_p1, W_muut, check that they say index 1 = initial state (theory now uses index 0 for the initial state and W for other forces' work).
+Checked: diff since 761b6673, symbols defined, solved expression equals Sijoitus, answers.py output, tasks.json answer/criteria, cross-language number match.
