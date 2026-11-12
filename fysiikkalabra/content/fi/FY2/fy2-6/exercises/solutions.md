@@ -236,7 +236,7 @@ c) Tuulipuisto: $289\,080\,000\,\text{kWh} \cdot 12\,\text{g/kWh} = 3{,}469 \cdo
 ## fy2-6-L1-10
 **Annettu:** teho $P = 2{,}0\,\text{MW}$, aika $t = 1\,\text{h}$; jyrsinturpeen lämpöarvo MAFY-taulukosta (Polttoaineiden LHV-lämpöarvoja, jyrsinturve) $H = 10\,\tfrac{\text{MJ}}{\text{kg}}$
 **Kysytty:** palavan turpeen massa $m$ kilogrammoina
-**Periaate:** Voimalan tunnissa tuottama energia on $E = Pt$. Sama energia vapautuu polttoaineen palaessa, ja palamisessa vapautuva energia on $E = Hm$, joten massa saadaan ratkaisemalla $m$.
+**Periaate:** Palamisessa vapautuva energia tunnissa on $E = Pt$, kun vapautumisteho on $P$. Toisaalta palamisessa vapautuva energia on $E = Hm$, joten massa saadaan ratkaisemalla $m$.
 **Kaava:** $E = Pt$ ja $E = Hm \Rightarrow m = \dfrac{Pt}{H}$
 **Muunnokset:** $2{,}0\,\text{MW} = 2{,}0\,\tfrac{\text{MJ}}{\text{s}}$ ja $1\,\text{h} = 3600\,\text{s}$, joten $E = 2{,}0\,\tfrac{\text{MJ}}{\text{s}} \cdot 3600\,\text{s} = 7200\,\text{MJ}$.
 **Sijoitus:** $m = \dfrac{7200\,\text{MJ}}{10\,\tfrac{\text{MJ}}{\text{kg}}} = 720\,\text{kg}$
@@ -252,4 +252,4 @@ c) Tuulipuisto: $289\,080\,000\,\text{kWh} \cdot 12\,\text{g/kWh} = 3{,}469 \cdo
 **Muunnokset:** $20{,}2\,\text{TWh} = 20\,200\,\text{GWh}$, koska $1\,\text{TWh} = 1000\,\text{GWh}$.
 **Sijoitus:** $P = \dfrac{20\,200\,\text{GWh}}{8784\,\text{h}} = 2{,}30\,\text{GW}$
 **Vastaus:** $P \approx 2{,}30\,\text{GW}$, kolme merkitsevää numeroa kuten luetussa tuotannossa $20{,}2\,\text{TWh}$.
-**Järkevyys:** Tarkistus: $2{,}30\,\text{GW} \cdot 8784\,\text{h} \approx 20\,200\,\text{GWh}$. Teho on suuri verrattuna yhteen $4\,\text{MW}$:n voimalaan, mutta Suomessa tuulivoimaloita on satoja.
+**Järkevyys:** Tarkistus: $2{,}30\,\text{GW} \cdot 8784\,\text{h} \approx 20\,200\,\text{GWh}$. Luvun mallin mukaan tuulivoimalan keskiteho on noin kolmasosa nimellistehosta, joten yhteenlaskettu nimellisteho on noin $3 \cdot 2{,}30\,\text{GW} \approx 6{,}9\,\text{GW}$. Se vastaa noin $1400$:aa voimalaa, joiden nimellisteho on $5\,\text{MW}$, eli tuhansien voimaloiden suuruusluokkaa.

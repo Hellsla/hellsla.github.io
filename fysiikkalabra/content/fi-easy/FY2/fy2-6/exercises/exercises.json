@@ -143,7 +143,7 @@
     {
       "id": "fy2-6-L1-10",
       "level": 1,
-      "text": "Turvevoimala polttaa jyrsinturvetta ja tuottaa lämpöenergiaa teholla $2{,}0\\,\\text{MW}$. Voimala toimii yhden tunnin. Etsi jyrsinturpeen lämpöarvo MAFY-taulukosta (mafytaulukot.fi). Kuinka monta kilogrammaa turvetta palaa tunnissa? Anna vastaus kilogrammoina.",
+      "text": "Turvevoimalassa palaa jyrsinturvetta. Palamisessa vapautuu energiaa teholla $2{,}0\\,\\text{MW}$. Voimala toimii yhden tunnin. Etsi jyrsinturpeen lämpöarvo MAFY-taulukosta (mafytaulukot.fi). Kuinka monta kilogrammaa turvetta palaa tunnissa? Anna vastaus kilogrammoina.",
       "lookup": "MAFY",
       "answer": 720,
       "unit": "kg",

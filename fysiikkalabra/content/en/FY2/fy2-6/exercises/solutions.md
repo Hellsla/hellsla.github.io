@@ -236,7 +236,7 @@ c) Wind farm: $289\,080\,000\,\text{kWh} \cdot 12\,\text{g/kWh} = 3.469 \cdot 10
 ## fy2-6-L1-10
 **Given:** power $P = 2.0\,\text{MW}$, time $t = 1\,\text{h}$; heat of combustion of milled peat from the MAFY table (Polttoaineiden LHV-lämpöarvoja, jyrsinturve) $H = 10\,\tfrac{\text{MJ}}{\text{kg}}$
 **Find:** the mass of peat burnt, $m$, in kilograms
-**Principle:** The energy the plant produces in an hour is $E = Pt$. The same energy is released when the fuel burns, and the energy released in burning is $E = Hm$, so the mass is found by solving for $m$.
+**Principle:** The energy released by burning in an hour is $E = Pt$, where $P$ is the rate of release. On the other hand the energy released in burning is $E = Hm$, so the mass is found by solving for $m$.
 **Formula:** $E = Pt$ and $E = Hm \Rightarrow m = \dfrac{Pt}{H}$
 **Conversions:** $2.0\,\text{MW} = 2.0\,\tfrac{\text{MJ}}{\text{s}}$ and $1\,\text{h} = 3600\,\text{s}$, so $E = 2.0\,\tfrac{\text{MJ}}{\text{s}} \cdot 3600\,\text{s} = 7200\,\text{MJ}$.
 **Substitution:** $m = \dfrac{7200\,\text{MJ}}{10\,\tfrac{\text{MJ}}{\text{kg}}} = 720\,\text{kg}$
@@ -252,4 +252,4 @@ c) Wind farm: $289\,080\,000\,\text{kWh} \cdot 12\,\text{g/kWh} = 3.469 \cdot 10
 **Conversions:** $20.2\,\text{TWh} = 20\,200\,\text{GWh}$, because $1\,\text{TWh} = 1000\,\text{GWh}$.
 **Substitution:** $P = \dfrac{20\,200\,\text{GWh}}{8784\,\text{h}} = 2.30\,\text{GW}$
 **Answer:** $P \approx 2.30\,\text{GW}$, three significant figures like the production read, $20.2\,\text{TWh}$.
-**Reasonableness:** Check: $2.30\,\text{GW} \cdot 8784\,\text{h} \approx 20\,200\,\text{GWh}$. The power is large compared with a single $4\,\text{MW}$ turbine, but Finland has hundreds of turbines.
+**Reasonableness:** Check: $2.30\,\text{GW} \cdot 8784\,\text{h} \approx 20\,200\,\text{GWh}$. By the chapter's model a wind turbine's average power is about a third of its rated power, so the combined rated power is about $3 \cdot 2.30\,\text{GW} \approx 6.9\,\text{GW}$. That equals about $1400$ turbines of rated power $5\,\text{MW}$, a number of the order of thousands.

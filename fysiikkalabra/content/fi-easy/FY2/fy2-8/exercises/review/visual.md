@@ -1,21 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 753ff998604d8f0a
-Mode: delta
-Round: 1
+CONTENT-HASH: 4d5fdc3490106f9c
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy2-8-L2-08 table caption (390 px) — the caption is wider than the 3-column table and is cut at the card edge ("…example power p"), and it makes the table scroll sideways (476 px in 328 px) although the data fit; same pattern as earlier tables. Fix: allow the caption to wrap (nowrap off) or shorten it.
-- [Minor] solution Model answer — the range "410–430 kt" breaks after the en dash at a line end on a phone; use a non-breaking form (\text{--} in one inline formula, or a word-joiner).
+- [Minor] 8-9 and 8-18 — "vastaus kelpaa, kun se on noin $\pm 4\,\%$ sisällä" (8-9) is aimed at the teacher — optional.
+- [Minor] 8-9 task text — "(mafytaulukot.fi)" is plain text — link it or leave it out.
+- [Minor] 8-9 solution — the Muunnokset line "$5170\,\text{g} = 5{,}17\,\text{kg}$" comes before the value is computed in Sijoitus — optional: move it after the substitution or write the factor "$1000\,\text{g} = 1\,\text{kg}$" only.
+- [Minor] 8-18 figure fy2-8/emissions — the bars for aurinko, vesivoima, ydinvoima and tuuli are very short, as the scale demands; the printed values carry them, so fine; the label "biomassa" could read "biomassa" with the value range in the description only — optional.
 
 ## Checked
-- Rendered at 390 px myself (Playwright, preview/fi-easy/fy2-8.html, level open, all feedback and solution open): fy2-8-L2-08, whole card, read in crops; measured every formula against its text column (katex errors: 0, page overflow: none).
-- 1280 px captures of fi-easy were NOT opened (only the English 1280 capture of the same task); the fi-easy judgement rests on my 390 px render.
-- Not opened: the contact sheets and the other tasks of the chapter (unchanged since the earlier PASS); figures (none in the exercise set).
-- Read as text only: wording of the task, options, feedback and solution in Selkeä suomi (terms explained, one instruction per sentence, no AI phrasing; case endings after maths correct).
-- Changed-text only for the delta: the new task, its solution, (no other edits in this delta).
+- The packet's captures were stale; I ran screenshot.py for fy2-8 with --lang fi-easy (hash unchanged, 4d5fdc3490106f9c).
+- Opened fy2-8-open-exercises-1280-9.png (end of 8-8, 8-9 task, Vihje box, answer row, solution start), -10.png (8-9 solution end), fy2-8-open-exercises-L2-1280-10.png (8-18 task, bar chart, answer row, solution start) and -11.png (8-18 solution).
+- 8-9: situation then question, the emission factor explained in a sentence; unit fractions ($\tfrac{\text{g}}{\text{MJ}}$), the aligned rows and the answer box read cleanly; case and thin spaces right.
+- 8-18: bar chart has axis title with unit, ticks 0–800, values at the bar ends, dark grey fossil against light grey others with a legend (not colour alone); the read values 820 and 490 match the solution.
+- Unchanged exercises not re-opened. No 390 px exercise captures: phone layout not judged.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4
