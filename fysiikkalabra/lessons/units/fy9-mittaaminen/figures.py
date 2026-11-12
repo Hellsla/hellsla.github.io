@@ -197,7 +197,8 @@ def linearisointi():
                  xlabel=r"t^2\ (\text{s}^2)", ylabel=r"s\ (\text{m})", arrow_room=20)
     right.line([(0, 0), (9.8, CART_A * 9.8 / 2)], INK, 3)
     for t, s in zip(CART_T, CART_S): right.point(t * t, s, COLD)
-    f.tex(right.X(5.2), right.Y(0.45), r"k = \tfrac{a}{2}", "start", INK)
+    # the slope on one line, as in the text, at the end of the line in its colour and clear of the gridlines
+    f.tex(right.X(10) + 10, right.Y(1.5), r"k = a/2", "start", INK)
     return f.svg()
 
 

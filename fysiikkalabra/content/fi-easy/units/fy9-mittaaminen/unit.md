@@ -382,7 +382,7 @@ Ajatellaan ensin kappaletta, joka lähtee levosta ja kiihtyy tasaisesti. Kun aik
   <circle cx="399" cy="194.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
   <circle cx="426" cy="144" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
   <circle cx="458" cy="82.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="413.5" y="227.5" width="50" height="32" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:27px">$k = \tfrac{a}{2}$</div></foreignObject>
+  <foreignObject x="480" y="133.5" width="78" height="32" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:27px">$k = a/2$</div></foreignObject>
 </svg>
 
 ## Yleisiä virheitä
