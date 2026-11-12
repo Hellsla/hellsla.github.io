@@ -150,7 +150,7 @@ def district():
     ex = 404 if longer(r"\text{eriste}") else 376
     f.tex(ex, 94, r"\text{eriste}", "middle", w=130 if ex != 376 else 90)
     f.line(ex, 108, ex, 124, MUTED, 1.5)
-    f.tex(16, 262, r"\text{lämpölaitos}", "start", w=170)   # clear of the left edge in every language (teacher 2026-11-11)
+    f.tex(16, 262, r"\text{lämpölaitos}", "start", w=146)   # clear of the left edge in every language (teacher 2026-11-11)
     f.tex(545, 262, r"\text{koti}", "middle", w=80)
     return f.svg()
 
@@ -178,7 +178,7 @@ def storage():
     f.rect(430, 102, 80, 98, "url(#fy27-hot)", INK, 2, 8)
     f.line(470, 82, 470, 92, INK, 4); f.line(470, 210, 470, 222, INK, 4)
     f.tex(100, 267, r"\text{akku}", "middle", w=90)
-    f.tex(282, 267, r"\text{pumppuvoimala}", "middle", w=190)   # centred in its panel, clear of the divider (teacher 2026-11-11)
+    f.tex(282, 267, r"\text{pumppuvoimala}", "middle", w=180)   # centred in its panel, clear of the divider (teacher 2026-11-11)
     f.tex(470, 267, r"\text{lämpövarasto}", "middle", w=190)
     f.tex(100, 40, r"\text{kemiallinen}", "middle", w=150)
     if translate(r"\text{potentiaali-}") != r"\text{potentiaali-}":   # a language without the hyphenated compound: one line

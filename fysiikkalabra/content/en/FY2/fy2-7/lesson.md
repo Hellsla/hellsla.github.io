@@ -386,7 +386,7 @@ A transformer raises the voltage at the power plant and lowers it again close to
   <foreignObject x="165" y="253.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{return water}$</div></foreignObject>
   <foreignObject x="339" y="79.5" width="130" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{insulation}$</div></foreignObject>
   <line x1="404" y1="108" x2="404" y2="124" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="16" y="247.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{heating plant}$</div></foreignObject>
+  <foreignObject x="16" y="247.5" width="146" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{heating plant}$</div></foreignObject>
   <foreignObject x="505" y="247.5" width="80" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{home}$</div></foreignObject>
 </svg>
 
@@ -419,7 +419,7 @@ Energy is also transferred in time. Wind power and solar electricity are produce
   <line x1="470" y1="82" x2="470" y2="92" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
   <line x1="470" y1="210" x2="470" y2="222" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
   <foreignObject x="55" y="252.5" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{battery}$</div></foreignObject>
-  <foreignObject x="187" y="252.5" width="190" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{pumped storage}$</div></foreignObject>
+  <foreignObject x="192" y="252.5" width="180" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{pumped storage}$</div></foreignObject>
   <foreignObject x="375" y="252.5" width="190" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{heat store}$</div></foreignObject>
   <foreignObject x="25" y="25.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{chemical}$</div></foreignObject>
   <foreignObject x="188" y="25.5" width="190" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{potential}\ \text{energy}$</div></foreignObject>
