@@ -1,13 +1,12 @@
 {
-  "jakso": {"id": "kilparobo", "status": "live", "theme": "kiviruukki"},
+  "jakso": {
+    "id": "kilparobo",
+    "status": "live",
+    "theme": "kiviruukki",
+    "course": "KILPAROBO"
+  },
   "ui": {
     "nav_label": "Kilparobotiikan sivut",
-    "nav_home": "Etusivu",
-    "nav_path": "Aloittelijan polku",
-    "nav_season": "Kausi ja päiväkirja",
-    "nav_mentor": "Mentorointi",
-    "nav_safety": "Turvallisuus",
-    "quick_h": "Mistä löydän?",
     "stage_n": "Vaihe {n}",
     "goal": "Tavoite",
     "topics": "Mitä opit",
@@ -19,7 +18,6 @@
     "physics": "Fysiikkaa taustaksi",
     "in_english": "englanniksi",
     "external": "avautuu VEX- tai RECF-sivustolle",
-    "phase_n": "{n}",
     "phase_questions": "Kysykää",
     "phase_output": "Kirjatkaa",
     "copy": "Kopioi pohja",
@@ -28,332 +26,834 @@
     "mentor_side": "Opiskelijamentori",
     "teacher_side": "Opettaja päättää",
     "draft_badge": "Luonnos",
-    "check_badge": "Tarkista kauden tiedot",
     "now_empty": "Joukkueen ajankohtainen tilanne kirjataan tähän, kun opettaja tai joukkue päivittää sen. Kysy siihen asti opettajalta tai joukkueen jäseneltä, mitä joukkue tekee nyt ja milloin se kokoontuu.",
     "now_phase": "Kauden vaihe nyt:",
     "now_updated": "Päivitetty",
-    "more": "Avaa",
-    "back_home": "Kilparobotiikan etusivu",
     "signs": "Osaamisesi näkyy, kun",
     "evidence": "Näytöksi käy"
   },
-  "hub": {
-    "quick": [
-      {"q": "Mitä kilparobotiikka on?", "href": "#tule-mukaan"},
-      {"q": "Miten pääsen mukaan?", "href": "#mukaan"},
-      {"q": "Mistä aloitan?", "href": "kilparobo-polku.html"},
-      {"q": "Mitä joukkue tekee nyt?", "href": "#nyt"},
-      {"q": "Mistä löydän tekniset ohjeet?", "href": "kilparobo-polku.html#ohjeet"}
-    ],
-    "intro_h": "Kilparobotiikka – tule mukaan!",
-    "intro": [
-      "Kiviruukin lukion robotiikkajoukkue osallistuu VEX V5 -robotiikkakilpailuihin. Joukkueessa suunnitellaan, rakennetaan, ohjelmoidaan ja kehitetään kilpailurobotteja yhdessä.",
-      "Aiempaa robotiikkakokemusta ei tarvita. Kokeneemmat opiskelijat auttavat uusia alkuun, ja kaikki oppivat tekemällä. Mukaan sopii, jos sinua kiinnostaa esimerkiksi rakentaminen, ohjelmointi, mittaaminen, pelin strategia, kuvaaminen tai tapahtumien järjestäminen.",
-      "Kilpailuissa yritämme pärjätä hyvin, mutta tärkeintä on oppia, ratkaista ongelmia ja tehdä yhdessä. Robotti ei ole koskaan valmis: sitä voi aina testata, korjata ja parantaa."
-    ],
-    "join_h": "Miten pääsen mukaan?",
-    "join": [
-      "Kysy opettajalta tai joukkueen jäseneltä, milloin joukkue kokoontuu seuraavan kerran.",
-      "Tule mukaan yhteen kokoontumiseen. Saat mentorin eli kokeneemman opiskelijan, joka esittelee robotin ja työtilan.",
-      "Käy turvallisuusperehdytys ennen kuin käytät työkaluja tai ajat robottia.",
-      "Aloita aloittelijan polun ensimmäisestä vaiheesta ja etene omaan tahtiisi."
-    ],
-    "join_note": "Ahjo 1:n tai Ahjo 2:n käyminen ei ole edellytys. Voit tulla mukaan suoraan.",
-    "team_h": "Näin joukkue toimii",
-    "team_lead": "Joukkue toimii opiskelijavetoisesti. Opiskelijat sopivat yhdessä, mitä robotille tehdään seuraavaksi, ja jakavat työt. Opettaja vastaa toiminnasta ja turvallisuudesta ja tukee tarvittaessa.",
-    "areas": [
-      {"icon": "tools", "title": "Mekaniikka ja rakentaminen", "text": "Runko, voimansiirto, tarttujat ja muut mekanismit. Suunnittele, rakenna ja korjaa."},
-      {"icon": "code", "title": "Ohjelmointi ja automaatio", "text": "Kuljettajan ohjaus, autonomiset ohjelmat ja anturit VEXcode V5 -ohjelmointiympäristössä."},
-      {"icon": "ruler", "title": "Testaus ja mittaaminen", "text": "Selvitä mittaamalla, auttoiko muutos: aika, matka, tarkkuus ja toistettavuus."},
-      {"icon": "flag", "title": "Kilpailustrategia ja kuljettajaharjoittelu", "text": "Pelin sääntöjen ja pisteytyksen analysointi, ottelusuunnitelma ja ajoharjoittelu."},
-      {"icon": "notebook", "title": "Dokumentointi, viestintä ja kilpailujärjestelyt", "text": "Kehityspäiväkirja, kuvat, joukkueen esittely sekä kilpailumatkojen valmistelu yhdessä opettajan kanssa."}
-    ],
-    "principles": [
-      "Roolit eivät ole pysyviä. Voit kokeilla eri tehtäviä ja vaihtaa aluetta kauden aikana.",
-      "Kaikki osallistuvat robotin kehittämiseen omien mahdollisuuksiensa mukaan.",
-      "Kokeneet opiskelijat eivät tee tehtäviä uusien puolesta. He opastavat, kysyvät ja antavat palautetta.",
-      "Osaaminen jää joukkueeseen: kirjaa tekemäsi niin, että seuraavan vuoden opiskelijat voivat jatkaa siitä."
-    ],
-    "pages_h": "Joukkueen työkalut",
-    "pages": [
-      {"href": "kilparobo-polku.html", "icon": "path", "title": "Aloittelijan polku", "text": "Viisi vaihetta robottiin tutustumisesta joukkueen projektiin. Jokaisessa on harjoitus ja vinkki mentorille."},
-      {"href": "kilparobo-kausi.html", "icon": "calendar", "title": "Kausi ja päiväkirja", "text": "Kilpailukauden vaiheet sekä kehityspäiväkirjan pohja kopioitavaksi."},
-      {"href": "kilparobo-mentorointi.html", "icon": "people", "title": "Mentorointi ja osaaminen", "text": "Mentorin muistilista, ohjaavat kysymykset ja kevyt tapa tehdä osaaminen näkyväksi."},
-      {"href": "kilparobo-turvallisuus.html", "icon": "shield", "title": "Turvallisuus", "text": "Robotin liikkeet, akut, työkalut, testaaminen ja robotin sammuttaminen."}
-    ],
-    "now_h": "Mitä joukkue tekee nyt?",
-    "competitions_h": "Kilpailut ja kokemukset",
-    "competitions_lead": "Tähän kootaan joukkueen kilpailut ja opiskelijoiden kokemukset. Jokaisen kauden peli ja säännöt ovat erilaiset, joten aiemman kilpailun kuvat ja kokemukset eivät kerro nykyisen kauden säännöistä.",
-    "past_h": "Aiemmat kilpailut",
-    "past": [
-      {"id": "otarobo-2026", "title": "Otarobo 2026", "text": "Joukkue osallistui Otarobo 2026 -kilpailuun VEX V5 -roboteilla. Kuvat on rajattu niin, ettei kenenkään kasvoja näy.", "photos": true}
-    ],
-    "experiences_h": "Kokemuksia kilpailuista",
-    "upcoming_h": "Tulevat kilpailut",
-    "upcoming": "Joukkueen tulevat kilpailut kerrotaan tässä, kun osallistuminen on vahvistettu. Kuluvan kauden VEX V5 -peli, pelikirja ja kilpailut löytyvät virallisista lähteistä.",
-    "upcoming_links": [
-      {"title": "RobotEvents: VEX-kilpailut ja tapahtumat", "url": "https://www.robotevents.com/"},
-      {"title": "RECF: VEX-kilpailujen järjestäjä", "url": "https://www.roboticseducation.org/"}
-    ],
-    "ahjo_h": "Ahjo 1, Ahjo 2 ja kilparobotiikka",
-    "ahjo_lead": "Ahjon opintojaksot ja kilparobotiikka tukevat toisiaan. Ahjossa harjoitellaan teknologian perustaitoja ja projektityötä, ja kilparobotiikassa niitä sovelletaan kilpailuhaasteeseen. Kumpaakaan opintojaksoa ei tarvitse käydä ennen mukaan tuloa.",
-    "ahjo_cols": [
-      {"title": "Ahjo 1", "href": "ahjo-1.html", "items": ["Teknologian perusteet", "Mittaaminen", "Rakentaminen", "Ohjelmoinnin alkeet"]},
-      {"title": "Ahjo 2", "href": "ahjo-2.html", "items": ["Projektisuunnittelu", "Prototypointi", "Testaaminen", "Iterointi"]},
-      {"title": "Kilparobotiikka", "href": "", "items": ["Taitojen soveltaminen kilpailuhaasteeseen", "Joukkueen yhteistyö", "Kilpailustrategia", "Pitkäjänteinen robottikehitys", "Mentorointi"]}
-    ],
-    "ahjo_note": "Ahjon robotiikkatehtävät tehdään Arduinolla. Kilparobotiikassa käytetään VEX V5 -järjestelmää, jonka osat ja ohjelmointi ovat erilaiset."
-  },
-  "now": {"text": "", "phase": 0, "updated": ""},
-  "path": {
-    "title": "VEX V5 – aloittelijan polku",
-    "lead": "Polku auttaa uutta opiskelijaa pääsemään alkuun VEX V5 -robotin kanssa. Etene omaan tahtiisi mentorin kanssa. Vaiheisiin ei ole määräaikoja, ja vaiheen voi ohittaa, kun osaat jo sen asiat.",
-    "how": "Jokaisessa vaiheessa on tavoite, pieni harjoitus, vinkki mentorille ja tapa näyttää, mitä opit. Kun olet näyttänyt taidon mentorille, kirjaa se kehityspäiväkirjaan.",
-    "safety_first": "Ennen ensimmäistä vaihetta: käy turvallisuusperehdytys opettajan ohjeiden mukaan.",
-    "hardware_note": "Joukkueen laitteisto voi poiketa tämän sivun esimerkeistä. Tarkista joukkueen omat osat ja kuluvan kauden pelikirjasta, mitä kilpailurobotissa saa käyttää.",
-    "stages": [
-      {
-        "id": "tutustu",
-        "title": "Tutustu robottiin",
-        "goal": "Tunnistat robotin pääosat ja tiedät, mitä kukin osa tekee ja mihin se kytketään.",
-        "topics": [
-          "VEX V5 Robot Brain: robotin ohjausyksikkö, jossa on kosketusnäyttö, 21\u00a0Smart Port -liitäntää moottoreille ja antureille sekä kahdeksan 3-Wire-liitäntää (A\u2060–\u2060H).",
-          "V5 Controller: kuljettajan ohjain. Se on langattomassa yhteydessä Brainiin robottiin kytketyn V5 Robot Radion kautta.",
-          "V5 Smart Motor (11W): moottorissa on vaihdettava vaihdekasetti, joka määrää suurimman pyörimisnopeuden: punainen 100\u00a0rpm, vihreä 200\u00a0rpm ja sininen 600\u00a0rpm.",
-          "Akku ja virta: V5 Robot Battery kytketään Brainiin, ja Brain jakaa virran moottoreille ja antureille.",
-          "Anturit: esimerkiksi Inertial Sensor (suunta ja kääntyminen), Distance Sensor (etäisyys), Optical Sensor (väri ja läheisyys) ja Rotation Sensor (akselin kiertymä).",
-          "Mekaaninen rakenne: metallirunko, akselit, laakerit, hammaspyörät ja ruuviliitokset."
-        ],
-        "practice": "Kierrä joukkueen robotti mentorin kanssa. Etsi Brain, ohjain, radio, akku sekä jokainen moottori ja anturi. Katso Brainin näytöltä, mihin liitäntään kukin laite on kytketty, ja piirrä robotista liitäntäkartta.",
-        "mentor": "Anna uuden etsiä osat itse. Kysy esimerkiksi: Mistä tiedät, että tämä on moottori eikä anturi? Mitä tapahtuisi, jos tämä johto irtoaisi kesken ottelun?",
-        "show": "Selität mentorille liitäntäkartan avulla, mitä robotin osat tekevät ja mihin ne on kytketty.",
-        "links": [
-          {"title": "Understanding the V5 Robot Brain", "url": "https://kb.vex.com/hc/en-us/articles/360060662352-Understanding-the-V5-Robot-Brain"},
-          {"title": "Understanding the V5 Controller", "url": "https://kb.vex.com/hc/en-us/articles/360060527672-Understanding-the-V5-Controller"},
-          {"title": "Understanding V5 Smart Motors", "url": "https://kb.vex.com/hc/en-us/articles/360060929971-Understanding-V5-Smart-Motors"},
-          {"title": "Overview of the VEX V5 Sensors", "url": "https://kb.vex.com/hc/en-us/articles/4401967256596-Overview-of-the-VEX-V5-Sensors"}
-        ],
-        "refs": ["fy7-4"]
-      },
-      {
-        "id": "ohjaa",
-        "title": "Opettele ohjaamaan",
-        "goal": "Käynnistät robotin turvallisesti ja ajat sitä hallitusti ohjaimella.",
-        "topics": [
-          "Turvallinen käynnistäminen: tarkista ympäristö, aseta robotti lattialle tai kentälle ja pidä kädet irti liikkuvista osista.",
-          "Ohjaimen ja Brainin yhteys: miten näet, että ohjain on yhteydessä robottiin.",
-          "Ajoharjoitukset: suora ajo, käännökset ja pelikappaleiden käsittely.",
-          "Nopeus ja tarkkuus: milloin kannattaa ajaa hitaasti ja milloin nopeasti?",
-          "Ensimmäiset havainnot: miten robotti käyttäytyy, kun akku tyhjenee, alusta vaihtuu tai kuorma kasvaa."
-        ],
-        "practice": "Tehkää teipillä pieni rata, jossa on suora, kaksi käännöstä ja pysähtymisalue. Aja rata kolme kertaa, ota aika ja laske, montako kertaa robotti osuu rajaan. Aja sitten hitaammin ja vertaa tuloksia.",
-        "mentor": "Näytä käynnistys ja sammutus kerran ja anna uuden tehdä ne sen jälkeen itse. Kysy ajon jälkeen: Mikä oli vaikeinta? Mitä robotti teki, mitä et odottanut?",
-        "show": "Käynnistät ja sammutat robotin oikein ja ajat radan kolme kertaa ilman törmäyksiä. Kirjaat ajat ja yhden havainnon kehityspäiväkirjaan.",
-        "links": [
-          {"title": "Pairing the V5 Controller with the V5 Brain", "url": "https://kb.vex.com/hc/en-us/articles/360035592532"},
-          {"title": "Understanding the V5 Robot Battery", "url": "https://kb.vex.com/hc/en-us/articles/360060529912-Understanding-the-V5-Robot-Battery"}
-        ],
-        "refs": ["fy4-6", "fy1-3"]
-      },
-      {
-        "id": "ohjelmoi",
-        "title": "Opettele ohjelmoimaan",
-        "goal": "Kirjoitat ohjelman, joka liikuttaa robottia ja käyttää yhden anturin lukemaa.",
-        "topics": [
-          "VEXcode V5: ohjelmointiympäristö, jossa voi koodata lohkoilla, Pythonilla tai C++:lla.",
-          "Laitteiden määrittely: moottorit ja anturit lisätään ohjelman laiteasetuksiin oikeisiin liitäntöihin.",
-          "Moottorien ohjaus: suunta, nopeus ja pyörimiskulma tai aika.",
-          "Ohjelman rakenne: komentojen järjestys, toisto, ehdot ja omat aliohjelmat.",
-          "Antureiden käyttö: lukeman näyttäminen Brainin näytöllä ja käyttäminen ehdossa.",
-          "Yksinkertainen autonominen toiminto: robotti ajaa, kääntyy ja pysähtyy ilman kuljettajaa."
-        ],
-        "practice": "Tee ohjelma, joka ajaa robottia suoraan eteenpäin noin metrin, kääntyy suorassa kulmassa ja pysähtyy. Mittaa mittanauhalla, kuinka tarkasti robotti osuu. Lisää sitten ehto: robotti pysähtyy, kun Distance Sensor havaitsee esteen. Valitse raja-arvo itse ja kirjaa se.",
-        "mentor": "Älä kirjoita koodia uuden puolesta. Pyydä häntä lukemaan ohjelma ääneen ja kertomaan, mitä robotin pitäisi tehdä. Kun jokin ei toimi, kysy: Mitä odotit? Mitä tapahtui? Mitä muuttaisit ensin?",
-        "show": "Ajat ohjelman mentorille, selität sen rakenteen ja näytät, mitä tapahtuu, kun anturin raja-arvoa muutetaan.",
-        "note": "Kilpailuottelun autonomisen osuuden pituus ja säännöt riippuvat kauden pelistä. Tarkista ne kuluvan kauden pelikirjasta.",
-        "links": [
-          {"title": "VEXcode V5", "url": "https://www.vexrobotics.com/vexcode"},
-          {"title": "Configuring Sensors in VEXcode V5", "url": "https://kb.vex.com/hc/en-us/articles/13951571840660-Configuring-Sensors-in-VEXcode-V5"},
-          {"title": "VEX API Reference (lohkot, Python, C++)", "url": "https://api.vex.com/"}
-        ],
-        "refs": ["fy1-5"]
-      },
-      {
-        "id": "rakenna",
-        "title": "Rakenna ja paranna",
-        "goal": "Teet robottiin yhden perustellun mekaanisen muutoksen ja osoitat testillä, mitä se muutti.",
-        "topics": [
-          "Voimansiirto: miten moottorin pyöriminen siirtyy pyörille ja mekanismeille akseleiden, hammaspyörien ja ketjujen avulla.",
-          "Välityssuhteet: kun pieni hammaspyörä pyörittää isoa, nopeus pienenee ja vääntö kasvaa. Vaihdekasetin valinta vaikuttaa samalla tavalla.",
-          "Rakenteiden jäykkyys: tuennat, kolmiot ja kunnolla kiristetyt liitokset estävät rungon vääntymisen.",
-          "Painopiste: matalalla ja keskellä oleva painopiste estää robottia kaatumasta.",
-          "Tarttujat ja muut mekanismit: miten pelikappale saadaan otettua, kuljetettua ja päästettyä.",
-          "Testaaminen ja iterointi: yksi muutos kerrallaan ja sama testi ennen muutosta ja sen jälkeen."
-        ],
-        "practice": "Valitse mentorin kanssa yksi mekanismi, esimerkiksi nostovarsi. Mittaa ensin lähtötilanne, esimerkiksi nostoaika tai suurin kuorma, jonka varsi nostaa. Vaihda välityssuhde tai vaihdekasetti, mittaa uudelleen samalla tavalla ja vertaa.",
-        "mentor": "Anna uuden ehdottaa muutosta ennen kuin kerrot oman ideasi. Kysy: Miksi luulet, että tämä auttaa? Miten mittaamme, auttoiko se? Mitä menetämme, jos saamme lisää nopeutta?",
-        "show": "Esittelet ennen ja jälkeen -mittauksen ja selität omin sanoin, miten välityssuhde tai rakenne vaikutti.",
-        "links": [
-          {"title": "Using Gear Ratios with the V5 Motor", "url": "https://kb.vex.com/hc/en-us/articles/360035590932"},
-          {"title": "Switching the V5 Motor Gear Cartridge", "url": "https://kb.vex.com/hc/en-us/articles/360035591312-Gear-Cartridge-Motor-for-VEX-V5"},
-          {"title": "Building with VEX V5", "url": "https://kb.vex.com/hc/en-us/articles/360046701172-Building-with-VEX-V5"}
-        ],
-        "refs": ["fy5-1", "fy5-2", "fy4-4", "fy2-3"]
-      },
-      {
-        "id": "projekti",
-        "title": "Osallistu joukkueen projektiin",
-        "goal": "Viet yhden pienen kehitystehtävän suunnitelmasta testattuun ja dokumentoituun ratkaisuun.",
-        "topics": [
-          "Valitse kehitystehtävä joukkueen tehtävälistalta tai ehdota omaa.",
-          "Suunnittele ratkaisu: luonnos, tarvittavat osat ja testi, jolla onnistuminen todetaan.",
-          "Toteuta ratkaisu mentorin tukemana.",
-          "Testaa ja vertaa tulosta lähtötilanteeseen.",
-          "Dokumentoi havainto ja parannus kehityspäiväkirjaan."
-        ],
-        "practice": "Esimerkkejä kehitystehtävistä: tarttujan otteen parantaminen, autonomisen ohjelman tarkkuuden parantaminen, johtojen järjestäminen niin, ettei mikään irtoa ottelussa, tai varaosien järjestäminen niin, että ne löytyvät nopeasti.",
-        "mentor": "Sopikaa, milloin tarkistatte työn yhdessä. Anna uuden esitellä työ joukkueelle itse, vaikka se ei olisi vielä valmis.",
-        "show": "Esittelet työn lyhyesti joukkueelle ja teet siitä kehityspäiväkirjaan merkinnän, jonka avulla joku muu voisi jatkaa työtä.",
-        "links": [],
-        "refs": [],
-        "inner": [{"href": "kilparobo-kausi.html#paivakirja", "title": "Kehityspäiväkirjan pohja"}]
-      }
-    ],
-    "guides_h": "Tekniset ohjeet",
-    "guides_lead": "Viralliset ohjeet ovat englanniksi. Tarkista aina, että ohje koskee VEX V5 -järjestelmää eikä esimerkiksi VEX IQ- tai VEX EXP -sarjaa ja että se vastaa joukkueen laitteita ja ohjelmistoversiota.",
-    "guides": [
-      {"title": "VEX Library: V5", "text": "Valmistajan ohjeet V5-laitteista, rakentamisesta ja ohjelmoinnista.", "url": "https://kb.vex.com/hc/en-us/categories/360002333191-V5"},
-      {"title": "VEXcode V5", "text": "Ohjelmointiympäristö ja sen lataus.", "url": "https://www.vexrobotics.com/vexcode"},
-      {"title": "VEX API Reference", "text": "Komentojen kuvaukset lohkoille, Pythonille ja C++:lle.", "url": "https://api.vex.com/"},
-      {"title": "RobotEvents", "text": "Kilpailut, tapahtumat ja kuluvan kauden pelin tiedot.", "url": "https://www.robotevents.com/"},
-      {"title": "RECF Library", "text": "Kilpailujen järjestäjän ohjeet, myös Engineering Notebook -päiväkirjasta.", "url": "https://kb.roboticseducation.org/hc/en-us"}
-    ]
-  },
-  "season": {
-    "title": "Kilpailukausi ja kehityspäiväkirja",
-    "lead": "VEX V5 -kilpailujen peli ja säännöt vaihtuvat joka kausi. Tämä malli kuvaa, miten joukkue etenee kauden aikana pelistä riippumatta. Vaiheet menevät osin päällekkäin, ja niihin palataan aina uudelleen.",
-    "h": "Kilpailukauden eteneminen",
-    "phases": [
-      {"title": "Kilpailusääntöihin tutustuminen", "text": "Lukekaa kuluvan kauden pelikirja (Game Manual) ja seuratkaa sen päivityksiä. Jokainen lukee ainakin pelin kuvauksen ja robotin rakennussäännöt.", "questions": ["Millainen robotti saa olla ja mitä se ei saa olla?", "Mistä pisteitä saa?"], "output": "Lyhyt tiivistelmä tärkeimmistä säännöistä omin sanoin."},
-      {"title": "Kilpailuhaasteen analysointi", "text": "Pilkkokaa peli osatehtäviin: mitä robotin pitää pystyä tekemään ja paljonko kustakin tehtävästä saa pisteitä.", "questions": ["Mitkä tehtävät tuovat eniten pisteitä vaikeuteen nähden?", "Mitä robotti voi tehdä autonomisesti?"], "output": "Robotin tehtävät tärkeysjärjestyksessä."},
-      {"title": "Strategian suunnittelu", "text": "Päättäkää, mihin joukkue keskittyy. Hyvä strategia sopii joukkueen aikaan, osaamiseen ja osiin.", "questions": ["Mitä teemme ottelussa ensimmäiseksi?", "Miten toimimme liittolaisjoukkueen kanssa?"], "output": "Strategia ja sen perustelut."},
-      {"title": "Robotin suunnittelu ja rakentaminen", "text": "Luonnostelkaa vaihtoehtoja, valitkaa yksi perustellusti ja rakentakaa se. Ensimmäinen versio saa olla yksinkertainen.", "questions": ["Mitkä vaihtoehdot harkitsimme?", "Miksi valitsimme tämän?"], "output": "Luonnokset, valinnan perustelut ja osaluettelo."},
-      {"title": "Ohjelmointi", "text": "Ohjelmoikaa kuljettajan ohjaus ja autonomiset toiminnot. Tallentakaa jokainen toimiva versio, jotta siihen voi palata.", "questions": ["Mikä ohjelman osa tekee mitä?", "Mikä versio toimi parhaiten ja miksi?"], "output": "Ohjelman versiot ja lyhyt kuvaus niiden erosta."},
-      {"title": "Testaus ja harjoitusottelut", "text": "Testatkaa ensin osatehtävät erikseen ja sitten koko robotti harjoitusotteluissa. Kuljettajat harjoittelevat säännöllisesti.", "questions": ["Mikä pettää useimmin?", "Mitä korjaamme ensin?"], "output": "Testitulokset ja korjauslista."},
-      {"title": "Kilpailuun osallistuminen", "text": "Opettaja hoitaa ilmoittautumisen ja matkajärjestelyt yhdessä joukkueen kanssa. Kilpailupäivänä tarkistatte robotin ennen jokaista ottelua ja kirjaatte havainnot.", "questions": ["Mikä toimi ottelussa?", "Mitä muut joukkueet tekivät hyvin?"], "output": "Ottelumuistiinpanot."},
-      {"title": "Arviointi ja parantaminen kilpailun jälkeen", "text": "Käykää läpi, mikä toimi ja mikä ei, ja päättäkää, mitä parannatte ensin. Kauden lopussa kirjatkaa, mitä seuraavan vuoden joukkueen kannattaa tietää.", "questions": ["Mitä opimme?", "Mitä tekisimme toisin?"], "output": "Kauden yhteenveto seuraavalle joukkueelle."}
-    ],
-    "note": "Kauden aikataulu ja kilpailut sovitaan opettajan kanssa. Tällä sivulla ei ole päivämääriä, koska ne muuttuvat vuosittain.",
-    "diary_h": "Joukkueen kehityspäiväkirja",
-    "diary_lead": "Kehityspäiväkirja on joukkueen muisti. Lyhyt merkintä jokaisesta kokeilusta riittää. Kun kirjaatte, mitä yritettiin ja mitä opittiin, seuraavan vuoden joukkue voi jatkaa siitä.",
-    "diary_questions": ["Mitä yritimme ratkaista?", "Mitä muutimme?", "Miten testasimme?", "Mitä havaitsimme?", "Mitä teemme seuraavaksi?"],
-    "template_name": "kilparobo-kehityspaivakirja.txt",
-    "template": [
-      "KEHITYSPÄIVÄKIRJA – merkintä",
-      "",
-      "Päivämäärä:",
-      "Tekijät (etunimet tai nimikirjaimet):",
-      "Robotin osa tai ohjelma:",
-      "",
-      "1. Mitä yritimme ratkaista?",
-      "",
-      "2. Mitä muutimme?",
-      "",
-      "3. Miten testasimme?",
-      "",
-      "4. Mitä havaitsimme? (mittaustulokset, kuva tai video)",
-      "",
-      "5. Mitä teemme seuraavaksi?",
-      ""
-    ],
-    "where": "Pohjaa voi käyttää koulun omissa ympäristöissä, esimerkiksi jaetussa tekstidokumentissa, muistiinpanosovelluksessa tai paperisessa vihossa. Tämä sivu ei tallenna mitään. Päiväkirjaan ei tarvita henkilötietoja: tekijöiksi riittävät etunimet tai nimikirjaimet.",
-    "notebook": "VEX-kilpailuissa tuomarit voivat arvioida joukkueen Engineering Notebook -päiväkirjaa. RECF:n ohjeiden mukaan päiväkirja voi olla paperinen tai digitaalinen, ja tapahtuma päättää, kumman se ottaa vastaan. Tämän pohjan viisi kysymystä sopivat suunnittelun, testauksen ja parannusten kirjaamiseen. Jos joukkue haluaa päiväkirjansa arvioitavaksi, tarkistakaa kuluvan kauden arviointikriteerit RECF:n ohjeista.",
-    "notebook_link": {"title": "RECF: An Introduction to Notebooking", "url": "https://kb.roboticseducation.org/hc/en-us/articles/41248469020439-Getting-Started-with-Notebooking"},
-    "ahjo_diary": "Pidempi ohje ja arviointikriteerit:",
-    "ahjo_diary_link": "Ahjon projektipäiväkirja"
-  },
-  "mentor": {
-    "title": "Mentorointi – opiskelijat opettavat opiskelijoita",
-    "lead": "Kokeneempi opiskelija toimii uuden opiskelijan mentorina: näyttää, kysyy ja antaa palautetta. Mentorointiin ei tarvita lomakkeita. Riittää, että uusi tietää, kenen puoleen kääntyä.",
-    "principle": "Hyvä mentori ei rakenna robottia toisen puolesta. Hän auttaa toista oppimaan rakentamaan sen itse.",
-    "duties_h": "Mentorin tehtävät",
-    "duties": [
-      "Toivottaa uuden opiskelijan tervetulleeksi.",
-      "Perehdyttää turvalliseen työskentelyyn opettajan hyväksymien ohjeiden mukaan.",
-      "Näyttää laitteiden perustoiminnot.",
-      "Auttaa ensimmäisissä rakennus- ja ohjelmointitehtävissä.",
-      "Kysyy ohjaavia kysymyksiä valmiiden ratkaisujen antamisen sijaan.",
-      "Kannustaa ratkaisemaan ongelmia itse.",
-      "Auttaa dokumentoinnissa.",
-      "Antaa palautetta."
-    ],
-    "checklist_h": "Mentorin muistilista",
-    "checklist": [
-      "Esittele joukkue, työtila ja robotti.",
-      "Käy läpi turvallisuusohjeet opettajan antamien ohjeiden mukaan.",
-      "Näytä kerran ja anna sitten uuden tehdä itse.",
-      "Pidä omat kätesi irti robotista: neuvo sanoilla.",
-      "Kysy ennen kuin kerrot.",
-      "Anna virheiden tapahtua, kun ne ovat turvallisia. Niistä oppii.",
-      "Huomaa yritys ja edistyminen.",
-      "Auta kirjoittamaan merkintä kehityspäiväkirjaan.",
-      "Kerro opettajalle, jos jokin on vaarallista tai jos et osaa auttaa."
-    ],
-    "questions_h": "Ohjaavia kysymyksiä",
-    "questions": [
-      "Mitä luulet tapahtuvan, jos …?",
-      "Miten voisit testata sen?",
-      "Mitä robotti tekee nyt, ja mitä haluat sen tekevän?",
-      "Mikä on pienin muutos, jota voisit kokeilla?",
-      "Mistä voisit etsiä tietoa tähän?",
-      "Mitä opit tästä kokeilusta?"
-    ],
-    "practical_h": "Miten mentorointi järjestyy",
-    "practical": [
-      "Uusi opiskelija saa mentorin ensimmäisellä kerralla. Yhdellä mentorilla voi olla useampi uusi opiskelija.",
-      "Mentoria voi vaihtaa, ja apua voi kysyä keneltä tahansa joukkueessa.",
-      "Kun olet käynyt aloittelijan polun läpi, voit itse ryhtyä mentoriksi.",
-      "Mentori ei hyväksy työkalujen käyttöä eikä tee turvallisuuspäätöksiä. Niistä päättää opettaja."
-    ],
-    "growth": "Mentorointi kehittää myös mentoria. Opit selittämään, kuuntelemaan, johtamaan ja antamaan palautetta. Kun opetat asian toiselle, ymmärrät sen itsekin paremmin.",
-    "skills_h": "Osaamisen tunnistaminen",
-    "skills_lead": "Kilparobotiikassa syntyy paljon osaamista, joka ei näy kilpailutuloksessa. Tämä kevyt malli auttaa sinua huomaamaan ja näyttämään, mitä olet oppinut. Kilpailusijoitus ei ole osaamisesi mittari.",
-    "skills": [
-      {"title": "Tekninen osaaminen", "signs": ["rakennat tai korjaat mekanismin", "ohjelmoit moottorit ja anturit toimimaan yhdessä"], "evidence": "kuva rakennelmasta, ohjelma tai mittaustulos"},
-      {"title": "Ongelmanratkaisu", "signs": ["etsit vian järjestelmällisesti", "kokeilet yhden muutoksen kerrallaan ja testaat sen"], "evidence": "päiväkirjamerkintä, jossa näkyy ongelma, kokeilut ja ratkaisu"},
-      {"title": "Projektityöskentely", "signs": ["suunnittelet tehtävän ja arvioit, paljonko aikaa se vie", "viet työn loppuun tai siirrät sen hallitusti toiselle"], "evidence": "tehtävälista tai suunnitelma ja sen toteutuminen"},
-      {"title": "Yhteistyö", "signs": ["sovit työnjaosta muiden kanssa", "kuuntelet muiden ideoita ja perustelet omasi"], "evidence": "joukkueen tai mentorin palaute"},
-      {"title": "Dokumentointi", "signs": ["kirjaat muutokset ja testit niin, että joku toinen voi jatkaa työtä"], "evidence": "kehityspäiväkirjan merkinnät"},
-      {"title": "Mentorointi ja muiden ohjaaminen", "signs": ["perehdytät uuden opiskelijan", "ohjaat kysymällä etkä tee toisen puolesta"], "evidence": "ohjattavan kertomus tai yhdessä tehty päiväkirjamerkintä"}
-    ],
-    "skills_how": "Kerää kauden aikana muutama näyttö, esimerkiksi kuva, päiväkirjamerkintä, ohjelma tai mentorin palaute, ja käy ne läpi opettajan kanssa kauden lopussa.",
-    "skills_note": "Opintopisteistä, hyväksiluvusta ja arvioinnista päätetään koulussa erikseen. Kysy niistä opettajalta.",
-    "diploma": "Kilparobotiikassa syntynyttä osaamista voi hyödyntää myös Tiede- ja teknologia -diplomin portfoliossa, jos työ vastaa diplomipolun tavoitteita. Kysy tästä opettajalta."
-  },
-  "safety": {
-    "title": "Turvallisuus kilparobotiikassa",
-    "lead": "Jokainen käy turvallisuusperehdytyksen ennen kuin käyttää työkaluja tai ajaa robottia. Tämä sivu on muistilista. Sitovat ohjeet antaa opettaja.",
-    "draft": "Turvallisuusohjeet ovat luonnos, kunnes koulun vastuuhenkilöt ovat hyväksyneet ne.",
-    "stop": "Kuka tahansa saa sanoa SEIS. Kun joku sanoo SEIS, robotti pysäytetään heti.",
-    "roles_h": "Kuka päättää mistäkin",
-    "roles": [
-      {"who": "mentor", "items": ["näyttää ohjeiden mukaiset työtavat", "muistuttaa turvallisuusohjeista", "keskeyttää vaarallisen tilanteen ja kertoo siitä opettajalle"]},
-      {"who": "teacher", "items": ["hyväksyy työkalujen käytön ja antaa luvan itsenäiseen työskentelyyn", "päättää harjoitus- ja testialueen säännöistä", "päättää akkujen latauksesta ja säilytyksestä", "päättää, miten hätätilanteessa toimitaan"]}
-    ],
-    "roles_note": "Opiskelijamentori ei voi antaa lupaa vaarallisten työkalujen itsenäiseen käyttöön.",
-    "topics": [
-      {"id": "liikkeet", "icon": "gear", "title": "Robotin mekaaniset liikkeet", "do": ["Hammaspyörät, ketjut, varret ja tarttujat voivat puristaa sormia. Pidä kädet, hiukset, korut ja johdot erillään liikkuvista osista.", "Kun robotissa on virta päällä, oleta, että se voi liikkua.", "Korjaa ja säädä robottia vain virta katkaistuna."], "teacher": "missä robottia saa käyttää ja kuka saa ajaa sitä"},
-      {"id": "akut", "icon": "battery", "title": "Akkujen käsittely", "do": ["Käytä vain V5 Robot Battery -akkua ja lataa se V5-laturilla.", "Älä käytä akkua, joka on kolhiintunut, turvonnut, kuuma tai haisee. Vie se opettajalle.", "Älä jätä latautuvaa akkua ilman valvontaa.", "Säilytä akut opettajan osoittamassa paikassa niin, etteivät liittimet pääse koskettamaan metallia."], "teacher": "latauspaikka, säilytys ja vaurioituneen akun käsittely"},
-      {"id": "tyokalut", "icon": "tools", "title": "Rakentamiseen käytettävät työkalut", "do": ["Käsityökaluja, kuten kuusiokoloavaimia ja kiintoavaimia, käytetään perehdytyksen jälkeen.", "Metalliosien leikkaaminen ja viilaaminen jättää teräviä reunoja. Viilaa reunat tasaisiksi ja käytä suojalaseja.", "Sähkötyökaluja, kuten akkuporakonetta tai monitoimityökalua, käytetään vain opettajan luvalla ja opettajan perehdytyksen jälkeen."], "teacher": "jokaisen sähkötyökalun käyttö ja sen itsenäinen käyttö erikseen"},
-      {"id": "testaus", "icon": "ruler", "title": "Robotin testaaminen", "do": ["Testaa uusi ohjelma ensin niin, että pyörät ovat irti alustasta, tai rajatulla alueella.", "Sopikaa ennen testiä, kuka pitää ohjainta ja kuka pysäyttää robotin.", "Sano ääneen, kun robotti käynnistyy."], "teacher": "testialue ja se, saako autonomisia ohjelmia testata ilman opettajaa"},
-      {"id": "alue", "icon": "flag", "title": "Harjoitusalueen turvallisuus", "do": ["Pidä kenttä ja kulkureitit vapaina laukuista, osista ja johdoista.", "Katsojat pysyvät kentän reunan ulkopuolella.", "Palauta osat ja työkalut paikoilleen jokaisen kerran lopuksi."], "teacher": "harjoitusalueen rajat ja säännöt"},
-      {"id": "sammutus", "icon": "power", "title": "Robotin sammuttaminen ja turvallinen tila", "do": ["Pysäytä ohjelma ohjaimesta tai Brainin näytöltä.", "Sammuta Brain sen virtapainikkeesta.", "Irrota akku, kun robottia korjataan, kuljetetaan tai säilytetään.", "Laske nostetut varret ja mekanismit alas tai tue ne, ettei mikään putoa."], "teacher": "miten hätätilanteessa toimitaan ja kenelle ilmoitetaan"}
-    ],
-    "ahjo": "Jos työskentelette Ahjossa, noudattakaa myös Ahjon turvallisuusohjeita.",
-    "ahjo_link": "Ahjon turvallisuus",
-    "links": [
-      {"title": "Charging the V5 Battery", "url": "https://kb.vex.com/hc/en-us/articles/360035590152-Charging-the-V5-Battery"},
-      {"title": "Understanding the V5 Robot Battery", "url": "https://kb.vex.com/hc/en-us/articles/360060529912-Understanding-the-V5-Robot-Battery"}
-    ]
-  }
+  "pages": [
+    {
+      "file": "KILPAROBO.html",
+      "nav": "Etusivu",
+      "blocks": [
+        {
+          "type": "pikavalikko",
+          "title": "Mistä löydän?",
+          "items": [
+            {
+              "q": "Mitä kilparobotiikka on?",
+              "href": "#tule-mukaan"
+            },
+            {
+              "q": "Miten pääsen mukaan?",
+              "href": "#mukaan"
+            },
+            {
+              "q": "Mistä aloitan?",
+              "href": "kilparobo-polku.html"
+            },
+            {
+              "q": "Mitä joukkue tekee nyt?",
+              "href": "#nyt"
+            },
+            {
+              "q": "Mistä löydän tekniset ohjeet?",
+              "href": "kilparobo-polku.html#ohjeet"
+            }
+          ]
+        },
+        {
+          "type": "teksti",
+          "id": "tule-mukaan",
+          "title": "Kilparobotiikka – tule mukaan!",
+          "text": [
+            "Kiviruukin lukion robotiikkajoukkue osallistuu VEX V5 -robotiikkakilpailuihin. Joukkueessa suunnitellaan, rakennetaan, ohjelmoidaan ja kehitetään kilpailurobotteja yhdessä.",
+            "Aiempaa robotiikkakokemusta ei tarvita. Kokeneemmat opiskelijat auttavat uusia alkuun, ja kaikki oppivat tekemällä. Mukaan sopii, jos sinua kiinnostaa esimerkiksi rakentaminen, ohjelmointi, mittaaminen, pelin strategia, kuvaaminen tai tapahtumien järjestäminen.",
+            "Kilpailuissa yritämme pärjätä hyvin, mutta tärkeintä on oppia, ratkaista ongelmia ja tehdä yhdessä. Robotti ei ole koskaan valmis: sitä voi aina testata, korjata ja parantaa."
+          ],
+          "class": "kr-intro",
+          "box": {
+            "id": "mukaan",
+            "title": "Miten pääsen mukaan?",
+            "steps": [
+              "Kysy opettajalta tai joukkueen jäseneltä, milloin joukkue kokoontuu seuraavan kerran.",
+              "Tule mukaan yhteen kokoontumiseen. Saat mentorin eli kokeneemman opiskelijan, joka esittelee robotin ja työtilan.",
+              "Käy turvallisuusperehdytys ennen kuin käytät työkaluja tai ajat robottia.",
+              "Aloita aloittelijan polun ensimmäisestä vaiheesta ja etene omaan tahtiisi."
+            ],
+            "note": "Ahjo 1:n tai Ahjo 2:n käyminen ei ole edellytys. Voit tulla mukaan suoraan."
+          }
+        },
+        {
+          "type": "kortit",
+          "id": "toiminta",
+          "title": "Näin joukkue toimii",
+          "lead": "Joukkue toimii opiskelijavetoisesti. Opiskelijat sopivat yhdessä, mitä robotille tehdään seuraavaksi, ja jakavat työt. Opettaja vastaa toiminnasta ja turvallisuudesta ja tukee tarvittaessa.",
+          "variant": "kr-areas",
+          "cards": [
+            {
+              "icon": "tools",
+              "title": "Mekaniikka ja rakentaminen",
+              "text": "Runko, voimansiirto, tarttujat ja muut mekanismit. Suunnittele, rakenna ja korjaa."
+            },
+            {
+              "icon": "code",
+              "title": "Ohjelmointi ja automaatio",
+              "text": "Kuljettajan ohjaus, autonomiset ohjelmat ja anturit VEXcode V5 -ohjelmointiympäristössä."
+            },
+            {
+              "icon": "ruler",
+              "title": "Testaus ja mittaaminen",
+              "text": "Selvitä mittaamalla, auttoiko muutos: aika, matka, tarkkuus ja toistettavuus."
+            },
+            {
+              "icon": "flag",
+              "title": "Kilpailustrategia ja kuljettajaharjoittelu",
+              "text": "Pelin sääntöjen ja pisteytyksen analysointi, ottelusuunnitelma ja ajoharjoittelu."
+            },
+            {
+              "icon": "notebook",
+              "title": "Dokumentointi, viestintä ja kilpailujärjestelyt",
+              "text": "Kehityspäiväkirja, kuvat, joukkueen esittely sekä kilpailumatkojen valmistelu yhdessä opettajan kanssa."
+            }
+          ],
+          "list": [
+            "Roolit eivät ole pysyviä. Voit kokeilla eri tehtäviä ja vaihtaa aluetta kauden aikana.",
+            "Kaikki osallistuvat robotin kehittämiseen omien mahdollisuuksiensa mukaan.",
+            "Kokeneet opiskelijat eivät tee tehtäviä uusien puolesta. He opastavat, kysyvät ja antavat palautetta.",
+            "Osaaminen jää joukkueeseen: kirjaa tekemäsi niin, että seuraavan vuoden opiskelijat voivat jatkaa siitä."
+          ],
+          "list_class": "kr-principles"
+        },
+        {
+          "type": "kortit",
+          "id": "tyokalut",
+          "title": "Joukkueen työkalut",
+          "variant": "kr-pages",
+          "cards": [
+            {
+              "icon": "path",
+              "title": "Aloittelijan polku",
+              "text": "Viisi vaihetta robottiin tutustumisesta joukkueen projektiin. Jokaisessa on harjoitus ja vinkki mentorille.",
+              "href": "kilparobo-polku.html"
+            },
+            {
+              "icon": "calendar",
+              "title": "Kausi ja päiväkirja",
+              "text": "Kilpailukauden vaiheet sekä kehityspäiväkirjan pohja kopioitavaksi.",
+              "href": "kilparobo-kausi.html"
+            },
+            {
+              "icon": "people",
+              "title": "Mentorointi ja osaaminen",
+              "text": "Mentorin muistilista, ohjaavat kysymykset ja kevyt tapa tehdä osaaminen näkyväksi.",
+              "href": "kilparobo-mentorointi.html"
+            },
+            {
+              "icon": "shield",
+              "title": "Turvallisuus",
+              "text": "Robotin liikkeet, akut, työkalut, testaaminen ja robotin sammuttaminen.",
+              "href": "kilparobo-turvallisuus.html"
+            }
+          ]
+        },
+        {
+          "type": "nyt",
+          "id": "nyt",
+          "title": "Mitä joukkue tekee nyt?",
+          "text": "",
+          "phase": 0,
+          "updated": ""
+        },
+        {
+          "type": "kokemukset",
+          "id": "kilpailut",
+          "title": "Kilpailut ja kokemukset",
+          "lead": "Tähän kootaan joukkueen kilpailut ja opiskelijoiden kokemukset. Jokaisen kauden peli ja säännöt ovat erilaiset, joten aiemman kilpailun kuvat ja kokemukset eivät kerro nykyisen kauden säännöistä.",
+          "past_h": "Aiemmat kilpailut",
+          "past": [
+            {
+              "id": "otarobo-2026",
+              "title": "Otarobo 2026",
+              "text": "Joukkue osallistui Otarobo 2026 -kilpailuun VEX V5 -roboteilla. Kuvat on rajattu niin, ettei kenenkään kasvoja näy.",
+              "photos": true
+            }
+          ],
+          "experiences_h": "Kokemuksia kilpailuista",
+          "upcoming_h": "Tulevat kilpailut",
+          "upcoming": "Joukkueen tulevat kilpailut kerrotaan tässä, kun osallistuminen on vahvistettu. Kuluvan kauden VEX V5 -peli, pelikirja ja kilpailut löytyvät virallisista lähteistä.",
+          "upcoming_links": [
+            {
+              "title": "RobotEvents: VEX-kilpailut ja tapahtumat",
+              "url": "https://www.robotevents.com/"
+            },
+            {
+              "title": "RECF: VEX-kilpailujen järjestäjä",
+              "url": "https://www.roboticseducation.org/"
+            }
+          ]
+        },
+        {
+          "type": "sarakkeet",
+          "id": "ahjo",
+          "title": "Ahjo 1, Ahjo 2 ja kilparobotiikka",
+          "lead": "Ahjon opintojaksot ja kilparobotiikka tukevat toisiaan. Ahjossa harjoitellaan teknologian perustaitoja ja projektityötä, ja kilparobotiikassa niitä sovelletaan kilpailuhaasteeseen. Kumpaakaan opintojaksoa ei tarvitse käydä ennen mukaan tuloa.",
+          "cols": [
+            {
+              "title": "Ahjo 1",
+              "href": "ahjo-1.html",
+              "items": [
+                "Teknologian perusteet",
+                "Mittaaminen",
+                "Rakentaminen",
+                "Ohjelmoinnin alkeet"
+              ]
+            },
+            {
+              "title": "Ahjo 2",
+              "href": "ahjo-2.html",
+              "items": [
+                "Projektisuunnittelu",
+                "Prototypointi",
+                "Testaaminen",
+                "Iterointi"
+              ]
+            },
+            {
+              "title": "Kilparobotiikka",
+              "href": "",
+              "items": [
+                "Taitojen soveltaminen kilpailuhaasteeseen",
+                "Joukkueen yhteistyö",
+                "Kilpailustrategia",
+                "Pitkäjänteinen robottikehitys",
+                "Mentorointi"
+              ]
+            }
+          ],
+          "note": "Ahjon robotiikkatehtävät tehdään Arduinolla. Kilparobotiikassa käytetään VEX V5 -järjestelmää, jonka osat ja ohjelmointi ovat erilaiset."
+        }
+      ]
+    },
+    {
+      "file": "kilparobo-polku.html",
+      "nav": "Aloittelijan polku",
+      "title": "VEX V5 – aloittelijan polku",
+      "lead": "Polku auttaa uutta opiskelijaa pääsemään alkuun VEX V5 -robotin kanssa. Etene omaan tahtiisi mentorin kanssa. Vaiheisiin ei ole määräaikoja, ja vaiheen voi ohittaa, kun osaat jo sen asiat.",
+      "blocks": [
+        {
+          "type": "johdanto",
+          "text": "Jokaisessa vaiheessa on tavoite, pieni harjoitus, vinkki mentorille ja tapa näyttää, mitä opit. Kun olet näyttänyt taidon mentorille, kirjaa se kehityspäiväkirjaan.",
+          "notice": {
+            "icon": "shield",
+            "text": "Ennen ensimmäistä vaihetta: käy turvallisuusperehdytys opettajan ohjeiden mukaan.",
+            "href": "kilparobo-turvallisuus.html",
+            "link": "Turvallisuus"
+          }
+        },
+        {
+          "type": "polku",
+          "stages": [
+            {
+              "id": "tutustu",
+              "title": "Tutustu robottiin",
+              "goal": "Tunnistat robotin pääosat ja tiedät, mitä kukin osa tekee ja mihin se kytketään.",
+              "topics": [
+                "VEX V5 Robot Brain: robotin ohjausyksikkö, jossa on kosketusnäyttö, 21 Smart Port -liitäntää moottoreille ja antureille sekä kahdeksan 3-Wire-liitäntää (A⁠–⁠H).",
+                "V5 Controller: kuljettajan ohjain. Se on langattomassa yhteydessä Brainiin robottiin kytketyn V5 Robot Radion kautta.",
+                "V5 Smart Motor (11W): moottorissa on vaihdettava vaihdekasetti, joka määrää suurimman pyörimisnopeuden: punainen 100 rpm, vihreä 200 rpm ja sininen 600 rpm.",
+                "Akku ja virta: V5 Robot Battery kytketään Brainiin, ja Brain jakaa virran moottoreille ja antureille.",
+                "Anturit: esimerkiksi Inertial Sensor (suunta ja kääntyminen), Distance Sensor (etäisyys), Optical Sensor (väri ja läheisyys) ja Rotation Sensor (akselin kiertymä).",
+                "Mekaaninen rakenne: metallirunko, akselit, laakerit, hammaspyörät ja ruuviliitokset."
+              ],
+              "practice": "Kierrä joukkueen robotti mentorin kanssa. Etsi Brain, ohjain, radio, akku sekä jokainen moottori ja anturi. Katso Brainin näytöltä, mihin liitäntään kukin laite on kytketty, ja piirrä robotista liitäntäkartta.",
+              "mentor": "Anna uuden etsiä osat itse. Kysy esimerkiksi: Mistä tiedät, että tämä on moottori eikä anturi? Mitä tapahtuisi, jos tämä johto irtoaisi kesken ottelun?",
+              "show": "Selität mentorille liitäntäkartan avulla, mitä robotin osat tekevät ja mihin ne on kytketty.",
+              "links": [
+                {
+                  "title": "Understanding the V5 Robot Brain",
+                  "url": "https://kb.vex.com/hc/en-us/articles/360060662352-Understanding-the-V5-Robot-Brain"
+                },
+                {
+                  "title": "Understanding the V5 Controller",
+                  "url": "https://kb.vex.com/hc/en-us/articles/360060527672-Understanding-the-V5-Controller"
+                },
+                {
+                  "title": "Understanding V5 Smart Motors",
+                  "url": "https://kb.vex.com/hc/en-us/articles/360060929971-Understanding-V5-Smart-Motors"
+                },
+                {
+                  "title": "Overview of the VEX V5 Sensors",
+                  "url": "https://kb.vex.com/hc/en-us/articles/4401967256596-Overview-of-the-VEX-V5-Sensors"
+                }
+              ],
+              "refs": [
+                "fy7-4"
+              ]
+            },
+            {
+              "id": "ohjaa",
+              "title": "Opettele ohjaamaan",
+              "goal": "Käynnistät robotin turvallisesti ja ajat sitä hallitusti ohjaimella.",
+              "topics": [
+                "Turvallinen käynnistäminen: tarkista ympäristö, aseta robotti lattialle tai kentälle ja pidä kädet irti liikkuvista osista.",
+                "Ohjaimen ja Brainin yhteys: miten näet, että ohjain on yhteydessä robottiin.",
+                "Ajoharjoitukset: suora ajo, käännökset ja pelikappaleiden käsittely.",
+                "Nopeus ja tarkkuus: milloin kannattaa ajaa hitaasti ja milloin nopeasti?",
+                "Ensimmäiset havainnot: miten robotti käyttäytyy, kun akku tyhjenee, alusta vaihtuu tai kuorma kasvaa."
+              ],
+              "practice": "Tehkää teipillä pieni rata, jossa on suora, kaksi käännöstä ja pysähtymisalue. Aja rata kolme kertaa, ota aika ja laske, montako kertaa robotti osuu rajaan. Aja sitten hitaammin ja vertaa tuloksia.",
+              "mentor": "Näytä käynnistys ja sammutus kerran ja anna uuden tehdä ne sen jälkeen itse. Kysy ajon jälkeen: Mikä oli vaikeinta? Mitä robotti teki, mitä et odottanut?",
+              "show": "Käynnistät ja sammutat robotin oikein ja ajat radan kolme kertaa ilman törmäyksiä. Kirjaat ajat ja yhden havainnon kehityspäiväkirjaan.",
+              "links": [
+                {
+                  "title": "Pairing the V5 Controller with the V5 Brain",
+                  "url": "https://kb.vex.com/hc/en-us/articles/360035592532"
+                },
+                {
+                  "title": "Understanding the V5 Robot Battery",
+                  "url": "https://kb.vex.com/hc/en-us/articles/360060529912-Understanding-the-V5-Robot-Battery"
+                }
+              ],
+              "refs": [
+                "fy4-6",
+                "fy1-3"
+              ]
+            },
+            {
+              "id": "ohjelmoi",
+              "title": "Opettele ohjelmoimaan",
+              "goal": "Kirjoitat ohjelman, joka liikuttaa robottia ja käyttää yhden anturin lukemaa.",
+              "topics": [
+                "VEXcode V5: ohjelmointiympäristö, jossa voi koodata lohkoilla, Pythonilla tai C++:lla.",
+                "Laitteiden määrittely: moottorit ja anturit lisätään ohjelman laiteasetuksiin oikeisiin liitäntöihin.",
+                "Moottorien ohjaus: suunta, nopeus ja pyörimiskulma tai aika.",
+                "Ohjelman rakenne: komentojen järjestys, toisto, ehdot ja omat aliohjelmat.",
+                "Antureiden käyttö: lukeman näyttäminen Brainin näytöllä ja käyttäminen ehdossa.",
+                "Yksinkertainen autonominen toiminto: robotti ajaa, kääntyy ja pysähtyy ilman kuljettajaa."
+              ],
+              "practice": "Tee ohjelma, joka ajaa robottia suoraan eteenpäin noin metrin, kääntyy suorassa kulmassa ja pysähtyy. Mittaa mittanauhalla, kuinka tarkasti robotti osuu. Lisää sitten ehto: robotti pysähtyy, kun Distance Sensor havaitsee esteen. Valitse raja-arvo itse ja kirjaa se.",
+              "mentor": "Älä kirjoita koodia uuden puolesta. Pyydä häntä lukemaan ohjelma ääneen ja kertomaan, mitä robotin pitäisi tehdä. Kun jokin ei toimi, kysy: Mitä odotit? Mitä tapahtui? Mitä muuttaisit ensin?",
+              "show": "Ajat ohjelman mentorille, selität sen rakenteen ja näytät, mitä tapahtuu, kun anturin raja-arvoa muutetaan.",
+              "note": "Kilpailuottelun autonomisen osuuden pituus ja säännöt riippuvat kauden pelistä. Tarkista ne kuluvan kauden pelikirjasta.",
+              "links": [
+                {
+                  "title": "VEXcode V5",
+                  "url": "https://www.vexrobotics.com/vexcode"
+                },
+                {
+                  "title": "Configuring Sensors in VEXcode V5",
+                  "url": "https://kb.vex.com/hc/en-us/articles/13951571840660-Configuring-Sensors-in-VEXcode-V5"
+                },
+                {
+                  "title": "VEX API Reference (lohkot, Python, C++)",
+                  "url": "https://api.vex.com/"
+                }
+              ],
+              "refs": [
+                "fy1-5"
+              ]
+            },
+            {
+              "id": "rakenna",
+              "title": "Rakenna ja paranna",
+              "goal": "Teet robottiin yhden perustellun mekaanisen muutoksen ja osoitat testillä, mitä se muutti.",
+              "topics": [
+                "Voimansiirto: miten moottorin pyöriminen siirtyy pyörille ja mekanismeille akseleiden, hammaspyörien ja ketjujen avulla.",
+                "Välityssuhteet: kun pieni hammaspyörä pyörittää isoa, nopeus pienenee ja vääntö kasvaa. Vaihdekasetin valinta vaikuttaa samalla tavalla.",
+                "Rakenteiden jäykkyys: tuennat, kolmiot ja kunnolla kiristetyt liitokset estävät rungon vääntymisen.",
+                "Painopiste: matalalla ja keskellä oleva painopiste estää robottia kaatumasta.",
+                "Tarttujat ja muut mekanismit: miten pelikappale saadaan otettua, kuljetettua ja päästettyä.",
+                "Testaaminen ja iterointi: yksi muutos kerrallaan ja sama testi ennen muutosta ja sen jälkeen."
+              ],
+              "practice": "Valitse mentorin kanssa yksi mekanismi, esimerkiksi nostovarsi. Mittaa ensin lähtötilanne, esimerkiksi nostoaika tai suurin kuorma, jonka varsi nostaa. Vaihda välityssuhde tai vaihdekasetti, mittaa uudelleen samalla tavalla ja vertaa.",
+              "mentor": "Anna uuden ehdottaa muutosta ennen kuin kerrot oman ideasi. Kysy: Miksi luulet, että tämä auttaa? Miten mittaamme, auttoiko se? Mitä menetämme, jos saamme lisää nopeutta?",
+              "show": "Esittelet ennen ja jälkeen -mittauksen ja selität omin sanoin, miten välityssuhde tai rakenne vaikutti.",
+              "links": [
+                {
+                  "title": "Using Gear Ratios with the V5 Motor",
+                  "url": "https://kb.vex.com/hc/en-us/articles/360035590932"
+                },
+                {
+                  "title": "Switching the V5 Motor Gear Cartridge",
+                  "url": "https://kb.vex.com/hc/en-us/articles/360035591312-Gear-Cartridge-Motor-for-VEX-V5"
+                },
+                {
+                  "title": "Building with VEX V5",
+                  "url": "https://kb.vex.com/hc/en-us/articles/360046701172-Building-with-VEX-V5"
+                }
+              ],
+              "refs": [
+                "fy5-1",
+                "fy5-2",
+                "fy4-4",
+                "fy2-3"
+              ]
+            },
+            {
+              "id": "projekti",
+              "title": "Osallistu joukkueen projektiin",
+              "goal": "Viet yhden pienen kehitystehtävän suunnitelmasta testattuun ja dokumentoituun ratkaisuun.",
+              "topics": [
+                "Valitse kehitystehtävä joukkueen tehtävälistalta tai ehdota omaa.",
+                "Suunnittele ratkaisu: luonnos, tarvittavat osat ja testi, jolla onnistuminen todetaan.",
+                "Toteuta ratkaisu mentorin tukemana.",
+                "Testaa ja vertaa tulosta lähtötilanteeseen.",
+                "Dokumentoi havainto ja parannus kehityspäiväkirjaan."
+              ],
+              "practice": "Esimerkkejä kehitystehtävistä: tarttujan otteen parantaminen, autonomisen ohjelman tarkkuuden parantaminen, johtojen järjestäminen niin, ettei mikään irtoa ottelussa, tai varaosien järjestäminen niin, että ne löytyvät nopeasti.",
+              "mentor": "Sopikaa, milloin tarkistatte työn yhdessä. Anna uuden esitellä työ joukkueelle itse, vaikka se ei olisi vielä valmis.",
+              "show": "Esittelet työn lyhyesti joukkueelle ja teet siitä kehityspäiväkirjaan merkinnän, jonka avulla joku muu voisi jatkaa työtä.",
+              "links": [],
+              "refs": [],
+              "inner": [
+                {
+                  "href": "kilparobo-kausi.html#paivakirja",
+                  "title": "Kehityspäiväkirjan pohja"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "ohjelinkit",
+          "id": "ohjeet",
+          "title": "Tekniset ohjeet",
+          "lead": "Viralliset ohjeet ovat englanniksi. Tarkista aina, että ohje koskee VEX V5 -järjestelmää eikä esimerkiksi VEX IQ- tai VEX EXP -sarjaa ja että se vastaa joukkueen laitteita ja ohjelmistoversiota.",
+          "guides": [
+            {
+              "title": "VEX Library: V5",
+              "text": "Valmistajan ohjeet V5-laitteista, rakentamisesta ja ohjelmoinnista.",
+              "url": "https://kb.vex.com/hc/en-us/categories/360002333191-V5"
+            },
+            {
+              "title": "VEXcode V5",
+              "text": "Ohjelmointiympäristö ja sen lataus.",
+              "url": "https://www.vexrobotics.com/vexcode"
+            },
+            {
+              "title": "VEX API Reference",
+              "text": "Komentojen kuvaukset lohkoille, Pythonille ja C++:lle.",
+              "url": "https://api.vex.com/"
+            },
+            {
+              "title": "RobotEvents",
+              "text": "Kilpailut, tapahtumat ja kuluvan kauden pelin tiedot.",
+              "url": "https://www.robotevents.com/"
+            },
+            {
+              "title": "RECF Library",
+              "text": "Kilpailujen järjestäjän ohjeet, myös Engineering Notebook -päiväkirjasta.",
+              "url": "https://kb.roboticseducation.org/hc/en-us"
+            }
+          ],
+          "note": "Joukkueen laitteisto voi poiketa tämän sivun esimerkeistä. Tarkista joukkueen omat osat ja kuluvan kauden pelikirjasta, mitä kilpailurobotissa saa käyttää."
+        }
+      ]
+    },
+    {
+      "file": "kilparobo-kausi.html",
+      "nav": "Kausi ja päiväkirja",
+      "title": "Kilpailukausi ja kehityspäiväkirja",
+      "lead": "VEX V5 -kilpailujen peli ja säännöt vaihtuvat joka kausi. Tämä malli kuvaa, miten joukkue etenee kauden aikana pelistä riippumatta. Vaiheet menevät osin päällekkäin, ja niihin palataan aina uudelleen.",
+      "blocks": [
+        {
+          "type": "kausi",
+          "id": "kausi",
+          "title": "Kilpailukauden eteneminen",
+          "phases": [
+            {
+              "title": "Kilpailusääntöihin tutustuminen",
+              "text": "Lukekaa kuluvan kauden pelikirja (Game Manual) ja seuratkaa sen päivityksiä. Jokainen lukee ainakin pelin kuvauksen ja robotin rakennussäännöt.",
+              "questions": [
+                "Millainen robotti saa olla ja mitä se ei saa olla?",
+                "Mistä pisteitä saa?"
+              ],
+              "output": "Lyhyt tiivistelmä tärkeimmistä säännöistä omin sanoin."
+            },
+            {
+              "title": "Kilpailuhaasteen analysointi",
+              "text": "Pilkkokaa peli osatehtäviin: mitä robotin pitää pystyä tekemään ja paljonko kustakin tehtävästä saa pisteitä.",
+              "questions": [
+                "Mitkä tehtävät tuovat eniten pisteitä vaikeuteen nähden?",
+                "Mitä robotti voi tehdä autonomisesti?"
+              ],
+              "output": "Robotin tehtävät tärkeysjärjestyksessä."
+            },
+            {
+              "title": "Strategian suunnittelu",
+              "text": "Päättäkää, mihin joukkue keskittyy. Hyvä strategia sopii joukkueen aikaan, osaamiseen ja osiin.",
+              "questions": [
+                "Mitä teemme ottelussa ensimmäiseksi?",
+                "Miten toimimme liittolaisjoukkueen kanssa?"
+              ],
+              "output": "Strategia ja sen perustelut."
+            },
+            {
+              "title": "Robotin suunnittelu ja rakentaminen",
+              "text": "Luonnostelkaa vaihtoehtoja, valitkaa yksi perustellusti ja rakentakaa se. Ensimmäinen versio saa olla yksinkertainen.",
+              "questions": [
+                "Mitkä vaihtoehdot harkitsimme?",
+                "Miksi valitsimme tämän?"
+              ],
+              "output": "Luonnokset, valinnan perustelut ja osaluettelo."
+            },
+            {
+              "title": "Ohjelmointi",
+              "text": "Ohjelmoikaa kuljettajan ohjaus ja autonomiset toiminnot. Tallentakaa jokainen toimiva versio, jotta siihen voi palata.",
+              "questions": [
+                "Mikä ohjelman osa tekee mitä?",
+                "Mikä versio toimi parhaiten ja miksi?"
+              ],
+              "output": "Ohjelman versiot ja lyhyt kuvaus niiden erosta."
+            },
+            {
+              "title": "Testaus ja harjoitusottelut",
+              "text": "Testatkaa ensin osatehtävät erikseen ja sitten koko robotti harjoitusotteluissa. Kuljettajat harjoittelevat säännöllisesti.",
+              "questions": [
+                "Mikä pettää useimmin?",
+                "Mitä korjaamme ensin?"
+              ],
+              "output": "Testitulokset ja korjauslista."
+            },
+            {
+              "title": "Kilpailuun osallistuminen",
+              "text": "Opettaja hoitaa ilmoittautumisen ja matkajärjestelyt yhdessä joukkueen kanssa. Kilpailupäivänä tarkistatte robotin ennen jokaista ottelua ja kirjaatte havainnot.",
+              "questions": [
+                "Mikä toimi ottelussa?",
+                "Mitä muut joukkueet tekivät hyvin?"
+              ],
+              "output": "Ottelumuistiinpanot."
+            },
+            {
+              "title": "Arviointi ja parantaminen kilpailun jälkeen",
+              "text": "Käykää läpi, mikä toimi ja mikä ei, ja päättäkää, mitä parannatte ensin. Kauden lopussa kirjatkaa, mitä seuraavan vuoden joukkueen kannattaa tietää.",
+              "questions": [
+                "Mitä opimme?",
+                "Mitä tekisimme toisin?"
+              ],
+              "output": "Kauden yhteenveto seuraavalle joukkueelle."
+            }
+          ],
+          "note": "Kauden aikataulu ja kilpailut sovitaan opettajan kanssa. Tällä sivulla ei ole päivämääriä, koska ne muuttuvat vuosittain."
+        },
+        {
+          "type": "paivakirja",
+          "id": "paivakirja",
+          "title": "Joukkueen kehityspäiväkirja",
+          "lead": "Kehityspäiväkirja on joukkueen muisti. Lyhyt merkintä jokaisesta kokeilusta riittää. Kun kirjaatte, mitä yritettiin ja mitä opittiin, seuraavan vuoden joukkue voi jatkaa siitä.",
+          "questions": [
+            "Mitä yritimme ratkaista?",
+            "Mitä muutimme?",
+            "Miten testasimme?",
+            "Mitä havaitsimme?",
+            "Mitä teemme seuraavaksi?"
+          ],
+          "template_name": "kilparobo-kehityspaivakirja.txt",
+          "template": [
+            "KEHITYSPÄIVÄKIRJA – merkintä",
+            "",
+            "Päivämäärä:",
+            "Tekijät (etunimet tai nimikirjaimet):",
+            "Robotin osa tai ohjelma:",
+            "",
+            "1. Mitä yritimme ratkaista?",
+            "",
+            "2. Mitä muutimme?",
+            "",
+            "3. Miten testasimme?",
+            "",
+            "4. Mitä havaitsimme? (mittaustulokset, kuva tai video)",
+            "",
+            "5. Mitä teemme seuraavaksi?",
+            ""
+          ],
+          "where": "Pohjaa voi käyttää koulun omissa ympäristöissä, esimerkiksi jaetussa tekstidokumentissa, muistiinpanosovelluksessa tai paperisessa vihossa. Tämä sivu ei tallenna mitään. Päiväkirjaan ei tarvita henkilötietoja: tekijöiksi riittävät etunimet tai nimikirjaimet.",
+          "notebook": "VEX-kilpailuissa tuomarit voivat arvioida joukkueen Engineering Notebook -päiväkirjaa. RECF:n ohjeiden mukaan päiväkirja voi olla paperinen tai digitaalinen, ja tapahtuma päättää, kumman se ottaa vastaan. Tämän pohjan viisi kysymystä sopivat suunnittelun, testauksen ja parannusten kirjaamiseen. Jos joukkue haluaa päiväkirjansa arvioitavaksi, tarkistakaa kuluvan kauden arviointikriteerit RECF:n ohjeista.",
+          "notebook_link": {
+            "title": "RECF: An Introduction to Notebooking",
+            "url": "https://kb.roboticseducation.org/hc/en-us/articles/41248469020439-Getting-Started-with-Notebooking"
+          },
+          "more": "Pidempi ohje ja arviointikriteerit:",
+          "more_link": {
+            "title": "Ahjon projektipäiväkirja",
+            "href": "ahjo-projektipaivakirja.html"
+          }
+        }
+      ]
+    },
+    {
+      "file": "kilparobo-mentorointi.html",
+      "nav": "Mentorointi",
+      "title": "Mentorointi – opiskelijat opettavat opiskelijoita",
+      "lead": "Kokeneempi opiskelija toimii uuden opiskelijan mentorina: näyttää, kysyy ja antaa palautetta. Mentorointiin ei tarvita lomakkeita. Riittää, että uusi tietää, kenen puoleen kääntyä.",
+      "blocks": [
+        {
+          "type": "periaate",
+          "text": "Hyvä mentori ei rakenna robottia toisen puolesta. Hän auttaa toista oppimaan rakentamaan sen itse."
+        },
+        {
+          "type": "rinnakkain",
+          "blocks": [
+            {
+              "type": "lista",
+              "id": "tehtavat",
+              "title": "Mentorin tehtävät",
+              "items": [
+                "Toivottaa uuden opiskelijan tervetulleeksi.",
+                "Perehdyttää turvalliseen työskentelyyn opettajan hyväksymien ohjeiden mukaan.",
+                "Näyttää laitteiden perustoiminnot.",
+                "Auttaa ensimmäisissä rakennus- ja ohjelmointitehtävissä.",
+                "Kysyy ohjaavia kysymyksiä valmiiden ratkaisujen antamisen sijaan.",
+                "Kannustaa ratkaisemaan ongelmia itse.",
+                "Auttaa dokumentoinnissa.",
+                "Antaa palautetta."
+              ]
+            },
+            {
+              "type": "lista",
+              "id": "muistilista",
+              "title": "Mentorin muistilista",
+              "items": [
+                "Esittele joukkue, työtila ja robotti.",
+                "Käy läpi turvallisuusohjeet opettajan antamien ohjeiden mukaan.",
+                "Näytä kerran ja anna sitten uuden tehdä itse.",
+                "Pidä omat kätesi irti robotista: neuvo sanoilla.",
+                "Kysy ennen kuin kerrot.",
+                "Anna virheiden tapahtua, kun ne ovat turvallisia. Niistä oppii.",
+                "Huomaa yritys ja edistyminen.",
+                "Auta kirjoittamaan merkintä kehityspäiväkirjaan.",
+                "Kerro opettajalle, jos jokin on vaarallista tai jos et osaa auttaa."
+              ],
+              "list_class": "kr-check",
+              "class": "kr-box"
+            }
+          ]
+        },
+        {
+          "type": "rinnakkain",
+          "blocks": [
+            {
+              "type": "lista",
+              "id": "kysymyksia",
+              "title": "Ohjaavia kysymyksiä",
+              "items": [
+                "Mitä luulet tapahtuvan, jos …?",
+                "Miten voisit testata sen?",
+                "Mitä robotti tekee nyt, ja mitä haluat sen tekevän?",
+                "Mikä on pienin muutos, jota voisit kokeilla?",
+                "Mistä voisit etsiä tietoa tähän?",
+                "Mitä opit tästä kokeilusta?"
+              ],
+              "list_class": "kr-q"
+            },
+            {
+              "type": "lista",
+              "id": "kaytanto",
+              "title": "Miten mentorointi järjestyy",
+              "items": [
+                "Uusi opiskelija saa mentorin ensimmäisellä kerralla. Yhdellä mentorilla voi olla useampi uusi opiskelija.",
+                "Mentoria voi vaihtaa, ja apua voi kysyä keneltä tahansa joukkueessa.",
+                "Kun olet käynyt aloittelijan polun läpi, voit itse ryhtyä mentoriksi.",
+                "Mentori ei hyväksy työkalujen käyttöä eikä tee turvallisuuspäätöksiä. Niistä päättää opettaja."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "kappale",
+          "text": "Mentorointi kehittää myös mentoria. Opit selittämään, kuuntelemaan, johtamaan ja antamaan palautetta. Kun opetat asian toiselle, ymmärrät sen itsekin paremmin.",
+          "class": "kr-growth"
+        },
+        {
+          "type": "taidot",
+          "id": "osaaminen",
+          "title": "Osaamisen tunnistaminen",
+          "lead": "Kilparobotiikassa syntyy paljon osaamista, joka ei näy kilpailutuloksessa. Tämä kevyt malli auttaa sinua huomaamaan ja näyttämään, mitä olet oppinut. Kilpailusijoitus ei ole osaamisesi mittari.",
+          "skills": [
+            {
+              "title": "Tekninen osaaminen",
+              "signs": [
+                "rakennat tai korjaat mekanismin",
+                "ohjelmoit moottorit ja anturit toimimaan yhdessä"
+              ],
+              "evidence": "kuva rakennelmasta, ohjelma tai mittaustulos"
+            },
+            {
+              "title": "Ongelmanratkaisu",
+              "signs": [
+                "etsit vian järjestelmällisesti",
+                "kokeilet yhden muutoksen kerrallaan ja testaat sen"
+              ],
+              "evidence": "päiväkirjamerkintä, jossa näkyy ongelma, kokeilut ja ratkaisu"
+            },
+            {
+              "title": "Projektityöskentely",
+              "signs": [
+                "suunnittelet tehtävän ja arvioit, paljonko aikaa se vie",
+                "viet työn loppuun tai siirrät sen hallitusti toiselle"
+              ],
+              "evidence": "tehtävälista tai suunnitelma ja sen toteutuminen"
+            },
+            {
+              "title": "Yhteistyö",
+              "signs": [
+                "sovit työnjaosta muiden kanssa",
+                "kuuntelet muiden ideoita ja perustelet omasi"
+              ],
+              "evidence": "joukkueen tai mentorin palaute"
+            },
+            {
+              "title": "Dokumentointi",
+              "signs": [
+                "kirjaat muutokset ja testit niin, että joku toinen voi jatkaa työtä"
+              ],
+              "evidence": "kehityspäiväkirjan merkinnät"
+            },
+            {
+              "title": "Mentorointi ja muiden ohjaaminen",
+              "signs": [
+                "perehdytät uuden opiskelijan",
+                "ohjaat kysymällä etkä tee toisen puolesta"
+              ],
+              "evidence": "ohjattavan kertomus tai yhdessä tehty päiväkirjamerkintä"
+            }
+          ],
+          "how": "Kerää kauden aikana muutama näyttö, esimerkiksi kuva, päiväkirjamerkintä, ohjelma tai mentorin palaute, ja käy ne läpi opettajan kanssa kauden lopussa.",
+          "note": "Opintopisteistä, hyväksiluvusta ja arvioinnista päätetään koulussa erikseen. Kysy niistä opettajalta.",
+          "after": "Kilparobotiikassa syntynyttä osaamista voi hyödyntää myös Tiede- ja teknologia -diplomin portfoliossa, jos työ vastaa diplomipolun tavoitteita. Kysy tästä opettajalta."
+        }
+      ]
+    },
+    {
+      "file": "kilparobo-turvallisuus.html",
+      "nav": "Turvallisuus",
+      "title": "Turvallisuus kilparobotiikassa",
+      "lead": "Jokainen käy turvallisuusperehdytyksen ennen kuin käyttää työkaluja tai ajaa robottia. Tämä sivu on muistilista. Sitovat ohjeet antaa opettaja.",
+      "blocks": [
+        {
+          "type": "varoitukset",
+          "draft": "Turvallisuusohjeet ovat luonnos, kunnes koulun vastuuhenkilöt ovat hyväksyneet ne.",
+          "stop": "Kuka tahansa saa sanoa SEIS. Kun joku sanoo SEIS, robotti pysäytetään heti."
+        },
+        {
+          "type": "roolit",
+          "id": "vastuut",
+          "title": "Kuka päättää mistäkin",
+          "roles": [
+            {
+              "who": "mentor",
+              "items": [
+                "näyttää ohjeiden mukaiset työtavat",
+                "muistuttaa turvallisuusohjeista",
+                "keskeyttää vaarallisen tilanteen ja kertoo siitä opettajalle"
+              ]
+            },
+            {
+              "who": "teacher",
+              "items": [
+                "hyväksyy työkalujen käytön ja antaa luvan itsenäiseen työskentelyyn",
+                "päättää harjoitus- ja testialueen säännöistä",
+                "päättää akkujen latauksesta ja säilytyksestä",
+                "päättää, miten hätätilanteessa toimitaan"
+              ]
+            }
+          ],
+          "note": "Opiskelijamentori ei voi antaa lupaa vaarallisten työkalujen itsenäiseen käyttöön."
+        },
+        {
+          "type": "turva-aiheet",
+          "topics": [
+            {
+              "id": "liikkeet",
+              "icon": "gear",
+              "title": "Robotin mekaaniset liikkeet",
+              "do": [
+                "Hammaspyörät, ketjut, varret ja tarttujat voivat puristaa sormia. Pidä kädet, hiukset, korut ja johdot erillään liikkuvista osista.",
+                "Kun robotissa on virta päällä, oleta, että se voi liikkua.",
+                "Korjaa ja säädä robottia vain virta katkaistuna."
+              ],
+              "teacher": "missä robottia saa käyttää ja kuka saa ajaa sitä"
+            },
+            {
+              "id": "akut",
+              "icon": "battery",
+              "title": "Akkujen käsittely",
+              "do": [
+                "Käytä vain V5 Robot Battery -akkua ja lataa se V5-laturilla.",
+                "Älä käytä akkua, joka on kolhiintunut, turvonnut, kuuma tai haisee. Vie se opettajalle.",
+                "Älä jätä latautuvaa akkua ilman valvontaa.",
+                "Säilytä akut opettajan osoittamassa paikassa niin, etteivät liittimet pääse koskettamaan metallia."
+              ],
+              "teacher": "latauspaikka, säilytys ja vaurioituneen akun käsittely"
+            },
+            {
+              "id": "tyokalut",
+              "icon": "tools",
+              "title": "Rakentamiseen käytettävät työkalut",
+              "do": [
+                "Käsityökaluja, kuten kuusiokoloavaimia ja kiintoavaimia, käytetään perehdytyksen jälkeen.",
+                "Metalliosien leikkaaminen ja viilaaminen jättää teräviä reunoja. Viilaa reunat tasaisiksi ja käytä suojalaseja.",
+                "Sähkötyökaluja, kuten akkuporakonetta tai monitoimityökalua, käytetään vain opettajan luvalla ja opettajan perehdytyksen jälkeen."
+              ],
+              "teacher": "jokaisen sähkötyökalun käyttö ja sen itsenäinen käyttö erikseen"
+            },
+            {
+              "id": "testaus",
+              "icon": "ruler",
+              "title": "Robotin testaaminen",
+              "do": [
+                "Testaa uusi ohjelma ensin niin, että pyörät ovat irti alustasta, tai rajatulla alueella.",
+                "Sopikaa ennen testiä, kuka pitää ohjainta ja kuka pysäyttää robotin.",
+                "Sano ääneen, kun robotti käynnistyy."
+              ],
+              "teacher": "testialue ja se, saako autonomisia ohjelmia testata ilman opettajaa"
+            },
+            {
+              "id": "alue",
+              "icon": "flag",
+              "title": "Harjoitusalueen turvallisuus",
+              "do": [
+                "Pidä kenttä ja kulkureitit vapaina laukuista, osista ja johdoista.",
+                "Katsojat pysyvät kentän reunan ulkopuolella.",
+                "Palauta osat ja työkalut paikoilleen jokaisen kerran lopuksi."
+              ],
+              "teacher": "harjoitusalueen rajat ja säännöt"
+            },
+            {
+              "id": "sammutus",
+              "icon": "power",
+              "title": "Robotin sammuttaminen ja turvallinen tila",
+              "do": [
+                "Pysäytä ohjelma ohjaimesta tai Brainin näytöltä.",
+                "Sammuta Brain sen virtapainikkeesta.",
+                "Irrota akku, kun robottia korjataan, kuljetetaan tai säilytetään.",
+                "Laske nostetut varret ja mekanismit alas tai tue ne, ettei mikään putoa."
+              ],
+              "teacher": "miten hätätilanteessa toimitaan ja kenelle ilmoitetaan"
+            }
+          ]
+        },
+        {
+          "type": "loppulinkit",
+          "text": "Jos työskentelette Ahjossa, noudattakaa myös Ahjon turvallisuusohjeita.",
+          "link": {
+            "title": "Ahjon turvallisuus",
+            "href": "ahjo-turvallisuus.html"
+          },
+          "links": [
+            {
+              "title": "Charging the V5 Battery",
+              "url": "https://kb.vex.com/hc/en-us/articles/360035590152-Charging-the-V5-Battery"
+            },
+            {
+              "title": "Understanding the V5 Robot Battery",
+              "url": "https://kb.vex.com/hc/en-us/articles/360060529912-Understanding-the-V5-Robot-Battery"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

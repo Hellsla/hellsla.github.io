@@ -28,7 +28,7 @@ stay in their lesson folders and keep their <id>-sim.js URLs.
 """
 import hashlib, json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status, published_exercises, WorkTree
-import ahjo, answers_shown, jaksot, kaavat, kilparobo, lumatutor, assigned, booklets, cardgrid, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, svgids, units, tablefit
+import ahjo, answers_shown, figsize, jaksot, kaavat, kilparobo, lumatutor, assigned, booklets, cardgrid, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, svgids, units, tablefit
 from i18n import t as T
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
@@ -474,10 +474,15 @@ def texts(html):
 HOME_COMING = tuple(curriculum.get("_front_page", {}).get("coming", []))
 
 
-def home_row(code, title, question, coming=False):
+def home_row(code, title, question, coming=False, tag=None):
     """A front page row: one link over the whole row with the module's icon, code, title and Miksi question; the arrow
-    appears on hover and focus only. The question is cut to one line in two columns, so it is whole in title too."""
+    appears on hover and focus only. The question is cut to one line in two columns, so it is whole in title too. A
+    course without a course code may give its name as the tag in the code's place, with a short title after it, like
+    Ahjo's rows (local-courses.json "front_title", teacher 2026-11-12)."""
     q = esc(question)
+    if tag: return (f'<li><a class="mod-row{" coming" if coming else ""}" href="{code}.html">{module_icons.img(code, 40)}'
+                    f'<span class="mod-text"><span class="mod-name"><span class="mod-code">{esc(tag)}</span> <span class="mod-title">{esc(title)}</span></span>'
+                    f'<span class="mod-q" title="{q}">{q}</span></span><span class="mod-go" aria-hidden="true">→</span></a></li>')
     return (f'<li><a class="mod-row{" coming" if coming else ""}" href="{code}.html">{module_icons.img(code, 40)}'
             f'<span class="mod-text"><span class="mod-name">{('<span class="mod-code">' + code + '</span> ') if local_courses.label(code) else ""}<span class="mod-title">{esc(title)}</span></span>'
             f'<span class="mod-q" title="{q}">{q}</span></span><span class="mod-go" aria-hidden="true">→</span></a></li>')
@@ -786,8 +791,9 @@ removed = []   # lessons on the live site that this build leaves out
 def rebase(html):
     """A page of another language lives in site/<lang>/ and shares the assets of site/ (style, scripts, vendor/, the
     simulations and pictures): every relative src, href and data-base that is not a page gets the prefix ../ .
-    Every page passes here, so here a figure shown twice gets its own definition ids (svgids.py, teacher 2026-10-29)."""
-    html = svgids.namespace(html)
+    Every page passes here, so here a figure shown twice gets its own definition ids (svgids.py, teacher 2026-10-29)
+    and a figure is never drawn larger than it was designed (figsize.py, teacher 2026-11-12)."""
+    html = figsize.natural(svgids.namespace(html))
     if svgids.duplicates(html): sys.exit(f"ERROR: repeated ids on a page: {', '.join(svgids.duplicates(html))} (scripts/svgids.py)")
     if not UP: return html
     keep = lambda v: re.match(r"[a-z]+:|#|/|\.\./", v) or re.match(r"[\w.-]+\.html([#?]|$)", v)
@@ -1367,7 +1373,8 @@ def build_language(lang):
         for u, ls in unit_pub.items():                   # (id, the language linked, href): this language's version, else the source's
             ul = lang if lang in ls else units.lang_of(u) if units.lang_of(u) in ls else None
             if ul and units.load(u, ul)["course"] == code: cu.append((u, ul, os.path.relpath(OUTS[ul] / f"{u}.html", out).replace(os.sep, "/")))
-        local_rows += home_row(code, c["title"], c.get("front_line") or c["subtitle"])
+        local_rows += (home_row(code, c["front_title"], c.get("front_line") or c["subtitle"], tag=c["title"]) if c.get("front_title")
+                       else home_row(code, c["title"], c.get("front_line") or c["subtitle"]))
         kr = kilparobo.load(lang) if code == kilparobo.CODE else None   # Kilparobotiikka's team pages (teacher 2026-11-09, scripts/kilparobo.py)
         lt = lumatutor.load(lang) if code == lumatutor.CODE else None   # LUMA-tutor's pages (teacher 2026-11-09, scripts/lumatutor.py)
         if lt:
@@ -1391,11 +1398,9 @@ def build_language(lang):
             ref = lambda rid: (chapters[rid][1], f"{rid}.html") if rid in chapters and rid in built_ids else None
             diary = "ahjo-projektipaivakirja.html" if ahjo_data and "ahjo-projektipaivakirja" in ahjo.ready_guides(ahjo_data) else None
             crumb = f'<a href="index.html">{T("site.name")}</a> › <a href="{code}.html">{esc(c["title"])}</a> › '
-            for name, title, sub in ((kilparobo.PATH, kr["path"]["title"], kilparobo.path_body(kr, ref)),
-                                     (kilparobo.SEASON, kr["season"]["title"], kilparobo.season_body(kr, diary)),
-                                     (kilparobo.MENTOR, kr["mentor"]["title"], kilparobo.mentor_body(kr)),
-                                     (kilparobo.SAFETY, kr["safety"]["title"], kilparobo.safety_body(kr, ahjo.SAFETY if ahjo_data else None))):
-                lead = {kilparobo.PATH: kr["path"], kilparobo.SEASON: kr["season"], kilparobo.MENTOR: kr["mentor"], kilparobo.SAFETY: kr["safety"]}[name]["lead"]
+            for name, sub in ((kilparobo.PATH, kilparobo.path_body(kr, ref)), (kilparobo.SEASON, kilparobo.season_body(kr, diary)),
+                              (kilparobo.MENTOR, kilparobo.mentor_body(kr)), (kilparobo.SAFETY, kilparobo.safety_body(kr, ahjo.SAFETY if ahjo_data else None))):
+                title, lead = kilparobo.page(kr, name)["title"], kilparobo.page(kr, name)["lead"]   # the unit's pages are jakso.json's (scripts/jaksot.py)
                 (out / name).write_text(ahjo.kiviruukki_mark(page(title, sub + '<script src="ahjo.js"></script>', crumb + esc(title), name, lead,
                                                                   main_class="reading module-page local-course kr-theme kr-team")))
                 kr_built.append(name)
@@ -1408,7 +1413,7 @@ def build_language(lang):
                                                                   main_class="reading module-page local-course kr-theme kr-team lt-course")))
                 lt_built.append(name)
     # A unit of jaksot/ written as "pages" (scripts/jaksot.py, teacher 2026-11-12): its pages from jakso.json alone, in its
-    # theme, and its row under the school's courses on the front page. No unit has them yet; Droonilab is planned.
+    # theme, and its row under the school's courses on the front page. No unit has them yet.
     jk_built = []
     for jid in jaksot.ids():
         row = jaksot.front_row(jid, lang)

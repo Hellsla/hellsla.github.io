@@ -1,7 +1,7 @@
 """Jaksopohja (scripts/jaksot.py, teacher 2026-11-12): the units outside the physics modules share one folder layout.
 
 - The real units: every folder of jaksot/ has the common header, the three page modules find their files through
-  jaksot.py, the planned unit (Droonilab) is on the front page's planned list from its folder alone, and no source of a
+  jaksot.py, a planned unit is on the front page's planned list from its folder alone (the fixture; Droonilab was one until it became Ahjo's course Dronelabra), and no source of a
   unit is left at the old places (the project's root, content/<lang>/).
 - A unit without a page module (tests/jaksot/koejakso, a fixture that is never published): its pages come from
   jakso.json alone, a card per file of kohteet/, a language falls back to the Finnish file by file, and the checks
@@ -23,7 +23,7 @@ ROOT = jaksot.ROOT
 
 # 1. the real units
 ids = jaksot.ids()
-expect("the units are folders of jaksot/: Ahjo, Kilparobotiikka, LUMA-tutor and Droonilab among them", {"ahjo", "kilparobo", "lumatutor", "droonilab"} <= set(ids), ids)
+expect("the units are folders of jaksot/: Ahjo, Kilparobotiikka and LUMA-tutor among them", {"ahjo", "kilparobo", "lumatutor"} <= set(ids), ids)
 expect("every unit and translation has the common header", jaksot.validate(module_icons.ICONS) == [], jaksot.validate(module_icons.ICONS))
 expect("the three page modules read their unit from jaksot/", [m.SOURCE for m in (ahjo, kilparobo, lumatutor)] == [jaksot.source(j) for j in ("ahjo", "kilparobo", "lumatutor")]
        and all(m.load()["jakso"]["id"] == j for m, j in ((ahjo, "ahjo"), (kilparobo, "kilparobo"), (lumatutor, "lumatutor"))))
@@ -31,13 +31,26 @@ old = [p for p in ([ROOT / f"{n}.json" for n in ("ahjo", "kilparobo", "lumatutor
 expect("no unit's source is left at the root or in content/<lang>/", not old, [str(p.relative_to(ROOT)) for p in old])
 expect("Ahjo's guides and LUMA-tutor's workshops are items of their units", ahjo.guide_file("ahjo-arduino", i18n.SOURCE) == jaksot.item_dir("ahjo") / "ahjo-arduino.md"
        and len(lumatutor.ws_files()) == len(list(jaksot.item_dir("lumatutor").glob("*.json"))) > 0)
-for lang in i18n.languages():
+for lang in i18n.languages():   # Dronelabra (teacher 2026-11-12) took Droonilab's place: a course of Ahjo, planned in the registry
     rows = local_courses.planned(lang)
-    d = [r for r in rows if r["icon"] == "DROONILAB"]
-    expect(f"{lang}: Droonilab is on the planned list from its folder, with a title and a sentence; Myytinmurtajat is not", len(d) == 1 and d[0]["title"] == "Droonilab" and d[0]["text"].endswith(".")
-           and not any("yytinmurtaj" in r["title"] or r["icon"] == "MYYTIT" for r in rows), rows)
-expect("Droonilab has no pages and no page module: a planned unit is a folder", not jaksot.generic(jaksot.load("droonilab")) and jaksot.pages("droonilab") == [] and jaksot.front_row("droonilab") is None)
-expect("Droonilab's icon is in the module icons", "DROONILAB" in module_icons.ICONS and module_icons.file("DROONILAB").is_file() and "MYYTIT" not in module_icons.ICONS)
+    d = [r for r in rows if r["icon"] == "DRONELABRA"]
+    expect(f"{lang}: Dronelabra is on the planned list once, with a title and a sentence; Droonilab and Myytinmurtajat are not", len(d) == 1 and d[0]["title"] == "Dronelabra" and d[0]["text"].endswith(".")
+           and not any("yytinmurtaj" in r["title"] or r["icon"] in ("MYYTIT", "DROONILAB") for r in rows), rows)
+expect("Dronelabra is a course of Ahjo, not a unit of its own", "droonilab" not in ids and "dronelabra" not in ids and "DRONELABRA" in [c["code"] for c in ahjo.load()["courses"]])
+expect("Dronelabra's icon is in the module icons", "DRONELABRA" in module_icons.ICONS and module_icons.file("DRONELABRA").is_file() and "MYYTIT" not in module_icons.ICONS and "DROONILAB" not in module_icons.ICONS)
+
+# 1b. Kilparobotiikka is written as pages of blocks: its five pages are drawn by jaksot.py from jakso.json alone
+kd = jaksot.load("kilparobo")
+expect("Kilparobotiikka: pages of blocks, the first the course page of the registry", jaksot.generic(kd) and kd["jakso"].get("course") == kilparobo.CODE
+       and [p["file"] for p in kd["pages"]] == [kilparobo.PAGE, *kilparobo.SUBPAGES] and jaksot.front_row("kilparobo") is None)
+expect("Kilparobotiikka: every block is of the shared library, and the module draws nothing itself", {b["type"] for _, b in jaksot.blocks_of(kd)} <= set(jaksot.BLOCKS)
+       and not re.search(r"<(?:section|div|ul|ol|p|h[1-6])\b", pathlib.Path(kilparobo.__file__).read_text()))
+body = kilparobo.path_body(kd, lambda rid: None)
+expect("Kilparobotiikka: a page's body is the unit's menu with this page marked and its blocks in order", f'<a href="{kilparobo.PATH}" aria-current="page">' in body
+       and body.count('<section class="kr-stage"') == 5 and body.index('class="kr-stage-index"') < body.index('id="ohjeet"'))
+expect("Kilparobotiikka: a sentence that leads to a page is left out where that page is not built", "ahjo-projektipaivakirja.html" not in kilparobo.season_body(kd)
+       and "ahjo-projektipaivakirja.html" in kilparobo.season_body(kd, "ahjo-projektipaivakirja.html") and kilparobo.block(kd, "paivakirja")["more"] not in kilparobo.season_body(kd))
+expect("Kilparobotiikka: the start page takes its title block from the course registry", kilparobo.hub_body(kd, '<header id="x"><p class="local-desc">kuvaus</p></header>', "", "").startswith('<header id="x"></header><nav class="ahjo-nav kr-nav"'))
 
 # 2. a unit without a page module, in a copy of the fixture
 T = pathlib.Path(tempfile.mkdtemp(prefix="fysiikkalabra-jaksot-"))
