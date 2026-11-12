@@ -141,17 +141,17 @@ def unit_power():
         f.rect(x + 26, y + 16, 20, 14, ALUMINIUM, INK, 1.75)
 
     # name, power, value label, the row of the label, its picture and the picture's width, text on the left or right
-    rows = [("Olkiluoto 3", 1.6e9, "1600\\,\\text{MW}", 52, reactor, 48, "end"),
+    rows = [("Olkiluoto 3", 1.6e9, "1600\\,\\text{MW}", 46, reactor, 48, "end"),          # rows 60 apart: a name and its value are 30 apart (a label is 29 high)
             ("omakotitalon aurinkopaneelit", 5e3, "5\\,\\text{kW}", 106, panel, 40, "start"),
-            ("suuri vesivoimalaitos", 1e8, "100\\,\\text{MW}", 160, dam, 48, "end"),
-            ("tuulivoimala", 5e6, "5\\,\\text{MW}", 214, turbine, 30, "end")]
+            ("suuri vesivoimalaitos", 1e8, "100\\,\\text{MW}", 166, dam, 48, "end"),
+            ("tuulivoimala", 5e6, "5\\,\\text{MW}", 226, turbine, 30, "end")]
     for name, p, lab, ly, icon, iw, side in rows:
         x = X(p)
         f.line(x, ya, x, ly + 16, MUTED, 1.25)
         icon(x - iw / 2, ly - 18)
         tx = x + iw / 2 + 8 if side == "start" else x - iw / 2 - 8
         f.tex(tx, ly - 11, r"\text{" + name + "}", side, size=24, w=300)
-        f.tex(tx, ly + 18, lab, side, HEAT, size=24, w=120)
+        f.tex(tx, ly + 19, lab, side, HEAT, size=24, w=120)
         f.circle(x, ya, 6.5, HEAT, WHITE, 2)
     f.arrow(x0, ya, x0 + 6 * per + 46, ya, INK, 2.5, 13)
     for k in range(0, 7):

@@ -170,7 +170,7 @@ missä $a$ on pompussa säilyvän energian osuus, ja kuvaaja $h_1$ pudotuskorkeu
   <polyline points="90,310 451,162" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
   <foreignObject x="301" y="53.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$h_1 = h_0$</div></foreignObject>
   <foreignObject x="372" y="217.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$h_1 = a h_0$</div></foreignObject>
-  <foreignObject x="113" y="42" width="83" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$a = \dfrac{h_1}{h_0} < 1$</div></foreignObject>
+  <foreignObject x="113" y="52" width="83" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$a = \dfrac{h_1}{h_0} < 1$</div></foreignObject>
 </svg>
 :::
 
