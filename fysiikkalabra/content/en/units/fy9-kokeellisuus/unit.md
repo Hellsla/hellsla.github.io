@@ -198,7 +198,7 @@ A random error shows as the spread of repeated results, and in the mean its effe
 The best estimate of repeated measurements is the mean, and in this course the estimate of the spread is half the range:
 
 ```kaavat
-mean :: \bar{x} = \frac{x_1 + x_2 + \dots + x_n}{n}
+mean :: \bar{x} = \frac{\sum_{i=1}^{n} x_i}{n}
 \Delta x = \frac{x_\text{max} - x_\text{min}}{2}
 ```
 

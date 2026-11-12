@@ -187,7 +187,7 @@ Tästä saadaan vastaus alun kysymykseen. Kaapelia pitkin siirretään mantereel
 varattuun hiukkaseen kohdistuva magneettinen voima :: F_\text{M} = QvB_\perp
 r = \frac{mv}{QB}
 suoraan johtimeen kohdistuva magneettinen voima :: F_\text{M} = I\ell B_\perp
-suoran virtajohtimen magneettivuon tiheys :: B = \frac{\mu_0 I}{2\pi r}
+suoran virtajohtimen magneettivuon tiheys :: B = \frac{\mu_0}{2\pi r}\,I
 pitkän käämin magneettivuon tiheys :: B = N\,\frac{\mu_0}{\ell}\,I
 ```
 

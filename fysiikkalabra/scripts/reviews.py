@@ -133,6 +133,7 @@ RULES = {                       # category: (science, pedagogy, visual)
     "paragraphs":     ("none",  "none", "none"),    # a task text cut into paragraphs (a blank line, "\\n\\n" in the JSON string), its words unchanged: build.exercise_text renders them, check_layout checks them (teacher 2026-11-04)
     "presentation-only": ("none", "none", "delta"),  # a simulation's code changed only in where or how it draws (an axis name, a label's place), the exact change approved in docs/presentation-only.tsv: the visual reviewer looks, test_sims.py runs
     "formula-names": ("none",  "none", "none"),    # formulas given the names of a docs/*/kaavanimet.tsv (```kaavat; FY9 units, FY1–FY8 lessons), nothing else changed (teacher 2026-11-12)
+    "mafy-symbols":   ("none",  "none", "none"),    # FY9 formulas and symbols made MAFY's by the teacher's exact replacements (docs/fy9/mafy-tunnukset.tsv; teacher 2026-11-12, "treenataan yo-kokeisiin")
     "teacher-figure": ("none",  "none", "none"),    # a figure the teacher approved as drawn (docs/teacher-figures.tsv, its exact Finnish SVG), its words in a translation, a task given it by "figure": the layout is check_layout's (teacher 2026-11-10)
     "split":          ("none",  "none", "none"),    # passed as one lesson before the split; this part's files moved, unchanged (answers.py: line for line)
     "added-exercise": ("delta", "delta", "delta"),   # whole exercises added or replaced, every other exercise of the set as it was passed (added_exercises; teacher 2026-11-12)
@@ -153,6 +154,7 @@ WHY = {"core-mark": "exercises or activities marked core or unmarked, nothing el
        "simulation": "the simulation's code changed", "figure": "a figure or picture changed",
        "illustration": "the illustrations only",
        "teacher-figure": "figures the teacher approved as drawn (docs/teacher-figures.tsv)",
+       "mafy-symbols": "formulas and symbols made MAFY's by the teacher's exact replacements (docs/fy9/mafy-tunnukset.tsv)",
        "formula-names": "formula names the teacher approved (docs/*/kaavanimet.tsv)",
        "presentation-only": "a simulation's drawing only, the change approved in docs/presentation-only.tsv",
        "split": "the exercises moved to their own folder, every file as it was passed (answers.py split line for line)",
@@ -1009,14 +1011,21 @@ def _item(kind, iid):
     raise SystemExit(f"carry-item: kind must be one of {', '.join(ITEM_KINDS)}")
 
 
-def _figure_free(folder, code_folder, texts, code_names, oid, src, names=frozenset()):
+def _figure_free(folder, code_folder, texts, code_names, oid, src, names=frozenset(), tx=None, code_tx=None, drawn=False):
     """The texts with the approved figures of owner `oid` taken out, the other code as it is, each not-approved figure as
-    drawn; a .md text as kaavat.review_view sees it, so formula names in `names` (approved by the teacher) carry too."""
+    drawn; a .md text as kaavat.review_view sees it, so formula names in `names` (approved by the teacher) carry too.
+    `tx(name, text)` / `code_tx(text)`: the teacher's exact replacements made on a passed version (MAFY's symbols,
+    docs/fy9/mafy-tunnukset.tsv). `drawn`: a label box's place and size in a text's figure are left out (they follow the
+    size of the formula in it; figures.py's drawing is judged in full, and units.py figures --check holds the text to it)."""
     rel = lambda p: p.relative_to(ROOT).as_posix()
     md = lambda n, t: kaavat.review_view(t, names) if n.endswith(".md") else t
-    out = [(n, md(n, normalized(_strip_approved_svgs(src.read(rel(folder / n)) or "", oid), n))) for n in texts]
+    read = lambda n: (tx or (lambda _, t: t))(n, src.read(rel(folder / n)) or "")
+    fit = lambda t: re.sub(r"<foreignObject\b[^>]*>", lambda m: re.sub(r'\s(?:x|y|width|height)="[\d.]+"', "", m.group(0)), t) if drawn else t   # a label box follows its formula's size
+    after = lambda n, t: tx(n, t) if tx and n.endswith(".md") else t   # a replacement also on the canonical formulas (an aligned block of the passed version)
+    out = [(n, after(n, md(n, normalized(fit(_strip_approved_svgs(read(n), oid)), n)))) for n in texts]
     for n in code_names:
         code = src.read(rel(code_folder / n))
+        if code_tx and code: code = code_tx(code)
         if n != "figures.py" or not code: out.append((n, code or "")); continue
         mod = type(sys)("figures_at_commit"); mod.__file__ = str(code_folder / n)   # a figures.py may read files beside it
         exec(compile(code, n, "exec"), mod.__dict__); figs = mod.FIGURES
@@ -1032,7 +1041,10 @@ def item_view(kind, iid, lang, src, passed=False):
     unit's own task set is reviewed with the unit: the same view of it, its figures owned by "<unit>-sovella"."""
     m, key, oid = _item(kind, iid)
     names = (kaavat.ANY if passed else frozenset(kaavat.approved(key, lang))) if kind == "unit" else frozenset()   # a passed version's names may be taken out
-    out = _figure_free(m.folder(key, lang), m.code_folder(key), m.TEXTS, getattr(m, "CODE", ("figures.py",)), oid, src, names)
+    sym = kind == "unit" and bool(kaavat.symbol_rows(key, lang))     # MAFY's symbols (docs/fy9/mafy-tunnukset.tsv)
+    tx = (lambda n, t: kaavat.apply_symbols(key, lang, n, t)) if sym and passed else None
+    code_tx = (lambda t: kaavat.apply_symbols(key, None, "figures.py", t)) if sym and passed else None
+    out = _figure_free(m.folder(key, lang), m.code_folder(key), m.TEXTS, getattr(m, "CODE", ("figures.py",)), oid, src, names, tx, code_tx, drawn=sym)
     if kind == "unit" and m.has_tasks(key, lang):
         import practice
         tk = m.task_key(key)
@@ -1079,6 +1091,8 @@ def item_category(kind, iid, lang, base):
     names_at = lambda src: [kaavat.names_of(src.read((m.folder(key, lang) / n).relative_to(ROOT).as_posix()) or "") for n in m.TEXTS if n.endswith(".md")]
     cats = []
     if names_at(Commit(base)) != names_at(WorkTree()): cats.append("formula-names")
+    old = [Commit(base).read((m.folder(key, lang) / n).relative_to(ROOT).as_posix()) or "" for n in m.TEXTS]
+    if kind == "unit" and [kaavat.apply_symbols(key, lang, n, t) for n, t in zip(m.TEXTS, old)] != old: cats.append("mafy-symbols")
     if _figures_differ(kind, iid, lang, base): cats.append("teacher-figure")
     return ",".join(cats or ["teacher-figure"])
 

@@ -198,7 +198,56 @@ def write(check=False):
     return not errs and not (check and changed)
 
 
+# ------------------------------------------------------------------ FY9: formulas and symbols as in MAFY (docs/fy9/mafy-tunnukset.tsv)
+SYMBOLS = ROOT / "docs" / "fy9" / "mafy-tunnukset.tsv"
+ALL_LANGS = set(LANGS)
+
+
+def symbol_rows(key, lang=None):
+    """[(old, new)] of the teacher's exact replacements for a unit in a language (lang None: the rows of every
+    language, which also apply to its language-neutral figures.py)."""
+    if not SYMBOLS.is_file(): return []
+    lines = [l for l in SYMBOLS.read_text(encoding="utf-8").split("\n") if l and not l.startswith("#")]
+    head = lines[0].split("\t"); out = []
+    for l in lines[1:]:
+        r = dict(zip(head, l.split("\t")))
+        langs = set(r["kielet"].split(","))
+        if r["yksikkö"] == key and (langs >= ALL_LANGS if lang is None else lang in langs): out.append((r["vanha"], r["uusi"]))
+    return out
+
+
+def apply_symbols(key, lang, name, text):
+    """`text` (a unit's file `name`; figures.py when lang is None) with the replacements made, in the table's order;
+    in a .json file each string is replaced as JSON writes it."""
+    import json
+    if not text: return text
+    for old, new in symbol_rows(key, lang):
+        if name.endswith(".json"): old, new = json.dumps(old, ensure_ascii=False)[1:-1], json.dumps(new, ensure_ascii=False)[1:-1]
+        text = text.replace(old, new)
+    return text
+
+
+def write_symbols(check=False):
+    """Make the replacements of docs/fy9/mafy-tunnukset.tsv in the units' texts and figures.py."""
+    import units
+    keys = sorted({k for k in {l.split("\t")[0] for l in SYMBOLS.read_text(encoding="utf-8").split("\n")[1:] if l and not l.startswith(("#", "yksikkö"))}})
+    changed = []
+    for key in keys:
+        files = [(units.folder(key, lang) / n, lang, n) for lang in LANGS for n in units.TEXTS] + [(units.code_folder(key) / "figures.py", None, "figures.py")]
+        for f, lang, n in files:
+            if not f.is_file(): continue
+            t = f.read_text(encoding="utf-8"); new = apply_symbols(key, lang, n, t)
+            if new != t:
+                changed.append(f.relative_to(ROOT).as_posix())
+                if not check: f.write_text(new, encoding="utf-8")
+    print(f"{len(changed)} file(s) {'would change' if check else 'written'}" + (": " + ", ".join(changed) if changed and check else ""))
+    return not (check and changed)
+
+
 if __name__ == "__main__":
+    if sys.argv[1:2] == ["symbols"]:
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        sys.exit(0 if write_symbols("--check" in sys.argv) else 1)
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     if sys.argv[1:2] == ["write"]:
         sys.exit(0 if write("--check" in sys.argv) else 1)

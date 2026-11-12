@@ -99,7 +99,7 @@ def kartta():
     groups = [
         ("teho", [(r"P = \Delta E/\Delta t", "määritelmä"), (r"E = P\,t", "energia tehosta"),
                   (r"1\,\text{kWh} = 3{,}6\,\text{MJ}", "kilowattitunti")]),
-        ("hyötysuhde", [(r"\eta = E_\text{a}/E_\text{o}", "määritelmä"), (r"E_\text{o} = E_\text{a} + E_\text{h}", "häviöt"),
+        ("hyötysuhde", [(r"\eta = W_\text{a}/W_\text{o}", "määritelmä"), (r"W_\text{o} = W_\text{a} + W_\text{h}", "häviöt"),
                         (r"\eta = \eta_1\,\eta_2\,\eta_3", "energiaketju")]),
         ("energian lähde", [(r"Q = Hm", "polttoaine"), (r"W = Fs", "työ"), (r"W = mgh", "nostotyö")]),
     ]

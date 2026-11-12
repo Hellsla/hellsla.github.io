@@ -194,7 +194,7 @@ All the phenomena of the module start from **oscillation**: a body moves back an
   <foreignObject x="310" y="566" width="52" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{beats}$</div></foreignObject>
   <foreignObject x="58" y="617" width="130" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$f = f_0\,v/(v - v_\text{L})$</div></foreignObject>
   <foreignObject x="292" y="618" width="70" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{Doppler}$</div></foreignObject>
-  <foreignObject x="58" y="669" width="148" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$L = 10\,\text{dB} \cdot \lg(I/I_0)$</div></foreignObject>
+  <foreignObject x="58" y="669" width="139" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$L = 10\lg(I/I_0)\,\text{dB}$</div></foreignObject>
   <foreignObject x="310" y="670" width="52" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{level}$</div></foreignObject>
 </svg>
 
@@ -295,7 +295,7 @@ Doppler effect, source moving away from the observer :: f = f_0\,\frac{v}{v + v_
 Doppler effect, observer moving towards the source :: f = f_0\,\frac{v + v_\text{H}}{v}
 Doppler effect, observer moving away from the source :: f = f_0\,\frac{v - v_\text{H}}{v}
 intensity :: I = \frac{P}{A}
-sound intensity level :: L = 10\,\text{dB} \cdot \lg \frac{I}{I_0}
+sound intensity level :: L = 10\lg\left(\frac{I}{I_0}\right)\,\text{dB}
 ```
 
 where $f_\text{H}$ is the beat frequency ($\text{Hz}$), $f_0$ the frequency of the source and $f$ the heard frequency ($\text{Hz}$), $v$ the speed of sound, $v_\text{L}$ the speed of the source and $v_\text{H}$ the speed of the observer relative to the air ($\text{m/s}$). The Doppler formulas hold when only one of them moves and the speed is smaller than the speed of sound. The intensity is the power $P$ per unit area $A$. The sound of a point source spreads at the distance $r$ over a sphere of area $A = 4\pi r^2$, when there are no reflections. $L$ is the intensity level and $I_0 = 1.0 \cdot 10^{-12}\,\text{W/m}^2$. The distance from an echo is $d = \tfrac{vt}{2}$, because the pulse travels the distance twice.

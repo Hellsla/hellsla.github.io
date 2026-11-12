@@ -276,7 +276,7 @@
 <p>Satunnaisvirhe näkyy hajontana: toistettujen mittausten tulokset vaihtelevat. Keskiarvossa satunnaisvirheen vaikutus vaimenee eli heikkenee. <strong>Systemaattinen virhe</strong> siirtää kaikkia tuloksia samaan suuntaan. Toistaminen ei poista sitä. Systemaattisen virheen huomaa, kun tulosta verrataan tunnettuun arvoon. Sen voi huomata myös kuvaajasta: suora ei kulje origon kautta, vaikka mallin mukaan sen pitäisi.</p>
 <h3 class="theory-h">Mittaustuloksen käsittely</h3>
 <p>Kun mittaus toistetaan, paras arvio on keskiarvo. Tällä kurssilla hajonnan arvio on vaihteluvälin puolikas:</p>
-<dl class="kaavat"><div class="kaava-rivi"><dt>keskiarvo</dt><dd>$$\bar{x} = \frac{x_1 + x_2 + \dots + x_n}{n}$$</dd></div><div class="kaava-rivi nimeton"><dd>$$\Delta x = \frac{x_\text{max} - x_\text{min}}{2}$$</dd></div></dl>
+<dl class="kaavat"><div class="kaava-rivi"><dt>keskiarvo</dt><dd>$$\bar{x} = \frac{\sum_{i=1}^{n} x_i}{n}$$</dd></div><div class="kaava-rivi nimeton"><dd>$$\Delta x = \frac{x_\text{max} - x_\text{min}}{2}$$</dd></div></dl>
 
 <p>Tässä $n$ on mittausten lukumäärä, $x_\text{max}$ on suurin tulos ja $x_\text{min}$ pienin tulos. Tulos ilmoitetaan muodossa $\bar{x} \pm \Delta x$. Virhearvio pyöristetään yhteen merkitsevään numeroon. Jos virhearvion ensimmäinen numero on 1, käytetään kahta numeroa. Suhteellinen epävarmuus on</p>
 <p>$$\varepsilon = \frac{\Delta x}{\bar{x}}$$</p>

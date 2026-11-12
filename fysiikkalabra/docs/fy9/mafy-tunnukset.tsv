@@ -1,0 +1,24 @@
+# FY9:n kaavat ja tunnukset samoin kuin MAFY-taulukoissa (opettaja 2026-11-12: "FY9 olisi kyl oleellista että kaavat on samoin kuin MAFY koska siellä treenataan yo-kokeisiin").
+# Jokainen rivi on tarkka korvaus yksikön teksteissä (unit.md, unit.json, inquiry.json, teacher.md; JSONissa sama merkkijono JSON-muodossa) ja, kun kielet on fi,fi-easy,en, myös sen figures.py:ssä.
+# python scripts/kaavat.py symbols kirjoittaa korvaukset; reviews.py antaa katselmointien siirtyä, kun ainoa muutos on nämä korvaukset (kategoria mafy-symbols). Korvaukset tehdään rivien järjestyksessä.
+yksikkö	kielet	vanha	uusi	huomio
+fy9-energia	fi,fi-easy,en	E_\text{a}	W_\text{a}	MAFY: hyötysuhde η = W_a/W_o = P_a/P_o
+fy9-energia	fi,fi-easy,en	E_\text{o}	W_\text{o}
+fy9-energia	fi,fi-easy,en	E_\text{h}	W_\text{h}	häviöt samalla tunnuksella kuin anto- ja ottotyö
+fy9-tasavirta	fi,fi-easy,en	R = \rho\,\frac{l}{A}	R = \rho\,\frac{\ell}{A}	MAFY: johtimen resistanssi R = ρℓ/A
+fy9-tasavirta	fi,fi-easy	$l$ johtimen pituus	$\ell$ johtimen pituus
+fy9-tasavirta	en	$l$ the length of the wire	$\ell$ the length of the wire
+fy9-tasavirta	fi,fi-easy	R = R_1 + R_2 + \dots	R_\text{kok} = \Sigma R	MAFY: sarjaan kytkettyjen vastusten kokonaisresistanssi
+fy9-tasavirta	fi,fi-easy	\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \dots	\frac{1}{R_\text{kok}} = \Sigma\frac{1}{R}	MAFY: rinnan kytkettyjen vastusten kokonaisresistanssi
+fy9-tasavirta	fi,fi-easy	\sum I_\text{tulevat} = \sum I_\text{lähtevät}	\Sigma I_\text{t} = \Sigma I_\text{l}	MAFY: Kirchhoffin 1. laki
+fy9-tasavirta	en	R = R_1 + R_2 + \dots	R_\text{tot} = \Sigma R
+fy9-tasavirta	en	\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \dots	\frac{1}{R_\text{tot}} = \Sigma\frac{1}{R}
+fy9-tasavirta	en	\sum I_\text{in} = \sum I_\text{out}	\Sigma I_\text{in} = \Sigma I_\text{out}
+fy9-tasavirta	fi,fi-easy,en	\sum \Delta V = 0	\Sigma \Delta V = 0	MAFY: Kirchhoffin 2. laki
+fy9-tasavirta	fi	kytkettyjen vastusten kokonaisresistanssi $R$. Virtalaki pätee	kytkettyjen vastusten kokonaisresistanssi $R_\text{kok}$, ja $\Sigma$ tarkoittaa summaa. Virtalaissa $I_\text{t}$ ovat haarautumispisteeseen tulevat ja $I_\text{l}$ siitä lähtevät virrat. Virtalaki pätee	uudet tunnukset määritelty
+fy9-tasavirta	fi-easy	kokonaisresistanssin $R$. Toinen kaava antaa rinnan kytkettyjen vastusten kokonaisresistanssin.	kokonaisresistanssin $R_\text{kok}$. Toinen kaava antaa rinnan kytkettyjen vastusten kokonaisresistanssin. Merkki $\Sigma$ tarkoittaa summaa. Virtalaissa $I_\text{t}$ ovat haarautumispisteeseen tulevat virrat ja $I_\text{l}$ siitä lähtevät virrat.
+fy9-tasavirta	en	The first is the total resistance $R$ of resistors connected in series and the second of resistors connected in parallel.	The first is the total resistance $R_\text{tot}$ of resistors connected in series and the second of resistors connected in parallel; $\Sigma$ means a sum, and in the current law $I_\text{in}$ are the currents into a junction and $I_\text{out}$ those out of it.
+fy9-aallot	fi,fi-easy,en	L = 10\,\text{dB} \cdot \lg \frac{I}{I_0}	L = 10\lg\left(\frac{I}{I_0}\right)\,\text{dB}	MAFY: äänen intensiteettitaso
+fy9-aallot	fi,fi-easy,en	L = 10\,\text{dB} \cdot \lg(I/I_0)	L = 10\lg(I/I_0)\,\text{dB}	kaavakartta
+fy9-magnetismi-valo	fi,fi-easy,en	B = \frac{\mu_0 I}{2\pi r}	B = \frac{\mu_0}{2\pi r}\,I	MAFY: suoran virtajohtimen magneettivuon tiheys
+fy9-kokeellisuus	fi,fi-easy,en	\bar{x} = \frac{x_1 + x_2 + \dots + x_n}{n}	\bar{x} = \frac{\sum_{i=1}^{n} x_i}{n}	MAFY: keskiarvo

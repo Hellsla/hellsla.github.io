@@ -191,7 +191,7 @@ Tasavirtapiirissä lähde pitää yllä **jännitettä**, ja jännite ajaa piiri
   <foreignObject x="310" y="362" width="52" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{sarja}$</div></foreignObject>
   <foreignObject x="58" y="411" width="130" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$1/R = 1/R_1 + 1/R_2$</div></foreignObject>
   <foreignObject x="301" y="412" width="61" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{rinnan}$</div></foreignObject>
-  <foreignObject x="58" y="450.5" width="55" height="43" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$\sum \Delta V = 0$</div></foreignObject>
+  <foreignObject x="58" y="461" width="55" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$\Sigma \Delta V = 0$</div></foreignObject>
   <foreignObject x="283" y="462" width="79" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{silmukka}$</div></foreignObject>
   <line x1="24" y1="530" x2="44" y2="530" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="44" y="508" width="328" height="188" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
@@ -257,21 +257,21 @@ Tästä saadaan vastaus alun kysymykseen. Mökin laitteet on kytketty akkuun rin
 ```kaavat
 sähkövirta :: I = \frac{\Delta Q}{\Delta t}
 jännitehäviö johtimessa :: U = RI
-R = \rho\,\frac{l}{A}
+johtimen resistanssi :: R = \rho\,\frac{\ell}{A}
 ```
 
-missä $I$ on virta ($\text{A}$), $\Delta Q$ poikkileikkauksen läpi kulkenut varaus ($\text{C}$), $\Delta t$ aika ($\text{s}$), $U$ komponentin jännite ($\text{V}$), $R$ resistanssi ($\Omega$), $\rho$ resistiivisyys ($\Omega\cdot\text{m}$), $l$ johtimen pituus ($\text{m}$) ja $A$ poikkipinta-ala ($\text{m}^2$). Ohmin lain mukaan metallijohtimen resistanssi on vakio, kun lämpötila pysyy samana. Hehkulampun resistanssi kasvaa langan kuumetessa. Virtamittari kytketään sarjaan ja jännitemittari rinnan.
+missä $I$ on virta ($\text{A}$), $\Delta Q$ poikkileikkauksen läpi kulkenut varaus ($\text{C}$), $\Delta t$ aika ($\text{s}$), $U$ komponentin jännite ($\text{V}$), $R$ resistanssi ($\Omega$), $\rho$ resistiivisyys ($\Omega\cdot\text{m}$), $\ell$ johtimen pituus ($\text{m}$) ja $A$ poikkipinta-ala ($\text{m}^2$). Ohmin lain mukaan metallijohtimen resistanssi on vakio, kun lämpötila pysyy samana. Hehkulampun resistanssi kasvaa langan kuumetessa. Virtamittari kytketään sarjaan ja jännitemittari rinnan.
 
 ### Kytkennät ja Kirchhoffin lait
 
 ```kaavat
-R = R_1 + R_2 + \dots
-\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \dots
-\sum I_\text{tulevat} = \sum I_\text{lähtevät}
-Kirchhoffin 2. laki :: \sum \Delta V = 0
+sarjaan kytkettyjen vastusten kokonaisresistanssi :: R_\text{kok} = \Sigma R
+rinnan kytkettyjen vastusten kokonaisresistanssi :: \frac{1}{R_\text{kok}} = \Sigma\frac{1}{R}
+Kirchhoffin 1. laki :: \Sigma I_\text{t} = \Sigma I_\text{l}
+Kirchhoffin 2. laki :: \Sigma \Delta V = 0
 ```
 
-Ensimmäinen on sarjaan ja toinen rinnan kytkettyjen vastusten kokonaisresistanssi $R$. Virtalaki pätee haarautumispisteelle, koska varaus säilyy. Jännitelaki pätee, kun silmukka kierretään kerran: potentiaali $V$ nousee lähteessä miinusnavalta plusnavalle ja laskee vastuksessa virran suuntaan $RI$:n verran. Siksi rinnakkaisten haarojen yli on sama jännite.
+Ensimmäinen on sarjaan ja toinen rinnan kytkettyjen vastusten kokonaisresistanssi $R_\text{kok}$, ja $\Sigma$ tarkoittaa summaa. Virtalaissa $I_\text{t}$ ovat haarautumispisteeseen tulevat ja $I_\text{l}$ siitä lähtevät virrat. Virtalaki pätee haarautumispisteelle, koska varaus säilyy. Jännitelaki pätee, kun silmukka kierretään kerran: potentiaali $V$ nousee lähteessä miinusnavalta plusnavalle ja laskee vastuksessa virran suuntaan $RI$:n verran. Siksi rinnakkaisten haarojen yli on sama jännite.
 
 ### Teho ja energia
 

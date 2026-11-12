@@ -26,7 +26,7 @@
     },
     {
       "term": "hyötysuhde",
-      "explain": "Kertoo, kuinka suuri osa otetusta energiasta tulee hyödyksi: $\\eta = \\frac{E_\\text{a}}{E_\\text{o}}$. Peräkkäisten vaiheiden hyötysuhteet kerrotaan."
+      "explain": "Kertoo, kuinka suuri osa otetusta energiasta tulee hyödyksi: $\\eta = \\frac{W_\\text{a}}{W_\\text{o}}$. Peräkkäisten vaiheiden hyötysuhteet kerrotaan."
     },
     {
       "term": "lämpöarvo",

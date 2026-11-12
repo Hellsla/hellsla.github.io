@@ -207,7 +207,7 @@ Satunnaisvirhe näkyy hajontana: toistettujen mittausten tulokset vaihtelevat. K
 Kun mittaus toistetaan, paras arvio on keskiarvo. Tällä kurssilla hajonnan arvio on vaihteluvälin puolikas:
 
 ```kaavat
-keskiarvo :: \bar{x} = \frac{x_1 + x_2 + \dots + x_n}{n}
+keskiarvo :: \bar{x} = \frac{\sum_{i=1}^{n} x_i}{n}
 \Delta x = \frac{x_\text{max} - x_\text{min}}{2}
 ```
 

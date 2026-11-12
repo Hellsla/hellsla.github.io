@@ -145,7 +145,7 @@ def kartta():
             "miinus R s I, virta I = E per R plus R s ja akun kapasiteetti Q = I t.", width=380, size=20)
     groups = [
         ("virta ja resistanssi", "suureet", [(r"I = \Delta Q/\Delta t", "virta"), (r"U = RI", "Ohm"), (r"R = \rho l/A", "johdin")]),
-        ("kytkennät", "Kirchhoff", [(r"R = R_1 + R_2", "sarja"), (r"1/R = 1/R_1 + 1/R_2", "rinnan"), (r"\sum \Delta V = 0", "silmukka")]),
+        ("kytkennät", "Kirchhoff", [(r"R = R_1 + R_2", "sarja"), (r"1/R = 1/R_1 + 1/R_2", "rinnan"), (r"\Sigma \Delta V = 0", "silmukka")]),
         ("teho ja energia", "Joule", [(r"P = UI", "teho"), (r"P = RI^2 = U^2/R", "vastus"), (r"E = Pt", "energia")]),
         ("lähde", "paristo, akku", [(r"U = E - R_\text{s} I", "napajännite"), (r"I = E/(R + R_\text{s})", "virta"), (r"Q = It", "kapasiteetti")]),
     ]

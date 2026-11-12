@@ -367,8 +367,8 @@
    "tolerance": 0.03,
    "hints": [
     "Kattilan on saatava pelleteistä enemmän energiaa kuin taloon tulee lämpöä. Kuinka paljon?",
-    "Polttoaineen energia on $E_\\text{o} = E_\\text{a} : \\eta$, ja pelletin massa saadaan lämpöarvon avulla: $E_\\text{o} = Hm$.",
-    "Muunna $E_\\text{o}$ megajouleiksi sijoittamalla $1\\,\\text{kWh} = 3{,}6\\,\\text{MJ}$, ja jaa lämpöarvolla."
+    "Polttoaineen energia on $W_\\text{o} = W_\\text{a} : \\eta$, ja pelletin massa saadaan lämpöarvon avulla: $W_\\text{o} = Hm$.",
+    "Muunna $W_\\text{o}$ megajouleiksi sijoittamalla $1\\,\\text{kWh} = 3{,}6\\,\\text{MJ}$, ja jaa lämpöarvolla."
    ],
    "mistakes": [
     {
@@ -384,7 +384,7 @@
      "feedback": "Jaoit kilowattitunnit suoraan lämpöarvolla, jonka yksikkö on $\\text{MJ/kg}$. Muunna ensin: $1\\,\\text{kWh} = 3{,}6\\,\\text{MJ}$."
     }
    ],
-   "solution": "**Annettu:** lämmöntarve eli kattilan antama energia $E_\\text{a} = 15\\,000\\,\\text{kWh}$, hyötysuhde $\\eta = 85\\,\\%$, lämpöarvo $H = 17\\,\\text{MJ/kg}$\n\n**Kysytty:** poltetun pelletin massa $m$ tonneina\n\n**Periaate:** Kattilan hyötysuhde on taloon annetun lämmön osuus pelletistä vapautuneesta energiasta. Vapautunut energia on lämpöarvo kertaa massa, koska lämpöarvo on energia kilogrammaa kohti (luvut *Hyötysuhde* ja *Polttoaineet ja lämpöarvo*).\n\n**Kaava:** $\\eta = \\dfrac{E_\\text{a}}{E_\\text{o}}$ ja $E_\\text{o} = Hm$, joten $m = \\dfrac{E_\\text{a}}{\\eta H}$\n\n**Muunnokset:** $15\\,000\\,\\text{kWh} = 15\\,000 \\cdot 3{,}6\\,\\text{MJ} = 54\\,000\\,\\text{MJ}$, $85\\,\\% = 0{,}85$ ja lopuksi $1\\,\\text{kg} = 0{,}001\\,\\text{t}$.\n\n**Sijoitus:** $m = \\dfrac{54\\,000\\,\\text{MJ}}{0{,}85 \\cdot 17\\,\\tfrac{\\text{MJ}}{\\text{kg}}} = 3737\\,\\text{kg} = 3{,}737\\,\\text{t}$\n\n**Vastaus:** $3{,}7\\,\\text{t}$, kaksi merkitsevää numeroa kuten hyötysuhde $85\\,\\%$ ja lämpöarvo $17\\,\\text{MJ/kg}$.\n\n**Järkevyys:** Ilman häviöitä pellettiä tarvittaisiin $54\\,000\\,\\text{MJ} : 17\\,\\tfrac{\\text{MJ}}{\\text{kg}} \\approx 3200\\,\\text{kg}$; häviöiden takia tarvitaan vähän enemmän, kuten pitää. Muutama tonni pellettiä vuodessa on omakotitalolle tavallinen määrä."
+   "solution": "**Annettu:** lämmöntarve eli kattilan antama energia $W_\\text{a} = 15\\,000\\,\\text{kWh}$, hyötysuhde $\\eta = 85\\,\\%$, lämpöarvo $H = 17\\,\\text{MJ/kg}$\n\n**Kysytty:** poltetun pelletin massa $m$ tonneina\n\n**Periaate:** Kattilan hyötysuhde on taloon annetun lämmön osuus pelletistä vapautuneesta energiasta. Vapautunut energia on lämpöarvo kertaa massa, koska lämpöarvo on energia kilogrammaa kohti (luvut *Hyötysuhde* ja *Polttoaineet ja lämpöarvo*).\n\n**Kaava:** $\\eta = \\dfrac{W_\\text{a}}{W_\\text{o}}$ ja $W_\\text{o} = Hm$, joten $m = \\dfrac{W_\\text{a}}{\\eta H}$\n\n**Muunnokset:** $15\\,000\\,\\text{kWh} = 15\\,000 \\cdot 3{,}6\\,\\text{MJ} = 54\\,000\\,\\text{MJ}$, $85\\,\\% = 0{,}85$ ja lopuksi $1\\,\\text{kg} = 0{,}001\\,\\text{t}$.\n\n**Sijoitus:** $m = \\dfrac{54\\,000\\,\\text{MJ}}{0{,}85 \\cdot 17\\,\\tfrac{\\text{MJ}}{\\text{kg}}} = 3737\\,\\text{kg} = 3{,}737\\,\\text{t}$\n\n**Vastaus:** $3{,}7\\,\\text{t}$, kaksi merkitsevää numeroa kuten hyötysuhde $85\\,\\%$ ja lämpöarvo $17\\,\\text{MJ/kg}$.\n\n**Järkevyys:** Ilman häviöitä pellettiä tarvittaisiin $54\\,000\\,\\text{MJ} : 17\\,\\tfrac{\\text{MJ}}{\\text{kg}} \\approx 3200\\,\\text{kg}$; häviöiden takia tarvitaan vähän enemmän, kuten pitää. Muutama tonni pellettiä vuodessa on omakotitalolle tavallinen määrä."
   },
   {
    "id": "hissi",
@@ -456,8 +456,8 @@
    "tolerance": 0.02,
    "hints": [
     "Akkuun tuleva energia on hyötyenergia. Kumpi on suurempi: verkosta otettu vai akkuun tuleva?",
-    "$E_\\text{o} = E_\\text{a} : \\eta$, ja wattitunti muunnetaan sijoittamalla $1\\,\\text{Wh} = 1\\,\\text{W} \\cdot 3600\\,\\text{s}$.",
-    "$E_\\text{o} = 15\\,\\text{Wh} : 0{,}80 = 18{,}75\\,\\text{Wh}$."
+    "$W_\\text{o} = W_\\text{a} : \\eta$, ja wattitunti muunnetaan sijoittamalla $1\\,\\text{Wh} = 1\\,\\text{W} \\cdot 3600\\,\\text{s}$.",
+    "$W_\\text{o} = 15\\,\\text{Wh} : 0{,}80 = 18{,}75\\,\\text{Wh}$."
    ],
    "mistakes": [
     {
@@ -466,7 +466,7 @@
     },
     {
      "value": 43.2,
-     "feedback": "Kerroit hyötysuhteella. Otettu energia on hyötyenergiaa suurempi: $E_\\text{o} = E_\\text{a} : \\eta$."
+     "feedback": "Kerroit hyötysuhteella. Otettu energia on hyötyenergiaa suurempi: $W_\\text{o} = W_\\text{a} : \\eta$."
     },
     {
      "value": 18.75,
@@ -474,7 +474,7 @@
     }
    ],
    "practice": "Kertaa wattitunnin muunnos luvussa [*Teho*](fy2-3.html) ja otettu energia luvussa [*Hyötysuhde*](fy2-4.html).",
-   "solution": "**Annettu:** akkuun tuleva energia $E_\\text{a} = 15\\,\\text{Wh}$, hyötysuhde $\\eta = 80\\,\\%$\n\n**Kysytty:** verkosta otettu energia $E_\\text{o}$ kilojouleina\n\n**Periaate:** Hyötysuhde on akkuun varastoituvan energian osuus verkosta otetusta energiasta. Energia säilyy, ja loput muuttuu laturissa ja akussa lämmöksi, joten verkosta otetaan enemmän kuin akkuun mahtuu.\n\n**Kaava:** $\\eta = \\dfrac{E_\\text{a}}{E_\\text{o}}$, joten $E_\\text{o} = \\dfrac{E_\\text{a}}{\\eta}$\n\n**Muunnokset:** $15\\,\\text{Wh} = 15 \\cdot 1\\,\\text{W} \\cdot 3600\\,\\text{s} = 54\\,000\\,\\text{J}$ ja $80\\,\\% = 0{,}80$; lopuksi $1\\,\\text{J} = 0{,}001\\,\\text{kJ}$.\n\n**Sijoitus:** $E_\\text{o} = \\dfrac{54\\,000\\,\\text{J}}{0{,}80} = 67\\,500\\,\\text{J} = 67{,}5\\,\\text{kJ}$\n\n**Vastaus:** $68\\,\\text{kJ}$, kaksi merkitsevää numeroa kuten energia $15\\,\\text{Wh}$ ja hyötysuhde $80\\,\\%$.\n\n**Järkevyys:** Otettu energia on neljäsosan suurempi kuin akkuun tuleva, $1 : 0{,}80 = 1{,}25$. Lämmöksi muuttuu $67{,}5\\,\\text{kJ} - 54\\,\\text{kJ} = 13{,}5\\,\\text{kJ}$, mikä tuntuu laturin lämpenemisenä. Määrä on pieni: alle $0{,}02\\,\\text{kWh}$."
+   "solution": "**Annettu:** akkuun tuleva energia $W_\\text{a} = 15\\,\\text{Wh}$, hyötysuhde $\\eta = 80\\,\\%$\n\n**Kysytty:** verkosta otettu energia $W_\\text{o}$ kilojouleina\n\n**Periaate:** Hyötysuhde on akkuun varastoituvan energian osuus verkosta otetusta energiasta. Energia säilyy, ja loput muuttuu laturissa ja akussa lämmöksi, joten verkosta otetaan enemmän kuin akkuun mahtuu.\n\n**Kaava:** $\\eta = \\dfrac{W_\\text{a}}{W_\\text{o}}$, joten $W_\\text{o} = \\dfrac{W_\\text{a}}{\\eta}$\n\n**Muunnokset:** $15\\,\\text{Wh} = 15 \\cdot 1\\,\\text{W} \\cdot 3600\\,\\text{s} = 54\\,000\\,\\text{J}$ ja $80\\,\\% = 0{,}80$; lopuksi $1\\,\\text{J} = 0{,}001\\,\\text{kJ}$.\n\n**Sijoitus:** $W_\\text{o} = \\dfrac{54\\,000\\,\\text{J}}{0{,}80} = 67\\,500\\,\\text{J} = 67{,}5\\,\\text{kJ}$\n\n**Vastaus:** $68\\,\\text{kJ}$, kaksi merkitsevää numeroa kuten energia $15\\,\\text{Wh}$ ja hyötysuhde $80\\,\\%$.\n\n**Järkevyys:** Otettu energia on neljäsosan suurempi kuin akkuun tuleva, $1 : 0{,}80 = 1{,}25$. Lämmöksi muuttuu $67{,}5\\,\\text{kJ} - 54\\,\\text{kJ} = 13{,}5\\,\\text{kJ}$, mikä tuntuu laturin lämpenemisenä. Määrä on pieni: alle $0{,}02\\,\\text{kWh}$."
   },
   {
    "id": "tarkistus-3",

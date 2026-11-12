@@ -230,9 +230,9 @@ Three questions branch off from the conservation law, and the energy problems of
   <rect x="44" y="266" width="328" height="150" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
   <foreignObject x="58" y="275.5" width="128" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\textbf{efficiency}$</div></foreignObject>
   <line x1="54" y1="308" x2="362" y2="308" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="319.5" width="84" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\eta = E_\text{a}/E_\text{o}$</div></foreignObject>
+  <foreignObject x="58" y="319.5" width="84" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\eta = W_\text{a}/W_\text{o}$</div></foreignObject>
   <foreignObject x="260" y="321" width="102" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{definition}$</div></foreignObject>
-  <foreignObject x="58" y="353.5" width="95" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$E_\text{o} = E_\text{a} + E_\text{h}$</div></foreignObject>
+  <foreignObject x="58" y="353.5" width="95" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$W_\text{o} = W_\text{a} + W_\text{h}$</div></foreignObject>
   <foreignObject x="298" y="355" width="64" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{losses}$</div></foreignObject>
   <foreignObject x="58" y="387.5" width="117" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\eta = \eta_1\,\eta_2\,\eta_3$</div></foreignObject>
   <foreignObject x="251" y="389" width="111" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{energy chain}$</div></foreignObject>
@@ -276,11 +276,11 @@ where $P$ is the power (W), $\Delta E$ the energy (J) and $\Delta t$ the time (s
 
 ### Efficiency and the energy chain
 
-```latex
-\eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}
+```kaavat
+efficiency :: \eta = \frac{W_\text{a}}{W_\text{o}} = \frac{P_\text{a}}{P_\text{o}}
 ```
 
-where $\eta$ is the efficiency, $E_\text{a}$ and $P_\text{a}$ the useful energy and power given, and $E_\text{o}$ and $P_\text{o}$ the energy and power taken in. The ratio of the powers can be used when the device runs steadily. Energy is conserved, so $E_\text{o} = E_\text{a} + E_\text{h}$, where $E_\text{h}$ is the losses. The efficiency is at most $100\,\%$; it depends on what is defined as useful.
+where $\eta$ is the efficiency, $W_\text{a}$ and $P_\text{a}$ the useful energy and power given, and $W_\text{o}$ and $P_\text{o}$ the energy and power taken in. The ratio of the powers can be used when the device runs steadily. Energy is conserved, so $W_\text{o} = W_\text{a} + W_\text{h}$, where $W_\text{h}$ is the losses. The efficiency is at most $100\,\%$; it depends on what is defined as useful.
 
 In successive stages the useful power of each stage is the power taken in by the next, so the efficiencies are multiplied:
 

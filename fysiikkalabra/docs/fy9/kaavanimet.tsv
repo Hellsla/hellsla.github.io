@@ -15,11 +15,11 @@ fy9-aallot	291	f = f_0\,\frac{v}{v + v_\text{L}}	f = f_0\,\frac{v}{v + v_\text{L
 fy9-aallot	291	f = f_0\,\frac{v + v_\text{H}}{v}	f = f_0\,\frac{v + v_\text{H}}{v}	Dopplerin ilmiö, havaitsija liikkuu kohti äänilähdettä	Doppler effect, observer moving towards the source	MAFY	Aaltoliikkeen kaavoja	
 fy9-aallot	291	f = f_0\,\frac{v - v_\text{H}}{v}	f = f_0\,\frac{v - v_\text{H}}{v}	Dopplerin ilmiö, havaitsija liikkuu pois päin äänilähteestä	Doppler effect, observer moving away from the source	MAFY	Aaltoliikkeen kaavoja	
 fy9-aallot	291	I = \frac{P}{A}	I = \frac{P}{A}	intensiteetti	intensity	MAFY	Aaltoliikkeen kaavoja	
-fy9-aallot	291	L = 10\,\text{dB} \cdot \lg \frac{I}{I_0}	L = 10\,\text{dB} \cdot \lg \frac{I}{I_0}	äänen intensiteettitaso	sound intensity level	MAFY	Aaltoliikkeen kaavoja	
+fy9-aallot	291	L = 10\lg\left(\frac{I}{I_0}\right)\,\text{dB}	L = 10\lg\left(\frac{I}{I_0}\right)\,\text{dB}	äänen intensiteettitaso	sound intensity level	MAFY	Aaltoliikkeen kaavoja	
 fy9-energia	261	E_\text{alussa} = E_\text{lopussa}	E_\text{initial} = E_\text{final}			ei MAFY:ssa		MAFY:ssa vain mekaanisen energian säilymislaki
 fy9-energia	267	P = \frac{\Delta E}{\Delta t}	P = \frac{\Delta E}{\Delta t}	teho	power	MAFY	Mekaniikan kaavoja	MAFY: $P = \frac{W}{\Delta t} = \frac{\Delta E}{\Delta t}$
 fy9-energia	273	1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}	1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3.6\,\text{MJ}			ei MAFY:ssa	Yksikkömuunnoksia	yksikkömuunnos (MAFY: energia/työ, kilowattitunti); voi jättää nimettä
-fy9-energia	279	\eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}	\eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}			ei MAFY:n muodossa	Mekaniikan kaavoja	MAFY: $\eta = \frac{W_a}{W_o} = \frac{P_a}{P_o}$; nimi poistettu 2026-11-12: tunnukset eroavat MAFY:n kaavasta
+fy9-energia	279	\eta = \frac{W_\text{a}}{W_\text{o}} = \frac{P_\text{a}}{P_\text{o}}	\eta = \frac{W_\text{a}}{W_\text{o}} = \frac{P_\text{a}}{P_\text{o}}	hyötysuhde	efficiency	MAFY	Mekaniikan kaavoja	tunnukset vaihdettu MAFY:n mukaisiksi 2026-11-12 (docs/fy9/mafy-tunnukset.tsv)
 fy9-energia	287	\eta = \eta_1\,\eta_2\,\eta_3	\eta = \eta_1\,\eta_2\,\eta_3			ei MAFY:ssa		ei MAFY:ssa
 fy9-energia	328	Q = Hm	Q = Hm	palamisessa vapautuva lämpö	heat released in combustion	MAFY	Termodynamiikan kaavoja	
 fy9-energia	328	W = Fs	W = Fs	voiman tekemä työ	work done by a force	MAFY	Mekaniikan kaavoja	
@@ -37,7 +37,7 @@ fy9-koe	306	Q = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 145\,\text{
 fy9-koe	306	= 17\,011\,400\,\text{J}	= 17\,011\,400\,\text{J}			ei nimetä		esimerkin sijoitus ja lasku, ei kaava
 fy9-koe	306	= \frac{17\,011\,400\,\text{J}}{3{,}6 \cdot 10^{6}\,\text{J/kWh}}	= \frac{17\,011\,400\,\text{J}}{3.6 \cdot 10^{6}\,\text{J/kWh}}			ei nimetä		esimerkin sijoitus ja lasku, ei kaava
 fy9-koe	306	= 4{,}7254\,\text{kWh}	= 4.7254\,\text{kWh}			ei nimetä		esimerkin sijoitus ja lasku, ei kaava
-fy9-kokeellisuus	200	\bar{x} = \frac{x_1 + x_2 + \dots + x_n}{n}	\bar{x} = \frac{x_1 + x_2 + \dots + x_n}{n}	keskiarvo	mean	MAFY	Tilastollisia tunnuslukuja	
+fy9-kokeellisuus	200	\bar{x} = \frac{\sum_{i=1}^{n} x_i}{n}	\bar{x} = \frac{\sum_{i=1}^{n} x_i}{n}	keskiarvo	mean	MAFY	Tilastollisia tunnuslukuja	
 fy9-kokeellisuus	200	\Delta x = \frac{x_\text{max} - x_\text{min}}{2}	\Delta x = \frac{x_\text{max} - x_\text{min}}{2}			ei MAFY:ssa		ei MAFY:ssa
 fy9-kokeellisuus	207	\varepsilon = \frac{\Delta x}{\bar{x}}	\varepsilon = \frac{\Delta x}{\bar{x}}			ei MAFY:ssa		ei MAFY:ssa
 fy9-kokeellisuus	216	y = kx + b	y = kx + b			ei MAFY:ssa	Suora	MAFY:n Suora-sivulla ei ratkaistua muotoa $y = kx + b$
@@ -60,7 +60,7 @@ fy9-liike	387	x_\text{A}(t) = x_\text{B}(t)	x_\text{A}(t) = x_\text{B}(t)			ei M
 fy9-magnetismi-valo	186	F_\text{M} = QvB_\perp	F_\text{M} = QvB_\perp	varattuun hiukkaseen kohdistuva magneettinen voima	magnetic force on a charged particle	MAFY	Sähkömagnetismin kaavoja	
 fy9-magnetismi-valo	186	r = \frac{mv}{QB}	r = \frac{mv}{QB}			ei MAFY:ssa		ei MAFY:ssa
 fy9-magnetismi-valo	186	F_\text{M} = I\ell B_\perp	F_\text{M} = I\ell B_\perp	suoraan johtimeen kohdistuva magneettinen voima	magnetic force on a straight conductor	MAFY	Sähkömagnetismin kaavoja	
-fy9-magnetismi-valo	186	B = \frac{\mu_0 I}{2\pi r}	B = \frac{\mu_0 I}{2\pi r}	suoran virtajohtimen magneettivuon tiheys	magnetic flux density of a straight current-carrying wire	MAFY	Sähkömagnetismin kaavoja	
+fy9-magnetismi-valo	186	B = \frac{\mu_0}{2\pi r}\,I	B = \frac{\mu_0}{2\pi r}\,I	suoran virtajohtimen magneettivuon tiheys	magnetic flux density of a straight current-carrying wire	MAFY	Sähkömagnetismin kaavoja	
 fy9-magnetismi-valo	186	B = N\,\frac{\mu_0}{\ell}\,I	B = N\,\frac{\mu_0}{\ell}\,I	pitkän käämin magneettivuon tiheys	magnetic flux density of a long solenoid	MAFY	Sähkömagnetismin kaavoja	
 fy9-magnetismi-valo	290	e = -N\frac{\Delta\Phi}{\Delta t}	e = -N\frac{\Delta\Phi}{\Delta t}	käämiin indusoituva jännite	voltage induced in a coil	MAFY	Sähkömagnetismin kaavoja	MAFY:ssa myös induktiolaki ilman $N$:ää
 fy9-magnetismi-valo	290	u_0 = NAB\cdot 2\pi f	u_0 = NAB\cdot 2\pi f	generaattorissa käämiin indusoituvan sinimuotoisen vaihtojännitteen huippuarvo	peak value of the sinusoidal voltage induced in a generator coil	MAFY	Sähkömagnetismin kaavoja	
@@ -121,11 +121,11 @@ fy9-sailymislait	339	P_\text{vesi} = \eta\rho Qgh	P_\text{hydro} = \eta\rho Qgh	
 fy9-sailymislait	339	P_\text{tuuli} = \tfrac12\eta\rho Av^3	P_\text{wind} = \tfrac12\eta\rho Av^3			ei MAFY:ssa		ei MAFY:ssa
 fy9-tasavirta	257	I = \frac{\Delta Q}{\Delta t}	I = \frac{\Delta Q}{\Delta t}	sähkövirta	electric current	MAFY	Sähkömagnetismin kaavoja	
 fy9-tasavirta	257	U = RI	U = RI	jännitehäviö johtimessa	voltage drop across a conductor	MAFY	Virtapiirien kaavoja	
-fy9-tasavirta	257	R = \rho\,\frac{l}{A}	R = \rho\,\frac{l}{A}			ei MAFY:n muodossa	Virtapiirien kaavoja	nimi poistettu 2026-11-12: tunnukset eroavat MAFY:n kaavasta
-fy9-tasavirta	267	R = R_1 + R_2 + \dots	R = R_1 + R_2 + \dots			ei MAFY:n muodossa	Virtapiirien kaavoja	nimi poistettu 2026-11-12: tunnukset eroavat MAFY:n kaavasta
-fy9-tasavirta	267	\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \dots	\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \dots			ei MAFY:n muodossa	Virtapiirien kaavoja	nimi poistettu 2026-11-12: tunnukset eroavat MAFY:n kaavasta
-fy9-tasavirta	267	\sum I_\text{tulevat} = \sum I_\text{lähtevät}	\sum I_\text{in} = \sum I_\text{out}			ei MAFY:n muodossa	Virtapiirien kaavoja	nimi poistettu 2026-11-12: tunnukset eroavat MAFY:n kaavasta
-fy9-tasavirta	267	\sum \Delta V = 0	\sum \Delta V = 0	Kirchhoffin 2. laki	Kirchhoff's second law	MAFY	Virtapiirien kaavoja	
+fy9-tasavirta	257	R = \rho\,\frac{\ell}{A}	R = \rho\,\frac{\ell}{A}	johtimen resistanssi	resistance of a conductor	MAFY	Virtapiirien kaavoja	tunnukset vaihdettu MAFY:n mukaisiksi 2026-11-12 (docs/fy9/mafy-tunnukset.tsv)
+fy9-tasavirta	267	R_\text{kok} = \Sigma R	R_\text{tot} = \Sigma R	sarjaan kytkettyjen vastusten kokonaisresistanssi	total resistance of resistors in series	MAFY	Virtapiirien kaavoja	tunnukset vaihdettu MAFY:n mukaisiksi 2026-11-12 (docs/fy9/mafy-tunnukset.tsv)
+fy9-tasavirta	267	\frac{1}{R_\text{kok}} = \Sigma\frac{1}{R}	\frac{1}{R_\text{tot}} = \Sigma\frac{1}{R}	rinnan kytkettyjen vastusten kokonaisresistanssi	total resistance of resistors in parallel	MAFY	Virtapiirien kaavoja	tunnukset vaihdettu MAFY:n mukaisiksi 2026-11-12 (docs/fy9/mafy-tunnukset.tsv)
+fy9-tasavirta	267	\Sigma I_\text{t} = \Sigma I_\text{l}	\Sigma I_\text{in} = \Sigma I_\text{out}	Kirchhoffin 1. laki	Kirchhoff's first law	MAFY	Virtapiirien kaavoja	tunnukset vaihdettu MAFY:n mukaisiksi 2026-11-12 (docs/fy9/mafy-tunnukset.tsv)
+fy9-tasavirta	267	\Sigma \Delta V = 0	\Sigma \Delta V = 0	Kirchhoffin 2. laki	Kirchhoff's second law	MAFY	Virtapiirien kaavoja	
 fy9-tasavirta	278	P = UI	P = UI	tehonkulutus johtimessa	power consumed in a conductor	MAFY	Virtapiirien kaavoja	
 fy9-tasavirta	278	P = RI^2 = \frac{U^2}{R}	P = RI^2 = \frac{U^2}{R}			ei MAFY:ssa	Virtapiirien kaavoja	MAFY:ssa vain $P = UI$
 fy9-tasavirta	278	E = Pt	E = Pt			ei MAFY:ssa	Mekaniikan kaavoja	MAFY:ssa teho $P = \frac{\Delta E}{\Delta t}$

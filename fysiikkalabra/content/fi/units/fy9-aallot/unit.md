@@ -194,7 +194,7 @@ Moduulin kaikki ilmiöt alkavat **värähtelystä**: kappale liikkuu edestakaisi
   <foreignObject x="283" y="566" width="79" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{huojunta}$</div></foreignObject>
   <foreignObject x="58" y="617" width="130" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$f = f_0\,v/(v - v_\text{L})$</div></foreignObject>
   <foreignObject x="292" y="618" width="70" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{Doppler}$</div></foreignObject>
-  <foreignObject x="58" y="669" width="148" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$L = 10\,\text{dB} \cdot \lg(I/I_0)$</div></foreignObject>
+  <foreignObject x="58" y="669" width="139" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$L = 10\lg(I/I_0)\,\text{dB}$</div></foreignObject>
   <foreignObject x="319" y="670" width="43" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{taso}$</div></foreignObject>
 </svg>
 
@@ -295,7 +295,7 @@ Dopplerin ilmiö, äänilähde liikkuu pois päin havaitsijasta :: f = f_0\,\fra
 Dopplerin ilmiö, havaitsija liikkuu kohti äänilähdettä :: f = f_0\,\frac{v + v_\text{H}}{v}
 Dopplerin ilmiö, havaitsija liikkuu pois päin äänilähteestä :: f = f_0\,\frac{v - v_\text{H}}{v}
 intensiteetti :: I = \frac{P}{A}
-äänen intensiteettitaso :: L = 10\,\text{dB} \cdot \lg \frac{I}{I_0}
+äänen intensiteettitaso :: L = 10\lg\left(\frac{I}{I_0}\right)\,\text{dB}
 ```
 
 missä $f_\text{H}$ on huojuntataajuus ($\text{Hz}$), $f_0$ lähteen ja $f$ kuultu taajuus ($\text{Hz}$), $v$ äänen nopeus, $v_\text{L}$ lähteen ja $v_\text{H}$ havaitsijan nopeus ilman suhteen ($\text{m/s}$). Dopplerin kaavat pätevät, kun vain toinen liikkuu ja nopeus on äänen nopeutta pienempi. Intensiteetti on teho $P$ pinta-alaa $A$ kohti. Pistemäisen lähteen ääni jakautuu etäisyydellä $r$ pallon pinnalle, jonka ala on $A = 4\pi r^2$, kun heijastuksia ei ole. $L$ on intensiteettitaso ja $I_0 = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2$. Kaiusta etäisyys on $d = \tfrac{vt}{2}$, koska pulssi kulkee matkan kahdesti.

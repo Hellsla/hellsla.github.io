@@ -230,9 +230,9 @@ Säilymislaista haarautuu kolme kysymystä, joihin kokeen energiatehtävät pala
   <rect x="44" y="266" width="328" height="150" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
   <foreignObject x="58" y="275.5" width="128" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\textbf{hyötysuhde}$</div></foreignObject>
   <line x1="54" y1="308" x2="362" y2="308" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="319.5" width="84" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\eta = E_\text{a}/E_\text{o}$</div></foreignObject>
+  <foreignObject x="58" y="319.5" width="84" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\eta = W_\text{a}/W_\text{o}$</div></foreignObject>
   <foreignObject x="260" y="321" width="102" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{määritelmä}$</div></foreignObject>
-  <foreignObject x="58" y="353.5" width="95" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$E_\text{o} = E_\text{a} + E_\text{h}$</div></foreignObject>
+  <foreignObject x="58" y="353.5" width="95" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$W_\text{o} = W_\text{a} + W_\text{h}$</div></foreignObject>
   <foreignObject x="298" y="355" width="64" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{häviöt}$</div></foreignObject>
   <foreignObject x="58" y="387.5" width="117" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\eta = \eta_1\,\eta_2\,\eta_3$</div></foreignObject>
   <foreignObject x="242" y="389" width="120" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{energiaketju}$</div></foreignObject>
@@ -276,11 +276,11 @@ missä $P$ on teho (W), $\Delta E$ energia (J) ja $\Delta t$ aika (s). Epätasai
 
 ### Hyötysuhde ja energiaketju
 
-```latex
-\eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}
+```kaavat
+hyötysuhde :: \eta = \frac{W_\text{a}}{W_\text{o}} = \frac{P_\text{a}}{P_\text{o}}
 ```
 
-missä $\eta$ on hyötysuhde, $E_\text{a}$ ja $P_\text{a}$ annettu hyötyenergia ja -teho ja $E_\text{o}$ ja $P_\text{o}$ otettu energia ja teho. Tehojen suhde käy, kun laite käy tasaisesti. Energia säilyy, joten $E_\text{o} = E_\text{a} + E_\text{h}$, missä $E_\text{h}$ on häviöt. Hyötysuhde on enintään $100\,\%$; se riippuu siitä, mikä määritellään hyödyksi.
+missä $\eta$ on hyötysuhde, $W_\text{a}$ ja $P_\text{a}$ annettu hyötyenergia ja -teho ja $W_\text{o}$ ja $P_\text{o}$ otettu energia ja teho. Tehojen suhde käy, kun laite käy tasaisesti. Energia säilyy, joten $W_\text{o} = W_\text{a} + W_\text{h}$, missä $W_\text{h}$ on häviöt. Hyötysuhde on enintään $100\,\%$; se riippuu siitä, mikä määritellään hyödyksi.
 
 Peräkkäisissä vaiheissa kunkin vaiheen hyötyteho on seuraavan otettu teho, joten hyötysuhteet kerrotaan:
 

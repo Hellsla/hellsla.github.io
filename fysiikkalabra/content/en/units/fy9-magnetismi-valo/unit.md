@@ -187,7 +187,7 @@ This gives the answer to the opening question. A power of $40\,\text{kW}$ is tra
 magnetic force on a charged particle :: F_\text{M} = QvB_\perp
 r = \frac{mv}{QB}
 magnetic force on a straight conductor :: F_\text{M} = I\ell B_\perp
-magnetic flux density of a straight current-carrying wire :: B = \frac{\mu_0 I}{2\pi r}
+magnetic flux density of a straight current-carrying wire :: B = \frac{\mu_0}{2\pi r}\,I
 magnetic flux density of a long solenoid :: B = N\,\frac{\mu_0}{\ell}\,I
 ```
 

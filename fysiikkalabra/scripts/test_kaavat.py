@@ -70,6 +70,10 @@ ok(("tiheys", "\\rho = \\frac{m}{V}") in kaavat.approved("fy1-7", "fi") and ("de
 stray = [(f.relative_to(kaavat.ROOT).as_posix(), n) for l in kaavat.LANGS for f in sorted((kaavat.ROOT / "content" / l).glob("FY*/*/lesson.md"))
          for n, t in kaavat.names_of(f.read_text(encoding="utf-8")) if (n, " ".join(t.split())) not in kaavat.approved(f.parent.name, l)]
 ok(not stray, "every formula name in a lesson is in its module's approved list" + (f": {stray[:3]}" if stray else ""))
+ok(kaavat.write_symbols(check=True), "the FY9 texts and figures have MAFY's symbols of docs/fy9/mafy-tunnukset.tsv (kaavat.py symbols --check)")
+ok(kaavat.apply_symbols("fy9-energia", "fi", "inquiry.json", '"$\\\\eta = E_\\\\text{a}$"') == '"$\\\\eta = W_\\\\text{a}$"' and kaavat.apply_symbols("fy9-energia", "fi", "unit.md", "$E_\\text{a}$") == "$W_\\text{a}$",
+   "a replacement is made as written in a text and as JSON writes it in a .json file")
+ok(kaavat.apply_symbols("fy9-tasavirta", None, "figures.py", "$l$ johtimen pituus") == "$l$ johtimen pituus", "figures.py takes only the replacements of every language")
 bare = [(f.relative_to(kaavat.ROOT).as_posix(), kaavat.rows(m.group(1))[0][1])
         for l in kaavat.LANGS for f in sorted((kaavat.ROOT / "content" / l).glob("**/*.md"))
         for m in kaavat.FENCE.finditer(f.read_text(encoding="utf-8")) if not any(n for n, _ in kaavat.rows(m.group(1)))]
