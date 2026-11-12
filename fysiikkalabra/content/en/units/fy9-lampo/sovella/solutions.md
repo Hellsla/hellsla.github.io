@@ -58,10 +58,10 @@
 **Reasonableness:** The power equals one or two electric radiators, which is a usual average power for a fireplace. The power is not constant: right after the firing the stone is at its hottest and gives out more.
 
 ### c)
-**Given:** heat loss $150\,\text{W}$ per kelvin, $21\,{}^\circ\text{C}$ indoors, $-10\,{}^\circ\text{C}$ outdoors; $P = 1667\,\text{W}$ from part b
+**Given:** heat loss $k_\text{h} = 150\,\text{W/K}$, that is $150\,\text{W}$ per kelvin, $21\,{}^\circ\text{C}$ indoors, $-10\,{}^\circ\text{C}$ outdoors; $P = 1667\,\text{W}$ from part b
 **Find:** the share of the heat demand covered by the fireplace, as a percentage
 **Principle:** The indoor temperature stays constant when the heating gives as much power as leaves the house. The power leaving is proportional to the difference between the indoor and outdoor temperatures, like $P = UA\Delta T$ (chapter *Heat transfer, energy balance and climate change*).
-**Formula:** $P_\text{loss} = 150\,\tfrac{\text{W}}{\text{K}} \cdot (T_\text{in} - T_\text{out})$ and share $= \dfrac{P}{P_\text{loss}}$
+**Formula:** $P_\text{loss} = k_\text{h}\,(T_\text{in} - T_\text{out})$ and share $= \dfrac{P}{P_\text{loss}} = \dfrac{P}{k_\text{h}\,(T_\text{in} - T_\text{out})}$
 **Conversions:** The temperature difference is the same in kelvins: $21\,{}^\circ\text{C} - (-10\,{}^\circ\text{C}) = 31\,\text{K}$. The ratio is turned into a percentage by multiplying by $100\,\%$.
 **Substitution:** $P_\text{loss} = 150\,\tfrac{\text{W}}{\text{K}} \cdot 31\,\text{K} = 4650\,\text{W}$ and share $= \dfrac{1667\,\text{W}}{4650\,\text{W}} = 0.358 = 35.8\,\%$
 **Answer:** about $36\,\%$, two significant figures like the power of the fireplace.
@@ -185,7 +185,7 @@ The circled points in the graph are the two points of the line from which the sl
 **Reasonableness:** The table value is $2.26\,\text{MJ/kg}$, and the least-squares line also gives $2.26\,\text{MJ/kg}$. Check with one point: at $600\,\text{W}$ about $530\,\text{W}$ is left for vaporisation, and $530\,\text{W} \cdot 300\,\text{s} : 2.26\,\tfrac{\text{MJ}}{\text{kg}} \approx 70\,\text{g}$, as in the table.
 
 ### c)
-**Given:** the line of part a, which crosses the horizontal axis; the slope $k = 0.133\,\text{g/W}$ of part b and the point of the line $(100\,\text{W};\ 4.0\,\text{g})$
+**Given:** the line of part a, which crosses the horizontal axis; the slope $k = 0.133\,\text{g/W}$ of part b and the point of the line $(P_1;\ \Delta m_1) = (100\,\text{W};\ 4.0\,\text{g})$
 **Find:** the power $P_\text{loss}$ at which, according to the line, the water would not vaporise, and its interpretation
 **Principle:** Where the line crosses the horizontal axis, $\Delta m = 0$. According to the energy balance $(P - P_\text{loss})\,t = r\,\Delta m$ this happens when $P = P_\text{loss}$: the whole power of the heater is then conducted through the walls of the container and the water surface to the room. Boiling water is always at $100\,{}^\circ\text{C}$, so the temperature difference to the room, and therefore the loss power, stay the same at all powers (chapter *Heat transfer, energy balance and climate change*).
 **Reading the graph:** The line extended as a dashed line crosses the horizontal axis at about $70\,\text{W}$.
@@ -198,7 +198,7 @@ The circled points in the graph are the two points of the line from which the sl
 ### d)
 **Find:** why the result $2.54\,\text{MJ/kg}$ from one measurement is too large and which result is more reliable
 **Principle:** Energy is conserved: the energy $P\,t$ of the heater is divided between vaporisation and heat conducted to the room, $P\,t = r\,\Delta m + P_\text{loss}\,t$ (chapter *Changes of state*).
-**Model answer:** In the calculation $r = \dfrac{P\,t}{\Delta m}$ from one measurement, all the energy of the heater is assumed to have gone into vaporisation. In reality about $70\,\text{W}$ is conducted to the room, so at the power $600\,\text{W}$ only about $530\,\text{W}$ is left for vaporisation. The calculation therefore has too much energy per unit of mass, and the result is about $600 : 530 \approx 1.13$ times, that is about $13\,\%$, too large. The result from the graph is more reliable. A constant loss power shifts the line sideways but does not change its slope, so the $r$ calculated from the slope does not include the loss. In addition, five measurements and a line fitted between them reduce the effect of the random error of a single reading. The method assumes that the loss power is the same at all powers. This is justified, because boiling water is always at $100\,{}^\circ\text{C}$, and the points lying on a straight line support the assumption.
+**Model answer:** In the calculation $r = \dfrac{P\,t}{\Delta m}$ from one measurement, all the energy of the heater is assumed to have gone into vaporisation. In reality about $70\,\text{W}$ is conducted to the room, so at the power $600\,\text{W}$ only about $530\,\text{W}$ is left for vaporisation. The calculation therefore has too much energy per unit of mass, and the result is about $\dfrac{P}{P - P_\text{h}} = 600 : 530 \approx 1.13$ times, that is about $13\,\%$, too large. The result from the graph is more reliable. A constant loss power shifts the line sideways but does not change its slope, so the $r$ calculated from the slope does not include the loss. In addition, five measurements and a line fitted between them reduce the effect of the random error of a single reading. The method assumes that the loss power is the same at all powers. This is justified, because boiling water is always at $100\,{}^\circ\text{C}$, and the points lying on a straight line support the assumption.
 
 ### Yleisiä virheitä
 - The line is forced through the origin, so the slope and $r$ are distorted and the loss power is not seen.
@@ -273,10 +273,10 @@ The circled points in the graph are the two points of the line from which the sl
 ## fy9-lampo-s6
 
 ### a)
-**Given:** mass of the car $m = 1600\,\text{kg}$, speed $v = 90\,\text{km/h}$; mass of the discs $m_\text{discs} = 30\,\text{kg}$, $c = 450\,\text{J/(kg}\cdot\text{K)}$; share transferred to the discs $85\,\%$
+**Given:** mass of the car $m = 1600\,\text{kg}$, speed $v = 90\,\text{km/h}$; mass of the discs $m_\text{discs} = 30\,\text{kg}$, $c = 450\,\text{J/(kg}\cdot\text{K)}$; share transferred to the discs $k = 85\,\%$
 **Find:** the rise in temperature $\Delta T$ of the discs
 **Principle:** On a level road braking turns the kinetic energy of the car, through friction, into internal energy of the brakes; energy is conserved (chapter *Conservation of mechanical energy and the work–energy principle*). The share of air resistance in a short braking is small, so it is ignored. The discs stay solid, so the heat they receive raises their temperature according to $Q = cm\Delta T$.
-**Formula:** $E_\text{k} = \tfrac{1}{2} m v^2$ and $0.85\,E_\text{k} = c\,m_\text{discs}\,\Delta T$, so $\Delta T = \dfrac{0.85 \cdot \tfrac{1}{2} m v^2}{c\,m_\text{discs}}$
+**Formula:** $E_\text{k} = \tfrac{1}{2} m v^2$ and $k\,E_\text{k} = c\,m_\text{discs}\,\Delta T$, so $\Delta T = \dfrac{k \cdot \tfrac{1}{2} m v^2}{c\,m_\text{discs}}$
 **Conversions:** $90\,\text{km/h} = 90 \cdot \dfrac{1000\,\text{m}}{3600\,\text{s}} = 25\,\text{m/s}$ and $85\,\% = 0.85$.
 **Substitution:** $E_\text{k} = \tfrac{1}{2} \cdot 1600\,\text{kg} \cdot (25\,\tfrac{\text{m}}{\text{s}})^2 = 500\,000\,\text{J}$ and $\Delta T = \dfrac{0.85 \cdot 500\,000\,\text{J}}{450\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 30\,\text{kg}} = \dfrac{425\,000\,\text{J}}{13\,500\,\tfrac{\text{J}}{\text{K}}} = 31.5\,\text{K}$
 **Answer:** about $31\,\text{K}$, two significant figures like the mass of the discs $30\,\text{kg}$ and the speed $90\,\text{km/h}$.
@@ -286,7 +286,7 @@ The circled points in the graph are the two points of the line from which the sl
 **Given:** drop $h = 250\,\text{m}$, distance $s = 4.0\,\text{km}$, driving resistance $F = 450\,\text{N}$, constant speed; $g = 9.81\,\text{m/s}^2$; the data of part a
 **Find:** the rise in temperature $\Delta T$ of the discs without cooling
 **Principle:** The speed is constant, so the kinetic energy does not change. By the work–energy principle the decrease in potential energy $mgh$ goes into the work $Fs$ of the driving resistances and into the brakes (chapters *Kinetic energy, potential energy and mechanical energy* and *Conservation of mechanical energy and the work–energy principle*). Of the energy reaching the brakes, $85\,\%$ heats the discs.
-**Formula:** $Q_\text{brakes} = mgh - Fs$ and $0.85\,Q_\text{brakes} = c\,m_\text{discs}\,\Delta T$, so $\Delta T = \dfrac{0.85\,(mgh - Fs)}{c\,m_\text{discs}}$
+**Formula:** $Q_\text{brakes} = mgh - Fs$ and $k\,Q_\text{brakes} = c\,m_\text{discs}\,\Delta T$, so $\Delta T = \dfrac{k\,(mgh - Fs)}{c\,m_\text{discs}}$
 **Conversions:** $4.0\,\text{km} = 4.0 \cdot 1000\,\text{m} = 4000\,\text{m}$.
 **Substitution:** $mgh = 1600\,\text{kg} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 250\,\text{m} = 3\,924\,000\,\text{J}$, $Fs = 450\,\text{N} \cdot 4000\,\text{m} = 1\,800\,000\,\text{J}$ and $\Delta T = \dfrac{0.85 \cdot 2\,124\,000\,\text{J}}{13\,500\,\tfrac{\text{J}}{\text{K}}} = \dfrac{1\,805\,400\,\text{J}}{13\,500\,\tfrac{\text{J}}{\text{K}}} = 133.7\,\text{K}$
 **Answer:** about $1.3 \cdot 10^{2}\,\text{K}$, that is $130\,\text{K}$, two significant figures like the distance $4.0\,\text{km}$.
