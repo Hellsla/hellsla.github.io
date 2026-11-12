@@ -96,7 +96,7 @@ position) and every other non-text value (a numeric answer, a data table's numbe
 option, a hint, a caption, every solutions.md section and its preamble, the same section ids in the same order) the same
 formulas in the same order (check_i18n.formula_spans; whitespace dropped, `{,}` read as `.`, \text{} words kept except a
 sub- or superscript label such as E_\text{sähkö} → E_\text{elec}, which must be translated one to one across the set),
-the same figures and force-diagram specs, the same numbers outside the formulas, and in an option the same capital-letter
+the same figures and force-diagram specs, the same numbers outside the formulas, and in an option's text the same capital-letter
 labels in order; the same pictures; and every entry of the translation's figures.json keeping its Finnish numbers and
 formulas. answers.py and the figures' code are shared. Anything else means the usual scope. `carry` then writes the
 row (reviewer science, from the Finnish hash, to the translation's hash, base `-`), `status` counts it while both
@@ -873,7 +873,7 @@ def added_exercises(folder, old, new):
 # ------------------------------------------------------------------ a translated exercise set (teacher 2026-11-12)
 TRANSLATED = "translation-of-passed"
 EXACT_KEYS = ("id", "level", "kind", "core", "unit", "tolerance", "figure", "correct", "true", "lookup")   # identical in every language
-OPTION_LISTS = ("choices", "statements", "order", "reasons")    # options compared by position, their labels (A, B, …) too
+OPTION_LISTS = ("choices", "statements", "order", "reasons")    # options compared by position, an option's text by its labels (A, B, …) too
 SCRIPT_WORD = re.compile(r"([_^])(\{?)\\(text|mathrm)\{([^{}]*)\}")   # E_\text{sähkö}, x_{\text{max}}: a translated label
 PROSE_NUMBER = re.compile(r"(?<!\w)\d+(?:[.,]\d+)*")
 LABEL = re.compile(r"(?<![\w\\{])[A-Z](?!\w)")
@@ -917,7 +917,7 @@ def _tr_data(a, b, pairs, key=None, parent=None, labels=False):
     if isinstance(a, list):
         return isinstance(b, list) and len(a) == len(b) and all(_tr_data(x, y, pairs, key, parent, labels) for x, y in zip(a, b))
     if key in EXACT_KEYS or not check_i18n.is_text(key, a, parent): return type(a) == type(b) and a == b
-    return _tr_text(a, b, pairs, labels)
+    return _tr_text(a, b, pairs, labels and key == "text")   # an option's own words carry its label; its feedback may name others
 
 
 def translation_differs(folder, fi=None, tr=None):

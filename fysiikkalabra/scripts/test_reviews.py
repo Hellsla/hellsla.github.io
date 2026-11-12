@@ -579,6 +579,57 @@ put()
 for n in ("science", "pedagogy", "visual"): scoped(n, frm="0" * 16)
 code, out = run(t, "reviews.py", "verify")
 expect("verify rejects a scope line whose base does not hold the hash it names", code == 1 and "does not hold hash" in out, out[-600:])
+# 9. a translated exercise set (teacher 2026-11-12): numerically equivalent to the Finnish set, whose science PASS is
+# current → the science review carries over; pedagogy and visual review the language; anything numeric differs → as before
+_p = []
+expect("translation compare: {,} and . and whitespace are the same formula", rv._tr_text("Massa on $m = 4{,}2\\,\\text{kg}$.", "The mass is $m=4.2\\,\\text{kg}$.", _p))
+expect("... a sub- or superscript label may be translated, and is recorded for the one-to-one check",
+       rv._tr_text("$E_\\text{sähkö} = 216\\,\\text{kJ}$", "$E_\\text{elec} = 216\\,\\text{kJ}$", _p) and ("sähkö", "elec") in _p)
+expect("... a unit inside \\text{} may not change", not rv._tr_text("$t = 230\\,\\text{vrk}$", "$t = 230\\,\\text{s}$", []))
+expect("... formulas in another order are not equivalent", not rv._tr_text("$4{,}0\\,\\text{s}$ ja $18\\,\\text{m}$", "$18\\,\\text{m}$ in $4.0\\,\\text{s}$", []))
+expect("... nor another number outside a formula", not rv._tr_text("Haaran 3 virta", "The current of branch 2", []))
+expect("... an option's text keeps its labels in order", not rv._tr_text("Kappale B", "Body D", [], labels=True) and rv._tr_text("Kappale B", "A body B", [], labels=True))
+t = project(); FI = t / "content/fi/FY3" / LESSON; EN = t / "content/en/FY3" / LESSON
+shutil.copytree(FI, EN, ignore=shutil.ignore_patterns("review"))
+XE = EN / "exercises"; _ej = XE / "exercises.json"; _ex = json.loads(_ej.read_text())
+_ex["level1"][0]["text"] = "Translated: " + _ex["level1"][0]["text"]; _ej.write_text(json.dumps(_ex, ensure_ascii=False, indent=2))
+_sol = XE / "solutions.md"; SOL_EN = _sol.read_text().replace("**Vastaus:**", "**Answer:**"); _sol.write_text(SOL_EN)
+git(t, "init", "-q"); git(t, "config", "user.email", "t@t"); git(t, "config", "user.name", "t"); git(t, "add", "."); git(t, "commit", "-qm", "fi and en")
+for n in ("science", "pedagogy", "visual"): report(t, n, part="exercises")
+git(t, "add", "."); git(t, "commit", "-qm", "fi exercise reviews")
+def en(*a): return run(t, "reviews.py", *a, LESSON, "--exercises", "--lang", "en")[1]
+def en_report(name, verdict="PASS"):
+    (XE / "review").mkdir(exist_ok=True); (XE / "review" / f"{name}.md").write_text(f"VERDICT: {verdict}\nCONTENT-HASH: {en('hash').strip()}\n\n## Blocking\nnone\n")
+out = en("scope")
+expect("(a) fi science PASS current, en numerically equivalent: en science none (translation-of-passed), pedagogy and visual as usual",
+       "science: none" in out and "categories=translation-of-passed" in out and "pedagogy: full" in out and "visual: full" in out, out)
+out = en("carry")
+expect("... carry writes the science row from the Finnish hash", "science: carried over" in out and "translation-of-passed" in (XE / "review/carry.tsv").read_text()
+       and h(t, part="exercises") in (XE / "review/carry.tsv").read_text(), out)
+en_report("pedagogy"); en_report("visual"); git(t, "add", "."); git(t, "commit", "-qm", "en carried, en pedagogy and visual")
+out = en("status")
+expect("... en exercises reviewed, science carried over from the Finnish set", "exercises: reviewed" in out and "science=PASS (carried over: translation-of-passed)" in out, out)
+code, out = run(t, "reviews.py", "verify")
+expect("... verify accepts the carry", code == 0 and "ERROR" not in out, out[-600:])
+en_report("science", "FAIL"); out = en("scope")
+expect("an en science FAIL for its current hash is never overridden by the Finnish PASS", "science: none" not in out and "translation-of-passed" not in en("status"), out)
+(XE / "review/science.md").unlink()
+_b = re.search(r"\$[^$]*\d[^$]*\$", SOL_EN.split("**Answer:**", 1)[1]).group(0); _sol.write_text(SOL_EN.replace(_b, _b.replace(re.search(r"\d", _b).group(0), "7" if re.search(r"\d", _b).group(0) != "7" else "8", 1), 1))
+out = en("scope")
+expect("(b) en with a different number in one solution's formula: science not none", "science: none" not in out and "translation-of-passed" not in out, out)
+_rows = (XE / "review/carry.tsv").read_text().splitlines()
+(XE / "review/carry.tsv").write_text("\n".join(_rows + ["\t".join(_rows[-1].split("\t")[:3] + [en("hash").strip()] + _rows[-1].split("\t")[4:])]) + "\n")   # forged
+code, out = run(t, "reviews.py", "verify")
+expect("... and verify rejects a carry row forged for that version", code == 1 and "not numerically equivalent" in out, out[-600:])
+_sol.write_text(SOL_EN); git(t, "checkout", "-q", "--", "content/en"); expect("... restored: reviewed again", "exercises: reviewed" in en("status"), en("status"))
+_fs = FI / "exercises/solutions.md"; _fs.write_text(_fs.read_text().replace("**Vastaus:**", "**Vastaus (uusi):**", 1))
+out = en("status")
+# the invariant: the row binds the Finnish hash it was carried from, so once the Finnish set changes (its science report no
+# longer current) the row counts for nothing and the en science review is no longer passed; verify has nothing to re-derive
+expect("(c) the fi set changed after the carry (fi hash new, fi science stale): the en science carry no longer counts",
+       "exercises: draft" in out and "science=missing" in out and "translation-of-passed" not in en("scope"), out)
+code, out = run(t, "reviews.py", "verify")
+expect("... verify: no error, the en exercise set is simply not reviewed", code == 0 and "ERROR" not in out, out[-600:])
 expect("real project untouched", snapshot() == REAL)
 print("\n" + ("all review tests passed" if not failures else f"{len(failures)} FAILED: " + ", ".join(failures)))
 sys.exit(1 if failures else 0)
