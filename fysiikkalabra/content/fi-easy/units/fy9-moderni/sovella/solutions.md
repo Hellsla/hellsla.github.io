@@ -21,21 +21,21 @@
 **Järkevyys:** Aikaa on kulunut vähän yli yksi puoliintumisaika. Siksi pitoisuuden on oltava vähän alle puolet alkuperäisestä eli vähän alle $1200\,\tfrac{\text{Bq}}{\text{kg}}$. Tulos sopii tähän.
 
 ### c)
-**Annettu:** pitoisuus $1047{,}6\,\tfrac{\text{Bq}}{\text{kg}}$ (b-kohta), syöty massa $m = 5{,}0\,\text{kg}$, annoskerroin $1{,}3 \cdot 10^{-8}\,\tfrac{\text{Sv}}{\text{Bq}}$, keskimääräinen vuosiannos $5{,}9\,\text{mSv}$
+**Annettu:** pitoisuus $1047{,}6\,\tfrac{\text{Bq}}{\text{kg}}$ (b-kohta), syöty massa $m = 5{,}0\,\text{kg}$, annoskerroin $1{,}3 \cdot 10^{-8}\,\tfrac{\text{Sv}}{\text{Bq}}$, keskimääräinen vuosiannos $H_\text{v} = 5{,}9\,\text{mSv}$
 **Kysytty:** efektiivinen annos $H$ ja sen osuus keskimääräisestä vuosiannoksesta
 **Periaate:** Annoskerroin kertoo, kuinka suuren efektiivisen annoksen yksi becquerel aiheuttaa, kun se on joutunut elimistöön. Annos kertyy ennen kuin cesium poistuu elimistöstä. Syötyjen becquerelien määrä on pitoisuus kertaa massa (luku *Säteilyannos ja säteilyturvallisuus Suomessa*).
-**Kaava:** $H = A_m \cdot m \cdot k_\text{annos}$, missä $A_m$ on pitoisuus ja $k_\text{annos}$ annoskerroin
+**Kaava:** $H = A_m \cdot m \cdot k_\text{annos}$, missä $A_m$ on pitoisuus ja $k_\text{annos}$ annoskerroin, ja osuus $= \dfrac{H}{H_\text{v}} = \dfrac{A_m \cdot m \cdot k_\text{annos}}{H_\text{v}}$
 **Muunnokset:** Lopuksi $1\,\text{Sv} = 1000\,\text{mSv}$.
 **Sijoitus:** Sienestäjä syö $1047{,}6\,\tfrac{\text{Bq}}{\text{kg}} \cdot 5{,}0\,\text{kg} = 5238\,\text{Bq}$, joten $H = 5238\,\text{Bq} \cdot 1{,}3 \cdot 10^{-8}\,\tfrac{\text{Sv}}{\text{Bq}} = 6{,}81 \cdot 10^{-5}\,\text{Sv} = 6{,}81 \cdot 10^{-5} \cdot 1000\,\text{mSv} = 0{,}0681\,\text{mSv}$. Osuus on $0{,}0681\,\text{mSv} : 5{,}9\,\text{mSv} = 0{,}0115 = 1{,}15\,\%$.
 **Vastaus:** Sienestäjä saa sienistä noin $0{,}068\,\text{mSv}$:n annoksen. Vastauksessa on kaksi merkitsevää numeroa kuten massassa $5{,}0\,\text{kg}$ ja annoskertoimessa. Annos on noin $1\,\%$ suomalaisen keskimääräisestä vuosiannoksesta.
 **Järkevyys:** Annos on noin seitsemän hammasröntgenkuvan annos. Yhden kuvan annos on noin $0{,}01\,\text{mSv}$. Annos on pieni verrattuna radoniin, jonka osuus on keskimäärin noin $3\,\text{mSv}$. Tämä sopii siihen, että sienet ovat Suomessa vain pieni annoksen lähde.
 
 ### d)
-**Annettu:** pitoisuus $A = 1047{,}6\,\text{Bq}$ yhdessä kilogrammassa (b-kohta), $T_{1/2} = 30{,}1\,\text{a}$, $1\,\text{a} = 3{,}156 \cdot 10^{7}\,\text{s}$, atomin massa $137\,\text{u}$, $1\,\text{u} = 1{,}66 \cdot 10^{-27}\,\text{kg}$
+**Annettu:** pitoisuus $A = 1047{,}6\,\text{Bq}$ yhdessä kilogrammassa (b-kohta), $T_{1/2} = 30{,}1\,\text{a}$, $1\,\text{a} = 3{,}156 \cdot 10^{7}\,\text{s}$, atomin massa $m_\text{a} = 137\,\text{u}$, $1\,\text{u} = 1{,}66 \cdot 10^{-27}\,\text{kg}$
 **Kysytty:** cesium-137-ytimien lukumäärä $N$ ja niiden massa $m$
 **Periaate:** Aktiivisuus on hajoamisvakion ja jäljellä olevien ytimien lukumäärän tulo. Hajoamisvakio saadaan puoliintumisajasta (luku *Hajoamislaki ja puoliintumisaika*). Becquerel on yksi hajoaminen sekunnissa. Siksi puoliintumisaika muunnetaan sekunneiksi.
-**Kaava:** $A = \lambda N$ ja $\lambda = \dfrac{\ln 2}{T_{1/2}}$, joten $N = \dfrac{A\,T_{1/2}}{\ln 2}$; $m = N \cdot 137\,\text{u}$
-**Muunnokset:** $30{,}1\,\text{a} = 30{,}1 \cdot 3{,}156 \cdot 10^{7}\,\text{s} = 9{,}500 \cdot 10^{8}\,\text{s}$, $137\,\text{u} = 137 \cdot 1{,}66 \cdot 10^{-27}\,\text{kg} = 2{,}274 \cdot 10^{-25}\,\text{kg}$ ja lopuksi $1\,\text{kg} = 10^{12}\,\text{ng}$
+**Kaava:** $A = \lambda N$ ja $\lambda = \dfrac{\ln 2}{T_{1/2}}$, joten $N = \dfrac{A\,T_{1/2}}{\ln 2}$; $m = N\,m_\text{a}$
+**Muunnokset:** $30{,}1\,\text{a} = 30{,}1 \cdot 3{,}156 \cdot 10^{7}\,\text{s} = 9{,}500 \cdot 10^{8}\,\text{s}$, $m_\text{a} = 137\,\text{u} = 137 \cdot 1{,}66 \cdot 10^{-27}\,\text{kg} = 2{,}274 \cdot 10^{-25}\,\text{kg}$ ja lopuksi $1\,\text{kg} = 10^{12}\,\text{ng}$
 **Sijoitus:** $N = \dfrac{1047{,}6\,\tfrac{1}{\text{s}} \cdot 9{,}500 \cdot 10^{8}\,\text{s}}{0{,}6931} = 1{,}436 \cdot 10^{12}$ ja $m = 1{,}436 \cdot 10^{12} \cdot 2{,}274 \cdot 10^{-25}\,\text{kg} = 3{,}27 \cdot 10^{-13}\,\text{kg} = 0{,}327\,\text{ng}$
 **Vastaus:** Kilogrammassa sieniä on noin $1{,}44 \cdot 10^{12}$ cesium-137-ydintä. Niiden massa on noin $0{,}327\,\text{ng}$. Vastauksissa on kolme merkitsevää numeroa kuten puoliintumisajassa.
 **Järkevyys:** Ytimiä on biljoonia, mutta massa on alle nanogramman, koska yksi atomi on hyvin kevyt. Hajoamisvakio $\lambda = 7{,}30 \cdot 10^{-10}\,\tfrac{1}{\text{s}}$ on pieni. Siksi tuhat hajoamista sekunnissa vaatii valtavan määrän ytimiä.
@@ -50,10 +50,10 @@
 ## fy9-moderni-s2
 
 ### a)
-**Annettu:** $E_n = -\tfrac{13{,}6\,\text{eV}}{n^2}$, siirtymä tasolta $3$ tasolle $2$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$
+**Annettu:** $E_n = -\tfrac{E_0}{n^2}$, $E_0 = 13{,}6\,\text{eV}$, siirtymä tasolta $3$ tasolle $2$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$
 **Kysytty:** viivan aallonpituus $\lambda$
 **Periaate:** Kun elektroni siirtyy ylemmältä tasolta alemmalle, atomi lähettää fotonin. Fotonin energia on tasojen erotus, koska energia säilyy (luku *Vetyatomin energiatasot ja Bohrin malli*). Fotonin energiasta saadaan aallonpituus (luku *Valosähköinen ilmiö ja fotoni*).
-**Kaava:** $E_\text{f} = E_3 - E_2 = 13{,}6\,\text{eV}\left(\tfrac{1}{2^2} - \tfrac{1}{3^2}\right)$ ja $E_\text{f} = \dfrac{hc}{\lambda}$, joten $\lambda = \dfrac{hc}{E_3 - E_2}$
+**Kaava:** $E_\text{f} = E_3 - E_2 = E_0\left(\tfrac{1}{2^2} - \tfrac{1}{3^2}\right)$ ja $E_\text{f} = \dfrac{hc}{\lambda}$, joten $\lambda = \dfrac{hc}{E_0\left(\tfrac{1}{2^2} - \tfrac{1}{3^2}\right)}$
 **Muunnokset:** $1{,}8889\,\text{eV} = 1{,}8889 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 3{,}0260 \cdot 10^{-19}\,\text{J}$ ja lopuksi $1\,\text{nm} = 10^{-9}\,\text{m}$
 **Sijoitus:** $E_3 - E_2 = 13{,}6\,\text{eV} \cdot \left(\tfrac{1}{4} - \tfrac{1}{9}\right) = 13{,}6\,\text{eV} \cdot \tfrac{5}{36} = 1{,}8889\,\text{eV}$, joten $\lambda = \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s}}{3{,}0260 \cdot 10^{-19}\,\text{J}} = 6{,}565 \cdot 10^{-7}\,\text{m} = 656{,}5\,\text{nm}$
 **Vastaus:** $\lambda \approx 656\,\text{nm}$. Vastauksessa on kolme merkitsevää numeroa kuten luvussa $13{,}6\,\text{eV}$.
@@ -236,13 +236,13 @@
 **Järkevyys:** Ero on paljon pienempi kuin lukemisen epävarmuus, joka on noin $1\,\%$. Mittaus siis tukee mallia. Kulmakerroin ei riipu siitä, mitä ainetta katodi on. Siksi mikä tahansa metalli antaisi saman $h$:n.
 
 ### d)
-**Annettu:** b-kohdan suora, joka leikkaa pystyakselin kohdassa $-2{,}24\,\text{V}$, kulmakerroin $k = 4{,}125 \cdot 10^{-15}\,\text{V}\,\text{s}$ (c-kohta), $\lambda = 590\,\text{nm}$
+**Annettu:** b-kohdan suora, joka leikkaa pystyakselin kohdassa $b = -2{,}24\,\text{V}$, kulmakerroin $k = 4{,}125 \cdot 10^{-15}\,\text{V}\,\text{s}$ (c-kohta), $\lambda = 590\,\text{nm}$
 **Kysytty:** irrotustyö $W$ elektronivoltteina, rajataajuus $f_0$ ja selitys sille, mitä aallonpituudella $590\,\text{nm}$ tapahtuu
 **Periaate:** Suoran vakiotermi on $-\tfrac{W}{e}$. Siksi irrotustyö elektronivoltteina on vakiotermin itseisarvo. Rajataajuudella fotonin energia riittää juuri irrotustyöhön, ja $U = 0$. Siksi rajataajuus on kohta, jossa suora leikkaa vaaka-akselin. Valon intensiteetti muuttaa vain fotonien määrää. Se ei muuta yhden fotonin energiaa (luku *Valosähköinen ilmiö ja fotoni*).
 **Kuvaajan lukeminen:** Suora leikkaa pystyakselin kohdassa $-2{,}24\,\text{V}$ ja vaaka-akselin noin kohdassa $5{,}43 \cdot 10^{14}\,\text{Hz}$.
-**Kaava:** $-\dfrac{W}{e} = -2{,}24\,\text{V}$, joten $W = e \cdot 2{,}24\,\text{V}$; $hf_0 = W$, joten $f_0 = \dfrac{W}{h} = \dfrac{W/e}{k}$; $f = \dfrac{c}{\lambda}$ ja $E = hf$
+**Kaava:** $b = -\dfrac{W}{e}$, joten $W = -e\,b$; $hf_0 = W$, joten $f_0 = \dfrac{W}{h} = -\dfrac{b}{k}$, koska $k = \dfrac{h}{e}$; $f = \dfrac{c}{\lambda}$ ja $E = hf$
 **Muunnokset:** $e \cdot 1\,\text{V} = 1\,\text{eV}$, joten suoraan $W = 2{,}24\,\text{eV}$. Aallonpituus $590\,\text{nm} = 590 \cdot 10^{-9}\,\text{m}$. Energia muunnetaan elektronivolteiksi, kun se jaetaan luvulla $1{,}602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$.
-**Sijoitus:** $W = 2{,}24\,\text{eV}$ ja $f_0 = \dfrac{2{,}24\,\text{V}}{4{,}125 \cdot 10^{-15}\,\text{V}\,\text{s}} = 5{,}43 \cdot 10^{14}\,\text{Hz}$. Aallonpituudella $590\,\text{nm}$: $f = \dfrac{2{,}998 \cdot 10^{8}\,\text{m/s}}{590 \cdot 10^{-9}\,\text{m}} = 5{,}08 \cdot 10^{14}\,\text{Hz}$ ja $E = \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 5{,}08 \cdot 10^{14}\,\tfrac{1}{\text{s}}}{1{,}602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}} = 2{,}10\,\text{eV}$
+**Sijoitus:** $W = -e \cdot (-2{,}24\,\text{V}) = 2{,}24\,\text{eV}$ ja $f_0 = -\dfrac{-2{,}24\,\text{V}}{4{,}125 \cdot 10^{-15}\,\text{V}\,\text{s}} = 5{,}43 \cdot 10^{14}\,\text{Hz}$. Aallonpituudella $590\,\text{nm}$: $f = \dfrac{2{,}998 \cdot 10^{8}\,\text{m/s}}{590 \cdot 10^{-9}\,\text{m}} = 5{,}08 \cdot 10^{14}\,\text{Hz}$ ja $E = \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 5{,}08 \cdot 10^{14}\,\tfrac{1}{\text{s}}}{1{,}602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}} = 2{,}10\,\text{eV}$
 **Vastaus:** Kaliumin irrotustyö on $W \approx 2{,}24\,\text{eV}$, ja rajataajuus on $f_0 \approx 5{,}43 \cdot 10^{14}\,\text{Hz}$. Vastauksissa on kolme merkitsevää numeroa kuvaajan lukutarkkuuden mukaan. Aallonpituuden $590\,\text{nm}$ valon taajuus $5{,}08 \cdot 10^{14}\,\text{Hz}$ on pienempi kuin rajataajuus. Toisin sanoen yhden fotonin energia $2{,}10\,\text{eV}$ ei riitä irrottamaan elektronia. Kymmenkertainen valomäärä tarkoittaa kymmenkertaista määrää samanlaisia fotoneja. Yksi fotoni antaa energiansa yhdelle elektronille. Siksi elektroneja ei irtoa vieläkään, eikä valovirtaa synny.
 **Järkevyys:** Rajataajuutta vastaa aallonpituus $\tfrac{c}{f_0} \approx 552\,\text{nm}$. Se on vihreää valoa. Keltainen $590\,\text{nm}$:n valo on siis rajan väärällä puolella. Kaikki mitatut violetit ja siniset aallonpituudet ovat oikealla puolella, kuten taulukossa. Alkalimetallien irrotustyöt ovat noin $2\,\text{eV}$, joten tulos on uskottava.
 
@@ -284,19 +284,20 @@
 ## fy9-moderni-s5
 
 ### a)
-**Annettu:** pulssimäärät $10\,\text{s}$:n jaksoissa ajanhetkillä $0$–$300\,\text{s}$, alussa $398$ ja lopussa $104$, tausta $5$ pulssia $10\,\text{s}$:ssa
-**Kysytty:** puoliintumisaika $T_{1/2}$, kun taustasäteily otetaan huomioon
-**Periaate:** GM-putki laskee sekä näytteen että taustasäteilyn pulssit. Siksi näytteen osuus saadaan, kun tausta vähennetään jokaisesta lukemasta. Näytteen pulssimäärä on verrannollinen aktiivisuuteen, ja aktiivisuus pienenee hajoamislain mukaan (luku *Hajoamislaki ja puoliintumisaika*). Kun pisteet ovat kaukana toisistaan, satunnainen vaihtelu vaikuttaa tulokseen vähiten.
-**Kaava:** $N = N_0\left(\tfrac{1}{2}\right)^{t/T_{1/2}}$, joten $\dfrac{N_0}{N} = 2^{t/T_{1/2}}$ ja $T_{1/2} = \dfrac{t \ln 2}{\ln \tfrac{N_0}{N}}$
-**Muunnokset:** Kaikki pulssimäärät ovat samassa yksikössä, pulssia $10\,\text{s}$:ssa. Siksi muunnoksia ei tarvita.
-**Sijoitus:** Kun tausta vähennetään, $N_0 = 398 - 5 = 393$ ja $N = 104 - 5 = 99$ ajassa $t = 300\,\text{s}$, joten $T_{1/2} = \dfrac{300\,\text{s} \cdot 0{,}6931}{\ln \tfrac{393}{99}} = \dfrac{207{,}9\,\text{s}}{1{,}3787} = 150{,}8\,\text{s}$
-**Vastaus:** $T_{1/2} \approx 151\,\text{s}$. Vastauksessa on kolme merkitsevää numeroa. Pulssimäärät vaihtelevat kuitenkin satunnaisesti, lopussa noin $\sqrt{100} = 10$ pulssia. Siksi viimeinen numero on epävarma. Kun tausta vähennetään, tulos muuttuu $155\,\text{s}$:sta $151\,\text{s}$:iin.
-**Järkevyys:** Tulos poikkeaa kirjan arvosta $153\,\text{s}$ vain $1{,}4\,\%$. Kun kaikkiin pisteisiin sovitetaan suora $(t, \ln N)$-koordinaatistossa, saadaan $153\,\text{s}$. Arvio on siis oikeaa suuruusluokkaa.
+**Annettu:** pulssimäärät $10\,\text{s}$:n jaksoissa ajanhetkillä $0$–$300\,\text{s}$ ($11$ lukemaa), alussa $398$ ja lopussa $104$, tausta $5$ pulssia $10\,\text{s}$:ssa
+**Kysytty:** puoliintumisaika $T_{1/2}$ taustasäteily huomioon ottaen
+**Periaate:** GM-putki laskee sekä näytteen että taustasäteilyn pulssit, joten näytteen osuus saadaan vähentämällä tausta jokaisesta lukemasta. Näytteen pulssimäärä on verrannollinen aktiivisuuteen, ja suuren ydinjoukon aktiivisuus pienenee hajoamislain mukaan, koska jokainen ydin hajoaa samalla todennäköisyydellä (luku *Hajoamislaki ja puoliintumisaika*). Kaikki $11$ pistettä käytetään: pisteisiin sovitetaan suora. Yksittäinen lukema vaihtelee satunnaisesti, joten yksi lukema ei riitä.
+**Kuvaajan lukeminen:** Taustan vähentämisen jälkeen kaikista $11$ lukemasta lasketaan $\ln N$ ($N$ pulssia $10\,\text{s}$:ssa, esimerkiksi $\ln 393 = 5{,}974$ ja $\ln 99 = 4{,}595$), ja pisteet $(t,\ \ln N)$ piirretään pisteinä. Kun väheneminen on eksponentiaalista, pisteet ovat $\ln N$:n suhteen suoralla. Siksi pisteisiin sovitetaan yksi suora koko välille $0$–$300\,\text{s}$. Kulmakerroin $k$ luetaan suoralta kahdesta kaukana toisistaan olevasta pisteestä, esimerkiksi $(0;\ 5{,}993)$ ja $(300\,\text{s};\ 4{,}635)$, eikä yksittäisistä mittauspisteistä.
+**Kaava:** $N = N_0 e^{-\lambda t}$, joten $\ln N = \ln N_0 - \lambda t$. Suoran kulmakerroin on $k = -\lambda$, ja $T_{1/2} = \dfrac{\ln 2}{\lambda}$, joten $T_{1/2} = \dfrac{\ln 2}{-k}$, missä $k = \dfrac{\Delta(\ln N)}{\Delta t}$
+**Muunnokset:** Kaikki pulssimäärät ovat samassa yksikössä, pulssia $10\,\text{s}$:ssa, ja $\ln N$ on paljas luku, joten muunnoksia ei tarvita.
+**Sijoitus:** Sovitetun suoran kulmakerroin on $k = \dfrac{4{,}635 - 5{,}993}{300\,\text{s} - 0\,\text{s}} = -4{,}528 \cdot 10^{-3}\,\tfrac{1}{\text{s}}$, joten $T_{1/2} = \dfrac{0{,}6931}{4{,}528 \cdot 10^{-3}\,\tfrac{1}{\text{s}}} = 153{,}1\,\text{s}$
+**Vastaus:** $T_{1/2} \approx 153\,\text{s}$, kolme merkitsevää numeroa, mutta laskentojen satunnaisvaihtelu tekee viimeisestä numerosta epävarman. Taustan vähentäminen muuttaa tulosta, ja sovitus käyttää kaikkia pisteitä.
+**Järkevyys:** Kahden päätepisteen laskulla $T_{1/2} = \dfrac{t \ln 2}{\ln (N_0 : N)} = \dfrac{300\,\text{s} \cdot 0{,}6931}{\ln (393 : 99)} = 151\,\text{s}$, joka poikkeaa sovituksesta vain $1{,}4\,\%$. Pulssimäärä on $300\,\text{s}$:ssa pudonnut $393$:sta noin $99$:ään eli noin neljäsosaan, kaksi puoliintumisaikaa antaisi $\tfrac{393}{4} \approx 98$, joten $T_{1/2} \approx \tfrac{300\,\text{s}}{2} = 150\,\text{s}$ on oikeaa luokkaa.
 
 ### b)
 **Kysytty:** ryhmän johtopäätöksen arvio
 **Periaate:** Ytimellä ei ole muistia eikä ikää. Jokainen barium-137m-ydin hajoaa samalla todennäköisyydellä sekunnissa. Ei ole väliä, kuinka kauan ydin on ollut olemassa (luku *Hajoamislaki ja puoliintumisaika*). GM-putken pulssimäärä vaihtelee satunnaisesti noin $\sqrt{N}$:n verran (luku *Mittaaminen ja mittauksen luotettavuus*).
-**Mallivastaus:** Ryhmän selitys on väärä. Kun näyte seisoo minuutin, sen aktiivisuus pienenee. Puoliintumisaika ei kuitenkaan muutu, koska jäljellä olevat ytimet hajoavat täsmälleen samalla todennäköisyydellä kuin ennen. Ero johtuu menetelmästä. Ryhmä luki puoliintumisajan yhden pisteparin väliltä, ja yksittäinen lukema vaihtelee satunnaisesti. Esimerkiksi $212$ pulssin lukeman epävarmuus on noin $\sqrt{212} \approx 15$ pulssia eli $7\,\%$. Kohdan $150\,\text{s}$ lukema on sattumalta suuri. Se siirtää lukemaa myöhemmäksi. Myös se oli virhe, että taustaa ei vähennetty. Alussa tausta on vain $1\,\%$ lukemasta, mutta lopussa jo $5\,\%$. Jos taustaa ei vähennetä, väheneminen näyttää hitaammalta, ja puoliintumisaika näyttää pidemmältä. Lisäksi tausta mitattiin vain kerran $10\,\text{s}$:n ajan. Siksi sen arvo $5 \pm 2$ on hyvin epätarkka. Johtopäätös ”$166\,\text{s}$” ei siis ole luotettava. Kun tausta vähennetään ja käytetään kaikkia pisteitä, saadaan noin $151$–$153\,\text{s}$. Tämä vastaa kirjan arvoa.
+**Mallivastaus:** Ryhmän selitys on väärä. Kun näyte seisoo minuutin, sen aktiivisuus pienenee. Puoliintumisaika ei kuitenkaan muutu, koska jäljellä olevat ytimet hajoavat täsmälleen samalla todennäköisyydellä kuin ennen. Ero johtuu menetelmästä. Ryhmä luki puoliintumisajan yhden pisteparin väliltä, ja yksittäinen lukema vaihtelee satunnaisesti. Esimerkiksi $212$ pulssin lukeman epävarmuus on noin $\sqrt{212} \approx 15$ pulssia eli $7\,\%$. Kohdan $150\,\text{s}$ lukema on sattumalta suuri. Se siirtää lukemaa myöhemmäksi. Myös se oli virhe, että taustaa ei vähennetty. Alussa tausta on vain $1\,\%$ lukemasta, mutta lopussa jo $5\,\%$. Jos taustaa ei vähennetä, väheneminen näyttää hitaammalta, ja puoliintumisaika näyttää pidemmältä. Lisäksi tausta mitattiin vain kerran $10\,\text{s}$:n ajan. Siksi sen arvo $5 \pm 2$ on hyvin epätarkka. Johtopäätös ”$166\,\text{s}$” ei siis ole luotettava. Kun tausta vähennetään ja käytetään kaikkia pisteitä, saadaan noin $153\,\text{s}$. Tämä vastaa kirjan arvoa.
 
 ### c)
 **Kysytty:** miten mittausta ja tulosten käsittelyä voi parantaa
@@ -310,7 +311,7 @@
 - c-kohdassa ehdotetaan vain ”tarkempaa mittaria”. Ei kerrota, mikä mittauksessa muuttuu ja miksi.
 
 ### Hyväksytään myös
-- a-kohdassa kaikkien pisteiden sovitus laskimella tai kuvaajasta: $T_{1/2} \approx 153\,\text{s}$.
+- a-kohdassa kahden päätepisteen lasku taustan vähentämisen jälkeen: $T_{1/2} = \dfrac{t \ln 2}{\ln (N_0 : N)} \approx 151\,\text{s}$.
 - a-kohdassa jokin muu pistepari, jonka pisteet ovat kaukana toisistaan, kun tausta on vähennetty. Tuloksen pitää olla välillä $145$–$157\,\text{s}$.
 
 ## fy9-moderni-s6
@@ -326,11 +327,11 @@
 **Järkevyys:** Kun lämpövoimala toimii höyryturbiinilla, sen hyötysuhde on yleensä $30$–$40\,\%$. Fissioita on valtavasti, koska yksi fissio vapauttaa vain noin $3 \cdot 10^{-11}\,\text{J}$.
 
 ### b)
-**Annettu:** $n = 1{,}342 \cdot 10^{20}\,\tfrac{1}{\text{s}}$ (a-kohta), $1\,\text{a} = 3{,}156 \cdot 10^{7}\,\text{s}$, uraani-235-atomin massa $235\,\text{u}$, $1\,\text{u} = 1{,}661 \cdot 10^{-27}\,\text{kg}$, $P_\text{l} = 4300\,\text{MW}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$
+**Annettu:** $n = 1{,}342 \cdot 10^{20}\,\tfrac{1}{\text{s}}$ (a-kohta), $1\,\text{a} = 3{,}156 \cdot 10^{7}\,\text{s}$, uraani-235-atomin massa $m_\text{U} = 235\,\text{u}$, $1\,\text{u} = 1{,}661 \cdot 10^{-27}\,\text{kg}$, $P_\text{l} = 4300\,\text{MW}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$
 **Kysytty:** vuodessa fissioituvan uraani-235:n massa $m$ ja energiaksi muuttuva massa $\Delta m$
 **Periaate:** Jokainen fissio kuluttaa yhden uraani-235-ytimen. Vapautuva energia vastaa massavajetta. Massavaje tarkoittaa, että reaktiotuotteiden massa on pienempi kuin lähtöaineiden massa (luvut *Massavaje ja ytimen sidosenergia* ja *Fissio, fuusio ja ydinvoima*).
-**Kaava:** $m = nt \cdot 235\,\text{u}$ ja $E = \Delta m\,c^2$, joten $\Delta m = \dfrac{P_\text{l}t}{c^2}$
-**Muunnokset:** $235\,\text{u} = 235 \cdot 1{,}661 \cdot 10^{-27}\,\text{kg} = 3{,}903 \cdot 10^{-25}\,\text{kg}$
+**Kaava:** $m = n t\,m_\text{U}$ ja $E = \Delta m\,c^2$, joten $\Delta m = \dfrac{P_\text{l}t}{c^2}$
+**Muunnokset:** $m_\text{U} = 235\,\text{u} = 235 \cdot 1{,}661 \cdot 10^{-27}\,\text{kg} = 3{,}903 \cdot 10^{-25}\,\text{kg}$
 **Sijoitus:** $nt = 1{,}342 \cdot 10^{20}\,\tfrac{1}{\text{s}} \cdot 3{,}156 \cdot 10^{7}\,\text{s} = 4{,}236 \cdot 10^{27}$, joten $m = 4{,}236 \cdot 10^{27} \cdot 3{,}903 \cdot 10^{-25}\,\text{kg} = 1653\,\text{kg}$. $\Delta m = \dfrac{4300 \cdot 10^{6}\,\tfrac{\text{J}}{\text{s}} \cdot 3{,}156 \cdot 10^{7}\,\text{s}}{(2{,}998 \cdot 10^{8}\,\text{m/s})^2} = \dfrac{1{,}357 \cdot 10^{17}\,\text{J}}{8{,}988 \cdot 10^{16}\,\tfrac{\text{m}^2}{\text{s}^2}} = 1{,}51\,\text{kg}$
 **Vastaus:** Uraani-235:tä fissioituu vuodessa noin $1650\,\text{kg}$. Massaa muuttuu energiaksi noin $1{,}51\,\text{kg}$. Vastauksissa on kolme merkitsevää numeroa kuten tehoissa.
 **Järkevyys:** Uraanin massasta muuttuu energiaksi vain $1{,}51 : 1653 \approx 0{,}09\,\%$. Sama tulos saadaan, kun $200\,\text{MeV}$ jaetaan uraaniatomin lepoenergialla $235 \cdot 931{,}5\,\text{MeV}$. Loput massasta jää fissiotuotteiksi ja neutroneiksi, koska nukleonien määrä säilyy.

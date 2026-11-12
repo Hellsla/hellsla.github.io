@@ -82,3 +82,12 @@ Visual
 6. kartta now writes $H_\text{T} = w_\text{R} D_\text{T}$ like the theory.
 
 Checks rerun: units.py figures, practice.py figures, practice.py check (6 tasks, 95 p), units.py check (44 ok), build fy9-moderni, check_layout 360 and 1280 OK, Playwright at 390/1280 with all choices answered and details open: 0 console errors, 0 .katex-error, no raw $, no horizontal overflow; kartta, fotonit and s3-fit screenshots checked.
+
+## Ratkaisutavan tarkistus (2026-11-12)
+- s1 c): Kaavaan osuus symbolein ($H/H_\text{v}$), vuosiannokselle symboli $H_\text{v}$ (fi, fi-easy, en).
+- s1 d): atomin massalle symboli $m_\text{a}$ Annettuun, Kaavaan ja Muunnoksiin, ei lukua $137\,\text{u}$ kaavassa.
+- s2 a): perustason energialle symboli $E_0$; Kaava ratkaistu $\lambda$:lle symbolein, luvut vain Sijoituksessa.
+- s3 d): vakiotermille symboli $b$; Kaava $W = -eb$, $f_0 = -b/k$ ilman mittalukuja.
+- s6 b): uraaniatomin massalle symboli $m_\text{U}$ Kaavassa.
+- Lukematta muutettavaa: s1 a, b; s2 b–d; s3 a–c; s4; s5 (a: kaksi kaukaista pistettä on tehtävän oma tapa, perusteltu Periaatteessa); s6 a, c, d; inquiry.
+- s5 a): sovitus kaikkiin 11 pisteeseen $(t, \ln N)$ pääasiallinen tapa (Kuvaajan lukeminen, $T_{1/2} = \ln 2/(-k) \approx 153\,\text{s}$); kahden pisteen lasku ($151\,\text{s}$) Järkevyyteen ja Hyväksytään myös -kohtaan; tasks.json vastaus 153 s ja kriteerit (fi, fi-easy, en).
