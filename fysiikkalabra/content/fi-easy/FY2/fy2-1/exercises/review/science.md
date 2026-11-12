@@ -1,18 +1,17 @@
-VERDICT: PASS
-CONTENT-HASH: 2c9fdf155f72e6a3
+VERDICT: FAIL
+CONTENT-HASH: 075d17656120eb22
 
 ## Blocking
-(none)
+- exercises.json:158 (fy2-1-L1-10), solutions.md:67-75 — A, scope: the task rests on $E = c\,m\,\Delta T$ and specific heat capacity. The FY2 scope notes exclude $Q = cm\Delta T$ (it is FY3 content), and the brief's lesson does not teach it. Stating the formula in the task does not fix this. — Fix: replace it with an in-scope MAFY lookup (e.g. heating value $H$ with $E = Hm$, or 1 kWh = 3,6 MJ), or drop the exercise.
+- solutions.md:70 (fy2-1-L1-10) — A, model: "Kaikki sähköenergia siirtyy veteen …, joten systeemi on eristetty" is wrong. Kettle and water are not isolated, because electrical energy comes in from the grid. — Fix (if any version is kept): say that energy is conserved and, with no losses, the electrical energy taken in equals the increase in the water's thermal energy. Also state that the water does not boil (guardrail: $Q = cm\Delta T$ holds only while the state does not change).
 
 ## Polish
-(none)
+- solutions.md:156 (fy2-1-L2-08) — "B on rinteen puolivälissä, joten noin puolet" is a weak check. B is at 3/7 of the rim height, and friction losses need not scale that way. — Keep only the sum check $600 + 100 = 700\,\text{J}$, or call the half a rough expectation.
+- solutions.md:155 (fy2-1-L2-08) — a 100 J difference of values read to 100 J has about one significant figure, so "noin 14 %" would be more honest. Acceptable at this level.
 
 ## Checked
-- Compared fy2-1-L1-09 (fi-easy) with the reviewed Finnish: id, level, kind, answer key (1 T, 2 F, 3 T, 4 F, 5 T), unit, tolerance and the five true flags are identical.
-- Task text keeps the same physics: 1 m drop from rest, isolated system of ball, floor and air, bounces lower each time, ball ends at rest.
-- Feedback 1 names the right mechanism (mechanical energy to thermal energy in the collision and by air resistance); feedback 2-4 keep the same misconceptions and reasons; 5 keeps ball, floor and air.
-- solutions.md L1-09: Principle E_initial = E_final for an isolated system, all energy forms incl. thermal; model answer 1, 3, 5 true and 2, 4 false, same as fi. No numbers, so no answers.py line needed.
-- No decimal comma/point issue (only "1 m"); no formulas added or lost.
-- check_i18n.py shows nothing for fy2-1; build.py fy2-1 succeeds. No translation edits were needed.
-- Round 2 (commit 442c889ba): L2-05 Reasonableness sum check now split into 60 % + 17.5 % = 77.5 %, 15 % + 7.5 % = 22.5 %, total 100 %. Recomputed from 36.0/10.5/9.0/4.5 GJ of 60.0 GJ: 60, 17.5, 15, 7.5 %; correct, same as fi.
-- Round 2: check_i18n.py shows nothing for fy2-1; build.py fy2-1 succeeds; hash unchanged at start and end of round.
+- L2-08: recomputed 100·(700 − 600)/700 = 14,29 % → answers.py 14.3; 14 is within the 3 % tolerance.
+- L2-08: figures.py FRICTION (700/0, 300/300, 0/500) matches the solution's readings and the alt text; B's height u² = 3/7 matches E_p,B; there is no thermal or total bar, so the answer is not given away.
+- L2-08: the physics holds (isolated skater + half-pipe + surroundings; thermal = E_A − E_B); at C 200 J = 29 %, consistent with L1-03.
+- L1-10: 4,19·0,50·40 = 83,8 kJ (4,18 → 83,6 kJ, also within tolerance); ΔT °C = K; 2 kW → 42 s. Only the scope and the system claim fail.
+- Hash 075d17656120eb22 at the start and at the end.
