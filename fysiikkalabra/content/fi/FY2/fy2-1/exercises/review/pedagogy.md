@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: 598982a9db689aad
-SCOPE: delta L1-10 heating value 43 -> 43,4 MJ/kg
+SCOPE: delta added-exercise from a5e3a606c3d94d47 base 141dc47a8c70
 
 Round: 3
 
