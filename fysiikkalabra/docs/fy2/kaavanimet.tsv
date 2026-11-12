@@ -1,0 +1,85 @@
+# FY2:n kaavojen nimet (opettaja 2026-11-12: nimetään vain kaavat, jotka ovat mafytaulukot.fi:n taulukoissa; nimi MAFY:n mukaan, jotta opiskelija tietää, ettei muita ole taulukossa).
+# Nimisarakkeen = tarkoittaa yllä nimetyn kaavan toista muotoa (tekstissä rivi alkaa ':: ').
+# Rivit tunnin tekstin järjestyksessä; jokainen erillinen kaavarivi omalla rivillään.
+tunti	rivi	kaava	kaava_en	nimi	name_en	lähde	MAFY-sivu	huomio
+fy2-1	225	E_\text{alussa} = E_\text{lopussa}	E_\text{initial} = E_\text{final}					
+fy2-1	287	E_\text{alussa} = E_\text{lopussa}	E_\text{initial} = E_\text{final}					
+fy2-1	287	E_\text{p} = E_\text{k} + E_\text{lämpö}	E_\text{p} = E_\text{k} + E_\text{thermal}					
+fy2-1	287	E_\text{lämpö} = E_\text{p} - E_\text{k}	E_\text{thermal} = E_\text{p} - E_\text{k}					
+fy2-1	302	E_\text{lämpö} = E_\text{p} - E_\text{k}	E_\text{thermal} = E_\text{p} - E_\text{k}					
+fy2-1	302	= 840\,\text{J} - 720\,\text{J}	= 840\,\text{J} - 720\,\text{J}					
+fy2-1	302	= 120\,\text{J}	= 120\,\text{J}					
+fy2-2	440	1\,\text{kJ} = 1000\,\text{J}	1\,\text{kJ} = 1000\,\text{J}					
+fy2-2	440	1\,\text{MJ} = 1000\,\text{kJ}	1\,\text{MJ} = 1000\,\text{kJ}					
+fy2-2	440	1\,\text{GJ} = 1000\,\text{MJ}	1\,\text{GJ} = 1000\,\text{MJ}					
+fy2-2	440	1\,\text{TJ} = 1000\,\text{GJ}	1\,\text{TJ} = 1000\,\text{GJ}					
+fy2-2	516	E_\text{alussa} = E_\text{liike} + E_\text{lämpö}	E_\text{start} = E_\text{motion} + E_\text{heat}					
+fy2-2	516	E_\text{lämpö} = E_\text{alussa} - E_\text{liike}	E_\text{heat} = E_\text{start} - E_\text{motion}					
+fy2-2	530	E_\text{lämpö} = E_\text{alussa} - E_\text{liike}	E_\text{heat} = E_\text{start} - E_\text{motion}					
+fy2-2	530	= 450\,\text{kJ} - 110\,\text{kJ}	= 450\,\text{kJ} - 110\,\text{kJ}					
+fy2-2	530	= 340\,\text{kJ}	= 340\,\text{kJ}					
+fy2-3	131	P = \frac{\Delta E}{\Delta t}	P = \frac{\Delta E}{\Delta t}	teho	power	MAFY	Mekaniikan kaavoja	MAFY: P = W/t = ΔE/Δt; sama nimi kuin FY9:ssä
+fy2-3	135	E = P\,t	E = P\,t					
+fy2-3	135	t = \frac{E}{P}	t = \frac{E}{P}					
+fy2-3	187	1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s}	1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s}					
+fy2-3	187	= 3\,600\,000\,\text{J}	= 3\,600\,000\,\text{J}					
+fy2-3	226	E = P\,t	E = P\,t					
+fy2-3	226	\text{hinta} = E \cdot \text{yksikköhinta}	\text{cost} = E \cdot \text{unit price}					
+fy2-3	240	E = P\,t	E = P\,t					
+fy2-3	240	= 0{,}080\,\text{kW} \cdot 120\,\text{h}	= 0.080\,\text{kW} \cdot 120\,\text{h}					
+fy2-3	240	= 9{,}6\,\text{kWh}	= 9.6\,\text{kWh}					
+fy2-3	240	\text{hinta} = E \cdot \text{yksikköhinta}	\text{cost} = E \cdot \text{unit price}					
+fy2-3	240	= 9{,}6\,\text{kWh} \cdot 20\,\text{snt/kWh}	= 9.6\,\text{kWh} \cdot 20\,\text{c/kWh}					
+fy2-3	240	= 192\,\text{snt}	= 192\,\text{c}					
+fy2-3	240	= 192 \cdot 0{,}01\,\text{€}	= 192 \cdot 0.01\,\text{€}					
+fy2-3	240	= 1{,}92\,\text{€}	= 1.92\,\text{€}					
+fy2-4	106	\eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}	\eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}	hyötysuhde	efficiency	MAFY	Mekaniikan kaavoja	sama nimi kuin FY9:ssä
+fy2-4	112	\eta = \frac{E_\text{a}}{E_\text{o}}	\eta = \frac{E_\text{a}}{E_\text{o}}					
+fy2-4	112	= \frac{P_\text{a} \cdot t}{P_\text{o} \cdot t}	= \frac{P_\text{a} \cdot t}{P_\text{o} \cdot t}					
+fy2-4	112	= \frac{P_\text{a}}{P_\text{o}}	= \frac{P_\text{a}}{P_\text{o}}					
+fy2-4	123	E_\text{o} = E_\text{a} + E_\text{h}	E_\text{o} = E_\text{a} + E_\text{h}					
+fy2-4	170	E_\text{o} = P_\text{o} \cdot t	E_\text{o} = P_\text{o} \cdot t					
+fy2-4	170	E_\text{a} = \eta \cdot E_\text{o}	E_\text{a} = \eta \cdot E_\text{o}					
+fy2-4	170	E_\text{h} = E_\text{o} - E_\text{a}	E_\text{h} = E_\text{o} - E_\text{a}					
+fy2-4	185	E_\text{o} = P_\text{o} \cdot t	E_\text{o} = P_\text{o} \cdot t					
+fy2-4	185	= 2000\,\text{W} \cdot 180\,\text{s}	= 2000\,\text{W} \cdot 180\,\text{s}					
+fy2-4	185	= 360\,000\,\text{J}	= 360\,000\,\text{J}					
+fy2-4	185	[6pt] E_\text{a} = \eta \cdot E_\text{o}	[6pt] E_\text{a} = \eta \cdot E_\text{o}					
+fy2-4	185	= 0{,}90 \cdot 360\,000\,\text{J}	= 0.90 \cdot 360\,000\,\text{J}					
+fy2-4	185	= 324\,000\,\text{J}	= 324\,000\,\text{J}					
+fy2-4	185	[6pt] E_\text{h} = E_\text{o} - E_\text{a}	[6pt] E_\text{h} = E_\text{o} - E_\text{a}					
+fy2-4	185	= 360\,000\,\text{J} - 324\,000\,\text{J}	= 360\,000\,\text{J} - 324\,000\,\text{J}					
+fy2-4	185	= 36\,000\,\text{J}	= 36\,000\,\text{J}					
+fy2-5	171	E = Hm	E = Hm	palamisessa vapautuva lämpö	heat released in combustion	MAFY	Termodynamiikan kaavoja	MAFY:ssa Q = Hm; tunnilla energia E
+fy2-5	280	E = Hm	E = Hm					
+fy2-5	291	E = Hm	E = Hm					
+fy2-5	291	= 15\,\tfrac{\text{MJ}}{\text{kg}} \cdot 6{,}0\,\text{kg}	= 15\,\tfrac{\text{MJ}}{\text{kg}} \cdot 6.0\,\text{kg}					
+fy2-5	291	= 90\,\text{MJ}	= 90\,\text{MJ}					
+fy2-6	299	E = P \cdot t	E = P \cdot t					
+fy2-6	383	E = P_\text{ka}\, t	E = P_\text{avg}\, t					
+fy2-6	383	P_\text{ka} = \frac{E}{t}	P_\text{avg} = \frac{E}{t}					
+fy2-6	397	P_\text{ka} = E : t	P_\text{avg} = E : t					
+fy2-6	397	= 14 \cdot 10^{6}\,\text{kWh} : 8760\,\text{h}	= 14 \cdot 10^{6}\,\text{kWh} : 8760\,\text{h}					
+fy2-6	397	= 1598\,\text{kW}	= 1598\,\text{kW}					
+fy2-6	397	\text{osuus} = P_\text{ka} : P_\text{nim}	\text{share} = P_\text{avg} : P_\text{nom}					
+fy2-6	397	= 1598\,\text{kW} : 5000\,\text{kW}	= 1598\,\text{kW} : 5000\,\text{kW}					
+fy2-6	397	= 0{,}32	= 0.32					
+fy2-7	438	E_\text{häviö} = E_\text{lähtö} - E_\text{perille}	E_\text{loss} = E_\text{sent} - E_\text{arrived}					
+fy2-7	438	\eta = \frac{E_\text{perille}}{E_\text{lähtö}}	\eta = \frac{E_\text{arrived}}{E_\text{sent}}	hyötysuhde	efficiency	MAFY	Mekaniikan kaavoja	siirron hyötysuhde; erotus E_häviö samassa lohkossa nimettä (ei MAFY:ssa)
+fy2-7	489	E_\text{perille} = \eta\, E_\text{lähtö}	E_\text{arrived} = \eta\, E_\text{sent}					
+fy2-7	489	E_\text{häviö} = E_\text{lähtö} - E_\text{perille}	E_\text{loss} = E_\text{sent} - E_\text{arrived}					
+fy2-7	504	E_\text{perille} = \eta\, E_\text{lähtö}	E_\text{arrived} = \eta\, E_\text{sent}					
+fy2-7	504	= 0{,}910 \cdot 245\,\text{MWh}	= 0.910 \cdot 245\,\text{MWh}					
+fy2-7	504	= 222{,}95\,\text{MWh}	= 222.95\,\text{MWh}					
+fy2-7	504	E_\text{häviö} = E_\text{lähtö} - E_\text{perille}	E_\text{loss} = E_\text{sent} - E_\text{arrived}					
+fy2-7	504	= (245 - 222{,}95)\,\text{MWh}	= (245 - 222.95)\,\text{MWh}					
+fy2-7	504	= 22{,}05\,\text{MWh}	= 22.05\,\text{MWh}					
+fy2-8	191	m = e \cdot E	m = e \cdot E					
+fy2-8	271	m = e \cdot E	m = e \cdot E					
+fy2-8	282	m = e \cdot E	m = e \cdot E					
+fy2-8	282	= 490\,\text{g/kWh} \cdot 4800\,\text{kWh}	= 490\,\text{g/kWh} \cdot 4800\,\text{kWh}					
+fy2-8	282	= 2\,352\,000\,\text{g}	= 2\,352\,000\,\text{g}					
+fy2-8	282	= 2\,352\,000 \cdot 0{,}001\,\text{kg}	= 2\,352\,000 \cdot 0.001\,\text{kg}					
+fy2-8	282	= 2352\,\text{kg}	= 2352\,\text{kg}					
+fy2-8	282	= 2352 \cdot 0{,}001\,\text{t}	= 2352 \cdot 0.001\,\text{t}					
+fy2-8	282	= 2{,}352\,\text{t}	= 2.352\,\text{t}					

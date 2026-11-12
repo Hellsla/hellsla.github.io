@@ -436,11 +436,9 @@ In a battery the energy is stored as chemical energy. In a pumped-storage power 
 
 The loss is the difference between the energy sent into the network and the energy that arrives. The efficiency of the transfer (chapter *Efficiency*) is the share of the sent energy that arrives:
 
-```latex
-\begin{aligned}
-E_\text{loss} &= E_\text{sent} - E_\text{arrived} \\
-\eta &= \frac{E_\text{arrived}}{E_\text{sent}}
-\end{aligned}
+```kaavat
+E_\text{loss} = E_\text{sent} - E_\text{arrived}
+efficiency :: \eta = \frac{E_\text{arrived}}{E_\text{sent}}
 ```
 
 where $E_\text{sent}$ is the energy fed into the network, $E_\text{arrived}$ the energy that reached the user, $E_\text{loss}$ the energy transferred as heat to the surroundings on the way and $\eta$ the efficiency of the transfer. Efficiency is given as a percentage or as a decimal number.
