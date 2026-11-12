@@ -89,20 +89,20 @@
   <foreignObject x="35" y="55.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$10$</div></foreignObject>
   <foreignObject x="50" y="375.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0$</div></foreignObject>
   <foreignObject x="502" y="355.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$t\ (\text{s})$</div></foreignObject>
-  <foreignObject x="70" y="13.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$v\ (\tfrac{\text{m}}{\text{s}})$</div></foreignObject>
+  <foreignObject x="70" y="13.5" width="87" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$v\ (\text{m/s})$</div></foreignObject>
   <polygon points="80,370 275,142 421,142 421,370" fill="#d0e6fb" fill-opacity="0.6"/>
-  <polyline points="80,370 275,142 458,142" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="80,370 275,142 458,142" fill="none" stroke="#1971c2" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
   <line x1="275" y1="142" x2="275" y2="370" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <line x1="80" y1="142" x2="275" y2="142" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <circle cx="80" cy="370" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="129" cy="316" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="177.5" cy="253" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="226" cy="199" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="275" cy="142" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="324" cy="139" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="372.5" cy="142" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="421" cy="142" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="90" y="65" width="270" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$a = \dfrac{7{,}6\,\tfrac{\text{m}}{\text{s}}}{8{,}0\,\text{s}} \approx 0{,}95\,\tfrac{\text{m}}{\text{s}^2}$</div></foreignObject>
+  <circle cx="80" cy="370" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="129" cy="316" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="177.5" cy="253" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="226" cy="199" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="275" cy="142" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="324" cy="139" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="372.5" cy="142" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="421" cy="142" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <foreignObject x="90" y="65" width="320" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$a = \dfrac{7{,}6\,\text{m/s}}{8{,}0\,\text{s}} \approx 0{,}95\,\text{m/s}^2$</div></foreignObject>
   <foreignObject x="302" y="259.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$s \approx 76\,\text{m}$</span></div></foreignObject>
 </svg>
 
@@ -354,16 +354,16 @@
   <polygon points="100,247 100,247 101.5,243.5 103.5,240.5 105,237 107,234 108.5,230.5 110,227 112,224 113.5,220.5 115,217 117,214 118.5,210.5 120.5,207 122,204 123.5,200.5 125.5,197.5 127,194 128.5,191 130.5,187.5 132,184.5 134,181.5 135.5,178.5 137,175.5 139,172.5 140.5,169.5 142,167 144,164 145.5,161.5 147.5,158.5 149,156 150.5,153.5 152.5,150.5 154,148 155.5,145.5 157.5,143 159,140.5 161,138 162.5,135.5 164,133 166,130.5 167.5,128.5 169,126 171,124 172.5,122 174.5,120 176,118 177.5,116 179.5,114 181,112 183,110.5 184.5,109 186,107 188,105.5 189.5,104 191,103 193,101.5 194.5,100 196.5,99 198,98 199.5,96.5 201.5,95.5 203,94.5 204.5,93.5 206.5,93 208,92 210,91 211.5,90.5 213,89.5 215,89 216.5,88.5 218,88 220,87.5 221.5,87 223.5,86.5 225,86 226.5,85.5 228.5,85 230,85 231.5,84.5 233.5,84.5 235,84 237,84 238.5,84 240,84 242,84 243.5,84 245,84.5 247,84.5 248.5,84.5 250.5,85 252,85 253.5,85.5 255.5,86 257,86 259,86.5 260.5,87 262,87.5 264,88 265.5,88.5 267,89 269,89.5 270.5,90 272.5,90.5 274,91 275.5,91.5 277.5,92.5 279,93 280.5,93.5 282.5,94.5 284,95 286,96 287.5,96.5 289,97.5 291,98.5 292.5,99 294,100 296,101 297.5,102 299.5,103.5 301,104.5 302.5,105.5 304.5,107 306,108.5 307.5,109.5 309.5,111 311,112.5 313,114 314.5,116 316,117.5 318,119 319.5,121 321,122.5 323,124.5 324.5,126 326.5,128 328,130 329.5,132 331.5,134 333,136 335,138.5 336.5,140.5 338,143 340,145.5 341.5,147.5 343,150 345,153 346.5,155.5 348.5,158 350,161 351.5,164 353.5,167 355,170 356.5,173 358.5,176.5 360,180 362,183 363.5,186.5 365,190.5 367,194 368.5,198 370,201.5 372,205.5 373.5,209.5 375.5,213.5 377,217.5 378.5,221.5 380.5,225.5 382,230 383.5,234 385.5,238 387,242.5 389,246.5 390.5,251 390.5,247" fill="#d5d0c4" fill-opacity="0.8"/>
   <polygon points="390.5,247 390.5,251 392,255 394,259.5 395.5,263.5 397,268 399,272.5 400.5,277 402.5,281.5 404,286 405.5,290.5 407.5,295 409,299.5 411,304 412.5,309 414,313.5 416,318.5 417.5,323 419,328 421,332.5 422.5,337.5 424.5,342 426,347 427.5,351.5 429.5,356.5 431,361 432.5,366 434.5,370.5 436,375.5 438,380 438,247" fill="#f2a69c" fill-opacity="0.8"/>
   <polyline points="100,247 471.5,247" fill="none" stroke="#6b7480" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 6"/>
-  <polyline points="100,247 103,241.5 105.5,236 108.5,230.5 111.5,225 114,219.5 117,214 119.5,208.5 122.5,203 125.5,197.5 128,192 131,186.5 134,181.5 136.5,176.5 139.5,171.5 142,167 145,162.5 148,158 150.5,153.5 153.5,149 156.5,144.5 159,140.5 162,136.5 164.5,132.5 167.5,128.5 170.5,124.5 173,121 176,118 179,114.5 181.5,111.5 184.5,109 187.5,106 190,103.5 193,101.5 195.5,99.5 198.5,97.5 201.5,95.5 204,94 207,92.5 210,91 212.5,90 215.5,89 218,88 221,87 224,86 226.5,85.5 229.5,85 232.5,84.5 235,84 238,84 240.5,84 243.5,84 246.5,84.5 249,84.5 252,85 255,85.5 257.5,86 260.5,87 263.5,87.5 266,88.5 269,89.5 271.5,90.5 274.5,91.5 277.5,92.5 280,93.5 283,94.5 286,96 288.5,97 291.5,98.5 294,100 297,102 300,103.5 302.5,105.5 305.5,108 308.5,110 311,112.5 314,115.5 316.5,118 319.5,121 322.5,124 325,127 328,130 331,133.5 333.5,137 336.5,140.5 339.5,144.5 342,148.5 345,153 347.5,157.5 350.5,162 353.5,167 356,172 359,177.5 362,183 364.5,189 367.5,195.5 370,201.5 373,208 376,215 378.5,221.5 381.5,228.5 384.5,235.5 387,242.5 390,249.5 392.5,256.5 395.5,263.5 398.5,271 401,278.5 404,286 407,293.5 409.5,301 412.5,309 415.5,316.5 418,324.5 421,332.5 423.5,340.5 426.5,348.5 429.5,356.5 432,364.5 435,372 438,380" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="100" cy="247" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="142" cy="167" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="184.5" cy="109" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="226.5" cy="85.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="269" cy="89.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="311" cy="112.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="353.5" cy="167" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="395.5" cy="264" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="438" cy="380" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <polyline points="100,247 103,241.5 105.5,236 108.5,230.5 111.5,225 114,219.5 117,214 119.5,208.5 122.5,203 125.5,197.5 128,192 131,186.5 134,181.5 136.5,176.5 139.5,171.5 142,167 145,162.5 148,158 150.5,153.5 153.5,149 156.5,144.5 159,140.5 162,136.5 164.5,132.5 167.5,128.5 170.5,124.5 173,121 176,118 179,114.5 181.5,111.5 184.5,109 187.5,106 190,103.5 193,101.5 195.5,99.5 198.5,97.5 201.5,95.5 204,94 207,92.5 210,91 212.5,90 215.5,89 218,88 221,87 224,86 226.5,85.5 229.5,85 232.5,84.5 235,84 238,84 240.5,84 243.5,84 246.5,84.5 249,84.5 252,85 255,85.5 257.5,86 260.5,87 263.5,87.5 266,88.5 269,89.5 271.5,90.5 274.5,91.5 277.5,92.5 280,93.5 283,94.5 286,96 288.5,97 291.5,98.5 294,100 297,102 300,103.5 302.5,105.5 305.5,108 308.5,110 311,112.5 314,115.5 316.5,118 319.5,121 322.5,124 325,127 328,130 331,133.5 333.5,137 336.5,140.5 339.5,144.5 342,148.5 345,153 347.5,157.5 350.5,162 353.5,167 356,172 359,177.5 362,183 364.5,189 367.5,195.5 370,201.5 373,208 376,215 378.5,221.5 381.5,228.5 384.5,235.5 387,242.5 390,249.5 392.5,256.5 395.5,263.5 398.5,271 401,278.5 404,286 407,293.5 409.5,301 412.5,309 415.5,316.5 418,324.5 421,332.5 423.5,340.5 426.5,348.5 429.5,356.5 432,364.5 435,372 438,380" fill="none" stroke="#c92a2a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="100" cy="247" r="6.5" fill="#c92a2a" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="142" cy="167" r="6.5" fill="#c92a2a" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="184.5" cy="109" r="6.5" fill="#c92a2a" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="226.5" cy="85.5" r="6.5" fill="#c92a2a" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="269" cy="89.5" r="6.5" fill="#c92a2a" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="311" cy="112.5" r="6.5" fill="#c92a2a" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="353.5" cy="167" r="6.5" fill="#c92a2a" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="395.5" cy="264" r="6.5" fill="#c92a2a" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="438" cy="380" r="6.5" fill="#c92a2a" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="456" y="210.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$G$</div></foreignObject>
   <foreignObject x="233.5" y="162" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$+$</div></foreignObject>
   <foreignObject x="406.5" y="257" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$-$</div></foreignObject>

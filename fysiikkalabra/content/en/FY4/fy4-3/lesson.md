@@ -475,7 +475,7 @@ where $\Sigma\overline{F}$ is the vector sum of the forces acting on the object,
 
 A net force of zero does not mean that there are no forces, but that they cancel each other. On a car driving along a straight road at constant velocity, the weight and the normal force of the road act in the vertical direction, and the force of the road on the tyres forwards and the air resistance backwards. Because the velocity does not change, the forward force is as large as the air resistance when rolling resistance is ignored.
 
-<svg data-fig="auto" viewBox="0 0 600 330" role="img" aria-label="Two pictures of a car driving along a straight road at constant velocity. On the left the situation picture: the car and above it a thin blue arrow v to the right. On the right the force diagram of the car, the car as a rectangle. The weight G down from the centre and the normal force N of the road up from the bottom surface, equally long. The force F of the road on the tyres starts from the front corner of the bottom surface and points forwards, and the air resistance F d starts from the rear side of the car and points backwards. The horizontal arrows are equally long, so the forces cancel each other." style="max-width:100%;font-size:24px">
+<svg data-fig="auto" viewBox="0 0 600 330" role="img" aria-label="Two pictures of a car driving along a straight road at constant velocity. On the left the situation picture: the car and above it a thin blue arrow v to the right. On the right the force diagram of the car, the car as a rectangle. The weight G down from the centre and the normal force N of the road up from the bottom surface, equally long. The force F of the road on the tyres starts from the front corner of the bottom surface and points forwards. The air resistance F d is a push backwards: the arrow comes from in front, and its tip is on the front surface, which the air presses on. The horizontal arrows are equally long, so the forces cancel each other." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy43a-car" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2a69c"/><stop offset="1" stop-color="#c92a2a"/></linearGradient></defs>
   <foreignObject x="46" y="9.5" width="208" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{situation picture}$</div></foreignObject>
   <rect x="16" y="236" width="270" height="34" fill="#c9c2b2"/>
@@ -498,19 +498,19 @@ A net force of zero does not mean that there are no forces, but that they cancel
   <foreignObject x="205.5" y="109.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$\overline{v}$</div></foreignObject>
   <line x1="300" y1="20" x2="300" y2="320" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 6"/>
   <foreignObject x="371" y="9.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{force diagram}$</div></foreignObject>
-  <rect x="386" y="146" width="120" height="48" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="446" y1="170" x2="446" y2="249" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M446,266 L438,248 L454,248 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="449.5" y="245.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}$</div></foreignObject>
-  <line x1="424" y1="194" x2="424" y2="115" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M424,98 L432,116 L416,116 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="385.5" y="89.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{N}$</div></foreignObject>
-  <line x1="506" y1="194" x2="541" y2="194" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M558,194 L540,202 L540,186 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="555.5" y="197.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}$</div></foreignObject>
-  <line x1="386" y1="164" x2="351" y2="164" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M334,164 L352,156 L352,172 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="305.5" y="127.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_\text{d}$</div></foreignObject>
+  <rect x="360" y="146" width="120" height="48" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="420" y1="170" x2="420" y2="249" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M420,266 L412,248 L428,248 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="423.5" y="245.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}$</div></foreignObject>
+  <line x1="398" y1="194" x2="398" y2="115" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M398,98 L406,116 L390,116 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="359.5" y="89.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{N}$</div></foreignObject>
+  <line x1="480" y1="194" x2="515" y2="194" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M532,194 L514,202 L514,186 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="529.5" y="197.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}$</div></foreignObject>
+  <line x1="532" y1="160" x2="497" y2="160" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M480,160 L498,152 L498,168 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="517.5" y="121.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_\text{d}$</div></foreignObject>
 </svg>
 
 Newton's third law is written for the forces between two objects:
@@ -536,7 +536,7 @@ A passenger aircraft flies horizontally in a straight line at a constant velocit
 
 **Principle.** By Newton's third law the gases push each engine forwards with an equally large force $F_1$; this is the thrust of the engine. The aircraft flies straight at constant velocity, so by Newton's first law its net force is zero. In the horizontal direction only two thrusts $\overline{F}_1$ and $\overline{F}_2$ act forwards on the aircraft (both $48\,\text{kN}$), and the air resistance $\overline{F}_\text{d}$ acts backwards, so they cancel each other. In the vertical direction the lift of the wings and the weight cancel each other. In the force diagram the aircraft is a rectangle and the forces acting on it are arrows:
 
-<svg data-fig="kone" viewBox="0 0 600 330" role="img" aria-label="Two pictures of a passenger aircraft flying horizontally at constant velocity. On the left the situation picture: the aircraft and above it a thin blue arrow v to the right. On the right the force diagram of the aircraft, the aircraft as a rectangle. The weight G down from the centre and the lift F lift of the wings up, equally long. The thrusts F 1 and F 2 of the two engines start from the front edge of the fuselage and point forwards, and they are equally long. The air resistance F d starts from the rear edge and points backwards, and it is as long as the thrusts together. The horizontal forces cancel each other, and the vertical forces cancel each other." style="max-width:100%;font-size:24px">
+<svg data-fig="kone" viewBox="0 0 600 330" role="img" aria-label="Two pictures of a passenger aircraft flying horizontally at constant velocity. On the left the situation picture: the aircraft and above it a thin blue arrow v to the right. On the right the force diagram of the aircraft, the aircraft as a rectangle. The weight G down from the centre and the lift F lift of the wings up, equally long. The thrusts F 1 and F 2 of the two engines start from the front edge of the fuselage and point forwards, and they are equally long. The air resistance F d is a push backwards: the arrow comes from in front, its tip is on the front edge, which the air presses on, and it is as long as the thrusts together. The horizontal forces cancel each other, and the vertical forces cancel each other." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy43k-body" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#d0e6fb"/></linearGradient></defs>
   <foreignObject x="46" y="9.5" width="208" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{situation picture}$</div></foreignObject>
   <path d="M44,214 Q40,196 62,192 L226,190 Q262,188 276,176 L262,214 Q150,230 44,214 Z" fill="url(#fy43k-body)" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
@@ -554,22 +554,22 @@ A passenger aircraft flies horizontally in a straight line at a constant velocit
   <foreignObject x="205.5" y="109.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$\overline{v}$</div></foreignObject>
   <line x1="300" y1="20" x2="300" y2="320" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 6"/>
   <foreignObject x="371" y="9.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{force diagram}$</div></foreignObject>
-  <rect x="415" y="145" width="110" height="50" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="470" y1="170" x2="470" y2="233" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M470,250 L462,232 L478,232 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="431.5" y="229.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}$</div></foreignObject>
-  <line x1="500" y1="170" x2="500" y2="107" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M500,90 L508,108 L492,108 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="492.5" y="73.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_\text{lift}$</div></foreignObject>
-  <line x1="525" y1="158" x2="546.5" y2="158" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M563.5,158 L545.5,166 L545.5,150 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="555" y="123.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_1$</div></foreignObject>
-  <line x1="525" y1="182" x2="546.5" y2="182" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M563.5,182 L545.5,190 L545.5,174 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="555" y="187.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_2$</div></foreignObject>
-  <line x1="415" y1="170" x2="355" y2="170" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M338,170 L356,162 L356,178 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="307.5" y="133.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_\text{d}$</div></foreignObject>
+  <rect x="355" y="136" width="110" height="80" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="410" y1="176" x2="410" y2="239" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M410,256 L402,238 L418,238 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="371.5" y="235.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}$</div></foreignObject>
+  <line x1="390" y1="176" x2="390" y2="113" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M390,96 L398,114 L382,114 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="308.5" y="83.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_\text{lift}$</div></foreignObject>
+  <line x1="465" y1="178" x2="486.5" y2="178" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M503.5,178 L485.5,186 L485.5,170 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="503" y="161.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_1$</div></foreignObject>
+  <line x1="465" y1="206" x2="486.5" y2="206" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M503.5,206 L485.5,214 L485.5,198 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="503" y="195.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_2$</div></foreignObject>
+  <line x1="542" y1="148" x2="482" y2="148" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M465,148 L483,140 L483,156 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="515.5" y="109.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_\text{d}$</div></foreignObject>
 </svg>
 
 <!-- vaihe -->
