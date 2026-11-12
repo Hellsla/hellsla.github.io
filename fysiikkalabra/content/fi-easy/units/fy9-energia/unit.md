@@ -240,7 +240,7 @@ Säilymislaista lähtee kolme kysymystä. Kokeen energiatehtävät perustuvat ni
   <rect x="44" y="432" width="328" height="150" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
   <foreignObject x="58" y="441.5" width="161" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\textbf{energian lähde}$</div></foreignObject>
   <line x1="54" y1="474" x2="362" y2="474" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="485.5" width="52" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$E = Hm$</div></foreignObject>
+  <foreignObject x="58" y="485.5" width="52" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$Q = Hm$</div></foreignObject>
   <foreignObject x="260" y="487" width="102" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{polttoaine}$</div></foreignObject>
   <foreignObject x="58" y="519.5" width="52" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$W = Fs$</div></foreignObject>
   <foreignObject x="326" y="521" width="36" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{työ}$</div></foreignObject>
@@ -326,11 +326,11 @@ Kuvan esimerkkilaitoksessa $\eta = 0{,}90 \cdot 0{,}45 \cdot 0{,}98 \approx 0{,}
 Polttoaineesta vapautuva energia ja voiman tekemä työ ovat
 
 ```kaavat
-palamisessa vapautuva lämpö :: E = Hm
+palamisessa vapautuva lämpö :: Q = Hm
 voiman tekemä työ :: W = Fs
 ```
 
-Ensimmäisessä kaavassa $H$ on lämpöarvo ($\text{MJ/kg}$) ja $m$ palanut massa (kg). Kaava $E = Hm$ pätee, kun polttoaine palaa kokonaan. Lisäksi lämpöarvon $H$ täytyy vastata polttoaineen todellista kosteutta. Toisessa kaavassa $F$ on vakiovoima (N), joka on liikkeen suuntainen, ja $s$ on matka (m). Kun kappale nostetaan tasaisella nopeudella, työ on $W = mgh$. Siinä $g = 9{,}81\,\text{m/s}^2$ ja $h$ on nostokorkeus.
+Ensimmäisessä kaavassa $Q$ on vapautuva lämpö (J), $H$ on lämpöarvo ($\text{MJ/kg}$) ja $m$ palanut massa (kg). Kaava $Q = Hm$ pätee, kun polttoaine palaa kokonaan. Lisäksi lämpöarvon $H$ täytyy vastata polttoaineen todellista kosteutta. Toisessa kaavassa $F$ on vakiovoima (N), joka on liikkeen suuntainen, ja $s$ on matka (m). Kun kappale nostetaan tasaisella nopeudella, työ on $W = mgh$. Siinä $g = 9{,}81\,\text{m/s}^2$ ja $h$ on nostokorkeus.
 
 ## Yleisiä virheitä {Virheet}
 

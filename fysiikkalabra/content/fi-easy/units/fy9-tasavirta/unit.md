@@ -176,7 +176,7 @@ Tasavirtapiirissä lähde pitää yllä **jännitettä**. Jännite ajaa piirin l
   <foreignObject x="58" y="110" width="206" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{virta ja resistanssi}$</div></foreignObject>
   <foreignObject x="292" y="112" width="70" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{suureet}$</div></foreignObject>
   <line x1="54" y1="142" x2="362" y2="142" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="156" width="60" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$I = Q/t$</div></foreignObject>
+  <foreignObject x="58" y="157" width="74" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$I = \Delta Q/\Delta t$</div></foreignObject>
   <foreignObject x="310" y="158" width="52" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{virta}$</div></foreignObject>
   <foreignObject x="58" y="206" width="50" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$U = RI$</div></foreignObject>
   <foreignObject x="327" y="208" width="35" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{Ohm}$</div></foreignObject>
@@ -255,12 +255,12 @@ Nyt voimme vastata alun kysymykseen. Mökin laitteet on kytketty akkuun rinnan, 
 ### Virta, jännite ja resistanssi
 
 ```kaavat
-sähkövirta :: I = \frac{Q}{t}
-jännitehäviö johtimessa :: R = \frac{U}{I}
+sähkövirta :: I = \frac{\Delta Q}{\Delta t}
+jännitehäviö johtimessa :: U = RI
 johtimen resistanssi :: R = \rho\,\frac{l}{A}
 ```
 
-missä $I$ on virta ($\text{A}$), $Q$ varaus, joka on kulkenut poikkileikkauksen läpi ($\text{C}$), $t$ aika ($\text{s}$), $U$ komponentin jännite ($\text{V}$), $R$ resistanssi ($\Omega$), $\rho$ resistiivisyys ($\Omega\cdot\text{m}$), $l$ johtimen pituus ($\text{m}$) ja $A$ poikkipinta-ala ($\text{m}^2$). Ohmin lain mukaan metallijohtimen resistanssi on vakio eli se ei muutu, kun lämpötila pysyy samana. Hehkulampun resistanssi kasvaa, kun lanka kuumenee. Virtamittari kytketään sarjaan ja jännitemittari rinnan.
+missä $I$ on virta ($\text{A}$), $\Delta Q$ varaus, joka on kulkenut poikkileikkauksen läpi ($\text{C}$), $\Delta t$ aika ($\text{s}$), $U$ komponentin jännite ($\text{V}$), $R$ resistanssi ($\Omega$), $\rho$ resistiivisyys ($\Omega\cdot\text{m}$), $l$ johtimen pituus ($\text{m}$) ja $A$ poikkipinta-ala ($\text{m}^2$). Ohmin lain mukaan metallijohtimen resistanssi on vakio eli se ei muutu, kun lämpötila pysyy samana. Hehkulampun resistanssi kasvaa, kun lanka kuumenee. Virtamittari kytketään sarjaan ja jännitemittari rinnan.
 
 ### Kytkennät ja Kirchhoffin lait
 
@@ -288,7 +288,7 @@ missä $P$ on teho ($\text{W}$) ja $E$ sähköenergia, joka on muuttunut ajassa 
 ```kaavat
 jännitelähteen napajännite :: U = E - R_\text{s} I
 virta suljetussa virtapiirissä :: I = \frac{E}{R + R_\text{s}}
-sähkövirta :: Q = It
+akun varaus :: Q = It
 ```
 
 missä $E$ on lähdejännite ($\text{V}$), $R_\text{s}$ sisäinen resistanssi ($\Omega$), $U$ napajännite ($\text{V}$), $R$ ulkoisen piirin resistanssi ($\Omega$) ja $Q$ akun kapasiteetti ($\text{Ah}$ tai $\text{C}$). Napajännite on pariston napojen välinen jännite. Malli olettaa, että $E$ ja $R_\text{s}$ pysyvät vakioina. Akun energia on $W = UQ$, missä $U$ on nimellisjännite eli akkuun merkitty jännite. Latauksen aikana napajännite on $U = E + R_\text{s} I$.

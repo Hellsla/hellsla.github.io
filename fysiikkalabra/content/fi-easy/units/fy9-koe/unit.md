@@ -293,12 +293,12 @@ Esimerkin vaiheet ovat samat kuin mallivastausten otsikot. *Tunnetut ja kysytty*
 
 **Kaava ratkaistuna.** Kysytty suure on jo yksin vasemmalla puolella:
 ```kaavat
-siirtynyt lämpömäärä :: Q = cm(T_2 - T_1)
+siirtynyt lämpömäärä :: Q = cm\Delta T
 ```
 
 <!-- vaihe -->
 
-**Yksikkömuunnokset.** Lämpötilaero on sama kelvineinä ja celsiusasteina: $T_2 - T_1 = 28{,}0\,\text{K}$. Lopuksi joulet muutetaan kilowattitunneiksi: $1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6 \cdot 10^{6}\,\text{J}$.
+**Yksikkömuunnokset.** Lämpötilaero on sama kelvineinä ja celsiusasteina: $\Delta T = T_2 - T_1 = 28{,}0\,\text{K}$. Lopuksi joulet muutetaan kilowattitunneiksi: $1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6 \cdot 10^{6}\,\text{J}$.
 
 <!-- vaihe -->
 
