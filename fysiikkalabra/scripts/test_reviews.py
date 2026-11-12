@@ -508,6 +508,69 @@ finally: rv.presentation_rows = _rows
 expect("presentation-only still sends the change to the visual reviewer", rv.RULES["presentation-only"][2] == "delta" and rv.MODES.index("delta") > rv.MODES.index("none"))
 expect("presentation-only: science and pedagogy carry over, the visual reviewer looks", rv.RULES["presentation-only"] == ("none", "none", "delta"))
 expect("a simulation change without approval still needs the full science and pedagogy reviews", rv.RULES["simulation"] == ("full", "full", "delta"))
+# 8. added exercises (teacher 2026-11-12): whole exercises added or replaced, every other exercise as passed → a delta
+# review for all three; anything else of the set changed as well → the classification as before
+t = project(); git(t, "init", "-q"); git(t, "config", "user.email", "t@t"); git(t, "config", "user.name", "t"); git(t, "add", "."); git(t, "commit", "-qm", "v1")
+for n in ("science", "pedagogy", "visual"): report(t, n, part="exercises")
+git(t, "add", "."); git(t, "commit", "-qm", "exercise reviews"); B0, H0, HL = git(t, "rev-parse", "HEAD").strip(), h(t, part="exercises"), h(t)
+X = t / "content/fi/FY3" / LESSON / "exercises"; E, S, A, F = X / "exercises.json", X / "solutions.md", t / "lessons/FY3" / LESSON / "answers.py", t / "lessons/FY3" / LESSON / "figures.py"
+ORIG = {f: f.read_text() for f in (E, S, A, F)}
+NEW = {"id": f"{LESSON}-L2-90", "level": 2, "kind": ["calculation"], "text": "Suljetun astian kaasun lämpötila nousee arvosta $20\\,{}^\\circ\\text{C}$ arvoon $45\\,{}^\\circ\\text{C}$. Kuinka paljon lämpötila muuttuu kelvineinä?",
+       "answer": 25, "unit": "K", "tolerance": 0.02}
+SOL = f"## {LESSON}-L2-90\n**Annettu:** $\\theta_1 = 20\\,{{}}^\\circ\\text{{C}}$, $\\theta_2 = 45\\,{{}}^\\circ\\text{{C}}$\n**Kysytty:** $\\Delta T$\n**Vastaus:** $\\Delta T = 25\\,\\text{{K}}$\n"
+def put(entries=(NEW,), level="level2", drop=None, edit=None, sol=SOL, ans=f'a["{LESSON}-L2-90"] = 45 - 20\n', fig=None):
+    """The exercise set as passed, with `entries` added to `level`, `drop` removed, `edit(ex)` applied, `fig` (old, new) in figures.py."""
+    for f in (E, S, A, F): f.write_text(ORIG[f])
+    ex = json.loads(ORIG[E]); ex[level] += [dict(e) for e in entries]
+    if drop: ex = {k: [e for e in v if e["id"] != drop] for k, v in ex.items()}
+    if edit: edit(ex)
+    old_sol = re.sub(rf"^## {drop}\n.*?(?=^## |\Z)", "", ORIG[S], flags=re.S | re.M) if drop else ORIG[S]
+    E.write_text(json.dumps(ex, ensure_ascii=False, indent=2)); S.write_text(old_sol.rstrip("\n") + "\n\n" + sol)
+    head, _, tail = ORIG[A].rpartition("\nprint("); A.write_text(head + "\n" + ans + "print(" + tail)
+    if fig: F.write_text(ORIG[F].replace(*fig, 1))
+def ex_scope(): return run(t, "reviews.py", "scope", LESSON, "--exercises")[1]
+put(); out = ex_scope()
+expect("one exercise added: delta for all three, category added-exercise", out.count(": delta") == 3 and "categories=added-exercise" in out and "full" not in out, out)
+expect("... and the lesson's own hash is unchanged", h(t) == HL)
+code, o2 = run(t, "review_packet.py", LESSON, "--role", "science", "--exercises"); xs = (X / "review/packet-science.md").read_text()
+expect("added-exercise science packet: the new exercise in full, answers.py, the whole set listed, the previous report, the scope line, no SVG",
+       code == 0 and "Delta review: whole exercises added" in xs and f"#### {LESSON}-L2-90" in xs and "## " + LESSON + "-L2-90" in xs and "answers.py (now" in xs
+       and "The whole set now" in xs and f"`{LESSON}-L1-01`" in xs and "Your previous report" in xs and f"SCOPE: delta added-exercise from {H0} base {B0[:12]}" in xs and "<svg" not in xs, o2 + xs[:300])
+code, o2 = run(t, "review_packet.py", LESSON, "--role", "pedagogy", "--exercises"); xp = (X / "review/packet-pedagogy.md").read_text()
+expect("... pedagogy packet: the same exercise and list, no answers.py", code == 0 and "whole exercises added" in xp and "The whole set now" in xp and "answers.py (now" not in xp, o2)
+code, o2 = run(t, "review_packet.py", LESSON, "--role", "visual", "--exercises"); xv = (X / "review/packet-visual.md").read_text()
+expect("... visual packet: the same delta", code == 0 and "Mode: **delta**" in xv and "whole exercises added" in xv and "SCOPE: delta added-exercise" in xv, o2)
+put(drop=f"{LESSON}-L2-07"); out = ex_scope()   # its solution goes with it
+expect("one exercise replaced (an id removed, another added): delta for all three", out.count(": delta") == 3 and "categories=added-exercise" in out, out)
+def rewrite(ex): ex["level3"][-1]["text"] = "Täysin uusi tehtävä: polkupyörän renkaan ilmanpaine mitataan aamulla ja iltapäivällä, ja tulos selitetään hiukkasmallilla."
+sol5 = re.search(rf"^## {LESSON}-L3-05\n.*?(?=^## |\Z)", ORIG[S], re.S | re.M).group(0)
+put(entries=(), sol="", ans="", edit=rewrite); S.write_text(ORIG[S].replace(sol5, f"## {LESSON}-L3-05\nUusi ratkaisu: renkaan tilavuus pysyy lähes vakiona, joten paine kasvaa lämpötilan mukana.\n\n"))
+out = ex_scope()
+expect("an exercise rewritten as a whole under its own id: a replacement, delta", out.count(": delta") == 3 and "categories=added-exercise" in out, out)
+put(edit=lambda ex: ex["level1"][0].update(text=ex["level1"][0]["text"].replace("a", "e", 1))); out = ex_scope()
+expect("one added AND one character of another exercise changed: as before (full science review)", "science: full" in out and "added-exercise" not in out, out)
+put(sol=SOL, ans=f'a["{LESSON}-L2-90"] = 45 - 20\na["{LESSON}-L1-01"] = -1\n'); out = ex_scope()
+expect("one added and a surviving exercise's answer changed in answers.py: as before", "science: full" in out and "added-exercise" not in out, out)
+VAR = ('\n\nFIGURES = {', '\n\ndef few_points():\n    f = Fig("fy33-few", 330, "Kolme mittauspistettä.")\n    return f.svg()\n\n\nFIGURES = {"few-points": few_points, ')
+put(entries=(dict(NEW, figure=f"{LESSON}/few-points"),), fig=VAR); out = ex_scope()
+expect("an added exercise that shows a new figure variant: delta for all three", out.count(": delta") == 3 and "categories=added-exercise" in out, out)
+put(fig=("(100, 102.5)]:", "(100, 103.0)]:")); out = ex_scope()
+expect("one added and the figure a surviving exercise shows changed: as before (figure, full)", "science: full" in out and "pedagogy: full" in out and "added-exercise" not in out, out)
+def scoped(name, frm=H0, base=B0):
+    (X / "review" / f"{name}.md").write_text(f"VERDICT: PASS\nCONTENT-HASH: {h(t, part='exercises')}\nSCOPE: delta added-exercise from {frm} base {base[:12]}\n\n## Blocking\nnone\n")
+put()
+for n in ("science", "pedagogy", "visual"): scoped(n)
+git(t, "add", "."); git(t, "commit", "-qm", "an exercise added, delta reviews")
+code, out = run(t, "reviews.py", "verify")
+expect("verify accepts the delta PASS of an added exercise", code == 0 and "ERROR" not in out and "exercises: reviewed" in out, out[-600:])
+put(edit=lambda ex: ex["level1"][0].update(text=ex["level1"][0]["text"].replace("a", "e", 1)))
+for n in ("science", "pedagogy", "visual"): scoped(n)
+code, out = run(t, "reviews.py", "verify")
+expect("verify rejects a delta PASS when another exercise changed too", code == 1 and "science's delta PASS covers changes that need its full review" in out, out[-600:])
+put()
+for n in ("science", "pedagogy", "visual"): scoped(n, frm="0" * 16)
+code, out = run(t, "reviews.py", "verify")
+expect("verify rejects a scope line whose base does not hold the hash it names", code == 1 and "does not hold hash" in out, out[-600:])
 expect("real project untouched", snapshot() == REAL)
 print("\n" + ("all review tests passed" if not failures else f"{len(failures)} FAILED: " + ", ".join(failures)))
 sys.exit(1 if failures else 0)

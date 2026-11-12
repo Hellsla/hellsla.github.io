@@ -1370,11 +1370,16 @@ def passed_at(log, folder, part, h):
     return None, False
 
 
+def _history(folder):
+    """The last 80 commits that touched what a lesson's hashes cover (where scope looks for the version a reviewer passed)."""
+    lid = folder.name; legacy = f"content/{folder.parent.name}/{lid}"     # the folder before the languages (Commit.read)
+    return (git("log", "--format=%H", "-n", "80", "--", folder.relative_to(ROOT).as_posix(), courses.code_dir(folder).relative_to(ROOT).as_posix(),
+                legacy, f"tests/sims/{lid}.json", "assets", f"lang/{courses.lang_of(folder)}.json", *figure_paths(folder)) or "").split()
+
+
 def scope(folder, part="lesson"):
     """For each reviewer of `part`: {'mode': none|delta|full, 'base': commit|None, 'why': ..., 'diff': ..., 'categories': [...]}."""
-    lid = folder.name; legacy = f"content/{folder.parent.name}/{lid}"     # the folder before the languages (Commit.read)
-    log = (git("log", "--format=%H", "-n", "80", "--", folder.relative_to(ROOT).as_posix(), courses.code_dir(folder).relative_to(ROOT).as_posix(),
-               legacy, f"tests/sims/{lid}.json", "assets", f"lang/{courses.lang_of(folder)}.json", *figure_paths(folder)) or "").split()
+    log = _history(folder)
     out, cache, now = {}, {}, content_hash(folder, part)
     for name in REVIEWS:
         rep = report(folder, name, part)
@@ -1453,6 +1458,50 @@ def verify_carries(folder, part="lesson"):
         i = REVIEWS.index(name)
         bad = [x for x in cats if RULES[x][i] != "none"]
         if bad: errs.append(f"{what}: carry of {name} covers changes it must review: {', '.join(WHY[x] for x in bad)}")
+    return errs
+
+
+SCOPE_LINE = re.compile(r"SCOPE: delta ([a-z-]+(?:,[a-z-]+)*) from ([0-9a-f]{16}) base ([0-9a-f]{7,40})")
+
+
+def scope_claim(folder, name, part="lesson"):
+    """(categories, from-hash, base commit) a report names on its `SCOPE:` line (one of its first lines; written from an
+    added-exercise delta packet, teacher 2026-11-12), ("malformed", line) for a bad one, None when it has none."""
+    f = review_dir(folder, part) / f"{name}.md"
+    if not f.exists(): return None
+    for l in f.read_text().splitlines()[:6]:
+        if l.startswith("SCOPE:"):
+            m = SCOPE_LINE.fullmatch(l.strip())
+            return (m.group(1).split(","), m.group(2), m.group(3)) if m else ("malformed", l.strip())
+    return None
+
+
+def verify_scopes(folder, part="lesson"):
+    """Errors for delta PASS reports in use that name what they covered (`SCOPE: delta <categories> from <hash> base
+    <commit>`): the commit must hold the version this reviewer passed before, and the change from it to the version the
+    report passes must, re-derived now, still ask no more of this reviewer than a delta review (as verify_carries does
+    for a carry). So a delta PASS for added exercises stands only while nothing else of the set changed."""
+    errs, now, what = [], content_hash(folder, part), folder.name + (" exercises" if part == "exercises" else "")
+    for name in REVIEWS:
+        rep, claim = report(folder, name, part), scope_claim(folder, name, part)
+        if not claim or not rep or rep[0] != "PASS": continue
+        if claim[0] == "malformed": errs.append(f"{what}: {name}.md has a malformed scope line `{claim[1]}` (SCOPE: delta <categories> from <hash> base <commit>)"); continue
+        _, frm, base = claim
+        if rep[1] == now: target = WorkTree()
+        elif carried(folder, name, rep[1], now, part):  # a carried report: the commit that held the version it passed
+            c = passed_at(_history(folder), folder, part, rep[1])[0]
+            if c is None: errs.append(f"{what}: {name}'s delta PASS for {rep[1]} cannot be re-derived: no commit holds that version"); continue
+            target = Commit(c)
+        else: continue                                 # stale, not in use
+        sha = (git("rev-parse", "--verify", "-q", f"{base}^{{commit}}") or "").strip()
+        if not sha: errs.append(f"{what}: {name}'s delta PASS names commit {base}, not in history (CI needs fetch-depth: 0)"); continue
+        if hash_at(sha, folder, part) != frm: errs.append(f"{what}: {name}'s delta PASS: commit {base} does not hold hash {frm}"); continue
+        passed = _passed_before(folder, name, part, 80) | {c["to"] for c in carries(folder, part) if c["reviewer"] == name}
+        if frm not in passed: errs.append(f"{what}: {name}'s delta PASS starts from {frm}, which {name} never passed"); continue
+        cats, _, _ = changes(folder, sha, part, False, target)
+        i = REVIEWS.index(name)
+        bad = sorted(c for c in cats if RULES[c][i] == "full")
+        if bad: errs.append(f"{what}: {name}'s delta PASS covers changes that need its full review: {', '.join(WHY[c] for c in bad)}")
     return errs
 
 
@@ -1595,7 +1644,7 @@ if __name__ == "__main__":
             try: print(describe(f))
             except ValueError as e: print("ERROR", e); bad += 1; continue
             for p in ("lesson", "exercises"):
-                for e in verify_carries(f, p): print("ERROR", e); bad += 1
+                for e in verify_carries(f, p) + verify_scopes(f, p): print("ERROR", e); bad += 1
         import units as _units
         for lang in sorted(set(i18n.languages()) | set(_units.languages())):
             for kind, iid in items(lang):
