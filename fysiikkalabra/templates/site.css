@@ -147,6 +147,10 @@ li{margin:.4rem 0}
 .kaava-rivi.nimeton dd{grid-column:1/-1}
 .kaavat:has(dt) .kaava-rivi.nimeton dd{grid-column:2}   /* a formula not in the MAFY tables: in the formula column, its name cell empty */
 .kaava-rivi.jatko{border-top:0!important;padding-top:0}   /* a named formula's other forms (ρ = m/V, then m = ρV) stand under it */
+/* Johda itse (```johda, scripts/kaavat.py; teacher 2026-11-12): a derivation the exam asks for, the question in view, the steps behind a closed button */
+.johda{margin:1rem 0;padding:.75rem 1rem .35rem;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:12px}
+.johda-q{margin:0 0 .35rem}.johda-q strong{color:var(--accent-deep)}
+@media (max-width:600px){.johda{padding:.65rem .8rem .3rem}}
 .kaavat .katex-display{border:0;background:none;padding:0;margin:0;text-align:left}
 .kaavat .katex-display>.katex{text-align:left}
 @media (max-width:600px){.kaava-rivi{grid-template-columns:minmax(0,1fr);padding:.6rem .8rem}.kaavat:has(dt) .kaava-rivi.nimeton dd{grid-column:1}}

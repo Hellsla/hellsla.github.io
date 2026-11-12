@@ -52,6 +52,29 @@ def rows(body):
     return [(n, t) for n, t, _ in parse(body)]
 
 
+JOHDA = re.compile(r"```johda\n(.*?)```", re.S)
+
+
+def johda_parts(body):
+    """(question, [paragraphs of the derivation]) of a ```johda fence: the question, then a line `---`, then the
+    derivation in paragraphs (blank lines between them; a paragraph may be display maths `$$...$$`)."""
+    q, _, sol = body.partition("\n---\n")
+    paras = [" ".join(p.split("\n")).strip() for p in re.split(r"\n\s*\n", sol.strip()) if p.strip()]
+    return " ".join(q.split()), paras
+
+
+def johda_html(text, label, show):
+    """Each ```johda fence (teacher 2026-11-12: "Johda itse", a result the exam asks to derive is not given as a
+    formula of its own in FY9) as a task in the reading column: the question in view, the derivation behind a closed
+    button like a task's solution (the student tries first). Its maths stays $...$ for build.py's stash."""
+    def one(m):
+        q, paras = johda_parts(m.group(1))
+        body = "".join(p if p.startswith("$$") else f"<p>{p}</p>" for p in paras)
+        return (f'\n\n<div class="johda"><p class="johda-q"><strong>{html.escape(label)}.</strong> {q}</p>'
+                f'<details class="solution johda-sol"><summary>{html.escape(show)}</summary><div class="steps">{body}</div></details></div>\n\n')
+    return JOHDA.sub(one, text)
+
+
 def as_display(text, names=True):
     """Each ```kaavat fence as display maths, one `$$...$$` per formula on its own line (its name before it when
     `names`), the line count kept: what the checks that read LaTeX and words see."""

@@ -189,6 +189,8 @@
     "check": "Tarkista",
     "answer": "Vastaus",
     "solution": "Näytä ratkaisu",
+    "derive": "Johda itse",
+    "derive_show": "Näytä johto",
     "solution_display_steps": [
       "Kaava",
       "Muunnokset",

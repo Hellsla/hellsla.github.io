@@ -189,6 +189,8 @@
     "check": "Check",
     "answer": "Answer",
     "solution": "Show the solution",
+    "derive": "Derive it yourself",
+    "derive_show": "Show the derivation",
     "solution_display_steps": [
       "Formula",
       "Conversions",

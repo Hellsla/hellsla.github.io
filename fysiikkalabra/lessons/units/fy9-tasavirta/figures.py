@@ -10,6 +10,8 @@ kartta      the concept map of the review: the circuit at the top, then current 
             power and energy, and the source, each with three laws
 mokki       the hook answered: the 12 V battery with the LED lights (6,0 W) and the cool box (48 W) in parallel;
             the currents 0,50 A and 4,0 A join into 4,5 A
+piiri       the source model for "Johda itse": a battery (dashed box) as an emf E and an internal resistance R_s in
+            series, its terminals connected to an external resistor R; the current I and the terminal voltage U
 napa        the source model as a graph: the terminal voltage falls linearly with the current, from E on the U axis
             to the short-circuit current on the I axis; the slope is -R_s (schematic, no numbers)
 """
@@ -136,26 +138,28 @@ def hero():
 # --- the concept map ------------------------------------------------------------------------------------------
 def kartta():
     """The concept map, stacked for a phone: the circuit at the top, a spine down the left and four boxes, each with
-    three laws and a grey word beside each."""
-    f = Fig("fy9tv-kartta", 912, "Käsitekartta. Ylhäällä solmu tasavirtapiiri: jännite U, virta I ja resistanssi R. Siitä lähtee alas neljä "
-            "haaraa. Virta ja resistanssi, piirin suureet: virta I = delta Q per delta t, Ohmin laki U = R I ja johtimen "
-            "resistanssi R = rho l per A. Kytkennät, Kirchhoffin lait: sarjaankytkentä R = R1 + R2, rinnankytkentä 1 per R "
-            "= 1 per R1 + 1 per R2 ja silmukan potentiaalin muutosten summa nolla. Teho ja energia, Joulen laki: P = U I, "
-            "vastukselle P = R I toiseen = U toiseen per R ja energia E = P t. Lähde, paristo ja akku: napajännite U = E "
-            "miinus R s I, virta I = E per R plus R s ja akun kapasiteetti Q = I t.", width=380, size=20)
+    the MAFY laws of its topic and a grey word beside each (teacher 2026-11-12: only MAFY's formulas; a result the
+    exam asks to derive is a "Johda itse" task in the text, not a row of the map)."""
     groups = [
-        ("virta ja resistanssi", "suureet", [(r"I = \Delta Q/\Delta t", "virta"), (r"U = RI", "Ohm"), (r"R = \rho l/A", "johdin")]),
-        ("kytkennät", "Kirchhoff", [(r"R = R_1 + R_2", "sarja"), (r"1/R = 1/R_1 + 1/R_2", "rinnan"), (r"\Sigma \Delta V = 0", "silmukka")]),
-        ("teho ja energia", "Joule", [(r"P = UI", "teho"), (r"P = RI^2 = U^2/R", "vastus"), (r"P = W/\Delta t", "energia")]),
-        ("lähde", "paristo, akku", [(r"U = E - R_\text{s} I", "napajännite"), (r"I = E/(R + R_\text{s})", "virta"), (r"I = \Delta Q/\Delta t", "kapasiteetti")]),
+        ("virta ja resistanssi", "suureet", [(r"I = \Delta Q/\Delta t", "virta"), (r"U = RI", "Ohm"), (r"R = \rho \ell/A", "johdin")]),
+        ("kytkennät", "Kirchhoff", [(r"R_\text{kok} = \Sigma R", "sarja"), (r"1/R_\text{kok} = \Sigma 1/R", "rinnan"), (r"\Sigma \Delta V = 0", "silmukka")]),
+        ("teho ja energia", "Joule", [(r"P = UI", "teho"), (r"P = W/\Delta t", "energia")]),
+        ("lähde", "paristo, akku", [(r"\Sigma \Delta V = 0", "napajännite"), (r"I = \Delta Q/\Delta t", "kapasiteetti")]),
     ]
-    hub_y, hub_h, x_box, gh, top, spine = 8, 72, 44, 188, 100, 24
-    f.line(spine, hub_y + hub_h, spine, top + 3 * (gh + 16) + 22, RULE, 3)
+    hub_y, hub_h, x_box, top, spine, gap = 8, 72, 44, 100, 24, 16
+    heights = [56 + 50 * len(rows) for _, _, rows in groups]
+    f = Fig("fy9tv-kartta", top + sum(heights) + gap * (len(groups) - 1) + 8, "Käsitekartta. Ylhäällä solmu tasavirtapiiri: jännite U, virta I ja resistanssi R. Siitä lähtee alas neljä "
+            "haaraa. Virta ja resistanssi, piirin suureet: virta I = delta Q per delta t, Ohmin laki U = R I ja johtimen "
+            "resistanssi R = rho l per A. Kytkennät, Kirchhoffin lait: sarjaankytkentä R kok = summa R, rinnankytkentä 1 per "
+            "R kok = summa 1 per R ja silmukan potentiaalin muutosten summa nolla. Teho ja energia, Joulen laki: P = U I ja "
+            "P = W per delta t. Lähde, paristo ja akku: napajännite silmukan potentiaalin muutosten summasta ja akun "
+            "kapasiteetti virran I = delta Q per delta t avulla.", width=380, size=20)
+    ys = [top + sum(heights[:k]) + gap * k for k in range(len(groups))]
+    f.line(spine, hub_y + hub_h, spine, ys[-1] + 22, RULE, 3)
     f.rect(8, hub_y, 364, hub_h, SAND_LIGHT, SAND, 2.5, 12)
     f.tex(190, hub_y + 22, r"\text{tasavirtapiiri}", "middle", INK)
     f.tex(190, hub_y + 51, r"U,\ I,\ R", "middle", INK)
-    for k, (head, sub, rows) in enumerate(groups):
-        y = top + k * (gh + 16)
+    for (head, sub, rows), y, gh in zip(groups, ys, heights):
         f.line(spine, y + 22, x_box, y + 22, RULE, 3)
         f.rect(x_box, y, 372 - x_box, gh, WHITE, MUTED, 2, 10)
         f.tex(x_box + 14, y + 22, r"\textbf{" + head + "}", "start", INK)
@@ -202,6 +206,39 @@ def mokki():
     return f.svg()
 
 
+# --- the source model, for "Johda itse" ------------------------------------------------------------------------
+def piiri():
+    """The battery as a model: inside a dashed box the emf E (a source symbol) and the internal resistance R_s in
+    series, the terminals + and - on the box's right edge, the voltage U between them; the external resistor R is
+    connected to the terminals, and the violet current I runs from + through R back to -. No numbers."""
+    f = Fig("fy9tv-piiri", 330, "Kytkentäkaavio, ei lukuarvoja. Vasemmalla katkoviivalaatikko, paristo. Sen sisällä on "
+            "sarjassa lähdejännite E, piirretty jännitelähteen merkillä, ja sisäinen resistanssi R s, piirretty vastuksena. "
+            "Laatikon oikeassa reunassa ovat pariston navat, plusnapa ylhäällä ja miinusnapa alhaalla, ja niiden välissä "
+            "napajännite U. Napoihin on kytketty ulkoinen vastus R. Violetti virta I kulkee plusnavasta vastuksen R kautta "
+            "takaisin miinusnapaan.", size=24)
+    xs, xt, xR, yt, yb = 150, 310, 470, 60, 290
+    f.rect(50, 28, xt - 50, 254, "none", MUTED, 2.5, 12, extra='stroke-dasharray="9 7"')
+    f.tex(64, 262, r"\text{paristo}", "start", MUTED, size=18)
+    wire(f, (xs, 130), (xs, yt), (xt, yt), (xR, yt), (xR, 140))
+    wire(f, (xR, 220), (xR, yb - 30), (xt, yb - 30), (xs, yb - 30), (xs, 240))
+    source(f, xs, 150)
+    f.tex(xs + 34, 134, r"+", "start", INK, size=22)
+    f.tex(xs - 34, 150, r"E", "end", INK)
+    resistor(f, xs, 205, vertical=True, length=56)
+    f.tex(xs - 26, 205, r"R_\text{s}", "end", INK)
+    node(f, xt, yt); node(f, xt, yb - 30)
+    f.tex(xt + 14, yt + 24, r"+", "start", INK, size=22)
+    f.tex(xt + 14, yb - 30 - 24, r"-", "start", INK, size=22)
+    f.arrow(xt - 30, yb - 44, xt - 30, yt + 14, MUTED, 2.5, 12)
+    f.tex(xt - 42, (yt + yb - 30) / 2, r"U", "end", MUTED)
+    resistor(f, xR, 180, vertical=True, length=80)
+    f.tex(xR + 24, 180, r"R", "start", INK)
+    current_head(f, (xt + xR) / 2, yt, "r")
+    f.tex((xt + xR) / 2, yt - 26, r"I", "middle", CUR)
+    current_head(f, (xt + xR) / 2, yb - 30, "l")
+    return f.svg()
+
+
 # --- the source as a graph ------------------------------------------------------------------------------------
 def napa():
     """The terminal voltage against the current: a falling straight line from E on the U axis to I_k on the I axis,
@@ -226,7 +263,8 @@ def napa():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "kartta": kartta, "mokki": mokki, "napa": napa}
+FIGURES = {"hero": hero, "kartta": kartta, "mokki": mokki, "piiri": piiri, "napa": napa}
 REUSE = {"kartta": "reveals: the key laws of FY6 direct-current circuits, power and sources",
          "mokki": "reveals: 0,50 A + 4,0 A = 4,5 A from a 12 V battery to 6,0 W and 48 W in parallel",
+         "piiri": "safe: the source model E and R_s in series with an external R, no numbers",
          "napa": "safe: the (I, U) line of a source with E, I_k and the slope -R_s, no numbers"}

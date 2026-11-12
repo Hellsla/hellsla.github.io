@@ -119,19 +119,16 @@ fy9-sailymislait	329	m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'	m_1 v_1 + m_2 v_2 =
 fy9-sailymislait	339	s_\text{p} = v_0\,t_\text{r} + \frac{v_0^2}{2a}	s_\text{p} = v_0\,t_\text{r} + \frac{v_0^2}{2a}			ei MAFY:ssa		ei MAFY:ssa
 fy9-sailymislait	339	P_\text{vesi} = \eta\rho Qgh	P_\text{hydro} = \eta\rho Qgh			ei MAFY:ssa		ei MAFY:ssa
 fy9-sailymislait	339	P_\text{tuuli} = \tfrac12\eta\rho Av^3	P_\text{wind} = \tfrac12\eta\rho Av^3			ei MAFY:ssa		ei MAFY:ssa
-fy9-tasavirta	257	I = \frac{\Delta Q}{\Delta t}	I = \frac{\Delta Q}{\Delta t}	sähkövirta	electric current	MAFY	Sähkömagnetismin kaavoja	
-fy9-tasavirta	257	U = RI	U = RI	jännitehäviö johtimessa	voltage drop across a conductor	MAFY	Virtapiirien kaavoja	
-fy9-tasavirta	257	R = \rho\,\frac{\ell}{A}	R = \rho\,\frac{\ell}{A}	johtimen resistanssi	resistance of a conductor	MAFY	Virtapiirien kaavoja	tunnukset vaihdettu MAFY:n mukaisiksi 2026-11-12 (docs/fy9/mafy-tunnukset.tsv)
-fy9-tasavirta	267	R_\text{kok} = \Sigma R	R_\text{tot} = \Sigma R	sarjaan kytkettyjen vastusten kokonaisresistanssi	total resistance of resistors in series	MAFY	Virtapiirien kaavoja	tunnukset vaihdettu MAFY:n mukaisiksi 2026-11-12 (docs/fy9/mafy-tunnukset.tsv)
-fy9-tasavirta	267	\frac{1}{R_\text{kok}} = \Sigma\frac{1}{R}	\frac{1}{R_\text{tot}} = \Sigma\frac{1}{R}	rinnan kytkettyjen vastusten kokonaisresistanssi	total resistance of resistors in parallel	MAFY	Virtapiirien kaavoja	tunnukset vaihdettu MAFY:n mukaisiksi 2026-11-12 (docs/fy9/mafy-tunnukset.tsv)
-fy9-tasavirta	267	\Sigma I_\text{t} = \Sigma I_\text{l}	\Sigma I_\text{in} = \Sigma I_\text{out}	Kirchhoffin 1. laki	Kirchhoff's first law	MAFY	Virtapiirien kaavoja	tunnukset vaihdettu MAFY:n mukaisiksi 2026-11-12 (docs/fy9/mafy-tunnukset.tsv)
-fy9-tasavirta	267	\Sigma \Delta V = 0	\Sigma \Delta V = 0	Kirchhoffin 2. laki	Kirchhoff's second law	MAFY	Virtapiirien kaavoja	
-fy9-tasavirta	278	P = UI	P = UI	tehonkulutus johtimessa	power consumed in a conductor	MAFY	Virtapiirien kaavoja	
-fy9-tasavirta	278	P = RI^2 = \frac{U^2}{R}	P = RI^2 = \frac{U^2}{R}			ei MAFY:ssa	Virtapiirien kaavoja	MAFY:ssa vain $P = UI$
-fy9-tasavirta	278	P = \frac{W}{\Delta t}	P = \frac{W}{\Delta t}	teho	power	MAFY	Mekaniikan kaavoja	kirjoitettu MAFY:n muotoon 2026-11-12 (docs/fy9/mafy-tunnukset.tsv)
-fy9-tasavirta	288	U = E - R_\text{s} I	U = E - R_\text{s} I			ei MAFY:ssa		ei MAFY:ssa
-fy9-tasavirta	288	I = \frac{E}{R + R_\text{s}}	I = \frac{E}{R + R_\text{s}}			ei MAFY:ssa		ei MAFY:ssa
-fy9-tasavirta	288	I = \frac{\Delta Q}{\Delta t}	I = \frac{\Delta Q}{\Delta t}	sähkövirta	electric current	MAFY	Sähkömagnetismin kaavoja	kirjoitettu MAFY:n muotoon 2026-11-12 (docs/fy9/mafy-tunnukset.tsv)
+fy9-tasavirta	253	I = \frac{\Delta Q}{\Delta t}	I = \frac{\Delta Q}{\Delta t}	sähkövirta	electric current	MAFY	Sähkömagnetismin kaavoja	kirjoitettu MAFY:n muotoon 2026-11-12 (docs/fy9/mafy-tunnukset.tsv)
+fy9-tasavirta	253	U = RI	U = RI	jännitehäviö johtimessa	voltage drop across a conductor	MAFY	Virtapiirien kaavoja	
+fy9-tasavirta	253	R = \rho\,\frac{\ell}{A}	R = \rho\,\frac{\ell}{A}	johtimen resistanssi	resistance of a conductor	MAFY	Virtapiirien kaavoja	tunnukset vaihdettu MAFY:n mukaisiksi 2026-11-12 (docs/fy9/mafy-tunnukset.tsv)
+fy9-tasavirta	263	R_\text{kok} = \Sigma R	R_\text{tot} = \Sigma R	sarjaan kytkettyjen vastusten kokonaisresistanssi	total resistance of resistors in series	MAFY	Virtapiirien kaavoja	tunnukset vaihdettu MAFY:n mukaisiksi 2026-11-12 (docs/fy9/mafy-tunnukset.tsv)
+fy9-tasavirta	263	\frac{1}{R_\text{kok}} = \Sigma\frac{1}{R}	\frac{1}{R_\text{tot}} = \Sigma\frac{1}{R}	rinnan kytkettyjen vastusten kokonaisresistanssi	total resistance of resistors in parallel	MAFY	Virtapiirien kaavoja	tunnukset vaihdettu MAFY:n mukaisiksi 2026-11-12 (docs/fy9/mafy-tunnukset.tsv)
+fy9-tasavirta	263	\Sigma I_\text{t} = \Sigma I_\text{l}	\Sigma I_\text{in} = \Sigma I_\text{out}	Kirchhoffin 1. laki	Kirchhoff's first law	MAFY	Virtapiirien kaavoja	tunnukset vaihdettu MAFY:n mukaisiksi 2026-11-12 (docs/fy9/mafy-tunnukset.tsv)
+fy9-tasavirta	263	\Sigma \Delta V = 0	\Sigma \Delta V = 0	Kirchhoffin 2. laki	Kirchhoff's second law	MAFY	Virtapiirien kaavoja	
+fy9-tasavirta	274	P = UI	P = UI	tehonkulutus johtimessa	power consumed in a conductor	MAFY	Virtapiirien kaavoja	
+fy9-tasavirta	274	P = \frac{W}{\Delta t}	P = \frac{W}{\Delta t}	teho	power	MAFY	Mekaniikan kaavoja	kirjoitettu MAFY:n muotoon 2026-11-12 (docs/fy9/mafy-tunnukset.tsv)
+fy9-tasavirta	340	I = \frac{\Delta Q}{\Delta t}	I = \frac{\Delta Q}{\Delta t}	sähkövirta	electric current	MAFY	Sähkömagnetismin kaavoja	kirjoitettu MAFY:n muotoon 2026-11-12 (docs/fy9/mafy-tunnukset.tsv)
 fy9-voimat	190	\Sigma\overline{F} = \overline{0} \ \Leftrightarrow\ \overline{v} = \text{vakio}	\Sigma\overline{F} = \overline{0} \ \Leftrightarrow\ \overline{v} = \text{constant}			ei MAFY:ssa		ei MAFY:ssa
 fy9-voimat	190	\Sigma\overline{F} = m\overline{a}	\Sigma\overline{F} = m\overline{a}	Newtonin 2. laki (dynamiikan peruslaki)	Newton's second law (fundamental law of dynamics)	MAFY	Mekaniikan kaavoja	
 fy9-voimat	190	\overline{F}_{AB} = -\overline{F}_{BA}	\overline{F}_{AB} = -\overline{F}_{BA}			ei MAFY:ssa		ei MAFY:ssa
