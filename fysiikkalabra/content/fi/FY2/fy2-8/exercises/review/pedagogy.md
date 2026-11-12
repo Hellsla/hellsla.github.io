@@ -1,20 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 0d804621ffb859e2
-Round: 2
-Mode: full packet, judged on L2-08
+CONTENT-HASH: c94e399e0c9db48d
+SCOPE: delta added-exercise from 0d804621ffb859e2 base 611fb7d5c174
+
+Round: 1
 
 ## Blocking
-- none
 
 ## Polish
-- fy2-8-L2-08 — option lengths are now 119/116/125/114/122; the correct one (C) is still longest by 3 characters, acceptable. Shorten by one clause if edited again.
-- fy2-8-L2-08 option B ends "ero on epävarmuutta suurempi" and A says "5 kt suurempi kuin 10 kt": both add a false number claim, which is good (they can be refuted from the table), but A's wording "ero 5 kt on suurempi kuin epävarmuus 10 kt" is so plainly false that it may read as a typo; consider "ero on vähintään epävarmuuden suuruinen".
-- Carried over: L1-06 correct option longest by 3; L3-05 c) repeats b).
+- solutions.md fy2-8-L1-09 — the MAFY value is 47 MJ/kg while the FY2 figure of heating values shows 48 for natural gas; the 4 % tolerance covers both (5,17 and 5,28 kg), but name the rounding: "taulukkojen arvot 47-48".
+- exercises.json fy2-8-L1-09 — the emission factor 55 g/MJ is given without a source, as the teacher decided; the solution could say it is a rounded typical value so a student does not take it for a statistic.
+- exercises.json fy2-8-L2-09 — "Esimerkkikoulu ... 20,0 MWh" is a small school; a "pieni koulu" or 200 MWh gives more realistic tonnes. Optional.
 
 ## Checked
-- Round 1 Blocking closed: all five options are written in the same pattern (claim, koska, reason) and sit at 114-125 characters; no option is the only one with numbers.
-- Solution and feedback add the uncertainty intervals 510-530 and 410-430 kt that do not overlap: true, and a clear way to see why 100 kt counts.
-- Distractors still differ in type: ignoring uncertainty, cause overreach, extrapolation (170 kt in 2034 checks: 420 - 10*25), wrong column.
-- The "5 kt" option is checkable by the student from the table (520 - 515).
-- Delta m rests on FY1 measurement uncertainty; level 2 data interpretation fits.
-- Phone captures not opened; rest of the set unchanged.
+- L1-09: 47 x 2,0 = 94 MJ, 55 g/MJ x 94 MJ = 5170 g = 5,17 kg; the answer agrees with the solution; the hint names only the table; the question is last.
+- L1-09 solution gives the two-step chain (energy, then emission) and checks 2,6 kg CO2 per kg of gas.
+- L2-09: (820 - 490) g/kWh x 20 000 kWh = 6,6 t; the figure gives both bars with values, the description gives them to a reader who cannot see it, and the figure does not show the difference.
+- L2-09 solution reads the bars, converts MWh to kWh and g to t, and checks both totals separately (16,4 t and 9,8 t).
+- Level fit; neither repeats the worked example; the set now has a graph-reading task.
+- Hash identical at start and end (c94e399e0c9db48d).

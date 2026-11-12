@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 0d804621ffb859e2
-Round: 2
+CONTENT-HASH: c94e399e0c9db48d
+SCOPE: delta added-exercise from 0d804621ffb859e2 base 611fb7d5c174
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] fy2-8-L2-08 (8-16) data table at 390 px — the caption "Esimerkkivoimalan tuotanto ja päästö (esimerkkiaineisto)" is still clipped (table 408 px in a 328 px column); all three data columns are visible. Existing house pattern — let the caption wrap.
-- [Minor] fy2-8-L2-08 Mallivastaus at 390 px — the new "$510$–$530\,\text{kt}$ ja $410$–$430\,\text{kt}$" breaks after the en dash ("410–" / "430 kt"); use a non-breaking form, e.g. wrap each interval in one formula "$510\text{–}530\,\text{kt}$".
+- [Minor] fy2-8-L1-09 Järkevyys — "$2{,}6$-kertaisen" breaks with the hyphen at the start of the next line ("2,6 / -kertaisen"); write "noin $2{,}6$ kertaa massan" so it cannot split.
 
 ## Checked
-- Round 2. Rendered live (Playwright, rebuilt preview/fy2-8.html; no review/shots directory exists for this hash) at 390 and 1280 px, closed and with a wrong choice committed (feedback) and Mallivastaus open. The round-1 "suora" wording is fixed ("tämä trendi"). The new stem ("vuosittainen elinkaaripäästö hiilidioksidiekvivalentteina $m$"), the options and the interval sentence read fluently; $\Delta m = 10\,\text{kt}$ and the years render correctly. No page overflow; at 1280 px nothing scrolls.
-- From the diff only: the remaining solutions.md wording past the visible card.
+- fy2-8-open-exercises-1280-10: L1-09 solution end (Sijoitus with stacked g/MJ units, Vastaus, Järkevyys); upright units, decimal comma, nothing clipped. Its task text and Vihje box judged from source only.
+- fy2-8-open-exercises-L2-1280-10: L2-09 (8-18) task, horizontal bar chart (e (g CO2-ekv./kWh) axis, ticks, values and ranges at bar ends, legend fossiilinen/muu, grey tones plus legend), answer row, solution start.
+- fy2-8-open-exercises-L2-1280-11: L2-09 Kaava, Muunnokset, Sijoitus, Vastaus, Järkevyys.
+- 360 px from the packet's layout check only.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

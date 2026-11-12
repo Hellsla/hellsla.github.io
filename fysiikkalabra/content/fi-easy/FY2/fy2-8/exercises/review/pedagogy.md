@@ -1,21 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 753ff998604d8f0a
-Mode: delta (new task fy2-8-L2-08 only)
-Round: 2
+CONTENT-HASH: 4d5fdc3490106f9c
+SCOPE: delta added-exercise from 753ff998604d8f0a base 611fb7d5c174
 
 ## Blocking
-- none
-
-## Fixed
-- exercises.json L2-08 stem: the added sentence defined life-cycle emission as emission over the plant's whole lifetime, which contradicts "vuosittainen" and the Finnish; now "Elinkaaripäästö sisältää kaikki päästöt polttoaineen hankinnasta sähköntuotantoon asti."
+(none)
 
 ## Polish
-- none
+- solutions.md fy2-8-L1-09, Muunnokset: "5170 g = 5,17 kg" is listed before the 5170 g has been calculated. Fix: "Lopuksi g -> kg: 1000 g = 1 kg."
+- exercises.json fy2-8-L1-09: the task asks "kuinka paljon hiilidioksidia" but the factor is called "päästökerroin"; optional: "päästökerroin (CO2) on 55 g/MJ". The factor is given without a source, as the teacher decided.
 
 ## Checked
-- fy2-8-L2-08 (exercises.json and solutions.md) against the reviewed Finnish: same table (5 rows, E and m), uncertainty 10 kt, correct option (2020 to 2024, 100 kt = 10 x 10 kt), exactly one correct flag, same five choices in the same order, tolerance and kinds equal.
-- Recomputed: 520 - 420 = 100 kt; 520 - 515 = 5 kt < 10 kt; intervals 510-530 and 410-430 kt do not overlap (2020/2021 intervals 510-530 and 505-525 do); slope -25 kt/a x 10 a from 420 gives 170 kt for 2034; 1000 GWh in both years sits in column E.
-- Each distractor still has one error and feedback that names it (wrong uncertainty comparison, unsupported cause, extrapolation, wrong column); no feedback gives a false number.
-- Solutions section keeps Find / Principle / Model answer as in fi; numbers equal.
-- NOTES.md §12: short sentences, one idea each, same terms as fi (epävarmuus, epävarmuusväli); the added sentence "Aineisto tukee päätelmää, kun taulukon luvut riittävät sen perusteluksi" explains the stem without hinting the answer.
-- check_i18n.py: nothing for fy2-8; build.py fy2-8 succeeds.
+- L1-09: situation first, lookup instruction, the emission factor and its meaning explained, question last; MAFY hint names only the table (teacher's decision); key 47 * 2,0 * 55 g = 5,17 kg; tolerance 4 % covers other tables' values.
+- L1-09 solution is staged (E = Hm, then m = eE, g to kg, sense check 2,6 kg CO2 per kg gas); level 1 fits (two formulas, one lookup).
+- L2-09: the figure is needed; its description lists every bar value (820 and 490) to a reader who cannot see it, and does not state the difference; fossil bars are separated by shade and by the legend.
+- L2-09 key: (820 - 490) g/kWh * 20 000 kWh = 6,6 t; the solution converts MWh to kWh and g to t, and checks by computing both emissions (16,4 t and 9,8 t).
+- L2-09 marks the school as an example and states that lifecycle emission covers all stages; source IPCC is in the figure description.
+- Level 2 fits (read two values, subtract, convert); neither task repeats the worked example or another task; the same-figure rule is respected.
+- Finnish clear in short sentences; case forms after numbers and units correct.
+- Hash is the same at the start and the end (4d5fdc3490106f9c).
