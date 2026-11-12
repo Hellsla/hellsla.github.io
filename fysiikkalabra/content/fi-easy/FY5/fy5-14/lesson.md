@@ -2,8 +2,8 @@
 
 > **Miksi** ohi ajavan ambulanssin sireeni kuulostaa madaltuvan juuri ohitushetkellä, vaikka sireeni itse soi koko ajan samalla tavalla?
 
-<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: kaupungin katu kesäpäivänä. Valkoinen ambulanssi, jonka katolla palaa sininen hälytysvalo, ajaa kadulla vasemmalta oikealle. Oikealla jalkakäytävällä suojatien vieressä seisoo jalankulkija, jonka ohi ambulanssi on juuri ajamassa. Taustalla on taloja ja koivu." class="fig-hero" style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy514h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient></defs>
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: kaupungin katu kesäpäivänä. Valkoinen ambulanssi, jonka katolla palaa sininen hälytysvalo, ajaa kadulla vasemmalta oikealle. Sireenin ääni leviää kaarina. Auton edessä kaaret ovat lähellä toisiaan ja auton takana kaukana toisistaan. Oikealla jalkakäytävällä suojatien vieressä seisoo jalankulkija, jonka ohi ambulanssi on juuri ajamassa. Taustalla on taloja ja koivu." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy514h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><clipPath id="fy514h-clip"><rect x="0" y="0" width="1200" height="458"/></clipPath></defs>
   <rect x="0" y="0" width="1200" height="420" fill="url(#fy514h-sky)"/>
   <path d="M148,126 Q146.5,99 178.5,102 Q191,73 223,83 Q252,67 268,97 Q297,100.5 293.5,126 Z" fill="#ffffff" stroke-linejoin="round"/>
   <path d="M806,92 Q805,71.5 829,74 Q838.5,52.5 862.5,59.5 Q884,47.5 896,70.5 Q917.5,73 915,92 Z" fill="#ffffff" stroke-linejoin="round"/>
@@ -62,6 +62,7 @@
   <rect x="790" y="586" width="80" height="6" fill="#ffffff" fill-opacity="0.8"/>
   <rect x="940" y="586" width="80" height="6" fill="#ffffff" fill-opacity="0.8"/>
   <rect x="1090" y="586" width="80" height="6" fill="#ffffff" fill-opacity="0.8"/>
+  <g clip-path="url(#fy514h-clip)"><circle cx="475" cy="372" r="100" fill="none" stroke="#1971c2" stroke-width="5" stroke-opacity="0.5"/><circle cx="435" cy="372" r="200" fill="none" stroke="#1971c2" stroke-width="5" stroke-opacity="0.5"/><circle cx="395" cy="372" r="300" fill="none" stroke="#1971c2" stroke-width="5" stroke-opacity="0.5"/><circle cx="355" cy="372" r="400" fill="none" stroke="#1971c2" stroke-width="5" stroke-opacity="0.5"/><circle cx="315" cy="372" r="500" fill="none" stroke="#1971c2" stroke-width="5" stroke-opacity="0.5"/><circle cx="275" cy="372" r="600" fill="none" stroke="#1971c2" stroke-width="5" stroke-opacity="0.5"/><circle cx="235" cy="372" r="700" fill="none" stroke="#1971c2" stroke-width="5" stroke-opacity="0"/><circle cx="195" cy="372" r="800" fill="none" stroke="#1971c2" stroke-width="5" stroke-opacity="0"/></g>
   <path d="M360,568 V418 Q360,400 378,400 H660 L720,458 Q740,468 740,488 V568 Z" fill="#ffffff" stroke="#1f2933" stroke-width="4" stroke-linejoin="round"/>
   <rect x="364" y="498" width="372" height="22" fill="#ffc078"/>
   <path d="M666,412 L712,460 H666 Z" fill="#eef5f9" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
@@ -497,22 +498,32 @@ Huojuntaa käytetään soittimien virittämiseen. Kun kieltä kiristetään koht
 Ajatellaan, että äänilähde liikkuu. Jokainen aaltorintama lähtee siitä kohdasta, jossa lähde on sillä hetkellä. Rintama leviää ilmassa nopeudella $v$ joka suuntaan. Lähteen jaksonaika on $T_0 = \tfrac{1}{f_0}$. Sinä aikana edellinen rintama etenee matkan $v T_0$. Lähde ehtii kulkea sen perässä matkan $v_\text{s} T_0$. Lähteen edessä rintamien väli eli aallonpituus on siksi $(v - v_\text{s}) T_0$. Lähteen takana se on $(v + v_\text{s}) T_0$. Paikallaan oleva kuulija kuulee taajuuden $f = \tfrac{v}{\lambda}$. Siksi lähestyvän lähteen ääni kuulostaa korkeammalta ja loittonevan matalammalta.
 
 <svg data-fig="doppler" viewBox="0 0 600 424" role="img" aria-label="Kaavakuva ylhäältä katsottuna, kaksi tilannetta allekkain. Ylhäällä lähde liikkuu oikealle nopeudella, joka on 0,4 kertaa äänen nopeus, mitä esittää sininen nopeusnuoli. Aaltorintamat ovat ympyröitä, jotka ovat lähteneet lähteen aiemmista paikoista, joten ne ovat lähteen edessä tiheässä ja sen takana harvassa. Oikealla olevan kuulijan A suunnassa aallonpituus lambda A on lyhyt ja vasemmalla olevan kuulijan B suunnassa aallonpituus lambda B pitkä. Alhaalla lähde on paikallaan ja aaltorintamat ovat samankeskisiä ympyröitä yhtä suurin välein. Kuulija liikkuu vasemmalle kohti lähdettä, mitä esittää sininen nopeusnuoli; aallonpituus lambda on sama kaikkiin suuntiin." style="max-width:100%;font-size:24px">
-  <defs><clipPath id="fy514-clip1"><rect x="26" y="34" width="548" height="140"/></clipPath><clipPath id="fy514-clip2"><rect x="26" y="236" width="548" height="144"/></clipPath></defs>
+  <defs><clipPath id="fy514-clip1"><rect x="66" y="34" width="478" height="140"/></clipPath><clipPath id="fy514-clip2"><rect x="26" y="262" width="548" height="118"/></clipPath></defs>
   <g clip-path="url(#fy514-clip1)"><circle cx="281.5" cy="120" r="46" fill="none" stroke="#6b7480" stroke-width="2"/><circle cx="263" cy="120" r="92" fill="none" stroke="#6b7480" stroke-width="2"/><circle cx="245" cy="120" r="138" fill="none" stroke="#6b7480" stroke-width="2"/><circle cx="226.5" cy="120" r="184" fill="none" stroke="#6b7480" stroke-width="2"/><circle cx="208" cy="120" r="230" fill="none" stroke="#6b7480" stroke-width="2"/><circle cx="189.5" cy="120" r="276" fill="none" stroke="#6b7480" stroke-width="2"/></g>
   <rect x="280" y="109" width="11" height="21.5" rx="2" fill="#1f2933"/>
   <path d="M291,109 L305.5,96.5 V143.5 L291,131 Z" fill="#8a96a3" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
   <line x1="314" y1="80" x2="363" y2="80" stroke="#1971c2" stroke-width="3" stroke-linecap="butt"/>
   <path d="M376,80 L362,86.5 L362,73.5 Z" fill="#1971c2" stroke-linejoin="round"/>
   <foreignObject x="384" y="65.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\overline{v}_\text{s}$</div></foreignObject>
-  <line x1="566" y1="133" x2="560.5" y2="154" stroke="#1f2933" stroke-width="2.4" stroke-linecap="butt"/>
-  <line x1="566" y1="133" x2="571.5" y2="154" stroke="#1f2933" stroke-width="2.4" stroke-linecap="butt"/>
-  <rect x="559" y="111" width="14.5" height="24" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="566" cy="103" r="7.2" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
+  <path d="M561,154 L562,124 H570 L571,154 H567 L566,134 L565,154 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <path d="M559,126 Q558.5,104 566,103 Q573.5,104 573,126 Z" fill="#6c757d" stroke-linejoin="round"/>
+  <path d="M560,107 L558,126" fill="none" stroke="#6c757d" stroke-width="4.4" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="558" cy="127.5" r="2.2" fill="#f1dfb5"/>
+  <path d="M572,107 L574,126" fill="none" stroke="#6c757d" stroke-width="4.4" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="574" cy="127.5" r="2.2" fill="#f1dfb5"/>
+  <rect x="564" y="99" width="3.5" height="5" fill="#f1dfb5"/>
+  <circle cx="566" cy="95" r="6" fill="#f1dfb5"/>
+  <path d="M560,95 Q560,87.5 566,88 Q572.5,88 572,94 Q567,91.5 560,95 Z" fill="#1f2933" stroke-linejoin="round"/>
   <foreignObject x="556" y="153.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{A}$</div></foreignObject>
-  <line x1="34" y1="133" x2="28.5" y2="154" stroke="#1f2933" stroke-width="2.4" stroke-linecap="butt"/>
-  <line x1="34" y1="133" x2="39.5" y2="154" stroke="#1f2933" stroke-width="2.4" stroke-linecap="butt"/>
-  <rect x="27" y="111" width="14.5" height="24" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="34" cy="103" r="7.2" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
+  <path d="M29,154 L30,124 H38 L39,154 H35 L34,134 L33,154 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <path d="M27,126 Q26.5,104 34,103 Q41.5,104 41,126 Z" fill="#6c757d" stroke-linejoin="round"/>
+  <path d="M28,107 L26,126" fill="none" stroke="#6c757d" stroke-width="4.4" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="26" cy="127.5" r="2.2" fill="#f1dfb5"/>
+  <path d="M40,107 L42,126" fill="none" stroke="#6c757d" stroke-width="4.4" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="42" cy="127.5" r="2.2" fill="#f1dfb5"/>
+  <rect x="32" y="99" width="3.5" height="5" fill="#f1dfb5"/>
+  <circle cx="34" cy="95" r="6" fill="#f1dfb5"/>
+  <path d="M28,95 Q28,87.5 34,88 Q40.5,88 40,94 Q35,91.5 28,95 Z" fill="#1f2933" stroke-linejoin="round"/>
   <foreignObject x="24" y="153.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{B}$</div></foreignObject>
   <path d="M355,176 V184 H383 V176" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
   <foreignObject x="352.5" y="189.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\lambda_\text{A}$</div></foreignObject>
@@ -522,13 +533,18 @@ Ajatellaan, että äänilähde liikkuu. Jokainen aaltorintama lähtee siitä koh
   <g clip-path="url(#fy514-clip2)"><circle cx="230" cy="316" r="46" fill="none" stroke="#6b7480" stroke-width="2"/><circle cx="230" cy="316" r="92" fill="none" stroke="#6b7480" stroke-width="2"/><circle cx="230" cy="316" r="138" fill="none" stroke="#6b7480" stroke-width="2"/><circle cx="230" cy="316" r="184" fill="none" stroke="#6b7480" stroke-width="2"/><circle cx="230" cy="316" r="230" fill="none" stroke="#6b7480" stroke-width="2"/><circle cx="230" cy="316" r="276" fill="none" stroke="#6b7480" stroke-width="2"/><circle cx="230" cy="316" r="322" fill="none" stroke="#6b7480" stroke-width="2"/></g>
   <rect x="210" y="305" width="11" height="21.5" rx="2" fill="#1f2933"/>
   <path d="M221,305 L235.5,292.5 V339.5 L221,327 Z" fill="#8a96a3" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <line x1="496" y1="329" x2="490.5" y2="350" stroke="#1f2933" stroke-width="2.4" stroke-linecap="butt"/>
-  <line x1="496" y1="329" x2="501.5" y2="350" stroke="#1f2933" stroke-width="2.4" stroke-linecap="butt"/>
-  <rect x="489" y="307" width="14.5" height="24" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="496" cy="299" r="7.2" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
-  <line x1="482" y1="266" x2="433" y2="266" stroke="#1971c2" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M420,266 L434,259.5 L434,272.5 Z" fill="#1971c2" stroke-linejoin="round"/>
-  <foreignObject x="367" y="251.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#1971c2">$\overline{v}_\text{h}$</div></foreignObject>
+  <path d="M478,350 L479,320 H487 L488,350 H484 L483,330 L482,350 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <path d="M476,322 Q475.5,300 483,299 Q490.5,300 490,322 Z" fill="#6c757d" stroke-linejoin="round"/>
+  <path d="M477,303 L475,322" fill="none" stroke="#6c757d" stroke-width="4.4" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="475" cy="323.5" r="2.2" fill="#f1dfb5"/>
+  <path d="M489,303 L491,322" fill="none" stroke="#6c757d" stroke-width="4.4" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="491" cy="323.5" r="2.2" fill="#f1dfb5"/>
+  <rect x="481" y="295" width="3.5" height="5" fill="#f1dfb5"/>
+  <circle cx="483" cy="291" r="6" fill="#f1dfb5"/>
+  <path d="M477,291 Q477,283.5 483,284 Q489.5,284 489,290 Q484,287.5 477,291 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="469" y1="266" x2="420" y2="266" stroke="#1971c2" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M407,266 L421,259.5 L421,272.5 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <foreignObject x="354" y="251.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#1971c2">$\overline{v}_\text{h}$</div></foreignObject>
   <path d="M368,376 V384 H414 V376" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
   <foreignObject x="381" y="389.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\lambda$</div></foreignObject>
   <foreignObject x="16" y="3.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{lähde liikkuu}$</span></div></foreignObject>

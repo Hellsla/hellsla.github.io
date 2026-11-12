@@ -3,7 +3,7 @@ them into solutions.md. Two are task figures (the crane's layout, the organ pipe
 answer; the rest are model answers. Force red, velocity blue, acceleration orange (fbd.py); the force diagram is an FBD
 (the load a plain rectangle, arrows to scale, physics checked as drawn) beside its pictorial situation picture."""
 import math
-from figlib import Fig, Axes, INK, MUTED, WHITE, RULE, SAND_LIGHT, SAND, IRON, ALUMINIUM, METAL_EDGE, HEAT_LIGHT, n
+from figlib import Fig, Axes, INK, MUTED, WHITE, RULE, SAND_LIGHT, SAND, IRON, ALUMINIUM, METAL_EDGE, HEAT_LIGHT, HOT, n
 from fbd import FBD, ground
 
 g = 9.81
@@ -135,16 +135,16 @@ def moons_graph():
             "neliö. Pisteisiin on sovitettu origon kautta kulkeva suora, jolta on merkitty piste (5,0; 6,35). Suoran kulmakerroin on "
             "1,27 kertaa 10 potenssiin 17 kuutiometriä per sekunnin neliö.")
     ax = Axes(f, (90, 370), (410, 60), x=(0, 6), y=(0, 8), xticks=[0, 1, 2, 3, 4, 5, 6], yticks=[0, 1, 2, 3, 4, 5, 6, 7, 8],
-              xlabel=r"\tfrac{1}{r}\ (\tfrac{10^{-9}}{\text{m}})", ylabel=r"v^2\ (10^{8}\,\tfrac{\text{m}^2}{\text{s}^2})",
+              xlabel=r"1/r\ (10^{-9}\,\text{m}^{-1})", ylabel=r"v^2\ (10^{8}\,\text{m}^2/\text{s}^2)",
               yfmt=lambda v: str(v) if v % 2 == 0 else "")
-    ax.line([(0, 0), (6, 6 * 1.27)], INK, 2.5)
+    ax.line([(0, 0), (6, 6 * 1.27)], INK, 3)
     for (name, _, _), x, y in zip(MOONS, xs, ys):
         ax.point(x, y)
     for (name, _, _), x, y in zip(MOONS, xs, ys):
         if name in ("Amalthea", "Io", "Europa"):
-            f.tex(ax.X(x) + 14, ax.Y(y) + 16, rf"\text{{{name}}}", "start", MUTED, size=20)
+            f.tex(ax.X(x) + 14, ax.Y(y) + 18, rf"\text{{{name}}}", "start", MUTED)
     ax.guide(5.0, 6.35)
-    f.circle(ax.X(5.0), ax.Y(6.35), 11, "none", INK, 1.5)
+    f.circle(ax.X(5.0), ax.Y(6.35), 8, "none", HOT, 2.5)
     f.tex(ax.X(5.0) - 16, ax.Y(6.35) - 22, r"(5{,}0;\ 6{,}35)", "end", INK, bg=True)
     return f.svg()
 
@@ -162,11 +162,11 @@ def spring_graph():
               yticks=[0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8], xlabel=r"m\ (\text{kg})", ylabel=r"T^2\ (\text{s}^2)",
               xfmt=lambda v: ("0{,}" + f"{round(v * 10):d}") if round(v * 100) % 10 == 0 else "",
               yfmt=lambda v: ("0{,}" + f"{round(v * 10):d}") if round(v * 10) % 2 == 0 else "")
-    ax.line([(0.07, b + 0.07 * k), (0.38, b + 0.38 * k)], INK, 2.5)
-    ax.line([(0, b), (0.07, b + 0.07 * k)], INK, 2.5, dash="8 6")
+    ax.line([(0.07, b + 0.07 * k), (0.38, b + 0.38 * k)], INK, 3)
+    ax.line([(0, b), (0.07, b + 0.07 * k)], INK, 3, dash="8 6")
     for m, t2 in zip(MS, T2): ax.point(m, t2)
     for m, t2 in [(0.100, 0.226), (0.350, 0.722)]:
-        f.circle(ax.X(m), ax.Y(t2), 11, "none", INK, 1.5)
+        f.circle(ax.X(m), ax.Y(t2), 8, "none", HOT, 2.5)
     f.tex(ax.X(0.100) + 18, ax.Y(0.226) + 24, r"(0{,}100;\ 0{,}226)", "start", INK, bg=True)
     f.tex(ax.X(0.350) - 18, ax.Y(0.722) - 22, r"(0{,}350;\ 0{,}722)", "end", INK, bg=True)
     return f.svg()

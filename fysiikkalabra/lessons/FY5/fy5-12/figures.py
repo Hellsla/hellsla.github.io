@@ -174,7 +174,7 @@ def fourier():
     for k, A, col in comps:
         poly(f, [(x, yc - amp * A * math.sin(2 * math.pi * k * 2 * (x - x0) / (x1 - x0))) for x in xs], col, 2)
     poly(f, [(x, yc - amp * sum(A * math.sin(2 * math.pi * k * 2 * (x - x0) / (x1 - x0)) for k, A, _ in comps)) for x in xs], INK, 3.5)
-    f.tex(x0 - 8, 30, r"\text{signaali}", "start")
+    f.tex(198, 40, r"\text{signaali}", "start")             # beside the sum's first falling edge, clear of every curve
     ax = Axes(f, (96, 330), (500, 200), x=(0, 1200), y=(0, 1.2), xticks=[220, 660, 1100], yticks=[],
               xlabel=r"f\ (\text{Hz})", ylabel=r"A", grid=False, xfmt=lambda v: fi(v), origin_label=True)
     for (k, A, col) in comps:

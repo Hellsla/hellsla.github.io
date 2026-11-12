@@ -255,6 +255,8 @@ Vaaka-akselilla on langan pituus $l\ (\text{m})$ ja pystyakselilla $T^2\ (\text{
   <circle cx="334.5" cy="189" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <circle cx="388.5" cy="146.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <circle cx="443" cy="106" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="117" cy="354.5" r="8" fill="none" stroke="#c92a2a" stroke-width="2.5"/>
+  <circle cx="443" cy="105.5" r="8" fill="none" stroke="#c92a2a" stroke-width="2.5"/>
   <foreignObject x="285.5" y="324" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$k \approx 4{,}02\,\text{s}^2/\text{m}$</span></div></foreignObject>
 </svg>
 
@@ -444,6 +446,7 @@ Vaaka-akselilla on langan pituus $l\ (\text{m})$ ja pystyakselilla $T^2\ (\text{
   <circle cx="315.5" cy="180.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <circle cx="367" cy="136.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <circle cx="416" cy="92" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="428" cy="82" r="8" fill="none" stroke="#c92a2a" stroke-width="2.5"/>
   <foreignObject x="284" y="277" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$v \approx 336\,\text{m/s}$</span></div></foreignObject>
 </svg>
 

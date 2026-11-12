@@ -182,7 +182,7 @@ def kuvaaja():
             "Säteellä 100 metriä katkoviivakäyrä on puolet alempana: nopeudella 20 kiihtyvyys on 4 ja nopeudella 30 se on 9. "
             "Pisteet nopeuksilla 10 ja 20 on merkitty yhtenäiselle käyrälle apuviivoin.")
     ax = Axes(f, (86, 300), (420, 60), x=(0, 30), y=(0, 18), xticks=[5, 10, 15, 20, 25, 30], yticks=[3, 6, 9, 12, 15, 18],
-              xlabel=r"v\ (\tfrac{\text{m}}{\text{s}})", ylabel=r"a_\text{n}\ (\tfrac{\text{m}}{\text{s}^2})")
+              xlabel=r"v\ (\text{m/s})", ylabel=r"a_\text{n}\ (\text{m/s}^2)")
     ax.curve(lambda v: v * v / 50, 0, 30, HEAT, 3)
     ax.curve(lambda v: v * v / 100, 0, 30, HEAT, 3, dash="9 7")
     for v in (10, 20):
