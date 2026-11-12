@@ -1,4 +1,5 @@
 # MAFY-taulukkoarvot FY1-, FY2-, FY3-, FY4- ja FY5-kurssien perustason (taso 1) taulukonkäyttötehtäviin
+# Tämä ei ole kopio MAFY-taulukoista: tässä on vain tehtävissä käytetyt yksittäiset arvot ja linkki MAFY-sivuun, josta kukin arvo on luettu (opettaja 2026-11-12). Taulukot itse ovat osoitteessa https://mafytaulukot.fi/.
 # Tarkoitus: jokaiseen FY1- ja FY2-lukuun yksi perustehtävä, jossa opiskelija hakee arvon MAFY-taulukosta (https://mafytaulukot.fi/) ja käyttää sitä luvun omassa kaavassa. Tehtävien kirjoittajat käyttävät VAIN tämän tiedoston arvoja.
 # Päivämäärä: 2026-11-12
 # Tarkistustapa: arvot luettiin suoraan MAFY-sivuston datasta 2026-11-12. Sovellus lataa sisällysluettelon ja sivuversiot osoitteesta https://mafytaulukot.fi/data/latestversion (version 1788220205) ja kunkin taulukkosivun sisällön osoitteesta https://mafytaulukot.fi/<sivun id>/fi/<sivuversio>/theory.html; nämä HTML-tiedostot haettiin curlilla ja taulukot luettiin niistä (lukuarvot ovat LaTeX-muodossa, esim. 43{,}4 = 43,4). Tarkistuspiste: Polttoaineiden LHV-lämpöarvoja, bensiini 43,4 MJ/kg ja puu, kuiva 16,2 MJ/kg täsmäävät aiemman tarkistajan havaintoon.
