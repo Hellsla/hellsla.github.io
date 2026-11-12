@@ -235,9 +235,10 @@ def ex_tv_tyyny():
     f = Fig("fy411-ex-tv-tyyny", 340, "Kuvaaja mittakaavassa: törmäyskokeessa nuken nopeus ajan funktiona törmäyshetkestä alkaen kahdessa kokeessa. "
             "Kummassakin nopeus on aluksi 15 metriä sekunnissa ja pienenee tasaisesti nollaan. Koe A, jyrkempi suora: nopeus on nolla "
             "hetkellä 0,060 sekuntia. Koe B, loivempi suora: nopeus on nolla hetkellä 0,150 sekuntia. Vaaka-akselilla aika "
-            "0–0,16 sekuntia 0,02 sekunnin välein, pystyakselilla nopeus 0–16 metriä sekunnissa, luvut 5 metrin välein.")
+            "0–0,16 sekuntia 0,02 sekunnin ruuduin, luvut 0,04 sekunnin välein, pystyakselilla nopeus 0–16 metriä sekunnissa, luvut 5 metrin välein.")
     ax = Axes(f, (96, 290), (478, 52), x=(0, 0.16), y=(0, 16), xticks=[0, 0.02, 0.04, 0.06, 0.08, 0.10, 0.12, 0.14, 0.16],
-              yticks=[0, 5, 10, 15], xlabel=r"t\ (\text{s})", ylabel=r"v\ (\text{m/s})")
+              yticks=[0, 5, 10, 15], xlabel=r"t\ (\text{s})", ylabel=r"v\ (\text{m/s})",
+              xfmt=lambda v: fi(v) if round(v * 100) % 4 == 0 else "")
     ax.line([(0, 15), (0.06, 0), (0.16, 0)], COPPER, 3)
     ax.line([(0, 15), (0.15, 0)], COLD, 3)
     f.tex(ax.X(0.03) - 26, ax.Y(7.5) - 4, r"\text{A}", "middle", COPPER)

@@ -181,7 +181,7 @@ def hero():
 
 def palkit_asteikko():
     """Task figure: two energy bars on a joule scale, E_p,1 = 40 J at the start and E_k,2 = 25 J at the end; no friction bar."""
-    f = Fig("fy48-palkitasteikko", 350, "Energiapalkit mittakaavassa, pystyakselilla energia jouleina nollasta 50:een. Kelkka laskee "
+    f = Fig("fy48-palkitasteikko", 366, "Energiapalkit mittakaavassa, pystyakselilla energia jouleina nollasta 50:een. Kelkka laskee "
             "rinteen alas levosta. Vasemmanpuoleinen vihreä palkki on kelkan potentiaalienergia E_p,1 alussa, ylhäällä: se ulottuu "
             "40 jouleen. Oikeanpuoleinen sininen palkki on kelkan liike-energia E_k,2 lopussa, alhaalla: se ulottuu 25 jouleen. "
             "Alussa liike-energia on nolla ja lopussa potentiaalienergia on nolla. Muiden voimien työn palkkia ei ole piirretty.")
@@ -189,8 +189,8 @@ def palkit_asteikko():
               xlabel="", ylabel=r"E\ (\text{J})", yfmt=lambda v: fi(v) if v % 10 == 0 else "")
     for x, val, c, s in ((1.0, 40, GREEN, r"E_{\text{p},1}"), (2.8, 25, BLUE, r"E_{\text{k},2}")):
         f.rect(ax.X(x - 0.35), ax.Y(val), ax.X(x + 0.35) - ax.X(x - 0.35), ax.Y(0) - ax.Y(val), c)
-        f.tex(ax.X(x), 316, s, "middle", c)
-    f.tex(ax.X(1.0), 336, r"\text{alussa}", "middle"); f.tex(ax.X(2.8), 336, r"\text{lopussa}", "middle")
+        f.tex(ax.X(x), 314, s, "middle", c)
+    f.tex(ax.X(1.0), 346, r"\text{alussa}", "middle"); f.tex(ax.X(2.8), 346, r"\text{lopussa}", "middle")
     return f.svg()
 
 

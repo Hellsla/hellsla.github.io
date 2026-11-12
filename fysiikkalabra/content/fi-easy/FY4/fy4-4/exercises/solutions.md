@@ -285,9 +285,9 @@ Kiihtyvyys on $2{,}0\,\text{m/s}^2$ työntövoiman suuntaan. Vastauksessa on kak
 **Kysytty:** työntövoiman suuruus $F$ yksikössä $\text{kN}$
 **Periaate:** Voimakuviossa on kaksi voimaa: työntövoima $\overline{F}$ ylös ja paino $\overline{G}$ alas. Newtonin toisen lain mukaan kokonaisvoima on $\Sigma F = ma$. Ylöspäin on positiivinen suunta, koska kiihtyvyys osoittaa ylös.
 **Kaava:** $\Sigma F = ma$, joten $F - G = ma$. Paino on $G = mg$. Siitä saadaan $F = m(g + a)$
-**Muunnokset:** Suureet ovat SI-yksiköissä, joten tulos on newtoneina. Yksi kilonewton on $1000\,\text{N}$, joten $31\,830\,\text{N} = 31{,}83\,\text{kN}$.
+**Muunnokset:** Suureet ovat SI-yksiköissä, joten tulos on newtoneina. Koska $1\,\text{kN} = 1000\,\text{N}$, niin $31\,830\,\text{N} = 31{,}83\,\text{kN}$.
 **Sijoitus:** $F = 15\,000\,\text{kg} \cdot (1{,}622\,\text{m/s}^2 + 0{,}50\,\text{m/s}^2) = 31\,830\,\text{N} = 31{,}83\,\text{kN}$
-**Vastaus:** $32\,\text{kN}$. Vastauksessa on kaksi merkitsevää numeroa, kuten kiihtyvyydessä $0{,}50\,\text{m/s}^2$. Eri taulukoiden arvot eroavat vähän, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Vastaus:** $32\,\text{kN}$. Vastauksessa on kaksi merkitsevää numeroa, kuten kiihtyvyydessä $0{,}50\,\text{m/s}^2$. Taulukon arvo $g = 1{,}622\,\text{m/s}^2$ on tarkempi kuin kiihtyvyys. Eri taulukoiden arvot eroavat vähän, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
 **Järkevyys:** Jos alus leijuisi paikallaan ($a = 0$), työntövoima olisi aluksen paino Kuussa: $15\,000\,\text{kg} \cdot 1{,}622\,\text{m/s}^2 \approx 24\,\text{kN}$. Hidastamiseen tarvitaan lisäksi $ma = 7{,}5\,\text{kN}$, eli yhteensä $31{,}8\,\text{kN}$. Työntövoima on suurempi kuin paino, koska kokonaisvoima osoittaa ylös.
 
 ## fy4-4-L1-10
@@ -310,4 +310,4 @@ Kiihtyvyys on $2{,}0\,\text{m/s}^2$ työntövoiman suuntaan. Vastauksessa on kak
 **Muunnokset:** Voimat ovat newtoneina ja kiihtyvyydet yksikössä $\text{m/s}^2$. Muunnoksia ei tarvita.
 **Sijoitus:** $m = \dfrac{3{,}0\,\text{N}}{3{,}0\,\text{m/s}^2} = 1{,}0\,\text{kg}$ ja $a = \dfrac{2{,}4\,\text{N}}{1{,}0\,\text{kg}} = 2{,}4\,\text{m/s}^2$
 **Vastaus:** $2{,}4\,\text{m/s}^2$ voiman suuntaan. Vastauksessa on kaksi merkitsevää numeroa, kuten voimassa $2{,}4\,\text{N}$.
-**Järkevyys:** Voima $2{,}4\,\text{N}$ on pienempi kuin $3{,}0\,\text{N}$, joten kiihtyvyyden pitää olla pienempi kuin $3{,}0\,\text{m/s}^2$. Kuvaajassa B:n suora on kohdassa $\Sigma F = 2{,}4\,\text{N}$ arvojen $2\,\text{m/s}^2$ ja $3\,\text{m/s}^2$ välissä, lähellä arvoa $2{,}4\,\text{m/s}^2$.
+**Järkevyys:** Voima $2{,}4\,\text{N}$ on pienempi kuin $3{,}0\,\text{N}$, joten kiihtyvyyden pitää olla pienempi kuin $3{,}0\,\text{m/s}^2$. Kuvaajassa B:n suora on kohdassa $\Sigma F = 2{,}4\,\text{N}$ välillä $a = 2\,\text{m/s}^2$ ja $a = 3\,\text{m/s}^2$, lähellä arvoa $2{,}4\,\text{m/s}^2$.

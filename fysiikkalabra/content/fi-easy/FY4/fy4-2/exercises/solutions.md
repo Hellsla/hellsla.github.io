@@ -227,4 +227,4 @@ $s_2 = 32\,\text{m} - 16\,\text{m}$, eli $s_2 = 16\,\text{m}$
 **Muunnokset:** Kaikki suureet ovat jo SI-yksiköissä. Muunnoksia ei tarvita.
 **Sijoitus:** $t = \sqrt{\dfrac{2 \cdot 20\,\text{m}}{24{,}79\,\text{m/s}^2}} = \sqrt{1{,}613\,\text{s}^2} \approx 1{,}270\,\text{s}$
 **Vastaus:** $1{,}3\,\text{s}$ (tarkemmin $1{,}27\,\text{s}$). Korkeus $20\,\text{m}$ on tarkka arvo, joten vastauksessa on kolme merkitsevää numeroa kuten taulukon arvossa $24{,}79\,\text{m/s}^2$. Eri taulukoiden arvot eroavat vähän, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
-**Järkevyys:** Maassa sama pudotus kestäisi $\sqrt{2 \cdot 20\,\text{m} : 9{,}81\,\text{m/s}^2} \approx 2{,}02\,\text{s}$. Jupiterin putoamiskiihtyvyys on noin $2{,}5$-kertainen, joten aika on noin $1{,}6$ kertaa lyhyempi: $2{,}02\,\text{s} : 1{,}6 \approx 1{,}27\,\text{s}$.
+**Järkevyys:** Maassa sama pudotus kestäisi $\sqrt{2 \cdot 20\,\text{m} : 9{,}81\,\text{m/s}^2} \approx 2{,}02\,\text{s}$. Jupiterin putoamiskiihtyvyys on noin $2{,}5$-kertainen, joten aika on $\sqrt{2{,}5} \approx 1{,}6$ kertaa lyhyempi: $2{,}02\,\text{s} : 1{,}6 \approx 1{,}27\,\text{s}$.
