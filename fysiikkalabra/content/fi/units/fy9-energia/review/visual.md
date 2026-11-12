@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 96c26f38f6eaa964
+CONTENT-HASH: 237d1351779316d8
 
-Delta review of the FY9 audit fixes (2026-11-10). Previous PASS hash: 5d7daab35c8d643b. The hash was the same at the start and the end of this review.
+Delta review (formulas in MAFY form, 2026-11-12) of the version passed at 96c26f38f6eaa964.
 
 ## Blocking
-None.
+None. Built at 390 and 1280 px: KaTeX renders without errors, no horizontal overflow, upright subscripts, \overline vectors and spacing correct, formula map text fits its boxes, the new definition sentences read naturally.
 
 ## Polish
-- [Minor] Older, out of scope: with every <details> forced open at 360 px the page is wider than the viewport (long substitution chains in some collapsed model answers); not caused by these fixes, and the changed parts themselves fit.
+1. Unit-less plain text units in the sentence after the blocks, e.g. 'teho (W)', 'energia (J)', 'massa (kg)', 'matka (m)' (carried over from the reviewed text, not new): write them as $\text{W}$, $\text{J}$, $\text{kg}$, $\text{m}$ (teacher 2026-11-01).
 
 ## Checked
-- Tutki graph at 360/1280 px (fi, en, fi-easy, 2x captures): x axis ends at 384, arrowhead tip at 396 fully inside the 400-wide viewBox, clear of the P3 bar; y axis, ticks, labels, P (MW) and 0 unchanged and uncramped.
-- Language checked: fi wording of the changed sentences is natural and consistent with the glossary.
+Rendered formula blocks and formula map of this unit read as a contact sheet at 390 px; overflow and KaTeX-error scan of the built page at 390 and 1280 px; diff text read.

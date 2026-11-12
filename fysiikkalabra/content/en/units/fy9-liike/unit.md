@@ -318,6 +318,8 @@ Acceleration is the change in velocity per unit of time:
 average acceleration :: \overline{a}_\text{k} = \frac{\Delta\overline{v}}{\Delta t}
 ```
 
+where $\Delta\overline{v}$ is the change in velocity ($\text{m/s}$), $\Delta t$ the elapsed time ($\text{s}$) and $\overline{a}_\text{k}$ the average acceleration ($\text{m/s}^2$). In rectilinear motion the signed acceleration $a = \tfrac{\Delta v}{\Delta t}$ is enough, and with a constant acceleration the average acceleration equals the instantaneous one.
+
 When the acceleration is constant and the motion rectilinear, the velocity and the position at time $t$ are
 
 ```kaavat

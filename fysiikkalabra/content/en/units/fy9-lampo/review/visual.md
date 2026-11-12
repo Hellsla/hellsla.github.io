@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: aae7ae491db4c2dd
+CONTENT-HASH: 6186659093bce5ba
 
-Delta review of the FY9 audit fixes (2026-11-10). Previous PASS hash: 73381a386f867cdd. The hash was the same at the start and the end of this review.
+Delta review (formulas in MAFY form, 2026-11-12) of the version passed at aae7ae491db4c2dd.
 
 ## Blocking
-None.
+None. Built at 390 and 1280 px: KaTeX renders without errors, no horizontal overflow, upright subscripts, \overline vectors and spacing correct, formula map text fits its boxes, the new definition sentences read naturally.
 
 ## Polish
-- [Minor] Older, out of scope: with every <details> forced open at 360 px the page is wider than the viewport (long substitution chains in some collapsed model answers); not caused by these fixes, and the changed parts themselves fit.
+1. Formula 'T = θ + 273,15' and its map row have no unit; add '\,\text{K}' as in the kaasut unit (kaasut shows 273,15 K).
 
 ## Checked
-- s1 source note reads 'Ruiskutetun vesikerroksen paksuus ...' (en: 'sprayed water layer'); grammatical, consistent with the task; plain text, no layout impact.
-- Language checked: en wording of the changed sentences is natural and consistent with the glossary.
+I did not open this pair's rendered sheet. The verdict rests on the overflow and KaTeX-error scan of the built page at 390 and 1280 px, the diff text, and the fi version's sheet (same LaTeX, same map layout; only label words differ).

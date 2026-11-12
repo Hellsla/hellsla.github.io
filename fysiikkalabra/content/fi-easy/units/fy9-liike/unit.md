@@ -318,6 +318,8 @@ Kiihtyvyys on nopeuden muutos aikayksikköä kohti:
 keskikiihtyvyys :: \overline{a}_\text{k} = \frac{\Delta\overline{v}}{\Delta t}
 ```
 
+Tässä $\Delta\overline{v}$ on nopeuden muutos ($\text{m/s}$), $\Delta t$ kulunut aika ($\text{s}$) ja $\overline{a}_\text{k}$ keskikiihtyvyys ($\text{m/s}^2$). Kun kappale liikkuu suoraa viivaa pitkin, riittää kiihtyvyys etumerkin kanssa: $a = \tfrac{\Delta v}{\Delta t}$. Jos kiihtyvyys on vakio, keskikiihtyvyys on sama kuin kiihtyvyys joka hetki.
+
 Oletetaan, että kiihtyvyys on vakio ja kappale liikkuu suoraa viivaa pitkin. Silloin nopeus ja paikka hetkellä $t$ ovat
 
 ```kaavat

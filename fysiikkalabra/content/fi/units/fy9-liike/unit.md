@@ -318,6 +318,8 @@ Kiihtyvyys on nopeuden muutos aikaa kohti:
 keskikiihtyvyys :: \overline{a}_\text{k} = \frac{\Delta\overline{v}}{\Delta t}
 ```
 
+missä $\Delta\overline{v}$ on nopeuden muutos ($\text{m/s}$), $\Delta t$ kulunut aika ($\text{s}$) ja $\overline{a}_\text{k}$ keskikiihtyvyys ($\text{m/s}^2$). Suoraviivaisessa liikkeessä riittää etumerkillinen kiihtyvyys $a = \tfrac{\Delta v}{\Delta t}$, ja vakiokiihtyvyydellä keskikiihtyvyys on sama kuin hetkellinen.
+
 Kun kiihtyvyys on vakio ja liike suoraviivaista, nopeus ja paikka hetkellä $t$ ovat
 
 ```kaavat

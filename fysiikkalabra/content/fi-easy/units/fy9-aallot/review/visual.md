@@ -1,10 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: c2dcaa79f3905e0c
+CONTENT-HASH: 1116cfbed2d7e149
 
-Round 2 visual and editorial review of preview/fi-easy/fy9-aallot.html (`python3 scripts/build.py fy9-aallot`), checked in Playwright (scripts/_browser) at 390 px and 1280 px with every details element opened. There is no horizontal page scroll (scrollWidth equals the viewport at both widths), no KaTeX error, no raw `$…$` and no console error. The figures are drawn in the language with the decimal comma and fit at 390 px: hero 358 px, concept map 358×651, pilli 358 px, ominaistaajuudet 358 px, naru 324 px, and s3 graphs 298 px. Units use LaTeX with `\,`. teacher.md, the solutions, the rubrics and figures.json are all translated.
+Delta review (formulas in MAFY form, 2026-11-12) of the version passed at c2dcaa79f3905e0c.
 
 ## Blocking
-None. Round-1 Blocking 1 is fixed: inquiry.json activities[7] now has "Tee näin:\n\n1. …". At both widths it renders as an `<ol>` with three steps, and the screenshot at 390 px is clean. sovella/tasks.json "Toimi näin:\n\n1." has the blank line too.
+None. Built at 390 and 1280 px: KaTeX renders without errors, no horizontal overflow, upright subscripts, \overline vectors and spacing correct, formula map text fits its boxes, the new definition sentences read naturally.
 
 ## Polish
-1. Round-1 Polish 2–5 are fixed: the "Ydinajatus" wording, the "$60\,\text{Hz}$:n äänen aallonpituus" feedback, "$8$ täyttä värähdystä" without the doubled number, and "Siksi aallonpituuskin on erilainen". No open items.
+1. Formula map, group 'ääni': the Doppler row shows only the source-approaching case; add the label 'lähde lähestyy' (or the like) so the single formula is not read as the whole Doppler law.
+
+## Checked
+Rendered formula blocks and formula map of this unit read as a contact sheet at 390 px; overflow and KaTeX-error scan of the built page at 390 and 1280 px; diff text read.

@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 72f388e811652451
+CONTENT-HASH: c1c05cd889ce9c30
 
-Delta review of the FY9 audit fixes (2026-11-10). Previous PASS hash: 9c10b36b9630971c. The hash was the same at the start and the end of this review.
+Delta review (formulas in MAFY form, 2026-11-12) of the version passed at 72f388e811652451.
 
 ## Blocking
-None.
+None. Built at 390 and 1280 px: KaTeX renders without errors, no horizontal overflow, upright subscripts, \overline vectors and spacing correct, formula map text fits its boxes, the new definition sentences read naturally.
 
 ## Polish
-- [Minor] Older, out of scope: with every <details> forced open at 360 px the page is wider than the viewport (long substitution chains in some collapsed model answers); not caused by these fixes, and the changed parts themselves fit.
+None.
 
 ## Checked
-- s1 b criterion (all details open) at 360 px: F_s, k and r on separate lines, q = r sqrt(F_s/k) with display fraction under the root, then q approx 1,87 cdot 10^-8 C and n = q/e approx 1,2 cdot 10^11, each fully inside the 360 px column, no inline formula wrapped onto two lines, no clipping, no horizontal scroll from it; decimal comma fi/fi-easy, point en.
-- Language checked: fi wording of the changed sentences is natural and consistent with the glossary.
+Rendered formula blocks and formula map of this unit read as a contact sheet at 390 px; overflow and KaTeX-error scan of the built page at 390 and 1280 px; diff text read.
