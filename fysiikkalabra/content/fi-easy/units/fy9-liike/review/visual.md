@@ -1,13 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 908bafcc86338340
+CONTENT-HASH: e3f6843d4048f9ea
 
-Delta review (formulas in MAFY form, 2026-11-12) of the version passed at 63ff7bc3c9a8481e.
+Delta review (definition sentence after the keskikiihtyvyys block, commit c4e866703) of the version passed at 908bafcc86338340.
 
 ## Blocking
-None. Built at 390 and 1280 px: KaTeX renders without errors, no horizontal overflow, upright subscripts, \overline vectors and spacing correct, formula map text fits its boxes, the new definition sentences read naturally.
+None.
 
 ## Polish
 None.
 
 ## Checked
-formula blocks and formula map of the unit (fi, fi-easy, en renders reviewed as contact sheets at 390 px; overflow and KaTeX-error scan at 390 and 1280 px).
+Built the page; overflow and KaTeX-error scan at 390 and 1280 px (clean). Read the new sentence as rendered at 390 px (fi, en) and 1280 px (fi-easy) and the keskikiihtyvyys formula block at 390 px (fi-easy): LaTeX symbols and units upright, \overline vectors and the fraction render correctly, language natural. The other renders of this sentence and block (1280 px for fi and en, 390 px for the rest) were captured but not opened; they came out clean in the scan.
