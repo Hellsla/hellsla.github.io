@@ -112,6 +112,18 @@
       "answer": 2.3,
       "unit": "mm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-8-L1-09",
+      "level": 1,
+      "text": "A steel railway rail is $25\\,\\text{m}$ long. The temperature of the rail varies by $50\\,\\text{K}$ between winter and summer. Look up the coefficient of linear expansion of steel in the MAFY table (mafytaulukot.fi). By how much does the length of the rail change? Give the answer in millimetres.",
+      "lookup": "MAFY",
+      "answer": 15,
+      "unit": "mm",
+      "tolerance": 0.04,
+      "hints": [
+        "The value is in the MAFY table *Pituuden lämpölaajenemiskertoimia* (coefficients of linear expansion)."
+      ]
     }
   ],
   "level2": [
@@ -286,6 +298,15 @@
           "feedback": "This takes into account only the shorter length. The change in temperature of rod B is three times as large, and it increases the change in length in direct proportion, so even the shorter rod lengthens more."
         }
       ]
+    },
+    {
+      "id": "fy3-8-L2-09",
+      "level": 2,
+      "text": "A metal beam is heated and the change in its length is measured. The graph shows the change in length $\\Delta L$ as a function of temperature; the measurement starts at $20\\,{}^\\circ\\text{C}$. At what temperature is the beam $2.0\\,\\text{mm}$ longer than at $20\\,{}^\\circ\\text{C}$? Read the values you need from the graph.",
+      "figure": "fy3-8/length-graph",
+      "answer": 53.3,
+      "unit": "°C",
+      "tolerance": 0.03
     }
   ],
   "level3": [

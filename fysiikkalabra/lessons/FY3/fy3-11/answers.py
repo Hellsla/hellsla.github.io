@@ -50,4 +50,8 @@ Q_vastus = 260 * 4.0                               # L3-05: Q = Pt = 260 W · 4,
 W_ilma = 125e3 * 0.0200 * (0.220 - 0.100)          # W_k = pAΔh = 125 000 Pa · 0,0200 m² · 0,120 m = 300 J
 a["fy3-11-L3-05"] = (Q_vastus - W_ilma) / 1000     # ΔU = Q − W_k = 740 J = 0,74 kJ (W_k/Q = 29 % ≈ 2/7, as for a diatomic gas)
 
+# Added exercises (teacher 2026-11-12: MAFY table task, figure task)
+a["fy3-11-L1-09"] = 101325 * 2.0e-3                  # MAFY 1 atm = 101 325 Pa: W_k = pΔV = 101 325 Pa · 0,0020 m³ = 202,65 J -> 2,0 · 10² J
+# Added exercises (teacher 2026-11-12: MAFY table task, figure task)
+a["fy3-11-L2-09"] = (4.0 - 1.0) * 1e-3 / 50e-4          # fy3-11/pv-isobaari: V₁ = 1,0 l, V₂ = 4,0 l; A = 50 cm² = 50·10⁻⁴ m²: Δs = ΔV/A = 3,0·10⁻³ m³ / 5,0·10⁻³ m² = 0,60 m
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

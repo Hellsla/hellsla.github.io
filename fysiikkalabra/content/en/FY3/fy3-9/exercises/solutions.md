@@ -269,3 +269,13 @@ $p_3 = \dfrac{100\,\text{kPa} \cdot 40\,\text{ml}}{10\,\text{ml}}$, that is, $p_
 Graph B passes through the points $(40\,\text{ml};\ 100\,\text{kPa})$, $(20\,\text{ml};\ 200\,\text{kPa})$ and $(10\,\text{ml};\ 400\,\text{kPa})$. Graph A is a falling straight line: its end points are right, but at the volume $20\,\text{ml}$ it gives $300\,\text{kPa}$, because on a straight line the pressure would grow by the same amount for every millilitre. In graph C the pressure stays the same, which confuses a constant temperature with a constant pressure. In graph D the pressure decreases on compression, as if the pressure were directly proportional to the volume.
 
 **Reading the graph:** From each graph the pressure is read at three volumes: $40\,\text{ml}$, $20\,\text{ml}$ and $10\,\text{ml}$. Graphs A and B start and end at the same points, so they can be told apart only by the pressure at the volume $20\,\text{ml}$: in graph A it is $300\,\text{kPa}$ and in graph B $200\,\text{kPa}$.
+
+## fy3-9-L1-09
+**Given:** $V_1 = 2.0\,\textsf{l}$, $p_1 = 101\,\text{kPa}$, temperature constant, no air escapes; from the table (MAFY table, air pressure, density and temperature at different heights, height $3000\,\text{m}$) $p_2 = 70\,100\,\text{Pa}$
+**Find:** the volume of the air $V_2$ in litres
+**Principle:** The amount and the temperature of the air stay the same, so Boyle's law applies: the product $pV$ stays constant. In reality the temperature drops with height, but the task assumes it constant.
+**Formula:** $p_1 V_1 = p_2 V_2$, so $V_2 = \dfrac{p_1 V_1}{p_2}$
+**Conversions:** $70\,100\,\text{Pa} = 70.1\,\text{kPa}$, because $1\,\text{kPa} = 1000\,\text{Pa}$. The volume stays in litres, because the pressure units cancel.
+**Substitution:** $V_2 = \dfrac{101\,\text{kPa} \cdot 2.0\,\textsf{l}}{70.1\,\text{kPa}} = 2.882\,\textsf{l}$
+**Answer:** $V_2 \approx 2.9\,\textsf{l}$, two significant figures, as in the volume $2.0\,\textsf{l}$. The pressure $70\,100\,\text{Pa}$ is from the MAFY table (air pressure, density and temperature at different heights); the answer is accepted within about $\pm 4\,\%$.
+**Reasonableness:** The pressure decreases, so the volume must increase. The pressure ratio is $101 : 70.1 \approx 1.44$, and $2.0\,\textsf{l} \cdot 1.44 \approx 2.9\,\textsf{l}$. The product $pV$ at the end is $70.1\,\text{kPa} \cdot 2.882\,\textsf{l} = 202\,\text{kPa}\cdot\textsf{l}$, the same as at the start, $101\,\text{kPa} \cdot 2.0\,\textsf{l} = 202\,\text{kPa}\cdot\textsf{l}$.

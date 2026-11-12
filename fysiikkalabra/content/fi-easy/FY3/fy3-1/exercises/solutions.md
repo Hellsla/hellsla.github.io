@@ -206,3 +206,13 @@ $G = 0{,}50\,\text{kg} \cdot 9{,}81\,\text{m/s}^2$
 $G = 4{,}905\,\text{N} \approx 4{,}9\,\text{N}$
 
 Koukun voima on mittarin lukema, $F = 4{,}9\,\text{N}$. Voimat ovat yhtä suuret. Samassa mittakaavassa nuolet $G$ ja $F$ ovat siis yhtä pitkät: $G$ alaspäin keskipisteestä ja $F$ ylöspäin yläpinnasta. Kuviosta A puuttuu mittarin voima $F$, vaikka mittari vetää kappaletta. Kuviossa C nuoli $F$ on kaksi kertaa niin pitkä kuin $G$. Se vastaisi noin $9{,}8\,\text{N}$:n lukemaa. Kuviossa D on lisäksi voima $F_\text{k}$. Se on kappaleen voima mittariin, joten se vaikuttaa mittariin eikä kappaleeseen.
+
+## fy3-1-L1-10
+**Annettu:** $m = 85{,}0\,\text{kg}$. Taulukosta (MAFY-taulukko *Aurinkokunta*, Mars, putoamiskiihtyvyys pinnalla) $g_\text{Mars} = 3{,}72\,\text{m/s}^2$.
+**Kysytty:** astronautin paino Marsin pinnalla $G$ newtoneina
+**Periaate:** Paino kertoo, kuinka voimakas on Marsin ja astronautin vuorovaikutus. Massa on sama kaikkialla. Painon antaa kaava $G = m g$, kun $g$ on kyseisen taivaankappaleen putoamiskiihtyvyys.
+**Kaava:** $G = m g_\text{Mars}$. Kysytty paino on jo yksin vasemmalla puolella.
+**Muunnokset:** Massa on kilogrammoina ja $g$ yksikössä $\text{m/s}^2$. Tulos tulee siksi suoraan newtoneina.
+**Sijoitus:** $G = 85{,}0\,\text{kg} \cdot 3{,}72\,\text{m/s}^2 = 316{,}2\,\text{N}$
+**Vastaus:** $316\,\text{N}$. Vastauksessa on kolme merkitsevää numeroa, kuten massassa ja taulukon arvossa. Arvo $g_\text{Mars} = 3{,}72\,\text{m/s}^2$ on MAFY-taulukosta *Aurinkokunta*. Eri taulukoiden arvot poikkeavat hieman toisistaan. Vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Järkevyys:** Maassa paino olisi $85{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 834\,\text{N}$. Marsin $g$ on noin $0{,}38$-kertainen Maan arvoon nähden. Lasku $0{,}38 \cdot 834\,\text{N} \approx 317\,\text{N}$ täsmää tuloksen kanssa.

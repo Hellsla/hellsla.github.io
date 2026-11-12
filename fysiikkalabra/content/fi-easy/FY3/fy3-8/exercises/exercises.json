@@ -112,6 +112,18 @@
       "answer": 2.3,
       "unit": "mm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-8-L1-09",
+      "level": 1,
+      "text": "Teräksinen rautatiekisko on $25\\,\\text{m}$ pitkä. Kiskon lämpötila vaihtelee talven ja kesän välillä $50\\,\\text{K}$. Hae teräksen pituuden lämpölaajenemiskerroin MAFY-taulukosta (mafytaulukot.fi). Se kertoo, kuinka suuri osa pituudesta lisääntyy, kun lämpötila nousee $1\\,\\text{K}$. Kuinka paljon kiskon pituus muuttuu? Anna vastaus millimetreinä.",
+      "lookup": "MAFY",
+      "answer": 15,
+      "unit": "mm",
+      "tolerance": 0.04,
+      "hints": [
+        "Arvo löytyy MAFY-taulukon taulukosta *Pituuden lämpölaajenemiskertoimia*."
+      ]
     }
   ],
   "level2": [
@@ -286,6 +298,15 @@
           "feedback": "Tässä otetaan huomioon vain lyhyempi pituus. Sauvan B lämpötilan muutos on kolminkertainen, ja se kasvattaa pituuden muutosta suoraan verrannollisesti. Siksi lyhyempikin sauva pitenee enemmän."
         }
       ]
+    },
+    {
+      "id": "fy3-8-L2-09",
+      "level": 2,
+      "text": "Metallipalkkia lämmitetään ja sen pituuden muutosta mitataan. Kuvaajassa on pituuden muutos $\\Delta L$ lämpötilan funktiona. Mittaus alkaa lämpötilasta $20\\,{}^\\circ\\text{C}$. Missä lämpötilassa palkki on $2{,}0\\,\\text{mm}$ pidempi kuin $20\\,{}^\\circ\\text{C}$:ssa? Lue tarvittavat arvot kuvaajasta.",
+      "figure": "fy3-8/length-graph",
+      "answer": 53.3,
+      "unit": "°C",
+      "tolerance": 0.03
     }
   ],
   "level3": [

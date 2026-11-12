@@ -141,6 +141,18 @@
           "feedback": "Tämä vastaa noin $10\\,\\text{km}$:n syvyyttä. Paine kasvaa suoraan syvyyden mukana. Kymmenkertainen syvyys antaisi siis kymmenkertaisen paineen. Annettu syvyys on vain $1{,}0\\,\\text{km}$."
         }
       ]
+    },
+    {
+      "id": "fy3-4-L1-10",
+      "level": 1,
+      "text": "Sukeltaja on meressä $25\\,\\text{m}$:n syvyydessä. Ilmanpaine meren pinnalla on $101\\,\\text{kPa}$. Hae meriveden tiheys MAFY-taulukosta (mafytaulukot.fi). Kuinka suuri on kokonaispaine sukeltajan kohdalla?",
+      "lookup": "MAFY",
+      "answer": 351.2,
+      "unit": "kPa",
+      "tolerance": 0.04,
+      "hints": [
+        "Arvo on MAFY-taulukon taulukossa *Tiheyksiä: Nesteiden tiheyksiä*."
+      ]
     }
   ],
   "level2": [
@@ -297,6 +309,15 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy3-4-L2-08",
+      "level": 2,
+      "text": "Kuvaajassa ovat kahden nesteen, A:n ja B:n, paineet syvyyden funktiona. Mikä on nesteen B tiheys? Käytä arvoa $g = 9{,}81\\,\\text{m/s}^2$.",
+      "figure": "fy3-4/two-liquids",
+      "answer": 1529,
+      "unit": "kg/m³",
+      "tolerance": 0.04
     }
   ],
   "level3": [

@@ -45,4 +45,8 @@ assert abs(239 + 0.80 * S_pinta / 2 - S_pinta) < 1e-9   # surface balance 239 + 
 T_pinta = 288 + (S_pinta - 390) / (478 - 390) * (303 - 288)   # interpolation between (288 K; 390) and (303 K; 478) = 289,4 K
 a["fy3-12-L3-05"] = T_pinta - 273.15                 # 16,3 °C
 
+# Added exercises (teacher 2026-11-12: MAFY table task, figure task)
+a["fy3-12-L1-09"] = 0.14 / 0.20 * 10 * 30             # MAFY pine λ = 0,14 W/(m·K): U = λ/d = 0,70 W/(m²·K); P = UAΔT = 0,70 · 10 · 30 = 210 W
+# Added exercises (teacher 2026-11-12: MAFY table task, figure task)
+a["fy3-12-L2-09"] = 102 / 341 * 100                  # fy3-12/earth-flows: reflected share = 102 / 341 = 0,2991 -> 29,9 %
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

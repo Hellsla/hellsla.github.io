@@ -34,4 +34,6 @@ v_nosto = 6.52 / 8.0                                   # hoist: slope of the fit
 a["fy3-2-L3-04"] = 0.5 * 10.0 * 0.100 / (0.20 * g) * 100  # spring: W = ½ F s = 0,500 J, h = W / (m g) = 0,2548 m -> 25 cm
 a["fy3-2-L3-05"] = 450 * g * v_nosto / 1000            # hoist: P = m g v = 4414,5 N · 0,815 m/s = 3598 W -> 3,6 kW
 
+a["fy3-2-L1-09"] = 7.8e3 * 0.020 * 9.81 * 12 / 1000   # steel beam: MAFY (Tiheyksiä: Kiinteiden aineiden tiheyksiä) rho = 7,8 · 10³ kg/m³, m = rho V = 156 kg, W = m g h = 18 364 J -> 18,4 kJ
+a["fy3-2-L2-09"] = (25 * 6.0 + 10 * (10 - 6.0)) / 10    # figure fy3-2/pull-steps: W = 190 J over s = 10 m, F_ka = W / s = 19 N
 print(json.dumps(a))

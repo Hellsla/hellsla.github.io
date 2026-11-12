@@ -132,6 +132,18 @@
           "feedback": "Heat is conducted also through a solid wall, and a large part of the heat loss of a building goes precisely through the walls, the roof and the windows. Insulation only reduces this power."
         }
       ]
+    },
+    {
+      "id": "fy3-12-L1-09",
+      "level": 1,
+      "text": "The wall of a log cabin is made of pine as a single layer of logs. The area of the wall is $10\\,\\text{m}^2$ and its thickness is $d = 0.20\\,\\text{m}$. The U-value of the wall is given by $U = \\dfrac{\\lambda}{d}$, where $\\lambda$ is the thermal conductivity of the material. It is $20\\,{}^\\circ\\text{C}$ in the cabin and $-10\\,{}^\\circ\\text{C}$ outdoors.\n\nLook up the thermal conductivity of pine in the MAFY table (mafytaulukot.fi). How large is the thermal power conducted out through the wall?",
+      "lookup": "MAFY",
+      "answer": 210,
+      "unit": "W",
+      "tolerance": 0.04,
+      "hints": [
+        "The value is in the MAFY table *Lämmönjohtavuuksia: Kiinteät aineet* (thermal conductivities of solids)."
+      ]
     }
   ],
   "level2": [
@@ -294,6 +306,15 @@
       ],
       "answer": "Door (about $60\\,\\text{W}$), roof (about $220\\,\\text{W}$), windows (about $290\\,\\text{W}$), wall (about $460\\,\\text{W}$).",
       "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-12-L2-09",
+      "level": 2,
+      "text": "The figure shows the energy flows of the Earth per square metre at the top of the atmosphere. What percentage of the radiation coming from the Sun is reflected back into space? Read the values you need from the figure.",
+      "figure": "fy3-12/earth-flows",
+      "answer": 29.9,
+      "unit": "%",
       "tolerance": 0.02
     }
   ],

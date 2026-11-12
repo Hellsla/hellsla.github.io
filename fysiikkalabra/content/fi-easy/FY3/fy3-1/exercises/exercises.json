@@ -146,6 +146,18 @@
           "feedback": "Voima $F_\\text{k}$ on kappaleen voima mittariin. Se vaikuttaa mittariin eikä kappaleeseen. Kuvioon piirretään vain kappaleeseen vaikuttavat voimat, tässä $G$ ja $F$."
         }
       ]
+    },
+    {
+      "id": "fy3-1-L1-10",
+      "level": 1,
+      "text": "Astronautin massa varusteineen on $85{,}0\\,\\text{kg}$. Hae Marsin pinnan putoamiskiihtyvyys MAFY-taulukosta (mafytaulukot.fi). Mikä on astronautin paino Marsin pinnalla?",
+      "lookup": "MAFY",
+      "answer": 316.2,
+      "unit": "N",
+      "tolerance": 0.04,
+      "hints": [
+        "Arvo on MAFY-taulukon taulukossa *Aurinkokunta*."
+      ]
     }
   ],
   "level2": [

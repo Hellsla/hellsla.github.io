@@ -265,3 +265,24 @@ $$m_\text{v} = \dfrac{0{,}300 \cdot 45{,}0}{35{,}0}\,\text{kg} = 0{,}386\,\text{
 **Vastaus:** a) $23{,}5\,\text{g}$, kolme merkitsevää numeroa kuten massassa $0{,}300\,\text{kg}$; b) $0{,}386\,\text{kg}$, ja se on noin $16$ kertaa höyryn massa.
 **Mallivastaus:** Yksi kilogramma höyryä luovuttaa jäähtyessään $65\,{}^\circ\text{C}$:seen yhteensä $2\,406\,650\,\text{J}$, mutta yksi kilogramma samanlämpöistä vettä vain $4190 \cdot 35{,}0\,\text{J} = 146\,650\,\text{J}$. Höyryn luovuttamasta energiasta valtaosa, noin $94\,\%$, vapautuu tiivistymisessä lämpötilan pysyessä vakiona. Iholle osuva höyry tiivistyy ihon pinnalle ja luovuttaa tämän suuren energian iholle, joten sama massa höyryä aiheuttaa paljon pahemman palovamman kuin yhtä kuuma vesi.
 **Järkevyys:** Tulos $23{,}5\,\text{g}$ on pieni verrattuna maidon massaan $300\,\text{g}$, koska höyry luovuttaa tiivistyessään paljon energiaa ($r$ on suuri). Tarkistus: $23{,}5\,\text{g}$ luovuttaa tiivistyessään $2260\,\tfrac{\text{kJ}}{\text{kg}} \cdot 0{,}0235\,\text{kg} = 53{,}1\,\text{kJ}$ ja jäähtyessään $4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}0235\,\text{kg} \cdot 35{,}0\,\text{K} = 3{,}4\,\text{kJ}$, yhteensä $56{,}6\,\text{kJ}$, ja maito ottaa $56{,}6\,\text{kJ}$. Energiat täsmäävät.
+
+## fy3-7-L1-09
+**Annettu:** etanolin massa $m = 5{,}0\,\text{g}$; taulukosta (MAFY-taulukko, aineiden olomuodon muutokset: nesteet, etanoli) ominaishöyrystymislämpö $r = 840\,\dfrac{\text{kJ}}{\text{kg}}$
+**Kysytty:** haihtumiseen sitoutuva lämpömäärä $Q$ kilojouleina
+**Periaate:** Kun neste höyrystyy lämpötilan pysyessä samana, tarvittava lämpömäärä on ominaishöyrystymislämmön ja massan tulo, $Q = rm$. Lämpö otetaan ihosta, minkä vuoksi iho tuntuu viileältä.
+**Kaava:** $Q = rm$
+**Muunnokset:** $m = 5{,}0\,\text{g} = 0{,}0050\,\text{kg}$, jotta yksiköt sopivat yhteen taulukon arvon $\text{kJ}/\text{kg}$ kanssa.
+**Sijoitus:** $Q = 840\,\dfrac{\text{kJ}}{\text{kg}} \cdot 0{,}0050\,\text{kg} = 4{,}2\,\text{kJ}$
+**Vastaus:** $4{,}2\,\text{kJ}$, kaksi merkitsevää numeroa kuten tiedossa $5{,}0\,\text{g}$. Taulukon arvo on etanolin kiehumispisteessä $78{,}4\,{}^\circ\text{C}$, ja iholla haihtuessa todellinen arvo on hieman suurempi; tässä käytetään taulukon arvoa. Vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Järkevyys:** Saman vesimäärän höyrystämiseen tarvittaisiin $2260\,\dfrac{\text{kJ}}{\text{kg}} \cdot 0{,}0050\,\text{kg} \approx 11\,\text{kJ}$. Etanolin höyrystymislämpö on pienempi kuin veden, joten tulos $4{,}2\,\text{kJ} < 11\,\text{kJ}$ on järkevä.
+
+## fy3-7-L2-09
+**Annettu:** jään massa $m = 0{,}60\,\text{kg}$; $(Q,T)$-kuvaaja
+**Kysytty:** jään ominaislämpökapasiteetti $c$
+**Periaate:** Kun jää lämpenee sulamatta, siirtyvä lämpömäärä on $Q = cm\Delta T$, joten $c = \dfrac{Q}{m\Delta T}$. Kuvaajan alkuosassa jää lämpenee, ja vaakasuora osa on sulamista.
+**Kuvaajan lukeminen:** Alkuosa alkaa ruudukon risteyksestä $(0\,\text{kJ};\ -16\,{}^\circ\text{C})$ ja päättyy risteykseen $(20\,\text{kJ};\ 0\,{}^\circ\text{C})$. Siis $Q = 20\,\text{kJ} - 0\,\text{kJ} = 20\,\text{kJ}$ ja $\Delta T = 0\,{}^\circ\text{C} - (-16\,{}^\circ\text{C}) = 16\,\text{K}$.
+**Kaava:** $c = \dfrac{Q}{m\Delta T}$
+**Muunnokset:** $Q = 20\,\text{kJ} = 20\,000\,\text{J}$, jotta $c$ tulee yksikössä $\text{J}/(\text{kg}\cdot\text{K})$.
+**Sijoitus:** $c = \dfrac{20\,000\,\text{J}}{0{,}60\,\text{kg} \cdot 16\,\text{K}} = 2083\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}} \approx 2{,}1 \cdot 10^{3}\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$
+**Vastaus:** $2{,}1 \cdot 10^{3}\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$, kaksi merkitsevää numeroa kuten tiedossa $0{,}60\,\text{kg}$. Arvot luetaan ruudukon risteyksistä, joten hyväksytään $2020\ldots2150\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$.
+**Järkevyys:** Tulos on noin puolet veden arvosta $4190\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$, mikä on tuttu jään ja veden suhde. Tase: $2083 \cdot 0{,}60 \cdot 16\,\text{J} \approx 20\,000\,\text{J} = 20\,\text{kJ}$.

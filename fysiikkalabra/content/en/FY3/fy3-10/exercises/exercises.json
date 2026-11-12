@@ -113,6 +113,18 @@
           "feedback": "Wrong: the volume should be substituted in cubic metres when the pressure is in pascals. The student's volume $0.0020\\,\\text{m}^3$ is in exactly the right unit."
         }
       ]
+    },
+    {
+      "id": "fy3-10-L1-09",
+      "level": 1,
+      "text": "A welding gas cylinder contains $0.500\\,\\text{kg}$ of argon. The volume of the cylinder is $10.0\\,\\textsf{l}$ and the temperature of the gas is $293\\,\\text{K}$. Assume that argon obeys the ideal gas law, and use $R = 8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$.\n\nLook up the molar mass of argon in the MAFY table (mafytaulukot.fi). What is the pressure of the gas in the cylinder? Give the answer in megapascals.",
+      "lookup": "MAFY",
+      "answer": 3.05,
+      "unit": "MPa",
+      "tolerance": 0.04,
+      "hints": [
+        "The value is in the MAFY table *Alkuaineiden atomimassat ja moolimassat* (atomic masses and molar masses of the elements)."
+      ]
     }
   ],
   "level2": [
@@ -325,6 +337,15 @@
           "feedback": "There is an error in row 4. Rows 1 to 3 are correct and $T \\approx 301\\,\\text{K}$, but in degrees Celsius that is $301 - 273 = 28\\,{}^\\circ\\text{C}$. Adding would give $574\\,{}^\\circ\\text{C}$, which does not fit a closed bottle."
         }
       ]
+    },
+    {
+      "id": "fy3-10-L2-09",
+      "level": 2,
+      "text": "The graph shows the pressure of the gas in two closed, rigid vessels, A and B, as a function of temperature when the vessels are heated. The volume of vessel B is $2.00\\,\\textsf{l}$.\n\nHow many moles of gas are there in vessel B? Read the values you need from the graph. Use $R = 8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$ and assume that the gas obeys the ideal gas law.",
+      "figure": "fy3-10/pt-suorat",
+      "answer": 0.0361,
+      "unit": "mol",
+      "tolerance": 0.03
     }
   ],
   "level3": [

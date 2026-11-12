@@ -247,3 +247,24 @@ Sijoitetaan yksiköt:
 $[c] = \dfrac{\text{kPa}}{\text{K}}$
 
 Tarkistus: $\tfrac{\text{kPa}}{\text{K}} \cdot \text{K} = \text{kPa}$, joten $c\,T$ on paine. Vastaus on siis $\tfrac{\text{kPa}}{\text{K}}$. Vaihtoehto $\text{kPa} \cdot \text{K}$ kertoo yksiköt, vaikka $c$ saadaan jakamalla. Vaihtoehto $\tfrac{\text{K}}{\text{kPa}}$ on jakolasku väärinpäin, ja vaihtoehto $\text{kPa}$ unohtaa lämpötilan yksikön. Esimerkkiarvoilla $p = 120\,\text{kPa}$ ja $T = 300\,\text{K}$ saadaan $c = 120\,\text{kPa} : 300\,\text{K} = 0{,}40\,\tfrac{\text{kPa}}{\text{K}}$.
+
+## fy3-3-L1-10
+**Annettu:** taulukosta (MAFY-taulukko *Aineiden olomuodon muutokset: Kaasut*, typpi, kiehumispiste) $\theta = -196\,{}^\circ\text{C}$
+**Kysytty:** lämpötila $T$ kelvineinä
+**Periaate:** Nestemäinen typpi on kiehuvaa, joten sen lämpötila on kiehumispiste. Celsius- ja kelvinasteikon askel on yhtä suuri, ja asteikot eroavat vain nollakohdaltaan: $0\,\text{K}$ on absoluuttinen nollapiste $-273{,}15\,{}^\circ\text{C}$.
+**Kaava:** $T = \theta + 273{,}15$, missä $\theta$ on lämpötila celsiusasteina ja $T$ kelvineinä (lukuarvot ilman yksikköä)
+**Muunnokset:** Celsius-lukema sijoitetaan lukuarvona: $\theta = -196$, ja tulos on kelvineinä.
+**Sijoitus:** $T = (-196 + 273{,}15)\,\text{K} = 77{,}15\,\text{K}$
+**Vastaus:** $T \approx 77\,\text{K}$, kaksi merkitsevää numeroa, koska taulukon arvo $-196\,{}^\circ\text{C}$ on ilmoitettu kokonaisina asteina. Arvo $-196\,{}^\circ\text{C}$ on MAFY-taulukosta *Aineiden olomuodon muutokset: Kaasut*; eri taulukoiden arvot poikkeavat hieman toisistaan, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Järkevyys:** Kelvinlukema on positiivinen, kuten pitää: kelvinasteikolla ei ole negatiivisia lukemia. Lämpötila on lähellä absoluuttista nollapistettä, vain noin $77\,\text{K}$ sen yläpuolella, joten typpi on todella kylmää. Tarkistus: $77{,}15\,\text{K} - 273{,}15\,\text{K} = -196\,{}^\circ\text{C}$.
+
+## fy3-3-L2-08
+**Annettu:** kuvaajasta luettuna pisteet $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$ ja $(100\,{}^\circ\text{C};\ 102{,}5\,\text{kPa})$; paine $p = 90\,\text{kPa}$
+**Kysytty:** lämpötila $\theta$ celsiusasteina, kun paine on $90\,\text{kPa}$
+**Periaate:** Kun kaasun tilavuus ja ainemäärä pysyvät samoina, paine riippuu lämpötilasta lineaarisesti: $p = p_0 + k\theta$. Suoran kulmakerroin saadaan kahdesta kuvaajan pisteestä, ja siitä ratkaistaan lämpötila, jossa paine on $90\,\text{kPa}$.
+**Kuvaajan lukeminen:** Pisteet ovat suoralla, ja ensimmäinen piste on lämpötilassa $0\,{}^\circ\text{C}$ paineessa $p_0 = 75\,\text{kPa}$ ja viimeinen lämpötilassa $100\,{}^\circ\text{C}$ paineessa $102{,}5\,\text{kPa}$. Kulmakerroin on $k = \dfrac{(102{,}5 - 75)\,\text{kPa}}{(100 - 0)\,{}^\circ\text{C}} = 0{,}275\,\dfrac{\text{kPa}}{{}^\circ\text{C}}$.
+**Kaava:** $p = p_0 + k\theta$, joten $\theta = \dfrac{p - p_0}{k}$
+**Muunnokset:** Muunnoksia ei tarvita: paine on kilopascaleina ja lämpötila celsiusasteina.
+**Sijoitus:** $\theta = \dfrac{(90 - 75)\,\text{kPa}}{0{,}275\,\text{kPa}/{}^\circ\text{C}} = 54{,}5\,{}^\circ\text{C}$
+**Vastaus:** $\theta \approx 55\,{}^\circ\text{C}$, kaksi merkitsevää numeroa, koska paine $90\,\text{kPa}$ on annettu kahdella numerolla. Silmällä luettu arvo $53$–$56\,{}^\circ\text{C}$ hyväksytään.
+**Järkevyys:** Paine $90\,\text{kPa}$ on mittauspisteiden $(50\,{}^\circ\text{C};\ 89\,\text{kPa})$ ja $(75\,{}^\circ\text{C};\ 96\,\text{kPa})$ välissä lähellä ensimmäistä, joten lämpötilan pitää olla vähän yli $50\,{}^\circ\text{C}$. Tarkistus: $75\,\text{kPa} + 0{,}275\,\text{kPa}/{}^\circ\text{C} \cdot 54{,}5\,{}^\circ\text{C} = 90\,\text{kPa}$.

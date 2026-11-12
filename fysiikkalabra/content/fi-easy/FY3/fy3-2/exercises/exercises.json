@@ -110,6 +110,18 @@
           "feedback": "Oikein: kuorma ja korkeus ovat samat, joten nostotyö $W = m g h$ on kummallakin sama. Teho $P = \\dfrac{W}{t}$ on suurempi sillä nosturilla, jonka aika $t$ on lyhyempi. Se on nosturi A."
         }
       ]
+    },
+    {
+      "id": "fy3-2-L1-09",
+      "level": 1,
+      "text": "Nosturi nostaa teräspalkin hitaasti $12\\,\\text{m}$:n korkeuteen. Palkin tilavuus on $0{,}020\\,\\text{m}^3$. Aineen tiheys $\\rho$ kertoo massan tilavuutta kohti. Siksi palkin massa on $m = \\rho V$. Hae teräksen tiheys MAFY-taulukosta (mafytaulukot.fi). Kuinka suuren työn nosturi tekee palkkiin?",
+      "lookup": "MAFY",
+      "answer": 18.4,
+      "unit": "kJ",
+      "tolerance": 0.04,
+      "hints": [
+        "Arvo on MAFY-taulukon taulukossa *Tiheyksiä: Kiinteiden aineiden tiheyksiä*."
+      ]
     }
   ],
   "level2": [
@@ -277,6 +289,15 @@
           "feedback": "Väite on tosi, mutta se on vain toinen kahdesta kaksinkertaistumisesta. Myös matka kaksinkertaistuu. Työ riippuu molemmista."
         }
       ]
+    },
+    {
+      "id": "fy3-2-L2-09",
+      "level": 2,
+      "text": "Kuvaajassa on kelkkaa vetävän voiman suuruus kuljetun matkan funktiona. Voima on liikkeen suuntainen. Kuinka suuri vakiovoima tekisi saman kokonaistyön koko kuvaajan matkalla?",
+      "figure": "fy3-2/pull-steps",
+      "answer": 19,
+      "unit": "N",
+      "tolerance": 0.03
     }
   ],
   "level3": [

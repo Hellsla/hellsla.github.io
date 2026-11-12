@@ -41,4 +41,6 @@ a["fy3-6-L3-04"] = 200 - c_vesi * 0.50 * (63.6 - 56.8) / 120   # loss power 480�
 T5 = [90.0, 72.5, 59.6, 49.5, 42.3, 36.6, 32.5]          # L3-05 cooling water 0,300 kg, room 20,0 °C, 10 min steps
 Q5 = c_vesi * 0.300 * (T5[0] - T5[1])                    # first interval: 4190 · 0,300 · 17,5 K = 21 997,5 J
 a["fy3-6-L3-05"] = (Q5 / 600) / ((T5[0] + T5[1]) / 2 - 20.0)   # k = P / (T_ka − T_huone) = 36,66 W / 61,25 K = 0,599 W/K -> 0,60
+a["fy3-6-L1-09"] = 0.896 * 0.80 * (100 - 20)                  # aluminium pot: c = 0,896 kJ/(kg·K) (MAFY), Q = c m ΔT = 57,344 kJ
+a["fy3-6-L2-09"] = 385 * 3.0 * (85 - 25) / 1e3                # figure fy3-6/c-bars: c(copper) = 385 J/(kg·K); Q = 385 · 3,0 kg · 60 K = 69 300 J = 69,3 kJ
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

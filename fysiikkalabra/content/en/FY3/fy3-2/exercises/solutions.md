@@ -217,3 +217,24 @@ Stretch to $20\,\text{cm}$:
 $W_2 = \dfrac{1}{2} \cdot 40\,\text{N} \cdot 0.20\,\text{m} = 4.0\,\text{J}$
 
 The ratio is $4.0\,\text{J} : 1.0\,\text{J} = 4$, so the work is $4\,W_1$. The reason is that both the base and the height double, so the area of the triangle becomes four times as great. The answer $2\,W_1$ takes only the distance into account, although the force also doubles. The answer $3\,W_1$ is only the work of the second $10\,\text{cm}$ part: $30\,\text{N} \cdot 0.10\,\text{m} = 3.0\,\text{J}$. The work asked for starts from the beginning of the stretch, so it also includes the first part, $1.0\,\text{J}$.
+
+## fy3-2-L1-09
+**Given:** $V = 0.020\,\text{m}^3$, $h = 12\,\text{m}$, $g = 9.81\,\text{m/s}^2$; from the table (MAFY table *Tiheyksiä: Kiinteiden aineiden tiheyksiä*, steel) $\rho = 7.8 \cdot 10^{3}\,\text{kg/m}^3$
+**Find:** the lifting work $W$ in kilojoules
+**Principle:** The beam is lifted slowly, that is at constant speed, so the lifting force equals the weight of the beam $G = m g$. The force is in the direction of motion, so the work is $W = F s = G h$. The mass comes from the density: $m = \rho V$.
+**Formula:** $m = \rho V$ and $W = G h = m g h$, so $W = \rho V g h$
+**Conversions:** The density is already in $\text{kg/m}^3$: $7.8 \cdot 10^{3}\,\text{kg/m}^3 = 7800\,\text{kg/m}^3$. Finally $\text{J}$ is converted to kilojoules: $1\,\text{kJ} = 1000\,\text{J}$.
+**Substitution:** $m = 7800\,\text{kg/m}^3 \cdot 0.020\,\text{m}^3 = 156\,\text{kg}$ and $W = 156\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 12\,\text{m} = 18\,364\,\text{J} = 18.4\,\text{kJ}$
+**Answer:** $18\,\text{kJ}$, two significant figures as in the density and the volume. The density $\rho = 7.8 \cdot 10^{3}\,\text{kg/m}^3$ is from the MAFY table *Tiheyksiä: Kiinteiden aineiden tiheyksiä*; tables differ slightly, and an answer within about $\pm 4\,\%$ is accepted.
+**Reasonableness:** A beam of $156\,\text{kg}$ is sensible: a cubic metre of steel has a mass of about $7.8$ tonnes, and the beam is only $0.020$ of that volume. The weight is about $1.5\,\text{kN}$, and lifting it $12\,\text{m}$ takes about $1.5\,\text{kN} \cdot 12\,\text{m} \approx 18\,\text{kJ}$.
+
+## fy3-2-L2-09
+**Given:** read from the graph, force $F_1 = 25\,\text{N}$ over $0\ldots 6\,\text{m}$ and $F_2 = 10\,\text{N}$ over $6\ldots 10\,\text{m}$; total distance $s = 10\,\text{m}$
+**Find:** the constant force $F_\text{av}$ that would do the same total work $W$ over the whole distance
+**Principle:** The work is the area between the $(s,F)$ graph and the $s$-axis. The work of a constant force is $W = F s$, so the work of the wanted constant force equals the area of the graph. Therefore the work of the graph is calculated first and then divided by the distance.
+**Reading the graph:** The first horizontal segment is on the grid line $F_1 = 25\,\text{N}$ from $s = 0$ to $s = 6\,\text{m}$. The second segment is on the line $F_2 = 10\,\text{N}$ from $s = 6\,\text{m}$ to $s = 10\,\text{m}$, so its width is $4\,\text{m}$.
+**Formula:** $W = F_1 s_1 + F_2 s_2$ and $W = F_\text{av} s$, so $F_\text{av} = \dfrac{W}{s}$
+**Conversions:** The forces are in newtons and the distances in metres, so no conversions are needed.
+**Substitution:** $W = 25\,\text{N} \cdot 6\,\text{m} + 10\,\text{N} \cdot 4\,\text{m} = 190\,\text{J}$ and $F_\text{av} = \dfrac{190\,\text{J}}{10\,\text{m}} = 19\,\text{N}$
+**Answer:** $19\,\text{N}$, two significant figures, because the values of the graph were read from the grid lines as whole numbers.
+**Reasonableness:** The result $19\,\text{N}$ lies between the smallest ($10\,\text{N}$) and the largest ($25\,\text{N}$) value of the force, and closer to the largest, because the large force acts over the longer distance ($6\,\text{m}$ vs $4\,\text{m}$). Check: $19\,\text{N} \cdot 10\,\text{m} = 190\,\text{J}$.

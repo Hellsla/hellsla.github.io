@@ -37,4 +37,6 @@ W_p = 0.04 * (F_p[0] / 2 + sum(F_p[1:-1]) + F_p[-1] / 2)  # trapezoid rule: 0,04
 a["fy3-5-L3-04"] = W_p                                 # fast compression Q = 0 -> ΔU = W = 18,7 J (slow compression: Q = −14,0 J, not checked)
 E_v, dU_w = 239.9, 205.1                               # kettle at t = 120 s: resistor energy and ΔU of the water, kJ
 a["fy3-5-L3-05"] = E_v - dU_w                          # ΔU = E_v − Q_ulos -> Q_ulos = 239,9 − 205,1 = 34,8 kJ (14,5 % of E_v)
+a["fy3-5-L1-10"] = (2.0 * 1000 * 4.1868 + 3000) / 1000      # 2,0 kcal = 2000 cal; 1 cal = 4,1868 J (MAFY) -> Q = 8373,6 J; W = 3000 J -> ΔU = 11 373,6 J = 11,37 kJ
+a["fy3-5-L2-08"] = W_comp                                         # figure fy3-5/piston-force, fast compression Q = 0 -> ΔU = W = 60 J
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

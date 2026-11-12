@@ -114,6 +114,18 @@
           "feedback": "Ominaislämpökapasiteetti kertoo lämpenemisestä, ei sulamisesta. Sulaminen vaatii sulamislämpöä. Ratkaisevaa on, riittääkö veden luovuttama lämpö."
         }
       ]
+    },
+    {
+      "id": "fy3-14-L1-09",
+      "level": 1,
+      "text": "Juomaan pudotetaan $0\\,{}^\\circ\\text{C}$:n jääpalat. Jääpalojen yhteismassa on $80\\,\\text{g}$. Jää sulaa vedeksi, jonka lämpötila on myös $0\\,{}^\\circ\\text{C}$. Sulamiseen tarvittava lämpö on $Q = sm$. Tässä $s$ on jään ominaissulamislämpö eli lämpö, joka sulattaa yhden kilogramman jäätä.\n\nHae jään ominaissulamislämpö MAFY-taulukosta (mafytaulukot.fi). Kuinka paljon lämpöä jään sulamiseen tarvitaan? Anna vastaus kilojouleina.",
+      "lookup": "MAFY",
+      "answer": 26.64,
+      "unit": "kJ",
+      "tolerance": 0.04,
+      "hints": [
+        "Arvo on MAFY-taulukon taulukossa *Aineiden olomuodon muutokset: Nesteet*."
+      ]
     }
   ],
   "level2": [
@@ -279,6 +291,15 @@
           "feedback": "Väärin: keskiarvo unohtaa sulamislämmön. Massoilla painotettu keskiarvokaan ei auta (vettä $0{,}25\\,\\text{kg}$, jäätä $0{,}080\\,\\text{kg}$, tulos noin $14\\,{}^\\circ\\text{C}$). Veden luovuttama lämpö kuluu jään sulattamiseen. Lämpötila ei voi nousta yli $0\\,{}^\\circ\\text{C}$:n, kun jäätä on vielä jäljellä."
         }
       ]
+    },
+    {
+      "id": "fy3-14-L2-09",
+      "level": 2,
+      "text": "Eristettyyn astiaan, jossa on vettä, lisätään pakastimesta otettua jäätä. Kuvaajan pylväät näyttävät tämän seoksen kolme lämpömäärää. Ylin pylväs on lämpö, jonka vesi voi luovuttaa jäähtyessään $0\\,{}^\\circ\\text{C}$:seen. Keskimmäinen on lämpö, jonka jään lämmittäminen $0\\,{}^\\circ\\text{C}$:seen vaatii. Alin on lämpö, jonka kaiken jään sulattaminen vaatisi. Lämpöä ei siirry astiaan eikä ympäristöön. Jään ominaissulamislämpö on $334\\,\\text{kJ/kg}$.\n\nKuinka monta grammaa jäätä jää sulamatta lämpötasapainon vallitessa? Lue arvot kuvasta ja anna vastaus grammoina.",
+      "figure": "fy3-14/energy-bars",
+      "answer": 119.76,
+      "unit": "g",
+      "tolerance": 0.02
     }
   ],
   "level3": [

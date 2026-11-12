@@ -204,3 +204,24 @@ Windows: $UA = 9.6\,\text{W/K}$, $P = 9.6\,\text{W/K} \cdot 30\,\text{K} = 288\,
 Wall: $UA = 15.3\,\text{W/K}$, $P = 15.3\,\text{W/K} \cdot 30\,\text{K} = 459\,\text{W}$
 
 From smallest to largest: door, roof, windows, wall. The U-value alone would give the wrong order, because the windows and the door have a large U-value but a small area, and the area alone would also give it wrong, because the wall has a small U-value but a large area. The results are given with two significant figures, because the U-values are given with two: about $60\,\text{W}$, $220\,\text{W}$, $290\,\text{W}$ and $460\,\text{W}$. Estimate: the wall's $UA \approx 0.2 \cdot 90 = 18\,\text{W/K}$ is the largest and the door's $2\,\text{W/K}$ the smallest, which fits.
+
+## fy3-12-L1-09
+**Given:** $A = 10\,\text{m}^2$, $d = 0.20\,\text{m}$, $T_\text{in} = 20\,{}^\circ\text{C}$, $T_\text{out} = -10\,{}^\circ\text{C}$, $U = \dfrac{\lambda}{d}$; from the table (MAFY table, thermal conductivities: solids, wood (pine)) $\lambda = 0.14\,\tfrac{\text{W}}{\text{m}\cdot\text{K}}$
+**Find:** the thermal power $P$ conducted through the wall, in watts
+**Principle:** Heat is conducted from warm to cold, and the power is directly proportional to the area and the temperature difference. The U-value describes the conduction through the wall by the formula $U = \lambda / d$ given in the task.
+**Formula:** $P = UA\,\Delta T$ and $U = \dfrac{\lambda}{d}$, so $P = \dfrac{\lambda}{d}\,A\,\Delta T$
+**Conversions:** The temperature difference is the same in degrees Celsius and in kelvins: $\Delta T = 20\,{}^\circ\text{C} - (-10\,{}^\circ\text{C}) = 30\,\text{K}$. No other conversions are needed.
+**Substitution:** $U = \dfrac{0.14\,\tfrac{\text{W}}{\text{m}\cdot\text{K}}}{0.20\,\text{m}} = 0.70\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$ and $P = 0.70\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}} \cdot 10\,\text{m}^2 \cdot 30\,\text{K} = 210\,\text{W}$
+**Answer:** $P \approx 210\,\text{W}$, two significant figures, as in $\lambda = 0.14$. The thermal conductivity is from the MAFY table (thermal conductivities: solids); the answer is accepted within about $\pm 4\,\%$.
+**Reasonableness:** The U-value $0.70\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$ is about four times the U-value $0.17\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$ of a modern wall, which fits the weaker insulation of a log wall. The power through $10\,\text{m}^2$ is small because the area is small: $0.7 \cdot 10 \cdot 30 = 210\,\text{W}$.
+
+## fy3-12-L2-09
+**Given:** read from the figure, $P_\text{in} = 341\,\tfrac{\text{W}}{\text{m}^2}$ comes from the Sun and $P_\text{refl} = 102\,\tfrac{\text{W}}{\text{m}^2}$ of it is reflected
+**Find:** the share of the incoming radiation that is reflected, as a percentage
+**Principle:** The share is found by comparing the reflected power with the incoming power over the same area. Both powers are given per square metre, so the units cancel.
+**Reading the graph:** The left arrow of the figure gives the incoming power $341\,\tfrac{\text{W}}{\text{m}^2}$ and the upper right arrow the reflected power $102\,\tfrac{\text{W}}{\text{m}^2}$. The question mark of the lower arrow is not needed.
+**Formula:** share $= \dfrac{P_\text{refl}}{P_\text{in}}$, and as a percentage $\dfrac{P_\text{refl}}{P_\text{in}} \cdot 100\,\%$
+**Conversions:** The quotient is a plain number, and multiplying it by $100\,\%$ gives the percentage. The powers need no conversion.
+**Substitution:** $\dfrac{102\,\tfrac{\text{W}}{\text{m}^2}}{341\,\tfrac{\text{W}}{\text{m}^2}} \cdot 100\,\% = 0.2991 \cdot 100\,\% = 29.9\,\%$
+**Answer:** $29.9\,\%$, three significant figures, as in the powers read, $341$ and $102$.
+**Reasonableness:** The share is close to a third: $0.30 \cdot 341\,\tfrac{\text{W}}{\text{m}^2} = 102.3\,\tfrac{\text{W}}{\text{m}^2}$. The result is below $100\,\%$, as it must be, because the reflected power is a part of the incoming power.

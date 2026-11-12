@@ -42,4 +42,6 @@ a["fy3-14-L3-04"] = (c_v * 0.200 * (30.0 - 6.2) - c_v * 0.0500 * 6.2 - c_j * 0.0
 # row T_v = 40 °C, T = 8,1 °C (all ice melted): Q_j = c_v m_v T_v − c_v (m_v + m_j) T = 50 280 − 13 575,6 = 36 704,4 J; ice just melts when c_v m_v T_v,min = Q_j
 Q_jrow = c_v * 0.300 * 40 - c_v * 0.400 * 8.1
 a["fy3-14-L3-05"] = Q_jrow / (c_v * 0.300)               # T_v,min = 36 704,4 / 1257 = 29,2 °C -> 29 °C (ice temperature (36 704 − 33 400)/210 = 15,7 K below 0 °C)
+a["fy3-14-L1-09"] = 333 * 0.080                        # MAFY: s = 333 kJ/kg; Q = sm = 333 kJ/kg · 0,080 kg = 26,64 kJ
+a["fy3-14-L2-09"] = (60.0 / 334 - (25.0 - 5.0) / 334) * 1000   # fy3-14/energy-bars: 25, 5, 60 kJ; ice in all 60/334 = 0,1796 kg, melted 20/334 = 0,0599 kg, left 0,1198 kg = 119,8 g
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

@@ -39,4 +39,6 @@ dT = [12.1 - 1.2, 14.2 - 3.5, 28.4 - 17.8, 23.2 - 12.3]   # monthly temperature 
 dT_ka = sum(dT) / len(dT)                         # sum 43,1 K, mean 10,775 K
 a["fy3-15-L3-05"] = 4190 * 38.0e3 * dT_ka / 1e6   # condenser: P_L = c·q_m·ΔT_ka = 4190 · 38 000 kg/s · 10,775 K = 1,7156·10⁹ W = 1716 MW
 
+a["fy3-15-L1-09"] = 4.182 * 80 * 40 / 1000              # MAFY: c = 4,182 kJ/(kg·K); P_k = c q_m ΔT = 4,182 · 80 · 40 = 13 382 kW = 13,38 MW
+a["fy3-15-L2-09"] = 150.0 / 350.0 * 100                 # fy3-15/chain-bars: η_2 = P_2/P_1 = 150 MW / 350 MW = 0,4286 -> 42,9 %
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

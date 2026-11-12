@@ -42,4 +42,8 @@ b_max, b_min = zero(25, 107.0, 225, 182.5), zero(25, 109.0, 225, 180.5)    # ser
 a["fy3-13-L3-04"] = (b_max - b_min) / 2                 # Δθ0 of series B = 10,73 °C (series A: 29,75 °C)
 kc = (137.0 - 100.4) / 100.0                            # calibration slope 0,366 kPa/°C from the end points
 a["fy3-13-L3-05"] = 0.0 + (94.0 - 100.4) / kc           # θ = θ1 + (p − p1)/k = −17,49 °C (Δθ = 1,0/0,366 = 2,73 °C)
+a["fy3-13-L1-09"] = 0.0 - 273.15                      # MAFY: 0 °C = 273,15 K; T = θ + 273,15 = 0 gives θ0 = −273,15 °C
+n13_k = (102.5 - 75.0) / (100.0 - 0.0)                 # figure fy3-3/extrapolation-points: end points (0 °C; 75 kPa), (100 °C; 102,5 kPa) give k = 0,275 kPa/°C
+a["fy3-13-L2-09"] = 0.0 - 75.0 / n13_k                    # θ0 = θ1 − p1/k = −272,7 °C
+a["fy3-13-L2-10"] = 75.0 + n13_k * ((200.0 - 273.15) - 0.0)   # θ = 200 − 273,15 = −73,15 °C; p = 75 + 0,275 · (−73,15) = 54,88 kPa
 print(json.dumps({key: round(v, 6) for key, v in a.items()}))
