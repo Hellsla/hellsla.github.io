@@ -55,21 +55,18 @@ fy9-liike	325	v = v_0 + a\,t	v = v_0 + a\,t	nopeus tasaisesti kiihtyvässä suor
 fy9-liike	325	x = x_0 + v_0\,t + \tfrac{1}{2}\,a\,t^2	x = x_0 + v_0\,t + \tfrac{1}{2}\,a\,t^2	paikka tasaisesti kiihtyvässä suoraviivaisessa liikkeessä	position in uniformly accelerated linear motion	MAFY	Mekaniikan kaavoja	
 fy9-liike	430	x_\text{A}(t) = x_\text{B}(t)	x_\text{A}(t) = x_\text{B}(t)			ei MAFY:ssa		ehto, ei kaava; voi jättää nimettä
 fy9-magnetismi-valo	186	F_\text{M} = QvB_\perp	F_\text{M} = QvB_\perp	varattuun hiukkaseen kohdistuva magneettinen voima	magnetic force on a charged particle	MAFY	Sähkömagnetismin kaavoja	
-fy9-magnetismi-valo	186	r = \frac{mv}{QB}	r = \frac{mv}{QB}			ei MAFY:ssa		ei MAFY:ssa
 fy9-magnetismi-valo	186	F_\text{M} = I\ell B_\perp	F_\text{M} = I\ell B_\perp	suoraan johtimeen kohdistuva magneettinen voima	magnetic force on a straight conductor	MAFY	Sähkömagnetismin kaavoja	
 fy9-magnetismi-valo	186	B = \frac{\mu_0}{2\pi r}\,I	B = \frac{\mu_0}{2\pi r}\,I	suoran virtajohtimen magneettivuon tiheys	magnetic flux density of a straight current-carrying wire	MAFY	Sähkömagnetismin kaavoja	
 fy9-magnetismi-valo	186	B = N\,\frac{\mu_0}{\ell}\,I	B = N\,\frac{\mu_0}{\ell}\,I	pitkän käämin magneettivuon tiheys	magnetic flux density of a long solenoid	MAFY	Sähkömagnetismin kaavoja	
-fy9-magnetismi-valo	290	e = -N\frac{\Delta\Phi}{\Delta t}	e = -N\frac{\Delta\Phi}{\Delta t}	käämiin indusoituva jännite	voltage induced in a coil	MAFY	Sähkömagnetismin kaavoja	MAFY:ssa myös induktiolaki ilman $N$:ää
-fy9-magnetismi-valo	290	u_0 = NAB\cdot 2\pi f	u_0 = NAB\cdot 2\pi f	generaattorissa käämiin indusoituvan sinimuotoisen vaihtojännitteen huippuarvo	peak value of the sinusoidal voltage induced in a generator coil	MAFY	Sähkömagnetismin kaavoja	
-fy9-magnetismi-valo	290	U_\text{eff} = \frac{u_0}{\sqrt{2}}	U_\text{eff} = \frac{u_0}{\sqrt{2}}	sinimuotoisen vaihtojännitteen tehollinen arvo	rms value of a sinusoidal alternating voltage	MAFY	Sähkömagnetismin kaavoja	
-fy9-magnetismi-valo	290	\frac{N_1}{N_2} = \frac{U_1}{U_2} \approx \frac{I_2}{I_1}	\frac{N_1}{N_2} = \frac{U_1}{U_2} \approx \frac{I_2}{I_1}	muuntaja	transformer	MAFY	Sähkömagnetismin kaavoja	
-fy9-magnetismi-valo	290	P_\text{h} = RI^2	P_\text{h} = RI^2			ei MAFY:ssa		ei MAFY:ssa
-fy9-magnetismi-valo	302	c = f\lambda	c = f\lambda	aaltoliikkeen perusyhtälö	wave equation	MAFY	Aaltoliikkeen kaavoja	MAFY: v = fλ; valolle c = fλ (opettaja 2026-11-12)
-fy9-magnetismi-valo	302	\lambda_\text{max} = \frac{b}{T}	\lambda_\text{max} = \frac{b}{T}	Wienin siirtymälaki	Wien's displacement law	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	
-fy9-magnetismi-valo	302	\frac{\sin\alpha_1}{\sin\alpha_2} = \frac{v_1}{v_2} = \frac{n_2}{n_1}	\frac{\sin\alpha_1}{\sin\alpha_2} = \frac{v_1}{v_2} = \frac{n_2}{n_1}	taittumislaki (Snellin laki)	law of refraction (Snell's law)	MAFY	Aaltoliikkeen kaavoja	
-fy9-magnetismi-valo	302	\sin\alpha_\text{r} = \frac{n_2}{n_1}	\sin\alpha_\text{r} = \frac{n_2}{n_1}			ei MAFY:ssa		ei MAFY:ssa
-fy9-magnetismi-valo	302	d\sin\alpha = n\lambda	d\sin\alpha = n\lambda	hilayhtälö	grating equation	MAFY	Aaltoliikkeen kaavoja	
-fy9-magnetismi-valo	302	I = I_0\cos^2\theta	I = I_0\cos^2\theta			ei MAFY:ssa		ei MAFY:ssa
+fy9-magnetismi-valo	308	e = -N\frac{\Delta\Phi}{\Delta t}	e = -N\frac{\Delta\Phi}{\Delta t}	käämiin indusoituva jännite	voltage induced in a coil	MAFY	Sähkömagnetismin kaavoja	MAFY:ssa myös induktiolaki ilman $N$:ää
+fy9-magnetismi-valo	308	u_0 = NAB\cdot 2\pi f	u_0 = NAB\cdot 2\pi f	generaattorissa käämiin indusoituvan sinimuotoisen vaihtojännitteen huippuarvo	peak value of the sinusoidal voltage induced in a generator coil	MAFY	Sähkömagnetismin kaavoja	
+fy9-magnetismi-valo	308	U_\text{eff} = \frac{u_0}{\sqrt{2}}	U_\text{eff} = \frac{u_0}{\sqrt{2}}	sinimuotoisen vaihtojännitteen tehollinen arvo	rms value of a sinusoidal alternating voltage	MAFY	Sähkömagnetismin kaavoja	
+fy9-magnetismi-valo	308	\frac{N_1}{N_2} = \frac{U_1}{U_2} \approx \frac{I_2}{I_1}	\frac{N_1}{N_2} = \frac{U_1}{U_2} \approx \frac{I_2}{I_1}	muuntaja	transformer	MAFY	Sähkömagnetismin kaavoja	
+fy9-magnetismi-valo	339	c = f\lambda	c = f\lambda	aaltoliikkeen perusyhtälö	wave equation	MAFY	Aaltoliikkeen kaavoja	MAFY: v = fλ; valolle c = fλ (opettaja 2026-11-12)
+fy9-magnetismi-valo	339	\lambda_\text{max} = \frac{b}{T}	\lambda_\text{max} = \frac{b}{T}	Wienin siirtymälaki	Wien's displacement law	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	
+fy9-magnetismi-valo	339	\frac{\sin\alpha_1}{\sin\alpha_2} = \frac{v_1}{v_2} = \frac{n_2}{n_1}	\frac{\sin\alpha_1}{\sin\alpha_2} = \frac{v_1}{v_2} = \frac{n_2}{n_1}	taittumislaki (Snellin laki)	law of refraction (Snell's law)	MAFY	Aaltoliikkeen kaavoja	
+fy9-magnetismi-valo	339	d\sin\alpha = n\lambda	d\sin\alpha = n\lambda	hilayhtälö	grating equation	MAFY	Aaltoliikkeen kaavoja	
+fy9-magnetismi-valo	339	I = I_0\cos^2\theta	I = I_0\cos^2\theta			ei MAFY:ssa		ei MAFY:ssa
 fy9-mittaaminen	204	\Delta x = \frac{x_\text{max} - x_\text{min}}{2}	\Delta x = \frac{x_\text{max} - x_\text{min}}{2}			ei MAFY:ssa		ei MAFY:ssa
 fy9-mittaaminen	204	\varepsilon = \frac{\Delta x}{\bar{x}} \cdot 100\,\%	\varepsilon = \frac{\Delta x}{\bar{x}} \cdot 100\,\%			ei MAFY:ssa		ei MAFY:ssa
 fy9-mittaaminen	217	y = kx + b	y = kx + b			ei MAFY:ssa	Suora	MAFY:n Suora-sivulla ei ratkaistua muotoa $y = kx + b$
@@ -96,14 +93,10 @@ fy9-sahkokentta	267	E = \frac{F_E}{Q}	E = \frac{F_E}{Q}	sähkökentän voimakkuu
 fy9-sahkokentta	267	U = Ed	U = Ed	jännite homogeenisessa sähkökentässä	voltage in a uniform electric field	MAFY	Sähköstatiikan kaavoja	
 fy9-sahkokentta	351	V = \frac{E_\text{p}}{Q}	V = \frac{E_\text{p}}{Q}	sähkökentän potentiaali	electric potential	MAFY	Sähköstatiikan kaavoja	
 fy9-sahkokentta	351	W = QU	W = QU	sähkökentän tekemä työ	work done by an electric field	MAFY	Sähköstatiikan kaavoja	
-fy9-sahkokentta	351	\tfrac12 mv^2 = \lvert Q \rvert U	\tfrac12 mv^2 = \lvert Q \rvert U			ei MAFY:ssa		ei MAFY:ssa (työperiaate)
-fy9-sahkokentta	361	Q = CU	Q = CU	kondensaattorilaki	capacitor law	MAFY	Virtapiirien kaavoja	
-fy9-sahkokentta	361	C = \varepsilon_0\varepsilon_\text{r}\,\frac{A}{d}	C = \varepsilon_0\varepsilon_\text{r}\,\frac{A}{d}	levykondensaattorin kapasitanssi	capacitance of a parallel-plate capacitor	MAFY	Virtapiirien kaavoja	
-fy9-sahkokentta	361	E = \tfrac12 CU^2	E = \tfrac12 CU^2	kondensaattorin energia	energy of a capacitor	MAFY	Virtapiirien kaavoja	
-fy9-sahkokentta	361	U_\text{max} = E_\text{max}d	U_\text{max} = E_\text{max}d			ei MAFY:ssa		ei MAFY:n kaavoissa (MAFY:ssa läpilyöntikestävyyksien taulukko)
-fy9-sahkokentta	372	R = \frac{U - U_\text{D}}{I}	R = \frac{U - U_\text{D}}{I}			ei MAFY:ssa		ei MAFY:ssa
-fy9-sahkokentta	372	\eta = \frac{P}{GA}	\eta = \frac{P}{GA}			ei MAFY:ssa		ei MAFY:ssa
-fy9-sahkokentta	372	U = RI	U = RI	jännitehäviö johtimessa	voltage drop across a conductor	MAFY	Virtapiirien kaavoja	kirjoitettu MAFY:n muotoon 2026-11-12 (docs/fy9/mafy-tunnukset.tsv)
+fy9-sahkokentta	380	Q = CU	Q = CU	kondensaattorilaki	capacitor law	MAFY	Virtapiirien kaavoja	
+fy9-sahkokentta	380	C = \varepsilon_0\varepsilon_\text{r}\,\frac{A}{d}	C = \varepsilon_0\varepsilon_\text{r}\,\frac{A}{d}	levykondensaattorin kapasitanssi	capacitance of a parallel-plate capacitor	MAFY	Virtapiirien kaavoja	
+fy9-sahkokentta	380	E = \tfrac12 CU^2	E = \tfrac12 CU^2	kondensaattorin energia	energy of a capacitor	MAFY	Virtapiirien kaavoja	
+fy9-sahkokentta	406	U = RI	U = RI	jännitehäviö johtimessa	voltage drop across a conductor	MAFY	Virtapiirien kaavoja	kirjoitettu MAFY:n muotoon 2026-11-12 (docs/fy9/mafy-tunnukset.tsv)
 fy9-sailymislait	306	E_\text{k} = \tfrac{1}{2}\,mv^2	E_\text{k} = \tfrac{1}{2}\,mv^2	liike-energia	kinetic energy	MAFY	Mekaniikan kaavoja	
 fy9-sailymislait	306	E_\text{p} = mgh	E_\text{p} = mgh	painovoimaan liittyvä potentiaalienergia maanpinnalla	gravitational potential energy near the Earth's surface	MAFY	Mekaniikan kaavoja	
 fy9-sailymislait	313	E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}	E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}	mekaniikan energiaperiaate	work-energy principle of mechanics	MAFY	Mekaniikan kaavoja	
