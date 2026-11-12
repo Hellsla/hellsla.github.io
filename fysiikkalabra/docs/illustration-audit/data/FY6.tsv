@@ -11,7 +11,7 @@ fy6-1/virhe-kaavio|5|5|4|5|PIDA|Tarkoituksella virheellinen kytkentä.||
 fy6-1/valinta-a|5|4|4|5|PIDA|||
 fy6-1/valinta-b|5|4|4|5|PIDA|||
 fy6-1/valinta-c|5|4|4|5|PIDA|||
-fy6-10/hero|5|4|4|4|KEVYT|Tuoli ja punainen kangas eivät tunnistu; kampa paperinpaloineen ja ilmapallo riittävät kertomaan varauksesta.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11)
+fy6-10/hero|5|4|4|4|KEVYT|Tuoli ja punainen kangas eivät tunnistu; kampa paperinpaloineen ja ilmapallo riittävät kertomaan varauksesta.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12
 fy6-10/hankaus|5|5|5|5|PIDA|||
 fy6-10/influenssi|5|5|5|5|PIDA|Johde ja eriste rinnakkain; varausten paikat ja voimien suunnat oikein.||
 fy6-10/kentta|5|5|4|5|PIDA|||
@@ -64,7 +64,7 @@ fy6-15/merkki-1|5|4|4|4|PIDA|Vastausvaihtoehto; viiva tarkoituksella paksu, kosk
 fy6-15/merkki-2|5|4|4|4|PIDA|||
 fy6-15/merkki-3|5|4|4|4|PIDA|||
 fy6-16/hero|5|5|5|5|PIDA|||
-fy6-16/koti|5|5|4|5|KEVYT|Sulakkeiden arvot (3 · 25 A, 3 · 16 A, 16 A) ovat johdinten päällä valkoisilla taustalaatikoilla; ahdas vasen yläkulma.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11)
+fy6-16/koti|5|5|4|5|KEVYT|Sulakkeiden arvot (3 · 25 A, 3 · 16 A, 16 A) ovat johdinten päällä valkoisilla taustalaatikoilla; ahdas vasen yläkulma.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12
 fy6-16/vaiheet|5|5|5|5|PIDA|Vaiheiden kuormat pinottuina pääsulakkeen rajaa vasten.||
 fy6-16/kayra|5|5|4|5|PIDA|||
 fy6-16/lataus-ex|5|4|4|5|PIDA|||
@@ -87,7 +87,7 @@ fy6-3/pick-flat|5|4|4|5|PIDA|||
 fy6-4/hero|5|5|5|5|PIDA|||
 fy6-4/series|5|5|5|5|PIDA|||
 fy6-4/parallel|5|5|5|5|PIDA|||
-fy6-4/graph|5|5|4|5|KEVYT|"rinnan" on akselin nuolenkärjen ja käyrän pään päällä oikeassa alakulmassa.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11)
+fy6-4/graph|5|5|4|5|KEVYT|"rinnan" on akselin nuolenkärjen ja käyrän pään päällä oikeassa alakulmassa.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12
 fy6-4/mixed|5|5|4|5|PIDA|||
 fy6-4/task-mixed|5|4|4|5|PIDA|||
 fy6-4/siirto-mixed|5|4|4|5|PIDA|||
@@ -102,9 +102,9 @@ fy6-5/ex-branch|5|4|4|5|PIDA|||
 fy6-5/ex-branch2|5|4|4|5|PIDA|||
 fy6-6/hero|5|4|4|4|KORVAA|Sama aihe kuin fy6-3/hero (leivänpaahdin), ja paahdin on kolmannen kerran kuvassa fy6-15/hero. Saman moduulin laatat näyttävät samalta.|Keittiön liesi edestä: yksi hehkuva keraaminen keittoalue (lämmön oranssi → punainen hehku) ja sen päällä teräskattila, josta nousee höyryä; vieressä kylmä, tumma keittoalue vertailuna. Taustalla sama kaakeliseinä ja työtaso kuin fy6-3/hero ja fy3-7/hero. Havainnollistaa sähkötehon muuttumista lämmöksi vastuksessa. Ei tekstiä.|KORVAA ehdotetulla kuvalla (liesi ja kattila) (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-11
 fy6-6/energia|5|5|4|4|KEVYT|Alarivin yksiköt pystymurtoina (J/C, C/s, J/s) ovat pieniä; rivillä luettavampia.||PIDÄ: yksikkömurrot ovat tahallisia, korjaus peruttu (opettaja 2026-11-11)
-fy6-6/jako|5|5|4|4|KEVYT|Pylväissä liukuväri (ks. fy2-3/bars). Arvot oikein.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11)
+fy6-6/jako|5|5|4|4|KEVYT|Pylväissä liukuväri (ks. fy2-3/bars). Arvot oikein.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12
 fy6-6/lampo|5|5|4|5|PIDA|||
-fy6-6/graph|5|5|3|5|KEVYT|"4,0 W" on käyrän ja katkoviivan päällä.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11)
+fy6-6/graph|5|5|3|5|KEVYT|"4,0 W" on käyrän ja katkoviivan päällä.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12
 fy6-6/ex-pi|5|4|4|5|PIDA|||
 fy6-7/hero|5|5|5|5|PIDA|||
 fy6-7/power-time|5|5|5|5|PIDA|Sama energia kapeana korkeana ja leveänä matalana pinta-alana.||
@@ -114,15 +114,15 @@ fy6-8/hero|5|5|5|5|PIDA|||
 fy6-8/model|5|5|5|5|PIDA|||
 fy6-8/potential|5|5|5|5|PIDA|||
 fy6-8/ui-graph|5|5|5|5|PIDA|||
-fy6-8/connections|5|5|3|5|KEVYT|Merkinnät E ja Rs ovat katkoviivakehysten päällä, ja rinnankytkennän toisesta paristosta ne puuttuvat.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11)
+fy6-8/connections|5|5|3|5|KEVYT|Merkinnät E ja Rs ovat katkoviivakehysten päällä, ja rinnankytkennän toisesta paristosta ne puuttuvat.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12
 fy6-8/ex-graph|5|4|4|5|PIDA|||
 fy6-8/check-graph|5|4|4|5|PIDA|||
 fy6-9/hero|5|5|5|5|PIDA|||
 fy6-9/purku-lataus|5|5|4|5|PIDA|||
 fy6-9/kapasiteetti|5|5|5|5|PIDA|||
 fy6-9/latauspiiri|5|5|5|5|PIDA|Virta akun plusnapaan: lataussuunta oikein.||
-fy6-9/potentiaali|5|5|3|5|KEVYT|Jännitteiden summa on nolla (tarkistettu), mutta arvot 3,62 V, −0,88 V ja −0,22 V ovat ahtaasti käyrän ja toistensa päällä.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11)
-fy6-9/energia|5|5|4|3|KEVYT|Energiavirtakaavio liukuvärillä ilman harmaata tuloa; malli fy2-4/lamp. Summa täsmää (9,0 = 7,6 + 1,1 + 0,3).||KEVYT KORJAUS hyväksytty, ryhmä C (opettaja 2026-11-11)
+fy6-9/potentiaali|5|5|3|5|KEVYT|Jännitteiden summa on nolla (tarkistettu), mutta arvot 3,62 V, −0,88 V ja −0,22 V ovat ahtaasti käyrän ja toistensa päällä.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12
+fy6-9/energia|5|5|4|3|KEVYT|Energiavirtakaavio liukuvärillä ilman harmaata tuloa; malli fy2-4/lamp. Summa täsmää (9,0 = 7,6 + 1,1 + 0,3).||KEVYT KORJAUS hyväksytty, ryhmä C (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12
 fy6-9/ex-current|5|4|4|5|PIDA|||
 fy6-sovella/fy6-s1-circuit|5|5|4|5|PIDA|||
 fy6-sovella/fy6-s1-graph|5|4|4|4|PIDA|||
@@ -133,5 +133,5 @@ fy6-koe/fy6-k1-battery|5|4|4|4|PIDA|||
 fy6-koe/fy6-k1-charging|5|4|4|4|PIDA|||
 fy6-koe/fy6-k3-circuits|5|5|4|5|PIDA|||
 fy6-koe/fy6-k6-setup|5|5|5|5|PIDA|||
-fy6-koe/fy6-k2-graph|5|4|3|4|KEVYT|"UR ≈ 3,4 V", "UL ≈ 2,6 V" ja "lamppu" ovat ruudukon ja katkoviivojen päällä ilman taustaa.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11)
+fy6-koe/fy6-k2-graph|5|4|3|4|KEVYT|"UR ≈ 3,4 V", "UL ≈ 2,6 V" ja "lamppu" ovat ruudukon ja katkoviivojen päällä ilman taustaa.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12
 fy6-koe/fy6-k6-graph|5|4|4|4|PIDA|||
