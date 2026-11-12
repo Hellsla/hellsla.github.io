@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: cb6bf37d9b9841ce
-Delta review (Johda itse, 2026-11-12) of the version passed at 89f1adfdcba2e044.
+CONTENT-HASH: 7b3699a510e8acef
+Delta review (Johda itse round 2, 2026-11-12) of the version passed at cb6bf37d9b9841ce.
 
 ## Blocking
 (none)
 
 ## Polish
-1. Johda itse *g*, last paragraph: "kaikki kappaleet putoavat samalla kiihtyvyydellä" holds for free fall only. Fix: "putoavat vapaasti (ilmanvastus huomiotta) samalla kiihtyvyydellä".
+1. `unit.md`, first Johda itse: it says *keskeiskiihtyvyys* while the theory sentence above says *normaalikiihtyvyys*; one word would keep the term consistent (teacher's call, not an error).
 
 ## Checked
-1. Johda itse $\Sigma F = mv^2/r$ from $\Sigma\overline{F} = m\overline{a}$ and $a_\text{n}$; curve application $N = mg$, static friction ≤ $\mu_0 mg$, $v \le \sqrt{\mu_0 gr}$. Correct. Force diagram `kaarre`: G, N, $F_\mu$ toward the centre, $\overline{a}$ drawn apart from the forces, no centripetal force drawn as a force; agrees with the motion.
-2. Johda itse $g = \gamma M/r^2$: rotation neglected (stated); correct.
-3. Johda itse $v = \sqrt{\gamma M/r}$: gravity is the net force, $M \gg m$ stated. Correct.
-4. The inquiry solutions (activities[15], [16]) write the force equation themselves: fine.
-5. Every derivation starts from MAFY laws or a definition stated in the unit; every new symbol is defined with its unit; no removed formula is used as given in `unit.md`. The fi-easy text keeps every step and condition of fi; equations are identical.
+1. `unit.md`: the first Johda itse ($\Sigma F = ma_\text{n} = mv^2/r$, uniform motion, $m$, $v$, $r$ defined) and the second (flat curve: $N = mg$, friction the only horizontal force, $F_\mu = mv^2/r \le \mu_0 mg$, $v_\text{max} = \sqrt{\mu_0 gr}$) are each complete; the second uses the first's result explicitly. The figure `kaarre` is unchanged and still matches the second task. "Ilmanvastus jätetään huomioimatta" adds the right condition to the free-fall statement.
+2. `inquiry.json` [15] [16]: Newton's 2nd law with $a_\text{n} = v^2/r$; recomputed $27.6\,\text{km/h}$, $v = 7512\,\text{m/s}$, $T = 98.4\,\text{min}$.
+3. The fi-easy text says the same physics as fi in every changed place; numbers identical.
+4. Judged: `git diff 3ec8cc24` of this unit-language (review/ ignored); nothing else changed.

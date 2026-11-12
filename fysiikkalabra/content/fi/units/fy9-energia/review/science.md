@@ -1,15 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: ad539deba1140d1e
-Delta review (Johda itse, 2026-11-12) of the version passed at 237d1351779316d8.
+CONTENT-HASH: 90beeadb37d7835e
+Delta review (Johda itse round 2, 2026-11-12) of the version passed at ad539deba1140d1e.
 
 ## Blocking
 (none)
 
 ## Polish
-1. `inquiry.json` activities[14], solution **Kaava:** states $\eta = \eta_1\eta_2\eta_3\eta_4$ without derivation. Fix (teacher's call): add "(ks. Johda itse)".
-2. Johda itse, last sentence: "jokainen niistä on alle 1" holds for real stages; a stage may be practically 100 % (resistance heater). Fix: "Kun vaiheissa on häviöitä, …".
+(none)
 
 ## Checked
-1. Johda itse: $P_1 = \eta_1P_\text{o}$, $P_2 = \eta_2P_1$, $P_3 = \eta_3P_2$ gives $\eta = \eta_1\eta_2\eta_3$ from $\eta = P_\text{a}/P_\text{o}$; correct and complete.
-2. Example plant: $500 \cdot 0{,}90 \cdot 0{,}45 \cdot 0{,}98 = 198{,}5\,\text{MW}$, $198/500 = 0{,}40$; the text now computes $\eta$ from the powers. Concept map rows $\eta = W_\text{a}/W_\text{o}$, $\eta = P_\text{a}/P_\text{o}$ are right.
-3. Every derivation starts from MAFY laws or a definition stated in the unit; every new symbol is defined with its unit; no removed formula is used as given in `unit.md`.
+1. `inquiry.json` [14] hint and solution: from $\eta = P_\text{a}/P_\text{o}$ per stage, $P_\text{a} = \eta_1\eta_2\eta_3\eta_4P_0$, with each stage's output the next one's input. Recomputed $P_0 = 50.8\,\text{kW} \approx 51\,\text{kW}$.
+2. Judged: `git diff 3ec8cc24` of this unit-language (review/ ignored); nothing else changed.
