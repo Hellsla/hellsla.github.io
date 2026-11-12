@@ -1576,7 +1576,11 @@ def scope(folder, part="lesson"):
             # that changed (full); measured from an earlier version the same reviewer passed it may still be only added
             # exercises (delta). Take the lightest mode an earlier PASS of this reviewer allows (verify_scopes accepts
             # any hash the reviewer passed; teacher 2026-11-12)
-            for h2 in sorted(_passed_before(folder, name, part) - {rep[1]}):
+            # ... and the versions its PASS was carried over to (carry.tsv `to`): a set whose figures the teacher approved
+            # since the reviewer passed it holds that PASS for the carried version, and an exercise added after it is
+            # measured from there (fy2-5, fy2-7 on 2026-11-12)
+            carried_to = {c["to"] for c in carries(folder, part) if c["reviewer"] == name}
+            for h2 in sorted((_passed_before(folder, name, part) | carried_to) - {rep[1]}):
                 b2, s2 = passed_at(log, folder, part, h2)
                 if b2 is None: continue
                 if (b2, s2) not in cache: cache[b2, s2] = changes(folder, b2, part, s2)
