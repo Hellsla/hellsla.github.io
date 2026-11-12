@@ -1,20 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 2d22792f6d7cc426
+CONTENT-HASH: eeada8a6d64780eb
+SCOPE: delta added-exercise from 2d22792f6d7cc426 base 611fb7d5c174
+Mode: delta
+Round: 1
 
 ## Blocking
-(none)
 
 ## Polish
-- exercises.json:260 (fy2-3-L2-08) — two problems with realism. The stove's powers (2,0 kW and 4,0 kW) are well below the lesson table's sähkökiuas 8 kW. Also, a resistance stove with fixed elements cannot double its own power. This is a C-level idealisation, not wrong physics — fix it by comparing two stoves ("kiuas A … kiuas B"), or use values in the stove range, e.g. 12 kWh in 2,0 h vs 1,0 h (6,0 kW vs 12 kW is still high). Two stoves is the cleaner fix.
-- exercises.json:284 (fy2-3-L2-08, the "nelinkertaiseksi" feedback) — "riippuu ajasta suoraan käänteisesti" is awkward wording — write "on kääntäen verrannollinen aikaan, kun energia pysyy samana".
-- solutions.md:135 (fy2-3-L1-08, carried over) — "Moottori muuntaa energiaa tasaisesti" is not needed for a keskiteho — write "Keskiteho on muuntunut energia jaettuna ajalla".
-- solutions.md:187 (fy2-3-L3-04, carried over) — "satoja megawatteja" for hydro: most Finnish hydro plants are tens of MW and the largest is about 190 MW — write "kymmenistä megawateista noin 200 megawattiin".
-- docs/exercise-bank/FY2.md:24 (carried over) — the plan's stair-climb task needs mgh (FY4). Update the plan to match the set.
+- exercises.json fy2-3-L1-09 text / solutions.md L1-09 Annettu — the symbol "hp" usually means mechanical horsepower (about 745,7 W); 735,5 W is the metric horsepower (hv, PS). Both values are inside the 4 % tolerance (6,71 MJ vs 6,62 MJ), so nothing breaks (C). If you like, name the metric horsepower ("hevosvoima, hv") or note that the two values differ.
+- exercises.json fy2-3-L1-09 text — the rated power of an engine is its output power, so "Kuinka paljon energiaa moottori muuntaa" really means the mechanical energy it gives. The fuel's chemical energy is several times larger. To leave no doubt, write "… muuntaa liike-energiaksi (mekaaniseksi energiaksi)".
+- Earlier items outside this delta (L2-08 stove powers and wording, L1-08, L3-04 hydro MW, the plan's stair task) are still open.
 
 ## Checked
-- New task L2-08, recomputed: P1 = 6,0 kWh : 3,0 h = 2,0 kW and P2 = 6,0 kWh : 1,5 h = 4,0 kW, so the ratio is 2,0. Exactly one option is correct ("kaksinkertaiseksi"). Each distractor (puolittuu, sama, nelinkertainen) is really wrong, and its feedback names the right reason: at fixed E, P is inversely proportional to t.
-- L2-08 solution: P = E : t is stated before substitution, the units (kWh : h = kW) are consistent, and it agrees with the lesson's notation. "Tasaisella teholla" is stated in the task.
-- L2-08 scope: only P = ΔE/Δt, with no work, force or FY4 content. The kind "concept, reasoning" fits.
-- answers.py: the L2-08 line is a comment (multiple choice, no number), which is correct. All 21 lines run, and every numeric answer agrees with exercises.json within tolerance (L2-04 78,84 → 79, L3-01 15,18 → 15, L3-02 342 → 340, L3-03 102 → 100, L3-05 43,2 → 43).
-- The rest of the set is unchanged since the previous PASS (82920b17): the earlier recomputation of L2-05, L2-07, L3-04 and L3-05 still holds.
-- The hash was 2d22792f6d7cc426 at the start and at the end.
+- Hash eeada8a6d64780eb at the start and the end. I judged only the added L1-09 and L1-10.
+- L1-09 recomputed: P = 5,0 · 735,5 W = 3677,5 W, Δt = 1800 s, ΔE = PΔt = 6,6195 MJ, the same as answers.py; the stated 6,6 MJ is 0,3 % away.
+- L1-09 solution: ΔE = PΔt is solved from P = ΔE/Δt before substitution. The conversions (hp → W, min → s, J → MJ) are shown, two significant figures follow the data, and the checks (≈ 6,7 MJ, ≈ 1,8 kWh) are right. The lookup is in the text and the hint in `hints`.
+- L1-09 scope: P = ΔE/Δt is the lesson's formula, used under the task's stated condition "tasaisesti". A 3,7 kW outboard motor is realistic.
+- L1-10 recomputed: line B passes (0; 0), (40 s; 20 kJ) and (80 s; 40 kJ), so P = 40 000 J : 80 s = 500 W, the same as answers.py. A 2 % tolerance fits an exact grid reading.
+- L1-10 figure: the drawing (ax.line to (80, 40)) and its description agree. B is the gentler line, the points fall on grid crossings, and no power or slope triangle gives the answer away.
+- L1-10 solution: the slope gives the power (the lesson's statement), and the second point is a real check (also 500 W). The comparison with A (1500 W, as in L1-04) agrees.
+- L1-10 uses the same figure as L1-04 but reads the other line, so it does not repeat that task.

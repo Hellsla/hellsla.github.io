@@ -1,16 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: d15c8d91aa20aab0
-Round: 3
+CONTENT-HASH: db3beb9c86a6bb71
+SCOPE: delta added-exercise from d15c8d91aa20aab0 base 611fb7d5c174
+
+Round: 1
 
 ## Blocking
-(none)
 
 ## Polish
-- exercises.json L1-09 — the new task is another prefix conversion, like L1-08 (0,35 GJ to MJ); it does not widen coverage of kWh or P = E : t. Acceptable as practice.
-- exercises.json L1-09 text — "Pellettikattilan lämpöenergia on 1 MJ" is odd; "Pellettikattila tuottaa lämpöenergiaa 1 MJ" reads naturally.
+- exercises.json fy2-2-L1-11 — it reuses the figure of L1-05 and begins with the same sentence; the question differs (tea water in kJ against battery-to-lightning ratio), as the teacher allowed. It still practises almost the same reading skill; swapping the target to the flash (1 GJ in kJ, a prefix step) would add something.
+- solutions.md L1-11 Järkevyys — "noin minuutin" for 100 kJ at 2 kW is 50 s; fine, but "alle minuutin" is exact.
 
 ## Checked
-- Diff since round 2 (commit fc2637d26) is one word in solutions.md L1-09: the label "Vastaus:" became "Mallivastaus:"; the text is identical. The solution still reads Annettu, Kysytty, Periaate, Kaava, Muunnokset, Sijoitus, Mallivastaus, Järkevyys and is followable; all three wrong options are explained.
-- Task, options and feedback did not change; arithmetic of every option stays right (1000 J = 1 kJ; 1 000 000 kJ = 1 GJ; 1000 GJ = 10^6 MJ). Levels 9/7/5 meet the minimums.
-- Not re-opened: screenshots (a label change only).
-- Hash identical at start and end.
+- L1-10: 180 kcal x 4,1868 J = 753,6 kJ; answer 753.6 kJ with tolerance 4 % agrees with the solution; the hint names only the table (*Yksikkömuunnoksia*).
+- L1-10 situation first (chocolate bar), the lookup request, then the question as its own last sentence; the solution has all seven steps and the kcal to cal to J chain is followable.
+- L1-11: the figure gives the needed point (two small steps right of 1 kJ), the description gives the same data to a reader who cannot see it, and the figure carries no value for the tea water.
+- L1-11 solution reads the graph step by step (10 kJ, then 100 kJ) and checks it against a kettle's power.
+- Level 1 fits both; neither repeats the worked example; the set now mixes calculation, lookup, graph reading and concept tasks.
+- Hash identical at start and end (db3beb9c86a6bb71).

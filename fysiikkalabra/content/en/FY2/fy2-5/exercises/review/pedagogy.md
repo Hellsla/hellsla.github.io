@@ -1,6 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 7b14ba9ee8f88098
-Round: 4
+CONTENT-HASH: dc433a75eb77d4f4
+SCOPE: delta added-exercise from 4ac0dae73e3c9ad3 base 611fb7d5c174
+Mode: delta
+Round: 1
 
 ## Blocking
 (none)
@@ -9,9 +11,6 @@ Round: 4
 (none)
 
 ## Checked
-- New order task L2-08: text gives the four data lines, the prompt names quantity and direction (smallest to greatest), four items; as in the Finnish.
-- Conversions g and t to kg are needed and shown in the solution; the order differs from the mass order, so the task needs the calculation.
-- Solution keeps Find, Principle, Model answer; explains why the order differs from mass order and gives an estimate check.
-- English reads naturally; fuel names (petrol, firewood, coal, milled peat) match the other tasks.
-- Duplicate "put in order" sentence (text and prompt) avoided as in the fi-easy wording; the other 16 tasks unchanged.
-- Round 3 -> 4 (commit 442c889ba): L3-04 Substitution line split into groups of four months (2100+1900+1600+1100 = 6700, 600+250+200+250 = 1300, 600+1100+1600+2000 = 5300, sum 6700+1300+5300 = 13 300); recomputed, correct, same numbers and wording pattern as the Finnish. No other change; no edits needed.
+- L1-09 (ethanol, MAFY): 26.7 MJ/kg x 0.50 kg = 13.35 MJ correct; hint names only the table; one lookup, one multiplication; the solution explains why MAFY is used.
+- L2-09 (figure lampoarvot): 12 x 43 : 15 = 34.4 kg correct; the values 43 and 15 are printed at the bars and in the description; the question (equal energy, mass of wood) differs from L1-02 (energy of gas) that uses the same figure.
+- L2-09 solution: energy first, then solves for m, plus a ratio check (about 3 times); two-step reasoning fits level 2.

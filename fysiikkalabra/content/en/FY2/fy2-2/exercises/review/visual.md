@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: cd0c4b4ece89b6db
-Mode: delta
-Round: 3
+CONTENT-HASH: ebf4de878302c8cc
+SCOPE: delta added-exercise from cd0c4b4ece89b6db base 611fb7d5c174
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy2-2-L1-06 solution — an inline formula (`0.0033 GJ = 0.0033 · 1000 MJ = 3.3 MJ`) reached 4 px past the viewport in round 1 with the choices answered; not re-measured this round (page scroll width is 390 px in the unanswered, details-open state) — let it break after `=` if it recurs.
-- [Minor] Follow-up from earlier rounds: none open for fy2-2 beyond the item above.
+- [Minor] L1-11 figure (fy2-2/tikapuut-kohteet): the label "boiling tea water" crosses the dashed guide line of "lightning"; shift the label left or break the dashed line behind it.
+- [Minor] L1-10 task: "mafytaulukot.fi" is plain text (a site name; optional).
 
 ## Checked
-- Hash at start and end: cd0c4b4ece89b6db; packet regenerated (delta, diff = the step label of the fy2-2-L1-09 solution only).
-- Own Playwright render at 390 px of preview/en/fy2-2.html: opened the L1-09 solution card in full; labels read GIVEN/FIND/PRINCIPLE/FORMULA/CONVERSIONS/SUBSTITUTION/MODEL ANSWER/REASONABLENESS in the same style and order as the other tasks, no clipping, chain box fits, page scroll width 390.
-- Text only: the rest of the exercise set (unchanged since the previous rounds); 1280 px captures not re-opened.
+- Opened fy2-2-open-exercises-1280-9, -10 and -11.png (content/en/FY2/fy2-2/review/shots/): the L1-10 (calorie) card with task text, closed-style "Hint" box under the question, answer row and full solution; the L1-11 card with the scale figure and its full solution.
+- Figure: axis with arrowhead, LaTeX tick labels, three markers on whole decades, "each step is a factor of 10" caption; tea-water marker two small steps right of 1 kJ, as the solution says; the figure does not print the value.
+- Maths clean: units upright with thin spaces, decimal point in English, chains split into aligned rows, no red KaTeX source, nothing clipped. 390 px captures not opened.
 
 ## Scores
-illustrations n/a · typography 4 · Finnish n/a (English page) · accessibility 4
+illustrations 4 · typography 5 · English 4 · accessibility 4

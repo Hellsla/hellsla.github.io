@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 28bd5e532512e22f
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
-Round: 2
+CONTENT-HASH: 180344415fef4b3f
+SCOPE: delta added-exercise from 308374a464834f8a base 611fb7d5c174
+Mode: delta
+Round: 1
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- fy2-7-L1-09 — same numbers as L1-01 (500 MWh, 4 %); vary the situation (e.g. 600 kWh, 5 %) so the two do not look like a repeat. Optional.
 
 ## Checked
-- git diff HEAD~1 (commit 29f864da6) of the unit's files (en), judged in context; round-1 findings for this unit.
-- exercises.json correct-option feedback: '...internal energy of the conductors, which is transferred as heat to the surroundings' - consistent with the lesson.
+- L1-09 (kWh to J, MAFY): 0.040 x 500 = 20 kWh, x 3.6 MJ = 72 MJ correct; hint names only the table; the lookup is a single factor.
+- L2-09 (figure sankey): 9 % - 4 % of 250 MWh = 12.5 MWh correct; the shares are in the figure and its description, no energies are printed; the question differs from L1-02 on the same figure and adds a comparison, which suits level 2.
+- Solution reads the figure, calculates both losses and checks with the 5 % difference.

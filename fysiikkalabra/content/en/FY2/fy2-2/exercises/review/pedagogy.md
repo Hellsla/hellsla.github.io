@@ -1,5 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: cd0c4b4ece89b6db
+CONTENT-HASH: ebf4de878302c8cc
+SCOPE: delta added-exercise from cd0c4b4ece89b6db base 611fb7d5c174
+Mode: delta
+Round: 1
 
 ## Blocking
 (none)
@@ -8,8 +11,7 @@ CONTENT-HASH: cd0c4b4ece89b6db
 (none)
 
 ## Checked
-- L1-09 is a Level 1 concept task: situation first (pellet boiler, 1 MJ), question last as its own sentence; each distractor targets a real prefix error (kilo/mega mix-up, extra factor, reversed direction) and its feedback names the error and repairs it.
-- Solution can be followed step by step (principle, formula, conversion, substitution, answer, reasonableness) and equals the Finnish in structure and numbers.
-- Language: natural English, short clear sentences, 'a million'/'a billion' for miljoona/miljardi. Same difficulty and no step dropped.
-- Phone use: short text and four short choices; nothing long to clip at 360 px.
-- Round 2 (label only): the step label of the L1-09 solution is now 'Model answer' instead of the plain answer label; the text, numbers, formulas and answer are unchanged, so the earlier findings stand. check_i18n.py shows nothing for fy2-2.
+- L1-10 (calorie, MAFY): 180 000 cal x 4.1868 J = 753.6 kJ correct; hint names only the table; situation first, question last; solution has principle, kilo conversion and a kJ check. Tolerance 4 % covers a 4.19 or 4.2 lookup.
+- L1-11 (figure): two steps right of 1 kJ gives 100 kJ; the question (tea water) differs from L1-05 (batteries per flash), so the shared figure is allowed; the description gives the same marks to a reader who cannot see it; no answer printed in the figure.
+- L1-11 solution reads the graph step by step; kettle check (2 kW, about a minute) is sensible.
+- Level 1 now has 11 tasks; mix of kinds is fine and nothing repeats the worked example.

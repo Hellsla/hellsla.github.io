@@ -1,17 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: be130260722cc92a
-Round: 3
+CONTENT-HASH: a1fbb6ffcc68c242
+SCOPE: delta added-exercise from be130260722cc92a base 611fb7d5c174
+
+Round: 1
 
 ## Blocking
-(none)
 
 ## Polish
-- exercises.json L2-08 correct-option feedback — "eli ... eli 60 %" repeats "eli"; "$\eta = 360\,\text{kJ} : 600\,\text{kJ} = 0{,}60 = 60\,\%$" read as two pieces ("..., joten $\eta = 0{,}60$, siis $60\,\%$") would flow better. Minor.
-- exercises.json L2-08 option 1 feedback — still "Jos muunnoksen luulee virheelliseksi, sekoittaa minuutin ja sekunnin suhteen" (round-1 and round-2 point, unchanged): "Jos valitsisi tämän rivin, sekoittaisi minuutin ja sekunnin suhteen".
-- exercises.json L2-08 option 5 feedback — "mikä on mahdotonta": "mikä ei ole mahdollista".
+- exercises.json fy2-4-L2-09 and L3-03 — same figure (fy2-4/grid), the question differs (efficiency against loss in joules), as allowed. But L3-03 needs only 240 J x 6/8, no more than L2-09; consider asking L3-03 for something that needs the lesson's reasoning (for instance the same motor at 25 % running 10 min on 2,0 kW).
+- exercises.json fy2-4-L1-09 — two steps (E_o = Hm, then efficiency) plus a lookup; closer to level 2. Acceptable, but the order of the set would suit it at the end of level 1.
+- solutions.md L1-09 — the ±4 % tolerance covers 40,6 only; a table with 42,7 MJ/kg gives 74,9 %, outside it. The task says MAFY, so fine; do not claim other tables are accepted.
 
 ## Checked
-- Diff since round 2 (commit 442c889ba) in fy2-4: the correct-option feedback of L2-08 (the η chain split into "η = E_a : E_o, eli η = 360 kJ : 600 kJ = 0,60, eli 60 %") and solutions.md Rivi 2 ("E_o = 2500 W · 240 s, eli E_o = 600 000 J = 600 kJ on oikein"). Same numbers; 360 : 600 = 0,60 and 2500 · 240 = 600 000 J recomputed. The reasoning, the 167 % remark and the sanity check are intact.
-- Task text, options 1–3 and 5, and the rest of the solution did not change; row 4 is still the only wrong row. Levels 8/8/5 meet the minimums.
-- Not re-opened: screenshots (the change is a split of text lines).
-- Hash identical at start and end.
+- L1-09: 40,6 x 2,5 = 101,5 MJ, 80 / 101,5 = 78,8 %; the answer agrees with the solution; the hint names only the table (*Polttoaineiden LHV-lämpöarvoja*); E = Hm is given in the text.
+- L2-09: arrows 2 and 8 squares give 25 %; the description gives the thicknesses (8, 2, 6) to a reader who cannot see the picture, and the figure shows no efficiency.
+- L2-09 solution reads the figure, converts to a ratio and checks conservation with the loss arrow (2 + 6 = 8).
+- The figure is needed (the input energy of 240 J is not used for the ratio, which is a fair extra datum).
+- Hash identical at start and end (a1fbb6ffcc68c242).

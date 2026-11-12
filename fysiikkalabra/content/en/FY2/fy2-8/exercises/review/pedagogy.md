@@ -1,21 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: ab3a7a9c0b52be41
-Mode: delta (new task fy2-8-L2-08 only)
-Round: 2
+CONTENT-HASH: 55adc168e4d15871
+SCOPE: delta added-exercise from ab3a7a9c0b52be41 base 611fb7d5c174
+Mode: delta
+Round: 1
 
 ## Blocking
-- none
-
-## Fixed
-- exercises.json L2-08 option 2 feedback: "a more efficient equipment" -> "more efficient equipment" (grammar).
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- fy2-8-L2-08 (exercises.json and solutions.md) against the reviewed Finnish: same table (5 rows, E and m), uncertainty 10 kt, correct option (2020 to 2024, 100 kt = 10 x 10 kt), exactly one correct flag, same five choices in the same order, tolerance and kinds equal.
-- Recomputed: 520 - 420 = 100 kt; 520 - 515 = 5 kt < 10 kt; intervals 510-530 and 410-430 kt do not overlap (2020/2021 intervals 510-530 and 505-525 do); slope -25 kt/a x 10 a from 420 gives 170 kt for 2034; 1000 GWh in both years sits in column E.
-- Each distractor still has one error and feedback that names it (wrong uncertainty comparison, unsupported cause, extrapolation, wrong column); no feedback gives a false number.
-- Solutions section keeps Find / Principle / Model answer as in fi; numbers equal.
-- English decimal point not applicable (integers only); natural English: "uncertainty range", "over-interpreting", "extrapolating too far".
-- check_i18n.py: nothing for fy2-8; build.py fy2-8 succeeds.
+- L1-09 (gas emissions, MAFY): 47 MJ/kg x 2.0 kg = 94 MJ, x 55 g/MJ = 5.17 kg correct; the emission factor is given without a named source as the teacher decided; hint names only the table; the unit chain MJ/kg to g/MJ to kg is shown.
+- L2-09 (figure emissions): (820 - 490) g/kWh x 20 000 kWh = 6.6 t correct; values are printed at the bars; the question (reduction when switching) differs from L1-05 on the same figure; description gives the same data.
+- Reasonableness checks (2.6 kg CO2 per kg gas; 16.4 t - 9.8 t) are sensible.
+- Set fits: no repeat of another task.

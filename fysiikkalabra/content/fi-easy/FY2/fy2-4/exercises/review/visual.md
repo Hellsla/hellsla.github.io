@@ -1,20 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 52cd5fdc12763c25
-Mode: delta
-Round: 2
+CONTENT-HASH: 74c4ce92efe55640
 
 ## Blocking
 (none)
 
 ## Polish
-- none
+- [Minor] 4-9 and 4-18 — "vastaus hyväksytään, kun se on noin $\pm 4\,\%$ sisällä" (4-9) is aimed at the teacher — optional.
+- [Minor] 4-9 task text — "(mafytaulukot.fi)" is plain text — link it or leave it out.
+- [Minor] 4-9 task text — seven sentences before the question; the symbol definitions ($E_\text{o}$, $H$, $m$) could be one sentence each in a list — optional.
+- [Minor] 4-18 — the scale (how many joules a square is) is not stated; the solution does not need it, so optional.
 
 ## Checked
-- Round-1 Major confirmed fixed by a live render at 390 px (Playwright, rebuilt preview/fi-easy/fy2-4.html, level open, every feedback and the solution open): fy2-4-L2-08, the correct-option feedback (η chain, now "…, that is/eli … = 0.60, which is/eli 60 %") and the Model answer line 2 (now "E_o = 2500 W · 240 s, that is/eli E_o = 600 000 J = 600 kJ"). Read in crops; measured every formula against its text column: none overflows, no clipped chain, KaTeX errors 0, no page-level horizontal overflow.
-- The wrapped lines break after "eli"/"that is" or at an operator, not mid-formula; the solution's fraction chain "η = E_a/E_o = 360 kJ/600 kJ = 0.60 = 60 %" still fits on one row.
-- Not opened: the fresh review/shots 1280 px captures and contact sheets (my render replaces them for this fix), the other tasks of the chapter (unchanged), fi-easy language judged from the task text in the render only.
-
-- Hash at the start and at the end of my round: identical.
+- Opened fy2-4-open-exercises-1280-8.png (4-9 task, Vihje box, answer row, solution start), -9.png (4-9 solution end), fy2-4-open-exercises-L2-1280-10.png (4-18 task with figure, answer row) and -11.png (4-18 solution).
+- 4-9: situation then question, Vihje box under the task; the two-formula Kaava line and the chain with fraction render cleanly, thin spaces and decimal comma right.
+- 4-18: figure fy2-4/grid is a flat energy-flow diagram on squared paper (input 8 squares, green 2, orange 6, labels in KaTeX, colour plus words, no values for the outputs); the squares read as the solution says and the description matches it.
+- Unchanged exercises not re-opened. No 390 px exercise captures: phone layout not judged.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

@@ -1,20 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: eddb481aa99052bc
-Mode: delta
-Round: 2
+CONTENT-HASH: 7a19934165da13b5
+SCOPE: delta added-exercise from eddb481aa99052bc base 611fb7d5c174
 
 ## Blocking
 (none)
 
 ## Polish
-- none
+- [Minor] L1-09 task: "mafytaulukot.fi" is plain text (a site name; optional).
+- [Minor] L2-09 figure (fy2-4/grid): the arrows' thickness is read in squares, but the fine grid lines are dense at 390 px; keep an eye on it on a phone (not opened).
 
 ## Checked
-- Round-1 Major confirmed fixed by a live render at 390 px (Playwright, rebuilt preview/en/fy2-4.html, level open, every feedback and the solution open): fy2-4-L2-08, the correct-option feedback (η chain, now "…, that is/eli … = 0.60, which is/eli 60 %") and the Model answer line 2 (now "E_o = 2500 W · 240 s, that is/eli E_o = 600 000 J = 600 kJ"). Read in crops; measured every formula against its text column: none overflows, no clipped chain, KaTeX errors 0, no page-level horizontal overflow.
-- The wrapped lines break after "eli"/"that is" or at an operator, not mid-formula; the solution's fraction chain "η = E_a/E_o = 360 kJ/600 kJ = 0.60 = 60 %" still fits on one row.
-- Not opened: the fresh review/shots 1280 px captures and contact sheets (my render replaces them for this fix), the other tasks of the chapter (unchanged), en language judged from the task text in the render only.
-
-- Hash at the start and at the end of my round: identical.
+- Opened fy2-4-open-exercises-1280-8 and -9.png and fy2-4-open-exercises-L2-1280-10 and -11.png (content/en/FY2/fy2-4/review/shots/): L1-09 (oil boiler) card with task, "Hint" box under the question, answer row and full solution; L2-09 (motor energy-flow on squared paper) card with figure, answer row and solution.
+- Figure: labels in LaTeX-style serif, E_o = 240 J marked, green useful and orange loss arrows clearly apart, squares readable at 1280 px; the figure does not give the percentage.
+- Maths clean: units upright with thin spaces, decimal point in English, fraction chains in aligned rows, no red KaTeX source, nothing clipped. 390 px captures not opened.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 (English) · accessibility 5
+illustrations 4 · typography 5 · English 4 · accessibility 4

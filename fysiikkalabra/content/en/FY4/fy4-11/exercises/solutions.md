@@ -268,3 +268,35 @@ F_\text{max} &= \frac{80.0\,\text{kg} \cdot 4.5\,\text{m/s}}{0.020\,\text{s}} \\
 d) The change in momentum is $m\,\Delta v = 80.0\,\text{kg} \cdot 15.0\,\text{m/s} = 1200\,\text{kg}\cdot\text{m/s}$ regardless of whether the dummy is protected by a belt and an airbag. If the dummy stopped in $0.010\,\text{s}$, the average force would be $F_\text{avg} = \dfrac{1200\,\text{kg}\cdot\text{m/s}}{0.010\,\text{s}} = 120\,000\,\text{N}$, that is, $120\,\text{kN}$.
 **Answer:** c) The greatest force is $18.0\,\text{kN}$, three significant figures like the change in speed $4.5\,\text{m/s}$ and the mass $80.0\,\text{kg}$. In addition, a) the stopping distance is $0.79\,\text{m}$ and b) the average force is $10\,\text{kN}$. d) The belt and the airbag lengthen the stopping time to about $0.12\,\text{s}$, whereas on hitting a rigid surface the time would be about $0.010\,\text{s}$ and the average force would be $120\,\text{kN}$, that is, $12$ times as large. The change in momentum and the impulse are the same, so a longer time means a smaller force, $F_\text{avg} = \tfrac{m\,\Delta v}{\Delta t}$. The belt keeps the dummy with the car and lets it slow down together with the car, and the airbag spreads the force over a large area; they work together, not instead of each other. The force varies during the collision, so the greatest force $18.0\,\text{kN}$ is greater than the average.
 **Reasonableness:** The weight of the dummy is $80.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 785\,\text{N}$, so the greatest force is about $23$ times and the average force about $13$ times the weight. The greatest force is $1.8$ times the average. The distance can be checked with the average speed: over the whole time the average speed is about $0.79\,\text{m} : 0.120\,\text{s} = 6.6\,\text{m/s}$, which is less than half of the initial speed $15.0\,\text{m/s}$, because the speed has decreased faster in the middle than in uniform slowing down.
+
+## fy4-11-L1-09
+**Given:** $v_0 = 80\,\text{km/h}$, finally $v = 0$; coefficient of sliding friction between rubber and asphalt from the MAFY table (table *Kitkakertoimia*, rubber–asphalt, sliding friction): the range $0.5$–$0.8$, the greatest value $\mu = 0.8$ is used; $g = 9.81\,\text{m/s}^2$
+**Find:** the braking distance $s$ in $\text{m}$
+**Principle:** On a horizontal road the normal force equals the weight, $N = mg$, and the friction $F_\mu = \mu N$ on the sliding tyres is the only horizontal force. By Newton's second law $\mu mg = ma$, so the deceleration is $a = \mu g$, and the mass cancels. The deceleration is constant, so the stopping distance follows from $v_0^2 = 2as$.
+**Formula:** $a = \mu g$ and $s = \dfrac{v_0^2}{2a} = \dfrac{v_0^2}{2\mu g}$
+**Conversions:** $v_0 = 80\,\text{km/h} = \dfrac{80}{3.6}\,\text{m/s} = 22.22\,\text{m/s}$
+**Substitution:** $a = 0.8 \cdot 9.81\,\text{m/s}^2 = 7.85\,\text{m/s}^2$ and $s = \dfrac{(22.22\,\text{m/s})^2}{2 \cdot 7.85\,\text{m/s}^2} = 31.5\,\text{m}$
+**Answer:** $31\,\text{m}$, two significant figures like the speed $80\,\text{km/h}$ and the coefficient $0.8$. The coefficient is a range $0.5$–$0.8$ in the MAFY table (table *Kitkakertoimia*); at the other end, $\mu = 0.5$, the braking distance would be $50\,\text{m}$, so this result is the shorter end of the range.
+**Reasonableness:** A braking distance of $31\,\text{m}$ is of the order of a typical dry-road braking distance from $80\,\text{km/h}$. The deceleration $7.85\,\text{m/s}^2$ is smaller than in ABS braking on dry asphalt ($\mu \approx 0.9$), which fits locked, sliding wheels.
+
+## fy4-11-L2-09
+**Given:** from the graph the velocity as a function of time: $v_0 = 20\,\text{m/s}$ until $t_\text{r} = 1.0\,\text{s}$, then a steady deceleration to zero at $3.5\,\text{s}$
+**Find:** the total distance $s$ in $\text{m}$
+**Principle:** The distance is the area between the $(t, v)$ graph and the time axis. The velocity is first constant (the reaction time), then it decreases linearly (braking), so the region is a rectangle and a triangle.
+**Reading the graph:** The rectangle has height $20\,\text{m/s}$ and width $1.0\,\text{s}$. The triangle has height $20\,\text{m/s}$ and base $3.5\,\text{s} - 1.0\,\text{s} = 2.5\,\text{s}$.
+**Formula:** $s = s_\text{r} + s_\text{j} = v_0 t_\text{r} + \tfrac{1}{2} v_0 t_\text{j}$
+**Conversions:** None needed: the quantities are in SI units.
+**Substitution:** $s = 20\,\text{m/s} \cdot 1.0\,\text{s} + \tfrac{1}{2} \cdot 20\,\text{m/s} \cdot 2.5\,\text{s} = 20\,\text{m} + 25\,\text{m} = 45\,\text{m}$
+**Answer:** $45\,\text{m}$, two significant figures, the precision of the values read from the graph.
+**Reasonableness:** The speed $20\,\text{m/s}$ is $72\,\text{km/h}$, and a stopping distance of $45\,\text{m}$ is typical. The deceleration is the magnitude of the slope, $\dfrac{20\,\text{m/s}}{2.5\,\text{s}} = 8.0\,\text{m/s}^2$, which fits a dry road. The distance is smaller than the $70\,\text{m}$ that a car moving at $20\,\text{m/s}$ the whole $3.5\,\text{s}$ would cover, as it should be.
+
+## fy4-11-L3-06
+**Given:** mass of the dummy $m = 70\,\text{kg}$; from the graph in both tests the initial velocity $v_0 = 15\,\text{m/s}$, test A: the velocity is zero at $\Delta t_\text{A} = 0.060\,\text{s}$, test B: the velocity is zero at $\Delta t_\text{B} = 0.150\,\text{s}$
+**Find:** the difference of the average forces $F_\text{A} - F_\text{B}$ in $\text{kN}$
+**Principle:** By the impulse–momentum principle the impulse of the force on the dummy equals the change in momentum, $F_\text{avg}\,\Delta t = m\,\Delta v$. In both tests the velocity decreases linearly, so the force is constant and the average force equals the instantaneous force.
+**Reading the graph:** In both tests the velocity changes from $15\,\text{m/s}$ to zero, so $\Delta v = 15\,\text{m/s}$. The stopping times are read where the lines meet the time axis: $0.060\,\text{s}$ and $0.150\,\text{s}$.
+**Formula:** $F_\text{avg} = \dfrac{m\,\Delta v}{\Delta t}$, so $F_\text{A} - F_\text{B} = m\,\Delta v \left(\dfrac{1}{\Delta t_\text{A}} - \dfrac{1}{\Delta t_\text{B}}\right)$
+**Conversions:** None needed: the quantities are in SI units; finally $1\,\text{kN} = 1000\,\text{N}$.
+**Substitution:** $F_\text{A} = \dfrac{70\,\text{kg} \cdot 15\,\text{m/s}}{0.060\,\text{s}} = 17\,500\,\text{N}$ and $F_\text{B} = \dfrac{70\,\text{kg} \cdot 15\,\text{m/s}}{0.150\,\text{s}} = 7000\,\text{N}$, so $F_\text{A} - F_\text{B} = 10\,500\,\text{N} = 10.5\,\text{kN}$
+**Answer:** $10.5\,\text{kN}$, three significant figures, following the times $0.060\,\text{s}$ and $0.150\,\text{s}$ read from the graph.
+**Reasonableness:** Test A: $17.5\,\text{kN}$ is about $25$ times the weight of the dummy, $70\,\text{kg} \cdot 9.81\,\text{m/s}^2 \approx 690\,\text{N}$, test B: $7.0\,\text{kN}$ about $10$ times. The ratio of the forces $17.5/7.0 = 2.5$ equals the inverse ratio of the times $0.150/0.060 = 2.5$, as it should: the same change of momentum, a longer time, a smaller force.

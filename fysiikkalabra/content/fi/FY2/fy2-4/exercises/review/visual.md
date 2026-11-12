@@ -1,18 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: be130260722cc92a
-Round: 3
+CONTENT-HASH: a1fbb6ffcc68c242
+SCOPE: delta added-exercise from be130260722cc92a base 611fb7d5c174
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] L2-08 correct-option feedback — "eli $\eta = 360\,\text{kJ} : 600\,\text{kJ} = 0{,}60$, eli $60\,\%$" repeats "eli" twice in one sentence; "joten" for the second would read better.
-- [Minor] Carried from round 2: the L2-08 choices are shuffled as Rivi 4, 3, 2, 1; L3-03 figure labels are small on a phone.
+- [Minor] fy2-4-L2-09 solution — the block heading "Kuvaajan lukeminen" names a graph, but the figure is an energy-flow diagram; "Kuvion lukeminen" would fit (shared heading, may stay).
 
 ## Checked
-- Delta is two lines. From my own Playwright render at 390 px (preview/fy2-4.html, L2-08 answered with Rivi 4, solution opened): the correct-option feedback (η = E_a : E_o, then η = 360 kJ : 600 kJ = 0,60, then 60 %) wraps cleanly, nothing clipped; Mallivastaus Rivi 2 now "E_o = 2500 W · 240 s, eli E_o = 600 000 J = 600 kJ" fits on two lines; document width 390. (A sticky stage bar overlaps the render in one strip; I removed it for the solution crop.)
-- Not from a capture: the packet's 1280 px captures were not opened this round.
-- Rest of the set unchanged since the round-2 PASS.
+- fy2-4-open-exercises-1280-8: L1-09 (4-9) task, Vihje box, answer row, solution through Sijoitus (E_o, eta rows aligned at =, units upright); quantities in LaTeX.
+- fy2-4-open-exercises-1280-9: L1-09 Järkevyys, nothing clipped.
+- fy2-4-open-exercises-L2-1280-10: L2-09 (4-18) task and energy-flow figure on squared paper (arrows 8, 2 and 6 squares thick, labels outside the arrows, E_o = 240 J given, colours consistent), solution start.
+- fy2-4-open-exercises-L2-1280-11: L2-09 solution (Kaava, Sijoitus, Vastaus, Järkevyys).
+- 360 px from the packet's layout check only.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

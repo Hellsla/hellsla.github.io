@@ -1,15 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: eb6030c5ebb1f4dc
+CONTENT-HASH: 0fefe3c568f326f8
+SCOPE: delta added-exercise from eb6030c5ebb1f4dc base 611fb7d5c174
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- solutions.md fy2-2-L1-10, Järkevyys: "Joulut ovat pieniä. Siksi kilojoulelukema on noin nelinkertainen kilokalorilukemaan verrattuna." The reason is that one calorie is a larger unit than one joule. Better: "Kalori on suurempi yksikkö kuin joule, joten lukuarvo kasvaa noin 4,2-kertaiseksi."
+- exercises.json fy2-2-L1-11 uses the same figure as L1-05 (allowed, question differs); the figure label says "teeveden kiehautus" and the task "teeveden kiehauttaminen". Optional: use one phrase.
 
 ## Checked
-- L1-09 is a Level 1 concept task: situation first (pellet boiler, 1 MJ), question last as its own sentence; each distractor targets a real prefix error (kilo/mega mix-up, extra factor, reversed direction) and its feedback names the error and repairs it.
-- Solution can be followed step by step (principle, formula, conversion, substitution, answer, reasonableness) and equals the Finnish in structure and numbers.
-- Language: clear Finnish per NOTES.md section 12: one idea per sentence (e.g. 'Siksi ...', 'Tässä etuliitteet on laitettu väärin päin'), physics terms kept, same steps as the Finnish. Same difficulty and no step dropped.
-- Phone use: short text and four short choices; nothing long to clip at 360 px.
-- Round 2 (label only): the step label of the L1-09 solution is now 'Mallivastaus' instead of the plain answer label; the text, numbers, formulas and answer are unchanged, so the earlier findings stand. check_i18n.py shows nothing for fy2-2.
+- L1-10: situation first, question last; kcal explained in the text; the MAFY hint names only the table (teacher's decision); no value is given away.
+- L1-10 key: 180 000 * 4,1868 J = 753,6 kJ; the 4 % tolerance covers other tables (4,18 and 4,19); the solution is staged and the sense check (4,2 * 180 = 756) agrees.
+- L1-11: figure needed to answer; its description gives the position (two intervals right of 1 kJ) to a reader who cannot see it, without stating 100 kJ.
+- L1-11 solution reads the scale step by step (10 kJ, then 100 kJ); the sense check (2 kW kettle, about a minute) is plausible.
+- Both are level 1 (one conversion, one reading); no repeat of the worked example; kinds mix with the existing concept and data tasks.
+- Finnish clear, one idea per sentence; case forms after numbers and units correct.
+- Hash is the same at the start and the end (0fefe3c568f326f8).

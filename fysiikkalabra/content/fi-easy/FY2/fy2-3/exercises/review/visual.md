@@ -1,18 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 0dd670b21be99b54
-Round: 1 (delta)
+CONTENT-HASH: d326dfa058f3a2a3
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] data tables — captions and the right-hand columns are cut at 390 px and scroll sideways (design rule, NOTES §1); header cells stay left of right-aligned numbers.
+- [Minor] 3-9 and 3-10 Vastaus — "vastaus hyväksytään, kun se on noin $\pm 4\,\%$ sisällä" is aimed at the teacher — optional.
+- [Minor] 3-9 task text — "(mafytaulukot.fi)" is plain text — link it or leave it out.
+- [Minor] 3-9 task text — "$P = \Delta E/\Delta t$" is inline with a slash while the solution shows the fraction — optional: "$P = \tfrac{\Delta E}{\Delta t}$".
 
 ## Checked
-- Render at 390 px (own Playwright, preview/fi-easy/fy2-3.html, all levels open, solutions open, choices answered): page scrollWidth 390, no overflow; the only chains/KaTeX wider than their box are the data-table headers inside the scrolling .exp-table (by design). New L2-08 (choice task, model answer P1, P2, P2:P1 chain) opened as a card: all chains fit, no clipping.
-- L3-04, L3-05 cards (task text now split in paragraphs, a stage per paragraph) opened at 390 px (L3-05 en; L3-04 only measured).
-- Text only: solutions.md and exercises.json diffs (L2-08 choices and feedback, answers.py comment), wording, glossary use, number and unit LaTeX, decimal comma/point.
-- From earlier captures (1280 px, already current for this hash): en fy2-3 open-exercises-L2-1280-9 (L2-08) opened. Contact sheets and the other 1280 captures not opened; fi-easy fy2-5 had no captures (its preview page was empty), so all of its judgement is from my own render.
+- Opened fy2-3-open-exercises-1280-8.png (end of 3-8, 3-9 task, Vihje box, answer row, solution start), -9.png (3-9 solution, 3-10 task with figure) and -10.png (3-10 solution).
+- 3-9: situation then question; the Vihje box sits under the task; chains (unit conversions, substitution) render as aligned rows, decimal comma and thin spaces right, no overflow.
+- 3-10: graph fy2-3/graph-ab has axes with quantity and unit, readable ticks and gridlines, A orange and B blue labelled at the line ends; the points the solution uses lie on gridline crossings; the description matches the drawing.
+- Selkeä suomi wording is plain and consistent with the set. Unchanged exercises not re-opened. No 390 px exercise captures: phone layout not judged.
 
 ## Scores
-illustrations 4 · typography 4 · language 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4
