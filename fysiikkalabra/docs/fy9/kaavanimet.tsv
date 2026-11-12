@@ -67,7 +67,7 @@ fy9-magnetismi-valo	290	u_0 = NAB\cdot 2\pi f	u_0 = NAB\cdot 2\pi f	generaattori
 fy9-magnetismi-valo	290	U_\text{eff} = \frac{u_0}{\sqrt{2}}	U_\text{eff} = \frac{u_0}{\sqrt{2}}	sinimuotoisen vaihtojännitteen tehollinen arvo	rms value of a sinusoidal alternating voltage	MAFY	Sähkömagnetismin kaavoja	
 fy9-magnetismi-valo	290	\frac{N_1}{N_2} = \frac{U_1}{U_2} \approx \frac{I_2}{I_1}	\frac{N_1}{N_2} = \frac{U_1}{U_2} \approx \frac{I_2}{I_1}	muuntaja	transformer	MAFY	Sähkömagnetismin kaavoja	
 fy9-magnetismi-valo	290	P_\text{h} = RI^2	P_\text{h} = RI^2			ei MAFY:ssa		ei MAFY:ssa
-fy9-magnetismi-valo	302	c = f\lambda	c = f\lambda			ei MAFY:n muodossa	Aaltoliikkeen kaavoja	valolle; nimi poistettu 2026-11-12: tunnukset eroavat MAFY:n kaavasta
+fy9-magnetismi-valo	302	c = f\lambda	c = f\lambda	aaltoliikkeen perusyhtälö	wave equation	MAFY	Aaltoliikkeen kaavoja	MAFY: v = fλ; valolle c = fλ (opettaja 2026-11-12)
 fy9-magnetismi-valo	302	\lambda_\text{max} = \frac{b}{T}	\lambda_\text{max} = \frac{b}{T}	Wienin siirtymälaki	Wien's displacement law	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	
 fy9-magnetismi-valo	302	\frac{\sin\alpha_1}{\sin\alpha_2} = \frac{v_1}{v_2} = \frac{n_2}{n_1}	\frac{\sin\alpha_1}{\sin\alpha_2} = \frac{v_1}{v_2} = \frac{n_2}{n_1}	taittumislaki (Snellin laki)	law of refraction (Snell's law)	MAFY	Aaltoliikkeen kaavoja	
 fy9-magnetismi-valo	302	\sin\alpha_\text{r} = \frac{n_2}{n_1}	\sin\alpha_\text{r} = \frac{n_2}{n_1}			ei MAFY:ssa		ei MAFY:ssa

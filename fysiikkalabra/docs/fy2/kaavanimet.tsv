@@ -33,7 +33,7 @@ fy2-3	240	= 9{,}6\,\text{kWh} \cdot 20\,\text{snt/kWh}	= 9.6\,\text{kWh} \cdot 2
 fy2-3	240	= 192\,\text{snt}	= 192\,\text{c}					
 fy2-3	240	= 192 \cdot 0{,}01\,\text{€}	= 192 \cdot 0.01\,\text{€}					
 fy2-3	240	= 1{,}92\,\text{€}	= 1.92\,\text{€}					
-fy2-4	106	\eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}	\eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}			ei MAFY:n muodossa	Mekaniikan kaavoja	sama nimi kuin FY9:ssä; nimi poistettu 2026-11-12: tunnukset eroavat MAFY:n kaavasta
+fy2-4	106	\eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}	\eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}	hyötysuhde	efficiency	MAFY	Mekaniikan kaavoja	MAFY: W_a/W_o; FY2:ssa energia E (opettaja 2026-11-12: Q vasta FY3:ssa)
 fy2-4	112	\eta = \frac{E_\text{a}}{E_\text{o}}	\eta = \frac{E_\text{a}}{E_\text{o}}					
 fy2-4	112	= \frac{P_\text{a} \cdot t}{P_\text{o} \cdot t}	= \frac{P_\text{a} \cdot t}{P_\text{o} \cdot t}					
 fy2-4	112	= \frac{P_\text{a}}{P_\text{o}}	= \frac{P_\text{a}}{P_\text{o}}					
@@ -50,7 +50,7 @@ fy2-4	185	= 324\,000\,\text{J}	= 324\,000\,\text{J}
 fy2-4	185	[6pt] E_\text{h} = E_\text{o} - E_\text{a}	[6pt] E_\text{h} = E_\text{o} - E_\text{a}					
 fy2-4	185	= 360\,000\,\text{J} - 324\,000\,\text{J}	= 360\,000\,\text{J} - 324\,000\,\text{J}					
 fy2-4	185	= 36\,000\,\text{J}	= 36\,000\,\text{J}					
-fy2-5	171	E = Hm	E = Hm			ei MAFY:n muodossa	Termodynamiikan kaavoja	MAFY:ssa Q = Hm; tunnilla energia E; nimi poistettu 2026-11-12: tunnukset eroavat MAFY:n kaavasta
+fy2-5	171	E = Hm	E = Hm	palamisessa vapautuva lämpö	heat released in combustion	MAFY	Termodynamiikan kaavoja	MAFY: Q = Hm; FY2:ssa energia E (opettaja 2026-11-12: Q vasta FY3:ssa)
 fy2-5	280	E = Hm	E = Hm					
 fy2-5	291	E = Hm	E = Hm					
 fy2-5	291	= 15\,\tfrac{\text{MJ}}{\text{kg}} \cdot 6{,}0\,\text{kg}	= 15\,\tfrac{\text{MJ}}{\text{kg}} \cdot 6.0\,\text{kg}					

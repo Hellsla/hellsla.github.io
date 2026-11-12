@@ -103,8 +103,8 @@ The values in the table are typical rounded values, not measurements of any part
 
 ## Formula: Efficiency
 Efficiency $\eta$ (eta) is the ratio of the useful energy to the energy taken by the device. When the device runs at constant power, the same ratio is also obtained from powers:
-```latex
-\eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}
+```kaavat
+efficiency :: \eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}
 ```
 where $\eta$ is the efficiency (a ratio, often given as a percentage), $E_\text{a}$ the useful energy given by the device (J), $E_\text{o}$ the energy taken by the device (J), $P_\text{a}$ the useful power (W) and $P_\text{o}$ the power taken by the device (W). A ratio is converted to a percentage by multiplying it by $100\,\%$, for example $0.30 \cdot 100\,\% = 30\,\%$. The multiplication does not change the number, because $1\,\% = 0.01$ and so $100\,\% = 100 \cdot 0.01 = 1$.
 
