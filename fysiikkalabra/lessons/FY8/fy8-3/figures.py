@@ -118,7 +118,7 @@ def bohr():
             "n = 2, ja atomista lähtee fotoni, jonka energia hf on tasojen energioiden erotus E3 − E2.")
     cx, cy, r1 = 186, 180, 16
     for m in (1, 2, 3):
-        f.circle(cx, cy, r1 * m * m, "none", MUTED if m > 1 else INK, 2)
+        f.circle(cx, cy, r1 * m * m, "none", MUTED, 2)
     f.circle(cx, cy, 7, HOT, INK, 2)
     a = math.radians(24)
     xa, ya = cx + 144 * math.cos(a), cy - 144 * math.sin(a)
@@ -133,7 +133,9 @@ def bohr():
     f.tex(452, 236, r"hf = E_3 - E_2", "middle", HEAT)
     f.tex(cx, 228, r"n = 2", "middle")
     f.tex(cx, 296, r"n = 3", "middle")
-    f.line(cx - 12, cy - 11, 74, 58, MUTED, 1.5)
+    lx, ly = cx - r1 * math.cos(math.radians(45)), cy - r1 * math.sin(math.radians(45))   # the leader ends on orbit n = 1
+    f.line(lx, ly, 74, 58, MUTED, 1.5)
+    f.circle(lx, ly, 3, MUTED)
     f.tex(16, 40, r"n = 1", "start")
     f.tex(cx + 21, cy + 4, r"p^+", "start", HOT)
     return f.svg()

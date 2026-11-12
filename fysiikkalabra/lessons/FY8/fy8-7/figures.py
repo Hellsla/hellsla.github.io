@@ -166,7 +166,7 @@ def rate_graph():
     rate = lambda nm: 1.0e-3 * nm * 1e-9 / HC / 1e15
     ax = Axes(f, (96, 290), (486, 74), x=(0, 700), y=(0, 3.5), xticks=[100, 200, 300, 400, 500, 600, 700],
               yticks=[0.5, 1, 1.5, 2, 2.5, 3, 3.5], xlabel=r"\lambda\ (\text{nm})",
-              ylabel=r"\tfrac{N}{t}\ (10^{15}\,\tfrac{1}{\text{s}})", yfmt=lambda v: f"{v:g}".replace(".", "{,}"))
+              ylabel=r"N/t\ (10^{15}\,\text{1/s})", yfmt=lambda v: f"{v:g}".replace(".", "{,}"))
     ax.line([(0, 0), (700, rate(700))], INK, 3)
     for nm, col in ((405, VIOLET), (532, GREEN), (650, RED)):
         ax.point(nm, rate(nm), col, 7)

@@ -220,6 +220,9 @@ def hero():
                "pysähtyvät paperiin, siniset alumiiniin, ja oranssit aallot jatkavat. Oikealla telineeseen kiinnitetty "
                "Geigerin ja Müllerin putki, jonka johto menee laskuriin, ja laskurin näytössä on pulsseja kuvaavia piikkejä.")
     H.tiles(f, 470, 75, RULE_LIGHT, PAPER)
+    f.rect(0, 470, 1200, 130, H.grad(f, "fy812h-floor", RULE_LIGHT, RULE, y1=470, y2=600))   # the floor under the table
+    f.add(f'<ellipse cx="95" cy="588" rx="30" ry="5" fill="{MUTED}" fill-opacity="0.3"/>')
+    f.add(f'<ellipse cx="1105" cy="588" rx="30" ry="5" fill="{MUTED}" fill-opacity="0.3"/>')
     H.wood(f, 40, 470, 1120, 40, "fy812h-table")
     f.rect(80, 510, 30, 76, IRON, INK, 3); f.rect(1090, 510, 30, 76, IRON, INK, 3)
     # lead castle with an opening
