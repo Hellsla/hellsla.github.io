@@ -9,7 +9,6 @@ Round: 1
 ## Polish
 - exercises.json fy2-3-L1-09 text / solutions.md L1-09 Annettu — the symbol "hp" usually means mechanical horsepower (about 745,7 W); 735,5 W is the metric horsepower (hv, PS). Both values are inside the 4 % tolerance (6,71 MJ vs 6,62 MJ), so nothing breaks (C). If you like, name the metric horsepower ("hevosvoima, hv") or note that the two values differ.
 - exercises.json fy2-3-L1-09 text — the rated power of an engine is its output power, so "Kuinka paljon energiaa moottori muuntaa" really means the mechanical energy it gives. The fuel's chemical energy is several times larger. To leave no doubt, write "… muuntaa liike-energiaksi (mekaaniseksi energiaksi)".
-- Earlier items outside this delta (L2-08 stove powers and wording, L1-08, L3-04 hydro MW, the plan's stair task) are still open.
 
 ## Checked
 - Hash eeada8a6d64780eb at the start and the end. I judged only the added L1-09 and L1-10.

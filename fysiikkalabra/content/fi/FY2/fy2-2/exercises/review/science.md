@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: db3beb9c86a6bb71
-SCOPE: delta added-exercise from 2d22792f6d7cc426 base 611fb7d5c174
+SCOPE: delta added-exercise from d15c8d91aa20aab0 base 611fb7d5c174
 Mode: delta
 Round: 1
 

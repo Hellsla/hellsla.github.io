@@ -1,20 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: be130260722cc92a
-
-Round 3: there were no blocking items in round 2. Commit 442c889ba made two changes to fi fy2-4, both in L2-08. It split the η chain in the correct option's feedback (exercises.json) and the Rivi 2 line of the model answer (solutions.md) into shorter inline formulas joined by "eli". Nothing else in the exercise set or answers.py changed.
+CONTENT-HASH: a1fbb6ffcc68c242
+SCOPE: delta added-exercise from be130260722cc92a base 611fb7d5c174
+Mode: delta
+Round: 1
 
 ## Blocking
-(none)
 
 ## Polish
-- exercises.json:256 (fy2-4-L2-08, carried over) — η = 60 % is low for a 2,5 kW motor (typically 80–90 %). This is optional: E_a = 510 kJ (85 %) keeps the same error pattern.
-- lessons/FY2/fy2-4/answers.py (carried over) — add the comment "# fy2-4-L2-08 is multiple choice: no number (η = 360 kJ : 600 kJ = 0,60)".
-- solutions.md L3-05 (carried over) — write "suoraan lämmöksi": the light also ends up as thermal energy.
-- docs/exercise-bank/FY2.md:29–30 (carried over) — the plan still lists c·m·ΔT and chain-efficiency tasks (FY3).
+- solutions.md fy2-4-L1-09 Vastaus — "eri taulukoiden arvot poikkeavat hieman … ±4 %" does not hold for light fuel oil. Motiva and Tilastokeskus give about 42,7 MJ/kg, and that gives η = 74,9 %, which is 5 % off and outside the tolerance. The task does point to MAFY (40,6, docs/mafy-arvot.tsv VERIFIED), so this is C, but say that the answer expects the MAFY value, or widen the tolerance to 0,06.
+- fy2-4-L2-09 — η = 25 % is low for an electric motor (typically 70–90 %). It fits a small hobby motor (C). The figure is shared with L3-03, so keep it, but you could add "pieni leikkimoottori" to the text.
 
 ## Checked
-- Diff 9fd1b2088..HEAD for fi fy2-4: only the two L2-08 lines changed. answers.py and every other task are unchanged.
-- Feedback, recomputed: the split chain is η = E_a : E_o, eli η = 360 kJ : 600 kJ = 0,60, eli 60 %. The formula, the numbers and the direction of the ratio are as before and right. Splitting at "eli" leaves no false equality.
-- Solution, recomputed: the Rivi 2 line is E_o = 2500 W · 240 s, eli E_o = 600 000 J = 600 kJ. 2500 · 240 = 600 000 is right, and the line still agrees with Rivi 2 of the task and with the option feedback.
-- Exactly one option is still correct (Rivi 4), the wrong options' feedback is unchanged and right, and the task still says "tasaisesti".
-- The hash was be130260722cc92a at the start and at the end.
+- Hash a1fbb6ffcc68c242 at the start and the end. I judged only the added L1-09 and L2-09.
+- L1-09 recomputed: E_o = Hm = 40,6 MJ/kg · 2,5 kg = 101,5 MJ and η = 80 : 101,5 = 0,788 = 78,8 %, the same as answers.py. The stated 79 % is 0,3 % away. H = 40,6 MJ/kg is the MAFY LHV value (docs/mafy-arvot.tsv, VERIFIED).
+- L1-09 physics: the task gives E_o = Hm, and η = E_a/E_o is the lesson's formula. Losses with the flue gases are the right mechanism, and η < 100 % is checked. 79 % is realistic for an oil boiler, and two significant figures fit the data.
+- L2-09 recomputed: in the figure the input arrow is H = 160 units = 8 squares (sq = 20) and the useful arrow is ηH = 40 = 2 squares; the loss arrow is 120 = 6 squares, and its edges lie on grid lines (ytop 80, yloss 200). So η = 2/8 = 25 %, the same as answers.py.
+- L2-09 figure: the drawing and its description agree. No output value or efficiency is printed, so the answer is not given away. The arrows are to scale as the text says.
+- L2-09 solution: η = E_a/E_o equals the ratio of thicknesses (the lesson's Sankey statement). The check 60 J + 180 J (2 + 6 = 8 squares) shows that energy is conserved and agrees with L3-03 (180 J).

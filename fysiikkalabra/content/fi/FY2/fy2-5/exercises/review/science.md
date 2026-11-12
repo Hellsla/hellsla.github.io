@@ -1,19 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 554062ddfd509c38
-Round: 3
-
-Since round 2 the only change is uncommitted, one line of solutions.md in the working tree. In L3-04, the three month groups now read "… eli 6700", "… eli 1300" and "… eli 5300" in place of "= …". exercises.json and answers.py are unchanged. The packet was regenerated, mode full.
+CONTENT-HASH: b8187c70d80f7adc
+SCOPE: delta added-exercise from 648be0e8512e7cf8 base 611fb7d5c174
+Mode: delta
+Round: 1
 
 ## Blocking
 
 ## Polish
-- content/fi/FY2/fy2-5/exercises/solutions.md:205 (L2-08 Arvio) — "bensiini on lähes $40\,\text{MJ}$ kilogrammaa kohti" is wrong, because 43 is more than 40. Write "yli $40\,\text{MJ}$" or "noin $43\,\text{MJ}$".
-- solutions.md:203 and exercises.json:275 (L2-08) — "$104\,\text{MJ}$" has three significant figures, but the data (26 MJ/kg and 4,0 kg) have two. Write "noin $100\,\text{MJ}$", or note that unrounded values are kept for the ranking.
-- exercises.json:60 (L1-06, second distractor) — "riippumatta määrästä" makes no sense in the sentence (carried over).
-- L3-04 and L3-05 — both still follow the same chain m = E/(ηH). Level 3 in the plan asks for emissions too (carried over).
+- solutions.md fy2-5-L2-09 Kuvaajan lukeminen — "Vaaka-akselin yksikkö on MJ/kg" is right, but in the figure the unit is written as the heading "H (MJ/kg)" above the bars. "Kuvan otsikon mukaan yksikkö on MJ/kg" would match what the student sees (C).
+- Earlier items outside this delta (L2-08 "lähes 40 MJ", L2-08 104 MJ significant figures, L1-06 distractor wording, L3-04/L3-05 same chain) are still open.
 
 ## Checked
-- Round-3 line: the group sums are unchanged and right (2100 + 1900 + 1600 + 1100 = 6700; 600 + 250 + 200 + 250 = 1300; 600 + 1100 + 1600 + 2000 = 5300). "eli" is read here as "which is", and it does not change the meaning. 6700 + 1300 + 5300 = 13 300 kWh, the same total as before, and each group's sum is right. The rest of the line (47 880 MJ, 3313 kg, 1237 kg, 4024 kg, +710 kg) is unchanged. L3-04 gives 3313,5 kg against the answer 3300 (+0,41 %, tolerance 0,02). Language only: "joten … joten" is repeated.
-- L2-08 (unchanged since round 1): the energies 64,5 / 75 / 104 / 120 MJ match the `order` list, the gaps are at least 10 MJ and the conversions are right. The mass-order and H-order claims are true, and the `prompt` names the quantity and the direction.
-- All 18 numeric answers were recomputed in one python run, all within tolerance; the largest deviation is L2-07 (+2,3 %, tolerance 0,03). L1-06 and L2-06 each have exactly one correct option.
-- Hash 554062ddfd509c38 at start and end. FY2 scope: no c·m·ΔT, one efficiency per chain, and energiasisältö e is kept apart from lämpöarvo H.
+- Hash b8187c70d80f7adc at the start and the end. I judged only the added L1-09 and L2-09.
+- L1-09 recomputed: E = Hm = 26,7 MJ/kg · 0,50 kg = 13,35 MJ, the same as answers.py. H = 26,7 MJ/kg is the MAFY LHV value (docs/mafy-arvot.tsv, VERIFIED). The rounded 13 MJ is 2,6 % away, inside the 4 % tolerance. Other table values (26,8–27,0 MJ/kg) give 13,4–13,5 MJ, also accepted.
+- L1-09: two significant figures follow m = 0,50 kg. The estimate 25 · 0,5 ≈ 12 MJ and "about two thirds of petrol's 43" (0,62) are real checks. The solution rightly says that ethanol is not in the lesson's table, and the hint sits in `hints`.
+- L1-09 physics: an LHV for a heating value agrees with the lesson's "teholliset lämpöarvot". E = Hm is used with the mass in kg, as the lesson requires.
+- L2-09 recomputed: E = 43 · 12 = 516 MJ and m_p = H_b m_b / H_p = 516 : 15 = 34,4 kg, the same as answers.py. The stated 34 kg is 1,2 % away, inside the 2 % tolerance.
+- L2-09 figure: the bars print 43 (bensiini) and 15 (polttopuu), and the description says "polttopuu (ilmakuiva) 15". The lengths are to scale (6,8 units per MJ/kg, 48 : 10 ≈ 5 as said). The figure does not give the answer.
+- L2-09 solution: m_p is solved symbolically from H_p m_p = H_b m_b before substitution. No conversions are needed (as it says), two significant figures follow from 12 kg, and the ratio check 43 : 15 ≈ 2,9 → about 36 kg is a real check.
+- Both tasks stay inside FY2 (E = Hm, comparing fuels) and use the lesson's symbols H, m, E.
