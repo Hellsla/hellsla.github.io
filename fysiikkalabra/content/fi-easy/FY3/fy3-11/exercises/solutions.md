@@ -92,7 +92,7 @@
 ## fy3-11-L3-01
 **Annettu:** yhteistuotannossa polttoaineteho $P_\text{pa} = 320\,\text{MW}$, sähköteho $P_\text{s} = 96\,\text{MW}$, kaukolämpöteho $P_\text{kl} = 180\,\text{MW}$; erillistuotannossa lauhdevoimalan hyötysuhde $\eta_\text{lauh} = 0{,}400$ ja lämpökeskuksen $\eta_\text{k} = 0{,}900$
 **Kysytty:** erillistuotannon polttoaineen lisätarve $\Delta P$ megawatteina sekä perustelu hyötysuhteiden erolle
-**Periaate:** Samat sähkö- ja lämpötehot tuotetaan kahdessa erillisessä laitoksessa. Kummankin polttoaineteho saadaan hyötysuhteesta: $P_\text{in} = P_\text{a}/\eta$. Vertailu on oikeudenmukainen, koska hyödyksi tulevat tehot ovat molemmissa tapauksissa samat.
+**Periaate:** Samat sähkö- ja lämpötehot tuotetaan kahdessa erillisessä laitoksessa. Kummankin polttoaineteho saadaan hyötysuhteesta $\eta = \tfrac{P_\text{a}}{P_\text{o}}$. Siinä $P_\text{a}$ on laitoksen hyötyteho ja $P_\text{o}$ on sen polttoaineteho. Siksi $P_\text{o} = \tfrac{P_\text{a}}{\eta}$. Vertailu on oikeudenmukainen, koska hyödyksi tulevat tehot ovat molemmissa tapauksissa samat.
 **Kaava:** $P_\text{lauh} = \dfrac{P_\text{s}}{\eta_\text{lauh}}$ ja $P_\text{lk} = \dfrac{P_\text{kl}}{\eta_\text{k}}$, joten $\Delta P = \dfrac{P_\text{s}}{\eta_\text{lauh}} + \dfrac{P_\text{kl}}{\eta_\text{k}} - P_\text{pa}$
 **Muunnokset:** Hyötysuhteet $40{,}0\,\% = 0{,}400$ ja $90{,}0\,\% = 0{,}900$. Kaikki tehot ovat megawatteina. Muuta muunnosta ei tarvita.
 **Sijoitus:** $\Delta P = \dfrac{96\,\text{MW}}{0{,}400} + \dfrac{180\,\text{MW}}{0{,}900} - 320\,\text{MW} = 240\,\text{MW} + 200\,\text{MW} - 320\,\text{MW} = 120\,\text{MW}$

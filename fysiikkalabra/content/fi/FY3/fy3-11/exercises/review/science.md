@@ -1,17 +1,12 @@
-VERDICT: PASS
-CONTENT-HASH: b06084335558b3a5
-Round: 2
+VERDICT: FAIL
+CONTENT-HASH: b195e96769b3c55a
 
 ## Blocking
-(none)
+1. solutions.md, fy3-11-L3-01, Periaate: "P_in = P_a/η". P_a is not defined in this solution (it replaced the self-explaining P_hyöty), and the input symbol P_in is neither the solution's own P_pa nor the lesson's P_1. Fix: write "P_pa = P_a/η, missä P_a on hyödyksi saatu teho" (en: "…where P_a is the useful power"), or keep the relation in words.
 
 ## Polish
-- The distractors still do not catch the lesson's own warned mistake (an almost perfect heat engine); the true-but-irrelevant reason (both below 100 %) only touches it. Optional, carried over.
+1. L2-04 uses P_in and P_mek/P_mech; align the input symbol with the lesson (P_1) or MAFY's P_o.
+2. answers.py docstring still reads η = P_hyöty/P_in.
 
 ## Checked
-- Round-1 Polish resolved: reason 2 now reads "Kone A ottaa enemmän lämpöä $Q_1$, joten sillä on enemmän muutettavaa työksi: $W = Q_1 - Q_2$." The correct reason is no longer the only one with a formula.
-- The new reason is still really wrong: W is given as the same 120 kJ for both engines, so A's extra Q₁ goes to Q₂ (280 kJ against 180 kJ). Its unchanged feedback says exactly this, and the formula it cites is the lesson's own W = Q₁ − Q₂ (true, but misused).
-- Recomputed: η_A = 0,30, η_B = 0,40; exactly one correct choice (B) and one correct reason; the solution is unchanged and right.
-- Commit 6bbde30c5 changes only this line in fy3-11; answers.py and the other tasks unchanged.
-- Text only this round: I did not open the new captures. The added inline formula "W = Q₁ − Q₂" is short (about 100 px).
-- Hash identical at start and end.
+Recomputed: L1-01 12,0 kJ; L1-02 172 J; L1-04 750 J; L2-03 ΔU = 700 − 200 = 500 J; L2-04 720 kW; L2-07 20,9 kWh; L3-01 120 MW; L3-02 9,6 MWh; L3-04 2,74; L3-05 0,74 kJ: all match. First-law sign: L2-03 and L3-05 say W is work done on the gas and use ΔU = Q − pΔV, while W = pΔV is the gas's own work in L1 tasks and L3-05 a), said each time. Heat pump tasks use Q₁, Q₂, W as the lesson. Numbers unchanged.

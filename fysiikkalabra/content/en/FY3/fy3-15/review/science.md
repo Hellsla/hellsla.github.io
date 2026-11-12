@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 39ab9f45f75c4e55
+CONTENT-HASH: 5f1ecd1bd48c4c15
+
 ## Blocking
 - none
 
 ## Polish
-(none)
+- none
+
 ## Checked
-- delta review 2026-11-07 (teacher's proofread replacement texts): opening question (fuel energy ≈ 2,5 × electrical energy ⇔ η ≈ 0,40, as the chain 0,92·0,46·0,945) and the waste-heat misconception (energy not lost; small temperature difference limits the maximum heat-engine efficiency; CHP uses part of the waste heat as district heat) are correct and match the guardrail on efficiency and CHP. English text carries the same meaning as fi.
-- Delta review of the English translation against the reviewed Finnish: Sankey label split into 'generator and' / 'transformer' (same words as the Finnish 'generaattori ja muuntaja'); learn goals now bare verbs completing 'In this lesson, you will learn to', same content as the Finnish.
-- Physics, numbers, units, symbols, answers and structure unchanged from the previous PASS; no Finnish words left; English natural.
+η = W_a/W_o = P_a/P_o named; P_h = P_o − P_a; anto/otto defined with units, and "P_o:n alaindeksi on o-kirjain, ei nolla" stated; chain P₁ = η₁P_o … η = η₁η₂η₃; η_kok = (P_s + P_k)/P_o; P_L = c q_m ΔT. Recomputed example: 0,38038; 228 MW; 38,0 %; 372 MW; condenser 546 − 240,24 ≈ 306 MW; losses 54 and 12 MW; misconception 0,40 vs 0,78. Figure P_o 400, P₁ 350, P₂ 150, P₃ 140 MW. P_o, P_a, P_h counts identical in fi, fi-easy, en (lesson, inquiry); no P_0, P_tulo, P_hyöty left; numbers unchanged.

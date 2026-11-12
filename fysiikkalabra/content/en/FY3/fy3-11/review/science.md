@@ -1,14 +1,12 @@
-VERDICT: PASS
-CONTENT-HASH: 979dd4b15493dfaa
+VERDICT: FAIL
+CONTENT-HASH: 8ce10e30bb6ef044
 
 ## Blocking
-(none)
+1. (B) lesson.md, Kaava section, the sentence after the W = pΔV row: "When the gas is compressed, the same formula gives the compression work done on the gas by the surroundings." With ΔV the signed change in volume, pΔV is negative in compression, while three lines later the first law's W (work done on the gas) is W = −pΔV, positive in compression. For a compressed gas W then has opposite signs in two consecutive formulas. Fix: "…the same formula gives the magnitude of the compression work done on the gas" (and optionally "p|ΔV|"), as the Ydinajatus already says ("suuruus"/"size").
 
 ## Polish
-(none)
+1. Worked example: P_a first appears in the solved formula without a name; write "hyödyksi saatu teho P_a" / "useful power P_a" in Tunnetut ja kysytty.
+2. The example's input power P_1 is P_1 = the power after the boiler in fy3-15, where the input is P_o (MAFY η = P_a/P_o); consider P_o and P_h here too.
 
 ## Checked
-- Only change since the PASS at ee6b2ec: sims.fy3-11.oranssi_kaasun_tekema shortened to "Orange: work by the gas. Blue: work on the gas. Same colour, same energy." Physics identical: orange = work done by the gas (W_g, expansion), blue = work done on the gas (compression), equal colour for equal energy, as in the Finnish ("kaasun tekemä työ", "kaasuun tehty työ", "sama väri, sama energia").
-- Rest of the sim's English strings compared with the Finnish key by key: heating, piston return, cool first / same pressure, Q1, Q2, net work W, pressure after cooling, hot plate / cold water / insulation, symbol W_g for W_k. All match in meaning and signs; no number or formula altered.
-- The note is 14 words, so it stays a short caption and does not fold into the assumptions box; the model statement is unchanged.
-- check_i18n: 0 errors. Lesson text, inquiry, exercises and solutions are unchanged from the earlier PASS.
+First law ΔU = Q + W with W done on the gas, as fy3-5; W = −pΔV stated in formula section, summary, inquiry prior, predictions 1 and check (−150 J → 250 J; −240 J → 360 J), activity 3 calc; engine W = Q₁ − Q₂, η = W/Q₁; heat pump ε = Q₁/W = Q₁/(Q₁ − Q₂) in text, figure, feedback. Sim model recomputed: Q = 750 J → ΔV 1,5 l, W 300 J; Q = 1000 J → 400 J and ΔU 600 J; cycle B Q₁ 650, Q₂ 550, W 100, η 15 %; bar label ΔU + pΔV correct. Example 38,0 %/310 MW, 88,0 %/60 MW; CHP task 800 MW; pump 22,5 MW. No number or answer changed.

@@ -118,7 +118,7 @@ Kun kaasun paine pysyy vakiona, kaasun tekemä laajenemistyö on
 ```kaavat
 kaasun tekemä laajenemistyö / kaasuun tehty puristustyö :: W = p\,\Delta V
 ```
-missä $W$ on kaasun tekemä työ (J), $p$ kaasun paine (Pa) ja $\Delta V$ kaasun tilavuuden muutos (m³). Kun kaasua puristetaan, sama kaava antaa ympäristön kaasuun tekemän puristustyön. Kaasun sisäenergian muutoksen antaa lämpöopin ensimmäinen pääsääntö
+missä $W$ on kaasun tekemä työ (J), $p$ kaasun paine (Pa) ja $\Delta V$ kaasun tilavuuden muutos (m³). Kun kaasua puristetaan, sama kaava antaa ympäristön kaasuun tekemän puristustyön suuruuden. Kaasun sisäenergian muutoksen antaa lämpöopin ensimmäinen pääsääntö
 ```kaavat
 lämpöopin 1. pääsääntö :: \Delta U = Q + W
 ```
@@ -191,7 +191,7 @@ Biovoimalaitoksen kattilaan syötetään puuhakkeen energiaa teholla $500\,\text
 P_2 &= P_1 - P_\text{a}
 \end{aligned}
 ```
-Pelkälle sähkölle $P_\text{a} = P_\text{s}$ ja yhteistuotannolle $P_\text{a} = P_\text{s} + P_\text{k}$.
+Hyödyksi saatu teho eli antoteho on $P_\text{a}$: pelkälle sähkölle $P_\text{a} = P_\text{s}$ ja yhteistuotannolle $P_\text{a} = P_\text{s} + P_\text{k}$.
 
 <!-- vaihe -->
 

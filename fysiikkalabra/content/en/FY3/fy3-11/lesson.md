@@ -118,7 +118,7 @@ When the pressure of a gas stays constant, the work done by the gas in expanding
 ```kaavat
 work done by a gas in expansion / on a gas in compression :: W = p\,\Delta V
 ```
-where $W$ is the work done by the gas (J), $p$ the pressure of the gas (Pa) and $\Delta V$ the change in the volume of the gas (m³). When the gas is compressed, the same formula gives the compression work done on the gas by the surroundings. The change in the internal energy of the gas is given by the first law of thermodynamics
+where $W$ is the work done by the gas (J), $p$ the pressure of the gas (Pa) and $\Delta V$ the change in the volume of the gas (m³). When the gas is compressed, the same formula gives the magnitude of the compression work done on the gas by the surroundings. The change in the internal energy of the gas is given by the first law of thermodynamics
 ```kaavat
 first law of thermodynamics :: \Delta U = Q + W
 ```
@@ -191,7 +191,7 @@ Wood chip energy is fed into the boiler of a biopower plant at a power of $500\,
 P_2 &= P_1 - P_\text{a}
 \end{aligned}
 ```
-For electricity alone $P_\text{a} = P_\text{e}$, and for combined production $P_\text{a} = P_\text{e} + P_\text{dh}$.
+The useful (output) power is $P_\text{a}$: for electricity alone $P_\text{a} = P_\text{e}$, and for combined production $P_\text{a} = P_\text{e} + P_\text{dh}$.
 
 <!-- vaihe -->
 
