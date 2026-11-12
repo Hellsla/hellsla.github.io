@@ -253,45 +253,50 @@ def hero():
                "kulkee tyhjiöputkessa suuren sähkömagneetin napojen välistä, kaartuu ja jakautuu kahdeksi säteeksi, jotka osuvat "
                "ilmaisimen kahteen eri kohtaan. Näytöllä näkyy kaksi eri korkuista piikkiä.")
     f.rect(0, 0, 1200, 600, PAPER)
-    f.rect(0, 0, 1200, 420, H.grad(f, "fy72h-wall", GLASS, "#e3dccb"))
-    for x in range(0, 1200, 150): f.line(x, 0, x, 420, WHITE, 3, None)
-    # bench
-    f.rect(0, 420, 1200, 26, SAND, INK, 3)
-    f.rect(0, 446, 1200, 154, SAND_LIGHT)
-    for x in (120, 1080): f.rect(x - 14, 446, 28, 154, SAND_DARK)
-    # the sample: an old piece of wood on a small stand at the left
-    f.rect(70, 380, 120, 40, METAL_EDGE, INK, 3, 6)
-    f.path("M86,380 L104,338 L172,330 L182,372 Z", "#a97a35", INK, 3)
-    for k in range(3): f.path(f"M{106 + 20 * k},{344 - 2 * k} q8,14 2,32", stroke="#8a5f22", w=2.5)
-    # ion source box and the vacuum tube to the magnet, on the beam's height y = 285
-    f.rect(220, 230, 130, 110, ALUMINIUM, INK, 3, 10)
-    f.circle(285, 285, 18, IRON, INK, 3)
-    f.rect(350, 270, 170, 30, GLASS, INK, 3, 6)
+    # the bench low in the picture, so the apparatus fills the height and reads at tile size (audit 2026-11-11)
+    yb = 470
+    f.rect(0, 0, 1200, yb, H.grad(f, "fy72h-wall", GLASS, "#e3dccb"))
+    for x in range(0, 1200, 150): f.line(x, 0, x, yb, WHITE, 3, None)
+    f.rect(0, yb, 1200, 26, SAND, INK, 3)
+    f.rect(0, yb + 26, 1200, 600 - yb - 26, SAND_LIGHT)
+    for x in (120, 1080): f.rect(x - 14, yb + 26, 28, 600 - yb - 26, SAND_DARK)
+    # the sample: a large piece of old wood on a low plinth at the left
+    f.rect(40, yb - 26, 140, 26, ALUMINIUM, INK, 3, 6)
+    f.path(f"M52,{yb - 26} L78,{yb - 104} L162,{yb - 116} L178,{yb - 26} Z", "#a97a35", INK, 3)
+    for k in range(3): f.path(f"M{92 + 24 * k},{yb - 104 - 3 * k} q10,26 2,68", stroke="#8a5f22", w=3)
+    # ion source box and the vacuum tube to the magnet, on the beam's height yc
+    yc = 312
+    f.rect(200, yc - 70, 130, 140, ALUMINIUM, INK, 3, 10)
+    f.rect(250, yc + 70, 30, yb - yc - 70, METAL_EDGE, INK, 3)
+    f.circle(265, yc, 22, IRON, INK, 3)
+    f.rect(330, yc - 22, 180, 44, GLASS, INK, 3, 6)
+    f.path(f"M265,{yc} H500", stroke=BEAM, w=14, extra='stroke-linecap="round" stroke-opacity="0.85"')
     # the electromagnet: an iron yoke behind, pole pieces with copper coils above and below the gap
-    f.rect(500, 110, 300, 310, METAL_EDGE, INK, 3, 10)
-    f.rect(510, 120, 280, 44, IRON, INK, 3, 6)
-    f.rect(510, 376, 280, 34, IRON, INK, 3, 6)
-    for y0 in (164, 312):
-        f.rect(520, y0, 260, 64, H.grad(f, f"fy72h-coil{y0}", COPPER, "#8a5f22"), INK, 3, 10)
-        for x in range(538, 780, 22): f.line(x, y0 + 4, x, y0 + 60, "#8a5f22", 2)
-    f.rect(510, 238, 280, 64, GLASS, INK, 3, 10)          # the gap between the poles with the beam tube in it
-    f.path("M500,285 C600,285 700,280 760,262", stroke=WHITE, w=22, extra='stroke-linecap="round"')
-    f.path("M500,285 C600,285 700,280 760,262", stroke=BEAM, w=8, extra='stroke-linecap="round" stroke-opacity="0.85"')
+    f.rect(500, 118, 300, yb - 118, METAL_EDGE, INK, 3, 10)
+    f.rect(510, 128, 280, 42, IRON, INK, 3, 6)
+    f.rect(510, yb - 44, 280, 34, IRON, INK, 3, 6)
+    for y0 in (172, yc + 48):
+        f.rect(520, y0, 260, 90 if y0 == 172 else yb - 48 - y0, H.grad(f, f"fy72h-coil{y0}", COPPER, "#8a5f22"), INK, 3, 10)
+        for x in range(538, 780, 22): f.line(x, y0 + 4, x, y0 + (86 if y0 == 172 else yb - 52 - y0), "#8a5f22", 2)
+    f.rect(510, yc - 46, 280, 92, GLASS, INK, 3, 10)          # the gap between the poles with the beam tube in it
+    f.path(f"M500,{yc} C600,{yc} 700,{yc - 6} 770,{yc - 30}", stroke=WHITE, w=34, extra='stroke-linecap="round"')
+    f.path(f"M500,{yc} C600,{yc} 700,{yc - 6} 770,{yc - 30}", stroke=BEAM, w=14, extra='stroke-linecap="round" stroke-opacity="0.85"')
     # two beams leaving the magnet towards the detector, the lighter one bent more
-    f.path("M760,262 C830,232 870,196 905,150", stroke=GLASS, w=40, extra='stroke-linecap="round"')
-    f.path("M762,261 C830,230 872,192 905,150", stroke=BEAM, w=7, extra='stroke-linecap="round"')
-    f.path("M762,264 C840,240 890,220 925,196", stroke=BEAM, w=4, extra='stroke-linecap="round" stroke-opacity="0.8"')
-    # detector plate with two glowing spots
-    f.path("M890,110 L960,90 L1010,250 L940,270 Z", METAL_EDGE, INK, 3)
-    for x, y, r in ((912, 146, 16), (934, 196, 10)):
-        f.circle(x, y, r + 10, HEAT_LIGHT)
-        f.circle(x, y, r, HEAT, INK, 2)
-    f.rect(960, 250, 30, 170, IRON, INK, 3, 4)
+    f.path(f"M800,{yc - 46} C840,{yc - 74} 872,{yc - 120} 902,{yc - 178}", stroke=GLASS, w=44, extra='stroke-linecap="round"')
+    f.path(f"M772,{yc - 31} C835,{yc - 66} 870,{yc - 120} 902,{yc - 178}", stroke=BEAM, w=12, extra='stroke-linecap="round"')
+    f.path(f"M772,{yc - 27} C845,{yc - 50} 900,{yc - 74} 942,{yc - 96}", stroke=BEAM, w=8, extra='stroke-linecap="round" stroke-opacity="0.8"')
+    # detector plate with two glowing spots, on a slim post
+    f.rect(958, 290, 24, yb - 290, METAL_EDGE, INK, 3, 4)
+    f.path("M870,110 L966,80 L1030,280 L934,310 Z", METAL_EDGE, INK, 3)
+    for x, y, r in ((904, yc - 178, 24), (944, yc - 96, 16)):
+        f.circle(x, y, r + 16, HEAT_LIGHT)
+        f.circle(x, y, r, HEAT, INK, 2.5)
     # a screen with two peaks of different height
-    f.rect(1010, 290, 170, 120, INK, None, 0, 10)
-    f.rect(1022, 302, 146, 96, INK, MUTED, 2, 6)
-    f.path("M1030,388 L1060,388 L1070,316 L1080,388 L1110,388 L1118,372 L1126,388 L1160,388", stroke=GOOD_LIGHT, w=3)
-    f.rect(1080, 410, 30, 12, IRON)
+    f.rect(1012, 300, 170, 140, INK, None, 0, 10)
+    f.rect(1024, 312, 146, 116, INK, MUTED, 2, 6)
+    f.path("M1032,414 L1060,414 L1072,328 L1084,414 L1110,414 L1120,394 L1130,414 L1162,414", stroke=GOOD_LIGHT, w=5,
+           extra='stroke-linejoin="round"')
+    f.rect(1082, 440, 30, yb - 440, IRON)
     return f.svg()
 
 

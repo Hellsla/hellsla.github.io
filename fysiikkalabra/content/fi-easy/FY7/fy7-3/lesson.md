@@ -329,7 +329,7 @@ Kaavassa $N$ on käämin kierrosten lukumäärä ja $I$ on virta (A). Symboli $l
 
 Kenttä riippuu kierrostiheydestä $N : l$. Se kertoo, kuinka monta kierrosta on yhdellä metrillä. Kenttä ei riipu käämin paksuudesta. Kaava pätee, kun käämi on paljon pidempi kuin paksu ja sen sisällä on vain ilmaa. Käämin päissä kenttä on noin puolet keskikohdan arvosta. Rautasydän voimistaa kenttää moninkertaiseksi.
 
-<svg data-fig="coil-dims" viewBox="0 0 600 330" role="img" aria-label="Kaavakuva, ei mittakaavassa. Kuvassa on käämi sivulta. Käämissä on N kierrosta kuparijohdinta pituudella l. Johtimen päistä kulkee virta I, joka on merkitty violetilla nuolella. Käämin sisällä vihreä nuoli osoittaa akselin suuntaan. Nuolen alkupään yläpuolella on merkintä B." style="max-width:100%;font-size:24px">
+<svg data-fig="coil-dims" viewBox="0 0 600 330" role="img" aria-label="Kaavakuva, ei mittakaavassa. Kuvassa on käämi sivulta. Käämissä on N kierrosta kuparijohdinta pituudella l. Johtimen päistä kulkee virta I, joka on merkitty violetilla nuolella. Käämin sisällä vihreä nuoli osoittaa akselin suuntaan. Nuolen merkintä B on käämin vasemmalla puolella, samalla korkeudella kuin nuoli." style="max-width:100%;font-size:24px">
   <rect x="120" y="103.5" width="290" height="93" fill="#eef5f9" stroke="#8a96a3" stroke-width="1.5"/>
   <line x1="136.5" y1="92" x2="124" y2="208" stroke="#b8622d" stroke-width="2" stroke-opacity="0.45"/>
   <line x1="157.5" y1="92" x2="145" y2="208" stroke="#b8622d" stroke-width="2" stroke-opacity="0.45"/>
@@ -347,7 +347,7 @@ Kenttä riippuu kierrostiheydestä $N : l$. Se kertoo, kuinka monta kierrosta on
   <line x1="406" y1="92" x2="393.5" y2="208" stroke="#b8622d" stroke-width="2" stroke-opacity="0.45"/>
   <line x1="150" y1="150" x2="363" y2="150" stroke="#2b8a3e" stroke-width="4" stroke-linecap="butt"/>
   <path d="M380,150 L362,158 L362,142 Z" fill="#2b8a3e" stroke-linejoin="round"/>
-  <foreignObject x="147.5" y="109.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#2b8a3e"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\overline{B}$</span></div></foreignObject>
+  <foreignObject x="73" y="135.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#2b8a3e">$\overline{B}$</div></foreignObject>
   <line x1="124" y1="92" x2="136.5" y2="208" stroke="#b8622d" stroke-width="4" stroke-linecap="round"/>
   <line x1="145" y1="92" x2="157.5" y2="208" stroke="#b8622d" stroke-width="4" stroke-linecap="round"/>
   <line x1="165.5" y1="92" x2="178" y2="208" stroke="#b8622d" stroke-width="4" stroke-linecap="round"/>

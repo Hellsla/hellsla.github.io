@@ -104,7 +104,8 @@ def graph():
             "Ylempi kuvaaja: magneettivuo millivebereinä on nolla 0,5 sekuntiin asti, kasvaa tasaisesti arvoon 2,0 hetkellä "
             "1,5 s, pysyy vakiona 2,5 sekuntiin ja pienenee tasaisesti nollaan hetkellä 3,5 s. Alempi kuvaaja: "
             "induktiojännite millivoltteina on nolla, kun vuo ei muutu, miinus 20 vuon kasvaessa ja plus 20 vuon pienentyessä. "
-            "Katkoviivat hetkillä 0,5; 1,5; 2,5 ja 3,5 s yhdistävät kuvaajat.")
+            "Katkoviivat hetkillä 0,5; 1,5; 2,5 ja 3,5 s yhdistävät kuvaajat. Kuvan oikeassa yläkulmassa on merkintä "
+            "N = 10 kierrosta.")
     T = 4.0
     top = Axes(f, (96, 150), (500, 70), x=(0, 4.5), y=(0, 2.5), xticks=[0.5 * k for k in range(1, 10)],
                yticks=[0.5 * k for k in range(1, 6)], xlabel=r"t\ (\text{s})", ylabel=r"\Phi\ (\text{mWb})",
@@ -114,6 +115,7 @@ def graph():
                xfmt=lambda v: "", yfmt=lambda v: fi(v) if abs(v) == 20 else "")
     f.tex(86, 150, "0", "end")
     f.tex(86, bot.Y(0), "0", "end")
+    f.tex(588, 34, r"N = %d\ \text{kierrosta}" % N_COIL, "end")   # the turns explain 2 mWb/s → 20 mV
     for tt in (0.5, 1.5, 2.5, 3.5):           # the boundary moments through both graphs
         f.line(top.X(tt), top.Y(2.5), top.X(tt), bot.Y(-30), MUTED, 1.5, "6 5")
     for k in range(1, 9):                     # the time numbers once, under the lower graph

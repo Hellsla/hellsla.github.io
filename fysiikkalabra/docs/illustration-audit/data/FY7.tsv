@@ -33,7 +33,7 @@ fy7-12/scene|5|4|5|5|PIDA|||
 fy7-13/hero|5|5|5|5|PIDA|||
 fy7-13/slit|5|5|5|5|PIDA|||
 fy7-13/young|5|5|5|5|PIDA|||
-fy7-13/pattern|5|5|4|5|KEVYT|Vaaka-akselin nimi Δs/λ on pieni pystymurto akselin päässä; vaikea lukea puhelimella.||KEVYT KORJAUS hyväksytty, ryhmä F (opettaja 2026-11-11)
+fy7-13/pattern|5|5|4|5|KEVYT|Vaaka-akselin nimi Δs/λ on pieni pystymurto akselin päässä; vaikea lukea puhelimella.||KEVYT KORJAUS hyväksytty, ryhmä F (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12
 fy7-13/white|5|5|5|5|PIDA|Punainen taipuu eniten: hilan ja prisman ero näkyy.||
 fy7-13/geometry|5|5|4|5|PIDA|||
 fy7-13/setup|5|5|5|5|PIDA|||
@@ -57,7 +57,7 @@ fy7-16/hero|5|5|5|5|PIDA|||
 fy7-16/charger|5|5|4|5|PIDA|||
 fy7-16/hob|5|5|5|5|PIDA|||
 fy7-16/graph|5|5|4|5|PIDA|||
-fy7-2/hero|5|4|4|4|KEVYT|Laite ei tunnistu laattakoossa: lähde, kaartuva rata ja ilmaisin ovat pieniä ja telineet hallitsevat.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11)
+fy7-2/hero|5|4|4|4|KEVYT|Laite ei tunnistu laattakoossa: lähde, kaartuva rata ja ilmaisin ovat pieniä ja telineet hallitsevat.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12
 fy7-2/force-dir|5|5|5|5|PIDA|Voiman suunnat tarkistettu ristitulosta molemmille varauksille.||
 fy7-2/circle-path|5|5|5|5|PIDA|Voima kohti keskipistettä joka kohdassa, kiertosuunta oikein.||
 fy7-2/r-graph|5|5|4|5|PIDA|Säteet vastaavat kaavaa r = mv/(qB) (tarkistettu).||KEVYT KORJAUS hyväksytty: yhteinen korjaus, katselmus (opettaja 2026-11-11); yhteinen korjaus TEHTY ja hyväksytty 2026-11-11
@@ -72,7 +72,7 @@ fy7-3/wire-field|5|5|5|5|PIDA|||
 fy7-3/coil-field|5|5|5|5|PIDA|Virran suunta ja kentän suunta vastaavat oikean käden sääntöä; N oikealla (tarkistettu).||
 fy7-3/electromagnet|5|5|5|5|PIDA|||
 fy7-3/wire-graph|5|5|4|5|PIDA|Arvot vastaavat kaavaa (200 µT etäisyydellä 1 cm, tarkistettu).||
-fy7-3/coil-dims|5|5|4|5|KEVYT|Kentän nimi B on käämin kierrosten päällä vasemmassa yläkulmassa.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11)
+fy7-3/coil-dims|5|5|4|5|KEVYT|Kentän nimi B on käämin kierrosten päällä vasemmassa yläkulmassa.||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12
 fy7-3/coil-fit|5|4|4|5|PIDA|||
 fy7-4/hero|5|5|5|5|PIDA|||
 fy7-4/swing|5|5|5|5|PIDA|Voiman suunta tarkistettu ristitulosta.||
@@ -85,7 +85,7 @@ fy7-4/balance-points|5|4|4|5|PIDA|||
 fy7-5/hero|5|5|5|5|PIDA|||
 fy7-5/faraday|5|5|5|5|PIDA|||
 fy7-5/flux|5|5|5|5|PIDA|||
-fy7-5/graph|5|4|4|5|KEVYT|Vuo muuttuu 2 mWb sekunnissa, mutta jännite on 20 mV: ero selittyy käämin kymmenellä kierroksella, joka on vain kuvan saavutettavuustekstissä. Lisää kuvaan N = 10, muuten kuvaajat näyttävät ristiriitaisilta.||KEVYT KORJAUS hyväksytty: N = 10 näkyviin (opettaja 2026-11-11)
+fy7-5/graph|5|4|4|5|KEVYT|Vuo muuttuu 2 mWb sekunnissa, mutta jännite on 20 mV: ero selittyy käämin kymmenellä kierroksella, joka on vain kuvan saavutettavuustekstissä. Lisää kuvaan N = 10, muuten kuvaajat näyttävät ristiriitaisilta.||KEVYT KORJAUS hyväksytty: N = 10 näkyviin (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12
 fy7-5/rod|5|5|5|5|PIDA|Elektroniin kohdistuvat voimat, kentän suunta ja napaisuus tarkistettu.||
 fy7-5/scene|5|4|5|5|PIDA|||
 fy7-5/flux-task|5|4|4|5|PIDA|||
