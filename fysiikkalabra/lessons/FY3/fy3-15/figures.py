@@ -127,7 +127,10 @@ def sankey():
     f.tex(460, 400, r"= 100\,\text{MW}", "start", w=110)
     return f.svg()
 
-FIGURES = {"hero": hero, "scene": scene, "chain-bars": chain_bars, "sankey": sankey}
+# sankey() is drawn and approved by the teacher (2026-11-12) but not yet placed: the lesson still shows the hand-made SVG
+# it replaces. Swapping a hand-made SVG for it is a figure change the review gate cannot carry over, so it waits for the
+# lesson's next reviewed round: add "sankey": sankey here and <svg data-fig="sankey"></svg> in each language's lesson.md.
+FIGURES = {"hero": hero, "scene": scene, "chain-bars": chain_bars}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "chain-bars": "safe: the powers along a condensing plant's chain as bars on gridlines; no efficiencies, no losses",
