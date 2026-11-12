@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 77b4b5a62a82d3a0
+CONTENT-HASH: bd98847c91c69f13
+
 ## Blocking
-(none)
+None. Read exercises.json and solutions.md; symbols are the lesson's, solutions go symbolically first, and the exercise levels are unchanged.
+
 ## Polish
-- (carried, optional) name the material of the rods in the first sentence of the stem.
-## Checked
-- Round-1 wording error fixed: "Kolminkertainen muutos saataisiin vain, jos sauvat olisivat yhtä pitkiä." now says what is meant; the added "vaikka sen alkupituus on vain puolet" is correct.
-- Options, answer and arithmetic unchanged.
-- Round 2. Checked from text (the diff of 6bbde30c5 against my round-1 findings); no capture was re-opened, so the 390 px fit of the new display blocks and shortened chains is judged from text only.
+1. exercises/solutions.md: every Δl solution derives Δl = αl₀ΔT first and substitutes with units; the sign and ΔT-in-kelvin traps (error-analysis tasks) survive the rename. Levels and kinds unchanged.
+2. No exercise uses l = l₀(1 + αΔT) (the new MAFY form); add one level-1 or -2 task asking for the length after heating or cooling.
+3. Litres use \textsf{l}, so length l and litre are not confused.

@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: b06084335558b3a5
+CONTENT-HASH: b195e96769b3c55a
 
 ## Blocking
-- none
+None. Read exercises.json and solutions.md; symbols are the lesson's, solutions go symbolically first, and the exercise levels are unchanged.
 
 ## Polish
-- none
-
-## Checked
-- Round 2 (delta). The wrong reason now reads "Kone A ottaa enemmän lämpöä $Q_1$, joten sillä on enemmän muutettavaa työksi: $W = Q_1 - Q_2$." The correct reason is no longer the only one with a formula, so the form cue is gone; the reason still fails for the right cause (same W, so the extra heat goes to Q₂) and its feedback is unchanged and consistent.
-- Rest of the set unchanged since round 1. Text only; no new render opened.
+1. exercises.json/solutions.md: first-law tasks (L2-03, L3-05) keep W as work done on the gas with W = −pΔV, and say so in Periaate; the hints and distractors match. Level progression unchanged.
+2. L2-07 uses W for electrical energy of the pump and L1-01..04 for work by the gas; fine, since each Annettu defines it, but the heat-pump tasks could say 'W (sähköenergia)' in the task text.
+3. Solutions L2-04, L3-01 and others use P_mek, P_in, P_hukka, P_pa, P_kl instead of P_a, P_o, P_h of fy3-15; a student carries two notations between chapters. Align when the set is next edited.

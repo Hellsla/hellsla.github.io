@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 6dc7d815de1ec77f
+CONTENT-HASH: 00e08ba963f252f6
 
 ## Blocking
-- none
+None. Read exercises.json and solutions.md; symbols are the lesson's, solutions go symbolically first, and the exercise levels are unchanged.
 
 ## Polish
-- fy3-15-L2-08 — the 15 000 MW option can be dropped by sight (above the 1200 MW given); the "final temperature in kelvins" distractor is not a mistake the chapter warned of. Both optional (round 1, unchanged).
-
-## Checked
-- Round 3 (delta). The diff is the typo "polttoaineteosta" to "polttoainetehosta" in the correct option's feedback and in the solution's Järkevyys; both read correctly now and no other occurrence remains. Numbers unchanged (5,0·10⁸ W, 42 %); the round-2 level fix stands.
-- Text only; no render opened (a spelling change).
+1. exercises.json/solutions.md: P_o, P_a, P_h and E_o are used consistently; the figure task defines P_o in its text; chain solutions begin from P_o. Levels, data tasks and multiple-choice distractors unchanged.
+2. The heat-pump task (ε = Q/E_s) uses a different notation from fy3-11 (ε = Q₁/W); align or say 'E_s on sähköenergia' in Annettu.
+3. Stage tasks write P_h = P_o − P_a where P_o means the stage's input (P_1); the solution says so, which is enough.
