@@ -5,6 +5,7 @@ import math
 from figlib import Fig, Axes, INK, MUTED, WHITE, RULE, ICE, ICE_EDGE, COLD_LIGHT, HEAT_LIGHT, SAND_LIGHT, GRAIN, IRON, ALUMINIUM, METAL_EDGE, n
 from fbd import FBD, ground, open_head, VELOCITY
 from figstyle import limb
+from figlib import COLD, HEAT
 
 SKIN = "#f3d2b3"
 
@@ -29,22 +30,22 @@ def _fit(x, y):
 def wax_graph():
     """The model graph of fy4-s1: both runs as points, a straight line fitted to each, and the two points each slope is read from."""
     kA, bA = _fit(t, vA); kB, bB = _fit(t, vB)
-    f = Fig("fy4-s1-graph", 430, "Kuvaaja: hiihtäjän nopeus v ajan t funktiona kahdella voiteella. Voiteen A pisteet ovat mustia ympyröitä ja "
-            "voiteen B pisteet harmaita neliöitä. Kumpaankin pisteistöön on sovitettu oma nouseva suora. Voiteen A suora kulkee pisteiden "
+    f = Fig("fy4-s1-graph", 430, "Kuvaaja: hiihtäjän nopeus v ajan t funktiona kahdella voiteella. Voiteen A pisteet ovat sinisiä ympyröitä ja "
+            "voiteen B pisteet sinisiä neliöitä. Kumpaankin pisteistöön on sovitettu oma nouseva suora, voiteen A suora yhtenäisenä ja voiteen B katkoviivana. Voiteen A suora kulkee pisteiden "
             "(0 s; 2,10 m/s) ja (8 s; 5,22 m/s) kautta, ja sen kulmakerroin on 0,39 m/s². Voiteen B suora kulkee pisteiden (0 s; 1,90 m/s) "
             "ja (8 s; 3,86 m/s) kautta, ja sen kulmakerroin on 0,245 m/s².")
     ax = Axes(f, (80, 380), (480, 70), x=(0, 9), y=(0, 6), xticks=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9], yticks=[0, 1, 2, 3, 4, 5, 6],
               xlabel=r"t\ (\text{s})", ylabel=r"v\ (\text{m/s})",
               xfmt=lambda v: str(v) if v % 2 == 0 else "")
-    ax.line([(0, bA), (8.6, bA + 8.6 * kA)], INK, 2.5)
-    ax.line([(0, bB), (8.6, bB + 8.6 * kB)], MUTED, 2.5, dash="9 6")
-    for a, b in zip(t, vA): ax.point(a, b)
+    ax.line([(0, bA), (8.6, bA + 8.6 * kA)], COLD, 3)                    # velocity in blue (the chapters' graphs, fy4-2);
+    ax.line([(0, bB), (8.6, bB + 8.6 * kB)], COLD, 3, dash="9 6")        # the two waxes told apart by line and marker
+    for a, b in zip(t, vA): ax.point(a, b, COLD)
     for a, b in zip(t, vB):
-        x, y = ax.X(a), ax.Y(b); f.rect(x - 6, y - 6, 12, 12, WHITE, MUTED, 2.5)
+        x, y = ax.X(a), ax.Y(b); f.rect(x - 6, y - 6, 12, 12, WHITE, COLD, 2.5)
     for a, b in [(0, 2.10), (8, 5.22), (0, 1.90), (8, 3.86)]:             # the points the slopes are read from
         f.circle(ax.X(a), ax.Y(b), 11, "none", INK, 1.5)
-    f.tex(ax.X(5.6), ax.Y(5.5), r"\text{voide A: } 0{,}39\,\tfrac{\text{m}}{\text{s}^2}", "end")
-    f.tex(ax.X(8.9), ax.Y(2.85), r"\text{voide B: } 0{,}245\,\tfrac{\text{m}}{\text{s}^2}", "end", MUTED)
+    f.tex(ax.X(5.6), ax.Y(5.5), r"\text{voide A: } 0{,}39\,\text{m/s}^2", "end", COLD)
+    f.tex(ax.X(8.9), ax.Y(1.3), r"\text{voide B: } 0{,}245\,\text{m/s}^2", "end", COLD, bg=True)   # below its line, clear of the points
     return f.svg()
 
 
@@ -52,16 +53,16 @@ def drag_graph():
     """fy4-s1 e: the acceleration of wax A's runs against the speed, a curve a = a0 - k v² fitted to the points and
     extended (dashed) to v = 0, where it gives the acceleration without air resistance."""
     k, a0 = _fit([v * v for v in vE], aE)
-    f = Fig("fy4-s1-drag", 410, "Kuvaaja: hiihtäjän kiihtyvyys a nopeuden v funktiona voiteella A. Kuusi mustaa pistettä nopeuksilla 2,0–9,0 m/s; "
+    f = Fig("fy4-s1-drag", 410, "Kuvaaja: hiihtäjän kiihtyvyys a nopeuden v funktiona voiteella A. Kuusi oranssia pistettä nopeuksilla 2,0–9,0 m/s; "
             "kiihtyvyys pienenee nopeuden kasvaessa yhä jyrkemmin. Pisteisiin on sovitettu kaareva käyrä, jota on jatkettu katkoviivana "
             "pystyakselille. Käyrä leikkaa pystyakselin kohdassa a0 = 0,45 m/s², joka on kiihtyvyys ilman ilmanvastusta.")
     ax = Axes(f, (80, 360), (490, 60), x=(0, 10), y=(0, 0.5), xticks=list(range(11)), yticks=[0, 0.1, 0.2, 0.3, 0.4, 0.5],
               xlabel=r"v\ (\text{m/s})", ylabel=r"a\ (\text{m/s}^2)", xfmt=lambda v: str(v) if v % 2 == 0 else "")
-    ax.curve(lambda v: a0 + k * v * v, 1.6, 9.6, INK, 2.5)
-    ax.curve(lambda v: a0 + k * v * v, 0, 1.6, INK, 2.5, dash="8 6")
-    for v, a in zip(vE, aE): ax.point(v, a)
+    ax.curve(lambda v: a0 + k * v * v, 1.6, 9.6, HEAT, 3)                # acceleration in orange (the chapters' graphs)
+    ax.curve(lambda v: a0 + k * v * v, 0, 1.6, HEAT, 3, dash="8 6")
+    for v, a in zip(vE, aE): ax.point(v, a, HEAT)
     f.circle(ax.X(0), ax.Y(a0), 11, "none", INK, 1.5)                              # where the curve meets the axis
-    f.tex(ax.X(0.5), ax.Y(a0) - 26, r"a_0 \approx 0{,}45\,\tfrac{\text{m}}{\text{s}^2}", "start")
+    f.tex(ax.X(0.5), ax.Y(a0) - 26, r"a_0 \approx 0{,}45\,\text{m/s}^2", "start", HEAT, bg=True)
     return f.svg()
 
 

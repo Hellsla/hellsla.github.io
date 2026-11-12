@@ -4,6 +4,7 @@ the statements by their ids (fy4-koe/<name>). Every force diagram is an FBD: the
 red, velocity blue, acceleration orange; no point-particle diagrams."""
 import math
 from figlib import Fig, Axes, INK, MUTED, RULE, RULE_LIGHT, COLD, COLD_LIGHT, HOT_LIGHT, fi
+from figlib import HOT, HEAT
 from fbd import FBD
 
 g = 9.81
@@ -94,7 +95,7 @@ def impulse():
             "tasaisesti nollasta 1500 newtoniin hetkeen 4 ms ja pienenee sitten tasaisesti nollaan hetkeen 8 ms. Kuvaaja on kolmio.")
     ax = Axes(f, (100, 330), (480, 60), x=(0, 10), y=(0, 1600), xticks=[0, 2, 4, 6, 8, 10], yticks=[0, 400, 800, 1200, 1600],
               xlabel=r"t\ (\text{ms})", ylabel=r"F\ (\text{N})")
-    ax.line([(0, 0), (4, 1500), (8, 0)], INK, 3.5)
+    ax.line([(0, 0), (4, 1500), (8, 0)], HOT, 3)                          # a force in red, as in the chapters' graphs (fy4-9)
     return f.svg()
 
 
@@ -107,12 +108,12 @@ def tram():
             "Viisi ensimmäistä ovat origosta alkavalla nousevalla suoralla, joka päättyy pisteeseen (8,0 s; 7,6 m/s). Sen jälkeen pisteet "
             "ovat vaakasuoralla suoralla 7,6 m/s. Suorien ja aika-akselin väliin jäävä alue on varjostettu, ja siihen on merkitty kuljettu matka.")
     ax = Axes(f, (80, 370), (470, 70), x=(0, 16), y=(0, 10), xticks=[0, 2, 4, 6, 8, 10, 12, 14, 16], yticks=[0, 2, 4, 6, 8, 10],
-              xlabel=r"t\ (\text{s})", ylabel=r"v\ (\tfrac{\text{m}}{\text{s}})")
+              xlabel=r"t\ (\text{s})", ylabel=r"v\ (\text{m/s})")
     ax.area([(0, 0), (8, 7.6), (14, 7.6), (14, 0)], COLD_LIGHT, 0.6)
-    ax.line([(0, 0), (8, 7.6), (15.5, 7.6)], INK, 3)
+    ax.line([(0, 0), (8, 7.6), (15.5, 7.6)], COLD, 3.5)                  # a velocity in blue, as in the chapters' graphs (fy4-2)
     ax.guide(8, 7.6)
-    for t, v in zip(T2, V2): ax.point(t, v)
-    f.tex(ax.X(0.4), ax.Y(9.2), r"a = \dfrac{7{,}6\,\tfrac{\text{m}}{\text{s}}}{8{,}0\,\text{s}} \approx 0{,}95\,\tfrac{\text{m}}{\text{s}^2}", "start")
+    for t, v in zip(T2, V2): ax.point(t, v, COLD)
+    f.tex(ax.X(0.4), ax.Y(9.2), r"a = \dfrac{7{,}6\,\text{m/s}}{8{,}0\,\text{s}} \approx 0{,}95\,\text{m/s}^2", "start")
     f.tex(ax.X(10.8), ax.Y(3.2), r"s \approx 76\,\text{m}", "middle", INK, bg=True)
     return f.svg()
 
@@ -167,8 +168,8 @@ def jump():
     ax.area([(0, G6)] + [(t, fn(t)) for t in steps if t <= cross] + [(cross, G6)], "#d5d0c4", 0.8)
     ax.area([(cross, G6)] + [(t, max(fn(t), 0)) for t in steps if t >= cross] + [(0.40, G6)], HOT_LIGHT, 0.8)
     ax.line([(0, G6), (0.44, G6)], MUTED, 2, dash="8 6")
-    ax.curve(lambda t: max(fn(t), 0), 0, 0.40, INK, 3)
-    for t, F in zip(T6, F6): ax.point(t, F)
+    ax.curve(lambda t: max(fn(t), 0), 0, 0.40, HOT, 3)                   # a force in red, as in the chapters' graphs (fy4-9)
+    for t, F in zip(T6, F6): ax.point(t, F, HOT)
     f.tex(ax.X(0.445), ax.Y(G6) - 22, r"G", "end", MUTED)
     f.tex(ax.X(0.17), ax.Y(1050), r"+", "middle")
     f.tex(ax.X(0.375), ax.Y(560), r"-", "middle")
@@ -184,8 +185,8 @@ def pulse():
     lab3 = lambda v: fi(v) if v % 3 == 0 else ""
     lab200 = lambda v: fi(v) if v % 200 == 0 else ""
     ax = Axes(f, (100, 370), (480, 70), x=(0, 12), y=(0, 1000), xticks=list(range(0, 13)), yticks=list(range(0, 1001, 100)),
-              xlabel=r"t\ (\text{ms})", ylabel=r"a\ (\tfrac{\text{m}}{\text{s}^2})", xfmt=lab3, yfmt=lab200)
-    ax.curve(lambda t: 950 * math.sin(math.pi * t / 9.0) if t <= 9.0 else 0.0, 0, 11.5, INK, 3.5, steps=230)
+              xlabel=r"t\ (\text{ms})", ylabel=r"a\ (\text{m/s}^2)", xfmt=lab3, yfmt=lab200)
+    ax.curve(lambda t: 950 * math.sin(math.pi * t / 9.0) if t <= 9.0 else 0.0, 0, 11.5, HEAT, 3.5, steps=230)   # an acceleration in orange
     return f.svg()
 
 

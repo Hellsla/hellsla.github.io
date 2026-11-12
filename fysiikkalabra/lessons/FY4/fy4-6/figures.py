@@ -73,7 +73,7 @@ def hero():
     ramp's foot, so the ramp gets steeper."""
     f = H.hero("fy46-hero", "Kuvitus: muuttopäivä kerrostalon pihalla. Pakettiauton takaovet ovat auki, ja auton lattialta laskeutuu "
                "puinen lastaussilta vinosti maahan. Sillan keskellä on pahvinen muuttolaatikko, joka pysyy paikallaan. Auton sisällä "
-               "on lisää laatikoita, ja muuttaja kantaa yhtä laatikkoa sillan vieressä. Taivaalla olevassa pienessä kuvassa jyrkempi silta, jolla laatikko liukuu alas, ja sininen nuoli osoittaa liikkeen suunnan.")
+               "on lisää laatikoita, ja muuttaja kantaa yhtä laatikkoa sillan vieressä.")
     H.sky(f, "fy46h", 470, ICE, GLASS)
     H.sun(f, "fy46h", 1080, 90, 40, rays=False)
     H.cloud(f, 300, 90, 1.1); H.cloud(f, 760, 60, 0.8)
@@ -106,17 +106,6 @@ def hero():
     # the loading ramp from the van floor to the asphalt
     L = math.hypot(x_rear - 210, 500 - (y_floor + 6))
     ang = math.degrees(math.atan2(500 - (y_floor + 6), x_rear - 210))
-    # the steeper case of the Miksi question, as an inset in the sky: a steeper ramp, the box slides down it (blue v, not a force)
-    f.rect(540, 22, 220, 158, WHITE, INK, 2, 10)
-    f.line(556, 160, 744, 160, WOOD_DARK, 3)
-    a2 = 30; t2 = _dir(a2); n2 = (-t2[1], t2[0])
-    plank(f, 560, 160, 170, a2, thick=9)
-    box_on_slope(f, 560, 160, 112, 50, 38, a2)
-    bx, by = 560 + 112 * t2[0] + 19 * n2[0] + 36 * n2[0], 160 - 112 * t2[1] - 19 * n2[1] - 36 * n2[1]
-    ex, ey = bx - 56 * t2[0], by + 56 * t2[1]
-    f.line(bx, by, ex, ey, "#1971c2", 4)
-    hd = [(ex, ey), (ex + 14 * t2[0] + 7 * n2[0], ey - 14 * t2[1] - 7 * n2[1]), (ex + 14 * t2[0] - 7 * n2[0], ey - 14 * t2[1] + 7 * n2[1])]
-    f.path("M" + " L".join(f"{n(u)},{n(w)}" for u, w in hd) + " Z", "#1971c2", None, 0)
     plank(f, 210, 500, L, ang)
     for k in range(1, 6):                                          # the grain of the wood
         tt = k / 6; x = 210 + tt * (x_rear - 210); y = 500 - tt * (500 - y_floor - 6)
