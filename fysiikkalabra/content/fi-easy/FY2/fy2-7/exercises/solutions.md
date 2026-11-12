@@ -220,7 +220,7 @@ Syötettyjen energioiden summa on $1016\,\text{MWh}$ ja häviöiden summa $42{,}
 **Kaava:** $E_\text{häviö} = 0{,}040 \cdot E_\text{lähtö}$
 **Muunnokset:** $4{,}0\,\% = 0{,}040$ ja $1\,\text{kWh} = 3{,}6 \cdot 10^{6}\,\text{J} = 3{,}6\,\text{MJ}$.
 **Sijoitus:** $E_\text{häviö} = 0{,}040 \cdot 500\,\text{kWh} = 20\,\text{kWh}$ ja $20\,\text{kWh} \cdot 3{,}6\,\tfrac{\text{MJ}}{\text{kWh}} = 72\,\text{MJ}$
-**Vastaus:** $72\,\text{MJ}$, kaksi merkitsevää numeroa kuten häviöprosentissa $4{,}0\,\%$. Muunnoskerroin on MAFY-taulukosta (Yksikkömuunnoksia). Eri taulukoiden arvot eroavat vähän. Vastaus kelpaa, kun se on noin $\pm 4\,\%$ sisällä.
+**Vastaus:** $72\,\text{MJ}$, kaksi merkitsevää numeroa kuten häviöprosentissa $4{,}0\,\%$. Muunnoskerroin on MAFY-taulukosta (Yksikkömuunnoksia). Muunnos $1\,\text{kWh} = 3{,}6\,\text{MJ}$ on tarkka. Vastaus kelpaa, kun se on noin $\pm 4\,\%$ sisällä.
 **Järkevyys:** Yksi kilowattitunti on $3{,}6\,\text{MJ}$. Siis $20\,\text{kWh}$ on noin $20 \cdot 4 = 80\,\text{MJ}$, hieman vähemmän. Tulos $72\,\text{MJ}$ sopii tähän.
 
 ## fy2-7-L2-09

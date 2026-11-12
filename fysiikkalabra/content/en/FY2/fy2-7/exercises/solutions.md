@@ -220,7 +220,7 @@ The sum of the energies fed in is $1016\,\text{MWh}$ and the sum of the losses $
 **Formula:** $E_\text{loss} = 0.040 \cdot E_\text{in}$
 **Conversions:** $4.0\,\% = 0.040$ and $1\,\text{kWh} = 3.6 \cdot 10^{6}\,\text{J} = 3.6\,\text{MJ}$.
 **Substitution:** $E_\text{loss} = 0.040 \cdot 500\,\text{kWh} = 20\,\text{kWh}$ and $20\,\text{kWh} \cdot 3.6\,\tfrac{\text{MJ}}{\text{kWh}} = 72\,\text{MJ}$
-**Answer:** $72\,\text{MJ}$, two significant figures like the loss percentage $4.0\,\%$. The conversion factor is from the MAFY table (Yksikkömuunnoksia); different tables differ slightly, and the answer is accepted within about $\pm 4\,\%$.
+**Answer:** $72\,\text{MJ}$, two significant figures like the loss percentage $4.0\,\%$. The conversion factor is from the MAFY table (Yksikkömuunnoksia); the conversion $1\,\text{kWh} = 3.6\,\text{MJ}$ is exact, and the answer is accepted within about $\pm 4\,\%$.
 **Reasonableness:** One kilowatt-hour is $3.6\,\text{MJ}$, so $20\,\text{kWh}$ is about $20 \cdot 4 = 80\,\text{MJ}$ reduced a little. The result $72\,\text{MJ}$ fits.
 
 ## fy2-7-L2-09

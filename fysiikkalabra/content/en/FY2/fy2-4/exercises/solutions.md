@@ -207,14 +207,14 @@ Line 4 is wrong, because the energies have been divided the wrong way round. The
 **Formula:** $E_\text{o} = Hm$ and $\eta = \dfrac{E_\text{a}}{E_\text{o}}$
 **Conversions:** All energies are in megajoules, so no conversions are needed. As a percentage $\eta \cdot 100\,\%$.
 **Substitution:** $E_\text{o} = 40.6\,\dfrac{\text{MJ}}{\text{kg}} \cdot 2.5\,\text{kg} = 101.5\,\text{MJ}$ and $\eta = \dfrac{80\,\text{MJ}}{101.5\,\text{MJ}} = 0.788 = 78.8\,\%$
-**Answer:** The efficiency of the boiler is about $79\,\%$. The heating value $H = 40.6\,\text{MJ/kg}$ is from the MAFY table (heating values of fuels, light fuel oil); tables differ slightly, and an answer within about $\pm 4\,\%$ is accepted.
+**Answer:** The efficiency of the boiler is about $79\,\%$. The heating value $H = 40.6\,\text{MJ/kg}$ is from the MAFY table (heating values of fuels, light fuel oil); the task uses this MAFY value, and an answer within about $\pm 4\,\%$ is accepted.
 **Reasonableness:** The efficiency is below $100\,\%$, as it must be. A rough estimate: $40 \cdot 2.5 = 100\,\text{MJ}$ taken in, and $80 : 100 = 0.80$. The remaining $21\,\text{MJ}$ or so goes to losses, for example with the flue gases.
 
 ## fy2-4-L2-09
 **Given:** read from the figure: the incoming arrow is $8$ squares thick, the useful (kinetic) energy arrow is $2$ squares thick, the incoming energy is $E_\text{o} = 240\,\text{J}$
 **Asked:** the efficiency $\eta$ of the motor as a percentage
 **Principle:** The thickness of an arrow is proportional to the energy on the scale of the figure, so the efficiency is the ratio of the thickness of the useful arrow to the thickness of the incoming arrow. The same ratio comes from the energies.
-**Reading the graph:** The incoming arrow covers $8$ squares and the green useful arrow $2$ squares. The thicknesses are read from the lines of the squared paper.
+**Reading the graph:** Here we read the energy-flow diagram: the incoming arrow covers $8$ squares and the green useful arrow $2$ squares. The thicknesses are read from the lines of the squared paper.
 **Formula:** $\eta = \dfrac{E_\text{a}}{E_\text{o}} = \dfrac{\text{thickness of the useful arrow}}{\text{thickness of the incoming arrow}}$
 **Conversions:** The squares need not be converted to joules, because the ratio of the thicknesses is a pure number. As a percentage $\eta \cdot 100\,\%$.
 **Substitution:** $\eta = \dfrac{2}{8} = 0.25 = 25\,\%$

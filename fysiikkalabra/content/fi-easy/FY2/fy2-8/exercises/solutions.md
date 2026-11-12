@@ -212,7 +212,7 @@ c) Jos koko kivihiilisähkö korvattaisiin tuulella, uusi summa olisi $14\,700\,
 **Muunnokset:** $5170\,\text{g} = 5{,}17\,\text{kg}$, koska $1000\,\text{g} = 1\,\text{kg}$.
 **Sijoitus:** $E = 47\,\tfrac{\text{MJ}}{\text{kg}} \cdot 2{,}0\,\text{kg} = 94\,\text{MJ}$ ja $m_\text{CO2} = 55\,\tfrac{\text{g}}{\text{MJ}} \cdot 94\,\text{MJ} = 5170\,\text{g} = 5{,}17\,\text{kg}$
 **Vastaus:** $m_\text{CO2} \approx 5{,}2\,\text{kg}$, kaksi merkitsevää numeroa kuten massassa $2{,}0\,\text{kg}$. Lämpöarvo $47\,\tfrac{\text{MJ}}{\text{kg}}$ on MAFY-taulukosta (Polttoaineiden LHV-lämpöarvoja). Eri taulukoiden arvot eroavat vähän. Vastaus kelpaa, kun se on noin $\pm 4\,\%$ sisällä.
-**Järkevyys:** Yhdestä kilogrammasta maakaasua syntyy noin $2{,}6\,\text{kg}$ hiilidioksidia. Hiilidioksidia syntyy siis noin $2{,}6$-kertainen massa. Näin käy hiilivedyillä, koska palaessa hiili yhtyy happeen.
+**Järkevyys:** Yhdestä kilogrammasta maakaasua syntyy noin $2{,}6\,\text{kg}$ hiilidioksidia. Hiilidioksidia syntyy siis noin $2{,}6$ kertaa niin paljon kuin kaasua on. Näin käy hiilivedyillä, koska palaessa hiili yhtyy happeen.
 
 ## fy2-8-L2-09
 **Annettu:** sähkönkulutus $E = 20{,}0\,\text{MWh}$; päästökertoimet luetaan kuvasta

@@ -213,7 +213,7 @@
 **Muunnokset:** $180\,\text{kcal} = 180 \cdot 1000\,\text{cal} = 180\,000\,\text{cal}$. Lopuksi $\text{J} \to \text{kJ}$: $1\,\text{kJ} = 1000\,\text{J}$.
 **Sijoitus:** $E = 180\,000 \cdot 4{,}1868\,\text{J} = 753\,624\,\text{J} = 753{,}624\,\text{kJ} \approx 754\,\text{kJ}$
 **Vastaus:** Patukka sisältää energiaa noin $754\,\text{kJ}$. Se on noin $0{,}75\,\text{MJ}$. Kalorin arvo $4{,}1868\,\text{J}$ on MAFY-taulukosta (yksikkömuunnoksia). Eri taulukoiden arvot poikkeavat vähän toisistaan. Vastaus hyväksytään, kun se on noin $\pm 4\,\%$ sisällä.
-**Järkevyys:** Yksi kilokalori on noin $4{,}2\,\text{kJ}$. Siis $180 \cdot 4{,}2\,\text{kJ} \approx 756\,\text{kJ}$. Joulut ovat pieniä. Siksi kilojoulelukema on noin nelinkertainen kilokalorilukemaan verrattuna.
+**Järkevyys:** Yksi kilokalori on noin $4{,}2\,\text{kJ}$. Siis $180 \cdot 4{,}2\,\text{kJ} \approx 756\,\text{kJ}$. Joulet ovat pieniä. Siksi kilojoulelukema on noin nelinkertainen kilokalorilukemaan verrattuna.
 
 ## fy2-2-L1-11
 **Annettu:** kuvasta luettu teeveden kiehautuksen piste asteikolla. Asteikon kohdat ovat $1\,\text{J}$, $1\,\text{kJ}$, $1\,\text{MJ}$, $1\,\text{GJ}$ ja $1\,\text{TJ}$

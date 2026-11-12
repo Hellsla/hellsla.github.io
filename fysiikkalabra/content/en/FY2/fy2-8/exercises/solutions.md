@@ -212,7 +212,7 @@ c) If all the coal electricity were replaced with wind, the new sum would be $14
 **Conversions:** $5170\,\text{g} = 5.17\,\text{kg}$, because $1000\,\text{g} = 1\,\text{kg}$.
 **Substitution:** $E = 47\,\tfrac{\text{MJ}}{\text{kg}} \cdot 2.0\,\text{kg} = 94\,\text{MJ}$ and $m_\text{CO2} = 55\,\tfrac{\text{g}}{\text{MJ}} \cdot 94\,\text{MJ} = 5170\,\text{g} = 5.17\,\text{kg}$
 **Answer:** $m_\text{CO2} \approx 5.2\,\text{kg}$, two significant figures like the mass $2.0\,\text{kg}$. The heat of combustion $47\,\tfrac{\text{MJ}}{\text{kg}}$ is from the MAFY table (Polttoaineiden LHV-lämpöarvoja); different tables differ slightly, and the answer is accepted within about $\pm 4\,\%$.
-**Reasonableness:** A kilogram of natural gas produces about $2.6\,\text{kg}$ of carbon dioxide, about $2.6$ times its mass. This is typical of hydrocarbons, where the carbon combines with oxygen in burning.
+**Reasonableness:** A kilogram of natural gas produces about $2.6\,\text{kg}$ of carbon dioxide, about $2.6$ times as large as its mass. This is typical of hydrocarbons, where the carbon combines with oxygen in burning.
 
 ## fy2-8-L2-09
 **Given:** electricity use $E = 20.0\,\text{MWh}$; the emission factors are read from the figure

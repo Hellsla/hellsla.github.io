@@ -207,14 +207,14 @@ Rivi 4 on väärin, koska energiat on jaettu väärinpäin. Oikein $\eta = \dfra
 **Kaava:** $E_\text{o} = Hm$ ja $\eta = \dfrac{E_\text{a}}{E_\text{o}}$
 **Muunnokset:** Kaikki energiat ovat megajouleina, joten muunnoksia ei tarvita. Prosentteina $\eta \cdot 100\,\%$.
 **Sijoitus:** $E_\text{o} = 40{,}6\,\dfrac{\text{MJ}}{\text{kg}} \cdot 2{,}5\,\text{kg} = 101{,}5\,\text{MJ}$ ja $\eta = \dfrac{80\,\text{MJ}}{101{,}5\,\text{MJ}} = 0{,}788 = 78{,}8\,\%$
-**Vastaus:** Kattilan hyötysuhde on noin $79\,\%$. Lämpöarvo $H = 40{,}6\,\text{MJ/kg}$ on MAFY-taulukosta (polttoaineiden lämpöarvot, kevyt polttoöljy); eri taulukoiden arvot poikkeavat hieman toisistaan, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Vastaus:** Kattilan hyötysuhde on noin $79\,\%$. Lämpöarvo $H = 40{,}6\,\text{MJ/kg}$ on MAFY-taulukosta (polttoaineiden lämpöarvot, kevyt polttoöljy); tehtävässä käytetään tätä MAFY-arvoa, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
 **Järkevyys:** Hyötysuhde on alle $100\,\%$, kuten pitääkin. Karkea arvio: $40 \cdot 2{,}5 = 100\,\text{MJ}$ otettua energiaa, ja $80 : 100 = 0{,}80$. Loput noin $21\,\text{MJ}$ menee häviöihin, esimerkiksi savukaasujen mukana.
 
 ## fy2-4-L2-09
 **Annettu:** kuvasta luettu: tuleva nuoli $8$ ruutua paksu, hyötyenergian (liike-energian) nuoli $2$ ruutua paksu, tuleva energia $E_\text{o} = 240\,\text{J}$
 **Kysytty:** moottorin hyötysuhde $\eta$ prosentteina
 **Periaate:** Nuolen paksuus on mittakaavassa verrannollinen energiaan, joten hyötysuhde on hyötynuolen ja tulevan nuolen paksuuksien suhde. Sama suhde saadaan myös energioista.
-**Kuvaajan lukeminen:** Tuleva nuoli kattaa $8$ ruutua ja vihreä hyötynuoli $2$ ruutua. Nuolten paksuudet luetaan ruutupaperin viivoista.
+**Kuvaajan lukeminen:** Luetaan energiavuokaaviota: tuleva nuoli kattaa $8$ ruutua ja vihreä hyötynuoli $2$ ruutua. Nuolten paksuudet luetaan ruutupaperin viivoista.
 **Kaava:** $\eta = \dfrac{E_\text{a}}{E_\text{o}} = \dfrac{\text{hyötynuolen paksuus}}{\text{tulevan nuolen paksuus}}$
 **Muunnokset:** Ruutuja ei tarvitse muuttaa jouleiksi, koska paksuuksien suhde on lukuarvo. Prosentteina $\eta \cdot 100\,\%$.
 **Sijoitus:** $\eta = \dfrac{2}{8} = 0{,}25 = 25\,\%$

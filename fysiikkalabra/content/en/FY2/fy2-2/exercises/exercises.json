@@ -140,7 +140,7 @@
     {
       "id": "fy2-2-L1-11",
       "level": 1,
-      "text": "Three things are marked on the power-of-ten scale of the figure with the order of magnitude of their energy, and each small step is ten times the previous one. Read from the figure how much energy it takes to bring tea water to the boil. Give the answer in kilojoules.",
+      "text": "On the scale each small step is ten times the previous one, and three energies are marked on it. Read from the figure how much energy it takes to bring tea water to the boil. Give the answer in kilojoules.",
       "figure": "fy2-2/tikapuut-kohteet",
       "answer": 100,
       "unit": "kJ",
