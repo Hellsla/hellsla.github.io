@@ -1,20 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: d08caf4c2d0b85dc
+CONTENT-HASH: 598982a9db689aad
 SCOPE: delta added-exercise from a5e3a606c3d94d47 base 141dc47a8c70
 Mode: delta
-Round: 2
+Round: 3
 
 ## Blocking
 
 ## Polish
-- solutions.md L1-10 Järkevyys: "puuhun, jonka lämpöarvo on noin $16\,\text{MJ/kg}$". The chapter *Polttoaineet ja lämpöarvo* gives air-dry firewood $15\,\text{MJ/kg}$ (pellets 17). Fix: write "ilmakuivaan polttopuuhun (noin $15\,\text{MJ/kg}$)" so the numbers match between chapters.
+- solutions.md:75 (L1-10 Järkevyys) — "puuhun, jonka lämpöarvo on noin $16\,\text{MJ/kg}$" still differs from the 15 MJ/kg for air-dry firewood in *Polttoaineet ja lämpöarvo* (still open from round 2) — write "ilmakuivaan polttopuuhun (noin $15\,\text{MJ/kg}$)".
+- solutions.md:72 / answers.py L1-10 — H = 43,4 MJ/kg (MAFY LHV) and the fy2-5 heating-value figure (bensiini 43) say the same thing at different precision (C, no contradiction). If you like, note in fy2-5 that 43 is a rounded value.
 - Earlier items (L1-09 "likimain eristetyn", L3-04 c), L1-07 option 3) are still open. They are outside this delta.
 
 ## Checked
-- Hash d08caf4c2d0b85dc at the start and the end. I judged only the added L1-10 and L2-08.
-- L1-10 replaces the round-1 $c\,m\,\Delta T$ task (blocking item resolved). $E = Hm$ is inside the FY2 scope notes and the task text gives it. The task is marked as invented ("Kuvitellaan"). There is no isolated-system claim, and the chemical energy → kinetic + thermal chain is correct.
-- L1-10 recomputed: $43\,\text{MJ/kg} \cdot 2{,}0\,\text{kg} = 86\,\text{MJ}$, the same as answers.py (86.0). A table value of 42 or 44 MJ/kg gives 84 or 88 MJ, within ±2,3 % and inside the 4 % tolerance. H = 43 MJ/kg agrees with the fy2-5 heating-value figure (bensiini 43). Two significant figures follow from m = 2,0 kg. The check 86 MJ ≈ 24 kWh is correct.
-- L1-10 solution: the formula is given before the substitution, the no-conversion statement is correct, and the order-of-magnitude estimate is a real check.
-- L2-08 recomputed: $700 - (300+300) = 100\,\text{J}$, $p = 14{,}29\,\%$, the same as answers.py (14.285714). The answer 14 % is 2,0 % away, inside the 3 % tolerance.
-- L2-08 round-1 polish items are fixed. The "puolivälissä" reasoning is gone, the answer is rounded to whole percents with the right reason (readings to 100 J), and the check is the energy sum 600 J + 100 J = 700 J.
-- L2-08 physics: the system is isolated (as in the worked example), friction converts mechanical energy into thermal energy and creates none, and the unknown is solved symbolically first. The figure kitka-pylvaat gives A and B as the solution reads them and does not reveal the answer.
+- Hash 598982a9db689aad at the start and the end. I judged only the added L1-10 and L2-08.
+- L1-10 change: H = 43,4 MJ/kg is the same in the solution (Annettu, Sijoitus, Vastaus) and in answers.py. It is a plausible lower heating value for petrol (LHV, typically 42–44 MJ/kg). The task says to look it up in MAFY and marks the situation as invented ("Kuvitellaan").
+- L1-10 recomputed: E = Hm = 43,4 MJ/kg · 2,0 kg = 86,8 MJ, the same as exercises.json and answers.py (86.8). The stated 87 MJ is 0,2 % away from it.
+- L1-10 tolerance 4 %: table values of 42 / 43 / 44 MJ/kg give 84 / 86 / 88 MJ, which are 3,2 / 0,9 / 1,4 % from 86,8. All are accepted, as the solution says.
+- L1-10: two significant figures follow from m = 2,0 kg. The check 87 MJ ≈ 24 kWh (24,1) is right, and the estimate 40 · 2 = 80 MJ is a real check. Chemical energy → kinetic + thermal is right, and there is no isolated-system claim.
+- L2-08 has not changed since round 2. Recomputed: (700+0) − (300+300) = 100 J, p = 14,29 %, the same as answers.py. The answer 14 % is 2,1 % away, inside the 3 % tolerance. The figure data (FRICTION list) match the solution's readings.
