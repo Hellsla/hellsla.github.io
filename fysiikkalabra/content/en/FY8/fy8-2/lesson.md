@@ -10,18 +10,6 @@
   <line x1="0" y1="470" x2="1200" y2="470" stroke="#d9b26a" stroke-width="4" stroke-linecap="butt"/>
   <rect x="60" y="70" width="240" height="150" rx="6" fill="url(#fy82h-sky)" stroke="#1f2933" stroke-width="5"/>
   <circle cx="180" cy="140" r="57.5" fill="#ffffff" fill-opacity="0.5"/>
-  <path d="M221.5,158.5 L240.5,156 L225,145 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M206.5,176.5 L224.5,184.5 L216.5,166.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M185,185 L196,200.5 L198.5,181.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M161.5,181.5 L164,200.5 L175,185 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M143.5,166.5 L135.5,184.5 L153.5,176.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M135,145 L119.5,156 L138.5,158.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M138.5,121.5 L119.5,124 L135,135 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M153.5,103.5 L135.5,95.5 L143.5,113.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M175,95 L164,79.5 L161.5,98.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M198.5,98.5 L196,79.5 L185,95 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M216.5,113.5 L224.5,95.5 L206.5,103.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M225,135 L240.5,124 L221.5,121.5 Z" fill="#ffc078" stroke-linejoin="round"/>
   <circle cx="180" cy="140" r="36" fill="url(#fy82h-sun-sun)"/>
   <rect x="60" y="220" width="240" height="70" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="4"/>
   <rect x="60" y="304" width="240" height="76" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="4"/>

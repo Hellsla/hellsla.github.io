@@ -6,18 +6,6 @@
   <defs><linearGradient id="fy715h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><radialGradient id="fy715h-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></radialGradient><linearGradient id="fy715h-lake" gradientUnits="userSpaceOnUse" x1="0" y1="260" x2="0" y2="600"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><clipPath id="fy715h-lens"><ellipse cx="470" cy="360" rx="118" ry="92"/><ellipse cx="730" cy="360" rx="118" ry="92"/></clipPath><linearGradient id="fy715h-deep" gradientUnits="userSpaceOnUse" x1="0" y1="260" x2="0" y2="600"><stop offset="0" stop-color="#2f74b5"/><stop offset="1" stop-color="#1d4f7c"/></linearGradient></defs>
   <rect x="0" y="0" width="1200" height="260" fill="url(#fy715h-sky)"/>
   <circle cx="1010" cy="92" r="83" fill="#ffffff" fill-opacity="0.5"/>
-  <path d="M1070.5,115.5 L1097.5,115.5 L1074,102 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1050.5,142.5 L1074,156 L1060.5,132.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1020,156 L1033.5,179.5 L1033.5,152.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M986.5,152.5 L986.5,179.5 L1000,156 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M959.5,132.5 L946,156 L969.5,142.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M946,102 L922.5,115.5 L949.5,115.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M949.5,68.5 L922.5,68.5 L946,82 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M969.5,41.5 L946,28 L959.5,51.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1000,28 L986.5,4.5 L986.5,31.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1033.5,31.5 L1033.5,4.5 L1020,28 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1060.5,51.5 L1074,28 L1050.5,41.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1074,82 L1097.5,68.5 L1070.5,68.5 Z" fill="#ffc078" stroke-linejoin="round"/>
   <circle cx="1010" cy="92" r="52" fill="url(#fy715h-sun)"/>
   <path d="M0,262 L20,220 L39.5,262 L61.5,214.5 L83.5,262 L103.5,219 L124,262 L152.5,195.5 L181,262 L205.5,206.5 L230,262 L259,195.5 L287.5,262 L313,204 L338.5,262 L356.5,226 L374,262 L402,198 L429.5,262 L446.5,228 L463.5,262 L483.5,219.5 L503.5,262 L530,202 L556,262 L581,206 L606,262 L624,225.5 L641.5,262 L658.5,228 L675.5,262 L694.5,222.5 L713.5,262 L736.5,211.5 L759.5,262 L781.5,213.5 L803.5,262 L822,224.5 L840.5,262 L857,229.5 L873,262 L891,225.5 L909,262 L934,206.5 L958.5,262 L985.5,200 L1012.5,262 L1031.5,223 L1050,262 L1068.5,224 L1087,262 L1104.5,226.5 L1122,262 L1152,192.5 L1181.5,262 L1198.5,227.5 L1216,262 V292 H0 Z" fill="#2b8a3e" stroke-linejoin="round"/>
   <rect x="0" y="260" width="1200" height="340" fill="url(#fy715h-lake)"/>

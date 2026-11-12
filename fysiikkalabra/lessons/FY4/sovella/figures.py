@@ -4,6 +4,9 @@ apart from its pictorial situation picture. Velocity is blue, acceleration orang
 import math
 from figlib import Fig, Axes, INK, MUTED, WHITE, RULE, ICE, ICE_EDGE, COLD_LIGHT, HEAT_LIGHT, SAND_LIGHT, GRAIN, IRON, ALUMINIUM, METAL_EDGE, n
 from fbd import FBD, ground, open_head, VELOCITY
+from figstyle import limb
+
+SKIN = "#f3d2b3"
 
 g = 9.81
 MOMENTUM = "#7048e8"                     # momentum arrows (FY4): apart from velocity, force and acceleration
@@ -92,10 +95,20 @@ def wax_fbd():
     s0 = 120                                                     # the skier's middle along the slope
     _poly(f, [_along(x0, y0, deg, s0 - 70, 2), _along(x0, y0, deg, s0 + 62, 2), _along(x0, y0, deg, s0 + 72, 9),
               _along(x0, y0, deg, s0 + 60, 7), _along(x0, y0, deg, s0 - 70, 7)], "#c92a2a", INK, 1.5)       # the skis
-    f.line(*_along(x0, y0, deg, s0 - 4, 8), *_along(x0, y0, deg, s0 - 8, 62), INK, 9, cap="round")         # legs
-    f.line(*_along(x0, y0, deg, s0 - 8, 62), *_along(x0, y0, deg, s0 - 4, 118), "#2f74b5", 22, cap="round")  # body
-    hx, hy = _along(x0, y0, deg, s0 - 2, 140); f.circle(hx, hy, 14, HEAT_LIGHT, INK, 2)
-    f.line(*_along(x0, y0, deg, s0 - 4, 104), *_along(x0, y0, deg, s0 - 46, 6), IRON, 3, cap="round")       # pole, trailing
+    # the skier, standing upright on the skis: shaped limbs in the house style (figstyle.limb), no stick figure
+    P = lambda ds, h: _along(x0, y0, deg, s0 + ds, h)
+    f.line(*P(-2, 96), *P(-50, 5), IRON, 2.5, cap="round")                                                   # the far pole
+    _poly(f, [P(-8, 7), P(12, 7), P(12, 14), P(4, 20), P(-8, 20)], "#3a4350", INK, 1.25)                     # boots
+    limb(f, P(0, 18), P(7, 42), 13, 14, "#3a4350", sw=1.25); limb(f, P(7, 42), P(-2, 68), 15, 17, "#3a4350", sw=1.25)   # shin, thigh
+    limb(f, P(-2, 66), P(3, 110), 24, 26, "#2f74b5", sw=1.25)                                                # jacket
+    hx, hy = P(6, 133)
+    f.circle(hx, hy, 13, SKIN, "#b98a5e", 1.25)
+    cap = [P(-7, 136), P(-5, 148), P(8, 151), P(19, 144), P(19, 136)]
+    f.path("M" + " L".join(f"{n(a)},{n(b)}" for a, b in cap[:2]) + f" Q{n(P(2, 154)[0])},{n(P(2, 154)[1])} {n(cap[2][0])},{n(cap[2][1])}"
+           f" Q{n(P(20, 152)[0])},{n(P(20, 152)[1])} {n(cap[4][0])},{n(cap[4][1])} Z", "#c92a2a", "#8f1d1d", 1.25)   # woolly hat
+    limb(f, P(3, 106), P(12, 82), 12, 11, "#2f74b5", sw=1.25); limb(f, P(12, 82), P(22, 64), 11, 9, "#2f74b5", sw=1.25)  # arm
+    f.circle(*P(23, 62), 5.5, "#3a4350", INK, 1)                                                             # glove
+    f.line(*P(23, 62), *P(-40, 5), IRON, 3, cap="round")                                                     # the near pole, trailing
     vx, vy = _along(x0, y0, deg, s0 + 40, 100)
     FBD(f, 1).motion(r"\overline{v}", (math.cos(th), -math.sin(th)), (vx, vy), 72, kind="velocity")
     f.line(300, 20, 300, 390, RULE, 1.5, "6 6")

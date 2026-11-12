@@ -137,43 +137,46 @@ def ex_pi():
 
 # --- opening illustration: a toaster on a kitchen counter, its cord to the wall socket ----------------------------
 def hero():
-    f = H.hero("fy66-hero", "Kuvitus: keittiön työtaso laattaseinää vasten. Työtasolla on metallinen leivänpaahdin, jonka "
-               "kahdesta aukosta näkyvät punaoranssina hehkuvat vastuslangat ja niiden yllä väreilevä kuuma ilma. Paahtimesta "
-               "kulkee musta johto työtason yli seinän pistorasiaan, ja johto on tavallisen värinen eikä hehku.")
-    H.tiles(f, 430, 75, RULE_LIGHT, PAPER)
-    H.wood(f, -10, 430, 1220, 40, "fy66h-top")
-    f.rect(0, 470, 1200, 130, H.grad(f, "fy66h-cab", SAND_LIGHT, SAND), INK, 3)
-    for x in (300, 600, 900):
-        f.line(x, 470, x, 600, INK, 3)
-        f.rect(x - 70, 500, 26, 8, METAL_EDGE, INK, 2, 3); f.rect(x + 44, 500, 26, 8, METAL_EDGE, INK, 2, 3)
-    # wall socket
-    f.rect(978, 252, 124, 124, WHITE, INK, 3, 14)
-    f.circle(1040, 314, 44, GLASS, INK, 2.5)
-    f.circle(1024, 314, 6, INK); f.circle(1056, 314, 6, INK)
-    # plug in the socket and the cord over the counter to the toaster
-    f.rect(1016, 296, 48, 52, IRON, INK, 3, 10)
-    f.path("M1040,348 C1040,410 1020,424 960,428 C890,432 850,424 816,404", stroke=INK, w=9, extra='stroke-linecap="round"')
-    # toaster body
-    x0, x1, y0, y1 = 300, 820, 180, 430
+    """The chapter's opening illustration, a close-up (teacher 2026-11-11, illustration audit: the same toaster as in
+    Resistanssi ja Ohmin laki, so this one looks down into the slots): the heating wires glow, the cord in the
+    foreground carries the same current and does not."""
+    f = H.hero("fy66-hero", "Kuvitus, lähikuva: leivänpaahdin keittiön työtasolla yläviistosta nähtynä. Paahtimen kahdessa "
+               "aukossa hehkuvat punaoranssit vastuslangat, ja niiden yllä väreilee kuuma ilma. Etualalla paahtimen musta "
+               "johto kulkee työtason yli seinän pistorasiaan. Johto on tavallisen värinen eikä hehku.")
+    H.tiles(f, 380, 95, RULE_LIGHT, PAPER)
+    H.wood(f, -10, 380, 1220, 230, "fy66h-top")
+    f.line(0, 380, 1200, 380, INK, 3)
+    # wall socket and the plug in it
+    f.rect(972, 150, 132, 132, WHITE, INK, 3, 14)
+    f.circle(1038, 216, 46, GLASS, INK, 2.5)
+    f.rect(1010, 190, 56, 62, IRON, INK, 3, 12)
+    # the toaster from slightly above: the top face with its two slots, the front face below it
     f.defs_add('<linearGradient id="fy66h-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a96a3"/>'
-               '<stop offset="0.25" stop-color="#ffffff"/><stop offset="0.6" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient>')
-    f.path(f"M{x0},{y1} L{x0},{y0 + 50} Q{x0},{y0} {x0 + 50},{y0} L{x1 - 50},{y0} Q{x1},{y0} {x1},{y0 + 50} L{x1},{y1} Z",
-           "url(#fy66h-steel)", INK, 3)
-    f.rect(x0 + 10, y1 - 10, x1 - x0 - 20, 14, IRON, INK, 2.5, 4)
-    f.rect(x0 + 30, y1, 40, 10, INK, rx=3); f.rect(x1 - 70, y1, 40, 10, INK, rx=3)
-    # lever and dial on the front
-    f.rect(x1 - 4, 270, 34, 18, INK, rx=5)
-    f.circle(560, 350, 26, WHITE, INK, 3); f.line(560, 350, 576, 334, INK, 3)
-    # two slots with glowing heating wires
+               '<stop offset="0.25" stop-color="#ffffff"/><stop offset="0.6" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient>'
+               '<linearGradient id="fy66h-topface" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dfe4e9"/><stop offset="1" stop-color="#f4f6f8"/></linearGradient>')
+    xl, xr, yt, yf = 130, 770, 170, 330                       # the front edge of the top face runs from xl to xr at yf
+    edge = lambda y: (xl + (yf - y) / (yf - yt) * 70, xr - (yf - y) / (yf - yt) * 70)
+    f.path(f"M{xl},{yf} L{xr},{yf} L{xr},600 L{xl},600 Z", "url(#fy66h-steel)", INK, 3)
+    f.path(f"M{xl},{yf} L{xr},{yf} L{edge(yt)[1]},{yt} L{edge(yt)[0]},{yt} Z", "url(#fy66h-topface)", INK, 3, 'stroke-linejoin="round"')
+    f.rect(xr - 4, 430, 40, 24, INK, rx=6)                    # the lever
+    f.circle(450, 500, 34, WHITE, INK, 3); f.line(450, 500, 472, 478, INK, 4, cap="round")
     gl = H.glow(f, "fy66h-glow", HEAT_LIGHT, HEAT)
-    for sx in (370, 600):
-        f.add(f'<ellipse cx="{sx + 70}" cy="{y0 + 2}" rx="124" ry="38" fill="{gl}"/>')
-        f.rect(sx, y0 - 7, 140, 18, INK, rx=9)
-        for k in range(7):
-            xx = sx + 14 + k * 18
-            f.path(f"M{xx},{y0 - 2} q4,4 0,8", stroke=HOT, w=4, extra='stroke-linecap="round"')
-            f.path(f"M{xx + 3},{y0 + 1} q3,3 0,5", stroke=HEAT_LIGHT, w=2, extra='stroke-linecap="round"')
-    H.shimmer(f, (405, 475, 635, 705), y0 - 24, 120, HEAT)
+    f.add(f'<ellipse cx="450" cy="{yt + 60}" rx="330" ry="120" fill="{gl}" fill-opacity="0.85"/>')
+    for y0, y1 in ((196, 234), (262, 304)):                   # the two slots, the nearer one larger
+        (a0, b0), (a1, b1) = edge(y0), edge(y1)
+        a0 += 56; b0 -= 56; a1 += 56; b1 -= 56
+        f.path(f"M{n(a0)},{y0} L{n(b0)},{y0} L{n(b1)},{y1} L{n(a1)},{y1} Z", INK, INK, 3, 'stroke-linejoin="round"')
+        k = 22
+        for i in range(k):                                    # the glowing wires down in the slot
+            t = (i + 0.5) / k
+            x0, x1 = a0 + (b0 - a0) * t, a1 + (b1 - a1) * t
+            f.path(f"M{n(x0)},{y0 + 5} L{n(x1)},{y1 - 5}", stroke=HOT, w=5, extra='stroke-linecap="round"')
+            f.path(f"M{n(x0)},{y0 + 7} L{n(x1)},{y1 - 7}", stroke=HEAT_LIGHT, w=2, extra='stroke-linecap="round"')
+    H.shimmer(f, (270, 360, 450, 540, 630), yt - 8, 120, HEAT)
+    # the cord in the foreground: from the toaster over the worktop to the plug, plain black, no glow
+    cord = f"M{xr},548 C880,580 880,470 960,468 C1040,466 1040,360 1038,252"
+    f.path(cord, stroke=INK, w=18, extra='stroke-linecap="round"')
+    f.path(cord, stroke=MUTED, w=4, extra='stroke-linecap="round" stroke-opacity="0.7"')
     return f.svg()
 
 

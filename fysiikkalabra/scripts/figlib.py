@@ -176,7 +176,13 @@ class Axes:
         # the axis titles beyond the arrow tips, where no data, tick or gridline can reach them: leave about
         # 80 units right of the x arrow and 30 above the y arrow
         fig.tex(ax_end + 6, xa, xlabel, "start") if xlabel else None
-        fig.tex(self.x0 - 10, ay_end - 16, ylabel, "start") if ylabel else None
+        if ylabel:
+            # a graph that reaches the top of its figure has no room above the y arrow: the title then goes beside the
+            # arrow tip, on white, instead of being cut by the frame (teacher 2026-11-11, illustration audit group A)
+            tall = re.search(r"\\d?frac|\\sqrt|\\sum|\\int", ylabel)
+            ink = fig.size * (1.05 if tall else 0.42)      # how far the glyphs reach above the label's centre line
+            if ay_end - 16 - ink >= 0: fig.tex(self.x0 - 10, ay_end - 16, ylabel, "start")
+            else: fig.tex(self.x0 + 14, max(ay_end + 6, ink + 3), ylabel, "start", bg=True)
 
     def X(self, v): return self.x0 + (v - self.xr[0]) / (self.xr[1] - self.xr[0]) * (self.x1 - self.x0)
     def Y(self, v): return self.y0 - (v - self.yr[0]) / (self.yr[1] - self.yr[0]) * (self.y0 - self.y1)

@@ -6,18 +6,6 @@
   <defs><linearGradient id="fy48h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><radialGradient id="fy48h-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></radialGradient><linearGradient id="fy48h-grass" gradientUnits="userSpaceOnUse" x1="0" y1="500" x2="0" y2="900"><stop offset="0" stop-color="#b2f2bb"/><stop offset="1" stop-color="#2b8a3e"/></linearGradient></defs>
   <rect x="0" y="0" width="1200" height="540" fill="url(#fy48h-sky)"/>
   <circle cx="1060" cy="100" r="83" fill="#ffffff" fill-opacity="0.5"/>
-  <path d="M1120.5,123.5 L1147.5,123.5 L1124,110 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1100.5,150.5 L1124,164 L1110.5,140.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1070,164 L1083.5,187.5 L1083.5,160.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1036.5,160.5 L1036.5,187.5 L1050,164 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1009.5,140.5 L996,164 L1019.5,150.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M996,110 L972.5,123.5 L999.5,123.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M999.5,76.5 L972.5,76.5 L996,90 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1019.5,49.5 L996,36 L1009.5,59.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1050,36 L1036.5,12.5 L1036.5,39.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1083.5,39.5 L1083.5,12.5 L1070,36 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1110.5,59.5 L1124,36 L1100.5,49.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M1124,90 L1147.5,76.5 L1120.5,76.5 Z" fill="#ffc078" stroke-linejoin="round"/>
   <circle cx="1060" cy="100" r="52" fill="url(#fy48h-sun)"/>
   <path d="M140,110 Q138,76 178,80 Q194,44 234,56 Q270,36 290,74 Q326,78 322,110 Z" fill="#ffffff" stroke-linejoin="round"/>
   <path d="M692.5,85 Q691,59.5 721,62.5 Q733,35.5 763,44.5 Q790,29.5 805,58 Q832,61 829,85 Z" fill="#ffffff" stroke-linejoin="round"/>

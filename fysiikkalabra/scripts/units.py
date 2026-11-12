@@ -122,14 +122,20 @@ def sim_folder(uid, lang):
     return ROOT / "assets" / "sims" / s if s else None
 
 
-def content_hash(uid, lang):
+def content_hash(uid, lang, read=None):
+    """The hash the reviews are for. read(relpath, binary) gives the unit's texts, figures.py and task set as a commit
+    had them (reviews.Commit.read, for a carry over a teacher-approved figure; the simulation and the assets are read
+    from the working tree, so a commit whose simulation or assets differed never matches); default the working tree."""
     from reviews import normalized
+    def get(path, binary=False):
+        if read: return read(path.relative_to(ROOT).as_posix(), binary)
+        return (path.read_bytes() if binary else path.read_text()) if path.is_file() else None
     h = hashlib.sha256()
     for name in TEXTS:
-        p = folder(uid, lang) / name
-        if p.is_file(): h.update(name.encode() + b"\0" + normalized(p.read_text(), name).encode() + b"\0")
-    p = code_folder(uid) / "figures.py"
-    if p.is_file(): h.update(b"figures.py\0" + p.read_bytes() + b"\0")
+        t = get(folder(uid, lang) / name)
+        if t is not None: h.update(name.encode() + b"\0" + normalized(t, name).encode() + b"\0")
+    b = get(code_folder(uid) / "figures.py", True)
+    if b is not None: h.update(b"figures.py\0" + b + b"\0")
     sf = sim_folder(uid, lang)
     if sf and sf.is_dir():
         for f in sorted(x for x in sf.rglob("*") if x.is_file()):
@@ -139,7 +145,7 @@ def content_hash(uid, lang):
         if f.is_file(): h.update(ref.encode() + b"\0" + f.read_bytes() + b"\0")
     if has_tasks(uid, lang):                             # the unit's own task set (scripts/practice.py): reviewed with the unit
         import practice
-        h.update(b"sovella\0" + practice.content_hash(task_key(uid), lang).encode() + b"\0")
+        h.update(b"sovella\0" + practice.content_hash(task_key(uid), lang, read=read).encode() + b"\0")
     return h.hexdigest()[:16]
 
 

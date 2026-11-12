@@ -90,10 +90,37 @@
   <foreignObject x="80" y="7.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{situation}$</div></foreignObject>
   <path d="M14,170 L286.5,269 L286.5,380 L14,380 Z" fill="#f8fbfd" stroke="#9fb8c8" stroke-width="2" stroke-linejoin="round"/>
   <path d="M61.5,185 L185.5,230.5 L197.5,227 L185.5,225 L63.5,180.5 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
-  <line x1="125.5" y1="202" x2="140.5" y2="150" stroke="#1f2933" stroke-width="9" stroke-linecap="round"/>
-  <line x1="140.5" y1="150" x2="163.5" y2="99" stroke="#2f74b5" stroke-width="22" stroke-linecap="round"/>
-  <circle cx="173" cy="79" r="14" fill="#ffc078" stroke="#1f2933" stroke-width="2"/>
-  <line x1="158.5" y1="112" x2="85.5" y2="189.5" stroke="#6c757d" stroke-width="3" stroke-linecap="round"/>
+  <line x1="157.5" y1="120" x2="81.5" y2="189" stroke="#6c757d" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M121.5,201.5 L140.5,208.5 L143,202 L137.5,193.5 L126,189.5 Z" fill="#3a4350" stroke="#1f2933" stroke-width="1.25" stroke-linejoin="round"/>
+  <circle cx="133" cy="194" r="6.5" fill="#3a4350" stroke="#262c34" stroke-width="1.25"/>
+  <circle cx="147.5" cy="174" r="7" fill="#3a4350" stroke="#262c34" stroke-width="1.25"/>
+  <path d="M138,198 L153.5,178 L142,170 L127.5,190.5 Z" fill="#3a4350" stroke="#262c34" stroke-width="1.25" stroke-linejoin="round"/>
+  <circle cx="133" cy="194" r="5.75" fill="#3a4350"/>
+  <circle cx="147.5" cy="174" r="6.25" fill="#3a4350"/>
+  <circle cx="147.5" cy="174" r="7.5" fill="#3a4350" stroke="#262c34" stroke-width="1.25"/>
+  <circle cx="148" cy="146.5" r="8.5" fill="#3a4350" stroke="#262c34" stroke-width="1.25"/>
+  <path d="M155,174 L156.5,146.5 L139.5,146.5 L140,174 Z" fill="#3a4350" stroke="#262c34" stroke-width="1.25" stroke-linejoin="round"/>
+  <circle cx="147.5" cy="174" r="6.75" fill="#3a4350"/>
+  <circle cx="148" cy="146.5" r="7.75" fill="#3a4350"/>
+  <circle cx="147.5" cy="148.5" r="12" fill="#2f74b5" stroke="#1f4b76" stroke-width="1.25"/>
+  <circle cx="167" cy="108.5" r="13" fill="#2f74b5" stroke="#1f4b76" stroke-width="1.25"/>
+  <path d="M158,153.5 L179,114.5 L155.5,103 L136.5,143 Z" fill="#2f74b5" stroke="#1f4b76" stroke-width="1.25" stroke-linejoin="round"/>
+  <circle cx="147.5" cy="148.5" r="11.25" fill="#2f74b5"/>
+  <circle cx="167" cy="108.5" r="12.25" fill="#2f74b5"/>
+  <circle cx="178" cy="88" r="13" fill="#f3d2b3" stroke="#b98a5e" stroke-width="1.25"/>
+  <path d="M166.5,81 L172.5,70.5 Q181.5,67 186,72 Q197.5,75 191,89.5 Z" fill="#c92a2a" stroke="#8f1d1d" stroke-width="1.25" stroke-linejoin="round"/>
+  <circle cx="166" cy="112.5" r="6" fill="#2f74b5" stroke="#1f4b76" stroke-width="1.25"/>
+  <circle cx="166" cy="138" r="5.5" fill="#2f74b5" stroke="#1f4b76" stroke-width="1.25"/>
+  <path d="M160,112.5 L160.5,138 L171.5,138 L172,112.5 Z" fill="#2f74b5" stroke="#1f4b76" stroke-width="1.25" stroke-linejoin="round"/>
+  <circle cx="166" cy="112.5" r="5.25" fill="#2f74b5"/>
+  <circle cx="166" cy="138" r="4.75" fill="#2f74b5"/>
+  <circle cx="166" cy="138" r="5.5" fill="#2f74b5" stroke="#1f4b76" stroke-width="1.25"/>
+  <circle cx="169.5" cy="158.5" r="4.5" fill="#2f74b5" stroke="#1f4b76" stroke-width="1.25"/>
+  <path d="M160.5,139 L165,159 L174,157.5 L171.5,137 Z" fill="#2f74b5" stroke="#1f4b76" stroke-width="1.25" stroke-linejoin="round"/>
+  <circle cx="166" cy="138" r="4.75" fill="#2f74b5"/>
+  <circle cx="169.5" cy="158.5" r="3.75" fill="#2f74b5"/>
+  <circle cx="169.5" cy="160.5" r="5.5" fill="#3a4350" stroke="#1f2933" stroke-width="1"/>
+  <line x1="169.5" y1="160.5" x2="91" y2="192.5" stroke="#6c757d" stroke-width="3" stroke-linecap="round"/>
   <line x1="198.5" y1="131" x2="264.5" y2="154.5" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M252,157 L266,155.5 L256,145" fill="none" stroke="#1971c2" stroke-width="2.5" stroke-linejoin="round"/>
   <foreignObject x="270.5" y="144.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$\overline{v}$</div></foreignObject>

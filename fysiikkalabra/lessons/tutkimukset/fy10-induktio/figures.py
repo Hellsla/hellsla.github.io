@@ -87,15 +87,15 @@ def hero():
 
 
 def flux():
-    """The principle: a bar magnet moving towards a coil; its field lines pass through the turns, and the number of them
-    through the coil grows as the magnet comes closer. Velocity arrow blue; field lines grey."""
+    """The principle: a bar magnet moving towards a coil. Its field lines (green, with their direction, out of the red
+    pole) are traced from a two-pole model; the four drawn darker pass through the turns, the lighter ones miss the
+    coil, so the flux reads as "how many lines go through". The lines fade at the frame instead of being cut. Velocity
+    blue. The poles carry colours, no letters: N is the number of turns here."""
     f = Fig("fy10i-flux", 330, "Kaaviokuva. Vasemmalla on sauvamagneetti, joka liikkuu nopeudella v oikealle kohti käämiä. "
-            "Magneetin ympärillä on harmaita kenttäviivoja, joista osa kulkee käämin kierrosten läpi. Käämissä on N kierrosta, "
-            "ja sen päiden välille syntyy jännite U, jota mitataan.")
-    cx, cy = 150, 165
-    clip = 'clip-path="url(#fy10i-flux-clip)"'
-    f.defs_add('<clipPath id="fy10i-flux-clip"><rect x="0" y="40" width="600" height="250"/></clipPath>')
-    # a bar magnet as two opposite poles near its ends; field lines traced from the right pole (facing the coil)
+            "Magneetin punaisesta päästä lähtee vihreitä kenttäviivoja, joiden suunta on merkitty nuolenkärjin. Neljä "
+            "tummempaa kenttäviivaa kulkee käämin kierrosten läpi, vaaleammat kaartuvat käämin ohi takaisin magneetin "
+            "siniseen päähän. Käämissä on N kierrosta, ja sen päiden välille syntyvä jännite U mitataan jännitemittarilla.")
+    cx, cy = 150, 172
     pr, pl = (cx + 55, cy), (cx - 55, cy)
     def field(x, y):
         bx = by = 0.0
@@ -103,26 +103,56 @@ def flux():
             dx, dy = x - px, y - py; r3 = (dx * dx + dy * dy) ** 1.5
             bx += q * dx / r3; by += q * dy / r3
         return bx, by
-    for deg in (8, 20, 36, 56, 80, 110, 145):
+    x0, x1, ry, turns = 372, 482, 62, 9
+    step = (x1 - x0) / (turns - 1)
+    for k in range(turns):                                   # the back halves of the turns, behind the field lines
+        x = x0 + k * step
+        f.path(f"M{n(x)},{n(cy - ry)} A{n(ry * 0.16)},{n(ry)} 0 0 0 {n(x)},{n(cy + ry)}", stroke=METAL_EDGE, w=2)
+    for deg in (4, 9, 24, 42, 64, 92, 124):
         for side in (1, -1):
             th = math.radians(deg)
             x, y = pr[0] + 8 * math.cos(th), pr[1] - side * 8 * math.sin(th)
             pts = [(x, y)]
-            for _ in range(3000):
-                bx, by = field(x, y); m = math.hypot(bx, by)
-                x += 2 * bx / m; y += 2 * by / m
+            for _ in range(4000):
+                bx, by = field(x, y); mm = math.hypot(bx, by)
+                x += 2 * bx / mm; y += 2 * by / mm
                 pts.append((x, y))
-                if math.hypot(x - pl[0], y - pl[1]) < 8 or not (-80 < x < 680 and -60 < y < 390): break
-            f.path("M" + " L".join(f"{n(px)},{n(py)}" for px, py in pts), stroke=MUTED, w=1.6, extra=clip)
-    magnet(f, cx - 70, cy - 20, 140, 40)
-    coil_side(f, 360, 470, cy, 62, 9)
-    # leads to the meter
-    f.line(470, cy + 60, 470, 270, INK, 2); f.line(360, cy + 60, 360, 270, INK, 2)
-    f.line(360, 270, 395, 270, INK, 2); f.line(435, 270, 470, 270, INK, 2)
-    f.circle(415, 270, 20, WHITE, INK, 2); f.tex(415, 270, r"U", "middle")
-    f.arrow(110, 105, 205, 105, VELOCITY, 4, 16); f.tex(214, 101, r"\overline{v}", "start", VELOCITY)
-    f.tex(cx, 228, r"\text{magneetti}", "middle", MUTED, bg=True)
-    f.tex(415, 82, r"\text{käämi, } N \text{ kierrosta}", "middle", MUTED, bg=True)
+                if math.hypot(x - pl[0], y - pl[1]) < 8 or not (-20 < x < 620 and -20 < y < 350): break
+            through = any(abs(px - x0) < 1.5 and abs(py - cy) < ry - 4 for px, py in pts)
+            op = "" if through else ' stroke-opacity="0.45"'
+            f.path("M" + " L".join(f"{n(px)},{n(py)}" for px, py in pts), stroke=GOOD, w=2 if through else 1.6, extra=op.strip())
+            k = next((i for i, (px, py) in enumerate(pts) if px > 300), None) if through else \
+                next((i for i, (px, py) in enumerate(pts) if abs(py - cy) > 44 and px > pr[0] + 6), None)
+            if k and k + 3 < len(pts):
+                (ax, ay), (bx, by) = pts[k], pts[k + 3]; a = math.atan2(by - ay, bx - ax)
+                tip = (ax + 7 * math.cos(a), ay + 7 * math.sin(a))
+                l = (ax + 5 * math.cos(a + 2.4), ay + 5 * math.sin(a + 2.4)); r = (ax + 5 * math.cos(a - 2.4), ay + 5 * math.sin(a - 2.4))
+                f.add(f'<path d="M{n(tip[0])},{n(tip[1])} L{n(l[0])},{n(l[1])} L{n(r[0])},{n(r[1])} Z" fill="{GOOD}"'
+                      f'{"" if through else " fill-opacity=\"0.45\""}/>')
+    # the lines fade into the paper at the frame: they go on, the picture ends
+    f.defs_add('<linearGradient id="fy10i-fade-r" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/>'
+               '<stop offset="1" stop-color="#fff"/></linearGradient>'
+               '<linearGradient id="fy10i-fade-l" x1="1" y1="0" x2="0" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/>'
+               '<stop offset="1" stop-color="#fff"/></linearGradient>'
+               '<linearGradient id="fy10i-fade-t" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/>'
+               '<stop offset="1" stop-color="#fff"/></linearGradient>'
+               '<linearGradient id="fy10i-fade-b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/>'
+               '<stop offset="1" stop-color="#fff"/></linearGradient>')
+    f.rect(540, 0, 60, 330, "url(#fy10i-fade-r)"); f.rect(0, 0, 36, 330, "url(#fy10i-fade-l)")
+    f.rect(0, 0, 600, 56, "url(#fy10i-fade-t)"); f.rect(0, 290, 600, 40, "url(#fy10i-fade-b)")
+    # the magnet: the pole the lines leave is red, the other blue (the course's magnet colours)
+    f.rect(cx - 70, cy - 20, 70, 40, "#d0e6fb", INK, 2.5, rx=3); f.rect(cx, cy - 20, 70, 40, "#f2a69c", INK, 2.5, rx=3)
+    for k in range(turns):                                   # the front halves of the turns, over the field lines
+        x = x0 + k * step
+        f.path(f"M{n(x)},{n(cy - ry)} A{n(ry * 0.16)},{n(ry)} 0 0 1 {n(x)},{n(cy + ry)}", stroke=COPPER, w=3)
+    # leads to the voltmeter
+    f.line(x0, cy + ry - 2, x0, 292, INK, 2); f.line(x1, cy + ry - 2, x1, 292, INK, 2)
+    f.line(x0, 292, 409, 292, INK, 2); f.line(445, 292, x1, 292, INK, 2)
+    f.circle(427, 292, 18, WHITE, INK, 2); f.tex(427, 292, r"\text{V}", "middle")
+    f.tex(x1 + 12, 292, r"U", "start")
+    f.arrow(104, 116, 196, 116, VELOCITY, 4, 16); f.tex(206, 112, r"\overline{v}", "start", VELOCITY)
+    f.tex(cx, 222, r"\text{magneetti}", "middle", MUTED, bg=True)
+    f.tex(427, 84, r"\text{käämi, } N \text{ kierrosta}", "middle", MUTED, bg=True)
     return f.svg()
 
 

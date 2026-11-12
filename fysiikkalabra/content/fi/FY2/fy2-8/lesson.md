@@ -7,18 +7,6 @@
   <rect x="0" y="0" width="600" height="600" fill="url(#fy28h-grey)"/>
   <rect x="600" y="0" width="600" height="600" fill="url(#fy28h-sky)"/>
   <circle cx="860" cy="90" r="70.5" fill="#ffffff" fill-opacity="0.5"/>
-  <path d="M911,111 L934,110 L914.5,97.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M893.5,133.5 L914,144 L903.5,123.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M867.5,144.5 L880,164 L881,141 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M839,141 L840,164 L852.5,144.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M816.5,123.5 L806,144 L826.5,133.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M805.5,97.5 L786,110 L809,111 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M809,69 L786,70 L805.5,82.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M826.5,46.5 L806,36 L816.5,56.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M852.5,35.5 L840,16 L839,39 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M881,39 L880,16 L867.5,35.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M903.5,56.5 L914,36 L893.5,46.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M914.5,82.5 L934,70 L911,69 Z" fill="#ffc078" stroke-linejoin="round"/>
   <circle cx="860" cy="90" r="44" fill="url(#fy28h-sun)"/>
   <path d="M1006,82 Q1005,61.5 1029,64 Q1038.5,42.5 1062.5,49.5 Q1084,37.5 1096,60.5 Q1117.5,63 1115,82 Z" fill="#ffffff" stroke-linejoin="round"/>
   <path d="M0,330 Q100,294.5 200,331.5 Q300,318 400,327 Q500,311.5 600,328.5 Q700,296 800,331.5 Q900,293 1000,332 Q1100,288.5 1200,333 Q1300,302 1400,330 V600 H0 Z" fill="#c4ccd4" stroke-linejoin="round"/>

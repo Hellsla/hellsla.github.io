@@ -49,14 +49,20 @@ def ids(lang=i18n.SOURCE):
 def load(gid, lang=i18n.SOURCE): return json.loads((folder(gid, lang) / "guide.json").read_text())
 
 
-def content_hash(gid, lang=i18n.SOURCE):
+def content_hash(gid, lang=i18n.SOURCE, read=None):
+    """The hash the reviews are for. read(relpath, binary) gives the guide's texts and figures.py as a commit had them
+    (reviews.Commit.read, for a carry over a teacher-approved figure; the screenshots are read from the working tree,
+    so a commit whose screenshots differed never matches); default the working tree."""
     from reviews import normalized
+    def get(path, binary=False):
+        if read: return read(path.relative_to(ROOT).as_posix(), binary)
+        return (path.read_bytes() if binary else path.read_text()) if path.is_file() else None
     h = hashlib.sha256()
     for name in TEXTS:
-        p = folder(gid, lang) / name
-        if p.is_file(): h.update(name.encode() + b"\0" + normalized(p.read_text(), name).encode() + b"\0")
-    p = code_folder(gid) / "figures.py"
-    if p.is_file(): h.update(b"figures.py\0" + p.read_bytes() + b"\0")
+        t = get(folder(gid, lang) / name)
+        if t is not None: h.update(name.encode() + b"\0" + normalized(t, name).encode() + b"\0")
+    b = get(code_folder(gid) / "figures.py", True)
+    if b is not None: h.update(b"figures.py\0" + b + b"\0")
     for ref in pic_refs(gid, lang):                          # a changed screenshot needs a new review like changed text
         src = courses.pic_source(ref)
         h.update(ref.encode() + b"\0" + (src.read_bytes() if src.is_file() else b"missing") + b"\0")

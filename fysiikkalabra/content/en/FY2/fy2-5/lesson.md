@@ -113,26 +113,49 @@
 ## Key idea
 In this chapter a fuel means a chemical fuel: a substance whose chemical energy is released by burning it. The uranium in a nuclear power plant is also called a fuel, but nuclear fuel does not burn: its energy is nuclear energy (chapter *Forms of energy and conservation of energy*). Chemical energy is energy stored in the structure of the atoms and molecules of a substance. When a fuel burns, the structure changes and energy is released as heat and light. Energy does not appear out of nothing: chemical energy is transformed into another form. The same is true of food: your body slowly "burns" food and releases energy from it.
 
-<svg data-fig="energia" viewBox="0 0 600 330" role="img" aria-label="Schematic illustration, not to scale: a pile of firewood contains chemical energy. When it burns, the wood turns into a flame in which the chemical energy is released as heat and light. The energy released is found by multiplying the mass of the fuel by the heat of combustion." style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy25-heat" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient><linearGradient id="fy25-heatv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
-  <rect x="28" y="188" width="150" height="40" rx="20" fill="#d9b26a" stroke="#1f2933" stroke-width="2.5"/>
-  <ellipse cx="48" cy="208" rx="16" ry="16" fill="#f1dfb5" stroke="#a97a35" stroke-width="2"/>
-  <circle cx="48" cy="208" r="6" fill="none" stroke="#a97a35" stroke-width="1.5"/>
-  <rect x="28" y="144" width="150" height="40" rx="20" fill="#d9b26a" stroke="#1f2933" stroke-width="2.5"/>
-  <ellipse cx="48" cy="164" rx="16" ry="16" fill="#f1dfb5" stroke="#a97a35" stroke-width="2"/>
-  <circle cx="48" cy="164" r="6" fill="none" stroke="#a97a35" stroke-width="1.5"/>
-  <rect x="28" y="100" width="150" height="40" rx="20" fill="#d9b26a" stroke="#1f2933" stroke-width="2.5"/>
-  <ellipse cx="48" cy="120" rx="16" ry="16" fill="#f1dfb5" stroke="#a97a35" stroke-width="2"/>
-  <circle cx="48" cy="120" r="6" fill="none" stroke="#a97a35" stroke-width="1.5"/>
-  <foreignObject x="8" y="247.5" width="190" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{chemical}$</div></foreignObject>
-  <foreignObject x="8" y="277.5" width="190" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{energy}$</div></foreignObject>
-  <path d="M214,201 L338,201 L338,213 L372,190 L338,167 L338,179 L214,179 Z" fill="url(#fy25-heat)" stroke-linejoin="round"/>
-  <foreignObject x="208" y="121.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{burning}$</div></foreignObject>
-  <foreignObject x="238" y="229.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$E = Hm$</div></foreignObject>
-  <path d="M484,102 C497.5,141 529,173.5 529,206 C529,238 439,238 439,206 C439,173.5 475,147.5 484,102 Z" fill="#e8590c" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M484,167 C493,190 506.5,203 506.5,222 C506.5,232 461.5,232 461.5,222 C461.5,203 475,190 484,167 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <rect x="420" y="238" width="128" height="10" rx="3" fill="#1f2933"/>
-  <foreignObject x="384" y="261.5" width="200" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{heat and light}$</div></foreignObject>
+<svg data-fig="energia" viewBox="0 0 600 330" role="img" aria-label="Comparison, energies to scale: a kilogram of air-dry firewood and a kilogram of petrol. Beside each, the energy released in burning is a horizontal bar on the same scale: 15 megajoules from the firewood, 43 megajoules from the petrol. The same mass, a different energy: the difference is the fuel&#x27;s heating value. The energy released is the mass of the fuel times its heating value." style="max-width:100%;font-size:24px">
+  <foreignObject x="20" y="11.5" width="180" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{the same mass}$</div></foreignObject>
+  <foreignObject x="286" y="11.5" width="330" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{energy released in burning}$</div></foreignObject>
+  <line x1="286" y1="50" x2="286" y2="262" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="266" y="263.5" width="40" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$0$</div></foreignObject>
+  <line x1="350" y1="50" x2="350" y2="262" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="330" y="263.5" width="40" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$10$</div></foreignObject>
+  <line x1="414" y1="50" x2="414" y2="262" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="394" y="263.5" width="40" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$20$</div></foreignObject>
+  <line x1="478" y1="50" x2="478" y2="262" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="458" y="263.5" width="40" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$30$</div></foreignObject>
+  <line x1="542" y1="50" x2="542" y2="262" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="522" y="263.5" width="40" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$40$</div></foreignObject>
+  <foreignObject x="471" y="291.5" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$E\ (\text{MJ})$</div></foreignObject>
+  <ellipse cx="32" cy="118" rx="6" ry="14" fill="#e9c98a" stroke="#1f2933" stroke-width="1.75"/>
+  <rect x="32" y="104" width="44" height="28" fill="#ffffff" stroke="#1f2933" stroke-width="1.75"/>
+  <rect x="40" y="104" width="9" height="3" fill="#1f2933"/>
+  <rect x="58" y="118" width="9" height="3" fill="#1f2933"/>
+  <ellipse cx="76" cy="118" rx="6" ry="14" fill="#f1dfb5" stroke="#1f2933" stroke-width="1.75"/>
+  <ellipse cx="80" cy="118" rx="6" ry="14" fill="#e9c98a" stroke="#1f2933" stroke-width="1.75"/>
+  <rect x="80" y="104" width="44" height="28" fill="#ffffff" stroke="#1f2933" stroke-width="1.75"/>
+  <rect x="88" y="104" width="9" height="3" fill="#1f2933"/>
+  <rect x="106" y="118" width="9" height="3" fill="#1f2933"/>
+  <ellipse cx="124" cy="118" rx="6" ry="14" fill="#f1dfb5" stroke="#1f2933" stroke-width="1.75"/>
+  <ellipse cx="56" cy="88" rx="6" ry="14" fill="#e9c98a" stroke="#1f2933" stroke-width="1.75"/>
+  <rect x="56" y="74" width="44" height="28" fill="#ffffff" stroke="#1f2933" stroke-width="1.75"/>
+  <rect x="64" y="74" width="9" height="3" fill="#1f2933"/>
+  <rect x="82" y="88" width="9" height="3" fill="#1f2933"/>
+  <ellipse cx="100" cy="88" rx="6" ry="14" fill="#f1dfb5" stroke="#1f2933" stroke-width="1.75"/>
+  <foreignObject x="138" y="79.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{firewood}$</div></foreignObject>
+  <foreignObject x="138" y="109.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$m = 1\,\text{kg}$</div></foreignObject>
+  <rect x="286" y="86" width="96" height="44" rx="3" fill="#ffc078" stroke="#e8590c" stroke-width="2"/>
+  <foreignObject x="394" y="93.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$15\,\text{MJ}$</div></foreignObject>
+  <path d="M44,238 V190 L58,176 H112 V238 Z" fill="#f2a69c" stroke="#1f2933" stroke-width="1.75" stroke-linejoin="round"/>
+  <rect x="74" y="179" width="28" height="8" rx="3" fill="#1f2933"/>
+  <path d="M49,190 L37,168 L45,164 L56,184" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M56,200 L100,228 M100,200 L56,228" fill="none" stroke="#c92a2a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+  <foreignObject x="138" y="179.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{petrol}$</div></foreignObject>
+  <foreignObject x="138" y="209.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$m = 1\,\text{kg}$</div></foreignObject>
+  <rect x="286" y="186" width="275" height="44" rx="3" fill="#ffc078" stroke="#e8590c" stroke-width="2"/>
+  <foreignObject x="449" y="193.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#e8590c">$43\,\text{MJ}$</div></foreignObject>
+  <line x1="286" y1="48" x2="286" y2="264" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="41" y="291.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$E = Hm$</div></foreignObject>
 </svg>
 
 Different fuels contain different amounts of chemical energy for their mass. The quantity that tells you this is the heat of combustion $H$. It is the energy released when one kilogram of fuel burns, and its unit is, for example, $\text{MJ/kg}$. The heat of combustion of petrol is about $43\,\text{MJ/kg}$, so about $43\,\text{MJ}$ is released from one kilogram (about $43 \cdot 10^{6}\,\text{J}$). The heat of combustion of air-dried firewood (moisture $20\text{–}25\,\%$) is only about $15\,\text{MJ/kg}$, so to get the same energy you need almost three times the mass of wood.

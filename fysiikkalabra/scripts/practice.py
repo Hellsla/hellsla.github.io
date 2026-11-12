@@ -129,18 +129,23 @@ def files(code, lang=i18n.SOURCE):
     return [(n, folder(code, lang) / n) for n in TEXTS] + [(n, code_folder(code) / n) for n in CODE]
 
 
-def content_hash(code, lang=i18n.SOURCE):
+def content_hash(code, lang=i18n.SOURCE, read=None):
+    """The hash the reviews are for. read(relpath) gives a file as a commit had it (reviews.Commit.read, for a carry
+    over a teacher-approved figure); default the working tree."""
     from reviews import normalized
     import figcat
+    read = read or (lambda rel: (ROOT / rel).read_text() if (ROOT / rel).is_file() else None)
+    rel = lambda path: path.relative_to(ROOT).as_posix()
     h = hashlib.sha256()
     for name, path in files(code, lang):
-        if not path.is_file(): continue
-        text = figcat.without_reuse(path.read_text()) if name == "figures.py" else path.read_text()   # the REUSE note draws nothing
+        text = read(rel(path))
+        if text is None: continue
+        text = figcat.without_reuse(text) if name == "figures.py" else text   # the REUSE note draws nothing
         h.update(name.encode() + b"\0" + normalized(text, name).encode() + b"\0")
-    tasks = folder(code, lang) / "tasks.json"           # a figure of another chapter that a task refers to: the code that draws it
-    for fid in figcat.refs_in(tasks.read_text() if tasks.is_file() else ""):
-        if figcat.code_rel(fid) == (code_folder(code) / "figures.py").relative_to(ROOT).as_posix(): continue   # already in figures.py above
-        sl = figcat.slice_of(fid, lambda rel: (ROOT / rel).read_text() if (ROOT / rel).is_file() else None)
+    tasks = read(rel(folder(code, lang) / "tasks.json"))   # a figure of another chapter that a task refers to: the code that draws it
+    for fid in figcat.refs_in(tasks or ""):
+        if figcat.code_rel(fid) == rel(code_folder(code) / "figures.py"): continue   # already in figures.py above
+        sl = figcat.slice_of(fid, read)
         if sl: h.update(f"figure:{fid}".encode() + b"\0" + sl.encode() + b"\0")
     return h.hexdigest()[:16]
 

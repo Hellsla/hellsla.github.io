@@ -398,7 +398,7 @@ The graph shows the five points and the line that a spreadsheet fits through the
   <line x1="83" y1="52" x2="90" y2="52" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <foreignObject x="26" y="35" width="52" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:28px">$2.5$</div></foreignObject>
   <foreignObject x="382" y="301" width="158" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:28px">$f\ (10^{14}\,\text{Hz})$</div></foreignObject>
-  <foreignObject x="80" y="-7" width="85" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:28px">$U_\text{s}\ (\text{V})$</div></foreignObject>
+  <foreignObject x="104" y="15" width="85" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:28px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$U_\text{s}\ (\text{V})$</span></div></foreignObject>
   <polyline points="103,283.5 343.5,127.5" fill="none" stroke="#1971c2" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
   <circle cx="142" cy="259.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <circle cx="160" cy="244.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>

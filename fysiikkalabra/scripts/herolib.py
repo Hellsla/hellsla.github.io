@@ -39,7 +39,9 @@ def space(f, seed=1, count=70):
         f.circle(rnd(k, seed) * 1200, rnd(k + 500, seed) * 600, 1 + 1.6 * rnd(k + 900, seed), WHITE)
 
 
-def sun(f, pre, cx, cy, r=58, rays=True):
+def sun(f, pre, cx, cy, r=58, rays=False):
+    """The Sun: a plain disc in a soft halo, without clip-art rays (the house style, FY1; teacher 2026-11-11 for every
+    course, illustration audit group B). rays=True draws the old ray wreath."""
     f.add(f'<circle cx="{n(cx)}" cy="{n(cy)}" r="{n(r * 1.6)}" fill="{WHITE}" fill-opacity="0.5"/>')
     if rays:
         for k in range(12):

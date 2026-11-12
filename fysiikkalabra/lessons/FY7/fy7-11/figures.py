@@ -8,6 +8,9 @@ import math
 from figlib import (Fig, Axes, fi, INK, MUTED, WHITE, RULE, RULE_LIGHT, GLASS, WATER_LIGHT, WATER, SAND_LIGHT, SAND,
                     HEAT_LIGHT, HEAT, HOT, COLD, COLD_LIGHT, GOOD, GOOD_LIGHT, IRON, ALUMINIUM, PAPER, ICE, SAND_DARK, n)
 import herolib as H
+from figstyle import limb
+
+SKIN = "#f3d2b3"
 
 RAY = "#e64980"
 RED, ORANGE, YELLOW, GREEN, BLUE, VIOLET = HOT, HEAT, "#f59f00", GOOD, COLD, "#7048e8"
@@ -194,61 +197,85 @@ def drop():
 
 # --- Ydinajatus: the observer, the Sun behind, two drops ---
 def observer():
-    f = Fig("fy711-observer", 372, "Periaatekuva sivulta, kulmat eivät ole mittakaavassa: tarkkailija seisoo oikealla "
-            "selkä aurinkoon päin, ja auringonsäteet tulevat oikealta ylhäältä vinosti alas. Silmästä lähtee "
-            "katkoviiva auringonsäteiden suuntaan alas vasemmalle kohti vastapistettä, joka on tarkkailijan pään "
-            "varjon kohdalla horisontin alapuolella. Ylempi pisara on 42 asteen kulmassa tästä suunnasta, ja siitä "
-            "silmään tulee punainen valo; sen violetti valo kulkee silmän yläpuolelta ohi. Alempi pisara on noin 40,6 "
-            "asteen kulmassa, ja siitä silmään tulee violetti valo; sen punainen valo osuu maahan tarkkailijan eteen.")
+    """Why red is on the outside: the viewer from the side, the Sun behind. Redrawn (teacher 2026-11-11, illustration
+    audit): a drawn viewer instead of a ball-headed figure, the shower as a band of rain with the two drops in it, the
+    sunlight drawn all the way to each drop, and every label in a space of its own. The two angles are measured at the
+    eye from the antisolar direction; the lower one is drawn at 33° so that the two drops can be told apart."""
+    f = Fig("fy711-observer", 380, "Periaatekuva sivulta, kulmat eivät ole mittakaavassa: katsoja seisoo oikealla selkä "
+            "aurinkoon päin, ja auringonsäteet tulevat oikealta ylhäältä vinosti alas vasemmalla olevaan sadekuuroon. Silmästä "
+            "lähtee katkoviiva auringonsäteiden suuntaan alas vasemmalle kohti vastapistettä, joka on katsojan pään varjon "
+            "kohdalla horisontin alapuolella. Ylempi pisara on 42 asteen kulmassa tästä suunnasta, ja siitä silmään tulee "
+            "punainen valo; sen violetti valo kulkee silmän yläpuolelta ohi. Alempi pisara on noin 40,6 asteen kulmassa, ja "
+            "siitä silmään tulee violetti valo; sen punainen valo osuu maahan katsojan eteen.")
     ground = 300
-    f.rect(12, ground, 576, 46, SAND_LIGHT)
-    f.line(12, ground, 588, ground, INK, 2.5)
-    eye = (500, 232)
-    # the observer, facing left: head, body, legs
-    f.circle(eye[0] + 8, eye[1], 15, SAND, INK, 2)
-    f.path(f"M{eye[0] - 6},{eye[1] + 17} h28 l4,40 h-36 Z", COLD, INK, 2)
-    f.path(f"M{eye[0] + 2},{eye[1] + 57} V{ground} M{eye[0] + 16},{eye[1] + 57} V{ground}", stroke=INK, w=4)
-    # sunlight from the upper right, 20° above the horizon (SVG angle 160°: to the left and down)
-    sun = 160
+    eye = (470, 214)
+    sun = 160                                                  # sunlight 20° above the horizon: to the left and down
     ds = (math.cos(math.radians(sun)), math.sin(math.radians(sun)))
-    for x, y in ((582, 34), (582, 92)):
-        f.line(x, y, x + ds[0] * 84, y + ds[1] * 84, HEAT, 3)
-        arrowhead(f, (x + ds[0] * 92, y + ds[1] * 92), ds, HEAT, 14)
-    f.tex(588, 140, r"\text{auringonvalo}", "end")
-    # the antisolar direction from the eye, dashed, down to the shadow of the head below the horizon
-    t = (ground + 20 - eye[1]) / ds[1]
-    f.line(eye[0], eye[1], eye[0] + ds[0] * t, eye[1] + ds[1] * t, MUTED, 2, "7 6")
-    # two drops drawn 42° and 33° above that direction (the real difference, 1,7°, is too small to see)
+    # the shower: a soft band of rain under a cloud, behind everything else
+    f.defs_add(f'<linearGradient id="fy711o-rain" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{COLD_LIGHT}" stop-opacity="0"/>'
+               f'<stop offset="0.5" stop-color="{COLD_LIGHT}" stop-opacity="0.8"/><stop offset="1" stop-color="{COLD_LIGHT}" stop-opacity="0"/></linearGradient>')
+    f.rect(92, 40, 200, ground - 40, "url(#fy711o-rain)")
+    for k in range(26):
+        x = 108 + (k * 53) % 170; y = 64 + (k * 37) % 214
+        f.line(x, y, x - 4, y + 14, WATER, 1.5, cap="round")
+    H.cloud(f, 190, 40, 0.62, ALUMINIUM)
+    f.rect(12, ground, 576, 46, SAND_LIGHT); f.line(12, ground, 588, ground, INK, 2)
+    # the two drops, 42° and (drawn) 33° above the antisolar direction, at the same distance from the eye
     drops = []
-    for deg, r_arc in ((42, 168), (33, 118)):
-        a = sun + deg
-        u = (math.cos(math.radians(a)), math.sin(math.radians(a)))
-        drops.append(((eye[0] + u[0] * 330, eye[1] + u[1] * 330), a, r_arc))
+    for deg, r_arc in ((42, 204), (33, 116)):
+        aa = sun + deg
+        u = (math.cos(math.radians(aa)), math.sin(math.radians(aa)))
+        drops.append(((eye[0] + u[0] * 292, eye[1] + u[1] * 292), aa, r_arc))
     (Du, au, ru), (Dl, al, rl) = drops
+    # sunlight from behind the viewer to each drop
+    for D in (Du, Dl):
+        L = (D[1] - 14) / ds[1]
+        st = (D[0] - ds[0] * L, 14)
+        f.line(st[0], st[1], D[0] - ds[0] * 15, D[1] - ds[1] * 15, HEAT, 3)
+        arrowhead(f, (st[0] + ds[0] * 70, st[1] + ds[1] * 70), ds, HEAT, 14)
+    f.tex(588, 104, r"\text{auringonvalo}", "end", HEAT)
+    # the antisolar direction from the eye, dashed, down to the shadow of the head below the horizon
+    t = (ground + 22 - eye[1]) / ds[1]
+    ap = (eye[0] + ds[0] * t, eye[1] + ds[1] * t)
+    f.line(eye[0], eye[1], ap[0], ap[1], MUTED, 2, "7 6")
+    f.circle(ap[0], ap[1], 4.5, WHITE, MUTED, 2)
+    # the other colour of each drop misses the eye (thin, dashed): violet of the upper drop above, red of the lower to the ground
+    for D, col, rot, length in ((Du, VIOLET, -9, 292), (Dl, RED, 17, None)):
+        L = math.hypot(eye[0] - D[0], eye[1] - D[1]); u = ((eye[0] - D[0]) / L, (eye[1] - D[1]) / L)
+        c, si = math.cos(math.radians(rot)), math.sin(math.radians(rot))
+        v = (u[0] * c - u[1] * si, u[0] * si + u[1] * c)
+        tt = length or (ground - D[1]) / v[1]
+        f.path(f"M{n(D[0] + v[0] * 15)},{n(D[1] + v[1] * 15)} L{n(D[0] + v[0] * tt)},{n(D[1] + v[1] * tt)}", stroke=col, w=1.75,
+               extra='stroke-dasharray="6 6" stroke-opacity="0.6"')
     # the light that reaches the eye: red from the upper drop, violet from the lower drop
     for D, col in ((Du, RED), (Dl, VIOLET)):
         L = math.hypot(eye[0] - D[0], eye[1] - D[1]); u = ((eye[0] - D[0]) / L, (eye[1] - D[1]) / L)
-        tip = (eye[0] - u[0] * 22, eye[1] - u[1] * 22)
-        f.line(D[0] + u[0] * 14, D[1] + u[1] * 14, tip[0], tip[1], col, 3)
-        arrowhead(f, tip, u, col, 14)
-    # the other colour of each drop misses the eye: violet from the upper drop passes above, red from the lower hits the ground
-    for D, col, rot, length in ((Du, VIOLET, -9, 300), (Dl, RED, 9, None)):
-        L = math.hypot(eye[0] - D[0], eye[1] - D[1]); u = ((eye[0] - D[0]) / L, (eye[1] - D[1]) / L)
-        c, s = math.cos(math.radians(rot)), math.sin(math.radians(rot))
-        v = (u[0] * c - u[1] * s, u[0] * s + u[1] * c)
-        tt = length or (ground - D[1]) / v[1]
-        f.line(D[0] + v[0] * 14, D[1] + v[1] * 14, D[0] + v[0] * tt, D[1] + v[1] * tt, col, 2, "8 6")
-    for D, a, r_arc in drops:
-        f.circle(D[0], D[1], 13, WATER_LIGHT, WATER, 2)
-    # the angles at the eye, from the antisolar direction up to each drop
+        tip = (eye[0] - u[0] * 6, eye[1] - u[1] * 6)
+        f.line(D[0] + u[0] * 15, D[1] + u[1] * 15, tip[0], tip[1], col, 3)
+        arrowhead(f, (D[0] + u[0] * 150, D[1] + u[1] * 150), u, col, 14)
+    for D, aa, r_arc in drops:
+        f.circle(D[0], D[1], 14, WATER_LIGHT, WATER, 2); f.path(f"M{n(D[0] - 7)},{n(D[1] - 3)} q2,-6 8,-7", stroke=WHITE, w=2.5, extra='stroke-linecap="round"')
+    # the viewer from the side, facing the shower: shaped limbs in the house style
+    hx, hy = eye[0] + 12, eye[1] + 1
+    for fx in (hx - 3, hx + 6):
+        limb(f, (fx, hy + 46), (fx + 1, ground - 5), 12, 9, "#3a4350", sw=1.25)
+        f.rect(fx - 9, ground - 7, 15, 7, INK, None, 0, 3)
+    limb(f, (hx + 1, hy + 20), (hx + 2, hy + 48), 23, 21, COLD, sw=1.25)
+    limb(f, (hx, hy + 22), (hx - 4, hy + 50), 9, 8, COLD, sw=1.25); f.circle(hx - 4, hy + 53, 4.5, SKIN, "#b98a5e", 1)
+    f.rect(hx - 3, hy + 9, 8, 8, SKIN)
+    f.circle(hx, hy, 13, SKIN, "#b98a5e", 1.25)
+    f.path(f"M{n(hx - 7)},{n(hy - 11)} Q{n(hx + 4)},{n(hy - 19)} {n(hx + 13)},{n(hy - 6)} Q{n(hx + 16)},{n(hy + 6)} {n(hx + 9)},{n(hy + 10)} "
+           f"Q{n(hx + 7)},{n(hy - 4)} {n(hx - 7)},{n(hy - 11)} Z", "#3a4350")                                   # hair, at the back of the head
+    # the angles at the eye, from the antisolar direction up to each drop; each label between or outside the arcs
     arc(f, eye, ru, sun, au, RED, 2)
     arc(f, eye, rl, sun, al, VIOLET, 2)
-    mu, ml = math.radians(sun + 21), math.radians(sun + 16.5)
-    f.tex(eye[0] + (ru + 30) * math.cos(mu), eye[1] + (ru + 30) * math.sin(mu), r"42^\circ", "middle", RED)
-    f.tex(eye[0] + (rl - 40) * math.cos(ml), eye[1] + (rl - 40) * math.sin(ml) - 4, r"40{,}6^\circ", "middle", VIOLET)
-    f.tex(Du[0] + 22, Du[1] - 4, r"\text{punainen}", "start", RED)
-    f.tex(Dl[0] - 20, Dl[1] + 2, r"\text{violetti}", "end", VIOLET)
-    f.tex(eye[0] + ds[0] * t - 14, ground + 26, r"\text{vastapiste}", "end")
+    mu, ml = math.radians(sun + 12), math.radians(sun + 11)
+    f.tex(eye[0] + (ru + 34) * math.cos(mu), eye[1] + (ru + 34) * math.sin(mu), r"42^\circ", "middle", RED, bg=True)
+    f.tex(eye[0] + (rl + 40) * math.cos(ml), eye[1] + (rl + 40) * math.sin(ml), r"40{,}6^\circ", "middle", VIOLET, bg=True)
+    f.tex(Du[0] - 22, Du[1] - 6, r"\text{punainen}", "end", RED, bg=True)
+    f.tex(Dl[0] - 22, Dl[1] + 8, r"\text{violetti}", "end", VIOLET, bg=True)
+    f.tex(ap[0] + 14, ground + 62, r"\text{vastapiste}", "start", MUTED)
+    f.line(ap[0] + 4, ap[1] + 5, ap[0] + 16, ground + 50, MUTED, 1.25)
     return f.svg()
 
 

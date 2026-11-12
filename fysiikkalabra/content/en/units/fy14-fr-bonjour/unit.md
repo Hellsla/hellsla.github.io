@@ -6,18 +6,6 @@
   <defs><linearGradient id="frb-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><radialGradient id="frb-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></radialGradient><linearGradient id="frb-glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfe4f5"/><stop offset="1" stop-color="#7fb0d8"/></linearGradient><linearGradient id="frb-door" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a7c8e6"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><linearGradient id="frb-square" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#e9c98a"/></linearGradient></defs>
   <rect x="0" y="0" width="1200" height="600" fill="url(#frb-sky)"/>
   <circle cx="140" cy="96" r="80" fill="#ffffff" fill-opacity="0.5"/>
-  <path d="M198,119 L224,118.5 L201.5,105.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M179,145 L201.5,157.5 L189,135 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M149.5,157.5 L162.5,180 L163,154 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M117,154 L117.5,180 L130.5,157.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M91,135 L78.5,157.5 L101,145 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M78.5,105.5 L56,118.5 L82,119 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M82,73 L56,73.5 L78.5,86.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M101,47 L78.5,34.5 L91,57 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M130.5,34.5 L117.5,12 L117,38 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M163,38 L162.5,12 L149.5,34.5 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M189,57 L201.5,34.5 L179,47 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M201.5,86.5 L224,73.5 L198,73 Z" fill="#ffc078" stroke-linejoin="round"/>
   <circle cx="140" cy="96" r="50" fill="url(#frb-sun)"/>
   <path d="M366,82 Q365,61.5 389,64 Q398.5,42.5 422.5,49.5 Q444,37.5 456,60.5 Q477.5,63 475,82 Z" fill="#ffffff" stroke-linejoin="round"/>
   <path d="M0,286 Q100,258 200,283.5 Q300,229.5 400,289 Q500,243 600,286.5 Q700,266 800,281.5 Q900,262.5 1000,282.5 Q1100,255.5 1200,284 Q1300,223 1400,290.5 V600 H0 Z" fill="#e9e2cf" stroke-linejoin="round"/>
