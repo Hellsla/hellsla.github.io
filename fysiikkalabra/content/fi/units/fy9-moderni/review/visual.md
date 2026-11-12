@@ -1,11 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 96879e786dd25506
-Delta review (Johda itse round 2, 2026-11-12) of the version passed at 642fe5007889fe0b.
+CONTENT-HASH: b657e7155ea191a7
 
-## Blocking
-None.
+Delta review (figure label moved, 2026-11-12) of the version passed at 642fe5007889fe0b.
 
-## Polish
-None.
-
-## Checked: formula table with the new Lisätieto row (italic name, H = Ḣt) at 390 and 1280 px; the row is aligned with the others, no overflow; sentence beside it is clear.
+- Figure `pallo` opened at 390 and 1280 px: the label "pallon pinta" / "sphere surface" now stands left of the outer arc's upper end; whole text visible, no overlap with arcs, rays or labels. Nothing else changed.
