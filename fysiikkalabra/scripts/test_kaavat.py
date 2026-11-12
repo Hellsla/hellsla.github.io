@@ -76,6 +76,15 @@ ok(kaavat.apply_symbols("fy9-energia", "fi", "inquiry.json", '"$\\\\eta = E_\\\\
 ok(kaavat.apply_symbols("fy9-tasavirta", None, "figures.py", "$l$ johtimen pituus") == "$l$ johtimen pituus", "figures.py takes only the replacements of every language")
 ok(all(old not in new for k in {r["_key"] for r in kaavat.table()} for l in [None, *kaavat.LANGS] for old, new in kaavat.symbol_rows(k, l)),
    "no MAFY replacement keeps its old text inside the new one (kaavat.py symbols can run twice)")
+J = "```johda\nJohda virta $I$.\nToinen rivi.\n---\nKirchhoffin 2. laki:\n\n$$E - RI = 0$$\n\nRatkaistaan $I$.\n```"
+q, paras = kaavat.johda_parts(J[9:-3])
+ok(q == "Johda virta $I$. Toinen rivi." and paras == ["Kirchhoffin 2. laki:", "$$E - RI = 0$$", "Ratkaistaan $I$."], "```johda: the question before ---, the derivation in paragraphs")
+h = kaavat.johda_html("A\n\n" + J + "\n\nB", "Johda itse", "Näytä johto")
+ok('<div class="johda"><p class="johda-q"><strong>Johda itse.</strong> Johda virta $I$. Toinen rivi.</p>' in h and '<details class="solution johda-sol"><summary>Näytä johto</summary>' in h
+   and '<p>Kirchhoffin 2. laki:</p>$$E - RI = 0$$<p>Ratkaistaan $I$.</p>' in h, "```johda HTML: the question in view, the derivation behind a closed button")
+derived = [(f.relative_to(kaavat.ROOT).as_posix(), t) for l in kaavat.LANGS for f in sorted((kaavat.ROOT / "content" / l / "units").glob("fy9-*/unit.md"))
+           for t in ("U = E - R_\\text{s} I", "I = \\frac{E}{R + R_\\text{s}}") if t in kaavat.JOHDA.sub("", f.read_text(encoding="utf-8"))]
+ok(not derived, "FY9: a result derived in a Johda itse task is not given as a formula elsewhere in the text" + (f": {derived[:3]}" if derived else ""))
 bare = [(f.relative_to(kaavat.ROOT).as_posix(), kaavat.rows(m.group(1))[0][1])
         for l in kaavat.LANGS for f in sorted((kaavat.ROOT / "content" / l).glob("**/*.md"))
         for m in kaavat.FENCE.finditer(f.read_text(encoding="utf-8")) if not any(n for n, _ in kaavat.rows(m.group(1)))]
