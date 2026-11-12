@@ -423,7 +423,6 @@
     "ra_fallback": "The voice could not be loaded, so the browser reads with the device's own voice.",
     "stage_done": "done",
     "toc_stage": "Stage",
-    "next_stage": "Next",
     "ex_core_done": "Core tasks {{n}}/{{total}} done",
     "ex_level_done": "{{n}}/{{total}} done",
     "ra_settings": "Listening settings",

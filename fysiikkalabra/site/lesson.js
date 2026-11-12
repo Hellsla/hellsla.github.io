@@ -185,16 +185,8 @@
       now.querySelector('.toc-now-n').textContent = (k + 1) + '/' + pairs.length;
       now.querySelector('.toc-now-l').textContent = ((a.querySelector('.toc-label') || a).textContent || '').replace(/\s*\(.*\)\s*$/, '').trim();
     };
-    // Seuraavaksi: at the end of every part of the page that has a later one, a link to the next (a <nav>, so the
-    // read-aloud skips it). The page is long, and this is where the reader decides to go on.
-    pairs.forEach(([, t], k) => {
-      const nx = pairs[k + 1]; if (!nx || !t.matches('section')) return;
-      const row = document.createElement('nav'); row.className = 'next-stage'; row.setAttribute('aria-label', msg('next_stage'));
-      const a = document.createElement('a'); a.href = '#' + nx[1].id;
-      const lab = document.createElement('span'); lab.className = 'next-stage-l'; lab.textContent = msg('next_stage');
-      const name = document.createElement('strong'); name.textContent = ((nx[0].querySelector('.toc-label') || nx[0]).textContent || '').trim();
-      a.append(lab, name); row.append(a); t.after(row);   // after the section, not in it: a stage's own last part stays its last child
-    });
+    // No "Seuraavaksi" link between the stages (teacher 2026-11-12: the next stage begins right under it, so the link
+    // only scrolled one row; it stood here from 2026-11-10). The stage bar and the stage's own heading mark the change.
     const keepInView = (a) => {
       if (toc.scrollWidth <= toc.clientWidth + 1 || getComputedStyle(toc).flexDirection === 'column') return;
       const tools = toc.querySelector('.toc-tools'), right = toc.clientWidth - (tools ? tools.offsetWidth : 0);
@@ -273,21 +265,22 @@
       onMark = visit; if (current) visit(current);
     }
     const DONE = msg('stage_done');
-    // Seuraavaksi after Ennusta waits for the predictions (teacher 2026-11-10): until the stage's required predictions
-    // are given, the row after it says "Tee ennusteet ennen tutkimista" and opens the prediction box instead of
-    // leading on. Nothing else is locked: the stage bar and scrolling take the reader anywhere, as before.
+    // After Ennusta a reminder waits for the predictions (teacher 2026-11-10): until the stage's required predictions
+    // are given, a row after it says "Tee ennusteet ennen tutkimista" and opens the prediction box. With the
+    // predictions given the row is gone (2026-11-12: there is no Seuraavaksi link for it to turn into). It is a <nav>
+    // after the section, so the read-aloud skips it and the stage's own last part stays its last child. Nothing is
+    // locked: the stage bar and scrolling take the reader anywhere, as before.
     const lockNext = (s) => {
-      const row = s.t.nextElementSibling, fold = s.t.querySelector('details.fold'), title = fold && fold.querySelector('.fold-title');
-      if (!row || !row.matches('nav.next-stage') || !title || row._go) return;
-      const a = row.querySelector('a'); row._go = { href: a.getAttribute('href'), kids: [...a.childNodes] };
+      const fold = s.t.querySelector('details.fold'), title = fold && fold.querySelector('.fold-title');
+      if (!title || (s.t.nextElementSibling && s.t.nextElementSibling.matches('nav.next-stage'))) return;
+      const row = document.createElement('nav'); row.className = 'next-stage is-waiting'; row.setAttribute('aria-label', title.textContent.trim());
+      const a = document.createElement('a'); a.href = '#' + s.t.id;
       const st = document.createElement('strong'); st.textContent = title.textContent.trim();
-      a.replaceChildren(st); a.setAttribute('href', '#' + s.t.id); row.classList.add('is-waiting');
-      a.addEventListener('click', row._open = (e) => { e.preventDefault(); fold.open = true; fold.scrollIntoView({ block: 'start' }); const f = fold.querySelector('input, button, textarea'); if (f) f.focus({ preventScroll: true }); });
+      a.append(st); row.append(a); s.t.after(row);
+      a.addEventListener('click', (e) => { e.preventDefault(); fold.open = true; fold.scrollIntoView({ block: 'start' }); const f = fold.querySelector('input, button, textarea'); if (f) f.focus({ preventScroll: true }); });
     };
     function unlockNext(s) {
-      const row = s.t.nextElementSibling; if (!row || !row._go) return;
-      const a = row.querySelector('a'); a.removeEventListener('click', row._open); a.replaceChildren(...row._go.kids); a.setAttribute('href', row._go.href);
-      row.classList.remove('is-waiting'); row._go = null;
+      const row = s.t.nextElementSibling; if (row && row.matches('nav.next-stage')) row.remove();
     }
     stages.forEach((s) => { if (s.t.id === 'ennusta' && s.units.length && !saved.done.includes(s.t.id)) lockNext(s); });
     const show = (s) => {
