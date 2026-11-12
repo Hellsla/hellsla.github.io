@@ -1,0 +1,23 @@
+name: fysiikkauutiset-perjantai
+agent: ./agent.md
+environment_id: ./environment.yaml
+schedule: {type: cron, expression: "17 15 * * 5", timezone: Europe/Helsinki}
+budget: {type: limit, max_list_cost: {amount: "300", currency: USD}}
+initial_events:
+  - type: user.define_outcome
+    description: |
+      Kokoa tämän viikon fysiikan uutiskooste ohjeidesi mukaan ja tallenna se
+      /mnt/session/outputs/fysiikkauutiset-<VVVV-KK-PP>.md -tiedostoon.
+    max_iterations: 2
+    rubric:
+      type: text
+      content: |
+        # Arviointikriteerit (aloitusversio, viritä tarpeen mukaan)
+        1. Koosteessa on 4–6 uutista, kaikki julkaistu viimeisen 7 päivän aikana.
+        2. Jokainen uutinen on liitetty yhteen kursseista FY1–FY8 ja sen keskeiseen sisältöön curriculum.jsonin mukaan.
+        3. Jokaisella uutisella on toimiva linkki uutiseen ja alkuperäiseen lähteeseen, tai merkintä ettei alkuperäistä tutkimusta löytynyt.
+        4. Lähteen tyyppi on merkitty (vertaisarvioitu / preprint / tiedote / ei tutkimusta).
+        5. Jokaisessa uutisessa on 2 tai 3 kysymystä, ja ne harjoittavat väitteen, menetelmän, lähteen, epävarmuuden tai fysiikan yhteyden tunnistamista, eivät pelkkää faktan muistamista.
+        6. Jokaiseen kysymykseen voi vastata uutisen ja alkuperäisen lähteen perusteella, ja opettajan vastausydin on mukana.
+        7. Tiivistelmän luvut ja väitteet löytyvät lähteistä; mitään ei ole keksitty.
+        8. Teksti on selkeää suomea, luvut yksiköineen LaTeXilla ja desimaalipilkulla.

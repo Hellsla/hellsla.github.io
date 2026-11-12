@@ -1,0 +1,21 @@
+name: dronelabra-saannot-kuukausi
+agent: ./agent.md
+environment_id: ./environment.yaml
+schedule: {type: cron, expression: "17 16 1 * *", timezone: Europe/Helsinki}
+budget: {type: limit, max_list_cost: {amount: "300", currency: USD}}
+initial_events:
+  - type: user.define_outcome
+    description: |
+      Tee tämän kuun Dronelabran sääntö- ja ohjetarkistus ohjeidesi mukaan ja tallenna raportti
+      /mnt/session/outputs/dronelabra-saannot-<VVVV-KK-PP>.md -tiedostoon.
+    max_iterations: 2
+    rubric:
+      type: text
+      content: |
+        # Arviointikriteerit (aloitusversio, viritä tarpeen mukaan)
+        1. Raportti käy läpi jokaisen DRONELABRA_PLAN.md:n "Tarkistetut tiedot" -osion lähteen (Air:bit 2, DJI Neo 2, säännöt).
+        2. Jokaisessa raportoidussa muutoksessa on suora lainaus lähteestä, linkki ja sivun päiväys tai versio.
+        3. Jokaisessa muutoksessa on rinnalla suunnitelman nykyinen kohta ja konkreettinen ehdotus.
+        4. Lähteinä on käytetty vain viranomaisten, EU:n ja valmistajien omia sivuja.
+        5. "Tarkistettu, ei muutosta" ja "Ei saatu avattua" -listat ovat mukana, joten näkyy mitä jäi tarkistamatta.
+        6. Raportti ei anna lentolupia eikä tulkitse sääntöjä lievemmiksi kuin ne on kirjoitettu.

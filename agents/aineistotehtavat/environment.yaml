@@ -1,0 +1,10 @@
+name: aineistotehtavat
+config:
+  type: cloud
+  networking:
+    type: limited
+    allow_package_managers: true
+    allowed_hosts:
+      - github.com
+      - opendata.fmi.fi
+      - pxdata.stat.fi

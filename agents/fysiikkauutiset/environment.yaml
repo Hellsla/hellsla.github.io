@@ -1,0 +1,25 @@
+name: fysiikkauutiset
+config:
+  type: cloud
+  networking:
+    type: limited
+    allow_package_managers: false
+    allowed_hosts:
+      - raw.githubusercontent.com
+      - yle.fi
+      - tiede.fi
+      - helsinki.fi
+      - aalto.fi
+      - jyu.fi
+      - oulu.fi
+      - fmi.fi
+      - esa.int
+      - nasa.gov
+      - home.cern
+      - phys.org
+      - physicsworld.com
+      - physics.aps.org
+      - quantamagazine.org
+      - nature.com
+      - science.org
+      - arxiv.org

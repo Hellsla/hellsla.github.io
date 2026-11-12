@@ -1,0 +1,15 @@
+name: dronelabra-saannot
+config:
+  type: cloud
+  networking:
+    type: limited
+    allow_package_managers: false
+    allowed_hosts:
+      - raw.githubusercontent.com
+      - traficom.fi
+      - easa.europa.eu
+      - eur-lex.europa.eu
+      - tukes.fi
+      - makekit.no
+      - dji.com
+      - github.com

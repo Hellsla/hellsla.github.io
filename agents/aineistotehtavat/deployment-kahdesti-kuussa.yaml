@@ -1,0 +1,23 @@
+name: aineistotehtavat-kahdesti-kuussa
+agent: ./agent.md
+environment_id: ./environment.yaml
+schedule: {type: cron, expression: "17 16 1,15 * *", timezone: Europe/Helsinki}
+budget: {type: limit, max_list_cost: {amount: "800", currency: USD}}
+initial_events:
+  - type: user.define_outcome
+    description: |
+      Valitse yksi Ruukkilabran luku ja kirjoita sille 2–3 aineistotehtävän luonnosta avoimesta datasta
+      ohjeidesi mukaan. Tallenna ne /mnt/session/outputs/aineistotehtavat-<luku>-<VVVV-KK-PP>.md -tiedostoon.
+    max_iterations: 2
+    rubric:
+      type: text
+      content: |
+        # Arviointikriteerit (aloitusversio, viritä tarpeen mukaan)
+        1. Luvun valinta on perusteltu exercise_bank.py:n luvuilla (vähän data- ja graafitehtäviä).
+        2. Jokainen aineisto on haettu FMI:n tai Tilastokeskuksen rajapinnasta, ja mukana on täsmällinen kysely-URL, hakupäivä, yksiköt ja lisenssi.
+        3. Tehtäviä on 2–3, ne ovat tasoa 2 tai 3, ja jokainen vaatii aineiston lukemista, sovittamista tai mallin tai epävarmuuden arviointia.
+        4. Jokaisella tehtävällä on exercises.json-muotoinen luonnos, jossa ovat answer, unit, tolerance ja kind.
+        5. Jokainen vastaus on laskettu mukana olevalla Python-koodilla, ja koodin tulos vastaa answer-kenttää.
+        6. Jokaisessa mallivastauksessa ovat kaikki seitsemän vaihetta, ja ratkaisu on ensin symboleilla.
+        7. Merkinnät noudattavat CLAUDE.md:tä: LaTeX-luvut yksiköineen, desimaalipilkku tekstissä, \overline-vektorit.
+        8. Tehtävät eivät toista luvun olemassa olevia tehtäviä tai esimerkkiä ja pysyvät kurssin sisällöissä.
