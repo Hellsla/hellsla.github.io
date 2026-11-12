@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: a2466c06e4019128
+CONTENT-HASH: 32156b0039c2e8aa
 
 ## Blocking
-- none
+None.
 
 ## Polish
-1. lessons/FY3/fy3-8/sim.js header comments and sim-spec.md still write L₀, ΔL, L (not shown to students); change to l₀, Δl, l so the spec matches the labels.
+None.
 
 ## Checked
-l = l₀(1 + αΔT), V = V₀(1 + γΔT), Δl = l − l₀ = αl₀ΔT, ΔV = γV₀ΔT: correct, MAFY form, conditions stated (solids to about 100 K, liquids near 20 °C, gas at constant pressure), γ ≈ 3α argued; sign on cooling; every L → l in lesson, inquiry, exit ticket, figures (figures.py labels), sim canvas labels and lang sims strings; no uppercase L left in student text; fi, fi-easy, en identical in formulas; numbers unchanged; answers.py output unchanged.
+Delta: tests/sims/fy3-8.json only; the five changed assertions swap ΔL, L_0, L for Δl, l_0, l (matching lang/*.json sims fy3-8) and keep the same quantities, numbers and tolerances (6,00 mm, 10,0060 m; −138 mm, 99,8620 m; 0,330 mm, 1,00033 m; 0,0600 %; l_0 = 42 m label), recomputed from Δl = α l_0 ΔT; build and test_sims fy3-8 pass on fi, fi-easy, en.
