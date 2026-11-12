@@ -1,7 +1,7 @@
 """Kilparobotiikka (teacher's brief 2026-11-09): Kiviruukin lukio's VEX V5 competition team as a student-led learning and
 working environment, in the school's colours like its course page (local-courses.json KILPAROBO, "theme": "kiviruukki").
 
-kilparobo.json is the source (Finnish); content/<lang>/kilparobo.json has the same shape in another language, and a
+jaksot/kilparobo/jakso.json is the source (Finnish; "kilparobo.json" below, the layout is scripts/jaksot.py's); jaksot/kilparobo/<lang>/jakso.json has the same shape in another language, and a
 language without one shows the Finnish (fi-easy). build.py renders five pages in every language that has the course:
   KILPAROBO.html                 the start page: what the team is and how to join (five quick answers first), how the
                                  team works, the team's tools, what it is doing now, competitions and experiences (the
@@ -22,9 +22,10 @@ a Ruukkilabra chapter (refs) is linked only where it is published; VEX only here
 import json, re, sys, pathlib, html as _h
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from courses import ROOT
-import i18n
+import i18n, jaksot
 
-SOURCE = ROOT / "kilparobo.json"
+JAKSO = "kilparobo"                    # jaksot/kilparobo/ (scripts/jaksot.py)
+SOURCE = jaksot.source(JAKSO)
 CODE = "KILPAROBO"
 PAGE, PATH, SEASON, MENTOR, SAFETY = "KILPAROBO.html", "kilparobo-polku.html", "kilparobo-kausi.html", "kilparobo-mentorointi.html", "kilparobo-turvallisuus.html"
 SUBPAGES = (PATH, SEASON, MENTOR, SAFETY)
@@ -51,38 +52,10 @@ ICONS = {
 }
 
 
-def icon(name, cls="ahjo-icon"):
-    return (f'<svg class="{cls}" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">'
-            f'<path d="{ICONS[name]}"/></svg>')
-
-
-def data_file(lang=i18n.SOURCE):
-    f = ROOT / "content" / lang / "kilparobo.json"
-    return f if lang != i18n.SOURCE and f.is_file() else SOURCE
-
-
-def load(lang=i18n.SOURCE):
-    return json.loads(data_file(lang).read_text()) if SOURCE.is_file() else None
-
-
-def _shape(a, b, path=""):
-    """Where a translation's structure differs from the source's (keys, list lengths, ids): a list of paths."""
-    if isinstance(a, dict):
-        if not isinstance(b, dict) or set(a) != set(b): return [path or "/"]
-        return [p for k in a for p in _shape(a[k], b[k], f"{path}/{k}")]
-    if isinstance(a, list):
-        if not isinstance(b, list) or len(a) != len(b): return [path]
-        return [p for i, (x, y) in enumerate(zip(a, b)) for p in _shape(x, y, f"{path}[{i}]")]
-    return []
-
-
-def _urls(x):
-    if isinstance(x, dict):
-        for k, v in x.items():
-            if k == "url": yield v
-            else: yield from _urls(v)
-    elif isinstance(x, list):
-        for v in x: yield from _urls(v)
+def icon(name, cls="ahjo-icon"): return jaksot.icon_svg(ICONS, name, cls)
+def data_file(lang=i18n.SOURCE): return jaksot.data_file(JAKSO, lang)
+def load(lang=i18n.SOURCE): return jaksot.load(JAKSO, lang)
+_shape, _urls = jaksot.shape_diff, jaksot.urls
 
 
 def validate(lesson_ids):

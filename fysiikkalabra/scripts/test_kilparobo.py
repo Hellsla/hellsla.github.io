@@ -68,7 +68,8 @@ if pages:
     try:
         time.sleep(1)
         with sync_playwright() as p:
-            b = p.chromium.launch()
+            from _browser import launch   # the project's launcher: the same browser as every other browser test
+            b = launch(p)
             for w in (360, 768, 1280):
                 pg = b.new_page(viewport={"width": w, "height": 900})
                 for name in pages:

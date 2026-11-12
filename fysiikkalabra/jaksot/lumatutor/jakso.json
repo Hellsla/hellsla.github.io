@@ -1,4 +1,5 @@
 {
+  "jakso": {"id": "lumatutor", "status": "live", "theme": "kiviruukki"},
   "_note": "LUMA-tutor (opettajan toimeksianto 9.11.2026, scripts/lumatutor.py). Suomi on lähdekieli; content/<lang>/lumatutor.json on samanmuotoinen käännös, ja kieli ilman omaa tiedostoa näyttää suomenkielisen (selkosuomi). Työpajat ovat omina tiedostoinaan content/<lang>/lumatutor/tyopajat/<id>.json, joten uusi työpaja lisätään yhdellä tiedostolla. Laajuus ja arviointi ovat suunnitteluratkaisu, kunnes paikallinen opetussuunnitelma vahvistaa ne. Tekstissä [nimi](sivu.html#kohta) on linkki ja $...$ LaTeXia.",
   "ui": {
     "nav_label": "LUMA-tutorin osat",

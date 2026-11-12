@@ -30,7 +30,8 @@ A course's fields (all texts in the language of the file):
   overview                               optional: one paragraph after the chapters' lead (FY14: sessions, ★, Fotoni)
   mixer                                  optional: true links the YO-sekoitin page (scripts/mixer.py) from the course
                                          page and has build.py build it in every language that publishes the course
-  quotes                                 optional: [{author, paragraphs, lang?}], students' own words about the course,
+  quotes                                 optional: [{author, paragraphs, lang?, highlight?}], students' own words about the course
+                                         (with highlight: that sentence in view, the whole account behind a button),
                                          shown after the description as written (only typos fixed, teacher 2026-11-08);
                                          lang marks a quote kept in its own language on a page of another
   photos                                 optional: [{src, alt, width, height, caption?, wide?}], pictures in assets/pics/<code>/ (src
@@ -50,6 +51,7 @@ import json, re, sys, pathlib, html as _h
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from courses import ROOT
 import i18n
+import jaksot
 
 REGISTRY = "local-courses.json"
 STATUSES = ("planning", "building", "ready")        # add one (and its lang key site.local_status_<status>) when a course needs it; "ready" shows no status box (teacher 2026-11-01)
@@ -87,7 +89,7 @@ def planned(lang=i18n.SOURCE):
     out and unlinked on the front page under the school's own courses, as they have no content yet. A language's own
     content/<lang>/local-courses.json "_planned" replaces the Finnish list; a language without one shows the Finnish."""
     for f in ([ROOT / "content" / lang / REGISTRY] if lang != i18n.SOURCE else []) + [ROOT / REGISTRY]:
-        if f.is_file() and "_planned" in (d := json.loads(f.read_text())): return d["_planned"]
+        if f.is_file() and "_planned" in (d := json.loads(f.read_text())): return d["_planned"] + jaksot.planned(lang)   # and the planned units of jaksot/ (scripts/jaksot.py, 2026-11-12)
     return []
 
 
@@ -119,6 +121,7 @@ def validate(curriculum):
         for i, q in enumerate(c.get("quotes", [])):
             if not (q.get("author") and q.get("paragraphs") and all(str(x).strip() for x in q["paragraphs"])): errs.append(f"{REGISTRY} {code}: quotes[{i}] needs author and paragraphs")
             if q.get("lang") is not None and q["lang"] not in i18n.languages(): errs.append(f"{REGISTRY} {code}: quotes[{i}] lang {q['lang']!r} is not a site language")
+            if "highlight" in q and not (isinstance(q["highlight"], str) and q["highlight"].strip()): errs.append(f"{REGISTRY} {code}: quotes[{i}] highlight is one sentence of the account")
         for i, ph in enumerate(c.get("photos", [])):
             if not (ph.get("src") and ph.get("alt") and ph.get("width") and ph.get("height")): errs.append(f"{REGISTRY} {code}: photos[{i}] needs src, alt, width and height")
             elif not (ROOT / "assets" / ph["src"]).is_file(): errs.append(f"{REGISTRY} {code}: photos[{i}] {ph['src']} is not in assets/")
@@ -174,7 +177,13 @@ def quotes_html(c, T, heading=True):
         out += f'<h2 id="kokemuksia">{T("site.local_quotes")}</h2>' if heading else ''
         for q in c["quotes"]:
             lang = f' lang="{q["lang"]}"' if q.get("lang") and q["lang"] != T.lang else ""
-            out += (f'<figure class="local-quote"><blockquote{lang}>{"".join(f"<p>{esc(x)}</p>" for x in q["paragraphs"])}</blockquote>'
+            whole = "".join(f"<p>{esc(x)}</p>" for x in q["paragraphs"])
+            if q.get("highlight"):   # one sentence of the account in view, the whole of it behind "Lue koko kokemus" (teacher 2026-11-12: five accounts on one page)
+                out += (f'<figure class="local-quote local-quote-hl"><blockquote{lang}><p class="local-quote-lead">{esc(q["highlight"])}</p></blockquote>'
+                        f'<figcaption>– {esc(q["author"])}</figcaption>'
+                        f'<details class="local-quote-more"><summary>{T("site.local_quote_more")}</summary><blockquote{lang}>{whole}</blockquote></details></figure>')
+                continue
+            out += (f'<figure class="local-quote"><blockquote{lang}>{whole}</blockquote>'
                     f'<figcaption>– {esc(q["author"])}</figcaption></figure>')
     return out
 

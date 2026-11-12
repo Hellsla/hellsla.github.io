@@ -4,15 +4,15 @@ LUMATUTOR, "theme": "kiviruukki"). Its own job: science education, guiding, even
 tutoring in mathematics or physics.
 
 Sources (Finnish first; a language without its own file shows the Finnish, as fi-easy does):
-  lumatutor.json                                  the course: sections and their workload, the start page, the five
+  jaksot/lumatutor/jakso.json                     the course: sections and their workload, the start page, the five
                                                   parts and the toolkit's ten templates
-  content/<lang>/lumatutor.json                   the same shape in another language
-  content/<lang>/lumatutor/tyopajat/<id>.json     one file per workshop: a new workshop is one new file and no code.
+  jaksot/lumatutor/<lang>/jakso.json              the same shape in another language (scripts/jaksot.py has the layout)
+  jaksot/lumatutor/[<lang>/]kohteet/<id>.json     one file per workshop: a new workshop is one new file and no code.
                                                   "status": "ready" (a whole guiding card with a page of its own,
                                                   not yet piloted) or "idea" (a development proposal, never shown
                                                   as ready)
   lessons/lumatutor/figures.py                    the workshops' figures (scripts/figlib.py), drawn in the page's
-                                                  language (content/<lang>/lumatutor/figures.json)
+                                                  language (jaksot/lumatutor/<lang>/figures.json)
   lessons/lumatutor/ilmastodata.json              the climate workshop's measurements as published by NOAA and NASA
                                                   (its graphs and the tutor's answers are computed from it)
 
@@ -28,12 +28,13 @@ import json, re, sys, pathlib, html as _h
 from urllib.parse import quote
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from courses import ROOT
-import i18n
+import i18n, jaksot
 
-SOURCE = ROOT / "lumatutor.json"
+JAKSO = "lumatutor"                    # jaksot/lumatutor/ (scripts/jaksot.py)
+SOURCE = jaksot.source(JAKSO)
 CODE = "LUMATUTOR"
 PAGE, TOOLS = "LUMATUTOR.html", "lumatutor-tyokalut.html"
-WS_DIR = "lumatutor/tyopajat"
+WS_DIR = f"jaksot/{JAKSO}/{jaksot.ITEMS}"    # one file per workshop
 FIG_FILE = ROOT / "lessons" / "lumatutor" / "figures.py"
 DATA_FILE = ROOT / "lessons" / "lumatutor" / "ilmastodata.json"
 SECTION_IDS = ["perehdy", "tutustu", "suunnittele", "toteuta", "arvioi"]
@@ -62,29 +63,17 @@ ICONS = {
 }
 
 
-def icon(name, cls="ahjo-icon"):
-    return (f'<svg class="{cls}" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">'
-            f'<path d="{ICONS[name]}"/></svg>')
+def icon(name, cls="ahjo-icon"): return jaksot.icon_svg(ICONS, name, cls)
 
 
 # --- data ------------------------------------------------------------------------------------------------------------
-def data_file(lang=i18n.SOURCE):
-    f = ROOT / "content" / lang / "lumatutor.json"
-    return f if lang != i18n.SOURCE and f.is_file() else SOURCE
-
-
-def load(lang=i18n.SOURCE):
-    return json.loads(data_file(lang).read_text()) if SOURCE.is_file() else None
+def data_file(lang=i18n.SOURCE): return jaksot.data_file(JAKSO, lang)
+def load(lang=i18n.SOURCE): return jaksot.load(JAKSO, lang)
 
 
 def ws_files(lang=i18n.SOURCE):
-    """{id: path} of the workshops in `lang`, each falling back to the Finnish file."""
-    src = sorted((ROOT / "content" / i18n.SOURCE / WS_DIR).glob("*.json"))
-    out = {}
-    for f in src:
-        t = ROOT / "content" / lang / WS_DIR / f.name
-        out[f.stem] = t if lang != i18n.SOURCE and t.is_file() else f
-    return out
+    """{id: path} of the workshops in `lang`, each falling back to the Finnish file (jaksot/lumatutor/kohteet/)."""
+    return jaksot.item_files(JAKSO, "*.json", lang)
 
 
 def workshops(lang=i18n.SOURCE):
@@ -526,8 +515,8 @@ def figure_module():
 
 
 def figure_texts(lang):
-    f = ROOT / "content" / lang / "lumatutor" / "figures.json"
-    return json.loads(f.read_text()) if lang != i18n.SOURCE and f.is_file() else None
+    f = jaksot.lang_file(JAKSO, "figures.json", lang)
+    return json.loads(f.read_text()) if f else None
 
 
 def draw(name, lang, mod=None):
@@ -640,14 +629,7 @@ def subpages(d, ws, lang, ref):
 
 
 # --- validation ------------------------------------------------------------------------------------------------------
-def _shape(a, b, path=""):
-    if isinstance(a, dict):
-        if not isinstance(b, dict) or set(a) != set(b): return [path or "/"]
-        return [p for k in a for p in _shape(a[k], b[k], f"{path}/{k}")]
-    if isinstance(a, list):
-        if not isinstance(b, list) or len(a) != len(b): return [path]
-        return [p for i, (x, y) in enumerate(zip(a, b)) for p in _shape(x, y, f"{path}[{i}]")]
-    return []
+_shape = jaksot.shape_diff
 
 
 def _strings(x):
@@ -700,7 +682,7 @@ def validate(lesson_ids):
     if len(set(ids)) != len(ids): errs.append("lumatutor workshops: ids repeat")
     tax = d["taxonomy"]; figs = set(figure_module().FIGURES) if FIG_FILE.is_file() else set()
     for w in ws:
-        where = f"content/fi/{WS_DIR}/{w['id']}.json"
+        where = f"{WS_DIR}/{w['id']}.json"
         if w["status"] not in STATUSES: errs.append(f"{where}: status must be one of {STATUSES}")
         if w["audience"] not in tax["audience"] or w["topic"] not in tax["topic"] or any(e not in tax["equipment"] for e in w["equipment"]):
             errs.append(f"{where}: audience, topic or equipment not in lumatutor.json taxonomy")
@@ -740,7 +722,7 @@ def validate(lesson_ids):
             errs += [f"{f.relative_to(ROOT)}: {p} must stay as in lumatutor.json" for p in _same_keys(d, t)]
         for wid, wf in ws_files(lang).items():
             if wf.parent.parts[-3] == i18n.SOURCE: continue
-            a = json.loads((ROOT / "content" / i18n.SOURCE / WS_DIR / f"{wid}.json").read_text()); b = json.loads(wf.read_text())
+            a = json.loads(jaksot.item_file(JAKSO, f"{wid}.json").read_text()); b = json.loads(wf.read_text())
             errs += [f"{wf.relative_to(ROOT)}: differs from the Finnish at {p}" for p in _shape(a, b)]
             errs += [f"{wf.relative_to(ROOT)}: {p} must stay as in the Finnish" for p in _same_keys(a, b)]
             for c in b.get("ciphers", []):
