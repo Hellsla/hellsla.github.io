@@ -111,6 +111,15 @@
       "answer": 120,
       "unit": "dB",
       "tolerance": 0.01
+    },
+    {
+      "id": "fy5-15-L1-09",
+      "level": 1,
+      "text": "Kuvassa on pistemäisen kaiuttimen äänen intensiteettitaso etäisyyden funktiona. Kuinka suuri on äänen intensiteetti $4{,}0\\,\\text{m}$:n päässä kaiuttimesta? Anna vastaus yksikössä $\\text{W/m}^2$. Lue tarvittavat tiedot kuvasta.",
+      "figure": "fy5-15/kuvaaja-tehtava",
+      "answer": 2.5e-05,
+      "unit": "W/m²",
+      "tolerance": 0.03
     }
   ],
   "level2": [
@@ -298,6 +307,15 @@
           "feedback": "Tässä erotus $40\\,\\text{dB}$ on unohdettu jakaa $10\\,\\text{dB}$:llä ennen potenssiin korottamista. Suhteen logaritmi on $\\tfrac{40\\,\\text{dB}}{10\\,\\text{dB}} = 4$ eikä $40$."
         }
       ]
+    },
+    {
+      "id": "fy5-15-L2-09",
+      "level": 2,
+      "text": "Kuvassa on pistemäisen kaiuttimen äänen intensiteettitaso etäisyyden funktiona. Ääni leviää tasaisesti joka suuntaan eikä heijastu. Kuinka suuri on kaiuttimen ääniteho? Anna vastaus yksikössä $\\text{mW}$. Lue tarvittavat tiedot kuvasta.",
+      "figure": "fy5-15/kuvaaja-tehtava",
+      "answer": 5.03,
+      "unit": "mW",
+      "tolerance": 0.03
     }
   ],
   "level3": [

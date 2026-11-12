@@ -21,7 +21,7 @@
       "level": 1,
       "core": true,
       "text": "Merkurius-planeetan massa on $3{,}30 \\cdot 10^{23}\\,\\text{kg}$ ja säde $2{,}44 \\cdot 10^{6}\\,\\text{m}$. Kuinka suuri on gravitaatiokentän voimakkuus Merkuriuksen pinnalla?",
-      "answer": 3.7,
+      "answer": 3.70,
       "unit": "m/s²",
       "tolerance": 0.02
     },
@@ -29,7 +29,7 @@
       "id": "fy5-5-L1-04",
       "level": 1,
       "text": "Marsiin laskeutuneen mönkijän massa on $1025\\,\\text{kg}$. Marsin massa on $6{,}42 \\cdot 10^{23}\\,\\text{kg}$ ja säde $3{,}40 \\cdot 10^{6}\\,\\text{m}$. Kuinka suurella gravitaatiovoimalla Mars vetää pinnallaan olevaa mönkijää? Anna vastaus kilonewtoneina.",
-      "answer": 3.8,
+      "answer": 3.80,
       "unit": "kN",
       "tolerance": 0.02
     },

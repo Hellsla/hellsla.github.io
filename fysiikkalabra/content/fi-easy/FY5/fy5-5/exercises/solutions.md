@@ -289,7 +289,7 @@ Kiihtyvyyksien suhde on $\tfrac{a_{\text{B}}}{a_{\text{A}}} = \tfrac{m_{\text{A}
 **Kaava:** $F = mg$
 **Muunnokset:** Tiedot ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $F = 85\,\text{kg}\cdot 3{,}71\,\text{m/s}^2 = 315{,}35\,\text{N}$
-**Vastaus:** $3{,}2\cdot 10^{2}\,\text{N} \approx 315\,\text{N}$; massassa $85\,\text{kg}$ on kaksi merkitsevää numeroa, mutta vastaus ilmoitetaan arvona $315\,\text{N}$, jotta sitä voi verrata taulukkoarvoon.
+**Vastaus:** $315\,\text{N}$, kolme merkitsevää numeroa kuten kiihtyvyydessä $3{,}71\,\text{m/s}^2$.
 **Järkevyys:** Maassa voima olisi $85\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 834\,\text{N}$. Suhde $\dfrac{3{,}71}{9{,}81} = 0{,}38$ antaa $0{,}38\cdot 834\,\text{N} \approx 315\,\text{N}$, joten Marsissa astronautti painaa noin kaksi viidesosaa Maan painostaan.
 
 ## fy5-5-L2-09

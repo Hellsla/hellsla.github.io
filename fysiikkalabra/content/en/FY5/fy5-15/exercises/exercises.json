@@ -111,6 +111,15 @@
       "answer": 120,
       "unit": "dB",
       "tolerance": 0.01
+    },
+    {
+      "id": "fy5-15-L1-09",
+      "level": 1,
+      "text": "The figure shows the sound intensity level of a point-like loudspeaker as a function of distance. How large is the sound intensity at a distance of $4.0\\,\\text{m}$ from the loudspeaker? Give the answer in $\\text{W/m}^2$. Read the necessary data from the figure.",
+      "figure": "fy5-15/kuvaaja-tehtava",
+      "answer": 2.5e-05,
+      "unit": "W/m²",
+      "tolerance": 0.03
     }
   ],
   "level2": [
@@ -298,6 +307,15 @@
           "feedback": "Here the difference $40\\,\\text{dB}$ has not been divided by $10\\,\\text{dB}$ before raising to a power. The logarithm of the ratio is $\\tfrac{40\\,\\text{dB}}{10\\,\\text{dB}} = 4$ and not $40$."
         }
       ]
+    },
+    {
+      "id": "fy5-15-L2-09",
+      "level": 2,
+      "text": "The figure shows the sound intensity level of a point-like loudspeaker as a function of distance. The sound spreads evenly in all directions and is not reflected. How large is the sound power of the loudspeaker? Give the answer in $\\text{mW}$. Read the necessary data from the figure.",
+      "figure": "fy5-15/kuvaaja-tehtava",
+      "answer": 5.03,
+      "unit": "mW",
+      "tolerance": 0.03
     }
   ],
   "level3": [

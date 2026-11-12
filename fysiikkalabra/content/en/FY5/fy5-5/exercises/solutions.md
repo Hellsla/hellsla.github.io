@@ -289,7 +289,7 @@ The ratio of the accelerations is $\tfrac{a_{\text{B}}}{a_{\text{A}}} = \tfrac{m
 **Formula:** $F = mg$
 **Conversions:** The data is in SI units, so no conversions are needed.
 **Substitution:** $F = 85\,\text{kg}\cdot 3.71\,\text{m/s}^2 = 315.35\,\text{N}$
-**Answer:** $3.2\cdot 10^{2}\,\text{N} \approx 315\,\text{N}$; the mass $85\,\text{kg}$ has two significant figures, but $315\,\text{N}$ is given so that the answer can be compared with the table value.
+**Answer:** $315\,\text{N}$, three significant figures like the acceleration $3.71\,\text{m/s}^2$.
 **Reasonableness:** On the Earth the force would be $85\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 834\,\text{N}$. The ratio $\dfrac{3.71}{9.81} = 0.38$ gives $0.38\cdot 834\,\text{N} \approx 315\,\text{N}$, so on Mars the astronaut weighs about two fifths of the weight on the Earth.
 
 ## fy5-5-L2-09
