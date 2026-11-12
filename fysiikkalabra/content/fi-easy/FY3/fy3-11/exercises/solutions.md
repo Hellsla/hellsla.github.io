@@ -136,7 +136,7 @@ $$\begin{aligned} P &= \dfrac{5{,}418 \cdot 10^7\,\text{J}}{4500\,\text{s}} \\ &
 **Annettu:** pumpun sähköteho $P_\text{s} = 1{,}20\,\text{kW}$, lämmityspiiriin luovutettu lämpöteho $P_1 = 3{,}90\,\text{kW}$
 **Kysytty:** lämpökerroin $\varepsilon$
 **Periaate:** Lämpökerroin kertoo, kuinka moninkertaisen lämmön pumppu luovuttaa sisälle verrattuna käyttämäänsä sähköenergiaan. Sen voi laskea myös tehoista, koska molemmat tehot ovat energiaa samassa ajassa.
-**Kaava:** $\varepsilon = \dfrac{Q_1}{W} = \dfrac{P_1}{P_\text{s}}$
+**Kaava:** $\varepsilon = \dfrac{Q_1}{W}$, joten tehoista $\varepsilon = \dfrac{P_1}{P_\text{s}}$
 **Muunnokset:** Molemmat tehot ovat kilowatteina. Yksikkö supistuu, joten muunnosta ei tarvita. Lämpökertoimella ei ole yksikköä.
 **Sijoitus:** $\varepsilon = \dfrac{3{,}90\,\text{kW}}{1{,}20\,\text{kW}} = 3{,}25$
 **Vastaus:** $\varepsilon = 3{,}25$, kolme merkitsevää numeroa, koska molemmat tehot on annettu kolmella numerolla.

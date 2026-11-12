@@ -136,7 +136,7 @@ $$\begin{aligned} P &= \dfrac{5.418 \cdot 10^7\,\text{J}}{4500\,\text{s}} \\ &= 
 **Given:** electric power of the pump $P_\text{el} = 1.20\,\text{kW}$, thermal power given out to the heating circuit $P_1 = 3.90\,\text{kW}$
 **Find:** the coefficient of performance $\varepsilon$
 **Principle:** The coefficient of performance tells how many times as much heat the pump gives out indoors as the electrical energy it uses. It can also be calculated from the powers, because both powers are energy in the same time.
-**Formula:** $\varepsilon = \dfrac{Q_1}{W} = \dfrac{P_1}{P_\text{el}}$
+**Formula:** $\varepsilon = \dfrac{Q_1}{W}$, so from the powers $\varepsilon = \dfrac{P_1}{P_\text{el}}$
 **Conversions:** Both powers are in kilowatts, so the unit cancels and no conversion is needed. The coefficient of performance has no unit.
 **Substitution:** $\varepsilon = \dfrac{3.90\,\text{kW}}{1.20\,\text{kW}} = 3.25$
 **Answer:** $\varepsilon = 3.25$, three significant figures, because both powers are given with three figures.
