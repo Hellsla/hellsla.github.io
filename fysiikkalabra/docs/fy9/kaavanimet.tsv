@@ -126,5 +126,5 @@ fy9-ympyraliike	253	M = Fr	M = Fr	voiman momentti	moment of a force	MAFY	Mekanii
 fy9-ympyraliike	253	\Sigma\overline{F} = \overline{0}	\Sigma\overline{F} = \overline{0}			ei MAFY:ssa		ei MAFY:ssa
 fy9-ympyraliike	253	\Sigma M = 0	\Sigma M = 0			ei MAFY:ssa		ei MAFY:ssa
 fy9-ympyraliike	307	v = \omega r	v = \omega r	ratanopeus	orbital speed	MAFY	Mekaniikan kaavoja	
-fy9-ympyraliike	307	a_\text{n} = \frac{v^2}{r} = \omega^2 r	a_\text{n} = \frac{v^2}{r} = \omega^2 r	keskeiskiihtyvyys	centripetal acceleration	MAFY	Mekaniikan kaavoja	
+fy9-ympyraliike	307	a_\text{n} = \frac{v^2}{r} = \omega^2 r	a_\text{n} = \frac{v^2}{r} = \omega^2 r	normaalikiihtyvyys	centripetal acceleration	MAFY	Mekaniikan kaavoja	MAFY: keskeiskiihtyvyys; opettaja 2026-11-12: aina normaalikiihtyvyys
 fy9-ympyraliike	358	F_\text{g} = \gamma\frac{m_1 m_2}{r^2}	F_\text{g} = \gamma\frac{m_1 m_2}{r^2}	Newtonin gravitaatiolaki	Newton's law of gravitation	MAFY	Mekaniikan kaavoja	

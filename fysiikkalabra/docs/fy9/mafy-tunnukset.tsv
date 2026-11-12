@@ -46,3 +46,5 @@ fy9-voimat	fi,fi-easy,en	F_{\mu 0} \le \mu_0 N	F_{\mu_0} = \mu_0 N	MAFY: lähtö
 fy9-voimat	fi	Lepokitka on vain niin suuri kuin tilanne vaatii, ja se	Lepokitka on vain niin suuri kuin tilanne vaatii, enintään lähtökitkan $F_{\mu_0}$ suuruinen, ja se	
 fy9-voimat	fi-easy	Lepokitka on vain niin suuri kuin tilanne vaatii. Se vastustaa	Lepokitka on vain niin suuri kuin tilanne vaatii. Se on enintään yhtä suuri kuin lähtökitka $F_{\mu_0}$. Se vastustaa	
 fy9-voimat	en	Static friction is only as large as the situation requires, and it	Static friction is only as large as the situation requires, at most the limiting friction $F_{\mu_0}$, and it	
+fy9-ympyraliike	fi,fi-easy	keskeiskiihtyvyy	normaalikiihtyvyy	opettaja 2026-11-12: "käytä aina normaalikiihtyvyys" (MAFY: keskeiskiihtyvyys)
+fy9-magnetismi-valo	fi,fi-easy	keskeiskiihtyvyy	normaalikiihtyvyy	

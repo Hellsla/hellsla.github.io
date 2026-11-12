@@ -288,7 +288,7 @@ Varattu hiukkanen liikkuu homogeenisessa magneettikentässä. Homogeeninen kentt
 ```johda
 Varattu hiukkanen liikkuu vauhdilla $v$ kohtisuoraan homogeenista magneettikenttää $B$ vastaan. Hiukkasen massa on $m$ ja varaus $Q$. Johda hiukkasen ympyräradan säde $r$.
 ---
-Magneettinen voima on kohtisuorassa nopeutta vastaan. Siksi voima ei muuta vauhtia. Se muuttaa vain liikkeen suuntaa. Hiukkanen on siis tasaisessa ympyräliikkeessä. Magneettinen voima on ainoa voima, joka vaikuttaa hiukkaseen. Newtonin 2. lain mukaan voima antaa hiukkaselle keskeiskiihtyvyyden $a_\text{n} = \tfrac{v^2}{r}$:
+Magneettinen voima on kohtisuorassa nopeutta vastaan. Siksi voima ei muuta vauhtia. Se muuttaa vain liikkeen suuntaa. Hiukkanen on siis tasaisessa ympyräliikkeessä. Magneettinen voima on ainoa voima, joka vaikuttaa hiukkaseen. Newtonin 2. lain mukaan voima antaa hiukkaselle normaalikiihtyvyyden $a_\text{n} = \tfrac{v^2}{r}$:
 
 $$F_\text{M} = ma_\text{n} = m\frac{v^2}{r}$$
 

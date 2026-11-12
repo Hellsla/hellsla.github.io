@@ -314,7 +314,7 @@ Kun kappale on levossa, momenttiehto pätee minkä tahansa pisteen suhteen. Siks
 
 ```kaavat
 ratanopeus :: v = \omega r
-keskeiskiihtyvyys :: a_\text{n} = \frac{v^2}{r} = \omega^2 r
+normaalikiihtyvyys :: a_\text{n} = \frac{v^2}{r} = \omega^2 r
 ```
 
 Kaavoissa $v$ on ratanopeus ($\text{m/s}$), $r$ on radan säde ($\text{m}$), $\omega = \tfrac{2\pi}{T} = 2\pi f$ on kulmanopeus ($\text{rad/s}$), $T$ on kierrosaika ($\text{s}$) ja $f = \tfrac{1}{T}$ on kierrostaajuus ($\tfrac{1}{\text{s}}$). Siksi $v = \tfrac{2\pi r}{T} = 2\pi r f$. Lisäksi $a_\text{n}$ on normaalikiihtyvyys ($\text{m/s}^2$).
@@ -326,9 +326,9 @@ Newtonin 2. lain mukaan kokonaisvoima $\Sigma F$ ($\text{N}$) antaa kappaleelle 
 Liikeyhtälössä keskipisteeseen osoittavat voimat ovat positiivisia. Ratatasoa vastaan kohtisuorassa suunnassa voimien summa on nolla.
 
 ```johda
-Kappaleen massa on $m$. Se on tasaisessa ympyräliikkeessä vauhdilla $v$, ja radan säde on $r$. Johda kappaleeseen vaikuttava kokonaisvoima $\Sigma F$. Käytä Newtonin 2. lakia ja keskeiskiihtyvyyttä.
+Kappaleen massa on $m$. Se on tasaisessa ympyräliikkeessä vauhdilla $v$, ja radan säde on $r$. Johda kappaleeseen vaikuttava kokonaisvoima $\Sigma F$. Käytä Newtonin 2. lakia ja normaalikiihtyvyyttä.
 ---
-Newtonin 2. laki $\Sigma\overline{F} = m\overline{a}$ pätee myös ympyräliikkeessä. Tasaisessa ympyräliikkeessä kiihtyvyys on keskeiskiihtyvyys $a_\text{n} = \tfrac{v^2}{r}$. Se osoittaa radan keskipisteeseen. Siksi myös kokonaisvoima osoittaa keskipisteeseen. Sen suuruus on
+Newtonin 2. laki $\Sigma\overline{F} = m\overline{a}$ pätee myös ympyräliikkeessä. Tasaisessa ympyräliikkeessä kiihtyvyys on normaalikiihtyvyys $a_\text{n} = \tfrac{v^2}{r}$. Se osoittaa radan keskipisteeseen. Siksi myös kokonaisvoima osoittaa keskipisteeseen. Sen suuruus on
 
 $$\Sigma F = ma_\text{n} = m\frac{v^2}{r}$$
 ```
@@ -404,7 +404,7 @@ Satelliitti kiertää keskuskappaletta ympyräradalla. Radan säde on $r$, ja ra
 ```johda
 Satelliitin massa on $m$. Se kiertää ympyräradalla keskuskappaletta, jonka massa on $M$. Radan säde on $r$. Johda satelliitin ratanopeus $v$.
 ---
-Satelliittiin vaikuttaa vain gravitaatiovoima. Siksi gravitaatiovoima on kokonaisvoima, ja se osoittaa radan keskipisteeseen. Newtonin 2. lain mukaan se antaa satelliitille keskeiskiihtyvyyden $a_\text{n} = \tfrac{v^2}{r}$. Kirjoita gravitaatiovoima Newtonin gravitaatiolain mukaan:
+Satelliittiin vaikuttaa vain gravitaatiovoima. Siksi gravitaatiovoima on kokonaisvoima, ja se osoittaa radan keskipisteeseen. Newtonin 2. lain mukaan se antaa satelliitille normaalikiihtyvyyden $a_\text{n} = \tfrac{v^2}{r}$. Kirjoita gravitaatiovoima Newtonin gravitaatiolain mukaan:
 
 $$\gamma\frac{Mm}{r^2} = m\frac{v^2}{r}$$
 

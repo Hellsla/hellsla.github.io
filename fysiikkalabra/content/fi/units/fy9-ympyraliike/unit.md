@@ -306,7 +306,7 @@ missä $M$ on voiman momentti ($\text{Nm}$), $F$ voiman suuruus ($\text{N}$) ja 
 
 ```kaavat
 ratanopeus :: v = \omega r
-keskeiskiihtyvyys :: a_\text{n} = \frac{v^2}{r} = \omega^2 r
+normaalikiihtyvyys :: a_\text{n} = \frac{v^2}{r} = \omega^2 r
 ```
 
 missä $v$ on ratanopeus ($\text{m/s}$), $r$ radan säde ($\text{m}$), $\omega = \tfrac{2\pi}{T} = 2\pi f$ kulmanopeus ($\text{rad/s}$), $T$ kierrosaika ($\text{s}$) ja $f = \tfrac{1}{T}$ kierrostaajuus ($\tfrac{1}{\text{s}}$), joten $v = \tfrac{2\pi r}{T} = 2\pi r f$, ja $a_\text{n}$ normaalikiihtyvyys ($\text{m/s}^2$). Tasaisessa ympyräliikkeessä vauhti on vakio. Nopeus on radan tangentin suuntainen, ja normaalikiihtyvyys osoittaa radan keskipisteeseen.
@@ -314,9 +314,9 @@ missä $v$ on ratanopeus ($\text{m/s}$), $r$ radan säde ($\text{m}$), $\omega =
 Newtonin 2. lain mukaan kappaleeseen vaikuttava kokonaisvoima $\Sigma F$ ($\text{N}$) antaa sille normaalikiihtyvyyden, joten kokonaisvoima osoittaa keskipisteeseen. Normaalikiihtyvyys $a_\text{n} = \tfrac{v^2}{r}$ pätee myös hetkellisesti, kun vauhti muuttuu: radan ylimmässä ja alimmassa kohdassa tangentin suuntaista voimaa ei ole. Liikeyhtälössä keskipisteeseen osoittavat voimat ovat positiivisia, ja kohtisuoraan ratatasoa vastaan voimien summa on nolla.
 
 ```johda
-Kappale, jonka massa on $m$, on tasaisessa ympyräliikkeessä vauhdilla $v$ radalla, jonka säde on $r$. Johda Newtonin 2. laista ja keskeiskiihtyvyydestä kappaleeseen vaikuttava kokonaisvoima $\Sigma F$.
+Kappale, jonka massa on $m$, on tasaisessa ympyräliikkeessä vauhdilla $v$ radalla, jonka säde on $r$. Johda Newtonin 2. laista ja normaalikiihtyvyydestä kappaleeseen vaikuttava kokonaisvoima $\Sigma F$.
 ---
-Newtonin 2. laki $\Sigma\overline{F} = m\overline{a}$ pätee myös ympyräliikkeessä. Tasaisessa ympyräliikkeessä kiihtyvyys on keskeiskiihtyvyys $a_\text{n} = \tfrac{v^2}{r}$, joka osoittaa radan keskipisteeseen. Kokonaisvoima osoittaa siis keskipisteeseen, ja sen suuruus on
+Newtonin 2. laki $\Sigma\overline{F} = m\overline{a}$ pätee myös ympyräliikkeessä. Tasaisessa ympyräliikkeessä kiihtyvyys on normaalikiihtyvyys $a_\text{n} = \tfrac{v^2}{r}$, joka osoittaa radan keskipisteeseen. Kokonaisvoima osoittaa siis keskipisteeseen, ja sen suuruus on
 
 $$\Sigma F = ma_\text{n} = m\frac{v^2}{r}$$
 ```
@@ -388,7 +388,7 @@ Satelliitti kiertää keskuskappaletta ympyräradalla, jonka säde on $r$, ratan
 ```johda
 Satelliitti, jonka massa on $m$, kiertää ympyräradalla keskuskappaletta, jonka massa on $M$. Radan säde on $r$. Johda satelliitin ratanopeus $v$.
 ---
-Satelliittiin vaikuttaa vain gravitaatiovoima, joten se on kokonaisvoima ja osoittaa radan keskipisteeseen. Newtonin 2. lain mukaan se antaa satelliitille keskeiskiihtyvyyden $a_\text{n} = \tfrac{v^2}{r}$. Kun gravitaatiovoima kirjoitetaan Newtonin gravitaatiolain mukaan, saadaan
+Satelliittiin vaikuttaa vain gravitaatiovoima, joten se on kokonaisvoima ja osoittaa radan keskipisteeseen. Newtonin 2. lain mukaan se antaa satelliitille normaalikiihtyvyyden $a_\text{n} = \tfrac{v^2}{r}$. Kun gravitaatiovoima kirjoitetaan Newtonin gravitaatiolain mukaan, saadaan
 
 $$\gamma\frac{Mm}{r^2} = m\frac{v^2}{r}$$
 
