@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 310aaf84e99378ff
-
-Delta review (Johda itse, 2026-11-12) of the version passed at 5aacd18ab49e4f28.
+CONTENT-HASH: 5fb97cd3bc0ffb0e
+Delta review (Johda itse round 2, 2026-11-12) of the version passed at 310aaf84e99378ff.
 
 Blocking
 None.
 
 Polish
-1. inquiry.json activities[15] (Esimerkit solution): "Kaava:" gives $R = U^2/P$ without deriving it from $P=UI$, $U=RI$; add one line or cite the Johda itse box. Polish, teacher's decision.
-2. unit.md, battery Johda itse: fine; consider naming in the question that $E$ and $R_s$ are constants (stated in the text after).
+1. Polish: the Esimerkit solutions now derive the removed result in one or two steps from MAFY laws before using it; numbers unchanged, steps are followable for a revising student.
 
-Checked
-Model sentence states the situation and quantities; the question says what to derive and from what; the derivation starts from MAFY laws and every step is kept; try-first, Näytä johto order works; the text reads as a coherent review without the removed formulas; the number of Johda itse tasks (see above) is fitting for a review unit. en: same content and structure as fi; English is clear.
+Checked: git diff 3ec8cc24 for this unit and language (unit.md, inquiry.json, figures); fi-easy and en match fi in content.

@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: cb6bf37d9b9841ce
-
-Delta review (Johda itse, 2026-11-12) of the version passed at 89f1adfdcba2e044.
+CONTENT-HASH: 7b3699a510e8acef
+Delta review (Johda itse round 2, 2026-11-12) of the version passed at cb6bf37d9b9841ce.
 
 Blocking
 None.
 
 Polish
-1. unit.md, first Johda itse: the question asks for $\Sigma F$ and a car-in-a-bend application; it is long. Consider splitting the car part into its own question or stating it as a follow-up.
-2. inquiry.json activities[16] (Esimerkit solution) derives the speed from the gravitation law: fine.
+1. Polish: the Johda itse split in two is clear: the first derives ΣF = mv²/r, the second applies it to the car and states that friction is the centripetal force, so the student can try each alone. 'Ilmanvastus jätetään huomioimatta' is stated. Solutions [15] [16] derive first. Workload is acceptable.
 
-Checked
-Model sentence states the situation and quantities; the question says what to derive and from what; the derivation starts from MAFY laws and every step is kept; try-first, Näytä johto order works; the text reads as a coherent review without the removed formulas; the number of Johda itse tasks (see above) is fitting for a review unit. fi-easy: short sentences, every derivation step kept, same physics as fi; reads clearly.
+Checked: git diff 3ec8cc24 for this unit and language (unit.md, inquiry.json, figures); fi-easy and en match fi in content.

@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 934b7e5ddc1500e4
-
-Delta review (Johda itse, 2026-11-12) of the version passed at 2a21b90fb748849a.
+CONTENT-HASH: 513af1e7527c82c5
+Delta review (Johda itse round 2, 2026-11-12) of the version passed at 934b7e5ddc1500e4.
 
 Blocking
 None.
 
 Polish
-1. unit.md: three Johda itse tasks, the stopping-distance one is longest (adds an energy cross-check); trim the last paragraph if the unit feels heavy.
-2. No Esimerkit solution found using a removed result without derivation.
+1. Polish: the Esimerkit solutions now derive the removed result in one or two steps from MAFY laws before using it; numbers unchanged, steps are followable for a revising student.
 
-Checked
-Model sentence states the situation and quantities; the question says what to derive and from what; the derivation starts from MAFY laws and every step is kept; try-first, Näytä johto order works; the text reads as a coherent review without the removed formulas; the number of Johda itse tasks (see above) is fitting for a review unit. 
+Checked: git diff 3ec8cc24 for this unit and language (unit.md, inquiry.json, figures); fi-easy and en match fi in content.
