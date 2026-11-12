@@ -176,7 +176,7 @@ Tämän tunnin tehtävät alkavat samalla tavalla kuin mekaniikan tehtävät yle
 - **Tasainen ympyräliike.** Kiihtyvyys osoittaa radan keskipisteeseen. Siksi myös voimien summa osoittaa keskipisteeseen.
 - **Satelliitti.** Satelliittiin vaikuttaa vain gravitaatio. Siksi gravitaatiovoima on itse kokonaisvoima.
 
-<svg data-fig="kartta" viewBox="0 0 380 620" role="img" aria-label="Käsitekartta. Ylhäällä on solmu: ensin voimakuvio, sitten Newtonin toinen laki summa F = m a. Solmusta lähtee alas kolme haaraa. Tasapaino: momentti M = F r. Voimien summa on nolla, joten kappale ei etene. Momenttien summa on nolla, joten kappale ei kierry. Ympyräliike: ratanopeus v = omega r. Normaalikiihtyvyys a n = v toiseen jaettuna r:llä osoittaa keskipisteeseen. Liikeyhtälö on summa F = m v toiseen jaettuna r:llä. Gravitaatio: vetovoima F g = gamma m 1 m 2 jaettuna r toiseen. Kentän voimakkuus g = gamma M jaettuna r toiseen. Satelliitin ratanopeus v = neliöjuuri gamma M jaettuna r:llä." style="max-width:100%;font-size:20px">
+<svg data-fig="kartta" viewBox="0 0 380 620" role="img" aria-label="Käsitekartta. Ylhäällä on solmu: voimakuvio ensin, sitten Newtonin toinen laki summa F = m a. Siitä lähtee alas kolme haaraa. Tasapaino: momentti M = F r. Voimien summa on nolla, joten kappale ei etene. Momenttien summa on nolla, joten kappale ei kierry. Ympyräliike: ratanopeus v = omega r. Normaalikiihtyvyys a n = v toiseen jaettuna r:llä osoittaa keskipisteeseen. Liikeyhtälössä kokonaisvoima antaa normaalikiihtyvyyden. Gravitaatio: vetovoima F g = gamma m 1 m 2 jaettuna r toiseen ja paino G = m g vektoreina. Satelliitille gravitaatiovoima antaa normaalikiihtyvyyden." style="max-width:100%;font-size:20px">
   <line x1="24" y1="80" x2="24" y2="466" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
   <foreignObject x="108" y="18" width="164" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\text{voimakuvio ensin}$</div></foreignObject>
@@ -199,7 +199,7 @@ Tämän tunnin tehtävät alkavat samalla tavalla kuin mekaniikan tehtävät yle
   <foreignObject x="266" y="328" width="96" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{ratanopeus}$</div></foreignObject>
   <foreignObject x="58" y="363" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$a_\text{n} = v^2/r$</div></foreignObject>
   <foreignObject x="221" y="365" width="141" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{keskipisteeseen}$</div></foreignObject>
-  <foreignObject x="58" y="400" width="91" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\Sigma F = mv^2/r$</div></foreignObject>
+  <foreignObject x="58" y="400" width="102" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\Sigma F \text{ antaa } a_\text{n}$</div></foreignObject>
   <foreignObject x="257" y="402" width="105" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{liikeyhtälö}$</div></foreignObject>
   <line x1="24" y1="466" x2="44" y2="466" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="44" y="444" width="328" height="156" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
@@ -207,10 +207,9 @@ Tämän tunnin tehtävät alkavat samalla tavalla kuin mekaniikan tehtävät yle
   <line x1="54" y1="486" x2="362" y2="486" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="58" y="498" width="122" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$F_\text{g} = \gamma m_1 m_2/r^2$</div></foreignObject>
   <foreignObject x="274" y="500" width="88" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{vetovoima}$</div></foreignObject>
-  <foreignObject x="58" y="535" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$g = \gamma M/r^2$</div></foreignObject>
-  <foreignObject x="301" y="537" width="61" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{kenttä}$</div></foreignObject>
-  <foreignObject x="58" y="560" width="81" height="48" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$v = \sqrt{\gamma M/r}$</div></foreignObject>
-  <foreignObject x="257" y="574" width="105" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{satelliitti}$</div></foreignObject>
+  <foreignObject x="58" y="535" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\overline{G} = m\overline{g}$</div></foreignObject>
+  <foreignObject x="310" y="537" width="52" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{paino}$</div></foreignObject>
+  <foreignObject x="58" y="572" width="226" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\text{satelliitti: } F_\text{g} \text{ antaa } a_\text{n}$</div></foreignObject>
 </svg>
 
 Alun kysymys ratkeaa samalla tavalla. Satelliittiin vaikuttaa vain Maan gravitaatiovoima. Se antaa satelliitille normaalikiihtyvyyden eli kiihtyvyyden kohti radan keskipistettä. Mitä kauempana satelliitti kiertää, sitä pidempi on sen kiertoaika. Geostationaarinen rata on päiväntasaajan yläpuolella. Se on juuri sillä etäisyydellä, jolla kiertoaika on sama kuin Maan pyörähdysaika $23\,\text{h}\;56\,\text{min}$. Kiertoajasta saadaan radan säteeksi $r \approx 42\,200\,\text{km}$. Se on noin $35\,800\,\text{km}$ maanpinnan yläpuolella. Ratanopeudeksi saadaan $v = \tfrac{2\pi r}{T} \approx 3{,}07\,\text{km/s}$. Satelliitti ja antenni kiertävät Maan akselin ympäri samassa ajassa ja samaan suuntaan. Siksi satelliitti näyttää pysyvän paikallaan, kun sitä katsotaan antennista.
@@ -316,28 +315,105 @@ Kun kappale on levossa, momenttiehto pätee minkä tahansa pisteen suhteen. Siks
 ```kaavat
 ratanopeus :: v = \omega r
 keskeiskiihtyvyys :: a_\text{n} = \frac{v^2}{r} = \omega^2 r
-\Sigma F = m\frac{v^2}{r}
 ```
 
-Kaavoissa $v$ on ratanopeus ($\text{m/s}$), $r$ on radan säde ($\text{m}$), $\omega = \tfrac{2\pi}{T} = 2\pi f$ on kulmanopeus ($\text{rad/s}$), $T$ on kierrosaika ($\text{s}$) ja $f = \tfrac{1}{T}$ on kierrostaajuus ($\tfrac{1}{\text{s}}$). Siksi $v = \tfrac{2\pi r}{T} = 2\pi r f$. Lisäksi $a_\text{n}$ on normaalikiihtyvyys ($\text{m/s}^2$) ja $\Sigma F$ on kokonaisvoima, joka osoittaa keskipisteeseen ($\text{N}$).
+Kaavoissa $v$ on ratanopeus ($\text{m/s}$), $r$ on radan säde ($\text{m}$), $\omega = \tfrac{2\pi}{T} = 2\pi f$ on kulmanopeus ($\text{rad/s}$), $T$ on kierrosaika ($\text{s}$) ja $f = \tfrac{1}{T}$ on kierrostaajuus ($\tfrac{1}{\text{s}}$). Siksi $v = \tfrac{2\pi r}{T} = 2\pi r f$. Lisäksi $a_\text{n}$ on normaalikiihtyvyys ($\text{m/s}^2$).
 
-Tasaisessa ympyräliikkeessä vauhti on vakio eli pysyy samana. Normaalikiihtyvyys $a_\text{n} = \tfrac{v^2}{r}$ pätee hetkellisesti myös silloin, kun vauhti muuttuu. Radan ylimmässä ja alimmassa kohdassa ei ole tangentin suuntaista voimaa. Siksi kokonaisvoima osoittaa niissä keskipisteeseen. Nopeus on radan tangentin suuntainen.
+Tasaisessa ympyräliikkeessä vauhti on vakio eli pysyy samana. Nopeus on radan tangentin suuntainen. Normaalikiihtyvyys osoittaa radan keskipisteeseen.
+
+Newtonin 2. lain mukaan kokonaisvoima $\Sigma F$ ($\text{N}$) antaa kappaleelle normaalikiihtyvyyden. Siksi kokonaisvoima osoittaa keskipisteeseen. Normaalikiihtyvyys $a_\text{n} = \tfrac{v^2}{r}$ pätee hetkellisesti myös silloin, kun vauhti muuttuu. Radan ylimmässä ja alimmassa kohdassa ei ole tangentin suuntaista voimaa.
 
 Liikeyhtälössä keskipisteeseen osoittavat voimat ovat positiivisia. Ratatasoa vastaan kohtisuorassa suunnassa voimien summa on nolla.
+
+<svg data-fig="kaarre" viewBox="0 0 380 280" role="img" aria-label="Voimakuvio, ei lukuarvoja. Auto on vaakasuoran tien kaarteessa, ja se on piirretty takaa katsottuna suorakulmiona. Kaarteen keskipiste on vasemmalla. Paino G lähtee keskipisteestä alas. Yhtä pitkä tukivoima N lähtee tien pinnasta ylös. Tien pinta on katkoviiva. Kitkavoima F myy lähtee auton vasemmasta alakulmasta vasemmalle. Se on tien suuntainen ja osoittaa kohti kaarteen keskipistettä. Auton vieressä on oranssi kiihtyvyysnuoli. Se osoittaa vasemmalle kohti keskipistettä. Nopeus on poispäin katsojasta. Se on piirretty ympyränä, jonka sisällä on risti." style="max-width:100%;font-size:20px">
+  <line x1="16" y1="206" x2="364" y2="206" stroke="#6b7480" stroke-width="2" stroke-linecap="butt" stroke-dasharray="8 6"/>
+  <foreignObject x="12" y="23" width="186" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px;color:#6b7480">$\leftarrow \text{kaarteen keskipiste}$</div></foreignObject>
+  <line x1="119" y1="142" x2="51" y2="142" stroke="#e8590c" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M62,135.5 L49,142 L62,148.5" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-linejoin="round"/>
+  <foreignObject x="32.5" y="108" width="29" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#e8590c">$\overline{a}$</div></foreignObject>
+  <rect x="135" y="130" width="130" height="76" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="200" y1="168" x2="200" y2="231" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M200,248 L192,230 L208,230 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="165.5" y="240" width="29" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#c92a2a">$\overline{G}$</div></foreignObject>
+  <line x1="232" y1="206" x2="232" y2="143" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M232,126 L240,144 L224,144 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="237.5" y="100" width="29" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#c92a2a">$\overline{N}$</div></foreignObject>
+  <line x1="135" y1="206" x2="94" y2="206" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M77,206 L95,198 L95,214 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="55.5" y="218" width="39" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#c92a2a">$\overline{F}_{\mu}$</div></foreignObject>
+  <circle cx="305" cy="148" r="13" fill="#ffffff" stroke="#1971c2" stroke-width="2.5"/>
+  <line x1="296" y1="139" x2="314" y2="157" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="296" y1="157" x2="314" y2="139" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
+  <foreignObject x="327" y="136" width="29" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px;color:#1971c2">$\overline{v}$</div></foreignObject>
+</svg>
+
+```johda
+Kappaleen massa on $m$. Se on tasaisessa ympyräliikkeessä vauhdilla $v$, ja radan säde on $r$. Johda kappaleeseen vaikuttava kokonaisvoima $\Sigma F$. Sovella tulosta autoon, joka ajaa vaakasuoran tien kaarteessa. Kuinka suuri kitkavoima tarvitaan? Millä vauhdilla auto vielä pysyy tiellä, kun lepokitkakerroin on $\mu_0$?
+---
+Newtonin 2. laki $\Sigma\overline{F} = m\overline{a}$ pätee myös ympyräliikkeessä. Tasaisessa ympyräliikkeessä kiihtyvyys on keskeiskiihtyvyys $a_\text{n} = \tfrac{v^2}{r}$. Se osoittaa radan keskipisteeseen. Siksi myös kokonaisvoima osoittaa keskipisteeseen. Sen suuruus on
+
+$$\Sigma F = ma_\text{n} = m\frac{v^2}{r}$$
+
+Kaarteessa autoon vaikuttaa kolme voimaa: paino $G = mg$, tien tukivoima $N$ ja tien kitkavoima $F_\mu$ (kuva). Pystysuunnassa kiihtyvyyttä ei ole. Siksi $N = mg$. Vaakasuunnassa ainoa voima on kitka. Siksi kitka on kokonaisvoima:
+
+$$F_\mu = m\frac{v^2}{r}$$
+
+Renkaat eivät liu'u sivuttain. Siksi kitka on lepokitkaa. Lepokitka on enintään $\mu_0 N = \mu_0 mg$. Auto pysyy tiellä, kun
+
+$$m\frac{v^2}{r} \le \mu_0 mg \quad\Rightarrow\quad v \le \sqrt{\mu_0 g r}$$
+
+Massa supistuu. Siksi suurin vauhti ei riipu auton massasta.
+```
 
 ### Gravitaatio ja satelliitit
 
 ```kaavat
 Newtonin gravitaatiolaki :: F_\text{g} = \gamma\frac{m_1 m_2}{r^2}
-g = \gamma\frac{M}{r^2}
-v = \sqrt{\frac{\gamma M}{r}}
 ```
 
-Kaavoissa $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$ on gravitaatiovakio, $F_\text{g}$ on gravitaatiovoiman suuruus ($\text{N}$), $m_1$ ja $m_2$ ovat kappaleiden massat ($\text{kg}$), $M$ on keskuskappaleen massa ($\text{kg}$) ja $r$ on keskipisteiden välinen etäisyys ($\text{m}$). Keskuskappale on se kappale, jota satelliitti kiertää.
+Kaavassa $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$ on gravitaatiovakio, $F_\text{g}$ on gravitaatiovoiman suuruus ($\text{N}$), $m_1$ ja $m_2$ ovat kappaleiden massat ($\text{kg}$) ja $r$ on keskipisteiden välinen etäisyys ($\text{m}$).
 
 Gravitaatiolaki pätee pistemäisille kappaleille ja pallosymmetrisille kappaleille. Pallosymmetrisessä kappaleessa massa on jakautunut samalla tavalla joka suuntaan keskipisteestä, kuten Maassa.
 
-Satelliitin ratanopeus saadaan ehdosta $\gamma\tfrac{Mm}{r^2} = m\tfrac{v^2}{r}$. Se pätee ympyräradalle, kun keskuskappaleen massa on paljon suurempi kuin satelliitin massa. Maan satelliitille $r = R + h$, missä $R = 6371\,\text{km}$. Kiertoaika on $T = \tfrac{2\pi r}{v}$.
+Keskuskappale on se kappale, jota satelliitti kiertää. Sen massa on $M$ ($\text{kg}$). Gravitaatiokentän voimakkuus $g$ ($\text{N/kg}$ eli $\text{m/s}^2$) on gravitaatiovoima kappaleen massaa kohden. Maan pinnalla se on putoamiskiihtyvyys.
+
+```johda
+Kappaleen massa on $m$. Se on etäisyydellä $r$ keskuskappaleen keskipisteestä. Keskuskappaleen massa on $M$. Johda gravitaatiokentän voimakkuus $g$ eli putoamiskiihtyvyys tällä etäisyydellä.
+---
+Newtonin gravitaatiolain mukaan kappaleeseen vaikuttaa gravitaatiovoima
+
+$$F_\text{g} = \gamma\frac{Mm}{r^2}$$
+
+Tämä voima on kappaleeseen vaikuttava painovoima $G = mg$. Keskuskappaleen pyörimistä ei oteta huomioon. Merkitse voimat yhtä suuriksi:
+
+$$mg = \gamma\frac{Mm}{r^2}$$
+
+Kappaleen massa $m$ supistuu:
+
+$$g = \gamma\frac{M}{r^2}$$
+
+Kentän voimakkuus ei riipu kappaleen massasta. Siksi kaikki kappaleet putoavat samalla kiihtyvyydellä. Maan pinnalla $r = R$. Kauempana $g$ pienenee etäisyyden neliön mukaan.
+```
+
+Satelliitti kiertää keskuskappaletta ympyräradalla. Radan säde on $r$, ja ratanopeus on $v$ ($\text{m/s}$). Satelliittiin vaikuttaa vain gravitaatiovoima. Se antaa satelliitille normaalikiihtyvyyden. Maan satelliitille $r = R + h$, missä $R = 6371\,\text{km}$ ja $h$ on korkeus maanpinnasta. Kiertoaika on $T = \tfrac{2\pi r}{v}$.
+
+```johda
+Satelliitin massa on $m$. Se kiertää ympyräradalla keskuskappaletta, jonka massa on $M$. Radan säde on $r$. Johda satelliitin ratanopeus $v$.
+---
+Satelliittiin vaikuttaa vain gravitaatiovoima. Siksi gravitaatiovoima on kokonaisvoima, ja se osoittaa radan keskipisteeseen. Newtonin 2. lain mukaan se antaa satelliitille keskeiskiihtyvyyden $a_\text{n} = \tfrac{v^2}{r}$. Kirjoita gravitaatiovoima Newtonin gravitaatiolain mukaan:
+
+$$\gamma\frac{Mm}{r^2} = m\frac{v^2}{r}$$
+
+Satelliitin massa $m$ supistuu. Kerro yhtälö säteellä $r$:
+
+$$v^2 = \frac{\gamma M}{r}$$
+
+Ratanopeus on positiivinen. Siksi
+
+$$v = \sqrt{\frac{\gamma M}{r}}$$
+
+Ratanopeus ei riipu satelliitin massasta. Mitä kauempana rata on, sitä pienempi ratanopeus on. Tulos pätee, kun keskuskappaleen massa on paljon suurempi kuin satelliitin massa. Silloin keskuskappale pysyy paikallaan.
+```
 
 ## Yleisiä virheitä {Virheet}
 
