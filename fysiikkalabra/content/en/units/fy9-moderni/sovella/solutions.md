@@ -291,8 +291,8 @@
 **Formula:** $N = N_0 e^{-\lambda t}$, so $\ln N = \ln N_0 - \lambda t$. The slope of the line is $k = -\lambda$, and $T_{1/2} = \dfrac{\ln 2}{\lambda}$, so $T_{1/2} = \dfrac{\ln 2}{-k}$, where $k = \dfrac{\Delta(\ln N)}{\Delta t}$
 **Conversions:** All the counts are in the same unit, counts in $10\,\text{s}$, and $\ln N$ is a pure number, so no conversions are needed.
 **Substitution:** The slope of the fitted line is $k = \dfrac{4.635 - 5.993}{300\,\text{s} - 0\,\text{s}} = -4.528 \cdot 10^{-3}\,\tfrac{1}{\text{s}}$, so $T_{1/2} = \dfrac{0.6931}{4.528 \cdot 10^{-3}\,\tfrac{1}{\text{s}}} = 153.1\,\text{s}$
-**Answer:** $T_{1/2} \approx 153\,\text{s}$, three significant figures, but the random variation of the counts makes the last digit uncertain. Subtracting the background changes the result, and the fit uses all the points.
-**Reasonableness:** The two-endpoint calculation $T_{1/2} = \dfrac{t \ln 2}{\ln (N_0 : N)} = \dfrac{300\,\text{s} \cdot 0.6931}{\ln (393 : 99)} = 151\,\text{s}$ differs from the fit by only $1.4\,\%$. The count has fallen from $393$ to about $99$ in $300\,\text{s}$, roughly a quarter, and two half-lives would give $\tfrac{393}{4} \approx 98$, so $T_{1/2} \approx \tfrac{300\,\text{s}}{2} = 150\,\text{s}$ is of the right order.
+**Answer:** $T_{1/2} \approx 153\,\text{s}$, three significant figures, but the random variation of the counts makes the last digit uncertain. Without subtracting the background the fit would give $157\,\text{s}$; the fit uses all the points.
+**Reasonableness:** The two-endpoint calculation $T_{1/2} = \dfrac{t \ln 2}{\ln (N_0 : N)} = \dfrac{300\,\text{s} \cdot 0.6931}{\ln (393 : 99)} = 151\,\text{s}$ differs from the fit by only $1.5\,\%$. The count has fallen from $393$ to about $99$ in $300\,\text{s}$, roughly a quarter, and two half-lives would give $\tfrac{393}{4} \approx 98$, so $T_{1/2} \approx \tfrac{300\,\text{s}}{2} = 150\,\text{s}$ is of the right order.
 
 ### b)
 **Find:** an assessment of the group's conclusion
@@ -312,7 +312,7 @@
 
 ### Hyväksytään myös
 - in part a the two-endpoint calculation after subtracting the background: $T_{1/2} = \dfrac{t \ln 2}{\ln (N_0 : N)} \approx 151\,\text{s}$.
-- In part a, some other pair of points far apart after subtracting the background, as long as the result is between $145$ and $157\,\text{s}$.
+- In part a, some other pair of points far apart after subtracting the background, as long as the result is between $147$ and $159\,\text{s}$.
 
 ## fy9-moderni-s6
 

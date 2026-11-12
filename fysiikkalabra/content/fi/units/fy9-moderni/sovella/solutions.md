@@ -291,8 +291,8 @@
 **Kaava:** $N = N_0 e^{-\lambda t}$, joten $\ln N = \ln N_0 - \lambda t$. Suoran kulmakerroin on $k = -\lambda$, ja $T_{1/2} = \dfrac{\ln 2}{\lambda}$, joten $T_{1/2} = \dfrac{\ln 2}{-k}$, missä $k = \dfrac{\Delta(\ln N)}{\Delta t}$
 **Muunnokset:** Kaikki pulssimäärät ovat samassa yksikössä, pulssia $10\,\text{s}$:ssa, ja $\ln N$ on paljas luku, joten muunnoksia ei tarvita.
 **Sijoitus:** Sovitetun suoran kulmakerroin on $k = \dfrac{4{,}635 - 5{,}993}{300\,\text{s} - 0\,\text{s}} = -4{,}528 \cdot 10^{-3}\,\tfrac{1}{\text{s}}$, joten $T_{1/2} = \dfrac{0{,}6931}{4{,}528 \cdot 10^{-3}\,\tfrac{1}{\text{s}}} = 153{,}1\,\text{s}$
-**Vastaus:** $T_{1/2} \approx 153\,\text{s}$, kolme merkitsevää numeroa, mutta laskentojen satunnaisvaihtelu tekee viimeisestä numerosta epävarman. Taustan vähentäminen muuttaa tulosta, ja sovitus käyttää kaikkia pisteitä.
-**Järkevyys:** Kahden päätepisteen laskulla $T_{1/2} = \dfrac{t \ln 2}{\ln (N_0 : N)} = \dfrac{300\,\text{s} \cdot 0{,}6931}{\ln (393 : 99)} = 151\,\text{s}$, joka poikkeaa sovituksesta vain $1{,}4\,\%$. Pulssimäärä on $300\,\text{s}$:ssa pudonnut $393$:sta noin $99$:ään eli noin neljäsosaan, kaksi puoliintumisaikaa antaisi $\tfrac{393}{4} \approx 98$, joten $T_{1/2} \approx \tfrac{300\,\text{s}}{2} = 150\,\text{s}$ on oikeaa luokkaa.
+**Vastaus:** $T_{1/2} \approx 153\,\text{s}$, kolme merkitsevää numeroa, mutta laskentojen satunnaisvaihtelu tekee viimeisestä numerosta epävarman. Ilman taustan vähentämistä sovitus antaisi $157\,\text{s}$; sovitus käyttää kaikkia pisteitä.
+**Järkevyys:** Kahden päätepisteen laskulla $T_{1/2} = \dfrac{t \ln 2}{\ln (N_0 : N)} = \dfrac{300\,\text{s} \cdot 0{,}6931}{\ln (393 : 99)} = 151\,\text{s}$, joka poikkeaa sovituksesta vain $1{,}5\,\%$. Pulssimäärä on $300\,\text{s}$:ssa pudonnut $393$:sta noin $99$:ään eli noin neljäsosaan, kaksi puoliintumisaikaa antaisi $\tfrac{393}{4} \approx 98$, joten $T_{1/2} \approx \tfrac{300\,\text{s}}{2} = 150\,\text{s}$ on oikeaa luokkaa.
 
 ### b)
 **Kysytty:** ryhmän johtopäätöksen arvio
@@ -312,7 +312,7 @@
 
 ### Hyväksytään myös
 - a-kohdassa kahden päätepisteen lasku taustan vähentämisen jälkeen: $T_{1/2} = \dfrac{t \ln 2}{\ln (N_0 : N)} \approx 151\,\text{s}$.
-- a-kohdassa jokin muu kaukana toisistaan oleva pistepari taustan vähentämisen jälkeen, kunhan tulos on välillä $145$–$157\,\text{s}$.
+- a-kohdassa jokin muu kaukana toisistaan oleva pistepari taustan vähentämisen jälkeen, kunhan tulos on välillä $147$–$159\,\text{s}$.
 
 ## fy9-moderni-s6
 

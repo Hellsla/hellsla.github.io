@@ -580,7 +580,7 @@
       {
        "key": "units_precision",
        "points": 1,
-       "detail": "$T_{1/2} \\approx 153\\,\\text{s}$; tulokset $145$–$160\\,\\text{s}$ hyväksytään."
+       "detail": "$T_{1/2} \\approx 153\\,\\text{s}$; tulokset $147$–$159\\,\\text{s}$ hyväksytään."
       },
       {
        "key": "reasonableness",
