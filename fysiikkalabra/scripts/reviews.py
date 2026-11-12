@@ -83,6 +83,26 @@ classification above. The delta packet gives each reviewer the added and removed
 whole set; its PASS names what it covered on line 3 (`SCOPE: delta added-exercise from <hash> base <commit>`), and
 `verify` re-derives that claim from git history (`verify_scopes`). Content still on the visual baseline gets its
 first visual review in full as before.
+
+Translated exercise sets (teacher 2026-11-12). The physics, numbers, answers, units and tolerances of an exercise set are
+the same in every language, so the science review of a translation (content/en/, content/fi-easy/; `--exercises --lang`)
+carries over from the Finnish set's: `scope` gives the science reviewer mode `none`, category "translation-of-passed",
+when (1) the Finnish exercise set has a science PASS (its own, or carried over) for its current hash, (2) the
+translation's own science report is no verdict on its current hash (a PASS needs nothing; a FAIL is never overridden),
+and (3) the translation is numerically equivalent to the Finnish set (`translation_differs` is None): the same exercise
+ids in the same levels and order, the same core exercises; in every exercise the same keys and list lengths, identical
+id, level, kind, core, unit, tolerance, figure, lookup, correct and true marks (choices, statements, order and reasons by
+position) and every other non-text value (a numeric answer, a data table's numbers); in every text (a text answer, an
+option, a hint, a caption, every solutions.md section and its preamble, the same section ids in the same order) the same
+formulas in the same order (check_i18n.formula_spans; whitespace dropped, `{,}` read as `.`, \text{} words kept except a
+sub- or superscript label such as E_\text{sähkö} → E_\text{elec}, which must be translated one to one across the set),
+the same figures and force-diagram specs, the same numbers outside the formulas, and in an option the same capital-letter
+labels in order; the same pictures; and every entry of the translation's figures.json keeping its Finnish numbers and
+formulas. answers.py and the figures' code are shared. Anything else means the usual scope. `carry` then writes the
+row (reviewer science, from the Finnish hash, to the translation's hash, base `-`), `status` counts it while both
+hashes are current and the Finnish science PASS holds, and `verify` re-derives the equivalence of every row in use. When
+the Finnish set changes, its hash no longer matches the row: the translation's science is stale (the page keeps the
+version last reviewed, published_exercises) until a new carry or a review. Pedagogy and visual review each language.
 """
 import collections, datetime, difflib, functools, hashlib, html, json, os, pathlib, re, subprocess, sys, tempfile
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
@@ -156,7 +176,10 @@ WHY = {"core-mark": "exercises or activities marked core or unmarked, nothing el
        "formula-names": "formula names the teacher approved (docs/fy9/kaavanimet.tsv)",
        "presentation-only": "a simulation's drawing only, the change approved in docs/presentation-only.tsv",
        "split": "the exercises moved to their own folder, every file as it was passed (answers.py split line for line)",
-       "added-exercise": "whole exercises added or replaced, every other exercise of the set unchanged"}
+       "added-exercise": "whole exercises added or replaced, every other exercise of the set unchanged",
+       "translation-of-passed": "a translation of the Finnish exercise set, its numbers, answers and formulas the same: the Finnish set's science PASS for its current hash carries over (teacher 2026-11-12)"}
+# Not a RULES category: "translation-of-passed" is never found by `changes`; `scope` grants it to the science reviewer of a
+# translated exercise set alone (module docstring, "Translated exercise sets"); pedagogy and visual review each language.
 
 
 FIGURE_TEXTS = {"lesson": ("inquiry.json", "exit-ticket.json"), "exercises": ("exercises.json",)}   # texts whose "figure": "<id>" the hash follows
@@ -378,6 +401,8 @@ def status(folder, part="lesson"):
         elif name != "legacy" and r[0] == "PASS" and (c := carried(folder, name, r[1], h, part)):
             reports[name] = "PASS"; carry[name] = c["categories"]
         else: reports[name] = "stale"
+        if name == "science" and part == "exercises" and reports[name] in ("missing", "stale") and translation_row(folder, h):
+            reports[name] = "PASS"; carry[name] = TRANSLATED    # the Finnish set's science PASS (teacher 2026-11-12)
     base = False
     if reports[VISUAL] != "PASS":
         base, cats = _visual_baseline(folder, h, part)
@@ -411,6 +436,11 @@ def published_exercises(folder):
         froms = {r[1]} if r is not None and r[0] == "PASS" else set()
         froms |= _passed_before(folder, name)          # versions this reviewer passed earlier: still passed, though it has since judged a newer one
         if name == VISUAL: froms |= baseline_hashes("lesson", courses.lang_of(folder), folder.name, "exercises")   # published before the visual gate
+        if name == "science" and courses.lang_of(folder) != i18n.SOURCE:   # versions carried from a Finnish set its science reviewer passed
+            fi = courses.translation(folder, i18n.SOURCE); r_fi = report(fi, name, "exercises")
+            fi_passed = _passed_before(fi, name) | ({r_fi[1]} if r_fi and r_fi[0] == "PASS" else set())
+            fi_passed |= {c["to"] for c in carries(fi, "exercises") if c["reviewer"] == name and c["from"] in fi_passed}
+            froms |= {c["to"] for c in ex if c["reviewer"] == name and c["categories"] == TRANSLATED and c["from"] in fi_passed}
         if not froms: return None
         passed[name] = froms | {c["to"] for c in ex if c["reviewer"] == name and c["from"] in froms}
     log = (git("log", "--format=%H", "-n", "80", "--", courses.exercise_dir(folder).relative_to(ROOT).as_posix(), folder.relative_to(ROOT).as_posix(),
@@ -838,6 +868,112 @@ def added_exercises(folder, old, new):
             if name in kept_pics: return None
         else: return None
     return {"added": added, "removed": removed, "replaced": replaced, "kept": kept}
+
+
+# ------------------------------------------------------------------ a translated exercise set (teacher 2026-11-12)
+TRANSLATED = "translation-of-passed"
+EXACT_KEYS = ("id", "level", "kind", "core", "unit", "tolerance", "figure", "correct", "true", "lookup")   # identical in every language
+OPTION_LISTS = ("choices", "statements", "order", "reasons")    # options compared by position, their labels (A, B, …) too
+SCRIPT_WORD = re.compile(r"([_^])(\{?)\\(text|mathrm)\{([^{}]*)\}")   # E_\text{sähkö}, x_{\text{max}}: a translated label
+PROSE_NUMBER = re.compile(r"(?<!\w)\d+(?:[.,]\d+)*")
+LABEL = re.compile(r"(?<![\w\\{])[A-Z](?!\w)")
+MATH_OR_BLOCK = re.compile(r"<svg\b.*?</svg>|```.*?```|\$\$.*?\$\$|\$[^$\n]*\$", re.S)
+
+
+def _tr_text(a, b, pairs, labels=False):
+    """True when the translated text b keeps the science of the Finnish text a: the same formulas in the same order
+    (check_i18n.formula_spans; whitespace dropped, {,} read as a point, \\text{} words kept except a sub- or superscript
+    label, whose words go to `pairs` for the one-to-one check), the same figures (data-fig) and force-diagram specs, the
+    same numbers outside the formulas (as a multiset: word order differs by language) and, in an option (`labels`), the
+    same capital-letter labels in order ("Kappale B" → "Body B"; English "A" and "I" before a lowercase word are words)."""
+    import check_i18n
+    if not (isinstance(a, str) and isinstance(b, str)): return a == b
+    def spans(s):
+        out = []
+        for f in check_i18n.formula_spans(re.sub(r"<svg\b.*?</svg>", "", s, flags=re.S)):
+            words = []
+            f = SCRIPT_WORD.sub(lambda m: (words.append(m.group(4).strip()), f"{m.group(1)}{m.group(2)}\\{m.group(3)}{{§}}")[1], re.sub(r"\s+", "", f).replace("{,}", "."))
+            out.append((f, words))
+        return out
+    sa, sb = spans(a), spans(b)
+    if [f for f, _ in sa] != [f for f, _ in sb]: return False
+    for (_, wa), (_, wb) in zip(sa, sb): pairs.extend(zip(wa, wb))
+    if re.findall(r'data-fig="([^"]+)"', a) != re.findall(r'data-fig="([^"]+)"', b) or FBD_SPEC.findall(a) != FBD_SPEC.findall(b): return False
+    pa, pb = MATH_OR_BLOCK.sub(" ", a), MATH_OR_BLOCK.sub(" ", b)
+    nums = lambda s: sorted(n.replace(",", ".") for n in PROSE_NUMBER.findall(s))
+    if nums(pa) != nums(pb): return False
+    lab = lambda s: [m.group(0) for m in LABEL.finditer(s) if not (m.group(0) in "AI" and re.match(r"\s+[a-z0-9]", s[m.end():]))]
+    return not labels or lab(pa) == lab(pb)
+
+
+def _tr_data(a, b, pairs, key=None, parent=None, labels=False):
+    """True when the exercise b is the exercise a with only its texts translated, every text keeping its science
+    (_tr_text): the same keys and list lengths, EXACT_KEYS and every other non-text value (a numeric answer, a data
+    table's numbers) identical, the texts check_i18n translates (is_text) compared by _tr_text."""
+    import check_i18n
+    if isinstance(a, dict):
+        return isinstance(b, dict) and set(a) == set(b) and all(
+            _tr_data(a[k], b[k], pairs, k, check_i18n.value_words(key, parent), labels or k in OPTION_LISTS) for k in a)
+    if isinstance(a, list):
+        return isinstance(b, list) and len(a) == len(b) and all(_tr_data(x, y, pairs, key, parent, labels) for x, y in zip(a, b))
+    if key in EXACT_KEYS or not check_i18n.is_text(key, a, parent): return type(a) == type(b) and a == b
+    return _tr_text(a, b, pairs, labels)
+
+
+def translation_differs(folder, fi=None, tr=None):
+    """None when the translated exercise set (`folder`, a content/<lang>/ lesson) is numerically equivalent to the Finnish
+    one (module docstring, "Translated exercise sets"); otherwise why not, in a few words. `fi`, `tr`: the Sources the two
+    are read from (the working tree by default)."""
+    fi, tr = fi or WorkTree(), tr or WorkTree()
+    tr.lang = courses.lang_of(folder); fi.lang = i18n.SOURCE
+    src = courses.translation(folder, i18n.SOURCE)
+    at = lambda f, n: courses.lesson_rel(f, n)
+    ia, ib = _exercise_items(fi.read(at(src, "exercises.json"))), _exercise_items(tr.read(at(folder, "exercises.json")))
+    if not (ia and ib): return "exercises.json cannot be read as three levels of exercises"
+    (A, oa, da), (B, ob, db) = ia, ib
+    if oa != ob: return "the exercise ids, levels or order differ"
+    if _core(da) != _core(db): return "the core exercises differ"
+    pairs = []
+    for i in A:
+        if not _tr_data(A[i][1], B[i][1], pairs): return f"{i}: a number, formula, answer or setting differs"
+    sa, sb = _solution_sections(fi.read(at(src, "solutions.md"))), _solution_sections(tr.read(at(folder, "solutions.md")))
+    if not (sa and sb) or [h for h, _ in sa[1]] != [h for h, _ in sb[1]]: return "solutions.md has other sections"
+    if not _tr_text(sa[0], sb[0], pairs): return "the text before the first solution differs"
+    for (i, x), (_, y) in zip(sa[1], sb[1]):
+        if not _tr_text(x, y, pairs): return f"the solution of {i}: its formulas or numbers differ"
+    fwd, back = {}, {}
+    for x, y in pairs:
+        if fwd.setdefault(x, y) != y or back.setdefault(y, x) != x: return f"a subscript label is translated two ways (\\text{{{x}}} / \\text{{{y}}})"
+    texts = lambda s, f: [s.read(at(f, n)) for n in courses.EXERCISE_FILES]
+    if courses.pic_refs_in(texts(fi, src)) != courses.pic_refs_in(texts(tr, folder)): return "the pictures differ"
+    for name, rel, _ in entries(folder, tr, "exercises"):
+        if not name.startswith("figures.json:"): continue
+        try: words = json.loads(tr.read(rel) or "{}")
+        except json.JSONDecodeError: return f"{rel} cannot be read"
+        if not isinstance(words, dict) or not all(_tr_text(k, v, []) for k, v in words.items()): return f"{rel}: a figure's words carry other numbers or formulas"
+    return None
+
+
+def _translation_from(folder):
+    """(Finnish exercise hash, Finnish folder) when the Finnish exercise set of this translated lesson has a science
+    PASS (its own or carried over) for its current hash; None otherwise, and for the Finnish lesson itself."""
+    if courses.lang_of(folder) == i18n.SOURCE: return None
+    src = courses.translation(folder, i18n.SOURCE)
+    if not (courses.exercise_dir(src) / "exercises.json").is_file(): return None
+    s = status(src, "exercises")
+    return (s["hash"], src) if s["reports"]["science"] == "PASS" else None
+
+
+def translation_row(folder, h):
+    """The carry row (science, TRANSLATED) that counts for this translated exercise set at hash h: its `to` is h, its
+    `from` the Finnish set's current hash, which the Finnish science reviewer passed, and the translation's own science
+    report is no verdict on h (its PASS needs no carry; its FAIL is never overridden). verify_carries re-derives the
+    equivalence of every row in use; status trusts the hashes only."""
+    rep = report(folder, "science", "exercises")
+    if rep is not None and rep[1] == h: return None
+    fi = _translation_from(folder)
+    return fi and next((c for c in carries(folder, "exercises") if c["reviewer"] == "science" and c["categories"] == TRANSLATED
+                        and c["from"] == fi[0] and c["to"] == h), None)
 
 
 def objective_form(old, new):
@@ -1395,6 +1531,10 @@ def scope(folder, part="lesson"):
     out, cache, now = {}, {}, content_hash(folder, part)
     for name in REVIEWS:
         rep = report(folder, name, part)
+        if name == "science" and part == "exercises" and not (rep and rep[1] == now) and (fi := _translation_from(folder)) and translation_differs(folder) is None:
+            # a translated exercise set numerically equivalent to the Finnish one, whose science PASS is current: that PASS
+            # carries over (teacher 2026-11-12); `carry` writes the row, verify_carries re-derives it
+            out[name] = {"mode": "none", "base": None, "from": fi[0], "why": WHY[TRANSLATED], "diff": "", "categories": [TRANSLATED]}; continue
         full = lambda why: {"mode": "full", "base": None, "from": None, "why": why, "diff": "", "categories": []}
         if rep is not None and rep[0] != "PASS":
             # a FAIL of a later round: the scope is measured from the newest version this reviewer passed, so a fix
@@ -1463,7 +1603,7 @@ def carry(folder, part="lesson"):
     for name in REVIEWS:
         frm = sc[name].get("from")                     # the hash its PASS (or, for visual, its baseline row) is for
         if sc[name]["mode"] != "none" or frm is None or frm == h or carried(folder, name, frm, h, part): continue
-        rows.append({"date": str(datetime.date.today()), "reviewer": name, "from": frm, "to": h, "base": sc[name]["base"][:12],
+        rows.append({"date": str(datetime.date.today()), "reviewer": name, "from": frm, "to": h, "base": (sc[name]["base"] or "-")[:12],
                      "categories": ",".join(sc[name]["categories"])}); added.append(name)
     if added:
         f.parent.mkdir(exist_ok=True)
@@ -1475,9 +1615,13 @@ def carry(folder, part="lesson"):
 def verify_carries(folder, part="lesson"):
     """Errors for carry rows in use: the change since the base must still be one this reviewer need not see."""
     errs, h, what = [], content_hash(folder, part), folder.name + (" exercises" if part == "exercises" else "")
+    if part == "exercises" and (t := translation_row(folder, h)) and status(folder, part)["carried"].get("science") == TRANSLATED:
+        why = translation_differs(folder)              # the hashes are bound by the row; the equivalence is re-derived here
+        if why: errs.append(f"{what}: carry of science from the Finnish exercise set {t['from']}: the translation is not numerically equivalent ({why})")
     for name in REVIEWS:
         rep = report(folder, name, part)
         c = carried(folder, name, rep[1], h, part) if rep and rep[0] == "PASS" and rep[1] != h else None
+        if c and c["categories"] == TRANSLATED: continue   # checked above (its `from` is a Finnish hash)
         if not c and name == VISUAL and not (rep and rep[0] == "PASS" and rep[1] == h):   # a carry of the visual baseline
             c = next((x for b in baseline_hashes("lesson", courses.lang_of(folder), folder.name, part) if b != h and (x := carried(folder, name, b, h, part))), None)
         if not c: continue
