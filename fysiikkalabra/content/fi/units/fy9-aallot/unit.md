@@ -246,8 +246,8 @@ missä $f$ on taajuus ($\text{Hz}$), $T$ jaksonaika ($\text{s}$), $\overline{F}$
 
 ```kaavat
 aaltoliikkeen perusyhtälö :: v = f\lambda
-vahvistava interferenssi :: \Delta s = n\lambda
-heikentävä interferenssi :: \Delta s = \left(n + \tfrac12\right)\lambda
+\Delta s = n\lambda
+\Delta s = \left(n + \tfrac12\right)\lambda
 ```
 
 missä $v$ on aallon nopeus ($\text{m/s}$), $\lambda$ aallonpituus ($\text{m}$) ja $\Delta s$ matkaero kahdesta samassa vaiheessa värähtelevästä lähteestä ($\text{m}$), $n = 0, 1, 2, \ldots$ Ensimmäinen ehto antaa vahvistavan ja toinen heikentävän interferenssin. Diffraktio on voimakasta, kun raon tai esteen leveys on aallonpituuden suuruinen tai pienempi. Heijastuksessa tulokulma on heijastuskulman suuruinen, kun kulmat mitataan pinnan normaalista.

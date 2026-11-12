@@ -304,8 +304,8 @@ keskinopeus :: \overline{v}_\text{k} = \frac{\Delta\overline{x}}{\Delta t}
 
 Tässä $\Delta\overline{x}$ on siirtymä ($\text{m}$) ja $\Delta t$ on kulunut aika ($\text{s}$). Kun liike on suoraviivaista, riittää etumerkillinen siirtymä $\Delta x = x_2 - x_1$. Silloin keskinopeus on $v_\text{k} = \tfrac{\Delta x}{\Delta t}$. Oletetaan, että nopeus $v$ on vakio ja kappale on hetkellä $t = 0$ paikassa $x_0$. Silloin
 
-```kaavat
-paikka tasaisessa suoraviivaisessa liikkeessä :: x = x_0 + v\,t
+```latex
+x = x_0 + v\,t
 ```
 
 Tämä on $(t,x)$-kuvaajan suora. $x_0$ on kohta, jossa suora leikkaa paikka-akselin, ja $v$ on suoran kulmakerroin. Paikka on suoraan verrannollinen aikaan vain silloin, kun $x_0 = 0$. Suoraan verrannollinen tarkoittaa, että kun aika kaksinkertaistuu, myös paikka kaksinkertaistuu.
@@ -333,8 +333,8 @@ Tässä $v_0$ on alkunopeus ($\text{m/s}$) ja $a$ on kiihtyvyys ($\text{m/s}^2$)
 
 Kun $(t,x)$-kuvaaja on kaareva, hetkellinen nopeus on tangentin kulmakerroin $k$. Tangentti on suora, joka sivuaa eli koskettaa käyrää yhdessä pisteessä. Jos suhde lasketaan käyrän kahden pisteen kautta, saadaan keskinopeus. Siirtymä on $(t,v)$-kuvaajan ja aika-akselin välinen pinta-ala. Akselin alapuolella oleva osa lasketaan negatiivisena. Tasaisesti kiihtyvässä liikkeessä alue on puolisuunnikas. Siksi keskinopeus on alkunopeuden ja loppunopeuden keskiarvo:
 
-```kaavat
-siirtymä tasaisesti kiihtyvässä suoraviivaisessa liikkeessä :: \Delta x = \frac{v_0 + v}{2}\,t
+```latex
+\Delta x = \frac{v_0 + v}{2}\,t
 ```
 
 <svg data-fig="kuvaajat" viewBox="0 0 440 650" role="img" aria-label="Kaavakuva: yksi liike kahtena kuvaajana. Kuvaajilla on sama aika-akseli. Alhaalla on nopeuden kuvaaja. Nopeus kasvaa nollasta tasaisesti hetkeen t1 asti. Se pysyy vakiona hetkeen t2 asti. Sitten se pienenee tasaisesti nollaan hetkellä t3. Kuvaajan alle jäävä alue on vihreä. Sen pinta-ala on siirtymä Δx. Ylhäällä on paikan kuvaaja. Ensin on käyrä, joka kaartuu ylöspäin. Sitten on nouseva suora. Lopuksi on käyrä, joka loivenee vaakasuoraksi. Paikka kasvaa koko liikkeen aikana yhteensä Δx. Käyrän pisteeseen P on piirretty sininen tangentti. Sen kulmakerroin k on nopeus v_P. Sama arvo on merkitty myös alempaan kuvaajaan." style="max-width:100%;font-size:21px">
@@ -386,8 +386,8 @@ siirtymä tasaisesti kiihtyvässä suoraviivaisessa liikkeessä :: \Delta x = \f
 
 Kahden kappaleen paikat kirjoitetaan samassa koordinaatistossa. Kappaleet kohtaavat eli ovat samassa paikassa, kun
 
-```kaavat
-kohtaamisehto :: x_\text{A}(t) = x_\text{B}(t)
+```latex
+x_\text{A}(t) = x_\text{B}(t)
 ```
 
 $(t,x)$-kuvaajassa kohtaaminen on kohta, jossa viivat leikkaavat eli menevät ristiin. Ylempänä oleva viiva tarkoittaa suurempaa paikkakoordinaattia. Ajatellaan, että takana oleva kappale on aluksi hitaampi ja kiihtyy. Silloin kappaleiden välimatka on suurimmillaan, kun niiden nopeudet ovat yhtä suuret.

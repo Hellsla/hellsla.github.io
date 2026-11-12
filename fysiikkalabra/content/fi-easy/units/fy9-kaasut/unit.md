@@ -274,8 +274,8 @@ tilanyhtälö vakioainemäärälle :: \frac{pV}{T} = \text{vakio}
 
 Kahdessa eri tilassa siis $\tfrac{p_1 V_1}{T_1} = \tfrac{p_2 V_2}{T_2}$. Tästä saadaan kolme erikoistapausta. Kun lämpötila on vakio, pätee Boylen laki $p_1V_1 = p_2V_2$. Kun paine on vakio, $V \propto T$. Kun tilavuus on vakio, $p \propto T$. Merkki $\propto$ tarkoittaa, että suureet ovat suoraan verrannolliset. Kelvinlämpötila on
 
-```kaavat
-lämpötila kelvineinä :: T = \theta + 273{,}15\,\text{K}
+```latex
+T = \theta + 273{,}15\,\text{K}
 ```
 
 Tässä $\theta$ on celsiuslämpötilan lukuarvo. Kokeessa absoluuttinen nollapiste saadaan näin: $(\theta, p)$- tai $(\theta, V)$-suoraa jatketaan nollaan asti. Tulos on mallin ennuste. Todellinen kaasu tiivistyy eli muuttuu nesteeksi jo ennen sitä.
@@ -296,8 +296,8 @@ lämpöopin 1. pääsääntö :: \Delta U = Q + W
 
 Tässä $Q$ on lämpö, joka siirtyy kaasuun (J), ja $W$ on työ, joka tehdään kaasuun (J). Kun kaasua puristetaan, $W = p\Delta V$ on positiivinen. Kun kaasu laajenee, se tekee itse työn $p\Delta V$. Silloin $W = -p\Delta V$, ja sisäenergia pienenee tämän verran. Lämpövoimakone toimii kierroksina. Yhden kierroksen aikana kone ottaa kuumasta lähteestä lämmön $Q_1$. Se tekee työn $W$. Lisäksi se luovuttaa eli antaa lämmön $Q_2$ kylmempään ympäristöön. Energia säilyy, joten
 
-```kaavat
-lämpövoimakoneen tekemä työ :: W = Q_1 - Q_2
+```latex
+W = Q_1 - Q_2
 ```
 
 Hyötysuhde on

@@ -258,8 +258,8 @@ Nyt voimme vastata alun kysymykseen. Kymmenessä litrassa bensiiniä on energiaa
 
 Eristetty systeemi on systeemi, johon energiaa ei tule ja josta energiaa ei lähde. Eristetyssä systeemissä kokonaisenergia pysyy samana:
 
-```kaavat
-energian säilymislaki :: E_\text{alussa} = E_\text{lopussa}
+```latex
+E_\text{alussa} = E_\text{lopussa}
 ```
 
 Yhtälön kummallakin puolella on kaikkien energialajien summa. Myös lämpöenergia on mukana. Teho kertoo, kuinka paljon energiaa muuttuu tai siirtyy aikayksikössä:
@@ -270,8 +270,8 @@ teho :: P = \frac{\Delta E}{\Delta t}
 
 Kaavassa $P$ on teho (W), $\Delta E$ energia (J) ja $\Delta t$ aika (s). Jos teho vaihtelee, kaava antaa keskitehon. Jos teho pysyy samana, $E = P\,t$. Kilowattitunti on energian yksikkö. Se muunnetaan jouleiksi sijoittamalla:
 
-```kaavat
-kilowattitunti jouleina :: 1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}
+```latex
+1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}
 ```
 
 ### Hyötysuhde ja energiaketju
@@ -284,8 +284,8 @@ Kaavassa $\eta$ on hyötysuhde. $E_\text{a}$ on annettu hyötyenergia ja $P_\tex
 
 Energiaketjussa on monta vaihetta peräkkäin. Jokaisen vaiheen hyötyteho on seuraavan vaiheen otettu teho. Siksi hyötysuhteet kerrotaan:
 
-```kaavat
-energiaketjun kokonaishyötysuhde :: \eta = \eta_1\,\eta_2\,\eta_3
+```latex
+\eta = \eta_1\,\eta_2\,\eta_3
 ```
 
 Kuvan esimerkkilaitoksessa $\eta = 0{,}90 \cdot 0{,}45 \cdot 0{,}98 \approx 0{,}40$. Polttoainetehosta $500\,\text{MW}$ tulee siis sähköksi $198\,\text{MW}$. Kuvan kaistojen leveydet ovat mittakaavassa. Lähtevät kaistat ovat yhteensä yhtä leveät kuin tuleva kaista.

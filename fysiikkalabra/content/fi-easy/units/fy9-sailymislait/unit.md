@@ -332,8 +332,8 @@ impulssi-liikemääräperiaate :: \overline{I} = \Delta\overline{p}
 
 Kaavoissa $\overline{p}$ on liikemäärä ($\text{kg} \cdot \text{m/s}$) ja $\overline{I}$ impulssi ($\text{N} \cdot \text{s}$). $\overline{F}$ on voima, joka on vakiosuuruinen aikavälin $\Delta t$ ajan. Liikemäärä muuttuu kokonaisvoiman impulssin verran: $\Sigma\overline{F}\,\Delta t = \Delta\overline{p}$. Jos voima muuttuu, keskimääräinen voima on $F_\text{ka} = |\Delta p| : \Delta t$. Yhdessä ulottuvuudessa eli suoralla viivalla valitaan positiivinen suunta. Nopeudet, jotka osoittavat vastakkaiseen suuntaan, ovat negatiivisia. Kun ulkoisten voimien impulssi on niin pieni, ettei sillä ole merkitystä,
 
-```kaavat
-liikemäärän säilymislaki :: m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'
+```latex
+m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'
 ```
 
 Kimmoisassa törmäyksessä myös liike-energia säilyy. Täysin kimmottomassa törmäyksessä kappaleet jatkavat yhteisellä nopeudella, $v_1' = v_2' = v'$. Silloin liike-energiaa muuttuu sisäenergiaksi eniten.
@@ -342,10 +342,12 @@ Kimmoisassa törmäyksessä myös liike-energia säilyy. Täysin kimmottomassa t
 
 Vaakasuoralla tiellä auton pysähtymismatka on reaktiomatka ja jarrutusmatka yhteensä:
 
-```kaavat
-pysähtymismatka :: s_\text{p} = v_0\,t_\text{r} + \frac{v_0^2}{2a}
-vesivoimalan teho :: P_\text{vesi} = \eta\rho Qgh
-tuulivoimalan teho :: P_\text{tuuli} = \tfrac12\eta\rho Av^3
+```latex
+\begin{aligned}
+s_\text{p} &= v_0\,t_\text{r} + \frac{v_0^2}{2a} \\
+P_\text{vesi} &= \eta\rho Qgh \\
+P_\text{tuuli} &= \tfrac12\eta\rho Av^3
+\end{aligned}
 ```
 
 Kaavassa $t_\text{r}$ on reaktioaika ($\text{s}$) ja $a$ hidastuvuus ($\text{m/s}^2$). Hidastuvuus oletetaan vakioksi. Kun renkaat ovat juuri lukkiutumassa, $a = \mu g$. Voimaloiden sähkötehon kaavoissa $\eta$ on hyötysuhde ja $\rho$ veden tai ilman tiheys. Vesivoimalassa $Q$ on virtaama ($\text{m}^3\text{/s}$) eli vesimäärä sekunnissa, ja $h$ on putouskorkeus ($\text{m}$). Tuulivoimalassa $A$ on pinta-ala, jonka roottori pyyhkäisee ($\text{m}^2$), ja $v$ on tuulen nopeus. Tuulen tehon kaava pätee, kun hyötysuhde pysyy vakiona ja voimalan teho on pienempi kuin sen nimellisteho eli suurin teho, jolle se on tehty.

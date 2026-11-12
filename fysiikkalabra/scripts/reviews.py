@@ -1027,11 +1027,11 @@ def _figure_free(folder, code_folder, texts, code_names, oid, src, names=frozens
     return out
 
 
-def item_view(kind, iid, lang, src):
+def item_view(kind, iid, lang, src, passed=False):
     """What an item's reviews judge apart from its teacher-approved figures, as `src` (WorkTree or Commit) has it. A
     unit's own task set is reviewed with the unit: the same view of it, its figures owned by "<unit>-sovella"."""
     m, key, oid = _item(kind, iid)
-    names = frozenset(kaavat.approved(key, lang)) if kind == "unit" else frozenset()
+    names = (kaavat.ANY if passed else frozenset(kaavat.approved(key, lang))) if kind == "unit" else frozenset()   # a passed version's names may be taken out
     out = _figure_free(m.folder(key, lang), m.code_folder(key), m.TEXTS, getattr(m, "CODE", ("figures.py",)), oid, src, names)
     if kind == "unit" and m.has_tasks(key, lang):
         import practice
@@ -1062,7 +1062,7 @@ def item_carry(kind, iid, lang=i18n.SOURCE):
         base = _item_base(kind, iid, lang, frm)
         if base is None: print(f"{name}: the version it passed is not in git history, review needed"); continue
         now = now or item_view(kind, iid, lang, WorkTree())
-        if item_view(kind, iid, lang, Commit(base)) != now: print(f"{name}: more than teacher-approved figures and formula names changed, review needed"); continue
+        if item_view(kind, iid, lang, Commit(base), passed=True) != now: print(f"{name}: more than teacher-approved figures and formula names changed, review needed"); continue
         cat = item_category(kind, iid, lang, base)
         rows.append({"date": str(datetime.date.today()), "reviewer": name, "from": frm, "to": h, "base": base[:12], "categories": cat})
         added.append(name); print(f"{name}: carried over ({'; '.join(WHY[c] for c in cat.split(','))})")
@@ -1104,7 +1104,7 @@ def verify_item_carries(kind, iid, lang):
         what = f"{lang}/{key}: carry of {name}"
         if git("rev-parse", "--verify", "-q", f"{c['base']}^{{commit}}") is None: errs.append(f"{what} names commit {c['base']}, not in history (CI needs fetch-depth: 0)"); continue
         if m.content_hash(key, lang, read=Commit(c["base"]).read) != c["from"]: errs.append(f"{what}: commit {c['base']} does not hold hash {c['from']}"); continue
-        if item_view(kind, iid, lang, Commit(c["base"])) != item_view(kind, iid, lang, WorkTree()): errs.append(f"{what} covers more than figures and formula names the teacher approved")
+        if item_view(kind, iid, lang, Commit(c["base"]), passed=True) != item_view(kind, iid, lang, WorkTree()): errs.append(f"{what} covers more than figures and formula names the teacher approved")
     return errs
 
 
@@ -1313,7 +1313,7 @@ def changes(folder, base, part="lesson", split=False, new=None):
                 a, b = a2, b2
         if rel.endswith("/lesson.md") and a and b and kaavat.names_of(a) != kaavat.names_of(b):   # formula names of a docs/<module>/kaavanimet.tsv
             ok = frozenset(kaavat.approved(folder.name, rel.split("/")[1]))
-            if ok and kaavat.review_view(a, ok) == kaavat.review_view(b, ok):
+            if kaavat.review_view(a, kaavat.ANY) == kaavat.review_view(b, ok):   # names taken out, or approved ones added
                 cats.add("formula-names"); diff.append(f"--- {rel}: formula names the teacher approved"); continue
         if rel.startswith("tests/sims/"): cats.add(test_change(rel, base, new)); diff.append(f"--- {rel}: simulation assertions changed"); continue
         if not binary and presentation_change(old, new, rel):   # where or how the sim draws, the exact change of the file approved (one row for every language): the visual reviewer sees the diff

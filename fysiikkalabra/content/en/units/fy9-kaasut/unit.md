@@ -274,8 +274,8 @@ combined gas law (constant amount of gas) :: \frac{pV}{T} = \text{constant}
 
 that is, for two states $\tfrac{p_1 V_1}{T_1} = \tfrac{p_2 V_2}{T_2}$. From it follow the special cases: at constant temperature Boyle's law $p_1V_1 = p_2V_2$, at constant pressure $V \propto T$ and at constant volume $p \propto T$. The kelvin temperature is
 
-```kaavat
-temperature in kelvins :: T = \theta + 273.15\,\text{K}
+```latex
+T = \theta + 273.15\,\text{K}
 ```
 
 where $\theta$ is the numerical value of the Celsius temperature. In an experiment, absolute zero is obtained by extending the $(\theta, p)$ or $(\theta, V)$ line to zero. It is a prediction of the model: a real gas condenses into a liquid before that.
@@ -296,8 +296,8 @@ first law of thermodynamics :: \Delta U = Q + W
 
 where $Q$ is the heat transferred to the gas (J) and $W$ the work done on the gas (J). In a compression $W = p\Delta V$ is positive. An expanding gas itself does the work $p\Delta V$, so then $W = -p\Delta V$ and the internal energy decreases by this amount. In one cycle a heat engine takes the heat $Q_1$ from a hot source, does the work $W$ and gives the heat $Q_2$ to a colder environment. Energy is conserved, so
 
-```kaavat
-work done by a heat engine :: W = Q_1 - Q_2
+```latex
+W = Q_1 - Q_2
 ```
 
 and the efficiency is

@@ -246,8 +246,8 @@ missä $f$ on taajuus ($\text{Hz}$), $T$ jaksonaika ($\text{s}$), $\overline{F}$
 
 ```kaavat
 aaltoliikkeen perusyhtälö :: v = f\lambda
-vahvistava interferenssi :: \Delta s = n\lambda
-heikentävä interferenssi :: \Delta s = \left(n + \tfrac12\right)\lambda
+\Delta s = n\lambda
+\Delta s = \left(n + \tfrac12\right)\lambda
 ```
 
 missä $v$ on aallon nopeus ($\text{m/s}$), $\lambda$ aallonpituus ($\text{m}$) ja $\Delta s$ matkaero ($\text{m}$), $n = 0, 1, 2, \ldots$ Matkaero on se, kuinka paljon pidemmän matkan toinen aalto kulkee. Tässä aallot tulevat kahdesta lähteestä, jotka värähtelevät samassa vaiheessa eli samaan tahtiin. Ensimmäinen ehto antaa vahvistavan interferenssin, ja toinen ehto antaa heikentävän interferenssin. Diffraktio eli aallon taipuminen on voimakasta, kun raon tai esteen leveys on aallonpituuden suuruinen tai pienempi. Heijastuksessa tulokulma on yhtä suuri kuin heijastuskulma. Kulmat mitataan pinnan normaalista eli suorasta, joka on kohtisuorassa pintaa vastaan.

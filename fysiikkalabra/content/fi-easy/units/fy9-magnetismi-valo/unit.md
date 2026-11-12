@@ -185,7 +185,7 @@ Nyt voimme vastata alun kysymykseen. Kaapelia pitkin siirretään mantereelta $4
 
 ```kaavat
 varattuun hiukkaseen kohdistuva magneettinen voima :: F_\text{M} = QvB_\perp
-varatun hiukkasen ympyräradan säde magneettikentässä :: r = \frac{mv}{QB}
+r = \frac{mv}{QB}
 suoraan johtimeen kohdistuva magneettinen voima :: F_\text{M} = I\ell B_\perp
 suoran virtajohtimen magneettivuon tiheys :: B = \frac{\mu_0 I}{2\pi r}
 pitkän käämin magneettivuon tiheys :: B = N\,\frac{\mu_0}{\ell}\,I
@@ -292,7 +292,7 @@ käämiin indusoituva jännite :: e = -N\frac{\Delta\Phi}{\Delta t}
 generaattorissa käämiin indusoituvan sinimuotoisen vaihtojännitteen huippuarvo :: u_0 = NAB\cdot 2\pi f
 sinimuotoisen vaihtojännitteen tehollinen arvo :: U_\text{eff} = \frac{u_0}{\sqrt{2}}
 muuntaja :: \frac{N_1}{N_2} = \frac{U_1}{U_2} \approx \frac{I_2}{I_1}
-siirtojohdon tehohäviö :: P_\text{h} = RI^2
+P_\text{h} = RI^2
 ```
 
 missä $e$ on induktiojännite ($\text{V}$), $\Phi = BA$ magneettivuo ($\text{Wb}$), kun kenttä on kohtisuorassa pintaa $A$ vastaan, $u_0$ generaattorin jännitteen huippuarvo, $f$ pyörimistaajuus ($\text{Hz}$), $U_\text{eff}$ ja $u_0$ tehollinen arvo ja huippuarvo, indeksit $1$ ja $2$ muuntajan ensiö- ja toisiopuoli ja $P_\text{h}$ siirtojohdon häviöteho, kun $I = \tfrac{P}{U}$. Miinusmerkki on Lenzin laki: induktiovirta vastustaa vuon muutosta. Kun tanko liikkuu kentässä, sen jännite on $e = vBl$. Muuntajan yhtälö koskee vaihtojännitettä. Virtojen suhde on tasan yhtä suuri vain ideaalisessa muuntajassa. Ideaalisessa muuntajassa ei ole häviöitä.
@@ -303,9 +303,9 @@ missä $e$ on induktiojännite ($\text{V}$), $\Phi = BA$ magneettivuo ($\text{Wb
 aaltoliikkeen perusyhtälö :: c = f\lambda
 Wienin siirtymälaki :: \lambda_\text{max} = \frac{b}{T}
 taittumislaki (Snellin laki) :: \frac{\sin\alpha_1}{\sin\alpha_2} = \frac{v_1}{v_2} = \frac{n_2}{n_1}
-kokonaisheijastuksen rajakulma :: \sin\alpha_\text{r} = \frac{n_2}{n_1}
+\sin\alpha_\text{r} = \frac{n_2}{n_1}
 hilayhtälö :: d\sin\alpha = n\lambda
-Malusin laki :: I = I_0\cos^2\theta
+I = I_0\cos^2\theta
 ```
 
 missä $c = 3{,}00 \cdot 10^8\,\text{m/s}$, $f$ taajuus, $\lambda$ aallonpituus, $T$ absoluuttinen lämpötila ($\text{K}$), $b = 2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}$, $n = \tfrac{c}{v}$ taitekerroin ja $v$ valon nopeus aineessa, $\alpha_1$ tulokulma ja $\alpha_2$ taitekulma normaalista, $\alpha_\text{r}$ rajakulma, kun $n_1 > n_2$, $d$ hilavakio, hilayhtälössä $\alpha$ maksimin suunta ja $n = 0, 1, 2, \ldots$ kertaluku ja $I_0$ polarisoituneen valon intensiteetti ennen analysaattoria. Normaali on suora, joka on kohtisuorassa rajapintaa vastaan. Malusin laissa $\theta$ on kahden suunnan välinen kulma: polarisaation suunnan ja analysaattorin läpäisysuunnan. Ohuessa kalvossa matkaero on $2nd$, kun valo tulee lähes kohtisuoraan. Jos vain toinen heijastus kääntää aallon, $2nd = \left(k + \tfrac12\right)\lambda$ antaa vahvistavan interferenssin. Jos molemmat heijastukset kääntävät aallon, ehto on $2nd = k\lambda$.

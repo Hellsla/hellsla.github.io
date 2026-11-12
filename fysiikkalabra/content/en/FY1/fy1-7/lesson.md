@@ -166,8 +166,8 @@ The density of a substance is the ratio of mass to volume. Solving this equation
 
 ```kaavat
 density :: \rho = \frac{m}{V}
-m = \rho V
-V = \frac{m}{\rho}
+:: m = \rho V
+:: V = \frac{m}{\rho}
 ```
 
 where $\rho$ is the density (SI unit $\text{kg/m}^3$), $m$ the mass (kg) and $V$ the volume ($\text{m}^3$). The form $m = \rho V$ is a model of direct proportionality $y = kx$: the mass $m$ is $y$, the volume $V$ is $x$ and the density $\rho$ is the slope $k$.

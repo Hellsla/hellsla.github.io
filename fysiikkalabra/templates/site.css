@@ -145,8 +145,8 @@ li{margin:.4rem 0}
 .kaavat dt::first-letter{text-transform:uppercase}
 .kaavat dd{margin:0;min-width:0}
 .kaava-rivi.nimeton dd{grid-column:1/-1}
-.kaavat:has(dt) .kaava-rivi.nimeton{border-top:0;padding-top:0}   /* a named formula's other forms (ρ = m/V, then m = ρV) stand under it, in its column */
-.kaavat:has(dt) .kaava-rivi.nimeton dd{grid-column:2}
+.kaavat:has(dt) .kaava-rivi.nimeton dd{grid-column:2}   /* a formula not in the MAFY tables: in the formula column, its name cell empty */
+.kaava-rivi.jatko{border-top:0!important;padding-top:0}   /* a named formula's other forms (ρ = m/V, then m = ρV) stand under it */
 .kaavat .katex-display{border:0;background:none;padding:0;margin:0;text-align:left}
 .kaavat .katex-display>.katex{text-align:left}
 @media (max-width:600px){.kaava-rivi{grid-template-columns:minmax(0,1fr);padding:.6rem .8rem}.kaavat:has(dt) .kaava-rivi.nimeton dd{grid-column:1}}

@@ -246,8 +246,8 @@ where $f$ is the frequency ($\text{Hz}$), $T$ the period ($\text{s}$), $\overlin
 
 ```kaavat
 wave equation :: v = f\lambda
-constructive interference :: \Delta s = n\lambda
-destructive interference :: \Delta s = \left(n + \tfrac12\right)\lambda
+\Delta s = n\lambda
+\Delta s = \left(n + \tfrac12\right)\lambda
 ```
 
 where $v$ is the speed of the wave ($\text{m/s}$), $\lambda$ the wavelength ($\text{m}$) and $\Delta s$ the path difference from two sources oscillating in phase ($\text{m}$), $n = 0, 1, 2, \ldots$ The first condition gives constructive and the second destructive interference. Diffraction is strong when the width of the gap or obstacle is about the wavelength or smaller. In reflection the angle of incidence equals the angle of reflection, when the angles are measured from the normal to the surface.

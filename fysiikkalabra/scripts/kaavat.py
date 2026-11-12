@@ -32,14 +32,24 @@ def tables():
     return sorted((ROOT / "docs").glob("*/kaavanimet.tsv"))
 
 
-def rows(body):
-    """[(name, tex)] of a fence's body; a line without ` :: ` is a formula without a name."""
+CONT = ":: "        # a line `:: m = \\rho V`: another form of the named formula above it, shown under its name
+
+
+def parse(body):
+    """[(name, tex, continued)] of a fence's body: a line without ` :: ` is a formula without a name (not in the MAFY
+    tables), a line starting with `:: ` another form of the formula above (`continued`), shown under its name."""
     out = []
     for line in body.strip().split("\n"):
         if not line.strip(): continue
+        if line.startswith(CONT): out.append(("", line[len(CONT):].strip(), True)); continue
         name, tex = line.split(SEP, 1) if SEP in line else ("", line)
-        out.append((name.strip(), tex.strip()))
+        out.append((name.strip(), tex.strip(), False))
     return out
+
+
+def rows(body):
+    """[(name, tex)] of a fence's body; a formula without a name, or another form of the one above, has the name ""."""
+    return [(n, t) for n, t, _ in parse(body)]
 
 
 def as_display(text, names=True):
@@ -55,9 +65,9 @@ def as_html(text):
     are a `<dt>` name and a `<dd>` with the formula as `$$...$$`, typeset by KaTeX in the browser like every formula."""
     def one(m):
         out = []
-        for n, t in rows(m.group(1)):
+        for n, t, cont in parse(m.group(1)):
             name = f"<dt>{html.escape(n, quote=False)}</dt>" if n else ""
-            out.append(f'<div class="kaava-rivi{"" if n else " nimeton"}">{name}<dd>$${t}$$</dd></div>')
+            out.append(f'<div class="kaava-rivi{"" if n else " nimeton jatko" if cont else " nimeton"}">{name}<dd>$${t}$$</dd></div>')
         return '\n<dl class="kaavat">' + "".join(out) + "</dl>\n"
     return FENCE.sub(one, text)
 
@@ -82,12 +92,15 @@ def canonical(text):
     return re.sub(r"\n{2,}", "\n\n", text)
 
 
+ANY = object()      # review_view(passed, ANY): the version a reviewer passed, whose names may all go (teacher 2026-11-12: only MAFY's)
+
+
 def review_view(text, ok):
     """What a text's reviews judge apart from formula names in `ok` ({(name, formula)}, approved()): its canonical text,
     with every name that is not in `ok` kept beside its formula, so a change carries only when the formulas, the text
     around them and the grouping of the formulas into blocks are as before and every name added is an approved one."""
     def fence(m):
-        bad = [f"{n} :: {t}" for n, t in rows(m.group(1)) if n and (n, " ".join(t.split())) not in ok]
+        bad = [f"{n} :: {t}" for n, t in rows(m.group(1)) if n and ok is not ANY and (n, " ".join(t.split())) not in ok]
         return m.group(0) + ("".join(f"\n<<NIMI {b}>>" for b in bad))
     return canonical(FENCE.sub(fence, text))
 
@@ -99,7 +112,8 @@ def names_of(text):
 
 # ------------------------------------------------------------------ names of the docs/*/kaavanimet.tsv into the texts
 LANGS = {"fi": "nimi", "fi-easy": "nimi", "en": "name_en"}
-KEYS = ("yksikkö", "tunti")          # the first column: a unit of FY9 or a lesson of FY1–FY8
+KEYS = ("yksikkö", "tunti")
+SAME = "="                           # in a list's name column: another form of the named formula above (`:: ` in the text)          # the first column: a unit of FY9 or a lesson of FY1–FY8
 
 
 def table(path=None):
@@ -130,7 +144,7 @@ def approved(key, lang):
     if not col: return set()
     out = set()
     for r in table("all"):
-        if r["_key"] != key or not r.get(col): continue
+        if r["_key"] != key or not r.get(col) or r[col] == SAME: continue
         tex = r["kaava"] if lang != "en" else r.get("kaava_en", "")
         out.add((r[col], " ".join(tex.split())))
     return out
@@ -165,8 +179,13 @@ def write(check=False):
                 if [" ".join(w.split()) for w in want] != parts:
                     errs.append(f"{lang}/{uid}: formulas at {m.start()} differ from the table: {parts} != {want}"); break
                 names = [r[col] for r in mine]
-                if not any(names): continue                     # a calculation or an unnamed block stays as it is
-                fence = "```kaavat\n" + "".join(f"{n}{SEP}{t}\n" if n else f"{t}\n" for n, t in zip(names, want)) + "```"
+                if not any(n and n != SAME for n in names):     # nothing named: display maths like any other
+                    if m.group(1) == "latex": continue          # a calculation or an unnamed block stays as it is
+                    fence = "```latex\n" + (want[0] if len(want) == 1 else
+                                             "\\begin{aligned}\n" + " \\\\\n".join("&" + w for w in want) + "\n\\end{aligned}") + "\n```"
+                else:
+                    fence = "```kaavat\n" + "".join(f"{CONT}{t}\n" if n == SAME else f"{n}{SEP}{t}\n" if n else f"{t}\n" for n, t in zip(names, want)) + "```"
+                if fence == m.group(0): continue
                 out.append(text[pos:m.start()] + fence); pos = m.end()
             else:
                 if k != len(rs): errs.append(f"{lang}/{uid}: the table has {len(rs)} formulas, the text {k}"); continue

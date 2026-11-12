@@ -506,8 +506,8 @@ Nyt voimme vastata alun kysymykseen. Kasvivalon punaisen fotonin ($660\,\text{nm
 
 ```kaavat
 fotonin energia :: E = hf = \frac{hc}{\lambda}
-valosähköinen ilmiö :: hf = W + E_\text{k,max}
-atomin lähettämän tai absorboiman fotonin energia :: hf = E_\text{y} - E_\text{a}
+hf = W + E_\text{k,max}
+hf = E_\text{y} - E_\text{a}
 fotonin liikemäärä :: p = \frac{E}{c} = \frac{h}{\lambda}
 ```
 
@@ -586,10 +586,10 @@ Kaavoissa $N$ on niiden ytimien määrä, jotka eivät ole vielä hajonneet hetk
 ### Säteily ja annos
 
 ```kaavat
-absorboitunut annos :: D = \frac{E}{m}
+D = \frac{E}{m}
 ekvivalenttiannos :: H = w_\text{R} D
-annos annosnopeudesta :: H = \dot{H} t
-annosnopeus etäisyyden funktiona :: \dot{H}_2 = \dot{H}_1 \left(\frac{r_1}{r_2}\right)^2
+H = \dot{H} t
+\dot{H}_2 = \dot{H}_1 \left(\frac{r_1}{r_2}\right)^2
 heikennyslaki :: I = I_0 e^{-\mu x}
 ```
 

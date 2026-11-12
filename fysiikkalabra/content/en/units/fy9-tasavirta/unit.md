@@ -277,18 +277,20 @@ The first is the total resistance $R$ of resistors connected in series and the s
 
 ```kaavat
 power consumed in a conductor :: P = UI
-power consumed, in terms of resistance :: P = RI^2 = \frac{U^2}{R}
-energy used by an electrical device :: E = Pt
+P = RI^2 = \frac{U^2}{R}
+E = Pt
 ```
 
 where $P$ is the power ($\text{W}$) and $E$ the electrical energy transformed in the time $t$ ($\text{J}$ or $\text{kWh}$). The form $P = UI$ holds for every component, the forms of Joule's law only for a resistor. In series the larger resistance gets the larger power, in parallel the smaller. Units of energy are converted by substitution: $1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3.6\,\text{MJ}$. When the same problem also has an emf $E$, the letter $W$ is used for energy.
 
 ### Battery and accumulator
 
-```kaavat
-terminal voltage of a source :: U = E - R_\text{s} I
-current in a closed circuit :: I = \frac{E}{R + R_\text{s}}
-charge stored in a battery (capacity) :: Q = It
+```latex
+\begin{aligned}
+U &= E - R_\text{s} I \\
+I &= \frac{E}{R + R_\text{s}} \\
+Q &= It
+\end{aligned}
 ```
 
 where $E$ is the emf ($\text{V}$), $R_\text{s}$ the internal resistance ($\Omega$), $U$ the terminal voltage ($\text{V}$), $R$ the resistance of the external circuit ($\Omega$) and $Q$ the capacity of the battery ($\text{Ah}$ or $\text{C}$). The model assumes that $E$ and $R_\text{s}$ stay constant. The energy of a battery is $W = UQ$, where $U$ is the rated voltage, and during charging the terminal voltage is $U = E + R_\text{s} I$.

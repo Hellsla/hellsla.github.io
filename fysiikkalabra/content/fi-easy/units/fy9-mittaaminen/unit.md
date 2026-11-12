@@ -201,9 +201,11 @@ Melkein jokaisessa fysiikan ylioppilaskokeessa on tehtävä, jossa annetaan mitt
 
 Kun mittaus toistetaan, paras arvio on tulosten keskiarvo $\bar{x}$. Tässä kurssissa hajontaa eli tulosten vaihtelua arvioidaan vaihteluvälin puolikkaana. Tulos ilmoitetaan muodossa $\bar{x} \pm \Delta x$:
 
-```kaavat
-mittaustuloksen epävarmuus :: \Delta x = \frac{x_\text{max} - x_\text{min}}{2}
-suhteellinen epävarmuus :: \varepsilon = \frac{\Delta x}{\bar{x}} \cdot 100\,\%
+```latex
+\begin{aligned}
+\Delta x &= \frac{x_\text{max} - x_\text{min}}{2} \\
+\varepsilon &= \frac{\Delta x}{\bar{x}} \cdot 100\,\%
+\end{aligned}
 ```
 
 Tässä $x_\text{max}$ on suurin tulos ja $x_\text{min}$ pienin tulos. $\Delta x$ on mittausepävarmuus ja $\varepsilon$ suhteellinen epävarmuus. Jos mittaus tehdään vain kerran, lukeman epävarmuutta voi yksinkertaisessa tilanteessa arvioida puoleksi pienimmästä asteikkovälistä. Kokonaisepävarmuuteen vaikuttavat kuitenkin myös menetelmä ja muut virhelähteet. Epävarmuus pyöristetään yhteen merkitsevään numeroon. Jos ensimmäinen numero on 1, epävarmuuteen jätetään kaksi numeroa. Tulos pyöristetään samaan desimaaliin kuin epävarmuus. Kerto- ja jakolaskun tuloksessa on yhtä monta merkitsevää numeroa kuin epätarkimmassa lähtöarvossa.
@@ -215,7 +217,7 @@ Kun mittaus toistetaan, satunnaisvirheen vaikutus keskiarvossa pienenee. Systema
 Jos pisteet ovat melkein suoralla, niihin sovitetaan suora. Suora piirretään pisteiden lomaan eli niiden väliin:
 
 ```kaavat
-suoran yhtälö :: y = kx + b
+y = kx + b
 kulmakerroin :: k = \frac{\Delta y}{\Delta x}
 ```
 
@@ -302,8 +304,8 @@ Tässä $k$ on kulmakerroin ja $b$ vakiotermi. Vakiotermi on $y$:n arvo, kun $x 
 
 Kulmakertoimen epävarmuutta voi arvioida kahden suoran avulla. Toinen on jyrkin ja toinen loivin suora, joka vielä kulkee epävarmuusjanojen kautta:
 
-```kaavat
-kulmakertoimen epävarmuus :: \Delta k = \frac{k_\text{max} - k_\text{min}}{2}
+```latex
+\Delta k = \frac{k_\text{max} - k_\text{min}}{2}
 ```
 
 Nämä suorat rajaavat arvioidun vaihteluvälin. Ne eivät ole varmoja rajoja.
@@ -312,10 +314,12 @@ Nämä suorat rajaavat arvioidun vaihteluvälin. Ne eivät ole varmoja rajoja.
 
 Joskus malli ei ole suora. Silloin akseleille valitaan suureet, joiden välinen riippuvuus on suora. Tätä sanotaan linearisoinniksi. Malli kirjoitetaan muotoon $y = kx + b$:
 
-```kaavat
-matka levosta tasaisesti kiihtyvässä liikkeessä :: s = \tfrac{a}{2} \cdot t^2
-Boylen laki :: p = C \cdot \tfrac{1}{V}
-astian ja nesteen yhteinen massa :: m = \rho V + m_0
+```latex
+\begin{aligned}
+s &= \tfrac{a}{2} \cdot t^2 \\
+p &= C \cdot \tfrac{1}{V} \\
+m &= \rho V + m_0
+\end{aligned}
 ```
 
 Ajatellaan ensin kappaletta, joka lähtee levosta ja kiihtyy tasaisesti. Kun aika lasketaan liikkeen alusta, $(t^2, s)$-kuvaaja on suora, joka kulkee origon kautta. Sen kulmakerroin on $\tfrac{a}{2}$. Ajatellaan sitten kaasua, jonka määrä ja lämpötila pysyvät samoina. Boylen lain mukaan $(\tfrac{1}{V}, p)$-kuvaaja on suora. Vakio $C$ on paineen ja tilavuuden tulo. Kolmas esimerkki on neste, joka punnitaan astiassa. Nesteen ja astian yhteinen massa $m$ on suora tilavuuden $V$ suhteen. Suoran kulmakerroin on tiheys $\rho$, ja vakiotermi on astian massa $m_0$.

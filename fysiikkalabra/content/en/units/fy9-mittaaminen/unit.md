@@ -201,9 +201,11 @@ Almost every matriculation exam in physics has a problem that gives a set of mea
 
 The best estimate of a repeated measurement is the mean $\bar{x}$. In this course the spread is estimated as half the range, and the result is stated in the form $\bar{x} \pm \Delta x$:
 
-```kaavat
-uncertainty of a measurement :: \Delta x = \frac{x_\text{max} - x_\text{min}}{2}
-relative uncertainty :: \varepsilon = \frac{\Delta x}{\bar{x}} \cdot 100\,\%
+```latex
+\begin{aligned}
+\Delta x &= \frac{x_\text{max} - x_\text{min}}{2} \\
+\varepsilon &= \frac{\Delta x}{\bar{x}} \cdot 100\,\%
+\end{aligned}
 ```
 
 where $x_\text{max}$ and $x_\text{min}$ are the largest and the smallest result, $\Delta x$ the measurement uncertainty and $\varepsilon$ the relative uncertainty. In a single measurement, the uncertainty of a reading can in a simple situation be estimated as half the smallest scale division, but the method and other sources of error also affect the total uncertainty. The uncertainty is rounded to one significant figure (two, if the first digit is 1), and the result to the same decimal place. The result of a multiplication or a division gets as many significant figures as the least precise starting value.
@@ -215,7 +217,7 @@ Repetition reduces the effect of random error in the mean, but it does not remov
 If the points lie approximately on a straight line, a line is fitted among the points:
 
 ```kaavat
-equation of a line :: y = kx + b
+y = kx + b
 slope :: k = \frac{\Delta y}{\Delta x}
 ```
 
@@ -302,8 +304,8 @@ where $k$ is the slope and $b$ the constant term, that is, the value of $y$ when
 
 The uncertainty of the slope can be estimated with the steepest and the shallowest line that still pass through the uncertainty bars:
 
-```kaavat
-uncertainty of the slope :: \Delta k = \frac{k_\text{max} - k_\text{min}}{2}
+```latex
+\Delta k = \frac{k_\text{max} - k_\text{min}}{2}
 ```
 
 They bound an estimated range, not certain limits.
@@ -312,10 +314,12 @@ They bound an estimated range, not certain limits.
 
 When the model is not a straight line, the axes are given quantities between which the relationship is a straight line. The model is written in the form $y = kx + b$:
 
-```kaavat
-distance from rest in uniformly accelerated motion :: s = \tfrac{a}{2} \cdot t^2
-Boyle's law :: p = C \cdot \tfrac{1}{V}
-combined mass of container and liquid :: m = \rho V + m_0
+```latex
+\begin{aligned}
+s &= \tfrac{a}{2} \cdot t^2 \\
+p &= C \cdot \tfrac{1}{V} \\
+m &= \rho V + m_0
+\end{aligned}
 ```
 
 In uniformly accelerated motion from rest, when time is counted from the start of the motion, the $(t^2, s)$ graph is a straight line through the origin with slope $\tfrac{a}{2}$. When the amount and the temperature of a gas stay the same, according to Boyle's law the $(\tfrac{1}{V}, p)$ graph is a straight line; the constant $C$ is the product of the pressure and the volume. The total mass $m$ of a liquid weighed in a container is a straight line with respect to the volume $V$, whose slope is the density $\rho$ and whose constant term is the mass $m_0$ of the container.

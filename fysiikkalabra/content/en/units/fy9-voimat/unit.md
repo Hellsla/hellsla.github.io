@@ -188,9 +188,9 @@ The opening question is settled by the choice of object. The car and the trailer
 ### Newton's laws
 
 ```kaavat
-Newton's first law (law of inertia) :: \Sigma\overline{F} = \overline{0} \ \Leftrightarrow\ \overline{v} = \text{constant}
+\Sigma\overline{F} = \overline{0} \ \Leftrightarrow\ \overline{v} = \text{constant}
 Newton's second law (fundamental law of dynamics) :: \Sigma\overline{F} = m\overline{a}
-Newton's third law (action and reaction) :: \overline{F}_{AB} = -\overline{F}_{BA}
+\overline{F}_{AB} = -\overline{F}_{BA}
 ```
 
 where $\Sigma\overline{F}$ is the sum of the forces acting on the object ($\text{N}$), $m$ the mass ($\text{kg}$), $\overline{a}$ the acceleration ($\text{m/s}^2$) and $\overline{F}_{AB}$ the force with which A acts on B. In a calculation the second law is written in components, $\Sigma F_x = ma_x$ and $\Sigma F_y = ma_y$, and the components of an oblique force are $F\cos\alpha$ and $F\sin\alpha$. The net force points in the direction of the acceleration, not always in the direction of the velocity.
@@ -200,7 +200,7 @@ where $\Sigma\overline{F}$ is the sum of the forces acting on the object ($\text
 ```kaavat
 weight of a body at the Earth's surface :: \overline{G} = m\overline{g}
 kinetic friction :: F_\mu = \mu N
-static friction :: F_{\mu 0} \le \mu_0 N
+F_{\mu 0} \le \mu_0 N
 ```
 
 where $\overline{g}$ is the acceleration due to gravity, $g = 9.81\,\text{m/s}^2$, so the magnitude of the weight is $G = mg$, $N$ is the normal force ($\text{N}$), $\mu$ the coefficient of kinetic friction and $\mu_0$ the coefficient of static friction. Static friction is only as large as the situation requires, and it opposes the sliding of the surfaces relative to each other, not always the motion. The formulas are experimental models for dry surfaces. In free-body diagrams $\overline{F}_\mu$ stands for either kind of friction, static or kinetic.

@@ -253,8 +253,8 @@ The opening question is solved in the same way. Only the gravitational force of 
 
 ```kaavat
 moment of a force :: M = Fr
-equilibrium condition for forces :: \Sigma\overline{F} = \overline{0}
-equilibrium condition for moments :: \Sigma M = 0
+\Sigma\overline{F} = \overline{0}
+\Sigma M = 0
 ```
 
 where $M$ is the moment of the force ($\text{Nm}$), $F$ the size of the force ($\text{N}$) and $r$ the lever arm of the force ($\text{m}$), that is, the perpendicular distance of the axis of rotation from the line of action of the force. If the force makes the angle $\alpha$ with the line from the axis to the point of application and the point of application is at the distance $d$, the lever arm is $r = d\sin\alpha$. An anticlockwise moment is positive. For a body at rest the moment condition holds about any point, so it pays to choose the point of application of an unknown force as the pivot point. The weight acts at the centre of gravity.
@@ -308,7 +308,7 @@ where $M$ is the moment of the force ($\text{Nm}$), $F$ the size of the force ($
 ```kaavat
 orbital speed :: v = \omega r
 centripetal acceleration :: a_\text{n} = \frac{v^2}{r} = \omega^2 r
-Newton's second law in circular motion :: \Sigma F = m\frac{v^2}{r}
+\Sigma F = m\frac{v^2}{r}
 ```
 
 where $v$ is the orbital speed ($\text{m/s}$), $r$ the radius of the path ($\text{m}$), $\omega = \tfrac{2\pi}{T} = 2\pi f$ the angular velocity ($\text{rad/s}$), $T$ the period ($\text{s}$) and $f = \tfrac{1}{T}$ the rotation frequency ($\tfrac{1}{\text{s}}$), so $v = \tfrac{2\pi r}{T} = 2\pi r f$; $a_\text{n}$ the centripetal acceleration ($\text{m/s}^2$) and $\Sigma F$ the net force pointing to the centre ($\text{N}$). In uniform circular motion the speed is constant. The centripetal acceleration $a_\text{n} = \tfrac{v^2}{r}$ also holds at an instant when the speed changes: at the highest and the lowest point of the path there is no force along the tangent, so the net force points to the centre. The velocity is along the tangent of the path. In the equation of motion the forces pointing to the centre are positive, and perpendicular to the plane of the path the sum of the forces is zero.
@@ -317,8 +317,8 @@ where $v$ is the orbital speed ($\text{m/s}$), $r$ the radius of the path ($\tex
 
 ```kaavat
 Newton's law of gravitation :: F_\text{g} = \gamma\frac{m_1 m_2}{r^2}
-gravitational field strength :: g = \gamma\frac{M}{r^2}
-orbital speed of a satellite :: v = \sqrt{\frac{\gamma M}{r}}
+g = \gamma\frac{M}{r^2}
+v = \sqrt{\frac{\gamma M}{r}}
 ```
 
 where $\gamma = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$ is the gravitational constant, $F_\text{g}$ the magnitude of the gravitational force ($\text{N}$), $m_1$ and $m_2$ the masses of the bodies ($\text{kg}$), $M$ the mass of the central body ($\text{kg}$) and $r$ the distance between the centres ($\text{m}$). The law holds for point-like and spherically symmetric bodies. The orbital speed of a satellite comes from the condition $\gamma\tfrac{Mm}{r^2} = m\tfrac{v^2}{r}$, and it holds for a circular orbit when the central body is much more massive than the satellite. For an Earth satellite $r = R + h$, where $R = 6371\,\text{km}$, and the period is $T = \tfrac{2\pi r}{v}$.

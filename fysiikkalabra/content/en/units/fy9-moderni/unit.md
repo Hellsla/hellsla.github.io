@@ -506,8 +506,8 @@ This answers the opening question. The energy of a red photon of a grow light ($
 
 ```kaavat
 photon energy :: E = hf = \frac{hc}{\lambda}
-photoelectric effect :: hf = W + E_\text{k,max}
-energy of a photon emitted or absorbed by an atom :: hf = E_\text{u} - E_\text{l}
+hf = W + E_\text{k,max}
+hf = E_\text{u} - E_\text{l}
 photon momentum :: p = \frac{E}{c} = \frac{h}{\lambda}
 ```
 
@@ -586,10 +586,10 @@ where $N$ is the number of undecayed nuclei at the time $t$, $N_0$ the number at
 ### Radiation and dose
 
 ```kaavat
-absorbed dose :: D = \frac{E}{m}
+D = \frac{E}{m}
 equivalent dose :: H = w_\text{R} D
-dose from the dose rate :: H = \dot{H} t
-dose rate as a function of distance :: \dot{H}_2 = \dot{H}_1 \left(\frac{r_1}{r_2}\right)^2
+H = \dot{H} t
+\dot{H}_2 = \dot{H}_1 \left(\frac{r_1}{r_2}\right)^2
 attenuation law :: I = I_0 e^{-\mu x}
 ```
 

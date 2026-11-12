@@ -326,8 +326,8 @@ impulse-momentum principle :: \overline{I} = \Delta\overline{p}
 
 where $\overline{p}$ is the momentum ($\text{kg} \cdot \text{m/s}$), $\overline{I}$ the impulse ($\text{N} \cdot \text{s}$) and $\overline{F}$ a constant force acting for the time interval $\Delta t$. The change in momentum is caused by the impulse of the net force, $\Sigma\overline{F}\,\Delta t = \Delta\overline{p}$. For a varying force the average force is $F_\text{avg} = |\Delta p| : \Delta t$. In one dimension a positive direction is chosen, and velocities pointing in the opposite direction are negative. When the impulse of the external forces is negligible,
 
-```kaavat
-conservation of momentum :: m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'
+```latex
+m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'
 ```
 
 In an elastic collision kinetic energy is also conserved. In a perfectly inelastic collision the bodies move on with a common velocity, $v_1' = v_2' = v'$, and the largest share of kinetic energy is transformed into internal energy.
@@ -336,10 +336,12 @@ In an elastic collision kinetic energy is also conserved. In a perfectly inelast
 
 On a horizontal road the stopping distance of a car is the reaction distance plus the braking distance:
 
-```kaavat
-stopping distance :: s_\text{p} = v_0\,t_\text{r} + \frac{v_0^2}{2a}
-power of a hydroelectric plant :: P_\text{hydro} = \eta\rho Qgh
-power of a wind turbine :: P_\text{wind} = \tfrac12\eta\rho Av^3
+```latex
+\begin{aligned}
+s_\text{p} &= v_0\,t_\text{r} + \frac{v_0^2}{2a} \\
+P_\text{hydro} &= \eta\rho Qgh \\
+P_\text{wind} &= \tfrac12\eta\rho Av^3
+\end{aligned}
 ```
 
 where $t_\text{r}$ is the reaction time ($\text{s}$) and $a$ the deceleration ($\text{m/s}^2$), assumed constant; at the limit of locking the wheels $a = \mu g$. In the electric power of the power plants $\eta$ is the efficiency and $\rho$ the density of water or air; for a hydropower plant $Q$ is the flow rate ($\text{m}^3\text{/s}$) and $h$ the head ($\text{m}$), for a wind turbine $A$ is the area swept by the rotor ($\text{m}^2$) and $v$ the wind speed. The expression for the wind power holds when the efficiency stays constant and the turbine runs below its rated power.

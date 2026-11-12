@@ -1,4 +1,5 @@
 # FY1:n kaavojen nimet (opettaja 2026-11-12: nimetään vain kaavat, jotka ovat mafytaulukot.fi:n taulukoissa; nimi MAFY:n mukaan).
+# Nimisarakkeen = tarkoittaa yllä nimetyn kaavan toista muotoa (tekstissä rivi alkaa ':: ').
 # Rivit tunnin tekstin järjestyksessä; jokainen erillinen kaavarivi (```latex) omalla rivillään. Nimettömät rivit ovat esimerkkien laskuja ja yksikkömuunnoksia, ja ne jäävät ennalleen.
 tunti	rivi	kaava	kaava_en	nimi	name_en	lähde	MAFY-sivu	huomio
 fy1-1	102	k = \frac{d_\text{suurempi}}{d_\text{pienempi}}	k = \frac{d_\text{larger}}{d_\text{smaller}}					
@@ -65,8 +66,8 @@ fy1-6	662	= 52{,}97\,\text{km/h}	= 52.97\,\text{km/h}
 fy1-7	167	\rho = \frac{m}{V}	\rho = \frac{m}{V}	tiheys	density	MAFY	Mekaniikan kaavoja	ratkaistut muodot $m = 
 ho V$ ja $V = m/
 ho$ samassa lohkossa nimettä
-fy1-7	167	m = \rho V	m = \rho V					
-fy1-7	167	V = \frac{m}{\rho}	V = \frac{m}{\rho}					
+fy1-7	167	m = \rho V	m = \rho V	=	=			tiheyden muu muoto, nimen alla
+fy1-7	167	V = \frac{m}{\rho}	V = \frac{m}{\rho}	=	=			tiheyden muu muoto, nimen alla
 fy1-7	247	1\,\tfrac{\text{g}}{\text{cm}^3} = \frac{10^{-3}\,\text{kg}}{10^{-6}\,\text{m}^3} = 1000\,\tfrac{\text{kg}}{\text{m}^3}	1\,\tfrac{\text{g}}{\text{cm}^3} = \frac{10^{-3}\,\text{kg}}{10^{-6}\,\text{m}^3} = 1000\,\tfrac{\text{kg}}{\text{m}^3}					
 fy1-7	344	V = a^2 L	V = a^2 L					
 fy1-7	344	m = \rho V = \rho a^2 L	m = \rho V = \rho a^2 L					

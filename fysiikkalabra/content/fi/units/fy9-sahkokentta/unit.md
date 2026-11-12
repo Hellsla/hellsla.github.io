@@ -265,7 +265,7 @@ Jännite on suuri, mutta keho on pieni kondensaattori, jonka kapasitanssi on noi
 ### Varaus, voima ja kenttä
 
 ```kaavat
-varaus alkeisvarauksen monikertana :: Q = ne
+Q = ne
 Coulombin voiman suuruus :: F_E = k\,\frac{Q_1 Q_2}{r^2}
 sähkökentän voimakkuus :: E = \frac{F_E}{Q}
 jännite homogeenisessa sähkökentässä :: U = Ed
@@ -351,7 +351,7 @@ missä $n$ on alkeisvarausten lukumäärä, $e = 1{,}602 \cdot 10^{-19}\,\text{C
 ```kaavat
 sähkökentän potentiaali :: V = \frac{E_\text{p}}{Q}
 sähkökentän tekemä työ :: W = QU
-sähkökentässä kiihdytetyn hiukkasen liike-energia :: \tfrac12 mv^2 = \lvert Q \rvert U
+\tfrac12 mv^2 = \lvert Q \rvert U
 ```
 
 missä $V$ on kohdan potentiaali ($\text{V}$) valittuun nollakohtaan nähden, $E_\text{p}$ varauksen $Q$ sähköinen potentiaalienergia ($\text{J}$), $W$ kentän tekemä työ ($\text{J}$), kun varaus $Q$ siirtyy pisteestä A pisteeseen B, ja $U = U_{AB} = V_A - V_B$ pisteiden välinen jännite. Työ ei riipu reitistä. Kenttä osoittaa suuremmasta potentiaalista pienempään, ja levosta lähtevä varaus liikkuu suuntaan, jossa sen potentiaalienergia pienenee. Viimeinen yhtälö pätee levosta lähtevälle hiukkaselle, kun vain sähköinen voima tekee työtä. Energian yksikkö $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$.
@@ -362,17 +362,19 @@ missä $V$ on kohdan potentiaali ($\text{V}$) valittuun nollakohtaan nähden, $E
 kondensaattorilaki :: Q = CU
 levykondensaattorin kapasitanssi :: C = \varepsilon_0\varepsilon_\text{r}\,\frac{A}{d}
 kondensaattorin energia :: E = \tfrac12 CU^2
-läpilyöntijännite :: U_\text{max} = E_\text{max}d
+U_\text{max} = E_\text{max}d
 ```
 
 missä $C$ on kapasitanssi ($\text{F}$), $A$ levyn pinta-ala ($\text{m}^2$), $\varepsilon_0 = 8{,}854 \cdot 10^{-12}\,\text{F/m}$, $\varepsilon_\text{r}$ eristeen suhteellinen permittiivisyys, $E$ kondensaattoriin varastoitunut energia ($\text{J}$), myös $E = \tfrac12 QU$, ja $E_\text{max}$ eristeen läpilyöntilujuus ($\text{V/m}$). Levykondensaattorin kaava pätee, kun $d$ on pieni levyjen kokoon verrattuna ja eriste täyttää välin. Lähteeseen kytketyn kondensaattorin jännite pysyy samana, irrotetun varaus.
 
 ### Komponentit ja turvallisuus
 
-```kaavat
-LEDin etuvastus :: R = \frac{U - U_\text{D}}{I}
-aurinkokennon hyötysuhde :: \eta = \frac{P}{GA}
-kehon läpi kulkeva virta :: I = \frac{U}{R}
+```latex
+\begin{aligned}
+R &= \frac{U - U_\text{D}}{I} \\
+\eta &= \frac{P}{GA} \\
+I &= \frac{U}{R}
+\end{aligned}
 ```
 
 missä $R$ on LEDin etuvastus ($\Omega$), $U_\text{D}$ LEDin jännite ($\text{V}$), $P = UI$ aurinkokennon sähköteho maksimitehopisteessä ($\text{W}$) ja $G$ valon voimakkuus ($\text{W/m}^2$). Viimeinen yhtälö antaa kehon läpi kulkevan virran, kun $U$ on kosketusjännite ja $R$ koko virtatien resistanssi. Diodi johtaa vain päästösuuntaan, kun sen jännite ylittää kynnysjännitteen. Sulake suojaa johtoa, vikavirtasuoja ihmistä.

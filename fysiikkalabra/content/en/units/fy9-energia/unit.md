@@ -258,8 +258,8 @@ This also answers the opening question. Ten litres of petrol contain about $7.5\
 
 In an isolated system, which no energy enters or leaves, the total energy stays the same:
 
-```kaavat
-conservation of energy :: E_\text{initial} = E_\text{final}
+```latex
+E_\text{initial} = E_\text{final}
 ```
 
 where each side is the sum of all forms of energy, thermal energy included. Power is the energy transformed or transferred per unit time:
@@ -270,8 +270,8 @@ power :: P = \frac{\Delta E}{\Delta t}
 
 where $P$ is the power (W), $\Delta E$ the energy (J) and $\Delta t$ the time (s). For uneven use the formula gives the average power; at constant power $E = P\,t$. The kilowatt-hour is a unit of energy, and it is converted by substitution:
 
-```kaavat
-kilowatt-hour in joules :: 1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3.6\,\text{MJ}
+```latex
+1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3.6\,\text{MJ}
 ```
 
 ### Efficiency and the energy chain
@@ -284,8 +284,8 @@ where $\eta$ is the efficiency, $E_\text{a}$ and $P_\text{a}$ the useful energy 
 
 In successive stages the useful power of each stage is the power taken in by the next, so the efficiencies are multiplied:
 
-```kaavat
-total efficiency of an energy chain :: \eta = \eta_1\,\eta_2\,\eta_3
+```latex
+\eta = \eta_1\,\eta_2\,\eta_3
 ```
 
 In the example plant in the figure $\eta = 0.90 \cdot 0.45 \cdot 0.98 \approx 0.40$: of the fuel power of $500\,\text{MW}$, $198\,\text{MW}$ becomes electricity. The widths of the bands are to scale, and the outgoing bands are together as wide as the incoming one.

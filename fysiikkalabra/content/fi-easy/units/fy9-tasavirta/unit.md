@@ -277,18 +277,20 @@ Ensimmäinen kaava antaa sarjaan kytkettyjen vastusten kokonaisresistanssin $R$.
 
 ```kaavat
 tehonkulutus johtimessa :: P = UI
-tehonkulutus resistanssin avulla :: P = RI^2 = \frac{U^2}{R}
-sähkölaitteen kuluttama energia :: E = Pt
+P = RI^2 = \frac{U^2}{R}
+E = Pt
 ```
 
 missä $P$ on teho ($\text{W}$) ja $E$ sähköenergia, joka on muuttunut ajassa $t$ ($\text{J}$ tai $\text{kWh}$). Kaava $P = UI$ pätee kaikille komponenteille. Joulen lain muodot pätevät vain vastukselle. Sarjaankytkennässä suurempi resistanssi saa suuremman tehon. Rinnankytkennässä pienempi resistanssi saa suuremman tehon. Energian yksiköt muunnetaan sijoittamalla: $1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}$. Jos samassa tehtävässä on myös lähdejännite $E$, energialle käytetään kirjainta $W$.
 
 ### Paristo ja akku
 
-```kaavat
-jännitelähteen napajännite :: U = E - R_\text{s} I
-virta suljetussa virtapiirissä :: I = \frac{E}{R + R_\text{s}}
-akun varaus :: Q = It
+```latex
+\begin{aligned}
+U &= E - R_\text{s} I \\
+I &= \frac{E}{R + R_\text{s}} \\
+Q &= It
+\end{aligned}
 ```
 
 missä $E$ on lähdejännite ($\text{V}$), $R_\text{s}$ sisäinen resistanssi ($\Omega$), $U$ napajännite ($\text{V}$), $R$ ulkoisen piirin resistanssi ($\Omega$) ja $Q$ akun kapasiteetti ($\text{Ah}$ tai $\text{C}$). Napajännite on pariston napojen välinen jännite. Malli olettaa, että $E$ ja $R_\text{s}$ pysyvät vakioina. Akun energia on $W = UQ$, missä $U$ on nimellisjännite eli akkuun merkitty jännite. Latauksen aikana napajännite on $U = E + R_\text{s} I$.

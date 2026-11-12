@@ -326,8 +326,8 @@ impulssi-liikemääräperiaate :: \overline{I} = \Delta\overline{p}
 
 missä $\overline{p}$ on liikemäärä ($\text{kg} \cdot \text{m/s}$), $\overline{I}$ impulssi ($\text{N} \cdot \text{s}$) ja $\overline{F}$ vakiosuuruinen voima aikavälin $\Delta t$ ajan. Liikemäärän muutoksen aiheuttaa kokonaisvoiman impulssi, $\Sigma\overline{F}\,\Delta t = \Delta\overline{p}$. Muuttuvalle voimalle keskimääräinen voima on $F_\text{ka} = |\Delta p| : \Delta t$. Yhdessä ulottuvuudessa valitaan positiivinen suunta, ja vastakkaiseen suuntaan osoittavat nopeudet ovat negatiivisia. Kun ulkoisten voimien impulssi on merkityksettömän pieni,
 
-```kaavat
-liikemäärän säilymislaki :: m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'
+```latex
+m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'
 ```
 
 Kimmoisassa törmäyksessä myös liike-energia säilyy. Täysin kimmottomassa kappaleet jatkavat yhteisellä nopeudella, $v_1' = v_2' = v'$, ja liike-energiaa muuttuu eniten sisäenergiaksi.
@@ -336,10 +336,12 @@ Kimmoisassa törmäyksessä myös liike-energia säilyy. Täysin kimmottomassa k
 
 Vaakasuoralla tiellä auton pysähtymismatka on reaktiomatka ja jarrutusmatka:
 
-```kaavat
-pysähtymismatka :: s_\text{p} = v_0\,t_\text{r} + \frac{v_0^2}{2a}
-vesivoimalan teho :: P_\text{vesi} = \eta\rho Qgh
-tuulivoimalan teho :: P_\text{tuuli} = \tfrac12\eta\rho Av^3
+```latex
+\begin{aligned}
+s_\text{p} &= v_0\,t_\text{r} + \frac{v_0^2}{2a} \\
+P_\text{vesi} &= \eta\rho Qgh \\
+P_\text{tuuli} &= \tfrac12\eta\rho Av^3
+\end{aligned}
 ```
 
 missä $t_\text{r}$ on reaktioaika ($\text{s}$) ja $a$ hidastuvuus ($\text{m/s}^2$), oletettu vakioksi; lukkojarrutuksen rajalla $a = \mu g$. Voimaloiden sähkötehoissa $\eta$ on hyötysuhde ja $\rho$ veden tai ilman tiheys; vesivoimalassa $Q$ on virtaama ($\text{m}^3\text{/s}$) ja $h$ putouskorkeus ($\text{m}$), tuulivoimalassa $A$ on roottorin pyyhkäisemä pinta-ala ($\text{m}^2$) ja $v$ tuulen nopeus. Tuulen tehon lauseke pätee, kun hyötysuhde pysyy vakiona ja voimala toimii nimellistehoaan pienemmällä teholla.

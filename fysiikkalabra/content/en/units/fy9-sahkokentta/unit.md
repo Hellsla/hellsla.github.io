@@ -265,7 +265,7 @@ The voltage is large, but the body is a small capacitor with a capacitance of ab
 ### Charge, force and field
 
 ```kaavat
-charge as a multiple of the elementary charge :: Q = ne
+Q = ne
 magnitude of the Coulomb force :: F_E = k\,\frac{Q_1 Q_2}{r^2}
 electric field strength :: E = \frac{F_E}{Q}
 voltage in a uniform electric field :: U = Ed
@@ -351,7 +351,7 @@ where $n$ is the number of elementary charges, $e = 1.602 \cdot 10^{-19}\,\text{
 ```kaavat
 electric potential :: V = \frac{E_\text{p}}{Q}
 work done by an electric field :: W = QU
-kinetic energy of a particle accelerated in an electric field :: \tfrac12 mv^2 = \lvert Q \rvert U
+\tfrac12 mv^2 = \lvert Q \rvert U
 ```
 
 where $V$ is the potential at a point ($\text{V}$) relative to a chosen zero, $E_\text{p}$ the electric potential energy of the charge $Q$ ($\text{J}$), $W$ the work done by the field ($\text{J}$) when the charge $Q$ moves from the point A to the point B, and $U = U_{AB} = V_A - V_B$ the voltage between the points. The work does not depend on the path. The field points from higher potential to lower, and a charge starting from rest moves in the direction in which its potential energy decreases. The last equation holds for a particle starting from rest when only the electric force does work. The energy unit $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$.
@@ -362,17 +362,19 @@ where $V$ is the potential at a point ($\text{V}$) relative to a chosen zero, $E
 capacitor law :: Q = CU
 capacitance of a parallel-plate capacitor :: C = \varepsilon_0\varepsilon_\text{r}\,\frac{A}{d}
 energy of a capacitor :: E = \tfrac12 CU^2
-breakdown voltage :: U_\text{max} = E_\text{max}d
+U_\text{max} = E_\text{max}d
 ```
 
 where $C$ is the capacitance ($\text{F}$), $A$ the area of a plate ($\text{m}^2$), $\varepsilon_0 = 8.854 \cdot 10^{-12}\,\text{F/m}$, $\varepsilon_\text{r}$ the relative permittivity of the dielectric, $E$ the energy stored in the capacitor ($\text{J}$), also $E = \tfrac12 QU$, and $E_\text{max}$ the dielectric strength of the dielectric ($\text{V/m}$). The formula of the parallel-plate capacitor holds when $d$ is small compared with the size of the plates and the dielectric fills the gap. For a capacitor connected to a source the voltage stays the same; for a disconnected one, the charge.
 
 ### Components and safety
 
-```kaavat
-series resistor of an LED :: R = \frac{U - U_\text{D}}{I}
-efficiency of a solar cell :: \eta = \frac{P}{GA}
-current through the body :: I = \frac{U}{R}
+```latex
+\begin{aligned}
+R &= \frac{U - U_\text{D}}{I} \\
+\eta &= \frac{P}{GA} \\
+I &= \frac{U}{R}
+\end{aligned}
 ```
 
 where $R$ is the series resistor of an LED ($\Omega$), $U_\text{D}$ the voltage of the LED ($\text{V}$), $P = UI$ the electric power of a solar cell at the maximum power point ($\text{W}$) and $G$ the light intensity ($\text{W/m}^2$). The last equation gives the current through the body when $U$ is the touch voltage and $R$ the resistance of the whole current path. A diode conducts only in the forward direction, when its voltage exceeds the threshold voltage. A fuse protects the cable, a residual current device the person.

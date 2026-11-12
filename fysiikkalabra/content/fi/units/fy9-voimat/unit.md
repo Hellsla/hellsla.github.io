@@ -188,9 +188,9 @@ Alun kysymyksen ratkaisee kappaleen valinta. Auto ja kärry vaikuttavat toisiins
 ### Newtonin lait
 
 ```kaavat
-Newtonin 1. laki (jatkavuuden laki) :: \Sigma\overline{F} = \overline{0} \ \Leftrightarrow\ \overline{v} = \text{vakio}
+\Sigma\overline{F} = \overline{0} \ \Leftrightarrow\ \overline{v} = \text{vakio}
 Newtonin 2. laki (dynamiikan peruslaki) :: \Sigma\overline{F} = m\overline{a}
-Newtonin 3. laki (voiman ja vastavoiman laki) :: \overline{F}_{AB} = -\overline{F}_{BA}
+\overline{F}_{AB} = -\overline{F}_{BA}
 ```
 
 missä $\Sigma\overline{F}$ on kappaleeseen vaikuttavien voimien summa ($\text{N}$), $m$ massa ($\text{kg}$), $\overline{a}$ kiihtyvyys ($\text{m/s}^2$) ja $\overline{F}_{AB}$ voima, jolla A vaikuttaa B:hen. Laskussa toinen laki kirjoitetaan komponenteittain, $\Sigma F_x = ma_x$ ja $\Sigma F_y = ma_y$, ja vinon voiman komponentit ovat $F\cos\alpha$ ja $F\sin\alpha$. Kokonaisvoima osoittaa kiihtyvyyden suuntaan, ei aina nopeuden suuntaan.
@@ -200,7 +200,7 @@ missä $\Sigma\overline{F}$ on kappaleeseen vaikuttavien voimien summa ($\text{N
 ```kaavat
 kappaleeseen vaikuttava painovoima Maan pinnalla :: \overline{G} = m\overline{g}
 liukukitka :: F_\mu = \mu N
-lepokitka :: F_{\mu 0} \le \mu_0 N
+F_{\mu 0} \le \mu_0 N
 ```
 
 missä $\overline{g}$ on putoamiskiihtyvyys, $g = 9{,}81\,\text{m/s}^2$, joten painon suuruus on $G = mg$, $N$ on tukivoima ($\text{N}$), $\mu$ liikekitkakerroin ja $\mu_0$ lepokitkakerroin. Lepokitka on vain niin suuri kuin tilanne vaatii, ja se vastustaa pintojen liukumista toistensa suhteen, ei aina liikettä. Kaavat ovat kuivien pintojen kokeellisia malleja. Voimakuvioissa $\overline{F}_\mu$ tarkoittaa kumpaa tahansa kitkaa, lepo- tai liikekitkaa.

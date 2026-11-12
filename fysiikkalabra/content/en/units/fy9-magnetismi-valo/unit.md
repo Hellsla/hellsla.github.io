@@ -185,7 +185,7 @@ This gives the answer to the opening question. A power of $40\,\text{kW}$ is tra
 
 ```kaavat
 magnetic force on a charged particle :: F_\text{M} = QvB_\perp
-radius of a charged particle's circular path in a magnetic field :: r = \frac{mv}{QB}
+r = \frac{mv}{QB}
 magnetic force on a straight conductor :: F_\text{M} = I\ell B_\perp
 magnetic flux density of a straight current-carrying wire :: B = \frac{\mu_0 I}{2\pi r}
 magnetic flux density of a long solenoid :: B = N\,\frac{\mu_0}{\ell}\,I
@@ -292,7 +292,7 @@ voltage induced in a coil :: e = -N\frac{\Delta\Phi}{\Delta t}
 peak value of the sinusoidal voltage induced in a generator coil :: u_0 = NAB\cdot 2\pi f
 rms value of a sinusoidal alternating voltage :: U_\text{eff} = \frac{u_0}{\sqrt{2}}
 transformer :: \frac{N_1}{N_2} = \frac{U_1}{U_2} \approx \frac{I_2}{I_1}
-power loss in a transmission line :: P_\text{h} = RI^2
+P_\text{h} = RI^2
 ```
 
 where $e$ is the induced voltage ($\text{V}$), $\Phi = BA$ the magnetic flux ($\text{Wb}$) when the field is perpendicular to the surface $A$, $u_0$ the peak value of the generator voltage, $f$ the rotation frequency ($\text{Hz}$), $U_\text{eff}$ and $u_0$ the rms value and the peak value, the indices $1$ and $2$ the primary and secondary side of the transformer, and $P_\text{h}$ the power loss of the transmission line when $I = \tfrac{P}{U}$. The minus sign is Lenz's law: the induced current opposes the change of flux. The voltage of a rod moving in a field is $e = vBl$. The transformer equation applies to an alternating voltage; the ratio of the currents is an equality only in an ideal, lossless transformer.
@@ -303,9 +303,9 @@ where $e$ is the induced voltage ($\text{V}$), $\Phi = BA$ the magnetic flux ($\
 wave equation :: c = f\lambda
 Wien's displacement law :: \lambda_\text{max} = \frac{b}{T}
 law of refraction (Snell's law) :: \frac{\sin\alpha_1}{\sin\alpha_2} = \frac{v_1}{v_2} = \frac{n_2}{n_1}
-critical angle of total internal reflection :: \sin\alpha_\text{r} = \frac{n_2}{n_1}
+\sin\alpha_\text{r} = \frac{n_2}{n_1}
 grating equation :: d\sin\alpha = n\lambda
-Malus's law :: I = I_0\cos^2\theta
+I = I_0\cos^2\theta
 ```
 
 where $c = 3.00 \cdot 10^8\,\text{m/s}$, $f$ is the frequency, $\lambda$ the wavelength, $T$ the absolute temperature ($\text{K}$), $b = 2.898 \cdot 10^{-3}\,\text{m} \cdot \text{K}$, $n = \tfrac{c}{v}$ the refractive index and $v$ the speed of light in the material, $\alpha_1$ and $\alpha_2$ the angles of incidence and refraction from the normal, $\alpha_\text{r}$ the critical angle when $n_1 > n_2$, $d$ the grating constant, in the grating equation $\alpha$ the direction of a maximum and $n = 0, 1, 2, \ldots$ its order, and $I_0$ the intensity of the polarised light before the analyser. In Malus's law $\theta$ is the angle between the direction of polarisation and the transmission axis of the analyser. In a thin film the path difference is $2nd$ when the light arrives almost perpendicularly. When only one of the reflections inverts the wave, $2nd = \left(k + \tfrac12\right)\lambda$ gives constructive interference; when both invert it, $2nd = k\lambda$.

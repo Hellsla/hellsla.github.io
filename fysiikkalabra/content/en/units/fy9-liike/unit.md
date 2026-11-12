@@ -304,8 +304,8 @@ average velocity :: \overline{v}_\text{k} = \frac{\Delta\overline{x}}{\Delta t}
 
 where $\Delta\overline{x}$ is the displacement ($\text{m}$) and $\Delta t$ the time elapsed ($\text{s}$). In linear motion the signed displacement $\Delta x = x_2 - x_1$ is enough, and the average velocity is $v_\text{k} = \tfrac{\Delta x}{\Delta t}$. When the velocity $v$ is constant and the body is at the position $x_0$ at $t = 0$,
 
-```kaavat
-position in uniform linear motion :: x = x_0 + v\,t
+```latex
+x = x_0 + v\,t
 ```
 
 This is the straight line of the $(t,x)$ graph: $x_0$ is its intercept on the position axis and $v$ its slope. The position is directly proportional to the time only when $x_0 = 0$.
@@ -333,8 +333,8 @@ where $v_0$ is the initial velocity ($\text{m/s}$) and $a$ the acceleration ($\t
 
 The instantaneous velocity on a curved $(t,x)$ graph is the slope $k$ of the tangent. A ratio calculated through two points of the curve is the average velocity. The displacement is the area between the $(t,v)$ graph and the time axis, and the part below the axis is counted as negative. In uniformly accelerated motion the region is a trapezium, so the average velocity is the mean of the initial and final velocities:
 
-```kaavat
-displacement in uniformly accelerated linear motion :: \Delta x = \frac{v_0 + v}{2}\,t
+```latex
+\Delta x = \frac{v_0 + v}{2}\,t
 ```
 
 <svg data-fig="kuvaajat" viewBox="0 0 440 650" role="img" aria-label="Schematic of one motion as two graphs with the same time axis. Below, the velocity graph: the velocity grows uniformly from zero until t1, stays constant until t2 and falls uniformly to zero at t3. The region under the graph is coloured green, and its area is the displacement Δx. Above, the position graph: first a curve bending upwards, then a rising straight line and finally a curve that levels off to horizontal. Over the whole motion the position grows by Δx in total. A blue tangent is drawn at the point P of the curve; its slope k is the velocity v_P, and the same value is marked in the lower graph." style="max-width:100%;font-size:21px">
@@ -386,8 +386,8 @@ displacement in uniformly accelerated linear motion :: \Delta x = \frac{v_0 + v}
 
 The positions of two bodies are written in the same coordinate system, and the bodies meet when
 
-```kaavat
-condition for meeting :: x_\text{A}(t) = x_\text{B}(t)
+```latex
+x_\text{A}(t) = x_\text{B}(t)
 ```
 
 In a $(t,x)$ graph a meeting is the crossing point of the lines. The upper line means a greater position coordinate. When the body behind is slower at first and accelerates, the distance between the bodies is at its greatest when their velocities are equal.

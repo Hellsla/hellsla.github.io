@@ -258,8 +258,8 @@ Tästä saadaan myös vastaus alun kysymykseen. Kymmenessä litrassa bensiiniä 
 
 Eristetyssä systeemissä, johon energiaa ei tule eikä josta sitä lähde, kokonaisenergia pysyy samana:
 
-```kaavat
-energian säilymislaki :: E_\text{alussa} = E_\text{lopussa}
+```latex
+E_\text{alussa} = E_\text{lopussa}
 ```
 
 missä kumpikin puoli on kaikkien energialajien summa, myös lämpöenergian. Teho on muuntunut tai siirtynyt energia aikaa kohti:
@@ -270,8 +270,8 @@ teho :: P = \frac{\Delta E}{\Delta t}
 
 missä $P$ on teho (W), $\Delta E$ energia (J) ja $\Delta t$ aika (s). Epätasaisessa käytössä kaava antaa keskitehon; tasaisella teholla $E = P\,t$. Kilowattitunti on energian yksikkö, ja sen muunnos tehdään sijoittamalla:
 
-```kaavat
-kilowattitunti jouleina :: 1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}
+```latex
+1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}
 ```
 
 ### Hyötysuhde ja energiaketju
@@ -284,8 +284,8 @@ missä $\eta$ on hyötysuhde, $E_\text{a}$ ja $P_\text{a}$ annettu hyötyenergia
 
 Peräkkäisissä vaiheissa kunkin vaiheen hyötyteho on seuraavan otettu teho, joten hyötysuhteet kerrotaan:
 
-```kaavat
-energiaketjun kokonaishyötysuhde :: \eta = \eta_1\,\eta_2\,\eta_3
+```latex
+\eta = \eta_1\,\eta_2\,\eta_3
 ```
 
 Kuvan esimerkkilaitoksessa $\eta = 0{,}90 \cdot 0{,}45 \cdot 0{,}98 \approx 0{,}40$: polttoainetehosta $500\,\text{MW}$ tulee sähköksi $198\,\text{MW}$. Kaistojen leveydet ovat mittakaavassa, ja lähtevät kaistat ovat yhteensä yhtä leveät kuin tuleva.
