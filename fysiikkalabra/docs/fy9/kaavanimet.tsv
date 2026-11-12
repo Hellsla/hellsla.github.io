@@ -97,7 +97,7 @@ fy9-sahkokentta	351	W = QU	W = QU	sähkökentän tekemä työ	work done by an el
 fy9-sahkokentta	380	Q = CU	Q = CU	kondensaattorilaki	capacitor law	MAFY	Virtapiirien kaavoja	
 fy9-sahkokentta	380	C = \varepsilon_0\varepsilon_\text{r}\,\frac{A}{d}	C = \varepsilon_0\varepsilon_\text{r}\,\frac{A}{d}	levykondensaattorin kapasitanssi	capacitance of a parallel-plate capacitor	MAFY	Virtapiirien kaavoja	
 fy9-sahkokentta	380	E = \tfrac12 CU^2	E = \tfrac12 CU^2	kondensaattorin energia	energy of a capacitor	MAFY	Virtapiirien kaavoja	
-fy9-sahkokentta	406	\eta = \frac{P}{GA}	\eta = \frac{P}{GA}			ei MAFY:ssa		ei MAFY:ssa; annetaan lisätietona (opettaja 2026-11-12)
+fy9-sahkokentta	406	\eta = \frac{P}{GA}	\eta = \frac{P}{GA}	+	+	lisätieto		ei MAFY:ssa; annetaan lisätietona (opettaja 2026-11-12)
 fy9-sahkokentta	406	U = RI	U = RI	jännitehäviö johtimessa	voltage drop across a conductor	MAFY	Virtapiirien kaavoja	kirjoitettu MAFY:n muotoon 2026-11-12 (docs/fy9/mafy-tunnukset.tsv)
 fy9-sailymislait	306	E_\text{k} = \tfrac{1}{2}\,mv^2	E_\text{k} = \tfrac{1}{2}\,mv^2	liike-energia	kinetic energy	MAFY	Mekaniikan kaavoja	
 fy9-sailymislait	306	E_\text{p} = mgh	E_\text{p} = mgh	painovoimaan liittyvä potentiaalienergia maanpinnalla	gravitational potential energy near the Earth's surface	MAFY	Mekaniikan kaavoja	

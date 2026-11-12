@@ -50,3 +50,15 @@ previous report>." and numbered findings, Blocking first, then Polish, each with
 fix (under 300 words per report). Blocking = a physics error, a derivation that does not hold or skips a needed step,
 an undefined symbol, a contradiction a student would meet, broken layout. Do not edit anything else and do not
 commit. Report back in under 200 words: verdicts per unit-language and every Blocking finding.
+
+## Round 2 (teacher 2026-11-12, later): what changed since the reviewed version 3ec8cc24
+- Esimerkit worked solutions (`inquiry.json`) that gave a removed result under "Kaava:" now derive it first in one or
+  two steps from MAFY laws (tasavirta [13] [15] [19] [20], moderni [16], liike [13], energia [14], magnetismi-valo [15],
+  sahkokentta [7] [19], sailymislait [14], ympyraliike [15] [16]); every number is unchanged.
+- Two formulas the teacher calls extra information are given again, marked **Lisätieto** in the formula table (a line
+  `+ <formula>`; the name column shows the word Lisätieto in italics) with a sentence that the exam gives it when a
+  task needs it: moderni H = Ḣt, sahkokentta η = P/(GA) (light perpendicular to the cell). Their Johda itse tasks are gone.
+- ympyraliike: the first Johda itse is split in two (ΣF = mv²/r; the car in a flat curve), and the derivation of g says
+  "Ilmanvastus jätetään huomioimatta."
+Judge only this change: `git diff 3ec8cc24 -- fysiikkalabra/content/<lang>/units/<id>/ fysiikkalabra/lessons/units/<id>/`
+(ignore review/). Your report's second line names the version passed at your role's previous hash.

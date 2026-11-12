@@ -404,11 +404,11 @@ Samalla tavalla saadaan alun kipinän jännite. Ilmavälin $d$ yli voi olla enin
 ### Komponentit ja turvallisuus
 
 ```kaavat
-\eta = \frac{P}{GA}
++ \eta = \frac{P}{GA}
 jännitehäviö johtimessa :: U = RI
 ```
 
-missä $\eta$ on aurinkokennon hyötysuhde ja $P$ on kennon sähköteho maksimitehopisteessä ($\text{W}$). $G$ on kennoon tulevan valon voimakkuus ($\text{W/m}^2$) eli valon teho pinta-alaa kohti. $A$ on kennon pinta-ala ($\text{m}^2$). Hyötysuhteen yhtälö pätee, kun valo tulee kohtisuoraan kennoon. Hyötysuhde kertoo, kuinka suuri osa valon tehosta muuttuu sähköksi.
+missä $\eta$ on aurinkokennon hyötysuhde ja $P$ on kennon sähköteho maksimitehopisteessä ($\text{W}$). $G$ on kennoon tulevan valon voimakkuus ($\text{W/m}^2$) eli valon teho pinta-alaa kohti. $A$ on kennon pinta-ala ($\text{m}^2$). Hyötysuhteen yhtälö pätee, kun valo tulee kohtisuoraan kennoon. Hyötysuhde kertoo, kuinka suuri osa valon tehosta muuttuu sähköksi. Yhtälö on lisätietoa. Sitä ei ole MAFY-taulukoissa. Kokeessa yhtälö annetaan tehtävässä, jos sitä tarvitaan.
 
 Jännitehäviön yhtälössä $U$ on jännite ($\text{V}$), $R$ resistanssi ($\Omega$) ja $I$ virta ($\text{A}$). Yhtälöstä saadaan kehon läpi kulkeva virta $I = \tfrac{U}{R}$. Siinä $U$ on kosketusjännite ja $R$ koko virtatien resistanssi. Diodi johtaa vain päästösuuntaan, kun sen jännite on suurempi kuin kynnysjännite. Sulake suojaa johtoa, ja vikavirtasuoja suojaa ihmistä.
 

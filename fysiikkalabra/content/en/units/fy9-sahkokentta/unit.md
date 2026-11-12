@@ -404,11 +404,11 @@ The same reasoning gives the voltage of the spark at the start: across an air ga
 ### Components and safety
 
 ```kaavat
-\eta = \frac{P}{GA}
++ \eta = \frac{P}{GA}
 voltage drop across a conductor :: U = RI
 ```
 
-where $\eta$ is the efficiency of the solar cell, $P$ the electric power of the cell at the maximum power point ($\text{W}$), $G$ the intensity of the light falling on the cell, that is the power per unit area ($\text{W/m}^2$), and $A$ the area of the cell ($\text{m}^2$). The equation for the efficiency holds when the light falls perpendicular to the cell.
+where $\eta$ is the efficiency of the solar cell, $P$ the electric power of the cell at the maximum power point ($\text{W}$), $G$ the intensity of the light falling on the cell, that is the power per unit area ($\text{W/m}^2$), and $A$ the area of the cell ($\text{m}^2$). The equation for the efficiency holds when the light falls perpendicular to the cell. The equation is extra information: it is not in the MAFY tables, and an exam gives it in the task when it is needed.
 
 In the equation for the voltage drop $U$ is the voltage ($\text{V}$), $R$ the resistance ($\Omega$) and $I$ the current ($\text{A}$). The equation gives the current through the body, $I = \tfrac{U}{R}$, when $U$ is the touch voltage and $R$ the resistance of the whole current path. A diode conducts only in the forward direction, when its voltage exceeds the threshold voltage. A fuse protects the cable, a residual current device the person.
 
