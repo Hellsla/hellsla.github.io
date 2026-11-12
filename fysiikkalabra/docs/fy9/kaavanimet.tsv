@@ -19,7 +19,7 @@ fy9-aallot	291	L = 10\,\text{dB} \cdot \lg \frac{I}{I_0}	L = 10\,\text{dB} \cdot
 fy9-energia	261	E_\text{alussa} = E_\text{lopussa}	E_\text{initial} = E_\text{final}			ei MAFY:ssa		MAFY:ssa vain mekaanisen energian säilymislaki
 fy9-energia	267	P = \frac{\Delta E}{\Delta t}	P = \frac{\Delta E}{\Delta t}	teho	power	MAFY	Mekaniikan kaavoja	MAFY: $P = \frac{W}{\Delta t} = \frac{\Delta E}{\Delta t}$
 fy9-energia	273	1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}	1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3.6\,\text{MJ}			ei MAFY:ssa	Yksikkömuunnoksia	yksikkömuunnos (MAFY: energia/työ, kilowattitunti); voi jättää nimettä
-fy9-energia	279	\eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}	\eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}	hyötysuhde	efficiency	MAFY	Mekaniikan kaavoja	MAFY: $\eta = \frac{W_a}{W_o} = \frac{P_a}{P_o}$
+fy9-energia	279	\eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}	\eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}			ei MAFY:n muodossa	Mekaniikan kaavoja	MAFY: $\eta = \frac{W_a}{W_o} = \frac{P_a}{P_o}$; nimi poistettu 2026-11-12: tunnukset eroavat MAFY:n kaavasta
 fy9-energia	287	\eta = \eta_1\,\eta_2\,\eta_3	\eta = \eta_1\,\eta_2\,\eta_3			ei MAFY:ssa		ei MAFY:ssa
 fy9-energia	328	Q = Hm	Q = Hm	palamisessa vapautuva lämpö	heat released in combustion	MAFY	Termodynamiikan kaavoja	
 fy9-energia	328	W = Fs	W = Fs	voiman tekemä työ	work done by a force	MAFY	Mekaniikan kaavoja	
@@ -67,7 +67,7 @@ fy9-magnetismi-valo	290	u_0 = NAB\cdot 2\pi f	u_0 = NAB\cdot 2\pi f	generaattori
 fy9-magnetismi-valo	290	U_\text{eff} = \frac{u_0}{\sqrt{2}}	U_\text{eff} = \frac{u_0}{\sqrt{2}}	sinimuotoisen vaihtojännitteen tehollinen arvo	rms value of a sinusoidal alternating voltage	MAFY	Sähkömagnetismin kaavoja	
 fy9-magnetismi-valo	290	\frac{N_1}{N_2} = \frac{U_1}{U_2} \approx \frac{I_2}{I_1}	\frac{N_1}{N_2} = \frac{U_1}{U_2} \approx \frac{I_2}{I_1}	muuntaja	transformer	MAFY	Sähkömagnetismin kaavoja	
 fy9-magnetismi-valo	290	P_\text{h} = RI^2	P_\text{h} = RI^2			ei MAFY:ssa		ei MAFY:ssa
-fy9-magnetismi-valo	302	c = f\lambda	c = f\lambda	aaltoliikkeen perusyhtälö	wave equation	MAFY	Aaltoliikkeen kaavoja	valolle
+fy9-magnetismi-valo	302	c = f\lambda	c = f\lambda			ei MAFY:n muodossa	Aaltoliikkeen kaavoja	valolle; nimi poistettu 2026-11-12: tunnukset eroavat MAFY:n kaavasta
 fy9-magnetismi-valo	302	\lambda_\text{max} = \frac{b}{T}	\lambda_\text{max} = \frac{b}{T}	Wienin siirtymälaki	Wien's displacement law	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	
 fy9-magnetismi-valo	302	\frac{\sin\alpha_1}{\sin\alpha_2} = \frac{v_1}{v_2} = \frac{n_2}{n_1}	\frac{\sin\alpha_1}{\sin\alpha_2} = \frac{v_1}{v_2} = \frac{n_2}{n_1}	taittumislaki (Snellin laki)	law of refraction (Snell's law)	MAFY	Aaltoliikkeen kaavoja	
 fy9-magnetismi-valo	302	\sin\alpha_\text{r} = \frac{n_2}{n_1}	\sin\alpha_\text{r} = \frac{n_2}{n_1}			ei MAFY:ssa		ei MAFY:ssa
@@ -121,10 +121,10 @@ fy9-sailymislait	339	P_\text{vesi} = \eta\rho Qgh	P_\text{hydro} = \eta\rho Qgh	
 fy9-sailymislait	339	P_\text{tuuli} = \tfrac12\eta\rho Av^3	P_\text{wind} = \tfrac12\eta\rho Av^3			ei MAFY:ssa		ei MAFY:ssa
 fy9-tasavirta	257	I = \frac{\Delta Q}{\Delta t}	I = \frac{\Delta Q}{\Delta t}	sähkövirta	electric current	MAFY	Sähkömagnetismin kaavoja	
 fy9-tasavirta	257	U = RI	U = RI	jännitehäviö johtimessa	voltage drop across a conductor	MAFY	Virtapiirien kaavoja	
-fy9-tasavirta	257	R = \rho\,\frac{l}{A}	R = \rho\,\frac{l}{A}	johtimen resistanssi	resistance of a conductor	MAFY	Virtapiirien kaavoja	
-fy9-tasavirta	267	R = R_1 + R_2 + \dots	R = R_1 + R_2 + \dots	sarjaan kytkettyjen vastusten kokonaisresistanssi	total resistance of resistors in series	MAFY	Virtapiirien kaavoja	
-fy9-tasavirta	267	\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \dots	\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \dots	rinnan kytkettyjen vastusten kokonaisresistanssi	total resistance of resistors in parallel	MAFY	Virtapiirien kaavoja	
-fy9-tasavirta	267	\sum I_\text{tulevat} = \sum I_\text{lähtevät}	\sum I_\text{in} = \sum I_\text{out}	Kirchhoffin 1. laki	Kirchhoff's first law	MAFY	Virtapiirien kaavoja	
+fy9-tasavirta	257	R = \rho\,\frac{l}{A}	R = \rho\,\frac{l}{A}			ei MAFY:n muodossa	Virtapiirien kaavoja	nimi poistettu 2026-11-12: tunnukset eroavat MAFY:n kaavasta
+fy9-tasavirta	267	R = R_1 + R_2 + \dots	R = R_1 + R_2 + \dots			ei MAFY:n muodossa	Virtapiirien kaavoja	nimi poistettu 2026-11-12: tunnukset eroavat MAFY:n kaavasta
+fy9-tasavirta	267	\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \dots	\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \dots			ei MAFY:n muodossa	Virtapiirien kaavoja	nimi poistettu 2026-11-12: tunnukset eroavat MAFY:n kaavasta
+fy9-tasavirta	267	\sum I_\text{tulevat} = \sum I_\text{lähtevät}	\sum I_\text{in} = \sum I_\text{out}			ei MAFY:n muodossa	Virtapiirien kaavoja	nimi poistettu 2026-11-12: tunnukset eroavat MAFY:n kaavasta
 fy9-tasavirta	267	\sum \Delta V = 0	\sum \Delta V = 0	Kirchhoffin 2. laki	Kirchhoff's second law	MAFY	Virtapiirien kaavoja	
 fy9-tasavirta	278	P = UI	P = UI	tehonkulutus johtimessa	power consumed in a conductor	MAFY	Virtapiirien kaavoja	
 fy9-tasavirta	278	P = RI^2 = \frac{U^2}{R}	P = RI^2 = \frac{U^2}{R}			ei MAFY:ssa	Virtapiirien kaavoja	MAFY:ssa vain $P = UI$

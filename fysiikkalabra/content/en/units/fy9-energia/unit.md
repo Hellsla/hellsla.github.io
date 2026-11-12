@@ -276,8 +276,8 @@ where $P$ is the power (W), $\Delta E$ the energy (J) and $\Delta t$ the time (s
 
 ### Efficiency and the energy chain
 
-```kaavat
-efficiency :: \eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}
+```latex
+\eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}
 ```
 
 where $\eta$ is the efficiency, $E_\text{a}$ and $P_\text{a}$ the useful energy and power given, and $E_\text{o}$ and $P_\text{o}$ the energy and power taken in. The ratio of the powers can be used when the device runs steadily. Energy is conserved, so $E_\text{o} = E_\text{a} + E_\text{h}$, where $E_\text{h}$ is the losses. The efficiency is at most $100\,\%$; it depends on what is defined as useful.

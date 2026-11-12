@@ -257,7 +257,7 @@ This answers the opening question. The devices of the cottage are connected to t
 ```kaavat
 electric current :: I = \frac{\Delta Q}{\Delta t}
 voltage drop across a conductor :: U = RI
-resistance of a conductor :: R = \rho\,\frac{l}{A}
+R = \rho\,\frac{l}{A}
 ```
 
 where $I$ is the current ($\text{A}$), $\Delta Q$ the charge that has passed through a cross-section ($\text{C}$), $\Delta t$ the time ($\text{s}$), $U$ the voltage across the component ($\text{V}$), $R$ the resistance ($\Omega$), $\rho$ the resistivity ($\Omega\cdot\text{m}$), $l$ the length of the wire ($\text{m}$) and $A$ the cross-sectional area ($\text{m}^2$). By Ohm's law the resistance of a metal conductor is constant when the temperature stays the same. The resistance of a filament lamp increases as the filament heats up. An ammeter is connected in series and a voltmeter in parallel.
@@ -265,9 +265,9 @@ where $I$ is the current ($\text{A}$), $\Delta Q$ the charge that has passed thr
 ### Connections and Kirchhoff's laws
 
 ```kaavat
-total resistance of resistors in series :: R = R_1 + R_2 + \dots
-total resistance of resistors in parallel :: \frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \dots
-Kirchhoff's first law :: \sum I_\text{in} = \sum I_\text{out}
+R = R_1 + R_2 + \dots
+\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \dots
+\sum I_\text{in} = \sum I_\text{out}
 Kirchhoff's second law :: \sum \Delta V = 0
 ```
 

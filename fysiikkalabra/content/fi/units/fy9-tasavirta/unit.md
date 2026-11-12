@@ -257,7 +257,7 @@ Tästä saadaan vastaus alun kysymykseen. Mökin laitteet on kytketty akkuun rin
 ```kaavat
 sähkövirta :: I = \frac{\Delta Q}{\Delta t}
 jännitehäviö johtimessa :: U = RI
-johtimen resistanssi :: R = \rho\,\frac{l}{A}
+R = \rho\,\frac{l}{A}
 ```
 
 missä $I$ on virta ($\text{A}$), $\Delta Q$ poikkileikkauksen läpi kulkenut varaus ($\text{C}$), $\Delta t$ aika ($\text{s}$), $U$ komponentin jännite ($\text{V}$), $R$ resistanssi ($\Omega$), $\rho$ resistiivisyys ($\Omega\cdot\text{m}$), $l$ johtimen pituus ($\text{m}$) ja $A$ poikkipinta-ala ($\text{m}^2$). Ohmin lain mukaan metallijohtimen resistanssi on vakio, kun lämpötila pysyy samana. Hehkulampun resistanssi kasvaa langan kuumetessa. Virtamittari kytketään sarjaan ja jännitemittari rinnan.
@@ -265,9 +265,9 @@ missä $I$ on virta ($\text{A}$), $\Delta Q$ poikkileikkauksen läpi kulkenut va
 ### Kytkennät ja Kirchhoffin lait
 
 ```kaavat
-sarjaan kytkettyjen vastusten kokonaisresistanssi :: R = R_1 + R_2 + \dots
-rinnan kytkettyjen vastusten kokonaisresistanssi :: \frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \dots
-Kirchhoffin 1. laki :: \sum I_\text{tulevat} = \sum I_\text{lähtevät}
+R = R_1 + R_2 + \dots
+\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \dots
+\sum I_\text{tulevat} = \sum I_\text{lähtevät}
 Kirchhoffin 2. laki :: \sum \Delta V = 0
 ```
 

@@ -48,7 +48,7 @@ fy1-4	385	[6pt] t = \frac{T - b}{k}	[6pt] t = \frac{T - b}{k}
 fy1-4	385	= \frac{40\,{}^\circ\text{C} - 20\,{}^\circ\text{C}}{8{,}0\,\tfrac{{}^\circ\text{C}}{\text{min}}}	= \frac{40\,{}^\circ\text{C} - 20\,{}^\circ\text{C}}{8.0\,\tfrac{{}^\circ\text{C}}{\text{min}}}					
 fy1-4	385	= 2{,}5\,\text{min}	= 2.5\,\text{min}					
 fy1-5	303	s = s_0 + v t	s = s_0 + v t					
-fy1-5	310	v = \frac{\Delta s}{\Delta t}	v = \frac{\Delta s}{\Delta t}	keskinopeus	average velocity	MAFY	Mekaniikan kaavoja	tasaisessa liikkeessä keskinopeus on sama kuin nopeus; vaihtoehto: "nopeus tasaisessa liikkeessä" (ehdotus)
+fy1-5	310	v = \frac{\Delta s}{\Delta t}	v = \frac{\Delta s}{\Delta t}			ei MAFY:n muodossa	Mekaniikan kaavoja	tasaisessa liikkeessä keskinopeus on sama kuin nopeus; vaihtoehto: "nopeus tasaisessa liikkeessä" (ehdotus); nimi poistettu 2026-11-12: tunnukset eroavat MAFY:n kaavasta
 fy1-5	376	s = s_0 + v t	s = s_0 + v t					
 fy1-5	387	s = s_0 + v t	s = s_0 + v t					
 fy1-5	387	= 119{,}0\,\text{AU}	= 119.0\,\text{AU}					

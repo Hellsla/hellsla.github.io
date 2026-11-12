@@ -300,7 +300,7 @@ where $e$ is the induced voltage ($\text{V}$), $\Phi = BA$ the magnetic flux ($\
 ### Light
 
 ```kaavat
-wave equation :: c = f\lambda
+c = f\lambda
 Wien's displacement law :: \lambda_\text{max} = \frac{b}{T}
 law of refraction (Snell's law) :: \frac{\sin\alpha_1}{\sin\alpha_2} = \frac{v_1}{v_2} = \frac{n_2}{n_1}
 \sin\alpha_\text{r} = \frac{n_2}{n_1}

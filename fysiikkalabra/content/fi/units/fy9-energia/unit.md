@@ -276,8 +276,8 @@ missä $P$ on teho (W), $\Delta E$ energia (J) ja $\Delta t$ aika (s). Epätasai
 
 ### Hyötysuhde ja energiaketju
 
-```kaavat
-hyötysuhde :: \eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}
+```latex
+\eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}
 ```
 
 missä $\eta$ on hyötysuhde, $E_\text{a}$ ja $P_\text{a}$ annettu hyötyenergia ja -teho ja $E_\text{o}$ ja $P_\text{o}$ otettu energia ja teho. Tehojen suhde käy, kun laite käy tasaisesti. Energia säilyy, joten $E_\text{o} = E_\text{a} + E_\text{h}$, missä $E_\text{h}$ on häviöt. Hyötysuhde on enintään $100\,\%$; se riippuu siitä, mikä määritellään hyödyksi.

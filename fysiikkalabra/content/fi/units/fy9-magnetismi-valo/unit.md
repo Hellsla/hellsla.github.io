@@ -300,7 +300,7 @@ missä $e$ on induktiojännite ($\text{V}$), $\Phi = BA$ magneettivuo ($\text{Wb
 ### Valo
 
 ```kaavat
-aaltoliikkeen perusyhtälö :: c = f\lambda
+c = f\lambda
 Wienin siirtymälaki :: \lambda_\text{max} = \frac{b}{T}
 taittumislaki (Snellin laki) :: \frac{\sin\alpha_1}{\sin\alpha_2} = \frac{v_1}{v_2} = \frac{n_2}{n_1}
 \sin\alpha_\text{r} = \frac{n_2}{n_1}

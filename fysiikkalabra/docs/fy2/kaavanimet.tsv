@@ -33,7 +33,7 @@ fy2-3	240	= 9{,}6\,\text{kWh} \cdot 20\,\text{snt/kWh}	= 9.6\,\text{kWh} \cdot 2
 fy2-3	240	= 192\,\text{snt}	= 192\,\text{c}					
 fy2-3	240	= 192 \cdot 0{,}01\,\text{€}	= 192 \cdot 0.01\,\text{€}					
 fy2-3	240	= 1{,}92\,\text{€}	= 1.92\,\text{€}					
-fy2-4	106	\eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}	\eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}	hyötysuhde	efficiency	MAFY	Mekaniikan kaavoja	sama nimi kuin FY9:ssä
+fy2-4	106	\eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}	\eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}			ei MAFY:n muodossa	Mekaniikan kaavoja	sama nimi kuin FY9:ssä; nimi poistettu 2026-11-12: tunnukset eroavat MAFY:n kaavasta
 fy2-4	112	\eta = \frac{E_\text{a}}{E_\text{o}}	\eta = \frac{E_\text{a}}{E_\text{o}}					
 fy2-4	112	= \frac{P_\text{a} \cdot t}{P_\text{o} \cdot t}	= \frac{P_\text{a} \cdot t}{P_\text{o} \cdot t}					
 fy2-4	112	= \frac{P_\text{a}}{P_\text{o}}	= \frac{P_\text{a}}{P_\text{o}}					
@@ -50,7 +50,7 @@ fy2-4	185	= 324\,000\,\text{J}	= 324\,000\,\text{J}
 fy2-4	185	[6pt] E_\text{h} = E_\text{o} - E_\text{a}	[6pt] E_\text{h} = E_\text{o} - E_\text{a}					
 fy2-4	185	= 360\,000\,\text{J} - 324\,000\,\text{J}	= 360\,000\,\text{J} - 324\,000\,\text{J}					
 fy2-4	185	= 36\,000\,\text{J}	= 36\,000\,\text{J}					
-fy2-5	171	E = Hm	E = Hm	palamisessa vapautuva lämpö	heat released in combustion	MAFY	Termodynamiikan kaavoja	MAFY:ssa Q = Hm; tunnilla energia E
+fy2-5	171	E = Hm	E = Hm			ei MAFY:n muodossa	Termodynamiikan kaavoja	MAFY:ssa Q = Hm; tunnilla energia E; nimi poistettu 2026-11-12: tunnukset eroavat MAFY:n kaavasta
 fy2-5	280	E = Hm	E = Hm					
 fy2-5	291	E = Hm	E = Hm					
 fy2-5	291	= 15\,\tfrac{\text{MJ}}{\text{kg}} \cdot 6{,}0\,\text{kg}	= 15\,\tfrac{\text{MJ}}{\text{kg}} \cdot 6.0\,\text{kg}					
@@ -65,7 +65,7 @@ fy2-6	397	\text{osuus} = P_\text{ka} : P_\text{nim}	\text{share} = P_\text{avg} 
 fy2-6	397	= 1598\,\text{kW} : 5000\,\text{kW}	= 1598\,\text{kW} : 5000\,\text{kW}					
 fy2-6	397	= 0{,}32	= 0.32					
 fy2-7	438	E_\text{häviö} = E_\text{lähtö} - E_\text{perille}	E_\text{loss} = E_\text{sent} - E_\text{arrived}					
-fy2-7	438	\eta = \frac{E_\text{perille}}{E_\text{lähtö}}	\eta = \frac{E_\text{arrived}}{E_\text{sent}}	hyötysuhde	efficiency	MAFY	Mekaniikan kaavoja	siirron hyötysuhde; erotus E_häviö samassa lohkossa nimettä (ei MAFY:ssa)
+fy2-7	438	\eta = \frac{E_\text{perille}}{E_\text{lähtö}}	\eta = \frac{E_\text{arrived}}{E_\text{sent}}					
 fy2-7	489	E_\text{perille} = \eta\, E_\text{lähtö}	E_\text{arrived} = \eta\, E_\text{sent}					
 fy2-7	489	E_\text{häviö} = E_\text{lähtö} - E_\text{perille}	E_\text{loss} = E_\text{sent} - E_\text{arrived}					
 fy2-7	504	E_\text{perille} = \eta\, E_\text{lähtö}	E_\text{arrived} = \eta\, E_\text{sent}					

@@ -307,8 +307,8 @@ where $s$ is the position (m) measured from the chosen zero point, $s_0$ the ini
 
 ### Speed from a graph
 The $(t, s)$ graph is a straight line, and the slope of the line is the speed:
-```kaavat
-average velocity :: v = \frac{\Delta s}{\Delta t}
+```latex
+v = \frac{\Delta s}{\Delta t}
 ```
 where $\Delta s$ is the change in position (m) and $\Delta t$ is its time interval (s). The line crosses the $s$-axis at the initial position $s_0$. If $s_0 = 0$, the position is directly proportional to time: $s = vt$. If $s_0 \neq 0$, the line is as steep as the line through the origin at the same speed, but shifted up or down. Then only the distance $\Delta s$, not the position $s$, is directly proportional to time.
 

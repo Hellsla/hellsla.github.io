@@ -435,9 +435,11 @@ Akkuun energia varastoituu kemialliseksi energiaksi. Pumppuvoimalassa vettä pum
 
 Häviö on verkkoon lähtevän ja perille tulevan energian erotus. Siirron hyötysuhde (luku *Hyötysuhde*) on perille tulevan energian osuus lähtevästä energiasta:
 
-```kaavat
-E_\text{häviö} = E_\text{lähtö} - E_\text{perille}
-hyötysuhde :: \eta = \frac{E_\text{perille}}{E_\text{lähtö}}
+```latex
+\begin{aligned}
+E_\text{häviö} &= E_\text{lähtö} - E_\text{perille} \\
+\eta &= \frac{E_\text{perille}}{E_\text{lähtö}}
+\end{aligned}
 ```
 
 missä $E_\text{lähtö}$ on verkkoon syötetty energia, $E_\text{perille}$ käyttäjälle asti tullut energia, $E_\text{häviö}$ matkalla lämpönä ympäristöön siirtynyt energia ja $\eta$ siirron hyötysuhde. Hyötysuhde annetaan prosentteina tai desimaalilukuna.

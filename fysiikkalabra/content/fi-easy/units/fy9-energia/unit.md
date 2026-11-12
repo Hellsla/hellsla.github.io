@@ -276,8 +276,8 @@ Kaavassa $P$ on teho (W), $\Delta E$ energia (J) ja $\Delta t$ aika (s). Jos teh
 
 ### Hyötysuhde ja energiaketju
 
-```kaavat
-hyötysuhde :: \eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}
+```latex
+\eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}
 ```
 
 Kaavassa $\eta$ on hyötysuhde. $E_\text{a}$ on annettu hyötyenergia ja $P_\text{a}$ annettu hyötyteho. $E_\text{o}$ on otettu energia ja $P_\text{o}$ otettu teho. Tehojen suhdetta voi käyttää, kun laite toimii tasaisesti. Energia säilyy, joten $E_\text{o} = E_\text{a} + E_\text{h}$. Tässä $E_\text{h}$ on häviöt eli energia, joka ei tule hyödyksi. Hyötysuhde on enintään $100\,\%$. Hyötysuhde riippuu siitä, mitä pidetään hyötynä.
