@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Analysing flight data with Python — Ruukkilabra</title>
+<meta name="description" content="Measurements from a file into Python: mean, standard deviation, graph and speed from video.">
+<link rel="canonical" href="https://ruukkilab.fi/en/ahjo-drone-data.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ruukkilabra">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Analysing flight data with Python">
+<meta property="og:description" content="Measurements from a file into Python: mean, standard deviation, graph and speed from video.">
+<meta property="og:url" content="https://ruukkilab.fi/en/ahjo-drone-data.html">
+<meta name="theme-color" content="#f7f3ec">
+<link rel="icon" href="../brand/ahjo-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="../brand/ahjo-makerspace-merkki.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../brand/ahjo-180.png">
+<link rel="stylesheet" href="../vendor/katex/katex.min.css">
+<link rel="stylesheet" href="../site.css?v=483be19a">
+</head><body>
+<a class="skip" href="#sisalto">Skip to content</a>
+<div class="page">
+<header class="top">
+  <a class="brand" href="index.html" aria-label="Ruukkilabra, home page"><img class="brand-mark" src="../brand/ruukkilabra-symboli-kiviruukki.svg" alt="" width="40" height="40"><span class="brand-name">Ruukkilabra<small>Upper secondary physics</small></span></a>
+  <nav aria-label="Main menu"><a class="nav-modules" href="index.html#moduulit">Modules</a><a class="nav-study" href="nain-opiskelet.html">How to study</a><a class="nav-reading" href="lukuvinkit.html">Book tips</a><a class="nav-booklets" href="vihkot.html">Booklets</a><a class="nav-teacher" href="tyokalut.html">For teachers</a><details class="nav-menu"><summary><span class="nav-menu-t">Menu</span></summary><ul class="nav-list"><li><a href="index.html#moduulit">Modules</a></li><li><a href="nain-opiskelet.html">How to study</a></li><li><a href="lukuvinkit.html">Book tips</a></li><li><a href="vihkot.html">Booklets</a></li><li><a href="tyokalut.html">For teachers</a></li><li><a href="tietoa.html">About</a></li></ul></details><details class="lang-menu"><summary><span class="visually-hidden">Language: </span><span class="lang-current">English</span></summary><ul class="lang-list" aria-label="Choose a language"><li><a class="lang" href="../ahjo-drone-data.html" hreflang="fi" lang="fi">Suomi</a></li><li><a class="lang" href="../fi-easy/ahjo-drone-data.html" hreflang="fi" lang="fi">Selkeä suomi</a></li></ul></details></nav>
+</header>
+<nav class="crumbs" aria-label="Path"><a href="index.html">Ruukkilabra</a> › <a href="ahjo.html">Ahjo Makerspace</a> › <a href="ahjo-materiaalit.html">Resource bank</a> › Analysing flight data with Python</nav>
+<main class="reading ahjo-page" id="sisalto"><header class="ahjo-hero"><img class="ahjo-logo" src="../brand/ahjo-makerspace-logo.svg" alt="Ahjo – Kiviruukin Makerspace" width="124" height="124"><div class="ahjo-hero-text"><p class="ahjo-eyebrow">Kiviruukin lukio&#x27;s makerspace</p><h1>Analysing flight data with Python</h1><p class="ahjo-lead">Measurements from a file into Python: mean, standard deviation, graph and speed from video.</p></div></header><nav class="ahjo-nav" aria-label="Ahjo Makerspace"><ul><li><a href="ahjo.html">Ahjo</a></li><li><a href="ahjo.html#opintojaksot">Courses</a></li><li><a href="ahjo-materiaalit.html" aria-current="page">Resource bank</a></li><li><a href="ahjo-projektit.html">Projects</a></li><li><a href="ahjo.html#laitteisto">Equipment</a></li><li><a href="ahjo-turvallisuus.html">Safety</a></li></ul></nav><p class="ahjo-from" hidden><a class="ahjo-cta ahjo-cta-quiet" href="ahjo-1.html"><span aria-hidden="true">← </span>Back to the lesson</a></p><p class="ahjo-draft" role="note"><svg class="ahjo-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M6 3h11a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H6zM9 3v18M12 8h3.5M12 12h3.5"/></svg><span><strong>Draft.</strong> This guide has not yet been tried on Ahjo&#x27;s own devices. Device models, settings and times will be confirmed once the devices have been acquired. Always follow your teacher&#x27;s instructions and the device-specific induction.</span></p><article class="ahjo-guide"><section class="ahjo-quick" aria-labelledby="pikastartti"><h2 id="pikastartti">Quick start</h2>
+<p>The results of the flight tests are processed with Python. The program reads the measurements from a file, calculates the mean and the standard deviation for each series and draws a graph. No flying is needed: this work can be done whenever the drones are in another group's use.</p>
+<ol>
+<li>Download the program <code>lentoanalyysi.py</code> and the example data from the lesson's page.</li>
+<li>Run the program with the example data.</li>
+<li>Write your own measurements into a similar file.</li>
+<li>Run the program with your own file and interpret the graph.</li>
+</ol>
+<h3>Try</h3>
+<p>Calculate and plot the mean and the standard deviation of one of your own group's measurement series.</p>
+<h3>Modify</h3>
+<p>Compare two series in the same graph and write one sentence on whether their difference is larger than the variation within a series.</p>
+<h3>Challenge yourself</h3>
+<p>Measure the drone's position from a video and calculate its speed at different moments with Python.</p>
+</section><div class="ahjo-more-band"><h2 id="opi-lisaa">Learn more</h2><p>This part goes through the work thoroughly: why it works, the exact steps, measurements and solving problems.</p></div><h2>Challenge</h2>
+<p>Five numbers in a table do not yet tell which setting was better. A graph that shows all the measurements, the mean and the spread tells it at a single glance. The goal is a graph that another group understands without an explanation.</p>
+<h2>Learning goals</h2>
+<p>After the work you can</p>
+<ul>
+<li>save measurements in a file that a program can read</li>
+<li>calculate the mean and the standard deviation with Python</li>
+<li>draw a graph that has axis labels and units</li>
+<li>justify a conclusion with a graph.</li>
+</ul>
+<h2>Starting level and prior skills</h2>
+<p>You do not need to know Python beforehand: you start from a ready-made program and change it. The principles of drawing a graph are in the guide <a href="../tvt-kuvaaja.html">Graph of measurement points</a> and calculating speed in the guide <a href="../tvt-nopeus-datasta.html">Speed and distance from measurement data</a>.</p>
+<h2>Equipment and materials</h2>
+<table>
+<thead>
+<tr>
+<th>Supply</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Raspberry Pi 5 or another computer</td>
+<td>You need Python and, for graphs, the matplotlib library.</td>
+</tr>
+<tr>
+<td>Display, keyboard and mouse</td>
+<td>For the Raspberry Pi.</td>
+</tr>
+<tr>
+<td>The group's measurements</td>
+<td>From the flight log.</td>
+</tr>
+<tr>
+<td>Flight video</td>
+<td>Only for the Challenge yourself task.</td>
+</tr>
+</tbody>
+</table>
+<p>Here the Raspberry Pi is a computer with which data is processed. It does not control the drone, and it is not attached to the drone.</p>
+<h2>Safety and induction</h2>
+<p>There is no flying in this work. See the topic <a href="ahjo-turvallisuus.html#drone-yksityisyys">filming and privacy</a>. It is in preparation until the school has approved it.</p>
+<ul>
+<li>Handle videos only on the school's devices. Do not transfer them to your own phone and do not publish them.</li>
+<li>If people are visible in a video, tell the teacher before you use it.</li>
+</ul>
+<h2>Steps</h2>
+<ol>
+<li>Open a terminal and go to the folder where the files are.</li>
+<li>Run the program with the example data: <code>python lentoanalyysi.py lentodata-esimerkki.csv</code>.</li>
+<li>Read the output: for each series the number of measurements, the mean, the standard deviation and the range.</li>
+<li>Open the example data in a text editor and see how it is written: the column names on the first row, after that one measurement per row.</li>
+<li>Make your own file with the same structure. Write the quantity and the unit in the heading of the third column, for example <code>ajautuminen_cm</code>.</li>
+<li>Run the program with your own file.</li>
+<li>Look at the graph: do the measurements of the series overlap, or are they clearly apart?</li>
+<li>Write the conclusion in one sentence.</li>
+</ol>
+<h2>Diagrams and example code</h2>
+<p>The measurement file is a text file in which the columns are separated by a semicolon. The numbers below are made-up practice data.</p>
+<pre><code>sarja;toisto;etaisyys_cm
+lahto 2 m;1;12,5
+lahto 2 m;2;18,0
+lahto 4 m;1;21,0
+lahto 4 m;2;30,5
+</code></pre>
+<p>The core of the program reads the rows and calculates the statistics:</p>
+<pre><code class="language-python">import csv
+import statistics
+
+sarjat = {}
+with open(&quot;lentodata-esimerkki.csv&quot;, encoding=&quot;utf-8&quot;) as f:
+    rivit = [r for r in csv.reader(f, delimiter=&quot;;&quot;) if r and not r[0].startswith(&quot;#&quot;)]
+for sarja, toisto, arvo in rivit[1:]:
+    sarjat.setdefault(sarja, []).append(float(arvo.replace(&quot;,&quot;, &quot;.&quot;)))
+
+for nimi, arvot in sarjat.items():
+    print(nimi, statistics.mean(arvot), statistics.stdev(arvot))
+</code></pre>
+<p>The mean is $\bar{x} = \dfrac{x_1 + x_2 + \dots + x_n}{n}$. The standard deviation tells how far the measurements typically are from the mean.</p>
+<p>Speed from a video is calculated with the help of two consecutive positions: $v = \dfrac{\Delta x}{\Delta t}$, where $\Delta x$ is the change in position and $\Delta t$ the time between the frames.</p>
+<h2>Test and measure</h2>
+<ul>
+<li>Calculate the mean of one series with a calculator and compare it with the program's result.</li>
+<li>Add one clearly deviating measurement to the file. How do the mean and the standard deviation change?</li>
+<li>Show the graph to another group without an explanation. Do they conclude the same as you?</li>
+</ul>
+<h2>If something does not work</h2>
+<ul>
+<li><strong>The program does not find the file:</strong> check that you are in the same folder and that the file name is written correctly.</li>
+<li><strong>An error in converting a number:</strong> some row has text in the place of a number, or there is the wrong number of columns.</li>
+<li><strong>The graph is not drawn:</strong> the matplotlib library is missing. Ask the teacher to install it. The statistics are still printed.</li>
+<li><strong>The standard deviation cannot be calculated:</strong> the series has only one measurement. You need at least two.</li>
+</ul>
+<h2>Extension</h2>
+<p>Change the program so that it plots the measurements in order of repetition. Does the graph show learning: do the results improve towards the end of the series?</p>
+<h2>Document your work</h2>
+<p>Attach to your project diary</p>
+<ul>
+<li>a graph that has axis labels and units</li>
+<li>the statistics as a table</li>
+<li>the conclusion in one sentence</li>
+<li>what you would measure differently next time.</li>
+</ul>
+<h2>For the teacher: preparation</h2>
+<ul>
+<li>Install Python and matplotlib and run the starter program with the example data before the lesson. The program has been tried with the example data without the graph library; drawing the graph is worth trying on a school computer.</li>
+<li>The Raspberry Pi 5 needs a power supply, a memory card, a display, a keyboard and a mouse. If they are not available, the work can be done on any computer that has Python.</li>
+<li>A computer vision project needs a camera, which is a separate purchase.</li>
+<li>Collect the groups' measurement files in a shared folder so that the groups can compare results.</li>
+<li>A video that suits video analysis is one in which the camera stays still, the drone moves in the plane of the picture and a scale is visible in the picture.</li>
+</ul></article><script src="../ahjo.js?v=d1ddcb7c"></script></main>
+<footer class="bottom"><span>Ruukkilabra</span><a href="tyokalut.html">Tools</a><a href="tietosuoja.html">Privacy</a><span class="copyright">© 2026 Lauri Hellsten</span><span class="rights">All rights reserved.</span></footer>
+</div>
+<script src="../vendor/katex/katex.min.js"></script><script src="../vendor/katex/contrib/auto-render.min.js" onload="renderMathInElement(document.querySelector('main'),{delimiters:[{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+</body></html>

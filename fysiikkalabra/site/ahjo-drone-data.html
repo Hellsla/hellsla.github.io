@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lentodatan analysointi Pythonilla — Ruukkilabra</title>
+<meta name="description" content="Mittaukset tiedostosta Pythoniin: keskiarvo, keskihajonta, kuvaaja ja nopeus videolta.">
+<link rel="canonical" href="https://ruukkilab.fi/ahjo-drone-data.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ruukkilabra">
+<meta property="og:locale" content="fi_FI">
+<meta property="og:title" content="Lentodatan analysointi Pythonilla">
+<meta property="og:description" content="Mittaukset tiedostosta Pythoniin: keskiarvo, keskihajonta, kuvaaja ja nopeus videolta.">
+<meta property="og:url" content="https://ruukkilab.fi/ahjo-drone-data.html">
+<meta name="theme-color" content="#f7f3ec">
+<link rel="icon" href="brand/ahjo-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="brand/ahjo-makerspace-merkki.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="brand/ahjo-180.png">
+<link rel="stylesheet" href="vendor/katex/katex.min.css">
+<link rel="stylesheet" href="site.css?v=483be19a">
+</head><body>
+<a class="skip" href="#sisalto">Siirry sisältöön</a>
+<div class="page">
+<header class="top">
+  <a class="brand" href="index.html" aria-label="Ruukkilabra, etusivu"><img class="brand-mark" src="brand/ruukkilabra-symboli-kiviruukki.svg" alt="" width="40" height="40"><span class="brand-name">Ruukkilabra<small>Lukion fysiikka</small></span></a>
+  <nav aria-label="Päävalikko"><a class="nav-modules" href="index.html#moduulit">Moduulit</a><a class="nav-study" href="nain-opiskelet.html">Näin opiskelet</a><a class="nav-reading" href="lukuvinkit.html">Kirjavinkit</a><a class="nav-booklets" href="vihkot.html">Vihkot</a><a class="nav-teacher" href="tyokalut.html">Opettajalle</a><details class="nav-menu"><summary><span class="nav-menu-t">Valikko</span></summary><ul class="nav-list"><li><a href="index.html#moduulit">Moduulit</a></li><li><a href="nain-opiskelet.html">Näin opiskelet</a></li><li><a href="lukuvinkit.html">Kirjavinkit</a></li><li><a href="vihkot.html">Vihkot</a></li><li><a href="tyokalut.html">Opettajalle</a></li><li><a href="tietoa.html">Sivustosta</a></li></ul></details><details class="lang-menu"><summary><span class="visually-hidden">Kieli: </span><span class="lang-current">Suomi</span></summary><ul class="lang-list" aria-label="Valitse kieli"><li><a class="lang" href="en/ahjo-drone-data.html" hreflang="en" lang="en">English</a></li><li><a class="lang" href="fi-easy/ahjo-drone-data.html" hreflang="fi" lang="fi">Selkeä suomi</a></li></ul></details></nav>
+</header>
+<nav class="crumbs" aria-label="Polku"><a href="index.html">Ruukkilabra</a> › <a href="ahjo.html">Ahjo Makerspace</a> › <a href="ahjo-materiaalit.html">Materiaalipankki</a> › Lentodatan analysointi Pythonilla</nav>
+<main class="reading ahjo-page" id="sisalto"><header class="ahjo-hero"><img class="ahjo-logo" src="brand/ahjo-makerspace-logo.svg" alt="Ahjo – Kiviruukin Makerspace" width="124" height="124"><div class="ahjo-hero-text"><p class="ahjo-eyebrow">Kiviruukin lukion makerspace</p><h1>Lentodatan analysointi Pythonilla</h1><p class="ahjo-lead">Mittaukset tiedostosta Pythoniin: keskiarvo, keskihajonta, kuvaaja ja nopeus videolta.</p></div></header><nav class="ahjo-nav" aria-label="Ahjo Makerspace"><ul><li><a href="ahjo.html">Ahjo</a></li><li><a href="ahjo.html#opintojaksot">Opintojaksot</a></li><li><a href="ahjo-materiaalit.html" aria-current="page">Materiaalipankki</a></li><li><a href="ahjo-projektit.html">Projektit</a></li><li><a href="ahjo.html#laitteisto">Laitteisto</a></li><li><a href="ahjo-turvallisuus.html">Turvallisuus</a></li></ul></nav><p class="ahjo-from" hidden><a class="ahjo-cta ahjo-cta-quiet" href="ahjo-1.html"><span aria-hidden="true">← </span>Takaisin oppituntiin</a></p><p class="ahjo-draft" role="note"><svg class="ahjo-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M6 3h11a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H6zM9 3v18M12 8h3.5M12 12h3.5"/></svg><span><strong>Luonnos.</strong> Tätä ohjetta ei ole vielä kokeiltu Ahjon omilla laitteilla. Laitemallit, asetukset ja ajat tarkentuvat, kun laitteet on hankittu. Noudata aina opettajan antamia ohjeita ja laitekohtaista perehdytystä.</span></p><article class="ahjo-guide"><section class="ahjo-quick" aria-labelledby="pikastartti"><h2 id="pikastartti">Pikastartti</h2>
+<p>Lentokokeiden tulokset käsitellään Pythonilla. Ohjelma lukee mittaukset tiedostosta, laskee jokaiselle sarjalle keskiarvon ja keskihajonnan ja piirtää kuvaajan. Lentämistä ei tarvita: tämän työn voi tehdä aina, kun dronet ovat toisen ryhmän käytössä.</p>
+<ol>
+<li>Lataa tunnin sivulta ohjelma <code>lentoanalyysi.py</code> ja esimerkkiaineisto.</li>
+<li>Aja ohjelma esimerkkiaineistolla.</li>
+<li>Kirjoita omat mittauksesi samanlaiseen tiedostoon.</li>
+<li>Aja ohjelma omalla tiedostollasi ja tulkitse kuvaaja.</li>
+</ol>
+<h3>Kokeile</h3>
+<p>Laske ja piirrä oman ryhmäsi yhden mittaussarjan keskiarvo ja keskihajonta.</p>
+<h3>Muokkaa</h3>
+<p>Vertaa kahta sarjaa samassa kuvaajassa ja kirjoita yksi lause siitä, onko niiden ero suurempi kuin vaihtelu sarjan sisällä.</p>
+<h3>Haasta itsesi</h3>
+<p>Mittaa dronen paikka videolta ja laske Pythonilla sen nopeus eri hetkillä.</p>
+</section><div class="ahjo-more-band"><h2 id="opi-lisaa">Opi lisää</h2><p>Tässä osassa työ tehdään perusteellisesti: miksi se toimii, tarkat työvaiheet, mittaukset ja ongelmien ratkaisu.</p></div><h2>Haaste</h2>
+<p>Viisi lukua taulukossa ei vielä kerro, kumpi asetus oli parempi. Kuvaaja, jossa näkyvät kaikki mittaukset, keskiarvo ja hajonta, kertoo sen yhdellä silmäyksellä. Tavoite on kuvaaja, jonka toinen ryhmä ymmärtää ilman selitystä.</p>
+<h2>Oppimistavoitteet</h2>
+<p>Työn jälkeen osaat</p>
+<ul>
+<li>tallentaa mittaukset tiedostoon, jonka ohjelma osaa lukea</li>
+<li>laskea keskiarvon ja keskihajonnan Pythonilla</li>
+<li>piirtää kuvaajan, jossa on akselien nimet ja yksiköt</li>
+<li>perustella johtopäätöksen kuvaajalla.</li>
+</ul>
+<h2>Lähtötaso ja ennakkotaidot</h2>
+<p>Pythonia ei tarvitse osata etukäteen: aloitat valmiista ohjelmasta ja muutat sitä. Kuvaajan piirtämisen periaatteet ovat ohjeessa <a href="tvt-kuvaaja.html">Mittauspisteiden kuvaaja</a> ja nopeuden laskeminen ohjeessa <a href="tvt-nopeus-datasta.html">Nopeuden ja matkan määrittäminen mittausdatasta</a>.</p>
+<h2>Laitteet ja materiaalit</h2>
+<table>
+<thead>
+<tr>
+<th>Tarvike</th>
+<th>Huomaa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rasp­ber­ry Pi 5 tai muu tie­to­ko­ne</td>
+<td>Tar­vit­set Pythonin ja kuvaajia varten matp­lot­lib-kir­jas­ton.</td>
+</tr>
+<tr>
+<td>Näyttö, näp­päi­mis­tö ja hiiri</td>
+<td>Rasp­ber­ry Pitä varten.</td>
+</tr>
+<tr>
+<td>Ryhmän mit­tauk­set</td>
+<td>Len­to­pöy­tä­kir­jas­ta.</td>
+</tr>
+<tr>
+<td>Len­to­vi­deo</td>
+<td>Vain Haasta itsesi -teh­tä­vään.</td>
+</tr>
+</tbody>
+</table>
+<p>Raspberry Pi on tässä tietokone, jolla käsitellään dataa. Se ei ohjaa dronea, eikä sitä kiinnitetä droneen.</p>
+<h2>Turvallisuus ja perehdytys</h2>
+<p>Tässä työssä ei lennätetä. Katso aihe <a href="ahjo-turvallisuus.html#drone-yksityisyys">kuvaaminen ja yksityisyys</a>. Se on valmisteilla, kunnes koulu on hyväksynyt sen.</p>
+<ul>
+<li>Käsittele videoita vain koulun laitteilla. Älä siirrä niitä omaan puhelimeesi äläkä julkaise niitä.</li>
+<li>Jos videossa näkyy ihmisiä, kerro opettajalle ennen kuin käytät sitä.</li>
+</ul>
+<h2>Työvaiheet</h2>
+<ol>
+<li>Avaa pääte ja siirry kansioon, jossa tiedostot ovat.</li>
+<li>Aja ohjelma esimerkkiaineistolla: <code>python lentoanalyysi.py lentodata-esimerkki.csv</code>.</li>
+<li>Lue tulostus: jokaiselta sarjalta mittausten määrä, keskiarvo, keskihajonta ja vaihteluväli.</li>
+<li>Avaa esimerkkiaineisto tekstieditorissa ja katso, miten se on kirjoitettu: ensimmäisellä rivillä sarakkeiden nimet, sen jälkeen yksi mittaus rivillä.</li>
+<li>Tee oma tiedosto samalla rakenteella. Kirjoita kolmannen sarakkeen otsikkoon suure ja yksikkö, esimerkiksi <code>ajautuminen_cm</code>.</li>
+<li>Aja ohjelma omalla tiedostollasi.</li>
+<li>Katso kuvaajaa: menevätkö sarjojen mittaukset päällekkäin vai ovatko ne selvästi erillään?</li>
+<li>Kirjoita johtopäätös yhdellä lauseella.</li>
+</ol>
+<h2>Kuvat ja esimerkkikoodi</h2>
+<p>Mittaustiedosto on tekstitiedosto, jossa sarakkeet on erotettu puolipisteellä. Alla olevat luvut ovat keksitty harjoitusaineisto.</p>
+<pre><code>sarja;toisto;etaisyys_cm
+lahto 2 m;1;12,5
+lahto 2 m;2;18,0
+lahto 4 m;1;21,0
+lahto 4 m;2;30,5
+</code></pre>
+<p>Ohjelman ydin lukee rivit ja laskee tunnusluvut:</p>
+<pre><code class="language-python">import csv
+import statistics
+
+sarjat = {}
+with open(&quot;lentodata-esimerkki.csv&quot;, encoding=&quot;utf-8&quot;) as f:
+    rivit = [r for r in csv.reader(f, delimiter=&quot;;&quot;) if r and not r[0].startswith(&quot;#&quot;)]
+for sarja, toisto, arvo in rivit[1:]:
+    sarjat.setdefault(sarja, []).append(float(arvo.replace(&quot;,&quot;, &quot;.&quot;)))
+
+for nimi, arvot in sarjat.items():
+    print(nimi, statistics.mean(arvot), statistics.stdev(arvot))
+</code></pre>
+<p>Keskiarvo on $\bar{x} = \dfrac{x_1 + x_2 + \dots + x_n}{n}$. Keskihajonta kertoo, kuinka kaukana mittaukset tyypillisesti ovat keskiarvosta.</p>
+<p>Nopeus videolta lasketaan kahden peräkkäisen paikan avulla: $v = \dfrac{\Delta x}{\Delta t}$, missä $\Delta x$ on paikan muutos ja $\Delta t$ kuvien välinen aika.</p>
+<h2>Testaa ja mittaa</h2>
+<ul>
+<li>Laske yhden sarjan keskiarvo laskimella ja vertaa ohjelman tulokseen.</li>
+<li>Lisää tiedostoon yksi selvästi poikkeava mittaus. Miten keskiarvo ja keskihajonta muuttuvat?</li>
+<li>Näytä kuvaaja toiselle ryhmälle ilman selitystä. Päättelevätkö he saman kuin sinä?</li>
+</ul>
+<h2>Jos jokin ei toimi</h2>
+<ul>
+<li><strong>Ohjelma ei löydä tiedostoa:</strong> tarkista, että olet samassa kansiossa ja että tiedoston nimi on kirjoitettu oikein.</li>
+<li><strong>Virhe luvun muuntamisessa:</strong> jollakin rivillä on tekstiä luvun paikalla tai sarakkeita on väärä määrä.</li>
+<li><strong>Kuvaajaa ei piirretä:</strong> matplotlib-kirjasto puuttuu. Pyydä opettajaa asentamaan se. Tunnusluvut tulostuvat silti.</li>
+<li><strong>Keskihajontaa ei voi laskea:</strong> sarjassa on vain yksi mittaus. Tarvitset vähintään kaksi.</li>
+</ul>
+<h2>Jatkotehtävä</h2>
+<p>Muuta ohjelmaa niin, että se piirtää mittaukset järjestyksessä toiston mukaan. Näkyykö kuvaajassa oppimista: paranevatko tulokset sarjan loppua kohti?</p>
+<h2>Dokumentoi</h2>
+<p>Liitä projektipäiväkirjaan</p>
+<ul>
+<li>kuvaaja, jossa on akselien nimet ja yksiköt</li>
+<li>tunnusluvut taulukkona</li>
+<li>johtopäätös yhdellä lauseella</li>
+<li>mitä mittaisit toisin seuraavalla kerralla.</li>
+</ul>
+<h2>Opettajalle: valmistelu</h2>
+<ul>
+<li>Asenna Python ja matplotlib ja aja aloitusohjelma esimerkkiaineistolla ennen tuntia. Ohjelma on kokeiltu esimerkkiaineistolla ilman kuvaajakirjastoa; kuvaajan piirto kannattaa kokeilla koulun koneella.</li>
+<li>Raspberry Pi 5 tarvitsee virtalähteen, muistikortin, näytön, näppäimistön ja hiiren. Jos niitä ei ole, työn voi tehdä millä tahansa koneella, jossa on Python.</li>
+<li>Konenäköprojekti tarvitsee kameran, joka on erillinen hankinta.</li>
+<li>Kokoa ryhmien mittaustiedostot yhteiseen kansioon, jotta ryhmät voivat verrata tuloksia.</li>
+<li>Videoanalyysiin sopii video, jossa kamera pysyy paikallaan, drone liikkuu kuvan tasossa ja kuvassa näkyy mittakaava.</li>
+</ul></article><script src="ahjo.js?v=d1ddcb7c"></script></main>
+<footer class="bottom"><span>Ruukkilabra</span><a href="tyokalut.html">Työkalut</a><a href="tietosuoja.html">Tietosuoja</a><span class="copyright">© 2026 Lauri Hellsten</span><span class="rights">Kaikki oikeudet pidätetään.</span></footer>
+</div>
+<script src="vendor/katex/katex.min.js"></script><script src="vendor/katex/contrib/auto-render.min.js" onload="renderMathInElement(document.querySelector('main'),{delimiters:[{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+</body></html>

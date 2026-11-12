@@ -1,5 +1,5 @@
 """Jaksopohja (teacher 2026-11-12): one folder layout, one registry and one set of helpers for every study unit outside
-the physics modules FY1–FY14 (Ahjo, Kilparobotiikka, LUMA-tutor, Droonilab and whatever comes next), so that updating
+the physics modules FY1–FY14 (Ahjo, Kilparobotiikka, LUMA-tutor and whatever comes next), so that updating
 one is the same work as updating another.
 
   jaksot/<id>/jakso.json           the unit in Finnish. Its first key is the same in every unit:

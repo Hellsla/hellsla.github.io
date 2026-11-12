@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Air:bit 2 radio controller and control program — Ruukkilabra</title>
+<meta name="description" content="The micro:bit as a radio controller in MakeCode and reading the drone&#x27;s control program: sensors, control and motors.">
+<link rel="canonical" href="https://ruukkilab.fi/en/ahjo-airbit-ohjaus.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ruukkilabra">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="The Air:bit 2 radio controller and control program">
+<meta property="og:description" content="The micro:bit as a radio controller in MakeCode and reading the drone&#x27;s control program: sensors, control and motors.">
+<meta property="og:url" content="https://ruukkilab.fi/en/ahjo-airbit-ohjaus.html">
+<meta name="theme-color" content="#f7f3ec">
+<link rel="icon" href="../brand/ahjo-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="../brand/ahjo-makerspace-merkki.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../brand/ahjo-180.png">
+<link rel="stylesheet" href="../vendor/katex/katex.min.css">
+<link rel="stylesheet" href="../site.css?v=483be19a">
+</head><body>
+<a class="skip" href="#sisalto">Skip to content</a>
+<div class="page">
+<header class="top">
+  <a class="brand" href="index.html" aria-label="Ruukkilabra, home page"><img class="brand-mark" src="../brand/ruukkilabra-symboli-kiviruukki.svg" alt="" width="40" height="40"><span class="brand-name">Ruukkilabra<small>Upper secondary physics</small></span></a>
+  <nav aria-label="Main menu"><a class="nav-modules" href="index.html#moduulit">Modules</a><a class="nav-study" href="nain-opiskelet.html">How to study</a><a class="nav-reading" href="lukuvinkit.html">Book tips</a><a class="nav-booklets" href="vihkot.html">Booklets</a><a class="nav-teacher" href="tyokalut.html">For teachers</a><details class="nav-menu"><summary><span class="nav-menu-t">Menu</span></summary><ul class="nav-list"><li><a href="index.html#moduulit">Modules</a></li><li><a href="nain-opiskelet.html">How to study</a></li><li><a href="lukuvinkit.html">Book tips</a></li><li><a href="vihkot.html">Booklets</a></li><li><a href="tyokalut.html">For teachers</a></li><li><a href="tietoa.html">About</a></li></ul></details><details class="lang-menu"><summary><span class="visually-hidden">Language: </span><span class="lang-current">English</span></summary><ul class="lang-list" aria-label="Choose a language"><li><a class="lang" href="../ahjo-airbit-ohjaus.html" hreflang="fi" lang="fi">Suomi</a></li><li><a class="lang" href="../fi-easy/ahjo-airbit-ohjaus.html" hreflang="fi" lang="fi">Selkeä suomi</a></li></ul></details></nav>
+</header>
+<nav class="crumbs" aria-label="Path"><a href="index.html">Ruukkilabra</a> › <a href="ahjo.html">Ahjo Makerspace</a> › <a href="ahjo-materiaalit.html">Resource bank</a> › The Air:bit 2 radio controller and control program</nav>
+<main class="reading ahjo-page" id="sisalto"><header class="ahjo-hero"><img class="ahjo-logo" src="../brand/ahjo-makerspace-logo.svg" alt="Ahjo – Kiviruukin Makerspace" width="124" height="124"><div class="ahjo-hero-text"><p class="ahjo-eyebrow">Kiviruukin lukio&#x27;s makerspace</p><h1>The Air:bit 2 radio controller and control program</h1><p class="ahjo-lead">The micro:bit as a radio controller in MakeCode and reading the drone&#x27;s control program: sensors, control and motors.</p></div></header><nav class="ahjo-nav" aria-label="Ahjo Makerspace"><ul><li><a href="ahjo.html">Ahjo</a></li><li><a href="ahjo.html#opintojaksot">Courses</a></li><li><a href="ahjo-materiaalit.html" aria-current="page">Resource bank</a></li><li><a href="ahjo-projektit.html">Projects</a></li><li><a href="ahjo.html#laitteisto">Equipment</a></li><li><a href="ahjo-turvallisuus.html">Safety</a></li></ul></nav><p class="ahjo-from" hidden><a class="ahjo-cta ahjo-cta-quiet" href="ahjo-1.html"><span aria-hidden="true">← </span>Back to the lesson</a></p><p class="ahjo-draft" role="note"><svg class="ahjo-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M6 3h11a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H6zM9 3v18M12 8h3.5M12 12h3.5"/></svg><span><strong>Draft.</strong> This guide has not yet been tried on Ahjo&#x27;s own devices. Device models, settings and times will be confirmed once the devices have been acquired. Always follow your teacher&#x27;s instructions and the device-specific induction.</span></p><article class="ahjo-guide"><section class="ahjo-quick" aria-labelledby="pikastartti"><h2 id="pikastartti">Quick start</h2>
+<p>The Air:bit 2 is controlled with a second micro:bit, which sends the commands by radio. You program the controller yourself in MakeCode. The drone's own program is ready-made, and you learn to read it.</p>
+<ol>
+<li>Open MakeCode and make a new project.</li>
+<li>Set your group's own number as the radio group.</li>
+<li>Send the tilt, the throttle and the arm value by radio as named values.</li>
+<li>Test on the desk with another micro:bit that the values arrive.</li>
+</ol>
+<h3>Try</h3>
+<p>Program a controller that sends the tilt and the throttle. Show on the receiving micro:bit that the values change.</p>
+<h3>Modify</h3>
+<p>Add an arming safeguard: A and B together toggle the arm value and reset the throttle to zero. Add a shake that stops the motors.</p>
+<h3>Challenge yourself</h3>
+<p>Read from the drone's program how it shares the power between the four motors, and explain why the drone tilts forwards.</p>
+</section><div class="ahjo-more-band"><h2 id="opi-lisaa">Learn more</h2><p>This part goes through the work thoroughly: why it works, the exact steps, measurements and solving problems.</p></div><h2>Challenge</h2>
+<p>The controller and the drone do not know each other: they only send to and listen to the same radio group. If two groups use the same number, one group's controller controls the other group's drone. The goal is a controller that works reliably and whose state you can see at a single glance.</p>
+<p>The manufacturer estimates three to four hours for programming the controller. If your own program is not finished, the manufacturer's ready-made controller program is available.</p>
+<h2>Learning goals</h2>
+<p>After the work you can</p>
+<ul>
+<li>send and receive values with the micro:bit's radio</li>
+<li>program a controller that has a throttle, tilt, an arming safeguard and an emergency stop</li>
+<li>tell what the main parts of the drone's program do</li>
+<li>describe stabilisation as feedback.</li>
+</ul>
+<h2>Starting level and prior skills</h2>
+<p>Block programming in MakeCode is enough. Variables and the conditional statement are revised in the lesson. The drone must be assembled according to the guide <a href="ahjo-airbit-kokoaminen.html">Assembling the Air:bit 2 and functional tests</a> before the controller is tried with it.</p>
+<h2>Equipment and materials</h2>
+<table>
+<thead>
+<tr>
+<th>Supply</th>
+<th>Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>micro:bit as the controller (V1 or V2) and a battery holder</td>
+<td>1</td>
+</tr>
+<tr>
+<td>micro:bit as the receiver for the desk test</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Computer on which MakeCode works in the browser</td>
+<td>1</td>
+</tr>
+<tr>
+<td>USB cable</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Assembled Air:bit 2 without propellers</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h2>Safety and induction</h2>
+<p>See the topic <a href="ahjo-turvallisuus.html#drone-potkurit">propellers and motors</a>. It is in preparation until the school has approved it.</p>
+<ul>
+<li>Every new or changed program is tested first on the desk and then with the drone <strong>without propellers</strong>.</li>
+<li>The arming safeguard and the shake stop are always kept in the program.</li>
+<li>Values in the drone's program that affect flight are not changed without the teacher's permission. The original program is saved before any changes.</li>
+</ul>
+<h2>Steps</h2>
+<p>The controller sends five values. The manufacturer's mnemonic is PARTY.</p>
+<table>
+<thead>
+<tr>
+<th>Letter</th>
+<th>Value</th>
+<th>Range</th>
+<th>How on the controller</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P</td>
+<td>pitch, tilt forwards and backwards</td>
+<td>$-45$ … $45$</td>
+<td>tilt the controller</td>
+</tr>
+<tr>
+<td>A</td>
+<td>arm, permission to start</td>
+<td>0 or 1</td>
+<td>A and B together</td>
+</tr>
+<tr>
+<td>R</td>
+<td>roll, tilt to the side</td>
+<td>$-45$ … $45$</td>
+<td>tilt the controller</td>
+</tr>
+<tr>
+<td>T</td>
+<td>throttle</td>
+<td>0 … 100</td>
+<td>A decreases, B increases</td>
+</tr>
+<tr>
+<td>Y</td>
+<td>yaw, turning about the vertical axis</td>
+<td>$-30$ … $30$</td>
+<td>extra task</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>Make variables for the arm value, the throttle and the tilts.</li>
+<li>Set the radio group at the start of the program and show the number on the display.</li>
+<li>Button A decreases the throttle by five and button B increases it by five. When the throttle is over 40, the step is one: hovering is adjusted precisely.</li>
+<li>A and B together toggle the arm value between 0 and 1 and reset the throttle to zero.</li>
+<li>A shake sets the arm value and the throttle to zero. This is the emergency stop.</li>
+<li>Read the tilts from the micro:bit's orientation sensor and limit them to the range in the table.</li>
+<li>Send the values in a forever loop as named values, each with its own capital letter.</li>
+<li>Show the state on the display: armed or disarmed, the throttle level and the tilt dot.</li>
+<li>Test on the desk with the receiving micro:bit, then with the drone without propellers.</li>
+</ol>
+<h2>Diagrams and example code</h2>
+<p>You get the starter program from the page of lesson 5. Here is its core. Paste the program into MakeCode's JavaScript view, and you will see it as blocks too.</p>
+<pre><code class="language-typescript">let radioGroup = 7      // change to your group's own number
+let arm = 0
+let throttle = 0
+
+radio.setGroup(radioGroup)
+
+input.onButtonPressed(Button.AB, function () {
+    arm = arm == 0 ? 1 : 0
+    throttle = 0
+})
+
+input.onGesture(Gesture.Shake, function () {
+    arm = 0
+    throttle = 0
+})
+
+basic.forever(function () {
+    radio.sendValue(&quot;A&quot;, arm)
+    radio.sendValue(&quot;T&quot;, throttle)
+    radio.sendValue(&quot;P&quot;, Math.constrain(input.rotation(Rotation.Pitch), -45, 45))
+    radio.sendValue(&quot;R&quot;, Math.constrain(input.rotation(Rotation.Roll), -45, 45))
+})
+</code></pre>
+<h3>How the drone's program works</h3>
+<p>In the Air:bit 2 the stabilisation is calculated in the micro:bit, and the program is open MakeCode code. Its main loop repeats the same stages many times a second:</p>
+<ol>
+<li><strong>Measure.</strong> The program reads the controller board's gyroscope and accelerometer and calculates the drone's attitude from them.</li>
+<li><strong>Compare.</strong> The program compares the measured attitude with the attitude that the controller asks for. The difference is the error.</li>
+<li><strong>Correct.</strong> A controller algorithm calculates a correction for each axis from the error.</li>
+<li><strong>Share the power.</strong> The program calculates the power of each motor from the throttle and the corrections. When the drone tilts forwards, the two rear motors get more power and the two front motors less.</li>
+<li><strong>Make sure.</strong> The motors run only when the drone is armed and the sensors work.</li>
+</ol>
+<p>This is feedback: the measurement affects the control, and the control changes what is measured next.</p>
+<h2>Test and measure</h2>
+<ul>
+<li>Desk test: do the values shown by the receiver change when you tilt the controller and press the buttons?</li>
+<li>Range: from how far does the message still arrive in the classroom? Measure the distance.</li>
+<li>Drone test without propellers: do the motors start only when armed, and do they stop from a shake every time out of ten?</li>
+</ul>
+<h2>If something does not work</h2>
+<ul>
+<li><strong>The values do not arrive:</strong> check that both micro:bits have the same radio group.</li>
+<li><strong>The neighbouring group's controller affects your drone:</strong> you have the same radio group. Change yours.</li>
+<li><strong>The drone reacts in the wrong direction:</strong> change the sign of the tilt value in the controller's program and test again without propellers.</li>
+<li><strong>The throttle jumps:</strong> check that the handlers of button A and button B do not also fire when you press both.</li>
+<li><strong>Your own program is not finished:</strong> upload the manufacturer's ready-made controller program and continue your own program later.</li>
+</ul>
+<h2>Extension</h2>
+<p>In the manufacturer's extra task the yaw (Y) is done with the touch buttons. Design your own way of giving the yaw command and test it on the desk. Another option: make a micro:bit into a receiver that plots the values sent by the controller as a graph in MakeCode's data view.</p>
+<h2>Document your work</h2>
+<p>Attach to your project diary</p>
+<ul>
+<li>a screenshot of the controller program</li>
+<li>the number of your group's radio group</li>
+<li>the results of the desk test and the drone test</li>
+<li>a reading map of the stages of the drone's program.</li>
+</ul>
+<h2>For the teacher: preparation</h2>
+<ul>
+<li>The ready-made programs are on the manufacturer's page <a href="https://www.makekit.no/en/docs/airbit-docs/">Air:bit documents</a>: the controller's hex file and the drone's program. Open the drone's program in MakeCode on a school computer before the lesson.</li>
+<li>Give each group its own radio group in the range 0–255. The default of the ready-made program is 7.</li>
+<li>The manufacturer's instructions do not include changing the tuning values. Reading the drone's program and the stability tests are the school's own tasks: try them yourself and decide which values the students may change and by how much. The tuning values are not recorded in this guide, because they can change with the version of the program.</li>
+<li>The starter program is an untested draft. Try it without propellers and check the direction of the tilt.</li>
+<li>Python: for the Air:bit 2 the manufacturer offers a Python version of the controller only, not of the drone's program.</li>
+<li>The information was read from the manufacturer's instructions on 12 November 2026.</li>
+</ul></article><script src="../ahjo.js?v=d1ddcb7c"></script></main>
+<footer class="bottom"><span>Ruukkilabra</span><a href="tyokalut.html">Tools</a><a href="tietosuoja.html">Privacy</a><span class="copyright">© 2026 Lauri Hellsten</span><span class="rights">All rights reserved.</span></footer>
+</div>
+<script src="../vendor/katex/katex.min.js"></script><script src="../vendor/katex/contrib/auto-render.min.js" onload="renderMathInElement(document.querySelector('main'),{delimiters:[{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+</body></html>

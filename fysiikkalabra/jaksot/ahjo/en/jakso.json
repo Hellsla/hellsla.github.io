@@ -74,6 +74,16 @@
       "your own ideas",
       "optional"
     ],
+    "lesson_status": {
+      "valmis": "Works with the present equipment",
+      "ohjain": "Needs a certain controller or accessory",
+      "hankinta": "Needs equipment that must be bought",
+      "hyvaksynta": "Needs the teacher's safety approval"
+    },
+    "lesson_diary_h": "Write in your project diary",
+    "lesson_teacher": "For the teacher: preparation and timing",
+    "lesson_time": "Timing",
+    "lesson_prep": "Preparation",
     "lesson_levels": [
       "Try",
       "Modify",
@@ -172,6 +182,7 @@
     "unit_lesson": "Lesson {a}",
     "course_about": "More about the course",
     "course_about_lead": "Goals, the licence and what comes next.",
+    "course_about_lead_plain": "Goals, contents and assessment.",
     "guide_back": "Back to the lesson",
     "deepening_h": "Optional deepening",
     "deepening_lead": "Optional extra work for those who get further or want to go deeper. It is not part of the outline everyone follows.",
@@ -244,6 +255,9 @@
     "proj_materials": "Materials",
     "proj_success": "Measure of success",
     "proj_next": "Further development",
+    "proj_steps": "Steps",
+    "proj_safety": "Safety limits",
+    "proj_need": "Feasibility",
     "proj_subjects": "Other subjects",
     "proj_inspiration": "Inspired by",
     "proj_external": "a page on another site",
@@ -1308,6 +1322,801 @@
         ],
         "note": "Technical flair or a successful end product alone does not decide the assessment. A failed prototype can show excellent skills when the design, the testing, the analysis of observations and the development decisions are justified. Everyone shows their own part in the hand-ins. The assessment is a draft, and the teacher decides on the weighting."
       }
+    },
+    {
+      "code": "DRONELABRA",
+      "subtitle": "Fly, program and investigate",
+      "pitch": "Build a programmable drone, learn to fly it safely and investigate by measuring why it stays in the air. Finally, you carry out your own drone project.",
+      "units": [
+        {
+          "title": "Get to know drones and fly safely",
+          "lessons": [
+            1,
+            2
+          ]
+        },
+        {
+          "title": "Build and program the Air:bit",
+          "lessons": [
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "title": "Flight tests and flight stability",
+          "lessons": [
+            7,
+            8
+          ]
+        },
+        {
+          "title": "FPV, measuring and data",
+          "lessons": [
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "title": "Your own drone project",
+          "lessons": [
+            13,
+            14,
+            15,
+            16
+          ]
+        }
+      ],
+      "topics": [
+        "Drone structure, motors, sensors and control",
+        "The physics of flight: forces, torques and flight stability",
+        "micro:bit, MakeCode and radio control",
+        "Feedback and control",
+        "Experimental research: measuring, repeats and sources of error",
+        "Analysing measurement data and video with Python",
+        "Safe and responsible flying"
+      ],
+      "goals": [
+        "fly a drone safely and act as pilot, observer and safety officer",
+        "explain, using forces and torques, why a quadcopter hovers, tilts and turns",
+        "assemble a programmable drone and check that it works before a flight",
+        "program a micro:bit as a radio controller and read the drone's control program",
+        "plan a flight test, repeat a measurement and assess the sources of error",
+        "process measurement data with Python and justify your conclusions with a graph",
+        "plan, build and document your own technical solution"
+      ],
+      "lessons": [
+        {
+          "title": "Getting to know drones and flight safety",
+          "make": "Flight area rules and roles",
+          "text": "The parts of a drone, marking out the flight area and three roles: pilot, observer and safety officer.",
+          "start": "Watch the drone flown by the teacher and write down three things that could go wrong. Compare your list with a partner.",
+          "levels": {
+            "try": "With your group, make a pre-flight checklist and draw the classroom flight area: the take-off spot, the safety line and the place for spectators. Practise the roles and the calls Take-off, Stop and Land without a drone.",
+            "modify": "Add an item to the checklist for each hazard you wrote down at the start, and test the list with another group.",
+            "challenge": "Find out from Traficom's Unmanned aviation (Miehittämätön ilmailu) pages what is required of someone flying a camera drone that weighs less than 250 grams. Write down three rules and the page where you found them."
+          },
+          "output": "The group's checklist and a drawing of the flight area, which are used throughout the course.",
+          "output_plus": "Three rules of flying in your own words, with sources.",
+          "guides": [
+            "ahjo-drone-perehdytys"
+          ],
+          "needs": [
+            "paper and pens",
+            "masking tape for marking out the flight area",
+            "safety glasses for the safety officer",
+            "a drone flown by the teacher"
+          ],
+          "safety": [
+            "drone-potkurit",
+            "drone-lentoalue",
+            "drone-saannot"
+          ],
+          "safety_note": "In this lesson only the teacher flies the drone. Stay behind the safety line when the propellers are spinning.",
+          "peer": "Swap checklists with another group. Does their list have an item that your own group did not notice?",
+          "goal": "You know the main parts of a drone and can act in your own role in the flight area.",
+          "diary": [
+            "the group's checklist",
+            "the drawing of the flight area and the roles",
+            "one thing that surprised you"
+          ],
+          "teacher": {
+            "time": "Start and demonstration flight 15 min, checklist and flight area 30 min, practising the roles 20 min, summary 10 min.",
+            "prep": "Book a room with free floor space and agree on the use of the room with the school. Charge the batteries and check the drone. Print the safety induction guide. No devices are handed out to students in this lesson."
+          },
+          "status": "hyvaksynta"
+        },
+        {
+          "title": "Why does a drone fly? Forces and torques",
+          "make": "Force diagram of hovering",
+          "text": "Weight, lift and the directions in which the propellers spin: how a quadcopter climbs, tilts and turns.",
+          "start": "Cut a helicopter out of paper following the teacher's template and drop it three times. Measure the fall time with a stopwatch.",
+          "levels": {
+            "try": "Draw the force diagram of a hovering drone and calculate how much lift one propeller has to produce when you know the mass of the drone. Mark the directions in which the propellers spin on the diagram.",
+            "modify": "Change the blade length of the paper helicopter and measure the fall time with five drops. How does the blade length affect it?",
+            "challenge": "Explain, using forces and torques, why the drone turns about its vertical axis when two opposite propellers spin faster than the others."
+          },
+          "output": "A force diagram of a hovering drone and the calculated lift of one propeller.",
+          "output_plus": "An explanation of how the drone turns, using torques.",
+          "guides": [
+            "fy4-5",
+            "fy5-1"
+          ],
+          "needs": [
+            "paper and scissors",
+            "a stopwatch or a phone",
+            "a ruler",
+            "a calculator",
+            "the mass of the drone (from the teacher or a scale)"
+          ],
+          "safety": [],
+          "safety_note": "There is no flying in this lesson. The drones stay in their boxes.",
+          "peer": "Compare your force diagram with your partner's. Are the lengths of the forces in the right proportion?",
+          "goal": "You explain hovering as a balance of forces and tilting using torques.",
+          "diary": [
+            "the force diagram and the calculation",
+            "the measurement results for the paper helicopter",
+            "which result differed from what you expected, and why"
+          ],
+          "teacher": {
+            "time": "Paper helicopter 15 min, theory and force diagram 25 min, measurements 25 min, summary 10 min.",
+            "prep": "Print the paper helicopter template and weigh one drone in advance. If necessary, revise Newton's laws and torque."
+          },
+          "status": "valmis"
+        },
+        {
+          "title": "The structure and components of the Air:bit 2",
+          "make": "Parts map of the drone",
+          "text": "Frame, control board, motors, propellers, battery and micro:bit: what each part does.",
+          "start": "Open the building kit and sort the parts into groups before you read the instructions. Guess what each group is for.",
+          "levels": {
+            "try": "On the control board, identify the micro:bit connector, the motor connections, the battery connector and the charging connector. Draw a parts map that shows where the power and the control signals travel.",
+            "modify": "Work out from the propellers which way each one has to spin, and mark the directions on the parts map.",
+            "challenge": "Weigh the parts of the kit and calculate the mass of the whole drone. Estimate how large a share of the mass is battery, and think about why that matters."
+          },
+          "output": "A parts map with the parts of the drone and their jobs labelled.",
+          "output_plus": "A table of masses and the battery's share of the drone's mass.",
+          "guides": [
+            "ahjo-airbit-kokoaminen"
+          ],
+          "needs": [
+            "one Air:bit 2 building kit per group",
+            "micro:bit",
+            "kitchen scale",
+            "paper and pens"
+          ],
+          "safety": [
+            "drone-akut"
+          ],
+          "safety_note": "The battery is not connected yet. Do not bend or press the battery, and tell the teacher straight away if a battery is swollen or damaged.",
+          "peer": "Explain the job of one part to your partner so that they can point to it on the parts map.",
+          "goal": "You name the parts of the drone and say what each of them does.",
+          "diary": [
+            "the parts map",
+            "a question you do not know the answer to yet"
+          ],
+          "teacher": {
+            "time": "Sorting 10 min, identifying the parts and parts map 35 min, propellers and weighing 20 min, summary 10 min.",
+            "prep": "Check that every kit has all its parts, and number the kits and micro:bits by group. Charge the batteries ready for next time according to the manufacturer's instructions."
+          },
+          "status": "valmis"
+        },
+        {
+          "title": "Assembling the drone and function tests",
+          "make": "An assembled and tested drone",
+          "text": "Assembling the frame and motors, and a start-up test without propellers.",
+          "start": "Attach one motor to the frame according to the instructions and show it to the teacher. Carry on only after that.",
+          "levels": {
+            "try": "Assemble the drone according to the instructions, but leave the propellers off. Start the drone on a level surface and record which letters the micro:bit display shows during start-up.",
+            "modify": "Do the motor test without propellers and check from your parts map that every motor is in the right place.",
+            "challenge": "Write a troubleshooting card: what do you do if the display reports that the gyroscope or the motor controller cannot be found?"
+          },
+          "output": "An assembled drone that starts up and passes the motor test without propellers.",
+          "output_plus": "A troubleshooting card for two start-up errors.",
+          "guides": [
+            "ahjo-airbit-kokoaminen"
+          ],
+          "needs": [
+            "Air:bit 2 building kit",
+            "micro:bit V2",
+            "a charged battery",
+            "a small cross-head screwdriver",
+            "USB cable"
+          ],
+          "safety": [
+            "drone-potkurit",
+            "drone-akut"
+          ],
+          "safety_note": "The propellers are not attached in this lesson. The battery is connected only after the teacher has checked the assembly.",
+          "wait": "While you wait for the teacher's check, add to your parts map or help another group read the instructions.",
+          "peer": "Check another group's drone using the checklist before the teacher looks at it.",
+          "goal": "You assemble a drone according to the instructions and test safely that it works.",
+          "diary": [
+            "a photo of the assembled drone",
+            "the start-up stages and the symbols on the display",
+            "what was hardest about the assembly"
+          ],
+          "teacher": {
+            "time": "First motor 10 min, assembly 40 min, start-up and motor test 15 min, summary 10 min. Allow extra time if needed: the manufacturer estimates 2–3 hours for assembly.",
+            "prep": "Charge the batteries. Load the drone program onto the micro:bits in advance or allow time for it. In the manufacturer's instructions the propellers are attached at the end of the assembly chapter: skip that step and keep the propellers yourself until the flying lessons."
+          },
+          "status": "valmis"
+        },
+        {
+          "title": "micro:bit, MakeCode and radio control",
+          "make": "Your own radio controller",
+          "text": "Two micro:bits communicate by radio: one is the controller, the other receives.",
+          "start": "Load onto the micro:bit a program that sends a number by radio when you press button A. Try with your partner's micro:bit whether the number arrives.",
+          "levels": {
+            "try": "Program the micro:bit to send its tilt and the state of the buttons by radio as named values. Show on the receiving micro:bit that the values change when you tilt the controller.",
+            "modify": "Change the radio group to your group's own and add throttle control to the controller with buttons A and B so that the value stays between 0 and 100.",
+            "challenge": "Add a safety feature: the controller sends permission to start only when A and B are pressed at the same time, and shows the state clearly."
+          },
+          "output": "A controller program that sends tilt and throttle by radio on the group's own channel.",
+          "output_plus": "A controller with a two-button start safeguard.",
+          "guides": [
+            "ahjo-airbit-ohjaus"
+          ],
+          "needs": [
+            "two micro:bits per group",
+            "a computer and MakeCode",
+            "USB cable",
+            "a battery holder for the controller"
+          ],
+          "safety": [],
+          "safety_note": "In this lesson you program and test on the desk. The drone's battery is not connected.",
+          "peer": "Try your partner's controller and tell them one thing that would make it easier to use.",
+          "goal": "You program a micro:bit to send control commands by radio.",
+          "diary": [
+            "a screenshot of the program",
+            "the number of the group's radio group",
+            "how you tested that the message gets through"
+          ],
+          "teacher": {
+            "time": "First radio message 10 min, controller program 40 min, radio groups and throttle 15 min, summary 10 min. The manufacturer estimates 3–4 hours for programming the controller, so the work continues next time.",
+            "prep": "Give each group its own radio group number. Keep the manufacturer's ready-made controller program in reserve for groups whose own program is not finished."
+          },
+          "status": "valmis",
+          "starters": [
+            "airbit-ohjain"
+          ]
+        },
+        {
+          "title": "Studying and modifying the drone's control program",
+          "make": "Reading map of the program",
+          "text": "How the drone program reads the sensors, calculates the attitude and shares the power between four motors.",
+          "start": "Open the drone's program in MakeCode and find the place where the radio message is received. Which five values does the controller send?",
+          "levels": {
+            "try": "Follow the main loop of the program and make a reading map: reading the sensors, calculating the attitude, control and the motor speeds. Mark the place where the motors are stopped for safety reasons.",
+            "modify": "Change something that does not affect flight: for example what is shown on the display or when the battery warning appears. Test the change without propellers.",
+            "challenge": "Explain from the formula for the motor speeds why, when tilting forwards, the power of two motors increases and that of two decreases."
+          },
+          "output": "A reading map of the stages and safety functions of the drone program.",
+          "output_plus": "An explanation of how the program shares the power between four motors.",
+          "guides": [
+            "ahjo-airbit-ohjaus"
+          ],
+          "needs": [
+            "a computer and MakeCode",
+            "the drone's micro:bit",
+            "USB cable",
+            "an assembled drone without propellers"
+          ],
+          "safety": [
+            "drone-potkurit"
+          ],
+          "safety_note": "All changes are tested without propellers. Values that affect flight are not changed yet.",
+          "wait": "If the computer or the drone is in use, finish your controller program or write up a clean copy of the reading map.",
+          "peer": "Explain one stage of your reading map to your partner. Your partner asks one question, and you look for the answer in the program together.",
+          "goal": "You read a ready-made program and say what its parts do.",
+          "diary": [
+            "the reading map",
+            "the change you made and how you tested it",
+            "a part of the program you do not understand yet"
+          ],
+          "teacher": {
+            "time": "Finding the radio handler 10 min, reading map 35 min, own change and test 20 min, summary 10 min.",
+            "prep": "Make sure that the drone program opens in MakeCode on the school's computers. Save a copy of the original program so that it can be restored."
+          },
+          "status": "valmis"
+        },
+        {
+          "title": "First flight tests with the Air:bit 2",
+          "make": "First hover",
+          "text": "Checklist, calibration and short hovers in a marked-out flight area.",
+          "start": "Go through the group's checklist aloud and share out the roles: pilot, safety officer and recorder. Show the list to the teacher before the propellers are attached.",
+          "levels": {
+            "try": "Attach the propellers under the teacher's supervision and let the drone calibrate while standing still on a level surface. Do three short hovers: raise the throttle one step at a time until the drone hovers at a height of 10–30 cm. For each flight, record the duration and the direction in which the drone drifted.",
+            "modify": "Swap roles and repeat the test. Did the direction of the drift change when the pilot changed or when the drone was calibrated again?",
+            "challenge": "Plan a test to find out whether the drift is caused by the drone or by the pilot. Write down what you keep constant and what you change."
+          },
+          "output": "A flight log of three hovers: duration, drift and observations.",
+          "output_plus": "A test plan for finding the cause of the drift.",
+          "guides": [
+            "ahjo-drone-lentokokeet",
+            "ahjo-drone-perehdytys"
+          ],
+          "needs": [
+            "an assembled and tested Air:bit 2",
+            "a micro:bit programmed as the controller",
+            "charged batteries",
+            "propellers",
+            "safety glasses",
+            "stopwatch",
+            "tape measure",
+            "masking tape",
+            "a soft surface, for example a rug, on the floor of the flight area"
+          ],
+          "safety": [
+            "drone-potkurit",
+            "drone-akut",
+            "drone-lentoalue",
+            "drone-hatapysaytys"
+          ],
+          "safety_note": "The drone has no altitude hold or position hold: the pilot controls the height the whole time. You fly low over a soft surface, one drone at a time in the flight area. The emergency stop is shaking the controller, and it is tried out before the propellers are attached.",
+          "starters": [
+            "lentopoytakirja"
+          ],
+          "wait": "While another group is flying, act as recorder or measure the duration of their hover from video.",
+          "peer": "Give the pilot one compliment and one piece of advice after each flight.",
+          "goal": "You carry out the pre-flight checks and fly the drone briefly and under control.",
+          "diary": [
+            "the flight log",
+            "which checklist item was the most important",
+            "what you would change next time"
+          ],
+          "teacher": {
+            "time": "Checklist and roles 10 min, propellers and calibration 15 min, flying turns 40 min, summary 10 min.",
+            "prep": "Check the flying space and mark out the flight area. Charge the batteries and have spare propellers ready. Decide how long the flying turns are and how many drones are running at once. Approve each group's checklist before the flight."
+          },
+          "status": "hyvaksynta"
+        },
+        {
+          "title": "Investigating flight stability and developing the program",
+          "make": "Stability test",
+          "text": "How the values of the feedback controller affect how steadily the drone hovers.",
+          "start": "Look in last time's flight log to see how much the drone drifted. Set a target for the group: what would a steadier hover mean, and how would you measure it?",
+          "levels": {
+            "try": "Do a comparison test with the original tuning values: three hovers, for each of which you measure the drift from the starting point in a set time. Calculate the mean and the range.",
+            "modify": "With the teacher's permission, change one tuning value in small steps and repeat the same test. Record the value before and after. Restore the original value if the drone starts to wobble.",
+            "challenge": "Use your observations to explain what the gain of the feedback controller does: why does too small a value make the drone sluggish and too large a value make it oscillate?"
+          },
+          "output": "The results of the comparison test: the mean and range of the drift with the original values.",
+          "output_plus": "A second series of measurements with a changed value and a justified conclusion.",
+          "guides": [
+            "ahjo-drone-lentokokeet",
+            "ahjo-airbit-ohjaus"
+          ],
+          "needs": [
+            "an Air:bit 2 in flying condition and a controller",
+            "a computer and MakeCode",
+            "charged batteries",
+            "tape measure",
+            "stopwatch",
+            "safety glasses",
+            "a starting point taped on the floor"
+          ],
+          "safety": [
+            "drone-potkurit",
+            "drone-akut",
+            "drone-lentoalue",
+            "drone-hatapysaytys"
+          ],
+          "safety_note": "Tuning values are changed one at a time and only within the limits approved by the teacher. A changed program is tested first without propellers.",
+          "starters": [
+            "lentopoytakirja",
+            "lentoanalyysi"
+          ],
+          "wait": "While the drone is with another group, enter your measurements in a table and calculate the means.",
+          "peer": "Compare your results with another group's. Did you measure the drift in the same way?",
+          "goal": "You do a comparison test and use measurements to justify whether the flight stability improved.",
+          "diary": [
+            "the test set-up and what you kept constant",
+            "the table of measurements and the means",
+            "the changed values and the original values"
+          ],
+          "teacher": {
+            "time": "Target and test set-up 15 min, comparison test 25 min, change and repeat test 25 min, summary 10 min.",
+            "prep": "Decide in advance which values may be changed and by how much. Save the original program for each group. Charge the batteries: flight time affects the results, so agree that the measurements are made with a full battery. The manufacturer's instructions do not include changing the tuning values, so the task is the school's own: try it yourself before the lesson."
+          },
+          "status": "hyvaksynta"
+        },
+        {
+          "title": "The basics of FPV flying",
+          "make": "First FPV flight",
+          "text": "You fly a camera drone with goggles and a motion controller in Normal mode. The observer stands next to the pilot.",
+          "start": "Hold the motion controller in your hand with the device switched off and practise the movements the teacher shows: braking and hovering, climbing, turning and landing.",
+          "levels": {
+            "try": "At the station, do one FPV flight: take-off, hover, a slow flight to the marker and back, and landing. Also act once as observer and once as safety officer.",
+            "modify": "Fly the same route without goggles, looking straight at the drone. Which way was more accurate, and why?",
+            "challenge": "Describe what information the view in the goggles gives the pilot and what information only the observer sees."
+          },
+          "output": "One controlled FPV flight and experience of each of the three roles.",
+          "output_plus": "A comparison between FPV flight and direct line of sight.",
+          "guides": [
+            "ahjo-fpv-lento",
+            "ahjo-drone-perehdytys"
+          ],
+          "needs": [
+            "a camera drone with propeller guards",
+            "FPV goggles and a motion controller",
+            "charged batteries",
+            "marker cones or tape markers",
+            "safety glasses for the safety officer"
+          ],
+          "safety": [
+            "drone-fpv",
+            "drone-lentoalue",
+            "drone-hatapysaytys",
+            "drone-yksityisyys",
+            "drone-akut"
+          ],
+          "safety_note": "With the goggles on you cannot see around you. The observer stands next to you, keeps the drone in sight the whole time without any aids and says Stop if anything comes into the flight area. You fly only in Normal mode. Stop immediately if you start to feel dizzy or unwell.",
+          "wait": "When it is not your turn to fly, practise the control movements with the controller switched off, or plan the precision course for next time.",
+          "peer": "After the flight, the observer tells the pilot one thing that the pilot did not see through the goggles.",
+          "goal": "You fly an FPV drone under control and act as observer.",
+          "diary": [
+            "the roles you acted in",
+            "how FPV flight felt compared with direct line of sight",
+            "the observer's observations"
+          ],
+          "teacher": {
+            "time": "Control movements and rules 15 min, stations 50 min, summary 10 min. With two drones, a group of about four students per station has time to fly.",
+            "prep": "Read the device's user manual and safety instructions. The manufacturer states that the product is not intended for children and does not give an age limit: the school decides on its use in teaching. Check who the registered user (operator) is and that the ID is marked on the drones. Agree on the use of the room and on the rules for filming. Attach the propeller guards, charge the batteries and make sure that the flying space is well lit and roomy: in a cramped or dim space the drone can lose its positioning and drift. Sport mode and Easy ACRO tricks are not used, because obstacle avoidance is switched off in them. Clean the goggles between users. Arrange a parallel task for the rest of the group."
+          },
+          "status": "hyvaksynta"
+        },
+        {
+          "title": "Precision flight test and measuring the flight path",
+          "make": "A series of precision landing measurements",
+          "text": "How accurately does a landing hit the mark, and how much do the results vary?",
+          "start": "Tape a landing mark on the floor and agree in your group which point the landing accuracy is measured from. Write the rule down before the first flight.",
+          "levels": {
+            "try": "Fly from the starting point to the mark and land five times. Measure the distance of each landing from the centre of the mark and record the results in a table.",
+            "modify": "Change one thing, for example the starting distance or the pilot, and repeat the series of five landings. Keep everything else the same.",
+            "challenge": "Film the flight from the side with a phone on a tripod and measure from the video the flight time from take-off to landing. Calculate the drone's average speed."
+          },
+          "output": "A table of measurements for five landings and their mean.",
+          "output_plus": "A second series of measurements in which one thing has been changed, or the average speed calculated from video.",
+          "guides": [
+            "ahjo-drone-lentokokeet",
+            "ahjo-fpv-lento",
+            "tvt-videoanalyysi"
+          ],
+          "needs": [
+            "a camera drone with propeller guards and a controller",
+            "charged batteries",
+            "tape measure",
+            "masking tape",
+            "a phone and a tripod for filming",
+            "safety glasses for the safety officer"
+          ],
+          "safety": [
+            "drone-fpv",
+            "drone-lentoalue",
+            "drone-hatapysaytys",
+            "drone-yksityisyys"
+          ],
+          "safety_note": "Only the flight area and the drone are filmed. Nobody is filmed without permission, and the videos are not published.",
+          "starters": [
+            "lentopoytakirja"
+          ],
+          "wait": "While the drone is with another group, measure and record their landings or enter your own results in the table.",
+          "peer": "Another group measures one of your landings. Do you get the same result?",
+          "goal": "You repeat a measurement and describe the variation in the results with the mean and the range.",
+          "diary": [
+            "the measuring rule and the test set-up",
+            "the table of measurements",
+            "the biggest source of error and how you would reduce it"
+          ],
+          "teacher": {
+            "time": "Test set-up and measuring rule 15 min, series of measurements at the stations 45 min, recording the results and summary 15 min.",
+            "prep": "Mark out two flight areas if there is enough room. Have tape measures and a tripod ready. Remind students of the rules for filming. The rest of the group can measure Air:bit hovers or analyse earlier data."
+          },
+          "status": "hyvaksynta"
+        },
+        {
+          "title": "Analysing flight video and measurement data with Python",
+          "make": "A graph of your own measurement data",
+          "text": "Measurements from a table into Python: mean, spread and a graph that shows the conclusion.",
+          "start": "Run the ready-made Python program with the example data and see what graph it draws. Then replace the data with your own group's measurement file.",
+          "levels": {
+            "try": "Read your group's measurements from a file, calculate the mean and the standard deviation and draw a graph that shows all the measurements and the mean.",
+            "modify": "Compare two series of measurements in the same graph and write one sentence on whether the difference is bigger than the variation in the measurements.",
+            "challenge": "Measure the drone's position from a few frames of the video and calculate the speed at different moments. Compare the result with the average speed obtained with a stopwatch."
+          },
+          "output": "A graph of your own measurement data, and the mean and standard deviation.",
+          "output_plus": "A comparison of two series of measurements, or a speed measured from video.",
+          "guides": [
+            "ahjo-drone-data",
+            "tvt-kuvaaja"
+          ],
+          "needs": [
+            "a Raspberry Pi or another computer with Python",
+            "the group's measurement files",
+            "a flight video filmed earlier"
+          ],
+          "safety": [],
+          "safety_note": "There is no flying in this lesson. Handle the videos only on the school's devices, and do not share them with anyone.",
+          "starters": [
+            "lentoanalyysi",
+            "lentodata-esimerkki"
+          ],
+          "wait": "If the computer is in use, check your table of measurements: does every number have a unit, and are the outlying values marked?",
+          "peer": "Show your graph to your partner without explaining it. What do they conclude from it?",
+          "goal": "You process measurement data with Python and justify a conclusion with a graph.",
+          "diary": [
+            "the graph and the statistics",
+            "the conclusion in one sentence",
+            "what you would measure differently"
+          ],
+          "teacher": {
+            "time": "Ready-made program and example data 15 min, own data and graph 35 min, comparison or video 15 min, summary 10 min.",
+            "prep": "Install Python and the plotting library on the computers and try out the starter program. Collect the groups' measurement files in one folder. Video analysis requires a video in which the camera stays still and a scale is visible in the picture."
+          },
+          "status": "valmis"
+        },
+        {
+          "title": "Drone control engineering and comparing the flight tests",
+          "make": "Report on the control test",
+          "text": "Feedback: the sensor measures, the program compares and the motors correct. The results of the flight tests are brought together.",
+          "start": "Hold the drone in your hand without propellers and tilt it slowly. Use the motor test or the display to see in which direction the program tries to correct.",
+          "levels": {
+            "try": "Draw the drone's control loop as a block diagram: target attitude, sensors, feedback controller, motors and drone. Attach the results of your group's stability test to the diagram.",
+            "modify": "Compare the stability results of at least two groups and explain what the differences could be due to: the drone, the battery, the pilot or the way of measuring.",
+            "challenge": "Do a second control test with a different value from the one in lesson 8 and plot the results in the same graph as the earlier ones. With which value was the hover steadiest?"
+          },
+          "output": "A block diagram of the drone's control loop and a summary of the results of the stability test.",
+          "output_plus": "A graph comparing at least two tuning values.",
+          "guides": [
+            "ahjo-airbit-ohjaus",
+            "ahjo-drone-lentokokeet",
+            "ahjo-drone-data"
+          ],
+          "needs": [
+            "Air:bit 2 and a controller",
+            "a computer",
+            "earlier measurement results",
+            "charged batteries and safety glasses, if you fly"
+          ],
+          "safety": [
+            "drone-potkurit",
+            "drone-akut",
+            "drone-lentoalue",
+            "drone-hatapysaytys"
+          ],
+          "safety_note": "The hand-held test is always done without propellers. In a flight test the same limits apply as in lesson 8.",
+          "starters": [
+            "lentoanalyysi"
+          ],
+          "wait": "If the drone is in use, finish the block diagram and write the summary of the results.",
+          "peer": "Explain your block diagram to your partner by following one loop with your finger: what happens when the wind tilts the drone?",
+          "goal": "You describe the stabilisation of the drone as feedback and compare test results.",
+          "diary": [
+            "the block diagram",
+            "the summary of the results and the graph",
+            "an idea for your own project"
+          ],
+          "teacher": {
+            "time": "Hand-held test 10 min, block diagram 25 min, comparing the results or a second control test 30 min, summary 10 min.",
+            "prep": "Collect the groups' stability results in one table. Decide whether there is flying this time. At the end, introduce the project bank for next time."
+          },
+          "status": "hyvaksynta"
+        },
+        {
+          "title": "Coming up with and planning your own project",
+          "make": "Project plan",
+          "text": "You choose a topic from the project bank or your own idea and write a plan whose success can be measured.",
+          "start": "Read the cards in the project bank and choose the two most interesting ones. For each, write one question that the project would answer.",
+          "levels": {
+            "try": "Write the group's project plan: the research question or problem, the equipment needed, the work stages, a measurable success criterion and safety. Get the teacher to approve the plan.",
+            "modify": "Add a back-up plan to the plan: what do you do if a device is in use or the first solution does not work?",
+            "challenge": "Propose a project of your own that is not in the bank. Justify why it can be done with the school's equipment and how its success is measured."
+          },
+          "output": "A project plan approved by the teacher, with a measurable success criterion.",
+          "output_plus": "A back-up plan, or a justified project idea of your own.",
+          "guides": [
+            "ahjo-projektipaivakirja"
+          ],
+          "needs": [
+            "project bank",
+            "project diary",
+            "a computer"
+          ],
+          "safety": [
+            "drone-saannot"
+          ],
+          "safety_note": "A project that involves flying is not started until the teacher has approved the safety section of the plan.",
+          "starters": [
+            "testisuunnitelma"
+          ],
+          "peer": "Present the plan to another group in two minutes. They ask: how do you know that you have succeeded?",
+          "goal": "You define a project whose success can be measured.",
+          "diary": [
+            "the project plan",
+            "the success criterion",
+            "the division of work and a schedule for three sessions"
+          ],
+          "teacher": {
+            "time": "Project bank 15 min, plan 40 min, presentation to another group 10 min, approvals 10 min.",
+            "prep": "Check which projects can be done with the current equipment and which require an additional purchase. Allow time for approving the plans and for making the equipment booking list."
+          },
+          "status": "valmis"
+        },
+        {
+          "title": "Building and programming the project",
+          "make": "First working version",
+          "text": "The project is built or programmed far enough that it can be tried out.",
+          "start": "Read this session's target from the plan and share out the work. Every member of the group has a task during the first five minutes.",
+          "levels": {
+            "try": "Build or program the first version of the project and do one test with it, even if not everything works yet. Record what happened.",
+            "modify": "Improve one thing on the basis of the first test and record what you changed and why.",
+            "challenge": "Prepare a measurement for next time: make a table for the measurements and decide how many repeats are needed."
+          },
+          "output": "The first version of the project and a record of the first test.",
+          "output_plus": "One justified improvement, or a finished measurement plan.",
+          "guides": [
+            "ahjo-projektipaivakirja",
+            "ahjo-drone-lentokokeet"
+          ],
+          "needs": [
+            "the equipment listed in the project plan",
+            "project diary",
+            "charged batteries, if you fly"
+          ],
+          "safety": [
+            "drone-potkurit",
+            "drone-akut",
+            "drone-lentoalue",
+            "drone-hatapysaytys"
+          ],
+          "safety_note": "Follow the safety section of your plan. If the plan changes so that you fly in a different way, ask for a new approval.",
+          "wait": "If the device you need is in use, work on another part of the project: the table for the measurements, the 3D model or the documentation.",
+          "peer": "Show your unfinished work to another group and ask one question that you need help with.",
+          "goal": "You build the first version of your plan and try it out.",
+          "diary": [
+            "what was done and who did it",
+            "the result of the first test",
+            "the target for next time"
+          ],
+          "teacher": {
+            "time": "Sharing out the work 5 min, building and programming 55 min, diary and tidying up 15 min.",
+            "prep": "Make an equipment booking list from the groups' plans. Charge the batteries. Agree where the groups that fly will work, and when."
+          },
+          "status": "hyvaksynta"
+        },
+        {
+          "title": "Testing and improving the project",
+          "make": "Measurement results and an improved version",
+          "text": "The project is tested by measuring, improved and tested again.",
+          "start": "Read your success criterion aloud and straight away make one measurement that tells you how far you are from it.",
+          "levels": {
+            "try": "Carry out the planned series of measurements, record the results and compare them with the success criterion. Make one change and measure again.",
+            "modify": "Draw a graph of the results before and after the change and write whether the change improved the result.",
+            "challenge": "Assess the biggest source of error in your measurements and suggest how it could be reduced."
+          },
+          "output": "Measurement results before and after one change. An unsuccessful change is also accepted when it has been measured and justified.",
+          "output_plus": "A graph of the results, or an assessment of the sources of error.",
+          "guides": [
+            "ahjo-drone-lentokokeet",
+            "ahjo-drone-data",
+            "ahjo-projektipaivakirja"
+          ],
+          "needs": [
+            "the project equipment",
+            "measuring instruments",
+            "a computer",
+            "charged batteries, if you fly"
+          ],
+          "safety": [
+            "drone-potkurit",
+            "drone-akut",
+            "drone-lentoalue",
+            "drone-hatapysaytys"
+          ],
+          "safety_note": "A changed drone or program is tested first without propellers or at low height, as in earlier lessons.",
+          "starters": [
+            "lentopoytakirja",
+            "lentoanalyysi"
+          ],
+          "wait": "If the device is in use, process the data you have already collected and start putting the presentation together.",
+          "peer": "Another group repeats one of your measurements. What causes the difference between their result and yours?",
+          "goal": "You test your solution by measuring and improve it on the basis of the results.",
+          "diary": [
+            "the measurement results and the graph",
+            "the change you made and its effect",
+            "what you would do if there were more time"
+          ],
+          "teacher": {
+            "time": "First measurement 10 min, series of measurements 25 min, change and new measurement 25 min, diary 15 min.",
+            "prep": "Have measuring instruments ready and book flying turns. Remind students that what counts in the assessment is measured and justified development, not just a working end result."
+          },
+          "status": "hyvaksynta"
+        },
+        {
+          "title": "Drone Challenge, presentation and self-assessment",
+          "make": "Project presentation",
+          "text": "The projects are presented, the shared Drone Challenge is flown and you assess your own work.",
+          "start": "Put your project on display and write one sentence on a card: what you investigated or solved and what the most important result was.",
+          "levels": {
+            "try": "Present the project: the problem, the solution, the measurement results and what you learned. Answer one question and fill in the self-assessment.",
+            "modify": "Take part in the Drone Challenge with your group in the role you have chosen and record the group's result.",
+            "challenge": "Write a proposal for further development: what could the next group do with your project?"
+          },
+          "output": "A presented project, a finished project diary and a self-assessment.",
+          "output_plus": "A Drone Challenge result, or a proposal for further development.",
+          "guides": [
+            "ahjo-projektipaivakirja",
+            "ahjo-drone-perehdytys"
+          ],
+          "needs": [
+            "the project and its results",
+            "project diary",
+            "self-assessment form",
+            "the Drone Challenge course and equipment"
+          ],
+          "safety": [
+            "drone-fpv",
+            "drone-lentoalue",
+            "drone-hatapysaytys",
+            "drone-yksityisyys"
+          ],
+          "safety_note": "There are spectators at the Drone Challenge: they stay behind the safety line, and every flight has a named observer and safety officer.",
+          "peer": "Give each presentation one question or compliment on a card.",
+          "goal": "You present the results of your project and assess your own work.",
+          "diary": [
+            "the main points of the presentation",
+            "the feedback you received",
+            "the self-assessment"
+          ],
+          "teacher": {
+            "time": "Exhibition and presentations 35 min, Drone Challenge 25 min, self-assessment and feedback 15 min.",
+            "prep": "Build the Drone Challenge course and mark out the spectators' area. Print the self-assessment forms. Decide which tasks are flown on the course: precision landing is achievable for everyone, the obstacle course requires more flying experience."
+          },
+          "status": "hyvaksynta",
+          "final": true
+        }
+      ],
+      "final": {
+        "title": "Drone Challenge",
+        "text": "At the end of the course, every group presents its own project and takes part in the shared Drone Challenge. The tasks are chosen so that every group can succeed at its own level.",
+        "options": [
+          [
+            "Precision landing",
+            "Five landings on the mark. The result is the mean of the distances, not the best single hit."
+          ],
+          [
+            "Obstacle course",
+            "A lap through a marked course following the observer's instructions. The result is the time and the number of touches."
+          ],
+          [
+            "Steadiest hover",
+            "The Air:bit stays inside a marked area for as long as possible."
+          ],
+          [
+            "Best measurement",
+            "The group presents a measurement result whose reliability it can justify."
+          ]
+        ],
+        "own": "You can propose a task of your own once the teacher has approved its rules and safety."
+      },
+      "plan_status": "draft",
+      "assessment": {
+        "lead": "The assessment is based on what you produce in the lessons, the project diary, the project and the teacher's observations. The assessment takes into account:",
+        "items": [
+          "safe and responsible conduct in all roles",
+          "understanding of the programming and the technical implementation",
+          "systematic experimental work",
+          "analysis of measurement results and justification of conclusions",
+          "development based on feedback and measurements",
+          "documentation of the project",
+          "teamwork skills and self-assessment"
+        ],
+        "note": "Good flying skill alone does not decide the assessment. A failed prototype can also show excellent skills when the work is systematic, tested and documented with justification. The scope of 2 credits is a preliminary proposal until the course has been approved."
+      }
     }
   ],
   "categories": [
@@ -1612,6 +2421,66 @@
       "subjects": [
         "upper secondary diplomas"
       ]
+    },
+    {
+      "id": "ahjo-drone-perehdytys",
+      "category": "turvallisuus",
+      "title": "Dronelabra safety induction",
+      "text": "Propellers, batteries, flight area, roles, emergency stop, FPV flight and the rules of flying before the first flight.",
+      "status": "draft",
+      "courses": [
+        "DRONELABRA"
+      ]
+    },
+    {
+      "id": "ahjo-airbit-kokoaminen",
+      "category": "robotiikka",
+      "title": "Assembling the Air:bit 2 and function tests",
+      "text": "The parts of the building kit, assembly, charging the battery and a start-up test without propellers.",
+      "status": "draft",
+      "courses": [
+        "DRONELABRA"
+      ]
+    },
+    {
+      "id": "ahjo-airbit-ohjaus",
+      "category": "robotiikka",
+      "title": "The Air:bit 2 radio controller and control program",
+      "text": "The micro:bit as a radio controller in MakeCode and reading the drone's control program: sensors, control and motors.",
+      "status": "draft",
+      "courses": [
+        "DRONELABRA"
+      ]
+    },
+    {
+      "id": "ahjo-drone-lentokokeet",
+      "category": "robotiikka",
+      "title": "Flight tests and measuring",
+      "text": "Flight log, measuring hovering and landing, repeats and sources of error.",
+      "status": "draft",
+      "courses": [
+        "DRONELABRA"
+      ]
+    },
+    {
+      "id": "ahjo-fpv-lento",
+      "category": "robotiikka",
+      "title": "FPV flight with goggles and a motion controller",
+      "text": "Flying a camera drone with goggles: the functions of the controller, the observer's job and how the station works.",
+      "status": "draft",
+      "courses": [
+        "DRONELABRA"
+      ]
+    },
+    {
+      "id": "ahjo-drone-data",
+      "category": "robotiikka",
+      "title": "Analysing flight data with Python",
+      "text": "Measurements from a file into Python: mean, standard deviation, graph and speed from video.",
+      "status": "draft",
+      "courses": [
+        "DRONELABRA"
+      ]
     }
   ],
   "equipment_status": "tuleva",
@@ -1765,6 +2634,46 @@
       "id": "onnettomuus",
       "title": "What to do in accidents and dangerous situations",
       "covers": "First aid, raising the alarm, stopping machines and reporting what happened."
+    },
+    {
+      "id": "drone-potkurit",
+      "title": "Drones: propellers and motors",
+      "covers": "When the propellers may be attached, trying the motors without propellers, safety glasses, distance from spinning propellers and the use of propeller guards."
+    },
+    {
+      "id": "drone-akut",
+      "title": "Drones: charging and storing batteries",
+      "covers": "Charging lithium batteries under supervision, handling a damaged or swollen battery, storage, transport and what to do if a battery heats up or smokes."
+    },
+    {
+      "id": "drone-tarkastus",
+      "title": "Drones: pre-flight check",
+      "covers": "Checklist before every flight: frame, propellers, battery, controller connection, calibration on a level surface and the flight area."
+    },
+    {
+      "id": "drone-lentoalue",
+      "title": "Drones: flight area and roles",
+      "covers": "Marking out the flight area and the safety line, the place for spectators, the jobs of the pilot, observer and safety officer, and how many drones may be in the air."
+    },
+    {
+      "id": "drone-hatapysaytys",
+      "title": "Drones: emergency stop and abnormal situations",
+      "covers": "How each drone is stopped in an emergency, the shared calls, what to do after a collision or a lost connection, and reporting damage."
+    },
+    {
+      "id": "drone-fpv",
+      "title": "Drones: FPV flight and the observer",
+      "covers": "Using the goggles, the observer's place and job, the permitted flight modes, breaks and feeling unwell, cleaning the goggles and who cannot use the goggles."
+    },
+    {
+      "id": "drone-saannot",
+      "title": "Drones: rules indoors and outdoors",
+      "covers": "What may be flown on school premises and with whose permission, what flying outdoors requires (registration, ID, airspace zones, drone class) and who is responsible for the flight."
+    },
+    {
+      "id": "drone-yksityisyys",
+      "title": "Drones: filming and privacy",
+      "covers": "What may be filmed with the drone's camera, permissions for filming, storing and deleting recordings, and the rules for publishing at school."
     }
   ],
   "projects": [
@@ -2320,6 +3229,320 @@
           "url": "https://www.teachengineering.org/activities/cub-2825-creative-engineering-electric-vehicle-design"
         }
       ]
+    },
+    {
+      "id": "drone-tarkkuuslaskeutuminen",
+      "status": "ehdotus",
+      "title": "Precision landing",
+      "art": "dronelabra-10",
+      "need": "hyvaksynta",
+      "summary": "How accurately does the drone land on the mark, and what affects the accuracy?",
+      "problem": "Research question: how does the starting distance, the pilot or the way of controlling affect how far from the centre of the mark the drone lands?",
+      "skills": [
+        "planning a test set-up",
+        "repeated measurements",
+        "mean and spread",
+        "assessing sources of error"
+      ],
+      "materials": [
+        "a camera drone or Air:bit 2",
+        "a taped landing mark",
+        "tape measure",
+        "flight log"
+      ],
+      "steps": [
+        "Decide which one thing you change and what you keep the same.",
+        "Do at least five landings with each setting.",
+        "Always measure the distance from the centre of the mark using the same rule.",
+        "Calculate the means and spreads and draw a graph."
+      ],
+      "success": "Two series of at least five landings have been measured, and the group uses the means and the spread to justify whether there is a difference between the series.",
+      "next": "Landing on a moving or raised platform. Comparing results with another group using the same measuring rule.",
+      "safety": "A marked-out flight area, low flight, an observer and a safety officer on every flight. A landing is not measured until the propellers have stopped.",
+      "level": 1,
+      "lessons": 3,
+      "courses": [
+        "DRONELABRA"
+      ],
+      "subjects": [
+        "physics",
+        "mathematics"
+      ]
+    },
+    {
+      "id": "drone-esterata",
+      "status": "ehdotus",
+      "title": "FPV obstacle course",
+      "art": "dronelabra-16",
+      "need": "hyvaksynta",
+      "summary": "Design a course and investigate how the cooperation between pilot and observer affects the time and the errors.",
+      "problem": "Research question: does the course time get shorter and the number of touches go down when the same pilot flies the course several times or when the observer's instructions are agreed in advance?",
+      "skills": [
+        "designing and dimensioning a course",
+        "working in roles and communication",
+        "timing and recording errors",
+        "drawing a learning curve"
+      ],
+      "materials": [
+        "a camera drone with propeller guards",
+        "FPV goggles and a motion controller",
+        "cardboard gates or marker cones",
+        "stopwatch"
+      ],
+      "steps": [
+        "Draw the course with its dimensions and get the teacher to approve it.",
+        "Agree on the observer's instructions and the stop command.",
+        "Fly the course at least five times and record the time and the touches.",
+        "Draw a graph of time as a function of lap."
+      ],
+      "success": "The course has been flown at least five times, there is a time and a number of touches for every lap, and the group describes the progress with a graph.",
+      "next": "Comparing two different routes. 3D printing parts of the course, or cardboard structures.",
+      "safety": "Normal mode only, and propeller guards. The observer next to the pilot the whole time. Gates made of light material. Nobody is on the course during a flight.",
+      "level": 2,
+      "lessons": 3,
+      "courses": [
+        "DRONELABRA"
+      ],
+      "subjects": [
+        "physics",
+        "physical education"
+      ]
+    },
+    {
+      "id": "drone-ohjainohjelma",
+      "status": "ehdotus",
+      "title": "Your own controller program for the Air:bit",
+      "art": "dronelabra-5",
+      "need": "valmis",
+      "summary": "Develop a feature for the micro:bit controller that makes flying easier or safer.",
+      "problem": "Problem: with the basic controller, throttle control is coarse and the state of the controller is hard to see. What kind of change improves the handling, and how can you show it?",
+      "skills": [
+        "MakeCode programming",
+        "radio messages",
+        "user interface design",
+        "testing before flight"
+      ],
+      "materials": [
+        "two micro:bits",
+        "a computer and MakeCode",
+        "an Air:bit 2 for testing"
+      ],
+      "steps": [
+        "Choose one improvement, for example fine throttle control, a status display or a sound signal.",
+        "Program the change and test it with the receiving micro:bit on the desk.",
+        "Test with the drone without propellers.",
+        "Compare the old and the new controller with the same flying task."
+      ],
+      "success": "The change works in the desk test and without propellers, and at least three users have tried both controllers with the same task and the results have been recorded.",
+      "next": "Turn control with the touch buttons, in the style of the manufacturer's extra task. A controller that shows the state of the drone's battery.",
+      "safety": "The program is always tested first without propellers. The start safeguard and the shake-to-stop stay in the program.",
+      "level": 2,
+      "lessons": 3,
+      "courses": [
+        "DRONELABRA"
+      ],
+      "subjects": [
+        "computer science"
+      ]
+    },
+    {
+      "id": "drone-lentovakaus",
+      "status": "ehdotus",
+      "title": "Flight stability study",
+      "art": "dronelabra-8",
+      "need": "hyvaksynta",
+      "summary": "Investigate by measuring what makes the Air:bit hover more steadily.",
+      "problem": "Research question: how does one change, for example a tuning value, the battery charge or the position of the mass, affect how much the drone drifts when hovering?",
+      "skills": [
+        "planning a comparison test",
+        "understanding feedback",
+        "repeating measurements",
+        "presenting results as a graph"
+      ],
+      "materials": [
+        "Air:bit 2 and a controller",
+        "a computer and MakeCode",
+        "tape measure and stopwatch",
+        "a taped starting point"
+      ],
+      "steps": [
+        "Choose one thing to change and record the original situation.",
+        "Measure the drift with at least three hovers before the change.",
+        "Make the change in small steps and test first without propellers.",
+        "Repeat the measurements and compare the results."
+      ],
+      "success": "The drift has been measured at least three times before and after the change in the same way, and the conclusion is justified with the means and the range.",
+      "next": "A series of measurements with several values, and a graph. Filming the hover from above and measuring the drift from video.",
+      "safety": "Tuning values are changed only within the limits approved by the teacher, one at a time. The original program is saved. Low flight over a soft surface.",
+      "level": 3,
+      "lessons": 4,
+      "courses": [
+        "DRONELABRA"
+      ],
+      "subjects": [
+        "physics",
+        "mathematics"
+      ]
+    },
+    {
+      "id": "drone-3d-osa",
+      "status": "ehdotus",
+      "title": "A 3D-modelled part or landing pad",
+      "art": "3d",
+      "need": "valmis",
+      "summary": "Design and print a part for the drone or the flight area that solves a real problem.",
+      "problem": "Problem: storing the drone, landing or measuring needs an aid. What kind of part solves the problem, and how much may it weigh?",
+      "skills": [
+        "measuring and 3D modelling",
+        "3D printing",
+        "assessing the effect of mass",
+        "testing and correcting the fit"
+      ],
+      "materials": [
+        "CAD program",
+        "3D printer and filament",
+        "caliper",
+        "scale"
+      ],
+      "steps": [
+        "Measure the object and draw a sketch with dimensions.",
+        "Model the part and print the first version.",
+        "Test the fit, weigh the part and record the shortcomings.",
+        "Correct the model and print the second version."
+      ],
+      "success": "The part meets the dimensional requirement set by the group (for example fit or maximum mass), and the change from the first version to the second is justified with a measurement.",
+      "next": "A landing pad with a measuring scale. Designing your own frame on the basis of the dimensional drawings published by the manufacturer.",
+      "safety": "A part attached to the drone must not touch the propellers or cover the sensors. The teacher checks the part before the flight, and the first flight with it is done low.",
+      "level": 2,
+      "lessons": 4,
+      "courses": [
+        "DRONELABRA",
+        "AHJO1"
+      ],
+      "subjects": [
+        "physics",
+        "visual arts"
+      ]
+    },
+    {
+      "id": "drone-videoanalyysi",
+      "status": "ehdotus",
+      "title": "Flight video analysis with Python",
+      "art": "dronelabra-11",
+      "need": "valmis",
+      "summary": "Measure the drone's motion from video and calculate the speed and acceleration.",
+      "problem": "Research question: what is the drone's speed during a climb, level flight or braking, and how accurately can it be measured from video?",
+      "skills": [
+        "filming video for measurement",
+        "measuring position from frames",
+        "calculating speed from data",
+        "Python and graphs"
+      ],
+      "materials": [
+        "a phone and a tripod",
+        "a scale in the picture (for example a metre rule)",
+        "a Raspberry Pi or another computer with Python",
+        "a flight video filmed earlier or a new one"
+      ],
+      "steps": [
+        "Film the flight from the side with a camera that stays still, so that the scale is visible.",
+        "Measure the drone's position at regular time intervals.",
+        "Calculate the speed from consecutive positions with Python.",
+        "Draw the graphs of position and speed and assess the accuracy."
+      ],
+      "success": "The position has been measured from at least ten frames, the speed graph has been drawn and the result has been compared with the average speed obtained with a stopwatch and a tape measure.",
+      "next": "Estimating the acceleration from braking. Detecting the drone's position in the video with a program.",
+      "safety": "Only the flight area and the drone are filmed. The videos are handled on the school's devices and are not published.",
+      "level": 2,
+      "lessons": 3,
+      "courses": [
+        "DRONELABRA",
+        "FY4"
+      ],
+      "subjects": [
+        "physics",
+        "mathematics",
+        "computer science"
+      ]
+    },
+    {
+      "id": "drone-laskeutumismerkki",
+      "status": "ehdotus",
+      "title": "Machine vision recognises a landing mark",
+      "art": "dronelabra-13",
+      "need": "hankinta",
+      "summary": "A Raspberry Pi recognises a landing mark in a camera image and tells where in the image it is.",
+      "problem": "Problem: how does a computer find a landing mark in an image, and how reliably does the recognition work at different distances and in different lighting?",
+      "skills": [
+        "Python programming",
+        "the basics of image processing",
+        "testing the reliability of recognition",
+        "tabulating results"
+      ],
+      "materials": [
+        "Raspberry Pi 5",
+        "a camera module or USB camera (separate purchase)",
+        "a printed landing mark",
+        "tape measure"
+      ],
+      "steps": [
+        "Design a clear mark and print it.",
+        "Take pictures of the mark from different distances and in different lighting.",
+        "Program the recognition and print the position of the mark in the image.",
+        "Test in how many pictures the recognition succeeds."
+      ],
+      "success": "The program recognises the mark in at least 8 pictures out of 10 at the agreed distance, and the failed cases have been recorded with their causes.",
+      "next": "Recognition from moving video. Estimating the distance of the mark from its size in the image.",
+      "safety": "The Raspberry Pi does not control the drone and is not attached to the drone: the camera films the mark from a desk or a tripod. There are no people in the pictures.",
+      "level": 3,
+      "lessons": 4,
+      "courses": [
+        "DRONELABRA"
+      ],
+      "subjects": [
+        "computer science",
+        "mathematics"
+      ]
+    },
+    {
+      "id": "drone-lentoaika",
+      "status": "ehdotus",
+      "title": "Energy consumption and flight time",
+      "art": "elektroniikka",
+      "need": "hyvaksynta",
+      "summary": "Investigate how long the drone flies on one charge and what affects the flight time.",
+      "problem": "Research question: how does added mass or the way of flying affect the hover time, and how large is the drone's average power when the energy of the battery is known?",
+      "skills": [
+        "calculating energy and power",
+        "planning a series of measurements",
+        "safe handling of batteries",
+        "comparing results with the manufacturer's data"
+      ],
+      "materials": [
+        "Air:bit 2 or a camera drone",
+        "fully charged batteries",
+        "stopwatch",
+        "a scale and small added weights"
+      ],
+      "steps": [
+        "Record the battery's voltage and capacity from the markings on the battery and calculate its energy.",
+        "Measure the hover time with a full battery until the battery warning.",
+        "Repeat the measurement with added mass or another way of flying.",
+        "Calculate the average power and compare the results."
+      ],
+      "success": "The hover time has been measured with at least two settings from a full battery to the warning, and the average power has been calculated with units.",
+      "next": "A graph of flight time as a function of added mass. A comparison with another drone.",
+      "safety": "The flight is ended immediately at the battery warning. Batteries are not charged straight after a flight or without supervision. An added weight is attached so that it cannot come loose or touch the propellers.",
+      "level": 2,
+      "lessons": 3,
+      "courses": [
+        "DRONELABRA",
+        "FY2"
+      ],
+      "subjects": [
+        "physics",
+        "mathematics"
+      ]
     }
   ],
   "challenges": [
@@ -2637,6 +3860,14 @@
       "categories": [
         "dokumentointi"
       ]
+    },
+    {
+      "course": "DRONELABRA",
+      "text": "Drones: building, programming, flight tests and safe flying.",
+      "categories": [
+        "robotiikka",
+        "turvallisuus"
+      ]
     }
   ],
   "starters": [
@@ -2699,6 +3930,30 @@
       "file": "testisuunnitelma.csv",
       "title": "Test plan template (CSV)",
       "note": "spreadsheet template"
+    },
+    {
+      "id": "airbit-ohjain",
+      "file": "airbit-ohjain.ts",
+      "title": "Air:bit controller starter program (MakeCode, JavaScript)",
+      "note": "untested draft: the teacher tries it without propellers before use"
+    },
+    {
+      "id": "lentopoytakirja",
+      "file": "lentopoytakirja.csv",
+      "title": "Flight log (CSV)",
+      "note": "template for a spreadsheet"
+    },
+    {
+      "id": "lentodata-esimerkki",
+      "file": "lentodata-esimerkki.csv",
+      "title": "Example data: two series of landings (CSV)",
+      "note": "practice template: invented data, not measured with a real drone"
+    },
+    {
+      "id": "lentoanalyysi",
+      "file": "lentoanalyysi.py",
+      "title": "Analysis of series of measurements (Python)",
+      "note": "untested draft for the graph; the statistics were tried with the example data"
     }
   ]
 }

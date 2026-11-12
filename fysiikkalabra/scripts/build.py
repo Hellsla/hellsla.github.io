@@ -1399,7 +1399,7 @@ def build_language(lang):
                                                                   main_class="reading module-page local-course kr-theme kr-team lt-course")))
                 lt_built.append(name)
     # A unit of jaksot/ written as "pages" (scripts/jaksot.py, teacher 2026-11-12): its pages from jakso.json alone, in its
-    # theme, and its row under the school's courses on the front page. No unit has them yet; Droonilab is planned.
+    # theme, and its row under the school's courses on the front page. No unit has them yet.
     jk_built = []
     for jid in jaksot.ids():
         row = jaksot.front_row(jid, lang)
