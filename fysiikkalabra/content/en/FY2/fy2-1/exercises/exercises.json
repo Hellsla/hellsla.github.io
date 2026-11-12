@@ -155,11 +155,11 @@
     {
       "id": "fy2-1-L1-10",
       "level": 1,
-      "text": "A kettle changes electrical energy into thermal energy; assume that all of the electrical energy goes into the water and no heat escapes to the surroundings. The kettle holds $0.50\\,\\text{kg}$ of water whose temperature rises from $20\\,{}^\\circ\\text{C}$ to $60\\,{}^\\circ\\text{C}$. The increase in the thermal energy of the water is $E = c\\,m\\,\\Delta T$, where $c$ is the specific heat capacity of water, $m$ the mass and $\\Delta T$ the change in temperature.\n\nLook up the specific heat capacity of water in the MAFY table (mafytaulukot.fi). Hint: the value is in the thermodynamics table of specific heat capacities, on the row for water. How much electrical energy does the kettle change into thermal energy?",
+      "text": "Imagine that $2.0\\,\\text{kg}$ of petrol (gasoline) is burned in a car. The chemical energy of the petrol is released in combustion and changes into kinetic and thermal energy. The heating value $H$ of a fuel tells how much energy is released when one kilogram burns, and the released energy is $E = Hm$.\n\nLook up the heating value of petrol in the MAFY table (mafytaulukot.fi). Hint: the value is in the table of heating values of fuels, on the row for petrol. How much chemical energy is released from the petrol?",
       "lookup": "MAFY",
-      "answer": 83.8,
-      "unit": "kJ",
-      "tolerance": 0.03
+      "answer": 86.0,
+      "unit": "MJ",
+      "tolerance": 0.04
     }
   ],
   "level2": [
@@ -286,7 +286,7 @@
     {
       "id": "fy2-1-L2-08",
       "level": 2,
-      "text": "A skater starts from rest at point A on the rim of a half-pipe and slides down a slope with friction, past point B, to point C at the bottom. The bars in the figure show his potential energy and kinetic energy at each point, with the bottom as the zero level of potential energy.\n\nRead the energies from the figure. What percentage of the skater's initial energy has friction changed into thermal energy by the time he reaches point B?",
+      "text": "A sledge starts from rest at point A on a hill and slides down a slope with friction, past point B, to point C at the bottom. The bars in the figure show the potential energy and kinetic energy of the sledge and its rider at each point, with the bottom C as the zero level of potential energy.\n\nRead the energies from the figure. What percentage of the initial energy has friction changed into thermal energy by the time the sledge reaches point B? Give the answer to the nearest percent.",
       "figure": "fy2-1/kitka-pylvaat",
       "answer": 14.3,
       "unit": "%",

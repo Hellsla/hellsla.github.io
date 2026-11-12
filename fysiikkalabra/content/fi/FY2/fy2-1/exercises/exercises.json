@@ -155,11 +155,11 @@
     {
       "id": "fy2-1-L1-10",
       "level": 1,
-      "text": "Vedenkeitin muuttaa sähköenergiaa lämpöenergiaksi, ja oletetaan, että kaikki sähköenergia siirtyy veteen eikä lämpöä karkaa ympäristöön. Keittimessä on $0{,}50\\,\\text{kg}$ vettä, jonka lämpötila nousee $20\\,{}^\\circ\\text{C}$:sta $60\\,{}^\\circ\\text{C}$:een. Veden lämpöenergian kasvu lasketaan kaavalla $E = c\\,m\\,\\Delta T$, missä $c$ on veden ominaislämpökapasiteetti, $m$ massa ja $\\Delta T$ lämpötilan muutos.\n\nHae veden ominaislämpökapasiteetti MAFY-taulukosta (mafytaulukot.fi). Vihje: arvo löytyy lämpöopin ominaislämpökapasiteettien taulukosta, riviltä vesi. Kuinka paljon sähköenergiaa keitin muuttaa lämpöenergiaksi?",
+      "text": "Kuvitellaan, että autossa poltetaan $2{,}0\\,\\text{kg}$ bensiiniä. Bensiinin kemiallinen energia vapautuu palamisessa ja muuttuu liike- ja lämpöenergiaksi. Polttoaineen lämpöarvo $H$ kertoo, kuinka paljon energiaa vapautuu yhden kilogramman palaessa, ja vapautuva energia on $E = Hm$.\n\nHae bensiinin lämpöarvo MAFY-taulukosta (mafytaulukot.fi). Vihje: arvo löytyy polttoaineiden lämpöarvojen taulukosta, riviltä bensiini. Kuinka paljon kemiallista energiaa bensiinistä vapautuu?",
       "lookup": "MAFY",
-      "answer": 83.8,
-      "unit": "kJ",
-      "tolerance": 0.03
+      "answer": 86.0,
+      "unit": "MJ",
+      "tolerance": 0.04
     }
   ],
   "level2": [
@@ -286,7 +286,7 @@
     {
       "id": "fy2-1-L2-08",
       "level": 2,
-      "text": "Skeittari lähtee levosta half-pipen reunalta kohdasta A ja laskee kitkallista rinnettä kohdan B kautta pohjalle kohtaan C. Kuvan pylväät näyttävät hänen potentiaalienergiansa ja liike-energiansa kussakin kohdassa, kun pohja on potentiaalienergian nollataso.\n\nLue energiat kuvasta. Kuinka monta prosenttia skeittarin alkuperäisestä energiasta kitka on muuttanut lämpöenergiaksi kohtaan B mennessä?",
+      "text": "Kelkka lähtee levosta mäen kohdasta A ja liukuu kitkallista rinnettä kohdan B kautta alas kohtaan C. Kuvan pylväät näyttävät kelkan ja kuljettajan potentiaalienergian ja liike-energian kussakin kohdassa, kun alapää C on potentiaalienergian nollataso.\n\nLue energiat kuvasta. Kuinka monta prosenttia alkuperäisestä energiasta kitka on muuttanut lämpöenergiaksi kohtaan B mennessä? Anna vastaus prosentin tarkkuudella.",
       "figure": "fy2-1/kitka-pylvaat",
       "answer": 14.3,
       "unit": "%",
