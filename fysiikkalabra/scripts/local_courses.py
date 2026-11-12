@@ -41,6 +41,9 @@ A course's fields (all texts in the language of the file):
                                          (Kilparobotiikka, teacher 2026-11-08 "poista tuo kappale")
   front_line                             optional: the front page's line for the course instead of its subtitle (LUMA-tutor:
                                          subtitle "Tiede kuuluu kaikille.", the front page keeps its one-sentence description)
+  front_title                            optional: a course without a course code shows its title in the code's place
+                                         (green) and this short title after it on the front page, like Ahjo's rows
+                                         (LUMA-tutor, Kilparobotiikka; teacher 2026-11-12)
   theme                                  optional: "kiviruukki" = the page in Kiviruukin lukio's colours and fonts with
                                          the header symbol in them, like the Ahjo pages (Kilparobotiikka, teacher 2026-11-08)
   pathway                                investigation ids in the course's order; the course page lists its published

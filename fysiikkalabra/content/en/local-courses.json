@@ -154,6 +154,7 @@
   },
   "KILPAROBO": {
     "title": "Competitive robotics",
+    "front_title": "Build, code and compete",
     "subtitle": "Design, build and program VEX V5 competition robots together with the team.",
     "school": "Kiviruukki upper secondary school",
     "description": "Kiviruukki upper secondary school's robotics team builds, programs and develops VEX V5 competition robots. New students can join without any experience, and more experienced students guide them.",
@@ -193,6 +194,7 @@
   },
   "LUMATUTOR": {
     "title": "LUMA tutor",
+    "front_title": "Science belongs to everyone",
     "subtitle": "Science belongs to everyone.",
     "front_line": "Act as a science tutor: plan science events and take part in them.",
     "school": "Kiviruukki upper secondary school",
