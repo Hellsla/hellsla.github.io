@@ -93,6 +93,9 @@ def files():
     out["kalibrointikuutio.stl"] = stl("kalibrointikuutio", box(0, 0, 0, 20, 20, 20))
     out["sarjaplotteri.ino"] = SKETCH
     out["robotti-testi.ino"] = ROBOT
+    out["airbit-ohjain.ts"] = AIRBIT          # Dronelabra, lesson 5
+    out["lentoanalyysi.py"] = ANALYSIS        # Dronelabra, lessons 8, 11, 12 and 15
+    out["lentodata-esimerkki.csv"] = EXAMPLE_DATA
     for name, head in TEMPLATES.items():
         out[name] = head + "\n" + "\n".join(";" * head.count(";") for _ in range(8)) + "\n"
     return out
@@ -168,10 +171,134 @@ void loop() {
 // and drive forwards only while digitalRead(2) is HIGH (the button is not pressed); otherwise stop.
 """
 
+AIRBIT = """// Air:bit 2 -ohjaimen aloitusohjelma (Ruukkilabra, Dronelabra, tunti 5)
+// MakeCode (makecode.microbit.org): vaihda JavaScript-nakymaan, liita ohjelma ja palaa lohkoihin.
+// Testaamaton luonnos. Kokeile aina ensin ILMAN POTKUREITA: kaynnistyvatko ja pysahtyvatko moottorit hallitusti?
+// Ohjain lahettaa viisi arvoa (valmistajan ohjeen "PARTY"): P = pitch, A = arm, R = roll, T = throttle, Y = yaw.
+// Starter for the Air:bit 2 hand controller. Untested draft: always try it first WITHOUT PROPELLERS.
+
+let radioGroup = 7      // vaihda ryhmasi omaksi numeroksi; dronessa pitaa olla sama / your group's own number, the same on the drone
+let arm = 0             // 0 = moottorit eivat kay, 1 = kaynnistyslupa / 1 = the motors may run
+let throttle = 0        // kaasu 0...100
+let pitch = 0           // kallistus eteen ja taakse, asteina / forwards and backwards, degrees
+let roll = 0            // kallistus sivulle, asteina / sideways, degrees
+
+radio.setGroup(radioGroup)
+basic.showNumber(radioGroup)
+
+// A pienentaa kaasua, B kasvattaa. Yli 40:n askel on 1, jotta leijunnan saato on tarkkaa.
+// A lowers the throttle, B raises it. Above 40 the step is 1 for a finer hover.
+input.onButtonPressed(Button.A, function () {
+    throttle = Math.max(0, throttle - (throttle > 40 ? 1 : 5))
+})
+input.onButtonPressed(Button.B, function () {
+    throttle = Math.min(100, throttle + (throttle >= 40 ? 1 : 5))
+})
+
+// A+B yhta aikaa: kaynnistyslupa paalle tai pois. Kaasu nollataan aina samalla.
+// A+B together: arm or disarm. The throttle always returns to zero.
+input.onButtonPressed(Button.AB, function () {
+    arm = arm == 0 ? 1 : 0
+    throttle = 0
+})
+
+// Hatapysaytys: ravista ohjainta. / Emergency stop: shake the controller.
+input.onGesture(Gesture.Shake, function () {
+    arm = 0
+    throttle = 0
+})
+
+basic.forever(function () {
+    pitch = Math.constrain(input.rotation(Rotation.Pitch), -45, 45)
+    roll = Math.constrain(input.rotation(Rotation.Roll), -45, 45)
+    radio.sendValue("P", pitch)
+    radio.sendValue("A", arm)
+    radio.sendValue("R", roll)
+    radio.sendValue("T", throttle)
+    radio.sendValue("Y", 0)          // kaanto on jatkotehtava / yaw is an extra task
+
+    // Naytto: vasen ylakulma = kaynnistyslupa, vasen sarake = kaasu, piste = kallistus
+    // Display: top left = armed, left column = throttle, the dot = tilt
+    basic.clearScreen()
+    if (arm == 1) {
+        led.plot(0, 0)
+    }
+    led.plot(0, 4 - Math.idiv(throttle, 25))
+    led.plot(Math.round(Math.map(roll, -45, 45, 0, 4)), Math.round(Math.map(pitch, -45, 45, 0, 4)))
+})
+
+// Tarkista ilman potkureita, etta kallistuksen suunta vastaa dronen liiketta. Jos suunta on vaarin pain,
+// vaihda arvon etumerkki (esimerkiksi radio.sendValue("P", -pitch)).
+// Check without propellers that the tilt direction matches the drone. If it is reversed, change the sign.
+"""
+
+EXAMPLE_DATA = """# Keksitty harjoitusaineisto, ei mitattu oikealla dronella / Invented practice data, not measured with a real drone
+sarja;toisto;etaisyys_cm
+lahto 2 m;1;12,5
+lahto 2 m;2;18,0
+lahto 2 m;3;9,5
+lahto 2 m;4;22,0
+lahto 2 m;5;15,5
+lahto 4 m;1;21,0
+lahto 4 m;2;30,5
+lahto 4 m;3;17,5
+lahto 4 m;4;26,0
+lahto 4 m;5;34,5
+"""
+
+ANALYSIS = """# Mittaussarjojen analyysi (Ruukkilabra, Dronelabra)
+# Lukee CSV-tiedoston, jossa on sarakkeet sarja;toisto;arvo, laskee jokaiselle sarjalle keskiarvon,
+# keskihajonnan ja vaihteluvalin ja piirtaa kuvaajan. Desimaalipilkku ja -piste kelpaavat molemmat.
+# Reads a CSV file with the columns series;run;value, prints the mean, standard deviation and range of each
+# series and draws a graph. Both a decimal comma and a decimal point are read.
+#
+# Kaytto / Use:   python lentoanalyysi.py lentodata-esimerkki.csv
+import csv
+import statistics
+import sys
+
+tiedosto = sys.argv[1] if len(sys.argv) > 1 else "lentodata-esimerkki.csv"
+
+sarjat = {}          # sarjan nimi -> lista mittauksia / series name -> list of measurements
+suure = "arvo"
+with open(tiedosto, encoding="utf-8") as f:
+    rivit = [r for r in csv.reader(f, delimiter=";") if r and not r[0].startswith("#")]
+suure = rivit[0][2]                      # otsikkorivin kolmas sarake / the header's third column
+for sarja, toisto, arvo in (r[:3] for r in rivit[1:]):
+    if arvo.strip() == "":
+        continue                         # tyhja rivi / an empty row
+    sarjat.setdefault(sarja, []).append(float(arvo.replace(",", ".")))
+
+for nimi, arvot in sarjat.items():
+    ka = statistics.mean(arvot)
+    kh = statistics.stdev(arvot) if len(arvot) > 1 else 0.0
+    print(f"{nimi}: n = {len(arvot)}, keskiarvo = {ka:.1f}, keskihajonta = {kh:.1f}, "
+          f"vaihteluvali = {min(arvot):.1f}...{max(arvot):.1f}")
+
+try:
+    import matplotlib.pyplot as plt
+except ImportError:
+    print("Kuvaajaa ei piirretty: asenna matplotlib (pip install matplotlib).")
+    sys.exit()
+
+for i, (nimi, arvot) in enumerate(sarjat.items()):
+    plt.plot([i] * len(arvot), arvot, "o", alpha=0.6)                    # jokainen mittaus / every measurement
+    plt.errorbar(i, statistics.mean(arvot), yerr=statistics.stdev(arvot) if len(arvot) > 1 else 0,
+                 fmt="_", color="black", markersize=24, capsize=6)       # keskiarvo ja keskihajonta / mean and sd
+plt.xticks(range(len(sarjat)), list(sarjat))
+plt.xlim(-0.5, len(sarjat) - 0.5)
+plt.ylabel(suure)
+plt.title("Mittaukset, keskiarvo ja keskihajonta")
+plt.savefig("lentoanalyysi.png", dpi=150)
+print("Kuvaaja tallennettu tiedostoon lentoanalyysi.png")
+plt.show()
+"""
+
 TEMPLATES = {   # semicolons and decimal commas open in a Finnish spreadsheet; the headers say both languages
     "kuormituskoe.csv": "Palkki tai rakenne / Beam or structure;Oma massa (g) / Own mass (g);Kuorma, jonka se kesti (g) / Load it held (g);Mitä tapahtui / What happened",
     "ennen-jalkeen.csv": "Mitattava kohta / What you measure;Malli (mm) / Model (mm);Ennen (mm) / Before (mm);Jälkeen (mm) / After (mm);Paraniko? / Better?",
     "pariston-kesto.csv": "Laite / Device;Jännite (V) / Voltage (V);Virta (mA) / Current (mA);Pariston kapasiteetti (mAh) / Capacity (mAh);Arvio (h) = mAh / mA / Estimate (h)",
+    "lentopoytakirja.csv": "Lento / Flight;Drone;Lentäjä / Pilot;Tähystäjä tai turvavastaava / Observer or safety officer;Akku: täysi vai käytetty / Battery: full or used;Kesto (s) / Duration (s);Mitattu arvo ja yksikkö / Measured value and unit;Havainto / Note",
     "testisuunnitelma.csv": "Testi / Test;Mittari tai havainto / Measure or observation;Toisto 1 / Run 1;Toisto 2 / Run 2;Toisto 3 / Run 3;Havainto / Note",
 }
 

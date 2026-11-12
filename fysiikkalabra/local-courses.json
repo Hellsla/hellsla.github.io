@@ -2,7 +2,8 @@
   "_note": "Lukiokohtaiset opintojaksot (school-specific optional courses, teacher's brief 2026-10-30, docs/PORTAL_ARCHITECTURE.md). Kept apart from curriculum.json, which holds only the national LOPS 2019 modules FY1–FY8: nothing here is a national requirement, and /new-course never validates these. Finnish is the source; a translation goes in content/<lang>/local-courses.json with the same codes, and a course is published only in the languages that have it. Texts marked status 'planning' are the teacher's working version, not an approved course description: no credits, assessment or official goals until the teacher supplies them. scripts/local_courses.py validates and renders this file.",
   "_planned": [
     {"icon": "AHJO1", "title": "Ahjo 1", "text": "3D-mallinnuksen, 3D-tulostuksen, elektroniikan ja robotiikan perusteet."},
-    {"icon": "AHJO2", "title": "Ahjo 2", "text": "Suunnittele, valmista ja testaa oma prototyyppi."}
+    {"icon": "AHJO2", "title": "Ahjo 2", "text": "Suunnittele, valmista ja testaa oma prototyyppi."},
+    {"icon": "DRONELABRA", "title": "Dronelabra", "text": "Rakenna drone, lennä turvallisesti ja tee oma droneprojekti."}
   ],
   "FY10": {
     "title": "Kokeellinen fysiikka",
@@ -406,6 +407,7 @@
   },
   "KILPAROBO": {
     "title": "Kilparobotiikka",
+    "front_title": "Rakenna, ohjelmoi ja kilpaile",
     "subtitle": "Suunnittele, rakenna ja ohjelmoi VEX V5 -kilparobotteja yhdessä joukkueen kanssa.",
     "school": "Kiviruukin lukio",
     "status": "building",
@@ -500,6 +502,7 @@
   },
   "LUMATUTOR": {
     "title": "LUMA-tutor",
+    "front_title": "Tiede kuuluu kaikille",
     "subtitle": "Tiede kuuluu kaikille.",
     "front_line": "Toimi tiedetutorina: suunnittele tiedetapahtumia ja osallistu niihin.",
     "school": "Kiviruukin lukio",

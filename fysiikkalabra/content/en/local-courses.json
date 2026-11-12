@@ -2,7 +2,8 @@
   "_note": "English texts of local-courses.json (scripts/local_courses.py): a course is published in English when it has an entry here.",
   "_planned": [
     {"icon": "AHJO1", "title": "Ahjo 1", "text": "Basics of 3D modelling, 3D printing, electronics and robotics."},
-    {"icon": "AHJO2", "title": "Ahjo 2", "text": "Design, build and test your own prototype."}
+    {"icon": "AHJO2", "title": "Ahjo 2", "text": "Design, build and test your own prototype."},
+    {"icon": "DRONELABRA", "title": "Dronelabra", "text": "Build a drone, fly it safely and make your own drone project."}
   ],
   "FY14": {
     "subtitle": "From the Birth of Modern Physics to ITER.",
@@ -153,6 +154,7 @@
   },
   "KILPAROBO": {
     "title": "Competitive robotics",
+    "front_title": "Build, code and compete",
     "subtitle": "Design, build and program VEX V5 competition robots together with the team.",
     "school": "Kiviruukki upper secondary school",
     "description": "Kiviruukki upper secondary school's robotics team builds, programs and develops VEX V5 competition robots. New students can join without any experience, and more experienced students guide them.",
@@ -192,6 +194,7 @@
   },
   "LUMATUTOR": {
     "title": "LUMA tutor",
+    "front_title": "Science belongs to everyone",
     "subtitle": "Science belongs to everyone.",
     "front_line": "Act as a science tutor: plan science events and take part in them.",
     "school": "Kiviruukki upper secondary school",

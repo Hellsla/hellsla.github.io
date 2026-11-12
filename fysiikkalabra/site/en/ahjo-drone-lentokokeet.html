@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Flight tests and measuring — Ruukkilabra</title>
+<meta name="description" content="Flight log, measuring hovering and landing, repeats and sources of error.">
+<link rel="canonical" href="https://ruukkilab.fi/en/ahjo-drone-lentokokeet.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ruukkilabra">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Flight tests and measuring">
+<meta property="og:description" content="Flight log, measuring hovering and landing, repeats and sources of error.">
+<meta property="og:url" content="https://ruukkilab.fi/en/ahjo-drone-lentokokeet.html">
+<meta name="theme-color" content="#f7f3ec">
+<link rel="icon" href="../brand/ahjo-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="../brand/ahjo-makerspace-merkki.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../brand/ahjo-180.png">
+<link rel="stylesheet" href="../vendor/katex/katex.min.css">
+<link rel="stylesheet" href="../site.css?v=0a80941e">
+</head><body>
+<a class="skip" href="#sisalto">Skip to content</a>
+<div class="page">
+<header class="top">
+  <a class="brand" href="index.html" aria-label="Ruukkilabra, home page"><img class="brand-mark" src="../brand/ruukkilabra-symboli-kiviruukki.svg" alt="" width="40" height="40"><span class="brand-name">Ruukkilabra<small>Upper secondary physics</small></span></a>
+  <nav aria-label="Main menu"><a class="nav-modules" href="index.html#moduulit">Modules</a><a class="nav-study" href="nain-opiskelet.html">How to study</a><a class="nav-reading" href="lukuvinkit.html">Book tips</a><a class="nav-booklets" href="vihkot.html">Booklets</a><a class="nav-teacher" href="tyokalut.html">For teachers</a><details class="nav-menu"><summary><span class="nav-menu-t">Menu</span></summary><ul class="nav-list"><li><a href="index.html#moduulit">Modules</a></li><li><a href="nain-opiskelet.html">How to study</a></li><li><a href="lukuvinkit.html">Book tips</a></li><li><a href="vihkot.html">Booklets</a></li><li><a href="tyokalut.html">For teachers</a></li><li><a href="tietoa.html">About</a></li></ul></details><details class="lang-menu"><summary><span class="visually-hidden">Language: </span><span class="lang-current">English</span></summary><ul class="lang-list" aria-label="Choose a language"><li><a class="lang" href="../ahjo-drone-lentokokeet.html" hreflang="fi" lang="fi">Suomi</a></li><li><a class="lang" href="../fi-easy/ahjo-drone-lentokokeet.html" hreflang="fi" lang="fi">Selkeä suomi</a></li></ul></details></nav>
+</header>
+<nav class="crumbs" aria-label="Path"><a href="index.html">Ruukkilabra</a> › <a href="ahjo.html">Ahjo Makerspace</a> › <a href="ahjo-materiaalit.html">Resource bank</a> › Flight tests and measuring</nav>
+<main class="reading ahjo-page" id="sisalto"><header class="ahjo-hero"><img class="ahjo-logo" src="../brand/ahjo-makerspace-logo.svg" alt="Ahjo – Kiviruukin Makerspace" width="124" height="124"><div class="ahjo-hero-text"><p class="ahjo-eyebrow">Kiviruukin lukio&#x27;s makerspace</p><h1>Flight tests and measuring</h1><p class="ahjo-lead">Flight log, measuring hovering and landing, repeats and sources of error.</p></div></header><nav class="ahjo-nav" aria-label="Ahjo Makerspace"><ul><li><a href="ahjo.html">Ahjo</a></li><li><a href="ahjo.html#opintojaksot">Courses</a></li><li><a href="ahjo-materiaalit.html" aria-current="page">Resource bank</a></li><li><a href="ahjo-projektit.html">Projects</a></li><li><a href="ahjo.html#laitteisto">Equipment</a></li><li><a href="ahjo-turvallisuus.html">Safety</a></li></ul></nav><p class="ahjo-from" hidden><a class="ahjo-cta ahjo-cta-quiet" href="ahjo-1.html"><span aria-hidden="true">← </span>Back to the lesson</a></p><p class="ahjo-draft" role="note"><svg class="ahjo-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M6 3h11a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H6zM9 3v18M12 8h3.5M12 12h3.5"/></svg><span><strong>Draft.</strong> This guide has not yet been tried on Ahjo&#x27;s own devices. Device models, settings and times will be confirmed once the devices have been acquired. Always follow your teacher&#x27;s instructions and the device-specific induction.</span></p><article class="ahjo-guide"><section class="ahjo-quick" aria-labelledby="pikastartti"><h2 id="pikastartti">Quick start</h2>
+<p>A flight test is a measurement, not a show. You decide beforehand what you measure and how, and you repeat the flight in the same way so many times that you see the variation in the results.</p>
+<ol>
+<li>Write a measurement rule: what is measured, from which point and with which tool.</li>
+<li>Assign the roles: pilot, observer or safety officer, and recorder.</li>
+<li>Go through the checklist and fly.</li>
+<li>Record the result in the flight log straight after the flight.</li>
+</ol>
+<h3>Try</h3>
+<p>Do three short hovers with the Air:bit and record for each one the duration and the direction and distance of the drift.</p>
+<h3>Modify</h3>
+<p>Change one thing, for example the pilot or the battery, and repeat the same test. Keep everything else the same.</p>
+<h3>Challenge yourself</h3>
+<p>Design a test with which you can tell apart the drift caused by the drone and the drift caused by the pilot.</p>
+</section><div class="ahjo-more-band"><h2 id="opi-lisaa">Learn more</h2><p>This part goes through the work thoroughly: why it works, the exact steps, measurements and solving problems.</p></div><h2>Challenge</h2>
+<p>Two flights are never exactly alike. The battery runs down, the air moves and the pilot learns. That is why one flight proves nothing. The goal is to measure in such a way that you can say whether a difference is due to the change you made or to ordinary variation.</p>
+<h2>Learning goals</h2>
+<p>After the work you can</p>
+<ul>
+<li>write a measurement rule and follow it</li>
+<li>repeat a measurement and calculate the mean and the range</li>
+<li>change one thing at a time</li>
+<li>name the biggest sources of error in your measurement.</li>
+</ul>
+<h2>Starting level and prior skills</h2>
+<p>The <a href="ahjo-drone-perehdytys.html">Dronelabra safety induction</a> has been gone through and the teacher has signed it off.</p>
+<h2>Equipment and materials</h2>
+<table>
+<thead>
+<tr>
+<th>Supply</th>
+<th>What for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Airworthy drone and controller</td>
+<td>Air:bit 2 or camera drone</td>
+</tr>
+<tr>
+<td>Fully charged batteries</td>
+<td>A measurement series is always started with a full battery</td>
+</tr>
+<tr>
+<td>Masking tape</td>
+<td>Take-off point, landing mark and flight area</td>
+</tr>
+<tr>
+<td>Tape measure and stopwatch</td>
+<td>Distances and times</td>
+</tr>
+<tr>
+<td>Soft surface</td>
+<td>For the Air:bit's flight area</td>
+</tr>
+<tr>
+<td>Safety glasses</td>
+<td>For those in the flight area</td>
+</tr>
+<tr>
+<td>Flight log</td>
+<td>You get a template from the lesson's page</td>
+</tr>
+</tbody>
+</table>
+<h2>Safety and induction</h2>
+<p>See the topics <a href="ahjo-turvallisuus.html#drone-tarkastus">pre-flight inspection</a>, <a href="ahjo-turvallisuus.html#drone-lentoalue">flight area and roles</a> and <a href="ahjo-turvallisuus.html#drone-hatapysaytys">emergency stop</a>. They are in preparation until the school has approved them.</p>
+<ul>
+<li>The checklist is gone through before every measurement series.</li>
+<li>With the Air:bit, flying is done low: the hovering height is $10$–$30\,\text{cm}$. The drone has no altitude hold and no position hold.</li>
+<li>Measuring is done only when the propellers have stopped. Nobody goes into the flight area during a flight.</li>
+<li>The flight is ended at once when the battery warning comes.</li>
+<li>A changed drone or program is tested first without propellers.</li>
+</ul>
+<h2>Steps</h2>
+<h3>Hovering the Air:bit</h3>
+<ol>
+<li>Tape a take-off point on the floor and place the drone on it with the micro:bit's display towards the pilot.</li>
+<li>Connect the battery and wait until the drone has calibrated. Do not move it.</li>
+<li>Start the motors by pressing A and B together.</li>
+<li>Add throttle one step at a time. According to the manufacturer the drone rises when the throttle is about 50–60 per cent.</li>
+<li>When the drone starts to rise, reduce the throttle slightly so that the height stays the same.</li>
+<li>Hover for the agreed time, for example five seconds, and bring the throttle down.</li>
+<li>Measure how far from the take-off point the drone landed and in which direction.</li>
+</ol>
+<h3>Precision landing</h3>
+<ol>
+<li>Tape a landing mark and a take-off point at an agreed distance from each other.</li>
+<li>Fly from the take-off point to the mark and land.</li>
+<li>Measure the distance from the centre of the mark to the middle of the drone.</li>
+<li>Repeat at least five times.</li>
+</ol>
+<h2>Diagrams and example code</h2>
+<p>A row of the flight log can look like this. The numbers are a made-up example.</p>
+<table>
+<thead>
+<tr>
+<th>Flight</th>
+<th>Pilot</th>
+<th>Battery</th>
+<th>Duration (s)</th>
+<th>Drift (cm)</th>
+<th>Direction</th>
+<th>Observation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>A</td>
+<td>full</td>
+<td>5</td>
+<td>40</td>
+<td>to the left</td>
+<td>rose at a slant straight away</td>
+</tr>
+<tr>
+<td>2</td>
+<td>A</td>
+<td>full</td>
+<td>5</td>
+<td>25</td>
+<td>to the left</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>A</td>
+<td>used</td>
+<td>5</td>
+<td>55</td>
+<td>backwards</td>
+<td>throttle had to be added</td>
+</tr>
+</tbody>
+</table>
+<p>The mean is calculated by dividing the sum of the results by their number. The range is the smallest and the largest result.</p>
+<h2>Test and measure</h2>
+<p>A good measurement series meets these conditions:</p>
+<ul>
+<li>Every flight is recorded, a failed one too.</li>
+<li>The same person measures with the same rule.</li>
+<li>The series has at least three, preferably five repetitions.</li>
+<li>Only one thing has been changed between the series.</li>
+<li>Every number has a unit.</li>
+</ul>
+<p>Compare two series: if the difference between the means is smaller than the variation within a series, the difference cannot be considered certain.</p>
+<h2>If something does not work</h2>
+<p>The advice is from the manufacturer's troubleshooting.</p>
+<ul>
+<li><strong>The motors spin, but the drone does not rise:</strong> check that every motor has a propeller that spins the right way and that the battery is charged. Check also that a motor is not damaged.</li>
+<li><strong>The drone tips over at once:</strong> a propeller or a motor is in the wrong corner. Compare with the parts map.</li>
+<li><strong>The drone always drifts in the same direction:</strong> disconnect the battery, place the drone on a level surface and start again so that it calibrates. Check that the propellers are intact and the battery is in the middle.</li>
+<li><strong>The results vary a lot:</strong> shorten the hovering time, use a full battery and keep the same pilot.</li>
+</ul>
+<h2>Extension</h2>
+<p>Film the hover from above or from the side with a camera that stays still and measure the drift from the video with the help of the guide <a href="../tvt-videoanalyysi.html">Video analysis</a>. Do you get the same result as with the tape measure?</p>
+<h2>Document your work</h2>
+<p>Attach to your project diary</p>
+<ul>
+<li>the measurement rule and a drawing of the test set-up</li>
+<li>the flight log</li>
+<li>the means and the ranges</li>
+<li>the biggest source of error and a suggestion for reducing it.</li>
+</ul>
+<h2>For the teacher: preparation</h2>
+<ul>
+<li>Mark out the flight area and have a soft surface ready. According to the manufacturer a high space is not needed, and a carpet is better than a hard floor.</li>
+<li>Decide the length of the flight turns and the rotation order. One drone at a time flies in one flight area. The other groups act as recorders or process data.</li>
+<li>Charging the battery takes about an hour according to the manufacturer. The manufacturer does not state the flight time in minutes, so measure it yourself before the lesson and size the turns accordingly.</li>
+<li>The manufacturer's instructions have no means of correcting drift other than calibration on a level surface.</li>
+<li>The emergency stop is a shake of the controller. The manufacturer warns against using it from a height of over two metres, because the drone falls.</li>
+</ul></article><script src="../ahjo.js?v=d1ddcb7c"></script></main>
+<footer class="bottom"><span>Ruukkilabra</span><a href="tyokalut.html">Tools</a><a href="tietosuoja.html">Privacy</a><span class="copyright">© 2026 Lauri Hellsten</span><span class="rights">All rights reserved.</span></footer>
+</div>
+<script src="../vendor/katex/katex.min.js"></script><script src="../vendor/katex/contrib/auto-render.min.js" onload="renderMathInElement(document.querySelector('main'),{delimiters:[{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+</body></html>

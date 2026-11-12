@@ -1504,6 +1504,10 @@ main.ahjo-page{max-width:68rem;font-family:var(--ahjo-text)}
 .ahjo-sec-lead{margin:0 0 1rem;color:var(--ink-2);max-width:44rem;font-size:var(--fs-body)}
 .ahjo-badge{display:inline-block;margin:0;padding:.1rem .6rem;border-radius:999px;background:var(--kr-navy);color:#fff;font:700 .8125rem/1.5 var(--ahjo-head);white-space:nowrap}
 .ahjo-badge.planned{background:var(--kr-pink-soft);color:var(--kr-navy);border:1px solid var(--kr-pink)}
+/* Dronelabra's lesson page (2026-11-12): what the lesson needs, the diary's lines, the teacher's folded note */
+.ahjo-lstatus{margin:.5rem 0 0}.ahjo-lstatus-hyvaksynta,.ahjo-lstatus-hankinta{background:var(--kr-pink-soft,var(--bg-tint));color:var(--kr-navy,var(--ink))}
+.ahjo-lteacher{margin:1.25rem 0}.ahjo-lteacher>p{margin:.5rem 0 0;max-width:44rem}
+.ahjo-proj-dl ol{margin:0;padding-left:1.25rem}
 .ahjo-badge-s,.ahjo-tag{display:inline-block;padding:0 .45rem;border-radius:999px;background:var(--bg-tint);font:600 .8125rem/1.6 var(--ahjo-text);color:var(--ink-2)}
 /* Ahjo 1 and Ahjo 2 side by side from 44rem */
 .ahjo-courses{display:grid;grid-template-columns:minmax(0,1fr);gap:1rem}

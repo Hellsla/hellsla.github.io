@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Air:bit 2:n kokoaminen ja toimintakokeet — Ruukkilabra</title>
+<meta name="description" content="Rakennussarjan osat, dronen kokoaminen, akun lataus ja käynnistystesti ilman potkureita.">
+<link rel="canonical" href="https://ruukkilab.fi/fi-easy/ahjo-airbit-kokoaminen.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ruukkilabra">
+<meta property="og:locale" content="fi_FI">
+<meta property="og:title" content="Air:bit 2:n kokoaminen ja toimintakokeet">
+<meta property="og:description" content="Rakennussarjan osat, dronen kokoaminen, akun lataus ja käynnistystesti ilman potkureita.">
+<meta property="og:url" content="https://ruukkilab.fi/fi-easy/ahjo-airbit-kokoaminen.html">
+<meta name="theme-color" content="#f7f3ec">
+<link rel="icon" href="../brand/ahjo-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="../brand/ahjo-makerspace-merkki.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../brand/ahjo-180.png">
+<link rel="stylesheet" href="../vendor/katex/katex.min.css">
+<link rel="stylesheet" href="../site.css?v=0a80941e">
+</head><body>
+<a class="skip" href="#sisalto">Siirry sisältöön</a>
+<div class="page">
+<header class="top">
+  <a class="brand" href="index.html" aria-label="Ruukkilabra, etusivu"><img class="brand-mark" src="../brand/ruukkilabra-symboli-kiviruukki.svg" alt="" width="40" height="40"><span class="brand-name">Ruukkilabra<small>Lukion fysiikka</small></span></a>
+  <nav aria-label="Päävalikko"><a class="nav-modules" href="index.html#moduulit">Moduulit</a><a class="nav-study" href="nain-opiskelet.html">Näin opiskelet</a><a class="nav-reading" href="lukuvinkit.html">Kirjavinkit</a><a class="nav-booklets" href="vihkot.html">Vihkot</a><a class="nav-teacher" href="tyokalut.html">Opettajalle</a><details class="nav-menu"><summary><span class="nav-menu-t">Valikko</span></summary><ul class="nav-list"><li><a href="index.html#moduulit">Moduulit</a></li><li><a href="nain-opiskelet.html">Näin opiskelet</a></li><li><a href="lukuvinkit.html">Kirjavinkit</a></li><li><a href="vihkot.html">Vihkot</a></li><li><a href="tyokalut.html">Opettajalle</a></li><li><a href="tietoa.html">Sivustosta</a></li></ul></details><details class="lang-menu"><summary><span class="visually-hidden">Kieli: </span><span class="lang-current">Selkeä suomi</span></summary><ul class="lang-list" aria-label="Valitse kieli"><li><a class="lang" href="../ahjo-airbit-kokoaminen.html" hreflang="fi" lang="fi">Suomi</a></li><li><a class="lang" href="../en/ahjo-airbit-kokoaminen.html" hreflang="en" lang="en">English</a></li></ul></details></nav>
+</header>
+<nav class="crumbs" aria-label="Polku"><a href="index.html">Ruukkilabra</a> › <a href="ahjo.html">Ahjo Makerspace</a> › <a href="ahjo-materiaalit.html">Materiaalipankki</a> › Air:bit 2:n kokoaminen ja toimintakokeet</nav>
+<main class="reading ahjo-page" id="sisalto"><header class="ahjo-hero"><img class="ahjo-logo" src="../brand/ahjo-makerspace-logo.svg" alt="Ahjo – Kiviruukin Makerspace" width="124" height="124"><div class="ahjo-hero-text"><p class="ahjo-eyebrow">Kiviruukin lukion makerspace</p><h1>Air:bit 2:n kokoaminen ja toimintakokeet</h1><p class="ahjo-lead">Rakennussarjan osat, dronen kokoaminen, akun lataus ja käynnistystesti ilman potkureita.</p></div></header><nav class="ahjo-nav" aria-label="Ahjo Makerspace"><ul><li><a href="ahjo.html">Ahjo</a></li><li><a href="ahjo.html#opintojaksot">Opintojaksot</a></li><li><a href="ahjo-materiaalit.html" aria-current="page">Materiaalipankki</a></li><li><a href="ahjo-projektit.html">Projektit</a></li><li><a href="ahjo.html#laitteisto">Laitteisto</a></li><li><a href="ahjo-turvallisuus.html">Turvallisuus</a></li></ul></nav><p class="ahjo-from" hidden><a class="ahjo-cta ahjo-cta-quiet" href="ahjo-1.html"><span aria-hidden="true">← </span>Takaisin oppituntiin</a></p><p class="ahjo-draft" role="note"><svg class="ahjo-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M6 3h11a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H6zM9 3v18M12 8h3.5M12 12h3.5"/></svg><span><strong>Luonnos.</strong> Tätä ohjetta ei ole vielä kokeiltu Ahjon omilla laitteilla. Laitemallit, asetukset ja ajat tarkentuvat, kun laitteet on hankittu. Noudata aina opettajan antamia ohjeita ja laitekohtaista perehdytystä.</span></p><article class="ahjo-guide"><section class="ahjo-quick" aria-labelledby="pikastartti"><h2 id="pikastartti">Pikastartti</h2>
+<p>Air:bit 2 on rakennussarja, josta kootaan micro:bitillä toimiva nelikopteri. Kokoat sen valmistajan rakennusohjeen mukaan. Tämä sivu kertoo, missä järjestyksessä työ tehdään Dronelabrassa ja mitä tarkastetaan ennen kuin akku kytketään.</p>
+<ol>
+<li>Lajittele osat ja tarkista ne ohjeen osaluettelosta.</li>
+<li>Kokoa runko ja kiinnitä moottorit ja ohjainkortti ohjeen mukaan.</li>
+<li><strong>Jätä potkurit kiinnittämättä.</strong> Valmistajan ohjeessa potkurit ovat kokoamisluvun lopussa, mutta ne kiinnitetään vasta lentotunnilla.</li>
+<li>Pyydä opettajan tarkastus ja kytke akku vasta sen jälkeen.</li>
+</ol>
+<h3>Kokeile</h3>
+<p>Kokoa drone ilman potkureita ja käynnistä se tasaisella alustalla. Kirjaa, mitkä kirjaimet näyttö näyttää.</p>
+<h3>Muokkaa</h3>
+<p>Tee moottoritesti ilman potkureita ja merkitse osakarttaasi, mikä moottori on missäkin kulmassa ja kumpaan suuntaan sen potkurin kuuluu pyöriä.</p>
+<h3>Haasta itsesi</h3>
+<p>Kirjoita vianetsintäkortti kahdelle käynnistysvirheelle: mitä tarkistat ensin ja missä järjestyksessä?</p>
+</section><div class="ahjo-more-band"><h2 id="opi-lisaa">Opi lisää</h2><p>Tässä osassa työ tehdään perusteellisesti: miksi se toimii, tarkat työvaiheet, mittaukset ja ongelmien ratkaisu.</p></div><h2>Haaste</h2>
+<p>Drone lentää vain, jos jokainen osa on oikeassa paikassa: kaksi potkuria pyörii myötäpäivään ja kaksi vastapäivään, ja ohjainkortin ja micro:bitin välillä on hyvä sähköinen yhteys. Tavoite on koota drone niin huolellisesti, että se käynnistyy ensimmäisellä kerralla ja läpäisee moottoritestin.</p>
+<p>Valmistaja arvioi kokoamiseen kahdesta kolmeen tuntia, joten työ jakautuu kahdelle oppitunnille.</p>
+<h2>Oppimistavoitteet</h2>
+<p>Työn jälkeen osaat</p>
+<ul>
+<li>nimetä dronen osat ja kertoa niiden tehtävät</li>
+<li>koota dronen ohjeen mukaan ja tarkastaa työn</li>
+<li>ladata akun valvotusti</li>
+<li>käynnistää dronen ja tulkita näytön ilmoitukset.</li>
+</ul>
+<h2>Lähtötaso ja ennakkotaidot</h2>
+<p>Aiempaa kokemusta ei tarvita. Ennen akun kytkemistä pitää olla käyty <a href="ahjo-drone-perehdytys.html">Dronelabran turvallisuusperehdytys</a>.</p>
+<h2>Laitteet ja materiaalit</h2>
+<p>Tiedot ovat valmistajan rakennusohjeesta. Tarkista oman sarjasi sisältö ohjeen osaluettelosta.</p>
+<table>
+<thead>
+<tr>
+<th>Osa</th>
+<th>Mitä se tekee</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Runko, kuu­si­ker­rok­sis­ta koi­vu­va­ne­ria</td>
+<td>Pitää osat pai­koil­laan ja kestää tör­mäyk­siä.</td>
+</tr>
+<tr>
+<td>Oh­jain­kort­ti (musta), jossa on la­taus­pii­ri</td>
+<td>Mittaa asentoa gy­ros­koo­pil­la, ohjaa moot­to­rei­ta ja lataa akun.</td>
+</tr>
+<tr>
+<td>4 moot­to­ria, kahta eri tyyppiä</td>
+<td>Pyö­rit­tä­vät pot­ku­rei­ta. Kaksi pyörii myö­tä­päi­vään ja kaksi vas­ta­päi­vään.</td>
+</tr>
+<tr>
+<td>4 potkuria ja 4 va­ra­pot­ku­ria, hal­kai­si­ja $65\,\text{mm}$</td>
+<td>Tuot­ta­vat nos­to­voi­man. Suunta on merkitty potkurin napaan.</td>
+</tr>
+<tr>
+<td>Li­tium­po­ly­mee­riak­ku, 1 kenno, $3{,}7\,\text{V}$, $800\,\text{mAh}$</td>
+<td>Antaa virran moot­to­reil­le ja kortille.</td>
+</tr>
+<tr>
+<td>micro:bit dronessa (val­mis­ta­ja suo­sit­te­lee versiota V2)</td>
+<td>Laskee va­kau­tuk­sen ja vas­taa­not­taa ra­dio­ko­men­not.</td>
+</tr>
+<tr>
+<td>micro:bit oh­jai­mes­sa ja pa­ris­to­ko­te­lo</td>
+<td>Lähettää oh­jaus­ko­men­not radiolla.</td>
+</tr>
+<tr>
+<td>Pieni ris­ti­pää­ruu­vi­talt­ta ja hyl­sya­vain</td>
+<td>Ko­koa­mi­seen. Hyl­sya­vain on sarjassa.</td>
+</tr>
+</tbody>
+</table>
+<p>Micro:bitit, paristokotelo ja USB-kaapeli myydään yleensä erikseen.</p>
+<h2>Turvallisuus ja perehdytys</h2>
+<p>Katso aiheet <a href="ahjo-turvallisuus.html#drone-potkurit">potkurit ja moottorit</a> ja <a href="ahjo-turvallisuus.html#drone-akut">akut</a>. Ne ovat valmisteilla, kunnes koulu on hyväksynyt ne.</p>
+<ul>
+<li>Potkureita ei kiinnitetä kokoamistunneilla. Moottorien käynnistys ja pysäytys kokeillaan ensin ilman niitä.</li>
+<li>Akku kytketään vasta opettajan tarkastuksen jälkeen ja irrotetaan aina, kun drone ei ole käytössä. Kytkettynä akku voi purkautua liian tyhjäksi.</li>
+<li>Akku ladataan ohjainkortin micro-USB-liitännästä, ei micro:bitin liitännästä. Punainen valo tarkoittaa, että akku latautuu, ja vihreä, että lataus on valmis. Lataus kestää noin tunnin. Akkua ei ladata ilman valvontaa.</li>
+<li>Älä taivuta, paina tai avaa akkua. Vaurioitunut tai turvonnut akku viedään opettajalle.</li>
+</ul>
+<h2>Työvaiheet</h2>
+<ol>
+<li>Lajittele osat ja vertaa niitä ohjeen osaluetteloon. Kerro opettajalle, jos jotain puuttuu.</li>
+<li>Kokoa runko ja kiinnitä moottorit ohjeen mukaan. Tarkista jokaisen moottorin tyyppi ja paikka ennen kiinnitystä.</li>
+<li>Kiinnitä ohjainkortti. Kortin viisi mutteria kiristetään kevyesti: ne johtavat sähköisen signaalin korttien välillä, joten löysä mutteri estää dronea toimimasta.</li>
+<li>Kiinnitä micro:bit paikalleen.</li>
+<li>Tarkasta työ parin kanssa osakartan avulla. Pyydä opettajan tarkastus.</li>
+<li>Aseta drone tasaiselle alustalle ja kytke akku. Älä liikuta dronea käynnistyksen aikana.</li>
+<li>Lue näyttö: kirjaimet G, M ja C kertovat, että gyroskooppi löytyi, moottoriohjain löytyi ja kalibrointi on valmis.</li>
+<li>Tee moottoritesti ohjaimella ilman potkureita: käynnistä moottorit, lisää kaasua ja pysäytä ne ravistamalla ohjainta.</li>
+<li>Irrota akku.</li>
+</ol>
+<h2>Kuvat ja esimerkkikoodi</h2>
+<p>Rakennusohjeen kuvat ovat valmistajan ohjeessa, jonka opettaja jakaa. Piirrä oma osakartta: dronen ääriviiva ylhäältä, neljä moottoria ja niiden pyörimissuunnat, ohjainkortti, micro:bit ja akku sekä nuolet, jotka näyttävät, mistä virta ja ohjaus kulkevat.</p>
+<p>Dronen ohjelma ladataan micro:bitille valmiina. Sitä tutkitaan ohjeessa <a href="ahjo-airbit-ohjaus.html">Air:bit 2:n radio-ohjain ja ohjausohjelma</a>.</p>
+<h2>Testaa ja mittaa</h2>
+<ul>
+<li>Näkyvätkö käynnistyksessä kirjaimet G, M ja C?</li>
+<li>Käynnistyvätkö kaikki neljä moottoria, ja pysähtyvätkö ne ravistuksesta?</li>
+<li>Punnitse drone ilman akkua ja akun kanssa. Kuinka suuri osa massasta on akkua?</li>
+</ul>
+<p>Kirjaa tulokset. Dronen massaa tarvitaan, kun lasket leijuntaan tarvittavan nostovoiman.</p>
+<h2>Jos jokin ei toimi</h2>
+<p>Ohjeet ovat valmistajan vianetsinnästä.</p>
+<table>
+<thead>
+<tr>
+<th>Havainto</th>
+<th>Kokeile</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Näyttö il­moit­taa, että gy­ros­koop­pia ei löydy</td>
+<td>Kiristä kortin viisi mutteria kevyesti, irrota akku ja kytke se uu­del­leen.</td>
+</tr>
+<tr>
+<td>Näyttö il­moit­taa, että moot­to­rioh­jain­ta ei löydy</td>
+<td>Irrota USB-kaapeli ja akku ja kytke sitten vain akku.</td>
+</tr>
+<tr>
+<td>Moot­to­rit eivät käyn­nis­ty</td>
+<td>Tarkista, että ohjain ja drone ovat samalla ra­dio­ryh­mäl­lä ja että ohjaimen näytön pisteet liik­ku­vat, kun kal­lis­tat sitä. Kokeile val­mis­ta­jan valmista oh­jai­noh­jel­maa.</td>
+</tr>
+<tr>
+<td>micro:bit näyttää vir­he­nu­me­ron</td>
+<td>Avaa ohjelma Ma­ke­Co­des­sa ja lataa se sieltä uu­del­leen.</td>
+</tr>
+<tr>
+<td>Ka­lib­roin­ti ei onnistu</td>
+<td>Drone ei ole ta­sai­sel­la alus­tal­la tai sitä lii­ku­tet­tiin. Irrota akku ja aloita alusta.</td>
+</tr>
+<tr>
+<td>Oh­jain­kor­tin valo on punainen</td>
+<td>Akku pitää ladata. Älä yritä lentää.</td>
+</tr>
+</tbody>
+</table>
+<h2>Jatkotehtävä</h2>
+<p>Laske akun energia sen merkinnöistä: $E = QU$, kun varaus $Q$ on ilmoitettu milliampeeritunteina ja jännite $U$ voltteina. Montako joulea akkuun mahtuu? Vertaa tulosta puhelimesi akkuun.</p>
+<h2>Dokumentoi</h2>
+<p>Liitä projektipäiväkirjaan</p>
+<ul>
+<li>osakartta</li>
+<li>valokuva kootusta dronesta ilman potkureita</li>
+<li>käynnistyksen vaiheet ja moottoritestin tulos</li>
+<li>yksi asia, jonka tekisit kokoamisessa toisin.</li>
+</ul>
+<h2>Opettajalle: valmistelu</h2>
+<ul>
+<li>Lataa valmistajan rakennus- ja ohjelmointiohje (<em>Airbit 2 – Building and coding</em>) sivulta <a href="https://www.makekit.no/en/docs/airbit-docs/">Air:bit-dokumentit</a>. Käytä mustan kortin (Air:bit 2) ohjeita, älä sinisen kortin (Air:bit 1).</li>
+<li>Valmistajan aika-arvio on 2–3 tuntia kokoamiseen ja 3–4 tuntia ohjaimen ohjelmointiin.</li>
+<li>Ohjeen sivujärjestyksessä potkurit kiinnitetään ennen ohjelmointia, mutta ohjeen turvallisuussivu neuvoo kiinnittämään ne vasta, kun rakentaminen ja ohjelmointi on tehty ja moottorien käynnistys ja pysäytys on kokeiltu. Pidä potkurit itselläsi lentotunteihin asti.</li>
+<li>Lataa droneohjelma micro:biteille etukäteen ja numeroi sarjat, micro:bitit ja radioryhmät ryhmittäin.</li>
+<li>Koulun sarjoissa on potkurisuojat. Ne kiinnitetään valmistajan ohjeen mukaan lentotunnilla samalla kuin potkurit.</li>
+<li>Sarjoja on 10 ja micro:bitejä 20, eli kaksi jokaista sarjaa kohti. Micro:bitit ovat versiota V2.</li>
+<li>Eniten kuluvat potkurit ja moottorit. Varaa varaosia.</li>
+<li>Dronen massaa ja lentoaikaa valmistaja ei ilmoita: ne mitataan itse.</li>
+<li>Tiedot on luettu valmistajan ohjeesta 12.11.2026.</li>
+</ul></article><script src="../ahjo.js?v=d1ddcb7c"></script></main>
+<footer class="bottom"><span>Ruukkilabra</span><a href="tyokalut.html">Työkalut</a><a href="tietosuoja.html">Tietosuoja</a><span class="copyright">© 2026 Lauri Hellsten</span><span class="rights">Älä kopioi ilman lupaa.</span></footer>
+</div>
+<script src="../vendor/katex/katex.min.js"></script><script src="../vendor/katex/contrib/auto-render.min.js" onload="renderMathInElement(document.querySelector('main'),{delimiters:[{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+</body></html>

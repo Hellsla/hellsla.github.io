@@ -21,7 +21,7 @@ jaksot/<id>/
 |---|---|
 | korjata tekstiä | muokkaan riviä tiedostossa `jakso.json` (ja käännöksessä, jos sellainen on) |
 | lisätä työpajan, ohjeen tai projektin | lisään tiedoston kansioon `kohteet/` |
-| lisätä suunnitteilla olevan jakson etusivulle | teen kansion ja `jakso.json`-tiedoston, jossa on otsake (`"status": "planned"`) ja `"front": {"icon", "title", "text"}`; koodia ei tarvita (malli: `droonilab/`) |
+| lisätä suunnitteilla olevan jakson etusivulle | teen kansion ja `jakso.json`-tiedoston, jossa on otsake (`"status": "planned"`) ja `"front": {"icon", "title", "text"}`; koodia ei tarvita (malli: `esimerkkijakso/`) |
 | julkaista uuden jakson ilman omaa koodia | kirjoitan sivut lohkoina kohtaan `"pages"` ja vaihdan tilaksi `"live"` (mallit: `kilparobo/jakso.json` ja `tests/jaksot/koejakso/`) |
 | muuttaa Kilparobotiikan tekstiä, korttia, vaihetta tai linkkiä | muokkaan tiedostoa `kilparobo/jakso.json` (ja `kilparobo/en/jakso.json`); koodiin ei kosketa |
 
@@ -30,15 +30,15 @@ Ikonin koodi on `scripts/module_icons.py`:n listalta; uusi ikoni on SVG kansioss
 ## Sivut lohkoina (jakso ilman omaa koodia)
 
 ```json
-"title": "Droonilab",
-"front": {"icon": "DROONILAB", "title": "Droonilab", "text": "Rakenna, ohjelmoi ja lennätä drooni."},
+"title": "Esimerkkijakso",
+"front": {"icon": "DRONELABRA", "title": "Esimerkkijakso", "text": "Rakenna, ohjelmoi ja lennätä drooni."},
 "pages": [
-  {"file": "droonilab.html", "title": "Droonilab", "nav": "Aloitus", "lead": "…",
+  {"file": "esimerkkijakso.html", "title": "Esimerkkijakso", "nav": "Aloitus", "lead": "…",
    "blocks": [
-     {"type": "teksti", "id": "mika", "title": "Mikä Droonilab on", "text": ["kappale", "kappale"]},
+     {"type": "teksti", "id": "mika", "title": "Mikä Esimerkkijakso on", "text": ["kappale", "kappale"]},
      {"type": "lista", "id": "alkuun", "title": "Näin pääset alkuun", "ordered": true, "items": ["…", "…"]},
      {"type": "kortit", "id": "tyopajat", "title": "Työpajat", "from": "kohteet"},
-     {"type": "linkit", "id": "lisaa", "title": "Lisää", "links": [{"title": "…", "href": "droonilab-turvallisuus.html"}, {"title": "…", "url": "https://…"}]}
+     {"type": "linkit", "id": "lisaa", "title": "Lisää", "links": [{"title": "…", "href": "esimerkkijakso-turvallisuus.html"}, {"title": "…", "url": "https://…"}]}
    ]}
 ]
 ```

@@ -1,6 +1,6 @@
 {
   "jakso": {"id": "koejakso", "status": "live", "theme": "kiviruukki"},
-  "front": {"icon": "DROONILAB", "title": "Koejakso", "text": "Väliaikainen jakso renderöijän kokeiluun."},
+  "front": {"icon": "DRONELABRA", "title": "Koejakso", "text": "Väliaikainen jakso renderöijän kokeiluun."},
   "title": "Koejakso",
   "ui": {"status": {"idea": "idea", "luonnos": "luonnos"}, "external": "avautuu uuteen välilehteen"},
   "pages": [
