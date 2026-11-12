@@ -11,7 +11,7 @@ a["fy2-1-L1-02"] = 245.0 - 6.0                       # leaf: 245 J of radiation 
 a["fy2-1-L1-03"] = (700.0 + 0.0) - (0.0 + 500.0)
 # fy2-1-L1-04 is answered in words (naming the forms): no number; L1-06 and L1-07 are multiple choice and L1-08 words: no number
 a["fy2-1-L1-05"] = 600.0 - 90.0                      # sledge: E_p 600 J = E_k + 90 J -> E_k = 510 J
-a["fy2-1-L1-10"] = 4.19 * 0.50 * (60 - 20)           # kettle: MAFY c(water) = 4,19 kJ/(kg K), m 0,50 kg, dT 40 K -> 83,8 kJ
+a["fy2-1-L1-10"] = 43 * 2.0                          # petrol: MAFY H = 43 MJ/kg, m 2,0 kg -> E = Hm = 86 MJ
 # Level 2: a conversion, a rearrangement or two steps
 a["fy2-1-L2-01"] = 3.00 * 1000 - 2150                # scooter: 3,00 kJ = 3000 J; thermal = 3000 − 2150 = 850 J
 a["fy2-1-L2-02"] = 2400 * 0.001 + 0.60               # slide: 2400 J = 2,4 kJ; E_p = E_k + E_lämpö = 2,4 kJ + 0,60 kJ = 3,0 kJ

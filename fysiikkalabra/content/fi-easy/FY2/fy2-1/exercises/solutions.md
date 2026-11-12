@@ -65,14 +65,14 @@
 **Mallivastaus:** Väitteet 1, 3 ja 5 ovat tosia. Mekaaninen energia $E_\text{p} + E_\text{k}$ pienenee jokaisessa pompussa. Pallon, lattian ja ilman kokonaisenergia pysyy kuitenkin samana. Lopussa pallolla ei ole enää liike-energiaa. Sillä ei ole myöskään potentiaalienergiaa, jonka se sai olemalla lattiaa korkeammalla. Sama energia on lämpöenergiana pallossa, lattiassa ja ilmassa. Väitteet 2 ja 4 ovat epätosia. Energia ei kulu loppuun. Lämpöenergia kuuluu kokonaisenergiaan, joten kokonaisenergia ei vähene.
 
 ## fy2-1-L1-10
-**Annettu:** veden massa $m = 0{,}50\,\text{kg}$, lämpötila alussa $20\,{}^\circ\text{C}$ ja lopussa $60\,{}^\circ\text{C}$; taulukosta (MAFY-taulukko, ominaislämpökapasiteetit, vesi) $c = 4{,}19\,\text{kJ/(kg}\cdot\text{K)}$
-**Kysytty:** keittimen lämpöenergiaksi muuttama sähköenergia $E$ yksikössä $\text{kJ}$
-**Periaate:** Eristetyssä systeemissä energia säilyy. Kaikki sähköenergia siirtyy veteen eikä ympäristöön karkaa lämpöä, joten systeemi on eristetty ja energia säilyy: sähköenergian vähennys on yhtä suuri kuin veden lämpöenergian kasvu. Veden lämpöenergian kasvu on $E = c\,m\,\Delta T$.
-**Kaava:** $E_\text{sähkö} = E_\text{lämpö}$, ja $E_\text{lämpö} = c\,m\,\Delta T$, joten $E = c\,m\,\Delta T$
-**Muunnokset:** Lämpötilan muutos on sama celsiusasteina ja kelvineinä: $\Delta T = 60\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 40\,{}^\circ\text{C} = 40\,\text{K}$. Ominaislämpökapasiteetti on jo yksikössä $\text{kJ/(kg}\cdot\text{K)}$, joten vastaus tulee kilojouleina.
-**Sijoitus:** $E = 4{,}19\,\dfrac{\text{kJ}}{\text{kg}\cdot\text{K}} \cdot 0{,}50\,\text{kg} \cdot 40\,\text{K} = 83{,}8\,\text{kJ}$
-**Vastaus:** $E \approx 84\,\text{kJ}$, kaksi merkitsevää numeroa kuten massassa $0{,}50\,\text{kg}$. Taulukkoarvo $c = 4{,}19\,\text{kJ/(kg}\cdot\text{K)}$ on MAFY-taulukosta (kohta ominaislämpökapasiteetit, vesi); toisen taulukon pyöristys, esimerkiksi $4{,}18$, antaisi saman tuloksen kahden numeron tarkkuudella.
-**Järkevyys:** Karkea arvio: $4\,\text{kJ} \cdot 0{,}5 \cdot 40 = 80\,\text{kJ}$, joten tulos on oikean kokoluokan. Kilo vettä vaatii noin $4\,\text{kJ}$ yhtä astetta kohti, ja puoli litraa vettä lämpenee 40 astetta noin $84\,\text{kJ}$:lla eli keittimellä, jonka teho on $2\,\text{kW}$, noin $42\,\text{s}$:ssa, mikä on arkikokemukseen sopiva.
+**Annettu:** polttoaineen massa $m = 2{,}0\,\text{kg}$ (bensiini); taulukosta (MAFY-taulukko, polttoaineiden lämpöarvot, bensiini) $H = 43\,\text{MJ/kg}$
+**Kysytty:** palamisessa vapautuva kemiallinen energia $E$ yksikössä $\text{MJ}$
+**Periaate:** Energiaa ei synny eikä katoa, vaan se muuttaa muotoa. Palamisessa bensiinin kemiallinen energia muuttuu liike-energiaksi ja lämpöenergiaksi, ja muuttuvan energian määrä on yhtä suuri kuin vapautuva kemiallinen energia. Lämpöarvo $H$ kertoo vapautuvan energian yhtä massayksikköä kohti.
+**Kaava:** $E = Hm$
+**Muunnokset:** Lämpöarvo on jo yksikössä $\text{MJ/kg}$ ja massa kilogrammoina, joten vastaus tulee suoraan megajouleina eikä muunnoksia tarvita.
+**Sijoitus:** $E = 43\,\dfrac{\text{MJ}}{\text{kg}} \cdot 2{,}0\,\text{kg} = 86\,\text{MJ}$
+**Vastaus:** $E \approx 86\,\text{MJ}$, kaksi merkitsevää numeroa kuten massassa $2{,}0\,\text{kg}$. Lämpöarvo $H = 43\,\text{MJ/kg}$ on MAFY-taulukosta (polttoaineiden lämpöarvot, bensiini); eri taulukoiden arvot poikkeavat hieman toisistaan, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Järkevyys:** Karkea arvio: $40\,\text{MJ/kg} \cdot 2\,\text{kg} = 80\,\text{MJ}$, joten tulos on oikean kokoluokan. Koska $1\,\text{kWh} = 3{,}6\,\text{MJ}$, $86\,\text{MJ}$ on noin $24\,\text{kWh}$, ja bensiinin energiatiheys on suuri verrattuna esimerkiksi puuhun, jonka lämpöarvo on noin $16\,\text{MJ/kg}$.
 
 ## fy2-1-L2-01
 **Annettu:** akusta vapautuva kemiallinen energia $E_\text{kem} = 3{,}00\,\text{kJ}$, potkulaudan ja kuljettajan liike-energia $E_\text{k} = 2150\,\text{J}$
@@ -147,13 +147,13 @@
 ## fy2-1-L2-08
 **Annettu:** kuvasta luetut energiat: kohdassa A $E_\text{p,A} = 700\,\text{J}$ ja $E_\text{k,A} = 0\,\text{J}$, kohdassa B $E_\text{p,B} = 300\,\text{J}$ ja $E_\text{k,B} = 300\,\text{J}$
 **Kysytty:** kohtaan B mennessä lämpöenergiaksi muuttuneen energian osuus alkuperäisestä energiasta prosentteina
-**Periaate:** Skeittari, half-pipe ja ympäristö muodostavat eristetyn systeemin, joten energia säilyy. Kitka muuttaa mekaanista energiaa lämpöenergiaksi, joten lämpöenergia on alkuenergian ja kohdan B mekaanisen energian erotus.
-**Kuvaajan lukeminen:** Kohdassa A on vain potentiaalienergian pylväs, jonka yläreuna on ruudukon viivalla $700\,\text{J}$, ja liike-energia on nolla, koska skeittari on levossa. Kohdassa B potentiaalienergian ja liike-energian pylväät yltävät kumpikin viivalle $300\,\text{J}$.
+**Periaate:** Kelkka, mäki ja ympäristö muodostavat eristetyn systeemin, joten energia säilyy. Kitka muuttaa mekaanista energiaa lämpöenergiaksi, joten lämpöenergia on alkuenergian ja kohdan B mekaanisen energian erotus.
+**Kuvaajan lukeminen:** Kohdassa A on vain potentiaalienergian pylväs, jonka yläreuna on ruudukon viivalla $700\,\text{J}$, ja liike-energia on nolla, koska kelkka on levossa. Kohdassa B potentiaalienergian ja liike-energian pylväät yltävät kumpikin viivalle $300\,\text{J}$.
 **Kaava:** $E_\text{A} = E_\text{B} + E_\text{lämpö}$, joten $E_\text{lämpö} = E_\text{A} - E_\text{B}$, ja osuus on $p = \dfrac{E_\text{lämpö}}{E_\text{A}} \cdot 100\,\%$
 **Muunnokset:** Kaikki energiat ovat jouleina, joten muunnoksia ei tarvita.
 **Sijoitus:** $E_\text{lämpö} = (700\,\text{J} + 0\,\text{J}) - (300\,\text{J} + 300\,\text{J}) = 100\,\text{J}$, ja $p = \dfrac{100\,\text{J}}{700\,\text{J}} \cdot 100\,\% = 14{,}3\,\%$
-**Vastaus:** $p \approx 14\,\%$, kaksi merkitsevää numeroa, koska energiat luetaan sadan joulen tarkkuudella.
-**Järkevyys:** Osuus on pienempi kuin $100\,\%$ ja positiivinen, kuten kitkan kohdalla pitää. Kohtaan C mennessä lämpöenergiaksi on muuttunut $200\,\text{J}$ eli $29\,\%$, joten kohtaan B mennessä noin puolet siitä on järkevä, koska B on rinteen puolivälissä. Tarkistus: $600\,\text{J} + 100\,\text{J} = 700\,\text{J}$.
+**Vastaus:** $p \approx 14\,\%$, pyöristettynä kokonaisiin prosentteihin, koska energiat luetaan kuvasta sadan joulen tarkkuudella.
+**Järkevyys:** Osuus on pienempi kuin $100\,\%$ ja positiivinen, kuten kitkan kohdalla pitää. Tarkistus: $600\,\text{J} + 100\,\text{J} = 700\,\text{J}$.
 
 ## fy2-1-L3-01
 **Annettu:** kohdassa A $E_\text{p} = 900\,\text{J}$ ja $E_\text{k} = 0\,\text{J}$; kohdassa B $E_\text{p} = 400\,\text{J}$ ja $E_\text{k} = 480\,\text{J}$; kohdassa C $E_\text{p} = 0\,\text{J}$ ja $E_\text{k} = 750\,\text{J}$
