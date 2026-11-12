@@ -1,0 +1,4 @@
+# Append-only registers: when two branches each add rows at the end, git's built-in union driver keeps both rows
+# instead of a conflict on the last line. reviews.py verify checks the merged result in CI.
+fysiikkalabra/docs/teacher-figures.tsv merge=union
+fysiikkalabra/content/**/review/carry.tsv merge=union
