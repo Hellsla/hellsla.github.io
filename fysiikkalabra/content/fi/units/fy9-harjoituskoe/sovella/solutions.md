@@ -153,9 +153,9 @@
 **Annettu:** $L = 1{,}31\,\text{m}$, äänen nopeus $8\,{}^\circ\text{C}$:ssa $v' = 336{,}1\,\text{m/s}$, $f_1 = 130{,}99\,\text{Hz}$ (a-kohta)
 **Kysytty:** perustaajuus $f_1'$ kylmässä kirkossa ja sen suhteellinen muutos
 **Periaate:** Pillin pituus muuttuu niin vähän, että seisovan aallon aallonpituus pysyy samana (tämä tarkistetaan c-kohdassa). Taajuus on siksi verrannollinen äänen nopeuteen, joka pienenee ilman jäähtyessä.
-**Kaava:** $f_1' = \dfrac{v'}{2L}$ ja suhteellinen muutos $\dfrac{f_1' - f_1}{f_1}$
+**Kaava:** $f_1 = \dfrac{v}{2L}$ ja $f_1' = \dfrac{v'}{2L}$. Suhteellinen muutos on $\varepsilon = \dfrac{f_1' - f_1}{f_1} = \dfrac{v'/(2L)}{v/(2L)} - 1 = \dfrac{v'}{v} - 1$, koska $L$ supistuu
 **Muunnokset:** Ei tarvita.
-**Sijoitus:** $f_1' = \dfrac{336{,}1\,\text{m/s}}{2 \cdot 1{,}31\,\text{m}} = 128{,}28\,\text{Hz}$ ja $\dfrac{128{,}28\,\text{Hz} - 130{,}99\,\text{Hz}}{130{,}99\,\text{Hz}} = -0{,}0207$
+**Sijoitus:** $f_1' = \dfrac{336{,}1\,\text{m/s}}{2 \cdot 1{,}31\,\text{m}} = 128{,}28\,\text{Hz}$ ja $\varepsilon = \dfrac{336{,}1\,\text{m/s}}{343{,}2\,\text{m/s}} - 1 = -0{,}0207$
 **Vastaus:** $f_1' \approx 128\,\text{Hz}$, ja taajuus pienenee noin $2{,}1\,\%$. Kolme merkitsevää numeroa kuten pituudessa.
 **Järkevyys:** Muutos on sama kuin äänen nopeuden suhteellinen muutos $\tfrac{336{,}1 - 343{,}2}{343{,}2} = -2{,}1\,\%$. Se on kuultava ero, sillä puolisävelaskel on noin $6\,\%$.
 
@@ -163,9 +163,9 @@
 **Annettu:** $L_0 = 1{,}31\,\text{m}$, pituuden lämpötilakerroin $\alpha = 2{,}3 \cdot 10^{-5}\,\tfrac{1}{\text{K}}$, lämpötila laskee $20\,{}^\circ\text{C}$:sta $8\,{}^\circ\text{C}$:een
 **Kysytty:** pillin pituuden muutos $\Delta L$ ja sen vaikutus taajuuteen verrattuna b-kohtaan
 **Periaate:** Kiinteä metalli lyhenee jäähtyessään, ja pituuden muutos on verrannollinen alkuperäiseen pituuteen ja lämpötilan muutokseen. Perustaajuus on kääntäen verrannollinen pituuteen, joten lyhenevä pilli nostaa taajuutta samalla suhteellisella määrällä.
-**Kaava:** $\Delta L = \alpha L_0 \Delta T$ ja $\dfrac{\Delta f}{f} \approx -\dfrac{\Delta L}{L_0}$
+**Kaava:** $\Delta L = \alpha L_0 \Delta T$. Taajuus on $f = \dfrac{v}{2(L_0 + \Delta L)}$, joten $\dfrac{\Delta f}{f_0} = \dfrac{L_0}{L_0 + \Delta L} - 1 \approx -\dfrac{\Delta L}{L_0} = -\alpha \Delta T$, kun $|\Delta L| \ll L_0$
 **Muunnokset:** $\Delta T = 8\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = -12\,\text{K}$ ja lopuksi $1\,\text{m} = 1000\,\text{mm}$.
-**Sijoitus:** $\Delta L = 2{,}3 \cdot 10^{-5}\,\tfrac{1}{\text{K}} \cdot 1{,}31\,\text{m} \cdot (-12\,\text{K}) = -3{,}62 \cdot 10^{-4}\,\text{m} = -0{,}362\,\text{mm}$ ja $\dfrac{\Delta L}{L_0} = \dfrac{-3{,}62 \cdot 10^{-4}\,\text{m}}{1{,}31\,\text{m}} = -2{,}8 \cdot 10^{-4} = -0{,}028\,\%$
+**Sijoitus:** $\Delta L = 2{,}3 \cdot 10^{-5}\,\tfrac{1}{\text{K}} \cdot 1{,}31\,\text{m} \cdot (-12\,\text{K}) = -3{,}62 \cdot 10^{-4}\,\text{m} = -0{,}362\,\text{mm}$ ja $\dfrac{\Delta L}{L_0} = \dfrac{-3{,}62 \cdot 10^{-4}\,\text{m}}{1{,}31\,\text{m}} = -2{,}8 \cdot 10^{-4} = -0{,}028\,\%$ ja $\dfrac{\Delta f}{f_0} \approx -\alpha \Delta T = -2{,}3 \cdot 10^{-5}\,\tfrac{1}{\text{K}} \cdot (-12\,\text{K}) = +2{,}8 \cdot 10^{-4}$
 **Vastaus:** Pilli lyhenee noin $0{,}36\,\text{mm}$ (kaksi merkitsevää numeroa kuten lämpötilakertoimessa). Se nostaisi taajuutta vain noin $0{,}03\,\%$, kun ilman jäähtyminen laskee sitä noin $2{,}1\,\%$, eli noin $75$ kertaa enemmän. Urkujen madaltuminen johtuu siis ilmasta, ei metallin kutistumisesta.
 **Järkevyys:** Metallien lämpölaajeneminen on arkikokemuksen mukaan pieni: metrin mittainen tanko muuttuu kymmenen asteen muutoksessa vain kymmenesosamillimetrejä.
 
@@ -211,7 +211,7 @@
 **Annettu:** $R_\text{j} = 0{,}560\,\Omega$, $I = 14{,}27\,\text{A}$ (a- ja b-kohdat)
 **Kysytty:** johdossa lämmöksi muuttuva teho $P_\text{j}$
 **Periaate:** Johdon resistanssin läpi kulkeva virta muuttaa sähköenergiaa johtimen sisäenergiaksi. Johdon teho saadaan sen omasta resistanssista ja sen läpi kulkevasta virrasta.
-**Kaava:** $P_\text{j} = U_\text{j} I = R_\text{j} I^2$
+**Kaava:** $P_\text{j} = U_\text{j} I$ ja $U_\text{j} = R_\text{j} I$ (Ohmin laki), joten $P_\text{j} = R_\text{j} I^2$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $P_\text{j} = 0{,}560\,\Omega \cdot (14{,}27\,\text{A})^2 = 114{,}0\,\text{W}$
 **Vastaus:** $P_\text{j} \approx 1{,}1 \cdot 10^2\,\text{W}$ eli noin $110\,\text{W}$, kaksi merkitsevää numeroa kuten a- ja b-kohdissa.
@@ -600,7 +600,7 @@ Jos Ainon malli pätisi, pisteet $(v, F_\text{v})$ olisivat origon kautta kulkev
 **Annettu:** sovite $T = 17{,}11\,\tfrac{{}^\circ\text{C}}{\text{km}} \cdot z + 6{,}67\,{}^\circ\text{C}$, syvyys $z = 6{,}0\,\text{km}$
 **Kysytty:** kallion lämpötila $T$ syvyydellä $6{,}0\,\text{km}$
 **Periaate:** Lämpötila arvioidaan jatkamalla sovitettua suoraa mitatun alueen ulkopuolelle. Arvio olettaa, että kallio ja sen lämmöntuotto ovat samanlaisia myös välillä $3$–$6\,\text{km}$.
-**Kaava:** $T = kz + T_0$
+**Kaava:** $T = kz + T_0$, missä $k = 17{,}11\,\tfrac{{}^\circ\text{C}}{\text{km}}$ on suoran kulmakerroin ja $T_0 = 6{,}67\,{}^\circ\text{C}$ vakiotermi
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $T = 17{,}11\,\tfrac{{}^\circ\text{C}}{\text{km}} \cdot 6{,}0\,\text{km} + 6{,}67\,{}^\circ\text{C} = 109{,}4\,{}^\circ\text{C}$
 **Vastaus:** $T \approx 110\,{}^\circ\text{C}$, kaksi merkitsevää numeroa, koska syvyys $6{,}0\,\text{km}$ on annettu kahdella numerolla ja arvio on ekstrapolaatio mitatun alueen kaksinkertaiseen syvyyteen.
@@ -721,7 +721,7 @@ Suoraa ei pakoteta origon kautta, koska myös jousi itse värähtelee.
 **Kysytty:** jousivakio $k$
 **Periaate:** Mallin $T^2 = \tfrac{4\pi^2}{k}(m + m_\text{j})$ mukaan suoran kulmakerroin on $\tfrac{4\pi^2}{k}$. Kulmakerroin luetaan sovitetulta suoralta kahdesta kaukana toisistaan olevasta pisteestä.
 **Kuvaajan lukeminen:** Suoralta luetaan pisteet $(0\,\text{kg};\ 0{,}032\,\text{s}^2)$ ja $(0{,}600\,\text{kg};\ 0{,}979\,\text{s}^2)$, joten kulmakerroin on $\dfrac{0{,}979\,\text{s}^2 - 0{,}032\,\text{s}^2}{0{,}600\,\text{kg}} = 1{,}578\,\tfrac{\text{s}^2}{\text{kg}}$.
-**Kaava:** kulmakerroin $= \dfrac{4\pi^2}{k}$, joten $k = \dfrac{4\pi^2}{\text{kulmakerroin}}$
+**Kaava:** suoran $T^2 = am + b$ kulmakerroin on $a = \dfrac{4\pi^2}{k}$, joten $k = \dfrac{4\pi^2}{a}$
 **Muunnokset:** Ei tarvita: $\tfrac{\text{kg}}{\text{s}^2} = \tfrac{\text{N}}{\text{m}}$.
 **Sijoitus:** $k = \dfrac{4\pi^2}{1{,}578\,\text{s}^2/\text{kg}} = 25{,}01\,\tfrac{\text{kg}}{\text{s}^2}$
 **Vastaus:** $k \approx 25{,}0\,\tfrac{\text{N}}{\text{m}}$, kolme merkitsevää numeroa kuten mittauksissa.
@@ -732,7 +732,7 @@ Suoraa ei pakoteta origon kautta, koska myös jousi itse värähtelee.
 **Kysytty:** miksi suora ei kulje origon kautta ja kuinka suuri jousen massa $m_\text{j}$ värähtelee punnuksen mukana
 **Periaate:** Punnuksen lisäksi myös jousi liikkuu: sen alapää liikkuu punnuksen mukana ja yläpää on paikallaan. Jousen liike vaikuttaa siis kuin osa sen massasta olisi punnuksessa, ja värähtelevä massa on $m + m_\text{j}$. Silloin $T^2 = \tfrac{4\pi^2}{k}(m + m_\text{j})$, ja suora leikkaa massa-akselin kohdassa $m = -m_\text{j}$.
 **Kuvaajan lukeminen:** Kun $T^2 = 0$, sovitteesta $0 = 1{,}578\,\tfrac{\text{s}^2}{\text{kg}} \cdot m + 0{,}0324\,\text{s}^2$, joten suora leikkaa massa-akselin kohdassa $m = -\tfrac{b}{\text{kulmakerroin}}$.
-**Kaava:** $m_\text{j} = \dfrac{b}{\text{kulmakerroin}}$
+**Kaava:** $T^2 = \dfrac{4\pi^2}{k}(m + m_\text{j}) = am + am_\text{j}$, joten $b = am_\text{j}$ ja $m_\text{j} = \dfrac{b}{a}$
 **Muunnokset:** Lopuksi $1\,\text{kg} = 1000\,\text{g}$.
 **Sijoitus:** $m_\text{j} = \dfrac{0{,}0324\,\text{s}^2}{1{,}578\,\text{s}^2/\text{kg}} = 0{,}0205\,\text{kg} = 20{,}5\,\text{g}$
 **Vastaus:** $m_\text{j} \approx 21\,\text{g}$, kaksi merkitsevää numeroa, koska vakiotermi on pieni ja sen epävarmuus suhteellisesti suuri. Se on noin kolmasosa jousen omasta massasta $61\,\text{g}$.
