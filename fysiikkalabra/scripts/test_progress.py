@@ -8,7 +8,7 @@ In a browser, on fy4-4 in every language (or the pages named), at 360, 768 and 1
   - below 700 px the chips are folded into one button that names the stage on screen ("4/7 Teoria") and opens every
     stage on its own row under the bar; choosing one goes there and closes the list (design audit 2026-11-10; the bar
     scrolled sideways inside itself until then, and still does without JavaScript); the page never scrolls sideways
-  - every stage but the last ends with a Seuraavaksi link to the next one
+  - no stage ends with a Seuraavaksi link (teacher 2026-11-12); the only row between stages is the reminder after Ennusta while its predictions are missing
   - a stage is marked done (a tick and a hidden "(tehty)") once its required answers are given (Vastaa / Tarkista),
     optional tasks do not count, and the state is kept in localStorage under ruukkilabra:<page> and restored on reload
   - without JavaScript the bar is a plain list of links and there is no Kuuntele button
@@ -95,9 +95,10 @@ with sync_playwright() as pw:
             nx = pg.evaluate("""() => { const links = [...document.querySelectorAll('nav.toc a[href^="#"]')].map(a => a.getAttribute('href'));
                 const rows = [...document.querySelectorAll('nav.next-stage a')].map(a => [a.closest('nav').previousElementSibling.id, a.getAttribute('href'), a.getBoundingClientRect().height >= 44]);
                 return { links, rows, waiting: !!document.querySelector('#ennusta + nav.next-stage.is-waiting') }; }""")
-            # after Ennusta the link waits for the predictions (teacher 2026-11-10): until then it points back at the stage
-            want = [[a[1:], ("#ennusta" if a == "#ennusta" and nx["waiting"] else b)] for a, b in zip(nx["links"], nx["links"][1:])]
-            expect(f"{tag}: every stage but the last ends with a Seuraavaksi link to the next one (44 px)", [[r[0], r[1]] for r in nx["rows"]] == want and all(r[2] for r in nx["rows"]), nx["rows"])
+            # no Seuraavaksi links (teacher 2026-11-12: the next stage begins right under the link); after Ennusta a reminder
+            # stands while the predictions are missing (teacher 2026-11-10), and it points back at the stage
+            want = [["ennusta", "#ennusta"]] if nx["waiting"] else []
+            expect(f"{tag}: no stage ends with a Seuraavaksi link; only the reminder after Ennusta while predictions are missing (44 px)", [[r[0], r[1]] for r in nx["rows"]] == want and all(r[2] for r in nx["rows"]) and not pg.evaluate("!!document.querySelector('.next-stage-l')"), nx["rows"])
             if w == 1280:
                 pg.evaluate("scrollTo(0, 0)"); pg.wait_for_timeout(200)
                 # optional tasks do not count: answering the optional Pohdinta question marks nothing
@@ -132,8 +133,8 @@ with sync_playwright() as pw:
                       shown: marks.filter(x => !x.hidden).reduce((a, x) => a + parseInt(x.textContent, 10), 0), done, assigned: !!b.querySelector('li.assigned') }; }""")
                 expect(f"{tag}: Tehtävät says how many core tasks are done, and the levels' headings together count every done task",
                        ex["marks"] == ex["levels"] and ex["shown"] == ex["done"] > 0 and (ex["assigned"] or (ex["total"] == ex["core"] and 0 < ex["n"] <= ex["core"])), ex)
-                go = pg.evaluate("(() => { const r = document.querySelector('#ennusta + nav.next-stage'), a = r.querySelector('a'); return [r.classList.contains('is-waiting'), a.getAttribute('href')]; })()")
-                expect(f"{tag}: with the predictions given the row leads to Tutki", go == [False, "#tutki"], go)
+                go = pg.evaluate("[!!document.querySelector('nav.next-stage'), document.querySelector('#ennusta').nextElementSibling.id]")
+                expect(f"{tag}: with the predictions given the reminder is gone and Tutki follows Ennusta", go == [False, "tutki"], go)
                 sr = pg.evaluate("document.querySelector('nav.toc a[href=\"#ennusta\"] .visually-hidden')?.textContent || ''")
                 expect(f"{tag}: a done stage says so to a screen reader", T("js.stage_done") in sr, sr)
                 saved = pg.evaluate(f"(() => {{ try {{ return JSON.parse(localStorage.getItem('{key}')); }} catch (e) {{ return null; }} }})()")
