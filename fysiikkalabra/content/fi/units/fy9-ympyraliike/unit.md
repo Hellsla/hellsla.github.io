@@ -191,7 +191,7 @@ Tämän tunnin tehtävät alkavat samoin kuin mekaniikan tehtävät yleensä: **
   <rect x="44" y="272" width="328" height="156" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
   <foreignObject x="58" y="282" width="133" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{ympyräliike}$</div></foreignObject>
   <line x1="54" y1="314" x2="362" y2="314" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="326" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$v = 2\pi r/T$</div></foreignObject>
+  <foreignObject x="58" y="326" width="50" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$v = \omega r$</div></foreignObject>
   <foreignObject x="266" y="328" width="96" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{ratanopeus}$</div></foreignObject>
   <foreignObject x="58" y="363" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$a_\text{n} = v^2/r$</div></foreignObject>
   <foreignObject x="221" y="365" width="141" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{keskipisteeseen}$</div></foreignObject>
@@ -201,7 +201,7 @@ Tämän tunnin tehtävät alkavat samoin kuin mekaniikan tehtävät yleensä: **
   <rect x="44" y="444" width="328" height="156" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
   <foreignObject x="58" y="454" width="133" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{gravitaatio}$</div></foreignObject>
   <line x1="54" y1="486" x2="362" y2="486" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="498" width="112" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$F = \gamma m_1 m_2/r^2$</div></foreignObject>
+  <foreignObject x="58" y="498" width="122" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$F_\text{g} = \gamma m_1 m_2/r^2$</div></foreignObject>
   <foreignObject x="274" y="500" width="88" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{vetovoima}$</div></foreignObject>
   <foreignObject x="58" y="535" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$g = \gamma M/r^2$</div></foreignObject>
   <foreignObject x="301" y="537" width="61" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{kenttä}$</div></foreignObject>
@@ -306,22 +306,22 @@ missä $M$ on voiman momentti ($\text{Nm}$), $F$ voiman suuruus ($\text{N}$) ja 
 ### Tasainen ympyräliike
 
 ```kaavat
-ratanopeus :: v = \frac{2\pi r}{T} = 2\pi r f
-keskeiskiihtyvyys :: a_\text{n} = \frac{v^2}{r}
+ratanopeus :: v = \omega r
+keskeiskiihtyvyys :: a_\text{n} = \frac{v^2}{r} = \omega^2 r
 Newtonin 2. laki ympyräliikkeessä :: \Sigma F = m\frac{v^2}{r}
 ```
 
-missä $v$ on ratanopeus ($\text{m/s}$), $r$ radan säde ($\text{m}$), $T$ kierrosaika ($\text{s}$), $f = \tfrac{1}{T}$ pyörimistaajuus ($\tfrac{1}{\text{s}}$), $a_\text{n}$ normaalikiihtyvyys ($\text{m/s}^2$) ja $\Sigma F$ keskipisteeseen osoittava kokonaisvoima ($\text{N}$). Tasaisessa ympyräliikkeessä vauhti on vakio. Normaalikiihtyvyys $a_\text{n} = \tfrac{v^2}{r}$ pätee myös hetkellisesti, kun vauhti muuttuu: radan ylimmässä ja alimmassa kohdassa tangentin suuntaista voimaa ei ole, joten kokonaisvoima osoittaa keskipisteeseen. Nopeus on radan tangentin suuntainen. Liikeyhtälössä keskipisteeseen osoittavat voimat ovat positiivisia, ja kohtisuoraan ratatasoa vastaan voimien summa on nolla.
+missä $v$ on ratanopeus ($\text{m/s}$), $r$ radan säde ($\text{m}$), $\omega = \tfrac{2\pi}{T} = 2\pi f$ kulmanopeus ($\text{rad/s}$), $T$ kierrosaika ($\text{s}$) ja $f = \tfrac{1}{T}$ kierrostaajuus ($\tfrac{1}{\text{s}}$), joten $v = \tfrac{2\pi r}{T} = 2\pi r f$; $a_\text{n}$ normaalikiihtyvyys ($\text{m/s}^2$) ja $\Sigma F$ keskipisteeseen osoittava kokonaisvoima ($\text{N}$). Tasaisessa ympyräliikkeessä vauhti on vakio. Normaalikiihtyvyys $a_\text{n} = \tfrac{v^2}{r}$ pätee myös hetkellisesti, kun vauhti muuttuu: radan ylimmässä ja alimmassa kohdassa tangentin suuntaista voimaa ei ole, joten kokonaisvoima osoittaa keskipisteeseen. Nopeus on radan tangentin suuntainen. Liikeyhtälössä keskipisteeseen osoittavat voimat ovat positiivisia, ja kohtisuoraan ratatasoa vastaan voimien summa on nolla.
 
 ### Gravitaatio ja satelliitit
 
 ```kaavat
-Newtonin gravitaatiolaki :: F = \gamma\frac{m_1 m_2}{r^2}
+Newtonin gravitaatiolaki :: F_\text{g} = \gamma\frac{m_1 m_2}{r^2}
 gravitaatiokentän voimakkuus :: g = \gamma\frac{M}{r^2}
 satelliitin ratanopeus :: v = \sqrt{\frac{\gamma M}{r}}
 ```
 
-missä $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$ on gravitaatiovakio, $m_1$ ja $m_2$ kappaleiden massat ($\text{kg}$), $M$ keskuskappaleen massa ($\text{kg}$) ja $r$ etäisyys keskipisteiden välillä ($\text{m}$). Laki pätee pistemäisille ja pallosymmetrisille kappaleille. Satelliitin ratanopeus saadaan ehdosta $\gamma\tfrac{Mm}{r^2} = m\tfrac{v^2}{r}$, ja se pätee ympyräradalle, kun keskuskappale on paljon satelliittia massiivisempi. Maan satelliitille $r = R + h$, missä $R = 6371\,\text{km}$, ja kiertoaika on $T = \tfrac{2\pi r}{v}$.
+missä $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$ on gravitaatiovakio, $F_\text{g}$ gravitaatiovoiman suuruus ($\text{N}$), $m_1$ ja $m_2$ kappaleiden massat ($\text{kg}$), $M$ keskuskappaleen massa ($\text{kg}$) ja $r$ etäisyys keskipisteiden välillä ($\text{m}$). Laki pätee pistemäisille ja pallosymmetrisille kappaleille. Satelliitin ratanopeus saadaan ehdosta $\gamma\tfrac{Mm}{r^2} = m\tfrac{v^2}{r}$, ja se pätee ympyräradalle, kun keskuskappale on paljon satelliittia massiivisempi. Maan satelliitille $r = R + h$, missä $R = 6371\,\text{km}$, ja kiertoaika on $T = \tfrac{2\pi r}{v}$.
 
 ## Yleisiä virheitä {Virheet}
 

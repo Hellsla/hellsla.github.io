@@ -102,9 +102,9 @@ def kartta():
     groups = [
         ("neste", [(r"p = p_0 + \rho g h", "syvyydellä"), (r"\Delta p = \rho g h", "ylipaine"),
                    (r"p = p_0 + \Delta p", "kokonaispaine")]),
-        ("kaasu", [(r"pV = nRT", "tilanyhtälö"), (r"p_1V_1/T_1 = p_2V_2/T_2", "sama kaasu"),
+        ("kaasu", [(r"pV = nRT", "tilanyhtälö"), (r"pV/T = \text{vakio}", "sama kaasu"),
                    (r"T = \theta + 273{,}15\,\text{K}", "kelvinit")]),
-        ("lämpövoimakone", [(r"W_\text{k} = p\,\Delta V", "kaasun työ"), (r"W = Q_1 - Q_2", "säilyminen"),
+        ("lämpövoimakone", [(r"W = p\,\Delta V", "kaasun työ"), (r"W = Q_1 - Q_2", "säilyminen"),
                             (r"\eta = W/Q_1", "hyötysuhde")]),
     ]
     hub_y, hub_h, x_box, gh, top = 8, 72, 44, 150, 100

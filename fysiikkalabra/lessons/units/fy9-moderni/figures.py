@@ -105,9 +105,9 @@ def kartta():
     groups = [
         ("fotoni ja atomi", "eV", [(r"hf = W + E_\text{k,max}", "irtoaminen"), (r"hf = E_\text{y} - E_\text{a}", "spektri"),
                                     (r"eU_\text{k} \approx hf", "LED")]),
-        ("ydin", "MeV", [(r"N = N_0 \left(\tfrac12\right)^{t/T_{1/2}}", "hajoaminen"), (r"A = \lambda N", "aktiivisuus"),
-                         (r"Q = \Delta m\,c^2", "reaktio")]),
-        ("säteily ja ihminen", "annos", [(r"D = E/m", "absorboitunut"), (r"H_\text{T} = w_\text{R} D_\text{T}", "painotettu"),
+        ("ydin", "MeV", [(r"N = N_0 e^{-\lambda t}", "hajoaminen"), (r"A = \lambda N", "aktiivisuus"),
+                         (r"E = \Delta m\,c^2", "reaktio")]),
+        ("säteily ja ihminen", "annos", [(r"D = E/m", "absorboitunut"), (r"H = w_\text{R} D", "painotettu"),
                                          (r"\dot{H} \propto 1/r^2", "etäisyys")]),
     ]
     hub_y, hub_h, x_box, gh, top = 8, 72, 44, 188, 100

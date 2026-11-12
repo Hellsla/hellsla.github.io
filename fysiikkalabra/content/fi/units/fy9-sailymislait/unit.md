@@ -230,14 +230,14 @@ Mekaniikan kokeen tehtävistä suuri osa ratkeaa kahdella säilymislailla. **Ene
   <foreignObject x="239" y="156" width="123" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{liike-energia}$</div></foreignObject>
   <foreignObject x="58" y="188" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$E_\text{p} = mgh$</div></foreignObject>
   <foreignObject x="195" y="190" width="167" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{potentiaalienergia}$</div></foreignObject>
-  <foreignObject x="58" y="223" width="186" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$E_\text{mek,1} + W_\text{muut} = E_\text{mek,2}$</div></foreignObject>
+  <foreignObject x="58" y="223" width="148" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$</div></foreignObject>
   <line x1="24" y1="288" x2="44" y2="288" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="44" y="266" width="328" height="150" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
   <foreignObject x="58" y="276" width="122" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{liikemäärä}$</div></foreignObject>
   <line x1="54" y1="308" x2="362" y2="308" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="58" y="320" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\overline{p} = m\overline{v}$</div></foreignObject>
   <foreignObject x="266" y="322" width="96" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{määritelmä}$</div></foreignObject>
-  <foreignObject x="58" y="355" width="102" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$\Sigma\overline{F}\,\Delta t = \Delta\overline{p}$</div></foreignObject>
+  <foreignObject x="58" y="354" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\overline{I} = \Delta\overline{p}$</div></foreignObject>
   <foreignObject x="283" y="356" width="79" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{impulssi}$</div></foreignObject>
   <foreignObject x="58" y="389" width="167" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$\overline{p}_\text{ennen} = \overline{p}_\text{jälkeen}$</div></foreignObject>
   <foreignObject x="266" y="390" width="96" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{säilyminen}$</div></foreignObject>
@@ -311,19 +311,20 @@ painovoimaan liittyvä potentiaalienergia maanpinnalla :: E_\text{p} = mgh
 missä $m$ on massa ($\text{kg}$), $v$ nopeus ($\text{m/s}$), $g = 9{,}81\,\text{m/s}^2$ ja $h$ korkeus valitusta nollatasosta ($\text{m}$). $E_\text{p} = mgh$ pätee Maan pinnan lähellä. Energiaperiaate on
 
 ```kaavat
-mekaniikan energiaperiaate :: E_{\text{k},1} + E_{\text{p},1} + W_\text{muut} = E_{\text{k},2} + E_{\text{p},2}
+mekaniikan energiaperiaate :: E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}
 ```
 
-missä $W_\text{muut}$ on muiden voimien kuin painon tekemä työ ($\text{J}$). Vakiovoiman työ on $W = F_\parallel\,s$, missä $F_\parallel$ on voiman liikkeen suuntainen komponentti; kitkan ja ilmanvastuksen työ on negatiivinen. Kun $W_\text{muut} = 0$, mekaaninen energia säilyy.
+missä indeksi $0$ tarkoittaa alkutilaa ja $W$ muiden voimien kuin painon tekemä työ ($\text{J}$). Vakiovoiman työ on $W = F_\parallel\,s$, missä $F_\parallel$ on voiman liikkeen suuntainen komponentti; kitkan ja ilmanvastuksen työ on negatiivinen. Kun $W = 0$, mekaaninen energia säilyy: $E_{\text{p}0} + E_{\text{k}0} = E_\text{p} + E_\text{k}$.
 
 ### Liikemäärä ja impulssi
 
 ```kaavat
 liikemäärä :: \overline{p} = m\overline{v}
-impulssi-liikemääräperiaate :: \Sigma\overline{F}\,\Delta t = \Delta\overline{p}
+voiman impulssi :: \overline{I} = \overline{F}\Delta t
+impulssi-liikemääräperiaate :: \overline{I} = \Delta\overline{p}
 ```
 
-missä $\overline{p}$ on liikemäärä ($\text{kg} \cdot \text{m/s}$) ja $\Sigma\overline{F}$ vakiosuuruinen kokonaisvoima aikavälin $\Delta t$ ajan. Muuttuvalle voimalle keskimääräinen voima on $F_\text{ka} = |\Delta p| : \Delta t$. Yhdessä ulottuvuudessa valitaan positiivinen suunta, ja vastakkaiseen suuntaan osoittavat nopeudet ovat negatiivisia. Kun ulkoisten voimien impulssi on merkityksettömän pieni,
+missä $\overline{p}$ on liikemäärä ($\text{kg} \cdot \text{m/s}$), $\overline{I}$ impulssi ($\text{N} \cdot \text{s}$) ja $\overline{F}$ vakiosuuruinen voima aikavälin $\Delta t$ ajan. Liikemäärän muutoksen aiheuttaa kokonaisvoiman impulssi, $\Sigma\overline{F}\,\Delta t = \Delta\overline{p}$. Muuttuvalle voimalle keskimääräinen voima on $F_\text{ka} = |\Delta p| : \Delta t$. Yhdessä ulottuvuudessa valitaan positiivinen suunta, ja vastakkaiseen suuntaan osoittavat nopeudet ovat negatiivisia. Kun ulkoisten voimien impulssi on merkityksettömän pieni,
 
 ```kaavat
 liikemäärän säilymislaki :: m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'

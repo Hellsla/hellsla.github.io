@@ -126,9 +126,9 @@ Moduulin ilmiöt liittyvät kahteen kenttään. **Magneettikenttä** $\overline{
   <foreignObject x="58" y="110" width="164" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{voimat kentässä}$</div></foreignObject>
   <foreignObject x="239" y="112" width="123" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{liike tai virta}$</div></foreignObject>
   <line x1="54" y1="142" x2="362" y2="142" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="156" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$F = qvB\sin\alpha$</div></foreignObject>
+  <foreignObject x="58" y="156" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$F_\text{M} = QvB_\perp$</div></foreignObject>
   <foreignObject x="301" y="158" width="61" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{varaus}$</div></foreignObject>
-  <foreignObject x="58" y="208" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$F = IlB\sin\alpha$</div></foreignObject>
+  <foreignObject x="58" y="208" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$F_\text{M} = I\ell B_\perp$</div></foreignObject>
   <foreignObject x="301" y="210" width="61" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{johdin}$</div></foreignObject>
   <foreignObject x="58" y="260" width="122" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$B = \mu_0 I/(2\pi r)$</div></foreignObject>
   <foreignObject x="230" y="262" width="132" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{johtimen kenttä}$</div></foreignObject>
@@ -139,18 +139,18 @@ Moduulin ilmiöt liittyvät kahteen kenttään. **Magneettikenttä** $\overline{
   <line x1="54" y1="346" x2="362" y2="346" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="58" y="360" width="112" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$e = -N\,\Delta\Phi/\Delta t$</div></foreignObject>
   <foreignObject x="248" y="362" width="114" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{induktiolaki}$</div></foreignObject>
-  <foreignObject x="58" y="412" width="112" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$e_0 = NBA \cdot 2\pi f$</div></foreignObject>
+  <foreignObject x="58" y="412" width="112" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$u_0 = NAB \cdot 2\pi f$</div></foreignObject>
   <foreignObject x="248" y="414" width="114" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{generaattori}$</div></foreignObject>
-  <foreignObject x="58" y="464" width="122" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$U_1/U_2 = N_1/N_2$</div></foreignObject>
+  <foreignObject x="58" y="464" width="122" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$N_1/N_2 = U_1/U_2$</div></foreignObject>
   <foreignObject x="283" y="466" width="79" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{muuntaja}$</div></foreignObject>
   <line x1="24" y1="530" x2="44" y2="530" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="44" y="508" width="328" height="188" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
   <foreignObject x="58" y="518" width="60" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{valo}$</div></foreignObject>
   <foreignObject x="283" y="520" width="79" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{sm-aalto}$</div></foreignObject>
   <line x1="54" y1="550" x2="362" y2="550" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="556" width="111" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$n_1\sin\alpha_1 = n_2\sin\alpha_2$</div></foreignObject>
+  <foreignObject x="58" y="556" width="130" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$\sin\alpha_1/\sin\alpha_2 = n_2/n_1$</div></foreignObject>
   <foreignObject x="257" y="579" width="105" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{taittuminen}$</div></foreignObject>
-  <foreignObject x="58" y="616" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$d\sin\theta = k\lambda$</div></foreignObject>
+  <foreignObject x="58" y="616" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$d\sin\alpha = n\lambda$</div></foreignObject>
   <foreignObject x="319" y="618" width="43" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{hila}$</div></foreignObject>
   <foreignObject x="58" y="668" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$I = I_0\cos^2\theta$</div></foreignObject>
   <foreignObject x="248" y="670" width="114" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{polarisaatio}$</div></foreignObject>
@@ -184,14 +184,14 @@ Tästä saadaan vastaus alun kysymykseen. Kaapelia pitkin siirretään mantereel
 ### Magneettikenttä ja voimat
 
 ```kaavat
-varattuun hiukkaseen kohdistuva magneettinen voima :: F = qvB\sin\alpha
-varatun hiukkasen ympyräradan säde magneettikentässä :: r = \frac{mv}{qB}
-suoraan johtimeen kohdistuva magneettinen voima :: F = IlB\sin\alpha
+varattuun hiukkaseen kohdistuva magneettinen voima :: F_\text{M} = QvB_\perp
+varatun hiukkasen ympyräradan säde magneettikentässä :: r = \frac{mv}{QB}
+suoraan johtimeen kohdistuva magneettinen voima :: F_\text{M} = I\ell B_\perp
 suoran virtajohtimen magneettivuon tiheys :: B = \frac{\mu_0 I}{2\pi r}
-pitkän käämin magneettivuon tiheys :: B = \mu_0 \frac{NI}{l}
+pitkän käämin magneettivuon tiheys :: B = N\,\frac{\mu_0}{\ell}\,I
 ```
 
-missä $q$ on varaus ($\text{C}$), $v$ vauhti ($\text{m/s}$), $B$ magneettivuon tiheys ($\text{T}$), $\alpha$ nopeuden tai johtimen ja kentän välinen kulma, $m$ massa ($\text{kg}$), $r$ ympyräradan säde tai etäisyys johtimesta ($\text{m}$), $I$ virta ($\text{A}$), $l$ johtimen tai käämin pituus ($\text{m}$), $N$ kierrosten lukumäärä ja $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$. Säteen kaava pätee, kun nopeus on kohtisuorassa homogeenista kenttää vastaan ja pieni valon nopeuteen verrattuna. Magneettinen voima ei muuta vauhtia. Johtimen kaava pätee pitkälle suoralle johtimelle ja käämin kaava pitkän käämin keskelle.
+missä $F_\text{M}$ on magneettinen voima ($\text{N}$), $Q$ varaus ($\text{C}$), $v$ vauhti ($\text{m/s}$), $B$ magneettivuon tiheys ($\text{T}$), $B_\perp = B\sin\alpha$ sen nopeutta tai johdinta vastaan kohtisuora komponentti, kun $\alpha$ on nopeuden tai johtimen ja kentän välinen kulma, $m$ massa ($\text{kg}$), $r$ ympyräradan säde tai etäisyys johtimesta ($\text{m}$), $I$ virta ($\text{A}$), $\ell$ johtimen tai käämin pituus ($\text{m}$), $N$ kierrosten lukumäärä ja $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$. Säteen kaava pätee, kun nopeus on kohtisuorassa homogeenista kenttää vastaan ja pieni valon nopeuteen verrattuna. Magneettinen voima ei muuta vauhtia. Johtimen kaava pätee pitkälle suoralle johtimelle ja käämin kaava pitkän käämin keskelle.
 
 <svg data-fig="ympyra" viewBox="0 0 600 420" role="img" aria-label="Kaavakuva: positiivinen hiukkanen homogeenisessa magneettikentässä, joka osoittaa paperiin sisään (vihreät ristit). Hiukkasen rata on katkoviivalla piirretty ympyrä, jota se kiertää vastapäivään. Neljässä radan kohdassa sininen nopeusnuoli on radan suuntainen ja punainen magneettisen voiman nuoli osoittaa ympyrän keskipisteeseen, kohtisuoraan nopeutta vastaan. Säde r on merkitty keskipisteestä rataan." style="max-width:100%;font-size:24px">
   <line x1="33" y1="27" x2="47" y2="41" stroke="#2b8a3e" stroke-width="2.4" stroke-linecap="butt"/>
@@ -289,26 +289,26 @@ missä $q$ on varaus ($\text{C}$), $v$ vauhti ($\text{m/s}$), $B$ magneettivuon 
 
 ```kaavat
 käämiin indusoituva jännite :: e = -N\frac{\Delta\Phi}{\Delta t}
-generaattorissa käämiin indusoituvan sinimuotoisen vaihtojännitteen huippuarvo :: e_0 = NBA \cdot 2\pi f
-sinimuotoisen vaihtojännitteen tehollinen arvo :: U = \frac{U_0}{\sqrt{2}}
-muuntaja :: \frac{U_1}{U_2} = \frac{N_1}{N_2} = \frac{I_2}{I_1}
+generaattorissa käämiin indusoituvan sinimuotoisen vaihtojännitteen huippuarvo :: u_0 = NAB\cdot 2\pi f
+sinimuotoisen vaihtojännitteen tehollinen arvo :: U_\text{eff} = \frac{u_0}{\sqrt{2}}
+muuntaja :: \frac{N_1}{N_2} = \frac{U_1}{U_2} \approx \frac{I_2}{I_1}
 siirtojohdon tehohäviö :: P_\text{h} = RI^2
 ```
 
-missä $e$ on induktiojännite ($\text{V}$), $\Phi = BA$ magneettivuo ($\text{Wb}$), kun kenttä on kohtisuorassa pintaa $A$ vastaan, $e_0$ generaattorin jännitteen huippuarvo, $f$ pyörimistaajuus ($\text{Hz}$), $U$ ja $U_0$ tehollinen arvo ja huippuarvo, indeksit $1$ ja $2$ muuntajan ensiö- ja toisiopuoli ja $P_\text{h}$ siirtojohdon häviöteho, kun $I = \tfrac{P}{U}$. Miinusmerkki on Lenzin laki: induktiovirta vastustaa vuon muutosta. Kentässä liikkuvan tangon jännite on $e = vBl$. Muuntajan yhtälö koskee ideaalista muuntajaa ja vaihtojännitettä.
+missä $e$ on induktiojännite ($\text{V}$), $\Phi = BA$ magneettivuo ($\text{Wb}$), kun kenttä on kohtisuorassa pintaa $A$ vastaan, $u_0$ generaattorin jännitteen huippuarvo, $f$ pyörimistaajuus ($\text{Hz}$), $U_\text{eff}$ ja $u_0$ tehollinen arvo ja huippuarvo, indeksit $1$ ja $2$ muuntajan ensiö- ja toisiopuoli ja $P_\text{h}$ siirtojohdon häviöteho, kun $I = \tfrac{P}{U}$. Miinusmerkki on Lenzin laki: induktiovirta vastustaa vuon muutosta. Kentässä liikkuvan tangon jännite on $e = vBl$. Muuntajan yhtälö koskee vaihtojännitettä; virtojen suhde on yhtäsuuruus vain ideaalisessa, häviöttömässä muuntajassa.
 
 ### Valo
 
 ```kaavat
 aaltoliikkeen perusyhtälö :: c = f\lambda
-Wienin siirtymälaki :: \lambda_\text{max} T = b
-taittumislaki (Snellin laki) :: n_1\sin\alpha_1 = n_2\sin\alpha_2
+Wienin siirtymälaki :: \lambda_\text{max} = \frac{b}{T}
+taittumislaki (Snellin laki) :: \frac{\sin\alpha_1}{\sin\alpha_2} = \frac{v_1}{v_2} = \frac{n_2}{n_1}
 kokonaisheijastuksen rajakulma :: \sin\alpha_\text{r} = \frac{n_2}{n_1}
-hilayhtälö :: d\sin\theta = k\lambda
+hilayhtälö :: d\sin\alpha = n\lambda
 Malusin laki :: I = I_0\cos^2\theta
 ```
 
-missä $c = 3{,}00 \cdot 10^8\,\text{m/s}$, $f$ taajuus, $\lambda$ aallonpituus, $T$ absoluuttinen lämpötila ($\text{K}$), $b = 2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}$, $n = \tfrac{c}{v}$ taitekerroin, $\alpha$ kulmat normaalista, $\alpha_\text{r}$ rajakulma, kun $n_1 > n_2$, $d$ hilavakio, $\theta$ hilassa maksimin suunta, $k = 0, 1, 2, \ldots$ ja $I_0$ polarisoituneen valon intensiteetti ennen analysaattoria. Malusin laissa $\theta$ on polarisaation suunnan ja analysaattorin läpäisysuunnan välinen kulma. Ohuessa kalvossa matkaero on $2nd$, kun valo tulee lähes kohtisuoraan. Kun vain toinen heijastus kääntää aallon, $2nd = \left(k + \tfrac12\right)\lambda$ antaa vahvistavan interferenssin; kun molemmat kääntävät, $2nd = k\lambda$.
+missä $c = 3{,}00 \cdot 10^8\,\text{m/s}$, $f$ taajuus, $\lambda$ aallonpituus, $T$ absoluuttinen lämpötila ($\text{K}$), $b = 2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}$, $n = \tfrac{c}{v}$ taitekerroin ja $v$ valon nopeus aineessa, $\alpha_1$ ja $\alpha_2$ tulo- ja taitekulma normaalista, $\alpha_\text{r}$ rajakulma, kun $n_1 > n_2$, $d$ hilavakio, hilayhtälössä $\alpha$ maksimin suunta ja $n = 0, 1, 2, \ldots$ kertaluku ja $I_0$ polarisoituneen valon intensiteetti ennen analysaattoria. Malusin laissa $\theta$ on polarisaation suunnan ja analysaattorin läpäisysuunnan välinen kulma. Ohuessa kalvossa matkaero on $2nd$, kun valo tulee lähes kohtisuoraan. Kun vain toinen heijastus kääntää aallon, $2nd = \left(k + \tfrac12\right)\lambda$ antaa vahvistavan interferenssin; kun molemmat kääntävät, $2nd = k\lambda$.
 
 ## Yleisiä virheitä {Virheet}
 

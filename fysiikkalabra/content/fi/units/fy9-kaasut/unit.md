@@ -197,7 +197,7 @@ Kokeen kaasutehtävissä tarvitaan kaksi tarkistusta ennen lukuja. **Lämpötila
   <line x1="54" y1="308" x2="362" y2="308" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="58" y="319.5" width="74" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$pV = nRT$</div></foreignObject>
   <foreignObject x="257" y="322" width="105" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{tilanyhtälö}$</div></foreignObject>
-  <foreignObject x="58" y="353.5" width="172" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$p_1V_1/T_1 = p_2V_2/T_2$</div></foreignObject>
+  <foreignObject x="58" y="353.5" width="117" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$pV/T = \text{vakio}$</div></foreignObject>
   <foreignObject x="274" y="356" width="88" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{sama kaasu}$</div></foreignObject>
   <foreignObject x="58" y="387.5" width="139" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$T = \theta + 273{,}15\,\text{K}$</div></foreignObject>
   <foreignObject x="283" y="390" width="79" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{kelvinit}$</div></foreignObject>
@@ -205,7 +205,7 @@ Kokeen kaasutehtävissä tarvitaan kaksi tarkistusta ennen lukuja. **Lämpötila
   <rect x="44" y="432" width="328" height="150" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
   <foreignObject x="58" y="441.5" width="172" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\textbf{lämpövoimakone}$</div></foreignObject>
   <line x1="54" y1="474" x2="362" y2="474" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="485.5" width="84" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$W_\text{k} = p\,\Delta V$</div></foreignObject>
+  <foreignObject x="58" y="485.5" width="74" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$W = p\,\Delta V$</div></foreignObject>
   <foreignObject x="274" y="488" width="88" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{kaasun työ}$</div></foreignObject>
   <foreignObject x="58" y="519.5" width="84" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$W = Q_1 - Q_2$</div></foreignObject>
   <foreignObject x="266" y="522" width="96" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{säilyminen}$</div></foreignObject>
@@ -255,10 +255,10 @@ voiman aiheuttama paine :: p = \frac{F}{A}
 missä $p$ on paine (Pa), $F$ pintaa vastaan kohtisuora voima (N) ja $A$ pinta-ala (m²). Levossa olevassa nesteessä syvyydellä $h$
 
 ```kaavat
-hydrostaattinen paine :: p = p_0 + \rho g h
+hydrostaattinen paine :: p = \rho g h
 ```
 
-missä $p_0$ on paine pinnalla, yleensä ilmanpaine noin $101\,\text{kPa}$, $\rho$ nesteen tiheys (kg/m³) ja $g = 9{,}81\,\text{m/s}^2$. Termi $\rho g h$ on ylipaine, ja se riippuu vain syvyydestä ja tiheydestä, ei astian muodosta. Paineen aiheuttama voima on aina kohtisuorassa pintaa vastaan.
+missä $\rho$ on nesteen tiheys (kg/m³) ja $g = 9{,}81\,\text{m/s}^2$. Hydrostaattinen paine on ylipaine, ja se riippuu vain syvyydestä ja tiheydestä, ei astian muodosta. Kokonaispaine syvyydellä $h$ on $p_0 + \rho g h$, missä $p_0$ on paine pinnalla, yleensä ilmanpaine noin $101\,\text{kPa}$. Paineen aiheuttama voima on aina kohtisuorassa pintaa vastaan.
 
 ### Kaasun tila
 
@@ -269,10 +269,10 @@ ideaalikaasun tilanyhtälö :: pV = nRT
 missä $V$ on tilavuus (m³), $n$ ainemäärä (mol), $R = 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$ ja $T$ lämpötila kelvineinä. Ainemäärä saadaan massasta, $n = m/M$, missä $M$ on moolimassa. Yhtälö pätee harvalle kaasulle, kun paine ei ole kovin suuri eikä lämpötila kovin matala. Kun kaasun määrä pysyy samana,
 
 ```kaavat
-tilanyhtälö vakioainemäärälle :: \frac{p_1 V_1}{T_1} = \frac{p_2 V_2}{T_2}
+tilanyhtälö vakioainemäärälle :: \frac{pV}{T} = \text{vakio}
 ```
 
-ja siitä saadaan erikoistapaukset: vakiolämpötilassa Boylen laki $p_1V_1 = p_2V_2$, vakiopaineessa $V \propto T$ ja vakiotilavuudessa $p \propto T$. Kelvinlämpötila on
+eli kahdessa tilassa $\tfrac{p_1 V_1}{T_1} = \tfrac{p_2 V_2}{T_2}$. Siitä saadaan erikoistapaukset: vakiolämpötilassa Boylen laki $p_1V_1 = p_2V_2$, vakiopaineessa $V \propto T$ ja vakiotilavuudessa $p \propto T$. Kelvinlämpötila on
 
 ```kaavat
 lämpötila kelvineinä :: T = \theta + 273{,}15\,\text{K}
@@ -282,19 +282,19 @@ missä $\theta$ on celsiuslämpötilan lukuarvo. Absoluuttinen nollapiste saadaa
 
 ### Kaasun työ ja lämpövoimakone
 
-Vakiopaineessa laajeneva kaasu tekee työn
+Vakiopaineessa laajeneva kaasu tekee työn, ja puristettuun kaasuun tehdään työ
 
 ```kaavat
-kaasun tekemä laajenemistyö / kaasuun tehty puristustyö :: W_\text{k} = p\,\Delta V
+kaasun tekemä laajenemistyö / kaasuun tehty puristustyö :: W = p\Delta V
 ```
 
-missä $\Delta V$ on tilavuuden muutos (m³); työ on ($V$, $p$)-kuvaajan alle jäävä pinta-ala. Kaasun sisäenergia muuttuu ensimmäisen pääsäännön mukaan
+missä $\Delta V$ on tilavuuden muutoksen suuruus (m³); työ on ($V$, $p$)-kuvaajan alle jäävä pinta-ala. Kaasun sisäenergia muuttuu ensimmäisen pääsäännön mukaan
 
 ```kaavat
-lämpöopin 1. pääsääntö :: \Delta U = Q - W_\text{k}
+lämpöopin 1. pääsääntö :: \Delta U = Q + W
 ```
 
-missä $Q$ on kaasuun siirtynyt lämpö (J) ja $W_\text{k}$ kaasun tekemä työ. Lämpövoimakone ottaa kierroksessa kuumasta lähteestä lämmön $Q_1$, tekee työn $W$ ja luovuttaa lämmön $Q_2$ kylmempään ympäristöön. Energia säilyy, joten
+missä $Q$ on kaasuun siirtynyt lämpö (J) ja $W$ kaasuun tehty työ (J). Puristuksessa $W = p\Delta V$ on positiivinen. Laajeneva kaasu tekee työn $p\Delta V$ itse, joten silloin $W = -p\Delta V$ ja sisäenergia pienenee tämän verran. Lämpövoimakone ottaa kierroksessa kuumasta lähteestä lämmön $Q_1$, tekee työn $W$ ja luovuttaa lämmön $Q_2$ kylmempään ympäristöön. Energia säilyy, joten
 
 ```kaavat
 lämpövoimakoneen tekemä työ :: W = Q_1 - Q_2

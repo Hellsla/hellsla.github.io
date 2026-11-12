@@ -115,9 +115,9 @@ def kartta():
             "per 2 L. Ääni, aalto ilmassa: huojunta f h = f 1 miinus f 2 itseisarvona, Dopplerin ilmiö liikkuvalle lähteelle ja intensiteettitaso "
             "L = 10 desibeliä kertaa logaritmi I per I 0.", width=380, size=20)
     groups = [
-        ("värähtelijät", "toistuva liike", [(r"F = -kx", "jousen voima"), (r"T = 2\pi\sqrt{m/k}", "jousi"), (r"T = 2\pi\sqrt{l/g}", "heiluri")]),
+        ("värähtelijät", "toistuva liike", [(r"\overline{F} = -k\overline{x}", "jousen voima"), (r"T = 2\pi\sqrt{m/k}", "jousi"), (r"T = 2\pi\sqrt{l/g}", "heiluri")]),
         ("aallot", "värähtely etenee", [(r"v = f\lambda", "eteneminen"), (r"\Delta s = n\lambda", "vahvistava"), (r"f_n = n \cdot v/(2L)", "seisova aalto")]),
-        ("ääni", "aalto ilmassa", [(r"f_\text{h} = |f_1 - f_2|", "huojunta"), (r"f = f_0 \cdot v/(v \mp v_\text{s})", "Doppler"),
+        ("ääni", "aalto ilmassa", [(r"f_\text{H} = |f_1 - f_2|", "huojunta"), (r"f = f_0\,v/(v - v_\text{L})", "Doppler"),
                   (r"L = 10\,\text{dB} \cdot \lg(I/I_0)", "taso")]),
     ]
     hub_y, hub_h, x_box, gh, top = 8, 72, 44, 188, 100

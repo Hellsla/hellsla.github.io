@@ -432,11 +432,11 @@ Moduulin ilmiöt yhdistää **kvantittunut energia**. Valo vaihtaa energiaa aine
   <foreignObject x="58" y="314" width="60" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{ydin}$</div></foreignObject>
   <foreignObject x="327" y="316" width="35" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{MeV}$</div></foreignObject>
   <line x1="54" y1="346" x2="362" y2="346" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="361" width="167" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$N = N_0 \left(\tfrac12\right)^{t/T_{1/2}}$</div></foreignObject>
+  <foreignObject x="58" y="360" width="91" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$N = N_0 e^{-\lambda t}$</div></foreignObject>
   <foreignObject x="266" y="362" width="96" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{hajoaminen}$</div></foreignObject>
   <foreignObject x="58" y="412" width="50" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$A = \lambda N$</div></foreignObject>
   <foreignObject x="257" y="414" width="105" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{aktiivisuus}$</div></foreignObject>
-  <foreignObject x="58" y="464" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$Q = \Delta m\,c^2$</div></foreignObject>
+  <foreignObject x="58" y="464" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$E = \Delta m\,c^2$</div></foreignObject>
   <foreignObject x="292" y="466" width="70" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{reaktio}$</div></foreignObject>
   <line x1="24" y1="530" x2="44" y2="530" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="44" y="508" width="328" height="188" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
@@ -445,7 +445,7 @@ Moduulin ilmiöt yhdistää **kvantittunut energia**. Valo vaihtaa energiaa aine
   <line x1="54" y1="550" x2="362" y2="550" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="58" y="564" width="60" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$D = E/m$</div></foreignObject>
   <foreignObject x="239" y="566" width="123" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{absorboitunut}$</div></foreignObject>
-  <foreignObject x="58" y="617" width="74" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$H_\text{T} = w_\text{R} D_\text{T}$</div></foreignObject>
+  <foreignObject x="58" y="616" width="60" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$H = w_\text{R} D$</div></foreignObject>
   <foreignObject x="266" y="618" width="96" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{painotettu}$</div></foreignObject>
   <foreignObject x="58" y="668" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\dot{H} \propto 1/r^2$</div></foreignObject>
   <foreignObject x="283" y="670" width="79" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{etäisyys}$</div></foreignObject>
@@ -508,7 +508,7 @@ Tästä saadaan vastaus alun kysymykseen. Kasvivalon punaisen fotonin ($660\,\te
 fotonin energia :: E = hf = \frac{hc}{\lambda}
 valosähköinen ilmiö :: hf = W + E_\text{k,max}
 atomin lähettämän tai absorboiman fotonin energia :: hf = E_\text{y} - E_\text{a}
-fotonin liikemäärä :: p = \frac{h}{\lambda}
+fotonin liikemäärä :: p = \frac{E}{c} = \frac{h}{\lambda}
 ```
 
 missä $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ on Planckin vakio, $f$ taajuus, $\lambda$ aallonpituus, $W$ metallin irrotustyö, $E_\text{k,max}$ irtoavan elektronin suurin liike-energia, $E_\text{y}$ ja $E_\text{a}$ ylemmän ja alemman energiatilan energiat ja $p$ fotonin liikemäärä. Elektroneja irtoaa vain, kun $hf \geq W$. Atomi absorboi vain fotonin, jonka energia on täsmälleen tasojen erotus, ellei fotoni ionisoi atomia. Vedyllä $E_n = -\tfrac{13{,}6\,\text{eV}}{n^2}$. LEDin kynnysjännitteellä $eU_\text{k} \approx hf$. Muunnokset: $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$ ja $hc \approx 1240\,\text{eV}\,\text{nm}$.
@@ -516,13 +516,14 @@ missä $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ on Planckin vakio, $f$ t
 ### Ydin ja hajoaminen
 
 ```kaavat
-hajoamislaki :: N = N_0 \left(\tfrac12\right)^{t/T_{1/2}}
+hajoamislaki :: N = N_0 e^{-\lambda t}
 aktiivisuus :: A = \lambda N
 hajoamisvakio :: \lambda = \frac{\ln 2}{T_{1/2}}
-ydinreaktiossa vapautuva energia :: Q = (m_\text{alku} - m_\text{loppu})\,c^2
+ydinreaktion massaero :: \Delta m = m_\text{lähtöaineet} - m_\text{tuotteet}
+ydinreaktiossa vapautuva energia :: E = \Delta m c^2
 ```
 
-missä $N$ on hajoamattomien ytimien määrä hetkellä $t$, $T_{1/2}$ puoliintumisaika, $A$ aktiivisuus ($\text{Bq}$), $\lambda$ hajoamisvakio ja $Q$ reaktioenergia. Hajoamisyhtälössä massaluku ja varausluku säilyvät: alfahajoamisessa $Z$ pienenee kahdella ja $A$ neljällä, beeta miinus -hajoamisessa $Z$ kasvaa yhdellä. Hajoamislaki kuvaa suurta ydinjoukkoa. Sidosenergia on $E_\text{B} = \Delta m\,c^2$, ja $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$. Fissio ja fuusio vapauttavat energiaa, koska tuotteiden sidosenergia nukleonia kohti on suurempi.
+missä $N$ on hajoamattomien ytimien määrä hetkellä $t$, $N_0$ määrä alussa, $T_{1/2}$ puoliintumisaika, $A$ aktiivisuus ($\text{Bq}$), $\lambda$ hajoamisvakio, $\Delta m$ massaero ja $E$ reaktiossa vapautuva energia. Koska $e^{-\lambda T_{1/2}} = \tfrac12$, hajoamislaki voidaan kirjoittaa myös $N = N_0 \left(\tfrac12\right)^{t/T_{1/2}}$, ja sama laki pätee aktiivisuudelle, $A = A_0 e^{-\lambda t}$. Hajoamisyhtälössä massaluku ja varausluku säilyvät: alfahajoamisessa $Z$ pienenee kahdella ja $A$ neljällä, beeta miinus -hajoamisessa $Z$ kasvaa yhdellä. Hajoamislaki kuvaa suurta ydinjoukkoa. Sidosenergia on $E_\text{B} = \Delta m\,c^2$, ja $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$. Fissio ja fuusio vapauttavat energiaa, koska tuotteiden sidosenergia nukleonia kohti on suurempi.
 
 <svg data-fig="puolitus" viewBox="0 0 600 380" role="img" aria-label="Kuvaaja mittakaavassa: jäljellä oleva osuus puoliintumisaikojen tai puoliintumispaksuuksien lukumäärän n funktiona, n nollasta viiteen. Käyrä alkaa arvosta 1 ja laskee yhä loivemmin. Katkoviivat näyttävät, että n = 1 antaa puolet, n = 2 neljäsosan ja n = 3 kahdeksasosan. Käyrä lähestyy nollaa mutta ei saavuta sitä: hajoamisella ja gammasäteilyn vaimenemisella ei ole loppupistettä." style="max-width:100%;font-size:26px">
   <line x1="174" y1="312" x2="174" y2="62" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -585,13 +586,13 @@ missä $N$ on hajoamattomien ytimien määrä hetkellä $t$, $T_{1/2}$ puoliintu
 
 ```kaavat
 absorboitunut annos :: D = \frac{E}{m}
-ekvivalenttiannos :: H_\text{T} = w_\text{R} D_\text{T}
+ekvivalenttiannos :: H = w_\text{R} D
 annos annosnopeudesta :: H = \dot{H} t
 annosnopeus etäisyyden funktiona :: \dot{H}_2 = \dot{H}_1 \left(\frac{r_1}{r_2}\right)^2
-heikennyslaki :: \dot{H} = \dot{H}_0 \left(\tfrac12\right)^{d/d_{1/2}}
+heikennyslaki :: I = I_0 e^{-\mu x}
 ```
 
-missä $D$ on absorboitunut annos ($\text{Gy}$), $E$ absorboitunut energia, $m$ kudoksen massa, $H_\text{T}$ ekvivalenttiannos ($\text{Sv}$), $w_\text{R}$ säteilyn painotuskerroin (alfa $20$, beeta ja gamma $1$), $\dot{H}$ annosnopeus, $t$ aika, $r$ etäisyys ja $d_{1/2}$ puoliintumispaksuus. Neliölaki pätee pistemäiselle lähteelle, kun ilma ei vaimenna säteilyä. Puoliintumispaksuus koskee fotonisäteilyä, koska alfa- ja beetasäteilyllä on kantama. Galaksien etääntymisnopeus on $v = H_0 d$, ja pienellä punasiirtymällä $v = cz$.
+missä $D$ on absorboitunut annos ($\text{Gy}$), $E$ absorboitunut energia, $m$ kudoksen massa, $H$ ekvivalenttiannos ($\text{Sv}$), $w_\text{R}$ säteilyn painotuskerroin (alfa $20$, beeta ja gamma $1$), $\dot{H}$ annosnopeus, $t$ aika, $r$ etäisyys, $I_0$ väliaineen pintaan tulevan ja $I$ läpi tulleen säteilyn intensiteetti, $\mu$ heikennyskerroin ($1/\text{m}$) ja $x$ väliaineen paksuus. Puoliintumispaksuus on $d_{1/2} = \tfrac{\ln 2}{\mu}$, joten annosnopeus pienenee suojan takana kuten $\dot{H} = \dot{H}_0 \left(\tfrac12\right)^{x/d_{1/2}}$. Neliölaki pätee pistemäiselle lähteelle, kun ilma ei vaimenna säteilyä. Puoliintumispaksuus koskee fotonisäteilyä, koska alfa- ja beetasäteilyllä on kantama. Galaksien etääntymisnopeus on $v = H_0 d$, ja pienellä punasiirtymällä $v = cz$.
 
 ## Yleisiä virheitä {Virheet}
 

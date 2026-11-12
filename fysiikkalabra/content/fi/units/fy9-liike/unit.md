@@ -299,10 +299,10 @@ Tästä saadaan vastaus alun kysymykseen. Nopeus kertoo, montako metriä vaunu k
 Keskinopeus on siirtymä jaettuna siihen kuluneella ajalla:
 
 ```kaavat
-keskinopeus :: v_\text{ka} = \frac{\Delta x}{\Delta t}
+keskinopeus :: \overline{v}_\text{k} = \frac{\Delta\overline{x}}{\Delta t}
 ```
 
-missä $\Delta x = x_2 - x_1$ on siirtymä ($\text{m}$) ja $\Delta t$ aika ($\text{s}$). Kun nopeus $v$ on vakio ja kappale on hetkellä $t = 0$ paikassa $x_0$,
+missä $\Delta\overline{x}$ on siirtymä ($\text{m}$) ja $\Delta t$ kulunut aika ($\text{s}$). Suoraviivaisessa liikkeessä riittää etumerkillinen siirtymä $\Delta x = x_2 - x_1$, ja keskinopeus on $v_\text{k} = \tfrac{\Delta x}{\Delta t}$. Kun nopeus $v$ on vakio ja kappale on hetkellä $t = 0$ paikassa $x_0$,
 
 ```kaavat
 paikka tasaisessa suoraviivaisessa liikkeessä :: x = x_0 + v\,t
@@ -315,7 +315,7 @@ Tämä on $(t,x)$-kuvaajan suora: $x_0$ on leikkauskohta paikka-akselilla ja $v$
 Kiihtyvyys on nopeuden muutos aikaa kohti:
 
 ```kaavat
-keskikiihtyvyys :: a = \frac{\Delta v}{\Delta t}
+keskikiihtyvyys :: \overline{a}_\text{k} = \frac{\Delta\overline{v}}{\Delta t}
 ```
 
 Kun kiihtyvyys on vakio ja liike suoraviivaista, nopeus ja paikka hetkellä $t$ ovat

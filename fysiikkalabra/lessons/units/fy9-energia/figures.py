@@ -101,7 +101,7 @@ def kartta():
                   (r"1\,\text{kWh} = 3{,}6\,\text{MJ}", "kilowattitunti")]),
         ("hyötysuhde", [(r"\eta = E_\text{a}/E_\text{o}", "määritelmä"), (r"E_\text{o} = E_\text{a} + E_\text{h}", "häviöt"),
                         (r"\eta = \eta_1\,\eta_2\,\eta_3", "energiaketju")]),
-        ("energian lähde", [(r"E = Hm", "polttoaine"), (r"W = Fs", "työ"), (r"W = mgh", "nostotyö")]),
+        ("energian lähde", [(r"Q = Hm", "polttoaine"), (r"W = Fs", "työ"), (r"W = mgh", "nostotyö")]),
     ]
     hub_y, hub_h, x_box, gh, top = 8, 72, 44, 150, 100
     spine = 24

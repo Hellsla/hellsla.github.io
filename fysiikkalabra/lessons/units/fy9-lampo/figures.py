@@ -96,7 +96,7 @@ def kartta():
     groups = [
         ("lämpeneminen", [(r"Q = cm\Delta T", "olomuoto sama"), (r"T = \theta + 273{,}15", "kelvinit")]),
         ("olomuodon muutos", [(r"Q = sm", "sulaminen"), (r"Q = rm", "höyrystyminen")]),
-        ("lämpölaajeneminen", [(r"\Delta L = \alpha L_0\,\Delta T", "pituus"), (r"\Delta V = \gamma V_0\,\Delta T", "tilavuus")]),
+        ("lämpölaajeneminen", [(r"l = l_0(1 + \alpha\Delta T)", "pituus"), (r"V = V_0(1 + \gamma\Delta T)", "tilavuus")]),
         ("lämmön siirtyminen", [(r"P = UA\,\Delta T", "seinän läpi"), (r"\text{johtuminen, konvektio, säteily}", "")]),
     ]
     hub_y, hub_h, x_box, gh, top, gap = 8, 76, 44, 120, 104, 12

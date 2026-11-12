@@ -106,8 +106,8 @@ def kartta():
             "on eeta rho Q g h.", width=380, size=20)
     groups = [
         ("energia", [(r"E_\text{k} = \tfrac12 mv^2", "liike-energia"), (r"E_\text{p} = mgh", "potentiaalienergia"),
-                     (r"E_\text{mek,1} + W_\text{muut} = E_\text{mek,2}", "")]),
-        ("liikemäärä", [(r"\overline{p} = m\overline{v}", "määritelmä"), (r"\Sigma\overline{F}\,\Delta t = \Delta\overline{p}", "impulssi"),
+                     (r"E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}", "")]),
+        ("liikemäärä", [(r"\overline{p} = m\overline{v}", "määritelmä"), (r"\overline{I} = \Delta\overline{p}", "impulssi"),
                         (r"\overline{p}_\text{ennen} = \overline{p}_\text{jälkeen}", "säilyminen")]),
         ("sovellukset", [(r"\text{törmäys: } p \text{ säilyy, } E_\text{k} \text{ ei aina}", ""),
                       (r"s_\text{p} = v_0 t_\text{r} + v_0^2/(2a)", "pysähtyminen"), (r"P = \eta\rho Qgh", "vesivoima")]),

@@ -137,9 +137,9 @@ Kaikki tunnin tehtävät palautuvat energian säilymiseen. Aineeseen siirtyvä l
   <rect x="44" y="368" width="328" height="120" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
   <foreignObject x="58" y="377.5" width="205" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\textbf{lämpölaajeneminen}$</div></foreignObject>
   <line x1="54" y1="410" x2="362" y2="410" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="419.5" width="106" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\Delta L = \alpha L_0\,\Delta T$</div></foreignObject>
+  <foreignObject x="58" y="419.5" width="128" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$l = l_0(1 + \alpha\Delta T)$</div></foreignObject>
   <foreignObject x="298" y="421" width="64" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{pituus}$</div></foreignObject>
-  <foreignObject x="58" y="453.5" width="106" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\Delta V = \gamma V_0\,\Delta T$</div></foreignObject>
+  <foreignObject x="58" y="453.5" width="128" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$V = V_0(1 + \gamma\Delta T)$</div></foreignObject>
   <foreignObject x="279" y="455" width="83" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{tilavuus}$</div></foreignObject>
   <line x1="24" y1="522" x2="44" y2="522" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="44" y="500" width="328" height="120" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
@@ -267,11 +267,11 @@ Kun jäätä ja vettä sekoitetaan, verrataan ensin, riittääkö lämpö, jonka
 ### Laajeneminen ja lämmön siirtyminen
 
 ```kaavat
-pituuden lämpölaajeneminen :: \Delta L = \alpha L_0 \Delta T
-tilavuuden lämpölaajeneminen :: \Delta V = \gamma V_0 \Delta T
+pituuden lämpölaajeneminen :: l = l_0(1 + \alpha\Delta T)
+tilavuuden lämpölaajeneminen :: V = V_0(1 + \gamma\Delta T)
 ```
 
-missä $\alpha$ ja $\gamma$ ovat pituuden ja tilavuuden lämpötilakertoimet ($1/\text{K}$) ja $L_0$ ja $V_0$ alkuperäinen pituus ja tilavuus. Kaavat pätevät kiinteille aineille noin $100\,\text{K}$:n lämpötilan muutokseen asti, ja nesteen $\gamma$ on käyttökelpoinen vain taulukon lämpötilan lähellä. Vesi on poikkeus: sen tiheys on suurin noin $4\,{}^\circ\text{C}$:ssa.
+missä $\alpha$ ja $\gamma$ ovat pituuden ja tilavuuden lämpötilakertoimet ($1/\text{K}$), $l_0$ ja $V_0$ alkuperäinen pituus ja tilavuus ja $l$ ja $V$ pituus ja tilavuus lämpötilan muutoksen $\Delta T$ jälkeen. Muutokset ovat $\Delta l = \alpha l_0 \Delta T$ ja $\Delta V = \gamma V_0 \Delta T$. Kaavat pätevät kiinteille aineille noin $100\,\text{K}$:n lämpötilan muutokseen asti, ja nesteen $\gamma$ on käyttökelpoinen vain taulukon lämpötilan lähellä. Vesi on poikkeus: sen tiheys on suurin noin $4\,{}^\circ\text{C}$:ssa.
 
 Lämpö siirtyy johtumalla, konvektiona ja säteilynä, nettomääräisesti lämpimämmästä kappaleesta kylmempään. Rakennusosan läpi johtuva teho on
 

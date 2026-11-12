@@ -110,9 +110,9 @@ def kartta():
     groups = [
         ("tasapaino", [(r"M = Fr", "momentti"), (r"\Sigma\overline{F} = \overline{0}", "ei etene"),
                        (r"\Sigma M = 0", "ei kierry")]),
-        ("ympyräliike", [(r"v = 2\pi r/T", "ratanopeus"), (r"a_\text{n} = v^2/r", "keskipisteeseen"),
+        ("ympyräliike", [(r"v = \omega r", "ratanopeus"), (r"a_\text{n} = v^2/r", "keskipisteeseen"),
                          (r"\Sigma F = mv^2/r", "liikeyhtälö")]),
-        ("gravitaatio", [(r"F = \gamma m_1 m_2/r^2", "vetovoima"), (r"g = \gamma M/r^2", "kenttä"),
+        ("gravitaatio", [(r"F_\text{g} = \gamma m_1 m_2/r^2", "vetovoima"), (r"g = \gamma M/r^2", "kenttä"),
                          (r"v = \sqrt{\gamma M/r}", "satelliitti")]),
     ]
     hub_y, hub_h, x_box, gh, top = 8, 72, 44, 156, 100

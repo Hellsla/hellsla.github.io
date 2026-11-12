@@ -153,12 +153,12 @@ def kartta():
     """The concept map, stacked for a phone: the idea at the top (charge makes a field, F = qE), a spine down the left
     and four boxes, each with three laws and a grey word beside each."""
     groups = [
-        ("varaus ja voima", [(r"Q = ne", "alkeisvaraus"), (r"F = k\,|q_1 q_2|/r^2", "Coulomb"),
+        ("varaus ja voima", [(r"Q = ne", "alkeisvaraus"), (r"F_E = k\,Q_1 Q_2/r^2", "Coulomb"),
                              (r"\overline{F} = \overline{F}_1 + \overline{F}_2", "summa")]),
-        ("kenttä ja potentiaali", [(r"E = U/d", "homogeeninen"), (r"W = qU", "kentän työ"),
-                                   (r"\tfrac12 mv^2 = |q|U", "kiihdytys")]),
-        ("kondensaattori", [(r"C = Q/U", "kapasitanssi"), (r"C = \varepsilon_0\varepsilon_\text{r}A/d", "levyt"),
-                            (r"W = \tfrac12 CU^2", "energia")]),
+        ("kenttä ja potentiaali", [(r"U = Ed", "homogeeninen"), (r"W = QU", "kentän työ"),
+                                   (r"\tfrac12 mv^2 = |Q|U", "kiihdytys")]),
+        ("kondensaattori", [(r"Q = CU", "kapasitanssi"), (r"C = \varepsilon_0\varepsilon_\text{r}A/d", "levyt"),
+                            (r"E = \tfrac12 CU^2", "energia")]),
         ("komponentit ja turvallisuus", [(r"R = (U - U_\text{D})/I", "etuvastus"), (r"\eta = P/(GA)", "kenno"),
                                          (r"I = U/R", "kehon virta")]),
     ]

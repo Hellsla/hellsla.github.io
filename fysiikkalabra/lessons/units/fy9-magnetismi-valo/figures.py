@@ -109,11 +109,11 @@ def kartta():
             "taittumislaki n 1 sini alfa 1 = n 2 sini alfa 2, hilayhtälö d sini theeta = k lambda ja Malusin laki "
             "I = I 0 kertaa kosini toiseen theeta.", width=380, size=20)
     groups = [
-        ("voimat kentässä", "liike tai virta", [(r"F = qvB\sin\alpha", "varaus"), (r"F = IlB\sin\alpha", "johdin"),
+        ("voimat kentässä", "liike tai virta", [(r"F_\text{M} = QvB_\perp", "varaus"), (r"F_\text{M} = I\ell B_\perp", "johdin"),
                                                 (r"B = \mu_0 I/(2\pi r)", "johtimen kenttä")]),
-        ("induktio", "muuttuva vuo", [(r"e = -N\,\Delta\Phi/\Delta t", "induktiolaki"), (r"e_0 = NBA \cdot 2\pi f", "generaattori"),
-                                      (r"U_1/U_2 = N_1/N_2", "muuntaja")]),
-        ("valo", "sm-aalto", [(r"n_1\sin\alpha_1 = n_2\sin\alpha_2", "taittuminen"), (r"d\sin\theta = k\lambda", "hila"),
+        ("induktio", "muuttuva vuo", [(r"e = -N\,\Delta\Phi/\Delta t", "induktiolaki"), (r"u_0 = NAB \cdot 2\pi f", "generaattori"),
+                                      (r"N_1/N_2 = U_1/U_2", "muuntaja")]),
+        ("valo", "sm-aalto", [(r"\sin\alpha_1/\sin\alpha_2 = n_2/n_1", "taittuminen"), (r"d\sin\alpha = n\lambda", "hila"),
                               (r"I = I_0\cos^2\theta", "polarisaatio")]),
     ]
     hub_y, hub_h, x_box, gh, top = 8, 72, 44, 188, 100

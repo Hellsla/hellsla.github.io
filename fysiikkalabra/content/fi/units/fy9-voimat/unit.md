@@ -163,7 +163,7 @@ Kaikki tämän tunnin tehtävät ratkaistaan samalla tavalla: **ensin voimakuvio
   <rect x="44" y="306" width="328" height="150" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
   <foreignObject x="58" y="315.5" width="84" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\textbf{voimat}$</div></foreignObject>
   <line x1="54" y1="348" x2="362" y2="348" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="359.5" width="52" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$G = mg$</div></foreignObject>
+  <foreignObject x="58" y="359.5" width="74" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\overline{G} = m\overline{g}$</div></foreignObject>
   <foreignObject x="310" y="362" width="52" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{paino}$</div></foreignObject>
   <foreignObject x="58" y="393.5" width="63" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$F_\mu = \mu N$</div></foreignObject>
   <foreignObject x="266" y="396" width="96" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{liikekitka}$</div></foreignObject>
@@ -198,12 +198,12 @@ missä $\Sigma\overline{F}$ on kappaleeseen vaikuttavien voimien summa ($\text{N
 ### Paino, kitka ja rinne
 
 ```kaavat
-kappaleeseen vaikuttava painovoima Maan pinnalla :: G = mg
+kappaleeseen vaikuttava painovoima Maan pinnalla :: \overline{G} = m\overline{g}
 liukukitka :: F_\mu = \mu N
 lepokitka :: F_{\mu 0} \le \mu_0 N
 ```
 
-missä $g = 9{,}81\,\text{m/s}^2$, $N$ on tukivoima ($\text{N}$), $\mu$ liikekitkakerroin ja $\mu_0$ lepokitkakerroin. Lepokitka on vain niin suuri kuin tilanne vaatii, ja se vastustaa pintojen liukumista toistensa suhteen, ei aina liikettä. Kaavat ovat kuivien pintojen kokeellisia malleja. Voimakuvioissa $\overline{F}_\mu$ tarkoittaa kumpaa tahansa kitkaa, lepo- tai liikekitkaa.
+missä $\overline{g}$ on putoamiskiihtyvyys, $g = 9{,}81\,\text{m/s}^2$, joten painon suuruus on $G = mg$, $N$ on tukivoima ($\text{N}$), $\mu$ liikekitkakerroin ja $\mu_0$ lepokitkakerroin. Lepokitka on vain niin suuri kuin tilanne vaatii, ja se vastustaa pintojen liukumista toistensa suhteen, ei aina liikettä. Kaavat ovat kuivien pintojen kokeellisia malleja. Voimakuvioissa $\overline{F}_\mu$ tarkoittaa kumpaa tahansa kitkaa, lepo- tai liikekitkaa.
 
 Rinteessä, jonka kaltevuuskulma on $\alpha$, painon komponentit ovat $G_x = mg\sin\alpha$ rinnettä alas ja $G_y = mg\cos\alpha$ rinnettä kohti. Kun pintaa vastaan kohtisuorassa vaikuttavat vain paino ja tukivoima, $N = mg\cos\alpha$. Komponentit eivät ole uusia voimia: ne piirretään katkoviivoin ja korvaavat painon laskussa.
 
