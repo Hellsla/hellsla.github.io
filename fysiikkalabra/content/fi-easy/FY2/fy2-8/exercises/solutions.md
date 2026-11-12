@@ -205,7 +205,7 @@ c) Jos koko kivihiilisähkö korvattaisiin tuulella, uusi summa olisi $14\,700\,
 **Mallivastaus:** Päästö on sarakkeessa $m$. Vuosien $2020$ ja $2024$ ero on $520\,\text{kt} - 420\,\text{kt} = 100\,\text{kt}$. Se on kymmenkertainen epävarmuuteen $10\,\text{kt}$ verrattuna, joten pieneneminen on todennäköisesti todellista. Myös epävarmuusvälit $510$–$530\,\text{kt}$ ja $410$–$430\,\text{kt}$ ovat erillään. Ne eivät mene päällekkäin. Muut päätelmät eivät kestä. Ero $520\,\text{kt} - 515\,\text{kt} = 5\,\text{kt}$ jää epävarmuuden $10\,\text{kt}$ sisään. Siksi vuosien $2020$ ja $2021$ välistä pienenemistä ei voi osoittaa. Taulukossa ei ole tietoa polttoaineesta, joten syytä ei voi päätellä. Ennuste vuodelle $2034$ jatkaisi suoraa $10$ vuotta viiden vuoden aineiston ulkopuolelle. Tuotanto $1000\,\text{GWh}$ on eri sarakkeessa kuin päästö. Päästö muuttui, vaikka tuotanto ei muuttunut.
 
 ## fy2-8-L1-09
-**Annettu:** maakaasun massa $m = 2{,}0\,\text{kg}$; lämpöarvo MAFY-taulukosta (Polttoaineiden LHV-lämpöarvoja, maakaasu) $H = 47\,\tfrac{\text{MJ}}{\text{kg}}$; päästökerroin $e = 55\,\tfrac{\text{g}}{\text{MJ}}$ (Tilastokeskus, polttoaineluokitus 2024)
+**Annettu:** maakaasun massa $m = 2{,}0\,\text{kg}$; lämpöarvo MAFY-taulukosta (Polttoaineiden LHV-lämpöarvoja, maakaasu) $H = 47\,\tfrac{\text{MJ}}{\text{kg}}$; päästökerroin $e = 55\,\tfrac{\text{g}}{\text{MJ}}$
 **Kysytty:** syntyvän hiilidioksidin massa $m_\text{CO2}$ kilogrammoina
 **Periaate:** Päästö kasvaa samassa suhteessa kuin vapautuva energia. Päästökerroin kertoo päästön yhtä energiayksikköä kohti. Lasketaan ensin energia lämpöarvolla. Sitten lasketaan päästö.
 **Kaava:** $E = Hm$ ja $m_\text{CO2} = eE$

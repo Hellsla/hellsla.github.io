@@ -114,7 +114,7 @@
     {
       "id": "fy2-8-L1-09",
       "level": 1,
-      "text": "On a winter day, $2.0\\,\\text{kg}$ of natural gas is burnt in a gas boiler. Look up the heat of combustion of natural gas in the MAFY table (mafytaulukot.fi). The emission factor of burning natural gas is $55\\,\\text{g/MJ}$ (Statistics Finland, fuel classification 2024). How much carbon dioxide is produced when the gas burns? Give the answer in kilograms.",
+      "text": "On a winter day, $2.0\\,\\text{kg}$ of natural gas is burnt in a gas boiler. Look up the heat of combustion of natural gas in the MAFY table (mafytaulukot.fi). The emission factor of burning natural gas is $55\\,\\text{g/MJ}$. How much carbon dioxide is produced when the gas burns? Give the answer in kilograms.",
       "lookup": "MAFY",
       "answer": 5.17,
       "unit": "kg",
