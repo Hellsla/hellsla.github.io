@@ -25,7 +25,7 @@ Exit 1 on any error."""
 import json, re, subprocess, sys, pathlib
 from collections import Counter
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-import courses, i18n, inquiry
+import courses, i18n, inquiry, kaavat
 
 ROOT = courses.ROOT
 TEXT_KEYS = {"text", "reason_prompt", "pending", "detail", "q", "a", "title", "question", "prompt", "feedback", "model", "hint", "hints", "howto", "calc", "label",
@@ -82,7 +82,7 @@ def formulas(text):
     Finnish source may cite the same chapter by a shorter name ("(luku *Teho*)")."""
     text = re.sub(r"\b((?:luku|luvussa|luvusta|luvun|luvuissa|chapter|chapters)\s+)\*[^*]+\*", r"\1", str(text), flags=re.I)
     text = re.sub(r"\((?:luku|chapter)\s[^()*]*\)", "()", text, flags=re.I)   # without the asterisks: "(chapter Heating and cooling …: $Q = cm\\Delta T$)"
-    text = re.sub(r"```latex\n(.*?)```", lambda m: "$$" + m.group(1) + "$$", str(text), flags=re.S)
+    text = kaavat.as_display(re.sub(r"```latex\n(.*?)```", lambda m: "$$" + m.group(1) + "$$", str(text), flags=re.S), names=False)   # a formula's name is translated
     found = re.findall(r"\$\$(.*?)\$\$", text, re.S) + re.findall(r"(?<!\$)\$([^$\n]+?)\$(?!\$)", re.sub(r"\$\$.*?\$\$", "", text, flags=re.S))
     return sorted(re.sub(r"\s+", "", re.sub(r"\\(text|mathrm)\{[^{}]*\}", r"\\\1{}", f)).replace("{,}", ".") for f in found)   # 4{,}2 = 4.2
 

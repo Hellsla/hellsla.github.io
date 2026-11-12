@@ -248,34 +248,34 @@ Alun kysymys ratkeaa näillä kahdella tarkistuksella. Lämpimässä autotalliss
 
 ### Paine ja nesteen paine
 
-```latex
-p = \frac{F}{A}
+```kaavat
+voiman aiheuttama paine :: p = \frac{F}{A}
 ```
 
 missä $p$ on paine (Pa), $F$ pintaa vastaan kohtisuora voima (N) ja $A$ pinta-ala (m²). Levossa olevassa nesteessä syvyydellä $h$
 
-```latex
-p = p_0 + \rho g h
+```kaavat
+hydrostaattinen paine :: p = p_0 + \rho g h
 ```
 
 missä $p_0$ on paine pinnalla, yleensä ilmanpaine noin $101\,\text{kPa}$, $\rho$ nesteen tiheys (kg/m³) ja $g = 9{,}81\,\text{m/s}^2$. Termi $\rho g h$ on ylipaine, ja se riippuu vain syvyydestä ja tiheydestä, ei astian muodosta. Paineen aiheuttama voima on aina kohtisuorassa pintaa vastaan.
 
 ### Kaasun tila
 
-```latex
-pV = nRT
+```kaavat
+ideaalikaasun tilanyhtälö :: pV = nRT
 ```
 
 missä $V$ on tilavuus (m³), $n$ ainemäärä (mol), $R = 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$ ja $T$ lämpötila kelvineinä. Ainemäärä saadaan massasta, $n = m/M$, missä $M$ on moolimassa. Yhtälö pätee harvalle kaasulle, kun paine ei ole kovin suuri eikä lämpötila kovin matala. Kun kaasun määrä pysyy samana,
 
-```latex
-\frac{p_1 V_1}{T_1} = \frac{p_2 V_2}{T_2}
+```kaavat
+tilanyhtälö vakioainemäärälle :: \frac{p_1 V_1}{T_1} = \frac{p_2 V_2}{T_2}
 ```
 
 ja siitä saadaan erikoistapaukset: vakiolämpötilassa Boylen laki $p_1V_1 = p_2V_2$, vakiopaineessa $V \propto T$ ja vakiotilavuudessa $p \propto T$. Kelvinlämpötila on
 
-```latex
-T = \theta + 273{,}15\,\text{K}
+```kaavat
+lämpötila kelvineinä :: T = \theta + 273{,}15\,\text{K}
 ```
 
 missä $\theta$ on celsiuslämpötilan lukuarvo. Absoluuttinen nollapiste saadaan kokeessa jatkamalla $(\theta, p)$- tai $(\theta, V)$-suoraa nollaan. Se on mallin ennuste: todellinen kaasu tiivistyy nesteeksi ennen sitä.
@@ -284,26 +284,26 @@ missä $\theta$ on celsiuslämpötilan lukuarvo. Absoluuttinen nollapiste saadaa
 
 Vakiopaineessa laajeneva kaasu tekee työn
 
-```latex
-W_\text{k} = p\,\Delta V
+```kaavat
+kaasun tekemä laajenemistyö / kaasuun tehty puristustyö :: W_\text{k} = p\,\Delta V
 ```
 
 missä $\Delta V$ on tilavuuden muutos (m³); työ on ($V$, $p$)-kuvaajan alle jäävä pinta-ala. Kaasun sisäenergia muuttuu ensimmäisen pääsäännön mukaan
 
-```latex
-\Delta U = Q - W_\text{k}
+```kaavat
+lämpöopin 1. pääsääntö :: \Delta U = Q - W_\text{k}
 ```
 
 missä $Q$ on kaasuun siirtynyt lämpö (J) ja $W_\text{k}$ kaasun tekemä työ. Lämpövoimakone ottaa kierroksessa kuumasta lähteestä lämmön $Q_1$, tekee työn $W$ ja luovuttaa lämmön $Q_2$ kylmempään ympäristöön. Energia säilyy, joten
 
-```latex
-W = Q_1 - Q_2
+```kaavat
+lämpövoimakoneen tekemä työ :: W = Q_1 - Q_2
 ```
 
 ja hyötysuhde on
 
-```latex
-\eta = \frac{W}{Q_1}
+```kaavat
+lämpövoimakoneen hyötysuhde :: \eta = \frac{W}{Q_1}
 ```
 
 Osa lämmöstä on aina luovutettava kylmempään, joten lämpövoimakoneen hyötysuhde jää selvästi alle $100\,\%$:n. Mitä pienempi lämpötilaero $T_1 - T_2$ on kuuman lähteen lämpötilaan $T_1$ nähden, sitä pienemmän osan lämmöstä kone voi muuttaa työksi. Voimalaitoksessa sama lasketaan tehoista: sähköteho jaettuna polttoaineteholla.

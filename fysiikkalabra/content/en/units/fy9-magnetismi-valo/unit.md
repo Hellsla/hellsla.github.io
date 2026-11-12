@@ -183,14 +183,12 @@ This gives the answer to the opening question. A power of $40\,\text{kW}$ is tra
 
 ### Magnetic field and forces
 
-```latex
-\begin{aligned}
-F &= qvB\sin\alpha \\
-r &= \frac{mv}{qB} \\
-F &= IlB\sin\alpha \\
-B &= \frac{\mu_0 I}{2\pi r} \\
-B &= \mu_0 \frac{NI}{l}
-\end{aligned}
+```kaavat
+magnetic force on a charged particle :: F = qvB\sin\alpha
+radius of a charged particle's circular path in a magnetic field :: r = \frac{mv}{qB}
+magnetic force on a straight conductor :: F = IlB\sin\alpha
+magnetic flux density of a straight current-carrying wire :: B = \frac{\mu_0 I}{2\pi r}
+magnetic flux density of a long solenoid :: B = \mu_0 \frac{NI}{l}
 ```
 
 where $q$ is the charge ($\text{C}$), $v$ the speed ($\text{m/s}$), $B$ the magnetic flux density ($\text{T}$), $\alpha$ the angle between the velocity or the wire and the field, $m$ the mass ($\text{kg}$), $r$ the radius of the circular path or the distance from the wire ($\text{m}$), $I$ the current ($\text{A}$), $l$ the length of the wire or the coil ($\text{m}$), $N$ the number of turns and $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$. The formula for the radius holds when the velocity is perpendicular to a uniform field and small compared with the speed of light. The magnetic force does not change the speed. The formula for the wire holds for a long straight wire, and the formula for the coil at the middle of a long coil.
@@ -289,29 +287,25 @@ where $q$ is the charge ($\text{C}$), $v$ the speed ($\text{m/s}$), $B$ the magn
 
 ### Induction and alternating current
 
-```latex
-\begin{aligned}
-e &= -N\frac{\Delta\Phi}{\Delta t} \\
-e_0 &= NBA \cdot 2\pi f \\
-U &= \frac{U_0}{\sqrt{2}} \\
-\frac{U_1}{U_2} &= \frac{N_1}{N_2} = \frac{I_2}{I_1} \\
-P_\text{h} &= RI^2
-\end{aligned}
+```kaavat
+voltage induced in a coil :: e = -N\frac{\Delta\Phi}{\Delta t}
+peak value of the sinusoidal voltage induced in a generator coil :: e_0 = NBA \cdot 2\pi f
+rms value of a sinusoidal alternating voltage :: U = \frac{U_0}{\sqrt{2}}
+transformer :: \frac{U_1}{U_2} = \frac{N_1}{N_2} = \frac{I_2}{I_1}
+power loss in a transmission line :: P_\text{h} = RI^2
 ```
 
 where $e$ is the induced voltage ($\text{V}$), $\Phi = BA$ the magnetic flux ($\text{Wb}$) when the field is perpendicular to the surface $A$, $e_0$ the peak value of the generator voltage, $f$ the rotation frequency ($\text{Hz}$), $U$ and $U_0$ the rms value and the peak value, the indices $1$ and $2$ the primary and secondary side of the transformer, and $P_\text{h}$ the power loss of the transmission line when $I = \tfrac{P}{U}$. The minus sign is Lenz's law: the induced current opposes the change of flux. The voltage of a rod moving in a field is $e = vBl$. The transformer equation applies to an ideal transformer and an alternating voltage.
 
 ### Light
 
-```latex
-\begin{aligned}
-c &= f\lambda \\
-\lambda_\text{max} T &= b \\
-n_1\sin\alpha_1 &= n_2\sin\alpha_2 \\
-\sin\alpha_\text{r} &= \frac{n_2}{n_1} \\
-d\sin\theta &= k\lambda \\
-I &= I_0\cos^2\theta
-\end{aligned}
+```kaavat
+wave equation :: c = f\lambda
+Wien's displacement law :: \lambda_\text{max} T = b
+law of refraction (Snell's law) :: n_1\sin\alpha_1 = n_2\sin\alpha_2
+critical angle of total internal reflection :: \sin\alpha_\text{r} = \frac{n_2}{n_1}
+grating equation :: d\sin\theta = k\lambda
+Malus's law :: I = I_0\cos^2\theta
 ```
 
 where $c = 3.00 \cdot 10^8\,\text{m/s}$, $f$ is the frequency, $\lambda$ the wavelength, $T$ the absolute temperature ($\text{K}$), $b = 2.898 \cdot 10^{-3}\,\text{m} \cdot \text{K}$, $n = \tfrac{c}{v}$ the refractive index, $\alpha$ the angles from the normal, $\alpha_\text{r}$ the critical angle when $n_1 > n_2$, $d$ the grating constant, $\theta$ the direction of a maximum of the grating, $k = 0, 1, 2, \ldots$ and $I_0$ the intensity of the polarised light before the analyser. In Malus's law $\theta$ is the angle between the direction of polarisation and the transmission axis of the analyser. In a thin film the path difference is $2nd$ when the light arrives almost perpendicularly. When only one of the reflections inverts the wave, $2nd = \left(k + \tfrac12\right)\lambda$ gives constructive interference; when both invert it, $2nd = k\lambda$.

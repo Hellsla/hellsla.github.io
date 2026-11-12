@@ -233,25 +233,21 @@ Tästä saadaan vastaus alun kysymykseen. Pilli värähtelee taajuudella $3{,}0\
 
 ### Värähtelijät
 
-```latex
-\begin{aligned}
-f &= \frac{1}{T} \\
-F &= -kx \\
-T &= 2\pi\sqrt{\frac{m}{k}} \\
-T &= 2\pi\sqrt{\frac{l}{g}}
-\end{aligned}
+```kaavat
+taajuus :: f = \frac{1}{T}
+harmoninen voima :: F = -kx
+harmonisen värähtelijän jaksonaika :: T = 2\pi\sqrt{\frac{m}{k}}
+matemaattisen heilurin jaksonaika :: T = 2\pi\sqrt{\frac{l}{g}}
 ```
 
 missä $f$ on taajuus ($\text{Hz}$), $T$ jaksonaika ($\text{s}$), $F$ jousen voima ($\text{N}$), $k$ jousivakio ($\text{N/m}$), $x$ poikkeama tasapainoasemasta ($\text{m}$), $m$ massa ($\text{kg}$) ja $l$ heilurin pituus ($\text{m}$). Jousen voima pätee, kun jousta ei venytetä liikaa. Heilurin jaksonaika pätee pienillä heilahduksilla, eikä se riipu massasta. Jousen potentiaalienergia on $E_\text{p} = \tfrac12 kx^2$, ja ilman kitkaa värähtelyn energia $\tfrac12 kA^2$ säilyy.
 
 ### Aallot
 
-```latex
-\begin{aligned}
-v &= f\lambda \\
-\Delta s &= n\lambda \\
-\Delta s &= \left(n + \tfrac12\right)\lambda
-\end{aligned}
+```kaavat
+aaltoliikkeen perusyhtälö :: v = f\lambda
+vahvistava interferenssi :: \Delta s = n\lambda
+heikentävä interferenssi :: \Delta s = \left(n + \tfrac12\right)\lambda
 ```
 
 missä $v$ on aallon nopeus ($\text{m/s}$), $\lambda$ aallonpituus ($\text{m}$) ja $\Delta s$ matkaero kahdesta samassa vaiheessa värähtelevästä lähteestä ($\text{m}$), $n = 0, 1, 2, \ldots$ Ensimmäinen ehto antaa vahvistavan ja toinen heikentävän interferenssin. Diffraktio on voimakasta, kun raon tai esteen leveys on aallonpituuden suuruinen tai pienempi. Heijastuksessa tulokulma on heijastuskulman suuruinen, kun kulmat mitataan pinnan normaalista.
@@ -292,14 +288,12 @@ Seisovassa aallossa vierekkäisten solmujen väli on $\tfrac{\lambda}{2}$. Kiele
 
 ### Ääni
 
-```latex
-\begin{aligned}
-f_\text{h} &= |f_1 - f_2| \\
-f &= f_0 \cdot \frac{v}{v \mp v_\text{s}} \\
-f &= f_0 \cdot \frac{v \pm v_\text{h}}{v} \\
-I &= \frac{P}{4\pi r^2} \\
-L &= 10\,\text{dB} \cdot \lg \frac{I}{I_0}
-\end{aligned}
+```kaavat
+huojunta :: f_\text{h} = |f_1 - f_2|
+Dopplerin ilmiö, äänilähde liikkuu :: f = f_0 \cdot \frac{v}{v \mp v_\text{s}}
+Dopplerin ilmiö, havaitsija liikkuu :: f = f_0 \cdot \frac{v \pm v_\text{h}}{v}
+intensiteetti :: I = \frac{P}{4\pi r^2}
+äänen intensiteettitaso :: L = 10\,\text{dB} \cdot \lg \frac{I}{I_0}
 ```
 
 missä $f_\text{h}$ on huojuntataajuus ($\text{Hz}$), $f_0$ lähteen ja $f$ kuultu taajuus ($\text{Hz}$), $v$ äänen nopeus, $v_\text{s}$ lähteen ja $v_\text{h}$ kuulijan nopeus ilman suhteen ($\text{m/s}$). Dopplerin kaavoissa ylempi merkki valitaan lähestyttäessä, ja ne pätevät, kun vain toinen liikkuu ja nopeus on äänen nopeutta pienempi. Intensiteetin lauseke pätee pistemäiselle lähteelle, jonka teho on $P$, etäisyydellä $r$ ilman heijastuksia. $L$ on intensiteettitaso ja $I_0 = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2$. Kaiusta etäisyys on $d = \tfrac{vt}{2}$, koska pulssi kulkee matkan kahdesti.

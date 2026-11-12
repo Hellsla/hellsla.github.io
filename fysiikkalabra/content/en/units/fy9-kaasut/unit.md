@@ -248,34 +248,34 @@ The opening question is answered with these two checks. In the warm garage ($+20
 
 ### Pressure and pressure in a liquid
 
-```latex
-p = \frac{F}{A}
+```kaavat
+pressure caused by a force :: p = \frac{F}{A}
 ```
 
 where $p$ is the pressure (Pa), $F$ the force perpendicular to the surface (N) and $A$ the area (m²). In a liquid at rest, at the depth $h$
 
-```latex
-p = p_0 + \rho g h
+```kaavat
+hydrostatic pressure :: p = p_0 + \rho g h
 ```
 
 where $p_0$ is the pressure at the surface, usually the air pressure of about $101\,\text{kPa}$, $\rho$ the density of the liquid (kg/m³) and $g = 9.81\,\text{m/s}^2$. The term $\rho g h$ is the gauge pressure, and it depends only on the depth and the density, not on the shape of the container. The force caused by pressure is always perpendicular to the surface.
 
 ### The state of a gas
 
-```latex
-pV = nRT
+```kaavat
+ideal gas law :: pV = nRT
 ```
 
 where $V$ is the volume (m³), $n$ the amount of substance (mol), $R = 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$ and $T$ the temperature in kelvins. The amount of substance is obtained from the mass, $n = m/M$, where $M$ is the molar mass. The equation holds for a dilute gas, when the pressure is not very high and the temperature not very low. When the amount of gas stays the same,
 
-```latex
-\frac{p_1 V_1}{T_1} = \frac{p_2 V_2}{T_2}
+```kaavat
+combined gas law (constant amount of gas) :: \frac{p_1 V_1}{T_1} = \frac{p_2 V_2}{T_2}
 ```
 
 and from it follow the special cases: at constant temperature Boyle's law $p_1V_1 = p_2V_2$, at constant pressure $V \propto T$ and at constant volume $p \propto T$. The kelvin temperature is
 
-```latex
-T = \theta + 273.15\,\text{K}
+```kaavat
+temperature in kelvins :: T = \theta + 273.15\,\text{K}
 ```
 
 where $\theta$ is the numerical value of the Celsius temperature. In an experiment, absolute zero is obtained by extending the $(\theta, p)$ or $(\theta, V)$ line to zero. It is a prediction of the model: a real gas condenses into a liquid before that.
@@ -284,26 +284,26 @@ where $\theta$ is the numerical value of the Celsius temperature. In an experime
 
 A gas expanding at constant pressure does the work
 
-```latex
-W_\text{g} = p\,\Delta V
+```kaavat
+work done by an expanding gas / on a compressed gas :: W_\text{g} = p\,\Delta V
 ```
 
 where $\Delta V$ is the change in volume (m³); the work is the area under the ($V$, $p$) graph. By the first law of thermodynamics the internal energy of the gas changes by
 
-```latex
-\Delta U = Q - W_\text{g}
+```kaavat
+first law of thermodynamics :: \Delta U = Q - W_\text{g}
 ```
 
 where $Q$ is the heat transferred to the gas (J) and $W_\text{g}$ the work done by the gas. In one cycle a heat engine takes the heat $Q_1$ from a hot source, does the work $W$ and gives the heat $Q_2$ to a colder environment. Energy is conserved, so
 
-```latex
-W = Q_1 - Q_2
+```kaavat
+work done by a heat engine :: W = Q_1 - Q_2
 ```
 
 and the efficiency is
 
-```latex
-\eta = \frac{W}{Q_1}
+```kaavat
+efficiency of a heat engine :: \eta = \frac{W}{Q_1}
 ```
 
 Part of the heat must always be given to a colder place, so the efficiency of a heat engine stays well below $100\,\%$. The smaller the temperature difference $T_1 - T_2$ is compared with the temperature $T_1$ of the hot source, the smaller the share of the heat the engine can turn into work. In a power plant the same is calculated from powers: the electrical power divided by the fuel power.

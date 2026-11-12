@@ -254,49 +254,41 @@ Nyt voimme vastata alun kysymykseen. Mökin laitteet on kytketty akkuun rinnan, 
 
 ### Virta, jännite ja resistanssi
 
-```latex
-\begin{aligned}
-I &= \frac{Q}{t} \\
-R &= \frac{U}{I} \\
-R &= \rho\,\frac{l}{A}
-\end{aligned}
+```kaavat
+sähkövirta :: I = \frac{Q}{t}
+jännitehäviö johtimessa :: R = \frac{U}{I}
+johtimen resistanssi :: R = \rho\,\frac{l}{A}
 ```
 
 missä $I$ on virta ($\text{A}$), $Q$ varaus, joka on kulkenut poikkileikkauksen läpi ($\text{C}$), $t$ aika ($\text{s}$), $U$ komponentin jännite ($\text{V}$), $R$ resistanssi ($\Omega$), $\rho$ resistiivisyys ($\Omega\cdot\text{m}$), $l$ johtimen pituus ($\text{m}$) ja $A$ poikkipinta-ala ($\text{m}^2$). Ohmin lain mukaan metallijohtimen resistanssi on vakio eli se ei muutu, kun lämpötila pysyy samana. Hehkulampun resistanssi kasvaa, kun lanka kuumenee. Virtamittari kytketään sarjaan ja jännitemittari rinnan.
 
 ### Kytkennät ja Kirchhoffin lait
 
-```latex
-\begin{aligned}
-R &= R_1 + R_2 + \dots \\
-\frac{1}{R} &= \frac{1}{R_1} + \frac{1}{R_2} + \dots \\
-\sum I_\text{tulevat} &= \sum I_\text{lähtevät} \\
-\sum \Delta V &= 0
-\end{aligned}
+```kaavat
+sarjaan kytkettyjen vastusten kokonaisresistanssi :: R = R_1 + R_2 + \dots
+rinnan kytkettyjen vastusten kokonaisresistanssi :: \frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \dots
+Kirchhoffin 1. laki :: \sum I_\text{tulevat} = \sum I_\text{lähtevät}
+Kirchhoffin 2. laki :: \sum \Delta V = 0
 ```
 
 Ensimmäinen kaava antaa sarjaan kytkettyjen vastusten kokonaisresistanssin $R$. Toinen kaava antaa rinnan kytkettyjen vastusten kokonaisresistanssin. Virtalaki pätee haarautumispisteessä eli kohdassa, jossa johto jakautuu. Se pätee, koska varaus säilyy. Jännitelaki pätee, kun silmukka eli suljettu reitti kierretään kerran. Potentiaali $V$ nousee lähteessä miinusnavalta plusnavalle. Vastuksessa potentiaali laskee virran suuntaan $RI$:n verran. Siksi rinnakkaisten haarojen yli on sama jännite.
 
 ### Teho ja energia
 
-```latex
-\begin{aligned}
-P &= UI \\
-P &= RI^2 = \frac{U^2}{R} \\
-E &= Pt
-\end{aligned}
+```kaavat
+tehonkulutus johtimessa :: P = UI
+tehonkulutus resistanssin avulla :: P = RI^2 = \frac{U^2}{R}
+sähkölaitteen kuluttama energia :: E = Pt
 ```
 
 missä $P$ on teho ($\text{W}$) ja $E$ sähköenergia, joka on muuttunut ajassa $t$ ($\text{J}$ tai $\text{kWh}$). Kaava $P = UI$ pätee kaikille komponenteille. Joulen lain muodot pätevät vain vastukselle. Sarjaankytkennässä suurempi resistanssi saa suuremman tehon. Rinnankytkennässä pienempi resistanssi saa suuremman tehon. Energian yksiköt muunnetaan sijoittamalla: $1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}$. Jos samassa tehtävässä on myös lähdejännite $E$, energialle käytetään kirjainta $W$.
 
 ### Paristo ja akku
 
-```latex
-\begin{aligned}
-U &= E - R_\text{s} I \\
-I &= \frac{E}{R + R_\text{s}} \\
-Q &= It
-\end{aligned}
+```kaavat
+jännitelähteen napajännite :: U = E - R_\text{s} I
+virta suljetussa virtapiirissä :: I = \frac{E}{R + R_\text{s}}
+sähkövirta :: Q = It
 ```
 
 missä $E$ on lähdejännite ($\text{V}$), $R_\text{s}$ sisäinen resistanssi ($\Omega$), $U$ napajännite ($\text{V}$), $R$ ulkoisen piirin resistanssi ($\Omega$) ja $Q$ akun kapasiteetti ($\text{Ah}$ tai $\text{C}$). Napajännite on pariston napojen välinen jännite. Malli olettaa, että $E$ ja $R_\text{s}$ pysyvät vakioina. Akun energia on $W = UQ$, missä $U$ on nimellisjännite eli akkuun merkitty jännite. Latauksen aikana napajännite on $U = E + R_\text{s} I$.

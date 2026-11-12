@@ -309,34 +309,30 @@ Nyt voimme vastata alun kysymykseen. Kun vaunut kytkeytyvät, niiden voimat tois
 
 ### Energia
 
-```latex
-\begin{aligned}
-E_\text{k} &= \tfrac{1}{2}\,mv^2 \\
-E_\text{p} &= mgh
-\end{aligned}
+```kaavat
+liike-energia :: E_\text{k} = \tfrac{1}{2}\,mv^2
+painovoimaan liittyvä potentiaalienergia maanpinnalla :: E_\text{p} = mgh
 ```
 
 Kaavoissa $m$ on massa ($\text{kg}$), $v$ nopeus ($\text{m/s}$) ja $g = 9{,}81\,\text{m/s}^2$. $h$ on korkeus nollatasosta ($\text{m}$). Nollataso on korkeus, jonka itse valitset korkeuden nollakohdaksi. $E_\text{p} = mgh$ pätee Maan pinnan lähellä. Energiaperiaate on
 
-```latex
-E_{\text{k},1} + E_{\text{p},1} + W_\text{muut} = E_{\text{k},2} + E_{\text{p},2}
+```kaavat
+mekaniikan energiaperiaate :: E_{\text{k},1} + E_{\text{p},1} + W_\text{muut} = E_{\text{k},2} + E_{\text{p},2}
 ```
 
 Kaavassa $W_\text{muut}$ on muiden voimien kuin painon tekemä työ ($\text{J}$). Vakiovoiman työ on $W = F_\parallel\,s$. Siinä $F_\parallel$ on voiman komponentti eli osa, joka on liikkeen suuntainen. Kitkan ja ilmanvastuksen työ on negatiivinen. Kun $W_\text{muut} = 0$, mekaaninen energia säilyy.
 
 ### Liikemäärä ja impulssi
 
-```latex
-\begin{aligned}
-\overline{p} &= m\overline{v} \\
-\Sigma\overline{F}\,\Delta t &= \Delta\overline{p}
-\end{aligned}
+```kaavat
+liikemäärä :: \overline{p} = m\overline{v}
+impulssi-liikemääräperiaate :: \Sigma\overline{F}\,\Delta t = \Delta\overline{p}
 ```
 
 Kaavoissa $\overline{p}$ on liikemäärä ($\text{kg} \cdot \text{m/s}$). $\Sigma\overline{F}$ on kokonaisvoima, joka on vakiosuuruinen aikavälin $\Delta t$ ajan. Jos voima muuttuu, keskimääräinen voima on $F_\text{ka} = |\Delta p| : \Delta t$. Yhdessä ulottuvuudessa eli suoralla viivalla valitaan positiivinen suunta. Nopeudet, jotka osoittavat vastakkaiseen suuntaan, ovat negatiivisia. Kun ulkoisten voimien impulssi on niin pieni, ettei sillä ole merkitystä,
 
-```latex
-m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'
+```kaavat
+liikemäärän säilymislaki :: m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'
 ```
 
 Kimmoisassa törmäyksessä myös liike-energia säilyy. Täysin kimmottomassa törmäyksessä kappaleet jatkavat yhteisellä nopeudella, $v_1' = v_2' = v'$. Silloin liike-energiaa muuttuu sisäenergiaksi eniten.
@@ -345,12 +341,10 @@ Kimmoisassa törmäyksessä myös liike-energia säilyy. Täysin kimmottomassa t
 
 Vaakasuoralla tiellä auton pysähtymismatka on reaktiomatka ja jarrutusmatka yhteensä:
 
-```latex
-\begin{aligned}
-s_\text{p} &= v_0\,t_\text{r} + \frac{v_0^2}{2a} \\
-P_\text{vesi} &= \eta\rho Qgh \\
-P_\text{tuuli} &= \tfrac12\eta\rho Av^3
-\end{aligned}
+```kaavat
+pysähtymismatka :: s_\text{p} = v_0\,t_\text{r} + \frac{v_0^2}{2a}
+vesivoimalan teho :: P_\text{vesi} = \eta\rho Qgh
+tuulivoimalan teho :: P_\text{tuuli} = \tfrac12\eta\rho Av^3
 ```
 
 Kaavassa $t_\text{r}$ on reaktioaika ($\text{s}$) ja $a$ hidastuvuus ($\text{m/s}^2$). Hidastuvuus oletetaan vakioksi. Kun renkaat ovat juuri lukkiutumassa, $a = \mu g$. Voimaloiden sähkötehon kaavoissa $\eta$ on hyötysuhde ja $\rho$ veden tai ilman tiheys. Vesivoimalassa $Q$ on virtaama ($\text{m}^3\text{/s}$) eli vesimäärä sekunnissa, ja $h$ on putouskorkeus ($\text{m}$). Tuulivoimalassa $A$ on pinta-ala, jonka roottori pyyhkäisee ($\text{m}^2$), ja $v$ on tuulen nopeus. Tuulen tehon kaava pätee, kun hyötysuhde pysyy vakiona ja voimalan teho on pienempi kuin sen nimellisteho eli suurin teho, jolle se on tehty.

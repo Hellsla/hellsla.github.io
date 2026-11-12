@@ -504,25 +504,22 @@ Tästä saadaan vastaus alun kysymykseen. Kasvivalon punaisen fotonin ($660\,\te
 
 ### Fotoni ja atomi
 
-```latex
-\begin{aligned}
-E &= hf = \frac{hc}{\lambda} \\
-hf &= W + E_\text{k,max} \\
-hf &= E_\text{y} - E_\text{a} \\
-p &= \frac{h}{\lambda}
-\end{aligned}
+```kaavat
+fotonin energia :: E = hf = \frac{hc}{\lambda}
+valosähköinen ilmiö :: hf = W + E_\text{k,max}
+atomin lähettämän tai absorboiman fotonin energia :: hf = E_\text{y} - E_\text{a}
+fotonin liikemäärä :: p = \frac{h}{\lambda}
 ```
 
 missä $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ on Planckin vakio, $f$ taajuus, $\lambda$ aallonpituus, $W$ metallin irrotustyö, $E_\text{k,max}$ irtoavan elektronin suurin liike-energia, $E_\text{y}$ ja $E_\text{a}$ ylemmän ja alemman energiatilan energiat ja $p$ fotonin liikemäärä. Elektroneja irtoaa vain, kun $hf \geq W$. Atomi absorboi vain fotonin, jonka energia on täsmälleen tasojen erotus, ellei fotoni ionisoi atomia. Vedyllä $E_n = -\tfrac{13{,}6\,\text{eV}}{n^2}$. LEDin kynnysjännitteellä $eU_\text{k} \approx hf$. Muunnokset: $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$ ja $hc \approx 1240\,\text{eV}\,\text{nm}$.
 
 ### Ydin ja hajoaminen
 
-```latex
-\begin{aligned}
-N &= N_0 \left(\tfrac12\right)^{t/T_{1/2}} \\
-A &= \lambda N,\quad \lambda = \frac{\ln 2}{T_{1/2}} \\
-Q &= (m_\text{alku} - m_\text{loppu})\,c^2
-\end{aligned}
+```kaavat
+hajoamislaki :: N = N_0 \left(\tfrac12\right)^{t/T_{1/2}}
+aktiivisuus :: A = \lambda N
+hajoamisvakio :: \lambda = \frac{\ln 2}{T_{1/2}}
+ydinreaktiossa vapautuva energia :: Q = (m_\text{alku} - m_\text{loppu})\,c^2
 ```
 
 missä $N$ on hajoamattomien ytimien määrä hetkellä $t$, $T_{1/2}$ puoliintumisaika, $A$ aktiivisuus ($\text{Bq}$), $\lambda$ hajoamisvakio ja $Q$ reaktioenergia. Hajoamisyhtälössä massaluku ja varausluku säilyvät: alfahajoamisessa $Z$ pienenee kahdella ja $A$ neljällä, beeta miinus -hajoamisessa $Z$ kasvaa yhdellä. Hajoamislaki kuvaa suurta ydinjoukkoa. Sidosenergia on $E_\text{B} = \Delta m\,c^2$, ja $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$. Fissio ja fuusio vapauttavat energiaa, koska tuotteiden sidosenergia nukleonia kohti on suurempi.
@@ -586,13 +583,12 @@ missä $N$ on hajoamattomien ytimien määrä hetkellä $t$, $T_{1/2}$ puoliintu
 
 ### Säteily ja annos
 
-```latex
-\begin{aligned}
-D &= \frac{E}{m},\quad H_\text{T} = w_\text{R} D_\text{T} \\
-H &= \dot{H} t \\
-\dot{H}_2 &= \dot{H}_1 \left(\frac{r_1}{r_2}\right)^2 \\
-\dot{H} &= \dot{H}_0 \left(\tfrac12\right)^{d/d_{1/2}}
-\end{aligned}
+```kaavat
+absorboitunut annos :: D = \frac{E}{m}
+ekvivalenttiannos :: H_\text{T} = w_\text{R} D_\text{T}
+annos annosnopeudesta :: H = \dot{H} t
+annosnopeus etäisyyden funktiona :: \dot{H}_2 = \dot{H}_1 \left(\frac{r_1}{r_2}\right)^2
+heikennyslaki :: \dot{H} = \dot{H}_0 \left(\tfrac12\right)^{d/d_{1/2}}
 ```
 
 missä $D$ on absorboitunut annos ($\text{Gy}$), $E$ absorboitunut energia, $m$ kudoksen massa, $H_\text{T}$ ekvivalenttiannos ($\text{Sv}$), $w_\text{R}$ säteilyn painotuskerroin (alfa $20$, beeta ja gamma $1$), $\dot{H}$ annosnopeus, $t$ aika, $r$ etäisyys ja $d_{1/2}$ puoliintumispaksuus. Neliölaki pätee pistemäiselle lähteelle, kun ilma ei vaimenna säteilyä. Puoliintumispaksuus koskee fotonisäteilyä, koska alfa- ja beetasäteilyllä on kantama. Galaksien etääntymisnopeus on $v = H_0 d$, ja pienellä punasiirtymällä $v = cz$.

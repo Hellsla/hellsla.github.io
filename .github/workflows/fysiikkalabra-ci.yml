@@ -147,6 +147,8 @@ jobs:
       - name: Menu on a phone, skip link, named self-assessment levels, Jatka (design audit 2026-11-10)
         run: python scripts/test_jatka.py
       - run: python scripts/test_reviews.py
+      - name: named formulas (```kaavat, FY9's names from mafytaulukot.fi) and the carry over approved formula names (teacher 2026-11-12)
+        run: python scripts/test_kaavat.py
       - run: python scripts/test_inquiry.py
       - name: the answer check reads typed numbers and accepts half a unit in the shown last digit (templates/lesson.js part 1, teacher 2026-11-10)
         run: python scripts/test_answer_check.py

@@ -264,13 +264,11 @@ Jännite on suuri. Keho on kuitenkin pieni kondensaattori, jonka kapasitanssi on
 
 ### Varaus, voima ja kenttä
 
-```latex
-\begin{aligned}
-Q &= ne \\
-F &= k\,\frac{\lvert q_1 q_2 \rvert}{r^2} \\
-\overline{F} &= q\overline{E} \\
-E &= \frac{U}{d}
-\end{aligned}
+```kaavat
+varaus alkeisvarauksen monikertana :: Q = ne
+Coulombin voiman suuruus :: F = k\,\frac{\lvert q_1 q_2 \rvert}{r^2}
+sähkökentän voimakkuus :: \overline{F} = q\overline{E}
+jännite homogeenisessa sähkökentässä :: E = \frac{U}{d}
 ```
 
 missä $n$ on alkeisvarausten lukumäärä, $e = 1{,}602 \cdot 10^{-19}\,\text{C}$ alkeisvaraus, $F$ voima ($\text{N}$), $q_1$ ja $q_2$ varaukset ($\text{C}$), $r$ niiden etäisyys ($\text{m}$), $k = 8{,}988 \cdot 10^{9}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{C}^2}$, $\overline{E}$ sähkökentän voimakkuus ($\text{N/C} = \text{V/m}$), $U$ levyjen välinen jännite ($\text{V}$) ja $d$ levyjen etäisyys ($\text{m}$). Varaus säilyy eli sen kokonaismäärä ei muutu. Coulombin laki pätee pistevarauksille ja palloille, joissa varaus on jakautunut tasaisesti. Kun varauksia on monta, niiden voimat lasketaan yhteen vektoreina. Kenttä $E = \tfrac{U}{d}$ pätee vain laajojen yhdensuuntaisten levyjen välissä. Siellä kenttä on homogeeninen eli samanlainen joka kohdassa.
@@ -350,37 +348,31 @@ missä $n$ on alkeisvarausten lukumäärä, $e = 1{,}602 \cdot 10^{-19}\,\text{C
 
 ### Potentiaali ja energia
 
-```latex
-\begin{aligned}
-E_\text{p} &= qV \\
-W_{AB} &= qU_{AB} \\
-\tfrac12 mv^2 &= \lvert q \rvert U
-\end{aligned}
+```kaavat
+sähkökentän potentiaali :: E_\text{p} = qV
+sähkökentän tekemä työ :: W_{AB} = qU_{AB}
+sähkökentässä kiihdytetyn hiukkasen liike-energia :: \tfrac12 mv^2 = \lvert q \rvert U
 ```
 
 missä $V$ on kohdan potentiaali ($\text{V}$) valittuun nollakohtaan nähden, $U_{AB} = V_A - V_B$ ja $W_{AB}$ kentän tekemä työ ($\text{J}$). Työ ei riipu reitistä. Kenttä osoittaa suuremmasta potentiaalista pienempään. Levosta lähtevä varaus liikkuu siihen suuntaan, jossa sen potentiaalienergia pienenee. Viimeinen yhtälö pätee hiukkaselle, joka lähtee levosta, kun vain sähköinen voima tekee työtä. Energian yksikkö on myös $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$.
 
 ### Kondensaattori
 
-```latex
-\begin{aligned}
-C &= \frac{Q}{U} \\
-C &= \frac{\varepsilon_0\varepsilon_\text{r}A}{d} \\
-W &= \tfrac12 QU = \tfrac12 CU^2 \\
-U_\text{max} &= E_\text{max}d
-\end{aligned}
+```kaavat
+kondensaattorilaki :: C = \frac{Q}{U}
+levykondensaattorin kapasitanssi :: C = \frac{\varepsilon_0\varepsilon_\text{r}A}{d}
+kondensaattorin energia :: W = \tfrac12 QU = \tfrac12 CU^2
+läpilyöntijännite :: U_\text{max} = E_\text{max}d
 ```
 
 missä $C$ on kapasitanssi ($\text{F}$), $A$ levyn pinta-ala ($\text{m}^2$), $\varepsilon_0 = 8{,}854 \cdot 10^{-12}\,\text{F/m}$, $\varepsilon_\text{r}$ eristeen suhteellinen permittiivisyys, $W$ energia ($\text{J}$) ja $E_\text{max}$ eristeen läpilyöntilujuus ($\text{V/m}$). Läpilyöntilujuus on suurin kenttä, jonka eriste kestää. Levykondensaattorin kaava pätee, kun $d$ on pieni levyjen kokoon verrattuna ja eriste täyttää koko välin. Kun kondensaattori on kytketty lähteeseen, sen jännite pysyy samana. Kun kondensaattori on irrotettu lähteestä, sen varaus pysyy samana.
 
 ### Komponentit ja turvallisuus
 
-```latex
-\begin{aligned}
-R &= \frac{U - U_\text{D}}{I} \\
-\eta &= \frac{P}{GA} \\
-I &= \frac{U}{R}
-\end{aligned}
+```kaavat
+LEDin etuvastus :: R = \frac{U - U_\text{D}}{I}
+aurinkokennon hyötysuhde :: \eta = \frac{P}{GA}
+kehon läpi kulkeva virta :: I = \frac{U}{R}
 ```
 
 missä $R$ on LEDin etuvastus ($\Omega$), $U_\text{D}$ LEDin jännite ($\text{V}$), $P = UI$ aurinkokennon sähköteho maksimitehopisteessä ($\text{W}$) ja $G$ valon voimakkuus ($\text{W/m}^2$). Viimeinen yhtälö antaa kehon läpi kulkevan virran. Siinä $U$ on kosketusjännite ja $R$ koko virtatien resistanssi. Diodi johtaa vain päästösuuntaan, kun sen jännite on suurempi kuin kynnysjännite. Sulake suojaa johtoa, ja vikavirtasuoja suojaa ihmistä.

@@ -303,34 +303,30 @@ This also answers the opening question. In the coupling the forces between the w
 
 ### Energy
 
-```latex
-\begin{aligned}
-E_\text{k} &= \tfrac{1}{2}\,mv^2 \\
-E_\text{p} &= mgh
-\end{aligned}
+```kaavat
+kinetic energy :: E_\text{k} = \tfrac{1}{2}\,mv^2
+gravitational potential energy near the Earth's surface :: E_\text{p} = mgh
 ```
 
 where $m$ is the mass ($\text{kg}$), $v$ the speed ($\text{m/s}$), $g = 9.81\,\text{m/s}^2$ and $h$ the height above the chosen zero level ($\text{m}$). $E_\text{p} = mgh$ holds near the Earth's surface. The work–energy principle is
 
-```latex
-E_{\text{k},1} + E_{\text{p},1} + W_\text{other} = E_{\text{k},2} + E_{\text{p},2}
+```kaavat
+work-energy principle of mechanics :: E_{\text{k},1} + E_{\text{p},1} + W_\text{other} = E_{\text{k},2} + E_{\text{p},2}
 ```
 
 where $W_\text{other}$ is the work done by forces other than the weight ($\text{J}$). The work done by a constant force is $W = F_\parallel\,s$, where $F_\parallel$ is the component of the force along the motion; the work done by friction and air resistance is negative. When $W_\text{other} = 0$, mechanical energy is conserved.
 
 ### Momentum and impulse
 
-```latex
-\begin{aligned}
-\overline{p} &= m\overline{v} \\
-\Sigma\overline{F}\,\Delta t &= \Delta\overline{p}
-\end{aligned}
+```kaavat
+momentum :: \overline{p} = m\overline{v}
+impulse-momentum principle :: \Sigma\overline{F}\,\Delta t = \Delta\overline{p}
 ```
 
 where $\overline{p}$ is the momentum ($\text{kg} \cdot \text{m/s}$) and $\Sigma\overline{F}$ a constant net force acting for the time interval $\Delta t$. For a varying force the average force is $F_\text{avg} = |\Delta p| : \Delta t$. In one dimension a positive direction is chosen, and velocities pointing in the opposite direction are negative. When the impulse of the external forces is negligible,
 
-```latex
-m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'
+```kaavat
+conservation of momentum :: m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'
 ```
 
 In an elastic collision kinetic energy is also conserved. In a perfectly inelastic collision the bodies move on with a common velocity, $v_1' = v_2' = v'$, and the largest share of kinetic energy is transformed into internal energy.
@@ -339,12 +335,10 @@ In an elastic collision kinetic energy is also conserved. In a perfectly inelast
 
 On a horizontal road the stopping distance of a car is the reaction distance plus the braking distance:
 
-```latex
-\begin{aligned}
-s_\text{p} &= v_0\,t_\text{r} + \frac{v_0^2}{2a} \\
-P_\text{hydro} &= \eta\rho Qgh \\
-P_\text{wind} &= \tfrac12\eta\rho Av^3
-\end{aligned}
+```kaavat
+stopping distance :: s_\text{p} = v_0\,t_\text{r} + \frac{v_0^2}{2a}
+power of a hydroelectric plant :: P_\text{hydro} = \eta\rho Qgh
+power of a wind turbine :: P_\text{wind} = \tfrac12\eta\rho Av^3
 ```
 
 where $t_\text{r}$ is the reaction time ($\text{s}$) and $a$ the deceleration ($\text{m/s}^2$), assumed constant; at the limit of locking the wheels $a = \mu g$. In the electric power of the power plants $\eta$ is the efficiency and $\rho$ the density of water or air; for a hydropower plant $Q$ is the flow rate ($\text{m}^3\text{/s}$) and $h$ the head ($\text{m}$), for a wind turbine $A$ is the area swept by the rotor ($\text{m}^2$) and $v$ the wind speed. The expression for the wind power holds when the efficiency stays constant and the turbine runs below its rated power.

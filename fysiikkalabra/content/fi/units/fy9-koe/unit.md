@@ -292,8 +292,8 @@ Esimerkin vaiheet ovat samat kuin mallivastausten otsikot: *Tunnetut ja kysytty*
 <!-- vaihe -->
 
 **Kaava ratkaistuna.** Kysytty suure on jo yksin vasemmalla puolella:
-```latex
-Q = cm(T_2 - T_1)
+```kaavat
+siirtynyt lämpömäärä :: Q = cm(T_2 - T_1)
 ```
 
 <!-- vaihe -->

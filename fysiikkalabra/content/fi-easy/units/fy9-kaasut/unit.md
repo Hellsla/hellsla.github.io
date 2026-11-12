@@ -248,34 +248,34 @@ Nyt voimme vastata alun kysymykseen näillä kahdella tarkistuksella. Lämpimäs
 
 ### Paine ja nesteen paine
 
-```latex
-p = \frac{F}{A}
+```kaavat
+voiman aiheuttama paine :: p = \frac{F}{A}
 ```
 
 Tässä $p$ on paine (Pa), $F$ on pintaa vastaan kohtisuora voima (N) ja $A$ on pinta-ala (m²). Kun neste on levossa, paine syvyydellä $h$ on
 
-```latex
-p = p_0 + \rho g h
+```kaavat
+hydrostaattinen paine :: p = p_0 + \rho g h
 ```
 
 Tässä $p_0$ on paine nesteen pinnalla. Se on yleensä ilmanpaine, noin $101\,\text{kPa}$. $\rho$ on nesteen tiheys (kg/m³) ja $g = 9{,}81\,\text{m/s}^2$. Termi $\rho g h$ on ylipaine. Se riippuu vain syvyydestä ja tiheydestä. Astian muoto ei vaikuta siihen. Paineen aiheuttama voima on aina kohtisuorassa pintaa vastaan.
 
 ### Kaasun tila
 
-```latex
-pV = nRT
+```kaavat
+ideaalikaasun tilanyhtälö :: pV = nRT
 ```
 
 Tässä $V$ on tilavuus (m³), $n$ on ainemäärä (mol), $R = 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$ ja $T$ on lämpötila kelvineinä. Ainemäärä saadaan massasta: $n = m/M$. Tässä $M$ on moolimassa. Yhtälö pätee eli on voimassa harvalle kaasulle. Kaasu on harvaa, kun paine ei ole kovin suuri eikä lämpötila kovin matala. Kun kaasun määrä pysyy samana,
 
-```latex
-\frac{p_1 V_1}{T_1} = \frac{p_2 V_2}{T_2}
+```kaavat
+tilanyhtälö vakioainemäärälle :: \frac{p_1 V_1}{T_1} = \frac{p_2 V_2}{T_2}
 ```
 
 Tästä saadaan kolme erikoistapausta. Kun lämpötila on vakio, pätee Boylen laki $p_1V_1 = p_2V_2$. Kun paine on vakio, $V \propto T$. Kun tilavuus on vakio, $p \propto T$. Merkki $\propto$ tarkoittaa, että suureet ovat suoraan verrannolliset. Kelvinlämpötila on
 
-```latex
-T = \theta + 273{,}15\,\text{K}
+```kaavat
+lämpötila kelvineinä :: T = \theta + 273{,}15\,\text{K}
 ```
 
 Tässä $\theta$ on celsiuslämpötilan lukuarvo. Kokeessa absoluuttinen nollapiste saadaan näin: $(\theta, p)$- tai $(\theta, V)$-suoraa jatketaan nollaan asti. Tulos on mallin ennuste. Todellinen kaasu tiivistyy eli muuttuu nesteeksi jo ennen sitä.
@@ -284,26 +284,26 @@ Tässä $\theta$ on celsiuslämpötilan lukuarvo. Kokeessa absoluuttinen nollapi
 
 Kun kaasu laajenee vakiopaineessa, se tekee työn
 
-```latex
-W_\text{k} = p\,\Delta V
+```kaavat
+kaasun tekemä laajenemistyö / kaasuun tehty puristustyö :: W_\text{k} = p\,\Delta V
 ```
 
 Tässä $\Delta V$ on tilavuuden muutos (m³). Työ on ($V$, $p$)-kuvaajan alle jäävä pinta-ala. Termodynamiikan ensimmäinen pääsääntö kertoo, miten kaasun sisäenergia muuttuu:
 
-```latex
-\Delta U = Q - W_\text{k}
+```kaavat
+lämpöopin 1. pääsääntö :: \Delta U = Q - W_\text{k}
 ```
 
 Tässä $Q$ on lämpö, joka siirtyy kaasuun (J), ja $W_\text{k}$ on kaasun tekemä työ. Lämpövoimakone toimii kierroksina. Yhden kierroksen aikana kone ottaa kuumasta lähteestä lämmön $Q_1$. Se tekee työn $W$. Lisäksi se luovuttaa eli antaa lämmön $Q_2$ kylmempään ympäristöön. Energia säilyy, joten
 
-```latex
-W = Q_1 - Q_2
+```kaavat
+lämpövoimakoneen tekemä työ :: W = Q_1 - Q_2
 ```
 
 Hyötysuhde on
 
-```latex
-\eta = \frac{W}{Q_1}
+```kaavat
+lämpövoimakoneen hyötysuhde :: \eta = \frac{W}{Q_1}
 ```
 
 Osa lämmöstä on aina annettava kylmempään paikkaan. Siksi lämpövoimakoneen hyötysuhde jää selvästi alle $100\,\%$:n. Verrataan lämpötilaeroa $T_1 - T_2$ kuuman lähteen lämpötilaan $T_1$. Mitä pienempi ero on, sitä pienemmän osan lämmöstä kone voi muuttaa työksi. Voimalaitoksessa hyötysuhde lasketaan tehoista: sähköteho jaetaan polttoaineteholla.

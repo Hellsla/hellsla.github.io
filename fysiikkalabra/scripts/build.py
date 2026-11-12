@@ -28,7 +28,7 @@ stay in their lesson folders and keep their <id>-sim.js URLs.
 """
 import hashlib, json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status, published_exercises, WorkTree
-import ahjo, answers_shown, kilparobo, lumatutor, assigned, booklets, cardgrid, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, svgids, units, tablefit
+import ahjo, answers_shown, kaavat, kilparobo, lumatutor, assigned, booklets, cardgrid, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, svgids, units, tablefit
 from i18n import t as T
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
@@ -303,6 +303,7 @@ def render_md(text, **kw):
     ```latex fences become $$...$$; every $$...$$ and $...$ is swapped for a token first,
     so underscores, backslashes and asterisks inside maths are not read as markdown."""
     text = re.sub(r"```latex\n(.*?)```", lambda m: "\n$$" + m.group(1).strip() + "$$\n", text, flags=re.S)
+    text = kaavat.as_html(text)                                                    # ```kaavat: named formulas as a formula table
     text, fbds = fbdspec.render(text)                                              # ```voimakuvio specs -> drawn diagrams
     text, figrefs = figcat.embed(text)                                             # a model figure by id inside a solution step
     maths = []

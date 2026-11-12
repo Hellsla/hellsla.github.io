@@ -292,8 +292,8 @@ The stages of the example are the same as the headings of the model answers: *Gi
 <!-- vaihe -->
 
 **Rearranged formula.** The unknown is already alone on the left-hand side:
-```latex
-Q = cm(T_2 - T_1)
+```kaavat
+heat transferred :: Q = cm(T_2 - T_1)
 ```
 
 <!-- vaihe -->

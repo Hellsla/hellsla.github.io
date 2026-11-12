@@ -233,25 +233,21 @@ This gives the answer to the opening question. The whistle vibrates at the frequ
 
 ### Oscillators
 
-```latex
-\begin{aligned}
-f &= \frac{1}{T} \\
-F &= -kx \\
-T &= 2\pi\sqrt{\frac{m}{k}} \\
-T &= 2\pi\sqrt{\frac{l}{g}}
-\end{aligned}
+```kaavat
+frequency :: f = \frac{1}{T}
+harmonic force :: F = -kx
+period of a harmonic oscillator :: T = 2\pi\sqrt{\frac{m}{k}}
+period of a simple pendulum :: T = 2\pi\sqrt{\frac{l}{g}}
 ```
 
 where $f$ is the frequency ($\text{Hz}$), $T$ the period ($\text{s}$), $F$ the spring force ($\text{N}$), $k$ the spring constant ($\text{N/m}$), $x$ the displacement from the equilibrium position ($\text{m}$), $m$ the mass ($\text{kg}$) and $l$ the length of the pendulum ($\text{m}$). The spring force holds when the spring is not stretched too far. The period of the pendulum holds for small swings, and it does not depend on the mass. The elastic potential energy of a spring is $E_\text{p} = \tfrac12 kx^2$, and without friction the energy of the oscillation $\tfrac12 kA^2$ is conserved.
 
 ### Waves
 
-```latex
-\begin{aligned}
-v &= f\lambda \\
-\Delta s &= n\lambda \\
-\Delta s &= \left(n + \tfrac12\right)\lambda
-\end{aligned}
+```kaavat
+wave equation :: v = f\lambda
+constructive interference :: \Delta s = n\lambda
+destructive interference :: \Delta s = \left(n + \tfrac12\right)\lambda
 ```
 
 where $v$ is the speed of the wave ($\text{m/s}$), $\lambda$ the wavelength ($\text{m}$) and $\Delta s$ the path difference from two sources oscillating in phase ($\text{m}$), $n = 0, 1, 2, \ldots$ The first condition gives constructive and the second destructive interference. Diffraction is strong when the width of the gap or obstacle is about the wavelength or smaller. In reflection the angle of incidence equals the angle of reflection, when the angles are measured from the normal to the surface.
@@ -292,14 +288,12 @@ In a standing wave the distance between neighbouring nodes is $\tfrac{\lambda}{2
 
 ### Sound
 
-```latex
-\begin{aligned}
-f_\text{h} &= |f_1 - f_2| \\
-f &= f_0 \cdot \frac{v}{v \mp v_\text{s}} \\
-f &= f_0 \cdot \frac{v \pm v_\text{h}}{v} \\
-I &= \frac{P}{4\pi r^2} \\
-L &= 10\,\text{dB} \cdot \lg \frac{I}{I_0}
-\end{aligned}
+```kaavat
+beat frequency :: f_\text{h} = |f_1 - f_2|
+Doppler effect, moving source :: f = f_0 \cdot \frac{v}{v \mp v_\text{s}}
+Doppler effect, moving observer :: f = f_0 \cdot \frac{v \pm v_\text{h}}{v}
+intensity :: I = \frac{P}{4\pi r^2}
+sound intensity level :: L = 10\,\text{dB} \cdot \lg \frac{I}{I_0}
 ```
 
 where $f_\text{h}$ is the beat frequency ($\text{Hz}$), $f_0$ the frequency of the source and $f$ the heard frequency ($\text{Hz}$), $v$ the speed of sound, $v_\text{s}$ the speed of the source and $v_\text{h}$ the speed of the listener relative to the air ($\text{m/s}$). In the Doppler formulas the upper sign is chosen when they approach, and the formulas hold when only one of them moves and the speed is smaller than the speed of sound. The expression for the intensity holds for a point source of power $P$ at the distance $r$ without reflections. $L$ is the intensity level and $I_0 = 1.0 \cdot 10^{-12}\,\text{W/m}^2$. The distance from an echo is $d = \tfrac{vt}{2}$, because the pulse travels the distance twice.

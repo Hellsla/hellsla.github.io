@@ -504,25 +504,22 @@ This answers the opening question. The energy of a red photon of a grow light ($
 
 ### The photon and the atom
 
-```latex
-\begin{aligned}
-E &= hf = \frac{hc}{\lambda} \\
-hf &= W + E_\text{k,max} \\
-hf &= E_\text{u} - E_\text{l} \\
-p &= \frac{h}{\lambda}
-\end{aligned}
+```kaavat
+photon energy :: E = hf = \frac{hc}{\lambda}
+photoelectric effect :: hf = W + E_\text{k,max}
+energy of a photon emitted or absorbed by an atom :: hf = E_\text{u} - E_\text{l}
+photon momentum :: p = \frac{h}{\lambda}
 ```
 
 where $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$ is the Planck constant, $f$ the frequency, $\lambda$ the wavelength, $W$ the work function of the metal, $E_\text{k,max}$ the largest kinetic energy of an emitted electron, $E_\text{u}$ and $E_\text{l}$ the energies of the upper and the lower energy state and $p$ the momentum of the photon. Electrons are emitted only when $hf \geq W$. An atom absorbs only a photon whose energy is exactly the difference of levels, unless the photon ionises the atom. For hydrogen $E_n = -\tfrac{13.6\,\text{eV}}{n^2}$. At the threshold voltage of an LED $eU_\text{k} \approx hf$. Conversions: $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$ and $hc \approx 1240\,\text{eV}\,\text{nm}$.
 
 ### The nucleus and decay
 
-```latex
-\begin{aligned}
-N &= N_0 \left(\tfrac12\right)^{t/T_{1/2}} \\
-A &= \lambda N,\quad \lambda = \frac{\ln 2}{T_{1/2}} \\
-Q &= (m_\text{initial} - m_\text{final})\,c^2
-\end{aligned}
+```kaavat
+law of radioactive decay :: N = N_0 \left(\tfrac12\right)^{t/T_{1/2}}
+activity :: A = \lambda N
+decay constant :: \lambda = \frac{\ln 2}{T_{1/2}}
+energy released in a nuclear reaction :: Q = (m_\text{initial} - m_\text{final})\,c^2
 ```
 
 where $N$ is the number of undecayed nuclei at the time $t$, $T_{1/2}$ the half-life, $A$ the activity ($\text{Bq}$), $\lambda$ the decay constant and $Q$ the reaction energy. In a decay equation the mass number and the charge number are conserved: in alpha decay $Z$ decreases by two and $A$ by four, in beta minus decay $Z$ increases by one. The decay law describes a large set of nuclei. The binding energy is $E_\text{B} = \Delta m\,c^2$, and $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$. Fission and fusion release energy, because the binding energy per nucleon of the products is larger.
@@ -586,13 +583,12 @@ where $N$ is the number of undecayed nuclei at the time $t$, $T_{1/2}$ the half-
 
 ### Radiation and dose
 
-```latex
-\begin{aligned}
-D &= \frac{E}{m},\quad H_\text{T} = w_\text{R} D_\text{T} \\
-H &= \dot{H} t \\
-\dot{H}_2 &= \dot{H}_1 \left(\frac{r_1}{r_2}\right)^2 \\
-\dot{H} &= \dot{H}_0 \left(\tfrac12\right)^{d/d_{1/2}}
-\end{aligned}
+```kaavat
+absorbed dose :: D = \frac{E}{m}
+equivalent dose :: H_\text{T} = w_\text{R} D_\text{T}
+dose from the dose rate :: H = \dot{H} t
+dose rate as a function of distance :: \dot{H}_2 = \dot{H}_1 \left(\frac{r_1}{r_2}\right)^2
+attenuation law :: \dot{H} = \dot{H}_0 \left(\tfrac12\right)^{d/d_{1/2}}
 ```
 
 where $D$ is the absorbed dose ($\text{Gy}$), $E$ the absorbed energy, $m$ the mass of the tissue, $H_\text{T}$ the equivalent dose ($\text{Sv}$), $w_\text{R}$ the radiation weighting factor (alpha $20$, beta and gamma $1$), $\dot{H}$ the dose rate, $t$ the time, $r$ the distance and $d_{1/2}$ the half-value thickness. The inverse square law holds for a point source when the air does not attenuate the radiation. The half-value thickness applies to photon radiation, because alpha and beta radiation have a range. The recession speed of galaxies is $v = H_0 d$, and for a small redshift $v = cz$.

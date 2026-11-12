@@ -156,28 +156,29 @@ In the exam, follow the energy first: where it comes from, where it goes and whe
 
 ### Temperature and internal energy
 
-```latex
-T = \theta + 273.15
+```kaavat
+temperature in kelvins :: T = \theta + 273.15
 ```
 
 where $T$ is the temperature in kelvins ($\text{K}$) and $\theta$ in degrees Celsius (${}^\circ\text{C}$). A temperature difference is the same in kelvins and in degrees Celsius, but ratios of temperatures are calculated in kelvins. Internal energy is changed by heat and work:
 
-```latex
-\Delta U = Q + W
+```kaavat
+first law of thermodynamics :: \Delta U = Q + W
 ```
 
 where $\Delta U$ is the change in internal energy, $Q$ the quantity of heat transferred to the system and $W$ the work done on the system, all in joules. Energy coming into the system is positive. The equation holds when the kinetic and potential energy of the system do not change.
 
 ### Heating and change of state
 
-```latex
-Q = cm\Delta T
+```kaavat
+heat transferred :: Q = cm\Delta T
 ```
 
 where $c$ is the specific heat capacity ($\text{J/(kg}\cdot\text{K)}$), $m$ the mass ($\text{kg}$) and $\Delta T$ the change in temperature ($\text{K}$). The formula holds only when the state does not change. In melting and vaporisation
 
-```latex
-Q = sm \qquad Q = rm
+```kaavat
+heat of fusion :: Q = sm
+heat of vaporisation :: Q = rm
 ```
 
 where $s$ is the specific latent heat of fusion and $r$ the specific latent heat of vaporisation ($\text{J/kg}$). At constant pressure the temperature of a pure substance stays constant during the change, because the energy increases the interaction energy of the particles. The same energy is released in solidification and condensation. For water $c = 4190\,\text{J/(kg}\cdot\text{K)}$, for ice $c = 2100\,\text{J/(kg}\cdot\text{K)}$, $s = 334\,\text{kJ/kg}$ and $r = 2260\,\text{kJ/kg}$.
@@ -257,24 +258,25 @@ This gives the answer to the opening question. Warming a kilogram of snow from $
 
 In an insulated container energy is conserved:
 
-```latex
-Q_\text{released} = Q_\text{received}
+```kaavat
+heat balance :: Q_\text{released} = Q_\text{received}
 ```
 
 When ice and water are mixed, first compare whether the heat the water releases as it cools to $0\,{}^\circ\text{C}$ is enough to warm the ice to $0\,{}^\circ\text{C}$ and melt it. If it is, all the ice melts and the final temperature is at least $0\,{}^\circ\text{C}$. If it is not, some ice is left and the temperature is exactly $0\,{}^\circ\text{C}$. Very cold ice can also freeze some or all of the water.
 
 ### Expansion and heat transfer
 
-```latex
-\Delta L = \alpha L_0 \Delta T \qquad \Delta V = \gamma V_0 \Delta T
+```kaavat
+linear thermal expansion :: \Delta L = \alpha L_0 \Delta T
+volume thermal expansion :: \Delta V = \gamma V_0 \Delta T
 ```
 
 where $\alpha$ and $\gamma$ are the coefficients of linear and volume expansion ($1/\text{K}$) and $L_0$ and $V_0$ the original length and volume. For solids the formulas hold up to a change in temperature of about $100\,\text{K}$, and the $\gamma$ of a liquid is usable only near the temperature given in the table. Water is an exception: its density is greatest at about $4\,{}^\circ\text{C}$.
 
 Heat is transferred by conduction, convection and radiation, with a net flow from the warmer body to the colder one. The power conducted through a building element is
 
-```latex
-P = UA\Delta T
+```kaavat
+heat flow through a building element :: P = UA\Delta T
 ```
 
 where $U$ is the U-value ($\text{W/(m}^2\cdot\text{K)}$), $A$ the area ($\text{m}^2$) and $\Delta T$ the difference between the indoor and outdoor temperatures ($\text{K}$). The formula holds when the temperatures stay constant.

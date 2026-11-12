@@ -258,34 +258,34 @@ Nyt voimme vastata alun kysymykseen. Kymmenessä litrassa bensiiniä on energiaa
 
 Eristetty systeemi on systeemi, johon energiaa ei tule ja josta energiaa ei lähde. Eristetyssä systeemissä kokonaisenergia pysyy samana:
 
-```latex
-E_\text{alussa} = E_\text{lopussa}
+```kaavat
+energian säilymislaki :: E_\text{alussa} = E_\text{lopussa}
 ```
 
 Yhtälön kummallakin puolella on kaikkien energialajien summa. Myös lämpöenergia on mukana. Teho kertoo, kuinka paljon energiaa muuttuu tai siirtyy aikayksikössä:
 
-```latex
-P = \frac{\Delta E}{\Delta t}
+```kaavat
+teho :: P = \frac{\Delta E}{\Delta t}
 ```
 
 Kaavassa $P$ on teho (W), $\Delta E$ energia (J) ja $\Delta t$ aika (s). Jos teho vaihtelee, kaava antaa keskitehon. Jos teho pysyy samana, $E = P\,t$. Kilowattitunti on energian yksikkö. Se muunnetaan jouleiksi sijoittamalla:
 
-```latex
-1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}
+```kaavat
+kilowattitunti jouleina :: 1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}
 ```
 
 ### Hyötysuhde ja energiaketju
 
-```latex
-\eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}
+```kaavat
+hyötysuhde :: \eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}
 ```
 
 Kaavassa $\eta$ on hyötysuhde. $E_\text{a}$ on annettu hyötyenergia ja $P_\text{a}$ annettu hyötyteho. $E_\text{o}$ on otettu energia ja $P_\text{o}$ otettu teho. Tehojen suhdetta voi käyttää, kun laite toimii tasaisesti. Energia säilyy, joten $E_\text{o} = E_\text{a} + E_\text{h}$. Tässä $E_\text{h}$ on häviöt eli energia, joka ei tule hyödyksi. Hyötysuhde on enintään $100\,\%$. Hyötysuhde riippuu siitä, mitä pidetään hyötynä.
 
 Energiaketjussa on monta vaihetta peräkkäin. Jokaisen vaiheen hyötyteho on seuraavan vaiheen otettu teho. Siksi hyötysuhteet kerrotaan:
 
-```latex
-\eta = \eta_1\,\eta_2\,\eta_3
+```kaavat
+energiaketjun kokonaishyötysuhde :: \eta = \eta_1\,\eta_2\,\eta_3
 ```
 
 Kuvan esimerkkilaitoksessa $\eta = 0{,}90 \cdot 0{,}45 \cdot 0{,}98 \approx 0{,}40$. Polttoainetehosta $500\,\text{MW}$ tulee siis sähköksi $198\,\text{MW}$. Kuvan kaistojen leveydet ovat mittakaavassa. Lähtevät kaistat ovat yhteensä yhtä leveät kuin tuleva kaista.
@@ -325,11 +325,9 @@ Kuvan esimerkkilaitoksessa $\eta = 0{,}90 \cdot 0{,}45 \cdot 0{,}98 \approx 0{,}
 
 Polttoaineesta vapautuva energia ja voiman tekemä työ ovat
 
-```latex
-\begin{aligned}
-E &= Hm \\
-W &= Fs
-\end{aligned}
+```kaavat
+palamisessa vapautuva lämpö :: E = Hm
+voiman tekemä työ :: W = Fs
 ```
 
 Ensimmäisessä kaavassa $H$ on lämpöarvo ($\text{MJ/kg}$) ja $m$ palanut massa (kg). Kaava $E = Hm$ pätee, kun polttoaine palaa kokonaan. Lisäksi lämpöarvon $H$ täytyy vastata polttoaineen todellista kosteutta. Toisessa kaavassa $F$ on vakiovoima (N), joka on liikkeen suuntainen, ja $s$ on matka (m). Kun kappale nostetaan tasaisella nopeudella, työ on $W = mgh$. Siinä $g = 9{,}81\,\text{m/s}^2$ ja $h$ on nostokorkeus.

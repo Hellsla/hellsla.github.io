@@ -254,49 +254,41 @@ This answers the opening question. The devices of the cottage are connected to t
 
 ### Current, voltage and resistance
 
-```latex
-\begin{aligned}
-I &= \frac{Q}{t} \\
-R &= \frac{U}{I} \\
-R &= \rho\,\frac{l}{A}
-\end{aligned}
+```kaavat
+electric current :: I = \frac{Q}{t}
+voltage drop across a conductor :: R = \frac{U}{I}
+resistance of a conductor :: R = \rho\,\frac{l}{A}
 ```
 
 where $I$ is the current ($\text{A}$), $Q$ the charge that has passed through a cross-section ($\text{C}$), $t$ the time ($\text{s}$), $U$ the voltage across the component ($\text{V}$), $R$ the resistance ($\Omega$), $\rho$ the resistivity ($\Omega\cdot\text{m}$), $l$ the length of the wire ($\text{m}$) and $A$ the cross-sectional area ($\text{m}^2$). By Ohm's law the resistance of a metal conductor is constant when the temperature stays the same. The resistance of a filament lamp increases as the filament heats up. An ammeter is connected in series and a voltmeter in parallel.
 
 ### Connections and Kirchhoff's laws
 
-```latex
-\begin{aligned}
-R &= R_1 + R_2 + \dots \\
-\frac{1}{R} &= \frac{1}{R_1} + \frac{1}{R_2} + \dots \\
-\sum I_\text{in} &= \sum I_\text{out} \\
-\sum \Delta V &= 0
-\end{aligned}
+```kaavat
+total resistance of resistors in series :: R = R_1 + R_2 + \dots
+total resistance of resistors in parallel :: \frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \dots
+Kirchhoff's first law :: \sum I_\text{in} = \sum I_\text{out}
+Kirchhoff's second law :: \sum \Delta V = 0
 ```
 
 The first is the total resistance $R$ of resistors connected in series and the second of resistors connected in parallel. The current law holds at a junction, because charge is conserved. The voltage law holds when a loop is gone round once: the potential $V$ rises in the source from the negative terminal to the positive terminal and falls by $RI$ across a resistor in the direction of the current. That is why the voltage across parallel branches is the same.
 
 ### Power and energy
 
-```latex
-\begin{aligned}
-P &= UI \\
-P &= RI^2 = \frac{U^2}{R} \\
-E &= Pt
-\end{aligned}
+```kaavat
+power consumed in a conductor :: P = UI
+power consumed, in terms of resistance :: P = RI^2 = \frac{U^2}{R}
+energy used by an electrical device :: E = Pt
 ```
 
 where $P$ is the power ($\text{W}$) and $E$ the electrical energy transformed in the time $t$ ($\text{J}$ or $\text{kWh}$). The form $P = UI$ holds for every component, the forms of Joule's law only for a resistor. In series the larger resistance gets the larger power, in parallel the smaller. Units of energy are converted by substitution: $1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3.6\,\text{MJ}$. When the same problem also has an emf $E$, the letter $W$ is used for energy.
 
 ### Battery and accumulator
 
-```latex
-\begin{aligned}
-U &= E - R_\text{s} I \\
-I &= \frac{E}{R + R_\text{s}} \\
-Q &= It
-\end{aligned}
+```kaavat
+terminal voltage of a source :: U = E - R_\text{s} I
+current in a closed circuit :: I = \frac{E}{R + R_\text{s}}
+electric current :: Q = It
 ```
 
 where $E$ is the emf ($\text{V}$), $R_\text{s}$ the internal resistance ($\Omega$), $U$ the terminal voltage ($\text{V}$), $R$ the resistance of the external circuit ($\Omega$) and $Q$ the capacity of the battery ($\text{Ah}$ or $\text{C}$). The model assumes that $E$ and $R_\text{s}$ stay constant. The energy of a battery is $W = UQ$, where $U$ is the rated voltage, and during charging the terminal voltage is $U = E + R_\text{s} I$.

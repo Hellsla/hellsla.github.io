@@ -156,28 +156,29 @@ Kokeessa seuraa ensin energiaa: mistä se lähtee, mihin se menee ja muuttuuko o
 
 ### Lämpötila ja sisäenergia
 
-```latex
-T = \theta + 273{,}15
+```kaavat
+lämpötila kelvineinä :: T = \theta + 273{,}15
 ```
 
 missä $T$ on lämpötila kelvineinä ($\text{K}$) ja $\theta$ celsiusasteina (${}^\circ\text{C}$). Lämpötilaero on sama kelvineinä ja celsiusasteina, mutta lämpötilojen suhteet lasketaan kelvineinä. Sisäenergiaa muuttavat lämpö ja työ:
 
-```latex
-\Delta U = Q + W
+```kaavat
+lämpöopin 1. pääsääntö :: \Delta U = Q + W
 ```
 
 missä $\Delta U$ on sisäenergian muutos, $Q$ systeemiin siirtynyt lämpömäärä ja $W$ systeemiin tehty työ, kaikki jouleina. Systeemiin tuleva energia on positiivista. Yhtälö pätee, kun systeemin liike- ja potentiaalienergia eivät muutu.
 
 ### Lämpeneminen ja olomuodon muutos
 
-```latex
-Q = cm\Delta T
+```kaavat
+siirtynyt lämpömäärä :: Q = cm\Delta T
 ```
 
 missä $c$ on ominaislämpökapasiteetti ($\text{J/(kg}\cdot\text{K)}$), $m$ massa ($\text{kg}$) ja $\Delta T$ lämpötilan muutos ($\text{K}$). Kaava pätee vain, kun olomuoto ei muutu. Sulamisessa ja höyrystymisessä
 
-```latex
-Q = sm \qquad Q = rm
+```kaavat
+sulamislämpö :: Q = sm
+höyrystymislämpö :: Q = rm
 ```
 
 missä $s$ on ominaissulamislämpö ja $r$ ominaishöyrystymislämpö ($\text{J/kg}$). Puhtaan aineen lämpötila pysyy vakiopaineessa muutoksen ajan vakiona, koska energia kasvattaa hiukkasten vuorovaikutusenergiaa. Sama energia vapautuu jähmettymisessä ja tiivistymisessä. Vedelle $c = 4190\,\text{J/(kg}\cdot\text{K)}$, jäälle $c = 2100\,\text{J/(kg}\cdot\text{K)}$, $s = 334\,\text{kJ/kg}$ ja $r = 2260\,\text{kJ/kg}$.
@@ -257,24 +258,25 @@ Tästä saadaan vastaus alun kysymykseen. Kilogramman lumen lämmittäminen $-10
 
 Eristetyssä astiassa energia säilyy:
 
-```latex
-Q_\text{luovutettu} = Q_\text{vastaanotettu}
+```kaavat
+lämpötase :: Q_\text{luovutettu} = Q_\text{vastaanotettu}
 ```
 
 Kun jäätä ja vettä sekoitetaan, verrataan ensin, riittääkö lämpö, jonka vesi luovuttaa jäähtyessään $0\,{}^\circ\text{C}$:seen, lämmittämään jään $0\,{}^\circ\text{C}$:seen ja sulattamaan sen. Jos riittää, kaikki jää sulaa ja lopputila on vähintään $0\,{}^\circ\text{C}$. Jos ei riitä, jäätä jää jäljelle ja lämpötila on tasan $0\,{}^\circ\text{C}$. Hyvin kylmä jää voi myös jäädyttää osan vedestä tai kaiken veden.
 
 ### Laajeneminen ja lämmön siirtyminen
 
-```latex
-\Delta L = \alpha L_0 \Delta T \qquad \Delta V = \gamma V_0 \Delta T
+```kaavat
+pituuden lämpölaajeneminen :: \Delta L = \alpha L_0 \Delta T
+tilavuuden lämpölaajeneminen :: \Delta V = \gamma V_0 \Delta T
 ```
 
 missä $\alpha$ ja $\gamma$ ovat pituuden ja tilavuuden lämpötilakertoimet ($1/\text{K}$) ja $L_0$ ja $V_0$ alkuperäinen pituus ja tilavuus. Kaavat pätevät kiinteille aineille noin $100\,\text{K}$:n lämpötilan muutokseen asti, ja nesteen $\gamma$ on käyttökelpoinen vain taulukon lämpötilan lähellä. Vesi on poikkeus: sen tiheys on suurin noin $4\,{}^\circ\text{C}$:ssa.
 
 Lämpö siirtyy johtumalla, konvektiona ja säteilynä, nettomääräisesti lämpimämmästä kappaleesta kylmempään. Rakennusosan läpi johtuva teho on
 
-```latex
-P = UA\Delta T
+```kaavat
+rakennusosan läpi johtuva lämpöteho :: P = UA\Delta T
 ```
 
 missä $U$ on U-arvo ($\text{W/(m}^2\cdot\text{K)}$), $A$ pinta-ala ($\text{m}^2$) ja $\Delta T$ sisä- ja ulkolämpötilan ero ($\text{K}$). Kaava pätee, kun lämpötilat pysyvät vakioina.

@@ -183,14 +183,12 @@ Tästä saadaan vastaus alun kysymykseen. Kaapelia pitkin siirretään mantereel
 
 ### Magneettikenttä ja voimat
 
-```latex
-\begin{aligned}
-F &= qvB\sin\alpha \\
-r &= \frac{mv}{qB} \\
-F &= IlB\sin\alpha \\
-B &= \frac{\mu_0 I}{2\pi r} \\
-B &= \mu_0 \frac{NI}{l}
-\end{aligned}
+```kaavat
+varattuun hiukkaseen kohdistuva magneettinen voima :: F = qvB\sin\alpha
+varatun hiukkasen ympyräradan säde magneettikentässä :: r = \frac{mv}{qB}
+suoraan johtimeen kohdistuva magneettinen voima :: F = IlB\sin\alpha
+suoran virtajohtimen magneettivuon tiheys :: B = \frac{\mu_0 I}{2\pi r}
+pitkän käämin magneettivuon tiheys :: B = \mu_0 \frac{NI}{l}
 ```
 
 missä $q$ on varaus ($\text{C}$), $v$ vauhti ($\text{m/s}$), $B$ magneettivuon tiheys ($\text{T}$), $\alpha$ nopeuden tai johtimen ja kentän välinen kulma, $m$ massa ($\text{kg}$), $r$ ympyräradan säde tai etäisyys johtimesta ($\text{m}$), $I$ virta ($\text{A}$), $l$ johtimen tai käämin pituus ($\text{m}$), $N$ kierrosten lukumäärä ja $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$. Säteen kaava pätee, kun nopeus on kohtisuorassa homogeenista kenttää vastaan ja pieni valon nopeuteen verrattuna. Magneettinen voima ei muuta vauhtia. Johtimen kaava pätee pitkälle suoralle johtimelle ja käämin kaava pitkän käämin keskelle.
@@ -289,29 +287,25 @@ missä $q$ on varaus ($\text{C}$), $v$ vauhti ($\text{m/s}$), $B$ magneettivuon 
 
 ### Induktio ja vaihtovirta
 
-```latex
-\begin{aligned}
-e &= -N\frac{\Delta\Phi}{\Delta t} \\
-e_0 &= NBA \cdot 2\pi f \\
-U &= \frac{U_0}{\sqrt{2}} \\
-\frac{U_1}{U_2} &= \frac{N_1}{N_2} = \frac{I_2}{I_1} \\
-P_\text{h} &= RI^2
-\end{aligned}
+```kaavat
+käämiin indusoituva jännite :: e = -N\frac{\Delta\Phi}{\Delta t}
+generaattorissa käämiin indusoituvan sinimuotoisen vaihtojännitteen huippuarvo :: e_0 = NBA \cdot 2\pi f
+sinimuotoisen vaihtojännitteen tehollinen arvo :: U = \frac{U_0}{\sqrt{2}}
+muuntaja :: \frac{U_1}{U_2} = \frac{N_1}{N_2} = \frac{I_2}{I_1}
+siirtojohdon tehohäviö :: P_\text{h} = RI^2
 ```
 
 missä $e$ on induktiojännite ($\text{V}$), $\Phi = BA$ magneettivuo ($\text{Wb}$), kun kenttä on kohtisuorassa pintaa $A$ vastaan, $e_0$ generaattorin jännitteen huippuarvo, $f$ pyörimistaajuus ($\text{Hz}$), $U$ ja $U_0$ tehollinen arvo ja huippuarvo, indeksit $1$ ja $2$ muuntajan ensiö- ja toisiopuoli ja $P_\text{h}$ siirtojohdon häviöteho, kun $I = \tfrac{P}{U}$. Miinusmerkki on Lenzin laki: induktiovirta vastustaa vuon muutosta. Kentässä liikkuvan tangon jännite on $e = vBl$. Muuntajan yhtälö koskee ideaalista muuntajaa ja vaihtojännitettä.
 
 ### Valo
 
-```latex
-\begin{aligned}
-c &= f\lambda \\
-\lambda_\text{max} T &= b \\
-n_1\sin\alpha_1 &= n_2\sin\alpha_2 \\
-\sin\alpha_\text{r} &= \frac{n_2}{n_1} \\
-d\sin\theta &= k\lambda \\
-I &= I_0\cos^2\theta
-\end{aligned}
+```kaavat
+aaltoliikkeen perusyhtälö :: c = f\lambda
+Wienin siirtymälaki :: \lambda_\text{max} T = b
+taittumislaki (Snellin laki) :: n_1\sin\alpha_1 = n_2\sin\alpha_2
+kokonaisheijastuksen rajakulma :: \sin\alpha_\text{r} = \frac{n_2}{n_1}
+hilayhtälö :: d\sin\theta = k\lambda
+Malusin laki :: I = I_0\cos^2\theta
 ```
 
 missä $c = 3{,}00 \cdot 10^8\,\text{m/s}$, $f$ taajuus, $\lambda$ aallonpituus, $T$ absoluuttinen lämpötila ($\text{K}$), $b = 2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}$, $n = \tfrac{c}{v}$ taitekerroin, $\alpha$ kulmat normaalista, $\alpha_\text{r}$ rajakulma, kun $n_1 > n_2$, $d$ hilavakio, $\theta$ hilassa maksimin suunta, $k = 0, 1, 2, \ldots$ ja $I_0$ polarisoituneen valon intensiteetti ennen analysaattoria. Malusin laissa $\theta$ on polarisaation suunnan ja analysaattorin läpäisysuunnan välinen kulma. Ohuessa kalvossa matkaero on $2nd$, kun valo tulee lähes kohtisuoraan. Kun vain toinen heijastus kääntää aallon, $2nd = \left(k + \tfrac12\right)\lambda$ antaa vahvistavan interferenssin; kun molemmat kääntävät, $2nd = k\lambda$.

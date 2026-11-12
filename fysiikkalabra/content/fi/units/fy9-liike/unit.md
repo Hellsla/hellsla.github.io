@@ -298,14 +298,14 @@ Tästä saadaan vastaus alun kysymykseen. Nopeus kertoo, montako metriä vaunu k
 
 Keskinopeus on siirtymä jaettuna siihen kuluneella ajalla:
 
-```latex
-v_\text{ka} = \frac{\Delta x}{\Delta t}
+```kaavat
+keskinopeus :: v_\text{ka} = \frac{\Delta x}{\Delta t}
 ```
 
 missä $\Delta x = x_2 - x_1$ on siirtymä ($\text{m}$) ja $\Delta t$ aika ($\text{s}$). Kun nopeus $v$ on vakio ja kappale on hetkellä $t = 0$ paikassa $x_0$,
 
-```latex
-x = x_0 + v\,t
+```kaavat
+paikka tasaisessa suoraviivaisessa liikkeessä :: x = x_0 + v\,t
 ```
 
 Tämä on $(t,x)$-kuvaajan suora: $x_0$ on leikkauskohta paikka-akselilla ja $v$ kulmakerroin. Paikka on suoraan verrannollinen aikaan vain, kun $x_0 = 0$.
@@ -314,17 +314,15 @@ Tämä on $(t,x)$-kuvaajan suora: $x_0$ on leikkauskohta paikka-akselilla ja $v$
 
 Kiihtyvyys on nopeuden muutos aikaa kohti:
 
-```latex
-a = \frac{\Delta v}{\Delta t}
+```kaavat
+keskikiihtyvyys :: a = \frac{\Delta v}{\Delta t}
 ```
 
 Kun kiihtyvyys on vakio ja liike suoraviivaista, nopeus ja paikka hetkellä $t$ ovat
 
-```latex
-\begin{aligned}
-v &= v_0 + a\,t \\
-x &= x_0 + v_0\,t + \tfrac{1}{2}\,a\,t^2
-\end{aligned}
+```kaavat
+nopeus tasaisesti kiihtyvässä suoraviivaisessa liikkeessä :: v = v_0 + a\,t
+paikka tasaisesti kiihtyvässä suoraviivaisessa liikkeessä :: x = x_0 + v_0\,t + \tfrac{1}{2}\,a\,t^2
 ```
 
 missä $v_0$ on alkunopeus ($\text{m/s}$) ja $a$ kiihtyvyys ($\text{m/s}^2$). Vauhti kasvaa, kun $a$ ja $v$ ovat samansuuntaiset, ja pienenee, kun ne ovat vastakkaissuuntaiset. Vapaassa pudotuksessa $a = g = 9{,}81\,\text{m/s}^2$ alaspäin, kun ilmanvastus on pieni.
@@ -333,8 +331,8 @@ missä $v_0$ on alkunopeus ($\text{m/s}$) ja $a$ kiihtyvyys ($\text{m/s}^2$). Va
 
 Kaarevan $(t,x)$-kuvaajan hetkellinen nopeus on tangentin kulmakerroin $k$. Kahden käyrän pisteen kautta laskettu suhde on keskinopeus. Siirtymä on $(t,v)$-kuvaajan ja aika-akselin välinen pinta-ala, ja akselin alapuolinen osa lasketaan negatiivisena. Tasaisesti kiihtyvässä liikkeessä ala on puolisuunnikas, joten keskinopeus on alku- ja loppunopeuden keskiarvo:
 
-```latex
-\Delta x = \frac{v_0 + v}{2}\,t
+```kaavat
+siirtymä tasaisesti kiihtyvässä suoraviivaisessa liikkeessä :: \Delta x = \frac{v_0 + v}{2}\,t
 ```
 
 <svg data-fig="kuvaajat" viewBox="0 0 440 650" role="img" aria-label="Kaavakuva yhdestä liikkeestä kahtena kuvaajana, joilla on sama aika-akseli. Alhaalla nopeuden kuvaaja: nopeus kasvaa nollasta tasaisesti hetkeen t1, pysyy vakiona hetkeen t2 ja pienenee tasaisesti nollaan hetkellä t3. Kuvaajan alle jäävä alue on väritetty vihreäksi, ja sen pinta-ala on siirtymä Δx. Ylhäällä paikan kuvaaja: ensin ylöspäin kaartuva käyrä, sitten nouseva suora ja lopuksi käyrä, joka loivenee vaakasuoraksi. Paikka kasvaa koko liikkeen ajan yhteensä Δx. Käyrän pisteeseen P on piirretty sininen tangentti, jonka kulmakerroin k on nopeus v_P; sama arvo on merkitty alempaan kuvaajaan." style="max-width:100%;font-size:21px">
@@ -386,8 +384,8 @@ Kaarevan $(t,x)$-kuvaajan hetkellinen nopeus on tangentin kulmakerroin $k$. Kahd
 
 Kahden kappaleen paikat kirjoitetaan samassa koordinaatistossa, ja ne kohtaavat, kun
 
-```latex
-x_\text{A}(t) = x_\text{B}(t)
+```kaavat
+kohtaamisehto :: x_\text{A}(t) = x_\text{B}(t)
 ```
 
 $(t,x)$-kuvaajassa kohtaaminen on viivojen leikkauspiste. Ylempänä oleva viiva tarkoittaa suurempaa paikkakoordinaattia. Kun takana oleva kappale on aluksi hitaampi ja kiihtyy, välimatka on suurimmillaan silloin, kun nopeudet ovat yhtä suuret.

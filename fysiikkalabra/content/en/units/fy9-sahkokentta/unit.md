@@ -264,13 +264,11 @@ The voltage is large, but the body is a small capacitor with a capacitance of ab
 
 ### Charge, force and field
 
-```latex
-\begin{aligned}
-Q &= ne \\
-F &= k\,\frac{\lvert q_1 q_2 \rvert}{r^2} \\
-\overline{F} &= q\overline{E} \\
-E &= \frac{U}{d}
-\end{aligned}
+```kaavat
+charge as a multiple of the elementary charge :: Q = ne
+magnitude of the Coulomb force :: F = k\,\frac{\lvert q_1 q_2 \rvert}{r^2}
+electric field strength :: \overline{F} = q\overline{E}
+voltage in a uniform electric field :: E = \frac{U}{d}
 ```
 
 where $n$ is the number of elementary charges, $e = 1.602 \cdot 10^{-19}\,\text{C}$ the elementary charge, $F$ the force ($\text{N}$), $q_1$ and $q_2$ the charges ($\text{C}$), $r$ their distance ($\text{m}$), $k = 8.988 \cdot 10^{9}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{C}^2}$, $\overline{E}$ the electric field strength ($\text{N/C} = \text{V/m}$), $U$ the voltage between the plates ($\text{V}$) and $d$ the distance between the plates ($\text{m}$). Charge is conserved. Coulomb's law holds for point charges and uniformly charged spheres, and the forces of several charges are added as vectors. The field $E = \tfrac{U}{d}$ holds only between large parallel plates, where the field is uniform.
@@ -350,37 +348,31 @@ where $n$ is the number of elementary charges, $e = 1.602 \cdot 10^{-19}\,\text{
 
 ### Potential and energy
 
-```latex
-\begin{aligned}
-E_\text{p} &= qV \\
-W_{AB} &= qU_{AB} \\
-\tfrac12 mv^2 &= \lvert q \rvert U
-\end{aligned}
+```kaavat
+electric potential :: E_\text{p} = qV
+work done by an electric field :: W_{AB} = qU_{AB}
+kinetic energy of a particle accelerated in an electric field :: \tfrac12 mv^2 = \lvert q \rvert U
 ```
 
 where $V$ is the potential at a point ($\text{V}$) relative to a chosen zero, $U_{AB} = V_A - V_B$ and $W_{AB}$ the work done by the field ($\text{J}$). The work does not depend on the path. The field points from higher potential to lower, and a charge starting from rest moves in the direction in which its potential energy decreases. The last equation holds for a particle starting from rest when only the electric force does work. The energy unit $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$.
 
 ### The capacitor
 
-```latex
-\begin{aligned}
-C &= \frac{Q}{U} \\
-C &= \frac{\varepsilon_0\varepsilon_\text{r}A}{d} \\
-W &= \tfrac12 QU = \tfrac12 CU^2 \\
-U_\text{max} &= E_\text{max}d
-\end{aligned}
+```kaavat
+capacitor law :: C = \frac{Q}{U}
+capacitance of a parallel-plate capacitor :: C = \frac{\varepsilon_0\varepsilon_\text{r}A}{d}
+energy of a capacitor :: W = \tfrac12 QU = \tfrac12 CU^2
+breakdown voltage :: U_\text{max} = E_\text{max}d
 ```
 
 where $C$ is the capacitance ($\text{F}$), $A$ the area of a plate ($\text{m}^2$), $\varepsilon_0 = 8.854 \cdot 10^{-12}\,\text{F/m}$, $\varepsilon_\text{r}$ the relative permittivity of the dielectric, $W$ the energy ($\text{J}$) and $E_\text{max}$ the dielectric strength of the dielectric ($\text{V/m}$). The formula of the parallel-plate capacitor holds when $d$ is small compared with the size of the plates and the dielectric fills the gap. For a capacitor connected to a source the voltage stays the same; for a disconnected one, the charge.
 
 ### Components and safety
 
-```latex
-\begin{aligned}
-R &= \frac{U - U_\text{D}}{I} \\
-\eta &= \frac{P}{GA} \\
-I &= \frac{U}{R}
-\end{aligned}
+```kaavat
+series resistor of an LED :: R = \frac{U - U_\text{D}}{I}
+efficiency of a solar cell :: \eta = \frac{P}{GA}
+current through the body :: I = \frac{U}{R}
 ```
 
 where $R$ is the series resistor of an LED ($\Omega$), $U_\text{D}$ the voltage of the LED ($\text{V}$), $P = UI$ the electric power of a solar cell at the maximum power point ($\text{W}$) and $G$ the light intensity ($\text{W/m}^2$). The last equation gives the current through the body when $U$ is the touch voltage and $R$ the resistance of the whole current path. A diode conducts only in the forward direction, when its voltage exceeds the threshold voltage. A fuse protects the cable, a residual current device the person.

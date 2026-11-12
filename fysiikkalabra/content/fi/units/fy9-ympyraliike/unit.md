@@ -251,12 +251,10 @@ Alun kysymys ratkeaa samalla tavalla. Satelliittiin vaikuttaa vain Maan gravitaa
 
 ### Momentti ja tasapaino
 
-```latex
-\begin{aligned}
-M &= Fr \\
-\Sigma\overline{F} &= \overline{0} \\
-\Sigma M &= 0
-\end{aligned}
+```kaavat
+voiman momentti :: M = Fr
+voimien tasapainoehto :: \Sigma\overline{F} = \overline{0}
+momenttien tasapainoehto :: \Sigma M = 0
 ```
 
 missä $M$ on voiman momentti ($\text{Nm}$), $F$ voiman suuruus ($\text{N}$) ja $r$ voiman varsi ($\text{m}$) eli kiertoakselin kohtisuora etäisyys voiman vaikutussuorasta. Jos voima muodostaa kulman $\alpha$ akselista vaikutuskohtaan kulkevan suoran kanssa ja vaikutuskohta on etäisyydellä $d$, varsi on $r = d\sin\alpha$. Vastapäivään kiertävä momentti on positiivinen. Levossa olevan kappaleen momenttiehto pätee minkä tahansa pisteen suhteen, joten momenttipisteeksi kannattaa valita tuntemattoman voiman vaikutuspiste. Paino vaikuttaa painopisteessä.
@@ -307,24 +305,20 @@ missä $M$ on voiman momentti ($\text{Nm}$), $F$ voiman suuruus ($\text{N}$) ja 
 
 ### Tasainen ympyräliike
 
-```latex
-\begin{aligned}
-v &= \frac{2\pi r}{T} = 2\pi r f \\
-a_\text{n} &= \frac{v^2}{r} \\
-\Sigma F &= m\frac{v^2}{r}
-\end{aligned}
+```kaavat
+ratanopeus :: v = \frac{2\pi r}{T} = 2\pi r f
+keskeiskiihtyvyys :: a_\text{n} = \frac{v^2}{r}
+Newtonin 2. laki ympyräliikkeessä :: \Sigma F = m\frac{v^2}{r}
 ```
 
 missä $v$ on ratanopeus ($\text{m/s}$), $r$ radan säde ($\text{m}$), $T$ kierrosaika ($\text{s}$), $f = \tfrac{1}{T}$ pyörimistaajuus ($\tfrac{1}{\text{s}}$), $a_\text{n}$ normaalikiihtyvyys ($\text{m/s}^2$) ja $\Sigma F$ keskipisteeseen osoittava kokonaisvoima ($\text{N}$). Tasaisessa ympyräliikkeessä vauhti on vakio. Normaalikiihtyvyys $a_\text{n} = \tfrac{v^2}{r}$ pätee myös hetkellisesti, kun vauhti muuttuu: radan ylimmässä ja alimmassa kohdassa tangentin suuntaista voimaa ei ole, joten kokonaisvoima osoittaa keskipisteeseen. Nopeus on radan tangentin suuntainen. Liikeyhtälössä keskipisteeseen osoittavat voimat ovat positiivisia, ja kohtisuoraan ratatasoa vastaan voimien summa on nolla.
 
 ### Gravitaatio ja satelliitit
 
-```latex
-\begin{aligned}
-F &= \gamma\frac{m_1 m_2}{r^2} \\
-g &= \gamma\frac{M}{r^2} \\
-v &= \sqrt{\frac{\gamma M}{r}}
-\end{aligned}
+```kaavat
+Newtonin gravitaatiolaki :: F = \gamma\frac{m_1 m_2}{r^2}
+gravitaatiokentän voimakkuus :: g = \gamma\frac{M}{r^2}
+satelliitin ratanopeus :: v = \sqrt{\frac{\gamma M}{r}}
 ```
 
 missä $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$ on gravitaatiovakio, $m_1$ ja $m_2$ kappaleiden massat ($\text{kg}$), $M$ keskuskappaleen massa ($\text{kg}$) ja $r$ etäisyys keskipisteiden välillä ($\text{m}$). Laki pätee pistemäisille ja pallosymmetrisille kappaleille. Satelliitin ratanopeus saadaan ehdosta $\gamma\tfrac{Mm}{r^2} = m\tfrac{v^2}{r}$, ja se pätee ympyräradalle, kun keskuskappale on paljon satelliittia massiivisempi. Maan satelliitille $r = R + h$, missä $R = 6371\,\text{km}$, ja kiertoaika on $T = \tfrac{2\pi r}{v}$.

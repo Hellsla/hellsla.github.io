@@ -255,12 +255,10 @@ Alun kysymys ratkeaa samalla tavalla. Satelliittiin vaikuttaa vain Maan gravitaa
 
 ### Momentti ja tasapaino
 
-```latex
-\begin{aligned}
-M &= Fr \\
-\Sigma\overline{F} &= \overline{0} \\
-\Sigma M &= 0
-\end{aligned}
+```kaavat
+voiman momentti :: M = Fr
+voimien tasapainoehto :: \Sigma\overline{F} = \overline{0}
+momenttien tasapainoehto :: \Sigma M = 0
 ```
 
 Kaavoissa $M$ on voiman momentti ($\text{Nm}$), $F$ on voiman suuruus ($\text{N}$) ja $r$ on voiman varsi ($\text{m}$). Voiman varsi on kiertoakselin kohtisuora etäisyys voiman vaikutussuorasta. Vaikutussuora on suora viiva, jonka suuntaan voima vaikuttaa.
@@ -315,12 +313,10 @@ Kun kappale on levossa, momenttiehto pätee minkä tahansa pisteen suhteen. Siks
 
 ### Tasainen ympyräliike
 
-```latex
-\begin{aligned}
-v &= \frac{2\pi r}{T} = 2\pi r f \\
-a_\text{n} &= \frac{v^2}{r} \\
-\Sigma F &= m\frac{v^2}{r}
-\end{aligned}
+```kaavat
+ratanopeus :: v = \frac{2\pi r}{T} = 2\pi r f
+keskeiskiihtyvyys :: a_\text{n} = \frac{v^2}{r}
+Newtonin 2. laki ympyräliikkeessä :: \Sigma F = m\frac{v^2}{r}
 ```
 
 Kaavoissa $v$ on ratanopeus ($\text{m/s}$), $r$ on radan säde ($\text{m}$), $T$ on kierrosaika ($\text{s}$), $f = \tfrac{1}{T}$ on pyörimistaajuus ($\tfrac{1}{\text{s}}$), $a_\text{n}$ on normaalikiihtyvyys ($\text{m/s}^2$) ja $\Sigma F$ on kokonaisvoima, joka osoittaa keskipisteeseen ($\text{N}$).
@@ -331,12 +327,10 @@ Liikeyhtälössä keskipisteeseen osoittavat voimat ovat positiivisia. Ratatasoa
 
 ### Gravitaatio ja satelliitit
 
-```latex
-\begin{aligned}
-F &= \gamma\frac{m_1 m_2}{r^2} \\
-g &= \gamma\frac{M}{r^2} \\
-v &= \sqrt{\frac{\gamma M}{r}}
-\end{aligned}
+```kaavat
+Newtonin gravitaatiolaki :: F = \gamma\frac{m_1 m_2}{r^2}
+gravitaatiokentän voimakkuus :: g = \gamma\frac{M}{r^2}
+satelliitin ratanopeus :: v = \sqrt{\frac{\gamma M}{r}}
 ```
 
 Kaavoissa $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$ on gravitaatiovakio, $m_1$ ja $m_2$ ovat kappaleiden massat ($\text{kg}$), $M$ on keskuskappaleen massa ($\text{kg}$) ja $r$ on keskipisteiden välinen etäisyys ($\text{m}$). Keskuskappale on se kappale, jota satelliitti kiertää.
