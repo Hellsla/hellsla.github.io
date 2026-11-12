@@ -133,17 +133,18 @@ def curves():
     f.rect(ax.X(380), ax.Y(1.1), ax.X(750) - ax.X(380), ax.Y(0) - ax.Y(1.1), "#e7f0ff", extra='fill-opacity="0.8"')
     f.tex((ax.X(380) + ax.X(750)) / 2, ax.Y(1.06), r"\text{visible}", "middle", color=MUTED)
     top = planck(2.897771955e-3 / 6000 * 1e9, 6000)
-    for T, col, lx, ly in ((6000, COLD, 790, 0.97), (5000, GOOD, 940, 0.42), (4000, HOT, 600, 0.175)):
+    # Light correction (teacher 2026-11-11, illustration audit): each temperature at the end of its curve, in its colour,
+    # beyond the last gridline and stacked in the curves' own order, with a thin leader; "model values" joins the title row.
+    for T, col, yl in ((6000, COLD, 0.47), (5000, GOOD, 0.35), (4000, HOT, 0.23)):
         ax.curve(lambda l: planck(max(l, 60), T) / top, 100, 2000, col, 3)
         lp = 2.897771955e-3 / T * 1e9
         yp = planck(lp, T) / top
         f.line(ax.X(lp), ax.Y(yp), ax.X(lp), ax.Y(0), col, 1.8, "6 5")
         ax.point(lp, yp, col)
-        if T == 4000:     # in the gap between the 5000 K curve and the 4000 K peak, without a white box over the curves
-            f.tex(ax.X(lx), ax.Y(ly), rf"{T}\ \text{{K}}", "start", color=col, size=22)
-        else:
-            f.tex(ax.X(lx) + 12, ax.Y(ly), rf"{T}\ \text{{K}}", "start", color=col, bg=True)
-    f.tex(ax.X(1450), ax.Y(0.85), r"\text{model values}", "middle", color=MUTED, bg=True)
+        ye = planck(2000, T) / top
+        f.line(ax.X(2000) + 4, ax.Y(ye), ax.X(2000) + 24, ax.Y(yl), col, 1.25)
+        f.tex(ax.X(2000) + 28, ax.Y(yl), rf"{T}\ \text{{K}}", "start", color=col)
+    f.tex(588, 24, r"\text{model values}", "end", color=MUTED)
     return f.svg()
 
 

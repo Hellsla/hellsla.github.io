@@ -84,35 +84,35 @@ LEDs of different colours shine on the metal plate of a vacuum tube (a **photoce
 
 A heated cathode emits electrons, and an **accelerating voltage** $U$ of about $100\text{–}300\ \text{V}$ speeds them up. The tube contains a little helium, so the beam glows. Two coils make a nearly uniform magnetic field $\overline{B}$, and the beam bends into a circle of radius $r$, as in the unit *Charged particles and magnetic confinement*.
 
-<svg data-fig="em" viewBox="0 0 420 380" role="img" aria-label="Sketch, not to scale: the glass bulb of the e/m tube seen along the axis of the two coils. The magnetic field points out of the page, shown by green circles with a dot and labelled B. An electron leaves the electron gun at the bottom moving to the right and travels on a circle of radius r. At one point of the circle a blue arrow shows its velocity v along the circle and a red arrow shows the magnetic force F, which points to the centre of the circle." style="max-width:100%;font-size:28px">
-  <circle cx="210" cy="195" r="172" fill="#eef5f9" fill-opacity="0.5" stroke="#8a96a3" stroke-width="3"/>
-  <circle cx="92" cy="108" r="12" fill="#ffffff" stroke="#2b8a3e" stroke-width="3"/>
-  <circle cx="92" cy="108" r="4" fill="#2b8a3e"/>
-  <circle cx="290" cy="62" r="12" fill="#ffffff" stroke="#2b8a3e" stroke-width="3"/>
-  <circle cx="290" cy="62" r="4" fill="#2b8a3e"/>
-  <circle cx="80" cy="230" r="12" fill="#ffffff" stroke="#2b8a3e" stroke-width="3"/>
-  <circle cx="80" cy="230" r="4" fill="#2b8a3e"/>
-  <circle cx="150" cy="50" r="12" fill="#ffffff" stroke="#2b8a3e" stroke-width="3"/>
-  <circle cx="150" cy="50" r="4" fill="#2b8a3e"/>
-  <circle cx="330" cy="290" r="12" fill="#ffffff" stroke="#2b8a3e" stroke-width="3"/>
-  <circle cx="330" cy="290" r="4" fill="#2b8a3e"/>
-  <circle cx="100" cy="312" r="12" fill="#ffffff" stroke="#2b8a3e" stroke-width="3"/>
-  <circle cx="100" cy="312" r="4" fill="#2b8a3e"/>
-  <foreignObject x="237" y="47" width="37" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:28px;color:#2b8a3e">$\overline{B}$</div></foreignObject>
-  <circle cx="210" cy="185" r="98" fill="none" stroke="#3bc9db" stroke-width="10" stroke-opacity="0.3"/>
-  <circle cx="210" cy="185" r="98" fill="none" stroke="#3bc9db" stroke-width="3.5"/>
-  <rect x="166" y="274" width="40" height="18" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <foreignObject x="160" y="302" width="52" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:28px">$\text{gun}$</div></foreignObject>
-  <circle cx="210" cy="185" r="4" fill="#1f2933"/>
-  <line x1="210" y1="185" x2="112" y2="185" stroke="#1f2933" stroke-width="2" stroke-linecap="butt" stroke-dasharray="7 5"/>
-  <foreignObject x="149.5" y="148" width="23" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:28px">$r$</div></foreignObject>
-  <circle cx="308" cy="185" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <line x1="308" y1="185" x2="308" y2="120" stroke="#1971c2" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M308,105 L315,121 L301,121 Z" fill="#1971c2" stroke-linejoin="round"/>
-  <foreignObject x="320" y="102" width="37" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:28px;color:#1971c2">$\overline{v}$</div></foreignObject>
-  <line x1="308" y1="185" x2="257" y2="185" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M242,185 L258,178 L258,192 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="253.5" y="194" width="37" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:28px;color:#c92a2a">$\overline{F}$</div></foreignObject>
+<svg data-fig="em" viewBox="0 0 600 543" role="img" aria-label="Sketch, not to scale: the glass bulb of the e/m tube seen along the axis of the two coils. The magnetic field points out of the page, shown by green circles with a dot and labelled B. An electron leaves the electron gun at the bottom moving to the right and travels on a circle of radius r. At one point of the circle a blue arrow shows its velocity v along the circle and a red arrow shows the magnetic force F, which points to the centre of the circle." style="max-width:100%;font-size:24px">
+  <circle cx="300" cy="278.5" r="245.5" fill="#eef5f9" fill-opacity="0.5" stroke="#8a96a3" stroke-width="3"/>
+  <circle cx="131.5" cy="154.5" r="15" fill="#ffffff" stroke="#2b8a3e" stroke-width="3"/>
+  <circle cx="131.5" cy="154.5" r="5" fill="#2b8a3e"/>
+  <circle cx="414.5" cy="88.5" r="15" fill="#ffffff" stroke="#2b8a3e" stroke-width="3"/>
+  <circle cx="414.5" cy="88.5" r="5" fill="#2b8a3e"/>
+  <circle cx="114.5" cy="328.5" r="15" fill="#ffffff" stroke="#2b8a3e" stroke-width="3"/>
+  <circle cx="114.5" cy="328.5" r="5" fill="#2b8a3e"/>
+  <circle cx="214.5" cy="71.5" r="15" fill="#ffffff" stroke="#2b8a3e" stroke-width="3"/>
+  <circle cx="214.5" cy="71.5" r="5" fill="#2b8a3e"/>
+  <circle cx="471.5" cy="414.5" r="15" fill="#ffffff" stroke="#2b8a3e" stroke-width="3"/>
+  <circle cx="471.5" cy="414.5" r="5" fill="#2b8a3e"/>
+  <circle cx="143" cy="445.5" r="15" fill="#ffffff" stroke="#2b8a3e" stroke-width="3"/>
+  <circle cx="143" cy="445.5" r="5" fill="#2b8a3e"/>
+  <foreignObject x="355.5" y="74" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#2b8a3e">$\overline{B}$</div></foreignObject>
+  <circle cx="300" cy="264.5" r="140" fill="none" stroke="#3bc9db" stroke-width="12" stroke-opacity="0.3"/>
+  <circle cx="300" cy="264.5" r="140" fill="none" stroke="#3bc9db" stroke-width="4"/>
+  <rect x="237" y="391.5" width="57" height="25.5" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="243" y="432" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{gun}$</div></foreignObject>
+  <circle cx="300" cy="264.5" r="5" fill="#1f2933"/>
+  <line x1="300" y1="264.5" x2="160" y2="264.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt" stroke-dasharray="7 5"/>
+  <foreignObject x="220" y="228" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$r$</div></foreignObject>
+  <circle cx="440" cy="264.5" r="8" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <line x1="440" y1="264.5" x2="440" y2="165" stroke="#1971c2" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M440,150 L447,166 L433,166 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <foreignObject x="454" y="155.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\overline{v}$</div></foreignObject>
+  <line x1="440" y1="264.5" x2="360.5" y2="264.5" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M345.5,264.5 L361.5,257 L361.5,271.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="372" y="280" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}$</div></foreignObject>
 </svg>
 
 The magnetic force is the centripetal force, and the voltage gives the kinetic energy:
