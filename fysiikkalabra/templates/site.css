@@ -1683,11 +1683,22 @@ main.kr-theme{font-family:"Work Sans",var(--sans)}
 .local-photo{margin:0}
 .local-photo img{display:block;width:100%;height:auto;border-radius:12px}
 .local-photo figcaption{margin:.4rem 0 0;font-size:var(--fs-small);color:var(--ink-2)}
-/* a student's own words: the school pink as the quote's rule */
-.local-quote{margin:0 0 2rem;max-width:44rem}
-.local-quote blockquote{margin:0;border-left-color:var(--kr-pink,var(--accent));background:var(--accent-soft);font-family:inherit;font-size:1.0625rem;line-height:1.6}
-.local-quote blockquote p+p{margin-top:.8rem}
-.local-quote figcaption{margin:.5rem 0 0 1.2rem;font-weight:700;color:var(--ink)}
+/* a student's own words, a card each (teacher 2026-11-12): the highlight with the school pink as its rule, the name,
+   the whole text behind "Lue koko kertomus"; one column at every width, so a card opened leaves no empty column beside
+   it (Lesson page 1); print shows it all */
+.local-quotes{display:grid;grid-template-columns:1fr;gap:.75rem;max-width:44rem;margin:0 0 2rem}
+.local-quote{margin:0;padding:.85rem 1.1rem .4rem;border:1px solid var(--line);border-radius:14px;background:var(--bg,#fff)}
+.local-quote blockquote{margin:0;font-family:inherit}
+.local-quote .lq-highlight{padding:.6rem 0 .6rem 1rem;border-left:4px solid var(--kr-pink,var(--accent));border-radius:0;background:none;font-size:1.125rem;line-height:1.45;font-weight:600;color:var(--kr-navy,var(--ink))}
+.local-quote .lq-highlight p::before{content:"”"}.local-quote .lq-highlight p::after{content:"”"}
+.local-quote figcaption{margin:.35rem 0 0 1.25rem;font-weight:700;color:var(--ink)}
+.local-quote details{margin:.1rem 0 0}
+.local-quote summary{cursor:pointer;display:inline-flex;align-items:center;gap:.4rem;min-height:44px;padding:0;font-weight:600;color:var(--accent-deep)}
+.local-quote summary:hover{text-decoration:underline}
+.local-quote .lq-full{margin:.4rem 0 0;padding:.8rem 1rem;border-left:0;border-radius:10px;background:var(--accent-soft);font-size:1rem;line-height:1.6}
+.local-quote .lq-full p+p{margin-top:.8rem}
+@media print{.local-quotes{display:block}.local-quote{break-inside:avoid;margin:0 0 1rem}.local-quote summary{display:none}
+  .local-quote details::details-content{content-visibility:visible;display:block}}
 .kr-theme .lead{font-family:"Work Sans",var(--sans)}
 @media (min-width:44rem){.local-photo:not(.wide) img{aspect-ratio:4/3;object-fit:cover}}
 .mod-head-plain{width:4rem;height:4rem}@media (max-width:30rem){.mod-head-plain{width:3.25rem;height:3.25rem}}

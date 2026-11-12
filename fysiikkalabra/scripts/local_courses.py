@@ -30,8 +30,10 @@ A course's fields (all texts in the language of the file):
   overview                               optional: one paragraph after the chapters' lead (FY14: sessions, ★, Fotoni)
   mixer                                  optional: true links the YO-sekoitin page (scripts/mixer.py) from the course
                                          page and has build.py build it in every language that publishes the course
-  quotes                                 optional: [{author, paragraphs, lang?}], students' own words about the course,
+  quotes                                 optional: [{author, paragraphs, highlight?, lang?}], students' own words about the course,
                                          shown after the description as written (only typos fixed, teacher 2026-11-08);
+                                         a card each: highlight (one of the student's own sentences, else the first
+                                         sentence), the name, the whole text behind "Lue koko kertomus" (teacher 2026-11-12);
                                          lang marks a quote kept in its own language on a page of another
   photos                                 optional: [{src, alt, width, height, caption?, wide?}], pictures in assets/pics/<code>/ (src
                                          "pics/<code>/<file>"), faces cropped out (teacher 2026-11-08); photos_heading
@@ -118,6 +120,7 @@ def validate(curriculum):
         if c.get("chapters") and not lang: errs.append(f"{REGISTRY} {code}: a course with chapters of units names their language")
         for i, q in enumerate(c.get("quotes", [])):
             if not (q.get("author") and q.get("paragraphs") and all(str(x).strip() for x in q["paragraphs"])): errs.append(f"{REGISTRY} {code}: quotes[{i}] needs author and paragraphs")
+            if "highlight" in q and not str(q["highlight"]).strip(): errs.append(f"{REGISTRY} {code}: quotes[{i}] highlight is empty")
             if q.get("lang") is not None and q["lang"] not in i18n.languages(): errs.append(f"{REGISTRY} {code}: quotes[{i}] lang {q['lang']!r} is not a site language")
         for i, ph in enumerate(c.get("photos", [])):
             if not (ph.get("src") and ph.get("alt") and ph.get("width") and ph.get("height")): errs.append(f"{REGISTRY} {code}: photos[{i}] needs src, alt, width and height")
@@ -172,10 +175,15 @@ def quotes_html(c, T, heading=True):
     out = ""
     if c.get("quotes"):                  # students' own words (teacher 2026-11-08), a Finnish quote marked so on other pages
         out += f'<h2 id="kokemuksia">{T("site.local_quotes")}</h2>' if heading else ''
-        for q in c["quotes"]:
+        cards = ""                       # a card per quote (teacher 2026-11-12, "ettei tule pitkä skrollaus"): the student's
+        for q in c["quotes"]:            # highlight (else the first sentence), the name, and the whole text in a <details>
             lang = f' lang="{q["lang"]}"' if q.get("lang") and q["lang"] != T.lang else ""
-            out += (f'<figure class="local-quote"><blockquote{lang}>{"".join(f"<p>{esc(x)}</p>" for x in q["paragraphs"])}</blockquote>'
-                    f'<figcaption>– {esc(q["author"])}</figcaption></figure>')
+            hl = q.get("highlight") or re.match(r".+?[.!?](?=\s|$)", q["paragraphs"][0]).group(0)
+            cards += (f'<figure class="local-quote"><blockquote class="lq-highlight"{lang}><p>{esc(hl)}</p></blockquote>'
+                      f'<figcaption>– {esc(q["author"])}</figcaption>'
+                      f'<details><summary>{T("site.local_quote_more")}<span class="visually-hidden">: {esc(q["author"])}</span></summary>'
+                      f'<blockquote class="lq-full"{lang}>{"".join(f"<p>{esc(x)}</p>" for x in q["paragraphs"])}</blockquote></details></figure>')
+        out += f'<div class="local-quotes">{cards}</div>'
     return out
 
 
