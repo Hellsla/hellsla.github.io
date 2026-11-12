@@ -113,7 +113,6 @@ def lampoarvot():
     f = Fig("fy25-bars", 372, "Vaakapylväskaavio polttoaineiden lämpöarvoista yksikössä MJ/kg, pyöristettyjä arvoja: maakaasu 48, bensiini 43, "
             "diesel 43, kivihiili 26, puupelletti 17, polttopuu (ilmakuiva) 15 ja turve 10. Pylväiden pituudet ovat mittakaavassa: maakaasun pylväs on "
             "noin viisi kertaa turpeen pylvään pituinen.")
-    defs(f)
     f.tex(150, 24, r"H\ \left(\text{MJ/kg}\right)", "start", w=190)
     x0, per = 156, 6.8
     top, step, bh = 52, 38, 26
@@ -123,7 +122,7 @@ def lampoarvot():
         f.line(x0 + t * per, top - 4, x0 + t * per, ybase, RULE_LIGHT, 1.5)
     for i, (name, h) in enumerate(rows):
         y = top + step * i
-        f.rect(x0, y, h * per, bh, "url(#fy25-heat)", INK, 1.5, 3)
+        f.rect(x0, y, h * per, bh, HEAT_LIGHT, HEAT, 1.5, 3)   # one flat colour, as fy2-6/fi-bars (teacher 2026-11-11)
         f.tex(x0 - 12, y + bh / 2, r"\text{" + name + "}", "end", w=140)
         f.tex(x0 + h * per + 10, y + bh / 2, str(h), "start", w=44)
     f.arrow(x0, ybase, x0 + 50 * per + 30, ybase, INK, 2.5, 13)

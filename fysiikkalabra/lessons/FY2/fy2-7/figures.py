@@ -150,8 +150,7 @@ def district():
     ex = 404 if longer(r"\text{eriste}") else 376
     f.tex(ex, 94, r"\text{eriste}", "middle", w=130 if ex != 376 else 90)
     f.line(ex, 108, ex, 124, MUTED, 1.5)
-    if longer(r"\text{lämpölaitos}"): f.tex(12, 262, r"\text{lämpölaitos}", "start", size=22, w=150)
-    else: f.tex(63, 262, r"\text{lämpölaitos}", "middle", w=140)
+    f.tex(16, 262, r"\text{lämpölaitos}", "start", w=170)   # clear of the left edge in every language (teacher 2026-11-11)
     f.tex(545, 262, r"\text{koti}", "middle", w=80)
     return f.svg()
 
@@ -179,24 +178,51 @@ def storage():
     f.rect(430, 102, 80, 98, "url(#fy27-hot)", INK, 2, 8)
     f.line(470, 82, 470, 92, INK, 4); f.line(470, 210, 470, 222, INK, 4)
     f.tex(100, 267, r"\text{akku}", "middle", w=90)
-    if " " in translate(r"\text{pumppuvoimala}"): f.tex(282, 267, r"\text{pumppuvoimala}", "middle", size=22, w=170)   # en "pumped storage": clear of the divider
-    else: f.tex(255, 267, r"\text{pumppuvoimala}", "middle", w=190)
+    f.tex(282, 267, r"\text{pumppuvoimala}", "middle", w=190)   # centred in its panel, clear of the divider (teacher 2026-11-11)
     f.tex(470, 267, r"\text{lämpövarasto}", "middle", w=190)
     f.tex(100, 40, r"\text{kemiallinen}", "middle", w=150)
     if translate(r"\text{potentiaali-}") != r"\text{potentiaali-}":   # a language without the hyphenated compound: one line
-        f.tex(283, 40, r"\text{potentiaali-}" + r"\ " + r"\text{energia}", "middle", size=22, w=186)
+        f.tex(283, 40, r"\text{potentiaali-}" + r"\ " + r"\text{energia}", "middle", w=190)
     else:
         f.tex(283, 28.5, r"\text{potentiaali-}", "middle", w=190)
         f.tex(283, 56.5, r"\text{energia}", "middle", w=190)
     f.tex(470, 40, r"\text{lämpö}", "middle", w=100)
     f.tex(251, 92.5, r"\text{yläallas}", "middle", w=110)
-    if longer(r"\text{alaallas}"): f.tex(240, 226, r"\text{alaallas}", "middle", size=22, w=110)
+    if longer(r"\text{alaallas}"): f.tex(244, 226, r"\text{alaallas}", "middle", w=116)
     else: f.tex(231, 224.5, r"\text{alaallas}", "middle", w=110)
     f.line(184, 20, 184, 280, RULE, 2, "6 6"); f.line(380, 20, 380, 280, RULE, 2, "6 6")
     return f.svg()
 
 
+def lamp_grad(f, gid, x0, x1, c0, c1):
+    """A horizontal gradient along the flow (a copy of fy2-4's grad, the energy-flow model)."""
+    f.defs_add(f'<linearGradient id="{gid}" gradientUnits="userSpaceOnUse" x1="{x0}" y1="0" x2="{x1}" y2="0">'
+               f'<stop offset="0" stop-color="{c0}"/><stop offset="1" stop-color="{c1}"/></linearGradient>')
+    return f"url(#{gid})"
+
+
+def lamp_flow(f, tag, x0, ytop, H, eta, xs, xend, yloss):
+    """The three arrows of an energy-flow diagram drawn as fy2-4/lamp (a copy of its flow, without the device box):
+    grey input of thickness H from x0 to the split at xs, green useful arrow (eta * H) on the top edge to xend, orange
+    loss arrow ((1 - eta) * H) bending down so that its top edge is at yloss."""
+    Ta, Th = H * eta, H * (1 - eta)
+    tip = xend + 30
+    gi = lamp_grad(f, f"{tag}-in", x0, xs, RULE_LIGHT, RULE)
+    go = lamp_grad(f, f"{tag}-ok", xs, tip, GOOD_LIGHT, GOOD)
+    gl = lamp_grad(f, f"{tag}-loss", xs, tip, HEAT_LIGHT, HEAT)
+    e = 8
+    f.path(f"M{x0},{ytop} L{xs},{ytop} L{xs},{ytop + H} L{x0},{ytop + H} Z", fill=gi, stroke=INK, w=2)
+    f.path(f"M{xs},{ytop} L{xend},{ytop} L{xend},{ytop - e} L{tip},{n(ytop + Ta / 2)} L{xend},{n(ytop + Ta + e)} L{xend},{n(ytop + Ta)} L{xs},{n(ytop + Ta)} Z",
+           fill=go, stroke=INK, w=2)
+    cx = xs + 90
+    f.path(f"M{xs},{n(ytop + Ta)} C{cx},{n(ytop + Ta)} {xs + 30},{yloss} {cx + 40},{yloss} L{xend},{yloss} L{xend},{yloss - e} L{tip},{n(yloss + Th / 2)} "
+           f"L{xend},{n(yloss + Th + e)} L{xend},{n(yloss + Th)} L{cx + 40},{n(yloss + Th)} C{xs + 30},{n(yloss + Th)} {cx},{ytop + H} {xs},{ytop + H} Z",
+           fill=gl, stroke=INK, w=2)
+
+
 def sankey():
+    """Redrawn in the energy-flow style of fy2-4/lamp (teacher 2026-11-11, illustration audit group C): grey energy
+    sent, green delivered, orange lost as heat; the widths stay to scale (the energy sent is 80 units in both)."""
     f = Fig("fy27-sankey", 330, "Energiavirtakuva mittakaavassa. Ylhäällä sähköverkko: lähtevästä energiasta 96 % tulee perille ja 4 % häviää. "
             "Alhaalla kaukolämpöverkko: 91 % tulee perille ja 9 % häviää. Virran leveys on verrannollinen energiaan; lähtevän energian "
             "leveys on molemmissa sama.")
@@ -204,21 +230,16 @@ def sankey():
     def flow(yc, share_lost, name):
         top = yc - H / 2; bot = yc + H / 2
         hd, hl = H * (1 - share_lost), H * share_lost
-        x0, x1, x2 = 150, 270, 470
+        x0, xs, xend = 150, 270, 470
+        yloss = bot + 26 - hl
         f.tex(12, top - 20, name, "start", w=200)
-        f.rect(x0, top, x1 - x0 + 1, H, HEAT, None)
-        # delivered band: the upper part continues right with an arrowhead
-        f.add(f'<polygon points="{n(x1)},{n(top)} {n(x2)},{n(top)} {n(x2)},{n(top - 8)} {n(x2 + 30)},{n(top + hd / 2)} {n(x2)},{n(top + hd + 8)} {n(x2)},{n(top + hd)} {n(x1)},{n(top + hd)}" fill="{HEAT}"/>')
-        # loss band: leaves from the bottom of the input, bends down
-        y1 = top + hd; y2 = bot + 26
-        f.add(f'<path d="M{n(x1)},{n(y1)} L{n(x1 + 60)},{n(y1)} C{n(x1 + 100)},{n(y1)} {n(x1 + 100)},{n(y2 - hl)} {n(x1 + 140)},{n(y2 - hl)} L{n(x1 + 190)},{n(y2 - hl)} L{n(x1 + 190)},{n(y2 - hl - 8)} L{n(x1 + 220)},{n(y2 - hl / 2)} L{n(x1 + 190)},{n(y2 + 8)} L{n(x1 + 190)},{n(y2)} L{n(x1 + 140)},{n(y2)} C{n(x1 + 100)},{n(y2)} {n(x1 + 100)},{n(bot)} {n(x1 + 60)},{n(bot)} L{n(x1)},{n(bot)} Z" fill="{HEAT_LIGHT}" stroke="{HEAT}" stroke-width="1.5"/>')
+        lamp_flow(f, f"fy27s{round(share_lost * 100)}", x0, top, H, 1 - share_lost, xs, xend, yloss)
         f.tex(x0 - 10, yc, r"100\,\%", "end", w=90)
-        f.tex(x2 + 40, top + hd / 2, f"{round((1 - share_lost) * 100)}" + r"\,\%", "start", w=80)
-        f.tex(x1 + 236, y2 - hl / 2, f"{round(share_lost * 100)}" + r"\,\%", "start", w=70)
+        f.tex(xend + 40, top + hd / 2, f"{round((1 - share_lost) * 100)}" + r"\,\%", "start", GOOD, w=80)
+        f.tex(xend + 40, yloss + hl / 2, f"{round(share_lost * 100)}" + r"\,\%", "start", w=70)
     flow(92, 0.04, r"\text{sähkö}")
     flow(250, 0.09, r"\text{kaukolämpö}")
     return f.svg()
-
 
 FIGURES = {"hero": hero, "grid": grid, "district": district, "storage": storage, "sankey": sankey}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative

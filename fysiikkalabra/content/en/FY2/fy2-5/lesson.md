@@ -188,32 +188,31 @@ The table gives the heats of combustion of common fuels. They are net heats of c
 Sources: firewood ($13\text{–}15\,\text{GJ/t}$, moisture $20\text{–}25\,\%$) and milled peat ($9\text{–}11\,\text{GJ/t}$, moisture $40\text{–}50\,\%$): Statistics Finland, *Polttoaineluokitus, määritelmät* (2017). Natural gas $48.0\,\text{MJ/kg}$: IPCC, *2006 Guidelines for National Greenhouse Gas Inventories*, volume 2, table of default heating values (2006). Typical values: coal (IPCC 2006: $25.8\,\text{MJ/kg}$), diesel (IPCC 2006: $43.0\,\text{MJ/kg}$), petrol ($43\,\text{MJ/kg}$; the IPCC 2006 value for pure petrol is $44.3\,\text{MJ/kg}$, but Finnish petrol contains ethanol, which has a lower heat of combustion) and wood pellets (published typical value). The values are rounded.
 
 <svg data-fig="lampoarvot" viewBox="0 0 600 372" role="img" aria-label="Horizontal bar chart of the heats of combustion of fuels in MJ/kg, rounded values: natural gas 48, petrol 43, diesel 43, coal 26, wood pellets 17, firewood (air-dried) 15 and peat 10. The bar lengths are to scale: the natural gas bar is about five times as long as the peat bar." style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy25-heat" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient><linearGradient id="fy25-heatv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
   <foreignObject x="150" y="9.5" width="190" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$H\ \left(\text{MJ/kg}\right)$</div></foreignObject>
   <line x1="224" y1="48" x2="224" y2="320" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="292" y1="48" x2="292" y2="320" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="360" y1="48" x2="360" y2="320" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="428" y1="48" x2="428" y2="320" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="496" y1="48" x2="496" y2="320" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <rect x="156" y="52" width="326.5" height="26" rx="3" fill="url(#fy25-heat)" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="156" y="52" width="326.5" height="26" rx="3" fill="#ffc078" stroke="#e8590c" stroke-width="1.5"/>
   <foreignObject x="4" y="50.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{natural gas}$</div></foreignObject>
   <foreignObject x="492.5" y="50.5" width="44" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$48$</div></foreignObject>
-  <rect x="156" y="90" width="292.5" height="26" rx="3" fill="url(#fy25-heat)" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="156" y="90" width="292.5" height="26" rx="3" fill="#ffc078" stroke="#e8590c" stroke-width="1.5"/>
   <foreignObject x="4" y="88.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{petrol}$</div></foreignObject>
   <foreignObject x="458.5" y="88.5" width="44" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$43$</div></foreignObject>
-  <rect x="156" y="128" width="292.5" height="26" rx="3" fill="url(#fy25-heat)" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="156" y="128" width="292.5" height="26" rx="3" fill="#ffc078" stroke="#e8590c" stroke-width="1.5"/>
   <foreignObject x="4" y="126.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{diesel}$</div></foreignObject>
   <foreignObject x="458.5" y="126.5" width="44" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$43$</div></foreignObject>
-  <rect x="156" y="166" width="177" height="26" rx="3" fill="url(#fy25-heat)" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="156" y="166" width="177" height="26" rx="3" fill="#ffc078" stroke="#e8590c" stroke-width="1.5"/>
   <foreignObject x="4" y="164.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{coal}$</div></foreignObject>
   <foreignObject x="343" y="164.5" width="44" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$26$</div></foreignObject>
-  <rect x="156" y="204" width="115.5" height="26" rx="3" fill="url(#fy25-heat)" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="156" y="204" width="115.5" height="26" rx="3" fill="#ffc078" stroke="#e8590c" stroke-width="1.5"/>
   <foreignObject x="4" y="202.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{wood pellets}$</div></foreignObject>
   <foreignObject x="281.5" y="202.5" width="44" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$17$</div></foreignObject>
-  <rect x="156" y="242" width="102" height="26" rx="3" fill="url(#fy25-heat)" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="156" y="242" width="102" height="26" rx="3" fill="#ffc078" stroke="#e8590c" stroke-width="1.5"/>
   <foreignObject x="4" y="240.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{firewood}$</div></foreignObject>
   <foreignObject x="268" y="240.5" width="44" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$15$</div></foreignObject>
-  <rect x="156" y="280" width="68" height="26" rx="3" fill="url(#fy25-heat)" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="156" y="280" width="68" height="26" rx="3" fill="#ffc078" stroke="#e8590c" stroke-width="1.5"/>
   <foreignObject x="4" y="278.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{peat}$</div></foreignObject>
   <foreignObject x="234" y="278.5" width="44" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$10$</div></foreignObject>
   <line x1="156" y1="320" x2="514" y2="320" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
