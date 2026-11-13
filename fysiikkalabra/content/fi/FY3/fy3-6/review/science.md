@@ -1,23 +1,23 @@
-VERDICT: FAIL
-CONTENT-HASH: 026f61d1646501f3
+VERDICT: PASS
+CONTENT-HASH: 57f90cde845360e2
 
 ## Blocking
-- inquiry.json:35 (kertaus, the "kylmyyttä" option's feedback): **B**. "Energiaa siirtyy aina kuumemmasta kylmempään" breaks the guardrail on net transfer: both bodies radiate, so only the *net* transfer, which is the heat, goes from hot to cold. Fix: "Lämpötilaeron vuoksi energiaa siirtyy nettomääräisesti kuumemmasta kylmempään, ja vesikin lämpenee …" (or "Lämpönä energiaa siirtyy …").
 
 ## Polish
-- lesson.md:177: "Eristetyssä astiassa kuuman kappaleen 1 luovuttama lämpömäärä on yhtä suuri kuin kylmän kappaleen 2 vastaanottama". An insulated vessel still takes up heat itself. Add "kun astian oma lämpökapasiteetti jätetään huomiotta", as the worked example, the tasks and the sim's model box already say.
-- lesson.md:68: "hiekka … kuumenee samalla energialla moninkertaisesti enemmän". Add "kilogrammaa kohti" (or "yhtä suuri massa"). The figure says "sama m", but the sentence does not.
-- lesson.md:175: "lämpenee ja jäähtyy hitaasti". Speed also depends on the heating power. "… sen lämpötila muuttuu vähän tietyllä lämpömäärällä" is more exact. The same applies to "lämpenee hitaasti" in the tarkistus-3 model answer.
-- inquiry.json:379 (tarkistus-3, criterion 1): the task gives no c values, and "noin viisinkertainen … maahan verrattuna" depends on the kind of soil. Drop "maahan" or write "moninkertainen".
+- lesson.md:68 — "hiekka … kuumenee samalla energialla moninkertaisesti enemmän" leaves the mass implicit (per volume the ratio is about 3, not 5) — add "kilogrammaa kohti" or "yhtä suuri massa".
+- lesson.md:177 — "Eristetyssä astiassa energia säilyy, kun astian omaa lämpökapasiteettia ei oteta huomioon" ties conservation to the approximation. Energy is conserved either way; only the two-body equation needs the vessel left out — e.g. "Kun astian omaa lämpökapasiteettia ei oteta huomioon, kuuman kappaleen luovuttama …".
+- inquiry.json:66 (ennuste-1, the sand distractor) — the option says sand "varastoi … lämpöä", but its feedback does not correct the idea of stored heat (guardrail: a body has internal energy, not heat). Add half a sentence: "kappale ei varastoi lämpöä vaan sisäenergiaa".
+- inquiry.json:275 (siirto) — `answer` is 29.1, but the solution gives 29 kg (two significant figures, justified by 8,0 K). Both fall within the tolerance; make them match.
+- lessons/FY3/fy3-6/ has no lesson-answers.py, although inquiry.json and the worked example contain computed numbers (all correct, see Checked). Consider adding one.
 
 ## Checked
-- I recomputed every number in one script: the worked example (5656,5 J; 374,6 → 3,7·10² J/(kg·K); 383 at 24,6 °C; Cu lossless 24,6 °C; C_v = 1257 J/K, C_m ≈ 75 J/K), the misconception (35 °C; ratio 9,3), ennuste-1 (26,8 / 44,0 °C; 8,5 / 30 kJ), ennuste-2 (40,0 / 55,0 / 63,1 °C), Etsi virhe (6,6 °C wrong, 30,0 °C right, and the Kelvin shift is invariant), siirto (29,09 kg; mistakes 220 and 21,3), tarkistus-1 (4500 vs 838 J/K), check-c2 (35 and 65 °C), tarkistus-2 (890,6; mistakes 768 and 501; 134 J/K), exit ticket (419 kJ; ×9). All agree.
-- In every choice exactly one option is correct, and each distractor's feedback is right.
-- Rounding is justified: 4,5 K (2 s.f.) in the example, 8,0 K in siirto, 3 s.f. in tarkistus-2.
-- Q = cmΔT carries its condition (no change of state) in Kaava. The sign convention is stated, and the two positive sides of the balance are explained.
-- The T derivation is symbolic before substitution, and so is c_m in the example and the solutions.
-- Figures: water-sand ΔT bars are 20 vs 105 px (5,25 vs 5,24, to scale as the label says). The c-bars are within 0,5 px at 93,4 px/1000. The calorimeter numbers match the example, and the figure is labelled "ei mittakaavassa".
-- sim.js implements T = ΣCT/ΣC and Q = C_B(T_B0 − T) = Q_W. The exponential approach is labelled as illustration, and the speed changes only the pace. Its default (Cu 0,2 kg, 100 °C) gives the 24,6 °C the example cites.
-- koe-1 locks everything except cB, and its "800" matches an option value. koe-2 locks everything except mB, and 0,2/0,5/0,8 kg are inside the slider range. simState provides Teq and CB. The 390 px capture shows 26,8 °C for sand.
-- The model answers (johtopäätös, tarkistus-3) agree with the theory, and the values are called model values.
-- Scope: within FY3 "aineen lämpeneminen ja jäähtyminen", with no later-course physics.
+- Worked example: c_m = 374,6 J/(kg·K) → 3,7·10² (two significant figures justified by ΔT = 4,5 K). Reading 24,6 °C → 383. A lossless 0,200 kg copper body gives 24,6 °C, which matches the sim's default state. C_v = 1257 J/K, C_m ≈ 75 J/K. The solution is symbolic first.
+- ennuste-1: sand 26,8 °C and 8,5 kJ, water 44,0 °C and 30,2 kJ, C = 838 and 160 J/K. ennuste-2: 40,0, 55,0 and 63,1 °C. Exactly one option is correct in each, and every distractor's feedback is correct.
+- virhe: the wrong result is 6,6 °C and the right one 30,0 °C. The kelvin-shift argument holds (the result is again 6,6 °C). siirto: 29,09 kg; the mistakes 220 and 21,3 kg are both reproduced.
+- tarkistus-2: 890,6 → 891 J/(kg·K); the mistakes 768 and 501 are reproduced; C_m = 134 J/K and the ratio 6,3 are right. tarkistus-1: 4500 vs 838 J/K, 50-fold mass. check-c2: 35 °C, and the 65 °C counter-case is right.
+- Exit ticket: 419 kJ, and the ratio of about 9 (4190/450 = 9,3) is right. The misconception box (35 °C, "lähes kymmenkertainen") is right.
+- Figures: the water–sand ΔT bars are 20 vs 105 px (ratio 5,25 vs 5,24), so to scale as the caption says. The c-bars are within 1 px of the values at 93,5 px per 1000. The calorimeter figure's numbers match the worked example. The formula section's name is right.
+- Sim: T_eq = ΣCT/ΣC and Q = C_B(T_B0 − T_eq) are the lesson's model. The equal-τ exponential approach to T_eq conserves energy at every instant, and the model box says it is only an illustration. The no-phase-change and no-loss limits are stated. simState gives Teq and CB.
+- koe-1 and koe-2: the initial values exist among the controls ("800" and "4190" are select values, and the slider ranges cover them). Only the varied parameter is unlocked, so each setup isolates it.
+- Conditions: Q = cmΔT is stated "kun olomuoto ei muutu". ΔT in K equals ΔT in °C. The signs of Q are stated. Scope is inside FY3's central contents.
+- The explain model answers (johtopäätös, järvi) agree with the theory and present the sim's numbers as model values.
