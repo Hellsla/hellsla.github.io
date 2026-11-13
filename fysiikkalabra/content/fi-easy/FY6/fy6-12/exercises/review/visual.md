@@ -1,15 +1,15 @@
-VERDICT: FAIL
-CONTENT-HASH: 02eaa1018019e06f
+VERDICT: PASS
+CONTENT-HASH: d29240691e2c2f1f
+SCOPE: delta added-exercise from 5d9a1e2a7804d5aa base 8f23aa7ae3bd
 
 ## Blocking
-- [Major] fy6-12-L2-09 solutions.md, Kaava and Sijoitus — the fractions are written `\frac`, not `\dfrac`, so the build sets them in script size. In the capture (fy6-12-open-exercises-L2-1280-12.png) the key substitution $\sqrt{\frac{2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 200\,\text{V}}{9{,}109 \cdot 10^{-31}\,\text{kg}}}$ has a numerator and denominator of about half the text size inside the root, and the Kaava $v = \sqrt{\frac{2eU}{m}}$ is equally small; the `\;\Rightarrow\;` also breaks the chain into two rows. At 360 px it is harder still. Every other solution of the set uses `\dfrac` (21 times against these 2 `\frac`) and reads well. Why it matters: the substitution is the line the student checks their own work against. Fix: `**Kaava:** $\dfrac{1}{2}mv^2 = eU$, josta $v = \sqrt{\dfrac{2eU}{m}}$` and `\dfrac` in Sijoitus; use "josta" instead of `\Rightarrow`.
 
 ## Polish
-- [Minor] fy6-12-L2-09 text — "Kuinka nopea elektroni on" is correct but "Kuinka suuri on elektronin nopeus" matches the other tasks' phrasing.
+- [Minor] fy6-12-L2-09 Muunnokset — "$\sqrt{1\,\text{C} \cdot 1\,\text{V} : 1\,\text{kg}}$" renders with the root bar crowding the units; for an S2 student a plain sentence ("$1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$ ja $\text{J/kg} = \text{m}^2/\text{s}^2$") is easier.
+- [Minor] fy6-12-L2-09 Kuvaajan lukeminen — "Positiivinen levy on kohdassa x = 5,0 cm": the figure marks no plate, so say the line ends at the positive plate.
 
 ## Checked
-- fy6-12-open-exercises-L2-1280-11.png (task 12-17: text, figure ex-vgraph with $50\,\text{V}$ and $1\,\text{cm}$ gridlines, labelled axes with units, straight line; answer not given away) and -12 (solution rows, Vastaus, Järkevyys); -8 and -9 for the neighbouring tasks.
-- The figure and its description agree and give every value the task needs.
+- fy6-12-L2-09 (task 12-17): open-exercises-L2-1280-11 and -12: task text (situation then question), figure ex-vgraph (axes with units, readable ticks, gridlines at 50 V and 1 cm, line without answer), solution rows, aligned Sijoitus with root fraction, Vastaus, Järkevyys. Nothing clipped; set reads as one.
 
 ## Scores
-illustrations 5 · typography 3 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
