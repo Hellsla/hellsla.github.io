@@ -216,12 +216,12 @@ Pienimmästä suurimpaan: ovi, yläpohja, ikkunat, seinä. Pelkkä U-arvo antais
 **Järkevyys:** U-arvo $0{,}70\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$ on noin nelinkertainen nykyaikaisen seinän U-arvoon $0{,}17\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$ verrattuna. Se sopii hirsiseinän heikompaan eristykseen. Teho $10\,\text{m}^2$:n alalta on pieni, koska ala on pieni: $0{,}7 \cdot 10 \cdot 30 = 210\,\text{W}$.
 
 ## fy3-12-L2-09
-**Annettu:** kuvasta luettuna Auringosta tulee $P_\text{tulo} = 341\,\tfrac{\text{W}}{\text{m}^2}$. Siitä heijastuu $P_\text{heij} = 102\,\tfrac{\text{W}}{\text{m}^2}$.
-**Kysytty:** heijastuneen säteilyn osuus tulevasta säteilystä prosentteina
-**Periaate:** Osuus saadaan vertaamalla heijastunutta tehoa tulevaan tehoon. Molemmat tehot on annettu neliömetriä kohti. Siksi yksiköt supistuvat.
-**Kuvaajan lukeminen:** Kuvan vasen nuoli kertoo tulevan tehon $341\,\tfrac{\text{W}}{\text{m}^2}$. Auringon ja Maan välissä ylös vasemmalle osoittava nuoli kertoo heijastuvan tehon $102\,\tfrac{\text{W}}{\text{m}^2}$. Alemman nuolen kysymysmerkkiä ei tarvita.
-**Kaava:** osuus $= \dfrac{P_\text{heij}}{P_\text{tulo}}$. Prosentteina se on $\dfrac{P_\text{heij}}{P_\text{tulo}} \cdot 100\,\%$.
-**Muunnokset:** Osamäärä on pelkkä luku. Kun se kerrotaan luvulla $100\,\%$, saadaan prosentit. Tehoja ei tarvitse muuntaa.
-**Sijoitus:** $\dfrac{102\,\tfrac{\text{W}}{\text{m}^2}}{341\,\tfrac{\text{W}}{\text{m}^2}} \cdot 100\,\% = 0{,}2991 \cdot 100\,\% = 29{,}9\,\%$
-**Vastaus:** $29{,}9\,\%$, kolme merkitsevää numeroa kuten luetuissa tehoissa $341$ ja $102$.
-**Järkevyys:** Osuus on lähellä kolmasosaa: $0{,}30 \cdot 341\,\tfrac{\text{W}}{\text{m}^2} = 102{,}3\,\tfrac{\text{W}}{\text{m}^2}$. Tulos on alle $100\,\%$, kuten pitää. Heijastunut teho on vain osa tulevasta tehosta.
+**Annettu:** kuvasta luettuna heijastuu $P_\text{heij} = 102\,\tfrac{\text{W}}{\text{m}^2}$. Pinta-ala on $A = 5{,}1 \cdot 10^{14}\,\text{m}^2$.
+**Kysytty:** heijastuneen säteilyn kokonaisteho $P$ koko maapallolla petawatteina
+**Periaate:** Kuvan teho on annettu neliömetriä kohti. Siksi kokonaisteho saadaan kertomalla se pinta-alalla. Teho on tasaista keskiarvoa.
+**Kuvaajan lukeminen:** Auringon ja Maan välissä ylös vasemmalle osoittava nuoli kertoo heijastuvan tehon $102\,\tfrac{\text{W}}{\text{m}^2}$. Muita nuolia ei tarvita.
+**Kaava:** $P = P_\text{heij}\,A$
+**Muunnokset:** $1\,\text{PW} = 10^{15}\,\text{W}$. Siksi wattien arvo jaetaan luvulla $10^{15}$.
+**Sijoitus:** $P = 102\,\tfrac{\text{W}}{\text{m}^2} \cdot 5{,}1 \cdot 10^{14}\,\text{m}^2 = 5{,}202 \cdot 10^{16}\,\text{W} = \dfrac{5{,}202 \cdot 10^{16}\,\text{W}}{10^{15}\,\text{W/PW}} = 52{,}02\,\text{PW}$
+**Vastaus:** $P \approx 52\,\text{PW}$, kaksi merkitsevää numeroa kuten pinta-alassa $5{,}1 \cdot 10^{14}\,\text{m}^2$.
+**Järkevyys:** Suuruusluokka: $100 \cdot 5 \cdot 10^{14}\,\text{W} = 5 \cdot 10^{16}\,\text{W}$. Se on $50\,\text{PW}$, joten tulos täsmää. Takaisinlasku: $\dfrac{5{,}2 \cdot 10^{16}\,\text{W}}{5{,}1 \cdot 10^{14}\,\text{m}^2} \approx 102\,\tfrac{\text{W}}{\text{m}^2}$.

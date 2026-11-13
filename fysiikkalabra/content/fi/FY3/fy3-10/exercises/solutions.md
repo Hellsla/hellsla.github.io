@@ -214,12 +214,12 @@ $$\begin{aligned} d &= \dfrac{1328{,}9\,\text{J}}{121\,200\,\text{N}} \\ &= 0{,}
 **Järkevyys:** Ilmanpaineessa ja huoneenlämmössä $12{,}5\,\text{mol}$ kaasua vie tilaa noin $12{,}5 \cdot 24\,\textsf{l} = 300\,\textsf{l}$. Se on puristettu $10{,}0\,\textsf{l}$:aan eli noin $30$-kertaiseen paineeseen: $30 \cdot 0{,}101\,\text{MPa} \approx 3\,\text{MPa}$.
 
 ## fy3-10-L2-09
-**Annettu:** kuvaajasta luettuna astian B pisteet $(200\,\text{K};\ 30\,\text{kPa})$ ja $(400\,\text{K};\ 60\,\text{kPa})$; $V = 2{,}00\,\textsf{l}$, $R = 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$
-**Kysytty:** ainemäärä $n$ moolina
-**Periaate:** Astia on suljettu ja jäykkä, joten kaasun määrä ja tilavuus pysyvät samoina ja kaasu noudattaa ideaalikaasun tilanyhtälöä $pV = nRT$. Yhdestä kuvaajan pisteestä saadaan $p$ ja $T$, ja siitä ainemäärä.
-**Kuvaajan lukeminen:** Astian B suora kulkee ruudukon pisteiden $(200\,\text{K};\ 30\,\text{kPa})$ ja $(400\,\text{K};\ 60\,\text{kPa})$ kautta. Luetaan piste $T = 400\,\text{K}$, $p = 60\,\text{kPa}$. Toinen piste antaa saman ainemäärän, koska $p/T = 0{,}15\,\tfrac{\text{kPa}}{\text{K}}$ on molemmissa sama.
-**Kaava:** $pV = nRT$, josta $n = \dfrac{pV}{RT}$
-**Muunnokset:** $60\,\text{kPa} = 60 \cdot 1000\,\text{Pa} = 60\,000\,\text{Pa}$ ja $2{,}00\,\textsf{l} = 2{,}00 \cdot 0{,}001\,\text{m}^3 = 0{,}00200\,\text{m}^3$. Lämpötila on jo kelvineinä.
-**Sijoitus:** $n = \dfrac{60\,000\,\text{Pa} \cdot 0{,}00200\,\text{m}^3}{8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 400\,\text{K}} = \dfrac{120\,\text{J}}{3324\,\text{J/mol}} = 0{,}03610\,\text{mol}$
-**Vastaus:** $n \approx 0{,}0361\,\text{mol}$, kolme merkitsevää numeroa kuten tilavuudessa $2{,}00\,\textsf{l}$.
-**Järkevyys:** Ilmanpaineessa ja huoneenlämmössä $1\,\text{mol}$ vie tilaa noin $24\,\textsf{l}$. Pienessä paineessa $60\,\text{kPa}$ ja korkeassa lämpötilassa $400\,\text{K}$ tilaa kuluu enemmän, noin $50\,\textsf{l}$ yhtä moolia kohti. Silloin $2{,}00\,\textsf{l}$:ssa on $2{,}00 : 50 \approx 0{,}04\,\text{mol}$.
+**Annettu:** $n = 0{,}0500\,\text{mol}$; kuvaajasta luettuna astian A pisteet $(200\,\text{K};\ 50\,\text{kPa})$ ja $(400\,\text{K};\ 100\,\text{kPa})$; $R = 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$
+**Kysytty:** astian A tilavuus $V$ litroina
+**Periaate:** Kaasu on suljettu jäykkään astiaan ja noudattaa ideaalikaasun tilanyhtälöä $pV = nRT$. Kun ainemäärä tunnetaan, yksi kuvaajan piste ($p$ ja $T$) riittää tilavuuden laskemiseen.
+**Kuvaajan lukeminen:** Astian A suora kulkee ruudukon pisteiden $(200\,\text{K};\ 50\,\text{kPa})$ ja $(400\,\text{K};\ 100\,\text{kPa})$ kautta. Luetaan piste $T = 400\,\text{K}$, $p = 100\,\text{kPa}$. Toinen piste antaa saman tilavuuden, koska $p/T = 0{,}25\,\tfrac{\text{kPa}}{\text{K}}$ on molemmissa sama.
+**Kaava:** $pV = nRT$, josta $V = \dfrac{nRT}{p}$
+**Muunnokset:** $100\,\text{kPa} = 100 \cdot 1000\,\text{Pa} = 100\,000\,\text{Pa}$. Lopuksi $1\,\text{m}^3 = 1000\,\textsf{l}$. Lämpötila on jo kelvineinä.
+**Sijoitus:** $V = \dfrac{0{,}0500\,\text{mol} \cdot 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 400\,\text{K}}{100\,000\,\text{Pa}} = \dfrac{166{,}2\,\text{J}}{100\,000\,\text{Pa}} = 0{,}001662\,\text{m}^3 = 1{,}662\,\textsf{l}$
+**Vastaus:** $V \approx 1{,}66\,\textsf{l}$, kolme merkitsevää numeroa kuten ainemäärässä $0{,}0500\,\text{mol}$.
+**Järkevyys:** Ilmanpaineessa ja huoneenlämmössä $1\,\text{mol}$ vie tilaa noin $24\,\textsf{l}$. Lämpötilassa $400\,\text{K}$ ja paineessa $100\,\text{kPa}$ tilaa kuluu noin $33\,\textsf{l}$ yhtä moolia kohti. Silloin $0{,}0500\,\text{mol}$ vie noin $0{,}05 \cdot 33\,\textsf{l} \approx 1{,}7\,\textsf{l}$.

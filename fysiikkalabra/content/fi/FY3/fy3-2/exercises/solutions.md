@@ -237,4 +237,4 @@ Suhde on $4{,}0\,\text{J} : 1{,}0\,\text{J} = 4$, joten työ on $4\,W_1$. Syy on
 **Muunnokset:** Voimat ovat newtoneina ja matkat metreinä, joten muunnoksia ei tarvita.
 **Sijoitus:** $W = 25\,\text{N} \cdot 6\,\text{m} + 10\,\text{N} \cdot 4\,\text{m} = 190\,\text{J}$ ja $F_\text{ka} = \dfrac{190\,\text{J}}{10\,\text{m}} = 19\,\text{N}$
 **Vastaus:** $19\,\text{N}$, kaksi merkitsevää numeroa, koska kuvaajan arvot on luettu ruudukon viivoilta kokonaislukuina.
-**Järkevyys:** Tulos $19\,\text{N}$ on voiman pienimmän ($10\,\text{N}$) ja suurimman ($25\,\text{N}$) arvon välissä, ja lähempänä suurinta, koska suuri voima vaikuttaa pidemmän matkan ($6\,\text{m}$ vs $4\,\text{m}$). Tarkistus: $19\,\text{N} \cdot 10\,\text{m} = 190\,\text{J}$.
+**Järkevyys:** Tulos $19\,\text{N}$ on voiman pienimmän ($10\,\text{N}$) ja suurimman ($25\,\text{N}$) arvon välissä, ja lähempänä suurinta, koska suuri voima vaikuttaa pidemmän matkan ($6\,\text{m}$ ja $4\,\text{m}$). Tarkistus: $19\,\text{N} \cdot 10\,\text{m} = 190\,\text{J}$.

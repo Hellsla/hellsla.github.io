@@ -48,5 +48,5 @@ a["fy3-12-L3-05"] = T_pinta - 273.15                 # 16,3 °C
 # Added exercises (teacher 2026-11-12: MAFY table task, figure task)
 a["fy3-12-L1-09"] = 0.14 / 0.20 * 10 * 30             # MAFY pine λ = 0,14 W/(m·K): U = λ/d = 0,70 W/(m²·K); P = UAΔT = 0,70 · 10 · 30 = 210 W
 # Added exercises (teacher 2026-11-12: MAFY table task, figure task)
-a["fy3-12-L2-09"] = 102 / 341 * 100                  # fy3-12/earth-flows: reflected share = 102 / 341 = 0,2991 -> 29,9 %
+a["fy3-12-L2-09"] = 102 * 5.1e14 / 1e15              # fy3-12/earth-flows: P = 102 W/m² · 5,1·10¹⁴ m² = 5,202·10¹⁶ W = 52,02 PW -> 52 PW
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

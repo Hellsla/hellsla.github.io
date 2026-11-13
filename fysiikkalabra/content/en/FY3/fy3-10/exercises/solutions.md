@@ -214,12 +214,12 @@ $$\begin{aligned} d &= \dfrac{1328.9\,\text{J}}{121\,200\,\text{N}} \\ &= 0.0109
 **Reasonableness:** At atmospheric pressure and room temperature $12.5\,\text{mol}$ of gas takes about $12.5 \cdot 24\,\textsf{l} = 300\,\textsf{l}$. It has been compressed into $10.0\,\textsf{l}$, that is, to about $30$ times the pressure: $30 \cdot 0.101\,\text{MPa} \approx 3\,\text{MPa}$.
 
 ## fy3-10-L2-09
-**Given:** read from the graph, the points of vessel B are $(200\,\text{K};\ 30\,\text{kPa})$ and $(400\,\text{K};\ 60\,\text{kPa})$; $V = 2.00\,\textsf{l}$, $R = 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$
-**Find:** the amount of substance $n$ in moles
-**Principle:** The vessel is closed and rigid, so the amount of gas and the volume stay the same and the gas obeys the ideal gas law $pV = nRT$. One point of the graph gives $p$ and $T$, and from them the amount of substance.
-**Reading the graph:** The line of vessel B goes through the grid points $(200\,\text{K};\ 30\,\text{kPa})$ and $(400\,\text{K};\ 60\,\text{kPa})$. We read the point $T = 400\,\text{K}$, $p = 60\,\text{kPa}$. The other point gives the same amount of substance, because $p/T = 0.15\,\tfrac{\text{kPa}}{\text{K}}$ is the same at both.
-**Formula:** $pV = nRT$, so $n = \dfrac{pV}{RT}$
-**Conversions:** $60\,\text{kPa} = 60 \cdot 1000\,\text{Pa} = 60\,000\,\text{Pa}$ and $2.00\,\textsf{l} = 2.00 \cdot 0.001\,\text{m}^3 = 0.00200\,\text{m}^3$. The temperature is already in kelvins.
-**Substitution:** $n = \dfrac{60\,000\,\text{Pa} \cdot 0.00200\,\text{m}^3}{8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 400\,\text{K}} = \dfrac{120\,\text{J}}{3324\,\text{J/mol}} = 0.03610\,\text{mol}$
-**Answer:** $n \approx 0.0361\,\text{mol}$, three significant figures, as in the volume $2.00\,\textsf{l}$.
-**Reasonableness:** At atmospheric pressure and room temperature $1\,\text{mol}$ takes about $24\,\textsf{l}$. At the low pressure $60\,\text{kPa}$ and the high temperature $400\,\text{K}$ it takes more, about $50\,\textsf{l}$ per mole. Then $2.00\,\textsf{l}$ holds $2.00 : 50 \approx 0.04\,\text{mol}$.
+**Given:** $n = 0.0500\,\text{mol}$; read from the graph, the points of vessel A are $(200\,\text{K};\ 50\,\text{kPa})$ and $(400\,\text{K};\ 100\,\text{kPa})$; $R = 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$
+**Find:** the volume $V$ of vessel A in litres
+**Principle:** The gas is sealed in a rigid vessel and obeys the ideal gas law $pV = nRT$. When the amount of substance is known, one point of the graph ($p$ and $T$) is enough to find the volume.
+**Reading the graph:** The line of vessel A goes through the grid points $(200\,\text{K};\ 50\,\text{kPa})$ and $(400\,\text{K};\ 100\,\text{kPa})$. We read the point $T = 400\,\text{K}$, $p = 100\,\text{kPa}$. The other point gives the same volume, because $p/T = 0.25\,\tfrac{\text{kPa}}{\text{K}}$ is the same in both.
+**Formula:** $pV = nRT$, so $V = \dfrac{nRT}{p}$
+**Conversions:** $100\,\text{kPa} = 100 \cdot 1000\,\text{Pa} = 100\,000\,\text{Pa}$. Finally $1\,\text{m}^3 = 1000\,\textsf{l}$. The temperature is already in kelvins.
+**Substitution:** $V = \dfrac{0.0500\,\text{mol} \cdot 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 400\,\text{K}}{100\,000\,\text{Pa}} = \dfrac{166.2\,\text{J}}{100\,000\,\text{Pa}} = 0.001662\,\text{m}^3 = 1.662\,\textsf{l}$
+**Answer:** $V \approx 1.66\,\textsf{l}$, three significant figures, as in the amount of substance $0.0500\,\text{mol}$.
+**Reasonableness:** At atmospheric pressure and room temperature $1\,\text{mol}$ takes about $24\,\textsf{l}$. At $400\,\text{K}$ and $100\,\text{kPa}$ it takes about $33\,\textsf{l}$ per mole. So $0.0500\,\text{mol}$ takes about $0.05 \cdot 33\,\textsf{l} \approx 1.7\,\textsf{l}$.

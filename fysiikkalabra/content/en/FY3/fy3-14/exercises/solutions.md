@@ -243,16 +243,16 @@ c) $\Delta T_\text{w,min} = \dfrac{36\,704.4\,\text{J}}{4190\,\tfrac{\text{J}}{\
 **Formula:** $Q = sm$
 **Conversions:** $m = 80\,\text{g} = 0.080\,\text{kg}$
 **Substitution:** $Q = 333\,\dfrac{\text{kJ}}{\text{kg}} \cdot 0.080\,\text{kg} = 26.64\,\text{kJ}$
-**Answer:** $Q \approx 27\,\text{kJ}$, two significant figures as in the mass $80\,\text{g}$. The value $s = 333\,\text{kJ/kg}$ is from the MAFY table (changes of state, water); the value $334\,\text{kJ/kg}$ of the texts differs from it by less than one percent, and an answer within about $\pm 4\,\%$ is accepted.
+**Answer:** $Q \approx 27\,\text{kJ}$, two significant figures as in the mass $80\,\text{g}$. The value $s = 333\,\text{kJ/kg}$ is from the MAFY table (changes of state, water); the value $334\,\text{kJ/kg}$ used in the other tasks of this chapter differs from it by less than one percent, and an answer within about $\pm 4\,\%$ is accepted.
 **Reasonableness:** A rough estimate: $330\,\text{kJ/kg} \cdot 0.08\,\text{kg} \approx 26\,\text{kJ}$. The same heat would warm $0.25\,\text{kg}$ of water by about $\dfrac{26.6\,\text{kJ}}{4.19\,\text{kJ/(kg}\cdot\text{K)} \cdot 0.25\,\text{kg}} \approx 25\,\text{K}$, so ice cools a drink effectively.
 
 ## fy3-14-L2-09
-**Given:** reading from the figure, the heat given off by the water $Q_\text{water} = 25\,\text{kJ}$, the heat needed to warm the ice $Q_\text{warm} = 5\,\text{kJ}$ and the heat needed to melt all the ice $Q_\text{all} = 60\,\text{kJ}$; $s = 334\,\text{kJ/kg}$
-**Find:** the mass of the ice that remains unmelted, $m_\text{left}$, in grams
-**Principle:** In an insulated container energy is conserved, so the heat given off by the water first goes to warming the ice and the rest to melting. If the heat left for melting is less than the heat needed to melt all the ice, not all the ice melts, and the final temperature of the mixture is $0\,{}^\circ\text{C}$.
-**Reading the graph:** The bars end on grid lines: the top one at $25\,\text{kJ}$ (water), the middle one at $5\,\text{kJ}$ (warming the ice) and the bottom one at $60\,\text{kJ}$ (melting all the ice). The heat left for melting is $25 - 5 = 20\,\text{kJ}$, which is less than $60\,\text{kJ}$, so part of the ice remains unmelted.
-**Formula:** $Q_\text{melts} = Q_\text{water} - Q_\text{warm}$, $Q = sm$, so $m_\text{melted} = \dfrac{Q_\text{melts}}{s}$ and $m_\text{left} = \dfrac{Q_\text{all}}{s} - m_\text{melted}$
-**Conversions:** $\text{kJ}/(\text{kJ/kg}) = \text{kg}$ and $1\,\text{kg} = 1000\,\text{g}$
-**Substitution:** $m_\text{melted} = \dfrac{20\,\text{kJ}}{334\,\text{kJ/kg}} = 0.0599\,\text{kg}$ and the total mass of the ice is $\dfrac{60\,\text{kJ}}{334\,\text{kJ/kg}} = 0.1796\,\text{kg}$, so $m_\text{left} = 0.1796\,\text{kg} - 0.0599\,\text{kg} = 0.1198\,\text{kg} = 119.8\,\text{g}$
-**Answer:** $m_\text{left} \approx 120\,\text{g}$, two significant figures, because the bars are read from a five-kilojoule grid.
-**Reasonableness:** The fraction $\dfrac{60 - 20}{60} = \dfrac{2}{3}$ of the ice remains, and $\dfrac{2}{3} \cdot 180\,\text{g} = 120\,\text{g}$. The result is smaller than the total mass of the ice, $180\,\text{g}$, and greater than zero, as it should be.
+**Given:** reading from the figure, the heat given off by the water $Q_\text{water} = 25\,\text{kJ}$, the heat needed to warm the ice $Q_\text{warm} = 5\,\text{kJ}$ and the heat needed to melt all the ice $Q_\text{all} = 60\,\text{kJ}$
+**Find:** the extra heat $Q_\text{extra}$ in kilojoules that the water would still have to give off for all the ice to melt
+**Principle:** In an insulated container energy is conserved, so the heat given off by the water first goes to warming the ice and the rest to melting. The heat available for melting is $Q_\text{water} - Q_\text{warm}$, and melting all the ice needs $Q_\text{all}$. The missing part is the extra heat.
+**Reading the graph:** The bars end on grid lines: the top one at $25\,\text{kJ}$ (water), the middle one at $5\,\text{kJ}$ (warming the ice) and the bottom one at $60\,\text{kJ}$ (melting all the ice). The heat left for melting is $25 - 5 = 20\,\text{kJ}$, which is less than $60\,\text{kJ}$, so not all the ice melts.
+**Formula:** $Q_\text{extra} = Q_\text{all} - (Q_\text{water} - Q_\text{warm})$
+**Conversions:** None needed, all the heats are in kilojoules.
+**Substitution:** $Q_\text{extra} = 60\,\text{kJ} - (25\,\text{kJ} - 5\,\text{kJ}) = 60\,\text{kJ} - 20\,\text{kJ} = 40\,\text{kJ}$
+**Answer:** $Q_\text{extra} = 40\,\text{kJ}$, two significant figures, because the bars are read from a five-kilojoule grid.
+**Reasonableness:** The extra heat is smaller than the $60\,\text{kJ}$ needed to melt all the ice and greater than zero. It is $\dfrac{40}{60} = \dfrac{2}{3}$ of the melting heat, so two thirds of the ice remain, which fits the figure where the water is enough for only one third.
