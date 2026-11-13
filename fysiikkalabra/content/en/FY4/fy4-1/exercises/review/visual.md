@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: c501613fff0eea3f
-SCOPE: delta added-exercise from 0402e8c61e005ae8 base 7db0992d648a
+CONTENT-HASH: af340b69e0e4d6ab
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] fy4-1-L2-09 solution — the intermediate "$x_\text{B} = 8\,\text{m}$" and the reasonableness line "$8\,\text{m}$" have one significant figure while the result is "$8.0\,\text{m}$" — write $8.0\,\text{m}$ throughout.
+None.
 
 ## Checked
-- fy4-1-open-exercises-L2-1280-10, -11, -12, -13 (tasks 1-17 and 1-18 with figures, the labels x_A, x_B and the x (m), t (s) axes, both full solutions).
-- Figures ex-kolme-osaa and ex-kaksi-kappaletta: units on axes, points as markers, no answer marked; the solution's "body A / body B" matches the figure's x_A, x_B labels. Display chains and equation rows render without errors; the English reads fluently.
+- Notation v_sp for speed and the added reason in L2-09 answer read consistently; units LaTeX. Text-only change in solutions.md/exercises.json judged from the diff in the packet; the changed line was not opened in a capture, and the layout was not re-inspected.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 4
