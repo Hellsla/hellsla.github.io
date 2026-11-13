@@ -221,7 +221,7 @@ Liike-energia on $90\,\text{eV}$ eli $1{,}4 \cdot 10^{-17}\,\text{J}$ kahden mer
 **Kysytty:** elektronin nopeus $v$ positiivisella levyllä
 **Periaate:** Vain sähköinen voima tekee työtä. Silloin liike-energian ja potentiaalienergian summa pysyy samana. Elektroni liikkuu kohti suurempaa potentiaalia. Sen potentiaalienergia pienenee määrän $eU$, ja liike-energia kasvaa saman verran. Potentiaaliero $U$ luetaan kuvaajasta.
 **Kuvaajan lukeminen:** Kohdassa $x = 1{,}0\,\text{cm}$ suora on $50\,\text{V}$:n ruudukkoviivalla. Positiivinen levy on kohdassa $x = 5{,}0\,\text{cm}$, ja siinä suora on $250\,\text{V}$:n viivalla. Potentiaaliero on $U = 250\,\text{V} - 50\,\text{V} = 200\,\text{V}$.
-**Kaava:** $\frac{1}{2}mv^2 = eU$, josta $v = \sqrt{\dfrac{2eU}{m}}$
+**Kaava:** $\tfrac{1}{2}mv^2 = eU$, josta $v = \sqrt{\dfrac{2eU}{m}}$
 **Muunnokset:** Ei tarvita. Kaikki suureet ovat SI-yksiköissä, ja $\sqrt{1\,\text{C} \cdot 1\,\text{V} : 1\,\text{kg}} = 1\,\text{m/s}$.
 **Sijoitus:** $v = \sqrt{\dfrac{2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 200\,\text{V}}{9{,}109 \cdot 10^{-31}\,\text{kg}}} = 8{,}387 \cdot 10^{6}\,\text{m/s}$
 **Vastaus:** $v \approx 8{,}4 \cdot 10^{6}\,\text{m/s}$. Tuloksessa on kaksi merkitsevää numeroa. Potentiaalit luetaan $50\,\text{V}$:n ruudukkoviivoilta, ja paikka on annettu kahdella merkitsevällä numerolla.
