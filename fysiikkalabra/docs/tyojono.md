@@ -169,6 +169,17 @@ käsitekorttien alleviivaukset säilyvät. Lämpöenergian kohdan selitys lämm�
 se jää taulukon alle omaksi kappaleekseen. Kaikki kielet (fi, en, fi-easy). Sisältömuutos: katselmoinnit
 `reviews.py scope fy2-1` mukaan (opettaja pyysi muutosta itse). Pieni oma PR.
 
+## 8j. Pohdinnan kertaustehtävä liittyy pohdinnan ilmiöön (opettaja 2026-11-13)
+
+fy4-1:n Pohdinnassa ilmiö on pyöräilijän matka kauppaan ja takaisin (matkamittari 4,0 km, siirtymä 0 m) ja kysymys
+paikka–aika-kuvaajasta, mutta sen alla oleva "Kertaa yläkoulusta" -monivalinta kysyy juoksijan nopeutta (150 m,
+20 s). Opettaja: "tämä ei tunnu loogiselta, tuo monivalinta ei liity tuohon pohdintaan." Sääntö (CLAUDE.md, FY3/FY1
+-osio): Pohdinnan kertaustehtävä (`herata`-vaiheen retrieval-`choice`, docs/inquiry.md) kysyy pohjatietoa saman
+ilmiön kautta, esim. tässä pyöräilijän keskivauhti tai matkan ja siirtymän ero. Korjaus: ensin fy4-1 (fi, en,
+fi-easy), sitten kaikkien lukujen kertaustehtävät tarkistetaan pedagogisesti (`/quality-audit <id> --audit-only`
+vain tämän kohdan osalta tai skripti, joka listaa kertaustehtävän ja ilmiön rinnakkain opettajalle) ja korjataan
+kurssi kerrallaan. Sisältömuutos: pedagogy-katselmointi delta, science delta (uusi luku/arvo).
+
 ## 9. Esimerkkikokeet FY7 ja FY8 (opettaja 2026-11-13)
 
 FY1–FY6:lla on esimerkkikoe (`content/fi/<COURSE>/koe/`), FY7:llä ja FY8:lla ei. `/exam FY7` ja `/exam FY8`
