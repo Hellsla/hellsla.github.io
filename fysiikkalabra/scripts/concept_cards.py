@@ -160,6 +160,9 @@ def term_rx(kasite, lang):
 _SKIP = {"h1", "h2", "h3", "h4", "h5", "h6", "a", "button", "summary", "strong", "b", "code", "pre", "script", "style",
          "svg", "figure", "label", "select", "option", "textarea", "math", "sup", "sub"}
 _VOID = {"br", "img", "input", "hr", "meta", "source", "wbr", "col", "area", "embed", "link", "track", "param"}
+# English: a term that only modifies the noun after it is not the concept on its own ("wind power plants" is not Power;
+# teacher 2026-11-13: underline power where it first stands by itself)
+_EN_COMPOUND = re.compile(r"\s+(?:plants?|stations?|grids?|lines?|supply|supplies|cables?|outlets?|sockets?)\b", re.I)
 _MATH = re.compile(r"\$\$.*?\$\$|\$[^$]*\$|\\\(.*?\\\)|\\\[.*?\\\]", re.S)
 
 
@@ -192,6 +195,7 @@ def mark_first(stage_html, code, lid, lang):
             maths = [m.span() for m in _MATH.finditer(text)]
             hit = next((m for m in rx.finditer(text)
                         if not any(a < m.end() and m.start() < b for a, b in maths)
+                        and not (lang == "en" and _EN_COMPOUND.match(text, m.end()))
                         and not any(a < m.end() and m.start() < b for a, b, _ in taken.get(i, []))), None)
             if hit: taken.setdefault(i, []).append((hit.start(), hit.end(), c)); break
     for i, spans in taken.items():
