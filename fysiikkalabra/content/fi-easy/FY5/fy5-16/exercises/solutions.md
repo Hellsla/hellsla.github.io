@@ -243,7 +243,7 @@ Kohta c: annos on $\dfrac{3{,}0\,\text{h}}{1{,}59\,\text{h}} = 1{,}89$ eli $190\
 **Annettu:** kuvasta ruohonleikkurin taso $L = 90\,\text{dB}$; vertailu $L_0 = 85\,\text{dB}$ ja $t_0 = 8\,\text{h}$
 **Kysytty:** vertailuaika $t_\text{v}$ tunteina
 **Periaate:** Melualtistus lasketaan energian keskiarvona. Jokainen $3\,\text{dB}$:n nousu kaksinkertaistaa intensiteetin. Sama annos täyttyy silloin puolessa ajassa.
-**Kuvaajan lukeminen:** Asteikolla ruohonleikkurin merkki on kohdassa $90\,\text{dB}$. Se on punaisella alueella, jossa kuulo vaurioituu. Alue alkaa kohdasta $85\,\text{dB}$.
+**Kuvaajan lukeminen:** Asteikolla ruohonleikkurin merkki on kohdassa $90\,\text{dB}$. Se on punaisella alueella, jossa on kuulovaurion vaara. Alue alkaa kohdasta $85\,\text{dB}$.
 **Kaava:** $t_\text{v} = \dfrac{t_0}{2^{\,n}}$, missä $n = \dfrac{L - L_0}{3\,\text{dB}}$
 **Muunnokset:** Ei tarvita. Tasot ovat desibeleinä ja aika saadaan tunteina.
 **Sijoitus:** $n = \dfrac{90\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = \dfrac{5}{3}$, $t_\text{v} = \dfrac{8\,\text{h}}{2^{5/3}} = \dfrac{8\,\text{h}}{3{,}175} = 2{,}52\,\text{h}$
@@ -254,7 +254,7 @@ Kohta c: annos on $\dfrac{3{,}0\,\text{h}}{1{,}59\,\text{h}} = 1{,}89$ eli $190\
 **Annettu:** kuvasta rock-konsertin taso $L = 105\,\text{dB}$; vertailu $L_0 = 85\,\text{dB}$ ja $t_0 = 8\,\text{h}$
 **Kysytty:** vertailuaika $t_\text{v}$ minuutteina
 **Periaate:** Annos riippuu tasosta ja ajasta. Jokainen $3\,\text{dB}$:n nousu puolittaa vertailuajan, koska melualtistus lasketaan energian keskiarvona.
-**Kuvaajan lukeminen:** Rock-konsertin merkki on asteikolla kohdassa $105\,\text{dB}$. Se on alueella, jossa kuulo vaurioituu. Taso on $20\,\text{dB}$ korkeammalla kuin ylempi toiminta-arvo $85\,\text{dB}$.
+**Kuvaajan lukeminen:** Rock-konsertin merkki on asteikolla kohdassa $105\,\text{dB}$. Se on alueella, jossa on kuulovaurion vaara. Taso on $20\,\text{dB}$ korkeammalla kuin ylempi toiminta-arvo $85\,\text{dB}$.
 **Kaava:** $t_\text{v} = \dfrac{t_0}{2^{\,n}}$, missä $n = \dfrac{L - L_0}{3\,\text{dB}}$
 **Muunnokset:** $t_0 = 8\,\text{h} = 8 \cdot 60\,\text{min} = 480\,\text{min}$.
 **Sijoitus:** $n = \dfrac{105\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = \dfrac{20}{3}$, $t_\text{v} = \dfrac{480\,\text{min}}{2^{20/3}} = \dfrac{480\,\text{min}}{101{,}6} = 4{,}72\,\text{min}$
