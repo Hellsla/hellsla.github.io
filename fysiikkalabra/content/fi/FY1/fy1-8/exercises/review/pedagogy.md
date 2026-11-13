@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 50b79f966167569c
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-11-09: diff since origin/main only)
+CONTENT-HASH: 7b152209cf589af5
+SCOPE: delta added-exercise from 44acd46636ba9d0f base 81db4a6fd727
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- fy1-8-L1-10 -- Level fit: the student must invert the relative-uncertainty rule (t_min = dt/eps) and then apply s = vt, two ideas and a design reasoning step; fy1-8-L1-01 is the plain one-step version. Consider level 2. Finnish: `Mitattavan ajan suhteellisen epävarmuuden saa olla enintään 5 %` and `lyhin matka, jonka yli ääni mitataan kulkevan` are awkward; suggest `Ajan suhteellinen epävarmuus saa olla enintään 5 %. Kuinka pitkä on lyhin matka, jonka äänen kulkuaika voidaan mitata tällä tarkkuudella?`
 
 ## Checked
-- fy1-8-L3-04: the general rule 'a difference can be shown only if the intervals do not overlap' is removed; Periaate now states the data-specific conclusion (intervals overlap, no reliable conclusion, hand-timing uncertainty to be considered); Järkevyys softened to 'ei erotu luotettavasti'.
-- d = 0,04 s, k = 3,75 ≈ 3,8 and the overlap 3,08–3,12 s unchanged.
-- Language version fi judged from the diff against origin/main; notation (LaTeX numbers with units, decimal comma/point, \cdot) checked in changed lines.
+- fy1-8-L1-10: arithmetic and solution steps verified; solution follows given, asked, principle, formula, conversion, substitution, answer, sanity check; tolerance 4 % consistent with the stated answer.
+- Placement at the end of level 1 and mix of kinds in the whole set: fits; one MAFY lookup task per lesson, hint names the table.
+- Delta scope: only the added exercise judged; other exercises not re-reviewed.

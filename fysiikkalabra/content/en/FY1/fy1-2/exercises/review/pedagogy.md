@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 05cefb32bec1ef00
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-11-09: diff since origin/main only)
+CONTENT-HASH: 6e469b6befc9ac40
+SCOPE: delta added-exercise from d7be126d63bbf8b3 base 81db4a6fd727
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- fy1-2-L1-10 is close to fy1-1-L1-07 (Moon light time) across lessons; it adds unit conversion km to m, so acceptable.
 
 ## Checked
-- fy1-2-L3-02: question now asks for a ratio (how many times one screen width), so it no longer reads as a count of whole screens (675); answer 674.4, tolerance 0.02 unchanged; unit "" as in other ratio tasks.
-- Kysytty, Periaate, Vastaus describe the same ratio N; Järkevyys still fits.
-- Language version en judged from the diff against origin/main; notation (LaTeX numbers with units, decimal comma/point, \cdot) checked in changed lines.
+- Added exercise judged: level 1, wording (situation then question), table lookup is needed and stated, step-by-step solution, arithmetic verified.
+- Fit within the set of 22: progression, kinds and no repeat of the worked example.
+- Phone/language: nothing in the added text that clips; English reads plainly.

@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: f4e03d96d0aea49d
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-11-09: diff since origin/main only)
+CONTENT-HASH: cf8596c9bb8935b7
+SCOPE: delta added-exercise from 55f2eb07d7f4cc58 base 81db4a6fd727
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- solutions.md fy1-3-L1-09 — the answer paragraph adds an error-interval and systematic-error conclusion the task does not ask; it is a good idea but heavy for level 1 — mark it as an extra ("Lisäksi:") or move it to a hint.
+- exercises.json fy1-3-L1-09 — 'Montako prosenttia mittausten keskiarvo poikkeaa' reads better as 'Kuinka monta prosenttia mittausten keskiarvo poikkeaa taulukon arvosta?'
 
 ## Checked
-- fy1-3-L3-05: Periaate now names the check as a simplified comparison of the stated uncertainty estimates; Vastaus says the results are not consistent per these estimates, the estimates are not hard limits and separation alone does not decide statistical significance.
-- Gap 0.04 g/cm³ and intervals 2,69–2,79 / 2,55–2,65 unchanged and correct.
-- Language version fi-easy judged from the diff against origin/main; notation (LaTeX numbers with units, decimal comma/point, \cdot) checked in changed lines.
+- fy1-3-L1-09: mean, table value and percent deviation are in the lesson's scope; numbers verified (1,010; 1,18 %).
+- Solution has all steps (given, asked, principle, formula, conversions, substitution, answer, sanity check); arithmetic verified.
+- Whole-set fit: the MAFY lookup task adds a new kind (table lookup) at level 1; no repeat of the worked example.
+- Finnish and reading level fine; phone readability not affected (short calculation).

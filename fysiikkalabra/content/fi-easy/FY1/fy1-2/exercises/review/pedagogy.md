@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 5c84c3bbd0a47dd8
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-11-09: diff since origin/main only)
+CONTENT-HASH: 331d0dfe6fddbe76
+SCOPE: delta added-exercise from 8546113693eb8a92 base 81db4a6fd727
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- exercises.json fy1-2-L1-10 — the Moon light-travel time repeats fy1-1-L1-07 (same quantity) — consider a different body (e.g. Sun distance or Mars) for variety across the course.
 
 ## Checked
-- fy1-2-L3-02: question now asks for a ratio (how many times one screen width), so it no longer reads as a count of whole screens (675); answer 674.4, tolerance 0.02 unchanged; unit "" as in other ratio tasks.
-- Kysytty, Periaate, Vastaus describe the same ratio N; Järkevyys still fits.
-- Language version fi-easy judged from the diff against origin/main; notation (LaTeX numbers with units, decimal comma/point, \cdot) checked in changed lines.
+- fy1-2-L1-10: level 1; unit conversion km to m prompted in the task text.
+- Solution has all steps (given, asked, principle, formula, conversions, substitution, answer, sanity check); arithmetic verified.
+- Whole-set fit: the MAFY lookup task adds a new kind (table lookup) at level 1; no repeat of the worked example.
+- Finnish and reading level fine; phone readability not affected (short calculation).

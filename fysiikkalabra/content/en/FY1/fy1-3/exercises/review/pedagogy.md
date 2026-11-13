@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 99cf25d118827e5e
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-11-09: diff since origin/main only)
+CONTENT-HASH: 92fd5d8209d459f3
+SCOPE: delta added-exercise from d5ef6e898d999fd5 base 81db4a6fd727
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- fy1-3-L1-09 solution: the Answer line adds an error estimate and a systematic-error conclusion the task did not ask; move it to a note or drop it.
+- fy1-3-L1-09 Reasonableness is muddled (deviation 'over one percent' but 'small'); say that 1.2 % is small and the mean is close to 1 g/cm3.
 
 ## Checked
-- fy1-3-L3-05: Periaate now names the check as a simplified comparison of the stated uncertainty estimates; Vastaus says the results are not consistent per these estimates, the estimates are not hard limits and separation alone does not decide statistical significance.
-- Gap 0.04 g/cm³ and intervals 2,69–2,79 / 2,55–2,65 unchanged and correct.
-- Language version en judged from the diff against origin/main; notation (LaTeX numbers with units, decimal comma/point, \cdot) checked in changed lines.
+- Added exercise judged: level 1, wording (situation then question), table lookup is needed and stated, step-by-step solution, arithmetic verified.
+- Fit within the set of 22: progression, kinds and no repeat of the worked example.
+- Phone/language: nothing in the added text that clips; English reads plainly.

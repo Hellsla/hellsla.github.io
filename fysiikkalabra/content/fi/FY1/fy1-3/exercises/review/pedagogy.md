@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 3e5427fe956328a7
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-11-09: diff since origin/main only)
+CONTENT-HASH: 0efea0196a78b548
+SCOPE: delta added-exercise from 8ce9535a28c5573f base 81db4a6fd727
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- fy1-3-L1-09 -- Level 1 stretch: mean of five values plus percentage deviation plus (in the solution) half-range error and a systematic-error conclusion; the task asks only the percentage, so the conclusion is bonus. Consider asking the student whether the interval contains the table value as a second part, or keep as is. Overlaps fy1-3-L1-01 (mean) and L1-02 (deviation from known value) in skill but combines them; fine.
 
 ## Checked
-- fy1-3-L3-05: Periaate now names the check as a simplified comparison of the stated uncertainty estimates; Vastaus says the results are not consistent per these estimates, the estimates are not hard limits and separation alone does not decide statistical significance.
-- Gap 0.04 g/cm³ and intervals 2,69–2,79 / 2,55–2,65 unchanged and correct.
-- Language version fi judged from the diff against origin/main; notation (LaTeX numbers with units, decimal comma/point, \cdot) checked in changed lines.
+- fy1-3-L1-09: arithmetic and solution steps verified; solution follows given, asked, principle, formula, conversion, substitution, answer, sanity check; tolerance 4 % consistent with the stated answer.
+- Placement at the end of level 1 and mix of kinds in the whole set: fits; one MAFY lookup task per lesson, hint names the table.
+- Delta scope: only the added exercise judged; other exercises not re-reviewed.

@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 6472db20fc2ac7c5
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-11-09: diff since origin/main only)
+CONTENT-HASH: 67e21cc666ec7b0b
+SCOPE: delta added-exercise from de998fe1e15345d2 base 81db4a6fd727
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- exercises.json fy1-8-L1-10 — three-step inverse reasoning (t_min = dt/eps, then s = vt) is closer to level 2 than level 1; the student must derive t_min alone. Consider moving it to level 2 or adding the relation 'suhteellinen epävarmuus = dt/t' to the text.
 
 ## Checked
-- fy1-8-L3-04: the general rule 'a difference can be shown only if the intervals do not overlap' is removed; Periaate now states the data-specific conclusion (intervals overlap, no reliable conclusion, hand-timing uncertainty to be considered); Järkevyys softened to 'ei erotu luotettavasti'.
-- d = 0,04 s, k = 3,75 ≈ 3,8 and the overlap 3,08–3,12 s unchanged.
-- Language version fi-easy judged from the diff against origin/main; notation (LaTeX numbers with units, decimal comma/point, \cdot) checked in changed lines.
+- fy1-8-L1-10: solution is followable and has a back-check; numbers verified (4,0 s, 1,37 km).
+- Solution has all steps (given, asked, principle, formula, conversions, substitution, answer, sanity check); arithmetic verified.
+- Whole-set fit: the MAFY lookup task adds a new kind (table lookup) at level 1; no repeat of the worked example.
+- Finnish and reading level fine; phone readability not affected (short calculation).

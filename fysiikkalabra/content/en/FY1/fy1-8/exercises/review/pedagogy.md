@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: e6cb851f7e223149
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-11-09: diff since origin/main only)
+CONTENT-HASH: c41d049e6afed30a
+SCOPE: delta added-exercise from 442bab1479f9253c base 81db4a6fd727
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- fy1-8-L1-10 question wording is awkward: 'the shortest distance over which the sound must be measured to travel'; write 'What is the shortest distance the sound must travel in the measurement?'.
+- fy1-8-L1-10 is a two-step inversion (t_min, then s) and sits at the upper edge of level 1; acceptable.
+- fy1-8-L1-10 Answer says 'two significant figures as in the uncertainty 0.2 s' but 0.2 has one; say 'rounded sensibly'.
 
 ## Checked
-- fy1-8-L3-04: the general rule 'a difference can be shown only if the intervals do not overlap' is removed; Periaate now states the data-specific conclusion (intervals overlap, no reliable conclusion, hand-timing uncertainty to be considered); Järkevyys softened to 'ei erotu luotettavasti'.
-- d = 0,04 s, k = 3,75 ≈ 3,8 and the overlap 3,08–3,12 s unchanged.
-- Language version en judged from the diff against origin/main; notation (LaTeX numbers with units, decimal comma/point, \cdot) checked in changed lines.
+- Added exercise judged: level 1, wording (situation then question), table lookup is needed and stated, step-by-step solution, arithmetic verified.
+- Fit within the set of 22: progression, kinds and no repeat of the worked example.
+- Phone/language: nothing in the added text that clips; English reads plainly.
