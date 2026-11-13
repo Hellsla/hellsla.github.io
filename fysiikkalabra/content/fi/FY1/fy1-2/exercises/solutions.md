@@ -201,5 +201,5 @@
 **Kaava:** $t = \dfrac{s}{c}$
 **Muunnokset:** Nopeus on yksikössä $\text{m/s}$, joten matka muunnetaan metreiksi: $s = 384\,400\,\text{km} = 384\,400\cdot10^{3}\,\text{m} = 3{,}844\cdot10^{8}\,\text{m}$.
 **Sijoitus:** $t = \dfrac{3{,}844\cdot10^{8}\,\text{m}}{2{,}998\cdot10^{8}\,\text{m/s}} = 1{,}28\,\text{s}$
-**Vastaus:** $t \approx 1{,}3\,\text{s}$ (laskettu arvo $1{,}28\,\text{s}$). Etäisyys on MAFY-taulukosta (Aurinkokunta); vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Vastaus:** $t \approx 1{,}28\,\text{s}$ kolmella merkitsevällä numerolla, koska molemmissa tiedoissa ($3{,}844\cdot10^{8}\,\text{m}$ ja $2{,}998\cdot10^{8}\,\text{m/s}$) on neljä merkitsevää numeroa. Etäisyys on MAFY-taulukosta (Aurinkokunta); vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
 **Järkevyys:** Valo kulkee noin $3\cdot10^{8}\,\text{m}$ sekunnissa ja Kuun etäisyys on noin $4\cdot10^{8}\,\text{m}$, joten kulkuaika on hieman yli sekunnin. Tulos täsmää.

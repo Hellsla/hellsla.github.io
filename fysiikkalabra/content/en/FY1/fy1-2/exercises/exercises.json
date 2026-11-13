@@ -150,7 +150,7 @@
     {
       "id": "fy1-2-L1-10",
       "level": 1,
-      "text": "A device on the surface of the Moon sends a radio signal to the Earth. The signal travels at the speed of light, $c = 2.998\\cdot10^{8}\\,\\text{m/s}$. Look up the mean distance of the Moon from the Earth in the MAFY table (mafytaulukot.fi) and calculate how long the signal takes to travel that distance. The travel time is $t = s/c$, and the distance is converted to metres first.",
+      "text": "A device on the surface of the Moon sends a radio signal to the Earth. The signal travels at the speed of light, $c = 2.998\\cdot10^{8}\\,\\text{m/s}$. Look up the mean distance of the Moon from the Earth in the MAFY table (mafytaulukot.fi) and The travel time is $t = \\tfrac{s}{c}$, and the distance is converted to metres first. Calculate how long the signal takes to travel that distance.",
       "lookup": "MAFY",
       "answer": 1.28,
       "unit": "s",
