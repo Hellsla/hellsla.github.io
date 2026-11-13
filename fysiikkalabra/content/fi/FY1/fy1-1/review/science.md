@@ -1,20 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: eed3551ade27dd66
+CONTENT-HASH: 58fc8d7de6ebacca
 
 ## Blocking
 
 ## Polish
-- lesson.md:94 / inquiry.json check-1 (line 452 on) — with the √10 sentence gone, the lesson defines suuruusluokka only as "lähinnä kymmenpotenssien akselilla". Its two examples (1,7 → 10⁰, 8,8·10³ → 10⁴) cannot tell the log-axis nearest from the linear nearest. check-1 (4,0·10¹⁶ → 10¹⁷) needs the log reading, and the threshold "yli noin 3" now appears only in that feedback and in the glossary. This is not an error: the definition is correct and the Ydinajatus axis figure is logarithmic and to scale. Optional fix: add an example with a coefficient between 3 and 10 that rounds up (e.g. 4·10ⁿ → 10ⁿ⁺¹), or a clause saying the axis is the one in the figure, so a student can answer check-1 from the theory alone.
-- lesson.md (Sgr A*) — the text gives "noin neljä miljoonaa", the sim's Mallin oletukset 4,3 miljoonaa. They agree as rounded values. (Carried from the previous report.)
+- lesson.md:376 (object-types figure, aria-label) — the label says "jokainen askel on kymmenkertainen koko", but the axis ticks are two decades apart (10⁴, 10⁶, 10⁸ …), so each tick step is a factor of 100. The drawing is right; only the description is off. Fix: "jokainen merkitty askel on satakertainen koko", or leave the step out.
+- sim-spec.md vs inquiry.json simulaatio.calc — the spec says objects show from about 1/2000 of the view width, and Laskennan selitys says 1/1000. In sim.js an object reaches half opacity at S ≈ 0,48 px (≈ 1/1200 of 560 px), so the student-facing 1/1000 is the better figure. Fix: align the spec.
 
 ## Checked
-- Diff 9e7b1d7fb8 (fi lesson.md:94): the removed rule (a < √10 → 10ⁿ) and the remaining definition are the same thing (nearest on a log axis). Both examples are right: log₁₀ 1,7 = 0,23 → 10⁰ and log₁₀ 8 800 = 3,94 → 10⁴.
-- The rule is still the same everywhere: the glossary ("alle/yli noin 3"), check-1's options and feedback (log₁₀ 4,0·10¹⁶ = 16,60 → 10¹⁷), the Tiivistelmä ("lähin kymmenpotenssi") and the sim's kohdeExp = round(log₁₀ m).
-- The sim and the experiments, recomputed: mainObj with the −log₁₀(560/150) offset gives water / Earth / universe at L = −9 / 7,7 / 27,5. kohdeExp is atom −10, proton −15, Neptune 13, Milky Way 21, Planck −35, universe 27 and hair −4, so the exp-1 answer is 5, the exp-2 answer 8 and the exp-3 answer −4.
-- Recomputed in one script: example k = 6,47·10⁴ (Δn = 5), check-2 5,79·10⁴, siirto d = 12 732 km (C 40 000, r 6 366, 111 km/°). All match inquiry.json and lesson-answers.py.
-- Magnitudes: Sgr A* horizon 2,54·10¹⁰ m from 4,3·10⁶ M☉; 93 Gly = 8,80·10²⁶ m; light-year 9,46·10¹⁵ m; Proxima 4,0·10¹⁶ m; e/g force ratio for two protons 1,2·10³⁶; neutron star 20–25 km; heliopause about 120 AU; Oort cloud 2 000–100 000 AU.
-- Every choice item has exactly one correct option, and its distractors' feedback is right (pred-1, pred-2, exp-2, menetelmat, tunnista, vuorovaikutukset, virhe, check-1, check-c2).
-- The four interactions are right: residual strong force, β⁻ by the weak force, charge neutrality as the reason gravity dominates at large scales. The text stays within the FY1 scope note.
-- The check-3 model answer (31 decades) and the exit ticket agree with the theory.
-- The simulation's limits are stated in Mallin oletukset (rounded sizes, nucleus drawn too large, orbit radius labelled, horizon not a surface).
+- Changed paragraph lesson.md:198: "alle noin 3 → 10ⁿ, yli noin 3 → 10ⁿ⁺¹" is a fair level-C wording of the log-midpoint (√10 ≈ 3,16) rule. It matches the glossary, check-1's feedback (4,0·10¹⁶ → 10¹⁷), the examples (1,7 m → 10⁰, 8,8·10³ m → 10⁴) and sim.js `kohdeExp = Math.round(log10 m)`.
+- Recomputed in one script: the example k = 6,47·10⁴ ≈ 6,5·10⁴ and Δn = 5; exp-1 5; exp-2 8; exp-3 −4 (the hair in the sim has n = −4); siirto d = 12 732 km (40 000, 6 366 and 111 are the right mistakes); check-2 57 917 (inverse 1,73·10⁻⁵); virhe 109 and about 1,3·10⁶ Earths; reflection 42 and 62. lesson-answers.py agrees.
+- Magnitudes: proton 1,7 fm, H atom 1,1·10⁻¹⁰ m, nucleus/atom 10⁴–10⁵, stadium/pea 4·10⁴, nucleus >99,9 % of the mass (H 99,95 %), Sgr A* horizon 2·2GM/c² = 2,5·10¹⁰ m at 4,3·10⁶ M☉, heliopause 120 AU = 1,8·10¹³ m, observable universe 93 Gly = 8,8·10²⁶ m, Milky Way 10⁵ ly = 9,5·10²⁰ m, Coulomb/gravity for two protons 1,2·10³⁶.
+- The scale-axis and object-types figures are to scale as they say (measured against the tick spacing to within 0,05 decade). The cosmic-address and matter-ladder values are right, and both figures are marked "ei mittakaavassa".
+- The sim OBJ table agrees with the lesson and the glossary. Initial states L = −9, 7,7 and 27,5 give the nearest objects the intros name (water, Earth, universe). The calc example of 62 px is right. Orbits use the radius for n and the diameter for drawing, as Mallin oletukset says.
+- Each choice item (kertaus, pred-1, pred-2, exp-2, menetelmat, tunnista, vuorovaikutukset, virhe, check-1, check-c2) has exactly one correct option, and the distractor feedback is right.
+- The four interactions, the residual strong force, β⁻ decay, the role of the weak force in the Sun, neutron star and black hole facts, and the observable versus whole universe are all right and inside the teacher's qualitative scope.
+- The exit ticket and the check-3 model answer (31 orders of magnitude) agree with the theory.
 - The hash was the same at the start and at the end.
