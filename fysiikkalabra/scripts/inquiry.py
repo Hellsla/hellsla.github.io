@@ -718,6 +718,16 @@ TUTKI_FOLD_COURSES = {f"FY{i}" for i in range(1, 10)}   # the modules whose Tutk
 TUTKI_VISIBLE = 2                                  # at most this many tasks of Tutki in view (teacher 2026-11-06)
 
 
+SOURCE_SHOWN = ("measured", "statistics")   # teacher 2026-11-13: no provenance tag on example, simulated or model data; a real source stays as a small source line
+
+
+def source_line(src, note, inline):
+    """The small source line of a data table or task (teacher 2026-11-13, "esimerkkiaineisto-merkki pois"): the note
+    naming who measured it or which statistics it is, never a tag. Example, simulated and model data show nothing;
+    the `source` field stays in the source and the validation (invented numbers are never presented as measured)."""
+    return f'<p class="source" data-source="{src}">{inline(note)}</p>' if src in SOURCE_SHOWN and note else ""
+
+
 def tutki_split(items):
     """(shown, folded) for the Tutki stage. Teacher 2026-11-06: "Tutki-osuudessa saisi olla maksimissaan kaksi
     kysymystä" — too many questions in view hide the whole. The simulation stays as it is; of the tasks only the first
@@ -834,7 +844,7 @@ def render(folder, inquiry, parts, md):
         elif t == "experiment": content = experiment_html(a, md, lid)
         elif t == "interpret":
             src = a.get("source")
-            badge = (f'<p class="source" data-source="{src}"><strong>{T("inquiry.source_" + src)}</strong>' + (f' · {inline(md, a["source_note"])}' if a.get("source_note") else "") + '</p>') if src else ""
+            badge = source_line(src, a.get("source_note"), lambda x: inline(md, x))
             content = f'<div class="interpret">{badge}<div class="representation">{md(a["text"])}{fig_of(a)}</div>{question_html(a["question"], md, lid, aid) if a.get("question") else ""}</div>'
         elif t == "theory":
             content = "".join(parts["sections"][s] for s in a["sections"])

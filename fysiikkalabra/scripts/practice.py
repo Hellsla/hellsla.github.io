@@ -446,8 +446,8 @@ def _card(task, sols, md, solution_html):
     import figcat
     fig = lambda x: figcat.figure_html(x["figure"], i18n.t.lang) if x.get("figure") else ""   # a task's or a part's figure by its id
     src = task.get("source")
-    badge = ((f'<p class="source" data-source="{src}"><strong>{T("inquiry.source_" + src)}</strong>' if src else '<p class="source">')
-             + (f'{" · " if src else ""}{inline(task["source_note"])}' if task.get("source_note") else "") + '</p>') if (src or task.get("source_note")) else ""
+    import inquiry
+    badge = inquiry.source_line(src, task.get("source_note"), inline)   # no tag on example or simulated data (teacher 2026-11-13)
     parts = "" if own else "<ol class=\"parts\">" + "".join(
         f'<li><span class="part-id">{p["id"]})</span> <span class="part-text">{inline(p["text"])}</span> <span class="pts">{T("practice.points", n=p["points"])}</span>{fig(p)}'
         + (choice_html(task, p, inline) if p["kind"] == "choice" else "") + '</li>'

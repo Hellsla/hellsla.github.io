@@ -242,6 +242,12 @@ def restore_checks(pg, url, lid, ex, loc, want):
     tops = qloc.locator(".exp-controls button").evaluate_all("(bs) => bs.map((b) => Math.round(b.getBoundingClientRect().top))")
     check(f"{eid}: the four buttons share one row at 1280 px", len(set(tops)) == 1, str(tops))
     check(f"{eid}: Alkutila, Vakiona and Muutetaan are three rows of their own", qloc.locator(".exp-setup > div").count() == 3)
+    cap = qloc.locator(".exp-table caption").evaluate("(c) => c.getBoundingClientRect().height")
+    check(f"{eid}: the table's caption stays on one row at 1280 px (teacher 2026-11-13)", cap < 36, str(cap))
+    q.wait_for_timeout(1500)   # inquiry.js promote() runs at 300 and 1500 ms
+    stray = q.evaluate("() => [...document.querySelectorAll('#tutki details.opt')].filter((d) => !d.closest('details.more')).length")
+    in_more = q.evaluate("() => document.querySelectorAll('#tutki details.more details.opt').length")
+    check(f"{eid}: an optional investigation never leaves Lisää tutkittavaa ({in_more} inside, {stray} outside)", stray == 0 or not in_more, str(stray))
     q.close()
 
 
