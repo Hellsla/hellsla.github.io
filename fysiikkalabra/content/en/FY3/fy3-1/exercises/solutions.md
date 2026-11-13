@@ -216,3 +216,14 @@ The force of the hook is the reading of the meter, $F = 4.9\,\text{N}$. The forc
 **Substitution:** $G = 85.0\,\text{kg} \cdot 3.72\,\text{m/s}^2 = 316.2\,\text{N}$
 **Answer:** $316\,\text{N}$, three significant figures as in the mass and the table value. The value $g_\text{Mars} = 3.72\,\text{m/s}^2$ is from the MAFY table *Aurinkokunta*; tables differ slightly, and an answer within about $\pm 4\,\%$ is accepted.
 **Reasonableness:** On Earth the weight would be $85.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 \approx 834\,\text{N}$. The $g$ of Mars is about $0.38$ times the value on Earth, and $0.38 \cdot 834\,\text{N} \approx 317\,\text{N}$, so the result fits.
+
+## fy3-1-L2-08
+**Given:** the measurement points of the graph at grid crossings; the mass of the object $m = 12\,\text{kg}$
+**Find:** the weight $G$ of the object in newtons on the same celestial body
+**Principle:** Weight is directly proportional to mass, $G = m g$, and the factor $g$ is the same for every object on the surface of the same celestial body. Once $g$ is found from the graph, it can also be used for the mass $12\,\text{kg}$, which is outside the graph.
+**Reading the graph:** Read the points from the grid crossings: $(4\,\text{kg};\ 20\,\text{N})$ and $(10\,\text{kg};\ 50\,\text{N})$. In both, $G/m = 5\,\text{N/kg}$, so the points lie on the same straight line through the origin. The mass $12\,\text{kg}$ is to the right of the last point $(10\,\text{kg};\ 50\,\text{N})$, so the weight is more than $50\,\text{N}$. The line can be extended by eye, and an answer of $58$–$62\,\text{N}$ is accepted.
+**Formula:** $G = m g$, so $g = \dfrac{G_1}{m_1}$ and $G = m g$
+**Conversions:** No conversions are needed: the mass is in kilograms and the force in newtons. The ratio $\dfrac{G_1}{m_1}$ is in $\text{N/kg}$, which is the same as $\text{m/s}^2$.
+**Substitution:** $g = \dfrac{50\,\text{N}}{10\,\text{kg}} = 5.0\,\text{m/s}^2$ and $G = 12\,\text{kg} \cdot 5.0\,\text{m/s}^2 = 60\,\text{N}$
+**Answer:** $G = 60\,\text{N}$, two significant figures like the mass $12\,\text{kg}$.
+**Reasonableness:** The mass $12\,\text{kg}$ is $1.2$ times the mass $10\,\text{kg}$, so the weight is $1.2 \cdot 50\,\text{N} = 60\,\text{N}$. The result is greater than the weight at the point $(10\,\text{kg};\ 50\,\text{N})$, as it should be.

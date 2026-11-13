@@ -216,3 +216,14 @@ Koukun voima on mittarin lukema, $F = 4{,}9\,\text{N}$. Voimat ovat yhtä suuret
 **Sijoitus:** $G = 85{,}0\,\text{kg} \cdot 3{,}72\,\text{m/s}^2 = 316{,}2\,\text{N}$
 **Vastaus:** $316\,\text{N}$, kolme merkitsevää numeroa kuten massassa ja taulukon arvossa. Arvo $g_\text{Mars} = 3{,}72\,\text{m/s}^2$ on MAFY-taulukosta *Aurinkokunta*; eri taulukoiden arvot poikkeavat hieman toisistaan, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
 **Järkevyys:** Maassa paino olisi $85{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 834\,\text{N}$. Marsin $g$ on noin $0{,}38$-kertainen Maan arvoon nähden, ja $0{,}38 \cdot 834\,\text{N} \approx 317\,\text{N}$, joten tulos täsmää.
+
+## fy3-1-L2-08
+**Annettu:** kuvaajan mittauspisteet ruudukon risteyksissä; kappaleen massa $m = 12\,\text{kg}$
+**Kysytty:** kappaleen paino $G$ newtoneina samalla taivaankappaleella
+**Periaate:** Paino on suoraan verrannollinen massaan, $G = m g$, ja kerroin $g$ on saman taivaankappaleen pinnalla kaikille kappaleille sama. Kun $g$ määritetään kuvaajasta, sillä voi laskea myös massan $12\,\text{kg}$, joka on kuvaajan ulkopuolella.
+**Kuvaajan lukeminen:** Luetaan pisteet ruudukon risteyksistä: $(4\,\text{kg};\ 20\,\text{N})$ ja $(10\,\text{kg};\ 50\,\text{N})$. Molemmissa $G/m = 5\,\text{N/kg}$, joten pisteet ovat samalla origon kautta kulkevalla suoralla. Massa $12\,\text{kg}$ on viimeisen pisteen $(10\,\text{kg};\ 50\,\text{N})$ oikealla puolella, joten paino on yli $50\,\text{N}$. Suoraa voi jatkaa silmällä, ja vastaus $58$–$62\,\text{N}$ hyväksytään.
+**Kaava:** $G = m g$, joten $g = \dfrac{G_1}{m_1}$ ja $G = m g$
+**Muunnokset:** Muunnoksia ei tarvita: massa on kilogrammoina ja voima newtoneina. Suhde $\dfrac{G_1}{m_1}$ on yksikössä $\text{N/kg}$, joka on sama kuin $\text{m/s}^2$.
+**Sijoitus:** $g = \dfrac{50\,\text{N}}{10\,\text{kg}} = 5{,}0\,\text{m/s}^2$ ja $G = 12\,\text{kg} \cdot 5{,}0\,\text{m/s}^2 = 60\,\text{N}$
+**Vastaus:** $G = 60\,\text{N}$, kaksi merkitsevää numeroa kuten massassa $12\,\text{kg}$.
+**Järkevyys:** Massa $12\,\text{kg}$ on $1{,}2$-kertainen massaan $10\,\text{kg}$ nähden, joten paino on $1{,}2 \cdot 50\,\text{N} = 60\,\text{N}$. Tulos on suuremman kuin pisteen $(10\,\text{kg};\ 50\,\text{N})$ paino, kuten pitääkin.

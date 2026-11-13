@@ -279,3 +279,14 @@ Graph B passes through the points $(40\,\text{ml};\ 100\,\text{kPa})$, $(20\,\te
 **Substitution:** $V_2 = \dfrac{101\,\text{kPa} \cdot 2.0\,\textsf{l}}{70.1\,\text{kPa}} = 2.882\,\textsf{l}$
 **Answer:** $V_2 \approx 2.9\,\textsf{l}$, two significant figures, as in the volume $2.0\,\textsf{l}$. The pressure $70\,100\,\text{Pa}$ is from the MAFY table (air pressure, density and temperature at different heights); the answer is accepted within about $\pm 4\,\%$.
 **Reasonableness:** The pressure decreases, so the volume must increase. The pressure ratio is $101 : 70.1 \approx 1.44$, and $2.0\,\textsf{l} \cdot 1.44 \approx 2.9\,\textsf{l}$. The product $pV$ at the end is $70.1\,\text{kPa} \cdot 2.882\,\textsf{l} = 202\,\text{kPa}\cdot\textsf{l}$, the same as at the start, $101\,\text{kPa} \cdot 2.0\,\textsf{l} = 202\,\text{kPa}\cdot\textsf{l}$.
+
+## fy3-9-L2-09
+**Given:** from the graph the point $(300\,\text{K};\ 120\,\text{kPa})$, volume and amount of air constant; final temperature $\theta_2 = 100\,{}^\circ\text{C}$
+**Find:** the pressure $p_2$ of the air in kilopascals when $\theta_2 = 100\,{}^\circ\text{C}$
+**Principle:** The container is closed and rigid, so the volume and the amount of air stay the same. The change of state is isochoric: the pressure is directly proportional to the kelvin temperature, $p_1/T_1 = p_2/T_2$.
+**Reading the graph:** The points of the graph lie on grid crossings. At the point whose horizontal value is $T_1 = 300\,\text{K}$ the pressure $p_1 = 120\,\text{kPa}$ is read from the vertical axis. The other points, for example $(200\,\text{K};\ 80\,\text{kPa})$ and $(350\,\text{K};\ 140\,\text{kPa})$, give the same ratio $p/T = 0.40\,\text{kPa/K}$, so they lie on one line through the origin.
+**Formula:** $\dfrac{p_1}{T_1} = \dfrac{p_2}{T_2}$, so $p_2 = p_1 \cdot \dfrac{T_2}{T_1}$
+**Conversions:** $T_2 = 100 + 273.15\,\text{K} = 373.15\,\text{K}$, because the ratio needs the kelvin temperature. The pressure needs no conversion, because the units cancel.
+**Substitution:** $p_2 = 120\,\text{kPa} \cdot \dfrac{373.15\,\text{K}}{300\,\text{K}} = 149.26\,\text{kPa}$
+**Answer:** $p_2 \approx 149\,\text{kPa}$, three significant figures as in the pressure read, $120\,\text{kPa}$. Reading a graph is an estimate, so the answer is accepted within $\pm 2\,\%$.
+**Reasonableness:** The temperature rises by about $24\,\%$ ($373 : 300 \approx 1.24$), so the pressure must rise by the same amount: $120\,\text{kPa} \cdot 1.24 \approx 149\,\text{kPa}$. The result is also above the last point of the graph, $140\,\text{kPa}$, as it should be, because $100\,{}^\circ\text{C}$ is hotter than $350\,\text{K}$.

@@ -313,6 +313,18 @@
           "feedback": "Tässä paine pienenee tilavuuden mukana, ikään kuin $p$ olisi suoraan verrannollinen tilavuuteen $V$. Boylen laissa riippuvuus on käänteinen: kun tilavuus pienenee, paine kasvaa."
         }
       ]
+    },
+    {
+      "id": "fy3-9-L2-09",
+      "level": 2,
+      "text": "Suljetussa jäykässä astiassa on ilmaa, ja astian tilavuus ja ilman määrä pysyvät samoina. Kuvaajassa on esimerkkiaineisto: ilman paine $p$ kelvinlämpötilan $T$ funktiona, kun astiaa lämmitetään. Mikä on ilman paine, kun astian lämpötila on $100\\,{}^\\circ\\text{C}$? Lue tarvittava arvo kuvaajasta ja anna vastaus kilopascaleina.",
+      "figure": "fy3-9/kelvin-points",
+      "kind": [
+        "graph"
+      ],
+      "answer": 149,
+      "unit": "kPa",
+      "tolerance": 0.02
     }
   ],
   "level3": [

@@ -279,3 +279,14 @@ Kuvaaja B kulkee pisteiden $(40\,\text{ml};\ 100\,\text{kPa})$, $(20\,\text{ml};
 **Sijoitus:** $V_2 = \dfrac{101\,\text{kPa} \cdot 2{,}0\,\textsf{l}}{70{,}1\,\text{kPa}} = 2{,}882\,\textsf{l}$
 **Vastaus:** $V_2 \approx 2{,}9\,\textsf{l}$, kaksi merkitsevää numeroa kuten tilavuudessa $2{,}0\,\textsf{l}$. Paine $70\,100\,\text{Pa}$ on MAFY-taulukosta (ilmanpaine, tiheys ja lämpötila eri korkeuksilla). Vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
 **Järkevyys:** Paine pienenee. Siksi tilavuuden täytyy kasvaa. Painesuhde on $101 : 70{,}1 \approx 1{,}44$, ja $2{,}0\,\textsf{l} \cdot 1{,}44 \approx 2{,}9\,\textsf{l}$. Tulo $pV$ on lopussa $70{,}1\,\text{kPa} \cdot 2{,}882\,\textsf{l} = 202\,\text{kPa}\cdot\textsf{l}$. Se on sama kuin alussa: $101\,\text{kPa} \cdot 2{,}0\,\textsf{l} = 202\,\text{kPa}\cdot\textsf{l}$.
+
+## fy3-9-L2-09
+**Annettu:** kuvaajasta piste $(300\,\text{K};\ 120\,\text{kPa})$. Tilavuus ja ilman määrä eivät muutu. Lopputilan lämpötila on $\theta_2 = 100\,{}^\circ\text{C}$.
+**Kysytty:** ilman paine $p_2$ kilopascaleina, kun $\theta_2 = 100\,{}^\circ\text{C}$
+**Periaate:** Astia on suljettu ja jäykkä. Silloin tilavuus ja ilman määrä pysyvät samoina. Tämä on isokoorinen tilanmuutos: paine on suoraan verrannollinen kelvinlämpötilaan, $p_1/T_1 = p_2/T_2$.
+**Kuvaajan lukeminen:** Kuvaajan pisteet ovat ruudukon risteyksissä. Etsi piste, jossa $T_1 = 300\,\text{K}$. Lue sen kohdalta pystyakselilta paine $p_1 = 120\,\text{kPa}$. Muut pisteet antavat saman suhteen $p/T = 0{,}40\,\text{kPa/K}$, esimerkiksi $(200\,\text{K};\ 80\,\text{kPa})$ ja $(350\,\text{K};\ 140\,\text{kPa})$. Siksi pisteet ovat samalla suoralla, joka kulkee origon kautta.
+**Kaava:** $\dfrac{p_1}{T_1} = \dfrac{p_2}{T_2}$, josta $p_2 = p_1 \cdot \dfrac{T_2}{T_1}$
+**Muunnokset:** $T_2 = 100 + 273{,}15\,\text{K} = 373{,}15\,\text{K}$, koska suhteessa käytetään kelvinlämpötilaa. Painetta ei tarvitse muuttaa, koska yksiköt supistuvat.
+**Sijoitus:** $p_2 = 120\,\text{kPa} \cdot \dfrac{373{,}15\,\text{K}}{300\,\text{K}} = 149{,}26\,\text{kPa}$
+**Vastaus:** $p_2 \approx 149\,\text{kPa}$, kolme merkitsevää numeroa kuten luetussa paineessa $120\,\text{kPa}$. Kuvaajan lukeminen on arvio, joten vastaus hyväksytään $\pm 2\,\%$ tarkkuudella.
+**Järkevyys:** Lämpötila kasvaa noin $24\,\%$ ($373 : 300 \approx 1{,}24$). Paine kasvaa yhtä paljon: $120\,\text{kPa} \cdot 1{,}24 \approx 149\,\text{kPa}$. Tulos on suurempi kuin kuvaajan viimeinen paine $140\,\text{kPa}$. Niin pitää olla, koska $100\,{}^\circ\text{C}$ on kuumempi kuin $350\,\text{K}$.

@@ -79,6 +79,19 @@ def weight_mass():
     return f.svg()
 
 
+def weight_points():
+    """Weights of five bodies on an unknown celestial body for a task (scripts/figcat.py variant of `weight-mass`): the
+    student reads the points off a grid and finds g; the description lists the points, not g."""
+    f = Fig("fy31-weight-points", 330, "Kuvaaja mittakaavassa: kappaleiden paino G newtoneina massan m funktiona "
+            "tuntemattomalla taivaankappaleella. Viisi mittauspistettä ilman piirrettyä suoraa: (2 kg; 10 N), (4 kg; 20 N), "
+            "(6 kg; 30 N), (8 kg; 40 N) ja (10 kg; 50 N). Ruudukon väli on 2 kg ja 10 N.")
+    ax = Axes(f, (92, 290), (500, 70), x=(0, 11), y=(0, 60), xticks=[2, 4, 6, 8, 10], yticks=[10, 20, 30, 40, 50],
+              xlabel=r"m\ (\text{kg})", ylabel=r"G\ (\text{N})")
+    for m in [2, 4, 6, 8, 10]:
+        ax.point(m, 5 * m, WATER)
+    return f.svg()
+
+
 def hero():
     """The chapter's opening illustration: an astronaut hopping on the Moon, the Earth in the black sky."""
     f = H.hero("fy31-hero", "Kuvitus: astronautti loikkaa Kuun harmaalla pinnalla, ja hänen jalanjälkensä näkyvät pölyssä. "
@@ -202,7 +215,7 @@ def pick_extra():
                     wrong="an extra force F_k, the body's pull on the meter, acts on the meter, not on the body")
 
 
-FIGURES = {"hero": hero, "scene": scene, "forcemeter": forcemeter, "force-extension": force_extension, "weight-mass": weight_mass, "spring-points": spring_points,
+FIGURES = {"hero": hero, "scene": scene, "forcemeter": forcemeter, "force-extension": force_extension, "weight-mass": weight_mass, "spring-points": spring_points, "weight-points": weight_points,
            "pick-rest": pick_rest, "pick-weight-only": pick_weight_only, "pick-long-pull": pick_long_pull, "pick-extra": pick_extra}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
@@ -210,6 +223,7 @@ REUSE = {
     "force-extension": "reveals: the points and x/F = 0,4 cm/N",
     "weight-mass": "reveals: the weights of 100 kg on Earth, Mars and the Moon",
     "spring-points": "safe: five (F, x) calibration points of a spring without the line; the description lists the points",
+    "weight-points": "safe: five (m, G) points of bodies on an unknown celestial body without the line; the description lists the points",
     "pick-rest": "reveals: the right option of task fy3-1-L1-09 (a hanging body at rest: G down, the meter's F up, equal)",
     "pick-weight-only": "safe: a wrong option of task fy3-1-L1-09 (only the weight G, the meter's pull missing)",
     "pick-long-pull": "safe: a wrong option of task fy3-1-L1-09 (the meter's pull F drawn twice the weight)",
