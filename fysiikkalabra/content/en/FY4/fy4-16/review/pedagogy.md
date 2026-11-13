@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 6715f4c193fc7b4a
+CONTENT-HASH: c15f65955b18ff03
 
 ## Blocking
-(none)
+None. The Kaava section gives the energy principle with W as work of forces other than weight; W_mu for friction stays distinct.
 
 ## Polish
-- The third tool is named but not practised here; add "not practised in this chapter" if desired.
+1. lesson.md, Kaava: say once that W in the principle can be W_mu plus other forces' work.
 
 ## Checked
-batch delta review (en): "module" to "chapter" fixed; collision chapter reference added; three-level instruction still clear after the removal of the level-1 sentence.
+Read the changed text and the surrounding formula section, worked example, solutions and inquiry for the MAFY symbols; grep found no leftover old symbol (F_parallel, W_kok, W_muut, E_k,1, E_mek,1) in this language.

@@ -1,19 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 0cb9ccd04c9d1ba6
-Mode: delta (exercises, en), round 1. Changed: new task L2-08, situation/question paragraph splits, solutions.md for L2-08.
+CONTENT-HASH: e958149d90cd81ad
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] fy3-12 L3 ocean-warming task — "700 metres"/"365 days" ("700 metrin", "365 vuorokautta") are plain-text quantities in untouched reviewed text — set as $700\,\text{m}$ and $365\,\text{d}$ at the next edit.
+- [Minor] fy3-12-L1-05 / L2-09 — "the arrow between the Sun and the Earth that points up and to the left" is clumsy; "the pale arrow pointing up and left away from the Earth" matches the figure.
 
 ## Checked
-- Rendered preview/en/fy3-12.html at 390 px with my own script (scratch trvis3x): fy3-12-L2-08 (ordering task, task card, answer and model solution) and the split tasks L2-01, L3-01..04, in default and answered/opened state.
-- The new L2-08 card opened in full: task text, options or statements, feedback blocks, Vastaus/Answer and model solution; formulas, units, fractions and the units with \cdot render as KaTeX, no red source, no clipping or horizontal overflow.
-- The paragraph splits read as situation, then data, then the question; nothing sideways when feedback opens.
-- Fluent, consistent terms (efficiency, absorbed heat, latent heat); one instructional voice; decimal point and thin-space units set as maths.
-- Figure and graph tasks were not changed by the diff; contact sheets are not used in this exercises-only delta.
+- Round 3, delta. Opened fy3-12-open-exercises-1280-5 (15-5): "Reading the graph" now quotes "heat radiation", which is the label shown on the English figure; no "lämpösäteily" remains in solutions.md.
+- Round 2 captures of 15-18 (L2-1280-12) unchanged by this fix; figure, answer box and solution layout fine.
+- Hash at start and end the same.
 
 ## Scores
-illustrations 4 · typography 5 · English 4 · accessibility 4
+illustrations 5 · typography 5 · English 4 · accessibility 4

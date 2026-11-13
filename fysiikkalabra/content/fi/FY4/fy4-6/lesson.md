@@ -300,20 +300,24 @@ Kitkan lisäksi kappaleeseen voi vaikuttaa muitakin kosketusvoimia. **Noste** on
 
 ## Kaava: Kitkavoima ja kalteva taso
 Painon suuruus on
-```latex
-G = mg
+```kaavat
+kappaleeseen vaikuttava painovoima Maan pinnalla :: G = mg
 ```
 missä $G$ on paino (N), $m$ massa (kg) ja $g$ putoamiskiihtyvyys, Maan pinnalla $9{,}81\,\text{m/s}^2$.
 
 Liikekitka on verrannollinen tukivoimaan:
-```latex
-F_\mu = \mu N
+```kaavat
+liukukitka :: F_\mu = \mu N
 ```
 missä $F_\mu$ on liikekitkan suuruus (N), $\mu$ **liikekitkakerroin** (ei yksikköä) ja $N$ tukivoiman suuruus (N). Lepokitka on enintään tukivoiman ja **lepokitkakertoimen** $\mu_0$ tulo:
 ```latex
 F_{\mu 0} \le \mu_0 N
 ```
-missä $F_{\mu 0}$ on lepokitkan suuruus (N). Kitkakertoimet riippuvat pintojen aineista ja kunnosta, ja yleensä $\mu < \mu_0$. Kaavat ovat kokeellisia malleja, jotka kuvaavat kuivia pintoja hyvin. Niissä kitka ei riipu kosketuspinnan alasta eikä liukumisnopeudesta.
+missä $F_{\mu 0}$ on lepokitkan suuruus (N). Suurimmillaan lepokitka on juuri ennen kuin kappale lähtee liukumaan. Tämä täysin kehittynyt lepokitka on **lähtökitka**:
+```kaavat
+lähtökitka, eli täysin kehittynyt lepokitka :: F_{\mu 0} = \mu_0 N
+```
+Kitkakertoimet riippuvat pintojen aineista ja kunnosta, ja yleensä $\mu < \mu_0$. Kaavat ovat kokeellisia malleja, jotka kuvaavat kuivia pintoja hyvin. Niissä kitka ei riipu kosketuspinnan alasta eikä liukumisnopeudesta.
 
 Kaltevalla tasolla, jonka kaltevuuskulma on $\alpha$, valitaan $x$-akseli rinteen suuntaiseksi ja $y$-akseli kohtisuoraan pintaa vastaan. Painon komponentit ovat
 ```latex

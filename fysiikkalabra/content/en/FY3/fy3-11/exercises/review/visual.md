@@ -1,19 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 73e42d2dc825c95e
-Mode: delta (exercises, en), round 1. Changed: new task L2-08, situation/question paragraph splits, solutions.md for L2-08.
+CONTENT-HASH: 68419fe71066d43a
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- (none)
+- [Minor] fy3-11 page, section #sovella (not an exercise): at 390 px a KaTeX span reaches x=431, so the page scrolls horizontally; fy3-15 has an SVG over 390 px wide. Neither is in the changed exercises; check separately.
 
 ## Checked
-- Rendered preview/en/fy3-11.html at 390 px with my own script (scratch trvis3x): fy3-11-L2-08 (efficiency, choice then reason) and the split tasks L2-01, L3-01..04, in default and answered/opened state.
-- The new L2-08 card opened in full: task text, options or statements, feedback blocks, Vastaus/Answer and model solution; formulas, units, fractions and the units with \cdot render as KaTeX, no red source, no clipping or horizontal overflow.
-- The paragraph splits read as situation, then data, then the question; nothing sideways when feedback opens.
-- Fluent, consistent terms (efficiency, absorbed heat, latent heat); one instructional voice; decimal point and thin-space units set as maths.
-- Figure and graph tasks were not changed by the diff; contact sheets are not used in this exercises-only delta.
+fy3-11 L1-09, L2-09 (pv-isobaari figure), L2-04, L3-02 opened with solutions at 390 and 1280 px (en). P_a/P_o and Q_1 render cleanly; the graph is legible with axes and units.
 
 ## Scores
-illustrations 4 · typography 5 · English 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

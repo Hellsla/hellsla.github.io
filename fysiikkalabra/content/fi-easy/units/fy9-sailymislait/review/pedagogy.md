@@ -1,8 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: ed98ef3e0a32b022
+CONTENT-HASH: 456c89720f6a41c5
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 126db917d5bd6620.
 
-Delta review (solution practice, 2026-11-12) of the version passed before.
+## Blocking
+(none)
 
-Exit-ticket answers now start from the law (E_k = mv^2/2, p conserved) and keep it short; shares (F/G, Ek'/Ek, dp/p) solved in symbols; N k E_h in d. Good. Same physics and steps as fi in fi-easy (numbers match fi).
+## Polish
+(none)
 
-Checked: diff since 761b6673, symbols defined, solved expression equals Sijoitus, answers.py output, tasks.json answer/criteria, cross-language number match.
+## Checked
+Diff only: exit ticket answers now state E_k = 1/2 mv^2 and m1v1 = (m1+m2)v' before numbers (CLAUDE.md symbolic-first); level and length unchanged. Inquiry and sovella solutions add ratio formulas, y = s_p/v0 reading, symbols N, k for tasks; consistent.

@@ -1,20 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 35a961c55c19b541
+CONTENT-HASH: 95b438af4632227f
+SCOPE: delta added-exercise from 35a961c55c19b541 base 81db4a6fd727
 
 ## Blocking
 (none)
 
-## Fixed
-- (none needed)
-
 ## Polish
-- none
+(none)
 
 ## Checked
-- New task fy3-16-L2-08 (YO-skill form, reasoning+model) compared with the reviewed Finnish: id, level, kind, answer, unit, tolerance, four choices, correct flag and choice order identical.
-- Physics recomputed: t = s m/(U A ΔT), t2/t1 = (1.5/1.0)(1/0.5)(20/30) = 2; distractors 1 (U forgotten), 0.5 (U inverted), 3 (ΔT forgotten) correct and each feedback is right.
-- Conditions stated: 0 °C inside while ice lasts, no drinks, same area; ΔT in °C equals K.
-- Solution section (Given/Find/Principle/Model answer) has the same numbers and symbols as the Finnish; decimal point used.
-- Translation (English): natural, decimal point, no Finnish words left; terms consistent (U-value, latent heat of fusion).
-- Rest of the set unchanged from the previously passed version.
-- check_i18n.py: nothing for fy3-16; build.py fy3-16 succeeds.
+- fy3-16-L1-09 (new situation: boiling pot on a hob): water already at 100 °C, so Q = r m = 2260 kJ/kg * 0.30 kg = 678 kJ, answer 680 kJ in two figures; 4 % tolerance covers other table values (2257 kJ/kg); the check 678/126 = 5.4 times the warming heat 0-100 °C is right.
+- fy3-16-L2-09: constant power, no losses stated in the task; read (0 s; 20 °C) and (180 s; 60 °C) on grid crossings of heating-line; c = P t / (m Delta T) = 400 * 180 / (2.0 * 40) = 900 J/(kg K), as answers.py. The note that losses make the true c smaller is the right direction (less heat reaches the block for the same Delta T).
+- fy3-16-L2-10: figure melting-curve gives (0; -16), (20; 0), (220; 0) kJ/°C; my own check c_ice m Delta T + s m = 2100 * 0.60 * 16 + 334 000 * 0.60 = 20.2 + 200.4 = 220.6 kJ agrees with the graph; t = 220 000 J / 25 W = 8800 s = 2.44 h, answer 2.4 h inside the 3 % tolerance.
+- L2-10 conditions: the temperature stays at 0 °C while the ice melts (pure substance at constant pressure), constant transfer power stated in the task; the slope after melting (80 kJ for 31.9 K) matches c_water * 0.60 kg, so the figure is consistent to scale.
+- Solutions complete: given, principle, symbolic formula first, conversions (kJ to J, s to h), substitution, rounding reason, an independent check.
+- Scripted comparison with the Finnish exercises.json: all 24 exercises have the same answers, units, tolerances, figures and task-text numbers; every answers.py value within its tolerance.
+- Hash identical at start and end.

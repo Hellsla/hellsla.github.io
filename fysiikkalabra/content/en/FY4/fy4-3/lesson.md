@@ -520,8 +520,8 @@ Newton's third law is written for the forces between two objects:
 where $\overline{F}_{AB}$ is the force with which object A acts on object B (N), and $\overline{F}_{BA}$ is the force with which B acts on A (N). The minus sign tells that the forces are opposite in direction; the magnitudes are the same, $F_{AB} = F_{BA}$.
 
 In calculations the magnitude of the weight is often needed:
-```latex
-G = mg
+```kaavat
+weight of a body at the Earth's surface :: G = mg
 ```
 where $G$ is the weight (N), $m$ is the mass of the object (kg) and $g = 9.81\,\text{m/s}^2$ is the acceleration due to gravity. The reaction force of the weight is the equally large gravitational force of the object on the Earth.
 

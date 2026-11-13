@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 36eadb30514d6f18
+CONTENT-HASH: e5b3692fe330bd26
 
 ## Blocking
-- none
+None. Read the whole chapter (lesson, inquiry, exit ticket); the new notation can be followed by a first-time student, the inquiry, worked example and exit ticket use the same symbols, and no number or answer changed.
 
 ## Polish
-- none
-
-## Checked
-- delta review 2026-11-07 (teacher's proofread replacement texts): the hook (thermal power plant, about 2,5 times the fuel energy) and the misconception paragraph (waste heat goes to cooling water or air; small temperature difference limits the maximum efficiency; CHP uses part of it as district heat) are clear and consistent with the lesson's heat-engine and CHP sections.
-batch delta review: the rephrased learning goals each complete "Tällä tunnilla opit" with a lowercase -maan/-mään verb, parallel within the list, symbols and numbers unchanged, meaning kept; the change touches no figure, simulation or task.
+1. lesson.md, Kaava: η = W_a/W_o = P_a/P_o with the a = anto, o = otto note and 'o-kirjain, ei nolla' is clear; the chain from P_o and P_h = P_o − P_a read well. The paragraph is dense (four new terms in one block); consider splitting at 'Voimalaitoksessa vaiheet ovat peräkkäin'.
+2. The stage formula P_h = P_o − P_a is used in the solutions with P_o the stage's input (P_o = P_1 for the steam cycle) while the chain calls that input P_1; solutions explain it, but a half-sentence in the lesson ('vaiheelle otto on edellisen vaiheen anto') would remove the doubt.
+3. exercises (solutions L2-07 area): the heat-pump task still uses ε = Q/E_s while fy3-11 now teaches ε = Q₁/W; E_s means 'sähköenergia' here. Consider ε = Q₁/W or say so in Annettu.

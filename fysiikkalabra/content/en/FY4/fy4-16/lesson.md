@@ -235,17 +235,14 @@ A sled slides down a straight slope. The free-body diagram shows that the compon
 
 ## Formula: Equation of motion and work–energy principle
 The first tool of an applied problem is Newton's second law:
-```latex
-\Sigma\overline{F} = m\overline{a}
+```kaavat
+Newton's second law (fundamental law of dynamics) :: \Sigma\overline{F} = m\overline{a}
 ```
 where $\Sigma\overline{F}$ is the sum of the forces acting on the body, that is, the net force ($\text{N}$), $m$ is the mass of the body ($\text{kg}$) and $\overline{a}$ its acceleration ($\text{m/s}^2$). The law is written from the free-body diagram in components, $\Sigma F_x = ma_x$ and $\Sigma F_y = ma_y$, once the axes and the positive directions have been chosen. The second tool is the work–energy principle of mechanics:
-```latex
-\begin{aligned}
-&E_{\text{k},1} + E_{\text{p},1} + W_\text{other} \\
-&\quad = E_{\text{k},2} + E_{\text{p},2}
-\end{aligned}
+```kaavat
+work-energy principle of mechanics :: E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}
 ```
-where the index $1$ means the initial situation and $2$ the final situation, $E_\text{k} = \tfrac12 mv^2$ is the kinetic energy, $E_\text{p} = mgh$ the potential energy from the chosen zero level and $W_\text{other}$ the work done by forces other than the weight ($\text{J}$). The work–energy principle needs neither the acceleration nor the time, so it fits when the question is about the speed at a given point.
+where the index $0$ means the initial situation and a quantity without an index the final situation, $E_\text{k} = \tfrac12 mv^2$ is the kinetic energy, $E_\text{p} = mgh$ the potential energy from the chosen zero level and $W$ the work done by forces other than the weight ($\text{J}$). The work–energy principle needs neither the acceleration nor the time, so it fits when the question is about the speed at a given point.
 
 ### The work done by friction depends on the horizontal distance
 On a straight slope with an angle of inclination $\alpha$ and a length $L$, the kinetic friction is $\mu mg\cos\alpha$ and the work it does is $-\mu mg\cos\alpha \cdot L$. The figure shows that $L\cos\alpha$ is the horizontal length $x_1$ of the slope. On the flat $N = mg$, and the work done by friction over a distance $x_2$ is $-\mu mg x_2$. In both cases the work done by kinetic friction is
@@ -308,7 +305,7 @@ A child and a sled, together $32.0\,\text{kg}$, start from rest at the top of a 
 
 <!-- vaihe -->
 
-**Principle.** The question is about the speed at a given point, so we use the work–energy principle. We choose the sled and the child together as the body. The weight does work, which the work–energy principle takes into account as a change in potential energy. The normal force does no work, because it is perpendicular to the motion. Kinetic friction points against the motion and does negative work $W_\text{other} = -F_\mu L$. The friction force comes from the free-body diagram.
+**Principle.** The question is about the speed at a given point, so we use the work–energy principle. We choose the sled and the child together as the body. The weight does work, which the work–energy principle takes into account as a change in potential energy. The normal force does no work, because it is perpendicular to the motion. Kinetic friction points against the motion and does negative work $W = -F_\mu L$. The friction force comes from the free-body diagram.
 
 <!-- vaihe -->
 

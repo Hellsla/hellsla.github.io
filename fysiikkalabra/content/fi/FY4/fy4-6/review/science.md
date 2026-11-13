@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 499ab9a8d8d44d8d
-
+CONTENT-HASH: 1502c5cf3c54d78b
 ## Blocking
 
 ## Polish
-
+1. lesson.md, Kaava: $F_{\mu 0}$ now stands for the static friction ($\le \mu_0 N$) and for its limiting value ($= \mu_0 N$). The sentence before says it; optionally write "juuri ennen liukumista" into the line after the equality so no one reads $F_{\mu 0} = \mu_0 N$ as always true.
 ## Checked
-batch delta review: three slope diagrams rendered and recomputed. Box at 26.5 deg: N = 19.62 cos = 17.56 N, static friction 8.754 N up-slope, x down-slope (axes -26.5), G components dashed. Belt at 15 deg: N = 75.81 N, static friction 20.31 N up the belt (direction of motion, as text says), x up the belt. Book at 17 deg: m not given, G = 9.81 is a unit scale and every ratio depends only on the angle (N 9.381, F_mu 2.868); kinetic friction up-slope. All balance with a = 0.
+- $G = mg$, $F_\mu = \mu N$, $F_{\mu 0} \le \mu_0 N$ and the new $F_{\mu 0} = \mu_0 N$ (lähtökitka / limiting static friction: greatest static friction just before sliding) are right and MAFY's; symbols and units defined above.
+- Tilt experiment $\mu_0 = \tan\alpha_0$ consistent with the limit; nothing else changed in the physics; fi, fi-easy, en agree.

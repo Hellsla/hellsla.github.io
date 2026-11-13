@@ -1,18 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 814ed3c8b96c2177
+CONTENT-HASH: 9abc5f49d6a2185e
 
 ## Blocking
 (none)
 
-## Fixed
-- (none needed)
-
 ## Polish
-- none
+- fy3-16-L1-09 — a hob that releases 0,30 kg of vapour 'ilmaan' is slightly odd; 'kattilasta kiehuu pois 0,30 kg vettä' reads more naturally.
 
 ## Checked
-- L2-08 asks for a comparison of two trips by proportional reasoning; the task text does not give the ratio away, the answer is not disclosed before the student chooses.
-- Each distractor targets one real misconception (forgotten U-value, inverted U-value, forgotten outdoor temperature) and its feedback names it and repairs it.
-- Model answer is staged: ratio formula, substitution, result, then interpretation and the three wrong routes; matches the Finnish.
-- Plain Finnish (NOTES §12): shorter sentences, same physics and reasoning, nothing removed; split sentences in the Principle and feedback keep every claim.
-- Order of choices and the rest of the set match the previously passed version; check_i18n.py clean, build ok.
+- L1-09 now a kettle on a hob, no longer the sauna of L1-02; the new situation fits level 1 (lookup, Q = rm).
+- Solution: periaate, units, 678 kJ and the check match; the Järkevyys line no longer refers to the sauna and is a general statement.

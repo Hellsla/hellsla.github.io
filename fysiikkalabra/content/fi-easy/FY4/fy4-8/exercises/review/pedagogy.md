@@ -1,18 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 9eabe3f653615330
-Mode: full (translation review against the reviewed Finnish set; one new task fy4-8-L1-09)
-Round 2
+CONTENT-HASH: 075bf558b791a2a9
 
 ## Blocking
-(none)
-
-## Fixed
-(none needed)
+None. Exercises, including the added ones, use the same symbols; each solution names which work W is; answers unchanged.
 
 ## Polish
-(none)
+2. Solutions use E_mek0 (e.g. exercise on friction and air drag) but the lesson never says E_mek0 = E_p0 + E_k0; add it beside the E_mek definition.
 
 ## Checked
-- New task fy4-8-L1-09 keeps the Finnish structure: situation first, question last as its own sentence, level and kind as in fi, feedback names the specific error.
-- Language is selkosuomi per NOTES.md §12, same physics; reading level and terms equal to fi, glossary terms consistent.
-- The solution has the full steps (Given, Find, Principle, formula, substitution, answer, reasonableness) as in fi, with significant figures as in fi.
+Read the changed text and the surrounding formula section, worked example, solutions and inquiry for the MAFY symbols; grep found no leftover old symbol (F_parallel, W_kok, W_muut, E_k,1, E_mek,1) in this language.

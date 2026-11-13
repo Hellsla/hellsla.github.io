@@ -235,9 +235,10 @@ expect("exercise packet: the brief (formula sections, worked example) and the ex
        code == 0 and "Exercise brief" in xs and "## Esimerkki" in xs and "## Kaava" in xs and "### answers.py" in xs and "### lesson.md" not in xs and "### sim.js" not in xs
        and "### inquiry.json" not in xs and "exercises/review/science.md" in xs and "--exercises" in xs and "<svg" not in xs, out)
 code, out = run(t, "review_packet.py", LESSON, "--role", "developer", "--exercises"); xd = (t / "content/fi/FY3" / LESSON / "exercises/review/packet-developer.md").read_text()
+# 0.65: the exercise bank (20+ tasks with complete solutions per chapter, 2026-11) makes the exercise files most of a lesson folder
 expect("exercise developer packet: rules, brief and current exercises, a fraction of the lesson's size",
        code == 0 and "Complete solutions" in xd and "Exercise brief" in xd and "### exercises.json" in xd and "### lesson.md" not in xd
-       and len(xd) < 0.6 * sum(f.stat().st_size for f in (t / "content/fi/FY3" / LESSON).rglob("*") if f.is_file() and "review" not in f.parts), out)
+       and len(xd) < 0.65 * sum(f.stat().st_size for f in (t / "content/fi/FY3" / LESSON).rglob("*") if f.is_file() and "review" not in f.parts), out)
 code, out = run(t, "review_packet.py", "--batch", LESSON, "--role", "pedagogy"); bf = t / "review-batch/packet-pedagogy.md"; pb = bf.read_text() if bf.exists() else ""
 expect("batch packet: one file for many lessons, each with its diff and its own report", code == 0 and f"## {LESSON}" in pb and "```diff" in pb and "review/pedagogy.md" in pb, out)
 code, out = run(t, "review_packet.py", LESSON, "--role", "developer", "--fix"); pd = (t / "content/fi/FY3" / LESSON / "review/packet-developer.md").read_text()

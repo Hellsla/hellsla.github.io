@@ -1,9 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 6715f4c193fc7b4a
+CONTENT-HASH: c15f65955b18ff03
 
 ## Blocking
+None.
 
 ## Polish
+None.
 
 ## Checked
-batch delta review: the added sentence naming the module's third tool (impulse principle and conservation of momentum for collisions and short impacts) is correct physics and within FY4's central contents; the cited chapter *Conservation of momentum and one-dimensional collisions* exists under that title. The scope narrowing "the problems of this chapter" with two tools stays consistent with the lesson's tasks (lift, parachute, sledding hill use the equation of motion and the work–energy principle only). The free-body-diagram reasoning and chapter references are unchanged. No numbers, choices or answers changed.
+- Formula tables: Newton's second law and the energy principle E_p0 + E_k0 + W = E_p + E_k with W the work of the forces other than the weight, index rule and units stated; W_μ = −μmgx and W_v = −F_v h keep their own subscripts and conditions (straight surface, same μ, only weight and normal force perpendicular).
+- Worked example: W = −F_μL is the only other-force work, so W is unambiguous; v_2 = 8,69 m/s recomputed. Exit ticket (W = Fs), inquiry feedback (ΔE_mek = W) consistent with fy4-8.
+- lesson-answers.py unchanged; lint has no physics warnings; fi, fi-easy and en say the same.

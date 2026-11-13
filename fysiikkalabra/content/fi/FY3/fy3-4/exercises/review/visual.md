@@ -1,17 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 89a47ad1ed9999a9
-ROUND: 2
+CONTENT-HASH: de002e4a7676e5f2
+ROUND: 1
 
 ## Blocking
-(none) Round-1 Major resolved: the Mallivastaus chain is now an aligned display block (substitution row, "= 9,81 · 10^6 Pa" below); in the 390 px render the result is fully visible and the page scrollWidth is 390 (was 449).
+(none)
 
 ## Polish
-- [Minor] fy3-4-L1-09 Mallivastaus — the symbolic $\Delta p = \rho g h$ stands only in Periaate; optional first row.
-- [Minor] The last paragraph packs three distractor remarks and the estimate together; optional split.
+- [Minor] fy3-4-L2-08 Muunnokset — three separate display boxes ("ja", "joten") between short lines read choppy; fold into one chain if the layout allows.
+- [Minor] fy3-4-L2-08 — answer chip "1,5 · 10^3" while Sijoitus gives 1529; fine, but the Vastaus gives "1500" in words after "Eli"; consistent enough.
+- [Minor] fy3-4/two-liquids — B is brown-orange; distinguishable from A by colour and letter labels (labels are on the lines, so not colour alone).
 
 ## Checked
-- From renders (own Playwright, 390 px, feedback and solution open): fy3-4-L1-09 options, feedback, Annettu/Kysytty/Periaate/Mallivastaus, the aligned block; overflow measured, none.
-- From text only: the rest of the set and fy3-4-L3-02 (rendered clean in round 1).
+- Delta: opened fy3-4-open-exercises-1280-10 (L1-10 solution), fy3-4-open-exercises-L2-1280-10 (L2-08 with two-liquids graph) and -11, -12 (its solution).
+- Graph: two lines from the shared surface point, labelled A and B at the line ends, axes p (kPa), h (m), markers on grid crossings; the description does not give densities.
+- Typography: fractions with units, $1{,}02 \cdot 10^{3}$, Pa/m chain readable.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

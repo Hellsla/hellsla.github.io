@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 8410e58fd9dfb80d
+CONTENT-HASH: 21c0771bd024b3c4
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- [Minor] Caption is purely descriptive; optionally relate it to the model above (the sled slides when $\tan\alpha > \mu_0$ is satisfied).
+1. fy4-6 formula tables: lähtökitka F_{\mu 0} = \mu_0 N renders well; the table follows the sentence introducing it.
 
-## Checked
-batch delta review: opened en/fy4-6 captures at 360 and 1280 px and the photo file; photo loads, sits in the theory column (floated right or unfloated by layout rule at 1280, full column at 360), no clipping or overflow from the photo, alt and caption natural English and consistent with the picture, no unit-bearing numbers needing LaTeX, credit line present under the caption.
+Checked: preview at 390 and 1280 px, formula tables, opened solutions; no horizontal overflow, no KaTeX errors, old symbols gone.

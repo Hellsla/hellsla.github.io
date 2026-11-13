@@ -64,7 +64,7 @@
         },
         {
           "text": "Työ on janan ja tilavuusakselin väliin jäävän suorakulmion ala, koska korkeus on paine ja leveys tilavuuden muutos.",
-          "feedback": "Oikein: $W_\\text{k} = p\\,\\Delta V$ on korkeuden $p$ ja leveyden $\\Delta V$ tulo. Siksi työ on suorakulmion pinta-ala. Yksikkö $\\text{Pa}\\cdot\\text{m}^3$ on joule.",
+          "feedback": "Oikein: $W = p\\,\\Delta V$ on korkeuden $p$ ja leveyden $\\Delta V$ tulo. Siksi työ on suorakulmion pinta-ala. Yksikkö $\\text{Pa}\\cdot\\text{m}^3$ on joule.",
           "correct": true
         },
         {
@@ -98,7 +98,7 @@
         },
         {
           "text": "Pumppu siirtää lämpöä ulkoilmasta sisälle, joten sisälle luovutettu energia on ulkoa otetun lämmön ja sähkön summa.",
-          "feedback": "Oikein: $Q_\\text{sisälle} = Q_\\text{ulko} + E_\\text{s}$. Pumppu siirtää sähkön avulla lämpöä kylmästä lämpimään. Energiaa ei synny tyhjästä.",
+          "feedback": "Oikein: $Q_1 = Q_2 + W$. Pumppu siirtää sähkön avulla lämpöä kylmästä lämpimään. Energiaa ei synny tyhjästä.",
           "correct": true
         }
       ]
@@ -148,7 +148,7 @@
     {
       "id": "fy3-11-L2-03",
       "level": 2,
-      "text": "Fysiikan tunnilla sylinterissä on ilmaa. Kevyesti liikkuva mäntä sulkee sylinterin. Ilmaa lämmitetään, ja siihen siirtyy lämpömäärä $700{,}0\\,\\text{J}$. Ilma laajenee niin, että sen paine pysyy $125\\,\\text{kPa}$:na ja tilavuus kasvaa $1{,}60\\,\\textsf{l}$.\n\nKuinka paljon ilman sisäenergia muuttuu? Käytä ensimmäistä pääsääntöä $\\Delta U = Q - W_\\text{k}$. Siinä $W_\\text{k}$ on ilman tekemä työ. Anna vastaus etumerkkeineen.",
+      "text": "Fysiikan tunnilla sylinterissä on ilmaa. Kevyesti liikkuva mäntä sulkee sylinterin. Ilmaa lämmitetään, ja siihen siirtyy lämpömäärä $700{,}0\\,\\text{J}$. Ilma laajenee niin, että sen paine pysyy $125\\,\\text{kPa}$:na ja tilavuus kasvaa $1{,}60\\,\\textsf{l}$.\n\nKuinka paljon ilman sisäenergia muuttuu? Käytä ensimmäistä pääsääntöä $\\Delta U = Q + W$. Siinä $W$ on ilmaan tehty työ. Anna vastaus etumerkkeineen.",
       "answer": 500,
       "unit": "J",
       "tolerance": 0.02
@@ -232,7 +232,7 @@
     {
       "id": "fy3-11-L2-07",
       "level": 2,
-      "text": "Esimerkkiaineisto: koulun ilmalämpöpumpun toimintaa seurattiin neljän vuorokauden ajan. Ilmalämpöpumppu ottaa lämpöä ulkoilmasta. Jokaisesta vuorokaudesta mitattiin pumpun käyttämä sähköenergia $E_\\text{s}$ ja sisälle luovutettu lämpö $Q_\\text{sisälle}$. Kuinka paljon lämpöä pumppu otti ulkoilmasta kaikkiaan näiden neljän vuorokauden aikana? Anna vastaus kilowattitunteina.",
+      "text": "Esimerkkiaineisto: koulun ilmalämpöpumpun toimintaa seurattiin neljän vuorokauden ajan. Ilmalämpöpumppu ottaa lämpöä ulkoilmasta. Jokaisesta vuorokaudesta mitattiin pumpun käyttämä sähköenergia $W$ ja sisälle luovutettu lämpö $Q_1$. Kuinka paljon lämpöä pumppu otti ulkoilmasta kaikkiaan näiden neljän vuorokauden aikana? Anna vastaus kilowattitunteina.",
       "kind": [
         "data"
       ],
@@ -244,8 +244,8 @@
         "columns": [
           "Vuorokausi",
           "$T_\\text{ulko}\\,({}^\\circ\\text{C})$",
-          "$E_\\text{s}\\,(\\text{kWh})$",
-          "$Q_\\text{sisälle}\\,(\\text{kWh})$"
+          "$W\\,(\\text{kWh})$",
+          "$Q_1\\,(\\text{kWh})$"
         ],
         "rows": [
           [
@@ -360,7 +360,7 @@
     {
       "id": "fy3-11-L3-04",
       "level": 3,
-      "text": "Esimerkkiaineisto: omakotitalon lämmitystä suunnitellaan lämpöpumpulla. Taulukossa on talon kuukausittainen lämmöntarve $Q$ talvikaudella. Siinä on myös pumpun lämpökerroin $\\varepsilon$ kunkin kuukauden keskimääräisessä ulkolämpötilassa. Lämpökerroin kertoo, kuinka moninkertaisen lämmön pumppu luovuttaa sähköön verrattuna. Lämmöntarve katetaan kokonaan pumpulla.\n\na) Laske sähköenergia $E_\\text{s}$, jonka pumppu käyttää kunkin kuukauden aikana, ja kaikkien kuukausien yhteenlaskettu sähköenergia.\n\nb) Laske kauden keskimääräinen lämpökerroin $\\varepsilon_\\text{kausi}$. Se kertoo koko kauden luovutetun lämmön suhteen koko kauden sähköenergiaan.\n\nc) Selitä, miksi kauden lämpökerrointa ei saa laskea kuukausien lämpökertoimien tavallisena keskiarvona. Laske myös, kuinka paljon sähköä pumppu säästää verrattuna suoraan sähkölämmitykseen, jossa kaikki lämpö tulee sähköstä.\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
+      "text": "Esimerkkiaineisto: omakotitalon lämmitystä suunnitellaan lämpöpumpulla. Taulukossa on talon kuukausittainen lämmöntarve $Q$ talvikaudella. Siinä on myös pumpun lämpökerroin $\\varepsilon$ kunkin kuukauden keskimääräisessä ulkolämpötilassa. Lämpökerroin kertoo, kuinka moninkertaisen lämmön pumppu luovuttaa sähköön verrattuna. Lämmöntarve katetaan kokonaan pumpulla.\n\na) Laske sähköenergia $W$, jonka pumppu käyttää kunkin kuukauden aikana, ja kaikkien kuukausien yhteenlaskettu sähköenergia.\n\nb) Laske kauden keskimääräinen lämpökerroin $\\varepsilon_\\text{kausi}$. Se kertoo koko kauden luovutetun lämmön suhteen koko kauden sähköenergiaan.\n\nc) Selitä, miksi kauden lämpökerrointa ei saa laskea kuukausien lämpökertoimien tavallisena keskiarvona. Laske myös, kuinka paljon sähköä pumppu säästää verrattuna suoraan sähkölämmitykseen, jossa kaikki lämpö tulee sähköstä.\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
       "kind": [
         "data",
         "model"
@@ -413,7 +413,7 @@
     {
       "id": "fy3-11-L3-05",
       "level": 3,
-      "text": "Esimerkkiaineisto: pystysuorassa sylinterissä on ilmaa. Kevyesti liikkuva mäntä sulkee sylinterin. Sylinterin poikkipinta-ala on $A = 200\\,\\text{cm}^2$. Mittausten mukaan ilman paine pysyy vakiona, $p = 125\\,\\text{kPa}$. Ilmaa lämmitetään sähkövastuksella, jonka teho on $260\\,\\text{W}$. Oletetaan, että kaikki vastuksen luovuttama energia siirtyy ilmaan lämpönä. Taulukossa on männän korkeus $h$ sylinterin pohjasta mitattuna lämmityksen aikana.\n\na) Laske ilmaan neljässä sekunnissa siirtynyt lämpö $Q$ ja ilman tekemä työ $W_\\text{k}$. Käytä taulukon alku- ja loppuarvoa.\n\nb) Laske ilman sisäenergian muutos $\\Delta U$.\n\nc) Laske, kuinka suuri osa lämmöstä muuttui työksi. Perustele, miksi tällainen yksittäinen laajeneminen ei vielä ole lämpövoimakone.\n\nKirjoita vastauslaatikkoon kohdan b) tulos kilojouleina.",
+      "text": "Esimerkkiaineisto: pystysuorassa sylinterissä on ilmaa. Kevyesti liikkuva mäntä sulkee sylinterin. Sylinterin poikkipinta-ala on $A = 200\\,\\text{cm}^2$. Mittausten mukaan ilman paine pysyy vakiona, $p = 125\\,\\text{kPa}$. Ilmaa lämmitetään sähkövastuksella, jonka teho on $260\\,\\text{W}$. Oletetaan, että kaikki vastuksen luovuttama energia siirtyy ilmaan lämpönä. Taulukossa on männän korkeus $h$ sylinterin pohjasta mitattuna lämmityksen aikana.\n\na) Laske ilmaan neljässä sekunnissa siirtynyt lämpö $Q$ ja ilman tekemä työ $W$. Käytä taulukon alku- ja loppuarvoa.\n\nb) Laske ilman sisäenergian muutos $\\Delta U$.\n\nc) Laske, kuinka suuri osa lämmöstä muuttui työksi. Perustele, miksi tällainen yksittäinen laajeneminen ei vielä ole lämpövoimakone.\n\nKirjoita vastauslaatikkoon kohdan b) tulos kilojouleina.",
       "kind": [
         "data",
         "model"

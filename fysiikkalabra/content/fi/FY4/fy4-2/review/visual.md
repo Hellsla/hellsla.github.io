@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: eb0d98eb0e1b903e
+CONTENT-HASH: b9d83d98e4369409
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- none
+1. fy4-2 formula section: a_k table and 'a = a_k' sentence render cleanly; no overflow.
 
-## Checked
-- Light delta review: diff read; changed passages opened at 360-390 px (fy4-2-example-390-2 Tulos; summary bullet in source): clean, no inline formula wraps, no overflow.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+Checked: preview at 390 and 1280 px, formula tables, opened solutions; no horizontal overflow, no KaTeX errors, old symbols gone.
+Delta (Tiivistelmä/Summary re-checked at 390 px: renders cleanly, no overflow).

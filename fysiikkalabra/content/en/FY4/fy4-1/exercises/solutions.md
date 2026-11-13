@@ -119,12 +119,12 @@ $$\begin{aligned} x &= 0 + 1.5\,\text{m/s} \cdot 33.33\ldots\,\text{s} \\ &= 50\
 
 ## fy4-1-L3-03
 **Given:** parts of the $(t, x)$ graph: $x = 0$ at $0\,\text{s}$, $x = 30\,\text{m}$ at $10\,\text{s}$, $x = 30\,\text{m}$ at $20\,\text{s}$ and $x = 10\,\text{m}$ at $40\,\text{s}$
-**Find:** the average velocity $v_\text{avg}$ over the whole $40\,\text{s}$ with its sign in the unit $\text{m/s}$
+**Find:** the average velocity $v_\text{k}$ over the whole $40\,\text{s}$ with its sign in the unit $\text{m/s}$
 **Principle:** The average velocity is the whole displacement divided by the whole time. Only the initial and final positions affect the displacement, so the intermediate stages, that is moving forward, stopping and coming back, do not affect the calculation.
 **Reading the graph:** From the given points we read the starting point $(0\,\text{s};\, 0\,\text{m})$ and the end point $(40\,\text{s};\, 10\,\text{m})$. Between $10\text{–}20\,\text{s}$ the graph is horizontal, because the robot stands still, and its points are not needed. The average velocity is the slope of the line between these two points.
-**Formula:** $v_\text{avg} = \dfrac{\Delta x}{\Delta t} = \dfrac{x_2 - x_1}{t_2 - t_1}$
+**Formula:** $v_\text{k} = \dfrac{\Delta x}{\Delta t} = \dfrac{x_2 - x_1}{t_2 - t_1}$
 **Conversions:** The positions are in metres and the times in seconds, so no conversions are needed.
-**Substitution:** $v_\text{avg} = \dfrac{10\,\text{m} - 0\,\text{m}}{40\,\text{s} - 0\,\text{s}} = 0.25\,\text{m/s}$
+**Substitution:** $v_\text{k} = \dfrac{10\,\text{m} - 0\,\text{m}}{40\,\text{s} - 0\,\text{s}} = 0.25\,\text{m/s}$
 **Answer:** $0.25\,\text{m/s}$, two significant figures, because the final position $10\,\text{m}$ and the time $40\,\text{s}$ are given with two figures.
 **Reasonableness:** The robot went $30\,\text{m}$ forward and $20\,\text{m}$ back, so the displacement is $30\,\text{m} - 20\,\text{m} = 10\,\text{m}$ even though the distance was $50\,\text{m}$. The sign is positive, because at the end the robot is at a greater $x$ than at the beginning. The mean of the partial velocities $3.0\,\text{m/s}$, $0$ and $-1.0\,\text{m/s}$, $\dfrac{3.0 + 0 - 1.0}{3} = 0.67\,\text{m/s}$, would be wrong, because the sub-intervals are not of equal length.
 

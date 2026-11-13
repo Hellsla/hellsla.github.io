@@ -81,7 +81,7 @@ def kartta():
     groups = [
         ("Newtonin lait", [(r"\Sigma\overline{F} = \overline{0}", "I: lepo tai vakionopeus"), (r"\Sigma\overline{F} = m\overline{a}", "II"),
                            (r"\overline{F}_{AB} = -\overline{F}_{BA}", "III")]),
-        ("voimat", [(r"\overline{G} = m\overline{g}", "paino"), (r"F_\mu = \mu N", "liikekitka"), (r"F_{\mu 0} \le \mu_0 N", "lepokitka")]),
+        ("voimat", [(r"\overline{G} = m\overline{g}", "paino"), (r"F_\mu = \mu N", "liikekitka"), (r"F_{\mu_0} = \mu_0 N", "lepokitka")]),
         ("erikoistilanteet", [(r"G_x = mg\sin\alpha", "rinne"), (r"\Sigma F_x = m_i a_x", "kytketyt"), (r"F_\text{v} = G", "rajanopeus")]),
     ]
     hub_y, hub_h, x_box, gh, top = 8, 112, 44, 150, 140

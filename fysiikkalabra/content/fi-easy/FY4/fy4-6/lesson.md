@@ -314,20 +314,23 @@ Kitkan lisäksi kappaleeseen voi vaikuttaa muitakin kosketusvoimia. **Noste** on
 
 ## Kaava: Kitkavoima ja kalteva taso
 Painon suuruus on
-```latex
-G = mg
+```kaavat
+kappaleeseen vaikuttava painovoima Maan pinnalla :: G = mg
 ```
 missä $G$ on paino (N), $m$ massa (kg) ja $g$ putoamiskiihtyvyys, Maan pinnalla $9{,}81\,\text{m/s}^2$.
 
 Liikekitka on verrannollinen tukivoimaan:
-```latex
-F_\mu = \mu N
+```kaavat
+liukukitka :: F_\mu = \mu N
 ```
 missä $F_\mu$ on liikekitkan suuruus (N), $\mu$ **liikekitkakerroin** (ei yksikköä) ja $N$ tukivoiman suuruus (N). Lepokitka on enintään tukivoiman ja **lepokitkakertoimen** $\mu_0$ tulo:
 ```latex
 F_{\mu 0} \le \mu_0 N
 ```
-missä $F_{\mu 0}$ on lepokitkan suuruus (N).
+missä $F_{\mu 0}$ on lepokitkan suuruus (N). Lepokitka on suurimmillaan juuri ennen kuin kappale lähtee liukumaan. Tätä suurinta lepokitkaa sanotaan **lähtökitkaksi**:
+```kaavat
+lähtökitka, eli täysin kehittynyt lepokitka :: F_{\mu 0} = \mu_0 N
+```
 
 Kitkakertoimet riippuvat pintojen aineista ja kunnosta. Yleensä $\mu < \mu_0$. Kaavat ovat kokeellisia malleja, jotka kuvaavat kuivia pintoja hyvin. Niissä kitka ei riipu kosketuspinnan alasta eikä liukumisnopeudesta.
 

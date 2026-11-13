@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 01aaf77e676e6fd4
-Delta review (solution practice, 2026-11-12) of the version passed before.
+CONTENT-HASH: 2b347105827eead3
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 4a4554bfe169b358.
 
 ## Blocking
 (none)
 
 ## Polish
-1. s5 b rubric `conclusion` (`tasks.json`) still says "about 151–153 s" while the model answer says about 153 s; harmless (151 s is accepted), align if touched.
+1. s5 a Answer quotes "without subtracting the background the fit would give $157\,\text{s}$" (recomputed: 157.08 s, correct), but answers.py has no key for it (`s5-a-raw` = 154.9 s is the raw two-point value). Adding a key such as `s5-a-raw-fit` would make the number traceable.
 
 ## Checked
-Earlier Blocking resolved. (1) s5 a has one accepted range: tolerance 0,04 at 153 gives 146,9–159,1 s, and the `units_precision` criterion and *Hyväksytään myös* both say 147–159 s. (2) answers.py: key s5-a = 153,1 (fit of ln(N−5) on all 11 points), s5-a-two = 150,83, s5-a-diff = −1,5 % against the fit. Recomputed independently: fit 153,07 s (intercept 5,993, value at 300 s 4,635), two endpoints 150,83 s (−1,46 %, so "1,5 %" is now right), fit without background 157,08 s (the new "157 s" sentence is right). Note: far-apart pairs (Δt ≥ 180 s) span 144,5–163 s, so the range rightly rejects the noisiest pairs. fi, fi-easy and en carry the same numbers; `units.py check` passes.
+Every hunk of the en merge diff (word diff). Refit of all 11 background-subtracted points (own numpy fit): slope $-4.528\cdot10^{-3}$ 1/s, intercept 5.993, value 4.635 at 300 s, $T_{1/2} = 153.07$ s; two-endpoint 150.8 s (−1.5 %); raw fit 157.1 s; answers.py run (s5-a 153.1, s5-a-two 150.83, nothing references the removed `s5-a-fit` key); tasks.json value 153 with 4 % tolerance = the stated 147–159 s range, the two-point method accepted. Photoelectric $W = -eb$, $f_0 = -b/k$ with $k = h/e$: 5.43·10¹⁴ Hz; $E_0(1/4 - 1/9)$ form; the Cs and U mass symbols. Every changed formula is symbolic before substitution and uses no symbol in a sense that differs from the unit's ```kaavat``` names or notation from #522; the $ and brace balance of each added line is checked; `units.py check` passes; the hash was taken at the start and the end and matches.

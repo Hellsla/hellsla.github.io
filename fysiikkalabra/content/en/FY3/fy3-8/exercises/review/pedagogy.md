@@ -1,13 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 79c6b33c4e73d6f3
+CONTENT-HASH: cd25322f12bff34e
+SCOPE: delta added-exercise from c8fd8fdeae438699 base 5453544b2abc
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- none
+1. fy3-8-L1-09 sits close to L1-01 (steel gutter, same formula); it adds the MAFY lookup, which is the point, so it is acceptable. Its hint names the table, good.
+2. Earlier polish still open: no task uses l = l0(1 + alpha dT) for the length after heating or cooling.
 
 ## Checked
-- New task fy3-8-L2-08 read in en against the Finnish: nothing lost (text, all answer options or statements, every feedback, all solution steps and the estimate/reasoning sentences).
-- Language is natural English with the decimal point; the task is as clear and answerable as the Finnish.
-- Feedback of each wrong option names its misconception, as in the Finnish; the solution keeps the Given/Find/Principle/Model answer structure.
+- L1-09: level 1 (one formula, one lookup); situation then question; solution symbolic first, units, reasonableness check; +-4 % tolerance explained.
+- L2-09: graph reading plus slope plus rearrangement is level 2; the figure gives start and end points, no alpha or material; description equals the picture; the solution says how the graph is read; tolerance matches grid reading.
+- Set mix: graph/data task fits the data-task goal; no repeat of the worked example.

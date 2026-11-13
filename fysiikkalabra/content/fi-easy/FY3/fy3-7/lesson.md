@@ -184,8 +184,9 @@ Kiehumispiste riippuu paineesta. Faasikaavio näyttää, missä olomuodossa aine
 
 ## Kaava: Sulamis- ja höyrystymislämpö
 Massan $m$ sulattamiseen tai höyrystämiseen tarvittava lämpömäärä on
-```latex
-Q = s m \qquad \text{ja} \qquad Q = r m
+```kaavat
+sulamislämpö :: Q = s m
+höyrystymislämpö :: Q = r m
 ```
 Tässä $Q$ on lämpömäärä (J), $s$ on aineen ominaissulamislämpö (J/kg) ja $r$ on ominaishöyrystymislämpö (J/kg). Massa $m$ on sulavan tai höyrystyvän aineen massa (kg). Sama lämpömäärä vapautuu, kun aine jähmettyy tai tiivistyy. Vakiopaineessa lämpötila ei muutu olomuodon muutoksen aikana. Siksi kaavassa ei ole lämpötilan muutosta $\Delta T$.
 

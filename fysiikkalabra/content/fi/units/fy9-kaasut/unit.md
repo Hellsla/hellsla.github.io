@@ -176,7 +176,7 @@ Tämän tunnin tehtävät kiertyvät yhden suureen ympärille: **paine on pintaa
 
 Kokeen kaasutehtävissä tarvitaan kaksi tarkistusta ennen lukuja. **Lämpötila kelvineinä**, koska kaasulait ovat verrannollisuuksia, jotka alkavat absoluuttisesta nollapisteestä. **Kokonaispaine**, koska painemittari näyttää yleensä vain ylipaineen, ja kaasun hiukkaset tuottavat koko paineen.
 
-<svg data-fig="kartta" viewBox="0 0 380 596" role="img" aria-label="Käsitekartta. Ylhäällä solmu paine: p = F / A. Siitä lähtee alas kolme haaraa. Neste: paine syvyydellä p = p0 + ρ g h, ylipaine ρ g h ja kokonaispaine, joka on ilmanpaine ja ylipaine yhteensä. Kaasu: tilanyhtälö p V = n R T, yhdistetty kaasulaki p V / T = vakio ja kelvinlämpötila T = θ + 273,15 K. Lämpövoimakone: kaasun työ W = p ΔV, energian säilyminen W = Q1 − Q2 ja hyötysuhde eeta = W / Q1." style="max-width:min(100%,440px);font-size:21px">
+<svg data-fig="kartta" viewBox="0 0 380 596" role="img" aria-label="Käsitekartta. Ylhäällä solmu paine: p = F / A. Siitä lähtee alas kolme haaraa. Neste: paine syvyydellä p = p0 + ρ g h, ylipaine ρ g h ja kokonaispaine, joka on ilmanpaine ja ylipaine yhteensä. Kaasu: tilanyhtälö p V = n R T, yhdistetty kaasulaki p V / T = vakio ja kelvinlämpötila T = θ + 273,15 K. Lämpövoimakone: kaasun työ W = p ΔV, lämpöopin 1. pääsääntö ΔU = Q + W ja hyötysuhde eeta = W / Q1." style="max-width:min(100%,440px);font-size:21px">
   <line x1="24" y1="80" x2="24" y2="454" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
   <foreignObject x="158.5" y="16.5" width="63" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:21px">$\text{paine}$</div></foreignObject>
@@ -207,8 +207,8 @@ Kokeen kaasutehtävissä tarvitaan kaksi tarkistusta ennen lukuja. **Lämpötila
   <line x1="54" y1="474" x2="362" y2="474" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="58" y="485.5" width="74" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$W = p\,\Delta V$</div></foreignObject>
   <foreignObject x="274" y="488" width="88" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{kaasun työ}$</div></foreignObject>
-  <foreignObject x="58" y="519.5" width="84" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$W = Q_1 - Q_2$</div></foreignObject>
-  <foreignObject x="266" y="522" width="96" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{säilyminen}$</div></foreignObject>
+  <foreignObject x="58" y="519.5" width="74" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\Delta U = Q + W$</div></foreignObject>
+  <foreignObject x="257" y="522" width="105" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{1. pääsääntö}$</div></foreignObject>
   <foreignObject x="58" y="553.5" width="74" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\eta = W/Q_1$</div></foreignObject>
   <foreignObject x="266" y="556" width="96" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{hyötysuhde}$</div></foreignObject>
 </svg>
@@ -274,8 +274,8 @@ tilanyhtälö vakioainemäärälle :: \frac{pV}{T} = \text{vakio}
 
 eli kahdessa tilassa $\tfrac{p_1 V_1}{T_1} = \tfrac{p_2 V_2}{T_2}$. Siitä saadaan erikoistapaukset: vakiolämpötilassa Boylen laki $p_1V_1 = p_2V_2$, vakiopaineessa $V \propto T$ ja vakiotilavuudessa $p \propto T$. Kelvinlämpötila on
 
-```kaavat
-lämpötila kelvineinä :: T = \theta + 273{,}15\,\text{K}
+```latex
+T = \theta + 273{,}15\,\text{K}
 ```
 
 missä $\theta$ on celsiuslämpötilan lukuarvo. Absoluuttinen nollapiste saadaan kokeessa jatkamalla $(\theta, p)$- tai $(\theta, V)$-suoraa nollaan. Se on mallin ennuste: todellinen kaasu tiivistyy nesteeksi ennen sitä.
@@ -294,13 +294,9 @@ missä $\Delta V$ on tilavuuden muutoksen suuruus (m³); työ on ($V$, $p$)-kuva
 lämpöopin 1. pääsääntö :: \Delta U = Q + W
 ```
 
-missä $Q$ on kaasuun siirtynyt lämpö (J) ja $W$ kaasuun tehty työ (J). Puristuksessa $W = p\Delta V$ on positiivinen. Laajeneva kaasu tekee työn $p\Delta V$ itse, joten silloin $W = -p\Delta V$ ja sisäenergia pienenee tämän verran. Lämpövoimakone ottaa kierroksessa kuumasta lähteestä lämmön $Q_1$, tekee työn $W$ ja luovuttaa lämmön $Q_2$ kylmempään ympäristöön. Energia säilyy, joten
+missä $Q$ on kaasuun siirtynyt lämpö (J) ja $W$ kaasuun tehty työ (J). Puristuksessa $W = p\Delta V$ on positiivinen. Laajeneva kaasu tekee työn $p\Delta V$ itse, joten silloin $W = -p\Delta V$ ja sisäenergia pienenee tämän verran.
 
-```kaavat
-lämpövoimakoneen tekemä työ :: W = Q_1 - Q_2
-```
-
-ja hyötysuhde on
+Lämpövoimakone ottaa kierroksessa kuumasta lähteestä lämmön $Q_1$ ($\text{J}$), tekee työn $W$ ($\text{J}$) ja luovuttaa lämmön $Q_2$ ($\text{J}$) kylmempään ympäristöön. Kierroksen lopussa koneen kaasu on samassa tilassa kuin alussa. Koneen hyötysuhde on
 
 ```kaavat
 lämpövoimakoneen hyötysuhde :: \eta = \frac{W}{Q_1}
@@ -322,6 +318,26 @@ Osa lämmöstä on aina luovutettava kylmempään, joten lämpövoimakoneen hyö
   <rect x="16" y="394" width="388" height="62" rx="12" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
   <foreignObject x="107" y="413" width="206" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\text{kylmempi ympäristö } T_2$</div></foreignObject>
 </svg>
+
+```johda
+Lämpövoimakone ottaa kierroksessa kuumasta lähteestä lämmön $Q_1$ ja luovuttaa kylmempään ympäristöön lämmön $Q_2$. Johda työ $W$, jonka kone tekee yhden kierroksen aikana, lämpöjen $Q_1$ ja $Q_2$ avulla.
+---
+Sovelletaan lämpöopin 1. pääsääntöä $\Delta U = Q + W$ koneen kaasuun yhden kierroksen ajalta. Kierroksen lopussa kaasu on samassa tilassa kuin alussa, joten sen sisäenergia ei muutu: $\Delta U = 0$.
+
+Kaasuun tulee kierroksessa lämpö $Q_1$, ja siitä lähtee lämpö $Q_2$. Kaasuun siirtynyt lämpö on siis
+
+$$Q = Q_1 - Q_2$$
+
+Pääsäännössä $W$ on kaasuun tehty työ. Kone tekee itse työn $W$ ympäristöönsä, joten kaasuun tehty työ on $-W$, samoin kuin laajenemisessa $-p\Delta V$. Sijoitetaan pääsääntöön:
+
+$$0 = (Q_1 - Q_2) + (-W)$$
+
+Ratkaistaan koneen työ:
+
+$$W = Q_1 - Q_2$$
+
+Tulos on energian säilyminen: kuvassa tuleva lämpö $Q_1$ jakautuu työksi $W$ ja luovutetuksi lämmöksi $Q_2$.
+```
 
 ## Yleisiä virheitä {Virheet}
 

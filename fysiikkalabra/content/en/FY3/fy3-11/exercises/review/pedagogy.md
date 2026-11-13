@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 73e42d2dc825c95e
-Mode: full (translation review against the reviewed Finnish set, teacher procedure 2026-10-28)
-Round 2
+CONTENT-HASH: 68419fe71066d43a
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-(none)
+- L1-09 and L2-09 are good level fits. Optional: L1-09 solution could say why 4 % tolerance (atm 101325 vs 1e5 rounding).
 
 ## Checked
-- fy3-11-L2-08 (en): same task structure and scaffolding as fi; each distractor feedback names its misconception and does not give the answer away before the choice.
-- Language: natural English, decimal point, same register as the rest of the set .
-- Workload and level fit L2; solution is learnable (staged, with a reasonableness check).
+Changed symbols (P_a/P_o, Q1) and the added exercises read in full: solutions follow the staged format, symbols are defined where used, added L1-09 (lookup) and L2-09 (figure) match their levels and chapter.

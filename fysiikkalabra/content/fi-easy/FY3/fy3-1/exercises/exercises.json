@@ -279,6 +279,15 @@
       "answer": 0.5,
       "unit": "kg",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-1-L2-08",
+      "level": 2,
+      "text": "Kuvaajassa ovat kappaleiden painot tuntemattomalla taivaankappaleella. Kappaleiden massat ovat eri suuria. Kuinka suuri on $12\\,\\text{kg}$:n kappaleen paino samalla taivaankappaleella?",
+      "figure": "fy3-1/weight-points",
+      "answer": 60,
+      "unit": "N",
+      "tolerance": 0.03
     }
   ],
   "level3": [

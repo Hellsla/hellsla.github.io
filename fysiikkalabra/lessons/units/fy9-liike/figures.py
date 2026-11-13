@@ -5,6 +5,8 @@ hero        the Why scene: a tram between two stops on a city street, overhead w
 kartta      the concept map: the (t,x), (t,v) and (t,a) graphs, slope leading down and area leading up
 kuvaajat    one motion in two graphs on one time axis: accelerate from rest, constant speed, brake to a stop; the
             tangent of the (t,x) curve and the area under the (t,v) graph, symbols only
+puolisuunnikas  for "Johda itse": the (t,v) line of uniformly accelerated motion from v_0 to v in the time t; the
+            trapezium under it is the displacement, symbols only
 ratikka     the Tutki graph, not in unit.md: `PYTHONPATH=scripts python3 lessons/units/fy9-liike/figures.py` pastes it into
             the Tutki text of inquiry.json (figcat ids cannot name a unit's figure)
 """
@@ -224,10 +226,34 @@ def paste_ratikka():
     if new != raw: p.write_text(new); print("pasted ratikka into inquiry.json")
 
 
+def puolisuunnikas():
+    """The (t,v) graph of uniformly accelerated motion for "Johda itse": a straight line from the initial velocity v_0
+    at 0 to the velocity v at the time t, the trapezium under it shaded green (the displacement), its parallel sides
+    v_0 and v and its width t. Symbols only (teacher 2026-11-12: a derived result is a task, not a formula)."""
+    f = Fig("fy9li-puolisuunnikas", 330, "Kaavakuva tasaisesti kiihtyvän liikkeen nopeuden kuvaajasta, ei lukuarvoja. "
+            "Nopeus kasvaa tasaisesti alkunopeudesta v0 hetkellä 0 nopeuteen v hetkellä t, joten kuvaaja on nouseva suora. "
+            "Kuvaajan ja aika-akselin väliin jää vihreä puolisuunnikas, jonka pinta-ala on siirtymä Δx. Puolisuunnikkaan "
+            "yhdensuuntaiset sivut ovat v0 ja v, ja niiden välimatka on t.", width=440, size=21)
+    v0, v1, T = 2.0, 5.0, 6.0
+    ax = Axes(f, (60, 280), (360, 50), x=(0, 7), y=(0, 6.2), xticks=[T], yticks=[], xlabel=r"t", ylabel=r"v",
+              xfmt=lambda t: "", grid=False, origin_label=False, arrow_room=22)
+    ax.area([(0, 0), (0, v0), (T, v1), (T, 0)], GOOD_LIGHT, 0.8)
+    ax.guide(T, v1)
+    ax.line([(0, v0), (T, v1)], COLD, 3.5)
+    ax.point(0, v0, INK, 7); ax.point(T, v1, INK, 7)
+    f.tex(ax.X(0) - 12, ax.Y(v0), r"v_0", "end")
+    f.tex(ax.X(0) - 12, ax.Y(v1), r"v", "end")
+    f.tex(ax.X(T), ax.y0 + 24, r"t", "middle")
+    f.tex(ax.X(0) - 10, ax.y0 + 20, "0", "end")
+    f.tex(ax.X(T / 2), ax.Y(v0 * 0.6), r"\Delta x", "middle", GOOD)
+    return f.svg()
+
+
 if __name__ == "__main__":
     paste_ratikka()
 
 
-FIGURES = {"hero": hero, "kartta": kartta, "kuvaajat": kuvaajat}
+FIGURES = {"hero": hero, "kartta": kartta, "kuvaajat": kuvaajat, "puolisuunnikas": puolisuunnikas}
 REUSE = {"kartta": "reveals: slope and area links between the (t,x), (t,v) and (t,a) graphs",
-         "kuvaajat": "reveals: the tangent as velocity and the area under (t,v) as displacement (schematic)"}
+         "kuvaajat": "reveals: the tangent as velocity and the area under (t,v) as displacement (schematic)",
+         "puolisuunnikas": "safe: the trapezium under a (t,v) line from v_0 to v in the time t, no numbers"}

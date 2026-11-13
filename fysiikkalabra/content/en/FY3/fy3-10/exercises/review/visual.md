@@ -1,20 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: ec42002a596881a5
-Mode: delta (exercises, en), round 1. Changed: new task L2-08, situation/question paragraph splits, solutions.md for L2-08.
+CONTENT-HASH: a1183f2bb759e378
 
 ## Blocking
-(none)
+
 
 ## Polish
-- none
+- [Minor] fy3-10-L2-09 Järkevyys/Reasonableness — refers to "the task where the difference is calculated in moles", but no such task is in the set, so the reference is unclear — drop the clause or say the amounts follow from n = pV/(RT) with the values read at 400 K.
+- [Minor] fy3-10-L2-09 graph pt-suorat — the solution says the lines go through the origin, but the drawn lines start at 100 K; a faint dashed extension to the origin would show it.
 
 ## Checked
-- delta review 2026-11-07 round 2 (follow-up consistency edits): L2-08 and L1-08 Periaate: "units must match the unit of $R$" with Pa+m³ (or kPa+l), kelvins always; opened fy3-10-en-l2sol-390: wraps cleanly, $R$ renders; consistent with the unchanged Mallivastaus rows.
-- Rendered preview/en/fy3-10.html at 390 px with my own script (scratch trvis3x): fy3-10-L2-08 (error-finding, rows 1-4, choices with feedback open) and the paragraph-split tasks L1-07, L2-01..04, L3-01..03, in default and answered/opened state.
-- The new L2-08 card opened in full: task text, options or statements, feedback blocks, Vastaus/Answer and model solution; formulas, units, fractions and the units with \cdot render as KaTeX, no red source, no clipping or horizontal overflow.
-- The paragraph splits read as situation, then data, then the question; nothing sideways when feedback opens.
-- Fluent, consistent terms (efficiency, absorbed heat, latent heat); one instructional voice; decimal point and thin-space units set as maths.
-- Figure and graph tasks were not changed by the diff; contact sheets are not used in this exercises-only delta.
+- Round 2, delta. Opened fy3-10-open-exercises-L2-1280-12 and -13 (12-18 task, ratio-of-slopes graph, whole solution) in this language. Graph: axes with units, A and B by colour and letter, marked points at 200 K and 400 K, readable; answer not given away. Typography: aligned rows, stacked fractions, answer box fine; unit now 'kertaa/times'.
+- Hash at start and end the same.
 
 ## Scores
 illustrations 4 · typography 5 · English 4 · accessibility 4

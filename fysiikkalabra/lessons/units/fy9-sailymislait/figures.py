@@ -7,9 +7,14 @@ kartta      the concept map of the review: two conservation laws (energy, moment
             applications that combine them
 tormays     the hook's coupling to scale: two 32 t wagons before and after, the velocity arrows, and bars of the total
             momentum (the same) and of the kinetic energy (half of it becomes internal energy)
+pysahtyminen the stopping distance for "Johda itse": a schematic (t, v) graph, the speed v_0 constant for the reaction
+            time t_r, then falling linearly to zero during the braking time t_j; the rectangle s_r and the triangle s_j
+tuuli       the wind power for "Johda itse": the air cylinder of base area A and length v dt that passes through the
+            rotor of a wind turbine in the time dt (side view, schematic)
 """
+import math
 import figlib
-from figlib import (Fig, INK, MUTED, WHITE, RULE, RULE_LIGHT, GLASS, SAND_LIGHT, SAND, HEAT_LIGHT, HEAT, HOT, HOT_LIGHT,
+from figlib import (Fig, Axes, INK, MUTED, WHITE, RULE, RULE_LIGHT, GLASS, SAND_LIGHT, SAND, HEAT_LIGHT, HEAT, HOT, HOT_LIGHT,
                     COLD, COLD_LIGHT, ICE, IRON, ALUMINIUM, METAL_EDGE, COPPER, GOOD, n, fi)
 import herolib as H
 
@@ -97,20 +102,22 @@ def hero():
 
 def kartta():
     """The concept map, stacked for a phone: two conservation laws at the top, a spine down the left and three boxes
-    (energy, momentum, the applications), each with three laws and a grey word beside each."""
+    (energy, momentum, the applications), each with three MAFY laws and a grey word beside each (teacher 2026-11-12:
+    only MAFY's formulas; the stopping distance and the power of the power plants are "Johda itse" tasks in the text)."""
     f = Fig("fy9sl-kartta", 604, "Käsitekartta. Ylhäällä solmu säilymislait: energia ja liikemäärä. Siitä lähtee alas kolme haaraa. Energia: "
             "liike-energia E k = puolet m v toiseen, potentiaalienergia E p = m g h ja energiaperiaate, jossa alun "
             "mekaaninen energia ja muiden voimien työ on yhtä suuri kuin lopun mekaaninen energia. Liikemäärä: p = m v "
             "vektoreina, impulssiperiaate impulssi I = delta p ja liikemäärän säilyminen törmäyksessä. Sovellukset: "
-            "törmäyksessä liikemäärä säilyy mutta liike-energia vain kimmoisassa, pysähtymismatka on reaktiomatka ja "
-            "jarrutusmatka, ja vesivoimalan teho on eeta rho Q g h.", width=380, size=20)
+            "törmäyksessä liikemäärä säilyy mutta liike-energia vain kimmoisassa, pysähtymismatka tasaisesti kiihtyvän "
+            "liikkeen paikasta x = x 0 + v 0 t + puolet a t toiseen, ja voimaloiden sähköteho hyötysuhteesta eeta = P a "
+            "per P o.", width=380, size=20)
     groups = [
         ("energia", [(r"E_\text{k} = \tfrac12 mv^2", "liike-energia"), (r"E_\text{p} = mgh", "potentiaalienergia"),
                      (r"E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}", "")]),
         ("liikemäärä", [(r"\overline{p} = m\overline{v}", "määritelmä"), (r"\overline{I} = \Delta\overline{p}", "impulssi"),
                         (r"\overline{p}_\text{ennen} = \overline{p}_\text{jälkeen}", "säilyminen")]),
         ("sovellukset", [(r"\text{törmäys: } p \text{ säilyy, } E_\text{k} \text{ ei aina}", ""),
-                      (r"s_\text{p} = v_0 t_\text{r} + v_0^2/(2a)", "pysähtyminen"), (r"P = \eta\rho Qgh", "vesivoima")]),
+                      (r"x = x_0 + v_0 t + \tfrac12 at^2", "pysähtyminen"), (r"\eta = P_\text{a}/P_\text{o}", "voimalat")]),
     ]
     hub_y, hub_h, x_box, gh, top = 8, 72, 44, 150, 100
     spine = 24
@@ -176,6 +183,72 @@ def tormays():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "kartta": kartta, "tormays": tormays}
+def pysahtyminen():
+    """The stopping distance as a (t, v) graph, schematic: the speed v_0 stays constant for the reaction time t_r (the
+    blue rectangle, the reaction distance s_r) and then falls linearly to zero during the braking time t_j (the sand
+    triangle, the braking distance s_j). No numbers on the axes."""
+    f = Fig("fy9sl-pysahtyminen", 360, "Kaavakuva, ei lukuarvoja: auton nopeus v ajan t funktiona. Reaktioajan t r nopeus "
+            "pysyy lähtönopeutena v 0, joten kuvaaja on vaakasuora, ja sen alla on sininen suorakulmio, reaktiomatka s r. "
+            "Sitten jarrutuksen aikana t j nopeus pienenee tasaisesti nollaan, joten kuvaaja on laskeva suora, ja sen alla "
+            "on hiekanvärinen kolmio, jarrutusmatka s j. Auto pysähtyy hetkellä t r + t j.", size=24)
+    ax = Axes(f, (90, 300), (470, 70), x=(0, 10), y=(0, 6), xticks=[], yticks=[], xlabel=r"t", ylabel=r"v", grid=False)
+    v0, tr, ts = 4.5, 2.5, 8.0
+    ax.area([(0, 0), (0, v0), (tr, v0), (tr, 0)], COLD_LIGHT, 0.9)
+    ax.area([(tr, 0), (tr, v0), (ts, 0)], SAND_LIGHT, 0.9)
+    ax.line([(tr, 0), (tr, v0)], MUTED, 1.5, "6 5")
+    ax.line([(0, v0), (tr, v0), (ts, 0)], INK, 3.5)
+    f.tex(ax.X(0) - 12, ax.Y(v0), r"v_0", "end", INK)
+    f.tex(ax.X(tr), ax.Y(0) + 26, r"t_\text{r}", "middle", INK)
+    f.tex(ax.X(ts), ax.Y(0) + 26, r"t_\text{r} + t_\text{j}", "middle", INK)
+    f.tex(ax.X(tr / 2), ax.Y(v0 / 2), r"s_\text{r}", "middle", COLD)
+    f.tex(ax.X(tr + (ts - tr) / 3), ax.Y(v0 / 3), r"s_\text{j}", "middle", INK)
+    f.tex(ax.X(tr / 2), ax.Y(v0) - 22, r"\text{reaktio}", "middle", MUTED, size=20)
+    f.tex(ax.X(5.7), ax.Y(3.3), r"\text{jarrutus}", "start", MUTED, size=20)
+    return f.svg()
+
+
+def tuuli():
+    """The wind power, schematic side view: the wind blows from the left at the speed v; the air that passes through
+    the rotor in the time dt fills a cylinder (light blue) whose base is the rotor's swept area A (an ellipse in
+    perspective) and whose length is v dt; the turbine's tower, nacelle and three blades on the right. No numbers."""
+    f = Fig("fy9sl-tuuli", 420, "Kaavakuva sivulta, ei lukuarvoja. Oikealla tuulivoimala: torni, konehuone ja kolme lapaa. "
+            "Roottorin pyyhkäisemä pinta-ala A on piirretty soikiona. Tuuli puhaltaa vasemmalta nopeudella v, siniset nuolet. "
+            "Roottorin vasemmalla puolella on vaaleansininen ilmalieriö, jonka pohja on ala A ja pituus v kertaa delta t: "
+            "se ilma, joka kulkee roottorin läpi ajassa delta t.", size=24)
+    cy, ry, rx, xl, xr = 190, 110, 26, 150, 420
+    # the ground and the tower behind everything
+    f.line(20, 400, 580, 400, INK, 2.5)
+    f.path(f"M{xr + 44},{cy + 14} L{xr + 36},400 L{xr + 64},400 L{xr + 56},{cy + 14} Z", ALUMINIUM, INK, 2)
+    # the air cylinder: the far ellipse at the left, the sides, the rotor's ellipse on the right
+    f.path(f"M{xl},{cy - ry} L{xr},{cy - ry} A{rx},{ry} 0 0 1 {xr},{cy + ry} L{xl},{cy + ry} "
+           f"A{rx},{ry} 0 0 1 {xl},{cy - ry} Z", COLD_LIGHT, None, 0, extra='fill-opacity="0.75"')
+    f.line(xl, cy - ry, xr, cy - ry, COLD, 2, "8 6")
+    f.line(xl, cy + ry, xr, cy + ry, COLD, 2, "8 6")
+    f.path(f"M{xl},{cy - ry} A{rx},{ry} 0 1 0 {xl},{cy + ry} A{rx},{ry} 0 1 0 {xl},{cy - ry} Z", "none", COLD, 2,
+           extra='stroke-dasharray="8 6"')
+    for y in (cy - 60, cy, cy + 60):
+        f.arrow(xl + 40, y, xl + 150, y, COLD, 3.5, 14)
+    f.tex(xl + 95, cy - 60 - 22, r"v", "middle", COLD)
+    # the rotor: its swept area as an ellipse, the nacelle and three blades
+    f.path(f"M{xr},{cy - ry} A{rx},{ry} 0 1 0 {xr},{cy + ry} A{rx},{ry} 0 1 0 {xr},{cy - ry} Z", "none", INK, 2.5)
+    f.rect(xr + 6, cy - 14, 76, 28, WHITE, INK, 2.5, 8)
+    for deg in (90, 210, 330):
+        bx = xr + 0.94 * rx * math.cos(math.radians(deg)); by = cy - 0.94 * ry * math.sin(math.radians(deg))
+        f.line(xr, cy, bx, by, INK, 7, cap="round")
+        f.line(xr, cy, bx, by, WHITE, 3, cap="round")
+    f.circle(xr, cy, 10, INK)
+    f.tex(xr + 38, cy - ry + 8, r"A", "start", INK)
+    # the length of the cylinder
+    yb = cy + ry + 26
+    f.line(xl, yb - 8, xl, yb + 8, INK, 2); f.line(xr, yb - 8, xr, yb + 8, INK, 2)
+    f.line(xl, yb, xr, yb, INK, 2)
+    f.tex((xl + xr) / 2, yb + 24, r"v\,\Delta t", "middle", INK)
+    f.tex(xl - 4, cy - ry - 24, r"\text{ilmaa ajassa } \Delta t", "start", MUTED, size=20)
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "kartta": kartta, "tormays": tormays, "pysahtyminen": pysahtyminen, "tuuli": tuuli}
 REUSE = {"kartta": "reveals: the key laws of FY4 mechanical energy and momentum",
-         "tormays": "reveals: the coupled wagons keep the momentum and lose half of the kinetic energy"}
+         "tormays": "reveals: the coupled wagons keep the momentum and lose half of the kinetic energy",
+         "pysahtyminen": "safe: the (t, v) graph of a stop, reaction then braking, no numbers",
+         "tuuli": "safe: the air cylinder A by v dt through a wind turbine's rotor, no numbers"}

@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: e7603624bb853c01
+CONTENT-HASH: 8bbe1c98fa95eed9
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-(none)
+1. fy4-15: P_a label in the figure (fi, fi-easy, en) is legible and upright at 390 px; table η = W_a/W_o = P_a/P_o fits.
 
-## Checked
-- Delta of the earlier round plus the new diff: only the ilmalierio aria-label (and its figures.json key) changed; the new wording is clear English and says the same as the figure. The page render is unchanged from the captures judged before (theory-1280-2/3, example-390-1).
-
-## Scores
-illustrations 4 · typography 4 · Finnish (English language quality) 5 · accessibility 4
+Checked: preview at 390 and 1280 px, formula tables, opened solutions; no horizontal overflow, no KaTeX errors, old symbols gone.

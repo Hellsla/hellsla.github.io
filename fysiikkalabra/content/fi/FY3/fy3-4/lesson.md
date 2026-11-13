@@ -86,14 +86,14 @@ Tämä vastaa alun kysymykseen. Ilmanpaine vaikuttaa padon muuriin molemmilta pu
 
 ## Kaava: Paine ja hydrostaattinen paine
 Paine on pintaa vastaan kohtisuora voima jaettuna pinta-alalla:
-```latex
-p = \frac{F}{A}
+```kaavat
+voiman aiheuttama paine :: p = \frac{F}{A}
 ```
 missä $p$ on paine (Pa), $F$ pintaa vastaan kohtisuora voima (N) ja $A$ pinta-ala (m²). Yksi pascal on yhden newtonin voima yhden neliömetrin alalle: $1\,\text{Pa} = 1\,\text{N/m}^2$.
 
 Nesteessä syvyydessä $h$ paine on
-```latex
-p = p_0 + \rho g h
+```kaavat
+hydrostaattinen paine :: p = p_0 + \rho g h
 ```
 missä $p_0$ on paine nesteen pinnalla, yleensä ilmanpaine (Pa), $\rho$ nesteen tiheys (kg/m³), $g$ = $9{,}81\,\text{m/s}^2$ ja $h$ syvyys pinnasta (m). Termi $\rho g h$ on hydrostaattinen paine eli ylipaine $\Delta p = p - p_0$, joka kertoo, kuinka paljon paine on pinnan painetta suurempi. Kuvaaja $(h, p)$ on suora, jonka kulmakerroin on $\rho g$ ja vakiotermi $p_0$, kuten FY1:n lineaarisessa mallissa $y = kx + b$. Vedelle $\rho$ = $1000\,\text{kg/m}^3$, joten paine kasvaa $9{,}81\,\text{kPa}$ jokaista metriä kohti.
 

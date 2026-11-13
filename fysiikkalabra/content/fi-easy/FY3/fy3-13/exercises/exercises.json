@@ -344,11 +344,11 @@
     {
       "id": "fy3-13-L2-09",
       "level": 2,
-      "text": "Kuvaajassa on suljetussa jäykässä astiassa olevan kaasun paine. Se on mitattu viidessä lämpötilassa. Mittauspisteet ovat suoralla. Lue kuvaajasta kaksi pistettä. Päättele, missä celsiuslämpötilassa suora antaisi paineeksi nollan. Anna vastaus celsiusasteina.",
+      "text": "Kuvaajassa on suljetussa jäykässä astiassa olevan kaasun paine. Se on mitattu viidessä lämpötilassa. Mittauspisteet ovat lähes suoralla. Lue kuvaajasta kaksi pistettä. Päättele, missä celsiuslämpötilassa suora antaisi paineeksi nollan. Anna vastaus celsiusasteina.",
       "figure": "fy3-3/extrapolation-points",
       "answer": -272.727,
       "unit": "°C",
-      "tolerance": 0.02
+      "tolerance": 0.05
     },
     {
       "id": "fy3-13-L2-10",

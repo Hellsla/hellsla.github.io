@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: a86d4fd234d3af68
+CONTENT-HASH: 5133d82b246d965e
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- none
+1. fy4-2 formula section: a_k table and 'a = a_k' sentence render cleanly; no overflow.
 
-## Checked
-- Delta review (editorial correction round, light, teacher 2026-11-07). lesson.md diff read (Tulos significant-figure sentence, summary bullet): inline LaTeX quantities correct, no wrapping risk. Text-only edit, captures current.
-- Plain Finnish: new sentences short and concrete, terms as in the glossary; mathematical typography: \cdot, colon for division, decimal comma, units upright in inline LaTeX; no plain-text quantity in the changed text.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+Checked: preview at 390 and 1280 px, formula tables, opened solutions; no horizontal overflow, no KaTeX errors, old symbols gone.
+Delta (Tiivistelmä/Summary re-checked at 390 px: renders cleanly, no overflow).

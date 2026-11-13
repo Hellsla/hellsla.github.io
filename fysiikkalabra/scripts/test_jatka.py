@@ -149,5 +149,17 @@ with sync_playwright() as pw:
     expect("without a last chapter the row offers the first unfinished started chapter", href == f"{THIRD}.html", href)
     pg.set_viewport_size({"width": 390, "height": 844}); pg.wait_for_timeout(100)
     expect("the module page with Jatka at 390 px: no sideways scroll, a 44 px link", pg.evaluate("document.documentElement.scrollWidth <= innerWidth && document.querySelector('#jatka a').getBoundingClientRect().height >= 44"))
+    # the row (teacher 2026-11-13): the Jatka button first, Tyhjennä at the other end; Tyhjennä clears this language's stage
+    # records and the last chapter after a confirmation, and keeps the reader's answers and self-assessment
+    order = pg.evaluate("(() => { const b = document.getElementById('jatka'); const k = [...b.children]; return [k[0].matches('a.resume-go'), k[k.length - 1].matches('button.resume-clear'), k[k.length - 1].getBoundingClientRect().height >= 44]; })()")
+    expect("the row: the Jatka button first and a 44 px Tyhjennä button last", order == [True, True, True], order)
+    pg.evaluate("(f) => { localStorage.setItem('ruukkilabra:viimeisin', JSON.stringify({ pre: '', file: f + '.html', title: 'x', n: 1, of: 7 })); localStorage.setItem('ruukkilabra:vastaukset:' + f, '{\"a\":1}'); localStorage.setItem('ruukkilabra:itsearvio:' + f, '{\"v\":1,\"items\":{}}'); }", OPEN)
+    pg.reload(); pg.wait_for_timeout(150)
+    pg.once("dialog", lambda d: d.dismiss()); pg.click("#jatka button.resume-clear"); pg.wait_for_timeout(200)
+    kept = pg.evaluate("(f) => [localStorage.getItem('ruukkilabra:' + f) !== null, localStorage.getItem('ruukkilabra:viimeisin') !== null, document.getElementById('jatka').hidden]", THIRD)
+    expect("Tyhjennä cancelled: nothing is cleared", kept == [True, True, False], kept)
+    pg.once("dialog", lambda d: d.accept()); pg.click("#jatka button.resume-clear"); pg.wait_for_timeout(600)
+    gone = pg.evaluate("(fs) => [fs.map((f) => localStorage.getItem('ruukkilabra:' + f)), localStorage.getItem('ruukkilabra:viimeisin'), localStorage.getItem('ruukkilabra:vastaukset:' + fs[0]) !== null, localStorage.getItem('ruukkilabra:itsearvio:' + fs[0]) !== null, document.getElementById('jatka').hidden, document.querySelectorAll('.ch-state').length]", [OPEN, FIRST, THIRD])
+    expect("Tyhjennä confirmed: the stage records and the last chapter are gone, answers and self-assessment kept, no row and no marks", gone == [[None, None, None], None, True, True, True, 0], gone)
     b.close()
 print("\n" + ("all passed" if not fails else f"{fails} failed")); sys.exit(1 if fails else 0)

@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: d14d9ed03047d517
+CONTENT-HASH: 5516d2430f384ce9
 
 ## Blocking
+None. The new notation is staged: W = Fs, then the work principle, then the energy principle with the W_G step. Inquiry, worked example and sim labels agree.
 
 ## Polish
-- Siirtymä/matka-kappale on tiivis; yksi lause ylös heitetyn pallon työstä (kokonaisvoima työ nolla, kun palaa) auttaisi lukiolaista.
+1. lesson.md, Energiaperiaate: W means the total work in the work principle and the other forces' work in the energy principle. The text says so and introduces W_G, so it is followable; one extra sentence, "tässä W ei sisällä painon työtä", would help first-time readers.
+2. Solutions use E_mek0 (e.g. exercise on friction and air drag) but the lesson never says E_mek0 = E_p0 + E_k0; add it beside the E_mek definition.
 
 ## Checked
-- Light delta review (teacher 2026-11-07): judged `git diff origin/main` of fy4-8 fi-easy (short sentences, plain wording; reading level fits).
-- Työn määritelmä rajattu yhteen suuntaan (x-akseli, etumerkilliset nopeudet, siirtymä Δx), ja uusi kappale erottaa siirtymän ja kuljetun matkan (ylös heitetty pallo, kitka). Johto pysyy seurattavana, tiivistelmä (W = F∥ s, kun liike yhteen suuntaan) on johdonmukainen.
-- Consistency with summary, goals and inquiry feedback: no contradictions; untouched content passed earlier reviews.
-- Hash at start and end d14d9ed03047d517.
+Read the changed text and the surrounding formula section, worked example, solutions and inquiry for the MAFY symbols; grep found no leftover old symbol (F_parallel, W_kok, W_muut, E_k,1, E_mek,1) in this language.

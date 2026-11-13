@@ -166,13 +166,13 @@
 
 In a direct-current circuit the source maintains a **voltage**, and the voltage drives a **current** through the circuit. The size of the current is set by the resistance of the whole circuit, so the same battery gives different currents to different loads. Current is not used up in a component: the component transforms the electrical energy carried by the charges into light, motion or internal energy. **Power** tells how fast energy is transformed.
 
-<svg data-fig="kartta" viewBox="0 0 380 912" role="img" aria-label="Concept map. At the top the node direct-current circuit: voltage U, current I and resistance R. Four branches lead down from it. Current and resistance, the quantities of the circuit: current I = delta Q over delta t, Ohm&#x27;s law U = R I and the resistance of a wire R = rho l over A. Connections, Kirchhoff&#x27;s laws: series connection R = R1 + R2, parallel connection 1 over R = 1 over R1 + 1 over R2 and the sum of the changes in potential around a loop is zero. Power and energy, Joule&#x27;s law: P = U I, for a resistor P = R I squared = U squared over R, and energy E = P t. Source, battery and accumulator: terminal voltage U = E minus R s I, current I = E over R plus R s, and the capacity of the battery Q = I t." style="max-width:100%;font-size:20px">
-  <line x1="24" y1="80" x2="24" y2="734" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+<svg data-fig="kartta" viewBox="0 0 380 880" role="img" aria-label="Concept map. At the top the node direct-current circuit: voltage U, current I and resistance R. Four branches lead down from it. Current and resistance, the quantities of the circuit: current I = delta Q over delta t, Ohm&#x27;s law U = R I and the resistance of a wire R = rho l over A. Connections, Kirchhoff&#x27;s laws: series connection R tot = sum of R, parallel connection 1 over R tot = sum of 1 over R, and the sum of the changes in potential around a loop is zero. Power and energy, Joule&#x27;s law: P = U I and P = W over delta t. Source, battery and accumulator: the terminal voltage from the sum of the changes in potential around a loop, and the capacity of the battery from the current I = delta Q over delta t." style="max-width:100%;font-size:20px">
+  <line x1="24" y1="80" x2="24" y2="738" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
   <foreignObject x="77" y="18" width="226" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\text{direct-current circuit}$</div></foreignObject>
   <foreignObject x="157" y="47" width="66" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$U,\ I,\ R$</div></foreignObject>
   <line x1="24" y1="122" x2="44" y2="122" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="44" y="100" width="328" height="188" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <rect x="44" y="100" width="328" height="206" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
   <foreignObject x="58" y="110" width="206" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{current, resistance}$</div></foreignObject>
   <foreignObject x="266" y="112" width="96" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{quantities}$</div></foreignObject>
   <line x1="54" y1="142" x2="362" y2="142" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -180,41 +180,37 @@ In a direct-current circuit the source maintains a **voltage**, and the voltage 
   <foreignObject x="292" y="158" width="70" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{current}$</div></foreignObject>
   <foreignObject x="58" y="206" width="50" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$U = RI$</div></foreignObject>
   <foreignObject x="327" y="208" width="35" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{Ohm}$</div></foreignObject>
-  <foreignObject x="58" y="256" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$R = \rho l/A$</div></foreignObject>
+  <foreignObject x="58" y="256" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$R = \rho \ell/A$</div></foreignObject>
   <foreignObject x="319" y="258" width="43" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{wire}$</div></foreignObject>
-  <line x1="24" y1="326" x2="44" y2="326" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="44" y="304" width="328" height="188" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
-  <foreignObject x="58" y="314" width="133" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{connections}$</div></foreignObject>
-  <foreignObject x="274" y="316" width="88" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{Kirchhoff}$</div></foreignObject>
-  <line x1="54" y1="346" x2="362" y2="346" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="360" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$R = R_1 + R_2$</div></foreignObject>
-  <foreignObject x="301" y="362" width="61" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{series}$</div></foreignObject>
-  <foreignObject x="58" y="411" width="130" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$1/R = 1/R_1 + 1/R_2$</div></foreignObject>
-  <foreignObject x="283" y="412" width="79" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{parallel}$</div></foreignObject>
-  <foreignObject x="58" y="450.5" width="55" height="43" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$\sum \Delta V = 0$</div></foreignObject>
-  <foreignObject x="319" y="462" width="43" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{loop}$</div></foreignObject>
-  <line x1="24" y1="530" x2="44" y2="530" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="44" y="508" width="328" height="188" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
-  <foreignObject x="58" y="518" width="164" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{power and energy}$</div></foreignObject>
-  <foreignObject x="310" y="520" width="52" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{Joule}$</div></foreignObject>
-  <line x1="54" y1="550" x2="362" y2="550" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="564" width="50" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$P = UI$</div></foreignObject>
-  <foreignObject x="310" y="566" width="52" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{power}$</div></foreignObject>
-  <foreignObject x="58" y="614" width="112" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$P = RI^2 = U^2/R$</div></foreignObject>
-  <foreignObject x="283" y="616" width="79" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{resistor}$</div></foreignObject>
-  <foreignObject x="58" y="664" width="50" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$E = Pt$</div></foreignObject>
-  <foreignObject x="301" y="666" width="61" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{energy}$</div></foreignObject>
-  <line x1="24" y1="734" x2="44" y2="734" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="44" y="712" width="328" height="188" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
-  <foreignObject x="58" y="722" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{source}$</div></foreignObject>
-  <foreignObject x="292" y="724" width="70" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{battery}$</div></foreignObject>
-  <line x1="54" y1="754" x2="362" y2="754" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="769" width="74" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$U = E - R_\text{s} I$</div></foreignObject>
-  <foreignObject x="221" y="770" width="141" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{terminal voltage}$</div></foreignObject>
-  <foreignObject x="58" y="819" width="102" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$I = E/(R + R_\text{s})$</div></foreignObject>
-  <foreignObject x="292" y="820" width="70" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{current}$</div></foreignObject>
-  <foreignObject x="58" y="868" width="50" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$Q = It$</div></foreignObject>
-  <foreignObject x="283" y="870" width="79" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{capacity}$</div></foreignObject>
+  <line x1="24" y1="344" x2="44" y2="344" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="44" y="322" width="328" height="206" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="58" y="332" width="133" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{connections}$</div></foreignObject>
+  <foreignObject x="274" y="334" width="88" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{Kirchhoff}$</div></foreignObject>
+  <line x1="54" y1="364" x2="362" y2="364" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="58" y="379" width="74" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$R_\text{tot} = \Sigma R$</div></foreignObject>
+  <foreignObject x="301" y="380" width="61" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{series}$</div></foreignObject>
+  <foreignObject x="58" y="429" width="111" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$1/R_\text{tot} = \Sigma 1/R$</div></foreignObject>
+  <foreignObject x="283" y="430" width="79" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{parallel}$</div></foreignObject>
+  <foreignObject x="58" y="479" width="55" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$\Sigma \Delta V = 0$</div></foreignObject>
+  <foreignObject x="319" y="480" width="43" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{loop}$</div></foreignObject>
+  <line x1="24" y1="566" x2="44" y2="566" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="44" y="544" width="328" height="156" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="58" y="554" width="164" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{power and energy}$</div></foreignObject>
+  <foreignObject x="310" y="556" width="52" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{Joule}$</div></foreignObject>
+  <line x1="54" y1="586" x2="362" y2="586" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="58" y="600" width="50" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$P = UI$</div></foreignObject>
+  <foreignObject x="310" y="602" width="52" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{power}$</div></foreignObject>
+  <foreignObject x="58" y="650" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$P = W/\Delta t$</div></foreignObject>
+  <foreignObject x="301" y="652" width="61" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{energy}$</div></foreignObject>
+  <line x1="24" y1="738" x2="44" y2="738" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="44" y="716" width="328" height="156" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="58" y="726" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{source}$</div></foreignObject>
+  <foreignObject x="292" y="728" width="70" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{battery}$</div></foreignObject>
+  <line x1="54" y1="758" x2="362" y2="758" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="58" y="773" width="55" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$\Sigma \Delta V = 0$</div></foreignObject>
+  <foreignObject x="221" y="774" width="141" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{terminal voltage}$</div></foreignObject>
+  <foreignObject x="58" y="823" width="74" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$I = \Delta Q/\Delta t$</div></foreignObject>
+  <foreignObject x="283" y="824" width="79" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{capacity}$</div></foreignObject>
 </svg>
 
 In a circuit problem in the exam it pays to work out the connection first. The same current passes through components connected in series, and the voltage across components connected in parallel is the same. After that Kirchhoff's laws and Ohm's law give the currents and voltages, and the power and energy follow from them.
@@ -257,41 +253,95 @@ This answers the opening question. The devices of the cottage are connected to t
 ```kaavat
 electric current :: I = \frac{\Delta Q}{\Delta t}
 voltage drop across a conductor :: U = RI
-resistance of a conductor :: R = \rho\,\frac{l}{A}
+resistance of a conductor :: R = \rho\,\frac{\ell}{A}
 ```
 
-where $I$ is the current ($\text{A}$), $\Delta Q$ the charge that has passed through a cross-section ($\text{C}$), $\Delta t$ the time ($\text{s}$), $U$ the voltage across the component ($\text{V}$), $R$ the resistance ($\Omega$), $\rho$ the resistivity ($\Omega\cdot\text{m}$), $l$ the length of the wire ($\text{m}$) and $A$ the cross-sectional area ($\text{m}^2$). By Ohm's law the resistance of a metal conductor is constant when the temperature stays the same. The resistance of a filament lamp increases as the filament heats up. An ammeter is connected in series and a voltmeter in parallel.
+where $I$ is the current ($\text{A}$), $\Delta Q$ the charge that has passed through a cross-section ($\text{C}$), $\Delta t$ the time ($\text{s}$), $U$ the voltage across the component ($\text{V}$), $R$ the resistance ($\Omega$), $\rho$ the resistivity ($\Omega\cdot\text{m}$), $\ell$ the length of the wire ($\text{m}$) and $A$ the cross-sectional area ($\text{m}^2$). By Ohm's law the resistance of a metal conductor is constant when the temperature stays the same. The resistance of a filament lamp increases as the filament heats up. An ammeter is connected in series and a voltmeter in parallel.
 
 ### Connections and Kirchhoff's laws
 
 ```kaavat
-total resistance of resistors in series :: R = R_1 + R_2 + \dots
-total resistance of resistors in parallel :: \frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \dots
-Kirchhoff's first law :: \sum I_\text{in} = \sum I_\text{out}
-Kirchhoff's second law :: \sum \Delta V = 0
+total resistance of resistors in series :: R_\text{tot} = \Sigma R
+total resistance of resistors in parallel :: \frac{1}{R_\text{tot}} = \Sigma\frac{1}{R}
+Kirchhoff's first law :: \Sigma I_\text{in} = \Sigma I_\text{out}
+Kirchhoff's second law :: \Sigma \Delta V = 0
 ```
 
-The first is the total resistance $R$ of resistors connected in series and the second of resistors connected in parallel. The current law holds at a junction, because charge is conserved. The voltage law holds when a loop is gone round once: the potential $V$ rises in the source from the negative terminal to the positive terminal and falls by $RI$ across a resistor in the direction of the current. That is why the voltage across parallel branches is the same.
+The first is the total resistance $R_\text{tot}$ of resistors connected in series and the second of resistors connected in parallel; $\Sigma$ means a sum, and in the current law $I_\text{in}$ are the currents into a junction and $I_\text{out}$ those out of it. The current law holds at a junction, because charge is conserved. The voltage law holds when a loop is gone round once: the potential $V$ rises in the source from the negative terminal to the positive terminal and falls by $RI$ across a resistor in the direction of the current. That is why the voltage across parallel branches is the same.
 
 ### Power and energy
 
 ```kaavat
 power consumed in a conductor :: P = UI
-power consumed, in terms of resistance :: P = RI^2 = \frac{U^2}{R}
-energy used by an electrical device :: E = Pt
+power :: P = \frac{W}{\Delta t}
 ```
 
-where $P$ is the power ($\text{W}$) and $E$ the electrical energy transformed in the time $t$ ($\text{J}$ or $\text{kWh}$). The form $P = UI$ holds for every component, the forms of Joule's law only for a resistor. In series the larger resistance gets the larger power, in parallel the smaller. Units of energy are converted by substitution: $1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3.6\,\text{MJ}$. When the same problem also has an emf $E$, the letter $W$ is used for energy.
+where $P$ is the power ($\text{W}$) and $W$ the electrical energy transformed in the time $\Delta t$ ($\text{J}$ or $\text{kWh}$). The form $P = UI$ holds for every component. The power of a resistor can also be found from the current alone or from the voltage alone by substituting Ohm's law (Derive it yourself below). In series the larger resistance gets the larger power, in parallel the smaller. Units of energy are converted by substitution: $1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3.6\,\text{MJ}$. The letter $W$ is used for energy, because $E$ is the emf.
+
+```johda
+Derive the power $P$ of a resistor in terms of the current $I$ and in terms of the voltage $U$.
+---
+The power is $P = UI$, and by Ohm's law the voltage across the resistor is $U = RI$. Substitute the voltage into the power:
+
+$$P = UI = RI \cdot I = RI^2$$
+
+By Ohm's law the current is $I = \tfrac{U}{R}$. Substitute the current into the power:
+
+$$P = UI = U \cdot \frac{U}{R} = \frac{U^2}{R}$$
+
+These forms hold only for a resistor that obeys Ohm's law.
+```
 
 ### Battery and accumulator
 
-```kaavat
-terminal voltage of a source :: U = E - R_\text{s} I
-current in a closed circuit :: I = \frac{E}{R + R_\text{s}}
-charge stored in a battery (capacity) :: Q = It
+A battery is described by a model in which the emf $E$ ($\text{V}$) and the internal resistance $R_\text{s}$ ($\Omega$) are in series. When a current $I$ flows from the battery, part of the emf is used inside the battery, so the terminal voltage $U$ ($\text{V}$), the voltage between the terminals, is smaller than the emf. The resistance of the external circuit is $R$ ($\Omega$).
+
+<svg data-fig="piiri" viewBox="0 0 600 330" role="img" aria-label="Circuit diagram, no numerical values. On the left a dashed box, the battery. Inside it the emf E, drawn with the symbol of a voltage source, and the internal resistance R s, drawn as a resistor, are in series. The terminals of the battery are on the right edge of the box, the positive terminal at the top and the negative terminal at the bottom, and between them the terminal voltage U. An external resistor R is connected to the terminals. A violet current I flows from the positive terminal through the resistor R back to the negative terminal." style="max-width:100%;font-size:24px">
+  <rect x="50" y="28" width="260" height="254" rx="12" fill="none" stroke="#6b7480" stroke-width="2.5" stroke-dasharray="9 7"/>
+  <foreignObject x="64" y="251" width="74" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px;color:#6b7480">$\text{battery}$</div></foreignObject>
+  <polyline points="150,130 150,60 310,60 470,60 470,140" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="470,220 470,260 310,260 150,260 150,240" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="124" y1="142" x2="176" y2="142" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="137" y1="158" x2="163" y2="158" stroke="#1f2933" stroke-width="7" stroke-linecap="butt"/>
+  <foreignObject x="184" y="121" width="19" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$+$</div></foreignObject>
+  <foreignObject x="96" y="135.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$E$</div></foreignObject>
+  <rect x="138" y="177" width="24" height="56" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <foreignObject x="91" y="190.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$R_\text{s}$</div></foreignObject>
+  <circle cx="310" cy="60" r="6" fill="#1f2933"/>
+  <circle cx="310" cy="260" r="6" fill="#1f2933"/>
+  <foreignObject x="324" y="71" width="19" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$+$</div></foreignObject>
+  <foreignObject x="324" y="223" width="19" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$-$</div></foreignObject>
+  <line x1="280" y1="246" x2="280" y2="85" stroke="#6b7480" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M280,74 L285.5,86 L274.5,86 Z" fill="#6b7480" stroke-linejoin="round"/>
+  <foreignObject x="248" y="145.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$U$</div></foreignObject>
+  <rect x="458" y="140" width="24" height="80" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <foreignObject x="494" y="165.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$R$</div></foreignObject>
+  <path d="M400,60 L380,52 L380,68 Z" fill="#7048e8" stroke-linejoin="round"/>
+  <foreignObject x="380" y="19.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#7048e8">$I$</div></foreignObject>
+  <path d="M380,260 L400,252 L400,268 Z" fill="#7048e8" stroke-linejoin="round"/>
+</svg>
+
+```johda
+A resistor $R$ is connected to the terminals of a battery. Derive the current $I$ in the circuit and the terminal voltage $U$ of the battery.
+---
+Go once round the circuit in the direction of the current using Kirchhoff's second law. The potential rises by the emf $E$ in the source and falls by $R_\text{s}I$ in the internal resistance and by $RI$ in the external resistor:
+
+$$E - R_\text{s}I - RI = 0$$
+
+Solve for the current:
+
+$$I = \frac{E}{R + R_\text{s}}$$
+
+The terminal voltage is the voltage across the external resistor, the emf minus the voltage drop across the internal resistance:
+
+$$U = RI = E - R_\text{s}I$$
 ```
 
-where $E$ is the emf ($\text{V}$), $R_\text{s}$ the internal resistance ($\Omega$), $U$ the terminal voltage ($\text{V}$), $R$ the resistance of the external circuit ($\Omega$) and $Q$ the capacity of the battery ($\text{Ah}$ or $\text{C}$). The model assumes that $E$ and $R_\text{s}$ stay constant. The energy of a battery is $W = UQ$, where $U$ is the rated voltage, and during charging the terminal voltage is $U = E + R_\text{s} I$.
+```kaavat
+electric current :: I = \frac{\Delta Q}{\Delta t}
+```
+
+where $Q$ is the capacity of the battery ($\text{Ah}$ or $\text{C}$), the charge $\Delta Q$ it gives in the time $\Delta t$. The model assumes that $E$ and $R_\text{s}$ stay constant. The energy of a battery is $W = UQ$, where $U$ is the rated voltage. During charging the current flows through the battery the other way, so the terminal voltage is larger than the emf.
 
 The $(I, U)$ graph of a battery is a falling straight line. It crosses the vertical axis at the emf $E$ and the horizontal axis at the short-circuit current $I_\text{k} = \tfrac{E}{R_\text{s}}$, and its slope is $-R_\text{s}$.
 

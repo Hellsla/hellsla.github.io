@@ -167,7 +167,7 @@ Kaikki tämän tunnin tehtävät ratkaistaan samalla tavalla: **ensin voimakuvio
   <foreignObject x="310" y="362" width="52" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{paino}$</div></foreignObject>
   <foreignObject x="58" y="393.5" width="63" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$F_\mu = \mu N$</div></foreignObject>
   <foreignObject x="266" y="396" width="96" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{liikekitka}$</div></foreignObject>
-  <foreignObject x="58" y="427.5" width="84" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$F_{\mu 0} \le \mu_0 N$</div></foreignObject>
+  <foreignObject x="58" y="427.5" width="84" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$F_{\mu_0} = \mu_0 N$</div></foreignObject>
   <foreignObject x="274" y="430" width="88" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{lepokitka}$</div></foreignObject>
   <line x1="24" y1="494" x2="44" y2="494" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="44" y="472" width="328" height="150" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
@@ -188,9 +188,9 @@ Alun kysymyksen ratkaisee kappaleen valinta. Auto ja kärry vaikuttavat toisiins
 ### Newtonin lait
 
 ```kaavat
-Newtonin 1. laki (jatkavuuden laki) :: \Sigma\overline{F} = \overline{0} \ \Leftrightarrow\ \overline{v} = \text{vakio}
+\Sigma\overline{F} = \overline{0} \ \Leftrightarrow\ \overline{v} = \text{vakio}
 Newtonin 2. laki (dynamiikan peruslaki) :: \Sigma\overline{F} = m\overline{a}
-Newtonin 3. laki (voiman ja vastavoiman laki) :: \overline{F}_{AB} = -\overline{F}_{BA}
+\overline{F}_{AB} = -\overline{F}_{BA}
 ```
 
 missä $\Sigma\overline{F}$ on kappaleeseen vaikuttavien voimien summa ($\text{N}$), $m$ massa ($\text{kg}$), $\overline{a}$ kiihtyvyys ($\text{m/s}^2$) ja $\overline{F}_{AB}$ voima, jolla A vaikuttaa B:hen. Laskussa toinen laki kirjoitetaan komponenteittain, $\Sigma F_x = ma_x$ ja $\Sigma F_y = ma_y$, ja vinon voiman komponentit ovat $F\cos\alpha$ ja $F\sin\alpha$. Kokonaisvoima osoittaa kiihtyvyyden suuntaan, ei aina nopeuden suuntaan.
@@ -200,10 +200,10 @@ missä $\Sigma\overline{F}$ on kappaleeseen vaikuttavien voimien summa ($\text{N
 ```kaavat
 kappaleeseen vaikuttava painovoima Maan pinnalla :: \overline{G} = m\overline{g}
 liukukitka :: F_\mu = \mu N
-lepokitka :: F_{\mu 0} \le \mu_0 N
+lähtökitka, eli täysin kehittynyt lepokitka :: F_{\mu_0} = \mu_0 N
 ```
 
-missä $\overline{g}$ on putoamiskiihtyvyys, $g = 9{,}81\,\text{m/s}^2$, joten painon suuruus on $G = mg$, $N$ on tukivoima ($\text{N}$), $\mu$ liikekitkakerroin ja $\mu_0$ lepokitkakerroin. Lepokitka on vain niin suuri kuin tilanne vaatii, ja se vastustaa pintojen liukumista toistensa suhteen, ei aina liikettä. Kaavat ovat kuivien pintojen kokeellisia malleja. Voimakuvioissa $\overline{F}_\mu$ tarkoittaa kumpaa tahansa kitkaa, lepo- tai liikekitkaa.
+missä $\overline{g}$ on putoamiskiihtyvyys, $g = 9{,}81\,\text{m/s}^2$, joten painon suuruus on $G = mg$, $N$ on tukivoima ($\text{N}$), $\mu$ liikekitkakerroin ja $\mu_0$ lepokitkakerroin. Lepokitka on vain niin suuri kuin tilanne vaatii, enintään lähtökitkan $F_{\mu_0}$ suuruinen, ja se vastustaa pintojen liukumista toistensa suhteen, ei aina liikettä. Kaavat ovat kuivien pintojen kokeellisia malleja. Voimakuvioissa $\overline{F}_\mu$ tarkoittaa kumpaa tahansa kitkaa, lepo- tai liikekitkaa.
 
 Rinteessä, jonka kaltevuuskulma on $\alpha$, painon komponentit ovat $G_x = mg\sin\alpha$ rinnettä alas ja $G_y = mg\cos\alpha$ rinnettä kohti. Kun pintaa vastaan kohtisuorassa vaikuttavat vain paino ja tukivoima, $N = mg\cos\alpha$. Komponentit eivät ole uusia voimia: ne piirretään katkoviivoin ja korvaavat painon laskussa.
 

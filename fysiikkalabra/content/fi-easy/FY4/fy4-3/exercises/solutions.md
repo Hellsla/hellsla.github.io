@@ -244,10 +244,10 @@ a 0
 **Annettu:** taulukosta nopeudet $0{,}51$; $0{,}50$; $0{,}49$; $0{,}50$; $0{,}51$ ja $0{,}49\,\text{m/s}$, aika $\Delta t = 6{,}0\,\text{s}$
 **Kysytty:** a) miksi eteenpäin työntävää voimaa ei tarvita; b) kärryn kulkema matka $s$ yksikössä $\text{m}$
 **Periaate:** Newtonin ensimmäisen lain mukaan kappale liikkuu tasaisella nopeudella, kun kokonaisvoima on nolla. Liikkeen ylläpitämiseen ei tarvita voimaa. Nopeus on kaikissa lukemissa lähes sama, joten liike on tasaista. Silloin matka on nopeuden ja ajan tulo.
-**Kuvaajan lukeminen:** Taulukosta nähdään, että nopeus pysyy välillä $0{,}49$–$0{,}51\,\text{m/s}$. Se ei kasva eikä pienene. Vaihtelu on mittauksen satunnaista vaihtelua. Nopeuden keskiarvo $v_\text{ka}$ kuvaa tasaista nopeutta.
-**Kaava:** $v_\text{ka} = \dfrac{\Sigma v}{n}$ ja $s = v_\text{ka}\,\Delta t$
+**Kuvaajan lukeminen:** Taulukosta nähdään, että nopeus pysyy välillä $0{,}49$–$0{,}51\,\text{m/s}$. Se ei kasva eikä pienene. Vaihtelu on mittauksen satunnaista vaihtelua. Nopeuden keskiarvo $v_\text{k}$ kuvaa tasaista nopeutta.
+**Kaava:** $v_\text{k} = \dfrac{\Sigma v}{n}$ ja $s = v_\text{k}\,\Delta t$
 **Muunnokset:** Nopeus on yksikössä $\text{m/s}$ ja aika sekunteina, joten muunnoksia ei tarvita.
-**Sijoitus:** Nopeuksien summa on $3{,}00\,\text{m/s}$, ja lukemia on $6$. Siis $v_\text{ka} = \dfrac{3{,}00\,\text{m/s}}{6} = 0{,}500\,\text{m/s}$. Matka on
+**Sijoitus:** Nopeuksien summa on $3{,}00\,\text{m/s}$, ja lukemia on $6$. Siis $v_\text{k} = \dfrac{3{,}00\,\text{m/s}}{6} = 0{,}500\,\text{m/s}$. Matka on
 $s = 0{,}500\,\text{m/s}\cdot 6{,}0\,\text{s} = 3{,}0\,\text{m}$.
 **Vastaus:** a) Nopeus ei muutu, joten kokonaisvoima on nolla. Ilmanvastus on hyvin pieni. Pystysuunnassa paino ja tukivoima kumoavat toisensa. Eteenpäin työntävää voimaa ei siis tarvita. b) $3{,}0\,\text{m}$, kaksi merkitsevää numeroa kuten ajassa $6{,}0\,\text{s}$.
 **Järkevyys:** Nopeus on noin $0{,}5\,\text{m/s}$, joten $6\,\text{s}$:ssa kuljetaan noin $3\,\text{m}$. Radan pituuden on siis oltava vähintään tämän verran.

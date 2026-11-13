@@ -16,7 +16,8 @@ Käsitetakomo's topic menu; `kasite` and `maaritelma` the two faces (inline math
 without dollars and `kaava_puhe` how it reads aloud (screen readers, aria-label).
 
 Where the cards appear (one component, templates/kortit.js; never before the Teoriatiivistelmä):
-  - a lesson: in Teoriatiivistelmä every bold term that names a card (mark_terms) opens a popover, and after the
+  - a lesson: in Teoriatiivistelmä every bold term that names a card (mark_terms), and the first plain mention of
+    each of the chapter's other cards (mark_first, 2026-11-13), opens a popover, and after the
     Tiivistelmä list a row of chips "Tämän luvun käsitteet (n)"; as the last part of Esimerkit "Kertaa luvun
     käsitteet" with the chapter's cards (lesson_section; without JavaScript a definition list), no stage of its own
     in the step navigation (teacher 2026-11-05);
@@ -99,10 +100,110 @@ def mark_terms(stage_html, code, lang):
     into popover buttons; without JavaScript they stay plain bold)."""
     cards = cards_of(code, lang)
     if not cards: return stage_html
+    by_len = sorted(cards, key=lambda c: -len(c["kasite"]))
     def one(m):
-        c = match(m.group(1), cards)
+        t = norm(m.group(1))   # the old rule first, then the Finnish endings of mark_first ("tehoksi" → Teho)
+        c = match(m.group(1), cards) or next((c for c in by_len if (rx := term_rx(c["kasite"], lang)) and rx.fullmatch(t)), None)
         return f'<strong class="kc-mark" data-kortti="{c["id"]}">{m.group(1)}</strong>' if c else m.group(0)
     return re.sub(r"<strong>((?:(?!</?strong>).)+?)</strong>", one, stage_html, flags=re.S)
+
+
+# The chapter's own concepts in plain text (teacher 2026-11-13, "kaikki": FY1 had underlined terms, most chapters had
+# none because their Teoria has no bold term naming a card). After mark_terms, the first occurrence of each of the
+# chapter's cards that no bold term marked becomes a plain-weight mark of its own: text only, never in a heading, a
+# link, a button, a figure, a formula, a bold term or the chips, and only inside the theory text (div.act-theory).
+# A build-side mark, so no lesson text changes and no review goes stale.
+_FI_CASE = ("", "n", "a", "ä", "ta", "tä", "na", "nä", "ksi", "ssa", "ssä", "sta", "stä", "lla", "llä", "lta", "ltä", "lle",
+            "an", "en", "in", "on", "un", "yn", "än", "ön", "hin", "seen", "t", "ja", "jä", "ia", "iä", "ien", "jen", "ihin",
+            "issa", "issä", "ista", "istä", "illa", "illä", "ille", "iksi", "ina", "inä", "it", "ita", "itä", "iden", "itten",
+            "ineen", "jensa", "nsa", "nsä")
+_FI_CLITIC = ("", "kin", "kaan", "kään", "han", "hän")
+_FI_END = "(?:" + "|".join(sorted({c + k for c in _FI_CASE for k in _FI_CLITIC if c + k}, key=len, reverse=True)) + ")?"
+_WEAK = (("mp", "mm"), ("nt", "nn"), ("nk", "ng"), ("lt", "ll"), ("rt", "rr"), ("kk", "k"), ("pp", "p"), ("tt", "t"), ("ht", "hd"))
+_WORD = "A-Za-z0-9ÅÄÖåäöÉéÜü-"
+
+
+def _fi_stems(w):
+    """The stems a Finnish word takes before a case ending, as regex alternatives (the word itself first)."""
+    out = [w]
+    if w.endswith("nen"): out += [w[:-3] + "se", w[:-3] + "s"]
+    if re.search(r"[aeiouyäö](us|ys)$", w): out += [w[:-1] + "de", w[:-1] + "tt"]   # nopeus → nopeuden, nopeutta
+    elif w.endswith("s") and len(w) > 4: out += [w[:-1] + "kse", w[:-1] + "ks"]
+    if w.endswith("de"): out.append(w[:-2] + "tee")
+    elif w.endswith("ke"): out.append(w[:-2] + "kkee")
+    elif w.endswith("e"): out.append(w + "e")
+    if w[-1:] in "aäoöuyi" and len(w) > 4: out.append(w[:-1])          # the plural: voim-ia, teho-ja
+    if w[-1:] in "aäoöuyie":                                           # the weak grade before a closed syllable
+        for a, b in _WEAK:
+            i = w.rfind(a, max(0, len(w) - 4))
+            if i > 0: out.append(w[:i] + b + w[i + len(a):]); break
+        else:
+            if w.endswith("ki"): out.append(w[:-2] + "i")              # laki → lain
+    return out
+
+
+def _word_rx(w, lang, last):
+    w = w.lower()
+    if lang == "en":
+        return re.escape(w) + ("(?:s|es)?" if last else "") if not w.endswith("y") or not last else re.escape(w[:-1]) + "(?:y|ies)"
+    return "(?:" + "|".join(re.escape(s) for s in dict.fromkeys(_fi_stems(w))) + ")" + _FI_END
+
+
+def term_rx(kasite, lang):
+    if "$" in kasite or "\\(" in kasite: return None          # a name with a formula ($\\beta^-$-hajoaminen) stays a card only
+    words = norm(kasite).split(" ")
+    if not words or not words[0] or words[0].startswith("-"): return None
+    body = r"\s+".join(_word_rx(w, lang, i == len(words) - 1) for i, w in enumerate(words))
+    return re.compile(rf"(?<![{_WORD}]){body}(?![{_WORD}])", re.I)
+
+
+_SKIP = {"h1", "h2", "h3", "h4", "h5", "h6", "a", "button", "summary", "strong", "b", "code", "pre", "script", "style",
+         "svg", "figure", "label", "select", "option", "textarea", "math", "sup", "sub"}
+_VOID = {"br", "img", "input", "hr", "meta", "source", "wbr", "col", "area", "embed", "link", "track", "param"}
+# English: a term that only modifies the noun after it is not the concept on its own ("wind power plants" is not Power;
+# teacher 2026-11-13: underline power where it first stands by itself)
+_EN_COMPOUND = re.compile(r"\s+(?:plants?|stations?|grids?|lines?|supply|supplies|cables?|outlets?|sockets?)\b", re.I)
+_MATH = re.compile(r"\$\$.*?\$\$|\$[^$]*\$|\\\(.*?\\\)|\\\[.*?\\\]", re.S)
+
+
+def mark_first(stage_html, code, lid, lang):
+    cards = [c for c in chapter_cards(code, lid, lang) if f'data-kortti="{c["id"]}"' not in stage_html]
+    if not cards: return stage_html
+    parts = re.split(r"(<[^>]+>)", stage_html)
+    stack, ok = [], []          # stack of (tag, skips, theory); ok: indices of text parts a mark may go into
+    for i, p in enumerate(parts):
+        if p.startswith("<"):
+            m = re.match(r"<(/?)([a-zA-Z][a-zA-Z0-9]*)([^>]*)>", p)
+            if not m: continue
+            close, tag, rest = m.group(1), m.group(2).lower(), m.group(3)
+            if close:
+                while stack:
+                    if stack.pop()[0] == tag: break
+            elif tag not in _VOID and not rest.rstrip().endswith("/"):
+                cls = re.search(r'class="([^"]*)"', rest)
+                cls = cls.group(1).split() if cls else []
+                skip = tag in _SKIP or any(k.startswith("kc-") or k in ("fig", "fig-tex", "fig-hero") for k in cls)
+                stack.append((tag, skip, "act-theory" in cls))
+        elif p.strip() and stack and any(t for _, _, t in stack) and not any(s for _, s, _ in stack):
+            ok.append(i)
+    taken = {}                  # part index → list of (start, end, card)
+    for c in sorted(cards, key=lambda c: -len(c["kasite"])):
+        rx = term_rx(c["kasite"], lang)
+        if not rx: continue
+        for i in ok:
+            text = parts[i]
+            maths = [m.span() for m in _MATH.finditer(text)]
+            hit = next((m for m in rx.finditer(text)
+                        if not any(a < m.end() and m.start() < b for a, b in maths)
+                        and not (lang == "en" and _EN_COMPOUND.match(text, m.end()))
+                        and not any(a < m.end() and m.start() < b for a, b, _ in taken.get(i, []))), None)
+            if hit: taken.setdefault(i, []).append((hit.start(), hit.end(), c)); break
+    for i, spans in taken.items():
+        t = parts[i]
+        for a, b, c in sorted(spans, key=lambda s: -s[0]):
+            t = t[:a] + f'<span class="kc-mark kc-plain" data-kortti="{c["id"]}">{t[a:b]}</span>' + t[b:]
+        parts[i] = t
+    return "".join(parts)
 
 
 def strings(T):

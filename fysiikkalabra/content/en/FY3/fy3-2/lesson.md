@@ -185,8 +185,8 @@ When you do work on an object, energy is transferred: the energy of a lifted obj
 
 ## Formula: Work and power
 When a constant force is in the direction of motion, the work done by the force is the product of force and distance:
-```latex
-W = F s
+```kaavat
+work done by a force :: W = F s
 ```
 where $W$ is the work (J), $F$ is the magnitude of the force (N) and $s$ is the distance moved by the object (m). One joule is the work done by a force of one newton over a distance of one metre: $1\,\text{J} = 1\,\text{N} \cdot \text{m}$.
 
@@ -276,8 +276,8 @@ where $G$ is the weight (N), $m$ is the mass (kg), $g = 9.81\,\text{m/s}^2$ and 
 </svg>
 
 Power is work divided by the time it takes. In motion at a steady speed, where the force is in the direction of motion, power can also be found as the product of force and speed, because $s/t = v$:
-```latex
-P = \frac{W}{t} = F v
+```kaavat
+power :: P = \frac{W}{t} = F v
 ```
 where $P$ is the power (W), $t$ is the time (s) and $v$ is the speed (m/s). One watt is one joule per second: $1\,\text{W} = 1\,\text{J/s}$.
 

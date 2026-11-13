@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 9505870d85e17af2
+CONTENT-HASH: e406b191af20f91d
 Mode: delta
 Round: 2
 
@@ -7,11 +7,10 @@ Round: 2
 (none)
 
 ## Polish
-- [Minor] Option figures are about 250 px tall each, so the task is long on a phone.
+- [Minor] solutions.md fy3-1-L2-08 Kuvaajan lukeminen — range "58,2–61,8" is typed with a hyphen — use an en dash as in "58–62" elsewhere.
 
 ## Checked
-- Rebuilt preview/fi-easy/fy3-1.html: the four pick-* aria-labels are unchanged Finnish (identity entries in figures.json) and match the figures.
-- Round 1 captures of task fy3-1-L1-09 at 390 px (task, options, feedback, solution) still apply: no overflow, text unchanged.
+- fy3-1-open-exercises-L2-1280-8 and -9 (L2-08 task graph, solution: g in m/s², Kaava, Sijoitus rows, Järkevyys; round-1 wording fixes in place).
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

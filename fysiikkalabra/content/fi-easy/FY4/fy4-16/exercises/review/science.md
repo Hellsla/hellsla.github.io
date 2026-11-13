@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 608a0421922fc2a2
-Mode: delta (fy4-16-L3-04 Järkevyys rewritten)
+CONTENT-HASH: a514089c83370aaa
 
 ## Blocking
+None.
 
 ## Polish
+1. solutions.md L3-04 Periaate: "pulkka pysähtyy aidan viereen" (en "next to the fence") contradicts the task: at the maximum length it stops 5,0 m before the fence (20,0 m from the foot). Write "pysähtyy 5,0 m ennen aitaa".
 
 ## Checked
-- The removed claim ("a real sled stops earlier because friction rises at the bend, so the result is on the safe side") contradicted the task, which tells the student to ignore the bend; its removal is right.
-- New text: 16,3 m holds only under the task's assumptions; the real snow friction coefficient varies with temperature, ice, snow and sled bottom; a slightly smaller μ lengthens the run (L = μ₂d/(sin α − μ₁cos α) grows as μ₁ falls, and the flat run grows as μ₂ falls). Correct, and it does not present the model as safety design.
-- Recomputed: L = 16,33 m, h = 3,95 m, horizontal 15,85 m, friction heights 0,95 + 3,00 = 3,95 m, v = 7,67 m/s, stopping distance 20,0 m, tan 14,0° = 0,249 > 0,060. All agree.
-- Answer (16 m, 7,7 m/s) and answers.py untouched.
-- Hash identical at start and end.
+- Every answer recomputed from the task text (own script): L1-01…L1-08, L2-01…L2-09, L3-01…L3-05 agree with exercises.json and answers.py (e.g. L1-08 33,98 N, L2-05 633 N, L2-06 0,0805, L2-07 0,321 and 0,306–0,335, L3-04 16,33 m and 7,67 m/s, L3-05 h = 55,6 m, 2,205 kN, 851 N).
+- Added exercises: models and conditions stated (tan α = μ only for steady sliding after a push; trapezoid distance; constant mean drag), L2-08 uncertainty reasoning (2Δx, overlap does not prove equality, extrapolation) follows the guardrails; exactly one correct option, distractor feedback right.
+- E_k0/E_k in L3-03 and L3-05 use the new index rule correctly; no leftover old symbol; fi, fi-easy and en answers, tolerances and keys identical.

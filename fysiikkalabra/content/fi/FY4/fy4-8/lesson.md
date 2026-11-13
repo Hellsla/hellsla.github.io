@@ -352,10 +352,10 @@ Ketjuhissi nostaa junan ensimmäisen mäen huipulle. Sen jälkeen junalla on vai
 
 ### Työ ja liike-energia
 Kun kappale liikkuu suoraviivaisesti samaan suuntaan matkan $s$ ja siihen vaikuttaa vakiovoima $\overline{F}$, voiman tekemä työ on
-```latex
-W = F_\parallel\, s
+```kaavat
+voiman tekemä työ :: W = F\, s
 ```
-missä $F_\parallel$ on voiman liikkeen suuntainen komponentti ($\text{N}$), negatiivinen silloin, kun komponentti osoittaa liikettä vastaan, ja $s$ kuljettu matka ($\text{m}$). Työn yksikkö on $1\,\text{N}\cdot\text{m} = 1\,\text{J}$.
+missä $F$ on voiman liikkeen suuntainen komponentti ($\text{N}$), negatiivinen silloin, kun komponentti osoittaa liikettä vastaan, ja $s$ kuljettu matka ($\text{m}$). Työn yksikkö on $1\,\text{N}\cdot\text{m} = 1\,\text{J}$.
 
 Kun kappale liikkuu $x$-akselia pitkin ja siihen vaikuttaa akselin suuntainen vakio kokonaisvoima $\Sigma F_x$, se kiihtyy tasaisesti, ja sen kiihtyvyys on $a = \tfrac{\Sigma F_x}{m}$. Luvussa *Kiihtyvyys ja tasaisesti kiihtyvä liike* opit, että tasaisesti kiihtyvässä liikkeessä kiihtyvyys on $a = \tfrac{v_2 - v_1}{t}$ ja siirtymä on keskinopeus kertaa aika, $\Delta x = \tfrac{v_1 + v_2}{2}\,t$. Nopeudet $v_1$ ja $v_2$ ovat tässä etumerkillisiä: negatiivinen nopeus tarkoittaa liikettä akselin negatiiviseen suuntaan. Kun yhtälöt kerrotaan keskenään, aika supistuu pois:
 ```latex
@@ -366,23 +366,20 @@ Kun kappale liikkuu $x$-akselia pitkin ja siihen vaikuttaa akselin suuntainen va
 ```
 Kun yhtälö kerrotaan puolittain massalla $m$ ja sijoitetaan $ma = \Sigma F_x$, saadaan $\Sigma F_x\, \Delta x = \tfrac{1}{2} m v_2^2 - \tfrac{1}{2} m v_1^2$ eli $\Sigma F_x\, \Delta x = \Delta E_\text{k}$.
 
-Siirtymä $\Delta x$ ei ole sama asia kuin kuljettu matka $s$. Jos kappale liikkuu koko ajan samaan suuntaan, siirtymän itseisarvo on yhtä suuri kuin kuljettu matka, ja kokonaisvoiman työ on $\Sigma F_\parallel\, s$. Jos kappale kääntyy, kuten ylös heitetty pallo, kuljettu matka on siirtymää pidempi. Vakiovoiman työ lasketaan silloin siirtymästä, $W = F_x\, \Delta x$, tai osissa niin, että jokaisella osuudella liike on yhteen suuntaan. Kitka ja ilmanvastus sen sijaan kääntyvät liikkeen mukana, joten niiden työ on aina negatiivinen, ja sen itseisarvo kasvaa kuljetun matkan mukana. Kummassakin tapauksessa kokonaisvoiman tekemä työ on yhtä suuri kuin liike-energian muutos:
-```latex
-W_\text{kok} = \Delta E_\text{k}
+Siirtymä $\Delta x$ ei ole sama asia kuin kuljettu matka $s$. Jos kappale liikkuu koko ajan samaan suuntaan, siirtymän itseisarvo on yhtä suuri kuin kuljettu matka, ja kokonaisvoiman työ on $\Sigma F\, s$. Jos kappale kääntyy, kuten ylös heitetty pallo, kuljettu matka on siirtymää pidempi. Vakiovoiman työ lasketaan silloin siirtymästä, $W = F_x\, \Delta x$, tai osissa niin, että jokaisella osuudella liike on yhteen suuntaan. Kitka ja ilmanvastus sen sijaan kääntyvät liikkeen mukana, joten niiden työ on aina negatiivinen, ja sen itseisarvo kasvaa kuljetun matkan mukana. Kummassakin tapauksessa kokonaisvoiman tekemä työ on yhtä suuri kuin liike-energian muutos:
+```kaavat
+työperiaate :: E_{\text{k}0} + W = E_\text{k}
 ```
-missä $W_\text{kok}$ on kaikkien kappaleeseen vaikuttavien voimien yhdessä tekemä työ ($\text{J}$) ja $\Delta E_\text{k} = E_{\text{k},2} - E_{\text{k},1}$ liike-energian muutos ($\text{J}$). Kun esimerkiksi kärryn massa on $2{,}0\,\text{kg}$ ja kokonaisvoima $12\,\text{N}$ kiihdyttää sitä levosta matkan $3{,}0\,\text{m}$, voima tekee työn $36\,\text{J}$, ja kärryn nopeus on lopussa $6{,}0\,\text{m/s}$.
+missä $E_{\text{k}0}$ on liike-energia alussa ja $E_\text{k}$ lopussa ($\text{J}$) ja $W$ kaikkien kappaleeseen vaikuttavien voimien yhdessä tekemä työ ($\text{J}$). Tämä on **työperiaate**: kokonaistyö on liike-energian muutos, $W = \Delta E_\text{k}$. Kun esimerkiksi kärryn massa on $2{,}0\,\text{kg}$ ja kokonaisvoima $12\,\text{N}$ kiihdyttää sitä levosta matkan $3{,}0\,\text{m}$, voima tekee työn $36\,\text{J}$, ja kärryn nopeus on lopussa $6{,}0\,\text{m/s}$.
 
 ### Energiaperiaate
-Kokonaistyö jaetaan kahteen osaan: painon tekemään työhön $W_G$ ja kaikkien muiden voimien tekemään työhön $W_\text{muut}$. Muita voimia ovat esimerkiksi kitka, ilmanvastus, vetävä köysi ja työntävä käsi. Kun kappale laskeutuu korkeuden $h$, paino tekee työn $mgh$ ja potentiaalienergia pienenee saman verran, joten $W_G = -\Delta E_\text{p}$. Kun tämä sijoitetaan yhtälöön $W_G + W_\text{muut} = \Delta E_\text{k}$, saadaan **mekaniikan energiaperiaate**:
-```latex
-\begin{aligned}
-&E_{\text{k},1} + E_{\text{p},1} + W_\text{muut} \\
-&\quad = E_{\text{k},2} + E_{\text{p},2}
-\end{aligned}
+Kokonaistyö jaetaan kahteen osaan: painon tekemään työhön $W_G$ ja kaikkien muiden voimien tekemään työhön. Muita voimia ovat esimerkiksi kitka, ilmanvastus, vetävä köysi ja työntävä käsi. Kun kappale laskeutuu korkeuden $h$, paino tekee työn $mgh$ ja potentiaalienergia pienenee saman verran, joten $W_G = -\Delta E_\text{p}$. Kun painon työ kirjoitetaan näin potentiaalienergian muutoksena, työperiaatteen työksi $W$ jää vain muiden voimien kuin painon tekemä työ. Saadaan **mekaniikan energiaperiaate**:
+```kaavat
+mekaniikan energiaperiaate :: E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}
 ```
-missä indeksi $1$ tarkoittaa alkutilannetta ja $2$ lopputilannetta, $E_\text{k} = \tfrac{1}{2} mv^2$ on liike-energia, $E_\text{p} = mgh$ potentiaalienergia korkeudella $h$ valitusta nollatasosta ja $W_\text{muut}$ muiden voimien kuin painon tekemä työ ($\text{J}$). Sanoin: mekaanisen energian muutos on yhtä suuri kuin muiden voimien kuin painon tekemä työ, $\Delta E_\text{mek} = W_\text{muut}$. Nollatason saa valita vapaasti, esimerkiksi tilanteen alimpaan kohtaan, koska vain korkeuden muutos vaikuttaa tulokseen.
+missä indeksi $0$ tarkoittaa alkutilannetta ja suure ilman indeksiä lopputilannetta, $E_\text{k} = \tfrac{1}{2} mv^2$ on liike-energia, $E_\text{p} = mgh$ potentiaalienergia korkeudella $h$ valitusta nollatasosta ja $W$ muiden voimien kuin painon tekemä työ ($\text{J}$). Sanoin: mekaanisen energian muutos on yhtä suuri kuin muiden voimien kuin painon tekemä työ, $\Delta E_\text{mek} = W$. Nollatason saa valita vapaasti, esimerkiksi tilanteen alimpaan kohtaan, koska vain korkeuden muutos vaikuttaa tulokseen.
 
-<svg data-fig="palkit" viewBox="0 0 600 360" role="img" aria-label="Energiapalkit, kaavakuva mittakaavassa: alussa kappaleella on vain potentiaalienergiaa E_p,1, liike-energia E_k,1 on nolla. Kitka tekee negatiivisen työn W_muut, jonka palkki osoittaa nollatasosta alaspäin. Lopussa kappaleella on vain liike-energiaa E_k,2 ja potentiaalienergia E_p,2 on nolla. Katkoviiva alun mekaanisen energian korkeudella näyttää, että loppuenergia on alkuenergiaa pienempi juuri kitkan työn verran." style="max-width:100%;font-size:24px">
+<svg data-fig="palkit" viewBox="0 0 600 360" role="img" aria-label="Energiapalkit, kaavakuva mittakaavassa: alussa kappaleella on vain potentiaalienergiaa E_p0, liike-energia E_k0 on nolla. Kitka tekee negatiivisen työn W, jonka palkki osoittaa nollatasosta alaspäin. Lopussa kappaleella on vain liike-energiaa E_k ja potentiaalienergia E_p on nolla. Katkoviiva alun mekaanisen energian korkeudella näyttää, että loppuenergia on alkuenergiaa pienempi juuri kitkan työn verran." style="max-width:100%;font-size:24px">
   <foreignObject x="78.5" y="11.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{alussa}$</div></foreignObject>
   <foreignObject x="432.5" y="11.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{lopussa}$</div></foreignObject>
   <line x1="30" y1="232" x2="570" y2="232" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
@@ -393,22 +390,19 @@ missä indeksi $1$ tarkoittaa alkutilannetta ja $2$ lopputilannetta, $E_\text{k}
   <foreignObject x="360" y="135.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$=$</div></foreignObject>
   <line x1="180" y1="72" x2="540" y2="72" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <path d="M470,72 h8 V136 h-8" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-linejoin="round"/>
-  <foreignObject x="486" y="89.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$|W_\text{muut}|$</div></foreignObject>
-  <foreignObject x="51" y="317.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$E_{\text{k},1}$</div></foreignObject>
-  <foreignObject x="131" y="317.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#2b8a3e">$E_{\text{p},1}$</div></foreignObject>
-  <foreignObject x="265" y="317.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$W_\text{muut}$</div></foreignObject>
-  <foreignObject x="411" y="317.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$E_{\text{k},2}$</div></foreignObject>
-  <foreignObject x="491" y="317.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#2b8a3e">$E_{\text{p},2}$</div></foreignObject>
+  <foreignObject x="486" y="89.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$|W|$</div></foreignObject>
+  <foreignObject x="57.5" y="317.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$E_{\text{k}0}$</div></foreignObject>
+  <foreignObject x="137.5" y="317.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#2b8a3e">$E_{\text{p}0}$</div></foreignObject>
+  <foreignObject x="290" y="317.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$W$</div></foreignObject>
+  <foreignObject x="423.5" y="317.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$E_\text{k}$</div></foreignObject>
+  <foreignObject x="503.5" y="317.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#2b8a3e">$E_\text{p}$</div></foreignObject>
   <foreignObject x="70" y="199.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$0$</div></foreignObject>
   <foreignObject x="510" y="199.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$0$</div></foreignObject>
 </svg>
 
-Kun kappale liikkuu paikallaan olevaa alustaa tai ilmaa vasten, kitka ja ilmanvastus vastustavat liikettä ja tekevät negatiivista työtä, joten ne pienentävät mekaanista energiaa. (Liikkuva alusta tai tuuli voi tehdä myös positiivista työtä, esimerkiksi kuljetinhihna kantaa laatikkoa.) Vetävä köysi tai moottori voi tehdä positiivista työtä ja kasvattaa sitä, kuten ketjuhissi, joka nostaa junaa. Jos muut voimat eivät tee työtä, $W_\text{muut} = 0$, ja energiaperiaatteesta tulee **mekaanisen energian säilymislaki**:
-```latex
-\begin{aligned}
-&E_{\text{k},1} + E_{\text{p},1} \\
-&\quad = E_{\text{k},2} + E_{\text{p},2}
-\end{aligned}
+Kun kappale liikkuu paikallaan olevaa alustaa tai ilmaa vasten, kitka ja ilmanvastus vastustavat liikettä ja tekevät negatiivista työtä, joten ne pienentävät mekaanista energiaa. (Liikkuva alusta tai tuuli voi tehdä myös positiivista työtä, esimerkiksi kuljetinhihna kantaa laatikkoa.) Vetävä köysi tai moottori voi tehdä positiivista työtä ja kasvattaa sitä, kuten ketjuhissi, joka nostaa junaa. Jos muut voimat eivät tee työtä, $W = 0$, ja energiaperiaatteesta tulee **mekaanisen energian säilymislaki**:
+```kaavat
+mekaanisen energian säilymislaki :: E_{\text{p}0} + E_{\text{k}0} = E_\text{p} + E_\text{k}
 ```
 Kun kappale lähtee levosta korkeudelta $h$ ja laskeutuu nollatasolle, säilymislaista $mgh = \tfrac{1}{2} mv^2$ saadaan $v = \sqrt{2gh}$. Massa supistuu pois, joten nopeus ei riipu massasta.
 
@@ -417,7 +411,7 @@ Lapsi laskee pulkalla mäen alas. Lapsen ja pulkan yhteinen massa on $32\,\text{
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** $m = 32\,\text{kg}$, korkeusero $h = 5{,}0\,\text{m}$, alkunopeus $v_1 = 0$, loppunopeus $v_2 = 7{,}6\,\text{m/s}$ ja $g = 9{,}81\,\text{m/s}^2$. Kysytään kitkan ja ilmanvastuksen yhdessä tekemää työtä $W_\text{muut}$.
+**Tunnetut ja kysytty.** $m = 32\,\text{kg}$, korkeusero $h = 5{,}0\,\text{m}$, alkunopeus $v_1 = 0$, loppunopeus $v_2 = 7{,}6\,\text{m/s}$ ja $g = 9{,}81\,\text{m/s}^2$. Kysytään kitkan ja ilmanvastuksen yhdessä tekemää työtä $W$.
 
 <!-- vaihe -->
 
@@ -425,11 +419,11 @@ Lapsi laskee pulkalla mäen alas. Lapsen ja pulkan yhteinen massa on $32\,\text{
 
 <!-- vaihe -->
 
-**Kaava ratkaistuna.** Alussa $E_{\text{k},1} = 0$ ja $E_{\text{p},1} = mgh$, lopussa $E_{\text{k},2} = \tfrac{1}{2} mv_2^2$ ja $E_{\text{p},2} = 0$:
+**Kaava ratkaistuna.** Alussa $E_{\text{k}0} = 0$ ja $E_{\text{p}0} = mgh$, lopussa $E_\text{k} = \tfrac{1}{2} mv_2^2$ ja $E_\text{p} = 0$:
 ```latex
 \begin{aligned}
-&mgh + W_\text{muut} = \tfrac{1}{2} m v_2^2 \\
-&W_\text{muut} = \tfrac{1}{2} m v_2^2 - mgh
+&mgh + W = \tfrac{1}{2} m v_2^2 \\
+&W = \tfrac{1}{2} m v_2^2 - mgh
 \end{aligned}
 ```
 
@@ -448,7 +442,7 @@ Lapsi laskee pulkalla mäen alas. Lapsen ja pulkan yhteinen massa on $32\,\text{
 &mgh \\
 &= 32\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 5{,}0\,\text{m} \\
 &= 1569{,}6\,\text{J} \\[6pt]
-&W_\text{muut} \\
+&W \\
 &= 924{,}16\,\text{J} - 1569{,}6\,\text{J} \\
 &= -645{,}44\,\text{J}
 \end{aligned}
@@ -456,7 +450,7 @@ Lapsi laskee pulkalla mäen alas. Lapsen ja pulkan yhteinen massa on $32\,\text{
 
 <!-- vaihe -->
 
-**Tulos.** Kitka ja ilmanvastus tekevät yhteensä työn $W_\text{muut} \approx -6{,}5 \cdot 10^2\,\text{J}$. Tulos ilmoitetaan kahdella merkitsevällä numerolla kuten korkeus $5{,}0\,\text{m}$ ja nopeus $7{,}6\,\text{m/s}$. Työ on negatiivinen, koska kitka ja ilmanvastus vastustavat liikettä: noin $650\,\text{J}$ mekaanista energiaa muuttui lumen, jalasten ja ilman sisäenergiaksi.
+**Tulos.** Kitka ja ilmanvastus tekevät yhteensä työn $W \approx -6{,}5 \cdot 10^2\,\text{J}$. Tulos ilmoitetaan kahdella merkitsevällä numerolla kuten korkeus $5{,}0\,\text{m}$ ja nopeus $7{,}6\,\text{m/s}$. Työ on negatiivinen, koska kitka ja ilmanvastus vastustavat liikettä: noin $650\,\text{J}$ mekaanista energiaa muuttui lumen, jalasten ja ilman sisäenergiaksi.
 
 <!-- vaihe -->
 
@@ -469,7 +463,7 @@ Toinen virhe on sanoa, että kitka hävittää energiaa. Kitka pienentää mekaa
 
 ## Tiivistelmä
 - Mekaaninen energia $E_\text{mek} = E_\text{k} + E_\text{p}$ säilyy, kun vain paino tekee työtä eli kitkan ja ilmanvastuksen voi jättää huomiotta eikä mikään vedä tai työnnä. Tukivoima ei tee työtä, koska se on kohtisuorassa liikettä vastaan.
-- Voima tekee työtä liikkeen suuntaisella komponentillaan, $W = F_\parallel s$, kun kappale liikkuu yhteen suuntaan: positiivista liikkeen suuntaan ja negatiivista liikettä vastaan.
-- Kokonaisvoiman tekemä työ on yhtä suuri kuin liike-energian muutos, $W_\text{kok} = \Delta E_\text{k}$.
-- Energiaperiaate: mekaanisen energian muutos on muiden voimien kuin painon tekemä työ, $\Delta E_\text{mek} = W_\text{muut}$. Kitka ja ilmanvastus muuttavat mekaanista energiaa sisäenergiaksi, ja kokonaisenergia säilyy.
+- Voima tekee työtä liikkeen suuntaisella komponentillaan, $W = F s$, kun kappale liikkuu yhteen suuntaan: positiivista liikkeen suuntaan ja negatiivista liikettä vastaan.
+- Kokonaisvoiman tekemä työ on yhtä suuri kuin liike-energian muutos, $W = \Delta E_\text{k}$.
+- Energiaperiaate: mekaanisen energian muutos on muiden voimien kuin painon tekemä työ, $\Delta E_\text{mek} = W$. Kitka ja ilmanvastus muuttavat mekaanista energiaa sisäenergiaksi, ja kokonaisenergia säilyy.
 - Paino on konservatiivinen voima, koska sen työ riippuu vain korkeuserosta. Kitka ja ilmanvastus ovat ei-konservatiivisia voimia, koska niiden työ kasvaa kuljetun matkan mukana.

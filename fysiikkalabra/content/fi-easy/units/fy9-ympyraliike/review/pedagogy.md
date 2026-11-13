@@ -1,8 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: b407828c184599db
+CONTENT-HASH: 91df63573f747d28
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 7b3699a510e8acef.
 
-Delta review (solution practice, 2026-11-12) of the version passed before.
+## Blocking
+(none)
 
-Lever arms r_t, r_v, r_k, d_p, d_k, d_m and the share q = gamma M/(g r^2) turn the moment solutions into symbols-first answers; conversions show the arms, so the chain stays readable. Same physics and steps as fi in fi-easy (numbers match fi).
+## Polish
+(none)
 
-Checked: diff since 761b6673, symbols defined, solved expression equals Sijoitus, answers.py output, tasks.json answer/criteria, cross-language number match.
+## Checked
+Diff only: distances named r_t, r_v, r_k, d_p, d_k, d_m with the lever-arm conversion shown in Muunnokset; solutions give the answer in symbols first. Staging and force-diagram description unchanged.

@@ -172,7 +172,7 @@
 
 The problems of this lesson start in the same way as mechanics problems usually do: **choose the body, draw the free-body diagram and write Newton's second law**. The situation tells what the acceleration is. In equilibrium the body at rest neither starts to move nor starts to turn, so both the sum of the forces and the sum of the moments are zero. In uniform circular motion the acceleration points to the centre of the path, so the sum of the forces points there too. Only gravitation acts on a satellite, so the gravitational force is itself the net force.
 
-<svg data-fig="kartta" viewBox="0 0 380 620" role="img" aria-label="Concept map. At the top a node: free-body diagram first, then Newton&#x27;s second law, sum of F = m a. Three branches lead down from it. Equilibrium: moment M = F r, the sum of the forces is zero, so the body does not start to move, and the sum of the moments is zero, so it does not turn. Circular motion: orbital speed v = omega r, centripetal acceleration a n = v squared divided by r points to the centre, and the equation of motion sum of F = m v squared divided by r. Gravitation: attraction F g = gamma m 1 m 2 divided by r squared, field strength g = gamma M divided by r squared and the orbital speed of a satellite v = square root of gamma M divided by r." style="max-width:100%;font-size:20px">
+<svg data-fig="kartta" viewBox="0 0 380 620" role="img" aria-label="Concept map. At the top is the node: the free-body diagram first, then Newton&#x27;s second law sum F = m a. Three branches lead down from it. Equilibrium: moment M = F r, the sum of the forces is zero, so the body does not move off, and the sum of the moments is zero, so it does not turn. Circular motion: orbital speed v = omega r, the centripetal acceleration a n = v squared divided by r points to the centre, and in the equation of motion the net force gives the centripetal acceleration. Gravitation: the attractive force F g = gamma m 1 m 2 divided by r squared, the weight G = m g as vectors, and for a satellite the gravitational force gives the centripetal acceleration." style="max-width:100%;font-size:20px">
   <line x1="24" y1="80" x2="24" y2="466" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
   <foreignObject x="77" y="18" width="226" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\text{free-body diagram first}$</div></foreignObject>
@@ -195,7 +195,7 @@ The problems of this lesson start in the same way as mechanics problems usually 
   <foreignObject x="248" y="328" width="114" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{orbital speed}$</div></foreignObject>
   <foreignObject x="58" y="363" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$a_\text{n} = v^2/r$</div></foreignObject>
   <foreignObject x="257" y="365" width="105" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{to the centre}$</div></foreignObject>
-  <foreignObject x="58" y="400" width="91" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\Sigma F = mv^2/r$</div></foreignObject>
+  <foreignObject x="58" y="400" width="102" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\Sigma F \text{ gives } a_\text{n}$</div></foreignObject>
   <foreignObject x="213" y="402" width="149" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{equation of motion}$</div></foreignObject>
   <line x1="24" y1="466" x2="44" y2="466" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="44" y="444" width="328" height="156" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
@@ -203,10 +203,9 @@ The problems of this lesson start in the same way as mechanics problems usually 
   <line x1="54" y1="486" x2="362" y2="486" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="58" y="498" width="122" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$F_\text{g} = \gamma m_1 m_2/r^2$</div></foreignObject>
   <foreignObject x="266" y="500" width="96" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{attraction}$</div></foreignObject>
-  <foreignObject x="58" y="535" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$g = \gamma M/r^2$</div></foreignObject>
-  <foreignObject x="310" y="537" width="52" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{field}$</div></foreignObject>
-  <foreignObject x="58" y="560" width="81" height="48" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$v = \sqrt{\gamma M/r}$</div></foreignObject>
-  <foreignObject x="274" y="574" width="88" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{satellite}$</div></foreignObject>
+  <foreignObject x="58" y="535" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\overline{G} = m\overline{g}$</div></foreignObject>
+  <foreignObject x="301" y="537" width="61" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{weight}$</div></foreignObject>
+  <foreignObject x="58" y="572" width="206" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\text{satellite: } F_\text{g} \text{ gives } a_\text{n}$</div></foreignObject>
 </svg>
 
 The opening question is solved in the same way. Only the gravitational force of the Earth acts on the satellite, and it gives the satellite its centripetal acceleration. The further away the satellite orbits, the longer its period. The geostationary orbit lies above the equator at exactly the distance at which the period is the same as the Earth's rotation period, $23\,\text{h}\;56\,\text{min}$. From the period the radius of the orbit comes out as $r \approx 42\,200\,\text{km}$, about $35\,800\,\text{km}$ above the Earth's surface, and the orbital speed as $v = \tfrac{2\pi r}{T} \approx 3.07\,\text{km/s}$. The satellite and the dish go round the Earth's axis in the same time and in the same direction, so as seen from the dish the satellite stays still.
@@ -253,8 +252,8 @@ The opening question is solved in the same way. Only the gravitational force of 
 
 ```kaavat
 moment of a force :: M = Fr
-equilibrium condition for forces :: \Sigma\overline{F} = \overline{0}
-equilibrium condition for moments :: \Sigma M = 0
+\Sigma\overline{F} = \overline{0}
+\Sigma M = 0
 ```
 
 where $M$ is the moment of the force ($\text{Nm}$), $F$ the size of the force ($\text{N}$) and $r$ the lever arm of the force ($\text{m}$), that is, the perpendicular distance of the axis of rotation from the line of action of the force. If the force makes the angle $\alpha$ with the line from the axis to the point of application and the point of application is at the distance $d$, the lever arm is $r = d\sin\alpha$. An anticlockwise moment is positive. For a body at rest the moment condition holds about any point, so it pays to choose the point of application of an unknown force as the pivot point. The weight acts at the centre of gravity.
@@ -308,20 +307,101 @@ where $M$ is the moment of the force ($\text{Nm}$), $F$ the size of the force ($
 ```kaavat
 orbital speed :: v = \omega r
 centripetal acceleration :: a_\text{n} = \frac{v^2}{r} = \omega^2 r
-Newton's second law in circular motion :: \Sigma F = m\frac{v^2}{r}
 ```
 
-where $v$ is the orbital speed ($\text{m/s}$), $r$ the radius of the path ($\text{m}$), $\omega = \tfrac{2\pi}{T} = 2\pi f$ the angular velocity ($\text{rad/s}$), $T$ the period ($\text{s}$) and $f = \tfrac{1}{T}$ the rotation frequency ($\tfrac{1}{\text{s}}$), so $v = \tfrac{2\pi r}{T} = 2\pi r f$; $a_\text{n}$ the centripetal acceleration ($\text{m/s}^2$) and $\Sigma F$ the net force pointing to the centre ($\text{N}$). In uniform circular motion the speed is constant. The centripetal acceleration $a_\text{n} = \tfrac{v^2}{r}$ also holds at an instant when the speed changes: at the highest and the lowest point of the path there is no force along the tangent, so the net force points to the centre. The velocity is along the tangent of the path. In the equation of motion the forces pointing to the centre are positive, and perpendicular to the plane of the path the sum of the forces is zero.
+where $v$ is the orbital speed ($\text{m/s}$), $r$ the radius of the path ($\text{m}$), $\omega = \tfrac{2\pi}{T} = 2\pi f$ the angular velocity ($\text{rad/s}$), $T$ the period ($\text{s}$) and $f = \tfrac{1}{T}$ the rotation frequency ($\tfrac{1}{\text{s}}$), so $v = \tfrac{2\pi r}{T} = 2\pi r f$, and $a_\text{n}$ the centripetal acceleration ($\text{m/s}^2$). In uniform circular motion the speed is constant. The velocity is along the tangent of the path, and the centripetal acceleration points to the centre of the path.
+
+By Newton's second law the net force $\Sigma F$ ($\text{N}$) on the body gives it the centripetal acceleration, so the net force points to the centre. The centripetal acceleration $a_\text{n} = \tfrac{v^2}{r}$ also holds at an instant when the speed changes: at the highest and the lowest point of the path there is no force along the tangent. In the equation of motion the forces pointing to the centre are positive, and perpendicular to the plane of the path the sum of the forces is zero.
+
+```johda
+A body of mass $m$ is in uniform circular motion at the speed $v$ on a path of radius $r$. Derive the net force $\Sigma F$ on the body from Newton's second law and the centripetal acceleration.
+---
+Newton's second law $\Sigma\overline{F} = m\overline{a}$ also holds in circular motion. In uniform circular motion the acceleration is the centripetal acceleration $a_\text{n} = \tfrac{v^2}{r}$, which points to the centre of the path. So the net force points to the centre, and its magnitude is
+
+$$\Sigma F = ma_\text{n} = m\frac{v^2}{r}$$
+```
+
+<svg data-fig="kaarre" viewBox="0 0 380 280" role="img" aria-label="Free-body diagram, no numerical values: a car in a curve of a horizontal road seen from behind, as a rectangle. The centre of the curve is to the left. The weight G starts from the centre point and points down, and the normal force N, equally long, starts from the road surface and points up. The road surface is a dashed line. The friction force F mu starts from the lower left corner of the car and points to the left along the road, towards the centre of the curve. Beside the car an orange acceleration arrow points to the left towards the centre. The velocity points away from the viewer, drawn as a circle with a cross inside." style="max-width:100%;font-size:20px">
+  <line x1="16" y1="206" x2="364" y2="206" stroke="#6b7480" stroke-width="2" stroke-linecap="butt" stroke-dasharray="8 6"/>
+  <foreignObject x="12" y="23" width="167" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px;color:#6b7480">$\leftarrow \text{centre of the curve}$</div></foreignObject>
+  <line x1="119" y1="142" x2="51" y2="142" stroke="#e8590c" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M62,135.5 L49,142 L62,148.5" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-linejoin="round"/>
+  <foreignObject x="32.5" y="108" width="29" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#e8590c">$\overline{a}$</div></foreignObject>
+  <rect x="135" y="130" width="130" height="76" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="200" y1="168" x2="200" y2="231" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M200,248 L192,230 L208,230 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="165.5" y="240" width="29" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#c92a2a">$\overline{G}$</div></foreignObject>
+  <line x1="232" y1="206" x2="232" y2="143" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M232,126 L240,144 L224,144 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="237.5" y="100" width="29" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#c92a2a">$\overline{N}$</div></foreignObject>
+  <line x1="135" y1="206" x2="94" y2="206" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M77,206 L95,198 L95,214 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="55.5" y="218" width="39" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#c92a2a">$\overline{F}_{\mu}$</div></foreignObject>
+  <circle cx="305" cy="148" r="13" fill="#ffffff" stroke="#1971c2" stroke-width="2.5"/>
+  <line x1="296" y1="139" x2="314" y2="157" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="296" y1="157" x2="314" y2="139" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
+  <foreignObject x="327" y="136" width="29" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px;color:#1971c2">$\overline{v}$</div></foreignObject>
+</svg>
+
+```johda
+A car of mass $m$ drives at the speed $v$ in a curve of a horizontal road with radius $r$. The friction of the road gives the car its centripetal force. Derive how large a friction force is needed and the greatest speed at which the car still stays on the road when the coefficient of static friction is $\mu_0$.
+---
+In the curve the forces on the car are the weight $G = mg$, the normal force $N$ of the road and the friction force $F_\mu$ of the road (figure). There is no vertical acceleration, so $N = mg$. The only horizontal force is friction, so it is the net force. In uniform circular motion the net force is $\Sigma F = m\tfrac{v^2}{r}$, so
+
+$$F_\mu = m\frac{v^2}{r}$$
+
+The tyres do not slide sideways, so the friction is static friction. It is at most $\mu_0 N = \mu_0 mg$. The car stays on the road when
+
+$$m\frac{v^2}{r} \le \mu_0 mg \quad\Rightarrow\quad v \le \sqrt{\mu_0 g r}$$
+
+The mass cancels, so the greatest speed does not depend on the mass of the car.
+```
 
 ### Gravitation and satellites
 
 ```kaavat
 Newton's law of gravitation :: F_\text{g} = \gamma\frac{m_1 m_2}{r^2}
-gravitational field strength :: g = \gamma\frac{M}{r^2}
-orbital speed of a satellite :: v = \sqrt{\frac{\gamma M}{r}}
 ```
 
-where $\gamma = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$ is the gravitational constant, $F_\text{g}$ the magnitude of the gravitational force ($\text{N}$), $m_1$ and $m_2$ the masses of the bodies ($\text{kg}$), $M$ the mass of the central body ($\text{kg}$) and $r$ the distance between the centres ($\text{m}$). The law holds for point-like and spherically symmetric bodies. The orbital speed of a satellite comes from the condition $\gamma\tfrac{Mm}{r^2} = m\tfrac{v^2}{r}$, and it holds for a circular orbit when the central body is much more massive than the satellite. For an Earth satellite $r = R + h$, where $R = 6371\,\text{km}$, and the period is $T = \tfrac{2\pi r}{v}$.
+where $\gamma = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$ is the gravitational constant, $F_\text{g}$ the magnitude of the gravitational force ($\text{N}$), $m_1$ and $m_2$ the masses of the bodies ($\text{kg}$) and $r$ the distance between the centres ($\text{m}$). The law holds for point-like and spherically symmetric bodies. The gravitational field strength $g$ ($\text{N/kg}$, that is $\text{m/s}^2$) of a central body of mass $M$ ($\text{kg}$) is the gravitational force per unit mass of a body; at the Earth's surface it is the acceleration due to gravity.
+
+```johda
+A body of mass $m$ is at the distance $r$ from the centre of a central body of mass $M$. Derive the gravitational field strength $g$, that is the acceleration due to gravity, at this distance.
+---
+By Newton's law of gravitation the gravitational force on the body is
+
+$$F_\text{g} = \gamma\frac{Mm}{r^2}$$
+
+This force is the weight $G = mg$ of the body when the rotation of the central body is ignored. Set the forces equal:
+
+$$mg = \gamma\frac{Mm}{r^2}$$
+
+The mass $m$ of the body cancels:
+
+$$g = \gamma\frac{M}{r^2}$$
+
+The field strength does not depend on the mass of the body, so all bodies fall with the same acceleration. Air resistance is neglected. At the Earth's surface $r = R$, and further away $g$ decreases with the square of the distance.
+```
+
+A satellite orbits a central body on a circular orbit of radius $r$ at the orbital speed $v$ ($\text{m/s}$). The only force on it is the gravitational force, which gives it the centripetal acceleration. For an Earth satellite $r = R + h$, where $R = 6371\,\text{km}$ and $h$ is the height above the surface, and the period is $T = \tfrac{2\pi r}{v}$.
+
+```johda
+A satellite of mass $m$ orbits a central body of mass $M$ on a circular orbit of radius $r$. Derive the orbital speed $v$ of the satellite.
+---
+The only force on the satellite is the gravitational force, so it is the net force and points to the centre of the orbit. By Newton's second law it gives the satellite the centripetal acceleration $a_\text{n} = \tfrac{v^2}{r}$. Writing the gravitational force by Newton's law of gravitation gives
+
+$$\gamma\frac{Mm}{r^2} = m\frac{v^2}{r}$$
+
+The mass $m$ of the satellite cancels. Multiply the equation by the radius $r$:
+
+$$v^2 = \frac{\gamma M}{r}$$
+
+The orbital speed is positive, so
+
+$$v = \sqrt{\frac{\gamma M}{r}}$$
+
+The orbital speed does not depend on the mass of the satellite, and the further out the orbit, the smaller it is. The result holds when the central body is much more massive than the satellite, so that the central body stays in place.
+```
 
 ## Common mistakes {Virheet}
 

@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: bf811b5954b48e62
-Round: 3
-
-Round 3 checks commit 3b0a55d57, a one-sentence change in the L2-08 Mallivastaus of solutions.md. The rest of the set is unchanged since the round-2 PASS.
+CONTENT-HASH: 2d86ef406e58a1c7
+SCOPE: delta added-exercise from bf811b5954b48e62 base 89bcb63b7431
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- exercises/solutions.md (fy3-7-L2-09, Kuvaajan lukeminen) — "(alkupiste on origossa, $0\,\text{kJ}$)": the start point is $(0\,\text{kJ};\ -16\,{}^\circ\text{C})$, not the origin. Write "alkupisteessä $Q = 0\,\text{kJ}$".
+- exercises/solutions.md (fy3-7-L2-09, Vastaus) — the reason for "hyväksytään $2020\ldots2150$" is that the heat is read from a grid crossing, but an exact crossing gives no reading spread. The range is in fact the 3 % tolerance. Say so, or drop the range.
+- exercises/exercises.json (fy3-7-L1-09) — as in round 1: "sitoo ihosta" assumes that all the heat of evaporation comes from the skin. Optional: "Oleta, että kaikki lämpö tulee ihosta."
 
 ## Checked
-- The mass order is now listed from smallest to largest: kiehuva vesi 0,10, jääpussi 0,50, kattila 0,60, teekannu 1,0 kg. This is correct.
-- The sentence "Lämmön järjestys on lähes päinvastainen" is correct. The heat order is teekannu, jääpussi, kattila, kiehuva vesi (84 < 167 < 201 < 226 kJ, recomputed). The reverse of the mass order is teekannu, kattila, jääpussi, kiehuva vesi, so only jääpussi and kattila differ.
-- No number, formula, option or answer changed. `order` and the answer string still match my recomputation.
-- Renders vs text: I judged this round from the diff text only. The change is prose plus the inline masses that were already there, so there are no new formula chains.
-- The hash was the same at the start and at the end.
+- Round-1 blocker fixed: the start temperature $-16\,{}^\circ\text{C}$ is now in the task text, and the student reads only $Q = 20\,\text{kJ}$ at the crossing $(20\,\text{kJ};\ 0\,{}^\circ\text{C})$ of the 20 kJ / 10 °C grid.
+- L2-09 recomputed: $c = Q/(m\Delta T) = 20\,000\,\text{J}/(0{,}60\,\text{kg} \cdot 16\,\text{K}) = 2083\,\text{J/(kg·K)}$, which matches answers.py. Tolerance 0,03 (2021–2146) accepts $2{,}1 \cdot 10^3$.
+- L2-09 physics: $Q = cm\Delta T$ is used only on the rising part, before any melting. The solution is complete (symbols first, kJ → J, two figures from 0,60 kg), and the check against $c_\text{vesi}$ and the energy balance is real.
+- L1-09 unchanged since round 1: $Q = rm = 840\,\text{kJ/kg} \cdot 0{,}0050\,\text{kg} = 4{,}2\,\text{kJ}$, MAFY value as verified then; the remark that the boiling-point value applies is right.
+- Figure description lists the same points; it does not name the parts or give $c$ or $s$.
+- In FY3 scope; rest of the set unchanged since PASS; hash same at start and end.

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 60c23477f4ffc71d
+CONTENT-HASH: 9c1b044a71f0ab6e
 Mode: delta
 Round: 1
 
@@ -7,11 +7,15 @@ Round: 1
 (none)
 
 ## Polish
-- [Minor] L2-08 — the task text ends "Järjestä sitten erät" and the prompt repeats it; drop the sentence from the text.
+- [Minor] fy3-7/melting-curve (fy3-7-L2-09) — the x tick numbers $40, 80, \ldots, 320$ sit close together at 1280 px and will be tighter on a phone; label every 80 kJ or widen the plot if the figure is redrawn (figure is teacher-approved, so not blocking).
+- [Minor] solutions.md fy3-7-L2-09 Järkevyys — "Jään ja veden suhde on tällainen. Tase:" is unclear — "Jään $c$ on noin puolet veden arvosta. Tarkistus takaisin:".
+- [Minor] solutions.md fy3-7-L2-09 Vastaus — the stacked $\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$ opens the line spacing of the sentence after it; use $\text{J/(kg}\cdot\text{K)}$ in running text.
+- [Minor] fy3-7-L1-09 — "haihtuu iholta" but the table value is at the boiling point; the Vastaus already says so, nothing to change.
 
 ## Checked
-- Own 390 px render (scratch script, built page preview/fi-easy/fy3-7.html, every solution open): L2-08 (task, order widget, answer, solution), L3-01, L3-02, L3-03 task texts. No stale shots/ in the packet; changed solutions.md text read in the open solution cards. Hash re-run at the end: unchanged.
-- Maths: KaTeX fractions, aligned substitutions, units upright with thin space, decimal comma consistent.
+- fy3-7-open-exercises-1280-9 and -10 (L1-09: task split into situation and question, Vihje box, answer row, solution with unit conversion, Järkevyys).
+- fy3-7-open-exercises-L2-1280-12 and -13 (L2-09: heating-curve graph with axis titles and units, marked end points, horizontal plateau, nothing clipped; description matches and gives no answer; solution with Kuvaajan lukeminen, fractions, Järkevyys).
+- Captures are the lesson's review/shots (current for this hash).
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4

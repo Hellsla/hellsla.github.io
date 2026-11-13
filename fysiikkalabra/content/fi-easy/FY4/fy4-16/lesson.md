@@ -235,17 +235,14 @@ Pulkka liukuu suoraa rinnettä alas. Voimakuvio näyttää, että painon rinnett
 
 ## Kaava: Liikeyhtälö ja energiaperiaate
 Soveltavan tehtävän ensimmäinen työkalu on Newtonin toinen laki:
-```latex
-\Sigma\overline{F} = m\overline{a}
+```kaavat
+Newtonin 2. laki (dynamiikan peruslaki) :: \Sigma\overline{F} = m\overline{a}
 ```
 missä $\Sigma\overline{F}$ on kappaleeseen vaikuttavien voimien summa eli kokonaisvoima ($\text{N}$), $m$ kappaleen massa ($\text{kg}$) ja $\overline{a}$ sen kiihtyvyys ($\text{m/s}^2$). Laki kirjoitetaan voimakuviosta komponenteittain, $\Sigma F_x = ma_x$ ja $\Sigma F_y = ma_y$. Ensin valitaan akselit ja positiiviset suunnat. Toinen työkalu on mekaniikan energiaperiaate:
-```latex
-\begin{aligned}
-&E_{\text{k},1} + E_{\text{p},1} + W_\text{muut} \\
-&\quad = E_{\text{k},2} + E_{\text{p},2}
-\end{aligned}
+```kaavat
+mekaniikan energiaperiaate :: E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}
 ```
-missä indeksi $1$ tarkoittaa alkutilannetta ja $2$ lopputilannetta. Liike-energia on $E_\text{k} = \tfrac12 mv^2$, ja potentiaalienergia on $E_\text{p} = mgh$ valitusta nollatasosta. Työ $W_\text{muut}$ on muiden voimien kuin painon tekemä työ ($\text{J}$). Energiaperiaatteessa ei tarvita kiihtyvyyttä eikä aikaa. Siksi se sopii, kun kysytään nopeutta tietyssä kohdassa.
+missä indeksi $0$ tarkoittaa alkutilannetta. Suure ilman indeksiä tarkoittaa lopputilannetta. Liike-energia on $E_\text{k} = \tfrac12 mv^2$, ja potentiaalienergia on $E_\text{p} = mgh$ valitusta nollatasosta. Työ $W$ on muiden voimien kuin painon tekemä työ ($\text{J}$). Energiaperiaatteessa ei tarvita kiihtyvyyttä eikä aikaa. Siksi se sopii, kun kysytään nopeutta tietyssä kohdassa.
 
 ### Kitkan työ riippuu vaakasuorasta matkasta
 Oletetaan suora rinne, jonka kaltevuuskulma on $\alpha$ ja pituus $L$. Liikekitka on $\mu mg\cos\alpha$, ja sen tekemä työ on $-\mu mg\cos\alpha \cdot L$. Kuvasta nähdään, että $L\cos\alpha$ on rinteen vaakasuora pituus $x_1$. Tasaisella $N = mg$, ja kitkan työ matkalla $x_2$ on $-\mu mg x_2$. Kummassakin tapauksessa liikekitkan työ on
@@ -308,7 +305,7 @@ Lapsi ja pulkka ovat yhteensä $32{,}0\,\text{kg}$. He lähtevät levosta suoran
 
 <!-- vaihe -->
 
-**Periaate.** Kysytään nopeutta tietyssä kohdassa, joten käytetään energiaperiaatetta. Kappaleeksi valitaan pulkka ja lapsi yhdessä. Paino tekee työtä, ja energiaperiaate ottaa sen huomioon potentiaalienergian muutoksena. Tukivoima ei tee työtä, koska se on kohtisuorassa liikettä vastaan. Liikekitka osoittaa liikettä vastaan ja tekee negatiivisen työn $W_\text{muut} = -F_\mu L$. Kitkavoima saadaan voimakuviosta.
+**Periaate.** Kysytään nopeutta tietyssä kohdassa, joten käytetään energiaperiaatetta. Kappaleeksi valitaan pulkka ja lapsi yhdessä. Paino tekee työtä, ja energiaperiaate ottaa sen huomioon potentiaalienergian muutoksena. Tukivoima ei tee työtä, koska se on kohtisuorassa liikettä vastaan. Liikekitka osoittaa liikettä vastaan ja tekee negatiivisen työn $W = -F_\mu L$. Kitkavoima saadaan voimakuviosta.
 
 <!-- vaihe -->
 

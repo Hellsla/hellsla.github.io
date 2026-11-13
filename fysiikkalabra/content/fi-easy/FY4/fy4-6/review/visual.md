@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 3687f56e0da2f243
+CONTENT-HASH: 0761f1fb3da0dbd4
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- none
+1. fy4-6 formula tables: lähtökitka F_{\mu 0} = \mu_0 N renders well; the table follows the sentence introducing it.
 
-## Checked
-- batch delta review: "Luvun tärkeät käsitteet" panel captured from preview/fi-easy/fy4-6.html at 390 and 1280 px (the review/shots set has no capture of it) and opened — between the opening and stage 1, term bold over its explanation at 390 px, two-column at 1280 px, no clipping, no horizontal overflow, no KaTeX error; top-390 opened in a montage (read-aloud "Kuuntele" button under the title, layout intact).
+Checked: preview at 390 and 1280 px, formula tables, opened solutions; no horizontal overflow, no KaTeX errors, old symbols gone.

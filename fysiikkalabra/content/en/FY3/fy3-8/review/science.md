@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 70b245bb7958e152
+CONTENT-HASH: fce3bdbb94cc86ef
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- None.
+None.
 
 ## Checked
-- Delta review 2026-11-01 (commit 79af52c4 and learn list): the new `values` maps for the experiment panels and the learn-list wording, compared with the reviewed Finnish source.
-- inquiry.json: experiment `values` map (teräs -> steel / isoterminen -> isothermal, isobaarinen -> isobaric) gives the right terms; physics, numbers, answers and feedback unchanged and equal to the Finnish.
+Delta: tests/sims/fy3-8.json only; the five changed assertions swap ΔL, L_0, L for Δl, l_0, l (matching lang/*.json sims fy3-8) and keep the same quantities, numbers and tolerances (6,00 mm, 10,0060 m; −138 mm, 99,8620 m; 0,330 mm, 1,00033 m; 0,0600 %; l_0 = 42 m label), recomputed from Δl = α l_0 ΔT; build and test_sims fy3-8 pass on fi, fi-easy, en.

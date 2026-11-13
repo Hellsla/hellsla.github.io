@@ -1,20 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: fb4c9e7694ba0259
+CONTENT-HASH: 07b8fc3a7879dabc
+SCOPE: delta added-exercise from fb4c9e7694ba0259 base 81db4a6fd727
 
 ## Blocking
 
 ## Polish
-- [Minor] fy3-9-L2-08 figures at 390 px — SVG text scales to about 11 px (figure about 270 px wide inside the option card) — tick numbers and axis titles are readable but at the lower limit; widen the figures in choice cards if the layout allows.
-- [Minor] fy3-9-L2-08 option order — the page shuffles the options, so the letters appear C, A, D, B — alphabetical or fixed order would read more naturally and match the solution's "A ja B".
-- [Minor] fy3-9-L2-08 graphs A and B — same blue for all four lines; they are told apart by shape and grid only, which works (300 vs 200 kPa at 20 ml reads off the grid), no change required.
-- Carried over: L2-05 and L3-04 Järkevyys formula/colon items from the previous report.
+- [Minor] fy3-9-L2-09 solution, Muunnokset — `T_2 = 100 + 273{,}15\,\text{K}` adds a bare 100 to a kelvin value; write `T_2 = 100\,{}^\circ\text{C} + 273{,}15\,\text{K}` or `(100 + 273{,}15)\,\text{K}`.
+- [Minor] fy3-9-L1-09 — the litre sign `\textsf{l}` reads as a vertical bar next to "2,0" in the capture (project convention, only noted).
 
 ## Checked
-- Rendered fy3-9 preview at 390 px (Playwright), L2-08 closed, with all four options' feedback open and the solution (Periaate, Mallivastaus, Kuvaajan lukeminen) open. Opened the images.
-- All four figures pick-flat, pick-line, pick-rising, pick-boyle: same axes (V (ml) 0–45, p (kPa) 0–450), LaTeX axis titles and ticks, arrowheads, grid every 5 ml / 50 kPa, labels on 10/100 steps, no clipping. A (straight line, 400 to 100 kPa) and B (convex curve) clearly differ; line ranges 10–40 ml match the task. No overflow (scrollWidth 390).
-- Solution fractions p_2, p_3 break into aligned rows, fit 390 px. Feedback texts in LaTeX with units. The new task is split into situation and question.
-- Correct option not identifiable by form: feedbacks of similar length; distractors catch the warned mistakes (straight line, constant p, p proportional to V).
-- From text only: the changed paragraph splits in other tasks (diff).
+- Round 1, delta. Opened fy3-9-open-exercises-1280-10 (10-9 solution end), L2-1280-13 and -14 (11-18 task with graph kelvin-points, whole solution).
+- Graph: axis names with units, ticks 100 K and 40 kPa, four distinct points and no fitted line (as intended), grid every 50 K and 20 kPa; the description lists the same points; the answer is not given away.
+- Typography: fractions, units, aligned rows and the answer box read cleanly; set still reads as one.
+- Hash at start and end the same.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

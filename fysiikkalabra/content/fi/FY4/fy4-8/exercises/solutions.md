@@ -22,7 +22,7 @@
 **Annettu:** matka $s = 4{,}0\,\text{m}$, kitkavoima $F_\mu = 35\,\text{N}$ liikettä vastaan
 **Kysytty:** kitkavoiman tekemä työ $W$ etumerkkeineen yksikössä $\text{J}$
 **Periaate:** Kitkavoima osoittaa liikettä vastaan, joten sen liikkeen suuntainen komponentti on $-F_\mu$. Voima, joka vastustaa liikettä, tekee negatiivista työtä.
-**Kaava:** $W = F_\parallel s$, ja $F_\parallel = -F_\mu$, joten $W = -F_\mu s$
+**Kaava:** $W = F s$, missä kitkan liikkeen suuntainen komponentti on $F = -F_\mu$, joten $W = -F_\mu s$
 **Muunnokset:** Voima on newtoneina ja matka metreinä, joten muunnoksia ei tarvita; $1\,\text{N}\cdot\text{m} = 1\,\text{J}$.
 **Sijoitus:** $W = -35\,\text{N} \cdot 4{,}0\,\text{m} = -140\,\text{J}$
 **Vastaus:** $-140\,\text{J}$ eli $-1{,}4 \cdot 10^2\,\text{J}$, kaksi merkitsevää numeroa kuten matkassa $4{,}0\,\text{m}$ ja voimassa $35\,\text{N}$.
@@ -30,21 +30,21 @@
 
 ## fy4-8-L1-04
 **Annettu:** $m = 65\,\text{kg}$, alkunopeus $v_1 = 0$, loppunopeus $v_2 = 8{,}0\,\text{m/s}$
-**Kysytty:** kokonaisvoiman tekemä työ $W_\text{kok}$ yksikössä $\text{kJ}$
+**Kysytty:** kokonaisvoiman tekemä työ $W$ yksikössä $\text{kJ}$
 **Periaate:** Kokonaisvoiman tekemä työ on yhtä suuri kuin liike-energian muutos. Kokonaisvoimaa tai matkaa ei tarvitse tietää, koska alku- ja loppunopeus kertovat liike-energian muutoksen.
-**Kaava:** $W_\text{kok} = \Delta E_\text{k} = \tfrac{1}{2} mv_2^2 - \tfrac{1}{2} mv_1^2$, ja $v_1 = 0$, joten $W_\text{kok} = \tfrac{1}{2} mv_2^2$
+**Kaava:** $W = \Delta E_\text{k} = \tfrac{1}{2} mv_2^2 - \tfrac{1}{2} mv_1^2$, ja $v_1 = 0$, joten $W = \tfrac{1}{2} mv_2^2$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
-**Sijoitus:** $W_\text{kok} = \tfrac12 \cdot 65\,\text{kg} \cdot (8{,}0\,\text{m/s})^2 = 2080\,\text{J}$
+**Sijoitus:** $W = \tfrac12 \cdot 65\,\text{kg} \cdot (8{,}0\,\text{m/s})^2 = 2080\,\text{J}$
 **Vastaus:** $2{,}1\,\text{kJ}$, kaksi merkitsevää numeroa kuten massassa $65\,\text{kg}$ ja nopeudessa $8{,}0\,\text{m/s}$.
 **Järkevyys:** Työ on positiivinen, koska juoksijan liike-energia kasvaa. Arvio: $\tfrac12 \cdot 60 \cdot 64\,\text{J} \approx 1900\,\text{J}$, joten tulos on oikeaa suuruusluokkaa.
 
 ## fy4-8-L1-05
-**Annettu:** mekaaninen energia mäen päällä $E_{\text{mek},1} = 12{,}4\,\text{kJ}$ ja mäen alla $E_{\text{mek},2} = 9{,}8\,\text{kJ}$
-**Kysytty:** kitkan ja ilmanvastuksen yhdessä tekemä työ $W_\text{muut}$ etumerkkeineen yksikössä $\text{kJ}$
+**Annettu:** mekaaninen energia mäen päällä $E_{\text{mek}0} = 12{,}4\,\text{kJ}$ ja mäen alla $E_\text{mek} = 9{,}8\,\text{kJ}$
+**Kysytty:** kitkan ja ilmanvastuksen yhdessä tekemä työ $W$ etumerkkeineen yksikössä $\text{kJ}$
 **Periaate:** Energiaperiaatteen mukaan mekaanisen energian muutos on yhtä suuri kuin muiden voimien kuin painon tekemä työ. Tässä muut voimat ovat kitka ja ilmanvastus; lumen tukivoima ei tee työtä, koska se on kohtisuorassa liikettä vastaan.
-**Kaava:** $E_{\text{mek},1} + W_\text{muut} = E_{\text{mek},2}$, joten $W_\text{muut} = E_{\text{mek},2} - E_{\text{mek},1}$
+**Kaava:** $E_{\text{mek}0} + W = E_\text{mek}$, joten $W = E_\text{mek} - E_{\text{mek}0}$
 **Muunnokset:** Molemmat energiat ovat kilojouleina, joten vastaus saadaan suoraan kilojouleina.
-**Sijoitus:** $W_\text{muut} = 9{,}8\,\text{kJ} - 12{,}4\,\text{kJ} = -2{,}6\,\text{kJ}$
+**Sijoitus:** $W = 9{,}8\,\text{kJ} - 12{,}4\,\text{kJ} = -2{,}6\,\text{kJ}$
 **Vastaus:** $-2{,}6\,\text{kJ}$, kaksi merkitsevää numeroa, koska energiat tunnetaan kymmenesosakilojoulen tarkkuudella ja niiden erotus on $2{,}6\,\text{kJ}$.
 **Järkevyys:** Työ on negatiivinen, koska kitka ja ilmanvastus vastustavat liikettä ja mekaaninen energia pienenee. Hiihtäjä menetti noin viidenneksen mekaanisesta energiastaan, mikä on uskottavaa laskettelussa.
 
@@ -70,11 +70,11 @@
 
 ## fy4-8-L2-03
 **Annettu:** $m = 250\,\text{kg}$, nostokorkeus $h = 18{,}0\,\text{m}$, nopeus vakio, $g = 9{,}81\,\text{m/s}^2$
-**Kysytty:** köyden tekemä työ $W_\text{muut}$ yksikössä $\text{kJ}$
+**Kysytty:** köyden tekemä työ $W$ yksikössä $\text{kJ}$
 **Periaate:** Kuormaan vaikuttavat paino ja köyden jännitysvoima. Köysi on muu voima kuin paino, joten käytetään energiaperiaatetta. Nopeus on vakio, joten liike-energia ei muutu, ja köyden työ kasvattaa vain potentiaalienergiaa. Nollataso valitaan kuorman lähtökorkeudelle.
-**Kaava:** $E_{\text{k},1} + E_{\text{p},1} + W_\text{muut} = E_{\text{k},2} + E_{\text{p},2}$, ja $E_{\text{k},1} = E_{\text{k},2}$ ja $E_{\text{p},1} = 0$, joten $W_\text{muut} = mgh$
+**Kaava:** $E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$, ja $E_{\text{k}0} = E_\text{k}$ ja $E_{\text{p}0} = 0$, joten $W = mgh$
 **Muunnokset:** Suureet ovat SI-yksiköissä. Lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
-**Sijoitus:** $W_\text{muut} = 250\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 18{,}0\,\text{m} = 44\,145\,\text{J} = 44{,}1\,\text{kJ}$
+**Sijoitus:** $W = 250\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 18{,}0\,\text{m} = 44\,145\,\text{J} = 44{,}1\,\text{kJ}$
 **Vastaus:** $44{,}1\,\text{kJ}$, kolme merkitsevää numeroa kuten nostokorkeudessa $18{,}0\,\text{m}$ ja massassa $250\,\text{kg}$.
 **Järkevyys:** Tasaisella nopeudella köyden voima on yhtä suuri kuin paino, noin $2{,}5\,\text{kN}$, ja $2{,}5\,\text{kN} \cdot 18\,\text{m} = 45\,\text{kJ}$. Työ on positiivinen, koska köysi vetää liikkeen suuntaan ja kasvattaa kuorman mekaanista energiaa.
 
@@ -126,17 +126,17 @@
 
 ## fy4-8-L1-07
 **Annettu:** $m = 58{,}0\,\text{kg}$, alkunopeus $v_1 = 7{,}50\,\text{m/s}$, loppunopeus $v_2 = 4{,}50\,\text{m/s}$
-**Kysytty:** kokonaisvoiman tekemä työ $W_\text{kok}$ etumerkkeineen yksikössä $\text{kJ}$
+**Kysytty:** kokonaisvoiman tekemä työ $W$ etumerkkeineen yksikössä $\text{kJ}$
 **Periaate:** Kokonaisvoiman tekemä työ on yhtä suuri kuin liike-energian muutos. Kokonaisvoimaa ja matkaa ei tarvitse tietää, koska alku- ja loppunopeus kertovat liike-energian muutoksen.
-**Kaava:** $W_\text{kok} = \Delta E_\text{k} = \tfrac{1}{2} mv_2^2 - \tfrac{1}{2} mv_1^2$
+**Kaava:** $W = \Delta E_\text{k} = \tfrac{1}{2} mv_2^2 - \tfrac{1}{2} mv_1^2$
 **Muunnokset:** Suureet ovat SI-yksiköissä. Lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
-**Sijoitus:** Ensin $v_2^2 - v_1^2 = (20{,}25 - 56{,}25)\,\text{m}^2/\text{s}^2 = -36{,}0\,\text{m}^2/\text{s}^2$, joten $W_\text{kok} = \tfrac12 \cdot 58{,}0\,\text{kg} \cdot (-36{,}0\,\text{m}^2/\text{s}^2) = -1044\,\text{J} = -1{,}044\,\text{kJ}$
+**Sijoitus:** Ensin $v_2^2 - v_1^2 = (20{,}25 - 56{,}25)\,\text{m}^2/\text{s}^2 = -36{,}0\,\text{m}^2/\text{s}^2$, joten $W = \tfrac12 \cdot 58{,}0\,\text{kg} \cdot (-36{,}0\,\text{m}^2/\text{s}^2) = -1044\,\text{J} = -1{,}044\,\text{kJ}$
 **Vastaus:** $-1{,}04\,\text{kJ}$, kolme merkitsevää numeroa kuten massassa $58{,}0\,\text{kg}$ ja nopeuksissa.
 **Järkevyys:** Työ on negatiivinen, koska kitka ja ilmanvastus vastustavat liikettä ja liike-energia pienenee. Alussa liike-energia on $\tfrac12 \cdot 58 \cdot 7{,}50^2\,\text{J} \approx 1630\,\text{J}$ ja lopussa $\tfrac12 \cdot 58 \cdot 4{,}50^2\,\text{J} \approx 590\,\text{J}$; erotus on noin $-1040\,\text{J}$.
 
 ## fy4-8-L1-08
 **Kysytty:** mikä oppilaan ratkaisussa on virheellistä
-**Periaate:** Voiman tekemä työ on $W = F_\parallel s$, missä $s$ on kuljettu matka voiman suunnassa. Kitkavoima osoittaa koko matkan ajan liikettä vastaan, joten kitkan työ on $-F_\mu s$, jossa $s$ on matka pitkin lankkua. Korkeusero kuuluu painon työhön eli potentiaalienergian muutokseen, ei kitkan työhön.
+**Periaate:** Voiman tekemä työ on $W = F s$, missä $s$ on kuljettu matka voiman suunnassa. Kitkavoima osoittaa koko matkan ajan liikettä vastaan, joten kitkan työ on $-F_\mu s$, jossa $s$ on matka pitkin lankkua. Korkeusero kuuluu painon työhön eli potentiaalienergian muutokseen, ei kitkan työhön.
 **Mallivastaus:** Oppilas on kertonut kitkavoiman lankun päiden korkeuserolla, vaikka kitkan työhön tarvitaan laatikon kulkema matka pitkin lankkua. Kitkavoima toimii koko lankun pituudella, joten oikea työ on $W = -8{,}0\,\text{N} \cdot 5{,}0\,\text{m} = -40\,\text{J}$. Etumerkki $-$ oli oikein, koska kitka vastustaa liikettä; vain matka oli väärä. Oppilaan tulos $-12\,\text{J}$ on liian pieni.
 
 ## fy4-8-L2-05
@@ -152,12 +152,12 @@
 
 ## fy4-8-L2-06
 **Annettu:** $m = 420\,\text{kg}$, $g = 9{,}81\,\text{m/s}^2$; kohdissa A, B, C, D ratamatka $s = 0;\ 55;\ 120;\ 170\,\text{m}$, korkeus $h = 18{,}0;\ 6{,}0;\ 12{,}0;\ 3{,}0\,\text{m}$ ja nopeus $v = 1{,}5;\ 14{,}6;\ 7{,}9;\ 14{,}2\,\text{m/s}$
-**Kysytty:** a) mekaaninen energia $E_\text{mek}$ kohdissa A–D; b) vastusvoimien työ $W_\text{muut}$ kohtien A ja D välillä; c) kohtien väli, jolla keskimääräinen vastusvoima on suurin
-**Periaate:** Mekaaninen energia on $E_\text{mek} = \tfrac{1}{2} mv^2 + mgh$ nollatasosta maanpinnasta. Tukivoima ei tee työtä, joten vaunun mekaanisen energian muutos on vastusvoimien työ, $W_\text{muut} = E_{\text{mek},2} - E_{\text{mek},1}$. Vastusvoima on liikettä vastaan koko matkan, joten sen keskiarvo välillä on $F = -W_\text{muut} : \Delta s$.
-**Kaava:** $E_\text{mek} = \tfrac{1}{2} mv^2 + mgh$ ja $W_\text{muut} = E_{\text{mek,D}} - E_{\text{mek,A}}$
+**Kysytty:** a) mekaaninen energia $E_\text{mek}$ kohdissa A–D; b) vastusvoimien työ $W$ kohtien A ja D välillä; c) kohtien väli, jolla keskimääräinen vastusvoima on suurin
+**Periaate:** Mekaaninen energia on $E_\text{mek} = \tfrac{1}{2} mv^2 + mgh$ nollatasosta maanpinnasta. Tukivoima ei tee työtä, joten vaunun mekaanisen energian muutos on vastusvoimien työ, $W = E_\text{mek} - E_{\text{mek}0}$. Vastusvoima on liikettä vastaan koko matkan, joten sen keskiarvo välillä on $F = -W : \Delta s$.
+**Kaava:** $E_\text{mek} = \tfrac{1}{2} mv^2 + mgh$ ja $W = E_{\text{mek,D}} - E_{\text{mek,A}}$
 **Muunnokset:** Suureet ovat SI-yksiköissä. Lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
-**Sijoitus:** a) Kohdassa A on $\tfrac12 \cdot 420 \cdot 1{,}5^2\,\text{J} + 420 \cdot 9{,}81 \cdot 18{,}0\,\text{J} = 0{,}47\,\text{kJ} + 74{,}16\,\text{kJ} = 74{,}6\,\text{kJ}$. Samoin kohdissa B, C ja D liike-energiat ovat $44{,}8;\ 13{,}1;\ 42{,}3\,\text{kJ}$ ja potentiaalienergiat $24{,}7;\ 49{,}4;\ 12{,}4\,\text{kJ}$, joten $E_\text{mek} = 69{,}5;\ 62{,}5;\ 54{,}7\,\text{kJ}$. b) $W_\text{muut} = 54{,}7\,\text{kJ} - 74{,}6\,\text{kJ} = -19{,}9\,\text{kJ}$. c) Välillä A–B energia pienenee $5{,}15\,\text{kJ}$ matkalla $55\,\text{m}$, joten $F = 5150\,\text{J} : 55\,\text{m} = 94\,\text{N}$. Välillä B–C se pienenee $6{,}94\,\text{kJ}$ matkalla $65\,\text{m}$, joten $F = 107\,\text{N}$. Välillä C–D se pienenee $7{,}84\,\text{kJ}$ matkalla $50\,\text{m}$, joten $F = 157\,\text{N}$.
-**Vastaus:** b) $W_\text{muut} \approx -19{,}9\,\text{kJ}$, kolme merkitsevää numeroa kuten korkeuksissa ja nopeuksissa. c) Keskimääräinen vastusvoima on suurin kohtien C ja D välillä, noin $1{,}6 \cdot 10^2\,\text{N}$.
+**Sijoitus:** a) Kohdassa A on $\tfrac12 \cdot 420 \cdot 1{,}5^2\,\text{J} + 420 \cdot 9{,}81 \cdot 18{,}0\,\text{J} = 0{,}47\,\text{kJ} + 74{,}16\,\text{kJ} = 74{,}6\,\text{kJ}$. Samoin kohdissa B, C ja D liike-energiat ovat $44{,}8;\ 13{,}1;\ 42{,}3\,\text{kJ}$ ja potentiaalienergiat $24{,}7;\ 49{,}4;\ 12{,}4\,\text{kJ}$, joten $E_\text{mek} = 69{,}5;\ 62{,}5;\ 54{,}7\,\text{kJ}$. b) $W = 54{,}7\,\text{kJ} - 74{,}6\,\text{kJ} = -19{,}9\,\text{kJ}$. c) Välillä A–B energia pienenee $5{,}15\,\text{kJ}$ matkalla $55\,\text{m}$, joten $F = 5150\,\text{J} : 55\,\text{m} = 94\,\text{N}$. Välillä B–C se pienenee $6{,}94\,\text{kJ}$ matkalla $65\,\text{m}$, joten $F = 107\,\text{N}$. Välillä C–D se pienenee $7{,}84\,\text{kJ}$ matkalla $50\,\text{m}$, joten $F = 157\,\text{N}$.
+**Vastaus:** b) $W \approx -19{,}9\,\text{kJ}$, kolme merkitsevää numeroa kuten korkeuksissa ja nopeuksissa. c) Keskimääräinen vastusvoima on suurin kohtien C ja D välillä, noin $1{,}6 \cdot 10^2\,\text{N}$.
 **Järkevyys:** Mekaaninen energia pienenee joka välillä, kuten pitääkin, ja kokonaisuudessaan noin $27\,\%$ alkuenergiasta muuttui sisäenergiaksi. Koko radan keskimääräinen vastusvoima on $19\,900\,\text{J} : 170\,\text{m} \approx 117\,\text{N}$, joka on kolmen osavälin keskiarvojen $94\,\text{N}$, $107\,\text{N}$ ja $157\,\text{N}$ välissä, kuten pitää.
 
 ## fy4-8-L2-07
@@ -204,7 +204,7 @@ $v \approx 19{,}8\,\text{m/s}$
 
 2 epätosi. Massa supistuu säilymislaista pois, joten täydempi vaunu on pohjalla yhtä nopea. Sillä on enemmän liike-energiaa, mutta alussa sillä oli myös enemmän potentiaalienergiaa.
 
-3 tosi. Tukivoima on kohtisuorassa liikettä vastaan, joten sen liikkeen suuntainen komponentti on nolla ja $W = F_\parallel s = 0$.
+3 tosi. Tukivoima on kohtisuorassa liikettä vastaan, joten sen liikkeen suuntainen komponentti on nolla ja $W = F s = 0$.
 
 4 epätosi. Huipulla $12\,\text{m}$:n korkeudella liike-energia on alun ja huipun potentiaalienergioiden erotus:
 
@@ -219,23 +219,23 @@ Vaunu pysähtyisi vasta lähtökorkeudella $20\,\text{m}$.
 5 epätosi. Kitka pienentäisi vaunun mekaanista energiaa, mutta yhtä suuri määrä energiaa siirtyisi radan, pyörien ja ilman sisäenergiaksi. Kokonaisenergia säilyy.
 
 ## fy4-8-L2-08
-**Annettu:** kuvaajasta luetut pisteet: $(4{,}0\,\text{m/s};\,4{,}0\,\text{J})$ ja $(6{,}0\,\text{m/s};\,9{,}0\,\text{J})$; $g = 9{,}81\,\text{m/s}^2$; nollataso on maa, joten alussa $E_{\text{p},1} = 0$
+**Annettu:** kuvaajasta luetut pisteet: $(4{,}0\,\text{m/s};\,4{,}0\,\text{J})$ ja $(6{,}0\,\text{m/s};\,9{,}0\,\text{J})$; $g = 9{,}81\,\text{m/s}^2$; nollataso on maa, joten alussa $E_{\text{p}0} = 0$
 **Kysytty:** korkeus $h$ yksikössä $\text{m}$
-**Periaate:** Palloon vaikuttaa vain paino, joten mekaaninen energia säilyy: $E_{\text{k},1} + E_{\text{p},1} = E_{\text{k},2} + E_{\text{p},2}$. Liike-energian väheneminen on yhtä suuri kuin potentiaalienergian kasvu. Pallon massa tarvitaan potentiaalienergiaan, ja se saadaan kuvaajan pisteestä.
-**Kuvaajan lukeminen:** Nopeudella $6{,}0\,\text{m/s}$ liike-energia on $E_{\text{k},1} = 9{,}0\,\text{J}$ ja nopeudella $4{,}0\,\text{m/s}$ se on $E_{\text{k},2} = 4{,}0\,\text{J}$. Massa: $m = \dfrac{2E_{\text{k}}}{v^2} = \dfrac{2 \cdot 4{,}0\,\text{J}}{(4{,}0\,\text{m/s})^2} = 0{,}50\,\text{kg}$.
-**Kaava:** $E_{\text{k},1} = E_{\text{k},2} + mgh$, joten $h = \dfrac{E_{\text{k},1} - E_{\text{k},2}}{mg}$
+**Periaate:** Palloon vaikuttaa vain paino, joten mekaaninen energia säilyy: $E_{\text{p}0} + E_{\text{k}0} = E_\text{p} + E_\text{k}$. Liike-energian väheneminen on yhtä suuri kuin potentiaalienergian kasvu. Pallon massa tarvitaan potentiaalienergiaan, ja se saadaan kuvaajan pisteestä.
+**Kuvaajan lukeminen:** Nopeudella $6{,}0\,\text{m/s}$ liike-energia on $E_{\text{k}0} = 9{,}0\,\text{J}$ ja nopeudella $4{,}0\,\text{m/s}$ se on $E_\text{k} = 4{,}0\,\text{J}$. Massa: $m = \dfrac{2E_{\text{k}}}{v^2} = \dfrac{2 \cdot 4{,}0\,\text{J}}{(4{,}0\,\text{m/s})^2} = 0{,}50\,\text{kg}$.
+**Kaava:** $E_{\text{k}0} = E_\text{k} + mgh$, joten $h = \dfrac{E_{\text{k}0} - E_\text{k}}{mg}$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $h = \dfrac{9{,}0\,\text{J} - 4{,}0\,\text{J}}{0{,}50\,\text{kg} \cdot 9{,}81\,\text{m/s}^2} = \dfrac{5{,}0\,\text{J}}{4{,}905\,\text{N}} = 1{,}02\,\text{m}$
 **Vastaus:** $1{,}0\,\text{m}$, kaksi merkitsevää numeroa kuten kuvaajasta luetuissa arvoissa ja nopeuksissa.
 **Järkevyys:** Massa supistuu pois: $h = \dfrac{v_1^2 - v_2^2}{2g} = \dfrac{(6{,}0\,\text{m/s})^2 - (4{,}0\,\text{m/s})^2}{2 \cdot 9{,}81\,\text{m/s}^2} = 1{,}02\,\text{m}$, sama tulos. Koko nousu nopeudesta $6{,}0\,\text{m/s}$ pysähtymiseen olisi $1{,}8\,\text{m}$, joten $1{,}0\,\text{m}$ on sen osa.
 
 ## fy4-8-L2-09
-**Annettu:** kuvasta luetut energiat: alussa $E_{\text{k},1} = 0$ ja $E_{\text{p},1} = 40\,\text{J}$, lopussa $E_{\text{k},2} = 25\,\text{J}$ ja $E_{\text{p},2} = 0$; matka $s = 6{,}0\,\text{m}$
+**Annettu:** kuvasta luetut energiat: alussa $E_{\text{k}0} = 0$ ja $E_{\text{p}0} = 40\,\text{J}$, lopussa $E_\text{k} = 25\,\text{J}$ ja $E_\text{p} = 0$; matka $s = 6{,}0\,\text{m}$
 **Kysytty:** kitkavoiman suuruus $F_\mu$ yksikössä $\text{N}$
-**Periaate:** Tukivoima on kohtisuorassa liikettä vastaan eikä tee työtä, joten muu voima on kitka. Energiaperiaatteen mukaan $E_{\text{k},1} + E_{\text{p},1} + W_\text{muut} = E_{\text{k},2} + E_{\text{p},2}$. Kitka osoittaa liikettä vastaan, joten sen työ on negatiivinen, $W_\text{muut} = -F_\mu s$.
+**Periaate:** Tukivoima on kohtisuorassa liikettä vastaan eikä tee työtä, joten muu voima on kitka. Energiaperiaatteen mukaan $E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$. Kitka osoittaa liikettä vastaan, joten sen työ on negatiivinen, $W = -F_\mu s$.
 **Kuvaajan lukeminen:** Vihreä palkki ulottuu asteikon $40\,\text{J}$:n viivalle ja sininen palkki $25\,\text{J}$:n viivalle. Alussa liike-energiaa ei ole, ja lopussa potentiaalienergiaa ei ole, joten kumpikin on nolla.
-**Kaava:** $W_\text{muut} = (E_{\text{k},2} + E_{\text{p},2}) - (E_{\text{k},1} + E_{\text{p},1})$ ja $W_\text{muut} = -F_\mu s$, joten $F_\mu = \dfrac{(E_{\text{k},1} + E_{\text{p},1}) - (E_{\text{k},2} + E_{\text{p},2})}{s}$
+**Kaava:** $W = (E_\text{p} + E_\text{k}) - (E_{\text{p}0} + E_{\text{k}0})$ ja $W = -F_\mu s$, joten $F_\mu = \dfrac{(E_{\text{p}0} + E_{\text{k}0}) - (E_\text{p} + E_\text{k})}{s}$
 **Muunnokset:** $1\,\text{J} = 1\,\text{N}\cdot\text{m}$, joten jouleista ja metreistä tulee suoraan newtoneja.
-**Sijoitus:** $W_\text{muut} = 25\,\text{J} - 40\,\text{J} = -15\,\text{J}$, ja $F_\mu = \dfrac{15\,\text{J}}{6{,}0\,\text{m}} = 2{,}5\,\text{N}$
+**Sijoitus:** $W = 25\,\text{J} - 40\,\text{J} = -15\,\text{J}$, ja $F_\mu = \dfrac{15\,\text{J}}{6{,}0\,\text{m}} = 2{,}5\,\text{N}$
 **Vastaus:** $2{,}5\,\text{N}$, kaksi merkitsevää numeroa kuten matkassa $6{,}0\,\text{m}$.
 **Järkevyys:** Mekaaninen energia väheni $15\,\text{J}$, mikä on erotus palkkien $40\,\text{J}$ ja $25\,\text{J}$ välillä, ja $2{,}5\,\text{N} \cdot 6{,}0\,\text{m} = 15\,\text{J}$. Kitkan työ on negatiivinen, koska kitka vastustaa liikettä.

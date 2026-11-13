@@ -119,12 +119,12 @@ $$\begin{aligned} x &= 0 + 1{,}5\,\text{m/s} \cdot 33{,}33\ldots\,\text{s} \\ &=
 
 ## fy4-1-L3-03
 **Annettu:** $(t, x)$-kuvaajan osat: $x = 0$ hetkellä $0\,\text{s}$, $x = 30\,\text{m}$ hetkellä $10\,\text{s}$, $x = 30\,\text{m}$ hetkellä $20\,\text{s}$ ja $x = 10\,\text{m}$ hetkellä $40\,\text{s}$
-**Kysytty:** keskinopeus $v_\text{ka}$ koko $40\,\text{s}$:n ajalta etumerkkeineen yksikössä $\text{m/s}$
+**Kysytty:** keskinopeus $v_\text{k}$ koko $40\,\text{s}$:n ajalta etumerkkeineen yksikössä $\text{m/s}$
 **Periaate:** Keskinopeus on koko siirtymä jaettuna koko ajalla. Siirtymään vaikuttavat vain alku- ja loppupaikka, joten välivaiheet eli eteneminen, pysähdys ja paluu eivät vaikuta laskuun.
 **Kuvaajan lukeminen:** Luetaan annetuista pisteistä alkupiste $(0\,\text{s};\, 0\,\text{m})$ ja loppupiste $(40\,\text{s};\, 10\,\text{m})$. Välillä $10\text{–}20\,\text{s}$ kuvaaja on vaakasuora, koska robotti seisoo, eikä sen pisteitä tarvita. Keskinopeus on näiden kahden pisteen välisen suoran kulmakerroin.
-**Kaava:** $v_\text{ka} = \dfrac{\Delta x}{\Delta t} = \dfrac{x_2 - x_1}{t_2 - t_1}$
+**Kaava:** $v_\text{k} = \dfrac{\Delta x}{\Delta t} = \dfrac{x_2 - x_1}{t_2 - t_1}$
 **Muunnokset:** Paikat ovat metreinä ja ajat sekunteina, joten muunnoksia ei tarvita.
-**Sijoitus:** $v_\text{ka} = \dfrac{10\,\text{m} - 0\,\text{m}}{40\,\text{s} - 0\,\text{s}} = 0{,}25\,\text{m/s}$
+**Sijoitus:** $v_\text{k} = \dfrac{10\,\text{m} - 0\,\text{m}}{40\,\text{s} - 0\,\text{s}} = 0{,}25\,\text{m/s}$
 **Vastaus:** $0{,}25\,\text{m/s}$, kaksi merkitsevää numeroa, koska loppupaikka $10\,\text{m}$ ja aika $40\,\text{s}$ on annettu kahdella numerolla.
 **Järkevyys:** Robotti kulki $30\,\text{m}$ eteenpäin ja $20\,\text{m}$ takaisin, joten siirtymä on $30\,\text{m} - 20\,\text{m} = 10\,\text{m}$ vaikka matka oli $50\,\text{m}$. Etumerkki on positiivinen, koska robotti on lopussa suuremmassa $x$:ssä kuin alussa. Osanopeuksien $3{,}0\,\text{m/s}$, $0$ ja $-1{,}0\,\text{m/s}$ keskiarvo $\dfrac{3{,}0 + 0 - 1{,}0}{3} = 0{,}67\,\text{m/s}$ olisi väärä, koska osavälit eivät ole yhtä pitkiä.
 

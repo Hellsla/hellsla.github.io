@@ -1,15 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 77b4b5a62a82d3a0
-ROUND: 2
+CONTENT-HASH: d0fce7c73b66e64e
+SCOPE: delta added-exercise from bd98847c91c69f13 base 5453544b2abc
 
 ## Blocking
-(none) The only change is the Arvio sentence in fy3-8-L2-08: it now reads "... vaikka sen alkupituus on vain puolet. Kolminkertainen muutos saataisiin vain, jos sauvat olisivat yhtä pitkiä." which fixes my round-1 wording note and is fluent.
 
 ## Polish
-- [Minor] Correct option is slightly longer than the others; difference is small, no change needed.
+- [Minor] fy3-8-L1-09 "Vihje" — the hint names the MAFY table; fine as a closed box, but "mafytaulukot.fi" is plain text, not a link (same as the task text; acceptable).
 
 ## Checked
-- Renders (own Playwright, 390 px, preview/fy3-8.html): L2-08 with the correct option picked, feedback unhidden, solution open; the new Arvio paragraph and the ratio fraction fit, no katex overflow, scrollWidth 390.
+- Round 1, delta. Opened fy3-8-open-exercises-1280-9 and -10 (10-9 task, closed "Vihje" box, whole solution) and L2-1280-13 and -14 (10-18 task with graph length-graph, whole solution).
+- Graph: axes with quantity and unit, ticks every 10 °C and 0,5 mm, grid, two end points distinct from the line, start (20 °C; 0 mm) and end (70 °C; 3,0 mm) readable on grid crossings; the description gives the same values and not the answer.
+- Typography: units upright with thin space, decimal comma, fractions and aligned rows read well; the answer is set apart; the reasonableness block is its own panel.
+- Set still reads as one (same solution structure and headings).
+- Hash at start and end the same.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 4

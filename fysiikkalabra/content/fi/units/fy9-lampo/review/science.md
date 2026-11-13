@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 54fa624a843aa99a
-Delta review (solution practice, 2026-11-12) of the version passed before.
+CONTENT-HASH: 4217f2037e77873f
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 54fa624a843aa99a.
 
 ## Blocking
 (none)
@@ -9,4 +9,6 @@ Delta review (solution practice, 2026-11-12) of the version passed before.
 (none)
 
 ## Checked
-s2 c (osuus $= P/(k_\text{h}\Delta T)$ = 35,8 %), s3 c–d ($P/(P - P_\text{h})$ ≈ 1,13), s6 a–b (symbol $k$ = 85 %; 31,5 K, 133,7 K) and the two inquiry solutions ($k_\text{h}$: 0,886 K; $m = \ell p t/s$ = 3,88 kg) recomputed. The fi, fi-easy and en diffs carry identical mathematics (every changed formula compared token by token); answers.py run; `units.py check` passes.
+- inquiry: $\Delta T = k_\text{h}\Delta T_\text{ero}\,t/C = 0.886$ K. Snow: $m = \ell p t/s = 3.88$ kg.
+- s2 c: 35.8 %. s3 d: $P/(P-P_\text{h}) = 1.13$. s6: with $k = 0.85$, $\Delta T = 31.5$ K and 133.7 K. $k$ is not used for anything else within s6.
+Every number in the changed lines was recomputed with an independent script (scratchpad fy9merge/sci_fi.py); `units.py hash` gave the same value at the start and the end. LaTeX in all added lines has balanced `$` and braces.

@@ -1,10 +1,12 @@
 VERDICT: PASS
 CONTENT-HASH: c47364fb7325d02e
-
-Delta review (solution practice, 2026-11-12) of the version passed before.
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at c47364fb7325d02e.
 
 ## Blocking
-None. Built fy9-harjoituskoe (fi) with ?ratkaisut=1, every details element opened, at 390 and 1280 px. No .katex-error, no script errors; the changed Sijoitus, Kaava and Vastaus lines render with upright subscripts and units, thin spaces and \cdot (no x, no \times); decimal comma in fi and fi-easy, decimal point in en; the new symbol definitions ("missä ...") read naturally and the sentences are in the right language.
+(none)
 
 ## Polish
-1. Page-level horizontal overflow at 390 px when all details are open (none in this unit): long inline-math Sijoitus or answer lines in .reveal or .answer blocks do not wrap or scroll. Verified in the previous version (git 761b6673) for energia, voimat, sahkokentta and mittaaminen, so it is not a regression of this change (mittaaminen is about 40 px wider now). Fix when convenient: break such a substitution into a display line (\begin{aligned}) or let .reveal/.answer have overflow-x:auto.
+- fy9-harjoituskoe/sovella/solutions.md (organ pipe b) Sijoitus uses v = 343,2 m/s, which Annettu does not list (only v' and f_1); add it to Annettu.
+
+## Checked
+Diff only, read in full. `check_latex.py` on the unit: all fragments parse in KaTeX. Seven formula lines (relative change epsilon, df/f, Ohm's-law step, a and b in T^2 = am + b, m_j = b/a): consistent with the unit text symbols. No contradiction between #522 formula names or notation and the #523 solutions found; no duplicated derivation; Finnish and typography (thin spaces, decimal comma, \cdot, colon division, LaTeX units) in the changed lines are correct. No captures made: the changes are text-only solution lines, no figure or layout changed.

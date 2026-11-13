@@ -128,8 +128,8 @@ Teho ei kerro, kuinka paljon energiaa laite yhteensä käyttää. Sen kertoo vas
 
 ## Kaava: Teho
 Teho on muuntuneen tai siirtyneen energian ja siihen kuluneen ajan osamäärä. Energia siis jaetaan ajalla:
-```latex
-P = \frac{\Delta E}{\Delta t}
+```kaavat
+teho :: P = \frac{\Delta E}{\Delta t}
 ```
 missä $P$ on teho (W), $\Delta E$ on energia, joka on siirtynyt tai muuntunut tarkasteltavana aikana (J), ja $\Delta t$ on tämän aikavälin pituus (s). Sanoin: teho on energia jaettuna ajalla. Jos energiaa muuntuu epätasaisesti, kaava antaa aikavälin $\Delta t$ keskitehon. Kun laite käy tasaisesti käynnistämisestä alkaen, $\Delta E$ on koko muuntunut energia $E$. Silloin $\Delta t$ on koko aika $t$, joten $P = E : t$. Kaavasta ratkaistaan energia ja aika:
 ```latex

@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 4ae8996762a31242
+CONTENT-HASH: 3dbd4a28b1f97ddd
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- none
+1. fy4-1 lesson, formula table: v_k named 'keskinopeus'/'average velocity'; upright subscript k renders correctly at 390 and 1280 px, no overflow.
 
-## Checked
-- Light delta review: diff read; changed passages opened at 360-390 px (fy4-1-example-390-2: Tulos step; theory paragraph text checked in source): KaTeX renders, no inline formula wraps, no clipping, no plain number+unit.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+Checked: preview at 390 and 1280 px, formula tables, opened solutions; no horizontal overflow, no KaTeX errors, old symbols gone.

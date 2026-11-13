@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: e101465bc2fd382b
-Mode: delta
-Round: 1
+CONTENT-HASH: 951a60bfd236ffed
+Mode: delta, round 2
 
 ## Blocking
 (none)
 
 ## Polish
-[Minor] The student's lines 3 in task and solution show the substitution without units (base units stated in feedback); acceptable.
+- [Minor] 7-18 solution — "Q_given" is unusual beside the glossary's Q; write Q with "the heat given off" in words.
 
 ## Checked
-- New task fy3-6-L2-08 at 390 px (en), own render of preview/en/fy3-6.html: task text, every option and its feedback open, solution card open; page and card have no horizontal overflow (scrollWidth equals width).
-- Delta covers only the new task and its solution; surrounding exercises were not changed.
+- The diff is empty (0 changed lines): the content hash equals the version I passed in round 1 (951a60bfd236ffed), so that report's captures (7-9, 7-18) stand. A contact sheet was not reopened, as nothing changed.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

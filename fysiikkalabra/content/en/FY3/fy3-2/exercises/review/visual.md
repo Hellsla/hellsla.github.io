@@ -1,19 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: e50f42266a867455
-Mode: delta (exercises, en), round 1. Changed: new task, paragraph splits, solutions.md.
+CONTENT-HASH: dea61a120921a332
+Mode: delta, round 2
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy3-2-L2-08 reasons — one option speaks of "the triangle in the force graph" but the task shows no graph; say "a force–stretch graph drawn from the values" in the task or the option.
+- [Minor] 2-18 figure — F-s graph is orange while force is red project-wide; teacher-approved figure, only noted.
 
 ## Checked
-- Rendered preview/en/fy3-2.html at 390 px with my own script (scratch trvis3x): fy3-2-L2-08 (rubber-band work, choice then reason, all feedback open, model solution).
-- The two split paragraphs read as situation, then question; fractions, units and thin spaces render.
-- No red KaTeX source, no horizontal overflow; feedback and solution open inside the task card.
-- English fluent, terms consistent, units and numbers set as maths.
-- No figures changed in the diff.
+- fy3-2-open-exercises-L2-1280-10: 2-18 card, graph and the start of the solution. The wording change in Reasonableness ("6 m and 4 m" instead of "vs") reads correctly, and the layout is intact.
+- The rest of the set is unchanged and was not repeated.
 
 ## Scores
-illustrations 4 · typography 5 · English 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4
