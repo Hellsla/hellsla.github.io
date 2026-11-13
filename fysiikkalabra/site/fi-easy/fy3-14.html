@@ -231,8 +231,7 @@
 <p>Ennen kuin lasket lämpötilan, ratkaise siis, mitä olomuotoja lopputilassa on.</p>
 <p>Jos $Q_\text{v} \ge Q_\text{j}$, kaikki jää sulaa. Silloin veden luovuttama lämpö kuluu jään lämmittämiseen ja sulattamiseen. Loput lämmittää koko vesimäärän $m_\text{v} + m_\text{j}$ lämpötilaan $T$. Energiatase on</p>
 <p><span class="mj-wide">$$\begin{aligned}
-c_\text{v} m_\text{v} (T_\text{v} - T) &= c_\text{j} m_\text{j} \Delta T_\text{j} + s m_\text{j} \\
-&\qquad + c_\text{v} m_\text{j} T
+c_\text{v} m_\text{v} (T_\text{v} - T) &= c_\text{j} m_\text{j} \Delta T_\text{j} + s m_\text{j} + c_\text{v} m_\text{j} T 
 \end{aligned}$$</span><span class="mj-narrow">$$\begin{aligned}
 &c_\text{v} m_\text{v} (T_\text{v} - T) \\
 \quad &= c_\text{j} m_\text{j} \Delta T_\text{j} + s m_\text{j} \\
@@ -307,7 +306,19 @@ T &= \frac{Q_\text{v} - Q_\text{j}}{c_\text{v} (m_\text{v} + m_\text{j})}
 <div class="eq-chain"><div class="eq-row"><span class="eq-l">$\Delta T_\text{j}$</span><span class="eq-r">$= 0\,{}^\circ\text{C} - (-8{,}0\,{}^\circ\text{C})$</span></div><div class="eq-row"><span class="eq-l"></span><span class="eq-r">$= 8{,}0\,\text{K}$</span></div></div>
 
 <p>Sulamislämpö on $334\,\tfrac{\text{kJ}}{\text{kg}} = 334\,000\,\tfrac{\text{J}}{\text{kg}}$.</p></div><div class="step" data-step="5"><p class="step-label">Vaihe 5/7</p><p><strong>Sijoitus.</strong> Lasketaan lämpömäärät erikseen ja sitten lämpötila:</p>
-<p>$$\begin{aligned}
+<p><span class="mj-wide">$$\begin{aligned}
+Q_\text{v} &= c_\text{v} m_\text{v} \Delta T_\text{v} \\
+&= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}250\,\text{kg} \cdot 24{,}0\,\text{K} \\
+&= 25\,140\,\text{J} \\[6pt]
+Q_\text{j} &= c_\text{j} m_\text{j} \Delta T_\text{j} + s m_\text{j} \\
+&= 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}050\,\text{kg} \cdot 8{,}0\,\text{K} + 334\,000\,\tfrac{\text{J}}{\text{kg}} \cdot 0{,}050\,\text{kg} \\
+&= 840\,\text{J} + 16\,700\,\text{J} \\
+&= 17\,540\,\text{J} \\[6pt]
+T &= \frac{Q_\text{v} - Q_\text{j}}{c_\text{v} (m_\text{v} + m_\text{j})} \\
+&= \frac{25\,140\,\text{J} - 17\,540\,\text{J}}{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}300\,\text{kg}} \\
+&= \frac{7600\,\text{J}}{1257\,\tfrac{\text{J}}{\text{K}}} \\
+&= 6{,}05\,{}^\circ\text{C}
+\end{aligned}$$</span><span class="mj-narrow">$$\begin{aligned}
 Q_\text{v} &= c_\text{v} m_\text{v} \Delta T_\text{v} \\
 &= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}250\,\text{kg} \cdot 24{,}0\,\text{K} \\
 &= 25\,140\,\text{J} \\[6pt]
@@ -320,7 +331,7 @@ T &= \frac{Q_\text{v} - Q_\text{j}}{c_\text{v} (m_\text{v} + m_\text{j})} \\
 &= \frac{25\,140\,\text{J} - 17\,540\,\text{J}}{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}300\,\text{kg}} \\
 &= \frac{7600\,\text{J}}{1257\,\tfrac{\text{J}}{\text{K}}} \\
 &= 6{,}05\,{}^\circ\text{C}
-\end{aligned}$$</p></div><div class="step" data-step="6"><p class="step-label">Vaihe 6/7</p><p><strong>Tulos.</strong> Koska </p>
+\end{aligned}$$</span></p></div><div class="step" data-step="6"><p class="step-label">Vaihe 6/7</p><p><strong>Tulos.</strong> Koska </p>
 <div class="eq-chain"><div class="eq-row"><span class="eq-l">$Q_\text{v}$</span><span class="eq-r">$= 25\,140\,\text{J}$</span></div><div class="eq-row"><span class="eq-l"></span><span class="eq-r">$> Q_\text{j}$</span></div><div class="eq-row"><span class="eq-l"></span><span class="eq-r">$= 17\,540\,\text{J}$</span></div></div>
 
 <p>kaikki jää sulaa. Lopputilassa on $0{,}300\,\text{kg}$ vettä lämpötilassa $6{,}0\,{}^\circ\text{C}$. Vastaus annetaan kahdella merkitsevällä numerolla. Jään massa $0{,}050\,\text{kg}$ tunnetaan vain kahden numeron tarkkuudella. Se määrää lämpömäärän $Q_\text{j} = 17\,540\,\text{J}$ tarkkuuden (sadat joulet). Erotus $Q_\text{v} - Q_\text{j} = 7600\,\text{J}$ on siis kahden numeron luku.</p></div><div class="step" data-step="7"><p class="step-label">Vaihe 7/7</p><p><strong>Järkevyys.</strong> Tulos on alkulämpötilojen $-8{,}0\,{}^\circ\text{C}$ ja $24{,}0\,{}^\circ\text{C}$ välissä. Se on kuitenkin niiden puolivälin $8{,}0\,{}^\circ\text{C}$ alapuolella, vaikka vettä on viisinkertainen määrä. Jään sulaminen painaa tulosta alas. Jos sulamislämpö unohdettaisiin, tulokseksi tulisi noin $19\,{}^\circ\text{C}$. Sulaminen vie siis kaksi kolmasosaa veden luovuttamasta lämmöstä ($16{,}7\,\text{kJ}$ lämmöstä $25{,}1\,\text{kJ}$). Energiatase täsmää. Vesi luovuttaa yhteensä $4190 \cdot 0{,}250 \cdot (24{,}0 - 6{,}05) \approx 18{,}8\,\text{kJ}$. Jää vastaanottaa $840 + 16\,700 + 4190 \cdot 0{,}050 \cdot 6{,}05 \approx 18{,}8\,\text{kJ}$. Kokeile samoja arvoja simulaatiossa.</p></div><p class="step-controls"><button type="button" class="next-step">Näytä seuraava vaihe</button> <button type="button" class="all-steps">Näytä kaikki</button></p></div></div></div><details class="opt" data-type="choice"><summary><span class="opt-tag">Valinnainen</span> Esimerkki 2: Etsi virhe</summary><div class="activity act-choice" id="virhe" data-type="choice"><fieldset class="choice list"><legend>Opiskelija laskee, mihin lämpötilaan asettuvat $0{,}40\,\text{kg}$ vettä ($15\,{}^\circ\text{C}$) ja $0{,}30\,\text{kg}$ jäätä ($0\,{}^\circ\text{C}$) eristetyssä astiassa. Hän olettaa, että kaikki jää sulaa, ja kirjoittaa</p>

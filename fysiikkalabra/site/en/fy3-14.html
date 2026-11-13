@@ -209,8 +209,7 @@
 <p>So before calculating the temperature, you must work out which phases are present in the end state.</p>
 <p>If $Q_\text{w} \ge Q_\text{i}$, all the ice melts. The heat given out by the water is then used to warm and melt the ice, and the rest warms the whole amount of water $m_\text{w} + m_\text{i}$ to the temperature $T$. The energy balance is</p>
 <p><span class="mj-wide">$$\begin{aligned}
-c_\text{w} m_\text{w} (T_\text{w} - T) &= c_\text{i} m_\text{i} \Delta T_\text{i} + s m_\text{i} \\
-&\qquad + c_\text{w} m_\text{i} T
+c_\text{w} m_\text{w} (T_\text{w} - T) &= c_\text{i} m_\text{i} \Delta T_\text{i} + s m_\text{i} + c_\text{w} m_\text{i} T 
 \end{aligned}$$</span><span class="mj-narrow">$$\begin{aligned}
 &c_\text{w} m_\text{w} (T_\text{w} - T) \\
 \quad &= c_\text{i} m_\text{i} \Delta T_\text{i} + s m_\text{i} \\
@@ -285,7 +284,19 @@ T &= \frac{Q_\text{w} - Q_\text{i}}{c_\text{w} (m_\text{w} + m_\text{i})}
 <div class="eq-chain"><div class="eq-row"><span class="eq-l">$\Delta T_\text{i}$</span><span class="eq-r">$= 0\,{}^\circ\text{C} - (-8.0\,{}^\circ\text{C})$</span></div><div class="eq-row"><span class="eq-l"></span><span class="eq-r">$= 8.0\,\text{K}$</span></div></div>
 
 <p>The latent heat of fusion is $334\,\tfrac{\text{kJ}}{\text{kg}} = 334\,000\,\tfrac{\text{J}}{\text{kg}}$.</p></div><div class="step" data-step="5"><p class="step-label">Step 5/7</p><p><strong>Substitution.</strong> We calculate the quantities of heat separately and then the temperature:</p>
-<p>$$\begin{aligned}
+<p><span class="mj-wide">$$\begin{aligned}
+Q_\text{w} &= c_\text{w} m_\text{w} \Delta T_\text{w} \\
+&= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.250\,\text{kg} \cdot 24.0\,\text{K} \\
+&= 25\,140\,\text{J} \\[6pt]
+Q_\text{i} &= c_\text{i} m_\text{i} \Delta T_\text{i} + s m_\text{i} \\
+&= 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.050\,\text{kg} \cdot 8.0\,\text{K} + 334\,000\,\tfrac{\text{J}}{\text{kg}} \cdot 0.050\,\text{kg} \\
+&= 840\,\text{J} + 16\,700\,\text{J} \\
+&= 17\,540\,\text{J} \\[6pt]
+T &= \frac{Q_\text{w} - Q_\text{i}}{c_\text{w} (m_\text{w} + m_\text{i})} \\
+&= \frac{25\,140\,\text{J} - 17\,540\,\text{J}}{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.300\,\text{kg}} \\
+&= \frac{7600\,\text{J}}{1257\,\tfrac{\text{J}}{\text{K}}} \\
+&= 6.05\,{}^\circ\text{C}
+\end{aligned}$$</span><span class="mj-narrow">$$\begin{aligned}
 Q_\text{w} &= c_\text{w} m_\text{w} \Delta T_\text{w} \\
 &= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.250\,\text{kg} \cdot 24.0\,\text{K} \\
 &= 25\,140\,\text{J} \\[6pt]
@@ -298,7 +309,7 @@ T &= \frac{Q_\text{w} - Q_\text{i}}{c_\text{w} (m_\text{w} + m_\text{i})} \\
 &= \frac{25\,140\,\text{J} - 17\,540\,\text{J}}{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.300\,\text{kg}} \\
 &= \frac{7600\,\text{J}}{1257\,\tfrac{\text{J}}{\text{K}}} \\
 &= 6.05\,{}^\circ\text{C}
-\end{aligned}$$</p></div><div class="step" data-step="6"><p class="step-label">Step 6/7</p><p><strong>Result.</strong> Because </p>
+\end{aligned}$$</span></p></div><div class="step" data-step="6"><p class="step-label">Step 6/7</p><p><strong>Result.</strong> Because </p>
 <div class="eq-chain"><div class="eq-row"><span class="eq-l">$Q_\text{w}$</span><span class="eq-r">$= 25\,140\,\text{J}$</span></div><div class="eq-row"><span class="eq-l"></span><span class="eq-r">$> Q_\text{i}$</span></div><div class="eq-row"><span class="eq-l"></span><span class="eq-r">$= 17\,540\,\text{J}$</span></div></div>
 
 <p>all the ice melts. The final state is $0.300\,\text{kg}$ of water at a temperature of $6.0\,{}^\circ\text{C}$. The answer is given to two significant figures, because the mass of the ice, $0.050\,\text{kg}$, is known only to two figures and it determines the precision of the quantity of heat $Q_\text{i} = 17\,540\,\text{J}$ (hundreds of joules); the difference $Q_\text{w} - Q_\text{i} = 7600\,\text{J}$ is therefore a two-figure number.</p></div><div class="step" data-step="7"><p class="step-label">Step 7/7</p><p><strong>Reasonableness.</strong> The result lies between the initial temperatures $-8.0\,{}^\circ\text{C}$ and $24.0\,{}^\circ\text{C}$, but below $8.0\,{}^\circ\text{C}$, the midpoint of the two, even though there is five times as much water: the melting of the ice pulls the result down. If the latent heat were forgotten, the result would be about $19\,{}^\circ\text{C}$, so melting takes two thirds of the heat given out by the water ($16.7\,\text{kJ}$ of $25.1\,\text{kJ}$). The energy balance checks out: the water gives out a total of $4190 \cdot 0.250 \cdot (24.0 - 6.05) \approx 18.8\,\text{kJ}$ and the ice takes in $840 + 16\,700 + 4190 \cdot 0.050 \cdot 6.05 \approx 18.8\,\text{kJ}$. Try the same values in the simulation.</p></div><p class="step-controls"><button type="button" class="next-step">Show the next step</button> <button type="button" class="all-steps">Show all</button></p></div></div></div><details class="opt" data-type="choice"><summary><span class="opt-tag">Optional</span> Example 2: Find the error</summary><div class="activity act-choice" id="virhe" data-type="choice"><fieldset class="choice list"><legend>A student calculates the temperature at which $0.40\,\text{kg}$ of water ($15\,{}^\circ\text{C}$) and $0.30\,\text{kg}$ of ice ($0\,{}^\circ\text{C}$) settle in an insulated container. The student assumes that all the ice melts and writes</p>

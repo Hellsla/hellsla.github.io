@@ -259,7 +259,18 @@ U_\text{s} &= \frac{E_{\text{k,max}}}{e}
 <div class="eq-chain"><div class="eq-row"><span class="eq-l">$\lambda$</span><span class="eq-r">$= 405\ \text{nm}$</span></div><div class="eq-row"><span class="eq-l"></span><span class="eq-r">$= 405 \cdot 10^{-9}\ \text{m}$</span></div><div class="eq-row"><span class="eq-l"></span><span class="eq-r">$= 4.05 \cdot 10^{-7}\ \text{m}$</span></div></div>
 
 <p>From joules to electronvolts we divide by $1.602 \cdot 10^{-19}\ \text{J/eV}$, because ${1\ \text{eV} = 1.602 \cdot 10^{-19}\ \text{J}}$.</p></div><div class="step" data-step="5"><p class="step-label">Step 5/7</p><p><strong>Substitution:</strong> First the photon energy, then the difference:</p>
-<p>$$\begin{aligned}
+<p><span class="mj-wide">$$\begin{aligned}
+hc &= 6.626 \cdot 10^{-34}\ \text{J} \cdot \text{s} \cdot 2.998 \cdot 10^{8}\ \text{m/s} \\
+&= 1.9865 \cdot 10^{-25}\ \text{J} \cdot \text{m} \\[6pt]
+E &= \frac{hc}{\lambda} \\
+&= \frac{1.9865 \cdot 10^{-25}\ \text{J} \cdot \text{m}}{4.05 \cdot 10^{-7}\ \text{m}} \\
+&= 4.9049 \cdot 10^{-19}\ \text{J} \\
+&= \frac{4.9049 \cdot 10^{-19}\ \text{J}}{1.602 \cdot 10^{-19}\ \text{J/eV}} \\
+&= 3.062\ \text{eV} \\[6pt]
+E_{\text{k,max}} &= 3.062\ \text{eV} - 2.29\ \text{eV} \\
+&= 0.772\ \text{eV} \\[6pt]
+U_\text{s} &= \frac{0.772\ \text{eV}}{e} = 0.772\ \text{V}
+\end{aligned}$$</span><span class="mj-narrow">$$\begin{aligned}
 hc &= 6.626 \cdot 10^{-34}\ \text{J} \cdot \text{s} \\
 &\quad \cdot 2.998 \cdot 10^{8}\ \text{m/s} \\
 &= 1.9865 \cdot 10^{-25}\ \text{J} \cdot \text{m} \\[6pt]
@@ -271,7 +282,7 @@ E &= \frac{hc}{\lambda} \\
 E_{\text{k,max}} &= 3.062\ \text{eV} - 2.29\ \text{eV} \\
 &= 0.772\ \text{eV} \\[6pt]
 U_\text{s} &= \frac{0.772\ \text{eV}}{e} = 0.772\ \text{V}
-\end{aligned}$$</p></div><div class="step" data-step="6"><p class="step-label">Step 6/7</p><p><strong>Answer:</strong> One photon has the energy ${E \approx 4.90 \cdot 10^{-19}\ \text{J}}$, which is ${E \approx 3.06\ \text{eV}}$. Both have three significant figures, as the wavelength has. The largest kinetic energy of the electrons is $E_{\text{k,max}} \approx 0.77\ \text{eV}$, and the stopping voltage is $U_\text{s} \approx 0.77\ \text{V}$. These are given to two decimal places of an electronvolt, because the work function $2.29\ \text{eV}$ is known to two decimal places.</p></div><div class="step" data-step="7"><p class="step-label">Step 7/7</p><p><strong>Reasonableness:</strong> A photon of violet light should have about $3\ \text{eV}$, near the top of the visible range $1.6\text{–}3.3\ \text{eV}$, and $3.06\ \text{eV}$ fits. The photon energy is larger than the work function, so electrons really do leave: the threshold wavelength of potassium is $hc/W \approx 541\ \text{nm}$, longer than $405\ \text{nm}$. Check: </p>
+\end{aligned}$$</span></p></div><div class="step" data-step="6"><p class="step-label">Step 6/7</p><p><strong>Answer:</strong> One photon has the energy ${E \approx 4.90 \cdot 10^{-19}\ \text{J}}$, which is ${E \approx 3.06\ \text{eV}}$. Both have three significant figures, as the wavelength has. The largest kinetic energy of the electrons is $E_{\text{k,max}} \approx 0.77\ \text{eV}$, and the stopping voltage is $U_\text{s} \approx 0.77\ \text{V}$. These are given to two decimal places of an electronvolt, because the work function $2.29\ \text{eV}$ is known to two decimal places.</p></div><div class="step" data-step="7"><p class="step-label">Step 7/7</p><p><strong>Reasonableness:</strong> A photon of violet light should have about $3\ \text{eV}$, near the top of the visible range $1.6\text{–}3.3\ \text{eV}$, and $3.06\ \text{eV}$ fits. The photon energy is larger than the work function, so electrons really do leave: the threshold wavelength of potassium is $hc/W \approx 541\ \text{nm}$, longer than $405\ \text{nm}$. Check: </p>
 <div class="eq-chain"><div class="eq-row"><span class="eq-l">$W + E_{\text{k,max}}$</span><span class="eq-r">$= 2.29\ \text{eV} + 0.77\ \text{eV}$</span></div><div class="eq-row"><span class="eq-l"></span><span class="eq-r">$= 3.06\ \text{eV}$</span></div><div class="eq-row"><span class="eq-l"></span><span class="eq-r">$= hf$</span></div></div></div><p class="step-controls"><button type="button" class="next-step">Show the next step</button> <button type="button" class="all-steps">Show all</button></p></div></div></div><div class="activity act-interpret task-card" id="planck-data" data-type="interpret"><h3>Example 2: Planck&#x27;s constant from example data</h3><div class="interpret"><p class="source" data-source="example"><strong>Made-up example data</strong></p><div class="representation"><p>A group measured the stopping voltage of a photocell with the spectral lines of a mercury lamp. The numbers below are an invented example, rounded like real readings.</p>
 <table>
 <thead>

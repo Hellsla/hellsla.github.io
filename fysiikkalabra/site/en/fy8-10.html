@@ -214,11 +214,14 @@
 </svg></div></div>
 <h4>Why a change of mass is not noticed in everyday life</h4>
 <p>The equivalence of mass and energy applies to every change of energy, but $c^2$ is so large that in ordinary phenomena the change of mass is too small to measure. A mass of one gram corresponds to the energy</p>
-<p>$$\begin{aligned}
+<p><span class="mj-wide">$$\begin{aligned}
+E &= 1.00 \cdot 10^{-3}\,\text{kg} \cdot (2.998 \cdot 10^{8}\,\text{m/s})^2 \\
+&\approx 9.0 \cdot 10^{13}\,\text{J}.
+\end{aligned}$$</span><span class="mj-narrow">$$\begin{aligned}
 E &= 1.00 \cdot 10^{-3}\,\text{kg} \\
 &\quad \cdot (2.998 \cdot 10^{8}\,\text{m/s})^2 \\
 &\approx 9.0 \cdot 10^{13}\,\text{J}.
-\end{aligned}$$</p>
+\end{aligned}$$</span></p>
 <p>When carbon burns, the mass decreases by only about one ten-billionth. In nuclei the binding energy is so large that the mass defect is about $0.8\,\%$ of the mass of the atom for helium-4 and uranium-238 alike. This is why nuclear physics calculates energy directly from the difference of masses.</p>
 <h3 class="theory-h">Binding energy</h3>
 <h4>Mass defect and binding energy</h4>
@@ -229,7 +232,14 @@ E &= 1.00 \cdot 10^{-3}\,\text{kg} \\
 <p>where $E_\text{B}$ is the binding energy and $c = 2.998 \cdot 10^{8}\,\text{m/s}$ the speed of light. The binding energy of the electrons themselves in the atom is not taken into account, because it is at most hundreds of kiloelectronvolts, and even for the heaviest atoms less than a thousandth of the binding energy of the nucleus.</p>
 <h4>The atomic mass unit as energy</h4>
 <p>The energies of nuclei are given in megaelectronvolts: $1\,\text{MeV} = 10^{6}\,\text{eV}$ and $1\,\text{eV} = 1.602177 \cdot 10^{-19}\,\text{J}$. Let us calculate the energy that corresponds to a mass of $1\,\text{u}$. Because the mass defect is a small difference, six significant figures are used here for the constants:</p>
-<p>$$\begin{aligned}
+<p><span class="mj-wide">$$\begin{aligned}
+E &= 1\,\text{u} \cdot c^2 \\
+&= 1.66054 \cdot 10^{-27}\,\text{kg} \cdot (2.99792 \cdot 10^{8}\,\text{m/s})^2 \\
+&= 1.49241 \cdot 10^{-10}\,\text{J} \\
+&= \frac{1.49241 \cdot 10^{-10}}{1.602177 \cdot 10^{-19}}\,\text{eV} \\
+&= 9.3149 \cdot 10^{8}\,\text{eV} \\
+&\approx 931.5\,\text{MeV}
+\end{aligned}$$</span><span class="mj-narrow">$$\begin{aligned}
 E &= 1\,\text{u} \cdot c^2 \\
 &= 1.66054 \cdot 10^{-27}\,\text{kg} \\
 &\quad \cdot (2.99792 \cdot 10^{8}\,\text{m/s})^2 \\
@@ -237,7 +247,7 @@ E &= 1\,\text{u} \cdot c^2 \\
 &= \frac{1.49241 \cdot 10^{-10}}{1.602177 \cdot 10^{-19}}\,\text{eV} \\
 &= 9.3149 \cdot 10^{8}\,\text{eV} \\
 &\approx 931.5\,\text{MeV}
-\end{aligned}$$</p>
+\end{aligned}$$</span></p>
 <p>So $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$. When the mass defect is in atomic mass units, this is put in place of the unit, and $c^2$ cancels: for example $0.001000\,\text{u} \cdot c^2 = 0.001000 \cdot 931.5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 = 0.9315\,\text{MeV}$. With four-figure constants $1.661 \cdot 10^{-27}\,\text{kg}$, $2.998 \cdot 10^{8}\,\text{m/s}$ and $1.602 \cdot 10^{-19}\,\text{J}$ the result would be $931.9\,\text{MeV}$, so four-figure constants already change the fourth figure.</p>
 <h4>Binding energy per nucleon</h4>
 <p>The strength of the binding of nuclei is compared with the <strong>binding energy per nucleon</strong></p>
@@ -381,7 +391,16 @@ E &= 1\,\text{u} \cdot c^2 \\
 E_\text{B} &= \Delta m\,c^2 \\
 \frac{E_\text{B}}{A} &= \frac{\Delta m\,c^2}{A}
 \end{aligned}$$</p></div><div class="step" data-step="4"><p class="step-label">Step 4/7</p><p><strong>Unit conversions.</strong> The mass is not converted to kilograms: $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$ is put in place of the unit of the mass defect, so $c^2$ cancels and the energy is obtained directly in megaelectronvolts.</p></div><div class="step" data-step="5"><p class="step-label">Step 5/7</p><p><strong>Substitution.</strong> First the mass defect, then the energy:</p>
-<p>$$\begin{aligned}
+<p><span class="mj-wide">$$\begin{aligned}
+\Delta m &= Z\,m_\text{H} + N\,m_\text{n} - m_\text{atom} \\
+&= 2 \cdot 1.007825\,\text{u} + 2 \cdot 1.008665\,\text{u} - 4.002603\,\text{u} \\
+&= 0.030377\,\text{u} \\[6pt]
+E_\text{B} &= \Delta m\,c^2 = 0.030377\,\text{u} \cdot c^2 \\
+&= 0.030377 \cdot 931.5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 \\
+&= 28.296\,\text{MeV} \\[6pt]
+\frac{E_\text{B}}{A} &= \frac{28.296\,\text{MeV}}{4} \\
+&= 7.074\,\text{MeV}
+\end{aligned}$$</span><span class="mj-narrow">$$\begin{aligned}
 \Delta m &= Z\,m_\text{H} + N\,m_\text{n} - m_\text{atom} \\
 &= 2 \cdot 1.007825\,\text{u} \\
 &\quad + 2 \cdot 1.008665\,\text{u} \\
@@ -392,8 +411,8 @@ E_\text{B} &= \Delta m\,c^2 = 0.030377\,\text{u} \cdot c^2 \\
 &= 28.296\,\text{MeV} \\[6pt]
 \frac{E_\text{B}}{A} &= \frac{28.296\,\text{MeV}}{4} \\
 &= 7.074\,\text{MeV}
-\end{aligned}$$</p></div><div class="step" data-step="6"><p class="step-label">Step 6/7</p><p><strong>Result.</strong> The binding energy of the helium-4 nucleus is $28.30\,\text{MeV}$ and the binding energy per nucleon $7.074\,\text{MeV}$, four significant figures like the conversion factor $931.5\,\tfrac{\text{MeV}}{c^2}$.</p></div><div class="step" data-step="7"><p class="step-label">Step 7/7</p><p><strong>Reasonableness.</strong> With rounded numbers $\Delta m \approx 0.03\,\text{u}$ and $0.03 \cdot 900\,\text{MeV} = 27\,\text{MeV}$, close to the result. The mass defect is about $0.8\,\%$ of the mass of the atom, as it usually is for nuclei, and the value $7.07\,\text{MeV}$ per nucleon is the helium-4 point of the graph, clearly higher than its neighbours.</p></div><p class="step-controls"><button type="button" class="next-step">Show the next step</button> <button type="button" class="all-steps">Show all</button></p></div></div></div><details class="opt" data-type="choice"><summary><span class="opt-tag">Optional</span> Example 2: Find the error</summary><div class="activity act-choice" id="virhe" data-type="choice"><fieldset class="choice list"><legend><span class="scenario">A student calculates the binding energy of the carbon-12 nucleus.</span><span class="ask">She correctly gets the mass defect $\Delta m = 0.098940\,\text{u}$ and writes</p>
-<p>$$\begin{aligned} &E_\text{B} = \Delta m\,c^2 \\ &= 0.098940 \cdot 931.5\,\text{MeV} \\ &\quad \cdot (2.998 \cdot 10^{8}\,\text{m/s})^2 \\ &\approx 8.3 \cdot 10^{18}\,\text{MeV} \end{aligned}$$</p>
+\end{aligned}$$</span></p></div><div class="step" data-step="6"><p class="step-label">Step 6/7</p><p><strong>Result.</strong> The binding energy of the helium-4 nucleus is $28.30\,\text{MeV}$ and the binding energy per nucleon $7.074\,\text{MeV}$, four significant figures like the conversion factor $931.5\,\tfrac{\text{MeV}}{c^2}$.</p></div><div class="step" data-step="7"><p class="step-label">Step 7/7</p><p><strong>Reasonableness.</strong> With rounded numbers $\Delta m \approx 0.03\,\text{u}$ and $0.03 \cdot 900\,\text{MeV} = 27\,\text{MeV}$, close to the result. The mass defect is about $0.8\,\%$ of the mass of the atom, as it usually is for nuclei, and the value $7.07\,\text{MeV}$ per nucleon is the helium-4 point of the graph, clearly higher than its neighbours.</p></div><p class="step-controls"><button type="button" class="next-step">Show the next step</button> <button type="button" class="all-steps">Show all</button></p></div></div></div><details class="opt" data-type="choice"><summary><span class="opt-tag">Optional</span> Example 2: Find the error</summary><div class="activity act-choice" id="virhe" data-type="choice"><fieldset class="choice list"><legend><span class="scenario">A student calculates the binding energy of the carbon-12 nucleus.</span><span class="ask">She correctly gets the mass defect $\Delta m = 0.098940\,\text{u}$ and writes</p>
+<p><span class="mj-wide">$$\begin{aligned} E_\text{B} &= \Delta m\,c^2 \\ &= 0.098940 \cdot 931.5\,\text{MeV} \cdot (2.998 \cdot 10^{8}\,\text{m/s})^2 \\ &\approx 8.3 \cdot 10^{18}\,\text{MeV} \end{aligned}$$</span><span class="mj-narrow">$$\begin{aligned} &E_\text{B} = \Delta m\,c^2 \\ &= 0.098940 \cdot 931.5\,\text{MeV} \\ &\quad \cdot (2.998 \cdot 10^{8}\,\text{m/s})^2 \\ &\approx 8.3 \cdot 10^{18}\,\text{MeV} \end{aligned}$$</span></p>
 <p>Where is the error?</span></legend><ul class="choices"><li><label><input type="radio" name="virhe" value="0" data-correct="0"><span>The mass defect should have been converted to kilograms first, before multiplying.</span></label><div class="feedback" data-for="0" hidden><p>One can calculate with kilograms and joules, but it is not required here: with the conversion factor $931.5\,\tfrac{\text{MeV}}{c^2}$ the energy is obtained directly in megaelectronvolts. The error is that $c^2$ has been included twice.</p></div></li><li><label><input type="radio" name="virhe" value="1" data-correct="0"><span>The binding energy should have been divided by the number of nucleons, $12$.</span></label><div class="feedback" data-for="1" hidden><p>Dividing would give the binding energy per nucleon, which is a different quantity. What was asked was the whole binding energy $E_\text{B}$. The error is that $c^2$ has been included twice, although it is already in the conversion factor $931.5\,\tfrac{\text{MeV}}{c^2}$.</p></div></li><li><label><input type="radio" name="virhe" value="2" data-correct="0"><span>The mass of the carbon-12 atom is exactly $12\,\text{u}$, so the mass defect should be zero.</span></label><div class="feedback" data-for="2" hidden><p>By definition the mass of the carbon-12 atom is exactly $12\,\text{u}$, but six hydrogen atoms and six neutrons together weigh $12.098940\,\text{u}$. So the mass defect $0.098940\,\text{u}$ is correct. The error is that $c^2$ has been included twice.</p></div></li><li><label><input type="radio" name="virhe" value="3" data-correct="1"><span>$c^2$ has been multiplied in twice: it is already included in the conversion factor $931.5\,\tfrac{\text{MeV}}{c^2}$.</span></label><div class="feedback" data-for="3" hidden><p>Correct. When $931.5\,\tfrac{\text{MeV}}{c^2}$ is put in place of the unit $\text{u}$, $c^2$ cancels: $0.098940 \cdot 931.5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 = 92.16\,\text{MeV}$. The unit also reveals the error: the unit of the student's result would be $\text{MeV} \cdot \tfrac{\text{m}^2}{\text{s}^2}$, not a unit of energy.</p></div></li></ul><div class="choice-actions"><button type="button" class="commit">Answer</button></div><output aria-live="polite"></output></fieldset></div></details><div class="activity act-numeric task-card" id="siirto" data-type="numeric"><h3>Example 3: Transfer: the energy of an alpha decay</h3><div class="numeric"><p class="task scenario">Older models of smoke detectors and the heat sources of space probes have used alpha emitters. Polonium-210 ${}^{210}_{84}\text{Po}$ decays by alpha decay into lead-206. The atomic masses are $m({}^{210}\text{Po}) = 209.982874\,\text{u}$, $m({}^{206}\text{Pb}) = 205.974465\,\text{u}$ and $m({}^{4}\text{He}) = 4.002603\,\text{u}$ (AME2020).</p><p class="task ask" id="siirto-q">How much energy is released in one decay? Give the answer in megaelectronvolts.</p><form class="check" data-answer="5.408" data-tol="0.02" data-step="0.001" data-mistakes='[{&quot;value&quot;: 3734, &quot;feedback&quot;: &quot;You forgot the mass of the alpha particle. At the end there is helium-4 in addition to lead-206, so $m_\\text{final} = 205.974465\\,\\text{u} + 4.002603\\,\\text{u}$.&quot;}, {&quot;value&quot;: -5.408, &quot;feedback&quot;: &quot;The sign is wrong: you subtracted the initial mass from the final mass. The reaction energy is $Q = (m_\\text{initial} - m_\\text{final})\\,c^2$, and in a spontaneous decay it is positive.&quot;}, {&quot;value&quot;: 0.005806, &quot;feedback&quot;: &quot;This is the difference of the masses in atomic mass units. Convert it into energy by putting in $1\\,\\text{u} = 931.5\\,\\tfrac{\\text{MeV}}{c^2}$.&quot;}]' novalidate><input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="Answer in MeV" aria-describedby="siirto-q" placeholder="?"><span class="unit">MeV</span><button type="submit">Check</button><output aria-live="polite"></output></form><div class="hints"><details class="hint" data-n="1"><summary>Hint 1: a guiding question</summary><div><p>Write the decay equation. Which particles are at the start and which at the end?</p></div></details><details class="hint" data-n="2"><summary>Hint 2: what is the connection</summary><div><p>The reaction energy is $Q = (m_\text{initial} - m_\text{final})\,c^2$, and at the end there are both lead-206 and the alpha particle, that is, helium-4.</p></div></details><details class="hint" data-n="3"><summary>Hint 3: an intermediate step</summary><div><p>The difference of the masses is $0.005806\,\text{u}$. Put in $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$.</p></div></details></div><details class="solution"><summary>Show the solution</summary><div class="steps"><div class="sol-step" data-step="given"><p class="sol-label">Given</p><p>$m({}^{210}\text{Po}) = 209.982874\,\text{u}$, $m({}^{206}\text{Pb}) = 205.974465\,\text{u}$, $m({}^{4}\text{He}) = 4.002603\,\text{u}$ (AME2020), $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$</p></div><div class="sol-step" data-step="asked"><p class="sol-label">Asked</p><p>the energy released in the decay, that is, the reaction energy $Q$ in megaelectronvolts</p></div><div class="sol-step" data-step="principle"><p class="sol-label">Principle</p><p>In the alpha decay ${}^{210}_{84}\text{Po} \to {}^{206}_{82}\text{Pb} + {}^{4}_{2}\text{He}$ the mass number and the charge number are conserved, but the mass of the atoms formed is smaller than that of the polonium atom. The energy corresponding to the decrease of mass is released, mainly as the kinetic energy of the alpha particle. Atomic masses can be used, because there are $84$ electrons on both sides: $82$ in the lead atom and $2$ in the helium atom.</p></div><div class="sol-step" data-step="formula"><p class="sol-label">Formula</p><p>$Q = (m_\text{initial} - m_\text{final})\,c^2$, where $m_\text{initial} = m({}^{210}\text{Po})$ and $m_\text{final} = m({}^{206}\text{Pb}) + m({}^{4}\text{He})$</p></div><div class="sol-step" data-step="unit-conversions"><p class="sol-label">Unit conversions</p><p>The mass is not converted to kilograms: $931.5\,\tfrac{\text{MeV}}{c^2}$ is put in place of the unit $\text{u}$, so $c^2$ cancels.</p></div><div class="sol-step" data-step="substitution"><p class="sol-label">Substitution</p><div class="eq-chain lead"><div class="eq-lead">$m_\text{initial} - m_\text{final}$</div><div class="eq-row"><span class="eq-l"></span><span class="eq-r">$= 209.982874\,\text{u} - 205.974465\,\text{u} - 4.002603\,\text{u}$</span></div><div class="eq-row"><span class="eq-l"></span><span class="eq-r">$= 0.005806\,\text{u}$</span></div></div>
 
 <p>so </p>
@@ -434,12 +453,15 @@ E_\text{B} &= \Delta m\,c^2 = 0.030377\,\text{u} \cdot c^2 \\
 <p>$N\,m_\text{n} = 118 \cdot 1.008665\,\text{u}$</p>
 <p>$N\,m_\text{n} = 119.022470\,\text{u}$</p>
 <p>The mass defect is $\Delta m = Z\,m_\text{H} + N\,m_\text{n} - m_\text{atom}$:</p>
-<p>$$\begin{aligned}
+<p><span class="mj-wide">$$\begin{aligned}
+\Delta m &= 79.618175\,\text{u} + 119.022470\,\text{u} - 196.966569\,\text{u} \\
+&= 1.674076\,\text{u}
+\end{aligned}$$</span><span class="mj-narrow">$$\begin{aligned}
 \Delta m &= 79.618175\,\text{u} \\
 &\quad + 119.022470\,\text{u} \\
 &\quad - 196.966569\,\text{u} \\
 &= 1.674076\,\text{u}
-\end{aligned}$$</p>
+\end{aligned}$$</span></p>
 <p>The binding energy is obtained by putting $931.5\,\tfrac{\text{MeV}}{c^2}$ in place of the unit $\text{u}$, so that $c^2$ cancels:</p>
 <p>$$\begin{aligned}
 E_\text{B} &= 1.674076 \cdot 931.5\,\text{MeV} \\

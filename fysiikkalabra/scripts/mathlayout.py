@@ -101,20 +101,29 @@ WIDE_MAX = 62        # visible characters (vis_len) a row joined for a wide scre
 
 
 def join_wide(tex):
-    """An aligned block whose chains the source split by hand (`&a \\\\ &\\quad = b`, teacher 2026-11-13, fy3-6): the
-    same block with each such continuation joined onto the row before it (`&a = b`), as long as the joined row stays
-    within WIDE_MAX, or None when nothing joins. The source is never changed; build.py shows this form on a wide screen
-    and the form as written on a phone (.mj-wide / .mj-narrow in site.css). Only rows that start `&\\quad =` (or
-    `\\approx`) join, and the row break after the last joined row (`\\\\[6pt]`) is kept."""
+    """An aligned block whose chains the source split by hand (`&a \\\\ &\\quad = b`, teacher 2026-11-13, fy3-6; `&\\rho g h
+    \\\\ &= 1000 \\\\ &\\quad \\cdot 9{,}81`, fy3-4): the same block with the pieces of one side joined, as long as the
+    joined row stays within WIDE_MAX, or None when nothing joins. A row starting `&\\quad` or `&\\qquad` (a continuation of
+    the row before) joins it; a row starting with a relation joins a row that is still only a left side, so `left =
+    right` is one row. Each further relation of the chain keeps its own row, and a row break with a gap (`\\\\[6pt]`)
+    ends the chain. The source is never changed; build.py shows this form on a wide screen and the form as written on a
+    phone (.mj-wide / .mj-narrow in site.css)."""
     m = re.fullmatch(r"(\s*\\begin\{aligned\}\s*)(.*?)(\s*\\end\{aligned\}\s*)", tex, re.S)
     if not m: return None
     parts = re.split(r"(\\\\(?:\[[^\]]*\])?\s*)", m.group(2))
     cells, seps = parts[0::2], parts[1::2] + [""]
     out, out_seps, joined = [], [], False
     for cell, sep in zip(cells, seps):
-        c = re.match(r"\s*&\s*\\quad\s*((?:=|\\approx)\s.*)", cell, re.S) if out else None
-        if c and not re.search(r"&|\\begin|\\end", c.group(1)) and vis_len(out[-1]) + vis_len(c.group(1)) + 2 <= WIDE_MAX:
-            out[-1] = out[-1].rstrip() + " " + c.group(1).strip() + " "; out_seps[-1] = sep; joined = True
+        body = cell.lstrip()[1:].strip() if cell.lstrip().startswith("&") and cell.count("&") == 1 else None
+        piece = None
+        if out and body is not None and re.fullmatch(r"\\\\(?:\[[^\]]*\])?\s*", out_seps[-1]) and out_seps[-1].strip() == "\\\\":
+            q = re.match(r"\\q?quad\s*(.*)", body, re.S)
+            if q and q.group(1).strip(): piece = q.group(1).strip()
+            elif re.match(r"(=|\\approx)\s", body):
+                prev = out[-1].lstrip()[1:]
+                if _top_relations(prev) == []: piece = body        # the row before is only a left side
+        if piece and vis_len(out[-1]) + vis_len(piece) + 2 <= WIDE_MAX:
+            out[-1] = out[-1].rstrip() + " " + piece + " "; out_seps[-1] = sep; joined = True
         else: out.append(cell); out_seps.append(sep)
     if not joined: return None
     return m.group(1) + "".join(c + s for c, s in zip(out, out_seps)) + m.group(3)
@@ -251,7 +260,9 @@ if __name__ == "__main__":                                          # quick self
     assert split_list(r"p = 203;\ 159;\ 66\,\text{kPa}") == r"$p = 203$; $159$; $66\,\text{kPa}$" and split_list(r"\{a;b\}") is None
     j = join_wide("\\begin{aligned}\n&a b \\\\\n&\\quad = c d \\\\[6pt]\n&e = f\n\\end{aligned}")
     assert j == "\\begin{aligned}\n&a b = c d \\\\[6pt]\n&e = f\n\\end{aligned}", j                 # a hand-split chain joins, the gap stays
-    assert join_wide("\\begin{aligned}\n&a \\\\\n&\\quad \\cdot b\n\\end{aligned}") is None          # only a continuation with a relation
+    assert join_wide("\\begin{aligned}\n&a \\\\\n&\\quad \\cdot b\n\\end{aligned}") == "\\begin{aligned}\n&a \\cdot b \n\\end{aligned}"   # a continuation joins
+    h = join_wide("\\begin{aligned}\n&\\rho g h \\\\\n&= 1000\\,\\tfrac{\\text{kg}}{\\text{m}^3} \\\\\n&\\quad \\cdot 9{,}81 \\\\\n&\\quad \\cdot 12 \\\\\n&= 117\\,720 \\\\[6pt]\n&p = p_0 \\\\\n&= 1 \\\\\n&\\quad + 2\n\\end{aligned}")
+    assert h.count("\\\\") == 3 and "&\\rho g h = 1000" in h and "\\cdot 12 \\\\\n&= 117" in h and "&= 1 + 2" in h, h   # left = right on one row, each further = on its own
     assert join_wide("\\begin{aligned}\n&" + "x" * 50 + " \\\\\n&\\quad = " + "y" * 20 + "\n\\end{aligned}") is None   # too wide stays two rows
     assert wide_narrow_html("\\begin{aligned}\n&a \\\\\n&\\quad = b\n\\end{aligned}").count("$$") == 4
     b = display_chains(r" $14\,\text{GWh} = {14 \cdot 10^{6}}\,\text{kWh}$ ja $5{,}0\,\text{MW} = 5{,}0 \cdot 1000\,\text{kW} = 5000\,\text{kW}$.")
