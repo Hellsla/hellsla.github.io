@@ -280,6 +280,16 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy4-5-L2-08",
+      "level": 2,
+      "text": "A puck of mass $2.5\\,\\text{kg}$ rests on frictionless ice, seen from above. Two horizontal forces act on the puck in the figure. One square corresponds to a force of $2.0\\,\\text{N}$. How large is the acceleration of the puck?",
+      "answer": 4.0,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "figure": "fy4-5/ruutu-vinot",
+      "fbd": "equations"
     }
   ],
   "level3": [

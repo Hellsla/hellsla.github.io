@@ -1,18 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: e4df9939d9e9aaf6
+CONTENT-HASH: 42ba4c36bd92a300
 
 ## Blocking
 
 ## Polish
-- exercises.json:108–125 (L1-09) — the options 0,4 / 400 / 4000 / 400 000 N are a factor 1000, 10 and 100 apart; docs/exercise-types.md type 5 asks for 10–100. The 0,4 N distractor is fine as a physics check, so this is only a note on the spec.
+- exercises/solutions.md fy4-9-L2-08 Vastaus — "kaksi tai kolme merkitsevää numeroa kuvaajan lukuarvojen tarkkuudella" ei päätä tarkkuutta — kirjoita esim. "$4{,}5 \cdot 10^2\,\text{N}$, kaksi merkitsevää numeroa: huippu luetaan $100\,\text{N}$:n ruudukosta ja aika $2\,\text{ms}$:n jaotuksesta".
+- exercises/solutions.md fy4-9-L2-08 Järkevyys — tarkistus toistaa kaavan ($F_\text{ka} = \tfrac{1}{2}F_\text{max}$) — lisää vaikka vertailu: suorakulmio $450\,\text{N} \times 12\,\text{ms}$ peittää saman pinta-alan kuin kolmio.
 
 ## Checked
-- New task L1-09 (Suuruusluokka), recomputed in one python call: F_ka = 0,020 · 20 / 0,0010 = 400 N; distractors 0,4 N (Δt as 1,0 s), 4000 (½mv²/Δt = 4,0 J / 1 ms) and 400 000 N (m in grams) all come out exactly from the error each feedback names.
-- Weight 0,196 N ≈ 0,20 N, about 2000 times smaller than F_ka. Neglecting it is stated in the task and justified in the solution; "0,4 N ≈ kaksi kertaa paino" is right.
-- Data realistic: a 20 g hailstone (about 3–4 cm) has a terminal speed of about 20 m/s, and 1 ms is a plausible stopping time. The values are labelled esimerkkiarvot.
-- Distractors catch the chapter's own warned mistake (momentum vs kinetic energy, lesson "Kolmas virhe"). The 4000 feedback correctly says that energy per time is power in W.
-- The correct option can't be picked out by form: all four are bare values with the mantissa 4. The correct feedback is a short calculation, and the task is not two-stage.
-- Notation F_ka = |Δp|/Δt and the impulse principle match the brief. The task stays inside fy4-9.
-- solutions.md:199–212 complete (Kysytty · Periaate · Mallivastaus): symbolic first, conversions shown, reasonableness check real.
-- Inline chains split with "eli". I judged from the text only that each piece fits about 300 px; I did no render (screenshots not yet made).
-- answers.py comment line agrees; the rest of the set is unchanged since the PASS. Hash is the same at the start and at the end.
+- Kaikki 20 numeerista vastausta laskettu uudelleen omilla kaavoilla yhdessä ajossa (p = mv, I = FΔt, puolisuunnikkaat, L3-05 painon kanssa): täsmäävät answers.py:n kanssa; pyöristetyt vastaukset pysyvät toleranssin sisällä (esim. L2-04 $26$ vs $25{,}65$: 1,4 %).
+- Uusi kuvatehtävä L2-08: `fy4-9/tarkistus-kolmio` piirtää kolmion (0, 0)–(6 ms, 900 N)–(12 ms, 0); huippu on $100\,\text{N}$:n ruutuviivalla ja ajat 2 ms:n jaotuksella, joten $450\,\text{N}$ luetaan selvästi ±2 %:n sisään. Kuvaus antaa samat luvut eikä vastausta.
+- Kuvaa ei käytä muu harjoitustehtävä; L3-01 (`ex-potku`) on eri kuvaaja ja eri kysymys (nopeus impulssista), joten L2-08 ei toista tehtävää.
+- Merkinnät: $F_\text{ka}$, $I$, $\Delta p$, $\overline{p}$ kuten luvun kaavaosiossa.
+- Monivalinnat L1-06 ja L1-09: tasan yksi oikea, harhautinten palaute oikein (0,4 N ≈ 2 × paino 0,20 N; 4000 on teho W:na; 400 000 N grammoista).
+- Etumerkit ja suunnat: L2-03, L3-03, L3-04 ja L3-05 valitsevat positiivisen suunnan ja käyttävät sitä johdonmukaisesti; L2-07:n kimpoaminen $+1{,}38\,\text{m/s} < 1{,}50\,\text{m/s}$ on fysikaalisesti järkevä.
+- Mallin oletukset annettu tehtävissä (paino ohitetaan iskussa, kitka/ilmanvastus ohitetaan); L3-05 ottaa painon mukaan kuten tehtävä pyytää.
+- Suuruusluokat realistisia (golfmaila $6{,}4\,\text{kN}$, turvavyö $58\,\text{km/h}$, törmäysnukke $50\,\text{km/h}$).
+- Sisältö pysyy FY4:n keskeisissä sisällöissä (liikemäärä, impulssi); ei törmäyksiä eikä myöhempien kurssien fysiikkaa.
+- Ratkaisut: symbolinen ratkaisu ennen sijoitusta, muunnokset ja pyöristysperusteet oikein.

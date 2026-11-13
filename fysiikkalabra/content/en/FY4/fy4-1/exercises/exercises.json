@@ -337,6 +337,24 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy4-1-L2-08",
+      "level": 2,
+      "text": "The graph shows the position of a cart as a function of time. The cart moves along a straight track: first it moves forward, then it stands still for a moment, and finally it returns part of the way back. Calculate the average speed of the cart over the whole $10\\,\\text{s}$, that is the distance travelled divided by the elapsed time.",
+      "figure": "fy4-1/ex-kolme-osaa",
+      "answer": 1.8,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-1-L2-09",
+      "level": 2,
+      "text": "The graph shows the positions of two bodies A and B as a function of time. The motion of both is uniform, and the bodies move along the same straight line. How far apart are the bodies at the moment $t = 7.0\\,\\text{s}$?",
+      "figure": "fy4-1/ex-kaksi-kappaletta",
+      "answer": 12,
+      "unit": "m",
+      "tolerance": 0.04
     }
   ],
   "level3": [

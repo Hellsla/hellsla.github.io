@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 8ae950d4924a8353
+CONTENT-HASH: 2c1761040ce1f1cd
+SCOPE: delta added-exercise from 8ae950d4924a8353 base 81db4a6fd727
 
 ## Blocking
 
 ## Polish
-- content/fi/FY4/fy4-2/exercises/exercises.json:281 (L2-08) — optional: no distractor touches this chapter's warned mistakes (a = 0 when v = 0; negative a always slowing); they test the s ∝ v₀²/|a| dependence, which suits this form. Keep as is or let the "Pysyy samana" feedback name the sign idea.
+- content/fi/FY4/fy4-2/exercises/solutions.md (L1-09, Vastaus) — the line gives "1,3 s (tarkemmin 1,27 s)" and then says the result is given to three significant figures like 24,79 m/s². The two do not agree. Lead with 1,27 s, or say why 1,3 s is enough. Either is inside the 4 % tolerance.
 
 ## Checked
-- Round 2 (commit 684926b76, full packet regenerated): "Esimerkkiarvot:" dropped; Periaate now says the area equals the braking distance because v stays positive (correct condition); the check s₂ = v₀t + ½at² split into v₀t = 32 m, ½a = −1,0 m/s², ½at² = −16 m, s₂ = 16 m, all recomputed and right; answers.py adds an assert (ratio 2) and the string answer, equal to the correct choice text.
-- L2-08 physics: s = v₀²/(2|a|) = 8,0 m and 16 m, t = 2,0 s and 4,0 s; sign choice consistent; magnitudes realistic for a bicycle. Exactly one correct option; each distractor's feedback says why it is wrong; the correct option is not identifiable by form and its feedback adds only times and distances.
-- Scope: triangle area under (t,v) and x − x₀ = v₀t + ½at², both taught in this chapter.
-- Solution complete, symbolic first, real check with the second formula; notation as in the lesson.
-- All 21 answers: answers.py run once (python -I, exit 0, asserts pass) and compared: numeric answers within tolerance, string answers (L1-06, L1-08, L2-07, L2-08) equal their exercises.json answers; every MC task has exactly one correct choice.
-- Inline formulas (text only, not rendered): after the split, the longest line is ½at² = −1,0 m/s² · (4,0 s)² (≈ 200 px), under 300 px at 390 px; the 360 px layout check passed.
-- Hash identical at start and end.
+- L1-09: the value g_Jupiter = 24,79 m/s² is the VERIFIED fy4-2 row of docs/mafy-arvot.tsv (Aurinkokunta, Jupiter). The hint names only the table ("Aurinkokunta").
+- Physics: free fall from rest with air resistance left out (stated in the task), so a = g is constant and h = ½gt² follows from the chapter's x = x₀ + v₀t + ½at² with x₀ = 0 and v₀ = 0. The solution says why it applies and solves t = √(2h/g) in symbols first.
+- Recomputed in one script (python -I answers.py beside my own formula): t = √(40/24,79) = 1,2703 s. answers.py, exercises.json and my value agree. Tolerance 0,04 (relative) covers the small differences between tables and a student who rounds to 1,27 s or 1,3 s.
+- The check is a real one: on Earth the same drop takes 2,02 s, and √(24,79/9,81) ≈ 1,59 gives 1,27 s.
+- Notation as in the chapter: h, g, v₀, x₀, t, and SI units in LaTeX.
+- Scope: uniformly accelerated motion from this chapter. Nothing from a later course. It does not repeat L1-03 (distance in a given time, on Earth) or L2-04 (g found from a drop on the Moon).
+- Hash 2c1761040ce1f1cd at the start and at the end.

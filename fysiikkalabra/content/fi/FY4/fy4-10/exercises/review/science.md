@@ -1,18 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: f73c86410af7bc40
+CONTENT-HASH: c140ae6575c8510f
+SCOPE: delta added-exercise from f73c86410af7bc40 base 81db4a6fd727
 
 ## Blocking
 
 ## Polish
-- exercises.json:258 (L2-08, row 4 feedback) — "kimpoamisen etumerkki kuuluu nopeuteen v_A' rivillä 3" names the wrong row on a wrong pick, so a retry becomes trivial — end it after "…jaetaan massalla m_B" and give a hint only ("tarkista, mitä riviltä 2 sijoitettiin").
-- exercises.json:252 (L2-08) — the correct label "Rivi 3: vaunun A nopeus törmäyksen jälkeen" is the longest option, by a few characters. This is marginal, but you could shorten it, for example to "Rivi 3: A:n nopeus jälkeen".
+- exercises/solutions.md fy4-10-L2-09 Järkevyys — tarkistus voisi myös todeta, että liike-energia pienenee ($0{,}184\,\text{J} \to 0{,}064\,\text{J}$), joten kuvaajan törmäys on fysikaalisesti mahdollinen (energia ei kasva) — lisää yksi lause.
 
 ## Checked
-- New task L2-08 (Virheen löytäminen), recomputed: v_B' = (0,24 + 0,060)/0,50 = 0,60 m/s; the student's version gives 0,36 m/s. Exactly one row is wrong (row 3, the sign). Row 4 is algebraically right given row 3.
-- The data are self-consistent: the kinetic energy is 0,096 J before and 0,006 + 0,090 J after, so the collision is exactly elastic, which fits the formula (m_A − m_B)/(m_A + m_B) · v = −0,20 m/s. The rebound is physically possible.
-- The "ei virhettä" feedback check is right: B's momentum must exceed 0,24, and 0,50 · 0,36 = 0,18 does not.
-- The distractor feedback carries the chapter's warned ideas: sign forgetting is the key, the kinetic-energy-instead-of-momentum idea sits on row 2, and a body at rest having momentum sits on row 1.
-- Conditions are stated: friction is neglected, and weight and normal force cancel. Momentum is conserved across the collision. The notation (v, v′, m_A v_A) matches the brief.
-- solutions.md:185–202 complete, symbolic before numbers, with a real check.
-- Inline formulas checked from the text only, with no render. The longest, the full conservation law in Periaate, is about 200 px.
-- answers.py comment agrees; the rest of the set is unchanged since the PASS. Hash is the same at the start and at the end.
+- L2-09 laskettu uudelleen omalla mallilla: $m_\text{B} = m_\text{A}(v_\text{A} - v_\text{A}')/(v_\text{B}' - v_\text{B}) = 0{,}50 \cdot 0{,}6 / 1{,}0 = 0{,}30\,\text{kg}$; täsmää answers.py:n kanssa. Liikemäärä $0{,}28\,\text{kg}\cdot\text{m/s}$ ennen ja jälkeen.
+- L2-09 kuva `ex-vt-kaarryt`: kaikki neljä nopeutta ($0{,}8$, $-0{,}4$, $0{,}2$, $0{,}6\,\text{m/s}$) ovat $0{,}2\,\text{m/s}$:n ruutuviivoilla, joten ne luetaan tarkasti ja vastaus pysyy ±2 %:n sisällä. Kuvaus antaa samat luvut eikä massaa. Järjestys on fysikaalisesti johdonmukainen: A vasemmalla, B ohittaa sen nopeammin oikealle, liike-energia pienenee.
+- L3-06 laskettu uudelleen: kulmakertoimet $0{,}60$ ja $0{,}20\,\text{m/s}$, $m_\text{B} = 0{,}60\,\text{kg}$, $\Delta E_\text{k} = 0{,}054 - 0{,}018 = 0{,}036\,\text{J}$; täsmää. Pisteet $(1{,}0\,\text{s}; 0{,}60\,\text{m})$ ja $(3{,}0\,\text{s}; 1{,}00\,\text{m})$ ovat ruudukossa; toleranssi 3 % on riittävä.
+- L3-06 Järkevyys: menetetty osuus $m_\text{B}/(m_\text{A}+m_\text{B}) = 2/3$ pitää paikkansa täysin kimmottomalle törmäykselle, kun kohde on levossa.
+- Kumpikaan uusi tehtävä ei toista aiempaa: kuvat ovat uusia, eikä mikään aiempi tehtävä käytä niitä; L2-04 (massa kytkeytymisestä) ja L2-02 (energiahäviö) eivät lue kuvaajaa, eikä niissä ole etumerkkejä eikä kulmakerrointa.
+- Ehdot: kitka jätetään huomiotta, ja liikemäärän säilymistä käytetään törmäyksen yli kuten luvun kaavaosio sanoo.
+- Merkinnät $m_\text{A}$, $v_\text{A}$, $v_\text{A}'$, $v'$, $E_\text{k}$ kuten luvun esimerkissä ja kaavoissa.
+- Ratkaisut ovat täydellisiä: kuvaajan lukeminen, symbolinen ratkaisu ennen sijoitusta, pyöristyksen perustelu ja todellinen tarkistus.
+- Sisältö pysyy FY4:n keskeisissä sisällöissä (yksiulotteiset törmäykset).

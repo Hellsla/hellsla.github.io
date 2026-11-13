@@ -236,3 +236,35 @@ $x = 2{,}0\,\text{m}$
 
 Kuvaaja C kulkee pisteiden $(0\,\text{s};\ 6{,}0\,\text{m})$ ja $(4{,}0\,\text{s};\ 2{,}0\,\text{m})$ kautta. Sen kulmakerroin on $\dfrac{2{,}0\,\text{m} - 6{,}0\,\text{m}}{4{,}0\,\text{s}}$, eli $-1{,}0\,\text{m/s}$. Kuvaaja A nousee paikasta $6\,\text{m}$ paikkaan $10\,\text{m}$. Siinä nopeuden miinusmerkki on jätetty huomiotta, vaikka etumerkki kertoo liikkeen suunnan. Kuvaajan B kulmakerroin on oikea, mutta se alkaa origosta, joten alkupaikka on unohtunut. Kuvaaja D on vaakasuora suora kohdassa $-1\,\text{m}$. Siinä nopeuden arvo on piirretty paikaksi, ikään kuin kuvaaja olisi $(t, v)$-kuvaaja. Tarkistus: auto liikkuu $4{,}0\,\text{s}$ ajan $1{,}0\,\text{m}$ sekunnissa negatiiviseen suuntaan. Siksi se siirtyy $4{,}0\,\text{m}$ alkupaikasta kohti origoa.
 **Kuvaajan lukeminen:** Jokaisesta kuvaajasta luetaan paikka hetkillä $0$ ja $4{,}0\,\text{s}$. Kuvaajat B ja C laskevat yhtä jyrkästi, joten ne erottaa vasta alkupaikka: kuvaaja B alkaa kohdasta $0\,\text{m}$ ja kuvaaja C kohdasta $6{,}0\,\text{m}$.
+
+## fy4-1-L2-08
+**Annettu:** kärryn $(t, x)$-kuvaaja, jonka kulmapisteet ovat $(0\,\text{s};\, 4\,\text{m})$, $(4\,\text{s};\, 16\,\text{m})$, $(6\,\text{s};\, 16\,\text{m})$ ja $(10\,\text{s};\, 10\,\text{m})$; kokonaisaika $\Delta t = 10\,\text{s}$
+**Kysytty:** keskivauhti $v_\text{k}$ yksikössä $\text{m/s}$
+**Periaate:** Keskivauhti on kuljettu matka $s$ jaettuna kuluneella ajalla. Matka lasketaan kaikkien osien paikanmuutosten itseisarvoista, koska kärry palaa osan matkaa takaisin ja matka kasvaa myös silloin. Siirtymä ei kelpaa, koska paluu vähentäisi sitä miinusmerkillä.
+**Kuvaajan lukeminen:** Kuvaajassa on kolme suoraa osaa. Välillä $0\ldots4\,\text{s}$ kuvaaja nousee paikasta $4\,\text{m}$ paikkaan $16\,\text{m}$, joten $\Delta x_1 = 16\,\text{m} - 4\,\text{m} = 12\,\text{m}$. Välillä $4\ldots6\,\text{s}$ kuvaaja on vaakasuora ($16\,\text{m}$), joten $\Delta x_2 = 0$. Välillä $6\ldots10\,\text{s}$ kuvaaja laskee paikasta $16\,\text{m}$ paikkaan $10\,\text{m}$, joten $\Delta x_3 = 10\,\text{m} - 16\,\text{m} = -6\,\text{m}$.
+**Kaava:** $s = |\Delta x_1| + |\Delta x_2| + |\Delta x_3|$ ja $v_\text{k} = \dfrac{s}{\Delta t}$
+**Muunnokset:** Paikat ovat metreinä ja ajat sekunteina, joten muunnoksia ei tarvita.
+**Sijoitus:**
+
+$$\begin{aligned} s &= 12\,\text{m} + 0 + 6\,\text{m} \\ &= 18\,\text{m} \end{aligned}$$
+
+$$\begin{aligned} v_\text{k} &= \dfrac{18\,\text{m}}{10\,\text{s}} \\ &= 1{,}8\,\text{m/s} \end{aligned}$$
+**Vastaus:** $1{,}8\,\text{m/s}$, kaksi merkitsevää numeroa, koska kuvaajan arvot luetaan kokonaisina metreinä ja sekunteina.
+**Järkevyys:** Kärry on lopussa paikassa $10\,\text{m}$ eli vain $6\,\text{m}$ alkupaikasta, mutta se on kulkenut $18\,\text{m}$. Siirtymästä laskettu keskinopeus olisi $\dfrac{6\,\text{m}}{10\,\text{s}} = 0{,}6\,\text{m/s}$, ja keskivauhti on tätä suurempi, kuten pitääkin. Nopeus $1{,}8\,\text{m/s}$ on kävelyvauhtia, mikä sopii kärrylle.
+
+## fy4-1-L2-09
+**Annettu:** $(t, x)$-kuvaajan suorat: kappale A kulkee pisteiden $(0\,\text{s};\, 2\,\text{m})$ ja $(8\,\text{s};\, 18\,\text{m})$ kautta, kappale B pisteiden $(0\,\text{s};\, 18\,\text{m})$ ja $(8\,\text{s};\, 2\,\text{m})$ kautta; liikkeet ovat tasaisia; $t = 7{,}0\,\text{s}$
+**Kysytty:** kappaleiden välimatka $d$ hetkellä $7{,}0\,\text{s}$ yksikössä $\text{m}$
+**Periaate:** Tasaisessa liikkeessä $(t, x)$-kuvaaja on suora, jonka kulmakerroin on nopeus ja leikkauskohta alkupaikka, joten paikka on $x = x_0 + v\,t$. Välimatka on paikkakoordinaattien erotuksen itseisarvo $d = |x_\text{A} - x_\text{B}|$. Kuvaajassa ylempänä oleva viiva tarkoittaa suurempaa paikkakoordinaattia. Suorat leikkaavat ja järjestys vaihtuu. Siksi tarvitaan itseisarvo: välimatka ei voi olla negatiivinen.
+**Kuvaajan lukeminen:** Luetaan suorilta ruudukon risteyskohdat. Suora A: $x_{0\text{A}} = 2\,\text{m}$ ja $x = 18\,\text{m}$ hetkellä $8\,\text{s}$, joten $v_\text{A} = \dfrac{18\,\text{m} - 2\,\text{m}}{8\,\text{s}} = 2{,}0\,\text{m/s}$. Suora B: $x_{0\text{B}} = 18\,\text{m}$ ja $x = 2\,\text{m}$ hetkellä $8\,\text{s}$, joten $v_\text{B} = \dfrac{2\,\text{m} - 18\,\text{m}}{8\,\text{s}} = -2{,}0\,\text{m/s}$. Suorat leikkaavat hetkellä $4{,}0\,\text{s}$ kohdassa $10\,\text{m}$, joten hetkellä $7{,}0\,\text{s}$ kappale A on jo B:n ohi.
+**Kaava:** $x_\text{A} = x_{0\text{A}} + v_\text{A}\,t$, $x_\text{B} = x_{0\text{B}} + v_\text{B}\,t$ ja $d = |x_\text{A} - x_\text{B}|$
+**Muunnokset:** Paikat ovat metreinä ja ajat sekunteina, joten muunnoksia ei tarvita. B:n nopeus sijoitetaan negatiivisena.
+**Sijoitus:**
+
+$$\begin{aligned} x_\text{A} &= 2\,\text{m} + 2{,}0\,\text{m/s} \cdot 7{,}0\,\text{s} \\ &= 16\,\text{m} \end{aligned}$$
+
+$$\begin{aligned} x_\text{B} &= 18\,\text{m} + (-2{,}0\,\text{m/s}) \cdot 7{,}0\,\text{s} \\ &= 4\,\text{m} \end{aligned}$$
+
+$$\begin{aligned} d &= |16\,\text{m} - 4\,\text{m}| \\ &= 12\,\text{m} \end{aligned}$$
+**Vastaus:** $12\,\text{m}$, kaksi merkitsevää numeroa, koska nopeudet $2{,}0\,\text{m/s}$ ja aika $7{,}0\,\text{s}$ on annettu kahdella numerolla.
+**Järkevyys:** Välimatka kasvaa ristiin menon jälkeen nopeuksien erotuksella $2{,}0\,\text{m/s} - (-2{,}0\,\text{m/s}) = 4{,}0\,\text{m/s}$. Hetkestä $4{,}0\,\text{s}$ on kulunut $3{,}0\,\text{s}$, joten välimatka on $4{,}0\,\text{m/s} \cdot 3{,}0\,\text{s} = 12\,\text{m}$, sama kuin yllä. Kuvaajassa viivojen pystysuuntainen väli hetkellä $7\,\text{s}$ on $12\,\text{m}$.

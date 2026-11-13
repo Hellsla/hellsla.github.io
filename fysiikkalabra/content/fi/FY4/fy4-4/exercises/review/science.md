@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 2af3ee47b4394d1d
+CONTENT-HASH: 8c528e6b3d93aece
+SCOPE: delta added-exercise from 2af3ee47b4394d1d base 81db4a6fd727
 
 ## Blocking
 
 ## Polish
+- content/fi/FY4/fy4-4/exercises/solutions.md (L1-09) — the Periaate names the force diagram but shows none. A ```voimakuvio block with F up and G down, like the set's other force tasks, would follow the chapter's "Ensin voimat, sitten yhtälö".
 
 ## Checked
-- Round 2 (commit 684926b76, full packet regenerated): "Esimerkkiarvot:" dropped; the row-3 feedback now ends "Tarkista muut rivit samalla tavalla." and no longer points at the error; the solution's row-3 chain split into G = 18 kg · 9,81 m/s², eli G = 176,58 N ≈ 177 N; answers.py asserts a = 36 N / 18 kg = 2,0 m/s² (passes).
-- L2-08 physics recomputed: ΣF = 45 − 9,0 = 36 N; G = 176,58 ≈ 177 N; a = 2,0 m/s²; the shown 36/177 ≈ 0,20 is the only wrong line, so exactly one correct option. Rows 1–3 really correct.
-- The error is this chapter's warned mistake (massa vs. paino on a horizontal track); the "ei virhettä" feedback uses the lesson's words. Options parallel ("Rivi n: …"), not identifiable by form; the unit check N : N ≠ m/s² is a real check.
-- Data plausible (μ ≈ 0,05 for a cart); F_μ as elsewhere in this set; air resistance left out is stated. Scope: signed ΣF = ma from this chapter.
-- Solution complete, symbolic a = ΣF/m first, direction and significant figures stated.
-- All 21 answers: answers.py run once (python -I, exit 0) and compared: 19 numeric answers within tolerance; L1-06 and L2-08 one correct choice each.
-- Inline formulas (text only, not rendered): the longest is row 4's \dfrac chain (≈ 170 px), under 300 px at 390 px; the 360 px layout check passed.
-- Hash identical at start and end.
+- L1-09: g_Kuu = 1,622 m/s² is the VERIFIED fy4-4 row of docs/mafy-arvot.tsv. The hint names only the table ("Aurinkokunta"). The model is stated: only weight and thrust act, and a = 0,50 m/s² upward while descending. Upward is positive, F − mg = ma, so F = m(g + a) = 31,83 kN. Two significant figures (32 kN) are justified by 0,50, and the hover check (24 kN) is a real one.
+- L1-10 (fy4-4/kuvaaja-ab): A's points (1; 2), (2; 4) and (3; 6) sit on grid intersections, so m = 3,0 N : 6,0 m/s² = 0,50 kg, and 2 % fits.
+- L2-09: B's point (3; 3) gives m_B = 1,0 kg, and a = 2,4 N : 1,0 kg = 2,4 m/s². The task makes the student go through the mass, since 2,4 N is between grid lines. Not the same as L1-10 (other cart, other quantity), nor L1-03 (data given in numbers).
+- Neither figure task gives its answer away: the description lists the points but no masses.
+- Notation as in the chapter: ΣF on the axis, m, a, and $\overline{F}$/$\overline{G}$ for vectors.
+- Recomputed in one script (my formulas beside python -I answers.py): 31,83 kN, 0,50 kg and 2,4 m/s². All three agree with exercises.json.
+- Scope: Newton's second law and G = mg, both from this chapter and the one before.
+- Hash 8c528e6b3d93aece at the start and at the end.
