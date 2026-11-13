@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 5cd3571020c4ddc7
+CONTENT-HASH: fbb3881a3468f340
+SCOPE: delta added-exercise from 5cd3571020c4ddc7 base 81db4a6fd727
 
 ## Blocking
 (none)
 
 ## Polish
-1. L1-09 still joins two unrelated situations (violin spectrum, passing car) in one level 1 task; readable, so only a note for a later set.
+1. fy5-14-L2-08 — the direction reasoning (beat rises after tuning) is also in L3-02; here it is the simpler version with a graph. Fine as a bridge, but then keep L3-02 harder or drop its overlap later.
+2. solutions.md (L1-10) — "kolme merkitsevää numeroa" for 1400 Hz is odd (two or four); say "tarkkuus kuten luettu perustaajuus".
 
 ## Checked
-- light delta review (teacher 2026-11-07), LOPS extension marking: Doppler calculation tasks L1-04, L2-03, L2-04, L2-05, L2-07, L3-01, L3-04 carry the "Syventävä tehtävä" tag and are not core; core path is now L1-05, L1-07, L2-06, and the remaining unmarked Doppler items (L1-07, L1-09) are qualitative and need no formula. Consistent with the lesson's learn/deepen goals.
-- Round 2. Checked from text only (no renders).
-- Round 1 Major fixed: stem, statement 1 feedback and solution now say "Voimakkain piikki"; no contradiction with the 1320 Hz peak.
-- Statement 2 is now flat (no "voi silti" hedge); no true/false statement is identifiable by hedging or length.
-- Truth values unchanged and correct: 1 F, 2 T, 3 F, 4 F, 5 T; warned mistakes still the distractors.
+- L1-10: f1 = 200 Hz is the lowest peak, not the strongest; f7 = 1400 Hz correct; the trap is a real misconception; new vs L1-03 (given f1) and L1-09 (statements).
+- L2-08: beat period 0,25 s gives 4 Hz, 519 Hz correct; distractors each hold one error (side, equal frequencies, 8 Hz from counting troughs); feedback explains the wax logic without naming the answer early; reading the beat period from an envelope is new.
+- Figures give needed values, nothing written as answers; text only (no renders).

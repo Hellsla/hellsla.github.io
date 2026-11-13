@@ -1,14 +1,15 @@
 VERDICT: FAIL
-CONTENT-HASH: 0d489920ee94599b
+CONTENT-HASH: b4c22c46c6d22999
+
 ## Blocking
-- exercises.json (fy5-6-L1-10) — repeats fy5-6-L1-08: Earth's orbital speed around the Sun, 29,8 km/s, from r = 1,496·10⁸ km (the solution even says the result is the same as from the period). The figure read (mean of 147,1 and 152,1) only replaces a given number. Fix: use the figure for something new at level 1, e.g. compare the speed at the radius of Halley's perihelion circle, or drop it.
-- exercises.json (fy5-6-L1-11) — a near copy of L1-05 (probe orbiting the Moon, v from M and r, answer 1,55 vs 1,63 km/s); the only additions are the MAFY lookup and r = R + h. Level 1 already holds v = sqrt(γM/r) five times (01, 03, 05, 07, 10). Fix: keep the MAFY lookup but change the question (e.g. the orbital period of the probe, or the g at the orbit), or replace L1-05.
+exercises.json (fy5-6-L1-11) — too heavy for level 1 and a variant of L2-02: three steps (r = R + h, v = √(γM/r), T = 2πr/v) plus a lookup, where L2-02 is the same orbit-at-altitude structure for Mars (R + h, v); level 1 is one formula or one step. Fix: give the orbit radius (keeping the MAFY lookup and asking T), or move the task to level 2 and drop the overlap with L2-02.
 
 ## Polish
-- exercises.json (L2-08) — asks circular-orbit speeds for a comet on a long ellipse; the solution says so, but the situation is artificial. Better: two circular orbits of the Earth and Halley's perihelion distance, as planned in the text.
-- Hint of L1-11 names a section (*Aurinkokunta*), not just the table.
+1. fy5-6-L2-08 — comet speeds on circular orbits at perihelion and aphelion is artificial; a student may take 7,7 as the real speed ratio (the solution warns). Two circles (Earth, Halley perihelion distance) would be cleaner.
+2. fy5-6-L1-10 — mean of two readings, formula, mm/s² conversion: at the top of level 1.
+3. L1-11 hint names the section (Aurinkokunta); fine.
 
 ## Checked
-- Text and figure description only (no renders); arithmetic of all three solutions recomputed: 29,8 km/s, 1,55 km/s, 7,7.
-- fy5-6/radat gives all needed values; no answer in it.
-- inquiry.json not opened.
+- L1-10: a = γM/r² = 5,93 mm/s² recomputed; asks for acceleration, no longer repeats L1-08 (speed from the period).
+- L2-08: √(5250/88) = 7,72 correct; the new skill is the scaling v ∝ 1/√r.
+- Figure radat gives all values, no answer; text only (no renders).

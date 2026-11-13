@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 628ca4af401209e3
+CONTENT-HASH: 90895d9429b95817
+SCOPE: delta added-exercise from 628ca4af401209e3 base 81db4a6fd727
 
 ## Blocking
 (none)
 
 ## Polish
-1. fy5-9/exercises/exercises.json:20 (L2-08) — the correct reason is the only one that contrasts both oscillators, and 'jousen pysyy samana' in the answer is elliptical — add 'jaksonaika' ('jousivärähtelijän jaksonaika pysyy samana') and let one distractor name both oscillators too.
-2. fy5-9 L2-08 wrong-choice feedback of option 1 already states the stage-2 reason (g not in T=2π√(m/k), weight only shifts equilibrium) — fine after answering, but keep it out of any hint shown before the reason stage.
+1. exercises.json (L1-10) — same k = 120 N/m and the same E = ½kA² as L1-04; only the amplitude is read from the graph. Choose another k or ask something the graph adds (amplitude as the distance from equilibrium) so the pair are not twins.
+2. exercises.json (L1-09) — a Mars pendulum again (L2-04); new is the MAFY lookup, so keep, but vary the length or body for variety.
 
 ## Checked
-- L2-08 (heilurin/jousen jaksonaika Kuussa): 9,81/1,62 = 6,06, √ = 2,461, 2,46 s correct; vertical-spring independence of g is taught in the brief (paino siirtää vain tasapainoasemaa).
-- Distractors catch the chapter's mistakes: mass/weight mix-up (opt 4, reason 1), forgotten root (opt 3, 6x), spring depends on g (opt 1); reason 4 is a true statement that does not explain.
-- Correct stage-1 feedback gives the numbers only, not the reason; correct option not identifiable by length or hedging.
-- Solution has Kysytty/Periaate/Mallivastaus, aligned chain short enough for 390 px (estimate, not measured).
-- Level 2 count, no repeat of the worked example. Checked from text only (no renders): scope against the brief, answer arithmetic recomputed, option forms, feedback per option, Finnish, phone width judged from formula length.
+- L1-09: T = 2π√(1,00/3,72) = 3,26 s correct; MAFY lookup with a 4 % tolerance and a named table.
+- L1-10: E = ½·120·0,030² = 0,054 J correct; level 1; practises reading amplitude from x(t) (the graph skill is otherwise only at level 2).
+- L2-09: v_max = 2πA/T = 0,47 m/s correct; two readings (A, T) and a link of E and T that L1-04/L3-01 do not need; solution staged. Same figure as L1-10 but a different quantity.
+- Figure gives A and T with no k; text only (no renders).

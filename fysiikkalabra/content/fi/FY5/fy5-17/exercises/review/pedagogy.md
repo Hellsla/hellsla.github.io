@@ -1,14 +1,13 @@
-VERDICT: PASS
-CONTENT-HASH: caaeaa93666bca57
+VERDICT: FAIL
+CONTENT-HASH: fdc29bc0621bfb24
 
 ## Blocking
-(none)
+exercises.json (fy5-17-L2-09) — repeats L2-05 b: both ask the thickness of the layer between echoes (2,31 cm vs 3,87 cm) from a three-echo A-scan with v = 1540 m/s, d = vt/2 and a difference; only the data source changes (figure instead of a table). Practises nothing new. Fix: ask something L2-05 does not, e.g. the pulse repetition limit for echo C is L2-03, so instead the layer thickness given a different speed in the layer, or which boundary reflects most strongly and why, or replace with a different figure task.
 
 ## Polish
-1. Stage-1 option 1 ("yhtä kaukana") still contradicts the data (8 s vs 24 s) directly; weak but harmless distractor.
+1. fy5-17-L1-09 — a near copy of L1-03 (sonar depth from t); the new part is the MAFY lookup and ms conversion; acceptable, but a different geometry (e.g. the echo off a wall in air) would vary it.
 
 ## Checked
-- Round 2. Checked from text only (no renders).
-- Round 1 Major fixed: correct stage-1 feedback is now "Oikein. Valitse seuraavaksi perustelu, joka selittää vastauksesi." and leaks no reason.
-- "noin" dropped from the correct choice (ratio is exactly 3); correct reason shortened to 93 characters against 83-90, no longer clearly the longest.
-- d = 8,4 km/s · Δt: 67 km and 2,0·10² km, ratio 3 correct; reasons 1 and 4 remain the confusion and the true-but-irrelevant distractors.
+- L1-09: 1402,4 · 0,020 / 2 = 14,0 m correct, MAFY table named, 4 % tolerance; the solution warns against 1540 m/s.
+- L2-09 arithmetic 1540·30e-6/2 = 2,31 cm correct; figure gives A at 20 and B at 50 µs, nothing else needed.
+- Text only (no renders).

@@ -1,13 +1,15 @@
-VERDICT: FAIL
-CONTENT-HASH: cccfc1b2c9ae2b50
+VERDICT: PASS
+CONTENT-HASH: 682917e1074659db
+SCOPE: delta added-exercise from 23f25874b515562a base 81db4a6fd727
+
 ## Blocking
-- exercises.json:145 (fy5-1-L1-10) — repeats fy5-1-L1-04: the same figure fy5-1/ruutu, the same bar, the same horizontal force, the same arm (3 squares) read from the grid; only the unknown is swapped (F from M instead of M from F). The student gains no new skill, and the inverse step M/r is already L1-05. Fix: use a different figure situation (e.g. a slanted force whose arm must be found, or two forces on the grid with opposite senses, kiertosuunta), or drop the task.
+(none)
 
 ## Polish
-- solutions.md (L1-10) — Järkevyys is good, but if kept, the text should not fix the squares count in the solution only; fine as is.
+1. solutions.md (L1-10) — Järkevyys is good; the Pythagoras step (3-4-5) makes it a light two-step task, acceptable at level 1.
 
 ## Checked
-- Text and figure description read (no renders); figure gives every needed value (grid 0,10 m, O and P), description matches, arm not drawn so the answer is not given.
-- Arithmetic 21/0,30 = 70 N correct; the trap (bar length 5 squares instead of arm) is what the lesson warns about.
-- Level 1 fits; mix of kinds in the set otherwise unchanged.
-- Could not compare with inquiry.json (not opened in an exercise review).
+- L1-10 reworked: perpendicular force at P, arm = whole bar read from the grid (5 squares by Pythagoras), M = 30 N · 0,50 m = 15 Nm; recomputed, correct.
+- No longer repeats L1-04 (horizontal force, arm 3 squares, M from F): this one practises that a perpendicular force has the full bar as its arm, plus reading length from a grid; L1-05 is the inverse M/r, not this.
+- Figure shows O, P and a horizontal force; the task says it is replaced, so no confusion; the answer is not drawn.
+- Level 1 fits; mix of kinds unchanged. Text and solution read only (no renders).
