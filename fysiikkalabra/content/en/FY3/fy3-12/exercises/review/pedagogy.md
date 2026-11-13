@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: d29908553f7258cb
+CONTENT-HASH: e958149d90cd81ad
 
 ## Blocking
 None.
 
 ## Polish
-1. L2-09 is a single multiplication; the sentence saying the figure value is a mean over the whole surface tells the step. Optional: drop it so the student decides to multiply by the area.
+1. L2-09 is a single multiplication; the sentence "it is a mean over the whole surface" tells the step. Optional: drop it.
 
 ## Checked
-- Round 2 delta judged in context (round-1 findings addressed).
-- L2-09 now reads a value, multiplies by the area and converts to PW; level 2 fits, no repeat of L1-05 (same figure, different skill). L3-03 defines the coefficient of performance before use; 984 kWh checked. L1-05 solution names the dashed arrow 'lämpösäteily'.
-- Full set read: levels, counts, mix of kinds (choices, data, error analysis, model) fine; solutions staged with principle first; units and Finnish fine.
+- Round 3 delta: L1-05 "Reading the graph" now quotes the English figure label "heat radiation" instead of "lämpösäteily"; a reader of the English page can now find the arrow by its label. The explanation and the answer (239 W/m²) are unchanged.
+- Earlier round-2 changes (L2-09 in petawatts, L3-03 coefficient of performance defined) remain sound.
