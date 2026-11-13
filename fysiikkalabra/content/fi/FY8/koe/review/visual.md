@@ -1,18 +1,22 @@
 VERDICT: FAIL
-CONTENT-HASH: 0907b18528ce64eb
+CONTENT-HASH: 8c38f079e02d9c6d
 
 ## Blocking
-- [Major] solutions.md k5 a Sijoitus (page-390-35) and k5 b Sijoitus (page-390-36) — at 390 px the substitution fraction `6,626·10^-34 J s · 2,998·10^8 m/s` over the denominator is cut at the card's right edge: the unit reads "m/:" with "s" lost; the same chain is clipped again in k5 b (λ = hc/(E2−E1)) and the corresponding k5 d chain (page-390-37, 38) — a unit clipped inside a worked solution is essential content cut, the same defect as the previously fixed chains — fix: let the fraction numerator wrap after an operator (break the numerator row after `\cdot`) or give the row horizontal fitting in mathlayout, as was done for k4 and k2 chains; recheck k5 a–d at 390 px.
+- [Critical] solutions.md k7 c Sijoitus (capture page-390-55) — the first row of the E chain is clipped at 390 px: "(2,998 · 10^8 m/" ends at the box edge, so "s)^2" is missing — essential information clipped; the squared speed is unreadable — fix the chain so every row wraps inside the box (split before the parenthesis or make the row break after the "·"); check that the page never clips a row.
+- [Major] solutions.md k5 a, k5 b, k5 c, k7 c Sijoitus (page-390-35/36/37/55) — the hand-split chain "$\lambda$ $hc = 6{,}626 \cdot 10^{-34} …$ ja $= \dfrac{…}{…}$" renders "λ hc = …" (k5 c: "hc/λ hc = …"). It reads as the false equation λ·hc = 6,626·10^-34 J s, and the later row "= fraction" has no left side. Notation is ambiguous — rewrite as separate chains: "$hc = … = 1{,}986 \cdot 10^{-25}\,\text{J}\,\text{m}$ ja $\lambda = \dfrac{hc}{E} = \dfrac{…}{…} \approx …$". In k5 c write "$E_\text{k} = \dfrac{hc}{\lambda} - |E_2|$" as its own chain, and put "ja" between chains, never between a row and its "=".
 
 ## Polish
-- [Minor] k1 b Perustelu (page-390-7) — the Sijoitus chain sits inside running prose, so `W = 6,626·10^-34 J s` then `· 5,6·10^14 Hz` breaks mid-product on a phone; readable but better as its own row.
-- [Minor] fig fy8-k2-graph — the dashed extrapolation to the origin is labelled "ekstrapolointi" but the label sits under the line, close to the dashed guide at 4,0; move it a little right.
+- [Minor] k2 b Sijoitus — uses "ΔU" while the formula has "ΔU_k"; use ΔU_k throughout.
+- [Minor] k4 a/b Sijoitus — "E_s = 0,030377 · 931,5 MeV" and "Q = 0,018883 · 931,5 MeV" drop the unit u of the mass defect; write "0,030377 u · 931,5 MeV/u" (or keep the u).
+- [Minor] Sijoitus chains mix boxed rows (white inner cards) and bare rows within one step (k4 b, k5 b "Muunnokset"), so the equals column jumps; keep one style per step.
+- [Minor] k2 c Sijoitus — "≈ … J s ja h_min" ends a row with a new quantity, which makes the next "= …" row hard to match to it; start h_min on its own row.
 
 ## Checked
-- Contact sheets 2, 3, 4; figures fig-1 (k1 stopping-potential graph), fig-3 (k2), fig-6 (k3), fig-18 (k6) at 390 px: axes with quantity and unit, ticks, points distinct from line, extrapolation dashed, readable; fig-2, 4, 5, 7+ are 28-100 px inline KaTeX glyphs, not figures.
-- Page captures 390: k1 b (page-7), k2 b and k3 c (contact-2 #14-#24, readable, no clipping), k4 a, b, c (page-29, 30: aligned rows, in boxes, no clipping), k5 a/b (page-35, 36: CLIPPED).
-- 1280: page-28 (k5 end, rubric): fine. k5 chains at 1280 not individually opened.
-- Hash taken from the packet and stamp.txt (0907b18528ce64eb); scripts/reviews.py hash does not support exam ids, so it could not be rerun at the end.
+- fig-1 (k1 b graph), fig-3 (k2 graph), fig-6 (k3 graph), fig-18 (k6 graph) at 390: axes, units, ticks, dashed extrapolation, labelled points all fine; the other figure captures are tiny inline formulas and not figures.
+- 390 page parts 7, 13, 14, 15, 22, 23, 28–31, 35–38, 55 (the k1 b, k2 b/c, k3 c/d, k4 a–c, k5 a–c and k7 c solution chains); k4 a–c are fine, k3 c is fine.
+- 1280: page parts 30 and 40 (k7 b–c, plus a task card) — the layout is in order at this width.
+- contact-1…5 for triage.
+- I did not open every 1280 capture.
 
 ## Scores
-illustrations 5 · typography 3 · Finnish 4 · accessibility 4
+illustrations 4 · typography 2 · Finnish 4 · accessibility 3
