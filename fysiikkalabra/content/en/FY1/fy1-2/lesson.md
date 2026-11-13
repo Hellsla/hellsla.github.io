@@ -478,7 +478,7 @@ When you move to a smaller unit, the numerical value grows: $4.2\,\text{km} = 4.
 ### A unit for every scale
 A unit is chosen so that the numerical value is easy to read. In the chapter *Physics as a science and the scales of the universe* you saw that the structures of matter and of the universe lie on steps of powers of ten. Each step has a convenient unit:
 
-| Structure | Size | Unit | Value of the unit |
+| Structure | Size or distance | Unit | Value of the unit |
 |---|---|---|---|
 | **Atomic nucleus** | about $10^{-15}\,\text{m}$ | femtometre | $1\,\text{fm} = 10^{-15}\,\text{m}$ |
 | **Atom** | about $10^{-10}\,\text{m}$ | nanometre | $1\,\text{nm} = 10^{-9}\,\text{m}$ |

@@ -478,7 +478,7 @@ Kun siirrytään pienempään yksikköön, lukuarvo kasvaa: $4{,}2\,\text{km} = 
 ### Jokaiselle mittakaavalle oma yksikkö
 Yksikkö valitaan niin, että lukuarvo on helppo lukea. Luvussa *Fysiikka tieteenä ja maailmankaikkeuden mittasuhteet* nähtiin, että aineen ja maailmankaikkeuden rakenteet ovat kymmenpotenssien portailla. Jokaiselle portaalle on kätevä yksikkö:
 
-| Rakenne | Koko | Yksikkö | Yksikön arvo |
+| Rakenne | Koko tai etäisyys | Yksikkö | Yksikön arvo |
 |---|---|---|---|
 | **Atomiydin** | noin $10^{-15}\,\text{m}$ | femtometri | $1\,\text{fm} = 10^{-15}\,\text{m}$ |
 | **Atomi** | noin $10^{-10}\,\text{m}$ | nanometri | $1\,\text{nm} = 10^{-9}\,\text{m}$ |
