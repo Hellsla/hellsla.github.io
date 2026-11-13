@@ -32,7 +32,7 @@
         },
         {
           "text": "Vedestä siirtyy kylmyyttä kupariin, kunnes kupari on yhtä kylmää kuin vesi oli alussa.",
-          "feedback": "Kylmyys ei ole suure, joka siirtyy. Energiaa siirtyy aina kuumemmasta kylmempään, ja vesikin lämpenee, joten loppulämpötila on alkulämpötilojen välissä."
+          "feedback": "Kylmyys ei ole suure, joka siirtyy. Lämpötilaeron vuoksi energiaa siirtyy nettomääräisesti kuumemmasta kylmempään, ja vesikin lämpenee, joten loppulämpötila on alkulämpötilojen välissä."
         },
         {
           "text": "Energiaa siirtyy, kunnes kuparin ja veden sisäenergiat ovat yhtä suuret.",

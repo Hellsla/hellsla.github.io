@@ -174,7 +174,11 @@ lämpökapasiteetti :: C = c m
 ```
 Se kertoo, kuinka monta joulea kappaleen lämpötilan nostaminen yhdellä kelvinillä vaatii. Tässä $C$ on lämpökapasiteetti (J/K), $c$ on ominaislämpökapasiteetti ja $m$ on massa. Jos kappaleen lämpökapasiteetti on suuri, kappale lämpenee ja jäähtyy hitaasti.
 
-Eristetyssä astiassa kuuman kappaleen $1$ luovuttama lämpömäärä on yhtä suuri kuin kylmän kappaleen $2$ vastaanottama:
+Eristetyssä astiassa energia säilyy. Astian omaa lämpökapasiteettia ei oteta huomioon. Kuuman kappaleen $1$ luovuttama lämpömäärä on yhtä suuri kuin kylmän kappaleen $2$ vastaanottama:
+```latex
+Q_\text{luovutettu} = Q_\text{vastaanotettu}
+```
+Kummallekin kappaleelle pätee $Q = c m \Delta T$. Siksi yhtälö on
 ```latex
 c_1 m_1 (T_1 - T) = c_2 m_2 (T - T_2)
 ```
@@ -299,6 +303,9 @@ Moni ajattelee, että lämpömäärä ja lämpötila ovat sama asia. Moni ajatte
 Toinen virhe on laskea tasapainolämpötila keskiarvona. Esimerkki: $1{,}0\,\text{kg}$ 80-asteista vettä kaadetaan $3{,}0\,\text{kg}$:aan 20-asteista vettä. Veden ominaislämpökapasiteetti $c$ on yhtälön molemmilla puolilla, joten se supistuu pois:
 ```latex
 \begin{aligned}
+&Q_\text{luovutettu} = Q_\text{vastaanotettu} \\[6pt]
+&c \cdot 1{,}0\,\text{kg} \cdot (80\,{}^\circ\text{C} - T) \\
+&\quad = c \cdot 3{,}0\,\text{kg} \cdot (T - 20\,{}^\circ\text{C}) \\[6pt]
 &1{,}0\,\text{kg} \cdot (80\,{}^\circ\text{C} - T) \\
 &\quad = 3{,}0\,\text{kg} \cdot (T - 20\,{}^\circ\text{C}) \\[6pt]
 &80\,{}^\circ\text{C} - T = 3T - 60\,{}^\circ\text{C} \\
@@ -306,7 +313,7 @@ Toinen virhe on laskea tasapainolämpötila keskiarvona. Esimerkki: $1{,}0\,\tex
 &T = 35\,{}^\circ\text{C}
 \end{aligned}
 ```
-Kuuma vesi on vasemmalla puolella, kuten yleisessä yhtälössä. Kolmannella rivillä yhtälö on jaettu puolittain kilogrammalla ja sulut on kerrottu auki. Lopputulos ei siis ole $50\,{}^\circ\text{C}$ vaan $35\,{}^\circ\text{C}$. Kylmää vettä on nimittäin kolme kertaa enemmän kuin kuumaa. Saman tuloksen saa painotetulla keskiarvolla: $T = (3{,}0\,\text{kg} \cdot 20\,{}^\circ\text{C} + 1{,}0\,\text{kg} \cdot 80\,{}^\circ\text{C}) : 4{,}0\,\text{kg} = 35\,{}^\circ\text{C}$.
+Kuuma vesi on vasemmalla puolella, kuten yleisessä yhtälössä. Viimeisen ryhmän ensimmäisellä rivillä yhtälö on jaettu puolittain kilogrammalla ja sulut on kerrottu auki. Lopputulos ei siis ole $50\,{}^\circ\text{C}$ vaan $35\,{}^\circ\text{C}$. Kylmää vettä on nimittäin kolme kertaa enemmän kuin kuumaa. Saman tuloksen saa painotetulla keskiarvolla: $T = (3{,}0\,\text{kg} \cdot 20\,{}^\circ\text{C} + 1{,}0\,\text{kg} \cdot 80\,{}^\circ\text{C}) : 4{,}0\,\text{kg} = 35\,{}^\circ\text{C}$.
 
 Kolmas virhe on muuntaa $\Delta T$ kelvineiksi lisäämällä 273. Lämpötilan muutos on sama kummallakin asteikolla.
 

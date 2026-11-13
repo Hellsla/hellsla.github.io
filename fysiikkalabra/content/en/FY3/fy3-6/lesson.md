@@ -174,7 +174,11 @@ heat capacity :: C = c m
 ```
 tells how many joules it takes to raise the temperature of the object by one kelvin. $C$ is the heat capacity (J/K), $c$ the specific heat capacity and $m$ the mass. An object with a large heat capacity warms and cools slowly.
 
-In an insulated container, the heat given out by the hot object $1$ is equal to the heat received by the cold object $2$:
+In an insulated container, energy is conserved when the heat capacity of the container itself is ignored. The heat given out by the hot object $1$ is equal to the heat received by the cold object $2$:
+```latex
+Q_\text{given out} = Q_\text{received}
+```
+Since $Q = c m \Delta T$ holds for each object, this is
 ```latex
 c_1 m_1 (T_1 - T) = c_2 m_2 (T - T_2)
 ```
@@ -297,6 +301,9 @@ A calorimeter contains $0.300\,\text{kg}$ of water at a temperature of $20.0\,{}
 Many people think that heat and temperature are the same thing, or that objects heated to the same temperature have received the same amount of energy. Heating a kilogram of water and a kilogram of iron from $20\,{}^\circ\text{C}$ to $60\,{}^\circ\text{C}$ takes almost ten times as much energy for the water. Another mistake is to calculate the equilibrium temperature as a mean. When $1.0\,\text{kg}$ of 80-degree water is poured into $3.0\,\text{kg}$ of 20-degree water, the specific heat capacity of water $c$ is on both sides of the equation and cancels:
 ```latex
 \begin{aligned}
+&Q_\text{given out} = Q_\text{received} \\[6pt]
+&c \cdot 1.0\,\text{kg} \cdot (80\,{}^\circ\text{C} - T) \\
+&\quad = c \cdot 3.0\,\text{kg} \cdot (T - 20\,{}^\circ\text{C}) \\[6pt]
 &1.0\,\text{kg} \cdot (80\,{}^\circ\text{C} - T) \\
 &\quad = 3.0\,\text{kg} \cdot (T - 20\,{}^\circ\text{C}) \\[6pt]
 &80\,{}^\circ\text{C} - T = 3T - 60\,{}^\circ\text{C} \\
@@ -304,7 +311,7 @@ Many people think that heat and temperature are the same thing, or that objects 
 &T = 35\,{}^\circ\text{C}
 \end{aligned}
 ```
-The hot water is on the left side, as in the general equation. On the third line the equation has been divided on both sides by a kilogram and the brackets have been multiplied out. So the final result is not $50\,{}^\circ\text{C}$ but $35\,{}^\circ\text{C}$, because there is three times as much cold water as hot. The same result comes from the weighted mean: $T = (3.0\,\text{kg} \cdot 20\,{}^\circ\text{C} + 1.0\,\text{kg} \cdot 80\,{}^\circ\text{C}) : 4.0\,\text{kg} = 35\,{}^\circ\text{C}$.
+The hot water is on the left side, as in the general equation. On the first line of the last group the equation has been divided on both sides by a kilogram and the brackets have been multiplied out. So the final result is not $50\,{}^\circ\text{C}$ but $35\,{}^\circ\text{C}$, because there is three times as much cold water as hot. The same result comes from the weighted mean: $T = (3.0\,\text{kg} \cdot 20\,{}^\circ\text{C} + 1.0\,\text{kg} \cdot 80\,{}^\circ\text{C}) : 4.0\,\text{kg} = 35\,{}^\circ\text{C}$.
 
 A third mistake is to convert $\Delta T$ to kelvins by adding 273: a change in temperature is the same on both scales.
 
