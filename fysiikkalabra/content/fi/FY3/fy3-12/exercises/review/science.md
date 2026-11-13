@@ -1,16 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 94c37286703dbe0d
+CONTENT-HASH: bce692fc39b201a9
 
 ## Blocking
-- none
 
 ## Polish
-1. content/fi/FY3/fy3-12/exercises/solutions.md (L1-09) — Annettu still writes $T_\text{sisä} = 20\,{}^\circ\text{C}$ for a Celsius value. This was carried over from the previous report and is not part of this diff.
+- exercises/exercises.json (fy3-12-L2-09, text) and solutions.md (fy3-12-L2-09, Periaate) — multiplying $102\,\text{W/m}^2$ by the whole surface area is exact because the figure's values are means over the whole sphere (only the day side is lit). The task says only "neliömetriä kohti ilmakehän ylärajalla", and "Tehon jakautuminen on tasaista keskiarvoa" is vague. Write "keskimäärin koko maapallon pintaa kohti" in the task (as L2-04 says "keskimäärin") and in the principle "teho on keskiarvo koko maapallon pintaa kohti, joten kokonaisteho on keskiarvo kertaa ala".
+- lessons/FY3/fy3-12/answers.py:281 — the comment "# Added exercises (teacher 2026-11-12 …)" appears twice (lines 281 and 283); keep one.
 
 ## Checked
-- Diff: only the "Kuvaajan lukeminen" lines of the two solutions that use fy3-12/earth-flows changed (L1-05 and L2-09). No number, symbol or step changed.
-- figures.py earth-flows: the reflected arrow is `block_arrow(262,102 → 176,50)`. It starts beside the Earth (x 304) and points up and to the left, towards the Sun's side (x −4). "Auringon ja Maan välissä ylös vasemmalle osoittava nuoli" describes it correctly. The old wording, "ylempi oikea nuoli", was wrong, because the only right-hand arrow is the dashed thermal-radiation arrow (x 376–560).
-- "Alempi oikea nuoli, jonka arvo on kysymysmerkki" is the dashed arrow at y 150 on the right. Since it is the only arrow on the right, "alempi" is redundant but not wrong.
-- Physics is unchanged: reflection at the top of the atmosphere goes back to space; P_im = 341 − 102 = 239 W/m², which equals the thermal radiation out in balance; 102/341 = 29,9 %. The previous recomputations still hold.
-- The figure description (341 and 102 W/m², the unknown not to scale) still matches both solutions and gives away no answer.
-- Hash is identical at the start and the end.
+- All 19 numeric answers recomputed in one script with my own formulas (P = UAΔT with parallel parts, E = Pt, Q = cmΔT, albedo balance, the two-layer model); every one agrees with answers.py and the stored answer, and the stored 2–3 figure values stay inside their tolerances (e.g. L2-03 210 kWh against 211,7; L2-02 150 € against 149,2).
+- L2-09 (new two-step form): $102 \cdot 5{,}1 \cdot 10^{14}\,\text{W} = 5{,}20 \cdot 10^{16}\,\text{W} = 52\,\text{PW}$, 30 % of the incoming $174\,\text{PW}$; reading from the figure (the reflected arrow is labelled), conversion and check are right; two figures from $5{,}1 \cdot 10^{14}$.
+- L3-03: "lämpökerroin" is now defined in the task (kWh of heat per kWh of electricity), not called an efficiency, as the guardrails ask; $W = (U_1 - U_2)A\Delta T\,t/\varepsilon = 2755/2{,}8 = 984\,\text{kWh}$; the model answer says the pump moves heat and does not create it; the direct-electric comparison ($\varepsilon = 1$) is right.
+- L1-09: MAFY pine $\lambda = 0{,}14\,\text{W/(m·K)}$ (docs/mafy-arvot.tsv VERIFIED); $U = \lambda/d$ is given in the task, as it is not in the lesson.
+- L3-05: both balances give $S = 239/(1 - f/2) = 398\,\text{W/m}^2$; the interpolation gives 16,3 °C, and Stefan–Boltzmann gives 16,4 °C, so the example table is consistent; model limits named.
+- L2-07: the least-squares line through the origin gives $U = 0{,}350$; the origin is justified physically ($\Delta T = 0 \Rightarrow P = 0$); the guardrail fit sentence is used word for word.
+- Conditions stated where used: constant temperatures for $UA\Delta T$, no change of state for $cm\Delta T$ (L2-05, L3-01, L3-02); net transfer worded as in the guardrails (L1-08).
+- Choices L1-06, L1-07, L1-08: exactly one correct option each, every distractor really wrong and its feedback right; L2-08 order (60, 216, 288, 459 W) correct.
+- Figure earth-flows: 341 and 102 labelled, the asked arrow a "?"; the description gives the same values and not 239.
+- Hash same at start and end.

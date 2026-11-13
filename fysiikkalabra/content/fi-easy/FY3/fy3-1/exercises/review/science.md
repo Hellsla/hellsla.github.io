@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 8ddd30626374e40b
-SCOPE: delta added-exercise from c7c51e40b053e747 base 89bcb63b7431
+CONTENT-HASH: e406b191af20f91d
+SCOPE: delta added-exercise from c7c51e40b053e747 base 81db4a6fd727
 
 ## Blocking
 (none)
@@ -9,9 +9,9 @@ SCOPE: delta added-exercise from c7c51e40b053e747 base 89bcb63b7431
 - none
 
 ## Checked
-- fy3-1-L1-10: G = m g_Mars = 85,0 kg * 3,72 m/s2 = 316,2 N; answers.py, exercises.json and my own computation agree; 3 s.f. justified; the lesson's 3,71 m/s2 also falls inside the 4 % tolerance.
-- fy3-1-L2-08: figure weight-points (2..10 kg; 10..50 N, grid 2 kg / 10 N) gives G/m = 5 m/s2 on grid crossings; G = 12 kg * 5,0 m/s2 = 60 N; extrapolation past 10 kg justified by G proportional to m; description lists the points, not g.
-- Both stay in FY3 scope (weight as a measure of interaction, no Newton's laws); g in m/s2, N/kg = m/s2 noted correctly.
-- One script recomputed every added answer from the task text with my own formulas and compared answers.py, the Finnish and the Selkea suomi exercises.json: answer, unit, tolerance and figure id identical.
-- Every number in the fi-easy task texts and solution sections equals the Finnish (only the added gloss values 1 kg / 1 K differ); the physics is unchanged, the glosses are correct.
-- Solutions complete (given, principle, symbolic formula, conversions, substitution, rounding reason, reasonableness check).
+- The diff since the version I passed touches only fy3-1-L2-08's solution: the slope is now written as g = G/m = 5,0 m/s² (no N/kg, in line with the house rule), the accepted range is now 58,2–61,8 N, which is exactly 60 N ± 3 % and matches the tolerance 0,03, and "suuremman" is corrected to "suurempi".
+- L2-08 recomputed from figure weight-points: (4 kg; 20 N) and (10 kg; 50 N) give g = 5,0 m/s², and G = 12 kg · 5,0 m/s² = 60 N. answers.py gives 60. The extrapolation past 10 kg is justified by G ∝ m on one celestial body.
+- L1-10 unchanged: G = 85,0 kg · 3,72 m/s² = 316,2 N, so 316 N. The lesson's 3,71 m/s² is inside the 4 % tolerance.
+- My script compared fi-easy with the Finnish set: all 23 answers, units, tolerances and figure ids are identical, and so are the numbers in every task text and solution section.
+- The answers.py values agree with exercises.json within rounding of the shown answers.
+- Hash the same at start and end.

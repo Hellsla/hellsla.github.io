@@ -1,17 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 22036945998ce665
-SCOPE: delta added-exercise from e1dd7ab8f7baa8e3 base 89bcb63b7431
+CONTENT-HASH: 839f1b0810ea0dcf
+SCOPE: delta added-exercise from e1dd7ab8f7baa8e3 base 81db4a6fd727
 
 ## Blocking
 
 ## Polish
-- exercises/solutions.md (fy3-3-L2-08, Kuvaajan lukeminen) — "Pisteet ovat suoralla": the measured points lie only nearly on one line (pairwise slopes 0,26–0,28 kPa/°C). Per the guardrails, write "Pisteet ovat likimain samalla suoralla" and, ideally, take the slope from the fitted line (the least-squares line gives 54,0 °C; the endpoints give 54,5 °C, so the answer is unchanged).
-- exercises/solutions.md (fy3-3-L2-08, Vastaus) — "muulla mittapisteparilla … 53–56 °C hyväksytään": the last pair (75; 100 °C) gives 51,9 °C, which is outside the tolerance. Say "kaukana toisistaan olevalla pisteparilla".
-- exercises/exercises.json (fy3-3-L1-10) — as in round 1: the liquid is at its boiling point only when it boils at normal pressure, e.g. in an open dewar. Optional clause "avoimessa astiassa".
+- exercises/solutions.md (fy3-3-L2-08, Vastaus) — the figure reason "noin yhden kilopascalin tarkkuudella" is fair, but on a 25 kPa grid a reading of ±2 kPa is more realistic; the tolerance still covers that (see Checked), so only the wording could say "1–2 kPa".
+- exercises/exercises.json (fy3-3-L1-10) — as before, optional: liquid nitrogen is at −196 °C when it boils at normal pressure ("avoimessa astiassa").
 
 ## Checked
-- Round-1 blocker fixed: L2-08's five points are now in the task text, so the values no longer depend on reading the 25 kPa grid. The figure and its description list the same points and do not give the answer.
-- L2-08 recomputed: endpoints $k = 0{,}275\,\text{kPa/°C}$, $\theta = 15/0{,}275 = 54{,}5\,{}^\circ\text{C}$; least squares $54{,}0\,{}^\circ\text{C}$; every other pair gives 53,6–54,3 °C except (75; 100) at 51,9 °C. Tolerance 0,04 (52,3–56,7 °C) accepts the fit and the endpoint and neighbouring-pair methods. answers.py gives 54,5, which matches.
-- L2-08 physics: a closed rigid vessel (constant V and n) with a linear $p(\theta)$ stated as an assumption; solved in symbols before substitution; °C throughout, so no conversion needed. Two significant figures and the interpolation check are right.
-- L1-10 unchanged since round 1: $-196 + 273{,}15 = 77{,}15\,\text{K} \approx 77\,\text{K}$, MAFY value as checked then.
+- L2-08 now asks for the temperature at $100\,\text{kPa}$, inside the measured range (interpolation, not extrapolation); the linear $p(\theta)$ at constant $V$ and $n$ is stated in the task.
+- Recomputed from the figure's data: endpoints $k = 27{,}5/100 = 0{,}275\,\text{kPa/°C}$, $\theta = 25/0{,}275 = 90{,}9\,{}^\circ\text{C}$; least-squares line $90{,}2\,{}^\circ\text{C}$; neighbouring pair (75; 100 °C) $90{,}4\,{}^\circ\text{C}$. answers.py gives 90,9.
+- Tolerance 0,08 (83,6–98,2 °C) against the reading error: the start and end pressures each misread by up to ±1 kPa give 87,3–94,5 °C, and by ±2 kPa 83,6–98,2 °C, all accepted; so the tolerance covers a realistic reading error, and the fit and pair methods.
+- Cross-check with another correct model: $p \propto T$ from $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$ gives $T = 273{,}15 \cdot 100/75 = 364\,\text{K}$, i.e. $91\,{}^\circ\text{C}$, so the data are consistent with the lesson's model.
+- Figure: 75 kPa at 0 °C lies on a grid line, 102,5 kPa just above the 100 kPa line, as the solution says; the description lists the same five points and gives neither the slope nor the answer.
+- Solution: "lähes samalla suoralla" now as the guardrails ask; slope from distant points; solved in symbols before substitution; no conversion needed (°C throughout); two figures; the check (between 75 and 100 °C, nearer 100) is real and back-substitution gives 100 kPa.
+- L1-10 unchanged: $-196 + 273{,}15 = 77{,}15\,\text{K} \approx 77\,\text{K}$.
 - Rest of the set unchanged since PASS; hash same at start and end.

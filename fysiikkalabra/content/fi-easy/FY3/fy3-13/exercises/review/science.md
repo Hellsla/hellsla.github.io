@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 5b2bbbf91992607b
+CONTENT-HASH: 1384d394cc10e7a3
 SCOPE: delta added-exercise from 4bbd51e0c6f48c2d base 81db4a6fd727
 
 ## Blocking
 - none
 
 ## Polish
-1. content/fi-easy/FY3/fy3-13/exercises/solutions.md (fy3-13-L2-10, Periaate) — says "Pisteet ovat suoralla" while L2-09 now says "lähes suoralla" about the same figure; "lähes suoralla" here as well (the task's linearity assumption still carries the model).
+1. content/fi-easy/FY3/fy3-13/exercises/solutions.md (fy3-13-L2-10, Periaate): it still says "Pisteet ovat suoralla", while L2-09 says "lähes suoralla" about the same figure. Use "lähes suoralla" here too.
 
 ## Checked
-- Last round's Polish is fixed: the eye-fit ranges are now −260 … −286 °C (L2-09) and 53–57 kPa (L2-10). Both lie inside the ±5 % tolerance (own script: −259,1 … −286,4 °C; 52,14–57,63 kPa).
-- L2-09: "lähes suoralla" in task and solution matches the figure. The middle points (82, 89, 96 kPa) are within 0,4 kPa of the line through (0 °C; 75 kPa) and (100 °C; 102,5 kPa), so this is not an exact fit (guardrail "Fits").
-- L2-09 recomputed: k = 0,275 kPa/°C, θ₀ = θ₁ − p₁/k = −272,7 °C; answers.py −272,727 agrees. The uncertainty statement (about 10 °C or more) is consistent.
-- L2-10 recomputed: θ = −73,15 °C, p = 75 + 0,275 · (−73,15) = 54,88 kPa; answers.py 54,884 agrees. The task states the condition that the model holds outside the measured range. The check against p ∝ T is independent.
-- L1-09: θ₀ = −T₀ = −273,15 °C from MAFY 0 °C = 273,15 K; the reasoning (same degree size, shifted zero) is right.
-- Figure fy3-3/extrapolation-points: gives every value needed, its description lists the same points, and neither gives θ₀ away.
-- The other 21 exercises were not re-reviewed (unchanged, per the packet).
+- L2-09 now finds the zero point from the slope. The solution says, correctly, that the figure's axis ends at −150 °C, so θ₀ cannot be read off the graph and is computed as θ₀ = θ₁ − p₁/k. The earlier eye-fit range has been removed.
+- L2-09 recomputed: k = 27,5/100 = 0,275 kPa/°C, so θ₀ = −75/0,275 = −272,7 °C. answers.py gives −272,727.
+- The uncertainty statement is consistent: ±1 kPa at 100 °C gives k between 0,265 and 0,285, so θ₀ runs from −283 to −263 °C (about ±10 °C). The 5 % tolerance (±13,6 °C) covers this, and the "third digit not reliable" remark is right.
+- The independent check is valid: 75 kPa / 273,15 K = 0,275 kPa/K.
+- L2-10 unchanged: p = 75 + 0,275 · (−73,15) = 54,88 kPa, which agrees with p ∝ T.
+- L1-09 unchanged: θ₀ = −T₀ = −273,15 °C.
+- The script compared fi-easy with the Finnish: answers, units, tolerances, figure ids and all numbers are identical.
 - Hash the same at start and end.
