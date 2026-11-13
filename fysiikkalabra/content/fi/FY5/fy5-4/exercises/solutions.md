@@ -238,15 +238,15 @@ $N = 1{,}5\,mg - mg$, eli $N = 0{,}5\,mg$
 Tukivoima osoittaa alas ja on puolet painosta, kuten kuviossa C. Kuviossa A tukivoima on piirretty ylöspäin kuin lattian tukivoima; silloin kokonaisvoima olisi $G - N = 0{,}5\,G$ eikä $1{,}5\,G$. Kuviossa B ylöspäin osoittava keskipakoisvoima $\overline{F}_\text{kp}$ kumoaa kokonaisvoiman, vaikka vaunu kiihtyy, eikä mikään kappale vaikuta tällä voimalla. Kuviossa D nopeus on piirretty voimaksi, vaikka vaunuun ei vaikuta liikkeen suuntaista voimaa.
 
 ## fy5-4-L2-09
-**Annettu:** kuvaajan piste $v = 20\,\text{m/s}$, $a_\text{n} = 5{,}0\,\text{m/s}^2$; tasainen ympyräliike vaakasuorassa kaarteessa
+**Annettu:** kuvaajan piste $v = 15\,\text{m/s}$, $a_\text{n} = 3{,}0\,\text{m/s}^2$; tasainen ympyräliike vaakasuorassa kaarteessa
 **Kysytty:** kaarteen säde $r$ yksikössä $\text{m}$
 **Periaate:** Auto on tasaisessa ympyräliikkeessä, joten normaalikiihtyvyys on $a_\text{n} = \tfrac{v^2}{r}$. Käyrän jokainen piste kuuluu samaan kaarteeseen, joten yksi luettu piste riittää säteen määrittämiseen.
-**Kuvaajan lukeminen:** Merkitty piste on pystysuoran apuviivan $v = 20\,\text{m/s}$ ja vaakasuoran apuviivan $a_\text{n} = 5{,}0\,\text{m/s}^2$ risteyksessä. Luetaan siitä nopeus ja normaalikiihtyvyys; säde saadaan niiden avulla.
+**Kuvaajan lukeminen:** Merkitty piste on pystysuoran apuviivan $v = 15\,\text{m/s}$ ja vaakasuoran apuviivan $a_\text{n} = 3{,}0\,\text{m/s}^2$ risteyksessä. Luetaan siitä nopeus ja normaalikiihtyvyys; säde saadaan niiden avulla.
 **Kaava:** $a_\text{n} = \dfrac{v^2}{r}$, josta $r = \dfrac{v^2}{a_\text{n}}$
 **Muunnokset:** Yksiköt ovat valmiiksi $\text{m/s}$ ja $\text{m/s}^2$, joten muunnoksia ei tarvita.
-**Sijoitus:** $r = \dfrac{(20\,\text{m/s})^2}{5{,}0\,\text{m/s}^2} = \dfrac{400\,\text{m}^2/\text{s}^2}{5{,}0\,\text{m/s}^2} = 80\,\text{m}$
-**Vastaus:** $r = 80\,\text{m}$, kaksi merkitsevää numeroa kuten luetussa kiihtyvyydessä $5{,}0\,\text{m/s}^2$.
-**Järkevyys:** Kaarre, jossa $20\,\text{m/s}$ ($72\,\text{km/h}$) antaa vain noin $0{,}5\,g$:n kiihtyvyyden, on loiva kaarre, ja $80\,\text{m}$ sopii siihen. Tarkistus toisesta pisteestä: nopeudella $10\,\text{m/s}$ pitäisi olla $\tfrac{100}{80} = 1{,}25\,\text{m/s}^2$, ja käyrä kulkee siinä välillä $1$ ja $2$.
+**Sijoitus:** $r = \dfrac{(15\,\text{m/s})^2}{3{,}0\,\text{m/s}^2} = \dfrac{225\,\text{m}^2/\text{s}^2}{3{,}0\,\text{m/s}^2} = 75\,\text{m}$
+**Vastaus:** $r = 75\,\text{m}$, kaksi merkitsevää numeroa kuten luetussa kiihtyvyydessä $3{,}0\,\text{m/s}^2$.
+**Järkevyys:** Kaarre, jossa $15\,\text{m/s}$ ($54\,\text{km/h}$) antaa vain noin $0{,}3\,g$:n kiihtyvyyden, on loiva kaarre, ja $75\,\text{m}$ sopii siihen. Tarkistus toisesta pisteestä: nopeudella $10\,\text{m/s}$ pitäisi olla $\tfrac{100}{75} \approx 1{,}33\,\text{m/s}^2$, ja käyrä kulkee siinä välillä $1$ ja $2$.
 
 ## fy5-4-L3-04
 **Annettu:** $m = 60{,}0\,\text{kg}$; alhaalla $v_1 = 27{,}2\,\text{m/s}$ ja $a_1 = 53{,}2\,\text{m/s}^2$; ylhäällä $v_2 = 14{,}0\,\text{m/s}$ ja $a_2 = 14{,}1\,\text{m/s}^2$; $g = 9{,}81\,\text{m/s}^2$; esimerkkiaineisto; ilmanvastus ja vierimisvastus jätetään huomiotta

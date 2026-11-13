@@ -193,15 +193,15 @@ def kuvaaja():
 
 
 def kuvaaja_a():
-    """Task fy5-4-L2-09: a_n against v of an unknown level curve (r = 80 m, not stated); the marked point (20, 5,0) is read."""
+    """Task fy5-4-L2-09: a_n against v of an unknown level curve (r = 75 m, not stated); the marked point (15, 3,0) is read."""
     f = Fig("fy54-kuvaaja-a", 360, "Kuvaaja mittakaavassa: auton normaalikiihtyvyys a n metreinä sekunnissa toiseen ratanopeuden v funktiona "
             "kaarteessa. Vaaka-akselilla ratanopeus nollasta 30 metriin sekunnissa, apuviivat ja lukuarvot viiden välein; pystyakselilla "
             "normaalikiihtyvyys nollasta 12:een, apuviivat yhden välein ja lukuarvot kahden välein. Oranssi käyrä nousee origosta yhä "
-            "jyrkemmin. Käyrälle on merkitty piste apuviivoin: nopeudella 20 normaalikiihtyvyys on 5.")
+            "jyrkemmin. Käyrälle on merkitty piste apuviivoin: nopeudella 15 normaalikiihtyvyys on 3.")
     ax = Axes(f, (86, 300), (420, 60), x=(0, 30), y=(0, 12), xticks=[5, 10, 15, 20, 25, 30], yticks=list(range(1, 13)),
               xlabel=r"v\ (\text{m/s})", ylabel=r"a_\text{n}\ (\text{m/s}^2)", yfmt=lambda t: fi(t) if t % 2 == 0 else "")
-    ax.curve(lambda v: v * v / 80, 0, 30, HEAT, 3)
-    ax.guide(20, 5.0); ax.point(20, 5.0, HEAT)
+    ax.curve(lambda v: v * v / 75, 0, 29, HEAT, 3)
+    ax.guide(15, 3.0); ax.point(15, 3.0, HEAT)
     return f.svg()
 
 
@@ -213,7 +213,7 @@ def kuvaaja_b():
             "origosta yhä jyrkemmin. Käyrälle on merkitty piste apuviivoin: nopeudella 20 voima on 8.")
     ax = Axes(f, (86, 300), (420, 60), x=(0, 25), y=(0, 12), xticks=[5, 10, 15, 20, 25], yticks=list(range(1, 13)),
               xlabel=r"v\ (\text{m/s})", ylabel=r"F\ (\text{kN})", yfmt=lambda t: fi(t) if t % 2 == 0 else "")
-    ax.curve(lambda v: 1.2 * v * v / 60, 0, 25, FORCE, 3)
+    ax.curve(lambda v: 1.2 * v * v / 60, 0, 24, FORCE, 3)
     ax.guide(20, 8.0); ax.point(20, 8.0, FORCE)
     return f.svg()
 
@@ -410,7 +410,7 @@ REUSE = {
     "muutos": "reveals: the velocity change and the normal acceleration of uniform circular motion point to the centre (a theory figure)",
     "kaarre": "reveals: the force diagram of a car in a level curve, friction towards the centre (a theory figure)",
     "kuvaaja": "reveals: a_n = v²/r against v for r = 50 m and 100 m (a theory graph)",
-    "kuvaaja-a": "safe: a_n(v) of a level curve, point (20 m/s, 5,0 m/s²) marked, radius not stated (task fy5-4-L2-09)",
+    "kuvaaja-a": "safe: a_n(v) of a level curve, point (15 m/s, 3,0 m/s²) marked, radius not stated (task fy5-4-L2-09)",
     "kuvaaja-b": "safe: friction force F(v) of a 1200 kg car in a level curve, point (20 m/s, 8,0 kN) marked, radius not stated (task fy5-4-L3-06)",
     "nyppyla": "reveals: N < G at the top of a bump and N > G at the bottom of a dip (a theory figure)",
     "esimerkki": "reveals: the force diagram of the worked example (car in a level curve)",

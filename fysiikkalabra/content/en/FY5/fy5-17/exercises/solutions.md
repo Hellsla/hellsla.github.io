@@ -216,11 +216,11 @@ The ratio is $\tfrac{d_\text{B}}{d_\text{A}} = \tfrac{24.0\,\text{s}}{8.0\,\text
 
 ## fy5-17-L2-09
 **Given:** from the figure the times of the echoes, the speed of sound in tissue $v = 1540\,\text{m/s}$
-**Asked:** the thickness $\Delta d$ of the layer between the boundaries of echoes B and C, in centimetres
+**Asked:** the thickness $\Delta d$ of the layer between the boundaries of echoes A and B, in centimetres
 **Principle:** Each echo comes from one boundary, and the pulse travels to the boundary and back. The thickness of the layer is the difference of two depths, so it follows from the difference of the echo times with the same formula as a depth.
-**Reading the graph:** Echo B is at $t_\text{B} = 50\,\mu\text{s}$ on the time axis and the tall echo C at $t_\text{C} = 90\,\mu\text{s}$; they are read at the peaks against the grid lines. The time spent in the layer is $t_\text{C} - t_\text{B} = 40\,\mu\text{s}$.
-**Formula:** $d = \dfrac{v t}{2}$, so $\Delta d = d_\text{C} - d_\text{B} = \dfrac{v\,(t_\text{C} - t_\text{B})}{2}$
-**Conversions:** $40\,\mu\text{s} = 40 \cdot 10^{-6}\,\text{s}$; finally $1\,\text{m} = 100\,\text{cm}$.
-**Substitution:** $\Delta d = \dfrac{1540\,\text{m/s} \cdot 40 \cdot 10^{-6}\,\text{s}}{2} = 0.0308\,\text{m} = 3.08\,\text{cm}$
-**Answer:** $3.08\,\text{cm}$, three significant figures as in the speed $1540\,\text{m/s}$.
-**Reasonableness:** The depths are $d_\text{B} = 3.85\,\text{cm}$ and $d_\text{C} = 6.93\,\text{cm}$, and their difference is $3.08\,\text{cm}$. The depth $6.93\,\text{cm}$ is a sensible distance from the skin to the thigh bone, so the layer fits between the skin and the bone. Echo C comes from the bone: bone reflects and absorbs almost all of the ultrasound, so no echoes come from behind it.
+**Reading the graph:** Echo A is at $t_\text{A} = 20\,\mu\text{s}$ on the time axis and echo B at $t_\text{B} = 50\,\mu\text{s}$; they are read at the peaks against the grid lines. The time spent in the layer is $t_\text{B} - t_\text{A} = 30\,\mu\text{s}$.
+**Formula:** $d = \dfrac{v t}{2}$, so $\Delta d = d_\text{B} - d_\text{A} = \dfrac{v\,(t_\text{B} - t_\text{A})}{2}$
+**Conversions:** $30\,\mu\text{s} = 30 \cdot 10^{-6}\,\text{s}$; finally $1\,\text{m} = 100\,\text{cm}$.
+**Substitution:** $\Delta d = \dfrac{1540\,\text{m/s} \cdot 30 \cdot 10^{-6}\,\text{s}}{2} = 0.0231\,\text{m} = 2.31\,\text{cm}$
+**Answer:** $2.31\,\text{cm}$, three significant figures as in the speed $1540\,\text{m/s}$.
+**Reasonableness:** The depths are $d_\text{A} = 1.54\,\text{cm}$ and $d_\text{B} = 3.85\,\text{cm}$, and their difference is $2.31\,\text{cm}$. The echo A boundary lies at the fat layer beneath the skin, so a layer of a couple of centimetres is sensible for the thigh.

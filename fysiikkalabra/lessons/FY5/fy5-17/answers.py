@@ -42,5 +42,5 @@ _seg = [(300e3, 4000), (100e3, 1000), (20e3, 50)]     # tsunami over three stret
 a["fy5-17-L3-05"] = sum(s_ / math.sqrt(g * h_) for s_, h_ in _seg) / 60   # 3427 s = 57,1 min -> 57 min
 # Added: MAFY lookup (water 0 °C, 1402,4 m/s) and A-scan figure task (echoes B 50 µs, C 90 µs)
 a["fy5-17-L1-09"] = 1402.4 * 0.020 / 2                  # echo sounder under ice, 20 ms: d = 14,024 m -> 14,0 m
-a["fy5-17-L2-09"] = 1540 * (90e-6 - 50e-6) / 2 * 100    # layer between B and C: 40 µs -> 3,08 cm
+a["fy5-17-L2-09"] = 1540 * (50e-6 - 20e-6) / 2 * 100    # layer between A and B: 30 µs -> 2,31 cm (the inquiry asks B-C)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

@@ -238,15 +238,15 @@ $N = 1.5\,mg - mg$, that is, $N = 0.5\,mg$
 The support force points down and is half of the weight, as in diagram C. In diagram A the support force has been drawn upwards like that of a floor; then the net force would be $G - N = 0.5\,G$ and not $1.5\,G$. In diagram B the upward centrifugal force $\overline{F}_\text{cf}$ cancels the net force although the car accelerates, and no object acts with such a force. In diagram D the velocity has been drawn as a force, although no force acts on the car in the direction of motion.
 
 ## fy5-4-L2-09
-**Given:** the point of the graph $v = 20\,\text{m/s}$, $a_\text{n} = 5.0\,\text{m/s}^2$; uniform circular motion in a level bend
+**Given:** the point of the graph $v = 15\,\text{m/s}$, $a_\text{n} = 3.0\,\text{m/s}^2$; uniform circular motion in a level bend
 **Find:** the radius of the bend $r$ in $\text{m}$
 **Principle:** The car is in uniform circular motion, so the centripetal acceleration is $a_\text{n} = \tfrac{v^2}{r}$. Every point of the curve belongs to the same bend, so one point read from the graph is enough to find the radius.
-**Reading the graph:** The marked point is where the vertical gridline $v = 20\,\text{m/s}$ meets the horizontal gridline $a_\text{n} = 5.0\,\text{m/s}^2$. The speed and the acceleration are read there, and the radius follows from them.
+**Reading the graph:** The marked point is where the vertical gridline $v = 15\,\text{m/s}$ meets the horizontal gridline $a_\text{n} = 3.0\,\text{m/s}^2$. The speed and the acceleration are read there, and the radius follows from them.
 **Formula:** $a_\text{n} = \dfrac{v^2}{r}$, so $r = \dfrac{v^2}{a_\text{n}}$
 **Conversions:** The units are already $\text{m/s}$ and $\text{m/s}^2$, so no conversion is needed.
-**Substitution:** $r = \dfrac{(20\,\text{m/s})^2}{5.0\,\text{m/s}^2} = \dfrac{400\,\text{m}^2/\text{s}^2}{5.0\,\text{m/s}^2} = 80\,\text{m}$
-**Answer:** $r = 80\,\text{m}$, two significant figures as in the acceleration read, $5.0\,\text{m/s}^2$.
-**Reasonableness:** A bend where $20\,\text{m/s}$ ($72\,\text{km/h}$) gives an acceleration of only about $0.5\,g$ is a gentle one, and $80\,\text{m}$ fits it. Check with another point: at $10\,\text{m/s}$ the acceleration should be $\tfrac{100}{80} = 1.25\,\text{m/s}^2$, and the curve passes between $1$ and $2$ there.
+**Substitution:** $r = \dfrac{(15\,\text{m/s})^2}{3.0\,\text{m/s}^2} = \dfrac{225\,\text{m}^2/\text{s}^2}{3.0\,\text{m/s}^2} = 75\,\text{m}$
+**Answer:** $r = 75\,\text{m}$, two significant figures as in the acceleration read, $3.0\,\text{m/s}^2$.
+**Reasonableness:** A bend where $15\,\text{m/s}$ ($54\,\text{km/h}$) gives an acceleration of only about $0.3\,g$ is a gentle one, and $75\,\text{m}$ fits it. Check with another point: at $10\,\text{m/s}$ the acceleration should be $\tfrac{100}{75} \approx 1.33\,\text{m/s}^2$, and the curve passes between $1$ and $2$ there.
 
 ## fy5-4-L3-04
 **Given:** $m = 60.0\,\text{kg}$; at the bottom $v_1 = 27.2\,\text{m/s}$ and $a_1 = 53.2\,\text{m/s}^2$; at the top $v_2 = 14.0\,\text{m/s}$ and $a_2 = 14.1\,\text{m/s}^2$; $g = 9.81\,\text{m/s}^2$; sample data; air resistance and rolling resistance are neglected

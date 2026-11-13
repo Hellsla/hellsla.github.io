@@ -217,11 +217,11 @@ Suhde on $\tfrac{d_\text{B}}{d_\text{A}} = \tfrac{24{,}0\,\text{s}}{8{,}0\,\text
 
 ## fy5-17-L2-09
 **Annettu:** kuvasta kaikujen hetket, äänen nopeus kudoksessa $v = 1540\,\text{m/s}$
-**Kysytty:** kaikuja B ja C vastaavien rajapintojen välisen kerroksen paksuus $\Delta d$ senttimetreinä
+**Kysytty:** kaikuja A ja B vastaavien rajapintojen välisen kerroksen paksuus $\Delta d$ senttimetreinä
 **Periaate:** Jokainen kaiku syntyy yhdeltä rajapinnalta, ja pulssi kulkee rajapintaan ja takaisin. Kerroksen paksuus on kahden syvyyden erotus, joten se saadaan kaikujen hetkien erotuksesta samalla kaavalla kuin syvyys.
-**Kuvaajan lukeminen:** Kaiku B on aika-akselilla kohdassa $t_\text{B} = 50\,\mu\text{s}$ ja korkea kaiku C kohdassa $t_\text{C} = 90\,\mu\text{s}$; ne luetaan piikkien kohdalta apuviivoja vasten. Kerroksessa kulunut aika on $t_\text{C} - t_\text{B} = 40\,\mu\text{s}$.
-**Kaava:** $d = \dfrac{v t}{2}$, joten $\Delta d = d_\text{C} - d_\text{B} = \dfrac{v\,(t_\text{C} - t_\text{B})}{2}$
-**Muunnokset:** $40\,\mu\text{s} = 40 \cdot 10^{-6}\,\text{s}$; lopuksi $1\,\text{m} = 100\,\text{cm}$.
-**Sijoitus:** $\Delta d = \dfrac{1540\,\text{m/s} \cdot 40 \cdot 10^{-6}\,\text{s}}{2} = 0{,}0308\,\text{m} = 3{,}08\,\text{cm}$
-**Vastaus:** $3{,}08\,\text{cm}$, kolme merkitsevää numeroa kuten nopeudessa $1540\,\text{m/s}$.
-**Järkevyys:** Syvyydet ovat $d_\text{B} = 3{,}85\,\text{cm}$ ja $d_\text{C} = 6{,}93\,\text{cm}$, ja niiden erotus on $3{,}08\,\text{cm}$. Syvyys $6{,}93\,\text{cm}$ sopii reisiluun etäisyydeksi ihosta, joten kerros mahtuu ihon ja luun väliin. Kaiku C on luusta: luu heijastaa ja vaimentaa ultraäänen lähes kokonaan, joten sen takaa ei tule kaikuja.
+**Kuvaajan lukeminen:** Kaiku A on aika-akselilla kohdassa $t_\text{A} = 20\,\mu\text{s}$ ja kaiku B kohdassa $t_\text{B} = 50\,\mu\text{s}$; ne luetaan piikkien kohdalta apuviivoja vasten. Kerroksessa kulunut aika on $t_\text{B} - t_\text{A} = 30\,\mu\text{s}$.
+**Kaava:** $d = \dfrac{v t}{2}$, joten $\Delta d = d_\text{B} - d_\text{A} = \dfrac{v\,(t_\text{B} - t_\text{A})}{2}$
+**Muunnokset:** $30\,\mu\text{s} = 30 \cdot 10^{-6}\,\text{s}$; lopuksi $1\,\text{m} = 100\,\text{cm}$.
+**Sijoitus:** $\Delta d = \dfrac{1540\,\text{m/s} \cdot 30 \cdot 10^{-6}\,\text{s}}{2} = 0{,}0231\,\text{m} = 2{,}31\,\text{cm}$
+**Vastaus:** $2{,}31\,\text{cm}$, kolme merkitsevää numeroa kuten nopeudessa $1540\,\text{m/s}$.
+**Järkevyys:** Syvyydet ovat $d_\text{A} = 1{,}54\,\text{cm}$ ja $d_\text{B} = 3{,}85\,\text{cm}$, ja niiden erotus on $2{,}31\,\text{cm}$. Kaiku A tulee ihon alaisen rasvakerroksen rajalta, joten parin sentin kerros on reidessä järkevä.
