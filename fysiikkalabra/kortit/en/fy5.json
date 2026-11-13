@@ -63,7 +63,7 @@
   {
    "id": "fy5-momentti",
    "moduuli": "FY5",
-   "luku": "fy5-2",
+   "luku": "fy5-1",
    "aihe": "fy5-momentti-ja-tasapaino",
    "kasite": "Moment",
    "maaritelma": "A quantity that describes the turning effect of a force.",
@@ -97,7 +97,7 @@
   {
    "id": "fy5-momenttivarsi",
    "moduuli": "FY5",
-   "luku": null,
+   "luku": "fy5-1",
    "aihe": "fy5-momentti-ja-tasapaino",
    "kasite": "Lever arm",
    "maaritelma": "The perpendicular, that is shortest, distance between the axis of rotation and the line of action of the force."
@@ -113,7 +113,7 @@
   {
    "id": "fy5-etenemisen-tasapainoehto",
    "moduuli": "FY5",
-   "luku": null,
+   "luku": "fy5-2",
    "aihe": "fy5-momentti-ja-tasapaino",
    "kasite": "Equilibrium condition for translation",
    "maaritelma": "An object does not accelerate when the vector sum of the forces on it is zero.",
@@ -123,7 +123,7 @@
   {
    "id": "fy5-pyorimisen-tasapainoehto",
    "moduuli": "FY5",
-   "luku": null,
+   "luku": "fy5-2",
    "aihe": "fy5-momentti-ja-tasapaino",
    "kasite": "Equilibrium condition for rotation",
    "maaritelma": "The rotation of an object does not change when the sum of the moments on it is zero.",
@@ -141,7 +141,7 @@
   {
    "id": "fy5-tukipinta",
    "moduuli": "FY5",
-   "luku": null,
+   "luku": "fy5-2",
    "aihe": "fy5-momentti-ja-tasapaino",
    "kasite": "Base of support",
    "maaritelma": "The area bounded by the points where an object touches its support; the centre of gravity must be above it for the object not to topple."
@@ -157,7 +157,7 @@
   {
    "id": "fy5-tasainen-ympyraliike",
    "moduuli": "FY5",
-   "luku": null,
+   "luku": "fy5-3",
    "aihe": "fy5-ympyraliike",
    "kasite": "Uniform circular motion",
    "maaritelma": "Motion on a circle in which the speed stays constant but the direction keeps changing."
@@ -211,7 +211,7 @@
   {
    "id": "fy5-gravitaatiovuorovaikutus",
    "moduuli": "FY5",
-   "luku": null,
+   "luku": "fy5-5",
    "aihe": "fy5-gravitaatio-ja-planetaarinen-liike",
    "kasite": "Gravitational interaction",
    "maaritelma": "The always attractive interaction between objects with mass."
@@ -345,7 +345,7 @@
   {
    "id": "fy5-poikkeama",
    "moduuli": "FY5",
-   "luku": "fy5-8",
+   "luku": "fy5-7",
    "aihe": "fy5-varahdysliike",
    "kasite": "Displacement",
    "maaritelma": "The oscillator's distance from the equilibrium position, with its direction."
@@ -397,7 +397,7 @@
   {
    "id": "fy5-hooken-laki",
    "moduuli": "FY5",
-   "luku": null,
+   "luku": "fy5-8",
    "aihe": "fy5-harmoninen-varahtely",
    "kasite": "Hooke's law",
    "maaritelma": "The spring force is directly proportional to the extension or compression of the spring.",
@@ -439,7 +439,7 @@
   {
    "id": "fy5-jousivarahtelija",
    "moduuli": "FY5",
-   "luku": "fy5-8",
+   "luku": "fy5-9",
    "aihe": "fy5-harmoninen-varahtely",
    "kasite": "Mass–spring oscillator",
    "maaritelma": "An oscillating system made of a spring and an object attached to it.",
@@ -501,7 +501,7 @@
   {
    "id": "fy5-mekaaninen-aaltoliike",
    "moduuli": "FY5",
-   "luku": null,
+   "luku": "fy5-10",
    "aihe": "fy5-aaltoliikkeen-perusteet",
    "kasite": "Mechanical wave",
    "maaritelma": "An oscillation passing through a material medium from particle to particle."
@@ -533,7 +533,7 @@
   {
    "id": "fy5-poikittainen-aaltoliike",
    "moduuli": "FY5",
-   "luku": null,
+   "luku": "fy5-10",
    "aihe": "fy5-aaltoliikkeen-perusteet",
    "kasite": "Transverse wave",
    "maaritelma": "A wave in which the medium oscillates perpendicular to the direction of travel."
@@ -541,7 +541,7 @@
   {
    "id": "fy5-pitkittainen-aaltoliike",
    "moduuli": "FY5",
-   "luku": null,
+   "luku": "fy5-10",
    "aihe": "fy5-aaltoliikkeen-perusteet",
    "kasite": "Longitudinal wave",
    "maaritelma": "A wave in which the medium oscillates along the direction of travel."
@@ -615,7 +615,7 @@
   {
    "id": "fy5-summa-aalto",
    "moduuli": "FY5",
-   "luku": "fy5-14",
+   "luku": "fy5-12",
    "aihe": "fy5-aaltoliikkeen-ilmiot",
    "kasite": "Resultant wave",
    "maaritelma": "The wave formed by the combined effect of two or more waves that meet at the same place."
@@ -623,7 +623,7 @@
   {
    "id": "fy5-spektri",
    "moduuli": "FY5",
-   "luku": "fy5-12",
+   "luku": "fy5-14",
    "aihe": "fy5-aaltoliikkeen-ilmiot",
    "kasite": "Spectrum",
    "maaritelma": "A presentation of which frequencies an oscillation or wave contains and how strong they are."
@@ -687,7 +687,7 @@
   {
    "id": "fy5-puoliavoin-putki",
    "moduuli": "FY5",
-   "luku": null,
+   "luku": "fy5-13",
    "aihe": "fy5-seisovat-aallot",
    "kasite": "Pipe closed at one end",
    "maaritelma": "A pipe with one end closed and one open; a node forms at the closed end and an antinode at the open end."
@@ -703,7 +703,7 @@
   {
    "id": "fy5-aani",
    "moduuli": "FY5",
-   "luku": "fy5-12",
+   "luku": "fy5-14",
    "aihe": "fy5-aani",
    "kasite": "Sound",
    "maaritelma": "A mechanical wave that travels in a gas, a liquid or a solid but not in a vacuum."
@@ -719,7 +719,7 @@
   {
    "id": "fy5-aanen-korkeus",
    "moduuli": "FY5",
-   "luku": null,
+   "luku": "fy5-14",
    "aihe": "fy5-aani",
    "kasite": "Pitch",
    "maaritelma": "The perception determined mainly by the frequency of the sound."
@@ -735,7 +735,7 @@
   {
    "id": "fy5-aanenvari",
    "moduuli": "FY5",
-   "luku": null,
+   "luku": "fy5-14",
    "aihe": "fy5-aani",
    "kasite": "Timbre",
    "maaritelma": "The property that tells apart different sound sources playing at the same pitch."
@@ -792,7 +792,7 @@
    "luku": "fy5-14",
    "aihe": "fy5-aanen-intensiteetti-ja-kuuleminen",
    "kasite": "Range of hearing",
-   "maaritelma": "The range of frequencies a person can hear; about $16\\,\\text{Hz}$–$20\\,\\text{kHz}$."
+   "maaritelma": "The range of frequencies a person can hear; for a young person about $20\\,\\text{Hz}$–$20\\,\\text{kHz}$."
   },
   {
    "id": "fy5-melu",
@@ -817,6 +817,40 @@
    "aihe": "fy5-aanen-intensiteetti-ja-kuuleminen",
    "kasite": "Ultrasound",
    "maaritelma": "Sound whose frequency is above the upper limit of human hearing."
+  },
+  {
+   "id": "fy5-kaiku",
+   "moduuli": "FY5",
+   "luku": "fy5-17",
+   "aihe": "fy5-aani",
+   "kasite": "Echo",
+   "maaritelma": "Sound or ultrasound reflected back from a boundary; its travel time gives the distance to the boundary, since the sound travels there and back.",
+   "kaava": "d = \\dfrac{v t}{2}",
+   "kaava_puhe": "d equals v times t over two"
+  },
+  {
+   "id": "fy5-kaikuluotain",
+   "moduuli": "FY5",
+   "luku": "fy5-17",
+   "aihe": "fy5-aani",
+   "kasite": "Sonar",
+   "maaritelma": "A device that sends sound pulses into water and works out the depth from the travel time of the echoes."
+  },
+  {
+   "id": "fy5-p-aalto",
+   "moduuli": "FY5",
+   "luku": "fy5-17",
+   "aihe": "fy5-aaltoliikkeen-perusteet",
+   "kasite": "P wave",
+   "maaritelma": "A longitudinal earthquake wave that is the fastest, arrives at a station first and also travels through liquid."
+  },
+  {
+   "id": "fy5-s-aalto",
+   "moduuli": "FY5",
+   "luku": "fy5-17",
+   "aihe": "fy5-aaltoliikkeen-perusteet",
+   "kasite": "S wave",
+   "maaritelma": "A transverse earthquake wave that is slower than the P wave and does not travel through liquid."
   }
  ]
 }

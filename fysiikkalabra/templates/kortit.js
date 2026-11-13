@@ -212,10 +212,11 @@
   const lesson = (sec, d) => {
     const byId = Object.fromEntries(d.cards.map((c) => [c.id, c]));
     const mine = d.cards.filter((c) => c.luku === d.luku);
-    // Teoriatiivistelmä: a bold term that names a card opens its popover
-    document.querySelectorAll('#selita strong.kc-mark[data-kortti]').forEach((s) => {
+    // Teoria: a bold term that names a card, and the first mention of each of the chapter's other cards
+    // (span.kc-plain, concept_cards.mark_first), opens its popover
+    document.querySelectorAll('#selita .kc-mark[data-kortti]').forEach((s) => {
       const c = byId[s.dataset.kortti]; if (!c) return;
-      const b = termButton([...s.childNodes], c, 'kc-term-btn');
+      const b = termButton([...s.childNodes], c, s.classList.contains('kc-plain') ? 'kc-term-btn kc-term-plain' : 'kc-term-btn');
       s.append(b);
       s.classList.add('kc-ready');
     });
