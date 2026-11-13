@@ -209,11 +209,11 @@ $\begin{aligned} v &= 2 \cdot 0{,}650\,\text{m} \cdot 196\,\text{Hz} \\ &= 254{,
 **Muunnokset:** Niitä ei tarvita. Taajuudet luetaan hertseinä.
 **Sijoitus:** $f_7 = 7 \cdot 200\,\text{Hz} = 1400\,\text{Hz}$
 **Vastaus:** $1400\,\text{Hz}$, kolme merkitsevää numeroa kuten luettu perustaajuus.
-**Järkevyys:** Viides piikki on $1000\,\text{Hz}$. Seitsemäs harmoninen on kaksi piikkiväliä ylempänä: $1000\,\text{Hz} + 2 \cdot 200\,\text{Hz} = 1400\,\text{Hz}$.
+**Järkevyys:** Viides piikki on $1000\,\text{Hz}$. Seitsemäs harmoninen on kaksi piikkiväliä ylempänä: $1000\,\text{Hz} + 2 \cdot 200\,\text{Hz} = 1400\,\text{Hz}$. Piikkien väli on $200\,\text{Hz}$.
 
 ## fy5-14-L2-08
 **Annettu:** kahden yhtä aikaa soivan ääniraudan yhteinen ääni kuvassa. Toinen äänirauta on $523\,\text{Hz}$. Vaha laskee tuntemattoman ääniraudan taajuutta, ja huojunta nopeutuu.
 **Kysytty:** tuntemattoman ääniraudan taajuus $f_x$ ennen vahaa
-**Periaate:** Huojuntataajuus on taajuuksien erotus: $f_\text{h} = |f_x - 523\,\text{Hz}|$. Se on huojuntajakson käänteisluku. Erotus ei kerro, kumpi taajuus on suurempi. Puoli päätellään vahasta, koska vaha laskee taajuutta $f_x$. Jos erotus kasvaa, $f_x$ oli jo alle $523\,\text{Hz}$. Jos erotus pienenee, $f_x$ oli yli $523\,\text{Hz}$.
+**Periaate:** Huojuntataajuus on taajuuksien erotus: $f_\text{h} = |f_x - 523\,\text{Hz}|$. Se on huojuntajakson käänteisluku. Erotus ei kerro, kumpi taajuus on suurempi. Puoli päätellään vahasta, koska vaha laskee taajuutta $f_x$. Jos erotus kasvaa, $f_x$ oli jo matalampi kuin toinen äänirauta. Jos erotus pienenee, $f_x$ oli korkeampi.
 **Kuvaajan lukeminen:** Ääni on voimakkaimmillaan hetkillä $0$, $0{,}25\,\text{s}$, $0{,}50\,\text{s}$, $0{,}75\,\text{s}$ ja $1{,}00\,\text{s}$. Huojuntajakso on $T_\text{h} = 0{,}25\,\text{s}$.
 **Mallivastaus:** Huojuntataajuus on $f_\text{h} = \dfrac{1}{0{,}25\,\text{s}} = 4\,\text{Hz}$. Siis $f_x = 523\,\text{Hz} \pm 4\,\text{Hz}$ eli $519\,\text{Hz}$ tai $527\,\text{Hz}$. Vaha laski taajuutta $f_x$, ja huojunta nopeutui. Erotus siis kasvoi. Se on mahdollista vain, jos $f_x$ oli alle $523\,\text{Hz}$. Vastaus on $519\,\text{Hz}$. Tarkistus: jos $f_x$ olisi ollut $527\,\text{Hz}$, vaha toisi sen lähemmäs $523\,\text{Hz}$:ää ja huojunta hidastuisi.
