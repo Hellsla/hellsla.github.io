@@ -161,5 +161,24 @@ with sync_playwright() as pw:
     pg.once("dialog", lambda d: d.accept()); pg.click("#jatka button.resume-clear"); pg.wait_for_timeout(600)
     gone = pg.evaluate("(fs) => [fs.map((f) => localStorage.getItem('ruukkilabra:' + f)), localStorage.getItem('ruukkilabra:viimeisin'), localStorage.getItem('ruukkilabra:vastaukset:' + fs[0]) !== null, localStorage.getItem('ruukkilabra:itsearvio:' + fs[0]) !== null, document.getElementById('jatka').hidden, document.querySelectorAll('.ch-state').length]", [OPEN, FIRST, THIRD])
     expect("Tyhjennä confirmed: the stage records and the last chapter are gone, answers and self-assessment kept, no row and no marks", gone == [[None, None, None], None, True, True, True, 0], gone)
+    # 4. a chapter whose title holds a formula (teacher 2026-11-13: the Jatka row showed it three times, KaTeX's text holds
+    # its MathML and annotation too): the record keeps $TeX$, the row shows the formula once, and an old record is mended
+    FORM = "fy3-6"
+    if (SITE / f"{FORM}.html").exists():
+        pg.evaluate("localStorage.clear()")
+        pg.goto((SITE / f"{FORM}.html").as_uri()); pg.wait_for_timeout(800)
+        rec = pg.evaluate("JSON.parse(localStorage.getItem('ruukkilabra:viimeisin') || 'null')")
+        expect("a chapter with a formula in its title records the title with the formula once, as $TeX$", bool(rec) and rec["title"].count("cm") == 1 and "$" in rec["title"] and "\\Delta" in rec["title"], rec)
+        pg.goto((SITE / "index.html").as_uri()); pg.wait_for_timeout(200)
+        row = pg.evaluate("(document.querySelector('#jatka strong') || {}).textContent")
+        expect("the front page row shows the formula once, plain, without TeX", bool(row) and row.count("cm") == 1 and "\\" not in row and "$" not in row and "Aineen lämpeneminen" in row, row)
+        old = {**rec, "title": "Aineen lämpeneminen ja jäähtyminen: Q=cmΔTQ = cm\\Delta TQ=cmΔT"}
+        pg.evaluate("(r) => localStorage.setItem('ruukkilabra:viimeisin', JSON.stringify(r))", old); pg.reload(); pg.wait_for_timeout(200)
+        row = pg.evaluate("(document.querySelector('#jatka strong') || {}).textContent")
+        expect("an old record with the formula three times is shown with it once", bool(row) and row.count("cm") == 1 and "\\" not in row and "Aineen lämpeneminen ja jäähtyminen: Q = cmΔT" in row, row)
+        expect("the old record is not rewritten", pg.evaluate("JSON.parse(localStorage.getItem('ruukkilabra:viimeisin')).title") == old["title"])
+        pg.goto((SITE / "FY3.html").as_uri()); pg.wait_for_timeout(500)
+        row = pg.evaluate("(() => { const s = document.querySelector('#jatka strong'); return s ? [s.textContent, s.querySelectorAll('.katex').length] : null; })()")
+        expect("the module page row sets the formula once in KaTeX", bool(row) and row[1] == 1 and "$" not in row[0] and "\\" not in row[0], row)
     b.close()
 print("\n" + ("all passed" if not fails else f"{fails} failed")); sys.exit(1 if fails else 0)
