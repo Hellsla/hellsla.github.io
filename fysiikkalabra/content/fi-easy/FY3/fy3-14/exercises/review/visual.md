@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: b2728409903da70a
+CONTENT-HASH: 2ff9673004c38076
+SCOPE: delta round 2
 
 ## Blocking
-None.
+
 
 ## Polish
-- [Minor] fy3-14-L1-09 solution, Vastaus — "Tekstien arvo $334\,\text{kJ/kg}$" reads oddly — "Kirjoissa usein käytetty arvo $334\,\text{kJ/kg}$".
-- [Minor] fy3-14-L2-09 energy-bars figure — faint gridlines run behind the bar labels (legible, but cluttered); keep the labels clear of the gridlines if the figure is next redrawn.
-- [Minor] fy3-14-L2-09 solution, Järkevyys — the line "Ja" before the formula box dangles; join it: "Sulamatta jää $\tfrac{2}{3}$ jäästä, ja:".
+- [Minor] fy3-14-L2-09 text — 'Lämpöä ei siirry astiaan eikä ympäristöön' next to 'tuoda lisälämpöä' may read as contradictory; add 'ennen lisälämmön tuomista' (before extra heat is added).
 
 ## Checked
-- Delta: fy3-14-L1-09 solution (open-exercises-1280-10) and fy3-14-L2-09 card with the energy-bars figure plus open solution (open-exercises-L2-1280-12, -13). Figure: three bars with kJ axis, units and words LaTeX, answer not given away; chains and Finnish clear; layout intact, set reads as one. The L1-09 card's top part (task text, Vihje box) was not opened; the Vihje box was checked in sibling chapters' identical cards.
+- Round 2, delta. Opened fy3-14-open-exercises-L2-1280-12 (9-18 task, bar graph, solution start) and -13 (rest of solution) in this language; fi also 1280-9 (9-9 task, MAFY lookup). Bars end on grid lines at 25, 5 and 60 kJ and match the solution; Q (kJ) axis with unit; labels LaTeX.
+- Hash at start and end the same.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

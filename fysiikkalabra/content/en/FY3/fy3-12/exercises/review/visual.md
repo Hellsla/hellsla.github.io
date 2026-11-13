@@ -1,19 +1,16 @@
-VERDICT: PASS
-CONTENT-HASH: a68d988512663089
+VERDICT: FAIL
+CONTENT-HASH: cc8485c6d5e1447c
+SCOPE: delta round 2
 
 ## Blocking
-None.
+- [Major] fy3-12 exercises/solutions.md, 'Reading the graph' (changed lines, English) — says the dashed arrow 'is labelled "lämpösäteily" (thermal radiation)', but the English figure (capture L2-1280-12, task 15-18) is labelled 'heat radiation'; a Finnish word is quoted that the student never sees — misleads the reader matching text to figure — write: 'The dashed arrow on the right, whose value is a question mark and which is labelled "heat radiation", is the thermal radiation asked for.'
 
 ## Polish
-- [Minor] fy3-12-L2-09 solution, Substitution — the quotient `\dfrac{102\,\tfrac{\text{W}}{\text{m}^2}}{341\,\tfrac{\text{W}}{\text{m}^2}}` is a fraction of fractions with tiny units, cramped on the page; write the units as `\text{W/m}^2` inside the fraction, or `102 : 341`.
-- [Minor] fy3-12-L1-09 and L2-09 solutions — `\tfrac{\text{W}}{\text{m}\cdot\text{K}}` is small and tight in the Substitution rows; `\text{W/(m}\cdot\text{K)}` reads better. Typographic taste only; consistent with the rest of the set.
-- [Minor] figure fy3-12/earth-flows (task L2-09) — the figure is built for an earlier task and still has the "? W/m^2" arrow; the solution says it is not needed, but the task text could say "ignore the arrow with the question mark".
+- [Minor] fy3-12-L2-09 — 'the arrow between the Sun and the Earth that points up and to the left' is clumsy; 'the pale arrow pointing up and left away from the Earth' matches the figure.
 
 ## Checked
-- Delta: fy3-12-L1-09 (open-exercises-1280-10, opened solution) and fy3-12-L2-09 (open-exercises-L2-1280-12, -13: task with figure earth-flows, opened solution). The solution wording change for the earlier task (arrow "up and to the left") matches the figure.
-- Figure earth-flows (teacher-approved drawing): the labels 341 W/m^2 and 102 W/m^2 are legible, with LaTeX units; the reflected arrow is distinguished by direction and label, not by colour alone; the description of the figure is carried by the labels.
-- Typography: aligned chains, upright units, order principle → formula → substitution → result → check; the set reads as one.
-- Hash with --lang en (a68d988512663089) matches the packet.
+- Round 2, delta. Opened fy3-12-open-exercises-L2-1280-10..13 and L3-1280-3, -4 (15-18 with the earth-flows figure and whole solution; 15-21 heat pump with the added definition of the coefficient and its solution). English figure and solution layout good apart from the mismatch above.
+- Hash at start and end the same.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · English 3 · accessibility 4

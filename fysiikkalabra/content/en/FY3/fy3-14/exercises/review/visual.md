@@ -1,20 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: ef2af57ab9204129
+CONTENT-HASH: 2ff9673004c38076
+SCOPE: delta round 2
 
 ## Blocking
-None.
+
 
 ## Polish
-- [Minor] fy3-14-L1-09 solution, Answer — "the value 334 kJ/kg of the texts" is unclear; write "the value 334 kJ/kg of other tables and textbooks".
-- [Minor] fy3-14-L2-09 solution, Formula — the `m_melted` and `m_left` rows sit in one block with different left edges (the second row is indented), so the two equations do not align; put both in the same aligned block or leave them as separate inline formulas.
-- [Minor] figure fy3-14/energy-bars (task L2-09) — the bar labels run over the vertical gridlines, which makes the text slightly busy; a paper-coloured box behind each label would calm it. Still legible at 1280 px.
-- [Minor] fy3-14-L1-09 solution, Reasonableness — the fraction with `4.19\,\text{kJ/(kg}\cdot\text{K)} \cdot 0.25\,\text{kg}` in the denominator is wide on a phone; it fits, but check at 360 px.
+- [Minor] fy3-14-L2-09 text — 'No heat is transferred to the container' next to 'brought into the container' may read as contradictory; add 'before the extra heat is added'.
 
 ## Checked
-- Delta: fy3-14-L1-09 (open-exercises-1280-10: formula to reasonableness; the task head and hint follow the same pattern as the other chapters) and fy3-14-L2-09 (open-exercises-L2-1280-12, -13: task with figure energy-bars, opened solution).
-- Figure energy-bars: three bars labelled in LaTeX words, scale in kJ with unit on the axis (Q (kJ)), ticks every 10 kJ and gridlines every 5 kJ as the description says; the three values can be read; the answer is not shown; bars differ in colour but also in labels.
-- Typography: chains broken at meaningful boundaries, units upright, correct order; the set reads as one.
-- Hash with --lang en (ef2af57ab9204129) matches the packet.
+- Round 2, delta. Opened fy3-14-open-exercises-L2-1280-12 (9-18 task, bar graph, solution start) and -13 (rest of solution) in this language; fi also 1280-9 (9-9 task, MAFY lookup). Bars end on grid lines at 25, 5 and 60 kJ and match the solution; Q (kJ) axis with unit; labels LaTeX.
+- Hash at start and end the same.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · English 5 · accessibility 4
