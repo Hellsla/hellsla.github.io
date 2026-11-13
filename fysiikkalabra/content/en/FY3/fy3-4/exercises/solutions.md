@@ -219,13 +219,13 @@ $$\begin{aligned} \Delta p &= 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9.81\,\t
 The number $9.81 \cdot 10^{6}$ is closer to $10^{7}$ than to $10^{6}$, so the order of magnitude is $10^{7}\,\text{Pa}$. The answer $10^{5}\,\text{Pa}$ is the order of magnitude of atmospheric pressure and does not take the depth into account. The answer $10^{6}\,\text{Pa}$ corresponds to the depth $100\,\text{m}$ and the answer $10^{8}\,\text{Pa}$ to the depth $10\,\text{km}$. Estimate: in water the pressure grows by about $10\,\text{kPa}$ per metre, so $1000\,\text{m}$ gives $10^{7}\,\text{Pa}$.
 
 ## fy3-4-L1-10
-**Given:** $h = 25\,\text{m}$, $p_0 = 101\,\text{kPa}$, $g = 9.81\,\text{m/s}^2$; from the table (MAFY table *Tiheyksiä: Nesteiden tiheyksiä*, sea water) $\rho = 1.02 \cdot 10^{3}\,\text{kg/m}^3$
+**Given:** $h = 25.0\,\text{m}$, $p_0 = 101\,\text{kPa}$, $g = 9.81\,\text{m/s}^2$; from the table (MAFY table *Tiheyksiä: Nesteiden tiheyksiä*, sea water) $\rho = 1.02 \cdot 10^{3}\,\text{kg/m}^3$
 **Find:** the total pressure $p$ at the diver in kilopascals
 **Principle:** The diver feels the weight of the water and the weight of the air above the water surface. The surface of a liquid transmits the air pressure to the whole liquid, and the hydrostatic pressure $\rho g h$ comes on top of it. So the pressures are added.
 **Formula:** $p = p_0 + \rho g h$; the unknown $p$ is already alone on the left-hand side
 **Conversions:** The density $1.02 \cdot 10^{3}\,\text{kg/m}^3 = 1020\,\text{kg/m}^3$. The hydrostatic pressure is calculated in pascals and converted to kilopascals: $1\,\text{kPa} = 1000\,\text{Pa}$.
-**Substitution:** $\rho g h = 1020\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 25\,\text{m} = 250\,155\,\text{Pa} = 250.2\,\text{kPa}$; $p = 101\,\text{kPa} + 250.2\,\text{kPa} = 351.2\,\text{kPa}$
-**Answer:** $p \approx 351\,\text{kPa}$, three significant figures as in the air pressure and the density. The density $\rho = 1.02 \cdot 10^{3}\,\text{kg/m}^3$ is from the MAFY table *Tiheyksiä: Nesteiden tiheyksiä*; tables differ slightly, and an answer within about $\pm 4\,\%$ is accepted.
+**Substitution:** $\rho g h = 1020\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 25.0\,\text{m} = 250\,155\,\text{Pa} = 250.2\,\text{kPa}$; $p = 101\,\text{kPa} + 250.2\,\text{kPa} = 351.2\,\text{kPa}$
+**Answer:** $p \approx 351\,\text{kPa}$, three significant figures, as in the depth $25.0\,\text{m}$, the air pressure and the density. The density $\rho = 1.02 \cdot 10^{3}\,\text{kg/m}^3$ is from the MAFY table *Tiheyksiä: Nesteiden tiheyksiä*; tables differ slightly, and an answer within about $\pm 4\,\%$ is accepted.
 **Reasonableness:** Estimate: $10\,\text{m}$ of water adds about $100\,\text{kPa}$ to the pressure, so $25\,\text{m}$ adds about $250\,\text{kPa}$. The air pressure of about $100\,\text{kPa}$ is added, giving about $350\,\text{kPa}$, or about $3.5$ atmospheres.
 
 ## fy3-4-L2-08

@@ -27,4 +27,5 @@ a["fy3-1-L2-07"] = 4.9 / g["Maa"]                 # m = G / g = 0,4995 kg -> 0,5
 a["fy3-1-L3-04"] = g["Maa"] * (1.9 / 0.50) / (sum([1.1, 2.1, 3.2, 4.1, 5.2, 6.1]) / sum([0.1, 0.2, 0.3, 0.4, 0.5, 0.6]))  # x/m ratio of the spring on Earth 10,38 cm/kg, on X 3,8 cm/kg: 3,59 m/s² -> 3,6
 a["fy3-1-L3-05"] = 6000 / g["Mars"] - (520 + 180 + 95 + 140)  # max total mass 1617 kg minus 935 kg = 682 kg
 a["fy3-1-L1-10"] = 85.0 * 3.72                      # MAFY (Aurinkokunta): Marsin g = 3,72 m/s², G = m g = 316,2 N -> 316 N
+a["fy3-1-L2-08"] = 12 * (50 / 10)                  # figure fy3-1/weight-points: points (2 kg; 10 N) ... (10 kg; 50 N), G/m = 5 N/kg = 5 m/s^2 -> G = 12 kg * 5 m/s^2 = 60 N
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

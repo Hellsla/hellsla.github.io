@@ -1,10 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: c8fd8fdeae438699
+CONTENT-HASH: cd25322f12bff34e
+SCOPE: delta added-exercise from c8fd8fdeae438699 base 5453544b2abc
 
 ## Blocking
-None. Read exercises.json and solutions.md; symbols are the lesson's, solutions go symbolically first, and the exercise levels are unchanged.
+None.
 
 ## Polish
-1. exercises/solutions.md: every Δl solution derives Δl = αl₀ΔT first and substitutes with units; the sign and ΔT-in-kelvin traps (error-analysis tasks) survive the rename. Levels and kinds unchanged.
-2. No exercise uses l = l₀(1 + αΔT) (the new MAFY form); add one level-1 or -2 task asking for the length after heating or cooling.
-3. Litres use \textsf{l}, so length l and litre are not confused.
+1. fy3-8-L1-09 sits close to L1-01 (steel gutter, same formula); it adds the MAFY lookup, which is the point, so it is acceptable. Its hint names the table, good.
+2. Earlier polish still open: no task uses l = l0(1 + alpha dT) for the length after heating or cooling.
+
+## Checked
+- L1-09: level 1 (one formula, one lookup); situation then question; solution symbolic first, units, reasonableness check; +-4 % tolerance explained.
+- L2-09: graph reading plus slope plus rearrangement is level 2; the figure gives start and end points, no alpha or material; description equals the picture; the solution says how the graph is read; tolerance matches grid reading.
+- Set mix: graph/data task fits the data-task goal; no repeat of the worked example.

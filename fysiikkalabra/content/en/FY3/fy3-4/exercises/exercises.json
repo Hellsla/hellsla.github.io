@@ -145,7 +145,7 @@
     {
       "id": "fy3-4-L1-10",
       "level": 1,
-      "text": "A diver is at a depth of $25\\,\\text{m}$ in the sea. The air pressure at the sea surface is $101\\,\\text{kPa}$. Look up the density of sea water in the MAFY table (mafytaulukot.fi). How large is the total pressure at the diver?",
+      "text": "A diver is at a depth of $25.0\\,\\text{m}$ in the sea. The air pressure at the sea surface is $101\\,\\text{kPa}$. Look up the density of sea water in the MAFY table (mafytaulukot.fi). How large is the total pressure at the diver?",
       "lookup": "MAFY",
       "answer": 351.2,
       "unit": "kPa",

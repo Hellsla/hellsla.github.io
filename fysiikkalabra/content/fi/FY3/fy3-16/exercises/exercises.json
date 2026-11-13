@@ -113,7 +113,7 @@
     {
       "id": "fy3-16-L1-09",
       "level": 1,
-      "text": "Saunassa kiukaalle heitetään $0{,}30\\,\\text{kg}$ vettä, joka on jo $100\\,{}^\\circ\\text{C}$:ssa ja höyrystyy kokonaan. Höyrystymiseen tarvittava lämpö on $Q = rm$, missä $r$ on veden ominaishöyrystymislämpö.\n\nHae veden ominaishöyrystymislämpö MAFY-taulukosta (mafytaulukot.fi). Kuinka paljon lämpöä kiukaan kivistä sitoutuu veden höyrystymiseen? Anna vastaus kilojouleina.",
+      "text": "Keittolevyllä olevassa kattilassa kiehuu vettä, jonka lämpötila on $100\\,{}^\\circ\\text{C}$. Kattilasta höyrystyy ilmaan $0{,}30\\,\\text{kg}$ vettä. Höyrystymiseen tarvittava lämpö on $Q = rm$, missä $r$ on veden ominaishöyrystymislämpö.\n\nHae veden ominaishöyrystymislämpö MAFY-taulukosta (mafytaulukot.fi). Kuinka paljon lämpöä keittolevyltä sitoutuu veden höyrystymiseen? Anna vastaus kilojouleina.",
       "lookup": "MAFY",
       "answer": 678.0,
       "unit": "kJ",

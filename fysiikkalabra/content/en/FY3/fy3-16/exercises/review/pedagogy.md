@@ -1,18 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 35a961c55c19b541
+CONTENT-HASH: 95b438af4632227f
 
 ## Blocking
 (none)
 
-## Fixed
-- (none needed)
-
 ## Polish
-- none
+- fy3-16-L2-10 and L1-04 / L2-01 still use the cool bag (third cool-bag task at levels 1-2). Optional.
+- fy3-16-L1-09 — the situation does not say where the heat comes from; "taken from the hob" in the question is fine. The unrounded answer is 678 kJ and the stored answer is 678.0, so the solution's "680 kJ" (2 s.f.) matches the tolerance; keep that.
 
 ## Checked
-- L2-08 asks for a comparison of two trips by proportional reasoning; the task text does not give the ratio away, the answer is not disclosed before the student chooses.
-- Each distractor targets one real misconception (forgotten U-value, inverted U-value, forgotten outdoor temperature) and its feedback names it and repairs it.
-- Model answer is staged: ratio formula, substitution, result, then interpretation and the three wrong routes; matches the Finnish.
-- Translation (English): natural, decimal point, no Finnish words left; terms consistent (U-value, latent heat of fusion).
-- Order of choices and the rest of the set match the previously passed version; check_i18n.py clean, build ok.
+- This was my earlier polish point: L1-09 is now boiling on a hob, no longer the water thrown on the sauna stones of L1-02, so the two level 1 tasks are no longer twins; the lookup stays the new element.
+- Numbers are unchanged (0.30 kg, 2260 kJ/kg, 678 kJ); the principle, symbolic Q = rm and the 4 % tolerance still hold.
+- The solution's principle line and the reasonableness note were adapted to the hob, and the sauna remark was removed, so the text is consistent with the new situation.

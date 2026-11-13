@@ -227,7 +227,7 @@ Samoin muille väleille: lämpömäärät ovat $16{,}2$, $12{,}7$, $9{,}05$, $7{
 **Annettu:** kuparin massa $m = 3{,}0\,\text{kg}$, lämpötila $85\,{}^\circ\text{C} \to 25\,{}^\circ\text{C}$; kuvasta $c$
 **Kysytty:** putken luovuttama lämpömäärä $Q_\text{luov}$ kilojouleina
 **Periaate:** Lämpömäärä, jonka kappale luovuttaa jäähtyessään olomuodon pysyessä samana, on suuruudeltaan $cm\left|\Delta T\right|$. Kupari pysyy kiinteänä.
-**Kuvaajan lukeminen:** Kuvaajan lukeminen kuvasta: vaakapylväs kuparin kohdalla päättyy lukuun $385$, joten $c = 385\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$. Se on pylvästen lyhin, mikä sopii: kupari lämpenee ja jäähtyy helposti.
+**Kuvaajan lukeminen:** vaakapylväs kuparin kohdalla päättyy lukuun $385$, joten $c = 385\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$. Se on pylvästen lyhin, mikä sopii: kupari lämpenee ja jäähtyy helposti.
 **Kaava:** $Q_\text{luov} = cm\left|\Delta T\right|$
 **Muunnokset:** $\left|\Delta T\right| = 85\,{}^\circ\text{C} - 25\,{}^\circ\text{C} = 60\,\text{K}$ (muutos kelvineinä on sama kuin celsiusasteina). Lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
 **Sijoitus:** $Q_\text{luov} = 385\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 3{,}0\,\text{kg} \cdot 60\,\text{K} = 69\,300\,\text{J} = 69{,}3\,\text{kJ} \approx 69\,\text{kJ}$

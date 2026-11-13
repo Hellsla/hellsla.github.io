@@ -1,20 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 814ed3c8b96c2177
+CONTENT-HASH: 9abc5f49d6a2185e
+SCOPE: delta added-exercise from 814ed3c8b96c2177 base 81db4a6fd727
 
 ## Blocking
-(none)
-
-## Fixed
-- (none needed)
-
-## Polish
 - none
 
+## Polish
+1. content/fi-easy/FY3/fy3-16/exercises/solutions.md (fy3-16-L2-09, Kuvaajan lukeminen): "Teho on vakio. Siksi kuvaaja on suora." For the full reason, add "ja kaikki teho lämmittää kappaletta", the task's own assumption.
+
 ## Checked
-- New task fy3-16-L2-08 (YO-skill form, reasoning+model) compared with the reviewed Finnish: id, level, kind, answer, unit, tolerance, four choices, correct flag and choice order identical.
-- Physics recomputed: t = s m/(U A ΔT), t2/t1 = (1.5/1.0)(1/0.5)(20/30) = 2; distractors 1 (U forgotten), 0.5 (U inverted), 3 (ΔT forgotten) correct and each feedback is right.
-- Conditions stated: 0 °C inside while ice lasts, no drinks, same area; ΔT in °C equals K.
-- Solution section (Given/Find/Principle/Model answer) has the same numbers and symbols as the Finnish; decimal point used.
-- Plain Finnish (NOTES §12): shorter sentences, same physics and reasoning, nothing removed; split sentences in the Principle and feedback keep every claim.
-- Rest of the set unchanged from the previously passed version.
-- check_i18n.py: nothing for fy3-16; build.py fy3-16 succeeds.
+- L1-09 (new situation: water boiling in a pan on a hot plate) recomputed. The water is at 100 °C, so Q = rm = 2260 kJ/kg · 0,30 kg = 678 kJ, so 680 kJ.
+- The L1-09 comparison is right: heating the water 0 → 100 °C takes 126 kJ, and 678/126 = 5,4, so "yli viisi kertaa" holds.
+- L2-09: Pt = cmΔT gives c = 400 · 180 / (2,0 · 40) = 900 J/(kg·K). The no-loss assumption is in the task.
+- L2-09: "losses would make the true value smaller" is correct, because with losses less heat than Pt reaches the block.
+- L2-10: Q = 220 kJ is read off melting-curve, and 220 000 J / 25 W = 8800 s = 2,44 h.
+- The L2-10 independent check is right: 2100 · 0,60 · 16 = 20,2 kJ, plus 334 · 0,60 = 200,4 kJ, gives 220,6 kJ. The curve's later slope fits water too (80 kJ / 2,514 kJ/K = 31,8 K).
+- The script compared fi-easy with the Finnish: answers, units, tolerances, figure ids and all numbers are identical.
+- Hash the same at start and end.

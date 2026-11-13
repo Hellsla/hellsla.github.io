@@ -277,12 +277,12 @@ $$m_\text{w} = \dfrac{0.300 \cdot 45.0}{35.0}\,\text{kg} = 0.386\,\text{kg}$$
 **Reasonableness:** Vaporising the same mass of water would need $2260\,\dfrac{\text{kJ}}{\text{kg}} \cdot 0.0050\,\text{kg} \approx 11\,\text{kJ}$. The heat of vaporisation of ethanol is smaller than that of water, so the result $4.2\,\text{kJ} < 11\,\text{kJ}$ is reasonable.
 
 ## fy3-7-L2-09
-**Given:** mass of the ice $m = 0.60\,\text{kg}$; the $(Q,T)$ graph
+**Given:** mass of the ice $m = 0.60\,\text{kg}$; the initial temperature of the ice $-16\,{}^\circ\text{C}$; the $(Q,T)$ graph
 **Find:** the specific heat capacity of ice, $c$
 **Principle:** When ice warms without melting, the quantity of heat transferred is $Q = cm\Delta T$, so $c = \dfrac{Q}{m\Delta T}$. In the first part of the graph the ice warms; the horizontal part is melting.
-**Reading the graph:** The first part starts at the grid intersection $(0\,\text{kJ};\ -16\,{}^\circ\text{C})$ and ends at the intersection $(20\,\text{kJ};\ 0\,{}^\circ\text{C})$. So $Q = 20\,\text{kJ} - 0\,\text{kJ} = 20\,\text{kJ}$ and $\Delta T = 0\,{}^\circ\text{C} - (-16\,{}^\circ\text{C}) = 16\,\text{K}$.
+**Reading the graph:** The first part ends at the grid intersection $(20\,\text{kJ};\ 0\,{}^\circ\text{C})$, which gives $Q = 20\,\text{kJ}$ (the start is at the origin, $0\,\text{kJ}$). The initial temperature $-16\,{}^\circ\text{C}$ is given in the task, so $\Delta T = 0\,{}^\circ\text{C} - (-16\,{}^\circ\text{C}) = 16\,\text{K}$.
 **Formula:** $c = \dfrac{Q}{m\Delta T}$
 **Conversions:** $Q = 20\,\text{kJ} = 20\,000\,\text{J}$, so that $c$ comes in $\text{J}/(\text{kg}\cdot\text{K})$.
 **Substitution:** $c = \dfrac{20\,000\,\text{J}}{0.60\,\text{kg} \cdot 16\,\text{K}} = 2083\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}} \approx 2.1 \cdot 10^{3}\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$
-**Answer:** $2.1 \cdot 10^{3}\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$, two significant figures, like the datum $0.60\,\text{kg}$. The values are read from grid intersections, so $2020\ldots2150\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$ is accepted.
+**Answer:** $2.1 \cdot 10^{3}\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$, two significant figures, like the datum $0.60\,\text{kg}$. The heat is read from a grid intersection, so $2020\ldots2150\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$ is accepted.
 **Reasonableness:** The result is about half the value for water, $4190\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$, which is the familiar ratio for ice and water. Check: $2083 \cdot 0.60 \cdot 16\,\text{J} \approx 20\,000\,\text{J} = 20\,\text{kJ}$.

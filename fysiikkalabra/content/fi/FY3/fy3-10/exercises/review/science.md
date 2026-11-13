@@ -1,18 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 8c50fb38cfdcf2c1
-Round: 2
+CONTENT-HASH: 68489463e63623ab
+SCOPE: delta added-exercise from 8c50fb38cfdcf2c1 base 81db4a6fd727
 
 ## Blocking
-- none
 
 ## Polish
-- exercises.json:321 and :325 (feedback D, "ei virhettä") — still "koska pullossa on huoneenlämpöistä ilmaa" / "ei sovi suljettuun pulloon", but the task does not say the air is at room temperature. State it in the task, or phrase it as "574 °C olisi uunin lämpötila". Carried over.
+- exercises/solutions.md (fy3-10-L2-09, Vastaus) — "kolme merkitsevää numeroa luetuista arvoista": 60 kPa read on a 10 kPa grid is more like two figures; the 3 % tolerance accepts 1,7 anyway, so only the reason could be worded "luettu ruudukon viivoilta".
 
 ## Checked
-- delta review 2026-11-07 round 2 (follow-up consistency edits): L2-08 and L1-08 Periaate: units must match R's unit, Pa with m³ or kPa with l, temperature always in K: correct, no longer claims base units are required; 'otherwise a unit factor remains' still true. Hashes equal at start and end.
-- Round-1 Polish resolved: V is now $2{,}00\,\textsf{l}$ = $0{,}00200\,\text{m}^3$ in the task text, in rows 1 and 3, in the row-1 feedback and in the solution (Mallivastaus rows 1 and 3), so the three-figure "$T \approx 301\,\text{K}$" is justified and row 4 is the only wrong row.
-- Recomputed: pV = 200 J, nR = 0,6648 J/K, T = 300,8 K ≈ 301 K; θ = 27,7 °C ≈ 28 °C; the wrong row gives 574 °C.
-- Exactly one correct option (row 4); "Laskussa ei ole virhettä" is last; the other feedback and the solution are unchanged and right.
-- Commit 6bbde30c5 touches only these lines in fy3-10; answers.py and the other tasks unchanged since the earlier PASS.
-- Text only this round: I did not open the new captures; the change is to digits inside existing inline formulas (row 3 grows by one character).
-- Hash identical at start and end.
+- Previous blocking point fixed: L2-09 now uses the vessels as L2-04 does (both $2{,}00\,\textsf{l}$) and asks $n_\text{A}/n_\text{B}$, which L2-04 does not; no contradiction with figures.py (A 0,0602 mol, B 0,0361 mol).
+- Recomputed: at 400 K $n_\text{A}/n_\text{B} = (p_\text{A}/T)/(p_\text{B}/T) = 100/60 = 1{,}667$; the 200 K points (50 and 30 kPa) give the same; answers.py 1,667, stored 1,67, tolerance 0,03.
+- Principle right: rigid closed vessel, ideal gas, so $p/T = nR/V$ and with equal $V$ the slope ratio is the amount ratio; conditions stated in the task.
+- Check real: $n = pV/(RT)$ gives 0,0602 and 0,0361 mol, ratio 1,67, consistent with L2-04's difference 0,024 mol.
+- Figure gives both lines on grid crossings; the description lists the points, not the amounts or the ratio.
+- L1-09 unchanged: $p = (500/39{,}95)\cdot 8{,}31 \cdot 293/0{,}0100 = 3{,}047\,\text{MPa}$.
+- The duplicated answers.py comment is gone.
+- Every answers.py value lies inside its exercise's tolerance (one script).
+- Hash same at start and end.

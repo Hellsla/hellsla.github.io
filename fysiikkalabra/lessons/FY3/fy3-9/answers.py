@@ -54,4 +54,6 @@ pV_dive = sum((p0 + rho_vesi * g * h / 1000) * V for h, V in ((0, 6.0), (5, 4.0)
 a["fy3-9-L3-05"] = (pV_dive / 1.5 - p0) / (rho_vesi * g / 1000)   # V = 1,5 l: p = 399,7 kPa, h = (p − p₀)/(ρg) = 30,4 m -> 30 m
 # Added exercises (teacher 2026-11-12: MAFY table task, figure task)
 a["fy3-9-L1-09"] = 101 * 2.0 / 70.1                    # MAFY 3000 m: p₂ = 70 100 Pa = 70,1 kPa; Boyle (T constant): V₂ = p₁V₁/p₂ = 202 kPa·l / 70,1 kPa = 2,882 l -> 2,9 l
+# Added exercise (teacher 2026-11-13: second figure task)
+a["fy3-9-L2-09"] = 120.0 * K(100) / 300.0              # figure: (300 K; 120 kPa); isochoric, p₂ = p₁T₂/T₁ = 120 kPa · 373,15 K / 300 K = 149,3 kPa -> 149 kPa
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

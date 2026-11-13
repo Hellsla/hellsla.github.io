@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 63d133ef967c9f45
-Mode: full
-Round: 3
+CONTENT-HASH: cd00dff614aca012
 
 ## Blocking
-(none)
-
-## Fixed
-- Data-table captions: after the template change (table.ex-data caption wraps) every data caption in the page measures at 390 px with its right edge at 357 px or less and two lines at most, so "(example data)" / "(esimerkkiaineisto)" is fully visible. Round-2 Major closed. Round-1 fixes (en pick-* aria-labels, fy3-13 L2-08 caption) stay fixed.
+None.
 
 ## Polish
-- [Minor] small tick labels of the fy3-9 pick-* graphs at 390 px; optional.
+- [Minor] fy3-9-L1-09 — the sans-serif litre in "2.0 l" and "70.1 kPa · 2.882 l" is hard to tell from a vertical bar at this size; it is the house rule (`\textsf{l}`), so no change, noted only.
+- [Minor] fy3-9-L2-09 solution, Conversions — `T_2 = 100 + 273.15 K` mixes a bare 100 with a unit-bearing term; write `100\,{}^\circ\text{C} + 273.15\,\text{K}` or `(100 + 273.15)\,\text{K}`.
 
 ## Checked
-- Rebuilt fy3-9 and fy3-13; measured every exercise data caption of en and fi-easy pages at 390 px by script (all fit); opened crops of a two-line caption in fi-easy fy3-13 L3-04 and en fy3-9 L2-06 (wrapped, legible, table unharmed). Rounds 1-2 renders of the tasks and solutions (maths, units, layout) remain valid, as the content hash is unchanged by CSS. Hash re-run at the end: unchanged.
+- Delta only: fy3-9-L1-09 (open-exercises-1280-9, -10: task, Hint box, answer, opened solution) and fy3-9-L2-09 (open-exercises-L2-1280-13, -14, -15: task with figure kelvin-points, opened solution).
+- Figure kelvin-points: axes p (kPa) and T (K), points as markers, no line drawn (so the answer is not given away); description lists the four points. Legible.
+- Typography: units upright, aligned chains, order principle → formula → substitution → result → check all fine; the set still reads as one.
+- Hash with --lang en (cd00dff614aca012) matches the packet.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish (English) 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

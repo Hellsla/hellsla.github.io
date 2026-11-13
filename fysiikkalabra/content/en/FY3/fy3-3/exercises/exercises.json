@@ -323,11 +323,11 @@
     {
       "id": "fy3-3-L2-08",
       "level": 2,
-      "text": "The graph shows the pressures of a gas measured at different temperatures in a closed rigid container. Assume that the pressure depends linearly on the temperature. At what temperature is the pressure $90\\,\\text{kPa}$?",
+      "text": "The graph shows the pressures of a gas measured at different temperatures in a closed rigid container. Assume that the pressure depends linearly on the temperature. At what temperature is the pressure $100\\,\\text{kPa}$? Read the values of the points from the graph; the grid spacing is $25\\,{}^\\circ\\text{C}$ and $25\\,\\text{kPa}$.",
       "figure": "fy3-3/extrapolation-points",
-      "answer": 54.5,
+      "answer": 90.9,
       "unit": "°C",
-      "tolerance": 0.04
+      "tolerance": 0.08
     }
   ],
   "level3": [

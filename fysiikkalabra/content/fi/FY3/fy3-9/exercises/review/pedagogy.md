@@ -1,14 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: fb4c9e7694ba0259
+CONTENT-HASH: 07b8fc3a7879dabc
+SCOPE: delta added-exercise from fb4c9e7694ba0259 base 81db4a6fd727
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- exercises.json fy3-9-L2-08, option D feedback — "paine pienenee tilavuuden mukana" is ambiguous (the graph shows p rising with V) — "Tässä paine pienenee, kun tilavuus pienenee, ikään kuin $p$ olisi suoraan verrannollinen tilavuuteen $V$."
+1. fy3-9-L2-09 — tehtävä käyttää isokoorista tilanmuutosta ja kelvinmuunnosta; varmista, että luvun tiivistelmä esittää p/T-vakion, sillä pääotsikko on Boylen laki. Muuten ei muutosta.
+2. fy3-9-L1-09 — ratkaisun "Todellisuudessa lämpötila laskee korkeuden mukana" on hyvä; harkitse tästä lisää vain jos tilaa on, ei tarpeen.
 
 ## Checked
-- L2-08 (kuvaajan valinta, new): situation first, question last; the four graphs share the end points (40 ml; 100 kPa) and (10 ml; 400 kPa) for A and B, so only the 20 ml reading separates them. That is the lesson's misconception ("kääntäen verrannollisuus ei ole laskeva suora"), and A is that error.
-- Figures A–D legible in the 1280 px render, labelled axes, grid; the options are shuffled and the letters stay with their figures. No form cue to the correct one; each feedback names its confusion.
-- Solution: principle (isothermal, closed, pV constant), p at 20 and 10 ml, why each wrong graph is wrong, how to read it. Within fy3-9; level 2 fits (two readings plus a model). The old set is unchanged.
-- From the render: L2-08 question, options, feedback, solution at 1280 px. Text only: phone width (no 390 px exercise capture; the solution has only short lines, no long chain).
+- L1-09: taso 1, Boylen laki suoraan, MAFY-haku (vihje vain taulukon nimi); 101·2,0/70,1 = 2,88 l, vastaus 2,9 l.
+- Konteksti (ilmapussi vuorella) tuttu, oletukset (vakiolämpötila, suljettu) sanottu; ei ansaa.
+- Ratkaisussa periaate, muunnos Pa kPa, järkevyys (pV vakio) seurattavissa.
+- L2-09: kuvaaja tarvitaan (piste 300 K; 120 kPa), kuvaus antaa samat pisteet eikä paljasta vastausta; 100 °C tulee muuntaa kelvineiksi, taso 2 sopii.
+- 120·373,15/300 = 149,3 kPa; toleranssi 2 % kattaa lukuvirheet.
+- Ei toista L1-04/L2-02:ta, koska tieto luetaan kuvaajasta ja kuvaaja on isokoorinen.

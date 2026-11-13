@@ -1,19 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 351a2dfbe36ac039
-Mode: delta (exercises, fi-easy), round 1. Changed: new task L2-08, situation/question paragraph splits, solutions.md for L2-08.
+CONTENT-HASH: 4a07432ed4b9f5bd
 
 ## Blocking
-(none)
+
 
 ## Polish
-- [Minor] fy3-12 L3 ocean-warming task — "700 metres"/"365 days" ("700 metrin", "365 vuorokautta") are plain-text quantities in untouched reviewed text — set as $700\,\text{m}$ and $365\,\text{d}$ at the next edit.
+- [Minor] fy3-12-L2-09 — arrow described as 'Auringon ja Maan välissä'; 'Maasta ylös vasemmalle' is clearer.
+- [Minor] fy3-12-L3-03 solution Muunnokset — 'teho W' is energy there (W is the electrical energy, Wh/1000 = kWh); say 'energia'. Present before round 2.
 
 ## Checked
-- Rendered preview/fi-easy/fy3-12.html at 390 px with my own script (scratch trvis3x): fy3-12-L2-08 (ordering task, task card, answer and model solution) and the split tasks L2-01, L3-01..04, in default and answered/opened state.
-- The new L2-08 card opened in full: task text, options or statements, feedback blocks, Vastaus/Answer and model solution; formulas, units, fractions and the units with \cdot render as KaTeX, no red source, no clipping or horizontal overflow.
-- The paragraph splits read as situation, then data, then the question; nothing sideways when feedback opens.
-- Plain language holds: short sentences, terms explained where needed (e.g. "eli ei muutu", "massavirta eli kuinka monta kilogrammaa…"); case endings after the maths are correct ("$0\,{}^\circ\text{C}$:seen", "$2{,}00\,\textsf{l}$:n"). Decimal comma used throughout.
-- Figure and graph tasks were not changed by the diff; contact sheets are not used in this exercises-only delta.
+- Round 2, delta. Opened fy3-12-open-exercises-L2-1280-10..13 and L3-1280-3, -4 (15-18 with the earth-flows figure and whole solution; 15-21 heat pump with the added definition of the coefficient and its solution). (fi-easy figure and layout identical to fi; its text checked from the diff, short sentences, concepts kept.)
+- Hash at start and end the same.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4
