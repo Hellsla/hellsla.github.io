@@ -1,19 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 622d819e7af597e2
-SCOPE: delta added-exercise from ba420448372c48ee base 81db4a6fd727
+CONTENT-HASH: 2018749175b6d30f
+SCOPE: delta round 2, fy3-3-L2-08 rewritten as a figure-reading task
 
 ## Blocking
 (none)
 
 ## Polish
-- fy3-3-L2-08 — the task text lists all five points, so the figure is not needed to answer. Either drop the list from the text (the figure and its description carry the points) or accept the figure as an illustration; a figure the student must read is better practice.
-- fy3-3-L2-08 — the stored tolerance (4 %, 52.3-56.7 degC) is wider than the solution's "53 to 56 degC"; state the same range in both.
-- fy3-3-L1-10 — the solution rounds to 77 K while the stored answer is 77.15; harmless, but say "77 K (77.15 K unrounded)".
+- fy3-3-L2-08 — the last point, 102.5 kPa, sits only 2.5 kPa above the 100 kPa grid line. A student who reads it as 100 kPa gets 100 degC, outside the 84-98 degC range (a "Lähellä" near miss, not wrong). Say "the last point is slightly above the 100 kPa line" in the task, or take the target pressure from another place on the graph.
+- fy3-3-L2-08 — the unrounded answer is 90.9 and the solution rounds to 91; add "(90.9 unrounded)".
 
 ## Checked
-- L1-10 is level 1: one lookup (boiling point of nitrogen, section named in the hint) and one conversion theta + 273.15; the situation comes first, the question last. It differs from the other conversion tasks by the table lookup. No repeat of the worked example.
-- L1-10 solution: principle (equal steps, different zero points), symbolic formula, substitution, positive-kelvin reasonableness check and back-conversion.
-- L2-08 is level 2: linear data, slope from two points, solving for the temperature; matches the course's extrapolation experiment. Assumption of linearity is stated in the task, so there is no trap.
-- L2-08 solution: slope found first, formula solved in symbols, interpolation check against the neighbouring points.
-- Figure extrapolation-points: description lists the same five points and the axis range; neither gives 54.5 degC.
-- Set fit: kinds and progression within the levels remain balanced; nothing beyond FY3.
+- This was my earlier polish point: the task no longer lists the five points, so the figure must be read; the grid spacing (25 degC, 25 kPa) is given, which is the right scaffold for level 2.
+- The question comes last, the assumption of linearity is stated, and the extrapolation figure fits the course's absolute-zero experiment.
+- The solution explains the reading (p0 on a grid line, the last point just above 100 kPa), gives the slope in symbols, the formula solved for theta, a substitution, a check and a reasonableness comparison.
+- Tolerance 0.08 matches the stated 84-98 degC range and the reading error of about 1 kPa; the figure description lists the points, so a reader without sight gets the same data and no answer is given.

@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 22036945998ce665
-ROUND: 1
+CONTENT-HASH: 839f1b0810ea0dcf
+ROUND: 2
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy3-3-L2-08 — the task lists all five points in the text and also in the graph; the repetition is acceptable (aria/description parity) but the text alone could say "Kuvaajan pisteet:" less verbosely.
-- [Minor] fy3-3-L2-08 Vastaus — Sijoitus shows $54{,}5\,{}^\circ\text{C}$, answer $55\,{}^\circ\text{C}$; the rounding step could be written as "$\approx 55\,{}^\circ\text{C}$" in the chain.
+- [Minor] fy3-3-L2-08 — the x-axis runs −100…100 although all points lie in 0…100; fine for the extrapolation theme in the lesson, but half the plot is empty here.
 
 ## Checked
-- Delta: opened fy3-3-open-exercises-1280-9 (L1-10 solution), fy3-3-open-exercises-L2-1280-10 (L2-08 with extrapolation-points graph) and -11 (its solution).
-- Graph: blue markers without a fitted line, axes labelled p (kPa) and θ (°C), x range −100…100 so the extrapolation is visible; legible, nothing clipped.
-- Temperatures ${}^\circ\text{C}$ and K upright, fractions with units readable.
+- Round 2, delta. Opened fy3-3-open-exercises-L2-1280-10 (L2-08 new task text, graph, answer box) and -11 (whole new solution). Graph: five blue markers, axes p (kPa), theta (°C), ticks at 25 kPa and 50 °C match the stated grid; p0 = 75 kPa on a grid line, last point visibly just above 100 kPa, consistent with the solution. Chains aligned, 91 °C answer box, tolerance statement in LaTeX, decimal comma. Hash same at start and end.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 4

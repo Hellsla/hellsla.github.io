@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 31efd4d4ba7335fd
-SCOPE: delta added-exercise from 35a961c55c19b541 base 81db4a6fd727
+CONTENT-HASH: 95b438af4632227f
+SCOPE: delta round 2, fy3-16-L1-09 new situation
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-1. L1-09 repeats L1-02 (water already at 100 C thrown on the sauna stones, vaporises, Q = rm; 0.20 kg vs 0.30 kg). The lookup is the only new element. Change the situation (for example, steam condensing on skin or a kettle boiling dry) so two level 1 tasks are not twins.
-2. L2-10 and L1-04 / L2-01 all use the cool bag; the graph with the warming stage makes L2-10 different enough, but it is the third cool-bag task at levels 1-2.
+- fy3-16-L2-10 and L1-04 / L2-01 still use the cool bag (third cool-bag task at levels 1-2). Optional.
+- fy3-16-L1-09 — the situation does not say where the heat comes from; "taken from the hob" in the question is fine. The unrounded answer is 678 kJ and the stored answer is 678.0, so the solution's "680 kJ" (2 s.f.) matches the tolerance; keep that.
 
 ## Checked
-- L1-09: level 1; hint names the table; solution symbolic first, reasonableness compares with warming the water.
-- L2-09: reads dT and t from a straight-line graph, then Pt = cmdT: level 2; the figure gives only end points, no slope or c; solution explains the reading and notes losses.
-- L2-10: the graph's flat part (220 kJ) includes warming and melting; the solution's independent check (20 kJ + 200 kJ) confirms; hour conversion is explicit and the answer's 2 s.f. is justified.
-- Set mix: graph tasks join the data tasks; nothing repeats the worked example.
+- This was my earlier polish point: L1-09 is now boiling on a hob, no longer the water thrown on the sauna stones of L1-02, so the two level 1 tasks are no longer twins; the lookup stays the new element.
+- Numbers are unchanged (0.30 kg, 2260 kJ/kg, 678 kJ); the principle, symbolic Q = rm and the 4 % tolerance still hold.
+- The solution's principle line and the reasonableness note were adapted to the hob, and the sauna remark was removed, so the text is consistent with the new situation.
