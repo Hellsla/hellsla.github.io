@@ -1,19 +1,15 @@
-VERDICT: PASS
-CONTENT-HASH: 1d761ff1cb9a18e2
-SCOPE: delta added-exercise from 628ca4af401209e3 base 81db4a6fd727
+VERDICT: FAIL
+CONTENT-HASH: b0d264e365e5c2be
 
 ## Blocking
+- exercises.json:48 (L2-09) — A: yksikkö on väärä. Tehtävä kysyy nyt suurinta nopeutta ("Anna vastaus metreinä sekunnissa"), ja vastaus 0,47 on yksikössä m/s, mutta kentässä `"unit"` lukee yhä "N/m". Arvo jäi edellisestä versiosta, jossa kysyttiin jousivakiota. Sivu näyttäisi vastauksen 0,47 N/m. — Korjaa muotoon `"unit": "m/s"`.
 
 ## Polish
-- exercises.json:12 (L1-09) and answers.py header: the set now gives Mars two values, 3,72 m/s² (MAFY, L1-09) and 3,71 m/s² (L2-04 and the docstring "Mars 3,71"). The L1-09 solution explains that table values differ, so this is acceptable. Updating the docstring would avoid confusion.
-- `fy5-9/kuvaaja-k` is also the figure of a Tarkista osaamisesi check (figures.py docstring). I cannot open inquiry.json, so please confirm that the check does not ask for k from m = 0,150 kg (L2-09) or for E from k = 120 N/m (L1-10).
-- solutions.md (L2-09): reading T over two periods (0,80 s / 2) is a more accurate reading than reading one period. Optional.
+- answers.py:3 (docstring) — teksti "Mars 3,71 m/s²" on ristiriidassa L1-09:n MAFY-arvon 3,72 m/s² kanssa. Ratkaisu selittää, että taulukoiden arvot poikkeavat hieman toisistaan, joten tämä ei ole virhe.
 
 ## Checked
-- The hash was the same at the start and at the end. Only L1-09, L1-10 and L2-09 were judged.
-- Recomputed: L1-09 gives 2π√(1,00/3,72) = 3,258 s; L1-10 gives ½·120·0,030² = 0,054 J; L2-09 gives 4π²·0,150/0,40² = 37,01 N/m. All three equal answers.py.
-- Figure data: x = 3 cos(2πt/0,40) cm gives A = 3,0 cm on a labelled tick and maxima at 0, 0,40 and 0,80 s on the grid. The description gives the same values. L1-10 reads A and L2-09 reads T, so neither gives the other away.
-- MAFY task L1-09: 3,72 m/s² is the VERIFIED row fy5-9, and the hint names only the table. The ±4 % in the solution matches `tolerance` 0.04. The small-swing condition is stated.
-- Sig figs: L1-10 has 2 (A = 3,0 cm), L2-09 has 2 (T = 0,40 s; the answer 37 is inside 2 %), and L1-09 has 3.
-- L1-10 is like L1-04 (same k) but reads A from a graph, so it is not a repeat.
-- Notation ($T = 2\pi\sqrt{m/k}$, $E = \tfrac12 kA^2$, l, g) is the brief's.
+- Hash oli sama alussa ja lopussa. Arvioin vain tehtävät L1-09, L1-10 ja L2-09.
+- L2-09 ja sen ratkaisu: v_max = 2πA/T = 2π·0,030 m / 0,40 s = 0,471 m/s, josta vastaus 0,47 m/s. Kaava johdetaan luvun kaavoista ½mv_max² = ½kA² ja T = 2π√(m/k). Kaksi merkitsevää numeroa vastaa lukemia A = 3,0 cm ja T = 0,40 s, ja järkevyystarkistus (keskinopeus 0,30 m/s) on oikein.
+- L1-09: 2π√(1,00/3,72) = 3,258 s. L1-10: ½·120·0,030² = 0,054 J. Kumpikin vastaa answers.py:tä ja exercises.json:ia.
+- Kuva kuvaaja-k on myös Tarkista osaamisesi -tehtävän 2 kuva. lesson-answers.py:n mukaan se tehtävä kysyy jousivakion k massasta 0,25 kg ja jaksonajasta T. L2-09 kysyy nyt nopeutta v_max ja L1-10 energiaa E, joten kumpikaan ei toista tarkistusta. Kierroksen 1 huoli on poistunut.
+- Kuvassa x = 3 cos(2πt/0,40) cm, ja huiput osuvat apuviivoille. Alt-teksti antaa samat arvot.

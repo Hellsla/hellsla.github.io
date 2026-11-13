@@ -367,7 +367,7 @@
       "text": "The graph shows the position of a body oscillating on a spring as a function of time. Calculate the greatest speed of the body. Give the answer in metres per second.",
       "figure": "fy5-9/kuvaaja-k",
       "answer": 0.47,
-      "unit": "N/m",
+      "unit": "m/s",
       "tolerance": 0.02
     }
   ],

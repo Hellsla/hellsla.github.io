@@ -45,7 +45,7 @@
       "text": "Kuvaaja esittää jousen varassa värähtelevän kappaleen paikkaa ajan funktiona. Laske kappaleen suurin nopeus. Anna vastaus metreinä sekunnissa.",
       "figure": "fy5-9/kuvaaja-k",
       "answer": 0.47,
-      "unit": "N/m",
+      "unit": "m/s",
       "tolerance": 0.02
     }
   ],
