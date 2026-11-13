@@ -151,9 +151,9 @@
     {
       "id": "fy5-14-L1-10",
       "level": 1,
-      "text": "Kuvassa on tuntemattoman soittimen äänen FFT-spektri. Mikä on äänen perustaajuus? Lue tarvittavat tiedot kuvasta.",
+      "text": "Kuvassa on tuntemattoman soittimen äänen FFT-spektri. Mikä on tämän äänen seitsemännen harmonisen taajuus? Lue tarvittavat tiedot kuvasta.",
       "figure": "fy5-14/spektri-tehtava",
-      "answer": 200.0,
+      "answer": 1400,
       "unit": "Hz",
       "tolerance": 0.02
     }
@@ -289,11 +289,11 @@
     {
       "id": "fy5-14-L2-08",
       "level": 2,
-      "text": "Kuvassa on kahden yhtä aikaa soivan ääniraudan yhteinen ääni mikrofonilla mitattuna. Mikä on huojuntataajuus? Lue tarvittavat tiedot kuvasta.",
+      "text": "Kuvassa on kahden yhtä aikaa soivan ääniraudan yhteinen ääni mikrofonilla mitattuna. Matalampi äänirauta on $523\\,\\text{Hz}$:n äänirauta. Mikä on korkeamman ääniraudan taajuus? Lue tarvittavat tiedot kuvasta.",
       "figure": "fy5-14/huojunta-tehtava",
-      "answer": 4.0,
+      "answer": 527,
       "unit": "Hz",
-      "tolerance": 0.02
+      "tolerance": 0.002
     }
   ],
   "level3": [
