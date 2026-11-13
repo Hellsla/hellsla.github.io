@@ -67,7 +67,7 @@
   {
    "id": "fy1-hypoteesi",
    "moduuli": "FY1",
-   "luku": "fy1-1",
+   "luku": "fy1-8",
    "aihe": "fy1-tutkimusmenetelma",
    "kasite": "Hypoteesi",
    "maaritelma": "Perusteltu oletus, jota voidaan testata kokeellisesti."
@@ -155,7 +155,7 @@
   {
    "id": "fy1-merkitsevat-numerot",
    "moduuli": "FY1",
-   "luku": "fy1-3",
+   "luku": "fy1-2",
    "aihe": "fy1-mittaaminen",
    "kasite": "Merkitsevät numerot",
    "maaritelma": "Luvun numerot, jotka kuvaavat mittaustuloksen käytettävissä olevaa tarkkuutta."
@@ -577,7 +577,7 @@
   {
    "id": "fy1-mittausaineisto",
    "moduuli": "FY1",
-   "luku": "fy1-8",
+   "luku": null,
    "aihe": "fy1-kokeellinen-tutkimus",
    "kasite": "Mittausaineisto",
    "maaritelma": "Kokeessa kerätyt arvot, havainnot, kuvat tai videot, joita analysoidaan."
@@ -585,7 +585,7 @@
   {
    "id": "fy1-tulosten-analyysi",
    "moduuli": "FY1",
-   "luku": "fy1-8",
+   "luku": null,
    "aihe": "fy1-kokeellinen-tutkimus",
    "kasite": "Tulosten analyysi",
    "maaritelma": "Aineistoa käsitellään laskuilla ja kuvaajilla riippuvuuksien löytämiseksi."
@@ -625,7 +625,7 @@
   {
    "id": "fy1-tiedonhankinta",
    "moduuli": "FY1",
-   "luku": "fy1-8",
+   "luku": null,
    "aihe": "fy1-tiedonhankinta",
    "kasite": "Tiedonhankinta",
    "maaritelma": "Luotettavan tiedon etsimistä esimerkiksi tutkimuksista, oppikirjoista, tietokannoista ja asiantuntijalähteistä."
@@ -633,7 +633,7 @@
   {
    "id": "fy1-tiedontuottaja",
    "moduuli": "FY1",
-   "luku": "fy1-8",
+   "luku": null,
    "aihe": "fy1-tiedonhankinta",
    "kasite": "Tiedontuottaja",
    "maaritelma": "Taho, joka tuottaa ja julkaisee tietoa, esimerkiksi tutkimuslaitos, viranomainen, yritys tai yksityishenkilö. Sen tausta ja tarkoitus vaikuttavat siihen, miten tietoa kannattaa arvioida."
@@ -657,7 +657,7 @@
   {
    "id": "fy1-objektiivisuus",
    "moduuli": "FY1",
-   "luku": "fy1-8",
+   "luku": null,
    "aihe": "fy1-tiedonhankinta",
    "kasite": "Objektiivisuus",
    "maaritelma": "Tavoite kuvata havaintoja riippumatta tutkijan henkilökohtaisista mielipiteistä."

@@ -1232,7 +1232,8 @@ dialog.zoom-dlg::backdrop{background:rgba(14,17,22,.78)}
    grid cell, so a turned card keeps its height and a row never gets an empty column; a lesson and Sovella show two
    cards side by side from 36rem (stacked on a phone), never a sideways scroll (teacher 2026-11-04), an answered card
    replaced by the next one. Without JavaScript the cards are a definition list (.kc-dl). The bold terms of
-   Teoriatiivistelmä that name a card get a dotted underline and open a popover (.kc-pop). */
+   Teoria that name a card, and the first plain mention of each of the chapter's other cards, get a dotted underline
+   and open a popover (.kc-pop). */
 .kc-intro{font-size:var(--fs-inner);color:var(--ink-2);margin:0 0 1rem}
 .kc-dl{margin:0 0 1rem;display:grid;grid-template-columns:minmax(0,1fr);gap:.6rem;min-width:0}
 .kc-item{background:var(--surface);border:1px solid var(--line);border-radius:var(--inner-radius);padding:.7rem 1rem}
@@ -1290,6 +1291,7 @@ strong.kc-ready{font-weight:inherit}
 .kc-term-btn{font:inherit;font-weight:700;color:inherit;background:none;border:0;padding:0;margin:0;cursor:pointer;
   text-decoration:underline dotted;text-decoration-color:var(--accent);text-decoration-thickness:2px;text-underline-offset:.22em}
 .kc-term-btn:hover,.kc-term-btn[aria-expanded="true"]{color:var(--accent-deep);text-decoration-style:solid}
+.kc-term-btn.kc-term-plain{font-weight:inherit}   /* the first mention of a chapter's concept in plain text keeps its weight */
 .kc-chips{margin:1rem 0 0;padding:.75rem 1rem .85rem;border-radius:var(--inner-radius);background:var(--bg-tint)}
 .kc-chips-label{margin:0 0 .5rem;font:700 var(--fs-ui) var(--sans);color:var(--ink-2)}
 .kc-chip-list{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.4rem}
