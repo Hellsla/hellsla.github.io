@@ -636,7 +636,7 @@
       {
        "key": "equation",
        "points": 1,
-       "detail": "$\\Delta L = \\alpha L_0 \\Delta T$."
+       "detail": "$\\Delta l = \\alpha l_0 \\Delta T$."
       },
       {
        "key": "calculation",
@@ -646,7 +646,7 @@
       {
        "key": "units_precision",
        "points": 1,
-       "detail": "$\\Delta L \\approx 0{,}15\\,\\text{m} = 15\\,\\text{cm}$."
+       "detail": "$\\Delta l \\approx 0{,}15\\,\\text{m} = 15\\,\\text{cm}$."
       },
       {
        "key": "reasonableness",
@@ -983,7 +983,7 @@
        "points": 2
       },
       {
-       "text": "Lämpöpumpun sähkö on $E_\\text{s} = \\tfrac{Q}{\\varepsilon} \\approx 6{,}8\\,\\text{MWh}$.",
+       "text": "Lämpöpumpun sähkö on $W = \\tfrac{Q_1}{\\varepsilon} \\approx 6{,}8\\,\\text{MWh}$.",
        "tag": "transfer",
        "points": 1
       },
@@ -1011,7 +1011,7 @@
        "points": 1
       },
       {
-       "text": "Energia säilyy: taloon annettu lämpö on maasta otetun lämmön ja pumpun käyttämän sähköenergian summa, $Q_\\text{sisälle} = Q_\\text{maa} + E_\\text{s}$.",
+       "text": "Energia säilyy: taloon annettu lämpö on maasta otetun lämmön ja pumpun käyttämän sähköenergian summa, $Q_1 = Q_2 + W$.",
        "tag": "concept",
        "points": 1
       },

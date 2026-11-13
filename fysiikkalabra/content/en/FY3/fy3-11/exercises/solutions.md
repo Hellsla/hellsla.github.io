@@ -80,12 +80,12 @@
 **Reasonableness:** Of the heat, $200\,\text{J}$ is used in pushing the piston and the remaining $500\,\text{J}$ raises the temperature of the air, so $\Delta U > 0$ and $\Delta U < Q$. If the work were added to the heat, the result would be $900\,\text{J}$, more than the heat that entered the air, although the air gives up energy as it pushes the piston. So the sign is correct.
 
 ## fy3-11-L2-04
-**Given:** mechanical power $P_\text{mech} = 480\,\text{kW}$, efficiency $\eta = 40.0\,\% = 0.400$
+**Given:** mechanical power $P_\text{a} = 480\,\text{kW}$, efficiency $\eta = 40.0\,\% = 0.400$
 **Find:** the power of the waste heat $P_\text{waste}$ in kilowatts
 **Principle:** The engine is a heat engine, and energy is conserved: the fuel power is divided into mechanical power and waste heat. Efficiency links the mechanical power to the fuel power, so the fuel power is calculated first.
-**Formula:** $\eta = \dfrac{P_\text{mech}}{P_\text{in}}$, so $P_\text{in} = \dfrac{P_\text{mech}}{\eta}$ and $P_\text{waste} = P_\text{in} - P_\text{mech}$
+**Formula:** $\eta = \dfrac{P_\text{a}}{P_\text{o}}$, so $P_\text{o} = \dfrac{P_\text{a}}{\eta}$ and $P_\text{waste} = P_\text{o} - P_\text{a}$
 **Conversions:** Efficiency $40.0\,\% = \tfrac{40.0}{100} = 0.400$. The powers are already in kilowatts, so no other conversion is needed.
-**Substitution:** $P_\text{in} = \dfrac{480\,\text{kW}}{0.400} = 1200\,\text{kW}$, so $P_\text{waste} = 1200\,\text{kW} - 480\,\text{kW} = 720\,\text{kW}$
+**Substitution:** $P_\text{o} = \dfrac{480\,\text{kW}}{0.400} = 1200\,\text{kW}$, so $P_\text{waste} = 1200\,\text{kW} - 480\,\text{kW} = 720\,\text{kW}$
 **Answer:** $720\,\text{kW}$, two significant figures. The limiting value is the mechanical power $480\,\text{kW}$, whose first two figures are certain; the efficiency $40.0\,\%$ has three figures and does not limit the precision.
 **Reasonableness:** $60\,\%$ is wasted and $40\,\%$ is put to use, so there is $\tfrac{60}{40} = 1.5$ times as much waste heat as mechanical power: $1.5 \cdot 480\,\text{kW} = 720\,\text{kW}$. The fuel power is greater than the mechanical power, as it should be. Part of the waste heat can be used to heat the passenger cabin.
 
@@ -100,13 +100,13 @@
 **Reasonableness:** The overall efficiency is $\dfrac{96 + 180}{320} \approx 86\,\%$ in combined production and $\dfrac{276}{440} \approx 63\,\%$ in separate production, so separate production needs more fuel. A heating plant does not turn heat into work, so its losses are only in the flue gases. A condensing power plant turns heat into work, and then part of the heat must always be given up to a colder environment, usually the sea.
 
 ## fy3-11-L3-02
-**Given:** yearly heat demand $Q = 16.0\,\text{MWh}$, coefficient of performance of the heat pump $\varepsilon = 2.50$, current heating is direct electric heating
+**Given:** yearly heat demand $Q_1 = 16.0\,\text{MWh}$, coefficient of performance of the heat pump $\varepsilon = 2.50$, current heating is direct electric heating
 **Find:** the electrical energy saved $\Delta E$ and the heat taken from the outdoor air $Q_2$ in megawatt-hours, and a justification for why the pump is not a perpetual motion machine
 **Principle:** The coefficient of performance tells how many times as much heat the pump gives out as the electricity it uses. In direct electric heating the resistors turn practically all the electrical energy into internal energy, which is transferred as heat to the room, so it needs as much electricity as heat. Energy is conserved: the heat entering the house is the pump's electricity and the heat taken from the outdoor air together.
-**Formula:** $\varepsilon = \dfrac{Q}{W}$, so $W = \dfrac{Q}{\varepsilon}$. The saving is $\Delta E = Q - W$ and from conservation of energy $Q_2 = Q - W$, so $\Delta E = Q_2 = Q - \dfrac{Q}{\varepsilon}$.
+**Formula:** $\varepsilon = \dfrac{Q_1}{W}$, so $W = \dfrac{Q_1}{\varepsilon}$. The saving is $\Delta E = Q_1 - W$ and from conservation of energy $Q_2 = Q_1 - W$, so $\Delta E = Q_2 = Q_1 - \dfrac{Q_1}{\varepsilon}$.
 **Conversions:** All energies are in megawatt-hours and the coefficient of performance has no unit, so no conversions are needed.
-**Substitution:** $W = \dfrac{16.0\,\text{MWh}}{2.50} = 6.40\,\text{MWh}$, so $\Delta E = Q_2 = 16.0\,\text{MWh} - 6.40\,\text{MWh} = 9.60\,\text{MWh}$, or directly $\Delta E = Q\left(1 - \dfrac{1}{\varepsilon}\right) = 16.0\,\text{MWh} \cdot 0.600 = 9.60\,\text{MWh}$
-**Answer:** $9.60\,\text{MWh}$ both as electricity saved and as heat taken from the outdoor air, three significant figures. The electricity of the pump, $6.40\,\text{MWh}$, is calculated from the heat demand $16.0\,\text{MWh}$ and is not a separate measurement, so the rule for differences is not used. The result is the product $Q\left(1 - \tfrac{1}{\varepsilon}\right)$, and its figures are limited by the heat demand $16.0\,\text{MWh}$ and the coefficient of performance $2.50$ (both three figures).
+**Substitution:** $W = \dfrac{16.0\,\text{MWh}}{2.50} = 6.40\,\text{MWh}$, so $\Delta E = Q_2 = 16.0\,\text{MWh} - 6.40\,\text{MWh} = 9.60\,\text{MWh}$, or directly $\Delta E = Q_1\left(1 - \dfrac{1}{\varepsilon}\right) = 16.0\,\text{MWh} \cdot 0.600 = 9.60\,\text{MWh}$
+**Answer:** $9.60\,\text{MWh}$ both as electricity saved and as heat taken from the outdoor air, three significant figures. The electricity of the pump, $6.40\,\text{MWh}$, is calculated from the heat demand $16.0\,\text{MWh}$ and is not a separate measurement, so the rule for differences is not used. The result is the product $Q_1\left(1 - \tfrac{1}{\varepsilon}\right)$, and its figures are limited by the heat demand $16.0\,\text{MWh}$ and the coefficient of performance $2.50$ (both three figures).
 **Reasonableness:** The electricity saved is exactly the heat brought in from the outdoor air, and the pump uses only $\tfrac{1}{2.50} = 40\,\%$ of the electricity. Checking the balance: the heat entering the house is $9.60\,\text{MWh} + 6.40\,\text{MWh} = 16.0\,\text{MWh}$. The pump is not a perpetual motion machine, because it does not create energy but uses electricity to transfer heat from cold to warm.
 
 ## fy3-11-L3-03

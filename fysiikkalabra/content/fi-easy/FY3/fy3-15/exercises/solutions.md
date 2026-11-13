@@ -192,7 +192,7 @@ Lähin vaihtoehto on $500\,\text{MW}$. Järkevyys: tulos on noin $42\,\%$ poltto
 **Annettu:** lämmitystarve $Q_1 = 100\,\text{kWh}$, lämpökerroin $\varepsilon = 3{,}00$, voimalan hyötysuhde $\eta_\text{voimala} = 0{,}400$ ja siirron osuus $\eta_\text{siirto} = 0{,}950$
 **Kysytty:** voimalaitoksen polttoaineen energia $E_\text{polttoaine}$ kilowattitunteina
 **Periaate:** Lämpöpumppu siirtää lämpöä ulkoa sisälle ja käyttää siihen sähköä. Lämpökerroin kertoo lämmön ja sähkön suhteen. Sähkö on tuotettu polttoaineesta ketjussa, jonka jokainen vaihe päästää läpi vain osan energiasta. Polttoaine saadaan siis jakamalla sähkö ketjun hyötysuhteella.
-**Kaava:** $\varepsilon = \dfrac{Q_1}{W}$, joten $W = \dfrac{Q_1}{\varepsilon}$, ja $E_\text{polttoaine} = \dfrac{W}{\eta_\text{siirto}\, \eta_\text{voimala}}$, siis $E_\text{polttoaine} = \dfrac{Q_1}{\eta_\text{siirto}\, \eta_\text{voimala}\, \varepsilon}$ Lämpöpumpussa $Q_1$ on lämpö, joka siirtyy sisälle. $W$ on sähköenergia, jota pumppu käyttää.
+**Kaava:** $\varepsilon = \dfrac{Q_1}{W}$, joten $W = \dfrac{Q_1}{\varepsilon}$, ja $E_\text{polttoaine} = \dfrac{W}{\eta_\text{siirto}\, \eta_\text{voimala}}$, siis $E_\text{polttoaine} = \dfrac{Q_1}{\eta_\text{siirto}\, \eta_\text{voimala}\, \varepsilon}$. Lämpöpumpussa $Q_1$ on lämpö, joka siirtyy sisälle. $W$ on sähköenergia, jota pumppu käyttää.
 **Muunnokset:** Kaikki energiat ovat kilowattitunteina ja kertoimet dimensiottomia, joten muunnoksia ei tarvita.
 **Sijoitus:** $E_\text{polttoaine} = \dfrac{100\,\text{kWh}}{0{,}950 \cdot 0{,}400 \cdot 3{,}00} = \dfrac{100\,\text{kWh}}{1{,}14} = 87{,}719\,\text{kWh}$
 **Vastaus:** $87{,}7\,\text{kWh}$, kolme merkitsevää numeroa. Kertoimet $0{,}950$, $0{,}400$ ja $3{,}00$ ovat kolmella numerolla. Lämmitystarve $100\,\text{kWh}$ on annettu kilowattitunnin tarkkuudella.
@@ -234,7 +234,7 @@ $P_\text{L} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 38\,000\,\tfr
 **Annettu:** kuvan pylväistä luettuna höyrykierrolle sisään tuleva teho $P_1 = 350\,\text{MW}$ ja ulos tuleva teho $P_2 = 150\,\text{MW}$
 **Kysytty:** höyrykierron hyötysuhde $\eta_2$ prosentteina
 **Periaate:** Vaiheet ovat peräkkäin. Kunkin vaiheen ulostuloteho on sen hyötysuhteen ja sisään tulevan tehon tulo. Höyrykierron sisäänmenoteho on kattilan jälkeinen teho $P_1$. Sen ulostuloteho on $P_2$.
-**Kuvaajan lukeminen:** Pylväiden $P_1$ ja $P_2$ päät ovat ruudukon viivoilla. Pylvään $P_1$ pää on kohdassa $350\,\text{MW}$. Pylvään $P_2$ pää on kohdassa $150\,\text{MW}$. Ruudukon väli on $50\,\text{MW}$. Polttoaineteho $P_0$ ja sähköteho $P_3$ eivät kuulu höyrykierron hyötysuhteeseen.
+**Kuvaajan lukeminen:** Pylväiden $P_1$ ja $P_2$ päät ovat ruudukon viivoilla. Pylvään $P_1$ pää on kohdassa $350\,\text{MW}$. Pylvään $P_2$ pää on kohdassa $150\,\text{MW}$. Ruudukon väli on $50\,\text{MW}$. Polttoaineteho $P_\text{o}$ ja sähköteho $P_3$ eivät kuulu höyrykierron hyötysuhteeseen.
 **Kaava:** $P_2 = \eta_2 P_1$. Siis $\eta_2 = \dfrac{P_2}{P_1}$.
 **Muunnokset:** Molemmat tehot ovat yksikössä $\text{MW}$. Yksikkö supistuu pois. Hyötysuhde prosentteina saadaan kertomalla sadalla.
 **Sijoitus:** $\eta_2 = \dfrac{150\,\text{MW}}{350\,\text{MW}} = 0{,}4286 = 42{,}86\,\%$

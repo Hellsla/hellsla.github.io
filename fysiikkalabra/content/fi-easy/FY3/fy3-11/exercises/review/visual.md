@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: c18c297dc5096d89
+CONTENT-HASH: f00dc3e983462abd
 
 ## Blocking
-None. The fixes read well and are consistent with the lesson symbols.
+- none
 
 ## Polish
-None new (earlier polish unchanged).
+- [Minor] fy3-11 page, section #sovella (not an exercise): at 390 px a KaTeX span reaches x=431, so the page scrolls horizontally; fy3-15 has an SVG over 390 px wide. Neither is in the changed exercises; check separately.
 
 ## Checked
-Opened L3-01 solution (Periaate: η = P_a/P_o, P_o = P_a/η, symbols defined) at 390 px, solution open: KaTeX fine. Language: fi-easy; no clipping in the changed places.
+fy3-11 L1-09, L2-09 (pv-isobaari figure), L2-04, L3-02 opened with solutions at 390 and 1280 px (fi-easy). P_a/P_o and Q_1 render cleanly; the graph is legible with axes and units.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

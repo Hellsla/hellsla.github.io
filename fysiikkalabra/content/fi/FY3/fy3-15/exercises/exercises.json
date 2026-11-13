@@ -266,7 +266,7 @@
     {
       "id": "fy3-15-L2-09",
       "level": 2,
-      "text": "Kuvassa on lauhdevoimalaitoksen teho energiaketjun eri vaiheissa: $P_0$ on polttoaineteho, $P_1$ teho kattilan jälkeen, $P_2$ teho höyrykierron jälkeen ja $P_3$ sähköteho. Laske höyrykierron hyötysuhde $\\eta_2$. Lue tarvittavat arvot kuvasta ja anna vastaus prosentteina.",
+      "text": "Kuvassa on lauhdevoimalaitoksen teho energiaketjun eri vaiheissa: $P_\\text{o}$ on polttoaineteho, $P_1$ teho kattilan jälkeen, $P_2$ teho höyrykierron jälkeen ja $P_3$ sähköteho. Laske höyrykierron hyötysuhde $\\eta_2$. Lue tarvittavat arvot kuvasta ja anna vastaus prosentteina.",
       "figure": "fy3-15/chain-bars",
       "answer": 42.857,
       "unit": "%",
