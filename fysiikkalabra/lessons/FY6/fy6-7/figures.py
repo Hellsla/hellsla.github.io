@@ -129,7 +129,7 @@ def dryer():
     ax = Axes(f, (84, 296), (470, 66), x=(0, 2.25), y=(0, 2.8), xticks=[0.25 * k for k in range(1, 9)], yticks=yt,
               xlabel=r"t\ (\text{h})", ylabel=r"P\ (\text{kW})",
               xfmt=lambda v: fi(v) if abs(v * 2 - round(v * 2)) < 1e-9 and v < 2.1 else "",
-              yfmt=lambda v: fi(v, 1))
+              yfmt=lambda v: fi(round(v, 1)))
     ax.line([(0, 2.4), (0.5, 2.4), (0.5, 1.2), (1.5, 1.2), (1.5, 0.2), (2.0, 0.2), (2.0, 0)], HEAT, 3)
     f.tex(ax.X(0.5) + 12, ax.Y(2.4), r"\text{kuumennus}", "start", w=130)
     f.tex(ax.X(1.0), ax.Y(1.2) - 26, r"\text{kuivaus}", "middle", w=100)

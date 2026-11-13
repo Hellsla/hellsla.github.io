@@ -56,7 +56,7 @@
 **Formula:** $E = P_1 t_1 + P_2 t_2 + P_3 t_3$
 **Conversions:** Not needed: the powers are read in kilowatts and the times in hours, so the energy comes out in kilowatt-hours.
 **Substitution:** $E = 2.0\,\text{kW} \cdot 0.25\,\text{h} + 0.2\,\text{kW} \cdot 1.0\,\text{h} + 0.4\,\text{kW} \cdot 0.25\,\text{h} = 0.80\,\text{kWh}$
-**Answer:** $0.80\,\text{kWh}$, two significant figures, because the values are read from the graph to two figures ($0.2\,\text{kW}$ lies between grid lines, $0.25\,\text{h}$ is on one).
+**Answer:** $0.80\,\text{kWh}$, two significant figures, because the values are read from the grid lines of $0.2\,\text{kW}$ and $0.25\,\text{h}$.
 **Reasonableness:** The heating is short but uses over half of the energy, $0.50\,\text{kWh}$, because its power is ten times that of the wash. A program of an hour and a half at an average power of about $0.5\,\text{kW}$ would give $0.8\,\text{kWh}$.
 
 ## fy6-7-L2-02
@@ -242,7 +242,7 @@ The oven uses about $0.060\,\text{kWh}$, that is $60\,\text{Wh}$, of electrical 
 **Formula:** $E = Pt$
 **Conversions:** $1\,\text{kWh} = 3.6 \cdot 10^{6}\,\text{J} = 3.6\,\text{MJ}$
 **Substitution:** $E = 1.5\,\text{kW} \cdot 2.0\,\text{h} = 3.0\,\text{kWh}$ and $3.0\,\text{kWh} \cdot 3.6\,\tfrac{\text{MJ}}{\text{kWh}} = 10.8\,\text{MJ}$
-**Answer:** $10.8\,\text{MJ}$. The data $1.5\,\text{kW}$ and $2.0\,\text{h}$ have two significant figures, so the rounded result is $11\,\text{MJ}$; the factor $1\,\text{kWh} = 3.6\,\text{MJ}$ is exact and from the MAFY table (Yksikkömuunnoksia).
+**Answer:** $11\,\text{MJ}$, two significant figures like the power $1.5\,\text{kW}$ and the time $2.0\,\text{h}$. The conversion factor is from the MAFY table (Yksikkömuunnoksia), and the conversion $1\,\text{kWh} = 3.6\,\text{MJ}$ is exact. The answer is accepted within about $\pm 4\,\%$.
 **Reasonableness:** One kilowatt-hour is $3.6\,\text{MJ}$, so $3.0\,\text{kWh}$ is about $3 \cdot 4\,\text{MJ} = 12\,\text{MJ}$, a little less. The result $10.8\,\text{MJ}$ fits this.
 
 ## fy6-7-L2-08
