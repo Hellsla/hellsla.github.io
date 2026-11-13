@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: fdddeeb5c9f1df61
+CONTENT-HASH: 5bb4527761a2779c
 
 ## Blocking
+None.
 
 ## Polish
-- [Minor] L2-08 solution Mallivastaus — paragraph still about 121 words (round 1 note) — split before "Perustelu".
-- [Minor] L2-08 correct-choice feedback names "vastakkaissuuntaiset", the reason-stage content — shorten to "Oikein: voimat ovat yhtä suuret."
+- [Minor] fy4-3-L1-09 / L2-09 — F_{AB}, F_{BA} are set in italic subscripts while L2-08 uses upright \text{KH}; use F_{\text{AB}}.
+- [Minor] fy4/anturit graph — label "F_B (kärry B)" sits close to the top data points; nudge right.
 
 ## Checked
-- Rebuilt fy4-3 at hash fdddeeb5c9f1df61 (after the vectors became \overline{F}_{\text{KH}}/_{\text{HK}}), rendered L2-08 at 390 px with answer chosen, solution open: all subscripts (task, options, answer chip, Kysytty, Periaate, Mallivastaus, vectors with overline) are upright and consistent; no KaTeX errors; page 390 px, card 330 px, no overflow.
-- Source grep: no italic _{KH}/_{HK} left in exercises.json or solutions.md.
-- Text only: Finnish unchanged, distractors unchanged and still catch the chapter's mistakes.
+- open-exercises-1280-9, -10 (L1-09 task, figure fy4-3/anturit, solution) and L2-11 (L2-09 figure and solution). Axes F (N) and t (s) with units, two series told apart by colour and direct labels, points distinct from lines, readable at 1280 px; solutions render without errors; the changed v_k lines read consistently.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4

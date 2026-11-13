@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 5ffc229e2dbf46e5
+CONTENT-HASH: 2ec9267f358ff7ed
+SCOPE: delta added-exercise from 5ffc229e2dbf46e5 base 81db4a6fd727
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- [Minor] fy4-14-L1-09 solution — the five lines "1 tosi: …" to "5 epätosi: …" are one block with single line breaks; set them as separate paragraphs or a list for phone reading.
-- [Minor] fy4-14-L1-09 statement 1 — "kiihtyvyyden suuruus" is exact; the feedback says "hidastuvuus suurempi kuin g" (another word); use the same term.
+- [Minor] fy4-14-L2-08 — the intermediate values 623,25 N and 735,75 N carry more digits than the 3-figure answer; round to 623 N and 736 N in the chain.
+- [Minor] fy4-14-L2-08 force diagram — G and F_v arrows stand close together beside the body; a slightly larger gap would read better.
 
 ## Checked
-- Opened (own script vr4_task390.py, 390 px viewport, feedback of both questions and solution open, overflow measured): 9-9 (L1-09) in full: five statements with Tosi/Epätosi controls, feedback, answer line and solution; no overflow (390 px, measured), inline formulas short.
-- Truth pattern T-F-T-F-F is not guessable by form; statements 2, 4 and 5 catch the chapter's warned mistakes (no force at the apex, drag above weight at terminal speed, lighter ball).
-- Text only: solutions.md diff, which matches the card.
+- open-exercises-L2-1280-10, -11, -12: v(t) data-point graph (units, readable ticks, markers only), force diagram (G red, F_v red, v blue, a orange), two-part solution and its Vastaus/Järkevyys. Layout and Finnish good.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4

@@ -1,17 +1,15 @@
-VERDICT: PASS
-CONTENT-HASH: f73c86410af7bc40
+VERDICT: FAIL
+CONTENT-HASH: c140ae6575c8510f
 
 ## Blocking
+- [Major] fy4-10/ex-vt-kaarryt (task 14-17, fy4-10-L2-09) — the t-axis lies at v = 0 inside the plot and its tick labels (0,5 … 4) are drawn on top of the v = 0,2 m/s level, where the blue line A runs at 0,2 m/s after the collision; "2,5 3 3,5 4" collide with that line and "2" with the vertical jump. The values students must read are crowded — hard to read, error-prone — move the t-axis tick labels to the bottom of the plot (below −0,6 m/s) or give them a white backing.
 
 ## Polish
-- [Minor] fy4-10-L2-08 choices — the rows are listed shuffled (Rivi 1, 4, 2, 3), which breaks the natural reading order of a line-by-line check — keep the choices in row order and the last option last.
-- [Minor] fy4-10-L2-08 task, Rivi 4 — "$\dfrac{0{,}24 - 0{,}060}{0{,}50}\,\text{m/s}$" has no units in the numerator — acceptable as the student's line, but "$0{,}24 - 0{,}060$ (kg·m/s)" would match rows 1 and 3.
-- [Minor] fy4-10-L2-08 inline chains — "$m_\text{A} v_\text{A} = m_\text{A} v_\text{A}' + m_\text{B} v_\text{B}'$" (282 px) and "$0{,}50\,\text{kg}\cdot 0{,}60\,\text{m/s} = \dots$" (290 px) fit the 300 px budget only just — no change needed.
+- [Minor] fy4-10-L2-09 Järkevyys — the sum "0,50·0,8 + 0,30·(−0,4)" lacks units inside the chain; add m/s.
+- [Minor] L3-06 graph — label "B" next to the flat line sits close to the 0,6 m gridline; fine.
 
 ## Checked
-- Own render of fy4-10-L2-08 at 390 px and 1280 px, "Laskussa ei ole virhettä" chosen so its feedback shows, solution open: no overflow, rows 1–4 set as separate paragraphs, primes and subscripts legible.
-- Source of the choices and solution: the correct row is not identifiable by form; distractor feedback targets the warned sign mistake; the correct feedback gives the reason only after answering (single-stage task); no plain number+unit.
-- Not opened: other tasks of the chapter (unchanged).
+- open-exercises-L2-1280-12, -13, -14 (L2-09 figure and solution), L3-1280-9, -10, -11 (L3-06 x(t) graph, solution). L3-06 figure is clean (A and B labelled, break at 1 s clear); solutions aligned.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 3 · typography 5 · Finnish 5 · accessibility 4

@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 81df7a544708cbb7
-Mode: delta (changed items rendered and read in full)
-Round 1
+CONTENT-HASH: 9058d298fc12aeb3
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- [Minor] fy4-6-L2-04 — "A moving box ... is placed at rest" reads as a contradiction (Finnish "muuttolaatikko") — say "A packing box of mass ..."
-- [Minor] fy4-6-L2-08 — the situation ends with "In which order are the boxes ...?" and the prompt repeats it ("Put the boxes in order ...") — drop the question sentence from the situation or the prompt
+- [Minor] fy4-6-L2-09 free-body diagram — the normal force $\overline{N}$ is drawn from the bottom surface through the block, so its shaft doubles beside the weight line and reads like two arrows; start it at the top of the surface or offset it.
+- [Minor] fy4-6/mittaus — the horizontal axis title reads $N\ (\text{N})$, symbol and unit alike, which can confuse; name the quantity in the task ("normal force $N$").
+- [Minor] fy4-6-L1-09 solution, Answer — "$6.2\,\text{N}$" against $6.18\,\text{N}$ in the substitution is correct, but "like the coefficient $0.014$" has two figures only in the leading digits; say "two significant figures, because $\mu = 0.014$ is given to two figures".
 
 ## Checked
-- Rendered en/fy4-6.html at 390 px, every details/feedback/solution open, element captures of fy4-6-L2-04 and fy4-6-L2-08: task text and its new paragraph breaks, answer/choice/true-false/order widgets, feedback panels, Answer box, full worked solution (Given/Find/Principle/Model answer).
-- No element in the checked tasks passes x = 390; no table or caption overflow. Data-table captions (4 in the page) are 326 px wide inside 390 px. Widest inline chain 277 px (F_μD row in L2-08; about 297 px in ci, still inside the 332 px column), below the 280 px flag.
-- Maths: units upright with thin space, \cdot, decimal point, vectors and subscripts set correctly; one step per row; no red KaTeX.
-- Not re-run: check_layout/check_a11y (in the packet).
+- fy4-6-open-exercises-1280-11 (L1-09 solution: free-body diagram caption, formula, substitution, answer), L2-1280-12 (L2-09 task, graph axis title), -13 (graph, free-body diagram, start of solution), -14 (formula, substitution, answer, reasonableness).
+- Graph: units on the axes, measurement points as markers with no fitted line (the student draws it), no answer marked. Free-body diagram colours follow the convention (force red, velocity blue, acceleration orange). Chains and fractions render without errors; the MAFY lookup is named in task and solution.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

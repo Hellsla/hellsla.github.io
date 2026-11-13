@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 6f0e928ad88d259e
+CONTENT-HASH: 654329c358771fa4
+SCOPE: delta added-exercise from 6f0e928ad88d259e base 81db4a6fd727
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- [Minor] fy4-13-L2-08 solution — "Perustelu: kaavassa T = m1 m2/(m1+m2) g massojen tulo ja summa…" breaks with the fraction alone on a line at 390 px; optional display line.
+- [Minor] fy4-13-L2-09 / L3-06 — answer chips "T ≈ 1,6 N" and "m_1 ≈ 1,21 kg" carry the symbol; other chips show the value only.
+- [Minor] fy4-13-L3-06 force diagram — lacks the "eri mittakaavassa" caption that L2-09's diagram has.
 
 ## Checked
-- light delta review (teacher 2026-11-07), LOPS extension marking: the dashed "Syventävä tehtävä"/"Extension task" tag on the marked exercises at 360 and 1280 px (tag 24 px high, not clipped, beside the number; no duplicate lead-in left in the task text; count matches the diff), LaTeX and tables intact; scrollWidth = viewport.
-- Round 3, delta. Rendered 7-16 (L2-08) at 390 px with both questions' feedback and the solution open (own script vr4_task390.py); measured: page 390 px, no clipped element, chain blocks 286 px.
-- Options now "nelinkertaistuu / pysyy ennallaan / pienenee neljäsosaan": similar length, correct not identifiable by form; the correct feedback gives the number T ≈ 3,1 N and sends the student on to the reason stage without revealing it; distractors catch the chapter's warned mistake (T = m2 g, each reason has a formula).
-- Text only: solutions.md (unchanged).
+- open-exercises-L2-1280-14, -15 (v(t) points, force diagram, solution), L3-1280-11, -12 (two-body diagram, a) and b) solutions). Forces red, a orange, \overline vectors upright; points distinct, origin marked; two-part solution clearly separated.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 · accessibility 4

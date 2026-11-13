@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: c323e17b0cdef469
-Round: 2
+CONTENT-HASH: 0e0928bdaf93292f
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- [Minor] fy4-5 option figures — the label $\overline{N}$ sits tight against the box corner and arrow tip; fix: shift it a few px right (same in the older figures).
+- [Minor] fy4-5-L2-08 solution, Reasonableness — "Estimate: $10\,\text{N} : 2.5\,\text{kg} = 4.0\,\text{m/s}^2$" repeats the substitution and is not an independent estimate; replace it with the check that $6.0\,\text{N}$ and $8.0\,\text{N}$ form a $3$–$4$–$5$ triangle, which the sentence already says.
+- [Minor] fy4-5/ruutu-vinot — the label $\overline{F}_2$ touches its arrowhead; shift it a few pixels left.
+- [Minor] fy4-5-L2-08 solution, Reading the graph — the heading says "graph"; the figure is a grid diagram, but the heading is the shared template, so leave it.
 
 ## Checked
-- fy4-5-L1-09 (en) at 390 px, feedback and solution open (two-stage answer, boxed answer, Find/Principle/Model answer), screenshot read in full; measured after page scripts: scrollWidth 390, no clipped element outside a scroll box, no .kx-wide needed.
-- Units, decimal sign, LaTeX labels and vectors checked in the render.
-- Round 2: all four option figures (C, D, A, B) opened in the task render: forces red, velocity $\overline{v}$ in D blue and beside the body, none orange or red; arrows to scale, equal lengths in C; source colours checked (#c92a2a force, #1971c2 velocity).
+- fy4-5-open-exercises-L2-1280-11 (end of L2-07, task text of L2-08), -12 (figure, start of solution with the free-body diagram), -13 (formula, substitution, answer, reasonableness).
+- Figure ruutu-vinot: grid with a scale bar "$4.0\,\text{N}$", arrows end on grid crossings, red force arrows, overlined labels, nothing clipped; the solution quotes $\overline{F}_1$, $\overline{F}_2$ as the figure labels them. Substitution rows align at "=", units upright, the English text is fluent.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

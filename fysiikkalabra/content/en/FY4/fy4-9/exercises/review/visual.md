@@ -1,19 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 38b0d74ac801d74a
-Mode: delta (changed items rendered and read in full)
-Round 1
+CONTENT-HASH: 849ed9d8e226ccfc
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- [Minor] lesson page, optional "virhe" (Find the error) activity — with all boxes open at 390 px the inline chain reaches x = 458 px and the page scrolls sideways (scrollWidth 487) — outside this exercise set: for the lesson reviewer, break the chain.
+- [Minor] fy4-9-L2-08 solution, Reading the graph — the peak $900\,\text{N}$ lies halfway between the labelled $800\,\text{N}$ and $1000\,\text{N}$ and the solution does not say so; add "midway between the $800\,\text{N}$ and $1000\,\text{N}$ lines".
+- [Minor] fy4-9-L2-08 solution, Answer — "Two or three significant figures" is vague; write "$450\,\text{N}$, to the precision of the peak value read from the graph".
+- [Minor] fy4-9-L2-05 solution — the mean velocity is now $v_\text{k}$ (Finnish keskinopeus) next to $\Delta t_\text{avg}$ and $F_\text{avg}$ in the same chain; use $v_\text{avg}$ so one English subscript runs through the line.
 
 ## Checked
-- Rendered en/fy4-9.html at 390 px, every details/feedback/solution open, element captures of fy4-9-L1-09: task text and its new paragraph breaks, answer/choice/true-false/order widgets, feedback panels, Answer box, full worked solution (Given/Find/Principle/Model answer).
-- No element in the checked tasks passes x = 390; no table or caption overflow. Data-table captions (5 in the page) are 223-326 px wide inside 390 px. Widest inline chain 253 px (weight check line), below the 280 px flag.
-- Maths: units upright with thin space, \cdot, decimal point, vectors and subscripts set correctly; one step per row; no red KaTeX.
-- Not re-run: check_layout/check_a11y (in the packet).
+- fy4-9-open-exercises-L2-1280-10 (L2-08 task, force–time figure, start of solution), -11 (substitution, answer, reasonableness).
+- Figure fy4-9/tarkistus-kolmio: axes $F\ (\text{N})$ and $t\ (\text{ms})$ with units, red force line (force colour), triangle readable, nothing clipped, no answer marked. Solution units and the $\tfrac{1}{2}$ fractions render correctly; the L2-05 symbol change was read in the source diff only, it is a one-symbol replacement.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4
