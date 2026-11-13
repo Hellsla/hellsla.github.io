@@ -1,11 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: a45736261bc2d590
+CONTENT-HASH: fe8f2e5eaaa29210
+SCOPE: delta added-exercise from a45736261bc2d590 base 81db4a6fd727
 
 ## Blocking
 (none)
 
 ## Polish
-- exercises.json:361 (L3-04) — "Nykyään laskun voi tehdä toisin päin" is vague (reverse of what?) — "Nykyään gravitaatiovakio tunnetaan. Siksi Maan massa ja keskitiheys saadaan putoamiskiihtyvyydestä."
+- fy5-5-L2-09 solution, Järkevyys: 'Se on Jupiterin tunnettu suuruusluokka' - 'suuruusluokka' may be new; write 'Se vastaa Jupiterin tunnettua massaa'.
 
 ## Checked
-light delta review (teacher 2026-11-07): only the changed passages were judged, in context of the surrounding text, tasks, feedback and solutions; no full review even where the tooling asks for one; physics left to the science review; L3-04 stem against its solution (Järkevyys still compares with Cavendish's 5450 kg/m³).
+- L1-09: figure value needed, only F = mg; the 2 sig. fig. note explained.
+- L2-09: g from figure and R given, M = gR^2/gamma; the note about equatorial vs mean radius is a useful warning.
+- Description of fy5-5/planeetat gives all four values and no answer.
+- Set fit: L1 gets a figure-reading task, L2 a derivation; no repeat of the example.

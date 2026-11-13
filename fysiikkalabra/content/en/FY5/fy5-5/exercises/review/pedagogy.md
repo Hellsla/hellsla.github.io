@@ -1,8 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 2dfa5cdb22af192d
+CONTENT-HASH: d2a722d362b4c86c
+SCOPE: delta added-exercise from 2dfa5cdb22af192d base 81db4a6fd727
+
 ## Blocking
+(none)
 
 ## Polish
+- fy5-5-L1-09 solution: the Reasonableness uses Earth 9.81 m/s^2 while the figure shows 9.80; harmless but use one value.
 
 ## Checked
-light delta review (teacher 2026-11-07): the reworded opening of fy5-5-L3-04, judged in context. It reads naturally, still sets the situation first and leaves the parts a–c and their questions unchanged. The "other way round" framing matches the solution (Given lists γ; M = gR²/γ). It gives no answer away.
+- L1-09: figure value (Mars 3.71) needed; description lists all four values, so it does not leak the answer (F = mg is still to do); 315 N to 320 N with 2 s.f. correct.
+- L2-09: M = gR^2/gamma = 1.90e27 kg verified; m cancels explained; equatorial-radius remark useful; reasonableness comparison sound.
+- Level fit: L1-09 one step plus reading; L2-09 combines g and the law of gravitation, the reverse of L2-02-type tasks; no repeat of the example.
+- Solutions staged, principle explained, figure read explicitly.

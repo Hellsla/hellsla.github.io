@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 1df2c1aee33c64a1
-Mode: full (translation review against the reviewed Finnish set, new task L2-08)
-Round 2
+CONTENT-HASH: ce477dae624a64e2
+SCOPE: delta added-exercise from 1df2c1aee33c64a1 base 81db4a6fd727
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- fy5-13-L1-09 solution, Järkevyys: the paragraph about the helium voice is long and off the task; shorten to one sentence.
+- fy5-13-L1-09: two look-ups and a difference is the upper end of level 1.
 
 ## Checked
-- fy5-13-L2-08 keeps the Finnish pedagogy: a YO-skill task (error analysis or concept reasoning) with misconception-based distractors, each wrong choice with feedback naming its misconception and repairing it.
-- The stem gives no answer away; the correct option is not distinguishable by wording or length.
-- fi-easy has shorter sentences and explains terms in place; the demand is unchanged.
-- Solution is staged and readable on a phone; new task adds no extra workload.
+- L1-09: open pipe, f1 = v/2L for two gases, answer 639,5 Hz within 4 %, trap (same length, different v) explained.
+- L2-09: the figure is needed (L = 1,20 m, four loops, n = 4); node/antinode counting explained; check with f1 x 4.
+- Figure description gives ruler and loops, no wavelength or speed.
+- Solutions staged.

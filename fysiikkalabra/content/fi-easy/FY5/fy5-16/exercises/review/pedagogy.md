@@ -1,11 +1,14 @@
-VERDICT: PASS
-CONTENT-HASH: d2b1980c7da012c4
+VERDICT: FAIL
+CONTENT-HASH: d8c91c2175bb496c
 
 ## Blocking
+- exercises.json fy5-16-L2-09 — tolerance 0,02 on 4,7 min rejects 4,8 min, which is what the solution's own check gives (80 : 100 = 4{,}8$; exact 0^2$ intensity ratio) — set the tolerance to at least 0,05 and say in the solution that 4,7 to 4,8 min are both right.
 
 ## Polish
-- solutions.md:31 (L1-04) — Järkevyys of a one-step subtraction now carries six sentences of regulation and first says action values use the unprotected level, then compares 83 dB with 85 dB — keep two: 83 dB is under the raja-arvo 87 dB(A), and with well-fitted protectors the vertailuannos is not reached (not a guarantee of safe hearing).
-- solutions.md:103 (L3-01) — Kaava kirjoittaa annoksen "$\cdot 100\,\%$"-muodossa ilman tunnusta, mutta Sijoitus ottaa käyttöön $D$:n; yhtenäistä Kaava muotoon "annos $D = \dfrac{t_1}{t_{\text{v},1}} + \dfrac{t_2}{t_{\text{v},2}}$" kuten L3-05:ssä. Selkokielessä sama lauseke kahdesti auttaa eniten.
+- fy5-16-L1-09: a fractional exponent (^{5/3}$) is a lot for level 1; use a level that is a multiple of 3 dB above 85 dB, or move to level 2.
+- fy5-16-L2-09 repeats L1-09 (same method, same figure); add a new demand such as a 3 h concert.
 
 ## Checked
-light delta review (teacher 2026-11-07), L3-01 chain: HEAD~1 diff only, read in its solution. The chain 1 + 0,25 = 1,25 = 125 % is plain and shorter than the old bracket ·100 %; the sentence "Annos D = …" is plain Finnish, and D matches L3-05; Vastaus and Järkevyys still fit. Physics left to the science review.
+- Figure scale-tehtava needed for both tasks; description lists all markers; markers are read exactly.
+- L1-09 numbers correct (2,52 h); solution staged with sanity check.
+- Finnish clear; term 'toiminta-arvo' used in both texts as in the lesson.

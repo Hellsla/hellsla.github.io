@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 8582b9190f73f167
-Mode: full (translation review against the reviewed Finnish set, new task L2-08)
-Round 2
+CONTENT-HASH: 13eb4fb8ef479d8c
+SCOPE: delta added-exercise from 8582b9190f73f167 base 81db4a6fd727
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- fy5-12-L3-06 reuses the same path-difference reading as L2-09 (0,50 m); the new demand is only n = 0 and f = v/(2 delta s). Acceptable, but it is a mild level 3.
 
 ## Checked
-- fy5-12-L2-08 keeps the Finnish pedagogy: a YO-skill task (error analysis or concept reasoning) with misconception-based distractors, each wrong choice with feedback naming its misconception and repairing it.
-- The stem gives no answer away; the correct option is not distinguishable by wording or length.
-- fi-easy has shorter sentences and explains terms in place; the demand is unchanged.
-- Solution is staged and readable on a phone; new task adds no extra workload.
+- L2-09: reads s1 = 6,0 m and d = 2,5 m, 5-12-13 triangle, delta s = 0,50 m; right angle visible in figure; answer not drawn.
+- L3-06: weakest destructive interference means n = 0; reasoning explained, next frequency 1020 Hz given.
+- Figure description gives the grid and positions; no distances marked.
+- Solutions staged; Finnish clear.
