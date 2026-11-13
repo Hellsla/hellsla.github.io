@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: d2a722d362b4c86c
+CONTENT-HASH: fc3b190ea3328bed
 SCOPE: delta added-exercise from 2dfa5cdb22af192d base 81db4a6fd727
 
 ## Blocking
 (none)
 
 ## Polish
-- fy5-5-L1-09 solution: the Reasonableness uses Earth 9.81 m/s^2 while the figure shows 9.80; harmless but use one value.
+- fy5-5-L2-09: the Reasonableness uses 24.8 and the description lists Earth 9.80; fine, but state once that the field strength at the probe is read at the surface value and scaled (it is).
 
 ## Checked
-- L1-09: figure value (Mars 3.71) needed; description lists all four values, so it does not leak the answer (F = mg is still to do); 315 N to 320 N with 2 s.f. correct.
-- L2-09: M = gR^2/gamma = 1.90e27 kg verified; m cancels explained; equatorial-radius remark useful; reasonableness comparison sound.
-- Level fit: L1-09 one step plus reading; L2-09 combines g and the law of gravitation, the reverse of L2-02-type tasks; no repeat of the example.
-- Solutions staged, principle explained, figure read explicitly.
+- L2-09 (reworked): reading g = 24.8 m/s^2 from the figure, then r = R + h = 2R (the distance is from the centre, the planned trap), g falls to a quarter, F = mg = 5.27 kN; correct.
+- Level 2 fits (two ideas: inverse-square scaling and F = mg); the unit kN conversion is shown.
+- Solution staged with a check by dividing the surface force by 4.

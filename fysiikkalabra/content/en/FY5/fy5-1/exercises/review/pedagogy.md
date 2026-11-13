@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: ff91607c9c04843b
+CONTENT-HASH: c0d75eed1cea1175
 SCOPE: delta added-exercise from cd55d963ef6779d3 base 81db4a6fd727
 
 ## Blocking
@@ -9,6 +9,6 @@ SCOPE: delta added-exercise from cd55d963ef6779d3 base 81db4a6fd727
 - none.
 
 ## Checked
-- fy5-1-L1-10: figure gives O, P and grid scale; arm (3 squares) must be read, the rod length (5 squares) is the planted trap; description matches the figure and does not give 0.30 m.
-- Solution staged (principle, reading the figure, formula, conversion, substitution); 70 N and the 42 N wrong-path check are correct.
-- Level 1 fits; inverse of L1-04 (find F, not M), reading the arm is a new step; no repeat of the example.
+- fy5-1-L1-10 (reworked): the figure gives O, P and the grid scale; the rod OP = 5 squares (4-3-5 triangle) is read from it, and the description does not give 0.50 m.
+- 'perpendicular to the rod' makes the arm equal to OP, so M = 30 N * 0.50 m = 15 Nm is correct; the solution is staged and its check against the horizontal force (9.0 Nm) teaches the arm idea.
+- Level 1 fits (one formula after a reading); the trap of the earlier version is now the contrast, no repeat of the worked example.
