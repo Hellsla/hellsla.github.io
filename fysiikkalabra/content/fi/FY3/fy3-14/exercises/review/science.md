@@ -1,22 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: abc777e3a72f3bf7
-SCOPE: delta added-exercise from 969eff4b4ef9e204 base 89bcb63b7431
+CONTENT-HASH: b724230f4c3afce5
+SCOPE: delta added-exercise from 969eff4b4ef9e204 base 81db4a6fd727
 
 ## Blocking
-(none)
 
 ## Polish
-- solutions.md (L2-09) — symbols $Q_\text{vesi}$, $Q_\text{lämm}$, $Q_\text{kaikki}$ differ from the brief's $Q_\text{v}$, $Q_\text{j,läm}$, $Q_\text{j}$; using the lesson's names would tie the task to its case list (case 2: $Q_\text{j,läm} \le Q_\text{v} \le Q_\text{j}$).
-- solutions.md (L2-09) Periaate — the 0 °C conclusion needs both $Q_\text{v} \ge Q_\text{j,läm}$ and $Q_\text{v} < Q_\text{j}$; the first is shown only in the reading step. One clause in Periaate would state the full condition where the principle is given.
+- exercises/exercises.json (fy3-14-L2-09, text) — "Kuinka paljon lisälämpöä veden pitäisi vielä luovuttaa": once the water is at 0 °C it can give off more heat only by freezing, so the question is a counterfactual. "Kuinka paljon lisälämpöä astiaan pitäisi vielä tuoda, jotta kaikki jää sulaisi?" (or "…enemmän lämpöä veden pitäisi voida luovuttaa") asks the same 40 kJ without that picture.
+- exercises/solutions.md (fy3-14-L2-09) — $Q_\text{kaikki}$ (60 kJ) is the brief's $s m_\text{j}$, not its $Q_\text{j} = Q_\text{j,läm} + s m_\text{j}$ (65 kJ); the brief's symbols would tie the solution to the case list. With them the result is $Q_\text{j} - Q_\text{v} = 65 - 25 = 40\,\text{kJ}$, the same answer, which also makes a good one-line check.
 
 ## Checked
-- Only L1-09 and L2-09 judged (delta added-exercise); the rest unchanged per packet.
-- L1-09 recomputed: $Q = sm = 333 \cdot 0{,}080 = 26{,}64$ kJ → 27 kJ; with the lesson's 334 kJ/kg 26,72 kJ, both inside tolerance 0.04. MAFY 333 kJ/kg matches docs/mafy-arvot.tsv (VERIFIED); the solution explains the 334 vs 333 difference.
-- L1-09 conditions: ice already at 0 °C and melt water at 0 °C stated, so $Q = sm$ alone applies; two figures from 80 g; check (≈ 25 K warming of 0,25 kg water) right.
-- L2-09 recomputed: heat left for melting $25 - 5 = 20$ kJ $< 60$ kJ → ice remains, $T = 0$ °C; melted $20/334 = 59{,}9$ g, all ice $60/334 = 179{,}6$ g, left 119,8 g; answers.py 119,76.
-- L2-09 data realistic: 5 kJ for 180 g ice means it starts at about −13 °C (freezer), 25 kJ ≈ 0,30 kg water at 20 °C.
-- Isolation ("lämpöä ei siirry astiaan eikä ympäristöön") and $s$ given in the task; the boundary-case logic matches the brief's case 2 and the guardrail.
-- figures.py energy-bars: bars end at 25, 5, 60 kJ on 5 kJ gridlines, to scale (6,6 px/kJ from one origin); description gives the same values; neither gives the remaining mass.
-- Both solutions complete (given/asked, principle with reason, symbolic before numbers, conversions, substitution with units, rounding reason, independent check 2/3 · 180 g).
-- Units kJ and g, tolerances fit; inside FY3 (olomuodon muutokset).
-- Hash identical at start and end.
+- L2-09 (new question, same figure): heat left for melting $25 - 5 = 20\,\text{kJ} < 60\,\text{kJ}$, so ice is left and $T = 0\,{}^\circ\text{C}$ (brief's case 2: $Q_\text{j,läm} \le Q_\text{v} < Q_\text{j}$); missing heat $60 - 20 = 40\,\text{kJ}$; answers.py gives 40.
+- L2-09 agrees with L1-03 on the same figure (melted $20/334\,\text{kg} = 60\,\text{g}$, a third of the ice), so the two tasks do not contradict each other; the check (two thirds of the ice unmelted) is right because the melting heat is proportional to mass.
+- L2-09 conditions: an insulated vessel ("lämpöä ei siirry astiaan eikä ympäristöön") stated; the figure's bars end on 5 kJ grid lines at 25, 5 and 60 kJ, to scale (6,6 px/kJ from one origin); the description gives the same values and not the answer.
+- L1-09 (new situation): ice at 0 °C melting to water at 0 °C, so $Q = sm$ alone applies; $333 \cdot 0{,}080 = 26{,}6\,\text{kJ} \approx 27\,\text{kJ}$; with 334 kJ/kg 26,7 kJ, inside tolerance 0,04; MAFY 333 kJ/kg as in docs/mafy-arvot.tsv; the 333/334 difference is explained.
+- L1-09 check (the same heat warms 0,25 kg water by about 25 K) is right; two figures from 80 g; g→kg conversion shown.
+- Both solutions complete and solved symbolically before substitution; units kJ; inside FY3 (olomuodon muutokset).
+- Rest of the set unchanged since PASS; hash same at start and end.
