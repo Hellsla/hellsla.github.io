@@ -1186,7 +1186,7 @@ def build_language(lang):
                      "selfassess": self_assesses(lang, meta)}
             body, toc = inquiry.render(folder, inq, parts, lambda t: nbsp_units(render_md(t)))
             if kc_section:   # bold terms of Teoriatiivistelmä that name a card open it (never before that stage)
-                body = re.sub(r'<section class="stage" id="selita".*?</section>', lambda m: concept_cards.mark_terms(m.group(0), meta["course"], lang), body, count=1, flags=re.S)
+                body = re.sub(r'<section class="stage" id="selita".*?</section>', lambda m: concept_cards.mark_first(concept_cards.mark_terms(m.group(0), meta["course"], lang), meta["course"], meta["id"], lang), body, count=1, flags=re.S)
             body, photo_tail = photos(body)               # a photograph may also open a task (FY4 2026-11-03: Pohdinta)
             main = f'<article id="teoria" class="inquiry">{body}<!--fl-chapter-nav:{meta["id"]}-->{photo_tail}</article>'   # Edellinen / Seuraava luku before the photo credits (teacher 2026-11-06)
         main = chapter_eyebrow(main, meta["course"], ch_no)
