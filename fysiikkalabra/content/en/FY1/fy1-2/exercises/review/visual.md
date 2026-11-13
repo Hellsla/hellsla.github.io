@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 05cefb32bec1ef00
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-11-09: diff since origin/main only)
+CONTENT-HASH: 6e469b6befc9ac40
+SCOPE: delta answers,levels,numbers,structure,teacher-figure,typography,wording from 05cefb32bec1ef00 base e4013ef
 
 ## Blocking
 - none
@@ -9,6 +9,9 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-1
 - none
 
 ## Checked
-- fy1-2-L3-02: question now asks for a ratio (how many times one screen width), so it no longer reads as a count of whole screens (675); answer 674.4, tolerance 0.02 unchanged; unit "" as in other ratio tasks.
-- Kysytty, Periaate, Vastaus describe the same ratio N; Järkevyys still fits.
-- Language version en judged from the diff against origin/main; notation (LaTeX numbers with units, decimal comma/point, \cdot) checked in changed lines.
+- fy1-2-open-exercises-1280-10 (new MAFY task L1-10 (2-10): text, hint, answer check, solution)
+- fy1-2-open-exercises-1280-9 (task text 2-10)
+- Teacher-approved figure tasks: layout judged only; diff read for all changed lines (exercises.json, solutions.md, answers.py).
+
+## Scores
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

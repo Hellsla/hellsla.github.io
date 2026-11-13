@@ -1,14 +1,16 @@
-VERDICT: PASS
-CONTENT-HASH: 99cf25d118827e5e
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-11-09: diff since origin/main only)
+VERDICT: FAIL
+CONTENT-HASH: 92fd5d8209d459f3
 
 ## Blocking
-- none
+- [Major] fy1-3-L1-09 solution (fy1-3-open-exercises-1280-10, -9) — set badly: the Formula and Substitution blocks put the second chain (`and deviation=` with a fraction) outside the tinted box on its own line, and the Answer paragraph sets `\dfrac` fractions inline, which stack in the running text so the lines collide (the `cm^3` exponent touches `1.005…1.015 g/cm^3` below) — clearly poor maths readability in new text, against NOTES §1 (`\tfrac` inline, one chain per step) — put the deviation on its own Substitution line as a second chain with `\tfrac`/colon form, and write the error estimate in the Answer with `\tfrac{\text{g}}{\text{cm}^3}` or `\text{g/cm}^3`.
 
 ## Polish
-- none
+- [Minor] fy1-3-L1-09 — Answer says `(calculated value 1.18 %)`, other new tasks say `more precisely`; use one phrase across FY1.
 
 ## Checked
-- fy1-3-L3-05: Periaate now names the check as a simplified comparison of the stated uncertainty estimates; Vastaus says the results are not consistent per these estimates, the estimates are not hard limits and separation alone does not decide statistical significance.
-- Gap 0.04 g/cm³ and intervals 2,69–2,79 / 2,55–2,65 unchanged and correct.
-- Language version en judged from the diff against origin/main; notation (LaTeX numbers with units, decimal comma/point, \cdot) checked in changed lines.
+- fy1-3-open-exercises-1280-10 (new MAFY task L1-09 (3-9): text, hint, answer check, solution)
+- fy1-3-open-exercises-1280-9 (task text and Formula block)
+- Teacher-approved figure tasks: layout judged only; diff read for all changed lines (exercises.json, solutions.md, answers.py).
+
+## Scores
+illustrations 5 · typography 2 · Finnish 4 · accessibility 4

@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: e6cb851f7e223149
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-11-09: diff since origin/main only)
+CONTENT-HASH: c41d049e6afed30a
+SCOPE: delta answers,levels,numbers,structure,teacher-figure,typography,wording from e6cb851f7e223149 base e4013ef
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] fy1-8-L1-10 — `Give the answer in km` plain unit; Formula's two equations sit as a boxed and an unboxed line.
 
 ## Checked
-- fy1-8-L3-04: the general rule 'a difference can be shown only if the intervals do not overlap' is removed; Periaate now states the data-specific conclusion (intervals overlap, no reliable conclusion, hand-timing uncertainty to be considered); Järkevyys softened to 'ei erotu luotettavasti'.
-- d = 0,04 s, k = 3,75 ≈ 3,8 and the overlap 3,08–3,12 s unchanged.
-- Language version en judged from the diff against origin/main; notation (LaTeX numbers with units, decimal comma/point, \cdot) checked in changed lines.
+- fy1-8-open-exercises-1280-10 (new MAFY task L1-10 (8-10): text, hint, answer check, solution)
+- Teacher-approved figure tasks: layout judged only; diff read for all changed lines (exercises.json, solutions.md, answers.py).
+
+## Scores
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4
