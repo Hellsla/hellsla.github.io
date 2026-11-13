@@ -305,6 +305,15 @@
           "feedback": "The statement is true, but it does not explain the answer. The series resistor limits the size of the current, but it does not tell which way the diode lets current pass."
         }
       ]
+    },
+    {
+      "id": "fy6-14-L2-09",
+      "level": 2,
+      "text": "The graph shows the current of a solar panel as a function of its voltage when the irradiance stays the same. The panel is connected to a load whose voltage is $4.0\\,\\text{V}$. Read the current of the panel at this voltage from the graph and calculate the electrical power of the panel. Give the answer in watts.",
+      "figure": "fy6-14/ex-kenno",
+      "answer": 0.8,
+      "unit": "W",
+      "tolerance": 0.04
     }
   ],
   "level3": [

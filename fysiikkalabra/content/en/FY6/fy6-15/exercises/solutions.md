@@ -157,6 +157,17 @@ The current of situation A only exceeds the threshold of perception. With these 
 **Answer:** $115\,\text{mA}$, three significant figures like the voltage and the resistance. The student's error is thinking that the fuse would protect a person: the fuse does not notice the current through the body, because its rated current $16\,\text{A}$ is many times the current through the body. A fuse protects a person only together with protective earthing. The current through the body is cut off by the residual current device.
 **Reasonableness:** The current of the fuse $16\,\text{A}$ is $16\,\text{A} : 0.115\,\text{A} \approx 139$ times the current through the body, so the fuse does not trip. The current $115\,\text{mA}$ is over twice the limit for the danger of ventricular fibrillation, $50\,\text{mA}$, and also many times the tripping current of the residual current device, $30\,\text{mA}$, so the residual current device would trip.
 
+## fy6-15-L2-08
+**Given:** from the graph the total power $P(t)$ of the circuit; rated current of the fuse $I_\text{s} = 16\,\text{A}$, voltage $U = 230\,\text{V}$
+**Find:** the current $I$ in the circuit wiring at the highest total power, in amperes
+**Principle:** The devices of the circuit are in parallel at the same voltage, so the current in the circuit wiring is the total power divided by the voltage. The current is largest when the total power is largest, so we look for the highest point of the graph.
+**Reading the graph:** The power is a step function. The steps are $1000\,\text{W}$, $3000\,\text{W}$, $4000\,\text{W}$, $2000\,\text{W}$ and $3500\,\text{W}$. The highest step is between $10$ and $16\,\text{min}$, and its value is on a gridline, $P_\text{max} = 4000\,\text{W}$.
+**Formula:** $I = \dfrac{P_\text{max}}{U}$
+**Conversions:** Not needed: $1\,\text{W} = 1\,\text{V} \cdot 1\,\text{A}$.
+**Substitution:** $I = \dfrac{4000\,\text{W}}{230\,\text{V}} = 17.39\,\text{A}$
+**Answer:** about $17\,\text{A}$, two significant figures like the rated current $16\,\text{A}$ and the value read from the graph. The current exceeds the rated current $16\,\text{A}$ slightly, so the circuit is overloaded during this time.
+**Reasonableness:** The largest allowed power of the circuit is $230\,\text{V} \cdot 16\,\text{A} = 3680\,\text{W}$. The steps $1000\,\text{W}$, $3000\,\text{W}$, $2000\,\text{W}$ and $3500\,\text{W}$ are below it, but $4000\,\text{W}$ is above, and $4000\,\text{W} : 230\,\text{V} \approx 17\,\text{A}$ is slightly over $16\,\text{A}$. The excess is short and small, so the fuse does not necessarily trip at once.
+
 ## fy6-15-L3-01
 **Given:** resistance of the conductors $R = 0.50\,\Omega$, rated current $I_1 = 10\,\text{A}$, actual current $I_2 = 22\,\text{A}$
 **Find:** how many times as large the thermal power $P_2$ is compared with the power $P_1$

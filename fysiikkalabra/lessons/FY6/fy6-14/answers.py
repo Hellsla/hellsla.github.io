@@ -51,4 +51,6 @@ slope2 = (41 - 20) / (2.10 - 2.05)                         # 420 mA/V
 threshold = 2.05 - 20 / slope2                            # 2,00 V (not an answer field; checked in solutions)
 assert abs(threshold - 2.0) < 0.01
 a["fy6-14-L3-05"] = round(d0[1] + slope * x, 2)            # I = 13,78 mA at U_D = 2,02 V
+# figure fy6-14/ex-kenno: at U = 4,0 V the panel curve lies on the 200 mA gridline (model value 198,7 mA)
+a["fy6-14-L2-09"] = 4.0 * 0.200                            # P = U I = 4,0 V · 0,200 A = 0,80 W
 print(json.dumps({k: (v if isinstance(v, str) else round(v, 6)) for k, v in a.items()}))

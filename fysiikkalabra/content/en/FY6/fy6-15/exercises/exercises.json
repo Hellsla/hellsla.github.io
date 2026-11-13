@@ -261,6 +261,15 @@
       "answer": 115.0,
       "unit": "mA",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-15-L2-08",
+      "level": 2,
+      "text": "The graph shows the total power of the devices connected to a kitchen socket circuit as a function of time over 30 minutes (measured data). The circuit is protected by a $16\\,\\text{A}$ fuse, and the mains voltage is $230\\,\\text{V}$.\n\nRead the highest total power from the graph. How large is the current in the circuit wiring then? Answer in amperes.",
+      "figure": "fy6-15/ex-kuorma",
+      "answer": 17.3913,
+      "unit": "A",
+      "tolerance": 0.03
     }
   ],
   "level3": [

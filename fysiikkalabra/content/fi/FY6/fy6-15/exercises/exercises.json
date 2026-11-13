@@ -261,6 +261,15 @@
       "answer": 115.0,
       "unit": "mA",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-15-L2-08",
+      "level": 2,
+      "text": "Kuvaajassa on keittiön pistorasiaryhmään kytkettyjen laitteiden yhteisteho ajan funktiona 30 minuutin ajan (mitattu aineisto). Ryhmä on suojattu $16\\,\\text{A}$:n sulakkeella, ja verkkojännite on $230\\,\\text{V}$.\n\nLue kuvaajasta ryhmän suurin yhteisteho. Kuinka suuri on silloin ryhmäjohdon virta? Vastaa ampeereina.",
+      "figure": "fy6-15/ex-kuorma",
+      "answer": 17.3913,
+      "unit": "A",
+      "tolerance": 0.03
     }
   ],
   "level3": [

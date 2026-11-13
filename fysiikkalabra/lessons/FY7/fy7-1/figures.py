@@ -2,7 +2,7 @@
 Colours (FY7): magnetic field lines and B arrows GOOD #2b8a3e, N pole HOT_LIGHT #f2a69c labelled N, S pole COLD_LIGHT
 #d0e6fb labelled S; a compass needle's N half is arrow-shaped (shape and label, never colour alone)."""
 import math
-from figlib import (Fig, INK, MUTED, WHITE, RULE, RULE_LIGHT, GLASS, WATER, WATER_LIGHT, SAND, SAND_LIGHT, SAND_DARK, GRAIN,
+from figlib import (Fig, Axes, fi, INK, MUTED, WHITE, RULE, RULE_LIGHT, GLASS, WATER, WATER_LIGHT, SAND, SAND_LIGHT, SAND_DARK, GRAIN,
                     HOT_LIGHT, COLD_LIGHT, ALUMINIUM, METAL_EDGE, IRON, COPPER, GOOD, GOOD_LIGHT, ICE, n)
 import herolib as H
 
@@ -303,6 +303,51 @@ def inclination():
     return f.svg()
 
 
+def sum_grid():
+    """Task figure: B_h = 15 µT north and B_m = 20 µT east from the compass at the origin on a grid of 5 µT, drawn as
+    arrows along the axes. No resultant, no needle, no angle."""
+    f = Fig("fy71-sumgrid", 340, "Kuvaaja mittakaavassa, ylhäältä nähtynä: ruudukon ruutu on 5 µT. Kompassin kohdasta, ruudukon "
+            "origosta, lähtee kaksi vihreää nuolta. Nuoli B_h osoittaa pohjoiseen eli ylöspäin ja nuoli B_m itään eli "
+            "oikealle. Nuolten pituus kuvaa kentän suuruutta mikroteslina ruudukon asteikolla. Kokonaiskenttää, "
+            "kompassin neulaa ja kulmaa ei ole piirretty.")
+    ax = Axes(f, (90, 300), (450, 60), x=(0, 30), y=(0, 20), xticks=list(range(5, 31, 5)), yticks=list(range(5, 21, 5)),
+              xlabel=r"\text{itä}\ (\mu\text{T})", ylabel=r"\text{pohjoinen}\ (\mu\text{T})")
+    f.arrow(ax.X(0), ax.Y(0), ax.X(0), ax.Y(15), FIELD, 5, 16)
+    f.arrow(ax.X(0), ax.Y(0), ax.X(20), ax.Y(0), FIELD, 5, 16)
+    f.circle(ax.X(0), ax.Y(0), 5, INK)
+    f.tex(ax.X(0) + 16, ax.Y(15), r"\overline{B}_\text{h}", "start", bg=True)
+    f.tex(ax.X(20), ax.Y(0) - 22, r"\overline{B}_\text{m}", "middle", bg=True)
+    return f.svg()
+
+
+def incl_grid():
+    """Task figure: Earth's field seen from the side as one arrow from the ground at the origin to the point 15 µT north
+    and 50 µT down on a grid of 5 µT. The components are not drawn, B and I are not written."""
+    f = Fig("fy71-inclgrid", 340, "Kuvaaja mittakaavassa, sivulta nähtynä: vaakasuora maanpinta ja ruudukko, jonka ruutu on 5 µT. "
+            "Vaaka-akseli on pohjoiseen ja pystyakseli alaspäin. Maanpinnan origosta lähtee yksi vihreä nuoli B, joka "
+            "osoittaa viistosti alas pohjoiseen päin. Nuolen kärki on ruudukon pisteessä, jonka lukuarvot lukija "
+            "lukee ruudukolta. Komponentteja ja kulmaa ei ole piirretty.")
+    x0, y0, k = 110, 54, 5.0
+    f.rect(x0, y0, 40 * k, 55 * k, WHITE)
+    for t in range(5, 41, 5):
+        f.line(x0 + t * k, y0, x0 + t * k, y0 + 55 * k, RULE_LIGHT, 1.5)
+    for t in range(5, 56, 5):
+        f.line(x0, y0 + t * k, x0 + 40 * k, y0 + t * k, RULE_LIGHT, 1.5)
+    f.line(x0 - 8, y0, x0 + 40 * k + 40, y0, INK, 3)
+    f.line(x0, y0, x0, y0 + 55 * k, INK, 2.5)
+    for t in range(10, 41, 10):
+        f.tex(x0 + t * k, y0 - 22, fi(t), "middle")
+    for t in range(10, 51, 10):
+        f.tex(x0 - 12, y0 + t * k, fi(t), "end")
+    f.tex(x0 + 40 * k + 14, y0 - 22, r"\text{pohjoinen}\ (\mu\text{T})", "start", w=150)
+    f.tex(x0 + 14, y0 + 55 * k + 18, r"\text{alas}\ (\mu\text{T})", "start", w=110)
+    f.tex(x0 + 40 * k + 40, y0 + 18, r"\text{maanpinta}", "end", MUTED, w=130)
+    f.arrow(x0, y0, x0 + 15 * k, y0 + 50 * k, FIELD, 5, 16)
+    f.circle(x0, y0, 5, INK)
+    f.tex(x0 + 15 * k + 14, y0 + 30 * k, r"\overline{B}", "start", bg=True)
+    return f.svg()
+
+
 def hero():
     """The chapter's opening illustration: an orienteering map on a boulder in a spruce forest, a compass on it, and a
     bar magnet beside the compass turning its needle away from the north."""
@@ -366,7 +411,8 @@ def scene():
 
 
 FIGURES = {"hero": hero, "bar-field": bar_field, "cut-magnet": cut_magnet, "domains": domains, "earth-field": earth_field,
-           "vector-sum": vector_sum, "inclination": inclination, "scene": scene, "two-magnets": two_magnets}
+           "vector-sum": vector_sum, "inclination": inclination, "scene": scene, "two-magnets": two_magnets,
+           "sum-grid": sum_grid, "incl-grid": incl_grid}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "bar-field": "reveals: field lines from N to S and the compass directions around a bar magnet",
@@ -375,5 +421,7 @@ REUSE = {
     "earth-field": "reveals: Earth's magnetic S pole is near the geographic north pole",
     "vector-sum": "reveals: the needle turns along the sum of B_h 14 µT and B_m 20 µT",
     "inclination": "reveals: B_h ≈ 14 µT and B_v ≈ 50 µT for B = 52 µT, I = 74°",
+    "sum-grid": "safe: B_h 15 µT north and B_m 20 µT east as arrows on a 5 µT grid, no resultant, needle or angle (REUSE: fy7-1 exercise on the compass deflection)",
+    "incl-grid": "safe: Earth's field arrow ending 15 µT north and 50 µT down on a 5 µT grid, no components, B or I (REUSE: fy7-1 exercise on inclination)",
     "two-magnets": "safe: two unmarked magnets end to end, field lines bending away from the gap, no letters or arrows",
 }
