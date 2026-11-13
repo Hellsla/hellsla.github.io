@@ -41,4 +41,10 @@ a["fy7-14-L3-04"] = 2 * (2 * 1.47 * 450 / 2.5) / (2 * 1.47)
 # air wedge: one shift, dark 2d = kλ; fringe spacing = slope of x(k); foil D = (L / Δx)·λ/2 in µm
 dx = fit([1, 2, 3, 4, 5, 6, 7, 8], [1.9, 3.9, 5.7, 7.7, 9.5, 11.5, 13.3, 15.2])[0]
 a["fy7-14-L3-05"] = 80 / dx * 0.589 / 2
+# Figure tasks (figures coating-curve and soap-curve of figures.py)
+# L2-08: MgF2 (1,38) on glass (1,52): R_bare = ((1,52-1)/(1,52+1))^2 = 4,258 %, R_min = ((1,38^2-1,52)/(1,38^2+1,52))^2 = 1,261 % (design 497 nm); share removed
+a["fy7-14-L2-08"] = (1 - ((1.38**2 - 1.52) / (1.38**2 + 1.52))**2 / ((1.52 - 1) / (1.52 + 1))**2) * 100   # 70,39 %
+# L3-06: soap film 350 nm (1,33) in air: minimum read at 466 nm (2nd = kλ), maximum at 621 nm (2nd = (k - 1/2)λ): k = λmax / (2(λmax - λmin)) = 2
+k_s = round(621 / (2 * (621 - 466)))
+a["fy7-14-L3-06"] = k_s * 466 / (2 * 1.33)          # d = kλ_min / (2n) = 350,4 nm
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

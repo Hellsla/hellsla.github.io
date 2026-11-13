@@ -159,6 +159,17 @@ Lauseke $\lambda : (4n)$ saadaan, jos siirtymä unohdetaan, mutta se on ensimmä
 **Vastaus:** $97{,}8\,\text{nm}$, kolme merkitsevää numeroa kuten taitekerroin $1{,}38$ ja aallonpituus $540\,\text{nm}$. Pinnoite on mitoitettu vihreälle aallonpituudelle $540\,\text{nm}$. Purppura väri syntyy, koska heijastus on suurimmillaan kuvaajan molemmissa päissä. Violettia ($420\,\text{nm}$) heijastuu $1{,}84\,\%$ ja punaista ($700\,\text{nm}$) $1{,}64\,\%$. Vihreää heijastuu vain $1{,}26\,\%$. Violettia heijastuu siis noin $1{,}5$-kertaisesti ja punaista noin $1{,}3$-kertaisesti vihreään verrattuna. Punaisen ja violetin sekoitus näyttää purppuralta, ja vihreä pääsee lasin läpi.
 **Järkevyys:** Tarkistus: $4 \cdot 1{,}38 \cdot 97{,}83\,\text{nm} = 540\,\text{nm}$. Pinnoite on vähän ohuempi kuin luvun $550\,\text{nm}$:lle mitoitettu $99{,}6\,\text{nm}$, koska aallonpituus on vähän lyhyempi. Pinnoite ei kumoa kaikkia aallonpituuksia yhtä hyvin, kuten luvussa todetaan. Reunojen heijastus on noin $1{,}3$–$1{,}5$-kertainen keskiosaan verrattuna. Pienin heijastus $1{,}26\,\%$ vastaa luvussa mainittua noin $1{,}3\,\%$.
 
+## fy7-14-L2-08
+**Annettu:** pinnoitteen taitekerroin $1{,}38$, lasin taitekerroin $1{,}52$, kuvasta luettavat heijastuvat osuudet $R$ aallonpituuksilla $400$–$700\,\text{nm}$
+**Kysytty:** kuinka monta prosenttia pinnoite vähentää pinnoittamattoman lasin heijastusta siinä kohdassa, jossa heijastus on pienin
+**Periaate:** Pinnoitteessa ei katoa valoa. Heikentävä interferenssi (aallot kumoavat toisiaan) vähentää heijastunutta osuutta. Pienin heijastus on aallonpituudella, jolle pinnoite on tehty. Poistuva osuus saadaan, kun verrataan pinnoitetun linssin heijastusta $R_\text{pinn}$ pinnoittamattoman lasin heijastukseen $R_0$ samalla aallonpituudella.
+**Kuvaajan lukeminen:** Pinnoittamattoman lasin heijastus on vaakasuora musta viiva. Siitä luetaan $R_0 \approx 4{,}3\,\%$. Vihreä käyrä on kupin muotoinen. Sen alimmasta kohdasta, noin aallonpituudelta $500\,\text{nm}$, luetaan $R_\text{pinn} \approx 1{,}3\,\%$. Alin kohta on käyrän matalin kohta, ja musta viiva on sen yläpuolella.
+**Kaava:** poistuva osuus $= \dfrac{R_0 - R_\text{pinn}}{R_0} = 1 - \dfrac{R_\text{pinn}}{R_0}$
+**Muunnokset:** Ei tarvita. Molemmat osuudet luetaan prosentteina, ja suhteella ei ole yksikköä.
+**Sijoitus:** $1 - \dfrac{1{,}3\,\%}{4{,}3\,\%} = 1 - 0{,}302 = 0{,}698 = 69{,}8\,\%$
+**Vastaus:** noin $70\,\%$. Vastauksessa on kaksi merkitsevää numeroa, koska kuvasta luetut arvot ovat kahden numeron tarkkuudella. Lukemisen epätarkkuus vaikuttaa kolmanteen numeroon.
+**Järkevyys:** Pinnoite vähentää heijastusta yli puoleen, kuten luvussa: heijastus pienenee noin $4{,}3\,\%$:sta noin $1{,}3\,\%$:iin. Tulos on alle $100\,\%$, joten pinnoite ei poista heijastusta kokonaan. Se on järkevää, koska pinnoitteen taitekerroin $1{,}38$ on suurempi kuin ihanteellinen $\sqrt{1{,}52} \approx 1{,}23$.
+
 ## fy7-14-L3-01
 **Annettu:** saippuakalvon taitekerroin $n = 1{,}33$, ilmaa molemmin puolin, aallonpituus $\lambda = 589\,\text{nm}$, kohtisuora tulo; kalvo paksunee ylhäältä alaspäin, ylin osa on musta
 **Kysytty:** kalvon paksuus $d$ nanometreinä toisen tumman raidan kohdalla
@@ -209,3 +220,14 @@ Lauseke $\lambda : (4n)$ saadaan, jos siirtymä unohdetaan, mutta se on ensimmä
 **Sijoitus:** $\Delta x = \dfrac{15{,}2\,\text{mm} - 0{,}05\,\text{mm}}{8 - 0} = 1{,}894\,\text{mm}$. Paksuus kasvaa raidasta seuraavaan $294{,}5\,\text{nm}$. Matkalle $L$ mahtuu raitoja yhteensä $\dfrac{80\,\text{mm}}{1{,}894\,\text{mm}} = 42{,}24$, joten $D = 42{,}24 \cdot 0{,}2945\,\mu\text{m} = 12{,}44\,\mu\text{m} \approx 12\,\mu\text{m}$.
 **Vastaus:** $12\,\mu\text{m}$, kaksi merkitsevää numeroa, koska etäisyys $L = 80\,\text{mm}$ on annettu kahdella numerolla ja suora sovitetaan silmällä. Silmällä tehty sovitus vaihtelee, joten noin $11{,}9$–$12{,}9\,\mu\text{m}$ on hyvä vastaus.
 **Järkevyys:** Tarkistus kahdeksannella raidalla: ilmakerroksen paksuus on $8 \cdot 294{,}5\,\text{nm} = 2{,}36\,\mu\text{m}$, ja $\dfrac{2{,}36\,\mu\text{m}}{12{,}44\,\mu\text{m}} = 0{,}19 = \dfrac{15{,}2\,\text{mm}}{80\,\text{mm}}$. Kiilan paksuus kasvaa siis suoraan etäisyyden mukana. Folion paksuus on kymmenen mikrometrin luokkaa, kuten ohuella alumiinifoliolla.
+
+## fy7-14-L3-06
+**Annettu:** saippuakalvon taitekerroin $n = 1{,}33$, ilmaa kalvon molemmilla puolilla, kohtisuora tulo, kuvaaja $R(\lambda)$ välillä $400$–$700\,\text{nm}$. Paksuutta ei kerrota.
+**Kysytty:** heikentävän ehdon kertaluku $k$ ja kalvon paksuus $d$ nanometreinä
+**Periaate:** Yksi heijastus kääntää aallon. Siksi heijastus on pohjassa, kun $2nd = k\lambda_\text{min}$, ja huipussa, kun $2nd = (k' + \tfrac{1}{2})\lambda_\text{max}$. Kalvo on sama, joten matkaero $2nd$ on molemmissa sama. Kahdesta vierekkäisestä ääriarvosta lyhyempi aallonpituus mahtuu matkaeroon useammin. Siksi pohjan vieressä olevalle pidemmän aallonpituuden huipulle pätee $k' = k - 1$. Ensin ratkaistaan $k$ ja sitten $d$.
+**Kuvaajan lukeminen:** Näkyvällä alueella käyrässä on yksi pohja ja sen oikealla puolella yksi huippu. Pohja on melkein nollassa aallonpituudella $\lambda_\text{min} \approx 466\,\text{nm}$. Huippu on korkeimmillaan, noin $7{,}7\,\%$, aallonpituudella $\lambda_\text{max} \approx 621\,\text{nm}$.
+**Kaava:** $k\lambda_\text{min} = (k - \tfrac{1}{2})\lambda_\text{max}$, josta $k = \dfrac{\lambda_\text{max}}{2(\lambda_\text{max} - \lambda_\text{min})}$. Paksuus on $d = \dfrac{k\lambda_\text{min}}{2n}$.
+**Muunnokset:** Ei tarvita. Aallonpituudet ja paksuus ovat kumpikin nanometreinä.
+**Sijoitus:** $k = \dfrac{621\,\text{nm}}{2 \cdot (621\,\text{nm} - 466\,\text{nm})} = \dfrac{621}{310} = 2{,}003 \approx 2$, joten $d = \dfrac{2 \cdot 466\,\text{nm}}{2 \cdot 1{,}33} = 350{,}4\,\text{nm}$
+**Vastaus:** $k = 2$ ja $d \approx 350\,\text{nm}$. Vastauksessa on kolme merkitsevää numeroa kuten taitekertoimessa $1{,}33$. Kertaluvun pitää olla kokonaisluku, joten se pyöristetään. Siksi pieni lukuvirhe vaikuttaa paksuuteen vain vähän.
+**Järkevyys:** Tarkistus: huippu $(2 - \tfrac{1}{2}) \cdot 621\,\text{nm} = 931\,\text{nm} = 2 \cdot 466\,\text{nm}$ ja $2nd = 2 \cdot 1{,}33 \cdot 350\,\text{nm} = 931\,\text{nm}$. Jos $k$ olisi $1$, pohja olisi aallonpituudella $931\,\text{nm}$. Se on infrapunaa, joten näkyvällä alueella pohja on juuri $k = 2$. Paksuus on alle mikrometrin, ja se sopii ohuelle kalvolle.

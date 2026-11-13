@@ -1,8 +1,9 @@
 VERDICT: DONE
 
-Stage 4 round 1: all reviews PASS, no Blocking findings. Polish items fixed:
-
-- science Polish, solutions.md L3-02 Järkevyys: "noin viidenneksellä" replaced by "noin 19 prosenttiyksikköä eli runsaan neljänneksen (90,06 : 70,6 ≈ 1,28)".
-- L1-05: the plastic's index is labelled $n_\text{muovi}$ (Annettu, Periaate, Kaava), and Periaate says "linssin aineen taitekertoimen neliöjuuri" instead of "lasin". Answer unchanged (1,26).
-
-check_lesson fy7-14: all ok.
+Added two figure tasks (fi, en, fi-easy; ids and numbers identical).
+- exercises.json: fy7-14-L2-08 (figure fy7-14/coating-curve: read R_min and R_bare, share removed, 70,4 %) and fy7-14-L3-06 (figure fy7-14/soap-curve: read a minimum and its neighbouring maximum, order k and thickness, 350 nm).
+- solutions.md: complete solutions with `Kuvaajan lukeminen` / `Reading the graph`.
+- lessons/FY7/fy7-14/answers.py: two lines added.
+- lessons/FY7/fy7-14/figures.py: new FIGURES entries coating-curve and soap-curve (thickness not given) and REUSE notes; existing figures untouched.
+- content/en and content/fi-easy figures.json: translations of the two alt texts.
+Checks: check_lesson.py all ok; check_i18n.py not run (left to coordinator); figcat build not run.
