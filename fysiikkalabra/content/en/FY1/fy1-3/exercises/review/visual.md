@@ -1,16 +1,16 @@
-VERDICT: FAIL
-CONTENT-HASH: 92fd5d8209d459f3
+VERDICT: PASS
+CONTENT-HASH: 02a8e105c56f8695
 
 ## Blocking
-- [Major] fy1-3-L1-09 solution (fy1-3-open-exercises-1280-10, -9) — set badly: the Formula and Substitution blocks put the second chain (`and deviation=` with a fraction) outside the tinted box on its own line, and the Answer paragraph sets `\dfrac` fractions inline, which stack in the running text so the lines collide (the `cm^3` exponent touches `1.005…1.015 g/cm^3` below) — clearly poor maths readability in new text, against NOTES §1 (`\tfrac` inline, one chain per step) — put the deviation on its own Substitution line as a second chain with `\tfrac`/colon form, and write the error estimate in the Answer with `\tfrac{\text{g}}{\text{cm}^3}` or `\text{g/cm}^3`.
+- none
 
 ## Polish
-- [Minor] fy1-3-L1-09 — Answer says `(calculated value 1.18 %)`, other new tasks say `more precisely`; use one phrase across FY1.
+- [Minor] fy1-3-L1-09 — the Answer paragraph opens "(more precisely 1.18 %), …" under the boxed value; acceptable, same pattern as fy1-8.
 
 ## Checked
-- fy1-3-open-exercises-1280-10 (new MAFY task L1-09 (3-9): text, hint, answer check, solution)
-- fy1-3-open-exercises-1280-9 (task text and Formula block)
-- Teacher-approved figure tasks: layout judged only; diff read for all changed lines (exercises.json, solutions.md, answers.py).
+- fy1-3-open-exercises-1280-9 (task 3-9 text, hint, check, Given to Formula: both chains now inside one tinted box)
+- fy1-3-open-exercises-1280-10 (Substitution as aligned rows, Answer with inline fractions now \tfrac and no collision, Additionally line, Reasonableness)
+- diff read for exercises.json, solutions.md, answers.py; figure tasks layout only.
 
 ## Scores
-illustrations 5 · typography 2 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4
