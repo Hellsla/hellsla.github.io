@@ -90,7 +90,7 @@ tarvittaessa pienempi otsikkokoko pitkälle sanalle, niin että katkos osuu tavu
 ("Ominaislämpö-kapasiteetti"). Koskee myös kasitteet.html:ää, Kertauspakkaa ja Varmista käsitteet -osiota;
 test_home.py:hin tapaus 360 ja 1280 px. Sivupohjan muutos, ei katselmointeja.
 
-## 8e. Turha pystyväli kuvan viereen asetellun kappaleen ympärillä (opettaja 2026-11-13)
+## 8e. Kuvien asettelu: turha pystyväli kuvan vierellä; kuva ja taulukko vierekkäin (opettaja 2026-11-13)
 
 Teoriassa kappale, jonka viereen kuva asettuu (esim. höyrystymisen luvussa faasikaavio kappaleen "Kiehumispiste
 riippuu paineesta" vieressä), saa ylä- ja alapuolelleen ison tyhjän välin: rivin korkeus tulee kuvasta ja teksti
@@ -99,6 +99,11 @@ keskittyy pystysuunnassa, joten edellinen kappale ja seuraava väliotsikko jää
 seuraava kappale virtaa kuvan viereen tai kuva siirtyy kappaleen alle (CLAUDE.md Lesson page 1: vierekkäin vain kun
 ovat suunnilleen yhtä korkeita). Tarkista samalla, ettei kuva leikkaudu oikeasta reunasta. check_layoutiin
 tarkistus tyhjälle pystyvälille kuvan vierellä 1280 ja 1920 px. Sivupohjan muutos, ei katselmointeja.
+
+Samaan erään (opettaja 2026-11-13, kuvakaappaus FY3:n jään sulamisesta): kun kuvaa seuraa heti pieni taulukko tai
+toinen kuva (esim. pylväskuva ja sen alla kolmen rivin arvotaulukko "Suure / Arvo"), ne asettuvat leveällä näytöllä
+vierekkäin, toinen oikealle palstalle, eikä päällekkäin pitkäksi pinoksi. Sama `fig_rows`-päätös: vierekkäin, kun
+molemmat mahtuvat ja ovat suunnilleen yhtä korkeita; puhelimella allekkain.
 
 ## 9. Esimerkkikokeet FY7 ja FY8 (opettaja 2026-11-13)
 
