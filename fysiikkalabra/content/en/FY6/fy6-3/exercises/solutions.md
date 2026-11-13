@@ -204,3 +204,13 @@ $U = 8.0\,\text{V}$
 The line of graph C passes through the origin and the point $(4.0\,\text{mA};\ 8.0\,\text{V})$, and also at the point $(2.0\,\text{mA};\ 4.0\,\text{V})$ the ratio is $U : I = 2.0\,\text{k}\Omega$. The curve of graph A passes through the same point $(4.0\,\text{mA};\ 8.0\,\text{V})$, but at the point $(2.0\,\text{mA};\ 2.0\,\text{V})$ the ratio is only $1.0\,\text{k}\Omega$: the resistance increases with the voltage, so the component does not obey Ohm's law. In graph B the voltage at a current of $4.0\,\text{mA}$ is $2.0\,\text{V}$, so the resistance would be $0.50\,\text{k}\Omega$: there the slope has been taken to be $I : U$. In graph D the voltage is constant $2.0\,\text{V}$, so the ratio $U : I$ changes all the time: there the numerical value of the resistance has been drawn as the voltage.
 
 **Reading the graph:** The voltage is read from each graph at two currents, for example $2.0\,\text{mA}$ and $4.0\,\text{mA}$, and the ratio $U : I$ is calculated. Only in graph C is the ratio $2.0\,\text{k}\Omega$ at both points.
+
+## fy6-3-L1-10
+**Given:** copper wire, $l = 40\,\text{m}$, $A = 1.5\,\text{mm}^2$; the resistivity of copper from the MAFY table *Resistiivisyyksiä*: $\rho = 1.678 \cdot 10^{-8}\,\Omega\cdot\text{m}$
+**Find:** the resistance $R$ of the wire in ohms
+**Principle:** The wire is uniform copper, so its resistance is directly proportional to its length and inversely proportional to its cross-sectional area. The constant of proportionality is the resistivity of copper, whose value is read from the table.
+**Formula:** $R = \rho \dfrac{l}{A}$
+**Conversions:** $A = 1.5\,\text{mm}^2 = 1.5 \cdot (10^{-3}\,\text{m})^2 = 1.5 \cdot 10^{-6}\,\text{m}^2$
+**Substitution:** $R = \dfrac{1.678 \cdot 10^{-8}\,\Omega\cdot\text{m} \cdot 40\,\text{m}}{1.5 \cdot 10^{-6}\,\text{m}^2} = 0.447\,\Omega$
+**Answer:** $0.45\,\Omega$, two significant figures like the dimensions of the wire. The table value is the resistivity of copper, $\rho = 1.678 \cdot 10^{-8}\,\Omega\cdot\text{m}$.
+**Reasonableness:** Units: $\Omega\cdot\text{m} \cdot \text{m} : \text{m}^2 = \Omega$. One metre of this wire is $0.0112\,\Omega$, and $40 \cdot 0.0112\,\Omega = 0.45\,\Omega$. A thicker conductor with a cross-sectional area of $2.5\,\text{mm}^2$ would have a smaller resistance, which makes sense.

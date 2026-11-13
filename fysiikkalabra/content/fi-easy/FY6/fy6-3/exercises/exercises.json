@@ -148,6 +148,18 @@
           "feedback": "Tässä resistanssin lukuarvo on piirretty jännitteen arvoksi. Jännite pysyy samana, vaikka virta kasvaa, joten suhde $U : I$ pienenisi koko ajan. Ominaiskäyrässä resistanssi näkyy suoran kulmakertoimena, ei käyrän korkeutena."
         }
       ]
+    },
+    {
+      "id": "fy6-3-L1-10",
+      "level": 1,
+      "text": "Virtapiirissä käytetyn kuparilangan pituus on $40\\,\\text{m}$ ja poikkipinta-ala $1{,}5\\,\\text{mm}^2$. Hae kuparin resistiivisyys MAFY-taulukosta (mafytaulukot.fi). Mikä on langan resistanssi? Vastaa ohmeina.",
+      "lookup": "MAFY",
+      "answer": 0.45,
+      "unit": "Ω",
+      "tolerance": 0.03,
+      "hints": [
+        "Arvo löytyy MAFY-taulukon taulukosta *Resistiivisyyksiä*."
+      ]
     }
   ],
   "level2": [

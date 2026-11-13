@@ -37,4 +37,6 @@ a["fy6-3-L2-07"] = sum(Re) / len(Re)                                 # sum 19,74
 a["fy6-3-L3-04"] = 1.5 / 2.5e-3                                      # diode C at U = 1,5 V, I = 2,5 mA: R = 600 Ω (lamp B 1,5 V / 57 mA = 26 Ω, resistor A 75 Ω)
 Rt = [1.00 / i for i in (0.500, 0.442, 0.398, 0.362)]                # iron wire R = U / I at 20, 40, 60, 80 °C
 a["fy6-3-L3-05"] = (Rt[-1] / Rt[0] - 1) * 100                        # increase 20 -> 80 °C: 2,762 / 2,000 - 1 = 38,1 %
+# MAFY table task (docs/mafy-arvot.tsv): copper resistivity 1,678·10⁻⁸ Ω·m from the table "Resistiivisyyksiä"
+a["fy6-3-L1-10"] = 1.678e-8 * 40 / 1.5e-6              # R = ρ l / A = 1,678·10⁻⁸ · 40 / 1,5·10⁻⁶ = 0,4475 Ω -> 0,45 Ω
 print(json.dumps({k_: round(v, 6) for k_, v in a.items()}))
