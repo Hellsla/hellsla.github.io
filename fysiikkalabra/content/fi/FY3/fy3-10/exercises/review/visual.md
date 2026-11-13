@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 8c50fb38cfdcf2c1
+CONTENT-HASH: aacdb2b4ad9b71db
+SCOPE: delta added-exercise from 8c50fb38cfdcf2c1 base 81db4a6fd727
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] solutions.md L2-08 Periaate — "koska celsiuslämpötilaan lisätään 273 kelvineiksi muutettaessa" is hard to parse; write "koska kelvinlämpötila saadaan lisäämällä celsiuslämpötilaan 273". Carried over from round 1.
+- [Minor] fy3-10-L2-09 graph pt-suorat — both lines start at 100 K with no marked point there, while the marked points (and the description) are at 200 K and 400 K; harmless, but a reader may take the unmarked start as data. Mark it or say "suorat jatkuvat" in the description.
 
 ## Checked
-- delta review 2026-11-07 round 2 (follow-up consistency edits): L2-08 and L1-08 Periaate: "units must match the unit of $R$" with Pa+m³ (or kPa+l), kelvins always; opened fy3-10-fi-l2sol-390: wraps cleanly, $R$ renders; consistent with the unchanged Mallivastaus rows.
-- Round 2 (delta). The change is the sig-fig consistency: $2{,}00\,\textsf{l}$ and $0{,}00200\,\text{m}^3$ in the task, row 3, feedback and solution. Rendered fy3-10 at 390 px (task and open feedback and solution; images opened): rows 1-4 fit 390 px, the row 3 fraction wraps after "eli", no overflow (scrollWidth 390).
-- Text only: feedback and solution lines for the same numbers agree.
+- Round 1, delta. Opened fy3-10-open-exercises-1280-8, -9, -10 (12-9 task, closed "Vihje" box, whole solution) and L2-1280-12, -13 (12-18 task with graph pt-suorat, whole solution).
+- Graph: axes with quantity and unit, A and B told apart by colour and letter labels, ticks 100 K and 20 kPa, grid; marked values (200 K; 30 kPa) and (400 K; 60 kPa) readable; description matches; answer not given away.
+- Typography: stacked units `J/(mol·K)` fractions legible, conversions in aligned rows, answer box, reasonableness panel. Set still reads as one.
 - Hash at start and end the same.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

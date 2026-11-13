@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 15b0a0fdf9fe9772
-Mode: delta (exercises, en), round 1. Changed: new task, paragraph splits, solutions.md.
+CONTENT-HASH: 35a61f460a2d50f3
+Mode: delta, round 1 (added exercises fy3-4-L1-10, fy3-4-L2-08; shown as 5-10 and 5-18)
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy3-4-L1-09 Mallivastaus — the aligned display block renders in a smaller type size than the text around it at 390 px; acceptable, no action needed unless the build can scale it up.
+- [Minor] 5-18 figure — lines A and B differ by colour (blue, brown) and carry direct letter labels, so they are told apart without colour; good. Both lines start at one shared point at 0 m, so the common air pressure reads clearly.
+- [Minor] 5-18 solution, Conversions — two stacked display blocks with "and" and "so" between them are choppy on a phone; one chain would read better.
+- [Minor] 5-10 and 5-18 — "(mafytaulukot.fi)" and the table name are plain text; a link would help.
 
 ## Checked
-- Rendered preview/en/fy3-4.html at 390 px with my own script (scratch trvis3x): fy3-4-L1-09 (order of magnitude, four choices, feedback open, model solution with the aligned display block) and the split L-task about the barrel lid.
-- The aligned Mallivastaus block ($\Delta p$ with two rows aligned at the equals sign) fits the 390 px card with margin: no clipping, page and card scrollWidth equal the viewport.
-- No red KaTeX source, no horizontal overflow; feedback and solution open inside the task card.
-- English fluent, terms consistent, units and numbers set as maths.
-- No figures changed in the diff.
+- Opened at readable size: 5-10 (L1 shot 9: task, closed-state hint box, answer, solution start), 5-18 (L2 shots 10 and 11: two-liquids graph with p (kPa) and h (m) axes, markers on the lines, labels A and B; full solution with the slope, units and the 1529 to 1.5 times 10 cubed rounding).
+- Units LaTeX with thin spaces, fractions aligned, answer boxed, no overflow or clipping.
+- Other tasks unchanged, not repeated.
 
 ## Scores
-illustrations 4 · typography 5 · English 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 0cb9ccd04c9d1ba6
-Mode: delta (exercises, en), round 1. Changed: new task L2-08, situation/question paragraph splits, solutions.md for L2-08.
+CONTENT-HASH: a68d988512663089
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- [Minor] fy3-12 L3 ocean-warming task — "700 metres"/"365 days" ("700 metrin", "365 vuorokautta") are plain-text quantities in untouched reviewed text — set as $700\,\text{m}$ and $365\,\text{d}$ at the next edit.
+- [Minor] fy3-12-L2-09 solution, Substitution — the quotient `\dfrac{102\,\tfrac{\text{W}}{\text{m}^2}}{341\,\tfrac{\text{W}}{\text{m}^2}}` is a fraction of fractions with tiny units, cramped on the page; write the units as `\text{W/m}^2` inside the fraction, or `102 : 341`.
+- [Minor] fy3-12-L1-09 and L2-09 solutions — `\tfrac{\text{W}}{\text{m}\cdot\text{K}}` is small and tight in the Substitution rows; `\text{W/(m}\cdot\text{K)}` reads better. Typographic taste only; consistent with the rest of the set.
+- [Minor] figure fy3-12/earth-flows (task L2-09) — the figure is built for an earlier task and still has the "? W/m^2" arrow; the solution says it is not needed, but the task text could say "ignore the arrow with the question mark".
 
 ## Checked
-- Rendered preview/en/fy3-12.html at 390 px with my own script (scratch trvis3x): fy3-12-L2-08 (ordering task, task card, answer and model solution) and the split tasks L2-01, L3-01..04, in default and answered/opened state.
-- The new L2-08 card opened in full: task text, options or statements, feedback blocks, Vastaus/Answer and model solution; formulas, units, fractions and the units with \cdot render as KaTeX, no red source, no clipping or horizontal overflow.
-- The paragraph splits read as situation, then data, then the question; nothing sideways when feedback opens.
-- Fluent, consistent terms (efficiency, absorbed heat, latent heat); one instructional voice; decimal point and thin-space units set as maths.
-- Figure and graph tasks were not changed by the diff; contact sheets are not used in this exercises-only delta.
+- Delta: fy3-12-L1-09 (open-exercises-1280-10, opened solution) and fy3-12-L2-09 (open-exercises-L2-1280-12, -13: task with figure earth-flows, opened solution). The solution wording change for the earlier task (arrow "up and to the left") matches the figure.
+- Figure earth-flows (teacher-approved drawing): the labels 341 W/m^2 and 102 W/m^2 are legible, with LaTeX units; the reflected arrow is distinguished by direction and label, not by colour alone; the description of the figure is carried by the labels.
+- Typography: aligned chains, upright units, order principle → formula → substitution → result → check; the set reads as one.
+- Hash with --lang en (a68d988512663089) matches the packet.
 
 ## Scores
-illustrations 4 · typography 5 · English 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4

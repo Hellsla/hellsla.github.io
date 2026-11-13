@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: e50f42266a867455
-Mode: delta (exercises, en), round 1. Changed: new task, paragraph splits, solutions.md.
+CONTENT-HASH: 09795200e3209299
+Mode: delta, round 1 (added exercises fy3-2-L1-09, fy3-2-L2-09)
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy3-2-L2-08 reasons — one option speaks of "the triangle in the force graph" but the task shows no graph; say "a force–stretch graph drawn from the values" in the task or the option.
+- [Minor] 1-9 solution — substitution ends "= 18.4 kJ" but the answer is "18 kJ"; show the rounding step ("≈ 18 kJ") so the two lines agree.
+- [Minor] 1-9 task — "(mafytaulukot.fi)" is plain text; a link would help.
+- [Minor] 2-18 figure — the F–s graph is drawn in orange while force is red project-wide; teacher-approved figure, so only noted.
 
 ## Checked
-- Rendered preview/en/fy3-2.html at 390 px with my own script (scratch trvis3x): fy3-2-L2-08 (rubber-band work, choice then reason, all feedback open, model solution).
-- The two split paragraphs read as situation, then question; fractions, units and thin spaces render.
-- No red KaTeX source, no horizontal overflow; feedback and solution open inside the task card.
-- English fluent, terms consistent, units and numbers set as maths.
-- No figures changed in the diff.
+- Opened at readable size: 1-9 (shots 1280-9: task, hint box, answer, full solution), 2-18 (L2 shots 9 and 10: pull-steps graph with F (N) and s (m) axes, grid, end markers, dashed drop at 6 m; solution) and 2-17 beside it for set consistency.
+- Units and powers of ten set as LaTeX with thin spaces, substitution rows aligned, answer boxed. No clipping or overflow.
+- The other tasks are unchanged and were not repeated.
 
 ## Scores
-illustrations 4 · typography 5 · English 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

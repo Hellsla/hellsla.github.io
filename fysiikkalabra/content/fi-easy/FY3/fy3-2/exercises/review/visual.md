@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 0621b6c02f604fbc
-Mode: delta (exercises, fi-easy), round 1. Changed: new task, paragraph splits, solutions.md.
+CONTENT-HASH: 34099904c8e11006
+Mode: delta
+Round: 1
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy3-2-L2-08 reasons — one option speaks of "the triangle in the force graph" but the task shows no graph; say "a force–stretch graph drawn from the values" in the task or the option.
+- [Minor] fy3-2/pull-steps (fy3-2-L2-09) — the force line is orange, the acceleration colour of the FY4 convention (force red) — the figure is teacher-approved, so only note it when the figure is next redrawn.
+- [Minor] solutions.md fy3-2-L2-09 Periaate — "Sitten työ jaetaan matkalla" reads curtly — "Sitten työ jaetaan koko matkalla."
 
 ## Checked
-- Rendered preview/fi-easy/fy3-2.html at 390 px with my own script (scratch trvis3x): fy3-2-L2-08 (rubber-band work, choice then reason, all feedback open, model solution).
-- The two split paragraphs read as situation, then question; fractions, units and thin spaces render.
-- No red KaTeX source, no horizontal overflow; feedback and solution open inside the task card.
-- Plain-language Finnish: short sentences, terms explained ("suuruusluokka on kymmenpotenssi…", "eli ei muutu"), case endings after maths correct ("$10\\,\\text{m}$:n").
-- No figures changed in the diff.
+- fy3-2-open-exercises-1280-9 and -10 (L1-09: task split into situation and question, closed-style Vihje box, answer row, full solution; maths, units, \cdot, thin spaces, aligned Sijoitus rows).
+- fy3-2-open-exercises-L2-1280-10 and -11 (L2-09: pull-steps graph with axis titles and units, ticks, dashed step; description matches the figure and gives no answer; solution layout, fractions, Järkevyys block).
+- Captures are the lesson's review/shots (current for this hash).
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4

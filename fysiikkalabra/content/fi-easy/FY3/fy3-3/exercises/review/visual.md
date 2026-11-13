@@ -1,20 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 7701b8401cab51a9
+CONTENT-HASH: 3ff07ece3ff31169
 Mode: delta
 Round: 1
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- [Minor] fy3/3 figure extrapolation-points (fy3-3-L2-08) — the x axis runs to $-150\,{}^\circ\text{C}$ and the left half is empty, so the five points are squeezed to the right; the task asks for an interpolation — acceptable (figure is shared and teacher-approved); a tighter range would read better if the figure is redrawn.
+- [Minor] solutions.md fy3-3-L1-10 Vastaus — "kokonaisina asteina" is slightly odd — "koska taulukon arvo $-196\,{}^\circ\text{C}$ on annettu kolmella numerolla" would also be wrong; keep two figures but say "kokonaislukuna".
 
 ## Checked
-- delta review 2026-11-07 round 4 (three small fixes): L1-04 substitution now $\Delta T = (45 - 20)\,\text{K} = 25\,\text{K}$, matching L2-01; the round-3 Minor note on it is resolved (source-checked, a one-line inline formula).
-- delta review 2026-11-07 round 3 (fixes to round 2 findings): L2-01 now $T_2 = (288 + 45)\,\text{K} = 333\,\text{K}$ (round-2 Minor fixed); L1-04 Kaava shows the constant cancelling in slash form, L2-04 ratio has $\theta/{}^\circ\text{C} + 273{,}15$ above and below. Opened fy3-3-fi-easy-l3a-390 and -l3b-390: inline Kaava wraps at sensible points, the ratio display fits the card, no clipping.
-- delta review 2026-11-07 round 2 (follow-up consistency edits): every Kaava now $\tfrac{T}{\text{K}} = \tfrac{\theta}{{}^\circ\text{C}} + 273{,}15$ (and its solved forms), every substitution $T = (\ldots + 273{,}15)\,\text{K}$ / $\theta = (\ldots - 273{,}15)\,{}^\circ\text{C}$; read all hunks in the diff and opened fy3-3-fi-easy-l2sol-390: aligned display, brackets and unit render cleanly, results unchanged.
-- New task fy3-3-L1-09 at 390 px (fi-easy), own render of preview/fi-easy/fy3-3.html: task text, every option and its feedback open, solution card open; page and card have no horizontal overflow (scrollWidth equals width).
-- Delta covers only the new task and its solution; surrounding exercises were not changed.
+- fy3-3-open-exercises-1280-9 (L1-10: Vihje box, answer row, full solution; negative numbers, ${}^\circ\text{C}$, thin spaces correct).
+- fy3-3-open-exercises-L2-1280-9, -10 and -11 (L2-08: graph with axis titles, units, ticks, distinct points, no line drawn, no answer given; fractions with units, Kuvaajan lukeminen, Järkevyys with check block).
+- Captures are the lesson's review/shots (current for this hash).
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

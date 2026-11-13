@@ -1,20 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: ba420448372c48ee
-Mode: delta
-Round: 1
+CONTENT-HASH: 622d819e7af597e2
+Mode: delta, round 1 (added exercises fy3-3-L1-10, fy3-3-L2-08)
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-[Minor] Feedback 'so the unit is the unit of pressure divided by the unit of temperature' is clumsy; 'so c has the unit of pressure divided by the unit of temperature'.
+- [Minor] 3-18 graph — the five points sit in the upper right of a plot that runs from -100 degrees C to 100 degrees C and from 0 kPa, so they are small and close together; legible, and a wider range is deliberate for the extrapolation, so only noted.
+- [Minor] 3-10 and 3-18 — "(mafytaulukot.fi)" and the table names are plain text; a link would help.
+- [Minor] 3-10 solution — "77.15 K" then answer "T ≈ 77 K": fine, but the answer chip shows the approximation sign while 3-18 does the same; consistent, no change needed.
 
 ## Checked
-- delta review 2026-11-07 round 4 (three small fixes): L1-04 substitution now $\Delta T = (45 - 20)\,\text{K} = 25\,\text{K}$, matching L2-01; the round-3 Minor note on it is resolved (source-checked, a one-line inline formula).
-- delta review 2026-11-07 round 3 (fixes to round 2 findings): L2-01 now $T_2 = (288 + 45)\,\text{K} = 333\,\text{K}$ (round-2 Minor fixed); L1-04 Kaava shows the constant cancelling in slash form, L2-04 ratio has $\theta/{}^\circ\text{C} + 273.15$ above and below. Opened fy3-3-en-l3a-390 and -l3b-390: inline Kaava wraps at sensible points, the ratio display fits the card, no clipping.
-- delta review 2026-11-07 round 2 (follow-up consistency edits): every Kaava now $\tfrac{T}{\text{K}} = \tfrac{\theta}{{}^\circ\text{C}} + 273.15$ (and its solved forms), every substitution $T = (\ldots + 273.15)\,\text{K}$ / $\theta = (\ldots - 273.15)\,{}^\circ\text{C}$; read all hunks in the diff and opened fy3-3-en-l2sol-390: aligned display, brackets and unit render cleanly, results unchanged.
-- New task fy3-3-L1-09 at 390 px (en), own render of preview/en/fy3-3.html: task text, every option and its feedback open, solution card open; page and card have no horizontal overflow (scrollWidth equals width).
-- Delta covers only the new task and its solution; surrounding exercises were not changed.
+- Opened at readable size: 3-10 (L1 shot 9: task, closed-state hint box, answer chip, full solution; shot 10 end of card), 3-18 (L2 shots 10, 11, 12: task with data points in prose, scatter graph with p (kPa) and theta (degrees C) axes, markers only with no fitted line, solution with the slope as an aligned block).
+- Units LaTeX with thin spaces, decimal point, fractions set in display rows, no clipping or overflow.
+- Other tasks unchanged, not repeated.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4
