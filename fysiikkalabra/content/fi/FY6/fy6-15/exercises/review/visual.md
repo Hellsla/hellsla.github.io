@@ -1,16 +1,15 @@
-VERDICT: FAIL
-CONTENT-HASH: 382ccde4ebe17d63
+VERDICT: PASS
+CONTENT-HASH: 88b30325b9aedc30
+SCOPE: delta added-exercise from c650c557cc001a60 base 8f23aa7ae3bd
 
 ## Blocking
-- [Major] fy6-15-L2-08 task text (15-17) — "30 minuutin ajan" has the number and unit in plain text, while every other quantity of the task is LaTeX ($16\,\text{A}$:n, $230\,\text{V}$); the standing rule (teacher 2026-11-01) makes a plain quantity in new text a Major — a student sees one typeface for the data and another for this one, and the lint's PLAIN_QTY applies to a set being edited — write "$30\,\text{min}$:n ajan" (the case ending after the maths).
 
 ## Polish
-- [Minor] fy6-15/ex-kuorma — the steps change at 4, 10, 16 and 24 min, but the gridlines are every 5 min, so the solution's "välillä $10$–$16\,\text{min}$" cannot be read off the grid; the answer does not need it, so say "noin" or give the step as "ruudukon viivalla $4000\,\text{W}$" only.
-- [Minor] fy6-15-L2-08 Järkevyys — one long sentence carries four steps and two `:`/`≈` expressions; it reads better split after "alapuolella".
+- [Minor] fy6-15/ex-kuorma — the steps change at 4, 10, 16 and 24 min but the gridlines are every 5 min, so "välillä $10$–$16\,\text{min}$" cannot be read off the grid; say "noin".
+- [Minor] fy6-15-L2-08 Järkevyys — one long sentence carries four steps; split it after "alapuolella".
 
 ## Checked
-- review/shots/fy6-15-open-exercises-L2-1280-9.png (the task 15-17 (L2-08) text) and -10.png (figure fy6-15/ex-kuorma with quantity and unit on both axes, 1000 W and 5 min gridlines, no fuse limit drawn, answer row, open solution down to Vastaus; -11.png the rest): stamp hash 382ccde4ebe17d63.
-- The graph is clear and its description matches it without the answer; typography of the solution chains is good (aligned, units upright, colon for division).
+- open-exercises-L2-1280-9, -10 and -11 (task 15-17): the task text now has $30\,\text{min}$:n as maths like the other data (round-1 Major fixed); the step graph has quantity and unit on both axes and no fuse limit drawn; the whole solution (aligned chains, upright units, colon division, set apart answer, Järkevyys) is clean and the set reads as one.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5

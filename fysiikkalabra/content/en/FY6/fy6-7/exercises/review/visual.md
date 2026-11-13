@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 6e4aefa760db29fb
+CONTENT-HASH: 3ddcea2954d318b6
 SCOPE: delta added-exercise from f6987a85f62564f9 base 8f23aa7ae3bd
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy6-7/dryer (task 7-18) — the cooling phase at 0.2 kW lies halfway between the axis and the first labelled tick 0.4, and the solution says the values are read "from the grid lines of 0.4 kW", which is not quite true for 0.2 kW; add a tick or gridline at 0.2 or say "half a grid step".
-- [Minor] fy6-7/dryer — y tick labels mix "2" with "2.4", "1.6"; write 2.0 (and 1.0 style consistently), and the x labels 1 and 2 as 1.0 and 2.0.
-- [Minor] solutions.md fy6-7-L1-10 Substitution — the second step sits outside the chain box as a loose line; the Answer line also says 11 MJ, two lines above the 10.8 MJ — fine, but the "accepted within ±4 %" sentence belongs in the task's tolerance, not in the student's solution.
+- [Minor] fy6-7/dryer (task 7-18) — y ticks still mix "2" with "2.4", x labels 1 and 2 — write 2.0, 1.0, 2.0.
+- [Minor] fy6-7/dryer — the cooling level 0.2 kW has no tick or gridline — add one or say "half a grid step" in the solution.
 
 ## Checked
-- en captures fy6-7-open-exercises-1280-9 and -10 (task 7-10 with MAFY hint open, full solution) and fy6-7-open-exercises-L2-1280-10 and -11 (task 7-18 with the dryer power graph, answer box, solution). Graph: P (kW) and t (h) titled with units, three phases labelled in words, line orange, readable at 1280; maths and Finnish table names read well, units upright, \cdot, \tfrac for MJ/kWh; the other exercises unchanged and not re-reviewed.
+- en capture fy6-7-open-exercises-L2-1280-10 (task 7-18, dryer graph: "cooling" label now starts at 1.5 h above the 0.2 kW segment, not clipped, no overlap with the line or the axis; axes with units, answer box) and -9 (surrounding layout intact). The rest unchanged and not re-reviewed.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4
