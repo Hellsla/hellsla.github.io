@@ -59,6 +59,5 @@ n_pallo = 101e3 * 2.50 / (R * K(15.0))
 a["fy3-10-L3-05"] = n_pallo * R * K(-50.0) / 26.5e3
 # Added exercises (teacher 2026-11-12: MAFY table task, figure task)
 a["fy3-10-L1-09"] = (500 / 39.95) * R * 293 / 0.0100 / 1e6   # MAFY argon M = 39,95 g/mol: n = m/M = 12,52 mol; p = nRT/V = 3,047e6 Pa = 3,05 MPa
-# Added exercises (teacher 2026-11-12: MAFY table task, figure task)
-a["fy3-10-L2-09"] = 0.0500 * R * 400 / 100e3 * 1000      # fy3-10/pt-suorat: vessel A at (400 K; 100 kPa), n = 0,0500 mol: V = nRT/p = 166,2 J / 100 000 Pa = 0,001662 m³ = 1,662 l -> 1,66 l
+a["fy3-10-L2-09"] = 100e3 / 60e3                         # fy3-10/pt-suorat: same V, n ∝ p/T slope; at 400 K n_A/n_B = 100 kPa / 60 kPa = 1,667 -> 1,67
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

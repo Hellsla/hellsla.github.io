@@ -214,12 +214,12 @@ $$\begin{aligned} d &= \dfrac{1328{,}9\,\text{J}}{121\,200\,\text{N}} \\ &= 0{,}
 **Järkevyys:** Ilmanpaineessa ja huoneenlämmössä $12{,}5\,\text{mol}$ kaasua vie tilaa noin $12{,}5 \cdot 24\,\textsf{l} = 300\,\textsf{l}$. Kaasu on puristettu $10{,}0\,\textsf{l}$:aan. Paine on silloin noin $30$-kertainen: $30 \cdot 0{,}101\,\text{MPa} \approx 3\,\text{MPa}$.
 
 ## fy3-10-L2-09
-**Annettu:** $n = 0{,}0500\,\text{mol}$; kuvaajasta luettuna astian A pisteet $(200\,\text{K};\ 50\,\text{kPa})$ ja $(400\,\text{K};\ 100\,\text{kPa})$; $R = 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$
-**Kysytty:** astian A tilavuus $V$ litroina
-**Periaate:** Kaasu on suljettu jäykkään astiaan ja noudattaa ideaalikaasun tilanyhtälöä $pV = nRT$. Kun ainemäärä tunnetaan, yksi kuvaajan piste ($p$ ja $T$) riittää tilavuuden laskemiseen.
-**Kuvaajan lukeminen:** Astian A suora kulkee ruudukon pisteiden $(200\,\text{K};\ 50\,\text{kPa})$ ja $(400\,\text{K};\ 100\,\text{kPa})$ kautta. Luetaan piste $T = 400\,\text{K}$, $p = 100\,\text{kPa}$. Toinen piste antaa saman tilavuuden, koska $p/T = 0{,}25\,\tfrac{\text{kPa}}{\text{K}}$ on molemmissa sama.
-**Kaava:** $pV = nRT$, josta $V = \dfrac{nRT}{p}$
-**Muunnokset:** $100\,\text{kPa} = 100 \cdot 1000\,\text{Pa} = 100\,000\,\text{Pa}$. Lopuksi $1\,\text{m}^3 = 1000\,\textsf{l}$. Lämpötila on jo kelvineinä.
-**Sijoitus:** $V = \dfrac{0{,}0500\,\text{mol} \cdot 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 400\,\text{K}}{100\,000\,\text{Pa}} = \dfrac{166{,}2\,\text{J}}{100\,000\,\text{Pa}} = 0{,}001662\,\text{m}^3 = 1{,}662\,\textsf{l}$
-**Vastaus:** $V \approx 1{,}66\,\textsf{l}$, kolme merkitsevää numeroa kuten ainemäärässä $0{,}0500\,\text{mol}$.
-**Järkevyys:** Ilmanpaineessa ja huoneenlämmössä $1\,\text{mol}$ vie tilaa noin $24\,\textsf{l}$. Lämpötilassa $400\,\text{K}$ ja paineessa $100\,\text{kPa}$ tilaa kuluu noin $33\,\textsf{l}$ yhtä moolia kohti. Silloin $0{,}0500\,\text{mol}$ vie noin $0{,}05 \cdot 33\,\textsf{l} \approx 1{,}7\,\textsf{l}$.
+**Annettu:** $V_\text{A} = V_\text{B} = 2{,}00\,\textsf{l}$; kuvaajasta luettuna $T = 400\,\text{K}$: $p_\text{A} = 100\,\text{kPa}$ ja $p_\text{B} = 60\,\text{kPa}$
+**Kysytty:** suhde $n_\text{A}/n_\text{B}$
+**Periaate:** Kaasu on suljettu jäykkään astiaan ($n$ ja $V$ vakioita) ja noudattaa tilanyhtälöä $pV = nRT$. Silloin suora $p(T)$ kulkee origon kautta ja sen kulmakerroin on $p/T = nR/V$. Astioiden tilavuus ja $R$ ovat samat, joten kulmakertoimien suhde on ainemäärien suhde.
+**Kuvaajan lukeminen:** Luetaan molemmat suorat samasta lämpötilasta $T = 400\,\text{K}$, joka on ruudukon pystyviiva: $p_\text{A} = 100\,\text{kPa}$ ja $p_\text{B} = 60\,\text{kPa}$. Suorat kulkevat origon kautta.
+**Kaava:** $\dfrac{p}{T} = \dfrac{nR}{V}$, josta $n = \dfrac{V}{R} \cdot \dfrac{p}{T}$ ja $\dfrac{n_\text{A}}{n_\text{B}} = \dfrac{p_\text{A}/T}{p_\text{B}/T} = \dfrac{p_\text{A}}{p_\text{B}}$
+**Muunnokset:** Ei tarvita: paineiden suhde on sama kilopascaleina kuin pascaleina.
+**Sijoitus:** $\dfrac{n_\text{A}}{n_\text{B}} = \dfrac{100\,\text{kPa}}{60\,\text{kPa}} = 1{,}667$
+**Vastaus:** Astiassa A on noin $1{,}67$ kertaa niin paljon kaasua kuin astiassa B, kolme merkitsevää numeroa luetuista arvoista.
+**Järkevyys:** Suora A on jyrkempi kuin suora B, joten astiassa A on enemmän kaasua. Ainemäärät ovat $0{,}0602\,\text{mol}$ ja $0{,}0361\,\text{mol}$ ja niiden suhde on $1{,}67$, kuten tehtävässä, jossa ero lasketaan moolimäärinä.

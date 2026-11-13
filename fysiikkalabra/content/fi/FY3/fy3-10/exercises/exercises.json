@@ -341,10 +341,10 @@
     {
       "id": "fy3-10-L2-09",
       "level": 2,
-      "text": "Kuvaajassa on kahden samanlaisen, suljetun ja jäykän astian, A ja B, kaasun paine lämpötilan funktiona, kun astioita lämmitetään. Astiassa A on $0{,}0500\\,\\text{mol}$ kaasua.\n\nMikä on astian A tilavuus litroina? Lue tarvittavat arvot kuvaajasta. Käytä arvoa $R = 8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$ ja oleta, että kaasu noudattaa ideaalikaasun tilanyhtälöä.",
+      "text": "Kuvaajassa on kahden samanlaisen, suljetun ja jäykän astian, A ja B, kaasun paine lämpötilan funktiona, kun astioita lämmitetään. Kummankin astian tilavuus on $2{,}00\\,\\textsf{l}$.\n\nMontako kertaa niin paljon kaasua on astiassa A kuin astiassa B? Lue tarvittavat arvot kuvaajasta ja päättele suorien kulmakertoimien suhteesta. Oleta, että kaasut noudattavat ideaalikaasun tilanyhtälöä.",
       "figure": "fy3-10/pt-suorat",
-      "answer": 1.66,
-      "unit": "l",
+      "answer": 1.67,
+      "unit": "kertaa",
       "tolerance": 0.03
     }
   ],
