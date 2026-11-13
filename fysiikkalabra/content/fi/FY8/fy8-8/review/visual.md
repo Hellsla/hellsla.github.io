@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 4c90a57d51c6dba6
-Mode: delta (the electron-capture paragraph with its display equation and example, one Tiivistelmä bullet; no figure changed)
+CONTENT-HASH: e3a9ded2e50a2046
 
 ## Blocking
 - none
@@ -9,11 +8,11 @@ Mode: delta (the electron-capture paragraph with its display equation and exampl
 - none
 
 ## Checked
-- Delta review. The diff adds an electron-capture paragraph with a display equation and its example, plus one Tiivistelmä bullet; no figure changed.
-- I opened fy8-8-theory-1280-2.png and fy8-8-stage-selita-390-3.png. In both, the new paragraph, the display equation, the Be→Li example and the gammahajoaminen paragraph after it render without KaTeX errors, red source, overflow or clipping.
-- The nuclide notation (${}^{0}_{-1}\text{e}$, ${}^{0}_{0}\nu_\text{e}$, $Z-1$) is set consistently with the rest of the section. The display equation fits at 390 px, and the figure that follows it is intact at both widths.
-- I did not open the Tiivistelmä capture, so the bullet "Elektronisieppauksessa ydin sieppaa elektronin ja lähettää neutriinon ($Z - 1$)" is judged from source only. It is plain Finnish with its maths in LaTeX.
-- Finnish: "Beetahajoamisen kaltainen on **elektronisieppaus**" reads naturally. The glossary terms emoydin and tytärydin are used consistently.
+- Delta review (round 2). The diff changes wording and numbers in the gamma-spectrum paragraphs, the second misconception paragraph, and one inquiry feedback line. No figure changed.
+- Opened fy8-8-theory-1280-2.png: the revised "Ytimen energiatasot ja gammaspektri" paragraphs render without KaTeX errors, red source or clipping. The units ($2505{,}8\,\text{keV}$, $0{,}1\,\text{keV}$, $0{,}03\,\text{keV}$) are set in LaTeX with thin spaces. The energy-level figure beside the paragraph is intact.
+- Opened fy8-8-theory-1280-3.png: the revised misconception paragraph ("Alkuaine vaihtuu vain, kun protonien määrä muuttuu: alfa- ja beetahajoamisessa sekä elektronisieppauksessa") renders cleanly. The surrounding equations and the nuclide-chart figure are intact.
+- The inquiry feedback ("Fotoni ei sisällä protonia…") is judged from source: it is plain Finnish with its number in LaTeX. I did not open its capture.
+- Finnish: "eli kymmeniätuhansia tai satojatuhansia kertoja enemmän" and the rounding and recoil explanation read naturally and consistently with the glossary.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

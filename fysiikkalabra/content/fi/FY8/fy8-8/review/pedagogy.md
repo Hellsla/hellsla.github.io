@@ -1,22 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 4c90a57d51c6dba6
+CONTENT-HASH: e3a9ded2e50a2046
 
 ## Blocking
 
 ## Polish
-- lesson.md "Ytimen energiatasot ja gammaspektri" — "ytimen tasojen erot tyypillisesti kymmeniä kiloelektronivoltteja tai enemmän, satojatuhansia kertoja enemmän" than atomic eV: tens of keV is only about 10^4 times a few eV; the 10^5 holds for MeV. Fix: "kymmeniätuhansia tai satojatuhansia kertoja enemmän" (same in Tiivistelmä wording "kymmeniä tai satoja keV tai MeV").
-- inquiry.json ennuste-1/2 — the prompts already state what the alpha particle contains and that an electron leaves, so the Z/A answer follows by counting; little to argue about. Let ennuste-1 ask first "muuttuuko alkuaine?" with the composition given, or drop the composition from the prompt; prediction 2 (electron leaves, does Z fall?) does carry the real misconception.
-- inquiry.json ennuste feedback — "Mallin tiedot tukevat/kumoavat" but the sim says it shows database values, not a model. Use "Sarjan tiedot (NNDC) tukevat…".
-- Scope load — beta plus and electron capture (with its own formula and example) are taught but never practised or in the slot's täsmennys; the sim and experiment cover only alpha and beta minus. Mark the electron-capture paragraph as extra or trim it; gamma has only one interpret task, which is enough.
-- Sim at 390 px — the nuclide chart cells are small and the nucleus picture is larger than the chart; legible, but the chart is what the student reads. Give it more height on a phone if it is cheap.
+- lesson.md "Ytimen energiatasot ja gammaspektri" — "jää tasosta alle 0,1 keV" but 2505,8 - (1173,2 + 1332,5) = 0,1 keV exactly, not less. Fix: "noin 0,1 keV".
+- lesson.md same paragraph — the recoil of about 0,03 keV checks out (E^2/(2Mc^2) per photon, about 0,013 and 0,017 keV), but the student cannot see where it comes from; "pyöristystä" for the remainder is fine. Optional: say "pyöristyksen ja rekyylin yhteisvaikutus on noin 0,1 keV" to keep the paragraph short.
+- Earlier polish items not addressed in this diff (electron-capture scope, prediction prompts, "Mallin tiedot", sim chart height) remain optional and non-blocking.
 
 ## Checked
-- Path: hook (Am-241 alpha and gamma) is answered by the theory and the reflect task; retrieval of the hydrogen levels leads directly into the gamma spectrum. Slot goals covered: structure, alpha/beta/gamma, equations, nuclear levels from the spectrum.
-- Evidence fits the topic: the U-238 series on a nuclide chart, with the student recording steps 0-5 (both alpha and beta minus appear), is data from NNDC read, not arithmetic by the program; the explain conclusion's criteria are observable.
-- Interpret task (Co-60 spectrum): the figure is needed (peak energies), its 390 px capture is legible, the theory level diagram comes after it so does not give the answer away.
-- Worked example: seven stages, symbols before numbers, reasonableness check; not repeated by the exercises of the checks (Tc-99m wavelength is a new case).
-- Etsi virhe and siirto (U-235, 7 alphas): distractor feedback names the actual error; three progressive hints.
-- Exit ticket tests the core idea (alpha equation; Z, N for C-14); the checks are concept, calculation and explanation.
-- Misconceptions (electron in the nucleus, gamma changes the element) are addressed in the text, predictions and checks.
-- Page form: figures follow their paragraphs, cloud-chamber photos with captions, 1280 px lab layout has the sim beside the experiment; the sim's text sits behind Käyttöohje, Mallin oletukset and Laskennan selitys.
-- Finnish and number+unit LaTeX read correctly in the text I read; workload about one lesson.
+- Scale sentence now reads "kymmeniätuhansia tai satojatuhansia kertoja enemmän": consistent with tens of keV to hundreds of keV versus a few eV; fixes my earlier polish item.
+- Recoil figure (0,03 keV) is physically correct for Co-60 and the explanation of the sum gap is a sound, short correction.
+- Misconception paragraph now says the element changes when the proton number changes (alpha, beta, electron capture): consistent with the text, gamma claim unchanged.
+- inquiry.json feedback for the caesium option: shorter, still names the actual error (photon carries no proton), Z stays 56.
+- Nothing in the diff discloses an answer early or alters figures, task order or workload.
