@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 6d3c28b642ef74e0
-SCOPE: delta — MAFY-taulukkotehtävä fy1-3 (teksti, ratkaisu) ja opettajan hyväksymät tehtäväkuvat (kuvat vain asettelun osalta); kierros 2
 
 ## Blocking
 - none

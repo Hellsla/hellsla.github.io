@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: f3218e7a2ffa30c3
-SCOPE: delta — MAFY-taulukkotehtävä fy1-2-L1-10 (vastaus 1,282 s, ratkaisu); kierros 3
 
 ## Blocking
 - none

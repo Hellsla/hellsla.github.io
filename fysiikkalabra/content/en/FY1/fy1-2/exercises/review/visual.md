@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 61f5aabd12ab2d28
-SCOPE: delta, task fy1-2-L1-10 (2-10) only, round 3
 
 ## Blocking
 - none

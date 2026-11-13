@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 331a2d8c7ba45ff5
-SCOPE: delta — uusi MAFY-taulukkotehtävä fy1-1-L1-10 (teksti, ratkaisu, answers.py) ja opettajan hyväksymät tehtäväkuvat (kuvat vain asettelun osalta)
 
 ## Blocking
 - none
