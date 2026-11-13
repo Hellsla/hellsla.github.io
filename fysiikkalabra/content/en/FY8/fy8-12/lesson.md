@@ -352,6 +352,16 @@ I = I_0 \left(\frac{1}{2}\right)^{d/d_{1/2}}
 ```
 where $I_0$ is the intensity of the radiation without a barrier, $I$ the intensity behind the barrier, $d$ the thickness of the barrier and $d_{1/2}$ the half-value thickness. Instead of the intensity, the net pulse count of the counter can be substituted into the equation, that is, the pulse count from which the background radiation has been subtracted. The exponent $\tfrac{d}{d_{1/2}}$ tells how many half-value thicknesses the barrier contains, and it need not be an integer. The thicknesses $d$ and $d_{1/2}$ must be in the same unit.
 
+The attenuation of radiation can also be written with an exponential function that contains the **attenuation coefficient** $\mu$:
+```latex
+I = I_0 e^{-\mu d}
+```
+where $\mu$ is the attenuation coefficient, with the unit $\tfrac{1}{\text{m}}$ or $\tfrac{1}{\text{cm}}$, and $d$ is the thickness of the barrier in the same length unit. When $d = d_{1/2}$ the intensity has halved: $\tfrac{I}{I_0} = \tfrac{1}{2} = e^{-\mu d_{1/2}}$. Taking the natural logarithm gives $-\ln 2 = -\mu d_{1/2}$, that is,
+```latex
+\mu = \frac{\ln 2}{d_{1/2}}
+```
+The greater the attenuation coefficient, the thinner the layer that is enough to attenuate the radiation.
+
 <svg data-fig="vaimeneminen" viewBox="0 0 600 380" role="img" aria-label="Graph to scale: the fraction I over I zero of the gamma radiation that has got through as a function of the barrier thickness d, thickness from zero to 25 millimetres. Gamma radiation of caesium-137, narrow beam. In lead the fraction halves after every 5.5 millimetre layer: a half at 5.5 millimetres, a quarter at 11 millimetres and an eighth at 16.5 millimetres. In aluminium the fraction falls slowly and is about 0.6 at 25 millimetres." style="max-width:100%;font-size:24px">
   <line x1="174" y1="312" x2="174" y2="58" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="248" y1="312" x2="248" y2="58" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -482,7 +492,7 @@ Another mistake is to think that two half-value thicknesses stop all the gamma r
 ## Summary
 - Radiation is ionising when its particle or photon can remove an electron from an atom. For a photon the energy $E = hf$ decides: visible light does not ionise, X-rays and gamma radiation do.
 - Ionisation transfers the energy of radiation to matter; in air an ion pair takes on average $34\,\text{eV}$, so the number of ion pairs is $n_\text{i} = \tfrac{E}{W}$.
-- Alpha radiation ionises most densely and stops in paper, beta radiation stops in a few millimetres of aluminium, and gamma radiation is attenuated in lead and concrete: $I = I_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$.
+- Alpha radiation ionises most densely and stops in paper, beta radiation stops in a few millimetres of aluminium, and gamma radiation is attenuated in lead and concrete: $I = I_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}} = I_0 e^{-\mu d}$, where $\mu = \tfrac{\ln 2}{d_{1/2}}$ is the attenuation coefficient.
 - A GM tube counts ionising events with the help of electron avalanches, but it cannot distinguish the types of radiation. Background radiation is always included in a measurement.
 - A photon interacts with matter by photoelectric absorption (low energies, high atomic number), Compton scattering (medium energies) or pair production (above $1.022\,\text{MeV}$, high energies).
 - Radiation damages cells by ionising DNA directly and through the radicals of water. An alpha emitter is especially harmful inside the body, because it gives up its energy within a few cells. The total risk also depends on the amount of the substance, where it accumulates and how it is removed from the body.

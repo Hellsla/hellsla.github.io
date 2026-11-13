@@ -352,6 +352,16 @@ I = I_0 \left(\frac{1}{2}\right)^{d/d_{1/2}}
 ```
 missä $I_0$ on säteilyn intensiteetti ilman estettä, $I$ intensiteetti esteen takana, $d$ esteen paksuus ja $d_{1/2}$ puoliintumispaksuus. Intensiteetin sijasta yhtälöön voi sijoittaa mittarin nettopulssimäärän eli pulssimäärän, josta taustasäteily on vähennetty. Eksponentti $\tfrac{d}{d_{1/2}}$ kertoo, kuinka monta puoliintumispaksuutta esteessä on, eikä sen tarvitse olla kokonaisluku. Paksuuksilla $d$ ja $d_{1/2}$ on oltava sama yksikkö.
 
+Säteilyn vaimeneminen voidaan kirjoittaa myös eksponenttifunktiolla, jossa on **vaimennuskerroin** $\mu$:
+```latex
+I = I_0 e^{-\mu d}
+```
+missä $\mu$ on vaimennuskerroin, jonka yksikkö on $\tfrac{1}{\text{m}}$ tai $\tfrac{1}{\text{cm}}$, ja $d$ on esteen paksuus samassa pituusyksikössä. Kun $d = d_{1/2}$, intensiteetti on puolittunut: $\tfrac{I}{I_0} = \tfrac{1}{2} = e^{-\mu d_{1/2}}$. Kun otetaan luonnollinen logaritmi, saadaan $-\ln 2 = -\mu d_{1/2}$ eli
+```latex
+\mu = \frac{\ln 2}{d_{1/2}}
+```
+Mitä suurempi vaimennuskerroin on, sitä ohuempi kerros riittää vaimentamaan säteilyn.
+
 <svg data-fig="vaimeneminen" viewBox="0 0 600 380" role="img" aria-label="Kuvaaja mittakaavassa: läpi päässeen gammasäteilyn osuus I per I nolla esteen paksuuden d funktiona, paksuus nollasta 25 millimetriin. Cesium-137:n gammasäteily, kapea säde. Lyijyssä osuus puolittuu jokaisen 5,5 millimetrin kerroksen jälkeen: 5,5 millimetrin kohdalla puolet, 11 millimetrin kohdalla neljäsosa ja 16,5 millimetrin kohdalla kahdeksasosa. Alumiinissa osuus laskee hitaasti ja on 25 millimetrin kohdalla noin 0,6." style="max-width:100%;font-size:24px">
   <line x1="174" y1="312" x2="174" y2="58" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="248" y1="312" x2="248" y2="58" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -482,7 +492,7 @@ Toinen virhe on ajatella, että kaksi puoliintumispaksuutta pysäyttää kaiken 
 ## Tiivistelmä
 - Säteily on ionisoivaa, kun sen hiukkanen tai fotoni pystyy irrottamaan atomista elektronin. Fotonille ratkaisee energia $E = hf$: näkyvä valo ei ionisoi, röntgen- ja gammasäteily ionisoivat.
 - Ionisaatio siirtää säteilyn energiaa aineeseen; ilmassa ionipari vie keskimäärin $34\,\text{eV}$, joten ioniparien määrä on $n_\text{i} = \tfrac{E}{W}$.
-- Alfasäteily ionisoi tiheimmin ja pysähtyy paperiin, beetasäteily pysähtyy muutamaan millimetriin alumiinia, ja gammasäteily vaimenee lyijyssä ja betonissa: $I = I_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$.
+- Alfasäteily ionisoi tiheimmin ja pysähtyy paperiin, beetasäteily pysähtyy muutamaan millimetriin alumiinia, ja gammasäteily vaimenee lyijyssä ja betonissa: $I = I_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}} = I_0 e^{-\mu d}$, missä $\mu = \tfrac{\ln 2}{d_{1/2}}$ on vaimennuskerroin.
 - Fotoni vuorovaikuttaa aineen kanssa valosähköisellä absorptiolla (pienet energiat, suuri järjestysluku), Comptonin sironnalla (keskisuuret energiat) tai parinmuodostuksella (yli $1{,}022\,\text{MeV}$, suuret energiat).
 - GM-putki laskee ionisoivia tapahtumia elektronivyöryjen avulla, mutta se ei erota säteilylajeja. Mittaukseen sisältyy aina taustasäteily.
 - Säteily vaurioittaa soluja ionisoimalla DNA:ta suoraan ja veden radikaalien kautta. Alfasäteilijä on erityisen haitallinen elimistön sisällä, koska se luovuttaa energiansa muutaman solun matkalle. Kokonaisriski riippuu myös aineen määrästä, kertymispaikasta ja poistumisesta elimistöstä.
