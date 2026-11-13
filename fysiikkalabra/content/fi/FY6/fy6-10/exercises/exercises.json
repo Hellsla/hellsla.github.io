@@ -110,6 +110,18 @@
       "answer": 90.0,
       "unit": "C",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-10-L1-09",
+      "level": 1,
+      "text": "Kaksi pistevarausta, $+5{,}0\\,\\text{nC}$ ja $+8{,}0\\,\\text{nC}$, ovat $4{,}0\\,\\text{cm}$:n etäisyydellä toisistaan. Hae Coulombin lain vakio $k$ MAFY-taulukosta (mafytaulukot.fi) ja laske varausten välisen sähköisen voiman suuruus. Vastaa millinewtoneina.",
+      "lookup": "MAFY",
+      "answer": 0.2247,
+      "unit": "mN",
+      "tolerance": 0.02,
+      "hints": [
+        "Arvo löytyy MAFY-taulukon taulukosta *Luonnonvakiot*."
+      ]
     }
   ],
   "level2": [
@@ -280,6 +292,32 @@
           "feedback": "Tässä etäisyyden vaikutus on luettu väärin päin. Sähköinen voima heikkenee etäisyyden kasvaessa, koska $r^2$ on laissa nimittäjässä eikä osoittajassa."
         }
       ]
+    },
+    {
+      "id": "fy6-10-L2-09",
+      "level": 2,
+      "text": "Kuvaajassa on kahden samanlaisen, yhtä suuresti varatun pienen pallon välinen sähköinen voima $F$ pallojen keskipisteiden etäisyyden $r$ funktiona. Lue kuvaajasta voima, kun etäisyys on $4{,}0\\,\\text{cm}$, ja laske sen avulla kummankin pallon varaus. Vastaa nanocoulombeina.",
+      "figure": "fy6-10/check-graph",
+      "kind": [
+        "graph",
+        "data"
+      ],
+      "answer": 30.0,
+      "unit": "nC",
+      "tolerance": 0.05
+    },
+    {
+      "id": "fy6-10-L2-10",
+      "level": 2,
+      "text": "Kuvaajassa on kahden varausparin A ja B välinen sähköinen voima $F$ keskipisteiden etäisyyden $r$ funktiona. Parissa A kummankin pallon varaus on $20\\,\\text{nC}$. Parissa B toisen pallon varaus on $20\\,\\text{nC}$ ja toisen tuntematon $q_\\text{B}$. Kaikki varaukset ovat samanmerkkisiä.\n\na) Lue kuvaajasta parin A voima etäisyydellä $3{,}0\\,\\text{cm}$ ja etäisyys, jolla parin B voima on yhtä suuri.\n\nb) Päättele a)-kohdan lukemista Coulombin lailla $q_\\text{B}$. Vastaa nanocoulombeina.\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
+      "figure": "fy6-10/ex-pari",
+      "kind": [
+        "graph",
+        "reasoning"
+      ],
+      "answer": 80.0,
+      "unit": "nC",
+      "tolerance": 0.06
     }
   ],
   "level3": [

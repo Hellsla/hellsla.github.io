@@ -249,6 +249,22 @@ def check_graph():
     return f.svg()
 
 
+# --- Exercise fy6-10-L2-10: two charge pairs on one grid, the charges not written ---------------------------------
+def ex_pari():
+    f = new("fy610-ex-pari", 390, "Kuvaaja mittakaavassa: kahden varausparin A ja B välinen voima F millinewtoneina "
+            "pallojen keskipisteiden etäisyyden r funktiona senttimetreinä, ruudukon välit 1 cm ja 1 mN. Sininen käyrä A "
+            "alkaa etäisyydeltä 3 cm ja punainen käyrä B etäisyydeltä 4,4 cm; kumpikin laskee etäisyyden kasvaessa, ja "
+            "käyrä B on koko matkan käyrän A yläpuolella.")
+    ax = Axes(f, (84, 330), (480, 72), x=(0, 12), y=(0, 8), xticks=list(range(1, 13)), yticks=list(range(1, 9)),
+              xlabel=r"r\ (\text{cm})", ylabel=r"F\ (\text{mN})",
+              xfmt=lambda v: fi(v) if v % 2 == 0 else "", yfmt=lambda v: fi(v) if v % 2 == 0 else "")
+    ax.curve(lambda r: F_mN(20, 20, r), 2.9, 11.8, COLD, 3)
+    ax.curve(lambda r: F_mN(20, 80, r), 4.4, 11.8, HOT, 3)
+    f.tex(ax.X(3.0) + 22, ax.Y(F_mN(20, 20, 3.0)) - 16, r"\text{A}", "start", COLD, w=30)
+    f.tex(ax.X(4.4) + 22, ax.Y(F_mN(20, 80, 4.4)) - 4, r"\text{B}", "start", HOT, w=30)
+    return f.svg()
+
+
 # --- the opening illustration -------------------------------------------------------------------------------------
 def hero():
     """The comb lifting paper bits and the balloon on the wall: the chair and the sweater were dropped (teacher 2026-11-11,
@@ -288,7 +304,7 @@ def hero():
 
 
 FIGURES = {"hero": hero, "hankaus": hankaus, "influenssi": influenssi, "kentta": kentta, "coulomb": coulomb,
-           "kuvaaja": kuvaaja, "check-graph": check_graph}
+           "kuvaaja": kuvaaja, "check-graph": check_graph, "ex-pari": ex_pari}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "hero": "decorative",
@@ -298,4 +314,5 @@ REUSE = {
     "coulomb": "reveals: equal and opposite forces F12 and F21, repulsion for like and attraction for unlike charges",
     "kuvaaja": "reveals: F(r) for 20 nC and 20 nC, 4,0 mN at 3 cm, a quarter at twice the distance",
     "check-graph": "safe: F(r) points of two equal charges (30 nC each, not written): 8,99 mN at 3,0 cm ... 1,00 mN at 9,0 cm",
+    "ex-pari": "safe: F(r) curves of two charge pairs A and B on a 1 cm and 1 mN grid, charges not written (made for task fy6-10-L2-10)",
 }
