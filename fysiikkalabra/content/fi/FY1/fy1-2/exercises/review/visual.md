@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 4ae28724816455e3
-SCOPE: delta — uusi MAFY-taulukkotehtävä fy1-2-L1-10 (teksti, ratkaisu, answers.py) ja opettajan hyväksymät tehtäväkuvat (kuvat vain asettelun osalta)
+CONTENT-HASH: a34be413af2946f5
+SCOPE: delta — MAFY-taulukkotehtävä fy1-2 (teksti, ratkaisu) ja opettajan hyväksymät tehtäväkuvat (kuvat vain asettelun osalta); kierros 2
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy1-2-L1-10 — tehtävätekstissä $t = s/c$ vinoviivalla; kaava pitäisi kirjoittaa murtolukuna $t = \dfrac{s}{c}$ kuten ratkaisussa.
+- none (round 1 polish done: $t = \tfrac{s}{c}$ is now a fraction and the question is last).
 
 ## Checked
-- open-exercises-1280 (uuden tehtävän fy1-2-L1-10 kysymys, vihje, vastauskenttä ja avattu ratkaisu) ja viereiset tehtävät
-- ratkaisun vaiheet: Annettu, Kysytty, Periaate, Kaava, Muunnokset, Sijoitus, Vastaus, Järkevyys; yksiköt LaTeXina, desimaalipilkku, \cdot, ei vaakasuuntaista ylivuotoa
-- tehtäväkuvat tarkistettu kontaktilehdiltä / otoksina (fy1-1 eclipse luettavissa, ei sumeaa tai leikkautunutta)
+- fy1-2-open-exercises-1280-9 and -10: task 2-10 (text: situation, formula, question last) and its opened solution (Sijoitus rows, Vastaus with the significant-figure reason as its own paragraph, Järkevyys); layout intact, no overflow, units in LaTeX.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

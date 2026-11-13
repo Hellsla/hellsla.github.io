@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 0efea0196a78b548
-SCOPE: delta — uusi MAFY-taulukkotehtävä fy1-3-L1-09 (teksti, ratkaisu, answers.py) ja opettajan hyväksymät tehtäväkuvat (kuvat vain asettelun osalta)
+CONTENT-HASH: 6d3c28b642ef74e0
+SCOPE: delta — MAFY-taulukkotehtävä fy1-3 (teksti, ratkaisu) ja opettajan hyväksymät tehtäväkuvat (kuvat vain asettelun osalta); kierros 2
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy1-3-L1-09 Vastaus — virhearvion rivi ($\Delta x$ murtolukuna ja välin $1{,}005\ldots1{,}015\,\text{g/cm}^3$ samassa kappaleessa) on tiivis; harkitse omaa riviä.
+- none (round 1 polish done: the Δx line is now its own paragraph, "Lisäksi:").
 
 ## Checked
-- open-exercises-1280 (uuden tehtävän fy1-3-L1-09 kysymys, vihje, vastauskenttä ja avattu ratkaisu) ja viereiset tehtävät
-- ratkaisun vaiheet: Annettu, Kysytty, Periaate, Kaava, Muunnokset, Sijoitus, Vastaus, Järkevyys; yksiköt LaTeXina, desimaalipilkku, \cdot, ei vaakasuuntaista ylivuotoa
-- tehtäväkuvat tarkistettu kontaktilehdiltä / otoksina (fy1-1 eclipse luettavissa, ei sumeaa tai leikkautunutta)
+- fy1-3-open-exercises-1280-9 and -10: task 3-9 and its solution; Kaava now aligned with \text{poikkeama}, Sijoitus rows aligned at =, Vastaus with sig-fig reason, separate Lisäksi paragraph, Järkevyys; solution layout is clean and inside the card.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 7b152209cf589af5
-SCOPE: delta — uusi MAFY-taulukkotehtävä fy1-8-L1-10 (teksti, ratkaisu, answers.py) ja opettajan hyväksymät tehtäväkuvat (kuvat vain asettelun osalta)
+CONTENT-HASH: 5c531bbbd7f99c5c
+SCOPE: delta — MAFY-taulukkotehtävä fy1-8 (teksti, ratkaisu) ja opettajan hyväksymät tehtäväkuvat (kuvat vain asettelun osalta); kierros 2
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy1-8-L1-10 — "Anna vastaus yksikössä g/kg/km": yksikkö pelkkänä tekstinä; kirjoita $\text{km}$ jne. LaTeXina kuten muu teksti.
+- none (round 1 polish done: the unit in the question is now $\text{km}$).
 
 ## Checked
-- open-exercises-1280 (uuden tehtävän fy1-8-L1-10 kysymys, vihje, vastauskenttä ja avattu ratkaisu) ja viereiset tehtävät
-- ratkaisun vaiheet: Annettu, Kysytty, Periaate, Kaava, Muunnokset, Sijoitus, Vastaus, Järkevyys; yksiköt LaTeXina, desimaalipilkku, \cdot, ei vaakasuuntaista ylivuotoa
-- tehtäväkuvat tarkistettu kontaktilehdiltä / otoksina (fy1-1 eclipse luettavissa, ei sumeaa tai leikkautunutta)
+- fy1-8-open-exercises-1280-9 and -10: task 8-10 (situation then question as its own sentence) and its solution; two-row Kaava aligned at =, Vastaus with the rounding reason, Järkevyys check block; no clipping or overflow.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

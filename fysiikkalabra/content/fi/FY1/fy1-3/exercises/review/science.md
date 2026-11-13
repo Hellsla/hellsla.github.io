@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 0efea0196a78b548
+CONTENT-HASH: 6d3c28b642ef74e0
 SCOPE: delta added-exercise from 8ce9535a28c5573f base 81db4a6fd727
 
 ## Blocking
 - none
 
 ## Polish
-- content/fi/FY1/fy1-3/exercises/solutions.md:210 — the answer 1,2 % has no reason for its two figures — add "kaksi merkitsevää numeroa, koska erotus $1{,}010 - 0{,}998 = 0{,}012$ on kahden numeron tarkkuinen".
+- none
 
 ## Checked
-- fy1-3-L1-09 only (delta, added exercise); hash the same at start and end.
-- Recomputed independently: x̄ = 5,050/5 = 1,010 g/cm³; (1,010 − 0,998206)/0,998206 · 100 % = 1,18 % (key 1.18).
-- MAFY water density at 20 °C is 0,998206 g/cm³ (998,21 kg/m³), which is right; the hint names the right table.
-- Δx = (1,014 − 1,004)/2 = 0,005 g/cm³ is the lesson's virhearvio (half the range). The interval 1,005…1,015 leaves out 0,998, so "todennäköisesti systemaattinen virhe" is right and is hedged as the guardrails ask. The mean's uncertainty is smaller still, so the conclusion only gets stronger.
-- Terms agree with the glossary: you find a systematic error by comparing with a known reference value.
-- The sign is right: every result is above the table value, so the deviation is positive.
-- Tolerance 0,04 is fine; the shown 1,2 % is 1,7 % from the key.
+- fy1-3-L1-09 only (delta, added exercise; round 2). The hash was the same at the start and the end.
+- I recomputed it myself: x̄ = 5,050/5 = 1,010 g/cm³. (1,010 − 0,998206)/0,998206 · 100 % = 1,1815 %. The answers.py value and the key 1.18 are right.
+- Round 1 Polish applied: the two significant figures are now explained by the difference 0,012 g/cm³, which has two figures. The reason is correct, since the subtraction leaves two figures.
+- The shown 1,2 % is 1,7 % from the key, inside the tolerance of 0,04.
+- MAFY water density at 20 °C (0,998206 g/cm³) and the hint's table are right.
+- The half-range Δx = 0,005 g/cm³ gives the interval 1,005…1,015, which excludes the table value. The text concludes "todennäköisesti systemaattinen virhe", worded as the guardrails ask. The sign of the deviation (positive) is right.
