@@ -1,14 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 38935656dc0691fb
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: 44d102baf5907a2c
+SCOPE: delta added-exercise from 38935656dc0691fb base 8f23aa7ae3bd
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- L1-02: socket charging limited by the car's cable to 8,0 A; P = 230 · 8,0 = 1840 W ≈ 1,8 kW; answer 1.84, rel. tolerance 0,03 accepts 1,8 (2,2 %); 40 kWh / 1,84 kW = 21,7 h > 21 h; 8 A Tukes note; answers.py = 1,84.
-- L3-02 reframed as an appropriately dimensioned EV cable; (16/10)² − 1 = 156 % unchanged.
-- Diff since origin/main compared sentence by sentence with the Finnish source change; content hash checked at start and end.
+- Delta: only the added exercise fy6-16-L2-09 judged; the rest unchanged per `reviews.py added_exercises`.
+- Figure talo-ex (figures.py): steps 2 / 5 / 7 / 3 kW for 18–19 / 19–20 / 20–21 / 21–22 h, every step on a 1 kW gridline and every edge on an hour line; the description gives the same values; no energy or cost written.
+- Physics: constant power in each hour, so W = ΣP_i Δt (area under the (t, P) graph) and cost K = aW — correct.
+- Recomputed: W = (2 + 5 + 7 + 3) kW · 1.0 h = 17 kWh; K = 0.16 €/kWh · 17 kWh = 2.72 € = answers.py; 2.7 € is 0.7 % off, inside the 2 % tolerance.
+- Conversion c/kWh → €/kWh right; formula stated symbolically before substitution; rounding reason given.
+- Reasonableness check real: mean power 4.3 kW lies between the smallest and largest step; magnitude (17 kWh in an evening for a house) realistic.
+- Scope: electric energy and its cost (FY6 power and household energy, applied chapter).
