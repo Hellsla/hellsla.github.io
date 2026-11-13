@@ -1,19 +1,16 @@
-VERDICT: PASS
-CONTENT-HASH: d94b7c0f6bee9624
-SCOPE: delta added-exercise from 0b8adf1d8e82e8e4 base 81db4a6fd727
+VERDICT: FAIL
+CONTENT-HASH: 41a96108e4632f78
 
 ## Blocking
-(none)
+- exercises.json:136 (L1-11) — A: `"unit": "min"` is left over from the old version of the task, which asked for the period. The task now asks for the gravitational acceleration, and the answer is 1.45 m/s², so the page would show "1.45 min". — Set `"unit": "m/s²"`, as in the Finnish version.
 
 ## Polish
-- solutions.md fy5-6-L1-10 — "about a thousandth of the free-fall acceleration": 5.93·10⁻³/9.81 = 6·10⁻⁴ — "less than a thousandth" or "about 0.06 %".
-- solutions.md fy5-6-L1-10, L2-08 — the step heading "Reading the graph" introduces a diagram — "Reading the figure".
+- exercises.json (L1-11, hint) — "The values are found" is plural, but only the Moon's mass is looked up now. — Write "The mass of the Moon is found …".
+- solutions.md (L1-10, Reasonableness) — "about a thousandth" is a rough estimate: 5.93·10⁻³/9.81 ≈ 6·10⁻⁴. — Write "less than a thousandth".
 
 ## Checked
-- fy5-6-L1-10 (reworked, acceleration): r = (147.1 + 152.1)/2 million km = 1.496·10¹¹ m; a = γM/r² = 5.93 mm/s²; cross-check v²/r with 29.8 km/s gives the same. answers.py and JSON agree.
-- fy5-6-L1-11 (reworked, Moon probe period): r = 1737 + 100 = 1837 km; T = 2π sqrt(r³/γM) = 7065 s = 117.8 min with MAFY's M = 7.346·10²² kg; ±4 % covers other table values; ISS comparison reasonable.
-- fy5-6-L2-08: v1/v2 = sqrt(r2/r1) = sqrt(5250/88) = 7.72 → 7.7; the circular model is stated as hypothetical for the comet's ellipse (no wrong picture).
-- Gravity as the net force of circular motion, r from the centre, stated in each solution.
-- Figure fy5-6/radat: English labels ("orbit of the Earth", "147.1–152.1 million km", "88–5250 million km") match the values quoted.
-- Compared with the Finnish set by script: every number, answer, unit, tolerance, lookup and figure id identical.
-- Hash unchanged at start and end.
+- The hash was the same at the start and the end. Round 5: I reviewed the changed exercise L1-11.
+- L1-11: the Moon's mass, 7.346·10²² kg, is from the VERIFIED row of docs/mafy-arvot.tsv. g = γM/r² = 1.448 m/s² → 1.45. This matches answers.py and the Finnish version.
+- The 4 % tolerance covers values from other tables (7.35·10²² kg gives 1.449 m/s²). The rounding is justified by the radius, 1840 km, which has three significant figures.
+- The reasonableness check is correct: 1.62·(1737/1840)² = 1.44 m/s².
+- The answer, unit and tolerance of every exercise are the same as in the Finnish set. The numbers in the English solutions of L1-10, L1-11 and L2-08 are the same as the Finnish ones.
