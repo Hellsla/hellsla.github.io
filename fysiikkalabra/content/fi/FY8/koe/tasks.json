@@ -142,7 +142,7 @@
       "noin $50$",
       "noin $5 \\cdot 10^{4}$",
       "noin $5 \\cdot 10^{7}$",
-      "noin $5 \\cdot 10^{9}$"
+      "noin $5 \\cdot 10^{10}$"
      ],
      "correct": 2,
      "tag": "math"
@@ -296,7 +296,7 @@
       {
        "key": "error_sources",
        "points": 2,
-       "detail": "Nimeää virhelähteen ja päättelee sen suunnan oikein: pisteet ovat mallin $\\tfrac{hf}{e}$ alapuolella (suora leikkaa pystyakselin noin $-0{,}1\\,\\text{V}$:ssa). Esimerkiksi LEDin spektri on leveä ja kaistaväli on huipun fotonin energiaa pienempi; vaikutus kulmakertoimeen on perusteltava, sillä värin mukaan muuttuva virhe voi muuttaa myös kulmakerrointa."
+       "detail": "Nimeää virhelähteen ja päättelee sen suunnan oikein (väärän suunnan lähde ansaitsee enintään 1 p): pisteet ovat mallin $\\tfrac{hf}{e}$ alapuolella (suora leikkaa pystyakselin noin $-0{,}1\\,\\text{V}$:ssa). Esimerkiksi LEDin spektri on leveä ja kaistaväli on huipun fotonin energiaa pienempi; vaikutus kulmakertoimeen on perusteltava, sillä värin mukaan muuttuva virhe voi muuttaa myös kulmakerrointa."
       }
      ]
     }
@@ -702,7 +702,7 @@
        "points": 1
       },
       {
-       "text": "Mainitsee, että Bohrin mallin tarkka rata (paikka ja nopeus yhtä aikaa) korvautuu todennäköisyysjakaumalla.",
+       "text": "Mainitsee, että elektronin tila on seisova aalto, joka sallii vain tietyt energiat, tai että paikkaa ja nopeutta ei voi tietää tarkasti yhtä aikaa.",
        "tag": "communication",
        "points": 1
       }
@@ -725,7 +725,7 @@
    "title": "Lyijysuoja gammalähteelle",
    "source": "example",
    "source_note": "Mittaustulokset ja lähteen annosnopeus on laadittu esimerkiksi; väestön vuosiannosraja on $1\\,\\text{mSv}$ (säteilylaki 859/2018).",
-   "text": "Tutkimuslaboratorio asentaa gammalähteen kellarihuoneeseen. Viereisessä huoneessa, $3{,}0\\,\\text{m}$ lähteestä, oleskelee työntekijöitä $2000\\,\\text{h}$ vuodessa; heidän vuosiannoksensa lähteestä ei saa ylittää väestön annosrajaa $1\\,\\text{mSv}$. Lähteen annosnopeus ilman suojaa on $160\\,\\mu\\text{Sv/h}$ etäisyydellä $1{,}0\\,\\text{m}$. Lähteen eteen aiotaan laittaa lyijylevy. Lyijyn vaikutuksen mittaamiseksi lähteen ja Geiger-mittarin väliin asetettiin eripaksuisia lyijylevyjä, ja mittari laski pulssinopeuden $R$, kun jokainen mittaus kesti $100\\,\\text{s}$. Ilman lähdettä mittarin taustapulssinopeus oli $0{,}8\\,\\text{s}^{-1}$. Mittaukset:\n\n| $d\\ (\\text{mm})$ | $0$ | $3$ | $6$ | $9$ | $12$ | $18$ | $24$ |\n|---|---|---|---|---|---|---|---|\n| $R\\ (\\text{s}^{-1})$ | $120{,}9$ | $85{,}7$ | $61{,}3$ | $43{,}2$ | $31{,}4$ | $16{,}0$ | $8{,}7$ |",
+   "text": "Tutkimuslaboratorio asentaa gammalähteen kellarihuoneeseen. Viereisessä huoneessa, $3{,}0\\,\\text{m}$ lähteestä, oleskelee työntekijöitä $2000\\,\\text{h}$ vuodessa; heidän vuosiannoksensa lähteestä ei saa ylittää väestön annosrajaa $1\\,\\text{mSv}$. Lähteen annosnopeus ilman suojaa on $160\\,\\mu\\text{Sv/h}$ etäisyydellä $1{,}0\\,\\text{m}$. Lähteen eteen aiotaan laittaa lyijylevy. Lyijyn vaikutuksen mittaamiseksi lähteen ja Geiger-mittarin väliin asetettiin eripaksuisia lyijylevyjä, ja mittari laski pulssinopeuden $R$, kun jokainen mittaus kesti $100\\,\\text{s}$. Ilman lähdettä mitattiin myös taustapulssinopeus, $0{,}8\\,\\text{s}^{-1}$, samoin $100\\,\\text{s}$:n ajan. Mittaukset:\n\n| $d\\ (\\text{mm})$ | $0$ | $3$ | $6$ | $9$ | $12$ | $18$ | $24$ |\n|---|---|---|---|---|---|---|---|\n| $R\\ (\\text{s}^{-1})$ | $120{,}9$ | $85{,}7$ | $61{,}3$ | $43{,}2$ | $31{,}4$ | $16{,}0$ | $8{,}7$ |",
    "parts": [
     {
      "id": "a",
@@ -908,7 +908,7 @@
    "title": "PET-merkkiaine sairaalan ulkopuolelta",
    "source": "example",
    "source_note": "Tilanne ja annoskerroin $0{,}019\\,\\text{mSv/MBq}$ on laadittu esimerkiksi; fluori-18:n puoliintumisaika on taulukkoarvo ja suomalaisen keskimääräinen annos on STUK-A263 (2020).",
-   "text": "Sairaalan PET-kuvauksissa käytetään fluori-18-merkkiainetta, jonka puoliintumisaika on $109{,}8\\,\\text{min}$. Merkkiaine valmistetaan syklotronilaitoksessa, ja siitä kuljetetaan sairaalaan; valmistuksen ja injektion välinen aika on yhteensä $4{,}5\\,\\text{h}$, josta kuljetus on $3{,}0\\,\\text{h}$. Potilaan injektioon tarvitaan injektiohetkellä aktiivisuus $280\\,\\text{MBq}$. Merkkiaine hajoaa beeta-plus-hajoamisella: ydin lähettää positronin, joka annihiloituu lähellä olevan elektronin kanssa. Arvioidaan, että potilaan efektiivinen annos on $0{,}019\\,\\text{mSv}$ jokaista injisoitua megabecquerelia kohti. Suomalaisen keskimääräinen efektiivinen annos on noin $5{,}9\\,\\text{mSv}$ vuodessa (STUK-A263, 2020). Elektronin massa on $m_\\text{e} = 9{,}109 \\cdot 10^{-31}\\,\\text{kg}$.",
+   "text": "Sairaalan PET-kuvauksissa käytetään fluori-18-merkkiainetta, jonka puoliintumisaika on $109{,}8\\,\\text{min}$. Merkkiaine valmistetaan syklotronilaitoksessa, ja siitä kuljetetaan sairaalaan; valmistuksen ja injektion välinen aika on yhteensä $4{,}5\\,\\text{h}$, josta kuljetus on $3{,}0\\,\\text{h}$. Potilaan injektioon tarvitaan injektiohetkellä aktiivisuus $280\\,\\text{MBq}$; injektio tapahtuu $4{,}5\\,\\text{h}$ valmistuksen jälkeen. Merkkiaine hajoaa beeta-plus-hajoamisella: ydin lähettää positronin, joka annihiloituu lähellä olevan elektronin kanssa. Arvioidaan, että potilaan efektiivinen annos on $0{,}019\\,\\text{mSv}$ jokaista injisoitua megabecquerelia kohti. Suomalaisen keskimääräinen efektiivinen annos on noin $5{,}9\\,\\text{mSv}$ vuodessa (STUK-A263, 2020). Elektronin massa on $m_\\text{e} = 9{,}109 \\cdot 10^{-31}\\,\\text{kg}$.",
    "parts": [
     {
      "id": "a",
@@ -942,7 +942,7 @@
      "id": "b",
      "kind": "calc",
      "points": 4,
-     "text": "Kuinka suuri aktiivisuus merkkiainetta on valmistettava, jotta injektiohetkellä aktiivisuus on $280\\,\\text{MBq}$?",
+     "text": "Kuinka suuri aktiivisuus merkkiainetta on valmistettava, jotta injektiohetkellä, $4{,}5\\,\\text{h}$ valmistuksen jälkeen, aktiivisuus on $280\\,\\text{MBq}$?",
      "answer": {
       "value": 1540,
       "unit": "MBq",

@@ -4,7 +4,7 @@
 **Perustelu:** Valosähköisessa ilmiössä yksi fotoni irrottaa yhden elektronin. Elektronin suurin liike-energia on $E_\text{k,max} = hf - W$, joka riippuu vain taajuudesta ja irrotustyöstä, ei intensiteetistä. Intensiteetin kaksinkertaistaminen tarkoittaa kaksi kertaa niin monta fotonia sekunnissa, joten myös irtoavia elektroneja on kaksi kertaa niin paljon. Vaihtoehto, jossa liike-energia kaksinkertaistuu, perustuu virheelliseen käsitykseen, että kirkkaampi valo antaa jokaiselle elektronille enemmän energiaa; energia kasvaisi vain taajuuden kasvaessa.
 
 ### b)
-**Perustelu:** Pysäytysjännitteelle $eU_\text{s} = hf - W$, joten kuvaajan suora leikkaa vaaka-akselin kynnystaajuudella $f_0$, jolla $hf_0 = W$. Jatkamalla suoraa kohti jännitettä $0$ saadaan $f_0 \approx 5{,}6 \cdot 10^{14}\,\text{Hz}$, joten $W = hf_0$. Sijoitus: $W = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 5{,}6 \cdot 10^{14}\,\text{Hz}$, eli $W \approx 3{,}7 \cdot 10^{-19}\,\text{J}$, ja elektronivoltteina $W \approx 2{,}3\,\text{eV}$. Vaihtoehto $2{,}3 \cdot 10^{-19}\,\text{J}$ syntyy, kun elektronivolteissa saatu luku $2{,}3$ sekoitetaan joulemäärään, ja $3{,}7\,\text{eV}$ kun jouleissa saatu luku sekoitetaan elektronivoltteihin. Kynnystaajuus $5{,}6 \cdot 10^{14}$ on taajuus, ei energia.
+**Perustelu:** Pysäytysjännitteelle $eU_\text{s} = hf - W$, joten kuvaajan suora leikkaa vaaka-akselin kynnystaajuudella $f_0$, jolla $hf_0 = W$. Jatkamalla suoraa kohti jännitettä $0$ saadaan $f_0 \approx 5{,}6 \cdot 10^{14}\,\text{Hz}$, joten $W = hf_0$. Sijoitus: $W = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ $\cdot\ 5{,}6 \cdot 10^{14}\,\text{Hz}$, eli $W \approx 3{,}7 \cdot 10^{-19}\,\text{J}$, ja elektronivoltteina $W \approx 2{,}3\,\text{eV}$. Vaihtoehto $2{,}3 \cdot 10^{-19}\,\text{J}$ syntyy, kun elektronivolteissa saatu luku $2{,}3$ sekoitetaan joulemäärään, ja $3{,}7\,\text{eV}$ kun jouleissa saatu luku sekoitetaan elektronivoltteihin. Kynnystaajuus $5{,}6 \cdot 10^{14}$ on taajuus, ei energia.
 
 ### c)
 **Perustelu:** Kun jatkuvan spektrin valo kulkee kaasun läpi, kaasun atomit absorboivat vain fotoneja, joiden energia on täsmälleen jonkin atomin kahden energiatason erotus. Näiden aallonpituuksien kohdalla spektriin jää tummia viivoja, ja viivojen paikat ovat alkuaineelle ominaiset. Uudelleen emittoitu valo lähtee kaikkiin suuntiin, joten suoraan kulkevassa valossa viivat ovat tummia; ne eivät siis ole kaasun emissioviivoja. Tummat viivat eivät kerro lähteen koostumuksesta, koska lähde lähettää jatkuvaa spektriä, ja viivojen paikat riippuvat alkuaineesta eivätkä tiheydestä.
@@ -22,7 +22,7 @@
 **Perustelu:** Aktiivisuus puolittuu jokaisen puoliintumisajan kuluessa. Suhde $3{,}2 : 0{,}10 = 32 = 2^{5}$, joten tarvitaan viisi puoliintumisaikaa: $5 \cdot 4{,}0\,\text{h} = 20\,\text{h}$. Neljän puoliintumisajan ($16\,\text{h}$) jälkeen aktiivisuus olisi vielä $0{,}20\,\text{MBq}$. Vaihtoehto $7{,}8\,\text{h}$ syntyy lineaarisesta päättelystä: jos aktiivisuuden luullaan vähenevän tasaisesti puolella alkuarvostaan eli $1{,}6\,\text{MBq}$ per $4{,}0\,\text{h}$, aika on $\tfrac{3{,}1}{1{,}6} \cdot 4{,}0\,\text{h} \approx 7{,}8\,\text{h}$, vaikka puoliintuminen on suhteellista eikä vakiomäärän väheneminen. Vaihtoehto $16\,\text{h}$ on neljä puoliintumisaikaa, jolloin aktiivisuus on vielä $0{,}20\,\text{MBq}$. Vaihtoehto $32\,\text{h}$ syntyy, kun suhdeluku $32$ luetaan suoraan tunneiksi.
 
 ### h)
-**Perustelu:** Energioiden suhde on $\tfrac{200 \cdot 10^{6}\,\text{eV}}{4\,\text{eV}} = 5 \cdot 10^{7}$. Ydinreaktiossa energia tulee ytimen sidosenergioiden muutoksesta, joka on miljoonia kertoja suurempi kuin atomien elektroniverhojen kemiallisten sidosten muutos. Vaihtoehto $50$ syntyy, kun etuliite mega ($10^{6}$) unohdetaan ($200 : 4$); $5 \cdot 10^{4}$ syntyy, kun $200\,\text{MeV}$ luetaan kiloelektronivolteiksi; $5 \cdot 10^{9}$ syntyy, kun se luetaan gigaelektronivolteiksi.
+**Perustelu:** Energioiden suhde on $\tfrac{200 \cdot 10^{6}\,\text{eV}}{4\,\text{eV}} = 5 \cdot 10^{7}$. Ydinreaktiossa energia tulee ytimen sidosenergioiden muutoksesta, joka on miljoonia kertoja suurempi kuin atomien elektroniverhojen kemiallisten sidosten muutos. Vaihtoehto $50$ syntyy, kun etuliite mega ($10^{6}$) unohdetaan ($200 : 4$); $5 \cdot 10^{4}$ syntyy, kun $200\,\text{MeV}$ luetaan kiloelektronivolteiksi; $5 \cdot 10^{10}$ syntyy, kun $200\,\text{MeV}$ luetaan gigaelektronivolteiksi ($200 \cdot 10^{9} : 4$).
 
 ### i)
 **Perustelu:** Ekvivalenttiannos on $H = w_\text{R} D$: alfasäteilylle $20 \cdot 1{,}0\,\text{mGy} = 20\,\text{mSv}$ ja gammasäteilylle $1{,}0\,\text{mSv}$. Painotuskerroin kuvaa sitä, että alfahiukkanen ionisoi lyhyellä matkalla tiheästi ja vaurioittaa soluja enemmän samalla absorboituneella energialla. Absorboitunut annos ei muutu, koska se mittaa vain kudokseen jäänyttä energiaa massayksikköä kohti. Väite yhtä suurista ekvivalenttiannoksista unohtaa painotuksen, ja gammasäteilyn läpäisykyky ei kasvata ekvivalenttiannosta.
@@ -125,7 +125,7 @@
 **Kuvaajan lukeminen:** Suoralta luetaan kaukana toisistaan olevat pisteet $(4{,}0 \cdot 10^{14}\,\text{Hz};\ 1{,}59\,\text{V})$ ja $(7{,}0 \cdot 10^{14}\,\text{Hz};\ 2{,}87\,\text{V})$.
 **Kaava:** $h = e \cdot \dfrac{\Delta U_\text{k}}{\Delta f}$
 **Muunnokset:** $4{,}0 \cdot 10^{14}\,\text{Hz}$ ja $7{,}0 \cdot 10^{14}\,\text{Hz}$ ovat suoraan hertseinä, ja $1\,\text{V} = 1\,\text{J/C}$.
-**Sijoitus:** kulmakerroin $\dfrac{2{,}87\,\text{V} - 1{,}59\,\text{V}}{7{,}0 \cdot 10^{14}\,\text{Hz} - 4{,}0 \cdot 10^{14}\,\text{Hz}} = 4{,}25 \cdot 10^{-15}\,\text{V}\,\text{s}$ ja $h = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 4{,}25 \cdot 10^{-15}\,\text{V}\,\text{s}$ $\approx 6{,}8 \cdot 10^{-34}\,\text{J}\,\text{s}$
+**Sijoitus:** kulmakerroin $\dfrac{2{,}87\,\text{V} - 1{,}59\,\text{V}}{7{,}0 \cdot 10^{14}\,\text{Hz} - 4{,}0 \cdot 10^{14}\,\text{Hz}}$ $\approx 4{,}27 \cdot 10^{-15}\,\text{V}\,\text{s}$ ja $h = 1{,}602 \cdot 10^{-19}\,\text{C}$ $\cdot\ 4{,}27 \cdot 10^{-15}\,\text{V}\,\text{s}$ $\approx 6{,}8 \cdot 10^{-34}\,\text{J}\,\text{s}$
 **Vastaus:** Planckin vakio on noin $6{,}8 \cdot 10^{-34}\,\text{J}\,\text{s}$.
 **Järkevyys:** Arvo on lähellä tunnettua arvoa $6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, noin $3\,\%$ suurempi; suhteellinen virhe on mittauksen tarkkuuden kokoluokkaa. Kulmakertoimen yksikkö $\text{V}\,\text{s}$ kerrottuna varauksella antaa $\text{J}\,\text{s}$.
 
@@ -135,8 +135,8 @@
 **Periaate:** Piirretään jyrkin ja loivin suora, jotka vielä mahtuvat virhepalkkien sisään. Niiden kulmakertoimista saadaan $h$:n suurin ja pienin arvo, ja epävarmuus on niiden eron puolikas.
 **Kuvaajan lukeminen:** Jyrkin suora, joka vielä kulkee kaikkien viiden virhepalkin sisällä, kulkee pisteen $(5{,}08;\ 2{,}02)$ (toisen palkin alapää) ja pisteen $(6{,}97;\ 2{,}89)$ (viimeisen palkin yläpää) kautta. Loivin suora kulkee pisteen $(4{,}80;\ 1{,}96)$ (ensimmäisen palkin yläpää) ja pisteen $(6{,}38;\ 2{,}57)$ (neljännen palkin alapää) kautta. Taajuudet ovat yksikössä $10^{14}\,\text{Hz}$ ja jännitteet voltteina; muut kolme palkkia ovat suorien sisällä.
 **Kaava:** $\Delta h = \dfrac{h_\text{max} - h_\text{min}}{2}$, missä $h = e \cdot \text{kulmakerroin}$
-**Muunnokset:** Jyrkin suora: $\Delta f = (6{,}97 - 5{,}08) \cdot 10^{14}\,\text{Hz} = 1{,}89 \cdot 10^{14}\,\text{Hz}$; loivin suora: $\Delta f = (6{,}38 - 4{,}80) \cdot 10^{14}\,\text{Hz} = 1{,}58 \cdot 10^{14}\,\text{Hz}$.
-**Sijoitus:** $h_\text{max} = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot \dfrac{0{,}87\,\text{V}}{1{,}89 \cdot 10^{14}\,\text{Hz}} \approx 7{,}4 \cdot 10^{-34}\,\text{J}\,\text{s}$ ja $h_\text{min} = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot \dfrac{0{,}61\,\text{V}}{1{,}58 \cdot 10^{14}\,\text{Hz}} \approx 6{,}2 \cdot 10^{-34}\,\text{J}\,\text{s}$, joten $\Delta h = \dfrac{7{,}4 - 6{,}2}{2} \cdot 10^{-34}\,\text{J}\,\text{s} \approx 0{,}6 \cdot 10^{-34}\,\text{J}\,\text{s}$
+**Muunnokset:** Jyrkin suora: $\Delta f = (6{,}97 - 5{,}08) \cdot 10^{14}\,\text{Hz}$ $= 1{,}89 \cdot 10^{14}\,\text{Hz}$; loivin suora: $\Delta f = (6{,}38 - 4{,}80) \cdot 10^{14}\,\text{Hz}$ $= 1{,}58 \cdot 10^{14}\,\text{Hz}$.
+**Sijoitus:** $h_\text{max}$ $= 1{,}602 \cdot 10^{-19}\,\text{C} \cdot \dfrac{0{,}87\,\text{V}}{1{,}89 \cdot 10^{14}\,\text{Hz}}$ $\approx 7{,}4 \cdot 10^{-34}\,\text{J}\,\text{s}$ ja $h_\text{min}$ $= 1{,}602 \cdot 10^{-19}\,\text{C} \cdot \dfrac{0{,}61\,\text{V}}{1{,}58 \cdot 10^{14}\,\text{Hz}}$ $\approx 6{,}2 \cdot 10^{-34}\,\text{J}\,\text{s}$, joten $\Delta h = \dfrac{7{,}4 - 6{,}2}{2} \cdot 10^{-34}\,\text{J}\,\text{s}$ $\approx 0{,}6 \cdot 10^{-34}\,\text{J}\,\text{s}$
 **Vastaus:** $h = (6{,}8 \pm 0{,}6) \cdot 10^{-34}\,\text{J}\,\text{s}$. Tunnettu arvo $6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ on tällä välillä, joten mittaus on sopusoinnussa tunnetun arvon kanssa.
 **Järkevyys:** Suhteellinen epävarmuus on noin $9\,\%$, mikä sopii viiden pisteen mittaukseen, jossa jokaisella jännitteellä on epävarmuus $\pm 0{,}05\,\text{V}$ eli $2$–$3\,\%$ lukemasta.
 
@@ -293,7 +293,7 @@
 **Periaate:** Sidosenergia on energia, joka vapautuu, kun ydin muodostuu erillisistä nukleoneista, eli massavaje kerrottuna $c^2$:lla. Atomimassoilla vetyatomien massa $m_\text{H}$ huomioi elektronit.
 **Kaava:** $E_\text{s} = (Zm_\text{H} + Nm_\text{n} - m_\text{atomi})\,c^2$
 **Muunnokset:** Massavaje lasketaan atomimassayksiköissä, ja $1\,\text{u} \cdot c^2 = 931{,}5\,\text{MeV}$.
-**Sijoitus:** $\Delta m = 2 \cdot 1{,}007825\,\text{u} + 2 \cdot 1{,}008665\,\text{u} - 4{,}002603\,\text{u} = 0{,}030377\,\text{u}$, joten $E_\text{s} = 0{,}030377 \cdot 931{,}5\,\text{MeV} \approx 28{,}3\,\text{MeV}$ ja nukleonia kohti $\tfrac{28{,}3\,\text{MeV}}{4} \approx 7{,}07\,\text{MeV}$
+**Sijoitus:** $\Delta m = 2 \cdot 1{,}007825\,\text{u}$ $+ 2 \cdot 1{,}008665\,\text{u}$ $- 4{,}002603\,\text{u}$ $= 0{,}030377\,\text{u}$, joten $E_\text{s} = 0{,}030377 \cdot 931{,}5\,\text{MeV} \approx 28{,}3\,\text{MeV}$ ja nukleonia kohti $\tfrac{28{,}3\,\text{MeV}}{4} \approx 7{,}07\,\text{MeV}$
 **Vastaus:** Helium-4:n sidosenergia on noin $28{,}3\,\text{MeV}$ eli noin $7{,}07\,\text{MeV}$ nukleonia kohti.
 **Järkevyys:** Kevyiden ytimien sidosenergia nukleonia kohti on muutaman megaelektronivoltin luokkaa, ja helium-4 on poikkeuksellisen tiukasti sidottu; arvo $7{,}07\,\text{MeV}$ on lähellä rautaytimen arvoa $8{,}8\,\text{MeV}$ mutta sitä pienempi.
 
@@ -305,7 +305,7 @@
 **Muunnokset:** $1\,\text{u} \cdot c^2 = 931{,}5\,\text{MeV}$
 **Sijoitus:** $m_\text{alku} = 2{,}014102\,\text{u} + 3{,}016049\,\text{u} = 5{,}030151\,\text{u}$ ja $m_\text{loppu} = 4{,}002603\,\text{u} + 1{,}008665\,\text{u} = 5{,}011268\,\text{u}$, joten $\Delta m = 0{,}018883\,\text{u}$ ja $Q = 0{,}018883 \cdot 931{,}5\,\text{MeV} \approx 17{,}59\,\text{MeV}$
 **Vastaus:** Yhdessä reaktiossa vapautuu energiaa noin $17{,}6\,\text{MeV}$.
-**Järkevyys:** Sama tulos saadaan sidosenergioista: sidosenergioiden erotus $28{,}30\,\text{MeV} - 2{,}22\,\text{MeV}$ $- 8{,}48\,\text{MeV}$ on $17{,}59\,\text{MeV}$, ja arvo on tunnettu D–T-fuusion energia.
+**Järkevyys:** Sama tulos saadaan sidosenergioista: sidosenergioiden erotus $28{,}30\,\text{MeV} - 2{,}22\,\text{MeV}$ $- 8{,}48\,\text{MeV}$ on noin $17{,}6\,\text{MeV}$, ja arvo on tunnettu D–T-fuusion energia.
 
 ### c)
 **Annettu:** $Q = 17{,}59\,\text{MeV}$, atomimassat, $1\,\text{u} = 1{,}6605 \cdot 10^{-27}\,\text{kg}$, kivihiilen palamislämpö $30\,\text{MJ/kg}$
@@ -313,7 +313,7 @@
 **Periaate:** Yhteen reaktioon kuluu yksi deuterium- ja yksi tritiumatomi. Energia kilogrammaa kohti on reaktion energia jaettuna näiden atomien yhteismassalla.
 **Kaava:** $\dfrac{E}{m} = \dfrac{Q}{m_\text{D} + m_\text{T}}$
 **Muunnokset:** $Q = 17{,}59 \cdot 10^{6} \cdot 1{,}602 \cdot 10^{-19}\,\text{J}$ $= 2{,}818 \cdot 10^{-12}\,\text{J}$ ja massa $m_\text{D} + m_\text{T} = 5{,}030151\,\text{u}$ $= 5{,}030151 \cdot 1{,}6605 \cdot 10^{-27}\,\text{kg}$ $= 8{,}353 \cdot 10^{-27}\,\text{kg}$
-**Sijoitus:** $\dfrac{E}{m} = \dfrac{2{,}818 \cdot 10^{-12}\,\text{J}}{8{,}353 \cdot 10^{-27}\,\text{kg}} \approx 3{,}37 \cdot 10^{14}\,\text{J/kg}$ ja suhde kivihiileen $\dfrac{3{,}37 \cdot 10^{14}\,\text{J/kg}}{30 \cdot 10^{6}\,\text{J/kg}} \approx 1{,}1 \cdot 10^{7}$
+**Sijoitus:** $\dfrac{E}{m}$ $= \dfrac{2{,}818 \cdot 10^{-12}\,\text{J}}{8{,}353 \cdot 10^{-27}\,\text{kg}}$ $\approx 3{,}37 \cdot 10^{14}\,\text{J/kg}$ ja suhde kivihiileen $\dfrac{3{,}37 \cdot 10^{14}\,\text{J/kg}}{30 \cdot 10^{6}\,\text{J/kg}}$ $\approx 1{,}1 \cdot 10^{7}$
 **Vastaus:** Yhdestä kilogrammasta polttoainetta vapautuu noin $3{,}4 \cdot 10^{14}\,\text{J}$, mikä on noin $10^{7}$-kertaisesti kivihiilen palamislämpöön verrattuna.
 **Järkevyys:** Ydinreaktion energia on miljoonia kertoja kemiallisen reaktion energiaa suurempi atomia kohti, ja massan suhde on sama, joten luku $10^{7}$ on uskottava.
 
@@ -339,8 +339,8 @@
 **Kysytty:** fotonin aallonpituus $\lambda$
 **Periaate:** Kun atomi siirtyy ylemmältä energiatasolta alemmalle, se lähettää fotonin, jonka energia on tasojen energiaero. Fotonin energia ja aallonpituus liittyvät yhtälöllä $E = hf = \tfrac{hc}{\lambda}$.
 **Kaava:** $E = E_3 - E_2$ ja $\lambda = \dfrac{hc}{E}$
-**Muunnokset:** $1{,}889\,\text{eV} = 1{,}889 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 3{,}026 \cdot 10^{-19}\,\text{J}$
-**Sijoitus:** $E = -\dfrac{13{,}6\,\text{eV}}{9} - \left(-\dfrac{13{,}6\,\text{eV}}{4}\right) = 1{,}889\,\text{eV}$ ja $\lambda = \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s}}{3{,}026 \cdot 10^{-19}\,\text{J}} \approx 6{,}565 \cdot 10^{-7}\,\text{m}$
+**Muunnokset:** $1{,}889\,\text{eV} = 1{,}889 \cdot 1{,}602 \cdot 10^{-19}\,\text{J}$ $= 3{,}026 \cdot 10^{-19}\,\text{J}$
+**Sijoitus:** $E$ $= -\dfrac{13{,}6\,\text{eV}}{9} - \left(-\dfrac{13{,}6\,\text{eV}}{4}\right)$ $= 1{,}889\,\text{eV}$ ja $\lambda$ $= \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s}}{3{,}026 \cdot 10^{-19}\,\text{J}}$ $\approx 6{,}565 \cdot 10^{-7}\,\text{m}$
 **Vastaus:** Fotonin aallonpituus on noin $656\,\text{nm}$, eli valo on näkyvää punaista valoa.
 **Järkevyys:** Näkyvän valon aallonpituudet ovat $400\text{–}700\,\text{nm}$, ja $656\,\text{nm}$ on vedyn Balmerin sarjan punainen viiva H$\alpha$.
 
@@ -349,8 +349,8 @@
 **Kysytty:** miksi näkyvän valon alueella ei ole absorptioviivoja ja pisin absorboituva aallonpituus
 **Periaate:** Atomi absorboi fotonin vain, jos fotonin energia on täsmälleen jonkin sallitun tasoparin energiaero. Perustilassa olevan atomin pienin mahdollinen energianotto on siirtymä $1 \to 2$.
 **Kaava:** $\lambda = \dfrac{hc}{E_2 - E_1}$
-**Muunnokset:** $E_2 - E_1 = -3{,}4\,\text{eV} + 13{,}6\,\text{eV} = 10{,}2\,\text{eV} = 1{,}634 \cdot 10^{-18}\,\text{J}$
-**Sijoitus:** $\lambda = \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s}}{1{,}634 \cdot 10^{-18}\,\text{J}} \approx 1{,}216 \cdot 10^{-7}\,\text{m}$
+**Muunnokset:** $E_2 - E_1 = -3{,}4\,\text{eV} + 13{,}6\,\text{eV} = 10{,}2\,\text{eV}$ $= 1{,}634 \cdot 10^{-18}\,\text{J}$
+**Sijoitus:** $\lambda$ $= \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s}}{1{,}634 \cdot 10^{-18}\,\text{J}}$ $\approx 1{,}216 \cdot 10^{-7}\,\text{m}$
 **Vastaus:** Perustilassa oleva vety absorboi fotoneja vain, kun fotonin energia on vähintään $10{,}2\,\text{eV}$. Näkyvän valon fotonien energiat ovat noin $1{,}8\text{–}3{,}1\,\text{eV}$, joten ne eivät riitä viemään atomia perustilalta yhdellekään ylemmälle tasolle, eikä kylmään vetykaasuun synny absorptioviivoja näkyvälle alueelle. Pisin absorboituva aallonpituus on noin $122\,\text{nm}$ eli ultravioletti.
 **Järkevyys:** Tulos on Lymanin sarjan ensimmäinen viiva, ultraviolettia. Näkyvät Balmerin viivat vaativat atomin olevan jo virittyneessä tilassa $n = 2$, mikä tapahtuu vasta kuumassa kaasussa.
 
@@ -360,7 +360,7 @@
 **Periaate:** Tilassa $n = 2$ olevan atomin ionisoimiseen tarvitaan energia $\lvert E_2 \rvert$. Jos fotonin energia on suurempi, ylimääräinen energia muuttuu vapautuneen elektronin liike-energiaksi (energian säilyminen).
 **Kaava:** $E_\text{k} = \dfrac{hc}{\lambda} - \lvert E_2 \rvert$
 **Muunnokset:** $\lambda = 200\,\text{nm} = 2{,}00 \cdot 10^{-7}\,\text{m}$ ja $\lvert E_2 \rvert = \dfrac{13{,}6\,\text{eV}}{4} = 3{,}4\,\text{eV}$
-**Sijoitus:** $\dfrac{hc}{\lambda} = \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s}}{2{,}00 \cdot 10^{-7}\,\text{m}} = 9{,}93 \cdot 10^{-19}\,\text{J} = 6{,}20\,\text{eV}$ ja $E_\text{k} = 6{,}20\,\text{eV} - 3{,}4\,\text{eV} = 2{,}8\,\text{eV}$
+**Sijoitus:** $\dfrac{hc}{\lambda}$ $= \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s}}{2{,}00 \cdot 10^{-7}\,\text{m}}$ $= 9{,}93 \cdot 10^{-19}\,\text{J} = 6{,}20\,\text{eV}$ ja $E_\text{k} = 6{,}20\,\text{eV} - 3{,}4\,\text{eV} = 2{,}8\,\text{eV}$
 **Vastaus:** Fotonin energia $6{,}2\,\text{eV}$ on suurempi kuin ionisaatioenergia $3{,}4\,\text{eV}$, joten atomi ionisoituu. Vapautuvan elektronin liike-energia on noin $2{,}8\,\text{eV}$ eli $4{,}5 \cdot 10^{-19}\,\text{J}$.
 **Järkevyys:** Tilan $n = 2$ ionisaatioraja on aallonpituudella $365\,\text{nm}$; $200\,\text{nm}$ on sen alapuolella, joten ionisaatio on mahdollinen.
 
@@ -454,7 +454,7 @@
   <line x1="112" y1="247" x2="442.5" y2="247" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <line x1="112" y1="83" x2="112" y2="83" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="450.5" y="213" width="105" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$(24;\ 2{,}05)$</span></div></foreignObject>
-  <foreignObject x="126" y="49" width="94" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$(0;\ 4{,}78)$</span></div></foreignObject>
+  <foreignObject x="136" y="49" width="94" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$(0;\ 4{,}78)$</span></div></foreignObject>
 </svg>
 
 **Mallivastaus:** Jos vaimeneminen on eksponentiaalista, $R = R_0 e^{-\mu d}$, niin $\ln R = \ln R_0 - \mu d$, joten $\ln R$ on suoraan verrannollinen paksuuteen $d$. Pisteet asettuvat suoralle, ja pienet poikkeamat ovat satunnaisia. Pulssinopeus vaimenee eksponentiaalisesti lyijyn paksuuden kasvaessa.
@@ -476,7 +476,7 @@
 **Periaate:** Sallittu annosnopeus saadaan vuosirajasta ja oleskeluajasta. Ilman suojaa annosnopeus pienenee etäisyyden neliön käänteisluvun mukaan, ja lyijy vaimentaa sen sitten eksponentiaalisesti, kunnes annosnopeus on sallittu.
 **Kaava:** $\dot{H} = \dfrac{\dot{H}_0}{9} e^{-\mu d}$, josta $d = \dfrac{1}{\mu} \ln \dfrac{\dot{H}_0 / 9}{\dot{H}}$
 **Muunnokset:** $1\,\text{mSv} = 1000\,\mu\text{Sv}$
-**Sijoitus:** $\dot{H} = \dfrac{1000\,\mu\text{Sv}}{2000\,\text{h}} = 0{,}5\,\mu\text{Sv/h}$ ja ilman suojaa $\dot{H}_0 / 9 = \dfrac{160\,\mu\text{Sv/h}}{9} = 17{,}8\,\mu\text{Sv/h}$; $d = \dfrac{1}{0{,}1137\,\text{mm}^{-1}} \ln\dfrac{17{,}8}{0{,}5} = \dfrac{3{,}57}{0{,}1137\,\text{mm}^{-1}} \approx 31\,\text{mm}$
+**Sijoitus:** $\dot{H} = \dfrac{1000\,\mu\text{Sv}}{2000\,\text{h}} = 0{,}5\,\mu\text{Sv/h}$ ja ilman suojaa $\dot{H}_0 / 9 = \dfrac{160\,\mu\text{Sv/h}}{9} = 17{,}8\,\mu\text{Sv/h}$; $d = \dfrac{1}{0{,}1137\,\text{mm}^{-1}} \ln\dfrac{17{,}8}{0{,}5}$ $= \dfrac{3{,}57}{0{,}1137\,\text{mm}^{-1}} \approx 31\,\text{mm}$
 **Vastaus:** Tarvitaan noin $31\,\text{mm}$ paksu lyijylevy.
 **Järkevyys:** Tarvittava vaimennus on noin $36$-kertainen, eli vähän yli viisi puoliintumispaksuutta ($2^{5} = 32$): $5 \cdot 6{,}1\,\text{mm} \approx 31\,\text{mm}$.
 
@@ -509,7 +509,7 @@
 **Periaate:** Ytimiä on jäljellä puolet jokaisen puoliintumisajan kuluttua.
 **Kaava:** $\dfrac{N}{N_0} = \left(\dfrac{1}{2}\right)^{t / T_{1/2}}$
 **Muunnokset:** $t = 3{,}0\,\text{h} = 180\,\text{min}$
-**Sijoitus:** $\dfrac{N}{N_0} = \left(\dfrac{1}{2}\right)^{180 / 109{,}8} = 0{,}5^{1{,}64} \approx 0{,}32$
+**Sijoitus:** $\dfrac{N}{N_0} = \left(\dfrac{1}{2}\right)^{180 / 109{,}8} = 0{,}5^{1{,}64}$ $\approx 0{,}32$
 **Vastaus:** Jäljellä on noin $0{,}32$ eli $32\,\%$ ytimistä.
 **Järkevyys:** Aika on $1{,}6$ puoliintumisaikaa, joten osuuden pitää olla $0{,}5$:n ja $0{,}25$:n välillä.
 
@@ -519,7 +519,7 @@
 **Periaate:** Aktiivisuus pienenee samalla tavalla kuin ytimien lukumäärä, puolittuen jokaisen puoliintumisajan kuluessa. Valmistushetken aktiivisuuden täytyy olla suurempi kuin tarvittava.
 **Kaava:** $A = A_0 \left(\tfrac{1}{2}\right)^{t / T_{1/2}}$, josta $A_0 = A \cdot 2^{t / T_{1/2}}$
 **Muunnokset:** $t = 4{,}5\,\text{h} = 270\,\text{min}$
-**Sijoitus:** $A_0 = 280\,\text{MBq} \cdot 2^{270 / 109{,}8} = 280\,\text{MBq} \cdot 2^{2{,}46} \approx 280\,\text{MBq} \cdot 5{,}50 \approx 1540\,\text{MBq}$
+**Sijoitus:** $A_0 = 280\,\text{MBq} \cdot 2^{270 / 109{,}8}$ $= 280\,\text{MBq} \cdot 2^{2{,}46} \approx 280\,\text{MBq} \cdot 5{,}50$ $\approx 1540\,\text{MBq}$
 **Vastaus:** Merkkiainetta on valmistettava noin $1{,}5 \cdot 10^{3}\,\text{MBq}$ eli noin $1{,}5\,\text{GBq}$.
 **Järkevyys:** Aika on $2{,}5$ puoliintumisaikaa, joten aktiivisuus pienenee tekijällä noin $5{,}5$, ja valmistettavan määrän on oltava vastaavasti suurempi.
 
@@ -529,7 +529,7 @@
 **Periaate:** Liikemäärän säilymisen mukaan lähes levossa olevan hiukkaspareen kokonaisliikemäärä on nolla, ja syntyvien fotonien kokonaisliikemäärän täytyy olla nolla. Yksi fotoni ei voi täyttää ehtoa, koska sillä on aina liikemäärä, joten fotoneja on kaksi ja ne lähtevät vastakkaisiin suuntiin. Energian säilymisen mukaan hiukkasten lepoenergia $2m_\text{e}c^2$ jakautuu kahdelle yhtä suurelle fotonille.
 **Kaava:** $E = m_\text{e}c^2$ ja $\lambda = \dfrac{hc}{E}$
 **Muunnokset:** $1\,\text{keV} = 1000 \cdot 1{,}602 \cdot 10^{-19}\,\text{J}$
-**Sijoitus:** $E = 9{,}109 \cdot 10^{-31}\,\text{kg} \cdot (2{,}998 \cdot 10^{8}\,\text{m/s})^2 = 8{,}187 \cdot 10^{-14}\,\text{J} = \dfrac{8{,}187 \cdot 10^{-14}}{1{,}602 \cdot 10^{-16}}\,\text{keV} \approx 511\,\text{keV}$ ja $\lambda = \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s}}{8{,}187 \cdot 10^{-14}\,\text{J}} \approx 2{,}43 \cdot 10^{-12}\,\text{m}$
+**Sijoitus:** $E$ $= 9{,}109 \cdot 10^{-31}\,\text{kg} \cdot (2{,}998 \cdot 10^{8}\,\text{m/s})^2$ $= 8{,}187 \cdot 10^{-14}\,\text{J}$ $= \dfrac{8{,}187 \cdot 10^{-14}}{1{,}602 \cdot 10^{-16}}\,\text{keV}$ $\approx 511\,\text{keV}$ ja $\lambda$ $= \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s}}{8{,}187 \cdot 10^{-14}\,\text{J}}$ $\approx 2{,}43 \cdot 10^{-12}\,\text{m}$
 **Vastaus:** Syntyy kaksi vastakkaisiin suuntiin lähtevää fotonia. Kummankin energia on noin $511\,\text{keV}$ ja aallonpituus noin $2{,}4\,\text{pm}$.
 **Järkevyys:** Elektronin lepoenergia on tunnetusti $0{,}511\,\text{MeV}$. Aallonpituus on gammasäteilylle tyypillinen, noin $\tfrac{1}{40}$ atomin koosta ($0{,}1\,\text{nm}$).
 
@@ -539,7 +539,7 @@
 **Periaate:** Annoskerroin kertoo efektiivisen annoksen jokaista injisoitua megabecquerelia kohti, joten annos on aktiivisuuden ja kertoimen tulo.
 **Kaava:** $H_\text{E} = k \cdot A$
 **Muunnokset:** Ei tarvita; yksiköt supistuvat: $\text{MBq} \cdot \text{mSv/MBq} = \text{mSv}$.
-**Sijoitus:** $H_\text{E} = 0{,}019\,\dfrac{\text{mSv}}{\text{MBq}} \cdot 280\,\text{MBq} = 5{,}32\,\text{mSv}$ ja $\dfrac{5{,}32\,\text{mSv}}{5{,}9\,\text{mSv}} \approx 0{,}90$
+**Sijoitus:** $H_\text{E} = 0{,}019\,\dfrac{\text{mSv}}{\text{MBq}} \cdot 280\,\text{MBq}$ $= 5{,}32\,\text{mSv}$ ja $\dfrac{5{,}32\,\text{mSv}}{5{,}9\,\text{mSv}} \approx 0{,}90$
 **Vastaus:** Efektiivinen annos on noin $5{,}3\,\text{mSv}$, noin $90\,\%$ suomalaisen keskimääräisestä vuosiannoksesta. Tutkimus on perusteltu, jos kuvauksesta saatu diagnostinen hyöty, esimerkiksi syövän löytäminen, on suurempi kuin tästä aiheutuva pieni lisäriski; annos on yksittäisen vuoden luonnon säteilyn kokoluokkaa.
 **Järkevyys:** Lääketieteellisen kuvauksen annos on tyypillisesti muutaman millisievertin luokkaa, joten tulos on uskottava.
 

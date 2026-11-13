@@ -95,7 +95,7 @@ def shield():
     ax.guide(24, B6 + S6 * 24)
     f.line(ax.x0, ax.Y(B6), ax.X(0) + 0.1, ax.Y(B6), MUTED, 1.5)
     f.tex(ax.X(24) + 8, ax.Y(B6 + S6 * 24) - 22, r"(24;\ 2{,}05)", "start", INK, size=20, bg=True)
-    f.tex(ax.X(0) + 14, ax.Y(B6) - 22, r"(0;\ 4{,}78)", "start", INK, size=20, bg=True)
+    f.tex(ax.X(0) + 24, ax.Y(B6) - 22, r"(0;\ 4{,}78)", "start", INK, size=20, bg=True)
     return f.svg()
 
 
