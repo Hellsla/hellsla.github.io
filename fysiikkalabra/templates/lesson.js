@@ -251,11 +251,18 @@
       const file = location.pathname.split('/').pop() || '';
       const h1 = document.querySelector('main h1'), num = document.querySelector('.crumbs .ch-menu > summary .t');
       const mod = ((toc.querySelector('.toc-head span') || {}).textContent || '').trim();
+      // the title as text with its formulas as $TeX$ (KaTeX's text also holds its MathML and annotation: the formula three times)
+      const titleTex = () => {
+        if (!h1) return document.title;
+        const c = h1.cloneNode(true);
+        c.querySelectorAll('.katex').forEach((k) => { const a = k.querySelector('annotation'); k.replaceWith(a ? '$' + a.textContent.trim() + '$' : (k.querySelector('.katex-html') || k).textContent); });
+        return c.textContent.replace(/\s+/g, ' ').trim();
+      };
       const visit = (id) => {
         const k = stages.findIndex((s) => s.t.id === id || s.t.contains(document.getElementById(id)));
         if (k < 0 || !/\.html$/.test(file)) return;
         const label = ((stages[k].a.querySelector('.toc-label') || {}).textContent || '').trim();
-        try { localStorage.setItem('ruukkilabra:viimeisin', JSON.stringify({ pre, file, title: h1 ? h1.textContent.trim() : document.title,
+        try { localStorage.setItem('ruukkilabra:viimeisin', JSON.stringify({ pre, file, title: titleTex(),
           num: [mod, num ? (num.firstChild.textContent || '').trim() : ''].filter(Boolean).join(' · '), stage: stages[k].t.id, label, n: k + 1, of: stages.length, t: Date.now() })); } catch (e) { /* no storage */ }
       };
       onMark = visit; if (current) visit(current);

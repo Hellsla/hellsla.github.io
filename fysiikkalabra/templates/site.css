@@ -669,7 +669,8 @@ form.check output[data-state=close]{color:#7a5a00;font-weight:600}form.check out
 .pad-img-bar[hidden],.pad-img-handle[hidden]{display:none}
 .pad-img-bar .pad-btn{min-height:40px;margin:0}
 .pad-img-handle{position:absolute;z-index:6;width:26px;height:26px;box-sizing:border-box;background:var(--accent);border:3px solid var(--surface);border-radius:50%;cursor:nwse-resize;touch-action:none;box-shadow:0 0 0 1px #0006}
-.pad .rich-text-editor-toolbar-root>div{max-width:100vw;overflow-x:auto;overscroll-behavior-x:contain}   /* Abitti's toolbar is fixed to the top of the window; on a phone it scrolls sideways */
+.pad .rich-text-editor-toolbar-root>div{box-sizing:border-box;width:auto;min-width:0;max-width:100vw;overflow-x:auto;overscroll-behavior-x:contain;contain:layout}   /* Abitti's toolbar is fixed to the top of the window; on a phone it scrolls sideways. Its rows are ~455 px wide: they stay inside this box and never add to the page's width (CI, 360 px, 2026-11-13); selected by Abitti's stable root class, not the generated sc-* names */
+.pad .rich-text-editor-toolbar-root{max-width:100%}
 .pad-tools{display:flex;flex-wrap:wrap;align-items:center;gap:.25rem .8rem;margin-top:.5rem}.pad-tools .pad-copy,.pad-tools .pad-btn{margin:0}
 .pad-status{margin:0;font-size:var(--fs-ui);min-height:1.3em;color:var(--ink-2)}.pad-status[data-state=ok]{color:var(--accent-deep);font-weight:600}.pad-status[data-state=no]{color:#8a3b1a}
 .pad-note{margin:.3rem 0 0;font-size:var(--fs-ui);color:var(--ink-2)}

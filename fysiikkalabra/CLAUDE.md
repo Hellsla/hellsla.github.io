@@ -79,6 +79,35 @@ The teacher must never again have to point out a text wall, a stray figure, cram
 - **Tasks**: the situation first, the question last as its own sentence; feedback, hints and solutions open inside the task's card.
 - **Checks**: `check_layout.py` (in `check_lesson.py` and CI) fails a page with overflow, overlapping blocks, cards out of reading order, a large empty column beside an opened card or a figure, over-long lines, text under 17 px or controls under 40 px, or a heading under the sticky navigation, in every open state; fix the shared component and add a check when a new kind of problem appears (NOTES.md §6). `screenshot.py <id>` gives the captures of the opened states for a look before review.
 
+## Teacher's read-through of FY3 (2026-11-13; every lesson, task, Sovella set and exam from now on)
+The full list with screenshots' context and the work item of each is `docs/audits/fy3-silmailu-2026-11-13.md`. Where a
+rule needs a shared fix that is not merged yet, write new content to the rule anyway and never imitate the old form.
+- **Start from the basic principle and derive.** A balance or equilibrium calculation starts from its basic equation
+  ($Q_\text{luovutettu} = Q_\text{vastaanotettu}$, $\Sigma \overline{F} = \overline{0}$), then the basic laws
+  ($\eta = E_\text{hyöty}/E$, $E = Pt$, $Q = rm$, $Q = cm\Delta T$), then the combined formula. Lesson text, worked
+  examples and the Kaava step of every model solution alike: never open with the combined equation.
+- **Simplify symbolically to the end before substituting** (a factor that cancels, a term that is zero because
+  $T_\text{j} = 0\,{}^\circ\text{C}$); substitute into the last symbolic form, so no step is hidden in the substitution.
+- **Every chain shows what it computes**: its first row starts with the quantity, $C_\text{v} = m_\text{v} c_\text{v} = \ldots$,
+  $\Delta m = Q/r = \ldots$, never a bare numeric expression.
+- **One equation on one row when it fits; equals signs aligned.** Wide screens show `left = right` on one row; each
+  further `=` starts its own row with every `=` in one column; nothing wraps inside a row that fits. Only a phone
+  wraps. The model is fy3-7's worked example, stage 5 (r = Pt/Δm = … = 2 343 750 J/kg). Never split by hand.
+- **One thing per paragraph, in worked-example stages too**: the knowns, a remark and the question each on their own
+  (the question last); no paragraph over about 120 words.
+- **Figures, photos and small tables beside what they explain** on a wide screen (photos with their captions too);
+  two small tables side by side; no empty right column and no tall empty gap around a paragraph next to a figure.
+- **Nothing the reader does not need**: no reminder rows between stages, no provenance badge on example or simulated
+  data (a real source stays as a small source line), no general study advice on a chapter page (it belongs on Näin
+  opiskelet).
+- **Closed boxes for what is read on demand**: Yleinen virhekäsitys and Tiivistelmä open from a closed box; optional
+  extra investigations sit inside Lisää tutkittavaa.
+- **Compact controls**: an experiment's Alkutila / Vakiona / Muutetaan each on its own row; its buttons on one row
+  (rare actions as labelled icons); the self-assessment levels in their colours before a choice, on one row, without
+  empty space.
+- **Long words break at a syllable with a hyphen** (concept cards: "Ominaislämpö-kapasiteetti"), never mid-syllable.
+- **Animation only where it shows what a still cannot**, pausable, still under `prefers-reduced-motion` and in print.
+
 ## Exercise levels
 Level 1 (perustehtävät): one formula or one step of reasoning, values given. Level 2 (soveltavat): two steps, a conversion, a rearrangement, or measured data to work with. Level 3 (haastavat): reasoning, two ideas, modelling, data interpretation or an unfamiliar context, in the spirit of the YO exam's problem solving. None repeats the worked example. The counts are minimums (`curriculum.json` `exercise_levels`, default 5/4/3, and `exercise_total`): **the exercise bank** (teacher 2026-11-04) gives every FY1–FY8 chapter at least 20 exercises, about 8 + 7 + 5 (the topic may shift it), more where extra tasks are pedagogically justified; a module's `exercise_total` is set to 20 when all its chapters have them. Existing exercises, their ids and solutions are kept: new ones are added beside them with the next free ids. Beside the calculations, which stay plentiful, the bank mixes conceptual multiple choice (`"choices"`), justified qualitative answers, experimental design, error analysis and graph reading, and 2–3 **aineistotehtävää** in most chapters, mostly among the level-2 tasks (a table of measurements, `"data"`, or a graph by its figure id: read, fit, judge the model or the uncertainty). `"kind"` names what a task practises (`courses.EXERCISE_KINDS`); `python scripts/exercise_bank.py <COURSE>` reports each chapter's counts and mix; the plan per chapter is `docs/exercise-bank/`.
 

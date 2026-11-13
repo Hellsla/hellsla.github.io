@@ -21,6 +21,32 @@
     return { done, of, finished: of > 0 && done >= of, started: done > 0 };   // opened but nothing done: not started
   };
   const last = (() => { const v = read('ruukkilabra:viimeisin'); return v && typeof v.file === 'string' && /^[\w.-]+\.html$/.test(v.file) && (v.pre || '') === PRE ? v : null; })();
+  // A title is text with its formulas as $TeX$. A record written before 2026-11-13 holds KaTeX's whole text, the formula
+  // three times ("Q=cmΔTQ = cm\Delta TQ=cmΔT"): read as P + X + TeX + X it is mended to P + $TeX$ (never rewritten).
+  const mend = (t) => {
+    t = String(t || '');
+    if (t.includes('$') || !t.includes('\\')) return t;
+    for (let k = Math.floor(t.length / 2); k >= 1; k--) {
+      const x = t.slice(-k), head = t.slice(0, -k), i = head.indexOf(x);
+      if (i < 0) continue;
+      const tex = head.slice(i + k);
+      if (tex.includes('\\') && tex.trim()) return head.slice(0, i) + '$' + tex.trim() + '$';
+    }
+    const c = t.indexOf(':'); return c > 0 ? t.slice(0, c).trim() : t;
+  };
+  const GREEK = { Delta: 'Δ', delta: 'δ', rho: 'ρ', lambda: 'λ', mu: 'μ', alpha: 'α', beta: 'β', omega: 'ω', Omega: 'Ω', pi: 'π', theta: 'θ', varphi: 'φ', sigma: 'σ', eta: 'η', tau: 'τ', cdot: '·', times: '×' };
+  const plain = (t) => t.replace(/\$([^$]*)\$/g, (m, x) => x.replace(/\\([A-Za-z]+)/g, (q, n) => GREEK[n] || n).replace(/(Δ|δ|ρ|λ|μ|α|β|ω|Ω|π|θ|φ|σ|η|τ) (?=[A-Za-z])/g, '$1').replace(/\\[,;: ]/g, ' ').replace(/[{}]/g, '').replace(/[_^]/g, '')).replace(/\s+/g, ' ');
+  // the formulas set in KaTeX where the page has it (module pages), plain text where it has not (the front page)
+  // (jatka.js runs before the KaTeX scripts at the end of a module page, which then set the $TeX$ in <main>; the front page has none)
+  const setTitle = (node) => {
+    const tex = () => { try { window.renderMathInElement(node, { delimiters: [{ left: '$', right: '$', display: false }], throwOnError: false }); } catch (e) { /* the $TeX$ stays */ } };
+    if (window.renderMathInElement) return tex();
+    if (!document.querySelector('ol.ch-cards')) { node.textContent = plain(node.textContent); return; }
+    const late = () => { if (!node.textContent.includes('$')) return; if (window.renderMathInElement) tex(); else node.textContent = plain(node.textContent); };
+    if (document.readyState === 'complete') late(); else window.addEventListener('load', late);
+  };
+  // a tile's title as $TeX$: its rendered formulas back to their TeX
+  const tileTitle = (a) => { const c = a.cloneNode(true); c.querySelectorAll('.katex').forEach((k) => { const n = k.querySelector('annotation'); k.replaceWith(n ? '$' + n.textContent.trim() + '$' : (k.querySelector('.katex-html') || k).textContent); }); return c.textContent.replace(/\s+/g, ' ').trim(); };
   const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
   // Tyhjennä (teacher 2026-11-13): clears this language's progress from this browser after a confirmation: the
   // chapters' stage records (ruukkilabra:<page>, { done, of }) and the chapter opened last (ruukkilabra:viimeisin).
@@ -44,9 +70,9 @@
   // the row: the Jatka button where the label was, the chapter and its stage, Tyhjennä at the other end
   const show = (href, num, title, stage) => {
     const go = el('a', 'resume-go', T.resume || 'Jatka'); go.href = href;
-    if (T.go) go.setAttribute('aria-label', T.go + ': ' + (num ? num + ' · ' : '') + title);
+    if (T.go) go.setAttribute('aria-label', T.go + ': ' + (num ? num + ' · ' : '') + plain(title));
     const text = el('p', 'resume-text');
-    text.append(el('strong', '', (num ? num + ' · ' : '') + title));
+    const strong = el('strong', '', (num ? num + ' · ' : '') + title); text.append(strong); setTitle(strong);
     if (stage) text.append(el('span', 'resume-stage', stage));
     const del = el('button', 'resume-clear', T.clear || 'Tyhjennä'); del.type = 'button';
     if (T.clear_label) del.title = T.clear_label;
@@ -58,7 +84,7 @@
   const tiles = [...document.querySelectorAll('ol.ch-cards li.live:not(.me-tile) .ch-box > a[href]')   /* the module's end tiles (exam, challenge tasks) are not chapters */].map((a) => ({ a, file: a.getAttribute('href'), box: a.closest('.ch-box') }))
     .filter((t) => /^[\w.-]+\.html$/.test(t.file));
   if (!tiles.length) {                       // the front page
-    if (last && last.title) show(last.file, last.num || '', last.title, stageText(last));
+    if (last && last.title) show(last.file, last.num || '', mend(last.title), stageText(last));
     return;
   }
   let pick = null, any = false;
@@ -81,5 +107,5 @@
     const next = tiles.slice(0, from + 1).find((t) => t.s.started && !t.s.finished) || tiles[from + 1];
     if (next) pick = { t: next, stage: next.s.of ? fmt(T.stage, { n: Math.min(next.s.done + 1, next.s.of), of: next.s.of }) : '' };
   }
-  if (pick) show(pick.t.file, pick.t.num != null ? pick.t.num : ((pick.t.box.querySelector('.l-num') || {}).textContent || '').trim(), pick.t.a.textContent.trim(), pick.stage);
+  if (pick) show(pick.t.file, pick.t.num != null ? pick.t.num : ((pick.t.box.querySelector('.l-num') || {}).textContent || '').trim(), tileTitle(pick.t.a), pick.stage);
 })();
