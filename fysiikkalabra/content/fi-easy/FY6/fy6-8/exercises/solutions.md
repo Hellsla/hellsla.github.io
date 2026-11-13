@@ -227,3 +227,15 @@ $$\begin{aligned}
 Johtopäätös: lähdejännite on noin $1{,}55\,\text{V}$ ja sisäinen resistanssi noin $0{,}40\,\Omega$. Pienimmän virran lukema $1{,}51\,\text{V}$ on napajännite, ei lähdejännite. Yhden mittauksen osamäärä, esimerkiksi $1{,}19\,\text{V} : 0{,}90\,\text{A} \approx 1{,}3\,\Omega$, on kuorman resistanssi eikä sisäinen resistanssi. Jos molemmat virheet tehdään, saadaan $1{,}51\,\text{V}$ ja $1{,}3\,\Omega$.
 
 Epävarmuus vaikuttaa myös tulokseen. Jos ääripisteiden lukemat ovat $0{,}01\,\text{V}$ vinossa vastakkaisiin suuntiin, kulmakertoimesta tulee $0{,}30\,\text{V} : 0{,}80\,\text{A} \approx 0{,}38\,\Omega$ tai $0{,}34\,\text{V} : 0{,}80\,\text{A} \approx 0{,}43\,\Omega$. Sisäinen resistanssi on siis noin $0{,}4\,\Omega$.
+
+## fy6-8-L2-09
+**Annettu:** kuvaajan pisteet. Ääripisteet ovat $(50\,\text{A};\ 11\,\text{V})$ ja $(250\,\text{A};\ 7\,\text{V})$. Pisteiden kautta on piirretty suora.
+**Kysytty:** akun sisäinen resistanssi $R_\text{s}$ ohmeina
+**Periaate:** Napajännite on $U = E - R_\text{s} I$. Siksi $(I, U)$-kuvaaja on laskeva suora, ja suoran kulmakerroin on $-R_\text{s}$. Kulmakerroin kertoo, kuinka paljon jännite laskee, kun virta kasvaa. Sisäinen resistanssi lasketaan kulmakertoimesta eikä yhdestä pisteestä. Yhden pisteen $U : I$ olisi ulkoisen kuorman resistanssi, ei akun sisäinen resistanssi.
+**Kuvaajan lukeminen:** Luetaan suoralta kaksi pistettä, jotka ovat kaukana toisistaan ja ruudukon viivojen kohdalla. Virralla $I_1 = 50\,\text{A}$ napajännite on $U_1 = 11\,\text{V}$. Virralla $I_2 = 250\,\text{A}$ napajännite on $U_2 = 7\,\text{V}$.
+**Kaava:** Molemmat pisteet toteuttavat yhtälön $U = E - R_\text{s} I$, eli $U_1 = E - R_\text{s} I_1$ ja $U_2 = E - R_\text{s} I_2$. Vähennetään yhtälöt toisistaan: $U_1 - U_2 = R_\text{s}(I_2 - I_1)$. Tästä
+$$R_\text{s} = \frac{U_1 - U_2}{I_2 - I_1}$$
+**Muunnokset:** Ei tarvita: jännite on voltteina ja virta ampeereina.
+**Sijoitus:** $R_\text{s} = \dfrac{11\,\text{V} - 7\,\text{V}}{250\,\text{A} - 50\,\text{A}} = \dfrac{4\,\text{V}}{200\,\text{A}} = 0{,}020\,\Omega$
+**Vastaus:** $0{,}020\,\Omega$ eli $20\,\text{m}\Omega$. Vastauksessa on kaksi merkitsevää numeroa, koska arvot luetaan ruudukolta.
+**Järkevyys:** Auton akun sisäinen resistanssi on hyvin pieni, jotta akku jaksaa antaa satojen ampeerien virran. Tarkistetaan kolmannella pisteellä $(150\,\text{A};\ 9\,\text{V})$: jännite laskee aina $2\,\text{V}$, kun virta kasvaa $100\,\text{A}$, joten $2\,\text{V} : 100\,\text{A} = 0{,}020\,\Omega$. Lähdejännite olisi $U + R_\text{s} I = 11\,\text{V} + 0{,}020\,\Omega \cdot 50\,\text{A} = 12\,\text{V}$. Se on tavallisen lyijyakun lähdejännite.

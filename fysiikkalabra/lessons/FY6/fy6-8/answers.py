@@ -56,4 +56,5 @@ d6 = [(0.50, 5.56), (1.00, 5.00), (1.50, 4.45), (2.00, 3.91), (2.50, 3.36), (3.0
 k6, b6 = fit(d6)                                          # slope -1,103 ohm (leads included), E = 6,11 V
 a["fy6-8-L3-05"] = round(b6 / (-k6 - 0.30), 1)            # true R_s = 1,10 - 0,30 = 0,80 ohm: I_k = 6,11 V : 0,80 ohm = 7,6 A (the pupil's 5,6 A)
 # L2-08 is multiple choice (data): U at I = 0,10...0,90 A: 1,51/1,43/1,36/1,27/1,19 V; slope (1,51 - 1,19)/0,80 = 0,40 ohm, E = 1,51 + 0,04 = 1,55 V (least squares 1,552 V, 0,400 ohm); no number
+a["fy6-8-L2-09"] = (11 - 7) / (250 - 50)                    # figure fy6-8/ex-graph-car: R_s = (U1 - U2) / (I2 - I1) = 4 V : 200 A = 0,020 ohm
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

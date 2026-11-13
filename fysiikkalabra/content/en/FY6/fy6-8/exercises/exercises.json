@@ -335,6 +335,19 @@
           "feedback": "The drops of the terminal voltage between successive measurements, $0.07$–$0.09\\,\\text{V}$, differ by at most $0.02\\,\\text{V}$. The difference of two drops depends on three or four readings, so its uncertainty is up to $0.04\\,\\text{V}$. The difference fits within the uncertainty of the readings: the points fit one line, and the measurements do not show that the resistance changes."
         }
       ]
+    },
+    {
+      "id": "fy6-8-L2-09",
+      "level": 2,
+      "kind": [
+        "graph",
+        "data"
+      ],
+      "text": "The graph shows the terminal voltage of a car starter battery as a function of the current at five loads of the starter motor (measured points) and a straight line drawn through the points. What is the internal resistance of the battery? Read the values from the graph.",
+      "figure": "fy6-8/ex-graph-car",
+      "answer": 0.02,
+      "unit": "Ω",
+      "tolerance": 0.04
     }
   ],
   "level3": [
