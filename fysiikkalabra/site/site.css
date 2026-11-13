@@ -2194,6 +2194,9 @@ main.kr-team{max-width:68rem}
 .resume-stage{color:var(--ink-2);font-size:var(--fs-ui)}
 .resume-go{display:inline-flex;align-items:center;min-height:44px;padding:0 1.1rem;border-radius:999px;background:var(--accent-deep);color:#fff;font:700 var(--fs-ui) var(--sans);text-decoration:none;white-space:nowrap}
 .resume-go:hover{background:var(--accent)}
+.resume-text{flex:1 1 14rem}
+.resume-clear{margin-left:auto;display:inline-flex;align-items:center;min-height:44px;padding:0 1rem;border:1px solid var(--ink-2);border-radius:999px;background:transparent;color:var(--ink-2);font:600 var(--fs-ui) var(--sans);cursor:pointer;white-space:nowrap}
+.resume-clear:hover{color:var(--ink);border-color:var(--ink-2)}
 main.home>.resume{margin:0 0 1rem}
 .ch-state{text-transform:none;letter-spacing:0;font-weight:700;color:var(--ink-2);white-space:nowrap}
 .ch-state.is-done{color:var(--accent-deep)}

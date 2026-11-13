@@ -5,6 +5,8 @@
      for the chapter opened last if it is one of the page's and not finished, else the first unfinished chapter after
      a started one. Nothing shows before the reader has started a chapter.
    - The front page: the same row for the chapter opened last in this language (ruukkilabra:viimeisin, lesson.js).
+   - The row (teacher 2026-11-13): the Jatka button first, then the chapter and its stage, and Tyhjennä at the other end,
+     which clears the progress of this language after a confirmation.
    Read from this browser only; nothing is sent, and the page is the same without storage or this script. */
 (() => {
   const box = document.getElementById('jatka');
@@ -20,12 +22,36 @@
   };
   const last = (() => { const v = read('ruukkilabra:viimeisin'); return v && typeof v.file === 'string' && /^[\w.-]+\.html$/.test(v.file) && (v.pre || '') === PRE ? v : null; })();
   const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+  // Tyhjennä (teacher 2026-11-13): clears this language's progress from this browser after a confirmation: the
+  // chapters' stage records (ruukkilabra:<page>, { done, of }) and the chapter opened last (ruukkilabra:viimeisin).
+  // The reader's answers, solutions, self-assessment and cards (their own keys) are kept.
+  const clear = () => {
+    if (!window.confirm(T.clear_confirm || 'Tyhjennä eteneminen?')) return;
+    try {
+      const keys = [];
+      for (let i = 0; i < localStorage.length; i++) keys.push(localStorage.key(i));
+      keys.forEach((k) => {
+        if (!k || !k.startsWith('ruukkilabra:' + PRE)) return;
+        const rest = k.slice(('ruukkilabra:' + PRE).length);
+        if (!/^[\w.-]+$/.test(rest) || /^(en|fi-easy|fr|sv)$/.test(rest)) return;   // a page's own record, never a key with ':'
+        const v = read(k);
+        if (v && typeof v === 'object' && Array.isArray(v.done)) localStorage.removeItem(k);
+      });
+      if (last) localStorage.removeItem('ruukkilabra:viimeisin');
+    } catch (e) { /* no storage */ }
+    location.reload();
+  };
+  // the row: the Jatka button where the label was, the chapter and its stage, Tyhjennä at the other end
   const show = (href, num, title, stage) => {
+    const go = el('a', 'resume-go', T.resume || 'Jatka'); go.href = href;
+    if (T.go) go.setAttribute('aria-label', T.go + ': ' + (num ? num + ' · ' : '') + title);
     const text = el('p', 'resume-text');
-    text.append(el('span', 'resume-label', T.resume || 'Jatka'), el('strong', '', (num ? num + ' · ' : '') + title));
+    text.append(el('strong', '', (num ? num + ' · ' : '') + title));
     if (stage) text.append(el('span', 'resume-stage', stage));
-    const go = el('a', 'resume-go', T.go || 'Jatka'); go.href = href;
-    box.replaceChildren(text, go); box.hidden = false;
+    const del = el('button', 'resume-clear', T.clear || 'Tyhjennä'); del.type = 'button';
+    if (T.clear_label) del.title = T.clear_label;
+    del.addEventListener('click', clear);
+    box.replaceChildren(go, text, del); box.hidden = false;
   };
   const stageText = (v) => (v && v.n && v.of ? fmt(T.stage, { n: v.n, of: v.of }) + (v.label ? ' ' + v.label : '') : '');
 
