@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 9b293083aae3919e
-Delta review (Johda itse round 2, 2026-11-12) of the version passed at 7a6acd966cacaa87.
+CONTENT-HASH: 0775225e55ef25bc
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 9b293083aae3919e.
 
 ## Blocking
 (none)
@@ -9,6 +9,4 @@ Delta review (Johda itse round 2, 2026-11-12) of the version passed at 7a6acd966
 (none)
 
 ## Checked
-1. `inquiry.json` [14]: mass $\rho Q\Delta t$ loses $mgh$ in $\Delta t$, so $P_\text{o} = \rho Qgh$ and $P = \eta\rho Qgh$ (kinetic energy of the water assumed small, as stated). Recomputed $3.30\,\text{MW}$.
-2. The en text says the same physics as fi in every changed place; numbers identical.
-3. Judged: `git diff 3ec8cc24` of this unit-language (review/ ignored); nothing else changed.
+Every hunk of the en merge diff (word diff). Exit ticket $E_\text{k}$ and perfectly inelastic $v' = m_1v_1/(m_1+m_2)$; shares $1 - (m_A+m_B)v'^2/(m_Av_A^2)$, $1 - v^2/(2gh)$, $\Delta p/p$; $s_\text{p}/v_0 = t_\text{r} + v_0/(2a)$ so $t_\text{r} = y_1 - kv_1$, $a = 1/(2k)$; $(9/6)^3 = 3.375$; $P'/P = h'/h = 4/3$; pile $\Delta T = NkE_\text{loss}/(cm_\text{t})$. Every changed formula is symbolic before substitution and uses no symbol in a sense that differs from the unit's ```kaavat``` names or notation from #522; the $ and brace balance of each added line is checked; `units.py check` passes; the hash was taken at the start and the end and matches.

@@ -1,11 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 3ee87f93108036ab
-Delta review (Johda itse round 2, 2026-11-12) of the version passed at c0bf01805b448a4f.
+CONTENT-HASH: 0f8592564d0f83bc
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 3ee87f93108036ab.
 
-Blocking
-None.
+## Blocking
+(none)
 
-Polish
-1. Polish: the Esimerkit solutions now derive the removed result in one or two steps from MAFY laws before using it; numbers unchanged, steps are followable for a revising student.
+## Polish
+- Part c/d: $E_0$ is the line's value at $0\,{}^\circ\text{C}$ in both parts, consistent. In the wind-turbine answer $k = 0.30$ is reused for a capacity share while $k$ is a slope elsewhere in the unit; a different letter would be cleaner.
 
-Checked: git diff 3ec8cc24 for this unit and language (unit.md, inquiry.json, figures); fi-easy and en match fi in content.
+## Checked
+Extrapolation formula $E = E_0 + k(T - T_0)$ with the same 230 kWh; part d $T = (E_\text{other} - E_0)/k = 16.5\,{}^\circ\text{C}$ matches the earlier text; wind turbine symbolic average power.
+Read the diff hunks of this unit for how #522 notation and #523 symbolic-first solutions interact: no symbol used with two meanings inside one solution, no duplicated derivation, no contradiction with the unit text, LaTeX balanced, the answer lines still match the substitutions, and the formula still precedes the numbers (CLAUDE.md Lesson form 7). Staging of the worked solutions (Given, Find, Principle, Formula, Conversions, Substitution, Answer, Reasonableness) is intact.

@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: ccddd23e0bb39d09
-Delta review (Johda itse round 2, 2026-11-12) of the version passed at daf3229a457bf979.
+CONTENT-HASH: c909aa8d4fcf4b9e
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at ccddd23e0bb39d09.
 
-Blocking
-None.
+## Blocking
+(none)
 
-Polish
-1. Polish: the Esimerkit solutions now derive the removed result in one or two steps from MAFY laws before using it; numbers unchanged, steps are followable for a revising student.
+## Polish
+(none)
 
-Checked: git diff 3ec8cc24 for this unit and language (unit.md, inquiry.json, figures); fi-easy and en match fi in content.
+## Checked
+Diff only: t = N n t1 stated before substitution; series-battery formulas E1 = E/3, R_s1 = R_s/3; P/(EI) = R/(R+R_s); Pt = Q. Unit-conversion value 436,8 Wh made consistent with Sijoitus.

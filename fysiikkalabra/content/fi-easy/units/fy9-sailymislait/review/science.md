@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 126db917d5bd6620
-Delta review (Johda itse round 2, 2026-11-12) of the version passed at 0f19d28e1a1f4173.
+CONTENT-HASH: 456c89720f6a41c5
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 126db917d5bd6620.
 
 ## Blocking
 (none)
@@ -9,6 +9,4 @@ Delta review (Johda itse round 2, 2026-11-12) of the version passed at 0f19d28e1
 (none)
 
 ## Checked
-1. `inquiry.json` [14]: mass $\rho Q\Delta t$ loses $mgh$ in $\Delta t$, so $P_\text{o} = \rho Qgh$ and $P = \eta\rho Qgh$ (kinetic energy of the water assumed small, as stated). Recomputed $3.30\,\text{MW}$.
-2. The fi-easy text says the same physics as fi in every changed place; numbers identical.
-3. Judged: `git diff 3ec8cc24` of this unit-language (review/ ignored); nothing else changed.
+Every hunk of the fi-easy merge diff for this unit: the new symbolic steps (solving for the asked quantity before numbers) against the existing substitutions, answers and unit formula names/notation of #522; LaTeX balanced. Content hash recomputed with scripts/units.py (matches). Recomputed: exit ticket $E_\text{k} = 0{,}30\,\text{MJ}$, $v' = m_1v_1/(m_1+m_2) = 2{,}0\,\text{m/s}$; loss share $1 - (m_A+m_B)v'^2/(m_Av_A^2) = 41{,}7\,\%$; slide $1 - v^2/(2gh) = 53{,}6\,\%$; $F_\text{ka}/G = 0{,}96$; curling $E_\text{k}'/E_\text{k} = 0{,}852$; $t_\text{r} = y_1 - kv_1 = 0{,}86\,\text{s}$, $a = 6{,}25\,\text{m/s}^2$; $(v_2/v_1)^3 = 3{,}375$; $P'/P = h'/h$; $\Delta p/p = -6{,}3\,\%$; $NkE_\text{h}/(cm_\text{t}) = 7{,}1\,\text{K}$. All symbolic forms are algebraically equal to the earlier ones.

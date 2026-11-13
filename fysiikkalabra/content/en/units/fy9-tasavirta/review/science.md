@@ -1,15 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 5fb97cd3bc0ffb0e
-Delta review (Johda itse round 2, 2026-11-12) of the version passed at 310aaf84e99378ff.
+CONTENT-HASH: 5990f23ea9ddfef8
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 5fb97cd3bc0ffb0e.
 
 ## Blocking
 (none)
 
 ## Polish
-1. The round-1 Polish item (removed results used under Kaava: without a source) is resolved.
+(none)
 
 ## Checked
-1. `inquiry.json` [13] [15] [19] [20]: Kirchhoff's 2nd law $E - R_\text{s}I - RI = 0$ with $U = RI$ gives $U = E - R_\text{s}I$ (the external resistance $R$ is named: starter motor, lamp); $P = UI$ with Ohm's law gives $P = U^2/R$ and $P = RI^2$. Each step holds for an Ohmic resistor, as the unit states.
-2. Recomputed: $R_\text{s} = 16\,\text{m}\Omega$; $l = 7.11\,\text{m}$; $R_\text{s} = 0.60\,\Omega$, $E = 4.58\,\text{V}$ from both measurements; $1322/529\,\Omega$, $0.124\,\text{A}$, $20/8\,\text{W}$. Every number unchanged and right.
-3. The en text says the same physics as fi in every changed place; numbers identical.
-4. Judged: `git diff 3ec8cc24` of this unit-language (review/ ignored); nothing else changed.
+Every hunk of the en merge diff (word diff). $t = Nnt_1$; $W_\text{ch} = 42.0\cdot10.4 = 436.8$ Wh, $\eta = 0.857$, $K = 0.066$ €; series cells $E_1 = E/3$, $R_{s1} = R_s/3$; $P/(EI) = R/(R+R_s)$; $Pt = Q = cm\Delta T$. Every changed formula is symbolic before substitution and uses no symbol in a sense that differs from the unit's ```kaavat``` names or notation from #522; the $ and brace balance of each added line is checked; `units.py check` passes; the hash was taken at the start and the end and matches.

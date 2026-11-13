@@ -1,12 +1,12 @@
 VERDICT: PASS
 CONTENT-HASH: d3680dc9c54e00c7
-Delta review (solution practice, 2026-11-12) of the version passed before.
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at d3680dc9c54e00c7.
 
 ## Blocking
 (none)
 
 ## Polish
-1. `sovella/tasks.json` s2 c: `answer.value` is still 9.81 while the model answer now gives $g \approx 9{,}8\,\text{m/s}^2$ with two figures (the rubric accepts both, tolerance covers both). Fix: set the value to 9.8 so the stored answer matches the solution.
+1. sovella c): the reason for two significant figures, "$0{,}46\,\text{s}^2$ on kahden numeron luku", applies the multiplication rule to a difference: $3{,}68 - 0{,}46 = 3{,}22$ keeps three digits. Two figures are right, but because of the reading uncertainty that the Järkevyys line itself gives ($\pm 0{,}05\,\text{s}^2$ gives $\pm 0{,}3\,\text{m/s}^2$). Suggested: "koska kuvaajalta lukemisen epävarmuus muuttaa tulosta noin $\pm 0{,}3\,\text{m/s}^2$".
 
 ## Checked
-s2 c: $g = 4\pi^2/k$ = 9,808 m/s²; the two-figure reason (reading 0,46 s², ±0,05 s² ⇒ ±0,3 m/s²) is right. The `unit.md` precision sentence (exact quantities never limit precision) is correct. The fi, fi-easy and en diffs carry identical mathematics (every changed formula compared token by token); answers.py run; `units.py check` passes.
+Every hunk of the fi-easy merge diff for this unit: the new symbolic steps (solving for the asked quantity before numbers) against the existing substitutions, answers and unit formula names/notation of #522; LaTeX balanced. Content hash recomputed with scripts/units.py (matches). Recomputed $k = 3{,}22/0{,}800 = 4{,}025\,\text{s}^2/\text{m}$, $g = 9{,}81\,\text{m/s}^2$, range with $\pm 0{,}05\,\text{s}^2$ at each point $9{,}5$...$10{,}1$. unit.md: the new sentence (exact numbers and conversion factors do not limit precision) is correct and agrees with fy9-mittaaminen.

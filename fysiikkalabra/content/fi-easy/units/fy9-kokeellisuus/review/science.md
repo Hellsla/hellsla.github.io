@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 6142a25bf9efaa0c
-Delta review (solution practice, 2026-11-12) of the version passed before.
+CONTENT-HASH: b314995820c7d472
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 6142a25bf9efaa0c.
 
 ## Blocking
 (none)
@@ -9,4 +9,4 @@ Delta review (solution practice, 2026-11-12) of the version passed before.
 (none)
 
 ## Checked
-Earlier Blocking 1 resolved: `sovella/tasks.json` s5 a `units_precision` now awards $\rho \approx 2{,}7 \cdot 10^3\,\text{kg/m}^3$ with the two-figure reason ($V = 70\,\text{cm}^3$) and also accepts 2680 kg/m³, matching the model answer, *Hyväksytään myös* and the answer 2680 ± 2 %. answers.py run: s5-a 2677,1, s5-b 78,0, s6 unchanged (0,4247; 3,779 m/s²; +10,25 %). The fix is the same in fi, fi-easy and en; `units.py check` passes; nothing else changed.
+Every hunk of the fi-easy merge diff for this unit: the new symbolic steps (solving for the asked quantity before numbers) against the existing substitutions, answers and unit formula names/notation of #522; LaTeX balanced. Content hash recomputed with scripts/units.py (matches). Recomputed: $\rho = 187{,}4/70 = 2{,}68\,\text{g/cm}^3$; two significant figures from $V = 70\,\text{cm}^3$, consistent with the b-part $(2680 \pm 80)\,\text{kg/m}^3$; the rubric now accepts both forms. $a = 1/(2k) = 4{,}167\,\text{m/s}^2$, $\mu_0 \ge a/g = 0{,}425$, $a/1{,}1025 = 3{,}78\,\text{m/s}^2$. The written component equations ($\Sigma F_x = F_{\mu0} = ma$, $N = mg$, sign convention stated) are correct.

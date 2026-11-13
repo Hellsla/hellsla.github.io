@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 28ee1741c90a7ebf
+CONTENT-HASH: 380511676da95b96
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 28ee1741c90a7ebf.
 
-Delta review (Johda itse, 2026-11-12) of the version passed at fc3483f5b1affd8c.
+## Blocking
+(none)
 
-Blocking
-None.
+## Polish
+(none)
 
-Polish
-1. unit.md: derivation is clear; no change needed. No Esimerkit solution uses $W=Q_1-Q_2$ undeclared.
-
-Checked
-Model sentence states the situation and quantities; the question says what to derive and from what; the derivation starts from MAFY laws and every step is kept; try-first, Näytä johto order works; the text reads as a coherent review without the removed formulas; the number of Johda itse tasks (see above) is fitting for a review unit. 
+## Checked
+c-kohta ($\eta_\text{l}$) ja lasinosto: kaava symboleissa, luvut vasta Sijoituksessa; 37 kPa ja s = 1,6 tarkistettu; Järkevyys ei enää piilota johtopäätöstä vaan tukee sitä. Compared the diff hunks against the #522 notation and the unit text; no formula name or symbol of #522 is contradicted by a #523 solution, no derivation duplicated, LaTeX in the hunks balanced. Sample solutions now solve the asked quantity in symbols before the numbers (CLAUDE.md Lesson form 7), which supports the learning path.

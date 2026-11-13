@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: b657e7155ea191a7
-Delta review (figure label moved, 2026-11-12) of the version passed at 96879e786dd25506.
+CONTENT-HASH: dc13071f6130e116
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at b657e7155ea191a7.
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-None.
+(none)
 
 ## Checked
-- Diff: one line in `lessons/units/fy9-moderni/figures.py`, figure `pallo`: the label "pallon pinta" / "sphere surface" is now end-anchored 14 px left of the far arc's upper end, at (P(r2, -30)x - 14, P(r2, -30)y + 8). Before, it was start-anchored 10 px to the right of that point and ran past the 530 px figure in English. (An intermediate version at x = 590 was replaced during this review; this report judges the current one.) The unit.md change is only the regenerated SVG of this figure.
-- New label box x 180-350, y 8.5-37.5. The far sphere surface (r_2 = 340, arc -30..30 degrees) ends at (364, 15), so the label ends just left of it and still points to it. Both arcs are sphere surfaces, so the label is right whichever arc a reader takes it for. The near arc (upper end (217, 100)), the r_1 arrow and label (around (141-224, 123-134)), the ray cone (+-10 degrees, top ray ends at y about 122) and the r_2 arrow (+22 degrees, downwards) are all well below it, so nothing overlaps.
-- The physics is the same: two sphere surfaces at r_1 and r_2 = 2 r_1, the same cone meets a patch twice as tall (four times the area), dose rates H_1 and H_2 at the two distances, no numbers and no result formula. The alt text, the other figures, the lesson text, exercises, answers and simulation have not changed.
-- `python3 scripts/units.py hash fy9-moderni --lang fi` is the same at the start and the end of this review.
+- s5 a, refitted from the data in answers.py (net counts): slope $-4.528\cdot10^{-3}$ 1/s, giving $T_{1/2} = 153.1$ s. The fitted line is 5.993 at 0 s and 4.635 at 300 s, as quoted. Without the background the fit gives 157.1 s, as stated. The two-point estimate is 150.8 s, −1.5 %. The answer value 153 s with tolerance 0.04 matches the 147–159 s range in the rubric and in Hyväksytään myös. Part b's "noin 153 s" is consistent.
+- s1 c: 0.0681 mSv, 1.15 %. s2 a: $\lambda = hc/(E_0(1/4-1/9)) = 656.5$ nm. s3 d: $W = -eb = 2.24$ eV and $f_0 = -b/k = 5.43\cdot10^{14}$ Hz with $k = h/e$. s6 b: 1653 kg, 1.51 kg.
+Every number in the changed lines was recomputed with an independent script (scratchpad fy9merge/sci_fi.py); `units.py hash` gave the same value at the start and the end. LaTeX in all added lines has balanced `$` and braces.

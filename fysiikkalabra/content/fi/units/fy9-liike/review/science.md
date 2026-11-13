@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 7ec58540d76c5256
-Delta review (Johda itse round 2, 2026-11-12) of the version passed at 3974eb4c85f36fab.
+CONTENT-HASH: 62a144b4944a81b5
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 7ec58540d76c5256.
 
 ## Blocking
 (none)
@@ -9,5 +9,6 @@ Delta review (Johda itse round 2, 2026-11-12) of the version passed at 3974eb4c8
 (none)
 
 ## Checked
-1. `inquiry.json` [13]: from $\Delta x = v_0t + \tfrac12at^2$ and $v = v_0 + at$ (uniform acceleration stated), substituting $at = v - v_0$ gives $\Delta x = \tfrac{v_0+v}{2}t$; algebra checked. Recomputed $22.5\,\text{m} \approx 23\,\text{m}$.
-2. Judged: `git diff 3ec8cc24` of this unit-language (review/ ignored); nothing else changed.
+- $y_\text{l} = y_{0\text{A}} + v_0^2/(2g) = 8.84$ m, the same as the stepwise substitution.
+- $a_\text{min} = 2x/(t+\Delta t)^2 = 0.741$ and $a_\text{max} = 1.224$ m/s²: the bounds are the right way round.
+Every number in the changed lines was recomputed with an independent script (scratchpad fy9merge/sci_fi.py); `units.py hash` gave the same value at the start and the end. LaTeX in all added lines has balanced `$` and braces.

@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: da59d2b57a4936df
-Delta review (Johda itse round 2, 2026-11-12) of the version passed at 26253389de9a1f4d.
+CONTENT-HASH: 5755edad4011f77c
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at da59d2b57a4936df.
 
-Blocking
-None.
+## Blocking
+(none)
 
-Polish
-1. Polish: the Esimerkit solutions now derive the removed result in one or two steps from MAFY laws before using it; numbers unchanged, steps are followable for a revising student.
+## Polish
+(none)
 
-Checked: git diff 3ec8cc24 for this unit and language (unit.md, inquiry.json, figures); fi-easy and en match fi in content.
+## Checked
+Diff only: transformer c) gives P_h/P = RP/U^2 before substituting; fibre c) names N_j, A_j, beta and keeps the 4 x 0,10 dB in Sijoitus; grating d = 1/N with the unit 'per length' explained, then d = 1 mm/600 in Muunnokset. No contradiction with the #522 formula names.

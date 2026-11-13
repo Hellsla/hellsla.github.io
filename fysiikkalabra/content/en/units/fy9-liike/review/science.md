@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 0462ca982df89864
-Delta review (Johda itse round 2, 2026-11-12) of the version passed at 37680cf38ac85d63.
+CONTENT-HASH: 8e16b09b0e569f61
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 0462ca982df89864.
 
 ## Blocking
 (none)
@@ -9,6 +9,4 @@ Delta review (Johda itse round 2, 2026-11-12) of the version passed at 37680cf38
 (none)
 
 ## Checked
-1. `inquiry.json` [13]: from $\Delta x = v_0t + \tfrac12at^2$ and $v = v_0 + at$ (uniform acceleration stated), substituting $at = v - v_0$ gives $\Delta x = \tfrac{v_0+v}{2}t$; algebra checked. Recomputed $22.5\,\text{m} \approx 23\,\text{m}$.
-2. The en text says the same physics as fi in every changed place; numbers identical.
-3. Judged: `git diff 3ec8cc24` of this unit-language (review/ ignored); nothing else changed.
+Every hunk of the en merge diff (word diff). $y_\text{top} = y_{0A} + v_0^2/(2g)$ follows from $t_\text{top} = v_0/g$; $a_\text{min,max} = 2x/(t \pm \Delta t)^2$ (the longer time gives the smaller acceleration, correct). Every changed formula is symbolic before substitution and uses no symbol in a sense that differs from the unit's ```kaavat``` names or notation from #522; the $ and brace balance of each added line is checked; `units.py check` passes; the hash was taken at the start and the end and matches.

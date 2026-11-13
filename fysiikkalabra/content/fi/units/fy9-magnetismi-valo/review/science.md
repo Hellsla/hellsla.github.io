@@ -1,13 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: e02ff82901bd9b74
-Delta review (Johda itse round 2, 2026-11-12) of the version passed at bfd8f1899cfa56ba.
+CONTENT-HASH: 0944d5d3eb93fbe8
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at e02ff82901bd9b74.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- s2: part a uses $\beta_\text{max}$ for the angle to the fibre axis, and part c now uses $\beta = 10\,\text{dB}$ for the decibel factor in the same task. Writing $10\,\text{dB}$ directly (as in the unit's kaavat) would avoid the clash.
 
 ## Checked
-1. `inquiry.json` [15]: Snell's law at the water–air boundary with $90^\circ$ on the air side gives $\sin\alpha_\text{r} = n_2/n_1$; recomputed $\alpha_\text{r} = 48.75^\circ$, $r = 3.42\,\text{m}$.
-2. Judged: `git diff 3ec8cc24` of this unit-language (review/ ignored); nothing else changed.
+- s1 c: $P_\text{h}/P = RP/U^2 = 0.225$ %, and 843.75 kW at 400 V. $U_1$ and $U_2$ match part a/b's names (generator 400 V, line 20.0 kV).
+- s2 c: $A = aL + N_\text{j}A_\text{j} = 3.48$ dB and $P = 0.897$ mW. s7 grating: $\lambda = \sin(\tan^{-1}(x/L))/(kN)$ gives 533.0 and 532.2 nm.
+Every number in the changed lines was recomputed with an independent script (scratchpad fy9merge/sci_fi.py); `units.py hash` gave the same value at the start and the end. LaTeX in all added lines has balanced `$` and braces.

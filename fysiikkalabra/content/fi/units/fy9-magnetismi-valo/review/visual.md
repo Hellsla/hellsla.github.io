@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: e02ff82901bd9b74
-Delta review (Johda itse round 2, 2026-11-12) of the version passed at bfd8f1899cfa56ba.
+CONTENT-HASH: 0944d5d3eb93fbe8
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at e02ff82901bd9b74.
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-None.
+- fy9-magnetismi-valo/sovella/solutions.md c) Kaava uses U while Annettu now names U_2 and U_1; write U_2 (and U_1) in the formula.
 
-## Checked: only Esimerkit solutions changed (text in inquiry.json, numbers unchanged); no layout or figure change, the unit page builds without overflow. Derivation lines follow the order principle, equation, result.
+## Checked
+Diff only, read in full. `check_latex.py` on the unit: all fragments parse in KaTeX. Transmission-line c), fibre c) with N_j, A_j, beta, grating Kaava: notation consistent. No contradiction between #522 formula names or notation and the #523 solutions found; no duplicated derivation; Finnish and typography (thin spaces, decimal comma, \cdot, colon division, LaTeX units) in the changed lines are correct. No captures made: the changes are text-only solution lines, no figure or layout changed.

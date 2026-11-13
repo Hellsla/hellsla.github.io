@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 55b5738c3399d275
-Delta review (Johda itse round 2, 2026-11-12) of the version passed at 69db5cdd72902e76.
+CONTENT-HASH: b9ac70fd7899fdc9
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 55b5738c3399d275.
 
-Blocking
-None.
+## Blocking
+(none)
 
-Polish
-1. Polish: η = P/(GA) is marked Lisätieto with symbols, units and the perpendicular-light condition; concept map and its aria text match. Solutions [7] [19] derive the removed results in a step. Text still reads coherently.
+## Polish
+(none)
 
-Checked: git diff 3ec8cc24 for this unit and language (unit.md, inquiry.json, figures); fi-easy and en match fi in content.
+## Checked
+Diff only: both edits present together in the electron-speed solution (U = V - V0 and v = sqrt(2e(V - V0)/m)); no duplicated derivation, no contradiction. Charging time solution has s, W0 in symbols; capacitance b) defines C_1.

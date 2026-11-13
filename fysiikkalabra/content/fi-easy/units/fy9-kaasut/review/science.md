@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: dd8b8c17905c3489
-Delta review (Johda itse, 2026-11-12) of the version passed at 73830490b1b3a881.
+CONTENT-HASH: a9cbf30e479be6e0
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at dd8b8c17905c3489.
 
 ## Blocking
 (none)
@@ -9,6 +9,4 @@ Delta review (Johda itse, 2026-11-12) of the version passed at 73830490b1b3a881.
 (none)
 
 ## Checked
-1. Johda itse $W = Q_1 - Q_2$: first law $\Delta U = Q + W$ over a cycle, $\Delta U = 0$ because the gas returns to its state (stated in the model sentence), heat to the gas $Q_1 - Q_2$, work on the gas $-W$; sign convention consistent with the unit's $W = -p\Delta V$. Correct.
-2. Model sentence defines $Q_1$, $W$, $Q_2$ in J. Concept map now shows $\Delta U = Q + W$. The feedback in `inquiry.json` (line 159) using $W = Q_1 - Q_2$ is consistent with the derivation.
-3. Every derivation starts from MAFY laws or a definition stated in the unit; every new symbol is defined with its unit; no removed formula is used as given in `unit.md`. The fi-easy text keeps every step and condition of fi; equations are identical.
+Every hunk of the fi-easy merge diff for this unit: the new symbolic steps (solving for the asked quantity before numbers) against the existing substitutions, answers and unit formula names/notation of #522; LaTeX balanced. Content hash recomputed with scripts/units.py (matches). Recomputed: $\eta_\text{kok} = (174{,}6 + 0{,}75 \cdot 310{,}5)/485{,}1 = 0{,}840$; suction lifter c) $m(g+a) = 792{,}7\,\text{N}$, $\Delta p_\text{m} = 792{,}7/(0{,}30 \cdot 0{,}070\,69) = 37{,}4\,\text{kPa}$, $s = 1{,}61 < 2$; checks $2 \cdot 18{,}7 \approx 37$, $60/18{,}7 = 3{,}2$, $60/11{,}2 = 5{,}4$. The new c-part's model (friction $\le \mu N$, $N = \Delta p A$, upward acceleration) matches b; the conclusion is unchanged.

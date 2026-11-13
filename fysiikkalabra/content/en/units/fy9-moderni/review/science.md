@@ -1,15 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 4a4554bfe169b358
-Delta review (figure label moved, 2026-11-12) of the version passed at 59b9a9f4251795d9.
+CONTENT-HASH: 2b347105827eead3
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 4a4554bfe169b358.
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-None.
+1. s5 a Answer quotes "without subtracting the background the fit would give $157\,\text{s}$" (recomputed: 157.08 s, correct), but answers.py has no key for it (`s5-a-raw` = 154.9 s is the raw two-point value). Adding a key such as `s5-a-raw-fit` would make the number traceable.
 
 ## Checked
-- Diff: one line in `lessons/units/fy9-moderni/figures.py`, figure `pallo`: the label "pallon pinta" / "sphere surface" is now end-anchored 14 px left of the far arc's upper end, at (P(r2, -30)x - 14, P(r2, -30)y + 8). Before, it was start-anchored 10 px to the right of that point and ran past the 530 px figure in English. (An intermediate version at x = 590 was replaced during this review; this report judges the current one.) The unit.md change is only the regenerated SVG of this figure.
-- New label box x 180-350, y 8.5-37.5. The far sphere surface (r_2 = 340, arc -30..30 degrees) ends at (364, 15), so the label ends just left of it and still points to it. Both arcs are sphere surfaces, so the label is right whichever arc a reader takes it for. The near arc (upper end (217, 100)), the r_1 arrow and label (around (141-224, 123-134)), the ray cone (+-10 degrees, top ray ends at y about 122) and the r_2 arrow (+22 degrees, downwards) are all well below it, so nothing overlaps.
-- The physics is the same: two sphere surfaces at r_1 and r_2 = 2 r_1, the same cone meets a patch twice as tall (four times the area), dose rates H_1 and H_2 at the two distances, no numbers and no result formula. The alt text, the other figures, the lesson text, exercises, answers and simulation have not changed.
-- `python3 scripts/units.py hash fy9-moderni --lang en` is the same at the start and the end of this review.
+Every hunk of the en merge diff (word diff). Refit of all 11 background-subtracted points (own numpy fit): slope $-4.528\cdot10^{-3}$ 1/s, intercept 5.993, value 4.635 at 300 s, $T_{1/2} = 153.07$ s; two-endpoint 150.8 s (−1.5 %); raw fit 157.1 s; answers.py run (s5-a 153.1, s5-a-two 150.83, nothing references the removed `s5-a-fit` key); tasks.json value 153 with 4 % tolerance = the stated 147–159 s range, the two-point method accepted. Photoelectric $W = -eb$, $f_0 = -b/k$ with $k = h/e$: 5.43·10¹⁴ Hz; $E_0(1/4 - 1/9)$ form; the Cs and U mass symbols. Every changed formula is symbolic before substitution and uses no symbol in a sense that differs from the unit's ```kaavat``` names or notation from #522; the $ and brace balance of each added line is checked; `units.py check` passes; the hash was taken at the start and the end and matches.

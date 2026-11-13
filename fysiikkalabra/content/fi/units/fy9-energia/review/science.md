@@ -1,13 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 90beeadb37d7835e
-Delta review (Johda itse round 2, 2026-11-12) of the version passed at ad539deba1140d1e.
+CONTENT-HASH: e297d1ba1b8c1dd6
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 90beeadb37d7835e.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- s1 d Periaate writes the line as $E = E_0 + kT$, while c writes $E = E_0 + k(T-T_0)$. This is correct because $T_0 = 0\,{}^\circ\text{C}$, but it could say so ("koska $T_0 = 0\,{}^\circ\text{C}$").
 
 ## Checked
-1. `inquiry.json` [14] hint and solution: from $\eta = P_\text{a}/P_\text{o}$ per stage, $P_\text{a} = \eta_1\eta_2\eta_3\eta_4P_0$, with each stage's output the next one's input. Recomputed $P_0 = 50.8\,\text{kW} \approx 51\,\text{kW}$.
-2. Judged: `git diff 3ec8cc24` of this unit-language (review/ ignored); nothing else changed.
+- s1 c: $E = E_0 + k(T - T_0)$ with $(0\,{}^\circ\text{C}; 93\,\text{kWh})$ gives 230.2 kWh, so 230 kWh. d: $T = (E_\text{muu}-E_0)/k = 16.5\,{}^\circ\text{C}$.
+- s2 a: $P_\text{ka} = kNP_\text{nim} = 0.60$ MW, 5.26 GWh a year, battery 1.7 h.
+Every number in the changed lines was recomputed with an independent script (scratchpad fy9merge/sci_fi.py); `units.py hash` gave the same value at the start and the end. LaTeX in all added lines has balanced `$` and braces.

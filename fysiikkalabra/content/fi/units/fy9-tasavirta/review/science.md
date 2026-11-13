@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: f6eb30bdd7975031
-Delta review (Johda itse round 2, 2026-11-12) of the version passed at 2a82521ac3173fae.
+CONTENT-HASH: f131fb403db2206f
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at f6eb30bdd7975031.
 
 ## Blocking
 (none)
 
 ## Polish
-1. The round-1 Polish item (removed results used under Kaava: without a source) is resolved.
+(none)
 
 ## Checked
-1. `inquiry.json` [13] [15] [19] [20]: Kirchhoff's 2nd law $E - R_\text{s}I - RI = 0$ with $U = RI$ gives $U = E - R_\text{s}I$ (the external resistance $R$ is named: starter motor, lamp); $P = UI$ with Ohm's law gives $P = U^2/R$ and $P = RI^2$. Each step holds for an Ohmic resistor, as the unit states.
-2. Recomputed: $R_\text{s} = 16\,\text{m}\Omega$; $l = 7.11\,\text{m}$; $R_\text{s} = 0.60\,\Omega$, $E = 4.58\,\text{V}$ from both measurements; $1322/529\,\Omega$, $0.124\,\text{A}$, $20/8\,\text{W}$. Every number unchanged and right.
-3. Judged: `git diff 3ec8cc24` of this unit-language (review/ ignored); nothing else changed.
+- inquiry kettle: $t = Nnt_1 = 6.0$ h, 13.2 kWh, 2.09 €. Sovella: $W_\text{lat} = 436.8$ Wh (the 437 → 436.8 conversion fix is right), $\eta = 0.857$, 0.066 €; per cell $E_1 = E/3 = 1.54$ V and $R_{\text{s}1} = 0.244\,\Omega$; lamp share $R/(R+R_\text{s}) = 0.831$; heater 6.40 h.
+Every number in the changed lines was recomputed with an independent script (scratchpad fy9merge/sci_fi.py); `units.py hash` gave the same value at the start and the end. LaTeX in all added lines has balanced `$` and braces.

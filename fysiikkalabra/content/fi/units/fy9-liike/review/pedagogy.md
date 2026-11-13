@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 7ec58540d76c5256
-Delta review (Johda itse round 2, 2026-11-12) of the version passed at 3974eb4c85f36fab.
+CONTENT-HASH: 62a144b4944a81b5
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 7ec58540d76c5256.
 
-Blocking
-None.
+## Blocking
+(none)
 
-Polish
-1. Polish: the Esimerkit solutions now derive the removed result in one or two steps from MAFY laws before using it; numbers unchanged, steps are followable for a revising student.
+## Polish
+(none)
 
-Checked: git diff 3ec8cc24 for this unit and language (unit.md, inquiry.json, figures); fi-easy and en match fi in content.
+## Checked
+Heitto: $y_l = y_0 + v_0^2/2g$ johdettu yhteen; ääriarvot $a_\text{min}$, $a_\text{max}$ esitetty kaavassa ennen lukuja. Compared the diff hunks against the #522 notation and the unit text; no formula name or symbol of #522 is contradicted by a #523 solution, no derivation duplicated, LaTeX in the hunks balanced. Sample solutions now solve the asked quantity in symbols before the numbers (CLAUDE.md Lesson form 7), which supports the learning path.

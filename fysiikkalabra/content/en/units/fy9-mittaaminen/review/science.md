@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: c1bdc8faf7226de3
-Delta review (solution practice, 2026-11-12) of the version passed before.
+CONTENT-HASH: 27d2f4575e83302f
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at c1bdc8faf7226de3.
 
 ## Blocking
 (none)
@@ -9,4 +9,4 @@ Delta review (solution practice, 2026-11-12) of the version passed before.
 (none)
 
 ## Checked
-s2 c ($\rho = \sigma/d$ with area $A$ cancelling: 782,8 kg/m³), s3 e (±1,3 % from d ⇒ (1,38 ± 0,02) kg), s4 b ($m = m_\text{lukema}/k$ = 750 g), s4 c ($m_\text{lukema} \propto m_\text{punnus}$, $k$ ≈ 1,02, fit $b$ ≈ 0), s5 model answer; `unit.md` precision sentence correct. The fi, fi-easy and en diffs carry identical mathematics (every changed formula compared token by token); answers.py run; `units.py check` passes.
+Every hunk of the en merge diff (word diff). $\rho = \sigma A/(Ad) = \sigma/d$; $(1.38 \pm 0.02)$ kg from 1.3 % (part d: $0.012:0.919$); scale factor $m = m_\text{reading}/k$, 765/1.02 = 750 g; $x = vt + x_0$; unit.md sig-fig rule (exact quantities do not limit) correct. Every changed formula is symbolic before substitution and uses no symbol in a sense that differs from the unit's ```kaavat``` names or notation from #522; the $ and brace balance of each added line is checked; `units.py check` passes; the hash was taken at the start and the end and matches.

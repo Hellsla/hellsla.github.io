@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 55b5738c3399d275
-Delta review (Johda itse round 2, 2026-11-12) of the version passed at 69db5cdd72902e76.
+CONTENT-HASH: b9ac70fd7899fdc9
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 55b5738c3399d275.
 
 ## Blocking
 (none)
@@ -9,7 +9,4 @@ Delta review (Johda itse round 2, 2026-11-12) of the version passed at 69db5cdd7
 (none)
 
 ## Checked
-1. `unit.md`: $\eta = P/(GA)$ is a Lisätieto row; $\eta$, $P$ (maximum power point), $G$ (W/m²), $A$ defined with units; the perpendicular-light condition is stated. The removed Johda itse leaves no reference; the concept map (`figures.py`, `figures.json`, aria-label) now shows $P/(GA)$ in place of $P_\text{a}/P_\text{o}$, consistent with the table.
-2. `inquiry.json` [7]: work $W = eU$ to kinetic energy from rest; recomputed $7.26\cdot10^6\,\text{m/s}$. [19]: $U = Ed$ in a uniform field with $E = E_\text{max}$, then $\tfrac12CU^2$; recomputed $320\,\text{V}$, $0.113\,\text{J}$.
-3. The fi-easy text says the same physics as fi in every changed place; numbers identical.
-4. Judged: `git diff 3ec8cc24` of this unit-language (review/ ignored); nothing else changed.
+Every hunk of the fi-easy merge diff for this unit: the new symbolic steps (solving for the asked quantity before numbers) against the existing substitutions, answers and unit formula names/notation of #522; LaTeX balanced. Content hash recomputed with scripts/units.py (matches). The merged solution: $U = V - V_0$ (positive, the electron moves toward higher potential, so its potential energy falls by $eU$), work-energy $\tfrac12 mv^2 = eU$, $v = \sqrt{2e(V - V_0)/m} = 7{,}26 \cdot 10^6\,\text{m/s}$. Periaate, Kaava and Sijoitus agree; no duplicated derivation. Charging $t = sW_0/(3\eta UI) = 3{,}86\,\text{h}$; intercept $b = 93 - 353{,}8 \cdot 0{,}20 = 22{,}2\,\text{pF}$.

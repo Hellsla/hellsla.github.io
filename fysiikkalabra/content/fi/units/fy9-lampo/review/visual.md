@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 54fa624a843aa99a
-
-Delta review (solution practice, 2026-11-12) of the version passed before.
+CONTENT-HASH: 4217f2037e77873f
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 54fa624a843aa99a.
 
 ## Blocking
-None. Built fy9-lampo (fi) with ?ratkaisut=1, every details element opened, at 390 and 1280 px. No .katex-error, no script errors; the changed Sijoitus, Kaava and Vastaus lines render with upright subscripts and units, thin spaces and \cdot (no x, no \times); decimal comma in fi and fi-easy, decimal point in en; the new symbol definitions ("missä ...") read naturally and the sentences are in the right language.
+(none)
 
 ## Polish
-1. Page-level horizontal overflow at 390 px when all details are open (45 px): long inline-math Sijoitus or answer lines in .reveal or .answer blocks do not wrap or scroll. Verified in the previous version (git 761b6673) for energia, voimat, sahkokentta and mittaaminen, so it is not a regression of this change (mittaaminen is about 40 px wider now). Fix when convenient: break such a substitution into a display line (\begin{aligned}) or let .reveal/.answer have overflow-x:auto.
+- fy9-lampo: k is the fraction 85 % in s6 but the slope in the other task of the same unit; harmless (separate tasks), but a different letter (eta_l) would match fy9-kaasut.
+
+## Checked
+Diff only, read in full. `check_latex.py` on the unit: all fragments parse in KaTeX. k_h, ell, p, P_1/Dm_1, P/(P - P_h) in inquiry and sovella; units and fractions render. No contradiction between #522 formula names or notation and the #523 solutions found; no duplicated derivation; Finnish and typography (thin spaces, decimal comma, \cdot, colon division, LaTeX units) in the changed lines are correct. No captures made: the changes are text-only solution lines, no figure or layout changed.

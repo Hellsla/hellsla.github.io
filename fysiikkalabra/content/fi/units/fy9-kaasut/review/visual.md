@@ -1,17 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 28ee1741c90a7ebf
-
-Delta review (Johda itse, 2026-11-12) of the version passed at fc3483f5b1affd8c.
+CONTENT-HASH: 380511676da95b96
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 28ee1741c90a7ebf.
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-1. figures (new figure of the Johda itse task), 390 px: the small captions (e.g. "paristo"/"battery" in the circuit, the sector labels) are close to the minimum legible size; optional: one size step larger.
-2. The Johda itse box: sticky header may cover the box top when scrolled; not a defect of the content.
+- fy9-kaasut/sovella/solutions.md vacuum-lifter c): the wet-friction coefficient is mu_m while m is also the mass; consider mu_w-free alternative only if readers confuse them (taste).
 
 ## Checked
-Built fy9-kaasut; Johda itse boxes (closed and open) at 390 and 1280 px in fi: no page or box horizontal overflow, no KaTeX errors, display equations fit a phone, subscripts upright, $\cdot$ and fractions render. New figures opened at 390 px (palette, strokes, FY4 colours force red, velocity blue, acceleration orange, labels not overlapping, LaTeX labels). Language of the new sentences read in the rendered boxes; no plain numbers with units found in the new fences.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+Diff only, read in full. `check_latex.py` on the unit: all fragments parse in KaTeX. eta_l in c) of CHP task and the full symbolic vacuum-lifter solution (Annettu, Kaava, Sijoitus, Mallivastaus, Jarkevyys in order). No contradiction between #522 formula names or notation and the #523 solutions found; no duplicated derivation; Finnish and typography (thin spaces, decimal comma, \cdot, colon division, LaTeX units) in the changed lines are correct. No captures made: the changes are text-only solution lines, no figure or layout changed.

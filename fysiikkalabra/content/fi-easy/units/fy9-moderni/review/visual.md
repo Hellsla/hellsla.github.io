@@ -1,6 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: a2a70e8ed2bea0c2
+CONTENT-HASH: 9ceb9eb8dad8fabb
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at a2a70e8ed2bea0c2.
 
-Delta review (figure label moved, 2026-11-12) of the version passed at c5542762a38c76e6.
+## Blocking
+(none)
 
-- Figure `pallo` opened at 390 and 1280 px: the label "pallon pinta" / "sphere surface" now stands left of the outer arc's upper end; whole text visible, no overlap with arcs, rays or labels. Nothing else changed.
+## Polish
+(none)
+
+## Checked
+Read every added line of the merge diff for this unit (fi-easy). check_latex.py on the unit: all fragments ok. Symbols introduced by the symbolic solutions (Annettu/Kaava/Sijoitus) compared with the unit text and neighbouring solutions: no clash with #522 formula names or notation found; no derivation duplicated; order principle, symbolic formula, substitution, result kept; units upright with thin space, decimal comma, no plain numbers with units in the added text. No capture built (source judged sufficient for these text-only changes).

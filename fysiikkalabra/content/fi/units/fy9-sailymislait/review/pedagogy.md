@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 513af1e7527c82c5
-Delta review (Johda itse round 2, 2026-11-12) of the version passed at 934b7e5ddc1500e4.
+CONTENT-HASH: c744b5e13b28d510
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 513af1e7527c82c5.
 
-Blocking
-None.
+## Blocking
+(none)
 
-Polish
-1. Polish: the Esimerkit solutions now derive the removed result in one or two steps from MAFY laws before using it; numbers unchanged, steps are followable for a revising student.
+## Polish
+(none)
 
-Checked: git diff 3ec8cc24 for this unit and language (unit.md, inquiry.json, figures); fi-easy and en match fi in content.
+## Checked
+Exit ticket -vastaukset: kaava ennen lukuja; törmäysosuudet ja suhteet johdettu symboleissa ($1 - v^2/2gh$, osuus $E_k'/E_k$); impulssi, tuulivoima kuutioon, vesivoima, $N k E_\text{h}$ ja $y$-$v$-kuvaajan pisteet ($y = s_p/v_0$) määritelty. Compared the diff hunks against the #522 notation and the unit text; no formula name or symbol of #522 is contradicted by a #523 solution, no derivation duplicated, LaTeX in the hunks balanced. Sample solutions now solve the asked quantity in symbols before the numbers (CLAUDE.md Lesson form 7), which supports the learning path.

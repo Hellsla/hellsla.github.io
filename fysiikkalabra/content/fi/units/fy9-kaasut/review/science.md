@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 28ee1741c90a7ebf
-Delta review (Johda itse, 2026-11-12) of the version passed at fc3483f5b1affd8c.
+CONTENT-HASH: 380511676da95b96
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 28ee1741c90a7ebf.
 
 ## Blocking
 (none)
@@ -9,6 +9,6 @@ Delta review (Johda itse, 2026-11-12) of the version passed at fc3483f5b1affd8c.
 (none)
 
 ## Checked
-1. Johda itse $W = Q_1 - Q_2$: first law $\Delta U = Q + W$ over a cycle, $\Delta U = 0$ because the gas returns to its state (stated in the model sentence), heat to the gas $Q_1 - Q_2$, work on the gas $-W$; sign convention consistent with the unit's $W = -p\Delta V$. Correct.
-2. Model sentence defines $Q_1$, $W$, $Q_2$ in J. Concept map now shows $\Delta U = Q + W$. The feedback in `inquiry.json` (line 159) using $W = Q_1 - Q_2$ is consistent with the derivation.
-3. Every derivation starts from MAFY laws or a definition stated in the unit; every new symbol is defined with its unit; no removed formula is used as given in `unit.md`.
+- s2 c: $\eta_\text{l} = 0.75$ gives $P_\text{l} = 232.9$ kW and $\eta_\text{kok} = 0.840$.
+- s6 c (new structure): $\Delta p_\text{m} = m(g+a)/(\mu_\text{m}A) = 37\,380$ Pa and $s = 1.61$, below 2. This is the same model as part b with $\mu_0 \to \mu_\text{m}$, and the force-ratio requirement in the task equals the pressure ratio because $A$ is the same. The Järkevyys figures (×2, 3.2, 5.4) agree.
+Every number in the changed lines was recomputed with an independent script (scratchpad fy9merge/sci_fi.py); `units.py hash` gave the same value at the start and the end. LaTeX in all added lines has balanced `$` and braces.

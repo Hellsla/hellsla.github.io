@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 513af1e7527c82c5
-Delta review (Johda itse round 2, 2026-11-12) of the version passed at 934b7e5ddc1500e4.
+CONTENT-HASH: c744b5e13b28d510
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 513af1e7527c82c5.
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-None.
+(none)
 
-## Checked: only Esimerkit solutions changed (text in inquiry.json, numbers unchanged); no layout or figure change, the unit page builds without overflow. Derivation lines follow the order principle, equation, result.
+## Checked
+Diff only, read in full. `check_latex.py` on the unit: all fragments parse in KaTeX. Exit ticket, inquiry solutions, sovella Kaava lines (shares, ratios, k, N): consistent. No contradiction between #522 formula names or notation and the #523 solutions found; no duplicated derivation; Finnish and typography (thin spaces, decimal comma, \cdot, colon division, LaTeX units) in the changed lines are correct. No captures made: the changes are text-only solution lines, no figure or layout changed.

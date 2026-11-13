@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 712d63b6ed8c62be
-Delta review (Johda itse round 2, 2026-11-12) of the version passed at 6049e235711b9b44.
+CONTENT-HASH: acdec75ed9fb3544
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 712d63b6ed8c62be.
 
 ## Blocking
 (none)
@@ -9,7 +9,4 @@ Delta review (Johda itse round 2, 2026-11-12) of the version passed at 6049e2357
 (none)
 
 ## Checked
-1. `unit.md`: the first Johda itse ($\Sigma F = ma_\text{n} = mv^2/r$, uniform motion, $m$, $v$, $r$ defined) and the second (flat curve: $N = mg$, friction the only horizontal force, $F_\mu = mv^2/r \le \mu_0 mg$, $v_\text{max} = \sqrt{\mu_0 gr}$) are each complete; the second uses the first's result explicitly. The figure `kaarre` is unchanged and still matches the second task. "Ilmanvastus jätetään huomioimatta" adds the right condition to the free-fall statement.
-2. `inquiry.json` [15] [16]: Newton's 2nd law with $a_\text{n} = v^2/r$; recomputed $27.6\,\text{km/h}$, $v = 7512\,\text{m/s}$, $T = 98.4\,\text{min}$.
-3. The en text says the same physics as fi in every changed place; numbers identical.
-4. Judged: `git diff 3ec8cc24` of this unit-language (review/ ignored); nothing else changed.
+Every hunk of the en merge diff (word diff). Moment equations with symbolic arms ($F r_\text{f}$, $F r_\text{h}$, trailer $m_\text{n} = (m_\text{t}r_\text{t} + m_\text{b}r_\text{b})/r_\text{k}$, $\Delta x = (m_\text{n}r_\text{k} - m_\text{t}r_\text{t} - m_\text{b}r_\text{b})/m_\text{b}$); $q = \gamma M/(gr^2)$; the stick lever arms 30.0, 42.0, 10.0 cm from the stated positions. Every changed formula is symbolic before substitution and uses no symbol in a sense that differs from the unit's ```kaavat``` names or notation from #522; the $ and brace balance of each added line is checked; `units.py check` passes; the hash was taken at the start and the end and matches.

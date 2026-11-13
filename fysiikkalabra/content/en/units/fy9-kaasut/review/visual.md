@@ -1,17 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: cb173dd417c974be
-
-Delta review (Johda itse, 2026-11-12) of the version passed at a689891c9b7cc5f2.
+CONTENT-HASH: 6263b46de4aa9695
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at cb173dd417c974be.
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-1. figures (new figure of the Johda itse task), 390 px: the small captions (e.g. "paristo"/"battery" in the circuit, the sector labels) are close to the minimum legible size; optional: one size step larger.
-2. The Johda itse box: sticky header may cover the box top when scrolled; not a defect of the content.
+(none)
 
 ## Checked
-Built fy9-kaasut; Johda itse boxes (closed and open) at 390 and 1280 px in en: no page or box horizontal overflow, no KaTeX errors, display equations fit a phone, subscripts upright, $\cdot$ and fractions render. New figures opened at 390 px (palette, strokes, FY4 colours force red, velocity blue, acceleration orange, labels not overlapping, LaTeX labels). Language of the new sentences read in the rendered boxes; no plain numbers with units found in the new fences.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+Source-level delta review of the diff (the changes are inline formulas and short text, no figure or layout changes, so no new captures were taken). Looked at: sovella/solutions.md part c of the heat-and-power task ($\eta_\text{h}$) and the rewritten suction-lifter part c (Given, Find, Principle, Formula, Conversions, Substitution, Model answer, Reasonableness; one voice, matches the part a/b style; $\Delta p_\text{l}$, $\Delta p_\text{w}$, $\mu_\text{w}$ notation is consistent). No clash between the #522 notation and the #523 symbols found; no duplicated derivation; every changed line has balanced `$` and braces; units upright with a thin space.

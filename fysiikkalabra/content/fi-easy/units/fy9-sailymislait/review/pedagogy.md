@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 126db917d5bd6620
-Delta review (Johda itse round 2, 2026-11-12) of the version passed at 0f19d28e1a1f4173.
+CONTENT-HASH: 456c89720f6a41c5
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 126db917d5bd6620.
 
-Blocking
-None.
+## Blocking
+(none)
 
-Polish
-1. Polish: the Esimerkit solutions now derive the removed result in one or two steps from MAFY laws before using it; numbers unchanged, steps are followable for a revising student.
+## Polish
+(none)
 
-Checked: git diff 3ec8cc24 for this unit and language (unit.md, inquiry.json, figures); fi-easy and en match fi in content.
+## Checked
+Diff only: exit ticket answers now state E_k = 1/2 mv^2 and m1v1 = (m1+m2)v' before numbers (CLAUDE.md symbolic-first); level and length unchanged. Inquiry and sovella solutions add ratio formulas, y = s_p/v0 reading, symbols N, k for tasks; consistent.

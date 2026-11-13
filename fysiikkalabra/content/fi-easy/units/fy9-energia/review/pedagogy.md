@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: ec7935cf8a9a834b
-Delta review (Johda itse round 2, 2026-11-12) of the version passed at a672526bf1352dd7.
+CONTENT-HASH: db991bf31ee21542
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at ec7935cf8a9a834b.
 
-Blocking
-None.
+## Blocking
+(none)
 
-Polish
-1. Polish: the Esimerkit solutions now derive the removed result in one or two steps from MAFY laws before using it; numbers unchanged, steps are followable for a revising student.
+## Polish
+(none)
 
-Checked: git diff 3ec8cc24 for this unit and language (unit.md, inquiry.json, figures); fi-easy and en match fi in content.
+## Checked
+Diff only: c) uses E = E0 + k(T - T0) with the known point named; d) now solves T = (E_muu - E0)/k in symbols before numbers, consistent with c). Wind-turbine a) gives P_ka, E symbols before numbers. Finnish and level fit.

@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: fe75e179cad98e03
-Delta review (Johda itse round 2, 2026-11-12) of the version passed at 6dc1e347f6304cfb.
+CONTENT-HASH: d0f3db03e34b9122
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at fe75e179cad98e03.
 
-Blocking
-None.
+## Blocking
+(none)
 
-Polish
-1. Polish: the Esimerkit solutions now derive the removed result in one or two steps from MAFY laws before using it; numbers unchanged, steps are followable for a revising student.
+## Polish
+(none)
 
-Checked: git diff 3ec8cc24 for this unit and language (unit.md, inquiry.json, figures); fi-easy and en match fi in content.
+## Checked
+Diff only: y_l = y0 + v0^2/(2g) simplification shown; a_min, a_max formulas added before the numbers. Consistent with substitution values.

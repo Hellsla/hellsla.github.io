@@ -1,12 +1,15 @@
 VERDICT: PASS
 CONTENT-HASH: c47364fb7325d02e
-Delta review (solution practice, 2026-11-12) of the version passed before.
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at c47364fb7325d02e.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- Spring part (line ~734): Kuvaajan lukeminen still writes $m = -\tfrac{b}{\text{kulmakerroin}}$, but the new Kaava names the slope $a$. $-b/a$ would match.
 
 ## Checked
-s3 b ($\varepsilon = v'/v - 1$ = −0,0207 with $v$ = 343,2 m/s from a), s3 c ($\Delta f/f_0 \approx -\alpha\Delta T$ = +2,8·10⁻⁴, condition $|\Delta L| \ll L_0$ stated), s4 c ($P = RI^2$ via Ohm, 114 W), s9 c, s10 b–c ($k = 4\pi^2/a$ = 25,0 N/m; $m_\text{j} = b/a$ = 20,5 g) recomputed. The fi, fi-easy and en diffs carry identical mathematics (every changed formula compared token by token); answers.py run; `units.py check` passes.
+- Organ pipe b: $\varepsilon = v'/v - 1 = -0.0207$ with $v = 343.2$ m/s from part a; $f_1' = 128.3$ Hz. c: $\Delta L = -0.362$ mm and $\Delta f/f_0 \approx -\alpha\Delta T = +2.76\cdot10^{-4}$; the sign is right (a shorter pipe gives a higher frequency) and the small-change condition is stated.
+- Line loss $P_\text{j} = R_\text{j}I^2 = 114$ W. Geotherm $T = 109.3\,{}^\circ\text{C}$. Spring: $k = 4\pi^2/a = 25.0$ N/m and $m_\text{j} = b/a = 20.5$ g.
+- Note: the hash is unchanged although sovella/solutions.md changed, so the hash appears not to cover this file.
+Every number in the changed lines was recomputed with an independent script (scratchpad fy9merge/sci_fi.py); `units.py hash` gave the same value at the start and the end. LaTeX in all added lines has balanced `$` and braces.

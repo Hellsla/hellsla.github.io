@@ -1,15 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 7b3699a510e8acef
-Delta review (Johda itse round 2, 2026-11-12) of the version passed at cb6bf37d9b9841ce.
+CONTENT-HASH: 91df63573f747d28
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 7b3699a510e8acef.
 
 ## Blocking
 (none)
 
 ## Polish
-1. `unit.md`, first Johda itse: it says *keskeiskiihtyvyys* while the theory sentence above says *normaalikiihtyvyys*; one word would keep the term consistent (teacher's call, not an error).
+(none)
 
 ## Checked
-1. `unit.md`: the first Johda itse ($\Sigma F = ma_\text{n} = mv^2/r$, uniform motion, $m$, $v$, $r$ defined) and the second (flat curve: $N = mg$, friction the only horizontal force, $F_\mu = mv^2/r \le \mu_0 mg$, $v_\text{max} = \sqrt{\mu_0 gr}$) are each complete; the second uses the first's result explicitly. The figure `kaarre` is unchanged and still matches the second task. "Ilmanvastus jätetään huomioimatta" adds the right condition to the free-fall statement.
-2. `inquiry.json` [15] [16]: Newton's 2nd law with $a_\text{n} = v^2/r$; recomputed $27.6\,\text{km/h}$, $v = 7512\,\text{m/s}$, $T = 98.4\,\text{min}$.
-3. The fi-easy text says the same physics as fi in every changed place; numbers identical.
-4. Judged: `git diff 3ec8cc24` of this unit-language (review/ ignored); nothing else changed.
+Every hunk of the fi-easy merge diff for this unit: the new symbolic steps (solving for the asked quantity before numbers) against the existing substitutions, answers and unit formula names/notation of #522; LaTeX balanced. Content hash recomputed with scripts/units.py (matches). Recomputed: shovel $F_\text{e} = 142{,}8\,\text{N}$; wheelbarrow $F = mg r_\text{p}/r_\text{k} = 235\,\text{N}$; trailer $F = 444{,}6\,\text{N}$, $m_\text{a} = 45{,}3\,\text{kg}$, $\Delta x = 0{,}111\,\text{m}$; $q = \gamma M/(g r^2) = 0{,}783$; metre stick lever arms $30{,}0$, $42{,}0$, $10{,}0\,\text{cm}$, $m_\text{k} = 114{,}3\,\text{g}$. Moment equations and signs match the stated pivots.
