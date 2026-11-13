@@ -217,3 +217,25 @@ $E_\text{k} \approx 31\,\text{kJ}$
 Vaunu pysähtyisi vasta lähtökorkeudella $20\,\text{m}$.
 
 5 epätosi. Kitka pienentäisi vaunun mekaanista energiaa. Yhtä suuri määrä energiaa siirtyisi kuitenkin radan, pyörien ja ilman sisäenergiaksi. Kokonaisenergia säilyy.
+
+## fy4-8-L2-08
+**Annettu:** kuvaajasta luetut pisteet: $(4{,}0\,\text{m/s};\,4{,}0\,\text{J})$ ja $(6{,}0\,\text{m/s};\,9{,}0\,\text{J})$; $g = 9{,}81\,\text{m/s}^2$; nollataso on maa, joten alussa $E_{\text{p},1} = 0$
+**Kysytty:** korkeus $h$ yksikössä $\text{m}$
+**Periaate:** Palloon vaikuttaa vain paino. Siksi mekaaninen energia säilyy: $E_{\text{k},1} + E_{\text{p},1} = E_{\text{k},2} + E_{\text{p},2}$. Liike-energia vähenee yhtä paljon kuin potentiaalienergia kasvaa. Potentiaalienergiaan tarvitaan pallon massa. Massa saadaan kuvaajan pisteestä.
+**Kuvaajan lukeminen:** Nopeudella $6{,}0\,\text{m/s}$ liike-energia on $E_{\text{k},1} = 9{,}0\,\text{J}$. Nopeudella $4{,}0\,\text{m/s}$ se on $E_{\text{k},2} = 4{,}0\,\text{J}$. Massa: $m = \dfrac{2E_{\text{k}}}{v^2} = \dfrac{2 \cdot 4{,}0\,\text{J}}{(4{,}0\,\text{m/s})^2} = 0{,}50\,\text{kg}$.
+**Kaava:** $E_{\text{k},1} = E_{\text{k},2} + mgh$, joten $h = \dfrac{E_{\text{k},1} - E_{\text{k},2}}{mg}$
+**Muunnokset:** Kaikki suureet ovat SI-yksiköissä. Muunnoksia ei tarvita.
+**Sijoitus:** $h = \dfrac{9{,}0\,\text{J} - 4{,}0\,\text{J}}{0{,}50\,\text{kg} \cdot 9{,}81\,\text{m/s}^2} = \dfrac{5{,}0\,\text{J}}{4{,}905\,\text{N}} = 1{,}02\,\text{m}$
+**Vastaus:** $1{,}0\,\text{m}$. Vastauksessa on kaksi merkitsevää numeroa, koska kuvaajasta luetuissa arvoissa ja nopeuksissa on kaksi.
+**Järkevyys:** Massa supistuu pois: $h = \dfrac{v_1^2 - v_2^2}{2g} = \dfrac{(6{,}0\,\text{m/s})^2 - (4{,}0\,\text{m/s})^2}{2 \cdot 9{,}81\,\text{m/s}^2} = 1{,}02\,\text{m}$. Tulos on sama. Koko nousu nopeudesta $6{,}0\,\text{m/s}$ pysähtymiseen olisi $1{,}8\,\text{m}$. Siksi $1{,}0\,\text{m}$ on osa siitä.
+
+## fy4-8-L2-09
+**Annettu:** kuvasta luetut energiat: alussa $E_{\text{k},1} = 0$ ja $E_{\text{p},1} = 40\,\text{J}$, lopussa $E_{\text{k},2} = 25\,\text{J}$ ja $E_{\text{p},2} = 0$; matka $s = 6{,}0\,\text{m}$
+**Kysytty:** kitkavoiman suuruus $F_\mu$ yksikössä $\text{N}$
+**Periaate:** Tukivoima on kohtisuorassa liikettä vastaan eikä tee työtä. Siksi muu voima on kitka. Energiaperiaate on $E_{\text{k},1} + E_{\text{p},1} + W_\text{muut} = E_{\text{k},2} + E_{\text{p},2}$. Kitka osoittaa liikettä vastaan. Siksi sen työ on negatiivinen, $W_\text{muut} = -F_\mu s$.
+**Kuvaajan lukeminen:** Vihreä palkki ulottuu asteikon $40\,\text{J}$:n viivalle. Sininen palkki ulottuu $25\,\text{J}$:n viivalle. Alussa liike-energiaa ei ole, ja lopussa potentiaalienergiaa ei ole. Kumpikin on siis nolla.
+**Kaava:** $W_\text{muut} = (E_{\text{k},2} + E_{\text{p},2}) - (E_{\text{k},1} + E_{\text{p},1})$ ja $W_\text{muut} = -F_\mu s$, joten $F_\mu = \dfrac{(E_{\text{k},1} + E_{\text{p},1}) - (E_{\text{k},2} + E_{\text{p},2})}{s}$
+**Muunnokset:** $1\,\text{J} = 1\,\text{N}\cdot\text{m}$. Jouleista ja metreistä tulee suoraan newtoneja.
+**Sijoitus:** $W_\text{muut} = 25\,\text{J} - 40\,\text{J} = -15\,\text{J}$, ja $F_\mu = \dfrac{15\,\text{J}}{6{,}0\,\text{m}} = 2{,}5\,\text{N}$
+**Vastaus:** $2{,}5\,\text{N}$. Vastauksessa on kaksi merkitsevää numeroa, koska matkassa $6{,}0\,\text{m}$ on kaksi.
+**Järkevyys:** Mekaaninen energia väheni $15\,\text{J}$. Se on erotus palkkien $40\,\text{J}$ ja $25\,\text{J}$ välillä. Ja $2{,}5\,\text{N} \cdot 6{,}0\,\text{m} = 15\,\text{J}$. Kitkan työ on negatiivinen, koska kitka vastustaa liikettä.

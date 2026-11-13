@@ -215,12 +215,40 @@ def hero():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "pulssit": pulses, "kuvio": pattern, "matkaero": path_difference, "ehdot": conditions, "fourier": fourier}
+def speaker_grid():
+    """Task figure (exercises L2-09, L3-06): two in-phase loudspeakers S1 (at the origin) and S2 (5 squares above S1) and a point P
+    12 squares right of S1 on a grid of 0,50 m: s1 = 6,0 m, s2 = 6,5 m, |Δs| = 0,50 m."""
+    f = Fig("fy512-grid", 330, "Kuva mittakaavassa: ruudukko, jossa yksi ruutu on 0,50 m. Ruudukossa on 14 ruutua vaakasuunnassa ja "
+            "5 ruutua pystysuunnassa. Kaiutin S1 on alhaalla vasemmassa reunassa ja kaiutin S2 samassa pystylinjassa 5 ruutua "
+            "ylempänä. Piste P on S1:n kanssa samalla vaakalinjalla 12 ruutua oikealla. Katkoviivat yhdistävät pisteen P "
+            "kumpaankin kaiuttimeen. Matkoja ei ole merkitty.")
+    sq, x0, ytop = 36, 40, 40
+    xr, yb = x0 + 14 * sq, ytop + 5 * sq
+    f.rect(x0, ytop, 14 * sq, 5 * sq, GLASS, rx=6)
+    for i in range(1, 14):
+        f.line(x0 + i * sq, ytop, x0 + i * sq, yb, RULE_LIGHT, 1.2)
+    for j in range(1, 5):
+        f.line(x0, ytop + j * sq, xr, ytop + j * sq, RULE_LIGHT, 1.2)
+    S1, S2, P = (x0, yb), (x0, ytop), (x0 + 12 * sq, yb)
+    f.line(*P, *S1, INK, 2.5, "8 6")
+    f.line(*P, *S2, INK, 2.5, "8 6")
+    for (x, y), name in ((S1, "S_1"), (S2, "S_2")):
+        f.circle(x, y, 8, INK, WHITE, 2)
+        f.tex(x + 16, y + (-16 if y == ytop else 16), name, "start", w=60)
+    f.circle(*P, 8, WHITE, INK, 3)
+    f.tex(P[0] + 14, P[1] - 18, r"\text{P}", "start", w=40)
+    f.rect(x0, 288, sq, sq * 0.2, INK)
+    f.tex(x0 + sq + 12, 290, r"\text{1 ruutu} = 0{,}50\,\text{m}", "start", w=240)
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "pulssit": pulses, "kuvio": pattern, "matkaero": path_difference, "ehdot": conditions, "fourier": fourier, "ruudukko-tehtava": speaker_grid}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "pulssit": "reveals: pulses add while they overlap and pass through each other unchanged",
     "kuvio": "reveals: antinodal lines at Δs = 0 and λ, nodal lines at λ/2 and 3λ/2 for d = 2λ",
     "matkaero": "safe: geometry of s1, s2 and Δs = s1 − s2 without numbers",
     "ehdot": "reveals: Δs = λ gives double amplitude, Δs = λ/2 gives zero",
+    "ruudukko-tehtava": "safe: loudspeakers S1 and S2 (5 squares apart) and a point P 12 squares from S1 on a 0,50 m grid; no distances marked (REUSE: variant of matkaero with data for exercises L2-09, L3-06)",
     "fourier": "reveals: a near-square wave as the sum of 220, 660 and 1100 Hz sines and its spectrum",
 }

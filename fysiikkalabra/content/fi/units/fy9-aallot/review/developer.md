@@ -87,3 +87,10 @@ Visual (Polish)
 - unit.md: "Ajanhetken kuva ja yhden kohdan kuvaaja sekaisin".
 
 Checks rerun: practice.py figures/check (6 tasks, 95 p), units.py figures/check (ok), build.py fy9-aallot, check_layout 360 and 1280 OK, Playwright at 390 and 1280 with all details open: no console errors, 0 katex-error, no raw `$`, no horizontal scroll; pilli, kartta and s3 graph screenshots inspected.
+
+## Ratkaisutavan tarkistus (2026-11-12)
+- s1 b): Kaava päättyy nyt kysyttyyn suureeseen $d = L - L' = L - v/(2f')$.
+- s3 d): Kaava ratkaisee leikkauskohdan $l_0 = -b/k$ ja pituuden $l$ symbolein.
+- s6 b): Kaavaan lisätty kysytty syvyys $d = L_0 + x$.
+- inquiry `konsertti`: desibelikerroin symbolina $\beta$ (arvo $10\,\text{dB}$ Annettu-rivillä, määritelmä); Kaavassa ei lukuja.
+- fi-easy ja en päivitetty samoin; vastaukset eivät muuttuneet.

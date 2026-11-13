@@ -117,6 +117,27 @@
           "feedback": "Tässä sekunnit on muutettu tunneiksi jakamalla luvulla $60$. Luvulla $60$ jakaminen antaa minuutit. Tunnissa on $3600\\,\\text{s}$, joten tulos on $60$ kertaa liian suuri."
         }
       ]
+    },
+    {
+      "id": "fy5-6-L1-10",
+      "level": 1,
+      "text": "Kuvan vasemmalla puolella on Maan rata Auringon ympäri. Lue kuvasta, mikä on Maan pienin ja suurin etäisyys Auringosta. Laske niiden keskiarvo. Käytä keskiarvoa ympyräradan säteenä. Auringon massa on $1{,}99 \\cdot 10^{30}\\,\\text{kg}$. Laske Maan ratanopeus ympyräradan mallilla. Anna vastaus kilometreinä sekunnissa.",
+      "figure": "fy5-6/radat",
+      "answer": 29.8,
+      "unit": "km/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-6-L1-11",
+      "level": 1,
+      "text": "Luotain kiertää Kuuta lähes ympyrärataa. Luotain on $300\\,\\text{km}$:n korkeudella Kuun pinnasta. Etsi Kuun massa ja säde MAFY-taulukosta (mafytaulukot.fi). MAFY-taulukko on koulun fysiikan taulukkokirja. Laske luotaimen ratanopeus. Anna vastaus kilometreinä sekunnissa.",
+      "lookup": "MAFY",
+      "answer": 1.55,
+      "unit": "km/s",
+      "tolerance": 0.04,
+      "hints": [
+        "Arvot ovat MAFY-taulukossa kohdassa *Aurinkokunta*."
+      ]
     }
   ],
   "level2": [
@@ -248,6 +269,15 @@
       ],
       "answer": 7.45,
       "unit": "km/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-6-L2-08",
+      "level": 2,
+      "text": "Kuvan oikealla puolella on Halleyn komeetan rata Auringon ympäri. Lue kuvasta, mikä on komeetan pienin ja suurin etäisyys Auringosta. Kuvittele, että kappale kiertäisi Aurinkoa ympyrärataa. Radan säde olisi kyseinen etäisyys. Kuinka monta kertaa suurempi olisi ratanopeus pienimmällä etäisyydellä kuin suurimmalla?",
+      "figure": "fy5-6/radat",
+      "answer": 7.72,
+      "unit": "",
       "tolerance": 0.02
     }
   ],

@@ -115,6 +115,18 @@
           "feedback": "Kun ilmanvastus on pieni, kaikki kappaleet putoavat samalla kiihtyvyydellä $g$, joten massa ei kuulu tehtävän laskuun."
         }
       ]
+    },
+    {
+      "id": "fy4-2-L1-09",
+      "level": 1,
+      "text": "Kivi pudotetaan levosta Jupiterissa $20\\,\\text{m}$:n korkeudelta kohti pintaa. Ilmanvastus jätetään huomiotta. Hae putoamiskiihtyvyys Jupiterin pinnalla MAFY-taulukosta (mafytaulukot.fi). Kuinka kauan putoaminen kestää?",
+      "lookup": "MAFY",
+      "answer": 1.2703,
+      "unit": "s",
+      "tolerance": 0.04,
+      "hints": [
+        "Arvo löytyy MAFY-taulukon kohdasta *Aurinkokunta*."
+      ]
     }
   ],
   "level2": [

@@ -32,4 +32,6 @@ a["fy2-7-L3-04"] = E_house / 0.910 / 1000             # plant must send 6,0 MWh 
 E_in = 7 * 18 + 5 * 42 + 7 * 50 + 5 * 66              # energy sent in a day: 126 + 210 + 350 + 330 = 1016 MWh
 E_lo = 0.015 * 7 * 18 + 0.035 * 5 * 42 + 0.042 * 7 * 50 + 0.055 * 5 * 66   # losses 1,89 + 7,35 + 14,70 + 18,15 = 42,09 MWh
 a["fy2-7-L3-05"] = E_lo / E_in * 100                  # 42,09 / 1016 = 4,14 %
+a["fy2-7-L1-09"] = 0.040 * 500 * 3.6                    # loss 4,0 % · 500 kWh = 20 kWh; MAFY (Yksikkömuunnoksia) 1 kWh = 3,6 MJ -> 72 MJ
+a["fy2-7-L2-09"] = 250 * (0.09 - 0.04)                  # shares read off fy2-7/sankey: district heating 9 %, grid 4 %: 22,5 - 10,0 = 12,5 MWh
 print(json.dumps(a))

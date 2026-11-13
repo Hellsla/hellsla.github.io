@@ -139,6 +139,18 @@
           "feedback": "This forgets the unit of temperature. If $c$ were in kilopascals, the product $c\\,T$ would be in the unit $\\text{kPa} \\cdot \\text{K}$. The kelvin must cancel out, so $c$ must have the kelvin as a divisor."
         }
       ]
+    },
+    {
+      "id": "fy3-3-L1-10",
+      "level": 1,
+      "text": "Liquid nitrogen is used to cool gases and materials. Look up the boiling point of nitrogen at normal pressure in the MAFY table (mafytaulukot.fi). What is the temperature of liquid nitrogen in kelvins?",
+      "lookup": "MAFY",
+      "answer": 77.15,
+      "unit": "K",
+      "tolerance": 0.04,
+      "hints": [
+        "The value is in the MAFY table *Aineiden olomuodon muutokset: Kaasut* (changes of state: gases)."
+      ]
     }
   ],
   "level2": [
@@ -307,6 +319,15 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy3-3-L2-08",
+      "level": 2,
+      "text": "The graph shows the pressures of a gas measured at different temperatures in a closed rigid container. Assume that the pressure depends linearly on the temperature. At what temperature is the pressure $90\\,\\text{kPa}$?",
+      "figure": "fy3-3/extrapolation-points",
+      "answer": 54.5,
+      "unit": "°C",
+      "tolerance": 0.04
     }
   ],
   "level3": [

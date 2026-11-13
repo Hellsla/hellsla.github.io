@@ -43,4 +43,7 @@ a["fy5-3-L3-04"] = v_lat(5.2) - v_lat(62.7)              # Kourou 462,7 m/s − 
 N_turns = (58 - 25) / 1.6e-3                             # CD: (58 − 25) mm / 0,0016 mm = 20 625 turns
 s_track = N_turns * 2 * pi * 0.0415                      # N · 2π r_ka, r_ka = 41,5 mm: 5378 m
 a["fy5-3-L3-05"] = s_track / 1.2 / 60                    # t = s / v = 4482 s = 74,7 min -> 75 min
+a["fy5-3-L1-10"] = 2 * pi * 1.80 / 5.0                   # figure: r_B = 1,80 m: v = 2π r / T = 2,262 m/s -> 2,3 m/s
+a["fy5-3-L1-11"] = 2 * pi * 150e6 / (365 * 24 * 3600)    # MAFY: r = 150·10^6 km (Earth-Sun), T = 365 d: v = 29,89 km/s -> 29,9 km/s
+a["fy5-3-L2-08"] = 2 * pi * (20 / 60) * (1.80 - 0.60)    # figure: r_A = 0,60 m, r_B = 1,80 m; f = 20/60 1/s: dv = 2π f (r_B - r_A) = 2,513 m/s -> 2,5 m/s
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

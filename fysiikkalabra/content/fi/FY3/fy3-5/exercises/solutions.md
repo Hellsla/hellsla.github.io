@@ -200,3 +200,24 @@
 $$\begin{aligned} \Delta U &= Q + W \\ &= 0 + 60\,\text{J} = 60\,\text{J} \end{aligned}$$
 
 Väite 1 on tosi, koska sisäenergia kasvaa $60\,\text{J}$. Väite 2 on tosi, koska ilma pysyy kaasuna ja sen sisäenergian kasvu nostaa lämpötilaa. Väite 3 on epätosi: $60\,\text{J}$ on työ, ja lämpö on nolla. Väite 4 on epätosi, koska työ muuttaa sisäenergiaa, vaikka lämpöä ei siirry. Väite 5 on epätosi, koska lämpö on energian siirtymistä eikä ilmassa ole lämpöä: ilmaan on kertynyt sisäenergiaa.
+
+## fy3-5-L1-10
+**Annettu:** lämpömäärä $Q = 2{,}0\,\text{kcal}$ ja työ $W = 3{,}0\,\text{kJ}$; taulukosta (MAFY-taulukko, yksikkömuunnoksia, energia/työ, kalori) $1\,\text{cal} = 4{,}1868\,\text{J}$
+**Kysytty:** sisäenergian muutos $\Delta U$ kilojouleina
+**Periaate:** Energia säilyy, joten $\Delta U = Q + W$. Lämpö siirtyy systeemiin ja ympäristö tekee siihen työtä, joten sekä $Q$ että $W$ ovat positiivisia. Termit pitää antaa samassa yksikössä, joten kalorit muutetaan ensin jouleiksi.
+**Kaava:** $\Delta U = Q + W$ ja $Q = N \cdot 4{,}1868\,\text{J}$, missä $N$ on kalorien lukumäärä
+**Muunnokset:** $2{,}0\,\text{kcal} = 2000\,\text{cal}$ ja $1\,\text{kJ} = 1000\,\text{J}$.
+**Sijoitus:** $Q = 2000 \cdot 4{,}1868\,\text{J} = 8373{,}6\,\text{J} = 8{,}3736\,\text{kJ}$, joten $\Delta U = 8{,}3736\,\text{kJ} + 3{,}0\,\text{kJ} = 11{,}3736\,\text{kJ} \approx 11\,\text{kJ}$
+**Vastaus:** $11\,\text{kJ}$, kaksi merkitsevää numeroa kuten tiedoissa $2{,}0\,\text{kcal}$ ja $3{,}0\,\text{kJ}$. Kalorin arvo $4{,}1868\,\text{J}$ on MAFY-taulukosta; eri taulukoiden arvot poikkeavat hieman, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Järkevyys:** Yksi kilokalori on noin $4{,}2\,\text{kJ}$, joten $2{,}0\,\text{kcal} \approx 8{,}4\,\text{kJ}$. Kun siihen lisätään $3{,}0\,\text{kJ}$, tulos on noin $11{,}4\,\text{kJ}$. Tulos on positiivinen, koska systeemiin tulee energiaa sekä lämpönä että työnä.
+
+## fy3-5-L2-08
+**Annettu:** systeemi on ilma; männän voima ilmaan on kuvaajassa matkan funktiona; lämpöä ei siirry, joten $Q = 0$
+**Kysytty:** ilman sisäenergian kasvu $\Delta U$
+**Periaate:** Energia säilyy, joten $\Delta U = Q + W$. Lämpöä ei siirry, joten $\Delta U = W$. Voima muuttuu matkalla, joten työ on $(s,F)$-kuvaajan ja vaaka-akselin väliin jäävä pinta-ala. Mäntä on ympäristöä, joka tekee työtä ilmaan, joten $W$ on positiivinen.
+**Kuvaajan lukeminen:** Suora alkaa ruudukon risteyksestä $(0\,\text{m};\ 200\,\text{N})$ ja päättyy risteykseen $(0{,}20\,\text{m};\ 400\,\text{N})$. Pinta-ala on puolisuunnikas, jonka yhdensuuntaiset sivut ovat $F_1 = 200\,\text{N}$ ja $F_2 = 400\,\text{N}$ ja korkeus $s = 0{,}20\,\text{m}$.
+**Kaava:** $W = \dfrac{F_1 + F_2}{2}\, s$ ja $\Delta U = Q + W = W$
+**Muunnokset:** Ei tarvita: voima on newtoneina ja matka metreinä, joten $1\,\text{N}\cdot\text{m} = 1\,\text{J}$.
+**Sijoitus:** $W = \dfrac{200\,\text{N} + 400\,\text{N}}{2} \cdot 0{,}20\,\text{m} = 300\,\text{N} \cdot 0{,}20\,\text{m} = 60\,\text{J}$, joten $\Delta U = 0 + 60\,\text{J} = 60\,\text{J}$
+**Vastaus:** $60\,\text{J}$, kaksi merkitsevää numeroa kuten tiedossa $0{,}20\,\text{m}$. Kuvaajan arvot luetaan tarkasti ruudukosta, joten hyväksytään $58{,}2\ldots61{,}8\,\text{J}$.
+**Järkevyys:** Keskimääräinen voima on $300\,\text{N}$, joka on alku- ja loppuvoiman $200\,\text{N}$ ja $400\,\text{N}$ välissä. Koska lämpö ei karkaa, koko työ jää ilman sisäenergiaksi ja ilma lämpenee. Tulos on positiivinen, koska ilmaan tehdään työtä.

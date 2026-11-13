@@ -113,6 +113,18 @@
           "feedback": "Väärin: kun paine on pascaleina, tilavuus sijoitetaan kuutiometreinä. Oppilaan tilavuus $0{,}0020\\,\\text{m}^3$ on oikeassa yksikössä."
         }
       ]
+    },
+    {
+      "id": "fy3-10-L1-09",
+      "level": 1,
+      "text": "Hitsauskaasupullossa on $0{,}500\\,\\text{kg}$ argonia. Argon on jalokaasu. Pullon tilavuus on $10{,}0\\,\\textsf{l}$. Kaasun lämpötila on $293\\,\\text{K}$. Oleta, että argon noudattaa ideaalikaasun tilanyhtälöä. Käytä arvoa $R = 8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$.\n\nHae argonin moolimassa MAFY-taulukosta (mafytaulukot.fi). Moolimassa kertoo, kuinka monta grammaa yksi mooli ainetta painaa. Mikä on kaasun paine pullossa? Anna vastaus megapascaleina.",
+      "lookup": "MAFY",
+      "answer": 3.05,
+      "unit": "MPa",
+      "tolerance": 0.04,
+      "hints": [
+        "Arvo on MAFY-taulukon taulukossa *Alkuaineiden atomimassat ja moolimassat*."
+      ]
     }
   ],
   "level2": [
@@ -325,6 +337,15 @@
           "feedback": "Laskussa on virhe rivillä 4. Rivit 1–3 ovat oikein ja $T \\approx 301\\,\\text{K}$. Celsiusasteina se on $301 - 273 = 28\\,{}^\\circ\\text{C}$. Lisääminen antaisi $574\\,{}^\\circ\\text{C}$, joka ei sovi suljettuun pulloon."
         }
       ]
+    },
+    {
+      "id": "fy3-10-L2-09",
+      "level": 2,
+      "text": "Kuvaajassa on kahden astian, A ja B, kaasun paine lämpötilan funktiona. Astiat ovat suljettuja ja jäykkiä. Niitä lämmitetään. Astian B tilavuus on $2{,}00\\,\\textsf{l}$.\n\nKuinka monta moolia kaasua astiassa B on? Lue tarvittavat arvot kuvaajasta. Käytä arvoa $R = 8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$. Oleta, että kaasu noudattaa ideaalikaasun tilanyhtälöä.",
+      "figure": "fy3-10/pt-suorat",
+      "answer": 0.0361,
+      "unit": "mol",
+      "tolerance": 0.03
     }
   ],
   "level3": [

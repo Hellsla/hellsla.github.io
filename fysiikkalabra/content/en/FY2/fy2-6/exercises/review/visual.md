@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: ce4d78b324133976
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: ff05584a8eb5bd9a
+SCOPE: delta added-exercise from ce4d78b324133976 base c7f5e91173b0
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] solutions.md L2-07 Find: "the emission saved, in carbon dioxide equivalent, from the life-cycle emissions …, in millions of tonnes" is heavy; e.g. "the saving in life-cycle emissions belonging to one year's production, in millions of tonnes of carbon dioxide equivalent".
+- [Minor] L2-08 Reasonableness: "a number of the order of thousands" next to about 1400 reads awkwardly; "of the order of a thousand" is more natural.
+- [Minor] mafytaulukot.fi is plain text (optional).
 
 ## Checked
-- Diff of exercises/exercises.json, exercises/solutions.md (English), changed passages with surrounding paragraph.
-- L2-07 and L3-05 task texts, Find/Kysytty and Answer lines: CO2-equivalent wording consistent, units $\text{g/kWh}$, $\text{TWh}$ in LaTeX; task text paragraphs split by blank lines, no bold.
-- No captures opened (diff judged from source).
+- Opened fy2-6-open-exercises-1280-9.png and fy2-6-open-exercises-L2-1280-10.png (content/en/FY2/fy2-6/review/shots/): L1-10 reworded peat task with hint and answer row; L2-08 solution with the new Reasonableness paragraph (units upright, $3 \cdot 2.30\,\text{GW}$ chain inline); nothing clipped.
+- Delta round 2 at 1280 px only; 390 px captures not opened. Hash unchanged at the end.
+
+## Scores
+illustrations 4 · typography 5 · English 4 · accessibility 4

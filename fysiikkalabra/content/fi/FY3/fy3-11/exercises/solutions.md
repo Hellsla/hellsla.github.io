@@ -252,3 +252,24 @@ Kone A: $\eta_\text{A} = \dfrac{120\,\text{kJ}}{400\,\text{kJ}} = 0{,}30$
 Kone B: $\eta_\text{B} = \dfrac{120\,\text{kJ}}{300\,\text{kJ}} = 0{,}40$
 
 Koneet tekevät saman työn, mutta se ei tee hyötysuhteesta samaa: koneen A $100\,\text{kJ}$ ylimääräinen lämpö ei muutu työksi vaan siirtyy kylmempään ympäristöön ($Q_2 = Q_1 - W$, eli $280\,\text{kJ}$ ja $180\,\text{kJ}$). Pelkkä otetun lämmön suuruus ei myöskään ratkaise, vaan vertailussa tarvitaan osuus $W/Q_1$. Tulos on järkevä: molemmat hyötysuhteet jäävät alle $100\,\%$:n, kuten lämpövoimakoneella pitää.
+
+## fy3-11-L1-09
+**Annettu:** paine $p = 1\,\text{atm}$ vakio, tilavuuden muutos $\Delta V = 2{,}0\,\textsf{l}$; taulukosta (MAFY-taulukko, yksikkömuunnoksia, paine) $1\,\text{atm} = 101\,325\,\text{Pa}$
+**Kysytty:** kaasun tekemä työ $W_\text{k}$ jouleina
+**Periaate:** Paine on vakio, joten kaasun tekemä työ on paineen ja tilavuuden muutoksen tulo. Kaasu laajenee, joten se tekee työtä ympäristöön ja työ on positiivinen.
+**Kaava:** $W_\text{k} = p\,\Delta V$
+**Muunnokset:** $p = 1\,\text{atm} = 101\,325\,\text{Pa}$ ja $\Delta V = 2{,}0\,\textsf{l} = 2{,}0 \cdot 0{,}001\,\text{m}^3 = 0{,}0020\,\text{m}^3$. Silloin $1\,\text{Pa} \cdot 1\,\text{m}^3 = 1\,\text{J}$.
+**Sijoitus:** $W_\text{k} = 101\,325\,\text{Pa} \cdot 0{,}0020\,\text{m}^3 = 202{,}65\,\text{J}$
+**Vastaus:** $W_\text{k} \approx 2{,}0 \cdot 10^{2}\,\text{J}$, kaksi merkitsevää numeroa kuten tilavuudessa $2{,}0\,\textsf{l}$. Muunnos $1\,\text{atm} = 101\,325\,\text{Pa}$ on MAFY-taulukosta (yksikkömuunnoksia); vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Järkevyys:** Karkea arvio: $100\,000\,\text{Pa} \cdot 0{,}002\,\text{m}^3 = 200\,\text{J}$. Kaasun työ on $(V, p)$-kuvaajassa suorakulmion ala, ja se on vakiopaineessa ja laajenemisessa positiivinen. Noin $200\,\text{J}$ riittää nostamaan $2\,\text{kg}$:n kappaleen noin $10\,\text{m}$:n korkeuteen.
+
+## fy3-11-L2-09
+**Annettu:** kuvaajasta luettuna alkutilavuus $V_1 = 1{,}0\,\textsf{l}$ ja lopputilavuus $V_2 = 4{,}0\,\textsf{l}$; poikkipinta-ala $A = 50\,\text{cm}^2$
+**Kysytty:** männän siirtymä $\Delta s$ metreinä
+**Periaate:** Sylinterin poikkipinta-ala on vakio, joten kaasun tilavuus on $V = A s$ ja tilavuuden muutos $\Delta V = A\,\Delta s$. Mäntä siirtyy sitä pidemmän matkan, mitä enemmän tilavuus kasvaa.
+**Kuvaajan lukeminen:** Paine on vakio, joten kuvaaja on vaakasuora jana. Sen alkupää on kohdassa $V_1 = 1{,}0\,\textsf{l}$ ja loppupää kohdassa $V_2 = 4{,}0\,\textsf{l}$. Paineen arvoa ei tarvita, vain tilavuuden muutos $\Delta V = V_2 - V_1$.
+**Kaava:** $\Delta V = V_2 - V_1$ ja $\Delta V = A\,\Delta s$, josta $\Delta s = \dfrac{V_2 - V_1}{A}$
+**Muunnokset:** $V_2 - V_1 = 4{,}0\,\textsf{l} - 1{,}0\,\textsf{l} = 3{,}0\,\textsf{l} = 3{,}0 \cdot 0{,}001\,\text{m}^3 = 0{,}0030\,\text{m}^3$ ja $A = 50\,\text{cm}^2 = 50 \cdot 0{,}0001\,\text{m}^2 = 0{,}0050\,\text{m}^2$.
+**Sijoitus:** $\Delta s = \dfrac{0{,}0030\,\text{m}^3}{0{,}0050\,\text{m}^2} = 0{,}60\,\text{m}$
+**Vastaus:** $\Delta s \approx 0{,}60\,\text{m}$, kaksi merkitsevää numeroa kuten luetuissa tilavuuksissa ja pinta-alassa.
+**Järkevyys:** Alussa kaasupatsaan pituus on $0{,}0010\,\text{m}^3 : 0{,}0050\,\text{m}^2 = 0{,}20\,\text{m}$ ja lopussa $0{,}0040\,\text{m}^3 : 0{,}0050\,\text{m}^2 = 0{,}80\,\text{m}$. Erotus on $0{,}60\,\text{m}$, kuten laskettu.

@@ -44,4 +44,8 @@ s_ka = sum(runs) / len(runs)                              # mean stopping distan
 a["fy4-8-L3-04"] = 70 * g * 6.0 / (45 + s_ka)             # snowboarder: mgh − F(L + s) = 0 → F = mgh/(L + s_ka) = 54,89 N
 H = [1.20, 0.77, 0.49, 0.32, 0.20]
 a["fy4-8-L3-05"] = 100 * sum(H[i + 1] / H[i] for i in range(4)) / 4   # E = mgh at the top; mean retained share 63,9 %
+# Added exercises (figure tasks)
+m_ball = 2 * 4.0 / 4.0 ** 2                                        # pallo-ek: (4,0 m/s; 4,0 J) → m = 2E_k/v² = 0,50 kg
+a["fy4-8-L2-08"] = float(f"{(9.0 - 4.0) / (m_ball * g):.1e}")              # E_k1 = 9,0 J (6,0 m/s), E_k2 = 4,0 J (4,0 m/s): h = ΔE_k/(mg) = 1,02 m
+a["fy4-8-L2-09"] = (40 - 25) / 6.0                                 # palkit-asteikko: W_muut = 25 − 40 = −15 J = −F s → F = 2,5 N
 print(json.dumps(a))

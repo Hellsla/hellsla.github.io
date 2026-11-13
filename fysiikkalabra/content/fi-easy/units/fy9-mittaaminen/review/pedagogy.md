@@ -1,19 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 1f0567f0e6823b02
+CONTENT-HASH: c16231eb9f0d03db
 
-Delta review of the FY9 audit fixes (2026-11-10). Previous PASS hash: 167a7e1ffcb6d0db. The hash was the same at the start and the end of this review.
+Delta review (solution practice, 2026-11-12) of the version passed before.
 
-## Blocking
-None.
+Area A cancelling in rho = sigma/d, the corrected-mass formula m = m_lukema/k and the fit-based slope read (two far points on the fitted line, proportionality written with prop.) are good; the oil-mass answer now justifies its precision by the 1,3 % density uncertainty. Same physics and steps as fi in fi-easy (numbers match fi).
 
-## Polish
-- Criterion 2 ('experiment') quotes the formula with the tau symbols, which the task text does not introduce. Suggest 'mitattu aika on todellinen aika + pysäytysviive - käynnistysviive (sanoin tai kaavalla)' so a verbal answer clearly earns the point.
-- The model answer says the direction cannot be concluded and then 'todennäköisintä on' that the start delay is larger; this is covered by the accepted-alternative line, but the contrast could be one sentence shorter.
-- Older: the task text puts all three timekeepers at the finish, yet they start the watch on seeing the flag; it is unclear how they see it from 100 m (the solution's pistol remark touches this).
-
-## Checked
-- Task d now asks three things (sources, can the direction be concluded, why the mean may not remove it); the 3 points map one to one: error_sources (separate start and stop delays), experiment (t_mitattu formula, direction undetermined, justified estimate accepted when assumption stated), conclusion (systematic part survives the mean, random part usually shrinks).
-- Task text, criteria, model answer, 'Hyväksytään myös' and 'Yleisiä virheitä' agree with each other; the formula t_mitattu = t_tod + tau_p - tau_k is correct and the sign logic (shorter if tau_k > tau_p) is right.
-- Fair to a student: the old one-sided answer (always shorter) no longer earns the middle point unless the assumption is stated, and the task text now asks the question that the criteria reward. A student answering in words without the tau symbols is not required to use them.
-- unit.md 'Kokonaiskuva' softened wording is correct and consistent with the five-step map beside it.
-- fi-easy reading level: short sentences, one idea each; 'viiveiden erotus' is the heaviest phrase and is explained by the formula and the two if-sentences. Acceptable.
+Checked: diff since 761b6673, symbols defined, solved expression equals Sijoitus, answers.py output, tasks.json answer/criteria, cross-language number match.

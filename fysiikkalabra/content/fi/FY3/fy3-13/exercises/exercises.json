@@ -110,6 +110,18 @@
           "feedback": "Oikein. Ekstrapolointi tarkoittaa mittauspisteisiin sovitetun suoran jatkamista mittausalueen ulkopuolelle olettaen, että paineen lineaarinen riippuvuus lämpötilasta pätee myös siellä. Ekstrapoloitu arvo on mallin perusteella tehty arvio, ei suoraan mitattu tulos. Tässä oletetaan, että sama lineaarinen riippuvuus jatkuu myös mittausalueen ulkopuolella."
         }
       ]
+    },
+    {
+      "id": "fy3-13-L1-09",
+      "level": 1,
+      "text": "Absoluuttinen nollapiste on lämpötila, jossa kelvinlämpötila on $0\\,\\text{K}$. Kelvinlämpötila saadaan celsiuslämpötilasta kaavalla $T = \\theta + T_0$, missä $T_0$ on lämpötila $0\\,{}^\\circ\\text{C}$ kelvineinä.\n\nHae MAFY-taulukosta (mafytaulukot.fi) arvo $T_0$. Mikä on absoluuttisen nollapisteen celsiuslämpötila? Vastaa celsiusasteina.",
+      "lookup": "MAFY",
+      "answer": -273.15,
+      "unit": "°C",
+      "tolerance": 0.04,
+      "hints": [
+        "Arvo löytyy MAFY-taulukon taulukosta *Yksikkömuunnoksia*."
+      ]
     }
   ],
   "level2": [
@@ -328,6 +340,24 @@
           "feedback": "Ekstrapolointi esitetty varmana. Lämpötila $-100\\,{}^\\circ\\text{C}$ on $120\\,{}^\\circ\\text{C}$ mittausalueen alapuolella, ja suoran arvo on vain arvio, jonka epävarmuus kasvaa jatkettaessa. Suorana pysyminen siellä on oletus, ei mittaustulos."
         }
       ]
+    },
+    {
+      "id": "fy3-13-L2-09",
+      "level": 2,
+      "text": "Kuvaajassa on suljetussa jäykässä astiassa olevan kaasun paine mitattuna viidessä lämpötilassa. Mittauspisteet ovat suoralla. Lue kuvaajasta kaksi pistettä ja päättele, missä celsiuslämpötilassa suora antaisi paineeksi nollan. Anna vastaus celsiusasteina.",
+      "figure": "fy3-3/extrapolation-points",
+      "answer": -272.727,
+      "unit": "°C",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-13-L2-10",
+      "level": 2,
+      "text": "Kuvaajassa on suljetussa jäykässä astiassa olevan kaasun paine mitattuna eri lämpötiloissa. Oleta, että paine riippuu lämpötilasta lineaarisesti myös mittausalueen ulkopuolella. Mikä olisi paine, kun kaasun lämpötila on $200\\,\\text{K}$? Huomaa, että kuvaajan vaaka-akselin lämpötila on celsiusasteina. Anna vastaus kilopascaleina.",
+      "figure": "fy3-3/extrapolation-points",
+      "answer": 54.884,
+      "unit": "kPa",
+      "tolerance": 0.05
     }
   ],
   "level3": [

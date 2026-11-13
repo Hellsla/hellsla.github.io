@@ -319,3 +319,21 @@ $G = mg = 0{,}270\,\text{kg} \cdot 9{,}81\,\text{m/s}^2$, eli $G \approx 2{,}65\
 3 tosi: pudotuksen aikana ilmanvastus kasvaa nopeuden mukana. Siksi kokonaisvoima $mg - F_\text{v}$ ja kiihtyvyys pienenevät.
 4 epätosi: rajanopeudella kokonaisvoima on nolla, joten ilmanvastus on yhtä suuri kuin paino eli $2{,}65\,\text{N}$. Se ei ole suurempi.
 5 epätosi: samankokoisella ja samanmuotoisella mutta kevyemmällä pallolla on pienempi paino. Ilmanvastus kumoaa sen jo pienemmällä nopeudella, joten sen rajanopeus on pienempi.
+
+## fy4-14-L2-08
+**Annettu:** $m = 75{,}0\,\text{kg}$. Kuvaajasta pisteet $(6{,}0\,\text{s};\, 40{,}4\,\text{m/s})$ ja $(10{,}0\,\text{s};\, 46{,}4\,\text{m/s})$. $g = 9{,}81\,\text{m/s}^2$. Positiivinen suunta on alas.
+**Kysytty:** a) ilmanvastus $F_\text{v}$ hetkellä $t = 8{,}0\,\text{s}$ yksikössä $\text{N}$; b) ilmanvastus prosentteina painosta sekä nopeuden raja-arvo ja ilmanvastus silloin
+**Periaate:** Kiihtyvyys on $(t,v)$-kuvaajan kulmakerroin. Hetken $8{,}0\,\text{s}$ molemmin puolin olevat pisteet antavat kiihtyvyyden keskimäärin tällä välillä. Se on hyvä arvio kiihtyvyydestä välin keskellä, koska käyrä on siinä lähes suora. Hyppääjään vaikuttavat vain paino ja ilmanvastus. Siksi Newtonin toinen laki antaa ilmanvastuksen.
+**Voimakuvio:** Piirrä hyppääjä suorakulmioksi. Positiivinen suunta on alas. Paino $\overline{G}$ lähtee keskipisteestä alas. Ilmanvastus $\overline{F}_\text{v}$ lähtee alhaalta ylös alapintaan asti. Se on painoa lyhyempi, koska nopeus kasvaa vielä.
+```voimakuvio
+G 735,8
+F_v 623,3 ylös työntö @ala
+a alas
+v alas
+```
+**Kuvaajan lukeminen:** Lue pisteet $(6{,}0\,\text{s};\, 40{,}4\,\text{m/s})$ ja $(10{,}0\,\text{s};\, 46{,}4\,\text{m/s})$. Ne ovat hetken $8{,}0\,\text{s}$ molemmin puolin. Nopeus kasvaa vielä, joten kiihtyvyys on positiivinen alas. Käyrän nousu loivenee. Välillä $0 \ldots 2{,}0\,\text{s}$ kulmakerroin on noin $9{,}3\,\text{m/s}^2$ eli lähes $g$. Välillä $10 \ldots 12\,\text{s}$ se on vain noin $0{,}5\,\text{m/s}^2$.
+**Kaava:** $a = \dfrac{v_2 - v_1}{t_2 - t_1}$ ja $mg - F_\text{v} = ma$, joten $F_\text{v} = m(g - a)$
+**Muunnokset:** Nopeudet ovat yksikössä $\text{m/s}$, ajat sekunteina ja massa kilogrammoina. Muunnoksia ei tarvita.
+**Sijoitus:** a) $a = \dfrac{46{,}4\,\text{m/s} - 40{,}4\,\text{m/s}}{10{,}0\,\text{s} - 6{,}0\,\text{s}} = 1{,}50\,\text{m/s}^2$ ja $F_\text{v} = 75{,}0\,\text{kg} \cdot (9{,}81\,\text{m/s}^2 - 1{,}50\,\text{m/s}^2) = 75{,}0\,\text{kg} \cdot 8{,}31\,\text{m/s}^2 = 623{,}25\,\text{N}$. b) Paino $G = mg = 75{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 735{,}75\,\text{N}$, joten $\dfrac{F_\text{v}}{G} = \dfrac{623{,}25\,\text{N}}{735{,}75\,\text{N}} = 0{,}847$
+**Vastaus:** a) $F_\text{v} \approx 623\,\text{N}$ ylöspäin. Vastauksessa on kolme merkitsevää numeroa kuten massassa $75{,}0\,\text{kg}$. b) Ilmanvastus on noin $85\,\%$ painosta. Kuvaajan pisteet tasaantuvat lähelle arvoa $48\,\text{m/s}$. Viimeisellä kahden sekunnin välillä nopeus kasvaa enää $0{,}9\,\text{m/s}$. Kun nopeus ei enää muutu, kiihtyvyys on nolla ja kokonaisvoima on nolla. Silloin ilmanvastus on yhtä suuri kuin paino, noin $736\,\text{N}$.
+**Järkevyys:** Paino on noin $736\,\text{N}$. Ilmanvastus $623\,\text{N}$ on sitä pienempi, kuten pitää, kun hyppääjä vielä kiihtyy alas. Kiihtyvyys $1{,}5\,\text{m/s}^2$ on selvästi pienempi kuin $g$, mutta se ei ole vielä nolla. Alussa nopeus on nolla ja ilmanvastus on nolla. Siksi alun kulmakerroin on lähes $g$.

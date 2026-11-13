@@ -198,3 +198,25 @@ Line 3 is correct: $\dfrac{\Delta s}{\lambda} = \dfrac{6.0\,\text{cm}}{3.0\,\tex
 Line 4 is wrong. The wave from source $S_1$ has indeed travelled two wavelengths further, but after a whole wavelength the wave is in phase again. Since $\Delta s = 2\lambda$, that is, $n = 2$, a crest meets a crest at point P and the interference is constructive.
 
 The correct answer is line 4. Check: with this wavelength the path differences of destructive interference would be $1.5\,\text{cm}$, $4.5\,\text{cm}$ and $7.5\,\text{cm}$, and $6.0\,\text{cm}$ is not among them.
+
+## fy5-12-L2-09
+**Given:** the grid (figure), one square is $0.50\,\text{m}$; loudspeakers $S_1$ and $S_2$ in phase
+**Find:** the path difference $\Delta s = |s_1 - s_2|$ at the point P in metres
+**Principle:** The path difference is the difference of the distances from the two sources to the point P. In the figure the loudspeakers and the point P form a right triangle, so the longer distance follows from the Pythagorean theorem.
+**Reading the graph:** The point P is on the same horizontal line as the loudspeaker $S_1$, $12$ squares away, so $s_1 = 12 \cdot 0.50\,\text{m} = 6.0\,\text{m}$. The loudspeaker $S_2$ is on the same vertical line $5$ squares higher, so the distance between the loudspeakers is $d = 5 \cdot 0.50\,\text{m} = 2.5\,\text{m}$, perpendicular to $s_1$.
+**Formula:** $s_2 = \sqrt{s_1^2 + d^2}$ and $\Delta s = s_2 - s_1$, so $\Delta s = \sqrt{s_1^2 + d^2} - s_1$
+**Conversions:** Squares to metres: $12 \cdot 0.50\,\text{m} = 6.0\,\text{m}$ and $5 \cdot 0.50\,\text{m} = 2.5\,\text{m}$.
+**Substitution:** $s_2 = \sqrt{(6.0\,\text{m})^2 + (2.5\,\text{m})^2} = \sqrt{42.25\,\text{m}^2} = 6.5\,\text{m}$ and $\Delta s = 6.5\,\text{m} - 6.0\,\text{m} = 0.50\,\text{m}$
+**Answer:** $0.50\,\text{m}$, two significant figures like the size of a square, $0.50\,\text{m}$.
+**Reasonableness:** The sides of the triangle in squares are $5$, $12$ and $13$, because $5^2 + 12^2 = 13^2$, so $s_2 = 13 \cdot 0.50\,\text{m} = 6.5\,\text{m}$. The path difference cannot be larger than the distance between the loudspeakers, $2.5\,\text{m}$, and $0.50\,\text{m} < 2.5\,\text{m}$.
+
+## fy5-12-L3-06
+**Given:** the grid (figure), one square is $0.50\,\text{m}$; loudspeakers in phase, speed of sound $v = 340\,\text{m/s}$, no reflections
+**Find:** the lowest frequency $f$ at which the interference at the point P is destructive, in hertz
+**Principle:** In destructive interference the path difference is half a wavelength more than a whole number of wavelengths, $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$. The lowest frequency means the longest wavelength, and that is $n = 0$. The frequency follows from the basic wave equation $v = f\lambda$.
+**Reading the graph:** The point P is on the same horizontal line as the loudspeaker $S_1$, $12$ squares away, so $s_1 = 12 \cdot 0.50\,\text{m} = 6.0\,\text{m}$. The loudspeaker $S_2$ is on the same vertical line $5$ squares higher, so the distance between the loudspeakers is $d = 5 \cdot 0.50\,\text{m} = 2.5\,\text{m}$, perpendicular to $s_1$. By the Pythagorean theorem $s_2 = 13$ squares $= 6.5\,\text{m}$, so $\Delta s = 6.5\,\text{m} - 6.0\,\text{m} = 0.50\,\text{m}$.
+**Formula:** $\Delta s = \tfrac{1}{2}\lambda$, so $\lambda = 2\Delta s$, and $f = \dfrac{v}{\lambda}$, so $f = \dfrac{v}{2\Delta s}$
+**Conversions:** Not needed: the path difference is in metres and the speed in $\text{m/s}$, so $\tfrac{\text{m/s}}{\text{m}} = \text{s}^{-1} = \text{Hz}$.
+**Substitution:** $f = \dfrac{340\,\text{m/s}}{2 \cdot 0.50\,\text{m}} = \dfrac{340\,\text{m/s}}{1.0\,\text{m}} = 340\,\text{Hz}$
+**Answer:** $340\,\text{Hz}$, two significant figures like the path difference $0.50\,\text{m}$.
+**Reasonableness:** The wavelength is $\lambda = \tfrac{340\,\text{m/s}}{340\,\text{Hz}} = 1.0\,\text{m}$, and the path difference $0.50\,\text{m}$ is exactly half of it. At a lower frequency the wavelength would be over $1.0\,\text{m}$ and the path difference less than half a wavelength, so there would be no complete cancellation. The next destructive frequency is $3 \cdot 340\,\text{Hz} = 1020\,\text{Hz}$, where $\Delta s = \tfrac{3}{2}\lambda$.

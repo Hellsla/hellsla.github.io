@@ -87,6 +87,19 @@ def formulas(text):
     return sorted(re.sub(r"\s+", "", re.sub(r"\\(text|mathrm)\{[^{}]*\}", r"\\\1{}", f)).replace("{,}", ".") for f in found)   # 4{,}2 = 4.2
 
 
+INLINE_OR_DISPLAY = re.compile(r"\$\$(.*?)\$\$|(?<!\$)\$([^$\n]+?)\$(?!\$)", re.S)
+
+
+def formula_spans(text):
+    """The LaTeX of a text in reading order, as written (\\text{} words kept): the same formulas `formulas` finds, after
+    the same chapter-reference and display-block handling. reviews.py compares a translated exercise set with the
+    Finnish one by these (translation-of-passed, teacher 2026-11-12)."""
+    text = re.sub(r"\b((?:luku|luvussa|luvusta|luvun|luvuissa|chapter|chapters)\s+)\*[^*]+\*", r"\1", str(text), flags=re.I)
+    text = re.sub(r"\((?:luku|chapter)\s[^()*]*\)", "()", text, flags=re.I)
+    text = kaavat.as_display(re.sub(r"```latex\n(.*?)```", lambda m: "$$" + m.group(1) + "$$", text, flags=re.S), names=False)
+    return [m.group(1) if m.group(1) is not None else m.group(2) for m in INLINE_OR_DISPLAY.finditer(text)]
+
+
 def formula_diff(a, b):
     """What a translation lost (-) and added (+) of the Finnish formulas."""
     fa, fb = Counter(formulas(a)), Counter(formulas(b))

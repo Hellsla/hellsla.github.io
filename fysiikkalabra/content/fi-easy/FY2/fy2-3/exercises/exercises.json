@@ -112,6 +112,27 @@
       "answer": 30,
       "unit": "kW",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-3-L1-09",
+      "level": 1,
+      "text": "Pienveneen perämoottorin teho on $5{,}0\\,\\text{hp}$. Hp tarkoittaa metristä hevosvoimaa. Moottorin mekaaninen teho on siis $5{,}0$ hevosvoimaa. Hevosvoima on vanha tehon yksikkö. Moottori käy täydellä teholla tasaisesti $30\\,\\text{min}$. Teho on $P = \\Delta E/\\Delta t$. Hae hevosvoiman ($1\\,\\text{hp}$) muunnos watteiksi MAFY-taulukosta (mafytaulukot.fi). Kuinka paljon mekaanista energiaa moottori tuottaa tässä ajassa? Anna vastaus megajouleina.",
+      "lookup": "MAFY",
+      "answer": 6.6195,
+      "unit": "MJ",
+      "tolerance": 0.04,
+      "hints": [
+        "Arvo löytyy MAFY-taulukon taulukosta *Yksikkömuunnoksia*."
+      ]
+    },
+    {
+      "id": "fy2-3-L1-10",
+      "level": 1,
+      "text": "Kuvaajassa on kahden laitteen, A:n ja B:n, muuntama sähköenergia ajan funktiona. Kumpikin laite muuntaa energiaa tasaisesti. Lue kuvaajasta kummankin suoran kaksi pistettä ja laske laitteiden tehot. Kuinka monta kertaa suurempi laitteen A teho on kuin laitteen B teho? Anna vastaus lukuna (suhde ilman yksikköä).",
+      "figure": "fy2-3/graph-ab",
+      "answer": 3,
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level2": [

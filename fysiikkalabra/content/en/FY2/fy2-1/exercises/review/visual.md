@@ -1,22 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: f2c0a93ba89108b4
-Mode: delta (packet regenerated as full; judged the exercises' delta: new L1-09, split task paragraphs, solutions, plus the 390 px layout)
-Round: 2
+CONTENT-HASH: 73f9da6470edf29f
+SCOPE: delta added-exercise from f2c0a93ba89108b4 base 141dc47a8c70
 
 ## Blocking
 (none)
 
-## Fixed
-- (en had no page overflow in round 1.)
-
 ## Polish
-- [Minor] fy2-1 L2-05, L3-04, L3-05 solutions at 390 px (follow-up, older unchanged content) — sideways-scrolling `eq-chain` boxes (the site's pattern) hold sums wider than the box (L3-04 449 px in 302 px, L3-05 368, L2-05 327), so the last terms are off-screen until scrolled; the page itself does not scroll sideways — split the longest sums (L3-04) at a `+` the way the Järkevyys line was split.
-- [Minor] Exercise captures at 390 px are not in the packet's list; I rendered them myself.
+- [Minor] L1-10 task: "mafytaulukot.fi" is plain text (a site name; optional).
 
 ## Checked
-- Own Playwright render at 390 px of preview/en/fy2-1.html (all details open, choices answered): page scroll width 390; overflow metrics for every KaTeX display, table and svg in the exercises.
-- Opened renders: L2-05 solution and the L1-09 card (round 1, content unchanged since).
-- Text only: L3-04 and L3-05 chains judged from metrics, not opened this round; 1280 px captures and figures not re-opened (outside this delta).
+- Opened fy2-1-open-exercises-1280-9.png and -10.png (content/en/FY2/fy2-1/review/shots/): L1-10 card with the task text, the "Hint" box under the task (opened in the capture; the hint text names the MAFY table), the locked solution and the full opened solution.
+- The hint sits inside the card, below the question, without pushing anything sideways; the inline hint sentence is gone from the task text, which now reads situation then question.
+- Maths unchanged and clean: units upright with thin spaces, decimal point in English, no red KaTeX source, nothing clipped. 390 px captures not opened.
 
 ## Scores
-illustrations n/a · typography 4 · Finnish n/a (English page) · accessibility 4
+illustrations n/a · typography 5 · English 4 · accessibility 4

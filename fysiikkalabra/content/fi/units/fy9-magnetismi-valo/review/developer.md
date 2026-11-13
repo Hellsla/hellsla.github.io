@@ -97,3 +97,9 @@ check_layout 360 and 1280 OK; Playwright at 390 and 1280 with all details open: 
 
 ### Shared issues (added)
 - fy7-7/trace tick labels are about 12 px at 390 px (catalog figure owned by fy7-7).
+
+## Ratkaisutavan tarkistus (2026-11-12)
+- s1 c): Kaava ratkaisee häviön osuuden symbolein $P_\text{h}/P = RP/U^2$; Annettuun lisätty $U_2$ ja $U_1$.
+- s2 c): jatkoksen vaimennus $A_\text{j}$, lukumäärä $N_\text{j}$ ja desibelikerroin $\beta$ symboleiksi; luvut vain Sijoituksessa.
+- s5 a): Kaavasta poistettu "1 mm"; $d = 1/N$ ja $\lambda = \sin(\tan^{-1}(x_k/L))/(kN)$.
+- fi-easy ja en päivitetty samoin; vastaukset eivät muuttuneet. Inquiry-ratkaisut täyttivät vaatimukset.

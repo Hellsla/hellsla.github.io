@@ -108,3 +108,9 @@ I ran `practice.py figures` / `check` (OK, 6 tasks, 95 points) and `units.py fig
 
 ### Shared issues
 - The reused chapter figures `fy6-12/ex-vgraph` and `fy6-13/ex-qu` render their labels at 13 px at 390 px width. They belong to the FY6 chapters, so I did not change them.
+
+## Ratkaisutavan tarkistus (2026-11-12)
+- sovella s3 d): Kaavassa pisteen $(1/d_1;\,C_1)$ määrittely.
+- inquiry (elektronin nopeus): $V_0$ ja $U = V - V_0$ Kaavaan, Sijoitus $(150\,\text{V} - 0\,\text{V})$.
+- inquiry (sähköauton lataus): $W_0$, osuus $s$ ja $t = sW_0/(3\eta UI)$ Kaavaan; luvut $0{,}60 \cdot 64\,\text{kWh}$ vain Sijoituksessa.
+- Muut osat (s1, s2, s4–s6, muut inquiry-tehtävät) täyttävät käytännön.

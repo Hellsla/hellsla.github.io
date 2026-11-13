@@ -219,3 +219,24 @@ Lähin vaihtoehto on $500\,\text{MW}$. Järkevyys: tulos on noin $42\,\%$ poltto
 $P_\text{L} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 38\,000\,\tfrac{\text{kg}}{\text{s}} \cdot 10{,}775\,\text{K} = 1{,}7156 \cdot 10^{9}\,\text{W} = 1716\,\text{MW}$
 **Vastaus:** $1720\,\text{MW}$, kolme merkitsevää numeroa kuten vesivirrassa ja lämpötilan nousussa.
 **Järkevyys:** Arvio: $4000 \cdot 4 \cdot 10^4 \cdot 11\,\text{W} \approx 1{,}8 \cdot 10^9\,\text{W}$. Hukkalämmön teho on $P_\text{h} = 2700\,\text{MW} - 900\,\text{MW} = 1800\,\text{MW}$, ja lauhduttimen osuus on $\tfrac{1716}{1800} = 95\,\%$ siitä; loput noin $84\,\text{MW}$ lähtee esimerkiksi generaattorin ja muuntajan häviöinä ilmaan. Lämpöä siirtyy meriveteen vähemmän kuin hukkalämpöä, kuten pitääkin. Vesi on lauhduttimen jälkeen vain noin $11\,\text{K}$ ympäristöä lämpimämpää, joten sillä ei voi enää tuottaa sähköä, mutta energia ei ole kadonnut vaan lämmittää merta. Heinäkuussa vesi lähtee lämpötilassa $28{,}4\,{}^\circ\text{C}$, joten purkualueella meri on lämpimämpää kuin muualla ja vesieliöstön olot voivat heiketä.
+
+## fy3-15-L1-09
+**Annettu:** vesivirta $q_m = 80\,\text{kg/s}$, lämpötilan nousu $\Delta T = 40\,\text{K}$; taulukosta (MAFY-taulukko, ominaislämpökapasiteetit, nesteet, vesi) $c = 4{,}182\,\text{kJ/(kg}\cdot\text{K)}$
+**Kysytty:** kaukolämpöteho $P_\text{k}$ megawatteina
+**Periaate:** Verkon veteen siirtyvä lämpö on $Q = cm\Delta T$. Kun vettä virtaa tasaisesti massa $m$ ajassa $t$, lämpöteho on $P = Q/t = c\,(m/t)\,\Delta T$ eli $P_\text{k} = c\,q_m\,\Delta T$.
+**Kaava:** $P_\text{k} = c\,q_m\,\Delta T$
+**Muunnokset:** $\dfrac{\text{kJ}}{\text{kg}\cdot\text{K}} \cdot \dfrac{\text{kg}}{\text{s}} \cdot \text{K} = \dfrac{\text{kJ}}{\text{s}} = \text{kW}$ ja $1\,\text{MW} = 1000\,\text{kW}$
+**Sijoitus:** $P_\text{k} = 4{,}182\,\dfrac{\text{kJ}}{\text{kg}\cdot\text{K}} \cdot 80\,\dfrac{\text{kg}}{\text{s}} \cdot 40\,\text{K} = 13\,382\,\text{kW} = 13{,}4\,\text{MW}$
+**Vastaus:** $P_\text{k} \approx 13\,\text{MW}$, kaksi merkitsevää numeroa kuten tiedoissa $80\,\text{kg/s}$ ja $40\,\text{K}$. Arvo $c = 4{,}182\,\text{kJ/(kg}\cdot\text{K)}$ on MAFY-taulukosta (ominaislämpökapasiteetit, nesteet, vesi, $20\,{}^\circ\text{C}$); kuumalle vedelle ero on pieni, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Järkevyys:** Karkea arvio: $4\,\text{kJ/(kg}\cdot\text{K)} \cdot 80\,\text{kg/s} \cdot 40\,\text{K} = 12\,800\,\text{kW} \approx 13\,\text{MW}$. Teho on sopiva kaupungin kaukolämpöverkon osalle, ja se on pienempi kuin voimalaitoksen polttoaineteho, joka on kymmeniä tai satoja megawatteja.
+
+## fy3-15-L2-09
+**Annettu:** kuvan pylväistä luettuna höyrykierrolle sisään tuleva teho $P_1 = 350\,\text{MW}$ ja ulos tuleva teho $P_2 = 150\,\text{MW}$
+**Kysytty:** höyrykierron hyötysuhde $\eta_2$ prosentteina
+**Periaate:** Vaiheet ovat peräkkäin, ja kunkin vaiheen ulostuloteho on sen hyötysuhteen ja sisään tulevan tehon tulo. Höyrykierron sisäänmenoteho on kattilan jälkeinen teho $P_1$ ja ulostuloteho on $P_2$.
+**Kuvaajan lukeminen:** Pylväiden $P_1$ ja $P_2$ päät ovat ruudukon viivoilla: $P_1$ kohdassa $350\,\text{MW}$ ja $P_2$ kohdassa $150\,\text{MW}$. Ruudukon väli on $50\,\text{MW}$. Polttoaineteho $P_0$ ja sähköteho $P_3$ eivät kuulu höyrykierron hyötysuhteeseen.
+**Kaava:** $P_2 = \eta_2 P_1$, joten $\eta_2 = \dfrac{P_2}{P_1}$
+**Muunnokset:** Molemmat tehot ovat samassa yksikössä $\text{MW}$, joten yksikkö supistuu pois; hyötysuhde prosentteina saadaan kertomalla sadalla.
+**Sijoitus:** $\eta_2 = \dfrac{150\,\text{MW}}{350\,\text{MW}} = 0{,}4286 = 42{,}86\,\%$
+**Vastaus:** $\eta_2 \approx 43\,\%$, kaksi merkitsevää numeroa, koska arvot luetaan $50\,\text{MW}$:n ruudukolta.
+**Järkevyys:** Hyötysuhde on alle $100\,\%$ ja tyypillinen höyrykierrolle. Riippumaton tarkistus: kattilan hyötysuhde on $350/400 = 0{,}875$ ja generaattorin ja muuntajan $140/150 = 0{,}933$, joten koko ketjun hyötysuhde on $0{,}875 \cdot 0{,}4286 \cdot 0{,}933 = 0{,}350 = 140/400$, mikä täsmää.

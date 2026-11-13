@@ -212,3 +212,24 @@ $$\begin{aligned} Q &= 4190 \cdot 0.300 \cdot 17.5\,\text{J} \\ &= 21\,998\,\tex
 In the same way for the other intervals: the quantities of heat are $16.2$, $12.7$, $9.05$, $7.16$ and $5.15\,\text{kJ}$, the powers $27.0$, $21.2$, $15.1$, $11.9$ and $8.59\,\text{W}$ and the coefficients $0.587$, $0.612$, $0.582$, $0.614$ and $0.590\,\tfrac{\text{W}}{\text{K}}$.
 **Answer:** $0.60\,\tfrac{\text{W}}{\text{K}}$, three significant figures in the temperatures and the mass, but $k$ varies from interval to interval by about $\pm 3\,\%$, so the second figure is the last meaningful one. c) All six values of $k$ are between $0.58\ldots 0.61\,\tfrac{\text{W}}{\text{K}}$, that is, within $3\,\%$ of their mean, although the power falls from $36.7\,\text{W}$ to $8.59\,\text{W}$. The model fits the measurements well; the small differences come from the $0.1\,{}^\circ\text{C}$ precision of the temperature readings. The cooling slows down because the power given out is directly proportional to the difference in temperature from the room: as the temperature of the water falls, the difference becomes smaller and the power falls in the same ratio.
 **Reasonableness:** The ratio of the powers of the first and the last interval is $\dfrac{36.66}{8.59} \approx 4.3$ and the ratio of the differences in temperature $\dfrac{61.25}{14.55} \approx 4.2$, so the power really follows the difference in temperature.
+
+## fy3-6-L1-09
+**Given:** mass $m = 0.80\,\text{kg}$, temperature $20\,{}^\circ\text{C} \to 100\,{}^\circ\text{C}$; from the table (MAFY table, specific heat capacities: solids, aluminium) $c = 0.896\,\dfrac{\text{kJ}}{\text{kg}\cdot\text{K}}$
+**Find:** the quantity of heat $Q$ absorbed by the pot, in kilojoules
+**Principle:** The quantity of heat needed to warm a body without a change of state is $Q = cm\Delta T$. Aluminium stays solid throughout the heating.
+**Formula:** $Q = cm\Delta T$, where $\Delta T = T_\text{final} - T_\text{initial}$
+**Conversions:** A temperature change in kelvins equals the one in degrees Celsius: $\Delta T = 100\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 80\,\text{K}$. The table value is already in $\text{kJ}/(\text{kg}\cdot\text{K})$, so the result comes directly in kilojoules.
+**Substitution:** $Q = 0.896\,\dfrac{\text{kJ}}{\text{kg}\cdot\text{K}} \cdot 0.80\,\text{kg} \cdot 80\,\text{K} = 57.344\,\text{kJ} \approx 57\,\text{kJ}$
+**Answer:** $57\,\text{kJ}$, two significant figures, like the data $0.80\,\text{kg}$ and $80\,\text{K}$. The value $0.896\,\text{kJ}/(\text{kg}\cdot\text{K})$ is from the MAFY table; the values of different tables differ slightly, and the answer is accepted within about $\pm 4\,\%$.
+**Reasonableness:** For aluminium $c \approx 0.9\,\text{kJ}/(\text{kg}\cdot\text{K})$, so $0.80\,\text{kg}$ needs about $0.72\,\text{kJ}$ for every kelvin. Times $80\,\text{K}$ gives about $58\,\text{kJ}$, which fits the result. The result is positive, because the pot warms up.
+
+## fy3-6-L2-09
+**Given:** mass of copper $m = 3.0\,\text{kg}$, temperature $85\,{}^\circ\text{C} \to 25\,{}^\circ\text{C}$; $c$ from the figure
+**Find:** the quantity of heat given off by the tube, $Q_\text{given}$, in kilojoules
+**Principle:** The quantity of heat a body gives off when cooling without a change of state has the magnitude $cm\left|\Delta T\right|$. Copper stays solid.
+**Reading the graph:** The horizontal bar of copper ends at the value $385$, so $c = 385\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$. It is the shortest of the bars, which fits: copper warms up and cools down easily.
+**Formula:** $Q_\text{given} = cm\left|\Delta T\right|$
+**Conversions:** $\left|\Delta T\right| = 85\,{}^\circ\text{C} - 25\,{}^\circ\text{C} = 60\,\text{K}$ (a change in kelvins equals the one in degrees Celsius). Finally $1\,\text{kJ} = 1000\,\text{J}$.
+**Substitution:** $Q_\text{given} = 385\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 3.0\,\text{kg} \cdot 60\,\text{K} = 69\,300\,\text{J} = 69.3\,\text{kJ} \approx 69\,\text{kJ}$
+**Answer:** $69\,\text{kJ}$, two significant figures, like the data $3.0\,\text{kg}$ and $60\,\text{K}$. The value $385$ is read directly beside the bar, so $67.2\ldots71.4\,\text{kJ}$ is accepted.
+**Reasonableness:** If the tube were water, the same quantity of heat would cool it by only about $\dfrac{69\,300\,\text{J}}{4190 \cdot 3.0} \approx 5.5\,\text{K}$. The $c$ of copper is only about a tenth of the $c$ of water, so little heat leaves each kilogram of copper.

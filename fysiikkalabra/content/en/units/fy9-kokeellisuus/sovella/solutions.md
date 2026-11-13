@@ -238,7 +238,7 @@ I drop the ball from, for example, five heights $0.5\text{–}3.0\,\text{m}$, th
 **Formula:** $V = V_2 - V_1$ and $\rho = \dfrac{m}{V} = \dfrac{m}{V_2 - V_1}$
 **Conversions:** $1\,\text{m}\textsf{l} = 1\,\text{cm}^3$ and $1\,\text{g/cm}^3 = 1000\,\text{kg/m}^3$.
 **Substitution:** $V = 190\,\text{cm}^3 - 120\,\text{cm}^3 = 70\,\text{cm}^3$ and $\rho = \dfrac{187.4\,\text{g}}{70\,\text{cm}^3} = 2.677\,\text{g/cm}^3 = 2.677 \cdot 1000\,\text{kg/m}^3 = 2677\,\text{kg/m}^3$
-**Answer:** $\rho \approx 2680\,\text{kg/m}^3$. Three significant figures, because the volume is the difference of two three-digit readings; part b shows that even the third digit is uncertain.
+**Answer:** $\rho \approx 2.7 \cdot 10^{3}\,\text{kg/m}^3$ (calculated $2677\,\text{kg/m}^3$). Two significant figures, because the volume $70\,\text{cm}^3$ is the difference of the readings and a two-digit number. When the uncertainty is calculated (part b), the result is written to the decimal place of the uncertainty: $(2680 \pm 80)\,\text{kg/m}^3$.
 **Reasonableness:** The density is about $2.7$ times that of water, which is typical of ordinary rock types: the stone sinks, and a palm-sized stone weighs hundreds of grams.
 
 ### b)
@@ -347,27 +347,27 @@ The assumption can be tested by drawing the $(v^2, s)$ graph. If the assumption 
 
 **Model answer:** The points are close to a straight line through the origin, so the assumption of constant deceleration is supported. The line is drawn through the origin, because at zero speed the braking distance is zero. The distant point $(60\,\text{m}^2/\text{s}^2;\ 7.2\,\text{m})$ is read from the line, so the slope is $k = \tfrac{7.2\,\text{m}}{60\,\text{m}^2/\text{s}^2} = 0.12\,\text{s}^2/\text{m}$. Since $s = \tfrac{1}{2a}\, v^2$, the slope is $k = \tfrac{1}{2a}$ and the deceleration is
 
-$a = \tfrac{1}{2k} = \tfrac{1}{2 \cdot 0.12\,\text{s}^2/\text{m}} = 4.17\,\text{m/s}^2 \approx 4.2\,\text{m/s}^2$,
+$a = \tfrac{1}{2k} = \tfrac{1}{2 \cdot 0.12\,\text{s}^2/\text{m}} = 4.167\,\text{m/s}^2 \approx 4.2\,\text{m/s}^2$,
 
 two significant figures as in the braking distances and the slope.
 
 ### c)
-**Given:** deceleration $a = 4.17\,\text{m/s}^2$ (part b), a horizontal road, the wheels do not lock, $g = 9.81\,\text{m/s}^2$
+**Given:** deceleration $a = 4.1667\,\text{m/s}^2$ (part b), a horizontal road, the wheels do not lock, $g = 9.81\,\text{m/s}^2$
 **Find:** the smallest coefficient of static friction $\mu_0$ between the tyres and the asphalt
 **Principle:** When air resistance is left out, the bicycle and the cyclist are slowed horizontally only by the friction force of the road on the tyres. The tyres do not slip on the asphalt, so this is static friction, which can be at most $\mu_0 N$. The road is horizontal, so vertically $N = mg$. By Newton's second law the friction force must be $ma$.
-**Formula:** $ma = F_{\mu 0} \le \mu_0 N = \mu_0 mg$, from which the mass cancels and $\mu_0 \ge \dfrac{a}{g}$
+**Formula:** The positive direction is the direction of the deceleration, against the motion. Horizontally $\Sigma F_x = F_{\mu 0} = ma$ and vertically $\Sigma F_y = N - mg = 0$, so $N = mg$. For static friction $F_{\mu 0} \le \mu_0 N$, so $ma \le \mu_0 mg$. The mass cancels, so $\mu_0 \ge \dfrac{a}{g}$
 **Conversions:** None needed, the accelerations are in $\text{m/s}^2$.
-**Substitution:** $\mu_0 \ge \dfrac{4.17\,\text{m/s}^2}{9.81\,\text{m/s}^2} = 0.425$
+**Substitution:** $\mu_0 \ge \dfrac{4.1667\,\text{m/s}^2}{9.81\,\text{m/s}^2} = 0.4247$
 **Answer:** $\mu_0 \ge 0.42$, two significant figures as in the deceleration $4.2\,\text{m/s}^2$. A coefficient of friction has no unit.
 **Reasonableness:** The coefficient of static friction between dry asphalt and rubber is typically clearly larger, about $0.7\text{–}0.9$, so the braking is possible without the wheels locking. A deceleration of $4.2\,\text{m/s}^2$ is a little under half the free-fall acceleration, which fits the braking of a bicycle.
 
 ### d)
-**Given:** the app's speed is $5\,\%$ higher than the true speed in every run: $v_\text{app} = 1.05\, v$; the deceleration of part b is $4.17\,\text{m/s}^2$
+**Given:** the app's speed is $5\,\%$ higher than the true speed in every run: $v_\text{app} = 1.05\, v$; the deceleration of part b is $4.1667\,\text{m/s}^2$
 **Find:** by how many per cent and in which direction the deceleration of part b differs from the true value, and whether the conclusion changes
 **Principle:** The error is systematic: every speed has been multiplied by the same number. In the graph every $v^2$ has therefore been multiplied by $1.05^2$, and the slope of the line $k = \tfrac{s}{v^2}$ is too small in the same proportion. The deceleration is $a = \tfrac{1}{2k}$, so it is too large in the same proportion.
 **Formula:** $v_\text{app}^2 = 1.05^2\, v^2$, so $k_\text{app} = \dfrac{k}{1.05^2}$ and $a_\text{app} = 1.05^2\, a$; the deviation is $\dfrac{a_\text{app} - a}{a} = 1.05^2 - 1$
 **Conversions:** The percentage as a decimal number: $5\,\% = 0.05$.
-**Substitution:** $1.05^2 - 1 = 1.1025 - 1 = 0.1025 = 10.25\,\%$ and the true deceleration $a = \dfrac{4.17\,\text{m/s}^2}{1.1025} = 3.78\,\text{m/s}^2$
+**Substitution:** $1.05^2 - 1 = 1.1025 - 1 = 0.1025 = 10.25\,\%$ and the true deceleration $a = \dfrac{4.1667\,\text{m/s}^2}{1.1025} = 3.779\,\text{m/s}^2$
 **Answer:** The deceleration of part b is about $10\,\%$ too large; the true deceleration is about $3.8\,\text{m/s}^2$. The result is given as an approximate value, because the deceleration $4.2\,\text{m/s}^2$ is known to two figures. The conclusion about constant deceleration does not change: every $v^2$ changes in the same proportion, so the points still lie on a straight line through the origin; only its slope changes.
 **Reasonableness:** The speed is squared in the formula, so a small relative error doubles: $2 \cdot 5\,\% = 10\,\%$. The smallest coefficient of friction of part c also decreases in the same proportion, to about $0.39$.
 

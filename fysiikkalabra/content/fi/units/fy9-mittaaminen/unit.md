@@ -208,7 +208,7 @@ Toistetun mittauksen paras arvio on keskiarvo $\bar{x}$. Tässä kurssissa hajon
 \end{aligned}
 ```
 
-missä $x_\text{max}$ ja $x_\text{min}$ ovat suurin ja pienin tulos, $\Delta x$ mittausepävarmuus ja $\varepsilon$ suhteellinen epävarmuus. Kertamittauksessa lukeman epävarmuutta voidaan yksinkertaisessa tilanteessa arvioida puoleksi pienimmästä asteikkovälistä, mutta kokonaisepävarmuuteen vaikuttavat myös menetelmä ja muut virhelähteet. Epävarmuus pyöristetään yhteen merkitsevään numeroon (kahteen, jos ensimmäinen numero on 1), ja tulos samaan desimaaliin. Kerto- ja jakolaskun tulos saa yhtä monta merkitsevää numeroa kuin epätarkin lähtöarvo.
+missä $x_\text{max}$ ja $x_\text{min}$ ovat suurin ja pienin tulos, $\Delta x$ mittausepävarmuus ja $\varepsilon$ suhteellinen epävarmuus. Kertamittauksessa lukeman epävarmuutta voidaan yksinkertaisessa tilanteessa arvioida puoleksi pienimmästä asteikkovälistä, mutta kokonaisepävarmuuteen vaikuttavat myös menetelmä ja muut virhelähteet. Epävarmuus pyöristetään yhteen merkitsevään numeroon (kahteen, jos ensimmäinen numero on 1), ja tulos samaan desimaaliin. Kerto- ja jakolaskun tulos saa yhtä monta merkitsevää numeroa kuin epätarkin mitattu lähtöarvo; tarkat määrät, kuten kokonaisluvut ja muunnoskertoimet, eivät rajoita tarkkuutta.
 
 Toistaminen vaimentaa satunnaisvirheen vaikutusta keskiarvossa, mutta systemaattista virhettä se ei poista. Karkea virhe etsitään: poikkeava tulos tarkistetaan, eikä sitä poisteta perustelematta.
 

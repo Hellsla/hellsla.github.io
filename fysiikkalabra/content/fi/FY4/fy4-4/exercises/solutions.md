@@ -279,3 +279,35 @@ $a = \dfrac{\Sigma F}{m}$
 $a = \dfrac{36\,\text{N}}{18\,\text{kg}}$, eli $a = 2{,}0\,\text{m/s}^2$
 
 Kiihtyvyys on $2{,}0\,\text{m/s}^2$ työntövoiman suuntaan, kaksi merkitsevää numeroa kuten voimissa ja massassa. Tarkistus yksiköillä: $\text{N} : \text{kg} = \text{kg}\cdot\text{m/s}^2 : \text{kg}$, eli $\text{m/s}^2$, mutta rivin 4 jakolasku $\text{N} : \text{N}$ ei anna kiihtyvyyden yksikköä lainkaan. Oikea vastaus on rivi 4.
+
+## fy4-4-L1-09
+**Annettu:** massa $m = 15\,000\,\text{kg}$, kiihtyvyys $a = 0{,}50\,\text{m/s}^2$ ylöspäin; taulukosta (MAFY-taulukko, Aurinkokunta, Kuu) putoamiskiihtyvyys $g = 1{,}622\,\text{m/s}^2$
+**Kysytty:** työntövoiman suuruus $F$ yksikössä $\text{kN}$
+**Periaate:** Voimakuviossa on kaksi voimaa: työntövoima $\overline{F}$ ylös ja paino $\overline{G}$ alas. Newtonin toisen lain mukaan kokonaisvoima on $\Sigma F = ma$. Valitaan ylöspäin positiiviseksi, koska kiihtyvyys osoittaa ylös.
+**Kaava:** $\Sigma F = ma$, joten $F - G = ma$. Painoksi tulee $G = mg$, ja siitä $F = m(g + a)$
+**Muunnokset:** Suureet ovat SI-yksiköissä. Tulos tulee newtoneina, ja $1\,\text{kN} = 1000\,\text{N}$, joten $31\,830\,\text{N} = 31{,}83\,\text{kN}$.
+**Sijoitus:** $F = 15\,000\,\text{kg} \cdot (1{,}622\,\text{m/s}^2 + 0{,}50\,\text{m/s}^2) = 31\,830\,\text{N} = 31{,}83\,\text{kN}$
+**Vastaus:** $32\,\text{kN}$, kaksi merkitsevää numeroa kuten kiihtyvyydessä $0{,}50\,\text{m/s}^2$. Taulukon arvo $g = 1{,}622\,\text{m/s}^2$ on tarkempi kuin kiihtyvyys; eri taulukoiden arvot poikkeavat hieman, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Järkevyys:** Leijuessa ($a = 0$) työntövoima olisi aluksen paino Kuussa, $15\,000\,\text{kg} \cdot 1{,}622\,\text{m/s}^2 \approx 24\,\text{kN}$. Hidastamiseen tarvitaan sen lisäksi $ma = 7{,}5\,\text{kN}$, ja yhteensä $31{,}8\,\text{kN}$. Työntövoima on painoa suurempi, koska kokonaisvoima osoittaa ylös.
+
+## fy4-4-L1-10
+**Annettu:** kuvaajasta kärryn A suoralla piste, jossa kokonaisvoima $\Sigma F = 3{,}0\,\text{N}$ ja kiihtyvyys $a = 6{,}0\,\text{m/s}^2$
+**Kysytty:** kärryn A massa $m$ yksikössä $\text{kg}$
+**Periaate:** Newtonin toisen lain mukaan $\Sigma F = ma$. Kärryn A suora kulkee origon kautta, joten kiihtyvyys on suoraan verrannollinen kokonaisvoimaan ja massa on sama kaikissa suoran pisteissä.
+**Kuvaajan lukeminen:** Kärryn A suora on jyrkempi (tumma). Sen oikeanpuoleinen mittapiste on ruudukon risteyksessä: vaaka-akselilta $\Sigma F = 3{,}0\,\text{N}$ ja pystyakselilta $a = 6{,}0\,\text{m/s}^2$. Kaukana origosta oleva piste antaa tarkimman luvun.
+**Kaava:** $\Sigma F = ma$, joten $m = \dfrac{\Sigma F}{a}$
+**Muunnokset:** Voima on newtoneina ja kiihtyvyys yksikössä $\text{m/s}^2$, ja $1\,\text{N} = 1\,\text{kg}\cdot\text{m/s}^2$, joten tulos tulee kilogrammoina. Muunnoksia ei tarvita.
+**Sijoitus:** $m = \dfrac{3{,}0\,\text{N}}{6{,}0\,\text{m/s}^2} = 0{,}50\,\text{kg}$
+**Vastaus:** $0{,}50\,\text{kg}$, kaksi merkitsevää numeroa kuten kuvaajasta luetuissa arvoissa.
+**Järkevyys:** Toisen pisteen $(2{,}0\,\text{N};\, 4{,}0\,\text{m/s}^2)$ antama massa on $2{,}0\,\text{N} : 4{,}0\,\text{m/s}^2 = 0{,}50\,\text{kg}$, sama. Kärryn A suora on jyrkempi kuin B:n, joten sen massa on pienempi: pienempi massa kiihtyy samalla voimalla enemmän.
+
+## fy4-4-L2-09
+**Annettu:** kokonaisvoima $\Sigma F = 2{,}4\,\text{N}$; kuvaajasta kärryn B suoralla piste $\Sigma F_1 = 3{,}0\,\text{N}$, $a_1 = 3{,}0\,\text{m/s}^2$
+**Kysytty:** kärryn B kiihtyvyys $a$ yksikössä $\text{m/s}^2$
+**Periaate:** Newtonin toisen lain mukaan $\Sigma F = ma$. Massa on kärryn oma ominaisuus ja sama kaikilla voimilla, joten se saadaan kuvaajan pisteestä ja kiihtyvyys uudelle voimalle sen avulla.
+**Kuvaajan lukeminen:** Kärryn B suora on loivempi (kuparinvärinen). Sen oikeanpuoleinen piste on ruudukon risteyksessä: $\Sigma F_1 = 3{,}0\,\text{N}$ ja $a_1 = 3{,}0\,\text{m/s}^2$. Voima $2{,}4\,\text{N}$ on mittapisteiden välissä, joten kiihtyvyys lasketaan massan kautta.
+**Kaava:** Massa $m = \dfrac{\Sigma F_1}{a_1}$, ja kiihtyvyys uudelle voimalle $a = \dfrac{\Sigma F}{m}$
+**Muunnokset:** Voimat ovat newtoneina ja kiihtyvyydet yksikössä $\text{m/s}^2$, joten muunnoksia ei tarvita.
+**Sijoitus:** $m = \dfrac{3{,}0\,\text{N}}{3{,}0\,\text{m/s}^2} = 1{,}0\,\text{kg}$ ja $a = \dfrac{2{,}4\,\text{N}}{1{,}0\,\text{kg}} = 2{,}4\,\text{m/s}^2$
+**Vastaus:** $2{,}4\,\text{m/s}^2$ voiman suuntaan, kaksi merkitsevää numeroa kuten voimassa $2{,}4\,\text{N}$.
+**Järkevyys:** Voima $2{,}4\,\text{N}$ on pienempi kuin $3{,}0\,\text{N}$, joten kiihtyvyyden pitää olla pienempi kuin $3{,}0\,\text{m/s}^2$. Kuvaajassa B:n suora on kohdassa $\Sigma F = 2{,}4\,\text{N}$ välillä $a = 2\,\text{m/s}^2$ ja $a = 3\,\text{m/s}^2$, eli lähellä arvoa $2{,}4\,\text{m/s}^2$.

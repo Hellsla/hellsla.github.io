@@ -39,4 +39,5 @@ a["fy4-16-L3-04"] = mu2 * d / (math.sin(al) - mu1 * math.cos(al))   # mgL sin α
 mj, ts, vs = 78.0, [0, .5, 1, 1.5, 2, 2.5, 3], [46.0, 29.8, 20.1, 14.4, 11.0, 9.0, 7.9]   # canopy table, first 3,0 s
 hj = sum((vs[i] + vs[i + 1]) / 2 * (ts[i + 1] - ts[i]) for i in range(6))   # trapezoids: 55,625 m
 a["fy4-16-L3-05"] = (mj * g + (0.5 * mj * vs[0] ** 2 - 0.5 * mj * vs[-1] ** 2) / hj) / 1000   # F_v = mg + ΔE_k/h = 765,2 + 1439,8 N = 2,205 kN
+a["fy4-16-L2-09"] = abs((550 - 60.0 * g) / 60.0)           # figure hissi-kuvaaja: N = 550 N read after 9,0 s; a = (N − mg)/m = −0,643 m/s² (down), magnitude 0,643
 print(json.dumps(a))

@@ -1,5 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: cd0c4b4ece89b6db
+CONTENT-HASH: 7f05bc17f75b75b4
+SCOPE: delta added-exercise from cd0c4b4ece89b6db base 611fb7d5c174
 
 ## Blocking
 (none)
@@ -8,9 +9,9 @@ CONTENT-HASH: cd0c4b4ece89b6db
 (none)
 
 ## Checked
-- New task fy2-2-L1-09 (unit prefixes, concept) compared with the reviewed Finnish: id, level, kind, answer $1000\,\text{kJ}$, unit, tolerance, four choices, correct flag on the same choice, all numbers identical.
-- Physics recomputed: 1 MJ = 1 000 000 J = 1000 kJ; 1 000 000 kJ = 1 GJ; 1000 GJ = 10^6 MJ; 1000 J = 1 kJ. Every distractor is really wrong and its feedback is right.
-- solutions.md L1-09: all seven steps and all formulas/numbers equal the Finnish; reasonableness check (1000 kJ x 1000 = 1 000 000 J) is valid.
-- Number format: decimal point, no Finnish left. No scope breach (prefixes are FY1 content applied to energy).
-- check_i18n.py: nothing for fy2-2; build.py fy2-2 succeeds. No fixes were needed.
-- Round 2 (label only): the step label of the L1-09 solution is now 'Model answer' instead of the plain answer label; the text, numbers, formulas and answer are unchanged, so the earlier findings stand. check_i18n.py shows nothing for fy2-2.
+- L1-10: 180 kcal = 180 000 cal x 4.1868 J = 753.6 kJ; symbolic formula, conversions and reasonableness (x4.2) right; tolerance 4 % covers table differences.
+- L1-11: tea water at decade 5 = 10^5 J = 100 kJ (two steps above 1 kJ); figure labels translated ("boiling tea water"), figure gives no value away; kettle check (2 kW, ~1 min) sensible.
+- Scope: unit conversion of energy only, inside FY2.
+- check script (one run): every added answer recomputed from the task text with my own formulas, equal to answers.py and exercises.json; answer, unit, tolerance, figure and lookup identical to the reviewed Finnish; every number of the task texts and solutions identical en/fi.
+- MAFY lookup values agree with docs/mafy-arvot.tsv (VERIFIED 2026-11-12).
+- No scope breach, no guardrail break (A or B) found.

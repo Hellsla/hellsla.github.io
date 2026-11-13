@@ -110,6 +110,18 @@
       "answer": 0.602,
       "unit": "kg",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-7-L1-09",
+      "level": 1,
+      "text": "The ethanol in a hand sanitiser evaporates from the skin. The mass of the evaporating ethanol is $5.0\\,\\text{g}$. Look up the specific heat of vaporisation of ethanol in the MAFY table (mafytaulukot.fi). How large a quantity of heat does the evaporating ethanol take from the skin? Give the answer in kilojoules.",
+      "lookup": "MAFY",
+      "answer": 4.2,
+      "unit": "kJ",
+      "tolerance": 0.04,
+      "hints": [
+        "The value is in the MAFY table *Aineiden olomuodon muutokset: Nesteet* (changes of state: liquids)."
+      ]
     }
   ],
   "level2": [
@@ -282,6 +294,15 @@
       "answer": "Teapot (about $84\\,\\text{kJ}$), ice bag ($167\\,\\text{kJ}$), pan (about $201\\,\\text{kJ}$), boiling water ($226\\,\\text{kJ}$).",
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-7-L2-09",
+      "level": 2,
+      "text": "A $0.60\\,\\text{kg}$ block of ice taken from the freezer is heated. The graph shows the temperature of the ice as a function of the energy transferred. Determine the specific heat capacity of ice using the graph. Use the first part of the graph, where the temperature of the ice rises. Read the values you need from the graph.",
+      "figure": "fy3-7/melting-curve",
+      "answer": 2083.3,
+      "unit": "J/(kg·K)",
+      "tolerance": 0.03
     }
   ],
   "level3": [

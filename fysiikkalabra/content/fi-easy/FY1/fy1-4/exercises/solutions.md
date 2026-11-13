@@ -198,3 +198,13 @@
 **Kysytty:** millä rivillä kulmakertoimen laskussa on virhe.
 **Periaate:** Kulmakerroin on $k = \dfrac{\Delta y}{\Delta x}$. Se lasketaan sovitetulta suoralta valituista kahdesta pisteestä. Sekä osoittajan että nimittäjän muutos on saman pisteparin loppuarvo miinus alkuarvo. Kulmakertoimen yksikkö on $y$:n yksikkö jaettuna $x$:n yksiköllä, tässä $\tfrac{\textsf{l}}{\text{min}}$.
 **Mallivastaus:** Virhe on rivillä 3. Ajan muutos on $\Delta t = 10{,}0\,\text{min} - 2{,}0\,\text{min} = 8{,}0\,\text{min}$, ei $12{,}0\,\text{min}$. Luku $12{,}0$ syntyy, kun ajat lasketaan yhteen tai kun tilavuuden muutoksen luku kopioidaan nimittäjään. Rivit 1 ja 2 ovat oikein: pisteet luetaan sovitetulta suoralta kaukana toisistaan, ja $\Delta V = 17{,}0\,\textsf{l} - 5{,}0\,\textsf{l} = 12{,}0\,\textsf{l}$. Rivin 4 kaava ja jakolasku ovat oikein, mutta rivi käyttää rivin 3 väärää lukua. Oikea kulmakerroin on $k = \dfrac{12{,}0\,\textsf{l}}{8{,}0\,\text{min}} = 1{,}5\,\tfrac{\textsf{l}}{\text{min}}$. Tarkistus: $1{,}5\,\tfrac{\textsf{l}}{\text{min}} \cdot 8{,}0\,\text{min} = 12{,}0\,\textsf{l}$. Se vastaa tilavuuden muutosta. Sen sijaan $1{,}0\,\tfrac{\textsf{l}}{\text{min}} \cdot 8{,}0\,\text{min} = 8{,}0\,\textsf{l}$ ei vastaa.
+
+## fy1-4-L1-09
+**Annettu:** tilavuus $V = 45\,\text{cm}^3$; taulukosta (MAFY-taulukko, kiinteiden aineiden tiheyksiä, alumiini) $\rho = 2{,}70\cdot10^{3}\,\text{kg/m}^3$
+**Kysytty:** kappaleen massa $m$ yksikössä $\text{g}$
+**Periaate:** Massa–tilavuuskuvaajan suora kulkee origon kautta, joten $m = kV$. Kulmakerroin $k$ on aineen tiheys $\rho$. Alumiinin tiheys luetaan taulukosta ja käytetään kulmakertoimena.
+**Kaava:** $m = kV = \rho V$
+**Muunnokset:** $2{,}70\cdot10^{3}\,\text{kg/m}^3 = 2{,}70\,\text{g/cm}^3$, koska $1\,\text{kg} = 10^{3}\,\text{g}$ ja $1\,\text{m}^3 = 10^{6}\,\text{cm}^3$. Silloin tilavuus voidaan käyttää kuutiosenttimetreinä, ja massa tulee grammoina.
+**Sijoitus:** $m = 2{,}70\,\dfrac{\text{g}}{\text{cm}^3} \cdot 45\,\text{cm}^3 = 121{,}5\,\text{g}$
+**Vastaus:** $m \approx 1{,}2\cdot10^{2}\,\text{g}$ (laskettu arvo $121{,}5\,\text{g}$), kaksi merkitsevää numeroa kuten tilavuudessa $45\,\text{cm}^3$. Tiheys on MAFY-taulukosta (kiinteiden aineiden tiheyksiä). Vastaus hyväksytään, kun se on enintään noin $\pm 4\,\%$ oikeasta arvosta.
+**Järkevyys:** Alumiini on noin kolme kertaa vettä tiheämpää. Vettä $45\,\text{cm}^3$ painaisi noin $45\,\text{g}$. Tulos $121{,}5\,\text{g}$ on noin $2{,}7$-kertainen siihen nähden.

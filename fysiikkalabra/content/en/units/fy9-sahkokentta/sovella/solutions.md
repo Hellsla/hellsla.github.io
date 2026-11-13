@@ -287,7 +287,7 @@
 **Find:** the point $b$ where the line crosses the vertical axis, its interpretation and the range of validity of the model
 **Principle:** The intercept is the value of the line when $\tfrac{1}{d} \to 0$, that is, when the plates are very far apart. Then the mutual capacitance of the plates vanishes, and what is left is the part that the meter measures in any case. The parallel-plate capacitor model requires a uniform field, so the distance must be small compared with the size of the plates (chapters *Graphing and fitting a straight line* and *The capacitor and its energy*).
 **Reading the graph:** The dashed extension of the line crosses the vertical axis at about $22\,\text{pF}$, which is marked in the graph with an orange point.
-**Formula:** $C = k \cdot \tfrac{1}{d} + b$, so $b = C_1 - k \cdot \tfrac{1}{d_1}$
+**Formula:** $C = k \cdot \tfrac{1}{d} + b$, so $b = C_1 - k \cdot \tfrac{1}{d_1}$, where $C_1$ is the value of the line at $\tfrac{1}{d} = \tfrac{1}{d_1}$
 **Conversions:** None needed: the slope and the value of the quantity $\tfrac{1}{d}$ are in the units $\text{pF}\cdot\text{mm}$ and $\tfrac{1}{\text{mm}}$, so the product is in picofarads.
 **Substitution:** $b = 93\,\text{pF} - 353.8\,\text{pF}\cdot\text{mm} \cdot 0.20\,\tfrac{1}{\text{mm}} = 93\,\text{pF} - 70.8\,\text{pF} = 22.2\,\text{pF}$
 **Answer:** $b \approx 22\,\text{pF}$, two significant figures, because it is the difference of two almost equal numbers.

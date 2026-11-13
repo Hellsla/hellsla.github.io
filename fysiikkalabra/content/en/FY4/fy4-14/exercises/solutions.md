@@ -319,3 +319,21 @@ $G = mg = 0.270\,\text{kg} \cdot 9.81\,\text{m/s}^2$, that is $G \approx 2.65\,\
 3 true: during the fall the air resistance increases with the speed, so the net force $mg - F_\text{v}$ and the acceleration decrease.
 4 false: at the terminal speed the net force is zero, so the air resistance is equal to the weight, that is $2.65\,\text{N}$, not greater.
 5 false: a lighter ball of the same size and shape has a smaller weight, and the air resistance cancels it already at a lower speed, so its terminal speed is lower.
+
+## fy4-14-L2-08
+**Given:** $m = 75.0\,\text{kg}$; from the graph the points $(6.0\,\text{s};\, 40.4\,\text{m/s})$ and $(10.0\,\text{s};\, 46.4\,\text{m/s})$; $g = 9.81\,\text{m/s}^2$; positive direction down
+**Find:** a) the air resistance $F_\text{v}$ at the moment $t = 8.0\,\text{s}$ in $\text{N}$; b) the air resistance as a percentage of the weight, and the value the speed approaches and the air resistance then
+**Principle:** The acceleration is the slope of the $(t,v)$ graph. The points on either side of the moment $8.0\,\text{s}$ give the average acceleration over that interval, which is a good estimate of the acceleration at the middle of the interval because the curve is almost straight there. Only the weight and the air resistance act on the skydiver, so Newton's second law gives the air resistance.
+**Free-body diagram:** The skydiver as a rectangle, positive direction down. The weight $\overline{G}$ from the centre down and the air resistance $\overline{F}_\text{v}$ from the bottom surface up, shorter than the weight because the speed is still increasing.
+```voimakuvio
+G 735,8
+F_v 623,3 ylös työntö @ala
+a alas
+v alas
+```
+**Reading the graph:** We read the points $(6.0\,\text{s};\, 40.4\,\text{m/s})$ and $(10.0\,\text{s};\, 46.4\,\text{m/s})$ on both sides of the moment $8.0\,\text{s}$. The speed is still increasing, so the slope, that is the acceleration, is positive downward. The rise of the curve flattens: on the interval $0 \ldots 2.0\,\text{s}$ the slope is about $9.3\,\text{m/s}^2$, almost $g$, but on $10 \ldots 12\,\text{s}$ only about $0.5\,\text{m/s}^2$.
+**Formula:** $a = \dfrac{v_2 - v_1}{t_2 - t_1}$ and $mg - F_\text{v} = ma$, so $F_\text{v} = m(g - a)$
+**Conversions:** The speeds are in $\text{m/s}$, the times in seconds and the mass in kilograms, so no conversions are needed.
+**Substitution:** a) $a = \dfrac{46.4\,\text{m/s} - 40.4\,\text{m/s}}{10.0\,\text{s} - 6.0\,\text{s}} = 1.50\,\text{m/s}^2$ and $F_\text{v} = 75.0\,\text{kg} \cdot (9.81\,\text{m/s}^2 - 1.50\,\text{m/s}^2) = 75.0\,\text{kg} \cdot 8.31\,\text{m/s}^2 = 623.25\,\text{N}$. b) The weight is $G = mg = 75.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 735.75\,\text{N}$, so $\dfrac{F_\text{v}}{G} = \dfrac{623.25\,\text{N}}{735.75\,\text{N}} = 0.847$
+**Answer:** a) $F_\text{v} \approx 623\,\text{N}$ upward, three significant figures like the mass $75.0\,\text{kg}$. b) The air resistance is about $85\,\%$ of the weight. The points of the graph level off near $48\,\text{m/s}$: over the last two seconds the speed increases by only $0.9\,\text{m/s}$. When the speed no longer changes, the acceleration is zero, so the net force is zero and the air resistance equals the weight, about $736\,\text{N}$.
+**Reasonableness:** The weight is about $736\,\text{N}$, and the air resistance $623\,\text{N}$ is smaller, as it must be while the skydiver is still accelerating downward. The acceleration $1.5\,\text{m/s}^2$ is clearly smaller than $g$ but not yet zero, so the air resistance is a little smaller than the weight. At the start the speed and the air resistance are zero, which is why the initial slope is almost $g$.

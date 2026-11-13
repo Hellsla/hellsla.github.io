@@ -198,3 +198,25 @@ Rivi 3 on oikein: $\dfrac{\Delta s}{\lambda} = \dfrac{6{,}0\,\text{cm}}{3{,}0\,\
 Rivi 4 on väärin. Lähteen $S_1$ aalto on kyllä kulkenut kaksi aallonpituutta pidemmän matkan, mutta kokonaisen aallonpituuden jälkeen aalto on taas samassa vaiheessa. Koska $\Delta s = 2\lambda$ eli $n = 2$, harja kohtaa pisteessä P harjan ja interferenssi on vahvistava.
 
 Oikea vastaus on rivi 4. Tarkistus: heikentävän interferenssin matkaerot olisivat tällä aallonpituudella $1{,}5\,\text{cm}$, $4{,}5\,\text{cm}$ ja $7{,}5\,\text{cm}$, eikä $6{,}0\,\text{cm}$ ole niiden joukossa.
+
+## fy5-12-L2-09
+**Annettu:** ruudukko (kuva), yksi ruutu $0{,}50\,\text{m}$; kaiuttimet $S_1$ ja $S_2$ samassa vaiheessa
+**Kysytty:** matkaero $\Delta s = |s_1 - s_2|$ pisteessä P metreinä
+**Periaate:** Matkaero on kahden lähteen etäisyyksien erotus pisteestä P. Kuvassa kaiuttimet ja piste P muodostavat suorakulmaisen kolmion, joten pidemmän etäisyyden saa Pythagoraan lauseella.
+**Kuvaajan lukeminen:** Piste P on kaiuttimen $S_1$ kanssa samalla vaakaviivalla $12$ ruudun päässä, joten $s_1 = 12 \cdot 0{,}50\,\text{m} = 6{,}0\,\text{m}$. Kaiutin $S_2$ on samalla pystyviivalla $5$ ruutua ylempänä, joten kaiuttimien väli on $d = 5 \cdot 0{,}50\,\text{m} = 2{,}5\,\text{m}$ kohtisuorassa $s_1$:tä vastaan.
+**Kaava:** $s_2 = \sqrt{s_1^2 + d^2}$ ja $\Delta s = s_2 - s_1$, joten $\Delta s = \sqrt{s_1^2 + d^2} - s_1$
+**Muunnokset:** Ruudut metreiksi: $12 \cdot 0{,}50\,\text{m} = 6{,}0\,\text{m}$ ja $5 \cdot 0{,}50\,\text{m} = 2{,}5\,\text{m}$.
+**Sijoitus:** $s_2 = \sqrt{(6{,}0\,\text{m})^2 + (2{,}5\,\text{m})^2} = \sqrt{42{,}25\,\text{m}^2} = 6{,}5\,\text{m}$ ja $\Delta s = 6{,}5\,\text{m} - 6{,}0\,\text{m} = 0{,}50\,\text{m}$
+**Vastaus:** $0{,}50\,\text{m}$, kaksi merkitsevää numeroa kuten ruudun koossa $0{,}50\,\text{m}$.
+**Järkevyys:** Kolmion sivut ruutuina ovat $5$, $12$ ja $13$, koska $5^2 + 12^2 = 13^2$, joten $s_2 = 13 \cdot 0{,}50\,\text{m} = 6{,}5\,\text{m}$. Matkaero ei voi olla suurempi kuin kaiuttimien väli $2{,}5\,\text{m}$, ja $0{,}50\,\text{m} < 2{,}5\,\text{m}$.
+
+## fy5-12-L3-06
+**Annettu:** ruudukko (kuva), yksi ruutu $0{,}50\,\text{m}$; kaiuttimet samassa vaiheessa, äänen nopeus $v = 340\,\text{m/s}$, ei heijastuksia
+**Kysytty:** pienin taajuus $f$, jolla pisteessä P on heikentävä interferenssi, hertseinä
+**Periaate:** Heikentävässä interferenssissä matkaero on puolen aallonpituuden verran yli kokonaisen määrän, $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$. Pienin taajuus tarkoittaa suurinta aallonpituutta, ja se vastaa arvoa $n = 0$. Taajuus saadaan perusyhtälöstä $v = f\lambda$.
+**Kuvaajan lukeminen:** Piste P on kaiuttimen $S_1$ kanssa samalla vaakaviivalla $12$ ruudun päässä, joten $s_1 = 12 \cdot 0{,}50\,\text{m} = 6{,}0\,\text{m}$. Kaiutin $S_2$ on samalla pystyviivalla $5$ ruutua ylempänä, joten kaiuttimien väli on $d = 5 \cdot 0{,}50\,\text{m} = 2{,}5\,\text{m}$ kohtisuorassa $s_1$:tä vastaan. Pythagoraan lauseella $s_2 = 13$ ruutua $= 6{,}5\,\text{m}$, joten $\Delta s = 6{,}5\,\text{m} - 6{,}0\,\text{m} = 0{,}50\,\text{m}$.
+**Kaava:** $\Delta s = \tfrac{1}{2}\lambda$, josta $\lambda = 2\Delta s$, ja $f = \dfrac{v}{\lambda}$, joten $f = \dfrac{v}{2\Delta s}$
+**Muunnokset:** Ei tarvita: matkaero on metreinä ja nopeus yksikössä $\text{m/s}$, joten $\tfrac{\text{m/s}}{\text{m}} = \text{s}^{-1} = \text{Hz}$.
+**Sijoitus:** $f = \dfrac{340\,\text{m/s}}{2 \cdot 0{,}50\,\text{m}} = \dfrac{340\,\text{m/s}}{1{,}0\,\text{m}} = 340\,\text{Hz}$
+**Vastaus:** $340\,\text{Hz}$, kaksi merkitsevää numeroa kuten matkaerossa $0{,}50\,\text{m}$.
+**Järkevyys:** Aallonpituus on $\lambda = \tfrac{340\,\text{m/s}}{340\,\text{Hz}} = 1{,}0\,\text{m}$, ja matkaero $0{,}50\,\text{m}$ on tasan puolet siitä. Pienemmällä taajuudella aallonpituus olisi yli $1{,}0\,\text{m}$ ja matkaero alle puolikas aallonpituus, joten täydellistä vaimenemista ei syntyisi. Seuraava heikentävä taajuus on $3 \cdot 340\,\text{Hz} = 1020\,\text{Hz}$, jolla $\Delta s = \tfrac{3}{2}\lambda$.

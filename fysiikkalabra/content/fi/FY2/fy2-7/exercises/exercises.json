@@ -1,400 +1,421 @@
 {
- "level1": [
-  {
-   "id": "fy2-7-L1-01",
-   "level": 1,
-   "core": true,
-   "text": "Voimalaitos syöttää sähköverkkoon vuorokaudessa $500\\,\\text{MWh}$ sähköenergiaa. Verkossa häviää $4{,}0\\,\\%$ lähtevästä energiasta. Kuinka paljon energiaa tulee perille? Anna vastaus megawattitunteina.",
-   "answer": 480,
-   "unit": "MWh",
-   "tolerance": 0.02
-  },
-  {
-   "id": "fy2-7-L1-02",
-   "level": 1,
-   "text": "Kuvassa on sähköverkon ja kaukolämpöverkon energiavirrat. Lämpölaitos syöttää kaukolämpöverkkoon viikossa $360\\,\\text{MWh}$ lämpöenergiaa. Lue kuvasta, kuinka suuri osa kaukolämpöverkkoon lähtevästä energiasta häviää. Kuinka paljon energiaa verkossa häviää viikon aikana? Anna vastaus megawattitunteina.",
-   "figure": "fy2-7/sankey",
-   "answer": 32.4,
-   "unit": "MWh",
-   "tolerance": 0.03
-  },
-  {
-   "id": "fy2-7-L1-03",
-   "level": 1,
-   "text": "Sähköä lähtee kantaverkkoon $80{,}0\\,\\text{MWh}$, ja käyttäjille asti tulee $76{,}8\\,\\text{MWh}$. Kuinka suuri on siirron hyötysuhde? Anna vastaus prosentteina.",
-   "answer": 96.0,
-   "unit": "%",
-   "tolerance": 0.02
-  },
-  {
-   "id": "fy2-7-L1-04",
-   "level": 1,
-   "text": "Voimalaitos syöttää verkkoon sähkötehoa $125\\,\\text{MW}$, ja verkossa häviää $4{,}0\\,\\%$ lähtevästä tehosta. Kuinka suuri teho tulee perille? Anna vastaus megawatteina.",
-   "answer": 120,
-   "unit": "MW",
-   "tolerance": 0.02
-  },
-  {
-   "id": "fy2-7-L1-05",
-   "level": 1,
-   "text": "Kaukolämpöputkesta karkaa ympäristöön lämpöä tasaisesti teholla $2{,}5\\,\\text{kW}$. Kuinka paljon energiaa häviää vuorokaudessa? Anna vastaus kilowattitunteina.",
-   "answer": 60,
-   "unit": "kWh",
-   "tolerance": 0.02
-  },
-  {
-   "id": "fy2-7-L1-06",
-   "level": 1,
-   "core": true,
-   "text": "Miksi sähköenergia siirretään kantaverkossa korkealla jännitteellä?",
-   "kind": [
-    "concept"
-   ],
-   "answer": "Samaan tehoon riittää pienempi virta, joten johtimet lämpenevät vähemmän ja häviö pienenee.",
-   "unit": "",
-   "tolerance": 0.02,
-   "choices": [
+  "level1": [
     {
-     "text": "Korkea jännite lisää voimalaitoksen tuottamaa energiaa, joten häviöillä ei ole väliä.",
-     "feedback": "Jännite ei lisää energiaa. Muuntaja muuttaa jännitettä, mutta energiaa se ei tuota, ja häviöt pienennetään siksi, että niitä on muuten paljon."
+      "id": "fy2-7-L1-01",
+      "level": 1,
+      "core": true,
+      "text": "Voimalaitos syöttää sähköverkkoon vuorokaudessa $500\\,\\text{MWh}$ sähköenergiaa. Verkossa häviää $4{,}0\\,\\%$ lähtevästä energiasta. Kuinka paljon energiaa tulee perille? Anna vastaus megawattitunteina.",
+      "answer": 480,
+      "unit": "MWh",
+      "tolerance": 0.02
     },
     {
-     "text": "Korkealla jännitteellä energia ei muutu matkalla lämmöksi lainkaan, joten häviötä ei synny.",
-     "feedback": "Häviö pienenee mutta ei häviä kokonaan: sähköverkossa häviää silti noin $4\\,\\%$ lähtevästä energiasta, koska virta lämmittää johtimia aina jonkin verran."
+      "id": "fy2-7-L1-02",
+      "level": 1,
+      "text": "Kuvassa on sähköverkon ja kaukolämpöverkon energiavirrat. Lämpölaitos syöttää kaukolämpöverkkoon viikossa $360\\,\\text{MWh}$ lämpöenergiaa. Lue kuvasta, kuinka suuri osa kaukolämpöverkkoon lähtevästä energiasta häviää. Kuinka paljon energiaa verkossa häviää viikon aikana? Anna vastaus megawattitunteina.",
+      "figure": "fy2-7/sankey",
+      "answer": 32.4,
+      "unit": "MWh",
+      "tolerance": 0.03
     },
     {
-     "text": "Samaan tehoon riittää pienempi virta, joten johtimet lämpenevät vähemmän ja häviö pienenee.",
-     "feedback": "Oikein: kun jännite on korkea, sama teho siirtyy pienemmällä virralla. Pienempi virta lämmittää johtimia vähemmän, joten siirrossa muuttuu vähemmän sähköenergiaa johtimien sisäenergiaksi, joka siirtyy lämpönä ympäristöön.",
-     "correct": true
+      "id": "fy2-7-L1-03",
+      "level": 1,
+      "text": "Sähköä lähtee kantaverkkoon $80{,}0\\,\\text{MWh}$, ja käyttäjille asti tulee $76{,}8\\,\\text{MWh}$. Kuinka suuri on siirron hyötysuhde? Anna vastaus prosentteina.",
+      "answer": 96.0,
+      "unit": "%",
+      "tolerance": 0.02
     },
     {
-     "text": "Korkea jännite saa sähkön kulkemaan johdossa nopeammin, joten lämpöä ehtii syntyä vähemmän.",
-     "feedback": "Häviön syy on johtimen lämpeneminen virran kulkiessa, ei kulkuaika. Korkea jännite auttaa siksi, että virta on pienempi."
+      "id": "fy2-7-L1-04",
+      "level": 1,
+      "text": "Voimalaitos syöttää verkkoon sähkötehoa $125\\,\\text{MW}$, ja verkossa häviää $4{,}0\\,\\%$ lähtevästä tehosta. Kuinka suuri teho tulee perille? Anna vastaus megawatteina.",
+      "answer": 120,
+      "unit": "MW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-7-L1-05",
+      "level": 1,
+      "text": "Kaukolämpöputkesta karkaa ympäristöön lämpöä tasaisesti teholla $2{,}5\\,\\text{kW}$. Kuinka paljon energiaa häviää vuorokaudessa? Anna vastaus kilowattitunteina.",
+      "answer": 60,
+      "unit": "kWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-7-L1-06",
+      "level": 1,
+      "core": true,
+      "text": "Miksi sähköenergia siirretään kantaverkossa korkealla jännitteellä?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Samaan tehoon riittää pienempi virta, joten johtimet lämpenevät vähemmän ja häviö pienenee.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Korkea jännite lisää voimalaitoksen tuottamaa energiaa, joten häviöillä ei ole väliä.",
+          "feedback": "Jännite ei lisää energiaa. Muuntaja muuttaa jännitettä, mutta energiaa se ei tuota, ja häviöt pienennetään siksi, että niitä on muuten paljon."
+        },
+        {
+          "text": "Korkealla jännitteellä energia ei muutu matkalla lämmöksi lainkaan, joten häviötä ei synny.",
+          "feedback": "Häviö pienenee mutta ei häviä kokonaan: sähköverkossa häviää silti noin $4\\,\\%$ lähtevästä energiasta, koska virta lämmittää johtimia aina jonkin verran."
+        },
+        {
+          "text": "Samaan tehoon riittää pienempi virta, joten johtimet lämpenevät vähemmän ja häviö pienenee.",
+          "feedback": "Oikein: kun jännite on korkea, sama teho siirtyy pienemmällä virralla. Pienempi virta lämmittää johtimia vähemmän, joten siirrossa muuttuu vähemmän sähköenergiaa johtimien sisäenergiaksi, joka siirtyy lämpönä ympäristöön.",
+          "correct": true
+        },
+        {
+          "text": "Korkea jännite saa sähkön kulkemaan johdossa nopeammin, joten lämpöä ehtii syntyä vähemmän.",
+          "feedback": "Häviön syy on johtimen lämpeneminen virran kulkiessa, ei kulkuaika. Korkea jännite auttaa siksi, että virta on pienempi."
+        }
+      ]
+    },
+    {
+      "id": "fy2-7-L1-07",
+      "level": 1,
+      "text": "Alueen sähköverkkoon lähtee vuorokaudessa $250\\,\\text{MWh}$ sähköenergiaa, ja käyttäjille asti tulee $238\\,\\text{MWh}$. Kuinka suuri osa lähtevästä energiasta häviää? Anna vastaus prosentteina.",
+      "answer": 4.8,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-7-L1-08",
+      "level": 1,
+      "text": "Kaukolämpöputkeen lähtee lämpölaitokselta teho $800\\,\\text{kW}$, ja kiinteistölle asti tulee teho $728\\,\\text{kW}$. Kuinka suuri teho häviää putkessa? Anna vastaus kilowatteina.",
+      "answer": 72,
+      "unit": "kW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-7-L1-09",
+      "level": 1,
+      "text": "Sähköverkkoon lähtee vuorokaudessa $500\\,\\text{kWh}$ sähköenergiaa, ja verkossa häviää $4{,}0\\,\\%$ lähtevästä energiasta. Muunna häviö jouleiksi: hae kilowattitunnin ja joulen välinen muunnos MAFY-taulukosta (mafytaulukot.fi). Kuinka paljon energiaa häviää? Anna vastaus megajouleina.",
+      "lookup": "MAFY",
+      "answer": 72,
+      "unit": "MJ",
+      "tolerance": 0.04,
+      "hints": [
+        "Arvo löytyy MAFY-taulukon taulukosta *Yksikkömuunnoksia*."
+      ]
     }
-   ]
-  },
-  {
-   "id": "fy2-7-L1-07",
-   "level": 1,
-   "text": "Alueen sähköverkkoon lähtee vuorokaudessa $250\\,\\text{MWh}$ sähköenergiaa, ja käyttäjille asti tulee $238\\,\\text{MWh}$. Kuinka suuri osa lähtevästä energiasta häviää? Anna vastaus prosentteina.",
-   "answer": 4.8,
-   "unit": "%",
-   "tolerance": 0.02
-  },
-  {
-   "id": "fy2-7-L1-08",
-   "level": 1,
-   "text": "Kaukolämpöputkeen lähtee lämpölaitokselta teho $800\\,\\text{kW}$, ja kiinteistölle asti tulee teho $728\\,\\text{kW}$. Kuinka suuri teho häviää putkessa? Anna vastaus kilowatteina.",
-   "answer": 72,
-   "unit": "kW",
-   "tolerance": 0.02
-  }
- ],
- "level2": [
-  {
-   "id": "fy2-7-L2-01",
-   "level": 2,
-   "core": true,
-   "text": "Huonosti eristetyssä kaukolämpöverkossa häviää $20\\,\\%$ verkkoon lähtevästä energiasta, ja asiakkaille asti tulee viikossa $600\\,\\text{MWh}$. Kuinka paljon energiaa verkossa häviää viikossa? Anna vastaus megawattitunteina.",
-   "answer": 150,
-   "unit": "MWh",
-   "tolerance": 0.02
-  },
-  {
-   "id": "fy2-7-L2-02",
-   "level": 2,
-   "text": "Kaupunginosa tarvitsee viikossa $1{,}20\\,\\text{GWh}$ lämpöä. Vanhan kaukolämpöverkon hyötysuhde on $80\\,\\%$. Kuinka paljon energiaa lämpölaitoksen on syötettävä verkkoon viikossa? Anna vastaus megawattitunteina.",
-   "answer": 1500,
-   "unit": "MWh",
-   "tolerance": 0.02
-  },
-  {
-   "id": "fy2-7-L2-03",
-   "level": 2,
-   "text": "Alueen sähköverkkoon syötetään vuodessa $2{,}40\\,\\text{TWh}$ sähköenergiaa (esimerkkitilanne), ja verkossa häviää $4{,}0\\,\\%$ lähtevästä energiasta. Kuinka suuri on häviöiden keskiteho, kun vuodessa on $8760\\,\\text{h}$? Anna vastaus megawatteina.",
-   "answer": 11,
-   "unit": "MW",
-   "tolerance": 0.02
-  },
-  {
-   "id": "fy2-7-L2-04",
-   "level": 2,
-   "text": "Rakennus tarvitsee kaukolämpöä tasaisesti teholla $40{,}0\\,\\text{kW}$. Vanhassa kaukolämpöverkossa häviää $20\\,\\%$ lähtevästä tehosta. Kuinka paljon energiaa lämpölaitoksen on syötettävä verkkoon vuorokaudessa tätä rakennusta varten? Anna vastaus kilowattitunteina.",
-   "answer": 1200,
-   "unit": "kWh",
-   "tolerance": 0.02
-  },
-  {
-   "id": "fy2-7-L2-05",
-   "level": 2,
-   "text": "Taulukossa on esimerkkiaineisto kaupunginosan kaukolämpöverkosta: lämpölaitoksen verkkoon syöttämä ja asiakkaille asti tullut lämpöenergia neljänä kuukautena.\n\na) Laske häviön osuus verkkoon syötetystä energiasta koko jaksolla. Anna vastaus prosentteina.\n\nb) Laske häviön osuus kuukausittain ja kerro, missä kuussa se on suurin. Esitä mahdollinen selitys.",
-   "kind": [
-    "data",
-    "reasoning"
-   ],
-   "answer": 9.62,
-   "unit": "%",
-   "tolerance": 0.02,
-   "data": {
-    "caption": "Kaukolämpöverkkoon syötetty ja perille tullut lämpöenergia (esimerkkiaineisto)",
-    "columns": [
-     "Kuukausi",
-     "$E_\\text{lähtö}\\,(\\text{MWh})$",
-     "$E_\\text{perille}\\,(\\text{MWh})$"
-    ],
-    "rows": [
-     [
-      "tammikuu",
-      "820",
-      "745"
-     ],
-     [
-      "helmikuu",
-      "760",
-      "692"
-     ],
-     [
-      "maaliskuu",
-      "640",
-      "577"
-     ],
-     [
-      "huhtikuu",
-      "430",
-      "381"
-     ]
-    ]
-   }
-  },
-  {
-   "id": "fy2-7-L2-06",
-   "level": 2,
-   "text": "Taulukossa on esimerkkiaineisto: samalla voimalinjalla siirretään sähkötehoa $100\\,\\text{MW}$, ja häviöteho mitataan eri jännitteillä.\n\na) Päättele taulukosta, miten häviöteho muuttuu, kun jännite kaksinkertaistetaan, ja arvioi häviöteho jännitteellä $320\\,\\text{kV}$. Anna vastaus megawatteina.\n\nb) Perustele lyhyesti kirjallisesti, miksi suurjännite vähentää häviötä.",
-   "kind": [
-    "data",
-    "reasoning"
-   ],
-   "answer": 0.0625,
-   "unit": "MW",
-   "tolerance": 0.02,
-   "data": {
-    "caption": "Voimalinjan häviöteho eri jännitteillä, siirretty teho $100\\,\\text{MW}$ (esimerkkiaineisto)",
-    "columns": [
-     "$U\\,(\\text{kV})$",
-     "$P_\\text{häviö}\\,(\\text{MW})$"
-    ],
-    "rows": [
-     [
-      "20",
-      "16"
-     ],
-     [
-      "40",
-      "4.0"
-     ],
-     [
-      "80",
-      "1.0"
-     ],
-     [
-      "160",
-      "0.25"
-     ]
-    ]
-   }
-  },
-  {
-   "id": "fy2-7-L2-07",
-   "level": 2,
-   "core": true,
-   "text": "Oppilas kirjoittaa: ”Sähkö kulkee johtoa pitkin valon nopeudella, joten sähkön siirrossa ei synny häviöitä.” Mikä seuraavista korjaa väitteen oikein?",
-   "kind": [
-    "error",
-    "concept"
-   ],
-   "answer": "Sähkö kulkee nopeasti, mutta virta lämmittää johdinta ja osa energiasta muuttuu lämmöksi.",
-   "unit": "",
-   "tolerance": 0.02,
-   "choices": [
+  ],
+  "level2": [
     {
-     "text": "Väite on oikein, koska nopeasti siirtyvä energia ei ehdi muuttua matkalla miksikään muuksi.",
-     "feedback": "Häviön syy ei ole siirtymisen kesto. Kun virta kulkee johtimessa, johdin lämpenee: osa sähköenergiasta muuttuu johtimen sisäenergiaksi ja siirtyy lämpönä ympäristöön, vaikka siirtyminen on nopeaa."
+      "id": "fy2-7-L2-01",
+      "level": 2,
+      "core": true,
+      "text": "Huonosti eristetyssä kaukolämpöverkossa häviää $20\\,\\%$ verkkoon lähtevästä energiasta, ja asiakkaille asti tulee viikossa $600\\,\\text{MWh}$. Kuinka paljon energiaa verkossa häviää viikossa? Anna vastaus megawattitunteina.",
+      "answer": 150,
+      "unit": "MWh",
+      "tolerance": 0.02
     },
     {
-     "text": "Sähkö kulkee johdossa hitaasti, joten matkalla ehtii hajota suuri osa sähköenergiasta.",
-     "feedback": "Häviö ei riipu siitä, kuinka nopeasti sähköenergia siirtyy. Se riippuu siitä, kuinka paljon johdin lämpenee virran kulkiessa."
+      "id": "fy2-7-L2-02",
+      "level": 2,
+      "text": "Kaupunginosa tarvitsee viikossa $1{,}20\\,\\text{GWh}$ lämpöä. Vanhan kaukolämpöverkon hyötysuhde on $80\\,\\%$. Kuinka paljon energiaa lämpölaitoksen on syötettävä verkkoon viikossa? Anna vastaus megawattitunteina.",
+      "answer": 1500,
+      "unit": "MWh",
+      "tolerance": 0.02
     },
     {
-     "text": "Osa energiasta katoaa matkalla kokonaan olemattomiin, vaikka sähkö kulkee nopeasti johdossa.",
-     "feedback": "Energia ei katoa. Häviöenergia siirtyy lämpönä ympäristöön, mutta käyttäjä ei saa sitä hyötyyn."
+      "id": "fy2-7-L2-03",
+      "level": 2,
+      "text": "Alueen sähköverkkoon syötetään vuodessa $2{,}40\\,\\text{TWh}$ sähköenergiaa (esimerkkitilanne), ja verkossa häviää $4{,}0\\,\\%$ lähtevästä energiasta. Kuinka suuri on häviöiden keskiteho, kun vuodessa on $8760\\,\\text{h}$? Anna vastaus megawatteina.",
+      "answer": 11,
+      "unit": "MW",
+      "tolerance": 0.02
     },
     {
-     "text": "Sähkö kulkee nopeasti, mutta virta lämmittää johdinta ja osa energiasta muuttuu lämmöksi.",
-     "feedback": "Oikein: häviö syntyy, kun virta lämmittää johtimia, ja tämä lämpö ei tule käyttäjälle. Siksi perille tulee vähemmän energiaa kuin lähtee.",
-     "correct": true
+      "id": "fy2-7-L2-04",
+      "level": 2,
+      "text": "Rakennus tarvitsee kaukolämpöä tasaisesti teholla $40{,}0\\,\\text{kW}$. Vanhassa kaukolämpöverkossa häviää $20\\,\\%$ lähtevästä tehosta. Kuinka paljon energiaa lämpölaitoksen on syötettävä verkkoon vuorokaudessa tätä rakennusta varten? Anna vastaus kilowattitunteina.",
+      "answer": 1200,
+      "unit": "kWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-7-L2-05",
+      "level": 2,
+      "text": "Taulukossa on esimerkkiaineisto kaupunginosan kaukolämpöverkosta: lämpölaitoksen verkkoon syöttämä ja asiakkaille asti tullut lämpöenergia neljänä kuukautena.\n\na) Laske häviön osuus verkkoon syötetystä energiasta koko jaksolla. Anna vastaus prosentteina.\n\nb) Laske häviön osuus kuukausittain ja kerro, missä kuussa se on suurin. Esitä mahdollinen selitys.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 9.62,
+      "unit": "%",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Kaukolämpöverkkoon syötetty ja perille tullut lämpöenergia (esimerkkiaineisto)",
+        "columns": [
+          "Kuukausi",
+          "$E_\\text{lähtö}\\,(\\text{MWh})$",
+          "$E_\\text{perille}\\,(\\text{MWh})$"
+        ],
+        "rows": [
+          [
+            "tammikuu",
+            "820",
+            "745"
+          ],
+          [
+            "helmikuu",
+            "760",
+            "692"
+          ],
+          [
+            "maaliskuu",
+            "640",
+            "577"
+          ],
+          [
+            "huhtikuu",
+            "430",
+            "381"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy2-7-L2-06",
+      "level": 2,
+      "text": "Taulukossa on esimerkkiaineisto: samalla voimalinjalla siirretään sähkötehoa $100\\,\\text{MW}$, ja häviöteho mitataan eri jännitteillä.\n\na) Päättele taulukosta, miten häviöteho muuttuu, kun jännite kaksinkertaistetaan, ja arvioi häviöteho jännitteellä $320\\,\\text{kV}$. Anna vastaus megawatteina.\n\nb) Perustele lyhyesti kirjallisesti, miksi suurjännite vähentää häviötä.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 0.0625,
+      "unit": "MW",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Voimalinjan häviöteho eri jännitteillä, siirretty teho $100\\,\\text{MW}$ (esimerkkiaineisto)",
+        "columns": [
+          "$U\\,(\\text{kV})$",
+          "$P_\\text{häviö}\\,(\\text{MW})$"
+        ],
+        "rows": [
+          [
+            "20",
+            "16"
+          ],
+          [
+            "40",
+            "4.0"
+          ],
+          [
+            "80",
+            "1.0"
+          ],
+          [
+            "160",
+            "0.25"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy2-7-L2-07",
+      "level": 2,
+      "core": true,
+      "text": "Oppilas kirjoittaa: ”Sähkö kulkee johtoa pitkin valon nopeudella, joten sähkön siirrossa ei synny häviöitä.” Mikä seuraavista korjaa väitteen oikein?",
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "answer": "Sähkö kulkee nopeasti, mutta virta lämmittää johdinta ja osa energiasta muuttuu lämmöksi.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Väite on oikein, koska nopeasti siirtyvä energia ei ehdi muuttua matkalla miksikään muuksi.",
+          "feedback": "Häviön syy ei ole siirtymisen kesto. Kun virta kulkee johtimessa, johdin lämpenee: osa sähköenergiasta muuttuu johtimen sisäenergiaksi ja siirtyy lämpönä ympäristöön, vaikka siirtyminen on nopeaa."
+        },
+        {
+          "text": "Sähkö kulkee johdossa hitaasti, joten matkalla ehtii hajota suuri osa sähköenergiasta.",
+          "feedback": "Häviö ei riipu siitä, kuinka nopeasti sähköenergia siirtyy. Se riippuu siitä, kuinka paljon johdin lämpenee virran kulkiessa."
+        },
+        {
+          "text": "Osa energiasta katoaa matkalla kokonaan olemattomiin, vaikka sähkö kulkee nopeasti johdossa.",
+          "feedback": "Energia ei katoa. Häviöenergia siirtyy lämpönä ympäristöön, mutta käyttäjä ei saa sitä hyötyyn."
+        },
+        {
+          "text": "Sähkö kulkee nopeasti, mutta virta lämmittää johdinta ja osa energiasta muuttuu lämmöksi.",
+          "feedback": "Oikein: häviö syntyy, kun virta lämmittää johtimia, ja tämä lämpö ei tule käyttäjälle. Siksi perille tulee vähemmän energiaa kuin lähtee.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "fy2-7-L2-08",
+      "level": 2,
+      "text": "Esimerkkitilanteessa sähköverkkoon syötetään viikossa $1000\\,\\text{MWh}$ sähköenergiaa ja siellä häviää $4{,}0\\,\\%$ lähtevästä energiasta.\n\nSamalla alueella kaukolämpöverkkoon syötetään viikossa $300\\,\\text{MWh}$ lämpöenergiaa ja siellä häviää $9{,}0\\,\\%$ lähtevästä energiasta.\n\nKummassa verkossa häviää viikossa enemmän energiaa?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "Sähköverkossa",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Kaukolämpöverkossa",
+          "feedback": "Tämä vertaa vain häviöprosentteja. Prosentti kertoo osuuden lähtevästä energiasta, mutta häviävä energia riippuu myös siitä, kuinka paljon energiaa verkkoon lähtee."
+        },
+        {
+          "text": "Sähköverkossa",
+          "feedback": "Oikein: sähköverkkoon lähtee yli kolminkertainen määrä energiaa, joten pienempikin osuus on energiana suurempi.",
+          "correct": true
+        },
+        {
+          "text": "Yhtä paljon molemmissa",
+          "feedback": "Häviö on osuus kertaa lähtevä energia. Sähköverkossa se on $0{,}040 \\cdot 1000\\,\\text{MWh} = 40\\,\\text{MWh}$ ja kaukolämpöverkossa $0{,}090 \\cdot 300\\,\\text{MWh} = 27\\,\\text{MWh}$, joten häviöt eivät ole yhtä suuret."
+        }
+      ],
+      "reason_prompt": "Mikä perustelu selittää vastauksesi?",
+      "reasons": [
+        {
+          "text": "Kaukolämpöverkon häviöprosentti on suurempi, joten sen häviö on suurempi myös energiana mitattuna.",
+          "feedback": "Tämä on yleinen virhekäsitys: suuri prosentti ei yksin ratkaise. Häviö on osuus lähtevästä energiasta, joten myös lähtevän energian määrä vaikuttaa."
+        },
+        {
+          "text": "Häviö on osuus lähtevästä energiasta, ja sähköverkkoon lähtee paljon enemmän energiaa kuin kaukolämpöverkkoon.",
+          "feedback": "Oikein: häviö on osuus kertaa lähtevä energia, joten lähtevän energian määrä ja osuus ratkaisevat yhdessä.",
+          "correct": true
+        },
+        {
+          "text": "Sähköverkossa on pitkät voimalinjat ja kaukolämpöverkossa lyhyet putket, joten sähköverkossa häviää enemmän.",
+          "feedback": "Tehtävässä ei kerrota matkoista, eikä pituus yksin ratkaise. Tehtävän tiedoista häviö saadaan laskemalla lähtevästä energiasta ja osuudesta."
+        },
+        {
+          "text": "Sähköenergia siirtyy valon nopeudella, joten sähköverkossa häviää enemmän kuin kaukolämpöverkossa.",
+          "feedback": "Energia siirtyy sähköverkossa todella nopeasti, mutta nopeus ei selitä häviön suuruutta. Häviö syntyy lämpenemisestä, ja sen määrän saa osuudesta ja lähtevästä energiasta."
+        }
+      ]
+    },
+    {
+      "id": "fy2-7-L2-09",
+      "level": 2,
+      "text": "Kuvassa on sähköverkon ja kaukolämpöverkon energiavirrat. Sekä sähköverkkoon että kaukolämpöverkkoon lähtee viikossa $250\\,\\text{MWh}$ energiaa. Lue kuvasta, kuinka suuri osa lähtevästä energiasta häviää kummassakin verkossa. Kuinka paljon enemmän energiaa häviää viikossa kaukolämpöverkossa kuin sähköverkossa? Anna vastaus megawattitunteina.",
+      "figure": "fy2-7/sankey",
+      "answer": 12.5,
+      "unit": "MWh",
+      "tolerance": 0.03
     }
-   ]
-  },
-  {
-   "id": "fy2-7-L2-08",
-   "level": 2,
-   "text": "Esimerkkitilanteessa sähköverkkoon syötetään viikossa $1000\\,\\text{MWh}$ sähköenergiaa ja siellä häviää $4{,}0\\,\\%$ lähtevästä energiasta.\n\nSamalla alueella kaukolämpöverkkoon syötetään viikossa $300\\,\\text{MWh}$ lämpöenergiaa ja siellä häviää $9{,}0\\,\\%$ lähtevästä energiasta.\n\nKummassa verkossa häviää viikossa enemmän energiaa?",
-   "kind": [
-    "concept",
-    "reasoning"
-   ],
-   "answer": "Sähköverkossa",
-   "unit": "",
-   "tolerance": 0.02,
-   "choices": [
+  ],
+  "level3": [
     {
-     "text": "Kaukolämpöverkossa",
-     "feedback": "Tämä vertaa vain häviöprosentteja. Prosentti kertoo osuuden lähtevästä energiasta, mutta häviävä energia riippuu myös siitä, kuinka paljon energiaa verkkoon lähtee."
+      "id": "fy2-7-L3-01",
+      "level": 3,
+      "text": "Kaukolämpöverkon asiakkaat tarvitsevat viikossa $600\\,\\text{MWh}$ lämpöä. Verkon häviö on $9{,}0\\,\\%$ lähtevästä energiasta. Putkien eristystä parannetaan, ja häviö pienenee arvoon $6{,}0\\,\\%$. Kuinka paljon vähemmän energiaa lämpölaitoksen on syötettävä verkkoon viikossa? Anna vastaus megawattitunteina.",
+      "answer": 21,
+      "unit": "MWh",
+      "tolerance": 0.02
     },
     {
-     "text": "Sähköverkossa",
-     "feedback": "Oikein: sähköverkkoon lähtee yli kolminkertainen määrä energiaa, joten pienempikin osuus on energiana suurempi.",
-     "correct": true
+      "id": "fy2-7-L3-02",
+      "level": 3,
+      "text": "Kaksi kaukolämpöverkkoa palvelee samanlaisia asiakkaita. Verkkoon A lähtee viikossa $500\\,\\text{MWh}$ ja sen hyötysuhde on $91{,}0\\,\\%$. Verkkoon B lähtee viikossa $520\\,\\text{MWh}$ ja sen hyötysuhde on $85{,}0\\,\\%$. Kumpi verkko tuo asiakkaille enemmän lämpöä ja kuinka monta megawattituntia enemmän? Anna vastaukseksi erotuksen suuruus megawattitunteina.",
+      "answer": 13.0,
+      "unit": "MWh",
+      "tolerance": 0.02
     },
     {
-     "text": "Yhtä paljon molemmissa",
-     "feedback": "Häviö on osuus kertaa lähtevä energia. Sähköverkossa se on $0{,}040 \\cdot 1000\\,\\text{MWh} = 40\\,\\text{MWh}$ ja kaukolämpöverkossa $0{,}090 \\cdot 300\\,\\text{MWh} = 27\\,\\text{MWh}$, joten häviöt eivät ole yhtä suuret."
+      "id": "fy2-7-L3-03",
+      "level": 3,
+      "text": "Kaukolämpöputkiston häviöteho on tasaisesti $150\\,\\text{kW}$. Yhden omakotitalon lämmitys kuluttaa vuodessa $20\\,\\text{MWh}$. Kuinka monen talon vuosittaista lämmitysenergiaa vastaa putkiston häviö vuodessa, kun vuodessa on $8760\\,\\text{h}$?",
+      "answer": 66,
+      "unit": "kpl",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-7-L3-04",
+      "level": 3,
+      "text": "Taulukossa on esimerkkiaineisto omakotitalon lämpöhäviöiden keskitehosta lämmityskauden aikana rakenneosittain. Talon lämpö tulee kaukolämpöverkosta, jonka häviö on $9{,}0\\,\\%$ lähtevästä energiasta. Lämmityskausi on $5000\\,\\text{h}$. Harkitaan kolmea parannusta: A) ulkoseinien eristys pienentää seinien häviötehoa $50\\,\\%$, B) ikkunoiden uusiminen pienentää ikkunoiden häviötehoa $40\\,\\%$ ja C) yläpohjan lisäeristys pienentää yläpohjan häviötehoa $60\\,\\%$.\n\na) Laske kunkin parannuksen talossa säästämä lämpöenergia lämmityskaudessa ja valitse eniten säästävä parannus.\n\nb) Kuinka paljon vähemmän energiaa lämpölaitoksen on syötettävä verkkoon lämmityskaudessa, kun talo toteuttaa tämän parannuksen? Anna vastaus megawattitunteina.\n\nc) Perustele kirjallisesti valintasi ja se, miksi lämpölaitoksen säästö on suurempi kuin talon säästö.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 6.6,
+      "unit": "MWh",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Talon lämpöhäviöiden keskiteho lämmityskaudella (esimerkkiaineisto)",
+        "columns": [
+          "Rakenneosa",
+          "$P_\\text{häviö}\\,(\\text{kW})$"
+        ],
+        "rows": [
+          [
+            "ulkoseinät",
+            "2.4"
+          ],
+          [
+            "yläpohja",
+            "1.5"
+          ],
+          [
+            "ikkunat",
+            "1.8"
+          ],
+          [
+            "alapohja",
+            "0.9"
+          ],
+          [
+            "ilmanvaihto",
+            "1.4"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy2-7-L3-05",
+      "level": 3,
+      "text": "Taulukossa on esimerkkiaineisto alueen sähköverkon vuorokaudesta: verkkoon syötetty keskiteho ja häviön osuus jakson aikana syötetystä energiasta.\n\na) Laske vuorokauden aikana verkkoon syötetty energia ja siinä häviävä energia. Kuinka suuri osa koko vuorokauden syötetystä energiasta häviää? Anna vastaus prosentteina.\n\nb) Vertaa tulosta Suomen sähköverkon noin $4\\,\\%$:n häviöön (Energiateollisuus, 2024).\n\nc) Millä jaksolla häviävä energia on suurin? Perustele kirjallisesti, miksi häviön osuus kasvaa, kun verkkoa kuormitetaan enemmän. Vihje: kun virta kaksinkertaistuu, häviöteho kasvaa noin nelinkertaiseksi.",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 4.1,
+      "unit": "%",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Sähköverkon syöttöteho ja häviön osuus vuorokauden jaksoilla (esimerkkiaineisto)",
+        "columns": [
+          "Jakso (klo)",
+          "$t\\,(\\text{h})$",
+          "$P_\\text{lähtö}\\,(\\text{MW})$",
+          "$p\\,(\\%)$"
+        ],
+        "rows": [
+          [
+            "00–07",
+            "7",
+            "18",
+            "1.5"
+          ],
+          [
+            "07–12",
+            "5",
+            "42",
+            "3.5"
+          ],
+          [
+            "12–19",
+            "7",
+            "50",
+            "4.2"
+          ],
+          [
+            "19–24",
+            "5",
+            "66",
+            "5.5"
+          ]
+        ]
+      }
     }
-   ],
-   "reason_prompt": "Mikä perustelu selittää vastauksesi?",
-   "reasons": [
-    {
-     "text": "Kaukolämpöverkon häviöprosentti on suurempi, joten sen häviö on suurempi myös energiana mitattuna.",
-     "feedback": "Tämä on yleinen virhekäsitys: suuri prosentti ei yksin ratkaise. Häviö on osuus lähtevästä energiasta, joten myös lähtevän energian määrä vaikuttaa."
-    },
-    {
-     "text": "Häviö on osuus lähtevästä energiasta, ja sähköverkkoon lähtee paljon enemmän energiaa kuin kaukolämpöverkkoon.",
-     "feedback": "Oikein: häviö on osuus kertaa lähtevä energia, joten lähtevän energian määrä ja osuus ratkaisevat yhdessä.",
-     "correct": true
-    },
-    {
-     "text": "Sähköverkossa on pitkät voimalinjat ja kaukolämpöverkossa lyhyet putket, joten sähköverkossa häviää enemmän.",
-     "feedback": "Tehtävässä ei kerrota matkoista, eikä pituus yksin ratkaise. Tehtävän tiedoista häviö saadaan laskemalla lähtevästä energiasta ja osuudesta."
-    },
-    {
-     "text": "Sähköenergia siirtyy valon nopeudella, joten sähköverkossa häviää enemmän kuin kaukolämpöverkossa.",
-     "feedback": "Energia siirtyy sähköverkossa todella nopeasti, mutta nopeus ei selitä häviön suuruutta. Häviö syntyy lämpenemisestä, ja sen määrän saa osuudesta ja lähtevästä energiasta."
-    }
-   ]
-  }
- ],
- "level3": [
-  {
-   "id": "fy2-7-L3-01",
-   "level": 3,
-   "text": "Kaukolämpöverkon asiakkaat tarvitsevat viikossa $600\\,\\text{MWh}$ lämpöä. Verkon häviö on $9{,}0\\,\\%$ lähtevästä energiasta. Putkien eristystä parannetaan, ja häviö pienenee arvoon $6{,}0\\,\\%$. Kuinka paljon vähemmän energiaa lämpölaitoksen on syötettävä verkkoon viikossa? Anna vastaus megawattitunteina.",
-   "answer": 21,
-   "unit": "MWh",
-   "tolerance": 0.02
-  },
-  {
-   "id": "fy2-7-L3-02",
-   "level": 3,
-   "text": "Kaksi kaukolämpöverkkoa palvelee samanlaisia asiakkaita. Verkkoon A lähtee viikossa $500\\,\\text{MWh}$ ja sen hyötysuhde on $91{,}0\\,\\%$. Verkkoon B lähtee viikossa $520\\,\\text{MWh}$ ja sen hyötysuhde on $85{,}0\\,\\%$. Kumpi verkko tuo asiakkaille enemmän lämpöä ja kuinka monta megawattituntia enemmän? Anna vastaukseksi erotuksen suuruus megawattitunteina.",
-   "answer": 13.0,
-   "unit": "MWh",
-   "tolerance": 0.02
-  },
-  {
-   "id": "fy2-7-L3-03",
-   "level": 3,
-   "text": "Kaukolämpöputkiston häviöteho on tasaisesti $150\\,\\text{kW}$. Yhden omakotitalon lämmitys kuluttaa vuodessa $20\\,\\text{MWh}$. Kuinka monen talon vuosittaista lämmitysenergiaa vastaa putkiston häviö vuodessa, kun vuodessa on $8760\\,\\text{h}$?",
-   "answer": 66,
-   "unit": "kpl",
-   "tolerance": 0.02
-  },
-  {
-   "id": "fy2-7-L3-04",
-   "level": 3,
-   "text": "Taulukossa on esimerkkiaineisto omakotitalon lämpöhäviöiden keskitehosta lämmityskauden aikana rakenneosittain. Talon lämpö tulee kaukolämpöverkosta, jonka häviö on $9{,}0\\,\\%$ lähtevästä energiasta. Lämmityskausi on $5000\\,\\text{h}$. Harkitaan kolmea parannusta: A) ulkoseinien eristys pienentää seinien häviötehoa $50\\,\\%$, B) ikkunoiden uusiminen pienentää ikkunoiden häviötehoa $40\\,\\%$ ja C) yläpohjan lisäeristys pienentää yläpohjan häviötehoa $60\\,\\%$.\n\na) Laske kunkin parannuksen talossa säästämä lämpöenergia lämmityskaudessa ja valitse eniten säästävä parannus.\n\nb) Kuinka paljon vähemmän energiaa lämpölaitoksen on syötettävä verkkoon lämmityskaudessa, kun talo toteuttaa tämän parannuksen? Anna vastaus megawattitunteina.\n\nc) Perustele kirjallisesti valintasi ja se, miksi lämpölaitoksen säästö on suurempi kuin talon säästö.",
-   "kind": [
-    "data",
-    "reasoning"
-   ],
-   "answer": 6.6,
-   "unit": "MWh",
-   "tolerance": 0.02,
-   "data": {
-    "caption": "Talon lämpöhäviöiden keskiteho lämmityskaudella (esimerkkiaineisto)",
-    "columns": [
-     "Rakenneosa",
-     "$P_\\text{häviö}\\,(\\text{kW})$"
-    ],
-    "rows": [
-     [
-      "ulkoseinät",
-      "2.4"
-     ],
-     [
-      "yläpohja",
-      "1.5"
-     ],
-     [
-      "ikkunat",
-      "1.8"
-     ],
-     [
-      "alapohja",
-      "0.9"
-     ],
-     [
-      "ilmanvaihto",
-      "1.4"
-     ]
-    ]
-   }
-  },
-  {
-   "id": "fy2-7-L3-05",
-   "level": 3,
-   "text": "Taulukossa on esimerkkiaineisto alueen sähköverkon vuorokaudesta: verkkoon syötetty keskiteho ja häviön osuus jakson aikana syötetystä energiasta.\n\na) Laske vuorokauden aikana verkkoon syötetty energia ja siinä häviävä energia. Kuinka suuri osa koko vuorokauden syötetystä energiasta häviää? Anna vastaus prosentteina.\n\nb) Vertaa tulosta Suomen sähköverkon noin $4\\,\\%$:n häviöön (Energiateollisuus, 2024).\n\nc) Millä jaksolla häviävä energia on suurin? Perustele kirjallisesti, miksi häviön osuus kasvaa, kun verkkoa kuormitetaan enemmän. Vihje: kun virta kaksinkertaistuu, häviöteho kasvaa noin nelinkertaiseksi.",
-   "kind": [
-    "data",
-    "model"
-   ],
-   "answer": 4.1,
-   "unit": "%",
-   "tolerance": 0.02,
-   "data": {
-    "caption": "Sähköverkon syöttöteho ja häviön osuus vuorokauden jaksoilla (esimerkkiaineisto)",
-    "columns": [
-     "Jakso (klo)",
-     "$t\\,(\\text{h})$",
-     "$P_\\text{lähtö}\\,(\\text{MW})$",
-     "$p\\,(\\%)$"
-    ],
-    "rows": [
-     [
-      "00–07",
-      "7",
-      "18",
-      "1.5"
-     ],
-     [
-      "07–12",
-      "5",
-      "42",
-      "3.5"
-     ],
-     [
-      "12–19",
-      "7",
-      "50",
-      "4.2"
-     ],
-     [
-      "19–24",
-      "5",
-      "66",
-      "5.5"
-     ]
-    ]
-   }
-  }
- ]
+  ]
 }

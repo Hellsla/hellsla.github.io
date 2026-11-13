@@ -77,11 +77,11 @@
 **Reasonableness:** During charging the terminal voltage is larger than the emf, as it should be. Across the charger and the leads there is $2.6\,\Omega \cdot 2.5\,\text{A} = 6.5\,\text{V}$, and $35.5\,\text{V} + 6.5\,\text{V} = 42.0\,\text{V}$. As the battery charges, its emf increases, so the current decreases and charging slows down towards the end.
 
 ### d)
-**Given:** voltage of the charger $U_\text{ch} = 42.0\,\text{V}$, charge passing through the battery $Q = 10.4\,\text{Ah}$, energy stored in the battery $W_\text{bat} = 374.4\,\text{Wh}$ (part a), price $15\,\text{c/kWh}$
+**Given:** voltage of the charger $U_\text{ch} = 42.0\,\text{V}$, charge passing through the battery $Q = 10.4\,\text{Ah}$, energy stored in the battery $W_\text{bat} = 374.4\,\text{Wh}$ (part a), price $a = 15\,\text{c/kWh}$
 **Find:** the efficiency $\eta$ of charging and the cost $K$ of one charge
 **Principle:** The power of the charger is $U_\text{ch} I$ (chapter *Electric power and the heating of a resistor*), so a constant-voltage charger supplies the energy $U_\text{ch} Q$ when the charge $Q$ passes through the battery. Only the share of the emf is stored in the battery as chemical energy, and the rest is transformed into internal energy of the resistances (chapter *Batteries and the charging circuit*). In the model the emf of the battery during charging is on average equal to the rated voltage $36\,\text{V}$. The cost is calculated from the energy supplied by the charger (chapter *Electrical energy at home*).
 **Formula:** $W_\text{ch} = U_\text{ch} Q$, $\eta = \dfrac{W_\text{bat}}{W_\text{ch}}$ and $K = aW_\text{ch}$
-**Conversions:** $437\,\text{Wh} = 0.437\,\text{kWh}$ and $15\,\text{c/kWh} = 0.15\,\text{€/kWh}$
+**Conversions:** $436.8\,\text{Wh} = 0.4368\,\text{kWh}$ and $15\,\text{c/kWh} = 0.15\,\text{€/kWh}$
 **Substitution:** $W_\text{ch} = 42.0\,\text{V} \cdot 10.4\,\text{Ah} = 436.8\,\text{Wh}$, $\eta = \dfrac{374.4\,\text{Wh}}{436.8\,\text{Wh}} = 0.857$ and $K = 0.15\,\tfrac{\text{€}}{\text{kWh}} \cdot 0.4368\,\text{kWh} = 0.066\,\text{€}$
 **Answer:** The efficiency is $\eta \approx 86\,\%$, and one full charge costs about $7\,\text{c}$. The precision is two significant figures, because the rated voltage of the battery $36\,\text{V}$ is given to only two figures.
 **Reasonableness:** The efficiency is below $100\,\%$, because $436.8\,\text{Wh} - 374.4\,\text{Wh} \approx 62\,\text{Wh}$ is transformed into internal energy of the resistances of the charger, the leads and the battery; that is why the charger and the battery warm up during charging. About seven cents for a ride of about $28\,\text{km}$ is very cheap.
@@ -193,7 +193,7 @@
 **Find:** the emf $E$ and the internal resistance $R_\text{s}$ of the group of batteries and a comparison with the values of one battery
 **Principle:** According to the model $U = E - R_\text{s} I$ the line crosses the vertical axis at $U = E$, because without a current there is no voltage drop across the internal resistance, and the slope of the line is $-R_\text{s}$ (chapter *Electromotive force and internal resistance*). The slope is read from two points of the fitted line far apart, not from the measured points (chapter *Graphing and fitting a straight line*). The emfs and the internal resistances of batteries connected in series add up.
 **Reading the graph:** The line crosses the vertical axis at $4.63\,\text{V}$. At $I = 1.20\,\text{A}$ the value of the line is $3.75\,\text{V}$.
-**Formula:** $E = U(0)$ and $R_\text{s} = -\dfrac{\Delta U}{\Delta I}$; per battery $\dfrac{E}{3}$ and $\dfrac{R_\text{s}}{3}$
+**Formula:** $E = U(0)$ and $R_\text{s} = -\dfrac{\Delta U}{\Delta I}$, where $U(0)$ is the value of the line at zero current and $\Delta U$ and $\Delta I$ are the differences between the points read from the line; the values of three batteries in series add up, so per battery $E_1 = \dfrac{E}{3}$ and $R_{\text{s}1} = \dfrac{R_\text{s}}{3}$
 **Conversions:** The quantities are in base units, so no conversions are needed.
 **Substitution:** $E = 4.63\,\text{V}$ and $R_\text{s} = -\dfrac{3.75\,\text{V} - 4.63\,\text{V}}{1.20\,\text{A} - 0\,\text{A}} = \dfrac{0.88\,\text{V}}{1.20\,\text{A}} = 0.733\,\Omega$; per battery $\dfrac{4.63\,\text{V}}{3} = 1.54\,\text{V}$ and $\dfrac{0.733\,\Omega}{3} = 0.244\,\Omega$
 **Answer:** The emf is $E \approx 4.63\,\text{V}$ and the internal resistance $R_\text{s} \approx 0.73\,\Omega$. The internal resistance is given to two significant figures, because the change in voltage $0.88\,\text{V}$ is read from the graph to about a hundredth.
@@ -272,7 +272,7 @@
 **Given:** resistance of the bulb $R = 3.6\,\Omega$, $E \approx 4.63\,\text{V}$ and $R_\text{s} \approx 0.733\,\Omega$ (part b)
 **Find:** the power $P$ transferred to the bulb and its fraction of the source power $EI$
 **Principle:** The bulb and the internal resistance are in series in the same loop, so the current is set by the sum of their resistances (chapter *Electromotive force and internal resistance*). The power of the bulb is obtained from its resistance and current with Joule's law, and the source produces electrical energy at the power $EI$ (chapter *Electric power and the heating of a resistor*).
-**Formula:** $I = \dfrac{E}{R + R_\text{s}}$, $P = RI^2$ and the fraction $\dfrac{P}{EI}$
+**Formula:** $I = \dfrac{E}{R + R_\text{s}}$, $P = RI^2$ and the fraction $= \dfrac{P}{EI} = \dfrac{R}{R + R_\text{s}}$
 **Conversions:** The quantities are in base units, so no conversions are needed.
 **Substitution:** $I = \dfrac{4.63\,\text{V}}{3.6\,\Omega + 0.733\,\Omega} = 1.069\,\text{A}$, $P = 3.6\,\Omega \cdot (1.069\,\text{A})^2 = 4.11\,\text{W}$, $EI = 4.63\,\text{V} \cdot 1.069\,\text{A} = 4.95\,\text{W}$ and $\dfrac{4.11\,\text{W}}{4.95\,\text{W}} = 0.831$
 **Answer:** The power transferred to the bulb is $P \approx 4.1\,\text{W}$, which is about $83\,\%$ of the source power. The precision is two significant figures like the resistance of the bulb $3.6\,\Omega$.
@@ -349,7 +349,7 @@
 **Given:** volume of the water $300\,\text{l}$, so the mass $m = 300\,\text{kg}$; temperatures $15\,{}^\circ\text{C}$ and $70\,{}^\circ\text{C}$; power $P = 3.0\,\text{kW}$; $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
 **Find:** the heating time $t$
 **Principle:** In the resistor electrical energy is transformed into internal energy (chapter *Electric power and the heating of a resistor*), and from the resistor it is transferred as heat to the water. The efficiency of a resistive heater is practically $100\,\%$, and when the heat losses are ignored, all the electrical energy heats the water (chapter *Heating and cooling of matter*). The power is constant, so the energy is the power times the time.
-**Formula:** $Pt = cm\Delta T$, so $t = \dfrac{cm\Delta T}{P}$
+**Formula:** $Pt = Q = cm\Delta T$, so $t = \dfrac{cm\Delta T}{P}$
 **Conversions:** $3.0\,\text{kW} = 3.0 \cdot 1000\,\text{W} = 3000\,\text{W}$; the change in temperature $70\,{}^\circ\text{C} - 15\,{}^\circ\text{C} = 55\,{}^\circ\text{C} = 55\,\text{K}$; finally $1\,\text{h} = 3600\,\text{s}$
 **Substitution:** $Q = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 300\,\text{kg} \cdot 55\,\text{K} = 6.914 \cdot 10^{7}\,\text{J}$ and $t = \dfrac{6.914 \cdot 10^{7}\,\text{J}}{3000\,\text{W}} = 23\,045\,\text{s} = 6.40\,\text{h}$
 **Answer:** The heating takes about $t \approx 6.4\,\text{h}$, two significant figures like the power $3.0\,\text{kW}$.

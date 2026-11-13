@@ -206,3 +206,13 @@ $G = 0.50\,\text{kg} \cdot 9.81\,\text{m/s}^2$
 $G = 4.905\,\text{N} \approx 4.9\,\text{N}$
 
 The force of the hook is the reading of the meter, $F = 4.9\,\text{N}$. The forces are equal, so on the same scale the arrows $G$ and $F$ are equally long, $G$ down from the centre and $F$ up from the top face. Diagram A lacks the force $F$ of the meter although the meter pulls the body. In diagram C the arrow $F$ is twice as long as $G$, which would correspond to a reading of about $9.8\,\text{N}$. Diagram D also has the force $F_\text{k}$, which is the force of the body on the meter: it acts on the meter and not on the body.
+
+## fy3-1-L1-10
+**Given:** $m = 85.0\,\text{kg}$; from the table (MAFY table *Aurinkokunta*, Mars, free-fall acceleration at the surface) $g_\text{Mars} = 3.72\,\text{m/s}^2$
+**Find:** the weight $G$ of the astronaut on the surface of Mars, in newtons
+**Principle:** Weight tells the strength of the interaction between Mars and the astronaut. Mass is the same everywhere, and the weight is given by $G = m g$ when $g$ is the free-fall acceleration of that celestial body.
+**Formula:** $G = m g_\text{Mars}$; the asked weight is already alone on the left-hand side
+**Conversions:** The mass is in kilograms and $g$ in $\text{m/s}^2$, so the result comes out directly in newtons.
+**Substitution:** $G = 85.0\,\text{kg} \cdot 3.72\,\text{m/s}^2 = 316.2\,\text{N}$
+**Answer:** $316\,\text{N}$, three significant figures as in the mass and the table value. The value $g_\text{Mars} = 3.72\,\text{m/s}^2$ is from the MAFY table *Aurinkokunta*; tables differ slightly, and an answer within about $\pm 4\,\%$ is accepted.
+**Reasonableness:** On Earth the weight would be $85.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 \approx 834\,\text{N}$. The $g$ of Mars is about $0.38$ times the value on Earth, and $0.38 \cdot 834\,\text{N} \approx 317\,\text{N}$, so the result fits.

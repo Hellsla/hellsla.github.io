@@ -210,3 +210,14 @@ $m v = 0.020\,\text{kg} \cdot 20\,\text{m/s}$, that is $m v = 0.40\,\text{kg}\cd
 $F_\text{avg} = \dfrac{0.40\,\text{kg}\cdot\text{m/s}}{0.0010\,\text{s}}$, that is $F_\text{avg} = 400\,\text{N}$
 
 The nearest option is $400\,\text{N}$. Reasonableness: the weight of the hailstone is $0.020\,\text{kg} \cdot 9.81\,\text{m/s}^2 \approx 0.20\,\text{N}$, about $2000$ times smaller than the force of the roof, so ignoring the weight was justified. The other options come from errors: $0.4\,\text{N}$ when milliseconds are not converted to seconds, $4000\,\text{N}$ when the kinetic energy $\tfrac{1}{2} m v^2 = 4.0\,\text{J}$ is used instead of the momentum, and $400\,000\,\text{N}$ when the mass is substituted in grams.
+
+## fy4-9-L2-08
+**Given:** from the graph the force as a function of time; the greatest force $F_\text{max} = 900\,\text{N}$ and the contact ends at $\Delta t = 12\,\text{ms}$
+**Find:** the average force $F_\text{avg}$ in $\text{N}$
+**Principle:** The force changes, so the impulse is read from the area between the graph and the time axis. The average force is the constant force that would give the same impulse in the same time, so $F_\text{avg}\,\Delta t = I$.
+**Reading the graph:** The force rises steadily from zero to $900\,\text{N}$ by $6\,\text{ms}$ and falls to zero at $12\,\text{ms}$. The region is a triangle with base $12\,\text{ms}$ and height $900\,\text{N}$.
+**Formula:** $I = \tfrac{1}{2} F_\text{max}\,\Delta t$ and $F_\text{avg} = \dfrac{I}{\Delta t}$, so $F_\text{avg} = \tfrac{1}{2} F_\text{max}$
+**Conversions:** $\Delta t = 12\,\text{ms} = 0.012\,\text{s}$
+**Substitution:** $I = \tfrac{1}{2} \cdot 900\,\text{N} \cdot 0.012\,\text{s} = 5.4\,\text{N}\cdot\text{s}$ and $F_\text{avg} = \dfrac{5.4\,\text{N}\cdot\text{s}}{0.012\,\text{s}} = 450\,\text{N}$
+**Answer:** $450\,\text{N}$, two or three significant figures, the precision of the values read from the graph.
+**Reasonableness:** The average is half the peak, as it should be for a force that rises and falls steadily. It is smaller than $900\,\text{N}$ and larger than zero.

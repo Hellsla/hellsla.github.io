@@ -1,20 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 2d22792f6d7cc426
+CONTENT-HASH: 6a4b518eb95a91d8
+SCOPE: delta added-exercise from 2d22792f6d7cc426 base 611fb7d5c174
+Mode: delta
+Round: 2
 
 ## Blocking
-(none)
 
 ## Polish
-- exercises.json:260 (fy2-3-L2-08) — two problems with realism. The stove's powers (2,0 kW and 4,0 kW) are well below the lesson table's sähkökiuas 8 kW. Also, a resistance stove with fixed elements cannot double its own power. This is a C-level idealisation, not wrong physics — fix it by comparing two stoves ("kiuas A … kiuas B"), or use values in the stove range, e.g. 12 kWh in 2,0 h vs 1,0 h (6,0 kW vs 12 kW is still high). Two stoves is the cleaner fix.
-- exercises.json:284 (fy2-3-L2-08, the "nelinkertaiseksi" feedback) — "riippuu ajasta suoraan käänteisesti" is awkward wording — write "on kääntäen verrannollinen aikaan, kun energia pysyy samana".
-- solutions.md:135 (fy2-3-L1-08, carried over) — "Moottori muuntaa energiaa tasaisesti" is not needed for a keskiteho — write "Keskiteho on muuntunut energia jaettuna ajalla".
-- solutions.md:187 (fy2-3-L3-04, carried over) — "satoja megawatteja" for hydro: most Finnish hydro plants are tens of MW and the largest is about 190 MW — write "kymmenistä megawateista noin 200 megawattiin".
-- docs/exercise-bank/FY2.md:24 (carried over) — the plan's stair-climb task needs mgh (FY4). Update the plan to match the set.
+- exercises.json fy2-3-L1-09: the symbol "hp" usually stands for mechanical horsepower (745,7 W). The text now says "metristä hevosvoimaa", which settles the value; "hv" would be the symbol for the metric unit. Both values are inside the 4 % tolerance (6,71 against 6,62 MJ), so this is C.
 
 ## Checked
-- New task L2-08, recomputed: P1 = 6,0 kWh : 3,0 h = 2,0 kW and P2 = 6,0 kWh : 1,5 h = 4,0 kW, so the ratio is 2,0. Exactly one option is correct ("kaksinkertaiseksi"). Each distractor (puolittuu, sama, nelinkertainen) is really wrong, and its feedback names the right reason: at fixed E, P is inversely proportional to t.
-- L2-08 solution: P = E : t is stated before substitution, the units (kWh : h = kW) are consistent, and it agrees with the lesson's notation. "Tasaisella teholla" is stated in the task.
-- L2-08 scope: only P = ΔE/Δt, with no work, force or FY4 content. The kind "concept, reasoning" fits.
-- answers.py: the L2-08 line is a comment (multiple choice, no number), which is correct. All 21 lines run, and every numeric answer agrees with exercises.json within tolerance (L2-04 78,84 → 79, L3-01 15,18 → 15, L3-02 342 → 340, L3-03 102 → 100, L3-05 43,2 → 43).
-- The rest of the set is unchanged since the previous PASS (82920b17): the earlier recomputation of L2-05, L2-07, L3-04 and L3-05 still holds.
-- The hash was 2d22792f6d7cc426 at the start and at the end.
+- Hash 6a4b518eb95a91d8 at the start and the end. I judged only the added L1-09 and L1-10.
+- L1-09 recomputed in my own script: P = 5,0 · 735,5 W = 3677,5 W, Δt = 1800 s, ΔE = PΔt = 6,62 MJ, the same as answers.py and exercises.json (MJ, 0,04).
+- L1-09 text now asks for the motor's mechanical output power and mechanical energy, as I suggested in round 1. The task and the solution now agree, and the "tasaisesti" condition is stated.
+- L1-09 solution: ΔE = PΔt is solved before substitution, the hp → W, min → s and J → MJ conversions are shown, and the result has two significant figures. The checks (≈ 6,7 MJ, ≈ 1,8 kWh) are right.
+- L1-10 now asks for the power ratio. From the figure, A gives 60 000 J : 40 s = 1500 W and B gives 40 000 J : 80 s = 500 W, so P_A/P_B = 3,0. This matches answers.py and exercises.json (unit "", 0,02).
+- L1-10 figure: A runs to (80; 120) and B to (80; 40) on 10 s and 20 kJ gridlines, and the description agrees. No power is printed, so the answer is not given away.
+- L1-10 solution: it uses the slope as the power (the lesson's statement). The check 120 kJ : 40 kJ at the same 80 s is independent of the main calculation and gives the same ratio.
+- L1-10 differs from L1-04: L1-04 asks only P_A, and the ratio needs both lines.

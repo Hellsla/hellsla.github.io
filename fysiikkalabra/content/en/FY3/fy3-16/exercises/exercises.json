@@ -109,6 +109,18 @@
       "answer": 250,
       "unit": "s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-16-L1-09",
+      "level": 1,
+      "text": "In a sauna, $0.30\\,\\text{kg}$ of water that is already at $100\\,{}^\\circ\\text{C}$ is thrown onto the heater stones and vaporises completely. The heat needed for vaporisation is $Q = rm$, where $r$ is the specific latent heat of vaporisation of water.\n\nLook up the specific latent heat of vaporisation of water in the MAFY table (mafytaulukot.fi). How much heat is taken from the heater stones by the vaporisation of the water? Give the answer in kilojoules.",
+      "lookup": "MAFY",
+      "answer": 678.0,
+      "unit": "kJ",
+      "tolerance": 0.04,
+      "hints": [
+        "The value is in the MAFY table *Aineiden olomuodon muutokset: Nesteet* (changes of state: liquids)."
+      ]
     }
   ],
   "level2": [
@@ -261,6 +273,24 @@
           "feedback": "Here the rise in the outdoor temperature is forgotten. The power through the wall $P = UA\\Delta T$ increases when the temperature difference increases by the factor $1.5$, so the ice melts faster and the time is shorter than triple."
         }
       ]
+    },
+    {
+      "id": "fy3-16-L2-09",
+      "level": 2,
+      "text": "A metal block is heated with an electric resistor at a constant power. The graph shows the temperature of the block as a function of time. The mass of the block is $2.0\\,\\text{kg}$ and the power of the resistor is $400\\,\\text{W}$. Assume that all the electric power is transferred to the block as heat. Read the change in temperature and the time it took from the graph and calculate the specific heat capacity of the metal. Give the answer in $\\text{J/(kg}\\cdot\\text{K)}$.",
+      "figure": "fy3-6/heating-line",
+      "answer": 900.0,
+      "unit": "J/(kg·K)",
+      "tolerance": 0.04
+    },
+    {
+      "id": "fy3-16-L2-10",
+      "level": 2,
+      "text": "A cool bag is packed with $0.60\\,\\text{kg}$ of ice that has just been taken from a freezer, at $-16\\,{}^\\circ\\text{C}$. The graph shows the temperature of this ice as a function of the energy transferred. Heat is transferred through the walls of the bag to the ice at a constant power of $25\\,\\text{W}$. How long does it take before all the ice has melted into water at $0\\,{}^\\circ\\text{C}$? Read the energy needed from the graph and give the answer in hours.",
+      "figure": "fy3-7/melting-curve",
+      "answer": 2.4444,
+      "unit": "h",
+      "tolerance": 0.03
     }
   ],
   "level3": [

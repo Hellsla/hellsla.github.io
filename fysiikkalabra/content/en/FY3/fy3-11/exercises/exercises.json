@@ -113,6 +113,18 @@
       "answer": 3.25,
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-11-L1-09",
+      "level": 1,
+      "text": "A gas in a cylinder expands against the pressure of the outside air, which is one atmosphere ($1\\,\\text{atm}$). The pressure stays constant during the expansion, and the volume of the gas increases by $2.0\\,\\textsf{l}$.\n\nLook up the unit conversion from atmospheres to pascals in the MAFY table (mafytaulukot.fi). How much work does the gas do as it expands? Give the answer in joules.",
+      "lookup": "MAFY",
+      "answer": 200,
+      "unit": "J",
+      "tolerance": 0.04,
+      "hints": [
+        "The value is in the MAFY table *Yksikkömuunnoksia* (unit conversions)."
+      ]
     }
   ],
   "level2": [
@@ -309,6 +321,15 @@
           "feedback": "The statement is true, but it does not explain the answer. It holds for all heat engines and does not tell which is better; the comparison is decided only by the fraction $W/Q_1$."
         }
       ]
+    },
+    {
+      "id": "fy3-11-L2-09",
+      "level": 2,
+      "text": "A gas in the cylinder of a small gas engine is heated, and the gas expands at constant pressure. The graph shows the pressure $p$ of the gas as a function of the volume $V$ during the expansion. The cross-sectional area of the cylinder is $50\\,\\text{cm}^2$.\n\nHow far does the piston move during the expansion? Read the values you need from the graph. Give the answer in metres.",
+      "figure": "fy3-11/pv-isobaari",
+      "answer": 0.6,
+      "unit": "m",
+      "tolerance": 0.02
     }
   ],
   "level3": [

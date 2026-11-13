@@ -1,5 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: f2c0a93ba89108b4
+CONTENT-HASH: 73f9da6470edf29f
+Mode: delta
+Round: 1
 
 ## Blocking
 (none)
@@ -8,7 +10,6 @@ CONTENT-HASH: f2c0a93ba89108b4
 (none)
 
 ## Checked
-- L1-09 (en) is a level-1 true/false task with five statements; it keeps the structure of fi: one statement per misconception (energy used up, thermal energy not counted), and feedback that repairs it without giving the answer before the student chooses.
-- Wording is natural for the language and uses the glossary terms for mechanical, thermal, potential and kinetic energy.
-- Model answer in solutions.md explains each true and false statement, as in fi.
-- Round 2: the split L2-05 sum check is shorter, reads in steps joined by the connecting words, and keeps the numbers of fi; no pedagogy issue.
+- L1-10: the hint now names only the table (*Polttoaineiden LHV-lämpöarvoja*), not the row, as the teacher decided; the task text no longer contains the hint sentence.
+- Task still has one lookup and one multiplication (E = Hm); answer 86.8 MJ and 4 % tolerance unchanged and correct.
+- The figure task (kitka-pylvaat) is unchanged from the version passed; rest of the set unchanged.

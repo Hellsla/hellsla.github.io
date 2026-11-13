@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: a5e3a606c3d94d47
-Round: 3
+CONTENT-HASH: 1b1e4f5288cc758f
+
+Round: 1
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- exercises.json fy2-1-L1-10 — the 4 % tolerance is explained only in the solution; "noin" in the question would tell the student. Optional.
 
 ## Checked
-- Diff since round 2 (commit 442c889ba) touches one line in this set: solutions.md L2-05 Järkevyys. The sum check is now 60 % + 17,5 % = 77,5 %, 15 % + 7,5 % = 22,5 %, together 100 %; I recomputed the shares from the table (36,0; 10,5; 9,0; 4,5 of 60,0 GJ) and all agree. The split is easier to follow at phone width, and the stage reasoning (share between 0 and 100 %, heating the largest) is unchanged.
-- No exercise text, option or feedback changed in fy2-1; L1-09 and the other tasks stand as passed in round 2. Levels 9/7/5 meet the minimums.
-- Not re-opened: screenshots (pure text change).
-- Hash identical at start and end.
+- Diff: the hint sentence moved from the task text into the `hints` field; the question "Kuinka paljon kemiallista energiaa bensiinistä vapautuu?" now closes the text as its own sentence.
+- The hint names only the table (*Polttoaineiden LHV-lämpöarvoja*), not the value or the row, as the teacher decided 2026-11-12.
+- The `hints` entry is a single line a student can use without it giving the answer away.
+- Answer, unit, tolerance and the solution are unchanged (86,8 MJ), so the earlier review of the solution stands.
+- Hash identical at start and end (1b1e4f5288cc758f).

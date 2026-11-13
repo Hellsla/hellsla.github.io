@@ -187,6 +187,7 @@
     },
     "answer_for": "Vastaus tehtävään {{id}}",
     "check": "Tarkista",
+    "exercise_hint": "Vihje",
     "answer": "Vastaus",
     "solution": "Näytä ratkaisu",
     "derive": "Johda itse",

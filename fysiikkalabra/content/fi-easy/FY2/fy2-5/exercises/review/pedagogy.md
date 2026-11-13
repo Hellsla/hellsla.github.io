@@ -1,17 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 02606fa88d01b0b2
-Round: 4
+CONTENT-HASH: 05926100d039f73b
+SCOPE: delta added-exercise from 184c90a19efdc498 base 611fb7d5c174
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- solutions.md fy2-5-L1-09, Periaate: "Etanoli ei ole kirjan taulukossa" refers to a table in the book the exercise does not name. Optional: "Etanoli puuttuu oppitunnin taulukosta" or drop the sentence.
+- exercises.json fy2-5-L2-09: the hint-free task relies on the printed bar values; fine, but the question could add "Perustele, miksi puuta tarvitaan enemmän" for a reasoning step. Optional.
 
 ## Checked
-- New order task L2-08: text gives the four data lines, the prompt names quantity and direction (smallest to greatest), four items; as in the Finnish.
-- Conversions g and t to kg are needed and shown in the solution; the order differs from the mass order, so the task needs the calculation.
-- Solution keeps Find, Principle, Model answer; explains why the order differs from mass order and gives an estimate check.
-- Selkosuomi: added sentence explaining lämpöarvo, instructions split into two short sentences, solution sentences short; same physics as fi.
-- Duplicate "put in order" sentence (text and prompt) avoided as in the fi-easy wording; the other 16 tasks unchanged.
-- Round 3 -> 4 (commit 442c889ba): L3-04 Substitution line split into groups of four months (2100+1900+1600+1100 = 6700, 600+250+200+250 = 1300, 600+1100+1600+2000 = 5300, sum 6700+1300+5300 = 13 300); recomputed, correct, same numbers and wording pattern as the Finnish. No other change; no edits needed.
+- L1-09: situation, lookup instruction, question last; MAFY hint names only the table (teacher's decision); key 26,7 * 0,50 = 13,35 MJ; tolerance 4 % covers other tables.
+- L1-09 solution staged (given, principle, formula, units, substitution, sense check against petrol at two thirds); level 1 fits.
+- L2-09: the figure is needed; its description gives all seven printed values to a reader who cannot see it and does not state the answer.
+- L2-09 solution reads both values, equates E = Hm for the two fuels, and checks with the ratio 43 : 15 (about 3); the key 34,4 kg is correct.
+- Level 2 fits (read, compute E, invert the formula); not a repeat of L1-09 or the worked example; the question differs from other tasks using the same figure.
+- Finnish clear and in short sentences; case forms after numbers and units correct.
+- Hash is the same at the start and the end (05926100d039f73b).

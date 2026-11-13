@@ -355,6 +355,19 @@
           "feedback": "The conclusion extends the dependence outside the measured range. The height $8.00\\,\\text{m}$ is double the largest measured one, and the value $80\\,\\text{m}$ assumes that the distance grows in the same proportion and that the coefficient of friction stays the same. It is an estimate, not a measurement result."
         }
       ]
+    },
+    {
+      "id": "fy4-16-L2-09",
+      "level": 2,
+      "text": "A person of mass $60.0\\,\\text{kg}$ stands on a force-sensor plate in a lift that moves upwards. The graph shows the reading of the plate, that is, the normal force, as a function of time. The lift slows down before stopping. Read the normal force during the slowing-down phase from the graph and calculate the magnitude of the acceleration of the lift in this time.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "figure": "fy4-16/hissi-kuvaaja",
+      "answer": 0.6433,
+      "unit": "m/s²",
+      "tolerance": 0.02
     }
   ],
   "level3": [

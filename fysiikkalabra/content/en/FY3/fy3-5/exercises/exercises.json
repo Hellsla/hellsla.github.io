@@ -148,6 +148,18 @@
           "feedback": "Wrong: heat is the transfer of energy, and no heat is stored in the air. The extra energy is internal energy, and it came in as work."
         }
       ]
+    },
+    {
+      "id": "fy3-5-L1-10",
+      "level": 1,
+      "text": "An old textbook gives a quantity of heat in calories ($\\text{cal}$). A quantity of heat of $2.0\\,\\text{kcal}$ is transferred into a system, and work of $3.0\\,\\text{kJ}$ is done on it. Look up the conversion of one calorie ($1\\,\\text{cal}$) to joules in the MAFY table (mafytaulukot.fi). By how much does the internal energy of the system change? Give the answer in kilojoules.",
+      "lookup": "MAFY",
+      "answer": 11.3736,
+      "unit": "kJ",
+      "tolerance": 0.04,
+      "hints": [
+        "The value is in the MAFY table *Yksikkömuunnoksia* (unit conversions)."
+      ]
     }
   ],
   "level2": [
@@ -279,6 +291,15 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy3-5-L2-08",
+      "level": 2,
+      "text": "The piston of a pump compresses the air in a cylinder. The graph shows the force $F$ of the piston on the air as a function of the distance $s$ the piston moves. The piston is pushed so fast that no heat has time to be transferred into the air or out of it.\n\nBy how much does the internal energy of the air increase in the compression? Read the values you need from the graph.",
+      "figure": "fy3-5/piston-force",
+      "answer": 60,
+      "unit": "J",
+      "tolerance": 0.03
     }
   ],
   "level3": [

@@ -299,3 +299,25 @@ $F_\text{f} = \dfrac{10.2\,\text{N}}{3} = 3.40\,\text{N}$.
 **Find:** how large the force of the car on the truck $F_{\text{CT}}$ is compared with the force of the truck on the car $F_{\text{TC}}$ during the collision, and why. In the subscripts T is the truck and C the car.
 **Principle:** A force describes an interaction between two objects. In the collision the vehicles touch each other, so there is one interaction whose two forces act on different objects. By Newton's third law $\overline{F}_{\text{TC}} = -\overline{F}_{\text{CT}}$, so the forces are equally large and opposite in direction, regardless of the masses of the vehicles or of which one was moving.
 **Model answer:** The forces are equally large, $F_{\text{CT}} = F_{\text{TC}}$, because they are the force and the reaction force of the same interaction. The truck pushes the car backwards in the direction of the reversing, and the car pushes the truck with a force as large in the opposite direction during the whole collision. The masses $12\,\text{t}$ and $1.2\,\text{t}$ do not change this: the answer $F_{\text{CT}} = \tfrac{1}{10}\,F_{\text{TC}}$ treats a force as a property of an object that grows with the mass. The answer $F_{\text{CT}} = 0$ assumes that only a moving object can push, although a force arises from contact and does not require motion. The reason "the forces cancel each other" is wrong, even though the forces are equally large: $\overline{F}_{\text{TC}}$ acts on the car and $\overline{F}_{\text{CT}}$ on the truck, and forces that act on different objects are not added together. The change in the motion of the car is decided only by the forces that act on the car. Check: if the force of the car were smaller, the interaction would have two sides of different size, which contradicts the third law.
+
+## fy4-3-L1-09
+**Given:** from the graph at $t = 0.10\,\text{s}$ the reading of the force on cart B is about $+4.0\,\text{N}$ and the reading of the force on cart A about $-4.0\,\text{N}$
+**Find:** the magnitude of the force of cart A on cart B, $F_{AB}$, in $\text{N}$
+**Principle:** Cart A pushes cart B, and at the same time cart B pushes cart A. This is an interaction, so by Newton's third law the forces are equal in magnitude and opposite in direction. They act on different bodies.
+**Reading the graph:** At $0.10\,\text{s}$ the red series (the force on cart B) is about $+4.0\,\text{N}$ and the dark series (the force on cart A) about $-4.0\,\text{N}$. The signs are opposite because the forces point in opposite directions, and the magnitudes are equal.
+**Formula:** $F_{AB} = F_{BA}$, and the force on cart B is the reading of sensor B, so $F_{AB} = |F_B|$
+**Conversions:** The readings are already in newtons, so no conversions are needed.
+**Substitution:** $F_{AB} = |{+4.0\,\text{N}}| = 4.0\,\text{N}$
+**Answer:** $4.0\,\text{N}$ to the right, two significant figures like the values read from the graph.
+**Reasonableness:** Both sensors give the same magnitude although the carts have different masses: the third law does not depend on mass. The directions are opposite too (sensor A negative, sensor B positive), as a third-law pair requires.
+
+## fy4-3-L2-09
+**Given:** from the graph both sensors read zero up to $t_1 = 0.05\,\text{s}$ and return to zero at $t_2 = 0.15\,\text{s}$
+**Find:** the duration of the force $\Delta t$ in $\text{s}$
+**Principle:** The carts exert a force on each other only while they are in contact. By the third law the two forces are an interaction pair and act for exactly the same time: both sensor readings differ from zero over the same interval.
+**Reading the graph:** The dark and the red series are zero up to $t_1 = 0.05\,\text{s}$, rise (the dark one falls) toward $\pm 4.0\,\text{N}$ at $0.10\,\text{s}$ and return to zero at $t_2 = 0.15\,\text{s}$. The contact begins at $t_1$ and ends at $t_2$.
+**Formula:** $\Delta t = t_2 - t_1$
+**Conversions:** The times are in seconds, so no conversions are needed.
+**Substitution:** $\Delta t = 0.15\,\text{s} - 0.05\,\text{s} = 0.10\,\text{s}$
+**Answer:** $0.10\,\text{s}$; the points of the graph are $0.01\,\text{s}$ apart, so the time is read to about a hundredth of a second.
+**Reasonableness:** A collision of carts lasts a fraction of a second, and the force peaks ($4.0\,\text{N}$) halfway through the contact at $0.10\,\text{s}$, the middle of the interval $0.05\,\text{s}\ldots 0.15\,\text{s}$. The time is the same for both carts because the forces are a third-law pair.

@@ -262,6 +262,18 @@
      "feedback": "Laskussa on virhe. Tulos ei voi pitää paikkaansa: kun A kimpoaa taaksepäin, B:n liikemäärän on oltava suurempi kuin kokonaisliikemäärä $0{,}24\\,\\text{kg}\\cdot\\text{m/s}$, mutta $0{,}50\\,\\text{kg} \\cdot 0{,}36\\,\\text{m/s}$ on vain $0{,}18\\,\\text{kg}\\cdot\\text{m/s}$."
     }
    ]
+  },
+  {
+   "id": "fy4-10-L2-09",
+   "level": 2,
+   "text": "Ilmatyynyradalla vaunu A, jonka massa on $0{,}50\\,\\text{kg}$, törmää vaunuun B. Kuvaajassa on kummankin vaunun nopeus ajan funktiona, ja positiivinen suunta on oikealle. Radan kitka jätetään huomiotta törmäyksen aikana. Kuinka suuri on vaunun B massa?",
+   "kind": [
+    "graph"
+   ],
+   "figure": "fy4-10/ex-vt-kaarryt",
+   "answer": 0.3,
+   "unit": "kg",
+   "tolerance": 0.02
   }
  ],
  "level3": [
@@ -341,6 +353,19 @@
      ]
     ]
    }
+  },
+  {
+   "id": "fy4-10-L3-06",
+   "level": 3,
+   "text": "Ilmatyynyradalla vaunu A, jonka massa on $0{,}30\\,\\text{kg}$, osuu levossa olevaan vaunuun B, ja vaunut jäävät kiinni toisiinsa. Kuvaajassa on vaunujen paikka ajan funktiona. Radan kitka jätetään huomiotta. Kuinka paljon vaunujen liike-energiaa muuttuu törmäyksessä muuksi energiaksi?",
+   "kind": [
+    "graph",
+    "model"
+   ],
+   "figure": "fy4-10/ex-xt-tarra",
+   "answer": 0.036,
+   "unit": "J",
+   "tolerance": 0.03
   }
  ]
 }

@@ -193,3 +193,13 @@
 **Substitution:** $t_\text{A} = \dfrac{2.34\cdot10^{6}\,\text{J}}{85.0\,\text{W}} = 2.753\cdot10^{4}\,\text{s} = 7.647\,\text{h}$ and $t_\text{B} = \dfrac{2.20\cdot10^{6}\,\text{J}}{100\,\text{W}} = 2.20\cdot10^{4}\,\text{s} = 6.111\,\text{h}$. The difference is $7.647\,\text{h} - 6.111\,\text{h} = 1.54\,\text{h} \approx 1.5\,\text{h}$
 **Answer:** power bank A runs longer, about $1.5\,\text{h}$, two significant figures like the energy $0.65\,\text{kWh}$. The energy of power bank B is only $0.61\,\text{kWh}$, and its power is greater. So the claim is not correct.
 **Reasonableness:** The energy of power bank A, $650\,\text{Wh}$, divided by an estimate of $90\,\text{W}$ for the power $85\,\text{W}$ gives about $7\,\text{h}$. The energy of power bank B is $2.2:3.6 = 0.61\,\text{kWh}$, and $610\,\text{Wh} : 100\,\text{W}$ is about $6\,\text{h}$.
+
+## fy1-2-L1-10
+**Given:** from the table (MAFY table, Aurinkokunta) the mean distance of the Moon from the Earth $s = 384\,400\,\text{km}$; the speed of light $c = 2.998\cdot10^{8}\,\text{m/s}$
+**Asked:** the travel time $t$ of the signal in $\text{s}$
+**Principle:** A radio signal travels in vacuum at the constant speed $c$, so the travel time is the distance divided by the speed.
+**Formula:** $t = \dfrac{s}{c}$
+**Conversions:** The speed is in $\text{m/s}$, so the distance is converted to metres: $s = 384\,400\,\text{km} = 384\,400\cdot10^{3}\,\text{m} = 3.844\cdot10^{8}\,\text{m}$.
+**Substitution:** $t = \dfrac{3.844\cdot10^{8}\,\text{m}}{2.998\cdot10^{8}\,\text{m/s}} = 1.28\,\text{s}$
+**Answer:** $t \approx 1.3\,\text{s}$ (calculated value $1.28\,\text{s}$). The distance is from the MAFY table (Aurinkokunta); an answer within about $\pm 4\,\%$ is accepted.
+**Reasonableness:** Light travels about $3\cdot10^{8}\,\text{m}$ in a second and the distance to the Moon is about $4\cdot10^{8}\,\text{m}$, so the travel time is a little over a second. The result agrees.

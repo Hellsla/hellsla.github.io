@@ -1,19 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 2d22792f6d7cc426
-Round: 1
+CONTENT-HASH: 6a4b518eb95a91d8
+
+Round: 2
 
 ## Blocking
-(none)
 
 ## Polish
-- exercises.json L2-08 option 4 feedback — "teho riippuu ajasta suoraan käänteisesti" contradicts itself; write "teho on kääntäen verrannollinen aikaan".
-- exercises.json L2-08 option 1 feedback — "ajan puolittuminen kasvattaa tehoa eikä pienennä sitä" is fine, but "teho ja aika eivät ole suoraan verrannolliset" is more abstract than the Level 2 student needs; "mitä lyhyemmässä ajassa sama energia muuntuu, sitä suurempi teho" repairs the misconception directly.
-- solutions.md L2-08 Mallivastaus — the three "Teho ei ..." sentences at the end would read better as one line per option; the task has no numeric `answer` to check, so they carry the learning.
+- solutions.md L1-09 Järkevyys — "vähän vedenkeittimen tehoa suurempi": 3,7 kW is nearly double a kettle; write "noin kaksi kertaa vedenkeittimen teho".
+- exercises.json fy2-3-L1-10 — reading four points and two slopes before a ratio is the upper edge of level 1; acceptable.
 
 ## Checked
-- New task L2-08 (type 6, prediction of a change): kiuas context a 17-year-old knows; three values given, so the student can verify by calculation (2,0 kW → 4,0 kW) after predicting; the question is last.
-- Distractors are misconception-based: puolittuu (direct proportionality), pysyy samana (power depends on energy only), nelinkertaistuu (squared dependence); each feedback names the error.
-- Fits the slot and Level 2: reasoning with P = E : t, kWh and h used consistently, no unit conversion needed; does not repeat other tasks.
-- Solution gives P1, P2 and the ratio, so the correct option can be followed.
-- Levels 8/8/5 meet the minimums; earlier tasks unchanged.
-- Hash unchanged at start and end.
+- L1-09: "mekaaninen teho" and "metristä hevosvoimaa" make the 735,5 W lookup and the mechanical output unambiguous; the numbers are unchanged (6,6195 MJ), the hint names only the table, and the solution is consistent.
+- L1-10 now asks the power ratio A : B and no longer repeats L1-04. The figure is needed; its description gives both points of each line without the ratio; the 3,0 answer (1500 W : 500 W) agrees with answers.py, unit empty, tolerance 2 % fine.
+- L1-10 solution reads each line step by step, converts kJ to J, and checks the ratio at 80 s (120 : 40).
+- Question is last as its own sentence; "anna vastaus lukuna (suhde ilman yksikköä)" is clear.
+- Hash identical at start and end (6a4b518eb95a91d8).

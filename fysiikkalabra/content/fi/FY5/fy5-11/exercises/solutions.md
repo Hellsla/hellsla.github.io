@@ -250,3 +250,25 @@ D: $6{,}0\,\text{cm} : 24\,\text{cm} = 0{,}25$
 Suhteen mukaan pienimmästä suurimpaan eli diffraktion mukaan heikoimmasta voimakkaimpaan järjestys on D, A, C, B. Asetelmassa D rako on neljä aallonpituutta leveä, joten aalto kaartuu vain reunoilta. Asetelmissa C ja B rako on aallonpituutta kapeampi, ja aalto leviää laajalle raon taakse, voimakkaimmin asetelmassa B.
 
 Pelkkä raon leveys ei ratkaise järjestystä: kapein rako on C:ssä, mutta B:n aalto leviää enemmän, koska sen aallonpituus on suurempi. Pelkkä aallonpituuskaan ei ratkaise: D:n aallonpituus on suurin, mutta sen rako on niin leveä, että se taipuu heikoimmin.
+
+## fy5-11-L2-09
+**Annettu:** aaltoaltaan pohjan ruudukko (kuva), yksi ruutu $2{,}0\,\text{cm}$, aaltokoneen taajuus $f = 7{,}0\,\text{Hz}$
+**Kysytty:** aallon nopeus $v$ yksikössä $\text{cm/s}$
+**Periaate:** Tasoaallon aaltorintamat ovat harjoja, joten kahden peräkkäisen rintaman väli on aallonpituus $\lambda$. Altaassa aalto etenee tasaisella nopeudella, ja perusyhtälön mukaan $v = f\lambda$.
+**Kuvaajan lukeminen:** Seinän vasemmalla puolella kaksi aaltorintamaa ovat pystyviivoilla $1$ ja $5$, joten niiden väli on $5 - 1 = 4$ ruutua. Aallonpituus on $4 \cdot 2{,}0\,\text{cm} = 8{,}0\,\text{cm}$. Seinää ja rakoa ei tarvita.
+**Kaava:** $v = f\lambda$
+**Muunnokset:** Ruudut senttimetreiksi: $4\ \text{ruutua} = 4 \cdot 2{,}0\,\text{cm} = 8{,}0\,\text{cm}$. Muuta ei tarvita, koska vastaus pyydetään yksikössä $\text{cm/s}$.
+**Sijoitus:** $v = 7{,}0\,\text{Hz} \cdot 8{,}0\,\text{cm} = 7{,}0\,\text{s}^{-1} \cdot 8{,}0\,\text{cm} = 56\,\text{cm/s}$
+**Vastaus:** $56\,\text{cm/s}$, kaksi merkitsevää numeroa kuten taajuudessa $7{,}0\,\text{Hz}$ ja aallonpituudessa $8{,}0\,\text{cm}$.
+**Järkevyys:** Jaksonaika on $T = \tfrac{1}{7{,}0\,\text{Hz}} = 0{,}143\,\text{s}$, ja siinä ajassa aalto etenee $56\,\text{cm/s} \cdot 0{,}143\,\text{s} = 8{,}0\,\text{cm}$ eli yhden aallonpituuden. Nopeus $0{,}56\,\text{m/s}$ on aaltoaltaan aalloille tavallinen.
+
+## fy5-11-L2-10
+**Annettu:** aaltoaltaan pohjan ruudukko (kuva), yksi ruutu $2{,}0\,\text{cm}$; taajuus kaksinkertaistuu, $f' = 2f$, ja nopeus $v$ pysyy samana
+**Kysytty:** raon leveyden ja uuden aallonpituuden suhde $\tfrac{b}{\lambda'}$ (ei yksikköä)
+**Periaate:** Aallon nopeus riippuu väliaineesta, tässä veden syvyydestä, ei taajuudesta. Kun $v$ pysyy samana ja $v = f\lambda$, kaksinkertainen taajuus puolittaa aallonpituuden. Raon leveys ei muutu.
+**Kuvaajan lukeminen:** Seinän vasemmalla puolella aaltorintamat ovat pystyviivoilla $1$ ja $5$, joten $\lambda = 4 \cdot 2{,}0\,\text{cm} = 8{,}0\,\text{cm}$. Raon reunat ovat vaakaviivoilla $1$ ja $7$, joten rako on $7 - 1 = 6$ ruudun levyinen: $b = 6 \cdot 2{,}0\,\text{cm} = 12\,\text{cm}$.
+**Kaava:** $v = f\lambda = 2f\lambda'$, joten $\lambda' = \dfrac{\lambda}{2}$ ja $\dfrac{b}{\lambda'} = \dfrac{2b}{\lambda}$
+**Muunnokset:** Ruudut senttimetreiksi: $4 \cdot 2{,}0\,\text{cm} = 8{,}0\,\text{cm}$ ja $6 \cdot 2{,}0\,\text{cm} = 12\,\text{cm}$. Suhteessa pituuksien yksiköt supistuvat.
+**Sijoitus:** $\lambda' = \dfrac{8{,}0\,\text{cm}}{2} = 4{,}0\,\text{cm}$ ja $\dfrac{b}{\lambda'} = \dfrac{12\,\text{cm}}{4{,}0\,\text{cm}} = 3{,}0$
+**Vastaus:** $3{,}0$ (ei yksikköä), kaksi merkitsevää numeroa kuten aallonpituudessa $8{,}0\,\text{cm}$.
+**Järkevyys:** Kuvan aalloilla suhde oli $\tfrac{12\,\text{cm}}{8{,}0\,\text{cm}} = 1{,}5$, ja kaksinkertainen taajuus kaksinkertaistaa sen, $2 \cdot 1{,}5 = 3{,}0$. Rako on nyt selvästi aallonpituutta leveämpi, joten taipuminen heikkenee ja aalto etenee enemmän suoraan.

@@ -178,8 +178,9 @@ def force_rules(lid):
             + g.read_text().split("\n", 1)[1] + "\n")
 
 
-def exercise_rules(role, lid):
+def exercise_rules(role, lid, folder=None):
     """What a reviewer of the exercise set judges, and where its report goes."""
+    report = (folder / "exercises" / "review" / f"{role}.md") if folder is not None else None
     what = ("1. Every task's physics: the right law for the situation, its conditions met, data realistic (units, magnitudes, signs), inside the course's central contents and scope notes above and what the brief's lesson teaches.\n"
             "2. answers.py: each line computes the right physics from the task text; recompute all answers in ONE python call and compare; `unit` and `tolerance` fit the data's significant figures.\n"
             "3. solutions.md: every solution complete (NOTES §3 Complete solutions), the stated principle really applies and its reason is right, the unknown solved symbolically before substitution, conversions right, rounding justified by the really limiting datum, the reasonableness check a real check.\n"
@@ -192,8 +193,9 @@ def exercise_rules(role, lid):
             "4. Finnish: grammar, glossary terms, case after number+unit ($80\\,\\text{N}$:n voimalla), reading level; give the corrected sentence.\n"
             "5. Phone usability of the exercise captures listed above: nothing clipped, a long calculation still readable at 360 px.")
     return ((guardrails() if role == "science" else "") + force_rules(lid) + f"\n## What you judge (only the exercise set; the deterministic checks above are not repeated)\n{what}\n\n"
-            f"## Report: write `exercises/review/{role}.md` (in the lesson folder), under 400 words, findings only\n"
-            f"Line 1 `VERDICT: PASS` or `VERDICT: FAIL`; line 2 `CONTENT-HASH: <output of python3 scripts/reviews.py hash {lid} --exercises>` run at the start and again at the end "
+            f"## Report: write `{report if report is not None else 'exercises/review/' + role + '.md'}` with the Write tool, under 400 words, findings only "
+            f"(a report only in your reply is not recorded: the gate reads the file)\n"
+            f"Line 1 `VERDICT: PASS` or `VERDICT: FAIL`; line 2 `CONTENT-HASH: <output of python3 scripts/reviews.py hash {lid} --exercises>` (exactly this command: a translation's hash needs its --lang) run at the start and again at the end "
             f"(if it changed, the exercises were edited: redo the review). Then `## Blocking` (FAIL if and only if non-empty; each `file:line — problem — fix`), "
             f"`## Polish` (at most five, same format; language, style and taste go here, never under Blocking), `## Checked` (at most ten one-line items). "
             f"Never edit a lesson or exercise file. Read nothing the packet already gives you; never open lesson.md, inquiry.json or the simulation.\n")
@@ -304,7 +306,8 @@ def added_delta(folder, role, sc):
 
 def scope_line(sc):
     """The line 3 a PASS of an added-exercise delta review writes, so `reviews.py verify` can re-derive what it covered."""
-    return (f"\n**Line 3 of a PASS report** (after the hash): `SCOPE: delta added-exercise from {sc['from']} base {sc['base'][:12]}` exactly, so CI "
+    return (f"\n**Line 3 of a PASS report** (after the hash): `SCOPE: delta added-exercise from {sc['from']} base {sc['base'][:12]}`, copied character for character "
+            "(no words of your own on that line: a free-form SCOPE line fails CI), so CI "
             "can check that nothing but the added exercises changed since the version you passed (`reviews.py verify`).\n")
 
 
@@ -323,7 +326,7 @@ def exercise_packet(folder, role, fix=False):
             out += exercise_brief(folder)
             ad = added_delta(folder, role, sc) if mode == "delta" and sc["categories"] == ["added-exercise"] else None
             if ad:
-                out += ad[0] + figures_used(folder, role, text=ad[1]) + shots(folder, role, "exercises") + exercise_rules(role, lid) + scope_line(sc)
+                out += ad[0] + figures_used(folder, role, text=ad[1]) + shots(folder, role, "exercises") + exercise_rules(role, lid, folder) + scope_line(sc)
             elif mode == "delta":
                 prev = (review_dir(folder, "exercises") / f"{role}.md").read_text()
                 out += (f"\n## Delta review\nYou passed this exercise set earlier (report below). Since then only the diff below changed ({sc['why']}). "
@@ -333,7 +336,7 @@ def exercise_packet(folder, role, fix=False):
             else:
                 if sc["why"] != "no earlier PASS": out += f"\n## Full review\nReason: {sc['why']}.\n"
                 out += "\n## The exercise set\n" + "".join(block(courses.lesson_file(folder, n)) for n in files if role == "science" or n != "answers.py")
-            if not ad: out += figures_used(folder, role) + shots(folder, role, "exercises") + exercise_rules(role, lid)
+            if not ad: out += figures_used(folder, role) + shots(folder, role, "exercises") + exercise_rules(role, lid, folder)
     else:
         mode = "fix" if fix else "write"
         out, meta = header(folder, role, mode, "exercises")
@@ -508,7 +511,8 @@ def shots_visual(review, current, cmd):
 
 
 def visual_report_rules(path, hash_cmd, both=None):
-    return (f"\n## Report: write `{path}` (format and severities: .claude/agents/visual-editorial-reviewer.md), under 400 words\n"
+    return (f"\n## Report: write `{path}` with the Write tool (format and severities: .claude/agents/visual-editorial-reviewer.md), under 400 words; "
+            "a report only in your reply is not recorded: the gate reads the file\n"
             f"Line 1 `VERDICT: PASS` or `VERDICT: FAIL`; line 2 `CONTENT-HASH: <output of {hash_cmd}>` run at the start and again at the end. "
             f"Then `## Blocking` (FAIL if and only if non-empty; `[Critical|Major] file/figure — problem — why it matters — fix`), `## Polish` (at most five `[Minor]`), "
             f"`## Checked` (the captures you opened; at most ten lines), `## Scores` (illustrations · typography · Finnish · accessibility, 1–5). "
@@ -562,7 +566,7 @@ def visual_packet(folder, part="lesson"):
             out += figures_used(folder, "visual", ("inquiry.json", "exit-ticket.json", "exercises.json") if (part == "exercises" or both) else ("inquiry.json", "exit-ticket.json"))
             both = (f"exercises/review/visual.md", f"python3 scripts/reviews.py hash {lid} --exercises{lang_arg}") if both else None
         out += shots_visual(folder / "review", stamp_key, f"python3 scripts/screenshot.py {lid} --if-stale")
-        out += visual_report_rules(f"{'exercises/' if part == 'exercises' else ''}review/visual.md", f"python3 scripts/reviews.py hash {lid}{ex_arg}{lang_arg}", both)
+        out += visual_report_rules(str(folder / ("exercises" if part == "exercises" else "") / "review" / "visual.md").replace("//", "/"), f"python3 scripts/reviews.py hash {lid}{ex_arg}{lang_arg}", both)
         if ad: out += scope_line(sc)
     f = review_dir(folder, part) / "packet-visual.md"; f.parent.mkdir(parents=True, exist_ok=True); f.write_text(out)
     print(f"{f.relative_to(ROOT)}: {mode}, {len(out.encode())} bytes ≈ {len(out.encode()) // 4} tokens")

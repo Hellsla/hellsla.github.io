@@ -199,6 +199,29 @@ def two_radii():
     return f.svg()
 
 
+def karuselli():
+    """A question-safe figure for tasks: the radii of two points of a carousel, to scale (80 px = 1 m), no speeds."""
+    f = Fig("fy53-kar", 330, "Kaavakuva ylhäältä: pyörivä karuselli, jonka keskipiste on merkitty mustalla pisteellä. Keskipisteestä oikealle "
+            "kulkevalla säteellä ovat pisteet A ja B. Pisteen A etäisyys keskipisteestä on 0,60 metriä ja pisteen B 1,80 metriä; "
+            "etäisyydet on merkitty mittanuolilla. Mittasuhteet ovat oikeat, ja karusellin reuna on 2,00 metrin päässä keskipisteestä.")
+    cx, cy, R, m = 200, 165, 160, 80
+    f.circle(cx, cy, R, SAND_LIGHT, GRAIN, 3)
+    for deg in (60, 120, 180, 240, 300):
+        x, y = pos(cx, cy, R, deg); f.line(cx, cy, x, y, SAND, 2)
+    f.line(cx, cy, cx + R, cy, MUTED, 1.5)
+    f.circle(cx, cy, 6, INK)
+    xa, xb = cx + 0.60 * m, cx + 1.80 * m
+    for x, name in ((xa, r"\text{A}"), (xb, r"\text{B}")):
+        f.circle(x, cy, 8, WHITE, INK, 2.5)
+        f.tex(x, cy - 26, name, "middle")
+    # dimension lines: r_A above the radius, r_B below it
+    for x1, x2, y, label, tx in ((cx, xa, cy - 66, r"r_\text{A} = 0{,}60\,\text{m}", cx - 20), (cx, xb, cy + 50, r"r_\text{B} = 1{,}80\,\text{m}", cx + 20)):
+        f.line(x1, y, x2, y, INK, 2)
+        f.line(x1, y - 7, x1, y + 7, INK, 2); f.line(x2, y - 7, x2, y + 7, INK, 2)
+        f.tex(tx, y + (-22 if y < cy else 24), label, "start", w=220)
+    return f.svg()
+
+
 # The prediction's options: a puck on a string circles a stake counterclockwise; the string breaks at the marked point.
 def _option(fid, label, kind):
     f = Fig(fid, 420, label)
@@ -248,7 +271,7 @@ def opt_between():
                    "ja narun suunnan välistä.", "between")
 
 
-FIGURES = {"hero": hero, "tangent": tangent, "release": release, "dv": dv, "two-radii": two_radii,
+FIGURES = {"hero": hero, "tangent": tangent, "release": release, "dv": dv, "two-radii": two_radii, "karuselli": karuselli,
            "opt-tangent": opt_tangent, "opt-radial": opt_radial, "opt-curve": opt_curve, "opt-between": opt_between}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
@@ -256,6 +279,7 @@ REUSE = {
     "release": "reveals: after the string breaks the puck moves straight along the tangent",
     "dv": "reveals: the change of velocity between two moments of uniform circular motion",
     "two-radii": "reveals: twice the radius at the same period gives twice the speed",
+    "karuselli": "safe: top view of a carousel with two points at the radii 0,60 m and 1,80 m, no speeds",
     "opt-tangent": "safe: one option of a prediction (straight along the tangent), no verdict",
     "opt-radial": "safe: one option of a prediction (straight out along the string), no verdict",
     "opt-curve": "safe: one option of a prediction (keeps circling), no verdict",

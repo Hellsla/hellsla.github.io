@@ -37,4 +37,8 @@ k = sum(p / v ** 3 for v, p in tab3) / len(tab3) * 1e3        # mean P/v³ = 1,2
 a["fy4-15-L3-04"] = round(2 * k / (ra * math.pi * 40 ** 2) * 100, 0)   # η = 2k/(ρA) = 39,86 % -> 40 %
 surplus = [40, 52, 62, 58, 48, 40]                            # table of L3-05: surplus power in MW, one hour each
 a["fy4-15-L3-05"] = round(0.800 * sum(surplus) * 3.6e9 / (g * 85.0) / rw, -4)   # V = ηE/(gh ρ) = 1,036·10⁶ m³ -> 1,04·10⁶
+# Additions 2026-11-12: MAFY lookup (L1-09) and two figure tasks on tehokayra-pisteet (L2-09, L2-10)
+a["fy4-15-L1-09"] = 0.5 * 0.45 * 1.29 * math.pi * 41 ** 2 * 9.0 ** 3 / 1e3   # MAFY: air 1,29 kg/m³ at 0 °C; P = ½ηρAv³ = 1117 kW
+a["fy4-15-L2-09"] = 511 * 120 / 1e3                          # read P(7 m/s) = 511 kW; E = Pt = 61 320 kWh = 61,3 MWh
+a["fy4-15-L2-10"] = 1637 / 1017                              # read P(9) = 1017 kW, P(12) = 1637 kW: ratio 1,610
 print(json.dumps(a))

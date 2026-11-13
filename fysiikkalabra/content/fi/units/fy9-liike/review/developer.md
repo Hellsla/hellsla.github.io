@@ -74,3 +74,8 @@ Content hash after the fixes: d1021d5831c47cfe.
 
 ### Shared issues (added)
 - `fy4-2/ex-tangent` and `fy4-2/ex-tv`: the tick labels are 13 px at 390 px (viewBox 600, size 24), below the 14 px rule.
+
+## Ratkaisutavan tarkistus (2026-11-12)
+- s2 a): lakipisteen korkeus ratkaistu symboleilla loppuun, $y_\text{l} = y_{0\text{A}} + v_0^2/(2g)$ (Kaava).
+- s5 a): ajanoton epävarmuuden ääriarvot $a_\text{min}$ ja $a_\text{max}$ kirjattu symboleilla Kaavaan; sijoitus käytti niitä ilman kaavaa.
+- Muut osat ja inquiry-ratkaisut täyttivät käytännön; ei muutoksia. Vastaukset eivät muuttuneet. fi-easy ja en vastaavasti.

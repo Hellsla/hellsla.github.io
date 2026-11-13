@@ -106,3 +106,11 @@ Content hash at hand-over: c908c7c1c4a5b48e (`python3 scripts/units.py hash fy9-
 - build.py fy9-lampo: built.
 - check_layout: OK at 360 and 1280.
 - Playwright at 390 and 1280, with all details open and every task answered: no console errors, no raw `$`, no .katex-error, no horizontal overflow.
+
+## Ratkaisutavan tarkistus (2026-11-12)
+- sovella s2 c): Kaavasta pois mitattu $150\,\text{W/K}$, tilalle $k_\text{h}$; osuus ratkaistu symboleina.
+- sovella s3 c): suoran pisteelle symbolit $(P_1; \Delta m_1)$, joita Kaava käyttää.
+- sovella s3 d): kerroin $P/(P - P_\text{h})$ symboleina ennen lukuja.
+- sovella s6 a), b): levyihin siirtyvä osuus $k$ Kaavaan luvun $0{,}85$ sijaan.
+- inquiry (kodin lämpöhäviö, sulatuskaapeli): $k_\text{h}$ ja $\ell$, $p$ symboleina Kaavassa.
+- Muutokset kuljetettu fi-easy- ja en-versioihin; vastaukset eivät muuttuneet.

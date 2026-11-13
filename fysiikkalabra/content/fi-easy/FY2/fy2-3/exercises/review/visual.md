@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 0dd670b21be99b54
-Round: 1 (delta)
+CONTENT-HASH: e71fed8737775da9
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] data tables — captions and the right-hand columns are cut at 390 px and scroll sideways (design rule, NOTES §1); header cells stay left of right-aligned numbers.
+- [Minor] 3-9 task — "(mafytaulukot.fi)" is plain text — link it or drop it.
+- [Minor] 3-10 Vastaus — the answer row shows the ratio only; a short sentence in the Vastaus block follows (not visible in the capture), fine.
 
 ## Checked
-- Render at 390 px (own Playwright, preview/fi-easy/fy2-3.html, all levels open, solutions open, choices answered): page scrollWidth 390, no overflow; the only chains/KaTeX wider than their box are the data-table headers inside the scrolling .exp-table (by design). New L2-08 (choice task, model answer P1, P2, P2:P1 chain) opened as a card: all chains fit, no clipping.
-- L3-04, L3-05 cards (task text now split in paragraphs, a stage per paragraph) opened at 390 px (L3-05 en; L3-04 only measured).
-- Text only: solutions.md and exercises.json diffs (L2-08 choices and feedback, answers.py comment), wording, glossary use, number and unit LaTeX, decimal comma/point.
-- From earlier captures (1280 px, already current for this hash): en fy2-3 open-exercises-L2-1280-9 (L2-08) opened. Contact sheets and the other 1280 captures not opened; fi-easy fy2-5 had no captures (its preview page was empty), so all of its judgement is from my own render.
+- Opened fy2-3-open-exercises-1280-9.png and -10.png (3-9 mechanical wording, 3-10 rewritten task with graph, solution rows P_A, P_B and ratio). Aligned chains and the ratio fractions render cleanly; the graph (A and B lines, labelled) supports the task.
+- Delta only; unchanged exercises not re-opened.
 
 ## Scores
-illustrations 4 · typography 4 · language 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

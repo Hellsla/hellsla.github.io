@@ -139,6 +139,18 @@
           "feedback": "Tästä puuttuu lämpötilan yksikkö. Jos $c$ olisi kilopascaleina, tulo $c\\,T$ olisi yksikössä $\\text{kPa} \\cdot \\text{K}$. Kelvinin täytyy supistua pois. Siksi $c$:ssä on oltava jakajana kelvin."
         }
       ]
+    },
+    {
+      "id": "fy3-3-L1-10",
+      "level": 1,
+      "text": "Nestemäistä typpeä käytetään kaasun ja aineiden jäähdyttämiseen. Hae typen kiehumispiste normaalipaineessa MAFY-taulukosta (mafytaulukot.fi). Mikä on nestetypen lämpötila kelvineinä?",
+      "lookup": "MAFY",
+      "answer": 77.15,
+      "unit": "K",
+      "tolerance": 0.04,
+      "hints": [
+        "Arvo on MAFY-taulukon taulukossa *Aineiden olomuodon muutokset: Kaasut*."
+      ]
     }
   ],
   "level2": [
@@ -307,6 +319,15 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy3-3-L2-08",
+      "level": 2,
+      "text": "Kuvaajassa ovat suljetussa jäykässä astiassa mitatut kaasun paineet eri lämpötiloissa. Oleta, että paine riippuu lämpötilasta lineaarisesti. Missä lämpötilassa paine on $90\\,\\text{kPa}$?",
+      "figure": "fy3-3/extrapolation-points",
+      "answer": 54.5,
+      "unit": "°C",
+      "tolerance": 0.04
     }
   ],
   "level3": [

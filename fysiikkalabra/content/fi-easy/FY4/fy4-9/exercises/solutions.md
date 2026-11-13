@@ -210,3 +210,14 @@ $m v = 0{,}020\,\text{kg} \cdot 20\,\text{m/s}$, eli $m v = 0{,}40\,\text{kg}\cd
 $F_\text{ka} = \dfrac{0{,}40\,\text{kg}\cdot\text{m/s}}{0{,}0010\,\text{s}}$, eli $F_\text{ka} = 400\,\text{N}$
 
 Lähin vaihtoehto on $400\,\text{N}$. Järkevyys: raekiven paino on $0{,}020\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 0{,}20\,\text{N}$. Se on noin $2000$ kertaa pienempi kuin katon voima, joten painon jättäminen huomiotta oli perusteltua. Muut vaihtoehdot syntyvät virheistä. Vastaus $0{,}4\,\text{N}$ syntyy, kun millisekunteja ei muunneta sekunneiksi. Vastaus $4000\,\text{N}$ syntyy, kun liikemäärän sijaan käytetään liike-energiaa $\tfrac{1}{2} m v^2 = 4{,}0\,\text{J}$. Vastaus $400\,000\,\text{N}$ syntyy, kun massa sijoitetaan grammoina.
+
+## fy4-9-L2-08
+**Annettu:** kuvaajasta voima ajan funktiona. Suurin voima on $F_\text{max} = 900\,\text{N}$, ja kosketus päättyy hetkellä $\Delta t = 12\,\text{ms}$
+**Kysytty:** keskimääräinen voima $F_\text{ka}$ yksikössä $\text{N}$
+**Periaate:** Voima muuttuu koko ajan, joten impulssi luetaan kuvaajan pinta-alasta. Pinta-ala on kuvaajan ja aika-akselin välissä. Keskimääräinen voima on vakiovoima, jolla olisi sama impulssi samassa ajassa. Siksi $F_\text{ka}\,\Delta t = I$.
+**Kuvaajan lukeminen:** Voima kasvaa tasaisesti nollasta $900\,\text{N}$:iin hetkeen $6\,\text{ms}$ mennessä. Sitten se pienenee nollaan hetkellä $12\,\text{ms}$. Alue on kolmio. Kolmion kanta on $12\,\text{ms}$ ja korkeus $900\,\text{N}$.
+**Kaava:** $I = \tfrac{1}{2} F_\text{max}\,\Delta t$ ja $F_\text{ka} = \dfrac{I}{\Delta t}$, joten $F_\text{ka} = \tfrac{1}{2} F_\text{max}$
+**Muunnokset:** $\Delta t = 12\,\text{ms} = 0{,}012\,\text{s}$
+**Sijoitus:** $I = \tfrac{1}{2} \cdot 900\,\text{N} \cdot 0{,}012\,\text{s} = 5{,}4\,\text{N}\cdot\text{s}$ ja $F_\text{ka} = \dfrac{5{,}4\,\text{N}\cdot\text{s}}{0{,}012\,\text{s}} = 450\,\text{N}$
+**Vastaus:** $450\,\text{N}$. Vastauksessa on kaksi tai kolme merkitsevää numeroa, koska kuvaajan arvot luetaan niin tarkasti.
+**Järkevyys:** Keskiarvo on puolet huippuarvosta. Näin on, kun voima nousee ja laskee tasaisesti. Tulos on pienempi kuin $900\,\text{N}$ ja suurempi kuin nolla.

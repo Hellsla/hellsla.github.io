@@ -288,6 +288,32 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy4-7-L2-08",
+      "level": 2,
+      "text": "Kuvaaja näyttää pallon liike-energian pallon nopeuden mukaan. Pallon nopeus kasvaa arvosta $2{,}0\\,\\text{m/s}$ arvoon $6{,}0\\,\\text{m/s}$. Kuinka paljon liike-energia kasvaa? Vastaa jouleina.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 8.0,
+      "unit": "J",
+      "tolerance": 0.05,
+      "figure": "fy4-7/pallo-ek"
+    },
+    {
+      "id": "fy4-7-L2-09",
+      "level": 2,
+      "text": "Kuvaaja näyttää laatikon painovoiman potentiaalienergian laatikon korkeuden mukaan. Nollataso on lattia. Mikä on laatikon massa? Vastaa kilogrammoina.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 2.0,
+      "unit": "kg",
+      "tolerance": 0.05,
+      "figure": "fy4-7/ep-kuvaaja"
     }
   ],
   "level3": [

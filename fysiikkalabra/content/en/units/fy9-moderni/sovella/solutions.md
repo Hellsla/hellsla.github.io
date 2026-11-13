@@ -21,21 +21,21 @@
 **Reasonableness:** A little over one half-life has passed, so the concentration must be a little under half of the original, $1200\,\tfrac{\text{Bq}}{\text{kg}}$. The result is just that.
 
 ### c)
-**Given:** concentration $1047.6\,\tfrac{\text{Bq}}{\text{kg}}$ (part b), mass eaten $m = 5.0\,\text{kg}$, dose coefficient $1.3 \cdot 10^{-8}\,\tfrac{\text{Sv}}{\text{Bq}}$, average annual dose $5.9\,\text{mSv}$
+**Given:** concentration $1047.6\,\tfrac{\text{Bq}}{\text{kg}}$ (part b), mass eaten $m = 5.0\,\text{kg}$, dose coefficient $1.3 \cdot 10^{-8}\,\tfrac{\text{Sv}}{\text{Bq}}$, average annual dose $H_\text{a} = 5.9\,\text{mSv}$
 **Find:** the effective dose $H$ and its share of the average annual dose
 **Principle:** The dose coefficient tells how large an effective dose one becquerel taken into the body causes before the caesium leaves the body. The number of becquerels eaten is the concentration times the mass (chapter *Radiation dose and radiation safety in Finland*).
-**Formula:** $H = A_m \cdot m \cdot k_\text{dose}$, where $A_m$ is the concentration and $k_\text{dose}$ the dose coefficient
+**Formula:** $H = A_m \cdot m \cdot k_\text{dose}$, where $A_m$ is the concentration and $k_\text{dose}$ the dose coefficient, and share $= \dfrac{H}{H_\text{a}} = \dfrac{A_m \cdot m \cdot k_\text{dose}}{H_\text{a}}$
 **Conversions:** Finally $1\,\text{Sv} = 1000\,\text{mSv}$.
 **Substitution:** $1047.6\,\tfrac{\text{Bq}}{\text{kg}} \cdot 5.0\,\text{kg} = 5238\,\text{Bq}$ is eaten, so $H = 5238\,\text{Bq} \cdot 1.3 \cdot 10^{-8}\,\tfrac{\text{Sv}}{\text{Bq}} = 6.81 \cdot 10^{-5}\,\text{Sv} = 6.81 \cdot 10^{-5} \cdot 1000\,\text{mSv} = 0.0681\,\text{mSv}$. The share is $0.0681\,\text{mSv} : 5.9\,\text{mSv} = 0.0115 = 1.15\,\%$.
 **Answer:** The mushroom picker gets a dose of about $0.068\,\text{mSv}$ from the mushrooms, two significant figures like the mass $5.0\,\text{kg}$ and the dose coefficient. It is about $1\,\%$ of the average annual dose of a person in Finland.
 **Reasonableness:** The dose equals about seven dental X-ray images, each with a dose of about $0.01\,\text{mSv}$. It is small compared with the average share of radon, about $3\,\text{mSv}$, which fits the fact that mushrooms are only a small source of dose in Finland.
 
 ### d)
-**Given:** concentration $A = 1047.6\,\text{Bq}$ in one kilogram (part b), $T_{1/2} = 30.1\,\text{a}$, $1\,\text{a} = 3.156 \cdot 10^{7}\,\text{s}$, mass of an atom $137\,\text{u}$, $1\,\text{u} = 1.66 \cdot 10^{-27}\,\text{kg}$
+**Given:** concentration $A = 1047.6\,\text{Bq}$ in one kilogram (part b), $T_{1/2} = 30.1\,\text{a}$, $1\,\text{a} = 3.156 \cdot 10^{7}\,\text{s}$, mass of an atom $m_\text{a} = 137\,\text{u}$, $1\,\text{u} = 1.66 \cdot 10^{-27}\,\text{kg}$
 **Find:** the number $N$ of caesium-137 nuclei and their mass $m$
 **Principle:** The activity is the product of the decay constant and the number of remaining nuclei, and the decay constant is obtained from the half-life (chapter *The decay law and half-life*). A becquerel is one decay per second, so the half-life is converted into seconds.
-**Formula:** $A = \lambda N$ and $\lambda = \dfrac{\ln 2}{T_{1/2}}$, so $N = \dfrac{A\,T_{1/2}}{\ln 2}$; $m = N \cdot 137\,\text{u}$
-**Conversions:** $30.1\,\text{a} = 30.1 \cdot 3.156 \cdot 10^{7}\,\text{s} = 9.500 \cdot 10^{8}\,\text{s}$, $137\,\text{u} = 137 \cdot 1.66 \cdot 10^{-27}\,\text{kg} = 2.274 \cdot 10^{-25}\,\text{kg}$ and finally $1\,\text{kg} = 10^{12}\,\text{ng}$
+**Formula:** $A = \lambda N$ and $\lambda = \dfrac{\ln 2}{T_{1/2}}$, so $N = \dfrac{A\,T_{1/2}}{\ln 2}$; $m = N\,m_\text{a}$
+**Conversions:** $30.1\,\text{a} = 30.1 \cdot 3.156 \cdot 10^{7}\,\text{s} = 9.500 \cdot 10^{8}\,\text{s}$, $m_\text{a} = 137\,\text{u} = 137 \cdot 1.66 \cdot 10^{-27}\,\text{kg} = 2.274 \cdot 10^{-25}\,\text{kg}$ and finally $1\,\text{kg} = 10^{12}\,\text{ng}$
 **Substitution:** $N = \dfrac{1047.6\,\tfrac{1}{\text{s}} \cdot 9.500 \cdot 10^{8}\,\text{s}}{0.6931} = 1.436 \cdot 10^{12}$ and $m = 1.436 \cdot 10^{12} \cdot 2.274 \cdot 10^{-25}\,\text{kg} = 3.27 \cdot 10^{-13}\,\text{kg} = 0.327\,\text{ng}$
 **Answer:** One kilogram of mushrooms contains about $1.44 \cdot 10^{12}$ caesium-137 nuclei, whose mass is about $0.327\,\text{ng}$, three significant figures like the half-life.
 **Reasonableness:** There are trillions of nuclei, but the mass is under a nanogram, because a single atom is very light. The decay constant $\lambda = 7.30 \cdot 10^{-10}\,\tfrac{1}{\text{s}}$ is small, so a thousand decays per second need an enormous set of nuclei.
@@ -50,10 +50,10 @@
 ## fy9-moderni-s2
 
 ### a)
-**Given:** $E_n = -\tfrac{13.6\,\text{eV}}{n^2}$, transition from level $3$ to level $2$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$
+**Given:** $E_n = -\tfrac{E_0}{n^2}$, $E_0 = 13.6\,\text{eV}$, transition from level $3$ to level $2$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$
 **Find:** the wavelength $\lambda$ of the line
 **Principle:** When an electron moves from an upper level to a lower one, the atom emits a photon whose energy is the difference of the levels, because energy is conserved (chapter *Energy levels of the hydrogen atom and the Bohr model*). The wavelength is obtained from the photon energy (chapter *The photoelectric effect and the photon*).
-**Formula:** $E_\text{f} = E_3 - E_2 = 13.6\,\text{eV}\left(\tfrac{1}{2^2} - \tfrac{1}{3^2}\right)$ and $E_\text{f} = \dfrac{hc}{\lambda}$, so $\lambda = \dfrac{hc}{E_3 - E_2}$
+**Formula:** $E_\text{f} = E_3 - E_2 = E_0\left(\tfrac{1}{2^2} - \tfrac{1}{3^2}\right)$ and $E_\text{f} = \dfrac{hc}{\lambda}$, so $\lambda = \dfrac{hc}{E_0\left(\tfrac{1}{2^2} - \tfrac{1}{3^2}\right)}$
 **Conversions:** $1.8889\,\text{eV} = 1.8889 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 3.0260 \cdot 10^{-19}\,\text{J}$ and finally $1\,\text{nm} = 10^{-9}\,\text{m}$
 **Substitution:** $E_3 - E_2 = 13.6\,\text{eV} \cdot \left(\tfrac{1}{4} - \tfrac{1}{9}\right) = 13.6\,\text{eV} \cdot \tfrac{5}{36} = 1.8889\,\text{eV}$, so $\lambda = \dfrac{6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s}}{3.0260 \cdot 10^{-19}\,\text{J}} = 6.565 \cdot 10^{-7}\,\text{m} = 656.5\,\text{nm}$
 **Answer:** $\lambda \approx 656\,\text{nm}$, three significant figures like $13.6\,\text{eV}$.
@@ -236,13 +236,13 @@
 **Reasonableness:** The difference is much smaller than the reading uncertainty, about $1\,\%$, so the measurement supports the model. The slope does not depend on the material of the cathode, so any metal would give the same $h$.
 
 ### d)
-**Given:** the line of part b, which crosses the vertical axis at $-2.24\,\text{V}$, slope $k = 4.125 \cdot 10^{-15}\,\text{V}\,\text{s}$ (part c), $\lambda = 590\,\text{nm}$
+**Given:** the line of part b, which crosses the vertical axis at $b = -2.24\,\text{V}$, slope $k = 4.125 \cdot 10^{-15}\,\text{V}\,\text{s}$ (part c), $\lambda = 590\,\text{nm}$
 **Find:** the work function $W$ in electronvolts, the threshold frequency $f_0$ and an explanation of the result at the wavelength $590\,\text{nm}$
 **Principle:** The constant term of the line is $-\tfrac{W}{e}$, so the work function in electronvolts is the absolute value of the constant term. At the threshold frequency the photon energy is just enough for the work function and $U = 0$, so it is where the line crosses the horizontal axis. The intensity of the light changes only the number of photons, not the energy of one photon (chapter *The photoelectric effect and the photon*).
 **Reading the graph:** The line crosses the vertical axis at $-2.24\,\text{V}$ and the horizontal axis at about $5.43 \cdot 10^{14}\,\text{Hz}$.
-**Formula:** $-\dfrac{W}{e} = -2.24\,\text{V}$, so $W = e \cdot 2.24\,\text{V}$; $hf_0 = W$, so $f_0 = \dfrac{W}{h} = \dfrac{W/e}{k}$; $f = \dfrac{c}{\lambda}$ and $E = hf$
+**Formula:** $b = -\dfrac{W}{e}$, so $W = -e\,b$; $hf_0 = W$, so $f_0 = \dfrac{W}{h} = -\dfrac{b}{k}$, because $k = \dfrac{h}{e}$; $f = \dfrac{c}{\lambda}$ and $E = hf$
 **Conversions:** $e \cdot 1\,\text{V} = 1\,\text{eV}$, so $W = 2.24\,\text{eV}$ directly. The wavelength $590\,\text{nm} = 590 \cdot 10^{-9}\,\text{m}$, and the energy is converted into electronvolts by dividing by $1.602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$.
-**Substitution:** $W = 2.24\,\text{eV}$ and $f_0 = \dfrac{2.24\,\text{V}}{4.125 \cdot 10^{-15}\,\text{V}\,\text{s}} = 5.43 \cdot 10^{14}\,\text{Hz}$. At the wavelength $590\,\text{nm}$: $f = \dfrac{2.998 \cdot 10^{8}\,\text{m/s}}{590 \cdot 10^{-9}\,\text{m}} = 5.08 \cdot 10^{14}\,\text{Hz}$ and $E = \dfrac{6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 5.08 \cdot 10^{14}\,\tfrac{1}{\text{s}}}{1.602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}} = 2.10\,\text{eV}$
+**Substitution:** $W = -e \cdot (-2.24\,\text{V}) = 2.24\,\text{eV}$ and $f_0 = -\dfrac{-2.24\,\text{V}}{4.125 \cdot 10^{-15}\,\text{V}\,\text{s}} = 5.43 \cdot 10^{14}\,\text{Hz}$. At the wavelength $590\,\text{nm}$: $f = \dfrac{2.998 \cdot 10^{8}\,\text{m/s}}{590 \cdot 10^{-9}\,\text{m}} = 5.08 \cdot 10^{14}\,\text{Hz}$ and $E = \dfrac{6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 5.08 \cdot 10^{14}\,\tfrac{1}{\text{s}}}{1.602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}} = 2.10\,\text{eV}$
 **Answer:** The work function of potassium is $W \approx 2.24\,\text{eV}$ and the threshold frequency $f_0 \approx 5.43 \cdot 10^{14}\,\text{Hz}$, three significant figures by the reading accuracy of the graph. The frequency $5.08 \cdot 10^{14}\,\text{Hz}$ of light of wavelength $590\,\text{nm}$ is below the threshold frequency, that is the energy $2.10\,\text{eV}$ of one photon is not enough to free an electron. Ten times as much light means ten times as many photons of the same kind. One photon gives its energy to one electron, so still no electrons leave, and no photocurrent arises.
 **Reasonableness:** The threshold frequency corresponds to the wavelength $\tfrac{c}{f_0} \approx 552\,\text{nm}$, green light, so yellow $590\,\text{nm}$ light is on the wrong side of the limit and all the measured violet and blue wavelengths on the right side, as in the table. The work functions of the alkali metals are about $2\,\text{eV}$, so the result is credible.
 
@@ -284,19 +284,20 @@
 ## fy9-moderni-s5
 
 ### a)
-**Given:** counts in $10\,\text{s}$ periods at the times $0$–$300\,\text{s}$, $398$ at the start and $104$ at the end, background $5$ counts in $10\,\text{s}$
+**Given:** counts in $10\,\text{s}$ periods at the times $0$–$300\,\text{s}$ ($11$ readings), $398$ at the start and $104$ at the end, background $5$ counts in $10\,\text{s}$
 **Find:** the half-life $T_{1/2}$ taking the background radiation into account
-**Principle:** The GM tube counts the pulses of both the sample and the background radiation, so the share of the sample is obtained by subtracting the background from each reading. The count of the sample is proportional to the activity, and the activity decreases according to the decay law (chapter *The decay law and half-life*). Points far apart give the least sensitive estimate.
-**Formula:** $N = N_0\left(\tfrac{1}{2}\right)^{t/T_{1/2}}$, so $\dfrac{N_0}{N} = 2^{t/T_{1/2}}$ and $T_{1/2} = \dfrac{t \ln 2}{\ln \tfrac{N_0}{N}}$
-**Conversions:** All the counts are in the same unit, counts in $10\,\text{s}$, so no conversions are needed.
-**Substitution:** After the background $N_0 = 398 - 5 = 393$ and $N = 104 - 5 = 99$ in the time $t = 300\,\text{s}$, so $T_{1/2} = \dfrac{300\,\text{s} \cdot 0.6931}{\ln \tfrac{393}{99}} = \dfrac{207.9\,\text{s}}{1.3787} = 150.8\,\text{s}$
-**Answer:** $T_{1/2} \approx 151\,\text{s}$, three significant figures, but the random variation of the counts, about $\sqrt{100} = 10$ counts at the end, makes the last digit uncertain. Subtracting the background changes the result from $155\,\text{s}$ to $151\,\text{s}$.
-**Reasonableness:** The result differs from the book value $153\,\text{s}$ by only $1.4\,\%$. When a straight line is fitted to all the points in $(t, \ln N)$ coordinates, $153\,\text{s}$ is obtained, so the estimate is of the right order.
+**Principle:** The GM tube counts the pulses of both the sample and the background radiation, so the share of the sample is obtained by subtracting the background from each reading. The count of the sample is proportional to the activity, and the activity of a large set of nuclei decreases according to the decay law, because each nucleus decays with the same probability (chapter *The decay law and half-life*). All $11$ points are used by fitting a line, because a single reading varies randomly.
+**Reading the graph:** After subtracting the background, $\ln N$ is calculated for all $11$ readings ($N$ counts in $10\,\text{s}$, for example $\ln 393 = 5.974$ and $\ln 99 = 4.595$), and the points $(t,\ \ln N)$ are plotted as points. Exponential decrease is a straight line in $\ln N$, so one line is fitted to the points over the whole range $0$–$300\,\text{s}$. The slope $k$ is read from two points of the fitted line far apart, for example $(0;\ 5.993)$ and $(300\,\text{s};\ 4.635)$, not from individual measurement points.
+**Formula:** $N = N_0 e^{-\lambda t}$, so $\ln N = \ln N_0 - \lambda t$. The slope of the line is $k = -\lambda$, and $T_{1/2} = \dfrac{\ln 2}{\lambda}$, so $T_{1/2} = \dfrac{\ln 2}{-k}$, where $k = \dfrac{\Delta(\ln N)}{\Delta t}$
+**Conversions:** All the counts are in the same unit, counts in $10\,\text{s}$, and $\ln N$ is a pure number, so no conversions are needed.
+**Substitution:** The slope of the fitted line is $k = \dfrac{4.635 - 5.993}{300\,\text{s} - 0\,\text{s}} = -4.528 \cdot 10^{-3}\,\tfrac{1}{\text{s}}$, so $T_{1/2} = \dfrac{0.6931}{4.528 \cdot 10^{-3}\,\tfrac{1}{\text{s}}} = 153.1\,\text{s}$
+**Answer:** $T_{1/2} \approx 153\,\text{s}$, three significant figures, but the random variation of the counts makes the last digit uncertain. Without subtracting the background the fit would give $157\,\text{s}$; the fit uses all the points.
+**Reasonableness:** The two-endpoint calculation $T_{1/2} = \dfrac{t \ln 2}{\ln (N_0 : N)} = \dfrac{300\,\text{s} \cdot 0.6931}{\ln (393 : 99)} = 151\,\text{s}$ differs from the fit by only $1.5\,\%$. The count has fallen from $393$ to about $99$ in $300\,\text{s}$, roughly a quarter, and two half-lives would give $\tfrac{393}{4} \approx 98$, so $T_{1/2} \approx \tfrac{300\,\text{s}}{2} = 150\,\text{s}$ is of the right order.
 
 ### b)
 **Find:** an assessment of the group's conclusion
 **Principle:** A nucleus has no memory and no age: each barium-137m nucleus decays with the same probability per second, however long it has existed (chapter *The decay law and half-life*). The count of a GM tube varies randomly by about $\sqrt{N}$ (chapter *Measuring and the reliability of a measurement*).
-**Model answer:** The group's explanation is wrong. Standing for a minute reduces the activity of the sample but does not change the half-life, because the remaining nuclei decay with exactly the same probability as before. The difference comes from the method. The group read the half-life between one pair of points, and a single reading varies randomly: the uncertainty of the reading of $212$ counts is about $\sqrt{212} \approx 15$ counts, that is $7\,\%$. The reading at $150\,\text{s}$ happens to be large, which shifts the reading later. Ignoring the background was also a mistake. At the start the background is only $1\,\%$ of the reading, but at the end already $5\,\%$, and a background left unsubtracted apparently slows down the decrease and lengthens the half-life. In addition, the background was measured only once for $10\,\text{s}$, so its value $5 \pm 2$ is very imprecise. The conclusion “$166\,\text{s}$” is therefore not reliable. All the points after subtracting the background give about $151$–$153\,\text{s}$, which matches the book value.
+**Model answer:** The group's explanation is wrong. Standing for a minute reduces the activity of the sample but does not change the half-life, because the remaining nuclei decay with exactly the same probability as before. The difference comes from the method. The group read the half-life between one pair of points, and a single reading varies randomly: the uncertainty of the reading of $212$ counts is about $\sqrt{212} \approx 15$ counts, that is $7\,\%$. The reading at $150\,\text{s}$ happens to be large, which shifts the reading later. Ignoring the background was also a mistake. At the start the background is only $1\,\%$ of the reading, but at the end already $5\,\%$, and a background left unsubtracted apparently slows down the decrease and lengthens the half-life. In addition, the background was measured only once for $10\,\text{s}$, so its value $5 \pm 2$ is very imprecise. The conclusion “$166\,\text{s}$” is therefore not reliable. All the points after subtracting the background give about $153\,\text{s}$, which matches the book value.
 
 ### c)
 **Find:** how the measurement and the processing of the results can be improved
@@ -310,8 +311,8 @@
 - In part c, only “a more accurate meter” is suggested without saying what changes in the measurement and why.
 
 ### Hyväksytään myös
-- In part a, a fit of all the points with a calculator or from a graph: $T_{1/2} \approx 153\,\text{s}$.
-- In part a, some other pair of points far apart after subtracting the background, as long as the result is between $145$ and $157\,\text{s}$.
+- in part a the two-endpoint calculation after subtracting the background: $T_{1/2} = \dfrac{t \ln 2}{\ln (N_0 : N)} \approx 151\,\text{s}$.
+- In part a, some other pair of points far apart after subtracting the background, as long as the result is between $147$ and $159\,\text{s}$.
 
 ## fy9-moderni-s6
 
@@ -326,11 +327,11 @@
 **Reasonableness:** The efficiency of a thermal power plant with a steam turbine is typically $30$–$40\,\%$. There are enormous numbers of fissions, because one fission releases only about $3 \cdot 10^{-11}\,\text{J}$.
 
 ### b)
-**Given:** $n = 1.342 \cdot 10^{20}\,\tfrac{1}{\text{s}}$ (part a), $1\,\text{a} = 3.156 \cdot 10^{7}\,\text{s}$, mass of a uranium-235 atom $235\,\text{u}$, $1\,\text{u} = 1.661 \cdot 10^{-27}\,\text{kg}$, $P_\text{th} = 4300\,\text{MW}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$
+**Given:** $n = 1.342 \cdot 10^{20}\,\tfrac{1}{\text{s}}$ (part a), $1\,\text{a} = 3.156 \cdot 10^{7}\,\text{s}$, mass of a uranium-235 atom $m_\text{U} = 235\,\text{u}$, $1\,\text{u} = 1.661 \cdot 10^{-27}\,\text{kg}$, $P_\text{th} = 4300\,\text{MW}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$
 **Find:** the mass $m$ of uranium-235 that undergoes fission in a year and the mass $\Delta m$ converted into energy
 **Principle:** Each fission uses up one uranium-235 nucleus. The released energy corresponds to the mass defect: the mass of the reaction products is smaller than that of the reactants (chapters *Mass defect and nuclear binding energy* and *Fission, fusion and nuclear power*).
-**Formula:** $m = nt \cdot 235\,\text{u}$ and $E = \Delta m\,c^2$, so $\Delta m = \dfrac{P_\text{th}t}{c^2}$
-**Conversions:** $235\,\text{u} = 235 \cdot 1.661 \cdot 10^{-27}\,\text{kg} = 3.903 \cdot 10^{-25}\,\text{kg}$
+**Formula:** $m = n t\,m_\text{U}$ and $E = \Delta m\,c^2$, so $\Delta m = \dfrac{P_\text{th}t}{c^2}$
+**Conversions:** $m_\text{U} = 235\,\text{u} = 235 \cdot 1.661 \cdot 10^{-27}\,\text{kg} = 3.903 \cdot 10^{-25}\,\text{kg}$
 **Substitution:** $nt = 1.342 \cdot 10^{20}\,\tfrac{1}{\text{s}} \cdot 3.156 \cdot 10^{7}\,\text{s} = 4.236 \cdot 10^{27}$, so $m = 4.236 \cdot 10^{27} \cdot 3.903 \cdot 10^{-25}\,\text{kg} = 1653\,\text{kg}$. $\Delta m = \dfrac{4300 \cdot 10^{6}\,\tfrac{\text{J}}{\text{s}} \cdot 3.156 \cdot 10^{7}\,\text{s}}{(2.998 \cdot 10^{8}\,\text{m/s})^2} = \dfrac{1.357 \cdot 10^{17}\,\text{J}}{8.988 \cdot 10^{16}\,\tfrac{\text{m}^2}{\text{s}^2}} = 1.51\,\text{kg}$
 **Answer:** About $1650\,\text{kg}$ of uranium-235 undergoes fission in a year, and about $1.51\,\text{kg}$ of mass is converted into energy, three significant figures like the powers.
 **Reasonableness:** Only $1.51 : 1653 \approx 0.09\,\%$ of the mass of the uranium is converted into energy, which is the same as $200\,\text{MeV}$ divided by the rest energy of a uranium atom, $235 \cdot 931.5\,\text{MeV}$. The rest of the mass remains as fission products and neutrons, because the number of nucleons is conserved.

@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: a52283bbb84cf337
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: 70d00e3dd2da41b6
+
 Round: 2
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- solutions.md L2-08 Järkevyys — "Luvun mallin mukaan" relies on a rule the task does not state; say "kun keskiteho on noin kolmasosa nimellistehosta" so a student without the chapter at hand can follow. Also "1400 voimalaa" is "yli tuhat", not "tuhansien" in order of magnitude; write "yli tuhannen voimalan".
 
 ## Checked
-- git diff HEAD~1 (commit 29f864da6) of the unit's files (fi), judged in context; round-1 findings for this unit.
-- exercises.json L2-07: 'päästökertoimet esimerkkiaineistona' - wording only, clearer; task demand unchanged.
+- L1-10 new wording ("palamisessa vapautuu energiaa teholla 2,0 MW") removes the efficiency ambiguity; situation, lookup, then the question last; answer 720 kg unchanged, hint names only the table.
+- L1-10 solution Periaate now states that P is the release power, then E = Pt and E = Hm; the steps stay followable.
+- L2-08 check: 3 x 2,30 GW = 6,9 GW, about 1400 turbines of 5 MW, consistent; it fixes the earlier wrong "satoja".
+- Hash identical at start and end (70d00e3dd2da41b6).

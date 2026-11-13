@@ -36,4 +36,11 @@ vmax = 1.0 * 3.0                                   # phase 1: v = a Δt = 3,0 m/
 a3 = (0 - vmax) / (13.0 - 9.0)                     # phase 3 stops in 4,0 s: a = −0,75 m/s²
 a["fy4-4-L3-05"] = 70 * (g + a3)                   # N − mg = ma → N = m(g + a) = 634,2 N
 assert abs((45 - 9.0) / 18 - 2.0) < 1e-12           # fy4-4-L2-08 is multiple choice (error in row 4): a = 36 N / 18 kg = 2,0 m/s²
+# MAFY lookup: Moon, g = 1,622 m/s² from the MAFY table (Aurinkokunta); F − mg = ma -> F = m(g + a)
+a["fy4-4-L1-09"] = 15000 * (1.622 + 0.50) / 1000     # 31,83 kN
+# Figure tasks (fy4-4/kuvaaja-ab): cart A point (3,0 N; 6,0 m/s²), cart B point (3,0 N; 3,0 m/s²)
+a["fy4-4-L1-10"] = 3.0 / 6.0                         # m_A = ΣF / a = 0,50 kg
+m_B = 3.0 / 3.0                                      # m_B = 1,0 kg
+a["fy4-4-L2-09"] = 2.4 / m_B                         # a = ΣF / m_B = 2,4 m/s²
+
 print(json.dumps(a))

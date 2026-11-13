@@ -187,6 +187,7 @@
     },
     "answer_for": "Answer to exercise {{id}}",
     "check": "Check",
+    "exercise_hint": "Hint",
     "answer": "Answer",
     "solution": "Show the solution",
     "derive": "Derive it yourself",

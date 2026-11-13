@@ -45,3 +45,9 @@ Polish:
 - `yhteistuotanto` is now a heat-pump claim, so tarkistus-3 is no longer a repeat. `lataus` uses e-bike numbers. lt-3 distractors are longer, and the correct option has moved in `virhe-kwh` and `kuvio`. The Tutki text asks only for η₂. The hook is answered at the end of Ydinajatus. The teacher plan now has only parts a–b of a long task in class. fy1-4 was added to the s5 skills and fy2-1 to the s6 skills.
 
 Checks: practice.py check OK; units.py check finds 33 units OK; build OK; check_layout passes at 360, 390 and 1280. In Playwright, every item is answered correctly, with no console errors, no katex errors and no raw `$`. Figures and tables were looked at at 390 px.
+
+## Ratkaisutavan tarkistus (2026-11-12)
+- sovella s3 c): Kaava $E = E_0 + k(T - T_0)$ tunnetulla pisteellä $(T_0; E_0)$; Sijoitus samassa muodossa (ei kätkettyä $b$:tä).
+- sovella s3 d): ratkaistu symboleina $T = (E_\text{muu} - E_0)/k$ ennen lukuja; $E_\text{muu}$ määritelty Periaatteessa.
+- sovella s4 a): keskiteho $P_\text{ka} = kNP_\text{nim}$ ja $E = P_\text{ka}t$ symboleina ennen lukuja.
+- inquiry, exit-ticket: tarkistettu, ei muutoksia. Muutokset kuljetettu fi-easy- ja en-versioihin; vastaukset eivät muuttuneet.

@@ -199,3 +199,13 @@ $$\begin{aligned} \text{shortfall} &= \dfrac{2.434\,\text{m/s}}{3.924\,\text{m/s
 **Find:** the speed $v$ of the lighter ball at the moment $2.0\,\text{s}$ and the reason why it is what it is.
 **Principle:** There is no air resistance in a vacuum, so both balls are in free fall and start from rest. Then the speed is $v = g\,t$, and the acceleration of free fall $g = 9.81\,\text{m/s}^2$ is the same for all objects regardless of mass.
 **Model answer:** The speed of the lighter ball is the same as that of the heavier one, $19.6\,\text{m/s}$, because $v = g\,t = 9.81\,\text{m/s}^2 \cdot 2.0\,\text{s} = 19.62\,\text{m/s}$ does not contain the mass. The reason is that $g$ is the same for all objects without air resistance. Increasing the mass increases both the pull towards the Earth and the difficulty of setting the object in motion, and these cancel each other. The result is the same as the speed of the heavier ball given in the task, $19.6\,\text{m/s}$.
+
+## fy1-6-L1-09
+**Given:** time $t = 3.0\,\text{s}$, initial speed $0$; from the table (MAFY table, Aurinkokunta, Moon) free-fall acceleration $g = 1.622\,\text{m/s}^2$
+**Find:** speed $v$ in $\text{m/s}$
+**Principle:** There is no air resistance, so the hammer is in free fall and starts from rest. Its speed then grows steadily and $v = gt$.
+**Formula:** $v = g\,t$
+**Conversions:** All quantities are in SI units, so no conversions are needed.
+**Substitution:** $v = 1.622\,\tfrac{\text{m}}{\text{s}^2} \cdot 3.0\,\text{s} = 4.866\,\tfrac{\text{m}}{\text{s}}$
+**Answer:** $4.9\,\text{m/s}$, two significant figures as in the time $3.0\,\text{s}$. The answer is accepted within about $\pm 4\,\%$.
+**Reasonableness:** On Earth the speed would be $9.81\,\text{m/s}^2 \cdot 3.0\,\text{s} = 29.4\,\text{m/s}$. The Moon's free-fall acceleration is about one sixth of Earth's, so the speed is about one sixth too: $29.4\,\text{m/s} : 6 \approx 4.9\,\text{m/s}$.

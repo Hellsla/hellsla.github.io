@@ -110,6 +110,18 @@
           "feedback": "Correct: a straight line through the origin means $p = k \\cdot \\dfrac{1}{V}$, and the slope is $k = pV$. Boyle's law holds within the measurement uncertainty."
         }
       ]
+    },
+    {
+      "id": "fy3-9-L1-09",
+      "level": 1,
+      "text": "A sealed air bag is filled at sea level, where the air pressure is $101\\,\\text{kPa}$. The volume of the air in the bag is then $2.0\\,\\textsf{l}$. The bag is carried in a backpack up to a height of $3000\\,\\text{m}$. Assume that the temperature of the air stays the same and no air escapes from the bag.\n\nLook up the air pressure at a height of $3000\\,\\text{m}$ in the MAFY table (mafytaulukot.fi). What is the volume of the air in the bag there?",
+      "lookup": "MAFY",
+      "answer": 2.9,
+      "unit": "l",
+      "tolerance": 0.04,
+      "hints": [
+        "The value is in the MAFY table *Ilmanpaine, tiheys ja lämpötila eri korkeuksilla* (air pressure, density and temperature at different heights)."
+      ]
     }
   ],
   "level2": [

@@ -233,10 +233,10 @@ a oikea
 The horizontal equation of motion from the diagram is $T - F_\mu = ma$, the same as the equation of the line in part b when $T = F$. The net force in the diagram, $1.20\,\text{N} - 0.24\,\text{N} = 0.96\,\text{N}$, gives the acceleration $0.96\,\text{N} : 0.851\,\text{kg} \approx 1.13\,\text{m/s}^2$, which is close to the measured $1.14\,\text{m/s}^2$.
 
 ### d)
-**Given:** from part b $m = 0.851\,\text{kg}$ and $F_\mu = 0.238\,\text{N}$; extra mass $0.500\,\text{kg}$; $g = 9.81\,\text{m/s}^2$
+**Given:** from part b $m = 0.851\,\text{kg}$ and $F_\mu = 0.238\,\text{N}$; extra mass $m_\text{x} = 0.500\,\text{kg}$; $g = 9.81\,\text{m/s}^2$
 **Find:** the coefficient $\mu = \tfrac{F_\mu}{N}$ and the change of the line with the extra mass
 **Principle:** The string is horizontal, so vertically only the weight and the normal force act, and $N = mg$ (chapter *Weight, friction and the inclined plane*). In the model the friction is proportional to the normal force.
-**Formula:** $\mu = \dfrac{F_\mu}{N} = \dfrac{F_\mu}{mg}$
+**Formula:** $\mu = \dfrac{F_\mu}{N} = \dfrac{F_\mu}{mg}$; with the extra mass $m' = m + m_\text{x}$, the slope is $k' = \dfrac{1}{m'}$ and the intercept on the horizontal axis is $F_0' = \mu m' g$
 **Conversions:** None needed, the quantities are in base units.
 **Substitution:** $\mu = \dfrac{0.238\,\text{N}}{0.851\,\text{kg} \cdot 9.81\,\text{m/s}^2} = \dfrac{0.238\,\text{N}}{8.35\,\text{N}} = 0.0285$
 **Answer:** $\mu \approx 0.029$, two significant figures like $F_\mu$; the coefficient has no unit. With the extra mass the mass is $1.351\,\text{kg}$: the line becomes less steep, with the slope $\tfrac{1}{1.351\,\text{kg}} \approx 0.74\,\tfrac{1}{\text{kg}}$, and the intercept moves to the right, to $0.029 \cdot 1.351\,\text{kg} \cdot 9.81\,\text{m/s}^2 \approx 0.38\,\text{N}$.
@@ -296,7 +296,7 @@ v oikea
 **Given:** limiting angles $22^\circ$, $24^\circ$, $21^\circ$, $23^\circ$ and $33^\circ$; in measurement 5 the book was lifted with a jerk
 **Find:** the coefficient of static friction $\mu_0$ and its uncertainty
 **Principle:** At the limiting angle the component of the weight along the cover is as large as the largest value of static friction, and the normal force is the perpendicular component of the weight (chapter *Weight, friction and the inclined plane*). Measurement 5 is left out, because a gross error is recorded in the report: a quick lift momentarily presses the cover against the phone, so the normal force and the upper limit of static friction grow for a moment, and the angle is read too late. So $33^\circ$ is not the limit of sliding. A result would not be removed only because it differs from the others.
-**Formula:** $mg\sin\alpha_0 = \mu_0 mg\cos\alpha_0$, so $\mu_0 = \tan\alpha_\text{ka}$, where $\alpha_\text{ka}$ is the mean of the limiting angles
+**Formula:** $mg\sin\alpha_0 = \mu_0 mg\cos\alpha_0$, so $\mu_0 = \tan\alpha_0$. The limiting angle is the mean of the accepted readings, $\alpha_\text{ka} = \dfrac{\alpha_1 + \alpha_2 + \alpha_3 + \alpha_4}{4}$, so $\mu_0 = \tan\alpha_\text{ka}$, and the uncertainty is half the range, $\Delta\mu_0 = \dfrac{\tan\alpha_\text{max} - \tan\alpha_\text{min}}{2}$
 **Conversions:** None needed. The angles are in degrees, and the coefficient has no unit.
 **Substitution:** $\alpha_\text{ka} = \dfrac{22^\circ + 24^\circ + 21^\circ + 23^\circ}{4} = 22.5^\circ$ and $\mu_0 = \tan 22.5^\circ = 0.414$. Limits of the spread: $\tan 21^\circ = 0.384$ and $\tan 24^\circ = 0.445$
 **Answer:** $\mu_0 \approx 0.41 \pm 0.03$, two significant figures, because the angles are read to the nearest degree and their spread is about $\pm 1.5^\circ$. The uncertainty is half the range of the results ($0.384\text{–}0.445$), which is the simple estimate chosen here.

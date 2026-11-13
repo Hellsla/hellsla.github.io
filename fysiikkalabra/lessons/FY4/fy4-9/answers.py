@@ -40,4 +40,7 @@ a["fy4-9-L3-04"] = 0.010 * sum(F_tyyny) * 1000 / 70 * 3.6   # I = 981 N·s, v0 =
 g = 9.81                                             # bouncing basketball, positive upward
 v_in, v_out = -g * 0.500, g * 0.400                  # fall 0,500 s, rise 0,400 s: -4,905 and +3,924 m/s
 a["fy4-9-L3-05"] = 0.60 * g + 0.60 * (v_out - v_in) / 0.012   # N_ka = m g + m Δv / Δt = 5,886 + 441,5 = 447,3 N
+# Level 2 addition (figure task)
+Fm, T = 900.0, 0.012                                 # kick graph: triangle, peak 900 N, contact 12 ms
+a["fy4-9-L2-08"] = (0.5 * Fm * T) / T               # F_ka = I / Δt = 5,4 N·s / 0,012 s = 450 N
 print(json.dumps(a))

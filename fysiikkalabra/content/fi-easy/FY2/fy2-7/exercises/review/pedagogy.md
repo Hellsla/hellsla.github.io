@@ -1,15 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: e76526cc5ac51eed
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: 4f14228b78fa5222
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- solutions.md fy2-7-L1-09, Järkevyys: "20 * 4 = 80 MJ, hieman vähemmän" is still loose; "20 * 4 = 80 on hieman liikaa, koska 3,6 on pienempi kuin 4".
 
 ## Checked
-- git diff origin/main...HEAD of the unit's files (fi-easy); pedagogy of the changed passages in context only; FY2 text level.
-- exercises.json feedbacks and solutions.md: loss mechanism wording as in the lesson (internal energy of wires, heat to surroundings; district heating through pipes). Feedback still explains why the distractor is wrong.
-- S2: 'sisäenergia' is a glossary term explained in the lesson; feedback sentences short.
-- S2 (NOTES.md §12): the changed sentences are short, connected, natural Finnish; physics terms kept.
+- The new sentence "Muunnos 1 kWh = 3,6 MJ on tarkka" is true (definition of the units) and explains why the tolerance is only for table rounding.
+- Key 72 MJ, staged solution and level unchanged; the diff touches nothing else.
+- Hash is the same at the start and the end (4f14228b78fa5222).

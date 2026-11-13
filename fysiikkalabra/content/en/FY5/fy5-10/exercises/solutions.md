@@ -262,3 +262,24 @@ $v = f\lambda = 1.5\,\text{Hz} \cdot 1.2\,\text{m}$, that is, $v = 1.8\,\text{m/
 4 false: the rope and its tension stay the same, so the speed stays $1.8\,\text{m/s}$. Double the frequency $3.0\,\text{Hz}$ halves the wavelength: $\lambda = \tfrac{1.8\,\text{m/s}}{3.0\,\text{Hz}} = 0.60\,\text{m}$.
 
 5 false: the horizontal axis of the $(t, y)$ graph is time, so the distance between the peaks is the period $T \approx 0.67\,\text{s}$, not the wavelength $1.2\,\text{m}$.
+
+## fy5-10-L1-10
+**Given:** frequency $f = 1.00\,\text{kHz}$, the rod is at $20\,{}^\circ\text{C}$, from the table (MAFY, *Äänen nopeuksia eri väliaineissa: Kiinteät aineet*, iron) the speed of sound $v = 5120\,\text{m/s}$
+**Find:** the wavelength $\lambda$ in metres
+**Principle:** The basic wave equation $v = f\lambda$ holds for every periodic wave. The speed is set by the medium, here iron, and it is read from the table. The frequency is set by the source, so it gives the wavelength.
+**Formula:** $v = f\lambda$, so $\lambda = \dfrac{v}{f}$
+**Conversions:** $1.00\,\text{kHz} = 1.00 \cdot 1000\,\text{Hz} = 1000\,\text{Hz}$, and $1\,\text{Hz} = 1\,\text{s}^{-1}$.
+**Substitution:** $\lambda = \dfrac{5120\,\text{m/s}}{1000\,\text{Hz}} = \dfrac{5120\,\text{m/s}}{1000\,\text{s}^{-1}} = 5.12\,\text{m}$
+**Answer:** $5.12\,\text{m}$, three significant figures like the table value $5120\,\text{m/s}$ and the frequency $1.00\,\text{kHz}$.
+**Reasonableness:** In air the wavelength of the same frequency would be $\tfrac{343\,\text{m/s}}{1000\,\text{Hz}} = 0.34\,\text{m}$. Sound travels about $15$ times faster in iron, so the wavelength is also about $15$ times longer: $\tfrac{5.12\,\text{m}}{0.34\,\text{m}} \approx 15$. The frequency stays the same when a wave moves from one medium to another.
+
+## fy5-10-L2-08
+**Given:** a snapshot of the rope, that is, the $(x, y)$ graph (figure), shaking frequency $f = 2.4\,\text{Hz}$
+**Find:** the speed of the wave $v$
+**Principle:** On the horizontal axis of the snapshot there is position, so the distance between two successive crests is the wavelength $\lambda$. Every point of the rope vibrates at the frequency of the hand, and by the basic wave equation the speed is the frequency times the wavelength.
+**Reading the graph:** The crests are on gridlines at $0.5\,\text{m}$, $2.0\,\text{m}$ and $3.5\,\text{m}$. The distance between two successive crests is $2.0\,\text{m} - 0.5\,\text{m} = 1.5\,\text{m}$, and the same distance lies between $2.0\,\text{m}$ and $3.5\,\text{m}$, so $\lambda = 1.5\,\text{m}$. The amplitude $4\,\text{cm}$ is not needed.
+**Formula:** $v = f\lambda$
+**Conversions:** Not needed: the wavelength is in metres and $1\,\text{Hz} = 1\,\text{s}^{-1}$, so the result comes out in $\text{m/s}$.
+**Substitution:** $v = 2.4\,\text{Hz} \cdot 1.5\,\text{m} = 2.4\,\text{s}^{-1} \cdot 1.5\,\text{m} = 3.6\,\text{m/s}$
+**Answer:** $3.6\,\text{m/s}$, two significant figures like the frequency $2.4\,\text{Hz}$ and the wavelength $1.5\,\text{m}$ read from the figure.
+**Reasonableness:** The period is $T = \tfrac{1}{2.4\,\text{Hz}} = 0.417\,\text{s}$, and in that time the wave travels $3.6\,\text{m/s} \cdot 0.417\,\text{s} = 1.5\,\text{m}$, one wavelength. A few metres per second is a normal speed for a wave on a rope.

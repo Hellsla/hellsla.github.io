@@ -117,6 +117,27 @@
           "feedback": "Tässä sekunnit on muutettu tunneiksi jakamalla luvulla $60$. Luvulla $60$ jakaminen antaa minuutit; tunnissa on $3600\\,\\text{s}$, joten tulos on $60$ kertaa liian suuri."
         }
       ]
+    },
+    {
+      "id": "fy5-6-L1-10",
+      "level": 1,
+      "text": "Kuvan vasemmalla puolella on Maan rata Auringon ympäri. Lue kuvasta Maan pienin ja suurin etäisyys Auringosta ja käytä niiden keskiarvoa ympyräradan säteenä. Auringon massa on $1{,}99 \\cdot 10^{30}\\,\\text{kg}$. Laske Maan ratanopeus ympyräradan mallilla. Anna vastaus kilometreinä sekunnissa.",
+      "figure": "fy5-6/radat",
+      "answer": 29.8,
+      "unit": "km/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-6-L1-11",
+      "level": 1,
+      "text": "Luotain kiertää Kuuta lähes ympyrärataa $300\\,\\text{km}$:n korkeudella Kuun pinnasta. Hae Kuun massa ja säde MAFY-taulukosta (mafytaulukot.fi). Laske luotaimen ratanopeus. Anna vastaus kilometreinä sekunnissa.",
+      "lookup": "MAFY",
+      "answer": 1.55,
+      "unit": "km/s",
+      "tolerance": 0.04,
+      "hints": [
+        "Arvot löytyvät MAFY-taulukon kohdasta *Aurinkokunta*."
+      ]
     }
   ],
   "level2": [
@@ -248,6 +269,15 @@
       ],
       "answer": 7.45,
       "unit": "km/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-6-L2-08",
+      "level": 2,
+      "text": "Kuvan oikealla puolella on Halleyn komeetan rata Auringon ympäri. Lue kuvasta komeetan pienin ja suurin etäisyys Auringosta. Kuinka monta kertaa suurempi olisi ympyräradan ratanopeus pienimmällä etäisyydellä kuin suurimmalla, jos kappale kiertäisi Aurinkoa ympyrärataa, jonka säde on kyseinen etäisyys?",
+      "figure": "fy5-6/radat",
+      "answer": 7.72,
+      "unit": "",
       "tolerance": 0.02
     }
   ],

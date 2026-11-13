@@ -148,6 +148,18 @@
           "feedback": "Väärin: lämpö on energian siirtymistä, eikä ilmaan varastoidu lämpöä. Kasvanut energia on sisäenergiaa, ja se tuli työnä."
         }
       ]
+    },
+    {
+      "id": "fy3-5-L1-10",
+      "level": 1,
+      "text": "Vanhassa kirjassa lämpömäärä on kaloreina ($\\text{cal}$). Kalori on vanha energian yksikkö. Systeemiin siirtyy lämpömäärä $2{,}0\\,\\text{kcal}$. Kcal tarkoittaa kilokaloria. Systeemiin tehdään myös työ $3{,}0\\,\\text{kJ}$. Hae kalorin ($1\\,\\text{cal}$) muunnos jouleiksi MAFY-taulukosta (mafytaulukot.fi). Kuinka paljon systeemin sisäenergia muuttuu? Anna vastaus kilojouleina.",
+      "lookup": "MAFY",
+      "answer": 11.3736,
+      "unit": "kJ",
+      "tolerance": 0.04,
+      "hints": [
+        "Arvo löytyy MAFY-taulukon taulukosta *Yksikkömuunnoksia*."
+      ]
     }
   ],
   "level2": [
@@ -279,6 +291,15 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy3-5-L2-08",
+      "level": 2,
+      "text": "Pumpun mäntä puristaa sylinterissä olevaa ilmaa. Kuvaajassa on männän ilmaan kohdistama voima $F$ männän kulkeman matkan $s$ funktiona. Mäntää painetaan niin nopeasti, ettei lämpöä ehdi siirtyä ilmaan eikä pois.\n\nKuinka paljon ilman sisäenergia kasvaa puristuksessa? Lue tarvittavat arvot kuvaajasta.",
+      "figure": "fy3-5/piston-force",
+      "answer": 60,
+      "unit": "J",
+      "tolerance": 0.03
     }
   ],
   "level3": [

@@ -220,3 +220,35 @@ In total $Q = 21.32 \cdot 10^{9}\,\text{J}$, and the power is $P = \dfrac{21.32 
 **Answer:** $590\,\text{kW}$, two significant figures, because the thickness of the water layer $0.030\,\text{m}$ and the temperature of the ice $-5.0\,{}^\circ\text{C}$ have two figures.
 **Reasonableness:** Estimate: freezing $54\,000\,\text{kg}$ needs about $0.33\,\text{MJ/kg} \cdot 54\,000\,\text{kg} \approx 18\,\text{GJ}$, and altogether about $21\,\text{GJ}$, which is $21.3\,\text{GJ} : 3.6\,\text{GJ/MWh} \approx 5.9\,\text{MWh}$, or about $5900\,\text{kWh}$; over ten hours the power is about $590\,\text{kW}$.
 **Model answer for part d):** freezing requires the most, about $85\,\%$ of the total energy, because the heat of freezing $s = 334\,\text{kJ/kg}$ corresponds roughly to a change in temperature of $80\,\text{K}$ in water ($334 : 4.19 \approx 80$), whereas the cooling of the water and the ice is only $12\,\text{K}$ and $5.0\,\text{K}$. The real cooling power needed is greater than the calculated one, because additional heat comes from the air of the hall, the lighting, the spectators, the concrete slab and the ground; the model therefore gives a lower limit. The electrical power of the machine also depends on its coefficient of performance.
+
+## fy3-16-L1-09
+**Given:** mass of the water $m = 0.30\,\text{kg}$, temperature $100\,{}^\circ\text{C}$; from the table (MAFY table, changes of state, water) $r = 2260\,\text{kJ/kg}$
+**Find:** the heat $Q$ taken by the vaporisation, in kilojoules
+**Principle:** The water is already at the boiling point, so its temperature does not change and all the heat goes into the change of state. The specific latent heat of vaporisation $r$ tells how much heat is needed to vaporise one kilogram. The heat is taken from the heater stones, so energy is conserved.
+**Formula:** $Q = rm$
+**Conversions:** Not needed: $r$ is in $\text{kJ/kg}$ and the mass in kilograms, so the result comes out directly in kilojoules.
+**Substitution:** $Q = 2260\,\dfrac{\text{kJ}}{\text{kg}} \cdot 0.30\,\text{kg} = 678\,\text{kJ}$
+**Answer:** $Q \approx 680\,\text{kJ}$, two significant figures as in the mass $0.30\,\text{kg}$. The value $r = 2260\,\text{kJ/kg}$ is from the MAFY table (changes of state, water), and an answer within about $\pm 4\,\%$ is accepted.
+**Reasonableness:** A rough estimate: $2300\,\text{kJ/kg} \cdot 0.3\,\text{kg} \approx 690\,\text{kJ}$. Vaporisation takes more than five times as much heat as warming the same water from $0\,{}^\circ\text{C}$ to $100\,{}^\circ\text{C}$, $0.30\,\text{kg} \cdot 4.19\,\text{kJ/(kg}\cdot\text{K)} \cdot 100\,\text{K} \approx 126\,\text{kJ}$, which is why the water thrown on the stones cools the heater strongly.
+
+## fy3-16-L2-09
+**Given:** reading from the graph, the temperature rises from the point $(0\,\text{s};\ 20\,{}^\circ\text{C})$ to the point $(180\,\text{s};\ 60\,{}^\circ\text{C})$; $m = 2.0\,\text{kg}$ and $P = 400\,\text{W}$
+**Find:** the specific heat capacity $c$ in $\text{J/(kg}\cdot\text{K)}$
+**Principle:** Energy is conserved and all the power of the resistor goes to the block, so the energy $Pt$ transferred in time $t$ warms the block: $Pt = Q = cm\Delta T$.
+**Reading the graph:** The graph is a straight line, so the power is constant. The starting point is at a crossing of the grid, $(0\,\text{s};\ 20\,{}^\circ\text{C})$, and the end point at a crossing, $(180\,\text{s};\ 60\,{}^\circ\text{C})$. The grid spacing is $20\,\text{s}$ and $10\,{}^\circ\text{C}$. So the time is $t = 180\,\text{s}$ and the change in temperature is $\Delta T = 60 - 20 = 40\,{}^\circ\text{C} = 40\,\text{K}$.
+**Formula:** $Pt = cm\Delta T$, so $c = \dfrac{Pt}{m\Delta T}$
+**Conversions:** A change in temperature is equal in degrees Celsius and in kelvins, $\Delta T = 40\,\text{K}$. Power in $\text{W}$ times time in $\text{s}$ is in joules, so no other conversions are needed.
+**Substitution:** $c = \dfrac{400\,\text{W} \cdot 180\,\text{s}}{2.0\,\text{kg} \cdot 40\,\text{K}} = \dfrac{72\,000\,\text{J}}{80\,\text{kg}\cdot\text{K}} = 900\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$
+**Answer:** $c \approx 900\,\text{J/(kg}\cdot\text{K)}$, two significant figures as in the mass $2.0\,\text{kg}$.
+**Reasonableness:** The value is typical of a metal and equals the specific heat capacity of aluminium, $900\,\text{J/(kg}\cdot\text{K)}$. It is much smaller than that of water, $4190\,\text{J/(kg}\cdot\text{K)}$, as it is for metals. The assumption of no losses makes the true value slightly smaller.
+
+## fy3-16-L2-10
+**Given:** mass of the ice $m = 0.60\,\text{kg}$, initial temperature $-16\,{}^\circ\text{C}$, transferred power $P = 25\,\text{W}$; reading from the graph, melting all the ice needs an energy $Q$
+**Find:** the time $t$ in hours until all the ice has melted
+**Principle:** Energy is conserved, and the energy $Pt$ transferred through the walls warms the ice to the melting point and melts it. The graph shows the whole energy needed, and at a constant power $t = Q/P$.
+**Reading the graph:** The temperature rises from the point $(0\,\text{kJ};\ -16\,{}^\circ\text{C})$ to $(20\,\text{kJ};\ 0\,{}^\circ\text{C})$ and then stays at $0\,{}^\circ\text{C}$ while the ice melts, up to the point $(220\,\text{kJ};\ 0\,{}^\circ\text{C})$. All the ice has melted when the energy transferred is $Q = 220\,\text{kJ}$. This includes both warming and melting the ice. The grid spacing is $20\,\text{kJ}$.
+**Formula:** $Pt = Q$, so $t = \dfrac{Q}{P}$
+**Conversions:** $Q = 220\,\text{kJ} = 220\,000\,\text{J}$ and $1\,\text{h} = 3600\,\text{s}$
+**Substitution:** $t = \dfrac{220\,000\,\text{J}}{25\,\text{W}} = 8800\,\text{s} = \dfrac{8800}{3600}\,\text{h} = 2.44\,\text{h}$
+**Answer:** $t \approx 2.4\,\text{h}$, that is, about $2\,\text{h}\ 27\,\text{min}$, two significant figures, because the power $25\,\text{W}$ is a two-figure value.
+**Reasonableness:** An independent check: warming the ice takes $c m \Delta T = 2100\,\text{J/(kg}\cdot\text{K)} \cdot 0.60\,\text{kg} \cdot 16\,\text{K} = 20.2\,\text{kJ}$ and melting it $334\,\text{kJ/kg} \cdot 0.60\,\text{kg} = 200\,\text{kJ}$, together $220\,\text{kJ}$ as in the graph. A holding time of a few hours suits a cool bag.

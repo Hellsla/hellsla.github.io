@@ -32,4 +32,5 @@ a["fy1-8-L2-07"] = (2.40 - 0.60) / (8.0 - 2.0)   # line read at (2,0 s; 0,60 m),
 a["fy1-8-L3-04"] = 0.15 / (3.12 - 3.08)                   # hand-timing uncertainty 0,15 s / difference of means 0,04 s = 3,75 (about 3,8)
 r0 = (80.0 - 74.0) / 3.0                                  # L3-05: initial cooling rate 6,0 K / 3,0 min = 2,0 K/min
 a["fy1-8-L3-05"] = (1.0 / 0.050) / r0                     # T_drop >= 1,0 K / 0,050 = 20 K; t = 20 K / 2,0 K/min = 10 min
+a["fy1-8-L1-10"] = 343.4 * (0.2 / 0.05) / 1000  # MAFY: speed of sound in air 343,4 m/s; t >= 0,2 s / 0,05 = 4,0 s; s = v t = 1373,6 m = 1,3736 km
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

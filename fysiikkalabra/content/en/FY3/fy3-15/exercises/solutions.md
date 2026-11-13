@@ -219,3 +219,24 @@ The nearest option is $500\,\text{MW}$. Reasonableness: the result is about $42\
 $P_\text{L} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 38\,000\,\tfrac{\text{kg}}{\text{s}} \cdot 10.775\,\text{K} = 1.7156 \cdot 10^{9}\,\text{W} = 1716\,\text{MW}$
 **Answer:** $1720\,\text{MW}$, three significant figures like the water flow and the rise in temperature.
 **Reasonableness:** Estimate: $4000 \cdot 4 \cdot 10^4 \cdot 11\,\text{W} \approx 1.8 \cdot 10^9\,\text{W}$. The waste heat power is $P_\text{h} = 2700\,\text{MW} - 900\,\text{MW} = 1800\,\text{MW}$, and the condenser's share of it is $\tfrac{1716}{1800} = 95\,\%$; the rest, about $84\,\text{MW}$, goes into the air, for example as losses of the generator and the transformer. Less heat is transferred to the sea water than the waste heat, as it should be. After the condenser the water is only about $11\,\text{K}$ warmer than the surroundings, so it can no longer be used to produce electricity, but the energy has not disappeared: it warms the sea. In July the water leaves at a temperature of $28.4\,{}^\circ\text{C}$, so the sea is warmer in the discharge area than elsewhere, and conditions for aquatic life may worsen.
+
+## fy3-15-L1-09
+**Given:** mass flow of the water $q_m = 80\,\text{kg/s}$, rise in temperature $\Delta T = 40\,\text{K}$; from the table (MAFY table, specific heat capacities, liquids, water) $c = 4.182\,\text{kJ/(kg}\cdot\text{K)}$
+**Find:** the district heating power $P_\text{k}$ in megawatts
+**Principle:** The heat transferred to the water of the network is $Q = cm\Delta T$. When a mass $m$ of water flows steadily in time $t$, the heating power is $P = Q/t = c\,(m/t)\,\Delta T$, that is, $P_\text{k} = c\,q_m\,\Delta T$.
+**Formula:** $P_\text{k} = c\,q_m\,\Delta T$
+**Conversions:** $\dfrac{\text{kJ}}{\text{kg}\cdot\text{K}} \cdot \dfrac{\text{kg}}{\text{s}} \cdot \text{K} = \dfrac{\text{kJ}}{\text{s}} = \text{kW}$ and $1\,\text{MW} = 1000\,\text{kW}$
+**Substitution:** $P_\text{k} = 4.182\,\dfrac{\text{kJ}}{\text{kg}\cdot\text{K}} \cdot 80\,\dfrac{\text{kg}}{\text{s}} \cdot 40\,\text{K} = 13\,382\,\text{kW} = 13.4\,\text{MW}$
+**Answer:** $P_\text{k} \approx 13\,\text{MW}$, two significant figures as in the data $80\,\text{kg/s}$ and $40\,\text{K}$. The value $c = 4.182\,\text{kJ/(kg}\cdot\text{K)}$ is from the MAFY table (specific heat capacities, liquids, water, $20\,{}^\circ\text{C}$); for hot water the difference is small, and an answer within about $\pm 4\,\%$ is accepted.
+**Reasonableness:** A rough estimate: $4\,\text{kJ/(kg}\cdot\text{K)} \cdot 80\,\text{kg/s} \cdot 40\,\text{K} = 12\,800\,\text{kW} \approx 13\,\text{MW}$. The power suits a part of a city's district heating network, and it is smaller than the fuel power of a power plant, which is tens or hundreds of megawatts.
+
+## fy3-15-L2-09
+**Given:** reading from the bars of the figure, the power into the steam cycle $P_1 = 350\,\text{MW}$ and the power out of it $P_2 = 150\,\text{MW}$
+**Find:** the efficiency $\eta_2$ of the steam cycle as a percentage
+**Principle:** The stages are in series, and the output power of each stage is the product of its efficiency and the power coming in. The input power of the steam cycle is the power after the boiler, $P_1$, and its output power is $P_2$.
+**Reading the graph:** The tops of the bars $P_1$ and $P_2$ are on grid lines: $P_1$ at $350\,\text{MW}$ and $P_2$ at $150\,\text{MW}$. The grid spacing is $50\,\text{MW}$. The fuel power $P_0$ and the electric power $P_3$ do not belong to the efficiency of the steam cycle.
+**Formula:** $P_2 = \eta_2 P_1$, so $\eta_2 = \dfrac{P_2}{P_1}$
+**Conversions:** Both powers are in $\text{MW}$, so the unit cancels; the efficiency as a percentage is obtained by multiplying by one hundred.
+**Substitution:** $\eta_2 = \dfrac{150\,\text{MW}}{350\,\text{MW}} = 0.4286 = 42.86\,\%$
+**Answer:** $\eta_2 \approx 43\,\%$, two significant figures, because the values are read from a $50\,\text{MW}$ grid.
+**Reasonableness:** The efficiency is below $100\,\%$ and typical of a steam cycle. An independent check: the efficiency of the boiler is $350/400 = 0.875$ and that of the generator and transformer $140/150 = 0.933$, so the efficiency of the whole chain is $0.875 \cdot 0.4286 \cdot 0.933 = 0.350 = 140/400$, which matches.

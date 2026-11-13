@@ -203,3 +203,13 @@
 **Principle:** An object looks equally large when its distance is as many times the distance of the Moon as its diameter is times the diameter of the Moon. In the eclipse assumed in the task the Sun and the Moon look approximately equally large, so the ratio of the distances is approximately the same as the ratio of the diameters.
 **Model answer:** The ratio of the diameters is $\dfrac{1.39\cdot10^{9}\,\text{m}}{3.47\cdot10^{6}\,\text{m}}\approx400$, so $d_\text{A}\approx400\cdot3.84\cdot10^{8}\,\text{m}\approx1.5\cdot10^{11}\,\text{m}$. This is the correct answer. The value $1.5\cdot10^{8}\,\text{m}$ is less than half the distance of the Moon, so the Sun would be closer than the Moon. The value $1.5\cdot10^{9}\,\text{m}$ is only about $4$ times the distance of the Moon, and the value $1.5\cdot10^{13}\,\text{m}$ about $39\,000$ times; neither matches the factor $400$.
 **Reasonableness:** Light travels the distance $1.5\cdot10^{11}\,\text{m} : 3.0\cdot10^{8}\,\text{m/s} = 5.0\cdot10^{2}\,\text{s}$, that is about $8\,\text{min}$, which is the well-known travel time of sunlight.
+
+## fy1-1-L1-10
+**Given:** from the table (MAFY table, Aurinkokunta) the Sun's mean radius $r_\text{A} = 695\,700\,\text{km}$ and the Earth's radius at the equator $r_\text{M} = 6\,378\,\text{km}$
+**Asked:** the ratio $k$ of the diameters of the Sun and the Earth
+**Principle:** The diameter of a sphere is twice its radius, $d = 2r$. The ratio of the sizes is the larger size divided by the smaller; when both are in the same unit, the units cancel.
+**Formula:** $k = \dfrac{d_\text{A}}{d_\text{M}} = \dfrac{2r_\text{A}}{2r_\text{M}} = \dfrac{r_\text{A}}{r_\text{M}}$
+**Conversions:** Both radii are already in kilometres, so no conversions are needed; the factor $2$ cancels.
+**Substitution:** $k = \dfrac{695\,700\,\text{km}}{6\,378\,\text{km}} = 109.08$
+**Answer:** $k \approx 109$, three significant figures as in the table values. The values are from the MAFY table (Aurinkokunta); an answer within about $\pm 4\,\%$ is accepted.
+**Reasonableness:** The orders of magnitude are $10^{5}\,\text{km}$ and $10^{3}\,\text{km}$, so the ratio is about $10^{2}$. The result $109$ agrees, and the Sun is known to be about a hundred times wider than the Earth.

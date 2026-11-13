@@ -492,7 +492,7 @@
             {
               "key": "units_precision",
               "points": 1,
-              "detail": "$1\\,\\text{g/cm}^3 = 1000\\,\\text{kg/m}^3$, so $\\rho \\approx 2680\\,\\text{kg/m}^3$."
+              "detail": "$1\\,\\text{g/cm}^3 = 1000\\,\\text{kg/m}^3$, so $\\rho \\approx 2.7 \\cdot 10^3\\,\\text{kg/m}^3$, two significant figures as in the volume $70\\,\\text{cm}^3$; $2680\\,\\text{kg/m}^3$ is also accepted."
             }
           ]
         },

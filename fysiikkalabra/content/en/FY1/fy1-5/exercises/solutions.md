@@ -203,3 +203,13 @@
 **Principle:** The height of a $(t, s)$ graph is the position, and the slope $\Delta s : \Delta t$ is the speed. When an object is at rest, $\Delta s = 0$ and the line is horizontal. In uniform motion the line is straight; if the position increases, the line goes up, and if the position decreases, the line goes down. The steepness of the line gives the speed, the magnitude of the velocity. When the position decreases, the slope, that is the velocity, is negative.
 **Model answer:** The correct one is graph C. At first the position is $s = 6.0\,\text{m}$ all the time, so the line is horizontal at this height. The way back of $6.0\,\text{m}$ takes $\Delta t = 6.0\,\text{m} : 1.0\,\text{m/s} = 6.0\,\text{s}$, so the walker is at the starting point at the time $4.0\,\text{s} + 6.0\,\text{s} = 10\,\text{s}$. The position decreases, so the line goes down, and its steepness matches the speed $6.0\,\text{m} : 6.0\,\text{s} = 1.0\,\text{m/s}$. In graph A the line goes up, so the position would increase and the walker would move away. Graph B is a $(t, v)$ graph, which shows the speed and not the position. Graph D shows the distance walked $\Delta s$, which starts from zero although the position of the walker is $6.0\,\text{m}$ at the start.
 **Reading the graph:** From the graphs we read where the line starts at the time $t = 0$, whether it is horizontal in the interval $0\text{–}4.0\,\text{s}$ and whether it then goes up or down. We also check the quantity on the vertical axis: in graph B it is the speed $v$. Only in graph C does the line start from $6.0\,\text{m}$, stay there until $4.0\,\text{s}$ and then go down to the point $(10\,\text{s};\ 0\,\text{m})$.
+
+## fy1-5-L1-09
+**Given:** time $t = 2.0\,\text{s}$; from the table (MAFY table, Äänen nopeuksia eri väliaineissa, liquids, water $20\,{}^\circ\text{C}$) the speed of sound $v = 1482.3\,\text{m/s}$
+**Find:** distance travelled $s$ in $\text{km}$
+**Principle:** Sound travels through water at a constant speed, so the motion is uniform and the distance is the speed times the time.
+**Formula:** $s = vt$
+**Conversions:** $1\,\text{km} = 1000\,\text{m}$, so $s$ is converted from metres to kilometres by dividing by $1000$.
+**Substitution:** $s = 1482.3\,\tfrac{\text{m}}{\text{s}} \cdot 2.0\,\text{s} = 2964.6\,\text{m} = 2.9646\,\text{km}$
+**Answer:** $3.0\,\text{km}$ (more precisely $2.96\,\text{km}$), two significant figures as in the time $2.0\,\text{s}$. Depending on the table value, the answer is accepted within about $\pm 4\,\%$.
+**Reasonableness:** Sound travels about $1.5\,\text{km}$ per second in water, over four times faster than in air (about $343\,\text{m/s}$), so in two seconds the distance is about $3\,\text{km}$.

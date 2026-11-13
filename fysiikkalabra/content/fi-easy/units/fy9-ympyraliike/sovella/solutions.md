@@ -1,10 +1,10 @@
 ## fy9-ympyraliike-s1
 
 ### a)
-**Annettu:** trailerin massa $m_\text{t} = 165\,\text{kg}$ ja painopiste $0{,}58\,\text{m}$ akselin edessä; veneen ja moottorin massa $m_\text{v} = 430\,\text{kg}$ ja painopiste $0{,}12\,\text{m}$ akselin edessä; kytkin $3{,}25\,\text{m}$ akselin edessä; $g = 9{,}81\,\text{m/s}^2$
+**Annettu:** trailerin massa $m_\text{t} = 165\,\text{kg}$ ja painopiste etäisyydellä $r_\text{t} = 0{,}58\,\text{m}$ akselin edessä; veneen ja moottorin massa $m_\text{v} = 430\,\text{kg}$ ja painopiste etäisyydellä $r_\text{v} = 0{,}12\,\text{m}$ akselin edessä; kytkin etäisyydellä $r_\text{k} = 3{,}25\,\text{m}$ akselin edessä; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** pystysuora voima $F$, jolla kytkin vaikuttaa vetoaisaan, ja aisapaino $F : g$
 **Periaate:** Valitaan kappaleeksi traileri ja vene yhdessä. Voimakuviossa niihin vaikuttaa neljä voimaa. Trailerin paino $\overline{G}_\text{t}$ ja veneen paino $\overline{G}_\text{v}$ osoittavat painopisteistä alas. Maan tukivoima $\overline{N}$ osoittaa pyörien kohdalta ylös. Kytkimen voima $\overline{F}$ osoittaa vetoaisan päästä ylös. Kun traileri on levossa, kytkimen vaakasuora voima on nolla. Traileri on levossa, joten se on tasapainossa. Voimien summa on nolla, ja momenttien summa on nolla. Valitaan momenttipisteeksi akseli. Silloin tuntemattoman tukivoiman varsi on nolla. Voimat ovat pystysuoria ja etäisyydet vaakasuoria. Siksi etäisyydet ovat voimien varsia (luku *Kappaleen tasapaino: voimat ja momentit*).
-**Kaava:** $F \cdot 3{,}25\,\text{m} - m_\text{t} g \cdot 0{,}58\,\text{m} - m_\text{v} g \cdot 0{,}12\,\text{m} = 0$, joten $F = \dfrac{(m_\text{t} \cdot 0{,}58\,\text{m} + m_\text{v} \cdot 0{,}12\,\text{m})\,g}{3{,}25\,\text{m}}$
+**Kaava:** $F r_\text{k} - m_\text{t} g\, r_\text{t} - m_\text{v} g\, r_\text{v} = 0$, joten $F = \dfrac{(m_\text{t} r_\text{t} + m_\text{v} r_\text{v})\,g}{r_\text{k}}$ ja aisapaino $m_\text{a} = \dfrac{F}{g} = \dfrac{m_\text{t} r_\text{t} + m_\text{v} r_\text{v}}{r_\text{k}}$
 **Muunnokset:** Ei tarvita. Massat ovat kilogrammoina ja etäisyydet metreinä.
 **Sijoitus:** Painojen momenttien summa akselin suhteen on $(165\,\text{kg} \cdot 0{,}58\,\text{m} + 430\,\text{kg} \cdot 0{,}12\,\text{m}) \cdot 9{,}81\,\text{m/s}^2 = 147{,}3\,\text{kg} \cdot \text{m} \cdot 9{,}81\,\text{m/s}^2 = 1445\,\text{N} \cdot \text{m}$. Siksi $F = \dfrac{1445\,\text{N} \cdot \text{m}}{3{,}25\,\text{m}} = 444{,}6\,\text{N}$. Aisapaino on $\dfrac{444{,}6\,\text{N}}{9{,}81\,\text{m/s}^2} = 45{,}3\,\text{kg}$.
 **Vastaus:** $F \approx 440\,\text{N}$, ja aisapaino on noin $45\,\text{kg}$. Tuloksessa on kaksi merkitsevää numeroa, kuten painopisteiden etäisyyksissä $0{,}58\,\text{m}$ ja $0{,}12\,\text{m}$. Aisapaino on pienempi kuin ohjeen alaraja $50\,\text{kg}$.
@@ -21,10 +21,10 @@
 **Järkevyys:** Pyörät kantavat $\tfrac{5392}{5837} \approx 92\,\%$ painosta, koska yhteinen painopiste on lähellä akselia. Tukivoimaa vastaa noin $550\,\text{kg}$:n massa. Massoja on yhteensä $595\,\text{kg}$. Kytkin ja pyörät kantavat siis yhdessä koko painon.
 
 ### c)
-**Annettu:** tavoiteltu aisapaino $60\,\text{kg}$; a-kohdan massat ja etäisyydet; venettä siirretään eteenpäin matka $\Delta x$
+**Annettu:** tavoiteltu aisapaino $m_\text{a} = 60\,\text{kg}$; a-kohdan massat ja etäisyydet; venettä siirretään eteenpäin matka $\Delta x$
 **Kysytty:** siirto $\Delta x$
 **Periaate:** Momenttiehto akselin suhteen pätee edelleen. Siirto muuttaa vain veneen painon vartta. Varsi muuttuu arvosta $0{,}12\,\text{m}$ arvoon $0{,}12\,\text{m} + \Delta x$. Aisapainoa $60\,\text{kg}$ vastaa voima $F = 60\,\text{kg} \cdot g$ (luku *Momentti: voiman kiertävä vaikutus*).
-**Kaava:** $60\,\text{kg} \cdot g \cdot 3{,}25\,\text{m} = m_\text{t} g \cdot 0{,}58\,\text{m} + m_\text{v} g\,(0{,}12\,\text{m} + \Delta x)$. Tästä $g$ supistuu eli häviää, ja $m_\text{v} \Delta x = 60\,\text{kg} \cdot 3{,}25\,\text{m} - m_\text{t} \cdot 0{,}58\,\text{m} - m_\text{v} \cdot 0{,}12\,\text{m}$
+**Kaava:** $m_\text{a} g\, r_\text{k} = m_\text{t} g\, r_\text{t} + m_\text{v} g\,(r_\text{v} + \Delta x)$. Tästä $g$ supistuu eli häviää, ja $\Delta x = \dfrac{m_\text{a} r_\text{k} - m_\text{t} r_\text{t} - m_\text{v} r_\text{v}}{m_\text{v}}$
 **Muunnokset:** Tulos muunnetaan senttimetreiksi: $1\,\text{m} = 100\,\text{cm}$.
 **Sijoitus:** $m_\text{v} \Delta x = 195\,\text{kg} \cdot \text{m} - 95{,}7\,\text{kg} \cdot \text{m} - 51{,}6\,\text{kg} \cdot \text{m} = 47{,}7\,\text{kg} \cdot \text{m}$. Siksi $\Delta x = \dfrac{47{,}7\,\text{kg} \cdot \text{m}}{430\,\text{kg}} = 0{,}1109\,\text{m} = 0{,}1109 \cdot 100\,\text{cm} = 11{,}1\,\text{cm}$
 **Vastaus:** Venettä siirretään noin $11\,\text{cm}$ eteenpäin. Tuloksessa on kaksi merkitsevää numeroa, kuten painopisteiden etäisyyksissä.
@@ -60,7 +60,7 @@
 **Annettu:** $m = 4100\,\text{kg}$, $r = 7{,}201 \cdot 10^{6}\,\text{m}$, $M = 5{,}97 \cdot 10^{24}\,\text{kg}$, $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** gravitaatiovoima $F$ radalla ja sen osuus painosta $mg$ maanpinnalla
 **Periaate:** Gravitaatiolain mukaan voima on kääntäen verrannollinen etäisyyden neliöön. Etäisyys mitataan keskipisteistä. Satelliitti on noin $13\,\%$ kauempana Maan keskipisteestä kuin maanpinta (luku *Kappaleiden välinen gravitaatiovoima*).
-**Kaava:** $F = \gamma\dfrac{Mm}{r^2}$ ja osuus $\dfrac{F}{mg}$
+**Kaava:** $F = \gamma\dfrac{Mm}{r^2}$ ja osuus $q = \dfrac{F}{mg} = \dfrac{\gamma M}{g\,r^2}$
 **Muunnokset:** $r$ on muunnettu metreiksi a-kohdassa. Lopuksi $1\,\text{N} = 0{,}001\,\text{kN}$.
 **Sijoitus:** Käytetään a-kohdan tuloa $\gamma M = 3{,}984 \cdot 10^{14}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}}$. Saadaan $F = \dfrac{3{,}984 \cdot 10^{14}\,\text{N}\cdot\text{m}^2/\text{kg} \cdot 4100\,\text{kg}}{(7{,}201 \cdot 10^{6}\,\text{m})^2} = 31\,503\,\text{N} = 31{,}5\,\text{kN}$. Paino maanpinnalla on $mg = 4100\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 40\,221\,\text{N}$. Siksi $\dfrac{F}{mg} = \dfrac{31\,503\,\text{N}}{40\,221\,\text{N}} = 0{,}783$.
 **Vastaus:** $F \approx 31{,}5\,\text{kN}$. Tuloksessa on kolme merkitsevää numeroa, kuten lähtötiedoissa. Voima on noin $78\,\%$ satelliitin painosta maanpinnalla.
@@ -294,8 +294,8 @@
 **Annettu:** tukiterä kohdassa $40{,}0\,\text{cm}$; punnus $m_\text{p} = 200\,\text{g}$ kohdassa $10{,}0\,\text{cm}$; kivi kohdassa $82{,}0\,\text{cm}$; metrimitta $m_\text{m} = 120\,\text{g}$, tasapaksu, painopiste kohdassa $50{,}0\,\text{cm}$; vaa'an lukema $113\,\text{g}$
 **Kysytty:** kiven massa $m_\text{k}$ ja vertailu vaa'an lukemaan
 **Periaate:** Mitta on levossa. Siksi momenttien summa terän suhteen on nolla. Terä ei ole mitan painopisteessä. Siksi myös mitan paino kiertää mittaa. Mitan painon varsi on $10{,}0\,\text{cm}$, ja paino kiertää mittaa samaan suuntaan kuin kivi. Voimat ovat pystysuoria ja mitta on vaakasuora. Siksi varret ovat etäisyydet terästä (luku *Kappaleen tasapaino: voimat ja momentit*).
-**Kaava:** $m_\text{p} g \cdot 30{,}0\,\text{cm} - m_\text{k} g \cdot 42{,}0\,\text{cm} - m_\text{m} g \cdot 10{,}0\,\text{cm} = 0$. Tästä $g$ supistuu, ja $m_\text{k} = \dfrac{m_\text{p} \cdot 30{,}0\,\text{cm} - m_\text{m} \cdot 10{,}0\,\text{cm}}{42{,}0\,\text{cm}}$
-**Muunnokset:** Ei tarvita. Senttimetrit supistuvat, ja massa saadaan grammoina.
+**Kaava:** $m_\text{p} g\, d_\text{p} - m_\text{k} g\, d_\text{k} - m_\text{m} g\, d_\text{m} = 0$. Tästä $g$ supistuu, ja $m_\text{k} = \dfrac{m_\text{p} d_\text{p} - m_\text{m} d_\text{m}}{d_\text{k}}$. Tässä $d_\text{p}$, $d_\text{k}$ ja $d_\text{m}$ ovat punnuksen, kiven ja mitan painopisteen etäisyydet terästä
+**Muunnokset:** Varret terästä: $d_\text{p} = 40{,}0\,\text{cm} - 10{,}0\,\text{cm} = 30{,}0\,\text{cm}$, $d_\text{k} = 82{,}0\,\text{cm} - 40{,}0\,\text{cm} = 42{,}0\,\text{cm}$ ja $d_\text{m} = 50{,}0\,\text{cm} - 40{,}0\,\text{cm} = 10{,}0\,\text{cm}$. Muita muunnoksia ei tarvita. Senttimetrit supistuvat, ja massa saadaan grammoina.
 **Sijoitus:** $m_\text{k} \cdot 42{,}0\,\text{cm} = 200\,\text{g} \cdot 30{,}0\,\text{cm} - 120\,\text{g} \cdot 10{,}0\,\text{cm} = 6000\,\text{g} \cdot \text{cm} - 1200\,\text{g} \cdot \text{cm} = 4800\,\text{g} \cdot \text{cm}$. Siksi $m_\text{k} = \dfrac{4800\,\text{g} \cdot \text{cm}}{42{,}0\,\text{cm}} = 114{,}3\,\text{g}$
 **Vastaus:** $m_\text{k} \approx 114\,\text{g}$. Tuloksessa on kolme merkitsevää numeroa, kuten mitatuissa paikoissa. Tulos eroaa vaa'an lukemasta $113\,\text{g}$ noin $1\,\%$.
 **Järkevyys:** Tasapainokohta luetaan $\pm 0{,}5\,\text{cm}$:n tarkkuudella. Se muuttaa tulosta noin $\pm 1{,}5\,\text{g}$. Siksi ero vaa'an lukemaan mahtuu mittauksen tarkkuuteen. Raportin tulos $142{,}9\,\text{g}$ on $26\,\%$ liian suuri, koska mitan oman painon momentti $1200\,\text{g} \cdot \text{cm}$ jäi pois.

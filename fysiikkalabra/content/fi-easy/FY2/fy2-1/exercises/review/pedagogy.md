@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 2c9fdf155f72e6a3
+CONTENT-HASH: 820b50e04e731d63
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- exercises.json fy2-1-L1-10 hint says "Polttoaineiden LHV-lämpöarvoja"; solutions.md says "polttoaineiden lämpöarvot". Optional: use the table's own name in both.
+- Earlier polish still open: the task does not say the value is read in MJ/kg.
 
 ## Checked
-- L1-09 (fi-easy) is a level-1 true/false task with five statements; it keeps the structure of fi: one statement per misconception (energy used up, thermal energy not counted), and feedback that repairs it without giving the answer before the student chooses.
-- Wording is natural for the language and uses the glossary terms for mechanical, thermal, potential and kinetic energy.
-- Model answer in solutions.md explains each true and false statement, as in fi.
-- fi-easy (NOTES.md §12): short sentences with one idea each; the task adds one plain sentence explaining that an isolated system does not exchange energy with its surroundings; no physics added or lost.
-- Round 2: the split L2-05 sum check is shorter, reads in steps joined by the connecting words, and keeps the numbers of fi; no pedagogy issue.
+- The diff moves the table pointer from the task text into a hint; it names only the table, as the teacher decided 2026-11-12, and gives neither the value nor the row's number.
+- Question stays last as its own sentence; the situation and the E = Hm explanation come first.
+- Key 86,8 MJ, tolerance 4 %, solution stages and sense check are unchanged and agree.
+- Level 1 and scope fit FY2 (E = Hm, MAFY lookup); Finnish unchanged and correct.
+- No new phone-layout risk; the text got shorter.
+- Hash same at start and end (820b50e04e731d63).

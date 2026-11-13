@@ -51,7 +51,7 @@
 **Given:** height of the throw $y_{0\text{A}} = 1.5\,\text{m}$, initial velocity $v_0 = 12.0\,\text{m/s}$ upwards, $g = 9.81\,\text{m/s}^2$; up positive, air resistance neglected
 **Find:** the height of the highest point $y_\text{top}$ above the floor
 **Principle:** The ball's acceleration is $g$ downwards during the whole flight, so the motion is uniformly accelerated. At the highest point the ball's velocity is zero for an instant, although the acceleration is not (chapter *Acceleration and uniformly accelerated motion*).
-**Formula:** $v = v_0 - g\,t_\text{top} = 0$, so $t_\text{top} = \dfrac{v_0}{g}$, and $y_\text{top} = y_{0\text{A}} + v_0\,t_\text{top} - \tfrac{1}{2}\,g\,t_\text{top}^2$
+**Formula:** $v = v_0 - g\,t_\text{top} = 0$, so $t_\text{top} = \dfrac{v_0}{g}$, and $y_\text{top} = y_{0\text{A}} + v_0\,t_\text{top} - \tfrac{1}{2}\,g\,t_\text{top}^2 = y_{0\text{A}} + \dfrac{v_0^2}{2g}$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $t_\text{top} = \dfrac{12.0\,\text{m/s}}{9.81\,\text{m/s}^2} = 1.223\,\text{s}$; $y_\text{top} = 1.5\,\text{m} + 12.0\,\text{m/s} \cdot 1.223\,\text{s} - \tfrac{1}{2} \cdot 9.81\,\text{m/s}^2 \cdot (1.223\,\text{s})^2 = 1.5\,\text{m} + 14.68\,\text{m} - 7.34\,\text{m} = 8.84\,\text{m}$
 **Answer:** $y_\text{top} \approx 8.8\,\text{m}$, to a tenth of a metre, because the height of the throw $1.5\,\text{m}$ is known to a tenth of a metre.
@@ -266,7 +266,7 @@
 **Given:** distance $x = 1.20\,\text{m}$ from rest, time $t = 1.6\,\text{s}$, uncertainty of the timing $\Delta t = 0.2\,\text{s}$
 **Find:** the acceleration $a$ the group calculated, and its range because of the uncertainty of the timing
 **Principle:** The group assumes the motion to be uniformly accelerated. The position of a body starting from rest is then $x = \tfrac{1}{2}\,a\,t^2$ (chapter *Acceleration and uniformly accelerated motion*). The effect of the uncertainty is estimated by calculating the result with the extreme values of the time $t \pm \Delta t$ (chapter *Measuring and the reliability of a measurement*).
-**Formula:** $x = \tfrac{1}{2}\,a\,t^2$, so $a = \dfrac{2x}{t^2}$
+**Formula:** $x = \tfrac{1}{2}\,a\,t^2$, so $a = \dfrac{2x}{t^2}$; the extreme values from the timing uncertainty are $a_\text{min} = \dfrac{2x}{(t + \Delta t)^2}$ and $a_\text{max} = \dfrac{2x}{(t - \Delta t)^2}$
 **Conversions:** The distance is in metres and the time in seconds, so no conversions are needed.
 **Substitution:** $a = \dfrac{2 \cdot 1.20\,\text{m}}{(1.6\,\text{s})^2} = \dfrac{2.40\,\text{m}}{2.56\,\text{s}^2} = 0.9375\,\text{m/s}^2$; extreme values $\dfrac{2.40\,\text{m}}{(1.8\,\text{s})^2} = 0.741\,\text{m/s}^2$ and $\dfrac{2.40\,\text{m}}{(1.4\,\text{s})^2} = 1.224\,\text{m/s}^2$
 **Answer:** $a \approx 0.94\,\text{m/s}^2$, but because of the uncertainty the result lies between $0.74$…$1.22\,\text{m/s}^2$, that is, $a \approx (0.9 \pm 0.3)\,\text{m/s}^2$. The result should be given to one or two significant figures, because the uncertainty is large.

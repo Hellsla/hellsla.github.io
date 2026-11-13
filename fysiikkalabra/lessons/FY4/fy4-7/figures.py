@@ -230,8 +230,20 @@ def pallo_ek():
     return f.svg()
 
 
+def ep_kuvaaja():
+    """Task figure: E_p of a crate (zero level: the floor) against its height; the mass (2,0 kg) is not marked."""
+    f = Fig("fy47-epkuvaaja", 340, "Kuvaaja mittakaavassa: vaaka-akselilla laatikon korkeus lattiasta metreinä nollasta 2,5:een, "
+            "pystyakselilla laatikon painovoiman potentiaalienergia jouleina nollasta 50:een, nollataso on lattia. Kuvaaja on origosta "
+            "alkava nouseva suora. Se kulkee pisteiden (1,0 m; 20 J) ja (2,0 m; 39 J) kautta. Massaa ei ole merkitty.")
+    ax = Axes(f, (92, 290), (496, 60), x=(0, 2.5), y=(0, 50), xticks=[0.5, 1, 1.5, 2, 2.5], yticks=list(range(5, 51, 5)),
+              xlabel=r"h\ (\text{m})", ylabel=r"E_\text{p}\ (\text{J})", yfmt=lambda v: fi(v) if v % 10 == 0 else "")
+    ax.line([(0, 0), (2.5, 2.0 * 9.81 * 2.5)], EP_COL, 3.5)
+    for h in (1.0, 2.0): ax.point(h, 2.0 * 9.81 * h, EP_COL)
+    return f.svg()
+
+
 FIGURES = {"hero": hero, "ramppi": ramppi, "polut": polut, "nollataso": nollataso, "ek-kuvaaja": ek_kuvaaja,
-           "pallo-ek": pallo_ek}
+           "pallo-ek": pallo_ek, "ep-kuvaaja": ep_kuvaaja}
 
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
@@ -240,4 +252,5 @@ REUSE = {
     "nollataso": "reveals: E_p of a 0,50 kg book from two zero levels and the equal change 4,9 J (a theory figure)",
     "ek-kuvaaja": "reveals: E_k against v for 1,0 kg, 2,0 J at 2,0 m/s and 8,0 J at 4,0 m/s",
     "pallo-ek": "safe: an E_k(v) curve on a grid; the mass is not marked",
+    "ep-kuvaaja": "safe: an E_p(h) line on a grid (zero level the floor); the mass is not marked",
 }

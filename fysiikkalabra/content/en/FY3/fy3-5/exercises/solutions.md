@@ -200,3 +200,24 @@
 $$\begin{aligned} \Delta U &= Q + W \\ &= 0 + 60\,\text{J} = 60\,\text{J} \end{aligned}$$
 
 Statement 1 is true, because the internal energy increases by $60\,\text{J}$. Statement 2 is true, because the air stays a gas and the increase in its internal energy raises the temperature. Statement 3 is false: $60\,\text{J}$ is work, and the heat is zero. Statement 4 is false, because work changes the internal energy even when no heat is transferred. Statement 5 is false, because heat is a transfer of energy and there is no heat in the air: the air has gained internal energy.
+
+## fy3-5-L1-10
+**Given:** quantity of heat $Q = 2.0\,\text{kcal}$ and work $W = 3.0\,\text{kJ}$; from the table (MAFY table, unit conversions, energy/work, calorie) $1\,\text{cal} = 4.1868\,\text{J}$
+**Find:** the change in internal energy $\Delta U$ in kilojoules
+**Principle:** Energy is conserved, so $\Delta U = Q + W$. Heat is transferred into the system and the surroundings do work on it, so both $Q$ and $W$ are positive. The terms must be in the same unit, so the calories are converted to joules first.
+**Formula:** $\Delta U = Q + W$ and $Q = N \cdot 4.1868\,\text{J}$, where $N$ is the number of calories
+**Conversions:** $2.0\,\text{kcal} = 2000\,\text{cal}$ and $1\,\text{kJ} = 1000\,\text{J}$.
+**Substitution:** $Q = 2000 \cdot 4.1868\,\text{J} = 8373.6\,\text{J} = 8.3736\,\text{kJ}$, so $\Delta U = 8.3736\,\text{kJ} + 3.0\,\text{kJ} = 11.3736\,\text{kJ} \approx 11\,\text{kJ}$
+**Answer:** $11\,\text{kJ}$, two significant figures, like the data $2.0\,\text{kcal}$ and $3.0\,\text{kJ}$. The value $4.1868\,\text{J}$ of the calorie is from the MAFY table; the values of different tables differ slightly, and the answer is accepted within about $\pm 4\,\%$.
+**Reasonableness:** One kilocalorie is about $4.2\,\text{kJ}$, so $2.0\,\text{kcal} \approx 8.4\,\text{kJ}$. Adding $3.0\,\text{kJ}$ gives about $11.4\,\text{kJ}$. The result is positive, because energy enters the system both as heat and as work.
+
+## fy3-5-L2-08
+**Given:** the system is the air; the force of the piston on the air is given as a function of distance in the graph; no heat is transferred, so $Q = 0$
+**Find:** the increase in the internal energy of the air, $\Delta U$
+**Principle:** Energy is conserved, so $\Delta U = Q + W$. No heat is transferred, so $\Delta U = W$. The force changes along the distance, so the work is the area between the $(s,F)$ graph and the horizontal axis. The piston is part of the surroundings, which do work on the air, so $W$ is positive.
+**Reading the graph:** The line starts at the grid intersection $(0\,\text{m};\ 200\,\text{N})$ and ends at the intersection $(0.20\,\text{m};\ 400\,\text{N})$. The area is a trapezoid whose parallel sides are $F_1 = 200\,\text{N}$ and $F_2 = 400\,\text{N}$ and whose height is $s = 0.20\,\text{m}$.
+**Formula:** $W = \dfrac{F_1 + F_2}{2}\, s$ and $\Delta U = Q + W = W$
+**Conversions:** None needed: the force is in newtons and the distance in metres, so $1\,\text{N}\cdot\text{m} = 1\,\text{J}$.
+**Substitution:** $W = \dfrac{200\,\text{N} + 400\,\text{N}}{2} \cdot 0.20\,\text{m} = 300\,\text{N} \cdot 0.20\,\text{m} = 60\,\text{J}$, so $\Delta U = 0 + 60\,\text{J} = 60\,\text{J}$
+**Answer:** $60\,\text{J}$, two significant figures, like the data $0.20\,\text{m}$. The values of the graph are read accurately from the grid, so $58.2\ldots61.8\,\text{J}$ is accepted.
+**Reasonableness:** The mean force is $300\,\text{N}$, which lies between the initial and final forces $200\,\text{N}$ and $400\,\text{N}$. Because no heat escapes, all the work stays as internal energy of the air and the air warms up. The result is positive, because work is done on the air.

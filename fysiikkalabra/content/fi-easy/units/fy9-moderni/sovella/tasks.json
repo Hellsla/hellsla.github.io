@@ -557,30 +557,30 @@
           "points": 5,
           "text": "Määritä puoliintumisaika aineistosta. Ota taustasäteily huomioon.",
           "answer": {
-            "value": 151,
+            "value": 153,
             "unit": "s",
             "tolerance": 0.04
           },
           "criteria": [
             {
-              "text": "Vähentää taustan jokaisesta lukemasta ennen laskemista: alussa $393$ ja lopussa $99$ pulssia $10\\,\\text{s}$:ssa.",
+              "text": "Vähentää taustan jokaisesta $11$ lukemasta ennen laskemista: alussa $393$ ja lopussa $99$ pulssia $10\\,\\text{s}$:ssa.",
               "tag": "experiment",
               "points": 1
             },
             {
               "key": "equation",
               "points": 1,
-              "detail": "$N = N_0 \\left(\\tfrac12\\right)^{t/T_{1/2}}$, joten $T_{1/2} = \\dfrac{t \\ln 2}{\\ln (N_0 : N)}$, tai sovitus $y = A\\,e^{-Ct} + B$ ja $T_{1/2} = \\tfrac{\\ln 2}{C}$"
+              "detail": "$\\ln N = \\ln N_0 - \\lambda t$, joten suoran $(t,\\ \\ln N)$ kulmakerroin on $k = -\\lambda$ ja $T_{1/2} = \\dfrac{\\ln 2}{-k}$; sovitus kaikkiin pisteisiin. Hyväksytään myös kahden pisteen lasku $T_{1/2} = \\dfrac{t \\ln 2}{\\ln (N_0 : N)}$"
             },
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$T_{1/2} = \\dfrac{300\\,\\text{s} \\cdot 0{,}693}{\\ln (393 : 99)} \\approx 151\\,\\text{s}$ tai sovituksella noin $153\\,\\text{s}$"
+              "detail": "$k \\approx -4{,}53 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{s}}$ ja $T_{1/2} \\approx 153\\,\\text{s}$; kahden pisteen laskulla noin $151\\,\\text{s}$"
             },
             {
               "key": "units_precision",
               "points": 1,
-              "detail": "$T_{1/2} \\approx 150\\,\\text{s}$; tulokset $145$–$157\\,\\text{s}$ hyväksytään."
+              "detail": "$T_{1/2} \\approx 153\\,\\text{s}$; tulokset $147$–$159\\,\\text{s}$ hyväksytään."
             },
             {
               "key": "reasonableness",

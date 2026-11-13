@@ -225,3 +225,35 @@ $$\begin{aligned}
 Sähköteho on suuruusluokaltaan $2\,\text{MW}$. Teho voidaan kirjoittaa muotoon $P = \eta \cdot \tfrac{1}{2}v^2 \cdot \rho A v$, jossa $\tfrac{1}{2}v^2$ on yhden ilmakilogramman liike-energia ja $\rho A v$ häiriöttömän tuulen sekunnissa pyyhkäisypinta-alan läpi kuljettaman ilman massa. Molemmat kasvavat nopeuden mukana. Vaihtoehto $0{,}2\,\text{MW}$ syntyy, kun teho lasketaan verrannolliseksi neliöön $v^2$: mukana on vain liike-energia kilogrammaa kohti, ja massavirran kasvu unohtuu. Vaihtoehto $20\,\text{kW}$ syntyy, kun teho lasketaan verrannolliseksi nopeuteen $v$: mukana on vain massavirta, ja kilogrammaa kohti lasketun liike-energian kasvu unohtuu. Jos nopeus sijoitetaan lukuna $36$ muuntamatta, tulos on noin $47$ kertaa liian suuri, noin $90\,\text{MW}$.
 
 Tulos on järkevä. Tuulen teho on $P : \eta \approx 4{,}9\,\text{MW}$, ja siitä saadaan sähköksi alle puolet. Luvun esimerkissä $120\,\text{m}$:n roottori tuotti tuulen nopeudella $9{,}0\,\text{m/s}$ noin $2{,}3\,\text{MW}$, eli tulos on samaa suuruusluokkaa.
+
+## fy4-15-L1-09
+**Annettu:** roottorin halkaisija $d = 82\,\text{m}$, tuulen nopeus $v = 9{,}0\,\text{m/s}$, hyötysuhde $\eta = 0{,}45$; MAFY-taulukosta (*Tiheyksiä: Kaasujen tiheyksiä*) ilman tiheys lämpötilassa $0\,{}^\circ\text{C}$ on $\rho = 1{,}29\,\text{kg/m}^3$
+**Kysytty:** sähköteho $P$ yksikössä $\text{kW}$
+**Periaate:** Häiriötön tuuli kuljettaa roottorin pyyhkäisypinta-alan läpi tehon $\tfrac{1}{2}\rho A v^3$, ja voimala muuttaa siitä sähköksi osuuden $\eta$. Kylmä ilma on tiheämpää kuin luvussa käytetty $1{,}25\,\text{kg/m}^3$, joten taulukon tiheys sijoitetaan kaavaan.
+**Kaava:** $P = \tfrac{1}{2}\eta\rho A v^3$ ja $A = \pi r^2$, joten $P = \tfrac{1}{2}\eta\rho \pi r^2 v^3$
+**Muunnokset:** Säde $r = 82\,\text{m} : 2 = 41\,\text{m}$; lopuksi $1\,\text{kW} = 1000\,\text{W}$.
+**Sijoitus:** $A = \pi \cdot (41\,\text{m})^2 = 5281{,}0\,\text{m}^2$ ja $P = \tfrac{1}{2} \cdot 0{,}45 \cdot 1{,}29\,\tfrac{\text{kg}}{\text{m}^3} \cdot 5281{,}0\,\text{m}^2 \cdot \left(9{,}0\,\tfrac{\text{m}}{\text{s}}\right)^3 = 1\,117\,422\,\text{W} \approx 1100\,\text{kW}$
+**Vastaus:** $1100\,\text{kW}$ eli noin $1{,}1\,\text{MW}$, kaksi merkitsevää numeroa kuten hyötysuhteessa $0{,}45$ ja tuulen nopeudessa $9{,}0\,\text{m/s}$.
+**Järkevyys:** Tiheydellä $1{,}25\,\text{kg/m}^3$ teho olisi $1{,}08\,\text{MW}$. Tiheys on noin $3\,\%$ suurempi, ja teho on suoraan verrannollinen tiheyteen, joten pakkasilla teho on noin $3\,\%$ suurempi. Tulos on luvun $120\,\text{m}$:n voimalan tulosta pienempi, koska roottori on pienempi.
+
+## fy4-15-L2-09
+**Annettu:** tehokäyrä pisteinä, tuulen nopeus $v = 7\,\text{m/s}$, aika $t = 120\,\text{h}$
+**Kysytty:** sähköenergia $E$ yksikössä $\text{MWh}$
+**Periaate:** Kun tuuli puhaltaa tasaisesti, sähköteho pysyy vakiona. Silloin energia on teho kertaa aika. Teho luetaan valmistajan tehokäyrästä, joka ilmoittaa sähkötehon suoraan.
+**Kuvaajan lukeminen:** Vaaka-akselilta etsitään nopeus $7\,\text{m/s}$ ja luetaan sen kohdalla olevan pisteen korkeus: $P = 511\,\text{kW}$.
+**Kaava:** $E = Pt$
+**Muunnokset:** $P = 511\,\text{kW} = 0{,}511\,\text{MW}$, ja aika pidetään tunteina, jolloin energia saadaan megawattitunteina.
+**Sijoitus:** $E = 0{,}511\,\text{MW} \cdot 120\,\text{h} = 61{,}32\,\text{MWh} \approx 61{,}3\,\text{MWh}$
+**Vastaus:** $61{,}3\,\text{MWh}$, kolme merkitsevää numeroa kuten kuvaajasta luetussa tehossa $511\,\text{kW}$.
+**Järkevyys:** Teho on noin $0{,}5\,\text{MW}$ ja aikaa on noin $100\,\text{h}$, joten energia on noin $50\,\text{MWh}$. Tuuli on tässä keskinopeutta, joten pelkkä teho aikaa kohti on sopiva arvio vain, koska tuuli on oletettu tasaiseksi.
+
+## fy4-15-L2-10
+**Annettu:** tehokäyrä pisteinä, tuulen nopeus kasvaa arvosta $9\,\text{m/s}$ arvoon $12\,\text{m/s}$
+**Kysytty:** tehon suhde $P_{12} : P_9$ ja sen vertailu kuutiolliseen malliin
+**Periaate:** Tuulen vertailuteho on verrannollinen nopeuden kolmanteen potenssiin, joten vakiohyötysuhteella myös sähköteho olisi. Todellisen voimalan tehokäyrä kertoo, miten sähköteho oikeasti muuttuu.
+**Kuvaajan lukeminen:** Nopeuden $9\,\text{m/s}$ kohdalla pisteen korkeus on $P_9 = 1017\,\text{kW}$ ja nopeuden $12\,\text{m/s}$ kohdalla $P_{12} = 1637\,\text{kW}$. Käyrä on jo taipumassa kohti nimellistehoa $1650\,\text{kW}$.
+**Kaava:** todellinen suhde $k = \dfrac{P_{12}}{P_9}$ ja kuutiollisen mallin suhde $k_\text{malli} = \left(\dfrac{v_2}{v_1}\right)^3$
+**Muunnokset:** Kumpikin teho on yksikössä $\text{kW}$, joten yksikkö supistuu eikä muunnoksia tarvita.
+**Sijoitus:** $\dfrac{P_{12}}{P_9} = \dfrac{1637\,\text{kW}}{1017\,\text{kW}} = 1{,}6096$ ja malli: $\left(\dfrac{12\,\text{m/s}}{9\,\text{m/s}}\right)^3 = 2{,}370$
+**Vastaus:** teho kasvaa noin $1{,}61$-kertaiseksi, kolme merkitsevää numeroa kuten luetuissa tehoissa. Kuutiollinen malli antaisi $2{,}37$-kertaisen tehon.
+**Järkevyys:** Ero johtuu siitä, että voimalan teho lähestyy nimellistehoa $1650\,\text{kW}$, jota generaattori ei voi ylittää, ja lapoja käännetään päästämään osa tuulesta ohi. Silloin hyötysuhde pienenee eikä kuutiollinen malli enää päde. Heikommassa tuulessa, esimerkiksi nopeuksilla $5\,\text{m/s}$ ja $10\,\text{m/s}$, teho kasvaa lähes kuution mukaan.

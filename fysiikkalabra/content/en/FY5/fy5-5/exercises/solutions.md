@@ -280,3 +280,25 @@ $$\begin{aligned}
 \end{aligned}$$
 
 The ratio of the accelerations is $\tfrac{a_{\text{B}}}{a_{\text{A}}} = \tfrac{m_{\text{A}}}{m_{\text{B}}} = 4$, that is, the acceleration of asteroid B is four times the acceleration of A. Reason: the forces are equal, and the same force accelerates the lighter body more. The heavier asteroid does not pull the lighter one harder. The rule "all bodies fall with the same acceleration" does not hold here either, because each asteroid is in the field of the other asteroid and the fields are of different magnitudes. The distance is the same for both, so it does not affect the ratio of the accelerations.
+
+## fy5-5-L1-09
+**Given:** mass $m = 85\,\text{kg}$; the strength of the field on Mars is read from the figure
+**Find:** the gravitational force $F$ on the astronaut in the unit $\text{N}$
+**Principle:** The gravitational field strength $g$ on the surface of a body is the gravitational force per unit mass, so the force on a body of mass $m$ is $F = mg$. This is Newton's law of gravitation $F = \gamma\dfrac{M m}{r^2}$ with $g = \gamma\dfrac{M}{r^2}$.
+**Reading the figure:** The orange arrow above the surface labelled Mars has the label $3.71\,\text{m/s}^2$, so $g = 3.71\,\text{m/s}^2$. The other bodies are not needed.
+**Formula:** $F = mg$
+**Conversions:** The data is in SI units, so no conversions are needed.
+**Substitution:** $F = 85\,\text{kg}\cdot 3.71\,\text{m/s}^2 = 315.35\,\text{N}$
+**Answer:** $315\,\text{N}$, three significant figures like the acceleration $3.71\,\text{m/s}^2$.
+**Reasonableness:** On the Earth the force would be $85\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 834\,\text{N}$. The ratio $\dfrac{3.71}{9.81} = 0.38$ gives $0.38\cdot 834\,\text{N} \approx 315\,\text{N}$, so on Mars the astronaut weighs about two fifths of the weight on the Earth.
+
+## fy5-5-L2-09
+**Given:** radius $R = 6.99 \cdot 10^{7}\,\text{m}$, $\gamma = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$; the field strength of Jupiter is read from the figure
+**Find:** the mass $M$ of Jupiter in the unit $10^{27}\,\text{kg}$
+**Principle:** A body of mass $m$ on the surface of Jupiter is at the distance $R$ from the centre. The gravitational force is $F = mg$ and, by Newton's law of gravitation, $F = \gamma\dfrac{M m}{R^2}$. The two expressions are equal.
+**Reading the figure:** The arrow of Jupiter has the label $24.8\,\text{m/s}^2$, so $g = 24.8\,\text{m/s}^2$.
+**Formula:** $mg = \gamma\dfrac{M m}{R^2}$, so the mass $m$ of the body cancels and $M = \dfrac{g R^2}{\gamma}$
+**Conversions:** The data is in SI units; the answer $M = 1.82\cdot 10^{27}\,\text{kg}$ is converted to the unit $10^{27}\,\text{kg}$ at the end.
+**Substitution:** $M = \dfrac{24.8\,\text{m/s}^2\cdot (6.99 \cdot 10^{7}\,\text{m})^2}{6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}} = 1.816 \cdot 10^{27}\,\text{kg}$
+**Answer:** $1.82\,\cdot 10^{27}\,\text{kg}$, three significant figures like the radius.
+**Reasonableness:** The mass of the Earth is $5.97\cdot 10^{24}\,\text{kg}$, so the mass of Jupiter is about $\dfrac{1.82\cdot 10^{27}}{5.97\cdot 10^{24}} \approx 300$ times that, and this is the known size of Jupiter. The field strength is $2.5$ times that of the Earth even though the planet is $300$ times as massive, because the radius is large.

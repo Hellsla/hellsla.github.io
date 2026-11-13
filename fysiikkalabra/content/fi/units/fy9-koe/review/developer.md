@@ -40,3 +40,7 @@ practice.py figures/check units/fy9-koe (OK, 4 tasks, 61 points), units.py figur
 - Pedagogy: the options of every choice item are rebalanced. The correct option is the longest (or tied) in 3 of 19 items, never by more than 3 %, and every option is within ±30 % of the correct one. unit.md maps the solution headings to the seven steps after the steps figure, and the Esimerkki maps its stage names to the same headings. teacher.md: the 12 choice items of all modules are done in class and the 12 numeric items at home; modules are no longer self-picked. Polish: the Tutki rubric says "oikea vastaus" and no point for a substitution without units, and names its items as the steps. Answer B is set as a list. check-2 has a precision mistake (0,4). The s1 a Järkevyys check is now an energy comparison (a kettle).
 - Visual: the source_note prefix is removed, the steps figure has one neutral tint, and the pendulum point labels are at 20 px and clear of the axis.
 - Checks: practice.py check OK (61 p), units.py check clean, build OK, check_layout OK at 360 and 1280, Playwright at 390/1280: no console errors, raw `$` or katex errors.
+
+## Ratkaisutavan tarkistus (2026-11-12)
+- sovella s2 c): vastaus 9,8 m/s², kaksi merkitsevää numeroa (luettu 0,46 s² on kaksinumeroinen; aiemmin 3 numeroa ja ±0,3 m/s² keskenään ristiriidassa).
+- unit.md Vastauksen tarkkuus: rajaa tarkkuuden mitattu lähtöarvo, tarkat määrät ja muunnoskertoimet eivät rajoita.

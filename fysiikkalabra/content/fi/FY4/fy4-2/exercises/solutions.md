@@ -218,3 +218,13 @@ $\tfrac{1}{2}\,a = \tfrac{1}{2} \cdot (-2{,}0\,\text{m/s}^2)$, eli $\tfrac{1}{2}
 $\tfrac{1}{2}\,a\,t^2 = -1{,}0\,\text{m/s}^2 \cdot (4{,}0\,\text{s})^2$, eli $\tfrac{1}{2}\,a\,t^2 = -16\,\text{m}$
 
 $s_2 = 32\,\text{m} - 16\,\text{m}$, eli $s_2 = 16\,\text{m}$
+
+## fy4-2-L1-09
+**Annettu:** pudotuskorkeus $h = 20\,\text{m}$, alkunopeus $v_0 = 0$; taulukosta (MAFY-taulukko, Aurinkokunta, Jupiter) putoamiskiihtyvyys $g = 24{,}79\,\text{m/s}^2$
+**Kysytty:** putoamisaika $t$ yksikössä $\text{s}$
+**Periaate:** Ilmanvastus jätetään huomiotta, joten kivi putoaa vapaasti ja sen kiihtyvyys on vakio $a = g$. Silloin liike on tasaisesti kiihtyvää ja paikan yhtälö pätee.
+**Kaava:** Valitaan alaspäin suunta positiiviseksi ja alkupaikka origoksi, jolloin $x_0 = 0$ ja $x = h$. Yhtälö $x = x_0 + v_0\,t + \tfrac{1}{2}\,a\,t^2$ saa muodon $h = \tfrac{1}{2}\,g\,t^2$, josta $t = \sqrt{\dfrac{2h}{g}}$
+**Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
+**Sijoitus:** $t = \sqrt{\dfrac{2 \cdot 20\,\text{m}}{24{,}79\,\text{m/s}^2}} = \sqrt{1{,}613\,\text{s}^2} \approx 1{,}270\,\text{s}$
+**Vastaus:** $1{,}3\,\text{s}$ (tarkemmin $1{,}27\,\text{s}$). Korkeus $20\,\text{m}$ tulkitaan tarkaksi arvoksi, joten tulos on annettu kolmella merkitsevällä numerolla kuten taulukon arvo $24{,}79\,\text{m/s}^2$; eri taulukoiden arvot poikkeavat hieman, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Järkevyys:** Maassa sama pudotus kestäisi $\sqrt{2 \cdot 20\,\text{m} : 9{,}81\,\text{m/s}^2} \approx 2{,}02\,\text{s}$. Jupiterin putoamiskiihtyvyys on noin $2{,}5$-kertainen, ja aika on $\sqrt{2{,}5} \approx 1{,}6$ kertaa lyhyempi: $2{,}02\,\text{s} : 1{,}6 \approx 1{,}27\,\text{s}$.

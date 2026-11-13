@@ -171,6 +171,18 @@
           "feedback": "Wrong: a refuted hypothesis is a result from which something is learned. A failed investigation is one from which nothing can be concluded, for example because of uncontrolled variables."
         }
       ]
+    },
+    {
+      "id": "fy1-8-L1-10",
+      "level": 1,
+      "text": "The speed of sound in air ($20\\,{}^\\circ\\text{C}$) is measured with hand timing whose uncertainty is $0.2\\,\\text{s}$. The relative uncertainty of the measured time may be at most $5\\,\\%$. Look up the speed of sound in air in the MAFY table (mafytaulukot.fi). What is the shortest distance over which the sound must be measured to travel? Give the answer in km.",
+      "lookup": "MAFY",
+      "answer": 1.3736,
+      "unit": "km",
+      "tolerance": 0.04,
+      "hints": [
+        "The value is found in the MAFY table under *Äänen nopeuksia eri väliaineissa* (speeds of sound in different media)."
+      ]
     }
   ],
   "level2": [

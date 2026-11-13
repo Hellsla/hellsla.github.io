@@ -280,3 +280,25 @@ $$\begin{aligned}
 \end{aligned}$$
 
 Kiihtyvyyksien suhde on $\tfrac{a_{\text{B}}}{a_{\text{A}}} = \tfrac{m_{\text{A}}}{m_{\text{B}}} = 4$, eli asteroidin B kiihtyvyys on neljä kertaa A:n kiihtyvyys. Perustelu: voimat ovat yhtä suuret, ja sama voima kiihdyttää kevyempää kappaletta enemmän. Raskaampi asteroidi ei vedä kevyempää voimakkaammin. Myöskään sääntö ”kaikki kappaleet putoavat samalla kiihtyvyydellä” ei päde tässä. Kumpikin asteroidi on toisen asteroidin kentässä, ja kentät ovat eri suuret. Etäisyys on molemmille sama, joten se ei vaikuta kiihtyvyyksien suhteeseen.
+
+## fy5-5-L1-09
+**Annettu:** massa $m = 85\,\text{kg}$; Marsin kentän voimakkuus luetaan kuvasta
+**Kysytty:** astronauttiin vaikuttava gravitaatiovoima $F$ yksikössä $\text{N}$
+**Periaate:** Gravitaatiokentän voimakkuus $g$ pinnalla on gravitaatiovoima massayksikköä kohti. Siksi massaan $m$ vaikuttava voima on $F = mg$. Tämä on Newtonin gravitaatiolaki $F = \gamma\dfrac{M m}{r^2}$, kun $g = \gamma\dfrac{M}{r^2}$.
+**Kuvaajan lukeminen:** Marsin kohdalla pinnan yläpuolella oleva oranssi nuoli on merkitty arvolla $3{,}71\,\text{m/s}^2$, joten $g = 3{,}71\,\text{m/s}^2$. Muita taivaankappaleita ei tarvita.
+**Kaava:** $F = mg$
+**Muunnokset:** Tiedot ovat SI-yksiköissä, joten muunnoksia ei tarvita.
+**Sijoitus:** $F = 85\,\text{kg}\cdot 3{,}71\,\text{m/s}^2 = 315{,}35\,\text{N}$
+**Vastaus:** $315\,\text{N}$, kolme merkitsevää numeroa kuten kiihtyvyydessä $3{,}71\,\text{m/s}^2$.
+**Järkevyys:** Maassa voima olisi $85\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 834\,\text{N}$. Suhde $\dfrac{3{,}71}{9{,}81} = 0{,}38$ antaa $0{,}38\cdot 834\,\text{N} \approx 315\,\text{N}$, joten Marsissa astronautti painaa noin kaksi viidesosaa Maan painostaan.
+
+## fy5-5-L2-09
+**Annettu:** säde $R = 6{,}99 \cdot 10^{7}\,\text{m}$, $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$; Jupiterin kentän voimakkuus luetaan kuvasta
+**Kysytty:** Jupiterin massa $M$ yksikössä $10^{27}\,\text{kg}$
+**Periaate:** Jupiterin pinnalla oleva massa $m$ on etäisyydellä $R$ keskipisteestä. Gravitaatiovoima on $F = mg$ ja Newtonin gravitaatiolain mukaan $F = \gamma\dfrac{M m}{R^2}$. Lausekkeet ovat yhtä suuret.
+**Kuvaajan lukeminen:** Jupiterin nuoli on merkitty arvolla $24{,}8\,\text{m/s}^2$, joten $g = 24{,}8\,\text{m/s}^2$.
+**Kaava:** $mg = \gamma\dfrac{M m}{R^2}$, joten kappaleen massa $m$ supistuu ja $M = \dfrac{g R^2}{\gamma}$
+**Muunnokset:** Tiedot ovat SI-yksiköissä. Tulos $M = 1{,}82\cdot 10^{27}\,\text{kg}$ ilmoitetaan lopuksi yksikössä $10^{27}\,\text{kg}$.
+**Sijoitus:** $M = \dfrac{24{,}8\,\text{m/s}^2\cdot (6{,}99 \cdot 10^{7}\,\text{m})^2}{6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}} = 1{,}816 \cdot 10^{27}\,\text{kg}$
+**Vastaus:** $1{,}82\,\cdot 10^{27}\,\text{kg}$, kolme merkitsevää numeroa kuten säteessä.
+**Järkevyys:** Maan massa on $5{,}97\cdot 10^{24}\,\text{kg}$, joten Jupiterin massa on noin $\dfrac{1{,}82\cdot 10^{27}}{5{,}97\cdot 10^{24}} \approx 300$-kertainen. Se on Jupiterin tunnettu suuruusluokka. Kentän voimakkuus on vain $2{,}5$-kertainen Maahan verrattuna, vaikka planeetta on $300$ kertaa massiivisempi, koska säde on suuri.

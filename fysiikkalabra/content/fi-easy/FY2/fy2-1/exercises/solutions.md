@@ -64,6 +64,16 @@
 **Periaate:** Energiaa ei synny eikä katoa. Energia muuttaa muotoa: eristetyssä systeemissä $E_\text{alussa} = E_\text{lopussa}$. Summaan kuuluvat kaikki energialajit, myös lämpöenergia. Törmäyksessä ja ilmanvastuksen takia mekaanista energiaa muuttuu lämpöenergiaksi.
 **Mallivastaus:** Väitteet 1, 3 ja 5 ovat tosia. Mekaaninen energia $E_\text{p} + E_\text{k}$ pienenee jokaisessa pompussa. Pallon, lattian ja ilman kokonaisenergia pysyy kuitenkin samana. Lopussa pallolla ei ole enää liike-energiaa. Sillä ei ole myöskään potentiaalienergiaa, jonka se sai olemalla lattiaa korkeammalla. Sama energia on lämpöenergiana pallossa, lattiassa ja ilmassa. Väitteet 2 ja 4 ovat epätosia. Energia ei kulu loppuun. Lämpöenergia kuuluu kokonaisenergiaan, joten kokonaisenergia ei vähene.
 
+## fy2-1-L1-10
+**Annettu:** polttoaineen massa $m = 2{,}0\,\text{kg}$ (bensiini); taulukosta (MAFY-taulukko, polttoaineiden lämpöarvot, bensiini) $H = 43{,}4\,\text{MJ/kg}$
+**Kysytty:** palamisessa vapautuva kemiallinen energia $E$ yksikössä $\text{MJ}$
+**Periaate:** Energiaa ei synny eikä katoa, vaan se muuttaa muotoa. Palamisessa bensiinin kemiallinen energia muuttuu liike-energiaksi ja lämpöenergiaksi, ja muuttuvan energian määrä on yhtä suuri kuin vapautuva kemiallinen energia. Lämpöarvo $H$ kertoo vapautuvan energian yhtä massayksikköä kohti.
+**Kaava:** $E = Hm$
+**Muunnokset:** Lämpöarvo on jo yksikössä $\text{MJ/kg}$ ja massa kilogrammoina, joten vastaus tulee suoraan megajouleina eikä muunnoksia tarvita.
+**Sijoitus:** $E = 43{,}4\,\dfrac{\text{MJ}}{\text{kg}} \cdot 2{,}0\,\text{kg} = 86{,}8\,\text{MJ}$
+**Vastaus:** $E \approx 87\,\text{MJ}$, kaksi merkitsevää numeroa kuten massassa $2{,}0\,\text{kg}$. Lämpöarvo $H = 43{,}4\,\text{MJ/kg}$ on MAFY-taulukosta (polttoaineiden lämpöarvot, bensiini); eri taulukoiden arvot poikkeavat hieman toisistaan, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Järkevyys:** Karkea arvio: $40\,\text{MJ/kg} \cdot 2\,\text{kg} = 80\,\text{MJ}$, joten tulos on oikean kokoluokan. Koska $1\,\text{kWh} = 3{,}6\,\text{MJ}$, $87\,\text{MJ}$ on noin $24\,\text{kWh}$, ja bensiinin energiatiheys on suuri verrattuna esimerkiksi puuhun, jonka lämpöarvo on noin $16\,\text{MJ/kg}$.
+
 ## fy2-1-L2-01
 **Annettu:** akusta vapautuva kemiallinen energia $E_\text{kem} = 3{,}00\,\text{kJ}$, potkulaudan ja kuljettajan liike-energia $E_\text{k} = 2150\,\text{J}$
 **Kysytty:** lämpöenergiaksi muuttuva energia $E_\text{lämpö}$ yksikössä $\text{J}$
@@ -133,6 +143,17 @@
 **Sijoitus:** $E_\text{lämpö,hehku} = 216\,\text{kJ} - 11\,\text{kJ} = 205\,\text{kJ}$ ja $E_\text{lämpö,LED} = 216\,\text{kJ} - 54\,\text{kJ} = 162\,\text{kJ}$, joten $\Delta E_\text{lämpö} = 205\,\text{kJ} - 162\,\text{kJ} = 43\,\text{kJ}$
 **Vastaus:** Hehkulamppu tuottaa $43\,\text{kJ}$ enemmän lämpöenergiaa. Kaksi merkitsevää numeroa vastaa valon energian $11\,\text{kJ}$ tarkkuutta.
 **Järkevyys:** Hehkulampun lämpöenergia on suurempi, koska sen valon osuus on pienempi. Hehkulampun $11\,\text{kJ}$ on vain $5\,\%$ sähköenergiasta. LEDin $54\,\text{kJ}$ on $25\,\%$. Takaisinlasku: LED $54\,\text{kJ} + 162\,\text{kJ} = 216\,\text{kJ}$. Perustelu: kun valoa halutaan yhtä paljon, LED-lamppu tarvitsee vähemmän sähköenergiaa. Silloin vähemmän energiaa muuttuu hyödyttömäksi lämpöenergiaksi. LED on siis viisaampi valinta energian kannalta.
+
+## fy2-1-L2-08
+**Annettu:** kuvasta luetut energiat: kohdassa A $E_\text{p,A} = 700\,\text{J}$ ja $E_\text{k,A} = 0\,\text{J}$, kohdassa B $E_\text{p,B} = 300\,\text{J}$ ja $E_\text{k,B} = 300\,\text{J}$
+**Kysytty:** kohtaan B mennessä lämpöenergiaksi muuttuneen energian osuus alkuperäisestä energiasta prosentteina
+**Periaate:** Skeittari, half-pipe ja ympäristö muodostavat eristetyn systeemin, joten energia säilyy. Kitka muuttaa mekaanista energiaa lämpöenergiaksi, joten lämpöenergia on alkuenergian ja kohdan B mekaanisen energian erotus.
+**Kuvaajan lukeminen:** Kohdassa A on vain potentiaalienergian pylväs, jonka yläreuna on ruudukon viivalla $700\,\text{J}$, ja liike-energia on nolla, koska skeittari on levossa. Kohdassa B potentiaalienergian ja liike-energian pylväät yltävät kumpikin viivalle $300\,\text{J}$.
+**Kaava:** $E_\text{A} = E_\text{B} + E_\text{lämpö}$, joten $E_\text{lämpö} = E_\text{A} - E_\text{B}$, ja osuus on $p = \dfrac{E_\text{lämpö}}{E_\text{A}} \cdot 100\,\%$
+**Muunnokset:** Kaikki energiat ovat jouleina, joten muunnoksia ei tarvita.
+**Sijoitus:** $E_\text{lämpö} = (700\,\text{J} + 0\,\text{J}) - (300\,\text{J} + 300\,\text{J}) = 100\,\text{J}$, ja $p = \dfrac{100\,\text{J}}{700\,\text{J}} \cdot 100\,\% = 14{,}3\,\%$
+**Vastaus:** $p \approx 14\,\%$, pyöristettynä kokonaisiin prosentteihin, koska energiat luetaan kuvasta sadan joulen tarkkuudella.
+**Järkevyys:** Osuus on pienempi kuin $100\,\%$ ja positiivinen, kuten kitkan kohdalla pitää. Tarkistus: $600\,\text{J} + 100\,\text{J} = 700\,\text{J}$.
 
 ## fy2-1-L3-01
 **Annettu:** kohdassa A $E_\text{p} = 900\,\text{J}$ ja $E_\text{k} = 0\,\text{J}$; kohdassa B $E_\text{p} = 400\,\text{J}$ ja $E_\text{k} = 480\,\text{J}$; kohdassa C $E_\text{p} = 0\,\text{J}$ ja $E_\text{k} = 750\,\text{J}$

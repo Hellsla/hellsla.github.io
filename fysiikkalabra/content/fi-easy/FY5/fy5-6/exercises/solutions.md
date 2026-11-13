@@ -209,3 +209,35 @@ $$\begin{aligned}
 \end{aligned}$$
 
 Tunneiksi muutettuna $T = \tfrac{2{,}76 \cdot 10^{4}\,\text{s}}{3600\,\text{s/h}} \approx 7{,}7\,\text{h}$. Kiertoaika on siis noin $7{,}7\,\text{h}$ eli muutama tunti. Muut vaihtoehdot syntyvät tyypillisistä virheistä. Neliöjuuren unohtaminen antaa noin $0{,}0036\,\text{h}$. Säteen jättäminen kilometreiksi neliöjuuren alle antaa noin $0{,}24\,\text{h}$. Sekuntien jakaminen luvulla $60$ antaa noin $460\,\text{h}$. Tulos on järkevä: ratanopeus $2{,}1\,\text{km/s}$ on pienempi kuin Maan lähellä kiertävän satelliitin. Syy on se, että Marsin massa on noin kymmenesosa Maan massasta.
+
+## fy5-6-L1-10
+**Annettu:** kuvasta Maan rata: pienin etäisyys Auringosta $147{,}1\,\text{milj. km}$ ja suurin $152{,}1\,\text{milj. km}$; Auringon massa $M = 1{,}99 \cdot 10^{30}\,\text{kg}$, $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
+**Kysytty:** Maan ratanopeus $v$ kilometreinä sekunnissa
+**Periaate:** Maahan vaikuttaa vain Auringon gravitaatiovoima. Se on ympyräliikkeen kokonaisvoima: $\gamma \tfrac{Mm}{r^2} = \tfrac{mv^2}{r}$. Maan rata on lähes ympyrä. Siksi säteeksi kelpaa etäisyyksien keskiarvo.
+**Kuvaajan lukeminen:** Kuvan vasemman puolen alla ovat Maan radan etäisyydet. Pienin on $147{,}1\,\text{milj. km}$ ja suurin $152{,}1\,\text{milj. km}$. Rata ja sen päälle piirretty katkoviivaympyrä näyttävät samalta. Siksi ympyrämalli sopii.
+**Kaava:** $r = \dfrac{r_\text{min} + r_\text{max}}{2}$ ja $v = \sqrt{\dfrac{\gamma M}{r}}$
+**Muunnokset:** $r = \dfrac{147{,}1 + 152{,}1}{2}\,\text{milj. km} = 149{,}6\,\text{milj. km} = 1{,}496 \cdot 10^{11}\,\text{m}$. Lopuksi $1\,\text{km/s} = 1000\,\text{m/s}$.
+**Sijoitus:** $\gamma M = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot 1{,}99 \cdot 10^{30}\,\text{kg} = 1{,}3281 \cdot 10^{20}\,\text{m}^3/\text{s}^2$. Siis $v = \sqrt{\dfrac{1{,}3281 \cdot 10^{20}\,\text{m}^3/\text{s}^2}{1{,}496 \cdot 10^{11}\,\text{m}}} = 29\,796\,\text{m/s} = 29{,}796\,\text{km/s}$
+**Vastaus:** $29{,}8\,\text{km/s}$. Vastaus on annettu kolmella merkitsevällä numerolla kuten Auringon massa.
+**Järkevyys:** Maan radan pituus on noin $2\pi \cdot 1{,}496 \cdot 10^{11}\,\text{m} = 9{,}4 \cdot 10^{11}\,\text{m}$. Vuodessa on noin $3{,}16 \cdot 10^{7}\,\text{s}$. Nopeus on siis noin $30\,\text{km/s}$. Se on sama kuin kiertoajasta laskettu arvo.
+
+## fy5-6-L1-11
+**Annettu:** korkeus $h = 300\,\text{km}$; MAFY-taulukosta (Aurinkokunta, Kuu) massa $M = 7{,}346 \cdot 10^{22}\,\text{kg}$ ja keskimääräinen säde $R = 1737\,\text{km}$; $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
+**Kysytty:** luotaimen ratanopeus $v$ kilometreinä sekunnissa
+**Periaate:** Luotaimeen vaikuttaa vain Kuun gravitaatiovoima. Se on ympyräliikkeen kokonaisvoima: $\gamma \tfrac{Mm}{r^2} = \tfrac{mv^2}{r}$. Radan säde mitataan Kuun keskipisteestä. Siksi $r = R + h$.
+**Kaava:** $v = \sqrt{\dfrac{\gamma M}{R + h}}$
+**Muunnokset:** $r = 1737\,\text{km} + 300\,\text{km} = 2037\,\text{km} = 2{,}037 \cdot 10^{6}\,\text{m}$. Lopuksi $1\,\text{km/s} = 1000\,\text{m/s}$.
+**Sijoitus:** $\gamma M = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot 7{,}346 \cdot 10^{22}\,\text{kg} = 4{,}9027 \cdot 10^{12}\,\text{m}^3/\text{s}^2$. Siis $v = \sqrt{\dfrac{4{,}9027 \cdot 10^{12}\,\text{m}^3/\text{s}^2}{2{,}037 \cdot 10^{6}\,\text{m}}} = 1551\,\text{m/s} = 1{,}551\,\text{km/s}$
+**Vastaus:** $1{,}55\,\text{km/s}$. Vastaus on annettu kolmella merkitsevällä numerolla kuten taulukon massa. Arvot ovat MAFY-taulukosta (Aurinkokunta, Kuu). Eri taulukoiden arvot poikkeavat hieman. Vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Järkevyys:** Aivan Kuun pinnan tasolla ympyräradan nopeus olisi $\sqrt{1{,}62\,\text{m/s}^2 \cdot 1{,}737 \cdot 10^{6}\,\text{m}} \approx 1{,}68\,\text{km/s}$. Luotain on hieman ylempänä. Siksi sen nopeus on hieman pienempi, kuten pitääkin.
+
+## fy5-6-L2-08
+**Annettu:** kuvasta Halleyn komeetan rata: pienin etäisyys Auringosta $r_1 = 88\,\text{milj. km}$ ja suurin $r_2 = 5250\,\text{milj. km}$
+**Kysytty:** ympyräradan ratanopeuksien suhde $\dfrac{v_1}{v_2}$ näillä säteillä
+**Periaate:** Ympyräradalla gravitaatiovoima on kokonaisvoima: $\gamma \tfrac{Mm}{r^2} = \tfrac{mv^2}{r}$. Siitä saadaan $v = \sqrt{\tfrac{\gamma M}{r}}$. Auringon massa $M$ on kummassakin tapauksessa sama. Siksi se supistuu suhteesta pois.
+**Kuvaajan lukeminen:** Kuvan oikean puolen alla ovat Halleyn komeetan radan etäisyydet. Pienin on $88\,\text{milj. km}$ ja suurin $5250\,\text{milj. km}$.
+**Kaava:** $\dfrac{v_1}{v_2} = \dfrac{\sqrt{\gamma M / r_1}}{\sqrt{\gamma M / r_2}} = \sqrt{\dfrac{r_2}{r_1}}$
+**Muunnokset:** Muunnoksia ei tarvita. Etäisyydet ovat samassa yksikössä, ja suhteella ei ole yksikköä.
+**Sijoitus:** $\dfrac{v_1}{v_2} = \sqrt{\dfrac{5250\,\text{milj. km}}{88\,\text{milj. km}}} = \sqrt{59{,}66} = 7{,}724$
+**Vastaus:** noin $7{,}72$-kertainen. Vastaus on annettu kolmella merkitsevällä numerolla. Suurin etäisyys on noin $60$ kertaa pienin. Neliöjuuren vuoksi nopeus on vain noin $7{,}7$-kertainen. Komeetan oikea rata on kuvan mukaan hyvin pitkä ellipsi. Ympyrämalli ei kuvaa sitä. Tehtävässä verrataan vain mallin nopeuksia.
+**Järkevyys:** Koska $7{,}7^2 \approx 59$, tulos sopii etäisyyksien suhteeseen $59{,}7$. Nopeus on suurempi lähempänä Aurinkoa, kuten kaava $v \propto \tfrac{1}{\sqrt{r}}$ sanoo.

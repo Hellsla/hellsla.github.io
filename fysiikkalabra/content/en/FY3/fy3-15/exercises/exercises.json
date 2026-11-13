@@ -94,6 +94,18 @@
       "answer": 12.0,
       "unit": "GWh",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-15-L1-09",
+      "level": 1,
+      "text": "A combined heat and power plant heats the water of a district heating network. Water flows into the network at $80\\,\\text{kg/s}$ and its temperature rises by $40\\,\\text{K}$. The district heating power transferred to the water is $P_\\text{k} = c\\,q_m\\,\\Delta T$, where $c$ is the specific heat capacity of water, $q_m$ the mass flow of the water and $\\Delta T$ the rise in temperature.\n\nLook up the specific heat capacity of water in the MAFY table (mafytaulukot.fi). Calculate the district heating power in megawatts.",
+      "lookup": "MAFY",
+      "answer": 13.3824,
+      "unit": "MW",
+      "tolerance": 0.04,
+      "hints": [
+        "The value is in the MAFY table *Ominaislämpökapasiteetteja: Nesteet* (specific heat capacities: liquids)."
+      ]
     }
   ],
   "level2": [
@@ -250,6 +262,15 @@
           "feedback": "This result comes from taking the final temperature in kelvins, $291\\,\\text{K}$, as the rise $\\Delta T$. The rise is the difference of the temperatures, $10\\,\\text{K}$. The result would also exceed the whole fuel power of the plant, $1200\\,\\text{MW}$, so it is impossible."
         }
       ]
+    },
+    {
+      "id": "fy3-15-L2-09",
+      "level": 2,
+      "text": "The figure shows the power of a condensing power plant at the stages of its energy chain: $P_0$ is the fuel power, $P_1$ the power after the boiler, $P_2$ the power after the steam cycle and $P_3$ the electric power. Calculate the efficiency $\\eta_2$ of the steam cycle. Read the values you need from the figure and give the answer as a percentage.",
+      "figure": "fy3-15/chain-bars",
+      "answer": 42.857,
+      "unit": "%",
+      "tolerance": 0.03
     }
   ],
   "level3": [

@@ -299,6 +299,20 @@
           "feedback": "The statement is true, but it does not explain the answer. The same acceleration holds in both experiments, and it does not tell how $T$ changes when the masses are swapped."
         }
       ]
+    },
+    {
+      "id": "fy4-13-L2-09",
+      "level": 2,
+      "kind": [
+        "graph",
+        "data"
+      ],
+      "text": "A cart of mass $0.80\\,\\text{kg}$ is on a frictionless track. A light, inextensible string tied to it passes over a light, frictionless pulley, and a hanging mass is attached to the end of the string. The cart is released from rest and its speed is measured. The graph shows the measured points. Air resistance is neglected.\n\nDetermine the acceleration of the cart from the graph and use it to calculate the tension in the string. First draw the free-body diagram of the cart.",
+      "answer": 1.6,
+      "unit": "N",
+      "tolerance": 0.04,
+      "figure": "fy4-13/karry-vt-points",
+      "fbd": "equations"
     }
   ],
   "level3": [
@@ -408,6 +422,21 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy4-13-L3-06",
+      "level": 3,
+      "kind": [
+        "graph",
+        "model",
+        "reasoning"
+      ],
+      "text": "A cart is on a frictionless track, and a light, inextensible string tied to it passes over a light, frictionless pulley. A hanging mass of $0.20\\,\\text{kg}$ is attached to the end of the string. The mass of the cart is not known. The cart is released from rest and its speed is measured. The graph shows the measured points. Air resistance is neglected.\n\na) What is the mass of the cart? First draw the free-body diagram of each body.\n\nb) Is the tension in the string greater than, smaller than or equal to the weight of the hanging mass? Justify your answer.\n\nThe answer box takes the result of part a).",
+      "answer": 0.81,
+      "unit": "kg",
+      "tolerance": 0.04,
+      "figure": "fy4-13/karry-vt-points",
+      "fbd": "equations"
     }
   ]
 }

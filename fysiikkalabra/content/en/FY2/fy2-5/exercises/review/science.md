@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 7b14ba9ee8f88098
-Round: 4
+CONTENT-HASH: dc433a75eb77d4f4
+SCOPE: delta added-exercise from 4ac0dae73e3c9ad3 base 611fb7d5c174
 
 ## Blocking
 (none)
 
 ## Polish
-- Finnish source (not editable here): L2-08 solution says petrol has "lähes 40 MJ/kg" but H = 43; "yli 40" is accurate. Fixed in this translation only.
+(none)
 
 ## Checked
-- New task fy2-5-L2-08 (order, YO form) compared with the reviewed Finnish: data (43/1500 g, 15/5.0 kg, 26/0.0040 t, 10/12 kg), order items, answer string, unit "", tolerance 0.02, kind equal.
-- Recomputed: 43*1.5=64.5, 15*5.0=75, 26*4.0=104, 10*12=120 MJ; order petrol < firewood < coal < milled peat is correct; 1500 g=1.5 kg, 0.0040 t=4.0 kg.
-- Mass-order remark (petrol 1.5, coal 4.0, firewood 5.0, peat 12 kg) correct; firewood and coal swap.
-- No formula, number or unit lost; L2-08 solution numbers equal the Finnish.
-- Language: natural English, decimal point (5.0, 0.0040), no Finnish left.
-- check_i18n.py: nothing for fy2-5; build.py fy2-5 succeeds. Earlier 16 tasks unchanged since round 2.
-- Round 3 -> 4 (commit 442c889ba): L3-04 Substitution line split into groups of four months (2100+1900+1600+1100 = 6700, 600+250+200+250 = 1300, 600+1100+1600+2000 = 5300, sum 6700+1300+5300 = 13 300); recomputed, correct, same numbers and wording pattern as the Finnish. No other change; no edits needed.
+- L1-09: E = Hm = 26.7 x 0.50 = 13.35 MJ -> 13 MJ; ratio to petrol (0.62) check right.
+- L2-09: from fy2-5/lampoarvot petrol 43, firewood 15 MJ/kg; m_w = H_p m_p / H_w = 34.4 kg solved symbolically; 34 kg within 2 %.
+- check script (one run): every added answer recomputed from the task text with my own formulas, equal to answers.py and exercises.json; answer, unit, tolerance, figure and lookup identical to the reviewed Finnish; every number of the task texts and solutions identical en/fi.
+- MAFY lookup values agree with docs/mafy-arvot.tsv (VERIFIED 2026-11-12).
+- No scope breach, no guardrail break (A or B) found.

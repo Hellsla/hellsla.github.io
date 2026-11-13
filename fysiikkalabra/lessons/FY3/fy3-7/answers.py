@@ -45,4 +45,6 @@ a["fy3-7-L2-07"] = 100.0 - (81.3 + 90.0) / 2             # 60,0 kPa is midway be
 P_stear = 2200 * 0.100 * (80.0 - 70.2) / (3 * 60)       # liquid stearin cools 9,8 K in 3 min: P = c m ΔT/Δt = 2156 J/180 s = 11,98 W
 a["fy3-7-L3-04"] = P_stear * (30.9 - 3.2) * 60 / 1e3     # solidifying 3,2 -> 30,9 min (27,7 min): Q = P Δt = 19,9 kJ -> 20 kJ (s = Q/m = 199 kJ/kg)
 a["fy3-7-L3-05"] = c_vesi * 0.300 * (65.0 - 20.0) / (r + c_vesi * (100 - 65.0)) * 1e3   # steam: c M (T − T0) = m_h (r + c (100 − T)) -> 56 565 J / 2 406 650 J/kg = 23,5 g
+a["fy3-7-L1-09"] = 840 * 0.0050                              # ethanol 5,0 g evaporates: r = 840 kJ/kg (MAFY), Q = r m = 4,2 kJ
+a["fy3-7-L2-09"] = (20e3) / (0.60 * (0 - (-16)))             # figure fy3-7/melting-curve: ice warms (0 kJ; −16 °C) to (20 kJ; 0 °C): c = Q/(m ΔT) = 20 000 J/(0,60 kg · 16 K) = 2083 J/(kg·K)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

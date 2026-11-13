@@ -208,7 +208,7 @@ The best estimate of a repeated measurement is the mean $\bar{x}$. In this cours
 \end{aligned}
 ```
 
-where $x_\text{max}$ and $x_\text{min}$ are the largest and the smallest result, $\Delta x$ the measurement uncertainty and $\varepsilon$ the relative uncertainty. In a single measurement, the uncertainty of a reading can in a simple situation be estimated as half the smallest scale division, but the method and other sources of error also affect the total uncertainty. The uncertainty is rounded to one significant figure (two, if the first digit is 1), and the result to the same decimal place. The result of a multiplication or a division gets as many significant figures as the least precise starting value.
+where $x_\text{max}$ and $x_\text{min}$ are the largest and the smallest result, $\Delta x$ the measurement uncertainty and $\varepsilon$ the relative uncertainty. In a single measurement, the uncertainty of a reading can in a simple situation be estimated as half the smallest scale division, but the method and other sources of error also affect the total uncertainty. The uncertainty is rounded to one significant figure (two, if the first digit is 1), and the result to the same decimal place. The result of a multiplication or a division gets as many significant figures as the least precise measured starting value; exact quantities, such as integers and conversion factors, do not limit the precision.
 
 Repetition reduces the effect of random error in the mean, but it does not remove systematic error. A gross error is looked for: a deviating result is checked, and it is not removed without a reason.
 

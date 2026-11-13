@@ -203,3 +203,24 @@ c) Jos koko kivihiilisähkö korvattaisiin tuulella, uusi summa olisi $14\,700\,
 **Kysytty:** mikä päätelmä on se, jonka taulukon aineisto ja annettu epävarmuus $\Delta m = 10\,\text{kt}$ tukevat.
 **Periaate:** Kahden mittausarvon eron voi pitää todellisena vasta, kun ero on selvästi suurempi kuin arvojen epävarmuus. Aineisto näyttää vain sen, mitä siinä on. Se ei kerro syytä. Aineiston ulkopuolelle ennustaminen on epävarmaa. Päätelmän pitää lukea oikeaa saraketta.
 **Mallivastaus:** Päästö on sarakkeessa $m$. Vuosien $2020$ ja $2024$ ero on $520\,\text{kt} - 420\,\text{kt} = 100\,\text{kt}$. Se on kymmenkertainen epävarmuuteen $10\,\text{kt}$ verrattuna, joten pieneneminen on todennäköisesti todellista. Myös epävarmuusvälit $510$–$530\,\text{kt}$ ja $410$–$430\,\text{kt}$ ovat erillään. Ne eivät mene päällekkäin. Muut päätelmät eivät kestä. Ero $520\,\text{kt} - 515\,\text{kt} = 5\,\text{kt}$ jää epävarmuuden $10\,\text{kt}$ sisään. Siksi vuosien $2020$ ja $2021$ välistä pienenemistä ei voi osoittaa. Taulukossa ei ole tietoa polttoaineesta, joten syytä ei voi päätellä. Ennuste vuodelle $2034$ jatkaisi suoraa $10$ vuotta viiden vuoden aineiston ulkopuolelle. Tuotanto $1000\,\text{GWh}$ on eri sarakkeessa kuin päästö. Päästö muuttui, vaikka tuotanto ei muuttunut.
+
+## fy2-8-L1-09
+**Annettu:** maakaasun massa $m = 2{,}0\,\text{kg}$; lämpöarvo MAFY-taulukosta (Polttoaineiden LHV-lämpöarvoja, maakaasu) $H = 47\,\tfrac{\text{MJ}}{\text{kg}}$; päästökerroin $e = 55\,\tfrac{\text{g}}{\text{MJ}}$
+**Kysytty:** syntyvän hiilidioksidin massa $m_\text{CO2}$ kilogrammoina
+**Periaate:** Päästö kasvaa samassa suhteessa kuin vapautuva energia. Päästökerroin kertoo päästön yhtä energiayksikköä kohti. Lasketaan ensin energia lämpöarvolla. Sitten lasketaan päästö.
+**Kaava:** $E = Hm$ ja $m_\text{CO2} = eE$
+**Muunnokset:** $5170\,\text{g} = 5{,}17\,\text{kg}$, koska $1000\,\text{g} = 1\,\text{kg}$.
+**Sijoitus:** $E = 47\,\tfrac{\text{MJ}}{\text{kg}} \cdot 2{,}0\,\text{kg} = 94\,\text{MJ}$ ja $m_\text{CO2} = 55\,\tfrac{\text{g}}{\text{MJ}} \cdot 94\,\text{MJ} = 5170\,\text{g} = 5{,}17\,\text{kg}$
+**Vastaus:** $m_\text{CO2} \approx 5{,}2\,\text{kg}$, kaksi merkitsevää numeroa kuten massassa $2{,}0\,\text{kg}$. Lämpöarvo $47\,\tfrac{\text{MJ}}{\text{kg}}$ on MAFY-taulukosta (Polttoaineiden LHV-lämpöarvoja). Eri taulukoiden arvot eroavat vähän. Vastaus kelpaa, kun se on noin $\pm 4\,\%$ sisällä.
+**Järkevyys:** Yhdestä kilogrammasta maakaasua syntyy noin $2{,}6\,\text{kg}$ hiilidioksidia. Hiilidioksidia syntyy siis noin $2{,}6$ kertaa niin paljon kuin kaasua on. Näin käy hiilivedyillä, koska palaessa hiili yhtyy happeen.
+
+## fy2-8-L2-09
+**Annettu:** sähkönkulutus $E = 20{,}0\,\text{MWh}$; päästökertoimet luetaan kuvasta
+**Kysytty:** päästön pieneneminen $\Delta m$ tonneina
+**Periaate:** Päästö on päästökerroin kerrottuna sähköenergialla: $m = eE$. Lasketaan päästö kummallakin tuotantotavalla. Sitten vähennetään.
+**Kuvaajan lukeminen:** Kivihiilen pylvään päässä on luku $820$ ja maakaasun pylvään päässä $490$. Akselin yksikkö on $\text{g CO}_2\text{-ekv./kWh}$. Siis $e_\text{kivihiili} = 820\,\tfrac{\text{g}}{\text{kWh}}$ ja $e_\text{kaasu} = 490\,\tfrac{\text{g}}{\text{kWh}}$.
+**Kaava:** $\Delta m = (e_\text{kivihiili} - e_\text{kaasu})E$
+**Muunnokset:** $20{,}0\,\text{MWh} = 20\,000\,\text{kWh}$; lopuksi $1\,\text{t} = 10^{6}\,\text{g}$.
+**Sijoitus:** $\Delta m = (820 - 490)\,\tfrac{\text{g}}{\text{kWh}} \cdot 20\,000\,\text{kWh} = 6{,}6 \cdot 10^{6}\,\text{g} = 6{,}6\,\text{t}$
+**Vastaus:** $\Delta m \approx 6{,}6\,\text{t}$, kaksi merkitsevää numeroa, koska päästökertoimien erotus $330\,\tfrac{\text{g}}{\text{kWh}}$ on kahden luetun luvun erotus.
+**Järkevyys:** Kivihiilellä päästö on $820 \cdot 20\,000\,\text{g} = 16{,}4\,\text{t}$ ja kaasulla $490 \cdot 20\,000\,\text{g} = 9{,}8\,\text{t}$. Erotus $16{,}4\,\text{t} - 9{,}8\,\text{t} = 6{,}6\,\text{t}$ vastaa tulosta. Se on noin $40\,\%$ kivihiilen päästöstä.

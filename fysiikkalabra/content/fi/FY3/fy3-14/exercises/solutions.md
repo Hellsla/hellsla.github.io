@@ -236,3 +236,24 @@ $$\begin{aligned} s_2' &= \dfrac{4190 \cdot 4{,}45\,\text{J} - 1890\,\text{J}}{0
 c) $\Delta T_\text{v,min} = \dfrac{36\,704{,}4\,\text{J}}{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}300\,\text{kg}} = \dfrac{36\,704{,}4\,\text{J}}{1257\,\tfrac{\text{J}}{\text{K}}} = 29{,}2\,\text{K}$, joten $T_\text{v,min} = 0\,{}^\circ\text{C} + 29{,}2\,\text{K} = 29{,}2\,{}^\circ\text{C}$
 **Vastaus:** a) Jäätä jäi riveillä $T_\text{v} = 10\,{}^\circ\text{C}$ ja $20\,{}^\circ\text{C}$, koska $T = 0{,}0\,{}^\circ\text{C}$ (rajatapaus, jossa kaikki jää juuri suli, tuottaisi saman lukeman, mutta kohta c) näyttää, että nämä rivit ovat alle rajan $29\,{}^\circ\text{C}$). b) Jään lämpötila oli noin $-16\,{}^\circ\text{C}$. c) Pienin veden alkulämpötila on $29\,{}^\circ\text{C}$, kaksi merkitsevää numeroa, koska mitattu $T = 8{,}1\,{}^\circ\text{C}$ ja massat ovat kahdella tai kolmella numerolla. Taulukko on sopusoinnussa: $20\,{}^\circ\text{C} < 29\,{}^\circ\text{C}$ jäätä jää, ja $30\,{}^\circ\text{C} > 29\,{}^\circ\text{C}$ kaikki jää sulaa pienellä ylijäämällä ($T = 0{,}6\,{}^\circ\text{C}$).
 **Järkevyys:** Tarkistus riviltä $30\,{}^\circ\text{C}$: $T = \dfrac{4190 \cdot 0{,}300 \cdot 30 - 36\,704{,}4}{1676}\,{}^\circ\text{C} = \dfrac{37\,710 - 36\,704{,}4}{1676}\,{}^\circ\text{C} = 0{,}60\,{}^\circ\text{C}$, mikä on taulukon arvo. Rivi $60\,{}^\circ\text{C}$ antaa saman $Q_\text{j}$:n: $4190 \cdot 0{,}300 \cdot 60 - 4190 \cdot 0{,}400 \cdot 23{,}1 = 75\,420 - 38\,715{,}6 = 36\,704{,}4\,\text{J}$. Jään tarvitsema lämpö on lähes kokonaan sulamista ($33\,400\,\text{J}$), koska jään lämmitys vie vain $3300\,\text{J}$.
+
+## fy3-14-L1-09
+**Annettu:** jään massa $m = 80\,\text{g}$, lämpötila $0\,{}^\circ\text{C}$; taulukosta (MAFY-taulukko, aineiden olomuodon muutokset, vesi) $s = 333\,\text{kJ/kg}$
+**Kysytty:** jään sulattamiseen tarvittava lämpö $Q$ kilojouleina
+**Periaate:** Jää on jo sulamispisteessä, joten sen lämpötila ei muutu ja kaikki lämpö kuluu olomuodon muutokseen. Ominaissulamislämpö $s$ kertoo, kuinka paljon lämpöä tarvitaan yhden kilogramman sulattamiseen.
+**Kaava:** $Q = sm$
+**Muunnokset:** $m = 80\,\text{g} = 0{,}080\,\text{kg}$
+**Sijoitus:** $Q = 333\,\dfrac{\text{kJ}}{\text{kg}} \cdot 0{,}080\,\text{kg} = 26{,}64\,\text{kJ}$
+**Vastaus:** $Q \approx 27\,\text{kJ}$, kaksi merkitsevää numeroa kuten massassa $80\,\text{g}$. Arvo $s = 333\,\text{kJ/kg}$ on MAFY-taulukosta (aineiden olomuodon muutokset, vesi); tekstien arvo $334\,\text{kJ/kg}$ poikkeaa siitä alle prosentin, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Järkevyys:** Karkea arvio: $330\,\text{kJ/kg} \cdot 0{,}08\,\text{kg} \approx 26\,\text{kJ}$. Sama lämpö lämmittäisi $0{,}25\,\text{kg}$ vettä noin $\dfrac{26{,}6\,\text{kJ}}{4{,}19\,\text{kJ/(kg}\cdot\text{K)} \cdot 0{,}25\,\text{kg}} \approx 25\,\text{K}$, joten jää jäähdyttää juomaa tehokkaasti.
+
+## fy3-14-L2-09
+**Annettu:** kuvasta luettuna veden luovuttama lämpö $Q_\text{vesi} = 25\,\text{kJ}$, jään lämmittämiseen tarvittava lämpö $Q_\text{lämm} = 5\,\text{kJ}$ ja kaiken jään sulattamiseen tarvittava lämpö $Q_\text{kaikki} = 60\,\text{kJ}$; $s = 334\,\text{kJ/kg}$
+**Kysytty:** sulamatta jäävän jään massa $m_\text{jäljellä}$ grammoina
+**Periaate:** Eristetyssä astiassa energia säilyy, joten veden luovuttama lämpö kuluu ensin jään lämmittämiseen ja loput sulattamiseen. Jos sulatukseen jäävä lämpö on pienempi kuin kaiken jään sulattamiseen tarvittava, kaikki jää ei sula ja seoksen lopputilan lämpötila on $0\,{}^\circ\text{C}$.
+**Kuvaajan lukeminen:** Pylväät päättyvät ruudukon viivoille: ylin kohtaan $25\,\text{kJ}$ (vesi), keskimmäinen kohtaan $5\,\text{kJ}$ (jään lämmittäminen) ja alin kohtaan $60\,\text{kJ}$ (kaiken jään sulattaminen). Sulatukseen jää $25 - 5 = 20\,\text{kJ}$, mikä on vähemmän kuin $60\,\text{kJ}$, joten osa jäästä jää sulamatta.
+**Kaava:** $Q_\text{sulaa} = Q_\text{vesi} - Q_\text{lämm}$, $Q = sm$, joten $m_\text{sulaa} = \dfrac{Q_\text{sulaa}}{s}$ ja $m_\text{jäljellä} = \dfrac{Q_\text{kaikki}}{s} - m_\text{sulaa}$
+**Muunnokset:** $\text{kJ}/(\text{kJ/kg}) = \text{kg}$ ja $1\,\text{kg} = 1000\,\text{g}$
+**Sijoitus:** $m_\text{sulaa} = \dfrac{20\,\text{kJ}}{334\,\text{kJ/kg}} = 0{,}0599\,\text{kg}$ ja jään kokonaismassa $\dfrac{60\,\text{kJ}}{334\,\text{kJ/kg}} = 0{,}1796\,\text{kg}$, joten $m_\text{jäljellä} = 0{,}1796\,\text{kg} - 0{,}0599\,\text{kg} = 0{,}1198\,\text{kg} = 119{,}8\,\text{g}$
+**Vastaus:** $m_\text{jäljellä} \approx 120\,\text{g}$, kaksi merkitsevää numeroa, koska pylväät luetaan viiden kilojoulen ruudukosta.
+**Järkevyys:** Sulamatta jää $\dfrac{60 - 20}{60} = \dfrac{2}{3}$ jäästä, ja $\dfrac{2}{3} \cdot 180\,\text{g} = 120\,\text{g}$. Tulos on pienempi kuin jään kokonaismassa $180\,\text{g}$ ja suurempi kuin nolla, kuten pitää.

@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: d1be3d5c2b9e2503
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: d142b1dc9f41c8e8
+
 Round: 2
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- solutions.md L1-09 Vastaus — "muunnos on tarkka" and "vastaus hyväksytään noin ±4 %" sit awkwardly together; say the tolerance covers rounding of the input and table variants only if that is meant, or drop the second clause.
 
 ## Checked
-- git diff HEAD~1 (commit 29f864da6) of the unit's files (fi), judged in context; round-1 findings for this unit.
-- exercises.json correct-option feedback: '...sisäenergiaksi, joka siirtyy lämpönä ympäristöön' - consistent with the lesson's mechanism (internal energy, then heat transfer) and removes the 'into heat' slip.
+- The sentence "muunnos $1\,\text{kWh} = 3{,}6\,\text{MJ}$ on tarkka" is true and fits the teacher decision (MAFY hint names only the table); numbers and the 72 MJ answer unchanged.
+- Hash identical at start and end (d142b1dc9f41c8e8).

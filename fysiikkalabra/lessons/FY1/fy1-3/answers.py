@@ -50,4 +50,5 @@ a["fy1-3-L2-07"] = math.ceil(0.2 / (1.5 * 0.01))                   # ΔT/T = 0,2
 cart = [2.41, 2.38, 2.44, 2.40, 2.43, 2.39, 2.42]                  # data of L3-04 without the 2,97 s (clock stopped late, cause noted): 16,87 s / 7
 a["fy1-3-L3-04"] = round(mean(cart), 2)                            # 2,41 s (with the outlier 19,84 s / 8 = 2,48 s)
 a["fy1-3-L3-05"] = round((2.74 - 2.60) - (0.05 + 0.05), 2)         # difference 0,14 g/cm³ − 0,10 g/cm³ = 0,04 g/cm³ (intervals 2,69…2,79 and 2,55…2,65 do not overlap)
+a["fy1-3-L1-09"] = round((mean([1.004, 1.012, 1.008, 1.014, 1.012]) - 0.998206) / 0.998206 * 100, 2)   # MAFY table: water 20 °C 0,998206 g/cm³; mean 1,010 -> deviation 1,18 %
 print(json.dumps(a))

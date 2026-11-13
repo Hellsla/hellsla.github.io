@@ -36,4 +36,8 @@ I_amp = 0.20 / (4 * math.pi * 8.0 ** 2)                  # guitar amp 0,20 W at 
 I_drum = I_of(90) / (8.0 / 2.0) ** 2                     # drums 90 dB at 2,0 m -> at 8,0 m I/16 = 6,25e-5 W/m²
 I_sum = I_amp + I_drum                                   # total 3,112e-4 W/m² (L = 84,93 dB at 8,0 m)
 a["fy5-15-L3-05"] = 8.0 * math.sqrt(I_sum / I_of(70))    # I ∝ 1/r²: r = 8,0 m · sqrt(3,112e-4 / 1e-5) = 44,6 m -> 45 m
+# L1-09 figure fy5-15/kuvaaja-tehtava: L(4 m) = 74,0 dB read from the figure; I = I0 · 10^(L/10 dB) = 2,51e-5 -> 0,000025 W/m²
+a["fy5-15-L1-09"] = I_of(74.0)
+# L2-09 figure fy5-15/kuvaaja-tehtava: L(2 m) = 80,0 dB read from the figure; I = I_of(80) = 1,0e-4 W/m²; P = 4 pi r² I = 5,03e-3 W = 5,03 mW
+a["fy5-15-L2-09"] = 4 * math.pi * 2.0 ** 2 * I_of(80.0) * 1000
 print(json.dumps({k: round(v, 8) for k, v in a.items()}))

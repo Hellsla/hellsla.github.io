@@ -204,3 +204,24 @@ Ikkunat: $UA = 9{,}6\,\text{W/K}$, $P = 9{,}6\,\text{W/K} \cdot 30\,\text{K} = 2
 Seinä: $UA = 15{,}3\,\text{W/K}$, $P = 15{,}3\,\text{W/K} \cdot 30\,\text{K} = 459\,\text{W}$
 
 Pienimmästä suurimpaan: ovi, yläpohja, ikkunat, seinä. Pelkkä U-arvo antaisi väärän järjestyksen. Ikkunoilla ja ovella U-arvo on suuri, mutta pinta-ala on pieni. Pelkkä pinta-ala antaisi myös väärän järjestyksen. Seinällä U-arvo on pieni, mutta pinta-ala on suuri. Tulokset annetaan kahdella merkitsevällä numerolla, koska U-arvot on annettu kahdella: noin $60\,\text{W}$, $220\,\text{W}$, $290\,\text{W}$ ja $460\,\text{W}$. Arvio: seinän $UA \approx 0{,}2 \cdot 90 = 18\,\text{W/K}$ on suurin ja oven $2\,\text{W/K}$ pienin. Se sopii tuloksiin.
+
+## fy3-12-L1-09
+**Annettu:** $A = 10\,\text{m}^2$, $d = 0{,}20\,\text{m}$, $T_\text{sisä} = 20\,{}^\circ\text{C}$, $T_\text{ulko} = -10\,{}^\circ\text{C}$ ja $U = \dfrac{\lambda}{d}$. Taulukosta (MAFY-taulukko, lämmönjohtavuuksia: kiinteät aineet, puu (mänty)) $\lambda = 0{,}14\,\tfrac{\text{W}}{\text{m}\cdot\text{K}}$.
+**Kysytty:** seinän läpi johtuva lämpöteho $P$ watteina
+**Periaate:** Lämpöä johtuu lämpimästä kylmään. Teho on suoraan verrannollinen pinta-alaan ja lämpötilaeroon. U-arvo kertoo seinän lämmönjohtumisesta. Se saadaan tehtävässä annetulla kaavalla $U = \lambda / d$.
+**Kaava:** $P = UA\,\Delta T$ ja $U = \dfrac{\lambda}{d}$, josta $P = \dfrac{\lambda}{d}\,A\,\Delta T$
+**Muunnokset:** Lämpötilaero on sama celsiusasteina ja kelvineinä: $\Delta T = 20\,{}^\circ\text{C} - (-10\,{}^\circ\text{C}) = 30\,\text{K}$. Muita muunnoksia ei tarvita.
+**Sijoitus:** $U = \dfrac{0{,}14\,\tfrac{\text{W}}{\text{m}\cdot\text{K}}}{0{,}20\,\text{m}} = 0{,}70\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$ ja $P = 0{,}70\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}} \cdot 10\,\text{m}^2 \cdot 30\,\text{K} = 210\,\text{W}$
+**Vastaus:** $P \approx 210\,\text{W}$, kaksi merkitsevää numeroa kuten arvossa $\lambda = 0{,}14$. Lämmönjohtavuus on MAFY-taulukosta (lämmönjohtavuuksia: kiinteät aineet). Vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Järkevyys:** U-arvo $0{,}70\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$ on noin nelinkertainen nykyaikaisen seinän U-arvoon $0{,}17\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$ verrattuna. Se sopii hirsiseinän heikompaan eristykseen. Teho $10\,\text{m}^2$:n alalta on pieni, koska ala on pieni: $0{,}7 \cdot 10 \cdot 30 = 210\,\text{W}$.
+
+## fy3-12-L2-09
+**Annettu:** kuvasta luettuna Auringosta tulee $P_\text{tulo} = 341\,\tfrac{\text{W}}{\text{m}^2}$. Siitä heijastuu $P_\text{heij} = 102\,\tfrac{\text{W}}{\text{m}^2}$.
+**Kysytty:** heijastuneen säteilyn osuus tulevasta säteilystä prosentteina
+**Periaate:** Osuus saadaan vertaamalla heijastunutta tehoa tulevaan tehoon. Molemmat tehot on annettu neliömetriä kohti. Siksi yksiköt supistuvat.
+**Kuvaajan lukeminen:** Kuvan vasen nuoli kertoo tulevan tehon $341\,\tfrac{\text{W}}{\text{m}^2}$. Ylempi oikea nuoli kertoo heijastuvan tehon $102\,\tfrac{\text{W}}{\text{m}^2}$. Alemman nuolen kysymysmerkkiä ei tarvita.
+**Kaava:** osuus $= \dfrac{P_\text{heij}}{P_\text{tulo}}$. Prosentteina se on $\dfrac{P_\text{heij}}{P_\text{tulo}} \cdot 100\,\%$.
+**Muunnokset:** Osamäärä on pelkkä luku. Kun se kerrotaan luvulla $100\,\%$, saadaan prosentit. Tehoja ei tarvitse muuntaa.
+**Sijoitus:** $\dfrac{102\,\tfrac{\text{W}}{\text{m}^2}}{341\,\tfrac{\text{W}}{\text{m}^2}} \cdot 100\,\% = 0{,}2991 \cdot 100\,\% = 29{,}9\,\%$
+**Vastaus:** $29{,}9\,\%$, kolme merkitsevää numeroa kuten luetuissa tehoissa $341$ ja $102$.
+**Järkevyys:** Osuus on lähellä kolmasosaa: $0{,}30 \cdot 341\,\tfrac{\text{W}}{\text{m}^2} = 102{,}3\,\tfrac{\text{W}}{\text{m}^2}$. Tulos on alle $100\,\%$, kuten pitää. Heijastunut teho on vain osa tulevasta tehosta.

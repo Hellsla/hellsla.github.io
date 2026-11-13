@@ -118,6 +118,27 @@
           "feedback": "Here the frequency of rotation has been confused with the period, which doubles. The tangential speed is directly proportional to the frequency of rotation, so halving the frequency decreases the tangential speed."
         }
       ]
+    },
+    {
+      "id": "fy5-3-L1-10",
+      "level": 1,
+      "text": "The figure shows a carousel seen from above. The carousel makes one revolution in $5.0\\,\\text{s}$. Read the distance of the point $B$ from the centre from the figure. What is the orbital speed of the point $B$?",
+      "answer": 2.262,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "figure": "fy5-3/karuselli"
+    },
+    {
+      "id": "fy5-3-L1-11",
+      "level": 1,
+      "text": "The Earth moves around the Sun in an approximately circular orbit in $365\\,\\text{d}$. Look up the mean distance of the Earth from the Sun in the MAFY table (mafytaulukot.fi). What is the orbital speed of the Earth around the Sun? Give the answer in the unit $\\text{km/s}$.",
+      "answer": 29.89,
+      "unit": "km/s",
+      "tolerance": 0.04,
+      "lookup": "MAFY",
+      "hints": [
+        "The value is found in the MAFY table under *Aurinkokunta* (the Solar System)."
+      ]
     }
   ],
   "level2": [
@@ -243,6 +264,15 @@
       "answer": 16,
       "unit": "m/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-3-L2-08",
+      "level": 2,
+      "text": "The carousel in the figure rotates steadily and makes $20\\,\\tfrac{1}{\\text{min}}$. Read the distances of the points $A$ and $B$ from the centre from the figure. How much greater is the orbital speed of the point $B$ than that of the point $A$?",
+      "answer": 2.513,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "figure": "fy5-3/karuselli"
     }
   ],
   "level3": [

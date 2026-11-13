@@ -98,6 +98,23 @@ def kuvaaja():
     return f.svg()
 
 
+def kuvaaja_tehtava():
+    """Task variant of kuvaaja: a point source at the level 80,0 dB at 2 m (I = 1,0e-4 W/m²), points at 2, 4 and 8 m.
+    The power and the intensities are not written (answers.py fy5-15-L1-09 and L2-09)."""
+    P = 4 * math.pi * 4 * 1.0e-4
+    f = Fig("fy515-kuvaaja-t", 420, "Kuvaaja mittakaavassa: kaiuttimen äänen intensiteettitaso L desibeleinä etäisyyden r funktiona nollasta kymmeneen metriin, kun kaiutin on pistemäinen lähde ja ääni leviää tasaisesti joka suuntaan. Käyrä laskee ensin jyrkästi ja sitten loivasti. Merkityt pisteet etäisyyksillä 2, 4 ja 8 metriä ovat 80,0, 74,0 ja 68,0 dB.")
+    ax = Axes(f, (110, 376), (500, 70), x=(0, 10), y=(50, 100), xticks=list(range(1, 11)), yticks=list(range(50, 101, 10)),
+              xlabel=r"r\ (\text{m})", ylabel=r"L\ (\text{dB})", xfmt=lambda v: fi(v) if v % 2 == 0 else "",
+              yfmt=lambda v: fi(v))
+    ax.curve(lambda r: L_of(P / (4 * math.pi * r * r)), 1, 10, HEAT, 3)
+    for r in (2, 4, 8):
+        Lr = L_of(P / (4 * math.pi * r * r))
+        ax.guide(r, Lr)
+        ax.point(r, Lr, HEAT)
+        f.tex(ax.X(r) + 8, ax.Y(Lr) - 22, fi(round(Lr, 1), 1), "start", bg=True)
+    return f.svg()
+
+
 def summa():
     """Kaava: two equal independent sources, intensities add (bars to scale), the level rises only 3 dB."""
     f = Fig("fy515-summa", 360, "Kaksi pylväskaaviota mittakaavassa. Vasemmalla intensiteetit yksikössä 10 potenssiin miinus 4 "
@@ -161,11 +178,12 @@ def hero():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "kartio": kartio, "asteikko": asteikko, "kuvaaja": kuvaaja, "summa": summa}
+FIGURES = {"hero": hero, "kartio": kartio, "asteikko": asteikko, "kuvaaja": kuvaaja, "summa": summa, "kuvaaja-tehtava": kuvaaja_tehtava}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "kartio": "reveals: the area grows as r², so I falls to 1/4 and 1/9 at 2r and 3r",
     "asteikko": "reveals: every 10 dB is a ten-fold intensity; 0 dB = 1e-12 W/m², 120 dB = 1 W/m²",
     "kuvaaja": "reveals: L(r) of a point source falls about 6 dB per doubling of r (90, 84, 78, 72 dB)",
+    "kuvaaja-tehtava": "safe: L(r) of a point source, points at 2, 4 and 8 m (80,0, 74,0, 68,0 dB); no power or intensity written",
     "summa": "reveals: two equal sources double the intensity but raise the level from 80 to 83 dB",
 }

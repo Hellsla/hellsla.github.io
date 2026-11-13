@@ -475,7 +475,7 @@ details.answer .answer-body p{display:block;margin:0 0 .4rem;padding:0;backgroun
 .eq-lead{grid-column:1/-1}.eq-chain.lead .eq-r{padding-left:1.4em}
 .eq-l{text-align:right;min-width:0}.eq-r{min-width:0}
 .eq-chain .katex{font-size:1.1em}
-.eq-chain{align-items:baseline}.eq-chain>.eq-row:has(.mfrac)>span,.eq-chain>.eq-row:has(.mfrac)+.eq-row>span{padding-top:.3em}   /* a \dfrac row's denominator no longer jams into the next row; both sides of a row on one baseline, so t and = sit level with the fraction bar (visual audits 2026-11-01) */
+.eq-chain{align-items:baseline}.eq-chain>.eq-row.eq-frac>span,.eq-chain>.eq-row.eq-frac+.eq-row>span{padding-top:.3em}   /* a \dfrac row's denominator no longer jams into the next row; both sides of a row on one baseline, so t and = sit level with the fraction bar (visual audits 2026-11-01); .eq-frac is set by flGlueMath (lesson.html) once KaTeX has typeset the row: a :has(.mfrac) here restyled the whole page at every DOM change (2026-11-12, performance) */
 /* a solution: every step a block with its label on a line of its own; long calculations in aligned rows (build.py
    solution_html, scripts/mathlayout.py); the answer set apart, the reasonableness check its own block */
 details.solution .steps{margin:.3rem 0 0;padding:.9rem 1.1rem;background:var(--bg);border:1px solid var(--line-2);border-radius:var(--inner-radius);font-size:var(--fs-inner);line-height:1.6}

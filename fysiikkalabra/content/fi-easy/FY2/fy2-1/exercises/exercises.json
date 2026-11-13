@@ -151,6 +151,18 @@
           "feedback": "Oikein: potentiaalienergia muuttui pomppujen aikana liike-energian kautta lämpöenergiaksi. Lämpöenergia on nyt pallossa, lattiassa ja ilmassa. Sillä ei voi enää helposti nostaa palloa takaisin ylös."
         }
       ]
+    },
+    {
+      "id": "fy2-1-L1-10",
+      "level": 1,
+      "text": "Autossa poltetaan $2{,}0\\,\\text{kg}$ bensiiniä. Bensiinin kemiallinen energia vapautuu palamisessa. Se muuttuu liike-energiaksi ja lämpöenergiaksi. Polttoaineen lämpöarvo $H$ kertoo, kuinka paljon energiaa vapautuu, kun yksi kilogramma palaa. Vapautuva energia on $E = Hm$.\n\nHae bensiinin lämpöarvo MAFY-taulukosta (mafytaulukot.fi). Kuinka paljon kemiallista energiaa bensiinistä vapautuu?",
+      "lookup": "MAFY",
+      "answer": 86.8,
+      "unit": "MJ",
+      "tolerance": 0.04,
+      "hints": [
+        "Arvo on MAFY-taulukon taulukossa *Polttoaineiden LHV-lämpöarvoja*."
+      ]
     }
   ],
   "level2": [
@@ -273,6 +285,15 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy2-1-L2-08",
+      "level": 2,
+      "text": "Skeittari on half-pipen reunalla, kohdassa A, levossa. Hän liukuu alas rinnettä, jossa on kitkaa. Hän ohittaa kohdan B ja tulee pohjalle, kohtaan C. Pylväät kuvassa näyttävät hänen potentiaalienergiansa ja liike-energiansa joka kohdassa. Pohja C on potentiaalienergian nollataso.\n\nLue energiat kuvasta. Kuinka monta prosenttia alkuperäisestä energiasta kitka on muuttanut lämpöenergiaksi kohtaan B mennessä? Anna vastaus prosentin tarkkuudella.",
+      "figure": "fy2-1/kitka-pylvaat",
+      "answer": 14.3,
+      "unit": "%",
+      "tolerance": 0.03
     }
   ],
   "level3": [

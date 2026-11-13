@@ -217,3 +217,24 @@ Venytys $20\,\text{cm}$:iin:
 $W_2 = \dfrac{1}{2} \cdot 40\,\text{N} \cdot 0{,}20\,\text{m} = 4{,}0\,\text{J}$
 
 Suhde on $4{,}0\,\text{J} : 1{,}0\,\text{J} = 4$, joten työ on $4\,W_1$. Syy on, että sekä kanta että korkeus kaksinkertaistuvat. Silloin kolmion ala nelinkertaistuu. Vastaus $2\,W_1$ ottaa huomioon vain matkan, vaikka myös voima kaksinkertaistuu. Vastaus $3\,W_1$ on vain toisen $10\,\text{cm}$:n osan työ: $30\,\text{N} \cdot 0{,}10\,\text{m} = 3{,}0\,\text{J}$. Kysytty työ alkaa venytyksen alusta. Siksi siihen kuuluu myös ensimmäinen osa $1{,}0\,\text{J}$.
+
+## fy3-2-L1-09
+**Annettu:** $V = 0{,}020\,\text{m}^3$, $h = 12\,\text{m}$, $g = 9{,}81\,\text{m/s}^2$. Taulukosta (MAFY-taulukko *Tiheyksiä: Kiinteiden aineiden tiheyksiä*, teräs) $\rho = 7{,}8 \cdot 10^{3}\,\text{kg/m}^3$.
+**Kysytty:** nostotyö $W$ kilojouleina
+**Periaate:** Palkki nostetaan hitaasti eli tasaisella nopeudella. Silloin nostovoima on yhtä suuri kuin palkin paino $G = m g$. Voima on liikkeen suuntainen, joten työ on $W = F s = G h$. Massa saadaan tiheydestä: $m = \rho V$.
+**Kaava:** $m = \rho V$ ja $W = G h = m g h$, joten $W = \rho V g h$
+**Muunnokset:** Tiheys on jo yksikössä $\text{kg/m}^3$: $7{,}8 \cdot 10^{3}\,\text{kg/m}^3 = 7800\,\text{kg/m}^3$. Lopuksi $\text{J}$ muutetaan kilojouleiksi: $1\,\text{kJ} = 1000\,\text{J}$.
+**Sijoitus:** $m = 7800\,\text{kg/m}^3 \cdot 0{,}020\,\text{m}^3 = 156\,\text{kg}$ ja $W = 156\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 12\,\text{m} = 18\,364\,\text{J} = 18{,}4\,\text{kJ}$
+**Vastaus:** $18\,\text{kJ}$. Vastauksessa on kaksi merkitsevää numeroa, kuten tiheydessä ja tilavuudessa. Tiheys $\rho = 7{,}8 \cdot 10^{3}\,\text{kg/m}^3$ on MAFY-taulukosta *Tiheyksiä: Kiinteiden aineiden tiheyksiä*. Eri taulukoiden arvot poikkeavat hieman toisistaan. Vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Järkevyys:** Palkin massa $156\,\text{kg}$ on järkevä. Yksi kuutiometri terästä painaa noin $7{,}8$ tonnia, ja palkki on vain $0{,}020$ tästä tilavuudesta. Palkin paino on noin $1{,}5\,\text{kN}$. Nosto $12\,\text{m}$:n korkeuteen vaatii noin $1{,}5\,\text{kN} \cdot 12\,\text{m} \approx 18\,\text{kJ}$.
+
+## fy3-2-L2-09
+**Annettu:** kuvaajasta luettuna voima $F_1 = 25\,\text{N}$ matkalla $0\ldots 6\,\text{m}$ ja $F_2 = 10\,\text{N}$ matkalla $6\ldots 10\,\text{m}$. Kokonaismatka on $s = 10\,\text{m}$.
+**Kysytty:** vakiovoima $F_\text{ka}$, joka tekisi saman kokonaistyön $W$ koko matkalla
+**Periaate:** Työ on $(s,F)$-kuvaajan ja $s$-akselin välissä olevan alueen pinta-ala. Vakiovoiman työ on $W = F s$. Haetun vakiovoiman työ on siis sama kuin kuvaajan pinta-ala. Siksi lasketaan ensin kuvaajan työ. Sitten työ jaetaan matkalla.
+**Kuvaajan lukeminen:** Ensimmäinen vaakasuora jana on ruudukon viivalla $F_1 = 25\,\text{N}$. Se kulkee pisteestä $s = 0$ pisteeseen $s = 6\,\text{m}$. Toinen jana on viivalla $F_2 = 10\,\text{N}$. Se kulkee pisteestä $s = 6\,\text{m}$ pisteeseen $s = 10\,\text{m}$. Sen leveys on $4\,\text{m}$.
+**Kaava:** $W = F_1 s_1 + F_2 s_2$ ja $W = F_\text{ka} s$, joten $F_\text{ka} = \dfrac{W}{s}$
+**Muunnokset:** Voimat ovat newtoneina ja matkat metreinä. Muunnoksia ei siis tarvita.
+**Sijoitus:** $W = 25\,\text{N} \cdot 6\,\text{m} + 10\,\text{N} \cdot 4\,\text{m} = 190\,\text{J}$ ja $F_\text{ka} = \dfrac{190\,\text{J}}{10\,\text{m}} = 19\,\text{N}$
+**Vastaus:** $19\,\text{N}$. Vastauksessa on kaksi merkitsevää numeroa, koska kuvaajan arvot on luettu ruudukon viivoilta kokonaislukuina.
+**Järkevyys:** Tulos $19\,\text{N}$ on voiman pienimmän ($10\,\text{N}$) ja suurimman ($25\,\text{N}$) arvon välissä. Se on lähempänä suurinta, koska suuri voima vaikuttaa pidemmän matkan ($6\,\text{m}$ ja $4\,\text{m}$). Tarkistus: $19\,\text{N} \cdot 10\,\text{m} = 190\,\text{J}$.

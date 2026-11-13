@@ -126,6 +126,18 @@
           "feedback": "Tämä on noin $39\\,000$ kertaa Kuun etäisyys, vaikka Auringon halkaisija on vain noin $400$ kertaa Kuun halkaisija. Niin kaukana Auringon näennäinen halkaisija olisi noin sadasosa Kuun näennäisestä halkaisijasta. Näennäinen halkaisija tarkoittaa sitä, kuinka suurelta kohde näyttää taivaalla. Silloin Kuu peittäisi Auringon helposti kokonaan. Oletus suunnilleen yhtä suurista näennäisistä halkaisijoista ei siis täyttyisi."
         }
       ]
+    },
+    {
+      "id": "fy1-1-L1-10",
+      "level": 1,
+      "text": "Aurinko ja Maa ovat melkein pallon muotoisia. Hae MAFY-taulukosta (mafytaulukot.fi) Auringon keskimääräinen säde ja Maan säde päiväntasaajalla. Montako kertaa Auringon halkaisija on Maan halkaisija? Halkaisijoiden suhde on $k = d_\\text{suurempi}/d_\\text{pienempi}$.",
+      "lookup": "MAFY",
+      "answer": 109.08,
+      "unit": "kertaa",
+      "tolerance": 0.04,
+      "hints": [
+        "Arvot ovat MAFY-taulukon taulukossa *Aurinkokunta*."
+      ]
     }
   ],
   "level2": [

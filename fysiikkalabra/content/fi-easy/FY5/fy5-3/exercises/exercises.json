@@ -118,6 +118,27 @@
           "feedback": "Tässä pyörimistaajuus on sekoitettu kierrosaikaan, joka kaksinkertaistuu. Ratanopeus on suoraan verrannollinen pyörimistaajuuteen. Kun taajuus puolittuu, ratanopeus pienenee."
         }
       ]
+    },
+    {
+      "id": "fy5-3-L1-10",
+      "level": 1,
+      "text": "Kuvassa on karuselli ylhäältä katsottuna. Karuselli tekee yhden kierroksen ajassa $5{,}0\\,\\text{s}$. Lue kuvasta, kuinka kaukana piste $B$ on keskipisteestä. Kuinka suuri on pisteen $B$ ratanopeus?",
+      "answer": 2.262,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "figure": "fy5-3/karuselli"
+    },
+    {
+      "id": "fy5-3-L1-11",
+      "level": 1,
+      "text": "Maa kiertää Auringon ympäri likimain ympyräradalla ajassa $365\\,\\text{d}$. Etsi Maan keskietäisyys Auringosta MAFY-taulukosta (mafytaulukot.fi). MAFY-taulukko on koulun fysiikan taulukkokirja. Kuinka suuri on Maan ratanopeus Auringon ympäri? Anna vastaus yksikössä $\\text{km/s}$.",
+      "answer": 29.89,
+      "unit": "km/s",
+      "tolerance": 0.04,
+      "lookup": "MAFY",
+      "hints": [
+        "Arvo on MAFY-taulukossa kohdassa *Aurinkokunta*."
+      ]
     }
   ],
   "level2": [
@@ -243,6 +264,15 @@
       "answer": 16,
       "unit": "m/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-3-L2-08",
+      "level": 2,
+      "text": "Kuvan karuselli pyörii tasaisesti ja tekee $20\\,\\tfrac{1}{\\text{min}}$. Lue kuvasta, kuinka kaukana pisteet $A$ ja $B$ ovat keskipisteestä. Kuinka paljon suurempi on pisteen $B$ ratanopeus kuin pisteen $A$ ratanopeus?",
+      "answer": 2.513,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "figure": "fy5-3/karuselli"
     }
   ],
   "level3": [

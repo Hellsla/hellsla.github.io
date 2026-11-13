@@ -203,3 +203,24 @@ The ratio is $\tfrac{d_\text{B}}{d_\text{A}} = \tfrac{24.0\,\text{s}}{8.0\,\text
 **Answer:** $57\,\text{min}$, two significant figures like the depths and the lengths of the sections.
 **Reasonableness:** The whole distance is $420\,\text{km}$, so the mean speed is $420\,000\,\text{m} : 3427\,\text{s} = 123\,\text{m/s}$. It is between the lowest ($22\,\text{m/s}$) and the highest ($198\,\text{m/s}$) speed and closer to the high speeds, because the longest section is deep water.
 **Justification for part b:** Section 3 is $15$ times shorter than section 1, but the speed there is only $22.15\,\text{m/s}$, about $9$ times smaller than $198.1\,\text{m/s}$. The travel time $903\,\text{s}$ is therefore $903\,\text{s} : 1514\,\text{s} = 0.60$, more than half of the time of section 1. The formula applies in the last section, because the wavelength is over $10\,\text{km}$, much greater than the depth $50\,\text{m}$.
+
+## fy5-17-L1-09
+**Given:** from the table (MAFY table, Aaltoliike, Äänen nopeuksia eri väliaineissa, liquids, water $0\,{}^\circ\text{C}$) the speed of sound in water $v = 1402.4\,\text{m/s}$; the echo's travel time $t = 20\,\text{ms}$
+**Asked:** the depth of the water $d$ in metres
+**Principle:** The pulse travels to the bottom and back along the same path at a constant speed, so the distance to the bottom is half the length of the path the echo travelled. The water is at $0\,{}^\circ\text{C}$, so the table value for water is used, not the tissue value $1540\,\text{m/s}$.
+**Formula:** $d = \dfrac{v t}{2}$
+**Conversions:** $20\,\text{ms} = 20 \cdot 10^{-3}\,\text{s} = 0.020\,\text{s}$.
+**Substitution:** $d = \dfrac{1402.4\,\text{m/s} \cdot 0.020\,\text{s}}{2} = 14.024\,\text{m}$
+**Answer:** $14\,\text{m}$, more precisely $14.0\,\text{m}$. The time $20\,\text{ms}$ is taken as exact and the table value gives three significant figures; values from different tables differ slightly, and an answer within about $\pm 4\,\%$ is accepted.
+**Reasonableness:** The echo travels $1402.4\,\text{m/s} \cdot 0.020\,\text{s} = 28\,\text{m}$, half of which is $14\,\text{m}$. With the tissue value $1540\,\text{m/s}$ the result would be $15.4\,\text{m}$, about $10\,\%$ too much, so using the value for the right medium matters.
+
+## fy5-17-L2-09
+**Given:** from the figure the times of the echoes, the speed of sound in tissue $v = 1540\,\text{m/s}$
+**Asked:** the thickness $\Delta d$ of the layer between the boundaries of echoes B and C, in centimetres
+**Principle:** Each echo comes from one boundary, and the pulse travels to the boundary and back. The thickness of the layer is the difference of two depths, so it follows from the difference of the echo times with the same formula as a depth.
+**Reading the graph:** Echo B is at $t_\text{B} = 50\,\mu\text{s}$ on the time axis and the tall echo C at $t_\text{C} = 90\,\mu\text{s}$; they are read at the peaks against the grid lines. The time spent in the layer is $t_\text{C} - t_\text{B} = 40\,\mu\text{s}$.
+**Formula:** $d = \dfrac{v t}{2}$, so $\Delta d = d_\text{C} - d_\text{B} = \dfrac{v\,(t_\text{C} - t_\text{B})}{2}$
+**Conversions:** $40\,\mu\text{s} = 40 \cdot 10^{-6}\,\text{s}$; finally $1\,\text{m} = 100\,\text{cm}$.
+**Substitution:** $\Delta d = \dfrac{1540\,\text{m/s} \cdot 40 \cdot 10^{-6}\,\text{s}}{2} = 0.0308\,\text{m} = 3.08\,\text{cm}$
+**Answer:** $3.08\,\text{cm}$, three significant figures as in the speed $1540\,\text{m/s}$.
+**Reasonableness:** The depths are $d_\text{B} = 3.85\,\text{cm}$ and $d_\text{C} = 6.93\,\text{cm}$, and their difference is $3.08\,\text{cm}$. A thigh is about $7\,\text{cm}$ deep here, so the layer fits in it, and echo C is the last because there are no more boundaries after it.

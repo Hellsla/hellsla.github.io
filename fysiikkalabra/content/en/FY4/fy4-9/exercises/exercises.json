@@ -1,428 +1,440 @@
 {
-  "level1": [
+ "level1": [
+  {
+   "id": "fy4-9-L1-01",
+   "level": 1,
+   "core": true,
+   "text": "A hockey puck of mass $0.17\\,\\text{kg}$ slides on the ice at $30\\,\\text{m/s}$. How large is the momentum of the puck?",
+   "answer": 5.1,
+   "unit": "kg·m/s",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy4-9-L1-02",
+   "level": 1,
+   "text": "A shopping cart is pushed horizontally with a force of $12\\,\\text{N}$ for $0.50\\,\\text{s}$. How large is the impulse of the pushing force?",
+   "answer": 6.0,
+   "unit": "N·s",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy4-9-L1-03",
+   "level": 1,
+   "text": "A volleyball of mass $0.27\\,\\text{kg}$ is momentarily at rest at the highest point of its path when a player spikes it. The ball leaves the hand at $18\\,\\text{m/s}$. The effect of the ball's weight during the spike is neglected. How large an impulse does the hand give the ball?",
+   "answer": 4.86,
+   "unit": "N·s",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy4-9-L1-04",
+   "level": 1,
+   "text": "A skier of mass $70\\,\\text{kg}$ has a momentum of $420\\,\\text{kg}\\cdot\\text{m/s}$. How large is the skier's velocity?",
+   "answer": 6.0,
+   "unit": "m/s",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy4-9-L1-05",
+   "level": 1,
+   "text": "A badminton racket gives the shuttlecock an impulse of $0.15\\,\\text{N}\\cdot\\text{s}$. The racket and the shuttlecock are in contact for $0.0010\\,\\text{s}$. How large is the average force of the racket on the shuttlecock?",
+   "answer": 150.0,
+   "unit": "N",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy4-9-L1-06",
+   "level": 1,
+   "core": true,
+   "kind": [
+    "concept"
+   ],
+   "text": "A cart moves horizontally to the left. The positive direction is chosen to the right. Which statement about the momentum $\\overline{p}$ of the cart is correct?",
+   "answer": "The momentum is negative, because its direction is the direction of the velocity, that is, against the chosen direction.",
+   "unit": "",
+   "tolerance": 0.02,
+   "choices": [
     {
-      "id": "fy4-9-L1-01",
-      "level": 1,
-      "core": true,
-      "text": "A hockey puck of mass $0.17\\,\\text{kg}$ slides on the ice at $30\\,\\text{m/s}$. How large is the momentum of the puck?",
-      "answer": 5.1,
-      "unit": "kg·m/s",
-      "tolerance": 0.02
+     "text": "The momentum is positive, because mass is always positive and momentum is the product of mass and velocity.",
+     "feedback": "The mass is positive, but the velocity is not: the cart moves against the chosen direction, so $v < 0$ and the product $p = mv$ is negative. The sign of the velocity carries over to the momentum."
     },
     {
-      "id": "fy4-9-L1-02",
-      "level": 1,
-      "text": "A shopping cart is pushed horizontally with a force of $12\\,\\text{N}$ for $0.50\\,\\text{s}$. How large is the impulse of the pushing force?",
-      "answer": 6.0,
-      "unit": "N·s",
-      "tolerance": 0.02
+     "text": "The momentum is zero, because the cart moves horizontally and its height does not change.",
+     "feedback": "The momentum is zero only when the velocity is zero. Whether the motion is horizontal does not affect it, and the momentum of a moving cart is not zero."
     },
     {
-      "id": "fy4-9-L1-03",
-      "level": 1,
-      "text": "A volleyball of mass $0.27\\,\\text{kg}$ is momentarily at rest at the highest point of its path when a player spikes it. The ball leaves the hand at $18\\,\\text{m/s}$. The effect of the ball's weight during the spike is neglected. How large an impulse does the hand give the ball?",
-      "answer": 4.86,
-      "unit": "N·s",
-      "tolerance": 0.02
+     "text": "The momentum is negative, because its direction is the direction of the velocity, that is, against the chosen direction.",
+     "feedback": "Correct: the momentum $\\overline{p} = m\\overline{v}$ is a vector with the direction of the velocity. The cart moves against the chosen positive direction, so $v < 0$ and $p < 0$.",
+     "correct": true
     },
     {
-      "id": "fy4-9-L1-04",
-      "level": 1,
-      "text": "A skier of mass $70\\,\\text{kg}$ has a momentum of $420\\,\\text{kg}\\cdot\\text{m/s}$. How large is the skier's velocity?",
-      "answer": 6.0,
-      "unit": "m/s",
-      "tolerance": 0.02
-    },
-    {
-      "id": "fy4-9-L1-05",
-      "level": 1,
-      "text": "A badminton racket gives the shuttlecock an impulse of $0.15\\,\\text{N}\\cdot\\text{s}$. The racket and the shuttlecock are in contact for $0.0010\\,\\text{s}$. How large is the average force of the racket on the shuttlecock?",
-      "answer": 150.0,
-      "unit": "N",
-      "tolerance": 0.02
-    },
-    {
-      "id": "fy4-9-L1-06",
-      "level": 1,
-      "core": true,
-      "kind": [
-        "concept"
-      ],
-      "text": "A cart moves horizontally to the left. The positive direction is chosen to the right. Which statement about the momentum $\\overline{p}$ of the cart is correct?",
-      "answer": "The momentum is negative, because its direction is the direction of the velocity, that is, against the chosen direction.",
-      "unit": "",
-      "tolerance": 0.02,
-      "choices": [
-        {
-          "text": "The momentum is positive, because mass is always positive and momentum is the product of mass and velocity.",
-          "feedback": "The mass is positive, but the velocity is not: the cart moves against the chosen direction, so $v < 0$ and the product $p = mv$ is negative. The sign of the velocity carries over to the momentum."
-        },
-        {
-          "text": "The momentum is zero, because the cart moves horizontally and its height does not change.",
-          "feedback": "The momentum is zero only when the velocity is zero. Whether the motion is horizontal does not affect it, and the momentum of a moving cart is not zero."
-        },
-        {
-          "text": "The momentum is negative, because its direction is the direction of the velocity, that is, against the chosen direction.",
-          "feedback": "Correct: the momentum $\\overline{p} = m\\overline{v}$ is a vector with the direction of the velocity. The cart moves against the chosen positive direction, so $v < 0$ and $p < 0$.",
-          "correct": true
-        },
-        {
-          "text": "The momentum points to the right, because the direction of the momentum is always the same as the chosen positive direction.",
-          "feedback": "The direction of the momentum follows the velocity, not the choice of direction. The positive direction only tells in which direction the sign is plus: the momentum of a cart moving to the left points to the left."
-        }
-      ]
-    },
-    {
-      "id": "fy4-9-L1-07",
-      "level": 1,
-      "kind": [
-        "reasoning"
-      ],
-      "text": "A curling stone of mass $20\\,\\text{kg}$ is initially at rest on the ice. A player pushes the stone, and the impulse of the pushing force is $36\\,\\text{N}\\cdot\\text{s}$. Friction from the ice is neglected. How large is the velocity of the stone after the push?",
-      "answer": 1.8,
-      "unit": "m/s",
-      "tolerance": 0.02
-    },
-    {
-      "id": "fy4-9-L1-08",
-      "level": 1,
-      "kind": [
-        "error"
-      ],
-      "text": "A van has a mass of $1800\\,\\text{kg}$ and a velocity of $36\\,\\text{km/h}$.\n\nA student calculated the momentum of the van like this: “$p = mv = 1800 \\cdot 36 = 64\\,800\\,\\text{kg}\\cdot\\text{m/s}$.”\n\nWhat is the error in the student's solution? Calculate the momentum of the van correctly. Enter the magnitude of the momentum in the answer box.",
-      "answer": 18000.0,
-      "unit": "kg·m/s",
-      "tolerance": 0.02
-    },
-    {
-      "id": "fy4-9-L1-09",
-      "level": 1,
-      "kind": [
-        "reasoning",
-        "concept"
-      ],
-      "text": "A hailstone with a mass of $20\\,\\text{g}$ falls vertically at a speed of $20\\,\\text{m/s}$ and hits the horizontal roof of a car. The hailstone does not bounce but stops in a time of $1.0\\,\\text{ms}$ (example values). The effect of the weight of the hailstone during the impact is ignored.\n\nWhat is the order of magnitude of the average force with which the roof stops the hailstone? Choose the nearest value.",
-      "answer": "$400\\,\\text{N}$",
-      "unit": "",
-      "tolerance": 0.02,
-      "choices": [
-        {
-          "text": "$0.4\\,\\text{N}$",
-          "feedback": "The result is obtained when the time is substituted as the number $1.0$ as if it were in seconds. A millisecond is $0.001\\,\\text{s}$, so the force is a thousand times greater. A force of $0.4\\,\\text{N}$ would be only about twice the weight of the hailstone, and it would not stop the hailstone in a millisecond."
-        },
-        {
-          "text": "$400\\,\\text{N}$",
-          "correct": true,
-          "feedback": "Correct: the magnitude of the change in momentum is $m v = 0.40\\,\\text{kg}\\cdot\\text{m/s}$. From the impulse principle $F_\\text{avg} = \\tfrac{m v}{\\Delta t}$, that is $F_\\text{avg} = 400\\,\\text{N}$, when $\\Delta t = 0.0010\\,\\text{s}$."
-        },
-        {
-          "text": "$4000\\,\\text{N}$",
-          "feedback": "The result is obtained when, instead of the momentum, the kinetic energy $\\tfrac{1}{2} m v^2 = 4.0\\,\\text{J}$ is calculated and divided by the time. Energy divided by time is power, in the unit $\\text{W}$, not force. The impulse of a force equals the change in momentum, not the kinetic energy."
-        },
-        {
-          "text": "$400\\,000\\,\\text{N}$",
-          "feedback": "The result is obtained when the mass is substituted in grams as the number $20$ instead of in kilograms as $0.020\\,\\text{kg}$. The unit of momentum is $\\text{kg}\\cdot\\text{m/s}$, so the mass is converted to kilograms, and the force is a thousandth of this."
-        }
-      ]
+     "text": "The momentum points to the right, because the direction of the momentum is always the same as the chosen positive direction.",
+     "feedback": "The direction of the momentum follows the velocity, not the choice of direction. The positive direction only tells in which direction the sign is plus: the momentum of a cart moving to the left points to the left."
     }
-  ],
-  "level2": [
+   ]
+  },
+  {
+   "id": "fy4-9-L1-07",
+   "level": 1,
+   "kind": [
+    "reasoning"
+   ],
+   "text": "A curling stone of mass $20\\,\\text{kg}$ is initially at rest on the ice. A player pushes the stone, and the impulse of the pushing force is $36\\,\\text{N}\\cdot\\text{s}$. Friction from the ice is neglected. How large is the velocity of the stone after the push?",
+   "answer": 1.8,
+   "unit": "m/s",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy4-9-L1-08",
+   "level": 1,
+   "kind": [
+    "error"
+   ],
+   "text": "A van has a mass of $1800\\,\\text{kg}$ and a velocity of $36\\,\\text{km/h}$.\n\nA student calculated the momentum of the van like this: “$p = mv = 1800 \\cdot 36 = 64\\,800\\,\\text{kg}\\cdot\\text{m/s}$.”\n\nWhat is the error in the student's solution? Calculate the momentum of the van correctly. Enter the magnitude of the momentum in the answer box.",
+   "answer": 18000.0,
+   "unit": "kg·m/s",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy4-9-L1-09",
+   "level": 1,
+   "kind": [
+    "reasoning",
+    "concept"
+   ],
+   "text": "A hailstone with a mass of $20\\,\\text{g}$ falls vertically at a speed of $20\\,\\text{m/s}$ and hits the horizontal roof of a car. The hailstone does not bounce but stops in a time of $1.0\\,\\text{ms}$ (example values). The effect of the weight of the hailstone during the impact is ignored.\n\nWhat is the order of magnitude of the average force with which the roof stops the hailstone? Choose the nearest value.",
+   "answer": "$400\\,\\text{N}$",
+   "unit": "",
+   "tolerance": 0.02,
+   "choices": [
     {
-      "id": "fy4-9-L2-01",
-      "level": 2,
-      "text": "A car of mass $1200\\,\\text{kg}$ drives on a horizontal road at $54\\,\\text{km/h}$. The driver brakes, and the car stops in $3.0\\,\\text{s}$. Air resistance is neglected. How large is the average braking force on the car? Give the answer in kilonewtons.",
-      "answer": 6.0,
-      "unit": "kN",
-      "tolerance": 0.02
+     "text": "$0.4\\,\\text{N}$",
+     "feedback": "The result is obtained when the time is substituted as the number $1.0$ as if it were in seconds. A millisecond is $0.001\\,\\text{s}$, so the force is a thousand times greater. A force of $0.4\\,\\text{N}$ would be only about twice the weight of the hailstone, and it would not stop the hailstone in a millisecond."
     },
     {
-      "id": "fy4-9-L2-02",
-      "level": 2,
-      "text": "A golf ball of mass $46\\,\\text{g}$ is at rest. A club hits it, and the ball leaves at $70\\,\\text{m/s}$. The club and the ball are in contact for $0.50\\,\\text{ms}$. The effect of the ball's weight during the hit is neglected. How large is the average force of the club on the ball? Give the answer in kilonewtons.",
-      "answer": 6.44,
-      "unit": "kN",
-      "tolerance": 0.02
+     "text": "$400\\,\\text{N}$",
+     "correct": true,
+     "feedback": "Correct: the magnitude of the change in momentum is $m v = 0.40\\,\\text{kg}\\cdot\\text{m/s}$. From the impulse principle $F_\\text{avg} = \\tfrac{m v}{\\Delta t}$, that is $F_\\text{avg} = 400\\,\\text{N}$, when $\\Delta t = 0.0010\\,\\text{s}$."
     },
     {
-      "id": "fy4-9-L2-03",
-      "level": 2,
-      "core": true,
-      "text": "A ball of mass $60\\,\\text{g}$ is thrown horizontally at a wall. The ball hits the wall at $14\\,\\text{m/s}$ and rebounds straight back at $11\\,\\text{m/s}$. How large an impulse does the wall give the ball? Give the magnitude of the impulse.",
-      "answer": 1.5,
-      "unit": "N·s",
-      "tolerance": 0.02
+     "text": "$4000\\,\\text{N}$",
+     "feedback": "The result is obtained when, instead of the momentum, the kinetic energy $\\tfrac{1}{2} m v^2 = 4.0\\,\\text{J}$ is calculated and divided by the time. Energy divided by time is power, in the unit $\\text{W}$, not force. The impulse of a force equals the change in momentum, not the kinetic energy."
     },
     {
-      "id": "fy4-9-L2-04",
-      "level": 2,
-      "text": "A hockey puck of mass $0.17\\,\\text{kg}$ slides at $8.0\\,\\text{m/s}$. A player hits the puck with a stick in the direction of motion with an average force of $120\\,\\text{N}$, and the contact lasts $0.025\\,\\text{s}$. Friction from the ice is neglected. How large is the velocity of the puck after the hit?",
-      "answer": 25.647059,
-      "unit": "m/s",
-      "tolerance": 0.02
-    },
-    {
-      "id": "fy4-9-L2-05",
-      "level": 2,
-      "kind": [
-        "data"
-      ],
-      "text": "A student measured football kicks with video analysis. The mass of the ball is $0.43\\,\\text{kg}$, and the ball is initially at rest. For five kicks, the student determined the velocity $v$ of the ball right after the kick and the contact time $\\Delta t$ of the foot and the ball. The table is example data.\n\nCalculate the means of the velocity and the contact time and use them to calculate the average force the foot gives the ball. The effect of the ball's weight during the kick is neglected. Enter the average force in the answer box.",
-      "answer": 927.45,
-      "unit": "N",
-      "tolerance": 0.02,
-      "data": {
-        "caption": "Football kicks (example data)",
-        "columns": [
-          "Kick",
-          "$v\\,(\\text{m/s})$",
-          "$\\Delta t\\,(\\text{ms})$"
-        ],
-        "rows": [
-          [
-            "1",
-            "21.4",
-            "9.8"
-          ],
-          [
-            "2",
-            "22.6",
-            "10.4"
-          ],
-          [
-            "3",
-            "20.9",
-            "10.0"
-          ],
-          [
-            "4",
-            "23.1",
-            "10.6"
-          ],
-          [
-            "5",
-            "22.0",
-            "10.2"
-          ]
-        ]
-      }
-    },
-    {
-      "id": "fy4-9-L2-06",
-      "level": 2,
-      "kind": [
-        "data",
-        "experiment"
-      ],
-      "text": "A student investigated how a bumper affects the collision force. On a horizontal air track, a cart of mass $0.50\\,\\text{kg}$ hit the end of the track at $0.80\\,\\text{m/s}$ and stopped. Three different bumpers were fitted to the end in turn, and the duration $\\Delta t$ of each collision was determined from a force-sensor measurement. The table is example data. Friction of the track and air resistance are neglected.\n\na) Calculate the average force with which the metal bumper stopped the cart.\n\nb) Calculate the average force with which the foam bumper stopped the cart.\n\nc) Use the impulse–momentum principle to explain why a soft bumper reduces the force even though the change in the cart's momentum is the same in all measurements.\n\nEnter the result of part b in the answer box.",
-      "answer": 5.0,
-      "unit": "N",
-      "tolerance": 0.02,
-      "data": {
-        "caption": "Stopping time of the cart with different bumpers (example data)",
-        "columns": [
-          "Bumper",
-          "$\\Delta t\\,(\\text{ms})$"
-        ],
-        "rows": [
-          [
-            "Metal",
-            "6.0"
-          ],
-          [
-            "Rubber",
-            "25"
-          ],
-          [
-            "Foam",
-            "80"
-          ]
-        ]
-      }
-    },
-    {
-      "id": "fy4-9-L2-07",
-      "level": 2,
-      "core": true,
-      "kind": [
-        "data",
-        "graph"
-      ],
-      "text": "On an air track, a cart of mass $0.50\\,\\text{kg}$ moves at $1.50\\,\\text{m/s}$ towards the end of the track and rebounds from it. The force sensor at the end measured the force $F$ the end exerts on the cart during the collision at ten-millisecond intervals. The force points away from the end. The table is example data. Friction of the track and air resistance are neglected.\n\nDraw the $(t, F)$ graph from the measured points and determine the area under it as a sum of trapezoids. Use the area to calculate the magnitude of the change in the velocity of the cart in the collision. Enter the magnitude of the change in velocity in the answer box.",
-      "answer": 2.88,
-      "unit": "m/s",
-      "tolerance": 0.04,
-      "data": {
-        "caption": "Force of the end on the cart during the collision (example data)",
-        "columns": [
-          "$t\\,(\\text{ms})$",
-          "$F\\,(\\text{N})$"
-        ],
-        "rows": [
-          [
-            "0",
-            "0.0"
-          ],
-          [
-            "10",
-            "11.0"
-          ],
-          [
-            "20",
-            "26.0"
-          ],
-          [
-            "30",
-            "36.5"
-          ],
-          [
-            "40",
-            "35.0"
-          ],
-          [
-            "50",
-            "25.5"
-          ],
-          [
-            "60",
-            "10.0"
-          ],
-          [
-            "70",
-            "0.0"
-          ]
-        ]
-      }
+     "text": "$400\\,000\\,\\text{N}$",
+     "feedback": "The result is obtained when the mass is substituted in grams as the number $20$ instead of in kilograms as $0.020\\,\\text{kg}$. The unit of momentum is $\\text{kg}\\cdot\\text{m/s}$, so the mass is converted to kilograms, and the force is a thousandth of this."
     }
-  ],
-  "level3": [
-    {
-      "id": "fy4-9-L3-01",
-      "level": 3,
-      "text": "A child sits on a sled on horizontal snow, and the combined mass of the child and the sled is $24\\,\\text{kg}$. The sled is first gliding at $1.0\\,\\text{m/s}$ when an adult pushes it in the direction of motion. The graph shows the pushing force as a function of time. Friction from the snow is neglected. How large is the velocity of the sled after the push?",
-      "figure": "fy4-9/ex-potku",
-      "answer": 3.0,
-      "unit": "m/s",
-      "tolerance": 0.02
-    },
-    {
-      "id": "fy4-9-L3-02",
-      "level": 3,
-      "text": "A car hits a fixed obstacle and stops. The seat belt stops a $75\\,\\text{kg}$ passenger in $0.12\\,\\text{s}$, and in the horizontal direction only the force of the belt acts on the passenger. Assume that the force of the belt on the passenger may be at most $10\\,\\text{kN}$ on average. From what greatest velocity can the passenger be stopped under these assumptions? Give the answer in $\\text{km/h}$.",
-      "answer": 57.6,
-      "unit": "km/h",
-      "tolerance": 0.02
-    },
-    {
-      "id": "fy4-9-L3-03",
-      "level": 3,
-      "text": "Two balls, each of mass $0.20\\,\\text{kg}$, are thrown horizontally at a wall at $8.0\\,\\text{m/s}$. The clay ball sticks to the wall. The rubber ball rebounds straight back at $6.0\\,\\text{m/s}$. Each ball is in contact with the wall for $0.020\\,\\text{s}$. By how much is the average force of the rubber ball on the wall greater than that of the clay ball?",
-      "answer": 60.0,
-      "unit": "N",
-      "tolerance": 0.02
-    },
-    {
-      "id": "fy4-9-L3-04",
-      "level": 3,
-      "kind": [
-        "data",
-        "model",
-        "reasoning"
-      ],
-      "text": "In a crash test, the horizontal force $F$ with which an airbag stopped a dummy representing a driver was measured. The mass of the dummy is $70\\,\\text{kg}$, and it came to a complete stop in the airbag in $100\\,\\text{ms}$. The force points opposite to the direction of travel. The table is example data. Assume that in the horizontal direction only the force of the airbag acts on the dummy.\n\na) Draw the $(t, F)$ graph from the measured points and determine the area under it as a sum of trapezoids.\n\nb) Use the area to calculate the velocity of the dummy before the collision in $\\text{km/h}$.\n\nc) The dummy could have hit a rigid steering wheel at the same velocity and stopped in only $25\\,\\text{ms}$. In this case, calculate the average force, compare it with the greatest force in the table, and justify why the airbag protects.\n\nEnter the result of part b in the answer box.",
-      "answer": 50.45,
-      "unit": "km/h",
-      "tolerance": 0.03,
-      "data": {
-        "caption": "Force of the airbag on the dummy (example data)",
-        "columns": [
-          "$t\\,(\\text{ms})$",
-          "$F\\,(\\text{kN})$"
-        ],
-        "rows": [
-          [
-            "0",
-            "0.0"
-          ],
-          [
-            "10",
-            "4.5"
-          ],
-          [
-            "20",
-            "9.8"
-          ],
-          [
-            "30",
-            "14.6"
-          ],
-          [
-            "40",
-            "17.4"
-          ],
-          [
-            "50",
-            "16.9"
-          ],
-          [
-            "60",
-            "14.2"
-          ],
-          [
-            "70",
-            "10.9"
-          ],
-          [
-            "80",
-            "6.8"
-          ],
-          [
-            "90",
-            "3.0"
-          ],
-          [
-            "100",
-            "0.0"
-          ]
-        ]
-      }
-    },
-    {
-      "id": "fy4-9-L3-05",
-      "level": 3,
-      "kind": [
-        "data",
-        "model",
-        "reasoning"
-      ],
-      "text": "A student filmed a basketball of mass $0.60\\,\\text{kg}$. The ball was released from rest, fell to the floor, bounced and rose to its highest point. The times from the video analysis are in the table, which is example data. Air resistance is neglected, and in the air the acceleration of the ball is the acceleration of free fall $g = 9.81\\,\\text{m/s}^2$.\n\na) Calculate the velocity of the ball just before it hits the floor and right after it bounces. Choose up as the positive direction.\n\nb) Calculate the average force of the floor on the ball. Remember that during the contact the weight acts on the ball in addition to the force of the floor.\n\nc) For comparison, calculate the average force of the floor if the ball hit the floor at the same velocity but stayed on the floor and stopped in the same time. Explain briefly why the force on the rebounding ball is greater.\n\nEnter the result of part b in the answer box.",
-      "answer": 447.34,
-      "unit": "N",
-      "tolerance": 0.02,
-      "data": {
-        "caption": "Video analysis of a bouncing ball (example data)",
-        "columns": [
-          "Event",
-          "$t\\,(\\text{s})$"
-        ],
-        "rows": [
-          [
-            "The ball is released",
-            "0.000"
-          ],
-          [
-            "The ball hits the floor",
-            "0.500"
-          ],
-          [
-            "The ball leaves the floor",
-            "0.512"
-          ],
-          [
-            "The ball is at its highest point",
-            "0.912"
-          ]
-        ]
-      }
-    }
-  ]
+   ]
+  }
+ ],
+ "level2": [
+  {
+   "id": "fy4-9-L2-01",
+   "level": 2,
+   "text": "A car of mass $1200\\,\\text{kg}$ drives on a horizontal road at $54\\,\\text{km/h}$. The driver brakes, and the car stops in $3.0\\,\\text{s}$. Air resistance is neglected. How large is the average braking force on the car? Give the answer in kilonewtons.",
+   "answer": 6.0,
+   "unit": "kN",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy4-9-L2-02",
+   "level": 2,
+   "text": "A golf ball of mass $46\\,\\text{g}$ is at rest. A club hits it, and the ball leaves at $70\\,\\text{m/s}$. The club and the ball are in contact for $0.50\\,\\text{ms}$. The effect of the ball's weight during the hit is neglected. How large is the average force of the club on the ball? Give the answer in kilonewtons.",
+   "answer": 6.44,
+   "unit": "kN",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy4-9-L2-03",
+   "level": 2,
+   "core": true,
+   "text": "A ball of mass $60\\,\\text{g}$ is thrown horizontally at a wall. The ball hits the wall at $14\\,\\text{m/s}$ and rebounds straight back at $11\\,\\text{m/s}$. How large an impulse does the wall give the ball? Give the magnitude of the impulse.",
+   "answer": 1.5,
+   "unit": "N·s",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy4-9-L2-04",
+   "level": 2,
+   "text": "A hockey puck of mass $0.17\\,\\text{kg}$ slides at $8.0\\,\\text{m/s}$. A player hits the puck with a stick in the direction of motion with an average force of $120\\,\\text{N}$, and the contact lasts $0.025\\,\\text{s}$. Friction from the ice is neglected. How large is the velocity of the puck after the hit?",
+   "answer": 25.647059,
+   "unit": "m/s",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy4-9-L2-05",
+   "level": 2,
+   "kind": [
+    "data"
+   ],
+   "text": "A student measured football kicks with video analysis. The mass of the ball is $0.43\\,\\text{kg}$, and the ball is initially at rest. For five kicks, the student determined the velocity $v$ of the ball right after the kick and the contact time $\\Delta t$ of the foot and the ball. The table is example data.\n\nCalculate the means of the velocity and the contact time and use them to calculate the average force the foot gives the ball. The effect of the ball's weight during the kick is neglected. Enter the average force in the answer box.",
+   "answer": 927.45,
+   "unit": "N",
+   "tolerance": 0.02,
+   "data": {
+    "caption": "Football kicks (example data)",
+    "columns": [
+     "Kick",
+     "$v\\,(\\text{m/s})$",
+     "$\\Delta t\\,(\\text{ms})$"
+    ],
+    "rows": [
+     [
+      "1",
+      "21.4",
+      "9.8"
+     ],
+     [
+      "2",
+      "22.6",
+      "10.4"
+     ],
+     [
+      "3",
+      "20.9",
+      "10.0"
+     ],
+     [
+      "4",
+      "23.1",
+      "10.6"
+     ],
+     [
+      "5",
+      "22.0",
+      "10.2"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "fy4-9-L2-06",
+   "level": 2,
+   "kind": [
+    "data",
+    "experiment"
+   ],
+   "text": "A student investigated how a bumper affects the collision force. On a horizontal air track, a cart of mass $0.50\\,\\text{kg}$ hit the end of the track at $0.80\\,\\text{m/s}$ and stopped. Three different bumpers were fitted to the end in turn, and the duration $\\Delta t$ of each collision was determined from a force-sensor measurement. The table is example data. Friction of the track and air resistance are neglected.\n\na) Calculate the average force with which the metal bumper stopped the cart.\n\nb) Calculate the average force with which the foam bumper stopped the cart.\n\nc) Use the impulse–momentum principle to explain why a soft bumper reduces the force even though the change in the cart's momentum is the same in all measurements.\n\nEnter the result of part b in the answer box.",
+   "answer": 5.0,
+   "unit": "N",
+   "tolerance": 0.02,
+   "data": {
+    "caption": "Stopping time of the cart with different bumpers (example data)",
+    "columns": [
+     "Bumper",
+     "$\\Delta t\\,(\\text{ms})$"
+    ],
+    "rows": [
+     [
+      "Metal",
+      "6.0"
+     ],
+     [
+      "Rubber",
+      "25"
+     ],
+     [
+      "Foam",
+      "80"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "fy4-9-L2-07",
+   "level": 2,
+   "core": true,
+   "kind": [
+    "data",
+    "graph"
+   ],
+   "text": "On an air track, a cart of mass $0.50\\,\\text{kg}$ moves at $1.50\\,\\text{m/s}$ towards the end of the track and rebounds from it. The force sensor at the end measured the force $F$ the end exerts on the cart during the collision at ten-millisecond intervals. The force points away from the end. The table is example data. Friction of the track and air resistance are neglected.\n\nDraw the $(t, F)$ graph from the measured points and determine the area under it as a sum of trapezoids. Use the area to calculate the magnitude of the change in the velocity of the cart in the collision. Enter the magnitude of the change in velocity in the answer box.",
+   "answer": 2.88,
+   "unit": "m/s",
+   "tolerance": 0.04,
+   "data": {
+    "caption": "Force of the end on the cart during the collision (example data)",
+    "columns": [
+     "$t\\,(\\text{ms})$",
+     "$F\\,(\\text{N})$"
+    ],
+    "rows": [
+     [
+      "0",
+      "0.0"
+     ],
+     [
+      "10",
+      "11.0"
+     ],
+     [
+      "20",
+      "26.0"
+     ],
+     [
+      "30",
+      "36.5"
+     ],
+     [
+      "40",
+      "35.0"
+     ],
+     [
+      "50",
+      "25.5"
+     ],
+     [
+      "60",
+      "10.0"
+     ],
+     [
+      "70",
+      "0.0"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "fy4-9-L2-08",
+   "level": 2,
+   "text": "A foot kicks a ball. The graph shows the force of the kick as a function of time. How large is the average force the foot exerts on the ball during the whole contact?",
+   "kind": [
+    "graph"
+   ],
+   "figure": "fy4-9/tarkistus-kolmio",
+   "answer": 450.0,
+   "unit": "N",
+   "tolerance": 0.02
+  }
+ ],
+ "level3": [
+  {
+   "id": "fy4-9-L3-01",
+   "level": 3,
+   "text": "A child sits on a sled on horizontal snow, and the combined mass of the child and the sled is $24\\,\\text{kg}$. The sled is first gliding at $1.0\\,\\text{m/s}$ when an adult pushes it in the direction of motion. The graph shows the pushing force as a function of time. Friction from the snow is neglected. How large is the velocity of the sled after the push?",
+   "figure": "fy4-9/ex-potku",
+   "answer": 3.0,
+   "unit": "m/s",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy4-9-L3-02",
+   "level": 3,
+   "text": "A car hits a fixed obstacle and stops. The seat belt stops a $75\\,\\text{kg}$ passenger in $0.12\\,\\text{s}$, and in the horizontal direction only the force of the belt acts on the passenger. Assume that the force of the belt on the passenger may be at most $10\\,\\text{kN}$ on average. From what greatest velocity can the passenger be stopped under these assumptions? Give the answer in $\\text{km/h}$.",
+   "answer": 57.6,
+   "unit": "km/h",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy4-9-L3-03",
+   "level": 3,
+   "text": "Two balls, each of mass $0.20\\,\\text{kg}$, are thrown horizontally at a wall at $8.0\\,\\text{m/s}$. The clay ball sticks to the wall. The rubber ball rebounds straight back at $6.0\\,\\text{m/s}$. Each ball is in contact with the wall for $0.020\\,\\text{s}$. By how much is the average force of the rubber ball on the wall greater than that of the clay ball?",
+   "answer": 60.0,
+   "unit": "N",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy4-9-L3-04",
+   "level": 3,
+   "kind": [
+    "data",
+    "model",
+    "reasoning"
+   ],
+   "text": "In a crash test, the horizontal force $F$ with which an airbag stopped a dummy representing a driver was measured. The mass of the dummy is $70\\,\\text{kg}$, and it came to a complete stop in the airbag in $100\\,\\text{ms}$. The force points opposite to the direction of travel. The table is example data. Assume that in the horizontal direction only the force of the airbag acts on the dummy.\n\na) Draw the $(t, F)$ graph from the measured points and determine the area under it as a sum of trapezoids.\n\nb) Use the area to calculate the velocity of the dummy before the collision in $\\text{km/h}$.\n\nc) The dummy could have hit a rigid steering wheel at the same velocity and stopped in only $25\\,\\text{ms}$. In this case, calculate the average force, compare it with the greatest force in the table, and justify why the airbag protects.\n\nEnter the result of part b in the answer box.",
+   "answer": 50.45,
+   "unit": "km/h",
+   "tolerance": 0.03,
+   "data": {
+    "caption": "Force of the airbag on the dummy (example data)",
+    "columns": [
+     "$t\\,(\\text{ms})$",
+     "$F\\,(\\text{kN})$"
+    ],
+    "rows": [
+     [
+      "0",
+      "0.0"
+     ],
+     [
+      "10",
+      "4.5"
+     ],
+     [
+      "20",
+      "9.8"
+     ],
+     [
+      "30",
+      "14.6"
+     ],
+     [
+      "40",
+      "17.4"
+     ],
+     [
+      "50",
+      "16.9"
+     ],
+     [
+      "60",
+      "14.2"
+     ],
+     [
+      "70",
+      "10.9"
+     ],
+     [
+      "80",
+      "6.8"
+     ],
+     [
+      "90",
+      "3.0"
+     ],
+     [
+      "100",
+      "0.0"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "fy4-9-L3-05",
+   "level": 3,
+   "kind": [
+    "data",
+    "model",
+    "reasoning"
+   ],
+   "text": "A student filmed a basketball of mass $0.60\\,\\text{kg}$. The ball was released from rest, fell to the floor, bounced and rose to its highest point. The times from the video analysis are in the table, which is example data. Air resistance is neglected, and in the air the acceleration of the ball is the acceleration of free fall $g = 9.81\\,\\text{m/s}^2$.\n\na) Calculate the velocity of the ball just before it hits the floor and right after it bounces. Choose up as the positive direction.\n\nb) Calculate the average force of the floor on the ball. Remember that during the contact the weight acts on the ball in addition to the force of the floor.\n\nc) For comparison, calculate the average force of the floor if the ball hit the floor at the same velocity but stayed on the floor and stopped in the same time. Explain briefly why the force on the rebounding ball is greater.\n\nEnter the result of part b in the answer box.",
+   "answer": 447.34,
+   "unit": "N",
+   "tolerance": 0.02,
+   "data": {
+    "caption": "Video analysis of a bouncing ball (example data)",
+    "columns": [
+     "Event",
+     "$t\\,(\\text{s})$"
+    ],
+    "rows": [
+     [
+      "The ball is released",
+      "0.000"
+     ],
+     [
+      "The ball hits the floor",
+      "0.500"
+     ],
+     [
+      "The ball leaves the floor",
+      "0.512"
+     ],
+     [
+      "The ball is at its highest point",
+      "0.912"
+     ]
+    ]
+   }
+  }
+ ]
 }

@@ -131,6 +131,27 @@
           "feedback": "Pidempi matka ei kuluta enempää aikaa. Jousen voima on suurempi kauempana tasapainoasemasta, ja kappale kulkee nopeammin. Jaksonaika ei pitene vaan pysyy samana."
         }
       ]
+    },
+    {
+      "id": "fy5-9-L1-09",
+      "level": 1,
+      "text": "Matemaattinen heiluri on $1{,}00\\,\\text{m}$ pitkä. Se heilahtelee Marsin pinnalla pienin heilahduksin. Etsi putoamiskiihtyvyys Marsin pinnalla MAFY-taulukosta (mafytaulukot.fi). MAFY-taulukko on koulun fysiikan taulukkokirja. Laske heilurin jaksonaika.",
+      "lookup": "MAFY",
+      "answer": 3.26,
+      "unit": "s",
+      "tolerance": 0.04,
+      "hints": [
+        "Arvo on MAFY-taulukossa kohdassa *Aurinkokunta*."
+      ]
+    },
+    {
+      "id": "fy5-9-L1-10",
+      "level": 1,
+      "text": "Kuvaaja näyttää jousen varassa värähtelevän kappaleen paikan ajan funktiona. Jousen jousivakio on $120\\,\\text{N/m}$. Laske värähtelyn energia.",
+      "figure": "fy5-9/kuvaaja-k",
+      "answer": 0.054,
+      "unit": "J",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -339,6 +360,15 @@
           "feedback": "Väite on tosi, mutta se ei selitä vastausta. Venymä kertoo vain, missä tasapainoasema on. Jaksonaika riippuu siitä, miten voima muuttuu poikkeaman mukana. Jousivakio $k$ on sama kummassakin paikassa."
         }
       ]
+    },
+    {
+      "id": "fy5-9-L2-09",
+      "level": 2,
+      "text": "Kuvaaja näyttää jousen varassa värähtelevän kappaleen paikan ajan funktiona. Kappaleen massa on $0{,}150\\,\\text{kg}$. Laske jousen jousivakio. Anna vastaus newtoneina metriä kohti.",
+      "figure": "fy5-9/kuvaaja-k",
+      "answer": 37.0,
+      "unit": "N/m",
+      "tolerance": 0.02
     }
   ],
   "level3": [

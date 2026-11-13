@@ -298,3 +298,25 @@ r_\text{limit} &= 8.0\,\text{m} \cdot \sqrt{\dfrac{3.112 \cdot 10^{-4}}{1.0 \cdo
 ```
 **Answer:** The result of part b) is $45\,\text{m}$, two significant figures like the power $0.20\,\text{W}$ and the distance $8.0\,\text{m}$; the combined level of part a) is about $85\,\text{dB}$.
 **Reasonableness:** The level drops from the combined level $84.9\,\text{dB}$ to $70\,\text{dB}$, that is, by $14.9\,\text{dB}$, which is about $2.5$ doublings of the distance ($6.0\,\text{dB}$ each), and $8.0\,\text{m} \cdot 2^{2.5} \approx 45\,\text{m}$. The combined level is greater than either source alone ($84.0\,\text{dB}$ and $78.0\,\text{dB}$) but smaller than the sum of their decibels. **Justification (part c):** The range of intensities of hearing is enormous: from the threshold of hearing to the threshold of pain the intensity grows by a factor of $10^{12}$. The logarithmic scale compresses this range into the numbers $0\,\text{dB}$–$120\,\text{dB}$, and hearing distinguishes roughly relative differences, so the same factor of intensity, for example doubling, feels like roughly the same change (about $3\,\text{dB}$) at a quiet and at a loud sound.
+
+## fy5-15-L1-09
+**Given:** from the figure the level at the distance $r = 4.0\,\text{m}$, the hearing threshold $I_0 = 1.0 \cdot 10^{-12}\,\text{W/m}^2$
+**Find:** the intensity $I$ in $\text{W/m}^2$
+**Principle:** The level is ten times the logarithm of the ratio of the intensities. The intensity is obtained by dividing the equation by $10\,\text{dB}$ and using the definition of the logarithm: if $\lg x = y$, then $x = 10^y$.
+**Reading the figure:** At the distance $4.0\,\text{m}$ the marked point is at the level $L = 74.0\,\text{dB}$.
+**Formula:** $L = 10\,\text{dB} \cdot \lg \dfrac{I}{I_0}$, so $I = I_0 \cdot 10^{\,L/(10\,\text{dB})}$
+**Conversions:** None are needed: $\dfrac{L}{10\,\text{dB}} = \dfrac{74.0\,\text{dB}}{10\,\text{dB}} = 7.40$, the decibels cancel.
+**Substitution:** $I = 1.0 \cdot 10^{-12}\,\text{W/m}^2 \cdot 10^{7.40} = 2.51 \cdot 10^{-5}\,\text{W/m}^2$
+**Answer:** $2.5 \cdot 10^{-5}\,\text{W/m}^2$, that is $0.000025\,\text{W/m}^2$, two significant figures like the hearing threshold $1.0 \cdot 10^{-12}\,\text{W/m}^2$.
+**Reasonableness:** $70\,\text{dB}$ corresponds to the intensity $10^{-5}\,\text{W/m}^2$ and $80\,\text{dB}$ to $10^{-4}\,\text{W/m}^2$, so the intensity of $74\,\text{dB}$ must lie between them, nearer the lower one. At $r = 2.0\,\text{m}$ in the figure, at $80\,\text{dB}$, the intensity is $1.0 \cdot 10^{-4}\,\text{W/m}^2$, and at double the distance it is a quarter of that, $2.5 \cdot 10^{-5}\,\text{W/m}^2$, as it should be.
+
+## fy5-15-L2-09
+**Given:** from the figure the level at the distance $r = 2.0\,\text{m}$; the sound spreads evenly in all directions, so the source is point-like, and the hearing threshold is $I_0 = 1.0 \cdot 10^{-12}\,\text{W/m}^2$
+**Find:** the sound power $P$ in $\text{mW}$
+**Principle:** The sound power of a point source is spread evenly over a spherical surface of area $4\pi r^2$, so $I = \dfrac{P}{4\pi r^2}$. From the level read from the figure we first calculate the intensity and then the sound power.
+**Reading the figure:** At the distance $2.0\,\text{m}$ the marked point is at the level $L = 80.0\,\text{dB}$.
+**Formula:** $I = I_0 \cdot 10^{\,L/(10\,\text{dB})}$ and $I = \dfrac{P}{4\pi r^2}$, so $P = 4\pi r^2 I$
+**Conversions:** $\dfrac{L}{10\,\text{dB}} = 8.00$. The result comes out in watts, and $1\,\text{W} = 1000\,\text{mW}$.
+**Substitution:** $I = 1.0 \cdot 10^{-12}\,\text{W/m}^2 \cdot 10^{8.00} = 1.0 \cdot 10^{-4}\,\text{W/m}^2$, and $P = 4\pi \cdot (2.0\,\text{m})^2 \cdot 1.0 \cdot 10^{-4}\,\text{W/m}^2 = 5.03 \cdot 10^{-3}\,\text{W} = 5.03\,\text{mW}$
+**Answer:** $5.0\,\text{mW}$, two significant figures like the distance $2.0\,\text{m}$ read from the figure.
+**Reasonableness:** The other point in the figure gives the same result: $r = 4.0\,\text{m}$ and $L = 74.0\,\text{dB}$ give $I = 2.51 \cdot 10^{-5}\,\text{W/m}^2$ and $P = 4\pi \cdot (4.0\,\text{m})^2 \cdot 2.51 \cdot 10^{-5}\,\text{W/m}^2 = 5.05\,\text{mW}$, which differs by less than $1\,\%$ from the first (reading accuracy). The power is small, as for a small loudspeaker: the electric power is many times greater because only a small part of it becomes sound.

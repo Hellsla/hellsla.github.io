@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 2c9fdf155f72e6a3
+CONTENT-HASH: 45f15bceac913270
+SCOPE: delta added-exercise from 2c9fdf155f72e6a3 base 141dc47a8c70
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- solutions.md:75 (fy2-1-L1-10): the solution still gives wood as "noin 16 MJ/kg", while fy2-5 uses 15 MJ/kg for air-dry firewood. Fix: "ilmakuivan polttopuun, noin 15 MJ/kg".
+- exercises.json:156 (fy2-1-L1-10): "Se muuttuu liike-energiaksi ja lämpöenergiaksi" skips the step where combustion first makes thermal energy and the engine turns only part of it into kinetic energy. This is a fair level-1 simplification (C). Fix (optional): "suurin osa muuttuu lämpöenergiaksi, osa liike-energiaksi".
 
 ## Checked
-- Compared fy2-1-L1-09 (fi-easy) with the reviewed Finnish: id, level, kind, answer key (1 T, 2 F, 3 T, 4 F, 5 T), unit, tolerance and the five true flags are identical.
-- Task text keeps the same physics: 1 m drop from rest, isolated system of ball, floor and air, bounces lower each time, ball ends at rest.
-- Feedback 1 names the right mechanism (mechanical energy to thermal energy in the collision and by air resistance); feedback 2-4 keep the same misconceptions and reasons; 5 keeps ball, floor and air.
-- solutions.md L1-09: Principle E_initial = E_final for an isolated system, all energy forms incl. thermal; model answer 1, 3, 5 true and 2, 4 false, same as fi. No numbers, so no answers.py line needed.
-- No decimal comma/point issue (only "1 m"); no formulas added or lost.
-- check_i18n.py shows nothing for fy2-1; build.py fy2-1 succeeds. No translation edits were needed.
-- Round 2 (commit 442c889ba): L2-05 Reasonableness sum check now split into 60 % + 17.5 % = 77.5 %, 15 % + 7.5 % = 22.5 %, total 100 %. Recomputed from 36.0/10.5/9.0/4.5 GJ of 60.0 GJ: 60, 17.5, 15, 7.5 %; correct, same as fi.
-- Round 2: check_i18n.py shows nothing for fy2-1; build.py fy2-1 succeeds; hash unchanged at start and end of round.
+- L1-10, change in this round: H = 43,4 MJ/kg is now the same in the task, the solution (Annettu, Sijoitus, Vastaus) and answers.py ("MAFY LHV"). The lower heating value is the right one for an engine.
+- L1-10, numbers: I recomputed 43,4 MJ/kg · 2,0 kg = 86,8 MJ. It matches answers.py and exercises.json (86.8 MJ). The answer "≈ 87 MJ" has 2 significant figures, set by m = 2,0 kg.
+- L1-10, tolerance: ±4 % accepts 83,3 to 90,3 MJ, which covers table values of H from about 41,7 to 45,1 MJ/kg. A student who uses 43 MJ/kg (as in fy2-5) gets 86 MJ, which is 0,9 % off and is accepted. Rounding 43,4 to 43 in fy2-5 is consistent with this value.
+- L1-10, checks: 86,8 MJ / 3,6 = 24,1 ≈ 24 kWh is correct, and the estimate 40 · 2 = 80 MJ is a real order-of-magnitude check.
+- L1-10, scope and physics: E = Hm is in FY2 scope. The task does not claim the system is isolated. The Periaate (chemical energy changes form and the amount is conserved) is right. The solution is complete and symbolic first.
+- L2-08, unchanged since round 2: I recomputed 100 · (700 − 600)/700 = 14,29 %. answers.py and the json value 14.3 agree, and ±3 % accepts 13,9 to 14,7, so 14 is accepted. FRICTION (A 700/0, B 300/300) matches the readings and the alt text. The figure shows no thermal-energy or total bar, so it does not give the answer away.
+- Hash 45f15bceac913270 at the start and at the end.

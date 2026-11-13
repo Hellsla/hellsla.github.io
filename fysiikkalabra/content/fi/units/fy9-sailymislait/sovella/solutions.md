@@ -24,7 +24,7 @@
 **Annettu:** $m = 82{,}0\,\text{kg}$, nopeus ennen jarrua $v = 15{,}0\,\text{m/s}$, loppunopeus $0$, jarrutusaika $\Delta t = 1{,}6\,\text{s}$, vaijeri vaakasuora
 **Kysytty:** jarrun vaunuun kohdistama keskimääräinen vaakasuora voima $F_\text{ka}$ ja sen vertailu painoon; systeemi on laskija, valjaat ja vaunu yhdessä ($82{,}0\,\text{kg}$)
 **Periaate:** Vaakasuoralla vaijerilla systeemin (laskija, valjaat ja vaunu) vaakasuora liikemäärä muuttuu vain jarrun voiman vaikutuksesta, kun ilmanvastus jätetään tässä pienenä huomiotta. Impulssiperiaatteen mukaan voiman impulssi on yhtä suuri kuin liikemäärän muutos (luku *Liikemäärä ja impulssi*).
-**Kaava:** $F_\text{ka}\,\Delta t = |\Delta p| = mv$, joten $F_\text{ka} = \dfrac{mv}{\Delta t}$
+**Kaava:** $F_\text{ka}\,\Delta t = |\Delta p| = mv$, joten $F_\text{ka} = \dfrac{mv}{\Delta t}$; paino $G = mg$ ja suhde $\dfrac{F_\text{ka}}{G}$
 **Muunnokset:** Suureet ovat perusyksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $F_\text{ka} = \dfrac{82{,}0\,\text{kg} \cdot 15{,}0\,\tfrac{\text{m}}{\text{s}}}{1{,}6\,\text{s}} = \dfrac{1230\,\text{kg} \cdot \text{m/s}}{1{,}6\,\text{s}} = 768{,}8\,\text{N}$. Paino on $mg = 82{,}0\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} = 804{,}4\,\text{N}$, ja suhde on $768{,}8\,\text{N} : 804{,}4\,\text{N} \approx 0{,}96$.
 **Vastaus:** $F_\text{ka} \approx 770\,\text{N}$, kaksi merkitsevää numeroa kuten jarrutusaika $1{,}6\,\text{s}$. Voima on lähes yhtä suuri kuin laskijan, valjaiden ja vaunun yhteinen paino.
@@ -60,7 +60,7 @@
 **Annettu:** molempien kivien massa $m = 19{,}0\,\text{kg}$; ennen $v_1 = 0{,}62\,\text{m/s}$ ja toinen kivi levossa; jälkeen heitetyn kiven nopeus $v_1' = 0{,}05\,\text{m/s}$ samaan suuntaan
 **Kysytty:** osuman saaneen kiven nopeus $v_2'$ ja onko törmäys kimmoisa
 **Periaate:** Kivien voimat toisiinsa ovat sisäisiä. Törmäys kestää vain hetken, ja kitka on pieni, joten ulkoisten voimien impulssi on merkityksettömän pieni ja kokonaisliikemäärä säilyy (luku *Liikemäärän säilyminen ja yksiulotteiset törmäykset*). Törmäys on kimmoisa, jos myös liike-energia säilyy. Heiton suunta on positiivinen.
-**Kaava:** $mv_1 = mv_1' + mv_2'$, joten massa supistuu ja $v_2' = v_1 - v_1'$; liike-energiat $E_\text{k} = \tfrac12 mv_1^2$ ja $E_\text{k}' = \tfrac12 mv_1'^2 + \tfrac12 mv_2'^2$
+**Kaava:** $mv_1 = mv_1' + mv_2'$, joten massa supistuu ja $v_2' = v_1 - v_1'$; liike-energiat $E_\text{k} = \tfrac12 mv_1^2$ ja $E_\text{k}' = \tfrac12 mv_1'^2 + \tfrac12 mv_2'^2$; osuus $\dfrac{E_\text{k}'}{E_\text{k}}$
 **Muunnokset:** Suureet ovat perusyksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $v_2' = 0{,}62\,\tfrac{\text{m}}{\text{s}} - 0{,}05\,\tfrac{\text{m}}{\text{s}} = 0{,}57\,\text{m/s}$. Liike-energiat: $E_\text{k} = \tfrac12 \cdot 19{,}0\,\text{kg} \cdot \left(0{,}62\,\tfrac{\text{m}}{\text{s}}\right)^2 = 3{,}652\,\text{J}$ ja $E_\text{k}' = \tfrac12 \cdot 19{,}0\,\text{kg} \cdot \left[\left(0{,}05\,\tfrac{\text{m}}{\text{s}}\right)^2 + \left(0{,}57\,\tfrac{\text{m}}{\text{s}}\right)^2\right] = 3{,}110\,\text{J}$, joten $E_\text{k}' : E_\text{k} = 0{,}852$.
 **Vastaus:** $v_2' \approx 0{,}57\,\text{m/s}$ heiton suuntaan. Tulos on erotus, joten sen tarkkuus on sadasosan metriä sekunnissa: videolta luettu $0{,}05\,\text{m/s}$ tunnetaan vain noin $0{,}01\,\text{m/s}$:n tarkkuudella, ja se rajoittaa tulosta. Liike-energiasta säilyy noin $85\,\%$, joten törmäys ei ole täysin kimmoisa mutta on lähellä sitä.
@@ -246,7 +246,7 @@ Ympyröidyt kohdat ovat ne kaksi suoran pistettä, joista c-kohdan kulmakerroin 
 **Kysytty:** reaktioaika $t_\text{r}$ ja hidastuvuus $a$
 **Periaate:** Linearisoidussa mallissa $\dfrac{s_\text{p}}{v_0} = t_\text{r} + \dfrac{1}{2a}\,v_0$ vakiotermi on reaktioaika ja kulmakerroin $k = \dfrac{1}{2a}$. Kulmakerroin luetaan kahdesta kaukana toisistaan olevasta suoran pisteestä, ei mittauspisteistä (luku *Graafinen esitys ja suoran sovittaminen*).
 **Kuvaajan lukeminen:** Suoralta luetaan $(10\,\text{m/s};\ 1{,}66\,\text{s})$ ja $(25\,\text{m/s};\ 2{,}86\,\text{s})$. Suoran jatke leikkaa pystyakselin noin kohdassa $0{,}86\,\text{s}$.
-**Kaava:** $k = \dfrac{\Delta (s_\text{p}/v_0)}{\Delta v_0}$, $t_\text{r} = \dfrac{s_\text{p}}{v_0} - k v_0$ suoran pisteessä ja $a = \dfrac{1}{2k}$
+**Kaava:** $k = \dfrac{\Delta (s_\text{p}/v_0)}{\Delta v_0}$, $t_\text{r} = y_1 - k v_1$ suoran pisteestä ja $a = \dfrac{1}{2k}$, missä $y = s_\text{p}/v_0$ ja $(v_1;\ y_1)$ ja $(v_2;\ y_2)$ ovat suoran pisteet; $k = \dfrac{y_2 - y_1}{v_2 - v_1}$
 **Muunnokset:** Nopeudet ovat jo yksikössä $\text{m/s}$, joten kulmakertoimen yksikkö on $\tfrac{\text{s}}{\text{m/s}} = \tfrac{\text{s}^2}{\text{m}}$ ja hidastuvuuden $\tfrac{\text{m}}{\text{s}^2}$.
 **Sijoitus:** $k = \dfrac{2{,}86\,\text{s} - 1{,}66\,\text{s}}{25\,\tfrac{\text{m}}{\text{s}} - 10\,\tfrac{\text{m}}{\text{s}}} = \dfrac{1{,}20\,\text{s}}{15\,\text{m/s}} = 0{,}0800\,\tfrac{\text{s}^2}{\text{m}}$, $t_\text{r} = 1{,}66\,\text{s} - 0{,}0800\,\tfrac{\text{s}^2}{\text{m}} \cdot 10\,\tfrac{\text{m}}{\text{s}} = 0{,}86\,\text{s}$ ja $a = \dfrac{1}{2 \cdot 0{,}0800\,\text{s}^2\text{/m}} = 6{,}25\,\text{m/s}^2$
 **Vastaus:** Reaktioaika on $t_\text{r} \approx 0{,}86\,\text{s}$ ja hidastuvuus $a \approx 6{,}3\,\text{m/s}^2$, kaksi merkitsevää numeroa, koska arvot luetaan kuvaajasta noin $0{,}02\,\text{s}$:n tarkkuudella.
@@ -277,7 +277,7 @@ Ympyröidyt kohdat ovat ne kaksi suoran pistettä, joista c-kohdan kulmakerroin 
 ### a)
 **Kysytty:** pitääkö väite 1 paikkansa, ja mistä tuulivoimalan teho riippuu
 **Periaate:** Tuulen teho on roottorin läpi sekunnissa virtaavan ilman liike-energia, ja voimala muuttaa siitä osuuden $\eta$ sähköksi: $P = \tfrac12 \eta \rho A v^3$ (luku *Vesi- ja tuulivoima energian muuntajina*).
-**Mallivastaus:** Väite on väärä, koska siinä teho oletetaan verrannolliseksi tuulen nopeuteen. Teho riippuu nopeudesta kahdella tavalla. Jokaisella ilmakilogrammalla on liike-energiaa $\tfrac12 v^2$, joka kasvaa nopeuden neliössä. Lisäksi roottorin läpi virtaa sekunnissa ilmaa massa $\rho A v$, joka kasvaa nopeuden mukana. Siksi teho on verrannollinen nopeuden kuutioon. Kun nopeus kasvaa $6\,\text{m/s}$:sta $9\,\text{m/s}$:iin, teho kasvaa kertoimella $\left(\tfrac{9}{6}\right)^3 = 3{,}375$, eli noin $240\,\%$ eikä $50\,\%$. Tämä pätee, kun hyötysuhde pysyy suunnilleen samana ja voimala ei vielä käy nimellisteholla; sen yläpuolella lapoja käännetään ja teho rajoitetaan.
+**Mallivastaus:** Väite on väärä, koska siinä teho oletetaan verrannolliseksi tuulen nopeuteen. Teho riippuu nopeudesta kahdella tavalla. Jokaisella ilmakilogrammalla on liike-energiaa $\tfrac12 v^2$, joka kasvaa nopeuden neliössä. Lisäksi roottorin läpi virtaa sekunnissa ilmaa massa $\rho A v$, joka kasvaa nopeuden mukana. Siksi teho on verrannollinen nopeuden kuutioon. Kun nopeus kasvaa $6\,\text{m/s}$:sta $9\,\text{m/s}$:iin, teho kasvaa kertoimella $\dfrac{P_2}{P_1} = \left(\dfrac{v_2}{v_1}\right)^3 = \left(\tfrac{9}{6}\right)^3 = 3{,}375$, eli noin $240\,\%$ eikä $50\,\%$. Tämä pätee, kun hyötysuhde pysyy suunnilleen samana ja voimala ei vielä käy nimellisteholla; sen yläpuolella lapoja käännetään ja teho rajoitetaan.
 
 ### b)
 **Kysytty:** pitääkö väite 2 paikkansa, ja mikä on vesivoimalan energiaketju
@@ -287,7 +287,7 @@ Ympyröidyt kohdat ovat ne kaksi suoran pistettä, joista c-kohdan kulmakerroin 
 ### c)
 **Kysytty:** pitääkö väite 3 paikkansa, ja kuinka suuri on voimalan nykyinen sähköteho
 **Periaate:** Vesivoimalan sähköteho on $P = \eta \rho Q g h$: sekunnissa virtaavan veden massa $\rho Q$ menettää potentiaalienergian $\rho Q g h$, josta osuus $\eta$ muuttuu sähköksi (luku *Vesi- ja tuulivoima energian muuntajina*).
-**Mallivastaus:** Nykyinen sähköteho on $P = 0{,}90 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 120\,\tfrac{\text{m}^3}{\text{s}} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 9{,}0\,\text{m} \approx 9{,}54 \cdot 10^{6}\,\text{W} \approx 9{,}5\,\text{MW}$. Teho on suoraan verrannollinen sekä virtaamaan $Q$ että putouskorkeuteen $h$. Korotus $9\,\text{m}$:stä $12\,\text{m}$:iin kasvattaa putouskorkeutta kertoimella $12 : 9 = \tfrac43$, eli kolmanneksella, ja tehoa samassa suhteessa noin $12{,}7\,\text{MW}$:iin. Kolmanneksella suurempi virtaama kasvattaisi tehoa täsmälleen yhtä paljon. Väite pitää siis paikkansa, kun hyötysuhde pysyy samana ja korotus ei muuta joen virtaamaa. Käytännössä virtaama riippuu sateista ja valuma-alueesta, joten sitä ei voi kasvattaa, mutta korkeutta voi.
+**Mallivastaus:** Nykyinen sähköteho on $P = 0{,}90 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 120\,\tfrac{\text{m}^3}{\text{s}} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 9{,}0\,\text{m} \approx 9{,}54 \cdot 10^{6}\,\text{W} \approx 9{,}5\,\text{MW}$. Teho on suoraan verrannollinen sekä virtaamaan $Q$ että putouskorkeuteen $h$. Korotus $9\,\text{m}$:stä $12\,\text{m}$:iin kasvattaa putouskorkeutta kertoimella $\dfrac{P'}{P} = \dfrac{h'}{h} = \tfrac{12}{9} = \tfrac43$, eli kolmanneksella, ja tehoa samassa suhteessa noin $12{,}7\,\text{MW}$:iin. Kolmanneksella suurempi virtaama kasvattaisi tehoa täsmälleen yhtä paljon. Väite pitää siis paikkansa, kun hyötysuhde pysyy samana ja korotus ei muuta joen virtaamaa. Käytännössä virtaama riippuu sateista ja valuma-alueesta, joten sitä ei voi kasvattaa, mutta korkeutta voi.
 
 ### Yleisiä virheitä
 - a-kohdassa teho oletetaan verrannolliseksi nopeuden neliöön, koska liike-energia on $\tfrac12 mv^2$; tällöin unohtuu, että myös sekunnissa virtaava ilmamäärä kasvaa.
@@ -300,7 +300,7 @@ Ympyröidyt kohdat ovat ne kaksi suoran pistettä, joista c-kohdan kulmakerroin 
 **Annettu:** $m_\text{A} = 0{,}520\,\text{kg}$, $m_\text{B} = 0{,}480\,\text{kg}$; kokeessa 2 $v_\text{A} = 0{,}622\,\text{m/s}$ ja yhteinen nopeus $v' = 0{,}303\,\text{m/s}$
 **Kysytty:** kokonaisliikemäärän suhteellinen muutos prosentteina
 **Periaate:** Ennen törmäystä vain kärry A liikkuu, joten kokonaisliikemäärä on sen liikemäärä. Jälkeen kärryt liikkuvat yhdessä, joten liikemäärä on yhteismassa kertaa yhteinen nopeus (luku *Liikemäärän säilyminen ja yksiulotteiset törmäykset*). Suhteellinen muutos on muutos jaettuna alkuperäisellä arvolla.
-**Kaava:** $p = m_\text{A} v_\text{A}$, $p' = (m_\text{A} + m_\text{B})\,v'$ ja muutos $\dfrac{p' - p}{p}$
+**Kaava:** $p = m_\text{A} v_\text{A}$, $p' = (m_\text{A} + m_\text{B})\,v'$ ja muutos $\dfrac{\Delta p}{p} = \dfrac{p' - p}{p} = \dfrac{(m_\text{A} + m_\text{B})\,v' - m_\text{A} v_\text{A}}{m_\text{A} v_\text{A}}$
 **Muunnokset:** Suureet ovat perusyksiköissä. Suhdeluku muutetaan prosenteiksi kertomalla luvulla $100\,\%$.
 **Sijoitus:** $p = 0{,}520\,\text{kg} \cdot 0{,}622\,\tfrac{\text{m}}{\text{s}} = 0{,}3234\,\text{kg} \cdot \text{m/s}$ ja $p' = 1{,}000\,\text{kg} \cdot 0{,}303\,\tfrac{\text{m}}{\text{s}} = 0{,}3030\,\text{kg} \cdot \text{m/s}$, joten $\dfrac{0{,}3030 - 0{,}3234}{0{,}3234} = -0{,}0632 = -6{,}3\,\%$
 **Vastaus:** Kokonaisliikemäärä pieneni noin $6{,}3\,\%$, kaksi merkitsevää numeroa, koska erotus kahdesta lähes yhtä suuresta luvusta on epätarkempi kuin luvut itse.
@@ -355,10 +355,10 @@ Ympyröidyt kohdat ovat ne kaksi suoran pistettä, joista c-kohdan kulmakerroin 
 **Järkevyys:** Voima on noin $20$-kertainen järkäleen ja paalun painoon $45\,\text{kN}$ verrattuna, koska liike-energia pysäytetään hyvin lyhyellä matkalla. Paino vaikuttaa tulokseen vain noin $5\,\%$, joten sen unohtaminen olisi pieni mutta todellinen virhe.
 
 ### d)
-**Annettu:** $E_\text{h} = 4926\,\text{J}$ lyönnissä, osuus $40\,\%$, lyöntejä $50$, lämpenevä massa $m_\text{t} = 30\,\text{kg}$, $c = 460\,\text{J/(kg} \cdot \text{K)}$
+**Annettu:** $E_\text{h} = 4926\,\text{J}$ lyönnissä, osuus $k = 40\,\%$, lyöntejä $N = 50$, lämpenevä massa $m_\text{t} = 30\,\text{kg}$, $c = 460\,\text{J/(kg} \cdot \text{K)}$
 **Kysytty:** paalun yläpään lämpötilan nousu $\Delta T$ ja oletusten vaikutus
 **Periaate:** Törmäyksessä muuttunut liike-energia ei katoa: osa siitä muuttuu paalun yläpään teräksen sisäenergiaksi. Kun teräs ei luovuta lämpöä ympäristöön eikä sen olomuoto muutu, sisäenergian kasvu nostaa lämpötilaa, ja $\Delta U = cm\Delta T$ pätee (luku *Aineen lämpeneminen ja jäähtyminen*).
-**Kaava:** $\Delta U = 50 \cdot 0{,}40 \cdot E_\text{h} = c\,m_\text{t}\,\Delta T$, joten $\Delta T = \dfrac{50 \cdot 0{,}40 \cdot E_\text{h}}{c\,m_\text{t}}$
+**Kaava:** $\Delta U = N k E_\text{h} = c\,m_\text{t}\,\Delta T$, joten $\Delta T = \dfrac{N k E_\text{h}}{c\,m_\text{t}}$, missä $N$ on lyöntien lukumäärä ja $k$ on osuus, joka muuttuu paalun yläpään sisäenergiaksi
 **Muunnokset:** $40\,\% = 0{,}40$; muut suureet ovat perusyksiköissä. Lämpötilan muutos on sama kelvineinä ja celsiusasteina.
 **Sijoitus:** $\Delta T = \dfrac{50 \cdot 0{,}40 \cdot 4926\,\text{J}}{460\,\tfrac{\text{J}}{\text{kg} \cdot \text{K}} \cdot 30\,\text{kg}} = \dfrac{98\,520\,\text{J}}{13\,800\,\tfrac{\text{J}}{\text{K}}} = 7{,}14\,\text{K}$
 **Vastaus:** $\Delta T \approx 7\,\text{K}$, yksi merkitsevä numero, koska osuus $40\,\%$ ja lämpenevä massa $30\,\text{kg}$ ovat vain arvioita. Todellinen lämpeneminen on pienempi: teräs johtaa lämpöä paalun alempiin osiin ja luovuttaa sitä ilmaan lyöntien välillä, ja osa energiasta muuttuu ääneksi ja järkäleen sisäenergiaksi.

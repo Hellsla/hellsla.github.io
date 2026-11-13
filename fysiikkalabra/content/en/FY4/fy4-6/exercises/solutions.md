@@ -379,3 +379,45 @@ $F_{\mu\text{D}} \approx 123\,\text{N}$
 The upper limit is $\mu_0 m_\text{D} g \cos\alpha \approx 149\,\text{N}$, so the box really stays in place.
 
 By the friction force, from the smallest to the largest, the order is B ($30\,\text{N}$), C ($44\,\text{N}$), A ($59\,\text{N}$), D ($1.2 \cdot 10^2\,\text{N}$). If the friction of box B were wrongly calculated as $\mu_0 N$, it would be the largest. The order by mass or by coefficient of friction would also be different, because friction depends both on the normal force and on whether the box slides.
+
+## fy4-6-L1-09
+**Given:** $m = 45\,\text{kg}$, the sled moves at a constant velocity on horizontal ice; from the table (MAFY table, *Kitkakertoimia*, steel–ice) the coefficient of kinetic friction $\mu = 0.014$; $g = 9.81\,\text{m/s}^2$
+**Find:** the pulling force $F$ in $\text{N}$
+**Principle:** In uniform motion the sum of the forces is zero, so the pulling force equals the kinetic friction and the normal force equals the weight. The kinetic friction is $F_\mu = \mu N$.
+**Free-body diagram:** The sled as a rectangle, $x$ in the direction of motion and $y$ up. The pulling force $\overline{F}$ forward, the kinetic friction $\overline{F}_\mu$ backward and equally long, the weight $\overline{G}$ down and the normal force $\overline{N}$ up, equally long. The pulling force and the friction are drawn enlarged, because they are much smaller than the weight.
+```voimakuvio
+pinta 0
+G 441,5
+N 441,5
+F 6,18 oikea veto
+F_mu 6,18 vasen
+v oikea
+a 0
+akselit 0
+```
+**Formula:** $x$: $F - \mu N = 0$ and $y$: $N - mg = 0$, so $F = \mu m g$
+**Conversions:** The mass is in kilograms and the coefficient of friction has no unit, so no conversions are needed.
+**Substitution:** $F = 0.014 \cdot 45\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 0.014 \cdot 441.5\,\text{N} = 6.18\,\text{N}$
+**Answer:** $6.2\,\text{N}$, two significant figures, like the coefficient $0.014$. The coefficient $0.014$ is from the MAFY table (*Kitkakertoimia*, steel–ice, coefficient of kinetic friction); the values of different tables differ slightly, and the answer is accepted within about $\pm 4\,\%$.
+**Reasonableness:** The weight of the sled is about $441\,\text{N}$, and the pulling force is only about $1.4\,\%$ of it. That fits the very slippery steel–ice pair. With a coefficient of about $0.3$, like wood on a floor, the pull would be about $130\,\text{N}$.
+
+## fy4-6-L2-09
+**Given:** $m = 0.50\,\text{kg}$; the five measurement points $(N, F_\mu)$ of the graph of the example data: $(5\,\text{N};\,1.1\,\text{N})$, $(10\,\text{N};\,2.1\,\text{N})$, $(15\,\text{N};\,3.3\,\text{N})$, $(20\,\text{N};\,4.2\,\text{N})$ and $(25\,\text{N};\,5.4\,\text{N})$; $g = 9.81\,\text{m/s}^2$
+**Find:** the magnitude of the deceleration $a$ in $\text{m/s}^2$
+**Principle:** Kinetic friction is proportional to the normal force, $F_\mu = \mu N$, so the $(N, F_\mu)$ graph is a straight line through the origin whose slope is $\mu$. In the horizontal direction only the kinetic friction acts on the block, pointing against the motion, so Newton's second law gives the deceleration.
+**Free-body diagram:** The block as a rectangle, $x$ in the direction of motion and $y$ up. The weight $\overline{G}$ down and the normal force $\overline{N}$ up, equally long, the kinetic friction $\overline{F}_\mu$ backward. There is no force forward, so the acceleration points backward.
+```voimakuvio
+pinta 0
+G 4,91
+N 4,91
+F_mu 1,05 vasen
+v oikea
+a vasen
+akselit 0
+```
+**Reading the graph:** A line is drawn through the origin so that it passes as close as possible to all the points. At the normal force $N = 25\,\text{N}$ the value of the line is about $F_\mu = 5.35\,\text{N}$, so $\mu = \dfrac{5.35\,\text{N}}{25\,\text{N}} = 0.214$.
+**Formula:** $y$: $N - mg = 0$, so $N = mg$. $x$: $-F_\mu = ma_x$, so $a_x = -\dfrac{\mu mg}{m} = -\mu g$ and the magnitude of the deceleration is $a = \mu g$
+**Conversions:** Both axes of the graph are in newtons, so the coefficient $\mu$ has no unit. The mass cancels out.
+**Substitution:** $a = 0.214 \cdot 9.81\,\text{m/s}^2 = 2.10\,\text{m/s}^2$
+**Answer:** $2.1\,\text{m/s}^2$ against the motion, two significant figures, because the line is drawn by hand and the points have been measured to two figures.
+**Reasonableness:** The friction force is $F_\mu = 0.214 \cdot 4.91\,\text{N} = 1.05\,\text{N}$, and $1.05\,\text{N} : 0.50\,\text{kg} = 2.1\,\text{m/s}^2$, the same result. The deceleration is smaller than $g$, because $\mu < 1$.

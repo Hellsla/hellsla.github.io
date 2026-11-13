@@ -27,4 +27,6 @@ a["fy2-4-L2-06"] = 95 / 120 * 100                         # motor table, last ro
 a["fy2-4-L3-04"] = (6.0 * 32 / 3.6) / 17                  # petrol 6,0 l · 32 MJ/l = 192 MJ = 53,3 kWh (1 kWh = 3,6 MJ); / 17 kWh = 3,1
 a["fy2-4-L3-05"] = (1510 / 2160) * (2160 / 240) * (3.0 * 365) / 1000   # led: P_o = 2160 J / 240 s = 9,0 W; E_o,year = 9,0 W · 1095 h = 9,855 kWh; heat share 1510/2160 = 0,70; E_h,year = 6,9 kWh (eta = 30 %, cost 1,4 EUR)
 # Inquiry tasks (not in exercises.json) are in lesson-answers.py
+a["fy2-4-L1-09"] = 80 / (40.6 * 2.5) * 100         # E_o = Hm = 40,6 MJ/kg · 2,5 kg = 101,5 MJ (MAFY); eta = 80 : 101,5 = 78,8 %
+a["fy2-4-L2-09"] = 2 / 8 * 100                    # read off fy2-4/grid: useful arrow 2 squares, incoming 8 squares -> eta = 25 %
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

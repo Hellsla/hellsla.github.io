@@ -1,20 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 52cd5fdc12763c25
-Mode: full
-Round: 3
+CONTENT-HASH: 290ca9ff5936acc5
 
 ## Blocking
 (none)
 
-## Fixed
-- none needed.
-
 ## Polish
-- none
+- solutions.md fy2-4-L2-09: "Luetaan energiavuokaaviota. ... Lue paksuudet" mixes passive and imperative; "Tämä on energiavuokaavio. Tuleva nuoli kattaa 8 ruutua." reads more evenly.
+- "Vihreä hyötynuoli" names the arrow by colour alone; "hyötynuoli (liike-energia)" is better.
 
 ## Checked
-- L2-08 after the split of the formula chain: correct-option feedback now reads eta = E_a : E_o, then eta = 360 kJ : 600 kJ = 0.60, then 60 % (joined by 'that is'/'which is' or 'eli'); solutions.md Rivi/Line 2 split likewise. Same numbers, formulas and correct option as the reviewed Finnish.
-- Recomputed: E_o = 2500 W * 240 s = 600 kJ, E_h = 240 kJ, eta = 0.60, 240/600 = 0.40, 60 % + 40 % = 100 %.
-- check_i18n.py shows nothing for fy2-4; build.py fy2-4 succeeds. Hash taken at start and end: unchanged.
-- Shorter inline formulas read better at 390 px; the step order is kept and no step is lost.
-- Wording stays natural Finnish (NOTES.md section 12).
+- L1-09 solution: "Tehtävässä käytetään tätä MAFY-arvoa" replaces the claim about other tables; it states the data source clearly and the 4 % tolerance remains.
+- L2-09: the term energy-flow diagram is now named before the reading; steps and key unchanged.
+- Diff is wording only; the earlier PASS stands.
+- Hash is the same at the start and the end (290ca9ff5936acc5).

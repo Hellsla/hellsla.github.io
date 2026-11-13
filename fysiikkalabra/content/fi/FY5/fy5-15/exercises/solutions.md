@@ -297,3 +297,25 @@ r_\text{raja} &= 8{,}0\,\text{m} \cdot \sqrt{\dfrac{3{,}112 \cdot 10^{-4}}{1{,}0
 ```
 **Vastaus:** Kohdan b) tulos on $45\,\text{m}$, kaksi merkitsevää numeroa kuten tehossa $0{,}20\,\text{W}$ ja etäisyydessä $8{,}0\,\text{m}$; kohdan a) yhteistaso on noin $85\,\text{dB}$.
 **Järkevyys:** Taso laskee yhteistasosta $84{,}9\,\text{dB}$ tasoon $70\,\text{dB}$ eli $14{,}9\,\text{dB}$, mikä on noin $2{,}5$ etäisyyden kaksinkertaistumista ($6{,}0\,\text{dB}$ kutakin kohti), ja $8{,}0\,\text{m} \cdot 2^{2{,}5} \approx 45\,\text{m}$. Yhteistaso on suurempi kuin kumpikaan lähde yksin ($84{,}0\,\text{dB}$ ja $78{,}0\,\text{dB}$) mutta pienempi kuin niiden desibelien summa. **Perustelu (kohta c):** Kuulon intensiteettialue on valtava: kuulokynnyksestä kipukynnykseen intensiteetti kasvaa kertoimella $10^{12}$. Logaritminen asteikko pakkaa tämän alueen lukuihin $0\,\text{dB}$–$120\,\text{dB}$, ja kuulo erottaa likimain suhteellisia eroja, joten sama intensiteetin kerroin, esimerkiksi kaksinkertaistuminen, tuntuu suunnilleen samalta muutokselta (noin $3\,\text{dB}$) hiljaisella ja kovalla äänellä.
+
+## fy5-15-L1-09
+**Annettu:** kuvasta taso etäisyydellä $r = 4{,}0\,\text{m}$, kuulokynnys $I_0 = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2$
+**Kysytty:** intensiteetti $I$ yksikössä $\text{W/m}^2$
+**Periaate:** Taso on kymmenen kertaa intensiteettien suhteen logaritmi. Intensiteetti saadaan, kun yhtälö jaetaan $10\,\text{dB}$:llä ja käytetään logaritmin määritelmää: jos $\lg x = y$, niin $x = 10^y$.
+**Kuvaajan lukeminen:** Etäisyyden $4{,}0\,\text{m}$ kohdalla merkitty piste on tasolla $L = 74{,}0\,\text{dB}$.
+**Kaava:** $L = 10\,\text{dB} \cdot \lg \dfrac{I}{I_0}$, joten $I = I_0 \cdot 10^{\,L/(10\,\text{dB})}$
+**Muunnokset:** Ei tarvita: $\dfrac{L}{10\,\text{dB}} = \dfrac{74{,}0\,\text{dB}}{10\,\text{dB}} = 7{,}40$, desibelit supistuvat.
+**Sijoitus:** $I = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2 \cdot 10^{7{,}40} = 2{,}51 \cdot 10^{-5}\,\text{W/m}^2$
+**Vastaus:** $2{,}5 \cdot 10^{-5}\,\text{W/m}^2$ eli $0{,}000025\,\text{W/m}^2$, kaksi merkitsevää numeroa kuten kuulokynnys $1{,}0 \cdot 10^{-12}\,\text{W/m}^2$.
+**Järkevyys:** $70\,\text{dB}$ vastaa intensiteettiä $10^{-5}\,\text{W/m}^2$ ja $80\,\text{dB}$ intensiteettiä $10^{-4}\,\text{W/m}^2$, joten $74\,\text{dB}$:n intensiteetin on oltava näiden välissä lähempänä alempaa. Kuvan $80\,\text{dB}$ kohdassa $r = 2{,}0\,\text{m}$ intensiteetti on $1{,}0 \cdot 10^{-4}\,\text{W/m}^2$, ja kaksinkertaisella etäisyydellä se on neljäsosa eli $2{,}5 \cdot 10^{-5}\,\text{W/m}^2$, kuten pitääkin.
+
+## fy5-15-L2-09
+**Annettu:** kuvasta taso etäisyydellä $r = 2{,}0\,\text{m}$; ääni leviää tasaisesti joka suuntaan, joten lähde on pistemäinen ja kuulokynnys $I_0 = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2$
+**Kysytty:** ääniteho $P$ yksikössä $\text{mW}$
+**Periaate:** Pistemäisen lähteen ääniteho jakautuu tasaisesti pallonpinnalle, jonka pinta-ala on $4\pi r^2$, joten $I = \dfrac{P}{4\pi r^2}$. Kuvasta luetusta tasosta lasketaan ensin intensiteetti ja sitten ääniteho.
+**Kuvaajan lukeminen:** Etäisyyden $2{,}0\,\text{m}$ kohdalla merkitty piste on tasolla $L = 80{,}0\,\text{dB}$.
+**Kaava:** $I = I_0 \cdot 10^{\,L/(10\,\text{dB})}$ ja $I = \dfrac{P}{4\pi r^2}$, josta $P = 4\pi r^2 I$
+**Muunnokset:** $\dfrac{L}{10\,\text{dB}} = 8{,}00$. Tulos tulee watteina, ja $1\,\text{W} = 1000\,\text{mW}$.
+**Sijoitus:** $I = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2 \cdot 10^{8{,}00} = 1{,}0 \cdot 10^{-4}\,\text{W/m}^2$, ja $P = 4\pi \cdot (2{,}0\,\text{m})^2 \cdot 1{,}0 \cdot 10^{-4}\,\text{W/m}^2 = 5{,}03 \cdot 10^{-3}\,\text{W} = 5{,}03\,\text{mW}$
+**Vastaus:** $5{,}0\,\text{mW}$, kaksi merkitsevää numeroa kuten kuvasta luetussa etäisyydessä $2{,}0\,\text{m}$.
+**Järkevyys:** Toinen kuvan piste antaa saman tuloksen: $r = 4{,}0\,\text{m}$ ja $L = 74{,}0\,\text{dB}$ antavat $I = 2{,}51 \cdot 10^{-5}\,\text{W/m}^2$ ja $P = 4\pi \cdot (4{,}0\,\text{m})^2 \cdot 2{,}51 \cdot 10^{-5}\,\text{W/m}^2 = 5{,}05\,\text{mW}$, mikä poikkeaa alle $1\,\%$ ensimmäisestä (lukemistarkkuus). Teho on pieni, kuten pienellä kaiuttimella: sähköteho on moninkertainen, koska vain pieni osa siitä muuttuu ääneksi.

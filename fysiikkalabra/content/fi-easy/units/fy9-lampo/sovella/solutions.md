@@ -58,10 +58,10 @@
 **Järkevyys:** Teho on sama kuin yhden tai kahden sähköpatterin teho. Se on tavallinen tulisijan keskiteho. Teho ei ole vakio. Heti lämmityksen jälkeen kivi on kuumimmillaan, ja silloin se luovuttaa enemmän.
 
 ### c)
-**Annettu:** lämpöhäviö $150\,\text{W}$ kelviniä kohti, sisällä $21\,{}^\circ\text{C}$, ulkona $-10\,{}^\circ\text{C}$; b-kohdan $P = 1667\,\text{W}$
+**Annettu:** lämpöhäviö $k_\text{h} = 150\,\text{W/K}$ eli $150\,\text{W}$ kelviniä kohti, sisällä $21\,{}^\circ\text{C}$, ulkona $-10\,{}^\circ\text{C}$; b-kohdan $P = 1667\,\text{W}$
 **Kysytty:** kuinka suuren osan lämmöntarpeesta takka kattaa, prosentteina
 **Periaate:** Sisälämpötila pysyy samana, kun lämmitys antaa yhtä suuren tehon kuin talosta lähtee. Lähtevä teho on verrannollinen sisälämpötilan ja ulkolämpötilan eroon samalla tavalla kuin kaavassa $P = UA\Delta T$ (luku *Lämmön siirtyminen, energiatasapaino ja ilmastonmuutos*).
-**Kaava:** $P_\text{h} = 150\,\tfrac{\text{W}}{\text{K}} \cdot (T_\text{sisä} - T_\text{ulko})$ ja osuus $= \dfrac{P}{P_\text{h}}$
+**Kaava:** $P_\text{h} = k_\text{h}\,(T_\text{sisä} - T_\text{ulko})$ ja osuus $= \dfrac{P}{P_\text{h}} = \dfrac{P}{k_\text{h}\,(T_\text{sisä} - T_\text{ulko})}$
 **Muunnokset:** Lämpötilaero on sama kelvineinä: $21\,{}^\circ\text{C} - (-10\,{}^\circ\text{C}) = 31\,\text{K}$. Suhdeluku muutetaan prosenteiksi kertomalla se luvulla $100\,\%$.
 **Sijoitus:** $P_\text{h} = 150\,\tfrac{\text{W}}{\text{K}} \cdot 31\,\text{K} = 4650\,\text{W}$ ja osuus $= \dfrac{1667\,\text{W}}{4650\,\text{W}} = 0{,}358 = 35{,}8\,\%$
 **Vastaus:** noin $36\,\%$. Vastauksessa on kaksi merkitsevää numeroa, kuten takan tehossa.
@@ -185,7 +185,7 @@ Kuvaajassa on ympyröity kaksi suoran pistettä. Niistä luetaan b-kohdan kulmak
 **Järkevyys:** Taulukkoarvo on $2{,}26\,\text{MJ/kg}$. Myös pienimmän neliösumman suora antaa $2{,}26\,\text{MJ/kg}$. Tarkistetaan yhdellä pisteellä: teholla $600\,\text{W}$ höyrystämiseen jää noin $530\,\text{W}$. Silloin $530\,\text{W} \cdot 300\,\text{s} : 2{,}26\,\tfrac{\text{MJ}}{\text{kg}} \approx 70\,\text{g}$, kuten taulukossa.
 
 ### c)
-**Annettu:** a-kohdan suora, joka leikkaa vaaka-akselin; b-kohdan kulmakerroin $k = 0{,}133\,\text{g/W}$ ja suoran piste $(100\,\text{W};\ 4{,}0\,\text{g})$
+**Annettu:** a-kohdan suora, joka leikkaa vaaka-akselin; b-kohdan kulmakerroin $k = 0{,}133\,\text{g/W}$ ja suoran piste $(P_1;\ \Delta m_1) = (100\,\text{W};\ 4{,}0\,\text{g})$
 **Kysytty:** teho $P_\text{h}$, jolla vesi ei suoran mukaan höyrystyisi, ja tuloksen tulkinta
 **Periaate:** Kohdassa, jossa suora leikkaa vaaka-akselin, $\Delta m = 0$. Energiataseen $(P - P_\text{h})\,t = r\,\Delta m$ mukaan näin käy, kun $P = P_\text{h}$. Silloin kuumentimen koko teho johtuu astian seinien ja vedenpinnan kautta huoneeseen. Kiehuva vesi on aina $100\,{}^\circ\text{C}$:ssa. Siksi lämpötilaero huoneeseen pysyy samana, ja myös häviöteho pysyy samana kaikilla tehoilla (luku *Lämmön siirtyminen, energiatasapaino ja ilmastonmuutos*).
 **Kuvaajan lukeminen:** Suora on jatkettu katkoviivana. Se leikkaa vaaka-akselin noin kohdassa $70\,\text{W}$.
@@ -198,7 +198,7 @@ Kuvaajassa on ympyröity kaksi suoran pistettä. Niistä luetaan b-kohdan kulmak
 ### d)
 **Kysytty:** miksi yhden mittauksen tulos $2{,}54\,\text{MJ/kg}$ on liian suuri ja kumpi tulos on luotettavampi
 **Periaate:** Energia säilyy. Kuumentimen energia $P\,t$ jakautuu kahteen osaan: höyrystämiseen ja lämpöön, joka johtuu huoneeseen. $P\,t = r\,\Delta m + P_\text{h}\,t$ (luku *Olomuodon muutokset*).
-**Mallivastaus:** Yhden mittauksen laskussa $r = \dfrac{P\,t}{\Delta m}$ oletetaan, että kuumentimen koko energia on kulunut höyrystämiseen. Todellisuudessa noin $70\,\text{W}$ johtuu huoneeseen. Teholla $600\,\text{W}$ höyrystämiseen jää siis vain noin $530\,\text{W}$. Laskussa on liikaa energiaa samaa massaa kohti. Siksi tulos on noin $600 : 530 \approx 1{,}13$-kertainen eli noin $13\,\%$ liian suuri. Kuvaajasta saatu tulos on luotettavampi. Häviöteho pysyy vakiona, joten se siirtää suoraa sivulle, mutta ei muuta suoran kulmakerrointa. Siksi kulmakertoimesta laskettu $r$ ei sisällä häviötä. Lisäksi on viisi mittausta, ja suora on sovitettu niiden välistä. Se pienentää yksittäisen lukeman satunnaisvirheen vaikutusta. Menetelmässä oletetaan, että häviöteho on sama kaikilla tehoilla. Oletus on perusteltu, koska kiehuva vesi on aina $100\,{}^\circ\text{C}$:ssa. Myös se, että pisteet asettuvat suoralle, tukee oletusta.
+**Mallivastaus:** Yhden mittauksen laskussa $r = \dfrac{P\,t}{\Delta m}$ oletetaan, että kuumentimen koko energia on kulunut höyrystämiseen. Todellisuudessa noin $70\,\text{W}$ johtuu huoneeseen. Teholla $600\,\text{W}$ höyrystämiseen jää siis vain noin $530\,\text{W}$. Laskussa on liikaa energiaa samaa massaa kohti. Siksi tulos on noin $\dfrac{P}{P - P_\text{h}} = 600 : 530 \approx 1{,}13$-kertainen eli noin $13\,\%$ liian suuri. Kuvaajasta saatu tulos on luotettavampi. Häviöteho pysyy vakiona, joten se siirtää suoraa sivulle, mutta ei muuta suoran kulmakerrointa. Siksi kulmakertoimesta laskettu $r$ ei sisällä häviötä. Lisäksi on viisi mittausta, ja suora on sovitettu niiden välistä. Se pienentää yksittäisen lukeman satunnaisvirheen vaikutusta. Menetelmässä oletetaan, että häviöteho on sama kaikilla tehoilla. Oletus on perusteltu, koska kiehuva vesi on aina $100\,{}^\circ\text{C}$:ssa. Myös se, että pisteet asettuvat suoralle, tukee oletusta.
 
 ### Yleisiä virheitä
 - Suora pakotetaan kulkemaan origon kautta. Silloin kulmakerroin ja $r$ vääristyvät, eikä häviötehoa huomata.
@@ -273,10 +273,10 @@ Kuvaajassa on ympyröity kaksi suoran pistettä. Niistä luetaan b-kohdan kulmak
 ## fy9-lampo-s6
 
 ### a)
-**Annettu:** auton massa $m = 1600\,\text{kg}$, nopeus $v = 90\,\text{km/h}$; levyjen massa $m_\text{l} = 30\,\text{kg}$, $c = 450\,\text{J/(kg}\cdot\text{K)}$; levyihin siirtyvä osuus $85\,\%$
+**Annettu:** auton massa $m = 1600\,\text{kg}$, nopeus $v = 90\,\text{km/h}$; levyjen massa $m_\text{l} = 30\,\text{kg}$, $c = 450\,\text{J/(kg}\cdot\text{K)}$; levyihin siirtyvä osuus $k = 85\,\%$
 **Kysytty:** kuinka paljon levyjen lämpötila nousee, $\Delta T$
 **Periaate:** Tasaisella tiellä jarrutus muuttaa auton liike-energian kitkan avulla jarrujen sisäenergiaksi. Energia säilyy (luku *Mekaanisen energian säilyminen ja energiaperiaate*). Lyhyessä jarrutuksessa ilmanvastuksen osuus on pieni. Siksi sitä ei oteta huomioon. Levyt pysyvät kiinteinä. Siksi niiden vastaanottama lämpö nostaa niiden lämpötilaa kaavan $Q = cm\Delta T$ mukaan.
-**Kaava:** $E_\text{k} = \tfrac{1}{2} m v^2$ ja $0{,}85\,E_\text{k} = c\,m_\text{l}\,\Delta T$, joten $\Delta T = \dfrac{0{,}85 \cdot \tfrac{1}{2} m v^2}{c\,m_\text{l}}$
+**Kaava:** $E_\text{k} = \tfrac{1}{2} m v^2$ ja $k\,E_\text{k} = c\,m_\text{l}\,\Delta T$, joten $\Delta T = \dfrac{k \cdot \tfrac{1}{2} m v^2}{c\,m_\text{l}}$
 **Muunnokset:** $90\,\text{km/h} = 90 \cdot \dfrac{1000\,\text{m}}{3600\,\text{s}} = 25\,\text{m/s}$ ja $85\,\% = 0{,}85$.
 **Sijoitus:** $E_\text{k} = \tfrac{1}{2} \cdot 1600\,\text{kg} \cdot (25\,\tfrac{\text{m}}{\text{s}})^2 = 500\,000\,\text{J}$ ja $\Delta T = \dfrac{0{,}85 \cdot 500\,000\,\text{J}}{450\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 30\,\text{kg}} = \dfrac{425\,000\,\text{J}}{13\,500\,\tfrac{\text{J}}{\text{K}}} = 31{,}5\,\text{K}$
 **Vastaus:** noin $31\,\text{K}$. Vastauksessa on kaksi merkitsevää numeroa, kuten levyjen massassa $30\,\text{kg}$ ja nopeudessa $90\,\text{km/h}$.
@@ -286,7 +286,7 @@ Kuvaajassa on ympyröity kaksi suoran pistettä. Niistä luetaan b-kohdan kulmak
 **Annettu:** pudotus $h = 250\,\text{m}$, matka $s = 4{,}0\,\text{km}$, ajovastus $F = 450\,\text{N}$, nopeus on vakio; $g = 9{,}81\,\text{m/s}^2$; a-kohdan tiedot
 **Kysytty:** kuinka paljon levyjen lämpötila nousee, $\Delta T$, jos levyt eivät jäähdy
 **Periaate:** Nopeus on vakio, joten liike-energia ei muutu. Energiaperiaatteen mukaan potentiaalienergia pienenee määrän $mgh$. Tämä energia kuluu ajovastusten työhön $Fs$ ja jarruihin (luvut *Liike-energia, potentiaalienergia ja mekaaninen energia* ja *Mekaanisen energian säilyminen ja energiaperiaate*). Jarruihin tulevasta energiasta $85\,\%$ lämmittää levyjä.
-**Kaava:** $Q_\text{jarrut} = mgh - Fs$ ja $0{,}85\,Q_\text{jarrut} = c\,m_\text{l}\,\Delta T$, joten $\Delta T = \dfrac{0{,}85\,(mgh - Fs)}{c\,m_\text{l}}$
+**Kaava:** $Q_\text{jarrut} = mgh - Fs$ ja $k\,Q_\text{jarrut} = c\,m_\text{l}\,\Delta T$, joten $\Delta T = \dfrac{k\,(mgh - Fs)}{c\,m_\text{l}}$
 **Muunnokset:** $4{,}0\,\text{km} = 4{,}0 \cdot 1000\,\text{m} = 4000\,\text{m}$.
 **Sijoitus:** $mgh = 1600\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 250\,\text{m} = 3\,924\,000\,\text{J}$, $Fs = 450\,\text{N} \cdot 4000\,\text{m} = 1\,800\,000\,\text{J}$ ja $\Delta T = \dfrac{0{,}85 \cdot 2\,124\,000\,\text{J}}{13\,500\,\tfrac{\text{J}}{\text{K}}} = \dfrac{1\,805\,400\,\text{J}}{13\,500\,\tfrac{\text{J}}{\text{K}}} = 133{,}7\,\text{K}$
 **Vastaus:** noin $1{,}3 \cdot 10^{2}\,\text{K}$ eli $130\,\text{K}$. Vastauksessa on kaksi merkitsevää numeroa, kuten matkassa $4{,}0\,\text{km}$.

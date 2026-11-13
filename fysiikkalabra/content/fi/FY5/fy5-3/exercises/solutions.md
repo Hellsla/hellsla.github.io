@@ -272,3 +272,35 @@ t &= \frac{5378\,\text{m}}{1{,}2\,\text{m/s}} \\
 ```
 **Vastaus:** a) Pyörimistaajuus on uran alussa noin $460\,\tfrac{1}{\text{min}}$ ja lopussa noin $200\,\tfrac{1}{\text{min}}$. b) Uran kierroksia on noin $2{,}1 \cdot 10^{4}$, uran pituus on noin $5{,}4\,\text{km}$ ja soittoaika on noin $75\,\text{min}$, kaksi merkitsevää numeroa kuten kierrosten välissä $1{,}6\,\mu\text{m}$. c) Laser kulkee uraa vakioratanopeudella, ja ulompana ura kiertää suuremman ympyrän. Koska $v = 2\pi r f$, samalla ratanopeudella pyörimistaajuuden täytyy pienentyä säteen kasvaessa. Vastauslaatikkoon tulee soittoaika $75\,\text{min}$.
 **Järkevyys:** Soittoaika $75\,\text{min}$ vastaa tavallisen CD-levyn soittoaikaa, joka on noin $74$–$80\,\text{min}$. Pyörimistaajuus pienenee suhteessa $\dfrac{r_1}{r_2} = \dfrac{25}{58}$, ja $458 \cdot \dfrac{25}{58} = 197$, kuten lasketussa lopussa. Kierroksia on $20\,625$ ja soittoaika $74{,}7\,\text{min}$, joten keskimääräinen pyörimistaajuus on $\dfrac{20\,625}{74{,}7\,\text{min}} = 276\,\tfrac{1}{\text{min}}$, mikä on alun $458\,\tfrac{1}{\text{min}}$ ja lopun $198\,\tfrac{1}{\text{min}}$ välissä.
+
+## fy5-3-L1-10
+**Annettu:** kierrosaika $T = 5{,}0\,\text{s}$; pisteen $B$ etäisyys keskipisteestä luetaan kuvasta
+**Kysytty:** pisteen $B$ ratanopeus $v$ yksikössä $\text{m/s}$
+**Periaate:** Karuselli pyörii tasaisesti, joten jokainen piste kiertää ympyrää samassa kierrosajassa. Ratanopeus on yhdellä kierroksella kuljettu matka eli ympyrän kehä $2\pi r$ jaettuna kierrosajalla $T$.
+**Kuvaajan lukeminen:** Säteen alapuolella oleva mittanuoli kertoo pisteen $B$ etäisyyden keskipisteestä: $r = 1{,}80\,\text{m}$. Pisteen $A$ etäisyyttä ei tässä tarvita.
+**Kaava:** $v = \dfrac{2\pi r}{T}$
+**Muunnokset:** Tiedot ovat SI-yksiköissä, joten muunnoksia ei tarvita.
+**Sijoitus:** $v = \dfrac{2\pi\cdot 1{,}80\,\text{m}}{5{,}0\,\text{s}} = 2{,}262\,\text{m/s}$
+**Vastaus:** $2{,}3\,\text{m/s}$, kaksi merkitsevää numeroa kuten kierrosajassa $5{,}0\,\text{s}$.
+**Järkevyys:** Piste $B$ kulkee kierroksella matkan $2\pi\cdot 1{,}80\,\text{m} \approx 11\,\text{m}$ ajassa $5\,\text{s}$. Vauhti vastaa reipasta kävelyä, kuten leikkipuiston karusellin reunalla.
+
+## fy5-3-L1-11
+**Annettu:** kierrosaika $T = 365\,\text{d}$; taulukosta (MAFY-taulukko, Aurinkokunta, Maa) keskietäisyys Auringosta $r = 150\cdot 10^{6}\,\text{km}$
+**Kysytty:** Maan ratanopeus $v$ yksikössä $\text{km/s}$
+**Periaate:** Rata oletetaan ympyräksi, jonka säde on $r$, ja Maa kulkee sitä pitkin tasaisesti. Ratanopeus on siis ympyrän kehä jaettuna kierrosajalla.
+**Kaava:** $v = \dfrac{2\pi r}{T}$
+**Muunnokset:** $T = 365\cdot 24\cdot 3600\,\text{s} = 3{,}15\cdot 10^{7}\,\text{s}$. Etäisyys voidaan jättää kilometreiksi, koska vastaus halutaan yksikössä $\text{km/s}$.
+**Sijoitus:** $v = \dfrac{2\pi\cdot 150\cdot 10^{6}\,\text{km}}{3{,}15\cdot 10^{7}\,\text{s}} = 29{,}89\,\text{km/s}$
+**Vastaus:** $29{,}9\,\text{km/s}$, kolme merkitsevää numeroa kuten lähtötiedoissa. Eri taulukoiden arvot poikkeavat hieman, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Järkevyys:** Maa kulkee vuodessa noin $940\cdot 10^{6}\,\text{km}$. Se on $30\,\text{km}$ joka sekunti, noin sata kertaa lentokoneen nopeus, ja juuri tämän suuruiseksi Maan ratanopeus tunnetaan.
+
+## fy5-3-L2-08
+**Annettu:** pyörimistaajuus $f = 20\,\tfrac{1}{\text{min}}$; etäisyydet $r_\text{A} = 0{,}60\,\text{m}$ ja $r_\text{B} = 1{,}80\,\text{m}$ luetaan kuvasta
+**Kysytty:** ratanopeuksien erotus $v_\text{B} - v_\text{A}$ yksikössä $\text{m/s}$
+**Periaate:** Jäykän karusellin jokaisella pisteellä on sama pyörimistaajuus. Pisteen ratanopeus on $v = 2\pi r f$, joten pisteet eroavat toisistaan vain säteensä vuoksi.
+**Kuvaajan lukeminen:** Mittanuolet näyttävät $r_\text{A} = 0{,}60\,\text{m}$ ja $r_\text{B} = 1{,}80\,\text{m}$, kumpikin mitattuna keskipisteestä.
+**Kaava:** $\Delta v = v_\text{B} - v_\text{A} = 2\pi f\,(r_\text{B} - r_\text{A})$
+**Muunnokset:** $f = 20\,\tfrac{1}{\text{min}} = \dfrac{20}{60\,\text{s}} = 0{,}3333\,\tfrac{1}{\text{s}}$
+**Sijoitus:** $\Delta v = 2\pi\cdot 0{,}3333\,\tfrac{1}{\text{s}}\cdot(1{,}80\,\text{m} - 0{,}60\,\text{m}) = 2{,}513\,\text{m/s}$
+**Vastaus:** $2{,}5\,\text{m/s}$, kaksi merkitsevää numeroa kuten pyörimistaajuudessa $20\,\tfrac{1}{\text{min}}$.
+**Järkevyys:** Erikseen $v_\text{B} = 3{,}77\,\text{m/s}$ ja $v_\text{A} = 1{,}26\,\text{m/s}$, ja erotus on $2{,}51\,\text{m/s}$. Piste $B$ on kolme kertaa kauempana keskipisteestä, joten sen ratanopeus on kolminkertainen.

@@ -225,3 +225,13 @@ $\rho_\text{D} = 120\,\text{g} : 100\,\text{cm}^3 = 1.2\,\tfrac{\text{g}}{\text{
 From smallest to largest the order is B, D, A, C.
 
 Object B would float in water and the others would sink. The order by mass would be different: object C is the heaviest and object D the lightest, but density tells the mass per volume, not the total mass of the object. Two significant figures are enough to decide the order, because the densities differ clearly from each other.
+
+## fy1-7-L1-09
+**Given:** volume $V = 50\,\text{cm}^3$; from the table (MAFY table, Tiheyksiä, solids, copper) density $\rho = 8.96 \cdot 10^3\,\text{kg/m}^3$
+**Find:** mass $m$ in $\text{kg}$
+**Principle:** The density of a substance tells the mass per volume, so the mass is the density times the volume.
+**Formula:** $\rho = \dfrac{m}{V}$, so $m = \rho V$
+**Conversions:** $1\,\text{cm}^3 = 10^{-6}\,\text{m}^3$, so $V = 50 \cdot 10^{-6}\,\text{m}^3 = 5.0 \cdot 10^{-5}\,\text{m}^3$.
+**Substitution:** $m = 8.96 \cdot 10^3\,\tfrac{\text{kg}}{\text{m}^3} \cdot 5.0 \cdot 10^{-5}\,\text{m}^3 = 0.448\,\text{kg}$
+**Answer:** $0.45\,\text{kg}$ (more precisely $0.448\,\text{kg}$), two significant figures as in the volume $50\,\text{cm}^3$. The answer is accepted within about $\pm 4\,\%$.
+**Reasonableness:** Copper is about $9$ times as dense as water, and $50\,\text{cm}^3$ of water has a mass of $50\,\text{g}$. So the copper has a mass of about $9 \cdot 50\,\text{g} = 450\,\text{g} = 0.45\,\text{kg}$.

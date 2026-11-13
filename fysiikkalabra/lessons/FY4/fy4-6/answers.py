@@ -45,4 +45,7 @@ acs = g * (0.45 * math.cos(r(6)) - math.sin(r(6)))                 # wet road, 6
 a["fy4-6-L3-04"] = sf(v0 ** 2 / (2 * acs), 2)                      # s = v0²/(2a) = 73 m (laskettu 73,4 m; level dry 33,6 m, level wet 55,9 m)
 a5 = g * (math.sin(r(30)) - 0.35 * math.cos(r(30)))                # N = mg cos α, not mg: a = 1,93 m/s²
 a["fy4-6-L3-05"] = sf(0.5 * a5 * 3.0 ** 2, 2)                      # from rest: s = a t²/2 = 8,69 m
+# Added exercises
+a["fy4-6-L1-09"] = 0.014 * 45 * g                                  # MAFY steel–ice mu = 0,014; constant velocity: F = mu m g = 6,18 N
+a["fy4-6-L2-09"] = sf((5.35 / 25) * g, 2)                          # fitted line 5,35 N at 25 N → mu = 0,214; only friction: a = mu g = 2,10 m/s²
 print(json.dumps(a))

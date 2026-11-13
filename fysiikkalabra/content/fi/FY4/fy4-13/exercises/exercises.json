@@ -299,6 +299,20 @@
           "feedback": "Väite on tosi, mutta se ei selitä vastausta. Sama kiihtyvyys pätee kummassakin kokeessa, eikä se kerro, miten $T$ muuttuu, kun massat vaihdetaan."
         }
       ]
+    },
+    {
+      "id": "fy4-13-L2-09",
+      "level": 2,
+      "kind": [
+        "graph",
+        "data"
+      ],
+      "text": "Kärry, jonka massa on $0{,}80\\,\\text{kg}$, on kitkattomalla radalla. Siihen sidottu kevyt ja venymätön lanka kulkee kevyen ja kitkattoman väkipyörän yli, ja langan päässä roikkuu punnus. Kärry päästetään liikkeelle levosta ja sen nopeus mitataan. Kuvaajassa ovat mittauspisteet. Ilmanvastus jätetään huomiotta.\n\nMääritä kärryn kiihtyvyys kuvaajasta ja laske sen avulla langan jännitysvoima. Piirrä ensin kärryn voimakuvio.",
+      "answer": 1.6,
+      "unit": "N",
+      "tolerance": 0.04,
+      "figure": "fy4-13/karry-vt-points",
+      "fbd": "equations"
     }
   ],
   "level3": [
@@ -408,6 +422,21 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy4-13-L3-06",
+      "level": 3,
+      "kind": [
+        "graph",
+        "model",
+        "reasoning"
+      ],
+      "text": "Kärry on kitkattomalla radalla, ja siihen sidottu kevyt ja venymätön lanka kulkee kevyen ja kitkattoman väkipyörän yli. Langan päässä roikkuu punnus, jonka massa on $0{,}20\\,\\text{kg}$. Kärryn massaa ei tunneta. Kärry päästetään liikkeelle levosta ja sen nopeus mitataan. Kuvaajassa ovat mittauspisteet. Ilmanvastus jätetään huomiotta.\n\na) Kuinka suuri on kärryn massa? Piirrä ensin kummankin kappaleen voimakuvio.\n\nb) Onko langan jännitysvoima suurempi, pienempi vai yhtä suuri kuin punnuksen paino? Perustele.\n\nVastauslaatikkoon tulee kohdan a) tulos.",
+      "answer": 0.81,
+      "unit": "kg",
+      "tolerance": 0.04,
+      "figure": "fy4-13/karry-vt-points",
+      "fbd": "equations"
     }
   ]
 }

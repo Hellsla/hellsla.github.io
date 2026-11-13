@@ -110,6 +110,18 @@
           "feedback": "Oikein: origon kautta kulkeva suora tarkoittaa $p = k \\cdot \\dfrac{1}{V}$. Kulmakerroin on $k = pV$. Boylen laki pätee mittausepävarmuuden rajoissa."
         }
       ]
+    },
+    {
+      "id": "fy3-9-L1-09",
+      "level": 1,
+      "text": "Suljettu ilmapussi täytetään merenpinnan tasolla. Siellä ilmanpaine on $101\\,\\text{kPa}$. Pussin ilman tilavuus on silloin $2{,}0\\,\\textsf{l}$. Pussi viedään repussa $3000\\,\\text{m}$:n korkeuteen. Oletetaan, että ilman lämpötila pysyy samana. Ilmaa ei pääse pois pussista.\n\nHae ilmanpaine $3000\\,\\text{m}$:n korkeudessa MAFY-taulukosta (mafytaulukot.fi). Mikä on pussin ilman tilavuus siellä?",
+      "lookup": "MAFY",
+      "answer": 2.9,
+      "unit": "l",
+      "tolerance": 0.04,
+      "hints": [
+        "Arvo on MAFY-taulukon taulukossa *Ilmanpaine, tiheys ja lämpötila eri korkeuksilla*."
+      ]
     }
   ],
   "level2": [

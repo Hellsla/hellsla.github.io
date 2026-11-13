@@ -292,6 +292,18 @@
      ]
     ]
    }
+  },
+  {
+   "id": "fy4-9-L2-08",
+   "level": 2,
+   "text": "Jalka potkaisee palloa. Kuvaajassa on potkun voima ajan funktiona. Kuinka suuri on jalan pallolle antama keskimääräinen voima koko kosketuksen ajan?",
+   "kind": [
+    "graph"
+   ],
+   "figure": "fy4-9/tarkistus-kolmio",
+   "answer": 450.0,
+   "unit": "N",
+   "tolerance": 0.02
   }
  ],
  "level3": [

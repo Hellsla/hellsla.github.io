@@ -112,6 +112,15 @@
       "answer": 38,
       "unit": "N",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-3-L1-09",
+      "level": 1,
+      "text": "Kaksi kärryä törmää ilmatyynyradalla. Kuvaajassa ovat kummankin kärryn voima-anturin lukemat. Anturi A mittaa kärryyn A kohdistuvaa voimaa, ja anturi B mittaa kärryyn B kohdistuvaa voimaa. Positiivinen suunta on oikealle. Kuinka suurella voimalla kärry A työntää kärryä B hetkellä $0{,}10\\,\\text{s}$?",
+      "answer": 4.0,
+      "unit": "N",
+      "tolerance": 0.04,
+      "figure": "fy4-3/anturit"
     }
   ],
   "level2": [
@@ -317,6 +326,15 @@
           "feedback": "Oikein: törmäys on yksi vuorovaikutus. Newtonin kolmannen lain mukaan sen voimat ovat yhtä suuret ja vastakkaissuuntaiset, vaikka autojen massat ja vauhdit ovat erilaiset."
         }
       ]
+    },
+    {
+      "id": "fy4-3-L2-09",
+      "level": 2,
+      "text": "Kaksi kärryä törmää ilmatyynyradalla. Kuvaajassa ovat kummankin kärryn voima-anturin lukemat. Anturi A mittaa kärryyn A kohdistuvaa voimaa, ja anturi B mittaa kärryyn B kohdistuvaa voimaa. Voima on nolla ennen kosketusta ja sen jälkeen. Kuinka kauan kärryjen välinen voima vaikuttaa?",
+      "answer": 0.1,
+      "unit": "s",
+      "tolerance": 0.1,
+      "figure": "fy4-3/anturit"
     }
   ],
   "level3": [
