@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 82235841107272d6
-Mode: delta (translation review of the new task fy4-14-L1-09 against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 44581897e649e0f4
+SCOPE: delta added-exercise from 82235841107272d6 base 81db4a6fd727
 
 ## Blocking
 (none)
 
-## Fixed
-(none needed)
-
 ## Polish
-(none)
+1. Part b) has no answer box; the solution answer is clear, but ask for a single number ('about what percentage') to keep it parallel to a).
 
 ## Checked
-- fy4-14-L1-09: situation first, question last as its own sentence, as in fi; choices and feedback keep the misconception-naming style.
-- Natural English with standard terms (rebound, momentum, sign convention).
-- Solution is followed step by step; the principle is explained, not only named; the reasonableness check is kept.
+Added L2-08 (skydiver, air resistance from a (t,v) graph).
+- Level 2 fits: slope between two points, F = m(g - a), then the terminal value; the diagram comes before the equations.
+- Figure gives seven points and no curve; the solution justifies using the interval average at the midpoint.
+- Part b) uses the graph to reach terminal velocity and 85 % of weight, not a repeat of L2-05 or L2-07.

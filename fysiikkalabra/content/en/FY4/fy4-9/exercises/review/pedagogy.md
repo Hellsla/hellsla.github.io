@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 38b0d74ac801d74a
-Mode: full (translation review against the reviewed Finnish set; one new task fy4-9-L1-09)
-Round 2
+CONTENT-HASH: 849ed9d8e226ccfc
 
 ## Blocking
 (none)
 
-## Fixed
-(none needed)
-
 ## Polish
-(none)
+1. L2-08 'two or three significant figures' in the answer line is vague; say the readings 900 N and 12 ms give 450 N.
+2. L3-01 is close to level 2 in demand; fine, but the later L3 tasks carry the level.
 
 ## Checked
-- New task fy4-9-L1-09 keeps the Finnish structure: situation first, question last as its own sentence, level and kind as in fi, feedback names the specific error.
-- Language is English decimal point and natural English; reading level and terms equal to fi, glossary terms consistent.
-- The solution has the full steps (Given, Find, Principle, formula, substitution, answer, reasonableness) as in fi, with significant figures as in fi.
+- L1 to L3 follow the plan: p, impulse, signs (L1-06), unit slip (L1-08), order of magnitude (L1-09), graph-area tasks (L2-08, L3-01), data and model tasks.
+- L2-08 and L3-01: the triangle and trapezoid are unshaded in the figures; descriptions give the full data; the area method is explained step by step.
+- Distractor feedback in L1-06 names the sign misconception; L3-01 combines area, impulse-momentum and a nonzero initial velocity at a fair level 3.
+- Contexts are recognisable (kicks, hail, sled, airbag).

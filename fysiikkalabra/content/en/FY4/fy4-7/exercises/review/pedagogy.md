@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 9c0419c7a7dea6b1
-Mode: full (translation review against the reviewed Finnish set; new task fy4-7-L1-09)
-Round 1
+CONTENT-HASH: ba2e7818bfdd7810
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+1. L2-09 reads 39 J at 2.0 m between 5 J gridlines; a student reading 40 J gets 2.04 kg, about 2 % off: check the tolerance or use a gridline crossing.
+2. L2-08 is little more than two readings and a subtraction; the quadratic insight is only in the Reasonableness; ask also for the ratio.
 
 ## Checked
-- fy4-7-L1-09 (YO-skill form) is parallel to fi: same choices in the same order, each distractor feedback names the same misconception and repairs it without more disclosure than fi.
-- Language level: natural English, glossary terms used consistently.
-- Model answer is complete and parallel to fi; other exercises unchanged from the earlier passed review.
+- Levels 1-3 follow the plan: Ek, Ep with zero levels, sign cases, data tasks and a dimension-analysis choice (L1-09).
+- L2-08 and L2-09: graphs read at grid crossings and the mass hidden; both solutions explain and check by a second route.
+- Multiple-choice distractors in L1-06/L1-08 are misconception-based (doubling, negative Ek).
+- Task texts: situation first, question last.
