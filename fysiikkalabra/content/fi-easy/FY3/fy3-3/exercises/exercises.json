@@ -323,7 +323,7 @@
     {
       "id": "fy3-3-L2-08",
       "level": 2,
-      "text": "Kuvaajassa ovat suljetussa jäykässä astiassa mitatut kaasun paineet eri lämpötiloissa. Oleta, että paine riippuu lämpötilasta lineaarisesti. Missä lämpötilassa paine on $90\\,\\text{kPa}$?",
+      "text": "Kuvaajassa ovat suljetussa jäykässä astiassa mitatut kaasun paineet eri lämpötiloissa: $(0\\,{}^\\circ\\text{C};\\ 75\\,\\text{kPa})$, $(25\\,{}^\\circ\\text{C};\\ 82\\,\\text{kPa})$, $(50\\,{}^\\circ\\text{C};\\ 89\\,\\text{kPa})$, $(75\\,{}^\\circ\\text{C};\\ 96\\,\\text{kPa})$ ja $(100\\,{}^\\circ\\text{C};\\ 102{,}5\\,\\text{kPa})$. Oleta, että paine riippuu lämpötilasta lineaarisesti. Missä lämpötilassa paine on $90\\,\\text{kPa}$?",
       "figure": "fy3-3/extrapolation-points",
       "answer": 54.5,
       "unit": "°C",

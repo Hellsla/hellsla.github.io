@@ -259,12 +259,12 @@ Check: $\tfrac{\text{kPa}}{\text{K}} \cdot \text{K} = \text{kPa}$, so $c\,T$ is 
 **Reasonableness:** The kelvin reading is positive, as it must be: the kelvin scale has no negative readings. The temperature is close to absolute zero, only about $77\,\text{K}$ above it, so the nitrogen is really cold. Check: $77.15\,\text{K} - 273.15\,\text{K} = -196\,{}^\circ\text{C}$.
 
 ## fy3-3-L2-08
-**Given:** read from the graph, the points $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$ and $(100\,{}^\circ\text{C};\ 102.5\,\text{kPa})$; pressure $p = 90\,\text{kPa}$
+**Given:** from the task's data points, the points $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$ and $(100\,{}^\circ\text{C};\ 102.5\,\text{kPa})$; pressure $p = 90\,\text{kPa}$
 **Find:** the temperature $\theta$ in degrees Celsius when the pressure is $90\,\text{kPa}$
-**Principle:** When the volume and the amount of the gas stay the same, the pressure depends linearly on the temperature: $p = p_0 + k\theta$. The slope of the line comes from two points of the graph, and the temperature at which the pressure is $90\,\text{kPa}$ is solved from it.
-**Reading the graph:** The points lie on a line; the first point is at $0\,{}^\circ\text{C}$ at the pressure $p_0 = 75\,\text{kPa}$ and the last at $100\,{}^\circ\text{C}$ at $102.5\,\text{kPa}$. The slope is $k = \dfrac{(102.5 - 75)\,\text{kPa}}{(100 - 0)\,{}^\circ\text{C}} = 0.275\,\dfrac{\text{kPa}}{{}^\circ\text{C}}$.
+**Principle:** When the volume and the amount of the gas stay the same, the pressure depends linearly on the temperature: $p = p_0 + k\theta$. The slope of the line comes from two data points, and the temperature at which the pressure is $90\,\text{kPa}$ is solved from it.
+**Reading the graph:** The values are given in the task and are the graph's points. The points lie on a line; the first point is at $0\,{}^\circ\text{C}$ at the pressure $p_0 = 75\,\text{kPa}$ and the last at $100\,{}^\circ\text{C}$ at $102.5\,\text{kPa}$. The slope is $k = \dfrac{(102.5 - 75)\,\text{kPa}}{(100 - 0)\,{}^\circ\text{C}} = 0.275\,\dfrac{\text{kPa}}{{}^\circ\text{C}}$.
 **Formula:** $p = p_0 + k\theta$, so $\theta = \dfrac{p - p_0}{k}$
 **Conversions:** No conversions are needed: the pressure is in kilopascals and the temperature in degrees Celsius.
 **Substitution:** $\theta = \dfrac{(90 - 75)\,\text{kPa}}{0.275\,\text{kPa}/{}^\circ\text{C}} = 54.5\,{}^\circ\text{C}$
-**Answer:** $\theta \approx 55\,{}^\circ\text{C}$, two significant figures, because the pressure $90\,\text{kPa}$ is given with two figures. A value read by eye between $53$ and $56\,{}^\circ\text{C}$ is accepted.
+**Answer:** $\theta \approx 55\,{}^\circ\text{C}$, two significant figures, because the pressure $90\,\text{kPa}$ is given with two figures. A value between $53$ and $56\,{}^\circ\text{C}$ from another pair of points or a fitted line is accepted.
 **Reasonableness:** The pressure $90\,\text{kPa}$ lies between the data points $(50\,{}^\circ\text{C};\ 89\,\text{kPa})$ and $(75\,{}^\circ\text{C};\ 96\,\text{kPa})$, close to the first, so the temperature must be a little over $50\,{}^\circ\text{C}$. Check: $75\,\text{kPa} + 0.275\,\text{kPa}/{}^\circ\text{C} \cdot 54.5\,{}^\circ\text{C} = 90\,\text{kPa}$.

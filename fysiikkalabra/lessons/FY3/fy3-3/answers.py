@@ -10,7 +10,7 @@ a["fy3-3-L1-05"] = round(2.7 - C0, -1)        # -270,45 °C -> -270 °C
 a["fy3-3-L2-01"] = round(288 + 45 - C0)       # T2 = 333 K -> 59,85 °C
 k = (123 - 90.0) / 100                        # slope 0,33 kPa/°C
 a["fy3-3-L2-02"] = round(90.0 + k * 35)       # 101,55 kPa
-k = (102.5 - 75) / (100 - 0)               # figure fy3-3/extrapolation-points: points (0 °C; 75 kPa) ... (100 °C; 102,5 kPa), slope 0,275 kPa/°C
+k = (102.5 - 75) / (100 - 0)               # figure fy3-3/extrapolation-points (points given in the task text): points (0 °C; 75 kPa) ... (100 °C; 102,5 kPa), slope 0,275 kPa/°C
 a["fy3-3-L2-03"] = 75 + k * (-100 - 0)        # 47,5 kPa
 a["fy3-3-L2-04"] = round((127 + C0) / (-173 + C0), 1)  # 400,15 / 100,15 = 3,9955
 a["fy3-3-L3-01"] = round(300 * (35 + C0) / (15 + C0))  # 320,8 kPa
@@ -29,5 +29,5 @@ a["fy3-3-L3-04"] = round(sum(mouth) / 5 - sum(fore) / 5, 1)   # 37,0 - 36,4 = 0,
 p1, p3 = 600 + 101, 900 + 101                  # L3-05: total pressures 701 kPa and 1001 kPa; T1 = 293,15 K
 a["fy3-3-L3-05"] = round((20.0 + C0) * p3 / p1 - C0)   # T3 = 418,6 K -> 145,5 °C -> 145 °C (at 60,0 °C: 796,7 kPa total, 695,7 kPa gauge, KE +13,6 %)
 a["fy3-3-L1-10"] = -196 + C0                       # MAFY (Aineiden olomuodon muutokset: Kaasut) N2 boiling point -196 °C -> 77,15 K -> 77 K
-a["fy3-3-L2-08"] = (90 - 75) / ((102.5 - 75) / (100 - 0))   # figure fy3-3/extrapolation-points: slope 0,275 kPa/°C, p = 90 kPa at theta = 15 / 0,275 = 54,5 °C
+a["fy3-3-L2-08"] = (90 - 75) / ((102.5 - 75) / (100 - 0))   # figure fy3-3/extrapolation-points (points given in the task text): slope 0,275 kPa/°C, p = 90 kPa at theta = 15 / 0,275 = 54,5 °C
 print(json.dumps(a))

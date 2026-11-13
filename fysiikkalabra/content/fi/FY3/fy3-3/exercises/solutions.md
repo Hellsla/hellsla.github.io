@@ -89,7 +89,7 @@
 **Järkevyys:** Lämpötila $35\,{}^\circ\text{C}$ on $35\,\%$ matkasta $0\,{}^\circ\text{C}$:sta $100\,{}^\circ\text{C}$:een, joten paineen pitää olla $35\,\%$ matkasta välillä $90{,}0\ldots123\,\text{kPa}$: $90{,}0 + 0{,}35 \cdot 33 = 101{,}55\,\text{kPa}$. Tulos on pisteiden paineiden välissä ja alle välin keskiarvon $106{,}5\,\text{kPa}$.
 
 ## fy3-3-L2-03
-**Annettu:** kuvaajasta luettuna pisteet $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$ ja $(100\,{}^\circ\text{C};\ 102{,}5\,\text{kPa})$; paine riippuu lämpötilasta lineaarisesti, myös mittausalueen ulkopuolella
+**Annettu:** tehtävän mittapisteistä pisteet $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$ ja $(100\,{}^\circ\text{C};\ 102{,}5\,\text{kPa})$; paine riippuu lämpötilasta lineaarisesti, myös mittausalueen ulkopuolella
 **Kysytty:** paine $p$ lämpötilassa $\theta = -100\,{}^\circ\text{C}$ kilopascaleina
 **Periaate:** Jäykässä suljetussa astiassa kaasun määrä ja tilavuus pysyvät samoina, joten paine riippuu vain lämpötilasta. Pisteet ovat suoralla, joten suoraa voidaan jatkaa mittausalueen ulkopuolelle eli ekstrapoloida.
 **Kuvaajan lukeminen:** Mittauspisteet ovat lämpötiloissa $0\ldots 100\,{}^\circ\text{C}$. Ensimmäinen piste on ruudukon risteyksessä $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$, ja viimeinen piste on hieman $100\,\text{kPa}$:n viivan yläpuolella, $102{,}5\,\text{kPa}$. Näistä kahdesta pisteestä lasketaan suoran kulmakerroin, ja suoraa jatketaan vasemmalle lämpötilaan $-100\,{}^\circ\text{C}$. Piirtämällä suora silmämääräisesti saa arvon $45$–$50\,\text{kPa}$, joka hyväksytään.
@@ -259,12 +259,12 @@ Tarkistus: $\tfrac{\text{kPa}}{\text{K}} \cdot \text{K} = \text{kPa}$, joten $c\
 **Järkevyys:** Kelvinlukema on positiivinen, kuten pitää: kelvinasteikolla ei ole negatiivisia lukemia. Lämpötila on lähellä absoluuttista nollapistettä, vain noin $77\,\text{K}$ sen yläpuolella, joten typpi on todella kylmää. Tarkistus: $77{,}15\,\text{K} - 273{,}15\,\text{K} = -196\,{}^\circ\text{C}$.
 
 ## fy3-3-L2-08
-**Annettu:** kuvaajasta luettuna pisteet $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$ ja $(100\,{}^\circ\text{C};\ 102{,}5\,\text{kPa})$; paine $p = 90\,\text{kPa}$
+**Annettu:** tehtävän mittapisteistä pisteet $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$ ja $(100\,{}^\circ\text{C};\ 102{,}5\,\text{kPa})$; paine $p = 90\,\text{kPa}$
 **Kysytty:** lämpötila $\theta$ celsiusasteina, kun paine on $90\,\text{kPa}$
-**Periaate:** Kun kaasun tilavuus ja ainemäärä pysyvät samoina, paine riippuu lämpötilasta lineaarisesti: $p = p_0 + k\theta$. Suoran kulmakerroin saadaan kahdesta kuvaajan pisteestä, ja siitä ratkaistaan lämpötila, jossa paine on $90\,\text{kPa}$.
-**Kuvaajan lukeminen:** Pisteet ovat suoralla, ja ensimmäinen piste on lämpötilassa $0\,{}^\circ\text{C}$ paineessa $p_0 = 75\,\text{kPa}$ ja viimeinen lämpötilassa $100\,{}^\circ\text{C}$ paineessa $102{,}5\,\text{kPa}$. Kulmakerroin on $k = \dfrac{(102{,}5 - 75)\,\text{kPa}}{(100 - 0)\,{}^\circ\text{C}} = 0{,}275\,\dfrac{\text{kPa}}{{}^\circ\text{C}}$.
+**Periaate:** Kun kaasun tilavuus ja ainemäärä pysyvät samoina, paine riippuu lämpötilasta lineaarisesti: $p = p_0 + k\theta$. Suoran kulmakerroin saadaan kahdesta mittapisteestä, ja siitä ratkaistaan lämpötila, jossa paine on $90\,\text{kPa}$.
+**Kuvaajan lukeminen:** Arvot annetaan tehtävässä ja ne ovat kuvaajan pisteet. Pisteet ovat suoralla, ja ensimmäinen piste on lämpötilassa $0\,{}^\circ\text{C}$ paineessa $p_0 = 75\,\text{kPa}$ ja viimeinen lämpötilassa $100\,{}^\circ\text{C}$ paineessa $102{,}5\,\text{kPa}$. Kulmakerroin on $k = \dfrac{(102{,}5 - 75)\,\text{kPa}}{(100 - 0)\,{}^\circ\text{C}} = 0{,}275\,\dfrac{\text{kPa}}{{}^\circ\text{C}}$.
 **Kaava:** $p = p_0 + k\theta$, joten $\theta = \dfrac{p - p_0}{k}$
 **Muunnokset:** Muunnoksia ei tarvita: paine on kilopascaleina ja lämpötila celsiusasteina.
 **Sijoitus:** $\theta = \dfrac{(90 - 75)\,\text{kPa}}{0{,}275\,\text{kPa}/{}^\circ\text{C}} = 54{,}5\,{}^\circ\text{C}$
-**Vastaus:** $\theta \approx 55\,{}^\circ\text{C}$, kaksi merkitsevää numeroa, koska paine $90\,\text{kPa}$ on annettu kahdella numerolla. Silmällä luettu arvo $53$–$56\,{}^\circ\text{C}$ hyväksytään.
+**Vastaus:** $\theta \approx 55\,{}^\circ\text{C}$, kaksi merkitsevää numeroa, koska paine $90\,\text{kPa}$ on annettu kahdella numerolla. Myös muulla mittapisteparilla tai sovitetulla suoralla saatu arvo $53$–$56\,{}^\circ\text{C}$ hyväksytään.
 **Järkevyys:** Paine $90\,\text{kPa}$ on mittauspisteiden $(50\,{}^\circ\text{C};\ 89\,\text{kPa})$ ja $(75\,{}^\circ\text{C};\ 96\,\text{kPa})$ välissä lähellä ensimmäistä, joten lämpötilan pitää olla vähän yli $50\,{}^\circ\text{C}$. Tarkistus: $75\,\text{kPa} + 0{,}275\,\text{kPa}/{}^\circ\text{C} \cdot 54{,}5\,{}^\circ\text{C} = 90\,\text{kPa}$.

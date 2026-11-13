@@ -36,7 +36,7 @@
     {
       "id": "fy3-7-L1-05",
       "level": 1,
-      "text": "A $0.60\\,\\text{kg}$ piece of ice taken from the freezer is heated. The graph shows the temperature of the ice as a function of the energy transferred. Use the graph to determine the specific latent heat of fusion of ice. Read the values you need from the graph.",
+      "text": "A $0.60\\,\\text{kg}$ piece of ice taken from the freezer is heated. The graph shows the temperature of the ice as a function of the energy transferred. Use the graph to determine the specific latent heat of fusion of ice. The initial temperature of the ice is $-16\\,{}^\\circ\\text{C}$. Read from the graph the quantity of heat the ice receives while warming to $0\\,{}^\\circ\\text{C}$.",
       "figure": "fy3-7/melting-curve",
       "answer": 333,
       "unit": "kJ/kg",

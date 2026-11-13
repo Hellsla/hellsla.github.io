@@ -145,7 +145,7 @@
     {
       "id": "fy3-4-L1-10",
       "level": 1,
-      "text": "Sukeltaja on meressä $25\\,\\text{m}$:n syvyydessä. Ilmanpaine meren pinnalla on $101\\,\\text{kPa}$. Hae meriveden tiheys MAFY-taulukosta (mafytaulukot.fi). Kuinka suuri on kokonaispaine sukeltajan kohdalla?",
+      "text": "Sukeltaja on meressä $25{,}0\\,\\text{m}$:n syvyydessä. Ilmanpaine meren pinnalla on $101\\,\\text{kPa}$. Hae meriveden tiheys MAFY-taulukosta (mafytaulukot.fi). Kuinka suuri on kokonaispaine sukeltajan kohdalla?",
       "lookup": "MAFY",
       "answer": 351.2,
       "unit": "kPa",
