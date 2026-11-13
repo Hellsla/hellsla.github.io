@@ -1,14 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 79c6b33c4e73d6f3
+CONTENT-HASH: 707c142449fad9a5
+SCOPE: delta added-exercise from 79c6b33c4e73d6f3 base 89bcb63b7431
+Round: 1
+Mode: delta
 
 ## Blocking
 (none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- Translation review against the reviewed Finnish (en): new task fy3-8-L2-08 in exercises.json and solutions.md compared with content/fi/FY3/fy3-8: choices and correct flag, the four feedbacks, ratio 0.5 · 3 = 1.5, the 0.5 mm / 0.7 mm estimate (12e-6 · 4.0 m · 10 K = 0.48 mm, 12e-6 · 2.0 m · 30 K = 0.72 mm), solutions.md; all equal to the Finnish.
-- Same physics, numbers, formulas, units, tolerance and correct answer (fi: correct option ΔL_B = 1.5 ΔL_A (0.5 · 3), distractors 3x, 1x, 0.5x).
-- Terms and notation as in the rest of the set; no physics added or lost.
-- check_i18n.py: nothing for fy3-8; build.py fy3-8 succeeds.
+- fy3-8-L1-09: Delta L = alpha L0 Delta T = 12e-6 * 25 m * 50 K = 15 mm; steel alpha realistic; within the solid-expansion range of the guardrails.
+- fy3-8-L2-09: line (20 °C; 0 mm) -> (70 °C; 3.0 mm) of fy3-8/length-graph, k = 0.060 mm/K, Delta T = 33.3 K, T = 53.3 °C; range 51.7–54.9 matches 3 %.
+- Figure description lists the end points, not the answer.
+- Solutions complete, symbolic first, real reasonableness checks.
+- answers.py equal to my recomputation; numbers, unit, tolerance and figure identical to the passed Finnish.
+- Hash identical at start and end.

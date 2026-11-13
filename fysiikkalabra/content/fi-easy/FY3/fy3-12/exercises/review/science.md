@@ -1,17 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 351a2dfbe36ac039
-
-Mode: translation review (fi-easy (NOTES.md section 12)) against the reviewed Finnish. Round 2, new task fy3-12-L2-08.
+CONTENT-HASH: 54bfccfa69750636
+SCOPE: delta added-exercise from 186c6601bf5ac2dc base 141dc47a8c70
+Mode: delta (added exercises fy3-12-L1-09, fy3-12-L2-09)
+Round: 1
 
 ## Blocking
 (none)
 
 ## Polish
-- None.
+- solutions.md fy3-12-L2-09 Kuvaajan lukeminen — "Ylempi oikea nuoli" for the reflected 102 W/m² arrow: in earth_flows() that arrow runs up and to the left between the Sun and the Earth (x 176–262), and the dashed thermal-radiation arrow is the one right of the Earth. The same wording is in the Finnish. A fix: "Maan yläpuolella vasemmalle osoittava nuoli" (in both languages).
 
 ## Checked
-- fy3-12-L2-08 recomputed independently: door 60 W, roof 216 W, windows 288 W, wall 459 W (UA = 2.0, 7.2, 9.6, 15.3 W/K, DeltaT = 30 K); order door < roof < windows < wall. Equals fi.
-- Answer, unit, tolerance, kind, order/statements/choices, correct flags and their order equal fi.
-- solutions.md of L2-08: every number, unit and formula equals fi; decimal comma kept.
-- Physics and scope unchanged; no Finnish-only terms left.
-- No translation fix needed. check_i18n.py shows nothing for fy3-12; build.py fy3-12 succeeds.
+- L1-09: P = UAΔT with U = λ/d given in the task (surface resistances left out: a fair simplification, C). MAFY pine λ = 0,14 W/(m·K); recomputed U = 0,70 W/(m²·K), ΔT = 30 K, P = 210 W; two significant figures from λ; tolerance 4 %.
+- L2-09: reflected share 102/341 = 29,9 %, in line with the planetary albedo of about 0,30; figure arrows 341 and 102 to scale, the description gives both values; the question mark is not needed and the solution says so.
+- Solutions complete, symbolic first, real reasonableness checks.
+- answers.py matches my recomputation (210; 29,912).
+- Scripted comparison with the Finnish: answer, unit, tolerance, figure, lookup and all numbers identical.
+- Hash the same at start and end.

@@ -1,7 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 9505870d85e17af2
-Mode: translation
-Round: 2
+CONTENT-HASH: 8ddd30626374e40b
+SCOPE: delta added-exercise from c7c51e40b053e747 base 89bcb63b7431
 
 ## Blocking
 (none)
@@ -10,9 +9,9 @@ Round: 2
 - none
 
 ## Checked
-- Scripted comparison of fy3-1-L1-09 against the reviewed Finnish: same kind/fbd select, answer (diagram B), 4 choices, one correct flag, figures pick-weight-only/pick-rest/pick-long-pull/pick-extra on the same options, numbers (0.50 kg, 4.9 N, 9.81 m/s2, 4.905 N) and decimal marks.
-- Recomputed G = 0.50 * 9.81 = 4.905 N, about 4.9 N = reading, so G and F equal length (B); C (F twice G, about 9.8 N) and D (F_k acts on the meter) are rightly wrong; A misses the hook force.
-- Force-diagram checklist: object = body; Earth and hook interactions only; F_k named as the body's force on the meter, not drawn on the body; no motion-force; at rest so forces balance without Newton's laws (FY3 scope kept).
-- fi-easy follows NOTES.md 12: shorter sentences and a plain-words gloss added, physics unchanged; no term or number differs from Finnish.
-- check_i18n.py: no message for fy3-1; build.py fy3-1 succeeds.
-- Option figure descriptions in figures.json are identity entries, identical to the Finnish and to figures.py (forces, directions, lengths per option); correct for a Finnish page.
+- fy3-1-L1-10: G = m g_Mars = 85,0 kg * 3,72 m/s2 = 316,2 N; answers.py, exercises.json and my own computation agree; 3 s.f. justified; the lesson's 3,71 m/s2 also falls inside the 4 % tolerance.
+- fy3-1-L2-08: figure weight-points (2..10 kg; 10..50 N, grid 2 kg / 10 N) gives G/m = 5 m/s2 on grid crossings; G = 12 kg * 5,0 m/s2 = 60 N; extrapolation past 10 kg justified by G proportional to m; description lists the points, not g.
+- Both stay in FY3 scope (weight as a measure of interaction, no Newton's laws); g in m/s2, N/kg = m/s2 noted correctly.
+- One script recomputed every added answer from the task text with my own formulas and compared answers.py, the Finnish and the Selkea suomi exercises.json: answer, unit, tolerance and figure id identical.
+- Every number in the fi-easy task texts and solution sections equals the Finnish (only the added gloss values 1 kg / 1 K differ); the physics is unchanged, the glosses are correct.
+- Solutions complete (given, principle, symbolic formula, conversions, substitution, rounding reason, reasonableness check).

@@ -1,7 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 0cb9ccd04c9d1ba6
-
-Mode: translation review (en) against the reviewed Finnish. Round 2, new task fy3-12-L2-08.
+CONTENT-HASH: 2a3f01a9ec3a7769
+SCOPE: delta added-exercise from 01e690e860570778 base 89bcb63b7431
 
 ## Blocking
 (none)
@@ -10,8 +9,7 @@ Mode: translation review (en) against the reviewed Finnish. Round 2, new task fy
 - None.
 
 ## Checked
-- fy3-12-L2-08 recomputed independently: door 60 W, roof 216 W, windows 288 W, wall 459 W (UA = 2.0, 7.2, 9.6, 15.3 W/K, DeltaT = 30 K); order door < roof < windows < wall. Equals fi.
-- Answer, unit, tolerance, kind, order/statements/choices, correct flags and their order equal fi.
-- solutions.md of L2-08: every number, unit and formula equals fi; English decimal point used.
-- Physics and scope unchanged; no Finnish-only terms left in en.
-- No translation fix needed. check_i18n.py shows nothing for fy3-12; build.py fy3-12 succeeds.
+- fy3-12-L1-09: MAFY pine lambda = 0.14 W/(m K); U = lambda/d given in task; U = 0.70 W/(m2 K), P = UA dT = 210 W; dT 30 K in K correct; log-wall U realistic.
+- fy3-12-L2-09: 102/341 = 29.9 % (planetary albedo about 0.30, realistic); outgoing arrow marked not to scale and not needed; description gives both values, not the share.
+- en vs fi: answer, unit, tolerance, figure, lookup, kind and every number of task text and solution identical (script comparison).
+- Recomputed in one independent script; answers.py lines agree; tolerances fit the data's significant figures and graph reading.

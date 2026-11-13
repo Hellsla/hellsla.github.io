@@ -1,20 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: e50f42266a867455
-Round: 4
+CONTENT-HASH: 09795200e3209299
+SCOPE: delta added-exercise from e50f42266a867455 base 89bcb63b7431
+Round: 1
 Mode: delta
 
 ## Blocking
 (none)
 
-## Fixed
-(none; no translation edits were needed)
-
 ## Polish
 (none)
 
 ## Checked
-- New task fy3-2-L2-08 compared with the reviewed Finnish: same id, level, kind, unit, tolerance, answer and choice/reason order; exactly one correct option in each list, same as fi.
-- Recomputed: rubber band, triangle area (1/2)Fs: W1 = 1/2*20 N*0.10 m = 1.0 J, W2 = 1/2*40 N*0.20 m = 4.0 J, ratio 4. Correct answer 4 W1 (W1 = 1.0 J, W2 = 4.0 J; 3 W1 = 3.0 J is the second part only); all numbers and formulas in text, feedback and solution equal the Finnish.
-- Distractor feedback physics agrees with fi (same misconception named, same numbers).
-- Language: English decimal point used (JSON, LaTeX, feedback and solution), natural English, no Finnish left.
-- check_i18n.py shows nothing for fy3-2; build.py fy3-2 succeeds.
+- fy3-2-L1-09: W = rho V g h, slow lift so lifting force = G, force along motion; recomputed 7800*0.020*9.81*12 = 18 364 J = 18.4 kJ; answer 18 kJ inside 4 % tolerance; MAFY steel 7.8e3 kg/m3 realistic.
+- fy3-2-L2-09: area of fy3-2/pull-steps = 25 N*6 m + 10 N*4 m = 190 J, F_av = W/s = 19 N; figure grid gives both levels and distances; description lists data, not the answer.
+- Both: symbolic first, conversions, rounding reason and real checks present; within FY3 scope (W = Fs, G = mg, graphical area).
+- answers.py lines agree with my own recomputation; unit and tolerance fit the data's figures.
+- Compared with the passed Finnish set: answer, unit, tolerance, figure, lookup identical; every number in text and solution equal (decimal point in English).
+- Hash identical at start and end.

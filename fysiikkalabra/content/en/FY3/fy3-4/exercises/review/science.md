@@ -1,20 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 15b0a0fdf9fe9772
-Round: 4
+CONTENT-HASH: 35a61f460a2d50f3
+SCOPE: delta added-exercise from 15b0a0fdf9fe9772 base 89bcb63b7431
+Round: 1
 Mode: delta
 
 ## Blocking
 (none)
 
-## Fixed
-(none; no translation edits were needed)
-
 ## Polish
-(none)
+- content/en/FY3/fy3-4/exercises/solutions.md (fy3-4-L2-08, Answer) — stated accepted range 1450–1600 kg/m3 is wider than the 4 % tolerance (1468–1590); same in the Finnish — align when next edited.
 
 ## Checked
-- New task fy3-4-L1-09 compared with the reviewed Finnish: same id, level, kind, unit, tolerance, answer and choice/reason order; exactly one correct option in each list, same as fi.
-- Recomputed: rho g h = 1000*9.81*1000 = 9.81e6 Pa; 10^5 = 10 m of water, 10^6 = 100 m, 10^8 = 10 km. Correct answer 10^7 Pa (rho g h = 9.81e6 Pa, nearer 1e7 than 1e6); all numbers and formulas in text, feedback and solution equal the Finnish.
-- Distractor feedback physics agrees with fi (same misconception named, same numbers).
-- Language: English decimal point used (JSON, LaTeX, feedback and solution), natural English, no Finnish left.
-- check_i18n.py shows nothing for fy3-4; build.py fy3-4 succeeds.
+- fy3-4-L1-10: p = p0 + rho g h = 101 kPa + 1020*9.81*25.0 Pa = 351.2 kPa; MAFY sea water 1.02e3 kg/m3; three figures justified.
+- fy3-4-L2-08: slope of line B (0;100)->(10;250) = 15 kPa/m = rho g -> 1529 kg/m3; unit derivation Pa/m / m/s2 = kg/m3 correct; check via liquid A (1019 kg/m3) consistent.
+- Figure fy3-4/two-liquids: grid crossings give the points; description lists points, not densities.
+- Solutions complete, symbolic first, real reasonableness checks.
+- answers.py equal to my recomputation; numbers, unit, tolerance and figure identical to the passed Finnish.
+- Hash identical at start and end.

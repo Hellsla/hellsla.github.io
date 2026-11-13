@@ -1,5 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 020df2aa2c31c139
+CONTENT-HASH: 66cbc678cd1429bc
+SCOPE: delta added-exercise from 020df2aa2c31c139 base 89bcb63b7431
 
 ## Blocking
 (none)
@@ -8,7 +9,9 @@ CONTENT-HASH: 020df2aa2c31c139
 - none
 
 ## Checked
-- Translation review against the reviewed Finnish (fi-easy): new task fy3-8-L2-08 in exercises.json and solutions.md compared with content/fi/FY3/fy3-8: choices and correct flag, the four feedbacks, ratio 0.5 · 3 = 1.5, the 0.5 mm / 0.7 mm estimate (12e-6 · 4.0 m · 10 K = 0.48 mm, 12e-6 · 2.0 m · 30 K = 0.72 mm), solutions.md; all equal to the Finnish.
-- Same physics, numbers, formulas, units, tolerance and correct answer (fi: correct option ΔL_B = 1.5 ΔL_A (0.5 · 3), distractors 3x, 1x, 0.5x).
-- Terms and notation as in the rest of the set; no physics added or lost.
-- check_i18n.py: nothing for fy3-8; build.py fy3-8 succeeds.
+- fy3-8-L1-09: dL = alpha L0 dT = 12e-6 * 25 m * 50 K = 15 mm; solid, dT 50 K well inside the linear range; gloss of alpha correct.
+- fy3-8-L2-09: length-graph (20 C; 0 mm) to (70 C; 3,0 mm), k = 0,060 mm/K, dT = 33,3 K, T = 53,3 C; read inside the measured range (interpolation); 3 % tolerance = stated 51,7-54,9 C.
+- Figure description gives the same end points; no alpha or answer given away.
+- One script recomputed every added answer from the task text with my own formulas and compared answers.py, the Finnish and the Selkea suomi exercises.json: answer, unit, tolerance and figure id identical.
+- Every number in the fi-easy task texts and solution sections equals the Finnish (only the added gloss values 1 kg / 1 K differ); the physics is unchanged, the glosses are correct.
+- Solutions complete (given, principle, symbolic formula, conversions, substitution, rounding reason, reasonableness check).

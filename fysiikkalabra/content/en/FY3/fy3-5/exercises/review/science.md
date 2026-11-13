@@ -1,14 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: e6fd55e011a5217c
+CONTENT-HASH: 8569da22151b127b
+SCOPE: delta added-exercise from e6fd55e011a5217c base 89bcb63b7431
+Round: 1
+Mode: delta
 
 ## Blocking
 (none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- Translation review against the reviewed Finnish (en): new task fy3-5-L1-09 in exercises.json and solutions.md compared with content/fi/FY3/fy3-5: statement flags, five statements and every feedback, ΔU = 0 + 60 J, Q = 0, W > 0 on the system, solutions.md; all equal to the Finnish.
-- Same physics, numbers, formulas, units, tolerance and correct answer (fi: 1 tosi, 2 tosi, 3-5 epätosi (ΔU = Q + W = 0 + 60 J = 60 J, T nousee, 60 J on työ eikä lämpö, lämpöä ei varastoidu)).
-- Terms and notation as in the rest of the set; no physics added or lost.
-- check_i18n.py: nothing for fy3-5; build.py fy3-5 succeeds.
+- fy3-5-L1-10: Delta U = Q + W, both into the system, 2.0 kcal = 8373.6 J (1 cal = 4.1868 J, MAFY) + 3.0 kJ = 11.37 kJ; answer 11 kJ inside 4 %.
+- fy3-5-L2-08: fast compression stated in the task, so Q = 0 and Delta U = W; trapezoid (200+400)/2 N * 0.20 m = 60 J; sign of W (work on the air) right.
+- Figure fy3-5/piston-force: end points on grid crossings, no area shaded; description lists them.
+- Solutions complete; stated range 58.2–61.8 J matches the 3 % tolerance.
+- answers.py equal to my recomputation; numbers, unit, tolerance and figure identical to the passed Finnish.
+- Hash identical at start and end.
