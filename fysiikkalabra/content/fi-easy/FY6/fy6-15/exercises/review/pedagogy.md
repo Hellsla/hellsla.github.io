@@ -1,12 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 8abfa7ae354d5e31
+CONTENT-HASH: 4ffc378fc4faad34
+SCOPE: delta added-exercise from 8abfa7ae354d5e31 base 8f23aa7ae3bd
+
 ## Blocking
 (none)
 
 ## Polish
-- solutions.md L3-05 b) — the new RCD sentence is correct and clearer; if desired state the reason in one phrase (the limit is 30 mA, and smaller currents already hurt) so the student sees why the device is only additional protection.
+- exercises.json fy6-15-L2-08 — the 16 A fuse is given but the question does not use it, so the student never compares; add a last sentence "Kestääkö sulake tämän virran?" (or a b-part) so the context carries the safety point the solution makes.
 
 ## Checked
-- Delta judged: only the L3-05 answer text changed. It now calls the RCD an additional protective device, says it does not remove every danger, and gives the action (earthing and insulation in order, no use of a faulty device).
-- Consistent with the week-by-week currents in the substitution (week 7: 17.0 mA, above the let-go threshold, no trip).
-- Level, order and counts of the set unaffected.
+- L2-08: level 2 fits (find the maximum on a step graph, then I = P : U); situation first, question last; kitchen group is recognisable.
+- Figure ex-kuorma gives the five steps on a 5 min / 1000 W grid; description lists the same values, current and fuse limit not drawn, so the answer is not given away.
+- Solution stepwise; 4000 W : 230 V = 17,4 A recomputed; Järkevyys compares every step with 3680 W, a real check.
+- Differs from L2-01 (computed group load) and L2-06 (table) by reading a time series; kind mix and progression sound; not the worked example.

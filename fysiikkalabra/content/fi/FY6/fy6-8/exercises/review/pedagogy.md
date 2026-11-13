@@ -1,16 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: fe154ae5f2ac3508
-Round: 2
+CONTENT-HASH: e8166f6d6acb7bb8
+SCOPE: delta added-exercise from fe154ae5f2ac3508 base 8f23aa7ae3bd
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- fy6-8-L2-09 repeats the method of L1-05 (internal resistance from an (I, U) graph), L2-05 and L2-08 (the same from data). What is new is a car battery with hundreds of amperes, which is a useful change of scale. A level 1 task and this one differ little in demand; the fact that it is the only task in which the student reads two far-apart points by themselves from a printed line is the justification. Accepted.
+- Solution, Kaava: the $$ display formula inside the bold line breaks the "one step per line" pattern of the other solutions; put it on its own line.
 
 ## Checked
-- Round 1 blocking item fixed: options are now (1,51 V; 0,40 Ω), (1,55 V; 0,40 Ω) correct, (1,51 V; 1,3 Ω), (1,55 V; resistance changes) - each value appears twice, so no option is the common core of the others.
-- Uncertainty argument corrected: a difference of two drops uses 3-4 readings, ±0,04 V, in both feedback and solution; the "(esimerkkiaineisto)" label was moved out of the stem (the caption keeps it).
-- Numbers unchanged and correct; the combined-error feedback of option 3 is explicit and the solution adds the two-error line.
-- The overlap with L2-05 (same fitting procedure) remains; accepted as polish only.
-- Text only; formula width judged from the round 1 measurements (KaTeX, 17 px, 390 px viewport), no new renders.
+- L2-09: situation, then the question as its own sentence ("Lue arvot kuvaajasta"); a starter battery is a recognisable context.
+- Figure and description give the same five points; neither states the slope, intercept or the answer, and the grid (50 A, 1 V) makes the reading unambiguous.
+- Level 2 fits: choosing two distant points, subtracting equations, interpreting the slope as R_s; no new theory.
+- Solution is complete and correct: 4 V : 200 A = 0,020 Ω; it warns against U : I of one point; the third-point and 12 V checks are independent and right.
+- Answer 0,02 Ω with tolerance 0.04 matches the reading (a student reading 0,0200 stays inside).
+- Level 2 mix (graph, data, experiment, error) stays varied; progression in the level holds.
+- Finnish and units are correct.
