@@ -222,14 +222,14 @@ b) $f_\text{C} = 30\,\text{kHz} \cdot \sqrt{\dfrac{0{,}080\,\Omega}{0{,}040\,\Om
 
 ## fy7-16-L2-09
 **Annettu:** $e_0 = 4{,}2\,\text{V}$ etäisyydellä $3\,\text{mm}$, taajuus ja kierrosluku eivät muutu, kuvasta luettavat viivamäärät
-**Kysytty:** jännitteen huippuarvo $e_0'$ etäisyydellä $8\,\text{mm}$ voltteina
+**Kysytty:** jännitteen huippuarvo $e_0'$ etäisyydellä $6\,\text{mm}$ voltteina
 **Periaate:** Jännitteen huippuarvo on $e_0 = N \cdot 2\pi f \cdot \Phi_0$. Kun $N$ ja $f$ pysyvät samoina, $e_0$ on verrannollinen vuohon $\Phi_0$. Kuvan kenttäviivat on piirretty yhtä suurin vuoaskelin, joten vastaanotinkäämin läpi kulkevien viivojen lukumäärä $n$ on verrannollinen vuohon ja siten jännitteeseen.
-**Kuvaajan lukeminen:** Lasketaan tummennetut viivat, jotka kulkevat vastaanotinkäämin läpi. Vasemmalla ($3\,\text{mm}$) niitä on $6$ ja oikealla ($8\,\text{mm}$) $3$.
+**Kuvaajan lukeminen:** Lasketaan tummennetut viivat, jotka kulkevat vastaanotinkäämin läpi. Vasemmalla ($3\,\text{mm}$) niitä on $6$ ja oikealla ($6\,\text{mm}$) $4$.
 **Kaava:** $\dfrac{e_0'}{e_0} = \dfrac{\Phi_0'}{\Phi_0} = \dfrac{n'}{n}$, joten $e_0' = e_0 \cdot \dfrac{n'}{n}$
 **Muunnokset:** Ei tarvita: viivamäärien suhde on yksikötön, ja jännite pysyy voltteina.
-**Sijoitus:** $e_0' = 4{,}2\,\text{V} \cdot \dfrac{3}{6} = 2{,}1\,\text{V}$
-**Vastaus:** $2{,}1\,\text{V}$, kaksi merkitsevää numeroa kuten annettu jännite. Viivojen laskeminen on karkea, joten arvo on suuntaa antava.
-**Järkevyys:** Puhelin on kauempana ja vuo pienempi, joten jännite pienenee: $2{,}1\,\text{V}$ on pienempi kuin $4{,}2\,\text{V}$. Vuo putoaa puoleen alle $8\,\text{mm}$:n matkalla, mikä sopii siihen, että hyötysuhde laski luvun mittauksissa jyrkästi jo muutaman millimetrin matkalla.
+**Sijoitus:** $e_0' = 4{,}2\,\text{V} \cdot \dfrac{4}{6} = 2{,}8\,\text{V}$
+**Vastaus:** $2{,}8\,\text{V}$, kaksi merkitsevää numeroa kuten annettu jännite. Viivojen laskeminen on karkea, joten arvo on suuntaa antava.
+**Järkevyys:** Puhelin on kauempana ja vuo pienempi, joten jännite pienenee: $2{,}8\,\text{V}$ on pienempi kuin $4{,}2\,\text{V}$. Vuo pienenee kolmanneksella jo $3\,\text{mm}$:n lisämatkalla, mikä sopii siihen, että hyötysuhde laski luvun mittauksissa jyrkästi jo muutaman millimetrin matkalla.
 
 ## fy7-16-L2-10
 **Annettu:** kuvaajan käyrä $P : P_0$ pituuden $L$ funktiona, uuden kuidun pituus $L = 35\,\text{km}$

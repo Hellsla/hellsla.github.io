@@ -55,8 +55,8 @@ f5, B5, r5 = 30e3, 3.0e-3, 0.090
 e05 = 2 * pi * f5 * B5 * pi * r5 ** 2                # 14,39 V
 P_A = e05 ** 2 / (2 * 0.040)                         # 2,59 kW (pan A), pan C 1,29 kW
 a["fy7-16-L3-05"] = f5 * sqrt(0.080 / 0.040) / 1e3   # 42,43 kHz
-# L2-09: figure charger-points; lines at equal flux steps: 6 lines at 3 mm, 3 lines at 8 mm; e0 is proportional to the flux
-a["fy7-16-L2-09"] = 4.2 * 3 / 6                      # e0 = 4,2 V · 3 / 6 = 2,1 V
+# L2-09: figure charger-points; lines at equal flux steps: 6 lines at 3 mm, 4 lines at 6 mm (model flux ratio 0,669: 2,81 V); e0 is proportional to the flux
+a["fy7-16-L2-09"] = 4.2 * 4 / 6                      # e0 = 4,2 V · 4 / 6 = 2,8 V
 # L2-10: figure graph-curve; the power halves at 10 km (read), A = 10 dB · lg 2 = 3,01 dB; a = A / L = 0,301 dB/km
 a_read = 10 * log10(2) / 10                          # 0,301 dB/km
 a["fy7-16-L2-10"] = 100 * 10 ** (-(a_read * 35) / 10)  # A = 10,5 dB for 35 km; P : P0 = 8,84 %

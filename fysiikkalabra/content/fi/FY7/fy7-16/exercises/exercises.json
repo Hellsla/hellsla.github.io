@@ -257,10 +257,10 @@
     {
       "id": "fy7-16-L2-09",
       "level": 2,
-      "text": "Kuvassa on sama langaton laturi kahdella etäisyydellä: puhelin on $3\\,\\text{mm}$ ja $8\\,\\text{mm}$ päässä laturista. Kenttäviivat on piirretty yhtä suurin vuoaskelin, joten vastaanotinkäämin läpi kulkevien viivojen lukumäärä on verrannollinen vuohon $\\Phi_0$. Vastaanotinkäämin jännitteen huippuarvo on $3\\,\\text{mm}$:n etäisyydellä $4{,}2\\,\\text{V}$, ja taajuus pysyy samana. Laske kuvan viivoista, kuinka suuri jännitteen huippuarvo on $8\\,\\text{mm}$:n etäisyydellä. Anna vastaus voltteina.",
-      "answer": 2.1,
+      "text": "Kuvassa on sama langaton laturi kahdella etäisyydellä: puhelin on $3\\,\\text{mm}$ ja $6\\,\\text{mm}$ päässä laturista. Kenttäviivat on piirretty yhtä suurin vuoaskelin, joten vastaanotinkäämin läpi kulkevien viivojen lukumäärä on verrannollinen vuohon $\\Phi_0$. Vastaanotinkäämin jännitteen huippuarvo on $3\\,\\text{mm}$:n etäisyydellä $4{,}2\\,\\text{V}$, ja taajuus pysyy samana. Laske kuvan viivoista, kuinka suuri jännitteen huippuarvo on $6\\,\\text{mm}$:n etäisyydellä. Anna vastaus voltteina.",
+      "answer": 2.8,
       "unit": "V",
-      "tolerance": 0.1,
+      "tolerance": 0.05,
       "figure": "fy7-16/charger-points"
     },
     {

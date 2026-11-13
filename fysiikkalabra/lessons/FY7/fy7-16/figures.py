@@ -184,19 +184,19 @@ def loss_graph():
 
 
 def charger_points():
-    """Question-safe variant of charger: the same model with the phone at 3 mm and at 8 mm; no number of lines in the text."""
+    """Question-safe variant of charger: the same model with the phone at 3 mm and at 6 mm; no number of lines in the text."""
     f = Fig("fy716-charger-8", 380, "Periaatekuva langattomasta laturista sivulta leikattuna, kentän muoto laskettu: "
             "kaksi paneelia. Kummassakin alhaalla on latausalusta, jonka sisällä lähetinkäämi, ja sen yläpuolella "
             "puhelin, jonka pohjassa on samankokoinen vastaanotinkäämi. Lähetinkäämin vaihtovirta synnyttää "
             "magneettikentän, jonka vihreät kenttäviivat kiertävät käämin johtimien ympäri ja kulkevat käämin keskeltä "
             "ylöspäin. Kenttäviivat on piirretty yhtä suurin vuoaskelin, joten viivojen lukumäärä on verrannollinen "
-            "vuohon. Vasemmalla puhelin on 3 millimetrin päässä ja oikealla 8 millimetrin päässä laturista. "
+            "vuohon. Vasemmalla puhelin on 3 millimetrin päässä ja oikealla 6 millimetrin päässä laturista. "
             "Vastaanotinkäämin läpi kulkevat viivat on piirretty tummemmin.")
     _panel(f, 150, 3.0, "a")
-    _panel(f, 450, 8.0, "b")
+    _panel(f, 450, 6.0, "b")
     f.line(300, 24, 300, 366, RULE, 1.5, "6 5")
     f.tex(150, 32, r"z = 3\,\text{mm}", "middle", w=150)
-    f.tex(450, 32, r"z = 8\,\text{mm}", "middle", w=160)
+    f.tex(450, 32, r"z = 6\,\text{mm}", "middle", w=160)
     f.tex(150, 318, r"\text{laturi}", "middle", w=100)
     f.tex(450, 318, r"\text{laturi}", "middle", w=100)
     f.tex(8, 352, r"\text{lähetinkäämi}", "start")
@@ -268,6 +268,6 @@ REUSE = {
     "charger": "reveals: far fewer field lines thread the receiver at 20 mm than at 3 mm (coupling falls with distance)",
     "hob": "reveals: the coil's changing field induces eddy currents in the pan bottom, none in the glass",
     "graph": "reveals: fibre power against length at 0,18 and 0,32 dB/km, halving at 16,7 km for 1550 nm",
-    "charger-points": "safe: the charger's field lines with the phone at 3 mm and 8 mm; REUSE of charger (no counts in the text), lines drawn at equal flux steps",
+    "charger-points": "safe: the charger's field lines with the phone at 3 mm and 6 mm; REUSE of charger (no counts in the text), lines drawn at equal flux steps",
     "graph-curve": "safe: the power curve of one fibre on a fine grid, no marked points; REUSE of graph for reading P from L or L from P",
 }

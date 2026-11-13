@@ -222,14 +222,14 @@ b) $f_\text{C} = 30\,\text{kHz} \cdot \sqrt{\dfrac{0.080\,\Omega}{0.040\,\Omega}
 
 ## fy7-16-L2-09
 **Given:** $e_0 = 4.2\,\text{V}$ at $3\,\text{mm}$, the frequency and the number of turns do not change, the numbers of lines to be read from the figure
-**Find:** the peak voltage $e_0'$ at $8\,\text{mm}$ in volts
+**Find:** the peak voltage $e_0'$ at $6\,\text{mm}$ in volts
 **Principle:** The peak voltage is $e_0 = N \cdot 2\pi f \cdot \Phi_0$. When $N$ and $f$ stay the same, $e_0$ is proportional to the flux $\Phi_0$. The field lines of the figure are drawn at equal flux steps, so the number $n$ of lines passing through the receiver coil is proportional to the flux and therefore to the voltage.
-**Reading the graph:** Count the darker lines that pass through the receiver coil. On the left ($3\,\text{mm}$) there are $6$ and on the right ($8\,\text{mm}$) $3$.
+**Reading the graph:** Count the darker lines that pass through the receiver coil. On the left ($3\,\text{mm}$) there are $6$ and on the right ($6\,\text{mm}$) $4$.
 **Formula:** $\dfrac{e_0'}{e_0} = \dfrac{\Phi_0'}{\Phi_0} = \dfrac{n'}{n}$, so $e_0' = e_0 \cdot \dfrac{n'}{n}$
 **Conversions:** Not needed: the ratio of the numbers of lines has no unit, and the voltage stays in volts.
-**Substitution:** $e_0' = 4.2\,\text{V} \cdot \dfrac{3}{6} = 2.1\,\text{V}$
-**Answer:** $2.1\,\text{V}$, two significant figures like the given voltage. Counting lines is rough, so the value is approximate.
-**Reasonableness:** The phone is farther away and the flux is smaller, so the voltage falls: $2.1\,\text{V}$ is less than $4.2\,\text{V}$. The flux halves over less than $8\,\text{mm}$, which fits the efficiency measurements of the chapter falling steeply within a few millimetres.
+**Substitution:** $e_0' = 4.2\,\text{V} \cdot \dfrac{4}{6} = 2.8\,\text{V}$
+**Answer:** $2.8\,\text{V}$, two significant figures like the given voltage. Counting lines is rough, so the value is approximate.
+**Reasonableness:** The phone is farther away and the flux is smaller, so the voltage falls: $2.8\,\text{V}$ is less than $4.2\,\text{V}$. The flux falls by a third over only $3\,\text{mm}$ more, which fits the efficiency measurements of the chapter falling steeply within a few millimetres.
 
 ## fy7-16-L2-10
 **Given:** the curve of the graph $P : P_0$ as a function of the length $L$, the length of the new fibre $L = 35\,\text{km}$
