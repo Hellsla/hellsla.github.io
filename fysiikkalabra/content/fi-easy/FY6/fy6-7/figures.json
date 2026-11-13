@@ -7,5 +7,9 @@
  "Kuvaaja mittakaavassa: pesukoneen teho P kilowatteina ajan t funktiona tunteina yhden pesuohjelman aikana. Pystyakselin ruudukon väli on 0,2 kW ja vaaka-akselin 0,25 h. Teho on ensin 2,0 kW ajan 0–0,25 h, sitten 0,2 kW ajan 0,25–1,25 h ja lopuksi 0,4 kW ajan 1,25–1,5 h, minkä jälkeen kone sammuu.": "Kuvaaja mittakaavassa: pesukoneen teho P kilowatteina ajan t funktiona tunteina yhden pesuohjelman aikana. Pystyakselin ruudukon väli on 0,2 kW ja vaaka-akselin 0,25 h. Teho on ensin 2,0 kW ajan 0–0,25 h. Sitten se on 0,2 kW ajan 0,25–1,25 h. Lopuksi se on 0,4 kW ajan 1,25–1,5 h. Sen jälkeen kone sammuu.",
  "lämmitys": "lämmitys",
  "pesu": "pesu",
- "linkous": "linkous"
+ "linkous": "linkous",
+ "Kuvaaja mittakaavassa: kuivausrummun teho P kilowatteina ajan t funktiona tunteina yhden kuivausohjelman aikana. Pystyakselin ruudukon väli on 0,4 kW ja vaaka-akselin 0,25 h. Teho on ensin 2,4 kW ajan 0–0,5 h, sitten 1,2 kW ajan 0,5–1,5 h ja lopuksi 0,2 kW ajan 1,5–2,0 h, minkä jälkeen kone sammuu.": "Kuvaaja mittakaavassa: kuivausrummun teho P kilowatteina ajan t funktiona tunteina yhden kuivausohjelman aikana. Pystyakselin ruudukon väli on 0,4 kW ja vaaka-akselin 0,25 h. Teho on ensin 2,4 kW ajan 0–0,5 h. Sitten se on 1,2 kW ajan 0,5–1,5 h ja lopuksi 0,2 kW ajan 1,5–2,0 h. Sen jälkeen kone sammuu.",
+ "kuumennus": "kuumennus",
+ "kuivaus": "kuivaus",
+ "jäähdytys": "jäähdytys"
 }
