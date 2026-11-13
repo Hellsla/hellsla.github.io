@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: fe8f2e5eaaa29210
-SCOPE: delta added-exercise from a45736261bc2d590 base 81db4a6fd727
+CONTENT-HASH: 728fc7919a95810a
 
 ## Blocking
 (none)
 
 ## Polish
-- fy5-5-L2-09 solution, Järkevyys: 'Se on Jupiterin tunnettu suuruusluokka' - 'suuruusluokka' may be new; write 'Se vastaa Jupiterin tunnettua massaa'.
+- solutions.md fy5-5-L2-09, Kaava — g = g_0 (R/(R+h))^2 is stated without a step; add one line: 'g = gamma M/r^2, joten g/g_0 = R^2/r^2'.
 
 ## Checked
-- L1-09: figure value needed, only F = mg; the 2 sig. fig. note explained.
-- L2-09: g from figure and R given, M = gR^2/gamma; the note about equatorial vs mean radius is a useful warning.
-- Description of fy5-5/planeetat gives all four values and no answer.
-- Set fit: L1 gets a figure-reading task, L2 a derivation; no repeat of the example.
+- L2-09 reworked: figure value g = 24,8 m/s2 needed, r = R + h = 2R named as the key step (distance from the centre), g = 6,20 m/s2, F = 5,27 kN.
+- Check against the surface weight 21,1 kN / 4 is correct and teaches the inverse-square law.
+- Level 2 fits (two steps); text gives all data, question last; unit kN consistent with answer.
+- Description of fy5-5/planeetat unchanged and gives the value without the answer.

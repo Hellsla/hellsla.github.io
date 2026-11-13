@@ -1,20 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 12247bcf797a5c2e
-Mode: full (translation review against the reviewed Finnish set; new task fy5-17-L2-08)
-Round 1
+CONTENT-HASH: 119f48447ec6e05e
+SCOPE: delta added-exercise from 12247bcf797a5c2e base 81db4a6fd727
 
 ## Blocking
 (none)
 
-## Fixed
-- None needed; new task fy5-17-L2-08 was already faithful to content/fi.
-
 ## Polish
-(none)
+- fy5-17-L1-09 resembles L1-03 (echo sounder in a lake); the MAFY look-up and the 0 degC water make it different enough.
 
 ## Checked
-- fy5-17-L2-08: situation first, question last as its own sentence; same structure, options and reasoning steps as fi; example-data notice kept where fi has it.
-- Solution has the same stages as fi (Find, Principle, Model answer) and can be followed step by step; nothing skipped or added.
-- Feedback repairs the misconception rather than restating the answer, as in fi.
-- Selkosuomi per NOTES.md section 12: short sentences, common words, glossary terms kept; same physics and numbers as fi; decimal comma in text, point in table cells as in fi.
-- No change to level, workload or figure use; check_i18n.py shows nothing for fy5-17; build.py fy5-17 succeeds.
+- L1-09: MAFY value 1402,4 m/s for water at 0 degC, d = vt/2 = 14,0 m; the tissue value 1540 m/s (15,4 m) is outside the 4 % tolerance, so the trap is named and caught.
+- L2-09: echoes at 20 and 50 microseconds read from the figure, thickness of the layer = v(t_B - t_A)/2 = 2,31 cm; mu s conversion shown, check by depths 1,54 and 3,85 cm.
+- Figure gives times only, no depths; description matches.
+- Level fit and set mix: one look-up task at level 1, one figure task at level 2; no repeat of L2-05 (table).

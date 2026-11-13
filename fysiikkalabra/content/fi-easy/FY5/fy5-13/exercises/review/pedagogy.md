@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: ce477dae624a64e2
-SCOPE: delta added-exercise from 1df2c1aee33c64a1 base 81db4a6fd727
+CONTENT-HASH: ae630b4d17ff9711
 
 ## Blocking
 (none)
 
 ## Polish
-- fy5-13-L1-09 solution, Järkevyys: the paragraph about the helium voice is long and off the task; shorten to one sentence.
-- fy5-13-L1-09: two look-ups and a difference is the upper end of level 1.
+- none.
 
 ## Checked
-- L1-09: open pipe, f1 = v/2L for two gases, answer 639,5 Hz within 4 %, trap (same length, different v) explained.
-- L2-09: the figure is needed (L = 1,20 m, four loops, n = 4); node/antinode counting explained; check with f1 x 4.
-- Figure description gives ruler and loops, no wavelength or speed.
-- Solutions staged.
+- L2-09 reworked: figure gives L = 1,20 m and four loops; the task asks the rise to five loops, 31,25 Hz; the answer (125 Hz and 156,25 Hz) is calculated step by step.
+- Task text keeps the situation first and the question last; the answer equals the fundamental frequency, which the check names.
+- Level 2: two natural frequencies and a difference, no repeat of L1-09.
+- Answer 31,3 Hz and 31,25 Hz both within 2 %.

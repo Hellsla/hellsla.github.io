@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 23a41d030a80cefe
-SCOPE: delta added-exercise from 0a3f982e1f50331c base 81db4a6fd727
+CONTENT-HASH: 72e6c51b611d4fe9
 
 ## Blocking
 (none)
 
 ## Polish
-- none.
+- exercises.json fy5-1-L1-10 — 'Kuvan voima korvataan voimalla.' is clumsy, and the figure still shows the horizontal force F — write 'Kuvan vaakasuora voima poistetaan. Kohtaan P vaikuttaa sen sijaan 30 N:n voima kohtisuorassa sauvaa OP vastaan.'
 
 ## Checked
-- fy5-1-L1-10: figure gives the grid and the force line, the arm is not drawn, the description gives the same data without the answer; the 3-4-5 bar tempts the student to use the length 0,50 m and the solution names that trap.
-- Level 1, one step (read the arm, F = M/r); an inverse of L1-04 on the same figure, not a repeat.
-- Solution staged, principle explained, check with 70 N x 0,30 m.
-- Finnish clear, term 'voiman varsi' correct.
+- L1-10 reworked: figure gives the 4-3 grid squares, description gives the same data without the length 0,50 m; the student must find OP as 5 squares.
+- Still level 1 (read the length, M = Fr); the old trap (arm 0,30 m of the horizontal force) is turned into the sanity check.
+- Solution staged, principle explained, check 9,0 Nm < 15 Nm correct.
+- Finnish clear, 'voiman varsi' correct, 30 N:n case right.
