@@ -222,14 +222,14 @@ Converted to hours, $T = \tfrac{2.76 \cdot 10^{4}\,\text{s}}{3600\,\text{s/h}} \
 **Reasonableness:** The acceleration is $\dfrac{v^2}{r} = \dfrac{(29.8 \cdot 10^{3}\,\text{m/s})^2}{1.496 \cdot 10^{11}\,\text{m}} \approx 5.9 \cdot 10^{-3}\,\text{m/s}^2$, the same as above. It is about a thousandth of the free-fall acceleration $9.81\,\text{m/s}^2$ of the Earth, and the Sun is very far away.
 
 ## fy5-6-L1-11
-**Given:** height $h = 100\,\text{km}$; from the MAFY table (Solar System, Moon) mass $M = 7.346 \cdot 10^{22}\,\text{kg}$ and mean radius $R = 1737\,\text{km}$; $\gamma = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
-**Find:** the probe's period of revolution $T$ in minutes
-**Principle:** Only the Moon's gravitational force acts on the probe, and it is the net force of the circular motion: $\gamma \tfrac{Mm}{r^2} = \tfrac{mv^2}{r}$. The radius of the orbit is measured from the centre of the Moon, so $r = R + h$. The period follows from the speed, because in the time $T$ the probe travels the circumference $2\pi r$ of the orbit.
-**Formula:** $v = \sqrt{\dfrac{\gamma M}{r}}$ and $T = \dfrac{2\pi r}{v}$
-**Conversions:** $r = 1737\,\text{km} + 100\,\text{km} = 1837\,\text{km} = 1.837 \cdot 10^{6}\,\text{m}$; finally $1\,\text{min} = 60\,\text{s}$.
-**Substitution:** $\gamma M = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot 7.346 \cdot 10^{22}\,\text{kg} = 4.9027 \cdot 10^{12}\,\text{m}^3/\text{s}^2$, so $v = \sqrt{\dfrac{4.9027 \cdot 10^{12}\,\text{m}^3/\text{s}^2}{1.837 \cdot 10^{6}\,\text{m}}} = 1634\,\text{m/s}$ and $T = \dfrac{2\pi \cdot 1.837 \cdot 10^{6}\,\text{m}}{1634\,\text{m/s}} = 7065\,\text{s} = 117.8\,\text{min}$
-**Answer:** $118\,\text{min}$ ($117.8\,\text{min}$), three significant figures because the height $100\,\text{km}$ is given to three. The values are from the MAFY table (Solar System, Moon); different tables give slightly different values, and the answer is accepted within about $\pm 4\,\%$.
-**Reasonableness:** In a low orbit round the Earth the period is about $90\,\text{min}$ (the ISS about $92\,\text{min}$). The Moon is lighter, so the same height means slower motion and a longer period; about $2\,\text{h}$ is reasonable.
+**Given:** orbit radius $r = 1840\,\text{km}$ from the centre of the Moon; from the MAFY table (Solar System, Moon) mass $M = 7.346 \cdot 10^{22}\,\text{kg}$; $\gamma = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
+**Find:** the gravitational acceleration $g$ of the Moon at the orbit, in $\text{m/s}^2$
+**Principle:** The gravitational force of the Moon on a probe of mass $m$ is $F = \gamma \tfrac{Mm}{r^2}$, and the acceleration it causes is $g = \tfrac{F}{m}$; the mass $m$ of the probe cancels.
+**Formula:** $g = \dfrac{\gamma M}{r^2}$
+**Conversions:** $r = 1840\,\text{km} = 1840 \cdot 1000\,\text{m} = 1.840 \cdot 10^{6}\,\text{m}$
+**Substitution:** $\gamma M = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot 7.346 \cdot 10^{22}\,\text{kg} = 4.9027 \cdot 10^{12}\,\text{m}^3/\text{s}^2$, so $g = \dfrac{4.9027 \cdot 10^{12}\,\text{m}^3/\text{s}^2}{(1.840 \cdot 10^{6}\,\text{m})^2} = 1.448\,\text{m/s}^2$
+**Answer:** $1.45\,\text{m/s}^2$, three significant figures as in the radius $1840\,\text{km}$. The value is from the MAFY table (Solar System, Moon); values in different tables differ slightly, and an answer within about $\pm 4\,\%$ is accepted.
+**Reasonableness:** On the surface of the Moon (radius $1737\,\text{km}$) the acceleration is $1.62\,\text{m/s}^2$. The orbit is a little farther from the centre, and the ratio $\left(\tfrac{1737}{1840}\right)^2 = 0.891$ gives $1.62\,\text{m/s}^2 \cdot 0.891 = 1.44\,\text{m/s}^2$, the same within rounding.
 
 ## fy5-6-L2-08
 **Given:** from the figure the orbit of Halley's comet: smallest distance from the Sun $r_1 = 88\,\text{million km}$ and largest $r_2 = 5250\,\text{million km}$

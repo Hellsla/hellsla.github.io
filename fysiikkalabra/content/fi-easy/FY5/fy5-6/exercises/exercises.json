@@ -130,9 +130,9 @@
     {
       "id": "fy5-6-L1-11",
       "level": 1,
-      "text": "Luotain kiertää Kuuta lähes ympyrärataa. Luotain on $100\\,\\text{km}$:n korkeudella Kuun pinnasta. Etsi Kuun massa ja säde MAFY-taulukosta (mafytaulukot.fi). MAFY-taulukko on koulun fysiikan taulukkokirja. Laske luotaimen kiertoaika. Anna vastaus minuutteina.",
+      "text": "Luotain kiertää Kuuta lähes ympyrärataa. Radan säde Kuun keskipisteestä on $1840\\,\\text{km}$. Etsi Kuun massa MAFY-taulukosta (mafytaulukot.fi). MAFY-taulukko on koulun fysiikan taulukkokirja. Laske putoamiskiihtyvyys luotaimen radalla. Se kertoo, kuinka suurella kiihtyvyydellä Kuun gravitaatio vetää luotainta. Anna vastaus yksikössä $\\text{m/s}^2$.",
       "lookup": "MAFY",
-      "answer": 117.8,
+      "answer": 1.45,
       "unit": "min",
       "tolerance": 0.04,
       "hints": [

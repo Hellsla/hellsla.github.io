@@ -130,9 +130,9 @@
     {
       "id": "fy5-6-L1-11",
       "level": 1,
-      "text": "A probe orbits the Moon in an almost circular orbit at a height of $100\\,\\text{km}$ above the surface of the Moon. Look up the mass and the radius of the Moon in the MAFY table (mafytaulukot.fi). Calculate the probe's period of revolution. Give the answer in minutes.",
+      "text": "A probe orbits the Moon in an almost circular orbit whose radius from the centre of the Moon is $1840\\,\\text{km}$. Look up the mass of the Moon in the MAFY table (mafytaulukot.fi). Calculate the gravitational acceleration of the Moon at the probe's orbit. Give the answer in $\\text{m/s}^2$.",
       "lookup": "MAFY",
-      "answer": 117.8,
+      "answer": 1.45,
       "unit": "min",
       "tolerance": 0.04,
       "hints": [

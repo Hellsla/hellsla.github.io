@@ -222,14 +222,14 @@ Tunneiksi muutettuna $T = \tfrac{2{,}76 \cdot 10^{4}\,\text{s}}{3600\,\text{s/h}
 **Järkevyys:** Kiihtyvyys on $\dfrac{v^2}{r} = \dfrac{(29{,}8 \cdot 10^{3}\,\text{m/s})^2}{1{,}496 \cdot 10^{11}\,\text{m}} \approx 5{,}9 \cdot 10^{-3}\,\text{m/s}^2$, sama kuin yllä. Se on noin tuhannesosa Maan putoamiskiihtyvyydestä $9{,}81\,\text{m/s}^2$, ja Aurinko on hyvin kaukana.
 
 ## fy5-6-L1-11
-**Annettu:** korkeus $h = 100\,\text{km}$; MAFY-taulukosta (Aurinkokunta, Kuu) massa $M = 7{,}346 \cdot 10^{22}\,\text{kg}$ ja keskimääräinen säde $R = 1737\,\text{km}$; $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
-**Kysytty:** luotaimen kiertoaika $T$ minuutteina
-**Periaate:** Luotaimeen vaikuttaa vain Kuun gravitaatiovoima, joka on ympyräliikkeen kokonaisvoima: $\gamma \tfrac{Mm}{r^2} = \tfrac{mv^2}{r}$. Radan säde mitataan Kuun keskipisteestä, joten $r = R + h$. Kiertoaika saadaan nopeudesta, koska luotain kulkee ajassa $T$ radan kehän $2\pi r$.
-**Kaava:** $v = \sqrt{\dfrac{\gamma M}{r}}$ ja $T = \dfrac{2\pi r}{v}$
-**Muunnokset:** $r = 1737\,\text{km} + 100\,\text{km} = 1837\,\text{km} = 1{,}837 \cdot 10^{6}\,\text{m}$; lopuksi $1\,\text{min} = 60\,\text{s}$.
-**Sijoitus:** $\gamma M = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot 7{,}346 \cdot 10^{22}\,\text{kg} = 4{,}9027 \cdot 10^{12}\,\text{m}^3/\text{s}^2$, joten $v = \sqrt{\dfrac{4{,}9027 \cdot 10^{12}\,\text{m}^3/\text{s}^2}{1{,}837 \cdot 10^{6}\,\text{m}}} = 1634\,\text{m/s}$ ja $T = \dfrac{2\pi \cdot 1{,}837 \cdot 10^{6}\,\text{m}}{1634\,\text{m/s}} = 7065\,\text{s} = 117{,}8\,\text{min}$
-**Vastaus:** $118\,\text{min}$ ($117{,}8\,\text{min}$), kolme merkitsevää numeroa, koska korkeus $100\,\text{km}$ on annettu kolmella numerolla. Arvot ovat MAFY-taulukosta (Aurinkokunta, Kuu); eri taulukoiden arvot poikkeavat hieman, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
-**Järkevyys:** Matalalla Maan radalla kiertoaika on noin $90\,\text{min}$ (ISS noin $92\,\text{min}$). Kuu on kevyempi, joten sama korkeus tarkoittaa hitaampaa kiertoa ja pidempää kiertoaikaa; noin $2\,\text{h}$ on järkevä.
+**Annettu:** radan säde Kuun keskipisteestä $r = 1840\,\text{km}$; MAFY-taulukosta (Aurinkokunta, Kuu) massa $M = 7{,}346 \cdot 10^{22}\,\text{kg}$; $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
+**Kysytty:** Kuun gravitaatiokiihtyvyys $g$ radalla yksikössä $\text{m/s}^2$
+**Periaate:** Kuun gravitaatiovoima massaltaan $m$ olevaan luotaimeen on $F = \gamma \tfrac{Mm}{r^2}$, ja sen aiheuttama kiihtyvyys on $g = \tfrac{F}{m}$; luotaimen massa $m$ supistuu pois.
+**Kaava:** $g = \dfrac{\gamma M}{r^2}$
+**Muunnokset:** $r = 1840\,\text{km} = 1840 \cdot 1000\,\text{m} = 1{,}840 \cdot 10^{6}\,\text{m}$
+**Sijoitus:** $\gamma M = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot 7{,}346 \cdot 10^{22}\,\text{kg} = 4{,}9027 \cdot 10^{12}\,\text{m}^3/\text{s}^2$, joten $g = \dfrac{4{,}9027 \cdot 10^{12}\,\text{m}^3/\text{s}^2}{(1{,}840 \cdot 10^{6}\,\text{m})^2} = 1{,}448\,\text{m/s}^2$
+**Vastaus:** $1{,}45\,\text{m/s}^2$, kolme merkitsevää numeroa kuten säteessä $1840\,\text{km}$. Arvo on MAFY-taulukosta (Aurinkokunta, Kuu); eri taulukoiden arvot poikkeavat hieman, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Järkevyys:** Kuun pinnalla (säde $1737\,\text{km}$) kiihtyvyys on $1{,}62\,\text{m/s}^2$. Rata on hieman kauempana keskipisteestä, ja suhde $\left(\tfrac{1737}{1840}\right)^2 = 0{,}891$ antaa $1{,}62\,\text{m/s}^2 \cdot 0{,}891 = 1{,}44\,\text{m/s}^2$, eli sama pyöristyksen tarkkuudella.
 
 ## fy5-6-L2-08
 **Annettu:** kuvasta Halleyn komeetan rata: pienin etäisyys Auringosta $r_1 = 88\,\text{milj. km}$ ja suurin $r_2 = 5250\,\text{milj. km}$
