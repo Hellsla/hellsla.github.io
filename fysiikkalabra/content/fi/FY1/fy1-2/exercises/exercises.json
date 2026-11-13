@@ -152,7 +152,7 @@
       "level": 1,
       "text": "Kuun pinnalla oleva laite lähettää radiosignaalin Maahan. Signaali kulkee valon nopeudella $c = 2{,}998\\cdot10^{8}\\,\\text{m/s}$. Hae MAFY-taulukosta (mafytaulukot.fi) Kuun keskietäisyys Maasta. Kulkuaika on $t = \\tfrac{s}{c}$, ja matka muunnetaan ensin metreiksi. Laske, kuinka kauan signaalilta kuluu matkaan.",
       "lookup": "MAFY",
-      "answer": 1.28,
+      "answer": 1.282,
       "unit": "s",
       "tolerance": 0.04,
       "hints": [
