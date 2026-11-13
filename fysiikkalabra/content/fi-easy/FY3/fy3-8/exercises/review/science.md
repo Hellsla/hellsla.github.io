@@ -1,18 +1,21 @@
-VERDICT: FAIL
-CONTENT-HASH: 6013df691366c118
+VERDICT: PASS
+CONTENT-HASH: 65f7b748b1e5d4e4
+SCOPE: delta added-exercise from 3ce9e680342bf801 base 5453544b2abc
 
 ## Blocking
-- content/fi-easy/FY3/fy3-8/exercises/exercises.json:305 and solutions.md:213-229 — the two added exercises still use $\Delta L$, $L_0$, $\Delta L_\text{koko}$, while the lesson (after the MAFY notation change), every other exercise and solution, and the figure `fy3-8/length-graph` it shows (axis $\Delta l\ (\text{mm})$) use $\Delta l$, $l_0$. In L2-09 the task text names the quantity $\Delta L$ and its own graph labels it $\Delta l$ (category 6, internal consistency; this round's purpose was to bring the added tasks onto the merged notation) — write $\Delta l$, $l_0$, $\Delta l_\text{koko}$ in L2-09's text and in both solutions (Kysytty, Periaate, Kaava, Sijoitus, Annettu).
+- none
 
 ## Polish
-1. lessons/FY3/fy3-8/answers.py:2,300-301 — docstring and comments still say ΔL, L₀; rename to Δl, l₀ (noted last round too).
-2. exercises.json:117 (L1-09) — the task says "pituuden lämpölaajenemiskerroin" (MAFY's table name); add once that it is the lesson's pituuden lämpötilakerroin $\alpha$, so the S2 reader links the two names.
+1. lessons/FY3/fy3-8/answers.py:2,300-301 — the docstring and comments still say ΔL and L₀; rename them to Δl and l₀ (noted last round too).
+2. content/fi-easy/FY3/fy3-8/exercises/exercises.json:117 (L1-09) — the task says "pituuden lämpölaajenemiskerroin" (MAFY's table name). Say once that this is the lesson's pituuden lämpötilakerroin $\alpha$, so the S2 reader links the two names.
 
 ## Checked
-- L1-09: $\Delta l = \alpha l_0 \Delta T = 12 \cdot 10^{-6} \cdot 25 \cdot 50\,\text{m} = 15\,\text{mm}$ (own script; answers.py 15,0); steel α from MAFY is 12·10⁻⁶ 1/K; ±4 % covers table differences of 11,5–12,5; ΔT = 50 K is within the about 100 K range the linear model holds for.
-- L1-09 sig figs (two, from 25 m and 50 K) and the check (1,2 mm per m per 100 K) are right.
-- L2-09: own reading of the figure (20 °C; 0) to (70 °C; 3,0 mm), $k = 0{,}060\,\text{mm/K}$, $T = 20 + 2{,}0/0{,}060 = 53{,}3\,{}^\circ\text{C}$; answers.py 53,333 agrees.
-- L2-09 tolerance 3 % gives 51,7–54,9 °C, as the solution states; rounding to 53 °C stays inside.
-- L2-09: the figure gives both end points on grid crossings, its description gives the same to a non-seeing reader, and neither gives the answer; the proportionality is justified from the points lying on a line.
-- The other 21 exercises are unchanged from the version passed (packet), not re-reviewed.
-- Hash the same at start and end.
+- The hash changed during the review (the packet's 6013df691366c118 became 65f7b748b1e5d4e4), so I reviewed again. The working-tree diff only renames ΔL, L₀, ΔL_koko to Δl, l₀, Δl_koko in L2-09's text (exercises.json:305) and in both added solutions (solutions.md:212-226). No number changed, and the diff is entirely inside the added exercises.
+- The notation now matches the lesson, the other exercises and the figure axis $\Delta l\ (\text{mm})$.
+- L1-09 recomputed: $\Delta l = \alpha l_0 \Delta T = 12 \cdot 10^{-6} \cdot 25 \cdot 50\,\text{m} = 15\,\text{mm}$, and answers.py gives 15,0. Steel's α in MAFY is 12·10⁻⁶ 1/K. The ±4 % tolerance covers differences between tables. ΔT = 50 K is within the roughly 100 K range where the linear model holds.
+- L1-09: two significant figures (from 25 m and 50 K) and the reasonableness check (1,2 mm per m per 100 K) are right.
+- L2-09 recomputed from the figure, (20 °C; 0) to (70 °C; 3,0 mm): $k = 0{,}060\,\text{mm/K}$ and $T = 20 + 2{,}0/0{,}060 = 53{,}3\,{}^\circ\text{C}$. answers.py gives 53,333.
+- L2-09 tolerance: 3 % gives 51,7–54,9 °C, as the solution states, and the rounded answer 53 °C is inside it.
+- L2-09 figure: both end points are on grid crossings, the description gives the same values, and neither gives the answer away. The proportionality is justified by the points lying on a line.
+- The other 21 exercises are unchanged since the version passed (per the packet), so I did not review them again.
+- Hash checked again at the end: 65f7b748b1e5d4e4.

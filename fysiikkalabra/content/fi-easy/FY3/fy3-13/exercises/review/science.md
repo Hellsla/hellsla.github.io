@@ -1,21 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 595b3e4cd6e503dd
-SCOPE: delta added-exercise from 4bbd51e0c6f48c2d base 89bcb63b7431
-Mode: delta (added exercises fy3-13-L1-09, fy3-13-L2-09, fy3-13-L2-10)
-Round: 1
+CONTENT-HASH: 5b2bbbf91992607b
+SCOPE: delta added-exercise from 4bbd51e0c6f48c2d base 81db4a6fd727
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- solutions.md fy3-13-L2-09 / L2-10 — the accepted eye-fit ranges (−259 … −286 °C; 52–58 kPa) end just outside the ±5 % tolerance (−259,1 … −286,4 °C; 52,1–57,6 kPa). A fix: say −260 … −286 °C and 52–57 kPa, or widen the tolerance a little (and the same in the Finnish).
+1. content/fi-easy/FY3/fy3-13/exercises/solutions.md (fy3-13-L2-10, Periaate) — says "Pisteet ovat suoralla" while L2-09 now says "lähes suoralla" about the same figure; "lähes suoralla" here as well (the task's linearity assumption still carries the model).
 
 ## Checked
-- L1-09: T = θ + T₀ with T₀ = 273,15 K (MAFY); θ₀ = −273,15 °C; the reasoning (same degree size, shifted zero) is right; the large tolerance does no harm.
-- L2-09: rigid closed vessel; line through (0 °C; 75 kPa) and (100 °C; 102,5 kPa), k = 0,275 kPa/°C, θ₀ = −272,7 °C; the middle points (82, 89, 96) lie on it within 0,4 kPa; the uncertainty statement (about 10 °C or more from about 1 kPa reading) is consistent with Δk/k ≈ 5 %.
-- L2-10: linear model assumed outside the range in the task (condition stated, B satisfied); θ = −73,15 °C, p = 54,88 kPa; check p ∝ T gives 54,9 kPa.
-- Figure extrapolation-points: to scale, axis to −150 °C, description lists the points and not θ₀.
-- Solutions complete, symbolic first, conversions right.
-- answers.py matches my recomputation (−273,15; −272,727; 54,884).
-- Scripted comparison with the Finnish: answer, unit, tolerance, figure, lookup and all numbers identical.
+- Last round's Polish is fixed: the eye-fit ranges are now −260 … −286 °C (L2-09) and 53–57 kPa (L2-10). Both lie inside the ±5 % tolerance (own script: −259,1 … −286,4 °C; 52,14–57,63 kPa).
+- L2-09: "lähes suoralla" in task and solution matches the figure. The middle points (82, 89, 96 kPa) are within 0,4 kPa of the line through (0 °C; 75 kPa) and (100 °C; 102,5 kPa), so this is not an exact fit (guardrail "Fits").
+- L2-09 recomputed: k = 0,275 kPa/°C, θ₀ = θ₁ − p₁/k = −272,7 °C; answers.py −272,727 agrees. The uncertainty statement (about 10 °C or more) is consistent.
+- L2-10 recomputed: θ = −73,15 °C, p = 75 + 0,275 · (−73,15) = 54,88 kPa; answers.py 54,884 agrees. The task states the condition that the model holds outside the measured range. The check against p ∝ T is independent.
+- L1-09: θ₀ = −T₀ = −273,15 °C from MAFY 0 °C = 273,15 K; the reasoning (same degree size, shifted zero) is right.
+- Figure fy3-3/extrapolation-points: gives every value needed, its description lists the same points, and neither gives θ₀ away.
+- The other 21 exercises were not re-reviewed (unchanged, per the packet).
 - Hash the same at start and end.
