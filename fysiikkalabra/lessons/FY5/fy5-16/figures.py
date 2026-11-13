@@ -24,7 +24,8 @@ def scale(task=False):
             "noin 90 dB, rock-konsertti noin 105 dB ja kipukynnys noin 120 dB. Asteikon yläosa 85 desibelistä ylöspäin on "
             "värjätty punaiseksi ja merkitty vasemmalla hakasulkeella: pitkä altistus niin suurelle tasolle vaurioittaa kuuloa.")
     def Y(L): return 344 - (L - 20) * 2.8
-    x0, x1 = 300, 326
+    dx = -60 if task else 0     # the task variant has longer labels: shift the ladder left
+    x0, x1 = 300 + dx, 326 + dx
     f.defs_add(f'<linearGradient id="fy516-ladder" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="{GOOD_LIGHT}"/>'
                f'<stop offset="0.55" stop-color="{HEAT_LIGHT}"/><stop offset="1" stop-color="{HOT_LIGHT}"/></linearGradient>')
     f.rect(x0, Y(130), x1 - x0, Y(20) - Y(130), "url(#fy516-ladder)", INK, 2.5, 4)
@@ -36,7 +37,7 @@ def scale(task=False):
     f.tex(x0 - 12, Y(85), "85", "end", HOT)
     f.tex(x0 - 8, Y(133) - 14, r"L\ (\text{dB})", "end")
     # bracket for the harmful range
-    bx = 236
+    bx = 236 + dx
     f.path(f"M{bx + 10},{n(Y(85))} H{bx} V{n(Y(130))} H{bx + 10}", stroke=HOT, w=2.5)
     f.tex(bx - 8, Y(112), r"\text{kuulovaurion}", "end", HOT)
     f.tex(bx - 8, Y(101), r"\text{vaara}", "end", HOT)
