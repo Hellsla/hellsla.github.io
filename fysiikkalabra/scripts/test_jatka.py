@@ -178,7 +178,7 @@ with sync_playwright() as pw:
         expect("an old record with the formula three times is shown with it once", bool(row) and row.count("cm") == 1 and "\\" not in row and "Aineen lämpeneminen ja jäähtyminen: Q = cmΔT" in row, row)
         expect("the old record is not rewritten", pg.evaluate("JSON.parse(localStorage.getItem('ruukkilabra:viimeisin')).title") == old["title"])
         pg.goto((SITE / "FY3.html").as_uri()); pg.wait_for_timeout(500)
-        row = pg.evaluate("(() => { const s = document.querySelector('#jatka strong'); return s ? [s.textContent, s.querySelectorAll('.katex').length] : null; })()")
+        row = pg.evaluate("(() => { const s = document.querySelector('#jatka strong'); if (!s) return null; const c = s.cloneNode(true); c.querySelectorAll('.katex-mathml').forEach((m) => m.remove()); return [c.textContent, s.querySelectorAll('.katex').length]; })()")
         expect("the module page row sets the formula once in KaTeX", bool(row) and row[1] == 1 and "$" not in row[0] and "\\" not in row[0], row)
     b.close()
 print("\n" + ("all passed" if not fails else f"{fails} failed")); sys.exit(1 if fails else 0)
