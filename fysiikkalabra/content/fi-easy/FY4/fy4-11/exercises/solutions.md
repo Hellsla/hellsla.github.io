@@ -272,11 +272,11 @@ d) Liikemäärän muutos on $m\,\Delta v = 80{,}0\,\text{kg} \cdot 15{,}0\,\text
 ## fy4-11-L1-09
 **Annettu:** $v_0 = 80\,\text{km/h}$, lopussa $v = 0$. Liukukitkakerroin kumin ja asfaltin välillä on MAFY-taulukosta (taulukko *Kitkakertoimia*, kumi–asfaltti, liukukitka). Taulukossa on väli $0{,}5$–$0{,}8$. Käytetään suurinta arvoa $\mu = 0{,}8$. Lisäksi $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** jarrutusmatka $s$ yksikössä $\text{m}$
-**Periaate:** Tie on vaakasuora, joten tukivoima on yhtä suuri kuin paino, $N = mg$. Liukuvaan renkaaseen vaikuttava kitka $F_\mu = \mu N$ on ainoa vaakasuora voima. Newtonin toisen lain mukaan $\mu mg = ma$. Siksi hidastuvuus on $a = \mu g$, ja massa supistuu pois. Hidastuvuus on vakio, joten pysähtymismatka saadaan kaavasta $v_0^2 = 2as$.
+**Periaate:** Tie on vaakasuora, joten tukivoima on yhtä suuri kuin paino, $N = mg$. Liukuvaan renkaaseen vaikuttava kitka $F_\mu = \mu N$ on ainoa vaakasuora voima. Newtonin toisen lain mukaan $\mu mg = ma$. Siksi hidastuvuus on $a = \mu g$, ja massa supistuu pois. Hidastuvuus on vakio, joten jarrutusmatka saadaan kaavasta $v_0^2 = 2as$.
 **Kaava:** $a = \mu g$ ja $s = \dfrac{v_0^2}{2a} = \dfrac{v_0^2}{2\mu g}$
 **Muunnokset:** $v_0 = 80\,\text{km/h} = \dfrac{80}{3{,}6}\,\text{m/s} = 22{,}22\,\text{m/s}$
 **Sijoitus:** $a = 0{,}8 \cdot 9{,}81\,\text{m/s}^2 = 7{,}85\,\text{m/s}^2$ ja $s = \dfrac{(22{,}22\,\text{m/s})^2}{2 \cdot 7{,}85\,\text{m/s}^2} = 31{,}5\,\text{m}$
-**Vastaus:** $31\,\text{m}$. Vastauksessa on kaksi merkitsevää numeroa, kuten nopeudessa $80\,\text{km/h}$ ja kitkakertoimessa $0{,}8$. MAFY-taulukossa kitkakerroin on väli $0{,}5$–$0{,}8$ (taulukko *Kitkakertoimia*). Välin toisessa päässä $\mu = 0{,}5$ jarrutusmatka olisi $50\,\text{m}$. Tämä tulos on siis välin lyhyempi ääripää.
+**Vastaus:** $31\,\text{m}$. Vastauksessa on kitkakerroin $0{,}8$ on taulukon välin yläpää ja vain yhden numeron tarkkuudella, joten tulos on noin $30\,	ext{m}$, ilmoitettuna $31\,	ext{m}$. MAFY-taulukossa kitkakerroin on väli $0{,}5$–$0{,}8$ (taulukko *Kitkakertoimia*). Välin toisessa päässä $\mu = 0{,}5$ jarrutusmatka olisi $50\,\text{m}$. Tämä tulos on siis välin lyhyempi ääripää.
 **Järkevyys:** Jarrutusmatka $31\,\text{m}$ on samaa suuruusluokkaa kuin kuivan tien tyypillinen jarrutusmatka nopeudesta $80\,\text{km/h}$. Hidastuvuus $7{,}85\,\text{m/s}^2$ on pienempi kuin ABS-jarrutuksessa kuivalla asfaltilla ($\mu \approx 0{,}9$). Näin pitää olla, kun pyörät ovat lukossa ja liukuvat.
 
 ## fy4-11-L2-09
@@ -298,5 +298,5 @@ d) Liikemäärän muutos on $m\,\Delta v = 80{,}0\,\text{kg} \cdot 15{,}0\,\text
 **Kaava:** $F_\text{ka} = \dfrac{m\,\Delta v}{\Delta t}$, joten $F_\text{A} - F_\text{B} = m\,\Delta v \left(\dfrac{1}{\Delta t_\text{A}} - \dfrac{1}{\Delta t_\text{B}}\right)$
 **Muunnokset:** Muunnoksia ei tarvita, koska suureet ovat SI-yksiköissä. Lopuksi muunnetaan $1\,\text{kN} = 1000\,\text{N}$.
 **Sijoitus:** $F_\text{A} = \dfrac{70\,\text{kg} \cdot 15\,\text{m/s}}{0{,}060\,\text{s}} = 17\,500\,\text{N}$ ja $F_\text{B} = \dfrac{70\,\text{kg} \cdot 15\,\text{m/s}}{0{,}150\,\text{s}} = 7000\,\text{N}$, joten $F_\text{A} - F_\text{B} = 10\,500\,\text{N} = 10{,}5\,\text{kN}$
-**Vastaus:** $10{,}5\,\text{kN}$. Vastauksessa on kolme merkitsevää numeroa, koska kuvaajasta luetut ajat $0{,}060\,\text{s}$ ja $0{,}150\,\text{s}$ on annettu kolmella numerolla.
+**Vastaus:** $10{,}5\,\text{kN}$. Massa $70\,	ext{kg}$ ja nopeus $15\,	ext{m/s}$ ovat kahden merkitsevän numeron arvoja, joten myös $11\,	ext{kN}$ hyväksytään; kolmas numero säilytetään, ettei välitulosten pyöristys vääristä tulosta.
 **Järkevyys:** Kokeessa A voima $17{,}5\,\text{kN}$ on noin $25$-kertainen nuken painoon $70\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 690\,\text{N}$ verrattuna. Kokeessa B voima $7{,}0\,\text{kN}$ on noin $10$-kertainen. Voimien suhde $17{,}5/7{,}0 = 2{,}5$ on sama kuin aikojen käänteinen suhde $0{,}150/0{,}060 = 2{,}5$. Näin pitää olla: liikemäärän muutos on sama, aika on pidempi ja voima on pienempi.
