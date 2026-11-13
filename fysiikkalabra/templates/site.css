@@ -484,8 +484,8 @@ details.solution .steps p{margin:0 0 .5rem}details.solution .steps p:last-child{
 .sol-step>:last-child{margin-bottom:0}
 p.sol-label{margin:0 0 .25rem;font:700 var(--fs-small)/1.3 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--accent-deep)}
 /* a chain split by hand in the source (&a \\ &\quad = b): one row on a wide screen, the two rows as written on a phone (scripts/mathlayout.py join_wide) */
-.mj-wide{display:none}.mj-narrow{display:block}
-@media (min-width:700px){.mj-wide{display:block}.mj-narrow{display:none}}
+.mj-wide{display:none}.mj-narrow{display:block}.eq-chain.mj-narrow{display:grid}   /* a calculation chain (chain_html) keeps its grid in both forms */
+@media (min-width:700px){.mj-wide{display:block}.mj-narrow,.eq-chain.mj-narrow{display:none}.eq-chain.mj-wide{display:grid}}
 .sol-step .katex-display,.hints .katex-display,details.answer .katex-display{margin:.5rem 0;background:var(--surface)}
 @media (max-width:600px){.eq-chain{padding:.5rem .6rem}.eq-chain .katex,.steps .katex-display>.katex{font-size:1em}.hints details>div,details.answer .answer-body{margin-left:0}}
 @media (max-width:389px){:root{--card-pad:1rem .85rem}.steps .katex-display>.katex,.hints .katex-display>.katex{font-size:.95em}.steps .katex-display,.hints .katex-display{padding:.5rem .4rem}}   /* a narrow phone: a display calculation 16 px, the text around it stays 17 */   /* maths as large as the text around it (17 px), never smaller */
