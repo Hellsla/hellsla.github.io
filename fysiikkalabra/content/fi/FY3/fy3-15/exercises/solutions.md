@@ -234,7 +234,7 @@ $P_\text{L} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 38\,000\,\tfr
 **Annettu:** kuvan pylväistä luettuna höyrykierrolle sisään tuleva teho $P_1 = 350\,\text{MW}$ ja ulos tuleva teho $P_2 = 150\,\text{MW}$
 **Kysytty:** höyrykierron hyötysuhde $\eta_2$ prosentteina
 **Periaate:** Vaiheet ovat peräkkäin, ja kunkin vaiheen ulostuloteho on sen hyötysuhteen ja sisään tulevan tehon tulo. Höyrykierron sisäänmenoteho on kattilan jälkeinen teho $P_1$ ja ulostuloteho on $P_2$.
-**Kuvaajan lukeminen:** Pylväiden $P_1$ ja $P_2$ päät ovat ruudukon viivoilla: $P_1$ kohdassa $350\,\text{MW}$ ja $P_2$ kohdassa $150\,\text{MW}$. Ruudukon väli on $50\,\text{MW}$. Polttoaineteho $P_0$ ja sähköteho $P_3$ eivät kuulu höyrykierron hyötysuhteeseen.
+**Kuvaajan lukeminen:** Pylväiden $P_1$ ja $P_2$ päät ovat ruudukon viivoilla: $P_1$ kohdassa $350\,\text{MW}$ ja $P_2$ kohdassa $150\,\text{MW}$. Ruudukon väli on $50\,\text{MW}$. Polttoaineteho $P_\text{o}$ ja sähköteho $P_3$ eivät kuulu höyrykierron hyötysuhteeseen.
 **Kaava:** $P_2 = \eta_2 P_1$, joten $\eta_2 = \dfrac{P_2}{P_1}$
 **Muunnokset:** Molemmat tehot ovat samassa yksikössä $\text{MW}$, joten yksikkö supistuu pois; hyötysuhde prosentteina saadaan kertomalla sadalla.
 **Sijoitus:** $\eta_2 = \dfrac{150\,\text{MW}}{350\,\text{MW}} = 0{,}4286 = 42{,}86\,\%$

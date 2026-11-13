@@ -234,7 +234,7 @@ $P_\text{L} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 38\,000\,\tfr
 **Given:** reading from the bars of the figure, the power into the steam cycle $P_1 = 350\,\text{MW}$ and the power out of it $P_2 = 150\,\text{MW}$
 **Find:** the efficiency $\eta_2$ of the steam cycle as a percentage
 **Principle:** The stages are in series, and the output power of each stage is the product of its efficiency and the power coming in. The input power of the steam cycle is the power after the boiler, $P_1$, and its output power is $P_2$.
-**Reading the graph:** The tops of the bars $P_1$ and $P_2$ are on grid lines: $P_1$ at $350\,\text{MW}$ and $P_2$ at $150\,\text{MW}$. The grid spacing is $50\,\text{MW}$. The fuel power $P_0$ and the electric power $P_3$ do not belong to the efficiency of the steam cycle.
+**Reading the graph:** The tops of the bars $P_1$ and $P_2$ are on grid lines: $P_1$ at $350\,\text{MW}$ and $P_2$ at $150\,\text{MW}$. The grid spacing is $50\,\text{MW}$. The fuel power $P_\text{o}$ and the electric power $P_3$ do not belong to the efficiency of the steam cycle.
 **Formula:** $P_2 = \eta_2 P_1$, so $\eta_2 = \dfrac{P_2}{P_1}$
 **Conversions:** Both powers are in $\text{MW}$, so the unit cancels; the efficiency as a percentage is obtained by multiplying by one hundred.
 **Substitution:** $\eta_2 = \dfrac{150\,\text{MW}}{350\,\text{MW}} = 0.4286 = 42.86\,\%$

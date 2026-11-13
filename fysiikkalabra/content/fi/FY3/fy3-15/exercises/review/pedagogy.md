@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 7308462ffdb06e37
+CONTENT-HASH: 94e2c61db60be1bb
 
 ## Blocking
 None.
 
 ## Polish
-- L1-09/L2-09 fit their levels. Optional: L1-09 states c is taken at 20 C although the water is hot; the 4 % tolerance covers it, one clause in the hint would help.
+- None new. L2-09 now writes fuel power P_o, matching the figure and L1-04.
 
 ## Checked
-Changed symbols (P_a/P_o, Q1) and the added exercises read in full: solutions follow the staged format, symbols are defined where used, added L1-09 (lookup) and L2-09 (figure) match their levels and chapter.
+Delta: only P_0 to P_o in L2-09 (exercises.json, solutions.md); consistent, nothing else touched.
