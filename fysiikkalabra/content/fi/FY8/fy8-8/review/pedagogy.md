@@ -1,16 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: e3a9ded2e50a2046
+CONTENT-HASH: 5b120f8cff7105c8
 
 ## Blocking
 
 ## Polish
-- lesson.md "Ytimen energiatasot ja gammaspektri" — "jää tasosta alle 0,1 keV" but 2505,8 - (1173,2 + 1332,5) = 0,1 keV exactly, not less. Fix: "noin 0,1 keV".
-- lesson.md same paragraph — the recoil of about 0,03 keV checks out (E^2/(2Mc^2) per photon, about 0,013 and 0,017 keV), but the student cannot see where it comes from; "pyöristystä" for the remainder is fine. Optional: say "pyöristyksen ja rekyylin yhteisvaikutus on noin 0,1 keV" to keep the paragraph short.
-- Earlier polish items not addressed in this diff (electron-capture scope, prediction prompts, "Mallin tiedot", sim chart height) remain optional and non-blocking.
+- lesson.md "Ytimen energiatasot ja gammaspektri" — "Suurin osa tästä erosta on pyöristystä" with a recoil of 0,03 keV out of 0,1 keV: the remainder (about 0,07 keV) is rounding of three one-decimal values, which a student may not see; optional: "pyöristystä (kolme arvoa, jokainen yhden desimaalin tarkkuudella)". Not blocking.
 
 ## Checked
-- Scale sentence now reads "kymmeniätuhansia tai satojatuhansia kertoja enemmän": consistent with tens of keV to hundreds of keV versus a few eV; fixes my earlier polish item.
-- Recoil figure (0,03 keV) is physically correct for Co-60 and the explanation of the sum gap is a sound, short correction.
-- Misconception paragraph now says the element changes when the proton number changes (alpha, beta, electron capture): consistent with the text, gamma claim unchanged.
-- inquiry.json feedback for the caesium option: shorter, still names the actual error (photon carries no proton), Z stays 56.
-- Nothing in the diff discloses an answer early or alters figures, task order or workload.
+- Both polish items from round 2 are fixed: "alle 0,1 keV" is now "noin 0,1 keV" in lesson.md and in the inquiry.json solution; 2505,8 - 2505,7 = 0,1 keV is consistent.
+- Recoil of about 0,03 keV is physically right for Co-60 and is stated as small beside the gap; the claim "suurin osa on pyöristystä" matches the numbers (0,03 of 0,1 is not the main part).
+- Lesson text and the Järkevyys step of the solution say the same thing; no contradiction between the two.
+- The change discloses nothing early and does not touch figures, task order, hints or workload.
