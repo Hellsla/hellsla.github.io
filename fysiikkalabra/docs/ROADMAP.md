@@ -26,7 +26,8 @@ work is in `CLAUDE.md` at the repository root. Update it when the teacher change
 2. Exercise reviews, in course order: FY1, fy4-8, FY5, FY6, FY7. The course's MAFY formulas (queue) go in the same
    session or right after, never in parallel on the same course.
 3. MAFY formulas for the courses step 2 does not cover: FY8, FY10, FY14.
-4. First visual review of the FY10 investigations and TVT guides (`/quality-audit … --audit-only`, then `--fix`).
+4. Fixes to the FY10 investigations and TVT guides after the audit (#536): the eight Major findings first, fy10-liukukitka
+   with a science review; Minor findings in a later batch.
 5. CI tooling: a way to run the browser checks in CI's container image locally, and failure messages that name the
    overflowing element. Shared files: alone, merged first.
 6. Picture and MAFY-table tasks for FY8, FY9, FY10 and FY14 (queue). They add review work, so they start when step 2
