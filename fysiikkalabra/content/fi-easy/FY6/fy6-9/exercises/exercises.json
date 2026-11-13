@@ -274,6 +274,15 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy6-9-L2-08",
+      "level": 2,
+      "text": "Kannettavan tietokoneen akun nimellisjännite on $11{,}1\\,\\text{V}$. Kuvaajassa on akun latausvirta ajan funktiona. Lue arvot kuvaajasta. Laske ensin, kuinka suuri varaus akun läpi kulki latauksen aikana. Laske sitten varaus-tiedon avulla akkuun varastoitunut energia. Oleta, että energia on nimellisjännite kertaa varaus. Vastaa wattitunteina.",
+      "figure": "fy6-9/ex-current2",
+      "answer": 61.05,
+      "unit": "Wh",
+      "tolerance": 0.02
     }
   ],
   "level3": [
