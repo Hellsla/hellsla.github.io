@@ -381,10 +381,10 @@ Yläraja on $\mu_0 m_\text{D} g \cos\alpha \approx 149\,\text{N}$. Laatikko siis
 Kitkavoiman mukaan pienimmästä suurimpaan järjestys on B ($30\,\text{N}$), C ($44\,\text{N}$), A ($59\,\text{N}$), D ($1{,}2 \cdot 10^2\,\text{N}$). Jos laatikon B kitkaksi laskettaisiin virheellisesti $\mu_0 N$, se olisi suurin. Järjestys olisi eri myös massan tai kitkakertoimen mukaan, koska kitka riippuu sekä tukivoimasta että siitä, liukuuko laatikko.
 
 ## fy4-6-L1-09
-**Annettu:** $m = 45\,\text{kg}$, kelkka liikkuu tasaisella nopeudella vaakasuoralla jäällä; taulukosta (MAFY-taulukko, *Kitkakertoimia*, teräs–jää) liikekitkakerroin $\mu = 0{,}014$; $g = 9{,}81\,\text{m/s}^2$
+**Annettu:** $m = 45\,\text{kg}$, kelkka liikkuu tasaisella nopeudella vaakasuoralla jäällä; taulukosta (MAFY-taulukko, *Kitkakertoimia*, teräs–jää) liukukitkakerroin $\mu = 0{,}014$; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** vetovoima $F$ yksikössä $\text{N}$
-**Periaate:** Tasaisessa liikkeessä voimien summa on nolla. Siksi vetovoima on yhtä suuri kuin liikekitka. Tukivoima on yhtä suuri kuin paino. Liikekitka on $F_\mu = \mu N$.
-**Voimakuvio:** Kelkka on suorakulmio. Akseli $x$ on liikkeen suuntaan ja akseli $y$ ylös. Vetovoima $\overline{F}$ osoittaa eteenpäin. Liikekitka $\overline{F}_\mu$ osoittaa taaksepäin ja on yhtä pitkä. Paino $\overline{G}$ osoittaa alas. Tukivoima $\overline{N}$ osoittaa ylös ja on yhtä pitkä kuin paino. Vetovoima ja kitka on piirretty suurennettuina, koska ne ovat paljon painoa pienempiä.
+**Periaate:** Tasaisessa liikkeessä voimien summa on nolla. Siksi vetovoima on yhtä suuri kuin liukukitka. Tukivoima on yhtä suuri kuin paino. Liukukitka on $F_\mu = \mu N$.
+**Voimakuvio:** Kelkka on suorakulmio. Akseli $x$ on liikkeen suuntaan ja akseli $y$ ylös. Vetovoima $\overline{F}$ osoittaa eteenpäin. Liukukitka $\overline{F}_\mu$ osoittaa taaksepäin ja on yhtä pitkä. Paino $\overline{G}$ osoittaa alas. Tukivoima $\overline{N}$ osoittaa ylös ja on yhtä pitkä kuin paino. Vetovoima ja kitka on piirretty suurennettuina, koska ne ovat paljon painoa pienempiä.
 ```voimakuvio
 pinta 0
 G 441,5
@@ -398,7 +398,7 @@ akselit 0
 **Kaava:** $x$: $F - \mu N = 0$ ja $y$: $N - mg = 0$, joten $F = \mu m g$
 **Muunnokset:** Massa on kilogrammoina ja kitkakerroin on yksikötön. Muunnoksia ei tarvita.
 **Sijoitus:** $F = 0{,}014 \cdot 45\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 0{,}014 \cdot 441{,}5\,\text{N} = 6{,}18\,\text{N}$
-**Vastaus:** $6{,}2\,\text{N}$. Vastauksessa on kaksi merkitsevää numeroa, koska kitkakertoimessa $0{,}014$ on kaksi. Kerroin $0{,}014$ on MAFY-taulukosta (*Kitkakertoimia*, teräs–jää, liikekitkakerroin). Eri taulukoiden arvot poikkeavat hieman. Siksi vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Vastaus:** $6{,}2\,\text{N}$. Vastauksessa on kaksi merkitsevää numeroa, koska kitkakertoimessa $0{,}014$ on kaksi. Kerroin $0{,}014$ on MAFY-taulukosta (*Kitkakertoimia*, teräs–jää, liukukitkakerroin). Eri taulukoiden arvot poikkeavat hieman. Siksi vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
 **Järkevyys:** Kelkan paino on noin $441\,\text{N}$. Vetovoima on siitä vain noin $1{,}4\,\%$. Se sopii hyvin liukkaaseen teräs–jää-pariin. Jos kitkakerroin olisi noin $0{,}3$ kuten puulla lattiaa vasten, vetovoima olisi noin $130\,\text{N}$.
 
 ## fy4-6-L2-09
