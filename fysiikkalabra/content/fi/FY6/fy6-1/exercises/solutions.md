@@ -192,3 +192,14 @@ $E = UQ = 3{,}0\,\text{V} \cdot 18\,\text{C} = 54\,\text{J}$
 4 epätosi: johdossa on valmiiksi vapaita elektroneja, ja ne lähtevät liikkeelle koko piirissä lähes heti, myös hehkulangassa. Lamppu syttyy lähes heti, vaikka elektronit etenevät hitaasti.
 
 5 epätosi: $3{,}0\,\text{J}$ on energia yhtä coulombia kohti. Minuutissa lamppuun siirtyy $54\,\text{J}$.
+
+## fy6-1-L2-08
+**Annettu:** kuvaaja latausvirrasta $I$ ajan $t$ funktiona, latausaika $100\,\text{s}$, jännite $U = 4{,}0\,\text{V}$
+**Kysytty:** akkuun siirtynyt energia $E$ yksikössä $\text{J}$
+**Periaate:** Jännite on siirtynyt energia varausyksikköä kohti, $U = \tfrac{E}{Q}$, joten energia on $E = UQ$. Varaus saadaan virrasta: $Q = It$, kun virta on vakio. Virta vaihtelee, joten varaus on virtakuvaajan ja aika-akselin väliin jäävän alueen pinta-ala.
+**Kuvaajan lukeminen:** Ajan $0\,\text{s}$–$40\,\text{s}$ virta on $0{,}50\,\text{A}$: suorakulmio, jonka leveys on $40\,\text{s}$. Ajan $40\,\text{s}$–$100\,\text{s}$ virta pienenee tasaisesti arvosta $0{,}50\,\text{A}$ nollaan: kolmio, jonka leveys on $60\,\text{s}$ ja korkeus $0{,}50\,\text{A}$.
+**Kaava:** $E = UQ$, missä $Q = I_0 t_1 + \tfrac{1}{2} I_0 t_2$
+**Muunnokset:** Virta on ampeereina ja ajat sekunteina, joten muunnoksia ei tarvita.
+**Sijoitus:** $Q = 0{,}50\,\text{A}\cdot 40\,\text{s} + \tfrac{1}{2}\cdot 0{,}50\,\text{A}\cdot 60\,\text{s} = 20\,\text{C} + 15\,\text{C} = 35\,\text{C}$, ja $E = 4{,}0\,\text{V}\cdot 35\,\text{C} = 140\,\text{J}$
+**Vastaus:** $140\,\text{J} \approx 1{,}4 \cdot 10^{2}\,\text{J}$, kaksi merkitsevää numeroa kuten luetuissa virroissa ja jännitteessä.
+**Järkevyys:** Jos virta olisi koko $100\,\text{s}$ suurin arvo $0{,}50\,\text{A}$, varaus olisi $50\,\text{C}$ ja energia $200\,\text{J}$. Virta on suurimmasta arvostaan vain osan aikaa, joten tulos $140\,\text{J}$ on pienempi, kuten pitääkin.

@@ -293,6 +293,15 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy6-1-L2-08",
+      "level": 2,
+      "text": "The graph shows how the charging current of a battery changes with time. The charging lasts $100\\,\\text{s}$, and the voltage between the terminals of the battery stays at $4.0\\,\\text{V}$. How much energy is transferred to the battery during the charging?",
+      "answer": 140,
+      "unit": "J",
+      "tolerance": 0.02,
+      "figure": "fy6-1/lataus-kuvaaja"
     }
   ],
   "level3": [
