@@ -1,10 +1,16 @@
-VERDICT: PASS
-CONTENT-HASH: d2b1980c7da012c4
+VERDICT: FAIL
+CONTENT-HASH: 18ea4ac4cccb0ca2
 
 ## Blocking
+- content/fi-easy/FY5/fy5-16/exercises/solutions.md:246 and :257 — B: "alueella, jossa kuulo vaurioituu" says any exposure at 90 or 105 dB damages hearing; it holds only for long enough exposure, which is what the task computes. The passed Finnish says "kuulovaurion vaara -alue", and the figure says "pitkä altistus ... vaurioittaa kuuloa" — write "alueella, jossa on kuulovaurion vaara" (or "jossa pitkä altistus vaurioittaa kuuloa") in both lines.
 
 ## Polish
-- solutions.md:103 (L3-01) — Kaava still reads "annos $= (\ldots) \cdot 100\,\%$" without the symbol, while Sijoitus now gives $D$ as a pure ratio and L3-05 (line 204) defines $D = \sum t_i/t_{\text{v},i}$; write the Kaava as "annos $D = \dfrac{t_1}{t_{\text{v},1}} + \dfrac{t_2}{t_{\text{v},2}}$ ($D = 1$ vastaa $100\,\%$)" so formula and substitution match.
+- none.
 
 ## Checked
-light delta review (teacher 2026-11-07), L3-01 chain: HEAD~1 diff of solutions.md only. Recomputed t_v,1 = 8 h/2¹ = 4,0 h, t_v,2 = 8 h/2⁻¹ = 16 h, D = 1 + 0,25 = 1,25; 1,25 = 125 % is exact (% = 1/100). D as a dimensionless ratio (h/h) agrees with L3-05's D = Σ t_i/t_v,i; answer 125 % and Järkevyys unchanged and right. Only the Kaava line keeps the old ·100 % form (Polish).
+- Delta round 1, fi-easy: added fy5-16-L1-09 and L2-09 only.
+- Compared by script with the passed Finnish set: answer, unit, tolerance, figure identical; same numbers in text and solution; only the wording above differs in meaning.
+- Recomputed: t = 8 h / 2^((L − 85 dB)/3 dB): 90 dB -> 2,52 h; 105 dB -> 480 min / 101,6 = 4,72 min. answers.py agrees; tolerance 2 % covers 2,5 h and 4,7 min.
+- Figure fy5-16/scale-tehtava: levels written at the markers (90, 105 dB) match the tasks; description matches.
+- Equal-energy 3 dB rule and rounding to two figures justified as in the Finnish; reasonableness checks (between 88 and 91 dB; 1/100 of 480 min) correct.
+- Hash same at start and end.
