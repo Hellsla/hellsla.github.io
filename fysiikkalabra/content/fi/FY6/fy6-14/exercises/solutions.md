@@ -212,4 +212,4 @@ Perustelu on siis, että diodi johtaa vain anodi plusnavan puolella ja jokainen 
 **Muunnokset:** $I = 200\,\text{mA} = 200 \cdot 10^{-3}\,\text{A} = 0{,}200\,\text{A}$
 **Sijoitus:** $P = 4{,}0\,\text{V} \cdot 0{,}200\,\text{A} = 0{,}80\,\text{W}$
 **Vastaus:** $0{,}80\,\text{W}$, kaksi merkitsevää numeroa, koska jännite on annettu kahdella numerolla ja virta luetaan $50\,\text{mA}$:n ruudukosta.
-**Järkevyys:** Teho on pienempi kuin $U I$ olisi, jos virtana olisi oikosulkuvirran ja jännitteenä tyhjäkäyntijännitteen tulo, joka on noin $6{,}0\,\text{V} \cdot 0{,}200\,\text{A} = 1{,}2\,\text{W}$, koska ne eivät esiinny yhtä aikaa. Tulos on myös kuvan paneelin suurinta tehoa ($0{,}92\,\text{W}$) pienempi, kuten pitääkin.
+**Järkevyys:** Teho on pienempi kuin oikosulkuvirran ja tyhjäkäyntijännitteen tulo, joka on noin $6{,}0\,\text{V} \cdot 0{,}200\,\text{A} = 1{,}2\,\text{W}$, koska ne eivät esiinny yhtä aikaa. Tulos on myös kuvan paneelin suurinta tehoa ($0{,}92\,\text{W}$) pienempi, kuten pitääkin.
