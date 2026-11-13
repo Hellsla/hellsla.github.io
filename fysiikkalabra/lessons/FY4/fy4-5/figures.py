@@ -373,6 +373,26 @@ def ruutu():
     return f.svg()
 
 
+def ruutu_vinot():
+    """Exercise L2-08: two oblique forces on a puck seen from above on a 2,0 N grid; the student reads the components off
+    the grid crossings and finds the net force and the acceleration. F_1 = (10, 12) N, F_2 = (-4, -4) N."""
+    f = Fig("fy45-ruutu-vinot", 400, "Jääkiekko ylhäältä katsottuna ruudukolla, yksi ruutu vastaa 2,0 newtonia. Kiekko on kahden ruudun levyinen ja korkuinen "
+            "neliö, ja siihen vaikuttaa kaksi vinoa voimaa. F1 lähtee kiekon oikeasta yläkulmasta ja päättyy ruudukon risteykseen viisi ruutua "
+            "oikealle ja kuusi ruutua ylös lähtöpisteestä. F2 lähtee kiekon vasemmasta alakulmasta ja päättyy risteykseen kaksi ruutua "
+            "vasemmalle ja kaksi ruutua alas lähtöpisteestä.")
+    sq, P = 28, (240, 250)
+    for i in range(-8, 12):
+        f.line(P[0] + i * sq, 8, P[0] + i * sq, 392, RULE_LIGHT, 1.2)
+    for j in range(-8, 6):
+        f.line(P[0] - 8 * sq, P[1] + j * sq, P[0] + 11 * sq, P[1] + j * sq, RULE_LIGHT, 1.2)
+    d = FBD(f, sq / 2.0, body=(P[0], P[1], 2 * sq, 2 * sq), a_dir=(3, 4))
+    d.force("F_1", (10, 12), (P[0] + sq, P[1] - sq), "applied", lab=(-22, -8))
+    d.force("F_2", (-4, -4), (P[0] - sq, P[1] + sq), "applied", lab=(-10, -18))
+    d.draw()
+    f.rect(P[0] + 6 * sq, 372, 2 * sq, 4, INK); f.tex(P[0] + 8 * sq + 8, 374, r"4{,}0\,\text{N}", "start")
+    return f.svg()
+
+
 # Voimakuvion valinta (task fy4-5-L1-09, docs/exercise-types.md type 3): a box pushed horizontally to the right slides at
 # constant velocity, so G = N and the push F = the friction F_mu. Four option diagrams to one scale (0,9 units per
 # newton, G = 98,1 N, F = 40 N); only "pick-tasainen" is right, each other has one error.
@@ -431,7 +451,7 @@ def pick_nopeus():
 
 FIGURES = {"hero": hero, "tilanne": tilanne, "suunnat": suunnat, "komponentit": komponentit, "esimerkki": esimerkki,
            "virhe": virhe_liukuva, "hissi-a": hissi_a, "hissi-b": hissi_b, "hissi-c": hissi_c, "hissi-d": hissi_d,
-           "malli-tyonto": malli_tyonto, "malli-pulkka": malli_pulkka, "malli-hissi": malli_hissi_jarru, "ruutu": ruutu,
+           "malli-tyonto": malli_tyonto, "malli-pulkka": malli_pulkka, "malli-hissi": malli_hissi_jarru, "ruutu": ruutu, "ruutu-vinot": ruutu_vinot,
            "pick-tasainen": pick_tasainen, "pick-pitka": pick_pitka, "pick-lisa": pick_lisa, "pick-nopeus": pick_nopeus}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
@@ -448,6 +468,7 @@ REUSE = {
     "malli-pulkka": "reveals: the model diagram of a sled pulled at 30° at constant velocity (shown in the solution)",
     "malli-hissi": "reveals: the model diagram of a person in a lift slowing down while moving up (shown in the solution)",
     "ruutu": "safe: four forces on a 10 N grid, no net force drawn",
+    "ruutu-vinot": "safe: two oblique forces on a puck seen from above on a 2,0 N grid, no net force or acceleration drawn (task fy4-5-L2-08)",
     "pick-tasainen": "reveals: the right option of task fy4-5-L1-09 (a box pushed at constant velocity: G = N, F = F_mu)",
     "pick-pitka": "safe: a wrong option of task fy4-5-L1-09 (the push drawn twice the friction)",
     "pick-lisa": "safe: a wrong option of task fy4-5-L1-09 (an extra F_k, the box's push on the pusher)",
