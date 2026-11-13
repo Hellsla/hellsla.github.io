@@ -1,5 +1,8 @@
 VERDICT: DONE
 
-exercises.json (L2-08): the no-error option is now "Päättelyssä ei ole virhettä" (matches inquiry.no_error, so choice_order keeps it last) and the task says "Jos päättelyssä ei ole virhettä, valitse viimeinen vaihtoehto". Its feedback no longer claims there is an error: "Tarkista virherajat: laske virran virheraja kummallakin virta-alueella." Wrong-row feedback reworded to "Jos pidät riviä virheellisenä, ajattelet ehkä / sekoitat ehkä ...".
-solutions.md (L2-08): the 200 mA chain is now ΔI = 0,010 · 140 mA + 0,2 mA (2 · 0,1 mA = 0,2 mA moved into the sentence before it); 0,033 A marked as välitulos (noin 0,03 A).
-answers.py unchanged (no number changed). check_lesson, check_solutions: ok.
+Round 1, two figure tasks added (fi, en, fi-easy; ids fy6-2-L2-09 and fy6-2-L2-10, numbers identical).
+- lessons/FY6/fy6-2/figures.py: new variant `multimeter-task` (copy of multimeter: reading 1,37 V, selector on 20 V, no error limit shown) with a REUSE note; existing functions unchanged.
+- lessons/FY6/fy6-2/answers.py: two lines (0,02685 V; 2,98).
+- exercises.json (fi/en/fi-easy): L2-09 error limit read from the figure; L2-10 difference to the rated value 1,45 V as a multiple of the error limit.
+- solutions.md (all three): full solutions with `**Kuvaajan lukeminen:**`.
+- figures.json (en, fi-easy): alt text of the new figure.
