@@ -1,10 +1,9 @@
-VERDICT: FAIL
-CONTENT-HASH: 847137cbd7def865
+VERDICT: PASS
+CONTENT-HASH: 2cc369b826f5268d
 ## Blocking
-1. (B, consistency) lesson.md, Tiivistelmä/Summary first bullet (line 658): still states $a = \tfrac{\Delta v}{\Delta t}$ as the acceleration, unconditionally, while the formula section now defines $a_\text{k} = \Delta v/\Delta t$ as the average acceleration and $a = a_\text{k}$ only for constant acceleration. Fix: "Keskikiihtyvyys $a_\text{k} = \tfrac{\Delta v}{\Delta t}$ … ; kun kiihtyvyys on vakio, $a = a_\text{k}$." (same in en: average acceleration $a_\text{k}$). The concept card `fy4-kiihtyvyys` (kortit/fy4.json, kortit/en/fy4.json) has the same $a = \Delta v/\Delta t$ while `fy4-keskikiihtyvyys` has no formula: move it there as $a_\text{k}$.
-## Polish
 
+## Polish
+1. kortit/fy4.json and kortit/en/fy4.json (outside the hash): card `fy4-kiihtyvyys` still has $a = \dfrac{\Delta v}{\Delta t}$ and `fy4-keskikiihtyvyys` has no formula; the card change the commit message names is not in the files. Give `fy4-keskikiihtyvyys` the formula $a_\text{k} = \dfrac{\Delta v}{\Delta t}$ and take it off `fy4-kiihtyvyys`.
 ## Checked
-- Formula section: $a_\text{k} = \Delta v/\Delta t$ (MAFY keskikiihtyvyys), $a = a_\text{k}$ for constant $a$, $v = v_0 + at$, $x = x_0 + v_0t + \tfrac12at^2$ with names and units; correct and as MAFY.
-- Worked example and inquiry (constant $a$; $-2{,}0\,\text{m/s}^2$ feedback) remain valid with $a$; numbers unchanged (lesson-answers.py).
-- fi, fi-easy, en say the same.
+- Earlier Blocking 1 fixed: the summary now says average acceleration $a_\text{k} = \Delta v/\Delta t$, and $a = a_\text{k}$ when the acceleration is constant, which matches the formula section.
+- Formula section: $a_\text{k}$, $v = v_0 + at$, $x = x_0 + v_0t + \tfrac12at^2$ with names and units are correct and as MAFY; worked example and inquiry (constant $a$) valid; numbers unchanged; fi, fi-easy, en agree.

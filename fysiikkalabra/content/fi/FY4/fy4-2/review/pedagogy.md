@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 4773c1d9057101b7
+CONTENT-HASH: b9d83d98e4369409
 
 ## Blocking
-None.
+None. Re-review: Tiivistelmä now uses a_k, a = a_k, matching the formula section.
 
 ## Polish
-1. lesson.md Tiivistelmä: 'a = Δv/Δt' is kept while the formula section writes a_k; add 'a_k' or 'constant a = a_k' there so the symbol is the same where a student meets it.
-2. exercises/solutions.md use a = Δv/Δt for constant acceleration; acceptable, since the lesson says a = a_k.
+None.
 
 ## Checked
-Whole chapter text for the new symbols, formula sections, inquiry, exit ticket, solutions; numbers unchanged; fi-easy and en match fi.
+Diff of the Tiivistelmä fix; chapter symbols consistent in fi, fi-easy, en.
