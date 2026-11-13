@@ -255,17 +255,17 @@ Ero on yli kymmenkertainen epävarmuuteen $1{,}0\,\text{kPa}$ verrattuna. Epäva
 **Muunnokset:** Muunnoksia ei tarvita. Luku $T_0$ on jo taulukossa. Lämpötilan muutos on yhtä suuri kelvineinä ja celsiusasteina.
 **Sijoitus:** $\theta_0 = -273{,}15\,{}^\circ\text{C}$
 **Vastaus:** $\theta_0 = -273{,}15\,{}^\circ\text{C} \approx -273\,{}^\circ\text{C}$. Luku $T_0 = 273{,}15\,\text{K}$ on MAFY-taulukosta (yksikkömuunnoksia). Taulukon arvo on sovittu tarkaksi. Vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
-**Järkevyys:** Tulos on samaa kokoluokkaa kuin kaasun painemittauksista ekstrapoloidut arvot, noin $-270\,{}^\circ\text{C}$. Tulos on myös selvästi alempana kuin nestetypen kiehumispiste $-195{,}8\,{}^\circ\text{C}$. Kylmempää ei voi saada.
+**Järkevyys:** Tulos on samaa kokoluokkaa kuin kaasun painemittauksista ekstrapoloidut arvot, noin $-270\,{}^\circ\text{C}$. Tulos on myös selvästi alempana kuin nestetypen kiehumispiste $-195{,}8\,{}^\circ\text{C}$. Se sopii, koska nestetyppeä voi jäähdyttää pidemmälle. Kelvinasteikko alkaa absoluuttisesta nollapisteestä. Siksi negatiivista kelvinlämpötilaa ja tätä kylmempää lämpötilaa ei ole.
 
 ## fy3-13-L2-09
-**Annettu:** kuvaajasta luettuna pisteet $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$ ja $(100\,{}^\circ\text{C};\ 102{,}5\,\text{kPa})$. Pisteet ovat suoralla.
+**Annettu:** kuvaajasta luettuna pisteet $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$ ja $(100\,{}^\circ\text{C};\ 102{,}5\,\text{kPa})$. Pisteet ovat lähes suoralla.
 **Kysytty:** lämpötila $\theta_0$, jossa suoran paine on nolla, celsiusasteina
 **Periaate:** Jäykässä suljetussa astiassa kaasun määrä ja tilavuus pysyvät samoina. Siksi paine riippuu vain lämpötilasta. Pisteet ovat suoralla. Suoraa voi jatkaa mittausalueen ulkopuolelle, kunnes paine on nolla. Tätä sanotaan ekstrapoloinniksi.
-**Kuvaajan lukeminen:** Ensimmäinen piste on ruudukon risteyksessä $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$. Viimeinen piste on lämpötilassa $100\,{}^\circ\text{C}$. Se on hieman $100\,\text{kPa}$:n viivan yläpuolella, $102{,}5\,\text{kPa}$. Näistä pisteistä lasketaan suoran kulmakerroin. Jos piirrät suoran silmämääräisesti, saat vaaka-akselilta arvon väliltä $-260\,\ldots -285\,{}^\circ\text{C}$. Se hyväksytään.
+**Kuvaajan lukeminen:** Ensimmäinen piste on ruudukon risteyksessä $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$. Viimeinen piste on lämpötilassa $100\,{}^\circ\text{C}$. Se on hieman $100\,\text{kPa}$:n viivan yläpuolella, $102{,}5\,\text{kPa}$. Näistä pisteistä lasketaan suoran kulmakerroin. Jos piirrät suoran silmämääräisesti, saat vaaka-akselilta arvon väliltä $-259\,\ldots -286\,{}^\circ\text{C}$. Se hyväksytään.
 **Kaava:** $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$ ja $p = p_1 + k(\theta - \theta_1) = 0$. Siis $\theta_0 = \theta_1 - \dfrac{p_1}{k}$.
 **Muunnokset:** Muunnoksia ei tarvita. Paineet ovat kilopascaleina ja lämpötilat celsiusasteina.
 **Sijoitus:** $k = \dfrac{(102{,}5 - 75)\,\text{kPa}}{(100 - 0)\,{}^\circ\text{C}} = 0{,}275\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$. Sitten $\theta_0 = 0\,{}^\circ\text{C} - \dfrac{75\,\text{kPa}}{0{,}275\,\tfrac{\text{kPa}}{{}^\circ\text{C}}} = -272{,}7\,{}^\circ\text{C}$.
-**Vastaus:** $\theta_0 \approx -273\,{}^\circ\text{C}$. Kuvaajasta luetun paineen tarkkuus on noin $1\,\text{kPa}$. Siksi tuloksen epävarmuus on useita celsiusasteita. Kolmas numero ei ole luotettava.
+**Vastaus:** $\theta_0 \approx -273\,{}^\circ\text{C}$. Kuvaajasta luetun paineen tarkkuus on noin $1\,\text{kPa}$. Siksi tuloksen epävarmuus on noin kymmenen celsiusastetta tai enemmän. Kolmas numero ei ole luotettava.
 **Järkevyys:** Tulos on lähellä hyväksyttyä arvoa $-273{,}15\,{}^\circ\text{C}$. Tehdään vielä riippumaton tarkistus. Jos paine on verrannollinen kelvinlämpötilaan, kulmakerroin on $75\,\text{kPa} / 273{,}15\,\text{K} = 0{,}275\,\text{kPa/K}$. Se on sama kuin luettu kulmakerroin.
 
 ## fy3-13-L2-10

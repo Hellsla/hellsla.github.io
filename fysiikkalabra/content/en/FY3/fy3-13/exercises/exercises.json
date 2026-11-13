@@ -344,11 +344,11 @@
     {
       "id": "fy3-13-L2-09",
       "level": 2,
-      "text": "The graph shows the pressure of a gas in a closed rigid container measured at five temperatures. The data points are on a straight line. Read two points from the graph and work out at which Celsius temperature the line would give a pressure of zero. Give the answer in degrees Celsius.",
+      "text": "The graph shows the pressure of a gas in a closed rigid container measured at five temperatures. The data points are almost on a straight line. Read two points from the graph and work out at which Celsius temperature the line would give a pressure of zero. Give the answer in degrees Celsius.",
       "figure": "fy3-3/extrapolation-points",
       "answer": -272.727,
       "unit": "°C",
-      "tolerance": 0.02
+      "tolerance": 0.05
     },
     {
       "id": "fy3-13-L2-10",

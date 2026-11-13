@@ -255,17 +255,17 @@ which is more than ten times the uncertainty $1.0\,\text{kPa}$. The uncertainty 
 **Conversions:** No conversions are needed: $T_0$ is already in the table, and a temperature change is equal in kelvins and in degrees Celsius.
 **Substitution:** $\theta_0 = -273.15\,{}^\circ\text{C}$
 **Answer:** $\theta_0 = -273.15\,{}^\circ\text{C} \approx -273\,{}^\circ\text{C}$. The value $T_0 = 273.15\,\text{K}$ is from the MAFY table (unit conversions); the table value is defined to be exact, and an answer within about $\pm 4\,\%$ is accepted.
-**Reasonableness:** The result is of the same order as the values extrapolated from gas pressure measurements, about $-270\,{}^\circ\text{C}$. It is also far below the boiling point of liquid nitrogen, $-195.8\,{}^\circ\text{C}$: nothing can be colder.
+**Reasonableness:** The result is of the same order as the values extrapolated from gas pressure measurements, about $-270\,{}^\circ\text{C}$. It is also far below the boiling point of liquid nitrogen, $-195.8\,{}^\circ\text{C}$: which fits, since liquid nitrogen can be cooled further. The kelvin scale starts at absolute zero, so there is no negative kelvin temperature and no temperature colder than this.
 
 ## fy3-13-L2-09
-**Given:** reading from the graph, the points $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$ and $(100\,{}^\circ\text{C};\ 102.5\,\text{kPa})$; the points are on a straight line
+**Given:** reading from the graph, the points $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$ and $(100\,{}^\circ\text{C};\ 102.5\,\text{kPa})$; the points are almost on a straight line
 **Find:** the temperature $\theta_0$ at which the pressure of the line is zero, in degrees Celsius
 **Principle:** In a rigid closed container the amount of gas and the volume stay the same, so the pressure depends only on the temperature. The points are on a straight line, so the line can be continued outside the measured range, that is, extrapolated, until the pressure is zero.
-**Reading the graph:** The first point is at a crossing of the grid, $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$. The last point is slightly above the $100\,\text{kPa}$ line, at $102.5\,\text{kPa}$, at the temperature $100\,{}^\circ\text{C}$. From these two points the slope of the line is calculated. If you draw the line by eye, you get a value on the horizontal axis between $-260\,\ldots -285\,{}^\circ\text{C}$, which is accepted.
+**Reading the graph:** The first point is at a crossing of the grid, $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$. The last point is slightly above the $100\,\text{kPa}$ line, at $102.5\,\text{kPa}$, at the temperature $100\,{}^\circ\text{C}$. From these two points the slope of the line is calculated. If you draw the line by eye, you get a value on the horizontal axis between $-259\,\ldots -286\,{}^\circ\text{C}$, which is accepted.
 **Formula:** $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$ and $p = p_1 + k(\theta - \theta_1) = 0$, so $\theta_0 = \theta_1 - \dfrac{p_1}{k}$
 **Conversions:** No conversions are needed: the pressures are in kilopascals and the temperatures in degrees Celsius.
 **Substitution:** $k = \dfrac{(102.5 - 75)\,\text{kPa}}{(100 - 0)\,{}^\circ\text{C}} = 0.275\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$, and $\theta_0 = 0\,{}^\circ\text{C} - \dfrac{75\,\text{kPa}}{0.275\,\tfrac{\text{kPa}}{{}^\circ\text{C}}} = -272.7\,{}^\circ\text{C}$
-**Answer:** $\theta_0 \approx -273\,{}^\circ\text{C}$. The pressure read from the graph is accurate to about $1\,\text{kPa}$, so the uncertainty of the result is several degrees Celsius and the third digit is not reliable.
+**Answer:** $\theta_0 \approx -273\,{}^\circ\text{C}$. The pressure read from the graph is accurate to about $1\,\text{kPa}$, so the uncertainty of the result is about ten degrees Celsius or more, and the third digit is not reliable.
 **Reasonableness:** The result is close to the accepted value $-273.15\,{}^\circ\text{C}$. An independent check: if the pressure is proportional to the kelvin temperature, the slope is $75\,\text{kPa} / 273.15\,\text{K} = 0.275\,\text{kPa/K}$, which equals the slope read from the graph.
 
 ## fy3-13-L2-10
