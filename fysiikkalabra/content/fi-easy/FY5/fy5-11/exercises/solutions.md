@@ -260,7 +260,7 @@ Pelkkä raon leveys ei ratkaise järjestystä. Kapein rako on C:ssä, mutta B:n 
 **Muunnokset:** Ruudut senttimetreiksi: $4\ \text{ruutua} = 4 \cdot 2{,}0\,\text{cm} = 8{,}0\,\text{cm}$. Muuta ei tarvita, koska vastaus pyydetään yksikössä $\text{cm/s}$.
 **Sijoitus:** $v = 4{,}0\,\text{Hz} \cdot 8{,}0\,\text{cm} = 4{,}0\,\text{s}^{-1} \cdot 8{,}0\,\text{cm} = 32\,\text{cm/s}$
 **Vastaus:** $32\,\text{cm/s}$. Vastauksessa on kaksi merkitsevää numeroa, koska taajuudessa $4{,}0\,\text{Hz}$ ja aallonpituudessa $8{,}0\,\text{cm}$ on kaksi.
-**Järkevyys:** Jaksonaika on $T = \tfrac{1}{4{,}0\,\text{Hz}} = 0{,}25\,\text{s}$. Siinä ajassa aalto etenee $32\,\text{cm/s} \cdot 0{,}25\,\text{s} = 8{,}0\,\text{cm}$. Se on yksi aallonpituus. Nopeus $0{,}32\,\text{m/s}$ on matalan aaltoaltaan pienille aalloille tyypillinen (muutama desimetri sekunnissa). Vesiaallolla, jonka aallonpituus on $8{,}0\,\text{cm}$, taajuus ei voi ylittää noin $4{,}5\,\text{Hz}$.
+**Järkevyys:** Jaksonaika on $T = \tfrac{1}{4{,}0\,\text{Hz}} = 0{,}25\,\text{s}$. Siinä ajassa aalto etenee $32\,\text{cm/s} \cdot 0{,}25\,\text{s} = 8{,}0\,\text{cm}$. Se on yksi aallonpituus. Nopeus $0{,}32\,\text{m/s}$ on matalan aaltoaltaan pienille aalloille tyypillinen (muutama desimetri sekunnissa). Vesiaallolla, jonka aallonpituus on $8{,}0\,\text{cm}$, taajuus ei voi ylittää noin $4{,}5\,\text{Hz}$. Taajuus $4{,}0\,\text{Hz}$ on siis mahdollinen.
 
 ## fy5-11-L2-10
 **Annettu:** aaltoaltaan pohjan ruudukko (kuva). Yksi ruutu on $2{,}0\,\text{cm}$. Taajuus kaksinkertaistuu, $f' = 2f$. Oletetaan, että nopeus $v$ pysyy samana.
