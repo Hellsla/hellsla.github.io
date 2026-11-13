@@ -21,7 +21,7 @@ module only decides how it shows:
 import re
 
 RELS = ("\\approx", "\\neq", "=", "<", ">", "\\le", "\\ge")
-ALIGN_LEFT_MAX = 24  # visible characters: a left side longer than this keeps the rows as written (equals signs are always aligned otherwise, teacher 2026-11-13)
+ALIGN_FIT = 28       # visible characters an aligned block may have, even when aligning makes it wider than as written (equals signs aligned, teacher 2026-11-13; fy4-2 overflowed a 360 px phone at 33)
 LONG = 38            # raw LaTeX characters: a chain at least this long is shown as rows of its own
 DISPLAY_STEPS = ("Kaava", "Muunnokset", "Sijoitus", "Järkevyys", "Kuvaajan lukeminen",   # solutions.md labels
                  "Yksikkömuunnokset", "Tulos", "Kaava ratkaistuna")                          # worked example stages
@@ -93,12 +93,12 @@ def align_equals(tex):
             r = body[:rels[0][0]].rstrip() + " &" + body[rels[0][0]:]
         else: right.append(vis_len(body))
         out.append(r)
-    if max(left) > ALIGN_LEFT_MAX: return tex          # a left side this long would push the equals signs off a phone: as written
+    if max(left) + max(right) > max(ALIGN_FIT, 1.05 * max(vis_len(c) for c in cells)): return tex   # aligned it would be wider than a phone (and than the block as written): as written
     rows[0::2] = out
     return m.group(1) + "".join(rows) + m.group(3)
 
 
-WIDE_LHS = 34        # visible characters: a left side up to this long shares the column with its relations on a wide screen
+WIDE_LHS = 20        # visible characters: a left side up to this long shares the column with its relations on a wide screen
 WIDE_MAX = 40        # visible characters (vis_len) a row joined for a wide screen may have: it must fit a 768 px task card (fy5-6 overflowed at 62, fy8-11 at 46)
 
 
