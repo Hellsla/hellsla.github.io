@@ -1,20 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 81df7a544708cbb7
-Mode: full (translation review against the reviewed Finnish set; one new task fy4-6-L2-08)
-Round 2
+CONTENT-HASH: 9058d298fc12aeb3
+SCOPE: delta added-exercise from 29233f35bff6582e base 81db4a6fd727
 
 ## Blocking
 (none)
-
-## Fixed
-(none needed)
 
 ## Polish
 (none)
 
 ## Checked
-- New task fy4-6-L2-08, the ordering task L2-08 (friction of four boxes: B 30 N, C 44 N, A 59 N, D 1.2e2 N), compared with content/fi by script and by hand: same kind, answer, unit, tolerance, correct flags and every number in text, options, feedback and solution.
-- Recomputed from the task text: the answers and every intermediate value in solutions.md equal the reviewed Finnish (English decimal point and natural English).
-- Physics, conditions (ignored friction, air resistance or weight stated in the task) and notation equal to fi; no Finnish prose left in en.
-- The other tasks are unchanged from the reviewed set.
-- check_i18n.py shows nothing for fy4-6; build.py fy4-6 succeeds.
+- fy4-6-L1-09 (MAFY steel–ice, mu = 0.014): constant velocity on level ice, F = mu m g = 0.014 · 45 kg · 9.81 m/s² = 6.18 N; 6.2 N inside the 4 % tolerance; force diagram (F and F_mu equal, G and N equal) agrees with the motion.
+- fy4-6-L2-09: line through the origin fitted to the five points of fy4-6/mittaus, slope 295/1375 = 0.2145; N = mg = 7.85 N, F_mu = 1.68 N, a = F_mu/m = 2.10 m/s² (= mu g, mass-independent); 2.1 m/s² inside the 5 % tolerance; only friction acts horizontally, acceleration drawn against the motion.
+- Figure fy4-6/mittaus gives every value both tasks need; no fitted line, answer not given away.
+- answers.py run: every numeric answer equals exercises.json.
+- Script comparison with content/fi for all 23 tasks: ids, levels, kinds, units, tolerances, figures, correct flags and every number in the texts, options and solutions.md identical; the added sections are complete translations of the Finnish ones.

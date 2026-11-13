@@ -1,18 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: d2e456cbde8ae349
-Mode: full (translation review against the reviewed Finnish set; new task fy4-2-L2-08)
-Round 1
-
+CONTENT-HASH: 1f00a74441e935df
+SCOPE: delta added-exercise from d2e456cbde8ae349 base 81db4a6fd727
 ## Blocking
-(none)
-
-## Fixed
-- exercises.json fy4-2-L2-08: feedback of three distractors reworded from the literal 'Here it has been ...' to natural English (no change of content).
 
 ## Polish
-(none)
 
 ## Checked
-- Script comparison of exercises.json with content/fi: all ids, levels, kinds, answers, units, tolerances, correct flags, choice order and every number in all strings are identical (decimal point in en); new task fy4-2-L2-08 included.
-- Correct option and distractor feedback of fy4-2-L2-08 carry the same physics and numbers as fi; solutions.md section has the same lines, formulas and results.
-- No Finnish left in en (grep); no wrong-language text. check_i18n.py: nothing for this chapter; build.py succeeds.
+- L1-09: free fall from rest, air resistance ignored as stated; h = ½gt² solved symbolically, t = √(2·20 m / 24.79 m/s²) = 1.270 s (recomputed); Jupiter surface g = 24.79 m/s² is the standard table value.
+- Tolerance 4 % covers other tables' values; Earth comparison 2.02 s and the √2.5 ratio check are correct.
+- answers.py line equals my value and exercises.json (1.2703 s).
+- en vs fi: answer, unit, tolerance, lookup, hint and every number of the text and solution identical.
