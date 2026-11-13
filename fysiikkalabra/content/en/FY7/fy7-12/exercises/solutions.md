@@ -212,3 +212,25 @@ $\alpha_\text{r} = 48.75^\circ \approx 48.8^\circ$
 The angle of incidence $50.0^\circ$ is larger than the critical angle $48.8^\circ$. The law of refraction would give $\sin\alpha_2 = 1.33 \cdot \sin 50.0^\circ$, that is $\sin\alpha_2 = 1.02 > 1$, so there is no refracted beam. The beam is totally internally reflected: all the light is reflected from the water surface back into the water at the angle of reflection $50.0^\circ$.
 
 The reason is therefore that the angle of incidence $50.0^\circ$ is larger than the critical angle $48.8^\circ$ of water and air. If you take $40.0^\circ$ as the angle of incidence, you have measured the angle from the surface, and you wrongly end up with partial refraction into the air. If the refractive indices change places, the sine of the critical angle becomes $1.33$, and it looks as if there is no critical angle. The statement about refraction away from the normal is true, but it does not tell whether the angle of incidence exceeds the critical angle. The light would travel along the water surface only if the angle of incidence were exactly the critical angle.
+
+## fy7-12-L1-09
+**Given:** refractive index of sapphire $n_1 = 1.77$, refractive index of air $n_2 = 1.00$, a graph of the critical angle as a function of the refractive index
+**Find:** the critical angle $\alpha_\text{r}$ of sapphire and air in degrees
+**Principle:** Light goes from sapphire into air, that is, from the substance with the larger refractive index to the smaller, so the critical angle exists. The curve of the graph shows exactly this dependence, so the critical angle can be read straight from the curve. The reading can be checked with the formula $\sin\alpha_\text{r} = n_2 : n_1$.
+**Reading the graph:** From $n_1 = 1.77$ on the horizontal axis a vertical line is drawn to the curve. From the point on the curve one goes horizontally to the vertical axis, and the angle is read from the grid lines: it is between the lines $30^\circ$ and $35^\circ$, very near the $35^\circ$ line. The reading is $\alpha_\text{r} \approx 34^\circ$ (reading accuracy about $\pm 1^\circ$).
+**Formula:** $n_1 \sin\alpha_\text{r} = n_2 \sin 90^\circ$, so $\sin\alpha_\text{r} = \dfrac{n_2}{n_1}$ and $\alpha_\text{r} = \sin^{-1}\dfrac{n_2}{n_1}$
+**Conversions:** Not needed: the refractive indices have no unit, and the angle is read in degrees.
+**Substitution:** Check: $\alpha_\text{r} = \sin^{-1}\dfrac{1.00}{1.77} = \sin^{-1} 0.5650 = 34.40^\circ$
+**Answer:** $34^\circ$, as far as the graph can be read; the calculated value is $34.4^\circ$. At a sapphire–air boundary light is totally reflected when the angle of incidence is larger than about $34^\circ$.
+**Reasonableness:** The refractive index of sapphire is larger than that of glass ($1.50$, critical angle $41.8^\circ$) and smaller than that of diamond ($2.42$, critical angle $24.4^\circ$), so its critical angle must lie between them. It does.
+
+## fy7-12-L2-09
+**Given:** critical angle of the plastic and air $\alpha_\text{r} = 35.0^\circ$, refractive index of air $n_2 = 1.00$, speed of light in vacuum $c = 3.00 \cdot 10^8\,\text{m/s}$
+**Find:** the refractive index $n_1$ of the plastic from the graph and the speed of light $v$ in the plastic in kilometres per second
+**Principle:** The refractive index of the plastic determines the critical angle, so it is found by reading the graph the other way: from the critical angle to the refractive index. Once the refractive index is known, the speed of light in the substance is $v = c : n_1$.
+**Reading the graph:** From $35^\circ$ on the vertical axis a horizontal line is drawn to the curve. From the point on the curve one goes vertically down to the horizontal axis: the place is between the vertical lines $1.7$ and $1.8$, about $0.4$ of a square after the line $1.7$. The reading is $n_1 \approx 1.74$ (reading accuracy about $\pm 0.02$).
+**Formula:** $n_1 \sin\alpha_\text{r} = n_2 \sin 90^\circ$ (for the check), $v = \dfrac{c}{n_1}$
+**Conversions:** $1\,\text{m/s} = 10^{-3}\,\text{km/s}$, so $v = \dfrac{3.00 \cdot 10^8\,\text{m/s}}{n_1} = \dfrac{3.00 \cdot 10^5\,\text{km/s}}{n_1}$.
+**Substitution:** $v = \dfrac{3.00 \cdot 10^5\,\text{km/s}}{1.74} = 1.724 \cdot 10^5\,\text{km/s}$. Check from the formula: $n_1 = \dfrac{1.00}{\sin 35.0^\circ} = 1.743$.
+**Answer:** $1.72 \cdot 10^5\,\text{km/s}$, three significant figures like the critical angle and the speed of light. The refractive index is about $1.74$.
+**Reasonableness:** Light travels more slowly in a substance than in vacuum ($3.00 \cdot 10^5\,\text{km/s}$), and here the speed is about $57\,\%$ of it. The refractive index $1.74$ lies between glass ($1.50$) and diamond ($2.42$), so the speed must lie between the speed in glass ($2.00 \cdot 10^5\,\text{km/s}$) and in diamond ($1.24 \cdot 10^5\,\text{km/s}$).

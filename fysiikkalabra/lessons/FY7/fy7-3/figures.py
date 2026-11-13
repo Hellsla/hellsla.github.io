@@ -171,6 +171,20 @@ def wire_graph():
     return f.svg()
 
 
+def wire_graph_task():
+    """Task variant of wire-graph: the same kind of curve for an unknown current, no values or current written."""
+    f = Fig("fy73-wgtask", 340, "Kuvaaja mittakaavassa: suoran johtimen magneettivuon tiheys B mikrotesloina etäisyyden r funktiona "
+            "senttimetreinä. Käyrä laskee etäisyyden kasvaessa. Kolme mittauspistettä on merkitty etäisyyksillä 1,0; 2,0 ja "
+            "4,0 cm, ja niistä on vedetty apuviivat akseleille. Ruudukon väli on 1 cm ja 20 µT.")
+    ax = Axes(f, (96, 290), (470, 56), x=(0, 5), y=(0, 140), xticks=[1, 2, 3, 4, 5], yticks=[20, 40, 60, 80, 100, 120, 140],
+              xlabel=r"r\ (\text{cm})", ylabel=r"B\ (\mu\text{T})")
+    ax.curve(lambda r: 120 / r, 0.9, 5, FIELD, 3)
+    for r in (1, 2, 4):
+        ax.guide(r, 120 / r)
+        ax.point(r, 120 / r, FIELD)
+    return f.svg()
+
+
 def coil_dims():
     f = Fig("fy73-dims", 330, "Kaavakuva, ei mittakaavassa: käämi sivulta. Käämissä on N kierrosta kuparijohdinta pituudella l. "
             "Johtimen päistä kulkee virta I, joka on merkitty violetilla nuolella. Käämin sisällä vihreä nuoli osoittaa "
@@ -268,13 +282,15 @@ def hero():
 
 
 FIGURES = {"hero": hero, "wire-field": wire_field, "coil-field": coil_field, "electromagnet": electromagnet,
-           "wire-graph": wire_graph, "coil-dims": coil_dims, "coil-fit": coil_fit}
+           "wire-graph": wire_graph, "coil-dims": coil_dims, "coil-fit": coil_fit,
+           "wire-graph-task": wire_graph_task}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "wire-field": "reveals: the field circles and their direction around a wire (right-hand rule)",
     "coil-field": "reveals: the coil's field inside and outside, which end is N",
     "electromagnet": "reveals: an electromagnet holds iron only while the current flows",
     "wire-graph": "reveals: B of a 10 A wire at 1, 2 and 4 cm (200, 100, 50 µT)",
+    "wire-graph-task": "safe: B(r) curve of a straight wire with three marked points, current and values not written",
     "coil-dims": "safe: a coil with N, l, I and B labelled, no values",
     "coil-fit": "safe: example data B against I in a coil (six points and a fitted line), slope not written",
 }

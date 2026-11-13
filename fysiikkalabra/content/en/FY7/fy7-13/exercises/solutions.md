@@ -214,3 +214,35 @@ For small angles $\tan\theta \approx \sin\theta$, so $x \approx L\lambda : d$. T
 **Substitution:** a) The angles are $\theta_1 = \tan^{-1}\dfrac{4.15}{4.0} = 46.05^\circ$, $\theta_2 = \tan^{-1}\dfrac{6.25}{6.0} = 46.17^\circ$, $\theta_3 = \tan^{-1}\dfrac{8.35}{8.0} = 46.23^\circ$ and $\theta_4 = \tan^{-1}\dfrac{10.45}{10.0} = 46.26^\circ$. From them $d_1 = \dfrac{0.532\,\mu\text{m}}{\sin 46.05^\circ} = 0.7389\,\mu\text{m}$, $d_2 = 0.7375\,\mu\text{m}$, $d_3 = 0.7368\,\mu\text{m}$ and $d_4 = 0.7363\,\mu\text{m}$. The sum is $2.9495\,\mu\text{m}$, so $d_\text{avg} = 2.9495\,\mu\text{m} : 4 = 0.7374\,\mu\text{m}$. b) For the second order $\sin\theta_2 = 2 \cdot 0.532\,\mu\text{m} : 0.7374\,\mu\text{m} = 1.44$, which is impossible. The zeroth-order reflection returns along the path of the perpendicularly incident beam through the hole towards the laser, so no dot forms on the cardboard at $k = 0$. c) $\dfrac{0.7374 - 0.74}{0.74} \cdot 100\,\% = -0.36\,\%$.
 **Answer:** $0.74\,\mu\text{m}$, two significant figures like the distance $2x$ (a more precise intermediate result is $0.737\,\mu\text{m}$). No second-order maximum forms, because the value of the sine, $1.44$, is greater than $1$. Two dots of light are seen on the cardboard (the maxima $k = \pm 1$); the zeroth-order reflection returns through the hole towards the laser, so there are three maxima ($k = 0, \pm 1$) but two dots. The mean is $0.36\,\%$ smaller than the reference value.
 **Reasonableness:** The wavelength is only about $0.7$ times the track spacing, so $\sin\theta_1 = 0.532 : 0.7374 = 0.72$ and the angle $46^\circ$ is possible; the maximum is further to the side than $L$ ($\tan 46^\circ = 1.04$). Different values of $L$ give almost the same $d$, so the data is consistent.
+
+## fy7-13-L1-09
+**Given:** line density $N = 600$ lines per millimetre, order $k = 1$; the wavelength of the yellow helium line is looked up in the MAFY table *Spektriviivoja*: $\lambda = 587.56\,\text{nm}$
+**Asked:** the angle $\theta$ of the first-order maximum in degrees
+**Principle:** The light hits the grating perpendicularly, so the direction of a maximum follows the grating equation. The grating spacing is first obtained from the line density, and in the first order the path difference of neighbouring slits is one wavelength.
+**Formula:** $d = \dfrac{1\,\text{mm}}{N}$ and $d\sin\theta = k\lambda$, so $\theta = \sin^{-1}\dfrac{k\lambda}{d}$
+**Conversions:** $d = 1 \cdot 10^{-3}\,\text{m} : 600 = 1.667 \cdot 10^{-6}\,\text{m}$ and $587.56\,\text{nm} = 587.56 \cdot 10^{-9}\,\text{m}$.
+**Substitution:** $\theta = \sin^{-1}\dfrac{1 \cdot 587.56 \cdot 10^{-9}\,\text{m}}{1.667 \cdot 10^{-6}\,\text{m}} = \sin^{-1} 0.3525 = 20.64^\circ$
+**Answer:** $20.6^\circ$, three significant figures like the line density.
+**Reasonableness:** The sine is below $1$, so the maximum exists, and the angle is moderate. Check: $1.667\,\mu\text{m} \cdot \sin 20.64^\circ = 0.588\,\mu\text{m}$, which is the wavelength of the line.
+
+## fy7-13-L2-09
+**Given:** line density $N = 400$ lines per millimetre, order $k = 2$; from the figure the distance from the grating to the screen $L = 1.20\,\text{m}$ and the position of the second-order maximum $x_2 = 70.0\,\text{cm}$
+**Asked:** the wavelength $\lambda$ of the laser in nanometres
+**Principle:** The screen is perpendicular to the beam, so the angle follows from the right-angled triangle through the tangent, and the direction of the maximum follows the grating equation. In the second-order maximum the path difference is two wavelengths.
+**Reading the figure:** The distance $L$ is read from the dimension line at the bottom of the figure: $L = 1.20\,\text{m}$. The second-order maximum is the one of the two light spots on a side that is farther from the central maximum. Its position is read on the scale: the spot is between $60\,\text{cm}$ and $80\,\text{cm}$, near the middle at $70\,\text{cm}$, so $x_2 \approx 70.0\,\text{cm}$ (reading accuracy about $\pm 1\,\text{cm}$). The first-order spot is closer to the central maximum.
+**Formula:** $d = \dfrac{1\,\text{mm}}{N}$, $\tan\theta_2 = \dfrac{x_2}{L}$ and $d\sin\theta_2 = 2\lambda$, so $\lambda = \dfrac{d\sin\theta_2}{2}$
+**Conversions:** $d = 1 \cdot 10^{-3}\,\text{m} : 400 = 2.50 \cdot 10^{-6}\,\text{m}$ and $x_2 = 70.0\,\text{cm} = 0.700\,\text{m}$.
+**Substitution:** $\theta_2 = \tan^{-1}\dfrac{0.700\,\text{m}}{1.20\,\text{m}} = 30.26^\circ$ and $\lambda = \dfrac{2.50 \cdot 10^{-6}\,\text{m} \cdot \sin 30.26^\circ}{2} = \dfrac{2.50 \cdot 10^{-6}\,\text{m} \cdot 0.5039}{2} = 6.30 \cdot 10^{-7}\,\text{m} = 630\,\text{nm}$
+**Answer:** $630\,\text{nm}$, three significant figures like the distance $L$ and the line density.
+**Reasonableness:** A wavelength of $630\,\text{nm}$ is red light, which fits a red laser. The first-order maximum would be at $x_1 = L\tan\theta_1 = 1.20\,\text{m} \cdot \tan\bigl(\sin^{-1}\dfrac{630\,\text{nm}}{2.50\,\mu\text{m}}\bigr) = 31.2\,\text{cm}$, which in the figure is closer to the central maximum than the second order.
+
+## fy7-13-L2-10
+**Given:** distance from the grating to the screen $L = 1.00\,\text{m}$, first order $k = 1$, wavelength of the red edge $\lambda = 700\,\text{nm}$; from the figure the position of the red edge $x = 17.8\,\text{cm}$
+**Asked:** the line density $N$ of the grating in lines per millimetre
+**Principle:** Red is deviated most, so the outer edge of the spectrum is the first-order maximum of red. Its angle follows from the right-angled triangle on the screen through the tangent, the grating spacing from the grating equation, and the line density is the reciprocal of the spacing.
+**Reading the figure:** The white central maximum is at the zero of the scale. The outer edge of the spectrum is the red edge; it is on the scale between $15\,\text{cm}$ and $20\,\text{cm}$, a little under $18\,\text{cm}$: $x \approx 17.8\,\text{cm}$ (reading accuracy about $\pm 0.3\,\text{cm}$). The inner edge is violet at about $10\,\text{cm}$.
+**Formula:** $\tan\theta = \dfrac{x}{L}$, $d\sin\theta = k\lambda$ and $N = \dfrac{1}{d}$ (lines per unit length), so $N = \dfrac{\sin\theta}{k\lambda}$
+**Conversions:** $x = 17.8\,\text{cm} = 0.178\,\text{m}$, $700\,\text{nm} = 7.00 \cdot 10^{-7}\,\text{m}$ and $1\,\text{mm} = 1 \cdot 10^{-3}\,\text{m}$.
+**Substitution:** $\theta = \tan^{-1}\dfrac{0.178\,\text{m}}{1.00\,\text{m}} = 10.09^\circ$, $d = \dfrac{7.00 \cdot 10^{-7}\,\text{m}}{\sin 10.09^\circ} = \dfrac{7.00 \cdot 10^{-7}\,\text{m}}{0.1752} = 3.99 \cdot 10^{-6}\,\text{m}$ and $N = \dfrac{1 \cdot 10^{-3}\,\text{m}}{3.99 \cdot 10^{-6}\,\text{m}} = 250$ lines per millimetre
+**Answer:** $250$ lines per millimetre, three significant figures like the distance $L$ and the read position.
+**Reasonableness:** Check with violet ($400\,\text{nm}$): $x = 1.00\,\text{m} \cdot \tan\bigl(\sin^{-1}\dfrac{400\,\text{nm}}{4.00\,\mu\text{m}}\bigr) = 10.1\,\text{cm}$, and in the figure the inner edge is at about $10\,\text{cm}$. A grating with $250$ lines per millimetre is a common school grating.

@@ -234,3 +234,24 @@ $$\begin{aligned}
 \end{aligned}$$
 
 The oven uses about $0.060\,\text{kWh}$, that is $60\,\text{Wh}$, of electrical energy. The order of magnitude is thus hundredths of a kilowatt-hour. The wrong options come from unit errors: dividing the minutes by $3600$ gives $0.0010\,\text{kWh}$, substituting the minutes as hours gives $3.6\,\text{kWh}$, substituting the watts as kilowatts gives $60\,\text{kWh}$, and the product of the watts and the minutes gives $3600\,\text{kWh}$. Reasonableness: a device of one kilowatt uses $1\,\text{kWh}$ in an hour, and three minutes is only $\tfrac{1}{20}$ of an hour.
+
+## fy6-7-L1-10
+**Given:** power $P = 1.5\,\text{kW}$, time $t = 2.0\,\text{h}$; conversion from the MAFY table (Yksikkömuunnoksia, energy/work, kilowatt-hour) $1\,\text{kWh} = 3.6 \cdot 10^{6}\,\text{J}$
+**Find:** the energy $E$ in megajoules
+**Principle:** The power of the radiator is constant, so the energy is power times time, $E = Pt$. When the power is in kilowatts and the time in hours, the energy comes out in kilowatt-hours. The joules are obtained by converting the kilowatt-hours with the conversion factor of the MAFY table.
+**Formula:** $E = Pt$
+**Conversions:** $1\,\text{kWh} = 3.6 \cdot 10^{6}\,\text{J} = 3.6\,\text{MJ}$
+**Substitution:** $E = 1.5\,\text{kW} \cdot 2.0\,\text{h} = 3.0\,\text{kWh}$ and $3.0\,\text{kWh} \cdot 3.6\,\tfrac{\text{MJ}}{\text{kWh}} = 10.8\,\text{MJ}$
+**Answer:** $11\,\text{MJ}$, two significant figures like the power $1.5\,\text{kW}$ and the time $2.0\,\text{h}$. The conversion factor is from the MAFY table (Yksikkömuunnoksia), and the conversion $1\,\text{kWh} = 3.6\,\text{MJ}$ is exact. The answer is accepted within about $\pm 4\,\%$.
+**Reasonableness:** One kilowatt-hour is $3.6\,\text{MJ}$, so $3.0\,\text{kWh}$ is about $3 \cdot 4\,\text{MJ} = 12\,\text{MJ}$, a little less. The result $10.8\,\text{MJ}$ fits this.
+
+## fy6-7-L2-08
+**Given:** the powers and times of the three phases of the drying program from the graph $(t, P)$; price $a = 18\,\text{c/kWh}$
+**Find:** the cost of the electricity of the program $K$ in euros
+**Principle:** In each phase the power is constant, so the energy of the phase is power times the duration of the phase, that is the area of the rectangle under the graph. The whole energy is the sum of the energies of the phases, and the cost is price times energy.
+**Reading the graph:** In the heating the power is $2.4\,\text{kW}$ between $0$ and $0.5\,\text{h}$, so the duration is $0.5\,\text{h}$. In the drying the power is $1.2\,\text{kW}$ between $0.5$ and $1.5\,\text{h}$, that is $1.0\,\text{h}$. In the cooling the power is $0.2\,\text{kW}$ between $1.5$ and $2.0\,\text{h}$, that is $0.5\,\text{h}$.
+**Formula:** $E = P_1 t_1 + P_2 t_2 + P_3 t_3$ and $K = aE$
+**Conversions:** $a = 18\,\text{c/kWh} = 0.18\,\text{€/kWh}$
+**Substitution:** $E = 2.4\,\text{kW} \cdot 0.5\,\text{h} + 1.2\,\text{kW} \cdot 1.0\,\text{h} + 0.2\,\text{kW} \cdot 0.5\,\text{h} = 1.2\,\text{kWh} + 1.2\,\text{kWh} + 0.10\,\text{kWh} = 2.5\,\text{kWh}$ and $K = 0.18\,\tfrac{\text{€}}{\text{kWh}} \cdot 2.5\,\text{kWh} = 0.45\,\text{€}$
+**Answer:** $0.45\,\text{€}$, two significant figures, because the values are read from the grid lines of $0.4\,\text{kW}$ and $0.25\,\text{h}$.
+**Reasonableness:** A two-hour program at an average power of about $1.25\,\text{kW}$ would give $2.5\,\text{kWh}$. This costs about $2.5 \cdot 18\,\text{c} = 45\,\text{c}$, less than a euro.

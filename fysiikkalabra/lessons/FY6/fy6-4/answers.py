@@ -39,4 +39,5 @@ a["fy6-4-L3-04"] = I_fix * par(110, 110) / 110 * 1000     # U23 = 0,072 A * 55 o
 cand = [(abs(r - 470) / 470 * 100, k, x, y) for x, y in __import__("itertools").combinations([100, 390, 560, 1200, 1500, 2700, 5600], 2)
         for k, r in (("s", x + y), ("p", par(x, y)))]     # L3-05: every pair in series and in parallel
 a["fy6-4-L3-05"] = min(cand)[0]                           # best: 560 ohm || 2700 ohm = 463,8 ohm, 1,32 % off 470 ohm (best series 100 + 390 = 490 ohm, 4,3 %)
+a["fy6-4-L2-09"] = 9.0 / par(30, 45) * 1000               # figure task-parallel: 30 ohm || 45 ohm = 18 ohm, I = 9,0 V / 18 ohm = 0,50 A = 500 mA
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

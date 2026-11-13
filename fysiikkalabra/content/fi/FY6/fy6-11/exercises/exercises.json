@@ -110,6 +110,18 @@
       "answer": 7.5,
       "unit": "mm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-11-L1-09",
+      "level": 1,
+      "text": "Kaksi metallilevyä on ilmassa $2{,}5\\,\\text{mm}$:n etäisyydellä toisistaan, ja niiden välillä on homogeeninen sähkökenttä. Hae ilman läpilyöntikestävyys MAFY-taulukosta (mafytaulukot.fi). Laske suurin jännite levyjen välillä ennen kuin ilmaan syntyy kipinä. Vastaa kilovoltteina.",
+      "lookup": "MAFY",
+      "answer": 7.5,
+      "unit": "kV",
+      "tolerance": 0.1,
+      "hints": [
+        "Arvo löytyy MAFY-taulukon taulukosta *Eristeiden läpilyöntikestävyyksiä*."
+      ]
     }
   ],
   "level2": [

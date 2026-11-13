@@ -31,4 +31,8 @@ a["fy6-2-L3-04"] = (u0 / 2 - u_m) / (u0 / 2) * 100       # 6,00 V -> 5,714 V: 4,
 ur, ir = 4.52, 38.4                                      # L3-05: U = 4,52 V, I = 38,4 mA, R = 117,71 ohm
 du, di = limit(ur, 0.5, 2, 0.01), limit(ir, 1.0, 2, 0.1)   # 0,0426 V (0,94 %) and 0,584 mA (1,52 %)
 a["fy6-2-L3-05"] = ur / ir * 1000 * (du / ur + di / ir)  # dR = R (0,00942 + 0,0152) = 2,90 ohm -> 3 ohm; 120 ohm is inside 118 ± 3
+# Figure tasks (teacher 2026-11-13): fy6-2/multimeter-task shows the reading 1,37 V on the 20 V range (resolution 0,01 V), error limit ±(0,5 % + 2 digits)
+du_fig = limit(1.37, 0.5, 2, 0.01)                       # 0,00685 + 0,02 = 0,02685 V -> 0,03 V (1 sf)
+a["fy6-2-L2-09"] = du_fig
+a["fy6-2-L2-10"] = abs(1.45 - 1.37) / du_fig             # 0,08 V : 0,02685 V = 2,98 -> 3,0 times the error limit: not consistent
 print(json.dumps({k: round(v, 8) for k, v in a.items()}))

@@ -1529,9 +1529,13 @@ def changes(folder, base, part="lesson", split=False, new=None):
             if a2 != b2: cats |= classify(rel, list(difflib.unified_diff((a2 or "").splitlines(), (b2 or "").splitlines(), lineterm="", n=2)), folder.name)
             n += sum(1 for l in lines if l.startswith(("+", "-")) and not l.startswith(("+++", "---"))); diff += lines; continue
         if rel.endswith("/figures.json") and ra and rb:   # entries only added: the words of a new figure (a task's variant); check_i18n
-            try: fa, fb = json.loads(ra), json.loads(rb)   # keeps every figure already drawn fully translated, so no drawn word changes
-            except json.JSONDecodeError: fa = fb = None
-            if isinstance(fa, dict) and isinstance(fb, dict) and len(fb) > len(fa) and all(k in fb and fb[k] == v for k, v in fa.items()):
+            def _added_only(x, y):                         # keeps every figure already drawn fully translated, so no drawn word changes
+                try: fa, fb = json.loads(x), json.loads(y)
+                except (TypeError, json.JSONDecodeError): return False
+                return isinstance(fa, dict) and isinstance(fb, dict) and len(fb) > len(fa) and all(k in fb and fb[k] == v for k, v in fa.items())
+            # also after the teacher-approved figures' words are taken out (a, b above): a file that both re-translated an
+            # approved figure and gained a new variant's words is then the two carried categories, not a content change
+            if _added_only(ra, rb) or _added_only(a, b):
                 cats.add("figure-words-added"); n += sum(1 for l in lines if l.startswith(("+", "-")) and not l.startswith(("+++", "---"))); diff += lines; continue
         if rel.endswith("/figures.json") and a and b:   # a translation's words: an illustration's description is part of the illustration
             heroes = {html.unescape(x) for s in (old.source(courses.lesson_rel(folder, "lesson.md")), new.source(courses.lesson_rel(folder, "lesson.md")))

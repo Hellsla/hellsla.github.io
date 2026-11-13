@@ -274,6 +274,15 @@
           "feedback": "Here the sign of the charge has been taken into account twice. The negative electrons move upwards, and the two reversals cancel each other. Therefore the rule is applied directly to the direction of the current."
         }
       ]
+    },
+    {
+      "id": "fy7-4-L2-09",
+      "level": 2,
+      "text": "A student measured how the force on a straight wire depends on the angle $\\alpha$ between the wire and the magnetic field. The wire was in a uniform magnetic field and carried a current of $6.0\\,\\text{A}$. There was $25\\,\\text{cm}$ of wire in the field. The graph shows the force $F$ as a function of the angle $\\alpha$ and a curve fitted to the data points. Determine the magnetic flux density. Read the values you need from the curve of the graph.",
+      "figure": "fy7-4/force-angle",
+      "answer": 0.3,
+      "unit": "T",
+      "tolerance": 0.03
     }
   ],
   "level3": [

@@ -2,9 +2,9 @@ ok   lint
 ok   latex
 ok   build
 ok   sims
-ok   inquiry (87 passed, 0 failed)
+ok   inquiry (110 passed, 0 failed)
 ok   answer positions
 ok   layout 360 px
 ok   layout 768 px
 ok   layout 1280 px
-fy6-8: reviewed (science=PASS, pedagogy=PASS, visual=PASS); exercises: draft (science=stale, pedagogy=stale, visual=stale)
+fy6-8: reviewed (science=PASS (carried over: photo,teacher-figure,typography), pedagogy=PASS (carried over: photo,teacher-figure,typography), visual=PASS (carried over: teacher-figure)); exercises: draft (science=stale, pedagogy=stale, visual=stale)

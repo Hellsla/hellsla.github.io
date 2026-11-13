@@ -192,3 +192,14 @@ $E = UQ = 3.0\,\text{V} \cdot 18\,\text{C} = 54\,\text{J}$
 4 false: the wire already contains free electrons, and they start to move throughout the circuit almost immediately, also in the filament. The lamp lights up almost at once even though the electrons advance slowly.
 
 5 false: $3.0\,\text{J}$ is the energy per one coulomb. In a minute $54\,\text{J}$ is transferred to the lamp.
+
+## fy6-1-L2-08
+**Given:** a graph of charging current $I$ as a function of time $t$, charging time $100\,\text{s}$, voltage $U = 4.0\,\text{V}$
+**Find:** the energy $E$ transferred to the battery, in $\text{J}$
+**Principle:** Voltage is the energy transferred per unit charge, $U = \tfrac{E}{Q}$, so the energy is $E = UQ$. The charge comes from the current, $Q = It$, when the current is constant. The current varies, so the charge is the area between the current graph and the time axis.
+**Reading the graph:** From $0\,\text{s}$ to $40\,\text{s}$ the current is $0.50\,\text{A}$: a rectangle of width $40\,\text{s}$. From $40\,\text{s}$ to $100\,\text{s}$ the current falls steadily from $0.50\,\text{A}$ to zero: a triangle of width $60\,\text{s}$ and height $0.50\,\text{A}$.
+**Formula:** $E = UQ$, where $Q = I_0 t_1 + \tfrac{1}{2} I_0 t_2$
+**Conversions:** The current is in amperes and the times in seconds, so no conversions are needed.
+**Substitution:** $Q = 0.50\,\text{A}\cdot 40\,\text{s} + \tfrac{1}{2}\cdot 0.50\,\text{A}\cdot 60\,\text{s} = 20\,\text{C} + 15\,\text{C} = 35\,\text{C}$, and $E = 4.0\,\text{V}\cdot 35\,\text{C} = 140\,\text{J}$
+**Answer:** $140\,\text{J} \approx 1.4 \cdot 10^{2}\,\text{J}$, two significant figures like the currents read and the voltage.
+**Reasonableness:** If the current had been the greatest value $0.50\,\text{A}$ for the whole $100\,\text{s}$, the charge would be $50\,\text{C}$ and the energy $200\,\text{J}$. The current is at its greatest only part of the time, so the result $140\,\text{J}$ is smaller, as it should be.

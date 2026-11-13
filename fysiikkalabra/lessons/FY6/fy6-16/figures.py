@@ -259,7 +259,19 @@ def hero():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "koti": home, "vaiheet": phases, "kayra": curve, "lataus-ex": task_curve}
+def task_house():
+    f = Fig("fy616-talo-ex", 340, "Kuvaaja mittakaavassa: omakotitalon sähköteho P kilowatteina kellonajan t funktiona illalla kello 18–22. "
+            "Ruudukon pystyviivat ovat tunnin välein ja vaakaviivat kohdissa 1, 2, 3, 4, 5, 6, 7 ja 8 kilowattia. "
+            "Teho on vakio kunkin tunnin ajan: 2 kilowattia kello 18–19, 5 kilowattia kello 19–20, 7 kilowattia kello 20–21 ja 3 kilowattia kello 21–22.")
+    from figlib import Axes
+    ax = Axes(f, (84, 290), (470, 60), x=(18, 22), y=(0, 8), xticks=[18, 19, 20, 21, 22],
+              yticks=[1, 2, 3, 4, 5, 6, 7, 8], xlabel=r"t\ (\text{h})", ylabel=r"P\ (\text{kW})",
+              xfmt=lambda v: str(int(round(v))))
+    ax.line([(18, 2), (19, 2), (19, 5), (20, 5), (20, 7), (21, 7), (21, 3), (22, 3)], HEAT, 3)
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "koti": home, "vaiheet": phases, "kayra": curve, "lataus-ex": task_curve, "talo-ex": task_house}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "hero": "decorative",
@@ -267,4 +279,5 @@ REUSE = {
     "vaiheet": "reveals: the phase currents 37,7 / 29,0 / 29,0 A of stove, kettle and car against the 25 A main fuse",
     "kayra": "reveals: the model charging curve, 11 kW from 20 % to 90 % in about 4,5 h, then falling to 99 % at 6,0 h",
     "lataus-ex": "safe: a charge's (t, P) graph, 11 kW for 0-2,0 h and 5,5 kW for 2,0-3,0 h, no energy written",
+    "talo-ex": "safe: a house's (t, P) graph 18-22 h, steps 2, 5, 7 and 3 kW, no energy or cost written",
 }

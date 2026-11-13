@@ -291,6 +291,15 @@
           "feedback": "Väite on tosi, mutta se ei selitä vastausta. Se kertoo vain, että renkaassa voi kulkea virta. Se ei kerro, mihin suuntaan virta kiertää eikä sitä, hylkiikö vai vetääkö rengas käämiä."
         }
       ]
+    },
+    {
+      "id": "fy7-6-L2-09",
+      "level": 2,
+      "text": "Kuvaajassa on alumiiniputkessa liikkuvaan magneettiin kohdistuva pyörrevirtojen jarruttava voima $F$. Voima on vauhdin $v$ funktio. Kuinka suurella teholla putken sisäenergia kasvaa, kun magneetti liikkuu vauhdilla $0{,}25\\,\\text{m/s}$? Lue voima kuvaajasta. Anna vastaus milliwatteina.",
+      "figure": "fy7-6/brake-task",
+      "answer": 100,
+      "unit": "mW",
+      "tolerance": 0.04
     }
   ],
   "level3": [
@@ -410,6 +419,15 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy7-6-L3-06",
+      "level": 3,
+      "text": "Samaan alumiiniputkeen pudotetaan $45\\,\\text{g}$:n magneetti. Kuvaajasta näet, kuinka suuri jarruttava voima magneettiin kohdistuu eri vauhdeilla. Magneetin vauhti kasvaa, kunnes se putoaa tasaisella vauhdilla. Kuinka suuri tämä vauhti on? Lue tarvittavat arvot kuvaajasta.",
+      "figure": "fy7-6/brake-task",
+      "answer": 0.28,
+      "unit": "m/s",
+      "tolerance": 0.05
     }
   ]
 }

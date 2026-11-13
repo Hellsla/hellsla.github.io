@@ -226,3 +226,24 @@ Suhde $\lambda_4 : \lambda_1 = 2{,}90 : 4{,}10 \approx 0{,}7$ saadaan, jos lämp
 Asetusten 2 ja 3 huiput $3{,}40\,\mu\text{m}$ ja $3{,}35\,\mu\text{m}$ eroavat vain $0{,}05\,\mu\text{m}$. Ero on pienempi kuin kummankin lukeman epävarmuus. Laskettuina lämpötiloina $T_2 \approx 852\,\text{K}$ ja $T_3 \approx 865\,\text{K}$. Epävarmuuden rajoissa $T_2$ voi kuitenkin olla $828$–$878\,\text{K}$ ja $T_3$ $840$–$892\,\text{K}$. Välit menevät suurelta osin päällekkäin. Mittauksista ei siis voi päätellä, että levy olisi asetuksella 3 kuumempi, saati että ero olisi $13\,\text{K}$.
 
 Perusteltu johtopäätös on siis, että asetuksella 4 levyn absoluuttinen lämpötila on noin $1{,}4$ kertaa niin suuri kuin asetuksella 1.
+
+## fy7-9-L1-09
+**Annettu:** spektrin huipun aallonpituus $\lambda_\text{max} = 350\,\text{nm}$; Wienin siirtymälain vakio MAFY-taulukon taulukosta *Luonnonvakiot*: $b = 2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}$ (taulukossa $2{,}897\,772 \cdot 10^{-3}\,\text{m} \cdot \text{K}$); tähti säteilee kuin musta kappale
+**Kysytty:** tähden pintalämpötila $T$ kelvineinä
+**Periaate:** Mustan kappaleen spektrin huipun paikka riippuu vain pintalämpötilasta. Siksi lämpötila saadaan Wienin siirtymälaista, kun tiedetään huipun aallonpituus.
+**Kaava:** $\lambda_\text{max} T = b$, josta $T = \dfrac{b}{\lambda_\text{max}}$
+**Muunnokset:** $\lambda_\text{max} = 350\,\text{nm} = 350 \cdot 10^{-9}\,\text{m}$
+**Sijoitus:** $T = \dfrac{2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}}{350 \cdot 10^{-9}\,\text{m}} = 8280\,\text{K}$
+**Vastaus:** $8{,}3 \cdot 10^{3}\,\text{K}$, kaksi merkitsevää numeroa kuten aallonpituudessa $350\,\text{nm}$.
+**Järkevyys:** Tähti on kuumempi kuin Aurinko ($5772\,\text{K}$), ja sen huippu on lyhyemmällä aallonpituudella kuin Auringon $502\,\text{nm}$, kuten pitääkin. Aallonpituus on noin $0{,}7$-kertainen Auringon huippuun verrattuna, joten lämpötila on noin $1{,}4$-kertainen: $1{,}4 \cdot 5772\,\text{K} \approx 8200\,\text{K}$.
+
+## fy7-9-L2-09
+**Annettu:** kuvaajan spektrikäyrä; uusi pintalämpötila $T_2 = 1000\,\text{K}$; Wienin siirtymälain vakio $b = 2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}$; kappale säteilee kuin musta kappale
+**Kysytty:** spektrin huipun siirtymä $\Delta\lambda = \lambda_2 - \lambda_1$ mikrometreinä
+**Periaate:** Mustan kappaleen spektrin huipun aallonpituus riippuu vain pintalämpötilasta (Wienin siirtymälaki). Alkuperäinen huippu luetaan kuvaajasta. Uusi huippu lasketaan lämpötilasta. Siirtymä on näiden kahden erotus.
+**Kuvaajan lukeminen:** Käyrän korkein kohta on pystysuoralla ruudukon viivalla. Ruudukon viivojen väli on $0{,}2\,\mu\text{m}$. Viiva on yhden ruudun ($0{,}2\,\mu\text{m}$) luvun $1$ oikealla puolella. Siis $\lambda_1 = 1{,}2\,\mu\text{m}$.
+**Kaava:** $\lambda_\text{max} T = b$, josta $\lambda_2 = \dfrac{b}{T_2}$ ja $\Delta\lambda = \dfrac{b}{T_2} - \lambda_1$
+**Muunnokset:** $\lambda_1 = 1{,}2\,\mu\text{m} = 1{,}2 \cdot 10^{-6}\,\text{m}$ ja lopuksi $1\,\mu\text{m} = 10^{-6}\,\text{m}$.
+**Sijoitus:** $\lambda_2 = \dfrac{2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}}{1000\,\text{K}} = 2{,}898 \cdot 10^{-6}\,\text{m} = 2{,}898\,\mu\text{m}$ ja $\Delta\lambda = 2{,}898\,\mu\text{m} - 1{,}2\,\mu\text{m} = 1{,}698\,\mu\text{m}$
+**Vastaus:** huippu siirtyy $1{,}7\,\mu\text{m}$ pidemmälle aallonpituudelle, kaksi merkitsevää numeroa kuten kuvaajasta luetussa aallonpituudessa $1{,}2\,\mu\text{m}$.
+**Järkevyys:** Kappale jäähtyy ($2415\,\text{K}$:sta $1000\,\text{K}$:iin), joten huipun on siirryttävä pidemmille aallonpituuksille. Lämpötila putoaa noin $2{,}4$-kertaisesti, ja huipun aallonpituus kasvaa saman verran: $1{,}2\,\mu\text{m} \cdot 2{,}4 \approx 2{,}9\,\mu\text{m}$. Uusi huippu on kaukana infrapuna-alueella eikä kappale enää hehku.

@@ -7,5 +7,9 @@
  "Kuvaaja mittakaavassa: pesukoneen teho P kilowatteina ajan t funktiona tunteina yhden pesuohjelman aikana. Pystyakselin ruudukon väli on 0,2 kW ja vaaka-akselin 0,25 h. Teho on ensin 2,0 kW ajan 0–0,25 h, sitten 0,2 kW ajan 0,25–1,25 h ja lopuksi 0,4 kW ajan 1,25–1,5 h, minkä jälkeen kone sammuu.": "Graph to scale: the power P of a washing machine in kilowatts as a function of time t in hours during one wash program. The grid spacing is 0.2 kW on the vertical axis and 0.25 h on the horizontal axis. The power is first 2.0 kW for a time of 0–0.25 h, then 0.2 kW for 0.25–1.25 h and finally 0.4 kW for 1.25–1.5 h, after which the machine switches off.",
  "lämmitys": "heating",
  "pesu": "wash",
- "linkous": "spin"
+ "linkous": "spin",
+ "Kuvaaja mittakaavassa: kuivausrummun teho P kilowatteina ajan t funktiona tunteina yhden kuivausohjelman aikana. Pystyakselin ruudukon väli on 0,4 kW ja vaaka-akselin 0,25 h. Teho on ensin 2,4 kW ajan 0–0,5 h, sitten 1,2 kW ajan 0,5–1,5 h ja lopuksi 0,2 kW ajan 1,5–2,0 h, minkä jälkeen kone sammuu.": "Graph to scale: the power P of a tumble dryer in kilowatts as a function of time t in hours during one drying program. The grid spacing is 0.4 kW on the vertical axis and 0.25 h on the horizontal axis. The power is first 2.4 kW for a time of 0–0.5 h, then 1.2 kW for 0.5–1.5 h and finally 0.2 kW for 1.5–2.0 h, after which the machine switches off.",
+ "kuumennus": "heating",
+ "kuivaus": "drying",
+ "jäähdytys": "cooling"
 }

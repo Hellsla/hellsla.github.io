@@ -264,6 +264,20 @@ def malus_graph():
     return f.svg()
 
 
+def malus_task():
+    """Task figure: the Malus curve I : I0 = cos² θ with a fine grid and no point marked, to be read."""
+    f = Fig("fy715-graph-task", 340, "Kuvaaja mittakaavassa: polarisoituneen valon intensiteetin osuus I per I0, joka "
+            "pääsee polarisaattorin läpi, kulman theeta funktiona nollasta 180 asteeseen. Vaaka-akselin ruudukon väli "
+            "on 15 astetta ja pystyakselin 0,1. Käyrä alkaa arvosta 1, laskee ensin loivasti nollaan 90 asteessa ja "
+            "nousee sitten symmetrisesti takaisin arvoon 1 kulmassa 180 astetta. Käyrältä ei ole merkitty pisteitä.")
+    ax = Axes(f, (92, 290), (504, 60), x=(0, 180), y=(0, 1), xticks=[15 * k for k in range(1, 13)],
+              yticks=[0.1 * k for k in range(1, 11)], xlabel=r"\theta\ (^\circ)", ylabel=r"I : I_0",
+              xfmt=lambda v: fi(round(v)) if round(v) % 30 == 0 else "",
+              yfmt=lambda v: fi(round(v, 1), 1) if round(v * 10) % 2 == 0 else "")
+    ax.curve(lambda t: math.cos(math.radians(t)) ** 2, 0, 180, RAY, 3)
+    return f.svg()
+
+
 def brewster():
     f = Fig("fy715-brewster", 360, "Kaavakuva, kulmat mittakaavassa: valo tulee ilmasta vedenpintaan Brewsterin "
             "kulmassa alfa B = 53,1 astetta pinnan normaaliin nähden. Tulevassa säteessä on sekä pisteitä eli paperin "
@@ -401,7 +415,8 @@ def scene():
 
 
 FIGURES = {"hero": hero, "polariser": polariser, "sheets": sheets, "glare": glare, "components": components,
-           "graph": malus_graph, "brewster": brewster, "scene": scene, "fit": fit}
+           "graph": malus_graph, "brewster": brewster, "scene": scene, "fit": fit,
+           "graph-task": malus_task}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "polariser": "reveals: a polariser passes half of unpolarised light, polarised along its transmission axis",
@@ -411,4 +426,5 @@ REUSE = {
     "graph": "reveals: I/I0 = cos² θ, 0,75 at 30°, 0,50 at 45°, 0,25 at 60°, 0 at 90°",
     "brewster": "reveals: at the Brewster angle (water 53,1°) the reflected light is fully polarised and the reflected and refracted rays are perpendicular",
     "fit": "safe: example data E (lx) against cos² θ for a phone screen through a polariser, with a fitted line, no slope written",
+    "graph-task": "safe: the curve I/I0 against θ with a fine grid, no point or value marked (REUSE of graph for a reading task)",
 }

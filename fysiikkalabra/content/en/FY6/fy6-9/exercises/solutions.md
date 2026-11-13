@@ -185,6 +185,17 @@ Only the unit of $UQ$ is a unit of energy, and it is also the formula for the en
 **Answer:** $0.40\,\Omega$, two significant figures like the current readings. A line fitted by hand gives the result to within a few percent.
 **Reasonableness:** The line crosses the horizontal axis at $13.0\,\text{V} - 1.5\,\text{A} \cdot 0.40\,\Omega = 12.4\,\text{V}$, which is the source voltage of the battery and suits a $12\,\text{V}$ lead-acid battery. At $13.8\,\text{V}$ the voltage law gives a current $(13.8\,\text{V} - 12.4\,\text{V}) : 0.40\,\Omega = 3.5\,\text{A}$, and the measurement is $3.5\,\text{A}$.
 
+## fy6-9-L2-08
+**Given:** nominal voltage of the battery $U = 11.1\,\text{V}$ and the charging current as a function of time from the graph
+**Find:** the energy stored in the battery $W$ in watt-hours
+**Principle:** With constant current the charge is the current times the time, that is, the area under the current-time graph. The current is constant in three parts, so the charge is the sum of the areas of three rectangles. By the assumption of the task, the energy stored in the battery is the nominal voltage times the charge.
+**Reading the graph:** The current is $2.0\,\text{A}$ from $0$ to $1.0\,\text{h}$, $1.5\,\text{A}$ from $1.0\,\text{h}$ to $3.0\,\text{h}$ and $0.5\,\text{A}$ from $3.0\,\text{h}$ to $4.0\,\text{h}$, and zero after that.
+**Formula:** $Q = I_1 t_1 + I_2 t_2 + I_3 t_3$ and $W = UQ$, so $W = U\,(I_1 t_1 + I_2 t_2 + I_3 t_3)$
+**Conversions:** Not needed: $1\,\text{V} \cdot 1\,\text{Ah} = 1\,\text{Wh}$. The durations are $t_1 = 1.0\,\text{h}$, $t_2 = 3.0\,\text{h} - 1.0\,\text{h} = 2.0\,\text{h}$ and $t_3 = 4.0\,\text{h} - 3.0\,\text{h} = 1.0\,\text{h}$.
+**Substitution:** $Q = 2.0\,\text{A} \cdot 1.0\,\text{h} + 1.5\,\text{A} \cdot 2.0\,\text{h} + 0.5\,\text{A} \cdot 1.0\,\text{h} = 2.0\,\text{Ah} + 3.0\,\text{Ah} + 0.5\,\text{Ah} = 5.5\,\text{Ah}$ and $W = 11.1\,\text{V} \cdot 5.5\,\text{Ah} = 61.05\,\text{Wh}$
+**Answer:** $61\,\text{Wh}$, two significant figures like the current readings. The values are read from the grid lines, which are $0.5\,\text{A}$ and $0.5\,\text{h}$ apart.
+**Reasonableness:** The average current is $5.5\,\text{Ah} : 4.0\,\text{h} \approx 1.4\,\text{A}$, which lies between the largest and the smallest current on the graph. The energy $61\,\text{Wh}$ is within the usual $50$–$100\,\text{Wh}$ range of a laptop battery.
+
 ## fy6-9-L3-04
 **Given:** from the table $I_1 = 0.50\,\text{A}$, $t_1 = 5.2\,\text{h}$, $U_{1,\text{avg}} = 3.70\,\text{V}$ and $I_2 = 2.0\,\text{A}$, $t_2 = 1.2\,\text{h}$, $U_{2,\text{avg}} = 3.55\,\text{V}$; the energy required for charging $W_\text{ch} = 11.0\,\text{Wh}$
 **Find:** the charge–discharge efficiency $\eta$ in percent with the current $I_2$ (b), and in addition the internal resistance of the cell $R_\text{s}$ (c)

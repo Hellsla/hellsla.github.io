@@ -38,4 +38,13 @@ a["fy7-15-L2-07"] = degrees(atan(1.36 / 1.00))               # air -> ethanol: �
 # Level 3 (added)
 a["fy7-15-L3-04"] = 100 * (0.5 * cos(radians(45.0)) ** 2 * sin(radians(45.0)) ** 2)   # I3 / I0 = (1/8) sin² 2θ, max at 45°: 12,5 %
 a["fy7-15-L3-05"] = 40 * cos(radians(90.0 - 25.0)) ** 2      # Brewster-reflected glare is horizontal; lens axis 25° off vertical: 40 W/m² · cos² 65° = 7,144 W/m²
+# Figure and MAFY tasks (added)
+a["fy7-15-L1-10"] = 400 * cos(radians(35.0)) ** 2            # figure graph-task: I0 = 400 W/m², θ = 35,0°: share 0,671 -> 268,4 W/m² -> 268
+a["fy7-15-L1-11"] = degrees(atan(1.520 / 1.00))              # MAFY: crown glass n = 1,520 (Taitekertoimia), air 1,00: α_B = 56,66° -> 56,7°
+# L2-08: figure fit, line E = 14,64 lx + 360,7 lx · cos²θ; E = 200 lx -> cos²θ = 0,5139 -> θ = 44,21° -> 44°
+_X = [cos(radians(t)) ** 2 for t in (0, 15, 30, 45, 60, 75, 90)]
+_Y = [374, 354, 283, 197, 102, 40, 15]
+_mx, _my = sum(_X) / 7, sum(_Y) / 7
+_b = sum((u - _mx) * (v - _my) for u, v in zip(_X, _Y)) / sum((u - _mx) ** 2 for u in _X); _a0 = _my - _b * _mx
+a["fy7-15-L2-08"] = degrees(acos(sqrt((200 - _a0) / _b)))
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

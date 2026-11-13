@@ -244,3 +244,14 @@ b) The station may draw at most $7.6\,\text{A}$.
 
 c) The heating power of the cable is $24\,\text{W}$ at a current of $7.6\,\text{A}$ and $104\,\text{W}$ at a current of $16\,\text{A}$. The current increases by a factor of $16 : 7.609 \approx 2.1$, but the power increases by its square, to about $4.4$ times. In the evening the main fuse is already almost full, and $16\,\text{A}$ would exceed it ($17.4\,\text{A} + 16\,\text{A} = 33.4\,\text{A}$), so load management has to limit the charging current for the peak time; a smaller current also keeps the cable cooler.
 **Reasonableness:** The current of the house and the current of the station together are $17.39\,\text{A} + 7.609\,\text{A} = 25.0\,\text{A}$, exactly the limit of the main fuse. The power of the station would be only $230\,\text{V} \cdot 7.609\,\text{A} \approx 1.75\,\text{kW}$, so slow charging is physically reasonable at peak time: at night, when the sauna heater and the stove are off, the current can be increased again.
+
+## fy6-16-L2-09
+**Given:** powers and times read from the graph, price $a = 16\,\text{c/kWh}$
+**Find:** cost of the electricity of the house $K$ in euros from 18 to 22
+**Principle:** When the power is constant, the energy is power times time, and the cost is energy times price. In the graph the power is constant during each hour, so the energy is the sum of the areas of four rectangles.
+**Reading the graph:** The power is $P_1 = 2\,\text{kW}$ at 18–19, $P_2 = 5\,\text{kW}$ at 19–20, $P_3 = 7\,\text{kW}$ at 20–21 and $P_4 = 3\,\text{kW}$ at 21–22. Each period lasts $\Delta t = 1.0\,\text{h}$.
+**Formula:** $W = (P_1 + P_2 + P_3 + P_4) \Delta t$ and $K = a W$
+**Conversions:** $a = 16\,\text{c/kWh} = 0.16\,\text{€/kWh}$
+**Substitution:** $W = (2\,\text{kW} + 5\,\text{kW} + 7\,\text{kW} + 3\,\text{kW}) \cdot 1.0\,\text{h} = 17\,\text{kWh}$ and $K = 0.16\,\text{€/kWh} \cdot 17\,\text{kWh} = 2.72\,\text{€}$
+**Answer:** $2.7\,\text{€}$, two significant figures like the values read from the graph.
+**Reasonableness:** The mean power is $17\,\text{kWh} : 4.0\,\text{h} \approx 4.3\,\text{kW}$, which lies between the smallest and the largest power of the graph. Four hours at about $4\,\text{kW}$ is about $17\,\text{kWh}$, and it costs about $17 \cdot 0.16\,\text{€} \approx 2.7\,\text{€}$.

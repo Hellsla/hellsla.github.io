@@ -253,6 +253,24 @@
           "feedback": "Tässä valon nopeudeksi on otettu luku $300\\,000$. Se on nopeus kilometreinä sekunnissa, vaikka pituus on sijoitettu metreinä. Pituuden ja nopeuden on oltava samoissa yksiköissä."
         }
       ]
+    },
+    {
+      "id": "fy7-16-L2-09",
+      "level": 2,
+      "text": "Kuvassa on sama langaton laturi kahdella etäisyydellä: puhelin on $3\\,\\text{mm}$ ja $6\\,\\text{mm}$ päässä laturista. Kenttäviivat on piirretty yhtä suurin vuoaskelin. Siksi vastaanotinkäämin läpi kulkevien viivojen määrä on verrannollinen vuohon $\\Phi_0$. Vastaanotinkäämin jännitteen huippuarvo on $3\\,\\text{mm}$:n etäisyydellä $4{,}2\\,\\text{V}$. Taajuus pysyy samana. Laske kuvan viivoista jännitteen huippuarvo $6\\,\\text{mm}$:n etäisyydellä. Anna vastaus voltteina.",
+      "answer": 2.8,
+      "unit": "V",
+      "tolerance": 0.05,
+      "figure": "fy7-16/charger-points"
+    },
+    {
+      "id": "fy7-16-L2-10",
+      "level": 2,
+      "text": "Kuvassa on yhden kuidun läpi kulkevan valon teho prosentteina lähetetystä tehosta. Teho on kuidun pituuden funktiona. Kuitu on koko matkalta samanlaista. Lue kuvaajasta pituus, jolla teho on puolittunut. Laske sen avulla kuidun vaimennuskerroin. Kuinka monta prosenttia lähetetystä tehosta saapuu perille, kun saman kuidun pituus on $35\\,\\text{km}$? Anna vastaus prosentteina.",
+      "answer": 8.838835,
+      "unit": "%",
+      "tolerance": 0.05,
+      "figure": "fy7-16/graph-curve"
     }
   ],
   "level3": [

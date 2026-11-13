@@ -46,4 +46,10 @@ def flash_w(eps_r, e_max):                                      # L3-05: A = 100
     u_max = 0.5 * e_max * d_                                    # teflon 1500 V, glass 350 V
     return 0.5 * (EPS0 * eps_r * 100e-4 / d_) * u_max ** 2      # W = 1/2 C U^2: teflon 4,18 mJ, glass 0,607 mJ
 a["fy6-13-L3-05"] = flash_w(2.1, 60e6) / flash_w(5.6, 14e6)     # ratio 6,89
+# Figure and MAFY additions (teacher 2026-11-13)
+# L2-08 figure fy6-13/ex-qu2: line through (120 µC; 8 V), C = Q : U = 15 µF; W at 7,0 V = 1/2 C U^2
+c_ex2 = 120e-6 / 8                                              # 15 µF
+a["fy6-13-L2-08"] = 0.5 * c_ex2 * 7.0 ** 2 * 1e6                # W = 1/2 · 15 µF · (7,0 V)^2 = 367,5 µJ
+# L1-10 MAFY: polyethylene eps_r = 2,3; A = 250 cm^2, d = 0,10 mm
+a["fy6-13-L1-10"] = EPS0 * 2.3 * 250e-4 / 0.10e-3 * 1e9         # C = eps0 eps_r A : d = 5,09 nF
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

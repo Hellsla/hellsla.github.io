@@ -35,4 +35,8 @@ a["fy7-9-L3-04"] = (b / 260e-9) / (b / 830e-9)         # stars A (830 nm) and C 
 Ts = [b / lam * 1e6 for lam in (1.80, 2.05, 2.35, 2.75)]   # cooling rod: 1610, 1414, 1233, 1054 K at t = 0, 4, 8, 12 min
 rate = (Ts[0] - Ts[-1]) / 12                           # mean cooling rate 46,3 K/min
 a["fy7-9-L3-05"] = 12 + (Ts[-1] - 800) / rate          # glow ends (T = 800 K) at 12 min + 5,5 min = 17,5 min
+# Added lines (MAFY table task and a second figure task)
+a["fy7-9-L1-09"] = 2.897771955e-3 / 350e-9             # star, peak 350 nm, b from MAFY table Luonnonvakiot: T = b / λ_max = 8279 K -> 8,3 · 10³ K
+# figure fy7-9/spectrum-task, peak at 1,20 µm: T = b / 1,20 µm = 2415 K; cooled to 1000 K the peak is b / 1000 K = 2,898 µm
+a["fy7-9-L2-09"] = (b / 1000 - 1.20e-6) * 1e6          # shift of the peak = 2,898 - 1,20 = 1,698 µm -> 1,70 µm
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

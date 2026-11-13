@@ -15,6 +15,7 @@ a["fy7-12-L1-05"] = 100e3 / 2.0e8 * 1e3                     # t = s / v = 100 00
 # (fy7-12-L1-06 is multiple choice: no number)
 a["fy7-12-L1-07"] = degrees(asin(1.33 / 1.49))              # acrylic -> water: α_r = 63,20° -> 63,2°
 a["fy7-12-L1-08"] = c * 0.50e-3 / 1.45 / 1e3                # s = v t = c t / n = 1,034 · 10^5 m = 103 km
+a["fy7-12-L1-09"] = degrees(asin(1.00 / 1.77))              # figure task: sapphire n = 1,77 against air, α_r = 34,41° (read from fy7-12/graph-curve) -> 34°
 # Level 2: a rearrangement, a conversion or two steps
 a["fy7-12-L2-01"] = 1.47 * sin(radians(82.0))               # n2 = n1 sin α_r = 1,4557 -> 1,46
 a["fy7-12-L2-02"] = 1.00 / sin(radians(45.0))               # total reflection at 45° needs α_r ≤ 45°: n ≥ 1 / sin 45° = 1,414
@@ -28,6 +29,7 @@ half = [t for t, i in pulse if i >= 50]                     # rows with I >= 50 
 a["fy7-12-L2-06"] = (max(half) - min(half)) * 1e3           # pulse width 0,8 µs = 800 ns
 a["fy7-12-L2-07"] = degrees(asin(1.00 * sin(radians(70.0)) / 1.50))   # air -> glass has no critical angle: β = 38,79° -> 38,8°
 # (fy7-12-L2-08 is a two-stage multiple choice: no number) water -> air, beam 40,0° from the surface: a1 = 50,0° > a_r = asin(1,00 / 1,33) = 48,8°: total reflection
+a["fy7-12-L2-09"] = c * sin(radians(35.0)) / 1e3             # figure task: α_r = 35,0° against air, n = 1 / sin α_r = 1,743 (read 1,74), v = c / n = 1,721 · 10^5 km/s
 # Level 3: reasoning, two ideas or an unfamiliar context
 ar = asin(1.00 / 1.33)                                      # pool lamp: light leaves the surface only where α < α_r
 a["fy7-12-L3-01"] = 1.80 * tan(ar)                          # radius r = h tan α_r = 1,80 m · tan 48,75° = 2,053 m

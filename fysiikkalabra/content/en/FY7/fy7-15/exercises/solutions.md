@@ -222,3 +222,35 @@ If the factor $\cos\theta$ were taken without the square, the intensity of situa
 **Answer:** $7.1\,\text{W/m}^2$, two significant figures like the intensity of the glare $40\,\text{W/m}^2$. The Sun is at a height of $36.9^\circ$. Polarised glasses reduce glare more, because $7.1\,\text{W/m}^2$ passes through them and $12\,\text{W/m}^2$ through an ordinary lens.
 **Reasonableness:** If the head were upright, the angle would be $90^\circ$ and the glare would be extinguished completely, so even a small tilt lets a little light through, and $7.1\,\text{W/m}^2$ is less than a fifth of the original $40\,\text{W/m}^2$. The polarised lens is better when $\cos^2\theta < 0.30$, that is $\theta > 56.8^\circ$, and here $\theta = 65.0^\circ$ meets the condition.
 **Model answer:** Polarised glasses reduce glare more, because the glare is completely polarised in the horizontal direction and the film absorbs it when the transmission axis is almost vertical. An ordinary lens dims glare and other light equally. If the tilt is more than $33.2^\circ$, the ordinary lens would be better. Polarised glasses halve the intensity of unpolarised light, whereas an ordinary lens lets through $30\,\%$, so for other light the ordinary lens dims more.
+
+## fy7-15-L1-10
+**Given:** intensity of the polarised light $I_0 = 400\,\text{W/m}^2$, angle between the direction of polarisation and the transmission axis $\theta = 35^\circ$; the graph of the share $I : I_0$ as a function of the angle
+**Asked:** the intensity $I$ that comes through the polariser in $\text{W/m}^2$
+**Principle:** The light is already polarised, so Malus's law $I = I_0 \cos^2\theta$ applies directly. The graph shows the share $I : I_0 = \cos^2\theta$ as a function of the angle, so the share is read from the graph at the angle $35^\circ$ and multiplied by the incident intensity.
+**Reading the graph:** The vertical line at $35^\circ$ lies between $30^\circ$ and $45^\circ$ and meets the curve where the share is between $0.75$ and $0.50$, closer to $0.75$, about $0.67$. A good reading is $0.65\text{–}0.69$.
+**Formula:** $I = I_0 \cdot \dfrac{I}{I_0}$, where $\dfrac{I}{I_0} = \cos^2\theta$
+**Conversions:** Not needed: the intensity stays in $\text{W/m}^2$ and the share is a dimensionless number.
+**Substitution:** $I = 400\,\text{W/m}^2 \cdot 0.67 = 268\,\text{W/m}^2$
+**Answer:** $270\,\text{W/m}^2$ (read from the graph $268\,\text{W/m}^2$), two or three significant figures according to the accuracy of the reading. A good answer is $260\text{–}280\,\text{W/m}^2$.
+**Reasonableness:** At $30^\circ$ the share is $0.75$ and at $45^\circ$ it is $0.50$, so the result $268\,\text{W/m}^2$ is between $300\,\text{W/m}^2$ and $200\,\text{W/m}^2$. Check by calculation: $400\,\text{W/m}^2 \cdot \cos^2 35^\circ = 268.4\,\text{W/m}^2$.
+
+## fy7-15-L1-11
+**Given:** refractive index of air $n_1 = 1.00$; the refractive index of crown glass is looked up in the MAFY table *Taitekertoimia*: $n_2 = 1.520$
+**Asked:** Brewster's angle $\alpha_\text{B}$ in degrees
+**Principle:** Light reflected from an insulator is completely polarised when the angle of incidence is Brewster's angle. Then the reflected and the refracted ray are perpendicular to each other, and Brewster's law follows from the law of refraction. The light comes from air into glass, so $n_1$ is the refractive index of air and $n_2$ that of glass.
+**Formula:** $\tan\alpha_\text{B} = \dfrac{n_2}{n_1}$, so $\alpha_\text{B} = \tan^{-1}\dfrac{n_2}{n_1}$
+**Conversions:** Not needed: refractive indices have no unit, and the angle comes out in degrees.
+**Substitution:** $\alpha_\text{B} = \tan^{-1}\dfrac{1.520}{1.00} = \tan^{-1} 1.520 = 56.66^\circ$
+**Answer:** $56.7^\circ$, three significant figures like the refractive index.
+**Reasonableness:** When $n_2 > n_1$, $\tan\alpha_\text{B} > 1$, so the angle must be over $45^\circ$. The result is slightly larger than the angle $56.3^\circ$ of ordinary glass ($n = 1.50$), as it should be, because the refractive index of crown glass is slightly larger. Check: the angle of refraction is $90^\circ - 56.66^\circ = 33.34^\circ$, and $1.00 \cdot \sin 56.66^\circ = 0.835 = 1.520 \cdot \sin 33.34^\circ$.
+
+## fy7-15-L2-08
+**Given:** the line in the figure, passing approximately through the points $(0;\ 15\,\text{lx})$ and $(1;\ 375\,\text{lx})$ when the horizontal axis is $\cos^2\theta$; sensor reading $E = 200\,\text{lx}$
+**Asked:** the angle of the film $\theta$ in degrees
+**Principle:** The light of the display is polarised, so by Malus's law its share of the reading is $E_0 \cos^2\theta$. The background light adds a constant $E_\text{t}$ to the reading, so $E = E_0 \cos^2\theta + E_\text{t}$. The constant term of the line is $E_\text{t}$ and its slope is $E_0$. The angle is found by solving $\cos^2\theta$ and taking the inverse cosine.
+**Reading the graph:** The line starts at $\cos^2\theta = 0$ from the reading $E_\text{t} = 15\,\text{lx}$ and rises to $375\,\text{lx}$ at $\cos^2\theta = 1$, so the slope is $E_0 = 375\,\text{lx} - 15\,\text{lx} = 360\,\text{lx}$. The reading $200\,\text{lx}$ corresponds on the line to a point slightly to the right of the middle ($\cos^2\theta = 0.5$), about $\cos^2\theta = 0.51$. The value is read from the line, not from individual data points.
+**Formula:** $E = E_0 \cos^2\theta + E_\text{t}$, so $\cos^2\theta = \dfrac{E - E_\text{t}}{E_0}$ and $\theta = \cos^{-1}\sqrt{\dfrac{E - E_\text{t}}{E_0}}$
+**Conversions:** Not needed: all readings are in lux, and $\cos^2\theta$ is a dimensionless number.
+**Substitution:** $\cos^2\theta = \dfrac{200\,\text{lx} - 15\,\text{lx}}{360\,\text{lx}} = 0.514$ and $\theta = \cos^{-1}\sqrt{0.514} = \cos^{-1} 0.717 = 44.2^\circ$
+**Answer:** $44^\circ$, two significant figures according to the accuracy of reading the graph. A good answer is $43\text{–}46^\circ$.
+**Reasonableness:** The reading $200\,\text{lx}$ is close to $195\,\text{lx}$, which corresponds to $45^\circ$ ($\cos^2 45^\circ = 0.50$), so the angle must be slightly below $45^\circ$. Check: $360\,\text{lx} \cdot \cos^2 44.2^\circ + 15\,\text{lx} = 360\,\text{lx} \cdot 0.514 + 15\,\text{lx} = 200\,\text{lx}$.

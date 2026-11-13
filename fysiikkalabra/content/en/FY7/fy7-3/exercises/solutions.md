@@ -220,3 +220,25 @@ $B_2 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot \dfrac{240 \cdot 1
 $B_2 \approx 2.26 \cdot 10^{-3}\,\text{T}$
 
 So the field grows from about $1.5\,\text{mT}$ to about $2.3\,\text{mT}$. Tripling the current alone would give three times the field if the total number of turns were what mattered, but stretching the coil makes the turns sparser and weakens the field.
+
+## fy7-3-L2-09
+**Given:** graph $B(I)$ at the centre of a coil; length of the coil $l = 0.250\,\text{m}$; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
+**Find:** number of turns $N$
+**Principle:** Inside a long coil $B = \mu_0 \dfrac{N I}{l}$, so $B$ is directly proportional to the current $I$ and the points $(I, B)$ lie on a line whose slope is $k = \mu_0 N : l$. The number of turns follows from the slope.
+**Reading the graph:** The fitted line passes through the origin and the point $(2.0\,\text{A};\ 5.0\,\text{mT})$. The slope is $k = \Delta B : \Delta I = 5.0\,\text{mT} : 2.0\,\text{A} = 2.5\,\tfrac{\text{mT}}{\text{A}}$. The last measured point gives $6.2\,\text{mT} : 2.5\,\text{A} = 2.5\,\tfrac{\text{mT}}{\text{A}}$, so the line describes the points well.
+**Formula:** $k = \dfrac{\mu_0 N}{l}$, so $N = \dfrac{k\,l}{\mu_0}$
+**Conversions:** $k = 2.5\,\tfrac{\text{mT}}{\text{A}} = 2.5 \cdot 10^{-3}\,\tfrac{\text{T}}{\text{A}}$
+**Substitution:** $N = \dfrac{2.5 \cdot 10^{-3}\,\tfrac{\text{T}}{\text{A}} \cdot 0.250\,\text{m}}{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}} = 497$
+**Answer:** The coil has about $5.0 \cdot 10^2$ turns (calculated $497$), two significant figures like the slope that was read.
+**Reasonableness:** Check: $B = \mu_0 N I : l = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 497 \cdot 1.0\,\text{A} : 0.250\,\text{m} = 2.5\,\text{mT}$, which matches the line at $1.0\,\text{A}$. The number of turns is ordinary for a coil.
+
+## fy7-3-L2-10
+**Given:** graph $B(r)$ of a long straight wire; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
+**Find:** current $I$ of the wire in amperes
+**Principle:** The field of a long straight wire is $B = \dfrac{\mu_0 I}{2\pi r}$. When one point $(r, B)$ of the graph is read, the current can be solved from the formula.
+**Reading the graph:** At the distance $r = 2.0\,\text{cm}$ the curve is at the third horizontal line, the grid spacing being $20\,\mu\text{T}$, so $B = 3 \cdot 20\,\mu\text{T} = 60\,\mu\text{T}$. Check: at $1.0\,\text{cm}$ the field is $120\,\mu\text{T}$ and at $4.0\,\text{cm}$ it is $30\,\mu\text{T}$, so $B$ is inversely proportional to the distance.
+**Formula:** $B = \dfrac{\mu_0 I}{2\pi r}$, so $I = \dfrac{2\pi r B}{\mu_0}$
+**Conversions:** $r = 2.0\,\text{cm} = 0.020\,\text{m}$ and $B = 60\,\mu\text{T} = 60 \cdot 10^{-6}\,\text{T}$
+**Substitution:** $I = \dfrac{2\pi \cdot 0.020\,\text{m} \cdot 60 \cdot 10^{-6}\,\text{T}}{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}} = 6.0\,\text{A}$
+**Answer:** $6.0\,\text{A}$, two significant figures like the field that was read, $60\,\mu\text{T}$.
+**Reasonableness:** Check: $2 \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 6.0\,\text{A} : 0.010\,\text{m} = 1.2 \cdot 10^{-4}\,\text{T} = 120\,\mu\text{T}$, which is the value of the graph at $1.0\,\text{cm}$. The current is ordinary for everyday devices.

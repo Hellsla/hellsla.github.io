@@ -46,4 +46,9 @@ a["fy7-10-L3-04"] = sum(ns) / len(ns)               # mean n = 5,3205 / 4 = 1,33
 a2 = D(S(55.0) / 1.52)
 a3 = D(S(55.0) / 1.33)
 a["fy7-10-L3-05"] = 6.0 * T(a2) + 20.0 * T(a3)      # x = 3,839 mm + 15,636 mm = 19,5 mm
+# MAFY table Taitekertoimia: water 1,333 (air given as 1,00); L1-09 air -> water at 52,0°: sin a2 = 0,7880 / 1,333 = 0,5912, a2 = 36,2°
+a["fy7-10-L1-09"] = D(1.00 * S(52.0) / 1.333)
+# figure fy7-10/fit: the fitted line has sin a1 = 0,294 at sin a2 = 0,20 and 0,890 at 0,60; slope k = 0,596 / 0,40 = 1,49 = n (acrylic)
+k = (0.890 - 0.294) / (0.60 - 0.20)
+a["fy7-10-L2-09"] = D(1.00 * S(35.0) / k)           # air -> acrylic at 35,0°: sin a2 = 0,5736 / 1,49 = 0,3850, a2 = 22,6°
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

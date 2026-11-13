@@ -148,6 +148,18 @@
           "feedback": "Here the numerical value of the resistance has been drawn as the value of the voltage. The voltage stays the same although the current increases, so the ratio $U : I$ would decrease all the time. In a characteristic curve the resistance shows as the slope of the line, not as the height of the curve."
         }
       ]
+    },
+    {
+      "id": "fy6-3-L1-10",
+      "level": 1,
+      "text": "A copper wire in a circuit is $40\\,\\text{m}$ long and its cross-sectional area is $1.5\\,\\text{mm}^2$. Look up the resistivity of copper in the MAFY table booklet (mafytaulukot.fi). What is the resistance of the wire? Answer in ohms.",
+      "lookup": "MAFY",
+      "answer": 0.45,
+      "unit": "Ω",
+      "tolerance": 0.03,
+      "hints": [
+        "The value is in the MAFY tables, in the table *Resistiivisyyksiä*."
+      ]
     }
   ],
   "level2": [

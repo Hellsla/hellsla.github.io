@@ -274,6 +274,15 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy6-9-L2-08",
+      "level": 2,
+      "text": "The nominal voltage of a laptop battery is $11.1\\,\\text{V}$. The graph shows the charging current of the battery as a function of time. Read the values from the graph, calculate the charge that passed through the battery during charging and use it to find the energy stored in the battery. Assume that the energy is the nominal voltage times the charge. Give the answer in watt-hours.",
+      "figure": "fy6-9/ex-current2",
+      "answer": 61.05,
+      "unit": "Wh",
+      "tolerance": 0.02
     }
   ],
   "level3": [

@@ -305,6 +305,15 @@
           "feedback": "Väite on tosi, mutta se ei selitä vastausta. Etuvastus rajoittaa virran suuruutta. Se ei kerro, kumpaan suuntaan diodi päästää virran."
         }
       ]
+    },
+    {
+      "id": "fy6-14-L2-09",
+      "level": 2,
+      "text": "Kuvaajassa näkyy aurinkopaneelin virta jännitteen mukaan. Valon voimakkuus eli irradianssi pysyy samana. Paneeli on kytketty laitteeseen, jonka jännite on $4{,}0\\,\\text{V}$. Lue kuvaajasta paneelin virta tällä jännitteellä. Laske sitten paneelin sähköteho. Vastaa watteina.",
+      "figure": "fy6-14/ex-kenno",
+      "answer": 0.8,
+      "unit": "W",
+      "tolerance": 0.04
     }
   ],
   "level3": [

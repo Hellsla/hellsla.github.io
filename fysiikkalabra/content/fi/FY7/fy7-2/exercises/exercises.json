@@ -87,6 +87,18 @@
       "answer": 1.8,
       "unit": "ns",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-2-L1-09",
+      "level": 1,
+      "text": "Elektronisuihkuputkessa elektronit lentävät vauhdilla $4{,}0 \\cdot 10^{6}\\,\\text{m/s}$ kohtisuoraan homogeenista magneettikenttää vastaan. Magneettivuon tiheys on $0{,}80\\,\\text{mT}$ ja elektronin varauksen suuruus $1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Hae elektronin massa MAFY-taulukosta (mafytaulukot.fi). Kuinka suuri on elektronien ympyräradan säde? Anna vastaus senttimetreinä.",
+      "lookup": "MAFY",
+      "answer": 2.84,
+      "unit": "cm",
+      "tolerance": 0.04,
+      "hints": [
+        "Arvo löytyy MAFY-taulukon taulukosta *Hiukkasten ominaisuuksia*."
+      ]
     }
   ],
   "level2": [
@@ -264,6 +276,15 @@
           "feedback": "Tässä voima on piirretty nopeuden suuntaan, kuin kenttä kiihdyttäisi elektronia. Magneettinen voima on kohtisuorassa nopeutta vastaan, joten se ei muuta vauhtia vaan kääntää liikkeen suuntaa."
         }
       ]
+    },
+    {
+      "id": "fy7-2-L2-09",
+      "level": 2,
+      "text": "Kuvaajassa on erään hiukkasen ympyräradan säde $r$ vauhdin $v$ funktiona, kun hiukkanen liikkuu kohtisuoraan homogeenista magneettikenttää vastaan. Magneettivuon tiheys on $0{,}20\\,\\text{T}$ ja hiukkasen varaus on $1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Lue kuvaajasta säde vauhdilla $1{,}5 \\cdot 10^{6}\\,\\text{m/s}$ ja laske hiukkasen massa. Anna vastaus muodossa $\\ldots \\cdot 10^{-27}\\,\\text{kg}$.",
+      "answer": 3.35,
+      "unit": "10⁻²⁷ kg",
+      "tolerance": 0.04,
+      "figure": "fy7-2/r-points"
     }
   ],
   "level3": [

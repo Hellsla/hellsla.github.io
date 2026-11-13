@@ -290,6 +290,15 @@
       "answer": "Circuit C ($110\\,\\Omega$), circuit B ($132\\,\\Omega$), circuit E ($150\\,\\Omega$), circuit D ($265\\,\\Omega$), circuit A ($550\\,\\Omega$).",
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-4-L2-09",
+      "level": 2,
+      "text": "In the circuit in the figure the battery is ideal, and the resistance of the wires is ignored. How large is the total current from the battery? Give the answer in milliamperes.",
+      "figure": "fy6-4/task-parallel",
+      "answer": 500,
+      "unit": "mA",
+      "tolerance": 0.02
     }
   ],
   "level3": [

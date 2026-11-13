@@ -300,11 +300,26 @@ def hero():
     return f.svg()
 
 
+def r_points():
+    f = Fig("fy72-rp", 340, "Kuvaaja mittakaavassa: tuntemattoman hiukkasen ympyräradan säde r senttimetreinä hiukkasen vauhdin v funktiona, "
+            "kun magneettikenttä on 0,20 teslaa. Neljä mittauspistettä vauhdeilla 0,5; 1,0; 1,5 ja 2,0 miljoonaa metriä sekunnissa. "
+            "Pisteiden kautta kulkee ohut harmaa suora origosta.")
+    ax = Axes(f, (96, 286), (424, 52), x=(0, 2.0), y=(0, 22), xticks=[0.5, 1.0, 1.5, 2.0], yticks=[5, 10, 15, 20],
+              xlabel=r"v\ (10^6\,\text{m/s})", ylabel=r"r\ (\text{cm})", xfmt=lambda v: fi(v, 1))
+    rx = lambda v: md * v * 1e6 / (e * 0.20) * 100
+    ax.line([(0, 0), (2.0, rx(2.0))], MUTED, 1.5)
+    for v in (0.5, 1.0, 1.5, 2.0):
+        ax.point(v, rx(v), WATER)
+    f.tex(ax.X(0.08), ax.Y(17.5), r"B = 0{,}20\,\text{T}", "start", w=130, bg=True)
+    return f.svg()
+
+
 FIGURES = {"hero": hero, "force-dir": force_dir, "circle-path": circle_path, "r-graph": r_graph, "spectrometer": spectrometer,
            "track-sign": track_sign, "pick-vasen": pick_vasen, "pick-oikea": pick_oikea, "pick-ylos": pick_ylos,
-           "pick-ulos": pick_ulos}
+           "pick-ulos": pick_ulos, "r-points": r_points}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
+    "r-points": "safe: r against v for an unknown particle at 0,20 T, four points on the line (task fy7-2-L2-09); the mass is not marked",
     "force-dir": "reveals: the direction of the magnetic force for a positive and a negative charge in a field into the page",
     "circle-path": "reveals: the force points to the centre and the speed stays constant on the circle",
     "r-graph": "reveals: r grows in proportion to v and to m (proton and deuteron at 0,20 T)",

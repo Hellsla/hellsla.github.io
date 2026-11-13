@@ -188,3 +188,25 @@
 4 true: the $\text{N}$ end of the magnet turns towards the geographic north. Unlike poles attract each other, so the south pole of the bar-magnet model is there (in geomagnetism, the magnetic north pole).
 
 5 false: between two magnets there is one total field $\overline{B} = \overline{B}_1 + \overline{B}_2$. It has only one direction at each point, so the field lines do not cross each other. The iron filings show the lines of the total field, which curve in the space between the magnets.
+
+## fy7-1-L2-08
+**Given:** figure: grid squares $5\,\mu\text{T}$, compass at the origin, horizontal component of the Earth's field $\overline{B}_\text{h}$ towards the north and field of the magnet $\overline{B}_\text{m}$ towards the east
+**Find:** the magnitudes of the fields, the total field $B$ and the angle of deflection $\theta$ of the needle from north towards east in degrees
+**Principle:** The needle turns to point along the horizontal total field. The fields are perpendicular to each other, so the total field is the diagonal of a rectangle and its magnitude follows from the Pythagorean theorem. The side opposite the angle measured from north is the field pointing east, and the adjacent side is the field pointing north.
+**Reading the graph:** The grid lines are $5\,\mu\text{T}$ apart. The arrow $\overline{B}_\text{h}$ pointing north ends at the third horizontal line, so $B_\text{h} = 3 \cdot 5\,\mu\text{T} = 15\,\mu\text{T}$. The arrow $\overline{B}_\text{m}$ pointing east ends at the fourth vertical line, so $B_\text{m} = 4 \cdot 5\,\mu\text{T} = 20\,\mu\text{T}$.
+**Formula:** $B = \sqrt{B_\text{h}^2 + B_\text{m}^2}$ and $\tan\theta = \dfrac{B_\text{m}}{B_\text{h}}$, so $\theta = \tan^{-1}\dfrac{B_\text{m}}{B_\text{h}}$
+**Conversions:** Not needed: both fields are in microtesla, and the unit cancels in the angle.
+**Substitution:** $B = \sqrt{(15\,\mu\text{T})^2 + (20\,\mu\text{T})^2} = \sqrt{625}\,\mu\text{T} = 25\,\mu\text{T}$ and $\theta = \tan^{-1}\dfrac{20\,\mu\text{T}}{15\,\mu\text{T}} = \tan^{-1} 1.333 = 53.13^\circ$
+**Answer:** The total field is $25\,\mu\text{T}$ and the needle turns $53^\circ$ from north towards east, two significant figures like the fields read from the figure.
+**Reasonableness:** The field of the magnet is greater than the Earth's field, so the angle must be more than $45^\circ$ but less than $90^\circ$. The ratio $15 : 20 : 25$ is the right triangle $3 : 4 : 5$, whose angle is about $53^\circ$. Check: $15\,\mu\text{T} \cdot \tan 53.13^\circ = 20\,\mu\text{T}$.
+
+## fy7-1-L2-09
+**Given:** figure: the Earth's field seen from the side, grid squares $5\,\mu\text{T}$, horizontal axis towards the north and vertical axis down, arrow $\overline{B}$ starts at the ground
+**Find:** the horizontal and vertical components, the magnetic flux density $B$ in microtesla and the inclination $I$ in degrees
+**Principle:** The horizontal and vertical components are perpendicular to each other, and they are the coordinates of the arrow tip measured from its starting point. The total field is the diagonal of a rectangle, and the inclination is the angle between the field and the horizontal, whose opposite side is the vertical component.
+**Reading the graph:** The arrow tip is on the third vertical line towards the north and on the tenth horizontal line downwards, when the grid lines are $5\,\mu\text{T}$ apart. So $B_\text{h} = 3 \cdot 5\,\mu\text{T} = 15\,\mu\text{T}$ and $B_\text{v} = 10 \cdot 5\,\mu\text{T} = 50\,\mu\text{T}$.
+**Formula:** $B = \sqrt{B_\text{h}^2 + B_\text{v}^2}$ and $\tan I = \dfrac{B_\text{v}}{B_\text{h}}$, so $I = \tan^{-1}\dfrac{B_\text{v}}{B_\text{h}}$
+**Conversions:** Not needed: the components are in microtesla, and the result is wanted in microtesla.
+**Substitution:** $B = \sqrt{(15\,\mu\text{T})^2 + (50\,\mu\text{T})^2} = \sqrt{2725}\,\mu\text{T} = 52.2\,\mu\text{T}$ and $I = \tan^{-1}\dfrac{50\,\mu\text{T}}{15\,\mu\text{T}} = \tan^{-1} 3.333 = 73.3^\circ$
+**Answer:** $B = 52\,\mu\text{T}$ and $I = 73^\circ$ below the horizontal, two significant figures like the components read from the figure.
+**Reasonableness:** The vertical component is much greater than the horizontal one, so the field points steeply down and the angle is close to $90^\circ$. The total field is only slightly greater than the larger component $50\,\mu\text{T}$. The values suit southern Finland, where $B \approx 52\,\mu\text{T}$ and $I \approx 74^\circ$. Check: $B\cos I = 52.2\,\mu\text{T} \cdot \cos 73.3^\circ = 15.0\,\mu\text{T}$.

@@ -32,6 +32,9 @@ a["fy6-16-L2-05"] = 3 * U * 25 / 1000 - max([2.1, 3.4, 6.8, 5.2, 3.9])   # 17,25
 a["fy6-16-L2-06"] = (0.80 - 0.20) * 60 / (0.92 * 7.4)     # error analysis: 36 kWh : (0,92 · 7,4 kW) = 5,29 h (student: 60 : 7,4 = 8,1 h)
 P_tab = [11.0, 11.0, 10.8, 8.7, 5.9, 3.1, 1.4]            # figure data, every 0,5 h for 3,0 h
 a["fy6-16-L2-07"] = 0.5 * ((P_tab[0] + P_tab[-1]) / 2 + sum(P_tab[1:-1]))   # trapezoids: 0,5 h · (6,2 + 39,5) kW = 22,85 kWh (mean power 22,85 : 3,0 = 7,62 kW)
+# figure fy6-16/talo-ex: house power 2, 5, 7 and 3 kW for one hour each (18-22 h)
+W_talo = 2.0 * 1.0 + 5.0 * 1.0 + 7.0 * 1.0 + 3.0 * 1.0   # four rectangles of 1,0 h: 17,0 kWh
+a["fy6-16-L2-09"] = 0.16 * W_talo                         # price 16 snt/kWh = 0,16 EUR/kWh: K = a W = 2,72 EUR
 # Level 3: reasoning
 a["fy6-16-L3-01"] = (3000 / 0.82 - 3000 / 0.92) * 0.15    # 3000 kWh a year into the battery: 3658,5 - 3260,9 = 397,7 kWh less at 0,15 EUR: 59,7 EUR
 a["fy6-16-L3-02"] = ((16 / 10) ** 2 - 1) * 100            # P = R I^2, the same cable: (16/10)^2 = 2,56 -> grows by 156 %

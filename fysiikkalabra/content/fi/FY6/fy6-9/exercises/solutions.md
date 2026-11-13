@@ -186,6 +186,17 @@ Vain lausekkeen $UQ$ yksikkö on energian yksikkö, ja se on myös akun energian
 **Vastaus:** $0{,}40\,\Omega$, kaksi merkitsevää numeroa kuten virtojen lukemissa. Käsin sovitettu suora antaa tuloksen muutaman prosentin tarkkuudella.
 **Järkevyys:** Suora leikkaa vaaka-akselin kohdassa $13{,}0\,\text{V} - 1{,}5\,\text{A} \cdot 0{,}40\,\Omega = 12{,}4\,\text{V}$, mikä on akun lähdejännite ja sopii $12\,\text{V}$:n lyijyakulle. Kohdassa $13{,}8\,\text{V}$ jännitelaki antaa virran $(13{,}8\,\text{V} - 12{,}4\,\text{V}) : 0{,}40\,\Omega = 3{,}5\,\text{A}$, ja mittaus on $3{,}5\,\text{A}$.
 
+## fy6-9-L2-08
+**Annettu:** akun nimellisjännite $U = 11{,}1\,\text{V}$ ja kuvaajan latausvirta ajan funktiona
+**Kysytty:** akkuun varastoitunut energia $W$ wattitunteina
+**Periaate:** Vakiovirralla varaus on virta kertaa aika eli virran ja ajan kuvaajan alle jäävä pinta-ala. Virta on kolmessa vakio-osassa, joten varaus on kolmen suorakulmion pinta-alojen summa. Akkuun varastoituva energia on nimellisjännite kertaa varaus tehtävän oletuksen mukaan.
+**Kuvaajan lukeminen:** Virta on $2{,}0\,\text{A}$ ajasta $0$ aikaan $1{,}0\,\text{h}$, $1{,}5\,\text{A}$ ajasta $1{,}0\,\text{h}$ aikaan $3{,}0\,\text{h}$ ja $0{,}5\,\text{A}$ ajasta $3{,}0\,\text{h}$ aikaan $4{,}0\,\text{h}$, jonka jälkeen se on nolla.
+**Kaava:** $Q = I_1 t_1 + I_2 t_2 + I_3 t_3$ ja $W = UQ$, josta $W = U\,(I_1 t_1 + I_2 t_2 + I_3 t_3)$
+**Muunnokset:** Ei tarvita: $1\,\text{V} \cdot 1\,\text{Ah} = 1\,\text{Wh}$. Kestot ovat $t_1 = 1{,}0\,\text{h}$, $t_2 = 3{,}0\,\text{h} - 1{,}0\,\text{h} = 2{,}0\,\text{h}$ ja $t_3 = 4{,}0\,\text{h} - 3{,}0\,\text{h} = 1{,}0\,\text{h}$.
+**Sijoitus:** $Q = 2{,}0\,\text{A} \cdot 1{,}0\,\text{h} + 1{,}5\,\text{A} \cdot 2{,}0\,\text{h} + 0{,}5\,\text{A} \cdot 1{,}0\,\text{h} = 2{,}0\,\text{Ah} + 3{,}0\,\text{Ah} + 0{,}5\,\text{Ah} = 5{,}5\,\text{Ah}$ ja $W = 11{,}1\,\text{V} \cdot 5{,}5\,\text{Ah} = 61{,}05\,\text{Wh}$
+**Vastaus:** $61\,\text{Wh}$, kaksi merkitsevää numeroa kuten virran lukemissa. Arvot luetaan ruudukkoviivoilta, joiden väli on $0{,}5\,\text{A}$ ja $0{,}5\,\text{h}$.
+**Järkevyys:** Keskimääräinen virta on $5{,}5\,\text{Ah} : 4{,}0\,\text{h} \approx 1{,}4\,\text{A}$, mikä on kuvaajan suurimman ja pienimmän virran välissä. Energia $61\,\text{Wh}$ on kannettavan tietokoneen akulle tavallisen $50$–$100\,\text{Wh}$:n alueella.
+
 ## fy6-9-L3-04
 **Annettu:** taulukosta $I_1 = 0{,}50\,\text{A}$, $t_1 = 5{,}2\,\text{h}$, $U_{1,\text{ka}} = 3{,}70\,\text{V}$ ja $I_2 = 2{,}0\,\text{A}$, $t_2 = 1{,}2\,\text{h}$, $U_{2,\text{ka}} = 3{,}55\,\text{V}$; latauksen vaatima energia $W_\text{lat} = 11{,}0\,\text{Wh}$
 **Kysytty:** lataus–purku-hyötysuhde $\eta$ prosentteina virralla $I_2$ (b), lisäksi kennon sisäinen resistanssi $R_\text{s}$ (c)

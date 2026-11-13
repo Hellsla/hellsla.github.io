@@ -49,6 +49,16 @@
 **Answer:** $3.0 \cdot 10^{4}\,\text{N/C}$, two significant figures, because a crossing of the grid is read from the graph, where the force is $120\,\mu\text{N}$ with two significant figures.
 **Reasonableness:** The measurement point $(3.0\,\text{nC};\ 91\,\mu\text{N})$ gives almost the same value: $91\,\mu\text{N} : 3.0\,\text{nC} \approx 3.0 \cdot 10^{4}\,\text{N/C}$. The line was fitted through the origin because, by the model $F = qE$, an uncharged ball feels no electric force in a uniform field, although the field exists.
 
+## fy6-11-L1-09
+**Given:** plate separation $d = 2.5\,\text{mm}$; dielectric strength of air from the MAFY table (Eristeiden läpilyöntikestävyyksiä, air) $E = 3.0\,\text{kV/mm}$
+**Find:** the greatest voltage $U$ in kilovolts
+**Principle:** The field between the plates is uniform, so $E = U : d$. A spark forms in the air when the field strength reaches the dielectric strength. The greatest voltage is found when $E$ has this value.
+**Formula:** $E = \dfrac{U}{d}$, so $U = Ed$
+**Conversions:** No unit conversion is needed, because $\text{kV/mm} \cdot \text{mm} = \text{kV}$.
+**Substitution:** $U = 3.0\,\dfrac{\text{kV}}{\text{mm}} \cdot 2.5\,\text{mm} = 7.5\,\text{kV}$
+**Answer:** $7.5\,\text{kV}$, two significant figures as in the data. The dielectric strength $3.0\,\text{kV/mm}$ is from the MAFY table (Eristeiden läpilyöntikestävyyksiä).
+**Reasonableness:** In air a spark forms at about three kilovolts per millimetre, so a $2.5\,\text{mm}$ gap needs about $2.5 \cdot 3\,\text{kV} \approx 7.5\,\text{kV}$. The result fits this.
+
 ## fy6-11-L2-01
 **Given:** voltage between the plates $U = 4.5\,\text{kV}$, plate distance $d = 9.0\,\text{mm}$, charge of the ball $q = 4.0\,\text{nC}$
 **Find:** the electric force $F$ on the ball in millinewtons

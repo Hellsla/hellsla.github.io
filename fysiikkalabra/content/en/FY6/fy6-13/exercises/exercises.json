@@ -152,6 +152,18 @@
           "feedback": "Correct: the energy $W = \\tfrac{1}{2} C U^2$ depends on the square of the voltage. When $C$ stays the same and the voltage doubles, the energy grows $2^2 = 4$-fold, to $28.8\\,\\text{mJ}$."
         }
       ]
+    },
+    {
+      "id": "fy6-13-L1-10",
+      "level": 1,
+      "text": "The plates of a parallel-plate capacitor have an area of $250\\,\\text{cm}^2$, and between the plates there is a polyethylene film with a thickness of $0.10\\,\\text{mm}$. Calculate the capacitance of the capacitor in nanofarads. Use the vacuum permittivity $\\varepsilon_0 = 8.854 \\cdot 10^{-12}\\,\\text{F/m}$ and look up the relative permittivity of polyethylene in the MAFY table (mafytaulukot.fi).",
+      "lookup": "MAFY",
+      "answer": 5.09,
+      "unit": "nF",
+      "tolerance": 0.05,
+      "hints": [
+        "The value is in the MAFY table *Eristeiden suhteellisia permittiivisyyksiä* (relative permittivities of insulators)."
+      ]
     }
   ],
   "level2": [
@@ -315,6 +327,15 @@
       ],
       "answer": 63.4,
       "unit": "mJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-13-L2-08",
+      "level": 2,
+      "text": "The graph shows the voltage of a second capacitor as a function of its charge during charging. How much energy is stored in the capacitor when it is charged to a voltage of $7.0\\,\\text{V}$? Find the capacitance from the graph. Give the answer in microjoules.",
+      "figure": "fy6-13/ex-qu2",
+      "answer": 367.5,
+      "unit": "µJ",
       "tolerance": 0.02
     }
   ],

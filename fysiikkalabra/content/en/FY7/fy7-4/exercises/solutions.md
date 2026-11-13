@@ -202,3 +202,14 @@
 **Model answer:** The wire swings towards the viewer. The thumb points down in the direction of the current and the other fingers to the right in the direction of the field. Then the palm of the right hand faces the viewer, so the force points towards the viewer. The force is perpendicular to both the vertical wire and the horizontal field, so the wire does not move towards either pole.
 
 Reason: the force is perpendicular to the current and to the field, and the right-hand rule gives its direction. The idea that the wire would move along the field lines towards the south pole is a misconception in which a current-carrying wire is thought of like a piece of iron. It is true that copper is not ferromagnetic, but that only explains why a wire with no current is not pulled. The electrons do move upwards, but their negative charge turns the force back, so the result is the same as applying the rule directly to the direction of the current. If the direction of the current is reversed, the wire swings away from the viewer.
+
+## fy7-4-L2-09
+**Given:** current $I = 6.0\,\text{A}$, length of the wire in the field $l = 25\,\text{cm}$; in the graph the force $F$ as a function of the angle $\alpha$ between the wire and the field
+**Find:** magnetic flux density $B$ in teslas
+**Principle:** The field exerts on the wire a force $F = I l B \sin\alpha$. The force is greatest when the wire is perpendicular to the field ($\alpha = 90^\circ$, $\sin 90^\circ = 1$), so then $F_{\max} = I l B$.
+**Reading the graph:** The data points deviate slightly from the curve because of measurement uncertainty, so we read the value from the fitted curve, not from a single point. The curve is at its highest at $\alpha = 90^\circ$ and passes through the grid point ($90^\circ$; $0.45\,\text{N}$). We therefore read $F_{\max} = 0.45\,\text{N}$.
+**Formula:** $F_{\max} = I l B$, so $B = \dfrac{F_{\max}}{I l}$
+**Conversions:** $l = 25\,\text{cm} = 25 \cdot 0.01\,\text{m} = 0.25\,\text{m}$
+**Substitution:** $B = \dfrac{0.45\,\text{N}}{6.0\,\text{A} \cdot 0.25\,\text{m}} = \dfrac{0.45\,\text{N}}{1.5\,\text{A}\cdot\text{m}} = 0.30\,\text{T}$
+**Answer:** $0.30\,\text{T}$, two significant figures like the current $6.0\,\text{A}$.
+**Reasonableness:** Check with another point: at $30^\circ$ the curve gives about $0.225\,\text{N}$, and $0.225\,\text{N} : (6.0\,\text{A} \cdot 0.25\,\text{m} \cdot \sin 30^\circ) = 0.30\,\text{T}$. The value is common in the gap of a magnet.

@@ -218,3 +218,24 @@ $\alpha_2 = 49{,}46^\circ$
 Rivi 4 on laskettu oikein rivin 3 arvosta, mutta väärä arvo antaa väärän kulman. Virheen näkee myös vertaamalla riviin 1: oppilaan tulos $19{,}2^\circ$ on pienempi kuin tulokulma $30{,}0^\circ$, eli säde olisi taittunut kohti normaalia.
 
 Oikea taitekulma on $\alpha_2 \approx 49{,}5^\circ$, kolme merkitsevää numeroa kuten kulmassa $60{,}0^\circ$ ja taitekertoimessa. Tarkistus: $1{,}52 \cdot \sin 30{,}0^\circ = 0{,}760$ ja $1{,}00 \cdot \sin 49{,}5^\circ = 0{,}760$, joten taittumislaki toteutuu, ja $49{,}5^\circ > 30{,}0^\circ$, kuten optisesti harvempaan aineeseen tultaessa pitää. Oikea vastaus on rivi 3.
+
+## fy7-10-L1-09
+**Annettu:** tulokulma $\alpha_1 = 52{,}0^\circ$, ilman taitekerroin $n_1 = 1{,}00$; veden taitekerroin $n_2$ haetaan MAFY-taulukon taulukosta *Taitekertoimia*: $n_2 = 1{,}333$
+**Kysytty:** taitekulma vedessä $\alpha_2$ asteina
+**Periaate:** Valo siirtyy ilmasta veteen, joten se taittuu rajapinnassa taittumislain mukaan. Vesi on ilmaa optisesti tiheämpää, joten säde taittuu kohti normaalia.
+**Kaava:** $n_1 \sin\alpha_1 = n_2 \sin\alpha_2$, josta $\sin\alpha_2 = \dfrac{n_1 \sin\alpha_1}{n_2}$
+**Muunnokset:** Ei tarvita: taitekertoimet ovat yksikköttömiä, ja kulma on asteina.
+**Sijoitus:** $\sin\alpha_2 = \dfrac{1{,}00 \cdot \sin 52{,}0^\circ}{1{,}333} = \dfrac{0{,}7880}{1{,}333} = 0{,}5912$, joten $\alpha_2 = 36{,}24^\circ$
+**Vastaus:** $\alpha_2 \approx 36{,}2^\circ$, kolme merkitsevää numeroa kuten tulokulmassa.
+**Järkevyys:** Taitekulma on pienempi kuin tulokulma, kuten tiheämpään aineeseen siirryttäessä pitää. Sinien suhde $\sin 52{,}0^\circ : \sin 36{,}2^\circ = 0{,}7880 : 0{,}5912 = 1{,}33$ on sama kuin taitekertoimien suhde $1{,}333 : 1{,}00$.
+
+## fy7-10-L2-09
+**Annettu:** kuvan suora kuvaa akryylin mittauksia, ilman taitekerroin $n_1 = 1{,}00$, uusi tulokulma $\alpha_1 = 35{,}0^\circ$
+**Kysytty:** suoran kulmakerroin $k$, akryylin taitekerroin $n_2$ ja taitekulma akryylissä $\alpha_2$
+**Periaate:** Taittumislain mukaan $\sin\alpha_1 = \dfrac{n_2}{n_1}\sin\alpha_2$. Kun $\sin\alpha_1$ on pystyakselilla ja $\sin\alpha_2$ vaaka-akselilla, mittapisteet ovat suoralla, jonka kulmakerroin on $k = n_2 / n_1$. Kulmakertoimen avulla saadaan taitekerroin, ja sen avulla taitekulma mille tahansa tulokulmalle.
+**Kuvaajan lukeminen:** Suoralta luetaan kohdassa $\sin\alpha_2 = 0{,}20$ arvo $\sin\alpha_1 \approx 0{,}29$ ja kohdassa $\sin\alpha_2 = 0{,}60$ arvo $\sin\alpha_1 \approx 0{,}89$. Käytetään suoran pisteitä, ei mittapisteitä.
+**Kaava:** $k = \dfrac{\Delta(\sin\alpha_1)}{\Delta(\sin\alpha_2)} = \dfrac{n_2}{n_1}$, josta $n_2 = k\,n_1$, ja $\sin\alpha_2 = \dfrac{n_1 \sin\alpha_1}{n_2}$
+**Muunnokset:** Ei tarvita: sinit ja taitekertoimet ovat yksikköttömiä.
+**Sijoitus:** $k = \dfrac{0{,}89 - 0{,}29}{0{,}60 - 0{,}20} = \dfrac{0{,}60}{0{,}40} = 1{,}49$, joten $n_2 = 1{,}49 \cdot 1{,}00 = 1{,}49$. Sitten $\sin\alpha_2 = \dfrac{1{,}00 \cdot \sin 35{,}0^\circ}{1{,}49} = \dfrac{0{,}5736}{1{,}49} = 0{,}3850$, joten $\alpha_2 = 22{,}6^\circ$
+**Vastaus:** $n_2 \approx 1{,}49$ ja $\alpha_2 \approx 22{,}6^\circ$, kolme merkitsevää numeroa. Kuvaajan lukutarkkuus on noin $0{,}01$, joten taitekulma on tarkka noin $0{,}2^\circ$:n tarkkuudella.
+**Järkevyys:** Taitekerroin on lähellä taulukon akryylin arvoa $1{,}49$. Taitekulma on pienempi kuin tulokulma $35{,}0^\circ$, kuten tiheämpään aineeseen siirryttäessä pitää.

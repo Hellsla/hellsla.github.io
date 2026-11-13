@@ -18,5 +18,6 @@
  "akkuun kemiallisena": "akkuun kemiallisena",
  "laturi ja johdot": "laturi ja johdot",
  "sisäenergiaksi:": "sisäenergiaksi:",
- "Kuvaaja mittakaavassa: akun latausvirta I ampeereina ajan t funktiona tunteina, ruudukon välit 0,5 h ja 0,5 A. Virta on 2,0 A ajan 0–1,5 h, sitten 1,0 A ajan 1,5–2,5 h ja sen jälkeen nolla.": "Kuvaaja mittakaavassa: akun latausvirta I ampeereina ajan t funktiona tunteina, ruudukon välit 0,5 h ja 0,5 A. Virta on 2,0 A ajan 0–1,5 h, sitten 1,0 A ajan 1,5–2,5 h ja sen jälkeen nolla."
+ "Kuvaaja mittakaavassa: akun latausvirta I ampeereina ajan t funktiona tunteina, ruudukon välit 0,5 h ja 0,5 A. Virta on 2,0 A ajan 0–1,5 h, sitten 1,0 A ajan 1,5–2,5 h ja sen jälkeen nolla.": "Kuvaaja mittakaavassa: akun latausvirta I ampeereina ajan t funktiona tunteina, ruudukon välit 0,5 h ja 0,5 A. Virta on 2,0 A ajan 0–1,5 h, sitten 1,0 A ajan 1,5–2,5 h ja sen jälkeen nolla.",
+ "Kuvaaja mittakaavassa: kannettavan tietokoneen akun latausvirta I ampeereina ajan t funktiona tunteina, ruudukon välit 0,5 h ja 0,5 A. Virta on 2,0 A ajan 0–1,0 h, sitten 1,5 A ajan 1,0–3,0 h, sitten 0,5 A ajan 3,0–4,0 h ja sen jälkeen nolla.": "Kuvaaja mittakaavassa: kannettavan tietokoneen akun latausvirta I ampeereina ajan t funktiona tunteina. Ruudukon välit ovat 0,5 h ja 0,5 A. Virta on 2,0 A ajan 0–1,0 h, sitten 1,5 A ajan 1,0–3,0 h, sitten 0,5 A ajan 3,0–4,0 h ja sen jälkeen nolla."
 }

@@ -110,6 +110,18 @@
       "answer": 90.0,
       "unit": "C",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-10-L1-09",
+      "level": 1,
+      "text": "Two point charges, $+5.0\\,\\text{nC}$ and $+8.0\\,\\text{nC}$, are $4.0\\,\\text{cm}$ apart. Look up Coulomb's constant $k$ in the MAFY table (mafytaulukot.fi) and calculate the magnitude of the electric force between the charges. Give the answer in millinewtons.",
+      "lookup": "MAFY",
+      "answer": 0.2247,
+      "unit": "mN",
+      "tolerance": 0.02,
+      "hints": [
+        "The value is in the MAFY tables, table *Luonnonvakiot* (natural constants)."
+      ]
     }
   ],
   "level2": [
@@ -280,6 +292,32 @@
           "feedback": "Here the effect of the distance has been read the wrong way round. The electric force weakens as the distance grows, because $r^2$ is in the denominator of the law, not in the numerator."
         }
       ]
+    },
+    {
+      "id": "fy6-10-L2-09",
+      "level": 2,
+      "text": "The graph shows the electric force $F$ between two identical, equally charged small spheres as a function of the distance $r$ between the centres of the spheres. Read the force from the graph when the distance is $4.0\\,\\text{cm}$, and use it to calculate the charge of each sphere. Give the answer in nanocoulombs.",
+      "figure": "fy6-10/check-graph",
+      "kind": [
+        "graph",
+        "data"
+      ],
+      "answer": 30.0,
+      "unit": "nC",
+      "tolerance": 0.05
+    },
+    {
+      "id": "fy6-10-L2-10",
+      "level": 2,
+      "text": "The graph shows the electric force $F$ between two pairs of charges, A and B, as a function of the distance $r$ between the centres. In pair A the charge of each sphere is $20\\,\\text{nC}$. In pair B the charge of one sphere is $20\\,\\text{nC}$ and that of the other is unknown, $q_\\text{B}$. All the charges have the same sign.\n\na) Read from the graph the force of pair A at a distance of $3.0\\,\\text{cm}$ and the distance at which the force of pair B is equally large.\n\nb) Use the readings of part a) and Coulomb's law to deduce $q_\\text{B}$. Give the answer in nanocoulombs.\n\nWrite the result of part b) in the answer box.",
+      "figure": "fy6-10/ex-pari",
+      "kind": [
+        "graph",
+        "reasoning"
+      ],
+      "answer": 80.0,
+      "unit": "nC",
+      "tolerance": 0.06
     }
   ],
   "level3": [

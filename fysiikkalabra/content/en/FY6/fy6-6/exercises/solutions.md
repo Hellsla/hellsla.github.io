@@ -215,3 +215,14 @@ $$\begin{aligned}
 \end{aligned}$$
 
 The ratio of the powers is $\tfrac{1.5\,\text{W}}{6.0\,\text{W}} = \tfrac{1}{4}$, that is, the power of the resistor $R_1$ decreases to one quarter. The voltage gives the same result: there is now only $6.0\,\text{V}$ across the resistor $R_1$, and $\tfrac{(6.0\,\text{V})^2}{24\,\Omega} = 1.5\,\text{W}$. The power does not stay the same, because the whole voltage of the source is no longer across the resistor, and it does not decrease only to one half, because the power depends on the square of the current.
+
+## fy6-6-L2-09
+**Given:** the steps of the graph: power $P$ as a function of time $t$
+**Asked:** the electrical energy $E$ changed in the plate in $12\,\text{min}$, in kilojoules
+**Principle:** When the power is constant, the electrical energy is $E = Pt$. The power changes in steps, so we calculate the energy of each step separately and add them up.
+**Reading the graph:** The graph is horizontal in three parts: $P_1 = 2000\,\text{W}$ for $0$–$3.0\,\text{min}$, $P_2 = 1000\,\text{W}$ for $3.0$–$8.0\,\text{min}$ and $P_3 = 500\,\text{W}$ for $8.0$–$12\,\text{min}$. The durations of the steps are $t_1 = 3.0\,\text{min}$, $t_2 = 5.0\,\text{min}$ and $t_3 = 4.0\,\text{min}$.
+**Formula:** $E = E_1 + E_2 + E_3 = P_1t_1 + P_2t_2 + P_3t_3$
+**Conversions:** $t_1 = 3.0 \cdot 60\,\text{s} = 180\,\text{s}$, $t_2 = 5.0 \cdot 60\,\text{s} = 300\,\text{s}$, $t_3 = 4.0 \cdot 60\,\text{s} = 240\,\text{s}$
+**Substitution:** $E = 2000\,\text{W} \cdot 180\,\text{s} + 1000\,\text{W} \cdot 300\,\text{s} + 500\,\text{W} \cdot 240\,\text{s} = 360\,\text{kJ} + 300\,\text{kJ} + 120\,\text{kJ} = 780\,\text{kJ}$
+**Answer:** $780\,\text{kJ}$, three significant figures, because the values of the steps are read exactly from the gridlines.
+**Reasonableness:** The average power is $780\,\text{kJ} : 720\,\text{s} \approx 1.08\,\text{kW}$, which lies between the largest and smallest power ($0.5$–$2.0\,\text{kW}$). The energy is also the area under the line of the graph.

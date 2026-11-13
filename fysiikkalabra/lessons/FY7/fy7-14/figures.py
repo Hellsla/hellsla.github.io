@@ -264,11 +264,54 @@ def scene():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "reflections": reflections, "phase": phase, "bands": bands, "graph": graph, "scene": scene}
+# --- exercise figures: reflectance curves with the thickness left out (question-safe variants of graph) ---
+def coating_curve():
+    """R(λ) of a lens with a MgF2 coating (1,38) on glass (1,52) whose design wavelength is not given."""
+    dq = 90.0
+    f = Fig("fy714-coating-curve", 340, "Kuvaaja mittakaavassa: kohtisuoraan tulevasta valosta heijastuvan valon osuus R "
+            "prosentteina aallonpituuden funktiona välillä 400–700 nm kameran linssille. Linssin lasin taitekerroin on "
+            "1,52, ja sen pinnalla on magnesiumfluoridipinnoite, jonka taitekerroin on 1,38. Vaakasuora musta viiva "
+            "on pinnoittamattoman lasin heijastus, vihreä käyrä pinnoitetun linssin heijastus. Pinnoitteen paksuutta "
+            "ei ole annettu.")
+    ax = Axes(f, (96, 286), (470, 64), x=(400, 700), y=(0, 5), xticks=[450 + 50 * k for k in range(6)],
+              yticks=[1, 2, 3, 4, 5], xlabel=r"\lambda\ (\text{nm})", ylabel=r"R\ (\%)",
+              xfmt=lambda v: fi(v) if v % 100 == 0 else "", origin_label=False)
+    f.tex(ax.X(400), 310, "400", "middle")
+    f.tex(80, 280, "0", "end")
+    bare = refl(0, 550, N_COAT, N_GLASS) * 100
+    ax.line([(400, bare), (700, bare)], INK, 3)
+    ax.curve(lambda l: refl(dq, l, N_COAT, N_GLASS) * 100, 400, 700, GOOD, 3)
+    f.tex(ax.X(700), ax.Y(bare) - 22, r"\text{ilman pinnoitetta}", "end", bg=True)
+    f.tex(ax.X(630), ax.Y(2.7), r"\text{MgF}_2\text{-pinnoite}", "middle", color=GOOD, bg=True)
+    return f.svg()
+
+
+def soap_curve():
+    """R(λ) of a soap film in air (1,33) whose thickness is not given."""
+    f = Fig("fy714-soap-curve", 340, "Kuvaaja mittakaavassa: kohtisuoraan tulevasta valkoisesta valosta heijastuvan "
+            "valon osuus R prosentteina aallonpituuden funktiona välillä 400–700 nm saippuakalvolle, jonka "
+            "taitekerroin on 1,33 ja jonka molemmin puolin on ilmaa. Käyrä on aaltomainen: siinä on huippuja ja "
+            "pohjia. Kalvon paksuutta ei ole annettu.")
+    ax = Axes(f, (96, 286), (470, 64), x=(400, 700), y=(0, 8), xticks=[450 + 50 * k for k in range(6)],
+              yticks=[2, 4, 6, 8], xlabel=r"\lambda\ (\text{nm})", ylabel=r"R\ (\%)",
+              xfmt=lambda v: fi(v) if v % 100 == 0 else "", origin_label=False)
+    f.tex(ax.X(400), 310, "400", "middle")
+    f.tex(80, 280, "0", "end")
+    ax.curve(lambda l: refl(350, l, N_SOAP, 1.0) * 100, 400, 700, RAY, 3)
+    f.tex(ax.X(690), ax.Y(7.2), r"\text{saippuakalvo}", "end", color=RAY, bg=True)
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "reflections": reflections, "phase": phase, "bands": bands, "graph": graph, "scene": scene,
+           "coating-curve": coating_curve, "soap-curve": soap_curve}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "reflections": "reveals: a soap film reflects at both surfaces, a half-wavelength shift only at the top one, extra path 2d",
     "phase": "reveals: a very thin soap film is dark (the waves cancel) and a film with 2nd = λ/2 reflects strongly",
     "bands": "reveals: the computed colours of a soap film (n = 1,33) for 0–1000 nm, black at 0, purple near 200 nm",
     "graph": "reveals: R of glass 4,3 % and with a 99,6 nm MgF2 layer 1,3 % at 550 nm, 2,2 % at 400 nm and 1,6 % at 700 nm",
+    "coating-curve": "safe: R(λ) of a MgF2 coating (1,38) on glass (1,52) and of bare glass, coating thickness not given; "
+                     "REUSE: reading the minimum and the bare-glass level (fy7-14-L2-08)",
+    "soap-curve": "safe: R(λ) of a soap film in air, 400–700 nm, thickness not given; REUSE: reading a maximum and a "
+                  "minimum to find the order and the thickness (fy7-14-L3-06)",
 }

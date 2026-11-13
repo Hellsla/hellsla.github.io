@@ -57,4 +57,12 @@ th = math.radians(10)
 F_35 = 0.80e-3 * g * math.tan(th)                         # tension balance: F = m g tan(theta) = 1,384 mN
 r_35 = 2 * 0.30 * math.sin(th)                            # separation r = 2 L sin(theta) = 0,1042 m
 a["fy6-10-L3-05"] = r_35 * (F_35 / K) ** 0.5 / nC         # q = r sqrt(F / k) = 40,9 nC
+# Figure and MAFY table tasks (teacher 2026-11-13)
+K_MAFY = 8.9875517923e9                                   # Coulomb's constant k from MAFY, table Luonnonvakiot
+a["fy6-10-L1-09"] = K_MAFY * 5.0 * nC * 8.0 * nC / (4.0 * cm) ** 2 * 1000   # 8,98755e9 · 40e-18 C^2 : 1,6e-3 m^2 = 0,2247 mN
+# fy6-10/check-graph: two equal charges, F read at r = 4,0 cm is 5,06 mN (the model value; (4,0 cm; 5,06 mN))
+a["fy6-10-L2-09"] = 4.0 * cm * (5.06e-3 / K) ** 0.5 / nC  # F = k q^2 / r^2, so q = r sqrt(F / k) = 0,040 m · 7,503e-7 C/m = 30,0 nC
+# fy6-10/ex-pari: pair A is 20 nC + 20 nC, pair B 20 nC + q_B; B has the force of A at 3,0 cm (4,0 mN) at r_B = 6,0 cm
+F_A3 = F(20 * nC, 20 * nC, 3.0 * cm)                      # 3,995 mN
+a["fy6-10-L2-10"] = F_A3 * (6.0 * cm) ** 2 / (K * 20 * nC) / nC   # q_B = F r_B^2 / (k q_A) = 80,0 nC
 print(json.dumps({k: float(f"{v:.6g}") for k, v in a.items()}))

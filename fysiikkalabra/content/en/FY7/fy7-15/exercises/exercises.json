@@ -117,6 +117,31 @@
       "answer": "Situation D ($100\\,\\text{W/m}^2$), situation E ($125\\,\\text{W/m}^2$), situation A ($150\\,\\text{W/m}^2$), situation B ($200\\,\\text{W/m}^2$), situation C ($240\\,\\text{W/m}^2$).",
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-15-L1-10",
+      "level": 1,
+      "text": "The figure shows the share $I : I_0$ of polarised light that passes through, as a function of the angle $\\theta$. Polarised light of intensity $400\\,\\text{W/m}^2$ arrives at an ideal polariser whose transmission axis is at $35^\\circ$ to the direction of polarisation of the light.\n\nRead from the graph what share of the light passes through, and calculate the intensity that comes through the polariser.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 268.404,
+      "unit": "W/m²",
+      "tolerance": 0.04,
+      "figure": "fy7-15/graph-task"
+    },
+    {
+      "id": "fy7-15-L1-11",
+      "level": 1,
+      "text": "Sunlight reflects from the surface of a crown glass plate. Look up the refractive index of crown glass in the MAFY table (mafytaulukot.fi). The refractive index of air is $1.00$. At what angle of incidence is the reflected light completely polarised? Give the answer in degrees.",
+      "lookup": "MAFY",
+      "answer": 56.6593,
+      "unit": "°",
+      "tolerance": 0.02,
+      "hints": [
+        "The value is in the MAFY tables, in the table *Taitekertoimia* (refractive indices)."
+      ]
     }
   ],
   "level2": [
@@ -275,6 +300,19 @@
       "answer": 53.7,
       "unit": "°",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-15-L2-08",
+      "level": 2,
+      "text": "The figure shows the line obtained when the light of a phone display was measured through a polarising film: the reading $E$ of a light sensor as a function of $\\cos^2\\theta$ of the angle of the film. The angle $\\theta$ is the angle between the transmission axis of the film and the direction of polarisation of the display. The reading includes the background light of the room.\n\nRead from the line at what angle $\\theta$ the reading of the sensor is $200\\,\\text{lx}$. Give the answer in degrees.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 44.2057,
+      "unit": "°",
+      "tolerance": 0.03,
+      "figure": "fy7-15/fit"
     }
   ],
   "level3": [

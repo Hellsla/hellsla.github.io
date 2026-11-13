@@ -125,6 +125,18 @@
           "feedback": "Here the watts and the minutes have been multiplied together and the result given in kilowatt-hours. Before multiplying, the power is converted to kilowatts and the time to hours."
         }
       ]
+    },
+    {
+      "id": "fy6-7-L1-10",
+      "level": 1,
+      "text": "The power of an electric radiator is $1.5\\,\\text{kW}$, and it is on for $2.0\\,\\text{h}$. Calculate the electrical energy the radiator uses, first in kilowatt-hours and then converted to joules: look up the conversion between the kilowatt-hour and the joule in the MAFY table (mafytaulukot.fi). Give the answer in megajoules.",
+      "lookup": "MAFY",
+      "answer": 10.8,
+      "unit": "MJ",
+      "tolerance": 0.04,
+      "hints": [
+        "The value is in the MAFY table *Yksikkömuunnoksia*."
+      ]
     }
   ],
   "level2": [
@@ -303,6 +315,15 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy6-7-L2-08",
+      "level": 2,
+      "text": "The graph shows the power of a tumble dryer during one drying program. The price of electricity is $18\\,\\text{c/kWh}$. How much does the electricity of the program cost? Read the needed values from the graph and answer in euros.",
+      "figure": "fy6-7/dryer",
+      "answer": 0.45,
+      "unit": "€",
+      "tolerance": 0.03
     }
   ],
   "level3": [

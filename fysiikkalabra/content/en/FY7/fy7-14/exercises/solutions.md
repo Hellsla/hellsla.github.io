@@ -159,6 +159,17 @@ The expression $\lambda : (4n)$ is obtained if the shift is forgotten, but it is
 **Answer:** $97.8\,\text{nm}$, three significant figures like the refractive index $1.38$ and the wavelength $540\,\text{nm}$. The coating is designed for the green wavelength $540\,\text{nm}$. The purple colour arises because the reflection is greatest at both ends of the graph: violet ($420\,\text{nm}$) is reflected $1.84\,\%$ and red ($700\,\text{nm}$) $1.64\,\%$, while green is reflected only $1.26\,\%$, that is, violet about $1.5$ times and red about $1.3$ times as much as green. A mixture of red and violet looks purple, whereas green passes through the glass.
 **Reasonableness:** Check: $4 \cdot 1.38 \cdot 97.83\,\text{nm} = 540\,\text{nm}$. The coating is a little thinner than the $99.6\,\text{nm}$ designed for $550\,\text{nm}$, because the wavelength is a little shorter. The coating does not cancel all wavelengths equally well, as stated in the chapter: the reflection at the edges is about $1.3$–$1.5$ times that in the middle, and the smallest reflection $1.26\,\%$ is close to the $1.3\,\%$ mentioned in the chapter.
 
+## fy7-14-L2-08
+**Given:** refractive index of the coating $1.38$, refractive index of the glass $1.52$, the reflected shares $R$ read from the figure at wavelengths $400$–$700\,\text{nm}$
+**Find:** by what percentage the coating reduces the reflection of uncoated glass at the point where the reflection is smallest
+**Principle:** No light is lost in the coating: destructive interference reduces the reflected share. The smallest reflection marks the wavelength for which the coating is designed. The share removed follows from comparing the reflection of the coated lens $R_\text{coat}$ with the reflection of uncoated glass $R_0$ at the same wavelength.
+**Reading the graph:** The reflection of uncoated glass is the horizontal black line, and $R_0 \approx 4.3\,\%$ is read from it. The green curve is cup-shaped. At its bottom, at about $500\,\text{nm}$, $R_\text{coat} \approx 1.3\,\%$ is read. The bottom is the lowest point of the curve, and the line is above it.
+**Formula:** share removed $= \dfrac{R_0 - R_\text{coat}}{R_0} = 1 - \dfrac{R_\text{coat}}{R_0}$
+**Conversions:** Not needed: both shares are read in percent, and the ratio has no unit.
+**Substitution:** $1 - \dfrac{1.3\,\%}{4.3\,\%} = 1 - 0.302 = 0.698 = 69.8\,\%$
+**Answer:** about $70\,\%$, two significant figures like the values read from the graph. The uncertainty of reading the graph affects the third figure.
+**Reasonableness:** The coating reduces the reflection by more than half, as in the chapter: the reflection falls from about $4.3\,\%$ to about $1.3\,\%$. The result is below $100\,\%$, so the coating does not cancel the reflection completely, which is reasonable because the refractive index $1.38$ of the coating is larger than the ideal $\sqrt{1.52} \approx 1.23$.
+
 ## fy7-14-L3-01
 **Given:** refractive index of the soap film $n = 1.33$, air on both sides, wavelength $\lambda = 589\,\text{nm}$, normal incidence; the film thickens from top to bottom, and the topmost part is black
 **Find:** the thickness $d$ of the film at the second dark band, in nanometres
@@ -209,3 +220,14 @@ The expression $\lambda : (4n)$ is obtained if the shift is forgotten, but it is
 **Substitution:** $\Delta x = \dfrac{15.2\,\text{mm} - 0.05\,\text{mm}}{8 - 0} = 1.894\,\text{mm}$. The thickness increases by $294.5\,\text{nm}$ from one fringe to the next. Over the distance $L$ there are $\dfrac{80\,\text{mm}}{1.894\,\text{mm}} = 42.24$ fringes, so $D = 42.24 \cdot 0.2945\,\mu\text{m} = 12.44\,\mu\text{m} \approx 12\,\mu\text{m}$.
 **Answer:** $12\,\mu\text{m}$, two significant figures, because the distance $L = 80\,\text{mm}$ is given with two digits and the line is fitted by eye. A fit by eye varies, so about $11.9$–$12.9\,\mu\text{m}$ is a good answer.
 **Reasonableness:** Check at the eighth fringe: the thickness of the air layer is $8 \cdot 294.5\,\text{nm} = 2.36\,\mu\text{m}$, and $\dfrac{2.36\,\mu\text{m}}{12.44\,\mu\text{m}} = 0.19 = \dfrac{15.2\,\text{mm}}{80\,\text{mm}}$, so the thickness of the wedge increases directly with the distance. The thickness of the foil is of the order of ten micrometres, like thin aluminium foil.
+
+## fy7-14-L3-06
+**Given:** refractive index of the soap film $n = 1.33$, air on both sides, normal incidence, graph $R(\lambda)$ for $400$–$700\,\text{nm}$; the thickness is not given
+**Find:** the order $k$ of the destructive condition and the thickness $d$ of the film in nanometres
+**Principle:** One reflection inverts the wave, so the reflection is at a minimum when $2nd = k\lambda_\text{min}$ and at a maximum when $2nd = (k' + \tfrac{1}{2})\lambda_\text{max}$. It is the same film, so the path difference $2nd$ is the same in both. Of two neighbouring extremes, the shorter wavelength fits into the path difference more times, so for the longer-wavelength maximum next to the minimum $k' = k - 1$. First $k$ is solved, then $d$.
+**Reading the graph:** In the visible range the curve has one minimum and one maximum to the right of it. The minimum is almost zero at $\lambda_\text{min} \approx 466\,\text{nm}$. The maximum is highest, about $7.7\,\%$, at $\lambda_\text{max} \approx 621\,\text{nm}$.
+**Formula:** $k\lambda_\text{min} = (k - \tfrac{1}{2})\lambda_\text{max}$, so $k = \dfrac{\lambda_\text{max}}{2(\lambda_\text{max} - \lambda_\text{min})}$; thickness $d = \dfrac{k\lambda_\text{min}}{2n}$
+**Conversions:** Not needed: the wavelengths and the thickness are both in nanometres.
+**Substitution:** $k = \dfrac{621\,\text{nm}}{2 \cdot (621\,\text{nm} - 466\,\text{nm})} = \dfrac{621}{310} = 2.003 \approx 2$, so $d = \dfrac{2 \cdot 466\,\text{nm}}{2 \cdot 1.33} = 350.4\,\text{nm}$
+**Answer:** $k = 2$ and $d \approx 350\,\text{nm}$, three significant figures like the refractive index $1.33$. The order must be a whole number, so it is rounded, and a reading error affects the thickness only a little.
+**Reasonableness:** Check: the maximum $(2 - \tfrac{1}{2}) \cdot 621\,\text{nm} = 931\,\text{nm} = 2 \cdot 466\,\text{nm}$ and $2nd = 2 \cdot 1.33 \cdot 350\,\text{nm} = 931\,\text{nm}$. The value $k = 1$ would put the minimum at $931\,\text{nm}$, in the infrared, so in the visible range the minimum is exactly $k = 2$. The thickness is below a micrometre, as for a thin film.

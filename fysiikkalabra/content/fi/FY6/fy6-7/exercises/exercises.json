@@ -125,6 +125,18 @@
           "feedback": "Tässä watit ja minuutit on kerrottu keskenään ja tulos merkitty kilowattitunneiksi. Ennen kertomista teho muutetaan kilowateiksi ja aika tunneiksi."
         }
       ]
+    },
+    {
+      "id": "fy6-7-L1-10",
+      "level": 1,
+      "text": "Sähköpatterin teho on $1{,}5\\,\\text{kW}$, ja se on päällä $2{,}0\\,\\text{h}$. Laske patterin käyttämä sähköenergia ensin kilowattitunteina ja muunna se sitten jouleiksi: hae kilowattitunnin ja joulen välinen muunnos MAFY-taulukosta (mafytaulukot.fi). Anna vastaus megajouleina.",
+      "lookup": "MAFY",
+      "answer": 10.8,
+      "unit": "MJ",
+      "tolerance": 0.04,
+      "hints": [
+        "Arvo löytyy MAFY-taulukon taulukosta *Yksikkömuunnoksia*."
+      ]
     }
   ],
   "level2": [
@@ -303,6 +315,15 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy6-7-L2-08",
+      "level": 2,
+      "text": "Kuvaajassa on kuivausrummun teho yhden kuivausohjelman aikana. Sähkön hinta on $18\\,\\text{snt/kWh}$. Paljonko ohjelman sähkö maksaa? Lue tarvittavat arvot kuvaajasta ja vastaa euroina.",
+      "figure": "fy6-7/dryer",
+      "answer": 0.45,
+      "unit": "€",
+      "tolerance": 0.03
     }
   ],
   "level3": [

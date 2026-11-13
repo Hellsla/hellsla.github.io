@@ -212,3 +212,24 @@ $G = 9.109 \cdot 10^{-31}\,\text{kg} \cdot 9.81\,\text{m/s}^2$
 $G \approx 8.9 \cdot 10^{-30}\,\text{N}$
 
 The weight is about $10^{-14}$ times the magnetic force, so only $\overline{F}_\text{m}$ is drawn in the force diagram. In diagram A the force points in the direction of the field, out of the page, although the magnetic force is perpendicular to the field. In diagram B the direction of the force is that for a positive charge, so the negative charge of the electron has been forgotten. In diagram D the force is along the velocity, although the magnetic force does not change the speed but bends the path of the electron.
+
+## fy7-2-L1-09
+**Given:** electron, $v = 4.0 \cdot 10^{6}\,\text{m/s}$ perpendicular to the field, $B = 0.80\,\text{mT}$, magnitude of the charge $|q| = e = 1.602 \cdot 10^{-19}\,\text{C}$; mass from the MAFY table *Hiukkasten ominaisuuksia*: $m = 9.109 \cdot 10^{-31}\,\text{kg}$
+**Find:** the radius $r$ of the circular path in centimetres
+**Principle:** The magnetic force is perpendicular to the velocity, so the electron moves on a circle and the magnetic force is its centripetal force.
+**Formula:** $|q|vB = \dfrac{mv^2}{r}$, so $r = \dfrac{mv}{|q|B}$
+**Conversions:** $B = 0.80\,\text{mT} = 0.80 \cdot 10^{-3}\,\text{T}$; finally $1\,\text{m} = 100\,\text{cm}$.
+**Substitution:** $r = \dfrac{9.109 \cdot 10^{-31}\,\text{kg} \cdot 4.0 \cdot 10^{6}\,\text{m/s}}{1.602 \cdot 10^{-19}\,\text{C} \cdot 0.80 \cdot 10^{-3}\,\text{T}} = 2.843 \cdot 10^{-2}\,\text{m} = 2.843\,\text{cm}$
+**Answer:** $2.8\,\text{cm}$, two significant figures like the speed and the field.
+**Reasonableness:** The result is of the same order as in the electron-beam tube of task $\text{fy7-2-L1-02}$ (millimetres). Here the speed is twice as large and the field about half as strong, so the radius is about four times as large as there; a size of centimetres fits.
+
+## fy7-2-L2-09
+**Given:** graph $r(v)$, $B = 0.20\,\text{T}$, $|q| = 1.602 \cdot 10^{-19}\,\text{C}$, $v = 1.5 \cdot 10^{6}\,\text{m/s}$, velocity perpendicular to the field
+**Find:** the mass $m$ of the particle in the form $\ldots \cdot 10^{-27}\,\text{kg}$
+**Principle:** The magnetic force acts as the centripetal force of the circular path, so the mass follows from the radius, the speed, the charge and the field.
+**Reading the graph:** At the speed $1.5 \cdot 10^{6}\,\text{m/s}$, that is at the value $1.5$ on the horizontal axis, the point is at the height $r = 15.7\,\text{cm}$ (between the numbers $15$ and $20$, slightly above $15$).
+**Formula:** $|q|vB = \dfrac{mv^2}{r}$, so $m = \dfrac{|q|Br}{v}$
+**Conversions:** $r = 15.7\,\text{cm} = 0.157\,\text{m}$.
+**Substitution:** $m = \dfrac{1.602 \cdot 10^{-19}\,\text{C} \cdot 0.20\,\text{T} \cdot 0.157\,\text{m}}{1.5 \cdot 10^{6}\,\text{m/s}} = 3.35 \cdot 10^{-27}\,\text{kg}$
+**Answer:** $3.4 \cdot 10^{-27}\,\text{kg}$ (reading from the graph gives about two significant figures).
+**Reasonableness:** The mass is about twice the mass of the proton, $1.673 \cdot 10^{-27}\,\text{kg}$, so the particle can be a deuteron, whose charge is the same as that of the proton.

@@ -87,6 +87,18 @@
       "answer": 8.5714,
       "unit": "cm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-9-L1-09",
+      "level": 1,
+      "text": "Kuuman tähden spektrin huippu on ultraviolettialueella aallonpituudella $350\\,\\text{nm}$. Oleta, että tähti säteilee kuin musta kappale. Hae Wienin siirtymälain vakio MAFY-taulukosta (mafytaulukot.fi). Kuinka suuri on tähden pintalämpötila?",
+      "lookup": "MAFY",
+      "answer": 8279.35,
+      "unit": "K",
+      "tolerance": 0.02,
+      "hints": [
+        "Arvo löytyy MAFY-taulukon taulukosta *Luonnonvakiot*."
+      ]
     }
   ],
   "level2": [
@@ -260,6 +272,15 @@
           "feedback": "Tässä riippuvuus luetaan väärin päin, ikään kuin huippu pitenisi lämpötilan kasvaessa. Huipun aallonpituus on kääntäen verrannollinen lämpötilaan. Lyhyempi huippu asetuksella 4 tarkoittaa siis korkeampaa lämpötilaa, ja suhde on $4{,}10 : 2{,}90 \\approx 1{,}4$."
         }
       ]
+    },
+    {
+      "id": "fy7-9-L2-09",
+      "level": 2,
+      "text": "Kuvaajassa on hehkuvan kappaleen lähettämän säteilyn spektri. Kappale säteilee kuin musta kappale. Kappale jäähdytetään, kunnes sen pintalämpötila on $1000\\,\\text{K}$. Kuinka monta mikrometriä spektrin huippu siirtyy? Lue tarvittava arvo kuvaajasta.",
+      "answer": 1.698,
+      "unit": "µm",
+      "tolerance": 0.02,
+      "figure": "fy7-9/spectrum-task"
     }
   ],
   "level3": [

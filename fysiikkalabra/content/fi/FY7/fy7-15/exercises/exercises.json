@@ -117,6 +117,31 @@
       "answer": "Tilanne D ($100\\,\\text{W/m}^2$), tilanne E ($125\\,\\text{W/m}^2$), tilanne A ($150\\,\\text{W/m}^2$), tilanne B ($200\\,\\text{W/m}^2$), tilanne C ($240\\,\\text{W/m}^2$).",
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-15-L1-10",
+      "level": 1,
+      "text": "Kuvassa on polarisoituneen valon läpäisemän osuuden $I : I_0$ kuvaaja kulman $\\theta$ funktiona. Polarisoituneen valon intensiteetti on $400\\,\\text{W/m}^2$, ja se tulee ihanteelliseen polarisaattoriin, jonka läpäisysuunta on kulmassa $35^\\circ$ valon polarisaatiosuuntaan nähden.\n\nLue kuvaajasta, kuinka suuri osuus valosta pääsee läpi, ja laske polarisaattorin läpi tuleva intensiteetti.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 268.404,
+      "unit": "W/m²",
+      "tolerance": 0.04,
+      "figure": "fy7-15/graph-task"
+    },
+    {
+      "id": "fy7-15-L1-11",
+      "level": 1,
+      "text": "Auringonvalo heijastuu kruunulasilevyn pinnasta. Hae kruunulasin taitekerroin MAFY-taulukosta (mafytaulukot.fi). Ilman taitekerroin on $1{,}00$. Millä tulokulmalla heijastunut valo on täysin polarisoitunutta? Anna vastaus asteina.",
+      "lookup": "MAFY",
+      "answer": 56.6593,
+      "unit": "°",
+      "tolerance": 0.02,
+      "hints": [
+        "Arvo löytyy MAFY-taulukon taulukosta *Taitekertoimia*."
+      ]
     }
   ],
   "level2": [
@@ -275,6 +300,19 @@
       "answer": 53.7,
       "unit": "°",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-15-L2-08",
+      "level": 2,
+      "text": "Kuvassa on puhelimen näytön valoa polarisaattorikalvon läpi mitattaessa saatu suora: valoanturin lukema $E$ kalvon kulman kosinin neliön $\\cos^2\\theta$ funktiona. Kulma $\\theta$ on kalvon läpäisysuunnan ja näytön polarisaatiosuunnan välinen kulma. Lukema sisältää huoneen taustavalon.\n\nLue suoralta, millä kulmalla $\\theta$ anturin lukema on $200\\,\\text{lx}$. Anna vastaus asteina.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 44.2057,
+      "unit": "°",
+      "tolerance": 0.03,
+      "figure": "fy7-15/fit"
     }
   ],
   "level3": [

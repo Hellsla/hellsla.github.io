@@ -93,6 +93,18 @@
       "answer": 25.4996,
       "unit": "°",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-10-L1-09",
+      "level": 1,
+      "text": "Valonsäde tulee ilmasta veden pintaan. Tulokulma on $52{,}0^\\circ$. Hae veden taitekerroin MAFY-taulukosta ja laske taitekulma vedessä. Ilman taitekerroin on $1{,}00$.",
+      "lookup": "MAFY",
+      "answer": 36.2391,
+      "unit": "°",
+      "tolerance": 0.02,
+      "hints": [
+        "Arvo löytyy MAFY-taulukon taulukosta *Taitekertoimia*."
+      ]
     }
   ],
   "level2": [
@@ -236,6 +248,15 @@
           "feedback": "Laskussa on virhe rivillä 3. Tulos $19{,}2^\\circ$ on pienempi kuin tulokulma $30{,}0^\\circ$. Rivin 1 mukaan säteen pitää kuitenkin taittua normaalista poispäin. Taittumislaissa $n_1$ kuuluu aineelle, josta valo tulee."
         }
       ]
+    },
+    {
+      "id": "fy7-10-L2-09",
+      "level": 2,
+      "text": "Kuvassa on laserkokeen mittaustulokset, kun valo tulee ilmasta akryyliin. Pisteisiin on sovitettu suora. Lue suoralta kaksi pistettä, joissa $\\sin\\alpha_2$ on $0{,}20$ ja $0{,}60$. Laske suoran kulmakerroin. Sen avulla saat akryylin taitekertoimen, kun ilman taitekerroin on $1{,}00$. Kuinka suuri on taitekulma akryylissä, kun valo tulee ilmasta tulokulmassa $35{,}0^\\circ$?",
+      "figure": "fy7-10/fit",
+      "answer": 22.6407,
+      "unit": "°",
+      "tolerance": 0.03
     }
   ],
   "level3": [

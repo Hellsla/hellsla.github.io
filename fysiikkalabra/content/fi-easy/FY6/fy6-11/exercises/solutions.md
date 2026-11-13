@@ -49,6 +49,16 @@
 **Vastaus:** $3{,}0 \cdot 10^{4}\,\text{N/C}$, kaksi merkitsevää numeroa, koska kuvaajasta luetaan ruudukon risteys, jossa voima on $120\,\mu\text{N}$ kahden merkitsevän numeron tarkkuudella.
 **Järkevyys:** Mittauspiste $(3{,}0\,\text{nC};\ 91\,\mu\text{N})$ antaa lähes saman arvon: $91\,\mu\text{N} : 3{,}0\,\text{nC} \approx 3{,}0 \cdot 10^{4}\,\text{N/C}$. Suora sovitettiin origon kautta. Mallin $F = qE$ mukaan varaukseton pallo ei tunne homogeenisessa kentässä sähköistä voimaa, vaikka kenttä on olemassa.
 
+## fy6-11-L1-09
+**Annettu:** levyjen etäisyys $d = 2{,}5\,\text{mm}$. Ilman läpilyöntikestävyys MAFY-taulukosta (Eristeiden läpilyöntikestävyyksiä, ilma) on $E = 3{,}0\,\text{kV/mm}$.
+**Kysytty:** suurin jännite $U$ kilovoltteina
+**Periaate:** Levyjen välinen kenttä on homogeeninen, joten $E = U : d$. Ilmaan syntyy kipinä, kun kentän voimakkuus on yhtä suuri kuin läpilyöntikestävyys. Jännite on suurin mahdollinen, kun $E$ on yhtä suuri kuin läpilyöntikestävyys.
+**Kaava:** $E = \dfrac{U}{d}$, joten $U = Ed$
+**Muunnokset:** Yksiköitä ei tarvitse muuttaa, koska $\text{kV/mm} \cdot \text{mm} = \text{kV}$.
+**Sijoitus:** $U = 3{,}0\,\dfrac{\text{kV}}{\text{mm}} \cdot 2{,}5\,\text{mm} = 7{,}5\,\text{kV}$
+**Vastaus:** $7{,}5\,\text{kV}$. Vastauksessa on kaksi merkitsevää numeroa, kuten lähtötiedoissa. Läpilyöntikestävyys $3{,}0\,\text{kV/mm}$ on MAFY-taulukosta (Eristeiden läpilyöntikestävyyksiä).
+**Järkevyys:** Ilmassa kipinä syntyy noin kolmella kilovoltilla jokaista millimetriä kohti. Raossa, joka on $2{,}5\,\text{mm}$, jännite on noin $2{,}5 \cdot 3\,\text{kV} \approx 7{,}5\,\text{kV}$. Tulos sopii tähän.
+
 ## fy6-11-L2-01
 **Annettu:** levyjen välinen jännite $U = 4{,}5\,\text{kV}$, levyjen etäisyys $d = 9{,}0\,\text{mm}$, pallon varaus $q = 4{,}0\,\text{nC}$
 **Kysytty:** palloon kohdistuva sähköinen voima $F$ millinewtoneina

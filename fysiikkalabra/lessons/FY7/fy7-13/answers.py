@@ -52,4 +52,13 @@ a["fy7-13-L3-04"] = 0.250e-3 * sin(atan(x1 / 2.00)) * 1e9    # λ = d sin θ = 6
 dd = [532e-9 / sin(atan(x2 / 100 / 2 / (Lc / 100))) for Lc, x2 in
       [(4.0, 8.3), (6.0, 12.5), (8.0, 16.7), (10.0, 20.9)]]   # DVD: tan θ = x : L, d = λ / sin θ per row
 a["fy7-13-L3-05"] = sum(dd) / len(dd) * 1e6                  # mean d = 0,7374 µm
+# Figure and MAFY tasks (teacher 2026-11-12/13)
+d600m = mm / 600
+a["fy7-13-L1-09"] = degrees(asin(587.56e-9 / d600m))         # MAFY helium line 587,56 nm, 600 lines/mm, k = 1: sin θ = 0,3525 -> 20,64°
+# figure setup-q: 400 lines/mm, L = 1,20 m, k = 2 spot read at x_2 = 70,0 cm on the ruler
+th2 = atan(0.700 / 1.20)
+a["fy7-13-L2-09"] = (mm / 400) * sin(th2) / 2 * 1e9          # λ = d sin θ_2 / 2 = 629,6 nm
+# figure spectrum-q: L = 1,00 m, red edge (700 nm) of the first-order spectrum read at 17,8 cm
+th = atan(0.178 / 1.00)
+a["fy7-13-L2-10"] = 1e-3 / (700e-9 / sin(th))                # N = 1 mm : d = 250,2 lines/mm
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

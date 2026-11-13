@@ -212,3 +212,25 @@ Suurella alueella virheraja on siis noin kaksikymmenkertainen. Lopullinen virta 
 Rivi 4 on oikein: jännitemittari on lampun rinnalla. Alueella $2\,\text{V}$ näyttö näyttää enintään $1{,}999\,\text{V}$, joten $4{,}38\,\text{V}$ antaisi OL. Pienin alue, jolle lukema mahtuu, on $20\,\text{V}$.
 
 Oikea vastaus on rivi 3.
+
+## fy6-2-L2-09
+**Annettu:** kuva: näytön lukema $U = 1{,}37\,\text{V}$ ja valitsin alueella $20\,\text{V}$; virheraja $\pm(0{,}5\,\% + 2\ \text{numeroa})$
+**Kysytty:** lukeman virheraja $\Delta U$ voltteina
+**Periaate:** Mittarin virheraja on osuus lukemasta ja lisäksi kaksi viimeisen numeron askelta. Lukema ja alue luetaan kuvasta, koska resoluutio riippuu alueesta.
+**Kuvaajan lukeminen:** Näytössä on $1{,}37\,\text{V}$, eli lukema on $U = 1{,}37\,\text{V}$. Valitsimen osoitin on alueella $20\,\text{V}$. Näytössä on kaksi desimaalia, joten viimeisen numeron askel eli resoluutio on $r = 0{,}01\,\text{V}$.
+**Kaava:** $\Delta U = p \cdot U + n \cdot r$
+**Muunnokset:** $p = 0{,}5\,\% = 0{,}005$. Kaikki jännitteet ovat voltteina.
+**Sijoitus:** $\Delta U = 0{,}005 \cdot 1{,}37\,\text{V} + 2 \cdot 0{,}01\,\text{V} = 0{,}00685\,\text{V} + 0{,}02\,\text{V} = 0{,}02685\,\text{V}$
+**Vastaus:** $\Delta U \approx 0{,}03\,\text{V}$, joten $U = 1{,}37\,\text{V} \pm 0{,}03\,\text{V}$. Virheraja pyöristetään yhteen merkitsevään numeroon.
+**Järkevyys:** Numeroiden osuus $0{,}02\,\text{V}$ on suurin osa virherajasta, koska lukema on pieni alueeseen $20\,\text{V}$ verrattuna. Virheraja on noin $2\,\%$ lukemasta, ja sama tulos saadaan laskulla $0{,}03\,\text{V} : 1{,}37\,\text{V} = 0{,}02$.
+
+## fy6-2-L2-10
+**Annettu:** kuva: lukema $U = 1{,}37\,\text{V}$ alueella $20\,\text{V}$; valmistajan arvo $U_0 = 1{,}45\,\text{V}$; virheraja $\pm(0{,}5\,\% + 2\ \text{numeroa})$
+**Kysytty:** suhde $\dfrac{U_0 - U}{\Delta U}$ puhtaana lukuna ja johtopäätös
+**Periaate:** Lukema sopii yhteen nimellisarvon kanssa, jos arvojen ero on enintään lukeman virheraja. Siksi eroa verrataan virherajaan.
+**Kuvaajan lukeminen:** Näytön lukema on $U = 1{,}37\,\text{V}$ ja valitsin on alueella $20\,\text{V}$. Näytössä on kaksi desimaalia, joten resoluutio on $r = 0{,}01\,\text{V}$.
+**Kaava:** $\Delta U = p \cdot U + n \cdot r$ ja $\dfrac{U_0 - U}{\Delta U}$
+**Muunnokset:** $p = 0{,}5\,\% = 0{,}005$. Kaikki jännitteet ovat voltteina.
+**Sijoitus:** $\Delta U = 0{,}005 \cdot 1{,}37\,\text{V} + 2 \cdot 0{,}01\,\text{V} = 0{,}02685\,\text{V}$ ja ero on $U_0 - U = 1{,}45\,\text{V} - 1{,}37\,\text{V} = 0{,}08\,\text{V}$, joten $\dfrac{0{,}08\,\text{V}}{0{,}02685\,\text{V}} = 2{,}98$
+**Vastaus:** noin $3{,}0$ kertaa. Ero on kolminkertainen virherajaan verrattuna eli suurempi kuin virheraja, joten lukema ei sovi yhteen valmistajan arvon kanssa. Mittarin virheraja ei selitä eroa.
+**Järkevyys:** Lukeman virheraja antaa välin $1{,}34\,\text{V}$–$1{,}40\,\text{V}$, ja $1{,}45\,\text{V}$ on sen ulkopuolella. Se sopii suhteeseen $3{,}0 > 1$. Syy voi olla esimerkiksi se, että lamppua käytetään eri jännitteellä kuin nimellisarvo. Mittari ei ole syy.

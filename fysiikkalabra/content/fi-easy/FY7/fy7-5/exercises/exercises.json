@@ -279,6 +279,15 @@
           "feedback": "Oikein. Kaava $e = vBl$ pätee, kun nopeus, tanko ja kenttä ovat keskenään kohtisuorassa. Kentän suuntaan liikkuvaan elektroniin ei vaikuta magneettista voimaa. Tangon päihin ei kerry varausta, ja jännite on nolla."
         }
       ]
+    },
+    {
+      "id": "fy7-5-L2-08",
+      "level": 2,
+      "text": "Käämissä on $200$ kierrosta. Kuvaajassa on yhden kierroksen läpi kulkeva magneettivuo $\\Phi$ ajan $t$ funktiona. Mittauksen aikana vuon suunta kääntyy. Siksi vuo saa myös negatiivisia arvoja. Kuinka suuri on käämin keskimääräisen induktiojännitteen itseisarvo aikavälillä $0$–$0{,}40\\,\\text{s}$? Lue tarvittavat arvot kuvaajasta.",
+      "figure": "fy7-5/flux-task-2",
+      "answer": 4.0,
+      "unit": "V",
+      "tolerance": 0.02
     }
   ],
   "level3": [

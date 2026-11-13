@@ -45,5 +45,7 @@ a["fy6-6-L3-04"] = 253 ** 2 / R2_t                        # at 253 V: R2 takes 8
 R_heater = 230 ** 2 / 2000                                # 2,0 kW heater at 230 V: 26,45 ohm
 I_thin = 230 / (R_heater + 2.4)                           # thin cord in series: 7,97 A
 a["fy6-6-L3-05"] = 2.4 * I_thin ** 2                      # thin cord P = R I^2 = 152,5 W (thick: 0,71 ohm, 8,47 A -> 50,9 W)
+# figure fy6-6/ex-pt: P = 2000 W for 0-3,0 min, 1000 W for 3,0-8,0 min, 500 W for 8,0-12 min
+a["fy6-6-L2-09"] = (2000 * 3.0 * 60 + 1000 * 5.0 * 60 + 500 * 4.0 * 60) / 1000   # E = sum P t = 360 kJ + 300 kJ + 120 kJ = 780 kJ
 # L2-08 is multiple choice (prediction): R1 = 24 ohm on 12 V, then R2 = 24 ohm in series; I 0,50 A -> 0,25 A, P1 6,0 W -> 1,5 W (a quarter); no number
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

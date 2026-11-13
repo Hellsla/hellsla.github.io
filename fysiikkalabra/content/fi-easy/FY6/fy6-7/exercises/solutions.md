@@ -234,3 +234,24 @@ $$\begin{aligned}
 \end{aligned}$$
 
 Uuni käyttää noin $0{,}060\,\text{kWh}$ eli $60\,\text{Wh}$ sähköenergiaa. Suuruusluokka on siis sadasosia kilowattitunnista. Väärät vaihtoehdot syntyvät yksikkövirheistä. Minuuttien jakaminen luvulla $3600$ antaa $0{,}0010\,\text{kWh}$. Minuuttien sijoittaminen tunteina antaa $3{,}6\,\text{kWh}$. Wattien sijoittaminen kilowatteina antaa $60\,\text{kWh}$. Wattien ja minuuttien tulo antaa $3600\,\text{kWh}$. Järkevyys: yhden kilowatin laite käyttää tunnissa $1\,\text{kWh}$, ja kolme minuuttia on vain $\tfrac{1}{20}$ tunnista.
+
+## fy6-7-L1-10
+**Annettu:** teho $P = 1{,}5\,\text{kW}$, aika $t = 2{,}0\,\text{h}$; muunnos MAFY-taulukosta (Yksikkömuunnoksia, energia/työ, kilowattitunti) $1\,\text{kWh} = 3{,}6 \cdot 10^{6}\,\text{J}$
+**Kysytty:** energia $E$ megajouleina
+**Periaate:** Patterin teho pysyy samana. Energia on siis teho kertaa aika, $E = Pt$. Kun teho on kilowatteina ja aika tunteina, energia tulee kilowattitunteina. Joulet saadaan kertomalla kilowattitunnit MAFY-taulukon muunnoskertoimella.
+**Kaava:** $E = Pt$
+**Muunnokset:** $1\,\text{kWh} = 3{,}6 \cdot 10^{6}\,\text{J} = 3{,}6\,\text{MJ}$
+**Sijoitus:** $E = 1{,}5\,\text{kW} \cdot 2{,}0\,\text{h} = 3{,}0\,\text{kWh}$ ja $3{,}0\,\text{kWh} \cdot 3{,}6\,\tfrac{\text{MJ}}{\text{kWh}} = 10{,}8\,\text{MJ}$
+**Vastaus:** $11\,\text{MJ}$, kaksi merkitsevää numeroa kuten tehossa $1{,}5\,\text{kW}$ ja ajassa $2{,}0\,\text{h}$. Muunnoskerroin on MAFY-taulukosta (Yksikkömuunnoksia), ja muunnos $1\,\text{kWh} = 3{,}6\,\text{MJ}$ on tarkka. Vastaus kelpaa, kun se on noin $\pm 4\,\%$ sisällä.
+**Järkevyys:** Yksi kilowattitunti on $3{,}6\,\text{MJ}$, joten $3{,}0\,\text{kWh}$ on noin $3 \cdot 4\,\text{MJ} = 12\,\text{MJ}$, hieman vähemmän. Tulos $10{,}8\,\text{MJ}$ sopii tähän.
+
+## fy6-7-L2-08
+**Annettu:** kuvaajan $(t, P)$ tehot ja ajat kuivausohjelman kolmessa vaiheessa; hinta $a = 18\,\text{snt/kWh}$
+**Kysytty:** ohjelman sähkön hinta $K$ euroina
+**Periaate:** Jokaisessa vaiheessa teho pysyy samana. Vaiheen energia on teho kertaa vaiheen kesto. Se on kuvaajan alle jäävän suorakulmion pinta-ala. Koko energia on vaiheiden energioiden summa. Hinta on hinta kertaa energia.
+**Kuvaajan lukeminen:** Kuumennuksessa teho on $2{,}4\,\text{kW}$ välillä $0$–$0{,}5\,\text{h}$, joten kesto on $0{,}5\,\text{h}$. Kuivauksessa teho on $1{,}2\,\text{kW}$ välillä $0{,}5$–$1{,}5\,\text{h}$ eli $1{,}0\,\text{h}$. Jäähdytyksessä teho on $0{,}2\,\text{kW}$ välillä $1{,}5$–$2{,}0\,\text{h}$ eli $0{,}5\,\text{h}$.
+**Kaava:** $E = P_1 t_1 + P_2 t_2 + P_3 t_3$ ja $K = aE$
+**Muunnokset:** $a = 18\,\text{snt/kWh} = 0{,}18\,\text{€/kWh}$
+**Sijoitus:** $E = 2{,}4\,\text{kW} \cdot 0{,}5\,\text{h} + 1{,}2\,\text{kW} \cdot 1{,}0\,\text{h} + 0{,}2\,\text{kW} \cdot 0{,}5\,\text{h} = 1{,}2\,\text{kWh} + 1{,}2\,\text{kWh} + 0{,}10\,\text{kWh} = 2{,}5\,\text{kWh}$ ja $K = 0{,}18\,\tfrac{\text{€}}{\text{kWh}} \cdot 2{,}5\,\text{kWh} = 0{,}45\,\text{€}$
+**Vastaus:** $0{,}45\,\text{€}$, kaksi merkitsevää numeroa, koska arvot luetaan $0{,}4\,\text{kW}$:n ja $0{,}25\,\text{h}$:n ruudukkoviivoilta.
+**Järkevyys:** Kahden tunnin ohjelma keskimäärin noin $1{,}25\,\text{kW}$:n teholla antaisi $2{,}5\,\text{kWh}$. Se maksaa noin $2{,}5 \cdot 18\,\text{snt} = 45\,\text{snt}$. Se on alle euron.

@@ -93,6 +93,18 @@
       "answer": 4,
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-13-L1-09",
+      "level": 1,
+      "text": "The yellow spectral line of a helium lamp hits a grating with $600$ lines per millimetre perpendicularly. Look up the wavelength of the line in the MAFY table (mafytaulukot.fi). At what angle from the direction of the central maximum is the first-order maximum? Give the answer in degrees.",
+      "lookup": "MAFY",
+      "answer": 20.6425,
+      "unit": "°",
+      "tolerance": 0.02,
+      "hints": [
+        "The value is in the MAFY tables, in the table *Spektriviivoja* (spectral lines)."
+      ]
     }
   ],
   "level2": [
@@ -260,6 +272,32 @@
           "feedback": "Here the denser grating has been assumed to bend the light less. Three times the line density makes the grating constant $d$ a third of the original, so $\\sin\\theta = \\lambda : d$ becomes three times as large."
         }
       ]
+    },
+    {
+      "id": "fy7-13-L2-09",
+      "level": 2,
+      "text": "A student measures the wavelength of a laser with a grating of $400$ lines per millimetre. The laser beam hits the grating perpendicularly, and the screen is perpendicular to the beam as in the figure. A centimetre scale on the edge of the screen has its zero at the central maximum.\n\nRead from the figure the position of the second-order maximum and the distance from the grating to the screen, and use them to calculate the wavelength of the laser. Give the answer in nanometres.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 629.8388,
+      "unit": "nm",
+      "tolerance": 0.04,
+      "figure": "fy7-13/setup-q"
+    },
+    {
+      "id": "fy7-13-L2-10",
+      "level": 2,
+      "text": "White light passes perpendicularly through a grating whose line density is not known. The screen is $1.00\\,\\text{m}$ from the grating, and the figure shows the screen from the front with a centimetre scale. On both sides of the white central maximum there is a first-order spectrum.\n\nRead from the figure the position of the red outer edge of the spectrum. The wavelength of the red edge is $700\\,\\text{nm}$. Calculate how many lines per millimetre the grating has.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 250.3506,
+      "unit": "lines/mm",
+      "tolerance": 0.04,
+      "figure": "fy7-13/spectrum-q"
     }
   ],
   "level3": [

@@ -289,6 +289,24 @@
           "feedback": "Tarkista virherajat: laske virran virheraja kummallakin virta-alueella."
         }
       ]
+    },
+    {
+      "id": "fy6-2-L2-09",
+      "level": 2,
+      "text": "Kuvassa on yleismittarin näyttö ja valitsin, kun mittarilla mitataan lampun jännitettä. Jännitealueiden virheraja on $\\pm(0{,}5\\,\\% + 2\\ \\text{numeroa})$, ja alueen resoluutio on näytön viimeisen numeron askel. Lue kuvasta lukema ja mittausalue ja laske lukeman virheraja. Anna vastaus voltteina.",
+      "figure": "fy6-2/multimeter-task",
+      "answer": 0.02685,
+      "unit": "V",
+      "tolerance": 0.12
+    },
+    {
+      "id": "fy6-2-L2-10",
+      "level": 2,
+      "text": "Kuvan yleismittarilla mitataan lampun jännite. Lampun valmistaja ilmoittaa nimellisjännitteeksi $1{,}45\\,\\text{V}$. Jännitealueiden virheraja on $\\pm(0{,}5\\,\\% + 2\\ \\text{numeroa})$, ja alueen resoluutio on näytön viimeisen numeron askel. Kuinka monta kertaa lukeman virheraja mahtuu valmistajan arvon ja lukeman erotukseen? Tulos kertoo, onko lukema sopusoinnussa nimellisarvon kanssa.",
+      "figure": "fy6-2/multimeter-task",
+      "answer": 2.98,
+      "unit": "",
+      "tolerance": 0.1
     }
   ],
   "level3": [

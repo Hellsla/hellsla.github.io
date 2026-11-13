@@ -246,6 +246,14 @@ def ex_current():
     return f.svg()
 
 
+def ex_current2():
+    f = new("fy69-excurrent2", 330, "Kuvaaja mittakaavassa: kannettavan tietokoneen akun latausvirta I ampeereina ajan t funktiona tunteina, ruudukon välit 0,5 h ja 0,5 A. Virta on 2,0 A ajan 0–1,0 h, sitten 1,5 A ajan 1,0–3,0 h, sitten 0,5 A ajan 3,0–4,0 h ja sen jälkeen nolla.")
+    ax = Axes(f, (92, 280), (480, 56), x=(0, 4.5), y=(0, 2.5), xticks=[0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5],
+              yticks=[0.5, 1, 1.5, 2, 2.5], xlabel=r"t\ (\text{h})", ylabel=r"I\ (\text{A})")
+    ax.line([(0, 2.0), (1.0, 2.0), (1.0, 1.5), (3.0, 1.5), (3.0, 0.5), (4.0, 0.5), (4.0, 0), (4.45, 0)], CUR, 3)
+    return f.svg()
+
+
 # --- opening illustration: a phone charging on a table ----------------------------------------------------------
 def hero():
     f = H.hero("fy69-hero", "Kuvitus: älypuhelin latautuu puisella pöydällä illalla. Puhelimesta kulkee johto seinän "
@@ -296,7 +304,7 @@ def hero():
 
 
 FIGURES = {"hero": hero, "purku-lataus": purku_lataus, "kapasiteetti": capacity, "latauspiiri": circuit,
-           "potentiaali": potential, "energia": energy_flow, "ex-current": ex_current}
+           "potentiaali": potential, "energia": energy_flow, "ex-current": ex_current, "ex-current2": ex_current2}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "hero": "decorative",
@@ -306,4 +314,5 @@ REUSE = {
     "potentiaali": "reveals: the potential round a charging loop, 4,5 V charger, drops 0,88 V, 0,22 V and 3,40 V",
     "energia": "reveals: one full charge, 9,0 Wh from the charger, 7,6 Wh stored, 1,1 Wh and 0,3 Wh to internal energy",
     "ex-current": "safe: a charging current of 2,0 A for 1,5 h and 1,0 A for 1,0 h, the charge not written",
+    "ex-current2": "safe: a charging current of 2,0 A for 1,0 h, 1,5 A for 2,0 h and 0,5 A for 1,0 h, the charge not written",
 }

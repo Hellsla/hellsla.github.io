@@ -47,4 +47,6 @@ a["fy6-12-L3-04"] = 0.5 * acc34 * t34 ** 2 * 1000             # 2,78 mm (< d/2 =
 frac = [100, 98, 71, 22, 3, 0]                                # % passing at U_v = 0, 20, ..., 100 V
 Ek5 = sum((frac[i] - frac[i + 1]) / 100 * (20 * i + 10) for i in range(5))   # 48,8 eV
 a["fy6-12-L3-05"] = math.sqrt(2 * Ek5 * e / m_e)              # 4,14e6 m/s
+# L2-09 (figure fy6-12/ex-vgraph): electron from rest at x = 1,0 cm (50 V) to the + plate (250 V): U = 200 V, v = sqrt(2 e U / m)
+a["fy6-12-L2-09"] = math.sqrt(2 * e * (250 - 50) / m_e)      # 8,387e6 m/s
 print(json.dumps({k: float(f"{v:.6g}") for k, v in a.items()}))
