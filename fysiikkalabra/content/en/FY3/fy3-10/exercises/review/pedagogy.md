@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: ec42002a596881a5
-Mode: full (translation review against the reviewed Finnish set, teacher procedure 2026-10-28)
-Round 2
+CONTENT-HASH: 3e385c81597336a2
+SCOPE: delta added-exercise from ec42002a596881a5 base 81db4a6fd727
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-(none)
+1. L1-09 needs n = m/M and pV = nRT plus two conversions; that is the same load as L1-05 (CO2 cylinder), so it is at the upper edge of level 1. The lookup is the new skill; keep it, but do not add more like it at level 1.
+2. L2-09 mentions vessel A in the text but never uses it; the statement "Read the values you need" is enough, but a sentence "ignore vessel A" or a second part would remove the idle distractor.
 
 ## Checked
-- delta review 2026-11-07 round 2 (follow-up consistency edits): L2-08 and L1-08 Periaate no longer say pV = nRT requires base units: units must match R's unit, Pa with m³ (or kPa with l), temperature always in kelvins; consistent with the inquiry feedback and the lesson, and the rest of each solution (Pa and m³ used) still follows from it.
-- fy3-10-L2-08 (en): same task structure and scaffolding as fi; each distractor feedback names its misconception and does not give the answer away before the choice.
-- Language: natural English, decimal point, same register as the rest of the set .
-- Workload and level fit L2; solution is learnable (staged, with a reasonableness check).
+- L1-09: lookup of M is hinted with the table's name; situation then question; solution symbolic first, units, a sound reasonableness check (about 30 atm).
+- L2-09: graph reading (grid points listed in the solution) plus ideal gas law is level 2; the figure gives the data without the answer; tolerance 3 % suits grid reading.
+- Set mix: adds a lookup and a graph task to a set that had neither; no repeat of the worked example.

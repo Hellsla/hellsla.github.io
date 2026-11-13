@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: ba420448372c48ee
-Mode: translation
-Round: 2
+CONTENT-HASH: 622d819e7af597e2
+SCOPE: delta added-exercise from ba420448372c48ee base 81db4a6fd727
 
 ## Blocking
 (none)
 
 ## Polish
-- none
+- fy3-3-L2-08 — the task text lists all five points, so the figure is not needed to answer. Either drop the list from the text (the figure and its description carry the points) or accept the figure as an illustration; a figure the student must read is better practice.
+- fy3-3-L2-08 — the stored tolerance (4 %, 52.3-56.7 degC) is wider than the solution's "53 to 56 degC"; state the same range in both.
+- fy3-3-L1-10 — the solution rounds to 77 K while the stored answer is 77.15; harmless, but say "77 K (77.15 K unrounded)".
 
 ## Checked
-- delta review 2026-11-07 round 4 (three small fixes): L1-04 Sijoitus now reads ΔT = (45 − 20) K = 25 K, the bracket form used in the other solutions and consistent with the Kaava ΔT/K = (θ_2 − θ_1)/°C.
-- delta review 2026-11-07 round 3 (fixes to round 2 findings): the round-2 Polish items are done: L1-04 Kaava now shows the constant 273.15 cancelling (ΔT/K = (θ_2 − θ_1)/°C), consistent with its Periaate; L2-04 ratio uses θ/°C + 273.15 top and bottom; L2-01 reads T_2 = (288 + 45) K = 333 K. Results unchanged.
-- delta review 2026-11-07 round 2 (follow-up consistency edits): every Kaava now uses T/K = θ/°C + 273.15 and every substitution carries its unit in brackets ((21 + 273.15) K = 294.15 K); algebra, results and significant figures unchanged; the 390 px solution capture reads cleanly.
-- L1-09 is a level 1 concept choice: setting first, the question as its own sentence, the proportional model given, nothing the lesson did not prepare.
-- Distractors are misconception-based (multiplying units, inverting, forgetting K) and each feedback repairs the error with a cancellation check.
-- Solution is stepwise: solve for c, substitute units, check c*T, then an example value.
-- English reads naturally, structure and feedback equal the Finnish, nothing clipped in the exercise layout.
+- L1-10 is level 1: one lookup (boiling point of nitrogen, section named in the hint) and one conversion theta + 273.15; the situation comes first, the question last. It differs from the other conversion tasks by the table lookup. No repeat of the worked example.
+- L1-10 solution: principle (equal steps, different zero points), symbolic formula, substitution, positive-kelvin reasonableness check and back-conversion.
+- L2-08 is level 2: linear data, slope from two points, solving for the temperature; matches the course's extrapolation experiment. Assumption of linearity is stated in the task, so there is no trap.
+- L2-08 solution: slope found first, formula solved in symbols, interpolation check against the neighbouring points.
+- Figure extrapolation-points: description lists the same five points and the axis range; neither gives 54.5 degC.
+- Set fit: kinds and progression within the levels remain balanced; nothing beyond FY3.

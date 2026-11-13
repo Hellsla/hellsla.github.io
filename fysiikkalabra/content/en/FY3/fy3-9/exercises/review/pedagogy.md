@@ -1,19 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 63d133ef967c9f45
-Mode: delta
-Round: 2
+CONTENT-HASH: cd00dff614aca012
+SCOPE: delta added-exercise from 63d133ef967c9f45 base 81db4a6fd727
 
 ## Blocking
-(none)
-
-## Fixed
-(none: no translation text needed changes; the English figure descriptions were added in a6ee2cdec)
+None.
 
 ## Polish
-- None.
+1. L1-09: the task fixes the temperature although the table's air cools with height; the Principle line says so. Acceptable.
 
 ## Checked
-- Descriptions of the four option graphs now exist in en and a screen-reader user gets the same data as the Finnish, without naming the correct option.
-- Shapes and key values (20 ml point separates A from B) are stated, so the figure stays needed and legible to answer.
-- fy3-9-L2-08 keeps the YO-skill form, one feedback per distractor; level unchanged.
-- check_i18n.py: nothing for fy3-9.
+- L1-09: level 1 (one lookup, Boyle's law); situation then question; solution symbolic first, kPa conversion, reasonableness via pV.
+- L2-09: isochoric graph reading with a Celsius-to-kelvin step is level 2; the solution shows how the graph is read and checks proportionality with other points.
+- Set mix: adds a lookup and a graph task; no repeat of the worked example.

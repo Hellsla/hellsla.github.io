@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: cf6d9ce17e1d805b
-Mode: translation
-Round: 2
+CONTENT-HASH: 65e30b4232d5610b
+SCOPE: delta added-exercise from 4f903b6a27cc71f7 base 81db4a6fd727
 
 ## Blocking
 (none)
 
 ## Polish
-- none
+- fy3-1-L2-08 — no hint; a one-line hint ("find G/m from one point first") would help a weaker student. Optional.
 
 ## Checked
-- L1-09 is a level 1 force-diagram choice (fbd select): situation first, question last, four figures needed to answer, scale statement given; distractors each carry one recognisable error (missing force, wrong length, extra force on the wrong body).
-- Feedback of every option names its error and repairs it without restating a bare answer; the solution puts the diagram reasoning before the arrow comparison and computes G first.
-- Terms F, G, F_k are defined in the task text before use.
-- English reads naturally, structure and feedback equal the Finnish, nothing clipped in the exercise layout.
-- Option figure descriptions in figures.json (pick-rest, pick-weight-only, pick-long-pull, pick-extra) compared with lessons/FY3/fy3-1/figures.py and the Finnish: English text matches the drawn forces (G down from the centre, F up from the top face, F_k down from the bottom face), the lengths (equal; F twice G; all three equal; only G) and the order of the options; no aria-label in Finnish left.
+- L1-10 is level 1: one lookup (Mars g in the MAFY table, named in the hint) and G = mg. Situation first, question last, mass has the right precision. It differs from L1-08 (g given) by the lookup skill, so no repeat.
+- L1-10 solution: principle explained, G alone, unit note, substitution 316.2 N, reasonableness against Earth (0.38 ratio). Tolerance of 4 % is stated and covers table differences (3.71 vs 3.72).
+- L2-08 is level 2: graph data (5 points, figure weight-points) used to find g and then extrapolate to 12 kg, outside the graph; this goes beyond L1-04 (read a calibration graph) and L2-05 (own measurements).
+- The figure description lists all five points and the grid, so a reader without sight gets the same data; neither figure nor text gives the 12 kg answer.
+- L2-08 solution reads two grid points, shows G/m is constant, extrapolates, checks by ratio 1.2; accepted range 58-62 N matches tolerance 0.03 closely.
+- Set fit: level counts and kinds still mixed (concept, error, data, lookup); progression within levels is sound; nothing from FY4 introduced.
