@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 42b97ceb682a0fd0
-Delta review (solution practice, 2026-11-12) of the version passed before.
+CONTENT-HASH: 0f8592564d0f83bc
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 3ee87f93108036ab.
 
 ## Blocking
 (none)
@@ -9,4 +9,4 @@ Delta review (solution practice, 2026-11-12) of the version passed before.
 (none)
 
 ## Checked
-s3 c ($E = E_0 + k(T - T_0)$ = 230,2 kWh), s3 d ($T = (E_\text{muu} - E_0)/k$ = 16,5 °C), s4 a ($P_\text{ka} = kNP_\text{nim}$ = 0,60 MW, 5,3 GWh) recomputed; agree with answers.py and the rubric. The fi, fi-easy and en diffs carry identical mathematics (every changed formula compared token by token); answers.py run; `units.py check` passes.
+Every hunk of the en merge diff (word diff). Point-slope form $E = E_0 + k(T - T_0)$ with $(0\,^\circ\text{C}; 93\,\text{kWh})$ recomputed: 230.2 kWh; $T = (E_\text{other} - E_0)/k = 16.5\,^\circ$C; wind energy $P_\text{avg} = kNP_\text{nom}$ (share $k$, a different task from the slope $k$). Every changed formula is symbolic before substitution and uses no symbol in a sense that differs from the unit's ```kaavat``` names or notation from #522; the $ and brace balance of each added line is checked; `units.py check` passes; the hash was taken at the start and the end and matches.

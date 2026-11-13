@@ -1,10 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 8ae950d4924a8353
+CONTENT-HASH: 14555a0377ff79b2
+SCOPE: delta added-exercise from 8ae950d4924a8353 base 81db4a6fd727
+
 ## Blocking
-(none)
+None.
+
 ## Polish
-- Round 1 polish stands: the wrong options catch dependence misreadings, not one of the three warned mistakes of the chapter; acceptable for type 6.
+1. solutions.md fy4-2-L1-09 Järkevyys - division still written with a colon (2 * 20 m : 9,81 m/s^2); use \dfrac. Optional.
+
 ## Checked
-- Round 2. Round 1 Major fixed: the check line is now four short lines (v0 t = 32 m, a/2 = -1,0 m/s^2, a t^2/2 = -16 m, s_2 = 16 m); arithmetic correct.
-- Rendered at 390 px, solution open: no overflow, widest formula 239 px (was 397 px).
-- Round 1 checks unchanged: level, scope, form of options, numbers, feedback consistency. Text only: Finnish and logic.
+- Round 2, delta: the round-1 fixes judged in their context.
+- L1-09 significant-figure wording is now honest: four figures in the table value, three in the answer because tables differ in the fourth; consistent with the 4 % tolerance.
+- No new task, figure or level change; set mix and counts unchanged from the passed version.
+- Language and case endings in the changed text are correct.

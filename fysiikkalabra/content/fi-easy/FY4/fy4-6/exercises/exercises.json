@@ -347,7 +347,7 @@
     {
       "id": "fy4-6-L2-09",
       "level": 2,
-      "text": "Alla on esimerkkiaineisto: puupalikan liikekitka on mitattu eri tukivoimilla. Kuvaajassa ovat mittauspisteet. Palikan massa on $0{,}50\\,\\text{kg}$. Palikka liukuu samalla pöydällä vaakasuoraan. Siihen vaikuttavat vain paino, tukivoima ja kitka. Kuinka suuri on palikan hidastuvuus? Määritä liikekitkakerroin kuvaajasta.",
+      "text": "Kuvaajan mittauspisteet (esimerkkiaineisto) ovat peräisin kokeesta. Kokeessa puupalikkaa vedettiin pöydällä. Kitkavoima mitattiin usealla eri tukivoimalla. Palikan massa on $0{,}80\\,\\text{kg}$. Palikka liukuu samalla pöydällä vaakasuoraan. Siihen vaikuttavat vain paino, tukivoima ja kitka. Palikan tukivoimalla ei ole mittauspistettä. Lue kitkavoima kuvaajaan sovitetulta suoralta. Kuinka suuri on palikan hidastuvuus?",
       "kind": [
         "data",
         "graph"

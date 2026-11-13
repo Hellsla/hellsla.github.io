@@ -4,12 +4,14 @@ writes them into content/fi/units/fy9-moderni/unit.md. The unit is Finnish, so t
 hero        the Why scene: a greenhouse on a snowy winter night, its red and blue LED grow lights glowing over rows of
             tomato plants, spruces and a starry sky behind (no text, no people)
 kartta      the concept map of the review: quantised energy at the top, then photon and atom (eV), the nucleus (MeV)
-            and radiation and the body (dose), each with three laws
+            and radiation and the body (dose), each with the laws of its topic
 fotonit     the hook to scale: photon energies on a logarithmic axis from 0,1 eV to 10 MeV, the visible band, the
             red LED (1,9 eV), the ionisation energy of water (12,6 eV), a dental X-ray (60 keV) and the Cs-137 gamma
             (662 keV), with the electron-level and nuclear-level ranges
 puolitus    the one law of halving: the fraction left after n half-lives (decay) or n half-value layers (shielding),
             1/2, 1/4 and 1/8 marked
+pallo       the model of the dose rate at a distance: a point source, two sphere surfaces at r_1 and r_2, a cone of
+            rays through both, the dose rates at the two distances, no numbers
 """
 import math
 import figlib
@@ -95,30 +97,31 @@ def hero():
 
 def kartta():
     """The concept map, stacked for a phone: quantised energy at the top, a spine down the left and three boxes
-    (photon and atom, the nucleus, radiation and the body), each with three laws and a grey word beside each."""
-    f = Fig("fy9mo-kartta", 744, "Käsitekartta. Ylhäällä solmu kvantittunut energia: fotonin energia E = h f ja massan ja energian yhteys E = m "
-            "c toiseen. Siitä lähtee alas kolme haaraa. Fotoni ja atomi, elektronivolttien maailma: valosähköinen yhtälö h "
-            "f = W + E k max, spektriviivan fotoni h f = E y miinus E a ja LEDin kynnysjännite e U k likimain h f. Ydin, "
-            "megaelektronivolttien maailma: hajoamislaki N = N 0 kertaa e potenssiin miinus lambda t, aktiivisuus A = "
-            "lambda N ja reaktioenergia E = massaero kertaa c toiseen. Säteily ja ihminen, annos: absorboitunut annos D = E "
-            "per m, ekvivalenttiannos H = w R kertaa D ja etäisyyden neliölaki. Alareunassa kaikkia haaroja yhdistävä ohje: "
-            "ensin yksi hiukkanen, sitten lukumäärä.", width=380, size=20)
+    (photon and atom, the nucleus, radiation and the body), each with its laws and a grey word beside each; a box's
+    height follows its row count (teacher 2026-11-12: only formulas that stay in the text; the dose rate at a
+    distance is a "Johda itse" task, not a row of the map)."""
     groups = [
         ("fotoni ja atomi", "eV", [(r"hf = W + E_\text{k,max}", "irtoaminen"), (r"hf = E_\text{y} - E_\text{a}", "spektri"),
                                     (r"eU_\text{k} \approx hf", "LED")]),
         ("ydin", "MeV", [(r"N = N_0 e^{-\lambda t}", "hajoaminen"), (r"A = \lambda N", "aktiivisuus"),
                          (r"E = \Delta m\,c^2", "reaktio")]),
-        ("säteily ja ihminen", "annos", [(r"D = E/m", "absorboitunut"), (r"H = w_\text{R} D", "painotettu"),
-                                         (r"\dot{H} \propto 1/r^2", "etäisyys")]),
+        ("säteily ja ihminen", "annos", [(r"D = E/m", "absorboitunut"), (r"H = w_\text{R} D", "painotettu")]),
     ]
-    hub_y, hub_h, x_box, gh, top = 8, 72, 44, 188, 100
-    spine = 24
-    f.line(spine, hub_y + hub_h, spine, top + 2 * (gh + 16) + 22, RULE, 3)
+    hub_y, hub_h, x_box, top, spine, gap = 8, 72, 44, 100, 24, 16
+    heights = [32 + 52 * len(rows) for _, _, rows in groups]
+    ys = [top + sum(heights[:k]) + gap * k for k in range(len(groups))]
+    f = Fig("fy9mo-kartta", ys[-1] + heights[-1] + 48, "Käsitekartta. Ylhäällä solmu kvantittunut energia: fotonin energia E = h f ja massan ja energian yhteys E = m "
+            "c toiseen. Siitä lähtee alas kolme haaraa. Fotoni ja atomi, elektronivolttien maailma: valosähköinen yhtälö h "
+            "f = W + E k max, spektriviivan fotoni h f = E y miinus E a ja LEDin kynnysjännite e U k likimain h f. Ydin, "
+            "megaelektronivolttien maailma: hajoamislaki N = N 0 kertaa e potenssiin miinus lambda t, aktiivisuus A = "
+            "lambda N ja reaktioenergia E = massaero kertaa c toiseen. Säteily ja ihminen, annos: absorboitunut annos D = E "
+            "per m ja ekvivalenttiannos H = w R kertaa D. Alareunassa kaikkia haaroja yhdistävä ohje: "
+            "ensin yksi hiukkanen, sitten lukumäärä.", width=380, size=20)
+    f.line(spine, hub_y + hub_h, spine, ys[-1] + 22, RULE, 3)
     f.rect(8, hub_y, 364, hub_h, SAND_LIGHT, SAND, 2.5, 12)
     f.tex(190, hub_y + 22, r"\text{kvantittunut energia}", "middle", INK)
     f.tex(190, hub_y + 51, r"E = hf,\quad E = mc^2", "middle", INK)
-    for k, (head, sub, rows) in enumerate(groups):
-        y = top + k * (gh + 16)
+    for (head, sub, rows), y, gh in zip(groups, ys, heights):
         f.line(spine, y + 22, x_box, y + 22, RULE, 3)
         f.rect(x_box, y, 372 - x_box, gh, WHITE, MUTED, 2, 10)
         f.tex(x_box + 14, y + 22, r"\textbf{" + head + "}", "start", INK)
@@ -129,7 +132,7 @@ def kartta():
             f.tex(x_box + 14, yy, law, "start", INK, size=18 if len(law) > 26 else None)
             f.tex(362, yy, r"\text{" + word + "}", "end", MUTED, size=17)
     # what joins the branches: one particle first, then the number of particles
-    f.tex(190, 724, r"\text{joka haarassa: yksi hiukkanen, sitten lukumäärä}", "middle", INK, size=17)
+    f.tex(190, ys[-1] + heights[-1] + 28, r"\text{joka haarassa: yksi hiukkanen, sitten lukumäärä}", "middle", INK, size=17)
     return f.svg().replace("max-width:100%;", "max-width:min(100%,420px);", 1)
 
 
@@ -214,7 +217,49 @@ def puolitus():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "kartta": kartta, "fotonit": fotonit, "puolitus": puolitus}
+def pallo():
+    """The point source in the "Johda itse" task: rays leave the source evenly; two sphere surfaces (arcs, +-30
+    degrees) at r_1 and r_2 = 2 r_1; a cone of rays (+-10 degrees) meets a patch of each surface (the far patch is
+    twice as tall, four times the area); the dose rates at the two distances and the radii as arrows. No numbers
+    and no formula of the result (the student derives it)."""
+    f = Fig("fy9mo-pallo", 372, "Kaavakuva, ei lukuarvoja. Vasemmalla pistelähde, josta säteily lähtee tasaisesti joka suuntaan. "
+            "Lähteen ympärillä on kaksi pallon pintaa, lähempi etäisyydellä r 1 ja kauempi etäisyydellä r 2. Lähteestä "
+            "lähtevä säteilykeila osuu molempiin pintoihin. Kauempana sama säteily jakautuu suuremmalle alalle. Lähemmän "
+            "pinnan kohdalla annosnopeus on H piste 1 ja kauemman pinnan kohdalla H piste 2.", width=530, size=24)
+    cx, cy, r1, r2 = 70, 185, 170, 340
+    P = lambda r, deg: (cx + r * math.cos(math.radians(deg)), cy + r * math.sin(math.radians(deg)))
+    def arc(r, a, b, color, w, dash=None):
+        (x1, y1), (x2, y2) = P(r, a), P(r, b)
+        extra = f'stroke-dasharray="{dash}"' if dash else ""
+        f.path(f"M{n(x1)},{n(y1)} A{r},{r} 0 0 1 {n(x2)},{n(y2)}", "none", color, w, extra)
+    # the two sphere surfaces
+    arc(r1, -30, 30, MUTED, 2.5, "9 7")
+    arc(r2, -30, 30, MUTED, 2.5, "9 7")
+    # the cone of rays and the patches it meets
+    for deg in (-10, 10):
+        x, y = P(r2 + 24, deg)
+        f.line(cx, cy, x, y, HOT, 2.5)
+    arc(r1, -10, 10, COLD, 7)
+    arc(r2, -10, 10, COLD, 7)
+    # the radii
+    for r, deg, lab, off, at in ((r1, -22, r"r_1", -20, 0.5), (r2, 22, r"r_2", 22, 0.33)):
+        x, y = P(r - 4, deg)
+        f.arrow(*P(14, deg), x, y, INK, 2.5, 12)
+        mx, my = P(r * at, deg)     # r_2's label inside the near sphere, clear of its arc
+        ux, uy = -math.sin(math.radians(deg)), math.cos(math.radians(deg))
+        f.tex(mx + off * ux, my + off * uy, lab, "middle", INK)
+    # the source
+    f.circle(cx, cy, 9, HOT, WHITE, 2)
+    f.tex(cx, cy + 40, r"\text{pistelähde}", "middle", INK)
+    # the dose rates at the two distances, inside the cone on a white ground
+    f.tex(P(r1, 0)[0] + 14, cy, r"\dot{H}_1", "start", COLD, bg=True)
+    f.tex(P(r2, 0)[0] + 14, cy, r"\dot{H}_2", "start", COLD, bg=True)
+    f.tex(P(r2, -30)[0] - 14, P(r2, -30)[1] + 8, r"\text{pallon pinta}", "end", MUTED)   # left of the arc's top end, end-anchored: the English words are longer (the figure is 530 wide)
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "kartta": kartta, "fotonit": fotonit, "puolitus": puolitus, "pallo": pallo}
 REUSE = {"kartta": "reveals: the key laws of FY8 photons, the nucleus and radiation doses",
          "fotonit": "reveals: a red photon 1,9 eV is far below the 12,6 eV ionisation energy of water; X-rays and gamma far above",
-         "puolitus": "safe: the halving curve 2^-n with 1/2, 1/4, 1/8 at n = 1, 2, 3"}
+         "puolitus": "safe: the halving curve 2^-n with 1/2, 1/4, 1/8 at n = 1, 2, 3",
+         "pallo": "safe: a point source, sphere surfaces at r_1 and r_2 and the dose rates there, no numbers"}

@@ -1,16 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 2d45d7f23d815a16
-Mode: full (translation review against the reviewed Finnish set, teacher procedure 2026-10-28)
-Round 2
+CONTENT-HASH: 2e3adb94561cd99d
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-(none)
+1. L2-09 Reasonableness refers to 'the task where the difference is calculated in moles' without naming it (L2-04); name it or drop the sentence.
 
 ## Checked
-- delta review 2026-11-07 round 2 (follow-up consistency edits): L2-08 and L1-08 Periaate no longer say pV = nRT requires base units: units must match R's unit, Pa with m³ (or kPa with l), temperature always in kelvins; consistent with the inquiry feedback and the lesson, and the rest of each solution (Pa and m³ used) still follows from it.
-- fy3-10-L2-08 (fi-easy): same task structure and scaffolding as fi; each distractor feedback names its misconception and does not give the answer away before the choice.
-- Language: clearer Finnish per NOTES.md §12, short sentences, same physics .
-- Workload and level fit L2; solution is learnable (staged, with a reasonableness check).
+- Round 2 delta judged in context (round-1 findings addressed).
+- L2-09 ratio of amounts from the slopes is no longer a subset of L2-04 (difference in moles); proportional reasoning n ~ p/T at equal V and R, level 2 fits. Reading level of the fi-easy wording is fine.
+- L2-09 figure gives both lines as read points on gridlines; description equals the image and states no amounts; answer 1.67 correct, tolerance 3 %.

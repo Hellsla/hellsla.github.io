@@ -30,7 +30,7 @@
         {
           "text": "Se pienenee $40\\,\\text{J}$, koska kitka tekee negatiivista työtä.",
           "correct": true,
-          "feedback": "Oikein. Luvussa *Mekaanisen energian säilyminen ja energiaperiaate* opit, että mekaanisen energian muutos on muiden voimien kuin painon tekemä työ, $\\Delta E_\\text{mek} = W_\\text{muut}$. Korkeus ei muutu, joten koko liike-energia $40\\,\\text{J}$ muuttuu sisäenergiaksi. Tässä luvussa sama periaate ratkaisee pulkan liukumisen."
+          "feedback": "Oikein. Luvussa *Mekaanisen energian säilyminen ja energiaperiaate* opit, että mekaanisen energian muutos on muiden voimien kuin painon tekemä työ, $\\Delta E_\\text{mek} = W$. Korkeus ei muutu, joten koko liike-energia $40\\,\\text{J}$ muuttuu sisäenergiaksi. Tässä luvussa sama periaate ratkaisee pulkan liukumisen."
         },
         {
           "text": "Se säilyy, koska energia ei häviä mihinkään.",

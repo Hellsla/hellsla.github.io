@@ -380,11 +380,9 @@ x_\text{A}(t) = x_\text{B}(t)
 where $x_\text{A}(t)$ and $x_\text{B}(t)$ are the positions of the bodies in the same coordinate system ($\text{m}$) and $t$ is the time of the meeting ($\text{s}$). Once $t$ is solved, it is substituted into either position function, and the result is the place of the meeting. As a check, the other position function gives the same place.
 
 The position function depends on the kind of motion. In uniform motion it is $x = x_0 + v\,t$ (chapter *Position, velocity and uniform motion as graphs*). In uniformly accelerated motion (chapter *Acceleration and uniformly accelerated motion*) it is
-```latex
-\begin{aligned}
-x &= x_0 + v_0\,t + \tfrac12\,a\,t^2 \\
-v &= v_0 + a\,t
-\end{aligned}
+```kaavat
+position in uniformly accelerated linear motion :: x = x_0 + v_0\,t + \tfrac12\,a\,t^2
+velocity in uniformly accelerated linear motion :: v = v_0 + a\,t
 ```
 where $x_0$ is the initial position ($\text{m}$), $v_0$ the initial velocity ($\text{m/s}$), $a$ the acceleration ($\text{m/s}^2$), $t$ the time ($\text{s}$) and $v$ the velocity at time $t$ ($\text{m/s}$). The formulas hold when the motion is along a straight line and the acceleration is constant. The equation for two uniform motions is a first-degree equation. If the position functions are different lines, they have at most one point of intersection, so the bodies meet at most once. If the position functions are the same, the bodies are at the same position during the whole time considered. If one of them accelerates, the equation is quadratic, and the lines can have two intersections.
 

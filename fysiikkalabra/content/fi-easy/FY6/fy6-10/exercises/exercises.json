@@ -110,6 +110,18 @@
       "answer": 90.0,
       "unit": "C",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-10-L1-09",
+      "level": 1,
+      "text": "Kaksi pistemäistä varausta, $+5{,}0\\,\\text{nC}$ ja $+8{,}0\\,\\text{nC}$, on $4{,}0\\,\\text{cm}$:n päässä toisistaan. Etsi Coulombin lain vakio $k$ MAFY-taulukosta (mafytaulukot.fi). Laske sen avulla sähköisen voiman suuruus varausten välillä. Vastaa millinewtoneina.",
+      "lookup": "MAFY",
+      "answer": 0.2247,
+      "unit": "mN",
+      "tolerance": 0.02,
+      "hints": [
+        "Arvo löytyy MAFY-taulukon taulukosta *Luonnonvakiot*."
+      ]
     }
   ],
   "level2": [
@@ -280,6 +292,32 @@
           "feedback": "Tässä etäisyyden vaikutus on luettu väärin päin. Sähköinen voima heikkenee, kun etäisyys kasvaa. Laissa $r^2$ on nimittäjässä, ei osoittajassa."
         }
       ]
+    },
+    {
+      "id": "fy6-10-L2-09",
+      "level": 2,
+      "text": "Kuvaajassa on sähköinen voima $F$ kahden samanlaisen pienen pallon välillä. Pallojen varaukset ovat yhtä suuret. Voima on piirretty sen mukaan, kuinka kaukana pallojen keskipisteet ovat toisistaan ($r$). Lue kuvaajasta voima, kun etäisyys on $4{,}0\\,\\text{cm}$. Laske sen avulla kummankin pallon varaus. Vastaa nanocoulombeina.",
+      "figure": "fy6-10/check-graph",
+      "kind": [
+        "graph",
+        "data"
+      ],
+      "answer": 30.0,
+      "unit": "nC",
+      "tolerance": 0.05
+    },
+    {
+      "id": "fy6-10-L2-10",
+      "level": 2,
+      "text": "Kuvaajassa on sähköinen voima $F$ kahdella varausparilla, A ja B. Voima on piirretty sen mukaan, kuinka kaukana keskipisteet ovat toisistaan ($r$). Parissa A kummankin pallon varaus on $20\\,\\text{nC}$. Parissa B toisen pallon varaus on $20\\,\\text{nC}$. Toisen pallon varaus $q_\\text{B}$ ei ole tiedossa. Kaikilla varauksilla on sama merkki.\n\na) Lue kuvaajasta parin A voima etäisyydellä $3{,}0\\,\\text{cm}$. Lue myös, millä etäisyydellä parin B voima on yhtä suuri.\n\nb) Päättele a)-kohdan lukemista Coulombin lailla $q_\\text{B}$. Vastaa nanocoulombeina.\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
+      "figure": "fy6-10/ex-pari",
+      "kind": [
+        "graph",
+        "reasoning"
+      ],
+      "answer": 80.0,
+      "unit": "nC",
+      "tolerance": 0.06
     }
   ],
   "level3": [

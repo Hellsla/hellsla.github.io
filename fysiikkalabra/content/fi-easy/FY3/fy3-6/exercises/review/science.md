@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 89e1824f0f4efd16
+CONTENT-HASH: f337c2ab9702c30f
+SCOPE: delta added-exercise from 89e1824f0f4efd16 base 89bcb63b7431
 
 ## Blocking
 (none)
 
-## Fixed
-- nothing needed fixing in the new task L2-08
-
 ## Polish
-- none (the sig-fig remark on "243 kJ" in the Finnish review is mirrored identically; the Finnish file is not touched)
+- none
 
 ## Checked
-- Compared L2-08 (find the error) in exercises.json and solutions.md with the reviewed Finnish: stem lines 1-4, answer "line 4", five choices, one correct flag, feedback, numbers (-180 K, 1350, -243 000 J, 243 kJ) identical.
-- Physics recomputed: 450*3.0*(-180) = -243 000 J; sign means the plate gives out heat; Delta T equal in K and degC; line 4 is the only wrong line.
-- Format: Finnish decimal comma as in fi; check_i18n silent for fy3-6; build.py fy3-6 succeeds.
+- fy3-6-L1-09: Q = c m dT = 0,896 * 0,80 * 80 = 57,3 kJ; no change of state stated (guardrail); 2 s.f. justified.
+- fy3-6-L2-09: c(copper) = 385 J/(kg K) read off c-bars; Q = 385 * 3,0 * 60 = 69,3 kJ; |dT| and released heat as positive handled correctly; accepted range 67,2-71,4 kJ = 3 % tolerance.
+- The added gloss of c (heat per 1 kg per 1 K) is correct.
+- One script recomputed every added answer from the task text with my own formulas and compared answers.py, the Finnish and the Selkea suomi exercises.json: answer, unit, tolerance and figure id identical.
+- Every number in the fi-easy task texts and solution sections equals the Finnish (only the added gloss values 1 kg / 1 K differ); the physics is unchanged, the glosses are correct.
+- Solutions complete (given, principle, symbolic formula, conversions, substitution, rounding reason, reasonableness check).

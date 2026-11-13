@@ -1,15 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: cc45b31ff1a97ba3
+CONTENT-HASH: fdfc56cdc13d1300
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at cc45b31ff1a97ba3.
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-- [Minor] Page-level horizontal overflow at 390 px with all details open (434 px wide kokeellisuus, 561 moderni) from long inline Sijoitus lines; known, carried from earlier reviews, not caused by these fixes. Let .reveal/.answer scroll or break into display lines.
+(none)
 
 ## Checked
-- Delta re-review (solution practice, 2026-11-12) of the small text fixes: kokeellisuus s5 a rubric line ($2{,}7 \cdot 10^3$ kg/m3, two significant figures) and moderni s5 a answer, 157 s without background, 1,5 %, accepted range 147-159 s.
-- Built both units, opened preview/en with ?ratkaisut=1 and every details element open at 390 px: 0 KaTeX errors, no script errors, changed lines present, decimal comma in fi and fi-easy, point in en, units and \cdot correct, wording natural.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+Source-level delta review of the diff (the changes are inline formulas and short text, no figure or layout changes, so no new captures were taken). Looked at: sovella/solutions.md density answer $2.7 \cdot 10^{3}\,\text{kg/m}^3$ and the braking parts (extra digits $4.1667$, force-balance Formula); tasks.json detail line. No clash between the #522 notation and the #523 symbols found; no duplicated derivation; every changed line has balanced `$` and braces; units upright with a thin space.

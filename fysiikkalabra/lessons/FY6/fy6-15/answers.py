@@ -44,4 +44,6 @@ P_cord = [0.40 * i ** 2 for i in I_cord]                   # P = R I^2 with R = 
 k_cord = slope_through_origin(P_cord, dT_cord)             # k = 0,2974 K/W
 a["fy6-15-L3-04"] = (50.0 / (k_cord * 0.40)) ** 0.5        # dT = k R I^2 = 50 K: I = 20,5 A
 a["fy6-15-L3-05"] = (U / 30e-3 - 1.5e3) / 1e3              # RCD trips above 30 mA: R_e + R_k = U : 30 mA, R_e = 7667 - 1500 = 6167 Ohm = 6,167 kOhm
+# figure fy6-15/ex-kuorma: highest step of the group's load P(t) reads 4000 W on a gridline
+a["fy6-15-L2-08"] = 4000 / U                                # I = P : U = 4000 W : 230 V = 17,39 A (> 16 A)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

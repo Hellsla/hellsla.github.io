@@ -262,6 +262,15 @@
           "feedback": "Tässä häviöteho on laskettu lausekkeella $U^2 : R$ siirtojännitteellä. Siirtojännite ei ole kaapelin resistanssin yli oleva jännite, joten ensin lasketaan virta $I = P : U$."
         }
       ]
+    },
+    {
+      "id": "fy7-8-L2-09",
+      "level": 2,
+      "text": "Siirtojohdon pienoismalli: voimalaitos siirtää johtoa pitkin tehon $200\\,\\text{MW}$. Kuvaajassa on lämmöksi muuttuvan tehon osuus siirretystä tehosta siirtojännitteen funktiona. Käytä yksinkertaistettua kaksijohtimista mallia. Määritä johtimien yhteenlaskettu resistanssi $R$. Lue tarvittavan osuuden arvo kuvaajan käyrältä.",
+      "figure": "fy7-8/loss-graph-curve",
+      "answer": 6.0,
+      "unit": "Ω",
+      "tolerance": 0.05
     }
   ],
   "level3": [

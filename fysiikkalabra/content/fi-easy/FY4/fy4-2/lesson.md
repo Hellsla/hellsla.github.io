@@ -547,13 +547,13 @@ Kun nopeus kasvaa, paikka muuttuu jokaisessa sekunnissa enemmän kuin edellisess
 Kun ilmanvastus on pieni, kaikki kappaleet putoavat samalla kiihtyvyydellä. Massa ei vaikuta siihen. Tämä **putoamiskiihtyvyys** on Maan pinnalla $g = 9{,}81\,\text{m/s}^2$, ja se osoittaa alaspäin. Pudotetun kiven nopeus kasvaa siis joka sekunti noin $9{,}8\,\text{m/s}$. Siksi kivi kulkee jokaisessa sekunnissa pidemmän matkan kuin edellisessä. Kappale lähtee levosta. Sen kulkemat matkat peräkkäisinä yhtä pitkinä aikaväleinä suhtautuvat kuin $1 : 3 : 5 : 7$.
 
 ## Kaava: Tasaisesti kiihtyvän liikkeen yhtälöt
-Kiihtyvyys on nopeuden muutos jaettuna ajalla, joka muutokseen kului:
-```latex
-a = \frac{\Delta v}{\Delta t}
+Keskikiihtyvyys on nopeuden muutos jaettuna ajalla, joka muutokseen kului:
+```kaavat
+keskikiihtyvyys :: a_\text{k} = \frac{\Delta v}{\Delta t}
 ```
-missä $a$ on kiihtyvyys ($\text{m/s}^2$), $\Delta v = v_2 - v_1$ on nopeuden muutos ($\text{m/s}$) ja $\Delta t$ on siihen kulunut aika ($\text{s}$). Oletetaan, että kiihtyvyys on vakio ja ajanotto alkaa hetkestä $t = 0$. Silloin nopeus on $v_0$, ja se muuttuu joka sekunti määrän $a$:
-```latex
-v = v_0 + a\,t
+missä $a_\text{k}$ on keskikiihtyvyys ($\text{m/s}^2$), $\Delta v = v_2 - v_1$ on nopeuden muutos ($\text{m/s}$) ja $\Delta t$ on siihen kulunut aika ($\text{s}$). Jos kiihtyvyys on vakio, se on joka hetki sama kuin keskikiihtyvyys: $a = a_\text{k}$. Oletetaan, että kiihtyvyys on vakio ja ajanotto alkaa hetkestä $t = 0$. Silloin nopeus on $v_0$, ja se muuttuu joka sekunti määrän $a$:
+```kaavat
+nopeus tasaisesti kiihtyvässä suoraviivaisessa liikkeessä :: v = v_0 + a\,t
 ```
 missä $v$ on nopeus hetkellä $t$ ($\text{m/s}$), $v_0$ on alkunopeus ($\text{m/s}$), $a$ on kiihtyvyys ($\text{m/s}^2$) ja $t$ on aika ($\text{s}$).
 
@@ -586,8 +586,8 @@ Tasaisessa liikkeessä siirtymä $v\,t$ on $(t,v)$-kuvaajan alle jäävän suora
 </svg>
 
 Kappale on hetkellä $t = 0$ paikassa $x_0$. Sen paikka on silloin alkupaikka plus siirtymä:
-```latex
-x = x_0 + v_0\,t + \tfrac{1}{2}\,a\,t^2
+```kaavat
+paikka tasaisesti kiihtyvässä suoraviivaisessa liikkeessä :: x = x_0 + v_0\,t + \tfrac{1}{2}\,a\,t^2
 ```
 missä $x$ on paikka hetkellä $t$ ($\text{m}$) ja $x_0$ on alkupaikka ($\text{m}$). Muut symbolit ovat samat kuin edellä. Jos kysytään aikaa, tästä tulee toisen asteen yhtälö. Sen ratkaisuista valitaan se, joka sopii tilanteeseen.
 
@@ -657,7 +657,7 @@ Moni ajattelee, että kiihtyvyys on nolla aina, kun nopeus on nolla. Ylös heite
 Toinen virhe on ajatella, että negatiivinen kiihtyvyys on aina hidastumista. Vauhti pienenee vain, kun kiihtyvyys ja nopeus ovat vastakkaissuuntaiset. Kolmas virhe on ajatella, että raskas kappale putoaa nopeammin kuin kevyt. Kun ilmanvastus on pieni, molemmat putoavat samalla kiihtyvyydellä.
 
 ## Tiivistelmä
-- Kiihtyvyys $a = \tfrac{\Delta v}{\Delta t}$ kertoo nopeuden muutoksen sekunnissa. Yksikkö on $\text{m/s}^2$. Kiihtyvyys on vektorisuure, ja suoralla etumerkki kertoo suunnan.
+- Keskikiihtyvyys $a_\text{k} = \tfrac{\Delta v}{\Delta t}$ kertoo nopeuden muutoksen sekunnissa. Yksikkö on $\text{m/s}^2$. Jos kiihtyvyys on vakio, $a = a_\text{k}$. Kiihtyvyys on vektorisuure, ja suoralla etumerkki kertoo suunnan.
 - Vauhti kasvaa, kun kiihtyvyys ja nopeus ovat samansuuntaiset. Vauhti pienenee, kun ne ovat vastakkaissuuntaiset.
 - Tasaisesti kiihtyvässä liikkeessä $(t,v)$-kuvaaja on suora. Sen kulmakerroin on kiihtyvyys. Suoran ja aika-akselin väliin jäävä etumerkillinen pinta-ala on siirtymä. Aika-akselin alapuolinen osa ($v < 0$) lasketaan negatiivisena.
 - Yhtälöt ovat $v = v_0 + a\,t$ ja $x = x_0 + v_0\,t + \tfrac{1}{2}\,a\,t^2$. $(t,x)$-kuvaaja on käyrä. Hetkellinen nopeus on käyrän tangentin kulmakerroin.

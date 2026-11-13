@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 5dc4b3d2d47c251a
-Round: 2
+CONTENT-HASH: 1df22febe8b7cc20
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- [Minor] fy4-5 option figures — the label $\overline{N}$ sits tight against the box corner and arrow tip; fix: shift it a few px right (same in the older figures).
+[Minor] ruutu-vinot — $\overline{F}_2$-nimiö lähellä nuolenkärkeä; siirrä hieman.
 
 ## Checked
-- fy4-5-L1-09 (fi-easy) at 390 px, feedback and solution open (two-stage answer, boxed answer, Find/Principle/Model answer), screenshot read in full; measured after page scripts: scrollWidth 390, no clipped element outside a scroll box, no .kx-wide needed.
-- Units, decimal sign, LaTeX labels and vectors checked in the render.
-- Round 2: all four option figures (C, D, A, B) opened in the task render: forces red, velocity $\overline{v}$ in D blue and beside the body, none orange or red; arrows to scale, equal lengths in C; source colours checked (#c92a2a force, #1971c2 velocity).
+- fy4-5-open-exercises-L2-1280-12 (fi-easy): figure and solution consistent (kappale); the new direction wording $53^\circ$ from the $x$ axis is clear.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 4

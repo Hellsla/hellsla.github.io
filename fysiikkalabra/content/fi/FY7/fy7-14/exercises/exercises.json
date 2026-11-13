@@ -272,6 +272,19 @@
      ]
     ]
    }
+  },
+  {
+   "id": "fy7-14-L2-08",
+   "level": 2,
+   "text": "Kuvassa on kameran linssin heijastus aallonpituuden funktiona kohtisuorassa tulossa. Lasin ($n = 1{,}52$) pinnalla on $\\text{MgF}_2$-pinnoite ($n = 1{,}38$), ja kuvassa on myös pinnoittamattoman lasin heijastus. Lue kuvasta pinnoitetun linssin pienin heijastuva osuus ja pinnoittamattoman lasin heijastuva osuus. Kuinka monta prosenttia pinnoite poistaa pinnoittamattoman lasin heijastuksesta aallonpituudella, jolla pinnoite toimii parhaiten?",
+   "kind": [
+    "graph",
+    "data"
+   ],
+   "figure": "fy7-14/coating-curve",
+   "answer": 70.4068,
+   "unit": "%",
+   "tolerance": 0.03
   }
  ],
  "level3": [
@@ -365,6 +378,20 @@
      ]
     ]
    }
+  },
+  {
+   "id": "fy7-14-L3-06",
+   "level": 3,
+   "text": "Kuvassa on saippuakalvon ($n = 1{,}33$, ilmaa molemmin puolin) heijastuva osuus $R$ aallonpituuden funktiona, kun valkoinen valo tulee kohtisuoraan kalvoon. Kalvon paksuutta ei ole annettu. Lue kuvasta näkyvän valon alueella yksi heijastuksen pohja eli heikentyvä aallonpituus ja sen viereinen huippu eli vahvistuva aallonpituus. Päättele niiden avulla heikentävän ehdon kertaluku $k$ ja kalvon paksuus nanometreinä.",
+   "kind": [
+    "graph",
+    "reasoning",
+    "model"
+   ],
+   "figure": "fy7-14/soap-curve",
+   "answer": 350.3759,
+   "unit": "nm",
+   "tolerance": 0.04
   }
  ]
 }

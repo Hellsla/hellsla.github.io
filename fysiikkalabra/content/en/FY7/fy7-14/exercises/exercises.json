@@ -272,6 +272,19 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy7-14-L2-08",
+      "level": 2,
+      "text": "The figure shows the reflection of a camera lens as a function of wavelength at normal incidence. The glass ($n = 1.52$) has an $\\text{MgF}_2$ coating ($n = 1.38$), and the figure also shows the reflection of uncoated glass. Read from the figure the smallest reflected share of the coated lens and the reflected share of the uncoated glass. By what percentage does the coating reduce the reflection of uncoated glass at the wavelength where the coating works best?",
+      "kind": [
+        "graph",
+        "data"
+      ],
+      "figure": "fy7-14/coating-curve",
+      "answer": 70.4068,
+      "unit": "%",
+      "tolerance": 0.03
     }
   ],
   "level3": [
@@ -365,6 +378,20 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy7-14-L3-06",
+      "level": 3,
+      "text": "The figure shows the reflected share $R$ of a soap film ($n = 1.33$, air on both sides) as a function of wavelength when white light arrives at normal incidence. The thickness of the film is not given. Read from the figure, in the visible range, one minimum of the reflection (a wavelength that is weakened) and the maximum next to it (a wavelength that is strengthened). Use them to deduce the order $k$ of the destructive condition and the thickness of the film in nanometres.",
+      "kind": [
+        "graph",
+        "reasoning",
+        "model"
+      ],
+      "figure": "fy7-14/soap-curve",
+      "answer": 350.3759,
+      "unit": "nm",
+      "tolerance": 0.04
     }
   ]
 }

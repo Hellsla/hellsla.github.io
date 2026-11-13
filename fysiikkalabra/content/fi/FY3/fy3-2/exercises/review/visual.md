@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: f348009c527c1f49
+CONTENT-HASH: c71996eeddd805e1
 ROUND: 2
 
 ## Blocking
-(none) Round-1 Major resolved: the feedback of the correct choice is now only "Oikein: työ nelinkertaistuu."; the reason is no longer given away before the reason stage, and the correct reason is not the longest.
+(none)
 
 ## Polish
-- [Minor] fy3-2-L2-08 — still no figure; a small $(s, F)$ triangle would help (optional).
-- [Minor] Two reason feedbacks in a row begin "Väite on tosi, mutta…"; reads slightly mechanical.
+(none)
 
 ## Checked
-- From renders (my own Playwright, 390 px, both stages and solution open): fy3-2-L2-08 first stage, choice feedback, reason stage and feedback; page scrollWidth 390, no overflow. Quantities in KaTeX.
-- From text only: the fixed reason feedbacks and the solution (unchanged in layout), the rest of the set.
+- Round 2, delta: the one-word change ('vs' to 'ja') in L2-09 Järkevyys was read from the diff; no capture opened, the line is plain text and cannot disturb layout. Round-1 polish fixed. Hash same at start and end.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

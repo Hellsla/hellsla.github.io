@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 8c50fb38cfdcf2c1
+CONTENT-HASH: 68489463e63623ab
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- exercises.json fy3-10-L2-08 — the text "Oppilas laskee kaasun lämpötilan celsiusasteina" still points to the last row; drop "celsiusasteina".
+1. L2-09 Reasonableness refers to 'the task where the difference is calculated in moles' without naming it (L2-04); name it or drop the sentence.
 
 ## Checked
-- delta review 2026-11-07 round 2 (follow-up consistency edits): L2-08 and L1-08 Periaate no longer say pV = nRT requires base units: units must match R's unit, Pa with m³ (or kPa with l), temperature always in kelvins; consistent with the inquiry feedback and the lesson, and the rest of each solution (Pa and m³ used) still follows from it.
-- Round 2 (delta). Round-1 polish: the sig figs of the bottle are now consistent (2,00 l, 0,00200 m³, text, feedback and solution agree); the "celsiusasteina" cue in the task text and "200 : 0,665" remain (Polish, unchanged, optional).
-- Numbers still verified: 200/0,665 = 301 K, 28 °C; the error is still found only in row 4 and rows 1-3 stay correct.
-- Text only for this delta (the change is digits, no layout); no new render opened.
+- Round 2 delta judged in context (round-1 findings addressed).
+- L2-09 ratio of amounts from the slopes is no longer a subset of L2-04 (difference in moles); proportional reasoning n ~ p/T at equal V and R, level 2 fits.
+- L2-09 figure gives both lines as read points on gridlines; description equals the image and states no amounts; answer 1.67 correct, tolerance 3 %.

@@ -1,9 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: bb595c37bb767855
+CONTENT-HASH: 54ee9d4945d7d36c
 
 ## Blocking
+None.
 
 ## Polish
+None.
 
 ## Checked
-batch delta review: "Ensin voimakuvio, sitten työkalu" now limits the two tools to this chapter's tasks and names the module's third tool, impulse principle and conservation of momentum for collisions and short impacts, with the correct chapter title (*Liikemäärän säilyminen ja yksiulotteiset törmäykset*); the equation-of-motion / energy-principle criteria are unchanged and correct.
+- Formula tables: Newton's second law and the energy principle E_p0 + E_k0 + W = E_p + E_k with W the work of the forces other than the weight, index rule and units stated; W_μ = −μmgx and W_v = −F_v h keep their own subscripts and conditions (straight surface, same μ, only weight and normal force perpendicular).
+- Worked example: W = −F_μL is the only other-force work, so W is unambiguous; v_2 = 8,69 m/s recomputed. Exit ticket (W = Fs), inquiry feedback (ΔE_mek = W) consistent with fy4-8.
+- lesson-answers.py unchanged; lint has no physics warnings; fi, fi-easy and en say the same.

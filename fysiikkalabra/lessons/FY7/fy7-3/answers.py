@@ -44,4 +44,8 @@ a["fy7-3-L3-04"] = mu0 / (2 * math.pi * 0.040 * k_c) * 1e6   # k = mu0/(2 pi h B
 R_w = 1.7e-8 * 30 / (math.pi * (0.25e-3) ** 2)        # L3-05: R = rho L / A = 2,597 ohm
 N_s = 30 / (math.pi * 0.030)                          # turns of 0,030 m diameter: 318,3
 a["fy7-3-L3-05"] = coil(N_s, 6.0 / R_w, N_s * 0.55e-3) * 1e3   # I = U/R = 2,31 A, l = N 0,55 mm = 0,175 m: B = 5,28 mT -> 5,3 mT
+# L2-09 (figure fy7-3/coil-fit): slope read from the fitted line, k = 5,0 mT / 2,0 A = 2,5 mT/A; coil length 0,250 m: N = k l / mu0 = 497 turns
+a["fy7-3-L2-09"] = 2.5e-3 * 0.250 / mu0
+# L2-10 (figure fy7-3/wire-graph-task): B = 60 uT read at r = 2,0 cm: I = 2 pi r B / mu0 = 6,0 A
+a["fy7-3-L2-10"] = 2 * math.pi * 0.020 * 60e-6 / mu0
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

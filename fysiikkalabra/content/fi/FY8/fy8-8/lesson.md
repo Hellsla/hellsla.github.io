@@ -158,6 +158,12 @@ Vain tietyt protonien ja neutronien yhdistelmät ovat pysyviä. Kun ytimiä piir
 
 **Beetahajoamisessa** ytimessä on liikaa tai liian vähän neutroneja suhteessa protoneihin. Beeta miinus -hajoamisessa ytimen neutroni muuttuu protoniksi, ja ytimestä lähtee elektroni ja antineutriino. Elektroni ei ole ollut ytimessä valmiina, vaan se syntyy hajoamisessa. Beeta plus -hajoamisessa protoni muuttuu neutroniksi, ja ytimestä lähtee positroni eli elektronin antihiukkanen sekä neutriino. Beetahajoamisen aiheuttaa heikko vuorovaikutus.
 
+Beetahajoamisen kaltainen on **elektronisieppaus**: ydin sieppaa atomin sisimmältä elektronikuorelta elektronin, protoni muuttuu neutroniksi ja ytimestä lähtee elektronineutriino ${}^{0}_{0}\nu_\text{e}$. Yleisesti
+```latex
+{}^{A}_{Z}\text{X} + {}^{0}_{-1}\text{e} \to {}^{A}_{Z-1}\text{Y} + {}^{0}_{0}\nu_\text{e}
+```
+missä X on emoydin, Y tytärydin ja $Z$ järjestysluku. Esimerkiksi ${}^{7}_{4}\text{Be} + {}^{0}_{-1}\text{e} \to {}^{7}_{3}\text{Li} + {}^{0}_{0}\nu_\text{e}$. Ydin muuttuu kuten beeta plus -hajoamisessa ($Z - 1$), ja se on mahdollista silloinkin, kun positronin synnyttämiseen ei riitä energiaa.
+
 **Gammahajoamisessa** viritystilassa oleva ydin, merkitty tähdellä ${}^{A}_{Z}\text{X}^{\ast}$, siirtyy alemmalle energiatasolle ja lähettää gammafotonin. Ydin pysyy samana nuklidina. Viritystila syntyy usein edellisessä alfa- tai beetahajoamisessa, joten gammasäteily seuraa niitä.
 
 <svg data-fig="decays" viewBox="0 0 600 360" role="img" aria-label="Kolme hajoamislajia vierekkäin, kaavakuva, ei mittakaavassa. Vasemmalla alfahajoaminen: ytimestä lähtee kahden protonin ja kahden neutronin muodostama alfahiukkanen eli heliumydin, ja ytimen järjestysluku pienenee kahdella ja massaluku neljällä. Keskellä beeta miinus -hajoaminen: ytimen neutroni muuttuu protoniksi, ytimestä lähtee elektroni ja antineutriino, järjestysluku kasvaa yhdellä ja massaluku pysyy. Oikealla gammahajoaminen: viritystilassa oleva ydin lähettää gammafotonin, ja järjestysluku ja massaluku pysyvät samoina." style="max-width:100%;font-size:24px">
@@ -250,9 +256,9 @@ Vain tietyt protonien ja neutronien yhdistelmät ovat pysyviä. Kun ytimiä piir
 </svg>
 
 ### Ytimen energiatasot ja gammaspektri
-Ytimen energia on kvantittunut kuten atomin elektronien energia. Kun ydin siirtyy ylemmältä energiatasolta alemmalle, lähtevän gammafotonin energia on tasojen erotus, aivan kuten vetyatomin siirtymässä luvussa *Vetyatomin energiatasot ja Bohrin malli*. Siksi ytimen gammaspektri on viivaspektri: jokainen piikki kertoo yhden tasoparin erotuksen. Ero on mittakaavassa. Atomin siirtymät ovat elektronivoltteja, ytimen tasojen erot tyypillisesti kymmeniä kiloelektronivoltteja tai enemmän, satojatuhansia kertoja enemmän.
+Ytimen energia on kvantittunut kuten atomin elektronien energia. Kun ydin siirtyy ylemmältä energiatasolta alemmalle, lähtevän gammafotonin energia on tasojen erotus, aivan kuten vetyatomin siirtymässä luvussa *Vetyatomin energiatasot ja Bohrin malli*. Siksi ytimen gammaspektri on viivaspektri: jokainen piikki kertoo yhden tasoparin erotuksen. Ero on mittakaavassa. Atomin siirtymät ovat elektronivoltteja, ytimen tasojen erot tyypillisesti kymmeniä kiloelektronivoltteja tai enemmän, eli kymmeniätuhansia tai satojatuhansia kertoja enemmän.
 
-Esimerkiksi koboltti-60 hajoaa beeta miinus -hajoamisella nikkeli-60:n viritystilaan, jonka energia on $2505{,}8\,\text{keV}$ perustilan yläpuolella. Ydin palaa perustilaan välitason $1332{,}5\,\text{keV}$ kautta, ja gammaspektrissä näkyy kaksi viivaa: $1173{,}2\,\text{keV}$ ja $1332{,}5\,\text{keV}$ (NNDC:n NuDat 3 -tietokanta, ENSDF-arvot). Fotonienergioiden summa jää tasosta alle $0{,}1\,\text{keV}$, koska fotonin lähtiessä ydin saa rekyylin eli pienen liike-energian. Alfahiukkasilla on samoin vain tietyt energiat. Beetahiukkasten energiat sen sijaan jakautuvat jatkuvasti, koska hajoamisenergia jakautuu elektronin ja antineutriinon kesken.
+Esimerkiksi koboltti-60 hajoaa beeta miinus -hajoamisella nikkeli-60:n viritystilaan, jonka energia on $2505{,}8\,\text{keV}$ perustilan yläpuolella. Ydin palaa perustilaan välitason $1332{,}5\,\text{keV}$ kautta, ja gammaspektrissä näkyy kaksi viivaa: $1173{,}2\,\text{keV}$ ja $1332{,}5\,\text{keV}$ (NNDC:n NuDat 3 -tietokanta, ENSDF-arvot). Fotonienergioiden summa jää tasosta noin $0{,}1\,\text{keV}$. Suurin osa tästä erosta on pyöristystä, sillä rekyyli eli ytimen saama pieni liike-energia fotonin lähtiessä on vain noin $0{,}03\,\text{keV}$. Alfahiukkasilla on samoin vain tietyt energiat. Beetahiukkasten energiat sen sijaan jakautuvat jatkuvasti, koska hajoamisenergia jakautuu elektronin ja antineutriinon kesken.
 
 <svg data-fig="levels" viewBox="0 0 600 380" role="img" aria-label="Energiatasokaavio, energiat mittakaavassa: koboltti-60 hajoaa beeta miinus -hajoamisella nikkeli-60:n viritystilaan, jonka energia on 2505,8 keV perustilan yläpuolella. Ydin palaa perustilaan kahdessa vaiheessa: ensin tasolle 1332,5 keV, jolloin lähtee gammafotoni 1173,2 keV, ja sitten perustilaan, jolloin lähtee gammafotoni 1332,5 keV. Tiedot NNDC:n NuDat-tietokannasta." style="max-width:100%;font-size:24px">
   <line x1="40" y1="39" x2="190" y2="39" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
@@ -392,10 +398,11 @@ Cesium-137 ${}^{137}_{55}\text{Cs}$ hajoaa beeta miinus -hajoamisella. Tytärydi
 ## Yleinen virhekäsitys
 Moni ajattelee, että beetahiukkanen on ytimessä valmiina oleva elektroni. Ytimessä ei ole elektroneja: elektroni ja antineutriino syntyvät, kun neutroni muuttuu protoniksi. Siksi järjestysluku kasvaa yhdellä, vaikka ytimestä lähtee negatiivinen hiukkanen.
 
-Toinen virhe on pitää gammahajoamista alkuaineen muutoksena. Gammafotoni vie vain energiaa: protonien ja neutronien määrät pysyvät, ja ydin siirtyy vain alemmalle energiatasolle. Alkuaine vaihtuu vain alfa- ja beetahajoamisessa.
+Toinen virhe on pitää gammahajoamista alkuaineen muutoksena. Gammafotoni vie vain energiaa: protonien ja neutronien määrät pysyvät, ja ydin siirtyy vain alemmalle energiatasolle. Alkuaine vaihtuu vain, kun protonien määrä muuttuu: alfa- ja beetahajoamisessa sekä elektronisieppauksessa.
 
 ## Tiivistelmä
 - Ydin koostuu nukleoneista: $Z$ protonia ja $N = A - Z$ neutronia. Saman alkuaineen isotoopeilla on sama $Z$ mutta eri $N$.
 - Radioaktiivinen ydin hajoaa itsestään ja satunnaisesti. Alfahajoamisessa lähtee ${}^{4}_{2}\text{He}$ ($Z - 2$, $A - 4$), beeta miinus -hajoamisessa elektroni ja antineutriino ($Z + 1$), beeta plus -hajoamisessa positroni ja neutriino ($Z - 1$).
+- Elektronisieppauksessa ydin sieppaa elektronin ja lähettää neutriinon ($Z - 1$).
 - Hajoamisyhtälössä massaluku ja varausluku säilyvät.
 - Ytimen energia on kvantittunut. Gammafotonin energia on ytimen tasojen erotus $E_\gamma = E_\text{y} - E_\text{a}$, tyypillisesti kymmeniä tai satoja kiloelektronivoltteja tai megaelektronivoltteja, joten gammaspektri on viivaspektri.

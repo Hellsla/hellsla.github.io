@@ -428,8 +428,8 @@ Tästä saadaan vastaus alun kysymykseen. Moottori pyörittää vetäviä pyöri
 
 ## Kaava: Newtonin toinen laki
 Newtonin toinen laki eli dynamiikan peruslaki kokoaa havainnot yhteen yhtälöön:
-```latex
-\Sigma\overline{F} = m\overline{a}
+```kaavat
+Newtonin 2. laki (dynamiikan peruslaki) :: \Sigma\overline{F} = m\overline{a}
 ```
 Tässä $\Sigma\overline{F}$ on kappaleeseen vaikuttavien voimien vektorisumma eli kokonaisvoima ($\text{N}$), $m$ on kappaleen massa ($\text{kg}$) ja $\overline{a}$ on kappaleen kiihtyvyys ($\text{m/s}^2$). Voiman yksikkö määritellään tämän lain avulla. Yksi newton on voima, joka antaa yhden kilogramman massalle kiihtyvyyden $1\,\text{m/s}^2$. Siis $1\,\text{N} = 1\,\text{kg}\cdot\text{m/s}^2$.
 

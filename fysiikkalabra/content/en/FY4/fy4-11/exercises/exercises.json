@@ -115,14 +115,14 @@
   {
    "id": "fy4-11-L1-09",
    "level": 1,
-   "text": "A car drives on a horizontal dry asphalt road at $80\\,\\text{km/h}$ and brakes so that the wheels lock and the rubber tyres slide on the asphalt. Air resistance is neglected. The deceleration is $a = \\mu g$ and the braking distance $s = \\dfrac{v_0^2}{2a}$.\\n\\nLook up the coefficient of sliding friction between rubber and asphalt in the MAFY table (mafytaulukot.fi). The table gives a range, so use its greatest value. How long is the braking distance?",
+   "text": "A car drives on a horizontal dry asphalt road at $80\\,\\text{km/h}$ and brakes so that the wheels lock and the rubber tyres slide on the asphalt. Air resistance is neglected. The deceleration is $a = \\mu g$ and the braking distance $s = \\dfrac{v_0^2}{2a}$.\n\nLook up the coefficient of sliding friction between rubber and asphalt in the MAFY table (mafytaulukot.fi). The table gives a range, so use its greatest value. How long is the braking distance?",
    "kind": [
     "reasoning"
    ],
    "lookup": "MAFY",
    "answer": 31.46,
    "unit": "m",
-   "tolerance": 0.03,
+   "tolerance": 0.05,
    "hints": [
     "The value is in the MAFY table *Kitkakertoimia* (friction coefficients)."
    ]
@@ -426,7 +426,7 @@
    "figure": "fy4-11/ex-tv-tyyny",
    "answer": 10.5,
    "unit": "kN",
-   "tolerance": 0.02
+   "tolerance": 0.05
   }
  ]
 }

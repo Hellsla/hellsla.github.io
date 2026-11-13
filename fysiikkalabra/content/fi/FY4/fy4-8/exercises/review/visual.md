@@ -1,16 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 2f55633df83eff2a
+CONTENT-HASH: f37b954eefe31cd0
 
 ## Blocking
+None.
 
 ## Polish
-- [Minor] fy4-8-L1-09 (390 px render, feedback open) — the per-statement feedback texts are not shown in the render after answering (only the red mark and the count); checked in the source only, the solution card covers the reasons.
-- [Minor] fy4-8-L1-09 — statements 1 and 3 are true, 2, 4 and 5 false; the hedged "noin" appears only in the true statement 1; harmless.
-
-## Checked
-- Own 390 px renders of L1-09 (unanswered and answered with three wrong marks) and the solution open: no horizontal overflow (page 390, card 330; the only wide items are KaTeX sqrt glyph paths), the sqrt line fits.
-- L3-01 text split into three paragraphs: layout survived (measured with the same script, no overflow).
-- Text only: statement texts and feedback.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+1. Scope: MAFY-form symbols ( = Fs$, {\text{k}0} + W = E_\text{k}$, {\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$) in the fy4-8 exercise set (fi). Rendered at 390 and 1280 px (solutions open): formula tables show the MAFY name over/beside the formula, subscripts k, p, 0 upright, no overflow (scrollWidth = viewport), the energy-bar figure and scale figure carry {\text{p}0}$, {\text{k}0}$, $, \text{k}$ without clipping, the simulation labels ({\text{mech}0}$, $) read well. No leftover old symbols (W_muut, F_parallel, index 1/2 on energies) found in source.
+2. Minor: the text keeps $ (weight's work) beside $ (other forces); it is explained in place, so acceptable.

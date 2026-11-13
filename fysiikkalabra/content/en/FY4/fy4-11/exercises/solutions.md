@@ -272,11 +272,11 @@ d) The change in momentum is $m\,\Delta v = 80.0\,\text{kg} \cdot 15.0\,\text{m/
 ## fy4-11-L1-09
 **Given:** $v_0 = 80\,\text{km/h}$, finally $v = 0$; coefficient of sliding friction between rubber and asphalt from the MAFY table (table *Kitkakertoimia*, rubber–asphalt, sliding friction): the range $0.5$–$0.8$, the greatest value $\mu = 0.8$ is used; $g = 9.81\,\text{m/s}^2$
 **Find:** the braking distance $s$ in $\text{m}$
-**Principle:** On a horizontal road the normal force equals the weight, $N = mg$, and the friction $F_\mu = \mu N$ on the sliding tyres is the only horizontal force. By Newton's second law $\mu mg = ma$, so the deceleration is $a = \mu g$, and the mass cancels. The deceleration is constant, so the stopping distance follows from $v_0^2 = 2as$.
+**Principle:** On a horizontal road the normal force equals the weight, $N = mg$, and the friction $F_\mu = \mu N$ on the sliding tyres is the only horizontal force. By Newton's second law $\mu mg = ma$, so the deceleration is $a = \mu g$, and the mass cancels. The deceleration is constant, so the braking distance follows from $v_0^2 = 2as$.
 **Formula:** $a = \mu g$ and $s = \dfrac{v_0^2}{2a} = \dfrac{v_0^2}{2\mu g}$
 **Conversions:** $v_0 = 80\,\text{km/h} = \dfrac{80}{3.6}\,\text{m/s} = 22.22\,\text{m/s}$
 **Substitution:** $a = 0.8 \cdot 9.81\,\text{m/s}^2 = 7.85\,\text{m/s}^2$ and $s = \dfrac{(22.22\,\text{m/s})^2}{2 \cdot 7.85\,\text{m/s}^2} = 31.5\,\text{m}$
-**Answer:** $31\,\text{m}$, two significant figures like the speed $80\,\text{km/h}$ and the coefficient $0.8$. The coefficient is a range $0.5$–$0.8$ in the MAFY table (table *Kitkakertoimia*); at the other end, $\mu = 0.5$, the braking distance would be $50\,\text{m}$, so this result is the shorter end of the range.
+**Answer:** $s \approx 31\,\text{m}$, two significant figures as in the speed $80\,\text{km/h}$. The coefficient $0.8$ is the upper end of the MAFY table's range $0.5$–$0.8$ (table *Kitkakertoimia*), so the braking distance $31\,\text{m}$ is the shorter end of the range; at the lower end, $\mu = 0.5$, the braking distance would be $50\,\text{m}$, which is longer. The distance thus varies with the table's range far more than with the rounding.
 **Reasonableness:** A braking distance of $31\,\text{m}$ is of the order of a typical dry-road braking distance from $80\,\text{km/h}$. The deceleration $7.85\,\text{m/s}^2$ is smaller than in ABS braking on dry asphalt ($\mu \approx 0.9$), which fits locked, sliding wheels.
 
 ## fy4-11-L2-09
@@ -298,5 +298,5 @@ d) The change in momentum is $m\,\Delta v = 80.0\,\text{kg} \cdot 15.0\,\text{m/
 **Formula:** $F_\text{avg} = \dfrac{m\,\Delta v}{\Delta t}$, so $F_\text{A} - F_\text{B} = m\,\Delta v \left(\dfrac{1}{\Delta t_\text{A}} - \dfrac{1}{\Delta t_\text{B}}\right)$
 **Conversions:** None needed: the quantities are in SI units; finally $1\,\text{kN} = 1000\,\text{N}$.
 **Substitution:** $F_\text{A} = \dfrac{70\,\text{kg} \cdot 15\,\text{m/s}}{0.060\,\text{s}} = 17\,500\,\text{N}$ and $F_\text{B} = \dfrac{70\,\text{kg} \cdot 15\,\text{m/s}}{0.150\,\text{s}} = 7000\,\text{N}$, so $F_\text{A} - F_\text{B} = 10\,500\,\text{N} = 10.5\,\text{kN}$
-**Answer:** $10.5\,\text{kN}$, three significant figures, following the times $0.060\,\text{s}$ and $0.150\,\text{s}$ read from the graph.
+**Answer:** $10.5\,\text{kN}$, the data ($70\,\text{kg}$, $15\,\text{m/s}$) have two significant figures, so $11\,\text{kN}$ is also accepted; the third figure is kept to avoid rounding the intermediate forces.
 **Reasonableness:** Test A: $17.5\,\text{kN}$ is about $25$ times the weight of the dummy, $70\,\text{kg} \cdot 9.81\,\text{m/s}^2 \approx 690\,\text{N}$, test B: $7.0\,\text{kN}$ about $10$ times. The ratio of the forces $17.5/7.0 = 2.5$ equals the inverse ratio of the times $0.150/0.060 = 2.5$, as it should: the same change of momentum, a longer time, a smaller force.

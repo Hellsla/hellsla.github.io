@@ -108,10 +108,10 @@ def tyo():
 
 
 def palkit():
-    """Kaava: the energy principle as bars, schematic but to scale: E_p,1 = 100, W_muut = −40, E_k,2 = 60 units."""
-    f = Fig("fy48-palkit", 360, "Energiapalkit, kaavakuva mittakaavassa: alussa kappaleella on vain potentiaalienergiaa E_p,1, "
-            "liike-energia E_k,1 on nolla. Kitka tekee negatiivisen työn W_muut, jonka palkki osoittaa nollatasosta alaspäin. Lopussa "
-            "kappaleella on vain liike-energiaa E_k,2 ja potentiaalienergia E_p,2 on nolla. Katkoviiva alun mekaanisen energian "
+    """Kaava: the energy principle as bars, schematic but to scale: E_p0 = 100, W = −40, E_k = 60 units."""
+    f = Fig("fy48-palkit", 360, "Energiapalkit, kaavakuva mittakaavassa: alussa kappaleella on vain potentiaalienergiaa E_p0, "
+            "liike-energia E_k0 on nolla. Kitka tekee negatiivisen työn W, jonka palkki osoittaa nollatasosta alaspäin. Lopussa "
+            "kappaleella on vain liike-energiaa E_k ja potentiaalienergia E_p on nolla. Katkoviiva alun mekaanisen energian "
             "korkeudella näyttää, että loppuenergia on alkuenergiaa pienempi juuri kitkan työn verran.")
     zero, k = 232, 1.6
     f.tex(120, 26, r"\text{alussa}", "middle"); f.tex(480, 26, r"\text{lopussa}", "middle")
@@ -122,9 +122,9 @@ def palkit():
     f.tex(230, 150, "+", "middle"); f.tex(370, 150, "=", "middle")
     f.line(180, zero - 100 * k, 540, zero - 100 * k, MUTED, 1.5, "6 5")
     f.path(f"M470,{n(zero - 100 * k)} h8 V{n(zero - 60 * k)} h-8", stroke=HEATC, w=2.5)
-    f.tex(486, zero - 80 * k, r"|W_\text{muut}|", "start", HEATC)
-    for x, s, c in ((80, r"E_{\text{k},1}", BLUE), (160, r"E_{\text{p},1}", GREEN), (300, r"W_\text{muut}", HEATC),
-                    (440, r"E_{\text{k},2}", BLUE), (520, r"E_{\text{p},2}", GREEN)):
+    f.tex(486, zero - 80 * k, r"|W|", "start", HEATC)
+    for x, s, c in ((80, r"E_{\text{k}0}", BLUE), (160, r"E_{\text{p}0}", GREEN), (300, r"W", HEATC),
+                    (440, r"E_\text{k}", BLUE), (520, r"E_\text{p}", GREEN)):
         f.tex(x, 332, s, "middle", c)
     f.tex(80, zero - 18, "0", "middle", MUTED); f.tex(520, zero - 18, "0", "middle", MUTED)
     return f.svg()
@@ -180,14 +180,14 @@ def hero():
 
 
 def palkit_asteikko():
-    """Task figure: two energy bars on a joule scale, E_p,1 = 40 J at the start and E_k,2 = 25 J at the end; no friction bar."""
+    """Task figure: two energy bars on a joule scale, E_p0 = 40 J at the start and E_k = 25 J at the end; no friction bar."""
     f = Fig("fy48-palkitasteikko", 366, "Energiapalkit mittakaavassa, pystyakselilla energia jouleina nollasta 50:een. Kelkka laskee "
-            "rinteen alas levosta. Vasemmanpuoleinen vihreä palkki on kelkan potentiaalienergia E_p,1 alussa, ylhäällä: se ulottuu "
-            "40 jouleen. Oikeanpuoleinen sininen palkki on kelkan liike-energia E_k,2 lopussa, alhaalla: se ulottuu 25 jouleen. "
+            "rinteen alas levosta. Vasemmanpuoleinen vihreä palkki on kelkan potentiaalienergia E_p0 alussa, ylhäällä: se ulottuu "
+            "40 jouleen. Oikeanpuoleinen sininen palkki on kelkan liike-energia E_k lopussa, alhaalla: se ulottuu 25 jouleen. "
             "Alussa liike-energia on nolla ja lopussa potentiaalienergia on nolla. Muiden voimien työn palkkia ei ole piirretty.")
     ax = Axes(f, (92, 290), (496, 60), x=(0, 4), y=(0, 50), xticks=[], yticks=list(range(5, 51, 5)),
               xlabel="", ylabel=r"E\ (\text{J})", yfmt=lambda v: fi(v) if v % 10 == 0 else "")
-    for x, val, c, s in ((1.0, 40, GREEN, r"E_{\text{p},1}"), (2.8, 25, BLUE, r"E_{\text{k},2}")):
+    for x, val, c, s in ((1.0, 40, GREEN, r"E_{\text{p}0}"), (2.8, 25, BLUE, r"E_\text{k}")):
         f.rect(ax.X(x - 0.35), ax.Y(val), ax.X(x + 0.35) - ax.X(x - 0.35), ax.Y(0) - ax.Y(val), c)
         f.tex(ax.X(x), 314, s, "middle", c)
     f.tex(ax.X(1.0), 346, r"\text{alussa}", "middle"); f.tex(ax.X(2.8), 346, r"\text{lopussa}", "middle")
@@ -199,6 +199,6 @@ FIGURES = {"hero": hero, "laakso": laakso, "tyo": tyo, "palkit": palkit, "palkit
 REUSE = {
     "laakso": "reveals: mechanical energy is conserved without friction (equal bar totals, the same height on both sides)",
     "tyo": "reveals: the sign of the work of a force along, against and perpendicular to the motion",
-    "palkit": "reveals: the energy principle E_k1 + E_p1 + W_muut = E_k2 + E_p2 as bars",
-    "palkit-asteikko": "safe: E_p,1 = 40 J and E_k,2 = 25 J as bars on a joule scale; the work of the other forces is not drawn",
+    "palkit": "reveals: the energy principle E_p0 + E_k0 + W = E_p + E_k as bars",
+    "palkit-asteikko": "safe: E_p0 = 40 J and E_k = 25 J as bars on a joule scale; the work of the other forces is not drawn",
 }

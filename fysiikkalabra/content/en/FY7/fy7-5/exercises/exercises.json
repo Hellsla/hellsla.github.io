@@ -279,6 +279,15 @@
           "feedback": "Correct: the formula $e = vBl$ holds when the velocity, the rod and the field are mutually perpendicular. No magnetic force acts on an electron moving in the direction of the field, no charge collects at the ends of the rod, and the voltage is zero."
         }
       ]
+    },
+    {
+      "id": "fy7-5-L2-08",
+      "level": 2,
+      "text": "A coil has $200$ turns. The graph shows the magnetic flux $\\Phi$ through one turn as a function of time $t$. The direction of the flux through the turn reverses during the measurement, so the flux also takes negative values. What is the magnitude of the average induced voltage of the coil in the interval $0$–$0{,}40\\,\\text{s}$? Read the values you need from the graph.",
+      "figure": "fy7-5/flux-task-2",
+      "answer": 4.0,
+      "unit": "V",
+      "tolerance": 0.02
     }
   ],
   "level3": [

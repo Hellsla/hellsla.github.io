@@ -168,8 +168,8 @@ Koska lämpöarvo on energia massayksikköä kohti, vapautuva energia on suoraan
 
 ## Kaava: Lämpöarvo ja vapautuva energia
 Polttoaineesta palaessaan vapautuva energia on
-```latex
-E = Hm
+```kaavat
+palamisessa vapautuva lämpö :: E = Hm
 ```
 missä $E$ on vapautuva energia ($\text{J}$ tai $\text{MJ}$), $H$ polttoaineen lämpöarvo ($\text{MJ/kg}$) ja $m$ palaneen polttoaineen massa ($\text{kg}$). Massa on laskettava kilogrammoina, koska lämpöarvo on energia kilogrammaa kohti. Esimerkiksi $3{,}0\,\text{kg}$ bensiiniä vapauttaa $43\,\tfrac{\text{MJ}}{\text{kg}} \cdot 3{,}0\,\text{kg} = 129\,\text{MJ} \approx 130\,\text{MJ}$, koska massa tunnetaan kahden numeron tarkkuudella.
 

@@ -188,3 +188,25 @@
 4 tosi: magneetin $\text{N}$-pää kääntyy maantieteelliseen pohjoiseen. Erinimiset navat vetävät toisiaan, joten siellä on sauvamagneettimallin etelänapa (geomagnetismissa magneettinen pohjoisnapa).
 
 5 epätosi: kahden magneetin välissä vaikuttaa yksi kokonaiskenttä $\overline{B} = \overline{B}_1 + \overline{B}_2$. Sillä on kussakin pisteessä vain yksi suunta, joten kenttäviivat eivät leikkaa toisiaan. Rautaviila näyttää kokonaiskentän viivat, jotka kaartuvat magneettien välissä.
+
+## fy7-1-L2-08
+**Annettu:** kuva: ruudukon ruutu $5\,\mu\text{T}$, kompassi origossa, Maan kentän vaakakomponentti $\overline{B}_\text{h}$ pohjoiseen ja magneetin kenttä $\overline{B}_\text{m}$ itään
+**Kysytty:** kenttien suuruudet, kokonaiskenttä $B$ ja neulan kääntymiskulma $\theta$ pohjoisesta itään asteina
+**Periaate:** Neula kääntyy vaakasuoran kokonaiskentän suuntaiseksi. Kentät ovat kohtisuorassa toisiaan vastaan, joten kokonaiskenttä on suorakulmion lävistäjä ja sen suuruus saadaan Pythagoraan lauseella. Pohjoisesta mitatun kulman vastainen kateetti on itään osoittava kenttä ja viereinen kateetti pohjoiseen osoittava kenttä.
+**Kuvaajan lukeminen:** Ruudukon viivat ovat $5\,\mu\text{T}$:n välein. Pohjoiseen osoittava nuoli $\overline{B}_\text{h}$ päättyy kolmanteen vaakaviivaan, joten $B_\text{h} = 3 \cdot 5\,\mu\text{T} = 15\,\mu\text{T}$. Itään osoittava nuoli $\overline{B}_\text{m}$ päättyy neljänteen pystyviivaan, joten $B_\text{m} = 4 \cdot 5\,\mu\text{T} = 20\,\mu\text{T}$.
+**Kaava:** $B = \sqrt{B_\text{h}^2 + B_\text{m}^2}$ ja $\tan\theta = \dfrac{B_\text{m}}{B_\text{h}}$, josta $\theta = \tan^{-1}\dfrac{B_\text{m}}{B_\text{h}}$
+**Muunnokset:** Ei tarvita: molemmat kentät ovat mikrotesloina, ja yksikkö supistuu kulman laskussa.
+**Sijoitus:** $B = \sqrt{(15\,\mu\text{T})^2 + (20\,\mu\text{T})^2} = \sqrt{625}\,\mu\text{T} = 25\,\mu\text{T}$ ja $\theta = \tan^{-1}\dfrac{20\,\mu\text{T}}{15\,\mu\text{T}} = \tan^{-1} 1{,}333 = 53{,}13^\circ$
+**Vastaus:** Kokonaiskenttä on $25\,\mu\text{T}$ ja neula kääntyy $53^\circ$ pohjoisesta itään, kaksi merkitsevää numeroa kuten kuvasta luetuissa kentissä.
+**Järkevyys:** Magneetin kenttä on suurempi kuin Maan kenttä, joten kulman pitää olla yli $45^\circ$ mutta alle $90^\circ$. Kenttien suhde $15 : 20 : 25$ on suorakulmainen kolmio $3 : 4 : 5$, jonka kulma on noin $53^\circ$. Tarkistus: $15\,\mu\text{T} \cdot \tan 53{,}13^\circ = 20\,\mu\text{T}$.
+
+## fy7-1-L2-09
+**Annettu:** kuva: Maan kenttä sivulta nähtynä, ruudukon ruutu $5\,\mu\text{T}$, vaaka-akseli pohjoiseen ja pystyakseli alas, nuoli $\overline{B}$ alkaa maanpinnalta
+**Kysytty:** vaaka- ja pystykomponentti, magneettivuon tiheys $B$ mikrotesloina ja inklinaatio $I$ asteina
+**Periaate:** Vaaka- ja pystykomponentti ovat kohtisuorassa toisiaan vastaan, ja ne ovat nuolen kärjen koordinaatit lähtöpisteestä mitattuina. Kokonaiskenttä on suorakulmion lävistäjä, ja inklinaatio on kentän ja vaakatason välinen kulma, jonka vastainen kateetti on pystykomponentti.
+**Kuvaajan lukeminen:** Nuolen kärki on kolmannella pystyviivalla pohjoiseen päin ja kymmenennellä vaakaviivalla alaspäin, kun ruudukon viivat ovat $5\,\mu\text{T}$:n välein. Siis $B_\text{h} = 3 \cdot 5\,\mu\text{T} = 15\,\mu\text{T}$ ja $B_\text{v} = 10 \cdot 5\,\mu\text{T} = 50\,\mu\text{T}$.
+**Kaava:** $B = \sqrt{B_\text{h}^2 + B_\text{v}^2}$ ja $\tan I = \dfrac{B_\text{v}}{B_\text{h}}$, josta $I = \tan^{-1}\dfrac{B_\text{v}}{B_\text{h}}$
+**Muunnokset:** Ei tarvita: komponentit ovat mikrotesloina, ja tulos halutaan mikrotesloina.
+**Sijoitus:** $B = \sqrt{(15\,\mu\text{T})^2 + (50\,\mu\text{T})^2} = \sqrt{2725}\,\mu\text{T} = 52{,}2\,\mu\text{T}$ ja $I = \tan^{-1}\dfrac{50\,\mu\text{T}}{15\,\mu\text{T}} = \tan^{-1} 3{,}333 = 73{,}3^\circ$
+**Vastaus:** $B = 52\,\mu\text{T}$ ja $I = 73^\circ$ vaakatason alapuolella, kaksi merkitsevää numeroa kuten kuvasta luetuissa komponenteissa.
+**Järkevyys:** Pystykomponentti on paljon vaakakomponenttia suurempi, joten kenttä osoittaa jyrkästi alas ja kulma on lähellä $90^\circ$. Kokonaiskenttä on vain vähän suurempi kuin suurempi komponentti $50\,\mu\text{T}$. Arvot sopivat Etelä-Suomeen, jossa $B \approx 52\,\mu\text{T}$ ja $I \approx 74^\circ$. Tarkistus: $B\cos I = 52{,}2\,\mu\text{T} \cdot \cos 73{,}3^\circ = 15{,}0\,\mu\text{T}$.

@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 14133f61d46cf6d3
-Mode: delta (exercises, fi-easy), round 1. Changed: new task, paragraph splits, solutions.md.
+CONTENT-HASH: 3730a3b9fd72307e
+Mode: delta
+Round: 1
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy3-4-L1-09 Mallivastaus — the aligned display block renders in a smaller type size than the text around it at 390 px; acceptable, no action needed unless the build can scale it up.
+- [Minor] solutions.md fy3-4-L1-10 Sijoitus — units are stacked fractions ($\tfrac{\text{kg}}{\text{m}^3}$) that render tiny and differ from the slash form ($\text{kg/m}^3$) used in the rest of the set — write $1020\,\text{kg/m}^3 \cdot 9{,}81\,\text{m/s}^2 \cdot 25{,}0\,\text{m}$.
+- [Minor] solutions.md fy3-4-L2-08 Muunnokset — the stacked $\dfrac{\text{Pa/m}}{\text{m/s}^2}$ is hard to read; say "Yksikkö $\text{Pa/m} : \text{m/s}^2$ on $\text{kg/m}^3$".
 
 ## Checked
-- Rendered preview/fi-easy/fy3-4.html at 390 px with my own script (scratch trvis3x): fy3-4-L1-09 (order of magnitude, four choices, feedback open, model solution with the aligned display block) and the split L-task about the barrel lid.
-- The aligned Mallivastaus block ($\Delta p$ with two rows aligned at the equals sign) fits the 390 px card with margin: no clipping, page and card scrollWidth equal the viewport.
-- No red KaTeX source, no horizontal overflow; feedback and solution open inside the task card.
-- Plain-language Finnish: short sentences, terms explained ("suuruusluokka on kymmenpotenssi…", "eli ei muutu"), case endings after maths correct ("$10\\,\\text{m}$:n").
-- No figures changed in the diff.
+- fy3-4-open-exercises-1280-10 (L1-10: Periaate to Järkevyys; maths, units, aligned Sijoitus rows; top of the task is in part 9, which I did not open — the solution and the answer row carry it).
+- fy3-4-open-exercises-L2-1280-10 and -11 (L2-08: two-liquids graph with axis titles and units, ticks, labelled lines A and B, shared surface pressure, no densities given; solution layout, Kuvaajan lukeminen).
+- Captures are the lesson's review/shots (current for this hash).
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

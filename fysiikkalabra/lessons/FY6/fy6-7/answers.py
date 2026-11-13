@@ -39,4 +39,8 @@ a["fy6-7-L3-04"] = 2.0 * 3.0 * (19.4 - 3.9) / 100         # 6,0 kWh · 15,5 snt/
 # old fridge 320 kWh/a, new 98 kWh/a, price 489 EUR, 0,17 EUR/kWh: saving 222 kWh = 37,74 EUR a year
 a["fy6-7-L3-05"] = 489 / ((320 - 98) * 0.17)              # payback 489 : 37,74 = 12,96 a (life 15 a: 566,1 - 489 = 77,1 EUR gain)
 # L1-09 is multiple choice (order of magnitude): 1,2 kW · 3,0 min = 1,2 kW · 0,050 h = 0,060 kWh; no number
+# MAFY table (Yksikkömuunnoksia): 1 kWh = 3,6 MJ; radiator 1,5 kW for 2,0 h = 3,0 kWh
+a["fy6-7-L1-10"] = 1.5 * 2.0 * 3.6                        # 10,8 MJ
+# figure fy6-7/dryer: 2,4 kW for 0,5 h, 1,2 kW for 1,0 h, 0,2 kW for 0,5 h; price 0,18 EUR/kWh
+a["fy6-7-L2-08"] = (2.4 * 0.5 + 1.2 * 1.0 + 0.2 * 0.5) * 0.18   # 2,5 kWh -> 0,45 EUR
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

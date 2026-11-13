@@ -152,6 +152,18 @@
           "feedback": "Oikein: energia $W = \\tfrac{1}{2} C U^2$ riippuu jännitteen neliöstä. Kapasitanssi $C$ pysyy samana ja jännite kaksinkertaistuu. Silloin energia kasvaa $2^2 = 4$-kertaiseksi, $28{,}8\\,\\text{mJ}$:iin."
         }
       ]
+    },
+    {
+      "id": "fy6-13-L1-10",
+      "level": 1,
+      "text": "Levykondensaattorin levyjen pinta-ala on $250\\,\\text{cm}^2$. Levyjen välissä on polyeteenikalvo, jonka paksuus on $0{,}10\\,\\text{mm}$. Laske kondensaattorin kapasitanssi nanofaradeina. Käytä sähkövakiota $\\varepsilon_0 = 8{,}854 \\cdot 10^{-12}\\,\\text{F/m}$. Hae polyeteenin suhteellinen permittiivisyys MAFY-taulukosta (mafytaulukot.fi).",
+      "lookup": "MAFY",
+      "answer": 5.09,
+      "unit": "nF",
+      "tolerance": 0.05,
+      "hints": [
+        "Arvo löytyy MAFY-taulukon taulukosta *Eristeiden suhteellisia permittiivisyyksiä*."
+      ]
     }
   ],
   "level2": [
@@ -315,6 +327,15 @@
       ],
       "answer": 63.4,
       "unit": "mJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-13-L2-08",
+      "level": 2,
+      "text": "Kuvaajassa on toisen kondensaattorin jännite sen varauksen funktiona latauksen aikana. Kuinka paljon energiaa kondensaattoriin varastoituu, kun jännite on $7{,}0\\,\\text{V}$? Laske ensin kapasitanssi kuvaajan avulla. Vastaa mikrojouleina.",
+      "figure": "fy6-13/ex-qu2",
+      "answer": 367.5,
+      "unit": "µJ",
       "tolerance": 0.02
     }
   ],

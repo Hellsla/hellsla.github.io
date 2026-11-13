@@ -234,14 +234,14 @@ Kappaleen liike-energia ja potentiaalienergia yhdessä ovat sen **mekaaninen ene
 
 ## Kaava: Liike-energia ja potentiaalienergia
 Painovoiman potentiaalienergia on
-```latex
-E_\text{p} = m g h
+```kaavat
+painovoimaan liittyvä potentiaalienergia maanpinnalla :: E_\text{p} = m g h
 ```
 missä $E_\text{p}$ on potentiaalienergia ($\text{J}$), $m$ massa ($\text{kg}$), $g = 9{,}81\,\text{m/s}^2$ putoamiskiihtyvyys ja $h$ korkeus valitusta nollatasosta ($\text{m}$). Lauseke pätee Maan pinnan lähellä, missä $g$ on vakio. Nollatason alapuolella $h < 0$, joten potentiaalienergia on negatiivinen. Yksikkö on $\text{kg} \cdot \text{m/s}^2 \cdot \text{m} = \text{N} \cdot \text{m} = \text{J}$.
 
 Liike-energia on
-```latex
-E_\text{k} = \tfrac{1}{2}\,m v^2
+```kaavat
+liike-energia :: E_\text{k} = \tfrac{1}{2}\,m v^2
 ```
 missä $E_\text{k}$ on liike-energia ($\text{J}$), $m$ massa ($\text{kg}$) ja $v$ nopeus ($\text{m/s}$). Lauseke saadaan rampin nousukorkeudesta. Kitkaton kärry nousee korkeudelle $h = \tfrac{v^2}{2g}$, ja sen potentiaalienergia kasvaa silloin määrän $m g h = m g \cdot \tfrac{v^2}{2g} = \tfrac{1}{2}\,m v^2$. Juuri niin paljon kärryllä oli liike-energiaa rampin juurella. Liike-energia ei ole koskaan negatiivinen, eikä se riipu liikkeen suunnasta.
 

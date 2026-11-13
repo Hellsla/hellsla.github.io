@@ -284,8 +284,21 @@ def hero():
     return f.svg()
 
 
+def ex_graph_car():
+    """Task figure (L2-09): five (I, U) points of a car battery and the line through them, drawn only over the data."""
+    f = new("fy68-excar", 360, "Kuvaaja mittakaavassa: auton käynnistysakun napajännite U voltteina virran I funktiona ampeereina, ruudukon väli 50 A ja 1 V. Mittauspisteet ovat (50 A; 11 V), (100 A; 10 V), (150 A; 9 V), (200 A; 8 V) ja (250 A; 7 V). Pisteiden kautta on piirretty suora pisteiden väliltä.")
+    ax = Axes(f, (96, 290), (500, 66), x=(0, 300), y=(0, 14), xticks=[50 * k for k in range(1, 7)],
+              yticks=list(range(1, 15)), xlabel=r"I\ (\text{A})", ylabel=r"U\ (\text{V})",
+              xfmt=lambda v: fi(v, 0), yfmt=lambda v: fi(v, 0) if v % 2 == 0 else "")
+    ax.line([(50, 11), (250, 7)], POT, 3)
+    for i in (50, 100, 150, 200, 250):
+        ax.point(i, 12 - 0.02 * i, INK, 6)
+    return f.svg()
+
+
 FIGURES = {"hero": hero, "model": model, "potential": potential, "ui-graph": ui_graph, "connections": connections,
-           "ex-graph": ex_graph, "check-graph": check_graph}
+           "ex-graph": ex_graph, "check-graph": check_graph,
+           "ex-graph-car": ex_graph_car}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "model": "safe: the model of a battery (E and R_s inside a dashed outline) with a load R and a voltmeter across the terminals",
@@ -294,4 +307,5 @@ REUSE = {
     "connections": "reveals: two identical cells in series give 2E and 2R_s, in parallel E and R_s/2",
     "ex-graph": "safe: four model (I, U) points of a 4,5 V battery and their line extended to both axes, no intercepts written",
     "check-graph": "safe: five (I, U) points of a 9 V battery with scatter and a fitted line, no slope or intercept written",
+    "ex-graph-car": "safe: five (I, U) points of a car battery and the line through them over the data only, no intercepts or slope written",
 }

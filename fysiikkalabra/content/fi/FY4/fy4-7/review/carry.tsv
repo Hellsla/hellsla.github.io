@@ -1,3 +1,9 @@
 date	reviewer	from	to	base	categories
 2026-11-03	science	688464c5a7f5edd4	9dac3d9e91ae86a3	c2afe4b8103b	photo,typography
 2026-11-03	pedagogy	688464c5a7f5edd4	9dac3d9e91ae86a3	c2afe4b8103b	photo,typography
+2026-11-13	science	688464c5a7f5edd4	c7dca786bc069ffc	c2afe4b8103b	formula-names,photo,typography
+2026-11-13	pedagogy	688464c5a7f5edd4	c7dca786bc069ffc	c2afe4b8103b	formula-names,photo,typography
+2026-11-13	visual	9dac3d9e91ae86a3	c7dca786bc069ffc	cbf13e636495	formula-names
+2026-11-13	science	688464c5a7f5edd4	e89b209ae99d2fa9	c2afe4b8103b	formula-names,photo,teacher-figure,typography
+2026-11-13	pedagogy	688464c5a7f5edd4	e89b209ae99d2fa9	c2afe4b8103b	formula-names,photo,teacher-figure,typography
+2026-11-13	visual	9dac3d9e91ae86a3	e89b209ae99d2fa9	cbf13e636495	formula-names,teacher-figure

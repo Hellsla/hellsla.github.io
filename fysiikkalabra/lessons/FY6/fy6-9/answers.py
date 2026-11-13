@@ -31,6 +31,9 @@ ys = [1.6, 2.4, 3.5, 4.6, 5.5]
 mx, my = sum(xs) / len(xs), sum(ys) / len(ys)
 k = sum((x - mx) * (y - my) for x, y in zip(xs, ys)) / sum((x - mx) ** 2 for x in xs)   # least squares slope = 2,5 A/V
 a["fy6-9-L2-07"] = 1 / k                                  # R_kok = 1 : k = 0,40 ohm (the solution reads (13,0 V; 1,5 A), (14,6 V; 5,5 A): same)
+# figure fy6-9/ex-current2: 2,0 A for 0-1,0 h, 1,5 A for 1,0-3,0 h, 0,5 A for 3,0-4,0 h; nominal voltage 11,1 V
+Q_28 = 2.0 * 1.0 + 1.5 * (3.0 - 1.0) + 0.5 * (4.0 - 3.0)   # 2,0 Ah + 3,0 Ah + 0,5 Ah = 5,5 Ah
+a["fy6-9-L2-08"] = 11.1 * Q_28                            # W = U Q = 11,1 V · 5,5 Ah = 61,05 Wh
 # Level 3: reasoning, two ideas
 W_car = 0.5 * 12 * 60                                     # car battery 12 V, 60 Ah, only half usable: 360 Wh
 W_sc = 36 * 7.8                                           # e-scooter battery 36 V, 7,8 Ah: 280,8 Wh

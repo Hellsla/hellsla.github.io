@@ -290,6 +290,15 @@
       "answer": "Kytkentä C ($110\\,\\Omega$), kytkentä B ($132\\,\\Omega$), kytkentä E ($150\\,\\Omega$), kytkentä D ($265\\,\\Omega$), kytkentä A ($550\\,\\Omega$).",
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-4-L2-09",
+      "level": 2,
+      "text": "Kuvan kytkennässä paristo on ihanteellinen, ja johtimien resistanssi jätetään huomiotta. Kuinka suuri kokonaisvirta kulkee paristosta? Anna vastaus milliampeereina.",
+      "figure": "fy6-4/task-parallel",
+      "answer": 500,
+      "unit": "mA",
+      "tolerance": 0.02
     }
   ],
   "level3": [

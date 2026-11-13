@@ -12,5 +12,6 @@
  " ja ": " ja ",
  " rinnan": " rinnan",
  "Kytkentäkaavio: 12 voltin paristoon on kytketty 40 ohmin vastus R1 ja sen kanssa sarjaan kahden rinnakkaisen vastuksen ryhmä, jossa R2 on 60 ohmia ja R3 on 120 ohmia.": "Kytkentäkaavio: 12 voltin paristoon on kytketty 40 ohmin vastus R1. Sen kanssa sarjassa on kahden rinnakkaisen vastuksen ryhmä. Vastus R2 on 60 ohmia ja R3 on 120 ohmia.",
- "Kytkentäkaavio: 12 voltin paristoon on kytketty 20 ohmin vastus ja sen kanssa sarjaan kahden rinnakkaisen vastuksen ryhmä, jossa toinen vastus on 60 ohmia ja toinen 30 ohmia.": "Kytkentäkaavio: 12 voltin paristoon on kytketty 20 ohmin vastus. Sen kanssa sarjassa on kahden rinnakkaisen vastuksen ryhmä. Toinen vastus on 60 ohmia ja toinen 30 ohmia."
+ "Kytkentäkaavio: 12 voltin paristoon on kytketty 20 ohmin vastus ja sen kanssa sarjaan kahden rinnakkaisen vastuksen ryhmä, jossa toinen vastus on 60 ohmia ja toinen 30 ohmia.": "Kytkentäkaavio: 12 voltin paristoon on kytketty 20 ohmin vastus. Sen kanssa sarjassa on kahden rinnakkaisen vastuksen ryhmä. Toinen vastus on 60 ohmia ja toinen 30 ohmia.",
+ "Kytkentäkaavio: 9,0 voltin paristoon on kytketty rinnan kaksi vastusta, joista R1 on 30 ohmia ja R2 on 45 ohmia.": "Kytkentäkaavio: 9,0 voltin paristoon on kytketty rinnan kaksi vastusta, joista R1 on 30 ohmia ja R2 on 45 ohmia."
 }

@@ -206,3 +206,35 @@ Varausten tulo kaksinkertaistuu, mikä kaksinkertaistaa voiman, ja etäisyyden n
 **Sijoitus:** $F = 8{,}0 \cdot 10^{-4}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot \tan 10\,{}^\circ = 1{,}384 \cdot 10^{-3}\,\text{N}$ ja $r = 2 \cdot 0{,}30\,\text{m} \cdot \sin 10\,{}^\circ = 0{,}1042\,\text{m}$, joten $q = 0{,}1042\,\text{m} \cdot \sqrt{\dfrac{1{,}384 \cdot 10^{-3}\,\text{N}}{8{,}988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2}}} = 0{,}1042\,\text{m} \cdot 3{,}924 \cdot 10^{-7}\,\tfrac{\text{C}}{\text{m}} = 4{,}088 \cdot 10^{-8}\,\text{C} = 40{,}9\,\text{nC}$
 **Vastaus:** $41\,\text{nC}$, kaksi merkitsevää numeroa kuten massassa ja kulmassa. Pallojen etäisyys on $0{,}10\,\text{m}$. c) Sähköiset voimat ovat voima ja vastavoima, joten ne ovat yhtä suuret, vaikka varaukset olisivat eri suuret. Massat ovat samat, joten ehto $\tan\theta = F : (mg)$ antaa kummallekin pallolle saman kulman. Kulma ei pysy $10\,{}^\circ$:ssa vaan kasvaa, koska voima $F$ kasvaa, mutta langat ovat yhä keskenään yhtä suuressa kulmassa pystysuoraan nähden.
 **Järkevyys:** Sähköinen voima $1{,}38\,\text{mN}$ on pieni verrattuna painoon $mg = 7{,}85\,\text{mN}$, ja $\tan 10\,{}^\circ = 0{,}176$ on sama suhde, joten kulma on pieni. Takaisinsijoitus Coulombin lakiin antaa $1{,}38\,\text{mN}$.
+
+## fy6-10-L1-09
+**Annettu:** $q_1 = +5{,}0\,\text{nC}$, $q_2 = +8{,}0\,\text{nC}$, $r = 4{,}0\,\text{cm}$; MAFY-taulukon *Luonnonvakiot* mukaan Coulombin lain vakio $k = 8{,}987\,55 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2}$
+**Kysytty:** sähköisen voiman suuruus $F$ millinewtoneina
+**Periaate:** Varaukset ovat pistemäisiä, joten niiden välinen voima saadaan Coulombin laista. Voima on suoraan verrannollinen varausten tuloon ja kääntäen verrannollinen etäisyyden neliöön. Vakio $k$ haetaan MAFY-taulukosta; luvun tekstissä käytetty $8{,}988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2}$ on sama arvo pyöristettynä.
+**Kaava:** $F = k\,\dfrac{\lvert q_1 q_2 \rvert}{r^2}$
+**Muunnokset:** $q_1 = 5{,}0\,\text{nC} = 5{,}0 \cdot 10^{-9}\,\text{C}$; $q_2 = 8{,}0\,\text{nC} = 8{,}0 \cdot 10^{-9}\,\text{C}$; $r = 4{,}0\,\text{cm} = 4{,}0 \cdot 0{,}01\,\text{m} = 0{,}040\,\text{m}$; lopuksi $1\,\text{N} = 1000\,\text{mN}$.
+**Sijoitus:** $F = 8{,}987\,55 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2} \cdot \dfrac{5{,}0 \cdot 10^{-9}\,\text{C} \cdot 8{,}0 \cdot 10^{-9}\,\text{C}}{(0{,}040\,\text{m})^2} = 2{,}247 \cdot 10^{-4}\,\text{N} = 0{,}2247\,\text{mN}$
+**Vastaus:** $0{,}22\,\text{mN}$, kaksi merkitsevää numeroa kuten varauksissa ja etäisyydessä. Voima on hylkivä, koska varaukset ovat samanmerkkisiä. Vastaus hyväksytään taulukon painoksesta riippumattomalla toleranssilla.
+**Järkevyys:** Arvio: $9 \cdot 10^{9} \cdot 40 \cdot 10^{-18} : 1{,}6 \cdot 10^{-3}\,\text{N} \approx 2{,}3 \cdot 10^{-4}\,\text{N}$ on sama suuruusluokka. Voima on pieni, kuten nanocoulombin varauksilla odottaa.
+
+## fy6-10-L2-09
+**Annettu:** kuvaaja kahden samanlaisen, yhtä suuresti varatun pallon välisestä voimasta $F$ etäisyyden $r$ funktiona, $r = 4{,}0\,\text{cm}$; $k = 8{,}988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2}$
+**Kysytty:** kummankin pallon varaus $q$ nanocoulombeina
+**Periaate:** Pallojen varaukset ovat yhtä suuret, joten Coulombin laissa $q_1 = q_2 = q$ ja $F = k\,\dfrac{q^2}{r^2}$. Kun voima luetaan kuvaajasta annetulla etäisyydellä, tuntematon varaus saadaan laskettua.
+**Kuvaajan lukeminen:** Kuljetaan vaaka-akselin kohdasta $4{,}0\,\text{cm}$ ylös käyrälle ja siitä vaakasuoraan pystyakselille. Käyrä on viidennen millinewtonin ruudukkoviivan yläpuolella, noin $0{,}06\,\text{mN}$ sen yli, joten $F = 5{,}06\,\text{mN} \approx 5{,}1\,\text{mN}$ (lukema on tarkka noin $\pm 0{,}1\,\text{mN}$).
+**Kaava:** $F = k\,\dfrac{q^2}{r^2}$, josta $q^2 = \dfrac{F r^2}{k}$ ja $q = r\sqrt{\dfrac{F}{k}}$
+**Muunnokset:** $F = 5{,}06\,\text{mN} = 5{,}06 \cdot 10^{-3}\,\text{N}$; $r = 4{,}0\,\text{cm} = 0{,}040\,\text{m}$; lopuksi $1\,\text{C} = 10^{9}\,\text{nC}$.
+**Sijoitus:** $q = 0{,}040\,\text{m} \cdot \sqrt{\dfrac{5{,}06 \cdot 10^{-3}\,\text{N}}{8{,}988 \cdot 10^{9}\,\text{N} \cdot \text{m}^2/\text{C}^2}} = 0{,}040\,\text{m} \cdot 7{,}50 \cdot 10^{-7}\,\tfrac{\text{C}}{\text{m}} = 3{,}00 \cdot 10^{-8}\,\text{C} = 30\,\text{nC}$
+**Vastaus:** $30\,\text{nC}$ kummallakin pallolla, kaksi merkitsevää numeroa, koska voima luetaan kuvaajasta noin kahden numeron tarkkuudella. Jos lukema olisi $5{,}1\,\text{mN}$, tulos olisi $30{,}1\,\text{nC}$, joten lukutarkkuus ei muuta vastausta.
+**Järkevyys:** Tarkistus toiseen suuntaan: $8{,}988 \cdot 10^{9} \cdot (30 \cdot 10^{-9})^2 : 0{,}040^2\,\text{N} = 5{,}06\,\text{mN}$. Nanocoulombin luokan varaus on tyypillinen hankaussähkölle.
+
+## fy6-10-L2-10
+**Annettu:** parin A varaukset $20\,\text{nC}$ ja $20\,\text{nC}$; parin B varaukset $20\,\text{nC}$ ja $q_\text{B}$; kuvaaja voimista $F$ etäisyyden $r$ funktiona; $k = 8{,}988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2}$
+**Kysytty:** a) parin A voima etäisyydellä $3{,}0\,\text{cm}$ ja etäisyys, jolla parin B voima on yhtä suuri; b) varaus $q_\text{B}$ nanocoulombeina
+**Periaate:** Kun kahden parin voimat ovat yhtä suuret, Coulombin laista seuraa, että $\dfrac{q_\text{A1} q_\text{A2}}{r_\text{A}^2} = \dfrac{q_\text{A1} q_\text{B}}{r_\text{B}^2}$, koska vakio $k$ ja yhteinen varaus $20\,\text{nC}$ supistuvat. Näin tuntematon varaus saadaan etäisyyksien suhteesta ilman erillistä voimalaskua.
+**Kuvaajan lukeminen:** a) Pari A: pystyakselilta luetaan $F_\text{A} = 4{,}0\,\text{mN}$ etäisyydellä $r_\text{A} = 3{,}0\,\text{cm}$ (käyrä on neljännen millinewtonin ruudukkoviivalla). Kuljetaan $4{,}0\,\text{mN}$:n kohdalta vaakasuoraan oikealle parin B käyrälle: käyrä B leikkaa tämän viivan etäisyydellä $r_\text{B} = 6{,}0\,\text{cm}$ (kuudennen senttimetrin ruudukkoviivalla).
+**Kaava:** Parin A voima on $k\,\dfrac{q_\text{A}^2}{r_\text{A}^2}$ ja parin B $k\,\dfrac{q_\text{A} q_\text{B}}{r_\text{B}^2}$, joten $q_\text{B} = q_\text{A} \left(\dfrac{r_\text{B}}{r_\text{A}}\right)^2$, missä $q_\text{A} = 20\,\text{nC}$.
+**Muunnokset:** Etäisyydet ovat samassa yksikössä ja vain niiden suhde tarvitaan, joten muunnoksia ei tarvita; varaus saadaan nanocoulombeina.
+**Sijoitus:** $q_\text{B} = 20\,\text{nC} \cdot \left(\dfrac{6{,}0\,\text{cm}}{3{,}0\,\text{cm}}\right)^2 = 20\,\text{nC} \cdot 4{,}0 = 80\,\text{nC}$
+**Vastaus:** $80\,\text{nC}$, kaksi merkitsevää numeroa kuten parin A varauksessa. Etäisyys on kaksinkertainen, joten varausten tulon täytyy olla nelinkertainen, jotta voima pysyy samana.
+**Järkevyys:** Tarkistus Coulombin laista: $F_\text{A} = 8{,}988 \cdot 10^{9} \cdot (20 \cdot 10^{-9})^2 : 0{,}030^2\,\text{N} = 4{,}0\,\text{mN}$ ja $F_\text{B} = 8{,}988 \cdot 10^{9} \cdot 20 \cdot 10^{-9} \cdot 80 \cdot 10^{-9} : 0{,}060^2\,\text{N} = 4{,}0\,\text{mN}$, siis samat luvut kuin kuvaajasta. Parin B käyrä on parin A käyrän yläpuolella, kuten pitääkin, koska $q_\text{B} > 20\,\text{nC}$.

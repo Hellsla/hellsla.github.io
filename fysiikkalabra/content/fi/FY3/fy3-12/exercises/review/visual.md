@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 83748953571d3f72
+CONTENT-HASH: cc8485c6d5e1447c
 
 ## Blocking
 
+
 ## Polish
-- [Minor] fy3-12-L2-08 data lines — each U and A pair wraps to two rows at 390 px; acceptable, a small table would read easier.
+- [Minor] fy3-12-L2-09 Kuvaajan lukeminen — 'Auringon ja Maan välissä ylös vasemmalle osoittava nuoli' is clumsy; 'Maasta ylös vasemmalle osoittava vaalea nuoli' matches the figure.
+- [Minor] fy3-12-L3-03 solution Muunnokset — 'teho W' is energy there (W is the electrical energy, Wh/1000 = kWh); say 'energia'. Present before round 2.
 
 ## Checked
-- Round 2 (delta). Round-1 duplicate instruction fixed: the text now ends "Laske ... $P$ ja vertaa niitä." and the prompt "Järjestä ..." carries the ordering once. Yläpohja $U = 0{,}090$ now matches the two-figure precision of the other U values.
-- Rendered fy3-12 at 390 px (task, order selects; images opened): reads in the right order, no overflow (scrollWidth 390). The solution still says the answers are given to two figures; "0,090" is consistent with that (text check).
+- Round 2, delta. Opened fy3-12-open-exercises-L2-1280-10..13 and L3-1280-3, -4 (15-18 with the earth-flows figure and whole solution; 15-21 heat pump with the added definition of the coefficient and its solution). Figure labels, 52 PW answer box, stacked units, reasonableness panel all read; heat-pump LaTeX unit W/(m^2·K) renders cleanly.
 - Hash at start and end the same.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

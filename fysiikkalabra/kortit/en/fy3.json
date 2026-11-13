@@ -111,7 +111,7 @@
   {
    "id": "fy3-eristetty-systeemi",
    "moduuli": "FY3",
-   "luku": "fy3-3",
+   "luku": "fy3-5",
    "aihe": "fy3-lampotila-ja-systeemi",
    "kasite": "Isolated system",
    "maaritelma": "Neither matter nor energy is exchanged with the surroundings."
@@ -155,7 +155,7 @@
   {
    "id": "fy3-lampo",
    "moduuli": "FY3",
-   "luku": "fy3-8",
+   "luku": "fy3-5",
    "aihe": "fy3-lampolaajeneminen-ja-lammon-siirtyminen",
    "kasite": "Heat",
    "maaritelma": "Energy transferred because of a temperature difference from a hotter system to a colder one."
@@ -283,7 +283,7 @@
   {
    "id": "fy3-paine-ero",
    "moduuli": "FY3",
-   "luku": "fy3-1",
+   "luku": null,
    "aihe": "fy3-voima-ja-paine",
    "kasite": "Pressure difference",
    "maaritelma": "Different pressures in two regions can exert a force on an object."
@@ -291,7 +291,7 @@
   {
    "id": "fy3-kaasun-paine",
    "moduuli": "FY3",
-   "luku": "fy3-13",
+   "luku": "fy3-3",
    "aihe": "fy3-kaasun-tila",
    "kasite": "Gas pressure",
    "maaritelma": "The collisions of the particles with the container walls cause a pressure observed on the large scale."
@@ -333,7 +333,7 @@
   {
    "id": "fy3-isokoorinen-muutos",
    "moduuli": "FY3",
-   "luku": "fy3-13",
+   "luku": "fy3-9",
    "aihe": "fy3-kaasun-tila",
    "kasite": "Isochoric change",
    "maaritelma": "The volume stays constant, so the pressure is directly proportional to the absolute temperature."
@@ -341,7 +341,7 @@
   {
    "id": "fy3-isobaarinen-muutos",
    "moduuli": "FY3",
-   "luku": "fy3-13",
+   "luku": "fy3-9",
    "aihe": "fy3-kaasun-tila",
    "kasite": "Isobaric change",
    "maaritelma": "The pressure stays constant, so the volume is directly proportional to the absolute temperature."
@@ -349,7 +349,7 @@
   {
    "id": "fy3-isoterminen-muutos",
    "moduuli": "FY3",
-   "luku": "fy3-13",
+   "luku": "fy3-9",
    "aihe": "fy3-kaasun-tila",
    "kasite": "Isothermal change",
    "maaritelma": "The temperature stays constant, so the pressure and the volume are inversely proportional.",
@@ -439,7 +439,7 @@
   {
    "id": "fy3-lampeneminen",
    "moduuli": "FY3",
-   "luku": "fy3-16",
+   "luku": null,
    "aihe": "fy3-lampeneminen-ja-jaahtyminen",
    "kasite": "Warming",
    "maaritelma": "The temperature of a system rises when its internal energy grows without a change of state."
@@ -471,7 +471,7 @@
   {
    "id": "fy3-sulaminen",
    "moduuli": "FY3",
-   "luku": "fy3-14",
+   "luku": "fy3-7",
    "aihe": "fy3-olomuodon-muutokset",
    "kasite": "Melting",
    "maaritelma": "A solid turns into a liquid and takes in energy."
@@ -611,7 +611,7 @@
   {
    "id": "fy3-mekaaninen-tyo",
    "moduuli": "FY3",
-   "luku": "fy3-5",
+   "luku": "fy3-2",
    "aihe": "fy3-tyo-ja-sisaenergia",
    "kasite": "Mechanical work",
    "maaritelma": "The energy transferred by a force is the product of the force and the distance moved in its direction.",
@@ -621,7 +621,7 @@
   {
    "id": "fy3-sisaenergia",
    "moduuli": "FY3",
-   "luku": "fy3-2",
+   "luku": "fy3-5",
    "aihe": "fy3-tyo-ja-sisaenergia",
    "kasite": "Internal energy",
    "maaritelma": "The energy of a system made up of the kinetic and interaction energies of its particles."
@@ -655,7 +655,7 @@
   {
    "id": "fy3-tilavuustyo",
    "moduuli": "FY3",
-   "luku": "fy3-2",
+   "luku": null,
    "aihe": "fy3-tyo-ja-sisaenergia",
    "kasite": "Work at constant pressure",
    "maaritelma": "At constant pressure the work done by a gas depends on the pressure and the change in volume.",
@@ -665,7 +665,7 @@
   {
    "id": "fy3-adiabaattinen-muutos",
    "moduuli": "FY3",
-   "luku": "fy3-2",
+   "luku": null,
    "aihe": "fy3-tyo-ja-sisaenergia",
    "kasite": "Adiabatic change",
    "maaritelma": "No heat is transferred between the system and the surroundings, so work changes the internal energy."
@@ -729,7 +729,7 @@
   {
    "id": "fy3-kiertoprosessi",
    "moduuli": "FY3",
-   "luku": "fy3-11",
+   "luku": null,
    "aihe": "fy3-lampovoimakoneet",
    "kasite": "Cycle",
    "maaritelma": "A system goes through changes of state and finally returns to its original state."
@@ -737,7 +737,7 @@
   {
    "id": "fy3-jaahdytyskone",
    "moduuli": "FY3",
-   "luku": "fy3-11",
+   "luku": null,
    "aihe": "fy3-lampovoimakoneet",
    "kasite": "Refrigerator",
    "maaritelma": "Uses work to move energy from a colder space to warmer surroundings."
@@ -753,7 +753,7 @@
   {
    "id": "fy3-kompressori",
    "moduuli": "FY3",
-   "luku": "fy3-11",
+   "luku": null,
    "aihe": "fy3-lampovoimakoneet",
    "kasite": "Compressor",
    "maaritelma": "Compresses the refrigerant, so its pressure and usually its temperature rise."
@@ -793,7 +793,7 @@
   {
    "id": "fy3-albedo",
    "moduuli": "FY3",
-   "luku": "fy3-12",
+   "luku": null,
    "aihe": "fy3-ilmasto-ja-lampo",
    "kasite": "Albedo",
    "maaritelma": "The fraction of the radiation arriving at a surface that is reflected back."
@@ -801,7 +801,7 @@
   {
    "id": "fy3-jaapalaute",
    "moduuli": "FY3",
-   "luku": "fy3-12",
+   "luku": null,
    "aihe": "fy3-ilmasto-ja-lampo",
    "kasite": "Ice–albedo feedback",
    "maaritelma": "Less ice means less reflection and more of the Sun's energy absorbed."
@@ -809,7 +809,7 @@
   {
    "id": "fy3-merien-lampeneminen",
    "moduuli": "FY3",
-   "luku": "fy3-12",
+   "luku": null,
    "aihe": "fy3-ilmasto-ja-lampo",
    "kasite": "Ocean warming",
    "maaritelma": "The large specific heat capacity of water lets the oceans store a large amount of energy."
@@ -817,7 +817,7 @@
   {
    "id": "fy3-merenpinnan-nousu",
    "moduuli": "FY3",
-   "luku": "fy3-12",
+   "luku": null,
    "aihe": "fy3-ilmasto-ja-lampo",
    "kasite": "Sea-level rise",
    "maaritelma": "Caused mainly by melting land ice and the thermal expansion of sea water."
@@ -825,7 +825,7 @@
   {
    "id": "fy3-merijaan-sulaminen",
    "moduuli": "FY3",
-   "luku": "fy3-12",
+   "luku": null,
    "aihe": "fy3-ilmasto-ja-lampo",
    "kasite": "Melting of sea ice",
    "maaritelma": "Floating ice melting does not in itself raise the sea level significantly."
@@ -837,6 +837,52 @@
    "aihe": "fy3-ilmasto-ja-lampo",
    "kasite": "Climate change",
    "maaritelma": "The long-term warming of the Earth changes the energy balance, glaciers, oceans and other parts of the climate system."
+  },
+  {
+   "id": "fy3-energiaketju",
+   "moduuli": "FY3",
+   "luku": "fy3-15",
+   "aihe": "fy3-lampovoimakoneet",
+   "kasite": "Energy chain",
+   "maaritelma": "The series of steps in which energy is converted, for example from fuel to electricity; the efficiency of the chain is the product of the efficiencies of the steps.",
+   "kaava": "\\eta = \\eta_1\\,\\eta_2\\,\\eta_3",
+   "kaava_puhe": "eta equals eta one times eta two times eta three"
+  },
+  {
+   "id": "fy3-lauhdevoimalaitos",
+   "moduuli": "FY3",
+   "luku": "fy3-15",
+   "aihe": "fy3-lampovoimakoneet",
+   "kasite": "Condensing power plant",
+   "maaritelma": "A thermal power plant that produces only electricity, with an efficiency of electricity production of about $40\\,\\%$."
+  },
+  {
+   "id": "fy3-lauhdutin",
+   "moduuli": "FY3",
+   "luku": "fy3-15",
+   "aihe": "fy3-lampovoimakoneet",
+   "kasite": "Condenser",
+   "maaritelma": "The device in which steam from the turbine condenses back into water and gives off heat to the cooling water.",
+   "kaava": "P_\\text{L} = c\\,q_m\\,\\Delta T",
+   "kaava_puhe": "P L equals c times q m times delta T"
+  },
+  {
+   "id": "fy3-yhteistuotanto",
+   "moduuli": "FY3",
+   "luku": "fy3-15",
+   "aihe": "fy3-lampovoimakoneet",
+   "kasite": "Combined heat and power production",
+   "maaritelma": "Producing electricity and heat in the same plant so that the heat of the condenser is led into the district heating network."
+  },
+  {
+   "id": "fy3-kokonaishyotysuhde",
+   "moduuli": "FY3",
+   "luku": "fy3-15",
+   "aihe": "fy3-lampovoimakoneet",
+   "kasite": "Overall efficiency",
+   "maaritelma": "The ratio of the sum of the electric power and district heating power of a combined heat and power plant to the fuel power.",
+   "kaava": "\\eta_\\text{tot} = \\dfrac{P_\\text{s} + P_\\text{k}}{P_\\text{o}}",
+   "kaava_puhe": "eta tot equals P s plus P k divided by P o"
   }
  ]
 }

@@ -173,3 +173,25 @@
 **Mallivastaus:** Rengas hypähtää ylöspäin. Kun kytkin suljetaan, käämin virta kasvaa nollasta, joten myös käämin magneettikenttä ja renkaan läpi kulkeva vuo kasvavat. Renkaaseen syntyy induktiovirta, jonka kenttä osoittaa renkaan keskellä käämin kenttää vastaan ja vastustaa näin vuon kasvua. Rengas on silloin kuin pieni magneetti, jonka käämin puoleinen sivu on samanniminen napa kuin käämin yläpää. Samannimiset navat hylkivät toisiaan, ja kevyt rengas hypähtää ylös. Ei tarvitse tietää, kumpi napa käämin yläpää on: riittää, että renkaan käämin puoleinen sivu on aina samanniminen.
 
 Hylkivä voima kestää vain sen ajan, jonka virta kasvaa. Kun virta on asettunut vakioksi, vuo ei enää muutu, induktiovirta lakkaa ja rengas putoaa takaisin käämin päälle. Akun tasavirta ei siis estä induktiota, koska kytkemisen hetkellä virta muuttuu. Jos induktiovirta vahvistaisi vuon kasvua, rengas ja käämi vetäisivät toisiaan ja energiaa syntyisi tyhjästä, mikä on energian säilymisen vastaista. Tieto siitä, että alumiini johtaa sähköä hyvin, on tosi, mutta se kertoo vain, että virta voi kulkea, ei voiman suuntaa.
+
+## fy7-6-L2-09
+**Annettu:** kuvaaja jarruttavasta voimasta $F$ vauhdin $v$ funktiona; vauhti $v = 0{,}25\,\text{m/s}$
+**Kysytty:** teho $P$, jolla putken sisäenergia kasvaa, milliwatteina
+**Periaate:** Pyörrevirtojen jarruttava voima tekee työtä magneetin liikettä vastaan. Ajassa $\Delta t$ magneetti liikkuu matkan $v \Delta t$, ja työ $F v \Delta t$ muuttuu putken sisäenergiaksi, joten teho on $P = F v$. Tarvittava voima luetaan kuvaajasta.
+**Kuvaajan lukeminen:** Vauhdin $0{,}25\,\text{m/s}$ kohdalla mittauspiste ja piirretty suora ovat korkeudella $F = 0{,}40\,\text{N}$ (neljäs ruudukon viiva ylöspäin, kun väli on $0{,}1\,\text{N}$).
+**Kaava:** $P = F v$
+**Muunnokset:** $1\,\text{W} = 1000\,\text{mW}$
+**Sijoitus:** $P = 0{,}40\,\text{N} \cdot 0{,}25\,\text{m/s} = 0{,}100\,\text{W} = 100\,\text{mW}$
+**Vastaus:** $100\,\text{mW}$, kaksi merkitsevää numeroa kuten luetussa voimassa $0{,}40\,\text{N}$ ja vauhdissa $0{,}25\,\text{m/s}$.
+**Järkevyys:** Voima kasvaa suoraan vauhdin mukana, joten teho kasvaa vauhdin neliön mukana: puolta pienemmällä vauhdilla $0{,}125\,\text{m/s}$ voima olisi $0{,}20\,\text{N}$ ja teho vain $25\,\text{mW}$. Kymmenesosa watista on pieni teho, joten putki ei tunnu lämpenevän.
+
+## fy7-6-L3-06
+**Annettu:** magneetin massa $m = 45\,\text{g}$, $g = 9{,}81\,\text{m/s}^2$; kuvaaja jarruttavasta voimasta $F$ vauhdin $v$ funktiona
+**Kysytty:** tasainen vauhti $v$, jolla magneetti putoaa, metreinä sekunnissa
+**Periaate:** Kun magneetti putoaa tasaisella vauhdilla, siihen kohdistuvien voimien summa on nolla, joten jarruttava voima on yhtä suuri kuin paino: $F = mg$. Kuvaajan suora kulkee origon kautta, joten $F$ on suoraan verrannollinen vauhtiin: $F = kv$. Vauhti on se, jolla suoran voima on yhtä suuri kuin paino.
+**Kuvaajan lukeminen:** Suora kulkee origon kautta, joten kulmakerroin saadaan yhdestä pisteestä. Vauhdin $0{,}20\,\text{m/s}$ kohdalla voima on $0{,}32\,\text{N}$, joten $k = F : v = 0{,}32\,\text{N} : 0{,}20\,\text{m/s} = 1{,}6\,\text{N}\cdot\text{s/m}$. Toinen piste antaa saman: $0{,}48\,\text{N} : 0{,}30\,\text{m/s} = 1{,}6\,\text{N}\cdot\text{s/m}$.
+**Kaava:** $mg = kv$, josta $v = \dfrac{mg}{k}$
+**Muunnokset:** $m = 45\,\text{g} = 45 \cdot 0{,}001\,\text{kg} = 0{,}045\,\text{kg}$
+**Sijoitus:** $mg = 0{,}045\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 0{,}44145\,\text{N}$ ja $v = \dfrac{0{,}44145\,\text{N}}{1{,}6\,\text{N}\cdot\text{s/m}} = 0{,}2759\,\text{m/s}$
+**Vastaus:** $0{,}28\,\text{m/s}$, kaksi merkitsevää numeroa kuten massassa $45\,\text{g}$.
+**Järkevyys:** Tarkistus kuvaajasta: paino $0{,}44\,\text{N}$ on suoralla kohdassa, jossa vauhti on hieman alle $0{,}30\,\text{m/s}$, kuten pitääkin. Kevyempi $20\,\text{g}$:n magneetti putoaisi hitaammin: $v = 0{,}1962\,\text{N} : 1{,}6\,\text{N}\cdot\text{s/m} = 0{,}12\,\text{m/s}$. Painavampi magneetti putoaa nopeammin, koska se tarvitsee suuremman jarruvoiman.

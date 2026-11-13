@@ -256,6 +256,15 @@
           "feedback": "Oikein: teho on $P = UI = 1{,}84\\,\\text{kW}$, joten $t = W_\\text{akku} : (\\eta P)$, eli $t \\approx 15\\,\\text{h}$."
         }
       ]
+    },
+    {
+      "id": "fy6-16-L2-09",
+      "level": 2,
+      "text": "Kuvaajassa on omakotitalon sähköteho illalla kello 18–22 ennen latausasemaa. Talon sähkö maksaa siirtoineen $16\\,\\text{snt/kWh}$. Kuinka paljon talon sähkö maksaa yhteensä kello 18–22? Lue tarvittavat arvot kuvaajasta. Vastaa euroina.",
+      "figure": "fy6-16/talo-ex",
+      "answer": 2.72,
+      "unit": "€",
+      "tolerance": 0.02
     }
   ],
   "level3": [

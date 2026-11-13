@@ -212,3 +212,25 @@ On the large range the error limit is thus about twenty times as large. The fina
 Line 4 is correct: the voltmeter is in parallel with the lamp, and on the range $2\,\text{V}$ the display shows at most $1.999\,\text{V}$, so $4.38\,\text{V}$ would give OL. The smallest range on which the reading fits is $20\,\text{V}$.
 
 The correct answer is line 3.
+
+## fy6-2-L2-09
+**Given:** the figure: display reading $U = 1.37\,\text{V}$ and the selector on the range $20\,\text{V}$; error limit $\pm(0.5\,\% + 2\ \text{digits})$
+**Find:** the error limit $\Delta U$ of the reading in volts
+**Principle:** The manufacturer's error limit is a share of the reading plus two steps of the last digit. The reading and the range are read from the figure, because the resolution depends on the range.
+**Reading the graph:** The display shows $1.37\,\text{V}$, so the reading is $U = 1.37\,\text{V}$. The pointer of the selector is on the range $20\,\text{V}$, and the display has two decimals, so the step of the last digit, the resolution, is $r = 0.01\,\text{V}$.
+**Formula:** $\Delta U = p \cdot U + n \cdot r$
+**Conversions:** $p = 0.5\,\% = 0.005$. All voltages are in volts.
+**Substitution:** $\Delta U = 0.005 \cdot 1.37\,\text{V} + 2 \cdot 0.01\,\text{V} = 0.00685\,\text{V} + 0.02\,\text{V} = 0.02685\,\text{V}$
+**Answer:** $\Delta U \approx 0.03\,\text{V}$, so $U = 1.37\,\text{V} \pm 0.03\,\text{V}$. The error limit is rounded to one significant figure.
+**Reasonableness:** The share of the digits, $0.02\,\text{V}$, is most of the error limit, because the reading is small compared with the range $20\,\text{V}$. The error limit is about $2\,\%$ of the reading, and the same follows from $0.03\,\text{V} : 1.37\,\text{V} = 0.02$.
+
+## fy6-2-L2-10
+**Given:** the figure: reading $U = 1.37\,\text{V}$ on the range $20\,\text{V}$; the manufacturer's value $U_0 = 1.45\,\text{V}$; error limit $\pm(0.5\,\% + 2\ \text{digits})$
+**Find:** the ratio $\dfrac{U_0 - U}{\Delta U}$ as a pure number and a conclusion
+**Principle:** A reading is consistent with the rated value if the difference of the values is at most the error limit of the reading. So the difference is compared with the error limit.
+**Reading the graph:** The reading on the display is $U = 1.37\,\text{V}$ and the selector is on the range $20\,\text{V}$, so the resolution is $r = 0.01\,\text{V}$ (two decimals).
+**Formula:** $\Delta U = p \cdot U + n \cdot r$ and $\dfrac{U_0 - U}{\Delta U}$
+**Conversions:** $p = 0.5\,\% = 0.005$. All voltages are in volts.
+**Substitution:** $\Delta U = 0.005 \cdot 1.37\,\text{V} + 2 \cdot 0.01\,\text{V} = 0.02685\,\text{V}$ and the difference is $U_0 - U = 1.45\,\text{V} - 1.37\,\text{V} = 0.08\,\text{V}$, so $\dfrac{0.08\,\text{V}}{0.02685\,\text{V}} = 2.98$
+**Answer:** about $3.0$ times. The difference is three times the error limit, that is larger than the error limit, so the reading is not consistent with the manufacturer's value. The error limit of the meter does not explain the difference.
+**Reasonableness:** The error limit of the reading gives the interval $1.34\,\text{V}$–$1.40\,\text{V}$, and $1.45\,\text{V}$ is outside it, which fits the ratio $3.0 > 1$. The reason may be, for example, that the lamp is used at a voltage other than the rated one, not the meter.

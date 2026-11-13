@@ -212,3 +212,24 @@ $G = 9{,}109 \cdot 10^{-31}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2$
 $G \approx 8{,}9 \cdot 10^{-30}\,\text{N}$
 
 Paino on noin $10^{-14}$-osa magneettisesta voimasta. Siksi voimakuvioon piirretään vain $\overline{F}_\text{m}$. Kuviossa A voima osoittaa kentän suuntaan paperista ulos, vaikka magneettinen voima on kohtisuorassa kenttää vastaan. Kuviossa B voiman suunta on positiivisen varauksen suunta, eli elektronin negatiivinen varaus on unohdettu. Kuviossa D voima on nopeuden suuntainen, vaikka magneettinen voima ei muuta vauhtia vaan kääntää elektronin rataa.
+
+## fy7-2-L1-09
+**Annettu:** elektroni, $v = 4{,}0 \cdot 10^{6}\,\text{m/s}$ kohtisuorassa kenttää vastaan, $B = 0{,}80\,\text{mT}$, varauksen suuruus $|q| = e = 1{,}602 \cdot 10^{-19}\,\text{C}$; massa MAFY-taulukon taulukosta *Hiukkasten ominaisuuksia*: $m = 9{,}109 \cdot 10^{-31}\,\text{kg}$
+**Kysytty:** ympyräradan säde $r$ senttimetreinä
+**Periaate:** Magneettinen voima on kohtisuorassa nopeutta vastaan. Siksi elektroni kiertää ympyrärataa, ja magneettinen voima on sen keskeisvoima.
+**Kaava:** $|q|vB = \dfrac{mv^2}{r}$, josta $r = \dfrac{mv}{|q|B}$
+**Muunnokset:** $B = 0{,}80\,\text{mT} = 0{,}80 \cdot 10^{-3}\,\text{T}$; lopuksi $1\,\text{m} = 100\,\text{cm}$.
+**Sijoitus:** $r = \dfrac{9{,}109 \cdot 10^{-31}\,\text{kg} \cdot 4{,}0 \cdot 10^{6}\,\text{m/s}}{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 0{,}80 \cdot 10^{-3}\,\text{T}} = 2{,}843 \cdot 10^{-2}\,\text{m} = 2{,}843\,\text{cm}$
+**Vastaus:** $2{,}8\,\text{cm}$, kaksi merkitsevää numeroa kuten vauhdissa ja kentässä.
+**Järkevyys:** Tulos on samaa suuruusluokkaa kuin tehtävän $\text{fy7-2-L1-02}$ elektronisuihkuputkessa (millimetrejä). Nyt vauhti on kaksi kertaa suurempi ja kenttä noin kaksi kertaa heikompi. Siksi säde on noin neljä kertaa suurempi kuin siinä, ja senttimetrien kokoluokka sopii.
+
+## fy7-2-L2-09
+**Annettu:** kuvaaja $r(v)$, $B = 0{,}20\,\text{T}$, $|q| = 1{,}602 \cdot 10^{-19}\,\text{C}$, $v = 1{,}5 \cdot 10^{6}\,\text{m/s}$, nopeus kohtisuorassa kenttää vastaan
+**Kysytty:** hiukkasen massa $m$ muodossa $\ldots \cdot 10^{-27}\,\text{kg}$
+**Periaate:** Magneettinen voima on ympyräradan keskeisvoima. Siksi massa saadaan säteestä, vauhdista, varauksesta ja kentästä.
+**Kuvaajan lukeminen:** Etsi vaaka-akselilta arvo $1{,}5$, eli vauhti $1{,}5 \cdot 10^{6}\,\text{m/s}$. Piste on korkeudella $r = 15{,}7\,\text{cm}$ (numeroiden $15$ ja $20$ välissä, hieman yli $15$).
+**Kaava:** $|q|vB = \dfrac{mv^2}{r}$, josta $m = \dfrac{|q|Br}{v}$
+**Muunnokset:** $r = 15{,}7\,\text{cm} = 0{,}157\,\text{m}$.
+**Sijoitus:** $m = \dfrac{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 0{,}20\,\text{T} \cdot 0{,}157\,\text{m}}{1{,}5 \cdot 10^{6}\,\text{m/s}} = 3{,}35 \cdot 10^{-27}\,\text{kg}$
+**Vastaus:** $3{,}4 \cdot 10^{-27}\,\text{kg}$ (kuvaajasta lukeminen antaa noin kaksi merkitsevää numeroa).
+**Järkevyys:** Massa on noin kaksi kertaa protonin massa $1{,}673 \cdot 10^{-27}\,\text{kg}$. Hiukkanen voi siis olla deuteroni, jolla on sama varaus kuin protonilla.

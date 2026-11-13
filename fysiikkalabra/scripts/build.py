@@ -305,7 +305,8 @@ def render_md(text, **kw):
     ```latex fences become $$...$$; every $$...$$ and $...$ is swapped for a token first,
     so underscores, backslashes and asterisks inside maths are not read as markdown."""
     text = re.sub(r"```latex\n(.*?)```", lambda m: "\n$$" + m.group(1).strip() + "$$\n", text, flags=re.S)
-    text = kaavat.as_html(text)                                                    # ```kaavat: named formulas as a formula table
+    text = kaavat.as_html(text, T("lesson.extra_formula"))                         # ```kaavat: named formulas as a formula table
+    text = kaavat.johda_html(text, T("lesson.derive"), T("lesson.derive_show"))   # ```johda: "Johda itse", the derivation behind a button
     text, fbds = fbdspec.render(text)                                              # ```voimakuvio specs -> drawn diagrams
     text, figrefs = figcat.embed(text)                                             # a model figure by id inside a solution step
     maths = []
@@ -517,7 +518,7 @@ def ahjo_course_row(c, planned):
 def resume_box():
     """Jatka (design audit 2026-11-10, P0-3): an empty row that templates/jatka.js fills from this browser's own record
     of started chapters; it stays hidden for a reader who has not started one, and without the script."""
-    t = {"resume": T("site.resume"), "go": T("site.resume_go"), "stages": T("site.state_stages"), "started": T("site.state_started"), "stage": T("site.resume_stage")}
+    t = {"resume": T("site.resume"), "go": T("site.resume_go"), "stages": T("site.state_stages"), "started": T("site.state_started"), "stage": T("site.resume_stage"), "clear": T("site.resume_clear"), "clear_label": T("site.resume_clear_label"), "clear_confirm": T("site.resume_clear_confirm")}
     return f'<div class="resume" id="jatka" data-t="{esc(json.dumps(t, ensure_ascii=False))}" hidden></div>'
 
 
@@ -1186,7 +1187,7 @@ def build_language(lang):
                      "selfassess": self_assesses(lang, meta)}
             body, toc = inquiry.render(folder, inq, parts, lambda t: nbsp_units(render_md(t)))
             if kc_section:   # bold terms of Teoriatiivistelmä that name a card open it (never before that stage)
-                body = re.sub(r'<section class="stage" id="selita".*?</section>', lambda m: concept_cards.mark_terms(m.group(0), meta["course"], lang), body, count=1, flags=re.S)
+                body = re.sub(r'<section class="stage" id="selita".*?</section>', lambda m: concept_cards.mark_first(concept_cards.mark_terms(m.group(0), meta["course"], lang), meta["course"], meta["id"], lang), body, count=1, flags=re.S)
             body, photo_tail = photos(body)               # a photograph may also open a task (FY4 2026-11-03: Pohdinta)
             main = f'<article id="teoria" class="inquiry">{body}<!--fl-chapter-nav:{meta["id"]}-->{photo_tail}</article>'   # Edellinen / Seuraava luku before the photo credits (teacher 2026-11-06)
         main = chapter_eyebrow(main, meta["course"], ch_no)

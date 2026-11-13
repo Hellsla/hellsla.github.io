@@ -93,6 +93,18 @@
       "answer": 4,
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-13-L1-09",
+      "level": 1,
+      "text": "Heliumlampun keltainen spektriviiva osuu kohtisuoraan hilaan, jossa on $600$ viivaa millimetrillä. Hae viivan aallonpituus MAFY-taulukosta (mafytaulukot.fi). Missä kulmassa keskimaksimin suunnasta ensimmäisen kertaluvun maksimi on? Anna vastaus asteina.",
+      "lookup": "MAFY",
+      "answer": 20.6425,
+      "unit": "°",
+      "tolerance": 0.02,
+      "hints": [
+        "Arvo löytyy MAFY-taulukon taulukosta *Spektriviivoja*."
+      ]
     }
   ],
   "level2": [
@@ -260,6 +272,32 @@
           "feedback": "Tässä tiheämmän hilan on oletettu taivuttavan valoa vähemmän. Kolminkertainen viivatiheys pienentää hilavakion $d$ kolmasosaan, joten $\\sin\\theta = \\lambda : d$ kasvaa kolminkertaiseksi."
         }
       ]
+    },
+    {
+      "id": "fy7-13-L2-09",
+      "level": 2,
+      "text": "Opiskelija mittaa laserin aallonpituuden hilalla, jossa on $400$ viivaa millimetrillä. Laserin säde osuu kohtisuoraan hilaan, ja varjostin on kuvan mukaisesti kohtisuorassa sädettä vastaan. Varjostimen reunassa on senttimetriasteikko, jonka nollakohta on keskimaksimin kohdalla.\n\nLue kuvasta toisen kertaluvun maksimin paikka ja hilan etäisyys varjostimesta ja laske niiden avulla laserin aallonpituus. Anna vastaus nanometreinä.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 629.8388,
+      "unit": "nm",
+      "tolerance": 0.04,
+      "figure": "fy7-13/setup-q"
+    },
+    {
+      "id": "fy7-13-L2-10",
+      "level": 2,
+      "text": "Valkoinen valo kulkee kohtisuoraan hilan läpi, ja hilan viivatiheys ei ole tiedossa. Varjostin on $1{,}00\\,\\text{m}$:n päässä hilasta, ja kuvassa on varjostin edestä nähtynä senttimetriasteikon kanssa. Valkoisen keskimaksimin molemmin puolin näkyy ensimmäisen kertaluvun spektri.\n\nLue kuvasta spektrin punaisen ulkoreunan paikka. Punaisen reunan aallonpituus on $700\\,\\text{nm}$. Laske, kuinka monta viivaa hilassa on millimetrillä.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 250.3506,
+      "unit": "viivaa/mm",
+      "tolerance": 0.04,
+      "figure": "fy7-13/spectrum-q"
     }
   ],
   "level3": [

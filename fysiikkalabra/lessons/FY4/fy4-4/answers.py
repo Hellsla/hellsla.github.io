@@ -40,7 +40,7 @@ assert abs((45 - 9.0) / 18 - 2.0) < 1e-12           # fy4-4-L2-08 is multiple ch
 a["fy4-4-L1-09"] = 15000 * (1.622 + 0.50) / 1000     # 31,83 kN
 # Figure tasks (fy4-4/kuvaaja-ab): cart A point (3,0 N; 6,0 m/s²), cart B point (3,0 N; 3,0 m/s²)
 a["fy4-4-L1-10"] = 3.0 / 6.0                         # m_A = ΣF / a = 0,50 kg
-m_B = 3.0 / 3.0                                      # m_B = 1,0 kg
-a["fy4-4-L2-09"] = 2.4 / m_B                         # a = ΣF / m_B = 2,4 m/s²
+m_A = 3.0 / 6.0                                      # m_A = ΣF1 / a1 = 0,50 kg (A: 3,0 N, 6,0 m/s²)
+a["fy4-4-L2-09"] = 2.4 / m_A                         # a = ΣF / m_A = 4,8 m/s²
 
 print(json.dumps(a))

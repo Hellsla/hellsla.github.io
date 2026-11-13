@@ -1,17 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 23beb0210afaa772
-ROUND: 2
+CONTENT-HASH: eb87ee7962362258
+ROUND: 1
 
 ## Blocking
-(none) Round-1 Major fixed: the L1-09 feedback for statement 1 is now two short pieces, "ΔU = Q + W, eli ΔU = 0 + 60 J = 60 J", and fits the 390 px box with the unit visible.
+(none)
 
 ## Polish
-- [Minor] L1-09 — statements 1-2 true, 3-5 false in a block; mixing the order would remove the pattern (not blocking).
-- [Minor] L1-09 feedback 2 — "kuten pyöräpumpun mäntä tekee" reads loosely; "kuten pyöräpumpussa".
+- [Minor] fy3-5/piston-force (reused, teacher-approved) — force graph drawn in orange (the acceleration colour); no change requested of an approved figure.
+- [Minor] fy3-5-L1-10 task — "Anna vastaus kilojouleina." after the question is fine; the page shows the answer as 11 kJ while the solution carries 4 digits: OK.
+- [Minor] fy3-5-L2-08 Vastaus — "58{,}2\ldots61{,}8" shows false precision for a graph reading; "58…62" would match the other graph tasks.
 
 ## Checked
-- Renders (own Playwright, 390 px, preview/fy3-5.html): L1-09 with answers given, all feedback unhidden, solution open, read in tiles; the fixed feedback, other four feedbacks, model answer chain. No katex element exceeds the box; page scrollWidth 390.
-- Text only: the rest of the chapter was not re-rendered; the packet is a full-mode packet, but the exercise content outside L1-09 was PASS earlier and the diff is the round-1 fix.
+- Delta: opened fy3-5-open-exercises-1280-10 (L1-10 solution), fy3-5-open-exercises-L2-1280-10 (L2-08 with piston-force graph, solution start) and -11 (solution end).
+- Graph: single straight line with end markers, axes F (N) and s (m), grid 0,05 m / 50 N, description matches; the question text is split situation / question into two paragraphs as the house rule asks.
+- Solutions: trapezoid formula as a fraction in display, units upright.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

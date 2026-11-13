@@ -229,3 +229,14 @@ Induktiojännitteen suuruuden mukaan pienimmästä suurimpaan järjestys on C ($
 Jos kierrosten lukumäärän unohtaa, tilanteiden A ja B jännitteiksi tulee vain $6{,}0\,\text{mV}$ ja $60\,\text{mV}$, ja ne siirtyvät väärin heti tilanteen C jälkeen. Jos jännitteen luulee riippuvan vuon suuruudesta eikä sen muutoksesta, tilanteen C suuri vuo näyttää antavan suurimman jännitteen, ja C siirtyy väärin järjestyksen loppuun.
 
 **Järkevyys:** Tilanteessa E vuo muuttuu nopeimmin, $2{,}0\,\tfrac{\text{Wb}}{\text{s}}$, mutta tilanteen B $50$ kierrosta nostaa sen jännitteen suurimmaksi.
+
+## fy7-5-L2-08
+**Annettu:** kierrosten lukumäärä $N = 200$. Kuvaajassa on yhden kierroksen läpi kulkeva magneettivuo $\Phi$ ajan $t$ funktiona. Aikaväli on $0$–$0{,}40\,\text{s}$.
+**Kysytty:** keskimääräisen induktiojännitteen itseisarvo $|e_\text{ka}|$ voltteina
+**Periaate:** Induktiolain mukaan jännite määräytyy vuon muutoksesta $\Delta\Phi$, ei vuon arvosta. Muutos lasketaan loppuarvon ja alkuarvon erotuksena, myös silloin, kun vuo kulkee nollan kautta ja vaihtaa merkkiä. Kuvaaja on tällä välillä suora, joten keskimääräinen jännite on koko välin jännite.
+**Kuvaajan lukeminen:** Hetkellä $0$ vuo on $\Phi_1 = 5{,}0\,\text{mWb}$. Hetkellä $0{,}40\,\text{s}$ vuo on $\Phi_2 = -3{,}0\,\text{mWb}$. Vuon muutos on siis $\Delta\Phi = \Phi_2 - \Phi_1 = -3{,}0\,\text{mWb} - 5{,}0\,\text{mWb} = -8{,}0\,\text{mWb}$, ja sen itseisarvo on $8{,}0\,\text{mWb}$. Aika on $\Delta t = 0{,}40\,\text{s} - 0 = 0{,}40\,\text{s}$.
+**Kaava:** $|e_\text{ka}| = N\dfrac{|\Delta\Phi|}{\Delta t}$
+**Muunnokset:** $|\Delta\Phi| = 8{,}0\,\text{mWb} = 8{,}0 \cdot 10^{-3}\,\text{Wb}$
+**Sijoitus:** $|e_\text{ka}| = 200 \cdot \dfrac{8{,}0 \cdot 10^{-3}\,\text{Wb}}{0{,}40\,\text{s}} = 200 \cdot 0{,}020\,\text{V} = 4{,}0\,\text{V}$
+**Vastaus:** $4{,}0\,\text{V}$, kaksi merkitsevää numeroa kuten kuvaajasta luetut vuot $5{,}0\,\text{mWb}$ ja $-3{,}0\,\text{mWb}$.
+**Järkevyys:** Jos erehtyisi laskemaan vain loppuarvon $3{,}0\,\text{mWb}$, tulokseksi tulisi $200 \cdot 3{,}0 \cdot 10^{-3}\,\text{Wb} : 0{,}40\,\text{s} = 1{,}5\,\text{V}$, mikä on liian pieni: vuo ehtii muuttua nollan kautta, joten muutos on suurempi kuin kumpikaan arvo yksin. Kuvaajan kulmakerroin $-8{,}0\,\text{mWb} : 0{,}40\,\text{s} = -20\,\tfrac{\text{mWb}}{\text{s}}$ antaa saman tuloksen: $200 \cdot 0{,}020\,\text{V} = 4{,}0\,\text{V}$.

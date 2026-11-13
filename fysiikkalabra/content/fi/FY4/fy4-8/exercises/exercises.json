@@ -137,7 +137,7 @@
     {
      "text": "Radan tukivoima ei tee työtä vaunuun missään radan kohdassa.",
      "true": true,
-     "feedback": "Oikein: tukivoima on kohtisuorassa radan pintaa ja siis liikettä vastaan, joten sen liikkeen suuntainen komponentti on nolla ja työ $W = F_\\parallel s = 0$."
+     "feedback": "Oikein: tukivoima on kohtisuorassa radan pintaa ja siis liikettä vastaan, joten sen liikkeen suuntainen komponentti on nolla ja työ $W = F s = 0$."
     },
     {
      "text": "Mäen huipulla $12\\,\\text{m}$:n korkeudella vaunun liike-energia on nolla.",

@@ -274,6 +274,15 @@
           "feedback": "Tässä varauksen merkki on otettu huomioon kahdesti. Negatiiviset elektronit liikkuvat ylöspäin, ja kaksi kääntöä kumoavat toisensa. Siksi sääntö annetaan suoraan virran suunnalle."
         }
       ]
+    },
+    {
+      "id": "fy7-4-L2-09",
+      "level": 2,
+      "text": "Opiskelija mittasi, miten suoraan johtimeen kohdistuva voima riippuu johtimen ja magneettikentän välisestä kulmasta $\\alpha$. Johdin oli homogeenisessa magneettikentässä. Johtimessa kulki virta $6{,}0\\,\\text{A}$, ja kentässä oli $25\\,\\text{cm}$ johdinta. Kuvaajassa on voima $F$ kulman $\\alpha$ funktiona. Mittauspisteisiin on sovitettu käyrä. Määritä magneettivuon tiheys. Lue tarvittavat arvot kuvaajan käyrältä.",
+      "figure": "fy7-4/force-angle",
+      "answer": 0.3,
+      "unit": "T",
+      "tolerance": 0.03
     }
   ],
   "level3": [

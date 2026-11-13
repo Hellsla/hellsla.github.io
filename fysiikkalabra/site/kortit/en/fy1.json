@@ -67,7 +67,7 @@
   {
    "id": "fy1-hypoteesi",
    "moduuli": "FY1",
-   "luku": "fy1-1",
+   "luku": "fy1-8",
    "aihe": "fy1-tutkimusmenetelma",
    "kasite": "Hypothesis",
    "maaritelma": "A justified assumption that can be tested by experiment."
@@ -155,7 +155,7 @@
   {
    "id": "fy1-merkitsevat-numerot",
    "moduuli": "FY1",
-   "luku": "fy1-3",
+   "luku": "fy1-2",
    "aihe": "fy1-mittaaminen",
    "kasite": "Significant figures",
    "maaritelma": "The digits of a number that show the precision available in a measurement result."
@@ -577,7 +577,7 @@
   {
    "id": "fy1-mittausaineisto",
    "moduuli": "FY1",
-   "luku": "fy1-8",
+   "luku": null,
    "aihe": "fy1-kokeellinen-tutkimus",
    "kasite": "Data",
    "maaritelma": "The values, observations, pictures or videos collected in an experiment for analysis."
@@ -585,7 +585,7 @@
   {
    "id": "fy1-tulosten-analyysi",
    "moduuli": "FY1",
-   "luku": "fy1-8",
+   "luku": null,
    "aihe": "fy1-kokeellinen-tutkimus",
    "kasite": "Analysis of results",
    "maaritelma": "Processing the data with calculations and graphs to find relationships."
@@ -625,7 +625,7 @@
   {
    "id": "fy1-tiedonhankinta",
    "moduuli": "FY1",
-   "luku": "fy1-8",
+   "luku": null,
    "aihe": "fy1-tiedonhankinta",
    "kasite": "Finding information",
    "maaritelma": "Searching for reliable information, for example in research, textbooks, databases and expert sources."
@@ -633,7 +633,7 @@
   {
    "id": "fy1-tiedontuottaja",
    "moduuli": "FY1",
-   "luku": "fy1-8",
+   "luku": null,
    "aihe": "fy1-tiedonhankinta",
    "kasite": "Source of information",
    "maaritelma": "A party that produces and publishes information, for example a research institute, an authority, a company or a private person. Its background and purpose affect how the information should be assessed."
@@ -657,7 +657,7 @@
   {
    "id": "fy1-objektiivisuus",
    "moduuli": "FY1",
-   "luku": "fy1-8",
+   "luku": null,
    "aihe": "fy1-tiedonhankinta",
    "kasite": "Objectivity",
    "maaritelma": "The aim of describing observations independently of the researcher's personal opinions."

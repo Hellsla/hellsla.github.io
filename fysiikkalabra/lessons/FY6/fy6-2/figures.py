@@ -119,6 +119,37 @@ def multimeter():
     return f.svg()
 
 
+def multimeter_task():
+    """A task variant of the multimeter: the display reads 1,37 V and the selector is on the 20 V range (the data of the error-limit tasks)."""
+    f = Fig("fy62-dmmt", 360, "Piirros digitaalisesta yleismittarista. Ylhäällä näyttö, jossa on lukema 1,37 V. Keskellä "
+            "valitsin, jonka ympärillä ovat mittausalueet 2 V, 20 V, 200 mA ja 10 A; osoitin on alueella 20 V. Alhaalla "
+            "kolme liitintä: COM, V mA ja 10 A. Mustan johdon paikka on COM ja punaisen V mA tai 10 A. Oikealla "
+            "selitteet näyttö, valitsin ja liittimet.")
+    bx, by, bw, bh = 52, 14, 256, 332
+    f.rect(bx, by, bw, bh, ALUMINIUM, INK, 3, 22)
+    f.rect(bx + 10, by + 10, bw - 20, bh - 20, IRON, None, 0, 14)
+    f.rect(84, 34, 192, 78, RULE_LIGHT, INK, 2, 8)
+    f.tex(222, 74, r"1{,}37", "end", size=40, w=150)
+    f.tex(228, 82, r"\text{V}", "start")
+    cx, cy, r = 180, 206, 32
+    f.circle(cx, cy, r, METAL_EDGE, INK, 2.5)
+    f.circle(cx, cy, 14, INK)
+    ranges = [(-80, r"2\,\text{V}"), (-35, r"20\,\text{V}"), (35, r"200\,\text{mA}"), (80, r"10\,\text{A}")]
+    for k, (deg, lab) in enumerate(ranges):
+        a = math.radians(deg)
+        f.line(cx + (r + 3) * math.sin(a), cy - (r + 3) * math.cos(a), cx + (r + 10) * math.sin(a), cy - (r + 10) * math.cos(a), WHITE, 2)
+        f.tex(cx + 72 * math.sin(a), cy - 72 * math.cos(a), lab, "middle", HEAT_LIGHT if k == 1 else WHITE)
+    a = math.radians(-35)
+    f.line(cx, cy, cx + (r - 4) * math.sin(a), cy - (r - 4) * math.cos(a), WHITE, 5, cap="round")
+    for k, (jx, lab) in enumerate(((110, r"\text{COM}"), (180, r"\text{V}\ \text{mA}"), (250, r"10\,\text{A}"))):
+        f.circle(jx, 290, 12, INK, WHITE if k == 0 else LEAD_RED, 3)
+        f.tex(jx, 322, lab, "middle", WHITE)
+    for y, x_from, lab in ((73, 308, r"\text{näyttö}"), (206, 308, r"\text{valitsin}"), (290, 308, r"\text{liittimet}")):
+        f.line(x_from + 4, y, 350, y, MUTED, 1.5)
+        f.tex(358, y, lab, "start")
+    return f.svg()
+
+
 def wrong():
     """Two wrong connections: an ammeter across the lamp (left), a voltmeter in series (right)."""
     f = Fig("fy62-wrong", 352, "Kaksi väärää kytkentää. Vasemmalla virtamittari A on kytketty lampun rinnalle. Virta kulkee "
@@ -232,11 +263,12 @@ def hero():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "connections": connections, "multimeter": multimeter, "wrong": wrong, "error-bands": error_bands}
+FIGURES = {"hero": hero, "connections": connections, "multimeter": multimeter, "multimeter-task": multimeter_task, "wrong": wrong, "error-bands": error_bands}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "connections": "safe: how an ammeter (series) and a voltmeter (across the lamp) are connected",
     "multimeter": "safe: a multimeter's display, selector ranges 2 V, 20 V, 200 mA, 10 A and jacks COM, V mA, 10 A",
+    "multimeter-task": "safe: a multimeter display reading 1,37 V with the selector on the 20 V range (no error limit shown)",
     "wrong": "reveals: an ammeter across the lamp short-circuits it and a voltmeter in series stops the current",
     "error-bands": "reveals: the error limits ±0,03 V (20 V range) and ±0,010 V (2 V range) of a 1,50 V reading",
 }

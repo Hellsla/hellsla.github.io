@@ -202,3 +202,14 @@
 **Mallivastaus:** Johdin heilahtaa kohti katsojaa. Peukalo osoittaa alas virran suuntaan ja muut sormet oikealle kentän suuntaan. Silloin oikean käden kämmen on katsojaan päin, joten voima osoittaa kohti katsojaa. Voima on kohtisuorassa sekä pystysuoraa johdinta että vaakasuoraa kenttää vastaan, joten johdin ei liiku kumpaakaan napaa kohti.
 
 Perustelu: voima on kohtisuorassa virtaa ja kenttää vastaan, ja oikean käden sääntö antaa sen suunnan. Ajatus, että johdin liikkuisi kenttäviivojen suuntaan kohti etelänapaa, on virhekäsitys, jossa virtajohdinta ajatellaan rautakappaleen tavoin. Kuparin ferromagneettisuuden puuttuminen on tosi, mutta se selittää vain sen, ettei virratonta johdinta vedetä. Elektronit liikkuvat kyllä ylöspäin, mutta niiden negatiivinen varaus kääntää voiman takaisin, joten tulos on sama kuin säännöstä suoraan virran suunnalla. Jos virran suunta käännetään, johdin heilahtaa poispäin katsojasta.
+
+## fy7-4-L2-09
+**Annettu:** virta $I = 6{,}0\,\text{A}$, kentässä olevan johtimen pituus $l = 25\,\text{cm}$; kuvaajassa voima $F$ johtimen ja kentän välisen kulman $\alpha$ funktiona
+**Kysytty:** magneettivuon tiheys $B$ tesloina
+**Periaate:** Kenttä kohdistaa johtimeen voiman $F = I l B \sin\alpha$. Voima on suurin, kun johdin on kohtisuorassa kenttää vastaan ($\alpha = 90^\circ$, $\sin 90^\circ = 1$), joten silloin $F_{\max} = I l B$.
+**Kuvaajan lukeminen:** Mittauspisteet poikkeavat hieman käyrästä mittausepätarkkuuden vuoksi, joten luetaan arvo sovitetulta käyrältä eikä yksittäisestä pisteestä. Käyrä on korkeimmillaan kulmalla $\alpha = 90^\circ$ ja kulkee ruudukon pisteen ($90^\circ$; $0{,}45\,\text{N}$) kautta. Luetaan siis $F_{\max} = 0{,}45\,\text{N}$.
+**Kaava:** $F_{\max} = I l B$, josta $B = \dfrac{F_{\max}}{I l}$
+**Muunnokset:** $l = 25\,\text{cm} = 25 \cdot 0{,}01\,\text{m} = 0{,}25\,\text{m}$
+**Sijoitus:** $B = \dfrac{0{,}45\,\text{N}}{6{,}0\,\text{A} \cdot 0{,}25\,\text{m}} = \dfrac{0{,}45\,\text{N}}{1{,}5\,\text{A}\cdot\text{m}} = 0{,}30\,\text{T}$
+**Vastaus:** $0{,}30\,\text{T}$, kaksi merkitsevää numeroa kuten virrassa $6{,}0\,\text{A}$.
+**Järkevyys:** Tarkistus toisella pisteellä: kulmalla $30^\circ$ käyrä antaa noin $0{,}225\,\text{N}$, ja $0{,}225\,\text{N} : (6{,}0\,\text{A} \cdot 0{,}25\,\text{m} \cdot \sin 30^\circ) = 0{,}30\,\text{T}$. Arvo on magneetin raossa tavallinen.

@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: fd398a527c525186
+CONTENT-HASH: 9e3f1aafd212641a
+SCOPE: delta added-exercise from 6532dd8778633a6f base 7db0992d648a
+
 ## Blocking
-(none)
+None.
+
 ## Polish
-- Only polish-level nothing blocking.
+None.
+
 ## Checked
-- New L1-09 (graph choice, type 2): level, situation-first/question-last, own sentence; scope (x = x0 + vt, sign of v) within FY4.1/FY1.
-- Form: correct option is not identifiable (four graphs, letters only; correct is third, feedback lengths similar).
-- Distractors carry the lesson's own warned confusions: sign ignored (A), x0 forgotten (B), v drawn as x (D); none duplicates the worked example (jogger).
-- Option figures: each description gives start/end values, so a reader without sight can tell A-D apart; descriptions of A, B, D do not reveal C.
-- Correct feedback gives x(4 s) = 2,0 m only; no extra reason stage to give away. Solution follows step by step (x = x0 + vt, then reading each graph).
-- Finnish: no corrections needed.
-- Rendered at 390 px (solution and feedback details opened, radios clicked): no horizontal overflow, widest formula 261 px. Text only: everything else.
+- Round 2, delta: the round-1 fixes judged in their context.
+- L2-08 solution now names the average speed v_kv (v_sp in en) in Find, Formula and Substitution; it no longer collides with the displacement-based keskinopeus v_k, which closes my round-1 Polish 1.
+- L2-09 significant-figure sentence now says the values are read from the graph; correct.
+- No new task, figure or level change; set mix and counts unchanged from the passed version.
+- Language and case endings in the changed text are correct.

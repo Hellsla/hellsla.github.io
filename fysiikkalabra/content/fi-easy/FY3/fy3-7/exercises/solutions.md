@@ -277,12 +277,12 @@ $$m_\text{v} = \dfrac{0{,}300 \cdot 45{,}0}{35{,}0}\,\text{kg} = 0{,}386\,\text{
 **Järkevyys:** Saman vesimäärän höyrystämiseen tarvittaisiin $2260\,\dfrac{\text{kJ}}{\text{kg}} \cdot 0{,}0050\,\text{kg} \approx 11\,\text{kJ}$. Etanolin höyrystymislämpö on pienempi kuin veden. Siksi tulos $4{,}2\,\text{kJ} < 11\,\text{kJ}$ on järkevä.
 
 ## fy3-7-L2-09
-**Annettu:** jään massa $m = 0{,}60\,\text{kg}$; $(Q,T)$-kuvaaja
+**Annettu:** jään massa $m = 0{,}60\,\text{kg}$; jään alkulämpötila $-16\,{}^\circ\text{C}$; $(Q,T)$-kuvaaja
 **Kysytty:** jään ominaislämpökapasiteetti $c$
 **Periaate:** Kun jää lämpenee sulamatta, siirtyvä lämpömäärä on $Q = cm\Delta T$. Siksi $c = \dfrac{Q}{m\Delta T}$. Kuvaajan alkuosassa jää lämpenee. Vaakasuora osa on sulamista.
-**Kuvaajan lukeminen:** Alkuosa alkaa ruudukon risteyksestä $(0\,\text{kJ};\ -16\,{}^\circ\text{C})$. Se päättyy risteykseen $(20\,\text{kJ};\ 0\,{}^\circ\text{C})$. Siis $Q = 20\,\text{kJ} - 0\,\text{kJ} = 20\,\text{kJ}$ ja $\Delta T = 0\,{}^\circ\text{C} - (-16\,{}^\circ\text{C}) = 16\,\text{K}$.
+**Kuvaajan lukeminen:** Alkuosa päättyy ruudukon risteykseen $(20\,\text{kJ};\ 0\,{}^\circ\text{C})$. Siitä luetaan $Q = 20\,\text{kJ}$ (alkupiste on origossa, $0\,\text{kJ}$). Alkulämpötila $-16\,{}^\circ\text{C}$ on annettu tehtävässä. Siis $\Delta T = 0\,{}^\circ\text{C} - (-16\,{}^\circ\text{C}) = 16\,\text{K}$.
 **Kaava:** $c = \dfrac{Q}{m\Delta T}$
 **Muunnokset:** $Q = 20\,\text{kJ} = 20\,000\,\text{J}$. Näin $c$ tulee yksikössä $\text{J}/(\text{kg}\cdot\text{K})$.
 **Sijoitus:** $c = \dfrac{20\,000\,\text{J}}{0{,}60\,\text{kg} \cdot 16\,\text{K}} = 2083\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}} \approx 2{,}1 \cdot 10^{3}\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$
-**Vastaus:** $2{,}1 \cdot 10^{3}\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$, kaksi merkitsevää numeroa kuten tiedossa $0{,}60\,\text{kg}$. Arvot luetaan ruudukon risteyksistä. Siksi hyväksytään $2020\ldots2150\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$.
+**Vastaus:** $2{,}1 \cdot 10^{3}\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$, kaksi merkitsevää numeroa kuten tiedossa $0{,}60\,\text{kg}$. Lämpömäärä luetaan ruudukon risteyksestä. Siksi hyväksytään $2020\ldots2150\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$.
 **Järkevyys:** Tulos on noin puolet veden arvosta $4190\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$. Jään ja veden suhde on tällainen. Tase: $2083 \cdot 0{,}60 \cdot 16\,\text{J} \approx 20\,000\,\text{J} = 20\,\text{kJ}$.

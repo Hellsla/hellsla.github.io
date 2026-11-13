@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 2652c350745c0908
-Mode: delta
-Round: 2
+CONTENT-HASH: b1ec7b6c20b84876
+SCOPE: delta added-exercise from 2652c350745c0908 base 89bcb63b7431
+Mode: delta (added exercises fy3-9-L1-09, fy3-9-L2-09)
+Round: 1
 
 ## Blocking
 (none)
-
-## Fixed
-(none: no translation text needed changes; the English figure descriptions were added in a6ee2cdec)
 
 ## Polish
 - None.
 
 ## Checked
-- Option-figure descriptions pick-line/boyle/flat/rising in figures.json (fi-easy) checked against the graph code and the Finnish: A line (40;100)-(10;400) gives 300 kPa at 20 ml; B curve 100/200/400 kPa (pV = 4000); C horizontal 100 kPa; D rising line 25/50/100 kPa at 10/20/40 ml. Values, shapes, grid (5 ml, 50 kPa) and range identical to the Finnish.
-- Descriptions do not give away the answer beyond what the graph shows; they agree with the feedback and the solution.
-- Exercises L2-08 text, answer B, feedback and solution unchanged and correct.
-- check_i18n.py: nothing for fy3-9.
+- L1-09: Boyle's law fits (closed bag, temperature held constant as the task states; the solution notes the real cooling). MAFY 3000 m p = 70,1 kPa (standard atmosphere 70,1 kPa); recomputed V₂ = 101 · 2,0 / 70,1 = 2,882 l, so 2,9 l; tolerance 4 % fits two significant figures.
+- L2-09: rigid closed vessel, so isochoric p/T constant. The figure points lie on p = 0,40 kPa/K · T (200/80, 250/100, 300/120, 350/140), on grid crossings, to scale; the description gives the same points and not the answer. Recomputed p₂ = 120 · 373,15/300 = 149,3 kPa, so 149 kPa; T in kelvins; tolerance 2 %.
+- Both solutions complete (given, principle with its reason, symbolic first, conversions, substitution, rounding, a real check). The notation is the brief's.
+- answers.py lines match my own recomputation (2,881598; 149,26).
+- Scripted comparison with the Finnish set: answer, unit, tolerance, figure, lookup and every number in the text and solution are identical.
+- Hash the same at start and end.

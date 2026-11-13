@@ -389,8 +389,17 @@ def hero():
     return f.svg()
 
 
+def lataus_kuvaaja():
+    """Exercise L2-08: a (t, I) graph, 0,50 A for 40 s, then falling linearly to 0 at 100 s."""
+    f = Fig("fy61-lataus", 340, "Kuvaaja akun latausvirrasta ajan funktiona. Vaaka-akselilla aika t sekunteina 0–120, pystyakselilla virta I ampeereina 0–0,6. Virta on 0,50 ampeeria ajan 0–40 sekuntia ja pienenee sitten tasaisesti nollaan ajanhetkeen 100 sekuntia mennessä. Sen jälkeen virta on nolla.")
+    ax = Axes(f, (92, 290), (500, 50), x=(0, 120), y=(0, 0.6), xticks=[20, 40, 60, 80, 100, 120], yticks=[0.1, 0.2, 0.3, 0.4, 0.5, 0.6],
+              xlabel=r"t\ (\text{s})", ylabel=r"I\ (\text{A})")
+    ax.line([(0, 0.5), (40, 0.5), (100, 0), (120, 0)], CURRENT, 3)
+    return f.svg()
+
+
 FIGURES = {"hero": hero, "piiri": piiri, "johdin": johdin, "symbolit": symbolit, "kaavio": kaavio, "virta": virta, "jannite": jannite,
-           "virta-kuvaaja": virta_kuvaaja, "kaavio-malli": kaavio_malli, "virhe-kaavio": virhe_kaavio,
+           "virta-kuvaaja": virta_kuvaaja, "kaavio-malli": kaavio_malli, "virhe-kaavio": virhe_kaavio, "lataus-kuvaaja": lataus_kuvaaja,
            "valinta-a": valinta_a, "valinta-b": valinta_b, "valinta-c": valinta_c}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
@@ -404,6 +413,7 @@ REUSE = {
     "virta-kuvaaja": "safe: a (t, I) graph, 0,40 A for 0–20 s, 0,10 A for 20–50 s, then 0; the charge is not shown",
     "kaavio-malli": "reveals: the model diagram of two cells, a switch, a lamp and an ammeter in one loop (an answer)",
     "virhe-kaavio": "safe: a student's diagram whose lamp is connected only to the + terminal; the error is not marked",
+    "lataus-kuvaaja": "safe: a (t, I) graph, 0,50 A for 0–40 s, then falling linearly to 0 at 100 s; the charge is not shown",
     "valinta-a": "safe: a cell, two lamps and a switch in one loop",
     "valinta-b": "safe: a cell, two rectangles (resistor symbols) and a switch in one loop",
     "valinta-c": "safe: a cell and two lamps in one loop, the switch on a dead-end branch",

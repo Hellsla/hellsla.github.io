@@ -227,3 +227,15 @@ $$\begin{aligned}
 Conclusion: the source voltage is about $1.55\,\text{V}$ and the internal resistance about $0.40\,\Omega$. The reading $1.51\,\text{V}$ at the smallest current is a terminal voltage, not the source voltage. The quotient of one measurement, for example $1.19\,\text{V} : 0.90\,\text{A} \approx 1.3\,\Omega$, is the resistance of the load and not the internal resistance. If both errors are made, the result is $1.51\,\text{V}$ and $1.3\,\Omega$.
 
 The uncertainty affects the result too: if the readings of the extreme points are $0.01\,\text{V}$ off in opposite directions, the slope becomes $0.30\,\text{V} : 0.80\,\text{A} \approx 0.38\,\Omega$ or $0.34\,\text{V} : 0.80\,\text{A} \approx 0.43\,\Omega$, so the internal resistance is about $0.4\,\Omega$.
+
+## fy6-8-L2-09
+**Given:** the points of the graph; the extreme points are $(50\,\text{A};\ 11\,\text{V})$ and $(250\,\text{A};\ 7\,\text{V})$. A straight line is drawn through the points.
+**Find:** the internal resistance $R_\text{s}$ of the battery in ohms
+**Principle:** The terminal voltage is $U = E - R_\text{s} I$, so the $(I, U)$ graph is a descending straight line whose slope is $-R_\text{s}$. The internal resistance comes from the slope, not from a single point: $U : I$ at one point would be the resistance of the external load.
+**Reading the graph:** Read two points far apart on the line, on gridlines. At the current $I_1 = 50\,\text{A}$ the terminal voltage is $U_1 = 11\,\text{V}$ and at $I_2 = 250\,\text{A}$ it is $U_2 = 7\,\text{V}$.
+**Formula:** For two points of the line $U_1 = E - R_\text{s} I_1$ and $U_2 = E - R_\text{s} I_2$. Subtracting the equations gives $U_1 - U_2 = R_\text{s}(I_2 - I_1)$, so
+$$R_\text{s} = \frac{U_1 - U_2}{I_2 - I_1}$$
+**Conversions:** Not needed: the voltage is in volts and the current in amperes.
+**Substitution:** $R_\text{s} = \dfrac{11\,\text{V} - 7\,\text{V}}{250\,\text{A} - 50\,\text{A}} = \dfrac{4\,\text{V}}{200\,\text{A}} = 0.020\,\Omega$
+**Answer:** $0.020\,\Omega$, that is $20\,\text{m}\Omega$, to two significant figures because the values are read from the grid.
+**Reasonableness:** The internal resistance of a car battery is very small so that it can deliver a current of hundreds of amperes. Check with the third point $(150\,\text{A};\ 9\,\text{V})$: the voltage drops $2\,\text{V}$ for every $100\,\text{A}$, so $2\,\text{V} : 100\,\text{A} = 0.020\,\Omega$. The source voltage would be $U + R_\text{s} I = 11\,\text{V} + 0.020\,\Omega \cdot 50\,\text{A} = 12\,\text{V}$, which is the source voltage of an ordinary lead-acid battery.

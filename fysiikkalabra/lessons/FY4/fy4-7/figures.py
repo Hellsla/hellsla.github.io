@@ -221,7 +221,7 @@ def ek_kuvaaja():
 
 # ---------------------------------------------------------------- task figures (shown by id; no answer drawn)
 def pallo_ek():
-    f = Fig("fy47-pallo", 360, "Kuvaaja mittakaavassa: vaaka-akselilla pallon nopeus nollasta 6 metriin sekunnissa, pystyakselilla "
+    f = Fig("fy47-pallo", 360, "Kuvaaja mittakaavassa: vaaka-akselilla pallon nopeus nollasta 6,5 metriin sekunnissa, pystyakselilla "
             "pallon liike-energia nollasta 10 jouleen yhden joulen välein. Kuvaaja on origosta ylöspäin kaartuva käyrä, joka "
             "kulkee pisteiden (2,0 m/s; 1,0 J), (4,0 m/s; 4,0 J) ja (6,0 m/s; 9,0 J) kautta. Massaa ei ole merkitty.")
     ax = Axes(f, (90, 314), (476, 70), x=(0, 6.5), y=(0, 10), xticks=[1, 2, 3, 4, 5, 6], yticks=list(range(1, 11)),

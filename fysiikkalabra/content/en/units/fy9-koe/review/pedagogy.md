@@ -1,8 +1,13 @@
 VERDICT: PASS
 CONTENT-HASH: 33038199a3b55af5
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 33038199a3b55af5.
 
-Delta review (solution practice, 2026-11-12) of the version passed before.
+## Blocking
+(none)
 
-9,8 m/s2 with a stated reason (0,46 s2 is a two-figure reading, uncertainty +-0,3) is a sound precision lesson, and the unit.md exact-quantity sentence matches. tasks.json accepts 9,8 or 9,81, consistent. Same physics and steps as fi in en (numbers match fi).
+## Polish
+(none)
 
-Checked: diff since 761b6673, symbols defined, solved expression equals Sijoitus, answers.py output, tasks.json answer/criteria, cross-language number match.
+## Checked
+Significant-figure rule in unit.md now says measured value and exempts exact quantities; the graph-based $g$ answer is 9.8 with a reason (0.46 s^2 has two digits), consistent with the rule and with the reasonableness note.
+Read the diff hunks of this unit for how #522 notation and #523 symbolic-first solutions interact: no symbol used with two meanings inside one solution, no duplicated derivation, no contradiction with the unit text, LaTeX balanced, the answer lines still match the substitutions, and the formula still precedes the numbers (CLAUDE.md Lesson form 7). Staging of the worked solutions (Given, Find, Principle, Formula, Conversions, Substitution, Answer, Reasonableness) is intact.

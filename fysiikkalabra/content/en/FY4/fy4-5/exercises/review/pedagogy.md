@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: c323e17b0cdef469
-Mode: full (translation review against the reviewed Finnish set)
+CONTENT-HASH: 2ef6b3598ff2ebe1
+SCOPE: delta added-exercise from 0856c4022f143716 base 7db0992d648a
 
 ## Blocking
-(none)
-
-## Fixed
-(none)
+None.
 
 ## Polish
-(none)
+1. solutions.md fy4-5-L2-08 Järkevyys - '10 N : 2,5 kg' uses a colon and 15,6 N and 5,7 N are not derived; add the square-root expression or drop the comparison.
 
 ## Checked
-Select-diagram task keeps the Finnish function: each distractor has one recognisable error and feedback naming it; D figure and feedback now agree (blue, not a force). Natural English.
+- Round 2, delta: the round-1 fixes judged in their context.
+- L2-08: task and solution use 'block/kappale'; direction 53 deg is stated in the answer line; components, 10 N and 4,0 m/s^2 verified.
+- Figure ruutu-vinot gives both arrows' end points in task description terms without net force or acceleration; fbd 'equations' practised.
+- No new task, figure or level change; set mix and counts unchanged from the passed version.
+- Language and case endings in the changed text are correct.

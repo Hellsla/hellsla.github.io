@@ -224,18 +224,18 @@ In total $Q = 21.32 \cdot 10^{9}\,\text{J}$, and the power is $P = \dfrac{21.32 
 ## fy3-16-L1-09
 **Given:** mass of the water $m = 0.30\,\text{kg}$, temperature $100\,{}^\circ\text{C}$; from the table (MAFY table, changes of state, water) $r = 2260\,\text{kJ/kg}$
 **Find:** the heat $Q$ taken by the vaporisation, in kilojoules
-**Principle:** The water is already at the boiling point, so its temperature does not change and all the heat goes into the change of state. The specific latent heat of vaporisation $r$ tells how much heat is needed to vaporise one kilogram. The heat is taken from the heater stones, so energy is conserved.
+**Principle:** The water is already at the boiling point, so its temperature does not change and all the heat goes into the change of state. The specific latent heat of vaporisation $r$ tells how much heat is needed to vaporise one kilogram. The heat is taken from the hob, so energy is conserved.
 **Formula:** $Q = rm$
 **Conversions:** Not needed: $r$ is in $\text{kJ/kg}$ and the mass in kilograms, so the result comes out directly in kilojoules.
 **Substitution:** $Q = 2260\,\dfrac{\text{kJ}}{\text{kg}} \cdot 0.30\,\text{kg} = 678\,\text{kJ}$
 **Answer:** $Q \approx 680\,\text{kJ}$, two significant figures as in the mass $0.30\,\text{kg}$. The value $r = 2260\,\text{kJ/kg}$ is from the MAFY table (changes of state, water), and an answer within about $\pm 4\,\%$ is accepted.
-**Reasonableness:** A rough estimate: $2300\,\text{kJ/kg} \cdot 0.3\,\text{kg} \approx 690\,\text{kJ}$. Vaporisation takes more than five times as much heat as warming the same water from $0\,{}^\circ\text{C}$ to $100\,{}^\circ\text{C}$, $0.30\,\text{kg} \cdot 4.19\,\text{kJ/(kg}\cdot\text{K)} \cdot 100\,\text{K} \approx 126\,\text{kJ}$, which is why the water thrown on the stones cools the heater strongly.
+**Reasonableness:** A rough estimate: $2300\,\text{kJ/kg} \cdot 0.3\,\text{kg} \approx 690\,\text{kJ}$. Vaporisation takes more than five times as much heat as warming the same water from $0\,{}^\circ\text{C}$ to $100\,{}^\circ\text{C}$, $0.30\,\text{kg} \cdot 4.19\,\text{kJ/(kg}\cdot\text{K)} \cdot 100\,\text{K} \approx 126\,\text{kJ}$, which is why vaporising water takes far more energy than warming it.
 
 ## fy3-16-L2-09
 **Given:** reading from the graph, the temperature rises from the point $(0\,\text{s};\ 20\,{}^\circ\text{C})$ to the point $(180\,\text{s};\ 60\,{}^\circ\text{C})$; $m = 2.0\,\text{kg}$ and $P = 400\,\text{W}$
 **Find:** the specific heat capacity $c$ in $\text{J/(kg}\cdot\text{K)}$
 **Principle:** Energy is conserved and all the power of the resistor goes to the block, so the energy $Pt$ transferred in time $t$ warms the block: $Pt = Q = cm\Delta T$.
-**Reading the graph:** The graph is a straight line, so the power is constant. The starting point is at a crossing of the grid, $(0\,\text{s};\ 20\,{}^\circ\text{C})$, and the end point at a crossing, $(180\,\text{s};\ 60\,{}^\circ\text{C})$. The grid spacing is $20\,\text{s}$ and $10\,{}^\circ\text{C}$. So the time is $t = 180\,\text{s}$ and the change in temperature is $\Delta T = 60 - 20 = 40\,{}^\circ\text{C} = 40\,\text{K}$.
+**Reading the graph:** The power is constant, so the graph is a straight line. The starting point is at a crossing of the grid, $(0\,\text{s};\ 20\,{}^\circ\text{C})$, and the end point at a crossing, $(180\,\text{s};\ 60\,{}^\circ\text{C})$. The grid spacing is $20\,\text{s}$ and $10\,{}^\circ\text{C}$. So the time is $t = 180\,\text{s}$ and the change in temperature is $\Delta T = 60 - 20 = 40\,{}^\circ\text{C} = 40\,\text{K}$.
 **Formula:** $Pt = cm\Delta T$, so $c = \dfrac{Pt}{m\Delta T}$
 **Conversions:** A change in temperature is equal in degrees Celsius and in kelvins, $\Delta T = 40\,\text{K}$. Power in $\text{W}$ times time in $\text{s}$ is in joules, so no other conversions are needed.
 **Substitution:** $c = \dfrac{400\,\text{W} \cdot 180\,\text{s}}{2.0\,\text{kg} \cdot 40\,\text{K}} = \dfrac{72\,000\,\text{J}}{80\,\text{kg}\cdot\text{K}} = 900\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$

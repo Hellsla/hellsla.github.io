@@ -280,6 +280,16 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy4-5-L2-08",
+      "level": 2,
+      "text": "Ylhäältä katsottuna kitkattomalla jäällä lepää kappale, jonka massa on $2{,}5\\,\\text{kg}$. Kappaleeseen vaikuttaa kuvassa kaksi vaakasuoraa voimaa. Yksi ruutu vastaa $2{,}0\\,\\text{N}$:n voimaa. Kuinka suuri on kappaleen kiihtyvyys?",
+      "answer": 4.0,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "figure": "fy4-5/ruutu-vinot",
+      "fbd": "equations"
     }
   ],
   "level3": [

@@ -214,3 +214,35 @@ Pienillä kulmilla $\tan\theta \approx \sin\theta$, joten $x \approx L\lambda : 
 **Sijoitus:** a) Kulmat ovat $\theta_1 = \tan^{-1}\dfrac{4{,}15}{4{,}0} = 46{,}05^\circ$, $\theta_2 = \tan^{-1}\dfrac{6{,}25}{6{,}0} = 46{,}17^\circ$, $\theta_3 = \tan^{-1}\dfrac{8{,}35}{8{,}0} = 46{,}23^\circ$ ja $\theta_4 = \tan^{-1}\dfrac{10{,}45}{10{,}0} = 46{,}26^\circ$. Niistä $d_1 = \dfrac{0{,}532\,\mu\text{m}}{\sin 46{,}05^\circ} = 0{,}7389\,\mu\text{m}$, $d_2 = 0{,}7375\,\mu\text{m}$, $d_3 = 0{,}7368\,\mu\text{m}$ ja $d_4 = 0{,}7363\,\mu\text{m}$. Summa on $2{,}9495\,\mu\text{m}$, joten $d_\text{ka} = 2{,}9495\,\mu\text{m} : 4 = 0{,}7374\,\mu\text{m}$. b) Toiselle kertaluvulle $\sin\theta_2 = 2 \cdot 0{,}532\,\mu\text{m} : 0{,}7374\,\mu\text{m} = 1{,}44$, mikä on mahdotonta. Nollannen kertaluvun heijastus palaa kohtisuoraan tulleen säteen tietä reiän kautta laseria kohti, joten pahville ei synny pistettä kohtaan $k = 0$. c) $\dfrac{0{,}7374 - 0{,}74}{0{,}74} \cdot 100\,\% = -0{,}36\,\%$.
 **Vastaus:** $0{,}74\,\mu\text{m}$, kaksi merkitsevää numeroa kuten välimatka $2x$ (tarkempi välitulos $0{,}737\,\mu\text{m}$). Toisen kertaluvun maksimia ei synny, koska sinin arvo $1{,}44$ on yli $1$. Pahvilla näkyy kaksi valopistettä (maksimit $k = \pm 1$); nollannen kertaluvun heijastus palaa reiän kautta laseria kohti, joten maksimeja on kolme ($k = 0, \pm 1$), mutta pisteitä kaksi. Keskiarvo on vertailuarvoa $0{,}36\,\%$ pienempi.
 **Järkevyys:** Aallonpituus on vain noin $0{,}7$ kertaa raitaväli, joten $\sin\theta_1 = 0{,}532 : 0{,}7374 = 0{,}72$ ja kulma $46^\circ$ on mahdollinen; maksimi on kauempana sivussa kuin $L$ ($\tan 46^\circ = 1{,}04$). Eri $L$:n arvot antavat lähes saman $d$:n, joten aineisto on johdonmukainen.
+
+## fy7-13-L1-09
+**Annettu:** viivatiheys $N = 600$ viivaa millimetrillä, kertaluku $k = 1$; heliumin keltaisen viivan aallonpituus haetaan MAFY-taulukon taulukosta *Spektriviivoja*: $\lambda = 587{,}56\,\text{nm}$
+**Kysytty:** ensimmäisen kertaluvun maksimin kulma $\theta$ asteina
+**Periaate:** Valo tulee kohtisuoraan hilaan, joten maksimin suunta noudattaa hilayhtälöä. Hilavakio saadaan ensin viivatiheydestä, ja ensimmäisessä kertaluvussa vierekkäisten rakojen matkaero on yksi aallonpituus.
+**Kaava:** $d = \dfrac{1\,\text{mm}}{N}$ ja $d\sin\theta = k\lambda$, josta $\theta = \sin^{-1}\dfrac{k\lambda}{d}$
+**Muunnokset:** $d = 1 \cdot 10^{-3}\,\text{m} : 600 = 1{,}667 \cdot 10^{-6}\,\text{m}$ ja $587{,}56\,\text{nm} = 587{,}56 \cdot 10^{-9}\,\text{m}$.
+**Sijoitus:** $\theta = \sin^{-1}\dfrac{1 \cdot 587{,}56 \cdot 10^{-9}\,\text{m}}{1{,}667 \cdot 10^{-6}\,\text{m}} = \sin^{-1} 0{,}3525 = 20{,}64^\circ$
+**Vastaus:** $20{,}6^\circ$, kolme merkitsevää numeroa kuten viivatiheys.
+**Järkevyys:** Sini on alle $1$, joten maksimi syntyy, ja kulma on kohtuullinen. Tarkistus: $1{,}667\,\mu\text{m} \cdot \sin 20{,}64^\circ = 0{,}588\,\mu\text{m}$, mikä on viivan aallonpituus.
+
+## fy7-13-L2-09
+**Annettu:** viivatiheys $N = 400$ viivaa millimetrillä, kertaluku $k = 2$; kuvasta luettu hilan ja varjostimen etäisyys $L = 1{,}20\,\text{m}$ ja toisen kertaluvun maksimin paikka $x_2 = 70{,}0\,\text{cm}$
+**Kysytty:** laserin aallonpituus $\lambda$ nanometreinä
+**Periaate:** Varjostin on kohtisuorassa sädettä vastaan, joten kulma saadaan suorakulmaisesta kolmiosta tangentin kautta, ja maksimin suunta noudattaa hilayhtälöä. Toisen kertaluvun maksimissa matkaero on kaksi aallonpituutta.
+**Kuvaajan lukeminen:** Etäisyys $L$ luetaan mitoituksesta kuvan alareunasta: $L = 1{,}20\,\text{m}$. Toisen kertaluvun maksimi on varjostimella keskimaksimista kauempana oleva kahdesta valopisteestä. Sen kohdalta luetaan asteikolta paikka: piste on kohdan $60\,\text{cm}$ ja kohdan $80\,\text{cm}$ välissä, puolivälissä kohdan $70\,\text{cm}$ lähellä, joten $x_2 \approx 70{,}0\,\text{cm}$ (lukematarkkuus noin $\pm 1\,\text{cm}$). Ensimmäisen kertaluvun piste on lähempänä keskimaksimia.
+**Kaava:** $d = \dfrac{1\,\text{mm}}{N}$, $\tan\theta_2 = \dfrac{x_2}{L}$ ja $d\sin\theta_2 = 2\lambda$, josta $\lambda = \dfrac{d\sin\theta_2}{2}$
+**Muunnokset:** $d = 1 \cdot 10^{-3}\,\text{m} : 400 = 2{,}50 \cdot 10^{-6}\,\text{m}$ ja $x_2 = 70{,}0\,\text{cm} = 0{,}700\,\text{m}$.
+**Sijoitus:** $\theta_2 = \tan^{-1}\dfrac{0{,}700\,\text{m}}{1{,}20\,\text{m}} = 30{,}26^\circ$ ja $\lambda = \dfrac{2{,}50 \cdot 10^{-6}\,\text{m} \cdot \sin 30{,}26^\circ}{2} = \dfrac{2{,}50 \cdot 10^{-6}\,\text{m} \cdot 0{,}5039}{2} = 6{,}30 \cdot 10^{-7}\,\text{m} = 630\,\text{nm}$
+**Vastaus:** $630\,\text{nm}$, kolme merkitsevää numeroa kuten etäisyys $L$ ja viivatiheys.
+**Järkevyys:** Aallonpituus $630\,\text{nm}$ on punaista valoa, mikä sopii punaiselle laserille. Ensimmäisen kertaluvun maksimi olisi kohdassa $x_1 = L\tan\theta_1 = 1{,}20\,\text{m} \cdot \tan\bigl(\sin^{-1}\dfrac{630\,\text{nm}}{2{,}50\,\mu\text{m}}\bigr) = 31{,}2\,\text{cm}$, joka on kuvassa lähempänä keskimaksimia kuin toinen kertaluku.
+
+## fy7-13-L2-10
+**Annettu:** etäisyys hilasta varjostimeen $L = 1{,}00\,\text{m}$, ensimmäinen kertaluku $k = 1$, punaisen reunan aallonpituus $\lambda = 700\,\text{nm}$; kuvasta luettu punaisen reunan paikka $x = 17{,}8\,\text{cm}$
+**Kysytty:** hilan viivatiheys $N$ viivoina millimetrillä
+**Periaate:** Punainen taipuu eniten, joten spektrin ulkoreuna on punaisen ensimmäisen kertaluvun maksimi. Sen kulma saadaan varjostimen suorakulmaisesta kolmiosta tangentin kautta, hilavakio hilayhtälöstä ja viivatiheys hilavakion käänteislukuna.
+**Kuvaajan lukeminen:** Valkoisen keskimaksimin kohta on asteikon nolla. Spektrin ulkoreuna on punainen reuna, ja se on asteikolla kohtien $15\,\text{cm}$ ja $20\,\text{cm}$ välissä, hieman alle $18\,\text{cm}$: $x \approx 17{,}8\,\text{cm}$ (lukematarkkuus noin $\pm 0{,}3\,\text{cm}$). Sisäreuna on violetti ja sen kohta on noin $10\,\text{cm}$.
+**Kaava:** $\tan\theta = \dfrac{x}{L}$, $d\sin\theta = k\lambda$ ja $N = \dfrac{1}{d}$ (viivoja pituusyksikköä kohti), josta $N = \dfrac{\sin\theta}{k\lambda}$
+**Muunnokset:** $x = 17{,}8\,\text{cm} = 0{,}178\,\text{m}$, $700\,\text{nm} = 7{,}00 \cdot 10^{-7}\,\text{m}$ ja $1\,\text{mm} = 1 \cdot 10^{-3}\,\text{m}$.
+**Sijoitus:** $\theta = \tan^{-1}\dfrac{0{,}178\,\text{m}}{1{,}00\,\text{m}} = 10{,}09^\circ$, $d = \dfrac{7{,}00 \cdot 10^{-7}\,\text{m}}{\sin 10{,}09^\circ} = \dfrac{7{,}00 \cdot 10^{-7}\,\text{m}}{0{,}1752} = 3{,}99 \cdot 10^{-6}\,\text{m}$ ja $N = \dfrac{1 \cdot 10^{-3}\,\text{m}}{3{,}99 \cdot 10^{-6}\,\text{m}} = 250$ viivaa millimetrillä
+**Vastaus:** $250$ viivaa millimetrillä, kolme merkitsevää numeroa kuten etäisyys $L$ ja luettu paikka.
+**Järkevyys:** Tarkistus violetilla ($400\,\text{nm}$): $x = 1{,}00\,\text{m} \cdot \tan\bigl(\sin^{-1}\dfrac{400\,\text{nm}}{4{,}00\,\mu\text{m}}\bigr) = 10{,}1\,\text{cm}$, ja kuvassa sisäreuna on noin $10\,\text{cm}$:n kohdalla. Hila, jossa on $250$ viivaa millimetrillä, on tavallinen koulun hila.

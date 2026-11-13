@@ -105,12 +105,12 @@ Säteily on **ionisoivaa**, kun sen yksittäinen hiukkanen tai fotoni pystyy irr
   <foreignObject x="307.5" y="211.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10^{4}$</div></foreignObject>
   <foreignObject x="407.5" y="211.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10^{6}$</div></foreignObject>
   <foreignObject x="512" y="185.5" width="74" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$E\ (\text{eV})$</div></foreignObject>
-  <rect x="142" y="150" width="2.5" height="50" fill="#7048e8"/>
-  <rect x="144" y="150" width="2.5" height="50" fill="#1971c2"/>
-  <rect x="146.5" y="150" width="2.5" height="50" fill="#2b8a3e"/>
-  <rect x="148.5" y="150" width="2.5" height="50" fill="#e9c98a"/>
-  <rect x="151" y="150" width="2.5" height="50" fill="#e8590c"/>
-  <rect x="153.5" y="150" width="2.5" height="50" fill="#c92a2a"/>
+  <rect x="142" y="150" width="2.5" height="50" fill="#c92a2a"/>
+  <rect x="144" y="150" width="2.5" height="50" fill="#e8590c"/>
+  <rect x="146.5" y="150" width="2.5" height="50" fill="#e9c98a"/>
+  <rect x="148.5" y="150" width="2.5" height="50" fill="#2b8a3e"/>
+  <rect x="151" y="150" width="2.5" height="50" fill="#1971c2"/>
+  <rect x="153.5" y="150" width="2.5" height="50" fill="#7048e8"/>
   <rect x="142" y="150" width="14" height="50" fill="none" stroke="#1f2933" stroke-width="1.5"/>
   <foreignObject x="20.5" y="113.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{näkyvä valo}$</div></foreignObject>
   <foreignObject x="82" y="247.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$1{,}7\text{–}3{,}3\,\text{eV}$</div></foreignObject>
@@ -247,7 +247,7 @@ Säteilyn lajit (luku *Atomiydin ja radioaktiivinen hajoaminen*) eroavat siinä,
   <foreignObject x="224" y="347.5" width="374" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{ionipari: positiivinen ioni ja}\ e^-$</div></foreignObject>
 </svg>
 
-<figure class="unit-photo"><img src="pics/fy8/hfir-refueling.webp" alt="Ylhäältä kuvattu syvä vesiallas sinisessä valossa; pohjalla on pyöreä reaktorisydän, josta loistaa kirkas sininen hohde, ja ympärillä on pyöreitä kansia."><figcaption>Tutkimusreaktorin sydän vesialtaan pohjalla polttoaineen vaihdon aikana. Sininen hohde on Tšerenkovin säteilyä: hiukkaset kulkevat vedessä nopeammin kuin valo vedessä. Paksu vesikerros vaimentaa säteilyä, joten altaan reunalla voi työskennellä.</figcaption></figure>
+<figure class="unit-photo"><img src="pics/fy8/hfir-refueling.webp" alt="Ylhäältä kuvattu syvä vesiallas sinisessä valossa; pohjalla on pyöreä reaktorisydän, josta loistaa kirkas sininen hohde, ja ympärillä on pyöreitä kansia."><figcaption>Tutkimusreaktorin sydän vesialtaan pohjalla polttoaineen vaihdon aikana. Sininen hohde on Tšerenkovin säteilyä: varatut hiukkaset, enimmäkseen elektronit, kulkevat vedessä nopeammin kuin valo vedessä. Paksu vesikerros vaimentaa säteilyä, joten altaan reunalla voi työskennellä.</figcaption></figure>
 
 ### Läpäisykyky
 **Läpäisykyky** kertoo, kuinka paksun ainekerroksen säteily läpäisee. Mitä tiheämmin säteily ionisoi, sitä nopeammin se luovuttaa energiansa ja sitä ohuempi kerros sen pysäyttää. Siksi alfasäteilyllä on pienin ja gammasäteilyllä suurin läpäisykyky. Taulukon viimeinen sarake kertoo, mikä pysäyttää alfa- ja beetasäteilyn ja mikä vaimentaa gamma- ja neutronisäteilyä tehokkaasti. Röntgensäteily on fotonisäteilyä ja käyttäytyy kuten gammasäteily.
@@ -341,7 +341,7 @@ Elimistölle haitallisinta on, kun paljon ionisaatioita osuu lyhyelle matkalle. 
 
 Säteilylaji ei kuitenkaan yksin ratkaise, kuinka vaarallinen radioaktiivinen aine on. Kokonaisriski riippuu myös aineen aktiivisuudesta ja säteilyn energiasta, siitä, kuinka paljon ainetta elimistöön joutuu, mihin elimeen se kertyy ja kuinka nopeasti se poistuu, sekä radionuklidin puoliintumisajasta. Siksi sisäisiä säteilylähteitä ei voi asettaa vaarallisuusjärjestykseen pelkän säteilylajin perusteella.
 
-Säteilyn vaikutusta elimistöön kuvataan **absorboituneella annoksella**, joka kertoo, kuinka paljon säteilyn energiaa on siirtynyt kilogrammaan kudosta. Suuri annos lyhyessä ajassa tappaa niin paljon soluja, että kudoksen toiminta häiriintyy. Pienet annokset lisäävät syövän riskiä. Annoksia, niiden yksiköitä ja säteilyltä suojautumista käsitellään luvussa *Säteilyannos ja säteilyturvallisuus Suomessa*.
+Säteilyn vaikutusta elimistöön kuvataan **absorboituneella annoksella**, joka kertoo, kuinka paljon säteilyn energiaa on siirtynyt kilogrammaan kudosta. Suuri annos lyhyessä ajassa tappaa niin paljon soluja, että kudoksen toiminta häiriintyy. Pienten annosten arvioidaan lisäävän syövän riskiä. Annoksia, niiden yksiköitä ja säteilyltä suojautumista käsitellään luvussa *Säteilyannos ja säteilyturvallisuus Suomessa*.
 
 ## Kaava: Gammasäteilyn vaimeneminen
 
@@ -351,6 +351,20 @@ Gammafotoni joko läpäisee ainekerroksen vuorovaikuttamatta tai vuorovaikuttaa 
 I = I_0 \left(\frac{1}{2}\right)^{d/d_{1/2}}
 ```
 missä $I_0$ on säteilyn intensiteetti ilman estettä, $I$ intensiteetti esteen takana, $d$ esteen paksuus ja $d_{1/2}$ puoliintumispaksuus. Intensiteetin sijasta yhtälöön voi sijoittaa mittarin nettopulssimäärän eli pulssimäärän, josta taustasäteily on vähennetty. Eksponentti $\tfrac{d}{d_{1/2}}$ kertoo, kuinka monta puoliintumispaksuutta esteessä on, eikä sen tarvitse olla kokonaisluku. Paksuuksilla $d$ ja $d_{1/2}$ on oltava sama yksikkö.
+
+Säteilyn vaimeneminen voidaan kirjoittaa myös eksponenttifunktiolla, jossa on **vaimennuskerroin** $\mu$:
+```latex
+I = I_0 e^{-\mu d}
+```
+missä $\mu$ on vaimennuskerroin, jonka yksikkö on $\text{m}^{-1}$ tai $\text{cm}^{-1}$, ja $d$ on esteen paksuus samassa pituusyksikössä. Kun $d = d_{1/2}$, intensiteetti on puolittunut:
+```latex
+\frac{I}{I_0} = \frac{1}{2} = e^{-\mu d_{1/2}}
+```
+Kun otetaan luonnollinen logaritmi, saadaan $-\ln 2 = -\mu d_{1/2}$ eli
+```latex
+\mu = \frac{\ln 2}{d_{1/2}}
+```
+Mitä suurempi vaimennuskerroin on, sitä ohuempi kerros riittää vaimentamaan säteilyn.
 
 <svg data-fig="vaimeneminen" viewBox="0 0 600 380" role="img" aria-label="Kuvaaja mittakaavassa: läpi päässeen gammasäteilyn osuus I per I nolla esteen paksuuden d funktiona, paksuus nollasta 25 millimetriin. Cesium-137:n gammasäteily, kapea säde. Lyijyssä osuus puolittuu jokaisen 5,5 millimetrin kerroksen jälkeen: 5,5 millimetrin kohdalla puolet, 11 millimetrin kohdalla neljäsosa ja 16,5 millimetrin kohdalla kahdeksasosa. Alumiinissa osuus laskee hitaasti ja on 25 millimetrin kohdalla noin 0,6." style="max-width:100%;font-size:24px">
   <line x1="174" y1="312" x2="174" y2="58" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -475,14 +489,14 @@ d = d_{1/2} \cdot \frac{\ln (I_0 : I)}{\ln 2}
 **Järkevyys.** Neljä puoliintumispaksuutta eli $22\,\text{mm}$ päästäisi läpi $\left(\tfrac{1}{2}\right)^{4} = 6{,}25\,\%$ ja viisi eli $27{,}5\,\text{mm}$ noin $3{,}1\,\%$. Tavoite $5{,}0\,\%$ on näiden välissä, ja niin on myös paksuus $24\,\text{mm}$.
 
 ## Yleinen virhekäsitys
-Moni ajattelee, että säteilytetty esine tai ruoka muuttuu itse radioaktiiviseksi. Steriloinnissa ja lääketieteessä käytetty gamma-, röntgen- ja elektronisäteily kuitenkin vain ionisoi atomeja tai siirtää niille energiaa; sen energia ei riitä muuttamaan ytimiä, joten aine ei muutu radioaktiiviseksi. Esimerkiksi sairaalatarvikkeet steriloidaan gammasäteilyllä, ja ne ovat sen jälkeen yhtä turvallisia käsitellä kuin ennenkin. Ainetta voi tehdä radioaktiiviseksi lähinnä neutronisäteily, jonka neutronit sitoutuvat ytimiin (luku *Fissio, fuusio ja ydinvoima*). Haitallista on se, että radioaktiivista *ainetta* joutuu iholle tai elimistöön, ei se, että esine on ollut säteilyssä.
+Moni ajattelee, että säteilytetty esine tai ruoka muuttuu itse radioaktiiviseksi. Tavanomaisessa steriloinnissa (esimerkiksi koboltti-60:n gammasäteily) ja lääketieteessä käytetty gamma-, röntgen- ja elektronisäteily kuitenkin vain ionisoi atomeja tai siirtää niille energiaa; sen energia ei riitä muuttamaan ytimiä, joten aine ei muutu radioaktiiviseksi. Esimerkiksi sairaalatarvikkeet steriloidaan gammasäteilyllä, ja ne ovat sen jälkeen yhtä turvallisia käsitellä kuin ennenkin. Ainetta voi tehdä radioaktiiviseksi lähinnä neutronisäteily, jonka neutronit sitoutuvat ytimiin (luku *Fissio, fuusio ja ydinvoima*). Haitallista on se, että radioaktiivista *ainetta* joutuu iholle tai elimistöön, ei se, että esine on ollut säteilyssä.
 
 Toinen virhe on ajatella, että kaksi puoliintumispaksuutta pysäyttää kaiken gammasäteilyn. Toinen kerros vaimentaa puolet siitä säteilystä, joka *pääsi ensimmäisen läpi*, joten läpi pääsee neljäsosa.
 
 ## Tiivistelmä
 - Säteily on ionisoivaa, kun sen hiukkanen tai fotoni pystyy irrottamaan atomista elektronin. Fotonille ratkaisee energia $E = hf$: näkyvä valo ei ionisoi, röntgen- ja gammasäteily ionisoivat.
 - Ionisaatio siirtää säteilyn energiaa aineeseen; ilmassa ionipari vie keskimäärin $34\,\text{eV}$, joten ioniparien määrä on $n_\text{i} = \tfrac{E}{W}$.
-- Alfasäteily ionisoi tiheimmin ja pysähtyy paperiin, beetasäteily pysähtyy muutamaan millimetriin alumiinia, ja gammasäteily vaimenee lyijyssä ja betonissa: $I = I_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$.
+- Alfasäteily ionisoi tiheimmin ja pysähtyy paperiin, beetasäteily pysähtyy muutamaan millimetriin alumiinia, ja gammasäteily vaimenee lyijyssä ja betonissa yhtälön $I = I_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$ mukaan. Sama voidaan kirjoittaa muodossa $I = I_0 e^{-\mu d}$, missä $\mu = \tfrac{\ln 2}{d_{1/2}}$ on vaimennuskerroin.
 - Fotoni vuorovaikuttaa aineen kanssa valosähköisellä absorptiolla (pienet energiat, suuri järjestysluku), Comptonin sironnalla (keskisuuret energiat) tai parinmuodostuksella (yli $1{,}022\,\text{MeV}$, suuret energiat).
 - GM-putki laskee ionisoivia tapahtumia elektronivyöryjen avulla, mutta se ei erota säteilylajeja. Mittaukseen sisältyy aina taustasäteily.
 - Säteily vaurioittaa soluja ionisoimalla DNA:ta suoraan ja veden radikaalien kautta. Alfasäteilijä on erityisen haitallinen elimistön sisällä, koska se luovuttaa energiansa muutaman solun matkalle. Kokonaisriski riippuu myös aineen määrästä, kertymispaikasta ja poistumisesta elimistöstä.

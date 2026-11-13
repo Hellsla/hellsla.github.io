@@ -1,8 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 274a46355e2a7fcc
+CONTENT-HASH: db991bf31ee21542
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at ec7935cf8a9a834b.
 
-Delta review (solution practice, 2026-11-12) of the version passed before.
+## Blocking
+(none)
 
-The line model E = E0 + k(T - T0) with a named point, and the symbolic T = (E_muu - E0)/k in the model answer, are clear; the wind-power model answer now defines k, N, P_nim before numbers. Same physics and steps as fi in fi-easy (numbers match fi).
+## Polish
+(none)
 
-Checked: diff since 761b6673, symbols defined, solved expression equals Sijoitus, answers.py output, tasks.json answer/criteria, cross-language number match.
+## Checked
+Diff only: c) uses E = E0 + k(T - T0) with the known point named; d) now solves T = (E_muu - E0)/k in symbols before numbers, consistent with c). Wind-turbine a) gives P_ka, E symbols before numbers. Finnish and level fit.

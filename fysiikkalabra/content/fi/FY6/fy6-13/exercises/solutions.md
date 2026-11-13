@@ -219,3 +219,24 @@ $W = 7{,}2 \cdot 10^{-3}\,\text{J} = 7{,}2\,\text{mJ}$
 **Vastaus:** $6{,}9$, kaksi merkitsevää numeroa kuten taulukon arvoissa. Suhde on pelkkä luku, jolla ei ole yksikköä.
 **Mallivastaus c):** Sijoittamalla $C$ ja $U$ energian kaavaan saadaan $W = \tfrac{1}{8} \varepsilon_0 \varepsilon_\text{r} E_\text{max}^2 A d$, joten samoilla mitoilla energia on verrannollinen suureeseen $\varepsilon_\text{r} E_\text{max}^2$. Lasin suhteellinen permittiivisyys on teflonia $\tfrac{5{,}6}{2{,}1} = 2{,}7$-kertainen, mutta teflonin läpilyöntilujuus on lasia $\tfrac{60}{14} = 4{,}3$-kertainen ja se tulee kaavaan neliönä: $4{,}3^2 = 18{,}4$. Suhde on $\tfrac{18{,}4}{2{,}7} \approx 6{,}9$: teflon kestää paljon suuremman jännitteen ja varastoi siksi enemmän energiaa, vaikka lasin kapasitanssi on suurempi.
 **Järkevyys:** Teflonilla jännite on $1500\,\text{V}$ ja lasilla $350\,\text{V}$, ja kapasitanssit ovat $3{,}72\,\text{nF}$ ja $9{,}92\,\text{nF}$. Suhde saadaan myös näistä: $\tfrac{3{,}72}{9{,}92} \cdot \left(\tfrac{1500}{350}\right)^2 = 0{,}375 \cdot 18{,}4 = 6{,}9$.
+
+## fy6-13-L1-10
+**Annettu:** levyn pinta-ala $A = 250\,\text{cm}^2$, eristeen paksuus $d = 0{,}10\,\text{mm}$, $\varepsilon_0 = 8{,}854 \cdot 10^{-12}\,\text{F/m}$ ja taulukosta (MAFY-taulukko, *Eristeiden suhteellisia permittiivisyyksiä*) polyeteenin $\varepsilon_\text{r} = 2{,}3$
+**Kysytty:** kapasitanssi $C$ nanofaradeina
+**Periaate:** Levykondensaattorin kapasitanssi riippuu vain sen rakenteesta: levyjen pinta-alasta, etäisyydestä ja eristeaineesta. Eriste kasvattaa kapasitanssia kertoimella $\varepsilon_\text{r}$ ilmaan verrattuna.
+**Kaava:** $C = \dfrac{\varepsilon_0 \varepsilon_\text{r} A}{d}$
+**Muunnokset:** $A = 250\,\text{cm}^2 = 250 \cdot 10^{-4}\,\text{m}^2 = 0{,}025\,\text{m}^2$, $d = 0{,}10\,\text{mm} = 1{,}0 \cdot 10^{-4}\,\text{m}$ ja lopuksi $1\,\text{nF} = 10^{-9}\,\text{F}$
+**Sijoitus:** $C = \dfrac{8{,}854 \cdot 10^{-12}\,\text{F/m} \cdot 2{,}3 \cdot 0{,}025\,\text{m}^2}{1{,}0 \cdot 10^{-4}\,\text{m}} = 5{,}09 \cdot 10^{-9}\,\text{F} = 5{,}09\,\text{nF}$
+**Vastaus:** $C \approx 5{,}1\,\text{nF}$, kaksi merkitsevää numeroa kuten paksuudessa ja taulukon arvossa $\varepsilon_\text{r} = 2{,}3$. Arvo $\varepsilon_\text{r}$ on MAFY-taulukosta *Eristeiden suhteellisia permittiivisyyksiä*; vastaus hyväksytään noin $\pm 5\,\%$ tarkkuudella.
+**Järkevyys:** Ilmalla ($\varepsilon_\text{r} = 1$) saataisiin $\tfrac{8{,}854 \cdot 10^{-12} \cdot 0{,}025}{1{,}0 \cdot 10^{-4}}\,\text{F} \approx 2{,}2\,\text{nF}$, ja polyeteeni kertoo sen luvulla $2{,}3$, joten tulos on noin $5\,\text{nF}$. Ohut eriste ja suuri pinta-ala antavat nanofaradien suuruusluokan.
+
+## fy6-13-L2-08
+**Annettu:** kuvaaja: suora origosta pisteeseen $(120\,\mu\text{C};\ 8\,\text{V})$, ladattu jännite $U = 7{,}0\,\text{V}$
+**Kysytty:** varastoitunut energia $W$ mikrojouleina
+**Periaate:** Kondensaattorin kapasitanssi on varauksen ja jännitteen suhde, joka on vakio, ja siksi $(Q, U)$-kuvaaja on origon kautta kulkeva suora. Kapasitanssi saadaan siis mistä tahansa suoran pisteestä. Energia lasketaan kapasitanssista ja jännitteestä.
+**Kuvaajan lukeminen:** Suoran päätepiste on ruudukon kohdalla $Q = 120\,\mu\text{C}$ ja $U = 8\,\text{V}$. Kapasitanssi lasketaan tästä pisteestä, ja jännite $7{,}0\,\text{V}$ on tehtävän tieto.
+**Kaava:** $C = \dfrac{Q}{U}$ ja $W = \tfrac{1}{2} C U^2$
+**Muunnokset:** $Q = 120\,\mu\text{C} = 120 \cdot 10^{-6}\,\text{C}$ ja lopuksi $1\,\mu\text{J} = 10^{-6}\,\text{J}$
+**Sijoitus:** $C = \dfrac{120 \cdot 10^{-6}\,\text{C}}{8\,\text{V}} = 15 \cdot 10^{-6}\,\text{F}$ ja $W = \tfrac{1}{2} \cdot 15 \cdot 10^{-6}\,\text{F} \cdot (7{,}0\,\text{V})^2 = 3{,}675 \cdot 10^{-4}\,\text{J} = 367{,}5\,\mu\text{J}$
+**Vastaus:** $W \approx 370\,\mu\text{J}$, kaksi merkitsevää numeroa kuten jännitteessä $7{,}0\,\text{V}$.
+**Järkevyys:** Varaus on $Q = CU = 15\,\mu\text{F} \cdot 7{,}0\,\text{V} = 105\,\mu\text{C}$, ja energia on $\tfrac{1}{2} QU = \tfrac{1}{2} \cdot 105\,\mu\text{C} \cdot 7{,}0\,\text{V} = 367{,}5\,\mu\text{J}$, sama tulos. Se on pienempi kuin $QU \approx 735\,\mu\text{J}$, kuten pitääkin.

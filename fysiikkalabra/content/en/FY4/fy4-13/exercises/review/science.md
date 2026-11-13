@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 734da372eebee885
-Mode: full (translation review against the reviewed Finnish set)
-
+CONTENT-HASH: f9189f30c9a2f688
+SCOPE: delta added-exercise from 734da372eebee885 base 81db4a6fd727
 ## Blocking
-(none)
-
-## Fixed
-- exercises.json and solutions.md L2-08: 'weight' used for both the object and the force gave 'the weight of the weight'; now 'hanging mass' / 'its weight' (4 phrases + solution).
 
 ## Polish
-(none)
 
 ## Checked
-- light delta review (teacher 2026-11-07), LOPS extension marking: diff vs origin/main: only the prefix on L3-04 (three cars, coupling force, reordering against a 20 kN limit); data and solution unchanged. Three coupled bodies and the reordering argument go beyond the scope note's two bodies joined by a string or over a pulley, so extension is reasonable. No physics changed.
-L2-08 compared with content/fi: kind, answer, tolerance, choices and correct flags, reasons and correct flag, every number identical. Recomputed a=1.962 and 7.848 m/s2, T=3.14 N in both (m1m2/(m1+m2)=0.64/2.0 kg), T<m2 g (3.9 N, 15.7 N); solution matches the Finnish. Distractor feedback physics right (T=m2 g only at rest; a quadruples). Decimal point correct.
+- Round 2 diff, L3-06 Answer: "$m_1 \approx 1.2\,\text{kg}$, two significant figures" is now consistent (my earlier polish item is fixed). The calculated $1.21\,\text{kg}$ stays as answer with 4 % tolerance, and 1.2 is 0.8 % away.
+- L3-06 recomputed: $m_1 = 0.30\,(9.81/1.95 - 1) = 1.209\,\text{kg}$; $T = 2.36\,\text{N} < m_2 g = 2.94\,\text{N}$.
+- L2-09 recomputed: $a = 3.9/2.0 = 1.95\,\text{m/s}^2$, $T = 0.80 \cdot 1.95 = 1.56\,\text{N} \to 1.6\,\text{N}$.
+- The force diagrams are unchanged and agree with the motion (equal $T$ for a light string and pulley, acceleration not drawn as a force).
+- The Finnish diff makes the same change.
+- answers.py run: every entry equals exercises.json or differs only by rounding inside its tolerance.
+- Script comparison with content/fi: every number in the texts and solutions.md identical.

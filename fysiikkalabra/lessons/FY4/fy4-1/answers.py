@@ -37,4 +37,9 @@ a["fy4-1-L3-04"] = round(2.00 / 1.60 * vs, 2)        # scale factor 2,00/1,60 = 
 vr, xr = fit([0, 10, 20, 30, 40], [205, 302, 395, 504, 598])
 t_p = (xr + 16 * 8.0) / (16 - vr)                    # truck 203,2 + 9,88 t = police 16 (t - 8,0): t = 54,1 s
 a["fy4-1-L3-05"] = round(xr + vr * t_p, -1)          # meeting place 738 m -> 740 m (two figures)
+# Figure tasks (fy4-1/ex-kolme-osaa, fy4-1/ex-kaksi-kappaletta)
+s_kolme = abs(16 - 4) + abs(16 - 16) + abs(8 - 16)  # cart graph: 12 m forward + 0 + 8 m back = 20 m
+a["fy4-1-L2-08"] = round(s_kolme / 10, 2)            # mean speed = s / Δt = 20 m / 10 s = 2,0 m/s
+vA2, vB2 = (20 - 4) / 8, (4 - 20) / 8                # lines read at (0 s; 4 m)-(8 s; 20 m) and (0 s; 20 m)-(8 s; 4 m): ±2,0 m/s
+a["fy4-1-L2-09"] = abs((4 + vA2 * 6) - (20 + vB2 * 6))   # x_A = 16 m, x_B = 8 m at 6,0 s: distance 8 m
 print(json.dumps(a))

@@ -293,6 +293,15 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy6-1-L2-08",
+      "level": 2,
+      "text": "Kuvaaja näyttää, miten akun latausvirta muuttuu ajan kuluessa. Lataus kestää $100\\,\\text{s}$, ja akun napojen välinen jännite on koko ajan $4{,}0\\,\\text{V}$. Kuinka paljon energiaa akkuun siirtyy latauksen aikana?",
+      "answer": 140,
+      "unit": "J",
+      "tolerance": 0.02,
+      "figure": "fy6-1/lataus-kuvaaja"
     }
   ],
   "level3": [

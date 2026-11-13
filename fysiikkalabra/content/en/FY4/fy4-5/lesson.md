@@ -317,8 +317,8 @@ The marking instructions of the matriculation examinations give task-specific po
 
 ## Formula: Equation of motion by components
 Newton's second law concerns the net force:
-```latex
-\Sigma\overline{F} = m\overline{a}
+```kaavat
+Newton's second law (fundamental law of dynamics) :: \Sigma\overline{F} = m\overline{a}
 ```
 where $\Sigma\overline{F}$ is the vector sum of the forces acting on the object (N), $m$ is the mass of the object (kg) and $\overline{a}$ is its acceleration (m/s²). When the forces are not along one line, two perpendicular axes are chosen and the law is written separately for each axis direction:
 ```latex

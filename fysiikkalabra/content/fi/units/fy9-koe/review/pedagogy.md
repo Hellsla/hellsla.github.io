@@ -1,8 +1,12 @@
 VERDICT: PASS
 CONTENT-HASH: 33fcccd3aae0531c
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 33fcccd3aae0531c.
 
-Delta review (solution practice, 2026-11-12) of the version passed before.
+## Blocking
+(none)
 
-9,8 m/s2 with a stated reason (0,46 s2 is a two-figure reading, uncertainty +-0,3) is a sound precision lesson, and the unit.md exact-quantity sentence matches. tasks.json accepts 9,8 or 9,81, consistent.
+## Polish
+- Vastaus $9{,}8$ kahdella numerolla: 'epävarmuus on alla vielä arvioitu' viittaa Järkevyys-kohtaan, joka tulee vasta seuraavaksi. Sanasto toimii, mutta 'alla' voisi olla 'Järkevyys-kohdassa'.
 
-Checked: diff since 761b6673, symbols defined, solved expression equals Sijoitus, answers.py output, tasks.json answer/criteria, cross-language number match.
+## Checked
+Merkitsevien numeroiden sääntö (tarkat määrät ja muunnoskertoimet eivät rajoita) unit.md:ssä sopii solutioniin; 9,81 vs 9,8 ristiriidaton. Huom. hash ei muuttunut. Compared the diff hunks against the #522 notation and the unit text; no formula name or symbol of #522 is contradicted by a #523 solution, no derivation duplicated, LaTeX in the hunks balanced. Sample solutions now solve the asked quantity in symbols before the numbers (CLAUDE.md Lesson form 7), which supports the learning path.

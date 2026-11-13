@@ -29,4 +29,7 @@ a["fy4-5-L2-07"] = math.hypot(6.0 + 8.0 * math.cos(r(60)), 8.0 * math.sin(r(60))
 a["fy4-5-L3-04"] = 120 * math.cos(r(30)) - 25 * (4.01 - 0) / 5.0   # a = Δv/Δt = 0,802 m/s²; x: T cos α − F_μ = ma → F_μ = 83,9 N
 _a1 = ((881 + 878 + 883) / 3 - 80 * g) / 80          # crane load: phase 1 a_1 = (T − mg)/m = 1,198 m/s²
 a["fy4-5-L3-05"] = 0.5 * _a1 * 2.0**2 + _a1 * 2.0 * 4.0 + 0.5 * _a1 * 2.0 * 2.0   # h = h_1 + h_2 + h_3 = 14,38 m
+# Exercise bank: L2-08 reads two oblique forces off a 2,0 N grid (fy4-5/ruutu-vinot): F_1 = (5, 6) squares, F_2 = (-2, -2) squares
+_sq = 2.0
+a["fy4-5-L2-08"] = math.hypot((5 - 2) * _sq, (6 - 2) * _sq) / 2.5   # ΣF_x = 6,0 N, ΣF_y = 8,0 N, ΣF = 10 N → a = ΣF/m = 4,0 m/s²
 print(json.dumps(a))

@@ -282,6 +282,24 @@
       "answer": 65.0,
       "unit": "°",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-1-L2-08",
+      "level": 2,
+      "text": "Kuvassa on ruudukko. Yksi ruutu on $5\\,\\mu\\text{T}$. Kompassi on ruudukon origossa. Maan magneettikentän vaakakomponentti $\\overline{B}_\\text{h}$ osoittaa pohjoiseen. Pöydällä olevan magneetin kenttä $\\overline{B}_\\text{m}$ osoittaa itään. Nuolen pituus kertoo kentän suuruuden.\n\na) Lue kuvasta kenttien $B_\\text{h}$ ja $B_\\text{m}$ suuruudet.\n\nb) Laske kokonaiskenttä $B$. Laske myös kulma, jonka verran kompassin neula kääntyy pohjoisesta itään päin.\n\nKirjoita vastauskenttään neulan kääntymiskulma asteina.",
+      "figure": "fy7-1/sum-grid",
+      "answer": 53.1,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-1-L2-09",
+      "level": 2,
+      "text": "Kuvassa on Maan magneettikenttä sivulta katsottuna. Vaaka-akseli osoittaa pohjoiseen ja pystyakseli alas. Yksi ruutu on $5\\,\\mu\\text{T}$. Nuoli $\\overline{B}$ alkaa maanpinnalta. Nuolen pituus kertoo kentän suuruuden.\n\na) Lue kuvasta kentän vaakakomponentti $B_\\text{h}$ ja pystykomponentti $B_\\text{v}$.\n\nb) Laske magneettivuon tiheys $B$. Laske myös kulma $I$ kentän ja vaakatason välillä. Se on inklinaatio.\n\nKirjoita vastauskenttään $B$ mikroteslana.",
+      "figure": "fy7-1/incl-grid",
+      "answer": 52.2,
+      "unit": "µT",
+      "tolerance": 0.02
     }
   ],
   "level3": [

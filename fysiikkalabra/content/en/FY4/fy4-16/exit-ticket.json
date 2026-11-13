@@ -1,7 +1,7 @@
 [
   {
     "q": "A sled slides down a straight slope. Why does the normal force of the snow do no work on the sled, although it is a large force?",
-    "a": "The normal force is perpendicular to the slope and so to the motion of the sled. Only the component of the force along the motion does work, $W = F_\\parallel s$, and for the normal force it is zero. The normal force does act indirectly, however, because the kinetic friction is $\\mu N$."
+    "a": "The normal force is perpendicular to the slope and so to the motion of the sled. Only the component of the force along the motion does work, $W = F s$, and for the normal force it is zero. The normal force does act indirectly, however, because the kinetic friction is $\\mu N$."
   },
   {
     "q": "When do you choose the equation of motion and when the work–energy principle? Give one example of each from the situations of this chapter.",

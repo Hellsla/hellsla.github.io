@@ -1,20 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 0621b6c02f604fbc
-Round: 4
-Mode: delta
+CONTENT-HASH: 34099904c8e11006
+SCOPE: delta added-exercise from 0621b6c02f604fbc base 89bcb63b7431
 
 ## Blocking
 (none)
 
-## Fixed
-(none; no translation edits were needed)
-
 ## Polish
-(none)
+- none
 
 ## Checked
-- New task fy3-2-L2-08 compared with the reviewed Finnish: same id, level, kind, unit, tolerance, answer and choice/reason order; exactly one correct option in each list, same as fi.
-- Recomputed: rubber band, triangle area (1/2)Fs: W1 = 1/2*20 N*0.10 m = 1.0 J, W2 = 1/2*40 N*0.20 m = 4.0 J, ratio 4. Correct answer 4 W1 (W1 = 1.0 J, W2 = 4.0 J; 3 W1 = 3.0 J is the second part only); all numbers and formulas in text, feedback and solution equal the Finnish.
-- Distractor feedback physics agrees with fi (same misconception named, same numbers).
-- Language: fi-easy follows NOTES.md section 12 (same physics, clearer Finnish, terms kept and explained, short sentences).
-- check_i18n.py shows nothing for fy3-2; build.py fy3-2 succeeds.
+- fy3-2-L1-09: m = rho V = 7800 * 0,020 = 156 kg, W = m g h = 18 364 J = 18,4 kJ; slow lift so lifting force = G stated; rho = m/V glossed correctly; 2 s.f. from rho and V.
+- fy3-2-L2-09: area under pull-steps = 25 N * 6 m + 10 N * 4 m = 190 J, F = W/s = 19 N; figure levels on grid lines, description gives the same data without the work.
+- answers.py lines recompute the same values; units and tolerances fit.
+- Scope: W = F s and area under (s,F) only, FY3 scope kept.
+- One script recomputed every added answer from the task text with my own formulas and compared answers.py, the Finnish and the Selkea suomi exercises.json: answer, unit, tolerance and figure id identical.
+- Every number in the fi-easy task texts and solution sections equals the Finnish (only the added gloss values 1 kg / 1 K differ); the physics is unchanged, the glosses are correct.
+- Solutions complete (given, principle, symbolic formula, conversions, substitution, rounding reason, reasonableness check).

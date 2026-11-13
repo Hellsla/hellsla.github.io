@@ -157,6 +157,17 @@ Tilanteen A virta ylittää vain tuntokynnyksen. Tilanteen B virta jää näill�
 **Vastaus:** $115\,\text{mA}$, kolme merkitsevää numeroa kuten jännitteessä ja resistanssissa. Opiskelijan virhe on, että sulake suojaisi ihmistä: sulake ei huomaa kehon läpi kulkevaa virtaa, koska sen nimellisvirta $16\,\text{A}$ on moninkertainen kehon virtaan verrattuna. Ihmistä sulake suojaa vain yhdessä suojamaadoituksen kanssa. Kehon kautta kulkevan virran katkaisee vikavirtasuoja.
 **Järkevyys:** Sulakkeen virta $16\,\text{A}$ on $16\,\text{A} : 0{,}115\,\text{A} \approx 139$-kertainen kehon virtaan verrattuna, joten sulake ei laukea. Virta $115\,\text{mA}$ on yli kaksinkertainen kammiovärinän vaaran rajaan $50\,\text{mA}$ nähden, ja se on myös moninkertainen vikavirtasuojan laukaisuvirtaan $30\,\text{mA}$ nähden, joten vikavirtasuoja laukeaisi.
 
+## fy6-15-L2-08
+**Annettu:** kuvaajasta ryhmän yhteisteho $P(t)$; sulakkeen nimellisvirta $I_\text{s} = 16\,\text{A}$, jännite $U = 230\,\text{V}$
+**Kysytty:** suurimman yhteistehon aikainen ryhmäjohdon virta $I$ ampeereina
+**Periaate:** Ryhmän laitteet ovat rinnan samassa jännitteessä, joten ryhmäjohdon virta on yhteisteho jaettuna jännitteellä. Virta on suurin silloin, kun yhteisteho on suurin, joten etsitään kuvaajan korkein kohta.
+**Kuvaajan lukeminen:** Teho on porrasfunktio. Portaat ovat $1000\,\text{W}$, $3000\,\text{W}$, $4000\,\text{W}$, $2000\,\text{W}$ ja $3500\,\text{W}$. Korkein porras on välillä $10$–$16\,\text{min}$, ja sen arvo on ruudukon viivalla $P_\text{max} = 4000\,\text{W}$.
+**Kaava:** $I = \dfrac{P_\text{max}}{U}$
+**Muunnokset:** Ei tarvita: $1\,\text{W} = 1\,\text{V} \cdot 1\,\text{A}$.
+**Sijoitus:** $I = \dfrac{4000\,\text{W}}{230\,\text{V}} = 17{,}39\,\text{A}$
+**Vastaus:** noin $17\,\text{A}$, kaksi merkitsevää numeroa kuten sulakkeen nimellisvirrassa $16\,\text{A}$ ja kuvaajan luvussa. Virta ylittää nimellisvirran $16\,\text{A}$ hieman, joten ryhmä on tänä aikana ylikuormitettu.
+**Järkevyys:** Ryhmän suurin sallittu teho on $230\,\text{V} \cdot 16\,\text{A} = 3680\,\text{W}$. Portaat $1000\,\text{W}$, $3000\,\text{W}$, $2000\,\text{W}$ ja $3500\,\text{W}$ ovat sen alapuolella, mutta $4000\,\text{W}$ on yli, ja $4000\,\text{W} : 230\,\text{V} \approx 17\,\text{A}$ on hieman yli $16\,\text{A}$. Ylitys on lyhyt ja pieni, joten sulake ei välttämättä laukea heti.
+
 ## fy6-15-L3-01
 **Annettu:** johtimien resistanssi $R = 0{,}50\,\Omega$, mitoitusvirta $I_1 = 10\,\text{A}$, todellinen virta $I_2 = 22\,\text{A}$
 **Kysytty:** kuinka moninkertainen lämpöteho $P_2$ on tehoon $P_1$ verrattuna

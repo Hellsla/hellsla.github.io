@@ -113,7 +113,7 @@
     {
       "id": "fy3-16-L1-09",
       "level": 1,
-      "text": "In a sauna, $0.30\\,\\text{kg}$ of water that is already at $100\\,{}^\\circ\\text{C}$ is thrown onto the heater stones and vaporises completely. The heat needed for vaporisation is $Q = rm$, where $r$ is the specific latent heat of vaporisation of water.\n\nLook up the specific latent heat of vaporisation of water in the MAFY table (mafytaulukot.fi). How much heat is taken from the heater stones by the vaporisation of the water? Give the answer in kilojoules.",
+      "text": "Water at $100\\,{}^\\circ\\text{C}$ is boiling in a pot on a hob, and $0.30\\,\\text{kg}$ of it vaporises into the air. The heat needed for vaporisation is $Q = rm$, where $r$ is the specific latent heat of vaporisation of water.\n\nLook up the specific latent heat of vaporisation of water in the MAFY table (mafytaulukot.fi). How much heat is taken from the hob by the vaporisation of the water? Give the answer in kilojoules.",
       "lookup": "MAFY",
       "answer": 678.0,
       "unit": "kJ",

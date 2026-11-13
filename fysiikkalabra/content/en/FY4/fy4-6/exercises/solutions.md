@@ -402,22 +402,23 @@ akselit 0
 **Reasonableness:** The weight of the sled is about $441\,\text{N}$, and the pulling force is only about $1.4\,\%$ of it. That fits the very slippery steel–ice pair. With a coefficient of about $0.3$, like wood on a floor, the pull would be about $130\,\text{N}$.
 
 ## fy4-6-L2-09
-**Given:** $m = 0.50\,\text{kg}$; the five measurement points $(N, F_\mu)$ of the graph of the example data: $(5\,\text{N};\,1.1\,\text{N})$, $(10\,\text{N};\,2.1\,\text{N})$, $(15\,\text{N};\,3.3\,\text{N})$, $(20\,\text{N};\,4.2\,\text{N})$ and $(25\,\text{N};\,5.4\,\text{N})$; $g = 9.81\,\text{m/s}^2$
+**Given:** $m = 0.80\,\text{kg}$; the five measurement points $(N, F_\mu)$ of the graph of the example data: $(5\,\text{N};\,1.1\,\text{N})$, $(10\,\text{N};\,2.1\,\text{N})$, $(15\,\text{N};\,3.3\,\text{N})$, $(20\,\text{N};\,4.2\,\text{N})$ and $(25\,\text{N};\,5.4\,\text{N})$; $g = 9.81\,\text{m/s}^2$
 **Find:** the magnitude of the deceleration $a$ in $\text{m/s}^2$
-**Principle:** Kinetic friction is proportional to the normal force, $F_\mu = \mu N$, so the $(N, F_\mu)$ graph is a straight line through the origin whose slope is $\mu$. In the horizontal direction only the kinetic friction acts on the block, pointing against the motion, so Newton's second law gives the deceleration.
+**Principle:** Kinetic friction is proportional to the normal force, so the line fitted to the points passes through the origin. It can also be used at a normal force where there is no measurement point. In the horizontal direction only the kinetic friction acts on the block, pointing against the motion, so Newton's second law gives the deceleration.
 **Free-body diagram:** The block as a rectangle, $x$ in the direction of motion and $y$ up. The weight $\overline{G}$ down and the normal force $\overline{N}$ up, equally long, the kinetic friction $\overline{F}_\mu$ backward. There is no force forward, so the acceleration points backward.
 ```voimakuvio
 pinta 0
-G 4,91
-N 4,91
-F_mu 1,05 vasen
+G 7,85
+N 7,85
+F_mu 1,68 vasen
 v oikea
 a vasen
 akselit 0
 ```
-**Reading the graph:** A line is drawn through the origin so that it passes as close as possible to all the points. At the normal force $N = 25\,\text{N}$ the value of the line is about $F_\mu = 5.35\,\text{N}$, so $\mu = \dfrac{5.35\,\text{N}}{25\,\text{N}} = 0.214$.
-**Formula:** $y$: $N - mg = 0$, so $N = mg$. $x$: $-F_\mu = ma_x$, so $a_x = -\dfrac{\mu mg}{m} = -\mu g$ and the magnitude of the deceleration is $a = \mu g$
-**Conversions:** Both axes of the graph are in newtons, so the coefficient $\mu$ has no unit. The mass cancels out.
-**Substitution:** $a = 0.214 \cdot 9.81\,\text{m/s}^2 = 2.10\,\text{m/s}^2$
+**Reading the graph:** A line is drawn through the origin so that it passes as close as possible to all the points. Its slope is about $0.214$. The normal force is $N = mg = 7.85\,\text{N}$, which lies between the measurement points at $5\,\text{N}$ and $10\,\text{N}$. At $N = 7.85\,\text{N}$ the line gives the friction force $F_\mu \approx 1.68\,\text{N}$.
+**Formula:** $y$: $N - mg = 0$, so $N = mg$. $x$: $-F_\mu = ma_x$, so $a_x = -\dfrac{F_\mu}{m}$ and the magnitude of the deceleration is $a = \dfrac{F_\mu}{m}$
+**Conversions:** $N = mg = 0.80\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 7.85\,\text{N}$. The axes of the graph are in newtons, so no other conversion is needed.
+**Substitution:** $a = \dfrac{1.68\,\text{N}}{0.80\,\text{kg}} = 2.10\,\text{m/s}^2$
 **Answer:** $2.1\,\text{m/s}^2$ against the motion, two significant figures, because the line is drawn by hand and the points have been measured to two figures.
-**Reasonableness:** The friction force is $F_\mu = 0.214 \cdot 4.91\,\text{N} = 1.05\,\text{N}$, and $1.05\,\text{N} : 0.50\,\text{kg} = 2.1\,\text{m/s}^2$, the same result. The deceleration is smaller than $g$, because $\mu < 1$.
+**Reasonableness:** The measurement points $(5\,\text{N};\,1.1\,\text{N})$ and $(10\,\text{N};\,2.1\,\text{N})$ lie on either side, and $1.68\,\text{N}$ is between their friction forces. The deceleration is smaller than $g$, because the friction force is much smaller than the weight.
+

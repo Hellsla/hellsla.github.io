@@ -147,9 +147,9 @@
 ## fy4-9-L2-05
 **Annettu:** pallon massa $m = 0{,}43\,\text{kg}$, alkunopeus $v_0 = 0$; viiden potkun nopeudet $v$ ja kosketusajat $\Delta t$ taulukossa (esimerkkiaineisto); painon vaikutus jätetään huomiotta
 **Kysytty:** jalan palloon antama keskimääräinen voima $F_\text{ka}$ yksikössä $\text{N}$
-**Periaate:** Mittauksissa on pientä satunnaisvaihtelua, joten käytetään keskiarvoja $v_\text{ka}$ ja $\Delta t_\text{ka}$. Potkun aikana jalan voima on palloon vaikuttava kokonaisvoima, kun painon vaikutus jätetään huomiotta. Impulssiperiaatteen mukaan sen impulssi on yhtä suuri kuin pallon liikemäärän muutos.
-**Kaava:** $F_\text{ka}\,\Delta t_\text{ka} = mv_\text{ka} - 0$, joten $F_\text{ka} = \dfrac{mv_\text{ka}}{\Delta t_\text{ka}}$
-**Muunnokset:** Nopeuksien summa on $110{,}0\,\text{m/s}$, joten $v_\text{ka} = \dfrac{110{,}0\,\text{m/s}}{5} = 22{,}0\,\text{m/s}$. Kosketusaikojen summa on $51{,}0\,\text{ms}$, joten $\Delta t_\text{ka} = \dfrac{51{,}0\,\text{ms}}{5} = 10{,}2\,\text{ms} = 0{,}0102\,\text{s}$.
+**Periaate:** Mittauksissa on pientä satunnaisvaihtelua, joten käytetään keskiarvoja $v_\text{k}$ ja $\Delta t_\text{ka}$. Potkun aikana jalan voima on palloon vaikuttava kokonaisvoima, kun painon vaikutus jätetään huomiotta. Impulssiperiaatteen mukaan sen impulssi on yhtä suuri kuin pallon liikemäärän muutos.
+**Kaava:** $F_\text{ka}\,\Delta t_\text{ka} = mv_\text{k} - 0$, joten $F_\text{ka} = \dfrac{mv_\text{k}}{\Delta t_\text{ka}}$
+**Muunnokset:** Nopeuksien summa on $110{,}0\,\text{m/s}$, joten $v_\text{k} = \dfrac{110{,}0\,\text{m/s}}{5} = 22{,}0\,\text{m/s}$. Kosketusaikojen summa on $51{,}0\,\text{ms}$, joten $\Delta t_\text{ka} = \dfrac{51{,}0\,\text{ms}}{5} = 10{,}2\,\text{ms} = 0{,}0102\,\text{s}$.
 **Sijoitus:** $F_\text{ka} = \dfrac{0{,}43\,\text{kg} \cdot 22{,}0\,\text{m/s}}{0{,}0102\,\text{s}} = \dfrac{9{,}46\,\text{kg}\cdot\text{m/s}}{0{,}0102\,\text{s}} = 927\,\text{N}$
 **Vastaus:** $9{,}3 \cdot 10^2\,\text{N}$, kaksi merkitsevää numeroa kuten massassa $0{,}43\,\text{kg}$.
 **Järkevyys:** Pallon paino on $0{,}43\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 4{,}2\,\text{N}$, alle prosentti jalan voimasta, joten painon jättäminen huomiotta oli perusteltua. Nopeus $22\,\text{m/s}$ eli noin $79\,\text{km/h}$ ja kosketusaika noin $10\,\text{ms}$ sopivat tavalliseen potkuun.
@@ -219,5 +219,5 @@ Lähin vaihtoehto on $400\,\text{N}$. Järkevyys: raekiven paino on $0{,}020\,\t
 **Kaava:** $I = \tfrac{1}{2} F_\text{max}\,\Delta t$ ja $F_\text{ka} = \dfrac{I}{\Delta t}$, joten $F_\text{ka} = \tfrac{1}{2} F_\text{max}$
 **Muunnokset:** $\Delta t = 12\,\text{ms} = 0{,}012\,\text{s}$
 **Sijoitus:** $I = \tfrac{1}{2} \cdot 900\,\text{N} \cdot 0{,}012\,\text{s} = 5{,}4\,\text{N}\cdot\text{s}$ ja $F_\text{ka} = \dfrac{5{,}4\,\text{N}\cdot\text{s}}{0{,}012\,\text{s}} = 450\,\text{N}$
-**Vastaus:** $450\,\text{N}$, kaksi tai kolme merkitsevää numeroa kuvaajan lukuarvojen tarkkuudella.
+**Vastaus:** $450\,\text{N}$, kaksi merkitsevää numeroa ($4{,}5\cdot 10^2\,\text{N}$), koska huippuarvo $900\,\text{N}$ ja kesto $12\,\text{ms}$ luetaan kuvaajasta kahden numeron tarkkuudella.
 **Järkevyys:** Keskiarvo on puolet huippuarvosta, kuten tasaisesti nousevalla ja laskevalla voimalla pitääkin. Se on pienempi kuin $900\,\text{N}$ ja suurempi kuin nolla.

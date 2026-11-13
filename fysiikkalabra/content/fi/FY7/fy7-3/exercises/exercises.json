@@ -273,6 +273,30 @@
           "feedback": "Tässä on huomioitu vain käämin venyttäminen. Kierrostiheyden puolittuminen puolittaisi kentän, mutta samalla virta kolminkertaistuu, ja kenttä on suoraan verrannollinen virtaan."
         }
       ]
+    },
+    {
+      "id": "fy7-3-L2-09",
+      "level": 2,
+      "kind": [
+        "data"
+      ],
+      "text": "Kuvaajassa on käämin keskeltä mitattu magneettivuon tiheys $B$ virran $I$ funktiona. Käämin pituus on $0{,}250\\,\\text{m}$, ja siinä on yksi kerros kierroksia. Käämi on paljon pidempi kuin paksu. Montako kierrosta käämissä on? Lue sovitetun suoran kulmakerroin kuvaajasta.",
+      "figure": "fy7-3/coil-fit",
+      "answer": 497.36,
+      "unit": "kierrosta",
+      "tolerance": 0.04
+    },
+    {
+      "id": "fy7-3-L2-10",
+      "level": 2,
+      "kind": [
+        "data"
+      ],
+      "text": "Kuvaajassa on pitkän suoran johtimen magneettivuon tiheys $B$ etäisyyden $r$ funktiona. Johtimen virta on tuntematon. Kuinka suuri virta johtimessa kulkee? Lue kuvaajasta kentän arvo etäisyydellä $r = 2{,}0\\,\\text{cm}$.",
+      "figure": "fy7-3/wire-graph-task",
+      "answer": 6.0,
+      "unit": "A",
+      "tolerance": 0.05
     }
   ],
   "level3": [

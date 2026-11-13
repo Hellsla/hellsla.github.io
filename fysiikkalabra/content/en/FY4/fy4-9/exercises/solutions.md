@@ -147,9 +147,9 @@
 ## fy4-9-L2-05
 **Given:** mass of the ball $m = 0.43\,\text{kg}$, initial velocity $v_0 = 0$; the velocities $v$ and contact times $\Delta t$ of five kicks in the table (example data); the effect of the weight is neglected
 **Find:** the average force the foot gives the ball $F_\text{avg}$ in $\text{N}$
-**Principle:** The measurements contain small random variation, so the means $v_\text{avg}$ and $\Delta t_\text{avg}$ are used. During the kick the force of the foot is the net force on the ball, when the effect of the weight is neglected. By the impulse–momentum principle its impulse equals the change in the ball's momentum.
-**Formula:** $F_\text{avg}\,\Delta t_\text{avg} = mv_\text{avg} - 0$, so $F_\text{avg} = \dfrac{mv_\text{avg}}{\Delta t_\text{avg}}$
-**Conversions:** The sum of the velocities is $110.0\,\text{m/s}$, so $v_\text{avg} = \dfrac{110.0\,\text{m/s}}{5} = 22.0\,\text{m/s}$. The sum of the contact times is $51.0\,\text{ms}$, so $\Delta t_\text{avg} = \dfrac{51.0\,\text{ms}}{5} = 10.2\,\text{ms} = 0.0102\,\text{s}$.
+**Principle:** The measurements contain small random variation, so the means $v_\text{k}$ and $\Delta t_\text{avg}$ are used. During the kick the force of the foot is the net force on the ball, when the effect of the weight is neglected. By the impulse–momentum principle its impulse equals the change in the ball's momentum.
+**Formula:** $F_\text{avg}\,\Delta t_\text{avg} = mv_\text{k} - 0$, so $F_\text{avg} = \dfrac{mv_\text{k}}{\Delta t_\text{avg}}$
+**Conversions:** The sum of the velocities is $110.0\,\text{m/s}$, so $v_\text{k} = \dfrac{110.0\,\text{m/s}}{5} = 22.0\,\text{m/s}$. The sum of the contact times is $51.0\,\text{ms}$, so $\Delta t_\text{avg} = \dfrac{51.0\,\text{ms}}{5} = 10.2\,\text{ms} = 0.0102\,\text{s}$.
 **Substitution:** $F_\text{avg} = \dfrac{0.43\,\text{kg} \cdot 22.0\,\text{m/s}}{0.0102\,\text{s}} = \dfrac{9.46\,\text{kg}\cdot\text{m/s}}{0.0102\,\text{s}} = 927\,\text{N}$
 **Answer:** $9.3 \cdot 10^2\,\text{N}$, two significant figures like the mass $0.43\,\text{kg}$.
 **Reasonableness:** The weight of the ball is $0.43\,\text{kg} \cdot 9.81\,\text{m/s}^2 \approx 4.2\,\text{N}$, less than one percent of the force of the foot, so neglecting the weight was justified. The velocity $22\,\text{m/s}$, about $79\,\text{km/h}$, and the contact time of about $10\,\text{ms}$ fit an ordinary kick.
@@ -219,5 +219,5 @@ The nearest option is $400\,\text{N}$. Reasonableness: the weight of the hailsto
 **Formula:** $I = \tfrac{1}{2} F_\text{max}\,\Delta t$ and $F_\text{avg} = \dfrac{I}{\Delta t}$, so $F_\text{avg} = \tfrac{1}{2} F_\text{max}$
 **Conversions:** $\Delta t = 12\,\text{ms} = 0.012\,\text{s}$
 **Substitution:** $I = \tfrac{1}{2} \cdot 900\,\text{N} \cdot 0.012\,\text{s} = 5.4\,\text{N}\cdot\text{s}$ and $F_\text{avg} = \dfrac{5.4\,\text{N}\cdot\text{s}}{0.012\,\text{s}} = 450\,\text{N}$
-**Answer:** $450\,\text{N}$, two or three significant figures, the precision of the values read from the graph.
+**Answer:** $450\,\text{N}$, two significant figures ($4.5\cdot 10^2\,\text{N}$), because the peak value $900\,\text{N}$ and the duration $12\,\text{ms}$ are read from the graph to two figures.
 **Reasonableness:** The average is half the peak, as it should be for a force that rises and falls steadily. It is smaller than $900\,\text{N}$ and larger than zero.

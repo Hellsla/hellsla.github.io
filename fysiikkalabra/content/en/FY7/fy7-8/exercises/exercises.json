@@ -262,6 +262,15 @@
           "feedback": "Here the power loss has been calculated with the expression $U^2 : R$ using the transmission voltage. The transmission voltage is not the voltage across the resistance of the cable, so the current $I = P : U$ is calculated first."
         }
       ]
+    },
+    {
+      "id": "fy7-8-L2-09",
+      "level": 2,
+      "text": "A model of a transmission line: a power plant sends the power $200\\,\\text{MW}$ along the line. The graph shows the share of the transmitted power that becomes internal energy as a function of the transmission voltage. Use the simplified two-wire model. Determine the total resistance $R$ of the conductors. Read the value of the share you need from the curve of the graph.",
+      "figure": "fy7-8/loss-graph-curve",
+      "answer": 6.0,
+      "unit": "Ω",
+      "tolerance": 0.05
     }
   ],
   "level3": [

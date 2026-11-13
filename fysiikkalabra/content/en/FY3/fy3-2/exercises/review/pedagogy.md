@@ -1,19 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: e50f42266a867455
-Round: 4
-Mode: delta
+CONTENT-HASH: dea61a120921a332
 
 ## Blocking
 (none)
-
-## Fixed
-(none; no translation edits were needed)
 
 ## Polish
 (none)
 
 ## Checked
-- New task fy3-2-L2-08 (YO-skill form, concept + reasoning with named-misconception feedback) keeps the Finnish structure: question, choices, feedback that repairs the specific error, and the staged solution.
-- Wording is clear and short; the task needs nothing beyond the lesson and adds no content in translation.
-- English reads naturally; terms (work, order of magnitude, hydrostatic pressure) used consistently.
-- Feedback does not disclose the answer before the student chooses; the correct-option feedback is brief and confirms the reasoning.
+- The only change is "vs" to "and" in the reasonableness note of L2-09. No number, symbol or step changed, and the sentence now reads as plain prose.
+- The solution still reads the graph, finds the work first and then the equivalent force, and checks 19 N against 10 N and 25 N and by 19 N times 10 m = 190 J.
+- The figure and its description are unchanged and do not give the work or the average force.

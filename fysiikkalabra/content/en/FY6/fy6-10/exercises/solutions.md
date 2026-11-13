@@ -206,3 +206,35 @@ The product of the charges doubles, which doubles the force, and the square of t
 **Substitution:** $F = 8.0 \cdot 10^{-4}\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot \tan 10\,{}^\circ = 1.384 \cdot 10^{-3}\,\text{N}$ and $r = 2 \cdot 0.30\,\text{m} \cdot \sin 10\,{}^\circ = 0.1042\,\text{m}$, so $q = 0.1042\,\text{m} \cdot \sqrt{\dfrac{1.384 \cdot 10^{-3}\,\text{N}}{8.988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2}}} = 0.1042\,\text{m} \cdot 3.924 \cdot 10^{-7}\,\tfrac{\text{C}}{\text{m}} = 4.088 \cdot 10^{-8}\,\text{C} = 40.9\,\text{nC}$
 **Answer:** $41\,\text{nC}$, two significant figures like the mass and the angle. The distance between the spheres is $0.10\,\text{m}$. c) The electric forces are a force and its reaction force, so they are equal in magnitude even if the charges are different. The masses are the same, so the condition $\tan\theta = F : (mg)$ gives the same angle for both spheres. The angle does not stay $10\,{}^\circ$ but grows, because the force $F$ grows, but the threads are still at an equal angle to the vertical.
 **Reasonableness:** The electric force $1.38\,\text{mN}$ is small compared with the weight $mg = 7.85\,\text{mN}$, and $\tan 10\,{}^\circ = 0.176$ is the same ratio, so the angle is small. Substituting back into Coulomb's law gives $1.38\,\text{mN}$.
+
+## fy6-10-L1-09
+**Given:** $q_1 = +5.0\,\text{nC}$, $q_2 = +8.0\,\text{nC}$, $r = 4.0\,\text{cm}$; according to the MAFY table *Luonnonvakiot* Coulomb's constant is $k = 8.987\,55 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2}$
+**Find:** the magnitude of the electric force $F$ in millinewtons
+**Principle:** The charges are point charges, so the force between them comes from Coulomb's law. The force is directly proportional to the product of the charges and inversely proportional to the square of the distance. The constant $k$ is looked up in the MAFY table; the value $8.988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2}$ used in the chapter text is the same value rounded.
+**Formula:** $F = k\,\dfrac{\lvert q_1 q_2 \rvert}{r^2}$
+**Conversions:** $q_1 = 5.0\,\text{nC} = 5.0 \cdot 10^{-9}\,\text{C}$; $q_2 = 8.0\,\text{nC} = 8.0 \cdot 10^{-9}\,\text{C}$; $r = 4.0\,\text{cm} = 4.0 \cdot 0.01\,\text{m} = 0.040\,\text{m}$; finally $1\,\text{N} = 1000\,\text{mN}$.
+**Substitution:** $F = 8.987\,55 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2} \cdot \dfrac{5.0 \cdot 10^{-9}\,\text{C} \cdot 8.0 \cdot 10^{-9}\,\text{C}}{(0.040\,\text{m})^2} = 2.247 \cdot 10^{-4}\,\text{N} = 0.2247\,\text{mN}$
+**Answer:** $0.22\,\text{mN}$, two significant figures like the charges and the distance. The force is repulsive because the charges have the same sign. The tolerance covers small differences between editions of the table.
+**Reasonableness:** Estimate: $9 \cdot 10^{9} \cdot 40 \cdot 10^{-18} : 1.6 \cdot 10^{-3}\,\text{N} \approx 2.3 \cdot 10^{-4}\,\text{N}$ is the same order of magnitude. The force is small, as expected for charges of a few nanocoulombs.
+
+## fy6-10-L2-09
+**Given:** a graph of the force $F$ between two identical, equally charged spheres as a function of the distance $r$, $r = 4.0\,\text{cm}$; $k = 8.988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2}$
+**Find:** the charge $q$ of each sphere in nanocoulombs
+**Principle:** The charges of the spheres are equal, so in Coulomb's law $q_1 = q_2 = q$ and $F = k\,\dfrac{q^2}{r^2}$. When the force is read from the graph at the given distance, the unknown charge can be calculated.
+**Reading the graph:** Go up from $4.0\,\text{cm}$ on the horizontal axis to the curve and from there horizontally to the vertical axis. The curve is just above the fifth millinewton grid line, about $0.06\,\text{mN}$ over it, so $F = 5.06\,\text{mN} \approx 5.1\,\text{mN}$ (the reading is accurate to about $\pm 0.1\,\text{mN}$).
+**Formula:** $F = k\,\dfrac{q^2}{r^2}$, so $q^2 = \dfrac{F r^2}{k}$ and $q = r\sqrt{\dfrac{F}{k}}$
+**Conversions:** $F = 5.06\,\text{mN} = 5.06 \cdot 10^{-3}\,\text{N}$; $r = 4.0\,\text{cm} = 0.040\,\text{m}$; finally $1\,\text{C} = 10^{9}\,\text{nC}$.
+**Substitution:** $q = 0.040\,\text{m} \cdot \sqrt{\dfrac{5.06 \cdot 10^{-3}\,\text{N}}{8.988 \cdot 10^{9}\,\text{N} \cdot \text{m}^2/\text{C}^2}} = 0.040\,\text{m} \cdot 7.50 \cdot 10^{-7}\,\tfrac{\text{C}}{\text{m}} = 3.00 \cdot 10^{-8}\,\text{C} = 30\,\text{nC}$
+**Answer:** $30\,\text{nC}$ on each sphere, two significant figures, because the force is read from the graph to about two digits. A reading of $5.1\,\text{mN}$ would give $30.1\,\text{nC}$, so the reading accuracy does not change the answer.
+**Reasonableness:** Check in the other direction: $8.988 \cdot 10^{9} \cdot (30 \cdot 10^{-9})^2 : 0.040^2\,\text{N} = 5.06\,\text{mN}$. A charge of the order of a nanocoulomb is typical of static electricity from rubbing.
+
+## fy6-10-L2-10
+**Given:** charges of pair A $20\,\text{nC}$ and $20\,\text{nC}$; charges of pair B $20\,\text{nC}$ and $q_\text{B}$; a graph of the forces $F$ as a function of the distance $r$; $k = 8.988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2}$
+**Find:** a) the force of pair A at $3.0\,\text{cm}$ and the distance at which the force of pair B is equally large; b) the charge $q_\text{B}$ in nanocoulombs
+**Principle:** When the forces of the two pairs are equal, Coulomb's law gives $\dfrac{q_\text{A1} q_\text{A2}}{r_\text{A}^2} = \dfrac{q_\text{A1} q_\text{B}}{r_\text{B}^2}$, because the constant $k$ and the common charge $20\,\text{nC}$ cancel. So the unknown charge follows from the ratio of the distances without a separate force calculation.
+**Reading the graph:** a) Pair A: on the vertical axis $F_\text{A} = 4.0\,\text{mN}$ at the distance $r_\text{A} = 3.0\,\text{cm}$ (the curve is on the fourth millinewton grid line). Go from $4.0\,\text{mN}$ horizontally to the right to the curve of pair B: curve B crosses this line at the distance $r_\text{B} = 6.0\,\text{cm}$ (on the sixth centimetre grid line).
+**Formula:** The force of pair A is $k\,\dfrac{q_\text{A}^2}{r_\text{A}^2}$ and that of pair B $k\,\dfrac{q_\text{A} q_\text{B}}{r_\text{B}^2}$, so $q_\text{B} = q_\text{A} \left(\dfrac{r_\text{B}}{r_\text{A}}\right)^2$, where $q_\text{A} = 20\,\text{nC}$.
+**Conversions:** The distances are in the same unit and only their ratio is needed, so no conversions are needed; the charge comes out in nanocoulombs.
+**Substitution:** $q_\text{B} = 20\,\text{nC} \cdot \left(\dfrac{6.0\,\text{cm}}{3.0\,\text{cm}}\right)^2 = 20\,\text{nC} \cdot 4.0 = 80\,\text{nC}$
+**Answer:** $80\,\text{nC}$, two significant figures like the charge of pair A. The distance is twice as large, so the product of the charges must be four times as large for the force to stay the same.
+**Reasonableness:** Check with Coulomb's law: $F_\text{A} = 8.988 \cdot 10^{9} \cdot (20 \cdot 10^{-9})^2 : 0.030^2\,\text{N} = 4.0\,\text{mN}$ and $F_\text{B} = 8.988 \cdot 10^{9} \cdot 20 \cdot 10^{-9} \cdot 80 \cdot 10^{-9} : 0.060^2\,\text{N} = 4.0\,\text{mN}$, the same numbers as in the graph. The curve of pair B is above the curve of pair A, as it should be, because $q_\text{B} > 20\,\text{nC}$.

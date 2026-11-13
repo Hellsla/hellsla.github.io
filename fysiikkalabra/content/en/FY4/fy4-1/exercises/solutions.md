@@ -119,12 +119,12 @@ $$\begin{aligned} x &= 0 + 1.5\,\text{m/s} \cdot 33.33\ldots\,\text{s} \\ &= 50\
 
 ## fy4-1-L3-03
 **Given:** parts of the $(t, x)$ graph: $x = 0$ at $0\,\text{s}$, $x = 30\,\text{m}$ at $10\,\text{s}$, $x = 30\,\text{m}$ at $20\,\text{s}$ and $x = 10\,\text{m}$ at $40\,\text{s}$
-**Find:** the average velocity $v_\text{avg}$ over the whole $40\,\text{s}$ with its sign in the unit $\text{m/s}$
+**Find:** the average velocity $v_\text{k}$ over the whole $40\,\text{s}$ with its sign in the unit $\text{m/s}$
 **Principle:** The average velocity is the whole displacement divided by the whole time. Only the initial and final positions affect the displacement, so the intermediate stages, that is moving forward, stopping and coming back, do not affect the calculation.
 **Reading the graph:** From the given points we read the starting point $(0\,\text{s};\, 0\,\text{m})$ and the end point $(40\,\text{s};\, 10\,\text{m})$. Between $10\text{–}20\,\text{s}$ the graph is horizontal, because the robot stands still, and its points are not needed. The average velocity is the slope of the line between these two points.
-**Formula:** $v_\text{avg} = \dfrac{\Delta x}{\Delta t} = \dfrac{x_2 - x_1}{t_2 - t_1}$
+**Formula:** $v_\text{k} = \dfrac{\Delta x}{\Delta t} = \dfrac{x_2 - x_1}{t_2 - t_1}$
 **Conversions:** The positions are in metres and the times in seconds, so no conversions are needed.
-**Substitution:** $v_\text{avg} = \dfrac{10\,\text{m} - 0\,\text{m}}{40\,\text{s} - 0\,\text{s}} = 0.25\,\text{m/s}$
+**Substitution:** $v_\text{k} = \dfrac{10\,\text{m} - 0\,\text{m}}{40\,\text{s} - 0\,\text{s}} = 0.25\,\text{m/s}$
 **Answer:** $0.25\,\text{m/s}$, two significant figures, because the final position $10\,\text{m}$ and the time $40\,\text{s}$ are given with two figures.
 **Reasonableness:** The robot went $30\,\text{m}$ forward and $20\,\text{m}$ back, so the displacement is $30\,\text{m} - 20\,\text{m} = 10\,\text{m}$ even though the distance was $50\,\text{m}$. The sign is positive, because at the end the robot is at a greater $x$ than at the beginning. The mean of the partial velocities $3.0\,\text{m/s}$, $0$ and $-1.0\,\text{m/s}$, $\dfrac{3.0 + 0 - 1.0}{3} = 0.67\,\text{m/s}$, would be wrong, because the sub-intervals are not of equal length.
 
@@ -236,3 +236,35 @@ $x = 2.0\,\text{m}$
 
 Graph C goes through the points $(0\,\text{s};\ 6.0\,\text{m})$ and $(4.0\,\text{s};\ 2.0\,\text{m})$, and its slope is $\dfrac{2.0\,\text{m} - 6.0\,\text{m}}{4.0\,\text{s}}$, that is, $-1.0\,\text{m/s}$. Graph A rises from the position $6\,\text{m}$ to the position $10\,\text{m}$: there the minus sign of the velocity has been ignored, although the sign tells the direction of the motion. The slope of graph B is right, but it starts from the origin, so the initial position has been forgotten. Graph D is a horizontal line at $-1\,\text{m}$: the value of the velocity has been drawn as the position, as if the graph were a $(t, v)$ graph. Check: the car moves for $4.0\,\text{s}$ at $1.0\,\text{m}$ per second in the negative direction, so it moves $4.0\,\text{m}$ from the initial position towards the origin.
 **Reading the graphs:** The position is read from each graph at the moments $0$ and $4.0\,\text{s}$. Graphs B and C fall equally steeply, so only the initial position tells them apart: graph B starts from $0\,\text{m}$ and graph C from $6.0\,\text{m}$.
+
+## fy4-1-L2-08
+**Given:** the $(t, x)$ graph of a cart with corner points $(0\,\text{s};\, 4\,\text{m})$, $(4\,\text{s};\, 16\,\text{m})$, $(6\,\text{s};\, 16\,\text{m})$ and $(10\,\text{s};\, 8\,\text{m})$; total time $\Delta t = 10\,\text{s}$
+**Find:** the average speed $v_\text{sp}$ in the unit $\text{m/s}$
+**Principle:** Average speed is the distance travelled $s$ divided by the elapsed time. The distance is the sum of the absolute values of the changes in position of all the parts, because the cart returns part of the way and the distance grows then too. The displacement would not do: it would subtract the return with a minus sign.
+**Reading the graph:** The graph has three straight parts. During $0\ldots4\,\text{s}$ it rises from $4\,\text{m}$ to $16\,\text{m}$, so $\Delta x_1 = 16\,\text{m} - 4\,\text{m} = 12\,\text{m}$. During $4\ldots6\,\text{s}$ it is horizontal ($16\,\text{m}$), so $\Delta x_2 = 0$. During $6\ldots10\,\text{s}$ it falls from $16\,\text{m}$ to $8\,\text{m}$, so $\Delta x_3 = 8\,\text{m} - 16\,\text{m} = -8\,\text{m}$.
+**Formula:** $s = |\Delta x_1| + |\Delta x_2| + |\Delta x_3|$ and $v_\text{sp} = \dfrac{s}{\Delta t}$
+**Conversions:** The positions are in metres and the times in seconds, so no conversions are needed.
+**Substitution:**
+
+$$\begin{aligned} s &= 12\,\text{m} + 0 + 8\,\text{m} \\ &= 20\,\text{m} \end{aligned}$$
+
+$$\begin{aligned} v_\text{sp} &= \dfrac{20\,\text{m}}{10\,\text{s}} \\ &= 2.0\,\text{m/s} \end{aligned}$$
+**Answer:** $2.0\,\text{m/s}$, two significant figures, because the values of the graph are read as whole metres and seconds.
+**Reasonableness:** At the end the cart is at $8\,\text{m}$, only $4\,\text{m}$ from the starting position, but it has travelled $20\,\text{m}$. The average velocity from the displacement would be $\dfrac{4\,\text{m}}{10\,\text{s}} = 0.4\,\text{m/s}$, and the average speed is greater than this, as it should be. A speed of $2.0\,\text{m/s}$ is a walking pace, which suits a cart.
+
+## fy4-1-L2-09
+**Given:** the lines of the $(t, x)$ graph: body A passes through the points $(0\,\text{s};\, 4\,\text{m})$ and $(8\,\text{s};\, 20\,\text{m})$, body B through $(0\,\text{s};\, 20\,\text{m})$ and $(8\,\text{s};\, 4\,\text{m})$; the motions are uniform; $t = 6.0\,\text{s}$
+**Find:** the distance $d$ between the bodies at $6.0\,\text{s}$ in the unit $\text{m}$
+**Principle:** In uniform motion the $(t, x)$ graph is a straight line whose slope is the velocity and whose intercept is the initial position, so the position is $x = x_0 + v\,t$. The distance is the absolute value of the difference of the position coordinates, $d = |x_\text{A} - x_\text{B}|$. In the graph a higher line means a greater position coordinate. The absolute value is needed because the lines cross and the order changes.
+**Reading the graph:** We read the grid crossings from the lines. Line A: $x_{0\text{A}} = 4\,\text{m}$ and $x = 20\,\text{m}$ at $8\,\text{s}$, so $v_\text{A} = \dfrac{20\,\text{m} - 4\,\text{m}}{8\,\text{s}} = 2.0\,\text{m/s}$. Line B: $x_{0\text{B}} = 20\,\text{m}$ and $x = 4\,\text{m}$ at $8\,\text{s}$, so $v_\text{B} = \dfrac{4\,\text{m} - 20\,\text{m}}{8\,\text{s}} = -2.0\,\text{m/s}$. The lines cross at $4.0\,\text{s}$ at $12\,\text{m}$, so at $6.0\,\text{s}$ body A has already passed B.
+**Formula:** $x_\text{A} = x_{0\text{A}} + v_\text{A}\,t$, $x_\text{B} = x_{0\text{B}} + v_\text{B}\,t$ and $d = |x_\text{A} - x_\text{B}|$
+**Conversions:** The positions are in metres and the times in seconds, so no conversions are needed. The velocity of B is substituted as negative.
+**Substitution:**
+
+$$\begin{aligned} x_\text{A} &= 4\,\text{m} + 2.0\,\text{m/s} \cdot 6.0\,\text{s} \\ &= 16\,\text{m} \end{aligned}$$
+
+$$\begin{aligned} x_\text{B} &= 20\,\text{m} + (-2.0\,\text{m/s}) \cdot 6.0\,\text{s} \\ &= 8\,\text{m} \end{aligned}$$
+
+$$\begin{aligned} d &= |16\,\text{m} - 8\,\text{m}| \\ &= 8.0\,\text{m} \end{aligned}$$
+**Answer:** $8.0\,\text{m}$, two significant figures, because the velocities $2.0\,\text{m/s}$ and the time $6.0\,\text{s}$ are read from the graph and have two figures.
+**Reasonableness:** After the crossing the distance grows by the difference of the velocities, $2.0\,\text{m/s} - (-2.0\,\text{m/s}) = 4.0\,\text{m/s}$. $2.0\,\text{s}$ have passed since $4.0\,\text{s}$, so the distance is $4.0\,\text{m/s} \cdot 2.0\,\text{s} = 8\,\text{m}$, the same as above. In the graph the vertical gap between the lines at $6\,\text{s}$ is $8\,\text{m}$.

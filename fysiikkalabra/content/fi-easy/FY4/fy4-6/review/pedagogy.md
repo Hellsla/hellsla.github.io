@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 4f90bdbcbca720f2
+CONTENT-HASH: 0761f1fb3da0dbd4
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- inquiry.json (third voimakuvio, kirja kannella) — diagram draws G 9,81 (1 kg) though the task gives no mass — add to the Voimakuvio line "Kuvassa kirjan massa on esimerkiksi 1 kg; vain nuolten suhteet ovat tärkeitä."
+1. lesson.md: F_μ0 means the actual static friction in the inequality and the limiting value in the new formula; the sentence between them explains it. Consider saying 'F_μ0 saavuttaa arvon μ₀N vasta juuri ennen liukumaan lähtöä'.
 
 ## Checked
-batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.
+Whole chapter text for the new symbols, formula sections, inquiry, exit ticket, solutions; numbers unchanged; fi-easy and en match fi.

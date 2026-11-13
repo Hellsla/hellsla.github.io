@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: fd398a527c525186
-
+CONTENT-HASH: 9e3f1aafd212641a
+SCOPE: delta added-exercise from 6532dd8778633a6f base 7db0992d648a
 ## Blocking
 
 ## Polish
-- content/fi/FY4/fy4-1/exercises/solutions.md:237 (L1-09) — "Kuvaaja A nousee paikasta $6\,\text{m}$ paikkaan $10\,\text{m}$" and "kohdassa $-1\,\text{m}$" drop the figures used everywhere else ($6{,}0$, $-1{,}0$) — write $6{,}0\,\text{m}$, $10\,\text{m}$, $-1{,}0\,\text{m}$ as in the feedback.
-- lessons/FY4/fy4-1/answers.py:26 — the comment lists L1-06..08 as multiple choice; L1-09 is not mentioned — add it to the comment.
+- content/fi/FY4/fy4-1/exercises/solutions.md (L2-09 Vastaus) — "nopeudet $2{,}0\,\text{m/s}$ ja aika $6{,}0\,\text{s}$ on luettu kuvaajasta": aika $6{,}0\,\text{s}$ annetaan tehtävätekstissä, sitä ei lueta kuvaajasta. Parempi: "nopeudet on laskettu kuvaajan ruudukon risteyksistä, ja aika $6{,}0\,\text{s}$ on annettu kahdella numerolla".
+- solutions.md (L2-08 Järkevyys) — "Nopeus $2{,}0\,\text{m/s}$ on kävelyvauhtia": kyse on keskivauhdista, joten "Keskivauhti $2{,}0\,\text{m/s}$" pitäisi suureet erillään, kuten ratkaisun muu osa tekee.
 
 ## Checked
-- New task fy4-1-L1-09 (graph choice, type 2): recomputed x(4,0 s) = 6,0 m − 1,0 m/s · 4,0 s = 2,0 m; only figure C (6 → 2 m over 0–4 s) fits; exactly one correct option.
-- Figures (from figcat source and descriptions, text only): all four share one grid (t 0–5 s, x −6…12 m, axis at x = 0); every value is on a 1 s / 2 m grid line or halfway (D at −1 m); each description is complete and gives the same information as the picture; none is identifiable by form (same label "Kuvaaja X", same axes, same line width).
-- Distractors catch the chapter's warned mistakes: A = sign of v ignored ("negatiivinen nopeus hitaana"/direction), D = velocity read as a position ((t,x) vs (t,v)), B = start position forgotten. Each feedback says why it is wrong; the correct feedback gives only the check, no extra stage.
-- Scope: only x = x₀ + vt and slope = v from this chapter; (t,v) graph is already used in L2-07 and FY1.
-- Solution: Kysytty/Periaate/Mallivastaus complete, symbolic first, slope check right, notation x₀, v, (t, x) as in the lesson.
-- All 21 answers: answers.py run once (python -I) and compared with exercises.json: 17 numeric answers within tolerance; L1-06..09 non-numeric, each with exactly one correct choice.
-- Inline formulas (text only, not rendered): the longest inline chain is the slope fraction (≈ 120 px); all under 300 px at 390 px. The deterministic 360 px layout check passed.
-- Hash identical at start and end.
+- Kierroksen 3 polish-huomiot on korjattu. L2-08:n keskivauhdilla on oma tunnus $v_\text{kv}$, joten se ei enää sekoitu luvun keskinopeuteen $v_\text{k}$. L2-09:n Vastaus sanoo, että nopeudet on luettu kuvaajasta.
+- Laskin vastaukset uudelleen yhdessä skriptissä, omat kaavani `python -I answers.py`:n rinnalla. L2-08: $s = 12 + 0 + 8 = 20\,\text{m}$ ja $20\,\text{m} : 10\,\text{s} = 2{,}0\,\text{m/s}$. L2-09: $x_\text{A} = 16\,\text{m}$, $x_\text{B} = 8\,\text{m}$ ja $d = 8\,\text{m}$. Sekä answers.py että exercises.json antavat samat arvot.
+- Fysiikka: keskivauhti on matka jaettuna ajalla, ja tehtävä määrittelee sen. Matka saadaan osasiirtymien itseisarvoista, ja vertailu keskinopeuteen $0{,}4\,\text{m/s}$ pitää paikkansa. L2-09 käyttää yhtälöä $x = x_0 + vt$ ja välimatkaa $|x_\text{A} - x_\text{B}|$. Suorat leikkaavat pisteessä $(4\,\text{s};\, 12\,\text{m})$. Ohjeen sanamuoto "ylempänä oleva viiva" on käytössä.
+- Kuvien kulmapisteet ovat ruudukon risteyksissä, joten toleranssit (2 % ja 4 %) riittävät.
+- Hash 9e3f1aafd212641a sekä alussa että lopussa.

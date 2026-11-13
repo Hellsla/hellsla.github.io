@@ -87,6 +87,18 @@
       "answer": 8.5714,
       "unit": "cm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-9-L1-09",
+      "level": 1,
+      "text": "The spectrum of a hot star peaks in the ultraviolet region, at a wavelength of $350\\,\\text{nm}$. The star is assumed to radiate like a black body. Look up the constant of Wien's displacement law in the MAFY tables (mafytaulukot.fi). What is the surface temperature of the star?",
+      "lookup": "MAFY",
+      "answer": 8279.35,
+      "unit": "K",
+      "tolerance": 0.02,
+      "hints": [
+        "The value is in the MAFY tables, in the table *Luonnonvakiot*."
+      ]
     }
   ],
   "level2": [
@@ -260,6 +272,15 @@
           "feedback": "This reads the dependence the wrong way round, as if the peak became longer as the temperature rises. The wavelength of the peak is inversely proportional to the temperature, so a shorter peak at setting 4 means a higher temperature, and the ratio is $4.10 : 2.90 \\approx 1.4$."
         }
       ]
+    },
+    {
+      "id": "fy7-9-L2-09",
+      "level": 2,
+      "text": "The graph shows the spectrum of the radiation emitted by a glowing body. The body radiates like a black body. The body is cooled until its surface temperature is $1000\\,\\text{K}$. By how many micrometres does the peak of the spectrum shift? Read the value you need from the graph.",
+      "answer": 1.698,
+      "unit": "µm",
+      "tolerance": 0.02,
+      "figure": "fy7-9/spectrum-task"
     }
   ],
   "level3": [

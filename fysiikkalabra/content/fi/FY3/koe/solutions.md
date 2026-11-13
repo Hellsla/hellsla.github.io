@@ -251,12 +251,12 @@ Yhteensä noin $250\,\text{kJ}$, eli noin puolet banaanin ravintoenergiasta. Pak
 ## fy3-k5
 
 ### a)
-**Annettu:** $L_0 = 120\,\text{m}$, $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$, $\theta_1 = 10\,{}^\circ\text{C}$ ja $\theta_2 = 115\,{}^\circ\text{C}$
-**Kysytty:** putkiosuuden pidentyminen $\Delta L$
+**Annettu:** $l_0 = 120\,\text{m}$, $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$, $\theta_1 = 10\,{}^\circ\text{C}$ ja $\theta_2 = 115\,{}^\circ\text{C}$
+**Kysytty:** putkiosuuden pidentyminen $\Delta l$
 **Periaate:** Lämmetessä kiinteän aineen pituus kasvaa suunnilleen suoraan verrannollisesti alkuperäiseen pituuteen ja lämpötilan muutokseen.
-**Kaava:** $\Delta L = \alpha L_0 \Delta T$
+**Kaava:** $\Delta l = \alpha l_0 \Delta T$
 **Muunnokset:** $\Delta T = 115\,{}^\circ\text{C} - 10\,{}^\circ\text{C} = 105\,\text{K}$
-**Sijoitus:** $\Delta L = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 120\,\text{m} \cdot 105\,\text{K} \approx 0{,}151\,\text{m}$
+**Sijoitus:** $\Delta l = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 120\,\text{m} \cdot 105\,\text{K} \approx 0{,}151\,\text{m}$
 **Vastaus:** Putkiosuus pitenee noin $15\,\text{cm}$. Kaksi merkitsevää numeroa, kuten lämpötilakertoimessa.
 **Järkevyys:** Suhteellinen pidentyminen on $\alpha\,\Delta T \approx 0{,}13\,\%$, mikä on metallille tavallinen sadan asteen lämpötilan muutoksessa.
 
@@ -439,32 +439,32 @@ $P = (56 + 25 + 40)\,\tfrac{\text{W}}{\text{K}} \cdot 20\,\text{K} = 121\,\tfrac
 
 ### b)
 **Annettu:** $P = 2420\,\text{W}$, $t = 5100\,\text{h}$, ilmanvaihto ja käyttövesi $8{,}0\,\text{MWh}$, lämpökerroin $\varepsilon = 3{,}0$
-**Kysytty:** vuotuinen lämmöntarve $Q$ ja lämmityksen sähkönkulutus $E_\text{s}$ kahdella tavalla
+**Kysytty:** vuotuinen lämmöntarve $Q_1$ ja lämmityksen sähkönkulutus $W$ kahdella tavalla
 **Periaate:** Keskimääräinen teho kerrottuna ajalla on energia. Lämpöpumpun lämpökerroin on taloon annetun lämmön ja pumpun käyttämän sähköenergian osamäärä. Sähkövastus muuttaa sähköenergian kokonaan lämmöksi.
-**Kaava:** $Q = Pt + Q_\text{iv}$ ja $\varepsilon = \dfrac{Q}{E_\text{s}}$, joten $E_\text{s} = \dfrac{Q}{\varepsilon}$
+**Kaava:** $Q_1 = Pt + Q_\text{iv}$ ja $\varepsilon = \dfrac{Q_1}{W}$, joten $W = \dfrac{Q_1}{\varepsilon}$
 **Muunnokset:** $2420\,\text{W} \cdot 5100\,\text{h} = 12\,342\,000\,\text{Wh} \approx 12{,}3\,\text{MWh}$
-**Sijoitus:** $Q = 12{,}3\,\text{MWh} + 8{,}0\,\text{MWh} \approx 20{,}3\,\text{MWh}$
+**Sijoitus:** $Q_1 = 12{,}3\,\text{MWh} + 8{,}0\,\text{MWh} \approx 20{,}3\,\text{MWh}$
 
-$E_\text{s} = \dfrac{20{,}3\,\text{MWh}}{3{,}0} \approx 6{,}8\,\text{MWh}$
+$W = \dfrac{20{,}3\,\text{MWh}}{3{,}0} \approx 6{,}8\,\text{MWh}$
 **Vastaus:** Talo tarvitsee lämpöä noin $20\,\text{MWh}$ vuodessa. Maalämpöpumpulla lämmitykseen kuluu sähköä noin $6{,}8\,\text{MWh}$ ja suoralla sähkölämmityksellä noin $20\,\text{MWh}$, eli lähes kolme kertaa niin paljon.
 **Järkevyys:** Noin $20\,\text{MWh}$ vuodessa on vanhan omakotitalon tavallinen lämmitysenergian tarve.
 
 ### c)
 **Kysytty:** miksi lämpöpumppu ei riko energian säilymistä
 **Periaate:** Lämpöpumppu siirtää lämpöä kylmemmästä lämpimämpään, ja siihen se tarvitsee sähköenergiaa. Energia säilyy koko prosessissa.
-**Mallivastaus:** Lämpöpumppu ei tee lämpöä sähköstä vaan siirtää sitä kylmästä maaperästä lämpimään taloon, ja sähköenergia kuluu tähän siirtämiseen. Energia säilyy: taloon annettu lämpö on maasta otetun lämmön ja pumpun käyttämän sähköenergian summa, $Q_\text{sisälle} = Q_\text{maa} + E_\text{s}$. Kun lämpökerroin on $3{,}0$, noin kaksi kolmasosaa lämmöstä tulee maasta ja kolmasosa sähköstä. Lämpökerroin ei siis ole hyötysuhde, joten se voi olla suurempi kuin yksi.
+**Mallivastaus:** Lämpöpumppu ei tee lämpöä sähköstä vaan siirtää sitä kylmästä maaperästä lämpimään taloon, ja sähköenergia kuluu tähän siirtämiseen. Energia säilyy: taloon annettu lämpö on maasta otetun lämmön ja pumpun käyttämän sähköenergian summa, $Q_1 = Q_2 + W$. Kun lämpökerroin on $3{,}0$, noin kaksi kolmasosaa lämmöstä tulee maasta ja kolmasosa sähköstä. Lämpökerroin ei siis ole hyötysuhde, joten se voi olla suurempi kuin yksi.
 
 ### d)
 **Annettu:** ikkunoiden ala $20\,\text{m}^2$, U-arvo $2{,}0 \to 0{,}90\,\tfrac{\text{W}}{\text{m}^2 \cdot \text{K}}$, $\Delta T = 20\,\text{K}$, $t = 5100\,\text{h}$, $\varepsilon = 3{,}0$, sähkön hinta $0{,}15\,\tfrac{\text{€}}{\text{kWh}}$, vaihdon hinta $9000\,\text{€}$
 **Kysytty:** vuotuinen sähkön ja rahan säästö ja vaihdon kannattavuus
 **Periaate:** Uudet ikkunat pienentävät johtumistehoa U-arvon muutoksen verran. Säästyvä lämpö jaetaan lämpökertoimella, jolloin saadaan säästyvä sähkö.
-**Kaava:** $\Delta P = \Delta U \cdot A\,\Delta T$, $\Delta Q = \Delta P \cdot t$ ja $\Delta E_\text{s} = \dfrac{\Delta Q}{\varepsilon}$
+**Kaava:** $\Delta P = \Delta U \cdot A\,\Delta T$, $\Delta Q_1 = \Delta P \cdot t$ ja $\Delta W = \dfrac{\Delta Q_1}{\varepsilon}$
 **Muunnokset:** $\Delta U = 2{,}0 - 0{,}90 = 1{,}1\,\tfrac{\text{W}}{\text{m}^2 \cdot \text{K}}$
 **Sijoitus:** $\Delta P = 1{,}1\,\tfrac{\text{W}}{\text{m}^2 \cdot \text{K}} \cdot 20\,\text{m}^2 \cdot 20\,\text{K} = 440\,\text{W}$
 
-$\Delta Q = 0{,}440\,\text{kW} \cdot 5100\,\text{h} \approx 2240\,\text{kWh}$
+$\Delta Q_1 = 0{,}440\,\text{kW} \cdot 5100\,\text{h} \approx 2240\,\text{kWh}$
 
-$\Delta E_\text{s} = \dfrac{2240\,\text{kWh}}{3{,}0} \approx 750\,\text{kWh}$ ja $750\,\text{kWh} \cdot 0{,}15\,\tfrac{\text{€}}{\text{kWh}} \approx 110\,\text{€}$
+$\Delta W = \dfrac{2240\,\text{kWh}}{3{,}0} \approx 750\,\text{kWh}$ ja $750\,\text{kWh} \cdot 0{,}15\,\tfrac{\text{€}}{\text{kWh}} \approx 110\,\text{€}$
 **Vastaus:** Vaihto säästää sähköä noin $750\,\text{kWh}$ ja rahaa noin $110$ euroa vuodessa. Se maksaisi itsensä takaisin noin $9000\,\text{€} : 112\,\tfrac{\text{€}}{\text{a}} \approx 80$ vuodessa, mikä on pidempi kuin ikkunoiden käyttöikä. Pelkän energiansäästön vuoksi vaihto ei siis kannata lämpöpumpputalossa. Suoralla sähkölämmityksellä säästö olisi kolminkertainen, noin $340$ euroa vuodessa, ja vaihto voi kannattaa myös vedon, kosteusvaurioiden tai ikkunoiden huonon kunnon vuoksi.
 **Järkevyys:** Ikkunat johtavat nyt $40\,\text{W/K}$ ja uudet $18\,\text{W/K}$, joten säästö on runsas puolet ikkunoiden lämpöhäviöstä ja noin kymmenesosa talon koko lämmöntarpeesta.
 
@@ -472,9 +472,9 @@ $\Delta E_\text{s} = \dfrac{2240\,\text{kWh}}{3{,}0} \approx 750\,\text{kWh}$ ja
 **Annettu:** $\varepsilon = 3{,}0$, lauhdevoimalaitoksen hyötysuhde $40\,\%$, öljykattilan hyötysuhde $90\,\%$, päästökertoimet $94{,}6\,\tfrac{\text{g}}{\text{MJ}}$ (kivihiili) ja $74{,}1\,\tfrac{\text{g}}{\text{MJ}}$ (polttoöljy)
 **Kysytty:** hiilidioksidipäästöt yhtä lämmön megawattituntia kohti ja väitteen arvio
 **Periaate:** Lasketaan kummallekin vaihtoehdolle, kuinka paljon polttoainetta kuluu, kun taloon saadaan $1{,}0\,\text{MWh}$ lämpöä, ja kerrotaan polttoaineen energia päästökertoimella.
-**Kaava:** Lämpöpumppu: $E_\text{s} = \dfrac{Q}{\varepsilon}$ ja $E_\text{pa} = \dfrac{E_\text{s}}{\eta_\text{l}}$. Öljykattila: $E_\text{pa} = \dfrac{Q}{\eta_\text{ö}}$. Päästö on $m = E_\text{pa} \cdot$ päästökerroin.
+**Kaava:** Lämpöpumppu: $W = \dfrac{Q_1}{\varepsilon}$ ja $E_\text{pa} = \dfrac{W}{\eta_\text{l}}$. Öljykattila: $E_\text{pa} = \dfrac{Q_1}{\eta_\text{ö}}$. Päästö on $m = E_\text{pa} \cdot$ päästökerroin.
 **Muunnokset:** $1\,\text{MWh} = 3600\,\text{MJ}$
-**Sijoitus:** Lämpöpumppu: $E_\text{s} = \dfrac{1{,}0\,\text{MWh}}{3{,}0} \approx 0{,}333\,\text{MWh}$ ja $E_\text{pa} = \dfrac{0{,}333\,\text{MWh}}{0{,}40} \approx 0{,}833\,\text{MWh} = 3000\,\text{MJ}$
+**Sijoitus:** Lämpöpumppu: $W = \dfrac{1{,}0\,\text{MWh}}{3{,}0} \approx 0{,}333\,\text{MWh}$ ja $E_\text{pa} = \dfrac{0{,}333\,\text{MWh}}{0{,}40} \approx 0{,}833\,\text{MWh} = 3000\,\text{MJ}$
 
 $m_\text{pumppu} = 3000\,\text{MJ} \cdot 94{,}6\,\tfrac{\text{g}}{\text{MJ}} \approx 284\,\text{kg}$
 

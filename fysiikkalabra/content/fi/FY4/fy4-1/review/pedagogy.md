@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 4ae8996762a31242
+CONTENT-HASH: 3dbd4a28b1f97ddd
 
 ## Blocking
+None.
 
 ## Polish
+1. lesson.md Kaava: v_k is now named keskinopeus; the text still says 'keskinopeus' in prose, consistent. No change needed beyond keeping v_k (not v_ka) in fy4-3 only where an arithmetic mean is meant.
 
 ## Checked
-- Kevyt delta-katselmointi (opettaja 2026-11-07): diff origin/main -muutokset arvioitu ja niiden johdonmukaisuus tavoitteiden, yhteenvedon ja ratkaisujen kanssa.
-- Kulmakertoimen kuvaus erottaa nyt vauhdin (itseisarvo) ja suunnan (etumerkki); yhtenevä sanaston ja nopeus/vauhti-erottelun kanssa. Tulos-kohta: kokonaisluvut tarkkoja, ei pyöristystä; johdonmukainen opettajan säännön kanssa, ei jää ristiriitaa yhteenvedon kanssa.
-- Kokonaisluvut tehtävätiedoissa tulkitaan tarkoiksi (opettajan sääntö); teksti sanoo tämän käyttöpaikalla. Muutos ei paljasta vastausta ennen toimintaa eikä vaikuta palautteeseen, ennusteisiin tai kokeisiin.
-- Muu sisältö ennallaan (aiemmin hyväksytty). ESCALATE-tarvetta ei ole.
+Whole chapter text for the new symbols, formula sections, inquiry, exit ticket, solutions; numbers unchanged; fi-easy and en match fi.

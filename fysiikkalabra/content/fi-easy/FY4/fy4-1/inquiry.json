@@ -360,12 +360,12 @@
         "choices": [
           {
             "text": "$1{,}6\\,\\text{m/s}$, koska kärry kulki $16\\,\\text{m}$ ajassa $10\\,\\text{s}$.",
-            "feedback": "Luku $16\\,\\text{m}$ on kuljettu matka. Keskinopeus lasketaan siirtymästä: $v_\\text{ka} = \\dfrac{\\Delta x}{\\Delta t}$. Matkasta lasketaan keskivauhti eli kuljettu matka jaettuna ajalla. Se on tässä $1{,}6\\,\\text{m/s}$."
+            "feedback": "Luku $16\\,\\text{m}$ on kuljettu matka. Keskinopeus lasketaan siirtymästä: $v_\\text{k} = \\dfrac{\\Delta x}{\\Delta t}$. Matkasta lasketaan keskivauhti eli kuljettu matka jaettuna ajalla. Se on tässä $1{,}6\\,\\text{m/s}$."
           },
           {
             "text": "$0$, koska siirtymä on $\\Delta x = 0\\,\\text{m} - 0\\,\\text{m} = 0$.",
             "correct": true,
-            "feedback": "Oikein. Kärry on lopussa samassa paikassa kuin alussa. Siksi $\\Delta x = 0$ ja $v_\\text{ka} = \\dfrac{0}{10\\,\\text{s}} = 0$. Matka oli silti $16\\,\\text{m}$. Siirtymä ja matka ovat eri suureita."
+            "feedback": "Oikein. Kärry on lopussa samassa paikassa kuin alussa. Siksi $\\Delta x = 0$ ja $v_\\text{k} = \\dfrac{0}{10\\,\\text{s}} = 0$. Matka oli silti $16\\,\\text{m}$. Siirtymä ja matka ovat eri suureita."
           },
           {
             "text": "$2{,}0\\,\\text{m/s}$, koska se oli kärryn nopeus ajon aikana.",

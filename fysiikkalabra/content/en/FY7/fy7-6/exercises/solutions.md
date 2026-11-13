@@ -175,3 +175,25 @@
 **Model answer:** The ring jumps upwards. When the switch is closed, the current of the coil grows from zero, so the magnetic field of the coil and the flux through the ring grow too. An induced current arises in the ring, and at the centre of the ring its field points against the field of the coil, so it opposes the growth of the flux. The ring is then like a small magnet whose side facing the coil is a pole of the same name as the upper end of the coil. Poles of the same name repel each other, and the light ring jumps up. We do not need to know which pole the upper end of the coil is: it is enough that the side of the ring facing the coil is always of the same name.
 
 The repelling force lasts only as long as the current grows. When the current has settled to a constant value, the flux no longer changes, the induced current stops and the ring falls back on the coil. So the direct current of the battery does not prevent induction, because at the moment of switching on the current changes. If the induced current strengthened the growth of the flux, the ring and the coil would attract each other and energy would be created out of nothing, which is against the conservation of energy. The fact that aluminium conducts electricity well is true, but it only says that a current can flow, not the direction of the force.
+
+## fy7-6-L2-09
+**Given:** a graph of the braking force $F$ as a function of the speed $v$; speed $v = 0.25\,\text{m/s}$
+**Asked:** the rate $P$ at which the internal energy of the tube increases, in milliwatts
+**Principle:** The braking force of the eddy currents does work against the motion of the magnet. In a time $\Delta t$ the magnet moves a distance $v \Delta t$, and the work $F v \Delta t$ becomes internal energy of the tube, so the power is $P = F v$. The force is read from the graph.
+**Reading the graph:** At the speed $0.25\,\text{m/s}$ the measured point and the drawn line are at the height $F = 0.40\,\text{N}$ (the fourth gridline upwards, when the spacing is $0.1\,\text{N}$).
+**Formula:** $P = F v$
+**Conversions:** $1\,\text{W} = 1000\,\text{mW}$
+**Substitution:** $P = 0.40\,\text{N} \cdot 0.25\,\text{m/s} = 0.100\,\text{W} = 100\,\text{mW}$
+**Answer:** $100\,\text{mW}$, two significant figures like the force $0.40\,\text{N}$ read from the graph and the speed $0.25\,\text{m/s}$.
+**Reasonableness:** The force grows in direct proportion to the speed, so the power grows as the square of the speed: at half the speed, $0.125\,\text{m/s}$, the force would be $0.20\,\text{N}$ and the power only $25\,\text{mW}$. A tenth of a watt is a small power, so the tube does not feel warm.
+
+## fy7-6-L3-06
+**Given:** mass of the magnet $m = 45\,\text{g}$, $g = 9.81\,\text{m/s}^2$; a graph of the braking force $F$ as a function of the speed $v$
+**Asked:** the constant speed $v$ at which the magnet falls, in metres per second
+**Principle:** When the magnet falls at a constant speed, the sum of the forces on it is zero, so the braking force equals the weight: $F = mg$. The line in the graph passes through the origin, so $F$ is directly proportional to the speed: $F = kv$. The speed is the one at which the force on the line equals the weight.
+**Reading the graph:** The line passes through the origin, so its slope is found from one point. At the speed $0.20\,\text{m/s}$ the force is $0.32\,\text{N}$, so $k = F : v = 0.32\,\text{N} : 0.20\,\text{m/s} = 1.6\,\text{N}\cdot\text{s/m}$. Another point gives the same: $0.48\,\text{N} : 0.30\,\text{m/s} = 1.6\,\text{N}\cdot\text{s/m}$.
+**Formula:** $mg = kv$, so $v = \dfrac{mg}{k}$
+**Conversions:** $m = 45\,\text{g} = 45 \cdot 0.001\,\text{kg} = 0.045\,\text{kg}$
+**Substitution:** $mg = 0.045\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 0.44145\,\text{N}$ and $v = \dfrac{0.44145\,\text{N}}{1.6\,\text{N}\cdot\text{s/m}} = 0.2759\,\text{m/s}$
+**Answer:** $0.28\,\text{m/s}$, two significant figures like the mass $45\,\text{g}$.
+**Reasonableness:** Check from the graph: the weight $0.44\,\text{N}$ lies on the line where the speed is a little below $0.30\,\text{m/s}$, as it should. A lighter $20\,\text{g}$ magnet would fall more slowly: $v = 0.1962\,\text{N} : 1.6\,\text{N}\cdot\text{s/m} = 0.12\,\text{m/s}$. A heavier magnet falls faster because it needs a larger braking force.

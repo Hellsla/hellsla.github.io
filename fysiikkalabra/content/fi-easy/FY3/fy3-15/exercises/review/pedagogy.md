@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: cb3416ff2abdea57
-
-Mode: translation review (fi-easy (NOTES.md section 12)) against the reviewed Finnish. Round 2, new task fy3-15-L2-08.
+CONTENT-HASH: e28822a605b9fc27
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- None.
+- None new. L2-09 now writes fuel power P_o, matching the figure and L1-04.
 
 ## Checked
-- L2-08 (YO-skill form) keeps the fi task form, prompt and feedback texts; every wrong option or statement keeps its misconception diagnosis.
-- Sentences are short, one idea each, terms explained in the Principle (NOTES.md section 12); same step order as fi.
-- Level and workload as in fi; no answer disclosed in the task text.
+Delta: only P_0 to P_o in L2-09 (exercises.json, solutions.md); consistent, nothing else touched.

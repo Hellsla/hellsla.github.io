@@ -441,24 +441,24 @@ a oikea
 **Järkevyys:** Kiihtyvyys $1{,}95\,\text{m/s}^2$ on pienempi kuin $g$. Niin pitääkin olla, koska punnus kiihdyttää myös kärryä. Arvio: noin $0{,}8\,\text{kg}$ ja noin $2\,\text{m/s}^2$ antavat noin $1{,}6\,\text{N}$.
 
 ## fy4-13-L3-06
-**Annettu:** punnuksen massa $m_2 = 0{,}20\,\text{kg}$ ja kuvaajan mittauspisteet kärrylle, joka lähtee levosta; $g = 9{,}81\,\text{m/s}^2$. Kitka ja ilmanvastus jätetään huomiotta. Lanka ja väkipyörä ovat kevyet.
+**Annettu:** punnuksen massa $m_2 = 0{,}30\,\text{kg}$ ja kuvaajan mittauspisteet kärrylle, joka lähtee levosta; $g = 9{,}81\,\text{m/s}^2$. Kitka ja ilmanvastus jätetään huomiotta. Lanka ja väkipyörä ovat kevyet.
 **Kysytty:** a) kärryn massa $m_1$ yksikössä $\text{kg}$; b) onko jännitysvoima $T$ suurempi, pienempi vai yhtä suuri kuin punnuksen paino $m_2 g$
 **Periaate:** Kummallekin kappaleelle kirjoitetaan oma liikeyhtälö. Lanka on venymätön, joten kappaleilla on sama kiihtyvyyden suuruus $a$. Kevyt lanka ja kevyt kitkaton väkipyörä antavat samansuuruiset jännitysvoimat $T$. Kiihtyvyys luetaan kuvaajasta. Silloin kärryn massa on ainoa tuntematon.
 **Voimakuvio:** Piirrä kärry suorakulmioksi. Positiivinen suunta on langan suuntaan. Voimat $\overline{G}_1$ ja $\overline{N}$ kumoavat toisensa, ja vaakasuunnassa vaikuttaa vain $\overline{T}_1$. Piirrä punnus suorakulmioksi. Positiivinen suunta on alas. Voima $\overline{G}_2$ osoittaa alas ja $\overline{T}_2$ ylös. Voima $\overline{T}_2$ on lyhyempi kuin $\overline{G}_2$.
 ```voimakuvio
 pinta 0
-G_1 7,907
-N 7,907
-T_1 1,572 oikea
+G_1 11,86
+N 11,86
+T_1 2,358 oikea
 a oikea
 ---
-G_2 1,962
-T_2 1,572 ylös
+G_2 2,943
+T_2 2,358 ylös
 a alas
 ```
 **Kuvaajan lukeminen:** Pisteet ovat suoralla, joka kulkee origon kautta. Kiihtyvyys on siis vakio. Kaukaisin piste $(2{,}0\,\text{s};\, 3{,}9\,\text{m/s})$ ja alkupiste $(0\,\text{s};\, 0\,\text{m/s})$ antavat kulmakertoimen $a = \dfrac{3{,}9\,\text{m/s}}{2{,}0\,\text{s}} = 1{,}95\,\text{m/s}^2$. Piste $(1{,}0\,\text{s};\, 2{,}0\,\text{m/s})$ antaa lähes saman, $2{,}0\,\text{m/s}^2$.
 **Kaava:** Kärry: $T = m_1 a$. Punnus: $m_2 g - T = m_2 a$. Yhtälöistä saadaan $m_2 g = (m_1 + m_2)\,a$, joten $m_1 = m_2\left(\dfrac{g}{a} - 1\right)$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä. Muunnoksia ei tarvita.
-**Sijoitus:** a) $m_1 = 0{,}20\,\text{kg} \cdot \left(\dfrac{9{,}81\,\text{m/s}^2}{1{,}95\,\text{m/s}^2} - 1\right) = 0{,}20\,\text{kg} \cdot 4{,}031 = 0{,}806\,\text{kg}$. b) $T = m_1 a = 0{,}806\,\text{kg} \cdot 1{,}95\,\text{m/s}^2 = 1{,}57\,\text{N}$ ja $m_2 g = 0{,}20\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 1{,}96\,\text{N}$
-**Vastaus:** a) $m_1 \approx 0{,}81\,\text{kg}$. Vastauksessa on kaksi merkitsevää numeroa, koska punnuksen massa $0{,}20\,\text{kg}$ ja luettu kiihtyvyys ovat kahden numeron tarkkuudella. b) Jännitysvoima $1{,}6\,\text{N}$ on pienempi kuin punnuksen paino $2{,}0\,\text{N}$. Punnus kiihtyy alas, joten sen kokonaisvoima $m_2 g - T = m_2 a$ osoittaa alas. Siksi $T < m_2 g$. Jännitysvoima olisi painon suuruinen vain, jos kiihtyvyys olisi nolla.
-**Järkevyys:** Kärryn massa on noin nelinkertainen punnukseen verrattuna. Tarkistus: $a = \dfrac{m_2 g}{m_1 + m_2} = \dfrac{1{,}962\,\text{N}}{1{,}006\,\text{kg}} = 1{,}95\,\text{m/s}^2$. Tulos täsmää kuvaajasta luettuun arvoon.
+**Sijoitus:** a) $m_1 = 0{,}30\,\text{kg} \cdot \left(\dfrac{9{,}81\,\text{m/s}^2}{1{,}95\,\text{m/s}^2} - 1\right) = 0{,}30\,\text{kg} \cdot 4{,}031 = 1{,}21\,\text{kg}$. b) $T = m_1 a = 1{,}21\,\text{kg} \cdot 1{,}95\,\text{m/s}^2 = 2{,}36\,\text{N}$ ja $m_2 g = 0{,}30\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 2{,}94\,\text{N}$
+**Vastaus:** a) $m_1 \approx 1{,}2\,\text{kg}$. Vastauksessa on kaksi merkitsevää numeroa, koska punnuksen massa $0{,}30\,\text{kg}$ ja luettu kiihtyvyys ovat kahden numeron tarkkuudella. b) Jännitysvoima $2{,}4\,\text{N}$ on pienempi kuin punnuksen paino $2{,}9\,\text{N}$. Punnus kiihtyy alas, joten sen kokonaisvoima $m_2 g - T = m_2 a$ osoittaa alas. Siksi $T < m_2 g$. Jännitysvoima olisi painon suuruinen vain, jos kiihtyvyys olisi nolla.
+**Järkevyys:** Kärryn massa on noin nelinkertainen punnukseen verrattuna. Tarkistus: $a = \dfrac{m_2 g}{m_1 + m_2} = \dfrac{2{,}943\,\text{N}}{1{,}509\,\text{kg}} = 1{,}95\,\text{m/s}^2$. Tulos täsmää kuvaajasta luettuun arvoon.

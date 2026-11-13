@@ -182,6 +182,21 @@ def core():
     return f.svg()
 
 
+def brake_task():
+    """Task figure: measured braking force of the eddy currents on a magnet in an aluminium tube against its speed; six
+    points, fitted line F = 1,6 N·s/m · v (v 0,05–0,30 m/s). No power, no terminal speed drawn or written."""
+    f = Fig("fy76-brake-task", 340, "Kuvaaja mittakaavassa: alumiiniputkessa liikkuvaan magneettiin kohdistuva pyörrevirtojen "
+            "jarruttava voima newtoneina vauhdin funktiona metreinä sekunnissa. Kuusi mittauspistettä on origon kautta "
+            "kulkevan nousevan suoran lähellä, ja suora on piirretty pisteiden lomitse. Ruudukon väli on 0,05 m/s ja 0,1 N.")
+    ax = Axes(f, (96, 290), (480, 64), x=(0, 0.30), y=(0, 0.5), xticks=[0.05 * k for k in range(1, 7)],
+              yticks=[0.1 * k for k in range(1, 6)], xlabel=r"v\ (\text{m/s})", ylabel=r"F\ (\text{N})",
+              xfmt=lambda v: fi(round(v, 2), 2), yfmt=lambda v: fi(round(v, 1), 1))
+    ax.line([(0, 0), (0.30, 0.48)], FORCE, 3)
+    for v_, F_ in ((0.05, 0.081), (0.10, 0.158), (0.15, 0.243), (0.20, 0.319), (0.25, 0.402), (0.30, 0.478)):
+        ax.point(v_, F_, INK)
+    return f.svg()
+
+
 def hero():
     """The opening illustration: a copper tube held upright in a lab stand, a magnet just leaving its lower end above
     a soft pad, a plastic tube beside it and a stopwatch on the bench."""
@@ -246,11 +261,12 @@ def scene():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "ring": lenz_ring, "tube": tube, "energy": energy, "core": core, "scene": scene}
+FIGURES = {"hero": hero, "ring": lenz_ring, "tube": tube, "energy": energy, "core": core, "scene": scene, "brake-task": brake_task}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "ring": "reveals: an approaching N pole is repelled (the ring's face is N), a receding one attracted",
     "tube": "reveals: the eddy currents below and above a falling magnet and the braking force equal to the weight",
     "energy": "reveals: in the copper tube nearly all of the potential energy becomes internal energy",
+    "brake-task": "safe: measured F(v) of an eddy-current brake, six points and a line through the origin, no power or terminal speed",
     "core": "reveals: a laminated core cuts the eddy currents into small loops",
 }

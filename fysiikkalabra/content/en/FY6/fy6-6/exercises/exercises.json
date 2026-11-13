@@ -291,6 +291,15 @@
           "feedback": "Correct: the current halves from $0.50\\,\\text{A}$ to $0.25\\,\\text{A}$, and the power $RI^2$ decreases from $6.0\\,\\text{W}$ to $1.5\\,\\text{W}$."
         }
       ]
+    },
+    {
+      "id": "fy6-6-L2-09",
+      "level": 2,
+      "text": "The graph shows the electric power of a hob plate as a function of time when the control is turned in three steps. How much electrical energy is changed into internal energy in the plate during $12\\,\\text{min}$? Read the values you need from the graph.",
+      "figure": "fy6-6/ex-pt",
+      "answer": 780,
+      "unit": "kJ",
+      "tolerance": 0.02
     }
   ],
   "level3": [

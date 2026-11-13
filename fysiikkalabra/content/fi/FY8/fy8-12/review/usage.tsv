@@ -1,0 +1,16 @@
+date	lesson	course	agent	stage	model	effort	mode	round	tokens	input	output	cache_read	cache_write	context	turns	seconds	calls	verdict	cost_usd	source	ref
+2026-11-13T14:19Z	fy8-12	FY8	pedagogy-reviewer	review	claude-sonnet-5-5	medium	full	1	180232	12	3649	118414	58157	59769	5	31	6		0.2056	transcript	a823d50d4ef7
+2026-11-13T14:19Z	fy8-12	FY8	pedagogy-reviewer	review	claude-sonnet-5-5	medium	full	1	473483	16	5347	396114	72006	72597	8	48	9		0.3127	transcript	bb6906622892
+2026-11-13T14:19Z	fy8-12	FY8	visual-editorial-reviewer	review	claude-sonnet-5-5	medium	delta	1	290054	18	2230	247604	40202	41199	9	23	10		0.1724	transcript	33450a5284bc
+2026-11-13T14:19Z	fy8-12	FY8	science-reviewer	review	claude-opus-5-5	medium	full	1	1725849	46	13835	1605613	106355	111734	21	346	20		1.1298	transcript	44cf57cf0a63
+2026-11-13T14:19Z	fy8-12	FY8	visual-editorial-reviewer	review	claude-sonnet-5-5	medium	delta	1	214230	18	2715	160583	50914	51418	8	151	10		0.1866	transcript	bd37b4be6add
+2026-11-13T14:19Z	fy8-12	FY8	visual-editorial-reviewer	review	claude-sonnet-5-5	medium	delta	1	280109	20	2602	222999	54488	54884	9	149	10		0.2069	transcript	6a481f4d0bf8
+2026-11-13T14:19Z	fy8-12	FY8	pedagogy-reviewer	review	claude-sonnet-5-5	medium	full	2	251791	14	3411	177531	70835	76437	6	31	7		0.2467	transcript	77d1388ddebd
+2026-11-13T14:19Z	fy8-12	FY8	science-reviewer	review	claude-opus-5-5	medium	full	1	1310189	32	13563	1176862	119732	120687	15	157	17		1.1054	transcript	9d5024619739
+2026-11-13T14:19Z	fy8-12	FY8	developer	develop	claude-sonnet-5-5	medium	edit	1	163006	16	4317	133604	25069	26109	8	325	10		0.1326	transcript	b4174018665b
+2026-11-13T14:19Z	fy8-12	FY8	science-reviewer	review	claude-opus-5-5	medium	full	2	1033461	28	8497	910295	114641	115506	13	101	16		0.9253	transcript	39df26499c14
+2026-11-13T14:19Z	fy8-12	FY8	visual-editorial-reviewer	review	claude-sonnet-5-5	medium	delta	2	170046	8	1862	118909	49267	55719	4	15	7		0.1656	transcript	6bf8862f2ccc
+2026-11-13T14:19Z	fy8-12	FY8	pedagogy-reviewer	review	claude-sonnet-5-5	medium	full	1	414084	18	5916	329026	79124	79591	8	49	10		0.3228	transcript	5ec8276bb495
+2026-11-13T14:19Z	fy8-12	FY8	science-reviewer	review	claude-opus-5-5	medium	full	1	1073363	34	14816	957052	101461	107654	16	189	18		0.9952	transcript	8a0e4afdce7f
+2026-11-13T14:19Z	fy8-12	FY8	developer	develop	claude-sonnet-5-5	medium	fix	1	217508	18	5253	182081	30156	31049	9	282	10		0.1644	transcript	6b6014ea5f5b
+2026-11-13T14:19Z	fy8-12	FY8	orchestrator	orchestrate	claude-opus-5-5		session	2	67011684	525	107850	66257743	645566	457934	236	22558	226		20.5752	transcript	9023dd604d98

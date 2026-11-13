@@ -22,7 +22,7 @@
 **Given:** distance $s = 4.0\,\text{m}$, frictional force $F_\mu = 35\,\text{N}$ against the motion
 **Find:** the work $W$ done by the frictional force, with its sign, in $\text{J}$
 **Principle:** The frictional force points against the motion, so its component in the direction of the motion is $-F_\mu$. A force that opposes the motion does negative work.
-**Formula:** $W = F_\parallel s$, and $F_\parallel = -F_\mu$, so $W = -F_\mu s$
+**Formula:** $W = F s$, where the component of the friction along the motion is $F = -F_\mu$, so $W = -F_\mu s$
 **Conversions:** The force is in newtons and the distance in metres, so no conversions are needed; $1\,\text{N}\cdot\text{m} = 1\,\text{J}$.
 **Substitution:** $W = -35\,\text{N} \cdot 4.0\,\text{m} = -140\,\text{J}$
 **Answer:** $-140\,\text{J}$, that is $-1.4 \cdot 10^2\,\text{J}$, two significant figures like the distance $4.0\,\text{m}$ and the force $35\,\text{N}$.
@@ -30,21 +30,21 @@
 
 ## fy4-8-L1-04
 **Given:** $m = 65\,\text{kg}$, initial speed $v_1 = 0$, final speed $v_2 = 8.0\,\text{m/s}$
-**Find:** the work $W_\text{net}$ done by the net force in $\text{kJ}$
+**Find:** the work $W$ done by the net force in $\text{kJ}$
 **Principle:** The work done by the net force equals the change in kinetic energy. The net force or the distance need not be known, because the initial and final speeds tell the change in kinetic energy.
-**Formula:** $W_\text{net} = \Delta E_\text{k} = \tfrac{1}{2} mv_2^2 - \tfrac{1}{2} mv_1^2$, and $v_1 = 0$, so $W_\text{net} = \tfrac{1}{2} mv_2^2$
+**Formula:** $W = \Delta E_\text{k} = \tfrac{1}{2} mv_2^2 - \tfrac{1}{2} mv_1^2$, and $v_1 = 0$, so $W = \tfrac{1}{2} mv_2^2$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
-**Substitution:** $W_\text{net} = \tfrac12 \cdot 65\,\text{kg} \cdot (8.0\,\text{m/s})^2 = 2080\,\text{J}$
+**Substitution:** $W = \tfrac12 \cdot 65\,\text{kg} \cdot (8.0\,\text{m/s})^2 = 2080\,\text{J}$
 **Answer:** $2.1\,\text{kJ}$, two significant figures like the mass $65\,\text{kg}$ and the speed $8.0\,\text{m/s}$.
 **Reasonableness:** The work is positive, because the kinetic energy of the sprinter increases. Estimate: $\tfrac12 \cdot 60 \cdot 64\,\text{J} \approx 1900\,\text{J}$, so the result is of the right order of magnitude.
 
 ## fy4-8-L1-05
-**Given:** mechanical energy at the top of the hill $E_{\text{mech},1} = 12.4\,\text{kJ}$ and at the bottom $E_{\text{mech},2} = 9.8\,\text{kJ}$
-**Find:** the work $W_\text{other}$ done together by friction and air resistance, with its sign, in $\text{kJ}$
+**Given:** mechanical energy at the top of the hill $E_{\text{mech}0} = 12.4\,\text{kJ}$ and at the bottom $E_\text{mech} = 9.8\,\text{kJ}$
+**Find:** the work $W$ done together by friction and air resistance, with its sign, in $\text{kJ}$
 **Principle:** By the work–energy principle the change in mechanical energy equals the work done by forces other than the weight. Here the other forces are friction and air resistance; the normal force of the snow does no work, because it is perpendicular to the motion.
-**Formula:** $E_{\text{mech},1} + W_\text{other} = E_{\text{mech},2}$, so $W_\text{other} = E_{\text{mech},2} - E_{\text{mech},1}$
+**Formula:** $E_{\text{mech}0} + W = E_\text{mech}$, so $W = E_\text{mech} - E_{\text{mech}0}$
 **Conversions:** Both energies are in kilojoules, so the answer comes directly in kilojoules.
-**Substitution:** $W_\text{other} = 9.8\,\text{kJ} - 12.4\,\text{kJ} = -2.6\,\text{kJ}$
+**Substitution:** $W = 9.8\,\text{kJ} - 12.4\,\text{kJ} = -2.6\,\text{kJ}$
 **Answer:** $-2.6\,\text{kJ}$, two significant figures, because the energies are known to a tenth of a kilojoule and their difference is $2.6\,\text{kJ}$.
 **Reasonableness:** The work is negative, because friction and air resistance oppose the motion and the mechanical energy decreases. The skier lost about a fifth of the mechanical energy, which is believable in downhill skiing.
 
@@ -70,11 +70,11 @@
 
 ## fy4-8-L2-03
 **Given:** $m = 250\,\text{kg}$, lifting height $h = 18.0\,\text{m}$, speed constant, $g = 9.81\,\text{m/s}^2$
-**Find:** the work $W_\text{other}$ done by the rope in $\text{kJ}$
+**Find:** the work $W$ done by the rope in $\text{kJ}$
 **Principle:** The weight and the tension force of the rope act on the load. The rope is a force other than the weight, so we use the work–energy principle. The speed is constant, so the kinetic energy does not change, and the work of the rope increases only the potential energy. The zero level is chosen at the starting height of the load.
-**Formula:** $E_{\text{k},1} + E_{\text{p},1} + W_\text{other} = E_{\text{k},2} + E_{\text{p},2}$, and $E_{\text{k},1} = E_{\text{k},2}$ and $E_{\text{p},1} = 0$, so $W_\text{other} = mgh$
+**Formula:** $E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$, and $E_{\text{k}0} = E_\text{k}$ and $E_{\text{p}0} = 0$, so $W = mgh$
 **Conversions:** The quantities are in SI units. Finally $1\,\text{kJ} = 1000\,\text{J}$.
-**Substitution:** $W_\text{other} = 250\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 18.0\,\text{m} = 44\,145\,\text{J} = 44.1\,\text{kJ}$
+**Substitution:** $W = 250\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 18.0\,\text{m} = 44\,145\,\text{J} = 44.1\,\text{kJ}$
 **Answer:** $44.1\,\text{kJ}$, three significant figures like the lifting height $18.0\,\text{m}$ and the mass $250\,\text{kg}$.
 **Reasonableness:** At a constant speed the force of the rope equals the weight, about $2.5\,\text{kN}$, and $2.5\,\text{kN} \cdot 18\,\text{m} = 45\,\text{kJ}$. The work is positive, because the rope pulls in the direction of the motion and increases the mechanical energy of the load.
 
@@ -126,17 +126,17 @@
 
 ## fy4-8-L1-07
 **Given:** $m = 58.0\,\text{kg}$, initial speed $v_1 = 7.50\,\text{m/s}$, final speed $v_2 = 4.50\,\text{m/s}$
-**Find:** the work $W_\text{net}$ done by the net force, with its sign, in $\text{kJ}$
+**Find:** the work $W$ done by the net force, with its sign, in $\text{kJ}$
 **Principle:** The work done by the net force equals the change in kinetic energy. The net force and the distance do not need to be known, because the initial and final speeds give the change in kinetic energy.
-**Formula:** $W_\text{net} = \Delta E_\text{k} = \tfrac{1}{2} mv_2^2 - \tfrac{1}{2} mv_1^2$
+**Formula:** $W = \Delta E_\text{k} = \tfrac{1}{2} mv_2^2 - \tfrac{1}{2} mv_1^2$
 **Conversions:** The quantities are in SI units. Finally $1\,\text{kJ} = 1000\,\text{J}$.
-**Substitution:** First $v_2^2 - v_1^2 = (20.25 - 56.25)\,\text{m}^2/\text{s}^2 = -36.0\,\text{m}^2/\text{s}^2$, so $W_\text{net} = \tfrac12 \cdot 58.0\,\text{kg} \cdot (-36.0\,\text{m}^2/\text{s}^2) = -1044\,\text{J} = -1.044\,\text{kJ}$
+**Substitution:** First $v_2^2 - v_1^2 = (20.25 - 56.25)\,\text{m}^2/\text{s}^2 = -36.0\,\text{m}^2/\text{s}^2$, so $W = \tfrac12 \cdot 58.0\,\text{kg} \cdot (-36.0\,\text{m}^2/\text{s}^2) = -1044\,\text{J} = -1.044\,\text{kJ}$
 **Answer:** $-1.04\,\text{kJ}$, three significant figures like the mass $58.0\,\text{kg}$ and the speeds.
 **Reasonableness:** The work is negative, because friction and air resistance oppose the motion and the kinetic energy decreases. At the start the kinetic energy is $\tfrac12 \cdot 58 \cdot 7.50^2\,\text{J} \approx 1630\,\text{J}$ and at the end $\tfrac12 \cdot 58 \cdot 4.50^2\,\text{J} \approx 590\,\text{J}$; the difference is about $-1040\,\text{J}$.
 
 ## fy4-8-L1-08
 **Find:** what is wrong in the student's solution
-**Principle:** The work done by a force is $W = F_\parallel s$, where $s$ is the distance travelled in the direction of the force. The frictional force points against the motion all the way, so the work of friction is $-F_\mu s$, where $s$ is the distance along the plank. The height difference belongs to the work of the weight, that is the change in potential energy, not to the work of friction.
+**Principle:** The work done by a force is $W = F s$, where $s$ is the distance travelled in the direction of the force. The frictional force points against the motion all the way, so the work of friction is $-F_\mu s$, where $s$ is the distance along the plank. The height difference belongs to the work of the weight, that is the change in potential energy, not to the work of friction.
 **Model answer:** The student has multiplied the frictional force by the height difference between the ends of the plank, although the work of friction needs the distance the box travels along the plank. The frictional force acts along the whole length of the plank, so the correct work is $W = -8.0\,\text{N} \cdot 5.0\,\text{m} = -40\,\text{J}$. The sign $-$ was correct, because friction opposes the motion; only the distance was wrong. The student's result $-12\,\text{J}$ is too small.
 
 ## fy4-8-L2-05
@@ -152,12 +152,12 @@
 
 ## fy4-8-L2-06
 **Given:** $m = 420\,\text{kg}$, $g = 9.81\,\text{m/s}^2$; at points A, B, C, D the track distance $s = 0;\ 55;\ 120;\ 170\,\text{m}$, the height $h = 18.0;\ 6.0;\ 12.0;\ 3.0\,\text{m}$ and the speed $v = 1.5;\ 14.6;\ 7.9;\ 14.2\,\text{m/s}$
-**Find:** a) the mechanical energy $E_\text{mech}$ at points A–D; b) the work $W_\text{other}$ of the resistive forces between points A and D; c) the section between points where the average resistive force is greatest
-**Principle:** The mechanical energy is $E_\text{mech} = \tfrac{1}{2} mv^2 + mgh$ with the ground as the zero level. The normal force does no work, so the change in the mechanical energy of the car is the work of the resistive forces, $W_\text{other} = E_{\text{mech},2} - E_{\text{mech},1}$. The resistive force points against the motion all the way, so its average over a section is $F = -W_\text{other} : \Delta s$.
-**Formula:** $E_\text{mech} = \tfrac{1}{2} mv^2 + mgh$ and $W_\text{other} = E_{\text{mech,D}} - E_{\text{mech,A}}$
+**Find:** a) the mechanical energy $E_\text{mech}$ at points A–D; b) the work $W$ of the resistive forces between points A and D; c) the section between points where the average resistive force is greatest
+**Principle:** The mechanical energy is $E_\text{mech} = \tfrac{1}{2} mv^2 + mgh$ with the ground as the zero level. The normal force does no work, so the change in the mechanical energy of the car is the work of the resistive forces, $W = E_\text{mech} - E_{\text{mech}0}$. The resistive force points against the motion all the way, so its average over a section is $F = -W : \Delta s$.
+**Formula:** $E_\text{mech} = \tfrac{1}{2} mv^2 + mgh$ and $W = E_{\text{mech,D}} - E_{\text{mech,A}}$
 **Conversions:** The quantities are in SI units. Finally $1\,\text{kJ} = 1000\,\text{J}$.
-**Substitution:** a) At A it is $\tfrac12 \cdot 420 \cdot 1.5^2\,\text{J} + 420 \cdot 9.81 \cdot 18.0\,\text{J} = 0.47\,\text{kJ} + 74.16\,\text{kJ} = 74.6\,\text{kJ}$. In the same way the kinetic energies at B, C and D are $44.8;\ 13.1;\ 42.3\,\text{kJ}$ and the potential energies $24.7;\ 49.4;\ 12.4\,\text{kJ}$, so $E_\text{mech} = 69.5;\ 62.5;\ 54.7\,\text{kJ}$. b) $W_\text{other} = 54.7\,\text{kJ} - 74.6\,\text{kJ} = -19.9\,\text{kJ}$. c) Between A and B the energy decreases by $5.15\,\text{kJ}$ over $55\,\text{m}$, so $F = 5150\,\text{J} : 55\,\text{m} = 94\,\text{N}$. Between B and C it decreases by $6.94\,\text{kJ}$ over $65\,\text{m}$, so $F = 107\,\text{N}$. Between C and D it decreases by $7.84\,\text{kJ}$ over $50\,\text{m}$, so $F = 157\,\text{N}$.
-**Answer:** b) $W_\text{other} \approx -19.9\,\text{kJ}$, three significant figures like the heights and speeds. c) The average resistive force is greatest between points C and D, about $1.6 \cdot 10^2\,\text{N}$.
+**Substitution:** a) At A it is $\tfrac12 \cdot 420 \cdot 1.5^2\,\text{J} + 420 \cdot 9.81 \cdot 18.0\,\text{J} = 0.47\,\text{kJ} + 74.16\,\text{kJ} = 74.6\,\text{kJ}$. In the same way the kinetic energies at B, C and D are $44.8;\ 13.1;\ 42.3\,\text{kJ}$ and the potential energies $24.7;\ 49.4;\ 12.4\,\text{kJ}$, so $E_\text{mech} = 69.5;\ 62.5;\ 54.7\,\text{kJ}$. b) $W = 54.7\,\text{kJ} - 74.6\,\text{kJ} = -19.9\,\text{kJ}$. c) Between A and B the energy decreases by $5.15\,\text{kJ}$ over $55\,\text{m}$, so $F = 5150\,\text{J} : 55\,\text{m} = 94\,\text{N}$. Between B and C it decreases by $6.94\,\text{kJ}$ over $65\,\text{m}$, so $F = 107\,\text{N}$. Between C and D it decreases by $7.84\,\text{kJ}$ over $50\,\text{m}$, so $F = 157\,\text{N}$.
+**Answer:** b) $W \approx -19.9\,\text{kJ}$, three significant figures like the heights and speeds. c) The average resistive force is greatest between points C and D, about $1.6 \cdot 10^2\,\text{N}$.
 **Reasonableness:** The mechanical energy decreases in every section, as it should, and altogether about $27\,\%$ of the initial energy turned into internal energy. The average resistive force over the whole track is $19\,900\,\text{J} : 170\,\text{m} \approx 117\,\text{N}$, which lies between the averages of the three sections, $94\,\text{N}$, $107\,\text{N}$ and $157\,\text{N}$, as it should.
 
 ## fy4-8-L2-07
@@ -204,7 +204,7 @@ $v \approx 19.8\,\text{m/s}$
 
 2 false. The mass cancels from the conservation law, so a fuller car is equally fast at the bottom. It has more kinetic energy, but at the start it also had more potential energy.
 
-3 true. The normal force is perpendicular to the motion, so its component in the direction of the motion is zero and $W = F_\parallel s = 0$.
+3 true. The normal force is perpendicular to the motion, so its component in the direction of the motion is zero and $W = F s = 0$.
 
 4 false. At the top, at a height of $12\,\text{m}$, the kinetic energy is the difference between the potential energies at the start and at the top:
 
@@ -219,23 +219,23 @@ The car would stop only at the starting height of $20\,\text{m}$.
 5 false. Friction would decrease the mechanical energy of the car, but an equal amount of energy would be transferred to the internal energy of the track, the wheels and the air. The total energy is conserved.
 
 ## fy4-8-L2-08
-**Given:** points read from the graph: $(4.0\,\text{m/s};\,4.0\,\text{J})$ and $(6.0\,\text{m/s};\,9.0\,\text{J})$; $g = 9.81\,\text{m/s}^2$; the zero level is the ground, so at the start $E_{\text{p},1} = 0$
+**Given:** points read from the graph: $(4.0\,\text{m/s};\,4.0\,\text{J})$ and $(6.0\,\text{m/s};\,9.0\,\text{J})$; $g = 9.81\,\text{m/s}^2$; the zero level is the ground, so at the start $E_{\text{p}0} = 0$
 **Find:** the height $h$ in $\text{m}$
-**Principle:** Only the weight acts on the ball, so the mechanical energy is conserved: $E_{\text{k},1} + E_{\text{p},1} = E_{\text{k},2} + E_{\text{p},2}$. The decrease in kinetic energy equals the increase in potential energy. The mass of the ball is needed for the potential energy, and it comes from a point of the graph.
-**Reading the graph:** At the speed $6.0\,\text{m/s}$ the kinetic energy is $E_{\text{k},1} = 9.0\,\text{J}$ and at the speed $4.0\,\text{m/s}$ it is $E_{\text{k},2} = 4.0\,\text{J}$. The mass: $m = \dfrac{2E_{\text{k}}}{v^2} = \dfrac{2 \cdot 4.0\,\text{J}}{(4.0\,\text{m/s})^2} = 0.50\,\text{kg}$.
-**Formula:** $E_{\text{k},1} = E_{\text{k},2} + mgh$, so $h = \dfrac{E_{\text{k},1} - E_{\text{k},2}}{mg}$
+**Principle:** Only the weight acts on the ball, so the mechanical energy is conserved: $E_{\text{p}0} + E_{\text{k}0} = E_\text{p} + E_\text{k}$. The decrease in kinetic energy equals the increase in potential energy. The mass of the ball is needed for the potential energy, and it comes from a point of the graph.
+**Reading the graph:** At the speed $6.0\,\text{m/s}$ the kinetic energy is $E_{\text{k}0} = 9.0\,\text{J}$ and at the speed $4.0\,\text{m/s}$ it is $E_\text{k} = 4.0\,\text{J}$. The mass: $m = \dfrac{2E_{\text{k}}}{v^2} = \dfrac{2 \cdot 4.0\,\text{J}}{(4.0\,\text{m/s})^2} = 0.50\,\text{kg}$.
+**Formula:** $E_{\text{k}0} = E_\text{k} + mgh$, so $h = \dfrac{E_{\text{k}0} - E_\text{k}}{mg}$
 **Conversions:** All quantities are in SI units, so no conversions are needed.
 **Substitution:** $h = \dfrac{9.0\,\text{J} - 4.0\,\text{J}}{0.50\,\text{kg} \cdot 9.81\,\text{m/s}^2} = \dfrac{5.0\,\text{J}}{4.905\,\text{N}} = 1.02\,\text{m}$
 **Answer:** $1.0\,\text{m}$, two significant figures, like the values read from the graph and the speeds.
 **Reasonableness:** The mass cancels: $h = \dfrac{v_1^2 - v_2^2}{2g} = \dfrac{(6.0\,\text{m/s})^2 - (4.0\,\text{m/s})^2}{2 \cdot 9.81\,\text{m/s}^2} = 1.02\,\text{m}$, the same result. The whole rise from the speed $6.0\,\text{m/s}$ to a stop would be $1.8\,\text{m}$, so $1.0\,\text{m}$ is part of it.
 
 ## fy4-8-L2-09
-**Given:** the energies read from the figure: at the start $E_{\text{k},1} = 0$ and $E_{\text{p},1} = 40\,\text{J}$, at the end $E_{\text{k},2} = 25\,\text{J}$ and $E_{\text{p},2} = 0$; distance $s = 6.0\,\text{m}$
+**Given:** the energies read from the figure: at the start $E_{\text{k}0} = 0$ and $E_{\text{p}0} = 40\,\text{J}$, at the end $E_\text{k} = 25\,\text{J}$ and $E_\text{p} = 0$; distance $s = 6.0\,\text{m}$
 **Find:** the magnitude of the friction force $F_\mu$ in $\text{N}$
-**Principle:** The normal force is perpendicular to the motion and does no work, so the other force is friction. By the energy principle $E_{\text{k},1} + E_{\text{p},1} + W_\text{other} = E_{\text{k},2} + E_{\text{p},2}$. Friction points against the motion, so its work is negative, $W_\text{other} = -F_\mu s$.
+**Principle:** The normal force is perpendicular to the motion and does no work, so the other force is friction. By the energy principle $E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$. Friction points against the motion, so its work is negative, $W = -F_\mu s$.
 **Reading the graph:** The green bar reaches the $40\,\text{J}$ line of the scale and the blue bar the $25\,\text{J}$ line. At the start there is no kinetic energy and at the end there is no potential energy, so both are zero.
-**Formula:** $W_\text{other} = (E_{\text{k},2} + E_{\text{p},2}) - (E_{\text{k},1} + E_{\text{p},1})$ and $W_\text{other} = -F_\mu s$, so $F_\mu = \dfrac{(E_{\text{k},1} + E_{\text{p},1}) - (E_{\text{k},2} + E_{\text{p},2})}{s}$
+**Formula:** $W = (E_\text{p} + E_\text{k}) - (E_{\text{p}0} + E_{\text{k}0})$ and $W = -F_\mu s$, so $F_\mu = \dfrac{(E_{\text{p}0} + E_{\text{k}0}) - (E_\text{p} + E_\text{k})}{s}$
 **Conversions:** $1\,\text{J} = 1\,\text{N}\cdot\text{m}$, so joules and metres give newtons directly.
-**Substitution:** $W_\text{other} = 25\,\text{J} - 40\,\text{J} = -15\,\text{J}$, and $F_\mu = \dfrac{15\,\text{J}}{6.0\,\text{m}} = 2.5\,\text{N}$
+**Substitution:** $W = 25\,\text{J} - 40\,\text{J} = -15\,\text{J}$, and $F_\mu = \dfrac{15\,\text{J}}{6.0\,\text{m}} = 2.5\,\text{N}$
 **Answer:** $2.5\,\text{N}$, two significant figures, like the distance $6.0\,\text{m}$.
 **Reasonableness:** The mechanical energy decreased by $15\,\text{J}$, the difference between the bars $40\,\text{J}$ and $25\,\text{J}$, and $2.5\,\text{N} \cdot 6.0\,\text{m} = 15\,\text{J}$. The work of friction is negative, because friction opposes the motion.

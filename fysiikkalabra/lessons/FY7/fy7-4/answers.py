@@ -41,4 +41,5 @@ Is = [4.0, 6.0, 8.0, 10.0, 12.0]; acc = [1.8, 3.6, 5.6, 7.3, 9.3]       # rod on
 k_rod = sum((x - 8.0) * (y - sum(acc) / 5) for x, y in zip(Is, acc)) / sum((x - 8.0) ** 2 for x in Is)  # least-squares slope 0,935 (m/s²)/A
 a["fy7-4-L3-04"] = k_rod * 45e-3 / (12 * 0.01)                          # B = k m / l = 0,935 · 0,045 kg / 0,12 m = 0,351 T -> 0,35 T (μ = 1,96 / 9,81 = 0,20)
 a["fy7-4-L3-05"] = math.sqrt(2 * math.pi * 0.010 * 3.0e-3 * g / (mu0 * 0.50))  # levitating wire, opposite currents: mu0 I² l / (2π r) = m g -> I = 54,25 A -> 54 A
+a["fy7-4-L2-09"] = 0.45 / (6.0 * 0.25 * math.sin(math.radians(90)))  # figure fy7-4/force-angle: curve through (90°; 0,45 N): B = F_max / (I l) = 0,45 N / (6,0 A · 0,25 m) = 0,30 T
 print(json.dumps({k: round(v, 6) for k, v in a.items() if v is not None}))

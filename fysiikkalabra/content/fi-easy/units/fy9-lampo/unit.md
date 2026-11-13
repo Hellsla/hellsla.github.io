@@ -156,8 +156,8 @@ Seuraa kokeessa ensin energiaa. Mistä energia lähtee? Mihin se menee? Muuttuuk
 
 ### Lämpötila ja sisäenergia
 
-```kaavat
-lämpötila kelvineinä :: T = \theta + 273{,}15
+```latex
+T = \theta + 273{,}15
 ```
 
 Tässä $T$ on lämpötila kelvineinä ($\text{K}$) ja $\theta$ lämpötila celsiusasteina (${}^\circ\text{C}$). Lämpötilaero on sama kelvineinä ja celsiusasteina. Lämpötilojen suhteet lasketaan kuitenkin kelvineinä. Lämpö ja työ muuttavat sisäenergiaa:
@@ -258,8 +258,8 @@ Nyt voimme vastata alun kysymykseen. Kilogramman lumen lämmittäminen $-10\,{}^
 
 Eristetyssä astiassa energia säilyy:
 
-```kaavat
-lämpötase :: Q_\text{luovutettu} = Q_\text{vastaanotettu}
+```latex
+Q_\text{luovutettu} = Q_\text{vastaanotettu}
 ```
 
 Kun jäätä ja vettä sekoitetaan, tee ensin vertailu. Vesi luovuttaa lämpöä, kun se jäähtyy $0\,{}^\circ\text{C}$:seen. Riittääkö tämä lämpö lämmittämään jään $0\,{}^\circ\text{C}$:seen ja sulattamaan sen? Jos riittää, kaikki jää sulaa, ja lopun lämpötila on vähintään $0\,{}^\circ\text{C}$. Jos ei riitä, osa jäästä jää jäljelle, ja lämpötila on tasan $0\,{}^\circ\text{C}$. Hyvin kylmä jää voi myös jäädyttää osan vedestä tai kaiken veden.
@@ -275,8 +275,8 @@ Tässä $\alpha$ on pituuden lämpötilakerroin ja $\gamma$ tilavuuden lämpöti
 
 Lämpö siirtyy kolmella tavalla: johtumalla, konvektiona ja säteilynä. Konvektiossa lämmin neste tai kaasu virtaa ja kuljettaa energiaa. Lämpö siirtyy nettomääräisesti eli kaiken kaikkiaan lämpimämmästä kappaleesta kylmempään. Rakennusosan, esimerkiksi seinän, läpi johtuva teho on
 
-```kaavat
-rakennusosan läpi johtuva lämpöteho :: P = UA\Delta T
+```latex
+P = UA\Delta T
 ```
 
 Tässä $U$ on U-arvo ($\text{W/(m}^2\cdot\text{K)}$), $A$ pinta-ala ($\text{m}^2$) ja $\Delta T$ sisälämpötilan ja ulkolämpötilan ero ($\text{K}$). Kaava pätee, kun lämpötilat pysyvät samoina.

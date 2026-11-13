@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 402c2dd302b5019c
-Delta review (solution practice, 2026-11-12) of the version passed before.
+CONTENT-HASH: add641812b74c0f3
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at c2a116adf76021a5.
 
 ## Blocking
 (none)
@@ -9,4 +9,5 @@ Delta review (solution practice, 2026-11-12) of the version passed before.
 (none)
 
 ## Checked
-s1 a ($m_\text{a} = F/g$ = 45,3 kg), s1 c ($\Delta x$ solved in symbols = 11,1 cm), s2 b ($q = \gamma M/(g r^2)$ = 0,783), s5 (lever arms $d_\text{p}, d_\text{k}, d_\text{m}$; 114,3 g) and the two inquiry torque tasks (142,8 N; 235,4 N) recomputed. The fi, fi-easy and en diffs carry identical mathematics (every changed formula compared token by token); answers.py run; `units.py check` passes.
+- Arms as $r$ match the unit's $M = Fr$. Shovel: $F_\text{e} = 142.8$ N. Wheelbarrow: $F = mgr_\text{p}/r_\text{k} = 235.4$ N. Trailer: $F = 444.6$ N and $m_\text{a} = 45.3$ kg; c: $\Delta x = (m_ar_k - m_tr_t - m_vr_v)/m_v = 0.111$ m. Satellite: $q = \gamma M/(gr^2) = 0.783$. Metre stick: arms 30.0, 42.0 and 10.0 cm, $m_\text{k} = 114.3$ g.
+Every number in the changed lines was recomputed with an independent script (scratchpad fy9merge/sci_fi.py); `units.py hash` gave the same value at the start and the end. LaTeX in all added lines has balanced `$` and braces.

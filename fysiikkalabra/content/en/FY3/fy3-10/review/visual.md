@@ -1,16 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 77345b49fdf269d8
+CONTENT-HASH: 43e6c2262b5d5366
 
 ## Blocking
-- none
+None. Built preview/en/fy3-10.html and looked at 390 and 1280 px: formula tables (named rows, upright subscripts a, o, h, A), changed figures, opened solutions; no horizontal overflow; no leftover old symbols (L, P_0, P_hyöty, Q_sisälle, E_s, W_k) in the lesson, inquiry, exit ticket or exercises of this part.
 
 ## Polish
-- [Minor] fy3-10 sim, first moments after load or reset: no capture shows the axis before the first settled average (carried from round 1; judged from source and settled captures). Optional glance at the first second after a reset.
-- [Minor] Carried over: bar height and gauge needle keep moving while the number is hidden during settling; the readout says it is settling, so acceptable.
+none.
 
-## Checked
-- Delta round 2: the diff is one numeric field in `inquiry.json` (exp-2 question `tolerance` 0.02 to 0.1). No visible text, figure, formula or layout changed, so there is nothing new to capture. The tolerance is a hidden checking value, not shown to the student.
-- The previous visual PASS (sim captures `fy3-10-sim-390.png` and `fy3-10-sim-1280.png` opened in round 1) is unaffected, because the sim and text are untouched.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+(Captures: /tmp/claude-0/-home-user-hellsla-github-io/729392a7-96f2-578c-8869-36f18714a66f/scratchpad/review-fy3/)

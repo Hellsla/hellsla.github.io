@@ -42,7 +42,7 @@
 **Given:** read from the figure, $341\,\tfrac{\text{W}}{\text{m}^2}$ comes from the Sun and $102\,\tfrac{\text{W}}{\text{m}^2}$ of it is reflected; the mean temperature of the Earth stays constant
 **Find:** the power per square metre leaving into space as thermal radiation $P_\text{rad}$
 **Principle:** The temperature stays constant, so the Earth is in energy balance: the power it absorbs is equal to the thermal radiation leaving into space. The reflected radiation does not warm the Earth, so the absorbed part is the incoming power minus the reflected power.
-**Reading the graph:** The left arrow of the figure gives the incoming power $P_\text{in} = 341\,\tfrac{\text{W}}{\text{m}^2}$ and the upper right arrow the reflected power $P_\text{refl} = 102\,\tfrac{\text{W}}{\text{m}^2}$. The lower right arrow, whose value is a question mark, is the thermal radiation asked for.
+**Reading the graph:** The left arrow of the figure gives the incoming power $P_\text{in} = 341\,\tfrac{\text{W}}{\text{m}^2}$ and the arrow between the Sun and the Earth that points up and to the left the reflected power $P_\text{refl} = 102\,\tfrac{\text{W}}{\text{m}^2}$. The dashed arrow on the right, whose value is a question mark and which is labelled "heat radiation", is the thermal radiation asked for.
 **Formula:** $P_\text{abs} = P_\text{in} - P_\text{refl}$ and in balance $P_\text{rad} = P_\text{abs}$
 **Conversions:** Not needed: all the powers are in the unit $\tfrac{\text{W}}{\text{m}^2}$.
 **Substitution:** $P_\text{rad} = 341\,\tfrac{\text{W}}{\text{m}^2} - 102\,\tfrac{\text{W}}{\text{m}^2} = 239\,\tfrac{\text{W}}{\text{m}^2}$
@@ -216,12 +216,12 @@ From smallest to largest: door, roof, windows, wall. The U-value alone would giv
 **Reasonableness:** The U-value $0.70\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$ is about four times the U-value $0.17\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$ of a modern wall, which fits the weaker insulation of a log wall. The power through $10\,\text{m}^2$ is small because the area is small: $0.7 \cdot 10 \cdot 30 = 210\,\text{W}$.
 
 ## fy3-12-L2-09
-**Given:** read from the figure, $P_\text{in} = 341\,\tfrac{\text{W}}{\text{m}^2}$ comes from the Sun and $P_\text{refl} = 102\,\tfrac{\text{W}}{\text{m}^2}$ of it is reflected
-**Find:** the share of the incoming radiation that is reflected, as a percentage
-**Principle:** The share is found by comparing the reflected power with the incoming power over the same area. Both powers are given per square metre, so the units cancel.
-**Reading the graph:** The left arrow of the figure gives the incoming power $341\,\tfrac{\text{W}}{\text{m}^2}$ and the upper right arrow the reflected power $102\,\tfrac{\text{W}}{\text{m}^2}$. The question mark of the lower arrow is not needed.
-**Formula:** share $= \dfrac{P_\text{refl}}{P_\text{in}}$, and as a percentage $\dfrac{P_\text{refl}}{P_\text{in}} \cdot 100\,\%$
-**Conversions:** The quotient is a plain number, and multiplying it by $100\,\%$ gives the percentage. The powers need no conversion.
-**Substitution:** $\dfrac{102\,\tfrac{\text{W}}{\text{m}^2}}{341\,\tfrac{\text{W}}{\text{m}^2}} \cdot 100\,\% = 0.2991 \cdot 100\,\% = 29.9\,\%$
-**Answer:** $29.9\,\%$, three significant figures, as in the powers read, $341$ and $102$.
-**Reasonableness:** The share is close to a third: $0.30 \cdot 341\,\tfrac{\text{W}}{\text{m}^2} = 102.3\,\tfrac{\text{W}}{\text{m}^2}$. The result is below $100\,\%$, as it must be, because the reflected power is a part of the incoming power.
+**Given:** read from the figure, $P_\text{refl} = 102\,\tfrac{\text{W}}{\text{m}^2}$ is reflected; $A = 5.1 \cdot 10^{14}\,\text{m}^2$
+**Find:** the total power $P$ of the reflected radiation over the whole Earth, in petawatts
+**Principle:** The power in the figure is given per square metre, so the total power is found by multiplying it by the area. The power is a uniform average.
+**Reading the graph:** The arrow between the Sun and the Earth that points up and to the left gives the reflected power $102\,\tfrac{\text{W}}{\text{m}^2}$. The other arrows are not needed.
+**Formula:** $P = P_\text{refl}\,A$
+**Conversions:** $1\,\text{PW} = 10^{15}\,\text{W}$, so the value in watts is divided by $10^{15}$.
+**Substitution:** $P = 102\,\tfrac{\text{W}}{\text{m}^2} \cdot 5.1 \cdot 10^{14}\,\text{m}^2 = 5.202 \cdot 10^{16}\,\text{W} = \dfrac{5.202 \cdot 10^{16}\,\text{W}}{10^{15}\,\text{W/PW}} = 52.02\,\text{PW}$
+**Answer:** $P \approx 52\,\text{PW}$, two significant figures, as in the area $5.1 \cdot 10^{14}\,\text{m}^2$.
+**Reasonableness:** Order of magnitude: $100 \cdot 5 \cdot 10^{14}\,\text{W} = 5 \cdot 10^{16}\,\text{W}$, which is $50\,\text{PW}$, so it agrees. Back-calculation: $\dfrac{5.2 \cdot 10^{16}\,\text{W}}{5.1 \cdot 10^{14}\,\text{m}^2} \approx 102\,\tfrac{\text{W}}{\text{m}^2}$.

@@ -428,8 +428,8 @@ This gives the answer to the opening question. The engine turns the driving whee
 
 ## Formula: Newton's second law
 Newton's second law, also called the fundamental law of dynamics, gathers the observations into one equation:
-```latex
-\Sigma\overline{F} = m\overline{a}
+```kaavat
+Newton's second law (fundamental law of dynamics) :: \Sigma\overline{F} = m\overline{a}
 ```
 where $\Sigma\overline{F}$ is the vector sum of the forces acting on the object, the net force ($\text{N}$), $m$ is the mass of the object ($\text{kg}$) and $\overline{a}$ is its acceleration ($\text{m/s}^2$). The unit of force is defined by this law: one newton is the force that gives a mass of one kilogram an acceleration of $1\,\text{m/s}^2$. So $1\,\text{N} = 1\,\text{kg}\cdot\text{m/s}^2$.
 

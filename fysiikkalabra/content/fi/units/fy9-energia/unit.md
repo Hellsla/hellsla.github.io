@@ -211,7 +211,7 @@ Kaikki tämän tunnin tehtävät lähtevät samasta periaatteesta: **energia sä
 
 Säilymislaista haarautuu kolme kysymystä, joihin kokeen energiatehtävät palautuvat. **Kuinka nopeasti** energiaa muuttuu? Sen kertoo teho. **Kuinka suuri osa** tulee hyödyksi? Sen kertoo hyötysuhde. **Mistä** energia tulee? Polttoaineen lämpöarvosta, voiman tekemästä työstä tai virtaavasta vedestä, tuulesta ja auringosta.
 
-<svg data-fig="kartta" viewBox="0 0 380 596" role="img" aria-label="Käsitekartta. Ylhäällä solmu energia säilyy: E alussa on yhtä suuri kuin E lopussa. Siitä lähtee alas kolme haaraa. Teho: P = ΔE / Δt, energia tehosta E = P t ja kilowattitunti 1 kWh = 3,6 MJ. Hyötysuhde: eeta = E a / E o, häviöt E o = E a + E h ja energiaketju, jossa eeta on vaiheiden hyötysuhteiden tulo eeta 1 eeta 2 eeta 3. Energian lähde: polttoaine Q = H m, työ W = F s ja nostotyö W = m g h." style="max-width:100%;font-size:21px">
+<svg data-fig="kartta" viewBox="0 0 380 596" role="img" aria-label="Käsitekartta. Ylhäällä solmu energia säilyy: E alussa on yhtä suuri kuin E lopussa. Siitä lähtee alas kolme haaraa. Teho: P = ΔE / Δt, energia tehosta E = P t ja kilowattitunti 1 kWh = 3,6 MJ. Hyötysuhde: eeta = W a / W o, häviöt W o = W a + W h ja tehoista eeta = P a / P o. Energian lähde: polttoaine Q = H m, työ W = F s ja nostotyö W = m g h." style="max-width:100%;font-size:21px">
   <line x1="24" y1="80" x2="24" y2="454" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
   <foreignObject x="115" y="16.5" width="150" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:21px">$\text{energia säilyy}$</div></foreignObject>
@@ -230,12 +230,12 @@ Säilymislaista haarautuu kolme kysymystä, joihin kokeen energiatehtävät pala
   <rect x="44" y="266" width="328" height="150" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
   <foreignObject x="58" y="275.5" width="128" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\textbf{hyötysuhde}$</div></foreignObject>
   <line x1="54" y1="308" x2="362" y2="308" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="319.5" width="84" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\eta = E_\text{a}/E_\text{o}$</div></foreignObject>
+  <foreignObject x="58" y="319.5" width="84" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\eta = W_\text{a}/W_\text{o}$</div></foreignObject>
   <foreignObject x="260" y="321" width="102" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{määritelmä}$</div></foreignObject>
-  <foreignObject x="58" y="353.5" width="95" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$E_\text{o} = E_\text{a} + E_\text{h}$</div></foreignObject>
+  <foreignObject x="58" y="353.5" width="95" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$W_\text{o} = W_\text{a} + W_\text{h}$</div></foreignObject>
   <foreignObject x="298" y="355" width="64" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{häviöt}$</div></foreignObject>
-  <foreignObject x="58" y="387.5" width="117" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\eta = \eta_1\,\eta_2\,\eta_3$</div></foreignObject>
-  <foreignObject x="242" y="389" width="120" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{energiaketju}$</div></foreignObject>
+  <foreignObject x="58" y="387.5" width="84" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\eta = P_\text{a}/P_\text{o}$</div></foreignObject>
+  <foreignObject x="279" y="389" width="83" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{tehoista}$</div></foreignObject>
   <line x1="24" y1="454" x2="44" y2="454" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="44" y="432" width="328" height="150" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
   <foreignObject x="58" y="441.5" width="161" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\textbf{energian lähde}$</div></foreignObject>
@@ -258,8 +258,8 @@ Tästä saadaan myös vastaus alun kysymykseen. Kymmenessä litrassa bensiiniä 
 
 Eristetyssä systeemissä, johon energiaa ei tule eikä josta sitä lähde, kokonaisenergia pysyy samana:
 
-```kaavat
-energian säilymislaki :: E_\text{alussa} = E_\text{lopussa}
+```latex
+E_\text{alussa} = E_\text{lopussa}
 ```
 
 missä kumpikin puoli on kaikkien energialajien summa, myös lämpöenergian. Teho on muuntunut tai siirtynyt energia aikaa kohti:
@@ -270,25 +270,19 @@ teho :: P = \frac{\Delta E}{\Delta t}
 
 missä $P$ on teho (W), $\Delta E$ energia (J) ja $\Delta t$ aika (s). Epätasaisessa käytössä kaava antaa keskitehon; tasaisella teholla $E = P\,t$. Kilowattitunti on energian yksikkö, ja sen muunnos tehdään sijoittamalla:
 
-```kaavat
-kilowattitunti jouleina :: 1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}
+```latex
+1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}
 ```
 
 ### Hyötysuhde ja energiaketju
 
 ```kaavat
-hyötysuhde :: \eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}
+hyötysuhde :: \eta = \frac{W_\text{a}}{W_\text{o}} = \frac{P_\text{a}}{P_\text{o}}
 ```
 
-missä $\eta$ on hyötysuhde, $E_\text{a}$ ja $P_\text{a}$ annettu hyötyenergia ja -teho ja $E_\text{o}$ ja $P_\text{o}$ otettu energia ja teho. Tehojen suhde käy, kun laite käy tasaisesti. Energia säilyy, joten $E_\text{o} = E_\text{a} + E_\text{h}$, missä $E_\text{h}$ on häviöt. Hyötysuhde on enintään $100\,\%$; se riippuu siitä, mikä määritellään hyödyksi.
+missä $\eta$ on hyötysuhde, $W_\text{a}$ ja $P_\text{a}$ annettu hyötyenergia ja -teho ja $W_\text{o}$ ja $P_\text{o}$ otettu energia ja teho. Tehojen suhde käy, kun laite käy tasaisesti. Energia säilyy, joten $W_\text{o} = W_\text{a} + W_\text{h}$, missä $W_\text{h}$ on häviöt. Hyötysuhde on enintään $100\,\%$; se riippuu siitä, mikä määritellään hyödyksi.
 
-Peräkkäisissä vaiheissa kunkin vaiheen hyötyteho on seuraavan otettu teho, joten hyötysuhteet kerrotaan:
-
-```kaavat
-energiaketjun kokonaishyötysuhde :: \eta = \eta_1\,\eta_2\,\eta_3
-```
-
-Kuvan esimerkkilaitoksessa $\eta = 0{,}90 \cdot 0{,}45 \cdot 0{,}98 \approx 0{,}40$: polttoainetehosta $500\,\text{MW}$ tulee sähköksi $198\,\text{MW}$. Kaistojen leveydet ovat mittakaavassa, ja lähtevät kaistat ovat yhteensä yhtä leveät kuin tuleva.
+Energiaketjussa on peräkkäisiä vaiheita, ja kunkin vaiheen antama hyötyteho on seuraavan vaiheen ottama teho. Kuvan esimerkkilaitoksessa vaiheita on kolme, ja niiden hyötysuhteet ovat $\eta_1$, $\eta_2$ ja $\eta_3$. Polttoainetehosta $500\,\text{MW}$ tulee sähköksi $198\,\text{MW}$, joten koko laitoksen hyötysuhde on $\eta = \tfrac{198\,\text{MW}}{500\,\text{MW}} \approx 0{,}40$. Kaistojen leveydet ovat mittakaavassa, ja lähtevät kaistat ovat yhteensä yhtä leveät kuin tuleva.
 
 <svg data-fig="ketju" viewBox="0 0 420 476" role="img" aria-label="Energiavirtakuvio mittakaavassa lauhdevoimalaitoksesta. Vasemmalta tulee polttoaineteho 500 MW leveänä harmaana kaistana. Ensimmäisessä vaiheessa, kattilassa, hyötysuhde on 0,90: kaistasta kääntyy alas oranssi häviökaista 50 MW, ja jäljelle jää 450 MW. Toisessa vaiheessa, höyrykierrossa, hyötysuhde on 0,45: alas kääntyy leveä häviökaista 248 MW, ja jäljelle jää 203 MW. Kolmannessa vaiheessa, generaattorissa ja muuntajassa, hyötysuhde on 0,98 ja häviö vain 4 MW. Oikealle lähtee vihreä sähkön kaista, 198 MW eli noin 40 prosenttia polttoainetehosta. Häviöt muuttuvat hukkalämmöksi." style="max-width:100%;font-size:20px">
   <defs><linearGradient id="fy9en-in" gradientUnits="userSpaceOnUse" x1="8" y1="0" x2="298" y2="0"><stop offset="0" stop-color="#e3dccb"/><stop offset="1" stop-color="#c9c2b2"/></linearGradient><linearGradient id="fy9en-ok" gradientUnits="userSpaceOnUse" x1="298" y1="0" x2="408" y2="0"><stop offset="0" stop-color="#b2f2bb"/><stop offset="1" stop-color="#2b8a3e"/></linearGradient><linearGradient id="fy9en-heat" gradientUnits="userSpaceOnUse" x1="0" y1="56" x2="0" y2="316"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
@@ -322,6 +316,24 @@ Kuvan esimerkkilaitoksessa $\eta = 0{,}90 \cdot 0{,}45 \cdot 0{,}98 \approx 0{,}
   <foreignObject x="8" y="404" width="146" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\eta_2\ \text{höyrykierto}$</div></foreignObject>
   <foreignObject x="8" y="432" width="261" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\eta_3\ \text{generaattori ja muuntaja}$</div></foreignObject>
 </svg>
+
+```johda
+Energiaketjussa on kolme peräkkäistä vaihetta, joiden hyötysuhteet ovat $\eta_1$, $\eta_2$ ja $\eta_3$. Johda koko ketjun hyötysuhde $\eta$ vaiheiden hyötysuhteiden avulla.
+---
+Koko ketjun hyötysuhde on hyötysuhteen määritelmän mukaan $\eta = \tfrac{P_\text{a}}{P_\text{o}}$, missä $P_\text{o}$ on ensimmäisen vaiheen ottama teho ja $P_\text{a}$ viimeisen vaiheen antama hyötyteho. Merkitään vaiheiden antamia tehoja $P_1$, $P_2$ ja $P_3 = P_\text{a}$. Hyötysuhteesta saadaan kunkin vaiheen antama teho sen ottamasta tehosta, ja vaiheen ottama teho on edellisen vaiheen antama teho:
+
+$$P_1 = \eta_1 P_\text{o}, \quad P_2 = \eta_2 P_1, \quad P_3 = \eta_3 P_2$$
+
+Sijoitetaan tehot peräkkäin:
+
+$$P_\text{a} = P_3 = \eta_3\,\eta_2\,\eta_1\,P_\text{o}$$
+
+Jaetaan otetulla teholla:
+
+$$\eta = \frac{P_\text{a}}{P_\text{o}} = \eta_1\,\eta_2\,\eta_3$$
+
+Hyötysuhteet kerrotaan. Jokainen niistä on alle $1$, joten koko ketjun hyötysuhde on pienempi kuin minkään yksittäisen vaiheen.
+```
 
 ### Energian lähteet
 

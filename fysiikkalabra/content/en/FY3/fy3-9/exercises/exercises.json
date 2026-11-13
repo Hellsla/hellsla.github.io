@@ -313,6 +313,18 @@
           "feedback": "Here the pressure falls together with the volume, as if $p$ were directly proportional to the volume $V$. In Boyle's law the dependence is inverse: when the volume decreases, the pressure increases."
         }
       ]
+    },
+    {
+      "id": "fy3-9-L2-09",
+      "level": 2,
+      "text": "A closed rigid container holds air, and the volume of the container and the amount of air stay the same. The graph shows example data: the pressure $p$ of the air as a function of the kelvin temperature $T$ while the container is heated. What is the pressure of the air when the temperature of the container is $100\\,{}^\\circ\\text{C}$? Read the value you need from the graph and give the answer in kilopascals.",
+      "figure": "fy3-9/kelvin-points",
+      "kind": [
+        "graph"
+      ],
+      "answer": 149,
+      "unit": "kPa",
+      "tolerance": 0.02
     }
   ],
   "level3": [

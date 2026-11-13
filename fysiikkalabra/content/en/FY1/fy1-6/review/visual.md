@@ -1,13 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: edb7f1186c0935a8
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: 7af8b62262faa07e
 
 ## Blocking
-- none
+None. Built preview/en/fy1-6.html and looked at 390 and 1280 px: formula tables (named rows, upright subscripts a, o, h, A), changed figures, opened solutions; no horizontal overflow; no leftover old symbols (L, P_0, P_hyöty, Q_sisälle, E_s, W_k) in the lesson, inquiry, exit ticket or exercises of this part.
 
 ## Polish
-- fy1-5 figure: the two lines are told apart by colour and the end labels; the alt text does not name colours, so nothing to change.
+none.
 
-## Checked
-- g\,t spacing in title, meta.json, exit-ticket, inquiry.json, lesson.md heading: consistent everywhere; KaTeX-valid; no figure change
-- Changes mirror the Finnish fix in en; no notation, unit or decimal-comma error introduced.
+(Captures: /tmp/claude-0/-home-user-hellsla-github-io/729392a7-96f2-578c-8869-36f18714a66f/scratchpad/review-fy3/)

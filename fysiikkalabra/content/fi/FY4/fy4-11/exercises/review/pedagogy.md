@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 3a2e90bccdbd2345
+CONTENT-HASH: 2f7544a1c68c1bc4
+SCOPE: delta added-exercise from 3a2e90bccdbd2345 base 81db4a6fd727
 
 ## Blocking
+None.
 
 ## Polish
-- Correct option's feedback is still the shortest (about 140 characters vs 167-230); optional, add the "Δv x2, Δt x4" reasoning.
+1. solutions.md fy4-11-L3-06 Vastaus - capital after the comma ('10,5 kN, Massa ...'); write '10,5 kN. Massa ...'. Optional.
 
 ## Checked
-- Round 2, text only; no render, widths not measured.
-- "kerrotaan luvulla" is now "muuttuu kertoimella 2 : 4 = 0,50" in the solution and the correct feedback.
-- Closing sentences are limited to the example tests and add the same-car statement (F proportional to v when the stopping time is unchanged); true, and distinct from the braking-distance v-squared rule. Numbers (17 kN, 8,7 kN) still right.
-- Direction A to B stated, factors in every option; distractors unchanged and right.
-- Hash at start 3a2e90bccdbd2345, at end 3a2e90bccdbd2345.
+- Round 2, delta: the round-1 fixes judged in their context.
+- L1-09 now has a real paragraph break; the answer reads 31 m with the range 0,5 to 0,8 stated correctly (50 m at the other end); liukukitkakerroin kept as the teacher's choice.
+- L2-09 (45 m) and L3-06 (10,5 kN) unchanged and correct; two figure tasks, descriptions give no answers.
+- No new task, figure or level change; set mix and counts unchanged from the passed version.
+- Language and case endings in the changed text are correct.

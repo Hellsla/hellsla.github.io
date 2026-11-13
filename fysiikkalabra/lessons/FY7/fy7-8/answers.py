@@ -40,4 +40,9 @@ P0 = 0.6                                            # idle loss, kW (row P_out =
 a5 = (81.9 - 80.0 - P0) / 80.0 ** 2                 # a = (P_h - P0) / P_out² = 2,03e-4 1/kW from the 80 kW row
 a["fy7-8-L3-05"] = (P0 / a5) ** 0.5                 # P0 = a P²: P = sqrt(P0 / a) = 54,35 kW
 # L1-06 (multiple choice) has no number
+# figure fy7-8/loss-graph-curve: the curve passes the grid point (200 kV; 3,0 %) at P = 200 MW
+sh = 3.0 / 100                                      # read share P_h : P = 3,0 %
+Ph9 = sh * 200e6                                    # P_h = 6,0 MW
+I9 = 200e6 / 200e3                                  # I = P / U = 1000 A
+a["fy7-8-L2-09"] = Ph9 / I9 ** 2                    # R = P_h / I² = 6,0 Ω (= s U² / P)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

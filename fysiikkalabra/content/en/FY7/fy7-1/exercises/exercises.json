@@ -282,6 +282,24 @@
       "answer": 65.0,
       "unit": "°",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-1-L2-08",
+      "level": 2,
+      "text": "The figure shows a grid with squares of $5\\,\\mu\\text{T}$. The compass is at the origin of the grid. The horizontal component $\\overline{B}_\\text{h}$ of the Earth's magnetic field points north and the field $\\overline{B}_\\text{m}$ of a magnet on the table points east. Both are drawn as arrows whose length shows the magnitude of the field.\n\na) Read the magnitudes $B_\\text{h}$ and $B_\\text{m}$ of the fields from the figure.\n\nb) Calculate the total field $B$ and the angle through which the compass needle turns from north towards east.\n\nGive the angle of the needle in degrees in the answer field.",
+      "figure": "fy7-1/sum-grid",
+      "answer": 53.1,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-1-L2-09",
+      "level": 2,
+      "text": "The figure shows the Earth's magnetic field seen from the side. The horizontal axis points north and the vertical axis down, and a square is $5\\,\\mu\\text{T}$. The arrow $\\overline{B}$ starts at the ground, and its length shows the magnitude of the field.\n\na) Read the horizontal component $B_\\text{h}$ and the vertical component $B_\\text{v}$ of the field from the figure.\n\nb) Calculate the magnetic flux density $B$ and the angle $I$ between the field and the horizontal, that is, the inclination.\n\nGive $B$ in microteslas in the answer field.",
+      "figure": "fy7-1/incl-grid",
+      "answer": 52.2,
+      "unit": "µT",
+      "tolerance": 0.02
     }
   ],
   "level3": [

@@ -441,9 +441,23 @@ def hero():
     return f.svg()
 
 
+def ex_kuorma():
+    f = Fig("fy615-ex-kuorma", 360, "Kuvaaja mittakaavassa, mitattu aineisto: keittiön pistorasiaryhmän laitteiden yhteisteho P watteina "
+            "ajan t funktiona minuutteina 30 minuutin ajan. Ruudukon välit ovat 5 min ja 1000 W. Teho on porrasfunktio: "
+            "0–4 min 1000 W, 4–10 min 3000 W, 10–16 min 4000 W, 16–24 min 2000 W ja 24–30 min 3500 W.")
+    ax = Axes(f, (96, 310), (480, 64), x=(0, 30), y=(0, 4500), xticks=list(range(5, 31, 5)), yticks=[1000 * k for k in range(1, 5)],
+              xlabel=r"t\ (\text{min})", ylabel=r"P\ (\text{W})", yfmt=lambda v: fi(v))
+    steps = [(0, 1000), (4, 3000), (10, 4000), (16, 2000), (24, 3500), (30, 3500)]
+    pts = [(0, 1000)]
+    for (t0, p0), (t1, p1) in zip(steps, steps[1:]):
+        pts += [(t1, p0), (t1, p1)]
+    ax.line(pts, INK, 3)
+    return f.svg()
+
+
 FIGURES = {"hero": hero, "ryhma": ryhma, "pistorasia": pistorasia, "maadoitus": maadoitus, "luokat": luokat,
            "vikavirtasuoja": vikavirtasuoja, "askel": askel, "vaikutukset": vaikutukset, "ex-askel": ex_askel,
-           "merkki-1": lambda: merkki(1), "merkki-2": lambda: merkki(2), "merkki-3": lambda: merkki(3)}
+           "merkki-1": lambda: merkki(1), "merkki-2": lambda: merkki(2), "merkki-3": lambda: merkki(3), "ex-kuorma": ex_kuorma}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "hero": "decorative",
@@ -458,4 +472,5 @@ REUSE = {
     "merkki-1": "safe: the class I symbol (earth in a circle) without its name",
     "merkki-2": "safe: the class II symbol (two nested squares) without its name",
     "merkki-3": "safe: the class III symbol (III in a diamond) without its name",
+    "ex-kuorma": "safe: measured group load P(t) as a step graph on a 5 min and 1000 W grid; no current and no fuse limit drawn",
 }

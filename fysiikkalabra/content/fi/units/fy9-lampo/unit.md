@@ -156,8 +156,8 @@ Kokeessa seuraa ensin energiaa: mistä se lähtee, mihin se menee ja muuttuuko o
 
 ### Lämpötila ja sisäenergia
 
-```kaavat
-lämpötila kelvineinä :: T = \theta + 273{,}15
+```latex
+T = \theta + 273{,}15
 ```
 
 missä $T$ on lämpötila kelvineinä ($\text{K}$) ja $\theta$ celsiusasteina (${}^\circ\text{C}$). Lämpötilaero on sama kelvineinä ja celsiusasteina, mutta lämpötilojen suhteet lasketaan kelvineinä. Sisäenergiaa muuttavat lämpö ja työ:
@@ -258,8 +258,8 @@ Tästä saadaan vastaus alun kysymykseen. Kilogramman lumen lämmittäminen $-10
 
 Eristetyssä astiassa energia säilyy:
 
-```kaavat
-lämpötase :: Q_\text{luovutettu} = Q_\text{vastaanotettu}
+```latex
+Q_\text{luovutettu} = Q_\text{vastaanotettu}
 ```
 
 Kun jäätä ja vettä sekoitetaan, verrataan ensin, riittääkö lämpö, jonka vesi luovuttaa jäähtyessään $0\,{}^\circ\text{C}$:seen, lämmittämään jään $0\,{}^\circ\text{C}$:seen ja sulattamaan sen. Jos riittää, kaikki jää sulaa ja lopputila on vähintään $0\,{}^\circ\text{C}$. Jos ei riitä, jäätä jää jäljelle ja lämpötila on tasan $0\,{}^\circ\text{C}$. Hyvin kylmä jää voi myös jäädyttää osan vedestä tai kaiken veden.
@@ -275,8 +275,8 @@ missä $\alpha$ ja $\gamma$ ovat pituuden ja tilavuuden lämpötilakertoimet ($1
 
 Lämpö siirtyy johtumalla, konvektiona ja säteilynä, nettomääräisesti lämpimämmästä kappaleesta kylmempään. Rakennusosan läpi johtuva teho on
 
-```kaavat
-rakennusosan läpi johtuva lämpöteho :: P = UA\Delta T
+```latex
+P = UA\Delta T
 ```
 
 missä $U$ on U-arvo ($\text{W/(m}^2\cdot\text{K)}$), $A$ pinta-ala ($\text{m}^2$) ja $\Delta T$ sisä- ja ulkolämpötilan ero ($\text{K}$). Kaava pätee, kun lämpötilat pysyvät vakioina.

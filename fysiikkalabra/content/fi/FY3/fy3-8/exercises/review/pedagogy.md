@@ -1,10 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 77b4b5a62a82d3a0
+CONTENT-HASH: d0fce7c73b66e64e
+SCOPE: delta added-exercise from bd98847c91c69f13 base 5453544b2abc
+
 ## Blocking
-(none)
+None.
+
 ## Polish
-- (carried, optional) name the material of the rods in the first sentence of the stem.
+1. fy3-8-L1-09 — kiskon 25 m / 50 K toistaa L2-03:n ja L3-04:n kisko-aiheen; vaihda esim. alumiinitikkaisiin tai kuparijohtoon, jos halutaan vaihtelua.
+2. fy3-8-L2-09 — "Missä lämpötilassa palkki on 2,0 mm pidempi" on kuvaajalukutehtävä; vastaus 53,3 °C on annettu kolmella numerolla, vaikka ratkaisun "Vastaus" sanoo 53 °C. Yhtenäistä (53 °C, toleranssi riittää).
+
 ## Checked
-- Round-1 wording error fixed: "Kolminkertainen muutos saataisiin vain, jos sauvat olisivat yhtä pitkiä." now says what is meant; the added "vaikka sen alkupituus on vain puolet" is correct.
-- Options, answer and arithmetic unchanged.
-- Round 2. Checked from text (the diff of 6bbde30c5 against my round-1 findings); no capture was re-opened, so the 390 px fit of the new display blocks and shortened chains is judged from text only.
+- L1-09: taso 1 (yksi kaava, yksi haku MAFY-taulukosta), vihje vain taulukon nimi, kysymys viimeisenä; 12·10^-6·25·50 = 15 mm oikein.
+- Ratkaisu etenee periaate, kaava, muunnos, sijoitus, järkevyys; seuraa ilman ohitettuja askelia.
+- L2-09: kuvaaja tarvitaan (päätepisteet luetaan), kuvaus antaa samat arvot eikä paljasta vastausta eikä materiaalia.
+- Laskenta 3,0/50 = 0,060 mm/K, 2,0/0,060 = 33,3 K, 53,3 °C; toleranssi 3 % vastaa ratkaisun 51,7...54,9.
+- Ei toista esimerkkiä (silta); L2-09 eroaa L2-04:stä lukemalla kuvaajasta.
+- Suomi: asteen/kelvinin käyttö ja yksiköt kunnossa.

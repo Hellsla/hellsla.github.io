@@ -204,14 +204,30 @@ def scene():
     return f.svg()
 
 
+def loss_graph_curve():
+    """Task figure: the loss share of a 200 MW line against the transmission voltage, the curve only (no marked points,
+    no values, no R), a fine grid of 25 kV and 1 %. The curve passes the grid point (200 kV; 3,0 %)."""
+    f = Fig("fy78-loss-graph-curve", 340, "Kuvaaja mittakaavassa: siirtojohdossa lämmöksi muuttuvan tehon osuus siirretystä "
+            "tehosta prosentteina siirtojännitteen funktiona kilovoltteina, kun siirretty teho on 200 MW "
+            "yksinkertaistetussa kaksijohtimisessa mallissa. Laskeva käyrä alkaa jännitteestä 70 kV ja päättyy "
+            "jännitteeseen 400 kV, ja se kulkee ruudukon pisteen (200 kV; 3,0 %) kautta. Ruudukon väli on 25 kV ja 1 %.")
+    ax = Axes(f, (96, 290), (470, 60), x=(0, 400), y=(0, 25), xticks=[25 * k for k in range(1, 17)],
+              yticks=[k for k in range(1, 25)], xlabel=r"U\ (\text{kV})", ylabel=r"P_\text{h} : P\ (\%)",
+              xfmt=lambda v: fi(v) if v % 100 == 0 else "", yfmt=lambda v: fi(v) if v % 5 == 0 else "")
+    ax.curve(lambda u: 6.0 * 200e6 / (u * 1e3) ** 2 * 100, 70, 400, HEAT, 3)
+    f.tex(470, 92, r"P = 200\,\text{MW}", "end", w=170)
+    return f.svg()
+
+
 GOOD_FILL = "#2b8a3e"
 
 FIGURES = {"hero": hero, "transformer": transformer, "grid": grid, "loss-graph": loss_graph, "scene": scene,
-           "loss-current": loss_current}
+           "loss-current": loss_current, "loss-graph-curve": loss_graph_curve}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "transformer": "reveals: the changing flux in the iron core links the primary and secondary coils",
     "grid": "reveals: the voltage levels of the grid (20 kV, 400 kV, 20 kV, 230 V) and where transformers sit",
     "loss-graph": "reveals: the loss share falls as 1/U² (12 %, 3,0 %, 0,75 % at 100, 200, 400 kV for 200 MW and 6,0 Ω)",
     "loss-current": "safe: heating power P_h of a model line against I with a fitted parabola through (5,0 A; 20 W), no R",
+    "loss-graph-curve": "safe: loss share of a 200 MW model line against U as a bare curve through the grid point (200 kV; 3,0 %), no R, no marked values",
 }

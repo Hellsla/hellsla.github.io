@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 7389316f4c7535ae
-
+CONTENT-HASH: 21c0771bd024b3c4
 ## Blocking
 
 ## Polish
-- 'moving box' (muuttolaatikko) can be misread as 'a box in motion' in the opening Miksi question; a teacher may prefer 'removal box' or 'packing box'. Left as is, since the context (stays in place on the ramp) makes it clear.
-
+1. lesson.md, Kaava: $F_{\mu 0}$ now stands for the static friction ($\le \mu_0 N$) and for its limiting value ($= \mu_0 N$). The sentence before says it; optionally write "juuri ennen liukumista" into the line after the equality so no one reads $F_{\mu 0} = \mu_0 N$ as always true.
 ## Checked
-Compared lesson.md (text, worked example's seven stages, formulas), inquiry.json (every hint, feedback, solution, model answer), exit-ticket, meta and the figure texts with the Finnish; every number matches (only SVG coordinates differ).
-Terms are weight, normal force, static/kinetic friction, tension, buoyancy, drag, net force, free-body diagram; no Finnish in text or figure labels; decimal point everywhere.
-check_i18n, check_latex (715 fragments), figures.py --check --lang en and check_layout at 360 and 1280 px are clean. No edits were needed.
-
-Delta review: leftover Finnish words in en names/labels/sim bar labels/figure caption are now English and match the Finnish meaning; no blocking issue.
+- $G = mg$, $F_\mu = \mu N$, $F_{\mu 0} \le \mu_0 N$ and the new $F_{\mu 0} = \mu_0 N$ (lähtökitka / limiting static friction: greatest static friction just before sliding) are right and MAFY's; symbols and units defined above.
+- Tilt experiment $\mu_0 = \tan\alpha_0$ consistent with the limit; nothing else changed in the physics; fi, fi-easy, en agree.

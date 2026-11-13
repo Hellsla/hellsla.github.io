@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 46b679ba15af019c
-
+CONTENT-HASH: af340b69e0e4d6ab
+SCOPE: delta added-exercise from 0402e8c61e005ae8 base 7db0992d648a
 ## Blocking
 
 ## Polish
-- None.
-
-## Fixed
-- No text change needed in this translation.
+- content/en/FY4/fy4-1/exercises/solutions.md:269 — L2-09 Answer says the time $6.0\,\text{s}$ is "read from the graph", but the task text gives it; only the velocities are read (same in the Finnish) — "the velocities read from the graph and the given time $6.0\,\text{s}$ have two figures".
 
 ## Checked
-- New task fy4-1-L1-09 (graph choice: x0 = 6.0 m, v = -1.0 m/s, x(4.0 s) = 2.0 m; options A-D with figures pick-rising/origin/falling/flat) compared with the reviewed Finnish: same id, level, kind, answer, tolerance, correct flags, choice and reason order, every number and formula.
-- Recomputed the physics: x = 6.0 + (-1.0)(4.0) = 2.0 m; A grows, B starts at origin, D horizontal at -1 m, C only correct.
-- solutions.md block matches the Finnish step by step (same equations and numbers).
-- figures.json: all four pick-* descriptions give the same axes (t 0-5 s, x -6...12 m) and endpoints as the Finnish (6->10, 0->-4, 6->2, -1 flat) and match figures.py; none names the answer
-- check_i18n shows nothing for fy4-1; build.py fy4-1 succeeds.
+- Round 2 diff: L2-08 symbol $v_\text{av}$ → $v_\text{sp}$ (average speed, kept apart from average velocity), used consistently in Find, Formula and Substitution; the Finnish uses $v_\text{kv}$ in the same three places.
+- L2-08 recomputed: $s = 12 + 0 + 8 = 20\,\text{m}$, $v_\text{sp} = 2.0\,\text{m/s}$; average velocity $0.4\,\text{m/s}$ check right.
+- L2-09 recomputed: $v_\text{A} = +2.0$, $v_\text{B} = -2.0\,\text{m/s}$, $d = |16 - 8| = 8\,\text{m}$; the significant-figure reason now matches the Finnish ("luettu kuvaajasta").
+- answers.py run: every numeric answer equals exercises.json.
+- Script comparison with content/fi for all 23 tasks: answers, units, tolerances, figures and every number in the texts and solutions.md identical.

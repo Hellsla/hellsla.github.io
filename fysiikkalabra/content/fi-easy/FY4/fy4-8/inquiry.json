@@ -130,7 +130,7 @@
       "text": "Simulaatiossa vuoristoradan vaunu rullaa laakson läpi. Vasemmalla on tilannekuva mittatolppineen. Oikealla ovat vaunun energiat palkkeina samassa mittakaavassa.",
       "howto": "Valitse lähtökorkeus $h_1$, vastusvoima $F_\\text{vast}$, vaunun massa ja radan muoto. Paina *Käynnistä*. Vaunu lähtee levosta ja liikkuu, kunnes se pysähtyy ensimmäisen kerran. Silloin lukemiin tulevat kaksi arvoa. Toinen on nopeus laakson pohjan keskellä $v_\\text{pohja}$. Toinen on korkeus $h_2$, jolle vaunu nousi. *Alusta* palauttaa vaunun lähtökohtaan. *Nopeus* hidastaa tai nopeuttaa liikettä, mutta lukemat eivät muutu.",
       "model": "Arvot ovat simulaation laskemia mallin arvoja. Vaunu on pistemäinen kappale, joka pysyy radalla. Laakson pohja on $6\\,\\text{m}$ pitkä ja vaakasuora. Rinteet ovat joko $21\\,\\text{m}$:n säteisiä kaaria tai suoria $45^\\circ$:n rinteitä. Suoran rinteen ja pohjan liitoskohta oletetaan niin loivasti pyöristetyksi, ettei vaunun nopeus muutu siinä. Vastusvoima $F_\\text{vast}$ kuvaa vierimisvastusta ja ilmanvastusta yhdessä. Se on vakiosuuruinen ja osoittaa aina liikettä vastaan. Radan tukivoima on kohtisuorassa liikettä vastaan, joten se ei tee työtä.",
-      "calc": "Vaunun liike lasketaan Newtonin toisesta laista radan suunnassa pienin aika-askelin. Energiat lasketaan vaunun tilasta. Potentiaalienergia on $E_\\text{p} = mgh$, missä $h$ on korkeus laakson pohjasta. Liike-energia on $E_\\text{k} = \\tfrac{1}{2} mv^2$, ja $g = 9{,}81\\,\\text{m/s}^2$. Mekaaninen energia on $E_\\text{mek} = E_\\text{k} + E_\\text{p}$, ja $\\Delta E_\\text{mek}$ on sen muutos lähtöhetkestä. Vastusvoiman työ lasketaan määritelmästä $W_\\text{muut} = -F_\\text{vast}\\,s$, missä $s$ on radalla kuljettu matka. Palkeissa $W_\\text{muut}$ on negatiivinen, joten se piirretään nollatasosta alaspäin."
+      "calc": "Vaunun liike lasketaan Newtonin toisesta laista radan suunnassa pienin aika-askelin. Energiat lasketaan vaunun tilasta. Potentiaalienergia on $E_\\text{p} = mgh$, missä $h$ on korkeus laakson pohjasta. Liike-energia on $E_\\text{k} = \\tfrac{1}{2} mv^2$, ja $g = 9{,}81\\,\\text{m/s}^2$. Mekaaninen energia on $E_\\text{mek} = E_\\text{k} + E_\\text{p}$, ja $\\Delta E_\\text{mek}$ on sen muutos lähtöhetkestä. Vastusvoiman työ lasketaan määritelmästä $W = -F_\\text{vast}\\,s$, missä $s$ on radalla kuljettu matka. Palkeissa $W$ on negatiivinen, joten se piirretään nollatasosta alaspäin."
     },
     {
       "id": "exp-1",
@@ -240,7 +240,7 @@
           {
             "text": "$\\Delta E_\\text{mek} = -F_\\text{vast}\\,s$: mekaaninen energia pienenee vastusvoiman työn verran.",
             "correct": true,
-            "feedback": "Oikein. Esimerkiksi mallin arvoilla $200\\,\\text{N} \\cdot 45{,}9\\,\\text{m} = 9{,}19\\,\\text{kJ}$ ja $\\Delta E_\\text{mek} = -9{,}19\\,\\text{kJ}$. Tämä on energiaperiaate: $\\Delta E_\\text{mek} = W_\\text{muut}$."
+            "feedback": "Oikein. Esimerkiksi mallin arvoilla $200\\,\\text{N} \\cdot 45{,}9\\,\\text{m} = 9{,}19\\,\\text{kJ}$ ja $\\Delta E_\\text{mek} = -9{,}19\\,\\text{kJ}$. Tämä on energiaperiaate: $\\Delta E_\\text{mek} = W$."
           },
           {
             "text": "$\\Delta E_\\text{mek}$ on yhtä suuri kuin $-F_\\text{vast}\\,h_1$.",
@@ -363,7 +363,7 @@
         {
           "text": "Kitkan työ on negatiivinen, joten se pienentää liike-energiaa: $E_\\text{k} = 73{,}6\\,\\text{J} - 30\\,\\text{J}$.",
           "correct": true,
-          "feedback": "Oikein. Energiaperiaatteen mukaan $mgh + W_\\text{muut} = E_\\text{k}$, ja $W_\\text{muut} = -30\\,\\text{J}$. Liike-energia on $43{,}6\\,\\text{J}$ ja nopeus noin $4{,}2\\,\\text{m/s}$. Opiskelijan tulos $6{,}4\\,\\text{m/s}$ on suurempi kuin kitkattomassa tapauksessa $5{,}4\\,\\text{m/s}$. Se on mahdotonta."
+          "feedback": "Oikein. Energiaperiaatteen mukaan $mgh + W = E_\\text{k}$, ja $W = -30\\,\\text{J}$. Liike-energia on $43{,}6\\,\\text{J}$ ja nopeus noin $4{,}2\\,\\text{m/s}$. Opiskelijan tulos $6{,}4\\,\\text{m/s}$ on suurempi kuin kitkattomassa tapauksessa $5{,}4\\,\\text{m/s}$. Se on mahdotonta."
         },
         {
           "text": "Potentiaalienergia on laskettava luiskan pituudesta eikä korkeudesta.",

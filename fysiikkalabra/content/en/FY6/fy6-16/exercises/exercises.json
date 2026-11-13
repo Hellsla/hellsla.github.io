@@ -256,6 +256,15 @@
           "feedback": "Correct: the power is $P = UI = 1.84\\,\\text{kW}$, so $t = W_\\text{battery} : (\\eta P)$, that is, $t \\approx 15\\,\\text{h}$."
         }
       ]
+    },
+    {
+      "id": "fy6-16-L2-09",
+      "level": 2,
+      "text": "The graph shows the electric power of a detached house in the evening from 18 to 22 before the charging station. The electricity of the house costs $16\\,\\text{c/kWh}$ including transmission. How much does the electricity of the house cost in total from 18 to 22? Read the necessary values from the graph and answer in euros.",
+      "figure": "fy6-16/talo-ex",
+      "answer": 2.72,
+      "unit": "€",
+      "tolerance": 0.02
     }
   ],
   "level3": [

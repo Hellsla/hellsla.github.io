@@ -154,8 +154,9 @@ Luvun *Kaasujen tilanmuutokset ja Boylen laki* kaasulait koskivat suljettua kaas
 </svg>
 
 Hiukkasia on pienessäkin kaasumäärässä valtavasti, joten niitä ei lasketa yksitellen vaan mooleina, samaan tapaan kuin kananmunia lasketaan tusinoina. Yksi mooli on ${6{,}022 \cdot 10^{23}}$ hiukkasta, ja lukua ${N_\text{A} = 6{,}022 \cdot 10^{23}\,\text{1/mol}}$ sanotaan Avogadron vakioksi. Ainemäärä $n$ kertoo, montako moolia hiukkasia on. Yhden moolin massa on aineen moolimassa $M$: heliumilla $4{,}00\,\text{g/mol}$, ilmalla keskimäärin $29{,}0\,\text{g/mol}$ ja hiilidioksidilla $44{,}0\,\text{g/mol}$. Ainemäärä saadaan siis sekä hiukkasmäärästä että massasta:
-```latex
-n = \frac{N}{N_\text{A}} = \frac{m}{M}
+```kaavat
+ainemäärä Avogadron vakion avulla :: n = \frac{N}{N_\text{A}}
+ainemäärä :: n = \frac{m}{M}
 ```
 missä $N$ on hiukkasten lukumäärä, $m$ massa (g tai kg) ja $M$ moolimassa (g/mol tai kg/mol).
 
@@ -239,8 +240,8 @@ R &= \frac{pV}{nT} \\
 \end{aligned}
 ```
 Tarkat mittaukset antavat kaikille kaasuille arvon $R = 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$, kun paine ei ole kovin suuri eikä lämpötila kovin matala. Lukua sanotaan mooliseksi kaasuvakioksi. Siitä saadaan ideaalikaasun tilanyhtälö
-```latex
-pV = nRT
+```kaavat
+ideaalikaasun tilanyhtälö :: pV = nRT
 ```
 missä $p$ on kaasun absoluuttinen paine, $V$ tilavuus, $n$ ainemäärä, $R$ moolinen kaasuvakio ja $T$ kelvinlämpötila. Kaasun laatu ei näy yhtälössä lainkaan. Celsiusasteina annettu lämpötila $\theta$ muutetaan kelvineiksi lisäämällä lukuarvoon $273{,}15$.
 

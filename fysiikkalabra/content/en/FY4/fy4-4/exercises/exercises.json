@@ -290,8 +290,8 @@
     {
       "id": "fy4-4-L2-09",
       "level": 2,
-      "text": "The graph shows the acceleration of two carts A and B against the net force. The masses of the carts are not given. A horizontal net force of $2.4\\,\\text{N}$ acts on cart B. What is the acceleration of cart B?",
-      "answer": 2.4,
+      "text": "The graph shows the acceleration of two carts A and B against the net force. The masses of the carts are not given. A horizontal net force of $2.4\\,\\text{N}$ acts on cart A. What is the acceleration of cart A?",
+      "answer": 4.8,
       "unit": "m/s²",
       "tolerance": 0.02,
       "figure": "fy4-4/kuvaaja-ab"

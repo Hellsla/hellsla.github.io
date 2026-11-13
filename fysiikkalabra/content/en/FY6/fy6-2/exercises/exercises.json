@@ -289,6 +289,24 @@
           "feedback": "Check the error limits: calculate the error limit of the current on both current ranges."
         }
       ]
+    },
+    {
+      "id": "fy6-2-L2-09",
+      "level": 2,
+      "text": "The figure shows the display and the selector of a multimeter that is measuring the voltage of a lamp. The error limit of the voltage ranges is $\\pm(0.5\\,\\% + 2\\ \\text{digits})$, and the resolution of a range is the step of the last digit of the display. Read the reading and the range from the figure and calculate the error limit of the reading. Give the answer in volts.",
+      "figure": "fy6-2/multimeter-task",
+      "answer": 0.02685,
+      "unit": "V",
+      "tolerance": 0.12
+    },
+    {
+      "id": "fy6-2-L2-10",
+      "level": 2,
+      "text": "The voltage of a lamp is measured with the multimeter in the figure. The manufacturer of the lamp gives the rated voltage $1.45\\,\\text{V}$. The error limit of the voltage ranges is $\\pm(0.5\\,\\% + 2\\ \\text{digits})$, and the resolution of a range is the step of the last digit of the display. How many times does the error limit of the reading fit into the difference between the manufacturer's value and the reading? The result tells whether the reading is consistent with the rated value.",
+      "figure": "fy6-2/multimeter-task",
+      "answer": 2.98,
+      "unit": "",
+      "tolerance": 0.1
     }
   ],
   "level3": [

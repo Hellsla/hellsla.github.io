@@ -1,10 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 2af3ee47b4394d1d
+CONTENT-HASH: 0e1ca561eb3c7a3f
+SCOPE: delta added-exercise from 2af3ee47b4394d1d base 81db4a6fd727
+
 ## Blocking
-(none)
+None.
+
 ## Polish
-- exercises.json (rows 1 and 2 feedback): "Jos rivin luulee virheelliseksi, ajattelee, että ..." is stiff; write "Jos pidit riviä virheellisenä, ajattelit, että ...".
+None.
+
 ## Checked
-- Round 2. Row-3 chain in the solution is split (G = 18 kg * 9,81 m/s^2, eli G = 176,58 N ~ 177 N); rendered at 390 px with solution open: no overflow, widest formula 243 px (was 324 px).
-- Row-3 feedback no longer names the error ("Tarkista muut rivit samalla tavalla").
-- Round 1 checks unchanged: error row 4 (weight for mass) matches the chapter's warned mistake; numbers 36 N, 177 N, 2,0 m/s^2. Text only: Finnish.
+- Round 2, delta: the round-1 fixes judged in their context.
+- L2-09 now asks cart A: slope 2,0 so m = 0,50 kg, a = 4,8 m/s^2; a student who copies 2,4 is wrong, so the mass step is needed (round-1 Polish 1 closed).
+- Solution reads A's point (3,0 N; 6,0 m/s^2) and the reasonableness line brackets 4 to 6, consistent with the answer 4,8 and answers.py.
+- No new task, figure or level change; set mix and counts unchanged from the passed version.
+- Language and case endings in the changed text are correct.

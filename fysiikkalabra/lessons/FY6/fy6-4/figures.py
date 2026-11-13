@@ -153,6 +153,21 @@ def siirto_mixed():
     return f.svg()
 
 
+def task_parallel():
+    """Task figure (level 2): 9,0 V battery over R1 = 30 Ω and R2 = 45 Ω in parallel; no currents written."""
+    f = Fig("fy64-task-parallel", 372, "Kytkentäkaavio: 9,0 voltin paristoon on kytketty rinnan kaksi vastusta, joista "
+            "R1 on 30 ohmia ja R2 on 45 ohmia.")
+    L, xL, xR, T, M, B = 86, 236, 476, 86, 196, 306
+    wire(f, (L, 196 - 14), (L, T), (xR, T), (xR, B), (L, B), (L, 196 + 14))
+    wire(f, (xL, T), (xL, M), (xR, M))
+    battery(f, L, 196)
+    f.tex(L + 40, 196, r"9{,}0\,\text{V}", "start")
+    for x, y in ((xL, T), (xR, M)): node(f, x, y)
+    resistor(f, 356, T); f.tex(356, T - 38, r"R_1 = 30\,\Omega", "middle", w=170)
+    resistor(f, 356, M); f.tex(356, M - 36, r"R_2 = 45\,\Omega", "middle", w=170)
+    return f.svg()
+
+
 def hero():
     """The chapter's opening illustration: a living room in a winter evening. One power strip feeds a floor lamp, a
     table lamp and an old string of window lights; the lamps shine, but the string is dark because one bulb is broken."""
@@ -210,7 +225,7 @@ def hero():
 
 
 FIGURES = {"hero": hero, "series": series, "parallel": parallel, "graph": graph, "mixed": mixed,
-           "task-mixed": task_mixed, "siirto-mixed": siirto_mixed}
+           "task-mixed": task_mixed, "siirto-mixed": siirto_mixed, "task-parallel": task_parallel}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "series": "reveals: the same current I everywhere in a series circuit",
@@ -219,4 +234,5 @@ REUSE = {
     "mixed": "safe: symbolic reduction of R2 || R3 to R23, no numbers",
     "task-mixed": "safe: 12 V, R1 = 40 Ω in series with 60 Ω || 120 Ω, no currents",
     "siirto-mixed": "safe: 12 V, 20 Ω in series with 60 Ω || 30 Ω, no currents",
+    "task-parallel": "safe: 9,0 V over 30 Ω || 45 Ω, no currents",
 }

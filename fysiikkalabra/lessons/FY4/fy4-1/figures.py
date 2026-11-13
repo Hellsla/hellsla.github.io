@@ -197,12 +197,43 @@ def pick_origin():
     return f.svg()
 
 
+def ex_kolme_osaa():
+    """For tasks: a cart's (t,x) graph in three straight parts, corners on grid crossings; no answer marked."""
+    f = Fig("fy41-ex-kolme-osaa", 340, "(t,x)-kuvaaja mittakaavassa kärryn liikkeestä, aika 0–10 sekuntia kahden sekunnin välein ja paikka "
+            "0–20 metriä neljän metrin välein. Kuvaaja koostuu kolmesta suorasta osasta: paikka on 4 metriä hetkellä 0, "
+            "16 metriä hetkellä 4 sekuntia, 16 metriä hetkellä 6 sekuntia ja 8 metriä hetkellä 10 sekuntia.")
+    ax = Axes(f, (92, 296), (470, 52), x=(0, 11), y=(0, 20), xticks=[2, 4, 6, 8, 10], yticks=[4, 8, 12, 16, 20],
+              xlabel=r"t\ (\text{s})", ylabel=r"x\ (\text{m})")
+    pts = [(0, 4), (4, 16), (6, 16), (10, 8)]
+    ax.line(pts, COLD, 3.5)
+    for a, b in pts: ax.point(a, b, COLD)
+    return f.svg()
+
+
+def ex_kaksi_kappaletta():
+    """For tasks: two bodies' straight (t,x) lines, A rising from 4 m, B falling from 20 m; no crossing or distance marked."""
+    f = Fig("fy41-ex-kaksi", 340, "(t,x)-kuvaaja mittakaavassa kahdesta tasaisesta liikkeestä, aika 0–8 sekuntia sekunnin välein ja paikka "
+            "0–20 metriä neljän metrin välein. Kappale A lähtee paikasta 4 metriä ja sen suora nousee paikkaan 20 metriä hetkeen 8 sekuntia "
+            "mennessä. Kappale B lähtee paikasta 20 metriä ja sen suora laskee paikkaan 4 metriä hetkeen 8 sekuntia mennessä.")
+    ax = Axes(f, (92, 296), (470, 52), x=(0, 9), y=(0, 22), xticks=[1, 2, 3, 4, 5, 6, 7, 8], yticks=[4, 8, 12, 16, 20],
+              xlabel=r"t\ (\text{s})", ylabel=r"x\ (\text{m})")
+    ax.line([(0, 4), (8, 20)], COLD, 3.5)
+    ax.line([(0, 20), (8, 4)], HEAT, 3.5)
+    for a, b, c in ((0, 4, COLD), (8, 20, COLD), (0, 20, HEAT), (8, 4, HEAT)): ax.point(a, b, c)
+    f.tex(ax.X(8) + 12, ax.Y(20), r"x_\text{A}", "start", COLD)
+    f.tex(ax.X(8) + 12, ax.Y(4), r"x_\text{B}", "start", HEAT)
+    return f.svg()
+
+
 FIGURES = {"hero": hero, "displacement": displacement, "round-trip": round_trip, "graph-slope": graph_slope, "jogger-graph": jogger_graph, "pick-falling": pick_falling,
-           "pick-rising": pick_rising, "pick-flat": pick_flat, "pick-origin": pick_origin}
+           "pick-rising": pick_rising, "pick-flat": pick_flat, "pick-origin": pick_origin,
+           "ex-kolme-osaa": ex_kolme_osaa, "ex-kaksi-kappaletta": ex_kaksi_kappaletta}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "pick-falling": "reveals: the right option of task fy4-1-L1-09 (x0 = 6 m, v = -1,0 m/s for 4 s)",
     "pick-rising": "safe: a wrong option of task fy4-1-L1-09 (the sign of the velocity ignored)",
     "pick-flat": "safe: a wrong option of task fy4-1-L1-09 (the velocity drawn as a position)",
     "pick-origin": "safe: a wrong option of task fy4-1-L1-09 (the start position forgotten)",
+    "ex-kolme-osaa": "safe: a cart's three-part (t,x) graph, no path or mean speed marked (task fy4-1-L2-08)",
+    "ex-kaksi-kappaletta": "safe: two straight (t,x) lines, no crossing or distance marked (task fy4-1-L2-09)",
 }

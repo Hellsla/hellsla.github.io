@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: cdffd606341c786c
+CONTENT-HASH: 268a81633cb1b58d
 
 ## Blocking
-- none
+None. Built preview/fi-easy/fy3-15.html and looked at 390 and 1280 px: formula tables (named rows, upright subscripts a, o, h, A), changed figures, opened solutions; no horizontal overflow; no leftover old symbols (L, P_0, P_hyöty, Q_sisälle, E_s, W_k) in the lesson, inquiry, exit ticket or exercises of this part.
 
 ## Polish
-- none
+none.
 
-## Checked
-- delta review 2026-11-07 (teacher's proofread replacement texts): the reworded Miksi question ($2{,}5$ typeset) and the three-paragraph Yleinen virhekäsitys; opened fy3-15-fi-easy-miksi-390/-1280 and fy3-15-fi-easy-hukka-390/-1280 (paragraphs separate cleanly, following "Toinen virhe" paragraph and summary intact).
-- batch delta review: "Luvun tärkeät käsitteet" panel captured from preview/fi-easy/fy3-15.html at 390 and 1280 px (the review/shots set has no capture of it) and opened — between the opening and stage 1, term bold over its explanation at 390 px, two-column at 1280 px, no clipping, no horizontal overflow, no KaTeX error; top-390 opened in a montage (read-aloud "Kuuntele" button under the title, layout intact).
+(Captures: /tmp/claude-0/-home-user-hellsla-github-io/729392a7-96f2-578c-8869-36f18714a66f/scratchpad/review-fy3/)

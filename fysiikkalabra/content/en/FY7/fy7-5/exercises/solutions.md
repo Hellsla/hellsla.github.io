@@ -229,3 +229,14 @@ By the magnitude of the induced voltage, from smallest to largest, the order is 
 If the number of turns is forgotten, the voltages of situations A and B come out as only $6.0\,\text{mV}$ and $60\,\text{mV}$, and they move to the wrong place right after situation C. If the voltage is thought to depend on the size of the flux and not on its change, the large flux of situation C seems to give the greatest voltage, and C wrongly moves to the end of the order.
 
 **Reasonableness:** In situation E the flux changes fastest, $2.0\,\tfrac{\text{Wb}}{\text{s}}$, but the $50$ turns of situation B raise its voltage to the greatest.
+
+## fy7-5-L2-08
+**Given:** number of turns $N = 200$. The graph shows the flux through one turn, $\Phi$, as a function of time $t$. The interval is $0$–$0{,}40\,\text{s}$.
+**Asked:** the magnitude of the average induced voltage $|e_\text{ka}|$ in volts
+**Principle:** By the law of induction the voltage is set by the change of flux $\Delta\Phi$, not by the value of the flux. The change is the final value minus the initial value, also when the flux passes through zero and changes sign. The graph is a straight line in this interval, so the average voltage is the voltage of the whole interval.
+**Reading the graph:** At time $0$ the flux is $\Phi_1 = 5{,}0\,\text{mWb}$. At $0{,}40\,\text{s}$ the flux is $\Phi_2 = -3{,}0\,\text{mWb}$. The change of flux is $\Delta\Phi = \Phi_2 - \Phi_1 = -3{,}0\,\text{mWb} - 5{,}0\,\text{mWb} = -8{,}0\,\text{mWb}$, and its magnitude is $8{,}0\,\text{mWb}$. The time is $\Delta t = 0{,}40\,\text{s} - 0 = 0{,}40\,\text{s}$.
+**Formula:** $|e_\text{ka}| = N\dfrac{|\Delta\Phi|}{\Delta t}$
+**Conversions:** $|\Delta\Phi| = 8{,}0\,\text{mWb} = 8{,}0 \cdot 10^{-3}\,\text{Wb}$
+**Substitution:** $|e_\text{ka}| = 200 \cdot \dfrac{8{,}0 \cdot 10^{-3}\,\text{Wb}}{0{,}40\,\text{s}} = 200 \cdot 0{,}020\,\text{V} = 4{,}0\,\text{V}$
+**Answer:** $4{,}0\,\text{V}$, two significant figures like the fluxes $5{,}0\,\text{mWb}$ and $-3{,}0\,\text{mWb}$ read from the graph.
+**Reasonableness:** Using only the final value $3{,}0\,\text{mWb}$ would give $200 \cdot 3{,}0 \cdot 10^{-3}\,\text{Wb} : 0{,}40\,\text{s} = 1{,}5\,\text{V}$, which is too small: the flux changes through zero, so the change is larger than either value alone. The slope of the graph, $-8{,}0\,\text{mWb} : 0{,}40\,\text{s} = -20\,\tfrac{\text{mWb}}{\text{s}}$, gives the same result: $200 \cdot 0{,}020\,\text{V} = 4{,}0\,\text{V}$.

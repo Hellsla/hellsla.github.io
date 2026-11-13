@@ -1,13 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 94cf5abbb8d01c59
-Mode: light (teacher 2026-11-10, "kevyt katselmointi": the FY8 error-check fix diff since origin/main only)
+CONTENT-HASH: 2253c95d75da8d51
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none new; the five Polish items of the earlier report stand as they were.)
 
 ## Checked
-- Diff since origin/main: changed exit-ticket questions and answers (fy8-2, fy8-12, fy8-14) and the fy8-9 source note and worked-example sign read clearly for a 16-19-year-old; questions remain answerable from the lesson; model answers match the question.
-- fi-easy: short plain sentences, no new jargon; en matches fi; no bold in task statements, decimal convention kept.
+- Delta is a swatch reorder in the visible-light band of the photon-energy figure. Red now sits at the left and violet at the right, so energy rises to the right along the log axis, as it should. The earlier order (violet left) contradicted the axis.
+- In the 390 px capture the band is still small but readable. Its label and the "1.7-3.3 eV" range below it are unchanged, and nothing gives an answer away.
+- The ionising and non-ionising boundary at 12.6 eV is unchanged. The figure still teaches that visible light lies below it.
+- Nothing else changed, so the learning path, predictions, experiments and checks stand as approved in round 1.

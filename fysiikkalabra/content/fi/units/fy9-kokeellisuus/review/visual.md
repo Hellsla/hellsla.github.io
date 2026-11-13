@@ -1,15 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 7a9383fdf3772fc8
+CONTENT-HASH: 4fca163bc3ac2f29
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 7a9383fdf3772fc8.
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-- [Minor] Page-level horizontal overflow at 390 px with all details open (434 px wide kokeellisuus, 561 moderni) from long inline Sijoitus lines; known, carried from earlier reviews, not caused by these fixes. Let .reveal/.answer scroll or break into display lines.
+- fy9-kokeellisuus/sovella/solutions.md a) Vastaus: rho = 2,7 * 10^3 kg/m^3 and (2680 +- 80) kg/m^3 side by side reads as a contradiction at first glance; say that the uncertainty is a separate result of b). Also c): Kaava in prose with Sigma F is fine.
 
 ## Checked
-- Delta re-review (solution practice, 2026-11-12) of the small text fixes: kokeellisuus s5 a rubric line ($2{,}7 \cdot 10^3$ kg/m3, two significant figures) and moderni s5 a answer, 157 s without background, 1,5 %, accepted range 147-159 s.
-- Built both units, opened preview/fi with ?ratkaisut=1 and every details element open at 390 px: 0 KaTeX errors, no script errors, changed lines present, decimal comma in fi and fi-easy, point in en, units and \cdot correct, wording natural.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+Diff only, read in full. `check_latex.py` on the unit: all fragments parse in KaTeX. Rounding, carried digits 4,167 / 4,1667, the force-balance Kaava in c), tasks.json hint. No contradiction between #522 formula names or notation and the #523 solutions found; no duplicated derivation; Finnish and typography (thin spaces, decimal comma, \cdot, colon division, LaTeX units) in the changed lines are correct. No captures made: the changes are text-only solution lines, no figure or layout changed.

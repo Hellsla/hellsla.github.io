@@ -1,18 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 734616e047b0cf63
-Mode: full (translation review against the reviewed Finnish set; new task fy4-4-L2-08)
-Round 1
-
+CONTENT-HASH: f60494973a0461fa
+SCOPE: delta added-exercise from 734616e047b0cf63 base 81db4a6fd727
 ## Blocking
-(none)
-
-## Fixed
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-- Script comparison of exercises.json with content/fi: all ids, levels, kinds, answers, units, tolerances, correct flags, choice order and every number in all strings are identical (decimal point in fi-easy); new task fy4-4-L2-08 included.
-- Correct option and distractor feedback of fy4-4-L2-08 carry the same physics and numbers as fi; solutions.md section has the same lines, formulas and results.
-- No Finnish left in en (grep); no wrong-language text. check_i18n.py: nothing for this chapter; build.py succeeds.
+- L1-09: lander moving down and slowing, so a is up; F − mg = ma, F = m(g + a) = 15 000 kg · (1,622 + 0,50) m/s² = 31,83 kN → 32 kN (recomputed); only weight and thrust stated in the task; hover check 24 kN + 7,5 kN right.
+- L1-10: cart A line through the origin, point (3,0 N; 6,0 m/s²) from figures.py (F/0,50); m = 0,50 kg; second point (2,0 N; 4,0 m/s²) agrees; steeper line = smaller mass, correct.
+- L2-09: cart A named in task and solution as in fi; m_A = 0,50 kg, a = 2,4 N / 0,50 kg = 4,8 m/s² (recomputed); lies between the 4 and 6 m/s² grid values.
+- Figure fy4-4/kuvaaja-ab gives every point on grid crossings, masses not shown; description matches.
+- All 24 tasks: answer, unit, tolerance, figure, data and correct options equal the Finnish set; answers.py agrees.

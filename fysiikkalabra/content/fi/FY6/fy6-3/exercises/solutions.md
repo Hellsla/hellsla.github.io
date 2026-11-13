@@ -204,3 +204,13 @@ $U = 8{,}0\,\text{V}$
 Kuvaajan C suora kulkee origon ja pisteen $(4{,}0\,\text{mA};\ 8{,}0\,\text{V})$ kautta, ja myös pisteessä $(2{,}0\,\text{mA};\ 4{,}0\,\text{V})$ suhde on $U : I = 2{,}0\,\text{k}\Omega$. Kuvaajan A käyrä kulkee samassa pisteessä $(4{,}0\,\text{mA};\ 8{,}0\,\text{V})$, mutta pisteessä $(2{,}0\,\text{mA};\ 2{,}0\,\text{V})$ suhde on vain $1{,}0\,\text{k}\Omega$: resistanssi kasvaa jännitteen mukana, joten komponentti ei noudata Ohmin lakia. Kuvaajassa B virralla $4{,}0\,\text{mA}$ jännite on $2{,}0\,\text{V}$, joten resistanssi olisi $0{,}50\,\text{k}\Omega$: siinä kulmakertoimeksi on otettu $I : U$. Kuvaajassa D jännite on vakio $2{,}0\,\text{V}$, joten suhde $U : I$ muuttuu koko ajan: siinä resistanssin lukuarvo on piirretty jännitteeksi.
 
 **Kuvaajan lukeminen:** Jokaisesta kuvaajasta luetaan jännite kahdella virralla, esimerkiksi $2{,}0\,\text{mA}$ ja $4{,}0\,\text{mA}$, ja lasketaan suhde $U : I$. Vain kuvaajassa C suhde on molemmissa pisteissä $2{,}0\,\text{k}\Omega$.
+
+## fy6-3-L1-10
+**Annettu:** kuparilanka, $l = 40\,\text{m}$, $A = 1{,}5\,\text{mm}^2$; kuparin resistiivisyys MAFY-taulukon taulukosta *Resistiivisyyksiä*: $\rho = 1{,}678 \cdot 10^{-8}\,\Omega\cdot\text{m}$
+**Kysytty:** langan resistanssi $R$ ohmeina
+**Periaate:** Lanka on tasapaksua kuparia, joten sen resistanssi on suoraan verrannollinen pituuteen ja kääntäen verrannollinen poikkipinta-alaan. Verrannollisuuskerroin on kuparin resistiivisyys, jonka arvo luetaan taulukosta.
+**Kaava:** $R = \rho \dfrac{l}{A}$
+**Muunnokset:** $A = 1{,}5\,\text{mm}^2 = 1{,}5 \cdot (10^{-3}\,\text{m})^2 = 1{,}5 \cdot 10^{-6}\,\text{m}^2$
+**Sijoitus:** $R = \dfrac{1{,}678 \cdot 10^{-8}\,\Omega\cdot\text{m} \cdot 40\,\text{m}}{1{,}5 \cdot 10^{-6}\,\text{m}^2} = 0{,}447\,\Omega$
+**Vastaus:** $0{,}45\,\Omega$, kaksi merkitsevää numeroa kuten langan mitoissa. Taulukkoarvo on kuparin resistiivisyys $\rho = 1{,}678 \cdot 10^{-8}\,\Omega\cdot\text{m}$.
+**Järkevyys:** Yksiköt: $\Omega\cdot\text{m} \cdot \text{m} : \text{m}^2 = \Omega$. Yksi metri tätä lankaa on $0{,}0112\,\Omega$, ja $40 \cdot 0{,}0112\,\Omega = 0{,}45\,\Omega$. Paksumpi johto, jonka poikkipinta-ala on $2{,}5\,\text{mm}^2$, antaisi pienemmän resistanssin, mikä on järkevää.

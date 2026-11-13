@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 83748953571d3f72
+CONTENT-HASH: cc8485c6d5e1447c
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- exercises.json fy3-12-L2-08 — "Laske kunkin ... P ja järjestä" but only an order is entered; "Laske tai arvioi" is kinder. Optional.
+1. L2-09 is a single multiplication; the sentence saying the figure value is a mean over the whole surface tells the step. Optional: drop it so the student decides to multiply by the area.
 
 ## Checked
-- Round 2 (delta). Roof U is now 0,090 (two s.f. like the other U-values); 0,090·80 = 7,2 W/K, so the order (ovi, yläpohja, ikkunat, seinä) and the answer values are unchanged. The other two round-1 polish items (wording "Laske tai arvioi", the roof in the estimate) were not taken; optional.
-- Text only for this delta; no new render opened.
+- Round 2 delta judged in context (round-1 findings addressed).
+- L2-09 now reads a value, multiplies by the area and converts to PW; level 2 fits, no repeat of L1-05 (same figure, different skill). L3-03 defines the coefficient of performance before use; 984 kWh checked. L1-05 solution names the dashed arrow 'lämpösäteily'.
+- Full set read: levels, counts, mix of kinds (choices, data, error analysis, model) fine; solutions staged with principle first; units and Finnish fine.

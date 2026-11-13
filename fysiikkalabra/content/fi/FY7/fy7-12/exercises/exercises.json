@@ -87,6 +87,15 @@
       "answer": 103.4483,
       "unit": "km",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-12-L1-09",
+      "level": 1,
+      "text": "Kuvaajassa on rajakulma $\\alpha_\\text{r}$ asteina aineen taitekertoimen $n_1$ funktiona, kun valo tulee aineesta ilmaan. Safiirin taitekerroin on $1{,}77$. Lue kuvaajasta, kuinka suuri on safiirin ja ilman rajakulma. Anna vastaus asteina.",
+      "answer": 34.4003,
+      "unit": "°",
+      "tolerance": 0.03,
+      "figure": "fy7-12/graph-curve"
     }
   ],
   "level2": [
@@ -288,6 +297,15 @@
           "feedback": "Väite on tosi, mutta se ei ratkaise vastausta. Se kertoo vain, että kokonaisheijastuminen on mahdollista. Tapahtuuko se, riippuu siitä, onko tulokulma rajakulmaa suurempi."
         }
       ]
+    },
+    {
+      "id": "fy7-12-L2-09",
+      "level": 2,
+      "text": "Läpinäkyvän muovin ja ilman rajakulmaksi mitataan $35{,}0^\\circ$. Kuvaajassa on rajakulma taitekertoimen $n_1$ funktiona, kun valo tulee aineesta ilmaan. Lue kuvaajasta muovin taitekerroin ja laske sen avulla valon nopeus muovissa. Valon nopeus tyhjiössä on $3{,}00 \\cdot 10^8\\,\\text{m/s}$. Anna vastaus kilometreinä sekunnissa.",
+      "answer": 172072.9309,
+      "unit": "km/s",
+      "tolerance": 0.03,
+      "figure": "fy7-12/graph-curve"
     }
   ],
   "level3": [

@@ -184,8 +184,9 @@ The boiling point depends on pressure. A phase diagram shows the state of a subs
 
 ## Formula: Latent heat of fusion and vaporisation
 The quantity of heat needed to melt or vaporise a mass $m$ is
-```latex
-Q = s m \qquad \text{and} \qquad Q = r m
+```kaavat
+heat of fusion :: Q = s m
+heat of vaporisation :: Q = r m
 ```
 where $Q$ is the quantity of heat (J), $s$ is the specific latent heat of fusion of the substance (J/kg), $r$ is the specific latent heat of vaporisation (J/kg) and $m$ is the mass of the substance that melts or vaporises (kg). The same quantity of heat is released when the substance freezes or condenses. At constant pressure the temperature does not change during a change of state, so the formula has no temperature change $\Delta T$.
 

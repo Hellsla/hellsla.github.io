@@ -110,6 +110,18 @@
       "answer": 7.5,
       "unit": "mm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-11-L1-09",
+      "level": 1,
+      "text": "Two metal plates are $2.5\\,\\text{mm}$ apart in air, with a uniform electric field between them. Look up the dielectric strength of air in the MAFY table (mafytaulukot.fi). Calculate the greatest voltage between the plates before a spark forms in the air. Give the answer in kilovolts.",
+      "lookup": "MAFY",
+      "answer": 7.5,
+      "unit": "kV",
+      "tolerance": 0.1,
+      "hints": [
+        "The value is in the MAFY table *Eristeiden läpilyöntikestävyyksiä*."
+      ]
     }
   ],
   "level2": [

@@ -152,7 +152,8 @@ RULES = {                       # category: (science, pedagogy, visual)
     "core-mark":      ("none",  "none", "none"),    # an exercise or lesson activity marked core (`"core": true`) or unmarked, nothing else: the module's core path as a whole is reviewed in docs/core-path/ (teacher 2026-11-05)
     "paragraphs":     ("none",  "none", "none"),    # a task text cut into paragraphs (a blank line, "\\n\\n" in the JSON string), its words unchanged: build.exercise_text renders them, check_layout checks them (teacher 2026-11-04)
     "presentation-only": ("none", "none", "delta"),  # a simulation's code changed only in where or how it draws (an axis name, a label's place), the exact change approved in docs/presentation-only.tsv: the visual reviewer looks, test_sims.py runs
-    "formula-names": ("none",  "none", "none"),    # FY9 formulas given the names of docs/fy9/kaavanimet.tsv (```kaavat), nothing else changed (teacher 2026-11-12)
+    "formula-names": ("none",  "none", "none"),    # formulas given the names of a docs/*/kaavanimet.tsv (```kaavat; FY9 units, FY1–FY8 lessons), nothing else changed (teacher 2026-11-12)
+    "mafy-symbols":   ("none",  "none", "none"),    # FY9 formulas and symbols made MAFY's by the teacher's exact replacements (docs/fy9/mafy-tunnukset.tsv; teacher 2026-11-12, "treenataan yo-kokeisiin")
     "teacher-figure": ("none",  "none", "none"),    # a figure the teacher approved as drawn (docs/teacher-figures.tsv, its exact Finnish SVG), its words in a translation, a task given it by "figure": the layout is check_layout's (teacher 2026-11-10)
     "split":          ("none",  "none", "none"),    # passed as one lesson before the split; this part's files moved, unchanged (answers.py: line for line)
     "figure-words-added": ("none", "none", "none"),   # a translation's figures.json only gained entries (a new figure variant for a task); every existing entry as it was (teacher 2026-11-12)
@@ -174,7 +175,8 @@ WHY = {"core-mark": "exercises or activities marked core or unmarked, nothing el
        "simulation": "the simulation's code changed", "figure": "a figure or picture changed",
        "illustration": "the illustrations only",
        "teacher-figure": "figures the teacher approved as drawn (docs/teacher-figures.tsv)",
-       "formula-names": "formula names the teacher approved (docs/fy9/kaavanimet.tsv)",
+       "mafy-symbols": "formulas and symbols made MAFY's by the teacher's exact replacements (docs/fy9/mafy-tunnukset.tsv)",
+       "formula-names": "formula names the teacher approved (docs/*/kaavanimet.tsv)",
        "presentation-only": "a simulation's drawing only, the change approved in docs/presentation-only.tsv",
        "split": "the exercises moved to their own folder, every file as it was passed (answers.py split line for line)",
        "figure-words-added": "the translation's figures.json only gained entries for a new figure (every existing entry unchanged)",
@@ -1165,14 +1167,21 @@ def _item(kind, iid):
     raise SystemExit(f"carry-item: kind must be one of {', '.join(ITEM_KINDS)}")
 
 
-def _figure_free(folder, code_folder, texts, code_names, oid, src, names=frozenset()):
+def _figure_free(folder, code_folder, texts, code_names, oid, src, names=frozenset(), tx=None, code_tx=None, drawn=False):
     """The texts with the approved figures of owner `oid` taken out, the other code as it is, each not-approved figure as
-    drawn; a .md text as kaavat.review_view sees it, so formula names in `names` (approved by the teacher) carry too."""
+    drawn; a .md text as kaavat.review_view sees it, so formula names in `names` (approved by the teacher) carry too.
+    `tx(name, text)` / `code_tx(text)`: the teacher's exact replacements made on a passed version (MAFY's symbols,
+    docs/fy9/mafy-tunnukset.tsv). `drawn`: a label box's place and size and its font size in a text's figure are left out (they follow the
+    size of the formula in it; figures.py's drawing is judged in full, and units.py figures --check holds the text to it)."""
     rel = lambda p: p.relative_to(ROOT).as_posix()
     md = lambda n, t: kaavat.review_view(t, names) if n.endswith(".md") else t
-    out = [(n, md(n, normalized(_strip_approved_svgs(src.read(rel(folder / n)) or "", oid), n))) for n in texts]
+    read = lambda n: (tx or (lambda _, t: t))(n, src.read(rel(folder / n)) or "")
+    fit = lambda t: re.sub(r"font-size:\d+px", "", re.sub(r"<foreignObject\b[^>]*>", lambda m: re.sub(r'\s(?:x|y|width|height)="[\d.]+"', "", m.group(0)), t)) if drawn else t   # a label box follows its formula's size
+    after = lambda n, t: tx(n, t, True) if tx and n.endswith(".md") else t   # a replacement also on the canonical formulas (an aligned block of the passed version)
+    out = [(n, after(n, md(n, normalized(fit(_strip_approved_svgs(read(n), oid)), n)))) for n in texts]
     for n in code_names:
         code = src.read(rel(code_folder / n))
+        if code_tx and code: code = code_tx(code)
         if n != "figures.py" or not code: out.append((n, code or "")); continue
         mod = type(sys)("figures_at_commit"); mod.__file__ = str(code_folder / n)   # a figures.py may read files beside it
         exec(compile(code, n, "exec"), mod.__dict__); figs = mod.FIGURES
@@ -1183,12 +1192,15 @@ def _figure_free(folder, code_folder, texts, code_names, oid, src, names=frozens
     return out
 
 
-def item_view(kind, iid, lang, src):
+def item_view(kind, iid, lang, src, passed=False):
     """What an item's reviews judge apart from its teacher-approved figures, as `src` (WorkTree or Commit) has it. A
     unit's own task set is reviewed with the unit: the same view of it, its figures owned by "<unit>-sovella"."""
     m, key, oid = _item(kind, iid)
-    names = frozenset(kaavat.approved(key, lang)) if kind == "unit" else frozenset()
-    out = _figure_free(m.folder(key, lang), m.code_folder(key), m.TEXTS, getattr(m, "CODE", ("figures.py",)), oid, src, names)
+    names = (kaavat.ANY if passed else frozenset(kaavat.approved(key, lang))) if kind == "unit" else frozenset()   # a passed version's names may be taken out
+    sym = kind == "unit" and bool(kaavat.symbol_rows(key, lang))     # MAFY's symbols (docs/fy9/mafy-tunnukset.tsv)
+    tx = (lambda n, t, canonical=False: kaavat.apply_symbols(key, lang, n, t, canonical)) if sym and passed else None
+    code_tx = (lambda t: kaavat.apply_symbols(key, None, "figures.py", t)) if sym and passed else None
+    out = _figure_free(m.folder(key, lang), m.code_folder(key), m.TEXTS, getattr(m, "CODE", ("figures.py",)), oid, src, names, tx, code_tx, drawn=sym)
     if kind == "unit" and m.has_tasks(key, lang):
         import practice
         tk = m.task_key(key)
@@ -1218,7 +1230,7 @@ def item_carry(kind, iid, lang=i18n.SOURCE):
         base = _item_base(kind, iid, lang, frm)
         if base is None: print(f"{name}: the version it passed is not in git history, review needed"); continue
         now = now or item_view(kind, iid, lang, WorkTree())
-        if item_view(kind, iid, lang, Commit(base)) != now: print(f"{name}: more than teacher-approved figures and formula names changed, review needed"); continue
+        if item_view(kind, iid, lang, Commit(base), passed=True) != now: print(f"{name}: more than teacher-approved figures and formula names changed, review needed"); continue
         cat = item_category(kind, iid, lang, base)
         rows.append({"date": str(datetime.date.today()), "reviewer": name, "from": frm, "to": h, "base": base[:12], "categories": cat})
         added.append(name); print(f"{name}: carried over ({'; '.join(WHY[c] for c in cat.split(','))})")
@@ -1235,6 +1247,8 @@ def item_category(kind, iid, lang, base):
     names_at = lambda src: [kaavat.names_of(src.read((m.folder(key, lang) / n).relative_to(ROOT).as_posix()) or "") for n in m.TEXTS if n.endswith(".md")]
     cats = []
     if names_at(Commit(base)) != names_at(WorkTree()): cats.append("formula-names")
+    old = [Commit(base).read((m.folder(key, lang) / n).relative_to(ROOT).as_posix()) or "" for n in m.TEXTS]
+    if kind == "unit" and [kaavat.apply_symbols(key, lang, n, t) for n, t in zip(m.TEXTS, old)] != old: cats.append("mafy-symbols")
     if _figures_differ(kind, iid, lang, base): cats.append("teacher-figure")
     return ",".join(cats or ["teacher-figure"])
 
@@ -1260,7 +1274,7 @@ def verify_item_carries(kind, iid, lang):
         what = f"{lang}/{key}: carry of {name}"
         if git("rev-parse", "--verify", "-q", f"{c['base']}^{{commit}}") is None: errs.append(f"{what} names commit {c['base']}, not in history (CI needs fetch-depth: 0)"); continue
         if m.content_hash(key, lang, read=Commit(c["base"]).read) != c["from"]: errs.append(f"{what}: commit {c['base']} does not hold hash {c['from']}"); continue
-        if item_view(kind, iid, lang, Commit(c["base"])) != item_view(kind, iid, lang, WorkTree()): errs.append(f"{what} covers more than figures and formula names the teacher approved")
+        if item_view(kind, iid, lang, Commit(c["base"]), passed=True) != item_view(kind, iid, lang, WorkTree()): errs.append(f"{what} covers more than figures and formula names the teacher approved")
     return errs
 
 
@@ -1439,6 +1453,22 @@ def approve_presentation(rel, base="origin/main", note=""):
     print(f"\nrecorded in {PRESENTATION.relative_to(ROOT)}: {rel} {row[1]} -> {row[2]}")
 
 
+def _unnamed(a, b, ok):
+    """`b` with each ```kaavat block whose names are all approved (`ok`) put back as `a`'s block of the same formulas
+    (a passed version's ```latex or ```kaavat block), so what else changed is classified as usual; None when a name
+    is not approved."""
+    olds = {}
+    for m, parts in kaavat._blocks(a): olds.setdefault(tuple(parts), m.group(0))
+    out, pos = [], 0
+    for m, parts in kaavat._blocks(b):
+        if m.group(1) != "kaavat": continue
+        if any(n and (n, " ".join(t.split())) not in ok for n, t in kaavat.rows(m.group(2))): return None
+        old = olds.get(tuple(parts))
+        if old is None: continue
+        out.append(b[pos:m.start()] + old); pos = m.end()
+    return "".join(out) + b[pos:]
+
+
 def changes(folder, base, part="lesson", split=False, new=None):
     """(categories, unified diff, changed line count) of `part` between commit `base` and the working tree, over every
     source its hash covers, as the base saw them and as they are now. Formatting the hash ignores is not a change here
@@ -1467,6 +1497,14 @@ def changes(folder, base, part="lesson", split=False, new=None):
                 if a2 == b2: continue
                 if rel.endswith("/lesson.md"): ra, rb = a2, b2
                 a, b = a2, b2
+        if rel.endswith("/lesson.md") and a and b and kaavat.names_of(a) != kaavat.names_of(b):   # formula names of a docs/<module>/kaavanimet.tsv
+            ok = frozenset(kaavat.approved(folder.name, rel.split("/")[1]))
+            if kaavat.review_view(a, kaavat.ANY) == kaavat.review_view(b, ok):   # names taken out, or approved ones added
+                cats.add("formula-names"); diff.append(f"--- {rel}: formula names the teacher approved"); continue
+            b2 = _unnamed(a, b, ok)                                     # other changes too: classify them with the named blocks as they were
+            if b2 is not None and b2 != b:
+                cats.add("formula-names"); diff.append(f"--- {rel}: formula names the teacher approved"); b = rb = b2
+                if a == b: continue
         if rel.startswith("tests/sims/"): cats.add(test_change(rel, base, new)); diff.append(f"--- {rel}: simulation assertions changed"); continue
         if not binary and presentation_change(old, new, rel):   # where or how the sim draws, the exact change of the file approved (one row for every language): the visual reviewer sees the diff
             cats.add("presentation-only"); n += 1
@@ -1491,9 +1529,13 @@ def changes(folder, base, part="lesson", split=False, new=None):
             if a2 != b2: cats |= classify(rel, list(difflib.unified_diff((a2 or "").splitlines(), (b2 or "").splitlines(), lineterm="", n=2)), folder.name)
             n += sum(1 for l in lines if l.startswith(("+", "-")) and not l.startswith(("+++", "---"))); diff += lines; continue
         if rel.endswith("/figures.json") and ra and rb:   # entries only added: the words of a new figure (a task's variant); check_i18n
-            try: fa, fb = json.loads(ra), json.loads(rb)   # keeps every figure already drawn fully translated, so no drawn word changes
-            except json.JSONDecodeError: fa = fb = None
-            if isinstance(fa, dict) and isinstance(fb, dict) and len(fb) > len(fa) and all(k in fb and fb[k] == v for k, v in fa.items()):
+            def _added_only(x, y):                         # keeps every figure already drawn fully translated, so no drawn word changes
+                try: fa, fb = json.loads(x), json.loads(y)
+                except (TypeError, json.JSONDecodeError): return False
+                return isinstance(fa, dict) and isinstance(fb, dict) and len(fb) > len(fa) and all(k in fb and fb[k] == v for k, v in fa.items())
+            # also after the teacher-approved figures' words are taken out (a, b above): a file that both re-translated an
+            # approved figure and gained a new variant's words is then the two carried categories, not a content change
+            if _added_only(ra, rb) or _added_only(a, b):
                 cats.add("figure-words-added"); n += sum(1 for l in lines if l.startswith(("+", "-")) and not l.startswith(("+++", "---"))); diff += lines; continue
         if rel.endswith("/figures.json") and a and b:   # a translation's words: an illustration's description is part of the illustration
             heroes = {html.unescape(x) for s in (old.source(courses.lesson_rel(folder, "lesson.md")), new.source(courses.lesson_rel(folder, "lesson.md")))

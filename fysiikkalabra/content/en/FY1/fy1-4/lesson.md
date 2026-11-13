@@ -231,8 +231,8 @@ The graph of a linear model is a straight line with the equation
 y = kx + b
 ```
 where $y$ is the quantity on the vertical axis, $x$ the quantity on the horizontal axis, $k$ the slope and $b$ the constant term, that is, the point where the line crosses the vertical axis. The slope is calculated from two chosen points $(x_1,\ y_1)$ and $(x_2,\ y_2)$ on the line:
-```latex
-k = \frac{\Delta y}{\Delta x} = \frac{y_2 - y_1}{x_2 - x_1}
+```kaavat
+slope :: k = \frac{\Delta y}{\Delta x} = \frac{y_2 - y_1}{x_2 - x_1}
 ```
 where $\Delta y$ is the change in $y$ between the points and $\Delta x$ the change in $x$ between them. The unit of the slope is the unit of $y$ divided by the unit of $x$: if $y$ is in metres and $x$ in seconds, $k$ is in $\text{m/s}$.
 

@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 734da372eebee885
-Mode: full (translation review against the reviewed Finnish set)
+CONTENT-HASH: f9189f30c9a2f688
+SCOPE: delta added-exercise from 734da372eebee885 base 81db4a6fd727
 
 ## Blocking
-(none)
-
-## Fixed
-(see science.md)
+None.
 
 ## Polish
-(none)
+None.
 
 ## Checked
-- light delta review (teacher 2026-11-07), LOPS extension marking: only L3-04 (train couplings) gets the "Extension task" tag (Syventävä tehtävä); level 3 was never core, so the core path is unchanged; tag renders clearly before the task text.
-Concept+reason task keeps the Finnish structure: one correct answer, three misconception reasons (T=m2 g, constant a, true-but-irrelevant), feedback names the error and the repair without disclosing the answer before choice. Reads as natural English.
+- Round 2, delta: the round-1 fixes judged in their context.
+- L3-06 answer now 1,2 kg (two figures) as the reason says; the check against T = 2,36 N versus 2,94 N is in the working.
+- No new task, figure or level change; set mix and counts unchanged from the passed version.
+- Language and case endings in the changed text are correct.

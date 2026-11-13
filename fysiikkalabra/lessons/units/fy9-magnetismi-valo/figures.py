@@ -12,6 +12,9 @@ siirto      the hook to scale: the same 40 kW through a 0,50 ohm cable at 230 V 
             drawn to scale (38 % and 0,005 %) with the currents
 ympyra      a positive particle in a uniform field into the page: the circular path, the velocity tangent and the
             magnetic force towards the centre at four points (counterclockwise on the page)
+rajakulma   the critical angle for "Johda itse": light from a lamp in the denser medium n_1 meets the surface at the
+            critical angle, the refracted ray runs along the surface (alpha_2 = 90 degrees); a steeper-angled ray is
+            totally reflected (no numbers)
 """
 import math
 import figlib
@@ -209,13 +212,83 @@ def ympyra():
         f.tex(px, py, r"+", "middle", INK, size=20)
     bx, by = cx, cy + R
     f.tex(bx + 84, by + 4, r"\overline{v}", "start", VEL)
-    f.tex(bx + 14, by - 40, r"\overline{F}_\text{m}", "start", FORCE)
+    f.tex(bx + 14, by - 40, r"\overline{F}_\text{M}", "start", FORCE)
     f.tex(590, 402, r"\overline{B}\ \text{paperiin}", "end", FIELD, bg=True)
-    f.tex(590, 40, r"r = mv/(qB)", "end", INK)
     return f.svg()
 
 
-FIGURES = {"hero": hero, "kartta": kartta, "siirto": siirto, "ympyra": ympyra}
+# --- light rays (as in lessons/FY7/fy7-12/figures.py: rays #e64980, normals dashed grey, water gradient) ---------
+RAY = "#e64980"
+
+
+def _ray(f, pts, w=3, opacity=1.0, arrow_at=None):
+    """A light ray along the points; a small filled arrowhead in the middle of segment arrow_at shows its direction."""
+    d = "M" + " L".join(f"{n(x)},{n(y)}" for x, y in pts)
+    op = f' stroke-opacity="{opacity:g}"' if opacity < 1 else ""
+    f.add(f'<path d="{d}" fill="none" stroke="{RAY}" stroke-width="{w:g}" stroke-linejoin="round" stroke-linecap="round"{op}/>')
+    if arrow_at is not None:
+        (x1, y1), (x2, y2) = pts[arrow_at], pts[arrow_at + 1]
+        L = math.hypot(x2 - x1, y2 - y1); ux, uy = (x2 - x1) / L, (y2 - y1) / L
+        mx, my = (x1 + x2) / 2 + ux * 6, (y1 + y2) / 2 + uy * 6
+        h, hw = 13, 6
+        fo = f' fill-opacity="{opacity:g}"' if opacity < 1 else ""
+        f.add(f'<path d="M{n(mx)},{n(my)} L{n(mx - ux * h - uy * hw)},{n(my - uy * h + ux * hw)} '
+              f'L{n(mx - ux * h + uy * hw)},{n(my - uy * h - ux * hw)} Z" fill="{RAY}"{fo}/>')
+
+
+def _arc(f, cx, cy, r, a1, a2, color=INK, w=1.5):
+    """An angle arc around (cx, cy) from direction a1 to a2 (degrees, 0 = right, 90 = down, SVG y down)."""
+    p1 = (cx + r * math.cos(math.radians(a1)), cy + r * math.sin(math.radians(a1)))
+    p2 = (cx + r * math.cos(math.radians(a2)), cy + r * math.sin(math.radians(a2)))
+    large = 1 if abs(a2 - a1) > 180 else 0
+    sweep = 1 if a2 > a1 else 0
+    f.path(f"M{n(p1[0])},{n(p1[1])} A{r},{r} 0 {large},{sweep} {n(p2[0])},{n(p2[1])}", stroke=color, w=w)
+
+
+def rajakulma():
+    """The critical angle, no numbers: a lamp at the bottom of the denser medium n_1 (water, below) sends two rays to
+    the surface. The first meets it at the critical angle alpha_r from the dashed normal; its refracted ray runs along
+    the surface into the medium n_2, alpha_2 = 90 degrees, and a weak part reflects. The second, at a larger angle,
+    is totally reflected back into n_1. Drawn with n_1 = 1,33 for the geometry."""
+    f = Fig("fy9mv-rajakulma", 330, "Kaavakuva, ei lukuarvoja. Alhaalla on aine, jonka taitekerroin n 1 on suurempi, ja ylhäällä "
+            "aine, jonka taitekerroin n 2 on pienempi. Pohjalla oleva lamppu lähettää kaksi valonsädettä rajapintaan. "
+            "Osumakohtiin on piirretty pinnan normaali katkoviivana. Vasemman säteen tulokulma on rajakulma alfa r: "
+            "taittunut säde kulkee pitkin rajapintaa, eli taitekulma alfa 2 on 90 astetta, ja heikko osa heijastuu "
+            "takaisin. Oikean säteen tulokulma on rajakulmaa suurempi: valo ei taitu ylempään aineeseen, vaan koko säde "
+            "heijastuu takaisin, eli tapahtuu kokonaisheijastuminen.", size=24)
+    ys, lx, ly = 150, 110, 300
+    f.rect(12, ys, 576, 318 - ys, H.grad(f, "fy9mv-rk-water", WATER_LIGHT, WATER))
+    f.line(12, ys, 588, ys, INK, 2)
+    crit = math.degrees(math.asin(1 / 1.33))
+    hits = [(lx + (ly - 10 - ys) * math.tan(math.radians(d)), d) for d in (crit, 66.0)]
+    for hx, d in hits:
+        f.line(hx, 56, hx, 236, MUTED, 1.5, "6 5")
+        _ray(f, [(lx, ly - 10), (hx, ys)], arrow_at=0)
+    (h1, d1), (h2, d2) = hits
+    # 1: at the critical angle the refracted ray runs along the surface; a weak part reflects
+    _ray(f, [(h1, ys - 3), (h1 + 125, ys - 3)], arrow_at=0)
+    _ray(f, [(h1, ys), (h1 + 60 * math.sin(math.radians(d1)), ys + 60 * math.cos(math.radians(d1)))], w=2.5, opacity=0.6)
+    _arc(f, h1, ys, 40, 90 + d1, 90)
+    a = math.radians(90 + d1 / 2)
+    f.tex(h1 + 66 * math.cos(a), ys + 66 * math.sin(a), r"\alpha_\text{r}", "middle")
+    _arc(f, h1, ys, 34, 270, 360)
+    f.tex(h1 + 40, ys - 54, r"\alpha_2 = 90^\circ", "start")
+    # 2: total internal reflection
+    L2 = (584 - h2) / math.sin(math.radians(d2))
+    _ray(f, [(h2, ys), (h2 + L2 * math.sin(math.radians(d2)), ys + L2 * math.cos(math.radians(d2)))], arrow_at=0)
+    _arc(f, h2, ys, 34, 90 + d2, 90)
+    f.tex(h2, 34, r"\alpha_1 > \alpha_\text{r}", "middle")
+    # the lamp
+    f.rect(lx - 16, ly - 12, 32, 18, IRON, INK, 2, 3)
+    f.circle(lx, ly - 14, 11, HEAT_LIGHT, INK, 2)
+    f.tex(24, 100, r"n_2", "start")
+    f.tex(24, 186, r"n_1", "start")
+    f.tex(584, 290, r"\text{kokonaisheijastuminen}", "end", WHITE)
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "kartta": kartta, "siirto": siirto, "ympyra": ympyra, "rajakulma": rajakulma}
 REUSE = {"kartta": "reveals: the key laws of FY7 magnetism, induction and light",
          "siirto": "reveals: 40 kW through 0,50 ohm loses 38 % at 230 V and 0,005 % at 20 kV",
-         "ympyra": "reveals: the magnetic force on a positive charge points to the centre, counterclockwise in B into the page"}
+         "ympyra": "reveals: the magnetic force on a positive charge points to the centre, counterclockwise in B into the page",
+         "rajakulma": "safe: the critical angle with the refracted ray along the surface and a totally reflected ray, no numbers"}

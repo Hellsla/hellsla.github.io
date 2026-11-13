@@ -307,8 +307,8 @@ missä $s$ on paikka (m) valitusta nollakohdasta mitattuna, $s_0$ alkupaikka (m)
 
 ### Nopeus kuvaajasta
 $(t, s)$-kuvaaja on suora, ja suoran kulmakerroin on nopeus:
-```latex
-v = \frac{\Delta s}{\Delta t}
+```kaavat
+keskivauhti :: v = \frac{\Delta s}{\Delta t}
 ```
 missä $\Delta s$ on paikan muutos (m) ja $\Delta t$ sen aikaväli (s). Suora leikkaa $s$-akselin alkupaikan $s_0$ kohdalla. Jos $s_0 = 0$, paikka on suoraan verrannollinen aikaan: $s = vt$. Jos $s_0 \neq 0$, suora on yhtä jyrkkä kuin samalla nopeudella origosta alkava suora, mutta siirtynyt ylös tai alas. Silloin vain matka $\Delta s$, ei paikka $s$, on suoraan verrannollinen aikaan.
 

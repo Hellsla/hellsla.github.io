@@ -87,6 +87,18 @@
       "answer": 1.8,
       "unit": "ns",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-2-L1-09",
+      "level": 1,
+      "text": "In an electron-beam tube, electrons fly at a speed of $4.0 \\cdot 10^{6}\\,\\text{m/s}$ perpendicular to a uniform magnetic field. The magnetic flux density is $0.80\\,\\text{mT}$ and the magnitude of the electron's charge is $1.602 \\cdot 10^{-19}\\,\\text{C}$. Look up the mass of the electron in the MAFY tables (mafytaulukot.fi). How large is the radius of the circular path of the electrons? Give the answer in centimetres.",
+      "lookup": "MAFY",
+      "answer": 2.84,
+      "unit": "cm",
+      "tolerance": 0.04,
+      "hints": [
+        "The value is in the MAFY tables, in the table *Hiukkasten ominaisuuksia*."
+      ]
     }
   ],
   "level2": [
@@ -264,6 +276,15 @@
           "feedback": "Here the force is drawn in the direction of the velocity, as if the field accelerated the electron. The magnetic force is perpendicular to the velocity, so it does not change the speed but turns the direction of motion."
         }
       ]
+    },
+    {
+      "id": "fy7-2-L2-09",
+      "level": 2,
+      "text": "The graph shows the radius $r$ of the circular path of a particle as a function of its speed $v$, when the particle moves perpendicular to a uniform magnetic field. The magnetic flux density is $0.20\\,\\text{T}$ and the charge of the particle is $1.602 \\cdot 10^{-19}\\,\\text{C}$. Read from the graph the radius at the speed $1.5 \\cdot 10^{6}\\,\\text{m/s}$ and calculate the mass of the particle. Give the answer in the form $\\ldots \\cdot 10^{-27}\\,\\text{kg}$.",
+      "answer": 3.35,
+      "unit": "10⁻²⁷ kg",
+      "tolerance": 0.04,
+      "figure": "fy7-2/r-points"
     }
   ],
   "level3": [

@@ -244,3 +244,14 @@ b) Asema saa ottaa enintään $7{,}6\,\text{A}$.
 
 c) Kaapelin lämpenemisteho on $24\,\text{W}$ virralla $7{,}6\,\text{A}$ ja $104\,\text{W}$ virralla $16\,\text{A}$. Virta kasvaa kertoimella $16 : 7{,}609 \approx 2{,}1$. Teho kasvaa kertoimen neliön verran eli noin $4{,}4$-kertaiseksi. Illalla pääsulake on jo lähes täynnä. Virta $16\,\text{A}$ ylittäisi sen ($17{,}4\,\text{A} + 16\,\text{A} = 33{,}4\,\text{A}$). Kuormanhallinnan pitää siis rajoittaa latausvirta ruuhka-ajaksi. Pienempi virta pitää myös kaapelin viileämpänä.
 **Järkevyys:** Talon virta ja aseman virta ovat yhteensä $17{,}39\,\text{A} + 7{,}609\,\text{A} = 25{,}0\,\text{A}$ eli täsmälleen pääsulakkeen raja. Aseman teho olisi vain $230\,\text{V} \cdot 7{,}609\,\text{A} \approx 1{,}75\,\text{kW}$. Hidas lataus on siis järkevä ruuhka-aikaan. Yöllä kiuas ja liesi ovat pois päältä, ja silloin virtaa voi taas lisätä.
+
+## fy6-16-L2-09
+**Annettu:** kuvaajasta luetut tehot ja ajat, hinta $a = 16\,\text{snt/kWh}$
+**Kysytty:** talon sähkön kustannus $K$ euroina kello 18–22
+**Periaate:** Kun teho pysyy samana, energia on teho kertaa aika. Kustannus on energia kertaa hinta. Kuvaajassa teho on vakio jokaisen tunnin ajan. Energia on siis neljän suorakulmion pinta-alojen summa.
+**Kuvaajan lukeminen:** Teho on $P_1 = 2\,\text{kW}$ kello 18–19, $P_2 = 5\,\text{kW}$ kello 19–20, $P_3 = 7\,\text{kW}$ kello 20–21 ja $P_4 = 3\,\text{kW}$ kello 21–22. Jokainen jakso kestää $\Delta t = 1{,}0\,\text{h}$.
+**Kaava:** $W = (P_1 + P_2 + P_3 + P_4) \Delta t$ ja $K = a W$
+**Muunnokset:** $a = 16\,\text{snt/kWh} = 0{,}16\,\text{€/kWh}$
+**Sijoitus:** $W = (2\,\text{kW} + 5\,\text{kW} + 7\,\text{kW} + 3\,\text{kW}) \cdot 1{,}0\,\text{h} = 17\,\text{kWh}$ ja $K = 0{,}16\,\text{€/kWh} \cdot 17\,\text{kWh} = 2{,}72\,\text{€}$
+**Vastaus:** $2{,}7\,\text{€}$. Vastauksessa on kaksi merkitsevää numeroa, kuten kuvaajasta luetuissa arvoissa.
+**Järkevyys:** Keskiteho on $17\,\text{kWh} : 4{,}0\,\text{h} \approx 4{,}3\,\text{kW}$. Se on kuvaajan pienimmän ja suurimman tehon välissä. Neljä tuntia noin $4\,\text{kW}$:n teholla on noin $17\,\text{kWh}$, ja se maksaa noin $17 \cdot 0{,}16\,\text{€} \approx 2{,}7\,\text{€}$.

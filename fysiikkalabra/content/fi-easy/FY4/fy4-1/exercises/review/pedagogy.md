@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: d0bb3ff4b5264b29
+CONTENT-HASH: bf3a4ac783331157
+SCOPE: delta added-exercise from 86a6d50bcb2c895f base 7db0992d648a
 
 ## Blocking
+None.
 
 ## Polish
-- None.
-
-## Fixed
-- No text change needed in this translation.
+None.
 
 ## Checked
-- fy4-1-L1-09: task text, hints toward the method, distractor feedback and solution say the same as the Finnish and name each misconception; NOTES.md §12: shorter sentences, kulmakerroin explained as jyrkkyys, no step dropped, physics terms and formulas unchanged.
-- Feedback repairs the misconception (names the error) and does not only restate the answer; no answer is disclosed in the task text.
-- Figure descriptions (figures.json): all four pick-* descriptions give the same axes (t 0-5 s, x -6...12 m) and endpoints as the Finnish (6->10, 0->-4, 6->2, -1 flat) and match figures.py; none names the answer; a reader who cannot see the figure gets the same data as a sighted one.
-- Terms used consistently; no Finnish left in the translated text.
+- Round 2, delta: the round-1 fixes judged in their context.
+- L2-08 solution now names the average speed v_kv (v_sp in en) in Find, Formula and Substitution; it no longer collides with the displacement-based keskinopeus v_k, which closes my round-1 Polish 1.
+- L2-09 significant-figure sentence now says the values are read from the graph; correct.
+- No new task, figure or level change; set mix and counts unchanged from the passed version.
+- Language and case endings in the changed text are correct.

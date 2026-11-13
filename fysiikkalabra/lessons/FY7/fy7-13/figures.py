@@ -293,6 +293,81 @@ def setup():
     return f.svg()
 
 
+def setup_q():
+    """Question-safe screen measurement (answers.py): a grating, screen at L = 1,20 m with a ruler; the maxima k = 0, ±1, ±2 are
+    drawn at their true places, but only L and the ruler are given: the student reads the positions."""
+    f = Fig("fy713-setupq", 460, "Kaavakuva mittakaavassa ylhäältä nähtynä: vasemmalla laser, jonka säde osuu kohtisuoraan "
+            "hilaan. Hilasta 1,20 metrin päässä on varjostin, jonka reunaan on piirretty asteikko senttimetreinä "
+            "keskimaksimin kohdasta nollasta, merkinnät kahdenkymmenen sentin välein ja pienet viivat kymmenen sentin "
+            "välein. Varjostimella on viisi valopistettä: keskimaksimi k = 0 kohdassa nolla sekä k = 1 ja k = 2 "
+            "kummallakin puolella. Toisen kertaluvun pisteet ovat asteikolla kohdissa 70 ja miinus 70 senttimetriä; "
+            "ensimmäisen kertaluvun pisteet ovat lähempänä keskimaksimia. Etäisyys hilasta varjostimelle L on merkitty.")
+    sc = 2.2                                                  # px per cm, both directions
+    L = 120.0
+    gx, yc = 120, 235
+    sx = gx + sc * L
+    lam, d = 629.7e-9, 2.5e-6
+    pos = {k: L * math.tan(math.asin(k * lam / d)) for k in (0, 1, 2)}
+    laser_body(f, gx - 30, yc, 80)
+    ray(f, gx - 30, yc, gx, yc, head=False)
+    dashed(f, gx, yc, sx, yc)
+    for k in (1, 2):
+        for s in (-1, 1):
+            ray(f, gx, yc, sx, yc - s * sc * pos[k], w=2.5)
+    ray(f, gx, yc, sx, yc, w=2.5)
+    f.rect(gx - 4, yc - 46, 8, 92, GLASS, INK, 2, 2)
+    for k in range(11): f.line(gx - 4, yc - 40 + 8 * k, gx + 4, yc - 40 + 8 * k, MUTED, 1)
+    f.rect(sx, 52, 10, 366, WHITE, INK, 2)
+    for k in (0, 1, 2):
+        for s in ((1, -1) if k else (1,)):
+            f.circle(sx + 5, yc - s * sc * pos[k], 6, RAY, INK, 1.5)
+    # ruler on the screen: ticks every 10 cm, numbers every 20 cm
+    for c in range(-80, 81, 10):
+        y = yc - sc * c
+        f.line(sx + 10, y, sx + (24 if c % 20 == 0 else 17), y, INK, 1.5)
+        if c % 20 == 0:
+            f.tex(sx + 30, y, fr"{c}", "start", w=44)
+    f.tex(sx + 76, 235 - 80 * sc, r"\text{cm}", "start", w=40)
+    dim(f, gx, 438, sx, 438)
+    f.tex((gx + sx) / 2, 418, r"L = 1{,}20\,\text{m}", "middle", w=110, bg=True)
+    f.tex(gx - 70, yc + 34, r"\text{laser}", "middle")
+    f.tex(gx + 14, yc + 66, r"\text{hila}", "start")
+    f.tex(sx - 8, 16, r"\text{varjostin}", "middle")
+    return f.svg()
+
+
+def spectrum_q():
+    """Question-safe screen view (answers.py): the first-order white-light spectrum of an unknown grating at L = 1,00 m on a
+    centimetre ruler; the edges of the spectrum are drawn at their true places and no number is written at them."""
+    f = Fig("fy713-spectrumq", 200, "Kaavakuva mittakaavassa: varjostin edestä nähtynä metrin etäisyydellä hilasta. "
+            "Valkoinen valo kulkee hilan läpi. Keskellä on valkoinen keskimaksimi, ja sen kummallakin puolella on "
+            "ensimmäisen kertaluvun spektri, jossa violetti on sisäreunalla ja punainen ulkoreunalla. Varjostimen "
+            "alla on senttimetriasteikko keskimaksimin kohdasta nollasta, merkinnät viiden sentin välein ja pienet "
+            "viivat senttimetrin välein, vasemmalle ja oikealle 25 senttimetriin asti. Spektrin sisäreuna on noin "
+            "kymmenen ja ulkoreuna noin 18 senttimetrin kohdalla. Hilan viivatiheyttä ei ole merkitty.")
+    N, L = 250, 100.0
+    d = 1e-3 / N
+    x0, x1, ys, hs = 20, 580, 30, 60
+    cx, sc = (x0 + x1) / 2, (x1 - x0) / 2 / 28
+    f.rect(x0, ys, x1 - x0, hs, INK, INK, 2, 3)
+    for s in (-1, 1):
+        for lam in range(400, 701, 2):
+            x = L * math.tan(math.asin(lam * 1e-9 / d))
+            f.rect(cx + s * x * sc - 1.2, ys + 4, 3, hs - 8, colour(lam), extra='fill-opacity="0.85"')
+    f.circle(cx, ys + hs / 2, 11, WHITE)
+    f.rect(x0, ys, x1 - x0, hs, "none", INK, 2, 3)
+    yr = ys + hs + 14
+    f.line(cx - 25 * sc, yr, cx + 25 * sc, yr, INK, 1.5)
+    for c in range(-25, 26):
+        f.line(cx + c * sc, yr, cx + c * sc, yr + (12 if c % 5 == 0 else 6), INK, 1.5 if c % 5 == 0 else 1)
+        if c % 5 == 0:
+            f.tex(cx + c * sc, yr + 26, fr"{abs(c)}", "middle", w=30)
+    f.tex(cx + 25 * sc + 20, yr + 2, r"\text{cm}", "start", w=28)
+    f.tex(x0, 12, r"\text{varjostin edestä}", "start", w=150)
+    f.tex(x1, 12, r"L = 1{,}00\,\text{m}", "end", w=110)
+    return f.svg()
+
+
 def hero():
     """The opening illustration: in a dark classroom a laser shines through a grating slide; a row of red spots on the wall."""
     f = H.hero("fy713-hero", "Kuvitus: pimeä luokkahuone. Pöydällä vasemmalla on laserosoitin pienellä telineellä, ja sen "
@@ -364,7 +439,7 @@ def scene():
 
 
 FIGURES = {"hero": hero, "slit": slit, "young": young, "pattern": pattern, "white": white, "geometry": geometry,
-           "setup": setup, "scene": scene}
+           "setup": setup, "scene": scene, "setup-q": setup_q, "spectrum-q": spectrum_q}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "slit": "reveals: a narrower slit spreads the light more (diffraction)",
@@ -373,4 +448,6 @@ REUSE = {
     "white": "reveals: in a grating red deviates most (300 lines/mm: 400 nm 6,9°, 700 nm 12,1°), the 2nd and 3rd orders overlap",
     "geometry": "reveals: the path difference of neighbouring slits is Δs = d sin θ",
     "setup": "reveals: 600 lines/mm, 532 nm, L = 1,00 m: θ1 = 18,6°, x1 = 33,7 cm; tan θ1 = x1 : L",
+    "setup-q": "safe: L = 1,20 m and a ruler, spots k = 0, ±1, ±2 at their true places (no x or λ written); REUSE: a task asks the wavelength from the k = 2 spot, the grating's lines/mm given in the task",
+    "spectrum-q": "safe: first-order white-light spectrum at L = 1,00 m on a cm ruler, edges at their true places (no number written, no lines/mm); REUSE: a task asks the grating's lines/mm from the red edge",
 }

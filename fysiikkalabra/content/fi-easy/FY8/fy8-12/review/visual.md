@@ -1,12 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 353aa98f11ab5972
-Mode: light (teacher 2026-11-10, "kevyt katselmointi": the FY8 error-check fix diff since origin/main only)
+CONTENT-HASH: 9536f03d31dd0fcd
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] fig 4 (näkyvä valo -nauha) — the band is only about 14 px wide at 390 px, so the six colour stripes are hard to tell apart — widen the band slightly if the teacher agrees; the figure is teacher-approved, so this may wait.
 
 ## Checked
-- Source-level read of the diff: Finnish/English wording, LaTeX number+unit typography (thin space, \text units, decimal comma in fi/fi-easy, \cdot), the aligned block with \approx in fy8-9 where applicable; no inline formula wrapping, no new figures. No render made.
+- fy8-12-fig-4-390: the diff only reverses the order of the colour stripes in the visible-light band. Red is now at the low-energy left end and violet at the high-energy right end, which matches the energy axis increasing to the right. The band outline, the labels "näkyvä valo" and "1,7–3,3 eV" and the ionisoiva/ionisoimaton areas are intact, with no clipping or overlap.
+- Hash: now 9536f03d31dd0fcd, the same as the packet's.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

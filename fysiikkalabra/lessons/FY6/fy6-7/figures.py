@@ -120,6 +120,23 @@ def washer():
     return f.svg()
 
 
+# --- task figure: a tumble dryer's power during one programme (variant of the washer figure) -------------------
+def dryer():
+    f = Fig("fy67-dryer", 350, "Kuvaaja mittakaavassa: kuivausrummun teho P kilowatteina ajan t funktiona tunteina yhden kuivausohjelman "
+            "aikana. Pystyakselin ruudukon väli on 0,4 kW ja vaaka-akselin 0,25 h. Teho on ensin 2,4 kW ajan 0–0,5 h, sitten "
+            "1,2 kW ajan 0,5–1,5 h ja lopuksi 0,2 kW ajan 1,5–2,0 h, minkä jälkeen kone sammuu.")
+    yt = [0.4 * k for k in range(1, 7)]
+    ax = Axes(f, (84, 296), (470, 66), x=(0, 2.25), y=(0, 2.8), xticks=[0.25 * k for k in range(1, 9)], yticks=yt,
+              xlabel=r"t\ (\text{h})", ylabel=r"P\ (\text{kW})",
+              xfmt=lambda v: fi(v) if abs(v * 2 - round(v * 2)) < 1e-9 and v < 2.1 else "",
+              yfmt=lambda v: fi(round(v, 1)))
+    ax.line([(0, 2.4), (0.5, 2.4), (0.5, 1.2), (1.5, 1.2), (1.5, 0.2), (2.0, 0.2), (2.0, 0)], HEAT, 3)
+    f.tex(ax.X(0.5) + 12, ax.Y(2.4), r"\text{kuumennus}", "start", w=130)
+    f.tex(ax.X(1.0), ax.Y(1.2) - 26, r"\text{kuivaus}", "middle", w=100)
+    f.tex(ax.X(1.75), ax.Y(0.2) - 26, r"\text{jäähdytys}", "middle", w=110)
+    return f.svg()
+
+
 # --- opening illustration: a home on a winter evening ---------------------------------------------------------
 def hero():
     f = H.hero("fy67-hero", "Kuvitus: talvi-ilta ja leikkauskuva omakotitalosta. Vasemmalla saunassa hehkuu sähkökiuas, keskellä "
@@ -207,11 +224,12 @@ def hero():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "power-time": power_time, "kwh": kwh, "washer": washer}
+FIGURES = {"hero": hero, "power-time": power_time, "kwh": kwh, "washer": washer, "dryer": dryer}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "hero": "decorative",
     "power-time": "reveals: 2,0 kW for 0,10 h and 0,10 kW for 2,0 h are the same 0,20 kWh (energy = area)",
     "kwh": "reveals: 1 kW for 1 h is 1 kWh = 1000 W · 3600 s = 3,6 MJ",
     "washer": "safe: a washing machine's (t, P) graph, 2,0 / 0,2 / 0,4 kW in three stages, no energy written",
+    "dryer": "safe: a tumble dryer's (t, P) graph, 2,4 / 1,2 / 0,2 kW in three stages, no energy written",
 }

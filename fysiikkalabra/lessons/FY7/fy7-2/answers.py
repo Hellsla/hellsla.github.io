@@ -43,4 +43,8 @@ a["fy7-2-L3-04"] = round(e * 0.200**2 * k34 / 2 / u, 3)  # m = qB²k/2 = 3,79e-2
 v35 = e * 1.00 * 0.20 / mp                              # 1,92e7 m/s (6,4 % of c)
 n35 = round(0.5 * mp * v35**2 / (e * 60e3))             # 31,9 -> 32 crossings = 16 revolutions
 a["fy7-2-L3-05"] = round(n35 / 2 * 2 * math.pi * mp / (e * 1.00) / 1e-6, 2)   # t = 16 · 65,6 ns = 1,05 µs
+# Added 2026-11-13: L1-09 MAFY table task (electron mass from the table, m_e = 9,109 383 7e-31 kg; e given): r = mv/(|q|B)
+a["fy7-2-L1-09"] = 9.1093837e-31 * 4.0e6 / (e * 0.80e-3) * 100   # v = 4,0e6 m/s, B = 0,80 mT: r = 2,843e-2 m = 2,8 cm
+# L2-09 figure task (fy7-2/r-points): read r = 15,7 cm at v = 1,5e6 m/s, B = 0,20 T, q = e; m = |q|Br/v
+a["fy7-2-L2-09"] = e * 0.20 * 0.157 / 1.5e6 / 1e-27     # 3,35e-27 kg (the figure's particle is a deuteron, 3,344e-27 kg)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 85ea8eb31e4d0bd7
-Mode: delta (c2c6eff02, s2 d conclusion criterion)
+CONTENT-HASH: a65ec454cabb7a0f
 
 ## Blocking
+None. Delta: line 294 (fy4-s2 b) now writes E_p0, the starting potential energy, as the energy principle needs; consistent with the lesson and the rest of the task.
 
 ## Polish
-- solutions.md "Mitoitus" caveat now carries no point; fine as teaching text. The "Hyväksytään myös" line for s2 d matches the trimmed criterion.
+None.
 
 ## Checked
-- Diff only; text read.
-- s2 d conclusion is now only the choice of the larger speed and its reason, which is exactly what the part text asks. The earlier unasked point is gone, so a correct answer can earn 4/4.
-- s3 b and the earlier Sovella deltas unchanged and passed.
+Diff of solutions.md since the passed version.

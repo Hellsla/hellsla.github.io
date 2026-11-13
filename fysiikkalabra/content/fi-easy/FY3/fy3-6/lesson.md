@@ -162,17 +162,15 @@ Kuuma ja kylmä kappale laitetaan yhteen eristettyyn astiaan. Silloin lämpöä 
 
 ## Kaava: Lämpömäärä ja lämpötasapaino
 Kun aineen olomuoto ei muutu, massan $m$ lämmittämiseen tarvittava lämpömäärä on
-```latex
-\begin{aligned}
-Q &= c m \Delta T \\
-\Delta T &= T_\text{loppu} - T_\text{alku}
-\end{aligned}
+```kaavat
+siirtynyt lämpömäärä :: Q = c m \Delta T
+\Delta T = T_\text{loppu} - T_\text{alku}
 ```
 Sama lämpömäärä vapautuu, kun massa jäähtyy. Kaavassa $Q$ on lämpömäärä (J) ja $c$ on aineen ominaislämpökapasiteetti (J/(kg·K)). Lisäksi $m$ on massa (kg) ja $\Delta T$ on lämpötilan muutos (K). Lämpötilan muutos on loppulämpötila $T_\text{loppu}$ miinus alkulämpötila $T_\text{alku}$. Lämpötilan muutos on sama kelvineinä ja celsiusasteina. Siksi $\Delta T$ voi laskea suoraan celsiuslämpötiloista. Kun kappale lämpenee, $\Delta T$ ja $Q$ ovat positiivisia. Kun kappale jäähtyy, ne ovat negatiivisia.
 
 Koko kappaleen lämpökapasiteetti on
-```latex
-C = c m
+```kaavat
+lämpökapasiteetti :: C = c m
 ```
 Se kertoo, kuinka monta joulea kappaleen lämpötilan nostaminen yhdellä kelvinillä vaatii. Tässä $C$ on lämpökapasiteetti (J/K), $c$ on ominaislämpökapasiteetti ja $m$ on massa. Jos kappaleen lämpökapasiteetti on suuri, kappale lämpenee ja jäähtyy hitaasti.
 

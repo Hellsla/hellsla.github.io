@@ -1,18 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: bef150567c114887
-Mode: full (translation review against the reviewed Finnish set; one new task fy4-9-L1-09)
-Round 2
+CONTENT-HASH: 724262a8cdeb5d9e
 
 ## Blocking
-(none)
-
-## Fixed
-(none needed)
+None.
 
 ## Polish
-(none)
+None.
 
 ## Checked
-- New task fy4-9-L1-09 keeps the Finnish structure: situation first, question last as its own sentence, level and kind as in fi, feedback names the specific error.
-- Language is selkosuomi per NOTES.md §12, same physics; reading level and terms equal to fi, glossary terms consistent.
-- The solution has the full steps (Given, Find, Principle, formula, substitution, answer, reasonableness) as in fi, with significant figures as in fi.
+- Round 2, delta: the round-1 fixes judged in their context.
+- L2-05 Answer line now fixes two significant figures (4,5 * 10^2 N) with a reason; 450 N correct (half of 900 N).
+- No new task, figure or level change; set mix and counts unchanged from the passed version.
+- Language and case endings in the changed text are correct.

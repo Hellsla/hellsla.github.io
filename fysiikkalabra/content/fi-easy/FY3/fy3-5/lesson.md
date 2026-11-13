@@ -99,8 +99,8 @@ Eristetty systeemi on suljettu systeemi. Siihen ei siirry energiaa lämpönä ei
 
 ## Kaava: Termodynamiikan ensimmäinen pääsääntö
 Sisäenergian muutos on kahden asian summa: systeemiin tuotu lämpömäärä ja systeemiin tehty työ:
-```latex
-\Delta U = Q + W
+```kaavat
+lämpöopin 1. pääsääntö :: \Delta U = Q + W
 ```
 Tässä $\Delta U$ on sisäenergian muutos (J). $Q$ on systeemiin siirtynyt lämpömäärä (J). $W$ on ympäristön systeemiin tekemä työ (J). Merkit kertovat suunnan.
 

@@ -1,12 +1,12 @@
 VERDICT: PASS
 CONTENT-HASH: 33038199a3b55af5
-Delta review (solution practice, 2026-11-12) of the version passed before.
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 33038199a3b55af5.
 
 ## Blocking
 (none)
 
 ## Polish
-1. `sovella/tasks.json` s2 c: `answer.value` is still 9.81 while the model answer now gives $g \approx 9{,}8\,\text{m/s}^2$ with two figures (the rubric accepts both, tolerance covers both). Fix: set the value to 9.8 so the stored answer matches the solution.
+1. sovella/solutions.md, pendulum c) Answer: the reason for two significant figures ("$0.46\,\text{s}^2$ has two digits") is not the rule for a difference: $3.68 - 0.46 = 3.22$ is known to the hundredth, i.e. three figures. $9.8\,\text{m/s}^2$ is still the right rounding given the stated reading uncertainty $\pm 0.3\,\text{m/s}^2$; giving that as the reason would be cleaner. The rubric accepts $9.8$ or $9.81$, so assessment is consistent.
 
 ## Checked
-s2 c: $g = 4\pi^2/k$ = 9,808 m/s²; the two-figure reason (reading 0,46 s², ±0,05 s² ⇒ ±0,3 m/s²) is right. The `unit.md` precision sentence (exact quantities never limit precision) is correct. The fi, fi-easy and en diffs carry identical mathematics (every changed formula compared token by token); answers.py run; `units.py check` passes.
+Every hunk of the en merge diff (word diff). $g = 4\pi^2/k$ with $k = 3.22/0.800 = 4.025$ s²/m gives 9.808 m/s², recomputed; unit.md rule on exact quantities (integers, conversion factors) correct. Every changed formula is symbolic before substitution and uses no symbol in a sense that differs from the unit's ```kaavat``` names or notation from #522; the $ and brace balance of each added line is checked; `units.py check` passes; the hash was taken at the start and the end and matches.

@@ -158,7 +158,7 @@ The phenomena of the module are connected with two fields. A **magnetic field** 
 
 In exam problems it pays to ask first what changes. If the flux does not change, no voltage is produced. When light passes from one medium into another, the frequency stays the same, but the speed and the wavelength change. The colours of light and bright and dark spots are explained either by refraction or by interference, and in a problem you have to recognise which one it is.
 
-This gives the answer to the opening question. A power of $40\,\text{kW}$ is transmitted along the cable from the mainland, and the resistance of the cable is $0.50\,\Omega$. At the voltage $230\,\text{V}$ the current in the cable would be $I = \tfrac{P}{U} \approx 174\,\text{A}$, and $RI^2 \approx 15\,\text{kW}$, or $38\,\%$ of the power, would turn into heat. At the voltage $20\,\text{kV}$ the current is only $2.0\,\text{A}$, and the loss is $2.0\,\text{W}$. Transformers step the voltage up on the mainland and down on the island.
+This gives the answer to the opening question. A power of $40\,\text{kW}$ is transmitted along the cable from the mainland, and the resistance of the cable is $0.50\,\Omega$. At the voltage $230\,\text{V}$ the current in the cable would be $I = \tfrac{P}{U} \approx 174\,\text{A}$, and about $15\,\text{kW}$, or $38\,\%$ of the power, would turn into heat in the resistance of the cable (the power loss is derived under *Induction and alternating current*). At the voltage $20\,\text{kV}$ the current is only $2.0\,\text{A}$, and the loss is $2.0\,\text{W}$. Transformers step the voltage up on the mainland and down on the island.
 
 <svg data-fig="siirto" viewBox="0 0 600 360" role="img" aria-label="Diagram to scale: the same power of 40 kilowatts is transmitted through a cable whose resistance is 0.50 ohms. Upper bar: at a voltage of 230 volts the current is 174 amperes, and the reddish-brown part of the bar, the power of 15 kilowatts that turns into heat in the cable, is 38 per cent of the whole bar. Lower bar: at a voltage of 20 kilovolts the current is 2.0 amperes, and only 2.0 watts turns into heat, 0.005 per cent, which is thinner than a line in the bar." style="max-width:100%;font-size:24px">
   <foreignObject x="194.5" y="7.5" width="211" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$P = 40\,\text{kW},\ R = 0.50\,\Omega$</div></foreignObject>
@@ -185,13 +185,14 @@ This gives the answer to the opening question. A power of $40\,\text{kW}$ is tra
 
 ```kaavat
 magnetic force on a charged particle :: F_\text{M} = QvB_\perp
-radius of a charged particle's circular path in a magnetic field :: r = \frac{mv}{QB}
 magnetic force on a straight conductor :: F_\text{M} = I\ell B_\perp
-magnetic flux density of a straight current-carrying wire :: B = \frac{\mu_0 I}{2\pi r}
+magnetic flux density of a straight current-carrying wire :: B = \frac{\mu_0}{2\pi r}\,I
 magnetic flux density of a long solenoid :: B = N\,\frac{\mu_0}{\ell}\,I
 ```
 
-where $F_\text{M}$ is the magnetic force ($\text{N}$), $Q$ the charge ($\text{C}$), $v$ the speed ($\text{m/s}$), $B$ the magnetic flux density ($\text{T}$), $B_\perp = B\sin\alpha$ its component perpendicular to the velocity or the wire, when $\alpha$ is the angle between the velocity or the wire and the field, $m$ the mass ($\text{kg}$), $r$ the radius of the circular path or the distance from the wire ($\text{m}$), $I$ the current ($\text{A}$), $\ell$ the length of the wire or the coil ($\text{m}$), $N$ the number of turns and $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$. The formula for the radius holds when the velocity is perpendicular to a uniform field and small compared with the speed of light. The magnetic force does not change the speed. The formula for the wire holds for a long straight wire, and the formula for the coil at the middle of a long coil.
+where $F_\text{M}$ is the magnetic force ($\text{N}$), $Q$ the charge ($\text{C}$), $v$ the speed ($\text{m/s}$), $B$ the magnetic flux density ($\text{T}$), $B_\perp = B\sin\alpha$ its component perpendicular to the velocity or the wire, when $\alpha$ is the angle between the velocity or the wire and the field, $r$ the distance from the wire ($\text{m}$), $I$ the current ($\text{A}$), $\ell$ the length of the wire or the coil ($\text{m}$), $N$ the number of turns and $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$. The magnetic force does not change the speed. The formula for the wire holds for a long straight wire, and the formula for the coil at the middle of a long coil.
+
+When a charged particle of mass $m$ ($\text{kg}$) and charge $Q$ moves with the speed $v$ perpendicular to a uniform magnetic field, the magnetic force is always perpendicular to the velocity. The particle then moves in uniform circular motion on a path of radius $r$ ($\text{m}$).
 
 <svg data-fig="ympyra" viewBox="0 0 600 420" role="img" aria-label="Diagram: a positive particle in a uniform magnetic field pointing into the paper (green crosses). The path of the particle is a dashed circle, which it goes round anticlockwise. At four points of the path a blue velocity arrow is along the path and a red arrow of the magnetic force points to the centre of the circle, perpendicular to the velocity. The radius r is marked from the centre to the path." style="max-width:100%;font-size:24px">
   <line x1="33" y1="27" x2="47" y2="41" stroke="#2b8a3e" stroke-width="2.4" stroke-linecap="butt"/>
@@ -280,10 +281,27 @@ where $F_\text{M}$ is the magnetic force ($\text{N}$), $Q$ the charge ($\text{C}
   <circle cx="110" cy="214" r="12" fill="#f2a69c" stroke="#1f2933" stroke-width="2"/>
   <foreignObject x="101" y="202" width="18" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$+$</div></foreignObject>
   <foreignObject x="334" y="343.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\overline{v}$</div></foreignObject>
-  <foreignObject x="264" y="299.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_\text{m}$</div></foreignObject>
+  <foreignObject x="264" y="299.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_\text{M}$</div></foreignObject>
   <foreignObject x="416" y="387.5" width="174" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#2b8a3e"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\overline{B}\ \text{into the page}$</span></div></foreignObject>
-  <foreignObject x="470" y="25.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$r = mv/(qB)$</div></foreignObject>
 </svg>
+
+```johda
+A charged particle (mass $m$, charge $Q$) moves with the speed $v$ perpendicular to a uniform magnetic field $B$. Derive the radius $r$ of its circular path.
+---
+The magnetic force is perpendicular to the velocity, so it does not change the speed, only the direction of motion: the particle is in uniform circular motion. The magnetic force is the only force acting, so by Newton's second law it gives the particle the centripetal acceleration $a_\text{n} = \tfrac{v^2}{r}$:
+
+$$F_\text{M} = ma_\text{n} = m\frac{v^2}{r}$$
+
+The velocity is perpendicular to the field, so $B_\perp = B$, and the magnetic force on a charged particle is $F_\text{M} = QvB$. Substitute:
+
+$$QvB = m\frac{v^2}{r}$$
+
+Divide both sides by $v$ and solve for the radius:
+
+$$r = \frac{mv}{QB}$$
+
+Here $Q$ is the magnitude of the charge. The result holds when the speed is small compared with the speed of light and gravity is negligible compared with the magnetic force.
+```
 
 ### Induction and alternating current
 
@@ -292,10 +310,29 @@ voltage induced in a coil :: e = -N\frac{\Delta\Phi}{\Delta t}
 peak value of the sinusoidal voltage induced in a generator coil :: u_0 = NAB\cdot 2\pi f
 rms value of a sinusoidal alternating voltage :: U_\text{eff} = \frac{u_0}{\sqrt{2}}
 transformer :: \frac{N_1}{N_2} = \frac{U_1}{U_2} \approx \frac{I_2}{I_1}
-power loss in a transmission line :: P_\text{h} = RI^2
 ```
 
-where $e$ is the induced voltage ($\text{V}$), $\Phi = BA$ the magnetic flux ($\text{Wb}$) when the field is perpendicular to the surface $A$, $u_0$ the peak value of the generator voltage, $f$ the rotation frequency ($\text{Hz}$), $U_\text{eff}$ and $u_0$ the rms value and the peak value, the indices $1$ and $2$ the primary and secondary side of the transformer, and $P_\text{h}$ the power loss of the transmission line when $I = \tfrac{P}{U}$. The minus sign is Lenz's law: the induced current opposes the change of flux. The voltage of a rod moving in a field is $e = vBl$. The transformer equation applies to an alternating voltage; the ratio of the currents is an equality only in an ideal, lossless transformer.
+where $e$ is the induced voltage ($\text{V}$), $\Phi = BA$ the magnetic flux ($\text{Wb}$) when the field is perpendicular to the surface $A$, $u_0$ the peak value of the generator voltage, $f$ the rotation frequency ($\text{Hz}$), $U_\text{eff}$ and $u_0$ the rms value and the peak value, the indices $1$ and $2$ the primary and secondary side of the transformer. The minus sign is Lenz's law: the induced current opposes the change of flux. The voltage of a rod moving in a field is $e = vBl$. The transformer equation applies to an alternating voltage; the ratio of the currents is an equality only in an ideal, lossless transformer.
+
+A transmission line carries the power $P$ ($\text{W}$) at the transmission voltage $U$ ($\text{V}$), and the resistance of the line is $R$ ($\Omega$). Part of the power turns into heat in the line, and this power loss $P_\text{h}$ ($\text{W}$) depends on the current in the line.
+
+```johda
+A transmission line carries the power $P$ at the voltage $U$, and the resistance of the line is $R$. Derive the power loss $P_\text{h}$ of the line first in terms of the current $I$ and then in terms of the power $P$ and the voltage $U$.
+---
+The current in the line follows from the transmitted power. The power consumed in a conductor is $P = UI$, so
+
+$$I = \frac{P}{U}$$
+
+The transmission voltage $U$ is not across the line. The voltage between the ends of the line is the voltage drop across a conductor, $RI$, and the power turned into heat in the line is this voltage times the current:
+
+$$P_\text{h} = RI \cdot I = RI^2$$
+
+Substitute the current:
+
+$$P_\text{h} = R\left(\frac{P}{U}\right)^2 = \frac{RP^2}{U^2}$$
+
+The loss is inversely proportional to the square of the transmission voltage. When a transformer raises the transmission voltage $10$-fold, the current falls to a tenth and the loss to a hundredth.
+```
 
 ### Light
 
@@ -303,19 +340,62 @@ where $e$ is the induced voltage ($\text{V}$), $\Phi = BA$ the magnetic flux ($\
 wave equation :: c = f\lambda
 Wien's displacement law :: \lambda_\text{max} = \frac{b}{T}
 law of refraction (Snell's law) :: \frac{\sin\alpha_1}{\sin\alpha_2} = \frac{v_1}{v_2} = \frac{n_2}{n_1}
-critical angle of total internal reflection :: \sin\alpha_\text{r} = \frac{n_2}{n_1}
 grating equation :: d\sin\alpha = n\lambda
-Malus's law :: I = I_0\cos^2\theta
+I = I_0\cos^2\theta
 ```
 
-where $c = 3.00 \cdot 10^8\,\text{m/s}$, $f$ is the frequency, $\lambda$ the wavelength, $T$ the absolute temperature ($\text{K}$), $b = 2.898 \cdot 10^{-3}\,\text{m} \cdot \text{K}$, $n = \tfrac{c}{v}$ the refractive index and $v$ the speed of light in the material, $\alpha_1$ and $\alpha_2$ the angles of incidence and refraction from the normal, $\alpha_\text{r}$ the critical angle when $n_1 > n_2$, $d$ the grating constant, in the grating equation $\alpha$ the direction of a maximum and $n = 0, 1, 2, \ldots$ its order, and $I_0$ the intensity of the polarised light before the analyser. In Malus's law $\theta$ is the angle between the direction of polarisation and the transmission axis of the analyser. In a thin film the path difference is $2nd$ when the light arrives almost perpendicularly. When only one of the reflections inverts the wave, $2nd = \left(k + \tfrac12\right)\lambda$ gives constructive interference; when both invert it, $2nd = k\lambda$.
+where $c = 3.00 \cdot 10^8\,\text{m/s}$, $f$ is the frequency, $\lambda$ the wavelength, $T$ the absolute temperature ($\text{K}$), $b = 2.898 \cdot 10^{-3}\,\text{m} \cdot \text{K}$, $n = \tfrac{c}{v}$ the refractive index and $v$ the speed of light in the material, $\alpha_1$ and $\alpha_2$ the angles of incidence and refraction from the normal, $d$ the grating constant, in the grating equation $\alpha$ the direction of a maximum and $n = 0, 1, 2, \ldots$ its order, and $I_0$ the intensity of the polarised light before the analyser. In Malus's law $\theta$ is the angle between the direction of polarisation and the transmission axis of the analyser. In a thin film the path difference is $2nd$ when the light arrives almost perpendicularly. When only one of the reflections inverts the wave, $2nd = \left(k + \tfrac12\right)\lambda$ gives constructive interference; when both invert it, $2nd = k\lambda$.
+
+When light passes from a medium of higher refractive index into one of lower refractive index ($n_1 > n_2$), the angle of refraction is larger than the angle of incidence. The angle of incidence at which the angle of refraction is $90^\circ$ is the critical angle $\alpha_\text{r}$, and at larger angles of incidence the light is totally internally reflected.
+
+<svg data-fig="rajakulma" viewBox="0 0 600 330" role="img" aria-label="Schematic, no numbers. Below is a medium with the larger refractive index n 1, above a medium with the smaller refractive index n 2. A lamp at the bottom sends two light rays to the boundary. At each point where a ray meets the boundary the normal is drawn as a dashed line. The left ray meets the boundary at the critical angle alpha r: the refracted ray runs along the boundary, so the angle of refraction alpha 2 is 90 degrees, and a weak part is reflected back. The right ray meets the boundary at an angle larger than the critical angle: no light refracts into the upper medium, and the whole ray is reflected back, which is total internal reflection." style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy9mv-rk-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient></defs>
+  <rect x="12" y="150" width="576" height="168" fill="url(#fy9mv-rk-water)"/>
+  <line x1="12" y1="150" x2="588" y2="150" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="269.5" y1="56" x2="269.5" y2="236" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <path d="M110,290 L269.5,150" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M194.5,216 L188.5,229 L180.5,220 Z" fill="#e64980"/>
+  <line x1="424.5" y1="56" x2="424.5" y2="236" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <path d="M110,290 L424.5,150" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M272.5,217.5 L263.5,228.5 L258.5,217.5 Z" fill="#e64980"/>
+  <path d="M269.5,147 L394.5,147" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M338,147 L325,153 L325,141 Z" fill="#e64980"/>
+  <path d="M269.5,150 L315,189.5" fill="none" stroke="#e64980" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.6"/>
+  <path d="M239.5,176.5 A40,40 0 0,0 269.5,190" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <foreignObject x="226" y="195.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\alpha_\text{r}$</div></foreignObject>
+  <path d="M269.5,116 A34,34 0 0,1 303.5,150" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <foreignObject x="309.5" y="81.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\alpha_2 = 90^\circ$</div></foreignObject>
+  <path d="M424.5,150 L584,221" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M509.5,188 L495.5,188 L500.5,177 Z" fill="#e64980"/>
+  <path d="M393.5,164 A34,34 0 0,0 424.5,184" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <foreignObject x="389.5" y="19.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\alpha_1 > \alpha_\text{r}$</div></foreignObject>
+  <rect x="94" y="288" width="32" height="18" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="110" cy="286" r="11" fill="#ffc078" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="24" y="85.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$n_2$</div></foreignObject>
+  <foreignObject x="24" y="171.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$n_1$</div></foreignObject>
+  <foreignObject x="289" y="275.5" width="295" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#ffffff">$\text{total internal reflection}$</div></foreignObject>
+</svg>
+
+```johda
+Light travels in a medium of refractive index $n_1$ towards the boundary with a medium of refractive index $n_2 < n_1$. Derive the critical angle $\alpha_\text{r}$ of total internal reflection.
+---
+The law of refraction (Snell's law) relates the angle of incidence $\alpha_1$ and the angle of refraction $\alpha_2$:
+
+$$\frac{\sin\alpha_1}{\sin\alpha_2} = \frac{n_2}{n_1}$$
+
+At the critical angle the refracted ray runs along the boundary, so $\alpha_1 = \alpha_\text{r}$ and $\alpha_2 = 90^\circ$. Since $\sin 90^\circ = 1$,
+
+$$\sin\alpha_\text{r} = \frac{n_2}{n_1}$$
+
+At a larger angle of incidence the law of refraction would give $\sin\alpha_2 > 1$, which is impossible. The light then does not refract into the other medium but is reflected back completely.
+```
 
 ## Common mistakes {Virheet}
 
 - **Force in the direction of the field.** The magnetic force is perpendicular to the velocity and the field, and on a negative charge it points in the opposite direction.
 - **Large field, large voltage.** The induced voltage depends on the rate of change of the flux, not on the size of the flux.
 - **Lenz opposes the field.** The induced current opposes the change of flux: a ring attracts a receding magnet.
-- **Loss from the formula $\tfrac{U^2}{R}$.** The transmission voltage is not across the line. First calculate $I = \tfrac{P}{U}$, then $RI^2$.
+- **Loss from the formula $\tfrac{U^2}{R}$.** The transmission voltage is not across the line. First calculate the current $I = \tfrac{P}{U}$, then the power loss from the resistance of the line and the current.
 - **Peak value and rms value mixed up.** The $230\,\text{V}$ of a socket is the rms value.
 - **Angle from the surface.** The angles of incidence and refraction are measured from the normal.
 - **Small angle in a grating.** First calculate the angle from the tangent $\tan\theta = \tfrac{x}{L}$, and only then the sine.
