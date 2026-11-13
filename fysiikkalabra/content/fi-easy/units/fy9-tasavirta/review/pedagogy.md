@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 4a03f34fb4a4b052
+CONTENT-HASH: 1d8d8594c47d3b7a
 
-Delta review (formulas in MAFY form, 2026-11-12) of the version passed at e8bf91a0dde33d19.
+Delta review (solution practice, 2026-11-12) of the version passed before.
 
-Blocking: none. The new symbols are defined in the sentence after each formula block, the tasks' forms are still derivable from the theory, and the unit stays coherent for a student.
+n, N, t_1, a named; P_lamp/P_source = R/(R + R_s) is a nice check; 436,8 Wh now used unrounded. Same physics and steps as fi in fi-easy (numbers match fi).
 
-No Polish.
+Checked: diff since 761b6673, symbols defined, solved expression equals Sijoitus, answers.py output, tasks.json answer/criteria, cross-language number match.

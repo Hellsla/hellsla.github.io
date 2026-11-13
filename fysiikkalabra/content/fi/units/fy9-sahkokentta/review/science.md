@@ -1,14 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: c1c05cd889ce9c30
-Delta review (formulas in MAFY form, 2026-11-12) of the version passed at 72f388e811652451.
+CONTENT-HASH: 967124fdb6fbc881
+Delta review (solution practice, 2026-11-12) of the version passed before.
 
 ## Blocking
 (none)
 
 ## Polish
-1. `unit.md`, the intro sentence, and the map hub (`lessons/units/fy9-sahkokentta/figures.py`, `fy9sk-kartta`, including its aria text) keep $\overline{F} = q\overline{E}$ with a lowercase $q$. The theory and the map's own boxes now use $Q$ ($Q = ne$, $W = QU$, $\overline{F}_E = Q\overline{E}$). Fix: write $\overline{F}_E = Q\overline{E}$ in both.
-2. `unit.md`, the capacitor sentence: $E$ is the stored energy there, next to $E_\text{max}$, the breakdown field strength, and to $E = F_E/Q$ above. Each is defined, but they clash. Fix: "($E$ tässä energia, $E_\text{max}$ kentän voimakkuus)".
-3. `inquiry.json` uses $F = qE$, $q_1$ and $qU$. They are defined there, but they differ from the theory's $Q$. Fix: align them.
+(none)
 
 ## Checked
-$F_E = kQ_1Q_2/r^2$ is written for magnitudes, with the vector form $\overline{F}_E = Q\overline{E}$. $E = F_E/Q$. $U = Ed$ only in a uniform field. $V = E_\text{p}/Q$. $W = QU$ with $U = V_A - V_B$ has the right sign. $\tfrac12 mv^2 = |Q|U$. $Q = CU$, $C = \varepsilon_0\varepsilon_\text{r}A/d$ and $E = \tfrac12 CU^2 = \tfrac12 QU$. All conditions are kept, and they are MAFY's forms. The map boxes match. The other rows are unchanged.
+s3 d ($C_1$ defined; $b$ = 22,2 pF) and the two inquiry solutions ($U = V - V_0$: 7,26·10⁶ m/s; $t = sW_0/(3\eta UI)$ = 3,86 h) recomputed. The fi, fi-easy and en diffs carry identical mathematics (every changed formula compared token by token); answers.py run; `units.py check` passes.

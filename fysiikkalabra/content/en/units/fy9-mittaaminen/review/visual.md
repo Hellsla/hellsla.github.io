@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: abf071f03933f894
+CONTENT-HASH: c1bdc8faf7226de3
 
-Delta review of the FY9 audit fixes (2026-11-10). Previous PASS hash: a1fbe68e2eac6dea. The hash was the same at the start and the end of this review.
+Delta review (solution practice, 2026-11-12) of the version passed before.
 
 ## Blocking
-None.
+None. Built fy9-mittaaminen (en) with ?ratkaisut=1, every details element opened, at 390 and 1280 px. No .katex-error, no script errors; the changed Sijoitus, Kaava and Vastaus lines render with upright subscripts and units, thin spaces and \cdot (no x, no \times); decimal comma in fi and fi-easy, decimal point in en; the new symbol definitions ("missä ...") read naturally and the sentences are in the right language.
 
 ## Polish
-- [Minor] Older, out of scope: with every <details> forced open at 360 px the page is wider than the viewport (long substitution chains in some collapsed model answers); not caused by these fixes, and the changed parts themselves fit.
-
-## Checked
-- s1 d (task, hints, criteria, model answer) and unit.md opening at 360 and 1280 px: tau_k/tau_p (en: tau_start/tau_stop) and t_mitattu = t_tod + tau_p - tau_k render as KaTeX, upright subscripts, no clipping, no overflow of the changed text; order principle - formula - direction - averaging reads logically; unit.md softer sentence reads naturally.
-- Language checked: en wording of the changed sentences is natural and consistent with the glossary.
+1. Page-level horizontal overflow at 390 px when all details are open (121 px): long inline-math Sijoitus or answer lines in .reveal or .answer blocks do not wrap or scroll. Verified in the previous version (git 761b6673) for energia, voimat, sahkokentta and mittaaminen, so it is not a regression of this change (mittaaminen is about 40 px wider now). Fix when convenient: break such a substitution into a display line (\begin{aligned}) or let .reveal/.answer have overflow-x:auto.

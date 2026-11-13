@@ -76,9 +76,9 @@ kl, bl = fit(t5, [math.log(x) for x in net])                              # ln(n
 T_fit = -ln2 / kl
 T_raw_two = 300 * ln2 / math.log(N5[0] / N5[-1])
 t_half_group = 150 + 30 * (212 - 199) / (212 - 188)                       # the group's reading, half of 398
-out.update({f"{S}-s5-a": round(T_two, 2), f"{S}-s5-a-fit": round(T_fit, 1), f"{S}-s5-a-raw": round(T_raw_two, 1),
+out.update({f"{S}-s5-a": round(T_fit, 1), f"{S}-s5-a-two": round(T_two, 2), f"{S}-s5-a-raw": round(T_raw_two, 1),
             f"{S}-s5-group": round(t_half_group, 1), f"{S}-s5-diff": round(100 * (166 - 153) / 153, 1),
-            f"{S}-s5-bg-share-end": round(100 * bg5 / N5[-1], 1), f"{S}-s5-a-diff": round(100 * (T_two - 153) / 153, 1)})
+            f"{S}-s5-bg-share-end": round(100 * bg5 / N5[-1], 1), f"{S}-s5-a-diff": round(100 * (T_two - T_fit) / T_fit, 1)})
 
 # s6: a nuclear power plant (example data in the size class of a large pressurised-water unit) with FY2 and FY3
 Pe, Pth = 1600e6, 4300e6                        # W

@@ -1,13 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 309664676f29146c
-
-Delta review (formulas in MAFY form, 2026-11-12) of the version passed at 99d9cf49a3fb1eb9.
+CONTENT-HASH: 6bb9f4917aab2bd9
 
 ## Blocking
-None. Built at 390 and 1280 px: KaTeX renders without errors, no horizontal overflow, upright subscripts, \overline vectors and spacing correct, formula map text fits its boxes, the new definition sentences read naturally.
-
-## Polish
 None.
 
+## Polish
+- [Minor] Page-level horizontal overflow at 390 px with all details open (434 px wide kokeellisuus, 561 moderni) from long inline Sijoitus lines; known, carried from earlier reviews, not caused by these fixes. Let .reveal/.answer scroll or break into display lines.
+
 ## Checked
-I did not open this pair's rendered sheet. The verdict rests on the overflow and KaTeX-error scan of the built page at 390 and 1280 px, the diff text, and the fi version's sheet (same LaTeX, same map layout; only label words differ).
+- Delta re-review (solution practice, 2026-11-12) of the small text fixes: kokeellisuus s5 a rubric line ($2{,}7 \cdot 10^3$ kg/m3, two significant figures) and moderni s5 a answer, 157 s without background, 1,5 %, accepted range 147-159 s.
+- Built both units, opened preview/fi-easy with ?ratkaisut=1 and every details element open at 390 px: 0 KaTeX errors, no script errors, changed lines present, decimal comma in fi and fi-easy, point in en, units and \cdot correct, wording natural.
+
+## Scores
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

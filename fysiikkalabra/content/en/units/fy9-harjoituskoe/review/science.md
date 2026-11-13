@@ -1,17 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 5bf67fc9ccdd56f9
-
-Science review (round 3) of the English translation of fy9-harjoituskoe (source content/fi/units/fy9-harjoituskoe/, reviewed).
+CONTENT-HASH: 2c676e2e18304cf1
+Delta review (solution practice, 2026-11-12) of the version passed before.
 
 ## Blocking
-None (rounds 1 and 2 had none).
+(none)
 
 ## Polish
-1. [Minor, for the source] sovella/tasks.json s1 b: the conversion detail sits under `units_precision` and the result under `calculation`, as in the source. If the source changes, the translation should follow.
-
-## Round-2 changes verified
-- The only change since round 2 is inquiry.json activities 2–11 `"fold": "Osa I"` → `"Part I"` (git diff: 10 lines, nothing else). It is a label; no number, formula, unit, answer, tolerance, point or correct option changed, so the round-1 recomputation of every result (s1–s10 and Part I) still holds.
+(none)
 
 ## Checked
-- check_i18n.py: en 0 errors (it now treats `fold` as text). units.py check: 77 units ok. practice.py check: en/units/fy9-harjoituskoe 10 tasks, 165 points, same as fi.
-- The preview (390 and 1280, all details open) has no comma decimals, no raw `$` and no KaTeX errors.
+s3 b ($\varepsilon = v'/v - 1$ = −0,0207 with $v$ = 343,2 m/s from a), s3 c ($\Delta f/f_0 \approx -\alpha\Delta T$ = +2,8·10⁻⁴, condition $|\Delta L| \ll L_0$ stated), s4 c ($P = RI^2$ via Ohm, 114 W), s9 c, s10 b–c ($k = 4\pi^2/a$ = 25,0 N/m; $m_\text{j} = b/a$ = 20,5 g) recomputed. The fi, fi-easy and en diffs carry identical mathematics (every changed formula compared token by token); answers.py run; `units.py check` passes.

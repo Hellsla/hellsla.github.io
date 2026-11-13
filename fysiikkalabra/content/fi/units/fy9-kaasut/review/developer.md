@@ -75,3 +75,8 @@ VERDICT: DONE
 
 ### Checks rerun
 practice.py figures and check (6 tasks, 95 p) · units.py figures and check (38 units ok) · build.py fy9-kaasut · check_layout at 360 and 1280: OK. Playwright at 390 and 1280 with every details element opened: no console errors, no .katex-error, no raw $. I looked at screenshots of kartta, rengas, kone, s3-graph, s6-vaaka and s6-pysty.
+
+## Ratkaisutavan tarkistus (2026-11-12)
+- s2 c): talteenottoprosentti sai symbolin $\eta_\text{l}$ (Annettu, Kaava, Muunnokset); Kaavassa ei enää annettua lukua $0{,}75$.
+- s6 c): sanallinen laskutehtävä muutettu täydeksi ratkaisuksi (Annettu, Kysytty, Periaate, Kaava symbolein $\Delta p_\text{m}$ ja $s$, Muunnokset, Sijoitus, Mallivastaus, Järkevyys); luvut eivät muuttuneet.
+- Muut osat ja inquiry-tehtävät täyttivät vaatimukset; fi-easy ja en päivitetty samoin.

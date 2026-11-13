@@ -153,9 +153,9 @@
 **Given:** $L = 1.31\,\text{m}$, speed of sound at $8\,{}^\circ\text{C}$ $v' = 336.1\,\text{m/s}$, $f_1 = 130.99\,\text{Hz}$ (part a)
 **Find:** the fundamental frequency $f_1'$ in the cold church and its relative change
 **Principle:** The length of the pipe changes so little that the wavelength of the standing wave stays the same (this is checked in part c). The frequency is therefore proportional to the speed of sound, which decreases as the air cools.
-**Formula:** $f_1' = \dfrac{v'}{2L}$ and the relative change $\dfrac{f_1' - f_1}{f_1}$
+**Formula:** $f_1 = \dfrac{v}{2L}$ and $f_1' = \dfrac{v'}{2L}$. The relative change is $\varepsilon = \dfrac{f_1' - f_1}{f_1} = \dfrac{v'/(2L)}{v/(2L)} - 1 = \dfrac{v'}{v} - 1$, since $L$ cancels
 **Conversions:** None needed.
-**Substitution:** $f_1' = \dfrac{336.1\,\text{m/s}}{2 \cdot 1.31\,\text{m}} = 128.28\,\text{Hz}$ and $\dfrac{128.28\,\text{Hz} - 130.99\,\text{Hz}}{130.99\,\text{Hz}} = -0.0207$
+**Substitution:** $f_1' = \dfrac{336.1\,\text{m/s}}{2 \cdot 1.31\,\text{m}} = 128.28\,\text{Hz}$ and $\varepsilon = \dfrac{336.1\,\text{m/s}}{343.2\,\text{m/s}} - 1 = -0.0207$
 **Answer:** $f_1' \approx 128\,\text{Hz}$, and the frequency decreases by about $2.1\,\%$. Three significant figures like the length.
 **Reasonableness:** The change is the same as the relative change in the speed of sound, $\tfrac{336.1 - 343.2}{343.2} = -2.1\,\%$. It is an audible difference, because a semitone is about $6\,\%$.
 
@@ -163,9 +163,9 @@
 **Given:** $L_0 = 1.31\,\text{m}$, coefficient of linear thermal expansion $\alpha = 2.3 \cdot 10^{-5}\,\tfrac{1}{\text{K}}$, the temperature falls from $20\,{}^\circ\text{C}$ to $8\,{}^\circ\text{C}$
 **Find:** the change in the length of the pipe $\Delta L$ and its effect on the frequency compared with part b
 **Principle:** A solid metal contracts as it cools, and the change in length is proportional to the original length and to the change in temperature. The fundamental frequency is inversely proportional to the length, so a shortening pipe raises the frequency by the same relative amount.
-**Formula:** $\Delta L = \alpha L_0 \Delta T$ and $\dfrac{\Delta f}{f} \approx -\dfrac{\Delta L}{L_0}$
+**Formula:** $\Delta L = \alpha L_0 \Delta T$. The frequency is $f = \dfrac{v}{2(L_0 + \Delta L)}$, so $\dfrac{\Delta f}{f_0} = \dfrac{L_0}{L_0 + \Delta L} - 1 \approx -\dfrac{\Delta L}{L_0} = -\alpha \Delta T$ when $|\Delta L| \ll L_0$
 **Conversions:** $\Delta T = 8\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = -12\,\text{K}$ and finally $1\,\text{m} = 1000\,\text{mm}$.
-**Substitution:** $\Delta L = 2.3 \cdot 10^{-5}\,\tfrac{1}{\text{K}} \cdot 1.31\,\text{m} \cdot (-12\,\text{K}) = -3.62 \cdot 10^{-4}\,\text{m} = -0.362\,\text{mm}$ and $\dfrac{\Delta L}{L_0} = \dfrac{-3.62 \cdot 10^{-4}\,\text{m}}{1.31\,\text{m}} = -2.8 \cdot 10^{-4} = -0.028\,\%$
+**Substitution:** $\Delta L = 2.3 \cdot 10^{-5}\,\tfrac{1}{\text{K}} \cdot 1.31\,\text{m} \cdot (-12\,\text{K}) = -3.62 \cdot 10^{-4}\,\text{m} = -0.362\,\text{mm}$ and $\dfrac{\Delta L}{L_0} = \dfrac{-3.62 \cdot 10^{-4}\,\text{m}}{1.31\,\text{m}} = -2.8 \cdot 10^{-4} = -0.028\,\%$ and $\dfrac{\Delta f}{f_0} \approx -\alpha \Delta T = -2.3 \cdot 10^{-5}\,\tfrac{1}{\text{K}} \cdot (-12\,\text{K}) = +2.8 \cdot 10^{-4}$
 **Answer:** The pipe shortens by about $0.36\,\text{mm}$ (two significant figures like the coefficient of thermal expansion). It would raise the frequency by only about $0.03\,\%$, while the cooling of the air lowers it by about $2.1\,\%$, that is about $75$ times more. The organ sounds lower because of the air, not because the metal contracts.
 **Reasonableness:** Everyday experience shows that the thermal expansion of metals is small: a rod a metre long changes by only tenths of a millimetre when the temperature changes by ten degrees.
 
@@ -211,7 +211,7 @@
 **Given:** $R_\text{j} = 0.560\,\Omega$, $I = 14.27\,\text{A}$ (parts a and b)
 **Find:** the power $P_\text{j}$ converted into heat in the cord
 **Principle:** The current through the resistance of the cord converts electrical energy into internal energy of the conductor. The power of the cord follows from its own resistance and the current through it.
-**Formula:** $P_\text{j} = U_\text{j} I = R_\text{j} I^2$
+**Formula:** $P_\text{j} = U_\text{j} I$ and $U_\text{j} = R_\text{j} I$ (Ohm's law), so $P_\text{j} = R_\text{j} I^2$
 **Conversions:** None needed.
 **Substitution:** $P_\text{j} = 0.560\,\Omega \cdot (14.27\,\text{A})^2 = 114.0\,\text{W}$
 **Answer:** $P_\text{j} \approx 1.1 \cdot 10^2\,\text{W}$, that is about $110\,\text{W}$, two significant figures like parts a and b.
@@ -600,7 +600,7 @@ If Aino's model held, the points $(v, F_\text{v})$ would lie on a line through t
 **Given:** the fit $T = 17.11\,\tfrac{{}^\circ\text{C}}{\text{km}} \cdot z + 6.67\,{}^\circ\text{C}$, depth $z = 6.0\,\text{km}$
 **Find:** the temperature $T$ of the rock at a depth of $6.0\,\text{km}$
 **Principle:** The temperature is estimated by extending the fitted line outside the measured range. The estimate assumes that the rock and its heat production are similar also in the range $3$–$6\,\text{km}$.
-**Formula:** $T = kz + T_0$
+**Formula:** $T = kz + T_0$, where $k = 17.11\,\tfrac{{}^\circ\text{C}}{\text{km}}$ is the slope of the line and $T_0 = 6.67\,{}^\circ\text{C}$ the constant term
 **Conversions:** None needed.
 **Substitution:** $T = 17.11\,\tfrac{{}^\circ\text{C}}{\text{km}} \cdot 6.0\,\text{km} + 6.67\,{}^\circ\text{C} = 109.4\,{}^\circ\text{C}$
 **Answer:** $T \approx 110\,{}^\circ\text{C}$, two significant figures, because the depth $6.0\,\text{km}$ is given to two digits and the estimate is an extrapolation to twice the depth of the measured range.
@@ -721,7 +721,7 @@ The line is not forced through the origin, because the spring itself also oscill
 **Find:** the spring constant $k$
 **Principle:** According to the model $T^2 = \tfrac{4\pi^2}{k}(m + m_\text{j})$, the slope of the line is $\tfrac{4\pi^2}{k}$. The slope is read from the fitted line at two points far apart.
 **Reading the graph:** The points $(0\,\text{kg};\ 0.032\,\text{s}^2)$ and $(0.600\,\text{kg};\ 0.979\,\text{s}^2)$ are read from the line, so the slope is $\dfrac{0.979\,\text{s}^2 - 0.032\,\text{s}^2}{0.600\,\text{kg}} = 1.578\,\tfrac{\text{s}^2}{\text{kg}}$.
-**Formula:** slope $= \dfrac{4\pi^2}{k}$, so $k = \dfrac{4\pi^2}{\text{slope}}$
+**Formula:** the slope of the line $T^2 = am + b$ is $a = \dfrac{4\pi^2}{k}$, so $k = \dfrac{4\pi^2}{a}$
 **Conversions:** None needed: $\tfrac{\text{kg}}{\text{s}^2} = \tfrac{\text{N}}{\text{m}}$.
 **Substitution:** $k = \dfrac{4\pi^2}{1.578\,\text{s}^2/\text{kg}} = 25.01\,\tfrac{\text{kg}}{\text{s}^2}$
 **Answer:** $k \approx 25.0\,\tfrac{\text{N}}{\text{m}}$, three significant figures like the measurements.
@@ -732,7 +732,7 @@ The line is not forced through the origin, because the spring itself also oscill
 **Find:** why the line does not pass through the origin, and how large a mass $m_\text{j}$ of the spring oscillates with the mass
 **Principle:** Besides the mass, the spring also moves: its lower end moves with the mass and its upper end stays still. The motion of the spring therefore acts as if part of its mass were in the hanging mass, and the oscillating mass is $m + m_\text{j}$. Then $T^2 = \tfrac{4\pi^2}{k}(m + m_\text{j})$, and the line crosses the mass axis at $m = -m_\text{j}$.
 **Reading the graph:** When $T^2 = 0$, the fit gives $0 = 1.578\,\tfrac{\text{s}^2}{\text{kg}} \cdot m + 0.0324\,\text{s}^2$, so the line crosses the mass axis at $m = -\tfrac{b}{\text{slope}}$.
-**Formula:** $m_\text{j} = \dfrac{b}{\text{slope}}$
+**Formula:** $T^2 = \dfrac{4\pi^2}{k}(m + m_\text{j}) = am + am_\text{j}$, so $b = am_\text{j}$ and $m_\text{j} = \dfrac{b}{a}$
 **Conversions:** Finally $1\,\text{kg} = 1000\,\text{g}$.
 **Substitution:** $m_\text{j} = \dfrac{0.0324\,\text{s}^2}{1.578\,\text{s}^2/\text{kg}} = 0.0205\,\text{kg} = 20.5\,\text{g}$
 **Answer:** $m_\text{j} \approx 21\,\text{g}$, two significant figures, because the constant term is small and its relative uncertainty large. It is about a third of the spring's own mass, $61\,\text{g}$.

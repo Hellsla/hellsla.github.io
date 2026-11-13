@@ -77,11 +77,11 @@
 **Järkevyys:** Latauksessa napajännite on suurempi kuin lähdejännite, kuten pitää. Laturin ja johtojen yli on $2{,}6\,\Omega \cdot 2{,}5\,\text{A} = 6{,}5\,\text{V}$, ja $35{,}5\,\text{V} + 6{,}5\,\text{V} = 42{,}0\,\text{V}$. Kun akku latautuu, sen lähdejännite kasvaa. Siksi virta pienenee, ja lataus hidastuu lopussa.
 
 ### d)
-**Annettu:** laturin jännite $U_\text{lat} = 42{,}0\,\text{V}$, akun läpi kulkeva varaus $Q = 10{,}4\,\text{Ah}$, akkuun varastoitunut energia $W_\text{akku} = 374{,}4\,\text{Wh}$ (a-kohta), hinta $15\,\text{snt/kWh}$
+**Annettu:** laturin jännite $U_\text{lat} = 42{,}0\,\text{V}$, akun läpi kulkeva varaus $Q = 10{,}4\,\text{Ah}$, akkuun varastoitunut energia $W_\text{akku} = 374{,}4\,\text{Wh}$ (a-kohta), hinta $a = 15\,\text{snt/kWh}$
 **Kysytty:** latauksen hyötysuhde $\eta$ ja yhden latauksen hinta $K$
 **Periaate:** Laturin teho on $U_\text{lat} I$ (luku *Sähköteho ja vastuksen lämpeneminen*). Kun laturin jännite on vakio ja akun läpi kulkee varaus $Q$, laturi antaa energian $U_\text{lat} Q$. Akkuun varastoituu kemiallisena energiana vain lähdejännitettä vastaava osuus. Loput energiasta muuttuu resistanssien sisäenergiaksi (luku *Akut ja latauspiiri*). Mallissa akun lähdejännite on latauksen aikana keskimäärin yhtä suuri kuin nimellisjännite $36\,\text{V}$. Hinta lasketaan energiasta, jonka laturi antaa (luku *Sähköenergia kotona*).
 **Kaava:** $W_\text{lat} = U_\text{lat} Q$, $\eta = \dfrac{W_\text{akku}}{W_\text{lat}}$ ja $K = aW_\text{lat}$
-**Muunnokset:** $437\,\text{Wh} = 0{,}437\,\text{kWh}$ ja $15\,\text{snt/kWh} = 0{,}15\,\text{€/kWh}$
+**Muunnokset:** $436{,}8\,\text{Wh} = 0{,}4368\,\text{kWh}$ ja $15\,\text{snt/kWh} = 0{,}15\,\text{€/kWh}$
 **Sijoitus:** $W_\text{lat} = 42{,}0\,\text{V} \cdot 10{,}4\,\text{Ah} = 436{,}8\,\text{Wh}$, $\eta = \dfrac{374{,}4\,\text{Wh}}{436{,}8\,\text{Wh}} = 0{,}857$ ja $K = 0{,}15\,\tfrac{\text{€}}{\text{kWh}} \cdot 0{,}4368\,\text{kWh} = 0{,}066\,\text{€}$
 **Vastaus:** Hyötysuhde on $\eta \approx 86\,\%$, ja yksi täysi lataus maksaa noin $7\,\text{snt}$. Tarkkuus on kaksi merkitsevää numeroa, koska akun nimellisjännite $36\,\text{V}$ tunnetaan vain kahden numeron tarkkuudella.
 **Järkevyys:** Hyötysuhde on alle $100\,\%$, koska $436{,}8\,\text{Wh} - 374{,}4\,\text{Wh} \approx 62\,\text{Wh}$ muuttuu laturin, johtojen ja akun resistanssien sisäenergiaksi. Siksi laturi ja akku lämpenevät latauksessa. Noin seitsemän senttiä noin $28\,\text{km}$:n matkasta on hyvin halpaa.
@@ -193,7 +193,7 @@
 **Kysytty:** paristoryhmän lähdejännite $E$ ja sisäinen resistanssi $R_\text{s}$ sekä vertailu yhden pariston arvoihin
 **Periaate:** Mallin $U = E - R_\text{s} I$ mukaan suora leikkaa pystyakselin kohdassa $U = E$. Syy on se, että ilman virtaa sisäisessä resistanssissa ei ole jännitehäviötä. Suoran kulmakerroin on $-R_\text{s}$ (luku *Lähdejännite ja sisäinen resistanssi*). Kulmakerroin luetaan kahdesta sovitetun suoran pisteestä, jotka ovat kaukana toisistaan. Mittauspisteitä ei käytetä (luku *Graafinen esitys ja suoran sovittaminen*). Kun paristot on kytketty sarjaan, niiden lähdejännitteet ja sisäiset resistanssit lasketaan yhteen.
 **Kuvaajan lukeminen:** Suora leikkaa pystyakselin kohdassa $4{,}63\,\text{V}$. Kohdassa $I = 1{,}20\,\text{A}$ suoran arvo on $3{,}75\,\text{V}$.
-**Kaava:** $E = U(0)$ ja $R_\text{s} = -\dfrac{\Delta U}{\Delta I}$; yhtä paristoa kohti $\dfrac{E}{3}$ ja $\dfrac{R_\text{s}}{3}$
+**Kaava:** $E = U(0)$ ja $R_\text{s} = -\dfrac{\Delta U}{\Delta I}$, missä $U(0)$ on suoran arvo virralla nolla ja $\Delta U$ ja $\Delta I$ ovat suoralta luettujen pisteiden erotukset; kolmen sarjaan kytketyn pariston arvot summautuvat, joten yhtä paristoa kohti $E_1 = \dfrac{E}{3}$ ja $R_{\text{s}1} = \dfrac{R_\text{s}}{3}$
 **Muunnokset:** Suureet ovat perusyksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $E = 4{,}63\,\text{V}$ ja $R_\text{s} = -\dfrac{3{,}75\,\text{V} - 4{,}63\,\text{V}}{1{,}20\,\text{A} - 0\,\text{A}} = \dfrac{0{,}88\,\text{V}}{1{,}20\,\text{A}} = 0{,}733\,\Omega$; yhtä paristoa kohti $\dfrac{4{,}63\,\text{V}}{3} = 1{,}54\,\text{V}$ ja $\dfrac{0{,}733\,\Omega}{3} = 0{,}244\,\Omega$
 **Vastaus:** Lähdejännite on $E \approx 4{,}63\,\text{V}$, ja sisäinen resistanssi on $R_\text{s} \approx 0{,}73\,\Omega$. Sisäinen resistanssi ilmoitetaan kahdella merkitsevällä numerolla, koska jännitteen muutos $0{,}88\,\text{V}$ luetaan kuvaajalta noin sadasosan tarkkuudella.
@@ -272,7 +272,7 @@
 **Annettu:** lampun resistanssi $R = 3{,}6\,\Omega$, $E \approx 4{,}63\,\text{V}$ ja $R_\text{s} \approx 0{,}733\,\Omega$ (b-kohta)
 **Kysytty:** lamppuun siirtyvä teho $P$ ja sen osuus lähdetehosta $EI$
 **Periaate:** Lamppu ja sisäinen resistanssi ovat sarjassa samassa silmukassa. Siksi virran määrää niiden resistanssien summa (luku *Lähdejännite ja sisäinen resistanssi*). Lampun teho saadaan sen resistanssista ja virrasta Joulen lain avulla. Lähde tuottaa sähköenergiaa teholla $EI$ (luku *Sähköteho ja vastuksen lämpeneminen*).
-**Kaava:** $I = \dfrac{E}{R + R_\text{s}}$, $P = RI^2$ ja osuus $\dfrac{P}{EI}$
+**Kaava:** $I = \dfrac{E}{R + R_\text{s}}$, $P = RI^2$ ja osuus $= \dfrac{P}{EI} = \dfrac{R}{R + R_\text{s}}$
 **Muunnokset:** Suureet ovat perusyksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $I = \dfrac{4{,}63\,\text{V}}{3{,}6\,\Omega + 0{,}733\,\Omega} = 1{,}069\,\text{A}$, $P = 3{,}6\,\Omega \cdot (1{,}069\,\text{A})^2 = 4{,}11\,\text{W}$, $EI = 4{,}63\,\text{V} \cdot 1{,}069\,\text{A} = 4{,}95\,\text{W}$ ja $\dfrac{4{,}11\,\text{W}}{4{,}95\,\text{W}} = 0{,}831$
 **Vastaus:** Lamppuun siirtyy teho $P \approx 4{,}1\,\text{W}$. Se on noin $83\,\%$ lähdetehosta. Tarkkuus on kaksi merkitsevää numeroa kuten lampun resistanssissa $3{,}6\,\Omega$.
@@ -349,7 +349,7 @@
 **Annettu:** veden tilavuus $300\,\text{l}$, joten massa $m = 300\,\text{kg}$; lämpötilat $15\,{}^\circ\text{C}$ ja $70\,{}^\circ\text{C}$; teho $P = 3{,}0\,\text{kW}$; $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
 **Kysytty:** lämmitysaika $t$
 **Periaate:** Vastuksessa sähköenergia muuttuu sisäenergiaksi (luku *Sähköteho ja vastuksen lämpeneminen*). Vastuksesta energia siirtyy lämpönä veteen. Vastuslämmittimen hyötysuhde on käytännössä $100\,\%$. Kun lämpöhäviöitä ei oteta huomioon, kaikki sähköenergia lämmittää vettä (luku *Aineen lämpeneminen ja jäähtyminen*). Teho on vakio, joten energia on teho kertaa aika.
-**Kaava:** $Pt = cm\Delta T$, joten $t = \dfrac{cm\Delta T}{P}$
+**Kaava:** $Pt = Q = cm\Delta T$, joten $t = \dfrac{cm\Delta T}{P}$
 **Muunnokset:** $3{,}0\,\text{kW} = 3{,}0 \cdot 1000\,\text{W} = 3000\,\text{W}$; lämpötilan muutos $70\,{}^\circ\text{C} - 15\,{}^\circ\text{C} = 55\,{}^\circ\text{C} = 55\,\text{K}$; lopuksi $1\,\text{h} = 3600\,\text{s}$
 **Sijoitus:** $Q = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 300\,\text{kg} \cdot 55\,\text{K} = 6{,}914 \cdot 10^{7}\,\text{J}$ ja $t = \dfrac{6{,}914 \cdot 10^{7}\,\text{J}}{3000\,\text{W}} = 23\,045\,\text{s} = 6{,}40\,\text{h}$
 **Vastaus:** Lämmitys kestää noin $t \approx 6{,}4\,\text{h}$. Tarkkuus on kaksi merkitsevää numeroa kuten tehossa $3{,}0\,\text{kW}$.

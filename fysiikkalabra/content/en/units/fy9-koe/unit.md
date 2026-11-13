@@ -172,7 +172,7 @@ $$
 where $s$ is the distance travelled, $t$ the time and $a$ the acceleration. The formula holds only when the acceleration is constant and the initial speed is zero.
 
 ### The precision of the answer
-Intermediate results are kept unrounded, and only the final result is rounded. A final result has as many significant figures as the least precise given value. A final result without a unit does not state a quantity, so it is not an answer.
+Intermediate results are kept unrounded, and only the final result is rounded. A final result has as many significant figures as the least precise measured value. Exact quantities, such as integers, counted numbers and conversion factors ($1\,\text{h} = 3600\,\text{s}$), do not limit the precision. A final result without a unit does not state a quantity, so it is not an answer.
 
 ## Command words {Tehtavasanat}
 

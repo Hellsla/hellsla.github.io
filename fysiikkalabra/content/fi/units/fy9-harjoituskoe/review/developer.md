@@ -63,3 +63,11 @@ Checks rerun: practice.py figures/check (OK, 10 tasks), units.py figures/check (
 ### Shared issues (added)
 - Figures inside opened model answers render at about 0,5 scale at 390 px, so tick labels fall under 14 px; needs a template change (details padding / figure width).
 - Fold-chip CSS: the "OSA I" chip wraps above the title for some cards at 390 px.
+
+## Ratkaisutavan tarkistus (2026-11-12)
+- s3 b): suhteellinen muutos ratkaistu symboleilla ($\varepsilon = v'/v - 1$), sijoitus samalla kaavalla.
+- s3 c): $\Delta f/f_0 \approx -\alpha\Delta T$ johdettu kaavassa ja sijoitettu.
+- s4 c): $U_\text{j} = R_\text{j} I$ (Ohmin laki) lisätty ennen $P = R I^2$.
+- s9 c): $k$ ja $T_0$ määritelty kaavarivillä.
+- s10 b), c): sovitteen $T^2 = am + b$ symbolit $a$, $b$ määritelty ja $m_\text{j} = b/a$ johdettu.
+- Samat muutokset fi-easy- ja en-tiedostoihin. Vastaukset eivät muuttuneet.

@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 4430c610e5d2a511
-Delta review (formulas in MAFY form, 2026-11-12) of the version passed at 37ee21db139040ce.
+CONTENT-HASH: 782699fd4ffa0aba
+Delta review (solution practice, 2026-11-12) of the version passed before.
 
 ## Blocking
 (none)
@@ -9,4 +9,4 @@ Delta review (formulas in MAFY form, 2026-11-12) of the version passed at 37ee21
 (none)
 
 ## Checked
-$\overline{G} = m\overline{g}$, with $\overline{g}$ defined and the magnitude $G = mg$ stated. The map ($\overline{G} = m\overline{g}$) matches. The force diagrams are unaffected. The fi-easy text says the same physics as fi. The other rows are unchanged.
+s3 d ($m' = m + m_\text{x}$, slope $1/m'$ = 0,74 kg⁻¹, intercept $\mu m' g$ = 0,378 N), s5 a ($\alpha_\text{ka}$ = 22,5°, $\mu_0$ = 0,414, $\Delta\mu_0$ = 0,03) and the inquiry box task ($a$ = 0,9285 m/s², $P$ = 48,0 N) recomputed. The fi, fi-easy and en diffs carry identical mathematics (every changed formula compared token by token); answers.py run; `units.py check` passes.

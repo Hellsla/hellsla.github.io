@@ -103,3 +103,14 @@ Content hash after the fixes: e3a353d8ecfc76ac (reviewed: 82147d0c9120ddde).
 
 ### Shared issues (new)
 - `lessons/FY4/fy4-9/figures.py` `pysaytys`: the axis ticks are about 13 px at 390 px. A variant without the "yhtä suuret pinta-alat" caption, for example `"pysaytys-ilman": lambda: pysaytys(caption=False)`, would let review units ask about the areas.
+
+## Ratkaisutavan tarkistus (2026-11-12)
+- sovella s1 c): Kaavaan paino $G = mg$ ja suhde $F_\text{ka}/G$ symboleina (suhde oli vain Sijoituksessa).
+- sovella s2 b): Kaavaan liike-energian osuus $E_\text{k}'/E_\text{k}$ symboleina.
+- sovella s3 c): Kaava määrittelee suoran pisteet $(v_1; y_1)$, $(v_2; y_2)$ ja $y = s_\text{p}/v_0$, $t_\text{r} = y_1 - kv_1$.
+- sovella s4 a), c): suhteet $P_2/P_1 = (v_2/v_1)^3$ ja $P'/P = h'/h$ symboleina.
+- sovella s5 a): suhteellinen muutos ratkaistu symboleina $\Delta p/p = ((m_A+m_B)v' - m_A v_A)/(m_A v_A)$.
+- sovella s6 d): Kaavasta pois mitatut luvut $50$ ja $0{,}40$, tilalle $N$ ja $k$ (määritelty Annettu-rivillä).
+- inquiry (tehtävät energiaosuus ja häviöosuus): osuus ratkaistu symboleina ($1 - \ldots$) ja `osuus =` kirjoitettu.
+- exit-ticket: kumpikin vastaus alkaa symbolisella kaavalla ($E_\text{k} = \tfrac12 mv^2$, $v' = m_1v_1/(m_1+m_2)$).
+- Kaikki muutokset kuljetettu fi-easy- ja en-versioihin; vastaukset eivät muuttuneet.

@@ -1,14 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 31904913655a7b58
-Delta review (formulas in MAFY form, 2026-11-12) of the version passed at b942c369bb9ab315.
+CONTENT-HASH: 3131a232c18a887d
+Delta review (solution practice, 2026-11-12) of the version passed before.
 
 ## Blocking
 (none)
 
 ## Polish
-1. `unit.md`: $\lambda$ is now both the wavelength ($E = hc/\lambda$, $p = h/\lambda$) and the decay constant ($N = N_0e^{-\lambda t}$, $A = \lambda N$) on the same page. MAFY does the same, and both meanings are defined. Fix: add "($\lambda$ on tässä hajoamisvakio, ei aallonpituus)".
-2. `unit.md`, after the attenuation law: $\dot{H}_0$ in $\dot{H} = \dot{H}_0(\tfrac12)^{x/d_{1/2}}$ is not named. Fix: add "$\dot{H}_0$ annosnopeus ilman suojaa".
-3. `inquiry.json` writes the reaction energy as $Q = (m_\text{alku} - m_\text{loppu})c^2$, while the theory and the map use $E = \Delta m c^2$. Fix: align them.
+1. s5 b rubric `conclusion` (`tasks.json`) still says "about 151–153 s" while the model answer says about 153 s; harmless (151 s is accepted), align if touched.
 
 ## Checked
-$N = N_0e^{-\lambda t}$ with $\lambda = \ln 2/T_{1/2}$ ($e^{-\lambda T_{1/2}} = 0.5$ exactly). The half-life form $N_0(\tfrac12)^{t/T_{1/2}}$ is still given, as the tasks need. $\Delta m$ = reactants − products and $E = \Delta m c^2$ are consistent with $E_\text{B}$. $p = E/c = h/\lambda$. $H = w_\text{R} D$. For $I = I_0 e^{-\mu x}$ with $d_{1/2} = \ln 2/\mu$ I recomputed $e^{-1.5}$ = 0.2231 = $0.5^{x/d_{1/2}}$. The map matches. The other rows are unchanged.
+Earlier Blocking resolved. (1) s5 a has one accepted range: tolerance 0,04 at 153 gives 146,9–159,1 s, and the `units_precision` criterion and *Hyväksytään myös* both say 147–159 s. (2) answers.py: key s5-a = 153,1 (fit of ln(N−5) on all 11 points), s5-a-two = 150,83, s5-a-diff = −1,5 % against the fit. Recomputed independently: fit 153,07 s (intercept 5,993, value at 300 s 4,635), two endpoints 150,83 s (−1,46 %, so "1,5 %" is now right), fit without background 157,08 s (the new "157 s" sentence is right). Note: far-apart pairs (Δt ≥ 180 s) span 144,5–163 s, so the range rightly rejects the noisiest pairs. fi, fi-easy and en carry the same numbers; `units.py check` passes.

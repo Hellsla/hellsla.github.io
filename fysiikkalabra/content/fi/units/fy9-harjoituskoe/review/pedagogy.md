@@ -1,11 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: b5fa2bd9f63bc042
+CONTENT-HASH: c47364fb7325d02e
 
-## Blocking
-(none)
+Delta review (solution practice, 2026-11-12) of the version passed before.
 
-## Polish
-- "Jako kymmeneen kahden pisteen kohtaan on tämän harjoituskokeen ratkaisu" is stiff; "Osan I jako kymmeneen kahden pisteen kohtaan on valittu tätä harjoituskoetta varten."
+Relative change solved as v'/v - 1 (L cancels), the thermal-expansion frequency change derived with its |dL| << L0 condition, Ohm's law step and the T = kz + T0 symbols are good exam practice; the new steps do not lengthen the chain much.
 
-## Checked
-Delta: "noudattaa yleistä rakennetta" plus the new Osa I caveat matches fy9-koe and does not overclaim; the point sums (10 x 2 p, 7 x 15 p, 3 x 20 p, 120 p) and the 360-minute plan are unchanged; earlier round fixes stand.
+Checked: diff since 761b6673, symbols defined, solved expression equals Sijoitus, answers.py output, tasks.json answer/criteria, cross-language number match.

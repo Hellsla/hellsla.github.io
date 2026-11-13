@@ -69,8 +69,8 @@
 ### c)
 **Annettu:** a-kohdasta $d = 102\,\mu\text{m}$, b-kohdasta $\sigma = 79{,}85\,\text{g/m}^2$; veden tiheys $1000\,\text{kg/m}^3$
 **Kysytty:** paperin tiheys $\rho$ yksikössä $\text{kg/m}^3$
-**Periaate:** Tiheys on massa tilavuutta kohti. Yhden neliömetrin kokoisen paperin massa on neliömassa ja tilavuus $1\,\text{m}^2 \cdot d$, joten tiheys saadaan jakamalla neliömassa paksuudella.
-**Kaava:** $\rho = \dfrac{m}{V} = \dfrac{\sigma \cdot 1\,\text{m}^2}{d \cdot 1\,\text{m}^2} = \dfrac{\sigma}{d}$
+**Periaate:** Tiheys on massa tilavuutta kohti. Paperi on tasapaksua, joten pinta-alaltaan $A$ olevan paperin massa on $\sigma A$ ja tilavuus $Ad$. Pinta-ala supistuu, joten tiheys saadaan jakamalla neliömassa paksuudella.
+**Kaava:** $\rho = \dfrac{m}{V} = \dfrac{\sigma A}{A d} = \dfrac{\sigma}{d}$
 **Muunnokset:** $\sigma = 79{,}85\,\text{g/m}^2 = 79{,}85 \cdot 0{,}001\,\text{kg/m}^2 = 0{,}07985\,\text{kg/m}^2$ ja $d = 102\,\mu\text{m} = 102 \cdot 10^{-6}\,\text{m} = 1{,}02 \cdot 10^{-4}\,\text{m}$
 **Sijoitus:** $\rho = \dfrac{0{,}07985\,\text{kg/m}^2}{1{,}02 \cdot 10^{-4}\,\text{m}} = 782{,}8\,\tfrac{\text{kg}}{\text{m}^3}$
 **Vastaus:** $\rho \approx 780\,\text{kg/m}^3$ eli $7{,}8 \cdot 10^{2}\,\text{kg/m}^3$, kaksi merkitsevää numeroa, koska pinon korkeus $51\,\text{mm}$ on kahden numeron luku. Paperin tiheys on noin $0{,}78$ kertaa veden tiheys.
@@ -313,7 +313,7 @@ Pinon korkeuden epävarmuus on suurempi kuin $0{,}5\,\text{mm}$, koska epävarmu
 **Kaava:** $m = \rho V$
 **Muunnokset:** $V = 1{,}50\,\text{l} = 1{,}50 \cdot 1000\,\text{cm}^3 = 1500\,\text{cm}^3$, ja lopuksi $1000\,\text{g} = 1\,\text{kg}$.
 **Sijoitus:** $m = 0{,}919\,\tfrac{\text{g}}{\text{cm}^3} \cdot 1500\,\text{cm}^3 = 1378\,\text{g} = 1{,}378\,\text{kg}$
-**Vastaus:** $m \approx 1{,}38\,\text{kg}$, kolme merkitsevää numeroa kuten tilavuudessa $1{,}50\,\text{l}$; d-kohdan epävarmuuden mukaan noin $\pm 0{,}02\,\text{kg}$. Tilavuus on $15$-kertainen mitattuun alueeseen verrattuna, mutta laskussa ei jatketa mittalasin suoraa vaan käytetään tiheyttä, joka on aineen ominaisuus ja pysyy samana samassa lämpötilassa. Siksi tulos on fysikaalisesti perusteltu, kunhan öljyn lämpötila on sama kuin mittauksessa.
+**Vastaus:** $m \approx 1{,}38\,\text{kg}$. Tiheys tunnetaan d-kohdan mukaan noin $1{,}3\,\%$:n tarkkuudella, joten tulos on $(1{,}38 \pm 0{,}02)\,\text{kg}$ ja epävarmuus ulottuu kolmanteen numeroon, kuten tilavuudessakin $1{,}50\,\text{l}$. Tilavuus on $15$-kertainen mitattuun alueeseen verrattuna, mutta laskussa ei jatketa mittalasin suoraa vaan käytetään tiheyttä, joka on aineen ominaisuus ja pysyy samana samassa lämpötilassa. Siksi tulos on fysikaalisesti perusteltu, kunhan öljyn lämpötila on sama kuin mittauksessa.
 **Järkevyys:** Saman tilavuuden vesi painaisi $1{,}50\,\text{kg}$, ja öljy on noin $8\,\%$ kevyempää, joten $1{,}38\,\text{kg}$ on oikean suuruinen.
 
 ### Hyväksytään myös
@@ -342,12 +342,12 @@ Pinon korkeuden epävarmuus on suurempi kuin $0{,}5\,\text{mm}$, koska epävarmu
 ### b)
 **Kysytty:** onko väite $(765 \pm 0{,}5)\,\text{g}$ oikein, ja parempi arvio jauhojen massasta
 **Periaate:** Resoluutio on pienin näytössä näkyvä muutos. Se ei kerro systemaattisesta virheestä, joten epävarmuus voi olla paljon resoluutiota suurempi. Tunnettu systemaattinen virhe korjataan.
-**Mallivastaus:** Väite ei pidä. Puolikas resoluutiosta, $0{,}5\,\text{g}$, kertoo vain, kuinka tarkasti näytön voi lukea. a-kohdan mukaan vaaka näyttää noin $2\,\%$ liikaa, ja toistot vaihtelevat noin $1\,\text{g}$. Korjattu massa saadaan jakamalla lukema punnusten antamalla suhteella $1020\,\text{g} : 1000\,\text{g} = 1{,}02$: $m \approx 765\,\text{g} : 1{,}02 = 750\,\text{g}$. Epävarmuutta lisäävät toistojen vaihtelu ja se, että korjauskerroin tunnetaan vain noin tuhannesosan tarkkuudella, mikä tekee $765\,\text{g}$:n lukemassa alle grammaa. Parempi arvio on noin $(750 \pm 2)\,\text{g}$. Ystävän tulos on siis noin $15\,\text{g}$ liian suuri, ja sen epävarmuus on liian pieni.
+**Mallivastaus:** Väite ei pidä. Puolikas resoluutiosta, $0{,}5\,\text{g}$, kertoo vain, kuinka tarkasti näytön voi lukea. a-kohdan mukaan vaaka näyttää noin $2\,\%$ liikaa, ja toistot vaihtelevat noin $1\,\text{g}$. Vaaka näyttää massasta $m$ lukeman $m_\text{lukema} = k\,m$, missä $k$ on punnuksilta saatu suhde $1020\,\text{g} : 1000\,\text{g} = 1{,}02$. Korjattu massa on siis $m = \dfrac{m_\text{lukema}}{k} = 765\,\text{g} : 1{,}02 = 750\,\text{g}$. Epävarmuutta lisäävät toistojen vaihtelu ja se, että korjauskerroin tunnetaan vain noin tuhannesosan tarkkuudella, mikä tekee $765\,\text{g}$:n lukemassa alle grammaa. Parempi arvio on noin $(750 \pm 2)\,\text{g}$. Ystävän tulos on siis noin $15\,\text{g}$ liian suuri, ja sen epävarmuus on liian pieni.
 
 ### c)
 **Kysytty:** kuvaajan muoto, mitä siitä näkee virheen laadusta, ja miksi toistaminen ei auta
 **Periaate:** Jos vaaka olisi oikea, lukema olisi sama kuin punnuksen massa, ja pisteet olisivat suoralla, jonka kulmakerroin on $1$ ja vakiotermi $0$. Nollakohdan virhe näkyisi vakiotermissä ja suhteellinen virhe kulmakertoimessa.
-**Mallivastaus:** Pisteet ovat origon kautta kulkevalla suoralla. Kulmakerroin on $(1020{,}3\,\text{g} - 101{,}7\,\text{g}) : (1000{,}0\,\text{g} - 100{,}0\,\text{g}) \approx 1{,}02$ eikä $1$, ja vakiotermi on nolla. Vakiotermi nolla kertoo, että nollakohta on oikein, ja kulmakerroin $1{,}02$ kertoo, että vaaka näyttää jokaisesta massasta $2\,\%$ liikaa. Kuvaajan pisteet ovat hyvin tarkasti suoralla, koska satunnaisvaihtelu, noin $1\,\text{g}$, on pieni.
+**Mallivastaus:** Pisteet ovat origon kautta kulkevalla suoralla: lukema on suoraan verrannollinen punnuksen massaan, $m_\text{lukema} \propto m_\text{punnus}$. Kulmakerroin $k = \dfrac{\Delta m_\text{lukema}}{\Delta m_\text{punnus}}$ luetaan sovitetulta suoralta kahdesta kaukana toisistaan olevasta pisteestä, joita ovat pisteet $100{,}0\,\text{g}$ ja $1000{,}0\,\text{g}$ kohdalla (kaikki pisteet ovat suoralla): $k = (1020{,}3\,\text{g} - 101{,}7\,\text{g}) : (1000{,}0\,\text{g} - 100{,}0\,\text{g}) \approx 1{,}02$ eikä $1$, ja vakiotermi on nolla. Vakiotermi nolla kertoo, että nollakohta on oikein, ja kulmakerroin $1{,}02$ kertoo, että vaaka näyttää jokaisesta massasta $2\,\%$ liikaa. Kuvaajan pisteet ovat hyvin tarkasti suoralla, koska satunnaisvaihtelu, noin $1\,\text{g}$, on pieni.
 
 Toistaminen vaimentaa satunnaisvirheen vaikutusta keskiarvossa, koska liian suuret ja liian pienet lukemat kumoavat osittain toisensa. Systemaattinen virhe on kuitenkin joka punnituksessa sama, joten keskiarvo on yhtä paljon väärin kuin yksittäinen lukema. Virhe korjataan jakamalla lukemat kulmakertoimella $1{,}02$ tai kalibroimalla vaaka punnuksen avulla.
 
@@ -428,7 +428,7 @@ Toistaminen vaimentaa satunnaisvirheen vaikutusta keskiarvossa, koska liian suur
   <foreignObject x="258.5" y="274.5" width="164" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px">$v = k \approx 0{,}48\,\tfrac{\text{m}}{\text{s}}$</div></foreignObject>
 </svg>
 
-**Mallivastaus:** Kuusi pistettä on lähellä yhtä suoraa, joten auto liikkui tasaisesti. Piste $t = 1{,}5\,\text{s}$ on noin $0{,}25\,\text{m}$ suoran yläpuolella, lähes samassa paikassa kuin piste $t = 2{,}0\,\text{s}$, joten se on todennäköisesti merkitty väärään kuvaan. Piste tarkistetaan videolta. Jos virhe löytyy, se korjataan tai piste jätetään pois ja syy kirjataan.
+**Mallivastaus:** Kuusi pistettä on lähellä yhtä suoraa, joten auto liikkui tasaisesti ja paikka on lineaarinen ajan funktio, $x = vt + x_0$. Nopeus on suoran kulmakerroin $v = \dfrac{x_2 - x_1}{t_2 - t_1}$. Piste $t = 1{,}5\,\text{s}$ on noin $0{,}25\,\text{m}$ suoran yläpuolella, lähes samassa paikassa kuin piste $t = 2{,}0\,\text{s}$, joten se on todennäköisesti merkitty väärään kuvaan. Piste tarkistetaan videolta. Jos virhe löytyy, se korjataan tai piste jätetään pois ja syy kirjataan.
 
 Suoraa ei pakoteta origon kautta. Siltä luetaan kaksi kaukana toisistaan olevaa pistettä, $(0\,\text{s};\ 0{,}36\,\text{m})$ ja $(3{,}0\,\text{s};\ 1{,}79\,\text{m})$, joten nopeus on $v = \dfrac{1{,}79\,\text{m} - 0{,}36\,\text{m}}{3{,}0\,\text{s} - 0\,\text{s}} = 0{,}477\,\tfrac{\text{m}}{\text{s}}$. Vakiotermi $0{,}36\,\text{m}$ on auton paikka ajanoton alkaessa. Jyrkin ja loivin suora, jotka kulkevat kaikkien janojen kautta, antavat kulmakertoimet noin $0{,}492$ ja $0{,}464\,\text{m/s}$, joten $\Delta v = (0{,}492 - 0{,}464)\,\text{m/s} : 2 = 0{,}014\,\text{m/s}$.
 

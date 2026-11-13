@@ -557,30 +557,30 @@
           "points": 5,
           "text": "Determine the half-life from the data, taking the background radiation into account.",
           "answer": {
-            "value": 151,
+            "value": 153,
             "unit": "s",
             "tolerance": 0.04
           },
           "criteria": [
             {
-              "text": "Subtracts the background from each reading before calculating: $393$ at the start and $99$ at the end, counts in $10\\,\\text{s}$.",
+              "text": "Subtracts the background from each of the $11$ readings before calculating: $393$ at the start and $99$ at the end, counts in $10\\,\\text{s}$.",
               "tag": "experiment",
               "points": 1
             },
             {
               "key": "equation",
               "points": 1,
-              "detail": "$N = N_0 \\left(\\tfrac12\\right)^{t/T_{1/2}}$, so $T_{1/2} = \\dfrac{t \\ln 2}{\\ln (N_0 : N)}$, or the fit $y = A\\,e^{-Ct} + B$ and $T_{1/2} = \\tfrac{\\ln 2}{C}$"
+              "detail": "$\\ln N = \\ln N_0 - \\lambda t$, so the slope of the line $(t,\\ \\ln N)$ is $k = -\\lambda$ and $T_{1/2} = \\dfrac{\\ln 2}{-k}$; a fit to all the points. The two-point calculation $T_{1/2} = \\dfrac{t \\ln 2}{\\ln (N_0 : N)}$ is also accepted"
             },
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$T_{1/2} = \\dfrac{300\\,\\text{s} \\cdot 0.693}{\\ln (393 : 99)} \\approx 151\\,\\text{s}$, or about $153\\,\\text{s}$ with a fit"
+              "detail": "$k \\approx -4.53 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{s}}$ and $T_{1/2} \\approx 153\\,\\text{s}$; about $151\\,\\text{s}$ with the two-point calculation"
             },
             {
               "key": "units_precision",
               "points": 1,
-              "detail": "$T_{1/2} \\approx 150\\,\\text{s}$; results $145$–$157\\,\\text{s}$ are accepted."
+              "detail": "$T_{1/2} \\approx 153\\,\\text{s}$; results $147$–$159\\,\\text{s}$ are accepted."
             },
             {
               "key": "reasonableness",

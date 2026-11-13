@@ -1,13 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: e3f6843d4048f9ea
+CONTENT-HASH: 40fdf609551e84d5
 
-Delta review (definition sentence after the keskikiihtyvyys block, commit c4e866703) of the version passed at 908bafcc86338340.
+Delta review (solution practice, 2026-11-12) of the version passed before.
 
 ## Blocking
-None.
+None. Built fy9-liike (fi-easy) with ?ratkaisut=1, every details element opened, at 390 and 1280 px. No .katex-error, no script errors; the changed Sijoitus, Kaava and Vastaus lines render with upright subscripts and units, thin spaces and \cdot (no x, no \times); decimal comma in fi and fi-easy, decimal point in en; the new symbol definitions ("missä ...") read naturally and the sentences are in the right language.
 
 ## Polish
-None.
-
-## Checked
-Built the page; overflow and KaTeX-error scan at 390 and 1280 px (clean). Read the new sentence as rendered at 390 px (fi, en) and 1280 px (fi-easy) and the keskikiihtyvyys formula block at 390 px (fi-easy): LaTeX symbols and units upright, \overline vectors and the fraction render correctly, language natural. The other renders of this sentence and block (1280 px for fi and en, 390 px for the rest) were captured but not opened; they came out clean in the scan.
+1. Page-level horizontal overflow at 390 px when all details are open (147 px): long inline-math Sijoitus or answer lines in .reveal or .answer blocks do not wrap or scroll. Verified in the previous version (git 761b6673) for energia, voimat, sahkokentta and mittaaminen, so it is not a regression of this change (mittaaminen is about 40 px wider now). Fix when convenient: break such a substitution into a display line (\begin{aligned}) or let .reveal/.answer have overflow-x:auto.

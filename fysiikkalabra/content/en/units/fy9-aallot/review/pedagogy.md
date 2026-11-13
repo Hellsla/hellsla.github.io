@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 79ddac07b1cdc0c8
+CONTENT-HASH: 71f0ef9cfadd67d6
 
-Delta review (formulas in MAFY form, 2026-11-12) of the version passed at 271c1d1ab8c947a2.
+Delta review (solution practice, 2026-11-12) of the version passed before.
 
-Blocking: none. The new symbols are defined in the sentence after each formula block, the tasks' forms are still derivable from the theory, and the unit stays coherent for a student.
+Changed solutions (s? a: distance d = L - v/2f' solved in symbols; fit s5 b l-axis intercept l0 = -b/k separated; s? c depth d = L0 + x; inquiry dB task now names beta = 10 dB) model symbols-first practice and stay easy to follow. Same physics and steps as fi in en (numbers match fi).
 
-1. Polish: tasks that name symbols f_h, v_s, v_h (old) should be checked against the new f_H, v_L, v_H, and the four Doppler rows now let the student choose by direction; the sentence after the block explains this.
+Checked: diff since 761b6673, symbols defined, solved expression equals Sijoitus, answers.py output, tasks.json answer/criteria, cross-language number match.

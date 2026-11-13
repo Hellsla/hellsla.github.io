@@ -1,19 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 1f0567f0e6823b02
-
-Delta review of the FY9 audit fixes (2026-11-10). Previous PASS hash: 167a7e1ffcb6d0db. The hash was the same at the start and the end of this review.
+CONTENT-HASH: c16231eb9f0d03db
+Delta review (solution practice, 2026-11-12) of the version passed before.
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-- Older, not from these fixes: the en and fi-easy 'big picture' paragraph still opens with 'Almost every matriculation exam ...' / 'Melkein jokaisessa ...', which the fi page softened in an earlier correction.
+(none)
 
 ## Checked
-- s1 d task text, criteria, model answer and Hyväksytään myös: t_meas = t_true + tau_stop - tau_start is the correct model (a late start shortens, a late stop lengthens the measured time); the direction therefore depends on the delay difference and cannot be concluded for certain from the task data, as the criterion says.
-- The 'most likely the start delay is larger' estimate is labelled as an assumption and accepted only with its assumption stated; the new Yleisiä virheitä entry penalises a certain-direction claim. The rubric asks only what the task asks.
-- Averaging: the common (mean) part of the delays is systematic and survives the mean; random error's effect usually decreases. Physically right and stated with the correct hedge.
-- Points still 3 (1+1+1). The older accepted alternative (pistol sound over 100 m about 0.3 s) is consistent with the new model: 100 m / 343 m/s = 0.29 s of extra start delay.
-- unit.md: the processing order is now 'often' with 'not every problem requires every step'; no physics claim left over-absolute in that sentence.
-- Preview built with no KaTeX errors.
-- Language version checked: fi-easy; the change is the same as in fi, in translation.
+s2 c ($\rho = \sigma/d$ with area $A$ cancelling: 782,8 kg/m³), s3 e (±1,3 % from d ⇒ (1,38 ± 0,02) kg), s4 b ($m = m_\text{lukema}/k$ = 750 g), s4 c ($m_\text{lukema} \propto m_\text{punnus}$, $k$ ≈ 1,02, fit $b$ ≈ 0), s5 model answer; `unit.md` precision sentence correct. The fi, fi-easy and en diffs carry identical mathematics (every changed formula compared token by token); answers.py run; `units.py check` passes.

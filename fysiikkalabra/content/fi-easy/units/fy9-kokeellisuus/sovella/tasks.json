@@ -492,7 +492,7 @@
             {
               "key": "units_precision",
               "points": 1,
-              "detail": "$1\\,\\text{g/cm}^3 = 1000\\,\\text{kg/m}^3$, joten $\\rho \\approx 2680\\,\\text{kg/m}^3$."
+              "detail": "$1\\,\\text{g/cm}^3 = 1000\\,\\text{kg/m}^3$, joten $\\rho \\approx 2{,}7 \\cdot 10^3\\,\\text{kg/m}^3$, kaksi merkitsevää numeroa kuten tilavuudessa $70\\,\\text{cm}^3$; myös $2680\\,\\text{kg/m}^3$ hyväksytään."
             }
           ]
         },

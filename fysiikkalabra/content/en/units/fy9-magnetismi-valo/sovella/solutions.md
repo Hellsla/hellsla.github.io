@@ -21,10 +21,10 @@
 **Reasonableness:** The ratio of the currents $375 : 7.50 = 50$ is the same as the turns ratio, and $U_2 I_2 = 20\,000\,\text{V} \cdot 7.50\,\text{A} = 150\,\text{kW}$, the same as in the primary.
 
 ### c)
-**Given:** line current $I_2 = 7.50\,\text{A}$ (part b), resistance $R = 6.0\,\Omega$, power $P = 150\,\text{kW}$; for comparison the voltage $400\,\text{V}$
+**Given:** line current $I_2 = 7.50\,\text{A}$ (part b), resistance $R = 6.0\,\Omega$, line voltage $U_2 = 20.0\,\text{kV}$, power $P = 150\,\text{kW}$; for comparison the voltage $U_1 = 400\,\text{V}$
 **Find:** the fraction $\tfrac{P_\text{h}}{P}$ of the power that turns into heat, and what would happen at the voltage $400\,\text{V}$
 **Principle:** In the resistance of the line electrical energy turns into internal energy at the rate $RI^2$. The transmission voltage $20\,\text{kV}$ is not across the resistance of the line, so the loss is calculated from the current, which is obtained from the transmitted power (chapter *The transformer and the transmission of electrical energy*).
-**Formula:** $I = \dfrac{P}{U}$ and $P_\text{h} = RI^2$, fraction $\dfrac{P_\text{h}}{P}$
+**Formula:** $I = \dfrac{P}{U}$ and $P_\text{h} = RI^2$, so $P_\text{h} = \dfrac{RP^2}{U^2}$ and the fraction of the transmitted power lost is $\dfrac{P_\text{h}}{P} = \dfrac{RP}{U^2}$
 **Conversions:** Finally the fraction as a percentage: multiply by $100\,\%$.
 **Substitution:** $P_\text{h} = 6.0\,\Omega \cdot (7.50\,\text{A})^2 = 337.5\,\text{W}$, so $\dfrac{P_\text{h}}{P} = \dfrac{337.5\,\text{W}}{150\,000\,\text{W}} = 0.00225 = 0.225\,\%$. At the voltage $400\,\text{V}$: $I = 375\,\text{A}$ and $RI^2 = 6.0\,\Omega \cdot (375\,\text{A})^2 = 843\,750\,\text{W} \approx 844\,\text{kW}$
 **Answer:** About $0.23\,\%$ of the power turns into heat in the line, two significant figures like the resistance $6.0\,\Omega$. At the voltage $400\,\text{V}$ the expression $RI^2$ would give $844\,\text{kW}$, more than five times the transmitted power. This means that the transmission would not work at all: already the voltage drop of the line $RI = 6.0\,\Omega \cdot 375\,\text{A} = 2250\,\text{V}$ would be larger than the whole voltage.
@@ -67,12 +67,12 @@
 **Reasonableness:** Light travels in the fibre at the speed $\tfrac{3.00 \cdot 10^8\,\text{m/s}}{1.470} \approx 2.04 \cdot 10^8\,\text{m/s}$, about two thirds of the speed of light in a vacuum. The difference of about $1\,\%$ corresponds to the ratio of the distances $\tfrac{1}{0.9898} \approx 1.010$. If pulses were sent more often than about once a microsecond, they could get mixed up.
 
 ### c)
-**Given:** attenuation coefficient $a = 0.22\,\text{dB/km}$, length $L = 14.0\,\text{km}$, four splices at $0.10\,\text{dB}$ each, transmitted power $P_0 = 2.0\,\text{mW}$
+**Given:** attenuation coefficient $a = 0.22\,\text{dB/km}$, length $L = 14.0\,\text{km}$, four splices (number $N_\text{s} = 4$) with a loss $A_\text{s} = 0.10\,\text{dB}$ each, transmitted power $P_0 = 2.0\,\text{mW}$; the factor of the decibel scale $\beta = 10\,\text{dB}$ (by definition)
 **Find:** the received power $P$
 **Principle:** The glass of the fibre attenuates the light by the same ratio every kilometre, and the attenuation is given in decibels. The attenuations of successive sections and splices in decibels are added together (chapter *Applied chapter: wireless charging, the induction hob and the fibre link*).
-**Formula:** $A = aL + 4 \cdot 0.10\,\text{dB}$ and $A = 10\,\text{dB} \cdot \lg \dfrac{P_0}{P}$, so $P = P_0 \cdot 10^{-A/(10\,\text{dB})}$
+**Formula:** $A = aL + N_\text{s}A_\text{s}$ and $A = \beta \cdot \lg \dfrac{P_0}{P}$, so $P = P_0 \cdot 10^{-A/\beta}$
 **Conversions:** The length is already in kilometres and the power in milliwatts, so no conversions are needed.
-**Substitution:** $A = 0.22\,\tfrac{\text{dB}}{\text{km}} \cdot 14.0\,\text{km} + 0.40\,\text{dB} = 3.08\,\text{dB} + 0.40\,\text{dB} = 3.48\,\text{dB}$, so $P = 2.0\,\text{mW} \cdot 10^{-0.348} = 2.0\,\text{mW} \cdot 0.4487 = 0.897\,\text{mW}$
+**Substitution:** $A = 0.22\,\tfrac{\text{dB}}{\text{km}} \cdot 14.0\,\text{km} + 4 \cdot 0.10\,\text{dB} = 3.08\,\text{dB} + 0.40\,\text{dB} = 3.48\,\text{dB}$, so $P = 2.0\,\text{mW} \cdot 10^{-0.348} = 2.0\,\text{mW} \cdot 0.4487 = 0.897\,\text{mW}$
 **Answer:** About $0.90\,\text{mW}$ reaches the receiver, two significant figures like the transmitted power $2.0\,\text{mW}$ and the attenuation coefficient $0.22\,\text{dB/km}$.
 **Reasonableness:** $3\,\text{dB}$ corresponds to roughly halving the power, so $3.5\,\text{dB}$ leaves a little under half, $45\,\%$. The result is plausible, because in a telecommunications fibre light travels tens of kilometres without amplification.
 
@@ -331,7 +331,7 @@
 **Given:** the grating has $N = 600$ lines per millimetre, $L = 80.0\,\text{cm}$, $x_1 = 27.0\,\text{cm}$, $x_2 = 66.4\,\text{cm}$
 **Find:** the wavelength $\lambda$ of the laser from each maximum
 **Principle:** The maxima of a grating lie in the directions for which $d\sin\theta = k\lambda$, and the grating constant is the line spacing (chapter *Interference and diffraction of light*). The angle is obtained from the right triangle at the screen, $\tan\theta = \tfrac{x}{L}$. The sine and the tangent are almost equal only at small angles, so the angle is calculated first from the tangent and only then its sine.
-**Formula:** $d = \dfrac{1\,\text{mm}}{N}$, $\theta_k = \tan^{-1}\dfrac{x_k}{L}$ and $\lambda = \dfrac{d\sin\theta_k}{k}$
+**Formula:** $d = \dfrac{1}{N}$, where $N$ is the number of lines per unit length, $\theta_k = \tan^{-1}\dfrac{x_k}{L}$ and $\lambda = \dfrac{d\sin\theta_k}{k}$, that is $\lambda = \dfrac{1}{kN}\sin\left(\tan^{-1}\dfrac{x_k}{L}\right)$
 **Conversions:** $d = \dfrac{1\,\text{mm}}{600} = \dfrac{1 \cdot 10^{-3}\,\text{m}}{600} = 1.667 \cdot 10^{-6}\,\text{m}$; in the ratio of the distances the units cancel, and finally $1\,\text{m} = 10^9\,\text{nm}$.
 **Substitution:** $\tan\theta_1 = \dfrac{27.0\,\text{cm}}{80.0\,\text{cm}} = 0.3375$, so $\theta_1 = 18.65^\circ$ and $\lambda = 1.667 \cdot 10^{-6}\,\text{m} \cdot \sin 18.65^\circ = 1.667 \cdot 10^{-6}\,\text{m} \cdot 0.3198 = 533.0\,\text{nm}$. $\tan\theta_2 = \dfrac{66.4\,\text{cm}}{80.0\,\text{cm}} = 0.830$, so $\theta_2 = 39.69^\circ$ and $\lambda = \dfrac{1.667 \cdot 10^{-6}\,\text{m} \cdot 0.6386}{2} = 532.2\,\text{nm}$
 **Answer:** From the first order $\lambda \approx 533\,\text{nm}$ and from the second $\lambda \approx 532\,\text{nm}$, three significant figures like the distances.

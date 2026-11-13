@@ -233,10 +233,10 @@ a oikea
 Vaakasuunnan liikeyhtälö kuviosta on $T - F_\mu = ma$, sama kuin b-kohdan suoran yhtälö, kun $T = F$. Kuvion kokonaisvoima $1{,}20\,\text{N} - 0{,}24\,\text{N} = 0{,}96\,\text{N}$ antaa kiihtyvyyden $0{,}96\,\text{N} : 0{,}851\,\text{kg} \approx 1{,}13\,\text{m/s}^2$, joka on lähellä mitattua $1{,}14\,\text{m/s}^2$.
 
 ### d)
-**Annettu:** b-kohdasta $m = 0{,}851\,\text{kg}$ ja $F_\mu = 0{,}238\,\text{N}$; lisäpunnus $0{,}500\,\text{kg}$; $g = 9{,}81\,\text{m/s}^2$
+**Annettu:** b-kohdasta $m = 0{,}851\,\text{kg}$ ja $F_\mu = 0{,}238\,\text{N}$; lisäpunnus $m_\text{x} = 0{,}500\,\text{kg}$; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** kerroin $\mu = \tfrac{F_\mu}{N}$ ja suoran muutos lisäpunnuksella
 **Periaate:** Lanka on vaakasuora, joten pystysuunnassa vaikuttavat vain paino ja tukivoima, ja $N = mg$ (luku *Paino, kitka ja kalteva taso*). Mallissa kitka on verrannollinen tukivoimaan.
-**Kaava:** $\mu = \dfrac{F_\mu}{N} = \dfrac{F_\mu}{mg}$
+**Kaava:** $\mu = \dfrac{F_\mu}{N} = \dfrac{F_\mu}{mg}$; lisäpunnuksella $m' = m + m_\text{x}$, suoran kulmakerroin on $k' = \dfrac{1}{m'}$ ja leikkauskohta vaaka-akselilla $F_0' = \mu m' g$
 **Muunnokset:** Ei tarvita, suureet ovat perusyksiköissä.
 **Sijoitus:** $\mu = \dfrac{0{,}238\,\text{N}}{0{,}851\,\text{kg} \cdot 9{,}81\,\text{m/s}^2} = \dfrac{0{,}238\,\text{N}}{8{,}35\,\text{N}} = 0{,}0285$
 **Vastaus:** $\mu \approx 0{,}029$, kaksi merkitsevää numeroa kuten $F_\mu$; kertoimella ei ole yksikköä. Lisäpunnuksella massa on $1{,}351\,\text{kg}$: suora loivenee, kulmakerroin $\tfrac{1}{1{,}351\,\text{kg}} \approx 0{,}74\,\tfrac{1}{\text{kg}}$, ja leikkauskohta siirtyy oikealle, kohtaan $0{,}029 \cdot 1{,}351\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 0{,}38\,\text{N}$.
@@ -296,7 +296,7 @@ v oikea
 **Annettu:** rajakulmat $22^\circ$, $24^\circ$, $21^\circ$, $23^\circ$ ja $33^\circ$; mittauksessa 5 kirjaa nostettiin nykäisten
 **Kysytty:** lepokitkakerroin $\mu_0$ ja sen epävarmuus
 **Periaate:** Rajakulmalla painon kannen suuntainen komponentti on yhtä suuri kuin lepokitkan suurin arvo, ja tukivoima on painon kohtisuora komponentti (luku *Paino, kitka ja kalteva taso*). Mittaus 5 jätetään pois, koska raporttiin on kirjattu karkea virhe: nopea nosto painaa kantta hetkellisesti puhelinta vasten, jolloin tukivoima ja lepokitkan yläraja kasvavat hetkeksi, ja kulma luetaan myöhässä. Siksi $33^\circ$ ei ole liukumisen raja. Tulosta ei poistettaisi pelkästään siksi, että se poikkeaa muista.
-**Kaava:** $mg\sin\alpha_0 = \mu_0 mg\cos\alpha_0$, joten $\mu_0 = \tan\alpha_\text{ka}$, missä $\alpha_\text{ka}$ on rajakulmien keskiarvo
+**Kaava:** $mg\sin\alpha_0 = \mu_0 mg\cos\alpha_0$, joten $\mu_0 = \tan\alpha_0$. Rajakulmana käytetään hyväksyttyjen mittausten keskiarvoa $\alpha_\text{ka} = \dfrac{\alpha_1 + \alpha_2 + \alpha_3 + \alpha_4}{4}$, joten $\mu_0 = \tan\alpha_\text{ka}$, ja epävarmuus on puolet vaihteluvälistä, $\Delta\mu_0 = \dfrac{\tan\alpha_\text{max} - \tan\alpha_\text{min}}{2}$
 **Muunnokset:** Ei tarvita. Kulmat ovat asteina, ja kertoimella ei ole yksikköä.
 **Sijoitus:** $\alpha_\text{ka} = \dfrac{22^\circ + 24^\circ + 21^\circ + 23^\circ}{4} = 22{,}5^\circ$ ja $\mu_0 = \tan 22{,}5^\circ = 0{,}414$. Hajonnan rajat: $\tan 21^\circ = 0{,}384$ ja $\tan 24^\circ = 0{,}445$
 **Vastaus:** $\mu_0 \approx 0{,}41 \pm 0{,}03$, kaksi merkitsevää numeroa, koska kulmat on luettu asteen tarkkuudella ja niiden hajonta on noin $\pm 1{,}5^\circ$. Epävarmuus on puolet tulosten vaihteluvälistä ($0{,}384\text{–}0{,}445$), mikä on tässä valittu yksinkertainen arvio.

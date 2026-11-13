@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: dfa1148a0e9a3ae8
+CONTENT-HASH: 274a46355e2a7fcc
 
-Delta review (formulas in MAFY form, 2026-11-12) of the version passed at 5aa92a29303dc6ae.
+Delta review (solution practice, 2026-11-12) of the version passed before.
 
-Blocking: none. The new symbols are defined in the sentence after each formula block, the tasks' forms are still derivable from the theory, and the unit stays coherent for a student.
+The line model E = E0 + k(T - T0) with a named point, and the symbolic T = (E_muu - E0)/k in the model answer, are clear; the wind-power model answer now defines k, N, P_nim before numbers. Same physics and steps as fi in fi-easy (numbers match fi).
 
-No Polish.
+Checked: diff since 761b6673, symbols defined, solved expression equals Sijoitus, answers.py output, tasks.json answer/criteria, cross-language number match.

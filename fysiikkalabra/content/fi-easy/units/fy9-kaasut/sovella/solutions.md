@@ -63,11 +63,11 @@
 **Järkevyys:** Polttoaineteho on noin $0{,}5\,\text{MW}$. Siitä saadaan sähköä vähän yli kolmasosa. Näin on myös pienessä moottorivoimalassa. Teho riittäisi kymmenien omakotitalojen sähkönkulutukseen.
 
 ### c)
-**Annettu:** $P_0 = 485{,}1\,\text{kW}$, $P_\text{s} = 174{,}6\,\text{kW}$, lämmöstä talteen $75\,\%$
+**Annettu:** $P_0 = 485{,}1\,\text{kW}$, $P_\text{s} = 174{,}6\,\text{kW}$, lämmöstä talteen $\eta_\text{l} = 75\,\%$
 **Kysytty:** miksi kaikkea polttoainetehoa ei saada sähköksi, ja kokonaishyötysuhde $\eta_\text{kok}$
 **Periaate:** Moottori on lämpövoimakone. Se voi muuttaa lämpöä työksi vain, jos se luovuttaa osan lämmöstä kylmempään ympäristöön. Tämä lämpö lähtee pakokaasujen ja jäähdytysveden mukana (luku *Kaasun tekemä työ ja lämpövoimakone*). Energia säilyy. Siksi luovutettu lämpöteho on polttoainetehon ja sähkötehon erotus. Kokonaishyötysuhteessa hyödyksi lasketaan sähkö ja lämpö, joka otetaan talteen.
-**Kaava:** $P_2 = P_0 - P_\text{s}$, $P_\text{l} = 0{,}75\,P_2$ ja $\eta_\text{kok} = \dfrac{P_\text{s} + P_\text{l}}{P_0}$
-**Muunnokset:** Muunnoksia ei tarvita. Tehot ovat kilowatteina, ja $75\,\% = 0{,}75$.
+**Kaava:** $P_2 = P_0 - P_\text{s}$, $P_\text{l} = \eta_\text{l}\,P_2$ ja $\eta_\text{kok} = \dfrac{P_\text{s} + P_\text{l}}{P_0}$
+**Muunnokset:** Muunnoksia ei tarvita. Tehot ovat kilowatteina, ja $\eta_\text{l} = 75\,\% = 0{,}75$.
 **Sijoitus:** $P_2 = 485{,}1\,\text{kW} - 174{,}6\,\text{kW} = 310{,}5\,\text{kW}$, $P_\text{l} = 0{,}75 \cdot 310{,}5\,\text{kW} = 232{,}9\,\text{kW}$ ja $\eta_\text{kok} = \dfrac{174{,}6\,\text{kW} + 232{,}9\,\text{kW}}{485{,}1\,\text{kW}} = 0{,}840$
 **Vastaus:** $\eta_\text{kok} \approx 84\,\%$. Vastauksessa on kaksi merkitsevää numeroa, kuten hyötysuhteissa $36\,\%$ ja $75\,\%$. Myös kitkattoman moottorin on luovutettava lämpöä kylmempään. Siksi sähkön osuus jää selvästi alle $100\,\%$:n. Kokonaishyötysuhde on suuri, koska luovutettu lämpö käytetään lämmitykseen. Sähköä ei kuitenkaan saada yhtään enempää.
 **Järkevyys:** Hukkaan menee $485\,\text{kW} - 175\,\text{kW} - 233\,\text{kW} \approx 78\,\text{kW}$ eli $16\,\%$. Se on sama kuin $25\,\%$ lämpötehosta. Tulos on samaa suuruusluokkaa kuin yhteistuotantolaitosten $85$–$90\,\%$. Yhteistuotantolaitos tuottaa sekä sähköä että lämpöä.
@@ -409,9 +409,14 @@ Jos pisteet ovat suoralla, mutta suora ei kulje origon kautta, mittauksessa on s
 **Järkevyys:** Tulos on a-kohdan tulos jaettuna kitkakertoimella: $11{,}2\,\text{kPa} : 0{,}60 \approx 18{,}7\,\text{kPa}$. Pystyasento vaatii enemmän, koska kitka on pienempi kuin tukivoima, joka sen aiheuttaa.
 
 ### c)
-**Kysytty:** täyttääkö pystynosto märällä lasilla valmistajan ohjeen
-**Periaate:** Varmuuskerroin on nostimen alipaineen ja noston vaatiman alipaineen suhde. Ohjeen mukaan sen on oltava vähintään $2$. Märällä lasilla lepokitkakerroin on $0{,}30$. Siksi b-kohdan tulos kaksinkertaistuu (luku *Paino, kitka ja kalteva taso*).
-**Mallivastaus:** Märällä lasilla tarvitaan $\Delta p = \dfrac{792{,}7\,\text{N}}{0{,}30 \cdot 0{,}070\,69\,\text{m}^2} \approx 37\,\text{kPa}$. Nostimen $60\,\text{kPa}$ riittää siis juuri ja juuri pitämään levyn. Varmuuskerroin on kuitenkin vain $60 : 37 \approx 1{,}6$. Se on alle kahden, jota ohje vaatii. Kuivana pystynosto täyttää ohjeen, $60 : 18{,}7 \approx 3{,}2$. Vaakanosto täyttää ohjeen selvästi, $60 : 11{,}2 \approx 5{,}4$. Pystyasento on vaativampi, koska paineen voima on kohtisuorassa lasin pintaa vastaan eli vaakasuora. Paineen voima ei kannata painoa lainkaan. Painon kantaa kitka, joka on enintään $\mu_0$ kertaa tukivoima. Asentaja ei saa nostaa märkää levyä pystyssä tällä nostimella. Lasi on kuivattava. Toinen vaihtoehto on käyttää kahta laikkaa, jolloin ala kaksinkertaistuu.
+**Annettu:** a-kohdan $m = 72{,}0\,\text{kg}$ ja $A = 0{,}070\,69\,\text{m}^2$, kiihtyvyys $a = 1{,}2\,\text{m/s}^2$ ylös, märän lasin lepokitkakerroin $\mu_\text{m} = 0{,}30$, nostimen alipaine $\Delta p_\text{n} = 60\,\text{kPa}$, vaadittu varmuuskerroin $s \ge 2$; $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** täyttääkö pystynosto märällä lasilla ohjeen. Eli onko varmuuskerroin $s = \Delta p_\text{n} / \Delta p_\text{m}$ vähintään $2$.
+**Periaate:** Pystyasennossa levyn painon kantaa laikan reunan lepokitka. Se on enintään $\mu N$, ja tukivoima on $N = \Delta p\,A$ kuten b-kohdassa (luku *Paino, kitka ja kalteva taso*). Märällä lasilla kitkakerroin on $\mu_\text{m}$. Siksi b-kohdan lauseke pätee, kun $\mu_0$ korvataan luvulla $\mu_\text{m}$. Varmuuskerroin on nostimen alipaineen ja noston vaatiman alipaineen suhde.
+**Kaava:** $\Delta p_\text{m} = \dfrac{m(g + a)}{\mu_\text{m} A}$ ja $s = \dfrac{\Delta p_\text{n}}{\Delta p_\text{m}} = \dfrac{\mu_\text{m} A\,\Delta p_\text{n}}{m(g + a)}$
+**Muunnokset:** $\Delta p_\text{n} = 60 \cdot 1000\,\text{Pa} = 60\,000\,\text{Pa}$.
+**Sijoitus:** $m(g + a) = 72{,}0\,\text{kg} \cdot (9{,}81 + 1{,}2)\,\text{m/s}^2 = 792{,}7\,\text{N}$, $\Delta p_\text{m} = \dfrac{792{,}7\,\text{N}}{0{,}30 \cdot 0{,}070\,69\,\text{m}^2} = 37\,380\,\text{Pa}$ ja $s = \dfrac{60\,000\,\text{Pa}}{37\,380\,\text{Pa}} = 1{,}6$
+**Mallivastaus:** Märällä lasilla tarvitaan $\Delta p_\text{m} \approx 37\,\text{kPa}$. Vastauksessa on kaksi merkitsevää numeroa, kuten kitkakertoimessa $0{,}30$. Nostimen $60\,\text{kPa}$ riittää juuri ja juuri pitämään levyn. Varmuuskerroin on kuitenkin vain $s \approx 1{,}6$, ja ohje vaatii vähintään kaksi. Pystynosto märällä lasilla ei täytä ohjetta. Asentaja ei saa nostaa märkää levyä pystyssä tällä nostimella. Lasi on kuivattava, tai on käytettävä kahta laikkaa, jolloin ala kaksinkertaistuu.
+**Järkevyys:** Märkä kitka on puolet kuivasta, joten alipaine on kaksinkertainen kuivaan $18{,}7\,\text{kPa}$:iin verrattuna ($2 \cdot 18{,}7 \approx 37$). Kuivana varmuuskerroin on $60 : 18{,}7 \approx 3{,}2$ ja vaakanostossa $60 : 11{,}2 \approx 5{,}4$. Pystyasento on vaativampi, koska paineen voima on kohtisuorassa lasin pintaa vastaan eli vaakasuora. Se ei kannata painoa lainkaan. Painon kantaa kitka.
 
 ### Yleisiä virheitä
 - a-kohdassa pinta-ala lasketaan halkaisijasta eikä säteestä.

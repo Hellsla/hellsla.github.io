@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: fc3483f5b1affd8c
+CONTENT-HASH: 0ec5eb94e87057eb
 
-Delta review (formulas in MAFY form, 2026-11-12) of the version passed at 12867208110cf969.
+Delta review (solution practice, 2026-11-12) of the version passed before.
 
-Blocking: none. The new symbols are defined in the sentence after each formula block, the tasks' forms are still derivable from the theory, and the unit stays coherent for a student.
+s6 c is now a full staged solution (symbols s = mu_m A dp_n / (m(g+a)), unrounded 37 380 Pa, s = 1,6, real Jarkevyys check 2 x 18,7); eta_l named. Rubric and answer agree.
 
-1. Polish: the unit's inquiry worked solution (content/fi/units/fy9-kaasut/inquiry.json, the Delta U task) uses W_k and Delta U = Q - W_k (work done by the gas), while the theory now says Delta U = Q + W with W done on the gas. Add one sentence to that solution ("in the theory table the same is Delta U = Q + W, W = -p Delta V") or switch it to the theory form.
+Checked: diff since 761b6673, symbols defined, solved expression equals Sijoitus, answers.py output, tasks.json answer/criteria, cross-language number match.

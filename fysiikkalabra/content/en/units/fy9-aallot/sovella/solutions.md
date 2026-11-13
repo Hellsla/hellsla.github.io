@@ -14,7 +14,7 @@
 **Given:** speed of the wave in the string $v = 142.56\,\text{m/s}$ (part a), wanted frequency $f' = 123.5\,\text{Hz}$, full length $L = 648\,\text{mm}$
 **Find:** the length $L'$ of the vibrating part of the string and the distance of the fret from the nut
 **Principle:** The string and its tension stay the same, so the speed of the wave in the string does not change. The fret is a new node, so the part vibrating at the fundamental frequency is half the new wavelength (chapter *Standing waves: nodes, antinodes and natural frequencies*). The distance of the fret from the nut is the difference between the full length and the vibrating part.
-**Formula:** $f' = \dfrac{v}{2L'}$, so $L' = \dfrac{v}{2f'}$, and the distance from the nut is $L - L'$
+**Formula:** $f' = \dfrac{v}{2L'}$, so $L' = \dfrac{v}{2f'}$, and the distance from the nut is $d = L - L' = L - \dfrac{v}{2f'}$
 **Conversions:** Finally $1\,\text{m} = 1000\,\text{mm}$.
 **Substitution:** $L' = \dfrac{142.56\,\text{m/s}}{2 \cdot 123.5\,\tfrac{1}{\text{s}}} = 0.5772\,\text{m} = 577.2\,\text{mm}$, and $648\,\text{mm} - 577.2\,\text{mm} = 70.8\,\text{mm}$
 **Answer:** The vibrating part must be $L' \approx 577\,\text{mm}$, three significant figures like the given data, and the fret is about $71\,\text{mm}$ from the nut. The distance is a difference, so it is known to the nearest millimetre.
@@ -256,7 +256,7 @@
 **Find:** what the constant term tells about the measurement, and the length $l$, measured the group's way, for which $T = 2.00\,\text{s}$
 **Principle:** If the true length of the pendulum is $l + \Delta l$, the model gives $T^2 = k(l + \Delta l) = kl + k\Delta l$, so the line shifts upwards and crosses the $l$ axis at $-\Delta l$ (chapter *Measuring and the reliability of a measurement*). The length of a pendulum is the distance from the point of suspension to the centre of gravity of the ball (chapter *The mass–spring oscillator and the pendulum*). The wanted length is found from the equation of the fitted line, so that the same systematic error is included.
 **Reading the graph:** From the points read in part c, the equation of the line is $T^2 = 4.04\,\tfrac{\text{s}^2}{\text{m}} \cdot l + 0.056\,\text{s}^2$; it crosses the $l$ axis when $T^2 = 0$.
-**Formula:** $T^2 = kl + b$, so $l = \dfrac{T^2 - b}{k}$, and the $l$ intercept is $-\dfrac{b}{k}$
+**Formula:** $T^2 = kl + b$, so the $l$ intercept is $l_0 = -\dfrac{b}{k}$ and the length for a period $T$ is $l = \dfrac{T^2 - b}{k}$
 **Conversions:** The quantities are in base units, so no conversions are needed.
 **Substitution:** $-\dfrac{b}{k} = -\dfrac{0.0563\,\text{s}^2}{4.0375\,\text{s}^2\text{/m}} = -0.014\,\text{m}$ and $l = \dfrac{(2.00\,\text{s})^2 - 0.0563\,\text{s}^2}{4.0375\,\text{s}^2\text{/m}} = \dfrac{3.944\,\text{s}^2}{4.0375\,\text{s}^2\text{/m}} = 0.9768\,\text{m}$
 **Answer:** The line crosses the $l$ axis at about $-1.4\,\text{cm}$: the true length of the pendulum is about $1.4\,\text{cm}$ greater than the measured one. The length was measured to the top of the ball and not to its centre, so the measurement has a systematic error the size of the radius of the ball. The length measured the group's way must be about $0.98\,\text{m}$, two significant figures, because the result depends on the constant term read from the graph.
@@ -338,7 +338,7 @@
 **Given:** $m = 72.0\,\text{kg}$, $L_0 = 18.0\,\text{m}$, spring constant $k = 120\,\text{N/m}$, $g = 9.81\,\text{m/s}^2$
 **Find:** the depth of the lowest point below the bridge $L_0 + x$, where $x$ is the greatest extension of the cord
 **Principle:** The weight and the force of the cord, which is harmonic like a spring force, act on the jumper. Both are conservative, so mechanical energy is conserved during the whole fall (chapters *Conservation of mechanical energy and the work–energy principle* and *Spring force and spring energy*). At the lowest point the speed is zero, so the change in the gravitational potential energy over the whole distance $L_0 + x$ has turned into the elastic potential energy of the cord. The zero level is chosen at the lowest point.
-**Formula:** $mg(L_0 + x) = \tfrac12 kx^2$, that is $\tfrac12 kx^2 - mgx - mgL_0 = 0$, whose positive solution is $x = \dfrac{mg + \sqrt{(mg)^2 + 2kmgL_0}}{k}$
+**Formula:** $mg(L_0 + x) = \tfrac12 kx^2$, that is $\tfrac12 kx^2 - mgx - mgL_0 = 0$, whose positive solution is $x = \dfrac{mg + \sqrt{(mg)^2 + 2kmgL_0}}{k}$, and the depth below the bridge is $d = L_0 + x$
 **Conversions:** The quantities are in base units, so no conversions are needed.
 **Substitution:** $mg = 72.0\,\text{kg} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} = 706.32\,\text{N}$, $(mg)^2 = (706.32\,\text{N})^2 \approx 498\,888\,\text{N}^2$ and $2kmgL_0 = 2 \cdot 120\,\tfrac{\text{N}}{\text{m}} \cdot 706.32\,\text{N} \cdot 18.0\,\text{m} \approx 3\,051\,302\,\text{N}^2$, so the square root is $\sqrt{3\,550\,190\,\text{N}^2} \approx 1884.2\,\text{N}$ and $x = \dfrac{706.32\,\text{N} + 1884.2\,\text{N}}{120\,\text{N/m}} = 21.59\,\text{m}$ and the depth $18.0\,\text{m} + 21.59\,\text{m} = 39.59\,\text{m}$
 **Answer:** The jumper falls about $39.6\,\text{m}$ below the bridge, three significant figures like the given data.

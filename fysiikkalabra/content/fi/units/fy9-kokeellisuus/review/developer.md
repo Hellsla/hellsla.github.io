@@ -47,3 +47,8 @@ practice.py check and figures OK; units.py check OK for this unit; build OK; che
 - Teacher plan: Sovella does five items in class and three at home; fast students do task 6 at home.
 - Visual: the "systemaattinen virhe" label is darkened. All numbers are recomputed in Python.
 - Checks: practice.py check OK, units.py check OK for this unit, build OK, check_layout 360 and 1280 OK. Playwright: every task answered, no console errors, no .katex-error, no raw $.
+
+## Ratkaisutavan tarkistus (2026-11-12)
+- sovella s5 a): vastaus $2{,}7\cdot10^3$ kg/m³ (kaksi numeroa, V = 70 cm³ erotus); aiemmin 3 numeroa.
+- s6 b-d): hidastuvuus pidetään pyöristämättömänä 4,1667 m/s² (c: 0,4247; d: 3,779); lukuarvo vastauksissa ei muutu.
+- s6 c): Kaava johdettu Newton II:sta komponenteittain (x: $F_{\mu 0} = ma$, y: $N = mg$) ja positiivinen suunta nimetty.

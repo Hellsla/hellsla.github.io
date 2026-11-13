@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 1b7ae3b1ec841a81
+CONTENT-HASH: 33fcccd3aae0531c
 
-Delta review (formulas in MAFY form, 2026-11-12) of the version passed at b2f0b8b8cd894742.
+Delta review (solution practice, 2026-11-12) of the version passed before.
 
-Blocking: none. The new symbols are defined in the sentence after each formula block, the tasks' forms are still derivable from the theory, and the unit stays coherent for a student.
+9,8 m/s2 with a stated reason (0,46 s2 is a two-figure reading, uncertainty +-0,3) is a sound precision lesson, and the unit.md exact-quantity sentence matches. tasks.json accepts 9,8 or 9,81, consistent.
 
-No Polish.
+Checked: diff since 761b6673, symbols defined, solved expression equals Sijoitus, answers.py output, tasks.json answer/criteria, cross-language number match.

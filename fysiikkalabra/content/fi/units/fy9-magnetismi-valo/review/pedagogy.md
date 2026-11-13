@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 8ec3012519ae6bf9
+CONTENT-HASH: 2f918b5f8c97ae6a
 
-Delta review (formulas in MAFY form, 2026-11-12) of the version passed at 3197e5705c13d2c3.
+Delta review (solution practice, 2026-11-12) of the version passed before.
 
-Blocking: none. The new symbols are defined in the sentence after each formula block, the tasks' forms are still derivable from the theory, and the unit stays coherent for a student.
+Loss share RP/U^2 and the dB formula with beta, N_j, A_j, and grating d = 1/N with the general lambda = sin(arctan(x/L))/(kN) are well staged; no extra burden for the student.
 
-No Polish.
+Checked: diff since 761b6673, symbols defined, solved expression equals Sijoitus, answers.py output, tasks.json answer/criteria, cross-language number match.

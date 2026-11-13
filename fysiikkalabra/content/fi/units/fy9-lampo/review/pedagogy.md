@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: e6e0a21382d4da27
+CONTENT-HASH: 54fa624a843aa99a
 
-Delta review (formulas in MAFY form, 2026-11-12) of the version passed at d8139b17655a26ab.
+Delta review (solution practice, 2026-11-12) of the version passed before.
 
-Blocking: none. The new symbols are defined in the sentence after each formula block, the tasks' forms are still derivable from the theory, and the unit stays coherent for a student.
+k_h, l and p named, share solved in symbols, P/(P-P_h) ratio in d: clear and consistent with answers.
 
-1. Polish: the unit's inquiry solutions use Delta L = alpha L_0 Delta T, while the theory now writes l = l_0(1 + alpha Delta T) and Delta l = alpha l_0 Delta T. Add a note in the solution that L_0, Delta L are the same as l_0, Delta l, or rename them.
+Checked: diff since 761b6673, symbols defined, solved expression equals Sijoitus, answers.py output, tasks.json answer/criteria, cross-language number match.
