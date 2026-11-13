@@ -158,6 +158,12 @@ Vain tietyt protonien ja neutronien yhdistelmät ovat pysyviä. Piirrä ytimet n
 
 **Beetahajoamisessa** ytimessä on liikaa tai liian vähän neutroneja protoneihin verrattuna. Beeta miinus -hajoamisessa ytimen neutroni muuttuu protoniksi. Ytimestä lähtee elektroni ja antineutriino. Elektroni ei ole ollut ytimessä valmiina, vaan se syntyy hajoamisessa. Beeta plus -hajoamisessa protoni muuttuu neutroniksi. Silloin ytimestä lähtee positroni eli elektronin antihiukkanen ja neutriino. Beetahajoamisen aiheuttaa heikko vuorovaikutus.
 
+Beetahajoamisen kaltainen on **elektronisieppaus**. Ydin sieppaa elektronin atomin sisimmältä elektronikuorelta. Protoni muuttuu neutroniksi, ja ytimestä lähtee elektronineutriino ${}^{0}_{0}\nu_\text{e}$. Yleisesti
+```latex
+{}^{A}_{Z}\text{X} + {}^{0}_{-1}\text{e} \to {}^{A}_{Z-1}\text{Y} + {}^{0}_{0}\nu_\text{e}
+```
+Tässä X on emoydin, Y on tytärydin ja $Z$ on järjestysluku. Esimerkki on ${}^{7}_{4}\text{Be} + {}^{0}_{-1}\text{e} \to {}^{7}_{3}\text{Li} + {}^{0}_{0}\nu_\text{e}$. Ydin muuttuu kuten beeta plus -hajoamisessa ($Z - 1$). Sieppaus on mahdollinen silloinkin, kun positronin syntymiseen ei riitä energiaa.
+
 **Gammahajoamisessa** ydin on viritystilassa eli sillä on ylimääräistä energiaa. Viritystilassa oleva ydin merkitään tähdellä: ${}^{A}_{Z}\text{X}^{\ast}$. Ydin siirtyy alemmalle energiatasolle ja lähettää gammafotonin. Ydin pysyy samana nuklidina. Viritystila syntyy usein edellisessä alfa- tai beetahajoamisessa. Siksi gammasäteily tulee niiden jälkeen.
 
 <svg data-fig="decays" viewBox="0 0 600 360" role="img" aria-label="Kolme hajoamislajia vierekkäin, kaavakuva, ei mittakaavassa. Vasemmalla on alfahajoaminen. Ytimestä lähtee alfahiukkanen eli heliumydin, jossa on kaksi protonia ja kaksi neutronia. Ytimen järjestysluku pienenee kahdella ja massaluku neljällä. Keskellä on beeta miinus -hajoaminen. Ytimen neutroni muuttuu protoniksi, ja ytimestä lähtee elektroni ja antineutriino. Järjestysluku kasvaa yhdellä ja massaluku pysyy samana. Oikealla on gammahajoaminen. Viritystilassa oleva ydin lähettää gammafotonin. Järjestysluku ja massaluku pysyvät samoina." style="max-width:100%;font-size:24px">
@@ -397,5 +403,6 @@ Toinen virhe on ajatella, että gammahajoaminen muuttaa alkuaineen. Gammafotoni 
 ## Tiivistelmä
 - Ydin koostuu nukleoneista: $Z$ protonia ja $N = A - Z$ neutronia. Saman alkuaineen isotoopeilla on sama $Z$ mutta eri $N$.
 - Radioaktiivinen ydin hajoaa itsestään ja satunnaisesti. Alfahajoamisessa lähtee ${}^{4}_{2}\text{He}$ ($Z - 2$, $A - 4$). Beeta miinus -hajoamisessa lähtevät elektroni ja antineutriino ($Z + 1$). Beeta plus -hajoamisessa lähtevät positroni ja neutriino ($Z - 1$).
+- Elektronisieppauksessa ydin sieppaa elektronin ja lähettää neutriinon ($Z - 1$).
 - Hajoamisyhtälössä massaluku ja varausluku säilyvät.
 - Ytimen energia on kvantittunut. Gammafotonin energia on ytimen tasojen erotus $E_\gamma = E_\text{y} - E_\text{a}$. Se on tyypillisesti kymmeniä tai satoja kiloelektronivoltteja tai megaelektronivoltteja, joten gammaspektri on viivaspektri.

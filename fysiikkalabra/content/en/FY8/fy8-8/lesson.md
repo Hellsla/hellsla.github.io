@@ -158,6 +158,12 @@ In **alpha decay**, an alpha particle, a helium nucleus ${}^{4}_{2}\text{He}$ wi
 
 In **beta decay**, the nucleus has too many or too few neutrons compared with its protons. In beta minus decay, a neutron of the nucleus changes into a proton, and an electron and an antineutrino leave the nucleus. The electron was not in the nucleus beforehand; it is created in the decay. In beta plus decay, a proton changes into a neutron, and a positron, the antiparticle of the electron, and a neutrino leave the nucleus. Beta decay is caused by the weak interaction.
 
+Related to beta decay is **electron capture**: the nucleus captures an electron from the innermost electron shell of the atom, a proton changes into a neutron, and an electron neutrino ${}^{0}_{0}\nu_\text{e}$ leaves the nucleus. In general
+```latex
+{}^{A}_{Z}\text{X} + {}^{0}_{-1}\text{e} \to {}^{A}_{Z-1}\text{Y} + {}^{0}_{0}\nu_\text{e}
+```
+where X is the parent nucleus, Y the daughter nucleus and $Z$ the atomic number. For example, ${}^{7}_{4}\text{Be} + {}^{0}_{-1}\text{e} \to {}^{7}_{3}\text{Li} + {}^{0}_{0}\nu_\text{e}$. The nucleus changes as in beta plus decay ($Z - 1$), and capture is possible even when there is not enough energy to create a positron.
+
 In **gamma decay**, a nucleus in an excited state, marked with an asterisk ${}^{A}_{Z}\text{X}^{\ast}$, moves to a lower energy level and emits a gamma photon. The nucleus stays the same nuclide. The excited state is often created in a previous alpha or beta decay, so gamma radiation follows them.
 
 <svg data-fig="decays" viewBox="0 0 600 360" role="img" aria-label="Three kinds of decay side by side, a schematic figure, not to scale. On the left alpha decay: an alpha particle, a helium nucleus made of two protons and two neutrons, leaves the nucleus, and the atomic number of the nucleus decreases by two and the mass number by four. In the middle beta minus decay: a neutron of the nucleus changes into a proton, an electron and an antineutrino leave the nucleus, the atomic number increases by one and the mass number stays the same. On the right gamma decay: a nucleus in an excited state emits a gamma photon, and the atomic number and the mass number stay the same." style="max-width:100%;font-size:24px">
@@ -397,5 +403,6 @@ Another mistake is to think that gamma decay changes the element. A gamma photon
 ## Summary
 - A nucleus is made of nucleons: $Z$ protons and $N = A - Z$ neutrons. Isotopes of the same element have the same $Z$ but a different $N$.
 - A radioactive nucleus decays by itself and at random. In alpha decay ${}^{4}_{2}\text{He}$ leaves ($Z - 2$, $A - 4$), in beta minus decay an electron and an antineutrino ($Z + 1$), in beta plus decay a positron and a neutrino ($Z - 1$).
+- In electron capture the nucleus captures an electron and emits a neutrino ($Z - 1$).
 - In a decay equation the mass number and the charge number are conserved.
 - The energy of a nucleus is quantised. The energy of a gamma photon is the difference between the levels of the nucleus, $E_\gamma = E_\text{u} - E_\text{l}$, typically tens or hundreds of kiloelectronvolts or megaelectronvolts, so the gamma spectrum is a line spectrum.
