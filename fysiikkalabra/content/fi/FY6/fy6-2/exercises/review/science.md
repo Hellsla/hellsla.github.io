@@ -1,16 +1,15 @@
-VERDICT: PASS
-CONTENT-HASH: 8a721a86e7a34235
-Round: 2 (commit 57a66480d changed only the new task fy6-2-L2-08; round-1 Polish item on 0,033 A is resolved: marked "välitulos, noin 0,03 A").
+VERDICT: FAIL
+CONTENT-HASH: 6d39d0db9b9030ff
 
 ## Blocking
+- content/fi/FY6/fy6-2/exercises/exercises.json:309 — (A, assessment) fy6-2-L2-10 rejects a correct method. The lesson tells the student to round an error limit to one significant figure (ΔU = 0,03 V, exactly as fy6-2-L2-09 and this solution's own check "välin 1,34 V–1,40 V" do); then 0,08 V : 0,03 V = 2,67, which is 10,5 % from the answer 2,98 and outside `tolerance` 0.1. The difference 0,08 V has only one significant figure anyway, so the ratio is "about 3" either way. — Widen `tolerance` to 0.15 (2,67…3,0 both accepted), or say in the task to use the unrounded error limit; keep the conclusion (difference about three error limits, not consistent).
 
 ## Polish
+- content/fi/FY6/fy6-2/exercises/solutions.md:227 — Vastaus "noin 3,0 kertaa" gives two figures although U₀ − U = 0,08 V has one; "noin 3 kertaa" would match the data's precision.
 
 ## Checked
-- Hash 8a721a86e7a34235 at start and end.
-- answers.py run against exercises.json: all 16 numeric answers agree within tolerance (one python call).
-- Changed 200 mA chain recomputed: 0,010 · 140 mA + 0,2 mA = 1,6 mA; 10 A range 0,0328 A ≈ 0,03 A; ratio about 20. Row 3 is still the only wrong line, and `answer` matches.
-- The no-error option "Päättelyssä ei ole virhettä" and the task sentence now agree; its feedback no longer asserts an error, only points to the error-limit calculation, and stays correct physics.
-- Reworded wrong-row feedback ("Jos pidät riviä virheellisenä, ajattelet ehkä …") keeps the same, correct reasons: ammeter in parallel → short circuit, start range vs final range, a reading that does not fit the 2 V range gives OL.
-- The wrong row is still the lesson's warned mistake (largest range always best); everything used (Δx = p·x + n·r, OL, smallest fitting range) is taught in this lesson.
-- Inline formula widths measured (KaTeX render at 17 px, 1.21 em, own script): widest 262 px, the changed chain 252 px, under 300 px. Page not rendered; the rest from text.
+- Hash 6d39d0db9b9030ff at start and end; delta: only fy6-2-L2-09 and fy6-2-L2-10 judged.
+- Figure generator: display 1,37 V, pointer at −35° = the 20 V range (highlighted), ranges 2 V, 20 V, 200 mA, 10 A, sockets COM / V mA / 10 A; alt text gives the same reading and range and no error limit. A 20 V range showing two decimals (resolution 0,01 V) agrees with the lesson's table.
+- L2-09 recomputed: ΔU = 0,005 · 1,37 V + 2 · 0,01 V = 0,02685 V ≈ 0,03 V; the rounded 0,03 V is 11,7 % off and inside tolerance 0.12. Solution complete, symbolic Δx = p·x + n·r first, rounding by the lesson's rule, sensible check (digits dominate at a small reading).
+- L2-10 recomputed: (1,45 V − 1,37 V) : 0,02685 V = 2,98; criterion "difference larger than the error limit → not consistent" is the lesson's use of the manufacturer's limit; 1,45 V lies outside 1,37 ± 0,03 V. The suggested cause (lamp run at a voltage other than its rating) is physically sound.
+- Both tasks within the lesson's taught content (error-limit formula, range resolution); notation Δx, p, n, r as in the lesson.

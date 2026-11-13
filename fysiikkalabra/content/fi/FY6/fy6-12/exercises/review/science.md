@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 4703625fe3ccea47
-Round: 2, science, mode full. Scope: the round-1 fixes to fy6-12-L2-08 (commit 57a66480d). The rest of the set is unchanged since round 1. Checked from text only, no renders.
+CONTENT-HASH: 9f84f4124a537fa5
+SCOPE: delta added-exercise from 4703625fe3ccea47 base 8f23aa7ae3bd
 
 ## Blocking
 
 ## Polish
+- exercises.json (fy6-12-L2-09) — the task text does not say where the positive plate is. A sighted student must infer it from where the drawn line ends (x = 5,0 cm, with the axis running on to 5,5 cm); only the alt text states it. Add "positiivinen levy on kohdassa, johon suora päättyy", or give x = 5,0 cm, so the reading is not ambiguous.
 
 ## Checked
-- The fixes change only form: the stem is split into two paragraphs, the correct option's feedback reads "Laskettaessa tulee U = V_B − V_A = 90 V", and the solution's chains are split into one per row. No number, model or truth value changed.
-- Physics re-verified: rows 1, 2 and 4 are right, and row 3 is the only wrong row. I recomputed 90 eV = 1,442e-17 J ≈ 1,4e-17 J and 120 eV = 1,92e-17 J.
-- The rounding sentence now reads "kahden merkitsevän numeron tarkkuudella", and its reason still holds.
-- All numeric answers of the set were recomputed from answers.py in one python call: no mismatch.
-- The distractors still carry the lesson's warned mistakes: potential vs. potential difference and potential energy, and the direction for a negative charge.
-- No option can be picked out by its form.
-- Inline chains (text estimate): every row is now under about 200 px.
+- Hash 9f84f4124a537fa5 at start and end; only fy6-12-L2-09 was judged (delta added-exercise).
+- The figure in figures.py is a straight line from (0; 0 V) to (5,0 cm; 250 V) on a 1 cm and 50 V grid. V(1,0 cm) = 50 V and V(5,0 cm) = 250 V both lie on grid lines, as the solution reads them.
+- Physics: the electron is negative, so released from rest it moves towards higher potential, to the + plate. Only the electric force works, so ½mv² = eU with U = 200 V. The direction, the sign and energy conservation are consistent with the brief.
+- Recomputed: v = √(2·1,602·10⁻¹⁹ C·200 V : 9,109·10⁻³¹ kg) = 8,387·10⁶ m/s, which equals answers.py and the json. The tolerance of 2 % fits the answer to 2 significant figures.
+- The non-relativistic formula is valid: v/c ≈ 2,8 %, as the reasonableness check says. Gravity is negligible, which the brief states.
+- The solution is complete: the graph reading is shown, v = √(2eU/m) is written before the numbers, the units come out (√(C·V/kg) = m/s), and the rounding reason is stated.
+- It is not a repeat of the worked example (3,0 kV from rest) or of L1-05 (proton energy only). It adds a reading of U from the graph and a start at a point between the plates.

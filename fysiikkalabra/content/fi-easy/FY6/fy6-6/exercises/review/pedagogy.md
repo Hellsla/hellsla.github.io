@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: bd18cf01612b6d99
-Mode: full (translation review against the reviewed Finnish set)
-Round 2
+CONTENT-HASH: d41d82457f2f3aac
+SCOPE: delta added-exercise from bd18cf01612b6d99 base c7f5e91173b0
 
 ## Blocking
-(none)
-
-## Fixed
-(none needed)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- Selkeä suomi per NOTES.md §12: shorter sentences, one idea each, physics terms kept (glossary terms), no step dropped.
-- New task is clearer than fi where it helps (feedback split into two sentences; 'kulmakerroin eli jyrkkyys', 'verrannollinen eli pienenee, kun resistanssi kasvaa'; 'suuruusluokka kertoo luvun koon suunnilleen' in fy6-7).
+- L2-09: level 2 fits (read a stepped P(t) graph, E = Pt in three parts, sum, kJ); the lesson teaches E = Pt.
+- Arithmetic: 360 + 300 + 120 = 780 kJ correct; the mean power check (1,08 kW) is right.
+- Solution splits the reading, conversions and sum step by step and names the area interpretation.
+- Figure ex-pt gives every value (2000, 1000, 500 W; 3,0, 8,0, 12 min) with gridlines, its description matches and gives no energy.
+- Question is its own sentence; the situation (hob plate) is familiar; Finnish correct.
+- Adds the piecewise-power idea; not a repeat of L1-05 (P against I) or L2-05; mix of kinds in the set stays varied.
