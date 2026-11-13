@@ -1,8 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 782699fd4ffa0aba
+CONTENT-HASH: c07064310b8f07c3
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 782699fd4ffa0aba.
 
-Delta review (solution practice, 2026-11-12) of the version passed before.
+## Blocking
+(none)
 
-Component form of the friction case with m' = m + m_x is clear. POLISH: s? mu0 Kaava uses alpha_max and alpha_min without defining them (largest and smallest accepted angle, 24 and 21 deg); add 'missa alpha_max ja alpha_min ovat hyvaksytyista kulmista suurin ja pienin'. Same physics and steps as fi in fi-easy (numbers match fi).
+## Polish
+(none)
 
-Checked: diff since 761b6673, symbols defined, solved expression equals Sijoitus, answers.py output, tasks.json answer/criteria, cross-language number match.
+## Checked
+Diff only: a = (F - mu(mA+mB)g)/(mA+mB) written before substitution after the force diagram (diagram still precedes equations); lisäpunnus symbol m_x; mu0 = tan(alpha_ka) step explained with uncertainty formula.

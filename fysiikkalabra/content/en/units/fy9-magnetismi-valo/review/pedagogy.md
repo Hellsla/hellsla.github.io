@@ -1,8 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 94b162d7349b5f75
+CONTENT-HASH: 086631afee2d127b
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at bf5117373f141a6c.
 
-Delta review (solution practice, 2026-11-12) of the version passed before.
+## Blocking
+(none)
 
-Loss share RP/U^2 and the dB formula with beta, N_j, A_j, and grating d = 1/N with the general lambda = sin(arctan(x/L))/(kN) are well staged; no extra burden for the student. Same physics and steps as fi in en (numbers match fi).
+## Polish
+- $\beta = 10\,\text{dB}$ is again a bare symbol for the decibel factor (see the same remark in fy9-aallot); fine as defined.
 
-Checked: diff since 761b6673, symbols defined, solved expression equals Sijoitus, answers.py output, tasks.json answer/criteria, cross-language number match.
+## Checked
+Transmission loss $RP/U^2$ with $U_2$ and $U_1$ named, fibre attenuation $A = aL + N_\text{s}A_\text{s}$, grating $\lambda = \sin(\tan^{-1}(x/L))/(kN)$ with $N$ per unit length; the substitution line keeps the $d = 1\,\text{mm}/600$ conversion, so no jump.
+Read the diff hunks of this unit for how #522 notation and #523 symbolic-first solutions interact: no symbol used with two meanings inside one solution, no duplicated derivation, no contradiction with the unit text, LaTeX balanced, the answer lines still match the substitutions, and the formula still precedes the numbers (CLAUDE.md Lesson form 7). Staging of the worked solutions (Given, Find, Principle, Formula, Conversions, Substitution, Answer, Reasonableness) is intact.

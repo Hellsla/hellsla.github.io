@@ -28,7 +28,7 @@
     {
       "id": "fy3-15-L1-04",
       "level": 1,
-      "text": "The figure shows the power of a condensing power plant at different steps of the energy chain: $P_0$ is the fuel power, $P_1$ the power after the boiler, $P_2$ the power after the steam cycle and $P_3$ the electric power. In which step does the power decrease the most, and how large is the power transferred to the surroundings as heat in this step? Read the values from the figure. Give your answer in megawatts.",
+      "text": "The figure shows the power of a condensing power plant at different steps of the energy chain: $P_\\text{o}$ is the fuel power, $P_1$ the power after the boiler, $P_2$ the power after the steam cycle and $P_3$ the electric power. In which step does the power decrease the most, and how large is the power transferred to the surroundings as heat in this step? Read the values from the figure. Give your answer in megawatts.",
       "figure": "fy3-15/chain-bars",
       "answer": 200,
       "unit": "MW",
@@ -187,7 +187,7 @@
       "id": "fy3-15-L2-06",
       "level": 2,
       "core": true,
-      "text": "The table gives the fuel or reactor power $P_0$ and the electric power $P_\\text{s}$ of three power plants (example data). All the plants are condensing power plants, and the rest of the energy is transferred to the surroundings as waste heat.\n\na) Calculate the efficiency of each plant.\n\nb) Calculate the waste heat power $P_\\text{h}$ of each plant.\n\nc) Does the plant with the lowest efficiency also have the largest waste heat power? Justify your answer.\n\nIn part b), enter the largest waste heat power in the answer box in megawatts.",
+      "text": "The table gives the fuel or reactor power $P_\\text{o}$ and the electric power $P_\\text{s}$ of three power plants (example data). All the plants are condensing power plants, and the rest of the energy is transferred to the surroundings as waste heat.\n\na) Calculate the efficiency of each plant.\n\nb) Calculate the waste heat power $P_\\text{h}$ of each plant.\n\nc) Does the plant with the lowest efficiency also have the largest waste heat power? Justify your answer.\n\nIn part b), enter the largest waste heat power in the answer box in megawatts.",
       "kind": [
         "data",
         "reasoning"
@@ -199,7 +199,7 @@
         "caption": "Powers of three condensing power plants (example data)",
         "columns": [
           "Plant",
-          "$P_0\\,(\\text{MW})$",
+          "$P_\\text{o}\\,(\\text{MW})$",
           "$P_\\text{s}\\,(\\text{MW})$"
         ],
         "rows": [
@@ -313,7 +313,7 @@
     {
       "id": "fy3-15-L3-05",
       "level": 3,
-      "text": "The thermal power of the reactor of a nuclear power plant is $2700\\,\\text{MW}$ and the electric power $900\\,\\text{MW}$. The flow of sea water cooling the condenser is a constant $38.0\\,\\text{t/s}$. The temperatures of the water entering and leaving the condenser have been measured in four months (table, example data). The specific heat capacity of water is $4190\\,\\text{J/(kg}\\cdot\\text{K)}$.\n\na) Calculate the rise in the temperature of the water $\\Delta T$ in each month and its average $\\Delta T_\\text{avg}$.\n\nb) Calculate the heat power $P_\\text{L}$ transferred to the condenser, using the average $\\Delta T_\\text{avg}$.\n\nc) Compare the result with the waste heat power of the plant $P_\\text{h} = P_0 - P_\\text{s}$. Where does the rest of the waste heat go?\n\nd) Why can the heat of the condenser that warms the sea water no longer be used to produce electricity, and what effect does the heat have on the nearby water in July?\n\nIn part b), enter the result in the answer box in megawatts.",
+      "text": "The thermal power of the reactor of a nuclear power plant is $2700\\,\\text{MW}$ and the electric power $900\\,\\text{MW}$. The flow of sea water cooling the condenser is a constant $38.0\\,\\text{t/s}$. The temperatures of the water entering and leaving the condenser have been measured in four months (table, example data). The specific heat capacity of water is $4190\\,\\text{J/(kg}\\cdot\\text{K)}$.\n\na) Calculate the rise in the temperature of the water $\\Delta T$ in each month and its average $\\Delta T_\\text{avg}$.\n\nb) Calculate the heat power $P_\\text{L}$ transferred to the condenser, using the average $\\Delta T_\\text{avg}$.\n\nc) Compare the result with the waste heat power of the plant $P_\\text{h} = P_\\text{o} - P_\\text{s}$. Where does the rest of the waste heat go?\n\nd) Why can the heat of the condenser that warms the sea water no longer be used to produce electricity, and what effect does the heat have on the nearby water in July?\n\nIn part b), enter the result in the answer box in megawatts.",
       "kind": [
         "data",
         "reasoning"

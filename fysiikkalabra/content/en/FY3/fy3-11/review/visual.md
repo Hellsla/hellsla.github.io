@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: e2ff1d4d343dd5ab
+CONTENT-HASH: fd5256866c60f33c
 
 ## Blocking
-
+None. The fixes read well and are consistent with the lesson symbols.
 
 ## Polish
-
+None new (earlier polish unchanged).
 
 ## Checked
-- batch delta review: opened fy3-11-1280-0, fy3-11-360-0; photo loads, no clipping or horizontal overflow, credit line under the caption, alt text and caption natural English and consistent with the picture and the paragraph, no number with a unit in the new text.
+Opened the changed sentence after W = pΔV and the worked-example formula stage at 390 px: render fine. Language: en; no clipping in the changed places.

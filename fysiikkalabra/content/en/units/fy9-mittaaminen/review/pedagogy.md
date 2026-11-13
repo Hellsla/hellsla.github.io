@@ -1,8 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: c1bdc8faf7226de3
+CONTENT-HASH: 27d2f4575e83302f
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at c1bdc8faf7226de3.
 
-Delta review (solution practice, 2026-11-12) of the version passed before.
+## Blocking
+(none)
 
-Area A cancelling in rho = sigma/d, the corrected-mass formula m = m_lukema/k and the fit-based slope read (two far points on the fitted line, proportionality written with prop.) are good; the oil-mass answer now justifies its precision by the 1,3 % density uncertainty. Same physics and steps as fi in en (numbers match fi).
+## Polish
+(none)
 
-Checked: diff since 761b6673, symbols defined, solved expression equals Sijoitus, answers.py output, tasks.json answer/criteria, cross-language number match.
+## Checked
+Paper density derivation with area $A$ cancelling, scale-correction $m = m_\text{reading}/k$, calibration slope, speed from the slope; the rounding rule in unit.md (measured values, exact quantities exempt) matches the solutions, and the oil-mass answer is now argued from the uncertainty, not from the data digits.
+Read the diff hunks of this unit for how #522 notation and #523 symbolic-first solutions interact: no symbol used with two meanings inside one solution, no duplicated derivation, no contradiction with the unit text, LaTeX balanced, the answer lines still match the substitutions, and the formula still precedes the numbers (CLAUDE.md Lesson form 7). Staging of the worked solutions (Given, Find, Principle, Formula, Conversions, Substitution, Answer, Reasonableness) is intact.

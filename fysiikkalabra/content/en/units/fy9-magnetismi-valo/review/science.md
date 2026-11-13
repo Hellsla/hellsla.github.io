@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 94b162d7349b5f75
-Delta review (solution practice, 2026-11-12) of the version passed before.
+CONTENT-HASH: 086631afee2d127b
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at bf5117373f141a6c.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+1. sovella/solutions.md: $\beta$ is now the decibel factor in the fibre-link task while the refraction task earlier in the same file uses $\beta_\text{max}$ for an angle. They are separate tasks, so nothing contradicts, but another letter would avoid the clash.
 
 ## Checked
-s1 c ($P_\text{h}/P = RP/U^2$ = 0,225 %; $U_1$ = 400 V is the primary voltage of b, consistent), s2 c ($A = aL + N_\text{j}A_\text{j}$ = 3,48 dB, 0,897 mW), s5 a ($\lambda = \sin(\tan^{-1}(x/L))/(kN)$: 533,0 and 532,2 nm) recomputed. The fi, fi-easy and en diffs carry identical mathematics (every changed formula compared token by token); answers.py run; `units.py check` passes.
+Every hunk of the en merge diff (word diff). $P_\text{h}/P = RP/U^2$; fibre $A = aL + N_\text{s}A_\text{s}$, $P = P_0\cdot10^{-A/\beta}$ ($\beta = 10$ dB) consistent with the unit's decibel formula; grating $d = 1/N$, $\lambda = \sin(\tan^{-1}(x_k/L))/(kN)$. Every changed formula is symbolic before substitution and uses no symbol in a sense that differs from the unit's ```kaavat``` names or notation from #522; the $ and brace balance of each added line is checked; `units.py check` passes; the hash was taken at the start and the end and matches.

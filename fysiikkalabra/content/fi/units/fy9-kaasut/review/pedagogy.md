@@ -1,8 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 0ec5eb94e87057eb
+CONTENT-HASH: 380511676da95b96
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 28ee1741c90a7ebf.
 
-Delta review (solution practice, 2026-11-12) of the version passed before.
+## Blocking
+(none)
 
-s6 c is now a full staged solution (symbols s = mu_m A dp_n / (m(g+a)), unrounded 37 380 Pa, s = 1,6, real Jarkevyys check 2 x 18,7); eta_l named. Rubric and answer agree.
+## Polish
+(none)
 
-Checked: diff since 761b6673, symbols defined, solved expression equals Sijoitus, answers.py output, tasks.json answer/criteria, cross-language number match.
+## Checked
+c-kohta ($\eta_\text{l}$) ja lasinosto: kaava symboleissa, luvut vasta Sijoituksessa; 37 kPa ja s = 1,6 tarkistettu; Järkevyys ei enää piilota johtopäätöstä vaan tukee sitä. Compared the diff hunks against the #522 notation and the unit text; no formula name or symbol of #522 is contradicted by a #523 solution, no derivation duplicated, LaTeX in the hunks balanced. Sample solutions now solve the asked quantity in symbols before the numbers (CLAUDE.md Lesson form 7), which supports the learning path.

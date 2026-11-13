@@ -162,17 +162,15 @@ When a hot and a cold object are put into one insulated container, heat is trans
 
 ## Formula: Heat and thermal equilibrium
 When the phase of a substance does not change, the quantity of heat needed to heat a mass $m$, or released when it cools, is
-```latex
-\begin{aligned}
-Q &= c m \Delta T \\
-\Delta T &= T_\text{final} - T_\text{initial}
-\end{aligned}
+```kaavat
+heat transferred :: Q = c m \Delta T
+\Delta T = T_\text{final} - T_\text{initial}
 ```
 where $Q$ is the quantity of heat (J), $c$ the specific heat capacity of the substance (J/(kg·K)), $m$ the mass (kg) and $\Delta T$ the change in temperature (K), that is, the final temperature $T_\text{final}$ minus the initial temperature $T_\text{initial}$. The change in temperature is the same in kelvins and in degrees Celsius, so $\Delta T$ can be calculated directly from Celsius temperatures. When an object warms, $\Delta T$ and $Q$ are positive; when it cools, they are negative.
 
 The heat capacity of a whole object
-```latex
-C = c m
+```kaavat
+heat capacity :: C = c m
 ```
 tells how many joules it takes to raise the temperature of the object by one kelvin. $C$ is the heat capacity (J/K), $c$ the specific heat capacity and $m$ the mass. An object with a large heat capacity warms and cools slowly.
 

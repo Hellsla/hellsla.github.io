@@ -1,8 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: f9672064592d2ec7
+CONTENT-HASH: a0241cfccb8c4cb0
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at f9672064592d2ec7.
 
-Delta review (solution practice, 2026-11-12) of the version passed before.
+## Blocking
+(none)
 
-k_h, l and p named, share solved in symbols, P/(P-P_h) ratio in d: clear and consistent with answers. Same physics and steps as fi in fi-easy (numbers match fi).
+## Polish
+- fy9-lampo-s6: the share of heat reaching the discs is called `k`, while other lampo tasks use k for slopes. A different letter (e.g. `\eta_\text{l}`) would avoid confusion; not wrong inside the task.
 
-Checked: diff since 761b6673, symbols defined, solved expression equals Sijoitus, answers.py output, tasks.json answer/criteria, cross-language number match.
+## Checked
+Diff only: inquiry solutions (k_h, ell and p) and sovella solutions carry symbols before numbers; P/(P-P_h) in d) explains the 13 % in symbols. Annettu defines every new symbol.

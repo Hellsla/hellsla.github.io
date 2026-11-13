@@ -141,7 +141,7 @@ Sähkön ja lämmön yhteistuotannossa lauhduttimen lämpö johdetaan kaukolämp
   <foreignObject x="250" y="214" width="200" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\text{sähkö } P_\text{s}$</div></foreignObject>
   <foreignObject x="238" y="148" width="230" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\text{kaukolämpö } P_\text{k}$</div></foreignObject>
   <foreignObject x="180" y="64" width="220" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\text{hukkalämpö}$</div></foreignObject>
-  <foreignObject x="312" y="8" width="280" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:right">$P_0 = 400\,\text{MW}$</div></foreignObject>
+  <foreignObject x="312" y="8" width="280" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:right">$P_\text{o} = 400\,\text{MW}$</div></foreignObject>
 </svg>
 
 Kokonaishyötysuhde nousee yhteistuotannossa jopa 85–$90\,\%$:iin, mutta sähkö ja lämpö eivät ole yhtä arvokkaita. Sähköä voi käyttää mihin tahansa, ja sitä voi siirtää satojen kilometrien päähän. Kaukolämpö kelpaa vain lämmitykseen, ja sen verkko ulottuu vain kaupunkiin. Siksi yhteistuotantolaitoksen sähkön ja lämmön suhde valitaan lämmön tarpeen mukaan: kesällä lämpöä tarvitaan vähän ja laitos tuottaa lähes pelkkää sähköä, talvella pakkasella lämpöä tarvitaan paljon.
@@ -149,28 +149,28 @@ Kokonaishyötysuhde nousee yhteistuotannossa jopa 85–$90\,\%$:iin, mutta sähk
 <figure class="unit-photo"><img src="pics/fy3/nesjavellir.webp" alt="Vihreässä laaksossa vuorten keskellä on valkoisia voimalaitosrakennuksia, ja yhdestä nousee korkea valkoinen pilvi."><figcaption>Nesjavellirin geoterminen voimalaitos Islannissa tuottaa sähköä ja kaukolämpöä. Voimalaitokselta nouseva pilvi on tiivistynyttä vesihöyryä, joka vie hukkalämpöä ympäristöön.</figcaption></figure>
 
 ## Kaava: Voimalaitoksen hyötysuhde
-Yhden vaiheen tai koko laitoksen hyötysuhde on hyödyksi saadun tehon suhde sisään tuotuun tehoon, ja hukkalämmön teho on se osa, joka ei tule hyödyksi:
-```latex
-\eta = \frac{P_\text{hyöty}}{P_0}
+Yhden vaiheen tai koko laitoksen hyötysuhde on hyödyksi saadun energian eli antotyön suhde sisään tuotuun energiaan eli ottotyöhön. Sama suhde saadaan tehoista: antotehon suhde ottotehoon. Hukkalämmön teho on se osa ottotehosta, joka ei tule hyödyksi:
+```kaavat
+hyötysuhde :: \eta = \frac{W_\text{a}}{W_\text{o}} = \frac{P_\text{a}}{P_\text{o}}
 ```
 ```latex
-P_\text{h} = P_0 - P_\text{hyöty}
+P_\text{h} = P_\text{o} - P_\text{a}
 ```
-missä $\eta$ on hyötysuhde (usein prosentteina), $P_\text{hyöty}$ hyödyksi saatu teho (W), $P_0$ sisään tuotu teho, esimerkiksi polttoaineteho (W), ja $P_\text{h}$ hukkalämmön teho (W). Voimalaitoksessa vaiheet ovat peräkkäin. Kunkin vaiheen ulostuleva teho on sen hyötysuhteen ja sisään tulevan tehon tulo:
+missä $\eta$ on hyötysuhde (usein prosentteina), $W_\text{a}$ antotyö eli hyödyksi saatu energia (J), $W_\text{o}$ ottotyö eli sisään tuotu energia (J), $P_\text{a}$ antoteho eli hyödyksi saatu teho (W), $P_\text{o}$ ottoteho eli sisään tuotu teho, esimerkiksi polttoaineteho (W), ja $P_\text{h}$ hukkalämmön teho (W). Alaindeksit tulevat sanoista anto ja otto, ja $P_\text{o}$:n alaindeksi on o-kirjain, ei nolla. Voimalaitoksessa vaiheet ovat peräkkäin, ja ketju alkaa ottotehosta $P_\text{o}$. Kunkin vaiheen ulostuleva teho on sen hyötysuhteen ja sisään tulevan tehon tulo:
 ```latex
 \begin{aligned}
-P_1 &= \eta_1 P_0 \\
+P_1 &= \eta_1 P_\text{o} \\
 P_2 &= \eta_2 P_1 \\
 P_3 &= \eta_3 P_2
 \end{aligned}
 ```
 Sijoittamalla ylempi yhtälö alempaan saadaan koko ketjun hyötysuhde:
 ```latex
-\eta = \frac{P_3}{P_0} = \eta_1\,\eta_2\,\eta_3
+\eta = \frac{P_3}{P_\text{o}} = \eta_1\,\eta_2\,\eta_3
 ```
-missä $\eta_1$, $\eta_2$ ja $\eta_3$ ovat vaiheiden hyötysuhteet (kattila, höyrykierto, generaattori ja muuntaja) ja $P_3$ on sähköteho. Hyötysuhteet kerrotaan keskenään, ei lasketa yhteen. Todellisessa voimalaitoksessa jokainen tekijä on pienempi kuin 1, joten ketjun hyötysuhde on pienempi kuin heikoimman vaiheen. Kuvassa pylväät $P_1$, $P_2$ ja $P_3$ saadaan edellisestä pylväästä kertomalla se vaiheen hyötysuhteella $\eta_1$, $\eta_2$ tai $\eta_3$.
+missä $\eta_1$, $\eta_2$ ja $\eta_3$ ovat vaiheiden hyötysuhteet (kattila, höyrykierto, generaattori ja muuntaja) ja $P_3$ on sähköteho eli laitoksen antoteho $P_\text{a}$. Hyötysuhteet kerrotaan keskenään, ei lasketa yhteen. Todellisessa voimalaitoksessa jokainen tekijä on pienempi kuin 1, joten ketjun hyötysuhde on pienempi kuin heikoimman vaiheen. Kuvassa pylväät $P_1$, $P_2$ ja $P_3$ saadaan edellisestä pylväästä kertomalla se vaiheen hyötysuhteella $\eta_1$, $\eta_2$ tai $\eta_3$.
 
-<svg viewBox="0 0 600 480" role="img" aria-label="Pylväskuvaaja siitä, miten teho pienenee energiaketjussa. Polttoaineteho P0 on 500 MW, kattilan jälkeen P1 on 460 MW, höyrykierron jälkeen P2 on 212 MW ja generaattorin ja muuntajan jälkeen P3 on 200 MW. Jokainen pylväs on edellistä matalampi, ja pylvään päällä oleva vaalea katkoviivalla rajattu osa on edellisessä vaiheessa hukkaan mennyt teho, ja jokaiseen on merkitty häviö: kattilassa 40 MW, höyrykierrossa 248 MW ja generaattorissa ja muuntajassa 12 MW. Vaiheiden hyötysuhteet ovat 0,92, 0,46 ja 0,945, ja niiden tulo on 0,40. Pylväät ovat mittakaavassa." style="max-width:100%;font-size:24px">
+<svg viewBox="0 0 600 480" role="img" aria-label="Pylväskuvaaja siitä, miten teho pienenee energiaketjussa. Polttoaineteho P_o on 500 MW, kattilan jälkeen P1 on 460 MW, höyrykierron jälkeen P2 on 212 MW ja generaattorin ja muuntajan jälkeen P3 on 200 MW. Jokainen pylväs on edellistä matalampi, ja pylvään päällä oleva vaalea katkoviivalla rajattu osa on edellisessä vaiheessa hukkaan mennyt teho, ja jokaiseen on merkitty häviö: kattilassa 40 MW, höyrykierrossa 248 MW ja generaattorissa ja muuntajassa 12 MW. Vaiheiden hyötysuhteet ovat 0,92, 0,46 ja 0,945, ja niiden tulo on 0,40. Pylväät ovat mittakaavassa." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy315-bar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
   <line x1="30" y1="380" x2="590" y2="380" stroke="#1f2933" stroke-width="3"/>
   <rect x="50" y="130" width="100" height="250" fill="url(#fy315-bar)"/>
@@ -183,7 +183,7 @@ missä $\eta_1$, $\eta_2$ ja $\eta_3$ ovat vaiheiden hyötysuhteet (kattila, hö
   <foreignObject x="170" y="8" width="140" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\eta_1 = 0{,}92$</div></foreignObject>
   <foreignObject x="310" y="8" width="140" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\eta_2 = 0{,}46$</div></foreignObject>
   <foreignObject x="450" y="8" width="140" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\eta_3 = 0{,}945$</div></foreignObject>
-  <foreignObject x="40" y="388" width="120" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$P_0$</div></foreignObject>
+  <foreignObject x="40" y="388" width="120" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$P_\text{o}$</div></foreignObject>
   <foreignObject x="40" y="426" width="120" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$500\,\text{MW}$</div></foreignObject>
   <foreignObject x="180" y="388" width="120" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$P_1$</div></foreignObject>
   <foreignObject x="180" y="426" width="120" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$460\,\text{MW}$</div></foreignObject>
@@ -201,7 +201,7 @@ missä $\eta_1$, $\eta_2$ ja $\eta_3$ ovat vaiheiden hyötysuhteet (kattila, hö
 
 Yhteistuotantolaitoksessa hyödyksi saadaan sekä sähkö että kaukolämpö, joten kokonaishyötysuhde on
 ```latex
-\eta_\text{kok} = \frac{P_\text{s} + P_\text{k}}{P_0}
+\eta_\text{kok} = \frac{P_\text{s} + P_\text{k}}{P_\text{o}}
 ```
 missä $P_\text{s}$ on sähköteho (W) ja $P_\text{k}$ kaukolämpöteho (W). Lauhduttimen lämpö lämmittää jäähdytysvettä. Jos vettä virtaa massa $m$ ajassa $t$ ja sen lämpötila nousee $\Delta T$, lämpömäärän $Q = cm\,\Delta T$ avulla lauhduttimen lämpöteho on
 ```latex
@@ -233,20 +233,20 @@ Lauhdevoimalaitoksen polttoaineteho on $600\,\text{MW}$. Kattilan hyötysuhde on
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Polttoaineteho $P_0 = 600\,\text{MW}$ ja vaiheiden hyötysuhteet $\eta_1 = 0{,}910$ (kattila), $\eta_2 = 0{,}440$ (höyrykierto) ja $\eta_3 = 0{,}950$ (generaattori ja muuntaja). Kysytään sähkötehoa $P_3$, koko ketjun hyötysuhdetta $\eta$ ja hukkalämmön tehoa $P_\text{h}$.
+**Tunnetut ja kysytty.** Polttoaineteho $P_\text{o} = 600\,\text{MW}$ ja vaiheiden hyötysuhteet $\eta_1 = 0{,}910$ (kattila), $\eta_2 = 0{,}440$ (höyrykierto) ja $\eta_3 = 0{,}950$ (generaattori ja muuntaja). Kysytään sähkötehoa $P_3$, koko ketjun hyötysuhdetta $\eta$ ja hukkalämmön tehoa $P_\text{h}$.
 
 <!-- vaihe -->
 
-**Periaate.** Vaiheet ovat peräkkäin: kunkin vaiheen ulostuloteho on seuraavan sisäänmenoteho, ja kukin vaihe päästää läpi vain hyötysuhteensa verran siihen tulevasta tehosta. Laitos toimii tasaisesti ja energia säilyy, joten polttoaineteho on joko sähköä tai lämpönä ympäristöön siirtyvää hukkaa: $P_0 = P_3 + P_\text{h}$.
+**Periaate.** Vaiheet ovat peräkkäin: kunkin vaiheen ulostuloteho on seuraavan sisäänmenoteho, ja kukin vaihe päästää läpi vain hyötysuhteensa verran siihen tulevasta tehosta. Laitos toimii tasaisesti ja energia säilyy, joten polttoaineteho on joko sähköä tai lämpönä ympäristöön siirtyvää hukkaa: $P_\text{o} = P_3 + P_\text{h}$.
 
 <!-- vaihe -->
 
 **Kaava ratkaistuna.** Hyötysuhteet kerrotaan, ja hukkalämpö on se osa, joka ei muutu sähköksi:
 ```latex
 \begin{aligned}
-P_3 &= \eta_1\,\eta_2\,\eta_3\,P_0 \\
-\eta &= \frac{P_3}{P_0} \\
-P_\text{h} &= P_0 - P_3
+P_3 &= \eta_1\,\eta_2\,\eta_3\,P_\text{o} \\
+\eta &= \frac{P_3}{P_\text{o}} \\
+P_\text{h} &= P_\text{o} - P_3
 \end{aligned}
 ```
 
@@ -259,7 +259,7 @@ P_\text{h} &= P_0 - P_3
 **Sijoitus.** Hyötysuhteiden tulo on $0{,}910 \cdot 0{,}440 \cdot 0{,}950 = 0{,}38038$. Sähköteho on
 ```latex
 \begin{aligned}
-P_3 &= \eta_1\,\eta_2\,\eta_3\,P_0 \\
+P_3 &= \eta_1\,\eta_2\,\eta_3\,P_\text{o} \\
 &= 0{,}38038 \cdot 600\,\text{MW} \\
 &= 228{,}228\,\text{MW}
 \end{aligned}
@@ -287,10 +287,10 @@ Toinen virhe on laskea vaiheiden hyötysuhteet yhteen tai ottaa niiden keskiarvo
 
 ## Tiivistelmä
 - Voimalaitos muuttaa energiaa vaihe vaiheelta energiaketjussa, ja jokaisessa vaiheessa osa siirtyy lämpönä ympäristöön.
-- Hyötysuhde on $\eta = P_\text{hyöty}/P_0$, ja hukkalämmön teho on $P_\text{h} = P_0 - P_\text{hyöty}$.
+- Hyötysuhde on $\eta = P_\text{a}/P_\text{o}$, ja hukkalämmön teho on $P_\text{h} = P_\text{o} - P_\text{a}$.
 - Ketjun hyötysuhde on vaiheiden hyötysuhteiden tulo, $\eta = \eta_1\,\eta_2\,\eta_3$, ja se on pienempi kuin heikoimman vaiheen.
 - Lauhdevoimalaitoksen suurin häviö on höyrykierron lauhduttimeen siirtyvä lämpö, jota lämpövoimakone ei voi kokonaan välttää. Sähköntuotannon hyötysuhde on noin $40\,\%$ (tyypillisesti $38$–$42\,\%$).
-- Yhteistuotannossa lauhduttimen lämpö johdetaan kaukolämpöverkkoon, ja kokonaishyötysuhde on $\eta_\text{kok} = (P_\text{s} + P_\text{k})/P_0$, noin 85–$90\,\%$. Sähköä saadaan silloin vähemmän.
+- Yhteistuotannossa lauhduttimen lämpö johdetaan kaukolämpöverkkoon, ja kokonaishyötysuhde on $\eta_\text{kok} = (P_\text{s} + P_\text{k})/P_\text{o}$, noin 85–$90\,\%$. Sähköä saadaan silloin vähemmän.
 - Vesivoimala, tuulivoimala ja aurinkopaneeli eivät ole lämpövoimakoneita, mutta niiden hyötysuhteiden nimittäjä on virtaavan veden, tuulen tai säteilyn teho, ei ostettu polttoaine.
 - Lauhduttimen jäähdytysvesi saa lämpötehon $P_\text{L} = c\,q_m\,\Delta T$, joka on hukkalämmön suurin osa.
 

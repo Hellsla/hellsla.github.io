@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 20cd0c5ea68aaf63
-
-Delta review (solution practice, 2026-11-12) of the version passed before.
+CONTENT-HASH: 56c058a7e6212ab4
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 20cd0c5ea68aaf63.
 
 ## Blocking
-None. Built fy9-aallot (fi-easy) with ?ratkaisut=1, every details element opened, at 390 and 1280 px. No .katex-error, no script errors; the changed Sijoitus, Kaava and Vastaus lines render with upright subscripts and units, thin spaces and \cdot (no x, no \times); decimal comma in fi and fi-easy, decimal point in en; the new symbol definitions ("missä ...") read naturally and the sentences are in the right language.
+(none)
 
 ## Polish
-1. Page-level horizontal overflow at 390 px when all details are open (102 px): long inline-math Sijoitus or answer lines in .reveal or .answer blocks do not wrap or scroll. Verified in the previous version (git 761b6673) for energia, voimat, sahkokentta and mittaaminen, so it is not a regression of this change (mittaaminen is about 40 px wider now). Fix when convenient: break such a substitution into a display line (\begin{aligned}) or let .reveal/.answer have overflow-x:auto.
+(none)
+
+## Checked
+Read every added line of the merge diff for this unit (fi-easy). check_latex.py on the unit: all fragments ok. Symbols introduced by the symbolic solutions (Annettu/Kaava/Sijoitus) compared with the unit text and neighbouring solutions: no clash with #522 formula names or notation found; no derivation duplicated; order principle, symbolic formula, substitution, result kept; units upright with thin space, decimal comma, no plain numbers with units in the added text. No capture built (source judged sufficient for these text-only changes).

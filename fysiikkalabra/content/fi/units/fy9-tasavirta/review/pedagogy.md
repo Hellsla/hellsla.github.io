@@ -1,8 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 025761e6f359e819
+CONTENT-HASH: f131fb403db2206f
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at f6eb30bdd7975031.
 
-Delta review (solution practice, 2026-11-12) of the version passed before.
+## Blocking
+(none)
 
-n, N, t_1, a named; P_lamp/P_source = R/(R + R_s) is a nice check; 436,8 Wh now used unrounded.
+## Polish
+(none)
 
-Checked: diff since 761b6673, symbols defined, solved expression equals Sijoitus, answers.py output, tasks.json answer/criteria, cross-language number match.
+## Checked
+Keitin: $t = Nnt_1$; $E_1 = E/3$ ja $R_{s1}$ merkitty; $P/(EI) = R/(R+R_s)$ tarkistettu 0,831; veden lämmitys $Q = cm\Delta T$; latauksen muunnos 436,8 Wh yhtenevä sijoituksen kanssa. Compared the diff hunks against the #522 notation and the unit text; no formula name or symbol of #522 is contradicted by a #523 solution, no derivation duplicated, LaTeX in the hunks balanced. Sample solutions now solve the asked quantity in symbols before the numbers (CLAUDE.md Lesson form 7), which supports the learning path.

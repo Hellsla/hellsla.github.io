@@ -5,12 +5,12 @@
  "kylmä": "kylmä",
  "lämmin": "lämmin",
  "hiukkaset yhtä suuria, välit liioiteltu": "hiukkaset yhtä suuria, välit liioiteltu",
- "Sama sauva kylmänä ja lämpimänä: lämmin sauva on pidempi, ja pituuden muutos ΔL on merkitty sauvan päähän. Sauva on kiinni seinässä vasemmassa päässä. Laajeneminen on piirretty liioiteltuna.": "Sama sauva kylmänä ja lämpimänä. Lämmin sauva on pidempi. Pituuden muutos ΔL on merkitty sauvan päähän. Sauva on kiinni seinässä vasemmassa päässä. Laajeneminen on piirretty liioiteltuna.",
+ "Sama sauva kylmänä ja lämpimänä: lämmin sauva on pidempi, ja pituuden muutos Δl on merkitty sauvan päähän. Sauva on kiinni seinässä vasemmassa päässä. Laajeneminen on piirretty liioiteltuna.": "Sama sauva kylmänä ja lämpimänä. Lämmin sauva on pidempi. Pituuden muutos Δl on merkitty sauvan päähän. Sauva on kiinni seinässä vasemmassa päässä. Laajeneminen on piirretty liioiteltuna.",
  "kylmä, lämpötila ": "kylmä, lämpötila ",
  "lämmin, lämpötila ": "lämmin, lämpötila ",
  "laajeneminen liioiteltu": "laajeneminen liioiteltu",
  "Nesteen tilavuuden lämpölaajeneminen. Sama nestemäärä kolvissa, jonka kaulana on ohut putki: kylmänä nesteen tilavuus on V₀ ja pinta on alempana, lämpimänä neste on laajentunut ja pinta nousee ohuessa putkessa. Tilavuuden muutos ΔV on merkitty putkeen. Laajeneminen on piirretty liioiteltuna.": "Nesteen tilavuuden lämpölaajeneminen. Kolvissa on sama määrä nestettä. Kolvin kaulana on ohut putki. Kylmänä nesteen tilavuus on V₀, ja pinta on alempana. Lämpimänä neste on laajentunut, ja pinta nousee ohuessa putkessa. Tilavuuden muutos ΔV on merkitty putkeen. Laajeneminen on piirretty liioiteltuna.",
  "kylmä, ": "kylmä, ",
  "pinta": "pinta",
- "Kuvaaja mittakaavassa: metallipalkin pituuden muutos ΔL millimetreinä lämpötilan T funktiona celsiusasteina. Mittaus alkaa lämpötilassa 20 °C, jolloin ΔL on 0 mm, ja päättyy lämpötilaan 70 °C, jolloin ΔL on 3,0 mm. Mittauspisteet ovat suoralla. Ruudukon väli on 10 °C ja 0,5 mm.": "Kuvaaja mittakaavassa. Se näyttää metallipalkin pituuden muutoksen ΔL millimetreinä. Muutos on lämpötilan T funktiona celsiusasteina. Mittaus alkaa lämpötilassa 20 °C, ja silloin ΔL on 0 mm. Mittaus päättyy lämpötilaan 70 °C, ja silloin ΔL on 3,0 mm. Mittauspisteet ovat suoralla. Ruudukon väli on 10 °C ja 0,5 mm."
+ "Kuvaaja mittakaavassa: metallipalkin pituuden muutos Δl millimetreinä lämpötilan T funktiona celsiusasteina. Mittaus alkaa lämpötilassa 20 °C, jolloin Δl on 0 mm, ja päättyy lämpötilaan 70 °C, jolloin Δl on 3,0 mm. Mittauspisteet ovat suoralla. Ruudukon väli on 10 °C ja 0,5 mm.": "Kuvaaja mittakaavassa. Se näyttää metallipalkin pituuden muutoksen Δl millimetreinä. Muutos on lämpötilan T funktiona celsiusasteina. Mittaus alkaa lämpötilassa 20 °C, ja silloin Δl on 0 mm. Mittaus päättyy lämpötilaan 70 °C, ja silloin Δl on 3,0 mm. Mittauspisteet ovat suoralla. Ruudukon väli on 10 °C ja 0,5 mm."
 }

@@ -118,7 +118,7 @@ new p5((p) => {
       p.stroke(200, 50, 40); p.strokeWeight(2); p.line(xRef, yA, xNow, yA); p.line(xRef, yA - 5, xRef, yA + 5);
       p.fill(200, 50, 40); p.triangle(xNow, yA, xNow - 7 * s, yA - 4, xNow - 7 * s, yA + 4);
       p.noStroke(); p.textAlign(p.CENTER); p.textSize(ts(13));
-      p.text('$\\Delta L$', Math.min((xRef + xNow) / 2, 590 - p.textWidth('$\\Delta L$') / 2), yA + 4 + ts(13));
+      p.text('$\\Delta l$', Math.min((xRef + xNow) / 2, 590 - p.textWidth('$\\Delta l$') / 2), yA + 4 + ts(13));
     }
 
     // (T, ΔL) chart: thin lines for every material, thick for the chosen one, the current point
@@ -134,7 +134,7 @@ new p5((p) => {
     p.textAlign(p.CENTER);
     for (let TT = T_MIN; TT <= T_MAX; TT += 40) p.text(`$${tx(TT, 0)}$`, X(TT), CH.y0 + ts(16));
     p.textAlign(p.RIGHT); p.textSize(ts(12)); p.text('$T\\ (^\\circ\\text{C})$', CH.x1 + 10, CH.y0 + ts(32));
-    p.textAlign(p.LEFT); p.text('$\\Delta L\\ (\\text{mm})$', CH.x0 + 8, CH.y1 + ts(8));
+    p.textAlign(p.LEFT); p.text('$\\Delta l\\ (\\text{mm})$', CH.x0 + 8, CH.y1 + ts(8));
     for (const [name, a, c] of MATERIALS) {
       if (name === material) continue;
       p.stroke(...c, 150); p.strokeWeight(1.5); p.line(X(T_MIN), Y(a * L0 * (T_MIN - T_REF) * 1000), X(T_MAX), Y(a * L0 * (T_MAX - T_REF) * 1000));

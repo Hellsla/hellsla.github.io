@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: ece51be74ef11ee8
+CONTENT-HASH: 103dbcbc76a0699e
 
 ## Blocking
-(none)
+
+None. W = pΔV is now the magnitude of compression work and P_a is defined in the worked example; notation is followable.
 
 ## Polish
-- meta.json key_concepts "yhteistuotanto" — "lauhdutin" is not explained — "Lauhduttimessa (laitteessa, jossa höyry jäähtyy vedeksi) syntyvä lämpö käytetään lämmitykseen."
+
+None.
 
 ## Checked
-batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.
+
+Diff since previous PASS and the MAFY notation in lesson/solutions; symbols defined where first used; numbers and levels unchanged.

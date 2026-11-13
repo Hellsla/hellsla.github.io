@@ -1,13 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 79c6b33c4e73d6f3
+CONTENT-HASH: c8fd8fdeae438699
 
 ## Blocking
-(none)
+None. Read exercises.json and solutions.md; symbols are the lesson's, solutions go symbolically first, and the exercise levels are unchanged.
 
 ## Polish
-- none
-
-## Checked
-- New task fy3-8-L2-08 read in en against the Finnish: nothing lost (text, all answer options or statements, every feedback, all solution steps and the estimate/reasoning sentences).
-- Language is natural English with the decimal point; the task is as clear and answerable as the Finnish.
-- Feedback of each wrong option names its misconception, as in the Finnish; the solution keeps the Given/Find/Principle/Model answer structure.
+1. exercises/solutions.md: every Δl solution derives Δl = αl₀ΔT first and substitutes with units; the sign and ΔT-in-kelvin traps (error-analysis tasks) survive the rename. Levels and kinds unchanged.
+2. No exercise uses l = l₀(1 + αΔT) (the new MAFY form); add one level-1 or -2 task asking for the length after heating or cooling.
+3. Litres use \textsf{l}, so length l and litre are not confused.

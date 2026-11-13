@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 71f0ef9cfadd67d6
-Delta review (solution practice, 2026-11-12) of the version passed before.
+CONTENT-HASH: 5742dd1f4adca003
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 71f0ef9cfadd67d6.
 
 ## Blocking
 (none)
@@ -9,4 +9,4 @@ Delta review (solution practice, 2026-11-12) of the version passed before.
 (none)
 
 ## Checked
-s1 b ($d = L - v/(2f')$ = 70,8 mm), s3 d ($l_0 = -b/k$ = −1,4 cm, $l$ = 0,977 m), s6 b ($d = L_0 + x$ = 39,6 m) and the inquiry dB task ($\beta$ = 10 dB defined; $r_2$ = 178 m) recomputed; agree with answers.py. The fi, fi-easy and en diffs carry identical mathematics (every changed formula compared token by token); answers.py run; `units.py check` passes.
+Every hunk of the en merge diff (word diff). inquiry dB task: $\beta = 10$ dB introduced as the decibel factor, no clash with the unit's ```kaavat``` name *sound intensity level* $L = 10\lg(I/I_0)$ dB ($L$ for level, $\beta$ not used elsewhere in the unit); $r_2 = 20\,\text{m}\cdot\sqrt{10^{1.9}} = 178.3$ m recomputed. Sovella: $d = L - v/(2f') = 70.8$ mm, $l_0 = -b/k = -1.4$ cm, $l = 0.977$ m, $d = L_0 + x = 39.6$ m, all symbolic before substitution. Every changed formula is symbolic before substitution and uses no symbol in a sense that differs from the unit's ```kaavat``` names or notation from #522; the $ and brace balance of each added line is checked; `units.py check` passes; the hash was taken at the start and the end and matches.

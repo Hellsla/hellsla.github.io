@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 1d8d8594c47d3b7a
-Delta review (solution practice, 2026-11-12) of the version passed before.
+CONTENT-HASH: c909aa8d4fcf4b9e
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at ccddd23e0bb39d09.
 
 ## Blocking
 (none)
@@ -9,4 +9,4 @@ Delta review (solution practice, 2026-11-12) of the version passed before.
 (none)
 
 ## Checked
-s2 d (436,8 Wh unrounded; 85,7 %, 6,6 snt), s3 b (symbols defined; $E_1$, $R_{\text{s}1}$), s3 d (osuus $= R/(R + R_\text{s})$ = 0,831, equals $P/(EI)$), s6 a (6,40 h) and the inquiry kettle task ($t = Nnt_1$ = 6,0 h, 2,09 €) recomputed. The fi, fi-easy and en diffs carry identical mathematics (every changed formula compared token by token); answers.py run; `units.py check` passes.
+Every hunk of the fi-easy merge diff for this unit: the new symbolic steps (solving for the asked quantity before numbers) against the existing substitutions, answers and unit formula names/notation of #522; LaTeX balanced. Content hash recomputed with scripts/units.py (matches). Recomputed: $t = Nnt_1 = 6{,}0\,\text{h}$, $K = 2{,}09\,\text{€}$; $\eta = 374{,}4/436{,}8 = 0{,}857$, $K = 0{,}066\,\text{€}$ (the conversion line now uses $436{,}8\,\text{Wh}$, consistent with Sijoitus); $R_\text{s} = 0{,}88/1{,}20 = 0{,}733\,\Omega$, per cell $1{,}54\,\text{V}$ and $0{,}244\,\Omega$ (series sum stated); $P/(EI) = R/(R+R_\text{s}) = 0{,}831$; boiler $6{,}40\,\text{h}$.

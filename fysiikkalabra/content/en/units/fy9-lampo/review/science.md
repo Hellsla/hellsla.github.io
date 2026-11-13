@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 2b4c3c134480ad0c
-Delta review (solution practice, 2026-11-12) of the version passed before.
+CONTENT-HASH: c0e5f30c40e0a14a
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 2b4c3c134480ad0c.
 
 ## Blocking
 (none)
@@ -9,4 +9,4 @@ Delta review (solution practice, 2026-11-12) of the version passed before.
 (none)
 
 ## Checked
-s2 c (osuus $= P/(k_\text{h}\Delta T)$ = 35,8 %), s3 c–d ($P/(P - P_\text{h})$ ≈ 1,13), s6 a–b (symbol $k$ = 85 %; 31,5 K, 133,7 K) and the two inquiry solutions ($k_\text{h}$: 0,886 K; $m = \ell p t/s$ = 3,88 kg) recomputed. The fi, fi-easy and en diffs carry identical mathematics (every changed formula compared token by token); answers.py run; `units.py check` passes.
+Every hunk of the en merge diff (word diff). Heat-loss coefficient $k_\text{h}$ (W/K) and the share $P/(k_\text{h}(T_\text{in}-T_\text{out}))$; cable $P = \ell p$, $m = \ell p t/s$; the share $k = 85$ % in $\Delta T = k\cdot\tfrac12mv^2/(cm)$ and $k(mgh - Fs)$; $P/(P-P_\text{h}) = 600:530 = 1.13$. Symbols do not clash within any task. Every changed formula is symbolic before substitution and uses no symbol in a sense that differs from the unit's ```kaavat``` names or notation from #522; the $ and brace balance of each added line is checked; `units.py check` passes; the hash was taken at the start and the end and matches.

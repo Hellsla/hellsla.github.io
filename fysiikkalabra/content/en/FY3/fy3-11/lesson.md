@@ -33,9 +33,9 @@
 </svg>
 
 ## Key idea
-When a gas expands and pushes a piston, it does work. The gas pushes the piston with a force $F = pA$, where $A$ is the area of the piston. If the piston moves a distance $s$ and the pressure stays the same, the work done by the gas is force times distance, $pAs$. The product $As$ is the change in the volume of the gas $\Delta V$, so the work done by the gas is $W_\text{g} = p\,\Delta V$. In the ($V$, $p$) graph it is the area between the graph and the $V$ axis, just like the work in an ($s$, $F$) graph. When the gas is compressed, the surroundings do work on the gas, and $W_\text{g}$ is negative. A gas that does work gives up energy, so in this lesson the first law is written in the form $\Delta U = Q - W_\text{g}$.
+When a gas expands and pushes a piston, it does work. The gas pushes the piston with a force $F = pA$, where $A$ is the area of the piston. If the piston moves a distance $s$ and the pressure stays the same, the work done by the gas is force times distance, $pAs$. The product $As$ is the change in the volume of the gas $\Delta V$, so the work done by the gas is $W = p\,\Delta V$. In the ($V$, $p$) graph it is the area between the graph and the $V$ axis, just like the work in an ($s$, $F$) graph. When the gas is compressed, the surroundings do compression work on the gas, and its size is calculated with the same formula. A gas that does work gives up energy, so its internal energy grows less than the heat brought to it.
 
-<svg data-fig="piston-work" viewBox="0 0 600 330" role="img" aria-label="Principle drawing of the work done by a gas on a piston. The cross-sectional area of the cylinder is A. The pressure p of the gas pushes the piston with a force F = pA, and the piston moves a distance Δs to the right. The volume of the gas grows by the shaded part, ΔV = AΔs. The work is W_g = FΔs = pAΔs = pΔV. The picture is not to scale." style="max-width:100%;font-size:24px">
+<svg data-fig="piston-work" viewBox="0 0 600 330" role="img" aria-label="Principle drawing of the work done by a gas on a piston. The cross-sectional area of the cylinder is A. The pressure p of the gas pushes the piston with a force F = pA, and the piston moves a distance Δs to the right. The volume of the gas grows by the shaded part, ΔV = AΔs. The work is W = FΔs = pAΔs = pΔV. The picture is not to scale." style="max-width:100%;font-size:24px">
   <defs><pattern id="fy311-dv" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="12" height="12" fill="#ffc078"/><line x1="0" y1="0" x2="0" y2="12" stroke="#e8590c" stroke-width="2"/></pattern></defs>
   <rect x="110" y="70" width="140" height="120" fill="#ffc078" fill-opacity="0.3"/>
   <rect x="250" y="70" width="170" height="120" fill="url(#fy311-dv)"/>
@@ -61,7 +61,7 @@ When a gas expands and pushes a piston, it does work. The gas pushes the piston 
   <line x1="359" y1="226" x2="408" y2="226" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <path d="M419,226 L407,231.5 L407,220.5 Z" fill="#1f2933" stroke-linejoin="round"/>
   <foreignObject x="318.5" y="211.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\Delta s$</div></foreignObject>
-  <foreignObject x="183.5" y="275.5" width="233" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$W_\text{g} = F\,\Delta s = pA\,\Delta s = p\,\Delta V$</div></foreignObject>
+  <foreignObject x="190" y="275.5" width="220" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$W = F\,\Delta s = pA\,\Delta s = p\,\Delta V$</div></foreignObject>
 </svg>
 
 ### A heat engine repeats its motion
@@ -96,7 +96,7 @@ In combined production of electricity and heat, the heat $Q_2$ of the condenser 
 ### Refrigerator and heat pump
 A refrigerator and a heat pump work the opposite way to a heat engine: they use electrical energy to transfer heat from a cold place to a warm one. A refrigerator transfers heat from inside the cabinet to the room, and an air-source heat pump from the outdoor air to the inside. The heat given out indoors is the sum of the heat taken from outside and the electricity used, so a pump can heat a house with, for example, three times as much heating power as the electric power it uses. The ratio of the heating power to the electric power is called the coefficient of performance. The coefficient of performance is not an efficiency: it can be greater than 1, because part of the heat that comes indoors is transferred from the outdoor air and does not come from the electricity. The pump does not create energy; it transfers it.
 
-<svg data-fig="heat-pump" viewBox="0 0 600 340" role="img" aria-label="The energy flows of a heat pump as arrows whose width shows the power: the electrical energy E_el and the heat Q_outdoors taken from the outdoor air enter the pump, and the pump gives out indoors the heat Q_indoors, which is their sum. The widths of the arrows are to scale: E_el is 20, Q_outdoors is 40 and Q_indoors is 60 units, so the arrow going indoors is as wide as the two incoming arrows together and three times as wide as the electricity arrow." style="max-width:100%;font-size:24px">
+<svg data-fig="heat-pump" viewBox="0 0 600 340" role="img" aria-label="The energy flows of a heat pump as arrows whose width shows the power: the electrical energy W and the heat Q_2 taken from the outdoor air enter the pump, and the pump gives out indoors the heat Q_1, which is their sum. The widths of the arrows are to scale: W is 20, Q_2 is 40 and Q_1 is 60 units, so the arrow going indoors is as wide as the two incoming arrows together and three times as wide as the electricity arrow." style="max-width:100%;font-size:24px">
   <rect x="150" y="12" width="300" height="52" rx="10" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
   <foreignObject x="208.5" y="23.5" width="183" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{cold outdoor air}$</div></foreignObject>
   <rect x="150" y="276" width="300" height="52" rx="10" fill="#f2a69c" stroke="#c92a2a" stroke-width="2.5"/>
@@ -106,34 +106,34 @@ A refrigerator and a heat pump work the opposite way to a heat engine: they use 
   <path d="M280,64 L280,96 L270,96 L300,118 L330,96 L320,96 L320,64 Z" fill="#ffc078" stroke-linejoin="round"/>
   <path d="M30,177 L203,177 L203,183 L225,167 L203,151 L203,157 L30,157 Z" fill="#1f2933" stroke-linejoin="round"/>
   <path d="M270,216 L270,250 L258,250 L300,274 L342,250 L330,250 L330,216 Z" fill="#e8590c" stroke-linejoin="round"/>
-  <foreignObject x="344" y="77.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$Q_\text{outdoors}$</div></foreignObject>
-  <foreignObject x="29" y="119.5" width="186" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{electricity}\ E_\text{el}$</div></foreignObject>
-  <foreignObject x="354" y="230.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$Q_\text{indoors}$</div></foreignObject>
+  <foreignObject x="344" y="77.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$Q_2$</div></foreignObject>
+  <foreignObject x="41" y="119.5" width="162" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{electricity}\ W$</div></foreignObject>
+  <foreignObject x="354" y="230.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$Q_1$</div></foreignObject>
   <foreignObject x="451" y="137.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{arrow width}$</div></foreignObject>
   <foreignObject x="451" y="167.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{shows power}$</div></foreignObject>
 </svg>
 
 ## Formula: Work done by a gas and efficiency
-When the pressure of a gas stays constant, the work done by the gas is
-```latex
-W_\text{g} = p\,\Delta V
+When the pressure of a gas stays constant, the work done by the gas in expanding is
+```kaavat
+work done by a gas in expansion / on a gas in compression :: W = p\,\Delta V
 ```
-where $W_\text{g}$ is the work done by the gas (J), $p$ the pressure of the gas (Pa) and $\Delta V$ the change in the volume of the gas (m³). The work is positive when the gas expands and negative when the gas is compressed. The change in the internal energy of the gas is
-```latex
-\Delta U = Q - W_\text{g}
+where $W$ is the work done by the gas (J), $p$ the pressure of the gas (Pa) and $\Delta V$ the change in the volume of the gas (m³). When the gas is compressed, the same formula gives the magnitude of the compression work done on the gas by the surroundings. The change in the internal energy of the gas is given by the first law of thermodynamics
+```kaavat
+first law of thermodynamics :: \Delta U = Q + W
 ```
-where $Q$ is the quantity of heat transferred to the gas (J). This is the first law $\Delta U = Q + W$ presented in the chapter *Internal energy, heat and conservation of energy*, where $W$ is the work done on the gas by the surroundings: $W = -W_\text{g}$.
+where $Q$ is the quantity of heat transferred to the gas (J) and $W$ the work done on the gas (J), as in the chapter *Internal energy, heat and conservation of energy*. So in the first law $W$ is the work done on the gas: when the gas expands and does the work $p\,\Delta V$, the work done on it is $W = -p\,\Delta V$, so $\Delta U = Q - p\,\Delta V$.
 
 During one cycle of a heat engine, the work done and the efficiency are
 ```latex
 W = Q_1 - Q_2
 ```
-```latex
-\eta = \frac{W}{Q_1}
+```kaavat
+efficiency of a heat engine :: \eta = \frac{W}{Q_1} = \frac{Q_1 - Q_2}{Q_1}
 ```
 where $Q_1$ is the heat transferred to the engine from the hot source (J), $Q_2$ the heat given up to the colder environment (J), $W$ the work done by the engine during the cycle (J) and $\eta$ the efficiency, which is often given as a percentage. Efficiency can be calculated in the same way from powers, for example the electric power divided by the fuel power.
 
-<svg data-fig="pv-work" viewBox="0 0 600 330" role="img" aria-label="(V, p) graph of a gas expanding at constant pressure: the pressure p stays constant while the volume grows from V_1 to V_2, so the graph is a horizontal line segment, and an arrow shows the direction of the expansion. The shaded rectangle between the segment and the V axis, whose width is the change in volume ΔV and whose height is p, is the work done by the gas W_g = p ΔV. Schematic diagram." style="max-width:100%;font-size:24px">
+<svg data-fig="pv-work" viewBox="0 0 600 330" role="img" aria-label="(V, p) graph of a gas expanding at constant pressure: the pressure p stays constant while the volume grows from V_1 to V_2, so the graph is a horizontal line segment, and an arrow shows the direction of the expansion. The shaded rectangle between the segment and the V axis, whose width is the change in volume ΔV and whose height is p, is the work done by the gas W = p ΔV. Schematic diagram." style="max-width:100%;font-size:24px">
   <line x1="203" y1="270" x2="203" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="363" y1="270" x2="363" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="96" y1="112.5" x2="470" y2="112.5" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -157,7 +157,7 @@ where $Q_1$ is the heat transferred to the engine from the hot source (J), $Q_2$
   <line x1="269" y1="112.5" x2="278" y2="112.5" stroke="#1f2933" stroke-width="4.5" stroke-linecap="butt"/>
   <path d="M297,112.5 L277,121.5 L277,103.5 Z" fill="#1f2933" stroke-linejoin="round"/>
   <foreignObject x="216.5" y="72" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{gas expands}$</div></foreignObject>
-  <foreignObject x="235.5" y="156" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$W_\text{g} = p\,\Delta V$</div></foreignObject>
+  <foreignObject x="241.5" y="156" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$W = p\,\Delta V$</div></foreignObject>
   <line x1="257" y1="228" x2="218" y2="228" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <path d="M206,228 L219,222 L219,234 Z" fill="#1f2933" stroke-linejoin="round"/>
   <line x1="309" y1="228" x2="348" y2="228" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
@@ -165,15 +165,11 @@ where $Q_1$ is the heat transferred to the engine from the hot source (J), $Q_2$
   <foreignObject x="266.5" y="213.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\Delta V$</div></foreignObject>
 </svg>
 
-A heat pump gives out indoors a quantity of heat that is the sum of the heat taken from the outdoor air and the electrical energy used by the pump:
-```latex
-Q_\text{indoors} = Q_\text{outdoors} + E_\text{el}
+A heat pump gives out indoors the heat $Q_1$, which is the sum of the heat $Q_2$ taken from the outdoor air and the electrical energy $W$ used by the pump. Energy is conserved, so the electrical energy used by the pump is $W = Q_1 - Q_2$. The coefficient of performance tells how many times as much heat the pump gives out indoors as the electrical energy it uses:
+```kaavat
+coefficient of performance of a heat pump :: \varepsilon = \frac{Q_1}{W} = \frac{Q_1}{Q_1 - Q_2}
 ```
-The coefficient of performance tells how many times as much heat the pump gives out indoors as the electrical energy it uses:
-```latex
-\varepsilon = \frac{Q_\text{indoors}}{E_\text{el}}
-```
-where $Q_\text{indoors}$ is the heat given out indoors (J), $Q_\text{outdoors}$ the heat taken from the outdoor air (J), $E_\text{el}$ the electrical energy used by the pump (J) and $\varepsilon$ the coefficient of performance. The coefficient of performance can be calculated in the same way from powers.
+where $Q_1$ is the heat given out to the warm side, that is, indoors (J), $Q_2$ the heat taken from the cold side, that is, from the outdoor air (J), $W$ the electrical energy, that is, the work used by the pump (J) and $\varepsilon$ the coefficient of performance. The coefficient of performance can be calculated in the same way from powers.
 
 ## Worked example
 Wood chip energy is fed into the boiler of a biopower plant at a power of $500\,\text{MW}$. When the plant produces only electricity, the electric power is $190\,\text{MW}$. In winter the same plant works as a combined heat and power plant: it produces $150\,\text{MW}$ of electricity and $290\,\text{MW}$ of district heating. What is the efficiency in each case, and how much power is transferred to the environment as waste heat?
@@ -191,11 +187,11 @@ Wood chip energy is fed into the boiler of a biopower plant at a power of $500\,
 **Rearranged formula.** Solve for the quantities asked for, with symbols before numbers:
 ```latex
 \begin{aligned}
-\eta &= \frac{P_\text{useful}}{P_1} \\
-P_2 &= P_1 - P_\text{useful}
+\eta &= \frac{P_\text{a}}{P_1} \\
+P_2 &= P_1 - P_\text{a}
 \end{aligned}
 ```
-For electricity alone $P_\text{useful} = P_\text{e}$, and for combined production $P_\text{useful} = P_\text{e} + P_\text{dh}$.
+The useful (output) power is $P_\text{a}$: for electricity alone $P_\text{a} = P_\text{e}$, and for combined production $P_\text{a} = P_\text{e} + P_\text{dh}$.
 
 <!-- vaihe -->
 
@@ -235,9 +231,9 @@ Many people think that better technology could make a heat engine almost perfect
 Another mistake is to think of a heat pump as a perpetual motion machine, because it gives out more heat than it uses electricity. The extra heat comes from the outdoor air, and energy is not created out of nothing. A third mistake is to think that a pressurised gas does work just because its pressure is high. Work is done only when the volume changes and the piston moves.
 
 ## Summary
-- A gas that expands at constant pressure does the work $W_\text{g} = p\,\Delta V$, which is the area under the ($V$, $p$) graph. The internal energy changes by $\Delta U = Q - W_\text{g}$.
+- A gas that expands at constant pressure does the work $W = p\,\Delta V$, which is the area under the ($V$, $p$) graph. In the first law $\Delta U = Q + W$ the work $W$ is the work done on the gas, so for an expanding gas $\Delta U = Q - p\,\Delta V$.
 - A piston machine can repeat its work only if the gas is cooled before the piston is returned; then heat is transferred to something colder.
 - A heat engine takes heat $Q_1$ from a hot source, does work $W$ and gives up heat $Q_2$ to a colder environment: $W = Q_1 - Q_2$.
-- Efficiency is $\eta = W/Q_1$. A heat engine cannot turn all the heat into work.
+- Efficiency is $\eta = W/Q_1 = (Q_1 - Q_2)/Q_1$. A heat engine cannot turn all the heat into work.
 - The efficiency of electricity production of a condensing power plant is about $40\,\%$. In combined production of electricity and heat the heat of the condenser is used as district heating, so the overall efficiency, in which electricity and heat both count as useful, is 85–$90\,\%$.
-- A refrigerator and a heat pump use work to transfer heat from cold to warm. They do not create energy. The coefficient of performance of a heat pump, $\varepsilon = Q_\text{indoors}/E_\text{el}$, is not an efficiency, and it can be greater than 1, because part of the heat comes from the outdoor air.
+- A refrigerator and a heat pump use work to transfer heat from cold to warm. They do not create energy. The coefficient of performance of a heat pump, $\varepsilon = Q_1/(Q_1 - Q_2)$, where $Q_1$ is the heat given out indoors and $Q_2$ the heat taken from the outdoor air, is not an efficiency, and it can be greater than 1, because part of the heat comes from the outdoor air.

@@ -1,17 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 84abdaa36d4ebf09
+CONTENT-HASH: e2ac237053125ac5
 
 ## Blocking
-- none
+None. Built preview/fi-easy/fy3-10.html and looked at 390 and 1280 px: formula tables (named rows, upright subscripts a, o, h, A), changed figures, opened solutions; no horizontal overflow; no leftover old symbols (L, P_0, P_hyöty, Q_sisälle, E_s, W_k) in the lesson, inquiry, exit ticket or exercises of this part.
 
 ## Polish
-- [Minor] lesson.md repeats "Silloin" in the kaasuvakio passage (carried over from earlier reports, still open).
-- [Minor] fy3-10 sim.js, starting state (round 1 change): the starting axis shows no 0/0 tick. This was read from the diff. Check once by eye after "Nollaa mittaus".
+none.
 
-## Checked
-- Round 2 delta: the only change is the exp-2 question's `tolerance` in inquiry.json (0.02 -> 0.1). It is a number the student never sees, so no text, figure, formula or layout changes. No capture is affected, so none was reopened.
-- Round 1 (sim.js axis line): I opened fy3-10-sim-390.png and fy3-10-sim-1280.png and found them intact: no clipping, no overlap, KaTeX units upright. That judgement stands.
-- The earlier checks stand: the settling state, the "Luvun tärkeät käsitteet" panel and the earlier text edits.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+(Captures: /tmp/claude-0/-home-user-hellsla-github-io/729392a7-96f2-578c-8869-36f18714a66f/scratchpad/review-fy3/)

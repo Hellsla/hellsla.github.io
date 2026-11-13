@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 79c6b33c4e73d6f3
+CONTENT-HASH: c8fd8fdeae438699
 
 ## Blocking
-(none)
-
-## Polish
 - none
 
+## Polish
+1. lessons/FY3/fy3-8/answers.py comments still use ΔL, L₀; rename to Δl, l₀.
+
 ## Checked
-- Translation review against the reviewed Finnish (en): new task fy3-8-L2-08 in exercises.json and solutions.md compared with content/fi/FY3/fy3-8: choices and correct flag, the four feedbacks, ratio 0.5 · 3 = 1.5, the 0.5 mm / 0.7 mm estimate (12e-6 · 4.0 m · 10 K = 0.48 mm, 12e-6 · 2.0 m · 30 K = 0.72 mm), solutions.md; all equal to the Finnish.
-- Same physics, numbers, formulas, units, tolerance and correct answer (fi: correct option ΔL_B = 1.5 ΔL_A (0.5 · 3), distractors 3x, 1x, 0.5x).
-- Terms and notation as in the rest of the set; no physics added or lost.
-- check_i18n.py: nothing for fy3-8; build.py fy3-8 succeeds.
+Recomputed with my own formulas: L1-01 2,88→2,9 mm; L1-02 −51,75→−52 mm; L1-03 0,85; L1-04 0,84 l; L1-05 0,34; L1-08 2,3; L2-01 52 m; L2-02 3,0 cm³; L2-03 36 °C; L3-01 120 °C; L3-02 20 µm; L3-03 457→460 cm³: all within tolerance. Δl, l₀ used consistently in tasks and solutions; numbers unchanged by the diff.

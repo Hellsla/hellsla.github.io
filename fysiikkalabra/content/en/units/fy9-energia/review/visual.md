@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 42b97ceb682a0fd0
-
-Delta review (solution practice, 2026-11-12) of the version passed before.
+CONTENT-HASH: 0f8592564d0f83bc
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 3ee87f93108036ab.
 
 ## Blocking
-None. Built fy9-energia (en) with ?ratkaisut=1, every details element opened, at 390 and 1280 px. No .katex-error, no script errors; the changed Sijoitus, Kaava and Vastaus lines render with upright subscripts and units, thin spaces and \cdot (no x, no \times); decimal comma in fi and fi-easy, decimal point in en; the new symbol definitions ("missä ...") read naturally and the sentences are in the right language.
+(none)
 
 ## Polish
-1. Page-level horizontal overflow at 390 px when all details are open (193 px): long inline-math Sijoitus or answer lines in .reveal or .answer blocks do not wrap or scroll. Verified in the previous version (git 761b6673) for energia, voimat, sahkokentta and mittaaminen, so it is not a regression of this change (mittaaminen is about 40 px wider now). Fix when convenient: break such a substitution into a display line (\begin{aligned}) or let .reveal/.answer have overflow-x:auto.
+- [Minor] sovella/solutions.md part d Principle: $E = E_0 + kT$ is the part c line with $T_0 = 0\,{}^\circ\text{C}$; one clause saying so would link the two parts.
+
+## Checked
+Source-level delta review of the diff (the changes are inline formulas and short text, no figure or layout changes, so no new captures were taken). Looked at: sovella/solutions.md parts c, d and the wind-turbine model answer: $E = E_0 + k(T - T_0)$, $E_\text{other}$, $P_\text{avg} = kNP_\text{nom}$; fractions, subscripts and units render-safe in the source. No clash between the #522 notation and the #523 symbols found; no duplicated derivation; every changed line has balanced `$` and braces; units upright with a thin space.

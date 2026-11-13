@@ -156,8 +156,8 @@ In the exam, follow the energy first: where it comes from, where it goes and whe
 
 ### Temperature and internal energy
 
-```kaavat
-temperature in kelvins :: T = \theta + 273.15
+```latex
+T = \theta + 273.15
 ```
 
 where $T$ is the temperature in kelvins ($\text{K}$) and $\theta$ in degrees Celsius (${}^\circ\text{C}$). A temperature difference is the same in kelvins and in degrees Celsius, but ratios of temperatures are calculated in kelvins. Internal energy is changed by heat and work:
@@ -258,8 +258,8 @@ This gives the answer to the opening question. Warming a kilogram of snow from $
 
 In an insulated container energy is conserved:
 
-```kaavat
-heat balance :: Q_\text{released} = Q_\text{received}
+```latex
+Q_\text{released} = Q_\text{received}
 ```
 
 When ice and water are mixed, first compare whether the heat the water releases as it cools to $0\,{}^\circ\text{C}$ is enough to warm the ice to $0\,{}^\circ\text{C}$ and melt it. If it is, all the ice melts and the final temperature is at least $0\,{}^\circ\text{C}$. If it is not, some ice is left and the temperature is exactly $0\,{}^\circ\text{C}$. Very cold ice can also freeze some or all of the water.
@@ -275,8 +275,8 @@ where $\alpha$ and $\gamma$ are the coefficients of linear and volume expansion 
 
 Heat is transferred by conduction, convection and radiation, with a net flow from the warmer body to the colder one. The power conducted through a building element is
 
-```kaavat
-heat flow through a building element :: P = UA\Delta T
+```latex
+P = UA\Delta T
 ```
 
 where $U$ is the U-value ($\text{W/(m}^2\cdot\text{K)}$), $A$ the area ($\text{m}^2$) and $\Delta T$ the difference between the indoor and outdoor temperatures ($\text{K}$). The formula holds when the temperatures stay constant.

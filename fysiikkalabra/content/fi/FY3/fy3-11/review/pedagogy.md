@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 24f3551fe9d8cba8
+CONTENT-HASH: 5d46ccf73881879d
 
 ## Blocking
-- none
+
+None. W = pΔV is now the magnitude of compression work and P_a is defined in the worked example; notation is followable.
 
 ## Polish
-- none
+
+None.
 
 ## Checked
-Judged the change since the passed version: only the source of the W_k label in the sim moved to the language file with identical Finnish/TeX output; no visible change on the page, controls, experiments, wording or workload. Inquiry tests (65 passed) and layout checks at 360/768/1280 px ok, so the earlier pedagogy PASS stands.
+
+Diff since previous PASS and the MAFY notation in lesson/solutions; symbols defined where first used; numbers and levels unchanged.

@@ -1,19 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 0471406a46280667
-Mode: delta (exercises, fi-easy), round 1. Changed: new task L2-08, situation/question paragraph splits, solutions.md for L2-08.
+CONTENT-HASH: c18c297dc5096d89
 
 ## Blocking
-(none)
+None. The fixes read well and are consistent with the lesson symbols.
 
 ## Polish
-- (none)
+None new (earlier polish unchanged).
 
 ## Checked
-- Rendered preview/fi-easy/fy3-11.html at 390 px with my own script (scratch trvis3x): fy3-11-L2-08 (efficiency, choice then reason) and the split tasks L2-01, L3-01..04, in default and answered/opened state.
-- The new L2-08 card opened in full: task text, options or statements, feedback blocks, Vastaus/Answer and model solution; formulas, units, fractions and the units with \cdot render as KaTeX, no red source, no clipping or horizontal overflow.
-- The paragraph splits read as situation, then data, then the question; nothing sideways when feedback opens.
-- Plain language holds: short sentences, terms explained where needed (e.g. "eli ei muutu", "massavirta eli kuinka monta kilogrammaa…"); case endings after the maths are correct ("$0\,{}^\circ\text{C}$:seen", "$2{,}00\,\textsf{l}$:n"). Decimal comma used throughout.
-- Figure and graph tasks were not changed by the diff; contact sheets are not used in this exercises-only delta.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+Opened L3-01 solution (Periaate: η = P_a/P_o, P_o = P_a/η, symbols defined) at 390 px, solution open: KaTeX fine. Language: fi-easy; no clipping in the changed places.

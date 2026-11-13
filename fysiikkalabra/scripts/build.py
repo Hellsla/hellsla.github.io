@@ -305,7 +305,8 @@ def render_md(text, **kw):
     ```latex fences become $$...$$; every $$...$$ and $...$ is swapped for a token first,
     so underscores, backslashes and asterisks inside maths are not read as markdown."""
     text = re.sub(r"```latex\n(.*?)```", lambda m: "\n$$" + m.group(1).strip() + "$$\n", text, flags=re.S)
-    text = kaavat.as_html(text)                                                    # ```kaavat: named formulas as a formula table
+    text = kaavat.as_html(text, T("lesson.extra_formula"))                         # ```kaavat: named formulas as a formula table
+    text = kaavat.johda_html(text, T("lesson.derive"), T("lesson.derive_show"))   # ```johda: "Johda itse", the derivation behind a button
     text, fbds = fbdspec.render(text)                                              # ```voimakuvio specs -> drawn diagrams
     text, figrefs = figcat.embed(text)                                             # a model figure by id inside a solution step
     maths = []

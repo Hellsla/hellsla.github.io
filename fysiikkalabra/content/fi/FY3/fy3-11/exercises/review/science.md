@@ -1,17 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: b06084335558b3a5
-Round: 2
+CONTENT-HASH: 2b666f0278dfd4e9
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- The distractors still do not catch the lesson's own warned mistake (an almost perfect heat engine); the true-but-irrelevant reason (both below 100 %) only touches it. Optional, carried over.
+1. L2-04 still uses P_in and P_mek/P_mech (defined in its Formula line); MAFY's P_o/P_a would match L3-01 and fy3-15.
+2. L3-02 writes ε = Q/W with Q the heat into the house; Q₁ would match the lesson's ε = Q₁/W.
 
 ## Checked
-- Round-1 Polish resolved: reason 2 now reads "Kone A ottaa enemmän lämpöä $Q_1$, joten sillä on enemmän muutettavaa työksi: $W = Q_1 - Q_2$." The correct reason is no longer the only one with a formula.
-- The new reason is still really wrong: W is given as the same 120 kJ for both engines, so A's extra Q₁ goes to Q₂ (280 kJ against 180 kJ). Its unchanged feedback says exactly this, and the formula it cites is the lesson's own W = Q₁ − Q₂ (true, but misused).
-- Recomputed: η_A = 0,30, η_B = 0,40; exactly one correct choice (B) and one correct reason; the solution is unchanged and right.
-- Commit 6bbde30c5 changes only this line in fy3-11; answers.py and the other tasks unchanged.
-- Text only this round: I did not open the new captures. The added inline formula "W = Q₁ − Q₂" is short (about 100 px).
-- Hash identical at start and end.
+Fix: L3-01 Principle now states η = P_a/P_o with P_a the plant's useful power and P_o its fuel power, then P_o = P_a/η; consistent with fy3-15. Recomputed L3-01: 96/0,400 + 180/0,900 − 320 = 120 MW; L3-02 ΔE = Q₂ = 16,0 − 6,40 = 9,6 MWh; answers.py output unchanged (L1-01 12,0; L2-03 500 J; L2-04 720 kW; L3-04 2,74; L3-05 0,74 kJ). First-law sign: L2-03 and L3-05 define W as work done on the air and use ΔU = Q − pΔV; the gas's own work pΔV is labelled. Only the L3-01 Principle line changed; no number or answer changed. Languages agree.

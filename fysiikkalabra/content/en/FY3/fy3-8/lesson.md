@@ -169,17 +169,25 @@ Liquids usually expand clearly more than solids, and gases much more still. The 
 Water is an exception: between $0\,{}^\circ\text{C}$ and $4\,{}^\circ\text{C}$ it contracts when it warms up, so its density is greatest at about $4\,{}^\circ\text{C}$. The densest, 4-degree water sinks to the bottom, and colder water stays at the surface and freezes. That is why a lake freezes from the surface, and even in winter there is water at about 4 °C at the bottom, where fish survive.
 
 ## Formula: Thermal expansion of length and volume
-When the temperature of an object changes by $\Delta T$, its length changes by
-```latex
-\Delta L = \alpha L_0 \Delta T
+When the temperature of an object changes by $\Delta T$, its length is
+```kaavat
+linear thermal expansion :: l = l_0(1 + \alpha \Delta T)
 ```
-where $\Delta L$ is the change in length (m), $\alpha$ is the coefficient of linear expansion (1/K), $L_0$ is the original length (m) and $\Delta T$ is the change in temperature (K). The coefficient of linear expansion $\alpha$ tells you what fraction of its length an object lengthens when its temperature rises by $1\,\text{K}$. So the change is proportional to the original length: a rod twice as long has twice as many gaps between particles, so it lengthens twice as much. The number 12 in the table means that $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$. The new length is $L = L_0 + \Delta L$. When the object cools, $\Delta T$ is negative, so $\Delta L$ is also negative, that is, the object gets shorter.
+where $l$ is the length after the change in temperature (m), $l_0$ is the original length (m), $\alpha$ is the coefficient of linear expansion (1/K) and $\Delta T$ is the change in temperature (K). The coefficient of linear expansion $\alpha$ tells you what fraction of its length an object lengthens when its temperature rises by $1\,\text{K}$. The number 12 in the table means that $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$.
 
-The change in the volume of liquids (and of gases at constant pressure) is calculated in the same way:
+Subtracting the original length from the new length gives the change in length, the form used in this chapter's calculations:
 ```latex
-\Delta V = \gamma V_0 \Delta T
+\Delta l = l - l_0 = \alpha l_0 \Delta T
 ```
-where $\Delta V$ is the change in volume (m³), $\gamma$ is the coefficient of volume expansion (1/K) and $V_0$ is the original volume (m³). For a solid $\gamma \approx 3\alpha$, because an object expands in all three directions: length, width and height each grow in proportion $\alpha \Delta T$, and when the changes are small, the relative growth in volume is almost the sum of these, $3\alpha \Delta T$. The formulas are good models when the change in temperature is moderate. For solids that means, for example, at most about a hundred kelvins. For liquids, especially water, the coefficient $\gamma$ changes clearly with temperature, so the values in the table at $20\,{}^\circ\text{C}$ are used only close to $20\,{}^\circ\text{C}$.
+So the change is proportional to the original length: a rod twice as long has twice as many gaps between particles, so it lengthens twice as much. When the object cools, $\Delta T$ is negative, so $\Delta l$ is also negative, that is, the object gets shorter.
+
+The volume of liquids (and of gases at constant pressure) is calculated in the same way:
+```kaavat
+volume thermal expansion :: V = V_0(1 + \gamma \Delta T)
+```
+where $V$ is the volume after the change in temperature (m³), $V_0$ is the original volume (m³) and $\gamma$ is the coefficient of volume expansion (1/K). Likewise, the change in volume is $\Delta V = V - V_0 = \gamma V_0 \Delta T$.
+
+For a solid $\gamma \approx 3\alpha$, because an object expands in all three directions: length, width and height each grow in proportion $\alpha \Delta T$, and when the changes are small, the relative growth in volume is almost the sum of these, $3\alpha \Delta T$. The formulas are good models when the change in temperature is moderate. For solids that means, for example, at most about a hundred kelvins. For liquids, especially water, the coefficient $\gamma$ changes clearly with temperature, so the values in the table at $20\,{}^\circ\text{C}$ are used only close to $20\,{}^\circ\text{C}$.
 
 <svg data-fig="volume-expansion" viewBox="0 0 600 350" role="img" aria-label="Thermal expansion of the volume of a liquid. The same amount of liquid in a flask with a thin tube as its neck: when cold, the volume of the liquid is V₀ and the surface is lower; when warm, the liquid has expanded and the surface rises in the thin tube. The change in volume ΔV is marked in the tube. The expansion is drawn exaggerated." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy38-liq-c" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><linearGradient id="fy38-liq-w" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2a69c"/><stop offset="1" stop-color="#c92a2a"/></linearGradient></defs>
@@ -234,22 +242,22 @@ where $\Delta V$ is the change in volume (m³), $\gamma$ is the coefficient of v
 | petrol | 0.95 |
 | air (at constant pressure) | 3.4 |
 
-<svg data-fig="rod-expansion" viewBox="0 0 600 300" role="img" aria-label="The same rod cold and warm: the warm rod is longer, and the change in length ΔL is marked at the end of the rod. The rod is fixed to a wall at its left end. The expansion is drawn exaggerated." style="max-width:100%;font-size:24px">
+<svg data-fig="rod-expansion" viewBox="0 0 600 300" role="img" aria-label="The same rod cold and warm: the warm rod is longer, and the change in length Δl is marked at the end of the rod. The rod is fixed to a wall at its left end. The expansion is drawn exaggerated." style="max-width:100%;font-size:24px">
   <defs><pattern id="fy38-hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="10" stroke="#6b7480" stroke-width="1.5"/></pattern><linearGradient id="fy38-cold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#d0e6fb"/></linearGradient><linearGradient id="fy38-warm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f2a69c"/></linearGradient></defs>
   <rect x="36" y="56" width="14" height="164" fill="url(#fy38-hatch)"/>
   <line x1="50" y1="56" x2="50" y2="220" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
   <foreignObject x="66" y="23.5" width="233" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\text{cold, temperature } T_0$</div></foreignObject>
   <rect x="50" y="60" width="400" height="40" fill="url(#fy38-cold)" stroke="#1f2933" stroke-width="2"/>
-  <foreignObject x="233.5" y="65.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$L_0$</div></foreignObject>
+  <foreignObject x="233.5" y="65.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$l_0$</div></foreignObject>
   <foreignObject x="66" y="111.5" width="270" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$\text{warm, temperature } T_0 + \Delta T$</div></foreignObject>
   <rect x="50" y="148" width="470" height="40" fill="url(#fy38-warm)" stroke="#1f2933" stroke-width="2"/>
-  <foreignObject x="250" y="153.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$L_0 + \Delta L$</div></foreignObject>
+  <foreignObject x="250" y="153.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$l_0 + \Delta l$</div></foreignObject>
   <line x1="450" y1="54" x2="450" y2="218" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <line x1="485" y1="206" x2="461" y2="206" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <path d="M450,206 L462,200.5 L462,211.5 Z" fill="#1f2933" stroke-linejoin="round"/>
   <line x1="485" y1="206" x2="509" y2="206" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <path d="M520,206 L508,211.5 L508,200.5 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <foreignObject x="468.5" y="221.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\Delta L$</div></foreignObject>
+  <foreignObject x="468.5" y="221.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\Delta l$</div></foreignObject>
   <foreignObject x="330" y="271.5" width="258" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$\text{expansion exaggerated}$</div></foreignObject>
 </svg>
 
@@ -258,32 +266,32 @@ The deck of a steel bridge is $120\,\text{m}$ long. At the location the temperat
 
 <!-- vaihe -->
 
-**Given and find.** The length of the deck is $L_0 = 120\,\text{m}$, $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ for steel (given in the problem), the lowest temperature is $-30\,{}^\circ\text{C}$ and the highest $+30\,{}^\circ\text{C}$. The question is the change $\Delta L$ in the length of the deck over the whole year.
+**Given and find.** The length of the deck is $l_0 = 120\,\text{m}$, $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ for steel (given in the problem), the lowest temperature is $-30\,{}^\circ\text{C}$ and the highest $+30\,{}^\circ\text{C}$. The question is the change $\Delta l$ in the length of the deck over the whole year.
 
 <!-- vaihe -->
 
-**Principle.** The vibration of the particles of a solid gets stronger when it warms up and their average distance grows, so the deck gets longer. Steel stays solid all year and the deck is free to expand, so the change in length is proportional to the initial length and the change in temperature: $\Delta L = \alpha L_0 \Delta T$.
+**Principle.** The vibration of the particles of a solid gets stronger when it warms up and their average distance grows, so the deck gets longer. Steel stays solid all year and the deck is free to expand, so the change in length is proportional to the initial length and the change in temperature: $\Delta l = \alpha l_0 \Delta T$.
 
 <!-- vaihe -->
 
 **Rearranged formula.** The quantity asked for is already alone on the left side of the formula, so the formula does not need rearranging:
 ```latex
 \begin{aligned}
-&\Delta L = \alpha L_0 \Delta T \\
+&\Delta l = \alpha l_0 \Delta T \\
 &\Delta T = T_\text{max} - T_\text{min}
 \end{aligned}
 ```
 
 <!-- vaihe -->
 
-**Unit conversions.** The change in temperature is the same in degrees Celsius and in kelvins, so $\Delta T = 30\,{}^\circ\text{C} - (-30\,{}^\circ\text{C}) = 60\,\text{K}$. The lengths are in metres, so $\Delta L$ comes out in metres; finally $1\,\text{m} = 1000\,\text{mm}$.
+**Unit conversions.** The change in temperature is the same in degrees Celsius and in kelvins, so $\Delta T = 30\,{}^\circ\text{C} - (-30\,{}^\circ\text{C}) = 60\,\text{K}$. The lengths are in metres, so $\Delta l$ comes out in metres; finally $1\,\text{m} = 1000\,\text{mm}$.
 
 <!-- vaihe -->
 
 **Substitution.** Substitute the values with their units:
 ```latex
 \begin{aligned}
-\Delta L &= \alpha L_0 \Delta T \\
+\Delta l &= \alpha l_0 \Delta T \\
 &= 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 120\,\text{m} \cdot 60\,\text{K} \\
 &= 0.0864\,\text{m} \\
 &= 86.4\,\text{mm}
@@ -303,7 +311,7 @@ Many people think that when a substance warms up, its particles themselves grow.
 
 ## Summary
 - When a substance warms up, the vibration of its particles gets stronger and their average distance grows, so the substance expands.
-- The change in length is $\Delta L = \alpha L_0 \Delta T$ and the change in volume is $\Delta V = \gamma V_0 \Delta T$. For a solid $\gamma \approx 3\alpha$.
+- After a change in temperature the length is $l = l_0(1 + \alpha \Delta T)$ and the volume $V = V_0(1 + \gamma \Delta T)$. So the change in length is $\Delta l = \alpha l_0 \Delta T$ and the change in volume is $\Delta V = \gamma V_0 \Delta T$. For a solid $\gamma \approx 3\alpha$.
 - Liquids expand more than solids, and gases much more than liquids.
 - An object expands in all directions in the same proportion, so holes also get bigger.
 - Water is an exception: its density is greatest at about $4\,{}^\circ\text{C}$.

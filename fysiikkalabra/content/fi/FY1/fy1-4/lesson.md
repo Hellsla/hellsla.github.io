@@ -231,8 +231,8 @@ Lineaarisen mallin kuvaaja on suora, jonka yhtälö on
 y = kx + b
 ```
 missä $y$ on pystyakselin suure, $x$ vaaka-akselin suure, $k$ kulmakerroin ja $b$ vakiotermi eli suoran ja pystyakselin leikkauskohta. Kulmakerroin lasketaan suoralta valituista kahdesta pisteestä $(x_1,\ y_1)$ ja $(x_2,\ y_2)$:
-```latex
-k = \frac{\Delta y}{\Delta x} = \frac{y_2 - y_1}{x_2 - x_1}
+```kaavat
+kulmakerroin :: k = \frac{\Delta y}{\Delta x} = \frac{y_2 - y_1}{x_2 - x_1}
 ```
 missä $\Delta y$ on pisteiden välinen $y$:n muutos ja $\Delta x$ niiden välinen $x$:n muutos. Kulmakertoimen yksikkö on $y$:n yksikkö jaettuna $x$:n yksiköllä: jos $y$ on metreinä ja $x$ sekunteina, $k$:n yksikkö on $\text{m/s}$.
 

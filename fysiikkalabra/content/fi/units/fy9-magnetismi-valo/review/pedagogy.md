@@ -1,8 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 2f918b5f8c97ae6a
+CONTENT-HASH: 0944d5d3eb93fbe8
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at e02ff82901bd9b74.
 
-Delta review (solution practice, 2026-11-12) of the version passed before.
+## Blocking
+(none)
 
-Loss share RP/U^2 and the dB formula with beta, N_j, A_j, and grating d = 1/N with the general lambda = sin(arctan(x/L))/(kN) are well staged; no extra burden for the student.
+## Polish
+(none)
 
-Checked: diff since 761b6673, symbols defined, solved expression equals Sijoitus, answers.py output, tasks.json answer/criteria, cross-language number match.
+## Checked
+Linjahäviö $RP/U^2$, kuitu $A = aL + N_\text{j}A_\text{j}$ ja $\beta$; hila: $d = 1/N$ ja $\lambda = \sin(\tan^{-1}(x/L))/(kN)$ symboleissa. $N$ = viivoja pituusyksikköä kohti on sanottu, ei sekoitu. Compared the diff hunks against the #522 notation and the unit text; no formula name or symbol of #522 is contradicted by a #523 solution, no derivation duplicated, LaTeX in the hunks balanced. Sample solutions now solve the asked quantity in symbols before the numbers (CLAUDE.md Lesson form 7), which supports the learning path.
