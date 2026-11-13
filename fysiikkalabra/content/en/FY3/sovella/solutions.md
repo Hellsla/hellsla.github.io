@@ -83,9 +83,9 @@
 **Given:** power received by the water $P \approx 237\,\text{W}$, radiation power per area $800\,\text{W/m}^2$ and area $A = 0.50\,\text{m}^2$
 **Find:** the efficiency $\eta$ of the collector at the start of the measurement, when there are no losses yet
 **Principle:** Efficiency is the ratio of useful power to incoming power. The useful power is the power from part b that the water receives at the start before losses, and the incoming power is the power of the radiation hitting the surface of the collector.
-**Formula:** $P_\text{in} = 800\,\text{W/m}^2 \cdot A$ and $\eta = \dfrac{P}{P_\text{in}}$
+**Formula:** $P_\text{o} = 800\,\text{W/m}^2 \cdot A$ and $\eta = \dfrac{P_\text{a}}{P_\text{o}}$, where the output power $P_\text{a} = P$ is the power the water gets and the input power $P_\text{o}$ the power of the radiation reaching the collector
 **Conversions:** Not needed, the powers are in watts.
-**Substitution:** $P_\text{in} = 800\,\text{W/m}^2 \cdot 0.50\,\text{m}^2 = 400\,\text{W}$ and $\eta = \dfrac{237\,\text{W}}{400\,\text{W}} = 0.59$
+**Substitution:** $P_\text{o} = 800\,\text{W/m}^2 \cdot 0.50\,\text{m}^2 = 400\,\text{W}$ and $\eta = \dfrac{237\,\text{W}}{400\,\text{W}} = 0.59$
 **Answer:** $\eta \approx 0.59$, that is, about $60\,\%$, two significant figures as in the power from part b.
 **Reasonableness:** The efficiency is at most one, because the water cannot receive more power than arrives at the collector. In a real collector it stays below one, because part of the radiation is reflected from the glass and the box, so about $60\,\%$ is believable for a simple collector.
 

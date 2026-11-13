@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 2ba6163d92a5063d
+CONTENT-HASH: 68419fe71066d43a
 
 ## Blocking
-
-None. L3-01 now defines eta = P_a/P_o and P_o = P_a/eta; the solution's principle is learnable.
-
-## Polish
-
 None.
 
-## Checked
+## Polish
+- L1-09 and L2-09 are good level fits. Optional: L1-09 solution could say why 4 % tolerance (atm 101325 vs 1e5 rounding).
 
-Diff since previous PASS and the MAFY notation in lesson/solutions; symbols defined where first used; numbers and levels unchanged.
+## Checked
+Changed symbols (P_a/P_o, Q1) and the added exercises read in full: solutions follow the staged format, symbols are defined where used, added L1-09 (lookup) and L2-09 (figure) match their levels and chapter.

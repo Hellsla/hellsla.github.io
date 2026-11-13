@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 4a82538e3cf486b3
+CONTENT-HASH: e28822a605b9fc27
 
 ## Blocking
-None. The fixes read well and are consistent with the lesson symbols.
+- none
 
 ## Polish
-None new (earlier polish unchanged).
+- none
 
 ## Checked
-Opened L3-03 solution (Annettu Q₁, Kaava with ε = Q₁/W, W = Q₁/ε, Q₁ and W explained) at 390 px, solution open: KaTeX fine. Language: fi-easy; no clipping in the changed places.
+Delta: L2-09 at 390 px (fi, solutions open): P_o in text matches the figure label P_o; layout intact.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4
