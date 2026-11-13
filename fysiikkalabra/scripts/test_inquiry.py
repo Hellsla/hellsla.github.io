@@ -233,6 +233,15 @@ def restore_checks(pg, url, lid, ex, loc, want):
     check(f"{eid}: the stored measurements come back on a new visit, the same rows", got == want, f"{got} != {want}")
     check(f"{eid}: a restored table is not written back to localStorage", writes == 0, f"{writes} writes")
     check(f"{eid}: Kopioi taulukko is on for a restored table", qloc.locator(".exp-copy").is_enabled())
+    # the icon buttons (teacher 2026-11-13): found by their aria-label, 40 px square at least, all four buttons on one row
+    for cls in ("exp-reset", "exp-copy"):
+        b = qloc.locator("." + cls); box = b.bounding_box()
+        check(f"{eid}: .{cls} is an icon button with aria-label, title and an svg, at least 40x40",
+              bool(b.get_attribute("aria-label")) and b.get_attribute("title") == b.get_attribute("aria-label") and b.locator("svg").count() == 1
+              and box and box["width"] >= 39.5 and box["height"] >= 39.5, str(box))
+    tops = qloc.locator(".exp-controls button").evaluate_all("(bs) => bs.map((b) => Math.round(b.getBoundingClientRect().top))")
+    check(f"{eid}: the four buttons share one row at 1280 px", len(set(tops)) == 1, str(tops))
+    check(f"{eid}: Alkutila, Vakiona and Muutetaan are three rows of their own", qloc.locator(".exp-setup > div").count() == 3)
     q.close()
 
 

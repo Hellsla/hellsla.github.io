@@ -497,6 +497,12 @@ def question_html(q, md, lid, aid):
     return explain_html(q, md, f"{aid}-q")
 
 
+
+_SVG = '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">'
+ICON_RESET = _SVG + '<path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>'   # ↺
+ICON_COPY = _SVG + '<rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></svg>'
+
+
 def experiment_html(a, md, lid):
     units = a.get("units", {}); names = a.get("names", {})
     nm = lambda k: tex_name(names.get(k, k))   # the status line typesets its $…$ (inquiry.js)
@@ -528,10 +534,12 @@ def experiment_html(a, md, lid):
     return (f'<div class="experiment" data-initial=\'{esc(json.dumps(a["initial"]))}\' data-locked=\'{esc(json.dumps(a["locked"]))}\' '
             f'data-vary="{esc(a["vary"])}" data-vary-name="{nm(a["vary"])}" data-locked-names=\'{esc(json.dumps([_h.unescape(tex_name(names.get(k, k))) for k in a["locked"]], ensure_ascii=False))}\' data-measure=\'{esc(measure)}\' data-min="{a.get("min", 2)}"' + (f' data-words=\'{esc(json.dumps(words, ensure_ascii=False))}\'' if words else "") + '>'
             f'<div class="intro">{md(a["intro"])}</div>'
-            f'<p class="exp-setup"><strong>{T("inquiry.setup")}</strong> {init}. <strong>{T("inquiry.locked")}</strong> {locked}. <strong>{T("inquiry.varied")}</strong> {tn(a["vary"])}.</p>'
+            f'<dl class="exp-setup"><div><dt>{T("inquiry.setup").rstrip(":")}</dt><dd>{init}</dd></div>'
+            f'<div><dt>{T("inquiry.locked").rstrip(":")}</dt><dd>{locked}</dd></div>'
+            f'<div><dt>{T("inquiry.varied").rstrip(":")}</dt><dd>{tn(a["vary"])}</dd></div></dl>'
             f'<div class="exp-controls"><button type="button" class="exp-start">{T("inquiry.exp_start")}</button><button type="button" class="exp-record">{T("inquiry.exp_record")}</button>'
-            f'<button type="button" class="exp-reset">{T("inquiry.exp_reset")}</button>'
-            f'<button type="button" class="exp-copy" disabled>{T("inquiry.exp_copy")}</button>'
+            f'<button type="button" class="exp-reset exp-icon" aria-label="{esc(T("inquiry.exp_reset"))}" title="{esc(T("inquiry.exp_reset"))}">{ICON_RESET}</button>'
+            f'<button type="button" class="exp-copy exp-icon" aria-label="{esc(T("inquiry.exp_copy"))}" title="{esc(T("inquiry.exp_copy"))}" disabled>{ICON_COPY}</button>'
             f'<span class="exp-export-status" role="status" aria-live="polite"></span></div>'   # the table's export (teacher 2026-11-03, templates/inquiry.js part 3)
             f'<table class="exp-table"><caption>{T("inquiry.exp_table")}</caption><thead><tr><th data-plain="{esc(vary_plain)}">{tn(a["vary"])}</th>{cols}</tr></thead><tbody></tbody></table>'
             f'<p class="exp-status" role="status" aria-live="polite"></p>{q}</div>')
