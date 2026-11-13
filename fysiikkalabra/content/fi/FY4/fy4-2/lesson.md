@@ -655,7 +655,7 @@ t = \frac{-v_0 + \sqrt{v_0^2 + 2a\,\Delta x}}{a}
 Moni ajattelee, että kiihtyvyys on nolla aina, kun nopeus on nolla. Ylös heitetty pallo on lakipisteessä hetken paikallaan, mutta sen nopeus muuttuu koko ajan: juuri ennen lakipistettä se liikkuu ylöspäin ja heti sen jälkeen alaspäin. Kun ilmanvastus on pieni, kiihtyvyys on koko lennon ajan $g = 9{,}81\,\text{m/s}^2$ alaspäin. Toinen virhe on pitää negatiivista kiihtyvyyttä aina hidastumisena: vauhti pienenee vain, kun kiihtyvyys ja nopeus ovat vastakkaissuuntaiset. Kolmas virhe on ajatella, että raskas kappale putoaa nopeammin kuin kevyt. Kun ilmanvastus on pieni, molemmat putoavat samalla kiihtyvyydellä.
 
 ## Tiivistelmä
-- Kiihtyvyys $a = \tfrac{\Delta v}{\Delta t}$ kertoo nopeuden muutoksen aikayksikössä, yksikkö $\text{m/s}^2$. Se on vektorisuure, ja suoralla etumerkki kertoo suunnan.
+- Keskikiihtyvyys $a_\text{k} = \tfrac{\Delta v}{\Delta t}$ kertoo nopeuden muutoksen aikayksikössä, yksikkö $\text{m/s}^2$. Kun kiihtyvyys on vakio, $a = a_\text{k}$. Kiihtyvyys on vektorisuure, ja suoralla etumerkki kertoo suunnan.
 - Vauhti kasvaa, kun kiihtyvyys ja nopeus ovat samansuuntaiset, ja pienenee, kun ne ovat vastakkaissuuntaiset.
 - Tasaisesti kiihtyvässä liikkeessä $(t,v)$-kuvaaja on suora, jonka kulmakerroin on kiihtyvyys ja jonka ja aika-akselin väliin jäävä etumerkillinen pinta-ala on siirtymä; aika-akselin alapuolinen osa ($v < 0$) lasketaan negatiivisena.
 - $v = v_0 + a\,t$ ja $x = x_0 + v_0\,t + \tfrac{1}{2}\,a\,t^2$. $(t,x)$-kuvaaja on käyrä, ja hetkellinen nopeus on sen tangentin kulmakerroin.

@@ -1,15 +1,10 @@
-VERDICT: PASS
-CONTENT-HASH: eb0d98eb0e1b903e
-
-Light delta review (teacher 2026-11-07): diff origin/main..f9cecc6 and what it touches.
-
+VERDICT: FAIL
+CONTENT-HASH: 4773c1d9057101b7
 ## Blocking
-(none)
-
+1. (B, consistency) lesson.md, Tiivistelmä/Summary first bullet (line 658): still states $a = \tfrac{\Delta v}{\Delta t}$ as the acceleration, unconditionally, while the formula section now defines $a_\text{k} = \Delta v/\Delta t$ as the average acceleration and $a = a_\text{k}$ only for constant acceleration. Fix: "Keskikiihtyvyys $a_\text{k} = \tfrac{\Delta v}{\Delta t}$ … ; kun kiihtyvyys on vakio, $a = a_\text{k}$." (same in en: average acceleration $a_\text{k}$). The concept card `fy4-kiihtyvyys` (kortit/fy4.json, kortit/en/fy4.json) has the same $a = \Delta v/\Delta t$ while `fy4-keskikiihtyvyys` has no formula: move it there as $a_\text{k}$.
 ## Polish
-(none)
 
 ## Checked
-- lesson.md:648 Tulos: 2 s.f. limited by 4,0 m/s and 0,50 m/s²; 60 m now exact per teacher's rule (2026-11-07): fixes the earlier Polish item
-- Recomputed t = (−4,0 + √(16 + 60))/0,50 = 9,44 s, v = 8,72 m/s, other root −25,4 s
-- lesson.md:660 summary: signed area between (t,v) line and time axis = displacement, part below axis negative: consistent with theory and figure
+- Formula section: $a_\text{k} = \Delta v/\Delta t$ (MAFY keskikiihtyvyys), $a = a_\text{k}$ for constant $a$, $v = v_0 + at$, $x = x_0 + v_0t + \tfrac12at^2$ with names and units; correct and as MAFY.
+- Worked example and inquiry (constant $a$; $-2{,}0\,\text{m/s}^2$ feedback) remain valid with $a$; numbers unchanged (lesson-answers.py).
+- fi, fi-easy, en say the same.

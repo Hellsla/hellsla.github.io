@@ -657,7 +657,7 @@ Moni ajattelee, että kiihtyvyys on nolla aina, kun nopeus on nolla. Ylös heite
 Toinen virhe on ajatella, että negatiivinen kiihtyvyys on aina hidastumista. Vauhti pienenee vain, kun kiihtyvyys ja nopeus ovat vastakkaissuuntaiset. Kolmas virhe on ajatella, että raskas kappale putoaa nopeammin kuin kevyt. Kun ilmanvastus on pieni, molemmat putoavat samalla kiihtyvyydellä.
 
 ## Tiivistelmä
-- Kiihtyvyys $a = \tfrac{\Delta v}{\Delta t}$ kertoo nopeuden muutoksen sekunnissa. Yksikkö on $\text{m/s}^2$. Kiihtyvyys on vektorisuure, ja suoralla etumerkki kertoo suunnan.
+- Keskikiihtyvyys $a_\text{k} = \tfrac{\Delta v}{\Delta t}$ kertoo nopeuden muutoksen sekunnissa. Yksikkö on $\text{m/s}^2$. Jos kiihtyvyys on vakio, $a = a_\text{k}$. Kiihtyvyys on vektorisuure, ja suoralla etumerkki kertoo suunnan.
 - Vauhti kasvaa, kun kiihtyvyys ja nopeus ovat samansuuntaiset. Vauhti pienenee, kun ne ovat vastakkaissuuntaiset.
 - Tasaisesti kiihtyvässä liikkeessä $(t,v)$-kuvaaja on suora. Sen kulmakerroin on kiihtyvyys. Suoran ja aika-akselin väliin jäävä etumerkillinen pinta-ala on siirtymä. Aika-akselin alapuolinen osa ($v < 0$) lasketaan negatiivisena.
 - Yhtälöt ovat $v = v_0 + a\,t$ ja $x = x_0 + v_0\,t + \tfrac{1}{2}\,a\,t^2$. $(t,x)$-kuvaaja on käyrä. Hetkellinen nopeus on käyrän tangentin kulmakerroin.
