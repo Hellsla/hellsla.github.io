@@ -1,12 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 0d9fe729bcb84228
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: 24b052564dbac276
+SCOPE: delta added-exercise from fe4a6058f2a79cef base 81db4a6fd727
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- exercises.json fy1-7-L1-09 — near-identical to fy1-4-L1-09 (mass from density and volume of a solid, only the metal and unit differ); consider a different quantity (e.g. volume from mass, or a liquid).
 
 ## Checked
-- Diff only: 'luvun tiheystaulukko' added where the table is needed (helps), sinker/line wording, units 'ilmoitettu', reasonableness checks rewritten (concrete 1 m3 -> 0.75 m3 staged); graph-task check 'two points below, three above' verified against data (least-squares slope 2.705: 3 above, 2 below).
+- fy1-7-L1-09: m = rho V with a cm³ to m³ conversion; good level 1.
+- Solution has all steps (given, asked, principle, formula, conversions, substitution, answer, sanity check); arithmetic verified.
+- Whole-set fit: the MAFY lookup task adds a new kind (table lookup) at level 1; no repeat of the worked example.
+- Finnish and reading level fine; phone readability not affected (short calculation).

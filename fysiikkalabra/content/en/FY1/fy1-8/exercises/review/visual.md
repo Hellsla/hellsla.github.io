@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: e6cb851f7e223149
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-11-09: diff since origin/main only)
+CONTENT-HASH: 25de39d17f0b1d8d
 
 ## Blocking
 - none
@@ -9,6 +8,9 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-1
 - none
 
 ## Checked
-- fy1-8-L3-04: the general rule 'a difference can be shown only if the intervals do not overlap' is removed; Periaate now states the data-specific conclusion (intervals overlap, no reliable conclusion, hand-timing uncertainty to be considered); Järkevyys softened to 'ei erotu luotettavasti'.
-- d = 0,04 s, k = 3,75 ≈ 3,8 and the overlap 3,08–3,12 s unchanged.
-- Language version en judged from the diff against origin/main; notation (LaTeX numbers with units, decimal comma/point, \cdot) checked in changed lines.
+- fy1-8-open-exercises-1280-9 (task 8-10 text now with $\text{km}$ in LaTeX, hint, check)
+- fy1-8-open-exercises-1280-10 (Formula as two aligned lines, Substitution rows, Answer with new rationale, backward check)
+- diff read for exercises.json, solutions.md
+
+## Scores
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

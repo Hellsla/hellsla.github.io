@@ -79,7 +79,7 @@ The teacher must never again have to point out a text wall, a stray figure, cram
 - **Tasks**: the situation first, the question last as its own sentence; feedback, hints and solutions open inside the task's card.
 - **Checks**: `check_layout.py` (in `check_lesson.py` and CI) fails a page with overflow, overlapping blocks, cards out of reading order, a large empty column beside an opened card or a figure, over-long lines, text under 17 px or controls under 40 px, or a heading under the sticky navigation, in every open state; fix the shared component and add a check when a new kind of problem appears (NOTES.md §6). `screenshot.py <id>` gives the captures of the opened states for a look before review.
 
-## Teacher's read-through of FY3 (2026-11-13; every lesson, task, Sovella set and exam from now on)
+## Teacher's read-through of FY3 and FY1 (2026-11-13; every lesson, task, Sovella set and exam from now on)
 The full list with screenshots' context and the work item of each is `docs/audits/fy3-silmailu-2026-11-13.md`. Where a
 rule needs a shared fix that is not merged yet, write new content to the rule anyway and never imitate the old form.
 - **Start from the basic principle and derive.** A balance or equilibrium calculation starts from its basic equation
@@ -105,6 +105,11 @@ rule needs a shared fix that is not merged yet, write new content to the rule an
 - **Compact controls**: an experiment's Alkutila / Vakiona / Muutetaan each on its own row; its buttons on one row
   (rare actions as labelled icons); the self-assessment levels in their colours before a choice, on one row, without
   empty space.
+- **Pohdinta's retrieval task belongs to its phenomenon** (teacher 2026-11-13, fy4-1): the "Kertaa yläkoulusta"
+  choice asks the prior knowledge through the same situation (the cyclist's average speed), never an unrelated one.
+  Order in Pohdinta: the phenomenon, then that retrieval task, then the open question (teacher 2026-11-13).
+- **A table when the content is a table** (teacher 2026-11-13, FY1): parallel items with the same attributes (a
+  structure, its size, its unit and the unit's value) go in a table, not a bulleted list of long lines.
 - **Long words break at a syllable with a hyphen** (concept cards: "Ominaislämpö-kapasiteetti"), never mid-syllable.
 - **Animation only where it shows what a still cannot**, pausable, still under `prefers-reduced-motion` and in print.
 

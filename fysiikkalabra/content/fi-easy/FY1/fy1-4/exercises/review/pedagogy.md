@@ -1,13 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: acf8f3273c02a82c
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: 16426b567c7be578
+SCOPE: delta added-exercise from dc5fd657a37866a0 base 81db4a6fd727
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- exercises.json fy1-4-L1-09 — 'Kuinka suuri on massa kappaleella, jonka tilavuus on' is stiff; 'Mikä on sellaisen kappaleen massa, jonka tilavuus on 45 cm³?'
 
 ## Checked
-- exercises diff: units set as \text, 'lukumäärään', 'suureiden välistä riippuvuutta', Reasonableness products now carry units (2,5 m/s = 2,5·3,6 km/h), 'tulos on uskottava'; numbers and answers unchanged.
-- Language fi-easy: matches the Finnish fixes; fi-easy stays plain Finnish.
+- fy1-4-L1-09: links m = kV to density as the slope; unit conversion shown.
+- Solution has all steps (given, asked, principle, formula, conversions, substitution, answer, sanity check); arithmetic verified.
+- Whole-set fit: the MAFY lookup task adds a new kind (table lookup) at level 1; no repeat of the worked example.
+- Finnish and reading level fine; phone readability not affected (short calculation).

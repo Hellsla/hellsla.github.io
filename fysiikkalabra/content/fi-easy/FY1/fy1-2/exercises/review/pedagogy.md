@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 5c84c3bbd0a47dd8
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-11-09: diff since origin/main only)
+CONTENT-HASH: 06e2bb3f719a5f7d
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- solutions.md (fy1-2-L1-10, Vastaus) — the lesson's rule gives as many figures as the least precise factor (here four), so the solution has to justify the departure; it does, but by a physical caveat. Consider one plain sentence: "Pyöristetään kolmeen merkitsevään numeroon, koska etäisyys on keskiarvo eikä tarkka matka."
+- exercises.json fy1-2-L1-10 — the Moon light-travel time still repeats fy1-1-L1-07 (earlier note, optional).
 
 ## Checked
-- fy1-2-L3-02: question now asks for a ratio (how many times one screen width), so it no longer reads as a count of whole screens (675); answer 674.4, tolerance 0.02 unchanged; unit "" as in other ratio tasks.
-- Kysytty, Periaate, Vastaus describe the same ratio N; Järkevyys still fits.
-- Language version fi-easy judged from the diff against origin/main; notation (LaTeX numbers with units, decimal comma/point, \cdot) checked in changed lines.
+- Diff only: answer 1.282 -> 1.28 in exercises.json, solutions.md and answers.py (round(...,2)); all three agree.
+- 3,844e8 / 2,998e8 = 1,282 s, so 1,28 s is the correct rounding to three significant figures.
+- Tolerance 0.04 (about 3 %) accepts both 1,28 and a student's unrounded 1,282; no student answer is wrongly refused.
+- The solution keeps all steps: formula, conversion km -> m, substitution showing 1,282 s ≈ 1,28 s, sanity check.
+- The task text is unchanged (situation, formula, conversion hint, question last), so earlier findings still hold.
+- The teacher's decision for three significant figures is recorded in the solution with a reason.
+- Hash at start and end: 06e2bb3f719a5f7d.

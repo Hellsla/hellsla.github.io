@@ -1,19 +1,21 @@
-VERDICT: FAIL
-CONTENT-HASH: 07dbe8c2767cf5a7
+VERDICT: PASS
+CONTENT-HASH: 14aa4c1c63c79a34
 
 ## Blocking
-- [Major] fig flux (Teoriaa lyhyesti, fig-3-390, page-1280-4) — the green field lines run to the figure's right edge and are cut off there (no 12 px margin, print quality). One dark line also touches the end of the label "käämi, N kierrosta". All lines leave a single point at the red pole, so they read as rays, not as a field — a reader can take the cut lines as continuing forever, and the label is hard to read — fix: stop the lines inside the figure (let them curve back or fade out before x≈585), keep them clear of the label box, and leave the label on a clear background. Also say in the description that the field is schematic and only the lines near the coil are drawn.
+(none)
 
 ## Polish
-- [Minor] fig pulse — the graph has no numerical ticks and is not marked as a sketch in the figure itself; the text says "mallikuvaaja, ei mittaus". Add the word "malli" or "havainnekuva" to the aria-label and perhaps beside the axes.
-- [Minor] investigation.md, "jännitteen suuruus" — ASCII straight quotes; Finnish text uses ”…”.
-- [Minor] Theory text — "Silloin mitattu jännite on käytännössä sama kuin indusoitunut jännite" repeats "jännite" three times in a row; "Tällöin mittari näyttää käytännössä indusoituneen jännitteen" reads more smoothly.
-- [Minor] fig setup — the magnet's two grey halves (poles) are unlabelled although the text says "sama napa alaspäin"; mark N and S, or say the halves differ in the description. For science: no doubt.
+- [Minor] fig flux (fig-3-390) — the magnet's poles are only coloured (blue/red), with no N/S label; colour carries the information alone — add $\text{N}$ and $\text{S}$ inside the halves (the teacher notes already warn about N versus the symbol N, so keep the poles upright text).
+- [Minor] fig flux — the green field lines run straight through the coil as fans and the coil's "N kierrosta" label sits far from the coil — move the label closer or add a thin leader line.
+- [Minor] fig setup (fig-6-390) — the magnet is small, and h is measured from its centre to the top of the coil; the dashed rules are light grey — make the h dashed rules darker (#6b7480) so that the start and end of h read on a phone.
+- [Minor] fig pulse (fig-9-390) — the second pulse is deeper and narrower, and the figure does not say it is schematic — add "kaavakuva" to the aria-label or a caption; for science: confirm the areas of the two pulses are drawn as the text claims.
+- [Minor] fig-1/top-390 — the hero shows the laptop screen blank and the coil leads cross the second coil; harmless, optional.
 
 ## Checked
-- fig-1-390 (hero), fig-3-390 (flux), fig-6-390 (setup), fig-9-390 (pulse); the contact sheets were not opened separately.
-- top-1280; page-1280 parts 3, 4, 5, 7 (theory, equations, setup, results, the opened O/OO boxes); the remaining parts and the 390 page strips were not opened.
-- Maths:  = -N\Delta\Phi/\Delta t$, =\sqrt{2gh}$, \text{max}=cv$ and the units are all rendered with KaTeX, the decimal comma is correct and the units are upright.
+- contact-1.png (the whole page at 390 px) for triage.
+- fig-1-390 (hero), fig-3-390 (flux), fig-6-390 (setup), fig-9-390 (pulse), opened at readable size; the stray 28 px and 57 px captures are KaTeX fragments, not figures.
+- page-390-9 (Mittaa/Käsittele, tuki boxes, inline maths) and page-1280-4 (theory, flux figure, display formula).
+- Not opened separately: open-ennusta-1280 and the tables at 390 px (seen only on the contact sheet, wrapping without overflow).
 
 ## Scores
-illustrations 3 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

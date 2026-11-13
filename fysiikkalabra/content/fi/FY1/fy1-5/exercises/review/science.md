@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 1cdda49c2175b0d8
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: b9f6ab4d8dcb8ba1
+SCOPE: delta added-exercise from 813984b325501084 base 81db4a6fd727
 
 ## Blocking
 - none
 
 ## Polish
-- Järkevyys for 2,5 m/s (9 km/h): "kävelijälle hyvin reipas vauhti" is generous (9 km/h is race-walking pace); "hidas hölkkä" alone would suffice. Not an error.
+- none
 
 ## Checked
-- Δs = vt now used where the distance travelled is asked (5,5 · 20 = 110 m; 360/45 = 8,0 m/s; 15 · 14 = 210 m; 4500/10 = 450 s; 343 · 5,0 = 1,7 km): dropping the unstated "s0 = 0" assumption is correct, since Δs = vt needs no starting point
-- average speed = change in position / length of interval: correct for this forward-only cyclist and consistent with the solution
-- oppilas → opiskelija; L2 kärry reword keeps data (7,0 m at 2,0 s, 21 m at 6,0 s)
-- answers.py unchanged; en and fi-easy match the fi fixes
+- fy1-5-L1-09 only (delta, added exercise); hash the same at start and end.
+- Recomputed independently: s = vt = 1482 m/s · 2,0 s = 2964 m = 2,96 km (key 2.9646).
+- MAFY speed of sound in water at 20 °C, 1482,3 m/s, is right; the hint names the right table.
+- Model: uniform motion s = vt, which the task states ("tasaisella nopeudella"). This is in FY1 scope.
+- Rounding: 3,0 km, two figures as in t = 2,0 s, is justified; it is 1,2 % from the key, inside the tolerance 0,04.
+- Conversion m → km is right. Reasonableness: about 1,5 km/s, 4,3 times the speed in air, which is a real check.

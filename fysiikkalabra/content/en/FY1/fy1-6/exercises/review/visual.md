@@ -1,13 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 3e9eeb5830f9cef2
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: eca909dafc4a2318
+SCOPE: delta answers,levels,numbers,structure,teacher-figure,typography,wording from 3e9eeb5830f9cef2 base e4013ef
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] fy1-6-L1-09 — `\tfrac{m}{s^2}` in the substitution is tiny; `\text{m/s}^2` would read better.
 
 ## Checked
-- solutions.md: Kaava lines merged into one sentence, g\,t spacing, Kysytty rewording; exercises.json Mars/air-resistance wording
-- Changes mirror the Finnish fix in en; no notation, unit or decimal-comma error introduced.
+- fy1-6-open-exercises-1280-9 (new MAFY task L1-09 (6-9): text, hint, answer check, solution)
+- Teacher-approved figure tasks: layout judged only; diff read for all changed lines (exercises.json, solutions.md, answers.py).
+
+## Scores
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4
