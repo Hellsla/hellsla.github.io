@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 3dd71e954a48a7f8
+CONTENT-HASH: b1d7dd63f21652d2
+SCOPE: delta added-exercise from 3dd71e954a48a7f8 base 81db4a6fd727
 ## Blocking
 (none)
 ## Polish
-- exercises.json:262 — feedback of "Laskussa ei ole virhettä" names the wrong line ("virhe rivillä 4"), so a second try is a copy; say only "Laskussa on virhe: tarkista, mitä tulos kertoo energian suunnasta".
-- exercises.json:234 — row 3 "Q = 450 · 3,0 · (-180)" has no units in the substitution; add \text{J/(kg·K)}, kg and K (the lesson habit), or say the units are left out on purpose.
-- Row 4 is the only prose line and the one with a bold claim, which helps a student spot it by form; acceptable at level 2, but a subtler wording ("Q on negatiivinen, joten levy vastaanottaa energiaa") would test the sign more.
+- fy3-6-L2-09 is nearly L1-09 (Q = c m Delta T with c read off, cooling); the figure only replaces the table, so the level rises only by the sign and by reading a bar. Consider a bar-chart comparison (which mass of water cools by the same energy) for more demand.
+- solutions.md L2-09 Kuvaajan lukeminen — repeats "Kuvaajan lukeminen kuvasta"; tidy.
+- fy3-6-L1-09 near-duplicates L1-02/L1-03 (heat from c, m, Delta T); only the lookup differs, which is the intent.
 ## Checked
-- Type 4: arithmetic of rows 1-3 checked (1350 · 180 = 243 000); exactly one line wrong, last option last.
-- The row 1 distractor catches the chapter's own warned mistake (adding 273 to ΔT); rows 2 and 3 catch "own cooling formula" and "minus sign is a slip".
-- Within FY3-6: negative Q and the sign convention are known from FY3-5.
-- Inline lines in the stem are short (each under about 200 px); solution reads step by step in the 1280 capture.
-- Finnish fine; the question is the last sentence.
-- Renders: the 1280 px open-solution captures of the new task (shuffled option order, feedback after a wrong try, solution block) were opened. The 390 px fit of inline chains was judged from text only (no phone capture of the exercises exists); each inline chain is short or breaks at = or ·.
+- L1-09: lookup of c(aluminium) with only the table name as hint; one formula, solution explains why Delta T in K equals that in degrees C.
+- L2-09: figure needed; the description gives all six values, no answer; answer (385 J/(kg K)) is read, then used.
+- The pairing of Q released as positive is stated in the stem.
+- Finnish fine.

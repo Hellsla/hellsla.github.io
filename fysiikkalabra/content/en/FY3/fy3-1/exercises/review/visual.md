@@ -1,19 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: cf6d9ce17e1d805b
-Mode: delta (the regenerated packet says full; the only change since round 1 is the figure descriptions)
-Round: 2
+CONTENT-HASH: 65e30b4232d5610b
+Mode: delta, round 1
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] The four option figures' aria-labels say "the object", while the task text says "the body"; use "body" in figures.json for consistency.
-- [Minor] Option figures are about 250 px tall each, so the task is long on a phone.
+- [Minor] 1-18 solution, Formula row: "G = mg, so g = G_1/m_1 and G = mg" repeats G = mg; write "g = G_1/m_1, then G = mg".
+- [Minor] 1-10 task text: "(mafytaulukot.fi)" is plain text; fine, but a link would help.
 
 ## Checked
-- Rebuilt preview/en/fy3-1.html at 390 px: the four pick-* aria-labels are now English and match the figures (F twice G; equal arrows; F_k from the bottom face; G only). No Finnish remains in the labels. No Finnish word shows inside the figures (only G, F, F_k).
-- Round 1 captures of task fy3-1-L1-09 (text, options, feedback, solution at 390 px) are unchanged by this edit: no horizontal overflow.
-- Not repeated: the rest of the exercises, unchanged since round 1 (the regenerated packet marks full mode, so a full-mode review of the whole page was not done).
+- Opened at readable size: 1-10 (task, closed-state hint box, answer, full solution; shots 1280-10) and 1-18 (L2 shots 8 and 9: weight-points graph with axes G (N) and m (kg), grid, five distinct markers, no model line; solution). Units LaTeX, thin spaces, decimal point, substitution rows aligned, answer boxed.
+- Option figures and the rest of the page unchanged, not repeated.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish n/a · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

@@ -1,18 +1,16 @@
-VERDICT: PASS
-CONTENT-HASH: c966a0c1c917e65e
-
-Mode: translation review (fi-easy (NOTES.md section 12)) against the reviewed Finnish. Round 2, new task fy3-14-L2-08.
+VERDICT: FAIL
+CONTENT-HASH: b2728409903da70a
 
 ## Blocking
-- none
+1. exercises.json fy3-14-L2-09 — repeats fy3-14-L1-03: same figure `fy3-14/energy-bars`, the same text (almost word for word), the same reading of three bars (25, 5, 60 kJ) and the same chain Q_vesi - Q_lämm = Q_sulaa, m = Q/s. L1-03 asks the mass that melts (60 g); L2-09 asks the mass left (120 g), one subtraction more, and gives s = 334 kJ/kg. A level-2 task must not be a level-1 task with one more step; the set's "no repeat of another exercise" is not met — fix: remove L2-09, or give it a new situation, e.g. a table or bar graph with different values where the ice is warmer and the student must decide first whether all ice melts, or ask for the final state when the water's heat is larger than the heat of melting all ice (then the final temperature, which L1-03 does not cover).
 
 ## Polish
-- none
+1. fy3-14-L1-09 — the "Järkevyys" step compares with heating 0,25 kg of water; the sum is correct (about 25 K) but needs a sentence on where 0,25 kg comes from, or use a simpler check (the same 26,6 kJ is about 1/12 of 333 kJ times 0,8).
+2. fy3-14-L1-09 — overlaps L1-01 (0,050 kg ice melted in juice, Q = sm); the context is the same (ice in a drink). Change the context (ice cream, an ice bag for a sprained ankle).
+3. fy3-14-L1-09 — the solution gives s = 333 kJ/kg (MAFY) and says "tekstien arvo 334"; the L2-09 text uses 334: keep one value or say that the task states it.
 
 ## Checked
-- delta review 2026-11-07 round 3 (fixes to round 2 findings): the round-2 Blocking in L3-05 is resolved: Kaava gives ΔT_v,min = Q_j/(c_v m_v), T_v,min = 0 °C + ΔT_v,min and T_j = 0 °C − ΔT_j, the energy equation uses (T − 0 °C), Muunnokset defines ΔT_v = T_v − 0 °C, and c) ends 29,2 K → T_v,min = 0 °C + 29,2 K = 29,2 °C. Units now check at every step, and the solution follows the same pattern as the inquiry solution.
-- delta review 2026-11-07 round 2 (follow-up consistency edits): L1-06 options now render at about 50/62/87 characters against the correct option's 88, all 'X, koska Y' and with 'Noin' also in a distractor, so the correct one no longer gives itself away; answer equals the option text and the teacher's full sentences open its feedback (the 2026-11-07 Polish item is resolved). Every Q_v = c_v m_v ΔT_v is consistent with its substitution, except L3-05 (Blocking).
-- delta review 2026-11-07 (teacher's proofread replacement texts): L1-06's correct option, feedback and model answer now say about 0 °C at normal pressure while both phases are in equilibrium, and the feedback explains that no heat flows in equilibrium so ice neither melts nor water freezes; consistent with the lesson's end state 2 and the unchanged distractor feedback. fi-easy: feedback split into short sentences; the option text equals fi but is readable.
-- L2-08 (YO-skill form) keeps the fi task form, prompt and feedback texts; every wrong option or statement keeps its misconception diagnosis.
-- Sentences are short, one idea each, terms explained in the Principle (NOTES.md section 12); same step order as fi.
-- Level and workload as in fi; no answer disclosed in the task text.
+- L1-09: level 1 fits (lookup, Q = sm, g to kg); the solution is symbolic first; the answer 26,64 kJ (rounded 27 kJ) matches; the 4 % tolerance is explained.
+- L1-09: the situation first, the question last; the hint names the exact MAFY table.
+- L2-09: the solution arithmetic is correct (119,8 g) and the figure description gives the three values without the answer.
+- Finnish and fi-easy reading level are fine in both tasks.

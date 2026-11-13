@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: e2152bc8e282da0b
+CONTENT-HASH: 803fbf1569f6cbbf
+SCOPE: delta added-exercise from 599e9ef3449e91a0 base 81db4a6fd727
 ## Blocking
 (none)
 ## Polish
-- exercises.json:141 — option C feedback ("pitääkseen kappaleen ylhäällä") quietly uses equilibrium reasoning, which is FY4 — argue only from the reading: "mittari näyttää 4,9 N, joten F = 4,9 N, saman kuin G".
-- exercises.json:117 — the stem defines F as acting on the body and F_k as acting on the meter, so A and D can be dropped by reading alone and only C needs the calculation; acceptable at level 1, but say so in the solution ("tehtävän selitys jo kertoo...") or leave F_k undefined.
-- The new task's distractors (missing F, F too long, extra F_k) do not touch the chapter's own warned mistake (massa/paino, "voimamittari näyttää massan"); that is carried by L1-06, L2-07 and L3-03, so only noted.
+- exercises.json fy3-1-L1-10 hint — "taulukosta *Aurinkokunta*" is the table name only, as intended; note that the lesson table gives Mars 3,71 and MAFY 3,72, both inside the 4 % tolerance, so the task works either way.
+- solutions.md fy3-1-L2-08 Kaava — "g = G1/m1 ja G = m g" reads clumsily; write "g = G1/m1, ja sitten G = m g".
+- L2-08 is a second read-a-point graph task beside L1-04 and L2-05; kind mix is still fine (extrapolating beyond the plotted points is new).
 ## Checked
-- L1-09 (3 Voimakuvion valinta) stays level 1: one step, G = mg gives 4,9 N, and the arrow lengths follow from numbers, not from Newton's laws.
-- Correct option not identifiable by form: options are figures, labels are neutral, order is shuffled on the page.
-- Each distractor has one recognisable error and feedback that names it; the solution explains the principle (one force per interaction) before the numbers.
-- Within FY3-1 scope: G, F and the body-on-meter pair are described in words; no vector or Newton term used.
-- Situation first, question last as its own sentence; Finnish fine.
-- Renders: the 1280 px open-solution captures of the new task (shuffled option order, feedback after a wrong try, solution block) were opened. The 390 px fit of inline chains was judged from text only (no phone capture of the exercises exists); each inline chain is short or breaks at = or ·.
+- L1-10: one step with one table lookup, level 1; situation first, question last; solution explains the principle (same m, different g) before numbers; sanity check against Earth.
+- L2-08: the figure is needed (the text gives no data); the description lists the five points and gives no g or answer; the answer 60 N needs ratio G/m then a value outside the plotted range, a real level-2 step.
+- Solution reads the graph before the formula and states the accepted range.
+- Scope: only G = mg and proportionality; no Newton or FY4 term.
+- Finnish and case after number+unit fine.
+- Captures not opened; judged from text.
