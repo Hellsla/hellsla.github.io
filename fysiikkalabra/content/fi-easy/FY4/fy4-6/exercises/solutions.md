@@ -381,7 +381,7 @@ Yläraja on $\mu_0 m_\text{D} g \cos\alpha \approx 149\,\text{N}$. Laatikko siis
 Kitkavoiman mukaan pienimmästä suurimpaan järjestys on B ($30\,\text{N}$), C ($44\,\text{N}$), A ($59\,\text{N}$), D ($1{,}2 \cdot 10^2\,\text{N}$). Jos laatikon B kitkaksi laskettaisiin virheellisesti $\mu_0 N$, se olisi suurin. Järjestys olisi eri myös massan tai kitkakertoimen mukaan, koska kitka riippuu sekä tukivoimasta että siitä, liukuuko laatikko.
 
 ## fy4-6-L1-09
-**Annettu:** $m = 45\,\text{kg}$, kelkka liikkuu tasaisella nopeudella vaakasuoralla jäällä; taulukosta (MAFY-taulukko, *Kitkakertoimia*, teräs–jää) liukukitkakerroin $\mu = 0{,}014$; $g = 9{,}81\,\text{m/s}^2$
+**Annettu:** $m = 45\,\text{kg}$, kelkka liikkuu tasaisella nopeudella vaakasuoralla jäällä; taulukosta (MAFY-taulukko, *Kitkakertoimia*, teräs–jää) liikekitkakerroin $\mu = 0{,}014$; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** vetovoima $F$ yksikössä $\text{N}$
 **Periaate:** Tasaisessa liikkeessä voimien summa on nolla. Siksi vetovoima on yhtä suuri kuin liikekitka. Tukivoima on yhtä suuri kuin paino. Liikekitka on $F_\mu = \mu N$.
 **Voimakuvio:** Kelkka on suorakulmio. Akseli $x$ on liikkeen suuntaan ja akseli $y$ ylös. Vetovoima $\overline{F}$ osoittaa eteenpäin. Liikekitka $\overline{F}_\mu$ osoittaa taaksepäin ja on yhtä pitkä. Paino $\overline{G}$ osoittaa alas. Tukivoima $\overline{N}$ osoittaa ylös ja on yhtä pitkä kuin paino. Vetovoima ja kitka on piirretty suurennettuina, koska ne ovat paljon painoa pienempiä.
@@ -398,26 +398,27 @@ akselit 0
 **Kaava:** $x$: $F - \mu N = 0$ ja $y$: $N - mg = 0$, joten $F = \mu m g$
 **Muunnokset:** Massa on kilogrammoina ja kitkakerroin on yksikötön. Muunnoksia ei tarvita.
 **Sijoitus:** $F = 0{,}014 \cdot 45\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 0{,}014 \cdot 441{,}5\,\text{N} = 6{,}18\,\text{N}$
-**Vastaus:** $6{,}2\,\text{N}$. Vastauksessa on kaksi merkitsevää numeroa, koska kitkakertoimessa $0{,}014$ on kaksi. Kerroin $0{,}014$ on MAFY-taulukosta (*Kitkakertoimia*, teräs–jää, liukukitkakerroin). Eri taulukoiden arvot poikkeavat hieman. Siksi vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Vastaus:** $6{,}2\,\text{N}$. Vastauksessa on kaksi merkitsevää numeroa, koska kitkakertoimessa $0{,}014$ on kaksi. Kerroin $0{,}014$ on MAFY-taulukosta (*Kitkakertoimia*, teräs–jää, liikekitkakerroin). Eri taulukoiden arvot poikkeavat hieman. Siksi vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
 **Järkevyys:** Kelkan paino on noin $441\,\text{N}$. Vetovoima on siitä vain noin $1{,}4\,\%$. Se sopii hyvin liukkaaseen teräs–jää-pariin. Jos kitkakerroin olisi noin $0{,}3$ kuten puulla lattiaa vasten, vetovoima olisi noin $130\,\text{N}$.
 
 ## fy4-6-L2-09
-**Annettu:** $m = 0{,}50\,\text{kg}$; esimerkkiaineiston kuvaajan viisi mittauspistettä $(N, F_\mu)$: $(5\,\text{N};\,1{,}1\,\text{N})$, $(10\,\text{N};\,2{,}1\,\text{N})$, $(15\,\text{N};\,3{,}3\,\text{N})$, $(20\,\text{N};\,4{,}2\,\text{N})$ ja $(25\,\text{N};\,5{,}4\,\text{N})$; $g = 9{,}81\,\text{m/s}^2$
+**Annettu:** $m = 0{,}80\,\text{kg}$; esimerkkiaineiston kuvaajan viisi mittauspistettä $(N, F_\mu)$: $(5\,\text{N};\,1{,}1\,\text{N})$, $(10\,\text{N};\,2{,}1\,\text{N})$, $(15\,\text{N};\,3{,}3\,\text{N})$, $(20\,\text{N};\,4{,}2\,\text{N})$ ja $(25\,\text{N};\,5{,}4\,\text{N})$; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** hidastuvuuden suuruus $a$ yksikössä $\text{m/s}^2$
-**Periaate:** Liikekitka on verrannollinen tukivoimaan, $F_\mu = \mu N$. Siksi $(N, F_\mu)$-kuvaaja on suora, joka kulkee origon kautta. Suoran kulmakerroin on $\mu$. Vaakasuunnassa palikkaan vaikuttaa vain liikekitka. Se osoittaa liikettä vastaan. Newtonin toinen laki antaa hidastuvuuden.
-**Voimakuvio:** Palikka on suorakulmio. Akseli $x$ on liikkeen suuntaan ja akseli $y$ ylös. Paino $\overline{G}$ osoittaa alas. Tukivoima $\overline{N}$ osoittaa ylös ja on yhtä pitkä. Liikekitka $\overline{F}_\mu$ osoittaa taaksepäin. Eteenpäin osoittavaa voimaa ei ole. Siksi kiihtyvyys osoittaa taaksepäin.
+**Periaate:** Liikekitka on verrannollinen tukivoimaan, joten mittauspisteisiin sovitettu suora kulkee origon kautta. Sitä voi käyttää myös tukivoimalla, jolla mittauspistettä ei ole. Vaakasuunnassa palikkaan vaikuttaa vain liikekitka, joka osoittaa liikettä vastaan, joten Newtonin toinen laki antaa hidastuvuuden.
+**Voimakuvio:** Palikka suorakulmiona, $x$ liikkeen suuntaan ja $y$ ylös. Paino $\overline{G}$ alas ja tukivoima $\overline{N}$ ylös yhtä pitkänä, liikekitka $\overline{F}_\mu$ taaksepäin. Eteenpäin vievää voimaa ei ole, joten kiihtyvyys osoittaa taaksepäin.
 ```voimakuvio
 pinta 0
-G 4,91
-N 4,91
-F_mu 1,05 vasen
+G 7,85
+N 7,85
+F_mu 1,68 vasen
 v oikea
 a vasen
 akselit 0
 ```
-**Kuvaajan lukeminen:** Piirretään suora origon kautta niin, että se kulkee mahdollisimman läheltä kaikkia pisteitä. Tukivoimalla $N = 25\,\text{N}$ suoran arvo on noin $F_\mu = 5{,}35\,\text{N}$. Siis $\mu = \dfrac{5{,}35\,\text{N}}{25\,\text{N}} = 0{,}214$.
-**Kaava:** $y$: $N - mg = 0$, joten $N = mg$. $x$: $-F_\mu = ma_x$, joten $a_x = -\dfrac{\mu mg}{m} = -\mu g$. Hidastuvuuden suuruus on $a = \mu g$
-**Muunnokset:** Kuvaajan molemmat akselit ovat newtoneina. Siksi kerroin $\mu$ on yksikötön. Massa supistuu pois.
-**Sijoitus:** $a = 0{,}214 \cdot 9{,}81\,\text{m/s}^2 = 2{,}10\,\text{m/s}^2$
-**Vastaus:** $2{,}1\,\text{m/s}^2$ liikettä vastaan. Vastauksessa on kaksi merkitsevää numeroa, koska suora piirretään käsin ja pisteet on mitattu kahden numeron tarkkuudella.
-**Järkevyys:** Kitkavoima on $F_\mu = 0{,}214 \cdot 4{,}91\,\text{N} = 1{,}05\,\text{N}$. Ja $1{,}05\,\text{N} : 0{,}50\,\text{kg} = 2{,}1\,\text{m/s}^2$. Tulos on sama. Hidastuvuus on pienempi kuin $g$, koska $\mu < 1$.
+**Kuvaajan lukeminen:** Piirretään origon kautta suora, joka kulkee mahdollisimman läheltä kaikkia pisteitä. Sen kulmakerroin on noin $0{,}214$. Tukivoima on $N = mg = 7{,}85\,\text{N}$, joka on mittauspisteiden $5\,\text{N}$ ja $10\,\text{N}$ välissä. Kuvaajasta luetaan suoralta kohdasta $N = 7{,}85\,\text{N}$ kitkavoima $F_\mu \approx 1{,}68\,\text{N}$.
+**Kaava:** $y$: $N - mg = 0$, joten $N = mg$. $x$: $-F_\mu = ma_x$, joten $a_x = -\dfrac{F_\mu}{m}$ ja hidastuvuuden suuruus on $a = \dfrac{F_\mu}{m}$
+**Muunnokset:** $N = mg = 0{,}80\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 7{,}85\,\text{N}$. Kuvaajan akselit ovat newtoneina, joten muita muunnoksia ei tarvita.
+**Sijoitus:** $a = \dfrac{1{,}68\,\text{N}}{0{,}80\,\text{kg}} = 2{,}10\,\text{m/s}^2$
+**Vastaus:** $2{,}1\,\text{m/s}^2$ liikettä vastaan, kaksi merkitsevää numeroa, koska suora piirretään käsin ja pisteet on mitattu kahden numeron tarkkuudella.
+**Järkevyys:** Mittauspisteet $(5\,\text{N};\,1{,}1\,\text{N})$ ja $(10\,\text{N};\,2{,}1\,\text{N})$ ovat luetun arvon ympärillä: $1{,}68\,\text{N}$ on niiden välissä. Hidastuvuus on pienempi kuin $g$, koska kitkavoima on paljon pienempi kuin paino.
+

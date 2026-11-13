@@ -347,7 +347,7 @@
     {
       "id": "fy4-6-L2-09",
       "level": 2,
-      "text": "Below is example data: the kinetic friction of a wooden block measured at different normal forces. The graph shows the measurement points. A block with a mass of $0.50\\,\\text{kg}$ slides horizontally on the same table. Only the weight, the normal force and friction act on it. How large is the deceleration of the block? Determine the coefficient of kinetic friction from the graph.",
+      "text": "Below is example data: the kinetic friction of a wooden block measured at different normal forces. The graph shows the measurement points. The block has a mass of $0.80\\,\\text{kg}$. It slides horizontally on the same table, and only the weight, the normal force and friction act on it. There is no measurement point at the block's normal force, so read the friction force from a line fitted to the graph. How large is the deceleration of the block?",
       "kind": [
         "data",
         "graph"

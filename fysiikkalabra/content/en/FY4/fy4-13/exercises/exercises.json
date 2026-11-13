@@ -431,8 +431,8 @@
         "model",
         "reasoning"
       ],
-      "text": "A cart is on a frictionless track, and a light, inextensible string tied to it passes over a light, frictionless pulley. A hanging mass of $0.20\\,\\text{kg}$ is attached to the end of the string. The mass of the cart is not known. The cart is released from rest and its speed is measured. The graph shows the measured points. Air resistance is neglected.\n\na) What is the mass of the cart? First draw the free-body diagram of each body.\n\nb) Is the tension in the string greater than, smaller than or equal to the weight of the hanging mass? Justify your answer.\n\nThe answer box takes the result of part a).",
-      "answer": 0.81,
+      "text": "A cart is on a frictionless track, and a light, inextensible string tied to it passes over a light, frictionless pulley. A hanging mass of $0.30\\,\\text{kg}$ is attached to the end of the string. The mass of the cart is not known. The cart is released from rest and its speed is measured. The graph shows the measured points. Air resistance is neglected.\n\na) What is the mass of the cart? First draw the free-body diagram of each body.\n\nb) Is the tension in the string greater than, smaller than or equal to the weight of the hanging mass? Justify your answer.\n\nThe answer box takes the result of part a).",
+      "answer": 1.21,
       "unit": "kg",
       "tolerance": 0.04,
       "figure": "fy4-13/karry-vt-points",

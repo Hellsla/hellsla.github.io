@@ -200,28 +200,28 @@ def pick_origin():
 def ex_kolme_osaa():
     """For tasks: a cart's (t,x) graph in three straight parts, corners on grid crossings; no answer marked."""
     f = Fig("fy41-ex-kolme-osaa", 340, "(t,x)-kuvaaja mittakaavassa kärryn liikkeestä, aika 0–10 sekuntia kahden sekunnin välein ja paikka "
-            "0–18 metriä kahden metrin välein. Kuvaaja koostuu kolmesta suorasta osasta: paikka on 4 metriä hetkellä 0, "
-            "16 metriä hetkellä 4 sekuntia, 16 metriä hetkellä 6 sekuntia ja 10 metriä hetkellä 10 sekuntia.")
-    ax = Axes(f, (92, 296), (470, 52), x=(0, 11), y=(0, 18), xticks=[2, 4, 6, 8, 10], yticks=[2, 4, 6, 8, 10, 12, 14, 16, 18],
+            "0–20 metriä neljän metrin välein. Kuvaaja koostuu kolmesta suorasta osasta: paikka on 4 metriä hetkellä 0, "
+            "16 metriä hetkellä 4 sekuntia, 16 metriä hetkellä 6 sekuntia ja 8 metriä hetkellä 10 sekuntia.")
+    ax = Axes(f, (92, 296), (470, 52), x=(0, 11), y=(0, 20), xticks=[2, 4, 6, 8, 10], yticks=[4, 8, 12, 16, 20],
               xlabel=r"t\ (\text{s})", ylabel=r"x\ (\text{m})")
-    pts = [(0, 4), (4, 16), (6, 16), (10, 10)]
+    pts = [(0, 4), (4, 16), (6, 16), (10, 8)]
     ax.line(pts, COLD, 3.5)
     for a, b in pts: ax.point(a, b, COLD)
     return f.svg()
 
 
 def ex_kaksi_kappaletta():
-    """For tasks: two bodies' straight (t,x) lines, A rising from 2 m, B falling from 18 m; no crossing or distance marked."""
+    """For tasks: two bodies' straight (t,x) lines, A rising from 4 m, B falling from 20 m; no crossing or distance marked."""
     f = Fig("fy41-ex-kaksi", 340, "(t,x)-kuvaaja mittakaavassa kahdesta tasaisesta liikkeestä, aika 0–8 sekuntia sekunnin välein ja paikka "
-            "0–18 metriä kahden metrin välein. Kappale A lähtee paikasta 2 metriä ja sen suora nousee paikkaan 18 metriä hetkeen 8 sekuntia "
-            "mennessä. Kappale B lähtee paikasta 18 metriä ja sen suora laskee paikkaan 2 metriä hetkeen 8 sekuntia mennessä.")
-    ax = Axes(f, (92, 296), (470, 52), x=(0, 9), y=(0, 18), xticks=[1, 2, 3, 4, 5, 6, 7, 8], yticks=[2, 4, 6, 8, 10, 12, 14, 16, 18],
+            "0–20 metriä neljän metrin välein. Kappale A lähtee paikasta 4 metriä ja sen suora nousee paikkaan 20 metriä hetkeen 8 sekuntia "
+            "mennessä. Kappale B lähtee paikasta 20 metriä ja sen suora laskee paikkaan 4 metriä hetkeen 8 sekuntia mennessä.")
+    ax = Axes(f, (92, 296), (470, 52), x=(0, 9), y=(0, 22), xticks=[1, 2, 3, 4, 5, 6, 7, 8], yticks=[4, 8, 12, 16, 20],
               xlabel=r"t\ (\text{s})", ylabel=r"x\ (\text{m})")
-    ax.line([(0, 2), (8, 18)], COLD, 3.5)
-    ax.line([(0, 18), (8, 2)], HEAT, 3.5)
-    for a, b, c in ((0, 2, COLD), (8, 18, COLD), (0, 18, HEAT), (8, 2, HEAT)): ax.point(a, b, c)
-    f.tex(ax.X(8) + 12, ax.Y(18), r"x_\text{A}", "start", COLD)
-    f.tex(ax.X(8) + 12, ax.Y(2), r"x_\text{B}", "start", HEAT)
+    ax.line([(0, 4), (8, 20)], COLD, 3.5)
+    ax.line([(0, 20), (8, 4)], HEAT, 3.5)
+    for a, b, c in ((0, 4, COLD), (8, 20, COLD), (0, 20, HEAT), (8, 4, HEAT)): ax.point(a, b, c)
+    f.tex(ax.X(8) + 12, ax.Y(20), r"x_\text{A}", "start", COLD)
+    f.tex(ax.X(8) + 12, ax.Y(4), r"x_\text{B}", "start", HEAT)
     return f.svg()
 
 

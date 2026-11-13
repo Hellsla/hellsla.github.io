@@ -238,33 +238,33 @@ Graph C goes through the points $(0\,\text{s};\ 6.0\,\text{m})$ and $(4.0\,\text
 **Reading the graphs:** The position is read from each graph at the moments $0$ and $4.0\,\text{s}$. Graphs B and C fall equally steeply, so only the initial position tells them apart: graph B starts from $0\,\text{m}$ and graph C from $6.0\,\text{m}$.
 
 ## fy4-1-L2-08
-**Given:** the $(t, x)$ graph of a cart with corner points $(0\,\text{s};\, 4\,\text{m})$, $(4\,\text{s};\, 16\,\text{m})$, $(6\,\text{s};\, 16\,\text{m})$ and $(10\,\text{s};\, 10\,\text{m})$; total time $\Delta t = 10\,\text{s}$
+**Given:** the $(t, x)$ graph of a cart with corner points $(0\,\text{s};\, 4\,\text{m})$, $(4\,\text{s};\, 16\,\text{m})$, $(6\,\text{s};\, 16\,\text{m})$ and $(10\,\text{s};\, 8\,\text{m})$; total time $\Delta t = 10\,\text{s}$
 **Find:** the average speed $v_\text{av}$ in the unit $\text{m/s}$
 **Principle:** Average speed is the distance travelled $s$ divided by the elapsed time. The distance is the sum of the absolute values of the changes in position of all the parts, because the cart returns part of the way and the distance grows then too. The displacement would not do: it would subtract the return with a minus sign.
-**Reading the graph:** The graph has three straight parts. During $0\ldots4\,\text{s}$ it rises from $4\,\text{m}$ to $16\,\text{m}$, so $\Delta x_1 = 16\,\text{m} - 4\,\text{m} = 12\,\text{m}$. During $4\ldots6\,\text{s}$ it is horizontal ($16\,\text{m}$), so $\Delta x_2 = 0$. During $6\ldots10\,\text{s}$ it falls from $16\,\text{m}$ to $10\,\text{m}$, so $\Delta x_3 = 10\,\text{m} - 16\,\text{m} = -6\,\text{m}$.
+**Reading the graph:** The graph has three straight parts. During $0\ldots4\,\text{s}$ it rises from $4\,\text{m}$ to $16\,\text{m}$, so $\Delta x_1 = 16\,\text{m} - 4\,\text{m} = 12\,\text{m}$. During $4\ldots6\,\text{s}$ it is horizontal ($16\,\text{m}$), so $\Delta x_2 = 0$. During $6\ldots10\,\text{s}$ it falls from $16\,\text{m}$ to $8\,\text{m}$, so $\Delta x_3 = 8\,\text{m} - 16\,\text{m} = -6\,\text{m}$.
 **Formula:** $s = |\Delta x_1| + |\Delta x_2| + |\Delta x_3|$ and $v_\text{av} = \dfrac{s}{\Delta t}$
 **Conversions:** The positions are in metres and the times in seconds, so no conversions are needed.
 **Substitution:**
 
-$$\begin{aligned} s &= 12\,\text{m} + 0 + 6\,\text{m} \\ &= 18\,\text{m} \end{aligned}$$
+$$\begin{aligned} s &= 12\,\text{m} + 0 + 8\,\text{m} \\ &= 20\,\text{m} \end{aligned}$$
 
-$$\begin{aligned} v_\text{av} &= \dfrac{18\,\text{m}}{10\,\text{s}} \\ &= 1.8\,\text{m/s} \end{aligned}$$
-**Answer:** $1.8\,\text{m/s}$, two significant figures, because the values of the graph are read as whole metres and seconds.
-**Reasonableness:** At the end the cart is at $10\,\text{m}$, only $6\,\text{m}$ from the starting position, but it has travelled $18\,\text{m}$. The average velocity from the displacement would be $\dfrac{6\,\text{m}}{10\,\text{s}} = 0.6\,\text{m/s}$, and the average speed is greater than this, as it should be. A speed of $1.8\,\text{m/s}$ is a walking pace, which suits a cart.
+$$\begin{aligned} v_\text{av} &= \dfrac{20\,\text{m}}{10\,\text{s}} \\ &= 2.0\,\text{m/s} \end{aligned}$$
+**Answer:** $2.0\,\text{m/s}$, two significant figures, because the values of the graph are read as whole metres and seconds.
+**Reasonableness:** At the end the cart is at $8\,\text{m}$, only $4\,\text{m}$ from the starting position, but it has travelled $20\,\text{m}$. The average velocity from the displacement would be $\dfrac{4\,\text{m}}{10\,\text{s}} = 0.4\,\text{m/s}$, and the average speed is greater than this, as it should be. A speed of $2.0\,\text{m/s}$ is a walking pace, which suits a cart.
 
 ## fy4-1-L2-09
-**Given:** the lines of the $(t, x)$ graph: body A passes through the points $(0\,\text{s};\, 2\,\text{m})$ and $(8\,\text{s};\, 18\,\text{m})$, body B through $(0\,\text{s};\, 18\,\text{m})$ and $(8\,\text{s};\, 2\,\text{m})$; the motions are uniform; $t = 7.0\,\text{s}$
-**Find:** the distance $d$ between the bodies at $7.0\,\text{s}$ in the unit $\text{m}$
+**Given:** the lines of the $(t, x)$ graph: body A passes through the points $(0\,\text{s};\, 4\,\text{m})$ and $(8\,\text{s};\, 20\,\text{m})$, body B through $(0\,\text{s};\, 20\,\text{m})$ and $(8\,\text{s};\, 4\,\text{m})$; the motions are uniform; $t = 6.0\,\text{s}$
+**Find:** the distance $d$ between the bodies at $6.0\,\text{s}$ in the unit $\text{m}$
 **Principle:** In uniform motion the $(t, x)$ graph is a straight line whose slope is the velocity and whose intercept is the initial position, so the position is $x = x_0 + v\,t$. The distance is the absolute value of the difference of the position coordinates, $d = |x_\text{A} - x_\text{B}|$. In the graph a higher line means a greater position coordinate. The absolute value is needed because the lines cross and the order changes.
-**Reading the graph:** We read the grid crossings from the lines. Line A: $x_{0\text{A}} = 2\,\text{m}$ and $x = 18\,\text{m}$ at $8\,\text{s}$, so $v_\text{A} = \dfrac{18\,\text{m} - 2\,\text{m}}{8\,\text{s}} = 2.0\,\text{m/s}$. Line B: $x_{0\text{B}} = 18\,\text{m}$ and $x = 2\,\text{m}$ at $8\,\text{s}$, so $v_\text{B} = \dfrac{2\,\text{m} - 18\,\text{m}}{8\,\text{s}} = -2.0\,\text{m/s}$. The lines cross at $4.0\,\text{s}$ at $10\,\text{m}$, so at $7.0\,\text{s}$ body A has already passed B.
+**Reading the graph:** We read the grid crossings from the lines. Line A: $x_{0\text{A}} = 4\,\text{m}$ and $x = 20\,\text{m}$ at $8\,\text{s}$, so $v_\text{A} = \dfrac{20\,\text{m} - 4\,\text{m}}{8\,\text{s}} = 2.0\,\text{m/s}$. Line B: $x_{0\text{B}} = 20\,\text{m}$ and $x = 4\,\text{m}$ at $8\,\text{s}$, so $v_\text{B} = \dfrac{4\,\text{m} - 20\,\text{m}}{8\,\text{s}} = -2.0\,\text{m/s}$. The lines cross at $4.0\,\text{s}$ at $12\,\text{m}$, so at $6.0\,\text{s}$ body A has already passed B.
 **Formula:** $x_\text{A} = x_{0\text{A}} + v_\text{A}\,t$, $x_\text{B} = x_{0\text{B}} + v_\text{B}\,t$ and $d = |x_\text{A} - x_\text{B}|$
 **Conversions:** The positions are in metres and the times in seconds, so no conversions are needed. The velocity of B is substituted as negative.
 **Substitution:**
 
-$$\begin{aligned} x_\text{A} &= 2\,\text{m} + 2.0\,\text{m/s} \cdot 7.0\,\text{s} \\ &= 16\,\text{m} \end{aligned}$$
+$$\begin{aligned} x_\text{A} &= 4\,\text{m} + 2.0\,\text{m/s} \cdot 6.0\,\text{s} \\ &= 16\,\text{m} \end{aligned}$$
 
-$$\begin{aligned} x_\text{B} &= 18\,\text{m} + (-2.0\,\text{m/s}) \cdot 7.0\,\text{s} \\ &= 4\,\text{m} \end{aligned}$$
+$$\begin{aligned} x_\text{B} &= 20\,\text{m} + (-2.0\,\text{m/s}) \cdot 6.0\,\text{s} \\ &= 8\,\text{m} \end{aligned}$$
 
-$$\begin{aligned} d &= |16\,\text{m} - 4\,\text{m}| \\ &= 12\,\text{m} \end{aligned}$$
-**Answer:** $12\,\text{m}$, two significant figures, because the velocities $2.0\,\text{m/s}$ and the time $7.0\,\text{s}$ are given with two figures.
-**Reasonableness:** After the crossing the distance grows by the difference of the velocities, $2.0\,\text{m/s} - (-2.0\,\text{m/s}) = 4.0\,\text{m/s}$. $3.0\,\text{s}$ have passed since $4.0\,\text{s}$, so the distance is $4.0\,\text{m/s} \cdot 3.0\,\text{s} = 12\,\text{m}$, the same as above. In the graph the vertical gap between the lines at $7\,\text{s}$ is $12\,\text{m}$.
+$$\begin{aligned} d &= |16\,\text{m} - 8\,\text{m}| \\ &= 8.0\,\text{m} \end{aligned}$$
+**Answer:** $8.0\,\text{m}$, two significant figures, because the velocities $2.0\,\text{m/s}$ and the time $6.0\,\text{s}$ are given with two figures.
+**Reasonableness:** After the crossing the distance grows by the difference of the velocities, $2.0\,\text{m/s} - (-2.0\,\text{m/s}) = 4.0\,\text{m/s}$. $2.0\,\text{s}$ have passed since $4.0\,\text{s}$, so the distance is $4.0\,\text{m/s} \cdot 2.0\,\text{s} = 8\,\text{m}$, the same as above. In the graph the vertical gap between the lines at $6\,\text{s}$ is $8\,\text{m}$.
