@@ -1,23 +1,22 @@
-VERDICT: FAIL
-CONTENT-HASH: f88ddf35762aaa28
+VERDICT: PASS
+CONTENT-HASH: ca214688db6c05ec
 
 ## Blocking
-1. k1 g: the solution's distractor feedback does not match the options. The options are 12,8 h, 16 h, 20 h and 32 h. The solution explains "7,8 h" (the linear error), which is not an option. A student who picks 12,8 h gets no repair. Either change the option to 7,8 h (answers.py `linear_wrong` = 7,75) or explain 12,8 h. The sentence also breaks off at ". ja $32 h$ syntyy".
-2. k1 h: the options are 5e3, 5e5, 5e7 and 5e9. The solution explains 50, 5e4 and 5e9. Two of the three wrong options (5e3, 5e5) get no explanation, and two explained values are not offered. Align the options and the solution (a missing or wrong prefix step is the intended error).
-3. k4 d: the rubric awards points for comparing 7,07 with 1,11 and 2,83 MeV per nucleon, but no part asks for the deuterium and tritium binding energies and the task gives no value for them. A fair answer cannot earn that point. Ask for them in part a, or accept a qualitative "He-4 is more tightly bound per nucleon" for the full points.
+None.
 
 ## Polish
-1. Open from round 1: k4 + k5 together give no graph from data and no uncertainty, so the "any two" rule fails. Move a data part or an uncertainty part into k4 or k5.
-2. Open from round 1: no item or part covers cosmology (fy8-16), which the course goal names. Swap Osa 1 item h for one.
-3. Open from round 1: k1 d and k5 a/b use the same transitions (3 to 2, 2 to 1). Vary one of them.
-4. k1 c, f, i and j: the correct option is the longest and has "koska" or a mechanism. Lengthen the distractors.
-5. k2 d (2 p) rests on a model solution claiming a systematic error from the LED spectrum. The rubric accepts a named source and its direction, which is fair. Add "Hyväksytään myös" for another source with the right sign.
-6. Workload: k2 and k6 both need a hand graph and a fit, and k6 has five parts. State that a spreadsheet is allowed (the intro does).
+- Osa 1 covers no cosmology (fy8-16), and chapters 4, 12 and 14 get little or none; the goal "alkeishiukkasista kosmologiaan" is met only by item j and k7c. Consider swapping one item (for example h or e) for a cosmology or biological-effects concept item.
+- k5 d: criteria 1 and 3 overlap (orbitaali ei ole rata / Bohrin rata korvautuu todennäköisyysjakaumalla). A student can earn two points for one idea; make the third criterion the standing-wave link or the position-velocity limit.
+- k7 a asks only for the 3,0 h transport fraction, while b uses 4,5 h; a one-line hint (injektioon asti kuluu 4,5 h) would help b. As it stands the part a figure feels like a lead-in for e.
+- k2 d: only 2 p for an open "name a source and its direction" answer; the accepted alternatives (zero error, resistor drop) are good, but the rubric should say that a source with the wrong direction earns at most 1 p.
+- Workload: k2 (graph, error lines, fit, uncertainty) and k6 (five parts, ln graph) are each 25-30 min of work for 120 min with Osa 1 and a second Osa 2 task. It is tight but feasible; keep spreadsheet use explicitly allowed (it is in the intro).
 
 ## Checked
-- Structure: 20 + 2x15 + 20 = 70 p. Osa 3 differs in kind (k6 experimental, k7 societal), and each first part is accessible.
-- No demanding part names the model. k6 b says "sopiva kuvaaja"; k6 d does not name the inverse-square law; k7 e asks for a comparison without naming the decay formula.
-- Osa 1 tests understanding: ratio and prefix errors, eV/J, linear halving, w_R, quark flavour. The distractors are real errors, apart from items g and h above.
-- k2 c: I checked the steepest and shallowest lines against all five error bars; they hold.
-- k3, k5, k6 and k7 solutions are complete and follow the form. The common mistakes are real. The numbers agree with answers.py.
-- Not read: the rendered page and the figure captures (not in the packet).
+- Structure 20 + 2x15 + 1x20 = 70 p, with choose rules on the page; Osa 3 tasks differ in kind (experimental data and shielding design versus a PET logistics/dose judgement).
+- Osa 1: items test understanding; distractors are real errors (units J/eV, 1/n, n^2, lineaarinen väheneminen, etuliite, painotuskerroin) and each Perustelu names the tempting wrong option. Item types vary (graph, ratio, predict-change, quark picture).
+- Osa 2 meets the guideline: graph from data (k2, k3), explanation (k4 d, k5 d), measurement uncertainty (k2 c, k3 d), main quantitative models (decay law, binding energy, Bohr levels). Any two choices still meet the core.
+- Osa 3: no part names the model (ln R graph, inverse-square, annihilation momentum), the first part is accessible, and the tasks end in evaluation (k6 e extrapolation and margin; k7 e choice of nuclide, k7 d justification). Source material is marked example or cited (STUK-A263, 2020).
+- k2 c rubric: I verified the steepest and shallowest lines pass through all five error bars; h = (6,8 ± 0,6)e-34 is consistent with the known value.
+- Solutions follow the Annettu-Kysytty-Periaate-Kaava-Muunnokset-Sijoitus-Vastaus-Järkevyys form and Yleisiä virheitä are real and specific. Rubric points sum per part, and a propagated error loses points once.
+- Finnish is natural, with decimal commas and LaTeX; no bold in the statements.
+- I did not read the k7 solutions in full; I judged k7 from tasks.json and its rubric.
