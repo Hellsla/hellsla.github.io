@@ -63,13 +63,13 @@ def scene():
 
 def chain_bars():
     """Task figure (no lesson.md block): the power along a condensing plant's energy chain as four bars on gridlines:
-    P0 = 400 MW (fuel), P1 = 350 MW (after the boiler), P2 = 150 MW (after the steam cycle), P3 = 140 MW (electricity)."""
+    Po = 400 MW (fuel), P1 = 350 MW (after the boiler), P2 = 150 MW (after the steam cycle), P3 = 140 MW (electricity)."""
     f = Fig("fy315-chain-bars", 330, "Pylväskuvaaja mittakaavassa: lauhdevoimalaitoksen teho energiaketjun vaiheissa. Pylväiden korkeudet ovat "
-            "P_0 = 400 MW (polttoaine), P_1 = 350 MW (kattilan jälkeen), P_2 = 150 MW (höyrykierron jälkeen) ja P_3 = 140 MW "
+            "P_o = 400 MW (polttoaine), P_1 = 350 MW (kattilan jälkeen), P_2 = 150 MW (höyrykierron jälkeen) ja P_3 = 140 MW "
             "(generaattorin ja muuntajan jälkeen eli sähkö). Ruudukon väli on 50 MW.")
     ax = Axes(f, (96, 280), (470, 56), x=(0, 4), y=(0, 450), xticks=[], yticks=list(range(50, 451, 50)),
               xlabel="", ylabel=r"P\ (\text{MW})", yfmt=lambda v: fi(v) if v % 100 == 0 else "")
-    for k, (name, v, col) in enumerate((("P_0", 400, HEAT), ("P_1", 350, HEAT), ("P_2", 150, HEAT), ("P_3", 140, COLD))):
+    for k, (name, v, col) in enumerate(((r"P_\text{o}", 400, HEAT), ("P_1", 350, HEAT), ("P_2", 150, HEAT), ("P_3", 140, COLD))):
         x0, x1 = ax.X(k + 0.2), ax.X(k + 0.8)
         f.rect(x0, ax.Y(v), x1 - x0, ax.y0 - ax.Y(v), col, INK, 2.5)
         f.tex((x0 + x1) / 2, ax.y0 + 26, name, "middle")

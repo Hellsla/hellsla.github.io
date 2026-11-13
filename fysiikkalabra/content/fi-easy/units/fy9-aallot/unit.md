@@ -194,7 +194,7 @@ Moduulin kaikki ilmiöt alkavat **värähtelystä**. Värähtelyssä kappale lii
   <foreignObject x="283" y="566" width="79" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{huojunta}$</div></foreignObject>
   <foreignObject x="58" y="617" width="130" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$f = f_0\,v/(v - v_\text{L})$</div></foreignObject>
   <foreignObject x="292" y="618" width="70" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{Doppler}$</div></foreignObject>
-  <foreignObject x="58" y="669" width="148" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$L = 10\,\text{dB} \cdot \lg(I/I_0)$</div></foreignObject>
+  <foreignObject x="58" y="669" width="139" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$L = 10\lg(I/I_0)\,\text{dB}$</div></foreignObject>
   <foreignObject x="319" y="670" width="43" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{taso}$</div></foreignObject>
 </svg>
 
@@ -246,8 +246,8 @@ missä $f$ on taajuus ($\text{Hz}$), $T$ jaksonaika ($\text{s}$), $\overline{F}$
 
 ```kaavat
 aaltoliikkeen perusyhtälö :: v = f\lambda
-vahvistava interferenssi :: \Delta s = n\lambda
-heikentävä interferenssi :: \Delta s = \left(n + \tfrac12\right)\lambda
+\Delta s = n\lambda
+\Delta s = \left(n + \tfrac12\right)\lambda
 ```
 
 missä $v$ on aallon nopeus ($\text{m/s}$), $\lambda$ aallonpituus ($\text{m}$) ja $\Delta s$ matkaero ($\text{m}$), $n = 0, 1, 2, \ldots$ Matkaero on se, kuinka paljon pidemmän matkan toinen aalto kulkee. Tässä aallot tulevat kahdesta lähteestä, jotka värähtelevät samassa vaiheessa eli samaan tahtiin. Ensimmäinen ehto antaa vahvistavan interferenssin, ja toinen ehto antaa heikentävän interferenssin. Diffraktio eli aallon taipuminen on voimakasta, kun raon tai esteen leveys on aallonpituuden suuruinen tai pienempi. Heijastuksessa tulokulma on yhtä suuri kuin heijastuskulma. Kulmat mitataan pinnan normaalista eli suorasta, joka on kohtisuorassa pintaa vastaan.
@@ -295,7 +295,7 @@ Dopplerin ilmiö, äänilähde liikkuu pois päin havaitsijasta :: f = f_0\,\fra
 Dopplerin ilmiö, havaitsija liikkuu kohti äänilähdettä :: f = f_0\,\frac{v + v_\text{H}}{v}
 Dopplerin ilmiö, havaitsija liikkuu pois päin äänilähteestä :: f = f_0\,\frac{v - v_\text{H}}{v}
 intensiteetti :: I = \frac{P}{A}
-äänen intensiteettitaso :: L = 10\,\text{dB} \cdot \lg \frac{I}{I_0}
+äänen intensiteettitaso :: L = 10\lg\left(\frac{I}{I_0}\right)\,\text{dB}
 ```
 
 missä $f_\text{H}$ on huojuntataajuus ($\text{Hz}$), $f_0$ lähteen taajuus ja $f$ kuultu taajuus ($\text{Hz}$), $v$ äänen nopeus, $v_\text{L}$ lähteen nopeus ja $v_\text{H}$ havaitsijan eli kuulijan nopeus ilman suhteen ($\text{m/s}$). Dopplerin kaavat pätevät, kun vain toinen liikkuu ja nopeus on pienempi kuin äänen nopeus. Intensiteetti on teho $P$ jaettuna pinta-alalla $A$. Pistemäisen lähteen ääni leviää pallon pinnalle. Etäisyydellä $r$ pallon pinta-ala on $A = 4\pi r^2$, kun ääni ei heijastu. $L$ on intensiteettitaso, ja $I_0 = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2$. Kaiusta saadaan etäisyys $d = \tfrac{vt}{2}$, koska pulssi kulkee matkan kahdesti.

@@ -1,15 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 77b4b5a62a82d3a0
-ROUND: 2
+CONTENT-HASH: bd98847c91c69f13
 
 ## Blocking
-(none) The only change is the Arvio sentence in fy3-8-L2-08: it now reads "... vaikka sen alkupituus on vain puolet. Kolminkertainen muutos saataisiin vain, jos sauvat olisivat yhtä pitkiä." which fixes my round-1 wording note and is fluent.
+None. Built preview/fy3-8.html and looked at 390 and 1280 px: formula tables (named rows, upright subscripts a, o, h, A), changed figures, opened solutions; no horizontal overflow; no leftover old symbols (L, P_0, P_hyöty, Q_sisälle, E_s, W_k) in the lesson, inquiry, exit ticket or exercises of this part.
 
 ## Polish
-- [Minor] Correct option is slightly longer than the others; difference is small, no change needed.
+none.
 
-## Checked
-- Renders (own Playwright, 390 px, preview/fy3-8.html): L2-08 with the correct option picked, feedback unhidden, solution open; the new Arvio paragraph and the ratio fraction fit, no katex overflow, scrollWidth 390.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+(Captures: /tmp/claude-0/-home-user-hellsla-github-io/729392a7-96f2-578c-8869-36f18714a66f/scratchpad/review-fy3/)

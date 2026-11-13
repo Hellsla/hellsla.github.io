@@ -392,8 +392,8 @@ The reliability of a measurement is described by two things. **Repeatability** t
 
 ## Formula: Mean and error estimate
 The best estimate of a repeated measurement is the mean of the results:
-```latex
-\bar{x} = \frac{x_1 + x_2 + \dots + x_n}{n}
+```kaavat
+mean :: \bar{x} = \frac{x_1 + x_2 + \dots + x_n}{n}
 ```
 where $\bar{x}$ is the mean, $x_1, x_2, \dots, x_n$ are the individual measurement results and $n$ is the number of measurements. The mean adds up the results and divides the sum by the number, so the more measurements there are, the less a single stray result affects it.
 

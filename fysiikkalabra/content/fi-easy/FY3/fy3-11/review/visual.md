@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 215745c92316249f
+CONTENT-HASH: 103dbcbc76a0699e
 
 ## Blocking
-- none
+None. The fixes read well and are consistent with the lesson symbols.
 
 ## Polish
-- none
+None new (earlier polish unchanged).
 
 ## Checked
-- batch delta review: "Luvun tärkeät käsitteet" panel captured from preview/fi-easy/fy3-11.html at 390 and 1280 px (the review/shots set has no capture of it) and opened — between the opening and stage 1, term bold over its explanation at 390 px, two-column at 1280 px, no clipping, no horizontal overflow, no KaTeX error; top-390 opened in a montage (read-aloud "Kuuntele" button under the title, layout intact).
+Opened the changed sentence after W = pΔV and the worked-example formula stage at 390 px: render fine. Language: fi-easy; no clipping in the changed places.

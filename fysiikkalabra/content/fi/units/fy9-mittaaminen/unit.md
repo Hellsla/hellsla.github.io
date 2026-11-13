@@ -201,9 +201,11 @@ Mittausaineistojen käsittely ja kuvaajien tulkinta ovat keskeisiä ja usein esi
 
 Toistetun mittauksen paras arvio on keskiarvo $\bar{x}$. Tässä kurssissa hajontaa arvioidaan vaihteluvälin puolikkaana, ja tulos ilmoitetaan muodossa $\bar{x} \pm \Delta x$:
 
-```kaavat
-mittaustuloksen epävarmuus :: \Delta x = \frac{x_\text{max} - x_\text{min}}{2}
-suhteellinen epävarmuus :: \varepsilon = \frac{\Delta x}{\bar{x}} \cdot 100\,\%
+```latex
+\begin{aligned}
+\Delta x &= \frac{x_\text{max} - x_\text{min}}{2} \\
+\varepsilon &= \frac{\Delta x}{\bar{x}} \cdot 100\,\%
+\end{aligned}
 ```
 
 missä $x_\text{max}$ ja $x_\text{min}$ ovat suurin ja pienin tulos, $\Delta x$ mittausepävarmuus ja $\varepsilon$ suhteellinen epävarmuus. Kertamittauksessa lukeman epävarmuutta voidaan yksinkertaisessa tilanteessa arvioida puoleksi pienimmästä asteikkovälistä, mutta kokonaisepävarmuuteen vaikuttavat myös menetelmä ja muut virhelähteet. Epävarmuus pyöristetään yhteen merkitsevään numeroon (kahteen, jos ensimmäinen numero on 1), ja tulos samaan desimaaliin. Kerto- ja jakolaskun tulos saa yhtä monta merkitsevää numeroa kuin epätarkin mitattu lähtöarvo; tarkat määrät, kuten kokonaisluvut ja muunnoskertoimet, eivät rajoita tarkkuutta.
@@ -215,7 +217,7 @@ Toistaminen vaimentaa satunnaisvirheen vaikutusta keskiarvossa, mutta systemaatt
 Jos pisteet asettuvat likimain suoralle, niihin sovitetaan suora pisteiden lomaan:
 
 ```kaavat
-suoran yhtälö :: y = kx + b
+y = kx + b
 kulmakerroin :: k = \frac{\Delta y}{\Delta x}
 ```
 
@@ -302,8 +304,8 @@ missä $k$ on kulmakerroin ja $b$ vakiotermi eli $y$:n arvo, kun $x = 0$. Kulmak
 
 Kulmakertoimen epävarmuutta voi arvioida jyrkimmän ja loivimman suoran avulla, jotka vielä kulkevat epävarmuusjanojen kautta:
 
-```kaavat
-kulmakertoimen epävarmuus :: \Delta k = \frac{k_\text{max} - k_\text{min}}{2}
+```latex
+\Delta k = \frac{k_\text{max} - k_\text{min}}{2}
 ```
 
 Ne rajaavat arvioidun vaihteluvälin, eivät varmoja rajoja.
@@ -312,10 +314,12 @@ Ne rajaavat arvioidun vaihteluvälin, eivät varmoja rajoja.
 
 Kun malli ei ole suora, akseleille valitaan suureet, joiden välinen riippuvuus on suora. Malli kirjoitetaan muotoon $y = kx + b$:
 
-```kaavat
-matka levosta tasaisesti kiihtyvässä liikkeessä :: s = \tfrac{a}{2} \cdot t^2
-Boylen laki :: p = C \cdot \tfrac{1}{V}
-astian ja nesteen yhteinen massa :: m = \rho V + m_0
+```latex
+\begin{aligned}
+s &= \tfrac{a}{2} \cdot t^2 \\
+p &= C \cdot \tfrac{1}{V} \\
+m &= \rho V + m_0
+\end{aligned}
 ```
 
 Levosta tasaisesti kiihtyvässä liikkeessä, kun aika lasketaan liikkeen alusta, $(t^2, s)$-kuvaaja on origon kautta kulkeva suora, jonka kulmakerroin on $\tfrac{a}{2}$. Kun kaasun määrä ja lämpötila pysyvät samoina, Boylen lain mukaan $(\tfrac{1}{V}, p)$-kuvaaja on suora; vakio $C$ on paineen ja tilavuuden tulo. Astiassa punnitun nesteen kokonaismassa $m$ on tilavuuden $V$ suhteen suora, jonka kulmakerroin on tiheys $\rho$ ja vakiotermi astian massa $m_0$.

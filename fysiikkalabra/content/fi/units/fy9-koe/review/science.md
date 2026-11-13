@@ -1,12 +1,15 @@
 VERDICT: PASS
 CONTENT-HASH: 33fcccd3aae0531c
-Delta review (solution practice, 2026-11-12) of the version passed before.
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 33fcccd3aae0531c.
 
 ## Blocking
 (none)
 
 ## Polish
-1. `sovella/tasks.json` s2 c: `answer.value` is still 9.81 while the model answer now gives $g \approx 9{,}8\,\text{m/s}^2$ with two figures (the rubric accepts both, tolerance covers both). Fix: set the value to 9.8 so the stored answer matches the solution.
+(none)
 
 ## Checked
-s2 c: $g = 4\pi^2/k$ = 9,808 m/s²; the two-figure reason (reading 0,46 s², ±0,05 s² ⇒ ±0,3 m/s²) is right. The `unit.md` precision sentence (exact quantities never limit precision) is correct. The fi, fi-easy and en diffs carry identical mathematics (every changed formula compared token by token); answers.py run; `units.py check` passes.
+- c: $g = 4\pi^2/k = 9.808$ m/s²; now 9.8 m/s² with two significant figures because the line reading 0.46 s² has two. The ±0.3 m/s² estimate is consistent.
+- unit.md precision rule (exact counts and conversion factors do not limit the result) is correct and agrees with fy9-mittaaminen.
+- Note: the hash is unchanged although files changed.
+Every number in the changed lines was recomputed with an independent script (scratchpad fy9merge/sci_fi.py); `units.py hash` gave the same value at the start and the end. LaTeX in all added lines has balanced `$` and braces.

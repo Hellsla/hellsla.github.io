@@ -1,8 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 101f629e435eab31
+CONTENT-HASH: 8fb4b213f8bfbe4b
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 101f629e435eab31.
 
-Delta review (solution practice, 2026-11-12) of the version passed before.
+## Blocking
+(none)
 
-Component form of the friction case with m' = m + m_x is clear. POLISH: s? mu0 Kaava uses alpha_max and alpha_min without defining them (largest and smallest accepted angle, 24 and 21 deg); add 'missa alpha_max ja alpha_min ovat hyvaksytyista kulmista suurin ja pienin'.
+## Polish
+(none)
 
-Checked: diff since 761b6673, symbols defined, solved expression equals Sijoitus, answers.py output, tasks.json answer/criteria, cross-language number match.
+## Checked
+Kytketyt laatikot: $a$ ratkaistu symboleissa ennen $P$:tä; voimakuvio ennen yhtälöitä säilyi (voimakuvio-lohko ennen Kaavaa); lisäpunnus $m_x$, $k'$ ja $F_0'$; lepokitka $\mu_0 = \tan\alpha_\text{ka}$ ja epävarmuuden kaava. Compared the diff hunks against the #522 notation and the unit text; no formula name or symbol of #522 is contradicted by a #523 solution, no derivation duplicated, LaTeX in the hunks balanced. Sample solutions now solve the asked quantity in symbols before the numbers (CLAUDE.md Lesson form 7), which supports the learning path.

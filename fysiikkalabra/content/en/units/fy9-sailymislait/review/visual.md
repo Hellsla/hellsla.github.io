@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: bedac2c705f34dec
-
-Delta review (solution practice, 2026-11-12) of the version passed before.
+CONTENT-HASH: 0775225e55ef25bc
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 9b293083aae3919e.
 
 ## Blocking
-None. Built fy9-sailymislait (en) with ?ratkaisut=1, every details element opened, at 390 and 1280 px. No .katex-error, no script errors; the changed Sijoitus, Kaava and Vastaus lines render with upright subscripts and units, thin spaces and \cdot (no x, no \times); decimal comma in fi and fi-easy, decimal point in en; the new symbol definitions ("missä ...") read naturally and the sentences are in the right language.
+(none)
 
 ## Polish
-1. Page-level horizontal overflow at 390 px when all details are open (258 px): long inline-math Sijoitus or answer lines in .reveal or .answer blocks do not wrap or scroll. Verified in the previous version (git 761b6673) for energia, voimat, sahkokentta and mittaaminen, so it is not a regression of this change (mittaaminen is about 40 px wider now). Fix when convenient: break such a substitution into a display line (\begin{aligned}) or let .reveal/.answer have overflow-x:auto.
+(none)
+
+## Checked
+Source-level delta review of the diff (the changes are inline formulas and short text, no figure or layout changes, so no new captures were taken). Looked at: exit-ticket.json, inquiry.json and sovella/solutions.md: collision share, slide share $1 - v^2/(2gh)$, wind and hydro power ratios, pile-driver $N k E_\text{loss}$. Symbol $k$ is defined in each Given. No clash between the #522 notation and the #523 symbols found; no duplicated derivation; every changed line has balanced `$` and braces; units upright with a thin space.

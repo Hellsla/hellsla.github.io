@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 0471406a46280667
-Mode: full (translation review against the reviewed Finnish set, teacher procedure 2026-10-28)
-Round 2
+CONTENT-HASH: c18c297dc5096d89
 
 ## Blocking
-(none)
+
+None. L3-01 now defines eta = P_a/P_o and P_o = P_a/eta; the solution's principle is learnable.
 
 ## Polish
-(none)
+
+None.
 
 ## Checked
-- fy3-11-L2-08 (fi-easy): same task structure and scaffolding as fi; each distractor feedback names its misconception and does not give the answer away before the choice.
-- Language: clearer Finnish per NOTES.md §12, short sentences, same physics .
-- Workload and level fit L2; solution is learnable (staged, with a reasonableness check).
+
+Diff since previous PASS and the MAFY notation in lesson/solutions; symbols defined where first used; numbers and levels unchanged.

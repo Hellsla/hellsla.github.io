@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "contribution": "Kun kaasu laajenee, se tekee työn $W_\\text{k} = p\\,\\Delta V$. Työ näkyy $(V, p)$-kuvaajassa pinta-alana. Mäntäkone toistaa liikettään. Se voi muuttaa lämpöä työksi vain, jos se luovuttaa osan lämmöstä kylmempään paikkaan. Tämä rajoittaa hyötysuhdetta $\\eta = W/Q_1$. Siksi yhteistuotanto ja lämpöpumput ovat kannattavia.",
+  "contribution": "Kun kaasu laajenee, se tekee työn $W = p\\,\\Delta V$. Työ näkyy $(V, p)$-kuvaajassa pinta-alana. Mäntäkone toistaa liikettään. Se voi muuttaa lämpöä työksi vain, jos se luovuttaa osan lämmöstä kylmempään paikkaan. Tämä rajoittaa hyötysuhdetta $\\eta = W/Q_1$. Siksi yhteistuotanto ja lämpöpumput ovat kannattavia.",
   "learn": [
     "laskemaan laajenevan kaasun tekemän työn ja lukemaan sen paineen ja tilavuuden kuvaajan pinta-alana.",
     "selittämään, miksi lämpövoimakone voi muuttaa lämpöä työksi vain silloin, kun se luovuttaa osan lämmöstä kylmempään.",
@@ -33,7 +33,7 @@
         {
           "text": "$\\Delta U = 250\\,\\text{J}$",
           "correct": true,
-          "feedback": "Oikein: $\\Delta U = Q + W = 400\\,\\text{J} + (-150\\,\\text{J}) = 250\\,\\text{J}$. Osa lämmöstä lähti ulos työnä, kun kaasu työnsi mäntää. Tällä tunnilla kaasun tekemää työtä merkitään $W_\\text{k}$. Tässä $W_\\text{k} = 150\\,\\text{J}$ ja $\\Delta U = Q - W_\\text{k}$. Tunnilla lasketaan, kuinka suuri tuo työ on."
+          "feedback": "Oikein: $\\Delta U = Q + W = 400\\,\\text{J} + (-150\\,\\text{J}) = 250\\,\\text{J}$. Osa lämmöstä lähti ulos työnä, kun kaasu työnsi mäntää. Kaasu teki siis työn $150\\,\\text{J}$. Siihen tehty työ oli $W = -150\\,\\text{J}$. Tunnilla lasketaan, kuinka suuri tuo työ on."
         },
         {
           "text": "$\\Delta U = 400\\,\\text{J}$",
@@ -51,7 +51,7 @@
       "stage": "ennusta",
       "type": "choice",
       "title": "Ennuste 1: kaasun tekemä työ",
-      "prompt": "Sylinterissä olevaa kaasua lämmitetään. Punnukset pitävät paineen $200\\,\\text{kPa}$:ssa. Kaasun tilavuus kasvaa $1{,}0\\,\\text{l}$:sta $2{,}5\\,\\text{l}$:aan. Kuinka suuren työn $W_\\text{k}$ kaasu tekee, kun se nostaa mäntää? ($1\\,\\text{l} = 0{,}001\\,\\text{m}^3$)",
+      "prompt": "Sylinterissä olevaa kaasua lämmitetään. Punnukset pitävät paineen $200\\,\\text{kPa}$:ssa. Kaasun tilavuus kasvaa $1{,}0\\,\\text{l}$:sta $2{,}5\\,\\text{l}$:aan. Kuinka suuren työn $W$ kaasu tekee, kun se nostaa mäntää? ($1\\,\\text{l} = 0{,}001\\,\\text{m}^3$)",
       "justify": true,
       "reveal": {
         "after": "exp-1",
@@ -59,21 +59,21 @@
       },
       "choices": [
         {
-          "text": "$W_\\text{k} = 200\\,\\text{J}$, koska työ määräytyy paineesta, joka pysyy $200\\,\\text{kPa}$:ssa.",
-          "feedback": "Kokeessa paine on joka rivillä $200\\,\\text{kPa}$. Mallissa $W_\\text{k}$ kasvaa kuitenkin tilavuuden muutoksen mukana: $\\Delta V = 1{,}00\\,\\text{l}$ antaa $200\\,\\text{J}$ ja $\\Delta V = 1{,}50\\,\\text{l}$ antaa $300\\,\\text{J}$. Pelkkä paine ei tee työtä. Mäntä tekee työtä vain silloin, kun se liikkuu."
+          "text": "$W = 200\\,\\text{J}$, koska työ määräytyy paineesta, joka pysyy $200\\,\\text{kPa}$:ssa.",
+          "feedback": "Kokeessa paine on joka rivillä $200\\,\\text{kPa}$. Mallissa $W$ kasvaa kuitenkin tilavuuden muutoksen mukana: $\\Delta V = 1{,}00\\,\\text{l}$ antaa $200\\,\\text{J}$ ja $\\Delta V = 1{,}50\\,\\text{l}$ antaa $300\\,\\text{J}$. Pelkkä paine ei tee työtä. Mäntä tekee työtä vain silloin, kun se liikkuu."
         },
         {
-          "text": "$W_\\text{k} = 300\\,\\text{J}$",
+          "text": "$W = 300\\,\\text{J}$",
           "correct": true,
-          "feedback": "Mallin arvot tukevat tätä. Lämpö $Q = 750\\,\\text{J}$ vie tilavuuden $1{,}0\\,\\textsf{l}$:stä $2{,}5\\,\\textsf{l}$:ään, ja malli antaa $W_\\text{k} = 300\\,\\text{J}$. $(V, p)$-kuvaajan oranssi suorakulmio on $200\\,\\text{kPa}$ korkea ja $1{,}5\\,\\textsf{l}$ leveä: $200\\,000\\,\\text{Pa} \\cdot 0{,}0015\\,\\text{m}^3 = 300\\,\\text{J}$."
+          "feedback": "Mallin arvot tukevat tätä. Lämpö $Q = 750\\,\\text{J}$ vie tilavuuden $1{,}0\\,\\textsf{l}$:stä $2{,}5\\,\\textsf{l}$:ään, ja malli antaa $W = 300\\,\\text{J}$. $(V, p)$-kuvaajan oranssi suorakulmio on $200\\,\\text{kPa}$ korkea ja $1{,}5\\,\\textsf{l}$ leveä: $200\\,000\\,\\text{Pa} \\cdot 0{,}0015\\,\\text{m}^3 = 300\\,\\text{J}$."
         },
         {
-          "text": "$W_\\text{k} = 500\\,\\text{J}$",
-          "feedback": "Tässä paine on kerrottu lopputilavuudella $2{,}5\\,\\textsf{l}$. Kokeessa $(V, p)$-kuvaajan oranssi suorakulmio alkaa kohdasta $1{,}0\\,\\textsf{l}$, koska työtä tehdään vain laajenemisen aikana. Suorakulmion leveys on $\\Delta V = 1{,}5\\,\\text{l}$, ja malli antaa $W_\\text{k} = 300\\,\\text{J}$."
+          "text": "$W = 500\\,\\text{J}$",
+          "feedback": "Tässä paine on kerrottu lopputilavuudella $2{,}5\\,\\textsf{l}$. Kokeessa $(V, p)$-kuvaajan oranssi suorakulmio alkaa kohdasta $1{,}0\\,\\textsf{l}$, koska työtä tehdään vain laajenemisen aikana. Suorakulmion leveys on $\\Delta V = 1{,}5\\,\\text{l}$, ja malli antaa $W = 300\\,\\text{J}$."
         },
         {
-          "text": "$W_\\text{k} = 300\\,000\\,\\text{J}$",
-          "feedback": "Tässä pascalit on kerrottu litroilla. Kokeessa malli antaa $1{,}5\\,\\textsf{l}$:n laajenemiselle $W_\\text{k} = 300\\,\\text{J}$. Tilavuus pitää muuttaa kuutiometreiksi: $1{,}5\\,\\text{l} = 0{,}0015\\,\\text{m}^3$."
+          "text": "$W = 300\\,000\\,\\text{J}$",
+          "feedback": "Tässä pascalit on kerrottu litroilla. Kokeessa malli antaa $1{,}5\\,\\textsf{l}$:n laajenemiselle $W = 300\\,\\text{J}$. Tilavuus pitää muuttaa kuutiometreiksi: $1{,}5\\,\\text{l} = 0{,}0015\\,\\text{m}^3$."
         }
       ]
     },
@@ -82,9 +82,9 @@
       "stage": "tutki",
       "type": "sim",
       "text": "Simulaatiossa kaasua lämmitetään sylinterissä. Kaksi punnusta painaa mäntää. Kaasun paine on $200\\,\\text{kPa}$.",
-      "howto": "Valitse lämpö $Q$ ja paina *Lämmitä*. Mäntä nousee, ja $(V, p)$-kuvaajaan täyttyy kaasun tekemä työ. Paina sitten *Palauta mäntä*. Valinnalla *samassa paineessa* punnukset työntävät männän takaisin. Valinnalla *jäähdytä ensin* kaasu jäähtyy ensin paineeseen $p_2$ (liukusäädin). *Nopeus* muuttaa vain tahtia, ei tuloksia. Oranssi pinta-ala on kaasun tekemä työ $W_\\text{k}$. Sininen pinta-ala on kaasuun tehty työ. Palkeissa sama väri tarkoittaa samaa energiaa.",
+      "howto": "Valitse lämpö $Q$ ja paina *Lämmitä*. Mäntä nousee, ja $(V, p)$-kuvaajaan täyttyy kaasun tekemä työ. Paina sitten *Palauta mäntä*. Valinnalla *samassa paineessa* punnukset työntävät männän takaisin. Valinnalla *jäähdytä ensin* kaasu jäähtyy ensin paineeseen $p_2$ (liukusäädin). *Nopeus* muuttaa vain tahtia, ei tuloksia. Oranssi pinta-ala on kaasun tekemä työ $p\\,\\Delta V$. Sininen pinta-ala on kaasuun tehty työ. Palkeissa sama väri tarkoittaa samaa energiaa.",
       "model": "Lukemat ovat mallin arvoja. Sylinterissä on yksiatomista ideaalikaasua. Mäntä on kitkaton ja painoton, eikä sen yläpuolella ole ilmaa. Paineen aiheuttavat siis punnukset: kaksi punnusta antaa paineen $200\\,\\text{kPa}$, ja alempi punnus yksin antaa paineen $p_2$. Kuuma levy on aina kaasua kuumempi ja kylmä vesi on aina kaasua kylmempi. Lämpöä ei karkaa muualle. Alkutilavuus on $V_1 = 1{,}00\\,\\text{l}$.",
-      "calc": "Sisäenergian muutos on $\\Delta U = \\tfrac{3}{2}nR\\Delta T = \\tfrac{3}{2}\\Delta(pV)$. Vakiopaineessa $p_1$ kaasun tekemä työ on $W_\\text{k} = p_1\\Delta V$. Lisäksi $Q = \\Delta U + W_\\text{k} = \\tfrac{5}{2}p_1\\Delta V$, joten $\\Delta V = \\dfrac{2Q}{5p_1}$. Vaihtoehdossa *jäähdytä ensin* ylempi punnus siirretään ylös hyllylle ja alhaalta otetaan uusi punnus. Kun mäntä on lukittu, tilavuus ei muutu. Kierroksen nettotyö $W = (p_1 - p_2)\\Delta V$ on punnuksen nostamiseen kulunut energia, ja $Q_1 - Q_2 = W$. Hyötysuhde on $\\eta = \\dfrac{W}{Q_1}$."
+      "calc": "Sisäenergian muutos on $\\Delta U = \\tfrac{3}{2}nR\\Delta T = \\tfrac{3}{2}\\Delta(pV)$. Vakiopaineessa $p_1$ kaasun tekemä työ on $p_1\\Delta V$. Siksi kaasuun tehty työ on $W = -p_1\\Delta V$. Ensimmäisestä pääsäännöstä saadaan $Q = \\Delta U - W = \\Delta U + p_1\\Delta V = \\tfrac{5}{2}p_1\\Delta V$, joten $\\Delta V = \\dfrac{2Q}{5p_1}$. Vaihtoehdossa *jäähdytä ensin* ylempi punnus siirretään ylös hyllylle ja alhaalta otetaan uusi punnus. Kun mäntä on lukittu, tilavuus ei muutu. Kierroksen nettotyö $W = (p_1 - p_2)\\Delta V$ on punnuksen nostamiseen kulunut energia, ja $Q_1 - Q_2 = W$. Hyötysuhde on $\\eta = \\dfrac{W}{Q_1}$."
     },
     {
       "id": "exp-1",
@@ -123,7 +123,7 @@
       "min": 2,
       "question": {
         "type": "numeric",
-        "prompt": "Laske rivin $Q = 1000\\,\\text{J}$ tilavuuden muutoksesta kaasun tekemä työ $W_\\text{k} = p\\,\\Delta V$. Paine on $p = 200\\,\\text{kPa}$. Vastaa jouleina.",
+        "prompt": "Laske rivin $Q = 1000\\,\\text{J}$ tilavuuden muutoksesta kaasun tekemä työ $W = p\\,\\Delta V$. Paine on $p = 200\\,\\text{kPa}$. Vastaa jouleina.",
         "answer": 400,
         "unit": "J",
         "tolerance": 0.02,
@@ -146,7 +146,7 @@
             "feedback": "Tämä on koko lämpö $Q$. Kaasu lämpenee, joten osa lämmöstä jää kaasun sisäenergiaksi. Työ on vain $p\\,\\Delta V$."
           }
         ],
-        "solution": "**Annettu:** mittausrivi, jolla $Q = 1000\\,\\text{J}$ ja paine pysyy vakiona, $p = 200\\,\\text{kPa}$; taulukosta tilavuuden muutos $\\Delta V = 2{,}00\\,\\textsf{l}$\n\n**Kysytty:** kaasun tekemä työ $W_\\text{k}$ jouleina\n\n**Periaate:** Paine pysyy vakiona, koska punnukset eivät muutu. Siksi kaasun voima mäntään on koko laajenemisen ajan sama. Silloin työ on paine kertaa tilavuuden muutos. Se on myös $(V, p)$-kuvaajan suorakulmion pinta-ala.\n\n**Kaava:** $W_\\text{k} = p\\,\\Delta V$\n\n**Muunnokset:** $200\\,\\text{kPa} = 200\\,000\\,\\text{Pa}$ ja $1\\,\\textsf{l} = 10^{-3}\\,\\text{m}^3$, joten $2{,}00\\,\\textsf{l} = 0{,}00200\\,\\text{m}^3$. Silloin $\\text{Pa} \\cdot \\text{m}^3 = \\text{J}$.\n\n**Sijoitus:** $W_\\text{k} = 200\\,000\\,\\text{Pa} \\cdot 0{,}00200\\,\\text{m}^3 = 400\\,\\text{J}$\n\n**Vastaus:** $400\\,\\text{J}$, kolme merkitsevää numeroa. Rajoittava tieto on tilavuuden muutos $2{,}00\\,\\textsf{l}$ (kolme numeroa). Paine $200\\,\\text{kPa}$ on simulaation asetusarvo, jota ei mitata. Siksi se ei rajoita tarkkuutta.\n\n**Järkevyys:** Arvio: $200\\,\\text{kPa} \\cdot 2\\,\\textsf{l} = 2 \\cdot 10^5\\,\\text{Pa} \\cdot 2 \\cdot 10^{-3}\\,\\text{m}^3 = 400\\,\\text{J}$. Työ on pienempi kuin koko lämpö $Q = 1000\\,\\text{J}$, kuten pitääkin. Osa lämmöstä jää sisäenergiaksi: rivillä $\\Delta U = 600\\,\\text{J}$ ja $\\Delta U + W_\\text{k} = 1000\\,\\text{J} = Q$. Mallin yksiatomiselle kaasulle työksi menee vakiopaineessa aina $\\tfrac{2}{5}$ lämmöstä."
+        "solution": "**Annettu:** mittausrivi, jolla $Q = 1000\\,\\text{J}$ ja paine pysyy vakiona, $p = 200\\,\\text{kPa}$; taulukosta tilavuuden muutos $\\Delta V = 2{,}00\\,\\textsf{l}$\n\n**Kysytty:** kaasun tekemä työ $W$ jouleina\n\n**Periaate:** Paine pysyy vakiona, koska punnukset eivät muutu. Siksi kaasun voima mäntään on koko laajenemisen ajan sama. Silloin työ on paine kertaa tilavuuden muutos. Se on myös $(V, p)$-kuvaajan suorakulmion pinta-ala.\n\n**Kaava:** $W = p\\,\\Delta V$\n\n**Muunnokset:** $200\\,\\text{kPa} = 200\\,000\\,\\text{Pa}$ ja $1\\,\\textsf{l} = 10^{-3}\\,\\text{m}^3$, joten $2{,}00\\,\\textsf{l} = 0{,}00200\\,\\text{m}^3$. Silloin $\\text{Pa} \\cdot \\text{m}^3 = \\text{J}$.\n\n**Sijoitus:** $W = 200\\,000\\,\\text{Pa} \\cdot 0{,}00200\\,\\text{m}^3 = 400\\,\\text{J}$\n\n**Vastaus:** $400\\,\\text{J}$, kolme merkitsevää numeroa. Rajoittava tieto on tilavuuden muutos $2{,}00\\,\\textsf{l}$ (kolme numeroa). Paine $200\\,\\text{kPa}$ on simulaation asetusarvo, jota ei mitata. Siksi se ei rajoita tarkkuutta.\n\n**Järkevyys:** Arvio: $200\\,\\text{kPa} \\cdot 2\\,\\textsf{l} = 2 \\cdot 10^5\\,\\text{Pa} \\cdot 2 \\cdot 10^{-3}\\,\\text{m}^3 = 400\\,\\text{J}$. Työ on pienempi kuin koko lämpö $Q = 1000\\,\\text{J}$, kuten pitääkin. Osa lämmöstä jää sisäenergiaksi: rivillä $\\Delta U = 600\\,\\text{J}$ ja $\\Delta U + p\\,\\Delta V = 1000\\,\\text{J} = Q$. Mallin yksiatomiselle kaasulle työksi menee vakiopaineessa aina $\\tfrac{2}{5}$ lämmöstä."
       }
     },
     {
@@ -277,7 +277,7 @@
       "stage": "selita",
       "type": "reflect",
       "title": "Palaa ennusteisiisi",
-      "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin ja kaavoihin $W_\\text{k} = p\\,\\Delta V$, $W = Q_1 - Q_2$ ja $\\eta = W/Q_1$. Palaa sitten alun kysymykseen. Minne polttoaineen energiasta se osa menee, joka ei muutu sähköksi? Miksi parempikaan tekniikka ei saa sitä kokonaan sähköksi? Miten sen voi silti käyttää hyödyksi?",
+      "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin ja kaavoihin $W = p\\,\\Delta V$, $W = Q_1 - Q_2$ ja $\\eta = W/Q_1$. Palaa sitten alun kysymykseen. Minne polttoaineen energiasta se osa menee, joka ei muutu sähköksi? Miksi parempikaan tekniikka ei saa sitä kokonaan sähköksi? Miten sen voi silti käyttää hyödyksi?",
       "predictions": [
         "pred-1",
         "pred-2"
@@ -297,24 +297,24 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Etsi virhe",
-      "prompt": "Sylinterissä oleva kaasu laajenee vakiopaineessa $200\\,\\text{kPa}$. Sen tilavuus kasvaa $1{,}2\\,\\text{l}$. Samalla kaasuun siirtyy lämpö $600\\,\\text{J}$. Opiskelija laskee sisäenergian muutoksen näin: $W_\\text{k} = p\\,\\Delta V = 200\\,000\\,\\text{Pa} \\cdot 0{,}0012\\,\\text{m}^3 = 240\\,\\text{J}$, joten $\\Delta U = Q + W_\\text{k} = 600\\,\\text{J} + 240\\,\\text{J} = 840\\,\\text{J}$. Missä on virhe?",
+      "prompt": "Sylinterissä oleva kaasu laajenee vakiopaineessa $200\\,\\text{kPa}$. Sen tilavuus kasvaa $1{,}2\\,\\text{l}$. Samalla kaasuun siirtyy lämpö $600\\,\\text{J}$. Opiskelija laskee sisäenergian muutoksen näin: $W = p\\,\\Delta V = 200\\,000\\,\\text{Pa} \\cdot 0{,}0012\\,\\text{m}^3 = 240\\,\\text{J}$, joten $\\Delta U = Q + W = 600\\,\\text{J} + 240\\,\\text{J} = 840\\,\\text{J}$. Missä on virhe?",
       "choices": [
         {
           "text": "Litrojen muunnoksessa: $1{,}2\\,\\text{l}$ on $1{,}2\\,\\text{m}^3$.",
           "feedback": "Litra on kuutiodesimetri, ja $1\\,\\text{l} = 0{,}001\\,\\text{m}^3$. Siksi $1{,}2\\,\\text{l} = 0{,}0012\\,\\text{m}^3$. Muunnos on oikein, ja kaasun tekemä työ on todella $240\\,\\text{J}$. Virhe on muualla."
         },
         {
-          "text": "Työn etumerkissä: työtä tekevä kaasu luovuttaa energiaa, joten $\\Delta U = Q - W_\\text{k} = 360\\,\\text{J}$.",
+          "text": "Työn etumerkissä: pääsäännössä $W$ on kaasuun tehty työ. Laajenevaan kaasuun tehty työ on $W = -240\\,\\text{J}$, joten $\\Delta U = Q + W = 360\\,\\text{J}$.",
           "correct": true,
-          "feedback": "Oikein. Kaasu tekee $240\\,\\text{J}$:n työn, joten osa tuodusta lämmöstä lähtee työnä ulos: $\\Delta U = 600\\,\\text{J} - 240\\,\\text{J} = 360\\,\\text{J}$. Sama tulos saadaan luvun *Sisäenergia, lämpömäärä ja energian säilyminen* kaavasta $\\Delta U = Q + W$. Silloin ympäristön kaasuun tekemä työ on $W = -W_\\text{k} = -240\\,\\text{J}$."
+          "feedback": "Oikein. Kaasu tekee $240\\,\\text{J}$:n työn, joten osa tuodusta lämmöstä lähtee työnä ulos. Ensimmäisessä pääsäännössä $\\Delta U = Q + W$ on kaasuun tehty työ $W = -p\\,\\Delta V = -240\\,\\text{J}$. Siksi $\\Delta U = 600\\,\\text{J} + (-240\\,\\text{J}) = 360\\,\\text{J}$."
         },
         {
           "text": "Lämmön etumerkissä: $Q$ on negatiivinen, koska kaasu luovuttaa energiaa laajetessaan.",
-          "feedback": "Lämpö siirtyy kaasuun, joten $Q = +600\\,\\text{J}$. Kaasu luovuttaa energiaa työnä, ei lämpönä. Siksi työ vähennetään: $\\Delta U = Q - W_\\text{k}$."
+          "feedback": "Lämpö siirtyy kaasuun, joten $Q = +600\\,\\text{J}$. Kaasu luovuttaa energiaa työnä, ei lämpönä. Siksi kaasuun tehty työ on negatiivinen, $W = -p\\,\\Delta V$, ja $\\Delta U = Q - p\\,\\Delta V$."
         },
         {
           "text": "Laskussa ei ole virhettä.",
-          "feedback": "Kokeessa 1 sisäenergia kasvoi aina vähemmän kuin tuotu lämpö, koska kaasu teki työtä. Työtä tekevän kaasun sisäenergia ei voi kasvaa enempää kuin tuotu lämpö $600\\,\\text{J}$: $\\Delta U = Q - W_\\text{k}$."
+          "feedback": "Kokeessa 1 sisäenergia kasvoi aina vähemmän kuin tuotu lämpö, koska kaasu teki työtä. Työtä tekevän kaasun sisäenergia ei voi kasvaa enempää kuin tuotu lämpö $600\\,\\text{J}$: $\\Delta U = Q - p\\,\\Delta V$."
         }
       ],
       "optional": true
@@ -368,8 +368,8 @@
       "tolerance": 0.03,
       "hints": [
         "Mistä kahdesta lähteestä kaukolämpöverkkoon luovutettu lämpö tulee?",
-        "Lämpökerroin on $\\varepsilon = P_\\text{sisälle}/P_\\text{pumppu}$. Energia säilyy: $P_\\text{sisälle} = P_\\text{jätevesi} + P_\\text{pumppu}$.",
-        "Verkkoon luovutettu teho on $P_\\text{sisälle} = \\varepsilon P_\\text{pumppu} = 3{,}50 \\cdot 9{,}00\\,\\text{MW} = 31{,}5\\,\\text{MW}$. Vähennä siitä sähköteho."
+        "Lämpökerroin on $\\varepsilon = P_1/P_\\text{pumppu}$. Energia säilyy: $P_1 = P_\\text{jätevesi} + P_\\text{pumppu}$.",
+        "Verkkoon luovutettu teho on $P_1 = \\varepsilon P_\\text{pumppu} = 3{,}50 \\cdot 9{,}00\\,\\text{MW} = 31{,}5\\,\\text{MW}$. Vähennä siitä sähköteho."
       ],
       "mistakes": [
         {
@@ -381,7 +381,7 @@
           "feedback": "Jaoit sähkötehon lämpökertoimella. Lämpökerroin kertoo, kuinka moninkertaisen lämpötehon pumppu luovuttaa sähkötehoon verrattuna. Luovutettu teho on siis $3{,}5 \\cdot 9{,}0\\,\\text{MW}$."
         }
       ],
-      "solution": "**Annettu:** lämpöpumpun sähköteho $P_\\text{pumppu} = 9{,}00\\,\\text{MW}$, lämpökerroin $\\varepsilon = 3{,}50$\n\n**Kysytty:** jätevedestä otettu lämpöteho $P_\\text{jätevesi}$ megawatteina\n\n**Periaate:** Lämpökerroin kertoo, kuinka moninkertaisen lämpötehon pumppu luovuttaa verkkoon sähkötehoonsa verrattuna. Energia säilyy: verkkoon luovutettu teho on pumpun sähköteho ja jätevedestä otettu teho yhteensä. Pumppu vain siirtää lämpöä.\n\n**Kaava:** $P_\\text{sisälle} = \\varepsilon P_\\text{pumppu}$ ja $P_\\text{sisälle} = P_\\text{jätevesi} + P_\\text{pumppu}$, joten\n\n$$\\begin{aligned} &P_\\text{jätevesi} \\\\ &= P_\\text{sisälle} - P_\\text{pumppu} \\\\ &= (\\varepsilon - 1) P_\\text{pumppu} \\end{aligned}$$\n\n**Muunnokset:** Teho on jo megawatteina ja lämpökerroin on yksikötön, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $P_\\text{jätevesi} = (3{,}50 - 1) \\cdot 9{,}00\\,\\text{MW} = 2{,}50 \\cdot 9{,}00\\,\\text{MW} = 22{,}5\\,\\text{MW}$\n\n**Vastaus:** $22{,}5\\,\\text{MW}$, kolme merkitsevää numeroa. Rajoittavat tiedot ovat sähköteho $9{,}00\\,\\text{MW}$ ja erotus $\\varepsilon - 1 = 3{,}50 - 1 = 2{,}50$ (kolme numeroa, koska kokonaisluku $1$ on tarkka). Molemmat on annettu kolmella numerolla.\n\n**Järkevyys:** Verkkoon menee $3{,}50 \\cdot 9{,}00\\,\\text{MW} = 31{,}5\\,\\text{MW}$, josta $22{,}5\\,\\text{MW} + 9{,}00\\,\\text{MW} = 31{,}5\\,\\text{MW}$ täsmää. Jätevedestä tuleva teho on suurempi kuin sähköteho, kuten pitääkin, kun lämpökerroin on yli 2. Pumppu ei luo energiaa vaan siirtää sitä.",
+      "solution": "**Annettu:** lämpöpumpun sähköteho $P_\\text{pumppu} = 9{,}00\\,\\text{MW}$, lämpökerroin $\\varepsilon = 3{,}50$\n\n**Kysytty:** jätevedestä otettu lämpöteho $P_\\text{jätevesi}$ megawatteina\n\n**Periaate:** Lämpökerroin kertoo, kuinka moninkertaisen lämpötehon pumppu luovuttaa verkkoon sähkötehoonsa verrattuna. Energia säilyy: verkkoon luovutettu teho on pumpun sähköteho ja jätevedestä otettu teho yhteensä. Pumppu vain siirtää lämpöä.\n\n**Kaava:** $P_1 = \\varepsilon P_\\text{pumppu}$ ja $P_1 = P_\\text{jätevesi} + P_\\text{pumppu}$, joten\n\n$$\\begin{aligned} &P_\\text{jätevesi} \\\\ &= P_1 - P_\\text{pumppu} \\\\ &= (\\varepsilon - 1) P_\\text{pumppu} \\end{aligned}$$\n\n**Muunnokset:** Teho on jo megawatteina ja lämpökerroin on yksikötön, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $P_\\text{jätevesi} = (3{,}50 - 1) \\cdot 9{,}00\\,\\text{MW} = 2{,}50 \\cdot 9{,}00\\,\\text{MW} = 22{,}5\\,\\text{MW}$\n\n**Vastaus:** $22{,}5\\,\\text{MW}$, kolme merkitsevää numeroa. Rajoittavat tiedot ovat sähköteho $9{,}00\\,\\text{MW}$ ja erotus $\\varepsilon - 1 = 3{,}50 - 1 = 2{,}50$ (kolme numeroa, koska kokonaisluku $1$ on tarkka). Molemmat on annettu kolmella numerolla.\n\n**Järkevyys:** Verkkoon menee $3{,}50 \\cdot 9{,}00\\,\\text{MW} = 31{,}5\\,\\text{MW}$, josta $22{,}5\\,\\text{MW} + 9{,}00\\,\\text{MW} = 31{,}5\\,\\text{MW}$ täsmää. Jätevedestä tuleva teho on suurempi kuin sähköteho, kuten pitääkin, kun lämpökerroin on yli 2. Pumppu ei luo energiaa vaan siirtää sitä.",
       "optional": true
     },
     {
@@ -399,12 +399,12 @@
       "choices": [
         {
           "text": "Suuren työn, koska paine on suuri ja vaikuttaa pullon seiniin koko vuoden.",
-          "feedback": "Paine saa aikaan voiman. Työtä tehdään kuitenkin vain, kun voiman kohde liikkuu. Pullon seinät eivät liiku eikä kaasun tilavuus muutu, joten $W_\\text{k} = p\\,\\Delta V = 0$."
+          "feedback": "Paine saa aikaan voiman. Työtä tehdään kuitenkin vain, kun voiman kohde liikkuu. Pullon seinät eivät liiku eikä kaasun tilavuus muutu, joten $W = p\\,\\Delta V = 0$."
         },
         {
           "text": "Ei lainkaan työtä, koska kaasun tilavuus ei muutu.",
           "correct": true,
-          "feedback": "Oikein. Kaasun tekemä työ on $W_\\text{k} = p\\,\\Delta V$, ja nyt $\\Delta V = 0$. Paine kertoo vain, että kaasu voisi tehdä työtä, jos se pääsisi laajenemaan."
+          "feedback": "Oikein. Kaasun tekemä työ on $W = p\\,\\Delta V$, ja nyt $\\Delta V = 0$. Paine kertoo vain, että kaasu voisi tehdä työtä, jos se pääsisi laajenemaan."
         },
         {
           "text": "Työn, joka on yhtä suuri kuin kaasun sisäenergia.",
@@ -426,7 +426,7 @@
         {
           "text": "Pumppu ottaa ulkoilmasta lämpöä $2{,}0\\,\\text{kWh}$. Sisälle luovutettu lämpö on ulkoa otetun lämmön ja sähköenergian summa.",
           "correct": true,
-          "feedback": "Oikein. Energian säilymisen mukaan $Q_\\text{sisälle} = Q_\\text{ulko} + E_\\text{s}$. Siksi $Q_\\text{ulko} = 3{,}0\\,\\text{kWh} - 1{,}0\\,\\text{kWh} = 2{,}0\\,\\text{kWh}$. Pumppu siirtää lämpöä kylmästä ulkoilmasta lämpimään sisälle. Siihen tarvitaan sähköä. Lämpökerroin on $\\varepsilon = 3{,}0\\,\\text{kWh} / 1{,}0\\,\\text{kWh} = 3{,}0$."
+          "feedback": "Oikein. Energian säilymisen mukaan $Q_1 = Q_2 + W$. Siksi $Q_2 = 3{,}0\\,\\text{kWh} - 1{,}0\\,\\text{kWh} = 2{,}0\\,\\text{kWh}$. Pumppu siirtää lämpöä kylmästä ulkoilmasta lämpimään sisälle. Siihen tarvitaan sähköä. Lämpökerroin on $\\varepsilon = 3{,}0\\,\\text{kWh} / 1{,}0\\,\\text{kWh} = 3{,}0$."
         },
         {
           "text": "Sähkö muuttuu lämmöksi pumpussa kolminkertaisella hyötysuhteella.",
@@ -443,13 +443,13 @@
       "stage": "tarkista",
       "type": "numeric",
       "title": "3. Kuvaaja ja laskeminen",
-      "prompt": "Kaasun $(V, p)$-kuvaaja on vaakasuora jana korkeudella $p = 150\\,\\text{kPa}$. Jana alkaa kohdasta $V = 2{,}0\\,\\text{l}$ ja päättyy kohtaan $V = 5{,}0\\,\\text{l}$. Kuinka suuren työn $W_\\text{k}$ kaasu tekee? Vastaa jouleina.",
+      "prompt": "Kaasun $(V, p)$-kuvaaja on vaakasuora jana korkeudella $p = 150\\,\\text{kPa}$. Jana alkaa kohdasta $V = 2{,}0\\,\\text{l}$ ja päättyy kohtaan $V = 5{,}0\\,\\text{l}$. Kuinka suuren työn $W$ kaasu tekee? Vastaa jouleina.",
       "answer": 450,
       "unit": "J",
       "tolerance": 0.02,
       "hints": [
         "Mitä janan ja $V$-akselin väliin jäävä pinta-ala tarkoittaa? Minkä muotoinen se on?",
-        "Suorakulmion pinta-ala on $W_\\text{k} = p\\,\\Delta V$. Tässä $\\Delta V = V_2 - V_1$.",
+        "Suorakulmion pinta-ala on $W = p\\,\\Delta V$. Tässä $\\Delta V = V_2 - V_1$.",
         "$\\Delta V = 5{,}0\\,\\text{l} - 2{,}0\\,\\text{l} = 3{,}0\\,\\text{l} = 0{,}0030\\,\\text{m}^3$."
       ],
       "mistakes": [
@@ -462,7 +462,7 @@
           "feedback": "Käytit lopputilavuutta $5{,}0\\,\\text{l}$. Työ on pinta-ala vain laajenemisen aikana. Leveys on siis tilavuuden muutos $\\Delta V = 3{,}0\\,\\text{l}$."
         }
       ],
-      "solution": "**Annettu:** $(V, p)$-kuvaaja on vaakasuora jana, jolla $p = 150\\,\\text{kPa}$, alkutilavuus $V_1 = 2{,}0\\,\\textsf{l}$ ja lopputilavuus $V_2 = 5{,}0\\,\\textsf{l}$\n\n**Kysytty:** kaasun tekemä työ $W_\\text{k}$ jouleina\n\n**Periaate:** Kaasun tekemä työ on $(V, p)$-kuvaajan ja $V$-akselin väliin jäävä pinta-ala. Jana on vaakasuora, joten paine pysyy vakiona. Silloin alue on suorakulmio, ja työ on paine kertaa tilavuuden muutos.\n\n**Kuvaajan lukeminen:** Suorakulmion korkeus on janan korkeus $p = 150\\,\\text{kPa}$. Leveys on janan alku- ja loppupisteen väli $V_2 - V_1 = 5{,}0\\,\\textsf{l} - 2{,}0\\,\\textsf{l} = 3{,}0\\,\\textsf{l}$. Alku- ja loppupisteen arvoja ei kerrota keskenään. Niiden erotus on leveys.\n\n**Kaava:** $W_\\text{k} = p\\,\\Delta V$, missä $\\Delta V = V_2 - V_1$\n\n**Muunnokset:** $150\\,\\text{kPa} = 150\\,000\\,\\text{Pa}$ ja $\\Delta V = 3{,}0\\,\\textsf{l} = 3{,}0 \\cdot 10^{-3}\\,\\text{m}^3 = 0{,}0030\\,\\text{m}^3$. Silloin $\\text{Pa} \\cdot \\text{m}^3 = \\text{J}$.\n\n**Sijoitus:** $W_\\text{k} = 150\\,000\\,\\text{Pa} \\cdot 0{,}0030\\,\\text{m}^3 = 450\\,\\text{J}$\n\n**Vastaus:** $450\\,\\text{J}$, kaksi merkitsevää numeroa. Rajoittava tieto on tilavuuden muutos $\\Delta V = 5{,}0\\,\\textsf{l} - 2{,}0\\,\\textsf{l} = 3{,}0\\,\\textsf{l}$ (lukemien erotuksella on yksi desimaali ja kaksi numeroa). Paine $150\\,\\text{kPa}$ on vähintään kahden numeron arvo.\n\n**Järkevyys:** Työ on positiivinen, koska tilavuus kasvaa. Arvio: $1{,}5 \\cdot 10^5\\,\\text{Pa} \\cdot 3 \\cdot 10^{-3}\\,\\text{m}^3 \\approx 450\\,\\text{J}$. Jos olisi käytetty lopputilavuutta $5{,}0\\,\\textsf{l}$, tulos olisi $750\\,\\text{J}$. Se vastaisi koko suorakulmiota nollatilavuudesta asti. Laajenemisen aikana työtä tehdään vain välillä $2{,}0$–$5{,}0\\,\\textsf{l}$."
+      "solution": "**Annettu:** $(V, p)$-kuvaaja on vaakasuora jana, jolla $p = 150\\,\\text{kPa}$, alkutilavuus $V_1 = 2{,}0\\,\\textsf{l}$ ja lopputilavuus $V_2 = 5{,}0\\,\\textsf{l}$\n\n**Kysytty:** kaasun tekemä työ $W$ jouleina\n\n**Periaate:** Kaasun tekemä työ on $(V, p)$-kuvaajan ja $V$-akselin väliin jäävä pinta-ala. Jana on vaakasuora, joten paine pysyy vakiona. Silloin alue on suorakulmio, ja työ on paine kertaa tilavuuden muutos.\n\n**Kuvaajan lukeminen:** Suorakulmion korkeus on janan korkeus $p = 150\\,\\text{kPa}$. Leveys on janan alku- ja loppupisteen väli $V_2 - V_1 = 5{,}0\\,\\textsf{l} - 2{,}0\\,\\textsf{l} = 3{,}0\\,\\textsf{l}$. Alku- ja loppupisteen arvoja ei kerrota keskenään. Niiden erotus on leveys.\n\n**Kaava:** $W = p\\,\\Delta V$, missä $\\Delta V = V_2 - V_1$\n\n**Muunnokset:** $150\\,\\text{kPa} = 150\\,000\\,\\text{Pa}$ ja $\\Delta V = 3{,}0\\,\\textsf{l} = 3{,}0 \\cdot 10^{-3}\\,\\text{m}^3 = 0{,}0030\\,\\text{m}^3$. Silloin $\\text{Pa} \\cdot \\text{m}^3 = \\text{J}$.\n\n**Sijoitus:** $W = 150\\,000\\,\\text{Pa} \\cdot 0{,}0030\\,\\text{m}^3 = 450\\,\\text{J}$\n\n**Vastaus:** $450\\,\\text{J}$, kaksi merkitsevää numeroa. Rajoittava tieto on tilavuuden muutos $\\Delta V = 5{,}0\\,\\textsf{l} - 2{,}0\\,\\textsf{l} = 3{,}0\\,\\textsf{l}$ (lukemien erotuksella on yksi desimaali ja kaksi numeroa). Paine $150\\,\\text{kPa}$ on vähintään kahden numeron arvo.\n\n**Järkevyys:** Työ on positiivinen, koska tilavuus kasvaa. Arvio: $1{,}5 \\cdot 10^5\\,\\text{Pa} \\cdot 3 \\cdot 10^{-3}\\,\\text{m}^3 \\approx 450\\,\\text{J}$. Jos olisi käytetty lopputilavuutta $5{,}0\\,\\textsf{l}$, tulos olisi $750\\,\\text{J}$. Se vastaisi koko suorakulmiota nollatilavuudesta asti. Laajenemisen aikana työtä tehdään vain välillä $2{,}0$–$5{,}0\\,\\textsf{l}$."
     },
     {
       "id": "check-3",

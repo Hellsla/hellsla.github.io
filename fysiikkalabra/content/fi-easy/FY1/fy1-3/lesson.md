@@ -392,8 +392,8 @@ Mittauksen luotettavuutta kuvataan kahdella asialla. **Toistettavuus** kertoo, k
 
 ## Kaava: Keskiarvo ja virhearvio
 Toistetun mittauksen paras arvio on tulosten keskiarvo:
-```latex
-\bar{x} = \frac{x_1 + x_2 + \dots + x_n}{n}
+```kaavat
+keskiarvo :: \bar{x} = \frac{x_1 + x_2 + \dots + x_n}{n}
 ```
 missä $\bar{x}$ on keskiarvo, $x_1, x_2, \dots, x_n$ ovat yksittäiset mittaustulokset ja $n$ on mittausten lukumäärä. Keskiarvo summaa tulokset ja jakaa summan lukumäärällä. Siksi yhden tuloksen poikkeama vaikuttaa keskiarvoon sitä vähemmän, mitä enemmän mittauksia on.
 

@@ -27,7 +27,7 @@ def particles():
 
 
 def rod_expansion():
-    f = Fig("fy38-rod", 300, "Sama sauva kylmänä ja lämpimänä: lämmin sauva on pidempi, ja pituuden muutos ΔL on merkitty "
+    f = Fig("fy38-rod", 300, "Sama sauva kylmänä ja lämpimänä: lämmin sauva on pidempi, ja pituuden muutos Δl on merkitty "
             "sauvan päähän. Sauva on kiinni seinässä vasemmassa päässä. Laajeneminen on piirretty liioiteltuna.")
     f.defs_add('<pattern id="fy38-hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">'
                f'<line x1="0" y1="0" x2="0" y2="10" stroke="{MUTED}" stroke-width="1.5"/></pattern>')
@@ -37,14 +37,14 @@ def rod_expansion():
     f.line(50, 56, 50, 220, INK, 3)
     f.tex(66, 38, r"\text{kylmä, lämpötila } T_0", "start", COLD)
     f.rect(50, 60, 400, 40, "url(#fy38-cold)", INK, 2)
-    f.tex(250, 80, r"L_0", "middle")
+    f.tex(250, 80, r"l_0", "middle")
     f.tex(66, 126, r"\text{lämmin, lämpötila } T_0 + \Delta T", "start", HOT)
     f.rect(50, 148, 470, 40, "url(#fy38-warm)", INK, 2)
-    f.tex(285, 168, r"L_0 + \Delta L", "middle")
+    f.tex(285, 168, r"l_0 + \Delta l", "middle")
     f.line(450, 54, 450, 218, MUTED, 1.5, "6 5")
     f.arrow(485, 206, 450, 206, INK, 2, 12)
     f.arrow(485, 206, 520, 206, INK, 2, 12)
-    f.tex(485, 236, r"\Delta L", "middle")
+    f.tex(485, 236, r"\Delta l", "middle")
     f.tex(588, 286, r"\text{laajeneminen liioiteltu}", "end", MUTED)
     return f.svg()
 
@@ -100,12 +100,12 @@ def volume_expansion():
 
 def length_graph():
     """Task figure: the elongation of a 5,00 m metal beam against its temperature, a straight line from (20 °C; 0 mm) to (70 °C; 3,0 mm).
-    No alpha, no material: the student reads the grid points and works out alpha = ΔL/(L₀ΔT)."""
-    f = Fig("fy38-length-graph", 330, "Kuvaaja mittakaavassa: metallipalkin pituuden muutos ΔL millimetreinä lämpötilan T funktiona celsiusasteina. "
-            "Mittaus alkaa lämpötilassa 20 °C, jolloin ΔL on 0 mm, ja päättyy lämpötilaan 70 °C, jolloin ΔL on 3,0 mm. Mittauspisteet "
+    No alpha, no material: the student reads the grid points and works out alpha = Δl/(l₀ΔT)."""
+    f = Fig("fy38-length-graph", 330, "Kuvaaja mittakaavassa: metallipalkin pituuden muutos Δl millimetreinä lämpötilan T funktiona celsiusasteina. "
+            "Mittaus alkaa lämpötilassa 20 °C, jolloin Δl on 0 mm, ja päättyy lämpötilaan 70 °C, jolloin Δl on 3,0 mm. Mittauspisteet "
             "ovat suoralla. Ruudukon väli on 10 °C ja 0,5 mm.")
     ax = Axes(f, (96, 280), (470, 56), x=(0, 80), y=(0, 3.5), xticks=[10, 20, 30, 40, 50, 60, 70, 80],
-              yticks=[0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5], xlabel=r"T\ ({}^\circ\text{C})", ylabel=r"\Delta L\ (\text{mm})",
+              yticks=[0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5], xlabel=r"T\ ({}^\circ\text{C})", ylabel=r"\Delta l\ (\text{mm})",
               xfmt=lambda v: fi(v), yfmt=lambda v: fi(v, 1))
     ax.line([(20, 0), (70, 3.0)], HEAT, 3)
     ax.point(20, 0, HEAT)

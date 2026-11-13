@@ -1,16 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 6dc7d815de1ec77f
-Round: 3
+CONTENT-HASH: 5c2802d08a9f99c4
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- exercises.json:241 (L2-08, 50 MW option) — "kuutiometri sadaksi litraksi" is still a contrived slip (carried over, not blocking).
-- lessons/FY3/fy3-15/answers.py — no comment marking L2-08 as multiple choice with no number (carried over).
+1. L3-01 uses P_s,0 (zero = no district heat) beside P_o (letter o); a word subscript avoids any confusion.
 
 ## Checked
-- Round-3 change (d424ded10, delta packet): "polttoaineteosta" → "polttoainetehosta" in exercises.json (L2-08 correct-option feedback) and solutions.md (L2-08 Järkevyys). No other characters changed and no occurrence of the typo remains. Round-2 Polish resolved.
-- No number, formula, unit or option changed. Round-2 checks stand: P_L = 4190·12 000·10 W = 502,8 MW ≈ 500 MW (41,9 % of 1200 MW), the distractors 0,503 / 50,3 / ≈14 600 MW match their feedback, and exactly one option is correct.
-- Renders: not re-measured this round, because a text-only one-word fix changes no inline formula. The round-2 measurement at 390 px (widest inline formula 285 px) stands. The physics is judged from the text.
-- Hash identical at start and end.
+Fix: L3-03 now uses MAFY's ε = Q₁/W with Q₁ the heat given indoors and W the electric energy the pump uses (defined in the Formula line), consistent with fy3-11; E_fuel = Q₁/(η_transm η_plant ε) = 100/(0,950·0,400·3,00) = 87,7 kWh, unchanged. answers.py output unchanged (L1-01 90,2 %; L1-02 42,0 %; L1-03 4,2 kW; L2-01 109 MW; L2-07 36,6 %; L3-01 206 MW; L3-02 13,6 kt; L3-04 132 MW). P_o, P_a, E_o consistent; only the L3-03 Given and Formula lines changed. Languages agree.

@@ -1,12 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: b06084335558b3a5
+CONTENT-HASH: 2b666f0278dfd4e9
 
 ## Blocking
-- none
+
+None. L3-01 now defines eta = P_a/P_o and P_o = P_a/eta; the solution's principle is learnable.
 
 ## Polish
-- none
+
+None.
 
 ## Checked
-- Round 2 (delta). The wrong reason now reads "Kone A ottaa enemmän lämpöä $Q_1$, joten sillä on enemmän muutettavaa työksi: $W = Q_1 - Q_2$." The correct reason is no longer the only one with a formula, so the form cue is gone; the reason still fails for the right cause (same W, so the extra heat goes to Q₂) and its feedback is unchanged and consistent.
-- Rest of the set unchanged since round 1. Text only; no new render opened.
+
+Diff since previous PASS and the MAFY notation in lesson/solutions; symbols defined where first used; numbers and levels unchanged.

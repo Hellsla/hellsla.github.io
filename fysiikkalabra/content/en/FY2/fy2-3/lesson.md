@@ -128,8 +128,8 @@ Power does not tell you how much energy a device uses in total. For that you nee
 
 ## Formula: Power
 Power is the quotient of the energy transformed or transferred and the time it takes:
-```latex
-P = \frac{\Delta E}{\Delta t}
+```kaavat
+power :: P = \frac{\Delta E}{\Delta t}
 ```
 where $P$ is power (W), $\Delta E$ is the amount of energy transferred or transformed during the time interval considered (J), and $\Delta t$ is the length of that interval (s). In words: power is energy divided by time. If energy is transformed unevenly, the formula gives the average power over the time interval $\Delta t$. When a device runs steadily from the moment it is switched on, $\Delta E$ is the whole transformed energy $E$ and $\Delta t$ is the whole time $t$, so $P = E : t$. Energy and time can be solved from the formula:
 ```latex

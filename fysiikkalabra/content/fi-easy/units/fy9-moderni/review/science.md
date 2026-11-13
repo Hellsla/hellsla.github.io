@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 6bb9f4917aab2bd9
-Delta review (solution practice, 2026-11-12) of the version passed before.
+CONTENT-HASH: 9ceb9eb8dad8fabb
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at a2a70e8ed2bea0c2.
 
 ## Blocking
 (none)
 
 ## Polish
-1. s5 b rubric `conclusion` (`tasks.json`) still says "about 151–153 s" while the model answer says about 153 s; harmless (151 s is accepted), align if touched.
+(none)
 
 ## Checked
-Earlier Blocking resolved. (1) s5 a has one accepted range: tolerance 0,04 at 153 gives 146,9–159,1 s, and the `units_precision` criterion and *Hyväksytään myös* both say 147–159 s. (2) answers.py: key s5-a = 153,1 (fit of ln(N−5) on all 11 points), s5-a-two = 150,83, s5-a-diff = −1,5 % against the fit. Recomputed independently: fit 153,07 s (intercept 5,993, value at 300 s 4,635), two endpoints 150,83 s (−1,46 %, so "1,5 %" is now right), fit without background 157,08 s (the new "157 s" sentence is right). Note: far-apart pairs (Δt ≥ 180 s) span 144,5–163 s, so the range rightly rejects the noisiest pairs. fi, fi-easy and en carry the same numbers; `units.py check` passes.
+Every hunk of the fi-easy merge diff for this unit: the new symbolic steps (solving for the asked quantity before numbers) against the existing substitutions, answers and unit formula names/notation of #522; LaTeX balanced. Content hash recomputed with scripts/units.py (matches). Recomputed from the answers.py data (11 counts, background 5): least-squares fit of $\ln N$ gives intercept $5{,}993$, value $4{,}635$ at $300\,\text{s}$, $k = -4{,}528 \cdot 10^{-3}\,\text{s}^{-1}$, $T_{1/2} = 153{,}1\,\text{s}$; without subtraction $157\,\text{s}$; two end points $150{,}8\,\text{s}$ (difference $1{,}5\,\%$); $\ln 393 = 5{,}974$, $\ln 99 = 4{,}595$. Task answer 153 with tolerance 0,04 gives 147...159, as in the rubric and Hyväksytään myös; the b-part now quotes 153 consistently; answers.py key swap is consistent. Also $H = 0{,}0681\,\text{mSv}$ ($1{,}15\,\%$), $N = 1{,}436 \cdot 10^{12}$, $\lambda_{32} = 656{,}5\,\text{nm}$, $W = -eb = 2{,}24\,\text{eV}$, $f_0 = -b/k = 5{,}43 \cdot 10^{14}\,\text{Hz}$ ($k = h/e$), $m = 1653\,\text{kg}$, $\Delta m = 1{,}51\,\text{kg}$.

@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: b06084335558b3a5
+CONTENT-HASH: 2b666f0278dfd4e9
 
 ## Blocking
+None. The fixes read well and are consistent with the lesson symbols.
 
 ## Polish
-- [Minor] fy3-11-L2-08 reasons — the fixed reason ("... $Q_1$ ... $W = Q_1 - Q_2$") now carries a formula like the correct one, so the round-1 form cue is gone; nothing further needed.
+None new (earlier polish unchanged).
 
 ## Checked
-- Round 2 (delta). The only change is the wording of reason 2 (symbol $Q_1$ and $W = Q_1 - Q_2$ as maths, one clause). Text-only check of that line: LaTeX, no plain quantity, fluent Finnish, similar length to the other reasons.
-- Rendered fy3-11 at 390 px (task, answer and reason feedback, solution; images opened, round-1 render plus a re-render with the new build): no overflow (scrollWidth 390), solution fractions set in rows. I did not zoom in on the reworded reason itself; it is judged from text.
-- Hash at start and end the same.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+Opened L3-01 solution (Periaate: η = P_a/P_o, P_o = P_a/η, symbols defined) at 390 px, solution open: KaTeX fine. Language: fi; no clipping in the changed places.

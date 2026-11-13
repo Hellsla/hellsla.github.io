@@ -103,8 +103,8 @@ Taulukon arvot ovat tyypillisiä pyöristettyjä arvoja, eivät minkään tietyn
 
 ## Kaava: Hyötysuhde
 Hyötysuhde $\eta$ (eeta) on hyötyenergian ja laitteeseen otetun energian suhde. Kun laite käy tasaisella teholla, sama suhde saadaan myös tehoista:
-```latex
-\eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}
+```kaavat
+hyötysuhde :: \eta = \frac{E_\text{a}}{E_\text{o}} = \frac{P_\text{a}}{P_\text{o}}
 ```
 missä $\eta$ on hyötysuhde (suhdeluku, usein prosentteina), $E_\text{a}$ laitteen antama hyötyenergia (J), $E_\text{o}$ laitteeseen otettu energia (J), $P_\text{a}$ hyötyteho (W) ja $P_\text{o}$ laitteeseen otettu teho (W). Suhdeluku muutetaan prosenteiksi kertomalla se luvulla $100\,\%$, esimerkiksi $0{,}30 \cdot 100\,\% = 30\,\%$. Kertominen ei muuta lukua, koska $1\,\% = 0{,}01$ ja siis $100\,\% = 100 \cdot 0{,}01 = 1$.
 

@@ -176,7 +176,7 @@ The problems of this lesson revolve around one quantity: **pressure is the force
 
 The gas problems of the exam need two checks before the numbers. **The temperature in kelvins**, because the gas laws are proportionalities that start from absolute zero. **The total pressure**, because a pressure gauge usually shows only the gauge pressure, and the particles of the gas produce the whole pressure.
 
-<svg data-fig="kartta" viewBox="0 0 380 596" role="img" aria-label="Concept map. At the top the node pressure: p = F / A. Three branches go down from it. Liquid: pressure at depth p = p0 + ρ g h, gauge pressure ρ g h and total pressure, which is the air pressure and the gauge pressure together. Gas: the ideal gas law p V = n R T, the combined gas law p V / T = constant and the kelvin temperature T = θ + 273.15 K. Heat engine: work done by a gas W = p ΔV, conservation of energy W = Q1 − Q2 and efficiency eta = W / Q1." style="max-width:min(100%,440px);font-size:21px">
+<svg data-fig="kartta" viewBox="0 0 380 596" role="img" aria-label="Concept map. At the top the node pressure: p = F / A. Three branches go down from it. Liquid: pressure at depth p = p0 + ρ g h, gauge pressure ρ g h and total pressure, which is the air pressure and the gauge pressure together. Gas: the ideal gas law p V = n R T, the combined gas law p V / T = constant and the kelvin temperature T = θ + 273.15 K. Heat engine: work done by a gas W = p ΔV, the first law of thermodynamics ΔU = Q + W and efficiency eta = W / Q1." style="max-width:min(100%,440px);font-size:21px">
   <line x1="24" y1="80" x2="24" y2="454" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
   <foreignObject x="142.5" y="16.5" width="95" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:21px">$\text{pressure}$</div></foreignObject>
@@ -207,8 +207,8 @@ The gas problems of the exam need two checks before the numbers. **The temperatu
   <line x1="54" y1="474" x2="362" y2="474" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="58" y="485.5" width="74" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$W = p\,\Delta V$</div></foreignObject>
   <foreignObject x="239" y="488" width="123" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{work done by gas}$</div></foreignObject>
-  <foreignObject x="58" y="519.5" width="84" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$W = Q_1 - Q_2$</div></foreignObject>
-  <foreignObject x="248" y="522" width="114" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{conservation}$</div></foreignObject>
+  <foreignObject x="58" y="519.5" width="74" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\Delta U = Q + W$</div></foreignObject>
+  <foreignObject x="283" y="522" width="79" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{first law}$</div></foreignObject>
   <foreignObject x="58" y="553.5" width="74" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\eta = W/Q_1$</div></foreignObject>
   <foreignObject x="266" y="556" width="96" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{efficiency}$</div></foreignObject>
 </svg>
@@ -274,8 +274,8 @@ combined gas law (constant amount of gas) :: \frac{pV}{T} = \text{constant}
 
 that is, for two states $\tfrac{p_1 V_1}{T_1} = \tfrac{p_2 V_2}{T_2}$. From it follow the special cases: at constant temperature Boyle's law $p_1V_1 = p_2V_2$, at constant pressure $V \propto T$ and at constant volume $p \propto T$. The kelvin temperature is
 
-```kaavat
-temperature in kelvins :: T = \theta + 273.15\,\text{K}
+```latex
+T = \theta + 273.15\,\text{K}
 ```
 
 where $\theta$ is the numerical value of the Celsius temperature. In an experiment, absolute zero is obtained by extending the $(\theta, p)$ or $(\theta, V)$ line to zero. It is a prediction of the model: a real gas condenses into a liquid before that.
@@ -294,13 +294,9 @@ where $\Delta V$ is the magnitude of the change in volume (m³); the work is the
 first law of thermodynamics :: \Delta U = Q + W
 ```
 
-where $Q$ is the heat transferred to the gas (J) and $W$ the work done on the gas (J). In a compression $W = p\Delta V$ is positive. An expanding gas itself does the work $p\Delta V$, so then $W = -p\Delta V$ and the internal energy decreases by this amount. In one cycle a heat engine takes the heat $Q_1$ from a hot source, does the work $W$ and gives the heat $Q_2$ to a colder environment. Energy is conserved, so
+where $Q$ is the heat transferred to the gas (J) and $W$ the work done on the gas (J). In a compression $W = p\Delta V$ is positive. An expanding gas itself does the work $p\Delta V$, so then $W = -p\Delta V$ and the internal energy decreases by this amount.
 
-```kaavat
-work done by a heat engine :: W = Q_1 - Q_2
-```
-
-and the efficiency is
+In one cycle a heat engine takes the heat $Q_1$ ($\text{J}$) from a hot source, does the work $W$ ($\text{J}$) and gives the heat $Q_2$ ($\text{J}$) to a colder environment. At the end of the cycle the gas of the engine is in the same state as at the start. The efficiency of the engine is
 
 ```kaavat
 efficiency of a heat engine :: \eta = \frac{W}{Q_1}
@@ -322,6 +318,26 @@ Part of the heat must always be given to a colder place, so the efficiency of a 
   <rect x="16" y="394" width="388" height="62" rx="12" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
   <foreignObject x="107" y="413" width="206" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\text{colder environment } T_2$</div></foreignObject>
 </svg>
+
+```johda
+In one cycle a heat engine takes the heat $Q_1$ from a hot source and gives the heat $Q_2$ to a colder environment. Derive the work $W$ done by the engine in one cycle in terms of the heats $Q_1$ and $Q_2$.
+---
+Apply the first law of thermodynamics $\Delta U = Q + W$ to the gas of the engine over one cycle. At the end of the cycle the gas is in the same state as at the start, so its internal energy does not change: $\Delta U = 0$.
+
+In one cycle the heat $Q_1$ comes into the gas and the heat $Q_2$ leaves it. The heat transferred to the gas is therefore
+
+$$Q = Q_1 - Q_2$$
+
+In the first law $W$ is the work done on the gas. The engine itself does the work $W$ on its surroundings, so the work done on the gas is $-W$, just as in an expansion it is $-p\Delta V$. Substitute into the first law:
+
+$$0 = (Q_1 - Q_2) + (-W)$$
+
+Solve for the work of the engine:
+
+$$W = Q_1 - Q_2$$
+
+The result is the conservation of energy: in the figure the incoming heat $Q_1$ divides into the work $W$ and the heat given out $Q_2$.
+```
 
 ## Common mistakes {Virheet}
 

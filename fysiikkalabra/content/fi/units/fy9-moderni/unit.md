@@ -411,7 +411,7 @@
 
 Moduulin ilmiöt yhdistää **kvantittunut energia**. Valo vaihtaa energiaa aineen kanssa fotoneina, joiden energia on $E = hf$, ja yksi fotoni luovuttaa energiansa yhdelle elektronille. Atomin elektronit ja ytimen nukleonit voivat olla vain tietyissä energiatiloissa, joten siirtymissä syntyy tai katoaa tietyn energian fotoni. Elektronien tasojen erot ovat elektronivoltteja, ytimen tasojen ja ydinreaktioiden energiat miljoonia elektronivoltteja. Ytimessä massa ja energia liittyvät toisiinsa: $E = mc^2$.
 
-<svg data-fig="kartta" viewBox="0 0 380 744" role="img" aria-label="Käsitekartta. Ylhäällä solmu kvantittunut energia: fotonin energia E = h f ja massan ja energian yhteys E = m c toiseen. Siitä lähtee alas kolme haaraa. Fotoni ja atomi, elektronivolttien maailma: valosähköinen yhtälö h f = W + E k max, spektriviivan fotoni h f = E y miinus E a ja LEDin kynnysjännite e U k likimain h f. Ydin, megaelektronivolttien maailma: hajoamislaki N = N 0 kertaa e potenssiin miinus lambda t, aktiivisuus A = lambda N ja reaktioenergia E = massaero kertaa c toiseen. Säteily ja ihminen, annos: absorboitunut annos D = E per m, ekvivalenttiannos H = w R kertaa D ja etäisyyden neliölaki. Alareunassa kaikkia haaroja yhdistävä ohje: ensin yksi hiukkanen, sitten lukumäärä." style="max-width:min(100%,420px);font-size:20px">
+<svg data-fig="kartta" viewBox="0 0 380 692" role="img" aria-label="Käsitekartta. Ylhäällä solmu kvantittunut energia: fotonin energia E = h f ja massan ja energian yhteys E = m c toiseen. Siitä lähtee alas kolme haaraa. Fotoni ja atomi, elektronivolttien maailma: valosähköinen yhtälö h f = W + E k max, spektriviivan fotoni h f = E y miinus E a ja LEDin kynnysjännite e U k likimain h f. Ydin, megaelektronivolttien maailma: hajoamislaki N = N 0 kertaa e potenssiin miinus lambda t, aktiivisuus A = lambda N ja reaktioenergia E = massaero kertaa c toiseen. Säteily ja ihminen, annos: absorboitunut annos D = E per m ja ekvivalenttiannos H = w R kertaa D. Alareunassa kaikkia haaroja yhdistävä ohje: ensin yksi hiukkanen, sitten lukumäärä." style="max-width:min(100%,420px);font-size:20px">
   <line x1="24" y1="80" x2="24" y2="530" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
   <foreignObject x="87" y="18" width="206" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\text{kvantittunut energia}$</div></foreignObject>
@@ -439,7 +439,7 @@ Moduulin ilmiöt yhdistää **kvantittunut energia**. Valo vaihtaa energiaa aine
   <foreignObject x="58" y="464" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$E = \Delta m\,c^2$</div></foreignObject>
   <foreignObject x="292" y="466" width="70" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{reaktio}$</div></foreignObject>
   <line x1="24" y1="530" x2="44" y2="530" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="44" y="508" width="328" height="188" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <rect x="44" y="508" width="328" height="136" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
   <foreignObject x="58" y="518" width="185" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{säteily ja ihminen}$</div></foreignObject>
   <foreignObject x="310" y="520" width="52" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{annos}$</div></foreignObject>
   <line x1="54" y1="550" x2="362" y2="550" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -447,9 +447,7 @@ Moduulin ilmiöt yhdistää **kvantittunut energia**. Valo vaihtaa energiaa aine
   <foreignObject x="239" y="566" width="123" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{absorboitunut}$</div></foreignObject>
   <foreignObject x="58" y="616" width="60" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$H = w_\text{R} D$</div></foreignObject>
   <foreignObject x="266" y="618" width="96" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{painotettu}$</div></foreignObject>
-  <foreignObject x="58" y="668" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\dot{H} \propto 1/r^2$</div></foreignObject>
-  <foreignObject x="283" y="670" width="79" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{etäisyys}$</div></foreignObject>
-  <foreignObject x="0.5" y="714" width="379" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px">$\text{joka haarassa: yksi hiukkanen, sitten lukumäärä}$</div></foreignObject>
+  <foreignObject x="0.5" y="662" width="379" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px">$\text{joka haarassa: yksi hiukkanen, sitten lukumäärä}$</div></foreignObject>
 </svg>
 
 Kokeen moderni fysiikka -tehtävässä kannattaa ensin kysyä, mitä yksi hiukkanen tekee: mikä on yhden fotonin energia, mikä siirtymä tai hajoaminen tapahtuu ja mitkä luvut säilyvät. Vasta sitten lasketaan, kuinka monta fotonia tai ydintä on, eli teho, aktiivisuus tai annos.
@@ -506,8 +504,8 @@ Tästä saadaan vastaus alun kysymykseen. Kasvivalon punaisen fotonin ($660\,\te
 
 ```kaavat
 fotonin energia :: E = hf = \frac{hc}{\lambda}
-valosähköinen ilmiö :: hf = W + E_\text{k,max}
-atomin lähettämän tai absorboiman fotonin energia :: hf = E_\text{y} - E_\text{a}
+hf = W + E_\text{k,max}
+hf = E_\text{y} - E_\text{a}
 fotonin liikemäärä :: p = \frac{E}{c} = \frac{h}{\lambda}
 ```
 
@@ -586,14 +584,55 @@ missä $N$ on hajoamattomien ytimien määrä hetkellä $t$, $N_0$ määrä alus
 ### Säteily ja annos
 
 ```kaavat
-absorboitunut annos :: D = \frac{E}{m}
+D = \frac{E}{m}
 ekvivalenttiannos :: H = w_\text{R} D
-annos annosnopeudesta :: H = \dot{H} t
-annosnopeus etäisyyden funktiona :: \dot{H}_2 = \dot{H}_1 \left(\frac{r_1}{r_2}\right)^2
++ H = \dot{H} t
 heikennyslaki :: I = I_0 e^{-\mu x}
 ```
 
-missä $D$ on absorboitunut annos ($\text{Gy}$), $E$ absorboitunut energia, $m$ kudoksen massa, $H$ ekvivalenttiannos ($\text{Sv}$), $w_\text{R}$ säteilyn painotuskerroin (alfa $20$, beeta ja gamma $1$), $\dot{H}$ annosnopeus, $t$ aika, $r$ etäisyys, $I_0$ väliaineen pintaan tulevan ja $I$ läpi tulleen säteilyn intensiteetti, $\mu$ heikennyskerroin ($1/\text{m}$) ja $x$ väliaineen paksuus. Puoliintumispaksuus on $d_{1/2} = \tfrac{\ln 2}{\mu}$, joten annosnopeus pienenee suojan takana kuten $\dot{H} = \dot{H}_0 \left(\tfrac12\right)^{x/d_{1/2}}$. Neliölaki pätee pistemäiselle lähteelle, kun ilma ei vaimenna säteilyä. Puoliintumispaksuus koskee fotonisäteilyä, koska alfa- ja beetasäteilyllä on kantama. Galaksien etääntymisnopeus on $v = H_0 d$, ja pienellä punasiirtymällä $v = cz$.
+missä $D$ on absorboitunut annos ($\text{Gy}$), $E$ absorboitunut energia, $m$ kudoksen massa, $H$ ekvivalenttiannos ($\text{Sv}$), $w_\text{R}$ säteilyn painotuskerroin (alfa $20$, beeta ja gamma $1$), $I_0$ väliaineen pintaan tulevan ja $I$ läpi tulleen säteilyn intensiteetti, $\mu$ heikennyskerroin ($1/\text{m}$) ja $x$ väliaineen paksuus. Puoliintumispaksuus on $d_{1/2} = \tfrac{\ln 2}{\mu}$. Se koskee fotonisäteilyä, koska alfa- ja beetasäteilyllä on kantama. Galaksien etääntymisnopeus on $v = H_0 d$, ja pienellä punasiirtymällä $v = cz$.
+
+**Annosnopeus** $\dot{H}$ ($\text{Sv/h}$) on ekvivalenttiannos aikayksikköä kohti, ja $t$ on aika, jonka kuluessa annos kertyy vakioannosnopeudella. Suojan takana annosnopeus pienenee kuten $\dot{H} = \dot{H}_0 \left(\tfrac12\right)^{x/d_{1/2}}$. Kaava $H = \dot{H} t$ on lisätietoa: sitä ei ole MAFY-taulukoissa, ja kokeessa se annetaan tehtävässä, jos sitä tarvitaan.
+
+Pistemäinen lähde säteilee tasaisesti joka suuntaan, eikä ilma vaimenna säteilyä. Etäisyydellä $r_1$ ($\text{m}$) lähteestä annosnopeus on $\dot{H}_1$ ja etäisyydellä $r_2$ annosnopeus on $\dot{H}_2$.
+
+<svg data-fig="pallo" viewBox="0 0 530 372" role="img" aria-label="Kaavakuva, ei lukuarvoja. Vasemmalla pistelähde, josta säteily lähtee tasaisesti joka suuntaan. Lähteen ympärillä on kaksi pallon pintaa, lähempi etäisyydellä r 1 ja kauempi etäisyydellä r 2. Lähteestä lähtevä säteilykeila osuu molempiin pintoihin. Kauempana sama säteily jakautuu suuremmalle alalle. Lähemmän pinnan kohdalla annosnopeus on H piste 1 ja kauemman pinnan kohdalla H piste 2." style="max-width:100%;font-size:24px">
+  <path d="M217,100 A170,170 0 0 1 217,270" fill="none" stroke="#6b7480" stroke-width="2.5" stroke-linejoin="round" stroke-dasharray="9 7"/>
+  <path d="M364.5,15 A340,340 0 0 1 364.5,355" fill="none" stroke="#6b7480" stroke-width="2.5" stroke-linejoin="round" stroke-dasharray="9 7"/>
+  <line x1="70" y1="185" x2="428.5" y2="122" stroke="#c92a2a" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="70" y1="185" x2="428.5" y2="248" stroke="#c92a2a" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M237.5,155.5 A170,170 0 0 1 237.5,214.5" fill="none" stroke="#1971c2" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M405,126 A340,340 0 0 1 405,244" fill="none" stroke="#1971c2" stroke-width="7" stroke-linejoin="round"/>
+  <line x1="83" y1="180" x2="213.5" y2="127" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M224,123 L215,132.5 L211,122.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="125" y="120" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$r_1$</div></foreignObject>
+  <line x1="83" y1="190" x2="371.5" y2="306.5" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M381.5,311 L368.5,311.5 L372.5,301.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="149.5" y="233" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$r_2$</div></foreignObject>
+  <circle cx="70" cy="185" r="9" fill="#c92a2a" stroke="#ffffff" stroke-width="2"/>
+  <foreignObject x="3.5" y="210.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{pistelähde}$</div></foreignObject>
+  <foreignObject x="254" y="170.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\dot{H}_1$</span></div></foreignObject>
+  <foreignObject x="424" y="170.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\dot{H}_2$</span></div></foreignObject>
+  <foreignObject x="205.5" y="8.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$\text{pallon pinta}$</div></foreignObject>
+</svg>
+
+```johda
+Pistemäinen lähde säteilee tasaisesti joka suuntaan. Annosnopeus on $\dot{H}_1$ etäisyydellä $r_1$. Johda annosnopeus $\dot{H}_2$ etäisyydellä $r_2$.
+---
+Lähde säteilee tehon $P$ tasaisesti joka suuntaan. Etäisyydellä $r$ säteily on jakautunut pallon pinnalle, jonka ala on $A = 4\pi r^2$. Intensiteetti on teho pinta-alaa kohti:
+
+$$I = \frac{P}{A} = \frac{P}{4\pi r^2}$$
+
+Annosnopeus on verrannollinen intensiteettiin, koska kudokseen tulee aikayksikössä sitä enemmän säteilyenergiaa, mitä suurempi intensiteetti on. Muodostetaan annosnopeuksien suhde, jolloin $P$ ja $4\pi$ supistuvat:
+
+$$\frac{\dot{H}_2}{\dot{H}_1} = \frac{I_2}{I_1} = \frac{P/(4\pi r_2^2)}{P/(4\pi r_1^2)} = \frac{r_1^2}{r_2^2}$$
+
+Ratkaistaan $\dot{H}_2$:
+
+$$\dot{H}_2 = \dot{H}_1 \left(\frac{r_1}{r_2}\right)^2$$
+
+Kun etäisyys kaksinkertaistuu, annosnopeus pienenee neljäsosaan.
+```
 
 ## Yleisiä virheitä {Virheet}
 

@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: ebbb215a743c320e
-Delta review (solution practice, 2026-11-12) of the version passed before.
+CONTENT-HASH: 8e16b09b0e569f61
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 0462ca982df89864.
 
 ## Blocking
 (none)
@@ -9,4 +9,4 @@ Delta review (solution practice, 2026-11-12) of the version passed before.
 (none)
 
 ## Checked
-s2 a ($y_\text{l} = y_{0\text{A}} + v_0^2/(2g)$ = 8,84 m, equals the substitution route) and s5 ($a_\text{min}$, $a_\text{max}$ = 0,741 and 1,224 m/s²) recomputed. The fi, fi-easy and en diffs carry identical mathematics (every changed formula compared token by token); answers.py run; `units.py check` passes.
+Every hunk of the en merge diff (word diff). $y_\text{top} = y_{0A} + v_0^2/(2g)$ follows from $t_\text{top} = v_0/g$; $a_\text{min,max} = 2x/(t \pm \Delta t)^2$ (the longer time gives the smaller acceleration, correct). Every changed formula is symbolic before substitution and uses no symbol in a sense that differs from the unit's ```kaavat``` names or notation from #522; the $ and brace balance of each added line is checked; `units.py check` passes; the hash was taken at the start and the end and matches.

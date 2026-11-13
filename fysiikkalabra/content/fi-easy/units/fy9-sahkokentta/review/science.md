@@ -1,12 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 940248af5d4ffe19
-Delta review (solution practice, 2026-11-12) of the version passed before.
+CONTENT-HASH: 72daa2767c4da87f
+Delta review (round 3, Kaava sign convention, 2026-11-13) of the version reviewed at 7f560b98c5ecb9d0.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- inquiry.json, the electron solution: the unit text (unit.md line 356) writes $U = U_{AB} = V_A - V_B$, but here $U = V - V_0 = -U_{AB}$. The solution defines both symbols explicitly, and *Johda itse* also uses $U$ as the size of the voltage, so this does not contradict the unit. A student could still stumble over it.
 
 ## Checked
-s3 d ($C_1$ defined; $b$ = 22,2 pF) and the two inquiry solutions ($U = V - V_0$: 7,26·10⁶ m/s; $t = sW_0/(3\eta UI)$ = 3,86 h) recomputed. The fi, fi-easy and en diffs carry identical mathematics (every changed formula compared token by token); answers.py run; `units.py check` passes.
+- The only change is the **Kaava** line of the electron task's solution. It uses $W = QU_{AB}$ with $U_{AB} = V_0 - V$ (start minus end, the unit's convention), $Q = -e$, so $W = e(V - V_0) = eU$, where $U = V - V_0 = 150\,\text{V} > 0$.
+- This $U$ is now the same positive potential difference as in the **Periaate** ("decreases by $eU$"). Round 2's sign clash is gone. The Sijoitus factor $(150\,\text{V} - 0\,\text{V})$ is $V - V_0$.
+- The quantity is solved symbolically before any substitution.
+- Recomputed in my own script: $U_{AB} = -150\,\text{V}$, $W = 2.403 \cdot 10^{-17}\,\text{J}$, $v = 7.264 \cdot 10^{6}\,\text{m/s}$, which is $2.4\,\%$ of $c$. These agree with the solution.
+- The LaTeX in the changed line is balanced.
+- `units.py hash` gives 72daa2767c4da87f at the start and at the end.

@@ -217,7 +217,7 @@
 
 A large share of the mechanics problems in the exam can be solved with two conservation laws. **Energy is always conserved**: mechanical energy is transformed into internal energy when friction, air resistance or the deformation of a body does work, but the total energy stays the same. **Momentum is conserved** when the sum of the external forces on the system is zero or their impulse during the collision is negligible.
 
-<svg data-fig="kartta" viewBox="0 0 380 604" role="img" aria-label="Concept map. At the top is the node conservation laws: energy and momentum. Three branches lead down from it. Energy: kinetic energy E k = half m v squared, potential energy E p = m g h and the work–energy principle, in which the initial mechanical energy plus the work done by other forces equals the final mechanical energy. Momentum: p = m v as vectors, the impulse–momentum principle impulse I = delta p, and conservation of momentum in a collision. Applications: in a collision momentum is conserved but kinetic energy only in an elastic one, the stopping distance is the reaction distance plus the braking distance, and the power of a hydropower plant is eta rho Q g h." style="max-width:100%;font-size:20px">
+<svg data-fig="kartta" viewBox="0 0 380 604" role="img" aria-label="Concept map. At the top is the node conservation laws: energy and momentum. Three branches lead down from it. Energy: kinetic energy E k = half m v squared, potential energy E p = m g h and the work–energy principle, in which the initial mechanical energy plus the work done by other forces equals the final mechanical energy. Momentum: p = m v as vectors, the impulse–momentum principle impulse I = delta p, and conservation of momentum in a collision. Applications: in a collision momentum is conserved but kinetic energy only in an elastic one, the stopping distance from the position in uniformly accelerated motion x = x 0 + v 0 t + half a t squared, and the electric power of power plants from the efficiency eta = P a over P o." style="max-width:100%;font-size:20px">
   <line x1="24" y1="80" x2="24" y2="454" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
   <foreignObject x="103" y="18" width="174" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\text{conservation laws}$</div></foreignObject>
@@ -246,10 +246,10 @@ A large share of the mechanics problems in the exam can be solved with two conse
   <foreignObject x="58" y="442" width="143" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{applications}$</div></foreignObject>
   <line x1="54" y1="474" x2="362" y2="474" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="58" y="487" width="308" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$\text{collision: } p \text{ conserved, } E_\text{k} \text{ not always}$</div></foreignObject>
-  <foreignObject x="58" y="521" width="158" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$s_\text{p} = v_0 t_\text{r} + v_0^2/(2a)$</div></foreignObject>
+  <foreignObject x="58" y="520" width="164" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$x = x_0 + v_0 t + \tfrac12 at^2$</div></foreignObject>
   <foreignObject x="283" y="522" width="79" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{stopping}$</div></foreignObject>
-  <foreignObject x="58" y="554" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$P = \eta\rho Qgh$</div></foreignObject>
-  <foreignObject x="266" y="556" width="96" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{hydropower}$</div></foreignObject>
+  <foreignObject x="58" y="554" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\eta = P_\text{a}/P_\text{o}$</div></foreignObject>
+  <foreignObject x="257" y="556" width="105" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{power plants}$</div></foreignObject>
 </svg>
 
 A solution starts with choosing the law to suit the situation. When the question asks for a speed or a height at different points and the work done by the forces is known, use the work–energy principle. When bodies collide or push each other, use conservation of momentum. When the question asks for a force and the time is known, use the impulse–momentum principle. Many problems combine them: first energy, then a collision, then energy again.
@@ -326,23 +326,139 @@ impulse-momentum principle :: \overline{I} = \Delta\overline{p}
 
 where $\overline{p}$ is the momentum ($\text{kg} \cdot \text{m/s}$), $\overline{I}$ the impulse ($\text{N} \cdot \text{s}$) and $\overline{F}$ a constant force acting for the time interval $\Delta t$. The change in momentum is caused by the impulse of the net force, $\Sigma\overline{F}\,\Delta t = \Delta\overline{p}$. For a varying force the average force is $F_\text{avg} = |\Delta p| : \Delta t$. In one dimension a positive direction is chosen, and velocities pointing in the opposite direction are negative. When the impulse of the external forces is negligible,
 
-```kaavat
-conservation of momentum :: m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'
+```latex
+m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'
 ```
 
 In an elastic collision kinetic energy is also conserved. In a perfectly inelastic collision the bodies move on with a common velocity, $v_1' = v_2' = v'$, and the largest share of kinetic energy is transformed into internal energy.
 
 ### Applications
 
-On a horizontal road the stopping distance of a car is the reaction distance plus the braking distance:
+On a horizontal road the stopping distance $s_\text{p}$ ($\text{m}$) of a car is the reaction distance plus the braking distance. During the reaction time $t_\text{r}$ ($\text{s}$) the car moves at the constant speed $v_0$ ($\text{m/s}$), and during braking the speed falls to zero with a constant deceleration $a$ ($\text{m/s}^2$); at the limit of locking the wheels $a = \mu g$.
 
-```kaavat
-stopping distance :: s_\text{p} = v_0\,t_\text{r} + \frac{v_0^2}{2a}
-power of a hydroelectric plant :: P_\text{hydro} = \eta\rho Qgh
-power of a wind turbine :: P_\text{wind} = \tfrac12\eta\rho Av^3
+<svg data-fig="pysahtyminen" viewBox="0 0 600 360" role="img" aria-label="Diagram, no numerical values: the speed v of a car as a function of the time t. During the reaction time t r the speed stays at the initial speed v 0, so the graph is horizontal, and under it is a blue rectangle, the reaction distance s r. Then during the braking time t b the speed decreases steadily to zero, so the graph is a falling straight line, and under it is a sand-coloured triangle, the braking distance s b. The car stops at the instant t r + t b." style="max-width:100%;font-size:24px">
+  <line x1="89" y1="300" x2="484" y2="300" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M496,300 L483,306 L483,294 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="90" y1="301" x2="90" y2="56" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M90,44 L96,57 L84,57 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="60" y="305.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0$</div></foreignObject>
+  <foreignObject x="502" y="285.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$t$</div></foreignObject>
+  <foreignObject x="80" y="13.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$v$</div></foreignObject>
+  <polygon points="90,300 90,127.5 185,127.5 185,300" fill="#d0e6fb" fill-opacity="0.9"/>
+  <polygon points="185,300 185,127.5 394,300" fill="#f1dfb5" fill-opacity="0.9"/>
+  <polyline points="185,300 185,127.5" fill="none" stroke="#6b7480" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="6 5"/>
+  <polyline points="90,127.5 185,127.5 394,300" fill="none" stroke="#1f2933" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+  <foreignObject x="45" y="113" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$v_0$</div></foreignObject>
+  <foreignObject x="168.5" y="311.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$t_\text{r}$</div></foreignObject>
+  <foreignObject x="359" y="311.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$t_\text{r} + t_\text{b}$</div></foreignObject>
+  <foreignObject x="121" y="199" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$s_\text{r}$</div></foreignObject>
+  <foreignObject x="238" y="228" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$s_\text{b}$</div></foreignObject>
+  <foreignObject x="92" y="93.5" width="91" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#6b7480">$\text{reaction}$</div></foreignObject>
+  <foreignObject x="306.5" y="161.5" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px;color:#6b7480">$\text{braking}$</div></foreignObject>
+</svg>
+
+```johda
+A car is moving at the speed $v_0$ when the driver sees an obstacle. Derive the stopping distance $s_\text{p}$ when the reaction time is $t_\text{r}$ and the deceleration $a$ during braking is constant.
+---
+During the reaction time the car moves at a constant velocity. The position in uniformly accelerated linear motion with zero acceleration gives the reaction distance:
+
+$$s_\text{r} = v_0\,t_\text{r}$$
+
+During braking the acceleration is $-a$. The velocity in uniformly accelerated motion gives the braking time $t_\text{b}$, when the final velocity is zero:
+
+$$0 = v_0 - a\,t_\text{b} \quad\Rightarrow\quad t_\text{b} = \frac{v_0}{a}$$
+
+Substitute the braking time into the expression for the position. The braking distance is
+
+$$s_\text{b} = v_0\,t_\text{b} - \tfrac12\,a\,t_\text{b}^2 = \frac{v_0^2}{a} - \frac{v_0^2}{2a} = \frac{v_0^2}{2a}$$
+
+The stopping distance is the sum of the reaction distance and the braking distance:
+
+$$s_\text{p} = s_\text{r} + s_\text{b} = v_0\,t_\text{r} + \frac{v_0^2}{2a}$$
+
+The work–energy principle gives the same braking distance: by Newton's second law the net braking force is $ma$, and its work $-ma\,s_\text{b}$ removes all of the kinetic energy $\tfrac12 mv_0^2$. In the graph the distances are areas: the reaction distance is a rectangle and the braking distance a triangle of area $\tfrac12\,v_0 t_\text{b}$.
 ```
 
-where $t_\text{r}$ is the reaction time ($\text{s}$) and $a$ the deceleration ($\text{m/s}^2$), assumed constant; at the limit of locking the wheels $a = \mu g$. In the electric power of the power plants $\eta$ is the efficiency and $\rho$ the density of water or air; for a hydropower plant $Q$ is the flow rate ($\text{m}^3\text{/s}$) and $h$ the head ($\text{m}$), for a wind turbine $A$ is the area swept by the rotor ($\text{m}^2$) and $v$ the wind speed. The expression for the wind power holds when the efficiency stays constant and the turbine runs below its rated power.
+The electric power $P_\text{hydro}$ ($\text{W}$) of a hydropower plant is a part of the potential energy that the falling water loses per unit time, and the efficiency $\eta$ tells how large a part. Water of density $\rho$ ($\text{kg/m}^3$) flows through the plant at the flow rate $Q$ ($\text{m}^3\text{/s}$), the volume per second, and falls through the head $h$ ($\text{m}$).
+
+```johda
+Water flows through a hydropower plant at the flow rate $Q$, and the head is $h$. Derive the electric power $P_\text{hydro}$ of the plant when its efficiency is $\eta$.
+---
+In the time $\Delta t$ the volume of water $V = Q\,\Delta t$ flows through the plant. By the definition of density $\rho = \tfrac{m}{V}$ its mass is
+
+$$m = \rho V = \rho Q\,\Delta t$$
+
+When this water falls through the height $h$, its gravitational potential energy decreases by
+
+$$\Delta E = mgh = \rho Q\,\Delta t\,gh$$
+
+The speed of the water is about the same at the top and at the bottom of the fall, so this energy goes to the plant. Power is the change in energy per unit time, so the water gives the plant the input power
+
+$$P_\text{o} = \frac{\Delta E}{\Delta t} = \rho Qgh$$
+
+The efficiency $\eta = \tfrac{P_\text{a}}{P_\text{o}}$ tells what part of this power is obtained as electricity:
+
+$$P_\text{hydro} = \eta P_\text{o} = \eta\rho Qgh$$
+```
+
+Likewise, the electric power $P_\text{wind}$ ($\text{W}$) of a wind turbine is a part of the kinetic energy that the air carries through the rotor per unit time. Air of density $\rho$ flows at the speed $v$ ($\text{m/s}$) perpendicularly through the area $A$ ($\text{m}^2$) swept by the rotor.
+
+<svg data-fig="tuuli" viewBox="0 0 600 420" role="img" aria-label="Diagram from the side, no numerical values. On the right is a wind turbine: the tower, the nacelle and three blades. The area A swept by the rotor is drawn as an ellipse. The wind blows from the left at the speed v, blue arrows. To the left of the rotor is a light-blue cylinder of air whose base is the area A and whose length is v times delta t: the air that passes through the rotor in the time delta t." style="max-width:100%;font-size:24px">
+  <line x1="20" y1="400" x2="580" y2="400" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M464,204 L456,400 L484,400 L476,204 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M150,80 L420,80 A26,110 0 0 1 420,300 L150,300 A26,110 0 0 1 150,80 Z" fill="#d0e6fb" stroke-linejoin="round" fill-opacity="0.75"/>
+  <line x1="150" y1="80" x2="420" y2="80" stroke="#1971c2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="8 6"/>
+  <line x1="150" y1="300" x2="420" y2="300" stroke="#1971c2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="8 6"/>
+  <path d="M150,80 A26,110 0 1 0 150,300 A26,110 0 1 0 150,80 Z" fill="none" stroke="#1971c2" stroke-width="2" stroke-linejoin="round" stroke-dasharray="8 6"/>
+  <line x1="190" y1="130" x2="287" y2="130" stroke="#1971c2" stroke-width="3.5" stroke-linecap="butt"/>
+  <path d="M300,130 L286,136.5 L286,123.5 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <line x1="190" y1="190" x2="287" y2="190" stroke="#1971c2" stroke-width="3.5" stroke-linecap="butt"/>
+  <path d="M300,190 L286,196.5 L286,183.5 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <line x1="190" y1="250" x2="287" y2="250" stroke="#1971c2" stroke-width="3.5" stroke-linecap="butt"/>
+  <path d="M300,250 L286,256.5 L286,243.5 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <foreignObject x="235" y="93.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$v$</div></foreignObject>
+  <path d="M420,80 A26,110 0 1 0 420,300 A26,110 0 1 0 420,80 Z" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <rect x="426" y="176" width="76" height="28" rx="8" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="420" y1="190" x2="420" y2="86.5" stroke="#1f2933" stroke-width="7" stroke-linecap="round"/>
+  <line x1="420" y1="190" x2="420" y2="86.5" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <line x1="420" y1="190" x2="399" y2="241.5" stroke="#1f2933" stroke-width="7" stroke-linecap="round"/>
+  <line x1="420" y1="190" x2="399" y2="241.5" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <line x1="420" y1="190" x2="441" y2="241.5" stroke="#1f2933" stroke-width="7" stroke-linecap="round"/>
+  <line x1="420" y1="190" x2="441" y2="241.5" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="420" cy="190" r="10" fill="#1f2933"/>
+  <foreignObject x="458" y="73.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$A$</div></foreignObject>
+  <line x1="150" y1="318" x2="150" y2="334" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="420" y1="318" x2="420" y2="334" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="150" y1="326" x2="420" y2="326" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="256" y="335.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$v\,\Delta t$</div></foreignObject>
+  <foreignObject x="146" y="44" width="154" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px;color:#6b7480">$\text{air in the time } \Delta t$</div></foreignObject>
+</svg>
+
+```johda
+The wind blows at the speed $v$ perpendicularly towards the rotor, and the area swept by the rotor is $A$. Derive the electric power $P_\text{wind}$ of the wind turbine when its efficiency is $\eta$.
+---
+In the time $\Delta t$ the air travels the distance $v\,\Delta t$. So a cylinder of air with base area $A$ and length $v\,\Delta t$ passes through the rotor (figure). By the definition of density its mass is
+
+$$m = \rho V = \rho A v\,\Delta t$$
+
+The kinetic energy of this cylinder of air is
+
+$$E_\text{k} = \tfrac12\,mv^2 = \tfrac12\,\rho A v\,\Delta t \cdot v^2$$
+
+Simplify:
+
+$$E_\text{k} = \tfrac12\,\rho A v^3\,\Delta t$$
+
+Power is energy per unit time, so the air brings the input power
+
+$$P_\text{o} = \frac{E_\text{k}}{\Delta t} = \tfrac12\,\rho A v^3$$
+
+With the efficiency $\eta = \tfrac{P_\text{a}}{P_\text{o}}$ the electric power is
+
+$$P_\text{wind} = \eta P_\text{o} = \tfrac12\,\eta\rho A v^3$$
+
+The speed is cubed because a faster wind carries both more air through the rotor and more energy in each kilogram of air. The result assumes a constant efficiency, so it holds when the turbine runs below its rated power.
+```
 
 ## Common mistakes {Virheet}
 

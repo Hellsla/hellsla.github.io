@@ -1,8 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 71f0ef9cfadd67d6
+CONTENT-HASH: 5742dd1f4adca003
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 71f0ef9cfadd67d6.
 
-Delta review (solution practice, 2026-11-12) of the version passed before.
+## Blocking
+(none)
 
-Changed solutions (s? a: distance d = L - v/2f' solved in symbols; fit s5 b l-axis intercept l0 = -b/k separated; s? c depth d = L0 + x; inquiry dB task now names beta = 10 dB) model symbols-first practice and stay easy to follow. Same physics and steps as fi in en (numbers match fi).
+## Polish
+- The decibel factor is named $\beta$ in the inquiry solution; $\beta$ is often used for the sound level itself in other books, so a line saying it is only a name for the constant $10\,\text{dB}$ would pre-empt confusion. Not wrong.
 
-Checked: diff since 761b6673, symbols defined, solved expression equals Sijoitus, answers.py output, tasks.json answer/criteria, cross-language number match.
+## Checked
+Four hunks: decibel solution ($\beta = 10\,\text{dB}$ by definition, formula and substitution agree), fret distance $d = L - v/2f'$, pendulum intercept $l_0 = -b/k$ and length formula, bungee depth $d = L_0 + x$.
+Read the diff hunks of this unit for how #522 notation and #523 symbolic-first solutions interact: no symbol used with two meanings inside one solution, no duplicated derivation, no contradiction with the unit text, LaTeX balanced, the answer lines still match the substitutions, and the formula still precedes the numbers (CLAUDE.md Lesson form 7). Staging of the worked solutions (Given, Find, Principle, Formula, Conversions, Substitution, Answer, Reasonableness) is intact.

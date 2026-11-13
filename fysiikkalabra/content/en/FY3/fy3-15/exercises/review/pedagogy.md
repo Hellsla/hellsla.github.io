@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 8665caaa53dcce34
-
-Mode: translation review (en) against the reviewed Finnish. Round 2, new task fy3-15-L2-08.
+CONTENT-HASH: 62b370cfcdb672b5
 
 ## Blocking
-(none)
+
+None. L3-03 defines epsilon = Q_1/W with Q_1 (heat given indoors) and W (pump's electric energy).
 
 ## Polish
-- None.
+
+1. solutions.md L3-03 Formula line: the added sentence about Q_1 and W follows the formula without a full stop or line break; add a period/newline.
 
 ## Checked
-- L2-08 (YO-skill form) keeps the fi task form, prompt and feedback texts; every wrong option or statement keeps its misconception diagnosis.
-- Natural English, no calques; same step order as fi (Given, Find, Principle, Model answer, Reasonableness).
-- Level and workload as in fi; no answer disclosed in the task text.
+
+Diff since previous PASS and the MAFY notation in lesson/solutions; symbols defined where first used; numbers and levels unchanged.

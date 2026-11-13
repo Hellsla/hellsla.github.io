@@ -1,17 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: cb3416ff2abdea57
-
-Mode: translation review (fi-easy (NOTES.md section 12)) against the reviewed Finnish. Round 2, new task fy3-15-L2-08.
+CONTENT-HASH: 4a82538e3cf486b3
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- None.
+1. L3-01 uses P_s,0 (zero = no district heat) beside P_o (letter o); a word subscript avoids any confusion.
 
 ## Checked
-- fy3-15-L2-08 recomputed independently: q_m = 12 000 kg/s, DeltaT = 10 K, P_L = 4190*12000*10 = 503 MW, nearest 500 MW (42 % of 1200 MW); distractors 0.5, 50, 15 000 MW. Equals fi.
-- Answer, unit, tolerance, kind, order/statements/choices, correct flags and their order equal fi.
-- solutions.md of L2-08: every number, unit and formula equals fi; decimal comma kept.
-- Physics and scope unchanged; no Finnish-only terms left.
-- No translation fix needed. check_i18n.py shows nothing for fy3-15; build.py fy3-15 succeeds.
+Fix: L3-03 now uses MAFY's ε = Q₁/W with Q₁ the heat given indoors and W the electric energy the pump uses (defined in the Formula line), consistent with fy3-11; E_fuel = Q₁/(η_transm η_plant ε) = 100/(0,950·0,400·3,00) = 87,7 kWh, unchanged. answers.py output unchanged (L1-01 90,2 %; L1-02 42,0 %; L1-03 4,2 kW; L2-01 109 MW; L2-07 36,6 %; L3-01 206 MW; L3-02 13,6 kt; L3-04 132 MW). P_o, P_a, E_o consistent; only the L3-03 Given and Formula lines changed. Languages agree.
