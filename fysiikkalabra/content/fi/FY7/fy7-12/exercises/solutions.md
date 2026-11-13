@@ -212,3 +212,25 @@ $\alpha_\text{r} = 48{,}75^\circ \approx 48{,}8^\circ$
 Tulokulma $50{,}0^\circ$ on suurempi kuin rajakulma $48{,}8^\circ$. Taittumislaista tulisi $\sin\alpha_2 = 1{,}33 \cdot \sin 50{,}0^\circ$, eli $\sin\alpha_2 = 1{,}02 > 1$, joten taittunutta sädettä ei ole. Säde kokonaisheijastuu: kaikki valo heijastuu vedenpinnasta takaisin veteen heijastuskulmassa $50{,}0^\circ$.
 
 Perustelu on siis, että tulokulma $50{,}0^\circ$ on suurempi kuin veden ja ilman rajakulma $48{,}8^\circ$. Jos kulman $40{,}0^\circ$ pitää tulokulmana, mittaa kulman pinnasta, ja silloin päätyy väärin osittaiseen taittumiseen ilmaan. Jos taitekertoimet vaihtavat paikkaa, rajakulman siniksi tulee $1{,}33$, ja näyttää siltä, ettei rajakulmaa ole. Väite taittumisesta normaalista poispäin on tosi, mutta se ei kerro, ylittääkö tulokulma rajakulman. Valo kulkisi pitkin vedenpintaa vain, jos tulokulma olisi täsmälleen rajakulma.
+
+## fy7-12-L1-09
+**Annettu:** safiirin taitekerroin $n_1 = 1{,}77$, ilman taitekerroin $n_2 = 1{,}00$, kuvaaja rajakulmasta taitekertoimen funktiona
+**Kysytty:** safiirin ja ilman rajakulma $\alpha_\text{r}$ asteina
+**Periaate:** Valo tulee safiirista ilmaan eli suuremman taitekertoimen aineesta pienemmän, joten rajakulma on olemassa. Kuvaajan käyrä esittää juuri tätä riippuvuutta, joten rajakulma voidaan lukea suoraan käyrältä. Lukemisen voi tarkistaa kaavalla $\sin\alpha_\text{r} = n_2 : n_1$.
+**Kuvaajan lukeminen:** Vaaka-akselin kohdasta $n_1 = 1{,}77$ vedetään pystysuora viiva käyrään. Käyrän pisteestä mennään vaakasuoraan pystyakselille, ja kulma luetaan ruudukon viivoilta: se on viivojen $30^\circ$ ja $35^\circ$ välissä, aivan lähellä $35^\circ$:n viivaa. Luku on $\alpha_\text{r} \approx 34^\circ$ (lukematarkkuus noin $\pm 1^\circ$).
+**Kaava:** $n_1 \sin\alpha_\text{r} = n_2 \sin 90^\circ$, josta $\sin\alpha_\text{r} = \dfrac{n_2}{n_1}$ ja $\alpha_\text{r} = \sin^{-1}\dfrac{n_2}{n_1}$
+**Muunnokset:** Ei tarvita: taitekertoimet ovat yksiköttömiä, ja kulma luetaan asteina.
+**Sijoitus:** Tarkistus: $\alpha_\text{r} = \sin^{-1}\dfrac{1{,}00}{1{,}77} = \sin^{-1} 0{,}5650 = 34{,}40^\circ$
+**Vastaus:** $34^\circ$, kuvaajan lukematarkkuuden mukaan; laskettu arvo on $34{,}4^\circ$. Safiiri-ilma-rajapinnassa valo kokonaisheijastuu, kun tulokulma on suurempi kuin noin $34^\circ$.
+**Järkevyys:** Safiirin taitekerroin on suurempi kuin lasin ($1{,}50$, rajakulma $41{,}8^\circ$) ja pienempi kuin timantin ($2{,}42$, rajakulma $24{,}4^\circ$), joten sen rajakulman pitää olla näiden välissä. Niin se on.
+
+## fy7-12-L2-09
+**Annettu:** muovin ja ilman rajakulma $\alpha_\text{r} = 35{,}0^\circ$, ilman taitekerroin $n_2 = 1{,}00$, valon nopeus tyhjiössä $c = 3{,}00 \cdot 10^8\,\text{m/s}$
+**Kysytty:** muovin taitekerroin $n_1$ kuvaajasta ja valon nopeus $v$ muovissa kilometreinä sekunnissa
+**Periaate:** Muovin taitekerroin määrää rajakulman, joten sen saa lukemalla kuvaajaa toisin päin: rajakulmasta taitekertoimeen. Kun taitekerroin tunnetaan, valon nopeus aineessa on $v = c : n_1$.
+**Kuvaajan lukeminen:** Pystyakselin kohdasta $35^\circ$ vedetään vaakasuora viiva käyrään. Käyrän pisteestä mennään pystysuoraan alas vaaka-akselille: kohta on pystyviivojen $1{,}7$ ja $1{,}8$ välissä, noin $0{,}4$ ruutua viivan $1{,}7$ jälkeen. Luku on $n_1 \approx 1{,}74$ (lukematarkkuus noin $\pm 0{,}02$).
+**Kaava:** $n_1 \sin\alpha_\text{r} = n_2 \sin 90^\circ$ (tarkistukseen), $v = \dfrac{c}{n_1}$
+**Muunnokset:** $1\,\text{m/s} = 10^{-3}\,\text{km/s}$, joten $v = \dfrac{3{,}00 \cdot 10^8\,\text{m/s}}{n_1} = \dfrac{3{,}00 \cdot 10^5\,\text{km/s}}{n_1}$.
+**Sijoitus:** $v = \dfrac{3{,}00 \cdot 10^5\,\text{km/s}}{1{,}74} = 1{,}724 \cdot 10^5\,\text{km/s}$. Tarkistus kaavasta: $n_1 = \dfrac{1{,}00}{\sin 35{,}0^\circ} = 1{,}743$.
+**Vastaus:** $1{,}72 \cdot 10^5\,\text{km/s}$, kolme merkitsevää numeroa kuten rajakulma ja valon nopeus. Taitekerroin on noin $1{,}74$.
+**Järkevyys:** Valo kulkee aineessa hitaammin kuin tyhjiössä ($3{,}00 \cdot 10^5\,\text{km/s}$), ja nopeus on tässä noin $57\,\%$ siitä. Taitekerroin $1{,}74$ on lasin ($1{,}50$) ja timantin ($2{,}42$) välissä, joten nopeuden pitää olla lasin nopeuden ($2{,}00 \cdot 10^5\,\text{km/s}$) ja timantin nopeuden ($1{,}24 \cdot 10^5\,\text{km/s}$) välissä.

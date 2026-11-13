@@ -223,6 +223,24 @@ def critical_graph():
     return f.svg()
 
 
+def critical_curve():
+    """The critical-angle curve against air on a fine grid and with no marked points: a question-safe variant of graph."""
+    f = Fig("fy712-curve", 340, "Kuvaaja mittakaavassa: rajakulma asteina aineen taitekertoimen n1 funktiona, kun "
+            "toinen aine on ilmaa, jonka taitekerroin on 1,00. Käyrä laskee 90 asteesta, kun n1 on 1,00, ensin "
+            "jyrkästi ja sitten loivemmin. Ruudukon vaakaviivat ovat viiden asteen välein ja pystyviivat "
+            "taitekertoimen yhden sadasosan kymmenen kerrannaisten välein, eli 0,1 välein. Kuvaajaan ei ole "
+            "merkitty yhtään pistettä.")
+    ax = Axes(f, (96, 290), (520, 76), x=(1.0, 2.6), y=(0, 90), xticks=[1.0 + 0.1 * k for k in range(1, 17)],
+              yticks=[5 * k for k in range(1, 19)], xlabel=r"n_1", ylabel=r"\alpha_\text{r}\ (^\circ)",
+              xfmt=lambda v: fi(round(v, 1), 1) if round(v * 10) % 2 == 0 else "",
+              yfmt=lambda v: fi(v) if v % 15 == 0 and v != 15 else "")
+    f.tex(ax.X(1.0), 314, r"1{,}0", "middle")
+    f.tex(84, 282, r"0", "end")
+    ax.curve(lambda x: math.degrees(math.asin(1 / x)), 1.0, 2.6, RAY, 3)
+    f.tex(520, 112, r"n_2 = 1{,}00\ (\text{ilma})", "end", w=200, bg=True)
+    return f.svg()
+
+
 def hero():
     """The opening illustration: a sea cable on the bottom of the Baltic between two shores, and a magnified view of
     the glass fibre inside with light zigzagging along it."""
@@ -295,11 +313,13 @@ def scene():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "water": water_rays, "fibre": fibre, "diamond": diamond, "graph": critical_graph, "scene": scene}
+FIGURES = {"hero": hero, "water": water_rays, "fibre": fibre, "diamond": diamond, "graph": critical_graph, "scene": scene,
+           "graph-curve": critical_curve}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "water": "reveals: below α_r light refracts out, at α_r it grazes the surface, above α_r it reflects totally (water 48,8°)",
     "fibre": "reveals: the ray stays in the core by total reflection at the core–cladding boundary (n1 > n2)",
     "diamond": "reveals: at 38° a diamond (α_r 24,4°) reflects totally and a glass stone (α_r 41,8°) leaks",
     "graph": "reveals: the critical angle against air for water 48,8°, glass 41,8°, diamond 24,4°",
+    "graph-curve": "safe: the curve and a fine grid only, no marked points; REUSE of graph for reading α_r from n1 or n1 from α_r",
 }

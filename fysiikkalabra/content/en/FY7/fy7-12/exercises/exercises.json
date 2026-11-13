@@ -87,6 +87,15 @@
       "answer": 103.4483,
       "unit": "km",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-12-L1-09",
+      "level": 1,
+      "text": "The graph shows the critical angle $\\alpha_\\text{r}$ in degrees as a function of the refractive index $n_1$ of a substance, when light goes from the substance into air. The refractive index of sapphire is $1.77$. Read from the graph the critical angle of sapphire and air. Give the answer in degrees.",
+      "answer": 34.4003,
+      "unit": "°",
+      "tolerance": 0.03,
+      "figure": "fy7-12/graph-curve"
     }
   ],
   "level2": [
@@ -288,6 +297,15 @@
           "feedback": "The statement is true, but it does not settle the answer. It only tells that total internal reflection is possible. Whether it happens depends on whether the angle of incidence is larger than the critical angle."
         }
       ]
+    },
+    {
+      "id": "fy7-12-L2-09",
+      "level": 2,
+      "text": "The critical angle of a transparent plastic and air is measured to be $35.0^\\circ$. The graph shows the critical angle as a function of the refractive index $n_1$, when light goes from the substance into air. Read the refractive index of the plastic from the graph and use it to calculate the speed of light in the plastic. The speed of light in vacuum is $3.00 \\cdot 10^8\\,\\text{m/s}$. Give the answer in kilometres per second.",
+      "answer": 172072.9309,
+      "unit": "km/s",
+      "tolerance": 0.03,
+      "figure": "fy7-12/graph-curve"
     }
   ],
   "level3": [
