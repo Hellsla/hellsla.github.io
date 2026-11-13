@@ -1,7 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: c82a3b21eb6adbee
+CONTENT-HASH: eed3551ade27dd66
 
-Mode: delta (sim.js label-row measurement; lesson.md figures teacher-approved)
+Mode: delta (Suuruusluokka paragraph simplified)
 
 ## Blocking
 - none
@@ -10,7 +10,7 @@ Mode: delta (sim.js label-row measurement; lesson.md figures teacher-approved)
 - none
 
 ## Checked
-- fy1-1-sim-390.png and fy1-1-sim-1280.png: label row (name and value per object) under the canvas, including the shrunken 390 px layout: no overlap or clipping, leader lines readable, dimmed far object legible, LaTeX values with thin-space units, bottom scale map intact, controls and readout intact.
+- fy1-1-theory-1280-1.png: the simplified Suuruusluokka paragraph beside the number-line figure: KaTeX renders, thin-space units, decimal comma, layout intact, no gap left by the removed sentences.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 4
