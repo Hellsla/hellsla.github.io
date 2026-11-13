@@ -1,15 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: ef5183ea1cc403e3
+CONTENT-HASH: 6592eb9d807a55c6
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- none
+1. fy4-9: I = Δp table renders cleanly with overlined vectors.
 
-## Checked
-- Delta review (editorial correction round, light, teacher 2026-11-07). lesson.md diff read (impulse as signed area, F_{ka,x}): inline LaTeX only, F_{\text{ka},x} = \tfrac{...} is a short inline formula, no display change. Captures current, not re-opened.
-- Plain Finnish: new sentences short and concrete, terms as in the glossary; mathematical typography: \cdot, colon for division, decimal comma, units upright in inline LaTeX; no plain-text quantity in the changed text.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+Checked: preview at 390 and 1280 px, formula tables, opened solutions; no horizontal overflow, no KaTeX errors, old symbols gone.

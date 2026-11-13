@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: c6dcfbc54a32b382
+CONTENT-HASH: 4726e0daf5ce4eb7
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-(none)
+1. solutions.md: P_a used consistently with the lesson; numbers unchanged; solutions render without errors.
 
-## Checked
-- Delta of exercises.json and solutions.md (wording: undisturbed wind through the swept area; added safety remark in fy4-16 solution). Opened fy4-15-open-exercises-L2-1280-8 (L2-15 solution with the reworded Periaate). All quantities with units are inline LaTeX with the correct decimal sign, chains stay short or aligned, no clipping or overflow; language fluent and consistent with the lesson wording.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+Checked: opened solutions in the preview at 390 and 1280 px.

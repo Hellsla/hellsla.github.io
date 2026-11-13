@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: a0b167fabd2a861c
+CONTENT-HASH: 847137cbd7def865
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-(none)
+1. fy4-2 formula section: a_k table and 'a = a_k' sentence render cleanly; no overflow.
 
-## Checked
-- Delta only. Opened en/fy4-2 captures: example-390-2 (Result with the exact-value sentence, steps 6-7) at readable size. Edited text renders in natural English; every number with its unit is inline LaTeX, no inline formula wraps, no overflow or clipping, surrounding layout intact.
-
-## Scores
-illustrations 4 · typography 4 · Finnish (English language quality) 5 · accessibility 4
+Checked: preview at 390 and 1280 px, formula tables, opened solutions; no horizontal overflow, no KaTeX errors, old symbols gone.
