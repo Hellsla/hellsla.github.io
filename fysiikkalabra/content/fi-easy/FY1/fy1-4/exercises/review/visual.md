@@ -1,13 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: acf8f3273c02a82c
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: 16426b567c7be578
 
 ## Blocking
 - none
 
 ## Polish
-- Untouched 'Oppilaan väli' remains in fy1-4 solutions while fy1-5 now says 'opiskelija'; optional harmonisation only.
+- [Minor] hint "Arvo on MAFY-taulukon taulukossa …" — "taulukon taulukossa" reads clumsily — write "Arvo löytyy MAFY-taulukosta, taulukosta …".
+- [Minor] fy1-4-L1-09 — "MAFY-taulukko" is not explained for S2 readers as fy1-5…8 do ("koulun fysiikan taulukkokirja") — add that sentence.
 
 ## Checked
-- exercises.json/solutions.md: units set in \text{} math, tfrac unit factors in Järkevyys lines, parentheses around (0.475 ± 0.075); notation consistent
-- Changes mirror the Finnish fix in fi-easy; no notation, unit or decimal-comma error introduced.
+- Delta (new MAFY task fy1-4-L1-09 and its solution; figure tasks with candle, spring-masses), captures rebuilt for this hash.
+- Opened at 1280 px: open-exercises-1280 part holding fy1-4-L1-09 (task, hint, lock, answer field, solution rows, Vastaus, Järkevyys): KaTeX renders, chains aligned, thin spaces, decimal commas, no clipping.
+- Figure tasks are teacher-approved drawings (layout only); the neighbouring tasks' captures showed no layout damage. Packet carries no SCOPE line, so none is written.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

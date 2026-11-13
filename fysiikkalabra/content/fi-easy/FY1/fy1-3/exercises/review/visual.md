@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: f4e03d96d0aea49d
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-11-09: diff since origin/main only)
+CONTENT-HASH: cf8596c9bb8935b7
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] hint "Arvo on MAFY-taulukon taulukossa …" — "taulukon taulukossa" reads clumsily — write "Arvo löytyy MAFY-taulukosta, taulukosta …".
+- [Minor] fy1-3-L1-09 — "MAFY-taulukko" is not explained for S2 readers as fy1-5…8 do ("koulun fysiikan taulukkokirja") — add that sentence.
 
 ## Checked
-- fy1-3-L3-05: Periaate now names the check as a simplified comparison of the stated uncertainty estimates; Vastaus says the results are not consistent per these estimates, the estimates are not hard limits and separation alone does not decide statistical significance.
-- Gap 0.04 g/cm³ and intervals 2,69–2,79 / 2,55–2,65 unchanged and correct.
-- Language version fi-easy judged from the diff against origin/main; notation (LaTeX numbers with units, decimal comma/point, \cdot) checked in changed lines.
+- Delta (new MAFY task fy1-3-L1-09 and its solution; figure tasks with paper-stack, pendulum-timing), captures rebuilt for this hash.
+- Opened at 1280 px: open-exercises-1280 part holding fy1-3-L1-09 (task, hint, lock, answer field, solution rows, Vastaus, Järkevyys): KaTeX renders, chains aligned, thin spaces, decimal commas, no clipping.
+- Figure tasks are teacher-approved drawings (layout only); the neighbouring tasks' captures showed no layout damage. Packet carries no SCOPE line, so none is written.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 5c84c3bbd0a47dd8
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-11-09: diff since origin/main only)
+CONTENT-HASH: 331d0dfe6fddbe76
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] hint "Arvo on MAFY-taulukon taulukossa …" — "taulukon taulukossa" reads clumsily — write "Arvo löytyy MAFY-taulukosta, taulukosta …".
+- [Minor] fy1-2-L1-10 — "MAFY-taulukko" is not explained for S2 readers as fy1-5…8 do ("koulun fysiikan taulukkokirja") — add that sentence.
 
 ## Checked
-- fy1-2-L3-02: question now asks for a ratio (how many times one screen width), so it no longer reads as a count of whole screens (675); answer 674.4, tolerance 0.02 unchanged; unit "" as in other ratio tasks.
-- Kysytty, Periaate, Vastaus describe the same ratio N; Järkevyys still fits.
-- Language version fi-easy judged from the diff against origin/main; notation (LaTeX numbers with units, decimal comma/point, \cdot) checked in changed lines.
+- Delta (new MAFY task fy1-2-L1-10 and its solution; figure tasks with cyclist, tap-bucket), captures rebuilt for this hash.
+- Opened at 1280 px: open-exercises-1280 part holding fy1-2-L1-10 (task, hint, lock, answer field, solution rows, Vastaus, Järkevyys): KaTeX renders, chains aligned, thin spaces, decimal commas, no clipping.
+- Figure tasks are teacher-approved drawings (layout only); the neighbouring tasks' captures showed no layout damage. Packet carries no SCOPE line, so none is written.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

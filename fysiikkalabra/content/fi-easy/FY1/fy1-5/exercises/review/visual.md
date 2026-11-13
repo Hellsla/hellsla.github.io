@@ -1,13 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 56fe6daaa90aa28f
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: a6634c694c12114a
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] fy1-5-L1-09 text — "Anna vastaus yksikössä km/kg." has the unit name in plain text (fy1-4's new task sets it as maths) — set it as $\text{km}$ / $\text{kg}$.
 
 ## Checked
-- solutions.md: s -> \Delta s for travelled distance, dropped s_0 = 0 clauses, oppilas -> opiskelija where changed; notation consistent with lesson
-- Changes mirror the Finnish fix in fi-easy; no notation, unit or decimal-comma error introduced.
+- Delta (new MAFY task fy1-5-L1-09 and its solution; figure tasks with lightning, two-friends), captures rebuilt for this hash.
+- Opened at 1280 px: open-exercises-1280 part holding fy1-5-L1-09 (task, hint, lock, answer field, solution rows, Vastaus, Järkevyys): KaTeX renders, chains aligned, thin spaces, decimal commas, no clipping.
+- Figure tasks are teacher-approved drawings (layout only); the neighbouring tasks' captures showed no layout damage. Packet carries no SCOPE line, so none is written.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

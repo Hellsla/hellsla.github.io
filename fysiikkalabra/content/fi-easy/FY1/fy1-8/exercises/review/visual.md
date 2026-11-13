@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 6472db20fc2ac7c5
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-11-09: diff since origin/main only)
+CONTENT-HASH: 67e21cc666ec7b0b
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] fy1-8-L1-10 text — "Anna vastaus yksikössä km/kg." has the unit name in plain text (fy1-4's new task sets it as maths) — set it as $\text{km}$ / $\text{kg}$.
 
 ## Checked
-- fy1-8-L3-04: the general rule 'a difference can be shown only if the intervals do not overlap' is removed; Periaate now states the data-specific conclusion (intervals overlap, no reliable conclusion, hand-timing uncertainty to be considered); Järkevyys softened to 'ei erotu luotettavasti'.
-- d = 0,04 s, k = 3,75 ≈ 3,8 and the overlap 3,08–3,12 s unchanged.
-- Language version fi-easy judged from the diff against origin/main; notation (LaTeX numbers with units, decimal comma/point, \cdot) checked in changed lines.
+- Delta (new MAFY task fy1-8-L1-10 and its solution; figure tasks with ramp-ball, two-balls-ramp), captures rebuilt for this hash.
+- Opened at 1280 px: open-exercises-1280 part holding fy1-8-L1-10 (task, hint, lock, answer field, solution rows, Vastaus, Järkevyys): KaTeX renders, chains aligned, thin spaces, decimal commas, no clipping.
+- Figure tasks are teacher-approved drawings (layout only); the neighbouring tasks' captures showed no layout damage. Packet carries no SCOPE line, so none is written.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5
