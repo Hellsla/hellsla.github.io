@@ -312,7 +312,7 @@
         },
         {
           "text": "The nucleus changes into caesium, because the photon takes one proton with it.",
-          "feedback": "A photon is not a particle that contains a proton: its mass number and charge are zero. The atomic number stays at $56$."
+          "feedback": "A photon contains no proton: its mass number and charge are zero. The atomic number stays at $56$."
         },
         {
           "text": "The mass number decreases by one, because the photon takes energy and mass from the nucleus.",

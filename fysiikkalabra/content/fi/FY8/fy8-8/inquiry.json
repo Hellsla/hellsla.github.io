@@ -312,7 +312,7 @@
         },
         {
           "text": "Ydin muuttuu cesiumiksi, koska fotoni vie mukanaan yhden protonin.",
-          "feedback": "Fotoni ei ole hiukkanen, joka sisältäisi protonin: sen massaluku ja varaus ovat nolla. Järjestysluku pysyy $56$:ssa."
+          "feedback": "Fotoni ei sisällä protonia: sen massaluku ja varaus ovat nolla. Järjestysluku pysyy $56$:ssa."
         },
         {
           "text": "Massaluku pienenee yhdellä, koska fotoni vie ytimeltä energiaa ja massaa.",
