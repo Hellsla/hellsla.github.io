@@ -241,7 +241,7 @@ Perusteltu johtopäätös on siis, että asetuksella 4 levyn absoluuttinen lämp
 **Annettu:** kuvaajan spektrikäyrä; uusi pintalämpötila $T_2 = 1000\,\text{K}$; Wienin siirtymälain vakio $b = 2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}$; kappale säteilee kuin musta kappale
 **Kysytty:** spektrin huipun siirtymä $\Delta\lambda = \lambda_2 - \lambda_1$ mikrometreinä
 **Periaate:** Mustan kappaleen spektrin huipun aallonpituus riippuu vain pintalämpötilasta (Wienin siirtymälaki). Alkuperäinen huippu luetaan kuvaajasta. Uusi huippu lasketaan lämpötilasta. Siirtymä on näiden kahden erotus.
-**Kuvaajan lukeminen:** Käyrän korkein kohta on pystysuoralla ruudukon viivalla. Viiva on yhden ruudun ($0{,}2\,\mu\text{m}$) luvun $1$ oikealla puolella. Siis $\lambda_1 = 1{,}2\,\mu\text{m}$.
+**Kuvaajan lukeminen:** Käyrän korkein kohta on pystysuoralla ruudukon viivalla. Ruudukon viivojen väli on $0{,}2\,\mu\text{m}$. Viiva on yhden ruudun ($0{,}2\,\mu\text{m}$) luvun $1$ oikealla puolella. Siis $\lambda_1 = 1{,}2\,\mu\text{m}$.
 **Kaava:** $\lambda_\text{max} T = b$, josta $\lambda_2 = \dfrac{b}{T_2}$ ja $\Delta\lambda = \dfrac{b}{T_2} - \lambda_1$
 **Muunnokset:** $\lambda_1 = 1{,}2\,\mu\text{m} = 1{,}2 \cdot 10^{-6}\,\text{m}$ ja lopuksi $1\,\mu\text{m} = 10^{-6}\,\text{m}$.
 **Sijoitus:** $\lambda_2 = \dfrac{2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}}{1000\,\text{K}} = 2{,}898 \cdot 10^{-6}\,\text{m} = 2{,}898\,\mu\text{m}$ ja $\Delta\lambda = 2{,}898\,\mu\text{m} - 1{,}2\,\mu\text{m} = 1{,}698\,\mu\text{m}$
