@@ -408,11 +408,11 @@ $y$: $N - G = 0$
 So $F = F_\mu$ and $N = G$, and the opposite arrows must be equally long, as in diagram C. In diagram A the pushing force is greater than friction, so the net force would point to the right and the box would accelerate. Diagram B has an extra force $\overline{F}_\text{k}$, which is the reaction force acting on the pusher. In diagram D the velocity is drawn as a force, although it has no cause.
 
 ## fy4-5-L2-08
-**Given:** $m = 2.5\,\text{kg}$, the puck is on frictionless horizontal ice, one square is $2.0\,\text{N}$; components read from the figure: $F_{1x} = 5$ squares, $F_{1y} = 6$ squares, $F_{2x} = -2$ squares and $F_{2y} = -2$ squares
-**Find:** the magnitude $a$ of the acceleration of the puck in $\text{m/s}^2$
-**Principle:** The vector sum of the forces on the puck, the net force, determines the acceleration by Newton's second law. Vertically the weight and the normal force from the ice cancel, so only the horizontal forces in the figure matter.
-**Reading the graph:** Each arrow starts at a corner of the puck and ends at a grid crossing, so the components are read as numbers of squares. $\overline{F}_1$ goes $5$ squares right and $6$ squares up, $\overline{F}_2$ goes $2$ squares left and $2$ squares down. One square is $2.0\,\text{N}$.
-**Free-body diagram:** The puck as a rectangle seen from above, $x$ to the right and $y$ up. The forces $\overline{F}_1$ and $\overline{F}_2$ start at the corners of the puck as in the figure.
+**Given:** $m = 2.5\,\text{kg}$, the block is on frictionless horizontal ice, one square is $2.0\,\text{N}$; components read from the figure: $F_{1x} = 5$ squares, $F_{1y} = 6$ squares, $F_{2x} = -2$ squares and $F_{2y} = -2$ squares
+**Find:** the magnitude $a$ of the acceleration of the block in $\text{m/s}^2$
+**Principle:** The vector sum of the forces on the block, the net force, determines the acceleration by Newton's second law. Vertically the weight and the normal force from the ice cancel, so only the horizontal forces in the figure matter.
+**Reading the graph:** Each arrow starts at a corner of the block and ends at a grid crossing, so the components are read as numbers of squares. $\overline{F}_1$ goes $5$ squares right and $6$ squares up, $\overline{F}_2$ goes $2$ squares left and $2$ squares down. One square is $2.0\,\text{N}$.
+**Free-body diagram:** The block as a rectangle seen from above, $x$ to the right and $y$ up. The forces $\overline{F}_1$ and $\overline{F}_2$ start at the corners of the block as in the figure.
 ```voimakuvio
 F_1 15,62 50,19
 F_2 5,657 225
@@ -422,5 +422,5 @@ akselit 0
 **Formula:** $\Sigma F_x = F_{1x} + F_{2x}$ and $\Sigma F_y = F_{1y} + F_{2y}$, so $\Sigma F = \sqrt{(\Sigma F_x)^2 + (\Sigma F_y)^2}$. From Newton's second law $\Sigma F = ma$, so $a = \dfrac{\Sigma F}{m}$
 **Conversions:** The squares are converted to newtons: $5\cdot 2.0\,\text{N} = 10\,\text{N}$, $6\cdot 2.0\,\text{N} = 12\,\text{N}$ and $2\cdot 2.0\,\text{N} = 4.0\,\text{N}$.
 **Substitution:** $\Sigma F_x = 10\,\text{N} - 4.0\,\text{N} = 6.0\,\text{N}$ and $\Sigma F_y = 12\,\text{N} - 4.0\,\text{N} = 8.0\,\text{N}$, so $\Sigma F = \sqrt{(6.0\,\text{N})^2 + (8.0\,\text{N})^2} = 10\,\text{N}$ and $a = \dfrac{10\,\text{N}}{2.5\,\text{kg}} = 4.0\,\text{m/s}^2$
-**Answer:** $4.0\,\text{m/s}^2$, two significant figures like the mass $2.5\,\text{kg}$ and the value of a square, $2.0\,\text{N}$. The acceleration points in the direction of the net force, $53^\circ$ above the horizontal.
+**Answer:** $4.0\,\text{m/s}^2$, two significant figures like the mass $2.5\,\text{kg}$ and the value of a square, $2.0\,\text{N}$. The acceleration points in the direction of the net force, $53^\circ$ from the $x$ axis towards $+y$.
 **Reasonableness:** The net force $10\,\text{N}$ is smaller than the sum of the magnitudes $15.6\,\text{N} + 5.7\,\text{N} = 21.3\,\text{N}$, because $\overline{F}_2$ pulls partly the opposite way. Estimate: $10\,\text{N} : 2.5\,\text{kg} = 4.0\,\text{m/s}^2$, and $6.0\,\text{N}$ and $8.0\,\text{N}$ form a triangle with hypotenuse $10\,\text{N}$.

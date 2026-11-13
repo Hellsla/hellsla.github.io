@@ -276,7 +276,7 @@ d) The change in momentum is $m\,\Delta v = 80.0\,\text{kg} \cdot 15.0\,\text{m/
 **Formula:** $a = \mu g$ and $s = \dfrac{v_0^2}{2a} = \dfrac{v_0^2}{2\mu g}$
 **Conversions:** $v_0 = 80\,\text{km/h} = \dfrac{80}{3.6}\,\text{m/s} = 22.22\,\text{m/s}$
 **Substitution:** $a = 0.8 \cdot 9.81\,\text{m/s}^2 = 7.85\,\text{m/s}^2$ and $s = \dfrac{(22.22\,\text{m/s})^2}{2 \cdot 7.85\,\text{m/s}^2} = 31.5\,\text{m}$
-**Answer:** $s \approx 30\,\text{m}$ (calculated $31\,\text{m}$). The coefficient $0.8$ is the upper end of the table's range and known to one significant figure, so the result is given to one significant figure. The coefficient is a range $0.5$–$0.8$ in the MAFY table (table *Kitkakertoimia*); at the other end, $\mu = 0.5$, the braking distance would be $50\,\text{m}$, so this result is the shorter end of the range.
+**Answer:** $s \approx 31\,\text{m}$, two significant figures as in the speed $80\,\text{km/h}$. The coefficient $0.8$ is the upper end of the MAFY table's range $0.5$–$0.8$ (table *Kitkakertoimia*), so the braking distance $31\,\text{m}$ is the shorter end of the range; at the lower end, $\mu = 0.5$, the braking distance would be $50\,\text{m}$, which is longer. The distance thus varies with the table's range far more than with the rounding.
 **Reasonableness:** A braking distance of $31\,\text{m}$ is of the order of a typical dry-road braking distance from $80\,\text{km/h}$. The deceleration $7.85\,\text{m/s}^2$ is smaller than in ABS braking on dry asphalt ($\mu \approx 0.9$), which fits locked, sliding wheels.
 
 ## fy4-11-L2-09

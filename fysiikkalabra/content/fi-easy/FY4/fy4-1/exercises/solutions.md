@@ -239,16 +239,16 @@ Kuvaaja C kulkee pisteiden $(0\,\text{s};\ 6{,}0\,\text{m})$ ja $(4{,}0\,\text{s
 
 ## fy4-1-L2-08
 **Annettu:** kärryn $(t, x)$-kuvaaja, jonka kulmapisteet ovat $(0\,\text{s};\, 4\,\text{m})$, $(4\,\text{s};\, 16\,\text{m})$, $(6\,\text{s};\, 16\,\text{m})$ ja $(10\,\text{s};\, 8\,\text{m})$; kokonaisaika $\Delta t = 10\,\text{s}$
-**Kysytty:** keskivauhti $v_\text{k}$ yksikössä $\text{m/s}$
+**Kysytty:** keskivauhti $v_\text{kv}$ yksikössä $\text{m/s}$
 **Periaate:** Keskivauhti on kuljettu matka $s$ jaettuna kuluneella ajalla. Matka lasketaan kaikkien osien paikanmuutosten itseisarvoista, koska kärry palaa osan matkaa takaisin ja matka kasvaa myös silloin. Siirtymä ei kelpaa, koska paluu vähentäisi sitä miinusmerkillä.
 **Kuvaajan lukeminen:** Kuvaajassa on kolme suoraa osaa. Välillä $0\ldots4\,\text{s}$ kuvaaja nousee paikasta $4\,\text{m}$ paikkaan $16\,\text{m}$, joten $\Delta x_1 = 16\,\text{m} - 4\,\text{m} = 12\,\text{m}$. Välillä $4\ldots6\,\text{s}$ kuvaaja on vaakasuora ($16\,\text{m}$), joten $\Delta x_2 = 0$. Välillä $6\ldots10\,\text{s}$ kuvaaja laskee paikasta $16\,\text{m}$ paikkaan $8\,\text{m}$, joten $\Delta x_3 = 8\,\text{m} - 16\,\text{m} = -8\,\text{m}$.
-**Kaava:** $s = |\Delta x_1| + |\Delta x_2| + |\Delta x_3|$ ja $v_\text{k} = \dfrac{s}{\Delta t}$
+**Kaava:** $s = |\Delta x_1| + |\Delta x_2| + |\Delta x_3|$ ja $v_\text{kv} = \dfrac{s}{\Delta t}$
 **Muunnokset:** Paikat ovat metreinä ja ajat sekunteina, joten muunnoksia ei tarvita.
 **Sijoitus:**
 
 $$\begin{aligned} s &= 12\,\text{m} + 0 + 8\,\text{m} \\ &= 20\,\text{m} \end{aligned}$$
 
-$$\begin{aligned} v_\text{k} &= \dfrac{20\,\text{m}}{10\,\text{s}} \\ &= 2{,}0\,\text{m/s} \end{aligned}$$
+$$\begin{aligned} v_\text{kv} &= \dfrac{20\,\text{m}}{10\,\text{s}} \\ &= 2{,}0\,\text{m/s} \end{aligned}$$
 **Vastaus:** $2{,}0\,\text{m/s}$, kaksi merkitsevää numeroa, koska kuvaajan arvot luetaan kokonaisina metreinä ja sekunteina.
 **Järkevyys:** Kärry on lopussa paikassa $8\,\text{m}$ eli vain $4\,\text{m}$ alkupaikasta, mutta se on kulkenut $20\,\text{m}$. Siirtymästä laskettu keskinopeus olisi $\dfrac{4\,\text{m}}{10\,\text{s}} = 0{,}4\,\text{m/s}$, ja keskivauhti on tätä suurempi, kuten pitääkin. Nopeus $2{,}0\,\text{m/s}$ on kävelyvauhtia, mikä sopii kärrylle.
 
@@ -266,5 +266,5 @@ $$\begin{aligned} x_\text{A} &= 4\,\text{m} + 2{,}0\,\text{m/s} \cdot 6{,}0\,\te
 $$\begin{aligned} x_\text{B} &= 20\,\text{m} + (-2{,}0\,\text{m/s}) \cdot 6{,}0\,\text{s} \\ &= 8\,\text{m} \end{aligned}$$
 
 $$\begin{aligned} d &= |16\,\text{m} - 8\,\text{m}| \\ &= 8{,}0\,\text{m} \end{aligned}$$
-**Vastaus:** $8{,}0\,\text{m}$, kaksi merkitsevää numeroa, koska nopeudet $2{,}0\,\text{m/s}$ ja aika $6{,}0\,\text{s}$ on annettu kahdella numerolla.
+**Vastaus:** $8{,}0\,\text{m}$, kaksi merkitsevää numeroa, koska nopeudet $2{,}0\,\text{m/s}$ ja aika $6{,}0\,\text{s}$ on luettu kuvaajasta ja annettu kahdella numerolla.
 **Järkevyys:** Välimatka kasvaa ristiin menon jälkeen nopeuksien erotuksella $2{,}0\,\text{m/s} - (-2{,}0\,\text{m/s}) = 4{,}0\,\text{m/s}$. Hetkestä $4{,}0\,\text{s}$ on kulunut $2{,}0\,\text{s}$, joten välimatka on $4{,}0\,\text{m/s} \cdot 2{,}0\,\text{s} = 8\,\text{m}$, sama kuin yllä. Kuvaajassa viivojen pystysuuntainen väli hetkellä $6\,\text{s}$ on $8\,\text{m}$.

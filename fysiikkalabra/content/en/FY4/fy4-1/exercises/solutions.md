@@ -239,16 +239,16 @@ Graph C goes through the points $(0\,\text{s};\ 6.0\,\text{m})$ and $(4.0\,\text
 
 ## fy4-1-L2-08
 **Given:** the $(t, x)$ graph of a cart with corner points $(0\,\text{s};\, 4\,\text{m})$, $(4\,\text{s};\, 16\,\text{m})$, $(6\,\text{s};\, 16\,\text{m})$ and $(10\,\text{s};\, 8\,\text{m})$; total time $\Delta t = 10\,\text{s}$
-**Find:** the average speed $v_\text{av}$ in the unit $\text{m/s}$
+**Find:** the average speed $v_\text{sp}$ in the unit $\text{m/s}$
 **Principle:** Average speed is the distance travelled $s$ divided by the elapsed time. The distance is the sum of the absolute values of the changes in position of all the parts, because the cart returns part of the way and the distance grows then too. The displacement would not do: it would subtract the return with a minus sign.
 **Reading the graph:** The graph has three straight parts. During $0\ldots4\,\text{s}$ it rises from $4\,\text{m}$ to $16\,\text{m}$, so $\Delta x_1 = 16\,\text{m} - 4\,\text{m} = 12\,\text{m}$. During $4\ldots6\,\text{s}$ it is horizontal ($16\,\text{m}$), so $\Delta x_2 = 0$. During $6\ldots10\,\text{s}$ it falls from $16\,\text{m}$ to $8\,\text{m}$, so $\Delta x_3 = 8\,\text{m} - 16\,\text{m} = -8\,\text{m}$.
-**Formula:** $s = |\Delta x_1| + |\Delta x_2| + |\Delta x_3|$ and $v_\text{av} = \dfrac{s}{\Delta t}$
+**Formula:** $s = |\Delta x_1| + |\Delta x_2| + |\Delta x_3|$ and $v_\text{sp} = \dfrac{s}{\Delta t}$
 **Conversions:** The positions are in metres and the times in seconds, so no conversions are needed.
 **Substitution:**
 
 $$\begin{aligned} s &= 12\,\text{m} + 0 + 8\,\text{m} \\ &= 20\,\text{m} \end{aligned}$$
 
-$$\begin{aligned} v_\text{av} &= \dfrac{20\,\text{m}}{10\,\text{s}} \\ &= 2.0\,\text{m/s} \end{aligned}$$
+$$\begin{aligned} v_\text{sp} &= \dfrac{20\,\text{m}}{10\,\text{s}} \\ &= 2.0\,\text{m/s} \end{aligned}$$
 **Answer:** $2.0\,\text{m/s}$, two significant figures, because the values of the graph are read as whole metres and seconds.
 **Reasonableness:** At the end the cart is at $8\,\text{m}$, only $4\,\text{m}$ from the starting position, but it has travelled $20\,\text{m}$. The average velocity from the displacement would be $\dfrac{4\,\text{m}}{10\,\text{s}} = 0.4\,\text{m/s}$, and the average speed is greater than this, as it should be. A speed of $2.0\,\text{m/s}$ is a walking pace, which suits a cart.
 
@@ -266,5 +266,5 @@ $$\begin{aligned} x_\text{A} &= 4\,\text{m} + 2.0\,\text{m/s} \cdot 6.0\,\text{s
 $$\begin{aligned} x_\text{B} &= 20\,\text{m} + (-2.0\,\text{m/s}) \cdot 6.0\,\text{s} \\ &= 8\,\text{m} \end{aligned}$$
 
 $$\begin{aligned} d &= |16\,\text{m} - 8\,\text{m}| \\ &= 8.0\,\text{m} \end{aligned}$$
-**Answer:** $8.0\,\text{m}$, two significant figures, because the velocities $2.0\,\text{m/s}$ and the time $6.0\,\text{s}$ are given with two figures.
+**Answer:** $8.0\,\text{m}$, two significant figures, because the velocities $2.0\,\text{m/s}$ and the time $6.0\,\text{s}$ are read from the graph and have two figures.
 **Reasonableness:** After the crossing the distance grows by the difference of the velocities, $2.0\,\text{m/s} - (-2.0\,\text{m/s}) = 4.0\,\text{m/s}$. $2.0\,\text{s}$ have passed since $4.0\,\text{s}$, so the distance is $4.0\,\text{m/s} \cdot 2.0\,\text{s} = 8\,\text{m}$, the same as above. In the graph the vertical gap between the lines at $6\,\text{s}$ is $8\,\text{m}$.

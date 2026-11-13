@@ -409,11 +409,11 @@ $y$: $N - G = 0$
 Siis $F = F_\mu$ ja $N = G$, joten vastakkaisten nuolten pitää olla yhtä pitkät, kuten kuviossa C. Kuviossa A työntövoima on kitkaa suurempi, jolloin kokonaisvoima osoittaisi oikealle ja laatikko kiihtyisi. Kuviossa B on ylimääräinen voima $\overline{F}_\text{k}$, joka on työntäjään vaikuttava vastavoima. Kuviossa D nopeus on piirretty voimaksi, vaikka sillä ei ole aiheuttajaa.
 
 ## fy4-5-L2-08
-**Annettu:** $m = 2{,}5\,\text{kg}$, kiekko on kitkattomalla vaakasuoralla jäällä, yksi ruutu on $2{,}0\,\text{N}$; kuviosta luetut komponentit: $F_{1x} = 5$ ruutua, $F_{1y} = 6$ ruutua, $F_{2x} = -2$ ruutua ja $F_{2y} = -2$ ruutua
-**Kysytty:** kiekon kiihtyvyyden suuruus $a$ yksikössä $\text{m/s}^2$
-**Periaate:** Kiekkoon vaikuttavien voimien vektorisumma eli kokonaisvoima määrää Newtonin toisen lain mukaan kiihtyvyyden. Pystysuunnassa paino ja jään tukivoima kumoavat toisensa, joten vain kuvan vaakasuorat voimat ratkaisevat.
-**Kuvaajan lukeminen:** Kumpikin nuoli alkaa kiekon kulmasta ja päättyy ruudukon risteykseen, joten komponentit luetaan ruutujen määristä. $\overline{F}_1$ kulkee $5$ ruutua oikealle ja $6$ ruutua ylös, $\overline{F}_2$ kulkee $2$ ruutua vasemmalle ja $2$ ruutua alas. Yksi ruutu on $2{,}0\,\text{N}$.
-**Voimakuvio:** Kiekko suorakulmiona ylhäältä katsottuna, $x$ oikealle ja $y$ ylös. Voimat $\overline{F}_1$ ja $\overline{F}_2$ lähtevät kiekon kulmista kuvan mukaisesti.
+**Annettu:** $m = 2{,}5\,\text{kg}$, kappale on kitkattomalla vaakasuoralla jäällä, yksi ruutu on $2{,}0\,\text{N}$; kuviosta luetut komponentit: $F_{1x} = 5$ ruutua, $F_{1y} = 6$ ruutua, $F_{2x} = -2$ ruutua ja $F_{2y} = -2$ ruutua
+**Kysytty:** kappaleen kiihtyvyyden suuruus $a$ yksikössä $\text{m/s}^2$
+**Periaate:** Kappaleeseen vaikuttavien voimien vektorisumma eli kokonaisvoima määrää Newtonin toisen lain mukaan kiihtyvyyden. Pystysuunnassa paino ja jään tukivoima kumoavat toisensa, joten vain kuvan vaakasuorat voimat ratkaisevat.
+**Kuvaajan lukeminen:** Kumpikin nuoli alkaa kappaleen kulmasta ja päättyy ruudukon risteykseen, joten komponentit luetaan ruutujen määristä. $\overline{F}_1$ kulkee $5$ ruutua oikealle ja $6$ ruutua ylös, $\overline{F}_2$ kulkee $2$ ruutua vasemmalle ja $2$ ruutua alas. Yksi ruutu on $2{,}0\,\text{N}$.
+**Voimakuvio:** Kappale suorakulmiona ylhäältä katsottuna, $x$ oikealle ja $y$ ylös. Voimat $\overline{F}_1$ ja $\overline{F}_2$ lähtevät kappaleen kulmista kuvan mukaisesti.
 ```voimakuvio
 F_1 15,62 50,19
 F_2 5,657 225
@@ -423,5 +423,5 @@ akselit 0
 **Kaava:** $\Sigma F_x = F_{1x} + F_{2x}$ ja $\Sigma F_y = F_{1y} + F_{2y}$, joten $\Sigma F = \sqrt{(\Sigma F_x)^2 + (\Sigma F_y)^2}$. Newtonin toisesta laista $\Sigma F = ma$, joten $a = \dfrac{\Sigma F}{m}$
 **Muunnokset:** Ruudut muunnetaan newtoneiksi: $5\cdot 2{,}0\,\text{N} = 10\,\text{N}$, $6\cdot 2{,}0\,\text{N} = 12\,\text{N}$ ja $2\cdot 2{,}0\,\text{N} = 4{,}0\,\text{N}$.
 **Sijoitus:** $\Sigma F_x = 10\,\text{N} - 4{,}0\,\text{N} = 6{,}0\,\text{N}$ ja $\Sigma F_y = 12\,\text{N} - 4{,}0\,\text{N} = 8{,}0\,\text{N}$, joten $\Sigma F = \sqrt{(6{,}0\,\text{N})^2 + (8{,}0\,\text{N})^2} = 10\,\text{N}$ ja $a = \dfrac{10\,\text{N}}{2{,}5\,\text{kg}} = 4{,}0\,\text{m/s}^2$
-**Vastaus:** $4{,}0\,\text{m/s}^2$, kaksi merkitsevää numeroa kuten massassa $2{,}5\,\text{kg}$ ja ruudun arvossa $2{,}0\,\text{N}$. Kiihtyvyys osoittaa kokonaisvoiman suuntaan, kulmaan $53^\circ$ vaakasuunnasta ylöspäin.
+**Vastaus:** $4{,}0\,\text{m/s}^2$, kaksi merkitsevää numeroa kuten massassa $2{,}5\,\text{kg}$ ja ruudun arvossa $2{,}0\,\text{N}$. Kiihtyvyys osoittaa kokonaisvoiman suuntaan, kulmaan $53^\circ$ $x$-akselista kohti $+y$-suuntaa.
 **Järkevyys:** Kokonaisvoima $10\,\text{N}$ on pienempi kuin voimien suuruuksien summa $15{,}6\,\text{N} + 5{,}7\,\text{N} = 21{,}3\,\text{N}$, koska $\overline{F}_2$ vetää osittain vastaan. Arvio: $10\,\text{N} : 2{,}5\,\text{kg} = 4{,}0\,\text{m/s}^2$, ja $6{,}0\,\text{N}$ ja $8{,}0\,\text{N}$ muodostavat kolmion, jonka hypotenuusa on $10\,\text{N}$.

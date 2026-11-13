@@ -226,5 +226,5 @@ $s_2 = 32\,\text{m} - 16\,\text{m}$, that is $s_2 = 16\,\text{m}$
 **Formula:** Take downward as positive and the starting point as the origin, so $x_0 = 0$ and $x = h$. The equation $x = x_0 + v_0\,t + \tfrac{1}{2}\,a\,t^2$ becomes $h = \tfrac{1}{2}\,g\,t^2$, which gives $t = \sqrt{\dfrac{2h}{g}}$
 **Conversions:** All quantities are in SI units, so no conversions are needed.
 **Substitution:** $t = \sqrt{\dfrac{2 \cdot 20\,\text{m}}{24.79\,\text{m/s}^2}} = \sqrt{1.613\,\text{s}^2} \approx 1.270\,\text{s}$
-**Answer:** $1.27\,\text{s}$. The height $20\,\text{m}$ is taken as exact, so the result has three significant figures like the table value $24.79\,\text{m/s}^2$; different tables give slightly different values, and the answer is accepted within about $\pm 4\,\%$.
+**Answer:** $1.27\,\text{s}$. The height $20\,\text{m}$ is taken as exact, and the table value $24.79\,\text{m/s}^2$ has four significant figures. The result is still given with three, because different tables differ already in the fourth figure, and the answer is accepted within about $\pm 4\,\%$.
 **Reasonableness:** On Earth the same drop would take $\sqrt{2 \cdot 20\,\text{m} : 9.81\,\text{m/s}^2} \approx 2.02\,\text{s}$. Jupiter's free-fall acceleration is about $2.5$ times as large, and the time is $\sqrt{2.5} \approx 1.6$ times shorter: $2.02\,\text{s} : 1.6 \approx 1.27\,\text{s}$.

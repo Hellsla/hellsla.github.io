@@ -115,7 +115,7 @@
   {
    "id": "fy4-11-L1-09",
    "level": 1,
-   "text": "Auto ajaa vaakasuoralla kuivalla asfalttitiellä nopeudella $80\\,\\text{km/h}$. Kuljettaja jarruttaa niin, että pyörät lukkiutuvat ja kumirenkaat liukuvat asfaltilla. Ilmanvastus jätetään huomiotta. Hidastuvuus on $a = \\mu g$ ja jarrutusmatka $s = \\dfrac{v_0^2}{2a}$.\\n\\nHae kumin ja asfaltin välinen liukukitkakerroin MAFY-taulukosta (mafytaulukot.fi). Taulukossa on väli, joten käytä sen suurinta arvoa. Kuinka pitkä on jarrutusmatka?",
+   "text": "Auto ajaa vaakasuoralla kuivalla asfalttitiellä nopeudella $80\\,\\text{km/h}$. Kuljettaja jarruttaa niin, että pyörät lukkiutuvat ja kumirenkaat liukuvat asfaltilla. Ilmanvastus jätetään huomiotta. Hidastuvuus on $a = \\mu g$ ja jarrutusmatka $s = \\dfrac{v_0^2}{2a}$.\n\nHae kumin ja asfaltin välinen liukukitkakerroin MAFY-taulukosta (mafytaulukot.fi). Taulukossa on väli, joten käytä sen suurinta arvoa. Kuinka pitkä on jarrutusmatka?",
    "kind": [
     "reasoning"
    ],

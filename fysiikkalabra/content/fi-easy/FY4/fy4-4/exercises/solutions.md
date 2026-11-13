@@ -302,12 +302,12 @@ Kiihtyvyys on $2{,}0\,\text{m/s}^2$ työntövoiman suuntaan. Vastauksessa on kak
 **Järkevyys:** Toinen piste $(2{,}0\,\text{N};\, 4{,}0\,\text{m/s}^2)$ antaa massan $2{,}0\,\text{N} : 4{,}0\,\text{m/s}^2 = 0{,}50\,\text{kg}$. Se on sama. Kärryn A suora on jyrkempi kuin B:n, joten A:n massa on pienempi. Pienempi massa kiihtyy samalla voimalla enemmän.
 
 ## fy4-4-L2-09
-**Annettu:** kokonaisvoima $\Sigma F = 2{,}4\,\text{N}$; kuvaajasta kärryn B suoralla on piste $\Sigma F_1 = 3{,}0\,\text{N}$, $a_1 = 3{,}0\,\text{m/s}^2$
-**Kysytty:** kärryn B kiihtyvyys $a$ yksikössä $\text{m/s}^2$
+**Annettu:** kokonaisvoima $\Sigma F = 2{,}4\,\text{N}$; kuvaajasta kärryn A suoralla on piste $\Sigma F_1 = 3{,}0\,\text{N}$, $a_1 = 6{,}0\,\text{m/s}^2$
+**Kysytty:** kärryn A kiihtyvyys $a$ yksikössä $\text{m/s}^2$
 **Periaate:** Newtonin toisen lain mukaan $\Sigma F = ma$. Massa on kärryn oma ominaisuus, ja se on sama kaikilla voimilla. Siksi massa lasketaan ensin kuvaajan pisteestä. Sen jälkeen lasketaan kiihtyvyys uudelle voimalle.
-**Kuvaajan lukeminen:** Kärryn B suora on loivempi suora (kuparinvärinen). Sen oikeanpuoleinen piste on ruudukon risteyksessä: $\Sigma F_1 = 3{,}0\,\text{N}$ ja $a_1 = 3{,}0\,\text{m/s}^2$. Voima $2{,}4\,\text{N}$ on kahden mittapisteen välissä. Siksi kiihtyvyys lasketaan massan avulla.
+**Kuvaajan lukeminen:** Kärryn A suora on jyrkempi suora (tummanharmaa). Sen oikeanpuoleinen piste on ruudukon risteyksessä: $\Sigma F_1 = 3{,}0\,\text{N}$ ja $a_1 = 6{,}0\,\text{m/s}^2$. Voima $2{,}4\,\text{N}$ on kahden mittapisteen välissä. Siksi kiihtyvyys lasketaan massan avulla.
 **Kaava:** Massa on $m = \dfrac{\Sigma F_1}{a_1}$. Kiihtyvyys uudelle voimalle on $a = \dfrac{\Sigma F}{m}$
 **Muunnokset:** Voimat ovat newtoneina ja kiihtyvyydet yksikössä $\text{m/s}^2$. Muunnoksia ei tarvita.
-**Sijoitus:** $m = \dfrac{3{,}0\,\text{N}}{3{,}0\,\text{m/s}^2} = 1{,}0\,\text{kg}$ ja $a = \dfrac{2{,}4\,\text{N}}{1{,}0\,\text{kg}} = 2{,}4\,\text{m/s}^2$
-**Vastaus:** $2{,}4\,\text{m/s}^2$ voiman suuntaan. Vastauksessa on kaksi merkitsevää numeroa, kuten voimassa $2{,}4\,\text{N}$.
-**Järkevyys:** Voima $2{,}4\,\text{N}$ on pienempi kuin $3{,}0\,\text{N}$, joten kiihtyvyyden pitää olla pienempi kuin $3{,}0\,\text{m/s}^2$. Kuvaajassa B:n suora on kohdassa $\Sigma F = 2{,}4\,\text{N}$ välillä $a = 2\,\text{m/s}^2$ ja $a = 3\,\text{m/s}^2$, lähellä arvoa $2{,}4\,\text{m/s}^2$.
+**Sijoitus:** $m = \dfrac{3{,}0\,\text{N}}{6{,}0\,\text{m/s}^2} = 0{,}50\,\text{kg}$ ja $a = \dfrac{2{,}4\,\text{N}}{0{,}50\,\text{kg}} = 4{,}8\,\text{m/s}^2$
+**Vastaus:** $4{,}8\,\text{m/s}^2$ voiman suuntaan. Vastauksessa on kaksi merkitsevää numeroa, kuten voimassa $2{,}4\,\text{N}$.
+**Järkevyys:** Voima $2{,}4\,\text{N}$ on pienempi kuin $3{,}0\,\text{N}$, joten kiihtyvyyden pitää olla pienempi kuin $6{,}0\,\text{m/s}^2$. Kuvaajassa A:n suora on kohdassa $\Sigma F = 2{,}4\,\text{N}$ välillä $a = 4\,\text{m/s}^2$ ja $a = 6\,\text{m/s}^2$, lähellä arvoa $4{,}8\,\text{m/s}^2$.
