@@ -248,6 +248,14 @@ def restore_checks(pg, url, lid, ex, loc, want):
     stray = q.evaluate("() => [...document.querySelectorAll('#tutki details.opt')].filter((d) => !d.closest('details.more')).length")
     in_more = q.evaluate("() => document.querySelectorAll('#tutki details.more details.opt').length")
     check(f"{eid}: an optional investigation never leaves Lisää tutkittavaa ({in_more} inside, {stray} outside)", stray == 0 or not in_more, str(stray))
+    sl = qloc.locator(".exp-start"); rl = qloc.locator(".exp-record")
+    check(f"{eid}: Aseta alkutila and Kirjaa mittaus are short on the button, full in aria-label and title (teacher 2026-11-13)",
+          len(sl.inner_text()) < len(sl.get_attribute("aria-label")) and sl.get_attribute("title") == sl.get_attribute("aria-label")
+          and len(rl.inner_text()) < len(rl.get_attribute("aria-label")) and rl.get_attribute("title") == rl.get_attribute("aria-label"))
+    q.set_viewport_size({"width": 390, "height": 900}); q.wait_for_timeout(300)
+    tops = qloc.locator(".exp-controls button").evaluate_all("(bs) => bs.map((b) => Math.round(b.getBoundingClientRect().top))")
+    check(f"{eid}: the four buttons share one row at 390 px (teacher 2026-11-13)", len(set(tops)) == 1, str(tops))
+    q.set_viewport_size({"width": 1280, "height": 900})
     q.close()
 
 

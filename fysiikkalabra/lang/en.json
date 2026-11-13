@@ -280,6 +280,8 @@
     "varied": "Varied:",
     "exp_start": "Set the initial state",
     "exp_record": "Record measurement",
+    "exp_start_short": "Set up",
+    "exp_record_short": "Record",
     "exp_reset": "Reset",
     "exp_table": "Simulation readings",
     "learn": "In this lesson, you will learn to",

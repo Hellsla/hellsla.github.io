@@ -280,6 +280,8 @@
     "varied": "Muutetaan:",
     "exp_start": "Aseta alkutila",
     "exp_record": "Kirjaa mittaus",
+    "exp_start_short": "Alkutila",
+    "exp_record_short": "Kirjaa",
     "exp_reset": "Nollaa",
     "exp_table": "Simulaation lukemat",
     "learn": "Tällä tunnilla opit",
