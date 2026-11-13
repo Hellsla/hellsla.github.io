@@ -141,7 +141,7 @@
   {
    "id": "fy5-tukipinta",
    "moduuli": "FY5",
-   "luku": null,
+   "luku": "fy5-2",
    "aihe": "fy5-momentti-ja-tasapaino",
    "kasite": "Tukipinta",
    "maaritelma": "Kappaleen alustaa koskettavien kohtien rajaama alue, jonka yläpuolella painopisteen on oltava, jotta kappale ei kaadu."
@@ -157,7 +157,7 @@
   {
    "id": "fy5-tasainen-ympyraliike",
    "moduuli": "FY5",
-   "luku": null,
+   "luku": "fy5-3",
    "aihe": "fy5-ympyraliike",
    "kasite": "Tasainen ympyräliike",
    "maaritelma": "Liike ympyräradalla niin, että nopeuden suuruus pysyy vakiona mutta sen suunta muuttuu jatkuvasti."
@@ -211,7 +211,7 @@
   {
    "id": "fy5-gravitaatiovuorovaikutus",
    "moduuli": "FY5",
-   "luku": null,
+   "luku": "fy5-5",
    "aihe": "fy5-gravitaatio-ja-planetaarinen-liike",
    "kasite": "Gravitaatiovuorovaikutus",
    "maaritelma": "Massallisten kappaleiden välinen aina vetävä vuorovaikutus."
@@ -501,7 +501,7 @@
   {
    "id": "fy5-mekaaninen-aaltoliike",
    "moduuli": "FY5",
-   "luku": null,
+   "luku": "fy5-10",
    "aihe": "fy5-aaltoliikkeen-perusteet",
    "kasite": "Mekaaninen aaltoliike",
    "maaritelma": "Värähtelyn etenemistä aineellisessa väliaineessa rakenneosasta toiseen."

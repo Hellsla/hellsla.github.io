@@ -141,7 +141,7 @@
   {
    "id": "fy5-tukipinta",
    "moduuli": "FY5",
-   "luku": null,
+   "luku": "fy5-2",
    "aihe": "fy5-momentti-ja-tasapaino",
    "kasite": "Base of support",
    "maaritelma": "The area bounded by the points where an object touches its support; the centre of gravity must be above it for the object not to topple."
@@ -157,7 +157,7 @@
   {
    "id": "fy5-tasainen-ympyraliike",
    "moduuli": "FY5",
-   "luku": null,
+   "luku": "fy5-3",
    "aihe": "fy5-ympyraliike",
    "kasite": "Uniform circular motion",
    "maaritelma": "Motion on a circle in which the speed stays constant but the direction keeps changing."
@@ -211,7 +211,7 @@
   {
    "id": "fy5-gravitaatiovuorovaikutus",
    "moduuli": "FY5",
-   "luku": null,
+   "luku": "fy5-5",
    "aihe": "fy5-gravitaatio-ja-planetaarinen-liike",
    "kasite": "Gravitational interaction",
    "maaritelma": "The always attractive interaction between objects with mass."
@@ -501,7 +501,7 @@
   {
    "id": "fy5-mekaaninen-aaltoliike",
    "moduuli": "FY5",
-   "luku": null,
+   "luku": "fy5-10",
    "aihe": "fy5-aaltoliikkeen-perusteet",
    "kasite": "Mechanical wave",
    "maaritelma": "An oscillation passing through a material medium from particle to particle."

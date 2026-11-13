@@ -20,7 +20,7 @@
   {
    "id": "fy6-sahkovaraus",
    "moduuli": "FY6",
-   "luku": null,
+   "luku": "fy6-10",
    "aihe": "fy6-varaus-ja-kentta",
    "kasite": "Sähkövaraus",
    "maaritelma": "Aineen ominaisuus, joka aiheuttaa sähköisen vuorovaikutuksen; yksikkö coulombi."
@@ -28,7 +28,7 @@
   {
    "id": "fy6-alkeisvaraus",
    "moduuli": "FY6",
-   "luku": null,
+   "luku": "fy6-10",
    "aihe": "fy6-varaus-ja-kentta",
    "kasite": "Alkeisvaraus",
    "maaritelma": "Pienin vapaana esiintyvä varaus.",
@@ -38,7 +38,7 @@
   {
    "id": "fy6-coulombin-laki",
    "moduuli": "FY6",
-   "luku": null,
+   "luku": "fy6-10",
    "aihe": "fy6-varaus-ja-kentta",
    "kasite": "Coulombin laki",
    "maaritelma": "Kahden pistevarauksen välinen voima.",
@@ -48,7 +48,7 @@
   {
    "id": "fy6-sahkokentta",
    "moduuli": "FY6",
-   "luku": null,
+   "luku": "fy6-11",
    "aihe": "fy6-varaus-ja-kentta",
    "kasite": "Sähkökenttä",
    "maaritelma": "Varauksen ympäristö, jossa toiseen varaukseen kohdistuu voima.",
@@ -68,7 +68,7 @@
   {
    "id": "fy6-varauksen-sailymislaki",
    "moduuli": "FY6",
-   "luku": null,
+   "luku": "fy6-10",
    "aihe": "fy6-varaus-ja-kentta",
    "kasite": "Varauksen säilymislaki",
    "maaritelma": "Suljetun systeemin kokonaisvaraus pysyy vakiona."
@@ -148,7 +148,7 @@
   {
    "id": "fy6-lahdejannite",
    "moduuli": "FY6",
-   "luku": null,
+   "luku": "fy6-8",
    "aihe": "fy6-virtapiirit",
    "kasite": "Lähdejännite",
    "maaritelma": "Virtalähteen napojen välinen jännite ilman kuormaa."
@@ -156,7 +156,7 @@
   {
    "id": "fy6-sahkoteho",
    "moduuli": "FY6",
-   "luku": null,
+   "luku": "fy6-6",
    "aihe": "fy6-sahkoenergia-ja-komponentit",
    "kasite": "Sähköteho",
    "maaritelma": "Sähkövirran tekemä työ aikayksikössä.",
@@ -166,7 +166,7 @@
   {
    "id": "fy6-joulen-laki",
    "moduuli": "FY6",
-   "luku": null,
+   "luku": "fy6-6",
    "aihe": "fy6-sahkoenergia-ja-komponentit",
    "kasite": "Joulen laki",
    "maaritelma": "Resistanssissa kehittyvä lämpöteho.",
@@ -176,7 +176,7 @@
   {
    "id": "fy6-kondensaattori",
    "moduuli": "FY6",
-   "luku": null,
+   "luku": "fy6-13",
    "aihe": "fy6-sahkoenergia-ja-komponentit",
    "kasite": "Kondensaattori",
    "maaritelma": "Komponentti, joka varastoi energiaa sähkökenttään."
@@ -184,7 +184,7 @@
   {
    "id": "fy6-kapasitanssi",
    "moduuli": "FY6",
-   "luku": null,
+   "luku": "fy6-13",
    "aihe": "fy6-sahkoenergia-ja-komponentit",
    "kasite": "Kapasitanssi",
    "maaritelma": "Kondensaattorin kyky varata varausta jännitettä kohti.",
@@ -194,7 +194,7 @@
   {
    "id": "fy6-puolijohde",
    "moduuli": "FY6",
-   "luku": null,
+   "luku": "fy6-14",
    "aihe": "fy6-sahkoenergia-ja-komponentit",
    "kasite": "Puolijohde",
    "maaritelma": "Aine, jonka johtavuus on eristeen ja johteen välillä ja säädettävissä."
@@ -202,7 +202,7 @@
   {
    "id": "fy6-diodi",
    "moduuli": "FY6",
-   "luku": null,
+   "luku": "fy6-14",
    "aihe": "fy6-sahkoenergia-ja-komponentit",
    "kasite": "Diodi",
    "maaritelma": "Komponentti, joka päästää virran kulkemaan vain toiseen suuntaan."
