@@ -42,7 +42,7 @@
 **Annettu:** kuvasta luettuna Auringosta tulee $341\,\tfrac{\text{W}}{\text{m}^2}$. Siitä heijastuu $102\,\tfrac{\text{W}}{\text{m}^2}$. Maapallon keskilämpötila pysyy vakiona.
 **Kysytty:** avaruuteen lämpösäteilynä lähtevä teho neliömetriä kohti $P_\text{säteily}$
 **Periaate:** Lämpötila pysyy vakiona. Maapallo on siis energiatasapainossa. Sen imemä teho on yhtä suuri kuin avaruuteen lähtevä lämpösäteily. Heijastunut säteily ei lämmitä maapalloa. Imeytyvä osa on siis tuleva teho miinus heijastunut teho.
-**Kuvaajan lukeminen:** Kuvan vasen nuoli kertoo tulevan tehon $P_\text{tulo} = 341\,\tfrac{\text{W}}{\text{m}^2}$. Auringon ja Maan välissä ylös vasemmalle osoittava nuoli kertoo heijastuvan tehon $P_\text{heij} = 102\,\tfrac{\text{W}}{\text{m}^2}$. Alempi oikea nuoli on kysytty lämpösäteily. Sen arvona on kysymysmerkki.
+**Kuvaajan lukeminen:** Kuvan vasen nuoli kertoo tulevan tehon $P_\text{tulo} = 341\,\tfrac{\text{W}}{\text{m}^2}$. Auringon ja Maan välissä ylös vasemmalle osoittava nuoli kertoo heijastuvan tehon $P_\text{heij} = 102\,\tfrac{\text{W}}{\text{m}^2}$. Oikealla oleva katkoviivanuoli on kysytty lämpösäteily. Sen arvona on kysymysmerkki.
 **Kaava:** $P_\text{im} = P_\text{tulo} - P_\text{heij}$. Tasapainossa $P_\text{säteily} = P_\text{im}$.
 **Muunnokset:** Ei tarvita. Kaikki tehot ovat yksikössä $\tfrac{\text{W}}{\text{m}^2}$.
 **Sijoitus:** $P_\text{säteily} = 341\,\tfrac{\text{W}}{\text{m}^2} - 102\,\tfrac{\text{W}}{\text{m}^2} = 239\,\tfrac{\text{W}}{\text{m}^2}$

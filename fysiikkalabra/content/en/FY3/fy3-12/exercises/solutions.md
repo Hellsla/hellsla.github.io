@@ -42,7 +42,7 @@
 **Given:** read from the figure, $341\,\tfrac{\text{W}}{\text{m}^2}$ comes from the Sun and $102\,\tfrac{\text{W}}{\text{m}^2}$ of it is reflected; the mean temperature of the Earth stays constant
 **Find:** the power per square metre leaving into space as thermal radiation $P_\text{rad}$
 **Principle:** The temperature stays constant, so the Earth is in energy balance: the power it absorbs is equal to the thermal radiation leaving into space. The reflected radiation does not warm the Earth, so the absorbed part is the incoming power minus the reflected power.
-**Reading the graph:** The left arrow of the figure gives the incoming power $P_\text{in} = 341\,\tfrac{\text{W}}{\text{m}^2}$ and the arrow between the Sun and the Earth that points up and to the left the reflected power $P_\text{refl} = 102\,\tfrac{\text{W}}{\text{m}^2}$. The lower right arrow, whose value is a question mark, is the thermal radiation asked for.
+**Reading the graph:** The left arrow of the figure gives the incoming power $P_\text{in} = 341\,\tfrac{\text{W}}{\text{m}^2}$ and the arrow between the Sun and the Earth that points up and to the left the reflected power $P_\text{refl} = 102\,\tfrac{\text{W}}{\text{m}^2}$. The dashed arrow on the right, whose value is a question mark and which is labelled "lämpösäteily" (thermal radiation), is the thermal radiation asked for.
 **Formula:** $P_\text{abs} = P_\text{in} - P_\text{refl}$ and in balance $P_\text{rad} = P_\text{abs}$
 **Conversions:** Not needed: all the powers are in the unit $\tfrac{\text{W}}{\text{m}^2}$.
 **Substitution:** $P_\text{rad} = 341\,\tfrac{\text{W}}{\text{m}^2} - 102\,\tfrac{\text{W}}{\text{m}^2} = 239\,\tfrac{\text{W}}{\text{m}^2}$
