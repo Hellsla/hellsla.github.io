@@ -1,18 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: 6d39d0db9b9030ff
+VERDICT: PASS
+CONTENT-HASH: dcfc3915e8b2c9f3
+SCOPE: delta added-exercise from 8a721a86e7a34235 base 8f23aa7ae3bd
 
 ## Blocking
-- exercises.json fy6-2-L2-10 (answer 2.98, tolerance 0.1) — the solution of L2-09 teaches rounding the error limit to one figure (0,03 V); a student who carries that into L2-10 gets 0,08 : 0,03 = 2,67, which is 10,5 % from 2,98 and is marked wrong although the method and conclusion are right. The data (0,5 %, 1,37 V, 0,01 V) do not justify a one-figure intermediate, but the page teaches it one task earlier — fix: widen tolerance to 0.12 (2,67 and 2,98 both accepted), or add to the task "Älä pyöristä virherajaa ennen jakolaskua" and a line in the solution.
 
 ## Polish
-- L2-09 and L2-10 share the figure and the whole setup (read the display, compute ΔU); L2-10 only adds a comparison. Acceptable since the second idea (is the difference larger than the limit) is new; the mix of level 2 stays varied (data, error, experiment tasks).
-- L2-10 text: "Kuinka monta kertaa lukeman virheraja mahtuu ... erotukseen?" is stiff. Better: "Kuinka moninkertainen valmistajan arvon ja lukeman erotus on lukeman virherajaan verrattuna?"
-- L2-10 solution Vastaus gives "noin $3{,}0$ kertaa" while the key is 2,98; fine, but state "noin $2{,}98$" so key and text match.
+- L2-10 text: "Kuinka monta kertaa lukeman virheraja mahtuu ... erotukseen?" is stiff. Better: "Kuinka moninkertainen erotus on lukeman virherajaan verrattuna?"
+- L2-10 solution says "noin 3,0 kertaa" while the key is 2,98; write "noin 2,98".
+- L2-09 and L2-10 share one figure and setup; acceptable, since the comparison with the nominal value is a new idea.
 
 ## Checked
-- L2-09: situation first, question last; figure supplies reading 1,37 V and 20 V range, description matches, does not state the error limit or answer.
-- L2-09 solution: 0,005 · 1,37 + 2 · 0,01 = 0,02685 V correct; formula in symbols first, conversion of % stated, sanity check sound.
-- L2-09 answer 0.02685 with tolerance 0.12 accepts the one-figure 0,03 V stated in the solution.
-- L2-10 arithmetic: 0,08 : 0,02685 = 2,98; interval 1,34–1,40 V check correct; conclusion (not compatible) follows.
-- Level 2 fits both (two steps, reading from a figure); neither repeats the worked example or L2-05/L2-07.
-- Finnish otherwise correct; units LaTeX; no clipped long lines in text-only changes.
+- Earlier blocking (L2-10 tolerance) fixed: tolerance 0.12 accepts both 2,98 and the one-figure 2,67.
+- L2-09: situation first, question last; the figure gives the reading 1,37 V and the 20 V range, its description matches and gives no answer.
+- L2-09 arithmetic 0,005 · 1,37 + 2 · 0,01 = 0,02685 V is correct; formula, unit conversion and sanity check present.
+- L2-10: 0,08 : 0,02685 = 2,98, interval 1,34-1,40 V and the conclusion are consistent.
+- Level 2 fits both; neither repeats the worked example or L2-05/L2-07; the kind mix of the level stays varied.

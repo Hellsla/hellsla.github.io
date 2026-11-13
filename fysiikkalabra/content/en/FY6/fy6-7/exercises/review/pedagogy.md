@@ -1,19 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 6e4aefa760db29fb
+CONTENT-HASH: 3ddcea2954d318b6
 SCOPE: delta added-exercise from f6987a85f62564f9 base 8f23aa7ae3bd
 
 ## Blocking
 - none
 
 ## Polish
-- L1-10 solution: the Answer line gives 11 MJ while the checked answer is 10.8 MJ (4 % tolerance covers both). Say "10.8 MJ, rounded 11 MJ" or set the answer to 11 so the shown answer and the stored one agree.
-- L2-08 (tumble dryer, stepped power graph, cost) is close to L2-01 (washing machine graph, energy); the new element is price and cents to euros, which is enough, but check the two do not share the same shape of figure.
-- L1-10 and L1-02 both convert kWh to MJ; L1-10 adds the table lookup, so the overlap is acceptable.
+- fy6-7-L1-10 solutions.md: Answer line says 11 MJ while Substitution and the stored answer say 10.8 MJ; write "10.8 MJ, rounded 11 MJ" so the two agree.
+- fy6-7-L2-08 uses a step graph like L2-01; the added price and cent-to-euro conversion justify it.
 
 ## Checked
-- L1-10: level 1 (E = Pt, then one lookup and conversion); situation first, question last; the hint names the MAFY table; arithmetic 3.0 kWh * 3.6 = 10.8 MJ is right.
-- L1-10 solution complete: given with the looked-up factor, principle, formula, conversion, substitution, significant figures, reasonableness.
-- L2-08: level 2 (read three constant steps, sum E = Pt, convert c/kWh to euros, multiply by price); a familiar household context.
-- L2-08 figure gives 2.4, 1.2 and 0.2 kW over 0-0.5, 0.5-1.5 and 1.5-2.0 h with stated gridlines; description matches and does not give energy or cost.
-- L2-08 solution: 1.2 + 1.2 + 0.10 = 2.5 kWh, 0.18 * 2.5 = 0.45 EUR; correct and stepwise, with an average-power reasonableness check.
-- Fit: the set gains a MAFY lookup task at level 1 and a cost-from-graph task at level 2, both within the lesson's scope.
+- L1-10 is level 1: E = Pt, one MAFY lookup and a conversion; situation first, question last, hint names the table section. 3.0 kWh * 3.6 = 10.8 MJ is correct.
+- L1-10 solution is complete (given with the looked-up factor, principle, conversion, reasonableness).
+- L2-08 is level 2: three constant steps read from the graph, summed, then priced. Figure gives 2.4, 1.2 and 0.2 kW on stated gridlines; the description matches and gives neither energy nor cost.
+- L2-08 arithmetic is correct: 1.2 + 1.2 + 0.10 = 2.5 kWh; 0.18 * 2.5 = 0.45 EUR; the solution reads the graph before the formula.
+- The set gains a lookup task at level 1 and a cost-from-graph task at level 2; neither repeats the worked example.

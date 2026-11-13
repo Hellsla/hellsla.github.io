@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: a171f93d8b5c64b4
+CONTENT-HASH: a65b3da0c07dac65
 SCOPE: delta added-exercise from abbe309450785620 base 8f23aa7ae3bd
 
 ## Blocking
 - none
 
 ## Polish
-- L2-09 repeats the method of L2-05 and L2-08 (slope of a U-I line); the new parts are a given line and a car battery, which makes it the easiest of the three. Acceptable; no change needed.
+- fy6-8-L2-09 and L2-05 both find the internal resistance from an (I, U) line; L2-09 differs by a read graph, a car battery context and large currents. Acceptable.
+- fy6-8-L2-09 text says "calculated from a model" and the figure is example data; consider "example data" as elsewhere in the set.
 
 ## Checked
-- Level 2: the internal resistance comes from the slope of a given (I, U) line, two points far apart, no fitting; fits the level and does not repeat the worked example.
-- Figure gives five points on 50 A and 1 V gridlines with the line drawn; description lists the same five points, and neither states the slope, intercept or answer.
-- Situation first, question last, "Read the values from the graph" tells the student what to do.
-- Solution complete: given, principle (slope is minus R_s, and why U : I at one point is not it), derivation of the two-point formula, no conversions, substitution (4 V : 200 A = 0.020 ohm), significant figures, reasonableness with a third point and E = 12 V.
-- Arithmetic verified; the solution also repairs the typical misconception of dividing U by I at one point.
-- Fit: adds a graph-slope task with a car battery (very small r), a useful contrast with the AA-cell tasks.
+- Level 2: read two far-apart points, slope gives R_s, connecting graph and model U = E - R_s I; not the worked example.
+- Figure gives five points (50 A, 11 V to 250 A, 7 V) on 50 A and 1 V gridlines; the description matches and does not give the slope or E.
+- Solution explains why the slope and not U : I at one point gives R_s, then derives the formula by subtracting the equations.
+- Arithmetic: 4 V : 200 A = 0.020 ohm; the third point check (2 V per 100 A) and E = 12 V are right.
+- Situation first, question last, answer in ohms, and a car battery is a familiar context. Kinds graph and data match the set mix.

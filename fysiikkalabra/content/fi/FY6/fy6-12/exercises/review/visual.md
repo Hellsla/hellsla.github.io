@@ -1,16 +1,15 @@
-VERDICT: FAIL
-CONTENT-HASH: 9f84f4124a537fa5
+VERDICT: PASS
+CONTENT-HASH: fb8bc2ae3ac4c6db
+SCOPE: delta added-exercise from 4703625fe3ccea47 base 8f23aa7ae3bd
 
 ## Blocking
-- [Major] fy6-12-L2-09 solution, Kaava and Sijoitus (12-17) — the fractions inside the root are written with `\frac` in inline maths, so KaTeX sets them in script size: $\sqrt{\tfrac{2eU}{m}}$ and the substitution with  \cdot 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 200\,\text{V}$ over $9{,}109 \cdot 10^{-31}\,\text{kg}$ are tiny, the exponents and units barely legible at 1280 px and worse on a phone (cramped fractions, the worst in the set) — the student must read the key formula and the numbers from here — write `\dfrac` inside the root in both lines (as the other solutions of the set, e.g. fy6-10 L2-09, do) so the root and fraction take the size of the line.
-- [Major] fy6-12-L2-09 Kaava — "$\frac{1}{2}mv^2 = eU \;\Rightarrow\; v = \ldots$" is broken by the page after `⇒ v`, leaving "v" alone on one row and `= √…` below — a chain split at a meaningful boundary should end at the arrow — write the two steps as a chain "$\tfrac{1}{2}mv^2 = eU$, josta $v = \sqrt{\dfrac{2eU}{m}}$" (words, not ⇒, as in the other Kaava lines).
 
 ## Polish
-- [Minor] fy6-12/ex-vgraph — the y axis has no tick at 0 while the x axis shows 0 once; fine, but note both axes use whole numbers only, which suits the 50 V steps.
+- [Minor] fy6-12-L2-09 Kuvaajan lukeminen — the page breaks the sentence "Potentiaaliero on" before the chain $U = 250\,\text{V} - 50\,\text{V} = 200\,\text{V}$; end the sentence before the chain or put the chain last.
+- [Minor] fy6-12/ex-vgraph — the y axis has no 0 tick, the x axis shows 0 once; harmless.
 
 ## Checked
-- review/shots/fy6-12-open-exercises-L2-1280-11.png and -12.png (stamp hash 9f84f4124a537fa5): task 12-17 (L2-09) with figure fy6-12/ex-vgraph (axes with quantity and unit, ticks at 50 V and 1 cm, straight line, nothing marked, description matches and gives no answer), answer row and the whole open solution.
-- Finnish and structure of the task and solution are good (situation, then question; Järkevyys with energy and speed estimates). Only the two typographic findings above block.
+- open-exercises-L2-1280-11 and -12 (task 12-17): task text, graph (axes with quantity and unit, ticks at 50 V and 1 cm, nothing marked), and the whole solution. Round-1 findings fixed: the root and fractions are now in display size (\dfrac), Kaava reads "…, josta $v = \sqrt{…}$" on one row, the substitution rows are aligned and legible.
 
 ## Scores
-illustrations 5 · typography 2 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

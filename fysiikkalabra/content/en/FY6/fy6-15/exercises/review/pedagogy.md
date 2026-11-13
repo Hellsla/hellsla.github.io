@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 75f6ac1deb0f5a66
+CONTENT-HASH: 69299f6aec49b867
 SCOPE: delta added-exercise from f60d53b70291bcbe base 8f23aa7ae3bd
 
 ## Blocking
 - none
 
 ## Polish
-- L2-08 solution, Reasonableness: "the fuse does not necessarily trip at once" is true (a fuse tolerates a small overload for a time) but the chapter's lesson may not teach it; add a short reason ("a fuse needs a larger or longer overload to melt") or drop the sentence.
-- The question asks only for the current; the comparison with 16 A is made in the Answer line. Consider asking "Is the circuit overloaded?" as a last sentence, since that is the safety point of the chapter; not required.
+- fy6-15-L2-08: the stored answer is only the current (17.39 A), but the text also asks "does it exceed the fuse". Make the last sentence ask only for the current and add a separate sentence for the comparison, or keep as is since the solution states the conclusion.
+- fy6-15-L2-08 resembles L2-01 (fuse, 230 V, power to current); the graph reading is the new element, so acceptable.
 
 ## Checked
-- Level 2: read the highest step from a stepped power graph, then I = P : U; a safety situation (fuse and a kitchen circuit) the student recognises; distinct from L2-01 (fixed appliance list) and the worked example.
-- Figure gives the steps 1000, 3000, 4000, 2000 and 3500 W on a 5 min and 1000 W grid; the description lists them but states neither the current nor the fuse limit, so the answer is not given away.
-- Situation first, question last as its own sentence; the unit A is requested.
-- Solution complete: given, principle (parallel devices, same voltage, the peak decides), reading of every step, formula, no conversions, substitution (17.39 A), significant figures and a reasonableness check using the 3680 W limit.
-- Arithmetic verified: 4000 : 230 = 17.39 A; the 3 % tolerance covers the rounded 17 A.
-- Fit: the set gains a data-from-graph overload task at level 2 in the chapter's own fuse topic.
+- Level 2: read the maximum of a step graph, I = P : U, compare with 16 A; two steps, not the worked example.
+- Figure steps 1000, 3000, 4000, 2000, 3500 W on a 5 min and 1000 W grid; the description matches and gives no current or fuse limit.
+- Solution is complete: parallel devices at the same voltage justify I = P : U; the reasonableness check with 3680 W is right.
+- Arithmetic: 4000 : 230 = 17.39 A, exceeds 16 A slightly; the answer tolerance 0.03 covers 17 A.
+- Situation first, question last, a kitchen is familiar.
