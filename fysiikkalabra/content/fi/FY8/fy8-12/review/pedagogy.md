@@ -1,23 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: c8fedeca02ca08f2
+CONTENT-HASH: c075a7b9a825b4cf
 
 ## Blocking
+(none)
 
 ## Polish
-- inquiry.json hook — the hook states "Alfasäteily pysähtyy jo paperiarkkiin" and that lead protects against gamma, so the options "kaikkien kolmen" and "ei minkään" of ennuste-1 are dismissed before the evidence — keep only the paradox as a question (radon is the main source although paper stops alpha), without the stopping claims.
-- inquiry.json ennuste-2 — the distractor "noin kaksi kolmasosaa" is absurd (its own feedback says two layers cannot pass more than one) and reveals no real misconception — replace with a plausible one such as "noin kolmasosa".
-- lesson.md "Fotonin kolme vuorovaikutusta aineessa" — the energy ranges (0,03–25 MeV, 0,5–5 MeV) and pair production go beyond the slot's goals and add load to an hour's lesson — keep the table, drop the paragraph of numeric ranges or put it in an optional box.
-- inquiry.json johtopaatos criterion 4 ("Kutsun simulaation lukuja mallin arvoiksi") — assesses wording, not what the question asks — fold it into criterion 1 or make it optional.
-- lesson.md Esimerkki — "${I : I_0}" and "${1 : 0{,}050}$" with braces look odd — write $I_0 : I = 1 : 0{,}050 = 20$.
+- lesson.md "Fotonin kolme vuorovaikutusta aineessa" and the attenuation coefficient $\mu$ go beyond the slot's goals (penetration, detection, biological effects via ionisation) and add to the workload of an hour; consider marking the $\mu$ part and the interaction table as optional or trimming one of them.
+- inquiry.json ennuste-2 prompt defines the half-value layer in the question itself, so the prediction partly rehearses the definition; acceptable, but a wording that leaves the "neljäsosa vs. ei mitään" contrast to the student alone would argue better.
+- inquiry.json koe-3 intro: students must subtract background by hand from three readings; a short reminder of why (taustasäteily, 4 pulssia) is already there, but the model answer lists raw counts (590, 332 ...) while ennuste-2 feedback lists net counts (586, 328 ...); state "raakalukema" / "nettomäärä" in both to avoid confusion.
+- exit-ticket.json second answer is long (about 90 words); split the gamma-hazard remark into its own sentence or drop it.
 
 ## Checked
-- Path: prior knowledge (hf, alpha/beta/gamma, half-life) suffices; the opening question is answered in Ydinajatus (ionisation density, internal alpha) and Kaava (lead).
-- Slot goals (types, biological effects via ionisation, penetration, detection) covered; dose units deferred to the next chapter.
-- Predictions can be refuted by koe-2 and koe-3; feedback quotes model values; variable control (vary one, lock the rest) is right.
-- Simulation at 390 and 1280 px: picture, controls and readout clear; text behind Käyttöohje / Mallin oletukset / Laskennan selitys.
-- Worked example has seven stages, one step each, with a reasonableness check.
-- Transfer task (apron) has three progressive hints and real common-mistake feedback; Etsi virhe targets a real misconception.
-- Check 2 graph is needed to answer and legible at 390 px; check 1 distractors are misconception-based.
-- Exit ticket tests ionisation by photon energy and the "irradiated becomes radioactive" misconception.
-- Finnish reads well; no wrong terms found; workload about one lesson with optional items marked.
-- Exercises not judged here (own review).
+- Learning path: prerequisites (E=hf, radiation types, half-life) retrieved; the opening question (alpha vs. lead, radon) is answered in theory and reflection after the student has committed.
+- Predictions 1 and 2 are refutable by koe-2 and koe-3; each wrong option's feedback names the misconception and cites model values, called model values, not measurements.
+- Variable control: koe-1/2 vary source only, koe-3 varies thickness only; locked parameters sensible.
+- Simulation capture at 1280 px: picture, controls, readout clear; text sits behind Käyttöohje / Mallin oletukset / Laskennan selitys.
+- Worked example staged in seven steps with a reasonableness check; transfer task (lead apron) has three hints and real common-mistake feedback.
+- Tarkista: concept check has misconception distractors; graph task shows axes and grid legibly at 390 px; explain criteria are observable.
+- Misconception box (irradiated = radioactive) and exit ticket test the core ideas.
+- Finnish and case endings after number+unit read correctly; no id shown to the student.
+- Phone captures: nothing clipped in the stages and experiments.
