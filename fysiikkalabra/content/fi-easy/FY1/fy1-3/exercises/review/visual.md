@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: cf8596c9bb8935b7
+CONTENT-HASH: 490cd5ebb646e9f3
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] hint "Arvo on MAFY-taulukon taulukossa …" — "taulukon taulukossa" reads clumsily — write "Arvo löytyy MAFY-taulukosta, taulukosta …".
-- [Minor] fy1-3-L1-09 — "MAFY-taulukko" is not explained for S2 readers as fy1-5…8 do ("koulun fysiikan taulukkokirja") — add that sentence.
+- [Minor] fy1-3-L1-09 hint — "MAFY-taulukon taulukossa Veden tiheys …" still clumsy — "Arvo löytyy MAFY-taulukon kohdasta Veden tiheys eri lämpötiloissa."
+- [Minor] fy1-3-L1-09 Vastaus — the "(tarkemmin …)" sentence starts lowercase under the boxed answer; fine, but a full sentence would read better.
 
 ## Checked
-- Delta (new MAFY task fy1-3-L1-09 and its solution; figure tasks with paper-stack, pendulum-timing), captures rebuilt for this hash.
-- Opened at 1280 px: open-exercises-1280 part holding fy1-3-L1-09 (task, hint, lock, answer field, solution rows, Vastaus, Järkevyys): KaTeX renders, chains aligned, thin spaces, decimal commas, no clipping.
-- Figure tasks are teacher-approved drawings (layout only); the neighbouring tasks' captures showed no layout damage. Packet carries no SCOPE line, so none is written.
+- Delta: fy1-3-L1-09 (3-9) at 1280 px, open-exercises parts 9 and 10: task (situation, then question as its own sentence), hint, lock, Annettu, two-row Kaava and Sijoitus chains aligned at "=", Vastaus box, split-out "Lisäksi: virhearvio" paragraph, Järkevyys. KaTeX clean, units upright, decimal commas, no clipping; the solution layout fixed in round 1 holds.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 5

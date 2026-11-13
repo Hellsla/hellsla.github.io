@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 67e21cc666ec7b0b
+CONTENT-HASH: 077bbc73147433b4
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy1-8-L1-10 text — "Anna vastaus yksikössä km/kg." has the unit name in plain text (fy1-4's new task sets it as maths) — set it as $\text{km}$ / $\text{kg}$.
+- [Minor] fy1-8-L1-10 Kaava — the two-row aligned block (t_min, s) sets the "=" of the second row slightly left of the first (fraction row); acceptable, but aligning both "=" would read tidier.
+- [Minor] fy1-8-L1-10 Vastaus — "(tarkemmin …)" sentence begins in lowercase under the box; a full sentence would read better.
 
 ## Checked
-- Delta (new MAFY task fy1-8-L1-10 and its solution; figure tasks with ramp-ball, two-balls-ramp), captures rebuilt for this hash.
-- Opened at 1280 px: open-exercises-1280 part holding fy1-8-L1-10 (task, hint, lock, answer field, solution rows, Vastaus, Järkevyys): KaTeX renders, chains aligned, thin spaces, decimal commas, no clipping.
-- Figure tasks are teacher-approved drawings (layout only); the neighbouring tasks' captures showed no layout damage. Packet carries no SCOPE line, so none is written.
+- Delta: fy1-8-L1-10 (8-10) at 1280 px, open-exercises parts 9 and 10: task text ($\text{km}$ now maths, round 1 fix), hint, lock, Annettu, Kaava in aligned rows, Sijoitus rows, Vastaus with new rounding reason, Järkevyys. KaTeX clean, units upright, no clipping; neighbouring task layout intact.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 5
