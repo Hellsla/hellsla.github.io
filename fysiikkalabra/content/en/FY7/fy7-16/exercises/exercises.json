@@ -253,6 +253,24 @@
           "feedback": "Here the speed of light has been taken as the number $300\\,000$, which is the speed in kilometres per second, although the length has been substituted in metres. The length and the speed must be in the same units."
         }
       ]
+    },
+    {
+      "id": "fy7-16-L2-09",
+      "level": 2,
+      "text": "The figure shows the same wireless charger at two distances: the phone is $3\\,\\text{mm}$ and $8\\,\\text{mm}$ from the charger. The field lines are drawn at equal flux steps, so the number of lines passing through the receiver coil is proportional to the flux $\\Phi_0$. The peak voltage of the receiver coil at a distance of $3\\,\\text{mm}$ is $4.2\\,\\text{V}$, and the frequency stays the same. Use the lines of the figure to calculate the peak voltage at a distance of $8\\,\\text{mm}$. Give the answer in volts.",
+      "answer": 2.1,
+      "unit": "V",
+      "tolerance": 0.1,
+      "figure": "fy7-16/charger-points"
+    },
+    {
+      "id": "fy7-16-L2-10",
+      "level": 2,
+      "text": "The figure shows the power of light passing through one fibre as a percentage of the transmitted power, as a function of the length of the fibre. The fibre is the same along its whole length. Read from the graph the length at which the power has halved, and use it to calculate the attenuation coefficient of the fibre. What percentage of the transmitted power arrives when the length of the same fibre is $35\\,\\text{km}$? Give the answer as a percentage.",
+      "answer": 8.838835,
+      "unit": "%",
+      "tolerance": 0.05,
+      "figure": "fy7-16/graph-curve"
     }
   ],
   "level3": [

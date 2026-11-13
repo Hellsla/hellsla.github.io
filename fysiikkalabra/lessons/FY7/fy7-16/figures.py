@@ -183,6 +183,42 @@ def loss_graph():
     return f.svg()
 
 
+def charger_points():
+    """Question-safe variant of charger: the same model with the phone at 3 mm and at 8 mm; no number of lines in the text."""
+    f = Fig("fy716-charger-8", 380, "Periaatekuva langattomasta laturista sivulta leikattuna, kentän muoto laskettu: "
+            "kaksi paneelia. Kummassakin alhaalla on latausalusta, jonka sisällä lähetinkäämi, ja sen yläpuolella "
+            "puhelin, jonka pohjassa on samankokoinen vastaanotinkäämi. Lähetinkäämin vaihtovirta synnyttää "
+            "magneettikentän, jonka vihreät kenttäviivat kiertävät käämin johtimien ympäri ja kulkevat käämin keskeltä "
+            "ylöspäin. Kenttäviivat on piirretty yhtä suurin vuoaskelin, joten viivojen lukumäärä on verrannollinen "
+            "vuohon. Vasemmalla puhelin on 3 millimetrin päässä ja oikealla 8 millimetrin päässä laturista. "
+            "Vastaanotinkäämin läpi kulkevat viivat on piirretty tummemmin.")
+    _panel(f, 150, 3.0, "a")
+    _panel(f, 450, 8.0, "b")
+    f.line(300, 24, 300, 366, RULE, 1.5, "6 5")
+    f.tex(150, 32, r"z = 3\,\text{mm}", "middle", w=150)
+    f.tex(450, 32, r"z = 8\,\text{mm}", "middle", w=160)
+    f.tex(150, 318, r"\text{laturi}", "middle", w=100)
+    f.tex(450, 318, r"\text{laturi}", "middle", w=100)
+    f.tex(8, 352, r"\text{lähetinkäämi}", "start")
+    f.line(42, 340, 66, 270, MUTED, 1.5)
+    f.tex(306, 100, r"\text{vastaanotinkäämi}", "start", bg=True)
+    f.line(344, 112, 367, 175, MUTED, 1.5)
+    return f.svg()
+
+
+def loss_curve():
+    """The power curve of one fibre on a fine grid and with no marked points: a question-safe variant of graph."""
+    f = Fig("fy716-curve", 340, "Kuvaaja mittakaavassa: valokuidun läpi kulkevan valon teho prosentteina lähetetystä "
+            "tehosta kuidun pituuden funktiona 0–40 kilometrin matkalla. Käyrä laskee 100 prosentista ensin jyrkästi "
+            "ja sitten loivemmin. Ruudukon pystyviivat ovat viiden kilometrin välein ja vaakaviivat kymmenen "
+            "prosenttiyksikön välein. Kuvaajaan ei ole merkitty yhtään pistettä.")
+    ax = Axes(f, (96, 286), (430, 66), x=(0, 40), y=(0, 100), xticks=[5 * k for k in range(1, 9)],
+              yticks=[10 * k for k in range(1, 11)], xlabel=r"L\ (\text{km})", ylabel=r"P : P_0\ (\%)",
+              xfmt=lambda v: fi(v) if round(v) % 10 == 0 else "", yfmt=lambda v: fi(v) if round(v) % 20 == 0 else "")
+    ax.curve(lambda L: 100 * 10 ** (-0.30 * L / 10), 0, 40, RAY, 3)
+    return f.svg()
+
+
 def hero():
     """The opening illustration: a kitchen counter with an induction hob and a steel pot, a phone on a wireless
     charging pad and a fibre router on the wall with a glowing fibre end."""
@@ -225,10 +261,13 @@ def hero():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "charger": charger, "hob": hob, "graph": loss_graph}
+FIGURES = {"hero": hero, "charger": charger, "hob": hob, "graph": loss_graph,
+           "charger-points": charger_points, "graph-curve": loss_curve}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "charger": "reveals: far fewer field lines thread the receiver at 20 mm than at 3 mm (coupling falls with distance)",
     "hob": "reveals: the coil's changing field induces eddy currents in the pan bottom, none in the glass",
     "graph": "reveals: fibre power against length at 0,18 and 0,32 dB/km, halving at 16,7 km for 1550 nm",
+    "charger-points": "safe: the charger's field lines with the phone at 3 mm and 8 mm; REUSE of charger (no counts in the text), lines drawn at equal flux steps",
+    "graph-curve": "safe: the power curve of one fibre on a fine grid, no marked points; REUSE of graph for reading P from L or L from P",
 }

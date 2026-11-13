@@ -219,3 +219,25 @@ b) $\Phi_{\min} = \dfrac{1{,}0\,\text{V}}{15 \cdot 2\pi \cdot 1{,}00 \cdot 10^{5
 b) $f_\text{C} = 30\,\text{kHz} \cdot \sqrt{\dfrac{0{,}080\,\Omega}{0{,}040\,\Omega}} = 30\,\text{kHz} \cdot \sqrt{2} = 42{,}43\,\text{kHz}$
 **Vastaus:** $42\,\text{kHz}$, kaksi merkitsevää numeroa kuten lähtötiedot. Kattilan C resistanssi on kaksinkertainen, joten sen teho on puolet; taajuuden nosto kasvattaa vuon muutosnopeutta ja jännitettä, ja teho kasvaa taajuuden neliössä. c) Pyörrevirran oma magneettikenttä jätettiin huomiotta: Lenzin lain mukaan se vastustaa vuon muutosta, joten todellinen virta ja teho ovat mallin antamaa pienemmät. Hyvin johtavassa pohjassa (alumiini, kupari) pyörrevirran oma kenttä kumoaa suuren osan vuosta, joten malli ei päde niille; teräksen ferromagnetismi taas lisää lämpenemistä.
 **Järkevyys:** Tehojen suhde $2{,}59\,\text{kW} : 1{,}29\,\text{kW} = 2{,}0$ vastaa resistanssien suhdetta $0{,}080 : 0{,}040 = 2{,}0$. Taajuuden nosto kertoimella $\sqrt{2} = 1{,}414$ kasvattaa tehon kertoimella $1{,}414^2 = 2{,}0$, joten kattilan C teho taajuudella $42{,}4\,\text{kHz}$ on $1{,}29\,\text{kW} \cdot 2{,}0 = 2{,}59\,\text{kW}$.
+
+## fy7-16-L2-09
+**Annettu:** $e_0 = 4{,}2\,\text{V}$ etäisyydellä $3\,\text{mm}$, taajuus ja kierrosluku eivät muutu, kuvasta luettavat viivamäärät
+**Kysytty:** jännitteen huippuarvo $e_0'$ etäisyydellä $8\,\text{mm}$ voltteina
+**Periaate:** Jännitteen huippuarvo on $e_0 = N \cdot 2\pi f \cdot \Phi_0$. Kun $N$ ja $f$ pysyvät samoina, $e_0$ on verrannollinen vuohon $\Phi_0$. Kuvan kenttäviivat on piirretty yhtä suurin vuoaskelin, joten vastaanotinkäämin läpi kulkevien viivojen lukumäärä $n$ on verrannollinen vuohon ja siten jännitteeseen.
+**Kuvaajan lukeminen:** Lasketaan tummennetut viivat, jotka kulkevat vastaanotinkäämin läpi. Vasemmalla ($3\,\text{mm}$) niitä on $6$ ja oikealla ($8\,\text{mm}$) $3$.
+**Kaava:** $\dfrac{e_0'}{e_0} = \dfrac{\Phi_0'}{\Phi_0} = \dfrac{n'}{n}$, joten $e_0' = e_0 \cdot \dfrac{n'}{n}$
+**Muunnokset:** Ei tarvita: viivamäärien suhde on yksikötön, ja jännite pysyy voltteina.
+**Sijoitus:** $e_0' = 4{,}2\,\text{V} \cdot \dfrac{3}{6} = 2{,}1\,\text{V}$
+**Vastaus:** $2{,}1\,\text{V}$, kaksi merkitsevää numeroa kuten annettu jännite. Viivojen laskeminen on karkea, joten arvo on suuntaa antava.
+**Järkevyys:** Puhelin on kauempana ja vuo pienempi, joten jännite pienenee: $2{,}1\,\text{V}$ on pienempi kuin $4{,}2\,\text{V}$. Vuo putoaa puoleen alle $8\,\text{mm}$:n matkalla, mikä sopii siihen, että hyötysuhde laski luvun mittauksissa jyrkästi jo muutaman millimetrin matkalla.
+
+## fy7-16-L2-10
+**Annettu:** kuvaajan käyrä $P : P_0$ pituuden $L$ funktiona, uuden kuidun pituus $L = 35\,\text{km}$
+**Kysytty:** vaimennuskerroin $a$ ja teho $P : P_0$ prosentteina pituudella $35\,\text{km}$
+**Periaate:** Kuitu on koko matkalta samanlaista, joten $A = aL$, ja vaimennus kertoo tehon suhteen: $A = 10\,\text{dB} \cdot \lg \dfrac{P_0}{P}$. Kun teho on puolittunut, $P_0 : P = 2$, joten vaimennus tunnetaan ilman tehojen lukuarvoja. Vaimennuskerroin saadaan jakamalla se puolittumiseen tarvittavalla pituudella.
+**Kuvaajan lukeminen:** Vedä vaakasuora viiva korkeudelle $50\,\%$ ja mene sen ja käyrän leikkauspisteestä pystysuoraan alas vaaka-akselille. Kohta on $L_{1/2} = 10\,\text{km}$.
+**Kaava:** $a = \dfrac{10\,\text{dB} \cdot \lg 2}{L_{1/2}}$, $A = aL$ ja $\dfrac{P}{P_0} = 10^{-A / (10\,\text{dB})}$
+**Muunnokset:** Ei tarvita: pituudet ovat kilometreinä ja vaimennuskerroin lasketaan yksikössä $\text{dB/km}$.
+**Sijoitus:** $a = \dfrac{10\,\text{dB} \cdot 0{,}301}{10\,\text{km}} = 0{,}301\,\text{dB/km}$. Pituudella $35\,\text{km}$: $A = 0{,}301\,\text{dB/km} \cdot 35\,\text{km} = 10{,}5\,\text{dB}$ ja $\dfrac{P}{P_0} = 10^{-10{,}5 / 10} = 0{,}0884 = 8{,}8\,\%$.
+**Vastaus:** $8{,}8\,\%$, kaksi merkitsevää numeroa; vaimennuskerroin on noin $0{,}30\,\text{dB/km}$.
+**Järkevyys:** Pituus $35\,\text{km}$ on $3{,}5$ puolittumismatkaa, joten teho on $0{,}5^{3{,}5} = 0{,}088$ eli $8{,}8\,\%$. Tulos on pienempi kuin $50\,\%$ ja suurempi kuin $12{,}5\,\%$ (kolme puolittumista), kuten pitää.
