@@ -1,16 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 308ad3c499f2de72
+CONTENT-HASH: e0f4f9aa4347ac34
 
 ## Blocking
-(none left)
-
-## Fixed
-- solutions.md fy3-s2 b — "Nopeat hiukkaset irtoavat" lost the comparison of the Finnish (nopeammat) → "Nopeammat hiukkaset irtoavat"
-
-## Polish
 - none
 
+## Polish
+1. tasks.json 1 c) rubric still says "hyödyllisen ja tulevan tehon suhde"; it is correct, but could add "($\eta = P_\text{a}/P_\text{o}$)" to match the solution.
+
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): compared tasks.json (intro, all 3 tasks, every part text, rubric criterion and detail, source notes), solutions.md (all parts of fy3-s1, fy3-s2, fy3-s3, Yleisiä virheitä, Hyväksytään myös) and figures.json line by line with content/fi/FY3/sovella.
-- Physics meaning matches the Finnish: same numbers, formulas, interpolation to 117 °C, direction of every assumption's effect, gauge vs total pressure. Split sentences keep every symbol mention. practice.py check OK; check_i18n fi-easy: 0 errors.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked the Sovella tasks.json texts and criteria (pressure cooker: only water vapour, potatoes at cooker temperature; diver: given isothermal assumption, never hold breath) and solutions.md (efficiency reasonableness, table-based boiling principle, assumptions)
+Hash at start and end. Delta: task 1 c) Formula and Substitution lines. η = P_a/P_o with P_a the power the water gets (b: 4190·4,00·0,85/60 = 237 W) and P_o the radiation power 800·0,50 = 400 W; η = 0,594 ≈ 0,59, recomputed; answers.py unchanged and agrees. Both symbols defined in words in the same line, consistent with fy3-15 (anto/otto). "Enintään yksi" and the reason it stays below one match the efficiency guardrail. Numbers and rubric points unchanged.
