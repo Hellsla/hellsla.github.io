@@ -20,10 +20,15 @@ ketjussa tai heti perään, ei rinnakkain.
 FY1–FY4 ja FY9 on tehty (#501, #522, #527, #529). Keskinopeuden tunnus on kaikkialla $v_\text{k}$, ei $v_\text{ka}$
 (opettaja 2026-11-13).
 
-## 4. Ensimmäinen ulkoasukatselmointi: FY10:n tutkimukset ja TVT-ohjeet (2026-11-13)
+## 4. FY10:n tutkimusten ja TVT-ohjeiden korjaukset (opettaja 2026-11-13)
 
-36 osaa on sivustolla visual baselinen varassa (`python scripts/reviews.py baseline`): 27 tutkimusta ja 9 TVT-ohjetta.
-`/quality-audit <id> --audit-only`, sitten `--fix`. Voi kulkea rinnakkain kohdan 2 kanssa.
+Auditointi on tehty (#536: 28 PASS, 8 FAIL, ei Critical-löydöksiä, 159 Minor). Korjataan `/quality-audit <id> --fix`
+#536:n kuvauksen järjestyksessä: ensin Major-löydökset tvt-epavarmuus, tvt-kuvaaja, tvt-tyoselostus, fy10-jousivakio,
+fy10-induktio, fy10-lammonjohtuminen, fy10-liukukitka ja fy10-hiuksen-paksuus. fy10-liukukitkan kallistusvirhe
+("0,02 asteen kallistusta kohti", noin 50-kertainen ero) tiedekatselmoinnilla ennen korjausta. Jokainen Major-löydös
+tarkistetaan ensin kuvista (fy10-hiuksen-paksuus antoi kahdella ajolla eri tuloksen). Minor-löydökset ja yhteinen
+kuvasääntö erillisenä eränä opettajan päätöksellä; jaettujen komponenttien muutokset (`templates/`, `screenshot.py`:n
+tyhjät 28×28 px kaappaukset) tehdään yksin. Voi kulkea rinnakkain kohdan 2 kanssa.
 
 ## 5. CI:n toistettavuus (2026-11-13)
 
