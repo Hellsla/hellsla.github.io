@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: f6987a85f62564f9
+CONTENT-HASH: 6e4aefa760db29fb
+SCOPE: delta added-exercise from f6987a85f62564f9 base 8f23aa7ae3bd
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] solutions.md fy6-7-L1-09 — "Reasonableness: a device of one kilowatt …" is run into the last Model answer paragraph, so the page shows no Reasonableness block (every neighbouring task has one, e.g. 7-8). Put it on its own line as `**Reasonableness:** …`.
+- [Minor] fy6-7/dryer (task 7-18) — the cooling phase at 0.2 kW lies halfway between the axis and the first labelled tick 0.4, and the solution says the values are read "from the grid lines of 0.4 kW", which is not quite true for 0.2 kW; add a tick or gridline at 0.2 or say "half a grid step".
+- [Minor] fy6-7/dryer — y tick labels mix "2" with "2.4", "1.6"; write 2.0 (and 1.0 style consistently), and the x labels 1 and 2 as 1.0 and 2.0.
+- [Minor] solutions.md fy6-7-L1-10 Substitution — the second step sits outside the chain box as a loose line; the Answer line also says 11 MJ, two lines above the 10.8 MJ — fine, but the "accepted within ±4 %" sentence belongs in the task's tolerance, not in the student's solution.
 
 ## Checked
-- Delta: new L1-09 (order-of-magnitude choice, shown as 7-9), solution; L1-08 text re-split into situation / student's solution / question; answers.py comment only.
-- Opened en fy6-7-open-exercises-1280-8 (end of 7-8 with the re-split task's solution, start of 7-9) and -9 (four options with feedback, Find/Principle/Model answer with t and E blocks).
-- kWh, W, min and h render as upright maths units; options are whole clickable rows; feedback opens inside the card; no red KaTeX, no clipping, no overflow.
-- Figures: none changed.
+- en captures fy6-7-open-exercises-1280-9 and -10 (task 7-10 with MAFY hint open, full solution) and fy6-7-open-exercises-L2-1280-10 and -11 (task 7-18 with the dryer power graph, answer box, solution). Graph: P (kW) and t (h) titled with units, three phases labelled in words, line orange, readable at 1280; maths and Finnish table names read well, units upright, \cdot, \tfrac for MJ/kWh; the other exercises unchanged and not re-reviewed.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4
