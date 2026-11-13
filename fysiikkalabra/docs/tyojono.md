@@ -8,12 +8,6 @@ Tämä on ainoa työjono (opettaja 2026-11-13): ei GitHub Issuesia eikä erillis
 ensimmäisessä commitissaan `Varattu: <haara>` ja avaa luonnos-PR:n heti, jotta muut ketjut näkevät varauksen
 (repon juuren `CLAUDE.md`). Saman kurssin kohdat tehdään peräkkäin, eri kurssien enintään kolme rinnakkain.
 
-## 1. Main vihreäksi: en/fy1-1:n ratkaisueditori 360 px:ssä (2026-11-13)
-
-`test_writepad.py` kaatuu mainissa #528:n jälkeen: sivu on 35 px näkymää leveämpi (395 px / 360 px), editori ja
-painikkeet ovat kunnossa. Ei toistu paikallisesti. Ensin diagnostiikka (testi nimeää ylivuotavat elementit), sitten
-pienin korjaus samaan PR:ään. Testiä ei löysätä.
-
 ## 2. Tehtäväsarjojen katselmoinnit: FY1, fy4-8, FY5, FY6, FY7 (opettaja 2026-11-13: tässä järjestyksessä)
 
 Sarjat ovat luonnoksina eivätkä näy opiskelijoille (`python scripts/reviews.py status`): FY1 8, fy4-8 1, FY5 13,

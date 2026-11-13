@@ -19,10 +19,10 @@ work is in `CLAUDE.md` at the repository root. Update it when the teacher change
   FY7 (14), each in fi, en and fi-easy (`python scripts/reviews.py status`).
 - 36 published parts wait for their first visual review: the 27 FY10 investigations and 9 TVT guides
   (`python scripts/reviews.py baseline`).
-- `main` was red after #528 (`test_writepad.py`, en/fy1-1 at 360 px).
+- `main` was red after #528 (`test_writepad.py`, en/fy1-1 at 360 px), green again after #534.
 
 ## Order
-1. `main` green (en/fy1-1 editor at 360 px).
+1. ~~`main` green (en/fy1-1 editor at 360 px)~~: done (#534, 2026-11-13; the failure did not recur, the test now names an overflowing element if it does).
 2. Exercise reviews, in course order: FY1, fy4-8, FY5, FY6, FY7. The course's MAFY formulas (queue) go in the same
    session or right after, never in parallel on the same course.
 3. MAFY formulas for the courses step 2 does not cover: FY8, FY10, FY14.
