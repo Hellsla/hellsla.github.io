@@ -1,19 +1,20 @@
-VERDICT: FAIL
-CONTENT-HASH: 54f883462cec865c
+VERDICT: PASS
+CONTENT-HASH: 8595169e14d96ba2
 
 ## Blocking
-- [Major] solutions.md k2 a, figure fy8-k2-graph (fig-3) — the text and the figure say each point has a vertical error bar ±0,05 V, but the bars are 9 px long inside markers of r 5,5 (11 px) and are completely hidden. k2 c reads the bars off the figure (points (4,80; 1,96), (6,97; 2,89)), so the student cannot check it. — Fix: draw the bars longer than the marker with caps (enlarge the y-scale or widen the markers' gap), or state under the figure that the bars are smaller than the markers.
+(none)
 
 ## Polish
-- [Minor] k5 b Muunnokset (capture 390-36/37) — the chain E_2−E_1 = −3,4 eV+13,6 eV = 10,2 eV = 1,634·10^-18 J is split: the first two rows are in a white box, the last row is outside it and aligned differently. The same happens in k5 c and k7 d (a boxed fraction and loose rows). Fix in mathlayout so one chain is one block.
-- [Minor] k2 b Järkevyys (390-14) — "yksikkö V s" and "J s" read as plain-weight text next to the maths; check they are `\text` with a thin space. "2-3 %" uses a hyphen: write "2–3 %" in maths.
-- [Minor] k4 a Vastaus/Järkevyys — "28,30 MeV − 2,22 MeV / −8,48 MeV" breaks the line before the minus sign, which reads as a sign; keep the chain together or write it as a subtraction in parentheses.
-- [Minor] k7 c Sijoitus (390-55/56) — a mixture of words and chain ("Ensin c² = …; Sitten E = … ; Aallonpituudelle hc = …") is hard to follow; setting each step on its own line would help. The E in "λ = hc/E" gets cut at the end of a capture (a screenshot seam, not a page defect).
-- [Minor] k1 b (390-7) — "Sijoitus (omalla rivillään):" is a stray label and reads as an instruction to the writer; replace it with "Sijoitus:".
+- [Minor] k5 b and k5 c MUUNNOKSET/SIJOITUS (390 px) — a boxed aligned block is followed by an unboxed "= 1,634 · 10^-18 J" line, and Sijoitus mixes boxed fractions with running text; reads fine but the rhythm is uneven — let mathlayout keep the last conversion step inside the block.
+- [Minor] k7 c Sijoitus (390 px) — the displayed fraction E = ... / 1,602 · 10^-16 J/keV sits in its own box in the middle of a sentence, then "≈ 511 keV" continues beneath it; correct but fragmented — consider one aligned chain.
+- [Minor] k4 b Järkevyys (390 px) — the chain "E_s(He) − E_s(D) − E_s(T) = 28,30 MeV − 2,22 MeV − 8,…" is clipped at the right edge of the callout in the capture (the 1280 px capture is not affected) — let the chain wrap before the last term.
+- [Minor] Graphs k2/k3/k6 (390 px) — axis and annotation type is small (about 8–9 px) on a phone; legible but near the limit.
 
 ## Checked
-- Contact sheets 1–5. Page captures 390-7, 13, 14, 15, 22, 28, 29, 30, 35, 36, 37, 38, 55, 56, 57 (every Sijoitus chain of k1 b, k2 b, k3 c, k4 a–c, k5 a–c, k7 c at 390 px). Sample at 1280 px: page-1280-30. Figures fig-1, 3, 6 and 18 (the four graphs, enlarged). The other fig-N captures are inline icons of 28–100 px (no figures). Stamp hash matches the packet hash.
-- The graphs have quantities and units, honest scales, data markers apart from the lines, and the extrapolation dashed (k2). No chain is clipped or shrunk, and the decimal commas, \cdot and units are consistent. Not rechecked: the other tasks' text and k6.
+- Figures opened at full size: fig-1 (k1 graph), fig-3 (k2 graph: error bars now visible on all five points, dashed extrapolation distinct from the data, read-off points labelled), fig-6 (k3 decay graph), fig-18 (k6 ln R graph). The other 21 "figures" are KaTeX inline images, judged inside the page captures.
+- Calculation chains at 390 px: k1 b (page-390-7), k2 b (-13, -14), k3 c (-22), k4 a–c (-28, -29, -30), k5 a–c (-35, -36, -37, -38), k7 c (-55). 1280 px sample: page-1280-26 (k5 a, b).
+- Contact sheets 1–5 for the order, the top, the stages and the example-exam structure.
+- Principle, symbolic formula, conversion, substitution, result and Järkevyys keep their order in every chain; units are upright with a thin space, the decimal comma and \cdot are consistent, and nothing overflows horizontally.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4
