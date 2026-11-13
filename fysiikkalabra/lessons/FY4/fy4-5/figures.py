@@ -374,11 +374,11 @@ def ruutu():
 
 
 def ruutu_vinot():
-    """Exercise L2-08: two oblique forces on a puck seen from above on a 2,0 N grid; the student reads the components off
+    """Exercise L2-08: two oblique forces on a block seen from above on a 2,0 N grid; the student reads the components off
     the grid crossings and finds the net force and the acceleration. F_1 = (10, 12) N, F_2 = (-4, -4) N."""
-    f = Fig("fy45-ruutu-vinot", 400, "Jääkiekko ylhäältä katsottuna ruudukolla, yksi ruutu vastaa 2,0 newtonia. Kiekko on kahden ruudun levyinen ja korkuinen "
-            "neliö, ja siihen vaikuttaa kaksi vinoa voimaa. F1 lähtee kiekon oikeasta yläkulmasta ja päättyy ruudukon risteykseen viisi ruutua "
-            "oikealle ja kuusi ruutua ylös lähtöpisteestä. F2 lähtee kiekon vasemmasta alakulmasta ja päättyy risteykseen kaksi ruutua "
+    f = Fig("fy45-ruutu-vinot", 400, "Kappale ylhäältä katsottuna ruudukolla, yksi ruutu vastaa 2,0 newtonia. Kappale on kahden ruudun levyinen ja korkuinen "
+            "neliö, ja siihen vaikuttaa kaksi vinoa voimaa. F1 lähtee kappaleen oikeasta yläkulmasta ja päättyy ruudukon risteykseen viisi ruutua "
+            "oikealle ja kuusi ruutua ylös lähtöpisteestä. F2 lähtee kappaleen vasemmasta alakulmasta ja päättyy risteykseen kaksi ruutua "
             "vasemmalle ja kaksi ruutua alas lähtöpisteestä.")
     sq, P = 28, (240, 250)
     for i in range(-8, 12):
@@ -468,7 +468,7 @@ REUSE = {
     "malli-pulkka": "reveals: the model diagram of a sled pulled at 30° at constant velocity (shown in the solution)",
     "malli-hissi": "reveals: the model diagram of a person in a lift slowing down while moving up (shown in the solution)",
     "ruutu": "safe: four forces on a 10 N grid, no net force drawn",
-    "ruutu-vinot": "safe: two oblique forces on a puck seen from above on a 2,0 N grid, no net force or acceleration drawn (task fy4-5-L2-08)",
+    "ruutu-vinot": "safe: two oblique forces on a block seen from above on a 2,0 N grid, no net force or acceleration drawn (task fy4-5-L2-08)",
     "pick-tasainen": "reveals: the right option of task fy4-5-L1-09 (a box pushed at constant velocity: G = N, F = F_mu)",
     "pick-pitka": "safe: a wrong option of task fy4-5-L1-09 (the push drawn twice the friction)",
     "pick-lisa": "safe: a wrong option of task fy4-5-L1-09 (an extra F_k, the box's push on the pusher)",
