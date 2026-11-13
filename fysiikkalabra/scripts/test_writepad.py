@@ -67,6 +67,18 @@ for lang in i18n.languages():
 for lang in pages:
     expect(f"{lang}: {len(pages[lang])} published lessons have exercises", True)
 
+# Which element makes the page scroll sideways (CI 2026-11-13: the listed elements past the window are mostly inside scroll boxes and
+# cannot be the cause). Used only when a check has already failed: hide each element past the window in turn and keep those whose
+# hiding shortens the page's scrollWidth, with their ancestors' position/overflow/left/right/width, and the toolbar's own box.
+CULPRITS_JS = """() => { const sw = () => document.documentElement.scrollWidth - innerWidth, base = sw(), out = [];
+    const brief = (n) => { const cs = getComputedStyle(n), b = n.getBoundingClientRect();
+        return n.tagName.toLowerCase() + '.' + String(n.getAttribute('class') || '').slice(0, 24) + ' ' + cs.position + ' ox=' + cs.overflowX + ' L' + Math.round(b.left) + ' R' + Math.round(b.right) + ' W' + Math.round(b.width); };
+    for (const x of [...document.querySelectorAll('body *')].filter(x => x.getBoundingClientRect().right > innerWidth + 0.5).slice(0, 120)) {
+        const d = x.style.display; x.style.display = 'none'; const s = sw(); x.style.display = d;
+        if (s < base && out.length < 6) { const chain = []; for (let n = x; n && n !== document.documentElement && chain.length < 7; n = n.parentElement) chain.push(brief(n)); out.push({ drops_to: s, chain }); } }
+    const tb = document.querySelector('.rich-text-editor-toolbar-root > div');
+    return { base, html: document.documentElement.className, toolbar: tb ? brief(tb) : null, toolbar_parents: tb ? (() => { const o = []; for (let n = tb.parentElement; n && n !== document.documentElement && o.length < 12; n = n.parentElement) { const cs = getComputedStyle(n); if (cs.containerType !== 'normal' || cs.contain !== 'none' || cs.transform !== 'none' || cs.filter !== 'none' || cs.willChange !== 'auto') o.push(brief(n) + ' ct=' + cs.containerType + ' contain=' + cs.contain); } return o; })() : null, culprits: out }; }"""
+
 targets = [p for p in (args or [pp[0] for pp in pages.values()])]
 
 class Quiet(http.server.SimpleHTTPRequestHandler):
@@ -166,25 +178,29 @@ with sync_playwright() as pw:
                          over: [...document.querySelectorAll('body *')].map(x => [x, x.getBoundingClientRect()]).filter(([x, b]) => b.right > innerWidth + 0.5)
                              .sort((a, b) => b[1].right - a[1].right).slice(0, 12).map(([x, b]) => ({ tag: x.tagName.toLowerCase(), cls: String(x.getAttribute('class') || ''), id: x.id, width: Math.round(b.width), right: Math.round(b.right) })) }; }""", li.get_attribute("id"))
             # `over` (the elements whose right edge passes the window) only explains a failure; the condition is unchanged
+            if m["scroll"] > 0: m["culprits"] = pg.evaluate(CULPRITS_JS)   # only explains the failure below
             expect(f"{page} {w} px: the open editor fits the exercise, no horizontal scroll, buttons 40 px", m["scroll"] <= 0 and m["inside"] and not m["small"], m)
             if w in (360, 1280):
                 li.locator(".pad").scroll_into_view_if_needed()
                 shot = ROOT / "preview" / "writepad"; shot.mkdir(parents=True, exist_ok=True)
                 li.screenshot(path=str(shot / f"{page.replace('/', '_')}-{w}.png"))
         if page.split("/")[-1] == "fy1-1.html":   # fi, en and fi-easy
-            # the toolbar's own box, ten openings in a row at 360 px (CI 2026-11-13: it sometimes ran past the window, 455 px wide rows
+            # the toolbar's own box, ten openings in a row, wide then narrow (360 px) (CI 2026-11-13: it sometimes ran past the window, 455 px wide rows
             # inside it; the box is fixed to the window or, if a size container becomes its containing block, to that column)
             bad = []
             for k in range(10):
-                tp = ctx.new_page(); tp.set_viewport_size({"width": 360, "height": 800}); tp.goto(BASE + page); tp.wait_for_load_state("load")
+                tp = ctx.new_page(); tp.set_viewport_size({"width": 1280, "height": 800}); tp.goto(BASE + page); tp.wait_for_load_state("load")
                 tp.evaluate("document.querySelectorAll('#exercises details.level').forEach(d => { d.open = true; })")
                 l0 = tp.locator("#exercises li[id]:has(> .task)").first
                 l0.locator(".pad-open").scroll_into_view_if_needed(); l0.locator(".pad-open").click()
-                l0.locator(".rich-text-editor").wait_for(timeout=20000); tp.keyboard.type("x"); tp.wait_for_timeout(300)
+                l0.locator(".rich-text-editor").wait_for(timeout=20000); tp.keyboard.type("v = s : t, joten "); tp.keyboard.press("Control+e"); tp.wait_for_timeout(100); tp.keyboard.type("v=s/t"); tp.keyboard.press("Escape"); tp.wait_for_timeout(400)
+                tp.set_viewport_size({"width": 360, "height": 800}); tp.wait_for_timeout(200)   # the failing path: opened wide, then narrow
                 r = tp.evaluate("""() => { const t = document.querySelector('.rich-text-editor-toolbar-root > div'), b = t && t.getBoundingClientRect();
                     return { scroll: document.documentElement.scrollWidth - innerWidth, toolbar: !!t, left: b && Math.round(b.left), right: b && Math.round(b.right), width: b && Math.round(b.width),
                              pos: t && getComputedStyle(t).position, parent: t && t.parentElement.className }; }""")
-                if not (r["toolbar"] and r["scroll"] <= 0 and r["left"] >= 0 and r["right"] <= 360): bad.append((k, r))
+                if not (r["toolbar"] and r["scroll"] <= 0 and r["left"] >= 0 and r["right"] <= 360):
+                    if r["scroll"] > 0: r["culprits"] = tp.evaluate(CULPRITS_JS)
+                    bad.append((k, r))
                 tp.close()
             expect(f"{page} 360 px: the editor's toolbar box stays inside the window and the page does not scroll sideways, ten openings in a row", not bad, bad)
         expect(f"{page}: no script errors", not errs, errs)
