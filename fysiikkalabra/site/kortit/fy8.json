@@ -171,7 +171,7 @@
   {
    "id": "fy8-maksimiliike-energia",
    "moduuli": "FY8",
-   "luku": "fy8-1",
+   "luku": null,
    "aihe": "fy8-valosahkoilmio",
    "kasite": "Maksimiliike-energia",
    "maaritelma": "Nopeimman irronneen elektronin energia saadaan energian säilymisestä.",
@@ -259,7 +259,7 @@
   {
    "id": "fy8-elektronimikroskooppi",
    "moduuli": "FY8",
-   "luku": "fy8-4",
+   "luku": null,
    "aihe": "fy8-aaltohiukkasdualismi",
    "kasite": "Elektronimikroskooppi",
    "maaritelma": "Elektronien lyhyt aallonpituus mahdollistaa näkyvää valoa tarkemman kuvantamisen."
@@ -413,7 +413,7 @@
   {
    "id": "fy8-paulin-kieltosaanto",
    "moduuli": "FY8",
-   "luku": "fy8-5",
+   "luku": null,
    "aihe": "fy8-kvanttimekaaninen-atomimalli",
    "kasite": "Paulin kieltosääntö",
    "maaritelma": "Atomissa kahdella elektronilla ei voi olla kaikkia kvanttilukuja samoina."
@@ -573,7 +573,7 @@
   {
    "id": "fy8-karakteristinen-sateily",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-14",
    "aihe": "fy8-rontgensateily",
    "kasite": "Karakteristinen säteily",
    "maaritelma": "Syntyy atomien elektronitilojen siirtymistä ja muodostaa aineelle ominaisia spektriviivoja."
@@ -589,7 +589,7 @@
   {
    "id": "fy8-lyhyin-aallonpituus",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-14",
    "aihe": "fy8-rontgensateily",
    "kasite": "Lyhyin aallonpituus",
    "maaritelma": "Röntgenputken suurienergisin fotoni syntyy, kun elektronin energia muuttuu kokonaan fotoniksi.",
@@ -675,7 +675,7 @@
   {
    "id": "fy8-sidososuus",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-10",
    "aihe": "fy8-atomiydin",
    "kasite": "Sidososuus",
    "maaritelma": "Sidosenergia jaettuna ytimen nukleonien lukumäärällä kuvaa ytimen pysyvyyttä."
@@ -797,7 +797,7 @@
   {
    "id": "fy8-elektronisieppaus",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-8",
    "aihe": "fy8-radioaktiivisuus",
    "kasite": "Elektronisieppaus",
    "maaritelma": "Ydin sieppaa elektronin, jolloin protoni muuttuu neutroniksi ja samalla syntyy neutriino."
@@ -837,7 +837,7 @@
   {
    "id": "fy8-neutriino",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-8",
    "aihe": "fy8-radioaktiivisuus",
    "kasite": "Neutriino",
    "maaritelma": "Hyvin kevyt ja varaukseton hiukkanen, joka vuorovaikuttaa aineen kanssa erittäin heikosti."
@@ -913,20 +913,22 @@
   {
    "id": "fy8-sateilyn-vaimeneminen",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-12",
    "aihe": "fy8-sateilyn-vaimeneminen",
    "kasite": "Säteilyn vaimeneminen",
-   "maaritelma": "Gammasäteilyn intensiteetti pienenee aineessa eksponentiaalisesti.",
-   "kaava": "I = I_0 e^{-\\mu x}",
-   "kaava_puhe": "I on I nolla kertaa e potenssiin miinus myy x"
+   "maaritelma": "Gammasäteilyn intensiteetti pienenee aineessa eksponentiaalisesti esteen paksuuden $d$ kasvaessa.",
+   "kaava": "I = I_0 e^{-\\mu d}",
+   "kaava_puhe": "I on I nolla kertaa e potenssiin miinus myy d"
   },
   {
    "id": "fy8-vaimennuskerroin",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-12",
    "aihe": "fy8-sateilyn-vaimeneminen",
    "kasite": "Vaimennuskerroin",
-   "maaritelma": "Kuvaa, kuinka voimakkaasti tietty aine vaimentaa tietyn energistä säteilyä."
+   "maaritelma": "Aineen ja säteilyn energian mukaan määräytyvä vakio $\\mu$, joka kertoo, kuinka voimakkaasti aine vaimentaa säteilyä; se liittyy puoliintumispaksuuteen yhtälöllä alla.",
+   "kaava": "\\mu = \\dfrac{\\ln 2}{d_{1/2}}",
+   "kaava_puhe": "myy on luonnollinen logaritmi kahdesta jaettuna puoliintumispaksuudella"
   },
   {
    "id": "fy8-puoliintumispaksuus",
@@ -957,10 +959,10 @@
   {
    "id": "fy8-comptoninsironta",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-12",
    "aihe": "fy8-sateilyn-vaimeneminen",
-   "kasite": "Comptoninsironta",
-   "maaritelma": "Fotoni luovuttaa osan energiastaan elektronille ja jatkaa pienemmällä energialla."
+   "kasite": "Comptonin sironta",
+   "maaritelma": "Fotonin ja aineen elektronin vuorovaikutus, jossa fotoni luovuttaa osan energiastaan elektronille ja jatkaa pienempienergisenä uuteen suuntaan; tärkein gammasäteilyn vaimenemistapa keskisuurilla energioilla."
   },
   {
    "id": "fy8-parinmuodostus",
@@ -1031,7 +1033,7 @@
   {
    "id": "fy8-sateilysuojaus",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-13",
    "aihe": "fy8-sateilyturvallisuus",
    "kasite": "Säteilysuojaus",
    "maaritelma": "Altistusta vähennetään lyhentämällä aikaa, kasvattamalla etäisyyttä ja käyttämällä sopivaa suojausta."
@@ -1047,7 +1049,7 @@
   {
    "id": "fy8-rontgenkuvaus",
    "moduuli": "FY8",
-   "luku": "fy8-13",
+   "luku": "fy8-14",
    "aihe": "fy8-sateilyn-hyotykaytto",
    "kasite": "Röntgenkuvaus",
    "maaritelma": "Kehon eri kudokset vaimentavat röntgensäteilyä eri tavoin, jolloin muodostuu kuva sisäisistä rakenteista."
@@ -1239,7 +1241,7 @@
   {
    "id": "fy8-rekombinaatio",
    "moduuli": "FY8",
-   "luku": "fy8-16",
+   "luku": null,
    "aihe": "fy8-maailmankaikkeus",
    "kasite": "Rekombinaatio",
    "maaritelma": "Elektronit sitoutuivat ytimiin neutraaleiksi atomeiksi, minkä jälkeen säteily pääsi etenemään vapaasti."

@@ -273,7 +273,7 @@
   {
    "id": "fy7-kommutaattori",
    "moduuli": "FY7",
-   "luku": "fy7-4",
+   "luku": null,
    "aihe": "fy7-magnetismi",
    "kasite": "Commutator",
    "maaritelma": "A split ring with carbon brushes that reverses the current in a motor's loop every half turn."

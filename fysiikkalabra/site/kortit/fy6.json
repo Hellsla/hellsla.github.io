@@ -397,7 +397,7 @@
   {
    "id": "fy6-askeljannite",
    "moduuli": "FY6",
-   "luku": "fy6-15",
+   "luku": null,
    "aihe": "fy6-sahkoenergia-ja-komponentit",
    "kasite": "Askeljännite",
    "maaritelma": "Maahan pudonneen johtimen ympärillä ihmisen jalkojen välille syntyvä jännite, joka kasvaa kosketuskohtaa lähestyttäessä."
@@ -423,7 +423,7 @@
   {
    "id": "fy6-kuormanhallinta",
    "moduuli": "FY6",
-   "luku": "fy6-16",
+   "luku": null,
    "aihe": "fy6-sahkoenergia-ja-komponentit",
    "kasite": "Kuormanhallinta",
    "maaritelma": "Latausaseman toiminto, joka mittaa pääsulakkeiden virtaa ja pienentää latausvirtaa, kun muut laitteet ovat päällä."

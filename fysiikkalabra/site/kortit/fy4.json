@@ -557,7 +557,7 @@
    "luku": "fy4-9",
    "aihe": "fy4-liikemaara-ja-tormaykset",
    "kasite": "Impulssi",
-   "maaritelma": "Kuvaa voiman kokonaisvaikutusta tietyn ajan kuluessa; vakiovoimalla:",
+   "maaritelma": "Kuvaa voiman kokonaisvaikutusta tietyn ajan kuluessa; vakiovoimalla impulssi on voiman ja sen vaikutusajan tulo.",
    "kaava": "\\overline{I} = \\overline{F}\\Delta t",
    "kaava_puhe": "I on F kertaa delta t"
   },
@@ -766,7 +766,7 @@
   {
    "id": "fy4-putouskorkeus",
    "moduuli": "FY4",
-   "luku": "fy4-15",
+   "luku": null,
    "aihe": "fy4-tyo-ja-mekaaninen-energia",
    "kasite": "Putouskorkeus",
    "maaritelma": "Vesivoimalan ylä- ja alaveden pintojen korkeusero $h$."
@@ -782,7 +782,7 @@
   {
    "id": "fy4-nollataso",
    "moduuli": "FY4",
-   "luku": "fy4-16",
+   "luku": "fy4-7",
    "aihe": "fy4-tyo-ja-mekaaninen-energia",
    "kasite": "Nollataso",
    "maaritelma": "Valittu korkeus, jolla painon potentiaalienergia on nolla; korkeus $h$ mitataan siitä."
@@ -790,7 +790,7 @@
   {
    "id": "fy4-kitkan-tyo",
    "moduuli": "FY4",
-   "luku": "fy4-16",
+   "luku": "fy4-8",
    "aihe": "fy4-tyo-ja-mekaaninen-energia",
    "kasite": "Kitkan työ",
    "maaritelma": "Liikekitkan tekemä negatiivinen työ; suoralla pinnalla se riippuu kuljetun matkan vaakasuorasta pituudesta $x$.",

@@ -59,7 +59,7 @@
   {
    "id": "fy2-uusiutuva-energialahde",
    "moduuli": "FY2",
-   "luku": null,
+   "luku": "fy2-6",
    "aihe": "fy2-energia-ymparistossa",
    "kasite": "Uusiutuva energialähde",
    "maaritelma": "Luonnonvara tai ilmiö, jota syntyy jatkuvasti lisää ihmisen käytön kannalta riittävän nopeasti."
@@ -67,7 +67,7 @@
   {
    "id": "fy2-uusiutumaton-energialahde",
    "moduuli": "FY2",
-   "luku": null,
+   "luku": "fy2-6",
    "aihe": "fy2-energia-ymparistossa",
    "kasite": "Uusiutumaton energialähde",
    "maaritelma": "Luonnonvara, jota on rajallinen määrä eikä muodostu nopeasti lisää."
@@ -251,7 +251,7 @@
   {
    "id": "fy2-sisaenergia",
    "moduuli": "FY2",
-   "luku": "fy2-1",
+   "luku": null,
    "aihe": "fy2-energialajit",
    "kasite": "Sisäenergia",
    "maaritelma": "Aineen rakenneosasten liikkeeseen ja vuorovaikutuksiin liittyvä energiamuoto."
@@ -283,7 +283,7 @@
   {
    "id": "fy2-energiakaavio",
    "moduuli": "FY2",
-   "luku": "fy2-1",
+   "luku": null,
    "aihe": "fy2-energian-sailyminen",
    "kasite": "Energiakaavio",
    "maaritelma": "Esitys, jolla havainnollistetaan energialajeja sekä niiden muuntumista ja säilymistä."
@@ -299,7 +299,7 @@
   {
    "id": "fy2-hukkaenergia",
    "moduuli": "FY2",
-   "luku": "fy2-1",
+   "luku": "fy2-4",
    "aihe": "fy2-energian-sailyminen",
    "kasite": "Hukkaenergia",
    "maaritelma": "Energiaa, joka muuntuu laitteen varsinaisen käyttötarkoituksen kannalta hyödyttömään muotoon."
@@ -307,7 +307,7 @@
   {
    "id": "fy2-hyotyenergia",
    "moduuli": "FY2",
-   "luku": "fy2-1",
+   "luku": "fy2-4",
    "aihe": "fy2-energian-sailyminen",
    "kasite": "Hyötyenergia",
    "maaritelma": "Se osa laitteen ottamasta energiasta, joka saadaan haluttuun tarkoitukseen."
@@ -333,7 +333,7 @@
   {
    "id": "fy2-ottoteho",
    "moduuli": "FY2",
-   "luku": "fy2-3",
+   "luku": "fy2-4",
    "aihe": "fy2-teho",
    "kasite": "Ottoteho",
    "maaritelma": "Kertoo, kuinka nopeasti laite ottaa energiaa energialähteestään."
@@ -341,7 +341,7 @@
   {
    "id": "fy2-antoteho",
    "moduuli": "FY2",
-   "luku": "fy2-3",
+   "luku": "fy2-4",
    "aihe": "fy2-teho",
    "kasite": "Antoteho",
    "maaritelma": "Kertoo, kuinka nopeasti laite siirtää energiaa haluttuun käyttötarkoitukseen."
@@ -367,7 +367,7 @@
   {
    "id": "fy2-arvokilpi",
    "moduuli": "FY2",
-   "luku": "fy2-3",
+   "luku": null,
    "aihe": "fy2-teho",
    "kasite": "Arvokilpi",
    "maaritelma": "Laitteen merkintä, josta voidaan lukea esimerkiksi sen sähköverkosta ottama teho."
@@ -393,7 +393,7 @@
   {
    "id": "fy2-tehohyotysuhde",
    "moduuli": "FY2",
-   "luku": "fy2-4",
+   "luku": null,
    "aihe": "fy2-hyotysuhde-ja-lampoarvo",
    "kasite": "Tehohyötysuhde",
    "maaritelma": "Voidaan laskea anto- ja ottotehon suhteena.",
@@ -411,7 +411,7 @@
   {
    "id": "fy2-antoenergia",
    "moduuli": "FY2",
-   "luku": "fy2-4",
+   "luku": null,
    "aihe": "fy2-hyotysuhde-ja-lampoarvo",
    "kasite": "Antoenergia",
    "maaritelma": "Laitteen varsinaiseen tarkoitukseen siirtämä tai muuntama energiamäärä."
@@ -419,7 +419,7 @@
   {
    "id": "fy2-siirtohavio",
    "moduuli": "FY2",
-   "luku": "fy2-4",
+   "luku": "fy2-7",
    "aihe": "fy2-hyotysuhde-ja-lampoarvo",
    "kasite": "Siirtohäviö",
    "maaritelma": "Energian siirrossa osa energiasta muuntuu hyödyntämättömään muotoon, yleensä lämmöksi."
@@ -435,7 +435,7 @@
   {
    "id": "fy2-palamisenergia",
    "moduuli": "FY2",
-   "luku": "fy2-4",
+   "luku": "fy2-5",
    "aihe": "fy2-hyotysuhde-ja-lampoarvo",
    "kasite": "Palamisenergia",
    "maaritelma": "Polttoaineesta vapautuva määrä voidaan laskea massan ja lämpöarvon avulla.",
@@ -445,7 +445,7 @@
   {
    "id": "fy2-energiatehokkuus",
    "moduuli": "FY2",
-   "luku": "fy2-4",
+   "luku": null,
    "aihe": "fy2-hyotysuhde-ja-lampoarvo",
    "kasite": "Energiatehokkuus",
    "maaritelma": "Haluttu hyöty saavutetaan mahdollisimman pienellä energian kulutuksella ja vähäisillä häviöillä."
@@ -453,7 +453,7 @@
   {
    "id": "fy2-energiantuotanto",
    "moduuli": "FY2",
-   "luku": "fy2-6",
+   "luku": null,
    "aihe": "fy2-energiantuotanto",
    "kasite": "Energiantuotanto",
    "maaritelma": "Luonnossa olevan energian muuntamista ihmisille käyttökelpoiseen muotoon, kuten sähköksi tai lämmöksi."
@@ -485,7 +485,7 @@
   {
    "id": "fy2-lampovoimalaitos",
    "moduuli": "FY2",
-   "luku": "fy2-6",
+   "luku": null,
    "aihe": "fy2-energiantuotanto",
    "kasite": "Lämpövoimalaitos",
    "maaritelma": "Lämpöenergiaa käytetään höyryn tuottamiseen, joka pyörittää turbiinia ja generaattoria."
@@ -493,7 +493,7 @@
   {
    "id": "fy2-lauhdutin",
    "moduuli": "FY2",
-   "luku": "fy2-6",
+   "luku": null,
    "aihe": "fy2-energiantuotanto",
    "kasite": "Lauhdutin",
    "maaritelma": "Jäähdyttää turbiinista tulevan höyryn takaisin vedeksi ja siirtää samalla lämpöä ympäristöön."
@@ -501,7 +501,7 @@
   {
    "id": "fy2-yhteistuotanto",
    "moduuli": "FY2",
-   "luku": "fy2-6",
+   "luku": null,
    "aihe": "fy2-energiantuotanto",
    "kasite": "Yhteistuotanto",
    "maaritelma": "Samassa laitoksessa tuotetaan sekä sähköä että hyödynnettävää lämpöä, jolloin hyötysuhde paranee."
@@ -509,7 +509,7 @@
   {
    "id": "fy2-kaukolampo",
    "moduuli": "FY2",
-   "luku": "fy2-6",
+   "luku": "fy2-7",
    "aihe": "fy2-energiantuotanto",
    "kasite": "Kaukolämpö",
    "maaritelma": "Keskitetysti tuotettua lämpöenergiaa siirretään kuuman veden avulla rakennusten lämmitykseen."
@@ -517,7 +517,7 @@
   {
    "id": "fy2-lauhdevoima",
    "moduuli": "FY2",
-   "luku": "fy2-6",
+   "luku": null,
    "aihe": "fy2-energiantuotanto",
    "kasite": "Lauhdevoima",
    "maaritelma": "Sähköntuotantoa, jossa turbiinin jälkeen jäävää lämpöä ei yleensä hyödynnetä kaukolämpönä."
@@ -549,7 +549,7 @@
   {
    "id": "fy2-bioenergia",
    "moduuli": "FY2",
-   "luku": "fy2-6",
+   "luku": null,
    "aihe": "fy2-tuotantotavat",
    "kasite": "Bioenergia",
    "maaritelma": "Eloperäiseen aineeseen sitoutunutta kemiallista energiaa hyödynnetään esimerkiksi polttamalla."
@@ -605,7 +605,7 @@
   {
    "id": "fy2-maankaytto",
    "moduuli": "FY2",
-   "luku": "fy2-8",
+   "luku": null,
    "aihe": "fy2-ymparistovaikutukset",
    "kasite": "Maankäyttö",
    "maaritelma": "Eri tuotantotavat tarvitsevat erilaisia pinta-aloja voimaloille, polttoaineille ja siirtoyhteyksille."
@@ -613,7 +613,7 @@
   {
    "id": "fy2-luonnonvarat",
    "moduuli": "FY2",
-   "luku": "fy2-8",
+   "luku": null,
    "aihe": "fy2-ymparistovaikutukset",
    "kasite": "Luonnonvarat",
    "maaritelma": "Energiantuotanto käyttää materiaaleja ja polttoaineita, joiden saatavuus ja uusiutuminen vaihtelevat."
@@ -621,7 +621,7 @@
   {
    "id": "fy2-ekosysteemivaikutus",
    "moduuli": "FY2",
-   "luku": "fy2-8",
+   "luku": null,
    "aihe": "fy2-ymparistovaikutukset",
    "kasite": "Ekosysteemivaikutus",
    "maaritelma": "Energiantuotanto voi muuttaa eliöiden elinympäristöjä, vesistöjä ja luonnon monimuotoisuutta."
@@ -629,7 +629,7 @@
   {
    "id": "fy2-terveysvaikutus",
    "moduuli": "FY2",
-   "luku": "fy2-8",
+   "luku": null,
    "aihe": "fy2-ymparistovaikutukset",
    "kasite": "Terveysvaikutus",
    "maaritelma": "Tuotantotapojen päästöt, onnettomuusriskit ja muut tekijät voivat vaikuttaa ihmisten terveyteen."
@@ -637,7 +637,7 @@
   {
    "id": "fy2-suuruusluokka",
    "moduuli": "FY2",
-   "luku": "fy2-8",
+   "luku": null,
    "aihe": "fy2-ymparistovaikutukset",
    "kasite": "Suuruusluokka",
    "maaritelma": "Tuotantotapoja voidaan vertailla esimerkiksi tehon, päästöjen, kustannusten tai pinta-alan mittakaavan avulla."
@@ -653,7 +653,7 @@
   {
    "id": "fy2-hajautettu-tuotanto",
    "moduuli": "FY2",
-   "luku": "fy2-7",
+   "luku": null,
    "aihe": "fy2-energiajarjestelma",
    "kasite": "Hajautettu tuotanto",
    "maaritelma": "Energiaa tuotetaan useissa pienissä kohteissa lähellä kuluttajia suurten keskitettyjen laitosten lisäksi."
@@ -661,7 +661,7 @@
   {
    "id": "fy2-alykas-sahkoverkko",
    "moduuli": "FY2",
-   "luku": "fy2-7",
+   "luku": null,
    "aihe": "fy2-energiajarjestelma",
    "kasite": "Älykäs sähköverkko",
    "maaritelma": "Digitaalinen verkko ohjaa tuotantoa ja kulutusta sekä välittää tietoa molempiin suuntiin."
@@ -669,7 +669,7 @@
   {
    "id": "fy2-saatovoima",
    "moduuli": "FY2",
-   "luku": "fy2-7",
+   "luku": "fy2-6",
    "aihe": "fy2-energiajarjestelma",
    "kasite": "Säätövoima",
    "maaritelma": "Sähköntuotantoa, jonka määrää voidaan muuttaa nopeasti tuotannon ja kulutuksen tasapainottamiseksi."
@@ -685,7 +685,7 @@
   {
    "id": "fy2-lampovarasto",
    "moduuli": "FY2",
-   "luku": "fy2-7",
+   "luku": null,
    "aihe": "fy2-energiajarjestelma",
    "kasite": "Lämpövarasto",
    "maaritelma": "Lämpöenergiaa säilytetään esimerkiksi vedessä, maaperässä tai rakennusten rakenteissa myöhempää käyttöä varten."
@@ -693,7 +693,7 @@
   {
    "id": "fy2-vesipumppuvoimala",
    "moduuli": "FY2",
-   "luku": "fy2-7",
+   "luku": null,
    "aihe": "fy2-energiajarjestelma",
    "kasite": "Vesipumppuvoimala",
    "maaritelma": "Ylimääräisellä sähköllä vettä pumpataan ylemmäs, jolloin energia varastoituu veden potentiaalienergiaksi."
@@ -701,7 +701,7 @@
   {
    "id": "fy2-vauhtipyora",
    "moduuli": "FY2",
-   "luku": "fy2-7",
+   "luku": null,
    "aihe": "fy2-energiajarjestelma",
    "kasite": "Vauhtipyörä",
    "maaritelma": "Pyörivään kappaleeseen varastoidaan liike-energiaa, jota voidaan myöhemmin muuntaa takaisin sähköksi."
@@ -709,7 +709,7 @@
   {
    "id": "fy2-mikroverkko",
    "moduuli": "FY2",
-   "luku": "fy2-7",
+   "luku": null,
    "aihe": "fy2-energiajarjestelma",
    "kasite": "Mikroverkko",
    "maaritelma": "Paikallinen energiaverkko yhdistää lähellä sijaitsevia tuottajia, varastoja ja kuluttajia."
@@ -725,7 +725,7 @@
   {
    "id": "fy2-ekologinen-kestavyys",
    "moduuli": "FY2",
-   "luku": "fy2-8",
+   "luku": null,
    "aihe": "fy2-kestava-energiatalous",
    "kasite": "Ekologinen kestävyys",
    "maaritelma": "Luonnonvaroja käytetään niin, että ympäristön uusiutumis- ja kantokyky eivät vaarannu."
@@ -733,7 +733,7 @@
   {
    "id": "fy2-taloudellinen-kestavyys",
    "moduuli": "FY2",
-   "luku": "fy2-8",
+   "luku": null,
    "aihe": "fy2-kestava-energiatalous",
    "kasite": "Taloudellinen kestävyys",
    "maaritelma": "Energiaratkaisujen tulee olla kustannuksiltaan ja resurssien käytöltään pitkäjänteisesti toteuttamiskelpoisia."
@@ -741,7 +741,7 @@
   {
    "id": "fy2-sosiaalinen-kestavyys",
    "moduuli": "FY2",
-   "luku": "fy2-8",
+   "luku": null,
    "aihe": "fy2-kestava-energiatalous",
    "kasite": "Sosiaalinen kestävyys",
    "maaritelma": "Energiaratkaisuissa huomioidaan ihmisten hyvinvointi, turvallisuus ja oikeudenmukaiset mahdollisuudet saada energiaa."
@@ -749,7 +749,7 @@
   {
    "id": "fy2-energian-saasto",
    "moduuli": "FY2",
-   "luku": "fy2-8",
+   "luku": null,
    "aihe": "fy2-kestava-energiatalous",
    "kasite": "Energian säästö",
    "maaritelma": "Turhaa kulutusta vähennetään muuttamalla toimintaa ja käyttämällä energiaa vain tarpeeseen."
@@ -765,7 +765,7 @@
   {
    "id": "fy2-energian-varastointi",
    "moduuli": "FY2",
-   "luku": "fy2-8",
+   "luku": null,
    "aihe": "fy2-kestava-energiatalous",
    "kasite": "Energian varastointi",
    "maaritelma": "Tuotannon ja kulutuksen eriaikaisuutta tasataan säilyttämällä energiaa myöhempää käyttöä varten."
@@ -773,7 +773,7 @@
   {
    "id": "fy2-kestava-kulutus",
    "moduuli": "FY2",
-   "luku": "fy2-8",
+   "luku": null,
    "aihe": "fy2-kestava-energiatalous",
    "kasite": "Kestävä kulutus",
    "maaritelma": "Energiaa käytetään tarpeisiin tehokkaasti ja ympäristövaikutuksia pyritään vähentämään."
@@ -797,7 +797,7 @@
   {
    "id": "fy2-megajoule",
    "moduuli": "FY2",
-   "luku": "fy2-2",
+   "luku": null,
    "aihe": "fy2-energialajit",
    "kasite": "Megajoule",
    "maaritelma": "Energian kerrannaisyksikkö, joka on miljoona joulea.",

@@ -273,7 +273,7 @@
   {
    "id": "fy7-kommutaattori",
    "moduuli": "FY7",
-   "luku": "fy7-4",
+   "luku": null,
    "aihe": "fy7-magnetismi",
    "kasite": "Kommutaattori",
    "maaritelma": "Halkaistu rengas hiiliharjoineen, joka kääntää moottorin virtasilmukan virran suunnan joka puolikierroksella."

@@ -557,7 +557,7 @@
    "luku": "fy4-9",
    "aihe": "fy4-liikemaara-ja-tormaykset",
    "kasite": "Impulse",
-   "maaritelma": "Describes the total effect of a force over a time; for a constant force:",
+   "maaritelma": "Describes the total effect of a force over a time; for a constant force the impulse is the force times the time it acts.",
    "kaava": "\\overline{I} = \\overline{F}\\Delta t",
    "kaava_puhe": "I equals F times delta t"
   },
@@ -766,7 +766,7 @@
   {
    "id": "fy4-putouskorkeus",
    "moduuli": "FY4",
-   "luku": "fy4-15",
+   "luku": null,
    "aihe": "fy4-tyo-ja-mekaaninen-energia",
    "kasite": "Head",
    "maaritelma": "The height difference $h$ between the upper and lower water surfaces of a hydropower plant."
@@ -782,7 +782,7 @@
   {
    "id": "fy4-nollataso",
    "moduuli": "FY4",
-   "luku": "fy4-16",
+   "luku": "fy4-7",
    "aihe": "fy4-tyo-ja-mekaaninen-energia",
    "kasite": "Zero level",
    "maaritelma": "The chosen height at which gravitational potential energy is zero; the height $h$ is measured from it."
@@ -790,7 +790,7 @@
   {
    "id": "fy4-kitkan-tyo",
    "moduuli": "FY4",
-   "luku": "fy4-16",
+   "luku": "fy4-8",
    "aihe": "fy4-tyo-ja-mekaaninen-energia",
    "kasite": "Work done by friction",
    "maaritelma": "The negative work done by kinetic friction; on a straight surface it depends on the horizontal length $x$ of the path.",
