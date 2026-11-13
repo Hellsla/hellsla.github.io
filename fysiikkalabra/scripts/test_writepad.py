@@ -15,6 +15,8 @@ secure page):
   - Vastaus and Näytä ratkaisu are buttons on the exercise's top row beside the Ydintehtävä tag, and open their
     boxes in place (teacher 2026-11-01)
   - at 360, 768 and 1280 px the open editor fits the exercise: no horizontal scroll, buttons at least 40 px high
+    (360 px: opened on a narrow window, as on a phone, ten times in a row. KNOWN LIMITATION, teacher 2026-11-13: an editor opened
+    on a wide window and narrowed afterwards under ~400 px can widen the page by ~35 px; that path is a WARN, not a FAIL)
 And on the Sovella itsenäisesti page of every course in every language (teacher 2026-11-01, "myös Sovella"): one
 button per task, inside its task card before the model answer, the editor opens and the copy works, and at 360 and
 1280 px the open editor fits the card.
@@ -179,30 +181,38 @@ with sync_playwright() as pw:
                              .sort((a, b) => b[1].right - a[1].right).slice(0, 12).map(([x, b]) => ({ tag: x.tagName.toLowerCase(), cls: String(x.getAttribute('class') || ''), id: x.id, width: Math.round(b.width), right: Math.round(b.right) })) }; }""", li.get_attribute("id"))
             # `over` (the elements whose right edge passes the window) only explains a failure; the condition is unchanged
             if m["scroll"] > 0: m["culprits"] = pg.evaluate(CULPRITS_JS)   # only explains the failure below
-            expect(f"{page} {w} px: the open editor fits the exercise, no horizontal scroll, buttons 40 px", m["scroll"] <= 0 and m["inside"] and not m["small"], m)
+            if w == 360 and not (m["scroll"] <= 0 and m["inside"] and not m["small"]):
+                # KNOWN LIMITATION (teacher 2026-11-13): an editor opened on a wide window and then narrowed under ~400 px can widen the page by
+                # ~35 px (CI, intermittent; Abitti's toolbar rows are ~455 px). A phone opens the editor narrow, where it scrolls on its own row;
+                # that case is the blocking check below. This path is reported, not failed.
+                print(f"WARN {page} 360 px after opening wide (known limitation, not a failure): {m}")
+            else:
+                expect(f"{page} {w} px: the open editor fits the exercise, no horizontal scroll, buttons 40 px", m["scroll"] <= 0 and m["inside"] and not m["small"], m)
             if w in (360, 1280):
                 li.locator(".pad").scroll_into_view_if_needed()
                 shot = ROOT / "preview" / "writepad"; shot.mkdir(parents=True, exist_ok=True)
                 li.screenshot(path=str(shot / f"{page.replace('/', '_')}-{w}.png"))
         if page.split("/")[-1] == "fy1-1.html":   # fi, en and fi-easy
-            # the toolbar's own box, ten openings in a row, wide then narrow (360 px) (CI 2026-11-13: it sometimes ran past the window, 455 px wide rows
-            # inside it; the box is fixed to the window or, if a size container becomes its containing block, to that column)
+            # A phone opens the editor on a narrow window: ten openings in a row directly at 360 px (teacher 2026-11-13). The page must not scroll
+            # sideways (scrollWidth <= innerWidth), the buttons stay at least 40 px high, and the toolbar's own box (Abitti's rows are ~455 px wide,
+            # they scroll inside it) stays inside the window; if a size container becomes its containing block, it is fixed to that column.
             bad = []
             for k in range(10):
-                tp = ctx.new_page(); tp.set_viewport_size({"width": 1280, "height": 800}); tp.goto(BASE + page); tp.wait_for_load_state("load")
+                tp = ctx.new_page(); tp.set_viewport_size({"width": 360, "height": 800}); tp.goto(BASE + page); tp.wait_for_load_state("load")
                 tp.evaluate("document.querySelectorAll('#exercises details.level').forEach(d => { d.open = true; })")
                 l0 = tp.locator("#exercises li[id]:has(> .task)").first
                 l0.locator(".pad-open").scroll_into_view_if_needed(); l0.locator(".pad-open").click()
                 l0.locator(".rich-text-editor").wait_for(timeout=20000); tp.keyboard.type("v = s : t, joten "); tp.keyboard.press("Control+e"); tp.wait_for_timeout(100); tp.keyboard.type("v=s/t"); tp.keyboard.press("Escape"); tp.wait_for_timeout(400)
-                tp.set_viewport_size({"width": 360, "height": 800}); tp.wait_for_timeout(200)   # the failing path: opened wide, then narrow
-                r = tp.evaluate("""() => { const t = document.querySelector('.rich-text-editor-toolbar-root > div'), b = t && t.getBoundingClientRect();
+                r = tp.evaluate("""(id) => { const li = document.getElementById(id), t = document.querySelector('.rich-text-editor-toolbar-root > div'), b = t && t.getBoundingClientRect(),
+                        r = li.getBoundingClientRect(), e = li.querySelector('.rich-text-editor').getBoundingClientRect();
                     return { scroll: document.documentElement.scrollWidth - innerWidth, toolbar: !!t, left: b && Math.round(b.left), right: b && Math.round(b.right), width: b && Math.round(b.width),
-                             pos: t && getComputedStyle(t).position, parent: t && t.parentElement.className }; }""")
-                if not (r["toolbar"] and r["scroll"] <= 0 and r["left"] >= 0 and r["right"] <= 360):
+                             inside: e.left >= r.left - 1 && e.right <= r.right + 1,
+                             small: [...li.querySelectorAll('.pad-open,.pad-copy')].filter(x => x.getBoundingClientRect().height < 40).length }; }""", l0.get_attribute("id"))
+                if not (r["toolbar"] and r["scroll"] <= 0 and r["left"] >= 0 and r["right"] <= 360 and r["inside"] and not r["small"]):
                     if r["scroll"] > 0: r["culprits"] = tp.evaluate(CULPRITS_JS)
                     bad.append((k, r))
                 tp.close()
-            expect(f"{page} 360 px: the editor's toolbar box stays inside the window and the page does not scroll sideways, ten openings in a row", not bad, bad)
+            expect(f"{page} 360 px, opened on a narrow window like a phone: no horizontal scroll, buttons 40 px, toolbar inside the window, ten openings in a row", not bad, bad)
         expect(f"{page}: no script errors", not errs, errs)
         ctx.close()
     for page in sorted(p.relative_to(SITE).as_posix() for p in SITE.glob("**/*-sovella.html")):
