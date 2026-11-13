@@ -1,9 +1,4 @@
 VERDICT: DONE
 
-Teacher task 2026-11-13 (vaimennuskerroin), round 1. check_lesson.py fy8-12: all ok.
-
-- content/fi/FY8/fy8-12/lesson.md: in "Kaava: Gammasäteilyn vaimeneminen", after the half-value-thickness form, a new paragraph names "säteilyn vaimeneminen" and "vaimennuskerroin", with display LaTeX I = I_0 e^{-\mu d}, μ in 1/m or 1/cm, and μ = ln 2 / d_{1/2} derived in one step. One Tiivistelmä line extended.
-- content/en/FY8/fy8-12/lesson.md: the same (attenuation, attenuation coefficient).
-- content/fi-easy/FY8/fy8-12/lesson.md: the same in selkeä suomi (short sentences); Tiivistelmä extended.
-
-Not touched: exercises, inquiry, figures, sim, lesson-answers.py (no new numeric value).
+figures.py: energia band reversed (red 1,7 eV, violet 3,3 eV), figures regenerated into all languages.
+lesson.md (fi, en, fi-easy): mu unit as m^-1/cm^-1; half-value step as display block; Tiivistelmä chain split in two sentences (fi, en; fi-easy already split); HFIR caption names charged particles, mainly electrons; misconception limited to conventional sterilisation (cobalt-60); "arvioidaan lisäävän" for small doses. check_lesson.py all ok.

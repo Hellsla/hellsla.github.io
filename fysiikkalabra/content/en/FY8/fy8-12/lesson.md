@@ -247,7 +247,7 @@ The types of radiation (chapter *The atomic nucleus and radioactive decay*) diff
   <foreignObject x="224" y="347.5" width="311" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{ion pair: positive ion and}\ e^-$</div></foreignObject>
 </svg>
 
-<figure class="unit-photo"><img src="pics/fy8/hfir-refueling.webp" alt="A deep pool of water seen from above in blue light; at the bottom is a round reactor core giving off a bright blue glow, surrounded by round lids."><figcaption>The core of a research reactor at the bottom of a pool during refuelling. The blue glow is Cherenkov radiation: particles move through the water faster than light travels in water. The thick layer of water attenuates the radiation, so people can work at the edge of the pool.</figcaption></figure>
+<figure class="unit-photo"><img src="pics/fy8/hfir-refueling.webp" alt="A deep pool of water seen from above in blue light; at the bottom is a round reactor core giving off a bright blue glow, surrounded by round lids."><figcaption>The core of a research reactor at the bottom of a pool during refuelling. The blue glow is Cherenkov radiation: charged particles, mainly electrons, move through the water faster than light travels in water. The thick layer of water attenuates the radiation, so people can work at the edge of the pool.</figcaption></figure>
 
 ### Penetrating power
 **Penetrating power** tells how thick a layer of matter the radiation passes through. The more densely radiation ionises, the faster it gives up its energy and the thinner the layer that stops it. So alpha radiation has the smallest and gamma radiation the greatest penetrating power. The last column of the table tells what stops alpha and beta radiation and what attenuates gamma and neutron radiation effectively. X-radiation is photon radiation and behaves like gamma radiation.
@@ -341,7 +341,7 @@ The most harmful case for the body is when many ionisations occur within a short
 
 The type of radiation alone does not decide how dangerous a radioactive substance is, however. The total risk also depends on the activity of the substance and the energy of the radiation, on how much of the substance enters the body, in which organ it accumulates and how quickly it is removed, and on the half-life of the radionuclide. That is why internal radiation sources cannot be ranked by danger on the basis of the type of radiation alone.
 
-The effect of radiation on the body is described by the **absorbed dose**, which tells how much of the energy of radiation has been transferred to a kilogram of tissue. A large dose in a short time kills so many cells that the function of the tissue is disturbed. Small doses increase the risk of cancer. Doses, their units and protection from radiation are covered in the chapter *Radiation dose and radiation safety in Finland*.
+The effect of radiation on the body is described by the **absorbed dose**, which tells how much of the energy of radiation has been transferred to a kilogram of tissue. A large dose in a short time kills so many cells that the function of the tissue is disturbed. Small doses are estimated to increase the risk of cancer. Doses, their units and protection from radiation are covered in the chapter *Radiation dose and radiation safety in Finland*.
 
 ## Formula: Attenuation of gamma radiation
 
@@ -356,7 +356,11 @@ The attenuation of radiation can also be written with an exponential function th
 ```latex
 I = I_0 e^{-\mu d}
 ```
-where $\mu$ is the attenuation coefficient, with the unit $\tfrac{1}{\text{m}}$ or $\tfrac{1}{\text{cm}}$, and $d$ is the thickness of the barrier in the same length unit. When $d = d_{1/2}$ the intensity has halved: $\tfrac{I}{I_0} = \tfrac{1}{2} = e^{-\mu d_{1/2}}$. Taking the natural logarithm gives $-\ln 2 = -\mu d_{1/2}$, that is,
+where $\mu$ is the attenuation coefficient, with the unit $\text{m}^{-1}$ or $\text{cm}^{-1}$, and $d$ is the thickness of the barrier in the same length unit. When $d = d_{1/2}$ the intensity has halved:
+```latex
+\frac{I}{I_0} = \frac{1}{2} = e^{-\mu d_{1/2}}
+```
+Taking the natural logarithm gives $-\ln 2 = -\mu d_{1/2}$, that is,
 ```latex
 \mu = \frac{\ln 2}{d_{1/2}}
 ```
@@ -485,14 +489,14 @@ d = d_{1/2} \cdot \frac{\ln (I_0 : I)}{\ln 2}
 **Reasonableness.** Four half-value thicknesses, that is $22\,\text{mm}$, would let through $\left(\tfrac{1}{2}\right)^{4} = 6.25\,\%$ and five, that is $27.5\,\text{mm}$, about $3.1\,\%$. The target $5.0\,\%$ lies between these, and so does the thickness $24\,\text{mm}$.
 
 ## Common misconception
-Many people think that an irradiated object or food itself becomes radioactive. However, the gamma, X-ray and electron radiation used in sterilisation and medicine only ionises atoms or transfers energy to them; its energy is not enough to change nuclei, so the material does not become radioactive. For example, hospital supplies are sterilised with gamma radiation, and afterwards they are as safe to handle as before. Material can be made radioactive mainly by neutron radiation, whose neutrons are bound into nuclei (chapter *Fission, fusion and nuclear power*). What is harmful is that radioactive *material* gets onto the skin or into the body, not that an object has been in radiation.
+Many people think that an irradiated object or food itself becomes radioactive. However, the gamma, X-ray and electron radiation used in conventional sterilisation (for example the gamma radiation of cobalt-60) and in medicine only ionises atoms or transfers energy to them; its energy is not enough to change nuclei, so the material does not become radioactive. For example, hospital supplies are sterilised with gamma radiation, and afterwards they are as safe to handle as before. Material can be made radioactive mainly by neutron radiation, whose neutrons are bound into nuclei (chapter *Fission, fusion and nuclear power*). What is harmful is that radioactive *material* gets onto the skin or into the body, not that an object has been in radiation.
 
 Another mistake is to think that two half-value thicknesses stop all the gamma radiation. The second layer attenuates half of the radiation that *got through the first*, so a quarter gets through.
 
 ## Summary
 - Radiation is ionising when its particle or photon can remove an electron from an atom. For a photon the energy $E = hf$ decides: visible light does not ionise, X-rays and gamma radiation do.
 - Ionisation transfers the energy of radiation to matter; in air an ion pair takes on average $34\,\text{eV}$, so the number of ion pairs is $n_\text{i} = \tfrac{E}{W}$.
-- Alpha radiation ionises most densely and stops in paper, beta radiation stops in a few millimetres of aluminium, and gamma radiation is attenuated in lead and concrete: $I = I_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}} = I_0 e^{-\mu d}$, where $\mu = \tfrac{\ln 2}{d_{1/2}}$ is the attenuation coefficient.
+- Alpha radiation ionises most densely and stops in paper, beta radiation stops in a few millimetres of aluminium, and gamma radiation is attenuated in lead and concrete according to $I = I_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$. The same can be written $I = I_0 e^{-\mu d}$, where $\mu = \tfrac{\ln 2}{d_{1/2}}$ is the attenuation coefficient.
 - A GM tube counts ionising events with the help of electron avalanches, but it cannot distinguish the types of radiation. Background radiation is always included in a measurement.
 - A photon interacts with matter by photoelectric absorption (low energies, high atomic number), Compton scattering (medium energies) or pair production (above $1.022\,\text{MeV}$, high energies).
 - Radiation damages cells by ionising DNA directly and through the radicals of water. An alpha emitter is especially harmful inside the body, because it gives up its energy within a few cells. The total risk also depends on the amount of the substance, where it accumulates and how it is removed from the body.

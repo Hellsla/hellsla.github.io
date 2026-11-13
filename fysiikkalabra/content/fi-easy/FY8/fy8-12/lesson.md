@@ -257,7 +257,7 @@ Neutraalit **neutronit** ionisoivat samaan tapaan epäsuorasti. Ne törmäävät
   <foreignObject x="224" y="347.5" width="374" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{ionipari: positiivinen ioni ja}\ e^-$</div></foreignObject>
 </svg>
 
-<figure class="unit-photo"><img src="pics/fy8/hfir-refueling.webp" alt="Syvä vesiallas ylhäältä. Pohjalla on reaktori, josta loistaa sinistä valoa."><figcaption>Tutkimusreaktori vesialtaan pohjalla. Sininen valo syntyy, kun hiukkaset kulkevat vedessä nopeammin kuin valo vedessä. Paksu vesi vaimentaa säteilyä. Siksi altaan reunalla voi olla turvallisesti.</figcaption></figure>
+<figure class="unit-photo"><img src="pics/fy8/hfir-refueling.webp" alt="Syvä vesiallas ylhäältä. Pohjalla on reaktori, josta loistaa sinistä valoa."><figcaption>Tutkimusreaktori vesialtaan pohjalla. Sininen valo syntyy, kun varatut hiukkaset, enimmäkseen elektronit, kulkevat vedessä nopeammin kuin valo vedessä. Paksu vesi vaimentaa säteilyä. Siksi altaan reunalla voi olla turvallisesti.</figcaption></figure>
 
 ### Läpäisykyky
 **Läpäisykyky** kertoo, kuinka paksun ainekerroksen säteily läpäisee. Mitä tiheämmin säteily ionisoi, sitä nopeammin se luovuttaa energiansa. Silloin jo ohut kerros pysäyttää sen. Siksi alfasäteilyllä on pienin läpäisykyky ja gammasäteilyllä suurin.
@@ -363,7 +363,7 @@ Kehon ulkopuolella alfasäteily on lähes vaaratonta, koska se ei läpäise ihon
 
 Säteilylaji ei kuitenkaan yksin ratkaise, kuinka vaarallinen radioaktiivinen aine on. Kokonaisriski riippuu myös aineen aktiivisuudesta ja säteilyn energiasta. Siihen vaikuttaa myös, kuinka paljon ainetta elimistöön joutuu, mihin elimeen se kertyy ja kuinka nopeasti se poistuu. Lisäksi vaikuttaa radionuklidin puoliintumisaika. Siksi sisäisiä säteilylähteitä ei voi asettaa vaarallisuusjärjestykseen pelkän säteilylajin perusteella.
 
-Säteilyn vaikutusta elimistöön kuvataan **absorboituneella annoksella**. Se kertoo, kuinka paljon säteilyn energiaa on siirtynyt kilogrammaan kudosta. Suuri annos lyhyessä ajassa tappaa niin paljon soluja, että kudoksen toiminta häiriintyy. Pienet annokset lisäävät syövän riskiä. Annoksia, niiden yksiköitä ja säteilyltä suojautumista käsitellään luvussa *Säteilyannos ja säteilyturvallisuus Suomessa*.
+Säteilyn vaikutusta elimistöön kuvataan **absorboituneella annoksella**. Se kertoo, kuinka paljon säteilyn energiaa on siirtynyt kilogrammaan kudosta. Suuri annos lyhyessä ajassa tappaa niin paljon soluja, että kudoksen toiminta häiriintyy. Pienten annosten arvioidaan lisäävän syövän riskiä. Annoksia, niiden yksiköitä ja säteilyltä suojautumista käsitellään luvussa *Säteilyannos ja säteilyturvallisuus Suomessa*.
 
 ## Kaava: Gammasäteilyn vaimeneminen
 
@@ -384,9 +384,13 @@ Säteilyn vaimeneminen voidaan kirjoittaa myös toisella tavalla. Siinä käytet
 ```latex
 I = I_0 e^{-\mu d}
 ```
-Tässä $\mu$ on vaimennuskerroin. Sen yksikkö on $\tfrac{1}{\text{m}}$ tai $\tfrac{1}{\text{cm}}$. Esteen paksuus $d$ on samassa pituusyksikössä.
+Tässä $\mu$ on vaimennuskerroin. Sen yksikkö on $\text{m}^{-1}$ tai $\text{cm}^{-1}$. Esteen paksuus $d$ on samassa pituusyksikössä.
 
-Kun $d = d_{1/2}$, intensiteetti on puolittunut: $\tfrac{I}{I_0} = \tfrac{1}{2} = e^{-\mu d_{1/2}}$. Otetaan luonnollinen logaritmi. Silloin $-\ln 2 = -\mu d_{1/2}$ eli
+Kun $d = d_{1/2}$, intensiteetti on puolittunut:
+```latex
+\frac{I}{I_0} = \frac{1}{2} = e^{-\mu d_{1/2}}
+```
+Otetaan luonnollinen logaritmi. Silloin $-\ln 2 = -\mu d_{1/2}$ eli
 ```latex
 \mu = \frac{\ln 2}{d_{1/2}}
 ```
@@ -515,7 +519,7 @@ d = d_{1/2} \cdot \frac{\ln (I_0 : I)}{\ln 2}
 **Järkevyys.** Neljä puoliintumispaksuutta eli $22\,\text{mm}$ päästäisi läpi $\left(\tfrac{1}{2}\right)^{4} = 6{,}25\,\%$. Viisi puoliintumispaksuutta eli $27{,}5\,\text{mm}$ päästäisi läpi noin $3{,}1\,\%$. Tavoite $5{,}0\,\%$ on näiden välissä, ja niin on myös paksuus $24\,\text{mm}$.
 
 ## Yleinen virhekäsitys
-Moni ajattelee, että säteilytetty esine tai ruoka muuttuu itse radioaktiiviseksi. Steriloinnissa ja lääketieteessä käytetty gamma-, röntgen- ja elektronisäteily kuitenkin vain ionisoi atomeja tai siirtää niille energiaa. Sen energia ei riitä muuttamaan ytimiä, joten aine ei muutu radioaktiiviseksi. Esimerkiksi sairaalatarvikkeet steriloidaan gammasäteilyllä, ja ne ovat sen jälkeen yhtä turvallisia käsitellä kuin ennenkin.
+Moni ajattelee, että säteilytetty esine tai ruoka muuttuu itse radioaktiiviseksi. Tavallisessa steriloinnissa (esimerkiksi koboltti-60:n gammasäteily) ja lääketieteessä käytetty gamma-, röntgen- ja elektronisäteily kuitenkin vain ionisoi atomeja tai siirtää niille energiaa. Sen energia ei riitä muuttamaan ytimiä, joten aine ei muutu radioaktiiviseksi. Esimerkiksi sairaalatarvikkeet steriloidaan gammasäteilyllä, ja ne ovat sen jälkeen yhtä turvallisia käsitellä kuin ennenkin.
 
 Ainetta voi tehdä radioaktiiviseksi lähinnä neutronisäteily, koska neutronit sitoutuvat ytimiin (luku *Fissio, fuusio ja ydinvoima*). Haitallista on se, että radioaktiivista *ainetta* joutuu iholle tai elimistöön. Haitta ei johdu siitä, että esine on ollut säteilyssä.
 
