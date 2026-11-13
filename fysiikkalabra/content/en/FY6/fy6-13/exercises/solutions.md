@@ -219,3 +219,24 @@ $W = 7.2 \cdot 10^{-3}\,\text{J} = 7.2\,\text{mJ}$
 **Answer:** $6.9$, two significant figures like the values of the table. The ratio is a pure number with no unit.
 **Model answer c):** Substituting $C$ and $U$ into the formula of the energy gives $W = \tfrac{1}{8} \varepsilon_0 \varepsilon_\text{r} E_\text{max}^2 A d$, so with the same dimensions the energy is proportional to the quantity $\varepsilon_\text{r} E_\text{max}^2$. The relative permittivity of glass is $\tfrac{5.6}{2.1} = 2.7$ times that of Teflon, but the dielectric strength of Teflon is $\tfrac{60}{14} = 4.3$ times that of glass, and it enters the formula as a square: $4.3^2 = 18.4$. The ratio is $\tfrac{18.4}{2.7} \approx 6.9$: Teflon withstands a much greater voltage and therefore stores more energy, even though the capacitance of glass is greater.
 **Reasonableness:** For Teflon the voltage is $1500\,\text{V}$ and for glass $350\,\text{V}$, and the capacitances are $3.72\,\text{nF}$ and $9.92\,\text{nF}$. The ratio is obtained from these too: $\tfrac{3.72}{9.92} \cdot \left(\tfrac{1500}{350}\right)^2 = 0.375 \cdot 18.4 = 6.9$.
+
+## fy6-13-L1-10
+**Given:** plate area $A = 250\,\text{cm}^2$, insulator thickness $d = 0.10\,\text{mm}$, $\varepsilon_0 = 8.854 \cdot 10^{-12}\,\text{F/m}$ and from the table (MAFY table, *Eristeiden suhteellisia permittiivisyyksiä*) $\varepsilon_\text{r} = 2.3$ for polyethylene
+**Asked:** the capacitance $C$ in nanofarads
+**Principle:** The capacitance of a parallel-plate capacitor depends only on its construction: the area of the plates, the distance between them and the insulating material. The insulator multiplies the capacitance by $\varepsilon_\text{r}$ compared with air.
+**Formula:** $C = \dfrac{\varepsilon_0 \varepsilon_\text{r} A}{d}$
+**Conversions:** $A = 250\,\text{cm}^2 = 250 \cdot 10^{-4}\,\text{m}^2 = 0.025\,\text{m}^2$, $d = 0.10\,\text{mm} = 1.0 \cdot 10^{-4}\,\text{m}$ and finally $1\,\text{nF} = 10^{-9}\,\text{F}$
+**Substitution:** $C = \dfrac{8.854 \cdot 10^{-12}\,\text{F/m} \cdot 2.3 \cdot 0.025\,\text{m}^2}{1.0 \cdot 10^{-4}\,\text{m}} = 5.09 \cdot 10^{-9}\,\text{F} = 5.09\,\text{nF}$
+**Answer:** $C \approx 5.1\,\text{nF}$, two significant figures like the thickness and the table value $\varepsilon_\text{r} = 2.3$. The value of $\varepsilon_\text{r}$ is from the MAFY table *Eristeiden suhteellisia permittiivisyyksiä*; the answer is accepted within about $\pm 5\,\%$.
+**Reasonableness:** With air ($\varepsilon_\text{r} = 1$) the result would be $\tfrac{8.854 \cdot 10^{-12} \cdot 0.025}{1.0 \cdot 10^{-4}}\,\text{F} \approx 2.2\,\text{nF}$, and polyethylene multiplies it by $2.3$, so the result is about $5\,\text{nF}$. A thin insulator and a large area give nanofarads.
+
+## fy6-13-L2-08
+**Given:** graph: a straight line from the origin to the point $(120\,\mu\text{C};\ 8\,\text{V})$, charging voltage $U = 7.0\,\text{V}$
+**Asked:** the stored energy $W$ in microjoules
+**Principle:** The capacitance is the ratio of charge to voltage, which is constant, so the $(Q, U)$ graph is a straight line through the origin. The capacitance can therefore be found from any point on the line. The energy is calculated from the capacitance and the voltage.
+**Reading the graph:** The end point of the line is at the gridlines $Q = 120\,\mu\text{C}$ and $U = 8\,\text{V}$. The capacitance is calculated from this point, and the voltage $7.0\,\text{V}$ is given in the task.
+**Formula:** $C = \dfrac{Q}{U}$ and $W = \tfrac{1}{2} C U^2$
+**Conversions:** $Q = 120\,\mu\text{C} = 120 \cdot 10^{-6}\,\text{C}$ and finally $1\,\mu\text{J} = 10^{-6}\,\text{J}$
+**Substitution:** $C = \dfrac{120 \cdot 10^{-6}\,\text{C}}{8\,\text{V}} = 15 \cdot 10^{-6}\,\text{F}$ and $W = \tfrac{1}{2} \cdot 15 \cdot 10^{-6}\,\text{F} \cdot (7.0\,\text{V})^2 = 3.675 \cdot 10^{-4}\,\text{J} = 367.5\,\mu\text{J}$
+**Answer:** $W \approx 370\,\mu\text{J}$, two significant figures like the voltage $7.0\,\text{V}$.
+**Reasonableness:** The charge is $Q = CU = 15\,\mu\text{F} \cdot 7.0\,\text{V} = 105\,\mu\text{C}$, and the energy is $\tfrac{1}{2} QU = \tfrac{1}{2} \cdot 105\,\mu\text{C} \cdot 7.0\,\text{V} = 367.5\,\mu\text{J}$, the same result. It is less than $QU \approx 735\,\mu\text{J}$, as it should be.

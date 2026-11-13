@@ -186,6 +186,16 @@ def ex_qu():
     return f.svg()
 
 
+def ex_qu2():
+    f = new("fy613-exqu2", 340, "Kuvaaja mittakaavassa: toisen kondensaattorin jännite U voltteina sen varauksen Q funktiona "
+            "mikrocoulombeina, ruudukon välit 20 µC ja 1 V. Kuvaaja on suora, joka alkaa origosta ja päättyy pisteeseen "
+            "(120 µC; 8 V).")
+    ax = Axes(f, (92, 284), (476, 56), x=(0, 120), y=(0, 8), xticks=[20, 40, 60, 80, 100, 120],
+              yticks=[1, 2, 3, 4, 5, 6, 7, 8], xlabel=r"Q\ (\mu\text{C})", ylabel=r"U\ (\text{V})")
+    ax.line([(0, 0), (120, 8)], COLD, 3)
+    return f.svg()
+
+
 # --- opening illustration: a camera flash going off in a dim room ------------------------------------------------
 def hero():
     f = H.hero("fy613-hero", "Kuvitus: hämärässä huoneessa pöydällä on kolmijalan päällä kamera, jonka salamavalo "
@@ -236,7 +246,7 @@ def hero():
 
 
 FIGURES = {"hero": hero, "rakenne": structure, "lataus": charging, "eriste": dielectric, "energia": energy,
-           "ex-qu": ex_qu}
+           "ex-qu": ex_qu, "ex-qu2": ex_qu2}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "hero": "decorative",
@@ -245,4 +255,5 @@ REUSE = {
     "eriste": "reveals: with the same Q a dielectric weakens the field and lowers U (polarised molecules)",
     "energia": "reveals: W = 1/2 Q U as the area under the (Q, U) line, the mean voltage U/2",
     "ex-qu": "safe: a capacitor's (Q, U) line from the origin to (70 µC; 14 V), no energy or capacitance written",
+    "ex-qu2": "safe: a second capacitor's (Q, U) line from the origin to (120 µC; 8 V), no capacitance or energy written (REUSE: slope and energy are for the student to compute)",
 }
