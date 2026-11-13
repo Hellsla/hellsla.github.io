@@ -1,17 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: bf811b5954b48e62
-ROUND: 3
+CONTENT-HASH: 2d86ef406e58a1c7
+ROUND: 1
 
 ## Blocking
-(none) Delta of commit 3b0a55d57: the masses in the L2-08 model answer are now listed smallest first (kiehuva vesi 0,10 kg, jääpussi 0,50 kg, kattila 0,60 kg, teekannu 1,0 kg), matching "pienimmästä suurimpaan" used for the heat order. Reads clearly and consistently.
+(none)
 
 ## Polish
-- [Minor] "Lämmön järjestys on lähes päinvastainen" — the quantity is lämpömäärä; "Lämpömäärien järjestys on lähes päinvastainen" is more exact (the heat order is the reverse of the mass order except that jääpussi and kattila keep their places).
-- [Minor] The Arvio sentence is long; optional split after "paljon".
+- [Minor] fy3-7-L2-09 task text — the question comes first and the instructions trail ("Määritä … Käytä … Jään alkulämpötila on … Lue …"); suggest: "Pakastimesta otettua …:n jääpalaa lämmitetään. Jään alkulämpötila on $-16\,{}^\circ\text{C}$, ja kuvaajassa on jään lämpötila siirretyn energian funktiona. Lue kuvaajan alkuosasta jään lämmitykseen tarvittu lämpömäärä, kun jää lämpenee $0\,{}^\circ\text{C}$:seen. Mikä on jään ominaislämpökapasiteetti?" (situation first, question last).
+- [Minor] fy3-7/melting-curve — x-axis tick labels "40 80 120 … 320" are tight at the 664 px column; check at 360 px, or label every second one.
+- [Minor] fy3-7/melting-curve — the curve is red, the force colour; a temperature curve in the force colour is a project-wide convention question (approved figure), not asked to change.
 
 ## Checked
-- Render (own Playwright, 390 px, preview/fy3-7.html rebuilt with build.py fy3-7): L2-08 with ranks set, feedback unhidden, solution open; read the end of Periaate, the four Mallivastaus chains and the changed sentence. All chains and the unit-bearing masses fit; no katex overflow; scrollWidth 390.
-- Text only: the rest of the page unchanged since round 2 (PASS); hash at start and end bf811b5954b48e62.
+- Delta: opened fy3-7-open-exercises-1280-10 (L1-09 solution), fy3-7-open-exercises-L2-1280-12 (L2-09 with melting-curve graph, solution start) and -13 (solution end).
+- melting-curve: axes T (°C), Q (kJ), markers at the grid crossings (20 kJ; 0 °C) and (220 kJ; 0 °C), description matches and names no part; legible, nothing clipped.
+- Solutions: $2{,}1 \cdot 10^{3}$ stacked unit, chains aligned, case endings correct.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

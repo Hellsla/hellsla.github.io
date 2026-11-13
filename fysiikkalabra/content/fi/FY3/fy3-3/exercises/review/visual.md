@@ -1,21 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: e1dd7ab8f7baa8e3
+CONTENT-HASH: 22036945998ce665
 ROUND: 1
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] fy3-3-L1-09 — the distractors are all unit-algebra slips; none touches the chapter's warned mistake (Celsius instead of kelvin, or an unscaled proportionality). Acceptable for a level-1 units item; for pedagogy to judge.
-- [Minor] Inline \tfrac units in the options ($\tfrac{\text{kPa}}{\text{K}}$) are small at 390 px but legible; the display rows in the solution are clear.
+- [Minor] fy3-3-L2-08 — the task lists all five points in the text and also in the graph; the repetition is acceptable (aria/description parity) but the text alone could say "Kuvaajan pisteet:" less verbosely.
+- [Minor] fy3-3-L2-08 Vastaus — Sijoitus shows $54{,}5\,{}^\circ\text{C}$, answer $55\,{}^\circ\text{C}$; the rounding step could be written as "$\approx 55\,{}^\circ\text{C}$" in the chain.
 
 ## Checked
-- delta review 2026-11-07 round 4 (three small fixes): L1-04 substitution now $\Delta T = (45 - 20)\,\text{K} = 25\,\text{K}$, matching L2-01; the round-3 Minor note on it is resolved (source-checked, a one-line inline formula).
-- delta review 2026-11-07 round 3 (fixes to round 2 findings): L2-01 now $T_2 = (288 + 45)\,\text{K} = 333\,\text{K}$ (round-2 Minor fixed); L1-04 Kaava shows the constant cancelling in slash form, L2-04 ratio has $\theta/{}^\circ\text{C} + 273{,}15$ above and below. Opened fy3-3-fi-l3a-390 and -l3b-390: inline Kaava wraps at sensible points, the ratio display fits the card, no clipping.
-- delta review 2026-11-07 round 2 (follow-up consistency edits): every Kaava now $\tfrac{T}{\text{K}} = \tfrac{\theta}{{}^\circ\text{C}} + 273{,}15$ (and its solved forms), every substitution $T = (\ldots + 273{,}15)\,\text{K}$ / $\theta = (\ldots - 273{,}15)\,{}^\circ\text{C}$; read all hunks in the diff and opened fy3-3-fi-l2sol-390: aligned display, brackets and unit render cleanly, results unchanged.
-- Rendered fy3-3-L1-09 at 390 px with feedback and solution open (two tiles): $p = c\,T$, option fractions, K²/kPa in feedback, display chain $c = \dfrac{p}{T}$ and $[c] = \dfrac{\text{kPa}}{\text{K}}$, all KaTeX, upright units, decimal comma. No clipping, no horizontal overflow at 390 and 360 (measured).
-- The correct option is not identifiable by form (similar length, first of two fraction forms, wrong ones phrased alike); the Tarkistus line and the example values $120\,\text{kPa} : 300\,\text{K}$ fit the width.
-- Text only: the rest of the set (unchanged).
+- Delta: opened fy3-3-open-exercises-1280-9 (L1-10 solution), fy3-3-open-exercises-L2-1280-10 (L2-08 with extrapolation-points graph) and -11 (its solution).
+- Graph: blue markers without a fitted line, axes labelled p (kPa) and θ (°C), x range −100…100 so the extrapolation is visible; legible, nothing clipped.
+- Temperatures ${}^\circ\text{C}$ and K upright, fractions with units readable.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 4

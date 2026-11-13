@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: daa6fc4f95361ced
-Mode: full
-Round: 3
+CONTENT-HASH: 452c91f8e35f2872
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- [Minor] small tick labels of the fy3-9 pick-* graphs at 390 px; optional.
-- [Minor] (pre-existing, out of scope) fy3-13 lesson inquiry.json: the feedback chain "θ0 = 40 °C − 116 kPa / 0.367 … ≈ −276 °C" is wider than the phone; break it at the equals signs.
+- [Minor] fy3-13-L2-09 solution, Reading the graph — "between −260 … − 286 °C" is set with a binary minus ("− 286") and a gap after the ellipsis; write `-286\ \ldots\ -260\,{}^\circ\text{C}` (smaller first) or "from −286 to −260 °C".
+- [Minor] fy3-13-L1-09 solution, Reasonableness — "−195.8 °C: which fits, since…" has a colon before a "which" clause; use a comma ("−195.8 °C, which fits, since …").
+- [Minor] fy3-13-L2-09 solution, Substitution — the `\theta_0 = 0\,{}^\circ\text{C} - \dfrac{75\,\text{kPa}}{0.275\,\tfrac{\text{kPa}}{{}^\circ\text{C}}}` fraction is cramped (small stacked unit in the denominator); `0.275\,\text{kPa/}{}^\circ\text{C}` reads better.
 
 ## Checked
-- delta review 2026-11-07 round 2 (follow-up consistency edits): L1-08: correct option shortened, the teacher's full definition moved to the start of its feedback, answer equals the option text; opened fy3-13-en-l2opt-390. Options are now of similar length and the same "X, because/koska Y" pattern, so neither length nor form gives the answer away.
-- delta review 2026-11-07 (teacher's proofread replacement texts): L1-08: new answer/choice text, feedback and model answer read in exercises.json and solutions.md; opened fy3-13-en-a-390 and -1280 (choice wraps cleanly, no overflow; the capture shows the choice, the feedback was judged from source). Answer and choice text identical, terminology (mittausalue, lineaarinen riippuvuus) consistent.
-- Rebuilt fy3-9 and fy3-13; measured every exercise data caption of en and fi-easy pages at 390 px by script (all fit); opened crops of a two-line caption in fi-easy fy3-13 L3-04 and en fy3-9 L2-06 (wrapped, legible, table unharmed). Rounds 1-2 renders of the tasks and solutions (maths, units, layout) remain valid, as the content hash is unchanged by CSS. Hash re-run at the end: unchanged.
+- Delta: fy3-13-L1-09 (open-exercises-1280-10: answer, reasonableness; hint and task head follow the same pattern as the other chapters) and fy3-13-L2-09 (open-exercises-L2-1280-14, -15: task text, opened solution, the figure extrapolation-points shown under L2-10's card).
+- Figure extrapolation-points: p (kPa) and θ (°C) axes, ticks −100 … 100 with a 25 °C grid, five points as markers, no line drawn, so the extrapolation is left to the student; legible, answer not shown. The axis reaches below zero so the extrapolation range is visible (not to −273 °C: said in the task as extrapolation).
+- Typography: aligned chains, upright units, correct order; the set reads as one.
+- Hash with --lang en (452c91f8e35f2872) matches the packet.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish (English) 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

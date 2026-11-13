@@ -1,19 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 351a2dfbe36ac039
-Mode: delta (exercises, fi-easy), round 1. Changed: new task L2-08, situation/question paragraph splits, solutions.md for L2-08.
+CONTENT-HASH: f16c0757189dc471
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- [Minor] fy3-12 L3 ocean-warming task — "700 metres"/"365 days" ("700 metrin", "365 vuorokautta") are plain-text quantities in untouched reviewed text — set as $700\,\text{m}$ and $365\,\text{d}$ at the next edit.
+- [Minor] fy3-12-L1-09 solution, Järkevyys — "Teho $10\,\text{m}^2$:n alalta on pieni, koska ala on pieni" is circular — e.g. "Teho on pieni, koska seinää on vain $10\,\text{m}^2$."
 
 ## Checked
-- Rendered preview/fi-easy/fy3-12.html at 390 px with my own script (scratch trvis3x): fy3-12-L2-08 (ordering task, task card, answer and model solution) and the split tasks L2-01, L3-01..04, in default and answered/opened state.
-- The new L2-08 card opened in full: task text, options or statements, feedback blocks, Vastaus/Answer and model solution; formulas, units, fractions and the units with \cdot render as KaTeX, no red source, no clipping or horizontal overflow.
-- The paragraph splits read as situation, then data, then the question; nothing sideways when feedback opens.
-- Plain language holds: short sentences, terms explained where needed (e.g. "eli ei muutu", "massavirta eli kuinka monta kilogrammaa…"); case endings after the maths are correct ("$0\,{}^\circ\text{C}$:seen", "$2{,}00\,\textsf{l}$:n"). Decimal comma used throughout.
-- Figure and graph tasks were not changed by the diff; contact sheets are not used in this exercises-only delta.
+- Delta: fy3-12-L1-09 (card, closed Vihje box, open solution: open-exercises-1280-9, -10), fy3-12-L2-09 with the earth-flows figure and open solution (open-exercises-L2-1280-12, -13); the reworded Kuvaajan lukeminen line of the earlier earth-flows task reads consistently with the figure (arrow named by position). Figure: legible, labels LaTeX with units, the "?" arrow does not disturb the reflected-share task; chains, Finnish, layout fine.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

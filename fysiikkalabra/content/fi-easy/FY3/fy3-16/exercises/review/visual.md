@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 814ed3c8b96c2177
-Mode: delta
-Round: 1
+CONTENT-HASH: dad9473192fd14f5
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- none
+- [Minor] fy3-16-L2-10 melting-curve figure — the x-axis numbers `200 240 280 320` sit close together and the axis has no `0` at its origin — label every second gridline (`0`, `80`, `160`, `240`, `320`) when the figure is next touched (a figure the teacher approved, so not a blocker).
 
 ## Checked
-- Own 390 px render (scratch script, built page preview/fi-easy/fy3-16.html, every solution open): L2-08 (choices, answer, solution with aligned ratio), L3-01 task text. No stale shots/ in the packet; changed solutions.md text read in the open solution cards. Hash re-run at the end: unchanged.
-- Maths: KaTeX fractions, aligned substitutions, units upright with thin space, decimal comma consistent.
+- Delta: fy3-16-L1-09 solution (open-exercises-1280-10), fy3-16-L2-09 with the heating-line graph and open solution (open-exercises-L2-1280-12, -13), fy3-16-L2-10 with the melting-curve graph and open solution (-13, -14). Graphs: axes with quantity and unit, ticks, read points marked as circles, answers not given away; KaTeX chains, Finnish and layout intact; set reads as one. The L1-09 card's top (task text, Vihje) was not opened; the Vihje box was checked in sibling chapters.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 5

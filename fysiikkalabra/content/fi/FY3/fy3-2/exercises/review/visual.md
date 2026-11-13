@@ -1,17 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: f348009c527c1f49
-ROUND: 2
+CONTENT-HASH: 84f17883f8223bc3
+ROUND: 1
 
 ## Blocking
-(none) Round-1 Major resolved: the feedback of the correct choice is now only "Oikein: työ nelinkertaistuu."; the reason is no longer given away before the reason stage, and the correct reason is not the longest.
+(none)
 
 ## Polish
-- [Minor] fy3-2-L2-08 — still no figure; a small $(s, F)$ triangle would help (optional).
-- [Minor] Two reason feedbacks in a row begin "Väite on tosi, mutta…"; reads slightly mechanical.
+- [Minor] fy3-2-L2-09 Järkevyys — "($6\,\text{m}$ vs $4\,\text{m}$)" is English-style; "($6\,\text{m}$ ja $4\,\text{m}$)".
+- [Minor] fy3-2/pull-steps (reused, teacher-approved) — the force graph is orange, the project's acceleration colour; for science/convention: force is red elsewhere. No change asked of an approved figure.
+- [Minor] fy3-2-L1-09 task text — three sentences before the question; fine, but the formula sentence could sit after the lookup instruction.
 
 ## Checked
-- From renders (my own Playwright, 390 px, both stages and solution open): fy3-2-L2-08 first stage, choice feedback, reason stage and feedback; page scrollWidth 390, no overflow. Quantities in KaTeX.
-- From text only: the fixed reason feedbacks and the solution (unchanged in layout), the rest of the set.
+- Delta: opened fy3-2-open-exercises-1280-9 (L1-09, Vihje closed-style box, solution open), fy3-2-open-exercises-L2-1280-10 (L2-09 with pull-steps graph) and -11 (its solution).
+- pull-steps: axes with quantities and units (F (N), s (m)), grid 1 m / 5 N, step at 6 m shown dashed, endpoint markers; description matches and does not give the answer.
+- Solutions: chains in aligned rows, units upright, $7{,}8 \cdot 10^{3}$ with \cdot, answer set apart.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4
