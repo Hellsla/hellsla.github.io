@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: c140ae6575c8510f
+CONTENT-HASH: 58dc2743acb32b70
 SCOPE: delta added-exercise from f73c86410af7bc40 base 81db4a6fd727
+
 ## Blocking
-(none)
+None.
+
 ## Polish
-- fy4-10-L2-09 solutions.md (Järkevyys) — "samaa suuruusluokkaa kuin vaunun A massa, kuten nopeuksien muutoksista voi odottaa" is vague; say \text{B}/m_\text{A} = \Delta v_\text{A}/\Delta v_\text{B} = 0{,}6/1{,}0$.
-- fy4-10-L2-09 — a short note that the collision is not elastic (energy 0,184 J to 0,064 J) would use the graph further; optional.
-- fy4-10-L3-06 solutions.md (Järkevyys) — the loss formula m_B/(m_A+m_B) is not in the chapter; keep the explanation to the energies computed.
+1. solutions.md fy4-10-L3-06 Järkevyys - the factor m_B/(m_A+m_B) is not in the chapter; keep to the computed energies 0,054 J and 0,018 J. Optional.
+
 ## Checked
-- Round 1, delta: L2-09 and L3-06 judged in full.
-- L2-09: figure needed; the four velocities and the collision time are readable and the description gives them without the answer (0,30 kg). Sign of B (negative) is the trap the chapter prepares; solution shows conservation check 0,28 = 0,28.
-- L3-06: x-t slopes give 0,60 and 0,20 m/s (0,40 m over 2,0 s consistent with 1,0 to 3,0 s); m_B 0,60 kg, loss 0,036 J = two thirds. Two ideas (graph slope, conservation plus energy): level 3 fits.
-- Neither repeats L2-06 or L3-05; v-t and x-t give variety of graph type. Question last, Finnish correct.
-- No render opened; layout checks passed per packet.
+- Round 2, delta: the round-1 fixes judged in their context.
+- L2-09 (v-t, 0,30 kg) and L3-06 (x-t, 0,036 J) correct; figure descriptions give the grid scales and values without the answers and the tick labels are described.
+- No new task, figure or level change; set mix and counts unchanged from the passed version.
+- Language and case endings in the changed text are correct.

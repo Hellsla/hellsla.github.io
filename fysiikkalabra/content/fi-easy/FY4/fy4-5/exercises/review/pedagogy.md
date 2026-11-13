@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 689b91966f1464f6
+CONTENT-HASH: 1df22febe8b7cc20
 SCOPE: delta added-exercise from d3c1fc3f51b9ecfb base 7db0992d648a
 
 ## Blocking
 None.
 
 ## Polish
-1. fy4-5-L2-08 solution: the heading "Kuvaajan lukeminen" for a force diagram; "Kuvion lukeminen" fits better.
-2. Järkevyys uses ":" as division sign ("10 N : 2,5 kg"); write a fraction.
+1. solutions.md fy4-5-L2-08 Järkevyys - '10 N : 2,5 kg' uses a colon and 15,6 N and 5,7 N are not derived; add the square-root expression or drop the comparison.
 
 ## Checked
-- Level 2 fits: reading components from a grid, vector sum, Newton II; not a repeat of L1-02 (grid sum) or L2-04 (perpendicular forces).
-- Figure: description gives every endpoint in grid squares (5 right, 6 up; 2 left, 2 down) and the 2,0 N scale, no net force or acceleration.
-- Solution complete: components, conversion squares to newtons, Σ F = 6 N and 8 N, 10 N, a = 4,0 m/s², direction 53°, normal force and weight cancel explained.
-- Reasonableness check (10 N < 15,6 + 5,7 N; 6-8-10 triangle) sound.
-- Force diagram skill "equations" matches the task; answer unit and tolerance sensible.
+- Round 2, delta: the round-1 fixes judged in their context.
+- L2-08: task and solution use 'block/kappale'; direction 53 deg is stated in the answer line; components, 10 N and 4,0 m/s^2 verified.
+- Figure ruutu-vinot gives both arrows' end points in task description terms without net force or acceleration; fbd 'equations' practised.
+- No new task, figure or level change; set mix and counts unchanged from the passed version.
+- Language and case endings in the changed text are correct.

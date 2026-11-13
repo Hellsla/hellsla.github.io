@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: dd6ef145574391a4
+CONTENT-HASH: 87f657abf999e6b7
 SCOPE: delta added-exercise from 696dd89d4770c31a base 81db4a6fd727
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-1. L1-09 Answer: 's ~ 30 m (calculated 31 m)' and the stored answer 31.46 are confusing; give one value, 31 m.
-2. L1-09 text states a = mu g and s = v0^2/2a already; fine at level 1, but the solution then repeats the derivation; shorten.
-3. L3-06 asks 'how much greater' and needs two forces; consider asking for each and the difference as a step.
+1. solutions.md fy4-11-L3-06 Vastaus - capital after the comma ('10,5 kN, Massa ...'); write '10,5 kN. Massa ...'. Optional.
 
 ## Checked
-Added L1-09 (braking distance on asphalt, MAFY range), L2-09 ((t,v) area), L3-06 (average force from two (t,v) lines).
-- L2-09: rectangle plus triangle, nothing shaded in the figure, the 70 m comparison is a good check.
-- L3-06: two stopping times at grid crossings, impulse-momentum, ratio check 2.5; fits level 3 although it is a short task.
-- L1-09: asking for the greatest tabulated value removes the range ambiguity.
+- Round 2, delta: the round-1 fixes judged in their context.
+- L1-09 now has a real paragraph break; the answer reads 31 m with the range 0,5 to 0,8 stated correctly (50 m at the other end); liukukitkakerroin kept as the teacher's choice.
+- L2-09 (45 m) and L3-06 (10,5 kN) unchanged and correct; two figure tasks, descriptions give no answers.
+- No new task, figure or level change; set mix and counts unchanged from the passed version.
+- Language and case endings in the changed text are correct.

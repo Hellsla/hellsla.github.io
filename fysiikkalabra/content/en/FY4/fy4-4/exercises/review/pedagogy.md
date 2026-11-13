@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: f4d1896786d727cb
+CONTENT-HASH: 7441d559115f1f83
 SCOPE: delta added-exercise from 61bbd8dbfca10bbc base 81db4a6fd727
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-1. L1-10 Reasonableness uses a colon for division ('2.0 N : 4.0 m/s^2'); use a fraction.
+None.
 
 ## Checked
-Added L1-09 (Moon lander thrust, MAFY), L1-10 (mass from a/F graph), L2-09 (acceleration of B at 2.4 N).
-- L1-09: force diagram in the principle, F = m(g + a), the hover comparison repairs the 'thrust = weight' slip.
-- L1-10 and L2-09 share one figure with the masses unmarked; L2-09 needs the mass as an intermediate step, so it is a real step up and not a repeat.
-- Figure description gives every point and not the masses; solutions state which line is which by colour and by slope.
+- Round 2, delta: the round-1 fixes judged in their context.
+- L2-09 now asks cart A: slope 2,0 so m = 0,50 kg, a = 4,8 m/s^2; a student who copies 2,4 is wrong, so the mass step is needed (round-1 Polish 1 closed).
+- Solution reads A's point (3,0 N; 6,0 m/s^2) and the reasonableness line brackets 4 to 6, consistent with the answer 4,8 and answers.py.
+- No new task, figure or level change; set mix and counts unchanged from the passed version.
+- Language and case endings in the changed text are correct.

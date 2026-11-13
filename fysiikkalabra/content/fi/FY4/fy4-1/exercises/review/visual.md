@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 56b462a120e44526
+CONTENT-HASH: 9e3f1aafd212641a
 SCOPE: delta added-exercise from 6532dd8778633a6f base 7db0992d648a
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] fy4-1-L2-09 — the answer chip shows "8,0 m" while the justification says "= 8 m"; use one form.
+None.
 
 ## Checked
-- Captures open-exercises-L2-1280-9..12: L2-08 and L2-09 with their figures (ex-kolme-osaa, ex-kaksi-kappaletta), questions and full solutions. Axes carry quantity and unit, ticks readable, A/B labelled and coloured apart, no answer marked in the figures; typography, aligned rows and Finnish clean; the set reads as one.
+- Changed solution text of L2-08 and L2-09 (v_kv symbol, significant-figure reason) read in the diff; layout of the page unchanged. Capture of the changed solutions not separately opened.
+- Round 2: symbol v_kv set consistently in Kysytty, Kaava and Sijoitus; L2-09 justification now says the value is read from the graph.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 4

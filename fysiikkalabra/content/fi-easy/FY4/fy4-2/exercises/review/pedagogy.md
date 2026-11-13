@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 9b1085b913808538
+CONTENT-HASH: 2a10dc3b6c3bbf38
 SCOPE: delta added-exercise from c6b41b885c57e2a9 base 81db4a6fd727
 
 ## Blocking
 None.
 
 ## Polish
-1. fy4-2-L1-09 solution, Järkevyys: ":" as division sign ("2 · 20 m : 9,81 m/s²") reads oddly; write it as a fraction in the root, as in Sijoitus.
-2. fy4-2-L1-09 is a rearrangement plus a table lookup, light for level 1 but acceptable beside L1-03 (same formula, given g); the MAFY lookup is a new skill, which justifies it.
+1. solutions.md fy4-2-L1-09 Järkevyys - division still written with a colon (2 * 20 m : 9,81 m/s^2); use \dfrac. Optional.
 
 ## Checked
-- Task: situation, MAFY lookup explained ("koulun fysiikan taulukkokirja"), question last. Hint names the table section.
-- Solution complete: given with g = 24,79 m/s², free fall principle, h = ½gt² solved to t = √(2h/g) before numbers, no conversions, t = 1,27 s correct, tolerance ±4 % explained.
-- Reasonableness check compares with Earth (2,02 s, factor √2,5): correct.
-- No repeat of another task: only L1 task using another planet; Kuu appears in L2-04 with a different given.
+- Round 2, delta: the round-1 fixes judged in their context.
+- L1-09 significant-figure wording is now honest: four figures in the table value, three in the answer because tables differ in the fourth; consistent with the 4 % tolerance.
+- No new task, figure or level change; set mix and counts unchanged from the passed version.
+- Language and case endings in the changed text are correct.

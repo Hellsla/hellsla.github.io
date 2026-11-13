@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 8c528e6b3d93aece
+CONTENT-HASH: 0e1ca561eb3c7a3f
 SCOPE: delta added-exercise from 2af3ee47b4394d1d base 81db4a6fd727
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] fy4-4-L1-10 and L2-09 — both tasks reuse the same (ΣF, a) graph; fine, but the L1-10 Kuvaajan lukeminen could say "tumma suora" first as L2-09 does for the copper line.
+None.
 
 ## Checked
-- open-exercises-1280-9, -10 (L1-09 lunar descent solution, L1-10 graph and solution) and L2-11, L2-12 (L2-09 graph, solution). Axis quantities and units correct, markers on a straight line through the origin, A/B labelled directly, kN conversion and substitution aligned. Finnish clear.
+- fy4-4-L2-09 task, graph and solution (open-exercises-L2-1280-11 and -12): A steeper dark-grey, B copper, axes with quantity and unit, ticks readable, task and solution agree (4,8 m/s²), the figure does not give the answer away.
+- Round 2: L2-09 now asks for cart A; text, graph reading, substitution and Järkevyys all consistent.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 4

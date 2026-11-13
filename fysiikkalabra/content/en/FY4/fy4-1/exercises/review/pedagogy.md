@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: c501613fff0eea3f
+CONTENT-HASH: af340b69e0e4d6ab
 SCOPE: delta added-exercise from 0402e8c61e005ae8 base 7db0992d648a
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-1. fy4-1-L2-08 text: 'average speed' is defined in the question itself, good; consider noting that it differs from average velocity only if the lesson has not named it (the solution does).
+None.
 
 ## Checked
-Added L2-08 (average speed from a three-part (t,x) graph) and L2-09 (distance between two bodies from two lines). Both sit at level 2 and are not repeats of the worked example.
-- fy4-1-L2-08: figure gives 4/16/16/8 m at grid crossings; solution separates distance from displacement and the 0.4 m/s contrast is a good check.
-- fy4-1-L2-09: lines readable at grid crossings; absolute value justified by the crossing at 4 s; reasonableness gives a second route.
-- Neither figure description gives the answer away; set mix stays varied.
+- Round 2, delta: the round-1 fixes judged in their context.
+- L2-08 solution now names the average speed v_kv (v_sp in en) in Find, Formula and Substitution; it no longer collides with the displacement-based keskinopeus v_k, which closes my round-1 Polish 1.
+- L2-09 significant-figure sentence now says the values are read from the graph; correct.
+- No new task, figure or level change; set mix and counts unchanged from the passed version.
+- Language and case endings in the changed text are correct.
