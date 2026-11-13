@@ -237,6 +237,17 @@ $N = 1{,}5\,mg - mg$, eli $N = 0{,}5\,mg$
 
 Tukivoima osoittaa alas ja on puolet painosta, kuten kuviossa C. Kuviossa A tukivoima on piirretty ylöspäin kuin lattian tukivoima. Silloin kokonaisvoima olisi $G - N = 0{,}5\,G$ eikä $1{,}5\,G$. Kuviossa B ylöspäin osoittava keskipakoisvoima $\overline{F}_\text{kp}$ kumoaa kokonaisvoiman, vaikka vaunu kiihtyy. Mikään kappale ei myöskään vaikuta tällä voimalla. Kuviossa D nopeus on piirretty voimaksi, vaikka vaunuun ei vaikuta liikkeen suuntaista voimaa.
 
+## fy5-4-L2-09
+**Annettu:** kuvaajan piste $v = 20\,\text{m/s}$, $a_\text{n} = 5{,}0\,\text{m/s}^2$; auto on tasaisessa ympyräliikkeessä vaakasuorassa kaarteessa
+**Kysytty:** kaarteen säde $r$ yksikössä $\text{m}$
+**Periaate:** Auto on tasaisessa ympyräliikkeessä. Silloin normaalikiihtyvyys eli kohti keskipistettä osoittava kiihtyvyys on $a_\text{n} = \tfrac{v^2}{r}$. Kaikki käyrän pisteet kuuluvat samaan kaarteeseen. Siksi yksi luettu piste riittää säteen laskemiseen.
+**Kuvaajan lukeminen:** Merkitty piste on kohdassa, jossa pystysuora apuviiva $v = 20\,\text{m/s}$ ja vaakasuora apuviiva $a_\text{n} = 5{,}0\,\text{m/s}^2$ kohtaavat. Luetaan siitä nopeus ja kiihtyvyys. Säde lasketaan niistä.
+**Kaava:** $a_\text{n} = \dfrac{v^2}{r}$, josta $r = \dfrac{v^2}{a_\text{n}}$
+**Muunnokset:** Yksiköt ovat jo $\text{m/s}$ ja $\text{m/s}^2$. Muunnoksia ei tarvita.
+**Sijoitus:** $r = \dfrac{(20\,\text{m/s})^2}{5{,}0\,\text{m/s}^2} = \dfrac{400\,\text{m}^2/\text{s}^2}{5{,}0\,\text{m/s}^2} = 80\,\text{m}$
+**Vastaus:** $r = 80\,\text{m}$. Vastauksessa on kaksi merkitsevää numeroa, koska luettu kiihtyvyys $5{,}0\,\text{m/s}^2$ on kahdella numerolla.
+**Järkevyys:** Nopeudella $20\,\text{m/s}$ ($72\,\text{km/h}$) kiihtyvyys on vain noin $0{,}5\,g$. Kaarre on siis loiva, ja $80\,\text{m}$ sopii siihen. Tarkistus toisella pisteellä: nopeudella $10\,\text{m/s}$ kiihtyvyyden pitäisi olla $\tfrac{100}{80} = 1{,}25\,\text{m/s}^2$. Käyrä kulkee siinä arvojen $1$ ja $2$ välissä.
+
 ## fy5-4-L3-04
 **Annettu:** $m = 60{,}0\,\text{kg}$; alhaalla $v_1 = 27{,}2\,\text{m/s}$ ja $a_1 = 53{,}2\,\text{m/s}^2$; ylhäällä $v_2 = 14{,}0\,\text{m/s}$ ja $a_2 = 14{,}1\,\text{m/s}^2$; $g = 9{,}81\,\text{m/s}^2$; esimerkkiaineisto; ilmanvastus ja vierimisvastus jätetään huomiotta
 **Kysytty:** a) silmukan säde $r$; b) vaunun tukivoima $N$ matkustajaan ylhäällä ja alhaalla; c) pienin nopeus $v_\text{min}$ ylhäällä, yksikössä $\text{m/s}$. Vastauslaatikkoon tukivoima ylhäällä, yksikössä $\text{N}$.
@@ -299,3 +310,14 @@ Vaakasuorassa kaarteessa ($\alpha = 0$) olisi $v = \sqrt{\mu_0\,g\,r} = \sqrt{0{
 **Vastaus:** $v_\text{max} \approx 97\,\text{km/h}$. Vastauksessa on kaksi merkitsevää numeroa, kuten kulmassa $8{,}0\,{}^\circ$ ja kertoimessa $0{,}40$. Ilman kitkaa kaarre kulkisi nopeudella $v_0 \approx 48\,\text{km/h}$. Vaakasuorassa kaarteessa suurin nopeus olisi noin $81\,\text{km/h}$. Kallistus nostaa rajaa siis noin $16\,\text{km/h}$ eli noin viidenneksen.
 **Järkevyys:** Rajatapaus $\mu_0 = 0$ antaa $v_\text{max} = v_0$. Rajatapaus $\alpha = 0$ antaa vaakasuoran kaarteen tuloksen. Kaava toimii siis molemmissa. Tulos $97\,\text{km/h}$ on suurempi kuin $81\,\text{km/h}$ ja $48\,\text{km/h}$, kuten kuuluukin. Voimakuvion kitkan suuruus on $0{,}40\cdot N$. Tukivoima on suurempi kuin paino ($N \approx 1{,}07\,mg$, koska $N = \tfrac{mg}{\cos\alpha - \mu_0\sin\alpha}$), joten pystysuunnan tasapaino täsmää.
 **Mallivastaus perustelusta:** Kallistetulla tiellä tukivoima ei ole pystysuora. Se kallistuu kohti kaarteen keskipistettä. Sen vaakasuora komponentti antaa osan keskipisteeseen osoittavasta kokonaisvoimasta. Kitkan ei siis tarvitse tehdä koko työtä. Sama kitkakerroin riittää siksi suuremmalle nopeudelle. Jäisellä tai märällä tiellä kallistus voi olla ratkaiseva. Nopeudella $v_0$ kitkaa ei tarvita lainkaan.
+
+## fy5-4-L3-06
+**Annettu:** $m = 1200\,\text{kg}$; $v = 20\,\text{m/s}$; kuvaajasta tällä nopeudella $F = 8{,}0\,\text{kN}$; $g = 9{,}81\,\text{m/s}^2$; vaakasuora tie, kitka on ainoa vaakasuuntainen voima
+**Kysytty:** pienin lepokitkakerroin $\mu_0$ (ei yksikköä)
+**Periaate:** Kitka on ainoa vaakasuuntainen voima. Siksi se on kokonaisvoima kohti kaarteen keskipistettä. Tie on vaakasuora eikä auto kiihdy pystysuunnassa, joten tukivoima on $N = mg$. Auto pysyy tiellä, kun tarvittava kitka ei ole suurempi kuin suurin lepokitka $\mu_0 N$. Rajatapauksessa $F = \mu_0 N$.
+**Kuvaajan lukeminen:** Käyrälle merkitty piste on kohdassa, jossa apuviivat $v = 20\,\text{m/s}$ ja $F = 8{,}0\,\text{kN}$ kohtaavat. Pystyakselin yksikkö on kilonewton. Tarvittava kitka nopeudella $20\,\text{m/s}$ luetaan siis arvoksi $F = 8{,}0\,\text{kN}$.
+**Kaava:** $F = \mu_0 N$ ja $N = mg$, joten $\mu_0 = \dfrac{F}{mg}$
+**Muunnokset:** $F = 8{,}0\,\text{kN} = 8{,}0 \cdot 1000\,\text{N} = 8000\,\text{N}$
+**Sijoitus:** $\mu_0 = \dfrac{8000\,\text{N}}{1200\,\text{kg} \cdot 9{,}81\,\text{m/s}^2} = \dfrac{8000\,\text{N}}{11772\,\text{N}} = 0{,}6796$
+**Vastaus:** $\mu_0 \approx 0{,}68$. Vastauksessa on kaksi merkitsevää numeroa, koska luettu voima $8{,}0\,\text{kN}$ on kahdella numerolla.
+**Järkevyys:** Arvio: $mg \approx 12\,\text{kN}$, ja $8\,\text{kN}$ on noin kaksi kolmasosaa siitä. Siksi $\mu_0 \approx 0{,}67$. Kuivalla asfaltilla kerroin on yleensä $0{,}7$–$0{,}9$. Tulos on mahdollinen mutta lähellä rajaa. Märällä tiellä ($\mu_0 \approx 0{,}5$) auto ei pysyisi kaarteessa.

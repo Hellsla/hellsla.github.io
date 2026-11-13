@@ -5,8 +5,8 @@ its arrows drawn to scale and its physics checked as it is drawn (the sum of the
 The situation is a separate pictorial situation picture (tilannekuva) behind a dashed rule; no point-particle diagrams."""
 import math
 from figlib import (Fig, Axes, INK, MUTED, WHITE, RULE, RULE_LIGHT, SAND_LIGHT, SAND, GRAIN, GLASS, ICE, COLD, COLD_LIGHT,
-                    GOOD, GOOD_LIGHT, HEAT, HEAT_LIGHT, HOT_LIGHT, IRON, ALUMINIUM, METAL_EDGE, PAPER, n)
-from fbd import FBD, ground, VELOCITY, ACCEL
+                    GOOD, GOOD_LIGHT, HEAT, HEAT_LIGHT, HOT_LIGHT, IRON, ALUMINIUM, METAL_EDGE, PAPER, n, fi)
+from fbd import FBD, ground, VELOCITY, ACCEL, FORCE
 import herolib as H
 from herolib import grad
 
@@ -192,6 +192,32 @@ def kuvaaja():
     return f.svg()
 
 
+def kuvaaja_a():
+    """Task fy5-4-L2-09: a_n against v of an unknown level curve (r = 80 m, not stated); the marked point (20, 5,0) is read."""
+    f = Fig("fy54-kuvaaja-a", 360, "Kuvaaja mittakaavassa: auton normaalikiihtyvyys a n metreinä sekunnissa toiseen ratanopeuden v funktiona "
+            "kaarteessa. Vaaka-akselilla ratanopeus nollasta 30 metriin sekunnissa, apuviivat ja lukuarvot viiden välein; pystyakselilla "
+            "normaalikiihtyvyys nollasta 12:een, apuviivat yhden välein ja lukuarvot kahden välein. Oranssi käyrä nousee origosta yhä "
+            "jyrkemmin. Käyrälle on merkitty piste apuviivoin: nopeudella 20 normaalikiihtyvyys on 5.")
+    ax = Axes(f, (86, 300), (420, 60), x=(0, 30), y=(0, 12), xticks=[5, 10, 15, 20, 25, 30], yticks=list(range(1, 13)),
+              xlabel=r"v\ (\text{m/s})", ylabel=r"a_\text{n}\ (\text{m/s}^2)", yfmt=lambda t: fi(t) if t % 2 == 0 else "")
+    ax.curve(lambda v: v * v / 80, 0, 30, HEAT, 3)
+    ax.guide(20, 5.0); ax.point(20, 5.0, HEAT)
+    return f.svg()
+
+
+def kuvaaja_b():
+    """Task fy5-4-L3-06: the friction force a car of 1200 kg needs against v in a level curve (r = 60 m, not stated); point (20, 8,0)."""
+    f = Fig("fy54-kuvaaja-b", 360, "Kuvaaja mittakaavassa: kaarteessa ajavan auton tarvitsema kitkavoima F newtoneina tuhansina eli kilonewtoneina "
+            "ratanopeuden v funktiona. Vaaka-akselilla ratanopeus nollasta 25 metriin sekunnissa, apuviivat ja lukuarvot viiden välein; "
+            "pystyakselilla voima nollasta 12 kilonewtoniin, apuviivat yhden välein ja lukuarvot kahden välein. Punainen käyrä nousee "
+            "origosta yhä jyrkemmin. Käyrälle on merkitty piste apuviivoin: nopeudella 20 voima on 8.")
+    ax = Axes(f, (86, 300), (420, 60), x=(0, 25), y=(0, 12), xticks=[5, 10, 15, 20, 25], yticks=list(range(1, 13)),
+              xlabel=r"v\ (\text{m/s})", ylabel=r"F\ (\text{kN})", yfmt=lambda t: fi(t) if t % 2 == 0 else "")
+    ax.curve(lambda v: 1.2 * v * v / 60, 0, 25, FORCE, 3)
+    ax.guide(20, 8.0); ax.point(20, 8.0, FORCE)
+    return f.svg()
+
+
 def nyppyla():
     """Kaava: a car at the top of a bump and at the bottom of a dip at the same speed; N < G on the bump, N > G in the dip."""
     m, G, an = 10.0, 100.0, 4.0
@@ -374,7 +400,7 @@ def pick_nopeus():
                  "kyljestä lähtee sininen nopeuden nuoli v vaakasuoraan oikealle, yhtä pitkänä kuin tukivoima.", v_force=True,
                  wrong="the velocity v drawn as a force")
 
-FIGURES = {"hero": hero, "muutos": muutos, "kaarre": kaarre, "kuvaaja": kuvaaja, "nyppyla": nyppyla, "esimerkki": esimerkki,
+FIGURES = {"hero": hero, "muutos": muutos, "kaarre": kaarre, "kuvaaja": kuvaaja, "kuvaaja-a": kuvaaja_a, "kuvaaja-b": kuvaaja_b, "nyppyla": nyppyla, "esimerkki": esimerkki,
            "virhe": virhe, "valitse-a": valitse_a, "valitse-b": valitse_b, "valitse-c": valitse_c, "valitse-d": valitse_d,
            "malli-kiekko": malli_kiekko, "pick-alas": pick_alas, "pick-keskipako": pick_keskipako, "pick-ylos": pick_ylos,
            "pick-nopeus": pick_nopeus}
@@ -384,6 +410,8 @@ REUSE = {
     "muutos": "reveals: the velocity change and the normal acceleration of uniform circular motion point to the centre (a theory figure)",
     "kaarre": "reveals: the force diagram of a car in a level curve, friction towards the centre (a theory figure)",
     "kuvaaja": "reveals: a_n = v²/r against v for r = 50 m and 100 m (a theory graph)",
+    "kuvaaja-a": "safe: a_n(v) of a level curve, point (20 m/s, 5,0 m/s²) marked, radius not stated (task fy5-4-L2-09)",
+    "kuvaaja-b": "safe: friction force F(v) of a 1200 kg car in a level curve, point (20 m/s, 8,0 kN) marked, radius not stated (task fy5-4-L3-06)",
     "nyppyla": "reveals: N < G at the top of a bump and N > G at the bottom of a dip (a theory figure)",
     "esimerkki": "reveals: the force diagram of the worked example (car in a level curve)",
     "virhe": "safe: a deliberately wrong diagram (an invented centrifugal force) for error-finding; its description lists the arrows, not the error",

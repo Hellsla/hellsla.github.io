@@ -276,6 +276,15 @@
           "feedback": "Velocity is not a force, so its arrow $\\overline{v}$ does not belong in a free-body diagram. The motion does not need a force pushing forward: the car keeps its speed, and the forces only turn the direction of the velocity towards the centre."
         }
       ]
+    },
+    {
+      "id": "fy5-4-L2-09",
+      "level": 2,
+      "text": "The graph shows the centripetal acceleration $a_\\text{n}$ of a car as a function of its speed $v$ in a level, circular bend. The car goes through the bend at a steady speed. One point is marked on the curve. Read the coordinates of the point from the graph and calculate the radius of the bend. The answer box takes the radius in metres.",
+      "figure": "fy5-4/kuvaaja-a",
+      "answer": 80.0,
+      "unit": "m",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -351,6 +360,15 @@
       "unit": "km/h",
       "tolerance": 0.02,
       "fbd": "equations"
+    },
+    {
+      "id": "fy5-4-L3-06",
+      "level": 3,
+      "text": "The mass of a car is $1200\\,\\text{kg}$, and it drives through a level, circular bend at a steady speed. The graph shows the friction force $F$ the car needs in the bend as a function of its speed $v$. The car goes through the bend at $20\\,\\text{m/s}$. Read the required friction force from the graph and calculate the least coefficient of static friction $\\mu_0$ that keeps the car on the road. Assume that friction is the only horizontal force and that the greatest static friction is $\\mu_0 N$. The answer box takes the value of the coefficient.",
+      "figure": "fy5-4/kuvaaja-b",
+      "answer": 0.68,
+      "unit": "",
+      "tolerance": 0.02
     }
   ]
 }

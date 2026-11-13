@@ -1,14 +1,17 @@
-VERDICT: PASS
-CONTENT-HASH: 5cd3571020c4ddc7
+VERDICT: FAIL
+CONTENT-HASH: c95e1237c66d7edf
+SCOPE: delta added-exercise from 5cd3571020c4ddc7 base 81db4a6fd727
 
 ## Blocking
+- fy5-14/exercises/exercises.json (L2-08) — **A** (assessment). The check cannot tell a right answer from a wrong one. The answer is 519 Hz, and the page always accepts at least ±2 % (±10 Hz). It therefore accepts the classic wrong side, 523 + 4 = 527 Hz (1,5 % off), and any beat reading from 0 to 14 Hz. So neither the figure reading nor the higher/lower decision is assessed. No tolerance can fix this. Fix: ask for the number the figure gives, the beat frequency f_h, and keep "which fork is 519 Hz" as the reasoning step in the solution. Alternatively, ask "Kuinka monta hertsiä toisen ääniraudan taajuus poikkeaa 523 hertsistä, ja kumpaan suuntaan?" with a choice for the direction.
 
 ## Polish
+- lessons/FY5/fy5-14/figures.py (beats_task docstring) — The docstring says 440 Hz and 444 Hz, but the task uses 523 Hz and 519 Hz. The drawn envelope (Δf = 4 Hz) fits both, but the generator should name the task's numbers (guardrail "a figure generator holds the same numbers").
+- fy5-14/exercises/solutions.md (L1-10, Vastaus) — "kolme merkitsevää numeroa kuten kuvaajasta luettu taajuus": the reading is exact to the 100 Hz grid lines. Say instead that the peaks lie on grid lines.
 
 ## Checked
-- light delta review (teacher 2026-11-07), LOPS extension marking: diff vs origin/main: only the text prefix 'Syventävä tehtävä.' / 'Extension task.' on L1-04, L2-03, L2-04, L2-05, L2-07, L3-01, L3-04 and L2-03's core flag removed; data, answers, solutions and answers.py unchanged. The seven are exactly the tasks that calculate a Doppler frequency, so they match the lesson's move of the formulas to Lisätiedoksi; the remaining Doppler task L1-07 (core) is qualitative (constant, higher pitch; fronts denser in front) and needs no formula. No physics changed.
-- Round 2 (commit 4ff432a8f), checked against the text only, not renders. "Voimakkain piikki" replaces the ambiguous "Korkein piikki" in the task, in statement 1's feedback and in the solution, so "korkea" no longer means both pitch and peak height. The physics is unchanged: pitch comes from f1 = 330 Hz.
-- Statement 2 ("Saman sävelen soittava huilu kuulostaa erilaiselta kuin viulu, koska sen yläsävelet ovat eri voimakkaita.") is true and no longer hedged, which removes the round-1 form cue. The statements now have no hedges at all.
-- Statement 4's feedback now ends "kasvaa äänen voimakkuus, ei korkeus", the lesson's own wording.
-- The verdicts are unchanged and right: 2 and 5 true; 1, 3 and 4 false. The three warned mistakes are still covered, and each statement's feedback gives its reason.
-- The solution matches the task (voimakkain piikki). answers.py is unchanged, and running it with python3 -I gives the same 16 numeric answers. The rest of the set is unchanged.
+- L1-10: the spectrum figure has peaks at 200·k Hz (k = 1…5) and its strongest at 400 Hz. The peaks are narrow (σ 9 Hz) and lie on the 100 Hz grid lines, so f₁ = 200 Hz is read exactly. The strongest-peak trap is the intended one, and the solution names it.
+- L1-10: the claim that the perceived pitch follows f₁ is correct. Nothing in the figure or its alt text gives f₁ away.
+- L2-08: the envelope |cos(π·4t)| has maxima every 0,25 s, so f_h = 4,0 Hz and f₁ = 523 − 4 = 519 Hz (recomputed). The alt text gives the same moments.
+- answers.py agrees with exercises.json. The notation f_h = |f₂ − f₁| and f_n = nf₁ is the lesson's.
+- The hash was the same at the start and at the end.

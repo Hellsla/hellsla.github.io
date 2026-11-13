@@ -237,6 +237,17 @@ $N = 1.5\,mg - mg$, that is, $N = 0.5\,mg$
 
 The support force points down and is half of the weight, as in diagram C. In diagram A the support force has been drawn upwards like that of a floor; then the net force would be $G - N = 0.5\,G$ and not $1.5\,G$. In diagram B the upward centrifugal force $\overline{F}_\text{cf}$ cancels the net force although the car accelerates, and no object acts with such a force. In diagram D the velocity has been drawn as a force, although no force acts on the car in the direction of motion.
 
+## fy5-4-L2-09
+**Given:** the point of the graph $v = 20\,\text{m/s}$, $a_\text{n} = 5.0\,\text{m/s}^2$; uniform circular motion in a level bend
+**Find:** the radius of the bend $r$ in $\text{m}$
+**Principle:** The car is in uniform circular motion, so the centripetal acceleration is $a_\text{n} = \tfrac{v^2}{r}$. Every point of the curve belongs to the same bend, so one point read from the graph is enough to find the radius.
+**Reading the graph:** The marked point is where the vertical gridline $v = 20\,\text{m/s}$ meets the horizontal gridline $a_\text{n} = 5.0\,\text{m/s}^2$. The speed and the acceleration are read there, and the radius follows from them.
+**Formula:** $a_\text{n} = \dfrac{v^2}{r}$, so $r = \dfrac{v^2}{a_\text{n}}$
+**Conversions:** The units are already $\text{m/s}$ and $\text{m/s}^2$, so no conversion is needed.
+**Substitution:** $r = \dfrac{(20\,\text{m/s})^2}{5.0\,\text{m/s}^2} = \dfrac{400\,\text{m}^2/\text{s}^2}{5.0\,\text{m/s}^2} = 80\,\text{m}$
+**Answer:** $r = 80\,\text{m}$, two significant figures as in the acceleration read, $5.0\,\text{m/s}^2$.
+**Reasonableness:** A bend where $20\,\text{m/s}$ ($72\,\text{km/h}$) gives an acceleration of only about $0.5\,g$ is a gentle one, and $80\,\text{m}$ fits it. Check with another point: at $10\,\text{m/s}$ the acceleration should be $\tfrac{100}{80} = 1.25\,\text{m/s}^2$, and the curve passes between $1$ and $2$ there.
+
 ## fy5-4-L3-04
 **Given:** $m = 60.0\,\text{kg}$; at the bottom $v_1 = 27.2\,\text{m/s}$ and $a_1 = 53.2\,\text{m/s}^2$; at the top $v_2 = 14.0\,\text{m/s}$ and $a_2 = 14.1\,\text{m/s}^2$; $g = 9.81\,\text{m/s}^2$; sample data; air resistance and rolling resistance are neglected
 **Find:** a) the radius $r$ of the loop; b) the support force $N$ of the car on the passenger at the top and at the bottom; c) the smallest speed $v_\text{min}$ at the top, in $\text{m/s}$. The answer box takes the support force at the top, in $\text{N}$.
@@ -299,3 +310,14 @@ In a horizontal bend ($\alpha = 0$) we would have $v = \sqrt{\mu_0\,g\,r} = \sqr
 **Answer:** $v_\text{max} \approx 97\,\text{km/h}$, two significant figures like the angle $8.0\,{}^\circ$ and the coefficient $0.40$. Without friction the bend could be taken at $v_0 \approx 48\,\text{km/h}$, and in a horizontal bend the greatest speed would be about $81\,\text{km/h}$, so the banking raises the limit by about $16\,\text{km/h}$, that is about a fifth.
 **Reasonableness:** The limiting case $\mu_0 = 0$ gives $v_\text{max} = v_0$, and the limiting case $\alpha = 0$ gives the result for the horizontal bend, so the formula works in both. The result $97\,\text{km/h}$ is greater than $81\,\text{km/h}$ and $48\,\text{km/h}$, as it should be. In the force diagram the magnitude of the friction is $0.40\cdot N$ and the support force is greater than the weight ($N \approx 1.07\,mg$, because $N = \tfrac{mg}{\cos\alpha - \mu_0\sin\alpha}$), so the balance in the vertical direction checks out.
 **Model answer on the justification:** On a banked road the support force is not vertical but tilts towards the centre of the bend. Its horizontal component gives a part of the net force pointing towards the centre, so the friction does not have to do all of the work. The same coefficient of friction is therefore enough for a greater speed, and on an icy or wet road the banking can be decisive. At the speed $v_0$ no friction is needed at all.
+
+## fy5-4-L3-06
+**Given:** $m = 1200\,\text{kg}$; $v = 20\,\text{m/s}$; from the graph at this speed $F = 8.0\,\text{kN}$; $g = 9.81\,\text{m/s}^2$; level road, friction is the only horizontal force
+**Find:** the least coefficient of static friction $\mu_0$ (no unit)
+**Principle:** Friction is the only horizontal force, so it is the net force towards the centre of the bend. The road is level and there is no vertical acceleration, so the support force is $N = mg$. The car stays on the road as long as the friction needed does not exceed the greatest static friction $\mu_0 N$; in the limiting case $F = \mu_0 N$.
+**Reading the graph:** The marked point on the curve is where the gridlines $v = 20\,\text{m/s}$ and $F = 8.0\,\text{kN}$ meet (the vertical axis is in kilonewtons). The friction needed at $20\,\text{m/s}$ is read as $F = 8.0\,\text{kN}$.
+**Formula:** $F = \mu_0 N$ and $N = mg$, so $\mu_0 = \dfrac{F}{mg}$
+**Conversions:** $F = 8.0\,\text{kN} = 8.0 \cdot 1000\,\text{N} = 8000\,\text{N}$
+**Substitution:** $\mu_0 = \dfrac{8000\,\text{N}}{1200\,\text{kg} \cdot 9.81\,\text{m/s}^2} = \dfrac{8000\,\text{N}}{11772\,\text{N}} = 0.6796$
+**Answer:** $\mu_0 \approx 0.68$, two significant figures as in the force read, $8.0\,\text{kN}$.
+**Reasonableness:** Estimate: $mg \approx 12\,\text{kN}$, and $8\,\text{kN}$ is about two thirds of it, so $\mu_0 \approx 0.67$. Dry asphalt typically gives $0.7$–$0.9$, so the result is possible but close to the limit; on a wet road ($\mu_0 \approx 0.5$) the car would not stay in the bend.

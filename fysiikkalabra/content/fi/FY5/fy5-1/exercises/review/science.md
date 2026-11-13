@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 23f25874b515562a
+CONTENT-HASH: cccfc1b2c9ae2b50
+SCOPE: delta added-exercise from 23f25874b515562a base 81db4a6fd727
 
 ## Blocking
 
 ## Polish
-- exercises.json:114 (L1-09) — a unit check cannot separate $\tfrac{M}{d}$ from $\tfrac{M}{d\sin\alpha}$, so the chapter's main warned mistake (using $d$ in place of the arm $r$) cannot be a distractor here. The "long wrench increases the force" mistake is caught (in the feedback of $Md\sin\alpha$). Acceptable for type 7; no change needed.
+- exercises.json:145 (L1-10): this figure has only one reading, the arm of 3 squares, and L1-04 uses the same figure for that same reading. L1-10 only reverses the unknown (F from M instead of M from F), so the figure work is a repeat. It gives nothing of L1-04 away, because the task text states no arm and no moment of L1-04. Acceptable. If the figure needs a new reading, ask instead for the force at a point P' at another height.
 
 ## Checked
-- Diff against HEAD~1: only L1-09 (type 7, Yksikkö ja dimensio) is new; every other task is byte-identical to the set that passed earlier.
-- answers.py run once (`python3 -I`); every numeric answer recomputed and inside its tolerance (L1-09 has no number).
-- L1-09 physics: $M = Fd\sin\alpha$ gives $F = \tfrac{M}{d\sin\alpha}$. The units of all four options are right in the options, the feedback and the solution: N·m², N, Nm, 1/N. Exactly one option is correct.
-- Form: the four expressions are equally short, and two of them are fractions, so the correct one cannot be spotted by its form. The correct option's feedback does not go beyond the task.
-- Notation $M$, $d$, $\alpha$ and $r = d\sin\alpha$ is the lesson's. The task stays inside fy5-1.
-- Formula chains checked from the text only (no render): every expression is a short inline expression, under 300 px at 390 px width.
+- The hash was the same at the start and at the end. Only L1-10 was judged, as the delta packet says.
+- Recomputed from the figure data in `figures.py`. P lies 4 squares right of O and 3 squares above it, and the horizontal line of action passes through P, so the arm is 3 · 0,10 m = 0,30 m. Then F = M/r = 21 Nm / 0,30 m = 70 N, which equals answers.py and exercises.json.
+- The trap is right: the bar length is 5 squares (3-4-5), and using 0,50 m would give 42 N, as the reasonableness check says.
+- Sig figs: M = 21 Nm has 2, so the answer 70 N has 2. A student who rounds stays well inside the 2 % tolerance.
+- The figure's description holds the same information as the drawing. Neither the figure nor the description gives the arm or the answer.
+- Notation ($M = Fr$, the arm $r$ as the perpendicular distance from O to the line of action) is the brief's. The task stays inside fy5-1.
+- The solution has all seven parts. F is solved in symbols first. The reasonableness check is a real check: it multiplies back and compares with the bar-length mistake.

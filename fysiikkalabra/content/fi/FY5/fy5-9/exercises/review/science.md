@@ -1,17 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 628ca4af401209e3
+CONTENT-HASH: 1d761ff1cb9a18e2
+SCOPE: delta added-exercise from 628ca4af401209e3 base 81db4a6fd727
 
 ## Blocking
 
 ## Polish
-- fy5-9/exercises/exercises.json:20 (L2-08, correct reason and reason 1 feedback) and solutions.md:191 — "jousen voima riippuu vain poikkeamasta" and "Jousen voima −kx on Kuussa sama". For a vertical spring, the spring force at equilibrium equals the weight, which is smaller on the Moon. It is the net restoring force about the shifted equilibrium that is −kx. Write "jousivärähtelijän palauttava voima $-kx$ riippuu vain poikkeamasta tasapainoasemasta", which matches the lesson's "paino siirtää vain tasapainoasemaa".
-- exercises.json:20, choice 4 feedback — "Tässä on sekoitettu massa ja paino" does not describe the mistake. The mistake is assuming that the pendulum depends on mass. Suggest: "Tässä on oletettu, että heilurinkin jaksonaika riippuu massasta."
+- exercises.json:12 (L1-09) and answers.py header: the set now gives Mars two values, 3,72 m/s² (MAFY, L1-09) and 3,71 m/s² (L2-04 and the docstring "Mars 3,71"). The L1-09 solution explains that table values differ, so this is acceptable. Updating the docstring would avoid confusion.
+- `fy5-9/kuvaaja-k` is also the figure of a Tarkista osaamisesi check (figures.py docstring). I cannot open inquiry.json, so please confirm that the check does not ask for k from m = 0,150 kg (L2-09) or for E from k = 120 N/m (L1-10).
+- solutions.md (L2-09): reading T over two periods (0,80 s / 2) is a more accurate reading than reading one period. Optional.
 
 ## Checked
-- New task L2-08 (type 1, two-stage): √(9,81/1,62) = 2,461, so T_K = 2,46 s. The spring period stays 1,00 s, because T = 2π√(m/k) has no g. The answer string equals the correct option.
-- Exactly one option and one reason are correct. Reason 4 is a true statement that does not explain the answer, as the type requires. The correct option's feedback gives the numbers but not the reason.
-- The distractors catch the lesson's warned mass idea (choice 4, reason 3) and a missing square root (×6). Lengths and hedging are similar across the options, and no option stands out by form.
-- The assumptions are stated in the task: small swings, no air resistance, the same length, spring and masses.
-- The phantom-aligned ratio chain in the solution is three short lines. From the text it fits 300 px. I did not render it.
-- answers.py ran once. All numeric answers agree with exercises.json within tolerance.
-- The hash was the same at the start and at the end.
+- The hash was the same at the start and at the end. Only L1-09, L1-10 and L2-09 were judged.
+- Recomputed: L1-09 gives 2π√(1,00/3,72) = 3,258 s; L1-10 gives ½·120·0,030² = 0,054 J; L2-09 gives 4π²·0,150/0,40² = 37,01 N/m. All three equal answers.py.
+- Figure data: x = 3 cos(2πt/0,40) cm gives A = 3,0 cm on a labelled tick and maxima at 0, 0,40 and 0,80 s on the grid. The description gives the same values. L1-10 reads A and L2-09 reads T, so neither gives the other away.
+- MAFY task L1-09: 3,72 m/s² is the VERIFIED row fy5-9, and the hint names only the table. The ±4 % in the solution matches `tolerance` 0.04. The small-swing condition is stated.
+- Sig figs: L1-10 has 2 (A = 3,0 cm), L2-09 has 2 (T = 0,40 s; the answer 37 is inside 2 %), and L1-09 has 3.
+- L1-10 is like L1-04 (same k) but reads A from a graph, so it is not a repeat.
+- Notation ($T = 2\pi\sqrt{m/k}$, $E = \tfrac12 kA^2$, l, g) is the brief's.
