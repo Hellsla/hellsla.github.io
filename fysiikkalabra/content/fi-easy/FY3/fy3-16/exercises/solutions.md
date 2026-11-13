@@ -224,12 +224,12 @@ Yhteensä $Q = 21{,}32 \cdot 10^{9}\,\text{J}$, ja teho $P = \dfrac{21{,}32 \cdo
 ## fy3-16-L1-09
 **Annettu:** veden massa $m = 0{,}30\,\text{kg}$, lämpötila $100\,{}^\circ\text{C}$. Taulukosta (MAFY-taulukko, aineiden olomuodon muutokset, vesi) $r = 2260\,\text{kJ/kg}$.
 **Kysytty:** höyrystymiseen sitoutuva lämpö $Q$ kilojouleina
-**Periaate:** Vesi on jo kiehumispisteessä. Siksi sen lämpötila ei muutu. Kaikki lämpö kuluu olomuodon muutokseen. Ominaishöyrystymislämpö $r$ kertoo, kuinka paljon lämpöä tarvitaan yhden kilogramman höyrystämiseen. Lämpö otetaan kiukaan kivistä. Energia säilyy.
+**Periaate:** Vesi on jo kiehumispisteessä. Siksi sen lämpötila ei muutu. Kaikki lämpö kuluu olomuodon muutokseen. Ominaishöyrystymislämpö $r$ kertoo, kuinka paljon lämpöä tarvitaan yhden kilogramman höyrystämiseen. Lämpö otetaan keittolevyltä. Energia säilyy.
 **Kaava:** $Q = rm$
 **Muunnokset:** Ei tarvita. Luku $r$ on yksikössä $\text{kJ/kg}$ ja massa on kilogrammoina. Tulos tulee suoraan kilojouleina.
 **Sijoitus:** $Q = 2260\,\dfrac{\text{kJ}}{\text{kg}} \cdot 0{,}30\,\text{kg} = 678\,\text{kJ}$
 **Vastaus:** $Q \approx 680\,\text{kJ}$. Vastaus annetaan kahdella merkitsevällä numerolla, kuten massa $0{,}30\,\text{kg}$. Arvo $r = 2260\,\text{kJ/kg}$ on MAFY-taulukosta (aineiden olomuodon muutokset, vesi). Vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
-**Järkevyys:** Karkea arvio: $2300\,\text{kJ/kg} \cdot 0{,}3\,\text{kg} \approx 690\,\text{kJ}$. Höyrystyminen sitoo yli viisi kertaa enemmän lämpöä kuin saman veden lämmittäminen $0\,{}^\circ\text{C}$:sta $100\,{}^\circ\text{C}$:seen. Lämmittämiseen kuluisi $0{,}30\,\text{kg} \cdot 4{,}19\,\text{kJ/(kg}\cdot\text{K)} \cdot 100\,\text{K} \approx 126\,\text{kJ}$. Siksi löylyvesi viilentää kiuasta voimakkaasti.
+**Järkevyys:** Karkea arvio: $2300\,\text{kJ/kg} \cdot 0{,}3\,\text{kg} \approx 690\,\text{kJ}$. Höyrystyminen sitoo yli viisi kertaa enemmän lämpöä kuin saman veden lämmittäminen $0\,{}^\circ\text{C}$:sta $100\,{}^\circ\text{C}$:seen. Lämmittämiseen kuluisi $0{,}30\,\text{kg} \cdot 4{,}19\,\text{kJ/(kg}\cdot\text{K)} \cdot 100\,\text{K} \approx 126\,\text{kJ}$. Siksi veden höyrystäminen vaatii paljon enemmän energiaa kuin sen lämmittäminen.
 
 ## fy3-16-L2-09
 **Annettu:** kuvaajasta luettuna lämpötila nousee pisteestä $(0\,\text{s};\ 20\,{}^\circ\text{C})$ pisteeseen $(180\,\text{s};\ 60\,{}^\circ\text{C})$. Lisäksi $m = 2{,}0\,\text{kg}$ ja $P = 400\,\text{W}$.
