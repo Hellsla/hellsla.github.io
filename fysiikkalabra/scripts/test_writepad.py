@@ -162,7 +162,10 @@ with sync_playwright() as pw:
             pg.set_viewport_size({"width": w, "height": 800}); pg.wait_for_timeout(200)
             m = pg.evaluate("""(id) => { const li = document.getElementById(id), ed = li.querySelector('.rich-text-editor'), r = li.getBoundingClientRect(), e = ed.getBoundingClientRect();
                 return { scroll: document.documentElement.scrollWidth - innerWidth, inside: e.left >= r.left - 1 && e.right <= r.right + 1,
-                         small: [...li.querySelectorAll('.pad-open,.pad-copy')].filter(b => b.getBoundingClientRect().height < 40).length }; }""", li.get_attribute("id"))
+                         small: [...li.querySelectorAll('.pad-open,.pad-copy')].filter(b => b.getBoundingClientRect().height < 40).length,
+                         over: [...document.querySelectorAll('body *')].map(x => [x, x.getBoundingClientRect()]).filter(([x, b]) => b.right > innerWidth + 0.5)
+                             .sort((a, b) => b[1].right - a[1].right).slice(0, 12).map(([x, b]) => ({ tag: x.tagName.toLowerCase(), cls: String(x.getAttribute('class') || ''), id: x.id, width: Math.round(b.width), right: Math.round(b.right) })) }; }""", li.get_attribute("id"))
+            # `over` (the elements whose right edge passes the window) only explains a failure; the condition is unchanged
             expect(f"{page} {w} px: the open editor fits the exercise, no horizontal scroll, buttons 40 px", m["scroll"] <= 0 and m["inside"] and not m["small"], m)
             if w in (360, 1280):
                 li.locator(".pad").scroll_into_view_if_needed()
