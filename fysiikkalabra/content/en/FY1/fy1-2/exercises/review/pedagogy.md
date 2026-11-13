@@ -1,13 +1,16 @@
-VERDICT: FAIL
-CONTENT-HASH: 5e975748c76234a9
+VERDICT: PASS
+CONTENT-HASH: 61f5aabd12ab2d28
 
 ## Blocking
-- exercises.json fy1-2-L1-10 text — the round-1 reorder left a broken sentence: "...in the MAFY table (mafytaulukot.fi) and The travel time is $t = \tfrac{s}{c}$, and the distance is converted to metres first." (dangling "and", capital T) — fix: "...in the MAFY table (mafytaulukot.fi). The travel time is $t = \tfrac{s}{c}$, and the distance is converted to metres first. Calculate how long the signal takes to travel that distance."
+- none
 
 ## Polish
 - none
 
 ## Checked
-- Question now last as its own sentence (the intent of the change is right); only the join above is broken.
-- solutions.md L1-10 Answer: 1.28 s to three significant figures, justified by four-figure data; arithmetic 3.844e8/2.998e8 = 1.28 verified; consistent with the answer field 1.28.
-- Rest of the set unchanged since the pass.
+- exercises.json fy1-2-L1-10: the broken join is fixed; the sentence order is now situation, lookup, hint, question last as its own sentence.
+- answer 1.282 s: 3.844e8 / 2.998e8 = 1.2822, so it is correct to four significant figures; tolerance 0.04 stays about 3 %, inside the stated 4 %.
+- solutions.md L1-10: the substitution gives 1.282 s, and the answer line justifies four significant figures by the four-figure data. The conversion step (km to m) is explained before the substitution.
+- The reasonableness check (a little over a second) agrees with the result.
+- The rest of the set is unchanged since the earlier pass.
+- Note: the packet contained no SCOPE line, so none is written on line 3.

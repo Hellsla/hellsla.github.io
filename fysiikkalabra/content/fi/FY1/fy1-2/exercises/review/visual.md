@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: a34be413af2946f5
-SCOPE: delta — MAFY-taulukkotehtävä fy1-2 (teksti, ratkaisu) ja opettajan hyväksymät tehtäväkuvat (kuvat vain asettelun osalta); kierros 2
+CONTENT-HASH: f3218e7a2ffa30c3
+SCOPE: delta — MAFY-taulukkotehtävä fy1-2-L1-10 (vastaus 1,282 s, ratkaisu); kierros 3
 
 ## Blocking
 - none
 
 ## Polish
-- none (round 1 polish done: $t = \tfrac{s}{c}$ is now a fraction and the question is last).
+- none
 
 ## Checked
-- fy1-2-open-exercises-1280-9 and -10: task 2-10 (text: situation, formula, question last) and its opened solution (Sijoitus rows, Vastaus with the significant-figure reason as its own paragraph, Järkevyys); layout intact, no overflow, units in LaTeX.
+- fy1-2-open-exercises-1280-9 and -10 (fresh, hash f3218e7a2ffa30c3): task 2-10 with its solution open. Text (situation, $t = \tfrac{s}{c}$, question last) unchanged and fine. The top answer chip, Sijoitus rows, Vastaus ($t \approx 1{,}282\,\text{s}$), the significant-figure paragraph ("Neljällä merkitsevällä numerolla", consistent with four-figure data) and Järkevyys all show 1,282 s consistently. Decimal comma, units upright in LaTeX, rows aligned, nothing clipped or overflowing.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 · accessibility 4
