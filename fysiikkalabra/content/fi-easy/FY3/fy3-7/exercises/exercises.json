@@ -36,7 +36,7 @@
     {
       "id": "fy3-7-L1-05",
       "level": 1,
-      "text": "Pakastimesta otettua $0{,}60\\,\\text{kg}$:n jääpalaa lämmitetään. Kuvaajassa on jään lämpötila siirretyn energian funktiona. Määritä kuvaajan avulla jään ominaissulamislämpö. Jään alkulämpötila on $-16\\,{}^\\circ\\text{C}$. Lue kuvaajasta lämpömäärä, jonka jää vastaanottaa lämmetessään $0\\,{}^\\circ\\text{C}$:seen.",
+      "text": "Pakastimesta otettua $0{,}60\\,\\text{kg}$:n jääpalaa lämmitetään. Kuvaajassa on jään lämpötila siirretyn energian funktiona. Määritä kuvaajan avulla jään ominaissulamislämpö. Lue tarvittavat arvot kuvaajasta.",
       "figure": "fy3-7/melting-curve",
       "answer": 333,
       "unit": "kJ/kg",
@@ -298,7 +298,7 @@
     {
       "id": "fy3-7-L2-09",
       "level": 2,
-      "text": "Pakastimesta otettua $0{,}60\\,\\text{kg}$:n jääpalaa lämmitetään. Kuvaajassa on jään lämpötila siirretyn energian funktiona. Määritä kuvaajan avulla jään ominaislämpökapasiteetti. Käytä kuvaajan alkuosaa, jossa jään lämpötila nousee. Lue tarvittavat arvot kuvaajasta.",
+      "text": "Pakastimesta otettua $0{,}60\\,\\text{kg}$:n jääpalaa lämmitetään. Kuvaajassa on jään lämpötila siirretyn energian funktiona. Määritä kuvaajan avulla jään ominaislämpökapasiteetti. Käytä kuvaajan alkuosaa, jossa jään lämpötila nousee. Jään alkulämpötila on $-16\\,{}^\\circ\\text{C}$. Lue kuvaajasta lämpömäärä, jonka jää vastaanottaa lämmetessään $0\\,{}^\\circ\\text{C}$:seen.",
       "figure": "fy3-7/melting-curve",
       "answer": 2083.3,
       "unit": "J/(kg·K)",

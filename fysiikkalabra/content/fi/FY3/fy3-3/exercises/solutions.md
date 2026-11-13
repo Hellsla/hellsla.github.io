@@ -89,7 +89,7 @@
 **Järkevyys:** Lämpötila $35\,{}^\circ\text{C}$ on $35\,\%$ matkasta $0\,{}^\circ\text{C}$:sta $100\,{}^\circ\text{C}$:een, joten paineen pitää olla $35\,\%$ matkasta välillä $90{,}0\ldots123\,\text{kPa}$: $90{,}0 + 0{,}35 \cdot 33 = 101{,}55\,\text{kPa}$. Tulos on pisteiden paineiden välissä ja alle välin keskiarvon $106{,}5\,\text{kPa}$.
 
 ## fy3-3-L2-03
-**Annettu:** tehtävän mittapisteistä pisteet $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$ ja $(100\,{}^\circ\text{C};\ 102{,}5\,\text{kPa})$; paine riippuu lämpötilasta lineaarisesti, myös mittausalueen ulkopuolella
+**Annettu:** kuvaajasta luettuna pisteet $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$ ja $(100\,{}^\circ\text{C};\ 102{,}5\,\text{kPa})$; paine riippuu lämpötilasta lineaarisesti, myös mittausalueen ulkopuolella
 **Kysytty:** paine $p$ lämpötilassa $\theta = -100\,{}^\circ\text{C}$ kilopascaleina
 **Periaate:** Jäykässä suljetussa astiassa kaasun määrä ja tilavuus pysyvät samoina, joten paine riippuu vain lämpötilasta. Pisteet ovat suoralla, joten suoraa voidaan jatkaa mittausalueen ulkopuolelle eli ekstrapoloida.
 **Kuvaajan lukeminen:** Mittauspisteet ovat lämpötiloissa $0\ldots 100\,{}^\circ\text{C}$. Ensimmäinen piste on ruudukon risteyksessä $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$, ja viimeinen piste on hieman $100\,\text{kPa}$:n viivan yläpuolella, $102{,}5\,\text{kPa}$. Näistä kahdesta pisteestä lasketaan suoran kulmakerroin, ja suoraa jatketaan vasemmalle lämpötilaan $-100\,{}^\circ\text{C}$. Piirtämällä suora silmämääräisesti saa arvon $45$–$50\,\text{kPa}$, joka hyväksytään.
