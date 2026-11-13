@@ -1,16 +1,15 @@
-VERDICT: FAIL
-CONTENT-HASH: 7c11a520814a1acb
+VERDICT: PASS
+CONTENT-HASH: fbb3881a3468f340
+SCOPE: delta added-exercise from 5cd3571020c4ddc7 base 81db4a6fd727
 
 ## Blocking
-- exercises.json:315–316 (L2-08, vaihtoehto 531 Hz) — A, arviointi: palaute selittää virheen väärin. "Voimakkaiden hetkien välit kahden kappaleen välein" antaisi jaksoksi 0,50 s ja huojuntataajuudeksi 2 Hz, ei 8 Hz. Arvo 8 Hz syntyy, jos myös hiljaiset kohdat lasketaan voimakkaiksi hetkiksi (väli 0,125 s) tai jos huojuntataajuudeksi oletetaan 2Δf. Lisäksi palaute ei käsittele vaihtoehdon toista väitettä, että ääniraudan taajuus oli korkeampi. — Korjaus: "Tämä tulee, kun myös hiljaiset kohdat lasketaan voimakkaiksi hetkiksi. Voimakkaiden hetkien väli on 0,25 s, joten f_h = 4 Hz. Lisäksi vaha laskee taajuutta, ja huojunta nopeutui, joten äänirauta oli matalampi kuin 523 Hz."
 
 ## Polish
 - lessons/FY5/fy5-14/figures.py (beats_task, docstring) — docstringissä lukee 440 Hz ja 444 Hz, mutta tehtävä puhuu 523 Hz:n ääniraudasta. Kuvassa ei ole taajuuksia, joten oppilas ei näe ristiriitaa.
 
 ## Checked
-- Hash oli sama alussa ja lopussa. Arvioin vain tehtävät L1-10 ja L2-08 (kierros 3).
-- L1-10: piikit ovat kohdissa 200·k Hz, joten f₁ = 200 Hz ja f₇ = 1400 Hz. Tulos on sama kuin answers.py:ssä. Tehtävä kysyy nyt suuretta, jota inquiry-tarkistus ei kysy (siellä spektri-f1…f5 ja suhde), joten toistoa ei ole.
-- L2-08 on nyt valintatehtävä. Huojuntataajuus 4 Hz (inquiryssä huojunta-fh) on vain välivaihe. Ratkaisevaa on vahaehto: vaha laskee taajuutta f_x, ja huojunta nopeutui, joten f_x < 523 Hz ja f_x = 519 Hz. Fysiikka on oikein, ja tehtävässä on vain yksi oikea vaihtoehto.
-- Vaihtoehdon 527 Hz ja vaihtoehdon 523 Hz palautteet ovat oikein.
-- Kuvan voimakkaat hetket ovat kohdissa 0; 0,25; …; 1,00 s, koska verhokäyrä on |cos(4πt)|. Alt-tekstissä on samat hetket.
-- L1-10:n merkitsevät numerot ja toleranssi 2 % sopivat. Järkevyystarkistus (1000 Hz + 2·200 Hz) on oikein.
+- Hash oli sama alussa ja lopussa. Kierros 4: arvioin tehtävät L1-10 ja L2-08.
+- L2-08:n 531 Hz -vaihtoehdon palaute on korjattu. Arvo 8 Hz tulee nyt oikein siitä, että hiljaiset kohdat lasketaan voimakkaiksi (väli 0,125 s). Palaute selittää myös, miksi korkeampi taajuus ei sovi vahakokeeseen: erotus olisi pienentynyt ja huojunta hidastunut.
+- L2-08: f_h = 1/0,25 s = 4 Hz. Vaha laskee taajuutta ja huojunta nopeutuu, joten f_x = 523 − 4 = 519 Hz. Tehtävässä on vain yksi oikea vaihtoehto, ja jokaisen väärän vaihtoehdon palaute on oikein.
+- L1-10: f₁ = 200 Hz, joten f₇ = 1400 Hz. Inquiry ei kysy tätä suuretta, joten toistoa ei ole.
+- Kuvien lukemat ja alt-tekstit vastaavat figures.py:n dataa (piikit 200·k Hz, verhokäyrä |cos(4πt)|).
