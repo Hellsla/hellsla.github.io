@@ -97,6 +97,37 @@ def align_equals(tex):
     return m.group(1) + "".join(rows) + m.group(3)
 
 
+WIDE_MAX = 62        # visible characters (vis_len) a row joined for a wide screen may have: it must fit a 768 px column
+
+
+def join_wide(tex):
+    """An aligned block whose chains the source split by hand (`&a \\\\ &\\quad = b`, teacher 2026-11-13, fy3-6): the
+    same block with each such continuation joined onto the row before it (`&a = b`), as long as the joined row stays
+    within WIDE_MAX, or None when nothing joins. The source is never changed; build.py shows this form on a wide screen
+    and the form as written on a phone (.mj-wide / .mj-narrow in site.css). Only rows that start `&\\quad =` (or
+    `\\approx`) join, and the row break after the last joined row (`\\\\[6pt]`) is kept."""
+    m = re.fullmatch(r"(\s*\\begin\{aligned\}\s*)(.*?)(\s*\\end\{aligned\}\s*)", tex, re.S)
+    if not m: return None
+    parts = re.split(r"(\\\\(?:\[[^\]]*\])?\s*)", m.group(2))
+    cells, seps = parts[0::2], parts[1::2] + [""]
+    out, out_seps, joined = [], [], False
+    for cell, sep in zip(cells, seps):
+        c = re.match(r"\s*&\s*\\quad\s*((?:=|\\approx)\s.*)", cell, re.S) if out else None
+        if c and not re.search(r"&|\\begin|\\end", c.group(1)) and vis_len(out[-1]) + vis_len(c.group(1)) + 2 <= WIDE_MAX:
+            out[-1] = out[-1].rstrip() + " " + c.group(1).strip() + " "; out_seps[-1] = sep; joined = True
+        else: out.append(cell); out_seps.append(sep)
+    if not joined: return None
+    return m.group(1) + "".join(c + s for c, s in zip(out, out_seps)) + m.group(3)
+
+
+def wide_narrow_html(tex):
+    """Display maths `tex` as both forms when join_wide changes it: `<span class="mj-wide">$$…$$</span><span
+    class="mj-narrow">$$…$$</span>`; site.css shows one of them by the width of the screen. Otherwise just `$$tex$$`."""
+    wide = join_wide(tex)
+    if not wide: return None
+    return f'<span class="mj-wide">$${align_equals(wide)}$$</span><span class="mj-narrow">$${align_equals(tex)}$$</span>'
+
+
 def split_list(tex):
     """An inline list of values, `p = 203;\\ 159;\\ 134\\,\\text{kPa}`, as one formula per item ("$p = 203$; $159$;
     …") so a phone can wrap between the items; the semicolons are the list's punctuation, so the meaning is unchanged.
@@ -218,6 +249,11 @@ if __name__ == "__main__":                                          # quick self
     assert _top_relations(r"a \leq b") == [] and _top_relations(r"a \le b")
     assert align_equals("\\begin{aligned}\n&Q = c m \\\\\n&= 4 \\\\[6pt]\n&\\quad + 1\n\\end{aligned}") == "\\begin{aligned}\nQ &= c m \\\\\n&= 4 \\\\[6pt]\n&\\quad + 1\n\\end{aligned}"
     assert split_list(r"p = 203;\ 159;\ 66\,\text{kPa}") == r"$p = 203$; $159$; $66\,\text{kPa}$" and split_list(r"\{a;b\}") is None
+    j = join_wide("\\begin{aligned}\n&a b \\\\\n&\\quad = c d \\\\[6pt]\n&e = f\n\\end{aligned}")
+    assert j == "\\begin{aligned}\n&a b = c d \\\\[6pt]\n&e = f\n\\end{aligned}", j                 # a hand-split chain joins, the gap stays
+    assert join_wide("\\begin{aligned}\n&a \\\\\n&\\quad \\cdot b\n\\end{aligned}") is None          # only a continuation with a relation
+    assert join_wide("\\begin{aligned}\n&" + "x" * 50 + " \\\\\n&\\quad = " + "y" * 20 + "\n\\end{aligned}") is None   # too wide stays two rows
+    assert wide_narrow_html("\\begin{aligned}\n&a \\\\\n&\\quad = b\n\\end{aligned}").count("$$") == 4
     b = display_chains(r" $14\,\text{GWh} = {14 \cdot 10^{6}}\,\text{kWh}$ ja $5{,}0\,\text{MW} = 5{,}0 \cdot 1000\,\text{kW} = 5000\,\text{kW}$.")
     assert b.startswith('<div class="eq-chain') and "ja" not in b and b.count("eq-row") == 3 and "eq-row gap" in b, b
     print("ok")

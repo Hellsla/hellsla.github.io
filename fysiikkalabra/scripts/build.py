@@ -312,7 +312,8 @@ def render_md(text, **kw):
     maths = []
     def stash(m):
         x = m.group(0)
-        if x.startswith("$$"): x = "$$" + mathlayout.align_equals(x[2:-2]) + "$$"   # equals signs of a calculation in one column
+        if x.startswith("$$"):                                                       # equals signs of a calculation in one column; a chain split by hand in the source is one row on a wide screen
+            x = mathlayout.wide_narrow_html(x[2:-2]) or "$$" + mathlayout.align_equals(x[2:-2]) + "$$"
         else: x = mathlayout.split_list(x[1:-1]) or x                                # a list of values may wrap between its items
         maths.append(x); return f"MATHTOKEN{len(maths) - 1}X"
     text = re.sub(r"\$\$.*?\$\$|\$[^$\n]+?\$", stash, text, flags=re.S)
