@@ -231,6 +231,25 @@ def balance_points():
     return f.svg()
 
 
+def force_angle():
+    """Task figure: force on a straight wire (I = 6,0 A, l = 0,25 m in the field) against the angle α between wire and field,
+    six measured points (scatter about ±0,01 N) and the fitted curve F = F_max sin α with F_max = 0,45 N (a grid point at 90°).
+    No B, no formula, no F_max written."""
+    f = Fig("fy74-force-angle", 340, "Kuvaaja mittakaavassa: homogeenisessa magneettikentässä olevaan suoraan johtimeen "
+            "kohdistuva voima F newtoneina johtimen ja kentän välisen kulman alfa funktiona asteina. Kuusi mittauspistettä "
+            "kulmilla 15, 30, 45, 60, 75 ja 90 astetta, voimat 0,12; 0,22; 0,32; 0,39; 0,44 ja 0,45 N, sekä pisteisiin "
+            "sovitettu tasaisesti nouseva käyrä, joka alkaa origosta ja kulkee ruudukon pisteen (90 astetta; 0,45 N) kautta. "
+            "Ruudukon väli on 10 astetta ja 0,05 N.")
+    ax = Axes(f, (96, 290), (470, 56), x=(0, 90), y=(0, 0.5), xticks=[10 * k for k in range(1, 10)],
+              yticks=[0.05 * k for k in range(1, 11)], xlabel=r"\alpha\ (^\circ)", ylabel=r"F\ (\text{N})",
+              xfmt=lambda v: fi(v) if round(v) % 30 == 0 else "",
+              yfmt=lambda v: fi(round(v, 2), 1) if round(v / 0.05) % 2 == 0 else "")
+    ax.curve(lambda a: 0.45 * math.sin(math.radians(a)), 0, 90, HOT, 3)
+    for a, F in ((15, 0.12), (30, 0.22), (45, 0.32), (60, 0.39), (75, 0.44), (90, 0.45)):
+        ax.point(a, F, CURRENT)
+    return f.svg()
+
+
 def hero():
     """The opening illustration: a loudspeaker playing on a desk, its cone in motion, and a desk fan spinning beside it."""
     f = H.hero("fy74-hero", "Kuvitus: työpöydällä on puinen kaiutin, jonka kartiosta lähtee ääniaaltoja, ja sen vieressä "
@@ -304,7 +323,7 @@ def scene():
 
 
 FIGURES = {"hero": hero, "swing": swing, "angle": angle, "wires": wires, "motor": motor, "speaker": speaker,
-           "scene": scene, "balance-points": balance_points}
+           "scene": scene, "balance-points": balance_points, "force-angle": force_angle}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "swing": "reveals: the force on a wire is perpendicular to both the current and the field (direction drawn)",
@@ -313,4 +332,5 @@ REUSE = {
     "motor": "reveals: the forces on the loop's sides and the sense of rotation",
     "speaker": "reveals: the force on the voice coil points along the axis",
     "balance-points": "safe: current balance readings Δm against I with a fitted line through the origin, no B or slope",
+    "force-angle": "safe: force on a wire against the angle to the field, points and a fitted sine curve, no B, no formula",
 }
