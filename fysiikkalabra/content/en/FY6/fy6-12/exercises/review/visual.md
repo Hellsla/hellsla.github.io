@@ -1,9 +1,9 @@
 VERDICT: PASS
 CONTENT-HASH: e1cbdbd39a48e885
-SCOPE: delta added-exercise from 8edcd16166667112 base 8f23aa7ae3bd
+SCOPE: delta added-exercise from 24851d9dbd27e2fd base 8f23aa7ae3bd
 
 ## Blocking
-- none (the packet carried no SCOPE line: the previous round was a FAIL; the line above is built from the previous hash and `reviews.py scope`)
+- none
 
 ## Polish
 - [Minor] fy6-12/ex-vgraph — the starting point x = 1.0 cm has a tick but no marker; readable as is.
