@@ -134,6 +134,20 @@ def ex_pi():
     return f.svg()
 
 
+# --- task figure (L2-09): a hob plate's power in three steps, only the steps, no energy --------------------------
+def ex_pt():
+    f = Fig("fy66-expt", 360, "Kuvaaja mittakaavassa: keittolevyn sähköteho P watteina ajan t funktiona minuutteina. "
+            "Teho on vaiheittain vakio: 2000 W ajan 0–3,0 min, 1000 W ajan 3,0–8,0 min ja 500 W ajan 8,0–12 min. "
+            "Pystyakselin ruudukon väli on 500 W ja vaaka-akselin 1,0 min.")
+    ax = Axes(f, (96, 304), (480, 66), x=(0, 12), y=(0, 2500), xticks=list(range(1, 13)), yticks=[500, 1000, 1500, 2000, 2500],
+              xlabel=r"t\ (\text{min})", ylabel=r"P\ (\text{W})")
+    for (t0, t1, p) in ((0, 3, 2000), (3, 8, 1000), (8, 12, 500)):
+        f.line(ax.X(t0), ax.Y(p), ax.X(t1), ax.Y(p), HEAT, 4)
+    for t, p0, p1 in ((3, 2000, 1000), (8, 1000, 500)):
+        f.line(ax.X(t), ax.Y(p0), ax.X(t), ax.Y(p1), HEAT, 4)
+    return f.svg()
+
+
 # --- opening illustration: a toaster on a kitchen counter, its cord to the wall socket ----------------------------
 def hero():
     """The chapter's opening illustration, a close-up (teacher 2026-11-11, illustration audit: the same toaster as in
@@ -179,7 +193,7 @@ def hero():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "energia": energia, "jako": jako, "lampo": lampo, "graph": graph, "ex-pi": ex_pi}
+FIGURES = {"hero": hero, "energia": energia, "jako": jako, "lampo": lampo, "graph": graph, "ex-pi": ex_pi, "ex-pt": ex_pt}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "hero": "decorative",
@@ -188,4 +202,5 @@ REUSE = {
     "lampo": "reveals: a resistor's temperature levels off where heat out equals electrical power in (schematic)",
     "graph": "reveals: P = R I^2 parabolas for 4 and 8 ohm, doubling I quadruples P",
     "ex-pi": "safe: four (I, P) points of a resistor on 5 W and 0,5 A gridlines, no curve or resistance",
+    "ex-pt": "safe: a hob plate's power in three constant steps (2000 W, 1000 W, 500 W) against minutes on 500 W and 1,0 min gridlines, no energy",
 }

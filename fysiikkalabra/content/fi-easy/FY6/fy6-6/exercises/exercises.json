@@ -291,6 +291,15 @@
           "feedback": "Oikein: virta puolittuu arvosta $0{,}50\\,\\text{A}$ arvoon $0{,}25\\,\\text{A}$. Teho $RI^2$ pienenee arvosta $6{,}0\\,\\text{W}$ arvoon $1{,}5\\,\\text{W}$."
         }
       ]
+    },
+    {
+      "id": "fy6-6-L2-09",
+      "level": 2,
+      "text": "Kuvaajassa on keittolevyn sähköteho ajan funktiona, kun levyn säädintä käännetään kolmessa vaiheessa. Kuinka paljon sähköenergiaa muuttuu levyssä sisäenergiaksi $12\\,\\text{min}$:n aikana? Lue tarvittavat arvot kuvaajasta.",
+      "figure": "fy6-6/ex-pt",
+      "answer": 780,
+      "unit": "kJ",
+      "tolerance": 0.02
     }
   ],
   "level3": [

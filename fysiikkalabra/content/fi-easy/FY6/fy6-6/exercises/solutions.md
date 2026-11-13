@@ -215,3 +215,14 @@ $$\begin{aligned}
 \end{aligned}$$
 
 Tehojen suhde on $\tfrac{1{,}5\,\text{W}}{6{,}0\,\text{W}} = \tfrac{1}{4}$, eli vastuksen $R_1$ teho pienenee neljäsosaan. Saman tuloksen antaa jännite: vastuksen $R_1$ yli on enää $6{,}0\,\text{V}$, ja $\tfrac{(6{,}0\,\text{V})^2}{24\,\Omega} = 1{,}5\,\text{W}$. Teho ei pysy samana, koska vastuksen yli ei ole enää koko lähteen jännite. Teho ei myöskään pienene vain puoleen, koska teho riippuu virran neliöstä.
+
+## fy6-6-L2-09
+**Annettu:** kuvaajan vaiheet: teho $P$ ajan $t$ funktiona
+**Kysytty:** levyssä $12\,\text{min}$:ssa muuttuva sähköenergia $E$ kilojouleina
+**Periaate:** Kun teho on vakio, sähköenergia on $E = Pt$. Teho muuttuu vaiheittain. Siksi lasketaan jokaisen vaiheen energia erikseen ja summataan ne.
+**Kuvaajan lukeminen:** Kuvaaja on vaakasuora kolmessa osassa: $P_1 = 2000\,\text{W}$ ajan $0$–$3{,}0\,\text{min}$, $P_2 = 1000\,\text{W}$ ajan $3{,}0$–$8{,}0\,\text{min}$ ja $P_3 = 500\,\text{W}$ ajan $8{,}0$–$12\,\text{min}$. Vaiheiden kestot ovat $t_1 = 3{,}0\,\text{min}$, $t_2 = 5{,}0\,\text{min}$ ja $t_3 = 4{,}0\,\text{min}$.
+**Kaava:** $E = E_1 + E_2 + E_3 = P_1t_1 + P_2t_2 + P_3t_3$
+**Muunnokset:** $t_1 = 3{,}0 \cdot 60\,\text{s} = 180\,\text{s}$, $t_2 = 5{,}0 \cdot 60\,\text{s} = 300\,\text{s}$, $t_3 = 4{,}0 \cdot 60\,\text{s} = 240\,\text{s}$
+**Sijoitus:** $E = 2000\,\text{W} \cdot 180\,\text{s} + 1000\,\text{W} \cdot 300\,\text{s} + 500\,\text{W} \cdot 240\,\text{s} = 360\,\text{kJ} + 300\,\text{kJ} + 120\,\text{kJ} = 780\,\text{kJ}$
+**Vastaus:** $780\,\text{kJ}$, kolme merkitsevää numeroa, koska vaiheiden arvot luetaan tarkasti ruudukkoviivoilta.
+**Järkevyys:** Keskiteho on $780\,\text{kJ} : 720\,\text{s} \approx 1{,}08\,\text{kW}$, mikä on suurimman ja pienimmän tehon välissä ($0{,}5$–$2{,}0\,\text{kW}$). Energia on myös kuvaajan viivan alle jäävä pinta-ala.
