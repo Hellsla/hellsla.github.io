@@ -74,6 +74,38 @@
     const m = /sims\/([^/]+\/[^/]+)\/sim\.js(?:[?#]|$)/.exec(src || '') || /(?:^|\/)([^/]+)-sim\.js(?:[?#]|$)/.exec(src || '');
     return m ? m[1] : '';
   };
+  // the size of a $…$ label does not depend on which digits its formulas hold: KaTeX's upright fonts give every digit
+  // the same advance (checked in Chromium over 1000 labels at five sizes, 2026-11-12). A label with a live value
+  // ("$\theta = 296^\circ$") is therefore measured once per shape ("$\theta = 000^\circ$"), not at every frame:
+  // each measurement made the browser lay the lesson page out again (fy7-7 and fy3-10 ran at 3–5 fps on a phone).
+  // Bold, italic, sans, typewriter and the other font changes have digits of their own widths, and a dimension, a
+  // colour or a character code is a number that is not drawn: such a formula is kept as it is.
+  const OWN_DIGITS = /\\(?:bf|it|sf|tt|rm|sl|bm|pmb|boldsymbol|bold|emph|math[a-z]*|text(?!(?:rm)?\{)[a-z]+|color|colorbox|fcolorbox|[hvm]?space|[hvm]?skip|m?kern|rule|raisebox|char|html[A-Za-z]*|href|url|tiny|scriptsize|footnotesize|small|normalsize|large|Large|LARGE|huge|Huge|size\d|includegraphics)(?![A-Za-z])/;
+  const shape = (str) => str.replace(/\$[^$]+\$/g, (m) => (/\d/.test(m) && !OWN_DIGITS.test(m.replace(/\\(?:mathrm|operatorname)\{/g, '{')) ? m.replace(/\d/g, '0') : m));
+  // a sketch reads the width of its box at every frame (document.getElementById('sim-root').clientWidth, 98 sims, to
+  // keep its text legible on a phone) right after writing its readout, and p.text below reads the canvas's size for
+  // every $…$ label after placing the one before: each read made the browser lay the lesson page out again before the
+  // frame was drawn (2026-11-12). These sizes are kept here and read again only after the element has changed size
+  // (a ResizeObserver, made before the one that redraws the canvas, so a redraw sees the new size) or the canvas has
+  // been resized (fit below). keep(el, 'clientWidth') for a box whose height follows its readout at every frame.
+  const CLIENT = { clientWidth: 'width', clientHeight: 'height' };
+  const keep = (el, ...props) => {
+    if (!el || el.__flKept || !('ResizeObserver' in window)) return () => {};
+    const got = {}, seen = {};
+    for (const k of props) {
+      const d = Object.getOwnPropertyDescriptor(Element.prototype, k);
+      if (!d || !d.get) return () => {};
+      got[k] = null;
+      Object.defineProperty(el, k, { configurable: true, get() { if (got[k] === null) got[k] = d.get.call(el); return got[k]; } });
+    }
+    const reset = () => { for (const k of props) got[k] = null; };
+    el.__flKept = true;
+    new ResizeObserver((es) => {
+      const r = es[es.length - 1].contentRect;
+      for (const k of props) if (r[CLIENT[k]] !== seen[k]) { seen[k] = r[CLIENT[k]]; got[k] = null; }
+    }).observe(el);
+    return reset;
+  };
   const mixed = (el, str) => {                 // "Massa $m = 10$ kg": text nodes and KaTeX spans
     el.textContent = '';
     str.split(/(\$[^$]+\$)/).forEach((part) => {
@@ -85,15 +117,29 @@
       } else el.appendChild(document.createTextNode(part));
     });
   };
+  // the page is written once per frame, after the sketch has drawn it (2026-11-12, performance): p5 sets the canvas
+  // font at every textSize() and textAlign(), and the browser works out the styles of the whole lesson page before it
+  // takes a canvas font whenever the page has changed since, so a readout or a label written in the middle of draw()
+  // cost a restyle of the page at each following text call (fy3-10: about 70 ms a frame on a phone). While draw() runs,
+  // a p5 element's .html(…) and the KaTeX labels below wait in `pend`; they are written in order when draw() returns.
+  // Reading .html() flushes them first.
+  let drawing = 0, pend = [];
+  const later = (fn) => { if (drawing) pend.push(fn); else fn(); };
+  const flush = () => { while (pend.length) { const q = pend; pend = []; q.forEach((fn) => fn()); } };
   if (Base.Element && !Base.Element.prototype.__tex) {
     const html = Base.Element.prototype.html;
-    Base.Element.prototype.html = function (...a) {
-      if (!a.length || a[1] || typeof a[0] !== 'string' || !a[0].includes('$')) { this.__texLast = null; return html.apply(this, a); }
-      if (this.__texLast === a[0]) return this;   // the readout is set every frame; KaTeX runs only on a change
-      this.__texLast = a[0];
-      const r = html.apply(this, a);
-      if (window.renderMathInElement) window.renderMathInElement(this.elt, MATH);
+    const write = (el, a) => {
+      if (a[1] || typeof a[0] !== 'string' || !a[0].includes('$')) { el.__texLast = null; return html.apply(el, a); }
+      if (el.__texLast === a[0]) return el;    // the readout is set every frame; KaTeX runs only on a change
+      el.__texLast = a[0];
+      const r = html.apply(el, a);
+      if (window.renderMathInElement) window.renderMathInElement(el.elt, MATH);
       return r;
+    };
+    Base.Element.prototype.html = function (...a) {
+      if (!a.length) { flush(); return html.apply(this, a); }
+      if (drawing) { pend.push(() => write(this, a)); return this; }
+      return write(this, a);
     };
     Base.Element.prototype.__tex = true;
   }
@@ -115,7 +161,7 @@
         };
         sketch(p);
         const setup = p.setup, draw = p.draw;
-        let s = 1, internal = false;
+        let s = 1, internal = false, canvasSize = () => {};
         let layer = null, labels = [], used = 0;
         const text = p.text;
         // the canvas and its KaTeX layer share a box (.sim-canvas); fit() sizes the canvas to that box, so the page can
@@ -134,23 +180,29 @@
           const k = (p.canvas.clientWidth || p.width) / p.width;        // CSS size of the canvas against its own size
           const al = p.textAlign();
           let el = labels[used];
-          if (!el) { el = document.createElement('div'); el.className = 'sim-tex'; layer.appendChild(el); labels.push(el); }
+          if (!el) { el = document.createElement('div'); el.className = 'sim-tex'; labels.push(el); }
           used++;
-          if (el.__s !== str) { mixed(el, str); el.__s = str; }
           const st = el.style;
           const lx = (m.a * x + m.c * y + m.e) / pd * k, ly = (m.b * x + m.d * y + m.f) / pd * k;
-          st.display = Number.isFinite(lx) && Number.isFinite(ly) ? '' : 'none';   // a label at NaN (an empty average) is not drawn, as on the canvas
+          const shown = Number.isFinite(lx) && Number.isFinite(ly) ? '' : 'none';   // a label at NaN (an empty average) is not drawn, as on the canvas
           const sz = p.textSize() * Math.hypot(m.a, m.b) / pd;   // in canvas pixels
           const fs = Math.max(sz * (k < 1 ? Math.sqrt(k) : k), Math.min(sz, 10)).toFixed(2) + 'px';   // a phone-sized canvas shrinks its labels less than its picture, never below 10 px
-          st.fontSize = fs;
-          st.color = ctx.fillStyle;
-          if (el.__fs !== fs || el.__ms !== str || el.__fg !== fontGen || !el.__w) { const r = el.getBoundingClientRect(); el.__w = r.width; el.__h = r.height; el.__fs = fs; el.__ms = str; el.__fg = fontGen; }   // measured only when the label or its size changes
+          const color = ctx.fillStyle;
+          const put = () => {                    // the label's text, size and colour (written after draw(), above)
+            if (!el.parentNode) layer.appendChild(el);
+            if (el.__s !== str) { mixed(el, str); el.__s = str; }
+            st.display = shown; st.fontSize = fs; st.color = color;
+          };
+          const sh = shape(str);
+          const measure = el.__fs !== fs || el.__ms !== sh || el.__fg !== fontGen || !el.__w;   // only when the label's shape (above) or its size changes
+          if (measure) { put(); const r = el.getBoundingClientRect(); el.__w = r.width; el.__h = r.height; el.__fs = fs; el.__ms = sh; el.__fg = fontGen; }
           const fx = { left: 0, center: -0.5, right: -1 }[al.horizontal] || 0;
           const fy = { top: 0, center: -0.5, bottom: -1 }[al.vertical] ?? -0.78;   // alphabetic: baseline near 78 % of the line
           const cw = p.canvas.clientWidth || p.width * k, ch = p.canvas.clientHeight || p.height * k;
           // the larger phone labels are kept inside the canvas
-          st.left = Math.max(0, Math.min(lx + fx * el.__w, cw - el.__w)).toFixed(1) + 'px';
-          st.top = Math.max(0, Math.min(ly + fy * el.__h, ch - el.__h)).toFixed(1) + 'px';
+          const left = Math.max(0, Math.min(lx + fx * el.__w, cw - el.__w)).toFixed(1) + 'px';
+          const top = Math.max(0, Math.min(ly + fy * el.__h, ch - el.__h)).toFixed(1) + 'px';
+          later(() => { if (!measure) put(); st.left = left; st.top = top; });
           return p;
         };
         // the widths of $…$ labels, measured once per text size and font state. A sim whose label carries a live value
@@ -171,7 +223,7 @@
             const m = p.drawingContext.getTransform(), u = Math.hypot(m.a, m.b) / p.pixelDensity(), k = (p.canvas.clientWidth || p.width) / p.width;
             if (u > 0 && k > 0) { const sz = p.textSize() * u; fsz = +Math.max(sz * (k < 1 ? Math.sqrt(k) : k), Math.min(sz, 10)).toFixed(2); per = u * k; }
           }
-          const key = fsz + '|' + str;
+          const key = fsz + '|' + shape(str);   // one width per shape (above), so a live value needs no new measurement
           let w = widths.get(key);
           if (w === undefined) {
             if (!meter) { meter = document.createElement('div'); meter.className = 'sim-tex'; meter.style.cssText = 'position:absolute;visibility:hidden;left:-9999px;top:0'; document.body.appendChild(meter); }
@@ -213,7 +265,7 @@
           const ns = Math.max(0.3, w / W);
           if (Math.abs(ns - s) < 0.002 && p.height === Math.round(H * s)) return;
           s = ns;
-          internal = true; p.resizeCanvas(Math.round(W * s), Math.round(H * s), true); internal = false;
+          internal = true; p.resizeCanvas(Math.round(W * s), Math.round(H * s), true); internal = false; canvasSize();
           p.redraw();
         };
         const rc = p.resizeCanvas;           // a sketch that stacks its panels on a phone asks for p.resizeCanvas(600, taller): the box keeps its 600 width
@@ -222,12 +274,15 @@
           if (w === W && h !== H) { H = h; s = 0; fit(); }
         };
         p.setup = () => {
+          keep(document.getElementById('sim-root'), 'clientWidth');
           if (setup) setup();
           if (!p.canvas) return;
           const simRoot = document.getElementById('sim-root');
           if (simRoot) foldNotes(simRoot);
           if (simRoot && window.renderMathInElement) window.renderMathInElement(simRoot, MATH);   // labels and legends set once
           wrapCanvas();
+          keep(p.canvas.parentElement, 'clientWidth');
+          canvasSize = keep(p.canvas, 'clientWidth', 'clientHeight');
           fit();
           const resized = () => { fit(); wake(); };
           if ('ResizeObserver' in window) new ResizeObserver(resized).observe(root());
@@ -299,7 +354,8 @@
         };
         if (draw) p.draw = () => {
           used = 0; p.__flDraws++;
-          p.push(); p.scale(s); draw(); p.pop();
+          drawing++;
+          try { p.push(); p.scale(s); draw(); p.pop(); } finally { drawing--; if (!drawing) flush(); }   // the page's writes of this frame, at once
           for (let i = used; i < labels.length; i++) labels[i].style.display = 'none';   // a label not drawn this frame
         };
       }, node);
