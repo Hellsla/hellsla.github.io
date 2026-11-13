@@ -1,15 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 026f61d1646501f3
+CONTENT-HASH: 57f90cde845360e2
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] lesson.md, example stages 2 and 3 — stage 3 now restates stage 2's sentence (luovutettu = vastaanotettu) almost word for word — let stage 3 only say "Kirjoitetaan se auki ja ratkaistaan $c_\text{m}$:" after the first display row, or drop the repeated sentence.
+- [Minor] lesson.md, example stages 2 and 3 — stage 3 still restates stage 2's sentence (luovutettu = vastaanotettu) — let stage 3 say only "Kirjoitetaan se auki ja ratkaistaan $c_\text{m}$:".
+- [Minor] lesson.md, Kaava text — the unit parentheses "(J)", "(K)", "(kg)", "(J/K)" are plain text (untouched reviewed text) — make them inline maths when next edited.
+- [Minor] lesson.md, Yleinen virhekäsitys block — the first rows of the numeric group start with "c · 1,0 kg · …" without a leading quantity, which the teacher's chain rule asks for. The rows follow directly after the symbolic row $Q_\text{luovutettu} = Q_\text{vastaanotettu}$, so it reads clearly.
 
 ## Checked
-- delta review: fy3-6-example-390-1.png (stage 3: new row Q_m = Q_v above the chain, equals signs aligned, nothing clipped) and fy3-6-example-390-2.png (stage 7: C_v and C_m now as set-apart aligned blocks with a leading quantity, units upright with thin spaces, no overflow). example-390-3 is only an empty tail.
-- Wording read: fluent Finnish, glossary terms (lämpökapasiteetti, ominaislämpökapasiteetti) used consistently; all numbers with units in LaTeX.
+- delta review of the Kaava text and the Yleinen virhekäsitys block: fy3-6-theory-1280-2.png and fy3-6-theory-1280-3.png. The new principle row, the "Kun kummallekin ... pätee Q = cmΔT, tämä on" row and the grouped numeric rows are centred and aligned, and nothing is clipped.
+- fy3-6-example-390-1.png (stage 3 with the principle row above the chain; the equals signs are aligned).
+- Figures were not changed (teacher-approved); the figure-9 bar chart is visible in theory-1280-3 and its layout survived.
+- The inquiry.json feedback change is wording only ("nettomääräisesti"): fluent, with no new symbols or units. I did not open the open-ennusta capture.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 5
