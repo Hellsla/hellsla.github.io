@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 6472db20fc2ac7c5
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-11-09: diff since origin/main only)
+CONTENT-HASH: 077bbc73147433b4
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] fy1-8-L1-10 Kaava — the two-row aligned block (t_min, s) sets the "=" of the second row slightly left of the first (fraction row); acceptable, but aligning both "=" would read tidier.
+- [Minor] fy1-8-L1-10 Vastaus — "(tarkemmin …)" sentence begins in lowercase under the box; a full sentence would read better.
 
 ## Checked
-- fy1-8-L3-04: the general rule 'a difference can be shown only if the intervals do not overlap' is removed; Periaate now states the data-specific conclusion (intervals overlap, no reliable conclusion, hand-timing uncertainty to be considered); Järkevyys softened to 'ei erotu luotettavasti'.
-- d = 0,04 s, k = 3,75 ≈ 3,8 and the overlap 3,08–3,12 s unchanged.
-- Language version fi-easy judged from the diff against origin/main; notation (LaTeX numbers with units, decimal comma/point, \cdot) checked in changed lines.
+- Delta: fy1-8-L1-10 (8-10) at 1280 px, open-exercises parts 9 and 10: task text ($\text{km}$ now maths, round 1 fix), hint, lock, Annettu, Kaava in aligned rows, Sijoitus rows, Vastaus with new rounding reason, Järkevyys. KaTeX clean, units upright, no clipping; neighbouring task layout intact.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

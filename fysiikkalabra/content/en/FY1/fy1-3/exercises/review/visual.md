@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 99cf25d118827e5e
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-11-09: diff since origin/main only)
+CONTENT-HASH: 02a8e105c56f8695
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] fy1-3-L1-09 — the Answer paragraph opens "(more precisely 1.18 %), …" under the boxed value; acceptable, same pattern as fy1-8.
 
 ## Checked
-- fy1-3-L3-05: Periaate now names the check as a simplified comparison of the stated uncertainty estimates; Vastaus says the results are not consistent per these estimates, the estimates are not hard limits and separation alone does not decide statistical significance.
-- Gap 0.04 g/cm³ and intervals 2,69–2,79 / 2,55–2,65 unchanged and correct.
-- Language version en judged from the diff against origin/main; notation (LaTeX numbers with units, decimal comma/point, \cdot) checked in changed lines.
+- fy1-3-open-exercises-1280-9 (task 3-9 text, hint, check, Given to Formula: both chains now inside one tinted box)
+- fy1-3-open-exercises-1280-10 (Substitution as aligned rows, Answer with inline fractions now \tfrac and no collision, Additionally line, Reasonableness)
+- diff read for exercises.json, solutions.md, answers.py; figure tasks layout only.
+
+## Scores
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

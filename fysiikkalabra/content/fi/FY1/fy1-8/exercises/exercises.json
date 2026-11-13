@@ -175,7 +175,7 @@
     {
       "id": "fy1-8-L1-10",
       "level": 1,
-      "text": "Äänen nopeutta ilmassa ($20\\,{}^\\circ\\text{C}$) mitataan käsin ajanotolla, jonka epävarmuus on $0{,}2\\,\\text{s}$. Mitattavan ajan suhteellisen epävarmuuden saa olla enintään $5\\,\\%$. Hae äänen nopeus ilmassa MAFY-taulukosta (mafytaulukot.fi). Kuinka pitkä on lyhin matka, jonka yli ääni mitataan kulkevan? Anna vastaus yksikössä km.",
+      "text": "Äänen nopeutta ilmassa ($20\\,{}^\\circ\\text{C}$) mitataan käsin ajanotolla, jonka epävarmuus on $0{,}2\\,\\text{s}$. Mitattavan ajan suhteellinen epävarmuus saa olla enintään $5\\,\\%$. Hae äänen nopeus ilmassa MAFY-taulukosta (mafytaulukot.fi). Mikä on lyhin matka, jonka äänen on kuljettava mittauksessa? Anna vastaus yksikössä $\\text{km}$.",
       "lookup": "MAFY",
       "answer": 1.3736,
       "unit": "km",

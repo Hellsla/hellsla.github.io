@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: ca61c04c8344f267
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: 0292c5e7f79399a2
+SCOPE: delta added-exercise from ac18f707d49da072 base 81db4a6fd727
 
 ## Blocking
 - none
@@ -9,8 +9,10 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff sin
 - none
 
 ## Checked
-- Järkevyys checks now carry units: 0,5 cm/min · 30 min = 15 cm; 0,60 cm/vrk · 10 vrk + 4,0 cm = 10 cm; 0,85 m/s · 0,47 s = 0,40 m; 0,080 mm/g · 100 g = 8 mm; 2,5 m/s = 2,5 · 3,6 km/h = 9 km/h; all recomputed
-- L3-03: Δx as point separation vs Δk, Δy_luku as uncertainties: the added note is correct and the ratio 16 is unchanged
-- (0,475 ± 0,075) m/s = 0,40–0,55 m/s and (0,475 ± 0,15) m/s = 0,33–0,63 m/s correct
-- "suureiden välistä riippuvuutta" (instead of "ilmiön lakia") and "tulos on uskottava" (1,0 kg/l) are more accurate claims; lukumäärä N fine
-- answers.py unchanged; units upright in task texts
+- fy1-4-L1-09 only (delta, added exercise); hash the same at start and end.
+- Recomputed independently: m = ρV = 2,70 g/cm³ · 45 cm³ = 121,5 g (key 121.5).
+- MAFY aluminium density 2,70·10³ kg/m³ is right; the hint names the right table.
+- Conversion: 2,70·10³ kg/m³ = 2,70 g/cm³ (10³ g/kg, 10⁶ cm³/m³) is right.
+- Model: the line through the origin, m = kV with k = ρ, fits this chapter's linear model. A line through the origin has a physical reason (zero volume, zero mass).
+- Rounding: 1,2·10² g, two figures as in V = 45 cm³, is justified; it is 1,2 % from the key, inside the tolerance 0,04.
+- Reasonableness: about 2,7 times the mass of the same volume of water, which is a real check.

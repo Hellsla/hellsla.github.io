@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 7f32c937f097b93c
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: 77a3559ba8d13a7a
+SCOPE: delta added-exercise from 272247cd523312bd base 81db4a6fd727
 
 ## Blocking
 - none
@@ -9,6 +9,9 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff sin
 - none
 
 ## Checked
-- L2-05 reasonableness: line (0;0)-(50,0;135) has slope 2,70; residuals +0,3, −0,5, +0,6, −0,1, +0,4 g (least squares through origin 2,705: same signs), so 'two below, three above' is right, and forced-through-origin reasoning is sound.
-- Concrete slab 0,75 m³ · 2,4 t/m³ ≈ 1,8 t; gold 19 · 100 g ≈ 1,9 kg; ethanol 0,79 · 2,5 kg ≈ 2,0 kg; Al/Cu ratio 8960 : 2700 = 3,32 between 3 and 4: all recomputed.
-- Task texts: 'Ongen lyijypaino' / 'fishing line sinker', 'ilmoitettu eri yksiköissä', added 'use the chapter's density table' to Al+Fe, Cu wire and alloy tasks: no change to data or answers.
+- Added task fy1-7-L1-09 only; hash recomputed at start and end.
+- Table value: copper 8.96·10^3 kg/m^3; correct.
+- m = ρV solved from ρ = m/V before substitution; 50 cm^3 = 5.0·10^-5 m^3 right.
+- Independent recompute 0.448 kg = answers.py; the shown 0.45 kg is 0.45 % above it, within 4 %.
+- Two significant figures from V = 50 cm^3; reasonableness against water (50 g, ×9) is real.
+- en numbers identical to the Finnish original.
