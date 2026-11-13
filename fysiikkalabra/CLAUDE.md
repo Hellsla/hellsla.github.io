@@ -107,6 +107,7 @@ rule needs a shared fix that is not merged yet, write new content to the rule an
   empty space.
 - **Pohdinta's retrieval task belongs to its phenomenon** (teacher 2026-11-13, fy4-1): the "Kertaa yläkoulusta"
   choice asks the prior knowledge through the same situation (the cyclist's average speed), never an unrelated one.
+  Order in Pohdinta: the phenomenon, then that retrieval task, then the open question (teacher 2026-11-13).
 - **A table when the content is a table** (teacher 2026-11-13, FY1): parallel items with the same attributes (a
   structure, its size, its unit and the unit's value) go in a table, not a bulleted list of long lines.
 - **Long words break at a syllable with a hyphen** (concept cards: "Ominaislämpö-kapasiteetti"), never mid-syllable.
