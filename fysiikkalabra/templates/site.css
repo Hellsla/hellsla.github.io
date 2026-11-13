@@ -2180,13 +2180,15 @@ main.kr-team{max-width:68rem}
 /* Jatka (design audit 2026-11-10, P0-3; templates/jatka.js): one quiet row with the next thing to do, over the chapter
    tiles and on the front page, only for a reader who has started a chapter; and the state of a started chapter on its
    tile. */
-.resume{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem 1.25rem;margin:1.2rem 0 0;padding:.7rem 1rem;background:var(--accent-soft);border-radius:12px}
+.resume{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 1.25rem;margin:1.2rem 0 0;padding:.7rem 1rem;background:var(--accent-soft);border-radius:12px}
 .resume[hidden]{display:none}
-.resume-text{margin:0;display:flex;flex-wrap:wrap;align-items:baseline;gap:.1rem .6rem;min-width:0;font-size:var(--fs-body);line-height:1.35}
+.resume-text{flex:1 1 14rem;margin:0;display:flex;flex-wrap:wrap;align-items:baseline;gap:.1rem .6rem;min-width:0;font-size:var(--fs-body);line-height:1.35}
 .resume-label{font:700 var(--fs-small)/1.2 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--accent-deep)}
 .resume-stage{color:var(--ink-2);font-size:var(--fs-ui)}
 .resume-go{display:inline-flex;align-items:center;min-height:44px;padding:0 1.1rem;border-radius:999px;background:var(--accent-deep);color:#fff;font:700 var(--fs-ui) var(--sans);text-decoration:none;white-space:nowrap}
 .resume-go:hover{background:var(--accent)}
+.resume-hide{margin-left:auto;min-height:44px;padding:0 .6rem;border:0;border-radius:8px;background:none;color:var(--ink-2);font:500 var(--fs-small) var(--sans);opacity:.75;cursor:pointer}
+.resume-hide:hover,.resume-hide:focus-visible{opacity:1;text-decoration:underline}
 main.home>.resume{margin:0 0 1rem}
 .ch-state{text-transform:none;letter-spacing:0;font-weight:700;color:var(--ink-2);white-space:nowrap}
 .ch-state.is-done{color:var(--accent-deep)}

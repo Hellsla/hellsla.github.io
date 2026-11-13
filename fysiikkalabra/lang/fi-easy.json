@@ -24,6 +24,8 @@
     "skip": "Siirry sisältöön",
     "resume": "Jatka",
     "resume_go": "Jatka lukua",
+    "resume_hide": "Poista",
+    "resume_hide_label": "Poista muistutus (edistyminen säilyy)",
     "state_stages": "%n/%of vaihetta",
     "state_started": "Aloitettu",
     "resume_stage": "vaihe %n/%of",

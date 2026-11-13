@@ -3,7 +3,8 @@
      "3/7 vaihetta" (with a tick at 7/7), from the chapter's done stages (lesson.js part 2, localStorage ruukkilabra:<page>
      { done: [stage ids], of: number of stages }). Over the tiles one row, "Jatka: Luku 4 · <title>, vaihe 4/7 Teoria",
      for the chapter opened last if it is one of the page's and not finished, else the first unfinished chapter after
-     a started one. Nothing shows before the reader has started a chapter.
+     a started one. Nothing shows before the reader has started a chapter. The row reads: the Jatka button on the left,
+     the chapter and stage, and a quiet Poista on the right that hides the row (progress kept) until the target changes.
    - The front page: the same row for the chapter opened last in this language (ruukkilabra:viimeisin, lesson.js).
    Read from this browser only; nothing is sent, and the page is the same without storage or this script. */
 (() => {
@@ -22,10 +23,20 @@
   const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
   const show = (href, num, title, stage) => {
     const text = el('p', 'resume-text');
-    text.append(el('span', 'resume-label', T.resume || 'Jatka'), el('strong', '', (num ? num + ' · ' : '') + title));
+    text.append(el('strong', '', (num ? num + ' · ' : '') + title));   // the button on the left says Jatka
     if (stage) text.append(el('span', 'resume-stage', stage));
     const go = el('a', 'resume-go', T.go || 'Jatka'); go.href = href;
-    box.replaceChildren(text, go); box.hidden = false;
+    // Poista (teacher 2026-11-13): hides the row until the reader opens another chapter or another stage; the progress
+    // itself stays (ruukkilabra:jatka-pois keeps only what was hidden)
+    const key = PRE + href + '|' + (stage || '');
+    if (read('ruukkilabra:jatka-pois') === key) return;
+    const hide = el('button', 'resume-hide', T.hide || 'Poista'); hide.type = 'button';
+    if (T.hide_label) { hide.title = T.hide_label; hide.setAttribute('aria-label', T.hide_label); }
+    hide.addEventListener('click', () => {
+      try { localStorage.setItem('ruukkilabra:jatka-pois', JSON.stringify(key)); } catch (e) { /* the row goes for this visit */ }
+      box.hidden = true; box.replaceChildren();
+    });
+    box.replaceChildren(go, text, hide); box.hidden = false;
   };
   const stageText = (v) => (v && v.n && v.of ? fmt(T.stage, { n: v.n, of: v.of }) + (v.label ? ' ' + v.label : '') : '');
 

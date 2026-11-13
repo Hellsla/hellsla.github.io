@@ -517,7 +517,7 @@ def ahjo_course_row(c, planned):
 def resume_box():
     """Jatka (design audit 2026-11-10, P0-3): an empty row that templates/jatka.js fills from this browser's own record
     of started chapters; it stays hidden for a reader who has not started one, and without the script."""
-    t = {"resume": T("site.resume"), "go": T("site.resume_go"), "stages": T("site.state_stages"), "started": T("site.state_started"), "stage": T("site.resume_stage")}
+    t = {"resume": T("site.resume"), "go": T("site.resume_go"), "hide": T("site.resume_hide"), "hide_label": T("site.resume_hide_label"), "stages": T("site.state_stages"), "started": T("site.state_started"), "stage": T("site.resume_stage")}
     return f'<div class="resume" id="jatka" data-t="{esc(json.dumps(t, ensure_ascii=False))}" hidden></div>'
 
 

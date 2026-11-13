@@ -24,6 +24,8 @@
     "skip": "Skip to content",
     "resume": "Continue",
     "resume_go": "Continue the chapter",
+    "resume_hide": "Remove",
+    "resume_hide_label": "Remove this reminder (your progress is kept)",
     "state_stages": "%n/%of stages",
     "state_started": "Started",
     "resume_stage": "stage %n/%of",
