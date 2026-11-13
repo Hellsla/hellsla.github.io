@@ -21,9 +21,9 @@ a["fy4-9-L2-02"] = 0.046 * 70 / 0.50e-3 / 1000       # golf ball from rest: F = 
 m, v1, v2 = 0.060, 14.0, -11.0                       # ball against a wall: positive toward the wall
 a["fy4-9-L2-03"] = abs(m * v2 - m * v1)              # |I| = |Δp| = 0,060 · 25 = 1,5 N·s
 a["fy4-9-L2-04"] = 8.0 + 120 * 0.025 / 0.17          # puck hit along its motion: v2 = v1 + F Δt / m = 25,65 m/s
-v_ka = sum([21.4, 22.6, 20.9, 23.1, 22.0]) / 5      # football kicks: mean speed 22,0 m/s
+v_k = sum([21.4, 22.6, 20.9, 23.1, 22.0]) / 5      # football kicks: mean speed 22,0 m/s
 t_ka = sum([9.8, 10.4, 10.0, 10.6, 10.2]) / 5 / 1000 # mean contact time 10,2 ms = 0,0102 s
-a["fy4-9-L2-05"] = 0.43 * v_ka / t_ka                # F_ka = m v_ka / Δt_ka = 927 N
+a["fy4-9-L2-05"] = 0.43 * v_k / t_ka                # F_ka = m v_k / Δt_ka = 927 N
 a["fy4-9-L2-06"] = 0.50 * 0.80 / 0.080               # foam bumper: F = m v / Δt = 5,0 N (metal 0,40 / 0,0060 = 67 N)
 F_sisa = [11.0, 26.0, 36.5, 35.0, 25.5, 10.0]        # cart on air track: interior forces, ends are 0 N
 a["fy4-9-L2-07"] = 0.010 * sum(F_sisa) / 0.50        # trapezoids: I = 0,010 s · 144,0 N = 1,44 N·s; Δv = I / m = 2,88 m/s
