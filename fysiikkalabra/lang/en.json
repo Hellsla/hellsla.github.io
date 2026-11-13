@@ -288,7 +288,6 @@
     "learn": "In this lesson, you will learn to",
     "prior": "Prior knowledge",
     "prior_chapter": "chapter",
-    "core_path": "<strong>Core path:</strong> follow the steps in order. Besides calculations, the core path includes investigations, explanations and graphs. Tasks marked <em>Optional</em> give extra practice. <span class=\"path-count\">Optional tasks: {{n}}.</span>",
     "revise": "Would you change your prediction?",
     "revise_no": "No",
     "revise_yes": "Yes",
@@ -3264,6 +3263,8 @@
     ],
     "retry_title": "Try again on your own",
     "retry_text": "If you looked at the model solution, solve the problem again without it.",
+    "core_h": "The core path and optional tasks",
+    "core_text": "Follow the steps of a chapter in order. Besides calculations, the core path includes investigations, explanations and graphs. Tasks marked Optional give extra practice.",
     "tips_h": "Five tips for studying physics",
     "tips": [
       {

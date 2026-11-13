@@ -293,7 +293,6 @@
     "learn": "Tällä tunnilla opit",
     "prior": "Pohjatiedot",
     "prior_chapter": "luku",
-    "core_path": "<strong>Ydinpolku:</strong> etene vaiheiden mukaan. Ydinpolkuun kuuluvat laskujen lisäksi tutkimukset, selitykset ja kuvaajat. <em>Valinnainen</em>-merkityt tehtävät tarjoavat lisäharjoittelua. <span class=\"path-count\">Valinnaisia tehtäviä {{n}}.</span>",
     "revise": "Muuttaisitko ennustettasi?",
     "revise_no": "En",
     "revise_yes": "Kyllä",
@@ -3264,6 +3263,8 @@
     ],
     "retry_title": "Yritä uudelleen itse",
     "retry_text": "Jos katsoit malliratkaisun, kokeile ratkaista tehtävä uudelleen ilman sitä.",
+    "core_h": "Ydinpolku ja valinnaiset tehtävät",
+    "core_text": "Etene luvun vaiheiden mukaan. Ydinpolkuun kuuluvat laskujen lisäksi tutkimukset, selitykset ja kuvaajat. Valinnainen-merkityt tehtävät tarjoavat lisäharjoittelua.",
     "tips_h": "Viisi vinkkiä fysiikan opiskeluun",
     "tips": [
       {

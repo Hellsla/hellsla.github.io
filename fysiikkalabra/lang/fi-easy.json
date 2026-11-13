@@ -288,7 +288,6 @@
     "learn": "Tällä tunnilla opit",
     "prior": "Pohjatiedot",
     "prior_chapter": "luku",
-    "core_path": "<strong>Ydinpolku:</strong> tee vaiheet järjestyksessä. Ydinpolulla ei vain lasketa. Siinä myös tutkitaan, selitetään ja piirretään kuvaajia. <em>Valinnainen</em>-tehtävät ovat lisäharjoittelua. <span class=\"path-count\">Valinnaisia tehtäviä on {{n}}.</span>",
     "revise": "Haluaisitko muuttaa ennustettasi?",
     "revise_no": "En",
     "revise_yes": "Kyllä",
@@ -3264,6 +3263,8 @@
     ],
     "retry_title": "Yritä uudelleen itse",
     "retry_text": "Katsoitko malliratkaisun? Ratkaise tehtävä sitten uudelleen ilman sitä.",
+    "core_h": "Ydinpolku ja valinnaiset tehtävät",
+    "core_text": "Tee luvun vaiheet järjestyksessä. Ydinpolulla ei vain lasketa. Siinä myös tutkitaan, selitetään ja piirretään kuvaajia. Valinnainen-tehtävät ovat lisäharjoittelua.",
     "tips_h": "Viisi vinkkiä fysiikan opiskeluun",
     "tips": [
       {
