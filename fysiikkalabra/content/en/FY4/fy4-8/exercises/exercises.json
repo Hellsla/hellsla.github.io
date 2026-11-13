@@ -137,7 +137,7 @@
         {
           "text": "The normal force of the track does no work on the car at any point of the track.",
           "true": true,
-          "feedback": "Correct: the normal force is perpendicular to the surface of the track and therefore to the motion, so its component in the direction of the motion is zero and the work is $W = F_\\parallel s = 0$."
+          "feedback": "Correct: the normal force is perpendicular to the surface of the track and therefore to the motion, so its component in the direction of the motion is zero and the work is $W = F s = 0$."
         },
         {
           "text": "At the top of the hill, at a height of $12\\,\\text{m}$, the kinetic energy of the car is zero.",

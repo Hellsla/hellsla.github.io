@@ -244,10 +244,10 @@ a 0
 **Given:** from the table the velocities $0.51$; $0.50$; $0.49$; $0.50$; $0.51$ and $0.49\,\text{m/s}$, time $\Delta t = 6.0\,\text{s}$
 **Find:** a) why a forward-pushing force is not needed; b) the distance $s$ travelled by the cart in $\text{m}$
 **Principle:** By Newton’s first law an object moves at constant velocity when the net force is zero, and no force is needed to maintain motion. The velocity is almost the same in all readings, so the motion is uniform and the distance is the product of the velocity and the time.
-**Reading the graph:** From the table we see that the velocity stays between $0.49$ and $0.51\,\text{m/s}$ and neither increases nor decreases. The variation is random variation of the measurement. The mean velocity $v_\text{av}$ describes the constant velocity.
-**Formula:** $v_\text{av} = \dfrac{\Sigma v}{n}$ and $s = v_\text{av}\,\Delta t$
+**Reading the graph:** From the table we see that the velocity stays between $0.49$ and $0.51\,\text{m/s}$ and neither increases nor decreases. The variation is random variation of the measurement. The mean velocity $v_\text{k}$ describes the constant velocity.
+**Formula:** $v_\text{k} = \dfrac{\Sigma v}{n}$ and $s = v_\text{k}\,\Delta t$
 **Conversions:** The velocity is in $\text{m/s}$ and the time in seconds, so no conversions are needed.
-**Substitution:** The sum of the velocities is $3.00\,\text{m/s}$ and there are $6$ readings, so $v_\text{av} = \dfrac{3.00\,\text{m/s}}{6} = 0.500\,\text{m/s}$. The distance is
+**Substitution:** The sum of the velocities is $3.00\,\text{m/s}$ and there are $6$ readings, so $v_\text{k} = \dfrac{3.00\,\text{m/s}}{6} = 0.500\,\text{m/s}$. The distance is
 $s = 0.500\,\text{m/s}\cdot 6.0\,\text{s} = 3.0\,\text{m}$.
 **Answer:** a) The velocity does not change, so the net force is zero: the air resistance is very small and in the vertical direction the weight and the normal force cancel each other, so a forward-pushing force is not needed. b) $3.0\,\text{m}$, two significant figures like the time $6.0\,\text{s}$.
 **Reasonableness:** The velocity is about $0.5\,\text{m/s}$, so in $6\,\text{s}$ the cart travels about $3\,\text{m}$. The track must therefore be at least this long.

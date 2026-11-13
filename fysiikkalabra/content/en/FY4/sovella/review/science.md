@@ -1,16 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: b53b61432729e115
-Mode: delta (round 3, commit c2c6eff02: fy4-s2 d conclusion criterion trimmed)
+CONTENT-HASH: 7cfdc14b6ecf2865
 
 ## Blocking
+None.
 
 ## Polish
+None.
 
 ## Checked
-- s2 d: the conclusion criterion now asks only for the choice (the larger model speed, either c's 14 m/s or the frictionless reference value 17,2 m/s) and its reason (a brake sized for too small a speed could fail). This is what "Kumman arvion mukaan jarru kannattaa mitoittaa?" asks. It agrees with Hyväksytään myös (either justified choice earns the point).
-- The solution's Mitoitus keeps the caveat that neither number is a safe maximum and that real design needs margins, load analysis and measurements. That satisfies the guardrail against presenting a simplified model as complete safety advice, without grading what the task does not ask.
-- Round 1 still holds:
-  - s2: 17,16 m/s; 29,1 N; 13,57 → 14 m/s.
-  - s3 b: 7,86 m/s; 13,64 m/s = 49,1 km/h.
-- Points unchanged.
-- Hash identical at start and end.
+- Re-review of the fix: fy4-s2 b) Sijoitus (line 294) now writes the starting potential energy as E_p0 = 9123 J, consistent with E_p0 + E_k0 + W = E_p + E_k and the zero level at the brake (E_p = 0, E_k = 3889 J at the end). git diff HEAD~1: only this line changed in solutions.md; tasks.json untouched.
+- Recomputed (own script): a) 17,2 m/s, b) 9123 J, 3889 J, 29,1 N, c) 13,6 m/s; numbers and answers unchanged.
+- No leftover W_muut, E_k,1, F_∥ in any Sovella task; fi, fi-easy and en say the same.

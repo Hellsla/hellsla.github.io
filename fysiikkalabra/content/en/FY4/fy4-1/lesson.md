@@ -347,10 +347,10 @@ Motion can be shown as a **$(t,x)$ graph**, with time on the horizontal axis and
 
 ## Formula: Average velocity and the equation of uniform motion
 When the position changes by $\Delta x$ during the time interval $\Delta t = t_2 - t_1$, the average velocity is the displacement divided by the time:
-```latex
-v_\text{avg} = \frac{\Delta x}{\Delta t} = \frac{x_2 - x_1}{t_2 - t_1}
+```kaavat
+average velocity :: v_\text{k} = \frac{\Delta x}{\Delta t} = \frac{x_2 - x_1}{t_2 - t_1}
 ```
-where $v_\text{avg}$ is the average velocity (m/s), $\Delta x$ the displacement (m), $\Delta t$ the elapsed time (s) and $x_1$ and $x_2$ the positions (m) at the moments $t_1$ and $t_2$. As vectors, the velocity is written $\overline{v}$ and the displacement $\Delta\overline{x}$. On a line we use their components $v$ and $\Delta x$, whose sign tells the direction.
+where $v_\text{k}$ is the average velocity (m/s), $\Delta x$ the displacement (m), $\Delta t$ the elapsed time (s) and $x_1$ and $x_2$ the positions (m) at the moments $t_1$ and $t_2$. As vectors, the velocity is written $\overline{v}$ and the displacement $\Delta\overline{x}$. On a line we use their components $v$ and $\Delta x$, whose sign tells the direction.
 
 In uniform motion the average velocity is the same over any time interval, and it is called the velocity $v$. In non-uniform motion the average velocity only tells the constant velocity at which the same displacement would be covered in the same time. If the object is at the position $x_0$ at the moment $t = 0$, solving the formula for the position gives the position as a function of time:
 ```latex

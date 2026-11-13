@@ -380,11 +380,9 @@ x_\text{A}(t) = x_\text{B}(t)
 missä $x_\text{A}(t)$ ja $x_\text{B}(t)$ ovat kappaleiden paikat samassa koordinaatistossa ($\text{m}$) ja $t$ on kohtaamishetki ($\text{s}$). Kun $t$ on ratkaistu, se sijoitetaan jompaankumpaan paikkafunktioon, ja tulos on kohtaamispaikka. Tarkistuksena toinen paikkafunktio antaa saman paikan.
 
 Paikkafunktio riippuu liikkeen lajista. Tasaisessa liikkeessä se on $x = x_0 + v\,t$ (luku *Paikka, nopeus ja tasainen liike kuvaajina*). Tasaisesti kiihtyvässä liikkeessä (luku *Kiihtyvyys ja tasaisesti kiihtyvä liike*) se on
-```latex
-\begin{aligned}
-x &= x_0 + v_0\,t + \tfrac12\,a\,t^2 \\
-v &= v_0 + a\,t
-\end{aligned}
+```kaavat
+paikka tasaisesti kiihtyvässä suoraviivaisessa liikkeessä :: x = x_0 + v_0\,t + \tfrac12\,a\,t^2
+nopeus tasaisesti kiihtyvässä suoraviivaisessa liikkeessä :: v = v_0 + a\,t
 ```
 missä $x_0$ on alkupaikka ($\text{m}$), $v_0$ alkunopeus ($\text{m/s}$), $a$ kiihtyvyys ($\text{m/s}^2$), $t$ aika ($\text{s}$) ja $v$ nopeus hetkellä $t$ ($\text{m/s}$). Kaavat pätevät, kun liike on suoraviivaista ja kiihtyvyys on vakio. Kahden tasaisen liikkeen yhtälö on ensimmäisen asteen yhtälö. Jos paikkafunktiot ovat eri suoria, niillä on enintään yksi leikkauspiste, joten kappaleet kohtaavat enintään kerran. Jos paikkafunktiot ovat samat, kappaleet ovat samassa paikassa koko tarkastelun ajan. Jos toinen kiihtyy, yhtälö on toisen asteen yhtälö, ja viivoilla voi olla kaksi leikkauspistettä.
 

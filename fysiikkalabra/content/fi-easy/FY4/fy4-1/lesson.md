@@ -347,10 +347,10 @@ Liike voidaan piirtää **$(t,x)$-kuvaajaksi**. Vaaka-akselilla on aika ja pysty
 
 ## Kaava: Keskinopeus ja tasaisen liikkeen yhtälö
 Paikka voi muuttua määrän $\Delta x$ aikavälillä $\Delta t = t_2 - t_1$. Silloin keskinopeus on siirtymä jaettuna ajalla:
-```latex
-v_\text{ka} = \frac{\Delta x}{\Delta t} = \frac{x_2 - x_1}{t_2 - t_1}
+```kaavat
+keskinopeus :: v_\text{k} = \frac{\Delta x}{\Delta t} = \frac{x_2 - x_1}{t_2 - t_1}
 ```
-missä $v_\text{ka}$ on keskinopeus (m/s), $\Delta x$ siirtymä (m), $\Delta t$ kulunut aika (s) ja $x_1$ ja $x_2$ paikat (m) hetkillä $t_1$ ja $t_2$. Vektorina nopeus kirjoitetaan $\overline{v}$ ja siirtymä $\Delta\overline{x}$. Suoralla käytetään niiden komponentteja $v$ ja $\Delta x$. Niiden etumerkki kertoo suunnan.
+missä $v_\text{k}$ on keskinopeus (m/s), $\Delta x$ siirtymä (m), $\Delta t$ kulunut aika (s) ja $x_1$ ja $x_2$ paikat (m) hetkillä $t_1$ ja $t_2$. Vektorina nopeus kirjoitetaan $\overline{v}$ ja siirtymä $\Delta\overline{x}$. Suoralla käytetään niiden komponentteja $v$ ja $\Delta x$. Niiden etumerkki kertoo suunnan.
 
 Tasaisessa liikkeessä keskinopeus on sama millä tahansa aikavälillä. Sitä kutsutaan nopeudeksi $v$. Epätasaisessa liikkeessä keskinopeus kertoo vain yhden asian. Se kertoo vakionopeuden, jolla sama siirtymä tehtäisiin samassa ajassa. Kappale voi olla hetkellä $t = 0$ paikassa $x_0$. Silloin kaavasta saadaan paikka ajan funktiona eli paikka millä tahansa hetkellä:
 ```latex

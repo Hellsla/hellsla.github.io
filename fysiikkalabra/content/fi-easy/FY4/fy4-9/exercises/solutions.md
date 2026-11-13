@@ -147,9 +147,9 @@
 ## fy4-9-L2-05
 **Annettu:** pallon massa $m = 0{,}43\,\text{kg}$, alkunopeus $v_0 = 0$. Viiden potkun nopeudet $v$ ja kosketusajat $\Delta t$ ovat taulukossa (esimerkkiaineisto). Painon vaikutus jätetään huomiotta
 **Kysytty:** jalan palloon antama keskimääräinen voima $F_\text{ka}$ yksikössä $\text{N}$
-**Periaate:** Mittauksissa on pientä satunnaista vaihtelua, joten käytetään keskiarvoja $v_\text{ka}$ ja $\Delta t_\text{ka}$. Potkun aikana jalan voima on palloon vaikuttava kokonaisvoima, kun painon vaikutus jätetään huomiotta. Impulssiperiaatteen mukaan jalan voiman impulssi on yhtä suuri kuin pallon liikemäärän muutos.
-**Kaava:** $F_\text{ka}\,\Delta t_\text{ka} = mv_\text{ka} - 0$, joten $F_\text{ka} = \dfrac{mv_\text{ka}}{\Delta t_\text{ka}}$
-**Muunnokset:** Nopeuksien summa on $110{,}0\,\text{m/s}$, joten $v_\text{ka} = \dfrac{110{,}0\,\text{m/s}}{5} = 22{,}0\,\text{m/s}$. Kosketusaikojen summa on $51{,}0\,\text{ms}$, joten $\Delta t_\text{ka} = \dfrac{51{,}0\,\text{ms}}{5} = 10{,}2\,\text{ms} = 0{,}0102\,\text{s}$.
+**Periaate:** Mittauksissa on pientä satunnaista vaihtelua, joten käytetään keskiarvoja $v_\text{k}$ ja $\Delta t_\text{ka}$. Potkun aikana jalan voima on palloon vaikuttava kokonaisvoima, kun painon vaikutus jätetään huomiotta. Impulssiperiaatteen mukaan jalan voiman impulssi on yhtä suuri kuin pallon liikemäärän muutos.
+**Kaava:** $F_\text{ka}\,\Delta t_\text{ka} = mv_\text{k} - 0$, joten $F_\text{ka} = \dfrac{mv_\text{k}}{\Delta t_\text{ka}}$
+**Muunnokset:** Nopeuksien summa on $110{,}0\,\text{m/s}$, joten $v_\text{k} = \dfrac{110{,}0\,\text{m/s}}{5} = 22{,}0\,\text{m/s}$. Kosketusaikojen summa on $51{,}0\,\text{ms}$, joten $\Delta t_\text{ka} = \dfrac{51{,}0\,\text{ms}}{5} = 10{,}2\,\text{ms} = 0{,}0102\,\text{s}$.
 **Sijoitus:** $F_\text{ka} = \dfrac{0{,}43\,\text{kg} \cdot 22{,}0\,\text{m/s}}{0{,}0102\,\text{s}} = \dfrac{9{,}46\,\text{kg}\cdot\text{m/s}}{0{,}0102\,\text{s}} = 927\,\text{N}$
 **Vastaus:** $9{,}3 \cdot 10^2\,\text{N}$. Vastauksessa on kaksi merkitsevää numeroa, kuten massassa $0{,}43\,\text{kg}$.
 **Järkevyys:** Pallon paino on $0{,}43\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 4{,}2\,\text{N}$. Se on alle prosentti jalan voimasta, joten painon jättäminen huomiotta oli perusteltua. Nopeus $22\,\text{m/s}$ eli noin $79\,\text{km/h}$ ja kosketusaika noin $10\,\text{ms}$ sopivat tavalliseen potkuun.

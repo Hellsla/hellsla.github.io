@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 7615210948db8704
+CONTENT-HASH: 75141c516061de83
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- [Minor] fy4-9 Muuttuva voima — '(t, F)-' breaks before 'kuvaajan' on a phone (formula itself intact) — optional: none needed.
+1. fy4-9: I = Δp table renders cleanly with overlined vectors.
 
-## Checked
-- Light delta review: diff read; changed passages opened at 360-390 px (fy4-9-stage-selita-390-2, -3, -4, -6): signed-area wording and F_x text clean, buffer graph sits directly after its paragraph, F_ka,x formula intact, summary bullet fine.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+Checked: preview at 390 and 1280 px, formula tables, opened solutions; no horizontal overflow, no KaTeX errors, old symbols gone.
+Delta (Tiivistelmä/Summary re-checked at 390 px: renders cleanly, no overflow).

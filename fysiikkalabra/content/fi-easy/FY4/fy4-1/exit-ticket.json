@@ -9,6 +9,6 @@
   },
   {
     "q": "Kävelet suoraa katua $100\\,\\text{m}$ itään. Sitten palaat saman matkan takaisin lähtöpaikkaan. Mikä on kuljettu matka, siirtymä ja keskinopeus?",
-    "a": "Matka on $200\\,\\text{m}$. Siirtymä on 0. Keskinopeus on $v_\\text{ka} = \\Delta x / \\Delta t = 0$. Siirtymä riippuu vain alku- ja loppupaikasta. Se ei riipu reitistä."
+    "a": "Matka on $200\\,\\text{m}$. Siirtymä on 0. Keskinopeus on $v_\\text{k} = \\Delta x / \\Delta t = 0$. Siirtymä riippuu vain alku- ja loppupaikasta. Se ei riipu reitistä."
   }
 ]

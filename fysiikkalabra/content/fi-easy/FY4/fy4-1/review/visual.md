@@ -1,15 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: f16e1c51bf39d505
+CONTENT-HASH: 685033f1f7ab9b40
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- none
+1. fy4-1 lesson, formula table: v_k named 'keskinopeus'/'average velocity'; upright subscript k renders correctly at 390 and 1280 px, no overflow.
 
-## Checked
-- Delta review (editorial correction round, light, teacher 2026-11-07). lesson.md diff read (theory paragraph on (t,x)-graph, Tulos of example 1: prose and inline quantities only, no new display maths, no plain quantity). Layout not re-captured: captures current for this hash, text-only edit.
-- Plain Finnish: new sentences short and concrete, terms as in the glossary; mathematical typography: \cdot, colon for division, decimal comma, units upright in inline LaTeX; no plain-text quantity in the changed text.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+Checked: preview at 390 and 1280 px, formula tables, opened solutions; no horizontal overflow, no KaTeX errors, old symbols gone.

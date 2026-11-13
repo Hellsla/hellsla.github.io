@@ -1,19 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 26473776bb9b39ee
-Mode: delta (changed items rendered and read in full)
-Round 1
+CONTENT-HASH: f7a673e91042d426
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- [Minor] lesson page, optional "virhe" (Find the error) activity — with all boxes open at 390 px the inline calculation chain reaches x = 418 px and the page scrolls sideways (scrollWidth 423) — outside this exercise set: for the lesson reviewer, break the chain.
-
-## Checked
-- Rendered en/fy4-8.html at 390 px, every details/feedback/solution open, element captures of fy4-8-L1-09 and fy4-8-L3-01: task text and its new paragraph breaks, answer/choice/true-false/order widgets, feedback panels, Answer box, full worked solution (Given/Find/Principle/Model answer).
-- No element in the checked tasks passes x = 390; no table or caption overflow. Data-table captions (5 in the page) are 326 px wide inside 390 px. Widest inline chain 258 px (L3-01) / 251 px (L1-09 E_k row), below the 280 px flag.
-- Maths: units upright with thin space, \cdot, decimal point, vectors and subscripts set correctly; one step per row; no red KaTeX.
-- Not re-run: check_layout/check_a11y (in the packet).
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+1. Scope: MAFY-form symbols ( = Fs$, {\text{k}0} + W = E_\text{k}$, {\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$) in the fy4-8 exercise set (en). Rendered at 390 and 1280 px (solutions open): formula tables show the MAFY name over/beside the formula, subscripts k, p, 0 upright, no overflow (scrollWidth = viewport), the energy-bar figure and scale figure carry {\text{p}0}$, {\text{k}0}$, $, \text{k}$ without clipping, the simulation labels ({\text{mech}0}$, $) read well. No leftover old symbols (W_muut, F_parallel, index 1/2 on energies) found in source.
+2. Minor: the text keeps $ (weight's work) beside $ (other forces); it is explained in place, so acceptable.

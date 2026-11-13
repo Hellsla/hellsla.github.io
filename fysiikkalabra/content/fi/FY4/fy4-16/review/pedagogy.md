@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 5120e9b665464081
+CONTENT-HASH: c18ad46dd233f9b1
 
 ## Blocking
-(none)
+None. The Kaava section gives the energy principle with W as work of forces other than weight; W_mu for friction stays distinct.
 
 ## Polish
-- The added sentence names a third tool (impulssiperiaate) the lesson does not practise; fine as orientation, but "Moduulissa on kolmaskin" could say "jota tässä luvussa ei harjoitella".
+1. lesson.md, Kaava: say once that W in the principle can be W_mu plus other forces' work.
 
 ## Checked
-batch delta review (fi): removal of 'taso 1 riittää' leaves the three-level instruction clear; chapter-reference rename consistent; solutions still start from the force diagram.
+Read the changed text and the surrounding formula section, worked example, solutions and inquiry for the MAFY symbols; grep found no leftover old symbol (F_parallel, W_kok, W_muut, E_k,1, E_mek,1) in this language.

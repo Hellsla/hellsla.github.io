@@ -9,6 +9,6 @@
   },
   {
     "q": "You walk $100\\,\\text{m}$ east along a straight street and return the same distance back to the starting point. What are the distance travelled, the displacement and the average velocity?",
-    "a": "The distance is $200\\,\\text{m}$, the displacement is 0 and the average velocity is $v_\\text{avg} = \\Delta x / \\Delta t = 0$. The displacement depends only on the initial and final positions, not on the route."
+    "a": "The distance is $200\\,\\text{m}$, the displacement is 0 and the average velocity is $v_\\text{k} = \\Delta x / \\Delta t = 0$. The displacement depends only on the initial and final positions, not on the route."
   }
 ]

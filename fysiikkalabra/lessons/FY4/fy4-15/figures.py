@@ -105,7 +105,7 @@ def vesivoimala():
     for k in range(4): f.line(338 + 12 * k, 194, 338 + 12 * k, 220, SAND_DARK, 2)
     # electric power out
     f.block_arrow(390, 207, 488, 207, grad(f, "fy415-vve", HEAT_LIGHT, HEAT, horizontal=True), 14, 30, 22)
-    f.tex(496, 207, r"P_\text{s}", "start")
+    f.tex(496, 207, r"P_\text{a}", "start")
     # head h between the water levels
     f.line(272, 92, 578, 92, MUTED, 1.5, "6 5")
     f.path("M570,92 H578 V290 H570", stroke=INK, w=2.5)

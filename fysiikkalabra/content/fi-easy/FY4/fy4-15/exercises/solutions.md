@@ -19,10 +19,10 @@
 **Järkevyys:** Arvio $1000\,\text{kg} \cdot 10\,\text{m/s}^2 \cdot 24\,\text{m} = 240\,\text{kJ}$ on lähellä tulosta. Jos sekunnissa putoaa satoja kuutiometrejä, teho on satoja kertoja $235\,\text{kW}$. Se on kymmeniä tai satoja megawatteja, kuten suurissa vesivoimaloissa.
 
 ## fy4-15-L1-03
-**Annettu:** turbiiniin virtaavan veden teho $P_\text{o} = 50{,}0\,\text{MW}$, sähköteho $P_\text{s} = 46{,}0\,\text{MW}$
+**Annettu:** turbiiniin virtaavan veden teho $P_\text{o} = 50{,}0\,\text{MW}$, sähköteho $P_\text{a} = 46{,}0\,\text{MW}$
 **Kysytty:** hyötysuhde $\eta$ prosentteina
 **Periaate:** Hyötysuhde on hyödyksi saadun tehon ja laitteeseen otetun tehon suhde. Tässä hyödyllinen teho on sähköteho. Otettu teho on teho, jonka vesi tuo voimalaan.
-**Kaava:** $\eta = \dfrac{P_\text{s}}{P_\text{o}}$
+**Kaava:** $\eta = \dfrac{P_\text{a}}{P_\text{o}}$
 **Muunnokset:** Kumpikin teho on megawatteina, joten yksikkö supistuu. Desimaaliluku muutetaan prosenteiksi kertomalla sadalla.
 **Sijoitus:** $\eta = \dfrac{46{,}0\,\text{MW}}{50{,}0\,\text{MW}} = 0{,}920 = 92{,}0\,\%$
 **Vastaus:** $92{,}0\,\%$. Vastauksessa on kolme merkitsevää numeroa, koska tehot $46{,}0\,\text{MW}$ ja $50{,}0\,\text{MW}$ on annettu kolmella numerolla.

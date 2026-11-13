@@ -317,8 +317,8 @@ Ylioppilaskokeiden arviointiohjeissa voimakuviolle on annettu tehtäväkohtaiset
 
 ## Kaava: Liikeyhtälö komponenteittain
 Newtonin toinen laki koskee kokonaisvoimaa:
-```latex
-\Sigma\overline{F} = m\overline{a}
+```kaavat
+Newtonin 2. laki (dynamiikan peruslaki) :: \Sigma\overline{F} = m\overline{a}
 ```
 missä $\Sigma\overline{F}$ on kappaleeseen vaikuttavien voimien vektorisumma (N), $m$ kappaleen massa (kg) ja $\overline{a}$ sen kiihtyvyys (m/s²). Kun voimat eivät ole samalla suoralla, valitaan kaksi kohtisuoraa akselia ja kirjoitetaan laki kummankin akselin suuntaan erikseen:
 ```latex

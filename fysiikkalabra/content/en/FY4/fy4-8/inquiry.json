@@ -130,7 +130,7 @@
       "text": "In the simulation a roller coaster car rolls through a valley. On the left is a snapshot with measuring posts, on the right the energies of the car as bars on the same scale.",
       "howto": "Choose the starting height $h_1$, the resistive force $F_\\text{res}$, the mass of the car and the shape of the track. Press *Start*. The car starts from rest and moves until it stops for the first time. Then the readings show the speed in the middle of the bottom of the valley $v_\\text{bottom}$ and the height $h_2$ the car rose to. *Reset* returns the car to the starting point. *Speed* slows down or speeds up the motion without changing the readings.",
       "model": "The values are model values calculated by the simulation. The car is a point-like object that stays on the track. The bottom of the valley is $6\\,\\text{m}$ long and horizontal, and the slopes are either arcs with a radius of $21\\,\\text{m}$ or straight $45^\\circ$ slopes. The joint between a straight slope and the bottom is assumed to be rounded so gently that the speed of the car does not change there. The resistive force $F_\\text{res}$ stands for rolling resistance and air resistance together: it is constant in magnitude and always points against the motion. The normal force of the track is perpendicular to the motion, so it does no work.",
-      "calc": "The motion of the car is calculated from Newton's second law along the track in small time steps. The energies are calculated from the state of the car: $E_\\text{p} = mgh$ from the height $h$ above the bottom of the valley and $E_\\text{k} = \\tfrac{1}{2} mv^2$ from the speed, with $g = 9.81\\,\\text{m/s}^2$. $E_\\text{mech} = E_\\text{k} + E_\\text{p}$, and $\\Delta E_\\text{mech}$ is its change from the starting moment. The work done by the resistive force is calculated from the definition $W_\\text{other} = -F_\\text{res}\\,s$, where $s$ is the distance travelled along the track. In the bars $W_\\text{other}$ is negative, so it is drawn downward from the zero level."
+      "calc": "The motion of the car is calculated from Newton's second law along the track in small time steps. The energies are calculated from the state of the car: $E_\\text{p} = mgh$ from the height $h$ above the bottom of the valley and $E_\\text{k} = \\tfrac{1}{2} mv^2$ from the speed, with $g = 9.81\\,\\text{m/s}^2$. $E_\\text{mech} = E_\\text{k} + E_\\text{p}$, and $\\Delta E_\\text{mech}$ is its change from the starting moment. The work done by the resistive force is calculated from the definition $W = -F_\\text{res}\\,s$, where $s$ is the distance travelled along the track. In the bars $W$ is negative, so it is drawn downward from the zero level."
     },
     {
       "id": "exp-1",
@@ -240,7 +240,7 @@
           {
             "text": "$\\Delta E_\\text{mech} = -F_\\text{res}\\,s$: the mechanical energy decreases by the work done by the resistive force.",
             "correct": true,
-            "feedback": "Correct. For example, with the values of the model $200\\,\\text{N} \\cdot 45.9\\,\\text{m} = 9.19\\,\\text{kJ}$, and $\\Delta E_\\text{mech} = -9.19\\,\\text{kJ}$. This is the work–energy principle: $\\Delta E_\\text{mech} = W_\\text{other}$."
+            "feedback": "Correct. For example, with the values of the model $200\\,\\text{N} \\cdot 45.9\\,\\text{m} = 9.19\\,\\text{kJ}$, and $\\Delta E_\\text{mech} = -9.19\\,\\text{kJ}$. This is the work–energy principle: $\\Delta E_\\text{mech} = W$."
           },
           {
             "text": "$\\Delta E_\\text{mech}$ equals $-F_\\text{res}\\,h_1$.",
@@ -363,7 +363,7 @@
         {
           "text": "The work done by friction is negative, so it decreases the kinetic energy: $E_\\text{k} = 73.6\\,\\text{J} - 30\\,\\text{J}$.",
           "correct": true,
-          "feedback": "Correct. By the work–energy principle $mgh + W_\\text{other} = E_\\text{k}$, and $W_\\text{other} = -30\\,\\text{J}$. The kinetic energy is $43.6\\,\\text{J}$ and the speed about $4.2\\,\\text{m/s}$. The student's result $6.4\\,\\text{m/s}$ is greater than the frictionless case $5.4\\,\\text{m/s}$, which is impossible."
+          "feedback": "Correct. By the work–energy principle $mgh + W = E_\\text{k}$, and $W = -30\\,\\text{J}$. The kinetic energy is $43.6\\,\\text{J}$ and the speed about $4.2\\,\\text{m/s}$. The student's result $6.4\\,\\text{m/s}$ is greater than the frictionless case $5.4\\,\\text{m/s}$, which is impossible."
         },
         {
           "text": "The potential energy must be calculated from the length of the ramp, not from its height.",
