@@ -219,7 +219,7 @@ Converted to hours, $T = \tfrac{2.76 \cdot 10^{4}\,\text{s}}{3600\,\text{s/h}} \
 **Conversions:** $r = \dfrac{147.1 + 152.1}{2}\,\text{million km} = 149.6\,\text{million km} = 1.496 \cdot 10^{11}\,\text{m}$; finally $1\,\text{mm/s}^2 = 10^{-3}\,\text{m/s}^2$.
 **Substitution:** $\gamma M = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot 1.99 \cdot 10^{30}\,\text{kg} = 1.3281 \cdot 10^{20}\,\text{m}^3/\text{s}^2$, so $a = \dfrac{1.3281 \cdot 10^{20}\,\text{m}^3/\text{s}^2}{(1.496 \cdot 10^{11}\,\text{m})^2} = 5.934 \cdot 10^{-3}\,\text{m/s}^2 = 5.934\,\text{mm/s}^2$
 **Answer:** $5.93\,\text{mm/s}^2$, three significant figures like the mass of the Sun.
-**Reasonableness:** The acceleration is $\dfrac{v^2}{r} = \dfrac{(29.8 \cdot 10^{3}\,\text{m/s})^2}{1.496 \cdot 10^{11}\,\text{m}} \approx 5.9 \cdot 10^{-3}\,\text{m/s}^2$, the same as above. It is about a thousandth of the free-fall acceleration $9.81\,\text{m/s}^2$ of the Earth, and the Sun is very far away.
+**Reasonableness:** The acceleration is $\dfrac{v^2}{r} = \dfrac{(29.8 \cdot 10^{3}\,\text{m/s})^2}{1.496 \cdot 10^{11}\,\text{m}} \approx 5.9 \cdot 10^{-3}\,\text{m/s}^2$, the same as above. It is less than a thousandth of the free-fall acceleration $9.81\,\text{m/s}^2$ of the Earth, and the Sun is very far away.
 
 ## fy5-6-L1-11
 **Given:** orbit radius $r = 1840\,\text{km}$ from the centre of the Moon; from the MAFY table (Solar System, Moon) mass $M = 7.346 \cdot 10^{22}\,\text{kg}$; $\gamma = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$

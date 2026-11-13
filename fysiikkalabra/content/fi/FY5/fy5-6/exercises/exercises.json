@@ -133,10 +133,10 @@
       "text": "Luotain kiertää Kuuta lähes ympyrärataa, jonka säde Kuun keskipisteestä on $1840\\,\\text{km}$. Hae Kuun massa MAFY-taulukosta (mafytaulukot.fi). Laske Kuun gravitaatiokentän voimakkuus eli putoamiskiihtyvyys luotaimen radalla. Anna vastaus yksikössä $\\text{m/s}^2$.",
       "lookup": "MAFY",
       "answer": 1.45,
-      "unit": "min",
+      "unit": "m/s²",
       "tolerance": 0.04,
       "hints": [
-        "Arvot löytyvät MAFY-taulukon kohdasta *Aurinkokunta*."
+        "Arvo löytyy MAFY-taulukon kohdasta *Aurinkokunta*."
       ]
     }
   ],

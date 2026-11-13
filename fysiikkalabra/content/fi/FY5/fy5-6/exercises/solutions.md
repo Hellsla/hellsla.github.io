@@ -219,7 +219,7 @@ Tunneiksi muutettuna $T = \tfrac{2{,}76 \cdot 10^{4}\,\text{s}}{3600\,\text{s/h}
 **Muunnokset:** $r = \dfrac{147{,}1 + 152{,}1}{2}\,\text{milj. km} = 149{,}6\,\text{milj. km} = 1{,}496 \cdot 10^{11}\,\text{m}$; lopuksi $1\,\text{mm/s}^2 = 10^{-3}\,\text{m/s}^2$.
 **Sijoitus:** $\gamma M = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot 1{,}99 \cdot 10^{30}\,\text{kg} = 1{,}3281 \cdot 10^{20}\,\text{m}^3/\text{s}^2$, joten $a = \dfrac{1{,}3281 \cdot 10^{20}\,\text{m}^3/\text{s}^2}{(1{,}496 \cdot 10^{11}\,\text{m})^2} = 5{,}934 \cdot 10^{-3}\,\text{m/s}^2 = 5{,}934\,\text{mm/s}^2$
 **Vastaus:** $5{,}93\,\text{mm/s}^2$, kolme merkitsevää numeroa kuten Auringon massassa.
-**Järkevyys:** Kiihtyvyys on $\dfrac{v^2}{r} = \dfrac{(29{,}8 \cdot 10^{3}\,\text{m/s})^2}{1{,}496 \cdot 10^{11}\,\text{m}} \approx 5{,}9 \cdot 10^{-3}\,\text{m/s}^2$, sama kuin yllä. Se on noin tuhannesosa Maan putoamiskiihtyvyydestä $9{,}81\,\text{m/s}^2$, ja Aurinko on hyvin kaukana.
+**Järkevyys:** Kiihtyvyys on $\dfrac{v^2}{r} = \dfrac{(29{,}8 \cdot 10^{3}\,\text{m/s})^2}{1{,}496 \cdot 10^{11}\,\text{m}} \approx 5{,}9 \cdot 10^{-3}\,\text{m/s}^2$, sama kuin yllä. Se on alle tuhannesosa Maan putoamiskiihtyvyydestä $9{,}81\,\text{m/s}^2$, ja Aurinko on hyvin kaukana.
 
 ## fy5-6-L1-11
 **Annettu:** radan säde Kuun keskipisteestä $r = 1840\,\text{km}$; MAFY-taulukosta (Aurinkokunta, Kuu) massa $M = 7{,}346 \cdot 10^{22}\,\text{kg}$; $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
