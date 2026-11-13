@@ -39,4 +39,8 @@ k = 0.050 * g / v_r                                                     # k v_r 
 a["fy7-6-L3-04"] = g - k * 0.54 / 0.050                                 # a(0,10 s) = g - k v / m = 9,81 - 0,6628 · 0,54 / 0,050 = 2,652 m/s² -> 2,7 m/s² (P = m g v_r = 0,363 W)
 k5 = sum(P_ / d_ ** 2 for d_, P_ in [(1.00, 1.21), (0.80, 0.76), (0.50, 0.31), (0.25, 0.073)]) / 4   # P = k d²: k = 1,2014 W/mm²
 a["fy7-6-L3-05"] = k5 * 0.35 ** 2                                       # P(0,35 mm) = 1,2014 · 0,1225 W = 0,1472 W -> 0,15 W
+# Figure task L2-09 (brake-task: F(v) line F = 1,6 N·s/m · v, points scatter about it): read F(0,25 m/s) = 0,40 N
+a["fy7-6-L2-09"] = 0.40 * 0.25 * 1e3                                    # P = F v = 0,40 N · 0,25 m/s = 0,100 W -> 100 mW
+# Figure task L3-06 (same graph): k = F / v = 0,32 N / 0,20 m/s = 1,6 N s/m; terminal speed of a 45 g magnet: k v = m g
+a["fy7-6-L3-06"] = 45e-3 * g / (0.32 / 0.20)                            # v = m g / k = 0,44145 N / 1,6 N s/m = 0,27591 m/s -> 0,28 m/s
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))
