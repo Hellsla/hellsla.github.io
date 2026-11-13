@@ -283,7 +283,7 @@
     {
       "id": "fy4-3-L2-08",
       "level": 2,
-      "text": "Example values: a truck of mass $12\\,\\text{t}$ reverses slowly and collides with a stationary car of mass $1.2\\,\\text{t}$.\n\nDuring the collision the truck pushes the car with the force $\\overline{F}_{\\text{TC}}$ and the car pushes the truck with the force $\\overline{F}_{\\text{CT}}$. In the subscripts T stands for the truck and C for the car, and the first letter tells who pushes.\n\nHow large is the force $F_{\\text{CT}}$ compared with the force $F_{\\text{TC}}$ during the collision?",
+      "text": "A truck of mass $12\\,\\text{t}$ reverses slowly and collides with a stationary car of mass $1.2\\,\\text{t}$.\n\nDuring the collision the truck pushes the car with the force $\\overline{F}_{\\text{TC}}$ and the car pushes the truck with the force $\\overline{F}_{\\text{CT}}$. In the subscripts T stands for the truck and C for the car, and the first letter tells who pushes.\n\nHow large is the force $F_{\\text{CT}}$ compared with the force $F_{\\text{TC}}$ during the collision?",
       "kind": [
         "concept",
         "reasoning"
@@ -330,7 +330,7 @@
     {
       "id": "fy4-3-L2-09",
       "level": 2,
-      "text": "Two carts collide on an air track. The graph shows the readings of both carts' force sensors against time: sensor A measures the force on cart A and sensor B the force on cart B. The force is zero before the carts touch and after they separate. For how long does the force between the carts act?",
+      "text": "Two carts collide on an air track. The graph shows the readings of both carts' force sensors against time: sensor A measures the force on cart A and sensor B the force on cart B. The force is zero before the carts touch and after they separate. Read the moments where the reading leaves zero and returns to zero. For how long does the force between the carts act?",
       "answer": 0.1,
       "unit": "s",
       "tolerance": 0.1,

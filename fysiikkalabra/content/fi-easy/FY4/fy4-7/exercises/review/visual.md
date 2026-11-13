@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: d5d700d53ef52571
-Mode: delta (new task fy4-7-L1-09, round 1)
+CONTENT-HASH: 6cf55c759d13b049
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-(none)
+- [Minor] fy4-7-L2-08 solution, Järkevyys — "Kasvu on siis kahdeksankertainen alkuarvoon nähden" is slightly confusing; say "Energia kasvaa $9{,}0\,\text{J} - 1{,}0\,\text{J} = 8{,}0\,\text{J}$, mikä on kahdeksankertainen alkuarvoon verrattuna."
+- [Minor] fy4-7/ep-kuvaaja — minor ticks every $5\,\text{J}$ are unlabelled, so reading $39\,\text{J}$ off the line is by eye; label every tick or mark the dashed reading lines.
+- [Minor] fy4-7/pallo-ek — the curve is orange, the project's acceleration colour; fine as energy only if the lesson already uses it for $E_\text{k}$.
 
 ## Checked
-- Rebuilt fy4-7 with scripts/build.py fy4-7; rendered fy4-7-L1-09 at 390 px (fi-easy) after the page scripts ran, wrong answer then correct answer committed, hints/solution details open (own script, scratchpad trvis4_shot.py).
-- Measured: page scrollWidth 390, no element outside a scroll box beyond 390 px; no clipped formula.
-- Read stem, four/five choices with feedback, and the full solution (Find, Principle, Model answer, check) in the capture: KaTeX renders, chains split in rows, units upright, decimal comma consistent, no plain-text quantity.
-- Old tasks: only the changed text of the diff (fy4-2-L3-03 paragraph split) was looked at in the build.
+- fy4-7-open-exercises-L2-1280-10 (10-17 task, E_k(v) graph, solution), -11 (end of its solution; 10-18 task, E_p(h) graph with two marked points, solution start), -12 (rest of solution with the check chains). Axes carry quantity and unit, ticks readable, LaTeX labels, solution order principle to substitution to answer to check clean, units upright. Old tasks not re-reviewed.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

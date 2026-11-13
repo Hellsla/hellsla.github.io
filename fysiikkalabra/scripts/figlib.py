@@ -148,7 +148,7 @@ class Axes:
     gridlines on every tick, axes with filled arrowheads and the axis titles at the arrow ends (NOTES 3, Graphs)."""
 
     def __init__(self, fig, origin, corner, x, y, xticks, yticks, xlabel, ylabel, grid=True, xfmt=None, yfmt=None,
-                 arrow_room=26, origin_label=True, x_at=None):
+                 arrow_room=26, origin_label=True, x_at=None, ticks_below=False):
         self.f, (self.x0, self.y0), (self.x1, self.y1) = fig, origin, corner
         self.xr, self.yr = x, y
         X, Y = self.X, self.Y
@@ -166,7 +166,7 @@ class Axes:
         for t in xticks:
             if t == x[0]: continue
             fig.line(X(t), xa, X(t), xa + 7, INK, 2)
-            if xf(t) != "": fig.tex(X(t), xa + 24 if x_at is None else xa - 22, xf(t), "middle")   # above a signed graph's axis     # an empty format: a tick and gridline without a number
+            if xf(t) != "": fig.tex(X(t), (self.y0 + 24) if (x_at is None or ticks_below) else xa - 22, xf(t), "middle")   # above a signed graph's axis     # an empty format: a tick and gridline without a number
         for t in yticks:
             if t == y[0] and x_at is None: continue
             fig.line(self.x0 - 7, Y(t), self.x0, Y(t), INK, 2)

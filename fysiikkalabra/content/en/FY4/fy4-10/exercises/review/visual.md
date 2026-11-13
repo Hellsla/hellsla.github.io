@@ -1,19 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 2040e0e2c0e5a3c7
-Mode: delta, round 2 (supersedes round 1)
+CONTENT-HASH: fd054a287d5cf164
+SCOPE: delta added-exercise from 2040e0e2c0e5a3c7 base 81db4a6fd727
 
 ## Blocking
-(none)
-Round 1 reported the L2-07 and (en) L2-05 chains as clipped Major, measured before the page's flFitMath step had run. Re-measured with it running: page scrollWidth 390 in both languages, no element outside the viewport except inside the designed sideways-scrolling `.kx-wide` / `.eq-chain` lines. These are old, untouched tasks with formulas identical to the passed Finnish, so they are Polish, not blocking for the new-task review.
+None.
 
 ## Polish
-- [Minor] fy4-10-L2-07 task — the student's chain (330 px, `.kx-wide`) scrolls sideways inside its own line, so its tail `= 0.70 m/s` is only seen by scrolling; the same in the passed Finnish. Follow-up for a shared fit/mathlayout rule (wrap a fraction chain), not this PR.
-- [Minor] fy4-10-L2-05 solution (en) — the two inline chains are `.kx-wide` (304 px) and scroll inside the 360 px card; the en/fi difference comes from `mathlayout.is_long()` counting raw LaTeX length (shared tool follow-up).
-- [Minor] fy4-10-L2-02 solution — chain about 364 px scrolls in `.eq-chain`; CI KaTeX about 20 px wider.
+None.
 
 ## Checked
-- Re-rendered at 390 px with every hint, feedback and solution open, flFitMath present: scrollWidth 390; opened fy4-10-L2-07 and L2-05 (en) captures.
-- fy4-10-L2-08 (new): task, five options with feedback and solution open in both languages; no overflow, units upright, `\cdot` used, clear order principle, formula, substitution, result, check.
+- fy4-10-open-exercises-L2-1280-12 (en): ex-vt-kaarryt tick numbers now below the plot, clear of the step lines; 2 (collision moment) readable.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish (English) 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

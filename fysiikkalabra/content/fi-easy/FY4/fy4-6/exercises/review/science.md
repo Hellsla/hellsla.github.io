@@ -1,20 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 58537b70d4c98ba4
-Mode: full (translation review against the reviewed Finnish set; one new task fy4-6-L2-08)
-Round 2
-
+CONTENT-HASH: 69588492fa3f4f49
+SCOPE: delta added-exercise from 73af95b33d80d8a2 base 81db4a6fd727
 ## Blocking
-(none)
-
-## Fixed
-(none needed)
 
 ## Polish
-(none)
 
 ## Checked
-- New task fy4-6-L2-08, the ordering task L2-08 (friction of four boxes: B 30 N, C 44 N, A 59 N, D 1.2e2 N), compared with content/fi by script and by hand: same kind, answer, unit, tolerance, correct flags and every number in text, options, feedback and solution.
-- Recomputed from the task text: the answers and every intermediate value in solutions.md equal the reviewed Finnish (selkosuomi per NOTES.md §12, same physics).
-- Physics, conditions (ignored friction, air resistance or weight stated in the task) and notation equal to fi; no Finnish prose left in en.
-- The other tasks are unchanged from the reviewed set.
-- check_i18n.py shows nothing for fy4-6; build.py fy4-6 succeeds.
+- Round-2 polish fixed: L2-09 now opens "Kuvaajan mittauspisteet (esimerkkiaineisto) ovat peräisin kokeesta", so the points are marked as example data, as in the figure's description and the set's other data tasks.
+- No number, symbol or condition changed: same table, horizontal sliding, only weight, normal force and friction; fit line needed because the block's N has no point.
+- Recomputed: origin fit slope 295/1375 = 0,2145; N = 7,85 N, F_μ = 1,68 N, a = 2,10 m/s² against the motion; answer 2.1, tolerance 5 % equal to fi.
+- All 23 tasks: answer, unit, tolerance, figure, data and correct options equal the Finnish set; answers.py agrees.
+- Hash unchanged at start and end.

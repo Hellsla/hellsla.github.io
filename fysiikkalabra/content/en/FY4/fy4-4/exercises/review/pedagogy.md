@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 61bbd8dbfca10bbc
-Mode: full (translation review against the reviewed Finnish set; new task fy4-4-L2-08)
-Round 1
+CONTENT-HASH: 7441d559115f1f83
+SCOPE: delta added-exercise from 61bbd8dbfca10bbc base 81db4a6fd727
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-(none)
+None.
 
 ## Checked
-- fy4-4-L2-08 (YO-skill form) is parallel to fi: same choices in the same order, each distractor feedback names the same misconception and repairs it without more disclosure than fi.
-- Language level: natural English, glossary terms used consistently.
-- Model answer is complete and parallel to fi; other exercises unchanged from the earlier passed review.
+- Round 2, delta: the round-1 fixes judged in their context.
+- L2-09 now asks cart A: slope 2,0 so m = 0,50 kg, a = 4,8 m/s^2; a student who copies 2,4 is wrong, so the mass step is needed (round-1 Polish 1 closed).
+- Solution reads A's point (3,0 N; 6,0 m/s^2) and the reasonableness line brackets 4 to 6, consistent with the answer 4,8 and answers.py.
+- No new task, figure or level change; set mix and counts unchanged from the passed version.
+- Language and case endings in the changed text are correct.

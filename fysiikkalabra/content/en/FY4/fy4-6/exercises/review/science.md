@@ -1,20 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 81df7a544708cbb7
-Mode: full (translation review against the reviewed Finnish set; one new task fy4-6-L2-08)
-Round 2
-
+CONTENT-HASH: 3e26f3c308e053a3
 ## Blocking
-(none)
-
-## Fixed
-(none needed)
 
 ## Polish
-(none)
 
 ## Checked
-- New task fy4-6-L2-08, the ordering task L2-08 (friction of four boxes: B 30 N, C 44 N, A 59 N, D 1.2e2 N), compared with content/fi by script and by hand: same kind, answer, unit, tolerance, correct flags and every number in text, options, feedback and solution.
-- Recomputed from the task text: the answers and every intermediate value in solutions.md equal the reviewed Finnish (English decimal point and natural English).
-- Physics, conditions (ignored friction, air resistance or weight stated in the task) and notation equal to fi; no Finnish prose left in en.
-- The other tasks are unchanged from the reviewed set.
-- check_i18n.py shows nothing for fy4-6; build.py fy4-6 succeeds.
+- Round 3 diff (L2-09 opening): "(example data)" was added. The constructed data are no longer presented as a real measurement, which agrees with the figure's own description ("esimerkkiaineisto"), and my round-2 polish item is fixed.
+- "A wooden block was pulled along a table" means the block slides, so the friction is kinetic. That is the same friction as for the decelerating block, so $a = F_\mu / m$ holds.
+- Numbers unchanged: line through the origin fitted to fy4-6/mittaus, slope $\approx 0.21$, $F_\mu \approx 1.68\,\text{N}$ at $N = 7.85\,\text{N}$, $a \approx 2.1\,\text{m/s}^2$ (answers.py agrees).
+- Script comparison with content/fi for all tasks: answers, units, tolerances, correct flags and every number identical.

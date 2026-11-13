@@ -302,12 +302,12 @@ The acceleration is $2.0\,\text{m/s}^2$ in the direction of the pushing force, t
 **Reasonableness:** The second point $(2.0\,\text{N};\, 4.0\,\text{m/s}^2)$ gives the mass $2.0\,\text{N} : 4.0\,\text{m/s}^2 = 0.50\,\text{kg}$, the same. Cart A's line is steeper than B's, so its mass is smaller: a smaller mass accelerates more with the same force.
 
 ## fy4-4-L2-09
-**Given:** net force $\Sigma F = 2.4\,\text{N}$; from the graph a point on cart B's line $\Sigma F_1 = 3.0\,\text{N}$, $a_1 = 3.0\,\text{m/s}^2$
-**Find:** the acceleration of cart B, $a$, in $\text{m/s}^2$
+**Given:** net force $\Sigma F = 2.4\,\text{N}$; from the graph a point on cart A's line $\Sigma F_1 = 3.0\,\text{N}$, $a_1 = 6.0\,\text{m/s}^2$
+**Find:** the acceleration of cart A, $a$, in $\text{m/s}^2$
 **Principle:** By Newton's second law $\Sigma F = ma$. The mass is a property of the cart and the same for every force, so it is found from a point of the graph and then used to find the acceleration for the new force.
-**Reading the graph:** Cart B's line is the gentler one (copper-coloured). Its rightmost data point is at a grid crossing: $\Sigma F_1 = 3.0\,\text{N}$ and $a_1 = 3.0\,\text{m/s}^2$. The force $2.4\,\text{N}$ lies between data points, so the acceleration is calculated through the mass.
+**Reading the graph:** Cart A's line is the steeper one (dark grey). Its rightmost data point is at a grid crossing: $\Sigma F_1 = 3.0\,\text{N}$ and $a_1 = 6.0\,\text{m/s}^2$. The force $2.4\,\text{N}$ lies between data points, so the acceleration is calculated through the mass.
 **Formula:** Mass $m = \dfrac{\Sigma F_1}{a_1}$, and the acceleration for the new force $a = \dfrac{\Sigma F}{m}$
 **Conversions:** The forces are in newtons and the accelerations in $\text{m/s}^2$, so no conversions are needed.
-**Substitution:** $m = \dfrac{3.0\,\text{N}}{3.0\,\text{m/s}^2} = 1.0\,\text{kg}$ and $a = \dfrac{2.4\,\text{N}}{1.0\,\text{kg}} = 2.4\,\text{m/s}^2$
-**Answer:** $2.4\,\text{m/s}^2$ in the direction of the force, two significant figures like the force $2.4\,\text{N}$.
-**Reasonableness:** The force $2.4\,\text{N}$ is smaller than $3.0\,\text{N}$, so the acceleration must be smaller than $3.0\,\text{m/s}^2$. In the graph B's line at $\Sigma F = 2.4\,\text{N}$ lies between $a = 2\,\text{m/s}^2$ and $a = 3\,\text{m/s}^2$, close to $2.4\,\text{m/s}^2$.
+**Substitution:** $m = \dfrac{3.0\,\text{N}}{6.0\,\text{m/s}^2} = 0.50\,\text{kg}$ and $a = \dfrac{2.4\,\text{N}}{0.50\,\text{kg}} = 4.8\,\text{m/s}^2$
+**Answer:** $4.8\,\text{m/s}^2$ in the direction of the force, two significant figures like the force $2.4\,\text{N}$.
+**Reasonableness:** The force $2.4\,\text{N}$ is smaller than $3.0\,\text{N}$, so the acceleration must be smaller than $6.0\,\text{m/s}^2$. In the graph A's line at $\Sigma F = 2.4\,\text{N}$ lies between $a = 4\,\text{m/s}^2$ and $a = 6\,\text{m/s}^2$, close to $4.8\,\text{m/s}^2$.

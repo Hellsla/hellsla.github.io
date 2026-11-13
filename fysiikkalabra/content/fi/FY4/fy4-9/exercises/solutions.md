@@ -219,5 +219,5 @@ Lähin vaihtoehto on $400\,\text{N}$. Järkevyys: raekiven paino on $0{,}020\,\t
 **Kaava:** $I = \tfrac{1}{2} F_\text{max}\,\Delta t$ ja $F_\text{ka} = \dfrac{I}{\Delta t}$, joten $F_\text{ka} = \tfrac{1}{2} F_\text{max}$
 **Muunnokset:** $\Delta t = 12\,\text{ms} = 0{,}012\,\text{s}$
 **Sijoitus:** $I = \tfrac{1}{2} \cdot 900\,\text{N} \cdot 0{,}012\,\text{s} = 5{,}4\,\text{N}\cdot\text{s}$ ja $F_\text{ka} = \dfrac{5{,}4\,\text{N}\cdot\text{s}}{0{,}012\,\text{s}} = 450\,\text{N}$
-**Vastaus:** $450\,\text{N}$, kaksi tai kolme merkitsevää numeroa kuvaajan lukuarvojen tarkkuudella.
+**Vastaus:** $450\,\text{N}$, kaksi merkitsevää numeroa ($4{,}5\cdot 10^2\,\text{N}$), koska huippuarvo $900\,\text{N}$ ja kesto $12\,\text{ms}$ luetaan kuvaajasta kahden numeron tarkkuudella.
 **Järkevyys:** Keskiarvo on puolet huippuarvosta, kuten tasaisesti nousevalla ja laskevalla voimalla pitääkin. Se on pienempi kuin $900\,\text{N}$ ja suurempi kuin nolla.

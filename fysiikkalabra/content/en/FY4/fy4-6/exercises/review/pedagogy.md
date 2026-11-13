@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 81df7a544708cbb7
-Mode: full (translation review against the reviewed Finnish set; one new task fy4-6-L2-08)
-Round 2
+CONTENT-HASH: 3e26f3c308e053a3
+SCOPE: delta added-exercise from 29233f35bff6582e base 81db4a6fd727
 
 ## Blocking
-(none)
-
-## Fixed
-(none needed)
+None.
 
 ## Polish
-(none)
+None.
 
 ## Checked
-- New task fy4-6-L2-08 keeps the Finnish structure: situation first, question last as its own sentence, level and kind as in fi, feedback names the specific error.
-- Language is English decimal point and natural English; reading level and terms equal to fi, glossary terms consistent.
-- The solution has the full steps (Given, Find, Principle, formula, substitution, answer, reasonableness) as in fi, with significant figures as in fi.
+- Round 2, delta: the round-1 fixes judged in their context.
+- L2-09 opening now says the points are example data from a pulled-block experiment; it no longer duplicates L2-03's wording (round-1 Polish 2 closed) and keeps the fit-a-line demand.
+- No new task, figure or level change; set mix and counts unchanged from the passed version.
+- Language and case endings in the changed text are correct.

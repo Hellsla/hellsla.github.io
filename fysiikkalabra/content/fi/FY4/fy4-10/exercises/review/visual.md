@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: f73c86410af7bc40
+CONTENT-HASH: 58dc2743acb32b70
+SCOPE: delta added-exercise from f73c86410af7bc40 base 81db4a6fd727
 
 ## Blocking
+None.
 
 ## Polish
-- [Minor] fy4-10-L2-08 choices — the rows are listed shuffled (Rivi 1, 4, 2, 3), which breaks the natural reading order of a line-by-line check — keep the choices in row order and the last option last.
-- [Minor] fy4-10-L2-08 task, Rivi 4 — "$\dfrac{0{,}24 - 0{,}060}{0{,}50}\,\text{m/s}$" has no units in the numerator — acceptable as the student's line, but "$0{,}24 - 0{,}060$ (kg·m/s)" would match rows 1 and 3.
-- [Minor] fy4-10-L2-08 inline chains — "$m_\text{A} v_\text{A} = m_\text{A} v_\text{A}' + m_\text{B} v_\text{B}'$" (282 px) and "$0{,}50\,\text{kg}\cdot 0{,}60\,\text{m/s} = \dots$" (290 px) fit the 300 px budget only just — no change needed.
+- [Minor] fy4-10-L3-06 solution — the intermediate line shows 1,175 N before the answer 1,2 N, and the momentum products lack units in the inline rows; keep units on every line.
 
 ## Checked
-- Own render of fy4-10-L2-08 at 390 px and 1280 px, "Laskussa ei ole virhettä" chosen so its feedback shows, solution open: no overflow, rows 1–4 set as separate paragraphs, primes and subscripts legible.
-- Source of the choices and solution: the correct row is not identifiable by form; distractor feedback targets the warned sign mistake; the correct feedback gives the reason only after answering (single-stage task); no plain number+unit.
-- Not opened: other tasks of the chapter (unchanged).
+- fy4-10-L2-09 (open-exercises-L2-1280-12, -13, -14): the v(t) graph has axis labels with units, legible tick labels now below the plot (0,5 to 4), A blue and B copper, labelled, solution complete; L3-06 solution (L3-1280-8) typography fine.
+- Round 2: tick labels of ex-vt-kaarryt are clear.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

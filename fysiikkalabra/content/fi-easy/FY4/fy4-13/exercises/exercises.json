@@ -431,8 +431,8 @@
         "model",
         "reasoning"
       ],
-      "text": "Kärry on kitkattomalla radalla. Kärryyn on sidottu kevyt ja venymätön lanka, ja lanka kulkee kevyen ja kitkattoman väkipyörän yli. Langan päässä roikkuu punnus, jonka massa on $0{,}20\\,\\text{kg}$. Kärryn massaa ei tiedetä. Kärry päästetään liikkeelle levosta, ja sen nopeus mitataan. Kuvaajassa ovat mittauspisteet. Ilmanvastus jätetään huomiotta.\n\na) Kuinka suuri on kärryn massa? Piirrä ensin kummankin kappaleen voimakuvio.\n\nb) Onko langan jännitysvoima suurempi, pienempi vai yhtä suuri kuin punnuksen paino? Perustele.\n\nVastauslaatikkoon tulee kohdan a) tulos.",
-      "answer": 0.81,
+      "text": "Kärry on kitkattomalla radalla. Kärryyn on sidottu kevyt ja venymätön lanka, ja lanka kulkee kevyen ja kitkattoman väkipyörän yli. Langan päässä roikkuu punnus, jonka massa on $0{,}30\\,\\text{kg}$. Kärryn massaa ei tiedetä. Kärry päästetään liikkeelle levosta, ja sen nopeus mitataan. Kuvaajassa ovat mittauspisteet. Ilmanvastus jätetään huomiotta.\n\na) Kuinka suuri on kärryn massa? Piirrä ensin kummankin kappaleen voimakuvio.\n\nb) Onko langan jännitysvoima suurempi, pienempi vai yhtä suuri kuin punnuksen paino? Perustele.\n\nVastauslaatikkoon tulee kohdan a) tulos.",
+      "answer": 1.21,
       "unit": "kg",
       "tolerance": 0.04,
       "figure": "fy4-13/karry-vt-points",

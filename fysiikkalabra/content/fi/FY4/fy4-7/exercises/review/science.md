@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 36a9f0fc1bd88cd4
+CONTENT-HASH: 736f5d8b8a59c6e2
+SCOPE: delta added-exercise from 36a9f0fc1bd88cd4 base 81db4a6fd727
 
 ## Blocking
 
 ## Polish
-- Carried over: L2-07 how E_k was measured; L3-04 tennis-ball 73 %; L1-07 level/kind; L3-05 c segment lengths; plan's energy-bar figure task.
 
 ## Checked
-- Round 2 (commit 684926b76): round 1's Major is fixed. The distractor $\tfrac12 mv$ (kg·m/s) now carries the chapter's own warned mistake (E_k linear in v), and its feedback says E_k grows with v², in the lesson's words.
-- Round 1 Polish fixed: the $v^2/(2g)$ feedback now says "kitkaton kappale nousee nopeudesta $v$" and refers to the ramp height in this chapter's theory, no longer to fy4-8.
-- Units recomputed: ½mv → kg·m/s; Gv²/(2g) → N·m = J (= ½mv² via G = mg); Ggh → J·m/s²; v²/(2g) → m. Exactly one option is in joules, and each feedback states the unit the expression really has.
-- solutions.md:300–314 matches the new options, the unit lines and the closing paragraph.
-- No form give-away: none of the options is hedged or longer than the others; ½mv looks the most like E_k, which suits a distractor. The correct feedback gives no further reason stage.
-- Within scope: J = N·m and h = v²/(2g) are in this chapter's Kaava, and G = mg is from fy4-3.
-- Rendered after rebuilding preview/ at 390 px, with all feedback and the solution forced open (own script): no KaTeX span over 260 px, nothing inside the task past 390 px. Physics checked from the text.
-- Hash 36a9f0fc1bd88cd4 at the start and at the end.
+- The round-1 polish is fixed. The pallo_ek description now says "nollasta 6,5 metriin sekunnissa", matching the axis x = (0, 6.5) in figures.py. The description still gives the same points as the picture and no mass.
+- L2-08: the curve is E_k = 0,25 v². ΔE_k = 9,0 J − 1,0 J = 8,0 J, read at grid crossings (tolerance 0,05). The check (three times the speed gives nine times the energy) is a real one.
+- L2-09: E_p = 2,0 · 9,81 · h, with the floor as the zero level as stated. A reading of 39 J or 40 J at 2,0 m gives 1,99 kg or 2,04 kg, inside 5 %. m = E_p/(gh) is solved in symbols first.
+- Recomputed in one script (my formulas beside python -I answers.py): 8,0 J and 2,00 kg, both agreeing with exercises.json.
+- Hash 736f5d8b8a59c6e2 at the start and at the end.

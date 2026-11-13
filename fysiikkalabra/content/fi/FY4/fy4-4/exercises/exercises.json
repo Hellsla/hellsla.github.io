@@ -290,8 +290,8 @@
     {
       "id": "fy4-4-L2-09",
       "level": 2,
-      "text": "Kuvaaja esittää kahden kärryn A ja B kiihtyvyyden kokonaisvoiman funktiona. Kärryjen massoja ei ole annettu. Kärryyn B vaikuttaa vaakasuora kokonaisvoima $2{,}4\\,\\text{N}$. Mikä on kärryn B kiihtyvyys?",
-      "answer": 2.4,
+      "text": "Kuvaaja esittää kahden kärryn A ja B kiihtyvyyden kokonaisvoiman funktiona. Kärryjen massoja ei ole annettu. Kärryyn A vaikuttaa vaakasuora kokonaisvoima $2{,}4\\,\\text{N}$. Mikä on kärryn A kiihtyvyys?",
+      "answer": 4.8,
       "unit": "m/s²",
       "tolerance": 0.02,
       "figure": "fy4-4/kuvaaja-ab"

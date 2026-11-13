@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: f73c86410af7bc40
+CONTENT-HASH: 58dc2743acb32b70
+SCOPE: delta added-exercise from f73c86410af7bc40 base 81db4a6fd727
 
 ## Blocking
+None.
 
 ## Polish
-- exercises.json fy4-10-L2-08 choices[4] ("Laskussa ei ole virhettä") feedback — "kun A kimpoaa taaksepäin" already points at the sign of row 3; keep only the impossibility check (B:n liikemäärä 0,18 < 0,24) without the hint.
-- fy4-10-L2-08 choices[3] (Rivi 4) feedback — "miinusmerkin pitäisi olla plusmerkki" is in fact the symptom of the row 3 error (0,24 − (−0,060)); say that row 4 is a valid step from row 3 and the first wrong row is the answer.
-- Feedback phrase "Jos rivin luulee virheelliseksi, ajattelee" (3 times) — subject-less; "Jos valitsit tämän rivin, saatat ajatella, että ..."
-- The sign slip repeats L2-07's (sign of the left-moving cart); optional, different context (rebound).
+1. solutions.md fy4-10-L3-06 Järkevyys - the factor m_B/(m_A+m_B) is not in the chapter; keep to the computed energies 0,054 J and 0,018 J. Optional.
 
 ## Checked
-- Round 1, new YO-skill task only (the rest of the set was PASS before). All checks from the packet text and exercises.json/solutions.md; no render was made or opened, so phone width of formulas is estimated from the LaTeX, not measured.
-- Rows recomputed: 0,24; 0,060 vs −0,060; 0,36 vs 0,60 m/s; energy 0,096 J before and after, so the case is truly elastic and consistent.
-- Distractors are correct lines with the own check in the feedback; the warned sign mistake is the error row. Correct option is not longest or otherwise marked (34–42 characters).
-- Scope: conservation with signs, taught in the chapter. Solution follows row by row with a plausibility check; chains short (about 200 px).
-- Hash unchanged at end.
+- Round 2, delta: the round-1 fixes judged in their context.
+- L2-09 (v-t, 0,30 kg) and L3-06 (x-t, 0,036 J) correct; figure descriptions give the grid scales and values without the answers and the tick labels are described.
+- No new task, figure or level change; set mix and counts unchanged from the passed version.
+- Language and case endings in the changed text are correct.

@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 86a6d50bcb2c895f
+CONTENT-HASH: bf3a4ac783331157
 
 ## Blocking
 None.
 
 ## Polish
-1. solutions.md: v_k used consistently with the lesson; numbers unchanged; solutions render without errors.
+None.
 
-Checked: opened solutions in the preview at 390 and 1280 px.
+## Checked
+- v_kv and the added reason read fluently; units LaTeX, decimal comma. Text-only change in solutions.md/exercises.json judged from the diff in the packet; the changed line was not opened in a capture, and the layout was not re-inspected.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

@@ -179,7 +179,7 @@ def ex_vt_kaarryt():
             "pystyakselilla nopeus −0,6–1,0 metriä sekunnissa 0,2 metrin välein sekunnissa.")
     ax = Axes(f, (96, 296), (478, 52), x=(0, 4), y=(-0.6, 1.0), xticks=[0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4],
               yticks=[-0.6, -0.4, -0.2, 0, 0.2, 0.4, 0.6, 0.8, 1.0], xlabel=r"t\ (\text{s})", ylabel=r"v\ (\text{m/s})",
-              x_at=0, origin_label=False)
+              x_at=0, origin_label=False, ticks_below=True)
     ax.line([(0, 0.8), (1.96, 0.8), (2.04, 0.2), (4, 0.2)], BLUE, 3)
     ax.line([(0, -0.4), (1.96, -0.4), (2.04, 0.6), (4, 0.6)], COPPER, 3)
     f.tex(ax.X(0.9), ax.Y(0.8) - 20, r"\text{A}", "middle", BLUE)

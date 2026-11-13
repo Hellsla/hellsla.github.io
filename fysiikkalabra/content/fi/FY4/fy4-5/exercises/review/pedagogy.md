@@ -1,13 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 177053466bf26f9c
+CONTENT-HASH: 9c30fcda079726fd
+SCOPE: delta added-exercise from efb48162357b8d03 base 7db0992d648a
+
 ## Blocking
-(none)
+None.
+
 ## Polish
-- content/fi/FY4/fy4-5/exercises/exercises.json:125 (L1-09 intro) — carried over from round 1 and still open: the intro defines F_k and v, so B and D are eliminable from the text alone; accept as a gentle Level 1 task or drop the two definitions. Also 'vaakasuoralla lattialla vaakasuoralla voimalla' is clumsy: 'lattialla vaakasuoralla voimalla'.
-- same task, feedback — correct feedback (C) is the shortest of the four (about 170 characters against 220-330); not a reliable clue but easy to even out by adding one sentence to C.
+1. solutions.md fy4-5-L2-08 Järkevyys - '10 N : 2,5 kg' uses a colon and 15,6 N and 5,7 N are not derived; add the square-root expression or drop the comparison.
+
 ## Checked
-- Delta (round 2): only option D changed: figure pick-nopeus now draws the velocity arrow blue (rule: force red, velocity blue) and D's feedback says 'nopeus ei ole voima' and where the blue arrow belongs.
-- Correct option C still not identifiable by form: options differ by the arrow only; D's v arrow has the same length as F and the friction, so equality of arrows does not reveal C; the student must reject v as non-force (the chapter's warned force/velocity confusion) and F_k as reaction.
-- D feedback gives the reason (no cause, describes motion) without naming the correct option; C feedback unchanged and states N = G, F = F_mu as before.
-- Figure description of pick-nopeus names the blue arrow, its origin (right side) and equal lengths, so a reader without the image gets the same information as the figure.
-- Text and feedback only; the figure itself and 390 px rendering not viewed this round.
+- Round 2, delta: the round-1 fixes judged in their context.
+- L2-08: task and solution use 'block/kappale'; direction 53 deg is stated in the answer line; components, 10 N and 4,0 m/s^2 verified.
+- Figure ruutu-vinot gives both arrows' end points in task description terms without net force or acceleration; fbd 'equations' practised.
+- No new task, figure or level change; set mix and counts unchanged from the passed version.
+- Language and case endings in the changed text are correct.

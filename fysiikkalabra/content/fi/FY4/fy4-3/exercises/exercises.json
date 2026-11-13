@@ -283,7 +283,7 @@
     {
       "id": "fy4-3-L2-08",
       "level": 2,
-      "text": "Esimerkkiarvot: kuorma-auto, jonka massa on $12\\,\\text{t}$, peruuttaa hitaasti ja törmää paikallaan olevaan henkilöautoon, jonka massa on $1{,}2\\,\\text{t}$.\n\nTörmäyksen aikana kuorma-auto työntää henkilöautoa voimalla $\\overline{F}_{\\text{KH}}$ ja henkilöauto kuorma-autoa voimalla $\\overline{F}_{\\text{HK}}$.\n\nKuinka suuri on voima $F_{\\text{HK}}$ verrattuna voimaan $F_{\\text{KH}}$ törmäyksen aikana?",
+      "text": "Kuorma-auto, jonka massa on $12\\,\\text{t}$, peruuttaa hitaasti ja törmää paikallaan olevaan henkilöautoon, jonka massa on $1{,}2\\,\\text{t}$.\n\nTörmäyksen aikana kuorma-auto työntää henkilöautoa voimalla $\\overline{F}_{\\text{KH}}$ ja henkilöauto kuorma-autoa voimalla $\\overline{F}_{\\text{HK}}$.\n\nKuinka suuri on voima $F_{\\text{HK}}$ verrattuna voimaan $F_{\\text{KH}}$ törmäyksen aikana?",
       "kind": [
         "concept",
         "reasoning"
@@ -330,7 +330,7 @@
     {
       "id": "fy4-3-L2-09",
       "level": 2,
-      "text": "Kaksi kärryä törmää ilmatyynyradalla. Kuvaajassa ovat kummankin kärryn voima-anturin lukemat ajan funktiona: anturi A mittaa kärryyn A ja anturi B kärryyn B kohdistuvaa voimaa. Voima on nolla ennen kärryjen kosketusta ja sen jälkeen. Kuinka kauan kärryjen välinen voima vaikuttaa?",
+      "text": "Kaksi kärryä törmää ilmatyynyradalla. Kuvaajassa ovat kummankin kärryn voima-anturin lukemat ajan funktiona: anturi A mittaa kärryyn A ja anturi B kärryyn B kohdistuvaa voimaa. Voima on nolla ennen kärryjen kosketusta ja sen jälkeen. Lue hetket, joilla lukema lähtee nollasta ja palaa nollaan. Kuinka kauan kärryjen välinen voima vaikuttaa?",
       "answer": 0.1,
       "unit": "s",
       "tolerance": 0.1,

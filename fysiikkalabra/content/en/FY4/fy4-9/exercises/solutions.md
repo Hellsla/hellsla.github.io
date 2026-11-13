@@ -219,5 +219,5 @@ The nearest option is $400\,\text{N}$. Reasonableness: the weight of the hailsto
 **Formula:** $I = \tfrac{1}{2} F_\text{max}\,\Delta t$ and $F_\text{avg} = \dfrac{I}{\Delta t}$, so $F_\text{avg} = \tfrac{1}{2} F_\text{max}$
 **Conversions:** $\Delta t = 12\,\text{ms} = 0.012\,\text{s}$
 **Substitution:** $I = \tfrac{1}{2} \cdot 900\,\text{N} \cdot 0.012\,\text{s} = 5.4\,\text{N}\cdot\text{s}$ and $F_\text{avg} = \dfrac{5.4\,\text{N}\cdot\text{s}}{0.012\,\text{s}} = 450\,\text{N}$
-**Answer:** $450\,\text{N}$, two or three significant figures, the precision of the values read from the graph.
+**Answer:** $450\,\text{N}$, two significant figures ($4.5\cdot 10^2\,\text{N}$), because the peak value $900\,\text{N}$ and the duration $12\,\text{ms}$ are read from the graph to two figures.
 **Reasonableness:** The average is half the peak, as it should be for a force that rises and falls steadily. It is smaller than $900\,\text{N}$ and larger than zero.

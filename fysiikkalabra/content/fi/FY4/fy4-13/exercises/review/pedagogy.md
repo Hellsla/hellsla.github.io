@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 6f0e928ad88d259e
+CONTENT-HASH: 7c5b2c273c5f7baf
+SCOPE: delta added-exercise from 6f0e928ad88d259e base 81db4a6fd727
 
 ## Blocking
+None.
 
 ## Polish
-- reasons[2] — "massojen tulo ja summa pysyvät samoina vaihdossa" → "kun massat vaihdetaan keskenään, niiden tulo ja summa pysyvät samoina".
-- Correct stage-1 feedback ends with an instruction ("Valitse seuraavaksi perustelu ..."); harmless, but it tells the student a reason follows, which the page already shows.
+None.
 
 ## Checked
-- light delta review (teacher 2026-11-07), LOPS extension marking: only L3-04 (train couplings) gets the "Syventävä tehtävä" tag; level 3 was never core, so the core path is unchanged; tag renders clearly before the task text.
-- Round 3, text only; no render, widths not measured.
-- Stage-1 options are 30, 30 and 35 characters, feedbacks 199, 200, 206: the round-2 form cue is gone. Correct feedback names neither the acceleration nor the reason.
-- Reasons 83–94 characters, all with formula or symbols, correct reason not marked; numbers and solution unchanged and right.
-- Hash at start 06d5cc861549825f, at end 06d5cc861549825f.
+- Round 2, delta: the round-1 fixes judged in their context.
+- L3-06 answer now 1,2 kg (two figures) as the reason says; the check against T = 2,36 N versus 2,94 N is in the working.
+- No new task, figure or level change; set mix and counts unchanged from the passed version.
+- Language and case endings in the changed text are correct.

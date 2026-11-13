@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: d2e456cbde8ae349
-Mode: full (translation review against the reviewed Finnish set; new task fy4-2-L2-08)
-Round 1
+CONTENT-HASH: b0964931f3ff2157
+SCOPE: delta added-exercise from d2e456cbde8ae349 base 81db4a6fd727
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-(none)
+1. solutions.md fy4-2-L1-09 Järkevyys - division still written with a colon (2 * 20 m : 9,81 m/s^2); use \dfrac. Optional.
 
 ## Checked
-- fy4-2-L2-08 (YO-skill form) is parallel to fi: same choices in the same order, each distractor feedback names the same misconception and repairs it without more disclosure than fi.
-- Language level: natural English, glossary terms used consistently.
-- Model answer is complete and parallel to fi; other exercises unchanged from the earlier passed review.
+- Round 2, delta: the round-1 fixes judged in their context.
+- L1-09 significant-figure wording is now honest: four figures in the table value, three in the answer because tables differ in the fourth; consistent with the 4 % tolerance.
+- No new task, figure or level change; set mix and counts unchanged from the passed version.
+- Language and case endings in the changed text are correct.

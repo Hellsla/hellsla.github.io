@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 5ffc229e2dbf46e5
-
+CONTENT-HASH: 2ec9267f358ff7ed
+SCOPE: delta added-exercise from 5ffc229e2dbf46e5 base 81db4a6fd727
 ## Blocking
-
+(none)
 ## Polish
-- exercises.json fy4-14-L1-09 statements[1] feedback — "vain ilmanvastus on hetken nolla" reads as if nothing else is zero; "ilmanvastus on hetken nolla, mutta paino vaikuttaa".
-- Statements: the false ones are the "ei yhtään" and "saman" wordings; make one true statement absolute-sounding (e.g. "Rajanopeudella kokonaisvoima on nolla") so wording does not give the truth value.
-- Level: five statements with the rising-ball case a > g sit high for level 1; fine as is, but L2 would also do.
-
+- fy4-14-L2-08 text b) — the second sentence asks two things (percent and the terminal speed with its drag); the answer box is a), so split b) into b1 and b2 or say "Perustele myös rajanopeuden ilmanvastus".
+- fy4-14-L2-08 solutions.md (Vastaus b) — "noin 48 m/s" is read by eye from points reaching 47,3 m/s; say "lähes 48 m/s tai hieman yli, koska nopeus vielä kasvaa" so a student not seeing a plateau still agrees.
+- fy4-14-L2-08 — three kinds at once (graph, data, model) with two parts; it is the hardest of level 2 and could sit after L2-07.
 ## Checked
-- Round 1, new YO-skill task only (the rest of the set was PASS before). All checks from the packet text and exercises.json/solutions.md; no render was made or opened, so phone width of formulas is estimated from the LaTeX, not measured.
-- Each truth value verified: a > g when rising (drag and weight both down), apex weight 2,65 N, drag grows so a falls, F_v = G at terminal speed, lighter ball has lower terminal speed.
-- Distractors hit the lesson's warned mistakes (no force at rest/apex, drag greater than weight at terminal speed, mass and terminal speed); all taught in the chapter (L1-04, L2-03, L3-02).
-- Every feedback explains its statement; answer string lists 2 true and 3 false.
-- Hash unchanged at end.
+- Round 1, delta: L2-08 judged in full; the rest of the set unchanged.
+- Figure needed: seven points readable, the description gives the same data and no acceleration, force or mass; answer not disclosed.
+- Numbers: a = (46,4 − 40,4)/4,0 = 1,50 m/s²; F_v = 75,0 · 8,31 = 623 N; 84,7 % of 736 N; other point pairs (4 s and 12 s) stay within 5 %.
+- Force diagram drawn before the equation (weight down, drag up and shorter than weight), positive direction down stated; fits the chapter's fbd skills.
+- Not a repeat of L2-05 or L3-03 (the first gives a force from a graph at a moment, the others terminal-speed reasoning); Finnish and case endings correct.
+- Deterministic sims FAIL in the packet is outside the exercise set; not judged.
