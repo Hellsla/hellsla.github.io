@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 2018749175b6d30f
-Mode: delta, round 2
+CONTENT-HASH: e5a8473323aac32e
+Mode: delta, round 3
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] 3-18 graph — the points sit in the upper right of an axis range from -100 to 100 °C, so they are small; the range is deliberate, so only noted.
-- [Minor] 3-18 task — "(mafytaulukot.fi)"-type names are plain text elsewhere; a link would help.
+- [Minor] 3-18 graph — the points sit in the upper right of a -100 to 100 °C range, so they are small; the range is deliberate, only noted.
 
 ## Checked
-- fy3-3-open-exercises-L2-1280-10 and -11: 3-18 (formerly L2-08) task text, scatter graph (p (kPa), θ (°C), markers only, 25-unit grid matching the "grid spacing" sentence), answer chip 91 °C, the whole solution. The new Given and Reading the graph text agree with the drawing, the slope and substitution fractions are aligned, the 8 % tolerance is stated, and the units are LaTeX. No clipping.
-- The rest of the set is unchanged.
+- fy3-3-open-exercises-L2-1280-12: end of the 3-18 solution. The Reasonableness line now reads "between 75 and 100 °C, nearer the upper end" followed by the Check chain, which is aligned and has units in LaTeX. It reads fluently and nothing is clipped.
+- The rest of the set is unchanged from the round-2 pass (3-18 task, graph and solution, seen then).
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4
