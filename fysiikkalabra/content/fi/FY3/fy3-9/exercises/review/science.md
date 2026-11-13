@@ -1,22 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: fb4c9e7694ba0259
-Round: 1
+CONTENT-HASH: fba7000b59694eb4
+SCOPE: delta added-exercise from fb4c9e7694ba0259 base 89bcb63b7431
 
 ## Blocking
 (none)
 
 ## Polish
-- solutions.md:261-265 (L2-08) — "ratkaistaan paine tilavuudella $V_2$" then sets $V_2 = 20$ ml, while the task's end volume is 10 ml (named $p_3$). Name the intermediate point differently (e.g. $p$ at $V = 20$ ml) or say that 20 ml is a check point read off every graph.
-- solutions.md:147 (L2-05) — mirror reason for B (fixed air amount) still optional. Carried over.
-- L1-07 is still the third plain Boyle compression at level 1; exercise-bank plan line 70 still names "ruiskumittaus → linearisointi" instead of L2-07. Carried over.
+- solutions.md (L1-09) — Periaate could add that the bag's air pressure equals the outside pressure because the bag is not stretched taut (as the worked example says "pääsee laajenemaan vapaasti"); optional, the task's "ilmapussi" implies it.
+- Carried over from the previous round: L2-08 intermediate point named $V_2$; L2-05 mirror reason for B; L1-07 third plain Boyle compression.
 
 ## Checked
-- New task L2-08 (kuvaajan valinta), recomputed: pV = 4000 kPa·ml → 100/200/400 kPa at 40/20/10 ml; option B is the only curve through these points.
-- figures.py pick-*: all four on one grid (V 0–45 ml, p 0–450 kPa, to scale as stated). A: line (40;100)–(10;400) gives 300 kPa at 20 ml, as the feedback says; C: constant 100 kPa; D: (10;25)–(40;100) passes the origin, i.e. p ∝ V, as its feedback says.
-- Exactly one correct option; each distractor really wrong and catches a named mistake: A is the lesson's own warned one ("kääntäen verrannollisuus ei ole laskeva suora"), C constant T read as constant p, D dependence read the wrong way.
-- Conditions stated in the task: tip closed (fixed amount), pushed slowly, temperature constant; solution Periaate states both conditions; feedback C mechanism (more wall collisions) right.
-- Option texts are "Kuvaaja A–D" only; figure descriptions give the same values as the graphs; nothing in form reveals B beyond the physics.
-- Within fy3-9 (Boyle, (V,p) graph shape); level 2 fits.
-- Renders: checked L2 screenshots 12–13 at 1280 px (option graphs legible; A and B share end points as intended; solution formulas short). Phone width not rendered: the inline chains (≈ "p₂ = 100 kPa·40 ml / 20 ml, eli p₂ = 200 kPa") judged from text to fit ~300 px.
-- answers.py and the other tasks unchanged since the round-3 PASS (commit touches exercises.json, solutions.md, figures.py only).
+- Added task L1-09 only (delta added-exercise); other tasks unchanged per packet.
+- Table value: docs/mafy-arvot.tsv row fy3-9, MAFY "Ilmanpaine, tiheys ja lämpötila eri korkeuksilla", 3000 m → 70 100 Pa (VERIFIED); agrees with the standard atmosphere (70,1 kPa).
+- Recomputed: $V_2 = 101 \cdot 2{,}0 / 70{,}1 = 2{,}882$ l → 2,9 l; answers.py gives 2,881598; with 70,108 kPa 2,8813 — same rounded answer.
+- Law and conditions: closed bag (fixed amount), temperature stated constant in the task; the solution notes that the real temperature falls with height (table 15 °C → −4,5 °C), so the assumption is explicit (guardrail "state the model's assumptions in the task").
+- Unit l, two significant figures from $2{,}0$ l; tolerance 0,04 (±4 %) covers a student using 101,325 kPa or rounding the table value.
+- Solution complete: given/asked, principle with reason, symbolic $V_2 = p_1V_1/p_2$ before numbers, conversion Pa → kPa, substitution, rounding reason, real check (pressure ratio 1,44 and $pV$ equal 202 kPa·l).
+- Notation matches the brief ($p_1V_1 = p_2V_2$, \textsf{l}); inside FY3 central content (kaasujen tilanmuutokset); level 1 fits (one formula, one lookup).
 - Hash identical at start and end.

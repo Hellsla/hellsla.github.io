@@ -1,18 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 717b427c7d574c97
-Round: 1
+CONTENT-HASH: dc76a60c8222837b
+SCOPE: delta added-exercise from 717b427c7d574c97 base 89bcb63b7431
 
 ## Blocking
 (none)
 
 ## Polish
-- exercises.json:235 (L2-08) — the distractors are proportionality slips (U ignored, U read backwards, ΔT ignored), not the chapter's warned mistakes ("kylmä virtaa", temperature rising during melting, mean temperature); fine for a "change prediction" task, but the U-backwards option could mention that U describes how easily heat passes, to link it to the lesson's idea that energy flows in, not cold out.
-- lessons/FY3/fy3-16/answers.py — add L2-08 to the multiple-choice comment.
+- solutions.md (L2-09) Kuvaajan lukeminen — "Kuvaaja on suora, joten teho on vakio" turns the inference round: the power is given as constant, and the line is straight because the power is constant, the losses small and $c$ constant. Suggest "Teho on vakio ja häviöt pienet, joten kuvaaja on suora."
+- solutions.md (L2-09) Järkevyys — "Oletus häviöttömyydestä tekee todellisesta arvosta hieman pienemmän" is unclear; meant: "Jos osa tehosta siirtyy ympäristöön, todellinen $c$ on hieman pienempi kuin laskettu $900\,\text{J/(kg}\cdot\text{K)}$." (Direction right: losses mean less than $Pt$ reaches the block.)
+- L2-10 — "teholla 25 W tasaisesti" is a stated model assumption (by $P = UA\Delta T$ the power is somewhat larger while the ice is below 0 °C); fine as given, optional half-sentence in the solution.
 
 ## Checked
-- Recomputed t = s m/(U A ΔT): t2/t1 = 1,5 · 2 · (20/30) = 2,0; U ignored 1,0; U backwards 0,5; ΔT ignored 3,0 — every option's value and feedback matches.
-- Exactly one correct option; options 1 and 2 share wording, so the correct one is not identifiable by length or hedging.
-- Model conditions stated in the task: no drinks, inside 0 °C until the ice is gone, all conducted heat melts ice, same wall area; ΔT = outside temperature in °C as the lesson says.
-- Formula and symbols (s, m, U, A, ΔT, t) exactly the lesson's t = s m/(UAΔT); within fy3-16.
-- Renders: measured at 390 px in Chromium with feedback and solution open: widest inline formula 185 px. Physics judged from text.
+- Only L1-09, L2-09, L2-10 judged (delta added-exercise); the rest unchanged per packet.
+- L1-09 recomputed: $Q = rm = 2260 \cdot 0{,}30 = 678$ kJ → 680 kJ; MAFY 2260 kJ/kg matches docs/mafy-arvot.tsv (VERIFIED); water already at 100 °C stated, so only $Q = rm$; comparison "yli viisi kertaa" (678/126 = 5,4) right.
+- L2-09 recomputed: $c = Pt/(m\Delta T) = 400 \cdot 180 / (2{,}0 \cdot 40) = 900$ J/(kg·K); no-loss assumption stated in the task; value matches aluminium, plausible.
+- Figure fy3-6/heating-line: line (0 s; 20 °C)–(180 s; 60 °C) on gridline crossings, to scale; description lists the same end points; no slope or $c$ shown.
+- L2-10 recomputed: from the graph $Q = 220$ kJ (ice warming 20,2 kJ + melting 200,4 kJ = 220,6 kJ with $c_\text{j} = 2100$, $s = 334$), $t = Q/P = 8800$ s = 2,44 h → 2,4 h; answers.py 2,444.
+- Figure fy3-7/melting-curve: break points (20; 0) and (220; 0) on grid crossings; after-melting slope $80\,\text{kJ}/(4{,}19 \cdot 0{,}60) = 31{,}8$ K matches the drawn (300; 31,9); description matches; neither names melting nor gives the time.
+- Solutions complete (given/asked, principle with reason, symbolic before numbers, conversions, substitution with units, rounding reason, real checks); energy-balance form $Pt = Q$ as in the brief.
+- Units kJ, J/(kg·K), h and tolerances fit; inside FY3 (lämpeneminen, olomuodon muutokset).
 - Hash identical at start and end.

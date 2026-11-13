@@ -1,21 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 3dd71e954a48a7f8
-Round: 1 (YO-skill task)
-
-Scope: the new task L2-08 (find the error, added 2026-11-05). The rest of the set and answers.py are unchanged since the round-2 PASS.
+CONTENT-HASH: b1d7dd63f21652d2
+SCOPE: delta added-exercise from 3dd71e954a48a7f8 base 89bcb63b7431
 
 ## Blocking
-- none
 
 ## Polish
-- solutions.md L2-08 "Oikein: levy luovuttaa ympäristöön $243\,\text{kJ}$" and the option-4 feedback. $m = 3{,}0\,\text{kg}$ has two significant figures, so the stated result should be about $2{,}4 \cdot 10^2\,\text{kJ}$. Fix: "noin $240\,\text{kJ}$ ($2{,}4 \cdot 10^2\,\text{kJ}$)". Row 3's intermediate value can stay.
-- exercises.json L2-08 row 3 substitutes without units. The feedback calls this acceptable ("Perusyksiköillä…"), but a strict reader might pick row 3 for it. Optionally add the units, so that row 4 stays the only defensible choice.
+- exercises/solutions.md (fy3-6-L2-09, Kuvaajan lukeminen) — "kupari lämpenee ja jäähtyy helposti" and "kuparista irtoaa kilogrammaa kohti vähän lämpöä": both mean per kilogram and per kelvin; adding "kelviniä kohti" keeps the C-level simplification exact. The doubled "Kuvaajan lukeminen kuvasta" lead-in is wording only.
 
 ## Checked
-- My own script gives Q = 450 · 3,0 · (−180) J = −243 000 J. Rows 1–3 are correct, and row 4 is the only wrong line: a negative Q is allowed, and the plate gives energy away. "Laskussa ei ole virhettä" is last, as the schema requires.
-- Every option's feedback is correct. Row 1 catches the lesson's "+273 for ΔT" mistake. Row 3 and row 4 catch the "Q is always positive" mistake. The sign convention matches the brief ("jäähtyessä negatiivisia").
-- The conditions are stated: there is no phase change, so Q = cmΔT holds. The value c = 450 is given and matches the lesson's table.
-- The correct option is not identifiable by form. The four "Rivi n: …" labels have the same pattern and similar length.
-- Inline chains: "ΔT = 40 °C − 220 °C = −180 K" and "Q = 450 · 3,0 · (−180), eli Q = −243 000 J" are each under about 300 px, and the second breaks at "eli".
-- Renders: I viewed review/shots/fy3-6-open-exercises-L2-1280-11.png and -12.png (after the commit). The options are shuffled and the wrong-option feedback shows. I checked the phone width from the text only.
-- The hash was the same at the start and at the end.
+- MAFY value verified on mafytaulukot.fi (*Ominaislämpökapasiteetteja*, 20 °C): alumiini $0{,}896\,\text{kJ/(kg·K)}$, as the solution uses.
+- L1-09 recomputed: $Q = cm\Delta T = 0{,}896 \cdot 0{,}80 \cdot 80 = 57{,}3\,\text{kJ}$; with the lesson's 900 J/(kg·K) 57,6 kJ, inside tolerance 0,04; answers.py agrees.
+- L1-09 condition stated (aluminium stays solid, so $Q = cm\Delta T$ applies); $\Delta T$ in K = °C difference; kJ unit carried through; two figures justified (0,80 kg, 80 K); check (0,72 kJ/K · 80 K) real.
+- L2-09 recomputed: $c_\text{Cu} = 385\,\text{J/(kg·K)}$ from the bar label (figure code prints it beside the bar), $Q_\text{luov} = 385 \cdot 3{,}0 \cdot 60 = 69{,}3\,\text{kJ}$; answers.py agrees; 69 kJ inside tolerance 0,03.
+- L2-09 sign: the task asks for the released heat as a positive number and the solution uses $|\Delta T|$, consistent with the brief's convention ($Q < 0$ on cooling).
+- L2-09 check (same heat cools 3,0 kg water by ≈ 5,5 K) real and right.
+- Figure description lists all six values, the same as the lesson's table; the task needs only reading, so nothing is given away beyond the datum.
+- Both in FY3 scope; solutions symbolic before substitution.
+- Rest of the set unchanged since PASS; hash same at start and end.

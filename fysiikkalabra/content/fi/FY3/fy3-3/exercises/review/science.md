@@ -1,20 +1,17 @@
-VERDICT: PASS
-CONTENT-HASH: e1dd7ab8f7baa8e3
+VERDICT: FAIL
+CONTENT-HASH: 394ed5393a14f07f
 
 ## Blocking
-- none
+- exercises/exercises.json (fy3-3-L2-08) + solutions.md "Kuvaajan lukeminen" — A (assessment): the answer cannot be read from `fy3-3/extrapolation-points` to the stated tolerance. The figure has only 25 kPa gridlines (about 1,9 px per kPa at 1280 px, shot L2-10) and no value labels, yet the solution "reads" $102{,}5\,\text{kPa}$, and the asked $90\,\text{kPa}$ lies only $1\,\text{kPa}$ above the 50 °C point. The slope is $0{,}275\,\text{kPa/°C}$, so a $1\,\text{kPa}$ reading error moves θ by about $4\,{}^\circ\text{C}$: reading the 50 °C point as 90 kPa gives $50\,{}^\circ\text{C}$, as 88 kPa gives $58\,{}^\circ\text{C}$, both outside the tolerance 0,04 ($52{,}3$–$56{,}7\,{}^\circ\text{C}$), and a least-squares line gives $54{,}0\,{}^\circ\text{C}$. The solution's "53–56 °C hyväksytään" is not what the task can expect from the figure. — Fix: either give the task a figure whose points sit on readable grid values (e.g. a 5 kPa minor grid, points on whole grid values) and ask for a pressure far from a measured point, or give the measured values in the task text (`data`) and keep the figure as illustration; then align the solution's reading and the tolerance with what can be read.
 
 ## Polish
-- exercises/exercises.json:116 (L1-09) — "kaasun paine on suoraan verrannollinen kelvinlämpötilaan" omits "harvan" (guardrail: $p \propto T$ at constant V holds for a thin gas far from condensing). It is given as a task premise like the PASSed L2 tasks, so C; for consistency with the lesson's Tiivistelmä write "Suljetun jäykän astian harvan kaasun paine …".
-- L1-09 distractors are purely dimensional; none targets the chapter's own warned mistake (°C instead of K). Acceptable for type 7; optional, not required.
+- exercises/exercises.json (fy3-3-L1-10) — "nestetypen lämpötila" equals the boiling point only for liquid nitrogen boiling at normal pressure (e.g. in an open dewar); the task names normal pressure only for the lookup. Optional B-type clause: "avoimessa astiassa normaalipaineessa". The solution's "Nestemäinen typpi on kiehuvaa" could say the same.
+- exercises/exercises.json (fy3-3-L1-10) — repeats L1-03 inversely (77,4 K → −196 °C); physics fine.
 
 ## Checked
-- delta review 2026-11-07 round 4 (three small fixes): L1-04 Substitution now ΔT = (45 − 20) K = 25 K: correct and consistent with the round 3 Formula ΔT/K = (θ_2 − θ_1)/°C. Hashes equal at start and end.
-- delta review 2026-11-07 round 3 (fixes to round 2 findings): round 2 Blocking resolved. L1-04 now ΔT = T_2 − T_1 with T/K = θ/°C + 273,15, the constant cancelling to ΔT/K = (θ_2 − θ_1)/°C: correct. L2-04 ratio has θ/°C + 273,15 in numerator and denominator: correct (100,15 K and 400,15 K, ratio 4,00 unchanged). L2-01 T_2 = (288 + 45) K = 333 K, θ_2 = 59,85 °C correct. Page now uses the numerical-value equation throughout. Hashes equal at start and end.
-- delta review 2026-11-07 round 2 (follow-up consistency edits): every changed Kaava/Muunnokset/Sijoitus line: T/K = θ/°C + 273,15 and its inverse correct; all 32 substitutions (a ± 273,15) K/°C = b recomputed by script, no mismatch; L1-05-type T_2 = T_1 + ΔT form correct. Two unchanged lines keep the old form (Blocking). Hashes equal at start and end.
-- L1-09: $c = p/T$ → kPa/K; check $\text{kPa/K} \cdot \text{K} = \text{kPa}$; example $120 : 300 = 0{,}40\,\text{kPa/K}$ recomputed.
-- Each distractor's unit in its feedback right: kPa·K → $c\,T$ in kPa·K²; K/kPa → K²/kPa; kPa → kPa·K.
-- Exactly one correct option; all four have the same form ("$c$ on yksikössä …"), none longer or hedged.
-- Notation $p$, $T$, kelvin as in the brief; in scope of fy3-3.
-- Inline chains at 390 px (Playwright on preview, opened): longest 270 px, fits.
+- MAFY value verified on mafytaulukot.fi (*Aineiden olomuodon muutokset*, 1 atm): typpi kiehumispiste $-196\,{}^\circ\text{C}$, as the solution uses.
+- L1-10 recomputed: $T = -196 + 273{,}15 = 77{,}15\,\text{K} \approx 77\,\text{K}$; with −195,8 °C 77,35 K, inside tolerance 0,04; answers.py agrees. Rounding reason (whole degrees) right; check by back-conversion real.
+- L1-10 solution complete; kelvin conversion as in the brief (numeric values, no "kelvinaste").
+- L2-08 recomputed: endpoint slope $0{,}275\,\text{kPa/°C}$, $\theta = 15/0{,}275 = 54{,}5\,{}^\circ\text{C}$; least squares $k = 0{,}276$, $b = 75{,}1$, $\theta = 54{,}0\,{}^\circ\text{C}$. Physics (linear $p(\theta)$ at constant volume, closed rigid vessel stated) right; symbolic solve before substitution present.
+- Figure code: points as the description lists; description does not give the answer.
 - Rest of the set unchanged since PASS; hash same at start and end.

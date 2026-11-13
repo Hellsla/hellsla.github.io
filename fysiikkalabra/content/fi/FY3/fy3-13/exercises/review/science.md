@@ -1,22 +1,23 @@
-VERDICT: PASS
-CONTENT-HASH: b38642a6e641d4f2
+VERDICT: FAIL
+CONTENT-HASH: b2b8aa84997e9232
 Round: 1
 
 ## Blocking
-- none
+- exercises.json:345 (L2-09 `tolerance` 0.02) with solutions.md:264 and :268 — **A (assessment)**: the solution says a hand-drawn value between −260 and −285 °C "hyväksytään", but ±2 % of −272,7 accepts only −267,3 … −278,2 °C (the page shows −260 and −285 as "Lähellä", not right). Reading the 100 °C point as 102 or 103 kPa on a 25 kPa grid already gives −277,8 / −267,9 °C; ±1 kPa on both points (the precision the solution itself states) gives −251 … −298 °C, so "useita celsiusasteita" understates it. — Set `tolerance` to 0.05 (−259 … −286 °C, matching the stated range) and write the uncertainty as "noin kymmenen celsiusastetta tai enemmän" (or narrow the stated range to what the tolerance accepts).
+- solutions.md:258 (L1-09 Järkevyys) — **A (causality)**: "selvästi alempana kuin nestetypen kiehumispiste −195,8 °C, eli kylmempää ei voi saada" draws the lowest possible temperature from being colder than liquid nitrogen; that does not follow. — Keep the comparison as a magnitude check and give the real reason separately, e.g. "Kelvinasteikko alkaa absoluuttisesta nollapisteestä, joten negatiivista kelvinlämpötilaa eikä tätä kylmempää lämpötilaa ole."
 
 ## Polish
-- exercises.json:273 (L2-08) — the five example points lie within 0,16 kPa of the fitted line although Δp = 1,0 kPa; the set is labelled esimerkkiaineisto, so not an error, but a little more scatter (as in the lesson's example) would make the "within the uncertainty" judgement less artificial.
-- lessons/FY3/fy3-13/answers.py — no comment that L2-08 is multiple choice with no number (fy3-14..16 and FY2 note this); add one line.
-- solutions.md:237 (L3-05) — "desimaali annetaan, jotta tulos vastaa vastauskentän arvoa" is not a physics reason (carried over).
+- solutions.md:275 (L2-10) — stated accepted range 52–58 kPa is slightly wider than tolerance 0.05 (52,1–57,6 kPa); say "noin 52–57 kPa".
+- L1-09 — tolerance 0.04 (±11 °C) on an exact table value is loose; harmless, but 0.01 would fit a lookup.
+- L2-09 text "Mittauspisteet ovat suoralla" — the points lie on a line only within reading precision (slopes 0,28 … 0,26 kPa/°C between neighbours); "lähes suoralla" fits the guardrail on fits.
 
 ## Checked
-- delta review 2026-11-07 round 2 (follow-up consistency edits): L1-08: shortened correct option (extending the line beyond the measured range, assuming the linear dependence holds there) is correct; option lengths now 95–105 characters (fi), comparable, all four of the same 'X, because Y' form, so no length giveaway; answer equals the option text; the teacher's full definition opens the feedback and agrees with the rest of it. Exactly one correct option. Hashes equal at start and end.
-- delta review 2026-11-07 (teacher's proofread replacement texts): L1-08 correct option, answer key, feedback and model answer now define extrapolation as extending the fitted line beyond the measurement range assuming the linear p(θ) dependence holds there, result a model-based estimate, not measured: correct, exactly one correct option, distractors unchanged and still wrong.
-- Recomputed in one script: Δp(60–20 °C) = 13,5 kPa; Δp(22–20 °C) = 0,8 kPa < Δp; intervals 101,0–103,0 / 101,8–103,8 overlap, 101,0–103,0 / 114,5–116,5 disjoint; least-squares line k = 0,3365 kPa/°C, p0 = 95,27 kPa, p(−100 °C) = 61,6 ≈ 62 kPa; −100 °C is 120 °C below the range. All numbers in options, feedback and solution agree.
-- Exactly one correct option; each distractor really wrong and its feedback right: overlap = "ei voi osoittaa", not "ei eroa" (guardrail "cannot be shown ≠ equal"); extrapolation as estimate, not certain (the chapter's own warned mistake "nollapiste on mitattu").
-- Correct option not identifiable by form: options 1 and 3 have the same structure, option 2 also cites the uncertainty; option 4 alone says "varmasti" but is wrong.
-- Conditions stated: closed rigid bottle, temperature uncertainty negligible; data labelled as example data; "todennäköisesti todellista" wording per guardrail.
-- Notation (p, θ, Δp, kPa, °C) as in the lesson; within fy3-13 and fy3-3.
-- Renders: measured at 390 px in Chromium (preview/fy3-13.html, all feedback and solution opened): widest inline formula 299 px (115,5 − 102,0 = 13,5 kPa), within ~300 px; rest ≤ 120 px. Physics judged from text.
+- Only L1-09, L2-09, L2-10 judged (delta added-exercise); the rest unchanged per packet.
+- L1-09: $\theta_0 = -T_0 = -273{,}15$ °C; MAFY 0 °C = 273,15 K matches docs/mafy-arvot.tsv (VERIFIED); answers.py −273,15.
+- L2-09 recomputed: $k = 27{,}5/100 = 0{,}275$ kPa/°C, $\theta_0 = -75/0{,}275 = -272{,}7$ °C; least-squares through all five points gives −272,1 °C; answers.py −272,727.
+- L2-10 recomputed: $\theta = -73{,}15$ °C, $p = 75 - 0{,}275 \cdot 73{,}15 = 54{,}88$ kPa; independent $p \propto T$: 54,9 kPa; ±1 kPa reading gives 52,4–57,3 kPa, inside tolerance 0.05.
+- L2-10 states the linear-extrapolation assumption in the task and flags celsius axis vs kelvin value: conditions met.
+- Figure fy3-3/extrapolation-points: five points as in the description, no line, axis to −150 °C; gives what both tasks need and not the answer.
+- Rigid closed vessel (fixed $n$, $V$) stated; formulas and symbols as in the brief ($k$, $\theta_0 = \theta_1 - p_1/k$).
+- Solutions otherwise complete (given/asked, principle, symbolic first, conversions, substitution, rounding reason, independent checks in L2-09/L2-10).
 - Hash identical at start and end.

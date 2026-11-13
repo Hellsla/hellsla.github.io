@@ -1,17 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: b06084335558b3a5
-Round: 2
+CONTENT-HASH: 6c2b323c49e732b1
+SCOPE: delta added-exercise from b06084335558b3a5 base 89bcb63b7431
 
 ## Blocking
 (none)
 
 ## Polish
-- The distractors still do not catch the lesson's own warned mistake (an almost perfect heat engine); the true-but-irrelevant reason (both below 100 %) only touches it. Optional, carried over.
+- L1-09 text — "laajenee ulkoilman paineessa … Paine pysyy vakiona" leaves implicit that the gas's own pressure equals the outside pressure (slow expansion, light frictionless piston). C-level simplification; "kaasun paine on koko ajan sama kuin ulkoilman paine" would make $p$ in $W_\text{k} = p\,\Delta V$ unambiguous.
+- L2-09 — the physics asked is only $\Delta V = A\,\Delta s$; the 250 kPa on the graph goes unused. Optional: a second part asking $W_\text{k}$ (750 J) would tie the figure to the chapter's law.
 
 ## Checked
-- Round-1 Polish resolved: reason 2 now reads "Kone A ottaa enemmän lämpöä $Q_1$, joten sillä on enemmän muutettavaa työksi: $W = Q_1 - Q_2$." The correct reason is no longer the only one with a formula.
-- The new reason is still really wrong: W is given as the same 120 kJ for both engines, so A's extra Q₁ goes to Q₂ (280 kJ against 180 kJ). Its unchanged feedback says exactly this, and the formula it cites is the lesson's own W = Q₁ − Q₂ (true, but misused).
-- Recomputed: η_A = 0,30, η_B = 0,40; exactly one correct choice (B) and one correct reason; the solution is unchanged and right.
-- Commit 6bbde30c5 changes only this line in fy3-11; answers.py and the other tasks unchanged.
-- Text only this round: I did not open the new captures. The added inline formula "W = Q₁ − Q₂" is short (about 100 px).
+- Only L1-09 and L2-09 judged (delta added-exercise); the rest unchanged per packet.
+- L1-09 recomputed: $W_\text{k} = 101\,325\,\text{Pa} \cdot 0{,}0020\,\text{m}^3 = 202{,}65$ J → $2{,}0 \cdot 10^2$ J; answers.py 202,65; answer 200 with relative tolerance 0,04 accepts 202,65. MAFY value matches docs/mafy-arvot.tsv (VERIFIED).
+- L1-09: constant pressure stated, so $W_\text{k} = p\,\Delta V$ applies; sign (expansion, positive work) right; two figures from 2,0 l; check (≈ 100 kPa · 2 l) real; the lifting comparison (2 kg, 10 m ≈ 196 J) is right and stays within FY3 ($W = Fs$, $G = mg$).
+- L2-09 recomputed: $\Delta s = (4{,}0 - 1{,}0)\cdot 10^{-3}\,\text{m}^3 / 50\cdot 10^{-4}\,\text{m}^2 = 0{,}60$ m; answers.py 0,6.
+- figures.py pv-isobaari: horizontal segment (1,0 l; 250 kPa)–(4,0 l; 250 kPa) on gridlines, axes from 0, to scale as stated; direction arrow matches "laajenee"; description gives the same end points; no area or work shown, so the figure gives nothing away.
+- L2-09 conditions: constant cross-section stated (sylinteri, poikkipinta-ala); conversions cm² → m² and l → m³ right; reasonableness check (gas column 0,20 → 0,80 m) is an independent check.
+- Both solutions complete (given/asked, principle with reason, symbolic before numbers, conversions, substitution with units, rounding reason, check); notation $W_\text{k}$, \textsf{l} as in the brief.
+- Inside FY3 central content (mekaaninen työ, kaasun tilanmuutokset).
 - Hash identical at start and end.

@@ -1,22 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 969eff4b4ef9e204
-Round: 2
+CONTENT-HASH: abc777e3a72f3bf7
+SCOPE: delta added-exercise from 969eff4b4ef9e204 base 89bcb63b7431
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- solutions.md:200 (L2-08) — the solution still explains statement 5 with the plain mean only. Since the feedback (exercises.json:279) now also rules out the mass-weighted mean (about 14 °C), one clause in the solution would keep the two consistent.
-- exercises.json:274 (L2-08, statement 4 feedback) — could add "tasapainossa normaalipaineessa", as the lesson summary does (C, carried over, optional).
-- lessons/FY3/fy3-14/answers.py — no comment marking L2-08 as having no number (statements). Add it to the "multiple choice" comments (carried over).
+- solutions.md (L2-09) — symbols $Q_\text{vesi}$, $Q_\text{lämm}$, $Q_\text{kaikki}$ differ from the brief's $Q_\text{v}$, $Q_\text{j,läm}$, $Q_\text{j}$; using the lesson's names would tie the task to its case list (case 2: $Q_\text{j,läm} \le Q_\text{v} \le Q_\text{j}$).
+- solutions.md (L2-09) Periaate — the 0 °C conclusion needs both $Q_\text{v} \ge Q_\text{j,läm}$ and $Q_\text{v} < Q_\text{j}$; the first is shown only in the reading step. One clause in Periaate would state the full condition where the principle is given.
 
 ## Checked
-- delta review 2026-11-07 round 3 (fixes to round 2 findings): round 2 Polish (L3-05) resolved. Formula: c_v m_v ΔT_v = Q_j + c_v(m_v+m_j)(T − 0 °C), T_j = 0 °C − ΔT_j, ΔT_v,min = Q_j/(c_v m_v), T_v,min = 0 °C + ΔT_v,min; conversions define ΔT_v = T_v − 0 °C. Recomputed: Q_j = 50 280 − 13 575,6 = 36 704,4 J, ΔT_j = 15,7 K so T_j = −15,7 °C, ΔT_v,min = 36 704,4/1257 = 29,2 K so T_v,min = 29,2 °C; consistent with the Principle and the inquiry. Hashes equal at start and end.
-- delta review 2026-11-07 round 2 (follow-up consistency edits): L1-06: shortened correct option (about 0 °C, ice and water coexist in equilibrium only at the melting point) correct, lengths now comparable with the distractors, same form, answer equals option text, teacher's full sentences open its feedback. All Q_v = c_v m_v ΔT_v edits (L2-01, L3-01, L3-03, L2-06, L2-08, L3-05, L1-08 feedback 18 855 J) correct; L3-05 Periaate (T_v,min − 0 °C) correct, limit 29,2 °C recomputed (Polish). Hashes equal at start and end.
-- delta review 2026-11-07 (teacher's proofread replacement texts): L1-06 correct option, answer key, feedback and model answer: pure water–ice mixture in equilibrium at about 0 °C at normal pressure (melting/freezing point), no net heat transfer so no melting or freezing: correct, conditions stated, exactly one correct option, agrees with the lesson summary.
-- Round-2 change (6bbde30c5): the task moved from L1-09 to L2-08 (exercises.json:245) with the same text and statements. The id is unique and nothing in answers.py refers to the old id.
-- Round-1 Polish on statement 5 is addressed. The mass-weighted mean 0,25·18/0,33 = 13,6 ≈ 14 °C is right, and the feedback correctly says neither mean helps.
-- The feedback now quotes 18 855 J and 26 720 J. I recomputed both: Q_v = 18 855 J ≈ 19 kJ and Q_j = 26 720 J ≈ 27 kJ. 56 g of ice melts, 24 g is left and T = 0 °C. Statements 1, 3 and 4 are true, 2 and 5 false, and the answer string matches.
-- The boundary case is per the guardrail (Q_v < Q_j → ice left at 0 °C). Notation is the lesson's. Level 2 fits two heat quantities and a comparison.
-- Renders: I measured the fresh preview at 390 px in Chromium with all feedback and the solution open. The widest inline formula is 263 px, within about 300 px. The physics is judged from the text.
+- Only L1-09 and L2-09 judged (delta added-exercise); the rest unchanged per packet.
+- L1-09 recomputed: $Q = sm = 333 \cdot 0{,}080 = 26{,}64$ kJ → 27 kJ; with the lesson's 334 kJ/kg 26,72 kJ, both inside tolerance 0.04. MAFY 333 kJ/kg matches docs/mafy-arvot.tsv (VERIFIED); the solution explains the 334 vs 333 difference.
+- L1-09 conditions: ice already at 0 °C and melt water at 0 °C stated, so $Q = sm$ alone applies; two figures from 80 g; check (≈ 25 K warming of 0,25 kg water) right.
+- L2-09 recomputed: heat left for melting $25 - 5 = 20$ kJ $< 60$ kJ → ice remains, $T = 0$ °C; melted $20/334 = 59{,}9$ g, all ice $60/334 = 179{,}6$ g, left 119,8 g; answers.py 119,76.
+- L2-09 data realistic: 5 kJ for 180 g ice means it starts at about −13 °C (freezer), 25 kJ ≈ 0,30 kg water at 20 °C.
+- Isolation ("lämpöä ei siirry astiaan eikä ympäristöön") and $s$ given in the task; the boundary-case logic matches the brief's case 2 and the guardrail.
+- figures.py energy-bars: bars end at 25, 5, 60 kJ on 5 kJ gridlines, to scale (6,6 px/kJ from one origin); description gives the same values; neither gives the remaining mass.
+- Both solutions complete (given/asked, principle with reason, symbolic before numbers, conversions, substitution with units, rounding reason, independent check 2/3 · 180 g).
+- Units kJ and g, tolerances fit; inside FY3 (olomuodon muutokset).
 - Hash identical at start and end.

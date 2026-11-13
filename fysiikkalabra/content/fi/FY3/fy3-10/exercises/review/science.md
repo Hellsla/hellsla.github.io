@@ -1,18 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 8c50fb38cfdcf2c1
-Round: 2
+CONTENT-HASH: aacdb2b4ad9b71db
+SCOPE: delta added-exercise from 8c50fb38cfdcf2c1 base 89bcb63b7431
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- exercises.json:321 and :325 (feedback D, "ei virhettä") — still "koska pullossa on huoneenlämpöistä ilmaa" / "ei sovi suljettuun pulloon", but the task does not say the air is at room temperature. State it in the task, or phrase it as "574 °C olisi uunin lämpötila". Carried over.
+- L2-09 — its answer $n_B = 0{,}0361$ mol is the intermediate step of L2-04 on the same figure (`n_B` in answers.py); a student doing both repeats the step. Consider asking for A, or for the ratio $n_A/n_B$ from the slopes, or ordering L2-09 before L2-04 as its warm-up.
+- answers.py — the comment "# Added exercises (teacher 2026-11-12 …)" appears twice in a row; one is enough.
 
 ## Checked
-- delta review 2026-11-07 round 2 (follow-up consistency edits): L2-08 and L1-08 Periaate: units must match R's unit, Pa with m³ or kPa with l, temperature always in K: correct, no longer claims base units are required; 'otherwise a unit factor remains' still true. Hashes equal at start and end.
-- Round-1 Polish resolved: V is now $2{,}00\,\textsf{l}$ = $0{,}00200\,\text{m}^3$ in the task text, in rows 1 and 3, in the row-1 feedback and in the solution (Mallivastaus rows 1 and 3), so the three-figure "$T \approx 301\,\text{K}$" is justified and row 4 is the only wrong row.
-- Recomputed: pV = 200 J, nR = 0,6648 J/K, T = 300,8 K ≈ 301 K; θ = 27,7 °C ≈ 28 °C; the wrong row gives 574 °C.
-- Exactly one correct option (row 4); "Laskussa ei ole virhettä" is last; the other feedback and the solution are unchanged and right.
-- Commit 6bbde30c5 touches only these lines in fy3-10; answers.py and the other tasks unchanged since the earlier PASS.
-- Text only this round: I did not open the new captures; the change is to digits inside existing inline formulas (row 3 grows by one character).
+- Only L1-09 and L2-09 judged (delta added-exercise); the rest unchanged per packet.
+- L1-09 recomputed: $n = 500/39{,}95 = 12{,}52$ mol, $p = nRT/V = 12{,}52 \cdot 8{,}31 \cdot 293 / 0{,}0100 = 3{,}047$ MPa → 3,05 MPa; answers.py agrees. MAFY value 39,95 g/mol matches docs/mafy-arvot.tsv (VERIFIED).
+- L1-09 conditions: ideal-gas behaviour stated as an assumption in the task (needed at about 30 bar: real argon deviates by a few per cent, inside the model the task sets); $R$ given; MPa conversion shown; three figures justified by 0,500 kg (T, R also three).
+- L1-09 check is a real one (molar volume 24 l/mol → about 30 × atmospheric ≈ 3 MPa).
+- L2-09 recomputed: from B's points $p/T = 0{,}15$ kPa/K; $n = pV/(RT) = 60\,000 \cdot 0{,}00200 / (8{,}31 \cdot 400) = 0{,}03610$ mol; same from (200 K; 30 kPa).
+- figures.py pt-suorat: B line $p = 0{,}15\,T$ kPa through gridline crossings (200; 30) and (400; 60); axes to scale from 0; the description lists the same points; neither gives $n$.
+- L2-09 conditions: closed rigid vessel (fixed $n$, $V$) stated; temperature already in K; the line through the origin is consistent with $p \propto T$ at constant $V$ for a thin gas.
+- Both solutions complete: given/asked, principle with reason, symbolic form first, conversions, substitution with units, rounding reason, real reasonableness check. Notation as in the brief ($pV = nRT$, $R = 8{,}31$, \textsf{l}).
+- Units (MPa, mol) and relative tolerances (0,04, 0,03) fit the data; within FY3 central content (ideaalikaasun tilanyhtälö).
 - Hash identical at start and end.
