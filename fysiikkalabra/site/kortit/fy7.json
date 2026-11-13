@@ -189,6 +189,208 @@
    "aihe": "fy7-valo",
    "kasite": "Linssin polttoväli",
    "maaritelma": "Etäisyys, jolla optiselta akselilta tuleva säteily kootaan pisteeseen."
+  },
+  {
+   "id": "fy7-magneettinen-voima",
+   "moduuli": "FY7",
+   "luku": "fy7-2",
+   "aihe": "fy7-magnetismi",
+   "kasite": "Magneettinen voima",
+   "maaritelma": "Magneettikentän liikkuvaan varattuun hiukkaseen kohdistama voima; se on kohtisuorassa nopeutta ja kenttää vastaan eikä muuta vauhtia.",
+   "kaava": "F_\\text{m} = |q| v B \\sin\\alpha",
+   "kaava_puhe": "F m on q:n itseisarvo kertaa v kertaa B kertaa sini alfa"
+  },
+  {
+   "id": "fy7-oikean-kaden-saanto",
+   "moduuli": "FY7",
+   "luku": "fy7-2",
+   "aihe": "fy7-magnetismi",
+   "kasite": "Oikean käden sääntö",
+   "maaritelma": "Muistisääntö magneettisen voiman suunnalle: peukalo nopeuden suuntaan, sormet kentän suuntaan, ja kämmen työntää positiiviseen varaukseen kohdistuvan voiman suuntaan."
+  },
+  {
+   "id": "fy7-massaspektrometri",
+   "moduuli": "FY7",
+   "luku": "fy7-2",
+   "aihe": "fy7-magnetismi",
+   "kasite": "Massaspektrometri",
+   "maaritelma": "Laite, joka erottaa samanvauhtiset ionit massan mukaan, koska magneettikentässä radan säde on verrannollinen massaan.",
+   "kaava": "m = \\dfrac{|q| B_2 r}{v}",
+   "kaava_puhe": "m on q:n itseisarvo kertaa B kaksi kertaa r jaettuna v:llä"
+  },
+  {
+   "id": "fy7-virtajohtimen-magneettikentta",
+   "moduuli": "FY7",
+   "luku": "fy7-3",
+   "aihe": "fy7-magnetismi",
+   "kasite": "Virtajohtimen magneettikenttä",
+   "maaritelma": "Sähkövirran synnyttämä kenttä, jonka kenttäviivat kiertävät suoraa johdinta samankeskisinä ympyröinä.",
+   "kaava": "B = \\dfrac{\\mu_0 I}{2\\pi r}",
+   "kaava_puhe": "B on myy nolla kertaa I jaettuna kahdella pii r:llä"
+  },
+  {
+   "id": "fy7-kaami",
+   "moduuli": "FY7",
+   "luku": "fy7-3",
+   "aihe": "fy7-magnetismi",
+   "kasite": "Käämi",
+   "maaritelma": "Kierukaksi kierretty johdin; pitkän käämin sisällä kenttä on lähes homogeeninen ja akselin suuntainen.",
+   "kaava": "B = \\mu_0 \\dfrac{N I}{l}",
+   "kaava_puhe": "B on myy nolla kertaa N kertaa I jaettuna l:llä"
+  },
+  {
+   "id": "fy7-sahkomagneetti",
+   "moduuli": "FY7",
+   "luku": "fy7-3",
+   "aihe": "fy7-magnetismi",
+   "kasite": "Sähkömagneetti",
+   "maaritelma": "Rautasydämellä varustettu käämi, jonka moninkertaisesti voimistunut kenttä on olemassa vain virran kulkiessa."
+  },
+  {
+   "id": "fy7-tyhjion-permeabiliteetti",
+   "moduuli": "FY7",
+   "luku": "fy7-3",
+   "aihe": "fy7-magnetismi",
+   "kasite": "Tyhjiön permeabiliteetti",
+   "maaritelma": "Luonnonvakio $\\mu_0 \\approx 4\\pi \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$, joka esiintyy virran synnyttämän magneettikentän kaavoissa."
+  },
+  {
+   "id": "fy7-kierrostiheys",
+   "moduuli": "FY7",
+   "luku": "fy7-3",
+   "aihe": "fy7-magnetismi",
+   "kasite": "Kierrostiheys",
+   "maaritelma": "Käämin kierrosten lukumäärä metriä kohti, $N : l$; pitkän käämin kenttä on verrannollinen siihen."
+  },
+  {
+   "id": "fy7-tasavirtamoottori",
+   "moduuli": "FY7",
+   "luku": "fy7-4",
+   "aihe": "fy7-magnetismi",
+   "kasite": "Tasavirtamoottori",
+   "maaritelma": "Moottori, jossa magneettikenttä kääntää virtasilmukkaa ja kommutaattori vaihtaa virran suunnan joka puolikierroksella."
+  },
+  {
+   "id": "fy7-kommutaattori",
+   "moduuli": "FY7",
+   "luku": "fy7-4",
+   "aihe": "fy7-magnetismi",
+   "kasite": "Kommutaattori",
+   "maaritelma": "Halkaistu rengas hiiliharjoineen, joka kääntää moottorin virtasilmukan virran suunnan joka puolikierroksella."
+  },
+  {
+   "id": "fy7-virtasilmukka",
+   "moduuli": "FY7",
+   "luku": "fy7-4",
+   "aihe": "fy7-magnetismi",
+   "kasite": "Virtasilmukka",
+   "maaritelma": "Suljettu johdinsilmukka, jonka vastakkaisiin sivuihin magneettikenttä kohdistaa vastakkaissuuntaiset, silmukkaa kääntävät voimat."
+  },
+  {
+   "id": "fy7-johtimien-valinen-voima",
+   "moduuli": "FY7",
+   "luku": "fy7-4",
+   "aihe": "fy7-magnetismi",
+   "kasite": "Johtimien välinen voima",
+   "maaritelma": "Kahden rinnakkaisen virtajohtimen magneettinen voima: samansuuntaiset virrat vetävät toisiaan puoleensa, vastakkaissuuntaiset hylkivät.",
+   "kaava": "F = \\dfrac{\\mu_0 I_1 I_2 l}{2\\pi r}",
+   "kaava_puhe": "F on myy nolla kertaa I yksi kertaa I kaksi kertaa l jaettuna kahdella pii r:llä"
+  },
+  {
+   "id": "fy7-dispersio",
+   "moduuli": "FY7",
+   "luku": "fy7-11",
+   "aihe": "fy7-valo",
+   "kasite": "Dispersio",
+   "maaritelma": "Taitekertoimen riippuvuus valon aallonpituudesta; vedessä ja lasissa violetin taitekerroin on suurempi kuin punaisen."
+  },
+  {
+   "id": "fy7-prisma",
+   "moduuli": "FY7",
+   "luku": "fy7-11",
+   "aihe": "fy7-valo",
+   "kasite": "Prisma",
+   "maaritelma": "Lasikappale, jonka toisiinsa nähden vinot pinnat taittavat eri värejä eri verran ja hajottavat valkoisen valon spektriksi."
+  },
+  {
+   "id": "fy7-spektri",
+   "moduuli": "FY7",
+   "luku": "fy7-11",
+   "aihe": "fy7-valo",
+   "kasite": "Spektri",
+   "maaritelma": "Värien viuhka, joka syntyy, kun valkoinen valo hajotetaan eri aallonpituuksiin."
+  },
+  {
+   "id": "fy7-sateenkaari",
+   "moduuli": "FY7",
+   "luku": "fy7-11",
+   "aihe": "fy7-valo",
+   "kasite": "Sateenkaari",
+   "maaritelma": "Vesipisaroissa taittuneen ja heijastuneen auringonvalon kaari, jonka punainen reuna näkyy noin $42^\\circ$:n kulmassa vastapisteestä."
+  },
+  {
+   "id": "fy7-poikkeamakulma",
+   "moduuli": "FY7",
+   "luku": "fy7-11",
+   "aihe": "fy7-valo",
+   "kasite": "Poikkeamakulma",
+   "maaritelma": "Kulma, jonka verran prisman läpi kulkeva säde kääntyy alkuperäisestä suunnastaan; violetilla se on suurin.",
+   "kaava": "\\delta = \\alpha_1 + \\alpha_4 - A",
+   "kaava_puhe": "delta on alfa yksi plus alfa neljä miinus A"
+  },
+  {
+   "id": "fy7-ohut-kalvo",
+   "moduuli": "FY7",
+   "luku": "fy7-14",
+   "aihe": "fy7-valo",
+   "kasite": "Ohut kalvo",
+   "maaritelma": "Läpinäkyvä kerros, jonka paksuus on valon aallonpituuden suuruusluokkaa ja jonka kahdesta pinnasta heijastuneet aallot interferoivat."
+  },
+  {
+   "id": "fy7-optinen-matkaero",
+   "moduuli": "FY7",
+   "luku": "fy7-14",
+   "aihe": "fy7-valo",
+   "kasite": "Optinen matkaero",
+   "maaritelma": "Kalvon pinnoista heijastuneiden aaltojen matkaero, kun kalvossa kuljettu lisämatka kerrotaan kalvon taitekertoimella.",
+   "kaava": "\\Delta s = 2nd",
+   "kaava_puhe": "delta s on kaksi kertaa n kertaa d"
+  },
+  {
+   "id": "fy7-puolen-aallonpituuden-siirtyma",
+   "moduuli": "FY7",
+   "luku": "fy7-14",
+   "aihe": "fy7-valo",
+   "kasite": "Puolen aallonpituuden siirtymä",
+   "maaritelma": "Heijastunut aalto kääntyy, kun valo heijastuu suuremman taitekertoimen ainetta vasten."
+  },
+  {
+   "id": "fy7-heijastuksenestopinnoite",
+   "moduuli": "FY7",
+   "luku": "fy7-14",
+   "aihe": "fy7-valo",
+   "kasite": "Heijastuksenestopinnoite",
+   "maaritelma": "Lasin pinnalle höyrystetty ohut kalvo, jonka pinnoista heijastuneet aallot heikentävät toisiaan, joten heijastus pienenee.",
+   "kaava": "d = \\dfrac{\\lambda}{4n}",
+   "kaava_puhe": "d on lambda jaettuna neljällä n:llä"
+  },
+  {
+   "id": "fy7-vaimennus",
+   "moduuli": "FY7",
+   "luku": "fy7-16",
+   "aihe": "fy7-valo",
+   "kasite": "Vaimennus",
+   "maaritelma": "Valon tehon pieneneminen kuidussa desibeleinä; peräkkäisten osuuksien vaimennukset lasketaan yhteen.",
+   "kaava": "A = 10\\,\\text{dB} \\cdot \\lg \\dfrac{P_0}{P}",
+   "kaava_puhe": "A on kymmenen desibeliä kertaa kymmenkantainen logaritmi P nolla per P"
+  },
+  {
+   "id": "fy7-induktioliesi",
+   "moduuli": "FY7",
+   "luku": "fy7-16",
+   "aihe": "fy7-induktio",
+   "kasite": "Induktioliesi",
+   "maaritelma": "Liesi, jonka kelan vaihtuva magneettikenttä indusoi kattilan pohjaan pyörrevirtoja, jotka lämmittävät pohjaa."
   }
  ]
 }

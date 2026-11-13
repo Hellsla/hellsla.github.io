@@ -259,7 +259,7 @@
   {
    "id": "fy8-elektronimikroskooppi",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-4",
    "aihe": "fy8-aaltohiukkasdualismi",
    "kasite": "Elektronimikroskooppi",
    "maaritelma": "Elektronien lyhyt aallonpituus mahdollistaa näkyvää valoa tarkemman kuvantamisen."
@@ -365,7 +365,7 @@
   {
    "id": "fy8-kvanttitila",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-5",
    "aihe": "fy8-kvanttimekaaninen-atomimalli",
    "kasite": "Kvanttitila",
    "maaritelma": "Järjestelmän sallittu tila, johon liittyy tiettyjä fysikaalisia ominaisuuksia ja energia."
@@ -405,7 +405,7 @@
   {
    "id": "fy8-elektronikuori",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-5",
    "aihe": "fy8-kvanttimekaaninen-atomimalli",
    "kasite": "Elektronikuori",
    "maaritelma": "Ryhmä elektronitiloja, joilla on sama pääkvanttiluku."
@@ -413,7 +413,7 @@
   {
    "id": "fy8-paulin-kieltosaanto",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-5",
    "aihe": "fy8-kvanttimekaaninen-atomimalli",
    "kasite": "Paulin kieltosääntö",
    "maaritelma": "Atomissa kahdella elektronilla ei voi olla kaikkia kvanttilukuja samoina."
@@ -477,7 +477,7 @@
   {
    "id": "fy8-aurinkokenno",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-7",
    "aihe": "fy8-kvantti-ilmioiden-sovellukset",
    "kasite": "Aurinkokenno",
    "maaritelma": "Puolijohdelaite, joka muuntaa sähkömagneettisen säteilyn energiaa sähköenergiaksi."
@@ -533,7 +533,7 @@
   {
    "id": "fy8-rontgensateily",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-14",
    "aihe": "fy8-rontgensateily",
    "kasite": "Röntgensäteily",
    "maaritelma": "Lyhytaaltoista ja suurienergistä ionisoivaa sähkömagneettista säteilyä."
@@ -541,7 +541,7 @@
   {
    "id": "fy8-rontgenputki",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-14",
    "aihe": "fy8-rontgensateily",
    "kasite": "Röntgenputki",
    "maaritelma": "Elektronit kiihdytetään suurella jännitteellä ja törmäytetään anodiin säteilyn tuottamiseksi."
@@ -549,7 +549,7 @@
   {
    "id": "fy8-katodi",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-14",
    "aihe": "fy8-rontgensateily",
    "kasite": "Katodi",
    "maaritelma": "Röntgenputken elektrodi, josta elektroneja irrotetaan ja kiihdytetään kohti anodia."
@@ -557,7 +557,7 @@
   {
    "id": "fy8-anodi",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-14",
    "aihe": "fy8-rontgensateily",
    "kasite": "Anodi",
    "maaritelma": "Röntgenputken kohde, johon suurella nopeudella liikkuvat elektronit törmäävät."
@@ -565,7 +565,7 @@
   {
    "id": "fy8-jarrutussateily",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-14",
    "aihe": "fy8-rontgensateily",
    "kasite": "Jarrutussäteily",
    "maaritelma": "Syntyy elektronien hidastuessa atomiydinten sähkökentässä ja muodostaa jatkuvan röntgenspektrin."
@@ -647,7 +647,7 @@
   {
    "id": "fy8-atomimassayksikko",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-10",
    "aihe": "fy8-atomiydin",
    "kasite": "Atomimassayksikkö",
    "maaritelma": "Atomien ja ydinten massojen yksikkö.",
@@ -657,7 +657,7 @@
   {
    "id": "fy8-massavaje",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-10",
    "aihe": "fy8-atomiydin",
    "kasite": "Massavaje",
    "maaritelma": "Sidotun ytimen massa on pienempi kuin sen erillisten nukleonien massojen summa."
@@ -665,7 +665,7 @@
   {
    "id": "fy8-sidosenergia",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-10",
    "aihe": "fy8-atomiydin",
    "kasite": "Sidosenergia",
    "maaritelma": "Energia, joka tarvitaan ytimen hajottamiseen erillisiksi nukleoneiksi.",
@@ -683,7 +683,7 @@
   {
    "id": "fy8-ydinreaktio",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-10",
    "aihe": "fy8-ydinreaktiot",
    "kasite": "Ydinreaktio",
    "maaritelma": "Atomiydin muuttuu toiseksi ytimeksi tai ytimiksi vuorovaikutuksessa toisen hiukkasen kanssa."
@@ -691,7 +691,7 @@
   {
    "id": "fy8-reaktioenergia",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-10",
    "aihe": "fy8-ydinreaktiot",
    "kasite": "Reaktioenergia",
    "maaritelma": "Ydinreaktiossa vapautuva tai sitoutuva energia määräytyy alku- ja lopputilan massaerosta.",
@@ -701,7 +701,7 @@
   {
    "id": "fy8-fissio",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-11",
    "aihe": "fy8-ydinreaktiot",
    "kasite": "Fissio",
    "maaritelma": "Raskas atomiydin hajoaa kahdeksi kevyemmäksi ytimeksi ja vapauttaa energiaa."
@@ -709,7 +709,7 @@
   {
    "id": "fy8-ketjureaktio",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-11",
    "aihe": "fy8-ydinreaktiot",
    "kasite": "Ketjureaktio",
    "maaritelma": "Fissiossa vapautuneet neutronit aiheuttavat uusia fissioita."
@@ -717,7 +717,7 @@
   {
    "id": "fy8-fuusio",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-11",
    "aihe": "fy8-ydinreaktiot",
    "kasite": "Fuusio",
    "maaritelma": "Kevyet atomiytimet yhdistyvät raskaammaksi ytimeksi ja voivat vapauttaa energiaa."
@@ -725,7 +725,7 @@
   {
    "id": "fy8-fuusioreaktio",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-11",
    "aihe": "fy8-ydinreaktiot",
    "kasite": "Fuusioreaktio",
    "maaritelma": "Tähtien energia syntyy kevyiden ytimien yhdistyessä suuremmiksi ytimiksi."
@@ -733,7 +733,7 @@
   {
    "id": "fy8-ydinvoimala",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-11",
    "aihe": "fy8-ydinreaktiot",
    "kasite": "Ydinvoimala",
    "maaritelma": "Fission vapauttamaa energiaa käytetään lämmön kautta sähköenergian tuottamiseen."
@@ -741,7 +741,7 @@
   {
    "id": "fy8-kriittinen-massa",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-11",
    "aihe": "fy8-ydinreaktiot",
    "kasite": "Kriittinen massa",
    "maaritelma": "Pienin fissioituvan aineen määrä, jolla itseään ylläpitävä ketjureaktio on mahdollinen."
@@ -813,7 +813,7 @@
   {
    "id": "fy8-alfasateily",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-12",
    "aihe": "fy8-radioaktiivisuus",
    "kasite": "Alfasäteily",
    "maaritelma": "Koostuu heliumytimistä ja ionisoi voimakkaasti mutta läpäisee ainetta heikosti."
@@ -821,7 +821,7 @@
   {
    "id": "fy8-beetasateily",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-12",
    "aihe": "fy8-radioaktiivisuus",
    "kasite": "Beetasäteily",
    "maaritelma": "Koostuu suurinopeuksisista elektroneista tai positroneista."
@@ -829,7 +829,7 @@
   {
    "id": "fy8-gammasateily",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-12",
    "aihe": "fy8-radioaktiivisuus",
    "kasite": "Gammasäteily",
    "maaritelma": "Suurienergistä sähkömagneettista säteilyä, jolla on suuri läpäisykyky."
@@ -905,7 +905,7 @@
   {
    "id": "fy8-intensiteetti",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-12",
    "aihe": "fy8-sateilyn-vaimeneminen",
    "kasite": "Intensiteetti",
    "maaritelma": "Kuvaa säteilyn kuljettamaa tehoa pinta-alayksikköä kohti."
@@ -931,7 +931,7 @@
   {
    "id": "fy8-puoliintumispaksuus",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-12",
    "aihe": "fy8-sateilyn-vaimeneminen",
    "kasite": "Puoliintumispaksuus",
    "maaritelma": "Ainekerroksen paksuus, joka pienentää säteilyn intensiteetin puoleen."
@@ -965,7 +965,7 @@
   {
    "id": "fy8-parinmuodostus",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-12",
    "aihe": "fy8-sateilyn-vaimeneminen",
    "kasite": "Parinmuodostus",
    "maaritelma": "Riittävän energinen fotoni voi ytimen lähellä muuttua elektroniksi ja positroniksi."
@@ -973,7 +973,7 @@
   {
    "id": "fy8-ionisoiva-sateily",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-12",
    "aihe": "fy8-sateilyturvallisuus",
    "kasite": "Ionisoiva säteily",
    "maaritelma": "Säteily, jolla on riittävästi energiaa irrottamaan elektroneja atomeista tai molekyyleistä."
@@ -981,7 +981,7 @@
   {
    "id": "fy8-absorboitunut-annos",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-13",
    "aihe": "fy8-sateilyturvallisuus",
    "kasite": "Absorboitunut annos",
    "maaritelma": "Kertoo aineeseen siirtyneen säteilyenergian massayksikköä kohti."
@@ -989,7 +989,7 @@
   {
    "id": "fy8-gray",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-13",
    "aihe": "fy8-sateilyturvallisuus",
    "kasite": "Gray",
    "maaritelma": "Absorboituneen annoksen yksikkö.",
@@ -999,7 +999,7 @@
   {
    "id": "fy8-ekvivalenttiannos",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-13",
    "aihe": "fy8-sateilyturvallisuus",
    "kasite": "Ekvivalenttiannos",
    "maaritelma": "Huomioi absorboituneen energian lisäksi säteilylajin biologisen vaikutuksen."
@@ -1007,7 +1007,7 @@
   {
    "id": "fy8-sievert",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-13",
    "aihe": "fy8-sateilyturvallisuus",
    "kasite": "Sievert",
    "maaritelma": "Säteilyannoksen biologista haittaa kuvaavan annoksen yksikkö."
@@ -1023,7 +1023,7 @@
   {
    "id": "fy8-radon",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-13",
    "aihe": "fy8-sateilyturvallisuus",
    "kasite": "Radon",
    "maaritelma": "Maaperästä rakennuksiin kulkeutuva radioaktiivinen kaasu ja merkittävä säteilyannoksen lähde Suomessa."
@@ -1047,7 +1047,7 @@
   {
    "id": "fy8-rontgenkuvaus",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-13",
    "aihe": "fy8-sateilyn-hyotykaytto",
    "kasite": "Röntgenkuvaus",
    "maaritelma": "Kehon eri kudokset vaimentavat röntgensäteilyä eri tavoin, jolloin muodostuu kuva sisäisistä rakenteista."
@@ -1055,7 +1055,7 @@
   {
    "id": "fy8-tietokonetomografia",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-14",
    "aihe": "fy8-sateilyn-hyotykaytto",
    "kasite": "Tietokonetomografia",
    "maaritelma": "Useista röntgenkuvista muodostetaan tietokoneella kehon poikkileikkaus- tai kolmiulotteinen kuva."
@@ -1071,7 +1071,7 @@
   {
    "id": "fy8-pet-kuvaus",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-14",
    "aihe": "fy8-sateilyn-hyotykaytto",
    "kasite": "PET-kuvaus",
    "maaritelma": "Positronia lähettävän merkkiaineen avulla muodostetaan kuva elimistön aineenvaihdunnasta."
@@ -1079,7 +1079,7 @@
   {
    "id": "fy8-sadehoito",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-14",
    "aihe": "fy8-sateilyn-hyotykaytto",
    "kasite": "Sädehoito",
    "maaritelma": "Ionisoivaa säteilyä kohdistetaan kasvaimeen syöpäsolujen vaurioittamiseksi."
@@ -1087,7 +1087,7 @@
   {
    "id": "fy8-radiohiiliajoitus",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-14",
    "aihe": "fy8-sateilyn-hyotykaytto",
    "kasite": "Radiohiiliajoitus",
    "maaritelma": "Orgaanisen näytteen ikää arvioidaan hiili-14-isotoopin jäljellä olevan määrän avulla."
@@ -1103,7 +1103,7 @@
   {
    "id": "fy8-standardimalli",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-15",
    "aihe": "fy8-standardimalli",
    "kasite": "Standardimalli",
    "maaritelma": "Teoria kuvaa materian perushiukkaset sekä vahvan, heikon ja sähkömagneettisen vuorovaikutuksen."
@@ -1111,7 +1111,7 @@
   {
    "id": "fy8-alkeishiukkanen",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-15",
    "aihe": "fy8-standardimalli",
    "kasite": "Alkeishiukkanen",
    "maaritelma": "Hiukkanen, jolla ei nykyisen tiedon mukaan ole sisäistä rakennetta."
@@ -1119,7 +1119,7 @@
   {
    "id": "fy8-kvarkki",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-15",
    "aihe": "fy8-standardimalli",
    "kasite": "Kvarkki",
    "maaritelma": "Materian perushiukkanen, josta esimerkiksi protonit ja neutronit rakentuvat."
@@ -1127,7 +1127,7 @@
   {
    "id": "fy8-leptoni",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-15",
    "aihe": "fy8-standardimalli",
    "kasite": "Leptoni",
    "maaritelma": "Perushiukkasten ryhmä, johon kuuluvat esimerkiksi elektroni ja neutriinot."
@@ -1135,7 +1135,7 @@
   {
    "id": "fy8-valittajahiukkanen",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-15",
    "aihe": "fy8-standardimalli",
    "kasite": "Välittäjähiukkanen",
    "maaritelma": "Kvanttikentän hiukkanen, jonka avulla vuorovaikutusta voidaan kuvata."
@@ -1143,7 +1143,7 @@
   {
    "id": "fy8-gluoni",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-15",
    "aihe": "fy8-standardimalli",
    "kasite": "Gluoni",
    "maaritelma": "Vahvan vuorovaikutuksen välittäjähiukkanen."
@@ -1151,7 +1151,7 @@
   {
    "id": "fy8-valibosoni",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-15",
    "aihe": "fy8-standardimalli",
    "kasite": "Välibosoni",
    "maaritelma": "W- ja Z-bosonit välittävät heikkoa vuorovaikutusta."
@@ -1159,7 +1159,7 @@
   {
    "id": "fy8-higgsin-bosoni",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-15",
    "aihe": "fy8-standardimalli",
    "kasite": "Higgsin bosoni",
    "maaritelma": "Higgsin kenttään liittyvä hiukkanen, jonka havainto tukee hiukkasten massojen selitysmallia."
@@ -1167,7 +1167,7 @@
   {
    "id": "fy8-antihiukkanen",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-15",
    "aihe": "fy8-standardimalli",
    "kasite": "Antihiukkanen",
    "maaritelma": "Hiukkasen vastinpari, jolla on sama massa mutta vastakkaisia ominaisuuksia, kuten sähkövaraus."
@@ -1175,7 +1175,7 @@
   {
    "id": "fy8-annihilaatio",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-15",
    "aihe": "fy8-standardimalli",
    "kasite": "Annihilaatio",
    "maaritelma": "Hiukkanen ja antihiukkanen voivat kohdatessaan muuttua säteilyenergiaksi."
@@ -1183,7 +1183,7 @@
   {
    "id": "fy8-vahva-vuorovaikutus",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-15",
    "aihe": "fy8-standardimalli",
    "kasite": "Vahva vuorovaikutus",
    "maaritelma": "Pitää kvarkit yhdessä hadroneissa ja sitoo protoneja sekä neutroneja atomiytimessä."
@@ -1191,7 +1191,7 @@
   {
    "id": "fy8-heikko-vuorovaikutus",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-15",
    "aihe": "fy8-standardimalli",
    "kasite": "Heikko vuorovaikutus",
    "maaritelma": "Aiheuttaa esimerkiksi beetahajoamista ja muuttaa hiukkasten tyyppiä."
@@ -1199,7 +1199,7 @@
   {
    "id": "fy8-hiukkasfysiikka",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-15",
    "aihe": "fy8-maailmankaikkeus",
    "kasite": "Hiukkasfysiikka",
    "maaritelma": "Tutkii aineen pienimpiä tunnettuja rakenneosia ja niiden välisiä vuorovaikutuksia."
@@ -1207,7 +1207,7 @@
   {
    "id": "fy8-kosmologia",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-16",
    "aihe": "fy8-maailmankaikkeus",
    "kasite": "Kosmologia",
    "maaritelma": "Tutkii maailmankaikkeutta kokonaisuutena sekä sen rakennetta, kehitystä ja ainesisältöä."
@@ -1215,7 +1215,7 @@
   {
    "id": "fy8-alkurajahdys",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-16",
    "aihe": "fy8-maailmankaikkeus",
    "kasite": "Alkuräjähdys",
    "maaritelma": "Mallin mukaan maailmankaikkeus kehittyi erittäin kuumasta ja tiheästä alkutilasta."
@@ -1223,7 +1223,7 @@
   {
    "id": "fy8-kosminen-inflaatio",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-16",
    "aihe": "fy8-maailmankaikkeus",
    "kasite": "Kosminen inflaatio",
    "maaritelma": "Varhaisen maailmankaikkeuden erittäin nopea laajenemisvaihe."
@@ -1231,7 +1231,7 @@
   {
    "id": "fy8-nukleosynteesi",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-16",
    "aihe": "fy8-maailmankaikkeus",
    "kasite": "Nukleosynteesi",
    "maaritelma": "Varhaisessa maailmankaikkeudessa protonit ja neutronit muodostivat ensimmäisiä atomiytimiä."
@@ -1239,7 +1239,7 @@
   {
    "id": "fy8-rekombinaatio",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-16",
    "aihe": "fy8-maailmankaikkeus",
    "kasite": "Rekombinaatio",
    "maaritelma": "Elektronit sitoutuivat ytimiin neutraaleiksi atomeiksi, minkä jälkeen säteily pääsi etenemään vapaasti."
@@ -1247,7 +1247,7 @@
   {
    "id": "fy8-pimea-aine",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-16",
    "aihe": "fy8-maailmankaikkeus",
    "kasite": "Pimeä aine",
    "maaritelma": "Tuntematon aineen muoto, jonka gravitaatiovaikutus havaitaan galaksien ja suurten rakenteiden liikkeissä."
@@ -1255,7 +1255,7 @@
   {
    "id": "fy8-pimea-energia",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-16",
    "aihe": "fy8-maailmankaikkeus",
    "kasite": "Pimeä energia",
    "maaritelma": "Nimitys ilmiölle, jolla selitetään maailmankaikkeuden laajenemisen kiihtymistä."
@@ -1263,7 +1263,7 @@
   {
    "id": "fy8-kosminen-taustasateily",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-16",
    "aihe": "fy8-maailmankaikkeus",
    "kasite": "Kosminen taustasäteily",
    "maaritelma": "Varhaisesta maailmankaikkeudesta peräisin oleva mikroaaltosäteily havaitaan kaikkialla avaruudessa."
@@ -1271,7 +1271,7 @@
   {
    "id": "fy8-punasiirtyma",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-16",
    "aihe": "fy8-maailmankaikkeus",
    "kasite": "Punasiirtymä",
    "maaritelma": "Kaukaisten galaksien spektri siirtyy pidemmille aallonpituuksille maailmankaikkeuden laajenemisen vuoksi."

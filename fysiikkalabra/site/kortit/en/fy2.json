@@ -51,7 +51,7 @@
   {
    "id": "fy2-energialahde",
    "moduuli": "FY2",
-   "luku": null,
+   "luku": "fy2-6",
    "aihe": "fy2-energia-ymparistossa",
    "kasite": "Energy source",
    "maaritelma": "A substance or phenomenon used to produce useful energy."
@@ -777,6 +777,32 @@
    "aihe": "fy2-kestava-energiatalous",
    "kasite": "Sustainable consumption",
    "maaritelma": "Energy is used efficiently for real needs and its environmental impacts are reduced."
+  },
+  {
+   "id": "fy2-lampoenergia",
+   "moduuli": "FY2",
+   "luku": "fy2-2",
+   "aihe": "fy2-energialajit",
+   "kasite": "Thermal energy",
+   "maaritelma": "Energy of the random motion of the particles of matter; part of the energy turns into it at every step of a conversion."
+  },
+  {
+   "id": "fy2-etuliite",
+   "moduuli": "FY2",
+   "luku": "fy2-2",
+   "aihe": "fy2-energialajit",
+   "kasite": "Prefix",
+   "maaritelma": "A multiplier written in front of a unit; kilo, mega, giga and tera are each a thousand times the previous one."
+  },
+  {
+   "id": "fy2-megajoule",
+   "moduuli": "FY2",
+   "luku": "fy2-2",
+   "aihe": "fy2-energialajit",
+   "kasite": "Megajoule",
+   "maaritelma": "A multiple of the unit of energy equal to one million joules.",
+   "kaava": "1\\,\\text{MJ} = 1000\\,\\text{kJ} = 10^{6}\\,\\text{J}",
+   "kaava_puhe": "one megajoule equals a thousand kilojoules, or ten to the power six joules"
   }
  ]
 }

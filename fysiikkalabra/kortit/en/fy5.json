@@ -817,6 +817,40 @@
    "aihe": "fy5-aanen-intensiteetti-ja-kuuleminen",
    "kasite": "Ultrasound",
    "maaritelma": "Sound whose frequency is above the upper limit of human hearing."
+  },
+  {
+   "id": "fy5-kaiku",
+   "moduuli": "FY5",
+   "luku": "fy5-17",
+   "aihe": "fy5-aani",
+   "kasite": "Echo",
+   "maaritelma": "Sound or ultrasound reflected back from a boundary; its travel time gives the distance to the boundary, since the sound travels there and back.",
+   "kaava": "d = \\dfrac{v t}{2}",
+   "kaava_puhe": "d equals v times t over two"
+  },
+  {
+   "id": "fy5-kaikuluotain",
+   "moduuli": "FY5",
+   "luku": "fy5-17",
+   "aihe": "fy5-aani",
+   "kasite": "Sonar",
+   "maaritelma": "A device that sends sound pulses into water and works out the depth from the travel time of the echoes."
+  },
+  {
+   "id": "fy5-p-aalto",
+   "moduuli": "FY5",
+   "luku": "fy5-17",
+   "aihe": "fy5-aaltoliikkeen-perusteet",
+   "kasite": "P wave",
+   "maaritelma": "A longitudinal earthquake wave that is the fastest, arrives at a station first and also travels through liquid."
+  },
+  {
+   "id": "fy5-s-aalto",
+   "moduuli": "FY5",
+   "luku": "fy5-17",
+   "aihe": "fy5-aaltoliikkeen-perusteet",
+   "kasite": "S wave",
+   "maaritelma": "A transverse earthquake wave that is slower than the P wave and does not travel through liquid."
   }
  ]
 }

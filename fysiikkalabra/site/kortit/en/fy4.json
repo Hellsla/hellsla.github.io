@@ -626,6 +626,176 @@
    "aihe": "fy4-liikemaara-ja-tormaykset",
    "kasite": "One-dimensional collision",
    "maaritelma": "The objects move along one line, so the directions of momentum can be handled with signs."
+  },
+  {
+   "id": "fy4-reaktioaika",
+   "moduuli": "FY4",
+   "luku": "fy4-11",
+   "aihe": "fy4-kiihtyva-liike",
+   "kasite": "Reaction time",
+   "maaritelma": "The time from noticing a hazard to the start of braking; usually about $1\\,\\text{s}$."
+  },
+  {
+   "id": "fy4-reaktiomatka",
+   "moduuli": "FY4",
+   "luku": "fy4-11",
+   "aihe": "fy4-kiihtyva-liike",
+   "kasite": "Reaction distance",
+   "maaritelma": "The distance a car travels at its original speed during the reaction time.",
+   "kaava": "s_\\text{r} = v_0\\,t_\\text{r}",
+   "kaava_puhe": "s r equals v nought times t r"
+  },
+  {
+   "id": "fy4-jarrutusmatka",
+   "moduuli": "FY4",
+   "luku": "fy4-11",
+   "aihe": "fy4-kiihtyva-liike",
+   "kasite": "Braking distance",
+   "maaritelma": "The distance from the start of braking to a stop; at constant deceleration it is proportional to the square of the speed.",
+   "kaava": "s_\\text{b} = \\dfrac{v_0^2}{2a}",
+   "kaava_puhe": "s b equals v nought squared over two a"
+  },
+  {
+   "id": "fy4-pysahtymismatka",
+   "moduuli": "FY4",
+   "luku": "fy4-11",
+   "aihe": "fy4-kiihtyva-liike",
+   "kasite": "Stopping distance",
+   "maaritelma": "The sum of the reaction distance and the braking distance, the whole distance from noticing a hazard to stopping.",
+   "kaava": "s_\\text{stop} = v_0\\,t_\\text{r} + \\dfrac{v_0^2}{2a}",
+   "kaava_puhe": "s stop equals v nought times t r plus v nought squared over two a"
+  },
+  {
+   "id": "fy4-hidastuvuus",
+   "moduuli": "FY4",
+   "luku": "fy4-11",
+   "aihe": "fy4-kiihtyva-liike",
+   "kasite": "Deceleration",
+   "maaritelma": "The magnitude of the acceleration when braking; in full braking on a level road it is set by the coefficient of friction between tyres and road.",
+   "kaava": "a = \\mu g",
+   "kaava_puhe": "a equals mu times g"
+  },
+  {
+   "id": "fy4-kohtaaminen",
+   "moduuli": "FY4",
+   "luku": "fy4-12",
+   "aihe": "fy4-liikkeen-suureet",
+   "kasite": "Meeting",
+   "maaritelma": "Two bodies are at the same position at the same instant; in a $(t,x)$ graph it is the intersection of the lines.",
+   "kaava": "x_\\text{A}(t) = x_\\text{B}(t)",
+   "kaava_puhe": "x A of t equals x B of t"
+  },
+  {
+   "id": "fy4-ohitus",
+   "moduuli": "FY4",
+   "luku": "fy4-12",
+   "aihe": "fy4-liikkeen-suureet",
+   "kasite": "Overtaking",
+   "maaritelma": "A body behind catches up with the one ahead and passes it; at that instant the one coming from behind is faster."
+  },
+  {
+   "id": "fy4-paikkafunktio",
+   "moduuli": "FY4",
+   "luku": "fy4-12",
+   "aihe": "fy4-liikkeen-suureet",
+   "kasite": "Position function",
+   "maaritelma": "An expression that gives the position of a body as a function of time, for example $x = x_0 + v\\,t$ in uniform motion."
+  },
+  {
+   "id": "fy4-kytketty-kappale",
+   "moduuli": "FY4",
+   "luku": "fy4-13",
+   "aihe": "fy4-voimat-ja-liikeyhtalo",
+   "kasite": "Connected body",
+   "maaritelma": "A body tied to another by a string; bodies at the ends of an inextensible string have accelerations of the same magnitude."
+  },
+  {
+   "id": "fy4-vakipyora",
+   "moduuli": "FY4",
+   "luku": "fy4-13",
+   "aihe": "fy4-voimat-ja-liikeyhtalo",
+   "kasite": "Pulley",
+   "maaritelma": "A wheel over which a string runs; a light, frictionless pulley turns the direction of the string force without changing its magnitude."
+  },
+  {
+   "id": "fy4-sisainen-voima",
+   "moduuli": "FY4",
+   "luku": "fy4-13",
+   "aihe": "fy4-voimat-ja-liikeyhtalo",
+   "kasite": "Internal force",
+   "maaritelma": "A force between the bodies being studied; it cancels out when their equations of motion are added together."
+  },
+  {
+   "id": "fy4-ulkoinen-voima",
+   "moduuli": "FY4",
+   "luku": "fy4-13",
+   "aihe": "fy4-voimat-ja-liikeyhtalo",
+   "kasite": "External force",
+   "maaritelma": "A force from outside the bodies being studied; it belongs only in the force diagram of the body it acts on."
+  },
+  {
+   "id": "fy4-teho",
+   "moduuli": "FY4",
+   "luku": "fy4-15",
+   "aihe": "fy4-tyo-ja-mekaaninen-energia",
+   "kasite": "Power",
+   "maaritelma": "Tells how much energy is converted or transferred per second; the unit is the watt, $1\\,\\text{W} = 1\\,\\text{J/s}$.",
+   "kaava": "P = \\dfrac{E}{t}",
+   "kaava_puhe": "P equals E over t"
+  },
+  {
+   "id": "fy4-hyotysuhde",
+   "moduuli": "FY4",
+   "luku": "fy4-15",
+   "aihe": "fy4-tyo-ja-mekaaninen-energia",
+   "kasite": "Efficiency",
+   "maaritelma": "The ratio of the useful power a device delivers to the power taken in; at most $100\\,\\%$.",
+   "kaava": "\\eta = \\dfrac{P_\\text{s}}{P_\\text{o}}",
+   "kaava_puhe": "eta equals P s over P o"
+  },
+  {
+   "id": "fy4-virtaama",
+   "moduuli": "FY4",
+   "luku": "fy4-15",
+   "aihe": "fy4-tyo-ja-mekaaninen-energia",
+   "kasite": "Flow rate",
+   "maaritelma": "Tells how many cubic metres of water pass through the turbines per second; unit $\\text{m}^3\\text{/s}$.",
+   "kaava": "P = \\eta \\rho Q g h",
+   "kaava_puhe": "P equals eta times rho times Q times g times h"
+  },
+  {
+   "id": "fy4-putouskorkeus",
+   "moduuli": "FY4",
+   "luku": "fy4-15",
+   "aihe": "fy4-tyo-ja-mekaaninen-energia",
+   "kasite": "Head",
+   "maaritelma": "The height difference $h$ between the upper and lower water surfaces of a hydropower plant."
+  },
+  {
+   "id": "fy4-nimellisteho",
+   "moduuli": "FY4",
+   "luku": "fy4-15",
+   "aihe": "fy4-tyo-ja-mekaaninen-energia",
+   "kasite": "Rated power",
+   "maaritelma": "The largest electrical power a plant is designed for; in stronger wind the power of a wind turbine no longer grows."
+  },
+  {
+   "id": "fy4-nollataso",
+   "moduuli": "FY4",
+   "luku": "fy4-16",
+   "aihe": "fy4-tyo-ja-mekaaninen-energia",
+   "kasite": "Zero level",
+   "maaritelma": "The chosen height at which gravitational potential energy is zero; the height $h$ is measured from it."
+  },
+  {
+   "id": "fy4-kitkan-tyo",
+   "moduuli": "FY4",
+   "luku": "fy4-16",
+   "aihe": "fy4-tyo-ja-mekaaninen-energia",
+   "kasite": "Work done by friction",
+   "maaritelma": "The negative work done by kinetic friction; on a straight surface it depends on the horizontal length $x$ of the path.",
+   "kaava": "W_\\mu = -\\mu m g x",
+   "kaava_puhe": "W mu equals minus mu times m times g times x"
   }
  ]
 }

@@ -141,7 +141,7 @@
   {
    "id": "fy5-tukipinta",
    "moduuli": "FY5",
-   "luku": null,
+   "luku": "fy5-2",
    "aihe": "fy5-momentti-ja-tasapaino",
    "kasite": "Tukipinta",
    "maaritelma": "Kappaleen alustaa koskettavien kohtien rajaama alue, jonka yläpuolella painopisteen on oltava, jotta kappale ei kaadu."
@@ -157,7 +157,7 @@
   {
    "id": "fy5-tasainen-ympyraliike",
    "moduuli": "FY5",
-   "luku": null,
+   "luku": "fy5-3",
    "aihe": "fy5-ympyraliike",
    "kasite": "Tasainen ympyräliike",
    "maaritelma": "Liike ympyräradalla niin, että nopeuden suuruus pysyy vakiona mutta sen suunta muuttuu jatkuvasti."
@@ -211,7 +211,7 @@
   {
    "id": "fy5-gravitaatiovuorovaikutus",
    "moduuli": "FY5",
-   "luku": null,
+   "luku": "fy5-5",
    "aihe": "fy5-gravitaatio-ja-planetaarinen-liike",
    "kasite": "Gravitaatiovuorovaikutus",
    "maaritelma": "Massallisten kappaleiden välinen aina vetävä vuorovaikutus."
@@ -501,7 +501,7 @@
   {
    "id": "fy5-mekaaninen-aaltoliike",
    "moduuli": "FY5",
-   "luku": null,
+   "luku": "fy5-10",
    "aihe": "fy5-aaltoliikkeen-perusteet",
    "kasite": "Mekaaninen aaltoliike",
    "maaritelma": "Värähtelyn etenemistä aineellisessa väliaineessa rakenneosasta toiseen."
@@ -817,6 +817,40 @@
    "aihe": "fy5-aanen-intensiteetti-ja-kuuleminen",
    "kasite": "Ultraääni",
    "maaritelma": "Ääntä, jonka taajuus on ihmisen kuuloalueen ylärajaa suurempi."
+  },
+  {
+   "id": "fy5-kaiku",
+   "moduuli": "FY5",
+   "luku": "fy5-17",
+   "aihe": "fy5-aani",
+   "kasite": "Kaiku",
+   "maaritelma": "Rajapinnasta takaisin heijastunut ääni tai ultraääni; sen kulkuajasta saadaan rajapinnan etäisyys, koska ääni kulkee matkan edestakaisin.",
+   "kaava": "d = \\dfrac{v t}{2}",
+   "kaava_puhe": "d on v kertaa t jaettuna kahdella"
+  },
+  {
+   "id": "fy5-kaikuluotain",
+   "moduuli": "FY5",
+   "luku": "fy5-17",
+   "aihe": "fy5-aani",
+   "kasite": "Kaikuluotain",
+   "maaritelma": "Laite, joka lähettää veteen äänipulsseja ja laskee veden syvyyden kaikujen kulkuajasta."
+  },
+  {
+   "id": "fy5-p-aalto",
+   "moduuli": "FY5",
+   "luku": "fy5-17",
+   "aihe": "fy5-aaltoliikkeen-perusteet",
+   "kasite": "P-aalto",
+   "maaritelma": "Pitkittäinen maanjäristysaalto, joka on nopein, saapuu asemalle ensimmäisenä ja etenee myös nesteessä."
+  },
+  {
+   "id": "fy5-s-aalto",
+   "moduuli": "FY5",
+   "luku": "fy5-17",
+   "aihe": "fy5-aaltoliikkeen-perusteet",
+   "kasite": "S-aalto",
+   "maaritelma": "Poikittainen maanjäristysaalto, joka on P-aaltoa hitaampi eikä etene nesteessä."
   }
  ]
 }

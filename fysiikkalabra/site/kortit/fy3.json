@@ -837,6 +837,52 @@
    "aihe": "fy3-ilmasto-ja-lampo",
    "kasite": "Ilmastonmuutos",
    "maaritelma": "Maapallon pitkäaikainen lämpeneminen muuttaa energiatasapainoa, jäätiköitä, meriä ja muita ilmastojärjestelmän osia."
+  },
+  {
+   "id": "fy3-energiaketju",
+   "moduuli": "FY3",
+   "luku": "fy3-15",
+   "aihe": "fy3-lampovoimakoneet",
+   "kasite": "Energiaketju",
+   "maaritelma": "Peräkkäiset vaiheet, joissa energia muuttuu esimerkiksi polttoaineesta sähköksi; ketjun hyötysuhde on vaiheiden hyötysuhteiden tulo.",
+   "kaava": "\\eta = \\eta_1\\,\\eta_2\\,\\eta_3",
+   "kaava_puhe": "eeta on eeta yksi kertaa eeta kaksi kertaa eeta kolme"
+  },
+  {
+   "id": "fy3-lauhdevoimalaitos",
+   "moduuli": "FY3",
+   "luku": "fy3-15",
+   "aihe": "fy3-lampovoimakoneet",
+   "kasite": "Lauhdevoimalaitos",
+   "maaritelma": "Pelkkää sähköä tuottava lämpövoimalaitos, jonka sähköntuotannon hyötysuhde on noin $40\\,\\%$."
+  },
+  {
+   "id": "fy3-lauhdutin",
+   "moduuli": "FY3",
+   "luku": "fy3-15",
+   "aihe": "fy3-lampovoimakoneet",
+   "kasite": "Lauhdutin",
+   "maaritelma": "Laite, jossa turbiinista tuleva höyry tiivistyy takaisin vedeksi ja luovuttaa lämpöä jäähdytysveteen.",
+   "kaava": "P_\\text{L} = c\\,q_m\\,\\Delta T",
+   "kaava_puhe": "P L on c kertaa q m kertaa delta T"
+  },
+  {
+   "id": "fy3-yhteistuotanto",
+   "moduuli": "FY3",
+   "luku": "fy3-15",
+   "aihe": "fy3-lampovoimakoneet",
+   "kasite": "Yhteistuotanto",
+   "maaritelma": "Sähkön ja lämmön tuotanto samassa laitoksessa niin, että lauhduttimen lämpö johdetaan kaukolämpöverkkoon."
+  },
+  {
+   "id": "fy3-kokonaishyotysuhde",
+   "moduuli": "FY3",
+   "luku": "fy3-15",
+   "aihe": "fy3-lampovoimakoneet",
+   "kasite": "Kokonaishyötysuhde",
+   "maaritelma": "Yhteistuotantolaitoksen sähkötehon ja kaukolämpötehon summan suhde polttoainetehoon.",
+   "kaava": "\\eta_\\text{kok} = \\dfrac{P_\\text{s} + P_\\text{k}}{P_\\text{o}}",
+   "kaava_puhe": "eeta kok on P s plus P k jaettuna P o:lla"
   }
  ]
 }

@@ -189,6 +189,208 @@
    "aihe": "fy7-valo",
    "kasite": "Focal length of a lens",
    "maaritelma": "The distance at which rays parallel to the optical axis are brought to a point."
+  },
+  {
+   "id": "fy7-magneettinen-voima",
+   "moduuli": "FY7",
+   "luku": "fy7-2",
+   "aihe": "fy7-magnetismi",
+   "kasite": "Magnetic force",
+   "maaritelma": "The force a magnetic field exerts on a moving charged particle; it is perpendicular to both velocity and field and does not change the speed.",
+   "kaava": "F_\\text{m} = |q| v B \\sin\\alpha",
+   "kaava_puhe": "F m equals the absolute value of q times v times B times sine alpha"
+  },
+  {
+   "id": "fy7-oikean-kaden-saanto",
+   "moduuli": "FY7",
+   "luku": "fy7-2",
+   "aihe": "fy7-magnetismi",
+   "kasite": "Right-hand rule",
+   "maaritelma": "A rule for the direction of the magnetic force: thumb along the velocity, fingers along the field, and the palm pushes in the direction of the force on a positive charge."
+  },
+  {
+   "id": "fy7-massaspektrometri",
+   "moduuli": "FY7",
+   "luku": "fy7-2",
+   "aihe": "fy7-magnetismi",
+   "kasite": "Mass spectrometer",
+   "maaritelma": "A device that separates ions of equal speed by mass, because the radius of their path in a magnetic field is proportional to the mass.",
+   "kaava": "m = \\dfrac{|q| B_2 r}{v}",
+   "kaava_puhe": "m equals the absolute value of q times B two times r over v"
+  },
+  {
+   "id": "fy7-virtajohtimen-magneettikentta",
+   "moduuli": "FY7",
+   "luku": "fy7-3",
+   "aihe": "fy7-magnetismi",
+   "kasite": "Magnetic field of a current-carrying wire",
+   "maaritelma": "The field produced by an electric current; its field lines circle a straight wire as concentric circles.",
+   "kaava": "B = \\dfrac{\\mu_0 I}{2\\pi r}",
+   "kaava_puhe": "B equals mu nought times I over two pi r"
+  },
+  {
+   "id": "fy7-kaami",
+   "moduuli": "FY7",
+   "luku": "fy7-3",
+   "aihe": "fy7-magnetismi",
+   "kasite": "Coil",
+   "maaritelma": "A wire wound into a spiral; inside a long coil the field is nearly uniform and along the axis.",
+   "kaava": "B = \\mu_0 \\dfrac{N I}{l}",
+   "kaava_puhe": "B equals mu nought times N I over l"
+  },
+  {
+   "id": "fy7-sahkomagneetti",
+   "moduuli": "FY7",
+   "luku": "fy7-3",
+   "aihe": "fy7-magnetismi",
+   "kasite": "Electromagnet",
+   "maaritelma": "A coil with an iron core, whose greatly strengthened field exists only while current flows."
+  },
+  {
+   "id": "fy7-tyhjion-permeabiliteetti",
+   "moduuli": "FY7",
+   "luku": "fy7-3",
+   "aihe": "fy7-magnetismi",
+   "kasite": "Permeability of free space",
+   "maaritelma": "The constant $\\mu_0 \\approx 4\\pi \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$ that appears in the formulas for the magnetic field of a current."
+  },
+  {
+   "id": "fy7-kierrostiheys",
+   "moduuli": "FY7",
+   "luku": "fy7-3",
+   "aihe": "fy7-magnetismi",
+   "kasite": "Turn density",
+   "maaritelma": "The number of turns of a coil per metre, $N : l$; the field of a long coil is proportional to it."
+  },
+  {
+   "id": "fy7-tasavirtamoottori",
+   "moduuli": "FY7",
+   "luku": "fy7-4",
+   "aihe": "fy7-magnetismi",
+   "kasite": "Direct-current motor",
+   "maaritelma": "A motor in which a magnetic field turns a current loop and a commutator reverses the current every half turn."
+  },
+  {
+   "id": "fy7-kommutaattori",
+   "moduuli": "FY7",
+   "luku": "fy7-4",
+   "aihe": "fy7-magnetismi",
+   "kasite": "Commutator",
+   "maaritelma": "A split ring with carbon brushes that reverses the current in a motor's loop every half turn."
+  },
+  {
+   "id": "fy7-virtasilmukka",
+   "moduuli": "FY7",
+   "luku": "fy7-4",
+   "aihe": "fy7-magnetismi",
+   "kasite": "Current loop",
+   "maaritelma": "A closed loop of wire whose opposite sides feel opposite forces in a magnetic field, which turn the loop."
+  },
+  {
+   "id": "fy7-johtimien-valinen-voima",
+   "moduuli": "FY7",
+   "luku": "fy7-4",
+   "aihe": "fy7-magnetismi",
+   "kasite": "Force between wires",
+   "maaritelma": "The magnetic force between two parallel current-carrying wires: currents in the same direction attract, opposite currents repel.",
+   "kaava": "F = \\dfrac{\\mu_0 I_1 I_2 l}{2\\pi r}",
+   "kaava_puhe": "F equals mu nought times I one times I two times l over two pi r"
+  },
+  {
+   "id": "fy7-dispersio",
+   "moduuli": "FY7",
+   "luku": "fy7-11",
+   "aihe": "fy7-valo",
+   "kasite": "Dispersion",
+   "maaritelma": "The dependence of the refractive index on wavelength; in water and glass the index is greater for violet than for red."
+  },
+  {
+   "id": "fy7-prisma",
+   "moduuli": "FY7",
+   "luku": "fy7-11",
+   "aihe": "fy7-valo",
+   "kasite": "Prism",
+   "maaritelma": "A piece of glass whose slanted surfaces refract each colour by a different amount and split white light into a spectrum."
+  },
+  {
+   "id": "fy7-spektri",
+   "moduuli": "FY7",
+   "luku": "fy7-11",
+   "aihe": "fy7-valo",
+   "kasite": "Spectrum",
+   "maaritelma": "The fan of colours formed when white light is split into its wavelengths."
+  },
+  {
+   "id": "fy7-sateenkaari",
+   "moduuli": "FY7",
+   "luku": "fy7-11",
+   "aihe": "fy7-valo",
+   "kasite": "Rainbow",
+   "maaritelma": "An arc of sunlight refracted and reflected in water drops, its red edge seen at about $42^\\circ$ from the antisolar point."
+  },
+  {
+   "id": "fy7-poikkeamakulma",
+   "moduuli": "FY7",
+   "luku": "fy7-11",
+   "aihe": "fy7-valo",
+   "kasite": "Angle of deviation",
+   "maaritelma": "The angle by which a ray passing through a prism turns from its original direction; it is greatest for violet.",
+   "kaava": "\\delta = \\alpha_1 + \\alpha_4 - A",
+   "kaava_puhe": "delta equals alpha one plus alpha four minus A"
+  },
+  {
+   "id": "fy7-ohut-kalvo",
+   "moduuli": "FY7",
+   "luku": "fy7-14",
+   "aihe": "fy7-valo",
+   "kasite": "Thin film",
+   "maaritelma": "A transparent layer about as thick as a wavelength of light, whose two surfaces reflect waves that interfere."
+  },
+  {
+   "id": "fy7-optinen-matkaero",
+   "moduuli": "FY7",
+   "luku": "fy7-14",
+   "aihe": "fy7-valo",
+   "kasite": "Optical path difference",
+   "maaritelma": "The path difference of the waves reflected from the film's surfaces, with the extra distance in the film multiplied by its refractive index.",
+   "kaava": "\\Delta s = 2nd",
+   "kaava_puhe": "delta s equals two n d"
+  },
+  {
+   "id": "fy7-puolen-aallonpituuden-siirtyma",
+   "moduuli": "FY7",
+   "luku": "fy7-14",
+   "aihe": "fy7-valo",
+   "kasite": "Half-wavelength shift",
+   "maaritelma": "The reflected wave is inverted when light reflects off a material with a greater refractive index."
+  },
+  {
+   "id": "fy7-heijastuksenestopinnoite",
+   "moduuli": "FY7",
+   "luku": "fy7-14",
+   "aihe": "fy7-valo",
+   "kasite": "Anti-reflection coating",
+   "maaritelma": "A thin film evaporated onto glass whose two reflected waves weaken each other, so that less light is reflected.",
+   "kaava": "d = \\dfrac{\\lambda}{4n}",
+   "kaava_puhe": "d equals lambda over four n"
+  },
+  {
+   "id": "fy7-vaimennus",
+   "moduuli": "FY7",
+   "luku": "fy7-16",
+   "aihe": "fy7-valo",
+   "kasite": "Attenuation",
+   "maaritelma": "The decrease of light power in a fibre, in decibels; the attenuations of successive sections are added.",
+   "kaava": "A = 10\\,\\text{dB} \\cdot \\lg \\dfrac{P_0}{P}",
+   "kaava_puhe": "A equals ten decibels times the base-ten logarithm of P nought over P"
+  },
+  {
+   "id": "fy7-induktioliesi",
+   "moduuli": "FY7",
+   "luku": "fy7-16",
+   "aihe": "fy7-induktio",
+   "kasite": "Induction hob",
+   "maaritelma": "A hob whose coil makes a changing magnetic field that induces eddy currents in the base of the pan, heating it."
   }
  ]
 }
