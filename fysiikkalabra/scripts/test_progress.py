@@ -57,8 +57,8 @@ with sync_playwright() as pw:
             pg = ctx.new_page(); errs = []; pg.on("pageerror", lambda e: errs.append(str(e)))
             pg.goto(BASE + page); pg.wait_for_timeout(400)
             expect(f"{tag}: Pohdinta is marked at the top", pg.evaluate(CURRENT) == ["#herata"], pg.evaluate(CURRENT))
-            ex0 = pg.evaluate("(() => { const b = document.querySelector('#exercises .act-exercises'); if (!b) return null; const l = b.querySelector('.ex-progress'); return [l ? l.textContent : null, [...b.querySelectorAll('.level-done')].filter(x => !x.hidden).length, !!b.querySelector('li.core[id]'), !!b.querySelector('li.assigned')]; })()")
-            expect(f"{tag}: before any task is done the core tasks' count starts at 0 and no level is marked", ex0 is None or (ex0[1] == 0 and (not ex0[2] or ex0[3] or (ex0[0] or "").find("0/") >= 0)), ex0)
+            ex0 = pg.evaluate("(() => { const b = document.querySelector('#exercises .act-exercises'); if (!b) return null; return [null, [...b.querySelectorAll('.level-done')].filter(x => !x.hidden).length, !!b.querySelector('li.core[id]'), !!b.querySelector('li.assigned')]; })()")
+            expect(f"{tag}: before any task is done no level is marked, and there is no core-task count line (teacher 2026-11-13)", ex0 is None or (ex0[1] == 0 and not pg.evaluate("!!document.querySelector('.ex-progress')")), ex0)
             for sid in ("selita", "sovella", "exercises"):
                 pg.evaluate(f"document.getElementById('{sid}').scrollIntoView()"); pg.wait_for_timeout(350)
                 st = pg.evaluate(f"""() => {{ const n = document.querySelector('nav.toc'), r = n.getBoundingClientRect(), a = n.querySelector('a[aria-current]');
@@ -121,14 +121,13 @@ with sync_playwright() as pw:
                 done = pg.evaluate(DONE)
                 expect(f"{tag}: Ennusta and Tehtävät are done once their required answers are checked", "#ennusta" in done and "#exercises" in done, done)
                 # where the exercises stand (teacher 2026-11-10): the core tasks' count over the levels, each level's done count in its heading
-                ex = pg.evaluate("""() => { const b = document.querySelector('#exercises .act-exercises'), line = b.querySelector('.ex-progress'), core = b.querySelectorAll('li.core[id]').length;
-                    const m = line && line.textContent.match(/(\\d+)\\/(\\d+)/); const marks = [...b.querySelectorAll('details.level > summary .level-done')];
+                ex = pg.evaluate("""() => { const b = document.querySelector('#exercises .act-exercises'); const marks = [...b.querySelectorAll('details.level > summary .level-done')];
                     const rec = JSON.parse(localStorage.getItem('ruukkilabra:tarkistettu') || '{}');
                     const done = [...b.querySelectorAll('li[id]')].filter(li => rec[li.id] && rec[li.id].done).length;
-                    return { core, n: m ? +m[1] : null, total: m ? +m[2] : null, levels: b.querySelectorAll('details.level').length, marks: marks.length,
-                      shown: marks.filter(x => !x.hidden).reduce((a, x) => a + parseInt(x.textContent, 10), 0), done, assigned: !!b.querySelector('li.assigned') }; }""")
-                expect(f"{tag}: Tehtävät says how many core tasks are done, and the levels' headings together count every done task",
-                       ex["marks"] == ex["levels"] and ex["shown"] == ex["done"] > 0 and (ex["assigned"] or (ex["total"] == ex["core"] and 0 < ex["n"] <= ex["core"])), ex)
+                    return { levels: b.querySelectorAll('details.level').length, marks: marks.length, line: !!b.querySelector('.ex-progress'),
+                      shown: marks.filter(x => !x.hidden).reduce((a, x) => a + parseInt(x.textContent, 10), 0), done }; }""")
+                expect(f"{tag}: the levels' headings together count every done task, and no core-task line stands over them (teacher 2026-11-13)",
+                       ex["marks"] == ex["levels"] and ex["shown"] == ex["done"] > 0 and not ex["line"], ex)
                 go = pg.evaluate("[!!document.querySelector('nav.next-stage'), document.querySelector('#ennusta').nextElementSibling.id]")
                 expect(f"{tag}: Tutki follows Ennusta directly", go == [False, "tutki"], go)
                 sr = pg.evaluate("document.querySelector('nav.toc a[href=\"#ennusta\"] .visually-hidden')?.textContent || ''")

@@ -2261,9 +2261,8 @@ ol.lessons.ch-cards:has(>li.ch-theme-row)>li.ch-card>.ch-box{flex:1;min-width:0}
 
 /* Where the exercises stand (teacher 2026-11-10; lesson.js): the core tasks' count over the levels, and each level's
    own count of done tasks in its heading, once one is done. */
-.ex-progress{margin:0 0 .7rem;font:600 var(--fs-ui)/1.4 var(--sans);color:var(--ink-2)}
 .level-done{margin-left:.4rem;padding:.05rem .5rem;border-radius:999px;background:var(--accent-soft);color:var(--accent-deep);font:600 var(--fs-small)/1.5 var(--sans);white-space:nowrap}
 .level-done[hidden]{display:none}
 .level-done.is-all::before{content:"\2713\00a0"}
-@media print{.ex-progress,.level-done{display:none}}
+@media print{.level-done{display:none}}
 @media (min-width:600px) and (max-width:699.98px){nav.toc.has-now>.toc-now{max-width:calc(100% - 11.5rem)}}   /* from 600 px Kuuntele shows its word (about 170 px, not the icon's 5.75rem): a long section name pushed it onto a second row and the 98 px bar covered the heading it had scrolled to (fy10-kondensaattori at 640 px, check_layout 2026-11-12) */
