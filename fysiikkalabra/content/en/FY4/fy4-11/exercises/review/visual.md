@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 696dd89d4770c31a
-Mode: delta (new task fy4-11-L2-08, round 1)
+CONTENT-HASH: dd6ef145574391a4
+SCOPE: delta added-exercise from 696dd89d4770c31a base 81db4a6fd727
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-[Minor] solutions.md fy4-11-L2-08 Reasonableness — `\Delta v = 25 : 3.6\,\text{m/s}` leaves km/h out of the division — write `25\,\text{km/h} : 3.6 \approx 6.94\,\text{m/s}` (for science: also fine as is).
+- [Minor] fy4-11-L1-09 solution, Answer block — "$s \approx 30\,\text{m}$" followed by a detached "(calculated $31\,\text{m}$)" gives two final values and the paragraph starts with a bracket; write "$s \approx 30\,\text{m}$ (the calculated value $31.5\,\text{m}$ rounded to one significant figure)". For science: the answer key is $31.46\,\text{m}$ with 5 % tolerance while the text rounds to one figure; check they agree.
+- [Minor] fy4-11-L3-06 solution — the Answer says three figures are kept although the data have two; the sentence is long, split it after "also accepted".
+- [Minor] fy4-11-L3-06 figure — curve A runs along the time axis from $0.06$ to $0.16\,\text{s}$ in orange over the axis; stop the line at the zero (or keep it, it reads fine on a phone).
 
 ## Checked
-- Rebuilt fy4-11 with scripts/build.py fy4-11; rendered fy4-11-L2-08 at 390 px (en) after the page scripts ran, wrong answer then correct answer committed, hints/solution details open (own script, scratchpad trvis4_shot.py).
-- Measured: page scrollWidth 390, no element outside a scroll box beyond 390 px; no clipped formula.
-- Read stem, four/five choices with feedback, and the full solution (Find, Principle, Model answer, check) in the capture: KaTeX renders, chains split in rows, units upright, decimal point consistent, no plain-text quantity.
-- Old tasks: only the changed text of the diff (fy4-2-L3-03 paragraph split) was looked at in the build.
+- fy4-11-open-exercises-1280-9 (L1-09 solution), L2-1280-11 (L2-09 task, v(t) figure, start of solution), L3-1280-10 (L3-06 task, figure, start of solution).
+- Figures: axes with quantity and unit, ticks outside the data, labels A and B language-neutral and equal to the solution's "test A / test B". Formula blocks, fractions, units and chain rows render correctly.
 
 ## Scores
-illustrations 5 · typography 5 · language 5 · accessibility 5
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

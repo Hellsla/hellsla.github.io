@@ -1,13 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 3327555d5e0791a2
+CONTENT-HASH: f3b0097c04bf99a2
+SCOPE: delta added-exercise from 3327555d5e0791a2 base 81db4a6fd727
+
 ## Blocking
-(none)
+None.
+
 ## Polish
-- content/fi/FY4/fy4-6/exercises/solutions.md:~352 — the data is four paragraphs of prose; fine, but a table would be easier to scan on a phone (optional).
+1. exercises.json fy4-6-L1-09 — "Kuinka suuri on vetovoima?" collides with vetovoima as gravitation used in the previous chapter (Maan vetovoima); write "Kuinka suurella voimalla kelkkaa vedetään?".
+2. exercises.json fy4-6-L2-09 — the opening sentence and the data repeat L2-03 almost word for word; reword the situation (for example a block sliding to a stop) so the two do not read as duplicates, and say that this task builds on the fitted line.
+3. solutions.md fy4-6-L2-09 — "luetaan suoralta F ≈ 1,68 N" claims three-figure precision from a hand-drawn line; write "noin 1,7 N, tarkemmin sovitetulta suoralta 1,68 N", the 5 % tolerance covers it.
+4. fy4-6-L2-09 — the mass is needed only for N; the result a = μg does not depend on it, which the solution could note in the check line.
+
 ## Checked
-- New L2-08 (ordering, type 9): prompt and task both state 'pienimmästä suurimpaan', so direction is given.
-- Computed values verified: B = 30 N (static, from sum F = 0), C = 44,1 N, A = 58,9 N, D = 123 N (m g sin 30 deg); answer sequence B, C, A, D correct; rounding to 2 s.f. follows the data.
-- Catches the chapter's warned mistake: using mu0*N for the resting box would put B at 196 N (largest) and D at 149 N; I checked that mass-order and mu-order also differ from the right one, as the solution claims.
-- Scope: static vs kinetic friction, slope N = mg cos a, F_mu = mu N are taught in FY4.6; L2 fits (four short computations, one trap each).
-- Order items are bare letters, so the answer is not identifiable by form; the solution explains the order.
-- Rendered at 390 px with solution open: no overflow, widest formula 277 px. Text only: Finnish.
+- L1-09 (MAFY table task): μ (steel on ice) from the named table row, F = μmg = 6,18 N; diagram with equal horizontal arrows before the equations; the 4 % tolerance statement is present.
+- L2-09: figure points all listed in the description, no fitted line drawn, so the student must fit; N = mg = 7,85 N lies between points, which forces interpolation on the line.
+- Numbers: slope 0,214, F = 1,68 N, a = 2,10 m/s²; sign and direction of the deceleration stated.
+- Level: L1-09 is lookup plus one formula; L2-09 is graph fit plus Newton II.
+- Finnish correct ("liukukitkakerroin" kept as the teacher's choice).

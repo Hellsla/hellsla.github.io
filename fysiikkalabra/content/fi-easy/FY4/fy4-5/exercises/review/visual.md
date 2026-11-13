@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 5dc4b3d2d47c251a
-Round: 2
+CONTENT-HASH: 689b91966f1464f6
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- [Minor] fy4-5 option figures — the label $\overline{N}$ sits tight against the box corner and arrow tip; fix: shift it a few px right (same in the older figures).
+- [Minor] fy4-5-L2-08 figure — label $\overline{F}_1$ sits right at the arrowhead and on a grid line; shift it a few px beside the tip.
+- [Minor] fy4-5-L2-08 solution — "Kuvaajan lukeminen" names a grid figure; "Kuvion lukeminen" would fit the set's other force-diagram tasks.
 
 ## Checked
-- fy4-5-L1-09 (fi-easy) at 390 px, feedback and solution open (two-stage answer, boxed answer, Find/Principle/Model answer), screenshot read in full; measured after page scripts: scrollWidth 390, no clipped element outside a scroll box, no .kx-wide needed.
-- Units, decimal sign, LaTeX labels and vectors checked in the render.
-- Round 2: all four option figures (C, D, A, B) opened in the task render: forces red, velocity $\overline{v}$ in D blue and beside the body, none orange or red; arrows to scale, equal lengths in C; source colours checked (#c92a2a force, #1971c2 velocity).
+- fy4-5-open-exercises-L2-1280-11, -12 and -13 (neighbouring task 6-16, new 6-17 task, grid figure, full solution). Grid labelled with a 4,0 N scale bar, forces red, solution diagram has $\overline{F}_1$, $\overline{F}_2$ red and $\overline{a}$ orange; vectors with overlines, units upright, chains aligned and wrapped, answer boxed. Old tasks and figure-description edits not re-reviewed.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 4

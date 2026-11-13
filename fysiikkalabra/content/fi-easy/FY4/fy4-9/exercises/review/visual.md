@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: bef150567c114887
-Mode: delta (changed items rendered and read in full)
-Round 1
+CONTENT-HASH: bfc543020b74ad96
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- [Minor] fy4-9-L1-09 feedback of 4000 N — "Voiman impulssi on yhtä suuri kuin liikemäärän muutos, ei liike-energia." lacks a verb for the contrast — "..., ei liike-energian muutos."
-- [Minor] lesson page, optional "virhe" (Find the error) activity — with all boxes open at 390 px the inline chain reaches x = 458 px and the page scrolls sideways (scrollWidth 487) — outside this exercise set: for the lesson reviewer, break the chain.
+- [Minor] fy4-9-L2-05 solution — the mean speed is now $v_\text{k}$ but $\Delta t_\text{ka}$ and $F_\text{ka}$ keep "ka"; use one subscript style in the chain.
+- [Minor] fy4-9-L2-08 solution, Vastaus — "kaksi tai kolme merkitsevää numeroa" is vague; give one ("$450\,\text{N}$, kolme merkitsevää numeroa, koska huippuarvo $900\,\text{N}$ ja aika $12\,\text{ms}$ luetaan kuvaajasta").
+- [Minor] fy4-9-L2-08 solution — "Alue on kolmio" → "Kuvaajan ja aika-akselin välinen alue on kolmio."
+- [Minor] fy4-9-L2-08 graph — the peak $900\,\text{N}$ falls between labelled ticks ($800$, $1000$); a dashed reading line to the peak would help.
 
 ## Checked
-- Rendered fi-easy/fy4-9.html at 390 px, every details/feedback/solution open, element captures of fy4-9-L1-09: task text and its new paragraph breaks, answer/choice/true-false/order widgets, feedback panels, Answer box, full worked solution (Given/Find/Principle/Model answer).
-- No element in the checked tasks passes x = 390; no table or caption overflow. Data-table captions (5 in the page) are 223-326 px wide inside 390 px. Widest inline chain 253 px (weight check line), below the 280 px flag.
-- Maths: units upright with thin space, \cdot, decimal comma, vectors and subscripts set correctly; one step per row; no red KaTeX.
-- Not re-run: check_layout/check_a11y (in the packet).
+- fy4-9-open-exercises-L2-1280-10 and -11 (13-17 task, F(t) triangle graph with units on both axes, full solution to the check). Graph legible, red force line, KaTeX clean, fractions and units upright, layout intact. The v_ka to v_k renames in other solutions read from the diff only.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

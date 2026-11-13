@@ -1,13 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 177053466bf26f9c
+CONTENT-HASH: b109d86dc61f2dd3
+SCOPE: delta added-exercise from efb48162357b8d03 base 7db0992d648a
+
 ## Blocking
-(none)
+None.
+
 ## Polish
-- content/fi/FY4/fy4-5/exercises/exercises.json:125 (L1-09 intro) — carried over from round 1 and still open: the intro defines F_k and v, so B and D are eliminable from the text alone; accept as a gentle Level 1 task or drop the two definitions. Also 'vaakasuoralla lattialla vaakasuoralla voimalla' is clumsy: 'lattialla vaakasuoralla voimalla'.
-- same task, feedback — correct feedback (C) is the shortest of the four (about 170 characters against 220-330); not a reliable clue but easy to even out by adding one sentence to C.
+1. solutions.md fy4-5-L2-08, Järkevyys — "10 N : 2,5 kg" uses a colon for division, and the magnitudes 15,6 N and 5,7 N appear without being derived; add "$F_1 = 2{,}0\,\text{N}\cdot\sqrt{5^2+6^2} = 15{,}6\,\text{N}$" or drop that comparison.
+2. exercises.json fy4-5-L2-08 — the task fits as a two-step vector task (components from a grid, sum, then ΣF = ma); consider asking also the direction in a second part, since the solution derives 53° anyway.
+
 ## Checked
-- Delta (round 2): only option D changed: figure pick-nopeus now draws the velocity arrow blue (rule: force red, velocity blue) and D's feedback says 'nopeus ei ole voima' and where the blue arrow belongs.
-- Correct option C still not identifiable by form: options differ by the arrow only; D's v arrow has the same length as F and the friction, so equality of arrows does not reveal C; the student must reject v as non-force (the chapter's warned force/velocity confusion) and F_k as reaction.
-- D feedback gives the reason (no cause, describes motion) without naming the correct option; C feedback unchanged and states N = G, F = F_mu as before.
-- Figure description of pick-nopeus names the blue arrow, its origin (right side) and equal lengths, so a reader without the image gets the same information as the figure.
-- Text and feedback only; the figure itself and 390 px rendering not viewed this round.
+- Figure ruutu-vinot: both arrows end on grid crossings, the 2,0 N per square is stated in task and figure, the description carries the same coordinates (5, 6 and -2, -2) and draws no net force or acceleration.
+- Net components (3 and 4 squares = 6 N and 8 N), ΣF = 10 N and a = 4,0 m/s² verified; units converted in the Muunnokset line.
+- Level 2: not a repeat of L1-02 (collinear grid forces) or L2-05 and L2-07 (equilibrium); it is the one task using Newton II with oblique vectors.
+- Solution has all parts and the diagram before the equations; the force-diagram text is consistent with the figure.
+- Finnish correct.

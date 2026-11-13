@@ -1,19 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 58537b70d4c98ba4
-Mode: delta (changed items rendered and read in full)
-Round 1
+CONTENT-HASH: a045d9aa4e00e9ae
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- [Minor] fy4-6-L2-08 — the question "Missä järjestyksessä ..." and the prompt "Järjestä laatikot ..." say the same twice — keep one
+- [Minor] fy4-6-L2-09 text — "Lue kitkavoima kuvaajaan sovitetulta suoralta" but the graph shows only points and no line — "Piirrä pisteisiin sovitettu, origon kautta kulkeva suora ja lue kitkavoima siltä."
+- [Minor] fy4-6/mittaus figure — the friction-force data points are blue, the colour reserved for velocity; red would follow the project convention (task is a graph of force).
+- [Minor] fy4-6-L1-09 text — "Hae ... MAFY-taulukosta (mafytaulukot.fi)" then the hint repeats the table name; fine, but the hint could name the row (teräs–jää).
 
 ## Checked
-- Rendered fi-easy/fy4-6.html at 390 px, every details/feedback/solution open, element captures of fy4-6-L2-04 and fy4-6-L2-08: task text and its new paragraph breaks, answer/choice/true-false/order widgets, feedback panels, Answer box, full worked solution (Given/Find/Principle/Model answer).
-- No element in the checked tasks passes x = 390; no table or caption overflow. Data-table captions (4 in the page) are 326 px wide inside 390 px. Widest inline chain 277 px (F_μD row in L2-08; about 297 px in ci, still inside the 332 px column), below the 280 px flag.
-- Maths: units upright with thin space, \cdot, decimal comma, vectors and subscripts set correctly; one step per row; no red KaTeX.
-- Not re-run: check_layout/check_a11y (in the packet).
+- fy4-6-open-exercises-1280-10 and -11 (L1-09 MAFY task: text, hint, force diagram, solution, answer, check), fy4-6-open-exercises-L2-1280-12, -13 and -14 (L2-09 task, scatter graph with axes and units, solution diagram with $\overline{a}$ orange and $\overline{v}$ blue, full solution). Typography (units, vectors, decimal comma, wrapped chains) clean; the diagram says the scales differ. Old tasks and the other diffs not re-reviewed.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: e4df9939d9e9aaf6
-
+CONTENT-HASH: 42ba4c36bd92a300
 ## Blocking
-
+(none)
 ## Polish
-- exercises.json fy4-9-L1-09 text — "raekivi" is an odd word; use "rae" ("Rae, jonka massa on 20 g, putoaa ... ja osuu auton kattoon") and "rakeen" in the solution.
-- fy4-9-L1-09 question — "suuruusluokaltaan ... Valitse lähin arvo" while the exact result 400 N is an option; "Arvioi ... Valitse lähin arvo" is more honest.
-
+- fy4-9-L1-09 — level 1 but needs the ms and g conversions and a rounding to an order of magnitude; fits L2 better, keep only if a level-1 choice is wanted.
+- fy4-9-L1-08 solutions.md (Järkevyys) — "180-kertainen kävelevän ihmisen liikemäärään" is an odd comparison; use the student's value 64 800 versus 18 000 only.
+- fy4-9-L2-08 sits last in level 2 but is the easiest (read a triangle); move it before L2-07.
+- fy4-9-L2-06 and L3-04 c) repeat the cushion idea (same impulse, longer time) with L1-09; fine for the chapter's misconception, but vary the L3 context if more tasks are added.
 ## Checked
-- Round 1, new YO-skill task only (the rest of the set was PASS before). All checks from the packet text and exercises.json/solutions.md; no render was made or opened, so phone width of formulas is estimated from the LaTeX, not measured.
-- Form: option texts 15–20 characters, feedbacks 215–262; the correct one is not longest, shortest-hedged or alone in mentioning anything.
-- Distractors: ms taken as s, kinetic energy instead of momentum (the lesson's third warned mistake), grams as kg; each feedback names its error and is right (4,0 J / 0,001 s = 4000 W; 0,4 N is about 2 x weight).
-- Scope: only p = mv, impulse principle, unit conversion; weight neglect is stated. No repeat of the tennis example.
-- Solution complete (conversions, principle, substitution, sanity check); longest chain "F_ka = 0,40 kg·m/s / 0,0010 s, eli 400 N" about 260 px estimated, wraps at "eli".
-- Hash unchanged at end.
+- Round 1, full. Counts 9 / 8 / 5 (minimum 5 / 4 / 3); mix of concept, error, data, graph, experiment, model tasks.
+- Two figure tasks (L2-08 triangle, L3-01 trapezoid): values readable from the description, areas not shaded, answers not given away; solutions state how the area is read.
+- Recomputed L1-01..09, L2-01..08, L3-01..05: all answers and the 87/9 steps match; sign conventions in L2-03, L3-03, L3-05 explained.
+- L2-07 and L3-04 table tasks make the student draw and sum trapezoids; solutions show the shortcut (end points zero) clearly.
+- L1-09 distractors come from real slips (ms, grams, energy instead of momentum); feedback names each.
+- None repeats the worked example (tennis racket); Finnish and case endings ({,}0\,\text{s}$:ssa, 5\,\text{kg}$:n) correct.
+- Phone captures not opened; layout checks passed per packet.

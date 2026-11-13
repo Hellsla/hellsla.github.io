@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: f73c86410af7bc40
-
+CONTENT-HASH: c140ae6575c8510f
+SCOPE: delta added-exercise from f73c86410af7bc40 base 81db4a6fd727
 ## Blocking
-
+(none)
 ## Polish
-- exercises.json fy4-10-L2-08 choices[4] ("Laskussa ei ole virhettä") feedback — "kun A kimpoaa taaksepäin" already points at the sign of row 3; keep only the impossibility check (B:n liikemäärä 0,18 < 0,24) without the hint.
-- fy4-10-L2-08 choices[3] (Rivi 4) feedback — "miinusmerkin pitäisi olla plusmerkki" is in fact the symptom of the row 3 error (0,24 − (−0,060)); say that row 4 is a valid step from row 3 and the first wrong row is the answer.
-- Feedback phrase "Jos rivin luulee virheelliseksi, ajattelee" (3 times) — subject-less; "Jos valitsit tämän rivin, saatat ajatella, että ..."
-- The sign slip repeats L2-07's (sign of the left-moving cart); optional, different context (rebound).
-
+- fy4-10-L2-09 solutions.md (Järkevyys) — "samaa suuruusluokkaa kuin vaunun A massa, kuten nopeuksien muutoksista voi odottaa" is vague; say \text{B}/m_\text{A} = \Delta v_\text{A}/\Delta v_\text{B} = 0{,}6/1{,}0$.
+- fy4-10-L2-09 — a short note that the collision is not elastic (energy 0,184 J to 0,064 J) would use the graph further; optional.
+- fy4-10-L3-06 solutions.md (Järkevyys) — the loss formula m_B/(m_A+m_B) is not in the chapter; keep the explanation to the energies computed.
 ## Checked
-- Round 1, new YO-skill task only (the rest of the set was PASS before). All checks from the packet text and exercises.json/solutions.md; no render was made or opened, so phone width of formulas is estimated from the LaTeX, not measured.
-- Rows recomputed: 0,24; 0,060 vs −0,060; 0,36 vs 0,60 m/s; energy 0,096 J before and after, so the case is truly elastic and consistent.
-- Distractors are correct lines with the own check in the feedback; the warned sign mistake is the error row. Correct option is not longest or otherwise marked (34–42 characters).
-- Scope: conservation with signs, taught in the chapter. Solution follows row by row with a plausibility check; chains short (about 200 px).
-- Hash unchanged at end.
+- Round 1, delta: L2-09 and L3-06 judged in full.
+- L2-09: figure needed; the four velocities and the collision time are readable and the description gives them without the answer (0,30 kg). Sign of B (negative) is the trap the chapter prepares; solution shows conservation check 0,28 = 0,28.
+- L3-06: x-t slopes give 0,60 and 0,20 m/s (0,40 m over 2,0 s consistent with 1,0 to 3,0 s); m_B 0,60 kg, loss 0,036 J = two thirds. Two ideas (graph slope, conservation plus energy): level 3 fits.
+- Neither repeats L2-06 or L3-05; v-t and x-t give variety of graph type. Question last, Finnish correct.
+- No render opened; layout checks passed per packet.

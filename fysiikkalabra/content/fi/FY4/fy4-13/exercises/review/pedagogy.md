@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 6f0e928ad88d259e
-
+CONTENT-HASH: 654329c358771fa4
+SCOPE: delta added-exercise from 6f0e928ad88d259e base 81db4a6fd727
 ## Blocking
-
+(none)
 ## Polish
-- reasons[2] — "massojen tulo ja summa pysyvät samoina vaihdossa" → "kun massat vaihdetaan keskenään, niiden tulo ja summa pysyvät samoina".
-- Correct stage-1 feedback ends with an instruction ("Valitse seuraavaksi perustelu ..."); harmless, but it tells the student a reason follows, which the page already shows.
-
+- fy4-13-L3-06 and L3-05 — both ask for the unknown cart mass from measured data; L3-06 differs by the single-run reading plus the T versus weight reasoning, but the idea repeats; vary the unknown (e.g. the weight's mass) if another task is added.
+- fy4-13-L2-09 / L3-06 — the same figure and same values (1,95 m/s²) appear twice; acceptable (different setups), but note in the L3 text that the run is a new measurement.
+- fy4-13-L3-06 solutions.md (Vastaus b) — the statement "T olisi painon suuruinen vain, jos kiihtyvyys olisi nolla" is good; add the numbers 2,36 N against 2,94 N in one line for the self-assessment criterion.
 ## Checked
-- light delta review (teacher 2026-11-07), LOPS extension marking: only L3-04 (train couplings) gets the "Syventävä tehtävä" tag; level 3 was never core, so the core path is unchanged; tag renders clearly before the task text.
-- Round 3, text only; no render, widths not measured.
-- Stage-1 options are 30, 30 and 35 characters, feedbacks 199, 200, 206: the round-2 form cue is gone. Correct feedback names neither the acceleration nor the reason.
-- Reasons 83–94 characters, all with formula or symbols, correct reason not marked; numbers and solution unchanged and right.
-- Hash at start 06d5cc861549825f, at end 06d5cc861549825f.
+- Round 1, delta: L2-09 and L3-06 judged in full.
+- L2-09: a = 1,95 m/s² from the origin and (2,0 s; 3,9 m/s), T = 1,56 N inside the 4 % tolerance for other point pairs (1,0 s gives 1,60 N). Force diagram of the cart drawn in the solution before the equation; the mass of the weight is not needed.
+- L3-06: m1 = 1,21 kg; tolerance 4 % covers readings 1,9 to 2,0 m/s². Both free bodies drawn with T shorter than G2; part b has an observable reason (net force down).
+- Figure description gives the five points without the acceleration or any mass; the answers are not given away.
+- fbd skills practised: draw and equations; two new figure tasks (L2-09, L3-06) satisfy the chapter's figure minimum.
+- No render opened; layout checks passed per packet.

@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: d2e456cbde8ae349
-Mode: delta (new task fy4-2-L2-08, round 1)
+CONTENT-HASH: 1f00a74441e935df
+SCOPE: delta added-exercise from d2e456cbde8ae349 base 81db4a6fd727
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-(none)
+- [Minor] fy4-2-L1-09 solution — the solution says "Solar System" while the task hint says "Aurinkokunta (the Solar System)"; fine for a MAFY lookup task, but name the table heading the same way in both.
 
 ## Checked
-- Rebuilt fy4-2 with scripts/build.py fy4-2; rendered fy4-2-L2-08 at 390 px (en) after the page scripts ran, wrong answer then correct answer committed, hints/solution details open (own script, scratchpad trvis4_shot.py).
-- Measured: page scrollWidth 390, no element outside a scroll box beyond 390 px; no clipped formula.
-- Read stem, four/five choices with feedback, and the full solution (Find, Principle, Model answer, check) in the capture: KaTeX renders, chains split in rows, units upright, decimal point consistent, no plain-text quantity.
-- Old tasks: only the changed text of the diff (fy4-2-L3-03 paragraph split) was looked at in the build.
+- fy4-2-open-exercises-1280-10 (end of level 1: the L1-09 solution from the formula to the reasonableness check). The substitution chain with the nested root and fraction renders in aligned rows, units upright, MAFY lookup named, no figure in this task.
 
 ## Scores
-illustrations 5 · typography 5 · language 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

@@ -1,19 +1,17 @@
-VERDICT: PASS
-CONTENT-HASH: 2040e0e2c0e5a3c7
-Mode: delta, round 2 (supersedes round 1)
+VERDICT: FAIL
+CONTENT-HASH: eee17fbd6ef7c120
+SCOPE: delta added-exercise from 2040e0e2c0e5a3c7 base 81db4a6fd727
 
 ## Blocking
-(none)
-Round 1 reported the L2-07 and (en) L2-05 chains as clipped Major, measured before the page's flFitMath step had run. Re-measured with it running: page scrollWidth 390 in both languages, no element outside the viewport except inside the designed sideways-scrolling `.kx-wide` / `.eq-chain` lines. These are old, untouched tasks with formulas identical to the passed Finnish, so they are Polish, not blocking for the new-task review.
+- [Major] figure fy4-10/ex-vt-kaarryt (task fy4-10-L2-09, capture L2-1280-12) — the time-axis numbers $0.5 \ldots 4$ stand inside the plot just above the axis at $v = 0$; the numbers $1.5$ and especially $2$ (the collision moment the solution reads) are crossed by the blue and orange step lines, and $0.5$ sits on the $0.2$ gridline — the value the task needs is hard to read — set the tick numbers at the bottom edge of the plot (below $-0.6$) or on a white backing, keeping the ticks on the axis.
 
 ## Polish
-- [Minor] fy4-10-L2-07 task — the student's chain (330 px, `.kx-wide`) scrolls sideways inside its own line, so its tail `= 0.70 m/s` is only seen by scrolling; the same in the passed Finnish. Follow-up for a shared fit/mathlayout rule (wrap a fraction chain), not this PR.
-- [Minor] fy4-10-L2-05 solution (en) — the two inline chains are `.kx-wide` (304 px) and scroll inside the 360 px card; the en/fi difference comes from `mathlayout.is_long()` counting raw LaTeX length (shared tool follow-up).
-- [Minor] fy4-10-L2-02 solution — chain about 364 px scrolls in `.eq-chain`; CI KaTeX about 20 px wider.
+- [Minor] fy4-10-L2-09 solution — reasonableness mixes "$0.28\,\text{kg}\cdot\text{m/s}$" with bare numbers in the substitution ($0.50 \cdot 0.8 + \ldots$); give the units in the chain.
+- [Minor] fy4-10-L3-06 solution — "Two significant figures like the mass" while $0.036\,\text{J}$ is the difference of three-figure intermediates; fine, but say "the data have two figures".
 
 ## Checked
-- Re-rendered at 390 px with every hint, feedback and solution open, flFitMath present: scrollWidth 390; opened fy4-10-L2-07 and L2-05 (en) captures.
-- fy4-10-L2-08 (new): task, five options with feedback and solution open in both languages; no overflow, units upright, `\cdot` used, clear order principle, formula, substitution, result, check.
+- fy4-10-open-exercises-L2-1280-12, -13, -14 (L2-09 task, figure, full solution) and L3-1280-9, -10 (L3-06 task, x(t) figure with labels A, B, full solution).
+- The x(t) figure is clean: labels A and B are language-neutral and match the solution; the v(t) figure labels also match. Fractions, primes and subscripts render well; chains wrap in aligned rows.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish (English) 5 · accessibility 4
+illustrations 3 · typography 4 · Finnish 5 · accessibility 4

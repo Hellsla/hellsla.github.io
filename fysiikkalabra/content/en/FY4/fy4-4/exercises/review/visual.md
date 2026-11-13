@@ -1,18 +1,17 @@
-VERDICT: PASS
-CONTENT-HASH: 61bbd8dbfca10bbc
-Mode: delta (new task fy4-4-L2-08, round 1)
+VERDICT: FAIL
+CONTENT-HASH: f4d1896786d727cb
+SCOPE: delta added-exercise from 61bbd8dbfca10bbc base 81db4a6fd727
 
 ## Blocking
-(none)
+- [Major] figure fy4-4/kuvaaja-ab (tasks fy4-4-L1-10, fy4-4-L2-09; captures fy4-4-open-exercises-1280-10, L2-1280-12) — the English page shows the figure with the Finnish curve labels "kärry A" and "kärry B", while the task and both solutions say "cart A" and "cart B" — an English reader meets an untranslated word in a figure, and the solutions do not quote the label the figure shows — give the English figure the labels $\text{cart A}$ and $\text{cart B}$ (the figure's translation) so figure, task and solutions agree; the figure description in the inventory is also Finnish-only for the English page.
 
 ## Polish
-[Minor] fy4-4-L2-08 last option feedback — "the acceleration is reduced by the mass" is odd — "the acceleration is found by dividing by the mass".
+- [Minor] fy4-4-L2-09 solution — "copper-coloured" and "dark" name the lines by colour; the figure also labels them, so add "(labelled cart B)" so colour is not the only cue.
+- [Minor] fy4-4-L1-09 — the reasonableness line mixes $24\,\text{kN}$ (two figures) with $31.8\,\text{kN}$; write $24.3\,\text{kN}$ or keep two figures throughout.
 
 ## Checked
-- Rebuilt fy4-4 with scripts/build.py fy4-4; rendered fy4-4-L2-08 at 390 px (en) after the page scripts ran, wrong answer then correct answer committed, hints/solution details open (own script, scratchpad trvis4_shot.py).
-- Measured: page scrollWidth 390, no element outside a scroll box beyond 390 px; no clipped formula.
-- Read stem, four/five choices with feedback, and the full solution (Find, Principle, Model answer, check) in the capture: KaTeX renders, chains split in rows, units upright, decimal point consistent, no plain-text quantity.
-- Old tasks: only the changed text of the diff (fy4-2-L3-03 paragraph split) was looked at in the build.
+- fy4-4-open-exercises-1280-9, -10, -11 (L1-09 full solution, L1-10 task, figure and solution) and L2-1280-12 (L2-09 figure foot and solution).
+- Figure axes carry quantity and unit, ticks readable, data points are markers, no answer marked. Display chains, fractions and units render correctly; the L1-09 and L2-09 task texts read fluently.
 
 ## Scores
-illustrations 5 · typography 5 · language 5 · accessibility 5
+illustrations 3 · typography 5 · Finnish 4 · accessibility 4
