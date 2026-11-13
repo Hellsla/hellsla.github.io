@@ -192,7 +192,7 @@ The nearest option is $500\,\text{MW}$. Reasonableness: the result is about $42\
 **Given:** heating need $Q_1 = 100\,\text{kWh}$, coefficient of performance $\varepsilon = 3.00$, efficiency of the power plant $\eta_\text{plant} = 0.400$ and share left after transmission $\eta_\text{transm} = 0.950$
 **Find:** the energy of the fuel $E_\text{fuel}$ at the power plant in kilowatt-hours
 **Principle:** A heat pump moves heat from outside to inside and uses electricity for it, so the coefficient of performance tells the ratio of heat to electricity. The electricity is produced from fuel in a chain where each step lets through only part of the energy, so the fuel is found by dividing the electricity by the efficiency of the chain.
-**Formula:** $\varepsilon = \dfrac{Q_1}{W}$, so $W = \dfrac{Q_1}{\varepsilon}$, and $E_\text{fuel} = \dfrac{W}{\eta_\text{transm}\, \eta_\text{plant}}$, thus $E_\text{fuel} = \dfrac{Q_1}{\eta_\text{transm}\, \eta_\text{plant}\, \varepsilon}$ In a heat pump $Q_1$ is the heat given indoors and $W$ the electric energy the pump uses.
+**Formula:** $\varepsilon = \dfrac{Q_1}{W}$, so $W = \dfrac{Q_1}{\varepsilon}$, and $E_\text{fuel} = \dfrac{W}{\eta_\text{transm}\, \eta_\text{plant}}$, thus $E_\text{fuel} = \dfrac{Q_1}{\eta_\text{transm}\, \eta_\text{plant}\, \varepsilon}$. In a heat pump $Q_1$ is the heat given indoors and $W$ the electric energy the pump uses.
 **Conversions:** All energies are in kilowatt-hours and the factors are dimensionless, so no conversions are needed.
 **Substitution:** $E_\text{fuel} = \dfrac{100\,\text{kWh}}{0.950 \cdot 0.400 \cdot 3.00} = \dfrac{100\,\text{kWh}}{1.14} = 87.719\,\text{kWh}$
 **Answer:** $87.7\,\text{kWh}$, three significant figures, because the factors $0.950$, $0.400$ and $3.00$ have three figures and the heating need $100\,\text{kWh}$ is given to the nearest kilowatt-hour.
@@ -234,7 +234,7 @@ $P_\text{L} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 38\,000\,\tfr
 **Given:** reading from the bars of the figure, the power into the steam cycle $P_1 = 350\,\text{MW}$ and the power out of it $P_2 = 150\,\text{MW}$
 **Find:** the efficiency $\eta_2$ of the steam cycle as a percentage
 **Principle:** The stages are in series, and the output power of each stage is the product of its efficiency and the power coming in. The input power of the steam cycle is the power after the boiler, $P_1$, and its output power is $P_2$.
-**Reading the graph:** The tops of the bars $P_1$ and $P_2$ are on grid lines: $P_1$ at $350\,\text{MW}$ and $P_2$ at $150\,\text{MW}$. The grid spacing is $50\,\text{MW}$. The fuel power $P_0$ and the electric power $P_3$ do not belong to the efficiency of the steam cycle.
+**Reading the graph:** The tops of the bars $P_1$ and $P_2$ are on grid lines: $P_1$ at $350\,\text{MW}$ and $P_2$ at $150\,\text{MW}$. The grid spacing is $50\,\text{MW}$. The fuel power $P_\text{o}$ and the electric power $P_3$ do not belong to the efficiency of the steam cycle.
 **Formula:** $P_2 = \eta_2 P_1$, so $\eta_2 = \dfrac{P_2}{P_1}$
 **Conversions:** Both powers are in $\text{MW}$, so the unit cancels; the efficiency as a percentage is obtained by multiplying by one hundred.
 **Substitution:** $\eta_2 = \dfrac{150\,\text{MW}}{350\,\text{MW}} = 0.4286 = 42.86\,\%$

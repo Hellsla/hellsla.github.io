@@ -83,9 +83,9 @@
 **Annettu:** veden saama teho $P \approx 237\,\text{W}$, säteilyn teho pinta-alaa kohti $800\,\text{W/m}^2$ ja pinta-ala $A = 0{,}50\,\text{m}^2$
 **Kysytty:** keräimen hyötysuhde $\eta$ mittauksen alussa, kun häviöitä ei vielä ole
 **Periaate:** Hyötysuhde on hyödyllisen tehon ja tulevan tehon suhde. Hyödyllinen teho on b-kohdan teho. Vesi saa sen alussa ennen häviöitä. Tuleva teho on keräimen pinnalle osuvan säteilyn teho.
-**Kaava:** $P_\text{tuleva} = 800\,\text{W/m}^2 \cdot A$ ja $\eta = \dfrac{P}{P_\text{tuleva}}$
+**Kaava:** $P_\text{o} = 800\,\text{W/m}^2 \cdot A$ ja $\eta = \dfrac{P_\text{a}}{P_\text{o}}$. Siinä antoteho $P_\text{a} = P$ on veden saama teho ja ottoteho $P_\text{o}$ on keräimeen tulevan säteilyn teho
 **Muunnokset:** Ei tarvita, tehot ovat watteina.
-**Sijoitus:** $P_\text{tuleva} = 800\,\text{W/m}^2 \cdot 0{,}50\,\text{m}^2 = 400\,\text{W}$ ja $\eta = \dfrac{237\,\text{W}}{400\,\text{W}} = 0{,}59$
+**Sijoitus:** $P_\text{o} = 800\,\text{W/m}^2 \cdot 0{,}50\,\text{m}^2 = 400\,\text{W}$ ja $\eta = \dfrac{237\,\text{W}}{400\,\text{W}} = 0{,}59$
 **Vastaus:** $\eta \approx 0{,}59$ eli noin $60\,\%$. Vastauksessa on kaksi merkitsevää numeroa kuten b-kohdan tehossa.
 **Järkevyys:** Hyötysuhde on enintään yksi, koska vesi ei voi saada enempää tehoa kuin keräimeen tulee. Todellisessa keräimessä se jää alle yhden, koska osa säteilystä heijastuu lasista ja laatikosta. Siksi noin $60\,\%$ on uskottava yksinkertaiselle keräimelle.
 

@@ -80,12 +80,12 @@
 **Järkevyys:** Lämmöstä $200\,\text{J}$ kuluu männän työntämiseen ja loput $500\,\text{J}$ nostavat ilman lämpötilaa, joten $\Delta U > 0$ ja $\Delta U < Q$. Jos työ lisättäisiin lämpöön, tulokseksi tulisi $900\,\text{J}$, enemmän kuin ilmaan tuli lämpöä, vaikka ilma luovuttaa energiaa työntäessään mäntää. Siksi etumerkki on oikein.
 
 ## fy3-11-L2-04
-**Annettu:** mekaaninen teho $P_\text{mek} = 480\,\text{kW}$, hyötysuhde $\eta = 40{,}0\,\% = 0{,}400$
+**Annettu:** mekaaninen teho $P_\text{a} = 480\,\text{kW}$, hyötysuhde $\eta = 40{,}0\,\% = 0{,}400$
 **Kysytty:** hukkalämmön teho $P_\text{hukka}$ kilowatteina
 **Periaate:** Moottori on lämpövoimakone, ja energia säilyy: polttoaineen teho jakautuu mekaaniseksi tehoksi ja hukkalämmöksi. Hyötysuhde yhdistää mekaanisen tehon polttoaineen tehoon, joten polttoaineteho lasketaan ensin.
-**Kaava:** $\eta = \dfrac{P_\text{mek}}{P_\text{in}}$, joten $P_\text{in} = \dfrac{P_\text{mek}}{\eta}$ ja $P_\text{hukka} = P_\text{in} - P_\text{mek}$
+**Kaava:** $\eta = \dfrac{P_\text{a}}{P_\text{o}}$, joten $P_\text{o} = \dfrac{P_\text{a}}{\eta}$ ja $P_\text{hukka} = P_\text{o} - P_\text{a}$
 **Muunnokset:** Hyötysuhde $40{,}0\,\% = \tfrac{40{,}0}{100} = 0{,}400$. Tehot ovat jo kilowatteina, joten muuta muunnosta ei tarvita.
-**Sijoitus:** $P_\text{in} = \dfrac{480\,\text{kW}}{0{,}400} = 1200\,\text{kW}$, joten $P_\text{hukka} = 1200\,\text{kW} - 480\,\text{kW} = 720\,\text{kW}$
+**Sijoitus:** $P_\text{o} = \dfrac{480\,\text{kW}}{0{,}400} = 1200\,\text{kW}$, joten $P_\text{hukka} = 1200\,\text{kW} - 480\,\text{kW} = 720\,\text{kW}$
 **Vastaus:** $720\,\text{kW}$, kaksi merkitsevää numeroa. Rajoittava tieto on mekaaninen teho $480\,\text{kW}$, jonka kaksi ensimmäistä numeroa ovat varmoja; hyötysuhde $40{,}0\,\%$ on kolmen numeron arvo eikä rajoita.
 **Järkevyys:** Hukkaan menee $60\,\%$ ja hyödyksi $40\,\%$, joten hukkalämpöä on $\tfrac{60}{40} = 1{,}5$ kertaa niin paljon kuin mekaanista tehoa: $1{,}5 \cdot 480\,\text{kW} = 720\,\text{kW}$. Polttoaineteho on suurempi kuin mekaaninen teho, kuten pitääkin. Osa hukkalämmöstä voidaan käyttää matkustamon lämmittämiseen.
 
@@ -100,13 +100,13 @@
 **Järkevyys:** Kokonaishyötysuhde on yhteistuotannossa $\dfrac{96 + 180}{320} \approx 86\,\%$ ja erillistuotannossa $\dfrac{276}{440} \approx 63\,\%$, joten erillinen tuotanto tarvitsee enemmän polttoainetta. Lämpökeskus ei muuta lämpöä työksi, joten sen häviöt ovat vain savukaasuissa. Lauhdevoimalaitos muuttaa lämpöä työksi, ja silloin osa lämmöstä on aina luovutettava kylmempään ympäristöön, tavallisesti mereen.
 
 ## fy3-11-L3-02
-**Annettu:** vuotuinen lämmöntarve $Q = 16{,}0\,\text{MWh}$, lämpöpumpun lämpökerroin $\varepsilon = 2{,}50$, nykyinen lämmitys suora sähkölämmitys
+**Annettu:** vuotuinen lämmöntarve $Q_1 = 16{,}0\,\text{MWh}$, lämpöpumpun lämpökerroin $\varepsilon = 2{,}50$, nykyinen lämmitys suora sähkölämmitys
 **Kysytty:** säästetty sähköenergia $\Delta E$ ja ulkoilmasta otettu lämpö $Q_2$ megawattitunteina sekä perustelu, miksi pumppu ei ole ikiliikkuja
 **Periaate:** Lämpökerroin kertoo, kuinka monta kertaa niin paljon lämpöä pumppu luovuttaa kuin se käyttää sähköä. Suoran sähkölämmityksen vastukset muuttavat käytännössä kaiken sähköenergian sisäenergiaksi, joka siirtyy lämpönä huoneeseen, joten se tarvitsee sähköä saman verran kuin lämpöä. Energia säilyy: taloon tuleva lämpö on pumpun sähkö ja ulkoilmasta otettu lämpö yhteensä.
-**Kaava:** $\varepsilon = \dfrac{Q}{W}$, joten $W = \dfrac{Q}{\varepsilon}$. Säästö on $\Delta E = Q - W$ ja energian säilymisestä $Q_2 = Q - W$, eli $\Delta E = Q_2 = Q - \dfrac{Q}{\varepsilon}$.
+**Kaava:** $\varepsilon = \dfrac{Q_1}{W}$, joten $W = \dfrac{Q_1}{\varepsilon}$. Säästö on $\Delta E = Q_1 - W$ ja energian säilymisestä $Q_2 = Q_1 - W$, eli $\Delta E = Q_2 = Q_1 - \dfrac{Q_1}{\varepsilon}$.
 **Muunnokset:** Kaikki energiat ovat megawattitunteina ja lämpökerroin on yksikötön, joten muunnoksia ei tarvita.
-**Sijoitus:** $W = \dfrac{16{,}0\,\text{MWh}}{2{,}50} = 6{,}40\,\text{MWh}$, joten $\Delta E = Q_2 = 16{,}0\,\text{MWh} - 6{,}40\,\text{MWh} = 9{,}60\,\text{MWh}$, eli suoraan $\Delta E = Q\left(1 - \dfrac{1}{\varepsilon}\right) = 16{,}0\,\text{MWh} \cdot 0{,}600 = 9{,}60\,\text{MWh}$
-**Vastaus:** $9{,}60\,\text{MWh}$ sekä säästettyä sähköä että ulkoilmasta otettua lämpöä, kolme merkitsevää numeroa. Pumpun sähkö $6{,}40\,\text{MWh}$ on laskettu lämmöntarpeesta $16{,}0\,\text{MWh}$ eikä ole erillinen mittaus, joten erotussääntöä ei käytetä. Tulos on tulo $Q\left(1 - \tfrac{1}{\varepsilon}\right)$, ja sen numerot rajoittavat lämmöntarve $16{,}0\,\text{MWh}$ ja lämpökerroin $2{,}50$ (kumpikin kolme numeroa).
+**Sijoitus:** $W = \dfrac{16{,}0\,\text{MWh}}{2{,}50} = 6{,}40\,\text{MWh}$, joten $\Delta E = Q_2 = 16{,}0\,\text{MWh} - 6{,}40\,\text{MWh} = 9{,}60\,\text{MWh}$, eli suoraan $\Delta E = Q_1\left(1 - \dfrac{1}{\varepsilon}\right) = 16{,}0\,\text{MWh} \cdot 0{,}600 = 9{,}60\,\text{MWh}$
+**Vastaus:** $9{,}60\,\text{MWh}$ sekä säästettyä sähköä että ulkoilmasta otettua lämpöä, kolme merkitsevää numeroa. Pumpun sähkö $6{,}40\,\text{MWh}$ on laskettu lämmöntarpeesta $16{,}0\,\text{MWh}$ eikä ole erillinen mittaus, joten erotussääntöä ei käytetä. Tulos on tulo $Q_1\left(1 - \tfrac{1}{\varepsilon}\right)$, ja sen numerot rajoittavat lämmöntarve $16{,}0\,\text{MWh}$ ja lämpökerroin $2{,}50$ (kumpikin kolme numeroa).
 **Järkevyys:** Säästetty sähkö on täsmälleen ulkoilmasta tuotu lämpö, ja pumppu käyttää vain $\tfrac{1}{2{,}50} = 40\,\%$ sähköstä. Taseen tarkistus: taloon tulee $9{,}60\,\text{MWh} + 6{,}40\,\text{MWh} = 16{,}0\,\text{MWh}$. Pumppu ei ole ikiliikkuja, koska se ei luo energiaa vaan siirtää lämpöä sähkön avulla kylmästä lämpimään.
 
 ## fy3-11-L3-03

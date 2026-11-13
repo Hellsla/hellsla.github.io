@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 62b370cfcdb672b5
+CONTENT-HASH: 20a151c8e8d239d4
 
 ## Blocking
-
-None. L3-03 defines epsilon = Q_1/W with Q_1 (heat given indoors) and W (pump's electric energy).
+None.
 
 ## Polish
-
-1. solutions.md L3-03 Formula line: the added sentence about Q_1 and W follows the formula without a full stop or line break; add a period/newline.
+- None new. L2-09 now writes fuel power P_o, matching the figure and L1-04.
 
 ## Checked
-
-Diff since previous PASS and the MAFY notation in lesson/solutions; symbols defined where first used; numbers and levels unchanged.
+Delta: only P_0 to P_o in L2-09 (exercises.json, solutions.md); consistent, nothing else touched.
