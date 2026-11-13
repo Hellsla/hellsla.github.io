@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: f7420c067b94a929
+CONTENT-HASH: dacf6bcb0f4a71eb
 SCOPE: delta added-exercise from 9b2ee0bf44613b3e base 81db4a6fd727
 
 ## Blocking
 
 ## Polish
-- exercises.json (L2-09 ja L2-07) — L2-09 (105 dB, vastaus minuutteina) on sama lasku kuin L2-07 (109 dB). Uutta on vain kuvan lukeminen. Tämä on hyväksyttävää.
 
 ## Checked
-- Hash oli sama alussa ja lopussa. Arvioin vain tehtävät L1-09 ja L2-09.
-- Kierroksen 1 korjaukset on tehty. Tehtävät käyttävät nyt kuvaa scale-tehtava, jossa jokaisen merkin taso on kirjoitettu näkyviin (90 dB ja 105 dB), joten lukeminen on tarkka ja toleranssi 2 % on mielekäs. L1-09:n järkevyystarkistus sanoo nyt oikein: 90 dB on lähempänä 91 dB:ä, ja 2,5 h on lähempänä 2 tuntia.
-- Laskin uudelleen. L1-09: 8 h/2^(5/3) = 2,52 h, joten vastaus 2,5 h. L2-09: 480 min/2^(20/3) = 4,72 min, joten vastaus 4,7 min. Molemmat vastaavat answers.py:tä ja exercises.json:ia. L2-09:n tarkistus (20 dB on noin 100-kertainen intensiteetti, joten 4,8 min) on oikein.
-- Malli on luvun mukainen: vertailuaika t_v = t_0/2ⁿ, missä n = (L − 85 dB)/3 dB. Vertailuaikaa ei kutsuta sallituksi eikä turvalliseksi ajaksi, kuten ohjeistus edellyttää.
-- Kuvaa scale-tehtava käytetään vain tehtävissä, ei inquiry.json:ssa. figures.py:ssä merkit ovat tarkalleen kohdissa 90 ja 105 dB, ja alt-tekstissä on samat arvot.
+- Hash oli sama alussa ja lopussa. Arvioin vain tehtävät L1-09 ja L2-09 (kierros 3).
+- L2-09 käyttää nyt korvatulppia. Kuvasta luetaan 105 dB, ja korvassa taso on 105 − 12 = 93 dB. Siitä n = 8/3 ja t_v = 480 min / 2^(8/3) = 75,6 min. Tulos on sama kuin answers.py:ssä. Vastaus 76 min eroaa siitä 0,5 %, joten se on toleranssin 2 % sisällä.
+- Toistoa ei ole: L2-07 (109 dB ilman suojaimia) on eri tehtävä. L3-05 yhdistää etäisyyden ja tulpat, mutta siinä ei lueta kuvaa. Kuvaa scale-tehtava ei käytetä inquiry.json:ssa.
+- L1-09: 8 h / 2^(5/3) = 2,52 h → 2,5 h, ero 0,8 %.
+- Malli on luvun mukainen: t_v = t₀/2ⁿ, ja tulpat vähentävät korvan tasoa vaimennuksensa verran. Vertailuaikaa ei kutsuta sallituksi tai turvalliseksi ajaksi, kuten ohjeistus vaatii.
+- Järkevyystarkistus on oikein: 8 dB on 6 dB:n (120 min) ja 9 dB:n (60 min) välissä. Ilman tulppia aika olisi 4,7 min, ja 12 dB vastaa 2⁴ = 16-kertaista aikaa.
+- Kuvan merkit ovat tarkasti kohdissa 90 dB ja 105 dB, ja arvot on kirjoitettu kuvaan. Alt-teksti antaa samat arvot.

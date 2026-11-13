@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: cccfc1b2c9ae2b50
+CONTENT-HASH: 682917e1074659db
 SCOPE: delta added-exercise from 23f25874b515562a base 81db4a6fd727
 
 ## Blocking
 
 ## Polish
-- exercises.json:145 (L1-10): this figure has only one reading, the arm of 3 squares, and L1-04 uses the same figure for that same reading. L1-10 only reverses the unknown (F from M instead of M from F), so the figure work is a repeat. It gives nothing of L1-04 away, because the task text states no arm and no moment of L1-04. Acceptable. If the figure needs a new reading, ask instead for the force at a point P' at another height.
 
 ## Checked
-- The hash was the same at the start and at the end. Only L1-10 was judged, as the delta packet says.
-- Recomputed from the figure data in `figures.py`. P lies 4 squares right of O and 3 squares above it, and the horizontal line of action passes through P, so the arm is 3 · 0,10 m = 0,30 m. Then F = M/r = 21 Nm / 0,30 m = 70 N, which equals answers.py and exercises.json.
-- The trap is right: the bar length is 5 squares (3-4-5), and using 0,50 m would give 42 N, as the reasonableness check says.
-- Sig figs: M = 21 Nm has 2, so the answer 70 N has 2. A student who rounds stays well inside the 2 % tolerance.
-- The figure's description holds the same information as the drawing. Neither the figure nor the description gives the arm or the answer.
-- Notation ($M = Fr$, the arm $r$ as the perpendicular distance from O to the line of action) is the brief's. The task stays inside fy5-1.
-- The solution has all seven parts. F is solved in symbols first. The reasonableness check is a real check: it multiplies back and compares with the bar-length mistake.
+- Hash oli sama alussa ja lopussa. Arvioin vain tehtävän L1-10 (kierros 3).
+- Laskin uudelleen figures.py:n datasta: P on 4 ruutua oikealla ja 3 ylempänä, joten OP = √(4² + 3²) = 5 ruutua = 0,50 m. Sauvaa vastaan kohtisuoran voiman varsi on koko sauva, joten M = 30 N · 0,50 m = 15 Nm. Tulos on sama kuin answers.py:ssä ja exercises.json:ssa.
+- Toistoa ei ole: L1-04 lukee samasta kuvasta vaakavoiman varren (3 ruutua). L1-10 lukee sauvan pituuden (5 ruutua) ja käyttää uutta voiman suuntaa. Edellisen kierroksen huoli on siis poistunut.
+- Merkitsevät numerot: 30 N:ssa on kaksi merkitsevää numeroa ja vastauksessa 15 Nm samoin. Ruudukosta luettu pituus on tarkka, ja toleranssi 2 % sopii.
+- Ratkaisussa on kaikki seitsemän osaa, ja r = OP perustellaan symbolisesti ennen sijoitusta. Järkevyystarkistus vertaa kuvan vaakavoimaan (0,30 m, 9,0 Nm), ja tarkistus on oikein.
+- Kuva ja sen kuvaus antavat tiedot, jotka tehtävä tarvitsee, eivätkä ne paljasta vastausta.

@@ -228,7 +228,7 @@ Converted to hours, $T = \tfrac{2.76 \cdot 10^{4}\,\text{s}}{3600\,\text{s/h}} \
 **Formula:** $v = \sqrt{\dfrac{\gamma M}{r}}$ and $T = \dfrac{2\pi r}{v}$
 **Conversions:** $r = 1737\,\text{km} + 100\,\text{km} = 1837\,\text{km} = 1.837 \cdot 10^{6}\,\text{m}$; finally $1\,\text{min} = 60\,\text{s}$.
 **Substitution:** $\gamma M = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot 7.346 \cdot 10^{22}\,\text{kg} = 4.9027 \cdot 10^{12}\,\text{m}^3/\text{s}^2$, so $v = \sqrt{\dfrac{4.9027 \cdot 10^{12}\,\text{m}^3/\text{s}^2}{1.837 \cdot 10^{6}\,\text{m}}} = 1634\,\text{m/s}$ and $T = \dfrac{2\pi \cdot 1.837 \cdot 10^{6}\,\text{m}}{1634\,\text{m/s}} = 7065\,\text{s} = 117.8\,\text{min}$
-**Answer:** $118\,\text{min}$ ($117.8\,\text{min}$), three significant figures like the mass in the table. The values are from the MAFY table (Solar System, Moon); different tables give slightly different values, and the answer is accepted within about $\pm 4\,\%$.
+**Answer:** $118\,\text{min}$ ($117.8\,\text{min}$), three significant figures because the height $100\,\text{km}$ is given to three. The values are from the MAFY table (Solar System, Moon); different tables give slightly different values, and the answer is accepted within about $\pm 4\,\%$.
 **Reasonableness:** In a low orbit round the Earth the period is about $90\,\text{min}$ (the ISS about $92\,\text{min}$). The Moon is lighter, so the same height means slower motion and a longer period; about $2\,\text{h}$ is reasonable.
 
 ## fy5-6-L2-08

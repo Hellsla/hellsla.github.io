@@ -228,7 +228,7 @@ Tunneiksi muutettuna $T = \tfrac{2{,}76 \cdot 10^{4}\,\text{s}}{3600\,\text{s/h}
 **Kaava:** $v = \sqrt{\dfrac{\gamma M}{r}}$ ja $T = \dfrac{2\pi r}{v}$
 **Muunnokset:** $r = 1737\,\text{km} + 100\,\text{km} = 1837\,\text{km} = 1{,}837 \cdot 10^{6}\,\text{m}$; lopuksi $1\,\text{min} = 60\,\text{s}$.
 **Sijoitus:** $\gamma M = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot 7{,}346 \cdot 10^{22}\,\text{kg} = 4{,}9027 \cdot 10^{12}\,\text{m}^3/\text{s}^2$, joten $v = \sqrt{\dfrac{4{,}9027 \cdot 10^{12}\,\text{m}^3/\text{s}^2}{1{,}837 \cdot 10^{6}\,\text{m}}} = 1634\,\text{m/s}$ ja $T = \dfrac{2\pi \cdot 1{,}837 \cdot 10^{6}\,\text{m}}{1634\,\text{m/s}} = 7065\,\text{s} = 117{,}8\,\text{min}$
-**Vastaus:** $118\,\text{min}$ ($117{,}8\,\text{min}$), kolme merkitsevää numeroa kuten taulukon massassa. Arvot ovat MAFY-taulukosta (Aurinkokunta, Kuu); eri taulukoiden arvot poikkeavat hieman, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Vastaus:** $118\,\text{min}$ ($117{,}8\,\text{min}$), kolme merkitsevää numeroa, koska korkeus $100\,\text{km}$ on annettu kolmella numerolla. Arvot ovat MAFY-taulukosta (Aurinkokunta, Kuu); eri taulukoiden arvot poikkeavat hieman, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
 **Järkevyys:** Matalalla Maan radalla kiertoaika on noin $90\,\text{min}$ (ISS noin $92\,\text{min}$). Kuu on kevyempi, joten sama korkeus tarkoittaa hitaampaa kiertoa ja pidempää kiertoaikaa; noin $2\,\text{h}$ on järkevä.
 
 ## fy5-6-L2-08

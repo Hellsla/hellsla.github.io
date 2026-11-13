@@ -313,7 +313,7 @@
         },
         {
           "text": "$531\\,\\text{Hz}$: the beat frequency is $8\\,\\text{Hz}$ and the fork was higher than $523\\,\\text{Hz}$.",
-          "feedback": "This comes from reading the period wrongly, for example counting loud moments every other time. The loud moments are at $0$, $0.25\\,\\text{s}$, $0.50\\,\\text{s}$, $\\ldots$, so the spacing is $0.25\\,\\text{s}$ and the beat frequency $4\\,\\text{Hz}$, not $8\\,\\text{Hz}$."
+          "feedback": "A beat frequency of $8\\,\\text{Hz}$ comes from counting the quiet points as loud moments too, which gives a spacing of $0.125\\,\\text{s}$. The loud moments are at $0$, $0.25\\,\\text{s}$, $0.50\\,\\text{s}$, $\\ldots$, so the beat period is $0.25\\,\\text{s}$ and the beat frequency $4\\,\\text{Hz}$. A higher frequency also does not fit the wax test: wax lowers the frequency, and if the unknown fork had been higher, the difference would have shrunk and the beats slowed down. The beats got faster instead."
         }
       ]
     }

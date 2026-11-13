@@ -313,7 +313,7 @@
         },
         {
           "text": "$531\\,\\text{Hz}$: huojuntataajuus on $8\\,\\text{Hz}$ ja ääniraudan taajuus oli korkeampi kuin $523\\,\\text{Hz}$.",
-          "feedback": "Tämä tulee, kun kuvasta lasketaan voimakkaiden hetkien välit kahden kappaleen välein tai jakso luetaan väärin. Voimakkaita hetkiä on $0$, $0{,}25\\,\\text{s}$, $0{,}50\\,\\text{s}$, $\\ldots$ eli väli on $0{,}25\\,\\text{s}$ ja huojuntataajuus $4\\,\\text{Hz}$, ei $8\\,\\text{Hz}$."
+          "feedback": "Huojuntataajuus $8\\,\\text{Hz}$ syntyy, jos myös hiljaiset kohdat lasketaan voimakkaiksi hetkiksi, jolloin väliksi saadaan $0{,}125\\,\\text{s}$. Voimakkaita hetkiä on $0$, $0{,}25\\,\\text{s}$, $0{,}50\\,\\text{s}$, $\\ldots$, joten huojuntajakso on $0{,}25\\,\\text{s}$ ja huojuntataajuus $4\\,\\text{Hz}$. Lisäksi korkeampi taajuus ei sovi vahakokeeseen: vaha laskee taajuutta, ja jos tuntematon olisi ollut korkeampi, erotus olisi pienentynyt ja huojunta hidastunut. Huojunta kuitenkin nopeutui."
         }
       ]
     }
