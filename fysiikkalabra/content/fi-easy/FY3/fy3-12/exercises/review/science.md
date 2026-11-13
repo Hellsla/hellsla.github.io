@@ -1,19 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 54bfccfa69750636
-SCOPE: delta added-exercise from 186c6601bf5ac2dc base 141dc47a8c70
-Mode: delta (added exercises fy3-12-L1-09, fy3-12-L2-09)
-Round: 1
+CONTENT-HASH: f16c0757189dc471
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- solutions.md fy3-12-L2-09 Kuvaajan lukeminen — "Ylempi oikea nuoli" for the reflected 102 W/m² arrow: in earth_flows() that arrow runs up and to the left between the Sun and the Earth (x 176–262), and the dashed thermal-radiation arrow is the one right of the Earth. The same wording is in the Finnish. A fix: "Maan yläpuolella vasemmalle osoittava nuoli" (in both languages).
+1. content/fi-easy/FY3/fy3-12/exercises/solutions.md:45 — with the reflected arrow no longer called "ylempi oikea", "Alempi oikea nuoli" for the dashed thermal-radiation arrow has no upper partner; "Maan oikealla puolella oleva katkoviivanuoli" would match the figure exactly.
 
 ## Checked
-- L1-09: P = UAΔT with U = λ/d given in the task (surface resistances left out: a fair simplification, C). MAFY pine λ = 0,14 W/(m·K); recomputed U = 0,70 W/(m²·K), ΔT = 30 K, P = 210 W; two significant figures from λ; tolerance 4 %.
-- L2-09: reflected share 102/341 = 29,9 %, in line with the planetary albedo of about 0,30; figure arrows 341 and 102 to scale, the description gives both values; the question mark is not needed and the solution says so.
-- Solutions complete, symbolic first, real reasonableness checks.
-- answers.py matches my recomputation (210; 29,912).
-- Scripted comparison with the Finnish: answer, unit, tolerance, figure, lookup and all numbers identical.
+- Diff only: the reflected-arrow wording in L1-05 and L2-09 (solutions.md lines 45 and 222); no number, symbol or answer changed.
+- Against earth_flows(): the 102 W/m² arrow runs from (262, 102) to (176, 50), between the Sun (x ≈ −4) and the Earth (x = 304), upwards and to the left; the new words "Auringon ja Maan välissä ylös vasemmalle osoittava nuoli" describe it correctly, and it is the only arrow there.
+- The 341 W/m² arrow is still the left one and the dashed "?" arrow is the only one right of the Earth, so each solution names each figure value unambiguously.
+- Physics unchanged: reflected radiation does not heat the Earth, P_im = 341 − 102 = 239 W/m² = P_säteily in balance; share 102/341 = 29,9 %.
 - Hash the same at start and end.

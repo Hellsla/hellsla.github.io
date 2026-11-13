@@ -1,20 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: a6f273d0b5ebe0c0
-SCOPE: delta added-exercise from b38642a6e641d4f2 base 89bcb63b7431
+CONTENT-HASH: 6b0d9bd95acee718
+SCOPE: delta added-exercise from b38642a6e641d4f2 base 81db4a6fd727
 
 ## Blocking
+- none
 
 ## Polish
-- exercises/solutions.md (fy3-13-L2-10, Kuvaajan lukeminen) — as in round 1: the stated range "$52$–$58\,\text{kPa}$" is slightly wider than tolerance 0,05 (52,1–57,6 kPa). Write "noin $52$–$57\,\text{kPa}$".
-- exercises/solutions.md (fy3-13-L2-09 and L2-10, Periaate) — "Pisteet ovat suoralla": the task text now says "lähes suoralla" (neighbouring slopes 0,26–0,28 kPa/°C). Say the same in both solutions, per the guardrail on fits.
-- exercises/exercises.json (fy3-13-L1-09) — tolerance 0,04 (±11 °C) on an exact defined value is loose; 0,01 would fit a lookup. Harmless.
+1. content/fi/FY3/fy3-13/exercises/solutions.md:271 (L2-10, Periaate) — the solution still says "Pisteet ovat suoralla". The task itself states the linearity assumption, so this is harmless, but "lähes suoralla" as in L2-09 would match the fits guardrail.
+2. solutions.md:271 (L2-10, Kaava) — "$\theta = T - 273{,}15\,\text{K}$ (celsiusasteina)" mixes units. Better: $\theta = (T/\text{K} - 273{,}15)\,{}^\circ\text{C}$, or the brief's $T = \theta + T_0$ solved for θ.
+3. exercises.json:115 (L1-09) — a tolerance of 0,04 (±11 °C) is loose for an exact defined value. 0,01 would fit a lookup. Harmless (carried over).
 
 ## Checked
-- Round-1 blocker 1 fixed: L2-09 tolerance is 0,05 (−259,1 … −286,4 °C), which matches the stated hand-drawn range −259 … −286 °C. Reading the 100 °C point as 102 or 103 kPa gives −277,8 or −267,9 °C, both accepted. The uncertainty now reads "noin kymmenen celsiusastetta tai enemmän", which is honest.
-- Round-1 blocker 2 fixed: L1-09 Järkevyys now keeps the liquid-nitrogen comparison as a magnitude check only and gives the real reason separately (the kelvin scale starts at absolute zero, so no negative kelvin temperature exists).
-- L1-09 recomputed: $\theta_0 = -T_0 = -273{,}15\,{}^\circ\text{C}$ (MAFY 0 °C = 273,15 K), which matches answers.py.
-- L2-09 recomputed: $k = 27{,}5/100 = 0{,}275\,\text{kPa/°C}$, $\theta_0 = -75/0{,}275 = -272{,}7\,{}^\circ\text{C}$, which matches answers.py; the least-squares line gives −272,1 °C, also accepted.
-- L2-10 recomputed: $\theta = -73{,}15\,{}^\circ\text{C}$, $p = 75 - 0{,}275 \cdot 73{,}15 = 54{,}88\,\text{kPa}$; the independent $p \propto T$ check gives 54,9 kPa. The task states the linear-extrapolation assumption.
-- Rigid closed vessel (fixed $n$, $V$) is stated; symbols as in the brief ($k$, $\theta_0 = \theta_1 - p_1/k$). Solutions are complete.
-- Figure fy3-3/extrapolation-points gives both tasks what they need and does not give the answer.
-- Rest of the set unchanged since PASS; hash same at start and end.
+- L1-09: θ₀ = −T₀ = −273,15 °C (MAFY: 0 °C = 273,15 K); answers.py gives −273,15, which matches. The Järkevyys check (no negative kelvin temperature) is correct.
+- L2-09: from the end points (0 °C; 75 kPa) and (100 °C; 102,5 kPa), k = 0,275 kPa/°C and θ₀ = −272,7 °C; answers.py matches. The least-squares line over all five points gives −272,1 °C.
+- L2-09 range: the stated hand-drawn range −260…−286 °C lies inside tolerance 0,05 (−259,1…−286,4 °C). Fixed since round 2.
+- L2-09: task and Periaate now both say "lähes suoralla", in line with the fits guardrail. Fixed.
+- L2-10: θ = −73,15 °C, p = 75 + 0,275·(−73,15) = 54,88 kPa; answers.py matches. The independent check p ∝ T gives 54,9 kPa, and the least-squares line gives 54,91 kPa.
+- L2-10 range: the stated 53–57 kPa now lies inside tolerance 0,05 (52,1…57,6 kPa). Fixed.
+- L2-10: the task states that the extrapolation is assumed linear outside the measured range, and that the axis is in °C while the asked temperature is in K. The conversion is shown.
+- Closed rigid vessel (n and V constant) is stated in both tasks. Symbols follow the brief (k, θ₀ = θ₁ − p₁/k). Solutions are complete and solve symbolically first.
+- Figure fy3-3/extrapolation-points gives the five points and the grid. The description gives the same information and no answer.
+- Hash is identical at the start and the end.

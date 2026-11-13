@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 2a3f01a9ec3a7769
-SCOPE: delta added-exercise from 01e690e860570778 base 89bcb63b7431
+CONTENT-HASH: a68d988512663089
 
 ## Blocking
 (none)
@@ -9,7 +8,8 @@ SCOPE: delta added-exercise from 01e690e860570778 base 89bcb63b7431
 - None.
 
 ## Checked
-- fy3-12-L1-09: MAFY pine lambda = 0.14 W/(m K); U = lambda/d given in task; U = 0.70 W/(m2 K), P = UA dT = 210 W; dT 30 K in K correct; log-wall U realistic.
-- fy3-12-L2-09: 102/341 = 29.9 % (planetary albedo about 0.30, realistic); outgoing arrow marked not to scale and not needed; description gives both values, not the share.
-- en vs fi: answer, unit, tolerance, figure, lookup, kind and every number of task text and solution identical (script comparison).
-- Recomputed in one independent script; answers.py lines agree; tolerances fit the data's significant figures and graph reading.
+- The diff (solutions.md:45 and :222) only changes how the reflected-power arrow is described. No number or symbol changed, and the readings stay $P_\text{in} = 341\,\text{W/m}^2$ and $P_\text{refl} = 102\,\text{W/m}^2$.
+- figures.py `earth_flows`: the Sun's disc is centred at $x = -4$ (radius 52) and the Earth at $x = 304$ (radius 62). The reflected arrow runs from (262, 102) to (176, 50), so it lies between the Sun and the Earth and points up and to the left. The new description fits the drawing, and the old one ("upper right arrow") did not.
+- The arrow leaves the Earth back toward space, which is physically right for reflected radiation. Its label "heijastuu", $102\,\text{W/m}^2$, sits beside it.
+- The physics is unchanged. L1-05: $P_\text{rad} = 341 - 102 = 239\,\text{W/m}^2$ in balance. L2-09: $102/341 = 29.9\,\%$. Both match answers.py.
+- The hash was the same at the start and at the end.
