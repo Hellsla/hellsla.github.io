@@ -3,13 +3,6 @@
 Opettajan päättämät tulevat työt, joita ei ole vielä aloitettu. Jokainen kohta tehdään omana pull requestinaan;
 valmis kohta poistetaan tästä samassa pull requestissa.
 
-## FY7: tehtävä fy7-16-L2-09 tehdään uudelleen (opettaja 2026-11-13, PR #528)
-
-Kenttäviivoja laskemalla saatu vastaus ($2{,}1\,\text{V}$) poikkeaa todellisen vuosuhteen antamasta ($\approx 2{,}3\,\text{V}$),
-eikä väljä toleranssi riitä. Tehtävä kirjoitetaan uudelleen niin, että mallin antama vastaus on oikea (fi, en, fi-easy).
-Tehdään #528:n haarassa ennen sen tehtäväsarjojen katselmointia. fy6-1-L2-08:n selkosuomi (sama kuin suomenkielinen
-teksti) kelpaa sellaisenaan.
-
 ## Kuva- ja MAFY-taulukkotehtävät FY8, FY9, FY10 ja FY14 (opettaja 2026-11-13)
 
 Sama tahti kuin FY4:stä alkaen: jokaisessa luvussa vähintään kaksi kuvatehtävää ja MAFY-taulukkotehtävä noin joka
