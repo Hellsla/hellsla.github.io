@@ -185,6 +185,20 @@ def flux_task():
     return f.svg()
 
 
+def flux_task_2():
+    """Task figure: the flux through a coil against time, piecewise linear and changing sign: 5,0 mWb at 0, falling to
+    -3,0 mWb at 0,40 s, constant to 0,60 s, rising to 0 at 0,80 s. No voltage drawn or written."""
+    f = Fig("fy75-flux-task-2", 340, "Kuvaaja mittakaavassa: käämin läpi kulkeva magneettivuo millivebereinä ajan funktiona "
+            "sekunteina. Vuo on hetkellä 0 arvossa 5,0 ja pienenee tasaisesti arvoon miinus 3,0 hetkeen 0,40 s mennessä. "
+            "Sen jälkeen vuo pysyy arvossa miinus 3,0 hetkeen 0,60 s asti ja kasvaa tasaisesti nollaan hetkeen 0,80 s "
+            "mennessä. Ruudukon väli on 0,1 s ja 1 mWb.")
+    ax = Axes(f, (96, 316), (480, 60), x=(0, 0.9), y=(-3.5, 5.5), xticks=[0.1 * k for k in range(1, 10)],
+              yticks=[-3, -2, -1, 1, 2, 3, 4, 5], xlabel=r"t\ (\text{s})", ylabel=r"\Phi\ (\text{mWb})",
+              xfmt=lambda v: fi(round(v, 1), 1) if round(v * 10) % 2 == 0 else "", x_at=0)
+    ax.line([(0, 5.0), (0.4, -3.0), (0.6, -3.0), (0.8, 0), (0.9, 0)], FIELD, 3)
+    return f.svg()
+
+
 def hero():
     """The opening illustration: a cyclist at dusk, the front lamp lit by the hub dynamo, its beam on the road."""
     f = H.hero("fy75-hero", "Kuvitus: pyöräilijä ajaa hämärässä metsätiellä. Polkupyörän etupyörän navassa on dynamo, ja "
@@ -242,7 +256,7 @@ def scene():
 
 
 FIGURES = {"hero": hero, "faraday": faraday, "flux": flux, "graph": graph, "rod": rod, "scene": scene,
-           "flux-task": flux_task}
+           "flux-task": flux_task, "flux-task-2": flux_task_2}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "faraday": "reveals: a moving magnet induces a voltage, a magnet at rest does not, and the sign flips with the motion",
@@ -250,4 +264,5 @@ REUSE = {
     "graph": "reveals: e is zero where Φ(t) is flat and ∓20 mV where Φ changes (the slope gives e)",
     "rod": "reveals: the magnetic and electric forces on an electron in a moving rod and which end is positive",
     "flux-task": "safe: Φ(t) of a 50-turn coil, piecewise linear 0–4,0 mWb, no voltage drawn",
+    "flux-task-2": "safe: Φ(t) of a coil, piecewise linear 5,0 → −3,0 → 0 mWb over 0–0,80 s, no voltage drawn",
 }

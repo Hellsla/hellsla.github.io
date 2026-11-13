@@ -47,4 +47,6 @@ a["fy7-5-L3-04"] = k3 / (0.25 * 0.40)                        # a = k / (B l) = 1
 u = [-0.02, 0.09, 0.63, 1.77, 1.77, 0.60, 0.03]
 area1 = 0.004 * (sum(u) - (u[0] + u[-1]) / 2)                # 0,01946 V·s
 a["fy7-5-L3-05"] = area1 / 250 * 1e3                         # Φ = 0,0778 mWb -> 0,078 mWb
+# L2-08 figure fy7-5/flux-task-2: N = 200, Φ falls from 5,0 mWb at 0 to -3,0 mWb at 0,40 s (sign change)
+a["fy7-5-L2-08"] = 200 * abs(-3.0e-3 - 5.0e-3) / 0.40       # |e| = N |ΔΦ| / Δt = 200 · 8,0 · 10⁻³ Wb / 0,40 s = 4,0 V
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))
