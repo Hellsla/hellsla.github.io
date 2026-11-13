@@ -21,6 +21,7 @@ module only decides how it shows:
 import re
 
 RELS = ("\\approx", "\\neq", "=", "<", ">", "\\le", "\\ge")
+ALIGN_FIT = 28       # visible characters an aligned block may have, even when aligning makes it wider than as written (equals signs aligned, teacher 2026-11-13; fy4-2 overflowed a 360 px phone at 33)
 LONG = 38            # raw LaTeX characters: a chain at least this long is shown as rows of its own
 DISPLAY_STEPS = ("Kaava", "Muunnokset", "Sijoitus", "Järkevyys", "Kuvaajan lukeminen",   # solutions.md labels
                  "Yksikkömuunnokset", "Tulos", "Kaava ratkaistuna")                          # worked example stages
@@ -92,9 +93,50 @@ def align_equals(tex):
             r = body[:rels[0][0]].rstrip() + " &" + body[rels[0][0]:]
         else: right.append(vis_len(body))
         out.append(r)
-    if max(left) + max(right) > 1.05 * max(vis_len(c) for c in cells): return tex   # aligning would make the block wider: keep it as written
+    if max(left) + max(right) > max(ALIGN_FIT, 1.05 * max(vis_len(c) for c in cells)): return tex   # aligned it would be wider than a phone (and than the block as written): as written
     rows[0::2] = out
     return m.group(1) + "".join(rows) + m.group(3)
+
+
+WIDE_LHS = 20        # visible characters: a left side up to this long shares the column with its relations on a wide screen
+WIDE_MAX = 40        # visible characters (vis_len) a row joined for a wide screen may have: it must fit a 768 px task card (fy5-6 overflowed at 62, fy8-11 at 46)
+
+
+def join_wide(tex):
+    """An aligned block whose chains the source split by hand (`&a \\\\ &\\quad = b`, teacher 2026-11-13, fy3-6; `&\\rho g h
+    \\\\ &= 1000 \\\\ &\\quad \\cdot 9{,}81`, fy3-4): the same block with the pieces of one side joined, as long as the
+    joined row stays within WIDE_MAX, or None when nothing joins. A row starting `&\\quad` or `&\\qquad` (a continuation of
+    the row before) joins it; a row starting with a relation joins a row that is still only a left side, so `left =
+    right` is one row. Each further relation of the chain keeps its own row, and a row break with a gap (`\\\\[6pt]`)
+    ends the chain. The source is never changed; build.py shows this form on a wide screen and the form as written on a
+    phone (.mj-wide / .mj-narrow in site.css)."""
+    m = re.fullmatch(r"(\s*\\begin\{aligned\}\s*)(.*?)(\s*\\end\{aligned\}\s*)", tex, re.S)
+    if not m: return None
+    parts = re.split(r"(\\\\(?:\[[^\]]*\])?\s*)", m.group(2))
+    cells, seps = parts[0::2], parts[1::2] + [""]
+    out, out_seps, joined = [], [], False
+    for cell, sep in zip(cells, seps):
+        body = cell.lstrip()[1:].strip() if cell.lstrip().startswith("&") and cell.count("&") == 1 else None
+        piece = None
+        if out and body is not None and re.fullmatch(r"\\\\(?:\[[^\]]*\])?\s*", out_seps[-1]) and out_seps[-1].strip() == "\\\\":
+            q = re.match(r"\\q?quad\s*(.*)", body, re.S)
+            if q and q.group(1).strip(): piece = q.group(1).strip()
+            elif re.match(r"(=|\\approx)\s", body):
+                prev = out[-1].lstrip()[1:]
+                if _top_relations(prev) == []: piece = body        # the row before is only a left side
+        if piece and vis_len(out[-1]) + vis_len(piece) + 2 <= WIDE_MAX:
+            out[-1] = out[-1].rstrip() + " " + piece + " "; out_seps[-1] = sep; joined = True
+        else: out.append(cell); out_seps.append(sep)
+    if not joined: return None
+    return m.group(1) + "".join(c + s for c, s in zip(out, out_seps)) + m.group(3)
+
+
+def wide_narrow_html(tex):
+    """Display maths `tex` as both forms when join_wide changes it: `<span class="mj-wide">$$…$$</span><span
+    class="mj-narrow">$$…$$</span>`; site.css shows one of them by the width of the screen. Otherwise just `$$tex$$`."""
+    wide = join_wide(tex)
+    if not wide: return None
+    return f'<span class="mj-wide">$${align_equals(wide)}$$</span><span class="mj-narrow">$${align_equals(tex)}$$</span>'
 
 
 def split_list(tex):
@@ -123,12 +165,20 @@ def is_long(tex):
     return len(rels) >= 2 and len(tex) >= LONG or len(tex) >= 2 * LONG or (re.search(r"\\d?frac", tex) and len(tex) >= LONG)
 
 
-def chain_html(rows, gap_before=()):
+def chain_html(rows, gap_before=(), force=False, narrow=False):
     """A calculation as rows (site.css .eq-chain): the left side, then the relation and the right side. The relation
     signs stand in one column, like an aligned block, but each side is inline maths that can wrap after an operator
     on a narrow phone, so a long row never runs off the screen and no number or unit is cut. A long left side (a sum
-    of terms) stands on a line of its own, and its relations follow indented under it."""
-    out, lead = [], any(lhs and vis_len(lhs) > 10 for lhs, _ in rows)
+    of terms) stands on a line of its own, and its relations follow indented under it; one that is not very long does so
+    only on a phone, and on a wide screen shares the column (a second chain with `mj-wide`/`mj-narrow`)."""
+    lead = any(lhs and vis_len(lhs) > 10 for lhs, _ in rows)
+    if lead and not force and max(vis_len(lhs) for lhs, _ in rows) <= WIDE_LHS:
+        # a long left side stands on a line of its own only on a phone; on a wide screen it is one column with the
+        # relations after it, `left = right` on one row (teacher 2026-11-13, fy3-6 reasonableness check)
+        return (chain_html(rows, gap_before, True, False).replace('class="eq-chain', 'class="eq-chain mj-wide', 1)
+                + chain_html(rows, gap_before, True, True).replace('class="eq-chain', 'class="eq-chain mj-narrow', 1))
+    lead = lead and (force is not True or narrow)
+    out = []
     for i, (lhs, rhs) in enumerate(rows):
         gap = " gap" if i in gap_before else ""
         if lead and lhs: out.append(f'<div class="eq-lead{gap}">${lhs}$</div>'); lhs, gap = "", ""
@@ -218,6 +268,19 @@ if __name__ == "__main__":                                          # quick self
     assert _top_relations(r"a \leq b") == [] and _top_relations(r"a \le b")
     assert align_equals("\\begin{aligned}\n&Q = c m \\\\\n&= 4 \\\\[6pt]\n&\\quad + 1\n\\end{aligned}") == "\\begin{aligned}\nQ &= c m \\\\\n&= 4 \\\\[6pt]\n&\\quad + 1\n\\end{aligned}"
     assert split_list(r"p = 203;\ 159;\ 66\,\text{kPa}") == r"$p = 203$; $159$; $66\,\text{kPa}$" and split_list(r"\{a;b\}") is None
+    j = join_wide("\\begin{aligned}\n&a b \\\\\n&\\quad = c d \\\\[6pt]\n&e = f\n\\end{aligned}")
+    assert j == "\\begin{aligned}\n&a b = c d \\\\[6pt]\n&e = f\n\\end{aligned}", j                 # a hand-split chain joins, the gap stays
+    assert join_wide("\\begin{aligned}\n&a \\\\\n&\\quad \\cdot b\n\\end{aligned}") == "\\begin{aligned}\n&a \\cdot b \n\\end{aligned}"   # a continuation joins
+    h = join_wide("\\begin{aligned}\n&\\rho g h \\\\\n&= 1000\\,\\tfrac{\\text{kg}}{\\text{m}^3} \\\\\n&\\quad \\cdot 9{,}81 \\\\\n&\\quad \\cdot 12 \\\\\n&= 117\\,720 \\\\[6pt]\n&p = p_0 \\\\\n&= 1 \\\\\n&\\quad + 2\n\\end{aligned}")
+    assert h.count("\\\\") == 3 and "&\\rho g h = 1000" in h and "\\cdot 12 \\\\\n&= 117" in h and "&= 1 + 2" in h, h   # left = right on one row, each further = on its own
+    assert join_wide("\\begin{aligned}\n&" + "x" * 50 + " \\\\\n&\\quad = " + "y" * 20 + "\n\\end{aligned}") is None   # too wide stays two rows
+    assert wide_narrow_html("\\begin{aligned}\n&a \\\\\n&\\quad = b\n\\end{aligned}").count("$$") == 4
+    assert align_equals("\\begin{aligned}\n&\\Delta U = Q + W \\\\\n&= -40\\,\\text{J} + 150\\,\\text{J} \\\\\n&= 110\\,\\text{J}\n\\end{aligned}").count("&=") == 3   # equals signs always in one column, also when it widens the block
+    c = display_chains(r"Tarkistus: $0{,}300\,\text{kg} \cdot 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} = 1257\,\tfrac{\text{J}}{\text{K}}$ ja $0{,}200\,\text{kg} \cdot 374{,}6\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \approx 75\,\tfrac{\text{J}}{\text{K}}$.")
+    assert c.count("eq-chain mj-wide") == 1 and c.count("eq-chain mj-narrow lead") == 1, c      # a short chain, also with \approx: one row on a wide screen
+    w = chain_html([("c_\\text{v} m_\\text{v} (T_\\text{v} - T)", "= x")]); assert "mj-wide" not in w   # a short left side needs no second form
+    j3 = join_wide("\\begin{aligned}\n&c_\\text{v} m_\\text{v} (T_\\text{v} - T) \\\\\n&\\quad = c_\\text{j} m_\\text{j} \\Delta T_\\text{j} + s m_\\text{j} \\\\\n&\\qquad + c_\\text{v} m_\\text{j} T\n\\end{aligned}")
+    assert j3 and j3.count("\\\\") == 0, j3                                                     # the three rows of an energy balance: one equation, one row
     b = display_chains(r" $14\,\text{GWh} = {14 \cdot 10^{6}}\,\text{kWh}$ ja $5{,}0\,\text{MW} = 5{,}0 \cdot 1000\,\text{kW} = 5000\,\text{kW}$.")
     assert b.startswith('<div class="eq-chain') and "ja" not in b and b.count("eq-row") == 3 and "eq-row gap" in b, b
     print("ok")
