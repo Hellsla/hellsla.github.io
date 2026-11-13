@@ -4,21 +4,23 @@ Sisältöhash: 8969dfde234e43b7 · Tarkistukset: `investigations.py check` ok.
 
 | Arvioija | Tulos | Tila | Raportti |
 |---|---|---|---|
-| visual-editorial | PASS | audit (full), ensimmäinen visuaalinen katselmointi | review/visual.md |
+| visual-editorial | FAIL | audit (full), ensimmäinen visuaalinen katselmointi | review/visual.md |
 | science | PASS (voimassa) | ei ajettu uudelleen | review/science.md |
 | pedagogy | PASS (voimassa) | ei ajettu uudelleen | review/pedagogy.md |
 
-Pisteet (vain visuaalisen raportin antamat; muut jätetty tyhjiksi): kuvitus 4 · typografia 5 · suomen kieli 5 · saavutettavuus 4.
+Pisteet (vain visuaalisen raportin antamat; muut jätetty tyhjiksi): kuvitus 3 · typografia 4 · suomen kieli 4 · saavutettavuus 4.
 
 ## Löydökset
-- **Minor** (visual): fig-2/4/6/8-kaappaukset ~1 px leveitä (kaappausartefakteja; tarkista screenshot.py:n kuvanumerointi)
-- **Minor** (visual): pattern-kuva 390 px: "kaaviokuva, ei mittakaavassa" ja m-merkit pientä tekstiä
-- **Minor** (visual): model-kuvaan lyhyt "malli, ei mittaustuloksia" -nimike
-- **Minor** (visual): vihjelaatikon "Kuvasta nähdään…" tulee ennen kuvaa (ohjatussa tilassa ok)
+- **Major** (visual): "pattern"-kuva (Teoriaa lyhyesti): kertalukujen m numerot ja asteikkomerkit ovat kirkkaiden pisteiden alla, mutta teksti määrittelee m:n tummien minimien kertaluvuksi (keskimaksimin reunat ovat m = 1); kuva houkuttelee numeroimaan kirkkaita pisteitä, juuri sitä opettajan huomautusten virhekäsitystä, eikä minimejä näytetä lainkaan → siirrä merkit tummiin väleihin ja nimeä ne minimeiksi, säilytä kaaviokuvamerkintä
+- **Minor** (visual): geometry-kuvan nimikkeet (hius, θ_m, säde) ~11 px puhelimella
+- **Minor** (visual): model-kuvan kulmakolmion nimikkeet Δm, Δx_m harmaat ja pienet; kaava kelluu akselinimikkeen lähellä
+- **Minor** (visual): Mittaa-taulukon otsakesarake 2x_m (m) kapea 390 px:ssä; tyhjällä taulukolla ei kuvatekstiä, että se on pohja
+- **Minor** (visual): "Päätät itse" -kappale 120+ sanaa, "työtavassa" toistuu → yksi kappale per työtapa
+- **Minor** (visual): tieteellinen huomio: pattern-kuvan keskimaksimi piirretty vain noin kaksi kertaa sivumaksimeja leveämmäksi (teksti sanoo samoin, yhdenmukainen)
 
-Rajaus: top-*, open-ennusta-1280 ja muut 1280-kaappaukset ei avattu erikseen.
+Rajaus: contact-2/3 ja useimmat muut sivun osat ei avattu. Huom.: tämän tutkimuksen ensimmäinen ajo antoi PASS, mutta raporttitiedosto ei tallentunut; uusinta-ajo antoi FAIL (Major) — arvioijien välinen vaihtelu, tulos kannattaa varmistaa korjauksen yhteydessä.
 
 ## Kolme arvokkainta korjausta
-1. pattern-kuvan tekstikoko
-2. model-kuvan nimike
-3. Kuvakaappausten numerointi (työkalu)
+1. pattern-kuvan m-merkinnät minimeille (Major)
+2. geometry- ja model-kuvien nimikkeiden koko
+3. Päätät itse -kappaleen jakaminen
