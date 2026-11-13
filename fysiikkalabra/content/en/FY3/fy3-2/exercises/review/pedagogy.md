@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: dea61a120921a332
-SCOPE: delta round 2, wording in solutions.md of fy3-2-L2-09
 
 ## Blocking
 (none)

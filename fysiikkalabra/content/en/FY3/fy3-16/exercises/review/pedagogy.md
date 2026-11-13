@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 95b438af4632227f
-SCOPE: delta round 2, fy3-16-L1-09 new situation
 
 ## Blocking
 (none)

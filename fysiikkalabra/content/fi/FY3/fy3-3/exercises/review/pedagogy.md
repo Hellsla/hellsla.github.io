@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 839f1b0810ea0dcf
-SCOPE: delta round 2
 ## Blocking
 (none)
 ## Polish

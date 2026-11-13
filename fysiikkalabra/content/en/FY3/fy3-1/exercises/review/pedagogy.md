@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: b0821156ba49dd4c
-SCOPE: delta round 2, solutions.md of fy3-1-L2-08
 
 ## Blocking
 (none)

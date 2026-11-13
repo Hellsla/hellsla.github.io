@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 951a60bfd236ffed
-SCOPE: delta round 2, empty diff
 
 ## Blocking
 (none)

@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: f337c2ab9702c30f
-SCOPE: delta round 2
 
 ## Blocking
 (none)
