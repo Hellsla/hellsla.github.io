@@ -1,13 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 57593c472c0d402a
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: 3b2542ea34316c42
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- 'sekuntia valon matka-aikaa kuluu yhdessä katselusekunnissa' is a little clumsy Finnish but understandable.
+- fy1-2/lesson.md (Yksikkömuunnokset, 390 px capture selita-390-4) — the display line "1 AU = 149 597 870,7 km ≈ 1,496 · 10^8 km" is clipped at the right edge on a phone ("km" cut). Not part of this diff; fix in the shared math layout.
 
 ## Checked
-- Wording of the sim's 'seconds of light travel time per viewing second' (clearer than 'animation seconds'); 'noin' before the 1 px limit; \tfrac{s}{c} in feedback; 'close to this estimate' replaces 'same order of magnitude' (more accurate for the checked result); 'calculated for four days'; Karman label; speed label. No change to prediction/commit flow or inquiry mechanics.
-- Language version fi judged from the word-level diff against origin/main; the fi, en and fi-easy changes correspond.
+- Table (Rakenne, Koko, Yksikkö, Yksikön arvo) carries the same six rows and values as the old list; no data lost, no number changed.
+- At 390 px the table becomes one stacked card per row with labels; nothing clipped, readable, bold structure names kept (glossary term tooltips still marked).
+- Header "Rakenne" and the units follow CLAUDE.md "table when the content is a table"; the following sentence (vetyatomi 0,11 nm, protoni 1,7 fm) still reads as the example of the table.
+- The introduction line "Jokaiselle portaalle on kätevä yksikkö:" still introduces the table naturally.
+- Inquiry/exercises do not refer to the list form, so nothing else is touched.

@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: eee3497ff21144ab
-Mode: delta, round 2 (label o_proxima = "etäisyys Proxima Centauriin")
+CONTENT-HASH: 52e40c11931c671e
+Mode: delta, round 1
 
 ## Blocking
 - none
@@ -9,8 +9,7 @@ Mode: delta, round 2 (label o_proxima = "etäisyys Proxima Centauriin")
 - none
 
 ## Checked
-- fy1-1-sim-390.png, fy1-1-sim-1280.png, fy1-1-lab-1280.png: layout intact (these default captures do not show the Proxima view).
-- Own render of the Proxima view (jump select, 390 and 1280 px): the longer label sits in the row with "Oort-pilven säde" and "Orionin sumu" without overlap or clipping; at 390 px the labels are shrunk but legible and the gaps are small but clear. The text reads correctly in Finnish.
+- fy1-1-theory-1280-1.png: the simplified Suuruusluokka paragraph reads fluently (170 -> 100 = $10^{2}$, then the second example); units and powers are LaTeX with thin spaces; the paragraph and the figure beside the previous section kept their layout.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4

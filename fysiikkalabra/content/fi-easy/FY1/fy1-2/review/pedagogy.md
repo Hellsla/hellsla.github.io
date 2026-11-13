@@ -1,13 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 170afbabe559da6d
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: 72145bfe95e4ffab
 
 ## Blocking
-- none
+
+(none)
 
 ## Polish
-- 'sekuntia valon matka-aikaa kuluu yhdessä katselusekunnissa' is a little clumsy Finnish but understandable.
+
+- (none)
 
 ## Checked
-- Wording of the sim's 'seconds of light travel time per viewing second' (clearer than 'animation seconds'); 'noin' before the 1 px limit; \tfrac{s}{c} in feedback; 'close to this estimate' replaces 'same order of magnitude' (more accurate for the checked result); 'calculated for four days'; Karman label; speed label. No change to prediction/commit flow or inquiry mechanics.
-- Language version fi-easy judged from the word-level diff against origin/main; the fi, en and fi-easy changes correspond.
+
+- Diff only: the six-line unit list became a 4-column table (Rakenne, Koko, Yksikkö, Yksikön arvo); same content, same order, all numbers and units unchanged and still in LaTeX.
+- 390 px capture (fy1-2-stage-selita-390-3.png): the table is stacked as labelled rows per structure, nothing clipped, formulas legible, each row separated; readable on a phone.
+- Intro sentence "Jokaiselle portaalle on sopiva yksikkö:" still leads into the table; the paragraph after (vetyatomi 0,11 nm, protoni 1,7 fm) still follows naturally.
+- Glossary terms (Atomiydin, Atomi, Merkitsevät numerot) still marked; no wall of text added.
+- Content hash unchanged at start and end.
