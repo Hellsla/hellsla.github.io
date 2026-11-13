@@ -538,8 +538,8 @@ def experiment_html(a, md, lid):
             f'<div><dt>{T("inquiry.locked").rstrip(":")}</dt><dd>{locked}</dd></div>'
             f'<div><dt>{T("inquiry.varied").rstrip(":")}</dt><dd>{tn(a["vary"])}</dd></div></dl>'
             f'<div class="exp-controls"><button type="button" class="exp-start">{T("inquiry.exp_start")}</button><button type="button" class="exp-record">{T("inquiry.exp_record")}</button>'
-            f'<button type="button" class="exp-reset exp-icon" aria-label="{esc(T("inquiry.exp_reset"))}" title="{esc(T("inquiry.exp_reset"))}">{ICON_RESET}</button>'
-            f'<button type="button" class="exp-copy exp-icon" aria-label="{esc(T("inquiry.exp_copy"))}" title="{esc(T("inquiry.exp_copy"))}" disabled>{ICON_COPY}</button>'
+            f'<span class="exp-icons"><button type="button" class="exp-reset exp-icon" aria-label="{esc(T("inquiry.exp_reset"))}" title="{esc(T("inquiry.exp_reset"))}">{ICON_RESET}</button>'
+            f'<button type="button" class="exp-copy exp-icon" aria-label="{esc(T("inquiry.exp_copy"))}" title="{esc(T("inquiry.exp_copy"))}" disabled>{ICON_COPY}</button></span>'
             f'<span class="exp-export-status" role="status" aria-live="polite"></span></div>'   # the table's export (teacher 2026-11-03, templates/inquiry.js part 3)
             f'<table class="exp-table"><caption>{T("inquiry.exp_table")}</caption><thead><tr><th data-plain="{esc(vary_plain)}">{tn(a["vary"])}</th>{cols}</tr></thead><tbody></tbody></table>'
             f'<p class="exp-status" role="status" aria-live="polite"></p>{q}</div>')

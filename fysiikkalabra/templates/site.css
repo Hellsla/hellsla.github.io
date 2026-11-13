@@ -862,14 +862,15 @@ textarea{display:block;width:100%;box-sizing:border-box;margin-top:.3rem;font:in
 textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-color:var(--accent)}
 .experiment>.intro>:first-child{margin-top:0}
 .exp-setup{font-size:var(--fs-ui);margin:.6rem 0;padding:.5rem .8rem;background:var(--bg);border-radius:var(--inner-radius)}
-.exp-setup>div{display:flex;flex-wrap:wrap;column-gap:.5rem;margin:.15rem 0}
+.exp-setup>div{display:grid;grid-template-columns:6.2rem 1fr;column-gap:.5rem;margin:.3rem 0}
+.exp-icons{display:inline-flex;gap:.5rem}
 .exp-setup dt{font-weight:700}.exp-setup dt::after{content:":"}
 .exp-setup dd{margin:0}
 .exp-controls .exp-icon{display:inline-flex;align-items:center;justify-content:center;min-width:40px;padding:0}
 .exp-controls .exp-icon:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .exp-controls .exp-icon svg,article .exp-controls .exp-icon svg{display:block;width:20px;height:20px;max-width:none;padding:0;border:0;background:none;border-radius:0}
 @media (max-width:30rem){.exp-controls button{padding:0 .8rem}.exp-controls{gap:.4rem}}
-.exp-controls{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;margin:.7rem 0}
+.exp-controls{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;margin:.7rem 0 .9rem}
 .exp-controls .exp-reset,.exp-controls .exp-copy,.choice-actions .copy-notes{background:var(--surface);color:var(--accent-deep)}
 .exp-controls .exp-reset:hover:not(:disabled),.exp-controls .exp-copy:hover:not(:disabled){background:var(--accent-soft);color:var(--accent-deep)}
 .exp-export-status{align-self:center;font:600 var(--fs-ui) var(--sans);color:var(--accent-deep)}
