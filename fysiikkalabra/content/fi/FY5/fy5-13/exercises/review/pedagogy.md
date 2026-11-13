@@ -1,15 +1,13 @@
-VERDICT: PASS
-CONTENT-HASH: c716085d5bc703dc
-
+VERDICT: FAIL
+CONTENT-HASH: 0babe27b05324bcf
 ## Blocking
-(none)
+- exercises.json (fy5-13-L2-09) — repeats fy5-13-L2-04: the same figure fy5-13/kuvio-tehtava, the same reading (L = 1,20 m, four loops), the same relation v = fλ with λ = 2L/n; only the unknown changes (f from v here, v from f in L2-04). Fix: ask something the figure allows and L2-04 does not, e.g. the next higher frequency at which the same string resonates, or the tension change needed to get three loops at the same frequency, or drop it.
 
 ## Polish
-1. fy5-13/exercises/exercises.json:263 (L2-08) — 'putken pääkorjaus' — the usual term is 'päätekorjaus'; the lesson uses 'pääkorjaus', so change both together or leave as is.
-2. The cancelling answer ('pysyy samana') is a known guess for two opposite changes; the four options each correspond to one partial reading, which is the right defence, no change needed unless you want a fifth 'puolittuu' with a reason.
+- solutions.md (L1-09) — the Järkevyys carries a long paragraph on the helium voice; keep the ratio 2,93 and one sentence.
+- exercises.json (L1-09) — at level 1 the task has a lookup, a pipe formula and a difference; acceptable.
 
 ## Checked
-- f1 = v/(2L) open; closed pipe L/2: v/(4·L/2) = v/(2L); equal, so 'pysyy samana' is correct. Closed-pipe f1 = v/(4L) is in the brief and its warned mistake (treating the closed pipe like a string) is distractor 1.
-- Distractors: forgot the plug (x2), forgot the shortening (/2), plug read the wrong way (x4); each feedback names its own error.
-- Correct feedback does not leak a second stage (one-stage task); correct option not longest or uniquely hedged.
-- Question last, same temperature stated, no new theory. Checked from text only (no renders): scope against the brief, answer arithmetic recomputed, option forms, feedback per option, Finnish, phone width judged from formula length.
+- Text and figure description only (no renders); L1-09: (971 − 331,5)/1,00 = 639,5 Hz, MAFY table named, 4 % tolerance; L2-09: f = 4·75/(2·1,20) = 125 Hz, correct.
+- Figure gives every value, nothing of the answer written.
+- inquiry.json not opened.

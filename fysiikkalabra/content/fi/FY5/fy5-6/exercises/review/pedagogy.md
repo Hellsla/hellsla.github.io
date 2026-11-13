@@ -1,16 +1,14 @@
-VERDICT: PASS
-CONTENT-HASH: 1ae57cce87a7a6fc
-
+VERDICT: FAIL
+CONTENT-HASH: 0d489920ee94599b
 ## Blocking
-(none)
+- exercises.json (fy5-6-L1-10) — repeats fy5-6-L1-08: Earth's orbital speed around the Sun, 29,8 km/s, from r = 1,496·10⁸ km (the solution even says the result is the same as from the period). The figure read (mean of 147,1 and 152,1) only replaces a given number. Fix: use the figure for something new at level 1, e.g. compare the speed at the radius of Halley's perihelion circle, or drop it.
+- exercises.json (fy5-6-L1-11) — a near copy of L1-05 (probe orbiting the Moon, v from M and r, answer 1,55 vs 1,63 km/s); the only additions are the MAFY lookup and r = R + h. Level 1 already holds v = sqrt(γM/r) five times (01, 03, 05, 07, 10). Fix: keep the MAFY lookup but change the question (e.g. the orbital period of the probe, or the g at the orbit), or replace L1-05.
 
 ## Polish
-- exercises.json:97 — "suuruusluokka" is used loosely, as options carry two significant figures — ask "Mikä on Phoboksen kiertoaika ympyräradan mallin mukaan?" or keep and accept.
-- exercises.json:92 — a three-step calculation (v, then T, then h) in L1, whose other tasks ask one quantity; fits L2 better but is within the lesson. Optional.
+- exercises.json (L2-08) — asks circular-orbit speeds for a comet on a long ellipse; the solution says so, but the situation is artificial. Better: two circular orbits of the Earth and Halley's perihelion distance, as planned in the text.
+- Hint of L1-11 names a section (*Aurinkokunta*), not just the table.
 
 ## Checked
-- Text only (no renders). New task fy5-6-L1-09 (type 5, magnitude): T=2,76·10^4 s=7,7 h verified (actual Phobos 7,65 h); wrong options reproduced by calculation (no root 0,0036 h; km under root 0,24 h; ÷60 gives 460 h).
-- Options 32–60 times apart; each wrong value comes from one named error and the feedback is correct.
-- Correct option not identifiable by form (similar length, no hedging); correct feedback is a short check only.
-- Warned mistake of the lesson (h instead of r) is not among the distractors, unit and root slips are: acceptable for L1.
-- Uses only v=sqrt(γM/r) and T=2πr/v taught in the chapter; no long formula chain (aligned blocks short).
+- Text and figure description only (no renders); arithmetic of all three solutions recomputed: 29,8 km/s, 1,55 km/s, 7,7.
+- fy5-6/radat gives all needed values; no answer in it.
+- inquiry.json not opened.
