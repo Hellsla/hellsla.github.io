@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 6472db20fc2ac7c5
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-11-09: diff since origin/main only)
+CONTENT-HASH: 077bbc73147433b4
+SCOPE: delta added-exercise from de998fe1e15345d2 base 81db4a6fd727
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- solutions.md fy1-8-L1-10 — the rounding up to 1,4 km is correctly argued (a minimum distance); one could add that 0,2 s has only one significant figure, which is why the result is a design estimate rather than a 3-s.f. answer — optional sentence.
 
 ## Checked
-- fy1-8-L3-04: the general rule 'a difference can be shown only if the intervals do not overlap' is removed; Periaate now states the data-specific conclusion (intervals overlap, no reliable conclusion, hand-timing uncertainty to be considered); Järkevyys softened to 'ei erotu luotettavasti'.
-- d = 0,04 s, k = 3,75 ≈ 3,8 and the overlap 3,08–3,12 s unchanged.
-- Language version fi-easy judged from the diff against origin/main; notation (LaTeX numbers with units, decimal comma/point, \cdot) checked in changed lines.
+- fy1-8-L1-10: relative uncertainty Δt/t ≤ ε_max gives t ≥ Δt/ε_max = 4,0 s, then s = v t for sound at constant speed; solved in symbols first.
+- Terms follow the guardrails: "ajanoton epävarmuus" and "suhteellinen epävarmuus", hand timing about 0,2 s as in docs/physics-guardrails.md.
+- MAFY speed of sound in air at 20 °C, 343,4 m/s, is right.
+- Recomputed independently: 343,4 · 4,0 = 1373,6 m = 1,3736 km; answers.py and exercises.json agree; unit km as asked.
+- 1,4 km and 1,37 km both within the 4 % tolerance; rounding up keeps the 5 % limit met.
+- Back-check 0,2 s / 4,0 s = 5 % is a real check. Same numbers, answer, unit and tolerance as the Finnish original.

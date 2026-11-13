@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 8e295e965fd9669d
+CONTENT-HASH: 98c93b3fc838a251
 
 ## Blocking
 None.
@@ -7,15 +7,5 @@ None.
 ## Polish
 None.
 
-## Checked (delta 2026-10-31)
-- `topic` "liike" fits the physics area.
-- Guides fit motion-sensor data (speed from graph) and the linear fit.
-- Report link `[[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]` fits the report task; no physics changed.
-
-## Delta 2 (2026-10-31)
-- Raportoi: the tvt-tyoselostus link moved to its own sentence; wording only, no physics changed.
-- The tvt-mittausohjelma link dropped from the fit sentence; method unchanged.
-
-## Delta 4 (2026-10-31)
-
-- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.
+## Checked (delta 2026-11-13)
+- Tilt sentence in the *Miksi juuri nämä akselit?* box (investigation.md) and in teacher.md now reads "mitattu kitkakerroin muuttuu noin $0{,}02$ jokaista kallistusastetta ($1^\circ$) kohti". With $a = \mu g\cos\theta \pm g\sin\theta$ the measured coefficient $a/g$ is $\mu\cos\theta \pm \sin\theta$, which differs from $\mu$ by about $\sin 1^\circ = \tan 1^\circ \approx 0{,}0175 \approx 0{,}02$ per degree, so the figure and its unit (per one degree) are right in both places; the sign flips with the direction of motion as the text says. The line still passes through the origin (only the slope changes), so the claim that the error is invisible in the graph holds. Both texts say the same. Nothing else changed.

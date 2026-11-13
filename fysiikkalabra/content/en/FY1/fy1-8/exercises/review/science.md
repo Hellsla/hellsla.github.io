@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: e6cb851f7e223149
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-11-09: diff since origin/main only)
+CONTENT-HASH: 25de39d17f0b1d8d
+SCOPE: delta added-exercise from 442bab1479f9253c base 81db4a6fd727
 
 ## Blocking
 - none
@@ -9,6 +9,10 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-1
 - none
 
 ## Checked
-- fy1-8-L3-04: the general rule 'a difference can be shown only if the intervals do not overlap' is removed; Periaate now states the data-specific conclusion (intervals overlap, no reliable conclusion, hand-timing uncertainty to be considered); Järkevyys softened to 'ei erotu luotettavasti'.
-- d = 0,04 s, k = 3,75 ≈ 3,8 and the overlap 3,08–3,12 s unchanged.
-- Language version en judged from the diff against origin/main; notation (LaTeX numbers with units, decimal comma/point, \cdot) checked in changed lines.
+- Added task fy1-8-L1-10 only; hash recomputed at start and end.
+- Table value: sound in air at 20 °C 343.4 m/s (about 343 m/s); correct.
+- Relative uncertainty Δt/t ≤ ε_max gives t_min = Δt/ε_max = 4.0 s, then s = v·t_min; solved symbolically first.
+- Hand-timing uncertainty 0.2 s agrees with the guardrails' example; terms used correctly (uncertainty, not error).
+- Independent recompute 1.3736 km = answers.py; the shown 1.4 km (rounded up so the 5 % limit holds) is 1.9 % above it, within 4 %.
+- Back check 0.2 s / 4.0 s = 5 % is real.
+- en numbers identical to the Finnish original.

@@ -1,12 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 7f32c937f097b93c
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: 77a3559ba8d13a7a
+SCOPE: delta added-exercise from 272247cd523312bd base 81db4a6fd727
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- fy1-7-L1-09 repeats the m = rho V pattern of L1-04 and L1-08; acceptable as the lookup variant.
 
 ## Checked
-- Diff only: 'luvun tiheystaulukko' added where the table is needed (helps), sinker/line wording, units 'ilmoitettu', reasonableness checks rewritten (concrete 1 m3 -> 0.75 m3 staged); graph-task check 'two points below, three above' verified against data (least-squares slope 2.705: 3 above, 2 below).
+- Added exercise judged: level 1, wording (situation then question), table lookup is needed and stated, step-by-step solution, arithmetic verified.
+- Fit within the set of 22: progression, kinds and no repeat of the worked example.
+- Phone/language: nothing in the added text that clips; English reads plainly.

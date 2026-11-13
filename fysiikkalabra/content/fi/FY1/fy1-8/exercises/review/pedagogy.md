@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 50b79f966167569c
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-11-09: diff since origin/main only)
+CONTENT-HASH: 5c531bbbd7f99c5c
+SCOPE: delta added-exercise from 44acd46636ba9d0f base 81db4a6fd727
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- fy1-8/exercises/solutions.md (fy1-8-L1-10, Vastaus) — `annetaan käytännön tarkkuudella` is vague; say `Tulos on mitoitusarvio: pyöristetään ylöspäin, jotta 5 %:n raja varmasti täyttyy.`
 
 ## Checked
-- fy1-8-L3-04: the general rule 'a difference can be shown only if the intervals do not overlap' is removed; Periaate now states the data-specific conclusion (intervals overlap, no reliable conclusion, hand-timing uncertainty to be considered); Järkevyys softened to 'ei erotu luotettavasti'.
-- d = 0,04 s, k = 3,75 ≈ 3,8 and the overlap 3,08–3,12 s unchanged.
-- Language version fi judged from the diff against origin/main; notation (LaTeX numbers with units, decimal comma/point, \cdot) checked in changed lines.
+- fy1-8-L1-10 text: `suhteellinen epävarmuus saa olla enintään` and `Mikä on lyhin matka, jonka äänen on kuljettava mittauksessa?` are good Finnish; question is last; `\text{km}` set upright.
+- Rounding 1,3736 → 1,4 km is upward, consistent with the stated reason.
+- Aligned `\begin{aligned}` formula in Kaava readable at 360 px.
+- Check-back 0,2/4,0 = 5 % verified.
+- Delta scope: only this diff judged.

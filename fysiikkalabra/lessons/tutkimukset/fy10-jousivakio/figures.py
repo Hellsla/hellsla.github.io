@@ -107,7 +107,9 @@ def oscillation():
     ax = Axes(f, (90, 280), (470, 50), x=(0, 10), y=(0, 10), xticks=[], yticks=[], xlabel=r"m", ylabel=r"T^2", grid=False)
     ax.line([(0, 0.6), (9.5, 8.7)], INK)
     f.tex(ax.X(3.4), ax.Y(7.8), r"\text{kulmakerroin } \dfrac{4\pi^2}{k}", "middle")
-    f.tex(ax.X(0.3), ax.Y(1.7), r"\text{vakiotermi}", "start", MUTED)
+    ax.point(0, 0.6, MUTED, 5)                                # where the line meets the T^2 axis: the constant term
+    f.line(ax.X(0.15), ax.Y(0.65), ax.X(1.2), ax.Y(0.65), MUTED, 1.5)
+    f.tex(ax.X(1.3), ax.Y(0.65), r"\text{vakiotermi}", "start", MUTED)
     return f.svg()
 
 
