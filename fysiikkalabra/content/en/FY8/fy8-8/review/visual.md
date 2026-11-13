@@ -1,12 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: bc7041c806d858ab
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 5b120f8cff7105c8
+(The packet header said d7633bb66bf5dcc9; `reviews.py hash` returned 5b120f8cff7105c8 at the start and at the end. The lesson files are older than the captures, so the captures show the current text.)
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] lesson.md, electron-capture paragraph, theory-1280-2 — the inline "$(Z - 1)$" breaks after the opening bracket, so "(" ends one line and "Z − 1)" starts the next — put the bracket inside the maths or use "as in beta plus decay, where $Z - 1$" — a small reading hiccup.
+- [Minor] lesson.md, "Decay equations" — the intro lists alpha, beta plus, beta minus and gamma but not electron capture, which now has its own display equation above — optionally add a one-line pointer or leave as is, since the capture is already given in full.
 
 ## Checked
-- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.
+- Delta: the new electron-capture paragraph and its display equation (theory-1280-1 and -2), the reworded levels paragraph with the 0.1/0.03 keV numbers, the levels figure beside it (theory-1280-2), and the decay equations, chart of nuclides and E_γ formula block (theory-1280-3).
+- Contact sheets and the 390 px captures were not opened one by one: the diff changes no figure. The misconception and summary lines are plain text.
+- KaTeX: no errors. The isotope notation, the $\nu_\text{e}$ subscript, the thin spaces before keV, and ${}^{0}_{-1}\text{e}$ all render upright and aligned. Units are LaTeX, and a decimal point is used in English.
+- The feedback change in inquiry.json is text only (wording, no layout effect).
+
+## Scores
+illustrations 4 · typography 4 · Finnish (English wording) 4 · accessibility 4
