@@ -37,6 +37,8 @@ work is in `CLAUDE.md` at the repository root. Update it when the teacher change
    all three reviews.
 9. Area D: the teacher decides which plan (FY10, Dronelabra, others) is approved for building.
 10. English concept cards for FY6 and FY8 (queue: later, the teacher's decision).
+11. Ahjo and LUMA-tutor onto the shared unit template (`jaksot.py` blocks, as Kilparobotiikka). Last; shared files,
+    so alone.
 
 ## In parallel
 At most three worker sessions, each on a different course or area:

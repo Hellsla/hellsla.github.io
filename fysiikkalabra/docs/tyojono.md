@@ -61,6 +61,13 @@ kerrallaan: lukujen sisältö muuttuu, joten jokainen luku tarvitsee tiede-, ped
 `kortit/en/` ei sisällä tiedostoja `fy6.json` ja `fy8.json`, joten englanninkielisillä FY6- ja FY8-sivuilla ei ole
 käsitekortteja eikä alleviivauksia.
 
+## 11. Ahjo ja LUMA-tutor yhteiseen jaksopohjaan (opettaja 2026-11-13: viimeisenä)
+
+Kilparobotiikka on kirjoitettu jaksopohjan lohkoina (#516–#517, `scripts/jaksot.py`); Ahjo ja LUMA-tutor piirtyvät
+vielä osin omilla moduuleillaan (`ahjo.py`, `lumatutor.py`). Siirretään ne samaan pohjaan niin, että sivut pysyvät
+tavulleen samoina kuten Kilparobotiikassa, ja puuttuvat lohkot lisätään yhteiseen lohkokirjastoon. Jaettuja
+tiedostoja: tehdään yksin.
+
 ## Kirjattu päätös: luvut ilman käsitekortteja (opettaja 2026-11-13)
 
 Luvut fy3-13, fy3-14, fy3-16 ja fy4-16 jäävät ilman omia kortteja ja alleviivauksia (#526:n siirtojen jälkeen).
