@@ -248,7 +248,7 @@ Part c: the dose is $\dfrac{3.0\,\text{h}}{1.59\,\text{h}} = 1.89$, that is, $19
 **Conversions:** None needed: the levels are in decibels and the time comes out in hours.
 **Substitution:** $n = \dfrac{90\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = \dfrac{5}{3}$, $t_\text{v} = \dfrac{8\,\text{h}}{2^{5/3}} = \dfrac{8\,\text{h}}{3.175} = 2.52\,\text{h}$
 **Answer:** $2.5\,\text{h}$. The level is read from the figure as a whole decibel and the rule is an estimate, so two significant figures are enough.
-**Reasonableness:** $90\,\text{dB}$ lies between $88\,\text{dB}$ ($4\,\text{h}$) and $91\,\text{dB}$ ($2\,\text{h}$), closer to the latter, and $2.5\,\text{h}$ lies between two and four hours.
+**Reasonableness:** $90\,\text{dB}$ lies between $88\,\text{dB}$ ($4\,\text{h}$) and $91\,\text{dB}$ ($2\,\text{h}$), closer to the higher level $91\,\text{dB}$, and $2.5\,\text{h}$ lies between two and four hours, closer to two hours.
 
 ## fy5-16-L2-09
 **Given:** from the figure, the rock concert's level $L = 105\,\text{dB}$; reference $L_0 = 85\,\text{dB}$ and $t_0 = 8\,\text{h}$

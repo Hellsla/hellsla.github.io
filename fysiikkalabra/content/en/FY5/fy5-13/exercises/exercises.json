@@ -299,7 +299,7 @@
     {
       "id": "fy5-13-L2-09",
       "level": 2,
-      "text": "In the rope in the figure the speed of the wave is $75\\,\\text{m/s}$. The rope between the vibrator and the pulley vibrates as a standing wave, and the positions of the vibrator and the pulley are nodes. At what frequency does the vibrator vibrate? Read the necessary data from the figure.",
+      "text": "In the rope in the figure the speed of the wave is $75.0\\,\\text{m/s}$. The rope between the vibrator and the pulley vibrates as a standing wave, and the positions of the vibrator and the pulley are nodes. At what frequency does the vibrator vibrate? Read the necessary data from the figure.",
       "figure": "fy5-13/kuvio-tehtava",
       "answer": 125.0,
       "unit": "Hz",

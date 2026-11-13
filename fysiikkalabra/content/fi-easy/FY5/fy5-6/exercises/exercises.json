@@ -276,7 +276,7 @@
       "level": 2,
       "text": "Kuvan oikealla puolella on Halleyn komeetan rata Auringon ympäri. Lue kuvasta, mikä on komeetan pienin ja suurin etäisyys Auringosta. Kuvittele, että kappale kiertäisi Aurinkoa ympyrärataa. Radan säde olisi kyseinen etäisyys. Kuinka monta kertaa suurempi olisi ratanopeus pienimmällä etäisyydellä kuin suurimmalla?",
       "figure": "fy5-6/radat",
-      "answer": 7.72,
+      "answer": 7.7,
       "unit": "",
       "tolerance": 0.02
     }

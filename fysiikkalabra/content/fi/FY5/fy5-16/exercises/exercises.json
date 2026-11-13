@@ -114,7 +114,7 @@
       "id": "fy5-16-L1-09",
       "level": 1,
       "text": "Kuvassa on tyypillisiä äänitasoja desibeliasteikolla. Lue kuvasta ruohonleikkurin melutaso. Kuinka monessa tunnissa ruohonleikkurin käyttäjälle kertyy ilman kuulonsuojaimia sama energia-annos kuin ylempää toiminta-arvoa vastaavassa altistuksessa, $8\\,\\text{h}$ tasolla $85\\,\\text{dB}$? Vastaa tunteina.",
-      "figure": "fy5-16/scale",
+      "figure": "fy5-16/scale-tehtava",
       "answer": 2.5,
       "unit": "h",
       "tolerance": 0.02
@@ -315,7 +315,7 @@
       "id": "fy5-16-L2-09",
       "level": 2,
       "text": "Kuvassa on tyypillisiä äänitasoja desibeliasteikolla. Lue kuvasta rock-konsertin melutaso. Kuinka monessa minuutissa kuulijalle kertyy ilman kuulonsuojaimia sama energia-annos kuin ylempää toiminta-arvoa vastaavassa altistuksessa, $8\\,\\text{h}$ tasolla $85\\,\\text{dB}$? Vastaa minuutteina.",
-      "figure": "fy5-16/scale",
+      "figure": "fy5-16/scale-tehtava",
       "answer": 4.7,
       "unit": "min",
       "tolerance": 0.02

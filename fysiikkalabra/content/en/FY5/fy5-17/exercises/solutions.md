@@ -223,4 +223,4 @@ The ratio is $\tfrac{d_\text{B}}{d_\text{A}} = \tfrac{24.0\,\text{s}}{8.0\,\text
 **Conversions:** $40\,\mu\text{s} = 40 \cdot 10^{-6}\,\text{s}$; finally $1\,\text{m} = 100\,\text{cm}$.
 **Substitution:** $\Delta d = \dfrac{1540\,\text{m/s} \cdot 40 \cdot 10^{-6}\,\text{s}}{2} = 0.0308\,\text{m} = 3.08\,\text{cm}$
 **Answer:** $3.08\,\text{cm}$, three significant figures as in the speed $1540\,\text{m/s}$.
-**Reasonableness:** The depths are $d_\text{B} = 3.85\,\text{cm}$ and $d_\text{C} = 6.93\,\text{cm}$, and their difference is $3.08\,\text{cm}$. A thigh is about $7\,\text{cm}$ deep here, so the layer fits in it, and echo C is the last because there are no more boundaries after it.
+**Reasonableness:** The depths are $d_\text{B} = 3.85\,\text{cm}$ and $d_\text{C} = 6.93\,\text{cm}$, and their difference is $3.08\,\text{cm}$. The depth $6.93\,\text{cm}$ is a sensible distance from the skin to the thigh bone, so the layer fits between the skin and the bone. Echo C comes from the bone: bone reflects and absorbs almost all of the ultrasound, so no echoes come from behind it.

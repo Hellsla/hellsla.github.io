@@ -364,9 +364,9 @@
     {
       "id": "fy5-9-L2-09",
       "level": 2,
-      "text": "The graph shows the position of a body oscillating on a spring as a function of time. The mass of the body is $0.150\\,\\text{kg}$. Calculate the spring constant of the spring. Give the answer in newtons per metre.",
+      "text": "The graph shows the position of a body oscillating on a spring as a function of time. Calculate the greatest speed of the body. Give the answer in metres per second.",
       "figure": "fy5-9/kuvaaja-k",
-      "answer": 37.0,
+      "answer": 0.47,
       "unit": "N/m",
       "tolerance": 0.02
     }

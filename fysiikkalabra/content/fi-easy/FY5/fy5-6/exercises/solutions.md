@@ -239,5 +239,5 @@ Tunneiksi muutettuna $T = \tfrac{2{,}76 \cdot 10^{4}\,\text{s}}{3600\,\text{s/h}
 **Kaava:** $\dfrac{v_1}{v_2} = \dfrac{\sqrt{\gamma M / r_1}}{\sqrt{\gamma M / r_2}} = \sqrt{\dfrac{r_2}{r_1}}$
 **Muunnokset:** Muunnoksia ei tarvita. Etäisyydet ovat samassa yksikössä, ja suhteella ei ole yksikköä.
 **Sijoitus:** $\dfrac{v_1}{v_2} = \sqrt{\dfrac{5250\,\text{milj. km}}{88\,\text{milj. km}}} = \sqrt{59{,}66} = 7{,}724$
-**Vastaus:** noin $7{,}72$-kertainen. Vastaus on annettu kolmella merkitsevällä numerolla. Suurin etäisyys on noin $60$ kertaa pienin. Neliöjuuren vuoksi nopeus on vain noin $7{,}7$-kertainen. Komeetan oikea rata on kuvan mukaan hyvin pitkä ellipsi. Ympyrämalli ei kuvaa sitä. Tehtävässä verrataan vain mallin nopeuksia.
+**Vastaus:** noin $7{,}7$-kertainen, kaksi merkitsevää numeroa, koska etäisyys $88\,\text{milj. km}$ on ilmoitettu vain kahdella (pyöristämätön arvo $7{,}724$). Suurin etäisyys on noin $60$ kertaa pienin. Neliöjuuren vuoksi nopeus on vain noin $7{,}7$-kertainen. Komeetan oikea rata on kuvan mukaan hyvin pitkä ellipsi. Ympyrämalli ei kuvaa sitä. Tehtävässä verrataan vain mallin nopeuksia.
 **Järkevyys:** Koska $7{,}7^2 \approx 59$, tulos sopii etäisyyksien suhteeseen $59{,}7$. Nopeus on suurempi lähempänä Aurinkoa, kuten kaava $v \propto \tfrac{1}{\sqrt{r}}$ sanoo.

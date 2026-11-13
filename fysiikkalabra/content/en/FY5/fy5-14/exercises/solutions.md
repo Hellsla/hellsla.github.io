@@ -212,12 +212,12 @@ $\begin{aligned} v &= 2 \cdot 0.650\,\text{m} \cdot 196\,\text{Hz} \\ &= 254.8\,
 **Reasonableness:** All the peaks are whole-number multiples of the fundamental frequency: $2 \cdot 200\,\text{Hz} = 400\,\text{Hz}$, $3 \cdot 200\,\text{Hz} = 600\,\text{Hz}$, $4 \cdot 200\,\text{Hz} = 800\,\text{Hz}$ and $5 \cdot 200\,\text{Hz} = 1000\,\text{Hz}$. If the fundamental were $400\,\text{Hz}$, the peak at $200\,\text{Hz}$ would be left unexplained. The pitch heard by the ear corresponds to the fundamental frequency $200\,\text{Hz}$.
 
 ## fy5-14-L2-08
-**Given:** the frequency of one fork $f_2 = 523\,\text{Hz}$, higher than that of the other; the beat period is read from the figure
-**Find:** the frequency of the other fork $f_1$ in hertz
-**Principle:** Two sounds of nearly the same frequency beat: the loudness varies, and the number of loud moments per second equals the difference of the frequencies, $f_\text{b} = |f_2 - f_1|$. The difference alone does not tell which sound is higher, but the task says that $523\,\text{Hz}$ is the higher one.
+**Given:** the combined sound of two tuning forks sounding at the same time, in the figure; the beat period is read from the figure
+**Find:** the beat frequency $f_\text{b}$ in hertz
+**Principle:** Two sounds of nearly the same frequency beat: the loudness varies, and the number of loud moments per second equals the difference of the frequencies, $f_\text{b} = |f_2 - f_1|$. The beat frequency is therefore the reciprocal of the beat period.
 **Reading the figure:** The sound is loudest at the moments $0$, $0.25\,\text{s}$, $0.50\,\text{s}$, $0.75\,\text{s}$ and $1.00\,\text{s}$. The time between consecutive loud moments, the beat period, is $T_\text{b} = 0.25\,\text{s}$.
-**Formula:** $f_\text{b} = \dfrac{1}{T_\text{b}}$ and $f_\text{b} = f_2 - f_1$, so $f_1 = f_2 - f_\text{b}$
+**Formula:** $f_\text{b} = \dfrac{1}{T_\text{b}}$
 **Conversions:** None are needed: the period is in seconds, so the beat frequency comes out in hertz.
-**Substitution:** $f_\text{b} = \dfrac{1}{0.25\,\text{s}} = 4.0\,\text{Hz}$, so $f_1 = 523\,\text{Hz} - 4.0\,\text{Hz} = 519\,\text{Hz}$
-**Answer:** $519\,\text{Hz}$, in whole hertz like the given frequency $523\,\text{Hz}$.
-**Reasonableness:** In the figure there are four loud moments in one second after the first, so the beat frequency is $4\,\text{Hz}$, the same as the difference $523\,\text{Hz} - 519\,\text{Hz}$. The difference is small compared with the frequencies, so the beats are heard as a slow variation and not as two separate notes.
+**Substitution:** $f_\text{b} = \dfrac{1}{0.25\,\text{s}} = 4.0\,\text{Hz}$
+**Answer:** $4.0\,\text{Hz}$, two significant figures like the period $0.25\,\text{s}$ read from the figure.
+**Reasonableness:** In the figure there are four loud moments in one second after the first, so the beat frequency is $4\,\text{Hz}$. If one fork were $523\,\text{Hz}$, the other would be $523\,\text{Hz} \pm 4\,\text{Hz}$, that is $519\,\text{Hz}$ or $527\,\text{Hz}$, and the beats alone do not tell which. The difference is small compared with the frequencies, so the beats are heard as a slow variation and not as two separate notes.

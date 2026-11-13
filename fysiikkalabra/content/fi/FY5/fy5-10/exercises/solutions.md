@@ -274,12 +274,12 @@ $v = f\lambda = 1{,}5\,\text{Hz} \cdot 1{,}2\,\text{m}$, eli $v = 1{,}8\,\text{m
 **Järkevyys:** Ilmassa saman taajuuden aallonpituus olisi $\tfrac{343\,\text{m/s}}{1000\,\text{Hz}} = 0{,}34\,\text{m}$. Raudassa ääni etenee noin $15$ kertaa nopeammin, joten aallonpituuskin on noin $15$ kertaa pidempi: $\tfrac{5{,}12\,\text{m}}{0{,}34\,\text{m}} \approx 15$. Taajuus pysyy samana, kun aalto siirtyy väliaineesta toiseen.
 
 ## fy5-10-L2-08
-**Annettu:** narun valokuva eli $(x, y)$-kuvaaja (kuva), heilutustaajuus $f = 2{,}4\,\text{Hz}$
-**Kysytty:** aallon nopeus $v$
-**Periaate:** Valokuvan vaaka-akselilla on paikka, joten kahden peräkkäisen harjan väli on aallonpituus $\lambda$. Narun jokainen kohta värähtelee käden taajuudella, ja aaltoliikkeen perusyhtälön mukaan nopeus on taajuus kertaa aallonpituus.
+**Annettu:** narun valokuva eli $(x, y)$-kuvaaja (kuva), aallon nopeus $v = 3{,}0\,\text{m/s}$
+**Kysytty:** jaksonaika $T$
+**Periaate:** Valokuvan vaaka-akselilla on paikka, joten kahden peräkkäisen harjan väli on aallonpituus $\lambda$. Yhdessä jaksonajassa aalto etenee yhden aallonpituuden, joten $v = \dfrac{\lambda}{T}$.
 **Kuvaajan lukeminen:** Harjat ovat ruudukon viivoilla kohdissa $0{,}5\,\text{m}$, $2{,}0\,\text{m}$ ja $3{,}5\,\text{m}$. Kahden peräkkäisen harjan väli on $2{,}0\,\text{m} - 0{,}5\,\text{m} = 1{,}5\,\text{m}$, ja sama väli on kohtien $2{,}0\,\text{m}$ ja $3{,}5\,\text{m}$ välillä, joten $\lambda = 1{,}5\,\text{m}$. Amplitudia $4\,\text{cm}$ ei tarvita.
-**Kaava:** $v = f\lambda$
-**Muunnokset:** Ei tarvita: aallonpituus on metreinä ja $1\,\text{Hz} = 1\,\text{s}^{-1}$, joten tulos tulee yksikössä $\text{m/s}$.
-**Sijoitus:** $v = 2{,}4\,\text{Hz} \cdot 1{,}5\,\text{m} = 2{,}4\,\text{s}^{-1} \cdot 1{,}5\,\text{m} = 3{,}6\,\text{m/s}$
-**Vastaus:** $3{,}6\,\text{m/s}$, kaksi merkitsevää numeroa kuten taajuudessa $2{,}4\,\text{Hz}$ ja kuvasta luetussa aallonpituudessa $1{,}5\,\text{m}$.
-**Järkevyys:** Jaksonaika on $T = \tfrac{1}{2{,}4\,\text{Hz}} = 0{,}417\,\text{s}$, ja siinä ajassa aalto etenee $3{,}6\,\text{m/s} \cdot 0{,}417\,\text{s} = 1{,}5\,\text{m}$ eli yhden aallonpituuden. Muutama metri sekunnissa on narussa etenevälle aallolle tavallinen nopeus.
+**Kaava:** $v = \dfrac{\lambda}{T}$, josta $T = \dfrac{\lambda}{v}$
+**Muunnokset:** Ei tarvita: aallonpituus on metreinä ja nopeus yksikössä $\text{m/s}$.
+**Sijoitus:** $T = \dfrac{1{,}5\,\text{m}}{3{,}0\,\text{m/s}} = 0{,}50\,\text{s}$
+**Vastaus:** $0{,}50\,\text{s}$, kaksi merkitsevää numeroa kuten nopeudessa $3{,}0\,\text{m/s}$ ja kuvasta luetussa aallonpituudessa $1{,}5\,\text{m}$.
+**Järkevyys:** Taajuus on $f = \tfrac{1}{0{,}50\,\text{s}} = 2{,}0\,\text{Hz}$, ja $f\lambda = 2{,}0\,\text{Hz} \cdot 1{,}5\,\text{m} = 3{,}0\,\text{m/s}$, mikä on annettu nopeus. Puolen sekunnin jaksonaika sopii käsin heiluttamalla tehtävälle aallolle.

@@ -36,6 +36,6 @@ a["fy5-14-L3-04"] = 1540.0 * 2470 / (2 * 4.00e6 + 2470)   # 0,4753 m/s -> 0,475 
 a["fy5-14-L3-05"] = 2 * 0.650 * (1176 / 6)            # 254,8 m/s -> 255 m/s
 # L1-10 figure fy5-14/spektri-tehtava: peaks at 200, 400, ... 1000 Hz, strongest at 400 Hz; fundamental = lowest = spacing = 200 Hz
 a["fy5-14-L1-10"] = 200
-# L2-08 figure fy5-14/huojunta-tehtava: loud moments 0,25 s apart -> f_beat = 1 / 0,25 s = 4 Hz; other fork 523 Hz is higher: 523 - 4 = 519 Hz
-a["fy5-14-L2-08"] = 523 - 1 / 0.25
+# L2-08 figure fy5-14/huojunta-tehtava: loud moments 0,25 s apart -> f_beat = 1 / 0,25 s = 4 Hz; asked quantity is the beat frequency itself
+a["fy5-14-L2-08"] = 1 / 0.25
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

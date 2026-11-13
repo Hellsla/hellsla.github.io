@@ -289,16 +289,16 @@ Kiihtyvyyksien suhde on $\tfrac{a_{\text{B}}}{a_{\text{A}}} = \tfrac{m_{\text{A}
 **Kaava:** $F = mg$
 **Muunnokset:** Tiedot ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $F = 85\,\text{kg}\cdot 3{,}71\,\text{m/s}^2 = 315{,}35\,\text{N}$
-**Vastaus:** $315\,\text{N}$, kolme merkitsevää numeroa kuten kiihtyvyydessä $3{,}71\,\text{m/s}^2$.
-**Järkevyys:** Maassa voima olisi $85\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 834\,\text{N}$. Suhde $\dfrac{3{,}71}{9{,}81} = 0{,}38$ antaa $0{,}38\cdot 834\,\text{N} \approx 315\,\text{N}$, joten Marsissa astronautti painaa noin kaksi viidesosaa Maan painostaan.
+**Vastaus:** $3{,}2\cdot 10^{2}\,\text{N}$ ($320\,\text{N}$). Massa $85\,\text{kg}$ on ilmoitettu vain kahdella merkitsevällä numerolla, joten tuloksessakin on kaksi, vaikka kiihtyvyydessä $3{,}71\,\text{m/s}^2$ on kolme.
+**Järkevyys:** Maassa voima olisi $85\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 834\,\text{N}$. Suhde $\dfrac{3{,}71}{9{,}81} = 0{,}38$ antaa $0{,}38\cdot 834\,\text{N} \approx 320\,\text{N}$, joten Marsissa astronautti painaa noin kaksi viidesosaa Maan painostaan.
 
 ## fy5-5-L2-09
-**Annettu:** säde $R = 6{,}99 \cdot 10^{7}\,\text{m}$, $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$; Jupiterin kentän voimakkuus luetaan kuvasta
+**Annettu:** päiväntasaajan säde $R = 7{,}15 \cdot 10^{7}\,\text{m}$, $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$; Jupiterin kentän voimakkuus luetaan kuvasta
 **Kysytty:** Jupiterin massa $M$ yksikössä $10^{27}\,\text{kg}$
 **Periaate:** Jupiterin pinnalla oleva massa $m$ on etäisyydellä $R$ keskipisteestä. Gravitaatiovoima on $F = mg$ ja Newtonin gravitaatiolain mukaan $F = \gamma\dfrac{M m}{R^2}$. Lausekkeet ovat yhtä suuret.
 **Kuvaajan lukeminen:** Jupiterin nuoli on merkitty arvolla $24{,}8\,\text{m/s}^2$, joten $g = 24{,}8\,\text{m/s}^2$.
 **Kaava:** $mg = \gamma\dfrac{M m}{R^2}$, joten kappaleen massa $m$ supistuu ja $M = \dfrac{g R^2}{\gamma}$
-**Muunnokset:** Tiedot ovat SI-yksiköissä. Tulos $M = 1{,}82\cdot 10^{27}\,\text{kg}$ ilmoitetaan lopuksi yksikössä $10^{27}\,\text{kg}$.
-**Sijoitus:** $M = \dfrac{24{,}8\,\text{m/s}^2\cdot (6{,}99 \cdot 10^{7}\,\text{m})^2}{6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}} = 1{,}816 \cdot 10^{27}\,\text{kg}$
-**Vastaus:** $1{,}82\,\cdot 10^{27}\,\text{kg}$, kolme merkitsevää numeroa kuten säteessä.
-**Järkevyys:** Maan massa on $5{,}97\cdot 10^{24}\,\text{kg}$, joten Jupiterin massa on noin $\dfrac{1{,}82\cdot 10^{27}}{5{,}97\cdot 10^{24}} \approx 300$-kertainen. Se on Jupiterin tunnettu suuruusluokka. Kentän voimakkuus on vain $2{,}5$-kertainen Maahan verrattuna, vaikka planeetta on $300$ kertaa massiivisempi, koska säde on suuri.
+**Muunnokset:** Tiedot ovat SI-yksiköissä. Tulos $M = 1{,}90\cdot 10^{27}\,\text{kg}$ ilmoitetaan lopuksi yksikössä $10^{27}\,\text{kg}$.
+**Sijoitus:** $M = \dfrac{24{,}8\,\text{m/s}^2\cdot (7{,}15 \cdot 10^{7}\,\text{m})^2}{6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}} = 1{,}900 \cdot 10^{27}\,\text{kg}$
+**Vastaus:** $1{,}90\cdot 10^{27}\,\text{kg}$, kolme merkitsevää numeroa kuten säteessä. Kuvan arvo $24{,}8\,\text{m/s}^2$ pätee päiväntasaajan säteellä, joten käytetään samaa sädettä, ei keskisädettä $6{,}99\cdot 10^{7}\,\text{m}$.
+**Järkevyys:** Maan massa on $5{,}97\cdot 10^{24}\,\text{kg}$, joten Jupiterin massa on noin $\dfrac{1{,}90\cdot 10^{27}}{5{,}97\cdot 10^{24}} \approx 320$-kertainen. Se on Jupiterin tunnettu suuruusluokka. Kentän voimakkuus on vain $2{,}5$-kertainen Maahan verrattuna, vaikka planeetta on $320$ kertaa massiivisempi, koska säde on suuri.

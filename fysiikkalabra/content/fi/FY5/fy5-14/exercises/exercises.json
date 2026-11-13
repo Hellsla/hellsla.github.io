@@ -289,9 +289,9 @@
     {
       "id": "fy5-14-L2-08",
       "level": 2,
-      "text": "Kuvassa on kahden yhtä aikaa soivan ääniraudan yhteinen ääni mikrofonilla mitattuna. Toisen ääniraudan taajuus on $523\\,\\text{Hz}$, ja se on korkeampi kuin toisen. Mikä on toisen ääniraudan taajuus? Lue tarvittavat tiedot kuvasta.",
+      "text": "Kuvassa on kahden yhtä aikaa soivan ääniraudan yhteinen ääni mikrofonilla mitattuna. Mikä on huojuntataajuus? Lue tarvittavat tiedot kuvasta.",
       "figure": "fy5-14/huojunta-tehtava",
-      "answer": 519.0,
+      "answer": 4.0,
       "unit": "Hz",
       "tolerance": 0.02
     }

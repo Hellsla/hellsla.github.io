@@ -223,4 +223,4 @@ Suhde on $\tfrac{d_\text{B}}{d_\text{A}} = \tfrac{24{,}0\,\text{s}}{8{,}0\,\text
 **Muunnokset:** $40\,\mu\text{s} = 40 \cdot 10^{-6}\,\text{s}$. Lopuksi $1\,\text{m} = 100\,\text{cm}$.
 **Sijoitus:** $\Delta d = \dfrac{1540\,\text{m/s} \cdot 40 \cdot 10^{-6}\,\text{s}}{2} = 0{,}0308\,\text{m} = 3{,}08\,\text{cm}$
 **Vastaus:** $3{,}08\,\text{cm}$, kolme merkitsevää numeroa kuten nopeudessa $1540\,\text{m/s}$.
-**Järkevyys:** Syvyydet ovat $d_\text{B} = 3{,}85\,\text{cm}$ ja $d_\text{C} = 6{,}93\,\text{cm}$. Niiden erotus on $3{,}08\,\text{cm}$. Reisi on tässä noin $7\,\text{cm}$ syvä, joten kerros mahtuu siihen. Kaiku C on viimeinen, koska sen jälkeen ei ole enää rajapintoja.
+**Järkevyys:** Syvyydet ovat $d_\text{B} = 3{,}85\,\text{cm}$ ja $d_\text{C} = 6{,}93\,\text{cm}$. Niiden erotus on $3{,}08\,\text{cm}$. Syvyys $6{,}93\,\text{cm}$ sopii reisiluun etäisyydeksi ihosta, joten kerros mahtuu ihon ja luun väliin. Kaiku C on luusta. Luu heijastaa ja vaimentaa ultraäänen lähes kokonaan, joten sen takaa ei tule kaikuja.

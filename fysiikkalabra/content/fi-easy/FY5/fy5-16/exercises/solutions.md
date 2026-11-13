@@ -248,7 +248,7 @@ Kohta c: annos on $\dfrac{3{,}0\,\text{h}}{1{,}59\,\text{h}} = 1{,}89$ eli $190\
 **Muunnokset:** Ei tarvita. Tasot ovat desibeleinä ja aika saadaan tunteina.
 **Sijoitus:** $n = \dfrac{90\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = \dfrac{5}{3}$, $t_\text{v} = \dfrac{8\,\text{h}}{2^{5/3}} = \dfrac{8\,\text{h}}{3{,}175} = 2{,}52\,\text{h}$
 **Vastaus:** $2{,}5\,\text{h}$. Taso luetaan kuvasta kokonaisena desibelinä ja sääntö on arvio. Kaksi merkitsevää numeroa riittää siksi.
-**Järkevyys:** Taso $90\,\text{dB}$ on tasojen $88\,\text{dB}$ ($4\,\text{h}$) ja $91\,\text{dB}$ ($2\,\text{h}$) välissä, lähempänä jälkimmäistä. Tulos $2{,}5\,\text{h}$ on kahden ja neljän tunnin välissä.
+**Järkevyys:** Taso $90\,\text{dB}$ on tasojen $88\,\text{dB}$ ($4\,\text{h}$) ja $91\,\text{dB}$ ($2\,\text{h}$) välissä, lähempänä ylempää tasoa $91\,\text{dB}$. Tulos $2{,}5\,\text{h}$ on kahden ja neljän tunnin välissä, lähempänä kahta tuntia.
 
 ## fy5-16-L2-09
 **Annettu:** kuvasta rock-konsertin taso $L = 105\,\text{dB}$; vertailu $L_0 = 85\,\text{dB}$ ja $t_0 = 8\,\text{h}$

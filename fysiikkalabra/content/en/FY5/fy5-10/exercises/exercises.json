@@ -300,10 +300,10 @@
       "kind": [
         "graph"
       ],
-      "text": "The figure shows a snapshot of a taut rope at one moment. The end of the rope is shaken steadily at a frequency of $2.4\\,\\text{Hz}$. Read the value you need from the figure. What is the speed of the wave in the rope?",
+      "text": "The figure shows a snapshot of a taut rope at one moment. The wave travels along the rope at a speed of $3.0\\,\\text{m/s}$. Read the value you need from the figure. What is the period of the vibration of every point of the rope?",
       "figure": "fy5-10/valokuva",
-      "answer": 3.6,
-      "unit": "m/s",
+      "answer": 0.5,
+      "unit": "s",
       "tolerance": 0.02
     }
   ],

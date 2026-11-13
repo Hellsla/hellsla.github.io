@@ -289,16 +289,16 @@ The ratio of the accelerations is $\tfrac{a_{\text{B}}}{a_{\text{A}}} = \tfrac{m
 **Formula:** $F = mg$
 **Conversions:** The data is in SI units, so no conversions are needed.
 **Substitution:** $F = 85\,\text{kg}\cdot 3.71\,\text{m/s}^2 = 315.35\,\text{N}$
-**Answer:** $315\,\text{N}$, three significant figures like the acceleration $3.71\,\text{m/s}^2$.
-**Reasonableness:** On the Earth the force would be $85\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 834\,\text{N}$. The ratio $\dfrac{3.71}{9.81} = 0.38$ gives $0.38\cdot 834\,\text{N} \approx 315\,\text{N}$, so on Mars the astronaut weighs about two fifths of the weight on the Earth.
+**Answer:** $3.2\cdot 10^{2}\,\text{N}$ ($320\,\text{N}$). The mass $85\,\text{kg}$ has only two significant figures, so the result has two, even though $3.71\,\text{m/s}^2$ has three.
+**Reasonableness:** On the Earth the force would be $85\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 834\,\text{N}$. The ratio $\dfrac{3.71}{9.81} = 0.38$ gives $0.38\cdot 834\,\text{N} \approx 320\,\text{N}$, so on Mars the astronaut weighs about two fifths of the weight on the Earth.
 
 ## fy5-5-L2-09
-**Given:** radius $R = 6.99 \cdot 10^{7}\,\text{m}$, $\gamma = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$; the field strength of Jupiter is read from the figure
+**Given:** equatorial radius $R = 7.15 \cdot 10^{7}\,\text{m}$, $\gamma = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$; the field strength of Jupiter is read from the figure
 **Find:** the mass $M$ of Jupiter in the unit $10^{27}\,\text{kg}$
 **Principle:** A body of mass $m$ on the surface of Jupiter is at the distance $R$ from the centre. The gravitational force is $F = mg$ and, by Newton's law of gravitation, $F = \gamma\dfrac{M m}{R^2}$. The two expressions are equal.
 **Reading the figure:** The arrow of Jupiter has the label $24.8\,\text{m/s}^2$, so $g = 24.8\,\text{m/s}^2$.
 **Formula:** $mg = \gamma\dfrac{M m}{R^2}$, so the mass $m$ of the body cancels and $M = \dfrac{g R^2}{\gamma}$
-**Conversions:** The data is in SI units; the answer $M = 1.82\cdot 10^{27}\,\text{kg}$ is converted to the unit $10^{27}\,\text{kg}$ at the end.
-**Substitution:** $M = \dfrac{24.8\,\text{m/s}^2\cdot (6.99 \cdot 10^{7}\,\text{m})^2}{6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}} = 1.816 \cdot 10^{27}\,\text{kg}$
-**Answer:** $1.82\,\cdot 10^{27}\,\text{kg}$, three significant figures like the radius.
-**Reasonableness:** The mass of the Earth is $5.97\cdot 10^{24}\,\text{kg}$, so the mass of Jupiter is about $\dfrac{1.82\cdot 10^{27}}{5.97\cdot 10^{24}} \approx 300$ times that, and this is the known size of Jupiter. The field strength is $2.5$ times that of the Earth even though the planet is $300$ times as massive, because the radius is large.
+**Conversions:** The data is in SI units; the answer $M = 1.90\cdot 10^{27}\,\text{kg}$ is converted to the unit $10^{27}\,\text{kg}$ at the end.
+**Substitution:** $M = \dfrac{24.8\,\text{m/s}^2\cdot (7.15 \cdot 10^{7}\,\text{m})^2}{6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}} = 1.900 \cdot 10^{27}\,\text{kg}$
+**Answer:** $1.90\cdot 10^{27}\,\text{kg}$, three significant figures like the radius. The value $24.8\,\text{m/s}^2$ in the figure holds at the equatorial radius, so the same radius is used, not the mean radius $6.99\cdot 10^{7}\,\text{m}$.
+**Reasonableness:** The mass of the Earth is $5.97\cdot 10^{24}\,\text{kg}$, so the mass of Jupiter is about $\dfrac{1.90\cdot 10^{27}}{5.97\cdot 10^{24}} \approx 320$ times that, and this is the known size of Jupiter. The field strength is $2.5$ times that of the Earth even though the planet is $320$ times as massive, because the radius is large.

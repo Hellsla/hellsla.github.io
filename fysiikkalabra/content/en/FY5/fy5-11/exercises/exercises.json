@@ -280,7 +280,7 @@
       "kind": [
         "graph"
       ],
-      "text": "The figure shows the bottom of a ripple tank seen from above: plane waves travel from left to right and hit a wall with a gap in it. The figure shows the waves before the frequency is changed. Then the frequency of the wave generator is doubled, but the depth of the water, and so the speed of the wave, stay the same. Read the values you need from the figure. How many times is the width of the gap $b$ the new wavelength $\\lambda$, that is, what is the ratio $\\tfrac{b}{\\lambda}$ at the new frequency?",
+      "text": "The figure shows the bottom of a ripple tank seen from above: plane waves travel from left to right and hit a wall with a gap in it. The figure shows the waves before the frequency is changed. Then the frequency of the wave generator is doubled, but assume that the speed of the wave stays the same. Read the values you need from the figure. How many times is the width of the gap $b$ the new wavelength $\\lambda$, that is, what is the ratio $\\tfrac{b}{\\lambda}$ at the new frequency?",
       "figure": "fy5-11/rako-ruudukko",
       "answer": 3.0,
       "unit": "",
