@@ -1,13 +1,11 @@
-VERDICT: PASS
-CONTENT-HASH: a814bbd89f4059f5
+VERDICT: FAIL
+CONTENT-HASH: c83a3c0d5c61ff4a
 
 ## Blocking
+1. lesson.md line 567 (Tiivistelmä), all three languages: still writes Δp = I (`\Delta\overline{p} = \overline{I}`) while the formula section now gives I = Δp. Change to `\overline{I} = \Delta\overline{p}`.
 
 ## Polish
-- Kappale vaihtaa suuruuden ja komponentin kesken kappaleen; yksi virke 'kaava antaa suuruuden' on riittävä merkki.
+1. Fix the summary line (see Blocking).
 
 ## Checked
-- Light delta review (teacher 2026-11-07): judged `git diff origin/main` of fy4-9 en (English text matches the Finnish change).
-- Etumerkillinen pinta-ala ja F_ka,x-komponentti selitetään puskuriesimerkillä; suuruuden ja komponentin ero on selvä lukiolaiselle. Tiivistelmä vastaa tekstiä.
-- Consistency with summary, goals and inquiry feedback: no contradictions; untouched content passed earlier reviews.
-- Hash at start and end a814bbd89f4059f5.
+Whole chapter text for the new symbols, formula sections, inquiry, exit ticket, solutions; numbers unchanged; fi-easy and en match fi.

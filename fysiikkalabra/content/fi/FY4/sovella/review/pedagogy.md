@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 85ea8eb31e4d0bd7
-Mode: delta (c2c6eff02, s2 d conclusion criterion)
+CONTENT-HASH: be1a6f600135dff6
 
 ## Blocking
+None. Only the energy-principle line in the roller-coaster task solution changed; it matches fy4-8 and the task still does not name the model.
 
 ## Polish
-- solutions.md "Mitoitus" caveat now carries no point; fine as teaching text. The "Hyväksytään myös" line for s2 d matches the trimmed criterion.
+None.
 
 ## Checked
-- Diff only; text read.
-- s2 d conclusion is now only the choice of the larger speed and its reason, which is exactly what the part text asks. The earlier unasked point is gone, so a correct answer can earn 4/4.
-- s3 b and the earlier Sovella deltas unchanged and passed.
+Read the changed text and the surrounding formula section, worked example, solutions and inquiry for the MAFY symbols; grep found no leftover old symbol (F_parallel, W_kok, W_muut, E_k,1, E_mek,1) in this language.

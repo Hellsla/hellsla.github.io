@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: a86d4fd234d3af68
+CONTENT-HASH: 5fda7ff28e621b5b
 
 ## Blocking
+None.
 
 ## Polish
+1. lesson.md Tiivistelmä: 'a = Δv/Δt' is kept while the formula section writes a_k; add 'a_k' or 'constant a = a_k' there so the symbol is the same where a student meets it.
+2. exercises/solutions.md use a = Δv/Δt for constant acceleration; acceptable, since the lesson says a = a_k.
 
 ## Checked
-- Kevyt delta-katselmointi (opettaja 2026-11-07): diff origin/main -muutokset arvioitu ja niiden johdonmukaisuus tavoitteiden, yhteenvedon ja ratkaisujen kanssa.
-- Matka 60 m tarkka, kaksi numeroa perustuu alkunopeuteen ja kiihtyvyyteen; selkeä. Yhteenvedon 'etumerkillinen pinta-ala' on tarkempi ja sopii alapuolisen osan negatiivisuuteen.
-- Kokonaisluvut tehtävätiedoissa tulkitaan tarkoiksi (opettajan sääntö); teksti sanoo tämän käyttöpaikalla. Muutos ei paljasta vastausta ennen toimintaa eikä vaikuta palautteeseen, ennusteisiin tai kokeisiin.
-- Muu sisältö ennallaan (aiemmin hyväksytty). ESCALATE-tarvetta ei ole.
+Whole chapter text for the new symbols, formula sections, inquiry, exit ticket, solutions; numbers unchanged; fi-easy and en match fi.
