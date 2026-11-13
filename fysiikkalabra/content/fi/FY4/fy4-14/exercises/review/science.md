@@ -1,15 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 5ffc229e2dbf46e5
+CONTENT-HASH: 2ec9267f358ff7ed
+SCOPE: delta added-exercise from 5ffc229e2dbf46e5 base 81db4a6fd727
 
 ## Blocking
 
 ## Polish
+- solutions.md fy4-14-L2-08 Vastaus — "kolme merkitsevää numeroa kuten massassa $75{,}0\,\text{kg}$" ei ota huomioon, mikä tulosta oikeasti rajaa. Kuvaajasta luettu $\Delta v = 6{,}0\,\text{m/s}$ on kahden numeron tarkkuudella ja $5\,\text{m/s}$:n ruudukossa noin $\pm 1\,\text{m/s}$:n luentaa. — Ilmoita $F_\text{v} \approx 6{,}2 \cdot 10^2\,\text{N}$ ja perustele luentatarkkuudella. Toleranssi 5 % riittää jo nyt.
 
 ## Checked
-- Scope: only the new task L1-09 (true/false, type 8, five statements, 2 true and 3 false). The rest of the set was PASS before and is unchanged. Checked from the text only, no renders.
-- Physics of each statement: (1) rising, $F_\text{v}$ acts down with $G$, so $|a| > g$: true. (2) at the top only $F_\text{v} = 0$, $G$ still acts and $a = g$ down: false. (3) falling, $a$ falls as $F_\text{v}$ grows: true. (4) at terminal velocity $F_\text{v} = G = 2{,}65$ N (0,270 · 9,81 = 2,649), not more: false. (5) same size and shape but lighter means a smaller terminal velocity: false. All five agree with the brief (Kaava, Tiivistelmä).
-- The statements catch the chapter's warned mistakes: "rajanopeudella ilmanvastus painoa suurempi" (4), forces at the top (2) and the heavy/light terminal velocity (5). Each feedback gives the reason.
-- Realism: a volleyball's terminal speed is about 15–20 m/s, so a tall tower is enough. Buoyancy (about 2 % of the weight) is left out, as in the lesson, and statement 4 is false either way.
-- Notation $\overline{G}$, $\overline{F}_\text{v}$, $mg - F_\text{v}$ and "hidastuvuus" is the same as in the lesson.
-- solutions.md L1-09: Kysytty · Periaate · Mallivastaus, with the weight computed and one reason per statement.
-- answers.py: no line is needed. All 17 numeric answers in the set were recomputed in one call and agree within their tolerances.
+- L2-08 laskettu uudelleen: $a = (46{,}4 - 40{,}4)/4{,}0 = 1{,}50\,\text{m/s}^2$, $F_\text{v} = m(g - a) = 623\,\text{N}$, $G = 735{,}75\,\text{N}$ ja suhde $0{,}847$ eli noin $85\,\%$; täsmää answers.py:n kanssa.
+- Luettavuus: luentaa herkkä on vain $\Delta v$; $1\,\text{m/s}$:n virhe muuttaa tulosta 3 %. Tyypilliset lukemat (40 ja 45 tai 46,5) antavat $613$–$642\,\text{N}$, joten ne pysyvät ±5 %:n toleranssin sisällä. Kuvan kuvaus antaa samat pisteet eikä massaa, kiihtyvyyttä eikä voimaa.
+- Aineiston fysiikka: pisteet sopivat neliölliseen ilmanvastukseen ($v = v_\text{t}\tanh(gt/v_\text{t})$, $v_\text{t} \approx 48\,\text{m/s}$ toistaa pisteet $\pm 0{,}3\,\text{m/s}$:n tarkkuudella). Vatsa alaspäin putoavan hyppääjän rajanopeus on realistinen. Alun kulmakerroin on lähes $g$ ja b-kohdan raja $F_\text{v} = G$, kuten luvussa.
+- Keskeisdifferenssi välin 6–10 s yli on perusteltu arvio hetken 8 s kiihtyvyydelle, ja tehtävä nimeää pisteet, joten malli on kerrottu.
+- Voimakuvio: $\overline{G}$ alas keskipisteestä ja $\overline{F}_\text{v}$ ylös, painoa lyhyempänä, kun hyppääjä vielä kiihtyy; kuvio vastaa liikettä. Liikeyhtälö $mg - F_\text{v} = ma$ luetaan kuviosta positiivisen suunnan ollessa alas, kuten luvun kaavaosiossa.
+- Merkinnät $\overline{G}$, $\overline{F}_\text{v}$ ja $F_\text{v} = G$ rajanopeudella ovat samat kuin luvussa.
+- Toistoa ei ole: kuvaa käyttää vain tämä tehtävä. L2-05 (vaahtomuovipallon taulukko) sekä L2-07 ja L3-04 (varjon auettua) ovat eri tilanteita.
+- Sisältö pysyy FY4:n keskeisissä sisällöissä (liikeyhtälö ja voimakuvio); ilmanvastusta ei lasketa nopeudesta.
