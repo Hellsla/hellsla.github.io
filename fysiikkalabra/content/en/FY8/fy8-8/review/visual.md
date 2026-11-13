@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 5b120f8cff7105c8
-(The packet header said d7633bb66bf5dcc9; `reviews.py hash` returned 5b120f8cff7105c8 at the start and at the end. The lesson files are older than the captures, so the captures show the current text.)
+CONTENT-HASH: d7633bb66bf5dcc9
+(English hash from `reviews.py hash fy8-8 --lang en`, run at the start and the end; the captures judged are the en ones in content/en/FY8/fy8-8/review/shots/, newer than lesson.md.)
 
 ## Blocking
 - none
